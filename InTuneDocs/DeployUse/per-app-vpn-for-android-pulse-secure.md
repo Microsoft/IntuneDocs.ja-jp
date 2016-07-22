@@ -1,27 +1,18 @@
 ---
-# required metadata
-
-title: [Android 用の PulseSecure を使用したアプリごとの VPN | Microsoft Intune]
-description:
-keywords:
-author: [nbigman]
-manager: [jeffgilb]
+title: "Android 用の Pulse Secure を使用したアプリごとの VPN | Microsoft Intune"
+description: 
+keywords: 
+author: nbigman
+manager: jeffgilb
 ms.date: 05/08/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
+ms.sourcegitcommit: 40e5602a4675bd92a85001827fb43426c41ed1e3
+ms.openlocfilehash: fc58e71a9b2279200dee2630aab7dbab727ea128
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: [ALIAS]
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -35,7 +26,7 @@ Intune で管理する、アプリごとの VPN プロファイルを Android �
 2. **[Android]** を展開し、**[VPN プロファイル (Android 4 以降)]** を選択して、新しいポリシー用のテンプレートを選択します。
 
 3. テンプレートの **[接続の種類]** に **[Pulse Secure]** を選択します。
-4. VPN プロファイルを完了し保存します。 VPN プロファイルの詳細については、「[VPN profiles](Help%20users%20connect%20to%20their%20work%20using%20VPN%20profiles%20with%20Microsoft%20Intune.md)」 (VPN プロファイル) を参照してください。
+4. VPN プロファイルを完了し保存します。 VPN プロファイルの詳細については、「[VPN 接続](vpn-connections-in-microsoft-intune.md)」をご覧ください。
 
 > [!NOTE]
 VPN プロファイル名は、次の手順で使用するためメモしておきます。 たとえば、**MyAppVpnProfile** です。
@@ -82,6 +73,7 @@ VPN プロファイル名は、次の手順で使用するためメモしてお�
 
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jul16_HO2-->
 
 

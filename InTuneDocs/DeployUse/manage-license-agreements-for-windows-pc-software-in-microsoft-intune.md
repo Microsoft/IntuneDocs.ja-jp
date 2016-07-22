@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows PC ソフトウェアのライセンス契約を管理する | Microsoft Intune
-description:
-keywords:
+title: "Windows PC ソフトウェアのライセンス契約を管理する | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: 575b8525b8b99d06358a911b8deb24ee5de48fe1
+
 
 ---
 
@@ -45,7 +39,8 @@ Intune 管理者コンソールの **[ライセンス]** ワークスペース�
 
 さらに、ソフトウェア タイトルのインストール数とライセンス数を示すレポートを作成できます。 ライセンス レポートは、Microsoft と Microsoft 以外のソフトウェア タイトルの全体的なライセンス状況を把握するのに便利です。
 
-> [!TIP] Intune Windows PC クライアントを使用して少なくとも 1 つの Windows PC を管理するまで、**[ライセンス]** ワークスペースは管理コンソールに表示されません。
+> [!TIP]
+> Intune Windows PC クライアントを使用して少なくとも 1 つの Windows PC を管理するまで、**[ライセンス]** ワークスペースは管理コンソールに表示されません。
 
 ## Microsoft ボリューム ライセンス契約の追加
 Intune のボリューム ライセンス契約には、Microsoft ボリューム ライセンス契約で購入したソフトウェアのライセンス情報が含まれています。 契約番号の一致するペアを入力して、Microsoft ボリューム ライセンス契約を Intune に追加できます。 契約番号または認証番号は、正しいライセンス番号または登録番号と一致している必要があります。 契約番号のペアは、ライセンス契約を購入するときに、 [ボリューム ライセンス サービス センター (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842)から入手します。
@@ -96,7 +91,8 @@ Intune のボリューム ライセンス契約には、Microsoft ボリュー�
 
         -   **ライセンス/登録/カスタマー番号** - ライセンス ペアのライセンス/登録/カスタマー番号を入力します。
 
-        > [!NOTE] 契約番号ペアを複数入力した場合は、Intune によって指定した名前の契約が 1 つだけ作成され、追加したすべてのペアがこの契約に含まれます。
+        > [!NOTE]
+        > 契約番号ペアを複数入力した場合は、Intune によって指定した名前の契約が 1 つだけ作成され、追加したすべてのペアがこの契約に含まれます。
 
     別の契約番号ペアを追加するには **[+]** をクリックし、入力済みの契約番号ペアを削除するには **[-]** をクリックします。
 
@@ -114,7 +110,8 @@ Intune のボリューム ライセンス契約には、Microsoft ボリュー�
 
 Intune でライセンス契約を追加した後で、ボリューム ライセンス情報を更新するには、**[ライセンスの概要]** ページで **[今すぐ最新の情報に更新]** をクリックします。 現在のライセンス情報が [Microsoft ボリューム ライセンス サービス センター (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842)から取得されます。
 
-> [!IMPORTANT] ボリューム ライセンス情報を更新するまで、**[ライセンスの概要]** ページの契約一覧と権利の情報に異なる情報が表示される場合があります。
+> [!IMPORTANT]
+> ボリューム ライセンス情報を更新するまで、 **[ライセンスの概要]** ページの契約一覧と権利の情報に異なる情報が表示される場合があります。
 
 ボリューム ライセンス情報を更新したら、ライセンス情報を、 **[アプリ]** ワークスペースにある検出された Microsoft ソフトウェアと比較できます。 次のようなライセンス レポートを実行することもできます。
 
@@ -122,7 +119,8 @@ Intune でライセンス契約を追加した後で、ボリューム ライセ
 
 -   **ライセンスのインストール レポート** - ライセンス契約の範囲が十分であるかどうかを判断するのに役立ちます。
 
-> [!NOTE] どの Microsoft ボリューム ライセンス契約の **[製品タイトル]** にも **[利用不可]** と表示されます。
+> [!NOTE]
+> どの Microsoft ボリューム ライセンス契約の **[製品タイトル]** にも **[利用不可]**と表示されます。
 
 ## その他のソフトウェア ライセンス契約の追加と編集
 Intune には、Microsoft ボリューム ライセンス契約に加えて、他の種類のライセンス契約を追加することもできます。 これらのライセンスには、販売店から購入した Microsoft 以外のソフトウェアと Microsoft のソフトウェアのライセンスが含まれます。
@@ -184,6 +182,7 @@ Intune には、Microsoft ボリューム ライセンス契約に加えて、�
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

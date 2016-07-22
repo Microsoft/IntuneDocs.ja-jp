@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 紛失したまたは盗難にあったデバイスをリセット (消去) する | Microsoft Intune
-description:
-keywords:
+title: "紛失したまたは盗難にあったデバイスをリセット (消去) する | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8bb47a5c-f66d-491b-b909-e6a8844f773a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: 63799f8242db4618ea7b71af9608e30b98a8a27a
+
 
 ---
 
@@ -30,9 +24,10 @@ ms.suite: ems
 
 Android フォンを紛失したり、盗難にあったりした場合、ポータル サイトのアプリまたは Web サイトから電話を出荷時の状態にリセットすることができます。 ポータル サイト アプリの使用手順については、次の手順に従うか、この[ビデオ](http://aka.ms/ly1x17)をご覧ください。 [ポータル サイト Web サイトを使用してデバイスをリセットする](reset-your-device-cpwebsite.md)こともできます。
 
-デバイスをリセットした場合の影響については、「[ポータル サイトを使用してデバイスをリセットするとどうなるか](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)」を参照してください。
+デバイスをリセットした場合の影響については、「[ポータル サイトを使用してデバイスをリセットするとどうなるか](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)」をご覧ください。
 
-> [!WARNING] デバイスを出荷時の状態にリセットすることで、私的な情報と仕事や学校の情報の両方をデバイスから削除することができます。
+> [!WARNING] 
+> デバイスを出荷時の状態にリセットすることで、私的な情報と仕事や学校の情報の両方をデバイスから削除することができます。
 
 1.  ブラウザーで、[会社のポータル Web サイト](http://portal.manage.microsoft.com)を開き、職場や学校のアカウントにサインインします。
 
@@ -47,6 +42,7 @@ Android フォンを紛失したり、盗難にあったりした場合、ポー
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

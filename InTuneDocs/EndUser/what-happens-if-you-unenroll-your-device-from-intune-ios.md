@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: Intune からデバイスの登録を解除するとどうなるか | Microsoft Intune
-description:
-keywords:
+title: "Intune からデバイスの登録を解除するとどうなるか | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
-
-# optional metadata
-
-ROBOTS:
-#audience:
-#ms.devlang:
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: 073c94e51f61e091f0055c96e8ad183e57fafabd
+
 
 ---
 
@@ -51,6 +46,7 @@ Intune から iOS デバイスの登録を解除すると次のようになり�
 ### 関連項目
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Intune の一般的な使用方法 |Microsoft Intune
-description:
-keywords:
+title: "Intune の一般的な使用方法 |Microsoft Intune"
+description: 
+keywords: 
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9cb6894cefad1da14332f9994fdf45fe2d1e9b9c
+ms.openlocfilehash: c854893f457a60a7424010cdf69a91cb8476e167
+
 
 ---
 
@@ -67,11 +61,12 @@ Intune の一括プロビジョニングと管理のソリューションは、A
 <!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
 ## 公共の場所から Office 365 に安全にアクセスできるようにする
-従業員は、展示会場やホテルのロビーにある公共のコンピューターなど、会社が管理できないデバイスやアプリ、ブラウザーを使用しなければならない場合があります。 そのような場所から会社の電子メールにアクセスすることを従業員に許可すべきでしょうか。 Intune と Enterprise Mobility Suite を使用している場合、 <!--you have choices. The--> 電子メールへのアクセスを組織で管理されているデバイスに制限するには、答えは単純に "不可" になります。  <!-- Alternatively, you can choose to allow limited access to these untrusted computers by requiring multi-factor authentication and only allowing browser access (Outlook Web Access) in a mode where files cannot be downloaded (e.g. email attachments).-->  従業員が厳密に認証されるので、信頼されていないコンピューターに誤って会社のデータを残してしまうことがなくなります。
+従業員は、展示会場やホテルのロビーにある公共のコンピューターなど、会社が管理できないデバイスやアプリ、ブラウザーを使用しなければならない場合があります。 そのような場所から会社の電子メールにアクセスすることを従業員に許可すべきでしょうか。 Intune と Enterprise Mobility Suite を使用している場合、答えは単純に "いいえ" であり、組織が管理しているデバイスへの電子メール アクセスを制限します。  <!-- Alternatively, you can choose to allow limited access to these untrusted computers by requiring multi-factor authentication and only allowing browser access (Outlook Web Access) in a mode where files cannot be downloaded (e.g. email attachments).-->  従業員が厳密に認証されるので、信頼されていないコンピューターに誤って会社のデータを残してしまうことがなくなります。
 
 <!-- Learn more about how to plan and deploy Intune to support kiosks. -->
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

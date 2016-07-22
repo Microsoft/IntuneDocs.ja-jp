@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: サポートを受ける方法 | Microsoft Intune
-description:
-keywords:
+title: "サポートを受ける方法 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 632115d1010217f927e20a7e9532311d48f2b106
+ms.openlocfilehash: a6cb77b441c7c44f33c0353232409f8d7b2daa6a
+
 
 ---
 
@@ -41,6 +34,7 @@ Intune のセルフ ヘルプについては、「[Microsoft Intune の一般的
 
     -   その他の Intune に関する問題については、**[モバイル デバイス管理]** を選択します。 このオプションは、Office 365 MDM の場合と、System Center Configuration Manager と Intune を併用する場合も対象です。
 
+    > [!NOTE]
     > [!NOTE]すべてのカテゴリを表示するには、一覧の一番下にある **[詳細]** をクリックします。
 
 3.  **[問題の特定]** ページで、ヘルプが必要な **[機能]** と **[現象]** を選択します。 **[問題の概要]** と **[問題の詳細]** を入力するように求められます。
@@ -58,7 +52,8 @@ Intune のセルフ ヘルプについては、「[Microsoft Intune の一般的
 リクエストを追跡するには、[Office 365 管理センター](https://portal.office.com/admin/default.aspx)にアクセスします。 **[サービス要求の作成]** 一覧の下部にある **[すべてのサポート チケットの表示]** をクリックします。 既定では、未解決状態のすべてのサービス リクエストが表示されます。 解決済みのリクエストを表示するなど、表示されるサービス リクエストを変更するには、上部のナビゲーションにあるフィルター アイコンをクリックし、目的のビューを選択します。
 
 > [!NOTE]
-> **Microsoft System Center Configuration Manager** または **Microsoft System Center Endpoint Protection** を使用している場合: Configuration Manager または Endpoint Protection のテクニカル サポートについては、パートナーに問い合わせるか、[Microsoft System Center Configuration Manager/System Center Endpoint Protection Solution Center](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) にアクセスしてください。このサイトには豊富なセルフヘルプ資料が掲載されており、オンラインまたは電話でサポート リクエストを開始することもできます。
+> [!NOTE]
+**Microsoft System Center Configuration Manager** または **Microsoft System Center Endpoint Protection** を使用している場合: Configuration Manager または Endpoint Protection のテクニカル サポートについては、パートナーに問い合わせるか、[Microsoft System Center Configuration Manager/System Center Endpoint Protection Solution Center](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) にアクセスしてください。このサイトには豊富なセルフヘルプ資料が掲載されており、オンラインまたは電話でサポート リクエストを開始することもできます。
 >
 > System Center Configuration Manager または System Center Endpoint Protection のテクニカル サポートは有料です。または既存のライセンスまたは Premire サポート契約の利用分としてカウントされます。
 
@@ -144,9 +139,7 @@ Microsoft サポートには次の役割があります。
 [Microsoft Intune でのソフトウェア更新のトラブルシューティング](troubleshoot-software-updates-in-microsoft-intune.md)
 
 
-[Microsoft Intune に関してよく寄せられる質問](/intune/understand-explore/frequently-asked-questions-for-microsoft-intune)
 
-
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jul16_HO1-->
 
 

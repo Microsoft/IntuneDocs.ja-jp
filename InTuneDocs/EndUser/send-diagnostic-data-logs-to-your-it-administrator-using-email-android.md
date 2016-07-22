@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 電子メールを使用して診断データのログを IT 管理者に送信する | Microsoft Intune
-description:
-keywords:
+title: "電子メールを使用して診断データのログを IT 管理者に送信する | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: 57646f103fb0520295729a89a30692c657896e55
+
 
 ---
 
@@ -42,7 +36,7 @@ ms.suite: ems
 3.  **[診断データ]** の **[データを送信]** をタップします。
 
     > [!NOTE]
-    > **Android 6.0 以降のデバイスのみを使用している場合:** **[データを送信]** をタップすると、"**デバイス上の写真、メディア、およびファイルへのアクセスを会社のポータルに許可しますか?**" というメッセージが表示されます。 
+    > **Android 6.0 以降のデバイスのみを使用している場合:** **[データを送信]** をタップすると、**[デバイス上の写真、メディア、およびファイルへのアクセスを会社のポータルに許可しますか?]** というメッセージが表示されます。 
 
     **Microsoft がデバイス上の写真、メディア、またはファイルにアクセスすることはないため**、このメッセージは誤解を招く恐れがあります。 Google がメッセージ テキストを制御しているため、Microsoft では変更できません。  アクセスを許可する場合、デバイスの SD カードへのデータ ログの書き込みをデバイスに許可しているに過ぎません。これにより、USB ケーブルを使用してログを移動できます。
 
@@ -54,6 +48,7 @@ ms.suite: ems
 ### 関連項目
 [Android デバイスを Intune で使用する](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: デバイスを登録する準備 | Microsoft Intune
-description:
-keywords:
+title: "デバイスを登録する準備 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 71077d9f86a53cc66536928e4799fa4b1a51cdf0
+ms.openlocfilehash: 86d3b7894eca70454fa82393c4d06eab5a99246f
+
 
 ---
 
 # Microsoft Intune にデバイスを登録する準備
 従業員が Intune にモバイル デバイス ([Android](set-up-android-management-with-microsoft-intune.md)、[iOS、Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)、[Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)、[Windows PC](set-up-windows-device-management-with-microsoft-intune.md) など) を登録できるようにするには、デバイスの登録を有効にする必要があります。 登録を許可するには、モバイル デバイス管理機関を設定し、Intune ポータル サイトを構成し、ライセンスを割り当て、デバイス プラットフォームの登録を有効にする必要があります。
 
-## <a name="BKMK_Set_MDM_Authority"></a>モバイル デバイス管理機関を設定する
+## モバイル デバイス管理機関を設定する
 MDM 機関では、一連のデバイスを管理するためのアクセス許可を持つ管理サービスを定義します。 MDM 機関のオプションには、Intune 単体で使用するか、Intune を Configuration Manager と連携させて使用する方法があります。 Configuration Manager を管理機関として設定した場合、モバイル デバイス管理のために使用できるサービスは他にありません。
 
 >[!IMPORTANT]
@@ -45,11 +39,18 @@ MDM 機関では、一連のデバイスを管理するためのアクセス許�
 3.  Intune によって、Intune を MDM 機関にすることを確認するよう求められます。 チェック ボックスをオンにしてから、**[はい]** を選択し、Microsoft Intune を使用してモバイル デバイスを管理します。
 
 ## Intune ポータル サイトを構成する
+
+ユーザーは、Intune ポータル サイトを使用して、会社のデータにアクセスしたり、デバイスの登録、アプリケーションのインストール、IT 部門からのサポート情報の検索などの一般的なタスクを実行したりできます。
+
+> [!TIP]
+> ポータル サイトをカスタマイズすると、構成がポータル サイトの Web サイトとポータル サイト アプリの両方に適用されます。
+
 ポータル サイトをカスタマイズすることで、エンド ユーザーの利便性を向上させることができます。 これを行うには、テナント管理者またはサービス管理者として [Microsoft Intune 管理コンソール](https://manage.microsoft.com)にログインし、**[管理者]** &gt; **[ポータル サイト]** の順にクリックして、ポータル サイトの設定を構成します。
 
-![admin-console-admin-workspace-comp-portal-settings](../media/cp_setup.png)
+![admin-console-admin-workspace-comp-portal-settings](../media/cp_sa_cpsetup.PNG)
 
 #### 会社の連絡先情報とプライバシーに関する声明
+
 会社名は、ポータル サイトのタイトルとして表示されます。 連絡先情報と詳細は、ポータル サイトの [IT に連絡] 画面でユーザーに対して表示されます。 プライバシーに関する声明は、ユーザーがプライバシー リンクをクリックすると表示されます。
 
 |フィールド名|最大長|詳細情報|
@@ -69,7 +70,9 @@ MDM 機関では、一連のデバイスを管理するためのアクセス許�
     |サポート Web サイトの URL|150|ユーザーが使用するサポート Web サイトがある場合、その URL を指定します。 URL は、https://www.contoso.com という形式にする必要があります。 URL を指定しない場合、ポータル サイトの **[IT に連絡]** ページのサポート Web サイトには何も表示されません。|
     |Web サイト名|40|サポート Web サイトの URL に表示されるフレンドリ名です。 サポート Web サイトの URL を指定し、フレンドリ名を指定しない場合、ポータル サイトの **[IT に連絡]** ページに **[IT Web サイトに移動する]** が表示されます。|
 
-## 会社のブランドのカスタマイズ
+
+#### 会社のブランドのカスタマイズ
+
 ポータル サイトのロゴや会社名、テーマの色や背景をカスタマイズできます。
 
 |フィールド名|詳細情報|
@@ -81,13 +84,11 @@ MDM 機関では、一連のデバイスを管理するためのアクセス許�
 
 変更を保存した後で、管理コンソールの **[ポータル サイト]** ページの下部に表示されるリンクを使用して、ポータル サイト Web サイトを表示できます。 これらのリンクは変更できません。 ユーザーがサインインするときに、これらのリンクでポータル サイトが表示されます。
 
-
-
 ## Intune のユーザー ライセンスを割り当てる
 
-**[!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)]**を使用して、手動でクラウドベースのユーザーを追加し、クラウドベースのユーザー アカウントと、オンプレミスの Active Directory から Azure AD に同期されているアカウントの両方にライセンスを割り当てます。
+**Office 365 管理ポータル**を使用して、手動でクラウドベースのユーザーを追加し、クラウドベースのユーザー アカウントと、オンプレミスの Active Directory から Azure AD に同期されているアカウントの両方にライセンスを割り当てます。
 
-1.  テナント管理者の資格情報を使用して、[Intune アカウント ポータル](https://portal.office.com/Admin/Default.aspx)にサインインします。
+1.  テナント管理者の資格情報を使用して、[Office 365 管理ポータル](https://portal.office.com/Admin/Default.aspx)にサインインします。
 
 2.  Intune のユーザー ライセンスを割り当てるユーザー アカウントを選択し、そのユーザー アカウントのプロパティの **[Microsoft Intune]** チェック ボックスをオンにします。
 
@@ -107,6 +108,7 @@ MDM 機関を設定したら、組織がサポートするオペレーティン�
  - [会社所有のデバイスを IMEI 番号を使用してデバイスおよびターゲット ポリシーを登録できるように指定する](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

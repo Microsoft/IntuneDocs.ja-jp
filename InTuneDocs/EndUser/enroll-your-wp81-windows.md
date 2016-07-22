@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: Intune に Windows Phone 8.1 デバイスを登録する | Microsoft Intune
-description:
-keywords:
+title: "Intune に Windows Phone 8.1 デバイスを登録する | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
+ms.openlocfilehash: cc427327897084d6366ade896f7d760603d86eb7
+
 
 ---
 
 
 # Intune に Windows Phone 8.1 デバイスを登録する
 
-職場または学校が Microsoft Intune を使用している場合は、お使いのデバイスを登録して、会社の電子メール、ファイル、またその他のリソースにアクセスできます。 デバイスを登録すると、組織は企業データをセキュリティで保護することができます。 登録の詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)」 および「[What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)」 (IT 管理者がお客様のデバイスに関して確認できる情報と確認できない情報) をご覧ください。.
+職場または学校が Microsoft Intune を使用している場合は、お使いのデバイスを登録して、会社の電子メール、ファイル、またその他のリソースにアクセスできます。 デバイスを登録すると、組織は企業データをセキュリティで保護することができます。 登録の詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)」と「[What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)」 (IT 管理者がお客様のデバイスに関して確認できる情報と確認できない情報) を参照してください。
 
 
 Intune に Phone 8.1 デバイスを登録するには、自分の職場または学校に当てはまる手順に従ってください。
@@ -40,15 +34,15 @@ Intune に Phone 8.1 デバイスを登録するには、自分の職場また�
 ## 会社で Windows ストアからポータル サイトを使用できるようにする場合
 ポータル サイト アプリをデバイスにインストールします。
 
-1.  **[スタート]**  &gt;  **[ストア]** をタップします。.
+1.  **[スタート]** &gt; **[ストア]** をタップします。
 
-2.  **[検索]** をタップし、**「ポータル サイト」**と入力します。.
+2.  **[検索]** をタップし、「**ポータル サイト**」と入力します。
 
-3.  結果の一覧で、**[ポータル サイト]** をタップします。.
+3.  結果の一覧で、**[ポータル サイト]** をタップします。
 
     ![会社のポータルの検索結果](./media/WP81-1-CP-search-store-v2.png)
 
-4.  **[ポータル サイト]**   &gt;  **[インストール]** をタップします。.
+4.  **[ポータル サイト]** &gt; **[インストール]** を順にタップします。
 
     ![ポータル サイトのインストール](./media/WP81-2-CP-install-v2.png)
 
@@ -58,37 +52,37 @@ Intune に Phone 8.1 デバイスを登録するには、自分の職場また�
 
 2.  資格情報を入力します。 会社の使用条件に同意するように求められる場合があります。
 
-3.  **[マイ デバイス]** までスワイプします。.
+3.  **[マイ デバイス]** までスワイプします。
 
-4.  **[このデバイスを登録または特定するには、タップしてください]** をタップします。.
+4.  **[このデバイスを登録または特定するには、タップしてください]** をタップします。
 
     ![[このデバイスを登録または特定するには、タップしてください] 画面](./media/WP81-enroll-1-swipe-my-devices.png)
 
-5.  **[このデバイスの登録]** をタップします。.
+5.  **[このデバイスの登録]** をタップします。
 
     ![[このデバイスの登録] 画面](./media/WP81-enroll-2-enroll-this-device.png)
 
-6.  **[アカウントの追加]** をタップします。.
+6.  **[アカウントの追加]** をタップします。
 
     ![[ワークプレース] 設定画面](./media/WP81-enroll-3-workplace-add-acct.png)
 
-7.  要求された追加情報を入力し、**[サインイン]** をタップして、登録を完了します。 **[設定]**  &gt;  **[ワークプレース]** ページに社内アカウントが表示されます。
+7.  要求された追加情報を入力し、**[サインイン]** をタップして、登録を完了します。 **[設定]** &gt; **[ワークプレース]** ページに社内アカウントが表示されているはずです。
 
     ![追加されたアカウントの画面](./media/WP81-enroll-4-account-added.png)
 
 ## Windows Phone から Windows ストアへのアクセスが許可されていない場合、または Microsoft アカウントを所有していない場合
 
-1.  **[設定]**  &gt;  **[ワークプレース]** をタップします。.
+1.  **[設定]** &gt; **[社内]** の順にタップします。
 
 2.  **[アカウントの追加]** をタップし、仕事用アカウントを使用してサインインします。
 
 3.  要求された追加情報を入力し、**[サインイン]** をタップして、登録を完了します。
 
-4.  会社のアプリまたはハブをインストールするように求められたら、関連するボックスがオンになっていることを確認し、**[完了]** をタップします。.
+4.  会社のアプリまたはハブをインストールするように求められたら、関連するボックスがオンになっていることを確認し、**[完了]** をタップします。
 
 IT 管理者によって、登録時にポータル サイトがインストールされるように構成されている場合は、そのポータル サイトがアプリの一覧に表示されることがわかります。
 
-
+サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
 ### 関連項目
 [Intune に Windows デバイスを登録する](enroll-your-device-in-intune-windows.md)</br>
@@ -96,6 +90,7 @@ IT 管理者によって、登録時にポータル サイトがインストー�
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

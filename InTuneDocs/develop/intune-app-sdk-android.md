@@ -1,38 +1,32 @@
 ---
-# required metadata
-
-title: Android 用 Microsoft Intune アプリ SDK 開発者ガイド | Microsoft Intune
-description:
-keywords:
+title: "Android 用 Microsoft Intune アプリ SDK 開発者ガイド | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2915cca314b489bbcb590d01b03a0b38134fa619
+ms.openlocfilehash: d2e4b6903d86b79edd9c758b2ce51733831e785a
+
 
 ---
 
 # Android 用 Microsoft Intune アプリ SDK 開発者ガイド
 
-> [!NOTE] まず [Intune アプリ SDK の概要](intune-app-sdk.md)に目を通すことをお勧めします。このガイドでは、SDK の最新機能と、サポートする各プラットフォームで統合のための準備をする方法について説明しています。 
+> [!NOTE]
+> まず [Intune アプリ SDK の概要](intune-app-sdk.md)に目を通すことをお勧めします。このガイドでは、SDK の最新機能と、サポートする各プラットフォームで統合のための準備をする方法について説明しています。 
 
 # SDK 
 
-Android 用 Intune アプリ SDK は、外部依存関係のない標準の Android ライブラリです。 
-SDK は次のもので構成されます。  
+Android 用 Intune アプリ SDK は、外部依存関係のない標準の Android ライブラリです。 SDK は次のもので構成されます。  
 
 * **`Microsoft.Intune MAM.SDK.jar`**: Microsoft Intune ポータル サイト アプリとの相互運用性を有効にするだけでなく、アプリで MAM を有効にするために必要なインターフェイスです。 アプリでこれを Android ライブラリ参照として指定する必要があります。
 
@@ -370,6 +364,7 @@ Intune SDK は Android API によって提供されるコントラクトを維�
 * あいまいな方法で API を使用することを回避します。 たとえば、requestCode を確認しないで `Activity.startActivityForResult/onActivityResult` を使用すると、予想外の動作が発生します。
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

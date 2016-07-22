@@ -1,38 +1,30 @@
 ---
-# required metadata
-
-title: Managed Browser のポリシーを使用したインターネット アクセスの管理 | Microsoft Intune
-description:
-keywords:
+title: "Managed Browser のポリシーを使用したインターネット アクセスの管理 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 2df44199ecd904dcfb6774a942244338c1384186
+ms.openlocfilehash: c4462af584d54225084159dfa35f5e1d07c36397
+
 
 ---
 
 # Microsoft Intune と Managed Browser のポリシーを使用したインターネット アクセスの管理
 Managed Browser は、Microsoft Intune を使用して組織で展開できる、Web を参照するためのアプリケーションです。 Managed Browser ポリシーは、Managed Browser のユーザーがアクセスできる Web サイトを制限する許可リストまたはブロック リストを構成するものです。
 
-このアプリは管理対象アプリであるため、切り取り、コピー、貼り付けの使用の制御、画面のキャプチャの防止、ユーザーがクリックしたコンテンツへのリンクのみが他の管理対象アプリで開かれるようにすることなど、さまざまなモバイル アプリケーション管理ポリシーをこのアプリにも適用できます。 詳細については、「[Microsoft Intune でモバイル アプリケーション管理ポリシーを使用してデータを保護する](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)」を参照してください。.
+このアプリは管理対象アプリであるため、切り取り、コピー、貼り付けの使用の制御、画面のキャプチャの防止、ユーザーがクリックしたコンテンツへのリンクのみが他の管理対象アプリで開かれるようにすることなど、さまざまなモバイル アプリケーション管理ポリシーをこのアプリにも適用できます。 詳細については、「[Microsoft Intune コンソールでモバイル アプリケーション管理ポリシーを構成して展開する](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)」で説明されている方法を参照してください。
 
 > [!IMPORTANT]
->ユーザーがアプリ ストアから Managed Browser をインストールし、それが Intune で管理されていない場合は、次の動作が適用されます。
-iOS - Managed Browser アプリを基本的な Web ブラウザーとして使用できますが、一部の機能が使用できません。また、他の Intune で管理されたアプリのデータにアクセスできません。
+>ユーザーがアプリ ストアから Managed Browser をインストールし、それが Intune で管理されていない場合は、次の動作が適用されます。iOS - Managed Browser アプリを基本的な Web ブラウザーとして使用できますが、一部の機能が使用できません。また、他の Intune で管理されたアプリのデータにアクセスできません。
 Android - Managed Browser アプリは使用できません。
 ユーザーが iOS 9 よりも前のバージョンが動作する iOS デバイスに自分で Managed Browser をインストールした場合は、作成したポリシーで管理されません。 ブラウザーを確実に Intune で管理するには、ユーザーにアプリをアンインストールしてもらってから、管理対象アプリとして展開する必要があります。 iOS 9 以降では、ユーザーが自分で Managed Browser をインストールした場合、ポリシーで管理することを許可するように求められます。
 
@@ -42,11 +34,11 @@ Android - Managed Browser アプリは使用できません。
 
 -   iOS 7.1 以降を実行するデバイス
 
-Intune Managed Browser では、[Microsoft Intune アプリケーション パートナー](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)から Web コンテンツを開くことができます。.
+Intune Managed Browser では、[Microsoft Intune アプリケーション パートナー](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)から Web コンテンツを開くことができます。
 
 ## Managed Browser のポリシーを作成する
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[ポリシーの追加]** をクリックします。.
+1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[ポリシーの追加]** の順にクリックします。
 
 2.  次のいずれかの種類の **ソフトウェア** ポリシーを構成します。
 
@@ -64,9 +56,9 @@ Intune Managed Browser では、[Microsoft Intune アプリケーション パ�
     |**説明**|Managed Browser ポリシーの概要や、Managed Browser ポリシーを特定するのに役立つその他の関連情報についての説明を入力します。|
     |**Managed Browser で開くことができる URL を許可リストまたはブロック リストで制限できるようにする**|次のいずれかのオプションを選択します。<br /><br />**Managed Browser が以下に示す URL のみを開けるようにする**: Managed Browser で開くことができる URL の一覧を指定します。<br /><br />**Managed Browser が以下に示す URL を開けないようにする**: Managed Browser で開けないようにブロックする URL の一覧を指定します。 **注:** 同じ Managed Browser ポリシーに、許可される URL とブロックされる URL の両方を含めることはできません。<br />指定できる URL の形式の詳細については、このトピックの「**許可される URL とブロックされる URL の形式**」をご覧ください。|
 
-4.  終了したら、**[ポリシーの保存]** をクリックします。.
+4.  終了したら、 **[ポリシーの保存]**をクリックします。
 
-**[ポリシー]** ワークスペースの **[構成ポリシー]** ノードに新しいポリシーが表示されます。
+ **[ポリシー]** ワークスペースの **[構成ポリシー]** ノードに新しいポリシーが表示されます。
 
 ## Managed Browser アプリ向けに展開を作成する
 Managed Browser ポリシーの作成後、Managed Browser アプリ向けにソフトウェアの展開を作成し、作成した Managed Browser ポリシーに関連付けることができます。
@@ -76,7 +68,7 @@ Managed Browser ポリシーの作成後、Managed Browser アプリ向けにソ
 
 アプリを展開し、必ず **[モバイル アプリの管理]** ページで Managed Browser ポリシーを選択してそのポリシーをアプリに関連付けます。
 
-アプリの展開方法の詳細については、「[Deploy apps in Microsoft Intune (Microsoft Intune でアプリを展開する)](deploy-apps-in-microsoft-intune.md)」を参照してください。.
+アプリの展開方法の詳細については、「[Microsoft Intune でアプリを展開する](deploy-apps-in-microsoft-intune.md)」を参照してください。
 
 ## Managed Browser のセキュリティとプライバシー
 
@@ -108,7 +100,7 @@ Microsoft は、Microsoft の製品やサービスを改善するために、Man
 
     -   https の場合はポート 443
 
-    **http://www.contoso.com:*;** や **http://www.contoso.com:/* のように、ポート番号にワイルドカードを使用することはできません。;**
+    **http&colon;//www&period;contoso&period;com:*;** や **http&colon;//www&period;contoso&period;com: /*;** のように、ポート番号にワイルドカードを使用することはできません。
 
 -   URL を指定するときに使用できるパターンの詳細については、次の表を参照してください。
 
@@ -157,6 +149,7 @@ Microsoft は、Microsoft の製品やサービスを改善するために、Man
 -   デバイスが Managed Browser ポリシーを既に受信していて、2 番目のポリシーが競合する設定で展開される場合、元の設定がデバイスに残ります。 **[ポリシー]** ワークスペースの **[ポリシーの競合]** ノードを使用して、競合を表示します。
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO2-->
 
 

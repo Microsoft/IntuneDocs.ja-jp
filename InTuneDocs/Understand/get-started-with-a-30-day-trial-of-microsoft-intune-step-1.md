@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune の 30 日間評価版にサインアップする | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune の 30 日間評価版にサインアップする | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: dad88d43-0054-4be6-9e5d-ada5a957dd6c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: fe1587bead9e4cd350f5ffcf925fe04afd824ea0
+ms.openlocfilehash: f97b619d2b82556685cf0e247700d1fd8c8d4369
+
 
 ---
 
@@ -41,11 +35,11 @@ Intune にサインアップまたはサインインするには、あらかじ�
 
 |以下のいずれかに該当する場合は "新しい" アカウントにサインアップ|以下に該当する場合、職場または学校アカウントでサインイン|
 |-----------------------------------------------------------------|------------------------------------------------|
-|**職場または学校アカウントを持っていない。** 職場または学校アカウントは、Microsoft とボリューム ライセンス契約を結んだとき、または Office 365 をサブスクライブしたときに支給されます。 組織が Enterprise Agreement または同等のボリューム ライセンス契約を Microsoft と結んでいない場合 (または Office 365 アカウントを持っていない場合)、Microsoft Online Services へのサインインに使用できる Microsoft Online Services アカウントを持っていません。<br /><br />**30 日の評価期間後に Intune テナントを破棄する。** 評価のみを目的として Intune の無料評価版のサブスクリプションを使用している場合で、なおかつ評価後に、Intune サービスのセットアップとデバイスのプロビジョニングをやり直す場合は、新しいアカウントにサインアップする必要があります。 Intune と System Center 2012 Configuration Manager を使用する予定の場合に推奨されるオプションです。<br /><br />新しいアカウントにサインアップする場合、後で既存の職場アカウントまたは学校アカウントを使用するように変更してそのアカウントを管理したり、既存のボリューム ライセンス契約と結合したりすることはできません。|**ボリューム ライセンス契約または Office 365 アカウントのサブスクリプションで支給された職場または学校アカウントがあり、評価版を使用して Intune を評価する。**<br /><br />既存のアカウントで Intune をセットアップする場合、作業前に「[デバイスを管理する方法を選択する](choose-how-to-manage-devices.md)」を読んでおくことをお勧めします。|
+|**職場または学校アカウントを持っていない。** 職場または学校アカウントは、Microsoft とボリューム ライセンス契約を結んだとき、または Office 365 をサブスクライブしたときに支給されます。 組織が Enterprise Agreement または同等のボリューム ライセンス契約を Microsoft と結んでいない場合 (または Office 365 アカウントを持っていない場合)、Microsoft Online Services へのサインインに使用できる Microsoft Online Services アカウントを持っていません。<br /><br />**30 日の評価期間後に Intune テナントを破棄する。** 評価のみを目的として Intune の無料評価版のサブスクリプションを使用している場合で、なおかつ評価後に、Intune サービスのセットアップとデバイスのプロビジョニングをやり直す場合は、新しいアカウントにサインアップする必要があります。 Intune と System Center 2012 Configuration Manager を使用する予定の場合に推奨されるオプションです。<br /><br />新しいアカウントにサインアップする場合、後で既存の職場アカウントまたは学校アカウントを使用するように変更してそのアカウントを管理したり、既存のボリューム ライセンス契約と結合したりすることはできません。|**ボリューム ライセンス契約または Office 365 アカウントのサブスクリプションで支給された職場または学校アカウントがあり、評価版を使用して Intune を評価する。**<br /><br />既存のアカウントで Intune をセットアップする場合、作業前に「[デバイスを管理する方法を選択する](/intune/get-started/choose-how-to-manage-devices)」の内容を確認することをお勧めします。|
 
 ## Intune にサインアップまたはサインインする
 
-1.  まず、[ここをクリックして Intune のサインアップ ページにアクセスします](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)。.
+1.  まず、 [ここをクリックして Intune のサインアップ ページにアクセスします](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)。
 
 2.  **[サインアップ]** ページには 2 つのオプションがあります。
 
@@ -63,9 +57,10 @@ Intune にサインアップまたはサインインするには、あらかじ�
 
 >[!div class="step-by-step"]
 
->[&larr; **作業開始**](.\get-started-with-a-30-day-trial-of-microsoft-intune.md)     [**ユーザーの追加** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)  
+>[&larr; **はじめに**](get-started-with-a-30-day-trial-of-microsoft-intune.md)     [**ユーザーの追加** &rarr;](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

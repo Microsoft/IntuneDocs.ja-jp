@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: モバイル デバイス管理機能 | Microsoft Intune
-description:
-keywords:
+title: "モバイル デバイス管理機能 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: 0f460165f251acf95f4af36afa39409d3eb21162
+
 
 ---
 # Microsoft Intune のモバイル デバイス管理機能
@@ -66,13 +60,14 @@ Microsoft Intune では、サービスにデバイスを*登録*することに�
 
 |機能|説明|詳細情報|
 |--------------|-----------|--------------------|
-|インベントリとレポート|管理対象のデバイスと使用しているソフトウェアの詳細が記載されています。|[Microsoft Intune でインベントリを使用してデバイスを把握する](./deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+|インベントリとレポート|管理対象のデバイスと使用しているソフトウェアの詳細が記載されています。|[Microsoft Intune でインベントリを使用してデバイスを把握する](/intune/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
 
 
 ### 関連項目
-[Microsoft Intune の Windows PC 管理機能](./windows-pc-management-capabilities-in-microsoft-intune.md)
+[Microsoft Intune の Windows PC 管理機能](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

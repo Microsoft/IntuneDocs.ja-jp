@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune コンソールでモバイル アプリケーション管理ポリシーを構成して展開する | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune コンソールでモバイル アプリケーション管理ポリシーを構成して展開する | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: a140a2f634397440b35786e7afb3165dccc7d93e
+
 
 ---
 
@@ -34,7 +28,8 @@ Microsoft Intune のモバイル アプリケーション管理ポリシーで�
 
 -   iOS 7 以降を実行するデバイス。
 
-> [!TIP] モバイル アプリケーション管理ポリシーでは、Intune に登録されているデバイスがサポートされます。
+> [!TIP]
+> モバイル アプリケーション管理ポリシーでは、Intune に登録されているデバイスがサポートされます。
 >
 > Intune で管理されていないデバイスのアプリ管理ポリシーを作成する方法については、「[Protect app data using mobile app management policies with Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)」 (Microsoft Intune でモバイル アプリケーション管理ポリシーを使用してデータを保護する) を参照してください。
 
@@ -46,9 +41,9 @@ Microsoft Intune のモバイル アプリケーション管理ポリシーで�
 
 -   **"ラップされた" アプリを使用する** - **Microsoft Intune アプリ ラッピング ツール**を使用して、アプリ SDK を含むように再パッケージされたアプリ。 通常、このツールは、社内で作成された企業アプリの処理に使用されます。 このツールを使用して、アプリ ストアからダウンロードされたアプリを処理することはできません。 「[Microsoft Intune アプリ ラッピング ツールでモバイル アプリケーション管理のために iOS アプリを準備する](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)」および「[Microsoft Intune アプリ ラッピング ツールでモバイル アプリケーション管理のために Android アプリを準備する](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)」を参照してください。
 
-- **Intune アプリ SDK を組み込む独自のアプリを作成する** - Intune アプリ SDK を使用すると、作成中のアプリにアプリ管理機能を組み込むことができます。 詳細については、「[Intune アプリ SDK の概要](/develop/intune-app-sdk)」を参照してください。
+- **Intune アプリ SDK を組み込む独自のアプリを作成する** - Intune アプリ SDK を使用すると、作成中のアプリにアプリ管理機能を組み込むことができます。 詳細については、「[Intune アプリ SDK の概要](/intune/develop/intune-app-sdk)」を参照してください。
 
-アプリ ラッピング ツールと Intune アプリ SDK のどちらを選ぶかについては、「[Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)」を参照してください。
+アプリ ラッピング ツールと Intune アプリ SDK のどちらを選ぶかについては、「[Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)」を参照してください。
 
 iOS や Android 用の Outlook アプリなど、管理対象アプリの一部は**複数の ID** をサポートします。 つまり、Intune により、アプリでは管理設定が会社のアカウントまたはデータのみに適用されます。
 
@@ -60,7 +55,8 @@ Outlook アプリの使用例を次に示します。
 
 -   使用する会社のアカウントは、デバイスを Intune に登録するときに使用したものと同じアカウントにする必要があります。
 
-> [!TIP] Intune を Configuration Manager とともに使用している場合は、「[Configuration Manager のモバイル アプリケーション管理ポリシーを使用してアプリを制御する方法](https://technet.microsoft.com/library/mt131414.aspx)」を参照してください。
+> [!TIP]
+> Intune を Configuration Manager とともに使用している場合は、「[Configuration Manager のモバイル アプリケーション管理ポリシーを使用してアプリを制御する方法](https://technet.microsoft.com/library/mt131414.aspx)」を参照してください。
 
 ## モバイル アプリケーション管理ポリシーを使用したアプリの作成と展開
 
@@ -152,7 +148,8 @@ Outlook アプリの使用例を次に示します。
 
 詳細については、「[Deploy apps in Microsoft Intune](deploy-apps.md)」 (Microsoft Intune でアプリを展開する) を参照してください。
 
-> [!IMPORTANT] iOS 7.1 以前のオペレーティング システムを実行しているデバイスの場合、関連付けられているポリシーはアプリのアンインストール時に削除されません。
+> [!IMPORTANT]
+> iOS 7.1 以前のオペレーティング システムを実行しているデバイスの場合、関連付けられているポリシーはアプリのアンインストール時に削除されません。
 >
 > Intune からデバイスの登録を解除すると、ポリシーはアプリからは削除されません。ポリシーが適用されているアプリは、アプリのアンインストールおよび再インストール後もポリシー設定を保持します。
 
@@ -163,7 +160,8 @@ Outlook アプリの使用例を次に示します。
 
 ただし、iOS 9 以降を実行するデバイスの場合は、Intune が自動的に、既存アプリの管理を引き継ぐための権限を与えるようユーザーに要求します。 ユーザーが同意すると、アプリは Intune による管理の対象になり、アプリに関連付けられたすべてのモバイル アプリケーション管理ポリシーも適用されます。
 
-> [!TIP] デバイスが監視モードの場合は、Intune はユーザーに権限を要求せずに、既存アプリの管理を引き継ぎます。
+> [!TIP]
+> デバイスが監視モードの場合は、Intune はユーザーに権限を要求せずに、既存アプリの管理を引き継ぎます。
 
 ## **手順 5:** アプリの展開を監視する。
 モバイル アプリケーション管理ポリシーに関連付けられたアプリを作成し、デプロイしたら、次の手順を使用してアプリを監視し、ポリシーの競合を解決します。
@@ -198,6 +196,7 @@ Outlook アプリの使用例を次に示します。
 -   ポリシーが既にデバイスにデプロイされておらず、2 つの競合する設定がデプロイされている場合、デバイスに組み込まれている既定の設定が使用されます。
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

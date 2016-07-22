@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: ホスト型 Exchange 用の Microsoft Intune Exchange Connector の構成 |Microsoft Intune
-description:
-keywords:
+title: "ホスト型 Exchange 用の Microsoft Intune Exchange Connector の構成 |Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6951ccdb0e37489217ef939f0cbf6fc1133a6d3c
+ms.openlocfilehash: 6cfc532cba2f53034c4c3ef0c2df3d6c1e6e7841
+
 
 ---
 
@@ -54,21 +48,22 @@ Intune Exchange Connector が使用する Exchange Online ユーザー アカウ
 
 1. Exchange 管理者権限と[上記](#exchange-cmdlet-requirements)のコマンドレットのアクセス許可を持つユーザー アカウントで、[Microsoft Intune 管理コンソール](http://manage.microsoft.com)を開きます。 Microsoft Intune は、現在ログインしているユーザーの電子メール アドレスを使用して、接続をセットアップします。
 
-2.  ワークスペースのショートカット ウィンドウで**[管理]** を選択し、**[モバイル デバイス管理]** > **[Microsoft Exchange]**  > **[Exchange 接続のセットアップ]** に進みます。.
+2.  ワークスペースのショートカット ウィンドウで**[管理]** を選択し、**[モバイル デバイス管理]** > **[Microsoft Exchange]**  > **[Exchange 接続のセットアップ]** に進みます。
 ![[Service To Service Connector のセットアップ] ページ](../media/intunesa5cservicetoserviceconnector.png)
 
-3.  **[Exchange 接続のセットアップ]** ページで **[Service To Service Connector のセットアップ]** を選択します。.
+3.  **[Exchange 接続のセットアップ]** ページで **[Service To Service Connector のセットアップ]**を選びます。
 
 
 Service to Service Connector は自動的に構成され、ホスト型 Exchange 環境と同期されます。
 
 ## Exchange 接続の確認
 
-Exchange Connector の構成が正常に完了したら、Intune 管理コンソールで、**[管理]** ワークスペースを選択し、**[モバイル デバイス管理]** > **[Microsoft Exchange]** に進んで、**[Exchange の接続情報]** に表示される設定内容の詳細を確認します。.
+Exchange Connector の構成が正常に完了したら、Intune 管理コンソールで、**[管理]** ワークスペースを選択し、**[モバイル デバイス管理]** > **[Microsoft Exchange]** に進んで、**[Exchange の接続情報]** に表示される設定内容の詳細を確認します。
 
 また、前回いつ同期が完了したかも確認することができます。
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

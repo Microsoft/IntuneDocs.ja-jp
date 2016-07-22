@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: アプリを追加する | Microsoft Intune
-description:
-keywords:
+title: "アプリを追加する | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f85e91b985d9d30c71dff9e0d910293354fc40b7
+ms.openlocfilehash: 119a795697feb0cdbc2b93293cd66df7e77147cf
+
 
 ---
 
@@ -83,6 +76,32 @@ Intune で、基幹業務のユニバーサル Windows プラットフォーム 
 App Store から無料で利用できる iOS アプリを管理および展開できます。 [モバイル アプリケーションの管理ポリシー](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)を[互換性のあるアプリ](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)に関連付け、その状態を管理コンソールで確認することもできます。<br /><br />管理対象の iOS アプリは、Intune のクラウド記憶域には格納されません。
 > [!TIP] [[モバイル デバイス管理機関の設定]](get-ready-to-enroll-devices-in-microsoft-intune.md) を Intune に設定すると、モバイル デバイス用のオプションを使用できるようになります。
 
+## Intune ソフトウェア パブリッシャー
+Microsoft Intune 管理者コンソールからアプリを追加または変更すると、**Microsoft Intune ソフトウェア パブリッシャー**が起動します。 パブリッシャーで Intune クラウドの記憶域に保存するアプリ (コンピューター用プログラムまたはモバイル デバイス用アプリ) をアップロードするソフトウェア インストーラーの種類を選択するか、オンライン ストアまたは Web アプリケーションのリンクを選択して構成します。
+
+### 要件
+Microsoft Intune ソフトウェア パブリッシャーを使い始める前に、フル バージョンの [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851) をインストールする必要があります。 ソフトウェア パブリッシャーを正常に開くには、インストール後にコンピューターの再起動が必要になることがあります。
+
+## クラウドの記憶域の容量
+ソフトウェア インストーラーのインストールの種類を使用して作成したすべてのアプリ (たとえば、基幹業務アプリ) は、パッケージ化され、Microsoft Intune クラウドの記憶域にアップロードされます。 Intune の試用版サブスクリプションでは、管理対象のアプリと更新プログラムの保管用として、2 ギガバイト (GB) 分のクラウドの記憶域を使用できます。 有料サブスクリプションでは 20 GB を使用でき、記憶域を追加購入できます。
+
+**[管理]** ワークスペースの **[記憶域の使用]** ノードで、使用中の記憶域の確認と追加購入を実行できます。
+
+Intune 用のクラウドの記憶域を追加購入するときは、次の規則が適用されます。
+
+-   記憶域を追加購入するには、有効な有料サブスクリプション契約が必要です。
+
+-   Microsoft Online Service の課金管理者と全体管理者だけが、Office 365 管理ポータルを使って記憶域を追加購入できます。 これらの管理者を追加、削除、管理するには、全体管理者が Office 365 管理ポータルにサインインする必要があります。
+
+-   ボリューム ライセンス契約をご利用で、Intune または Microsoft Intune アドオンを Enterprise Agreement でご購入いただいているお客様の場合は、価格体系および記憶域の追加購入方法について、Microsoft の担当者または Microsoft パートナーにお問い合わせください。
+
+#### クラウドの記憶域の容量の要件
+
+-   すべてのアプリのインストール ファイルは、同じフォルダーに保存する必要があります。
+
+-   アップロードするすべてのファイルの最大ファイルサイズは 2 GB です。
+
+
 ## ユニバーサル Windows プラットフォーム (UWP) アプリのサポート
 Windows 10 PC で基幹業務アプリをインストールする場合、サイドローディング キーは不要です。 ただし、レジストリ キー **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** は、サイドローディングを有効にするため、値は **1** である必要があります。
 
@@ -96,6 +115,8 @@ Windows 10 Mobile デバイス上では、Symantec 以外のコード署名証�
 
 次に、アプリを展開する前に、Intune コンソールでアプリを追加する必要があります。 [登録されたデバイス](add-apps-for-mobile-devices-in-microsoft-intune.md)と [Intune クライアント ソフトウェアで管理する Windows PC](add-apps-for-windows-pcs-in-microsoft-intune.md) にアプリを追加できます。
 
-<!--HONumber=Jun16_HO2-->
+
+
+<!--HONumber=Jun16_HO3-->
 
 

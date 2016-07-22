@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: ポリシーを使用してデバイスの設定と機能を管理する | Microsoft Intune
-description:
-keywords:
+title: "ポリシーを使用してデバイスの設定と機能を管理する | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: ab570d551189ec71b54081229b93d7b4ce8d58d5
+
 
 ---
 
@@ -54,7 +48,8 @@ Intune ポリシーの一覧については、「[Microsoft Intune policy refere
 
 2.  作成するポリシーを選択します。ポリシーの推奨設定 (使用可能な場合。この設定は後で変更できます) を使用するか、独自の設定でカスタム ポリシーを作成するか選びます。
 
-    > [!TIP] 適切なポリシーを選択する方法については、「[Microsoft Intune policy reference](microsoft-intune-policy-reference.md)」 (Microsoft Intune ポリシー リファレンス) を参照してください。
+    > [!TIP]
+    > 適切なポリシーを選択する方法については、「[Microsoft Intune ポリシー リファレンス](microsoft-intune-policy-reference.md)」を参照してください。
 
 3.  準備ができたら、 **[ポリシーを作成する]** を選択します。
 
@@ -119,7 +114,7 @@ Intune ポリシーの一覧については、「[Microsoft Intune policy refere
 
 この場合、デバイスは次回のスケジュールされた Intune サービスへのチェックインでポリシーを取得することになります。チェックイン頻度は次のとおりです。
 
-- iOS - 6 時間ごと
+- iOS と Mac OS X - 6 時間ごと
 - Android - 8 時間ごと
 - Windows Phone - 8 時間ごと
 - 登録済み Windows RT デバイス - 24 時間ごと
@@ -127,10 +122,10 @@ Intune ポリシーの一覧については、「[Microsoft Intune policy refere
 
 登録してすぐのデバイスでは、チェックイン頻度が高くなります。頻度は次のとおりです。
 
-- iOS - 6 時間まで 15 分ごと、その後 6 時間ごと
+- iOS と Mac OS X - 6 時間まで 15 分ごと、その後 6 時間ごと
 - Android - 15 分まで 3 分ごと、その後の 2 時間は 15 分ごと、その後 8 時間ごと
 - Windows Phone - 15 分まで 5 分ごと、その後の 2 時間は 15 分ごと、その後 8 時間ごと
-- デバイスとして登録された Windows PC - 30 分まで 3 分ごと、その後 24 時間ごと
+- デバイスとして登録された Windows PC - 30 分まで 3 分ごと、その後 8 時間ごと
 
 また、ユーザーはポータル サイト アプリを起動し、デバイスを同期して、いつでもすぐにポリシーを確認できます。
 
@@ -149,7 +144,7 @@ Intune ポリシーの一覧については、「[Microsoft Intune policy refere
 
 -   異なるコンプライアンス ポリシーの同じ設定について評価する場合、最も制限の厳しいコンプライアンス ポリシー設定が適用されます。
 
--   異なる構成ポリシーの同じ設定について評価する場合、最も制限の厳しい構成ポリシー設定が適用されます。
+-   構成ポリシーの設定が別の構成ポリシーの設定と競合する場合、Intune コンソールにその競合が表示されます。 このような競合は手動で解決する必要があります。
 
 ### モバイル アプリケーション管理 (MAM) ポリシーが互いに競合する場合はどうなりますか。 どのポリシーがアプリに適用されますか。
 競合している値は、(リセットする前の PIN の試行で使用するような) 番号入力フィールドを除き、モバイル アプリケーション管理ポリシーで使用可能な最も制限の厳しい設定になっています。  番号入力フィールドは、推奨設定のオプションを使用してコンソールで MAM ポリシーを作成した場合と同じ値に設定されます。
@@ -178,7 +173,25 @@ Intune は Apple 構成ファイルのペイロードまたはカスタム OMA-U
         - 必要なパスワードの種類
         - パスワードの有効期限 (日)
         - パスワードの履歴を記憶する
-        - デバイスをワイプするまでの連続サインイン エラーの数 - パスワードが必要になるまでの非アクティブ状態の時間 (分) - 必要なパスワードの種類 – 文字セットの最小数 - カメラを許可する - モバイル デバイスの暗号化を要求する - リムーバブル記憶域を許可する - Web ブラウザーを許可する - アプリケーション ストアを許可する - 画面のキャプチャを許可する - 位置情報を許可する - Microsoft アカウントを許可する - コピーと貼り付けを許可する - Wi-Fi テザリングを許可する - 無料 Wi-Fi スポットへの自動接続を許可する - Wi-Fi スポットの報告を許可する - 工場出荷時のリセットを許可する - Bluetooth を許可する - NFC を許可する - Wi-Fi を許可する
+        - デバイスをワイプするまでの連続サインイン エラーの数
+        - パスワードが必要になるまでの非アクティブ状態の時間 (分)
+        - 必要なパスワードの種類 - 文字セットの最小数
+        - カメラを許可する
+        - モバイル デバイスの暗号化を要求する
+        - リムーバブル記憶域を許可する
+        - Web ブラウザーを許可する
+        - アプリケーション ストアを許可する
+        - 画面のキャプチャを許可する
+        - 位置情報を許可する
+        - Microsoft アカウントを許可する
+        - コピーと貼り付けを許可する
+        - Wi-Fi テザリングを許可する
+        - 無料 Wi-Fi スポットへの自動接続を許可する
+        - Wi-Fi スポットの報告を許可する
+        - 工場出荷時のリセットを許可する
+        - Bluetooth を許可する
+        - NFC を許可する
+        - Wi-Fi を許可する
     
     - **iOS** - 次を除き、すべての設定が削除されます。
         - 音声通話ローミングを許可する
@@ -200,9 +213,10 @@ Intune は Apple 構成ファイルのペイロードまたはカスタム OMA-U
 
 ### ポリシーのトラブルシューティングのヘルプはどこにありますか?
 
-「[Microsoft Intune のポリシーのトラブルシューティング](../Troubleshoot/troubleshoot-policies-in-microsoft-intune)」をご覧ください。
+「[Microsoft Intune のポリシーのトラブルシューティング](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)」をご覧ください。
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

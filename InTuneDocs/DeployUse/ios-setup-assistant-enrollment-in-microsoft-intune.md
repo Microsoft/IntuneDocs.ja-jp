@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune での iOS デバイスのセットアップ アシスタントを使用した登録 | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune での iOS デバイスのセットアップ アシスタントを使用した登録 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f3637e79e7b6f93820e775932653c41879f369fe
+ms.openlocfilehash: b9cb10ccb26d4f61d63fb2dc6c18be48cc0a3182
+
 
 ---
 
@@ -67,6 +61,9 @@ Apple Configurator を使用して、iOS デバイスを工場出荷時の設定
             -   **ユーザー アフィニティなし** - デバイスのユーザーはありません。 このデバイス関連付け情報を使用すると、ローカルのユーザー データにアクセスしなくてもタスクを実行できます。 ユーザーへの関連付けの情報が必要なアプリは無効になるか、動作しません。
 
         -   **デバイス グループの事前割り当て** - このプロファイルに展開されているすべてのデバイスが最初にこのグループに割り当てられます。 登録後にデバイスの再割り当てができます。
+
+        >[!Important]
+        >グループの割り当てが Intune から Azure Active Directory に移動します。 [詳細情報](http://go.microsoft.com/fwlink/?LinkID=787064)
 
           -  **Device Enrollment Program** - セットアップ アシスタントの登録では、Apple Device Enrollment Program (DEP) を使用できません。 このトグル ボタンが**オフ**に設定されていることを確認してください。
 
@@ -143,9 +140,9 @@ Apple Configurator を使用して、iOS デバイスを工場出荷時の設定
 
     9. **[組織を作成]** ウィンドウで、**[組織]** を選択するか、新しい組織を作成して、**[次へ]** を選択します。
 
-    10.**[iOS 設定アシスタントを構成]** ウィンドウで、ユーザーに表示する手順を選択し、**[準備]** を選択します。 メッセージが表示されたら、認証して信頼の設定を更新します。  
+    10. **[iOS 設定アシスタントを構成]** ウィンドウで、ユーザーに表示する手順を選択し、**[準備]** を選択します。 メッセージが表示されたら、認証して信頼の設定を更新します。  
 
-    11.iOS デバイスの準備が完了したら、USB ケーブルを取り外すことができます。  
+    11. iOS デバイスの準備が完了したら、USB ケーブルを取り外すことができます。  
 
 8.  **デバイスを配布する** これで、デバイスを企業登録できるようになりました。 デバイスの電源を切り、ユーザーにデバイスを配布します。 デバイスの電源をオンにすると、セットアップ アシスタントが起動します。
 
@@ -155,6 +152,7 @@ Apple Configurator を使用して、iOS デバイスを工場出荷時の設定
 [デバイスの登録の準備](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jul16_HO1-->
 
 

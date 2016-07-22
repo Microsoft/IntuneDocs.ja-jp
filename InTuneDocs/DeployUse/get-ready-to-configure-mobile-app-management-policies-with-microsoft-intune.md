@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: モバイル アプリ管理ポリシーの作成および展開 | Microsoft Intune
-description:
-keywords:
+title: "モバイル アプリ管理ポリシーの作成および展開 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 6a989482e9c3c35c1f377e0b32bf04beb89e60a3
+ms.openlocfilehash: da4020eb71432f9bccb52909272d027da64ee47c
+
 
 ---
 
@@ -36,6 +29,8 @@ Azure ポータルは MAM ポリシーを作成するための新しい管理コ
 初めて Azure ポータルを使用する場合は、「[Azure portal for Microsoft Intune MAM policies (Microsoft Intune MAM ポリシーの Azure ポータル)](azure-portal-for-microsoft-intune-mam-policies.md)」トピックで概要を確認してください。
 
 デバイスの管理に **Intune 管理コンソール**を使用している場合、**Intune 管理コンソール**を使用して Intune に登録したデバイスのアプリをサポートする MAM ポリシーを作成できますが、Intune に登録されているデバイスでも Azure ポータルを使用することをお勧めします。 Intune 管理コンソールを使用して MAM ポリシーを作成する手順については、[ここ](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)を参照してください。
+
+Intune 管理コンソールで作成した MAM ポリシーを Azure ポータルにインポートすることはできません。  Azure ポータルで MAM ポリシーを作成し直す必要があります。
 
 >[!IMPORTANT]
 > Intune 管理コンソールでは、MAM ポリシー設定の一部が表示されない可能性があります。 Intune 管理コンソールと Azure ポータルの両方で MAM ポリシーを作成した場合、Azure ポータルのポリシーがアプリに適用され、ユーザーに展開されます。
@@ -62,7 +57,7 @@ MAM ポリシーを構成する**前提条件**として、以下のものが必
 -   **Office 365 (O365)** サブスクリプション。これは、以下で必要となります。
   - 複数の ID をサポートするアプリに MAM ポリシーを適用する。
   - SharePoint Online および Exchange Online 作業アカウントを作成する。 Exchange On-Premises と SharePoint On-Premises はサポートされていません。
--    **Skype for Business Online** で**先進認証を有効にします**。 Microsoft Connect にログインし、[このフォーム](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715)に入力して、先進認証プログラムに登録されるようにします。
+-    **Skype for Business Online** で[先進認証を有効にします](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx.md)。
 
 
 - ユーザーを作成するための **Azure Active Directory (Azure AD)**。 エンドユーザーがアプリを起動して作業用の資格情報を入力すると、Azure AD がユーザーを認証します。
@@ -124,6 +119,7 @@ MAM ポリシーを構成する**前提条件**として、以下のものが必
 [Microsoft Intune でのモバイル アプリ管理ポリシーの作成および展開](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

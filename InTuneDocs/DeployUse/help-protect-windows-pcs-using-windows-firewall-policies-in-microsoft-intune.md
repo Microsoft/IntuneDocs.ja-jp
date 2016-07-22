@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: Windows PC 用ファイアウォール ポリシー | Microsoft Intune
-description:
-keywords:
+title: "Windows PC 用ファイアウォール ポリシー | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 9f338efe3ef40da3db40c12d1a18c4122e65dc5d
+
 
 ---
 
 # Microsoft Intune で Windows ファイアウォール ポリシーを使用して Windows PC を保護する
 Microsoft Intune を使用すると、Intune クライアントで管理する Windows PC をさまざまな方法で保護することができます。たとえば、PC で Windows ファイアウォールの設定を構成することを許可するポリシーを使用します。
 
-まだ Intune Windows PC クライアントをコンピューターにインストールしていない場合は、「[Microsoft Intune を使用して Windows PC クライアントをインストールする](install-the-windows-pc-client-with-microsoft-intune.md)」を参照してください。.
+まだ Intune Windows PC クライアントをコンピューターにインストールしていない場合は、「[Microsoft Intune を使用して Windows PC クライアントをインストールする](install-the-windows-pc-client-with-microsoft-intune.md)」を参照してください。
 
 Windows PC で Windows ファイアウォール ポリシーを構成、展開、監視する方法については、以下のセクションの情報を参照してください。
 
@@ -36,7 +30,7 @@ Windows PC で Windows ファイアウォール ポリシーを構成、展開�
 Windows ファイアウォール ポリシーを使用すると、管理された PC の Windows ファイアウォールを制御する設定を作成し、展開することができます。 Windows ファイアウォールのカスタム例外を管理することはできません。また、これらの設定はサードパーティ製ファイアウォールには影響しません。
 
 > [!NOTE]
-> Microsoft Intune ポリシーとグループ ポリシーが同じ PC 上で同じ設定を管理するように構成されている場合、グループ ポリシー設定が Microsoft Intune ポリシー設定よりも優先されます。 Intune ポリシーとグループ ポリシー間の競合を解決する方法については、「[GPO と Microsoft Intune ポリシーの競合を解決する](resolve-gpo-and-microsoft-intune-policy-conflicts.md)」をご覧ください。.
+> Microsoft Intune ポリシーとグループ ポリシーが同じ PC 上で同じ設定を管理するように構成されている場合、グループ ポリシー設定が Microsoft Intune ポリシー設定よりも優先されます。 Intune ポリシーとグループ ポリシー間の競合を解決する方法については、「[GPO と Microsoft Intune ポリシーの競合を解決する](resolve-gpo-and-microsoft-intune-policy-conflicts.md)」をご覧ください。
 >
 > Windows Vista を実行するコンピューターに Windows ファイアウォールの設定を展開する場合は、最初に [修正プログラム KB971800](http://support2.microsoft.com/kb/971800) をこれらのコンピューターにインストールする必要があります。
 
@@ -48,9 +42,9 @@ Windows ファイアウォール ポリシーを使用すると、管理され�
 
 ## Windows ファイアウォール ポリシーの構成
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[ポリシー]**  &gt;  **[ポリシーの追加]** を選択します。.
+1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[ポリシー]** &gt; **[ポリシーの追加]** を選択します。
 
-2.  **Windows ファイアウォール設定** ポリシーを構成し、展開します。 推奨される設定を使用することも、設定をカスタマイズすることもできます。 ポリシーの作成および展開方法の詳細については、「[Microsoft Intune コンピューター クライアントを使用した一般的な Windows PC 管理タスク](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)」を参照してください。.
+2.  **Windows ファイアウォール設定** ポリシーを構成し、展開します。 推奨される設定を使用することも、設定をカスタマイズすることもできます。 ポリシーの作成および展開方法の詳細については、「[Microsoft Intune コンピューター クライアントを使用した一般的な Windows PC 管理タスク](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)」を参照してください。
 
     次のセクションに、ポリシーに構成できる値と、ポリシーをカスタマイズしない場合に使用される既定値を示します。
 
@@ -73,7 +67,7 @@ Windows ファイアウォール ポリシーを展開したら、**[ポリシ�
 
 ### Windows ファイアウォールが新しいプログラムをブロックしたときにユーザーに通知する
 
-これらのポリシー設定により、管理されたコンピューターが職場などのドメイン、プライベート (信頼された) ネットワーク (自宅のネットワークなど)、または信頼されていないパブリック ネットワーク (喫茶店など) に接続されているときに、Windows ファイアウォールが受信ネットワーク トラフィックをブロックすることを PC のユーザーに通知するかどうかを指定できます。 これらの各設定の既定値は **[はい]** です。.
+これらのポリシー設定により、管理されたコンピューターが職場などのドメイン、プライベート (信頼された) ネットワーク (自宅のネットワークなど)、または信頼されていないパブリック ネットワーク (喫茶店など) に接続されているときに、Windows ファイアウォールが受信ネットワーク トラフィックをブロックすることを PC のユーザーに通知するかどうかを指定できます。 これらの各設定の既定値は **[はい]** です。
 
 
 ### 定義済みの例外
@@ -124,6 +118,7 @@ Windows ファイアウォール ポリシーを展開したら、**[ポリシ�
 [Windows PC を保護するためのポリシー](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

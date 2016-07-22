@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: アプリのライフサイクルの概要 | Microsoft Intune
-description:
-keywords:
+title: "アプリのライフサイクルの概要 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8d83f8ea2fa116ca6f1dbf96370c837ca6581d0b
+ms.openlocfilehash: 882f0aa030d1d9e03ca50baed3f618f7a719b5b5
+
 
 ---
 
@@ -56,6 +50,7 @@ Intune では、さまざまな方法でアプリのデータを保護できま�
 通常は、最終的に、展開したアプリは古くなり、削除する必要があります。 Intune では、簡単に[サービスからアプリを削除](retire-apps-using-microsoft-intune.md)できます。
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

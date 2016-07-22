@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: iOS アプリ間のデータ転送を管理する | Microsoft Intune
-description:
-keywords:
+title: "iOS アプリ間のデータ転送を管理する | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 002ebec14a089754849024916590b787431c7efe
+ms.openlocfilehash: fce0081fc1ecb92acf539a2d69f0493fb30ee418
+
 
 ---
 
@@ -51,9 +44,9 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 この構成は、サード パーティの MDM ソリューションによって管理されているデバイスに必要となります。 以下に示す手順では、UPN 設定の一般的な実装方法と、その結果として得られるのエンドユーザー エクスペリエンスを示しています。
 
 
-1.  iOS プラットフォームのモバイル アプリ管理ポリシーを構成します。 企業の要件に合わせてポリシー設定を構成し、このポリシーを使用するアプリを選択します。
+1.  Azure ポータルで、iOS プラットフォームの[モバイル アプリ管理ポリシーを構成します](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)。 企業の要件に合わせてポリシー設定を構成し、このポリシーを使用するアプリを選択します。
 
-2.  手順 3 と 4 で説明した設定を使用して、サードパーティの MDM ソリューションで管理するアプリと電子メール プロファイルを展開します。
+2.  手順 3 と 4 で説明した設定を使用して、**サードパーティの MDM ソリューションで**管理するアプリと電子メール プロファイルを展開します。
 
 3.  key=IntuneMAMUPN, Value=<username@company.com> というアプリ構成設定でアプリを展開します [例: ‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]。
 
@@ -80,6 +73,7 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 [Microsoft Intune でモバイル アプリケーション管理ポリシーを使用してデータを保護する](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO2-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: ポータル サイトの概要 | Microsoft Intune
-description:
-keywords:
+title: "ポータル サイトの概要 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
-
-# optional metadata
-
-#ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
+ms.openlocfilehash: 56edeafa9221b3574ceaba269891dfb92df44408
+
 
 ---
 
@@ -100,10 +94,15 @@ Microsoft Intune ポータル サイトでは、会社や学校のデータと�
 ## ポータル サイトに表示されないデバイスがあります。
 デバイスを表示するには、ポータル サイトに追加する必要があります。 管理者に指定されたポータル サイトを開き、手順に従ってデバイスを追加してください。 会社が所有および管理しているデバイスは表示されません。
 
+## ご質問がございましたら、IT 管理者に問い合わせてください。
+サポートが必要な場合は、IT 管理者に問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
 
 
 
-<!--HONumber=May16_HO2-->
+
+
+
+<!--HONumber=Jul16_HO1-->
 
 

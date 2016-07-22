@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Skype for Business Online へのアクセスを制限する | Microsoft Intune
-description:
-keywords:
+title: "Skype for Business Online へのアクセスを制限する | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 5cbf748ffee8fbb53f7e64a5499f06d5bd89c415
+ms.openlocfilehash: c26f3b732eb42903c72e8655542ee1ed586f5c67
+
 
 ---
 
@@ -30,7 +23,7 @@ ms.suite: ems
 条件付きアクセスには、2 つのコンポーネントがあります。
 - デバイス コンプライアンス ポリシー。準拠したデバイスと見なされるには、このポリシーに準拠している必要があります。
 - 条件付きアクセス ポリシー。デバイスがサービスにアクセスするために満たす必要のある条件を指定します。
-条件付きアクセスの動作の詳細については、[電子メールと O365 サービスへのアクセスの制限](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)に関する記事を参照してください。
+条件付きアクセスの動作の詳細については、[電子メールと O365 サービスへのアクセスの制限](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)に関する記事をご覧ください。
 
 対象となるユーザーがデバイスで Skype for Business Online を使用しようとすると、次の評価が行われます。
 
@@ -39,7 +32,7 @@ ms.suite: ems
 Skype for Business Online の条件付きアクセス ポリシーを構成する**前に**、次のことを行う必要があります。
 - **Skype for Business Online サブスクリプション**を取得し、Skype for Business Online のライセンスをユーザーに割り当てます。
 - **Enterprise Mobility Suite** または **Azure Active Directory Premium** のサブスクリプションを取得します。
--   Skype for Business Online で**先進認証を有効**にします。 Microsoft Connect にログインし、[このフォーム](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715)に入力して、先進認証プログラムに登録されるようにします。
+-   Skype for Business Online で[先進認証を有効](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune)にします。 
 -  すべてのエンド ユーザーが **Skype for Business Online** を使用している必要があります。 展開に Skype for Business Online とオンプレミスの Skype for Business の両方が含まれる場合は、エンド ユーザーに条件付きアクセス ポリシーが適用されません。
 
     Skype for Business Online にアクセスするデバイスは、次の条件を満たしている必要があります。
@@ -119,6 +112,7 @@ Skype for Business ポリシーに対して使用する 2 つのグループの�
 * **AAD に登録され、準拠しているデバイス** – これらのデバイスは、Skype for Business Online にアクセスできます。
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

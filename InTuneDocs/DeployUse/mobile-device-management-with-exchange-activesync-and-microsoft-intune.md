@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Exchange ActiveSync および Microsoft Intune を使用したモバイル デバイス管理 | Microsoft Intune
-description:
-keywords:
+title: "Exchange ActiveSync および Microsoft Intune を使用したモバイル デバイス管理 | Microsoft Intune"
+description: 
+keywords: 
 author: nathbarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: d24395786daa7aec103ec754895868a75983e099
+
 
 ---
 
@@ -41,7 +35,7 @@ Exchange Connector を使用すると、Intune コンソールで Exchange の�
 -   [ホスト型 Exchange 用の Intune Service to Service Connector を構成する](intune-service-to-service-exchange-connector.md)
 
 ## Exchange で管理されているモバイル デバイスのポリシーを適用する
-Intune コンソールから適用できるポリシー設定については、「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」を参照してください。 各モバイル デバイスでサポートされる Exchange ActiveSync のポリシー設定と機能の一覧については、「[Exchange ActiveSync Client Comparison Table (Exchange ActiveSync クライアントの比較表)](http://go.microsoft.com/fwlink/?LinkId=247270)」を参照してください。.
+Intune コンソールから適用できるポリシー設定については、「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」を参照してください。 各モバイル デバイスでサポートされる Exchange ActiveSync のポリシー設定と機能の一覧については、「[Exchange ActiveSync Client Comparison Table](http://go.microsoft.com/fwlink/?LinkId=247270)」 (Exchange ActiveSync クライアントの比較表) を参照してください。
 
 > [!NOTE]
 > Intune を Microsoft Exchange 環境に接続すると、Intune で管理されているすべてのユーザーの EAS ポリシーは、Intune 内で特定のポリシーが定義されていない限り、Microsoft Exchange サーバーの現在の既定のポリシーにリセットされます。
@@ -50,6 +44,7 @@ Intune コンソールから適用できるポリシー設定については、�
 最後に、会社のデータが不要になったとき、またはデバイスをなくしたり盗まれたりしたときは、[EAS で管理されたモバイル デバイスから会社のデータを消去](wipe-for-exchange-managed-mobile-devices.md)できます。
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

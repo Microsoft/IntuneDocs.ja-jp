@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune で管理されたモバイル デバイスの Exchange アクセス ルール | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune で管理されたモバイル デバイスの Exchange アクセス ルール | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: ef0b9901e340aec8b2b516f0180133e37833bf37
+
 
 ---
 
@@ -45,19 +39,20 @@ ms.suite: ems
 
 ## 既定のアクセス ルールの作成
 
-1.  [Microsoft Intune 管理コンソール](http://manage.microsoft.com)で、**[ポリシー]**  &gt;  **[モバイル デバイスの Exchange へのアクセス]** をクリックします。.
+1.  [Microsoft Intune 管理コンソール](http://manage.microsoft.com) &gt; **[ポリシー]** &gt; **[モバイル デバイスの Exchange へのアクセス]** を選択します。
 
-2.  **[既定のルール]** リストで、ルールまたは個人の適用除外の対象にならないすべてのモバイル デバイスに適用するアクセス ルールを選択します。 **[保存]** を選びます。.
+2.  **[既定のルール]** リストで、ルールまたは個人の適用除外の対象にならないすべてのモバイル デバイスに適用するアクセス ルールを選択します。 **[保存]** を選びます。
 
 以下の手順は、カスタム ルールを作成する方法を示します。
 
 ## カスタム アクセス ルールの作成
 
-1. [Microsoft Intune 管理コンソール](http://manage.microsoft.com)で、**[ポリシー]**  &gt;  **[モバイル デバイスの Exchange へのアクセス]** をクリックします。.
+1. [Microsoft Intune 管理コンソール](http://manage.microsoft.com) &gt; **[ポリシー]** &gt; **[モバイル デバイスの Exchange へのアクセス]** を選択します。
 
-2.  **[カスタム ルール]** リストで、**[ルールの追加]** を選び、カスタム ルールを作成します。 **[保存]** を選びます。.
+2.  **[カスタム ルール]** リストで、**[ルールの追加]** を選び、カスタム ルールを作成します。 **[保存]** を選びます。
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

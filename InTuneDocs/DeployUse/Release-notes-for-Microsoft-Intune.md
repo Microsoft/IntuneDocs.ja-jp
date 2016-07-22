@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune のリリース ノート | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune のリリース ノート | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: db9479b2-582d-4a1a-9fbc-fbfc6c680e6f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 1906f14568484ebbf23ac7c4350964fb2d5d508f
+
 
 ---
 
@@ -63,9 +57,9 @@ Microsoft は、修正プログラムやその他の回避策について Samsun
 
 **対応策:** 認証済みのプロキシ サーバーを使用する必要があるネットワークで、Windows 8.1 デバイスを登録する必要がある場合は、プロキシ サーバーの資格情報を構成し、保存してから、デバイスを登録します。 Windows 8.1 デバイスで資格情報を構成して保存するには:
 
-1.  Windows 8.1 デバイスで、**Internet Explorer** を開きます。.
+1.  Windows 8.1 デバイスで、**Internet Explorer** を開きます。
 
-2.  プロキシ サーバーの資格情報を入力するプロンプトが表示されたら、資格情報を入力し、オプション **[資格情報を記憶する]** を選択します。.
+2.  プロキシ サーバーの資格情報を入力するプロンプトが表示されたら、資格情報を入力し、オプション **[資格情報を記憶する]**を選択します。
 
 3.  デバイスを登録します。
 
@@ -78,7 +72,7 @@ Microsoft は、修正プログラムやその他の回避策について Samsun
 ## Android 用の Microsoft Intune アプリ ラッピング ツールには、アンインストール機能が組み込まれていません。
 **問題:** **Android 用の Microsoft アプリ ラッピング ツール**には、ツールをアンインストールする機能が組み込まれていません。
 
-**対応策:** ツールがインストールされている場所を指定し、ディレクトリを削除します。 既定のインストール場所は、**C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool** です。 アプリ ラッピング ツールの詳細については、「[Prepare Android apps for management with App Wrapping Tool (アプリ ラッピング ツールを使用した管理のために Android アプリを準備する)](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)」を参照してください。.
+**対応策:** ツールがインストールされている場所を指定し、ディレクトリを削除します。 既定のインストール場所は、**C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool** です。 アプリ ラッピング ツールの詳細については、「[アプリ ラッピング ツールで管理するために Android アプリを準備する](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)」を参照してください。
 
 ## Windows 8 または Windows 8.1 を実行するコンピューターでリモート アシスタンスを使用できません
 **問題:** このリリースでは、Windows 8 または Windows 8.1 を実行しているコンピューターでリモート アシスタンス機能を使用できません。
@@ -96,6 +90,7 @@ Azure プレビュー ポータルは新しいプラットフォームに基づ�
 Intune 管理コンソールとエンド ユーザーが対面するモバイル エクスペリエンスでは、Azure プレビュー ポータルでサポートされている言語だけでなくデンマーク語、ギリシャ語、フィンランド語、ノルウェー語、およびルーマニア語もサポートしています。
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

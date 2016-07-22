@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Windows 10 ポリシー設定 | Microsoft Intune
-description:
-keywords:
+title: "Windows 10 ポリシー設定 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 1cccafa5f740bad50779ae36c899fd23ee7dc5f3
+ms.openlocfilehash: 70347776f72a3534a4c384957aef01a909767b99
+
 
 ---
 
@@ -168,6 +161,7 @@ Windows 10 用の Microsoft Intune **全般構成ポリシー**を使用して�
 |**署名更新間隔**|Defender が新しいシグネチャ ファイルをチェックする間隔を指定します。|
 |**クラウド保護を許可する**|管理対象のデバイスからマルウェアのアクティビティに関する情報が Microsoft Active Protection Service に送信されるのを許可またはブロックします。 この情報は、将来的に本サービスの品質向上を目的として使用されます。|
 |**ユーザーにサンプルの提出を指示する**|悪意の有無を判断するために、Microsoft による詳しい分析が必要な可能性のあるファイルを、Microsoft に自動的に送信するかどうかを制御します。|
+|**望ましくない可能性があるアプリケーションの検出**|この設定を使えば、Windows Defender によって望ましくない可能性があると判断されたソフトウェアの実行から、登録済みの Windows デスクトップ コンピューターを保護することができます。 このようなアプリケーションの実行からコンピューターを保護したり、望ましくない可能性があるアプリケーションがいつインストールされたのかを監査モードでレポートしたりできます。|
 |**スキャンまたはリアルタイム保護から除外するファイルとフォルダー**|**C:\Path** や **%ProgramFiles%\Path\filename.exe** などのファイルやフォルダーを、除外リストに 1 つ以上追加します。 これらのファイルとフォルダーは、リアルタイムまたはスケジュールされたスキャンの対象外となります。|
 |**スキャンの実行中、またはリアルタイム保護の使用時に除外するファイル拡張子**|**jpg** や **txt** などのファイル拡張子を、除外リストに 1 つ以上追加します。 これらの拡張子が付いたファイルは、リアルタイムまたはスケジュールされたスキャンの対象外となります。|
 |**スキャンの実行中、またはリアルタイム保護の使用時に除外するプロセス**|**.exe**、**.com**、**.scr** などの種類のプロセスを、除外リストに 1 つ以上追加します。 これらのプロセスは、リアルタイムまたはスケジュールされたスキャンの対象外となります。| 
@@ -332,6 +326,7 @@ Windows のカスタム URI ポリシーを使用する場合は、すべての�
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

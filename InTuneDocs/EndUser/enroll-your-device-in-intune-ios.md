@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: Intune に iOS デバイスを登録する | Microsoft Intune
-description:
-keywords:
+title: "Intune に iOS デバイスを登録する | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/18/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
-
-# optional metadata
-
-ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ROBOTS: 
+ms.reviewer: esmich
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
+ms.openlocfilehash: 305308aa94a7650df8b44710025620906714421b
+
 
 ---
 
@@ -31,6 +26,7 @@ ms.suite: ems
 職場または学校が Microsoft Intune を使用している場合は、お使いの iOS デバイスを登録して、会社の電子メール、ファイル、またその他のリソースにアクセスできます。 デバイスを登録すると、IT 部門が職場や学校のリソースを管理してそれらの安全性を保持する一方で、ユーザーは好みのデバイスを使用して作業を進めることができます。 登録の詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)」を参照してください。
 
 Mac OS X デバイスを登録しようとしている場合は、「[Intune に Mac OS X デバイスを登録する](enroll-your-device-in-intune-mac-os-x.md)」を参照してください。
+
 
 
 **iOS デバイスを登録するには:**
@@ -89,13 +85,12 @@ Mac OS X デバイスを登録しようとしている場合は、「[Intune に
 
 これでデバイスが Intune に登録され、ポータル サイト アプリに戻ります。
 
-    
-
-  
+サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
 ### 関連項目
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

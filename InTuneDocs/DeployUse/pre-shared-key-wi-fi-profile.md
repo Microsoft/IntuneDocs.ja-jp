@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: PSK を使用した Wi-Fi |Microsoft Intune
+title: "PSK を使用した Wi-Fi |Microsoft Intune"
 description: 
-keywords:
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: 
+ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 066baae17da1fd399f4f7d10784719e3dc46f235
+ms.openlocfilehash: 632adf3dccf40dd2b361d170f501a851bf0fda38
+
 
 
 ---
@@ -35,7 +29,7 @@ Intune の**カスタム構成**を使用して、事前共有キーを使用し
 -  iOS でプロファイルを構成するには、Mac ステーションで Apple Configurator を使用します。 また、Johnathon Biersack 氏が提供する [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) を使用します。
 
 
-1.  Android または Windows 用に事前共有キーを使用した Wi-Fi プロファイル、または EAP ベースの Wi-Fi プロファイルを作成する場合、ポリシーを作成する際に、Wi-Fi プロファイルではなく、そのデバイスのプラットフォーム用の**カスタム構成**を選択します。
+1.  Android または Windows 用に事前共有キーを使用した Wi-Fi プロファイル、または EAP ベースの Wi-Fi プロファイルを作成する場合、ポリシーを作成するときに、Wi-Fi プロファイルではなく、そのデバイスのプラットフォーム用の**カスタム構成**を選択します。
 
 2.  名前と説明を入力します。
 3.  新しい OMA-URI 設定を追加します。
@@ -53,7 +47,7 @@ Intune の**カスタム構成**を使用して、事前共有キーを使用し
 SSID は、作成しているポリシーの SSID です。 例:
 `./Vendor/MSFT/Wi-Fi/Profile/Hotspot-1/Settings`
 
-  e.    値フィールド: ここに XML コードを貼り付けます。 次に例を示します。 それぞれの値は、ネットワーク設定に適したものにする必要があります。 一部のポインターのコードについては、コメント セクションを参照してください。
+  e.    値フィールド: ここに XML コードを貼り付けます。 次に例を示します。 それぞれの値は、ネットワーク設定に適したものにする必要があります。 一部のポインターのコードについては、コメント セクションをご覧ください。
 
 
     <!--
@@ -179,7 +173,7 @@ SSID は、作成しているポリシーの SSID です。 例:
 4.  [OK] をクリックし、ポリシーを保存して展開します。
 注: このポリシーは、ユーザー グループにのみ展開できます。
 
-次回各デバイスがチェックインする際に、ポリシーは適用され、そのデバイスに Wi-Fi プロファイルが作成されます。 デバイスは自動的にネットワークに接続できるようになります。
+次回各デバイスがチェックインするときに、ポリシーは適用され、そのデバイスに Wi-Fi プロファイルが作成されます。 デバイスは自動的にネットワークに接続できるようになります。
 ## 既存の Wi-Fi 接続からの XML ファイルの作成
 次のように、既存の Wi-Fi 接続から XML ファイルを作成することもできます。
 1.     ワイヤレス ネットワークに接続中のコンピューターまたは最近接続されたコンピューターの、C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid} のフォルダーを開きます。 すべての中から正しいプロファイルを探す必要があるため、多数のワイヤレス ネットワークに接続したことのないコンピューターを使用するのが最良です。
@@ -188,13 +182,13 @@ SSID は、作成しているポリシーの SSID です。 例:
 
 ## ポリシーの展開
 
-1.  **[ポリシー]** ワークスペースで、展開するポリシーを選択し、**[展開の管理]** をクリックします。.
+1.   **[ポリシー]** ワークスペースで、展開するポリシーを選択し、 **[展開の管理]**をクリックします。
 
 2.   **[展開の管理]** ダイアログ ボックスで、次の操作を実行します。
 
-    -   **ポリシーを展開するには** - ポリシーを展開する対象となる 1 つ以上のグループを選択して、**[追加]** &gt;  **[OK]** の順にクリックします。.
+    -   **ポリシーを展開するには**、ポリシーを展開する対象となる 1 つ以上のグループを選択して、**[追加]** &gt; **[OK]** をクリックします。
 
-    -   **ポリシーを展開せずにダイアログ ボックスを閉じるには**、**[キャンセル]** をクリックします。.
+    -   **ポリシーを展開せずにダイアログ ボックスを閉じるには**、**[キャンセル]** をクリックします。
 
 展開済みポリシーを選択すると、ポリシー一覧の下部に展開についての詳細が表示されます。
 
@@ -202,6 +196,7 @@ SSID は、作成しているポリシーの SSID です。 例:
 [Wi-Fi connections in Microsoft Intune (Microsoft Intune での Wi-Fi 接続)](wi-fi-connections-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

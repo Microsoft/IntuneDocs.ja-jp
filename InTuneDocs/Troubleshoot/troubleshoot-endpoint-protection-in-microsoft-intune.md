@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: エンドポイント保護のトラブルシューティング | Microsoft Intune
-description:
-keywords:
+title: "エンドポイント保護のトラブルシューティング | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c22ddd554928b394e14742b8ba7d583d390d1c44
+ms.openlocfilehash: 0f4d8c49eb87ef94a1ddfdebd7dcd40c41b9a5a0
+
 
 ---
 
@@ -54,6 +48,7 @@ Microsoft Intune エンドポイント保護の使用中に生じた問題を解
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

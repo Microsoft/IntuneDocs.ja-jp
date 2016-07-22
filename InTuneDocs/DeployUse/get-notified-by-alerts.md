@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: アラートによる通知 | Microsoft Intune
-description:
-keywords:
+title: "アラートによる通知 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 396ea714-0433-4bd5-a934-8d0b477f28e4
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e929a95d95b71e22d46e124f1a423af7046b0539
+ms.openlocfilehash: f1dd166b7b1278003ac8785b8be07c29396dfe8c
+
 
 ---
 
@@ -83,12 +77,14 @@ Intune のアラートは、次の条件が満たされるまでは、引き続�
 
 -   アラートの生成から 45 日が経過した。
 
-> [!TIP]異なるオペレーティング システムを実行しているデバイスで同じアラートが生成された場合、アラートの一覧に同じアラートの複数のバージョンが表示される可能性があります。
+> [!TIP]
+> 異なるオペレーティング システムを実行しているデバイスで同じアラートが生成された場合、アラートの一覧に同じアラートの複数のバージョンが表示される可能性があります。
 
 ### 関連項目
 [Microsoft Intune を使用した監視とレポート](monitoring-and-reports-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO5-->
+
+<!--HONumber=Jun16_HO4-->
 
 

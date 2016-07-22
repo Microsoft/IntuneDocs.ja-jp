@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Android デバイスを Intune で使用する | Microsoft Intune
-description:
-keywords:
+title: "Android デバイスを Intune で使用する | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 24573d04c319e359b810b6fdf607b44db19306e9
+ms.openlocfilehash: 4622897f5e32514ad80b5000732cf6835224160a
+
 
 ---
 
@@ -52,6 +46,7 @@ ms.suite: ems
 - [利用規約を拒否した場合にデバイスの登録を解除する](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [Intune からデバイスの登録を解除するとどうなるか](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [ポータル サイト アプリを使用して Android デバイスをリセットするとどうなるか](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
+<!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
 
 ## ご利用のデバイスでの問題の解決
 
@@ -65,10 +60,16 @@ ms.suite: ems
 - [デバイスが最新のオペレーティング システムのバージョンに準拠していない](device-doesnt-comply-with-maximum-operating-system-version-android.md)
 - [デバイスが root 化され、接続できない](your-device-is-rooted-and-you-cant-connect-android.md)
 - [デバイスに必要な証明書がない](your-device-is-missing-a-required-certificate-android.md)
+- [不明なソースを無効にすることを求められる](you-are-asked-to-turn-off-unknown-sources-android.md)
+- [USB デバッグを無効にすることを求められる](you-are-asked-to-turn-off-usb-debugging-android.md)
+- [セキュリティ上の脅威に対してデバイスのスキャンを有効にすることを求められる](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
+- [デバイスが最小限のセキュリティ パッチを満たしていない](your-device-does-not-meet-the-minimum-security-patch-android.md)
 
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+
+<!--HONumber=Jun16_HO5-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Android MAM ポリシーの設定 | Microsoft Intune
-description:
-keywords:
+title: "Android MAM ポリシーの設定 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 3f43dc871dc0b0a81a6d0b05376a1254957fc35b
+
 
 ---
 
@@ -65,11 +59,12 @@ ms.suite: ems
 
     **既定値 = はい**
 - **アプリケーション データを暗号化する:** 暗号化を有効にするには、**[はい]** を選択します。 この設定が有効な場合、モバイル アプリ管理ポリシーに関連付けられているアプリでは、暗号化は Microsoft によって提供されます。 データは、ファイル I/O 操作中に同期的に暗号化されます。 デバイス ストレージ上のコンテンツは常に暗号化されます。
-  >[!NOTE] この暗号化方法は FIPS 140-2 で認定されていません。
+  >[!NOTE]
+  >この暗号化方法は FIPS 140-2 で認定されていません
 
   **既定値 = はい**
 
-- **ContactSyncDisabled:** デバイス上のネイティブ アドレス帳アプリに連絡先情報が同期されないようにするには、**[はい]** を選択します。 **[いいえ]** を選択した場合、アプリは、デバイス上のネイティブ アドレス帳アプリに連絡先情報を保存します。<br/>会社のデータを削除するために選択的ワイプを行うと、アプリからネイティブ アドレス帳に直接同期された連絡先が削除されます。 ネイティブ アドレス帳から別の外部ソースに同期された連絡先はワイプできません。 現在、これは **Microsoft Outlook** アプリにのみ適用されます。
+- **連絡先の同期を無効にする:** デバイス上のネイティブ アドレス帳アプリに連絡先情報が同期されないようにするには、**[はい]** を選択します。 **[いいえ]** を選択した場合、アプリは、デバイス上のネイティブ アドレス帳アプリに連絡先情報を保存します。<br/>会社のデータを削除するために選択的ワイプを行うと、アプリからネイティブ アドレス帳に直接同期された連絡先が削除されます。 ネイティブ アドレス帳から別の外部ソースに同期された連絡先はワイプできません。 現在、これは **Microsoft Outlook** アプリにのみ適用されます。
 
   **既定値 = はい**
 
@@ -100,6 +95,7 @@ ms.suite: ems
 - **スクリーン キャプチャと Android Assistant をブロックする (Android 6 Marshmallow 以降):** アプリの使用中にデバイスのスクリーン キャプチャと **Android Assistant** の機能をブロックするには、**[はい]** を選択します。
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

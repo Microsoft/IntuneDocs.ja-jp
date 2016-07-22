@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: ソフトウェアの更新に関するトラブルシューティング | Microsoft Intune
-description:
-keywords:
+title: "ソフトウェアの更新に関するトラブルシューティング | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ca4d4197ac1ece3e9abf44ad462d8ec7a807b4b2
+ms.openlocfilehash: d8470be236ac7b7a9431e07c5ca651cb6bd9fbc0
+
 
 ---
 
@@ -29,6 +23,8 @@ ms.suite: ems
 Microsoft Intune のソフトウェア更新の問題を解決するには、このセクションの情報を参考にしてください。
 
 この情報で問題が解決しない場合、さらに役立つ方法を探すには、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」を参照してください。
+
+## 更新エージェントのエラー コード
 
 次の表に、Intune **更新エージェント**のエラー コードを示します。 発生したエラーのコードが、この表に見つからない場合は、「 [Windows Update Agent Result Codes (Windows 更新エージェントの結果コード)](http://go.microsoft.com/fwlink/?LinkID=221542)」を参照してください。
 
@@ -268,6 +264,7 @@ Microsoft Intune のソフトウェア更新の問題を解決するには、こ
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO5-->
 
 

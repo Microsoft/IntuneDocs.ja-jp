@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 管理者の役割用のコンソール ビューをカスタマイズする | Microsoft Intune
-description:
-keywords:
+title: "管理者の役割用のコンソール ビューをカスタマイズする | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 52a77e50b3dde24ba270766d4472bdd6176cc415
+
 
 ---
 
@@ -30,9 +24,9 @@ Microsoft Intune 管理コンソール ビューをフィルター処理して�
 
 ## カスタム ビューを作成する方法
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[管理]**  &gt;  **[サービス管理者]** をクリックします。.
+1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[管理]** &gt; **[サービス管理者]** をクリックします。
 
-2.  サービス管理者の一覧から、指定を変更するユーザーを選択し、**[アクセスの管理]** をクリックします。.
+2.  サービス管理者の一覧から、指定を変更するユーザーを選択し、**[アクセスの管理]** をクリックします。
 
 3.  **[アクセスの管理]** ダイアログ ボックスで、選択したユーザーに付与するアクセス レベルを選択します。 次の項目から選択できます。
 
@@ -44,7 +38,7 @@ Microsoft Intune 管理コンソール ビューをフィルター処理して�
 
     **ヘルプデスク - グループ ノード**は、次に示す管理者が確認できる項目と実行できる操作を制限します。
 
-    -   ユーザーとデバイスの一覧を表示する。 管理者は、フィルターを使用してビューを変更することはできません。 ただし、グループ フィルターを使用して、管理者に表示される内容を変更できます。 詳しくは、「[Microsoft Intune でユーザーとデバイスの管理にグループを使用する](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)」を参照してください。.
+    -   ユーザーとデバイスの一覧を表示する。 管理者は、フィルターを使用してビューを変更することはできません。 ただし、グループ フィルターを使用して、管理者に表示される内容を変更できます。 詳しくは、「[Microsoft Intune でユーザーとデバイスの管理にグループを使用する](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)」を参照してください。
 
     -   ユーザーとデバイスの一覧を印刷する。
 
@@ -73,6 +67,7 @@ Microsoft Intune 管理コンソール ビューをフィルター処理して�
 構成した管理者が次に Intune 管理コンソールを開いたとき、指定したアクセス レベルが与えられます。
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

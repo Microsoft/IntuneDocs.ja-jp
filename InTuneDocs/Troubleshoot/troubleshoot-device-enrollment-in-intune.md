@@ -1,43 +1,47 @@
 ---
-# required metadata
-
-title: デバイス登録に関するトラブルシューティング | Microsoft Intune
-description:
-keywords:
+title: "デバイス登録に関するトラブルシューティング | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d12a31eb0727f7ca0c460049ac6fffb314daf70e
+ms.openlocfilehash: 62668c607bc3064cf8148fd7929b3c1268b721d7
+
 
 ---
 
 # Intune のデバイス登録に関するトラブルシューティング
 
-ここでは、デバイス登録に関する問題と、そのトラブルシューティングと解決方法について説明します。
-
-> [!NOTE]
-> 管理対象デバイスのユーザーが登録ログと診断ログを収集しておくと、管理者が確認できます。 ユーザーがログを収集する手順については、次のページを参照してください。
->- [USB ケーブルを使用して Android の診断データのログを IT 管理者に送信する](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
->- [メールを使用して Android の診断データのログを IT 管理者に送信する](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
->- [IT 管理者に Android の登録に関するエラーを送信する](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
->- [IT 管理者に iOS の登録に関するエラーを送信する](/intune/enduser/send-errors-to-your-it-admin-ios)
+このトピックでは、デバイス登録で問題が発生した場合の解決方法を提案します。 この情報で問題が解決しない場合、さらに役立つ方法を探すには、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」を参照してください。
 
 
-この情報で問題が解決しない場合、さらに役立つ方法を探すには、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」を参照してください。
+## 最初のトラブルシューティングの手順
+
+トラブルシューティングを開始する前に、登録を有効にするように Intune を構成していることを確認してください。 構成要件は次で確認できます。
+
+-   [Microsoft Intune にデバイスを登録する準備](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)
+-   [iOS および Mac のデバイス管理をセットアップする](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-   [Microsoft Intune を使用して Windows Phone と Windows 10 Mobile の管理をセットアップする](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+-   [Windows デバイスの管理をセットアップする](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+
+
+管理対象デバイスのユーザーが登録ログと診断ログを収集しておくと、管理者が確認できます。 ユーザーがログを収集する手順については、次のページを参照してください。
+
+- [USB ケーブルを使用して Android の診断データのログを IT 管理者に送信する](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+- [メールを使用して Android の診断データのログを IT 管理者に送信する](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
+- [IT 管理者に Android の登録に関するエラーを送信する](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
+- [IT 管理者に iOS の登録に関するエラーを送信する](/intune/enduser/send-errors-to-your-it-admin-ios)
+
+
 
 ## 登録に関する一般的な問題
 これらの問題は、すべてのデバイス プラットフォームで発生する可能性があります。
@@ -103,7 +107,8 @@ ms.suite: ems
 
 1.  使用している Intune サービスのバージョンに適した MDM 機関が設定されていることを確認します。つまり、Intune の場合は O365 MDM、または System Center Configuration Manager と Intune などです。 Intune の場合、MDM 機関は **[管理]** &gt; **[モバイル デバイス管理]** で設定されています。 Configuration Manager と Intune の場合、Intune コネクタを構成するときに設定します。O365 では、**[モバイル デバイス]** 設定です。
 
-    > [!NOTE] MDM 機関を設定した後に変更するには、サポートに連絡する必要があります。詳細については、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」を参照してください。
+    > [!NOTE]
+    > MDM 機関を設定した後に変更するには、サポートに連絡する必要があります。詳細については、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」を参照してください。
 
 2.  ユーザーの UPN と、アカウント ポータルの Active Directory 情報が一致していることを確認して、ユーザーの資格情報が Azure Active Directory と適切に同期されていることを確認します。
     UPN が Active Directory 情報と一致しない場合:
@@ -255,8 +260,7 @@ iOS 登録エラーの一覧は、デバイスのユーザー ドキュメント
 
 |エラー コード|問題|推奨される解決策|
 |--------------|--------------------|----------------------------------------|
-|0x80CF0437 |クライアント コンピューターのクロックが正しい時刻に設定されていません。|クライアント コンピューターのクロックおよびタイム ゾーンが正しく設定されていることを確認してください。
-|
+|0x80CF0437 |クライアント コンピューターのクロックが正しい時刻に設定されていません。|クライアント コンピューターのクロックおよびタイム ゾーンが正しく設定されていることを確認してください。|
 |0x80240438、0x80CF0438、0x80CF402C|Intune サービスに接続できません。 クライアントのプロキシ設定を確認してください。|クライアント コンピューターのプロキシの構成が Intune でサポートされていることと、クライアント コンピューターがインターネットにアクセスできることを確認してください。|
 |0x80240438、0x80CF0438|Internet Explorer とローカル システムのプロキシ設定が構成されていません。|Intune サービスに接続できません。 クライアントのプロキシ設定をチェックし、クライアント コンピューターのプロキシの構成が Intune でサポートされていることと、クライアント コンピューターがインターネットにアクセス可能であることを確認してください。|
 |0x80043001、0x80CF3001、0x80043004、0x80CF3004|登録パッケージが最新ではありません。|[管理] ワークスペースを使用して、最新のクライアント ソフトウェア パッケージをダウンロードしてインストールしてください。|
@@ -280,6 +284,7 @@ iOS 登録エラーの一覧は、デバイスのユーザー ドキュメント
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

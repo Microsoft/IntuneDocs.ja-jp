@@ -18,9 +18,9 @@
 
 # [展開と使用](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [アプリの開発とカスタマイズ](/intune/develop/intune-app-sdk)
-# [トラブルシューティング](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+# [トラブルシューティング](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jul16_HO1-->
 
 

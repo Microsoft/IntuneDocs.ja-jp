@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 社内の Exchange 用の Microsoft Intune Exchange Connector のインストール |Microsoft Intune
-description:
-keywords:
+title: "社内の Exchange 用の Microsoft Intune Exchange Connector のインストール |Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
+
 
 ---
 
@@ -37,13 +30,13 @@ On-Premises Exchange Connector をインストールするコンピューター�
 |---------------|--------------------|
 |Operating systems|Intune は、Windows Server 2008 SP2 64 ビット、Windows Server 2008 R2、Windows Server 2012、または Windows Server 2012 R2 の任意のエディションを実行しているコンピューター上の On-Premises Exchange Connector をサポートします。<br /><br />Server Core インストールでは、コネクタはサポートされません。|
 |Microsoft Exchange のバージョン|On-Premises Connector には、Microsoft Exchange 2010 SP1 以降が必要です。|
-|モバイル デバイス管理機関| [モバイル デバイス管理機関を Intune に設定します](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority).|
+|モバイル デバイス管理機関| [モバイル デバイス管理機関を Intune に設定します](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)。|
 |ハードウェア|Connector をインストールするコンピューターには、1.6 GHz の CPU と 2 GB の RAM と 10 GB の空きディスク容量の最小ハードウェアが必要です。|
 |Active Directory の同期|いずれかの Connector を使用して Intune を Exchange Server に接続するには、[Active Directory の同期をセットアップ](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3)して、ローカル ユーザーとセキュリティ グループが Azure Active Directory のインスタンスと同期されるようにする必要があります。|
 |その他のソフトウェア|Connector をホストするコンピューターに、Microsoft .NET Framework 4 および Windows PowerShell 2.0 の完全インストールがインストールされている必要があります。|
 |Network (ネットワーク)|コネクタをインストールするコンピューターは、Exchange Server をホストするドメインと信頼関係があるドメインに参加している必要があります。<br /><br />コンピューターは、ポート 80 と 443 でファイアウォールとプロキシ サーバー経由で Intune サービスにアクセスできるように構成する必要があります。 Intune によって使用されるドメインには、manage.microsoft.com、& #42;manage.microsoft.com、および & #42;manage.microsoft.com が含まれます。|
 |ホスト型 Exchange が構成済みで実行中である|詳細については、「[Exchange Server 2016](https://technet.microsoft.com/library/mt170645.aspx)」を参照してください。 |
-|モバイル デバイス管理機関を Intune に設定します|[モバイル デバイス機関を Intune に設定します](get-ready-to-enroll-devices-in-microsoft-intune.md#BKMK_Set_MDM_Authority)|
+|モバイル デバイス管理機関を Intune に設定します|[モバイル デバイス機関を Intune に設定します](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
 
 ### Exchange コマンドレットの要件
 
@@ -68,11 +61,11 @@ Intune Exchange Connector が使用する Active Directory ユーザー アカ�
 1. On-Premises Exchange Connector のサポートされているオペレーティング システムで、Exchange Server を使用するライセンスを持つ Exchange テナント内の管理者であるユーザー アカウントを使用して、[Microsoft Intune 管理コンソール](http://manage.microsoft.com) (http://manage.microsoft.com) を開きます。
 ![Exchange 接続のセットアップを開く](../media/ExchangeConnector.gif)
 
-2.  ワークスペースのショートカット ウィンドウで、**[管理]** を選択します。.
+2.  ワークスペースのショートカット ウィンドウで、**[管理]** を選びます。
 
-3.  ナビゲーション ウィンドウの **[モバイル デバイス管理]** で、**[Microsoft Exchange]** を展開し、**[Exchange 接続のセットアップ]** を選択します。.
+3.  ナビゲーション ウィンドウの **[モバイル デバイス管理]** で、**[Microsoft Exchange]** を展開し、**[Exchange 接続のセットアップ]** を選択します。
 
-4.  **[Exchange 接続のセットアップ]** ページで **[On-Premises Connector のダウンロード]** を選択します。.
+4.  **[Exchange 接続のセットアップ]** ページで **[On-Premises Connector のダウンロード]** を選びます。
 
 5.  On-Premises Exchange Connector は、開いたり保存したりできる圧縮 (zip 形式) フォルダーに含まれています。 **[ファイルのダウンロード]** ダイアログ ボックスで **[保存]** を選んで、圧縮フォルダーを安全な場所に保存します。
 
@@ -89,7 +82,7 @@ Intune Exchange Connector が使用する Active Directory ユーザー アカ�
     > [!IMPORTANT]
     > 抽出先のフォルダーが安全な場所にない場合は、On-Premises Connector をインストールした後で、**WindowsIntune.accountcert** という証明書ファイルを削除してください。
 
-3.  **[Exchange Server]** フィールドで、Exchange Server 環境の種類を **[社内の Microsoft Exchange Server]** または** [ホストされた Microsoft Exchange Server]** から選択します。.
+3.  **[Exchange Server]** フィールドで、Exchange Server 環境の種類を **[社内の Microsoft Exchange Server]** または** [ホストされた Microsoft Exchange Server]** から選択します。
 
   ![Exchange サーバーの種類の選択](../media/IntuneSA1dconfigureExchConnector.png)
 
@@ -99,28 +92,28 @@ Intune Exchange Connector が使用する Active Directory ユーザー アカ�
 
       1.  Office 365 の Outlook Web App を開きます。
 
-      2.  “?”  アイコン (左上) をクリックし、**[バージョン情報]** を選択します。.
+      2.  “?”  アイコンをクリックし、 **[バージョン情報]**を選択します。
 
       3.   **[POP 外部サーバー]** の値を探します。
 
       4.  **[プロキシ サーバー]** を選んで、ホスト型 Exchange サーバーのプロキシ サーバー設定を指定します。
-        1.  **[モバイル デバイス情報を同期するときにプロキシ サーバーを使用する]** を選択します。.
+        1.   **[モバイル デバイス情報を同期するときにプロキシ サーバーを使用する]**を選択します。
 
         2.  サーバーへのアクセスに使用する **[プロキシ サーバー名]** と **[ポート番号]** を入力します。
 
-        3.  プロキシ サーバーにアクセスするユーザーの資格情報を指定する必要がある場合は、[資格情報を使用してプロキシ サーバーに接続する] を選び、**ドメイン\ユーザー**と**パスワード**を入力します。.
+        3.  プロキシ サーバーにアクセスできるユーザーの資格情報を指定する必要がある場合は、[資格情報を使用してプロキシ サーバーに接続する] を選び、**ドメイン\ユーザー**と**パスワード**を入力します。
 
-        4.  **[OK]** を選択します。.
+        4.  **[OK]** を選びます。
 
 5.  Exchange Server への接続に必要な資格情報の**ユーザー (ドメイン\ユーザー)** と**パスワード**を入力します。
 
 6.  ユーザーの Exchange メールボックスに通知を送信するために必要な管理資格情報を指定します。 これらの通知は、Intune で条件付きアクセス ポリシーにより構成できます。
 
-    自動検出サービスと Exchange Web Services が Exchange クライアント アクセス サーバーで構成されていることを確認します。 詳細については、「[Client Access server (クライアント アクセス サーバー)](https://technet.microsoft.com/library/dd298114.aspx)」を参照してください。.
+    自動検出サービスと Exchange Web Services が Exchange クライアント アクセス サーバーで構成されていることを確認します。 詳細については、「 [クライアント アクセス サーバー](https://technet.microsoft.com/library/dd298114.aspx)」を参照してください。
 
 7.  **[パスワード]** フィールドに、このアカウントで Intune から Exchange Server にアクセスするのに必要なパスワードを入力します。
 
-8. **[接続]** を選択します。.
+8. **[接続]**を選びます。
 
     接続が確立されるまでに数分かかることがあります。
 
@@ -133,12 +126,13 @@ Exchange Connector が接続を確立すると、Exchange Connector で管理さ
 
 ## Exchange 接続の確認
 
-Exchange Connector を正常に構成したら、接続のステータスと前回の成功した同期の試行を表示できます。 [Microsoft Intune 管理コンソール](http://manage.microsoft.com)で、**[管理]** ワークスペースを選択し、**[モバイル デバイス管理]** で **[Microsoft Exchange]** を選択して、**[Exchange の接続情報]** に表示される設定内容の詳細を確認します。.
+Exchange Connector を正常に構成したら、接続のステータスと前回の成功した同期の試行を表示できます。 [Microsoft Intune 管理コンソール](http://manage.microsoft.com)で、**[管理]** ワークスペースを選択し、**[モバイル デバイス管理]** で **[Microsoft Exchange]** を選択して、**[Exchange の接続情報]** に表示される設定内容の詳細を確認します。
 
 
 また、前回いつ同期が完了したかも確認することができます。
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

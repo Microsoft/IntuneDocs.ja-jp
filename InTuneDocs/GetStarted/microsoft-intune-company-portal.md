@@ -1,33 +1,27 @@
 ---
-# required metadata
-
-title: Microsoft Intune ポータル サイト | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune ポータル サイト | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 65769fade08dea34b3e788628e578d58f90389f3
+ms.openlocfilehash: 815e36569e17bde750b49c7d7b10744a9b614635
+
 
 ---
 
 # Microsoft Intune ポータル サイト
 
-[!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] をセットアップする前に、このトピックと「[What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)」 (Microsoft Intune を開始する前に理解しておくこと) に挙げられているその他の要件を確認してください。
+Intune をセットアップする前に、このトピックと「[What to know before you start Microsoft Intune (Microsoft Intune を開始する前に理解しておくこと)](what-to-know-before-you-start-microsoft-intune.md)」に挙げられているその他の要件を確認してください。
 
 Intune ポータル サイトは、会社のデータとアプリに対するアクセス権をユーザーに付与するツールです。 ポータル サイトは、次の 2 つの形式で使用できます。
 
@@ -58,6 +52,7 @@ Intune ポータル サイトは、会社のデータとアプリに対するア
 [Microsoft Intune を使い始める前に](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jul16_HO1-->
 
 

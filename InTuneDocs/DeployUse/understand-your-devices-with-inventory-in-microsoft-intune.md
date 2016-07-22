@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: インベントリを使用してデバイスを把握する | Microsoft Intune
-description:
-keywords:
+title: "インベントリを使用してデバイスを把握する | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: 55b99e326e4f22aee62b207eb2e976a8d52e70c3
+
 
 ---
 
@@ -66,7 +60,8 @@ Microsoft Intune では、Intune クライアント ソフトウェアを実行�
 |**暗号化有効**|All のいずれかのデバイス|
 
 ## Windows PC から収集される情報
-> [!IMPORTANT] このセクションの情報は、Intune の Windows PC クライアント ソフトウェアを実行する Windows PC にのみ適用されます。
+> [!IMPORTANT]
+> このセクションの情報は、Intune の Windows PC クライアント ソフトウェアを実行する Windows PC にのみ適用されます。
 
 Windows PC で収集されたインベントリを表示するには、[コンピューター インベントリ レポート](understand-microsoft-intune-operations-by-using-reports.md)を実行します。 Intune では、Windows PC から次のインベントリを収集します。
 
@@ -118,6 +113,7 @@ Windows PC で収集されたインベントリを表示するには、[コン�
 -->
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

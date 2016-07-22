@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: モバイル アプリ構成ポリシーを使用した iOS アプリの構成 | Microsoft Intune
-description:
-keywords:
+title: "モバイル アプリ構成ポリシーを使用した iOS アプリの構成 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: a1b2fb7f2938939725465a18efb594dda91d16bd
+
 
 ---
 
@@ -42,7 +36,8 @@ Microsoft Intune のモバイル アプリ構成ポリシーを使用して、�
 
 これらのポリシーをユーザーやデバイスに直接展開しないでください。 代わりに、ポリシーをアプリに関連付け、そのアプリを展開します。 ポリシー設定は、アプリがポリシーを確認する際に (通常は初めて実行したときに) 必ず使用されます。
 
-> [!TIP] このポリシーの種類は、iOS 7.1 以降を実行しているデバイスのみで現在利用可能で、次のアプリのインストールの種類をサポートします。
+> [!TIP]
+> このポリシーの種類は、iOS 7.1 以降を実行しているデバイスのみで現在利用可能で、次のアプリのインストールの種類をサポートします。
 > 
 > -   **App Store の管理対象 iOS アプリ**
 > -   **iOS 用アプリ パッケージ**
@@ -62,7 +57,8 @@ Microsoft Intune のモバイル アプリ構成ポリシーを使用して、�
 
 4.  このページの **[モバイル アプリ構成ポリシー]** セクションで、必要なアプリの構成設定を含む XML プロパティ リストをボックスに入力するか貼り付けます。
 
-    > [!TIP] XML プロパティ リストの詳細については、iOS 開発者ライブラリの [XML プロパティ リスト](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html)に関するページを参照してください。
+    > [!TIP]
+    > XML プロパティ リストの詳細については、iOS 開発者ライブラリの [XML プロパティ リスト](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html)に関するページを参照してください。
     > 
     > XML プロパティ リストの形式は、構成するアプリによって異なります。 使用する形式の詳細については、アプリの供給元にお問い合わせください。
     > 
@@ -104,7 +100,8 @@ Microsoft Intune のモバイル アプリ構成ポリシーを使用して、�
 
 展開したアプリをデバイスで実行すると、モバイル アプリ構成ポリシーで構成した設定を使用して実行されます。
 
-> [!TIP] 1 つまたは複数のモバイル アプリ構成ポリシーが競合する場合は、どちらのポリシーも適用されず、競合が Intune 管理コンソールの**ダッシュボード**で報告されます。
+> [!TIP]
+> 1 つまたは複数のモバイル アプリ構成ポリシーが競合する場合は、どちらのポリシーも適用されず、競合が Intune 管理コンソールの**ダッシュボード**で報告されます。
 
 ## モバイル アプリ構成 XML ファイルの形式の例
 
@@ -139,6 +136,7 @@ Microsoft Intune のモバイル アプリ構成ポリシーを使用して、�
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

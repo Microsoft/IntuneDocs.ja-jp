@@ -1,27 +1,18 @@
 ---
-# required metadata
-
-title: パスコードを設定または変更する | Microsoft Intune
-description:
-keywords:
+title: "パスコードを設定または変更する | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 5/25/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: 19f06b1fc58584b42af7740384c9a927a20d0b6e
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: priyar
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -53,6 +44,7 @@ IT 管理者は、パスワードの要件を 1 つ以上設定できます。 �
 ### 関連項目
 [Windows デバイスを Intune で使用する](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: IMEI (国際移動体装置識別番号) を使って企業所有のデバイスを指定する | Microsoft Intune
-description:
-keywords:
+title: "IMEI (国際移動体装置識別番号) を使って企業所有のデバイスを指定する | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 398d93d4e2317d00a2f9d5f89966aaec3b942504
+ms.openlocfilehash: af4b87eb8082ee5ff11cd2d42b788ad17b334bcb
+
 
 ---
 
@@ -39,8 +32,8 @@ Microsoft Intune では、管理者が IMEI (International Mobile Equipment Iden
         この .csv ファイルをテキスト エディターで開くと、次のように表示されます。
 
         ```
-        AA-BBBBBB-CCCCCC-D,PO 1234
-        AA-BBBBBB-CCCCCC-E,PO 1234
+        AABBBBBBCCCCCCD,PO 1234
+        AABBBBBBCCCCCCE,PO 1234
         ```
 
     -   **デバイスの詳細を手動で追加** - 最大 5 台のデバイスの IMEI 番号とデバイスの詳細を入力します。
@@ -54,6 +47,7 @@ Microsoft Intune では、管理者が IMEI (International Mobile Equipment Iden
 IMEI 番号を持つデバイスを登録する (通常は、ユーザーがポータル サイト アプリをインストールし、登録プロセスを完了する) と、そのデバイスは会社所有としてタグ付けされ、**IMEI デバイス** グループに登録されたデバイスとして表示されます。
 
 
-<!--HONumber=May16_HO5-->
+
+<!--HONumber=Jul16_HO1-->
 
 

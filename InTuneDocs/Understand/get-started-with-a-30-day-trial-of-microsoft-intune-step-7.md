@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Intune 評価後の次の手順 | Microsoft Intune
-description:
-keywords:
+title: "Intune 評価後の次の手順 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1a5d9e44ae524f9f8ca3cfe9912e6dae2d1a7d49
+ms.openlocfilehash: 5ae133583311963d5a3b8c55d8caf43453b3aedf
+
 
 ---
 
@@ -39,6 +33,7 @@ ms.suite: ems
 -   **オンライン サブスクリプション プログラム** (&lt; 250 ユーザー) - [オンライン サービス ボリューム ライセンス](http://www.microsoft.com/licensing/online-services/default.aspx) プログラムは、250 名未満のユーザー数の組織向けに設計されています。 このプログラムを使用して、Intune サービスのサブスクライブ、管理、および展開を行うことができます。
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 全社的なロールアウト | Microsoft Intune
-description:
-keywords:
+title: "全社的なロールアウト | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d894708e-7071-44f5-aa3b-af5aef02fb98
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 588d37ac5524c80da9082ee5b1af0e897e925ef9
+
 
 ---
 
@@ -79,8 +73,7 @@ ms.suite: ems
 
 -   特定目的のコミュニケーションおよびトレーニングを必要とするグループを識別します。
 
--   電子メールのお知らせのカスタマイズとイントラネット サイトの更新
-    通信/リソースを更新するための進行中の所有者を特定します。
+-   メールで連絡する内容をカスタマイズし、イントラネット サイトを更新します。連絡とリソースの更新を継続的に担当する人物を特定します。
 
 -   使用するトレーニング メソッドの概要を示します。
 
@@ -114,6 +107,7 @@ ms.suite: ems
 [運用とメンテナンス](operations-and-maintenance.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

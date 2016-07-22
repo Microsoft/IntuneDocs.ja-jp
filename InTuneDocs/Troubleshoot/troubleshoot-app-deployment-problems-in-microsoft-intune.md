@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: アプリ展開に関する問題のトラブルシューティング | Microsoft Intune
-description:
-keywords:
+title: "アプリ展開に関する問題のトラブルシューティング | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 327c3aaf42aaf7f97e2b78d5ae38584bc13773e1
+ms.openlocfilehash: dc782a54983e4db39a029a15183834a925d0e00c
+
 
 ---
 
@@ -104,11 +97,13 @@ ms.suite: ems
 |0x80073CF0|パッケージを開くことができませんでした。|次の原因が考えられます。<br /><br />-   パッケージが署名されていません。<br />-   発行元の名前が、署名している証明書の件名と一致しません。<br /><br />詳細については、AppxPackagingOM イベント ログを確認してください。|
 |0x80073CF3|パッケージの更新、依存関係、または競合の検証に失敗しました|次の原因が考えられます。<br /><br />-   受信パッケージがインストール済みのパッケージと競合しています。<br />-   指定したパッケージの依存関係が見つかりません。<br />-   パッケージは正しいプロセッサ アーキテクチャをサポートしていません。<br /><br />詳細については、AppXDeployment-Server イベント ログを確認してください。|
 |0x80073CFB|指定したパッケージは既にインストールされており、パッケージの再インストールがブロックされます|既にインストールされているパッケージと同じではないパッケージをインストールしようとすると、このエラーが発生することがあります。 デジタル署名がパッケージにも含まれることを確認します。 パッケージを再ビルドまたは再署名すると、パッケージは以前にインストールしたパッケージとビット単位で同じではなくなります。 このエラーを修正するには、次のように 2 つの選択肢が考えられます。<br /><br />-   アプリのバージョン番号を増やして、パッケージの再ビルドと再署名を行います。<br />-   システムのすべてのユーザーの古いパッケージを削除してから、新しいパッケージをインストールします。|
+|0x87D1041C|アプリケーションがインストールされましたが、検出されません。|- ユーザーはポータル サイトからアプリをインストールし、その後、デバイスから直接アンインストールしました。 ポータル サイトからアプリを再インストールします。<br /><br />- Intune で認識された基幹業務アプリのバージョン番号とデバイスにインストールされているバージョンが異なる可能性があります。 Intune のバージョンが正しいことを確認し、アプリを再インストールします。|
 
-### 次のステップ
+### 次の手順
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jul16_HO2-->
 
 

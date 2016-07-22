@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: クライアント セットアップのトラブルシューティング | Microsoft Intune
-description:
-keywords:
+title: "クライアント セットアップのトラブルシューティング | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c8409d58e3e7a1038e4d030d88a9ffe7d29bc1b6
+ms.openlocfilehash: 78fa086f2e7e6c836aa74acb303d9a6564ed0993
+
 
 ---
 
@@ -32,7 +26,7 @@ ms.suite: ems
 
 -   [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)に、コンピューターへのクライアント ソフトウェアの展開に関するアラートが何も表示されていない場合は、まず、クライアント コンピューターがインターネットに接続可能かどうかと、プロキシの構成を確認します。次に、コンピューターがサービスの URL ([ https://manage.microsoft.com](https://manage.microsoft.com/)) と通信できることを確かめてから、 クライアント ソフトウェアのインストールを再試行してください。
 
--   "クライアント ソフトウェアの展開エラー" アラートが発生した場合に、特定のユーザーに電子メールが送信されるようにすることができます。このためには、[ **管理** ] ワークスペースで通知規則を構成します。 詳しくは、「[Microsoft Intune のアラートによる通知](/intune/deploy-use/get-notified-by-microsoft-intune-alerts)」を参照してください。
+-   "クライアント ソフトウェアの展開エラー" アラートが発生した場合に、特定のユーザーに電子メールが送信されるようにすることができます。このためには、[ **管理** ] ワークスペースで通知規則を構成します。 詳しくは、「[Microsoft Intune のアラートによる通知](/intune/deploy-use/get-notified-by-alerts)」を参照してください。
 
 -   Intune では、クライアント ソフトウェアの展開に失敗すると、重大なアラートとして **"クライアント ソフトウェアの展開エラー"** を表示します。 これは、[Microsoft Intune 管理コンソール](https://manage.microsoft.com/)の **[システムの概要]** ページと **[アラート]** ページで確認できます。 アラートを確認する方法を次に示します。
 
@@ -56,23 +50,23 @@ ms.suite: ems
 
 ## コンピューターの登録パッケージがダウンロードされない
 **問題:** コンピューターを登録しようとすると、次の問題が発生します。
--  登録パッケージをダウンロードできない 
+-  登録パッケージをダウンロードできない
 -  ダウンロードのダイアログが表示されるが、タイムアウトになる
 
 **解決方法:** ダウンロードに使用するブラウザーで、ダウンロードが実行される間、ダウンロードを有効にすると共に、暗号化されたファイルをローカル ディスクに保存できるようにします。
 
 ## クライアントのインストールがハングし、エラー コード 0x80040154 が返される
 **問題:**
- 
+
 -  登録時にクライアントのインストールがハングする
 
--  デバイスを登録できない 
+-  デバイスを登録できない
 
 -  WindowsUpdate.log にエラー 0x80040154 が記録される
 
 この問題は、PC に重要なソフトウェア更新プログラムが適用されていない場合に発生することがあります。
 
-**解決方法:** 「[Microsoft Intune でソフトウェア更新プログラムを使用して Windows PC を最新の状態に保つ](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)」の説明に従って、重要な更新プログラムがインストールされるようにソフトウェア更新ポリシーを設定してください。 
+**解決方法:** 「[Microsoft Intune でソフトウェア更新プログラムを使用して Windows PC を最新の状態に保つ](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)」の説明に従って、重要な更新プログラムがインストールされるようにソフトウェア更新ポリシーを設定してください。
 
 
 ## policyplatform.log に記録される Microsoft Intune ポリシー関連エラー
@@ -84,7 +78,8 @@ MDM Windows デバイス以外のデバイスでは、policyplatform.log ファ�
 
 2.  クライアント ソフトウェアが削除されるまで、20 分間待ちます。
 
-    > [!NOTE] [プログラムと機能] からクライアントを削除しないでください。
+    > [!NOTE]
+    > [プログラムと機能] からクライアントを削除しないでください。
 
 3.  スタート メニューで「**UAC**」と入力して、[ユーザー アカウント制御の設定] を開きます。
 
@@ -130,6 +125,7 @@ MDM Windows デバイス以外のデバイスでは、policyplatform.log ファ�
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: ポリシーのトラブルシューティング | Microsoft Intune
-description:
-keywords:
+title: "ポリシーのトラブルシューティング | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: ac3417781df0a5b092a70620aa7343849b1e8c82
+ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
+
 
 ---
 
@@ -53,12 +46,13 @@ Intune の管理コンソールでは、すべてのデバイスの **[デバイ
 
 ![Intune のデバイス ポリシー](../media/Intune-Device-Policy-v.2.jpg)
 
+> [!NOTE]
 > [!NOTE] 制限レベルが異なる 2 つのポリシーを同じデバイスまたはユーザーに適用すると、より厳しい方のポリシーが実際に適用されます。
 
 ## ポリシーの更新と更新間隔
 ポリシーは定期的に更新されることに注意してください。 通常、ポリシーは変更を行ってから 15 分以内にデバイスで登録する必要があります。 定期的なポリシー更新の間隔の詳細は、次のとおりです。
 
--   **MDM に登録された Windows デバイス**: 更新は、デバイスで午前 3 時 00 分 (ローカル時刻) にスケジュールされたタスクによってトリガーされ、毎日実行されます。
+-   **MDM に登録された Windows デバイス**: Windows 8.1 デバイスと Windows 10 デバイスの場合、8 時間ごとにポリシーが更新され、Windows RT デバイスの場合、24 時間ごとにポリシーが更新されます。
 
 -   **Windows Phone**: ポリシーは 8 時間ごとに更新されます。 ポータル サイトの **[設定]** から更新を行うことで強制的に更新することもできます。
 
@@ -75,6 +69,7 @@ MDM Windows デバイス以外のデバイスでは、policyplatform.log ファ�
 
 2.  クライアント ソフトウェアが削除されるまで、20 分間待ちます。
 
+    > [!NOTE]
     > [!NOTE] [プログラムと機能] からクライアントを削除しないでください。
 
 3.  スタート メニューで「**UAC**」と入力して、[ユーザー アカウント制御の設定] を開きます。
@@ -116,6 +111,7 @@ Android の MDM は、その他のプラットフォームのように、サー�
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jul16_HO2-->
 
 

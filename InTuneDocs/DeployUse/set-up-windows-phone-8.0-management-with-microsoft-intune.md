@@ -1,35 +1,30 @@
 ---
-# required metadata
-
-title: Windows Phone 8.0 の管理をセットアップする | Microsoft Intune
-description:
-keywords:
+title: "Windows Phone 8.0 の管理をセットアップする | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 06/09/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: eed5855f3e27460146703ddf40fd935229a974e5
+ms.openlocfilehash: 02f9b7c7abe2daf942299015bfdfb052755ec2de
+
 
 ---
 
 # Windows Phone 8.0 のデバイス管理のセットアップ
 
-Windows Phone 8.0 では、Intune ポータル サイト アプリのインストールとデバイスの管理の許可に Symantec 証明書が必要です。 基幹業務アプリに署名するための証明書も必要です。 次のトピックは、Windows Phone 8.0 のみに該当します。 Windows 10 Mobile を含む Windows Phone 8.1 以降を管理するには、「[Windows Phone の登録をセットアップする](set-up-windows-phone-management-with-microsoft-intune.md)」を参照してください。
+Windows Phone 8.0 では、Intune ポータル サイト アプリのインストールとデバイスの管理の許可に Symantec 証明書が必要です。 基幹業務アプリに署名するための証明書も必要です。 次のトピックは、Windows Phone 8.0 のみに該当します。 Windows 10 Mobile を含む Windows Phone 8.1 以降を管理するには、「[Windows Phone の登録をセットアップする](set-up-windows-phone-management-with-microsoft-intune.md)」をご覧ください。
 
-> [!IMPORTANT] 2016年 9 月以降、Windows 8.0 および Windows Phone 8.0 のポータル サイト アプリはダウンロードできなくなります。
+> [!IMPORTANT]
+> 2016年 9 月以降、Windows 8.0 および Windows Phone 8.0 のポータル サイト アプリはダウンロードできなくなります。
 
 -   **Windows Phone 8** -証明書が必要
 -   **Windows Phone 8.1 および Windows 10 Mobile** では、次の場合にのみ証明書が必要です。
@@ -41,7 +36,8 @@ Windows Phone 8.0 では、Intune ポータル サイト アプリのインス�
 
 ![証明書の要件のダイアグラム](../media/wpcertreqs.png)
 
-  > [!IMPORTANT] 特定の Windows および Windows Phone モバイル デバイスを管理するのに使用する Symantec 証明書は、[定期的に更新する必要があります](renew-a-symantec-code-signing-certificate.md)。
+  > [!IMPORTANT]
+  > 特定の Windows および Windows Phone モバイル デバイスを管理するのに使用する Symantec 証明書は、[定期的に更新する必要があります](renew-a-symantec-code-signing-certificate.md)。
 
 Window Phone のモバイル デバイス管理のセットアップ要件は、デバイスの管理方法によって異なります。  会社の DNS 登録で 2 つの CNAME を設定すると、ユーザーが簡単に登録できるようになります。 ユーザーがストアからポータル サイト アプリをダウンロードする場合は、DNS 設定を構成したら、必要な作業は、ポータル サイトをセットアップし、ユーザーに登録方法を通知することだけです。  ポータル サイトを Windows Phone 8.0 または Windows Phone 8.1 に展開する場合は、アプリのコード署名に Symantec 証明書が必要です。
 
@@ -82,7 +78,7 @@ Window Phone のモバイル デバイス管理のセットアップ要件は、
 
     1.  **Windows Phone デベロッパー センターに参加する** ログイン時に企業のアカウント情報を使用して [Windows Phone デベロッパー センター](http://go.microsoft.com/fwlink/?LinkId=268442)に参加し、会社のアカウントを購入します。 コード署名証明書を受け取る前に、会社の担当者からこの要求の承認を受ける必要があります。
 
-    2.  **会社の Symantec 証明書を取得する** [Symantec の Web サイト](http://go.microsoft.com/fwlink/?LinkId=268441)から Symantec ID を使用して証明書を購入します。 証明書を購入すると、Windows Phone デベロッパー センター アカウントで指定された会社の承認者は、証明書要求の承認を求めるメールを受信します。 Symantec 証明書の要件の詳細については、「[Why Windows Phone requires a Symantec certificate? (Windows Phone で Symantec 証明書が必要な理由)](https://technet.microsoft.com/en-us/library/dn764959.aspx#BKMK_Symantec)」 (Windows デバイスの登録に関する FAQ) を参照してください。
+    2.  **会社の Symantec 証明書を取得する** [Symantec の Web サイト](http://go.microsoft.com/fwlink/?LinkId=268441)から Symantec ID を使用して証明書を購入します。 証明書を購入すると、Windows Phone デベロッパー センター アカウントで指定された会社の承認者は、証明書要求の承認を求めるメールを受信します。 Symantec 証明書の要件の詳細については、「[Why Windows Phone requires a Symantec certificate? (Windows Phone で Symantec 証明書が必要な理由)](https://technet.microsoft.com/en-us/library/dn764959.aspx#BKMK_Symantec)」 (Windows デバイスの登録に関する FAQ) をご覧ください。
 
     3.  **証明書をインポートする** 要求が承認されると、証明書をインポートするための手順を含む電子メールが届きます。 メールの指示に従って証明書をインポートします。
 
@@ -138,7 +134,7 @@ Windows Phone ストアからインストールしなくても、Intune を使�
 
 2.  **Windows Phone SDK をダウンロードする** [Windows Phone SDK 8.0](http://go.microsoft.com/fwlink/?LinkId=615570) (http://go.microsoft.com/fwlink/?LinkId=268439) をダウンロードし、SDK をコンピューターにインストールします。 この SDK は、アプリケーション登録トークンを生成するために必要です。
 
-3.  **AETX ファイルを生成する** Windows Phone SDK 8.0 に含まれる AETGenerator.exe を使用して、Symantec PFX ファイルからアプリケーション登録トークン (.aetx) ファイルを生成します。 AETX ファイルの作成手順については、「 [Windows Phone 用のアプリケーション登録トークンを生成する方法](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)」を参照してください。
+3.  **AETX ファイルを生成する** Windows Phone SDK 8.0 に含まれる AETGenerator.exe を使用して、Symantec PFX ファイルからアプリケーション登録トークン (.aetx) ファイルを生成します。 AETX ファイルの作成手順については、「 [Windows Phone 用のアプリケーション登録トークンを生成する方法](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)」をご覧ください。
 
 4.  **Windows SDK for Windows 8.1 をダウンロードする** [Windows Phone SDK](http://go.microsoft.com/fwlink/?LinkId=613525) (http://go.microsoft.com/fwlink/?LinkId=613525) をダウンロードしてインストールします。 ポータル サイト アプリに付属の PowerShell スクリプトでは、既定のインストール場所 `${env:ProgramFiles(x86)}\Windows Kits\8.1`が使用される点に注意してください。 他の場所にインストールする場合は、コマンドレット パラメーターにその場所を含める必要があります。
 
@@ -186,6 +182,7 @@ Windows Phone ストアからインストールしなくても、Intune を使�
     > -   サイドロードされたアプリをインストールする必要があり、Windows Phone 8.0 デバイスで ssp.xap を登録し、受信する場合は、新しいソフトウェア展開の ssp.xap を作成し、[ **アンインストール** ] 操作で展開します。 Windows Phone 8.0 デバイスは、アプリの強制インストールまたは強制アンインストールをサポートしていないため、この展開は無視されます。 Windows Phone 8.1 デバイスはアンインストール操作をサポートしているので、ssp.xap は削除されます。
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: アプリをインベントリから削除する | Microsoft Intune
-description:
-keywords:
+title: "アプリをインベントリから削除する | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6fbf0805-1144-4e08-bafd-4f181d932bf2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 4857e2ff34175ee6daa64e6f95a59faaaaa3b322
+
 
 ---
 
@@ -31,9 +25,9 @@ ms.suite: ems
 
 ## アプリをアンインストールする
 
-1.  [Microsoft Intune 管理者コンソール](https://manage.microsoft.com)で、**[アプリ]** &gt; **[アプリ]** の順にクリックします。.
+1.  [Microsoft Intune 管理者コンソール](https://manage.microsoft.com)で、**[アプリ]** &gt; **[アプリ]** を選択します。
 
-2.  アンインストールする (既に展開した) アプリを選択し、**[展開の管理]** をクリックします。.
+2.  アンインストールする (既に展開した) アプリを選択し、**[展開の管理]** を選択します。
 
 3.  **[展開アクション]** ページで、 **[承認]** 列の **[アンインストール]** を選択します。
 
@@ -43,6 +37,7 @@ ms.suite: ems
 [Microsoft Intune でアプリを追加する](add-apps.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: MAM 対応アプリでのエンド ユーザー エクスペリエンス | Microsoft Intune
-description:
-keywords:
+title: "MAM 対応アプリでのエンド ユーザー エクスペリエンス | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 3f797e3ef4a7e2d1b27ce6b1ed6e5322343c6cff
+ms.openlocfilehash: 9b557c272c9d740792560a392d52efff6a7deed1
+
 
 ---
 
@@ -41,6 +34,7 @@ ms.suite: ems
     ![O365 ログイン ページのスクリーンショット](../media/AppManagement/iOS_O365SignInPage.png)
 
 3.  Azure AD によって資格情報が正常に認証されると、MAM ポリシーが適用され、 **OneDrive** アプリを再起動するように求められます。
+  >[注!] [再起動が必要] ダイアログ ボックスは、Intune に登録されていないデバイスにのみ表示されます。
 
     ![［再起動が必要］ ダイアログ ボックスのスクリーンショット](../media/AppManagement/iOS_AppRestartforMAM.png)
 
@@ -52,6 +46,7 @@ ms.suite: ems
 
     ![既存のファイルを一覧表示しているファイルの場所のスクリーンショット](../media/AppManagement/iOS_OneDriveSuccess.png)
 
+    > [!NOTE]
     > [!NOTE] 展開済みのポリシーを変更すると、次回アプリを開いたときにその変更が適用されます。
 
 ##  Android デバイスでの OneDrive へのアクセス
@@ -79,7 +74,7 @@ ms.suite: ems
 
     ![ポータル サイト アプリのスクリーンショット](../media/AppManagement/Android_CompanyPortalInstall.png)
 
-5.  インストールが完了したら、 **[承認]** をクリックして使用条件を承認します。
+5.  インストールが完了したら、**[承認]** を選択して使用条件を承認します。
 
 6.  **OneDrive** アプリが自動的に起動します。
 
@@ -136,7 +131,7 @@ MAM ポリシーを展開する前にデバイスに複数の既存のユーザ�
 ユーザー A は、**会社 X** と会社 **会社 Y** という 2 つの会社で働いています。ユーザー A は各会社の作業アカウントを持っており、どちらの会社も Intune を使用してMAM ポリシーを展開しています。 **会社 X** は、**会社 Y** の**前に** MAM ポリシーを展開しています。MAM ポリシーは、**会社 X** に関連付けられた MAM ポリシーに適用され、会社 Y に関連付けられたアカウントには適用されません。会社 Y に関連付けられたユーザー アカウントを MAM ポリシーで管理する場合は、会社 X に関連付けられたユーザー アカウントを削除する必要があります。
 ### 2 つ目のアカウントの追加
 #### iOS
-iOS デバイスを使用している場合は、同じデバイスに 2 つ目の作業アカウントを追加しようとすると、ブロック メッセージが表示されることがあります。  既存のアカウントを削除して新しいアカウントを追加するオプションも表示されます。 そうするには、 **[はい]**をクリックします。
+iOS デバイスを使用している場合は、同じデバイスに 2 つ目の作業アカウントを追加しようとすると、ブロック メッセージが表示されることがあります。  既存のアカウントを削除して新しいアカウントを追加するオプションも表示されます。 この場合、**[はい]** を選択します。
 
 ![ブロック メッセージと、[はい] と [いいえ] オプショを表示しているダイアログ ボックスのスクリーンショット](../media/AppManagement/iOS_SwitchUser.PNG)
 ####  Android
@@ -149,6 +144,18 @@ Android デバイスで会社の AV、PDF、および画像ファイルを表示
 
 このアプリは、Google Play ストアからダウンロードします。  アプリをデバイスにインストールした後、アプリを起動し、会社の資格情報で認証します。 これで、他のポリシー管理対象アプリから保護されていないファイルと保護されているファイルを表示できます。
 
+次のファイルの種類がサポートされます。
+
+* **音声:** AAC LC、HE-AACv1 (AAC+)、HE-AACv2 (Enhanced AAC+)、AAC ELD (Enhanced Low Delay AAC)、AMR-NB、AMR-WB、FLAC、MP3、MIDI、Vorbis、PCM/WAVE。
+* **ビデオ:** H.263、H.264 AVC、MPEG-4 SP、VP8。
+* **画像:** jpg、pjpg、png、ppng、bmp、pbmp、gif、pgif、jpeg、pjpeg。
+* PDF、PPDF
+
+------------
+|**pfile**|**text**|
+|----|----|
+|pfile は、保護するファイル向けの汎用的な "ラッパー" 形式です。暗号化されたコンテンツと RMS ライセンスをカプセル化し、任意のファイルの種類を保護できます。|XML、CSV などのテキスト ファイルは、保護されているときでもアプリで開いて表示できます。 ファイルの種類: txt、ptxt、csv、pcsv、log、plog、xml、pxml。|
+---------------
 **Intune で登録されていない Android デバイス**
 
 RMS 共有アプリを使用して Intune により管理されているその他のアプリからファイルを表示するには、事前に RMS アプリを起動し、仕事用アカウントで認証しておく必要があります。  ログインすると、**RMS ライセンスを持っていない場合にのみ**、次のメッセージが表示されます。
@@ -162,6 +169,7 @@ RMS 共有アプリを使用して Intune により管理されているその�
 [Microsoft Intune でのモバイル アプリ管理ポリシーの作成および展開](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO2-->
 
 

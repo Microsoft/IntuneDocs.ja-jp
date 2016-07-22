@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: Intune アプリ SDK の利点 | Microsoft Intune
-description:
-keywords:
+title: "Intune アプリ SDK の利点 | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
+ms.openlocfilehash: 3abf566831348de11f718370d6267e3ff4355bfb
+
 
 ---
 
 # Intune アプリ SDK の概要
-Intune アプリ SDK は、iOS プラットフォームと Android プラットフォームの両方で利用でき、Microsoft Intune を使ったモバイル アプリ管理機能が有効になります。 さらに、Microsoft は、開発者が行う必要のあるコード変更の量を減らすことに努めています。 SDK の機能の大半は、アプリの動作を変更せずに利用できます。 エンド ユーザーと IT 管理者のエクスペリエンスを向上させるために、API を利用してアプリの動作をカスタマイズし、アプリ側の処理が必要な機能を実現できます。 
-アプリを有効にした後、IT 管理者は Intune で管理されたアプリにポリシーを展開し、これらの機能を活用して会社のデータを保護できます。
+Intune アプリ SDK は、iOS プラットフォームと Android プラットフォームの両方で利用でき、Microsoft Intune を使ったモバイル アプリ管理機能が有効になります。 さらに、Microsoft は、開発者が行う必要のあるコード変更の量を減らすことに努めています。 SDK の機能の大半は、アプリの動作を変更せずに利用できます。 エンド ユーザーと IT 管理者のエクスペリエンスを向上させるために、API を利用してアプリの動作をカスタマイズし、アプリ側の処理が必要な機能を実現できます。 アプリを有効にした後、IT 管理者は Intune で管理されたアプリにポリシーを展開し、これらの機能を活用して会社のデータを保護できます。
 
 ## 標準の機能
 
@@ -77,6 +70,7 @@ Microsoft Intune アプリ SDK には、プレビュー段階の機能がいく�
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

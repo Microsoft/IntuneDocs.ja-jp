@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: モバイル アプリケーション管理ポリシーを使用してデータを保護する | Microsoft Intune
-description:
-keywords:
+title: "モバイル アプリケーション管理ポリシーを使用してデータを保護する | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 161351164d9e99abb867aa34721ef4f992fb14fa
+
 
 ---
 
@@ -33,15 +27,16 @@ ms.suite: ems
 Intune モバイル アプリ管理 (MAM) ポリシーを使用すれば、会社データを保護できます。 Intune MAM はどのモバイル デバイス管理 (MDM) ソリューションからも独立して利用できるため、デバイスをデバイス管理ソリューションに登録するかどうかにかかわらず、会社データを保護するために使用することができます。 **アプリレベル ポリシー**を実装するだけで、会社のリソースへのアクセスを制限し、データを IT 部門の管理範囲内に保つことができます。
 
 MAM ポリシーは、次で実行されているアプリに適用されます。
+> [!IMPORTANT]
+> Office 365 サービスに接続する Office モバイル アプリ向けのモバイル アプリ管理ポリシーを作成することができます。 MAM ポリシーは、オンプレミス Exchange サービスや SharePoint サービスに接続するアプリではサポートされていません。
 
--   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] で**管理され、登録されているデバイス**。 この分野に属するデバイスには、通常、会社が所有するデバイスがあります。
 
-  > [!IMPORTANT]
-  > Intune を使用して iOS や Android デバイスを管理している場合、Office 365 サービスに接続する Office モバイル アプリ向けのモバイル アプリ管理ポリシーを作成することができます。 MAM ポリシーは、オンプレミス Exchange サービスや SharePoint サービスに接続するアプリではサポートされていません。
+- **Microsoft Intune で管理され、登録されているデバイス**。 この分野に属するデバイスには、通常、会社が所有するデバイスがあります。
 
 -   **サード パーティのモバイル デバイス管理ソリューションで管理され、登録されているデバイス**。   この分野に属するデバイスには、通常、会社が所有するデバイスがあります。
 
-  > [!NOTE] モバイル アプリ管理ポリシーを、サード パーティのモバイル アプリ管理ソリューションやセキュア コンテナー ソリューションとともに使用しないでください。
+  > [!NOTE]
+  > モバイル アプリ管理ポリシーを、サード パーティのモバイル アプリ管理ソリューションやセキュア コンテナー ソリューションとともに使用しないでください。
 
 -   **管理されていないデバイス**。  この分野に属するデバイスには、通常、Intune またはその他の MDM ソリューションで管理も登録もされていない社員所有のデバイスがあります。
 
@@ -127,7 +122,7 @@ MDM ソリューションに登録されていない BYOD デバイスの場合�
 
 たとえば、エンド ユーザーが仕事用のアカウントを使用して OneDrive アプリが起動した場合、個人のストレージにファイルを移動できません。 ただし、エンド ユーザーが個人のアカウントで OneDrive を使用する場合、個人の OneDrive から制限なしでデータをコピーしたり、移動したりできます。  
 
-MAM ポリシーに関連付けられているアプリの使用方法と、複数の ID に対応しているアプリを使用するとき、作業コンテキストでのみ MAM ポリシーを適用する方法の詳細については、「[using apps with multi-identity support (複数 ID 対応アプリの使用)](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md#using-apps-with-multi-identity-support)」を参照してください。
+MAM ポリシーに関連付けられているアプリの使用方法と、複数の ID に対応しているアプリを使用するとき、作業コンテキストでのみ MAM ポリシーを適用する方法の詳細については、「[using apps with multi-identity support (複数 ID 対応アプリの使用)](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md#using-apps-with-multi-identity-support)」をご覧ください。
 
 すべての Office モバイル アプリは複数 ID をサポートしています。
 
@@ -137,6 +132,7 @@ MAM ポリシーに関連付けられているアプリの使用方法と、複�
 [Microsoft Intune でのモバイル アプリ管理ポリシーの作成および展開](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

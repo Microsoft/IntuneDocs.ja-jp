@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Volume Purchase Program で購入した iOS アプリを管理する | Microsoft Intune
-description:
-keywords:
+title: "Volume Purchase Program で購入した iOS アプリを管理する | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ccb494f64426e6c2f21a59d8f52b84afe534d721
+ms.openlocfilehash: 65ceaa5a8f6604463463820545a9d108839c00c1
+
 
 ---
 
@@ -76,20 +70,23 @@ iOS アプリの複数のライセンスを購入するには、[Apple Volume Pu
 
 対象となるデバイスを持つユーザーが初めて VPP アプリをインストールしようとすると、Apple Volume Purchase Program に参加するように求められます。 アプリのインストールを実行する前に、このプログラムに参加する必要があります。
 
-> [!TIP] **[VPP 使用条件の状態]** 列を見ると、アプリが展開された各ユーザーの同意状態がわかります。
+> [!TIP]
+> **[VPP 使用条件の状態]** 列を見ると、アプリが展開された各ユーザーの同意状態が分かります。
 
 ライセンスが 1 つもない場合、展開は失敗します。
 
 ## Apple VPP アプリを監視するには
 どの VPP アプリが展開されているか、ライセンスがいくつ使われているかを監視するには、**[アプリ]** ワークスペースで、**[管理されているソフトウェア]** &gt; **[ボリューム購入されたアプリ]** ノードを使います。
 
-> [!TIP] アプリの **[フィルター]** を使って、各アプリのインストールの状態を調べることもできます。
+> [!TIP]
+> また、アプリの **[フィルター]** を使って、各アプリのインストールの状態を調べることもできます。
 
 ### 関連項目
 [Deploy apps in Microsoft Intune (Microsoft Intune でアプリを展開する)](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

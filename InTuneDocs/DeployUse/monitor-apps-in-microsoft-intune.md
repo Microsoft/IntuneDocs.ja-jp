@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: アプリの展開を監視する | Microsoft Intune
-description:
-keywords:
+title: "アプリの展開を監視する | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: c92b7de51de0ac0115dd53e421d4852bed8d729a
+
 
 ---
 
@@ -32,7 +26,7 @@ ms.suite: ems
 Intune 管理コンソールで管理対象アプリの展開の状態を確認できます。
 
 ### 管理するアプリとその状態を確認するには
-**[アプリ]** ワークスペースで、**[アプリ]** ノードをクリックし、**[アプリ]** をクリックします。.
+**[アプリ]** ワークスペースで、**[アプリ]** ノードをクリックし、**[アプリ]** をクリックします。
 
 管理対象アプリの一覧が表示されます。 コンソール ウィンドウの下のウィンドウでアプリをクリックすると、インストール状態が表示されます。 さらに詳細を表示するには、この状態をクリックします。 たとえば、状態に **[1 人のユーザーがこのソフトウェアを利用しています]** と表示されている場合、そのメッセージをクリックすると、ユーザーの名前を確認できます。
 
@@ -44,7 +38,7 @@ Intune 管理コンソールで管理対象アプリの展開の状態を確認�
 また、**[ダッシュボード]** ワークスペースには、アプリの状態の概要が表示されます。 概要内のどこでもよいのでクリックすると、アプリの一覧が表示されます。
 
 ## アプリに関する詳細を表示するには
-アプリの一覧で、アプリを選択し、**[プロパティの表示]** をクリックします。.
+アプリの一覧で、アプリを選択し、**[プロパティの表示]** をクリックします。
 
 アプリの **[ソフトウェア プロパティ]** ページで、次のいずれかのタブをクリックします。**[全般]** - アプリとそのインストール状態に関する一般的な情報が表示されます。**[デバイス]** - アプリの対象となる展開が正常にインストールされているデバイスが表示されます。**[ユーザー]** - アプリの対象となる展開が正常にインストールされているデバイスのユーザーが表示されます。
 
@@ -54,6 +48,7 @@ Intune 管理コンソールで管理対象アプリの展開の状態を確認�
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

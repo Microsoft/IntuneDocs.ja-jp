@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: MAM ポリシーの作成と展開 | Microsoft Intune
-description:
-keywords:
+title: "MAM ポリシーの作成と展開 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 3f79de38ce7fc9a5434033ee45ddf43f22517356
+ms.openlocfilehash: f1b9216c673039f8600e07508b255e12cc30bf3f
+
 
 ---
 
@@ -34,6 +27,8 @@ ms.suite: ems
 - MDM ソリューション (BYOD) で管理されないデバイス
 
 現在 **Intune 管理コンソール**を使用してデバイスを管理している場合は、Intune に登録済みのデバイスのアプリをサポートする MAM ポリシーを [Intune 管理コンソール](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)を使用して作成できます。
+Intune 管理コンソールで作成した MAM ポリシーを Azure ポータルにインポートすることはできません。  Azure ポータルで MAM ポリシーを作成し直す必要があります。
+
 >[!IMPORTANT]
 > Intune 管理コンソールでは、MAM ポリシー設定の一部が表示されない可能性があります。 Azure ポータルは MAM ポリシーを作成するための新しい管理コンソールです。 Intune 管理コンソールと Azure ポータルの両方で MAM ポリシーを作成した場合、Azure ポータルのポリシーがアプリに適用され、ユーザーに展開されます。
 
@@ -49,7 +44,8 @@ MAM ポリシーを作成する前に、[前提条件とサポート](get-ready-
 
     ![[Intune モバイル アプリケーション管理] ブレードのスクリーンショット](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
-    > [!TIP]初めて Azure ポータルを使用する場合は、先に「[Azure ポータルの Microsoft Intune MAM ポリシー対応](azure-portal-for-microsoft-intune-mam-policies.md)」を参照して、ポータルについて理解しておきます。
+    > [!TIP]
+    > 初めて Azure ポータルを使用する場合は、先に「[Azure ポータルの Microsoft Intune MAM ポリシー対応](azure-portal-for-microsoft-intune-mam-policies.md)」を参照して、ポータルについて理解しておきます。
 
 2.  **[設定]** ブレードで、**[アプリ ポリシー]**をクリックします。  これにより、 **[アプリ ポリシー]** ブレードが開き、ここで新しいポリシーを作成したり、既存のポリシーを編集します。
 
@@ -65,7 +61,8 @@ MAM ポリシーを作成する前に、[前提条件とサポート](get-ready-
 
 5.  **[アプリ]** を選択して **[アプリ] ブレード** を開くと、使用可能なアプリの一覧が表示されます。 一覧から、作成するポリシーに関連付けるアプリを 1 つまたは複数選択できます。 アプリを選択したら、**[アプリ]** ブレードの下部にある **[選択]** ボタンを選択して、選択内容を保存します。
 
-    > [!IMPORTANT] ポリシーを作成するには、少なくとも 1 つのアプリを選択する必要があります。
+    > [!IMPORTANT]
+    > ポリシーを作成するには、少なくとも 1 つのアプリを選択する必要があります。
 
 6.  **[ポリシーの追加] ブレード**で、**[必要な設定の構成]** を選択し、[ポリシー設定] ブレードを開きます。
 
@@ -108,7 +105,8 @@ MAM ポリシーを作成する前に、[前提条件とサポート](get-ready-
 
 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ライセンスが割り当てられているユーザーのみが、このポリシーの影響を受けます。  選択したセキュリティ グループ内のユーザーのうち、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ライセンスが割り当てられていないユーザーは影響を受けません。
 
-Intune を使用し、Configuration Manager によって iOS デバイスと Android デバイスを管理する場合、このポリシーは、選択したグループ直下のユーザーにのみ適用されます。  選択したグループ内にネストされた子グループのメンバーは、影響を受けません。
+>[!IMPORTANT]
+> Intune を使用し、Configuration Manager によって iOS デバイスと Android デバイスを管理する場合、このポリシーは、選択したグループ直下のユーザーにのみ適用されます。  選択したグループ内にネストされた子グループのメンバーは、影響を受けません。
 
 エンドユーザーは App Store または Google Play からアプリをダウンロードできます。 MAM がデバイス上の会社データをどのように保護するかについての詳細なチュートリアルについては、「[End user experience for MAM enabled apps with Microsoft Intune](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)」(MAM が有効なアプリでのエンド ユーザー エクスペリエンス) トピックを参照してください。
 
@@ -167,6 +165,7 @@ IOS と Android 用のポリシー設定の完全な一覧を表示するには�
 [End user experience for MAM enabled app (MAM が有効なアプリでのエンド ユーザー エクスペリエンス)](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

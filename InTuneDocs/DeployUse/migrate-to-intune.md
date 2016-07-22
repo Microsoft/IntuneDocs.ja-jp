@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Intune への移行 | Microsoft Intune
-description:
-keywords:
+title: "Intune への移行 | Microsoft Intune"
+description: 
+keywords: 
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 20394c243b9355cd3f4e30f170dfd00d10e1153f
+
 
 ---
 
@@ -34,7 +27,7 @@ ms.suite: ems
 
 ## ユーザーに通知する
 
-Intune のパイロット展開が要件を満たすことを確認した後、Intune へのデバイスの移行が近々あることをユーザーに通知します。 メール メッセージ、[指示](http://www.microsoft.com/en-us/download/details.aspx?id=46398)、[ポスター](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT)などを使って予告し、会社のリソースおよびアプリケーションへの接続を維持するためにユーザーが実行する必要のある手順での登録の詳細を提供します。 サポート チームが移行プロセスについてユーザーを支援できる状態にしておきます。
+Intune のパイロット展開が要件を満たすことを確認した後、Intune へのデバイスの移行が近々あることをユーザーに通知します。 メール メッセージ、指示、[ポスター](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT)などを使って予告し、会社のリソースおよびアプリケーションへの接続を維持するためにユーザーが実行する必要のある手順での登録の詳細を提供します。 サポート チームが移行プロセスについてユーザーを支援できる状態にしておきます。
 
 ## 既存のエンタープライズ モビリティ管理ソリューションを変更する
 
@@ -75,9 +68,10 @@ Intune への移行に関してさらに支援が必要な場合は、 問題な
 
 ## このガイドのダウンロード可能なコピーを入手する
 
-このガイド全体のダウンロード可能なコピーを入手する場合は、[TechNet ギャラリー](https://gallery.technet.microsoft.com/Migrating-to-Intune-ea439387)にアクセスしてください。.
+このガイド全体のダウンロード可能なコピーを入手する場合は、[TechNet ギャラリー](https://gallery.technet.microsoft.com/Migrating-to-Intune-ea439387)にアクセスしてください。
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO2-->
 
 

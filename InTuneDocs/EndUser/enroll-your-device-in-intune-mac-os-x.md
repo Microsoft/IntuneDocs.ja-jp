@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: Intune に Mac OS X デバイスを登録する | Microsoft Intune
-description:
-keywords:
+title: "Intune に Mac OS X デバイスを登録する | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
-
-# optional metadata
-
-ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ROBOTS: 
+ms.reviewer: esmich
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
+ms.openlocfilehash: b85d2ac62ca313f0740c68ff6d85918ff7bcd55a
+
 
 ---
 
@@ -53,9 +48,12 @@ Mac OS X デバイスを登録するには
 
     ![management-profile-verified](./media/4-macosx-enroll-done.png) 
 
+サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
+
 ### 関連項目
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune の使用に関するエンドユーザーへの通知内容 | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune の使用に関するエンドユーザーへの通知内容 | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 83f029c97cf34b6c96c6b2ef16cc65ab839c1d55
+ms.openlocfilehash: 893e896fc52e6e883fcd151db2c47030113502a2
+
 
 ---
 
@@ -33,6 +27,8 @@ ms.suite: ems
 
 - エンド ユーザーが Intune で各種の作業を行う手順について理解する。
 - Intune を使用するエンド ユーザーに、作業を遂行して問題を解決するための助言を与える。
+
+[ポータル サイトをカスタマイズする](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7)ときは、ユーザーが必要に応じて支援を受けることができるように、IT 管理者の連絡先情報を必ず含めてください。
 
 
 ## エンド ユーザーの一般的なタスクに関する情報が掲載されている場所
@@ -61,9 +57,10 @@ ms.suite: ems
 
 ## ポータル サイト アプリで表示されるメッセージに関してエンド ユーザーをサポートする
 
-エンド ユーザーがポータル サイトを使用する過程で遭遇する可能性のある問題については、[ポータル サイトのユーザーに表示される可能性のあるメッセージの一覧](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages)を参照して解決を支援してください。.
+エンド ユーザーがポータル サイトを使用する過程で遭遇する可能性のある問題については、[ポータル サイトのユーザーに表示される可能性のあるメッセージの一覧](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages)を参照して解決を支援してください。
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

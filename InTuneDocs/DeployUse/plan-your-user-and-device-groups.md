@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: ユーザーとデバイス グループを計画する | Microsoft Intune
-description:
-keywords:
-author: SanchuSa
+title: "ユーザーとデバイス グループを計画する | Microsoft Intune"
+description: 
+keywords: 
+author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 82ab2dbfada6c0745195da149d5f0dc1948ceb92
+ms.openlocfilehash: e89d8384532b994d810649fc07c698237e2f3cec
+
 
 ---
 
@@ -40,7 +34,7 @@ Intune の [グループ] を使用すると、デバイスとユーザーを非
 
 Intune 管理コンソールの [グループ] ノードの既定のビューは次のようになります。
 
-![Intune コンソールの [グループ] ノードの既定のビューのスナップショット](/intune/media/Group-planning/Intune_Planning_Groups_Default_small.png)
+![Intune コンソールの [グループ] ノードの既定のビューのスナップショット](/intune/media/Intune_Planning_Groups_Default_small.png)
 
 ポリシーがグループ上に展開されるため、グループの階層は設計上の重要な考慮事項の 1 つです。 グループをいったん作成すると、そのグループの親グループを変更できないことを理解しておくことも重要です。そのため、グループの設計は、Intune サービスの使用開始時点から非常に重要になります。 ここでは、組織のニーズに基づくグループ階層を設計する上でお勧めする方法をいくつか説明します。
 
@@ -92,7 +86,7 @@ Intune 管理コンソールの [グループ] ノードの既定のビューは
 
     * **Laptop Users** グループは、 **Approved Users** セキュリティ グループのメンバーです。
 
-    * Intune で、**Approved Users** グループのメンバーを含む動的メンバーシップのクエリを使用するグループを作成します。 結果として、Intune ユーザー グループに**佐藤さん**が追加されます。.
+    * Intune で、**Approved Users** グループのメンバーを含む動的メンバーシップのクエリを使用するグループを作成します。 結果として、Intune ユーザー グループに**佐藤**さんが追加されます。
 
 > [!TIP]
 > グループを作成するときは、ポリシーを適用するしくみについて検討します。 たとえば、デバイスのオペレーティング システムに固有のポリシーのほか、組織のさまざまなロール固有のポリシーか、Active Directory に既に定義している組織単位固有のポリシーがあるとします。 各組織のロール用のユーザー グループだけでなく、iOS、Android、Windows に固有のデバイス グループを作成すると便利になると考えられます。
@@ -131,22 +125,22 @@ Intune には、編集または削除できない組み込みのグループが 
 
 BYOD または混在のケースでは、ローカル プライバシー規則を侵害しないようにポリシーを慎重に計画してください。 個人所有のデバイスを持ち込むすべてのユーザーに対する親グループを作成します。 このグループは、このカテゴリに属するすべてのユーザーに適用されるポリシーを適用するために使用されます。
 
-![BYOD 親グループの作成のスクリーン ショット](/intune/media/Group-planning/Intune_Planning_Groups_BYOD_small.png)
+![BYOD 親グループの作成のスクリーン ショット](/intune/media/Intune_Planning_Groups_BYOD_small.png)
 
 同様に、組織内の CO ユーザーに対するグループを作成することができます。
 
-![BYOD と CO の兄弟ユーザー グループのスクリーン ショット](/intune/media/Group-planning/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
+![BYOD と CO の兄弟ユーザー グループのスクリーン ショット](/intune/media/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
 
 <!---START HERE--->
 
 ### 地理的領域のグループ
 組織が特定の地域に対するポリシーを必要としている場合、地理的領域に基づいてグループを作成できます。 Active Directory (AD) で既に作成されている可能性のある地域グループをポリシーの基礎とし、ポリシーを Azure AD に同期することができます。 Azure AD で直接作成することもできます。
 
-以下のスクリーン ショットは、オンプレミス AD から同期されたグループに基づく Intune グループを作成する方法を示しています。 この例では、"**US Users Group**" と呼ばれる AD セキュリティ グループがあると想定しています。.
+以下のスクリーン ショットは、オンプレミス AD から同期されたグループに基づく Intune グループを作成する方法を示しています。 この例では、"**US Users Group**" と呼ばれる AD セキュリティ グループがあると想定しています。
 
 1. まず、一般的な情報を入力します。
 
-    ![[グループの編集] 領域のスクリーン ショット](/intune/media/PlanDesign/Group-planning/Intune_Planning_Groups_AD_General_small.png)
+![[グループの編集] 領域のスクリーン ショット](/intune/media/Intune_Planning_Groups_AD_General_small.png)
 
 メンバーシップの基準の下で、メンバーシップ規則の下で使用するセキュリティ グループとして、AD から同期された "**US Users Group**" を選びます。
 
@@ -168,12 +162,12 @@ BYOD または混在のケースでは、ローカル プライバシー規則�
 
 この時点では、グループ階層が次のように表示されます。 表示のように、Intune グループ "**Laptop Users**" にはメンバーが含まれています。 このグループに適用されるどのポリシーも、米国地域の BYOD ノート PC ユーザーに適用されます。
 
-![ノート PC ユーザー グループの表示](/intune/media/Group-planning/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
+![ノート PC ユーザー グループの表示](/intune/media/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
 
 ### 特定のオペレーティング システム用のグループ
 Android、iOS、Windows などの特定のオペレーティング システムに適用するポリシーが組織で必要な場合は、この要件に基づくグループを作成できます。 前の例と同様に、オンプレミスの AD で既に作成されている OS 固有のグループをポリシーの基礎とし、ポリシーを Azure AD に同期することができます。 Azure AD で直接作成することもできます。
 
-前の例と同じ方法に従えば、 <!--devices?--> 特定の OS プラットフォームを使用するユーザーに基づいてグループを作成することができます。
+前の例と同じ方法に従えば、特定の OS プラットフォームを使用しているユーザーに基づいてグループを作成できます。<!--devices?-->
 
 > [!NOTE]
 > 複数のモバイル プラットフォームまたはオペレーティング システムを使用しているユーザーがいるものの、Android ユーザー、iOS ユーザー、Windows ユーザーとして自動的に分類する方法がない場合、デバイス レベルでポリシーを適用することを検討します。こうすることで、OS 固有のポリシーを適用する面で柔軟性が向上します。
@@ -208,8 +202,7 @@ Android、iOS、Windows などの特定のオペレーティング システム�
 ## グループ階層と名前付け規則
 ポリシーの管理を容易にするために、各ポリシーに適用される目的、プラットフォーム、範囲に基づいて名前を付けることをお勧めします。 この命名基準は、ポリシーを適用するための準備で作成したグループの構造に従う必要があります。
 
-たとえば、適用範囲が全社、Android モバイル デバイス、US 地域レベルの Android ポリシーは、次のように名付けることができます。
-**CO_US_Mob_Android_General**.
+たとえば、適用範囲が全社、Android モバイル デバイス、US 地域レベルの Android ポリシーは、**CO_US_Mob_Android_General** と名付けることができます。
 
 ![Android 用のポリシーの作成](/intune/media/Intune_planning_policy_android_small.png)
 
@@ -221,6 +214,7 @@ Android、iOS、Windows などの特定のオペレーティング システム�
 [グループの作成](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO5-->
 
 

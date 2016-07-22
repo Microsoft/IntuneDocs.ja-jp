@@ -1,31 +1,24 @@
 ---
-# required metadata
-
-title: 電子メールおよび O365 サービスへのアクセスを制限する | Microsoft Intune
-description:
-keywords:
+title: "電子メールおよび O365 サービスへのアクセスを制限する | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f770bdc312879d1c833e8861494ecd2204ea603a
+ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
+
 
 ---
 
-# Microsoft Intune を使用して電子メールおよび O365 サービスへのアクセスを制限する
+# Microsoft Intune で電子メール、O365、およびその他のサービスへのアクセスを制限する
 Intune の条件付きアクセスを使用して、会社の電子メールおよび O365 サービスへのアクセスを制限することができます。 Intune の条件付きアクセス機能により、会社の電子メールおよび O365 サービスへのアクセスを、設定した規則に準拠するデバイスに制限することができます。
 ## 条件付きアクセスのしくみ
 コンプライアンス ポリシーの設定は、デバイスのコンプライアンスの評価に使用されます。 条件付きアクセス ポリシーは、この評価を使用して、特定のサービスへのアクセスを制限または許可します。 条件付きアクセス ポリシーがコンプライアンス ポリシーとの組み合わせで使用される場合、準拠するデバイスのみがサービスへのアクセスを許可されます。
@@ -37,7 +30,7 @@ Intune の条件付きアクセスを使用して、会社の電子メールお�
 
 条件付きアクセスの一般的なフロー:
 
-![図は、デバイスがサービスへのアクセスを許可されているか、またはブロックされているかを決定するために使用する判断ポイントを示しています。](./media/ConditionalAccess4.png)
+![図は、デバイスがサービスへのアクセスを許可されているか、またはブロックされているかを決定するために使用する判断ポイントを示しています](../media/ConditionalAccess4.png)
 
 ## 条件付きアクセスを構成する方法
 条件付きアクセスを使用して管理できるのは、Microsoft **Exchange On-premises**、**Exchange Online**、**Exchange Online Dedicated**、**SharePoint Online**、および **Skype for Business Online** です。
@@ -67,8 +60,10 @@ Intune の条件付きアクセスを使用して、会社の電子メールお�
   - [古い Exchange Online Dedicated の条件付きアクセス ポリシーを作成する](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   - [SharePoint Online の条件付きアクセス ポリシーを作成する](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [Skype for Business Online の条件付きアクセス ポリシーを作成する](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+  - [Dynamics CRM Online の条件付きアクセス ポリシーを作成する](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

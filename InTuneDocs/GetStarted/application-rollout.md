@@ -1,32 +1,26 @@
 ---
-# required metadata
-
-title: アプリケーションのロールアウト | Microsoft Intune
-description:
-keywords:
+title: "アプリケーションのロールアウト | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 4a237942b4bc1e411cf55bc34c7b86d2249c526e
+
 
 ---
 
 # アプリケーションのロールアウト
-このトピックでは、Microsoft Intune でアプリを段階的にロールアウトする場合の推奨事項を具体的に説明します。 ロールアウトの各段階の詳細については、「[Rollout phases for Microsoft Intune deployment](rollout-phases-for-microsoft-intune-deployment.md)」 (Microsoft Intune を展開するためのロールアウトの段階) を参照してください。.
+このトピックでは、Microsoft Intune でアプリを段階的にロールアウトする場合の推奨事項を具体的に説明します。 ロールアウトのフェーズの詳細については、「[Microsoft Intune のロールアウト フェーズ](rollout-phases-for-microsoft-intune-deployment.md)」をご覧ください。
 
 ### アプリのロールアウトの段階
 アプリのロールアウトの各段階は、以下のとおりです。
@@ -35,7 +29,7 @@ ms.suite: ems
 
 -   概念実証
 
--   パイロット運用
+-   パイロット
 
 -   全社的なロールアウト
 
@@ -48,20 +42,23 @@ ms.suite: ems
 
 -   ユーザーとユーザーのデバイス (使用される可能性のあるすべてのオペレーティング システム) に対するアプリの適合性。
 
--   「[Microsoft Intune でアプリを追加する](/intune/deploy-use/add-apps)」の説明に従い、選択したアプリのインストーラーが Intune のアプリの配布でサポートされていることを確認します。.
+-   「[Microsoft Intune でアプリを追加する](/intune/deploy-use/add-apps)」の説明に従い、選択したアプリのインストーラーが Intune のアプリの配布でサポートされていることを確認します。
 
--   アプリ配布の前提条件がインストールされていることを確認します。 <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md--->).
+-   アプリ配布の前提条件がインストールされていることを確認します。 <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md--->) を入力します。
 
 -   Intune でアプリの種類がサポートされていることを確認します。
 
--   アプリをアップロードするのに十分な容量のクラウド記憶域があることを確認します。 追加の記憶域を購入する手順については、「[Microsoft Intune でアプリを追加する](/intune/deploy-use/add-apps)」で説明しています。.
+-   アプリをアップロードするのに十分な容量のクラウド記憶域があることを確認します。 追加の記憶域を購入する手順については、「[Microsoft Intune でアプリを追加する](/intune/deploy-use/add-apps)」で説明しています。
+
+> [!NOTE]           
+> この[モバイル アプリ向けの計画に関するテンプレート](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)をダウンロードすると、ロールアウト プロセスに役立ちます。
 
 ## 概念実証
 概念実証の段階では、テスト用に厳密に構成したデバイスおよびユーザーのラボ環境で、アプリを展開してテストします。
 
--   この段階でヘルプ デスクを参加させ、パイロット運用や運用環境の展開でどのような問題が発生する可能性があるか学習させます。 トラブルシューティングの情報については、「[Troubleshoot app deployment problems in Microsoft Intune](/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune)」 (Microsoft Intune のアプリの展開での問題のトラブルシューティング) を参照してください。.
+-   このフェーズでヘルプ デスクを参加させ、パイロット運用や運用環境の展開でどのような問題が発生する可能性があるか学習させます。 トラブルシューティングの情報については、「[Microsoft Intune のポリシーのトラブルシューティング](/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune)」を参照してください。
 
--   手順のこの段階で、パイロット運用および運用環境のユーザー向けのコミュニケーション計画を作成します。 計画には少なくとも、展開の対象となるアプリ、ユーザーがアプリを入手する時期と方法、展開のビジネス上の目的、問題が発生した場合の対処方法 (セルフヘルプ情報およびヘルプ デスクへの連絡方法の両方) が含まれている必要があります。
+-   手順のこの段階で、パイロットおよび運用環境ユーザーにコミュニケーション計画を作成します。 計画には少なくとも、展開の対象となるアプリ、ユーザーがアプリを入手する時期と方法、展開のビジネス上の目的、問題が発生した場合の対処方法 (セルフヘルプ情報およびヘルプ デスクへの連絡方法の両方) が含まれている必要があります。
 
 ## パイロット運用
 パイロット運用中は、小人数のテスト ユーザーやデバイスのグループにアプリを展開します。 次の点を考慮します。
@@ -97,6 +94,7 @@ ms.suite: ems
 [Microsoft Intune のアプリ展開に関する問題のトラブルシューティング](/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

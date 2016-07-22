@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: デバイスで Microsoft Passport の設定を制御する | Microsoft Intune
-description:
-keywords:
+title: "デバイスで Microsoft Passport の設定を制御する | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: bdf7dfda3814ad6c6c00f5c133027175a95fb5e2
+
 
 ---
 
@@ -57,7 +51,8 @@ Intune は、2 つの方法で Passport for Work と統合できます。
     - **許可** - ユーザーは PIN で文字を使用できますが、使用は必須ではありません。
     - **必須** -ユーザーは PIN に文字を 1 文字以上含める必要があります。 たとえば、一般的なのは、少なくとも 1 つの大文字と 1 つの特殊文字の使用を要求する方法です。
     - **使用不可** (既定) - ユーザーは、これらの文字を PIN で使用することができません (これは、この設定を構成していない場合の動作でもあります)。
-    > [!TIP]特殊文字には次のものが含まれます。**! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**
+    > [!TIP]
+    > 特殊文字には次のものが含まれます。 **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
 - **PIN の有効期間 (日)** - その期間が経過したらエンドユーザーが PIN を変更する必要がある有効期間を指定することをお勧めします。 既定は 41 日です。 
 - **PIN の履歴を保存** - この設定を使用すると、以前に使用した PIN の再利用を制限できます。 既定では過去 5 回の PIN を再利用することはできません。
 
@@ -79,6 +74,7 @@ Microsoft Passport について詳しくは、Windows 10 ドキュメントの[�
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

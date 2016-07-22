@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: サービスの説明 | Microsoft Intune
-description:
-keywords:
+title: "サービスの説明 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 4794a22b3bdd1f28e6951b81e8379dc208fffc89
+ms.openlocfilehash: 6cab0bacd9157323e342662609de8c9f20550d78
+
 
 ---
 
@@ -38,7 +32,7 @@ Intune は、100 ユーザー ライセンスを含む 30 日間の無料試用�
 
 モバイル デバイスで構成できる設定の一覧については、次のページを参照してください。
 
--   [Microsoft Intune のモバイル デバイス管理機能](mobile-device-management-capabilities-in-microsoft-intune.md)
+-   [Microsoft Intune のモバイル デバイス管理機能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 
 -   [Configuration Manager でのモバイル デバイスの全般設定](https://technet.microsoft.com/en-us/library/dn376523.aspx)
 
@@ -62,7 +56,7 @@ Intune サービスに関して、Microsoft からは次のような通知が提
 * 新しいAPI または変更された API – カスタム アプリの旧バージョンとの互換性を確保するためのテストが必要であることを通知します。
 * システム要件に対する変更。たとえば、最低限必要なブラウザー バージョンの変更。
 * 機能を有効にするため措置、またはサービスが機能を中断するのを回避するための措置を講じることが求められる更新。
--   Microsoft は、毎月のサービス更新で、新機能および既存機能に対する拡張に関する情報を提供します。 一般に、Microsoft は、各月の中旬頃にサービスの更新をロールアウトします。 更新プログラムについては、「[Microsoft Intune の新機能](/intune/deploy-use/whats-new-in-microsoft-intune.md)」を参照してください。
+-   Microsoft は、毎月のサービス更新で、新機能および既存機能に対する拡張に関する情報を提供します。 一般に、Microsoft は、各月の中旬頃にサービスの更新をロールアウトします。 更新プログラムについては、「[Microsoft Intune の新機能](/intune/deploy-use/whats-new-in-microsoft-intune)」を参照してください。
 -   Intune サービスの提供が終了する場合は、12 か月前に通知されます。
 
 ## 適切な管理ソリューションの選択
@@ -70,24 +64,24 @@ Intune には、会社のモバイル デバイスとコンピューター (こ�
 
 -   **Intune スタンドアロン構成。** Intune の Web ベースの管理コンソールを使用して組織内のデバイスを管理します。 Intune を使用するときに社内の IT インフラストラクチャを使用する必要はありませんが、Intune と Active Directory ドメイン サービスを使用している場合は、ドメイン サービスで管理しているドメイン ユーザー アカウントを Intune に使用できます。
 
--   **Intune と System Center Configuration Manager。** Configuration Manager の管理コンソールを使うと、企業のコンピューターやモバイル デバイスを管理できます。 この構成を利用すると、Configuration Manager 管理コンソールという 1 つのコンソールで、すべての組織のデバイスを管理することができます。 Configuration Manager は、多数のモバイル デバイス、サーバー、コンピューターをサポートしています。 詳細については、「[System Center 2012 Configuration Manager のドキュメント ライブラリ](https://technet.microsoft.com/library/gg682041.aspx)」の [Configuration Manager と Microsoft Intune を使用してモバイル デバイスを管理する方法](http://go.microsoft.com/fwlink/?LinkID=271118)に関するページを参照してください。  適切な方法を判断するのに役立つ情報については、「[エンタープライズ モビリティを実現する方法](/intune/plan-design/ways-to-do-enterprise-mobility.md)」を参照してください。
+-   **Intune と System Center Configuration Manager。** Configuration Manager の管理コンソールを使うと、企業のコンピューターやモバイル デバイスを管理できます。 この構成を利用すると、Configuration Manager 管理コンソールという 1 つのコンソールで、すべての組織のデバイスを管理することができます。 Configuration Manager は、多数のモバイル デバイス、サーバー、コンピューターをサポートしています。 詳細については、「[System Center 2012 Configuration Manager のドキュメント ライブラリ](https://technet.microsoft.com/library/gg682041.aspx)」の [Configuration Manager と Microsoft Intune を使用してモバイル デバイスを管理する方法](http://go.microsoft.com/fwlink/?LinkID=271118)に関するページを参照してください。  自分に適した手法を決める際は、「[Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](https://technet.microsoft.com/en-us/library/mt706478.aspx)」 (Microsoft Intune スタンドアロンを実行するのと Configuration Manager でハイブリッド MDM を実行するのはどちらが良いか) がお役に立ちます。
 
--   Office 365 でサポートされているモバイル デバイス管理。「[エンタープライズ モビリティを実現する方法](/intune/plan-design/ways-to-do-enterprise-mobility.md)」を参照してください。
 
 ## Intune の詳細
 Intune の詳細については、次のリソースを参照してください。
 
 -   [Microsoft Intune セキュリティ センター](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/)では、Intune のセキュリティ、プライバシー、およびコンプライアンスのプラクティスに関する情報を提供しているほか、Intune の認定資格の一部についても説明しています。
 
--   [Microsoft Intune のモバイル デバイス管理機能](/intune/understand-explore/mobile-device-management-capabilities-in-microsoft-intune.md)
+-   [Microsoft Intune のモバイル デバイス管理機能](/intune/understand-explore/mobile-device-management-capabilities-in-microsoft-intune)
 
 ### 関連項目
 [Microsoft Intune](https://docs.microsoft.com/intune/)
 [System Center 2012 Configuration Manager のドキュメント ライブラリ](https://technet.microsoft.com/library/gg682041.aspx)
 
-[Microsoft Intune の新機能](/intune/deploy-use/whats-new-in-microsoft-intune.md)
+[Microsoft Intune の新機能](/intune/deploy-use/whats-new-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO5-->
 
 

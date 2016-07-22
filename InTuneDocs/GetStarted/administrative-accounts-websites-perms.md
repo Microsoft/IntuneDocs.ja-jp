@@ -1,33 +1,27 @@
 ---
-# required metadata
-
-title: Microsoft Intune の管理者アカウント、Web サイト、アクセス許可 | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune の管理者アカウント、Web サイト、アクセス許可 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: db3075e7-38fd-4dfe-b266-26aed10ac8ea
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: a8d9cf5d36107c54b97d2b5a5250645dc735a8da
+
 
 ---
 
 # Microsoft Intune の管理者アカウント、Web サイト、アクセス許可
 
-Microsoft Intune をセットアップする前に、このトピックと「[What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)」 (Microsoft Intune を開始する前に理解しておくこと) に挙げられているその他の要件を確認してください。.
+Microsoft Intune をセットアップする前に、このトピックと「[What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)」 (Microsoft Intune を開始する前に理解しておくこと) に挙げられているその他の要件を確認してください。
 
 Intune を管理するには、以下を使用します。
 - 2 種類の管理者アカウント
@@ -43,13 +37,13 @@ Intune を管理するには、以下を使用します。
 ### テナント管理者
 |アクセス許可のレベル|詳細情報|
 |--------------------------|-------------------------|
-|テナント管理者には、管理者の役割が割り当てられます。管理者の役割は、そのユーザーの管理範囲と、管理できるタスクを定義します。<br /><br />さまざまな Microsoft クラウド サービスで共通の管理者ロールが使用されていますが、一部のサービスではサポートされていないロールもあります。<br /><br /> Microsoft Intune では、次の役割を使用します。<br /><br />- 全体管理者<br />- 課金管理者<br />- パスワード管理者<br />- サービス サポート管理者<br />- ユーザー管理の管理者|既定では、Microsoft Intune サブスクリプションの作成に使用するアカウントは、全体管理者の役割を持つテナント管理者です。<br /></br>  テナント管理者として、[!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)] を使用して、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] のサブスクリプションを管理し、テナント管理者を割り当てます。 [!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)].<br /><br />全体管理者の役割を持つテナント管理者を使用して [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]にアクセスし、最初のサービス管理者を割り当てます。 ベスト プラクティスとして、テナント管理者を日常の管理タスクに使用しないでください。 テナント管理者には、アクセスする際 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] のライセンスは必要ありません。 [!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)].<br /><br />テナント管理者は、Microsoft クラウド サービスで共通の概念です。 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] にサブスクライブするときに使用するサービスは、Microsoft Azure AD のテナントです。 「[Azure AD ディレクトリとは](http://technet.microsoft.com/library/jj573650.aspx)」の Azure AD テナントに関するセクションを参照してください。.|
+|テナント管理者には、管理者の役割が割り当てられます。管理者の役割は、そのユーザーの管理範囲と、管理できるタスクを定義します。<br /><br />さまざまな Microsoft クラウド サービスで共通の管理者ロールが使用されていますが、一部のサービスではサポートされていないロールもあります。<br /><br /> Microsoft Intune では、次の役割を使用します。<br /><br />- 全体管理者<br />- 課金管理者<br />- パスワード管理者<br />- サービス サポート管理者<br />- ユーザー管理の管理者|既定では、Microsoft Intune サブスクリプションの作成に使用するアカウントは、全体管理者の役割を持つテナント管理者です。<br /></br>  テナント管理者として、[!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)] を使用して、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] のサブスクリプションを管理し、[!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)] からテナント管理者を割り当てます。<br /><br />全体管理者の役割を持つテナント管理者を使用して [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]にアクセスし、最初のサービス管理者を割り当てます。 ベスト プラクティスとして、テナント管理者を日常の管理タスクに使用しないでください。 テナント管理者には、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] にアクセスする際 [!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)] のライセンスは必要ありません。<br /><br />テナント管理者は、Microsoft クラウド サービスで共通の概念です。 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] にサブスクライブするときに使用するサービスは、Microsoft Azure AD のテナントです。 「[Azure AD ディレクトリとは](http://technet.microsoft.com/library/jj573650.aspx)」の Azure AD テナントに関するセクションを参照してください。|
 
 
 ### サービス管理者
 |アクセス許可のレベル|詳細情報|
 |--------------------------|-------------------------|
-|サービス管理者には、次の権限の 1 つが割り当てられます。<br /><br />**フル アクセス**: 制限なく [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] のすべての領域にアクセスする権限を付与します。 他のサービス管理者を追加および管理することもできます。<br /><br />**読み取り専用アクセス**: [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] のすべての領域への読み取りアクセス許可を付与します。 読み取り専用サービス管理者は、データを変更できませんが、レポートを実行することはできます。<br /><br />**ヘルプデスク - グループ ノード**: サービス管理者に、通常はヘルプデスクのシナリオに関連付けられている一連のタスクのみを実行できるアクセス許可を付与します。 このアクセス許可セットの詳細については、「[Customize Intune console views according to admin roles](/intune/deploy-use/control-what-admins-can-see-in-the-microsoft-intune-admin-console)」 (管理者の役割に応じて Intune コンソールの表示をカスタマイズする) を参照してください。.|既定では、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] はサービス管理者を割り当てません。 代わりに、全体管理者の役割を持つテナント管理者を使用して、サブスクリプション用の最初のサービス管理者を割り当てる必要があります。 </br></br> サービス管理者として、[!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] を使用して、日常のタスクを管理します。 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].<br /><br />サービス管理者は、管理コンソール内から割り当てます。 サービス管理者のアカウントが管理コンソールにアクセスするには、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] のライセンスが必要です。|
+|サービス管理者には、次の権限の 1 つが割り当てられます。<br /><br />**フル アクセス**: 制限なく [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] のすべての領域にアクセスする権限を付与します。 他のサービス管理者を追加および管理することもできます。<br /><br />**読み取り専用アクセス**: [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] のすべての領域への読み取りアクセス許可を付与します。 読み取り専用サービス管理者は、データを変更できませんが、レポートを実行することはできます。<br /><br />**ヘルプデスク - グループ ノード**: サービス管理者に、通常はヘルプデスクのシナリオに関連付けられている一連のタスクのみを実行できるアクセス許可を付与します。 このアクセス許可セットの詳細については、「[管理者の役割に応じて Intune コンソール ビューをカスタマイズする](/intune/deploy-use/control-what-admins-can-see-in-the-microsoft-intune-admin-console)」を参照してください。|既定では、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] はサービス管理者を割り当てません。 代わりに、全体管理者の役割を持つテナント管理者を使用して、サブスクリプション用の最初のサービス管理者を割り当てる必要があります。 </br></br> サービス管理者として、[!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] を使用して、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] の日常のタスクを管理します。<br /><br />サービス管理者は、管理コンソール内から割り当てます。 サービス管理者のアカウントが管理コンソールにアクセスするには、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] のライセンスが必要です。|
 
 
 
@@ -60,7 +54,7 @@ Intune を管理するには、以下を使用します。
 
 
 ## Intune の管理 Web サイト
- さまざまな管理タスクを行うには、次の管理 Web サイトを使用する必要があります。これらのサイトには、[サポートされている Web ブラウザー](supported-web-browsers.md)からアクセスできます。.
+ さまざまな管理タスクを行うには、次の管理 Web サイトを使用する必要があります。これらのサイトには、[サポートされている Web ブラウザー](supported-web-browsers.md)からアクセスできます。
 
 - [Office 365 ポータル](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Microsoft Intune 管理コンソール](https://admin.manage.microsoft.com/)
@@ -75,9 +69,9 @@ Intune を管理するには、以下を使用します。
 - サブスクリプションで使用するドメイン名を構成する。 ドメイン名は、ユーザーがサインインに使用するアカウントを定義します。
 - 保有するライセンス数や、使用できるクラウドの記憶域の量など、サブスクリプションの請求と購入の詳細を管理する。
 - [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] サービスのヘルスを表示するリンクを探す。
-- アカウントにライセンスが割り当てられていない場合でも、テナント管理者として、Office 365 ポータルにサインインしてサブスクリプションを管理できます。 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+- アカウントに [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] を使用するライセンスが割り当てられていない場合でも、テナント管理者として、Office 365 ポータルにサインインしてサブスクリプションを管理できます。
 - Intune のライセンスを持つ、管理者以外のユーザーは、このポータルを使用して、自分のパスワードをリセットしたり、プロファイルを編集したりできます。
-- Office 365 ポータルにアクセスするには、アカウントのサインイン状態が "**許可済み**" になっている必要があります。 これは、サブスクリプションのライセンスを与えられていることとは別です。 既定では、すべてのユーザー アカウントは、"**許可済み**" の状態です。.
+- Office 365 ポータルにアクセスするには、アカウントのサインイン状態が "**許可済み**" になっている必要があります。 これは、サブスクリプションのライセンスを与えられていることとは別です。 既定では、すべてのユーザー アカウントは、"**許可済み**" の状態です。
 
 
 ### [Microsoft Intune 管理コンソール](https://admin.manage.microsoft.com/)
@@ -91,14 +85,15 @@ Intune を管理するには、以下を使用します。
 - このポータルにサインインする。 このポータルにサインインするには、サービス管理者のアクセス許可があるか、または全体管理者の役割を持つテナント管理者である必要があります。
 
 
-このポータルには、サービス管理者のアクセス許可を持つユーザーまたは全体管理者の役割を持つテナント管理者のみがサインインできます。 管理コンソールにアクセスするには、アカウントに [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] を使用するライセンスがあり、サインイン状態が "**許可済み**" になっている必要があります。.
+このポータルには、サービス管理者のアクセス許可を持つユーザーまたは全体管理者の役割を持つテナント管理者のみがサインインできます。 管理コンソールにアクセスするには、アカウントに [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] を使用するライセンスがあり、サインイン状態が "**許可済み**" になっている必要があります。
 
-[サブスクリプションのユーザーの追加](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)や[サブスクリプションのライセンスの割り当て](start-with-a-paid-subscription-to-microsoft-intune-step-4.md)について、詳細をご確認ください。.
+[サブスクリプションのユーザーの追加](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)や[サブスクリプションのライセンスの割り当て](start-with-a-paid-subscription-to-microsoft-intune-step-4.md)について、詳細をご確認ください。
 
  ### 関連項目
- [What to know before you start Microsoft Intune (Microsoft Intune を開始する前に理解しておくこと)](what-to-know-before-you-start-microsoft-intune.md)
+ [Microsoft Intune を使い始める前に](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

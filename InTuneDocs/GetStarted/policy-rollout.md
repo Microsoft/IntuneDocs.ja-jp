@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: ポリシーのロールアウト | Microsoft Intune
-description:
-keywords:
+title: "ポリシーのロールアウト | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 390d5adf-86d2-4e23-ba93-1e61e6b1028b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 8935fbc42d7b406a5bcdbfc4353209b4447ae413
+
 
 ---
 
 # ポリシーのロールアウト
 このトピックでは、Microsoft Intune でポリシーを段階的にロールアウトする場合の推奨事項を具体的に説明します。 この方法は、新しい Intune の展開に適用する最初のポリシー、または既存の展開に追加するポリシーに使用できます。
 
-ロールアウトのフェーズの詳細については、「[Rollout phases for Microsoft Intune deployment (Microsoft Intune を展開するためのロールアウトのフェーズ)](rollout-phases-for-microsoft-intune-deployment.md)」を参照してください。.
+ロールアウトのフェーズの詳細については、「[Microsoft Intune のロールアウト フェーズ](rollout-phases-for-microsoft-intune-deployment.md)」をご覧ください。
 
 ### ポリシーのロールアウトのフェーズ
 ポリシーのロールアウトには、次のフェーズがあります。
@@ -39,7 +33,7 @@ ms.suite: ems
 
 -   パイロット
 
--   企業でのロールアウト
+-   全社的なロールアウト
 
 -   運用とメンテナンス
 
@@ -61,7 +55,7 @@ Intune ポリシーを展開するスコープを定義します。
 ## 概念実証
 概念実証のフェーズでは、テスト用に厳密に構成したデバイスおよびユーザーのラボ環境で、ポリシーを展開してテストします。
 
--   このフェーズでヘルプ デスクを参加させ、パイロット運用や運用環境の展開でどのような問題が発生する可能性があるか学習させます。 トラブルシューティングの情報については、「[Microsoft Intune のポリシーのトラブルシューティング](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)」を参照してください。.
+-   このフェーズでヘルプ デスクを参加させ、パイロット運用や運用環境の展開でどのような問題が発生する可能性があるか学習させます。 トラブルシューティングの情報については、「[Microsoft Intune のポリシーのトラブルシューティング](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)」をご覧ください。
 
 -   手順のこの段階で、パイロットおよび運用環境ユーザーにコミュニケーション計画を作成します。 計画には少なくとも、デバイスのどの動作がいつ変更されるか、変更のビジネス目的は何であるか、問題が発生した場合のユーザーまたは IT スタッフの対応方法 (セルフヘルプ情報およびヘルプ デスクへの連絡方法の両方) が含まれている必要があります。
 
@@ -102,6 +96,7 @@ Intune ポリシーを展開するスコープを定義します。
 [Microsoft Intune のポリシーのトラブルシューティング](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

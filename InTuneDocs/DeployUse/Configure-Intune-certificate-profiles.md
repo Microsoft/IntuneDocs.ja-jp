@@ -1,36 +1,28 @@
 ---
-# required metadata
-
-title: 証明書プロファイルを構成する | Microsoft Intune
-description:
-keywords:
+title: "証明書プロファイルを構成する | Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: kmyrup
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ee6b3607688cb02be7316b83e10424dfbea9746b
+ms.openlocfilehash: 8343abe8861468bbba27272aa1f3569390cb826b
+
 
 ---
 
 # Intune 証明書プロファイルを構成する
-「[証明書インフラストラクチャを構成する](configure-certificate-infrastructure.md)」の説明に従って証明書を構成した後、証明書プロファイルを構成できます。
+「[SCEP の証明書インフラストラクチャを構成する](configure-certificate-infrastructure-for-scep.md)」または「[PFX の証明書インフラストラクチャを構成する](configure-certificate-infrastructure-for-pfx.md)」の説明に従って証明書を構成した後、証明書プロファイルを構成できます。
 
-**タスク 1** - 信頼されたルート CA 証明書をエクスポートする
-**タスク 2** - 信頼された CA 証明書プロファイルを作成する
-**タスク 3** - 次のいずれか:
+**タスク 1** - 信頼されたルート CA 証明書をエクスポートする **タスク 2** - 信頼された CA 証明書プロファイルを作成する **タスク 3** - 次のどちらかを実行する
 
 SCEP 証明書プロファイルを作成する
 
@@ -46,7 +38,7 @@ SCEP または .PFX 証明書プロファイルを作成する前に、**信頼�
 
 ##### 信頼された証明書プロファイルを作成するには
 
-1.  [Intune 管理コンソール](https://manage.microsoft.com)を開き、**[ポリシー]**  &gt;  **[ポリシーの追加]** をクリックします。.
+1.  [Intune 管理コンソール](https://manage.microsoft.com)を開き、**[ポリシー]** &gt; **[ポリシーの追加]** の順にクリックします。
 
 2.  次のポリシーの種類のいずれかを構成します。
 
@@ -60,12 +52,12 @@ SCEP または .PFX 証明書プロファイルを作成する前に、**信頼�
 
     **Windows &gt; 信頼された証明書プロファイル (Windows Phone 8.1 以降)**
 
-    詳しくは、「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」をご覧ください。.
+    詳しくは、「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」をご覧ください。
 
 3.  要求された情報を指定して、Android、iOS、Mac OS X、Windows 8.1、または Windows Phone 8.1 用の信頼された証明書プロファイルの設定を構成します。 **[証明書ファイル]** 設定で、発行元 CA からエクスポートした信頼されたルート CA 証明書 (**.cer**) をインポートします。 **[保存先ストア]** 設定は、Windows 8.1 以降を実行中のデバイスで、1 つ以上の証明書ストアを持っているデバイスにのみ適用されます。
 
 
-4.  終了したら、**[ポリシーの保存]** をクリックします。.
+4.  終了したら、 **[ポリシーの保存]**をクリックします。
 
 新しいポリシーが [ **ポリシー** ] ワークスペースに表示され、展開できるようになります。
 
@@ -74,7 +66,7 @@ SCEP または .PFX 証明書プロファイルを作成する前に、**信頼�
 
 ##### SCEP 証明書プロファイルを作成するには
 
-1.  [Intune 管理コンソール](https://manage.microsoft.com)を開き、**[ポリシー]**  &gt;  **[ポリシーの追加]** をクリックします。.
+1.  [Intune 管理コンソール](https://manage.microsoft.com)を開き、**[ポリシー]** &gt; **[ポリシーの追加]** の順にクリックします。
 
 2.  次のポリシーの種類のいずれかを構成します。
 
@@ -88,17 +80,17 @@ SCEP または .PFX 証明書プロファイルを作成する前に、**信頼�
 
     **Windows &gt; SCEP 証明書プロファイル (Windows Phone 8.1 以降)**
 
-    詳しくは、「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」をご覧ください。.
+    詳しくは、「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」をご覧ください。
 
 3.  プロファイル構成ページの指示に従って、SCEP 証明書プロファイル設定を構成します。
 
-4.  終了したら、**[ポリシーの保存]** をクリックします。.
+4.  終了したら、 **[ポリシーの保存]**をクリックします。
 
 新しいポリシーが [ **ポリシー** ] ワークスペースに表示され、展開できるようになります。
 
 ##### .PFX 証明書プロファイルを作成するには
 
-1.  [Intune 管理コンソール](https://manage.microsoft.com)を開き、**[ポリシー]**  &gt;  **[ポリシーの追加]** をクリックします。.
+1.  [Intune 管理コンソール](https://manage.microsoft.com)を開き、**[ポリシー]** &gt; **[ポリシーの追加]** の順にクリックします。
 
 2.  次のポリシーの種類のいずれかを構成します。
 
@@ -112,11 +104,11 @@ SCEP または .PFX 証明書プロファイルを作成する前に、**信頼�
 
     -    **iOS > PKCS #12 (.PFX) 証明書プロファイル (iOS 7.1 以降)**    
 
-    詳しくは、「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」をご覧ください。.
+    詳しくは、「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」をご覧ください。
 
 3.  ポリシー フォームで要求されている情報を入力します。
 
-4.  終了したら、**[ポリシーの保存]** をクリックします。.
+4.  終了したら、 **[ポリシーの保存]**をクリックします。
 
 新しいポリシーが [ **ポリシー** ] ワークスペースに表示され、展開できるようになります。
 
@@ -134,13 +126,13 @@ SCEP または .PFX 証明書プロファイルを作成する前に、**信頼�
 
 Intune の他のポリシーを展開するのと同じ方法で、証明書プロファイルを展開します。
 
-1.  **[ポリシー]** ワークスペースで、展開するポリシーを選択し、**[展開の管理]** をクリックします。.
+1.   **[ポリシー]** ワークスペースで、展開するポリシーを選択し、 **[展開の管理]**をクリックします。
 
 2.   **[展開の管理]** ダイアログ ボックスで、次の操作を実行します。
 
-    -   **ポリシーを展開するには** - ポリシーを展開する対象となる 1 つ以上のグループを選択して、**[追加]**  &gt;  **[OK]** をクリックします。.
+    -   **ポリシーを展開するには**、ポリシーを展開する対象となる 1 つ以上のグループを選択して、**[追加]** &gt; **[OK]** をクリックします。
 
-    -   **ポリシーを展開せずにダイアログ ボックスを閉じるには** - **[キャンセル]** をクリックします。.
+    -   **ポリシーを展開せずにダイアログ ボックスを閉じるには**、**[キャンセル]** をクリックします。
 
 展開済みポリシーを選択すると、ポリシー一覧の下部に展開についての詳細が表示されます。
 ###  次のステップ
@@ -152,6 +144,7 @@ Intune の他のポリシーを展開するのと同じ方法で、証明書プ�
 -  [Microsoft Intune での VPN 接続](vpn-connections-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

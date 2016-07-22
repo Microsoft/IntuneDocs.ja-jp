@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: VPN 接続 | Microsoft Intune
-description:
-keywords:
+title: "VPN 接続 | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 95abe7b12e68755f3c95f91888efd3e85c057119
+ms.openlocfilehash: b55cf263611d6e90805cad9985eb8a5e7ebeb4a0
+
 
 ---
 
@@ -48,19 +42,20 @@ Intune では、次の接続の種類を使用する VPN プロファイルを�
 
 
 
-接続の種類 |iOS および Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8。1  |Windows 10 デスクトップおよび Windows 10 Mobile |
-----------------|------------------|-------|-----------|----------|--------------|-----------------|------------|
+接続の種類 |iOS および Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8。1|Windows 10 デスクトップおよび Windows 10 Mobile |
+----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
 Cisco AnyConnect|○ |○   |×    |     ×    |×  |×    | ○ (OMA-URI、Windows 10 Mobile のみ)|     
 Pulse Secure|○  |○ |○   |×  |○  |○| ○|        
 F5 Edge Client|○ |○ |○ |×  |○  |   ○ |  ○|   
 Dell SonicWALL Mobile Connect|○ |○ |○ |×  |○ |○ |○|         
 CheckPoVPNt Mobile VPN|○ |○ |○ |○ |○|○|○|
-Microsoft SSL (SSTP)|× |× |× |× |×|×|いいえ|
-Microsoft 自動|× |× |× |× |×|×|○|
-IKEv2|× |× |× |× |×|×|○|
-PPTP|× |× |× |× |×|×|○|
-L2TP|× |× |× |× |×|×|○|
+Microsoft SSL (SSTP)|× |× |× |× |×|×|VPNv1 OMA-URI*|
+Microsoft 自動|× |× |× |× |いいえ|○ (OMA-URI)|○|
+IKEv2|iOS カスタム プロファイル|× |× |× |いいえ|○ (OMA-URI)|○|
+PPTP|iOS カスタム プロファイル|× |× |× |×|×|○|
+L2TP|iOS カスタム プロファイル|× |× |× |いいえ|○ (OMA-URI)|○|
 
+\* Windows 10 用に使用できるその他の設定を使用しない場合。
 
 > [!IMPORTANT] デバイスにデプロイされた VPN プロファイルを使用する前に、プロファイル用の該当する VPN アプリをインストールする必要があります。 「[Deploy apps in Microsoft Intune (Microsoft Intune でアプリを展開する)](deploy-apps-in-microsoft-intune.md)」の情報を参考にして、Intune を使って該当するアプリを展開してください。  
 
@@ -164,6 +159,7 @@ Windows 10 デバイス VPN の使用を特定のアプリのみに制限する�
 [Per-app VPN for Android Pulse Secure](per-app-vpn-for-android-pulse-secure.md) (Android Pulse Secure 用のアプリごとの VPN)
 
 
-<!--HONumber=May16_HO5-->
+
+<!--HONumber=Jul16_HO1-->
 
 

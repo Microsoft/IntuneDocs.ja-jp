@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: デバイスに必要な証明書がない | Microsoft Intune
-description:
-keywords:
+title: "デバイスに必要な証明書がない | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9081b1d8-50e8-4bc2-ba37-766421364213
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: 6e887d226228d073dc136b50ba9320ada996a6cd
+
 
 ---
 
@@ -51,6 +44,7 @@ Android デバイスが Intune に登録されておらず、電話に通常イ�
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

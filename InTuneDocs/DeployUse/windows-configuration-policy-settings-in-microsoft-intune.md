@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows ポリシー設定 | Microsoft Intune
-description:
-keywords:
+title: "Windows ポリシー設定 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a280fcbecf82e6ff27e40d2d53331b3988953ff7
+ms.openlocfilehash: aa62528e588b0579669ab8d115766efd72e6f9b2
+
 
 ---
 
@@ -125,6 +119,7 @@ Microsoft Intune の **Windows 全般構成ポリシー (Windows 8.1 以降)** �
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

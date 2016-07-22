@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: アプリを更新する | Microsoft Intune
-description:
-keywords:
+title: "アプリを更新する | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 0581d1476fba5bedcdd4446df20f8f92b151f41b
+ms.openlocfilehash: 9e5b8f4a467e8e58cc2f8fa495b5f008eee7e35b
+
 
 ---
 
@@ -34,25 +27,28 @@ Microsoft Intune は、アプリの更新プログラムを管理するのに役
 > [!IMPORTANT]
 > [ **必須のインストール** ] の展開アクションでアプリを展開し、その後、展開アクションを [ **利用可能なインストール**] に変更した場合、アプリの更新プログラムは、展開を変更する前にアプリをインストールしたデバイスに自動的にインストールされません。 この問題を解決するには、次のことを行います。
 > 
-> -   デバイスのユーザーに対して、ポータル サイトに移動し、インストールされているアプリを選択し、[ **インストール**] をクリックするように指示します。
+> -   デバイスのユーザーに対して、ポータル サイトに移動し、インストールされているアプリを選択し、[ **インストール**] を選択するように指示します。
 > -   展開アクションを [ **アンインストール**] に変更します。アプリがアンインストールされた後で、[ **利用可能なインストール**] の展開アクションでアプリを再展開します。
 
 ### アプリを更新するには
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[アプリ]** &gt; **[アプリ]** の順にクリックします。
+1.  [Microsoft Intune 管理者コンソール](https://manage.microsoft.com)で、**[アプリ]** &gt; **[アプリ]** を選択します。
 
-2.  [ **アプリ** ] ボックスの一覧で、更新するアプリを選択し、[ **編集**] をクリックします。
+2.  [**アプリ**] ボックスの一覧で、更新するアプリを選択し、[**編集**] を選択します。
 
 3.  **ソフトウェアの編集** ウィザードで、新しいアプリ パッケージの詳細を指定します。
 
-4.  終了したら、 **[更新]**をクリックします。
+4.  終了したら、[**更新**] を選択します。
 
 次回デバイスが利用可能なアプリを確認するときに、アプリが自動的に最新バージョンに更新されます。
+アプリをアプリ パッケージ (基幹業務アプリ) からインストールした場合、アプリに同じ ID が与えられている限り、必須の展開と利用可能な展開の両方に対してアプリが自動的にアップグレードされます。
+アプリがストア リンクとして展開されている場合、アプリの取得元であるストアにより更新が管理されます。
 
 
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

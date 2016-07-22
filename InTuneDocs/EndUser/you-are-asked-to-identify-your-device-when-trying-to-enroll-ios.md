@@ -1,27 +1,22 @@
 ---
-# required metadata
-
-title: 登録時にデバイスの識別を求められる | Microsoft Intune
-description:
-keywords:
+title: "登録時にデバイスの識別を求められる | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 05/06/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8e40f228-cf04-4077-845f-300fbc3baee6
-
-# optional metadata
-
-ROBOTS:
-#audience:
-#ms.devlang:
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: e5ea21d877c2828545436b211d4e62adc4de402c
+
 
 ---
 
@@ -39,6 +34,7 @@ Intune に iOS デバイスまたは Mac OS X デバイスを登録している�
 ### 関連項目
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

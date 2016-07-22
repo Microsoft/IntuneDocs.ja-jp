@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: Intune に Windows デバイスを登録する | Microsoft Intune
-description:
-keywords:
+title: "Intune に Windows デバイスを登録する | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d217ddcf-4908-4047-97a1-716bd433a13c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 98ba0968653ceaf13ab5422468040f8e2ce50422
+ms.openlocfilehash: e343905f7359e310bc5b171feb3311adf8b4012f
+
 
 ---
 
 
 # Intune に Windows デバイスを登録する
 
-職場または学校が Microsoft Intune を使用している場合は、お使いの Windows デバイスを登録して、会社の電子メール、ファイル、またその他のリソースにアクセスできます。 デバイスを登録すると、組織は企業データをセキュリティで保護することができます。 登録の詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)」 および「[What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)」 (IT 管理者がお客様のデバイスに関して確認できる情報と確認できない情報) をご覧ください。.
+職場または学校が Microsoft Intune を使用している場合は、お使いの Windows デバイスを登録して、会社の電子メール、ファイル、またその他のリソースにアクセスできます。 デバイスを登録すると、組織は企業データをセキュリティで保護することができます。 登録の詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)」と「[What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)」 (IT 管理者がお客様のデバイスに関して確認できる情報と確認できない情報) を参照してください。
 
 登録するには、使用しているデバイスに対応するリンクを使用します。
 
@@ -44,6 +38,7 @@ ms.suite: ems
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

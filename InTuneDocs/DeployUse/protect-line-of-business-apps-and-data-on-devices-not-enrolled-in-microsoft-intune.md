@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: 登録されていないデバイスの基幹業務アプリとデータを保護する | Microsoft Intune
-description:
-keywords:
+title: "登録されていないデバイスの基幹業務アプリとデータを保護する | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
-ms.service:
-ms.technology:
+ms.prod: 
+ms.service: 
+ms.technology: 
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 5e8b2a3f830016bbcd1965898dcf7b5d9a0597b5
+
 
 ---
 
@@ -29,7 +22,7 @@ ms.suite: ems
 
 モバイル アプリ管理 (MAM) ポリシーでは、コピーや貼り付けなどのデータの移動を制限したり、ユーザーが個人用の場所に会社のドキュメントを保存したりすることを防いで、会社のデータの保護を支援します。   MAM ポリシーを iOS または Android の基幹業務アプリに適用するには、最初に Microsoft Intune アプリ ラッピング ツールを使用してアプリをラップする必要があります。  アプリ ラッピングは、モバイル アプリに、基になるアプリケーションは何も変更せずに、管理レイヤーを適用するプロセスです。  アプリをラップしたら、MAM ポリシーを適用し、それをエンドユーザーに配布できます。  
 
-このトピックでは、**従業員が所有している管理外のデバイス**からアクセスするアプリと、**サード パーティ製のモバイル デバイス管理 (MDM) ソリューション**で管理されているデバイスに MAM ポリシーを適用する手順を説明します。  **Intune に登録されているデバイス**で実行されている基幹業務アプリを準備するには、「[Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)」を参照してください。
+このトピックでは、**従業員が所有している管理外のデバイス**からアクセスするアプリと、**サード パーティ製のモバイル デバイス管理 (MDM) ソリューション**で管理されているデバイスに MAM ポリシーを適用する手順を説明します。  **Intune に登録されているデバイス**で実行されている基幹業務アプリを準備するには、「[Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)」をご覧ください。
 ##  手順 1: アプリを準備する
 MAM ポリシーをアプリに適用する前に、まず Microsoft Intune アプリ ラッピング ツールを使用してアプリをラップする必要があります。  アプリ ラッピング ツールをインストールして使用する手順は、ダウンロードに含まれています。  
 >[!IMPORTANT]  
@@ -64,7 +57,7 @@ MAM ポリシーと基幹業務アプリを関連付けるには、次の手順�
 * デバイスが MDM ソリューションで管理されていない場合には、カスタム ソリューションが必要です。 エンドユーザーは、自分のデバイスにアプリをダウンロードしてインストールする必要があります。
 
 ## メタデータを変更する
-アプリ名、バンドル ID などのアプリの詳細を変更する必要がある場合、[アプリを削除し](#remove-apps)、それに新しいメタデータを[追加](#add-the-app)します。
+アプリ名、バンドル ID などのアプリの詳細を変更する必要がある場合、[アプリを削除し](#remove-apps)、それに新しいメタデータを[追加](#step-2-add-the-app)する必要があります。
 
 ##  アプリを削除する
 アプリの一覧から基幹業務アプリを削除できます。  これを行うと、アプリは一覧から削除され、MAM ポリシーとの関連付けが削除されますが、エンドユーザーのデバイスからアプリが削除されたり、アンインストールされたりすることはありません。  
@@ -80,6 +73,7 @@ MAM ポリシーと基幹業務アプリを関連付けるには、次の手順�
   これによって、基幹業務アプリの一覧と MAM ポリシーの対象アプリ一覧からアプリは削除されます。
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO2-->
 
 

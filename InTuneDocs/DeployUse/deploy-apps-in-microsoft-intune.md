@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: アプリを展開する | Microsoft Intune
-description:
-keywords:
+title: "アプリを展開する | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c95a776e79cf3e1c7009d6e27f8f50482434d298
+ms.openlocfilehash: 46562ed3463c4a23a511eb5c7f28a0b11e84f421
+
 ---
 # Deploy apps in Microsoft Intune (Microsoft Intune でアプリを展開する)
 
@@ -69,6 +63,7 @@ ms.suite: ems
 アプリケーションを展開した後、その進行状況を監視できます。 詳細については、「[Monitor apps in Microsoft Intune](monitor-apps-in-microsoft-intune.md)」 (Microsoft Intune でアプリを監視する) を参照してください。
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: iOS ユーザーがアプリを入手する方法 | Microsoft Intune
-description:
-keywords:
+title: "iOS ユーザーがアプリを入手する方法 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: f36bc73d3397fef5bebe6896d91bcffcd5507cfc
+
 
 ---
 
@@ -42,6 +36,7 @@ Microsoft Intune を通して配布したアプリをエンド ユーザーが�
 [Android ユーザーがアプリを入手する方法](how-your-android-users-get-their-apps.md)</br>
 [Windows ユーザーがアプリを入手する方法](how-your-windows-users-get-their-apps.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

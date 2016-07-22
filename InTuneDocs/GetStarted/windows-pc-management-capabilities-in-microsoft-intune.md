@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows PC 管理機能 | Microsoft Intune
-description:
-keywords:
+title: "Windows PC 管理機能 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 665e4a1aa7ee22db91b47660a179384f7c3e4393
+ms.openlocfilehash: 9e7a2f5cb2afdeca737c0c8b1b91418352ad5539
+
 
 ---
 
@@ -34,11 +28,13 @@ ms.suite: ems
 
 -   **マルウェア対策。**Intune には、マルウェアから PC を保護するのに役立つ Endpoint Protection が含まれています。
 
--   **リモート アシスタンス。**ユーザーは Intune を使用して、IT サポート スタッフに連絡できます。IT サポート スタッフは、Intune に含まれているリモート デスクトップ機能を使用してサポートを提供できます (TeamViewer ソフトウェアが必要)。
+-   **リモート アシスタンス。**ユーザーは Intune を使用して、IT サポート スタッフに連絡できます。IT サポート スタッフは、Intune に含まれているリモート デスクトップ機能を使用してサポートを提供できます<!--- (requires TeamViewer software)--->。
 
 -   **ソフトウェア ライセンス管理。**使用可能なソフトウェア ライセンスの数と、そのうちの使用中のライセンスの数を追跡します。
 -   **アプリの展開。**管理対象の PC にソフトウェアを展開します。 クライアント ソフトウェアを使用して PC を管理するときは、一部のアプリ管理機能が利用できません。
 
+
+Intune は、最大 7,000 台の Windows デバイスへの PC クライアント ソフトウェアのインストールをサポートしています。
 
 ## オペレーティング システムの要件
 Intune では、次の Windows バージョンを実行する PC を管理できます (x86 と x64 のいずれも可)。
@@ -77,6 +73,7 @@ Intune では、次の Windows バージョンを実行する PC を管理でき
 [Microsoft Intune のモバイル デバイス管理機能](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

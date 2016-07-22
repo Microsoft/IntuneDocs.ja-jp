@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: プロジェクト スコープ | Microsoft Intune
-description:
-keywords:
+title: "プロジェクト スコープ | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71488dad-2f78-478c-a505-5cb9410eec07
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9218b1f58032c07eddf84f04a667e2c56b5463ed
+ms.openlocfilehash: cf9b8bf9a07e4d5a29637fe52a0bfb6e0191478e
+
 
 ---
 
@@ -63,6 +57,14 @@ ms.suite: ems
 ### 計画
 
 スコープ フェーズでは、計画と準備に大半の労力が費やされます。 プロジェクトのスコープを定義するとき、技術的な問題と組織的な問題の両方、ユーザーの現在の働き方、行動に要求される変化を考慮します。 最初に最終目標としての "全体像" を想定し、次に後続のフェーズで進める細分化された目標を定義します。
+
+
+ > [!NOTE]
+ > 
+ > プロジェクト スコープでの作業時に、次のテンプレートが役立つ場合があります。
+ > > - [Intune または Configuration Manager を使用した Intune の意思決定に関するテンプレート](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
+ > - [モバイル アプリ向けの計画に関するテンプレート](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
+>- [一般的なデバイス管理の計画に関するテンプレート](https://gallery.technet.microsoft.com/General-device-management-334c3792)
 
 ### ヘルプ デスク
 ナレッジ ワーカーが Intune を効果的に利用できるように、ヘルプ デスクを用意します。 プロジェクトのスコープを定義するとき、各フェーズにおけるヘルプ デスクの役割と必要なリソースを考慮し、ヘルプ デスクがエンド ユーザーを支援できる体制を作ります。
@@ -110,6 +112,7 @@ ms.suite: ems
 [概念実証](proof-of-concept.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

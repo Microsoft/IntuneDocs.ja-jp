@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune を使用して Windows PC クライアントをインストールする | Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune を使用して Windows PC クライアントをインストールする | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1bdcfa71aab0918fba1f59bd0782fc63eef6994e
+ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
+
 
 ---
 
@@ -46,11 +40,11 @@ Intune クライアント ソフトウェアのインストールを開始する
 
 -   [イメージの一部として Microsoft Intune クライアント ソフトウェアをインストールする](#install-the-microsoft-intune-client-software-as-part-of-an-image)
 
-Intune でコンピューターを管理する必要がなくなった場合、コンピューターをインベントリから削除することができます。インベントリから削除すると、そのコンピューターからクライアント ソフトウェアも削除されます。 詳細については、「[Microsoft Intune コンピューター クライアントを使用した一般的な Windows PC 管理タスク](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)」を参照してください。.
+Intune でコンピューターを管理する必要がなくなった場合、コンピューターをインベントリから削除することができます。インベントリから削除すると、そのコンピューターからクライアント ソフトウェアも削除されます。 詳細については、「[Microsoft Intune コンピューター クライアントを使用した一般的な Windows PC 管理タスク](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)」を参照してください。
 
 ### クライアント ソフトウェアをダウンロードするには
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[管理者]** &gt; **[クライアント ソフトウェアのダウンロード]** をクリックします。
+1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[管理]** &gt; **[クライアント ソフトウェアのダウンロード]** をクリックします。
 
   ![Intune PC クライアントのダウンロード](./media/pc-SA-client-download.png)
 
@@ -102,13 +96,13 @@ Intune でコンピューターを管理する必要がなくなった場合、�
 
 1.  登録したいコンピューターからポータル サイトにログオンします。
 
-2.  **[デバイスの追加]** をクリックします。.
+2.   **[デバイスの追加]**をクリックします。
 
-3.  **[ソフトウェアのダウンロード]** をクリックして **[実行]**をクリックします。.
+3.   **[ソフトウェアのダウンロード]** をクリックして **[実行]**をクリックします。
 
 4.  **[次へ]** をクリックして、Microsoft Intune のセットアップ ウィザードを起動します。
 
-5.  セットアップ ウィザードが完了したら、**[完了]** をクリックします。.
+5.  セットアップ ウィザードが完了したら、 **[完了]**をクリックします。
 
 ### イメージの一部として Microsoft Intune クライアント ソフトウェアをインストールする
 Intune クライアント ソフトウェアは、次の手順例を基にして、オペレーティング システム イメージの一部としてコンピューターに展開できます。
@@ -145,7 +139,7 @@ Intune クライアント ソフトウェアは、次の手順例を基にして
 
 ### Microsoft Intune 管理コンソールでクライアント ソフトウェアのインストールを確認するには
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[グループ]** &gt; **[すべてのデバイス]** &gt; **[すべてのコンピューター]** をクリックします。.
+1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[グループ]** &gt; **[すべてのデバイス]** &gt; **[すべてのコンピューター]** をクリックします。
 
 2.  コンピューターの一覧を下にスクロールして、Intune と通信している管理対象コンピューターを見つけます。または、特定の管理対象コンピューターを検索する場合は、 **[デバイスの検索]** ボックスに、そのコンピューターの名前か名前の一部を入力します。
 
@@ -153,9 +147,9 @@ Intune クライアント ソフトウェアは、次の手順例を基にして
 
 ### 登録されているすべてのコンピューターを表示する、コンピューターのインベントリ レポートを作成するには
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[レポート]** &gt; **[コンピューター インベントリ レポート]** をクリックします。.
+1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[レポート]** &gt; **[コンピューター インベントリ レポート]** をクリックします。
 
-2.  **[新しいレポートの作成]** ページで、(フィルターを適用しない場合は) すべてのフィールドを既定値のままにして、**[レポートの表示]** をクリックします。.
+2.   **[新しいレポートの作成]** ページで、(フィルターを適用しない場合は) すべてのフィールドを既定値のままにして、 **[レポートの表示]**をクリックします。
 
 3.  新しいウィンドウで **[コンピューター インベントリ レポート]** ページが開き、Intune に登録されているすべてのコンピューターが表示されます。
 
@@ -167,6 +161,7 @@ Intune クライアント ソフトウェアは、次の手順例を基にして
 [Microsoft Intune を使用して Windows PC を管理する](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

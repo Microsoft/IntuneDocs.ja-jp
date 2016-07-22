@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Intune からデバイスの登録を解除するとどうなるか | Microsoft Intune
-description:
-keywords:
+title: "Intune からデバイスの登録を解除するとどうなるか | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a
+ms.openlocfilehash: f0108b884439aac9661c9f36f85b47d80209d155
+
 
 ---
 
@@ -43,7 +37,8 @@ ms.suite: ems
 
 -   Intune Endpoint Protection ソフトウェアはコンピューターから削除されます。 コンピューターに別のウイルス対策ソフトウェアがインストールされており、無効になっている場合は、Intune Endpoint Protection を削除した後で、そのアプリケーションを再び有効にできます。 ポータル サイトから削除した後は、コンピューターを確認する必要があります。
 
-    > [!IMPORTANT] 他のウイルス対策ソフトウェアを再び有効にしない場合、または他のウイルス対策ソフトウェアがインストールされていない場合、コンピューターはウイルスおよびマルウェアに対して脆弱になる可能性があります。
+    > [!IMPORTANT]
+    > 他のウイルス対策ソフトウェアを再び有効にしない場合、または他のウイルス対策ソフトウェアがインストールされていない場合、コンピューターはウイルスおよびマルウェアに対して脆弱になる可能性があります。
 
 -   追加時にデバイスで変更した設定がある場合 (カメラを無効にするなど)、その設定は適用されなくなります。
 
@@ -97,6 +92,7 @@ Windows RT デバイスを削除すると、次のような結果になります
 ### 関連項目
 [Windows デバイスを Intune で使用する](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Intune からデバイスの登録を解除する | Microsoft Intune
-description:
-keywords:
+title: "Intune からデバイスの登録を解除する | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: db9755013320f11bd58fa94275274ad6ba2b5e9a
+
 
 ---
 
@@ -51,6 +45,7 @@ Intune からデバイスの登録を解除し、会社のポータル アプリ
 ### 関連項目
 [Android デバイスを Intune で使用する](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

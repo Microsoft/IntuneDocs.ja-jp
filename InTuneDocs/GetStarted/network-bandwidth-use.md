@@ -1,33 +1,27 @@
 ---
-# required metadata
-
-title: Intune のネットワーク帯域幅の使用 | Microsoft Intune
-description:
-keywords:
+title: "Intune のネットワーク帯域幅の使用 | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: e104dc52a8a9bdda4b2edb2939d8c7c36e8ecc12
+
 
 ---
 
 # Intune のネットワーク帯域幅の使用
 
-[!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] をセットアップする前に、このトピックと「[What to know before you start Microsoft Intune (Microsoft Intune を開始する前に理解しておくこと)](what-to-know-before-you-start-microsoft-intune.md)」に挙げられているその他の要件を確認してください。.
+[!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] をセットアップする前に、このトピックと「[What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)」 (Microsoft Intune を開始する前に理解しておくこと) に挙げられているその他の要件を確認してください。
 
 [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] クライアントのネットワーク トラフィックを計画するには、次のセクションの情報を参照してください。
 
@@ -83,15 +77,16 @@ BITS と Windows コンピューターの詳細については、TechNet ライ�
 
 -   [!INCLUDE[winblue_client_2](../includes/winblue_client_2_md.md)]
 
-BranchCache を使用するには、クライアント コンピューターで BranchCache を有効にして、**分散キャッシュモード**に構成する必要があります。.
+BranchCache を使用するには、クライアント コンピューターで BranchCache を有効にして、**分散キャッシュモード**に構成する必要があります。
 
 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] クライアントをインストールすると、既定で、コンピューターの BranchCache と分散キャッシュ モードは有効です。 ただし、クライアントに BranchCache を無効にするグループ ポリシーが既にある場合、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] はそのポリシーを優先し、そのコンピューターで BranchCache は無効なままになります。
 
-BranchCache を使用する場合、グループ ポリシーと [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] ファイアウォール ポリシーを管理する組織内の他の管理者にも伝えて、BranchCache を無効にするポリシーやファイアウォールの例外を展開しないようにします。 BranchCache の詳細については、「[BranchCache の概要](http://technet.microsoft.com/library/hh831696.aspx)」を参照してください。.
+BranchCache を使用する場合、グループ ポリシーと [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] ファイアウォール ポリシーを管理する組織内の他の管理者にも伝えて、BranchCache を無効にするポリシーやファイアウォールの例外を展開しないようにします。 BranchCache の詳細については、「[BranchCache の概要](http://technet.microsoft.com/library/hh831696.aspx)」を参照してください。
 
 ### 関連項目
-[What to know before you start Microsoft Intune (Microsoft Intune を開始する前に理解しておくこと)](what-to-know-before-you-start-microsoft-intune.md)
+[Microsoft Intune を使い始める前に](what-to-know-before-you-start-microsoft-intune.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

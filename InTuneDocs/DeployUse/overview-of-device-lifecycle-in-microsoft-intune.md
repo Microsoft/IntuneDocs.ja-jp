@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: デバイスのライフ サイクルの概要 | Microsoft Intune
-description:
-keywords:
+title: "MDM のライフサイクルの概要 | Microsoft Intune"
+description: "登録、構成から始まり最終的に使用中止となるデバイスのライフサイクル管理において Intune がどのように役立つか紹介します。"
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 5140c4943be630ea8e48f80f7e6b590d223beac1
+ms.openlocfilehash: 751025aa71ef41564100ea57ac0d1fe60619e214
+
 
 ---
 
 # モバイル デバイス管理 (MDM) ライフサイクルの概要
 
-Intune のデバイスのライフ サイクルは、最初に行われるデバイスの登録に始まり、その後いくつかのステップを遷移し、やがてデバイスが不要になると終了します。
+管理するすべてのデバイスに*ライフサイクル*と呼んでいるものがあります。 Intune は、登録から始まり、不要になったデバイスを最後に使用中止とするまで、ライフサイクルの管理に役立ちます。
 
 ![デバイスのライフサイクル](./media/device-lifecycle.png "the Intune device lifecycle")
 
@@ -51,6 +44,7 @@ Intune のデバイスのライフ サイクルは、最初に行われるデバ
 デバイスを紛失したか盗まれたとき、デバイスの交換が必要なとき、またはユーザーが別の職場に移動になったとき、通常はデバイスを[インベントリから削除またはワイプ](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)します。 それを行うには、デバイスをリセットする、デバイスを管理から削除する、またはデバイス上の企業データをワイプするなど、さまざまな方法があります。
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

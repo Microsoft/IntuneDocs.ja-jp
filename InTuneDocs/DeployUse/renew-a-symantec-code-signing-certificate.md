@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Microsoft Intune で使用する Symantec エンタープライズ コード署名証明書を更新する |Microsoft Intune
-description:
-keywords:
+title: "Microsoft Intune で使用する Symantec エンタープライズ コード署名証明書を更新する |Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c4813044-a925-4273-b0ec-e992fd55850a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 566a226c19825990c6a34bffbbd9d1cd6a242ddb
+
 
 ---
 
@@ -41,9 +35,9 @@ ms.suite: ems
 
 ## Windows Phone 8.0 の更新された証明書をインストールする方法
 
-1.  最新の Windows Phone ポータル サイト ([http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)) をダウンロードして署名します。.
+1.  最新の Windows Phone ポータル サイト ( [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)) をダウンロードして署名します。
 
-2.  Intune 管理コンソール ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)) を開き、**[管理者]** > **[モバイル デバイス管理]** &gt; **[Windows Phone]** の順に進み、**[署名済みアプリのアップロード]** をクリックします。.
+2.  Intune 管理コンソール ([https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)) を開き、**[管理者]**、**[モバイル デバイス管理]** &gt; **[Windows Phone]** の順に進み、**[署名済みアプリのアップロード]** をクリックします。
 
 3.  新しく署名したポータル サイトをアップロードします。 新しく署名した SSP.xap と、Symantec から送信された新しい .PFX ファイルまたはこの新しい .PFX ファイルを使用して作成されたアプリケーション登録トークンが必要になります。
 
@@ -55,9 +49,9 @@ ms.suite: ems
 
 ## Windows Phone 8.1 以降のデバイスの更新された証明書をインストールする方法
 
-1.  ダウンロード センター ([http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)) から最新の Windows Phone ポータル サイトをダウンロードして署名します。.
+1.  ダウンロード センター ( [http://www.microsoft.com/en-us/download/details.aspx?id=36060](http://www.microsoft.com/en-us/download/details.aspx?id=36060)) から最新の Windows Phone ポータル サイトをダウンロードして署名します。
 
-2.  [Intune 管理コンソール](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com) を開き、**[管理者]** &gt; **[モバイル デバイス管理]** &gt; **[Windows Phone]** の順に進み、**[署名済みアプリのアップロード]** をクリックします。.
+2.  [Intune 管理コンソール](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com) を開き、**[管理者]** &gt; **[モバイル デバイス管理]** &gt; **[Windows Phone]** の順に進み、**[署名済みアプリのアップロード]** をクリックします。
 
 3.  新しく署名したポータル サイトをアップロードします。 新しく署名した SSP.xap と、Symantec から送信された新しい .PFX ファイルまたはこの新しい .PFX ファイルを使用して作成されたアプリケーション登録トークンが必要になります。
 
@@ -67,10 +61,11 @@ ms.suite: ems
 
 
 ### 関連項目
-[Windows Phone 8.0 の管理をセットアップする](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
+[Windows Phone 8.0 のデバイス管理のセットアップ](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
 [Windows Phone の管理をセットアップする](set-up-windows-phone-management-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

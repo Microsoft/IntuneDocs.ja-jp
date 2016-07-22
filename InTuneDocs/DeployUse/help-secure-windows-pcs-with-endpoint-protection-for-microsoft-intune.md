@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Endpoint Protection による Windows PC の保護 | Microsoft Intune
-description:
-keywords:
+title: "Endpoint Protection による Windows PC の保護 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: muhosabe
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9b96e6c49ec9122961588156d77bf94cdbccd787
+ms.openlocfilehash: b1b1cc90672903ac0336151373272b5e20e56165
+
 
 ---
 
@@ -52,7 +46,8 @@ IT 管理者として最も優先度が高い事項の 1 つは、管理する�
 
     -   サード パーティ製エンドポイント保護アプリケーションを手動で削除します。
 
-> [!NOTE]Intune は、サード パーティ製エンドポイント保護アプリケーションを自動的にアンインストールしません。
+> [!NOTE]
+> Intune は、サード パーティ製エンドポイント保護アプリケーションを自動的にアンインストールしません。
 
 ## Microsoft Intune Endpoint Protection を構成する方法
 Microsoft Intune の Endpoint Protection を構成するには、次の手順に従います。
@@ -162,7 +157,8 @@ Microsoft Active Protection Service は、潜在的な脅威の対処方法に�
   - **プロパティの表示** - 選択したマルウェアの詳細情報ページが開きます。
   - **このマルウェアの詳細** - Microsoft マルウェア プロテクション センターに掲載されているマルウェアの詳細情報のトピックが開きます。
 
-> [!IMPORTANT]クライアントをインストールして少なくとも 1 つのコンピューター クライアントを管理するまで、**[保護]** ワークスペースは、管理コンソールに表示されません。
+> [!IMPORTANT]
+> クライアントをインストールして少なくとも 1 つのコンピューター クライアントを管理するまで、**[保護]** ワークスペースは、管理コンソールに表示されません。
 
   ![エンドポイント保護の監視](./media/pol-sa-ep-monitor.png)
 
@@ -181,7 +177,7 @@ Intune では、Intune クライアントがインストールされているリ
 1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[グループ]** > **[概要]** > **[すべてのデバイス]** > **[すべてのコンピューター]** に移動し、対象のコンピューターを選択します。
 
 2. **[リモート タスク]** ドロップダウン リストをクリックし、タスクを選択します。 リモート コンピューターで実行するタスク。
-![リモート マルウェア スキャンを実行する](../media/ep_sa_malwarescan.png)
+
 
 
 
@@ -192,6 +188,7 @@ Intune では、Intune クライアントがインストールされているリ
 [Windows PC を保護するためのポリシー](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+
+<!--HONumber=Jun16_HO5-->
 
 

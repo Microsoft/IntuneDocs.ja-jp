@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 一般的な Windows PC 管理タスク | Microsoft Intune
-description:
-keywords:
+title: "一般的な Windows PC 管理タスク | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 530bf3234001946776593ae0257ea72a06c8612f
+ms.openlocfilehash: 222b9aac19993f184ff68800a00f8d9df8b36237
+
 
 ---
 
@@ -42,7 +36,7 @@ Microsoft Intune Center を使用してユーザーは次の操作を実行で�
 
 -   Microsoft Intune Endpoint Protection を管理する。
 
--   リモート アシスタンスを要求する。
+<!--- -   Request remote assistance.--->
 
 Microsoft Intune Center は、管理されているすべてコンピューターにインストールされます。 Intune ポリシーで次の設定を構成でき、各設定は Microsoft Intune Center でユーザーに表示されます。
 
@@ -139,7 +133,8 @@ Intune は、管理されたコンピューターのハードウェアおよび�
 
 -   コンピューターがどのように構成されているかによって異なりますが、Windows Server Update Services、Windows Update、または Microsoft Update を使用して、引き続き更新プログラムを受信できます。
 
-    > [!IMPORTANT] クライアント ソフトウェアがグループ ポリシー オブジェクト (GPO) を使用してインストールされている場合、ソフトウェアが再インストールされることを防ぐため、クライアント ソフトウェアを削除する前に、グループ ポリシー オブジェクト (GPO) を削除する必要があります。
+    > [!IMPORTANT]
+    > クライアント ソフトウェアがグループ ポリシー オブジェクト (GPO) を使用してインストールされている場合、ソフトウェアが再インストールされることを防ぐため、クライアント ソフトウェアを削除する前に、グループ ポリシー オブジェクト (GPO) を削除する必要があります。
 
     クライアントのアンインストールに失敗する場合は、「[Endpoint Protection に関するトラブルシューティング](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune)」で詳細を確認してください。
 
@@ -162,61 +157,63 @@ Intune は、管理されたコンピューターのハードウェアおよび�
 
     -   コンピューターを新しいユーザーに関連付けるには、 **[すべてのユーザー]** の一覧からユーザーを選択します。 選択したユーザーのデータが正しいことを確認して、**[OK]** を選択します。
 
-> [!TIP] エンド ユーザーが各自のコンピューターに関連付けをするのを抑制する場合は、**Microsoft Intune エージェントの設定**ポリシーの **[ユーザーによる各自のコンピューターへの関連付けを制限する]** オプションを有効にします。
+> [!TIP]
+> エンド ユーザーが各自のコンピューターに関連付けをするのを抑制する場合は、**Microsoft Intune エージェントの設定**ポリシーの **[ユーザーによる各自のコンピューターへの関連付けを制限する]** オプションを有効にします。
 
-## Intune クライアント ソフトウェアを使用する Windows PC のリモート アシスタンスの要求と提供
+<!--- ## Request and provide remote assistance to Windows PCs that use the Intune client software
 
 > [!IMPORTANT]
-> Intune 管理コンソールで、リモート アシスタンスのために TeamViewer 統合を構成するためのオプションが表示されないことがあります。 この機能は現在のところ、一部のお客様のみがご利用いただけますが、間もなく、範囲が拡大する予定です。
+> You might not see the options to configure TeamViewer integration for remote assistance in the Intune admin console. This capability is not currently available to all customers, but will be rolling our more widely soon.
      
 
-Microsoft Intune では [TeamViewer](https://www.teamviewer.com) ソフトウェアを利用し、Intune クライアント ソフトウェアを実行する PC のユーザーがリモート アシスタンス ヘルプを受けられるようにします。 ユーザーが Microsoft Intune Center のヘルプを要求すると、通知が届きます。要求を承諾し、アシスタンスを提供できます。
-この機能は Intune の既存の Windows リモート アシスタンス機能に換わるものです。
+Microsoft Intune can use the [TeamViewer](https://www.teamviewer.com) software to let users of PCs that run the Intune client software get remote assistance help from you. When a user requests help from the Microsoft Intune Center, you are informed by an alert, can accept the request, and then provide assistance.
+This functionality replaces the existing Windows Remote Assistance functionality in Intune.
 
 
-### 開始する前に
+### Before you start
 
-リモート アシスタンス要求の確立または応答を開始するには、次の前提条件が満たされていることを確認する必要があります。
+Before you can begin to establish and respond to remote assistance requests, you must ensure the following prerequisites are in place:
 
-- TeamViewer Web サイトにログインするために、[TeamViewer アカウントにサインアップ](https://login.teamviewer.com/LogOn#register)している必要があります。
-- 管理する Windows PC を [Windows PC クライアントで管理](manage-windows-pcs-with-microsoft-intune.md)する必要があります。
-- Intune でサポートされているすべての Windows PC オペレーティング システムを管理できます。
+- You must have [signed up for a TeamViewer account](https://login.teamviewer.com/LogOn#register) to log into the TeamViewer website.
+- Windows PCs that you want to administer must be [managed by the Windows PC client](manage-windows-pcs-with-microsoft-intune.md)
+- All Windows PC operating systems supported by Intune can be administered.
 
-### TeamViewer Connector を構成する
+### Configure the TeamViewer Connector
 
-1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[管理者]** を選択します。
-2. **[管理者]** ワークスペースで、**[TeamViewer]** を選択します。
-3. **[TeamViewer]** ページの **[TeamViewer Connector]** で、**[有効化]** を選択します。
-4. **[TeamViewer の有効化]** ダイアログ ボックスで、ライセンス条項を **[承諾]** します。 TeamViewer ライセンスをまだ所有していない場合、**[TeamViewer ライセンスの購入]** を選択します。
-5. TeamViewer ブラウザー ウィンドウが開いたら、TeamViewer 資格情報でサイトにサインインします。
-6. TeamViewer サイトで、Intune で TeamViewer に接続するためのオプションを読み、承諾します。
-7. Intune コンソールで、**[TeamViewer Connector]** アイテムに **[有効]** が表示されていることを確認します。
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com), choose **Admin**.
+2. In the **Admin** workspace, choose **TeamViewer**.
+3. On the **TeamViewer** page, under **TeamViewer Connector**, choose **Enable**.
+4. In the **Enable TeamViewer** dialog box, view, then **Accept** the license terms. If you don't already own a TeamViewer license, choose **Purchase a TeamViewer license**.
+5. After the TeamViewer browser window opens, sign into the site with your TeamViewer credentials.
+6. On the TeamViewer site, read, then accept the options to allow Intune to connect with TeamViewer.
+7. In the Intune console, verify that the **TeamViewer Connector** item shows as **Enabled**.
 
 
-### リモート アシスタンス要求を登録する (エンド ユーザー)
+### Open a remote assistance request (end user)
 
-1. クライアント Windows PC で、**[Microsoft Intune Center]** を開きます。
-2. **[リモート アシスタンス]** で、**[リモート アシスタンスの要求]** を選択します。
-3. 要求を承認すると (下図参照)、クライアントで TeamViewer が開きます。 Web ブラウザーが TeamViewer アプリケーションを開こうとしているというメッセージが表示されたら、ユーザーはそれを承諾する必要があります。
-4. ユーザーには、管理者がユーザーの PC を操作してよいのか尋ねるメッセージが表示されます。 続行するには、ユーザーはメッセージを承諾する必要があります。
-5. リモート アシスタンス セッション中、管理者が接続されていることを示すウィンドウがユーザーに表示されます。 ユーザーがこのウィンドウを閉じると、リモート セッションが終了します。
+1. On a client Windows PC, open the **Microsoft Intune Center**.
+2. Under **Remote Assistance**, choose **Request Remote Assistance**.
+3. After you approve the request (see below), TeamViewer opens on the client. The user must accept any messages indicating that the web browser is trying to open the TeamViewer application.
+4. The user sees a message asking if you can control their PC. They must accept this message to continue.
+5. During the remote assistance session, the user sees a window that shows them you are connected. If they close this window, the remote session ends.
 
-### リモート アシスタンス要求に応答する
+### Respond to a remote assistance request
 
-1. ユーザーがリモート アシスタンス要求を送信すると、**[アラート]** ワークスペースの **[管理]**  >  **[リモート アシスタンス]** に要求が表示されます。 たとえば、
-> ![リモート アシスタンス要求のスクリーンショット](./media/team-viewer.png)
+1. When a user submits a remote assistance request, you can view it in the **Alerts** workspace, under **Monitoring** > **Remote Assistance**. For example:
+> ![Screenshot of a remote assistance request](./media/team-viewer.png)
 
-<br>未応答のまま 4 時間以上経過すると、要求は削除されます。
-2. 要求を承諾するには、**[要求を承認してリモート アシスタンスを開始する]** を選択します。
-3. **[リモート アシスタンスの新しい要求が保留中]** ダイアログ ボックスで、**[リモート アシスタンスの要求を受け入れる]** を選択します。 まだインストールされていない場合、TeamViewer はコンピューターに必要なアプリをインストールします。
-4. TeamViewer は、管理者がエンド ユーザーの PC を操作することをエンド ユーザーに通知します。 ユーザーがこの要求を承諾すると、TeamViewer ウィンドウが開き、管理者は PC を操作できます。 
+<br>If a request goes unanswered for more than 4 hours, it is removed.
+2. To accept the request, choose **Approve request and launch Remote Assistance**.
+3. In the **A New Remote Assistance Request is Pending** dialog box, choose **Accept the remote assistance request**. If it's not already installed, TeamViewer will install any necessary apps on your computer.
+4. TeamViewer then notifies the end user that you want to take control of their PC. After the user has accepted the request, the TeamViewer windows opens, and you can control the PC. 
  
-リモート アシスタンス セッション中、リモート PC を操作するためのあらゆる TeamViewer コマンドを使用できます。 コマンドの詳細については、TeamViewer Web サイトから [[リモート コントロールのマニュアル]](http://www.teamviewer.com/en/support/documents/) をダウンロードしてください。
+While in a remote assistance session, you can use all available TeamViewer commands to control the remote PC. For help with these commands, download the [Manual for remote control](http://www.teamviewer.com/en/support/documents/) from the TeamViewer website.
 
-### リモート アシスタンス セッションを閉じる
+### Close the remote assistance session
 
-**[TeamViewer]** ウィンドウの **[アクション]** メニューから **[セッションの終了]** を選択します。
+From the **Actions** menu of the **TeamViewer** window, choose **End Session**.--->
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jul16_HO1-->
 
 

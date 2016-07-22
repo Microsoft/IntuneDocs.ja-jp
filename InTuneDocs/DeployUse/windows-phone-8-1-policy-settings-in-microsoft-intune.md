@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Windows Phone 8.1 ポリシー設定 | Microsoft Intune
-description:
-keywords:
+title: "Windows Phone 8.1 ポリシー設定 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: a280fcbecf82e6ff27e40d2d53331b3988953ff7
+ms.openlocfilehash: fe685da41bb5379526bdc28c2f9cceb6b7800703
+
 
 ---
 
@@ -127,7 +121,8 @@ Microsoft Intune の **Windows Phone 全般構成ポリシー (Windows Phone 8.1
 |**アプリをインポートする**|コンマ区切り値ファイルで指定したアプリの一覧をインポートします。 ファイルの形式、アプリケーション名、発行者、アプリの URL を使用します。|
 |**編集**|選択したアプリの名前、発行者、および URL を編集します。|
 |**削除**|選択したアプリを一覧から削除します。|
-> [!IMPORTANT] Windows Phone 8.1 デバイス向けに許可されているアプリの一覧を指定する場合、この一覧にポータル サイトのアプリを追加する必要があります。追加しない場合はブロックされます。
+> [!IMPORTANT]
+> Windows Phone 8.1 のデバイス向けに許可されているアプリの一覧を指定する場合、この一覧にポータル サイトのアプリを追加する必要があります。追加しない場合はブロックされます。
 
 
 ### 準拠アプリと非準拠アプリに関するリファレンス情報
@@ -174,6 +169,7 @@ Windows Phone デバイスの OMA-URI 設定の作成については、[Windows 
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

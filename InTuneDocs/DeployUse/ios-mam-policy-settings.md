@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: iOS MAM ポリシーの設定 | Microsoft Intune
-description:
-keywords:
+title: "iOS MAM ポリシーの設定 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: b3df4b35dbe2710157b88a4e7fdba9734f8b998b
+
 
 ---
 
@@ -83,7 +77,7 @@ ms.suite: ems
   この設定を有効にすると、エンド ユーザーは、自分のデバイスにアクセスするために PIN をセットアップして使用することが必要となります。  PIN がない場合、アプリは起動せず、"会社により、このアプリケーションにアクセスするには、最初にデバイス PIN を有効にする必要があります" というメッセージが表示され、エンド ユーザーは PIN の設定を求められます。
 
   **既定値 - 暗号化オプションは選択されていません。**
-- **ContactSyncDisabled:**  デバイス上のネイティブ アドレス帳アプリに連絡先情報が同期されないようにするには、**[はい]** を選択します。 **[いいえ]** を選択した場合、アプリは、デバイス上のネイティブ アドレス帳アプリに連絡先情報を保存します。
+- **連絡先の同期を無効にする:** デバイス上のネイティブ アドレス帳アプリに連絡先情報が同期されないようにするには、**[はい]** を選択します。 **[いいえ]** を選択した場合、アプリは、デバイス上のネイティブ アドレス帳アプリに連絡先情報を保存します。
 
   会社のデータを削除するために選択的ワイプを行うと、アプリからネイティブ アドレス帳に直接同期された連絡先が削除されます。 ネイティブ アドレス帳から別の外部ソースに同期された連絡先はワイプできません。 現在、これは **Microsoft Outlook** アプリにのみ適用されます。
 
@@ -117,6 +111,7 @@ iOS デバイスでは、数字による PIN の代わりに、iOS デバイス�
   **既定値 = 90 日間**
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Intune の評価ガイド | Microsoft Intune
-description:
-keywords:
+title: "Intune の評価ガイド | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 4af13629986e7cef814104f3d1f298eb2be240ac
+ms.openlocfilehash: 26ecc3dfe8816da9f30829901d929af53b1bedc0
+
 
 ---
 
@@ -30,16 +23,16 @@ ms.suite: ems
 
 このトピックでは、Intune の特長と機能を評価できるよう、Intune の評価版の稼働方法とサービスの概要の理解に関する基本的な内容を学習します。
 
-この 5 分間のデモ ビデオを視聴すると、Microsoft Intune の無料評価版の使用開始とデバイスの管理がきわめて簡単であることがわかります。
+次の 5 分間のデモ ビデオを視聴すると、Microsoft Intune の無料評価版の使用開始とデバイスの管理がきわめて簡単であることがわかります。 ビデオの最初の部分で "使用中止となった" ポータルについて説明します。別のポータルを使用することになりますが、手順は基本的に同じです。 ポータルに関する詳細は[ここ](https://docs.microsoft.com/intune/deploy-use/account-portal-merged-with-Office-365)で確認できます。
 
 <iframe width="675" height="480" src="https://www.youtube.com/embed/ltcZvm4VOFU" frameborder="0" allowfullscreen></iframe>
 
 ## 始める前に
 Intune の使用を開始する前に、以下のものが必要となります。
 
--   Silverlight 対応 Web ブラウザーを備えたデバイス。これは、Intune ユーザーのアカウントを作成するための Web サイト (**Office 365 管理センター**) や、デバイス、グループ、ポリシーの管理を行う Web サイト (**Intune 管理コンソール**) にアクセスする際に使用します。).
+-   Silverlight 対応 Web ブラウザーを備えたデバイス。これは、Intune ユーザーのアカウントを作成するための Web サイト (**Office 365 管理センター**) や、デバイス、グループ、ポリシーの管理を行う Web サイト (**Intune 管理コンソール**) にアクセスする際に使用します。
 
--   Web ブラウザーを備えた 2 台目のデバイス。こちらは、Intune ユーザーがポータル サイトをどのように使用してデバイスを登録および管理するかを確認するためのテストに使用します。 このほか、ユーザーがアプリを検索およびインストールするときの状況や、管理者に支援を依頼する局面を確認するためのテストにも使用します。 2 台目のデバイスがない場合は、Intune の管理に、使用する同じブラウザーの "プライバシー モード" 設定を使ってもかまいません (例: Internet Explorer の場合、**[ツール]**  &gt;  **[InPrivate ブラウズ]** をクリックします)。).
+-   Web ブラウザーを備えた 2 台目のデバイス。こちらは、Intune ユーザーがポータル サイトをどのように使用してデバイスを登録および管理するかを確認するためのテストに使用します。 このほか、ユーザーがアプリを検索およびインストールするときの状況や、管理者に支援を依頼する局面を確認するためのテストにも使用します。 2 台目のデバイスがない場合は、Intune の管理に、使用する同じブラウザーの "プライバシー モード" 設定を使ってもかまいません (例: Internet Explorer の場合、**[ツール]** &gt; **[InPrivate ブラウズ]** をクリックします)。
 
 -   既存の Microsoft Online Services アカウントがある場合、そのアカウントの管理者の資格情報が必要です。 そのようなアカウントが存在しない場合、またはこの Intune テナントを評価目的でのみ使用する場合、テナント管理者の資格情報は不要です。
 
@@ -47,9 +40,9 @@ Intune の使用を開始する前に、以下のものが必要となります�
 
     |プラットフォーム|証明書の要件|詳細情報|
     |------------|----------------------------|--------------------|
-    |Windows Phone 8.1 および Windows Phone 8 |ポータル サイト アプリをストアからインストールする Windows Phone 8.1 のユーザーについては証明書は不要です。 Windows Phone 8.0 の場合、または Intune を使用してポータル サイト アプリを Windows Phone 8.1 デバイスに展開する場合、Symantec の証明書が必要となります。|この要件は、管理下にあるユーザーが、ポータル サイト アプリを Windows Phone 8.1 以降のデバイスでストアから取得することを前提としています。 Windows Phone 8.0 のサポートについては、「[Microsoft Intune を使用して Windows Phone の管理をセットアップする](/Intune/DeployUse/set-up-windows-phone-management-with-microsoft-intune)」を参照してください。.|
-    |Windows 10、Windows RT 8.1、Windows RT、または Windows 8.1 デバイス|Windows RT デバイスまたは Windows デバイスを登録するうえでの証明書の要件はありません。|[Microsoft Intune を使用して Windows PC クライアントをインストールする](/Intune/DeployUse/install-the-windows-pc-client-with-microsoft-intune).|
-    |iOS 7.1 以降|Apple Push Notification サービス証明書を取得する。|「[Microsoft Intune を使用した iOS および Mac の管理のセットアップ](/Intune/DeployUse/set-up-ios-and-mac-management-with-microsoft-intune)」で説明しているように、Apple に Apple Push Notification サービス証明書を要求する必要があります。.|
+    |Windows Phone 8.1 および Windows Phone 8 |ポータル サイト アプリをストアからインストールする Windows Phone 8.1 のユーザーについては証明書は不要です。 Windows Phone 8.0 の場合、または Intune を使用してポータル サイト アプリを Windows Phone 8.1 デバイスに展開する場合、Symantec の証明書が必要となります。|この要件は、管理下にあるユーザーが、ポータル サイト アプリを Windows Phone 8.1 以降のデバイスでストアから取得することを前提としています。 Windows Phone 8.0 のサポートについては、「[Microsoft Intune を使用して Windows Phone の管理をセットアップする](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune)」を参照してください。|
+    |Windows 10、Windows RT 8.1、Windows RT、または Windows 8.1 デバイス|Windows RT デバイスまたは Windows デバイスを登録するうえでの証明書の要件はありません。|[Microsoft Intune を使用して Windows PC クライアントをインストールする](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune)。|
+    |iOS 7.1 以降|Apple Push Notification サービス証明書を取得する。|「[Microsoft Intune を使用した iOS および Mac の管理のセットアップ](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune)」で説明しているように、Apple に Apple Push Notification サービス証明書を要求する必要があります。|
 
 ## Intune の 30 日間評価版の完了手順
 - [手順 1: 30 日間評価版にサインインまたはサインアップします](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)。 Intune にサインアップまたはサインインする前に、既存のアカウントを使用してサインインするか、Microsoft Intune の 30 日間評価版にのみ使用する一時的なアカウントを作成するかを検討する必要があります。
@@ -71,6 +64,7 @@ Intune の使用を開始する前に、以下のものが必要となります�
 [Intune のクイック スタート ガイド](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

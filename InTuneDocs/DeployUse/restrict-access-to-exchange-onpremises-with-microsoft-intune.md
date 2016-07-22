@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Exchange On-premises と従来の Exchange Online Dedicated への電子メール アクセスを制限する | Microsoft Intune
-description:
-keywords:
+title: "Exchange On-premises と従来の Exchange Online Dedicated への電子メール アクセスを制限する | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
+ms.openlocfilehash: 6bc85a0291fa62069ba6a0f63fdd9306db3c4195
+
 
 ---
 
@@ -32,22 +26,22 @@ Exchange Online Dedicated 環境を使用していて、それが新しい構成
 
 
 Exchange On-premises または従来の Exchange Online Dedicated 環境への電子メール アクセスを制御するには、Intune で Exchange On-premises の条件付きアクセスを構成します。
-条件付きアクセスの動作の詳細については、[電子メールと O365 サービスへのアクセスの制限]( restrict-access-to-email-and-o365-services-with-microsoft-intune.md)に関する記事を参照してください。
+条件付きアクセスの動作の詳細については、[電子メールと O365 サービスへのアクセスの制限]( restrict-access-to-email-and-o365-services-with-microsoft-intune.md)に関する記事をご覧ください。
 
 条件付きアクセスを構成する**前に**、次のことを確認します。
 
 -   Exchange のバージョンは、**Exchange 2010 以降**である必要があります。 Exchange Server クライアント アクセス サーバー (CAS) アレイがサポートされています。
 
--   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] を Microsoft Exchange On-premises に接続するために、**On-Premises Exchange Connector** を使用する必要があります。 これにより、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] コンソールでデバイスを管理できます。 コネクタの詳細については、[Intune On-Premises Exchange Connector](intune-on-premises-exchange-connector.md) に関するページを参照してください。
+-   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] を Microsoft Exchange On-premises に接続するために、**On-Premises Exchange Connector** を使用する必要があります。 これにより、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] コンソールでデバイスを管理できます。 コネクタの詳細については、[Intune On-Premises Exchange Connector](intune-on-premises-exchange-connector.md) に関するページをご覧ください。
 
     -   Intune コンソールで利用可能な On-Premises Exchange Connector は、Intune テナントに固有であり、他のテナントでは使用できません。 また、テナントの Exchange Connector は **1 台のコンピューターにのみ**インストールされるようにしてください。
 
-        このコネクタは、Intune 管理コンソールからダウンロードする必要があります。  On-Premises Exchange Connector の構成方法に関するチュートリアルについては、[オンプレミスまたはホスト型 Exchange に対する On-Premises Exchange Connector の構成](intune-on-premises-exchange-connector.md)に関するページを参照してください。
+        このコネクタは、Intune 管理コンソールからダウンロードする必要があります。  On-Premises Exchange Connector の構成方法に関するチュートリアルについては、[オンプレミスまたはホスト型 Exchange に対する On-Premises Exchange Connector の構成](intune-on-premises-exchange-connector.md)に関するページをご覧ください。
 
     -   このコネクタは、Exchange サーバーと通信できる任意のコンピューターにインストールできます。
 
     -   このコネクタは、**Exchange CAS 環境**をサポートします。 必要であれば、このコネクタを Exchange CAS サーバーに直接インストールすることは技術的に可能ですが、サーバーの負荷が増加するため、お勧めしません。
-    コネクタを構成する際には、Exchange CAS サーバーのいずれかと通信するように設定する必要があります。
+    コネクタを構成するときには、Exchange CAS サーバーのいずれかと通信するように設定する必要があります。
 
 -   **Exchange ActiveSync** は、証明書ベースの認証またはユーザーの資格情報のエントリで構成する必要があります。
 
@@ -75,7 +69,8 @@ Exchange On-premises または従来の Exchange Online Dedicated 環境への�
 -   iOS のネイティブ電子メール アプリ。
 
 -   Android 4 以降のネイティブ電子メール アプリ
-> [!NOTE] Android と iOS の Microsoft Outlook アプリはサポートされていません。
+> [!NOTE]
+> Android と iOS の Microsoft Outlook アプリはサポートされていません。
 
 ## PC のサポート
 
@@ -104,9 +99,10 @@ Windows 8 以降用の**メール** アプリケーション ([!INCLUDE[wit_next
 >電子メールへのアクセスを許可する前にすべてのデバイスをブロックする場合は、アクセスのブロックまたは検疫ルールを選択します。 既定のルールはすべてのデバイスの種類に適用されるので、プラットフォームの例外として構成されているデバイスの種類や [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] でサポートされていないデバイスの種類も影響を受けます。
 
   - **[ユーザー通知]:** Exchange から送信される通知電子メールの他に、デバイスのブロック解除の手順が記載された電子メールが Intune によって送信されます。 この既定のメッセージは、ニーズに合わせてカスタマイズすることができます。 修復手順が記載されている Intune 通知電子メールはユーザーの Exchange 受信トレイに送信されるため、電子メール メッセージを受信する前にユーザーのデバイスがブロックされた場合は、ブロックされていないデバイスや、Exchange にアクセスするその他の方法を使用して、メッセージを表示できます。 これは特に**既定のルール**がブロックまたは検疫に設定されている場合に当てはまります。  この場合、エンド ユーザーはアプリ ストアに移動し、Microsoft ポータル サイト アプリをダウンロードし、デバイスを登録する必要があります。 これは iOS、Windows、および Samsung KNOX デバイスに適用されます。  Samsung KNOX を実行していないデバイスの場合、IT 管理者は連絡用電子メール アカウントに検疫電子メールを送信する必要があります。エンドユーザーはそのメールをブロックされた自分のデバイスにコピーして、登録およびコンプライアンス プロセスを完了する必要があります。
-  > [!NOTE] Exchange が通知電子メールを送信できるようにするには、通知電子メールの送信に使用されるアカウントを指定する必要があります。
+  > [!NOTE]
+  > Exchange が通知電子メールを送信できるようにするには、通知電子メールの送信に使用されるアカウントを指定する必要があります。
   >
-  > 詳細については、[オンプレミスまたはホスト型 Exchange に対する Exchange On-Premises Connector の構成](intune-on-premises-exchange-connector.md)に関するページを参照してください。
+  > 詳細については、[オンプレミスまたはホスト型 Exchange に対する Exchange On-Premises Connector の構成](intune-on-premises-exchange-connector.md)に関するページをご覧ください。
 
 3.  終了したら、**[保存]** を選択します。
 
@@ -118,7 +114,7 @@ Windows 8 以降用の**メール** アプリケーション ([!INCLUDE[wit_next
 
 -   ユーザーが [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] から登録解除した場合、デバイスがブロックされるまでに 1 ～ 3 時間かかる場合があります。
 
-**デバイスのアクセスを制限する条件付きアクセス ポリシーの構成方法を示したシナリオの例を見るには、[電子メール アクセスの制限のシナリオ例](restrict-email-access-example-scenarios.md)を参照してください。**
+**デバイスのアクセスを制限する条件付きアクセス ポリシーの構成方法を示したシナリオの例を見るには、[電子メール アクセスの制限のシナリオ例](restrict-email-access-example-scenarios.md)をご覧ください。**
 
 ## 次のステップ
 [SharePoint Online へのアクセスを制限する](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
@@ -126,6 +122,7 @@ Windows 8 以降用の**メール** アプリケーション ([!INCLUDE[wit_next
 [Skype for Business Online へのアクセスを制限する](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

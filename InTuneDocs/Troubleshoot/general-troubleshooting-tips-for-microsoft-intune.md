@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: 一般的なトラブルシューティングのヒント | Microsoft Intune
-description:
-keywords:
+title: "一般的なトラブルシューティングのヒント | Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 79617dd41e51402a73759da792f581028095a2f5
+ms.openlocfilehash: 6b2d1d5eecb543e45fca5fbb8aa1854c88ec4f9c
+
 
 ---
 
@@ -46,7 +40,7 @@ Microsoft Intune を展開した後、構成やクライアントに問題が発
 
 -   ユーザーに認証の問題が発生する可能性はありますか?  可能性がある場合、ユーザーが Azure Active Directory を使用する他のサービスにログインできるかどうかを確認してください。 また、ユーザーが別のデバイスからログインできるかどうかも確認してください。
 
--   サービスの状態を確認しましたか? Intune のサービス正常性は、[Office 365 管理ポータル](https://portal.office.com/Admin/Default.aspx)で監視できます。 左側のウィンドウで **[サービス正常性]** を選択します。 
+-   サービスの状態を確認しましたか? Intune のサービス正常性は、[Office 365 管理ポータル](https://portal.office.com/Admin/Default.aspx)で監視できます。 左側のウィンドウで **[サービス正常性]** を選択します。
 
 ## 利用可能なデータの収集
 
@@ -54,9 +48,9 @@ Microsoft Intune を展開した後、構成やクライアントに問題が発
   - [USB ケーブルを使用して Android の診断データのログを IT 管理者に送信する](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
   - [メールを使用して Android の診断データのログを IT 管理者に送信する](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
   - [IT 管理者に Android の登録に関するエラーを送信する](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
-  - [IT 管理者に iOS の登録に関するエラーを送信する](/intune/enduser/send-errors-to-your-it-admin-ios.md)
+  - [IT 管理者に iOS の登録に関するエラーを送信する](/intune/enduser/send-errors-to-your-it-admin-ios)
 
--   管理コンソール データ。たとえば、ポリシー実装の問題の場合は、「[Microsoft Intune でユーザーとデバイスの管理にグループを使用する](/indune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)」に記載された説明に従って、目的のポリシーとその状態を調べる必要があります。
+-   管理コンソール データ。たとえば、ポリシー実装の問題の場合は、「[Microsoft Intune でユーザーとデバイスの管理にグループを使用する](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)」に記載されている説明に従って、目的のポリシーとその状態を調べる必要があります。
 
 ## ソリューションの調査
 
@@ -97,6 +91,7 @@ Microsoft Intune を展開した後、構成やクライアントに問題が発
 [Microsoft Intune でのソフトウェア更新のトラブルシューティング](troubleshoot-software-updates-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jul16_HO1-->
 
 

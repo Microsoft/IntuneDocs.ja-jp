@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: ポータル サイトをカスタマイズする | Microsoft Intune
-description:
-keywords:
+title: "ポータル サイトをカスタマイズする | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: 45f574a975c94338c4543c0cdbc3aef549030601
+
 
 ---
 
@@ -44,7 +38,7 @@ ms.suite: ems
     |会社名|40|ポータル サイトのタイトルとして表示される名前です。|
     |IT 部門の担当者名|40|**[IT に連絡]** ページに表示される名前です。|
     |IT 部門の電話番号|20|**[IT に連絡]** ページに表示される連絡先の電話番号です。|
-    |IT 部門の電子メール アドレス|40|**[IT に連絡]** ページに表示される連絡先の電子メール アドレスです。 **alias@domainname.com** の形式で有効な電子メール アドレスを入力する必要があります。.|
+    |IT 部門の電子メール アドレス|40|**[IT に連絡]** ページに表示される連絡先の電子メール アドレスです。 **alias@domainname.com** の形式で有効な電子メール アドレスを入力する必要があります。|
     |追加情報|120|**[IT に連絡]** ページに表示されます。|
     |会社のプライバシーに関する声明の URL|79|ポータル サイトでユーザーがプライバシー リンクをクリックすると表示される、各社のプライバシーに関する声明を指定できます。 https://www.contoso.com の形式で URL を入力します。|
 
@@ -69,12 +63,13 @@ ms.suite: ems
 変更を保存した後で、管理コンソールの **[ポータル サイト]** ページの下部に表示されるリンクを使用して、ポータル サイト Web サイトを表示できます。 これらのリンクは変更できません。 ユーザーがサインインするときに、これらのリンクでポータル サイトが表示されます。
 
 ### 次のステップ
-これで終了です。 *Intune のクイック スタート ガイド*の手順 7. が完了しました。.
+これで終了です。 *Intune のクイック スタート ガイド*の手順 7 が完了しました。
 >[!div class="step-by-step"]
 
->[&larr; **ポリシーとアプリを作成する**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**デバイスを登録する** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
+>[&larr;**ポリシーとアプリを作成する**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**デバイスを登録する**&rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
