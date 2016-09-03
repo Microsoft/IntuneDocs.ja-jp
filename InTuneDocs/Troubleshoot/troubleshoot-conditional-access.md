@@ -107,7 +107,7 @@ ms.openlocfilehash: a04037453382420540dbec721179ccb623df0829
 ### Exchange Connector のログ
 
 #### 一般的なログ情報
-Exchange Connector のログを表示するには、[サービス トレース ビューアー ツール] (サービス トレース ビューアー ツール) (https://msdn.microsoft.com/ja-jp/library/ms732023(v=vs.110).aspx) を使用します。 このツールを使用するには、Windows Server SDK をダウンロードする必要があります。
+Exchange Connector のログを表示するには、[サービス トレース ビューアー ツール] (サービス トレース ビューアー ツール (https://msdn.microsoft.com/ja-jp/library/ms732023(v=vs.110).aspx) を使用します。 このツールを使用するには、Windows Server SDK をダウンロードする必要があります。
 
 >[!NOTE]
 >ログは C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs に置かれます。 ログは *Connector0.log* から *Connector29.log* までの 30 個の一連のログ ファイルで格納されます。 10MB のデータが蓄積されると次のログにロールオーバーします。 ログが Connector29 に達すると、Connector0 から再開され、以前のログが上書きされます。
