@@ -8,9 +8,6 @@
 ### [モバイル デバイスを登録してアプリをインストールする](get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)
 ### [その他のオプションと機能](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [次のステップ](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-## [Intune の一般的な評価タスク](common-microsoft-intune-evaluation-tasks.md)
-### [試用を開始し、iOS PIN ポリシーを展開する](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
-### [iOS デバイスに電子メール アクセスをセットアップする](set-up-email-access-for-ios-devices-using-microsoft-intune.md)
 ## [一般的なシナリオ](common-ways-to-use-intune.md)
 ## [クイック スタート ガイド](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 ### [Office 365 モバイル アプリから会社のデータが漏えいすることを防止する](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
@@ -25,6 +22,6 @@
 # [トラブルシューティング](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 
