@@ -4,7 +4,7 @@ description:
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 58e127b1924f68a663326ab076ad623dd66782d7
+ms.sourcegitcommit: eec08a92ff38f55ca04e9c1822c041e8bd0273fd
+ms.openlocfilehash: 5c7f25b31288a112fbfb1744c061c4cc2eb73e49
 
 
 ---
 
-# SDK を使用してモバイル アプリケーション管理に対応する
+# Use the SDK to enable apps for mobile application management (アプリでモバイル アプリケーション管理を実行できるよう SDK を使用する)
 特定の機能を Intune で管理できるようにモバイル アプリ (iOS または Android) を開発するには、Microsoft Intune App SDK を使用します。 Intune での管理に向けた対応化が済んだら、アプリにポリシーを展開することができます。 それらの機能をポリシーから使用することによって、会社のデータが保護されます。 SDK で実装できる保護には、次のようなものがあります。
 
 -   会社のドキュメントをクラウドにコピーすることを禁止する
@@ -39,6 +39,6 @@ SDK の概要については、[概要](/intune/develop/intune-app-sdk)ページ
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO4-->
 
 
