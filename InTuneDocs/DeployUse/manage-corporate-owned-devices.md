@@ -38,7 +38,7 @@ ms.openlocfilehash: 58efadf2f9fc34a31070aff93e86083583630caa
 
 ## デバイスの企業所有としての識別
 
-企業所有のデバイスは、デバイス一覧の **[Ownership] (所有権)** で **[Corporate] (会社)** として一覧表示されます。 企業所有のデバイスは次の方法で識別できます。
+企業所有のデバイスは、デバイス一覧の **[Ownership (所有権)]** で **[Corporate (会社)]** として一覧表示されます。 企業所有のデバイスは次の方法で識別できます。
 
  - [デバイス登録マネージャー (DEM) を使用した登録](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
  - Apple の [デバイス登録プログラム (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) または [Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) を使用した登録

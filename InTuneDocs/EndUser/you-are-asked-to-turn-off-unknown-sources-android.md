@@ -3,24 +3,24 @@ title: "不明なソースを無効にすることを求められる | Microsoft
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: eeb9888d803a53c2f17d88cdb3f010cf14c9b18d
-ms.openlocfilehash: 0a4bf23b547a4f02db663049b84e77365509aeaf
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: e5b2c0c21af8cad443710fe62f65e5c6c7076b9c
 
 
 ---
 
 # 不明なソースを無効にすることを求められる
 
-"不明なソースからのインストールを無効にする必要があります" というメッセージが表示される場合、**[設定]** > **[セキュリティ]** を選択し (一部のデバイスでは、代わりに **[Lock screen and security]** (ロック画面とセキュリティ) が表示されることがあります)、**[不明なソース]** を無効にする必要があります。 
+"不明なソースからのインストールを無効にする必要があります" というメッセージが表示される場合、**[設定]** > **[セキュリティ]** を選択し (一部のデバイスでは、代わりに **[Lock screen and security]** (ロック画面とセキュリティ) が表示されることがあります)、**[不明なソース]** を無効にする必要があります。
 
 IT 管理者は、Android デバイス上の会社のデータを保護するために、この設定を無効にすることを必須にしています。 **[不明なソース]** を有効にすると、不明なソースからアプリをインストールできるようになりますが、これはセキュリティ上のリスクになる可能性があります。
 
@@ -33,6 +33,6 @@ IT 管理者は、Android デバイス上の会社のデータを保護するた
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 
