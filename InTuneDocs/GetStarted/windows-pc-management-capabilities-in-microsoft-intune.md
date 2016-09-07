@@ -1,10 +1,10 @@
 ---
-title: "Windows PC 管理機能 | Microsoft Intune"
-description: "Intune クライアント ソフトウェアによって Windows PC を管理する場合の Intune の機能について説明します。"
+title: "Intune PC ソフトウェア クライアントの機能 | Microsoft Intune"
+description: "Intune ソフトウェア クライアントで Windows PC を管理する場合の Intune の機能について説明します。"
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a6caef9e0f4d6235ecf1a89c1765d6c8e6ce1a7b
-ms.openlocfilehash: e5e3833a38434d4fe55cae554fc49f567b606ad8
+ms.sourcegitcommit: 12d75bc67fd61a2e807eed2543f21b756a65a900
+ms.openlocfilehash: 3066ef98c0a1df6fc0ae455860635e7c12f82c4f
 
 
 ---
 
-# Windows PC 管理機能 (Microsoft Intune PC クライアント使用)
-ほとんどのシナリオでは、デバイスを Microsoft Intune に登録します。そうすることで、Intune PC クライアントよりも多くの機能を利用できます。 ただし PC の管理には、Intune PC クライアントを使用することもできます。Intune PC クライアントでは、次の機能が利用できます。
+# Intune ソフトウェア クライアントを使用する場合の Windows PC の管理機能
+ほとんどのシナリオでは、デバイスを Microsoft Intune に登録します。そうすることで、さらに多くの機能を使用できるようになります。 ただし、PC の管理には、Intune ソフトウェアを使用することもできます。このソフトウェアでは、次の機能が利用できます。
 
 -   **ソフトウェア更新プログラムの管理。**PC を最新の状態に保ち、更新プログラムを適用する時間を決定できます。
 
@@ -31,10 +31,10 @@ ms.openlocfilehash: e5e3833a38434d4fe55cae554fc49f567b606ad8
 -   **リモート アシスタンス。**ユーザーは Intune を使用して、IT サポート スタッフに連絡できます。IT サポート スタッフは、Intune に含まれているリモート デスクトップ機能を使用してサポートを提供できます (TeamViewer ソフトウェアが必要)。
 
 -   **ソフトウェア ライセンス管理。**使用可能なソフトウェア ライセンスの数と、そのうちの使用中のライセンスの数を追跡します。
--   **アプリの展開。**管理対象の PC にソフトウェアを展開します。 クライアント ソフトウェアを使用して PC を管理するときは、一部のアプリ管理機能が利用できません。
+-   **アプリの展開。**管理対象の PC にソフトウェアを展開します。 ソフトウェア クライアントを使用して PC を管理する場合、一部のアプリ管理機能は利用できません。
 
 
-Intune は、最大 7,000 台の Windows デバイスへの PC クライアント ソフトウェアのインストールをサポートしています。
+Intune は、最大 7,000 台の Windows デバイスへのソフトウェア クライアントのインストールをサポートしています。
 
 ## オペレーティング システムの要件
 Intune では、次の Windows バージョンを実行する PC を管理できます (32 ビットと 64 ビットの両方)。
@@ -52,7 +52,7 @@ Intune では、次の Windows バージョンを実行する PC を管理でき
 
 
 ## ハードウェアに最低限必要な条件
-次に、Intune PC クライアントをインストールするハードウェアの最小要件を示します。
+Intune ソフトウェア クライアントのインストールの最小ハードウェア要件を次に示します。
 
 |要件|説明|
 |---------------|--------------------|
@@ -61,7 +61,7 @@ Intune では、次の Windows バージョンを実行する PC を管理でき
 |ディスク領域|クライアント ソフトウェアをインストールする前に、200 MB の空きディスク領域が必要です。|
 
 ## その他の要件
-以下に、Intune クライアントをインストールする場合のソフトウェアの要件を示します。
+Intune ソフトウェア クライアントのインストールの最小ソフトウェア要件を次に示します。
 
 |要件|説明|
 |---------------|--------------------|
@@ -70,10 +70,10 @@ Intune では、次の Windows バージョンを実行する PC を管理でき
 |互換性のないクライアント ソフトウェアを削除する|Intune PC クライアント ソフトウェアをインストールする前に、その PC から次のクライアント ソフトウェアをアンインストールする必要があります。<br /><br />-   Configuration Manager のすべてのバージョン<br />-   Microsoft Systems Management Server (SMS) のすべてのバージョン|
 
 ### 関連項目
-[Microsoft Intune のモバイル デバイス管理機能](./mobile-device-management-capabilities-in-microsoft-intune.md)
+[Microsoft Intune の登録済みデバイス管理機能](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 
