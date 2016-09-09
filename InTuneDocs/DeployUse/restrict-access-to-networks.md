@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 281557e7b9c4b2ed1ff6122dbd574df4a2601a8c
-ms.openlocfilehash: 3d62fe870a609af982435bd3f482fcc18beecdb1
+ms.sourcegitcommit: 40194f4359d0889806e080a4855b8e1934b667f9
+ms.openlocfilehash: 9d6b7198e3c2e30898a8ec83785c7f3b777eda5f
 
 
 ---
@@ -60,7 +60,10 @@ b. ロック アイコン &gt; **[詳細]** をクリックします。
 
 
 2. ISE コンソール内から、Intune 証明書 (エクスポートしたファイル) を **[信頼できる証明書]** にインポートします。
+
+
 ### ISE からの自己署名証明書の取得 
+
 1.  ISE コンソールで、**[Administration]** (管理)  > **[Certificates]** (証明書)  > **[System Certificates]** (システム証明書)  > **[Generate Self Signed Certificate]** (自己署名証明書の生成) の順に選択します。  
 2.       自己署名証明書をエクスポートします。
 3. テキスト エディターで、エクスポートした証明書を編集します。
@@ -147,6 +150,6 @@ ISE 管理コンソールで、次の設定値を指定します。
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 
