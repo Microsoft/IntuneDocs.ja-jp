@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 192c61fb06a8af4c40e228aafbd383fd21142c57
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: dea55b5624781dfc835aec3b2fedcd34c57903cc
 
 
 ---
@@ -48,11 +48,10 @@ Intune に登録されている携帯電話が紛失や盗難にあった場合�
 
 紛失したまたは盗難にあったデバイスを自分でリセットできない場合は、IT 管理者に依頼してください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
-### 関連項目
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

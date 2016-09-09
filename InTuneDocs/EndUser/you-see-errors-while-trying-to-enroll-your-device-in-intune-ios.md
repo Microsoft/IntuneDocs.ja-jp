@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 06/15/2016
+ms.date: 08/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: e8b6da8348f9c4d8ba1b85687510388cd40eac8a
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: e2493f93c08aaf7c10c47a0835de498349799e28
 
 
 ---
@@ -35,11 +35,10 @@ ms.openlocfilehash: e8b6da8348f9c4d8ba1b85687510388cd40eac8a
 |UserLicenseTypeInvalid|ユーザー アカウントがまだ必要なユーザー グループのメンバーではないため、モバイル デバイスを登録できません。<br /><br />IT 管理者に連絡し、モバイル デバイスの登録時に **UserLicenseTypeInvalid** というメッセージを受信したことを知らせて、IT 管理者にこの表の解決方法を参照するよう伝えてください。|ユーザーが自分のデバイスを登録できるようにするには、ユーザーは適切なユーザー グループのメンバーである必要があります。 このメッセージは、指定されたモバイル デバイス管理機関に必要なライセンスの種類をユーザーが持っていないことを示します。 たとえば、モバイル デバイス管理機関として Intune が指定され、ユーザーが System Center 2012 R2 Configuration Manager ライセンスを使用している場合に、このエラーが表示されます。<br /><br />詳細については、以下を確認してください。<br /><br />「[Microsoft Intune を使用して iOS および Mac の管理をセットアップする](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)」のほか、「[Active Directory を同期化して Intune にユーザーを追加する](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3)」と[ユーザーとデバイスの整理](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5)に関するページのユーザー設定についての情報を確認してください。|
 |MdmAuthorityNotDefined|IT 管理者は社内のモバイル デバイスを管理する方法を構成する必要があります。<br /><br />IT 管理者に連絡し、モバイル デバイスの登録時に **MdmAuthorityNotDefined** というメッセージを受信したことを知らせて、IT 管理者にこの表の解決方法を参照するよう伝えてください。|Intune でモバイル デバイス管理機関が指定されていません。<br /><br />[Microsoft Intune の 30 日間の試用版の使用](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)に関するページの「手順 6: モバイル デバイスを登録してアプリをインストールする」セクションの項目 1 を確認してください。|
 
-### 関連項目
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: e10de556babc49d4e2f1ebf6ba9c766291d58efd
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 6740962e55b1232330c6fab43ce1250a54e3a97b
 
 
 ---
@@ -96,11 +96,10 @@ Android デバイスが Intune に登録されておらず、IT 管理者が必�
 
 上に示されたのと同じ「証明書が見つかりません」というメッセージが表示され、かつ上述の手順を実行済みの場合は、インストールするために IT 管理者によるサポートが必要な証明書がまだある可能性が高いことを意味します。 IT 管理者に連絡し、問題の解決に役立つ手順が含まれるこの[リンク](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues)を渡してください。
 
-### 関連項目
-[Windows デバイスを Intune で使用する](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

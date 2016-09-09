@@ -4,7 +4,7 @@ description: "Microsoft Intune のデバイス グループ マッピングを�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/11/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
 ms.reviewer: sumitp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 3eda87026f46ed911c83b874f7ef9362f0705492
+ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
+ms.openlocfilehash: 7b1c6f0e380c03d048686462682fc1cee85b7cfa
 
 
 ---
@@ -53,6 +53,6 @@ Microsoft Intune の**デバイス グループ マッピング**を使用して
 [Microsoft Intune でユーザーとデバイスの管理にグループを使用する](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

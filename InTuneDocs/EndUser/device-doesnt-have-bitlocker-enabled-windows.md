@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 44b9d572956250da916fb72afdddc8a90860025a
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 7dad0f9ffc9a45f32ae3d399f00f6a688138997b
 
 
 ---
@@ -25,11 +25,10 @@ ms.openlocfilehash: 44b9d572956250da916fb72afdddc8a90860025a
 
 所属組織が BitLocker を有効にしておくことを要求しています。これは、ドライブを暗号化することでデータを保護するために役立つソフトウェアです。 Windows 10 デバイスで BitLocker を有効にする方法については、「[Windows 10 デバイスで BitLocker を有効にする方法](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d)」を参照してください。 その他のデバイスについては、IT 管理者に問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
-### 関連項目
-[Windows デバイスを Intune で使用する](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

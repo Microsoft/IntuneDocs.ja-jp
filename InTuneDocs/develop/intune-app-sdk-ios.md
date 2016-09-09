@@ -13,8 +13,8 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
-ms.openlocfilehash: 820ec2da0554f0af383895482241be7d1c0cf305
+ms.sourcegitcommit: 63d94a83a3a5ad9520abab3ef25e8d9690c26ce7
+ms.openlocfilehash: 512ef2416e14f2a44e1c46e996c8519b5776581f
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 820ec2da0554f0af383895482241be7d1c0cf305
 
 iOS 用 Microsoft Intune アプリ SDK を使用すると、iOS アプリに Intune モバイル アプリ管理 (MAM) を組み込むことができます。 MAM 対応アプリケーションは Intune アプリ SDK に統合され、これにより IT 管理者は、アプリをアクティブに管理する場合にモバイル アプリにポリシーを展開できます。
 
-# SDK の機能
+## SDK の機能
 
 iOS 用 Intune アプリ SDK には、スタティック ライブラリ、リソース ファイル、API ヘッダー、デバッグ設定 plist および構成ツールが含まれています。 ほとんどのポリシー適用では、モバイル アプリに単にリソース ファイルを含め、ライブラリに静的にリンクできます。 高度な Intune MAM 機能は、API を介して適用されます。
 このガイドでは、iOS 用 Intune アプリ SDK を統合するときに次のものを使用する方法について説明します。
@@ -37,13 +37,13 @@ iOS 用 Intune アプリ SDK には、スタティック ライブラリ、リ�
 
 * **ヘッダー**: Intune アプリ SDK の API を表示します。 API を使用する場合は、API を含むヘッダー ファイルをインクルードする必要があります。 
 
-# Intune アプリ SDK のしくみ
+## Intune アプリ SDK のしくみ
 
 iOS 用 Intune アプリ SDK の目的は、最小限のコード変更で iOS アプリケーションに管理機能を追加することです。 コード変更の量を減らすと、製品化に要する時間が短縮される一方で、モバイル アプリケーションの一貫性と安定性が向上します。 
 
 アプリケーションをスタティック ライブラリにリンクして、リソース バンドルを含める必要があります。 MAMDebugSettings.plist ファイルはオプションです。Microsoft Intune を使用してアプリケーションを展開する必要なく、アプリケーションに適用される MAM ポリシーをシミュレートするために、パッケージに含めることができます。 さらに、デバッグ ビルドでは、iTunes のファイル共有を使用して、アプリケーションの Documents ディレクトリに MAMDebugSettings.plist ファイルを転送することで、MAMDebugSettings.plist ファイル内のポリシーを適用できます。
 
-# Intune アプリ SDK を使用したアプリの構築 
+## Intune アプリ SDK を使用したアプリの構築 
 
 Intune アプリ SDK を有効にするには、次の手順に従います。
 
@@ -133,7 +133,7 @@ Intune アプリ SDK を有効にするには、次の手順に従います。
 
 モバイル アプリケーションで独自の認証に ADAL を使用する場合は、このガイドの「Azure Directory Authentication Library の構成」のセクションを参照してください。
 
-## 製品利用統計情報 
+### 製品利用統計情報 
 
 iOS 用 Intune アプリ SDK では、既定で、使用状況イベントに関する製品利用統計情報がログに記録され、Microsoft Intune に送信されます。
 
@@ -155,15 +155,15 @@ Intune アプリ SDK では認証と条件付き起動シナリオに ADAL を�
 
 2. プロジェクトの `Info.plist`の `IntuneMAMSettings` ディクショナリで、キー名 `ADALRedirectUri`を使用して、ADAL 呼び出しに使用するリダイレクト URI を指定します。 アプリのリダイレクト URI の形式によっては、 `ADALRedirectScheme` も指定する必要がある場合があります。
 
-## 拡張機能の構築 (省略可能) 
+### 拡張機能の構築 (省略可能) 
 
 拡張機能を構築する場合は、このガイドの「Intune アプリ SDK を使用したアプリの構築」のセクションで説明した、モバイル アプリを構築する場合と同じ手順に従います。 さらに、各拡張機能の info.plist ファイルを更新して、IntuneMAMSettings ディクショナリで ContainingAppBundleId キーを、含まれるアプリケーションのバンドル ID の値を使用して追加します。
 
-## フレームワークの構築 (省略可能)
+### フレームワークの構築 (省略可能)
 
 Intune アプリ SDK の最新の変更により、モバイル アプリに埋め込みアプリケーション フレームワークが含まれている場合、特定のリンカー フラグを使用してモバイル アプリケーションをコンパイルする必要はありません。 
 
-## スタートアップ時のイメージ ファイル (省略可能)
+### スタートアップ時のイメージ ファイル (省略可能)
 
 MAM 対応アプリを Microsoft Intune でアクティブに管理する場合、Intune アプリ SDK はアプリの起動時にスタートアップ画面を表示して、アプリが管理されていることをユーザーに示します。 必要に応じて、イメージ ファイルを追加して、[会社によって管理されています] スタートアップ ページを表示できます。 イメージに関する次のガイドラインを使用します。
 
@@ -179,7 +179,7 @@ MAM 対応アプリを Microsoft Intune でアクティブに管理する場合�
 
 **注**: この画面は起動によってトリガーされますが、ユーザーが完全に破棄することができます。
 
-# Intune アプリ SDK 設定の構成
+## Intune アプリ SDK 設定の構成
 
 アプリケーションの `IntuneMAMSettings` 内に含まれている `info.plist` ディクショナリは、Intune アプリ SDK を構成するために使用します。 サポートされているすべての設定の一覧を次に示します。 
 
@@ -197,7 +197,7 @@ SplashIconFile <br>SplashIconFile~ipad  | 文字列型  | Intune スプラッシ
 SplashDuration | 数値 | アプリケーションの起動時に Intune スプラッシュ画面が表示される最短時間 (秒)。 既定値は 1.5 です。 | 任意。
 ADALLogOverrideDisabled | ブール型  | SDK がすべての ADAL ログ (アプリからの ADAL 呼び出しがある場合はこれを含む) をログ ファイルにルーティングするかどうかを指定します。 既定は [いいえ] です。 アプリで独自の ADAL ログ コールバックを設定する場合は [はい] に設定します。 | 任意。
 
-# Intune アプリ SDK のヘッダー 
+## Intune アプリ SDK のヘッダー 
 
 次のヘッダーには、Intune アプリ SDK の機能を有効にするために必要な API 関数呼び出しが含まれます。 
 
@@ -209,7 +209,7 @@ ADALLogOverrideDisabled | ブール型  | SDK がすべての ADAL ログ (ア�
     IntuneMAMPolicyDelegate.h
     IntuneMAMLogger.h
 
-# Xcode での Intune アプリ SDK のデバッグ
+## Xcode での Intune アプリ SDK のデバッグ
 
 Microsoft Intune で MAM 対応アプリをテストする前に、Xcode で `Settings.bundle` を使用できます。 これにより、Intune に接続しなくてもテスト ポリシーを設定できます。 有効にするには、次の手順を実行します。
 
@@ -230,7 +230,7 @@ Microsoft Intune で MAM 対応アプリをテストする前に、Xcode で `Se
 > [!NOTE]
 > [設定]、[<アプリ名>]、[テスト ポリシーを有効にする] を使用して設定を有効にし、切り替えることができるようになりました。
 
-# 推奨される iOS のベスト プラクティス
+## 推奨される iOS のベスト プラクティス
 
 iOS 向けの開発時に推奨されるベスト プラクティスを次に示します。
 
@@ -241,6 +241,6 @@ Xcode で `libIntuneMAM.a`が見つからない場合は、リンカー検索パ
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

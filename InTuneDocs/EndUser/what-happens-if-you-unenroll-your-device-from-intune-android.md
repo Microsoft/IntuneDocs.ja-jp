@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 1260ef2cf63563e492831709656eea8ec45eef22
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: dadc57ec9a8ba1a9c412824ea35d6f38dfb934a9
 
 
 ---
@@ -42,11 +42,8 @@ Intune から Android デバイスの登録を解除すると次のようにな�
 サポートが必要な場合は、 IT 管理者に問い合わせるか (連絡先情報については[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください)、または Microsoft Android チーム (wintunedroidfbk@microsoft.com) にご連絡ください。
 
 
-### 関連項目
-[Android デバイスを Intune で使用する](using-your-android-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
