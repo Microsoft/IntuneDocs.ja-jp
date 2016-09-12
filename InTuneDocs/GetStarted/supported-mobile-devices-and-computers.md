@@ -4,7 +4,7 @@ description: "Intune でサポートされるモバイル デバイスとコン�
 keywords: 
 author: barlanmsft
 manager: angrobe
-ms.date: 06/08/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,28 +13,31 @@ ms.assetid: aeeccfa4-0f14-447e-a3df-c8435c8a4bb2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
-ms.openlocfilehash: 1bfeefc7f34eff22a3854e14db040b6d533d2e9e
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: e14a56fce0aa57b3744946d7dbf6641b8d98773b
 
 
 ---
 
 # サポートされるモバイル デバイスとコンピューター
 
-Microsoft Intune をセットアップする前に、このトピックと「[What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md)」 (Microsoft Intune を開始する前に理解しておくこと) に挙げられているその他の要件を確認してください。
+Microsoft Intune をセットアップする前に、このトピックと「[Microsoft Intune を使い始める前に](what-to-know-before-you-start-microsoft-intune.md)」に挙げられているその他の要件を確認してください。
 
-次のモバイル デバイスとコンピューターを管理できます。
+登録の後に管理対象とすることのできるデバイスの種類は次のとおりです。
 
 [!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
-これらのデバイスや PC がドメインに参加していない場合や職場にない場合でも、管理することができます。 デバイスの管理の詳細については、「[デバイスを管理する方法を選択する](/Intune/get-started/choose-how-to-manage-devices)」をご覧ください。
+デバイスを登録すると、[これらのことが可能になります](/Intune/get-started/choose-how-to-manage-devices)。
 
+別の方法として、Windows PC を Intune PC クライアント ソフトウェアで管理することもできます。 Intune PC クライアント ソフトウェアは Windows 7 以降をサポートしていますが、Windows 10 Home を除きます。PC の管理にこのクライアント ソフトウェアを使用すると、[これらのことが可能になります](/Intune/)。
+
+Enterprise Management Suite をお使いの場合は、Azure Active Directory (Azure AD) を使用して Windows 10 デバイスを登録することもできます。
 
 ### 関連項目
 [Microsoft Intune を使い始める前に](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 
