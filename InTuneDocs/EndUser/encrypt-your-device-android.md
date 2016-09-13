@@ -4,7 +4,7 @@ description: "Android デバイスを暗号化する方法について説明し�
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 06/07/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6c6a6fed876e49888d8fda1fd93b39313387ba38
-ms.openlocfilehash: 6cb6c0b8a8f4c1b88565ce4b7a5690406b4ddf40
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 2fff575f84512304a119508b49486d02695a06bd
 
 
 ---
@@ -60,11 +60,10 @@ ms.openlocfilehash: 6cb6c0b8a8f4c1b88565ce4b7a5690406b4ddf40
 
 サポートが必要な場合は、 IT 管理者に問い合わせるか (連絡先情報については[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください)、または Microsoft Android チーム (wintunedroidfbk@microsoft.com) にご連絡ください。
 
-### 関連項目
-[Android デバイスを Intune で使用する](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO2-->
+
+<!--HONumber=Aug16_HO5-->
 
 

@@ -4,18 +4,18 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 6/15/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 1b066aaa3e2860f7e6afb54493af1b6bb6d72cd4
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 3b775464b494f5d28c870df4b2c58bb59f58eb78
 
 
 ---
@@ -34,6 +34,6 @@ ms.openlocfilehash: 1b066aaa3e2860f7e6afb54493af1b6bb6d72cd4
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

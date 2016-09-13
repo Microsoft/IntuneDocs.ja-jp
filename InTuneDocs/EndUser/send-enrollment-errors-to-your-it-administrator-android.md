@@ -4,18 +4,18 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 05/31/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d7c871b8-e5d8-4912-b87f-7e6bc59897be
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: c5d928e0c0b7fa207c4b9cc078973401006f9d33
+ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
+ms.openlocfilehash: 081764e59649cbc486ad3a757ad4bf9c65c91112
 
 
 ---
@@ -29,14 +29,12 @@ IT 管理者宛てアドレス指定された電子メールが自動的に作�
 
 エラーについて支援を得るために、デバイスのデータ ログを IT 管理者に送信するには、いくつかの方法があります。
 
-[USB ケーブルを使用してログを送信する](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)</br>
-[電子メールを使用してログを送信する](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
-
-### 関連項目
-[Android デバイスを Intune で使用する](using-your-android-device-with-intune.md)
+- [USB ケーブルを使用してログを送信する](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
+- [電子メールを使用してログを送信する](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+
+<!--HONumber=Sep16_HO2-->
 
 

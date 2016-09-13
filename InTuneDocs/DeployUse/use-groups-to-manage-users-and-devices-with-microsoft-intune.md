@@ -13,11 +13,15 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab9592c253238fd832f8b48372e5474fcfc5331
-ms.openlocfilehash: 96b0cd997544b2013efaca818d614c9802baaa46
+ms.sourcegitcommit: e7c680c43b8c9120755ec3c652cf7ec1cbcc3472
+ms.openlocfilehash: b13e2ff2f4822d71ef8cff9d835e32b99cb3e4ab
 
 
 ---
+# Microsoft Intune でユーザーとデバイスの管理にグループを使用する
+
+ここでは、Intune でグループを作成する方法について説明します。 また、今後数か月間におけるグループ管理の変更予定についても説明します。 *現在の*グループ管理方法の詳細については、このトピックの「[Microsoft Intune でユーザーとデバイスを管理するためのグループを作成する](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune)」を参照してください。
+
 ## グループの管理エクスペリエンスに対して予定されている改善点に関するお知らせ
 
 Enterprise Mobility とセキュリティ全体でグループおよびターゲット エクスペリエンスを統一した方がよいというフィードバックに基づき、Intune のグループを Azure Active Directory ベースのセキュリティ グループに変換しています。 これにより、Intune と Azure Active Directory (Azure AD) でグループ管理が統一されます。 新しいエクスペリエンスでは、サービス間でグループを複製する必要がなく、PowerShell と Graph を使用する拡張性が提供されます。 
@@ -72,7 +76,7 @@ Enterprise Mobility とセキュリティ全体でグループおよびターゲ
 -  Azure AD でのグループ作成権限を持たない管理者がいる場合は、Azure AD 管理者に依頼して、その管理者を **Intune サービス管理者** Azure AD の役割に追加します。
 
 
-# Microsoft Intune でユーザーとデバイスを管理するためのグループを作成する
+## Microsoft Intune でユーザーとデバイスを管理するためのグループを作成する
 
 このセクションでは、Intune 管理コンソールで Intune グループを作成する方法について説明します。
 
@@ -208,6 +212,6 @@ Enterprise Mobility とセキュリティ全体でグループおよびターゲ
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

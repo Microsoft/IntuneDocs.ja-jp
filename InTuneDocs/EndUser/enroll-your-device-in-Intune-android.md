@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 46479cfe3d2648eefbaefd0a831af2412b509fce
-ms.openlocfilehash: e920f133aeaf0b0a938e07b4923869318a902d57
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 6fa1e13b6b0e29144c3740f00b232807e6e4e984
 
 
 ---
@@ -112,11 +112,10 @@ Intune にデバイスを登録している最中にエラーが表示された�
 サポートが必要な場合は、 IT 管理者に問い合わせるか (連絡先情報については[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください)、または Microsoft Android チーム (wintunedroidfbk@microsoft.com) にご連絡ください。
 
 
-### 関連項目
-[Android デバイスを Intune で使用する](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO2-->
+
+<!--HONumber=Aug16_HO5-->
 
 

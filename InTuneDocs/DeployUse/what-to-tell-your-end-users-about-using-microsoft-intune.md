@@ -3,8 +3,8 @@ title: "Intune の使用に関するエンド ユーザーへの通知内容 | M
 description: "エンド ユーザーに共有する情報へのリンク"
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 08/24/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 1d3d218212dc4cefbbf6237fefb0ec369fb6903b
+ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
+ms.openlocfilehash: d29649c204f50aec1d1604b55bebc6018a3c7ef2
 
 
 ---
@@ -33,7 +33,9 @@ ms.openlocfilehash: 1d3d218212dc4cefbbf6237fefb0ec369fb6903b
 
 ## エンド ユーザーの一般的なタスクに関する情報が掲載されている場所
 
-エンド ユーザーがそのデバイスにおける Intune の使用について情報を探しているときは、次のヘルプ ページのリンクを紹介してください。 リンク先のページには、ポータル サイト アプリのインストールや、デバイスの登録、管理対象アプリの入手、トラブルシューティングなど、エンド ユーザー向けにさまざまな作業の手順が記載されています。
+登録済みユーザーには、Intune の使用についてのヘルプが必要な場合、通常はポータル サイト Web サイトまたはポータル サイト アプリで、問題の解決手順またはタスクの実行手順が記載された特定の記事へのリンクが表示されます。 たとえば、Android ユーザーは、必須証明書が不足していることを示すメッセージが表示された場合、[How to resolve this (解決方法)] リンクをクリックすると、証明書の取得手順が記載された記事にアクセスできます。 
+
+以下のリンクは IT 管理者向けのものです。 これらのページには、ポータル サイトの Web サイトまたはアプリからユーザーがリダイレクトされるすべての記事へのリンクが含まれています。 各リンクは、ポータル サイト アプリのインストールと Intune の登録、デバイス上でユーザーが実行可能なタスク (管理対象アプリの使用やデバイスの手動同期など)、およびトラブルシューティングに関するセクションに分けられています。
 
 - [Android デバイスを Intune で使用する](/Intune/EndUser/using-your-android-device-with-intune)
 - [Using your iOS or Mac OS X device with Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
@@ -59,8 +61,10 @@ ms.openlocfilehash: 1d3d218212dc4cefbbf6237fefb0ec369fb6903b
 
 エンド ユーザーがポータル サイトを使用する過程で遭遇する可能性のある問題については、[ポータル サイトのユーザーに表示される可能性のあるメッセージの一覧](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages)を参照して解決を支援してください。
 
+この記事で扱ってほしい情報がある場合は、このトピックの下部にあるコメント セクションからご意見をお寄せください。 よろしくお願いいたします。
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Aug16_HO4-->
 
 

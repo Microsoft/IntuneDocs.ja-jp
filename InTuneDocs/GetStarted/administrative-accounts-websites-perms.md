@@ -2,9 +2,9 @@
 title: "管理者アカウント、Web サイト、アクセス許可 | Microsoft Intune"
 description: "管理アカウント、アクセス許可、Web サイト"
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: db3075e7-38fd-4dfe-b266-26aed10ac8ea
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: e174cb6706e7910d511d5f39836cec6b9a98403d
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: 29d6f9cd31e6fbf287ae30fb2171bf752ff71157
 
 
 ---
@@ -35,20 +35,20 @@ Intune を管理するには、以下を使用します。
 次に、Intune で使用するアカウントとアクセス許可を示します。
 
 ### テナント管理者
-|アクセス許可のレベル|詳細情報|
+|アクセス許可のレベル|説明|
 |--------------------------|-------------------------|
 |テナント管理者には、管理者の役割が割り当てられます。管理者の役割は、そのユーザーの管理範囲と、管理できるタスクを定義します。<br /><br />さまざまな Microsoft クラウド サービスで共通の管理者ロールが使用されていますが、一部のサービスではサポートされていないロールもあります。<br /><br /> Microsoft Intune では、次の役割を使用します。<br /><br />- 全体管理者<br />- 課金管理者<br />- パスワード管理者<br />- サービス サポート管理者<br />- ユーザー管理の管理者|既定では、Microsoft Intune サブスクリプションの作成に使用するアカウントは、全体管理者の役割を持つテナント管理者です。<br /></br>  テナント管理者として、[!INCLUDE[wit_icp_1](../includes/wit_icp_1_md.md)] を使用して、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] のサブスクリプションを管理し、[!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)] からテナント管理者を割り当てます。<br /><br />全体管理者の役割を持つテナント管理者を使用して [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)]にアクセスし、最初のサービス管理者を割り当てます。 ベスト プラクティスとして、テナント管理者を日常の管理タスクに使用しないでください。 テナント管理者には、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] にアクセスする際 [!INCLUDE[wit_icp_2](../includes/wit_icp_2_md.md)] のライセンスは必要ありません。<br /><br />テナント管理者は、Microsoft クラウド サービスで共通の概念です。 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] にサブスクライブするときに使用するサービスは、Microsoft Azure AD のテナントです。 「[Azure AD ディレクトリとは](http://technet.microsoft.com/library/jj573650.aspx)」の Azure AD テナントに関するセクションを参照してください。|
 
 
 ### サービス管理者
-|アクセス許可のレベル|詳細情報|
+|アクセス許可のレベル|説明|
 |--------------------------|-------------------------|
 |サービス管理者には、次の権限の 1 つが割り当てられます。<br /><br />**フル アクセス**: 制限なく [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] のすべての領域にアクセスする権限を付与します。 他のサービス管理者を追加および管理することもできます。<br /><br />**読み取り専用アクセス**: [!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] のすべての領域への読み取りアクセス許可を付与します。 読み取り専用サービス管理者は、データを変更できませんが、レポートを実行することはできます。<br /><br />**ヘルプデスク - グループ ノード**: サービス管理者に、通常はヘルプデスクのシナリオに関連付けられている一連のタスクのみを実行できるアクセス許可を付与します。 このアクセス許可セットの詳細については、「[管理者の役割に応じて Intune コンソール ビューをカスタマイズする](/intune/deploy-use/control-what-admins-can-see-in-the-microsoft-intune-admin-console)」を参照してください。|既定では、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] はサービス管理者を割り当てません。 代わりに、全体管理者の役割を持つテナント管理者を使用して、サブスクリプション用の最初のサービス管理者を割り当てる必要があります。 </br></br> サービス管理者として、[!INCLUDE[wit_adminconsole](../includes/wit_adminconsole_md.md)] を使用して、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] の日常のタスクを管理します。<br /><br />サービス管理者は、管理コンソール内から割り当てます。 サービス管理者のアカウントが管理コンソールにアクセスするには、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] のライセンスが必要です。|
 
 
 
 ### デバイス登録マネージャー
-|アクセス許可のレベル|詳細情報|
+|アクセス許可のレベル|説明|
 |--------------------------|-------------------------|
 |デバイス登録マネージャーは、5 つを超えるデバイスを登録するための追加の権限を持つ標準ユーザー アカウントです。|既定では、各 [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] ユーザーは最大 5 つのデバイスを登録できます。 ただし、ユーザー アカウントにデバイス登録マネージャーのアクセス許可を与えると、そのアカウントを使用して企業所有のデバイスの大規模なグループを登録できます。 これは、一時的にデバイスをユーザーに割り当てる可能性がある場合や、ユーザーとデバイスの関連付けが必要ないキオスク モードで使用する場合に役立ちます。|
 
@@ -94,6 +94,6 @@ Intune を管理するには、以下を使用します。
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

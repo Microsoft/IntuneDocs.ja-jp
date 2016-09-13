@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cefb485f-f555-4da9-b4bf-d569cc4d5581
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
-ms.openlocfilehash: 083dd1a11e291ff0d92b1bfa3ec61033f26f3d4b
+ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
+ms.openlocfilehash: 8ac8f8a7c60c099f8fe943ba01b5fe20a376c93d
 
 
 ---
@@ -38,11 +38,10 @@ Intune に登録されている携帯電話が紛失や盗難にあった場合�
 
 紛失したまたは盗難にあったデバイスを自分でリセットできない場合は、IT 管理者に依頼してください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
-### 関連項目
-[Windows デバイスを Intune で使用する](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+
+<!--HONumber=Aug16_HO5-->
 
 

@@ -4,18 +4,18 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 06/01/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 609ed567e40cc35a6e36539ca58165f9193cec65
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 78d0ff0d282cc91cb361dbb324a03778548dcf45
 
 
 ---
@@ -100,6 +100,6 @@ Microsoft Intune ポータル サイトでは、会社や学校のデータと�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

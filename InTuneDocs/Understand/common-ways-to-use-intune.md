@@ -4,7 +4,7 @@ description: "Intune でできる最も一般的なタスクのうち 6 つを�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 08/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76d0d9c620000864a4a554600985ba351c18d359
-ms.openlocfilehash: e9315040972df39c543a1e99d197a64cf280b7ff
+ms.sourcegitcommit: 2ebb8fcf348cfdc7600c37b40824f5bba37a7f36
+ms.openlocfilehash: 4614c13d98c4b05882bbeabfbbd7de83d9bea2da
 
 
 ---
@@ -26,10 +26,14 @@ ms.openlocfilehash: e9315040972df39c543a1e99d197a64cf280b7ff
 >[!NOTE]
 >Microsoft IT は Intune を使用して、企業のデータを保護しながら、Microsoft の従業員が個人のモバイル デバイスで会社のリソースにアクセスすることを可能にしています。 Microsoft IT が Intune とその他のサービスをどのように使用して ID、デバイス、アプリ、およびデータを管理しているか、[こちらのテクニカル ケース スタディ](https://www.microsoft.com/itshowcase/Article/Content/588)でその方法の詳細をご確認ください。  
 
+>[!IMPORTANT]
+>モバイル デバイスを確実に最新の状態にする<br>
+>iOS デバイスへの "Trident" マルウェアによる最近の攻撃を踏まえ、ブログ記事「[Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/)」(Microsoft Intune でモバイル デバイスを確実に更新する) を新たに公開しました。デバイスを安全に、かつ最新の状態に保つために役立つ Intune のさまざまな使い方について説明しています。
+
 ## モバイル デバイスで安全にアクセスできるようにオンプレミスの電子メールとデータを保護する
 ほとんどのエンタープライズ モビリティ戦略は、従業員がモバイル デバイスを使用してインターネット上の電子メールに安全にアクセスできるようにするための計画で始まります。 組織の多くは、まだ自社ネットワークでホストするオンプレミスのデータとアプリケーション サーバーを使用しています (Microsoft Exchange など)。 Intune と Enterprise Mobility Suite (EMS) が提供する Exchange Server 向けの統合された[条件付きアクセス ソリューション](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)により、企業ネットワークに別のゲートウェイ マシンを展開することなく、Intune でデバイスを登録するまで、どのモバイル アプリからも電子メールにアクセスできないようにすることができます。
 
-電子メール以外にも、基幹業務アプリケーション サーバーのような、オンプレミス データへの安全なアクセスを必要とするモバイル アプリへのアクセスを有効にすることもできます。  通常、これを行うには、アクセス制御のための [Intune で管理された証明書](/en-us/intune/deploy-use/secure-resource-access-with-certificate-profiles)と、境界内の標準の VPN ゲートウェイまたはプロキシ (Microsoft Azure AD アプリケーション プロキシなど) を組み合わせて使用します。  このようなケースで企業のデータにアクセスする唯一の方法は、デバイスを管理システムに登録することです。  登録後は、管理システムによって、会社のデータにアクセスするデバイスがポリシーに準拠していることが確認されます。  さらに、Intune の[アプリ ラッピング ツールとアプリ SDK](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) を使用すると、コンシューマー向けのアプリケーションやサービスに会社のデータが渡されることのないよう、アクセスされるデータを基幹業務アプリケーション内に保持するのに役立ちます。
+電子メール以外にも、基幹業務アプリケーション サーバーのような、オンプレミス データへの安全なアクセスを必要とするモバイル アプリへのアクセスを有効にすることもできます。  このようにするには一般的に、[Intune で管理される証明書](/intune/deploy-use/secure-resource-access-with-certificate-profiles)を使用してアクセスを制御することに加えて、標準的な VPN ゲートウェイまたはプロキシ (たとえば Microsoft Azure AD アプリケーション プロキシ) を境界に配備します。  このようなケースで企業のデータにアクセスする唯一の方法は、デバイスを管理システムに登録することです。  登録後は、管理システムによって、会社のデータにアクセスするデバイスがポリシーに準拠していることが確認されます。  さらに、Intune の[アプリ ラッピング ツールとアプリ SDK](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) を使用すると、コンシューマー向けのアプリケーションやサービスに会社のデータが渡されることのないよう、アクセスされるデータを基幹業務アプリケーション内に保持するのに役立ちます。
 
 <!-- Learn more about how to plan and deploy Intune to help secure on-premises email and data. -->
 
@@ -68,6 +72,6 @@ Intune の[一括プロビジョニングと管理のソリューション](/int
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

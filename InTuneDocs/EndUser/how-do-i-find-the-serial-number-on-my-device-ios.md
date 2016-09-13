@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e6c4fedc-47b6-44b1-8c59-2fb81417f978
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 76bf2c9f93c7bc0460c137c9a5e2e03c9767038b
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 3a7847f4ad5cc0aaa42c83942689683cc2d53a73
 
 
 ---
@@ -27,11 +27,10 @@ iOS 7.1 以降を実行しているデバイスで、**[設定]** アイコン�
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
-### 関連項目
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

@@ -2,9 +2,9 @@
 title: "Microsoft Intune ポータル サイト | Microsoft Intune"
 description: "[Intune 会社のポータル] のセットアップ"
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: 743be083ca9e8bed989982092f103b18f8f73582
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: 7c9fceaae077907480d4c207d56f654d168248a1
 
 
 ---
@@ -53,6 +53,6 @@ Intune ポータル サイトは、会社のデータとアプリに対するア
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

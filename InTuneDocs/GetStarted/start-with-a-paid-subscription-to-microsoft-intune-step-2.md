@@ -2,9 +2,9 @@
 title: "カスタムのドメイン名を構成する | Microsoft Intune"
 description: "Intune サブスクリプションのカスタム ドメイン名を追加するプロセスについて説明します"
 keywords: 
-author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+author: barlanmsft
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: f18afc5487fe20ba4a13d938dad78fa6087128d7
+ms.sourcegitcommit: bf2122afc7f86d81b9d072147b19f75be2a55b51
+ms.openlocfilehash: 63c0b3340a6f69e20c85abf7947c25ce88f5d826
 
 
 ---
@@ -31,7 +31,7 @@ Microsoft のクラウドベースのサービスにサブスクライブする�
 > [!TIP]
 > Microsoft のクラウドベースのサービスでカスタム ドメインを使用する方法の詳細については、「[Azure Active Directory でのカスタム ドメイン名の概念の概要](https://azure.microsoft.com/documentation/articles/active-directory-add-domain-concepts/)」をご覧ください。
 
-### 次の手順
+### 次のステップ
 これで終了です。 *Intune のクイック スタート ガイド*の手順 2 が完了しました。
 
 >[!div class="step-by-step"]
@@ -40,6 +40,6 @@ Microsoft のクラウドベースのサービスにサブスクライブする�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 
