@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: fbc9c2b9-b454-4b33-86cc-650742bbf1e1
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 1392a8a02dd740c6e1f67540e183c595ae66de3f
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 5a2a53e1fa012c2b786d5955749d1f8442a32030
 
 
 ---
@@ -31,11 +31,10 @@ ms.openlocfilehash: 1392a8a02dd740c6e1f67540e183c595ae66de3f
 
 -   ポータル サイト アプリでデバイスをシェイクし、診断アラートが表示されたら、**[電子メール]** をタップする。 デバイスをシェイクしてもアラートが表示されない場合は、**[設定]** &gt; **[ポータル サイト]** の順に開き、**[シェイク ジェスチャ]** オプションがオンになっていることを確認します。
 
-### 関連項目
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+
+<!--HONumber=Aug16_HO5-->
 
 

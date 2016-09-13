@@ -4,7 +4,7 @@ description: "エンド ユーザーが iOS アプリを使用できるように
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6dbb6012389d8058c2d9b1c46b4ae8c2418a6130
-ms.openlocfilehash: 30ebdfa1729df81a3b4a4a90b71aadacf373bb2d
+ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
+ms.openlocfilehash: 212dcd31697180dae61569dda13b56704a079bf4
 
 
 ---
@@ -32,12 +32,23 @@ Microsoft Intune を通して配布したアプリをエンド ユーザーが�
 
 **管理されていないアプリ** - ポリシーによって管理でき、Intune によってラップされていないアプリまたは Intune MAM SDK を組み込んでいないアプリです。 これらのアプリにアプリケーション ポリシーを適用することはできません。
 
+Apple の制限では、基幹業務および管理対象アプリのストア アプリをポータル サイト アプリに一覧表示することが禁止されています。つまり、ユーザーが自分のすべてのアプリを見るには異なるビューを持つ必要があります。 ポータル サイト アプリのアプリ ページに表示されている各タイルのアプリは、次のようにして使用します。
+
+- **[Company Apps (会社のアプリ)]** タイルは、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)の **[すべて]** タブのすべてのアプリの一覧に関連付られています。
+
+- **[その他のアプリ]** タイルは、現在、Apple がポータル サイト アプリに表示を許可しているすべてのアプリを一覧表示する、ポータル サイト アプリ内のビューに関連付られています。 これには、基幹業務および管理対象アプリのストア アプリを除くすべてのアプリが含まれます。
+
+- **[カテゴリ]** タイルは、現在、アプリのカテゴリを一覧表示する、ポータル サイト アプリ内のビューに関連付られています。
+
+    ![ios-how-to-sync-device-with-intune](./media/ios-sync-comp-portal-apps.png)
+
+
 ###関連項目
 [Android ユーザーがアプリを入手する方法](how-your-android-users-get-their-apps.md)</br>
 [Windows ユーザーがアプリを入手する方法](how-your-windows-users-get-their-apps.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

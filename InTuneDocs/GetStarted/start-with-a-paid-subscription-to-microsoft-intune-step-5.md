@@ -2,9 +2,9 @@
 title: "ユーザーとデバイスを編成するグループを作成する | Microsoft Intune"
 description: "Intune サブスクリプションのユーザーとグループを作成する方法について説明します"
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: afdff3d04fa0b6aeba44a3296147ebf207319c49
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: 3b2f896ea6c3e66924dbd8b35fcddcccd0b65ca6
 
 
 ---
@@ -75,6 +75,6 @@ Intune の [グループ] を使用すると、デバイスとユーザーを柔
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -2,9 +2,9 @@
 title: "Active Directory を同期化して Intune にユーザーを追加する | Microsoft Intune"
 description: "Azure AD とのオンプレミス ユーザーの同期化と、Intune サブスクリプションに対する管理者権限の付与について説明します"
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: 49eb9d1658df352c68677eaa3f29e1d57c43947e
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: a2ed4b1e025437cca6de4a15b3800daa2c9a212b
 
 
 ---
@@ -48,6 +48,6 @@ Intune サブスクリプションにユーザーを追加した後で、ごく�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

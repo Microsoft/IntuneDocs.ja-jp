@@ -1,10 +1,10 @@
 ---
-title: "モバイル デバイス管理機能 | Microsoft Intune"
-description: "このトピックを読んで、サービスに登録したモバイル デバイスの管理に Intune がどれぐらい役立つかご確認ください。"
+title: "登録済みのデバイス管理機能 | Microsoft Intune"
+description: "登録するデバイスの管理における Intune の利点についてはこのトピックを参照してください。"
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2ef264e963f689bb5a47a795170e0b9915848eec
-ms.openlocfilehash: efe86b7fd56603de2b910a8ec76b6de91db3b698
+ms.sourcegitcommit: a09c5e3349945cfdcb4ae9d3aa51aa3f7024330a
+ms.openlocfilehash: eab582d30408d1a57643e30ba4965bd08f6ce847
 
 
 ---
-# Microsoft Intune のモバイル デバイス管理機能
+# Microsoft Intune の登録済みデバイス管理機能
 
 Microsoft Intune では、サービスにデバイスを*登録*することによって、さまざまなデバイスを管理できます。 管理者が自分でデバイスの種類を登録することも、ユーザーが*ポータル サイト* アプリを使って登録することもできます。 ユーザーは、アプリの参照とインストール、デバイスが会社のポリシーに準拠していることの確認、IT サポートへの問い合わせなどの操作を行うこともできます。
 
@@ -70,6 +70,6 @@ Microsoft Intune では、サービスにデバイスを*登録*することに�
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

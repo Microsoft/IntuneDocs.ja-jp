@@ -10,6 +10,6 @@
 [Intune ソフトウェア クライアント](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)では、Windows 7 以降のオペレーティング システムを実行している Windows PC を管理することができます。 Enterprise Management Suite (EMS) をお持ちのお客様は、[Azure Active Directory (AAD) を使用して Windows 10 デバイスを登録する](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)こともできます。
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO1-->
 
 

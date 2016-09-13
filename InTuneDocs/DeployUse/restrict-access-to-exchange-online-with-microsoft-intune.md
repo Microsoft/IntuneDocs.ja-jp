@@ -3,7 +3,7 @@ title: "Exchange Online への電子メール アクセスを制限する | Micr
 description: "条件付きアクセスで Exchange Online の会社電子メールへのアクセスを保護および制御します。"
 keywords: 
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
-ms.openlocfilehash: 5030e74215960189bf35632bd6966b411d2e6a66
+ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
+ms.openlocfilehash: 38273970b6bb6f576786e6a7a2aeaaa65ee07d37
 
 
 ---
@@ -29,7 +29,7 @@ Exchange Online または新しい Exchange Online Dedicated 環境への電子�
 >[!IMPORTANT]
 >先進認証を使用したアプリでの PC および Windows 10 Mobile デバイスに対する条件付きアクセスは、現在、Intune の一部のお客様だけが使用できます。 これらの機能を既に使用している場合は、何も行う必要はありません。 機能を引き続き使用できます。
 
->先進認証を使用したアプリでの PC および Windows 10 Mobile に対する条件付きアクセス ポリシーをまだ作成しておらず、これから作成する予定である場合は、要求を送信する必要があります。  既知の問題およびこの機能へのアクセス方法の詳細については、[Microsoft Connect サイト](http://go.microsoft.com/fwlink/?LinkId=761472)をご覧ください。
+>最新の認証を使用したアプリ用に PC または Windows 10 Mobile の条件付きアクセス ポリシーを初めて作成する場合は、Intune の管理対象デバイスまたはドメイン参加 Windows PC 用のデバイス ベースの条件付きアクセスが含まれる Azure Active Directory のパブリック プレビューにサインアップしてください。 詳細については、[こちらのブログ投稿](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/)をお読みください。  
 
 条件付きアクセスを構成する**前に**、次のことを行う必要があります。
 
@@ -196,7 +196,7 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
         * Mac OS などのサポートされていないプラットフォーム  ただし、これらのプラットフォームからの最新の認証を使用しているアプリは、それでもブロックされます。
 
         >[!TIP]
-           PC に対して条件付きアクセスを使用していないと、このオプションは表示されない場合があります。  その場合は、代わりに **[特定のプラットフォーム]** を使用してください。 PC の条件付きアクセスは、現在、Intune の一部のお客様だけが使用できます。   既知の問題およびこの機能へのアクセス方法の詳細については、[Microsoft Connect サイト](http://go.microsoft.com/fwlink/?LinkId=761472)をご覧ください。
+           PC に対して条件付きアクセスを使用していないと、このオプションは表示されない場合があります。  その場合は、代わりに **[特定のプラットフォーム]** を使用してください。 PC の条件付きアクセスは、現在、Intune の一部のお客様だけが使用できます。   この機能を利用する方法の詳細については、[こちらのブログ投稿](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/)をお読みください。
 
     -   **特定のプラットフォーム**
 
@@ -260,6 +260,6 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -4,7 +4,7 @@ description: "Intune Exchange ActiveSync ポリシーを使用して、Exchange 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72e6bcd3fd480c1ed8558fefd3958b4bbf3184c2
-ms.openlocfilehash: 39a844db56edf18f25996c1aaf52223ac80f8071
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 9a481e1ce7815a0411651fc724e3fc2f5d374eac
 
 
 ---
@@ -26,7 +26,7 @@ Microsoft Intune **Exchange ActiveSync** ポリシーを使用して、Exchange 
 ## パスワードの設定
 
 |設定の名前|説明
-|----------------|
+|----------------|---|
 |**モバイル デバイスのロックを解除するパスワードを要求する**|パスワードを使用してデバイスをロックする必要があるかどうかを指定します <br>(Windows RT を実行するデバイスには適用されません)。|
 |**必要なパスワードの種類**|数値のみや英数字など、必要なパスワードの種類を指定します。|
 |**パスワードの最小文字数**|デバイスのパスワードに必要な最小文字数を指定します。|
@@ -40,7 +40,7 @@ Microsoft Intune **Exchange ActiveSync** ポリシーを使用して、Exchange 
 ## 暗号化の設定
 
 |設定の名前|説明|
-|----------------|
+|----------------|---|
 |**モバイル デバイスの暗号化を要求する**<sup>1</sup>|サポートされている場合にデバイス上のデータの暗号化を要求します。<br><br>Windows Phone 8 デバイスの場合、これを **[はい]**に設定する必要があります。<br /><br />iOS デバイスでの暗号化を有効にするには、**[モバイル デバイスのロック解除にパスワードを必要とする]** 設定を有効にします。|
 |**メモリ カードの暗号化を必要とする**|(サポートされているデバイス上で) SD カードなどの外部ストレージに保存されたデータの暗号化を要求します。
 <sup>1</sup> Windows 8.1 が実行されているデバイスの追加情報
@@ -56,7 +56,7 @@ Microsoft Intune **Exchange ActiveSync** ポリシーを使用して、Exchange 
 ## 電子メールの設定
 
 |設定の名前|説明
-|----------------|
+|----------------|---|
 |**ユーザーが電子メールの添付ファイルをダウンロードできるようにする**|電子メールの添付ファイルをデバイスにダウンロードできるようにするかどうかを指定します。|
 |**電子メールを同期する期間**|受信した電子メールをデバイスと同期する日数を指定します。
 |**Exchange ActiveSync を完全にサポートしていないモバイル デバイスによる Exchange との同期を許可する**|1 つまたは複数の Exchange ActiveSync 設定をサポートしないデバイスで Exchange へのアクセスを許可するかどうかを指定します。
@@ -64,13 +64,13 @@ Microsoft Intune **Exchange ActiveSync** ポリシーを使用して、Exchange 
 ## ブラウザー設定
 
 |設定の名前|説明
-|----------------|-
+|----------------|---|
 |**Web ブラウザーを許可する**|デバイスの Web ブラウザーを使用できるようにするかどうかを指定します <br>(Windows RT または Windows Phone では使用できません)。
 
 ## ハードウェア設定
 
 |設定の名前|説明
-|----------------|
+|----------------|---|
 |**カメラを許可する**|デバイスのカメラを使用できるようにするかどうかを指定します。<br>(Windows RT または Windows Phone では使用できません)。
 
 
@@ -80,6 +80,6 @@ Microsoft Intune **Exchange ActiveSync** ポリシーを使用して、Exchange 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

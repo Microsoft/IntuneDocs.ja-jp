@@ -23,14 +23,14 @@
 ### [構成後のタスク](post-configuration-tasks.md)
 
 ## [デバイスを管理する方法を選択する](choose-how-to-manage-devices.md)
-### [モバイル デバイス管理機能](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Windows PC 管理機能](windows-pc-management-capabilities-in-microsoft-intune.md)
+### [登録済みのデバイス管理機能](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Intune PC ソフトウェア クライアントの機能](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 ## [Intune の展開のロールアウト フェーズ](rollout-phases-for-microsoft-intune-deployment.md)
 ### [プロジェクト スコープ](project-scope.md)
 ### [概念実証](proof-of-concept.md)
-### [パイロット](pilot.md)
-### [全社的なロールアウト](enterprise-rollout.md)
+### [パイロット運用](pilot.md)
+### [企業でのロールアウト](enterprise-rollout.md)
 ### [運用とメンテナンス](operations-and-maintenance.md)
 
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
@@ -39,6 +39,6 @@
 # [トラブルシューティング](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

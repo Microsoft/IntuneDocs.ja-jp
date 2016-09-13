@@ -4,7 +4,7 @@ description: "Intune を使用して、管理する登録デバイスの設定�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a083684da6abe9617f8b27604450c2a3b996b7cf
-ms.openlocfilehash: eeacb3f0898f2a1375a4119e01c939dd11d43940
+ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
+ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
 
 
 ---
@@ -132,9 +132,6 @@ Intune ポリシーの一覧については、「[Microsoft Intune policy refere
 
 ポータル サイトの連絡先情報の修正など、他の変更ではデバイスへの通知はすぐに行われません。
 
-> [!TIP]
-> 設定を含むポリシーを Android デバイスに展開すると、ユーザーに対してポリシーに準拠するための措置を講じるように求めるメッセージが表示されます。 ユーザーがこの措置を講じるか、デバイスが再起動されるまで、新しいポリシー設定は有効になりません。
-
 ### 複数のポリシーが同じユーザーまたはデバイスに展開される場合、どの設定が適用されるのかどうすればわかりますか。
 2 つ以上のポリシーが同じユーザーまたはデバイスに展開される場合、適用される設定の評価は個々の設定レベルで行われます。
 
@@ -215,6 +212,6 @@ Intune は Apple 構成ファイルのペイロードまたはカスタム Open 
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

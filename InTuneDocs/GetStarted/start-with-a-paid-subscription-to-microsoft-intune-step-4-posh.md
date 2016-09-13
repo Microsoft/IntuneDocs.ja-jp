@@ -2,9 +2,9 @@
 title: "PowerShell を使用して Intune ライセンスを管理する | Microsoft Intune"
 description: "PowerShell を使用して Intune ライセンスを管理する"
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: aac4e230c3670cf27c57b063afac12b604abf53c
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: a2dbb6dadb2b68ace349e8b9b0567c132ac55482
 
 
 ---
@@ -67,6 +67,6 @@ EMS サービスのユーザー ライセンスを選択的に割り当てるに
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: b17a47a2924ef36df69db2aa852f0b225471ecd1
+ms.sourcegitcommit: 44443db664753b202cc3fa07f8b76894320dc55d
+ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
 
 
 ---
@@ -35,14 +35,14 @@ ms.openlocfilehash: b17a47a2924ef36df69db2aa852f0b225471ecd1
 --------------
 
 |ポリシー設定| Windows 8.1 以降| Windows Phone 8.1 以降| iOS 6.0 以降|Android 4.0 以降<br/>Samsung KNOX Standard 4.0 以降|
-|-----|----|----|----|
+|-----|----|----|----|----|
 |**PIN またはパスワードの構成** |修復|修復|修復|検疫済み|
-|**デバイスの暗号化**|N/A|修復|修復 (PIN の設定による)|検疫済み|
-|**脱獄または root 化されたデバイス**|N/A|N/A|検疫済み (設定ではありません)|検疫済み (設定ではありません)|
-|**電子メールのプロファイル**|N/A|該当なし|検疫済み|N/A|
+|**デバイスの暗号化**|該当なし|修復|修復 (PIN の設定による)|検疫済み|
+|**脱獄または root 化されたデバイス**|該当なし|該当なし|検疫済み (設定ではありません)|検疫済み (設定ではありません)|
+|**電子メールのプロファイル**|該当なし|該当なし|検疫済み|該当なし|
 |**最小 OS バージョン**|検疫済み|検疫済み|検疫済み|検疫済み|
 |**最大 OS バージョン**|検疫済み| 検疫済み| 検疫済み| 検疫済み|
-|**Windows 正常性構成証明書**|Windows 10 および Windows 10 Mobile は検疫されます。<br /><br />Windows 8.1 には設定を適用できません。|N/A|該当なし|N/A|
+|**Windows 正常性構成証明書**|Windows 10 および Windows 10 Mobile は検疫されます。<br /><br />Windows 8.1 には設定を適用できません。|N/A|該当なし|該当なし|
 --------------
 **修復** = デバイスのオペレーティング システムによってコンプライアンスが適用されます (たとえば、ユーザーが PIN の設定を求められます)。  設定が非準拠となる場合はありません。
 
@@ -62,6 +62,6 @@ ms.openlocfilehash: b17a47a2924ef36df69db2aa852f0b225471ecd1
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

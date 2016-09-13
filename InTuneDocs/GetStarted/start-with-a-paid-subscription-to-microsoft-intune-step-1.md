@@ -2,9 +2,9 @@
 title: "Intune にサインアップまたはサインインする | Microsoft Intune"
 description: "Intune サブスクリプションにサインアップする方法、またはサブスクリプションがある場合にサインインする方法"
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: a5a1b14db9b029d4fcd1fbd76806d0c527275b2b
+ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
+ms.openlocfilehash: fddf33ecc0296d5bfabb710e0d4b178f75659009
 
 
 ---
@@ -51,6 +51,6 @@ Intune にサインインまたはサインアップする前に、Microsoft Onl
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
