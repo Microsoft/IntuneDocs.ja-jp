@@ -4,7 +4,7 @@ description: "Intune クライアント ソフトウェアをインストール�
 keywords: 
 author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 08/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cf471320f122eea7804ff6cd6cad208f8cd5a692
-ms.openlocfilehash: f264dc3740ce9b117fcc01c39792904a2dc6e7ab
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: a13c03cde29c46a78577b58f85daad30a076bf89
 
 
 ---
@@ -24,10 +24,10 @@ ms.openlocfilehash: f264dc3740ce9b117fcc01c39792904a2dc6e7ab
 
 Intune では、Windows Server における Active Directory ドメイン サービス (AD DS) グループ ポリシー オブジェクト (GPO) と似た方法でポリシーを使用して Windows PC を管理します。 Active Directory ドメインに参加しているコンピューターを Intune で管理する場合は、[Intune のポリシーが組織で設定されているどの GPO とも競合しないようにしてください](resolve-gpo-and-microsoft-intune-policy-conflicts.md)。
 
-Intune ソフトウェア クライアントでは、ソフトウェアの更新、Windows ファイアウォール、および Endpoint Protection を管理することで [PC の保護に役立つ管理機能](policies-to-protect-windows-pcs-in-microsoft-intune.md)がサポートされますが、Intune クライアントで管理される PC を、モバイル デバイス管理に特化した **Windows** ポリシー設定などの他の Intune ポリシーの対象とすることはできません。
+Intune ソフトウェア クライアントでは、ソフトウェアの更新、Windows ファイアウォール、および Endpoint Protection を管理することで [PC の保護に役立つ管理機能](policies-to-protect-windows-pcs-in-microsoft-intune.md)がサポートされますが、Intune ソフトウェア クライアントで管理される PC を、モバイル デバイス管理に特化した **Windows** ポリシー設定などの他の Intune ポリシーの対象とすることはできません。
 
 > [!NOTE]
-> Windows 8.1 以降を実行しているデバイスは、Intune クライアントを使用して管理できるほか、モバイル デバイスとして登録することもできます。 以下は、Intune クライアントを実行するコンピューターに適用される情報です。 Intune PC クライアントとモバイル デバイス管理用の Windows デバイス登録の両方のインストールはサポートされません。
+> Windows 8.1 以降を実行しているデバイスを Intune クライアントで、またはモバイル デバイスとして管理できます。 このトピックは、Intune ソフトウェア クライアントを実行しているコンピューターに適用されます。 Intune クライアントのインストールとモバイル デバイス管理の登録はサポートされません。
 
 ## Intune PC クライアント管理の要件
 
@@ -48,29 +48,14 @@ Intune ソフトウェア クライアントでは、ソフトウェアの更新
 |Windows インストーラー 3.1|PC には Windows インストーラー 3.1 以降がインストールされている必要があります。<br /><br />PC で Windows インストーラーのバージョンを確認するには<br /><br />-   PC で、**%windir%\System32\msiexec.exe** を右クリックし、**[プロパティ]** をクリックします。<br /><br />最新バージョンの Windows インストーラーは、Microsoft Developer Network Web サイトの「 [Windows Installer Redistributables (Windows インストーラー再頒布可能パッケージ)](http://go.microsoft.com/fwlink/?LinkID=234258) 」からダウンロードできます。|
 |互換性のないクライアント ソフトウェアを削除する|Intune クライアント ソフトウェアをインストールする前に、その PC から Configuration Manager または System Management Server クライアント ソフトウェアをアンインストールする必要があります。|
 
-## Intune コンピューター クライアントのインストール
-Intune クライアント ソフトウェアは、次の方法のいずれかでインストールできます。
-
--  [Microsoft Intune クライアント ソフトウェアを手動で展開します](install-the-windows-pc-client-with-microsoft-intune.md#to-manually-deploy-the-client-software)。 この種類の展開では、管理者は Intune クライアント ソフトウェアをダウンロードし、手動で各 PC にインストールします。
-
-  Intune クライアント ソフトウェアをダウンロードするには、[Intune 管理コンソール](https://manage.microsoft.com)を開いて、**[管理]**  >  **[クライアント ソフトウェアのダウンロード]** の順に選択し、**[クライアント ソフトウェアのダウンロード]** をクリックします。
-
--  Intune クライアント ソフトウェアを手動でインストールする場合にダウンロードするのと同じファイルを使用して、[ドメインに参加しているコンピューターに Active Directory GPO を使ってクライアントを展開します](install-the-windows-pc-client-with-microsoft-intune.md#to-automatically-deploy-the-client-software-by-using-group-policy)。
-
--  Intune クライアント ソフトウェアを、[オペレーティング システムの展開](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image)の一部としてコンピューターに展開します。
-
--  Intune ポータル サイトの URL ([https://portal.manage.microsoft.com](http://go.microsoft.com/fwlink/?LinkId=825632)) を含む指示をユーザーに送信します。 ユーザーがポータル サイトを開くときに、Intune クライアント ソフトウェアをダウンロードして実行することで PC を登録するように求めるダイアログが表示されます。
-
 ## Intune コンピューター クライアントを使用したコンピューター管理
-Intune クライアント ソフトウェアのインストール後は、[アプリケーション管理](deploy-apps-in-microsoft-intune.md)、Endpoint Protection、ハードウェアおよびソフトウェアのインベントリ、リモート制御 (リモート アシスタンス要求を使用)、ソフトウェア更新プログラム、コンプライアンス設定レポートなど、クライアント ソフトウェアが備えるさまざまなコンピューター管理機能を使用できます。
+Intune クライアント ソフトウェアのインストール後は、[アプリケーション管理](deploy-apps-in-microsoft-intune.md)、[リアルタイム監視と Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)、[Windows ファイアウォール設定管理](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)、ハードウェアおよびソフトウェアのインベントリ、リモート制御 (リモート アシスタンス要求を使用)、[ソフトウェア更新設定](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)、コンプライアンス設定レポートなどの管理機能を使用できます。
 
-コンピューター クライアントで実行できる各種コンピューター管理タスクは、次のような Intune ポリシーを使用して管理されます。
+モバイル デバイスとして管理されている PC に使用できる管理オプションは、以下を含むソフトウェア クライアントが管理する PC には使用できません。
 
--   管理対象コンピューターの [Windows ファイアウォール設定](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)の構成
-
--   管理対象コンピューターが必須のソフトウェア更新プログラムを確認してダウンロードするための[ソフトウェア更新設定](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)の構成
-
--   管理対象コンピューターを脅威や悪意のあるソフトウェアから保護するための、[リアルタイム監視と Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) 管理によるサポート
+-   フル ワイプ (選択的ワイプは使用可能)
+-   条件付きアクセス
+-   **コンピューターの管理**ポリシー以外の Windows ポリシー
 
 ![Windows PC のポリシー テンプレート](../media/pc_policy_template.png)
 
@@ -90,6 +75,6 @@ Intune のクライアント エージェントは通常、ユーザー操作や
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

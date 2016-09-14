@@ -1,6 +1,6 @@
 ---
 title: "一般的な Windows PC 管理タスク | Microsoft Intune"
-description: "このトピックのタスクを参照して、Intune PC クライアント ソフトウェアを実行するコンピューターを管理する方法を確認してください。"
+description: "このトピックのタスクを参照して、Intune ソフトウェア クライアントを実行する Windows PC を管理する方法を確認してください。"
 keywords: 
 author: NathBarn
 manager: angrobe
@@ -13,22 +13,24 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
-ms.openlocfilehash: 93d5718fcd9949945180434b0f89eea96e92bbc6
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 9ef18ee054928fcfb12a36fe8ac3ad3c2909f6c1
 
 
 ---
 
-# Microsoft Intune コンピューター クライアントを使用した一般的な Windows PC 管理タスク
-このトピックのタスクを参照して、Intune PC クライアント ソフトウェアを実行するコンピューターを管理する方法を確認してください。 まだクライアントをコンピューターにインストールしていない場合は、「[Microsoft Intune を使用して Windows PC クライアントをインストールする](install-the-windows-pc-client-with-microsoft-intune.md)」を参照してください。
+# Intune ソフトウェア クライアントを使用した一般的な Windows PC 管理タスク
+このトピックのタスクを参照して、Intune ソフトウェア クライアントを実行するコンピューターを管理する方法を確認してください。 まだクライアントをコンピューターにインストールしていない場合は、[Intune ソフトウェア クライアントのインストール](install-the-windows-pc-client-with-microsoft-intune.md)に関するページを参照してください。
 
 
 ## ポリシーを使用して PC 管理を簡略化する
-### Windows ファイアウォールの管理
-ポリシーを使用すると、管理対象コンピューターの Windows ファイアウォール設定の管理が簡単になります。 詳細については、「[Microsoft Intune で Windows ファイアウォール ポリシーを使用して Windows PC を保護する](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)」を参照してください。
+
+Intune ソフトウェア クライアントを実行する Windows PC は、Intune の**コンピューターの管理**ポリシーを使って管理できます。
+
+![Windows PC のポリシー テンプレート](../media/pc_policy_template.png)
 
 ### Microsoft Intune Center の管理
-Microsoft Intune Center を使用してユーザーは次の操作を実行できます。
+ユーザーは、Intune ソフトウェア クライアントを **Microsoft Intune Center** として確認します。 Microsoft Intune Center を使用してユーザーは次の操作を実行できます。
 
 -   ポータル サイトからアプリケーションを取得する。
 
@@ -49,11 +51,14 @@ Microsoft Intune Center は、管理されているすべてコンピュータ�
 |**Web サイトの URL**|サポート Web サイトの URL。<br /><br />最大文字数:150 字|
 |**注**|ユーザーに表示されるメモ。<br /><br />最大文字数:120 字|
 
-### ソフトウェア更新設定の管理
-ポリシーを使用して、管理対象コンピューターが Microsoft やサード パーティのソフトウェアの更新プログラムをチェックしたり、ダウンロードするときに使用する設定を構成します。 詳細については、「[Microsoft Intune でソフトウェア更新プログラムを使用して Windows PC を最新の状態に保つ](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)」を参照してください。
+## ソフトウェア更新設定
+ポリシーを使用して、管理対象コンピューターが Microsoft やサード パーティのソフトウェアの更新プログラムをチェックしたり、ダウンロードするときに使用する設定を構成します。 更新には、オペレーティング システムのアップグレードを含みません (つまり、 Windows 7 から Windows 10 へのアップグレードまたは Windows 10 のあるバージョンからそれ以降のバージョンへのアップグレード)。 詳細については、「[Microsoft Intune でソフトウェア更新プログラムを使用して Windows PC を最新の状態に保つ](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)」を参照してください。
 
-### Endpoint Protection 設定の管理
+### Endpoint Protection の設定
 ポリシーを使用して、Endpoint Protection の設定を構成し、管理対象コンピューターに展開します。 これには、スキャンのスケジュール、マルウェアを検出したときの操作などが含まれます。 詳細については、「[Microsoft Intune の Endpoint Protection を使用して Windows PC を保護する](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)」を参照してください。
+
+## Windows ファイアウォールの設定
+ポリシーを使用すると、管理対象コンピューターの Windows ファイアウォール設定の管理が簡単になります。 詳細については、「[Microsoft Intune で Windows ファイアウォール ポリシーを使用して Windows PC を保護する](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)」を参照してください。
 
 ## ハードウェアとソフトウェアのインベントリを表示する
 Intune は、管理されたコンピューターのハードウェアおよびソフトウェアに関する詳細情報を収集します。 以下の手順を参照して、次の項目を作成する方法を確認してください:
@@ -113,17 +118,17 @@ Intune は、管理されたコンピューターのハードウェアおよび�
 
 2.  削除するデバイスを選択し、**[インベントリからの削除/ワイプ]** を選択します。
 
-コンピューターを Intune に再登録する場合は、「[Microsoft Intune を使用して Windows PC クライアントをインストールする](install-the-windows-pc-client-with-microsoft-intune.md)」の情報を参照して、そのコンピューターにクライアント ソフトウェアを再度インストールしてください。
+コンピューターを Intune に再登録する場合は、「[Microsoft Intune を使用して Windows PC クライアントをインストールする](install-the-windows-pc-client-with-microsoft-intune.md)」を参照して、その PC にソフトウェア クライアントを再度インストールしてください。
 
 コンピューターが Intune に接続できない場合、**[ダッシュボード]** ワークスペースにメッセージが表示されます。
 
 コンピューターを削除した場合:
 
--   コンピューターは Intune の管理とインベントリから削除され、そのコンピューターに関連付けられていたライセンスは再利用できます。 削除/ワイプを行うと、コンピューターからは Intune ソフトウェア クライアントは削除されますが、アプリまたはデータは削除されません。
+-   コンピューターは Intune の管理とインベントリから削除され、そのコンピューターに関連付けられていたライセンスは再利用できます。 削除/ワイプを行うと、コンピューターからは Intune ソフトウェア クライアントは削除されますが、アプリまたはデータは削除されません。 削除すると、コンピューターでフル ワイプは実行されません。
 
 -   そのコンピューターの状態は、Intune コンソールに表示されなくなります。
 
--   Intune によって、コンピューターからクライアント ソフトウェアが削除されます。 コンピューターが Intune サービスに接続していない場合、クライアント ソフトウェアは、次に接続したときに削除されます。
+-   Intune によって、コンピューターからソフトウェア クライアントが削除されます。 コンピューターが Intune サービスに接続していない場合、ソフトウェア クライアントは、次に接続したときに削除されます。
 
 -   コンピューターから Microsoft Intune Endpoint Protection が削除されます。 コンピューターに他のエンドポイント保護アプリケーションがインストールされ、無効になっている場合は、Microsoft Intune Endpoint Protection が削除された後で、そのアプリケーションを再び有効にして、コンピューターを保護できます。
 
@@ -160,9 +165,9 @@ Intune は、管理されたコンピューターのハードウェアおよび�
 > [!TIP]
 > エンド ユーザーが各自のコンピューターに関連付けをするのを抑制する場合は、**Microsoft Intune エージェントの設定**ポリシーの **[ユーザーによる各自のコンピューターへの関連付けを制限する]** オプションを有効にします。
 
-## Intune クライアント ソフトウェアを使用する Windows PC のリモート アシスタンスの要求と提供
+## Windows PC のリモート アシスタンス要求と提供
 
-Microsoft Intune では [TeamViewer](https://www.teamviewer.com) ソフトウェアを利用し、Intune クライアント ソフトウェアを実行する PC のユーザーがリモート アシスタンス ヘルプを受けられるようにします。 ユーザーが Microsoft Intune Center のヘルプを要求すると、通知が届きます。要求を承諾し、アシスタンスを提供できます。
+Microsoft Intune では 別売りの [TeamViewer](https://www.teamviewer.com) ソフトウェアを利用し、Intune ソフトウェア クライアントを実行する PC のユーザーがリモート アシスタンス ヘルプを受けられるようにします。 ユーザーが Microsoft Intune Center のヘルプを要求すると、通知が届きます。要求を承諾し、アシスタンスを提供できます。
 この機能は Intune の既存の Windows リモート アシスタンス機能に換わるものです。
 
 
@@ -211,6 +216,6 @@ Microsoft Intune では [TeamViewer](https://www.teamviewer.com) ソフトウェ
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO1-->
 
 

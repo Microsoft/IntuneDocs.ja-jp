@@ -4,7 +4,7 @@ description: "不正アクセスなどの脅威からのデバイス保護に In
 keywords: 
 author: Robstackmsft
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,35 +13,55 @@ ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c999a852b68762002ac94269e27ecbf46c8f9999
-ms.openlocfilehash: 3318590eaedc6f0e96fb463dc016d5786eeb38fb
+ms.sourcegitcommit: 3e761ed60fe3df81061023aa31e0545aeeadd316
+ms.openlocfilehash: be5051c46e1ef04ea140c9d440720f570edcbd1e
 
 
 ---
 
 # Microsoft Intune でデバイスを保護する
-デバイスを Intune の管理対象にした後は、無許可のアクセスやその他の脅威に対して保護されていることを確認します。 その目的に役立つ Intune の機能をいくつか示します。
 
-> [!TIP]
-> このトピックでは、デバイスのセキュリティ保護に役立つ Intune の機能の一部のみを紹介します。 たとえば、Intune ポリシーを使用すれば、パスワードの構成、暗号化設定、ハードウェア機能 (Bluetooth やデバイス カメラなど) など、さまざまなセキュリティ設定をデバイスで構成できます。 これらの設定の詳細については、「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」をご覧ください。
+Microsoft Intune では、管理するデバイスを保護するための機能とそれらのデバイスに格納されたデータをセットで提供します。 このトピックではこれらの機能の基本とその詳細を説明します。
 
-## ユーザーがデバイスからロックアウトされるときにパスコードをリセットする
-モバイル デバイス上の会社のデータを保護する最初のステップは、デバイスの使用に対してパスコードを要求することです。 場合によっては、管理者は[パスコードをリセット](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)するか、従業員によるパスコードのリセットを支援する必要があります。そのためには、パスコードを削除するか、リモートで一時パスコードを設定します。 デバイスをなくしたか、盗難に遭った場合、[デバイスをリモート ロック](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)することもできます。
+## すべてのデバイスを保護する一般的な方法
 
-## Windows デバイスに保護層を追加する
-[多要素認証 (MFA)](protect-windows-devices-with-multi-factor-authentication.md) は、ネットワーク上の Windows デバイスと Windows Phone デバイスのユーザーを認証するより安全な方法です。 MFA を使用すると、ユーザーは、ユーザー名とパスワード以外に、電話やテキスト メッセージを使用して本人であることを証明する必要があります。
+### デバイス構成
+Intune [構成ポリシー](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)は、さまざまな設定と機能を制御することでデバイスを保護および構成する際に役立ちます。 たとえば、
+- カメラや Bluetooth などのデバイス上のハードウェア機能の使用を制限できます。
+- 準拠アプリと非準拠アプリを構成できます。 非準拠アプリがインストールされている場合に警告します (一部のプラットフォームでは、インストールを実際にブロックできます)。
 
-## Windows デバイスで Microsoft Passport の設定を制御する
-Intune は、[Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) と統合できます。 これは、Windows 10 以降に対する代替サインイン方法です。 Microsoft Passport for Work は、Active Directory アカウントまたは Azure Active Directory アカウントを使って、パスワード、スマート カード、または仮想スマート カードを置き換えます。
+### ユーザーがデバイスからロックアウトされるときにパスコードをリセットする
+モバイル デバイス上の会社のデータを保護するには、まず、デバイスを使用するためのパスコードが必要になるため、場合によっては、[パスコードをリセットする](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)か、従業員がパスコードをリセットできるようにする必要があります。そのためには、パスコードを削除するか、リモートで一時パスコードを設定します。 デバイスをなくしたか、盗難に遭った場合、[デバイスをリモート ロック](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)することもできます。
 
-## iOS デバイスのアクティブ化ロックをバイパスする
+### デバイスを削除して、データを削除する
+デバイスを [Intune 管理対象から削除](retire-devices-from-microsoft-intune-management)する必要がある場合に (ユーザーが退職する、またはデバイスが紛失や盗難にあった場合など)、そのデバイスからデータを削除します。 Intune は、企業データの安全を確保するさまざまな方法を提供します。
+
+### 準拠デバイスである必要がある
+Intune は [デバイス コンプライアンス ポリシー](introduction-to-device-compliance-policies-in-microsoft-intune) を特徴としているため、指定する規則に準拠していないデバイスを評価 (場合によっては修復) できます。 たとえば、脱獄している iOS デバイスや、デバイスが暗号化されているかどうか、または正常性証明書サービスによって Windows 10 デバイスを正常と報告するかどうかについて報告できます。
+
+### アプリと使用しているデータを保護する
+Intune では、アプリとそのデータを保護するのに役立つ機能を提供します。 たとえば、モバイル アプリケーション管理 (MAM) ポリシーが、保護されているアプリからデータをバックアップされないようにし、他のアプリへのコピーや貼り付けを制限し、アプリへのアクセスに暗証番号 (PIN) を要求します。 アプリの保護の詳細については、「[Microsoft Intune でアプリとデータを保護する](protect-apps-and-data-with-microsoft-intune)」をご覧ください。
+
+## Windows デバイスの他の機能
+
+### Windows デバイスに保護層を追加する
+[多要素認証 (MFA)](protect-windows-devices-with-multi-factor-authentication.md) は、ネットワーク上の Windows デバイスと Windows Phone デバイスのユーザーを認証するより安全な方法です。  MFA を使用すると、ユーザーは、ユーザー名とパスワード以外に、電話やテキスト メッセージを使用して本人であることを証明する必要があります。
+
+### Windows デバイスで Windows Hello for Business の設定を制御する
+Intune は、[Windows Hello for Business](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) (旧 Microsoft Passport) と統合でき、パスワード、スマート カード、または仮想スマート カードの代わりに Active Directory または Azure Active Directory アカウントを使った Windows 10 以降の代替サインイン方法です。
+
+## iOS デバイスの他の機能
+
+### iOS デバイスのアクティブ化ロックをバイパスする
 アクティブ化ロックは、デバイスを消去または再アクティブ化する前に、Apple ID とパスワードの入力を要求することでユーザー デバイスを保護するのに役立つ機能です。 ただし、これが問題につながる場合があります。たとえば、ユーザーがロックを解除しないまま会社を退職した場合です。 [iOS のアクティベーション ロックのバイパス](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)は、監視下 iOS デバイスのロックを解除して、デバイスを再割り当てしたり、消去したりできるようにする機能です。
+
+
 
 ## Intune クライアントで管理されている Windows PC を保護する
 Intune は引き続き、ユーザーは登録しないが、Intune コンピューター クライアント ソフトウェアで管理する Windows PC のセキュリティ ポリシーをサポートします。 これらのポリシーで Windows PC をセキュリティ保護する方法については、「[Use policies to help protect Windows PCs that run the Intune client software (Intune クライアント ソフトウェアを搭載した Windows PC の保護に有用なポリシーを使用する)](policies-to-protect-windows-pcs-in-microsoft-intune.md)」を参照してください。
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO1-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
+ms.sourcegitcommit: 63f86f135d369d8c96903c0add1e194fd9d5ded2
+ms.openlocfilehash: e98aa19d38af47ba2d19a2a67b7a836796aded2a
 
 
 ---
@@ -22,22 +22,22 @@ ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 # Android デバイスを Intune で使用する
 
-この記事には、エンドユーザーが Intune 管理対象デバイスで実行できるすべてのタスクへのリンクが掲載されています。 IT 管理者はこの情報を参照して、ユーザーがさまざまなタスクを実行するための手順を確認できます。タスクはカテゴリ別にグループ化されています。 
+この記事には、エンドユーザーが Intune 管理対象デバイスで実行できるすべてのタスクへのリンクが掲載されています。 IT 管理者はこの情報を参照して、ユーザーがさまざまなタスクを実行するための手順を確認できます。タスクは以下のカテゴリにグループ化されます。
 
-- ポータル サイト アプリのインストールと Intune の登録 
+- ポータル サイト アプリのインストールと Intune の登録
 - 登録後の管理タスク
 - ポリシー準拠の問題
 
 ## ポータル サイト アプリのインストールと Intune の登録
 
-このセクションの情報は、ポータル サイトのインストールと Android デバイスのデバイス登録に役立ちます。
+このセクションの情報は、Intune ポータル サイトのインストールと Android デバイスのデバイス登録に役立ちます。
 
 - [Intune にデバイスを登録する](enroll-your-device-in-Intune-android.md)
 - [ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
 ## Intune にデバイスを登録する際に実行できること
 
-このセクションの情報は、Android デバイスを Intune に登録した後に行える操作で役立ちます。
+このセクションの情報は、Android デバイスを Intune に登録した後に実行できる操作で役立ちます。
 
 - [デバイスで管理対象アプリを使用する](use-managed-apps-on-your-device-android.md)
 - [デバイスを暗号化する](encrypt-your-device-android.md)
@@ -71,6 +71,6 @@ ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 
