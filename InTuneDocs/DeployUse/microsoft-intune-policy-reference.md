@@ -4,7 +4,7 @@ description: "このトピックの情報は、デバイスの管理に使用す
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a8d2702037b7b96b454078e991dea429143e733
-ms.openlocfilehash: aa081dd17c0067082e314ac45d2a52792f66b8d6
+ms.sourcegitcommit: 06a9c78300d7ff384299957102114c69c43a1ad5
+ms.openlocfilehash: 06616ba43069cc6e81692a4c638f2bf8b072fdc1
 
 
 ---
 
-# Microsoft Intune ポリシー リファレンス
+# Microsoft Intune の構成ポリシー リファレンス
 
 このトピックの情報は、デバイスの管理に使用する必要がある Microsoft Intune 構成ポリシーを判断するのに役立ちます。
 
@@ -74,7 +74,7 @@ Windows Phone と登録されている Windows デバイスのみに適用され
 |---------------|------------------------|
 |**カスタム構成 (Windows 10 デスクトップおよび Windows 10 Mobile 以降)**|デバイスの機能を制御するために使用できる OMA-URI 設定を展開します。 これは、必要な設定が構成ポリシーで使用できない場合に役立ちます。<br />    詳細については、「[Microsoft Intune の Windows 10 ポリシー設定](windows-10-policy-settings-in-microsoft-intune.md)」を参照してください。|
 |**カスタム構成 (Windows Phone 8.1 以降)**|デバイスの機能を制御するために使用できる OMA-URI 設定を展開します。 これは、必要な設定が構成ポリシーで使用できない場合に役立ちます。<br /><br />詳細については、「[Microsoft Intune の Windows Phone 8.1 ポリシー設定](windows-phone-8-1-policy-settings-in-microsoft-intune.md)」を参照してください。|
-|**エディションのアップグレード ポリシー (Windows 10 Desktop 以降)**<br><br>**エディションのアップグレード ポリシー (Windows 10 Holographic 以降)**|Windows 10 デバイスを新しいバージョンに更新するために使用されるライセンスまたはプロダクト キーの情報を含むポリシーを構成して展開します。<br><br>詳細については、「[Microsoft Intune のエディションのアップグレード ポリシー設定](edition-upgrade-policy-settings-in-microsoft-intune.md)」を参照してください。|  
+|**エディションのアップグレード ポリシー (Windows 10 Desktop 以降)**<br><br>**エディションのアップグレード ポリシー (Windows 10 Holographic 以降)**<br><br>**エディションのアップグレード ポリシー (Windows 10 Mobile 以降)**|Windows 10 デバイスを新しいバージョンに更新するために使用されるライセンスまたはプロダクト キーの情報を含むポリシーを構成して展開します。<br><br>詳細については、「[Microsoft Intune のエディションのアップグレード ポリシー設定](edition-upgrade-policy-settings-in-microsoft-intune.md)」を参照してください。|  
 |**電子メール プロファイル (Windows Phone 8 以降)**<br /><br />**電子メール プロファイル (Windows 10 デスクトップおよび Windows 10 Mobile 以降)**|管理対象デバイスで Exchange ActiveSync 電子メール設定を作成、展開、および監視します。 これにより、ユーザー側で特別な設定を行わなくても、各自が個人用端末で会社の電子メールにアクセスできます。<br /><br />詳細については、「[Microsoft Intune で電子メール プロファイルを使用して会社の電子メールへのアクセスを構成にする](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)」を参照してください。|
 |**全般構成 (Windows 10 デスクトップおよび Windows 10 Mobile 以降)**|登録されている Windows 10 デスクトップおよび Windows 10 Mobile デバイスのモバイル デバイスのセキュリティと機能の設定を構成します。<br /><br />詳細については、「[Microsoft Intune の Windows 10 ポリシー設定](windows-10-policy-settings-in-microsoft-intune.md)」を参照してください。|
 |**全般構成 (Windows 10 Team 以降)**|登録されている Windows 10 Team デバイス (たとえば、Surface Hub デバイス) のためにデバイスのセキュリティと機能の設定を構成します。<br /><br />詳細については、「[Microsoft Intune の Windows Team 構成ポリシー設定](windows-team-configuration-policy-settings-in-microsoft-intune.md)」を参照してください。|
@@ -104,25 +104,7 @@ Windows Phone と登録されている Windows デバイスのみに適用され
 > [!IMPORTANT]
 Microsoft Intune では、デバイス プラットフォームごとに**構成ポリシー**が分割されました。それらのポリシーには、使用可能な最新の設定が含まれています。 引き続きモバイル デバイスのセキュリティ ポリシーを使用でき、既存の展開も機能します。ただし、できるだけ早く新しい構成ポリシーに移行することを計画してください。<br />詳細については、「[Microsoft Intune のモバイル デバイス セキュリティ ポリシー設定](mobile-device-security-policy-settings-in-microsoft-intune.md)」を参照してください。
 
-## 条件付きアクセスとコンプライアンス ポリシー
-
-### 条件付きアクセス
-
-|ポリシー名|使用するタイミング|
-|---------------|------------------------|
-|**Exchange Online ポリシー**<br /><br />**内部設置型の Exchange ポリシー**|Intune で管理されていないデバイスまたは作成したコンプライアンス ポリシーに準拠していないデバイスから Microsoft Exchange 電子メールへのアクセスを管理します。<br /><br />詳細については、「[Intune で Exchange Online と新しい Exchange Online Dedicated への電子メール アクセスを制限する](restrict-access-to-exchange-online-with-microsoft-intune.md)」を参照してください。|
-|**SharePoint Online ポリシー**|Intune で管理されていないデバイスまたは作成したコンプライアンス ポリシーに準拠していないデバイスから SharePoint Online へのアクセスを管理します。<br /><br />詳細については、「[Restrict access to SharePoint Online with Microsoft Intune](restrict-access-to-sharepoint-online-with-microsoft-intune.md)」 (Microsoft Intune で SharePoint Online へのアクセスを制限する) を参照してください。|
-|**Skype for Business**|Intune で管理されていないデバイスまたは作成したコンプライアンス ポリシーに準拠していないデバイスから Skype for Business へのアクセスを管理します。<br /><br />詳細については、「[Microsoft Intune で Skype for Business Online へのアクセスを制限する](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)」を参照してください。|
-> [!NOTE]
-> 条件付きアクセス ポリシーは、ユーザーやデバイスに展開するものではありません。 必要なポリシーを構成すると、そのポリシーの対象となるすべてのグループに適用されます。
-
-### コンプライアンス ポリシー
-
-|ポリシー名|使用するタイミング|
-|---------------|------------------------|
-|**Compliance ポリシー**|デバイスの準拠レベルを定義し、準拠していないデバイスについてレポートします。 これらのポリシーは、サービスからブロックするデバイスを評価する際に、条件付きアクセスと併せて使用されます。<br /><br />詳細については、「[Microsoft Intune のデバイス コンプライアンス ポリシー](introduction-to-device-compliance-policies-in-microsoft-intune.md)」を参照してください。|
-
-## Windows PC の管理
+## Intune ソフトウェア クライアントによって管理されている Windows PC のポリシー
 
 |ポリシー名|使用するタイミング|
 |---------------|------------------------|
@@ -136,6 +118,6 @@ Microsoft Intune では、デバイス プラットフォームごとに**構成
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

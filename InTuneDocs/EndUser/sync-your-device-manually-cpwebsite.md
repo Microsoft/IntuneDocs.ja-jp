@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: c676c15ad526ff31b98484704190b96006bf4f36
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 275e51d2f32aec340a31b67773dbccc77d48a573
 
 
 ---
@@ -23,7 +23,9 @@ ms.openlocfilehash: c676c15ad526ff31b98484704190b96006bf4f36
 
 # 会社のポータル Web サイトを使用して手動でデバイスを同期する
 
-アプリのインストールに時間がかかりすぎる場合は、デバイスを手動で同期すると、インストールの高速化に役立つことがあります。 以下の手順からお使いのデバイスの種類または Windows のバージョンに対応する手順を選択し、それに従ってください。 アプリのインストールを高速化するためのデバイスの同期は、以下に示すバージョンに対してのみ機能します。
+アプリのインストールや他のタスクに時間がかかりすぎる場合は、デバイスを手動で同期すると、インストールやタスクの高速化に役立つことがあります。 使用しているデバイスの種類に応じて、以下の手順を実行します。 
+
+同期機能は、以下のバージョンに対してのみ動作します。
 
 * [[Windows] 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [[Windows] 10 Desktop](sync-your-device-manually-windows.md#windows-10-desktop)
@@ -32,6 +34,6 @@ ms.openlocfilehash: c676c15ad526ff31b98484704190b96006bf4f36
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
