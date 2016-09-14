@@ -13,8 +13,8 @@ ms.assetid: ed9250aa-e894-4eac-92b8-5f1a3748e255
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: a5f80058e004f119acc9a918123c897b72b71314
-ms.openlocfilehash: 026ac12f12046f59eaac6e8bedc0669bcd93fb75
+ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
+ms.openlocfilehash: fea9e10de761fa1bacfb87d07ce571d40f8286bc
 
 
 ---
@@ -26,7 +26,11 @@ ms.openlocfilehash: 026ac12f12046f59eaac6e8bedc0669bcd93fb75
 ## **共有 iOS デバイスはどのような方法で管理しますか。**
 
   > [!div class="button"]
-  [iOS の DEP 登録 >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)<br>[iOS の直接登録 >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)<br>[DEM 登録 >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+  [iOS の DEP 登録 >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
+  > [!div class="button"]
+  [iOS の直接登録 >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+  > [!div class="button"]
+  [DEM 登録 >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
   - **Apple のデバイス登録プログラム (DEP)** - DEP で購入し、管理している iOS デバイスが対象となります。登録プロファイルが利用されます。 利用者がデバイスの電源を初めて入れると、デバイスが DEP プロファイルをダウンロードし、プロファイル DEP で登録します。
 
@@ -39,6 +43,6 @@ ms.openlocfilehash: 026ac12f12046f59eaac6e8bedc0669bcd93fb75
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

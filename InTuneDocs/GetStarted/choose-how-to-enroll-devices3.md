@@ -13,8 +13,8 @@ ms.assetid: 24b8ecbf-7336-4543-8094-32688bda0b8f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: a5f80058e004f119acc9a918123c897b72b71314
-ms.openlocfilehash: 43bbb8590738182a26efcbeead1e59eff9e5f20d
+ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
+ms.openlocfilehash: fc2f95b0e780b42dbeab977c340f3b2b7c9881e5
 
 
 ---
@@ -25,7 +25,9 @@ ms.openlocfilehash: 43bbb8590738182a26efcbeead1e59eff9e5f20d
 ## **会社所有デバイスを共有しますか。デバイスごとに専用の利用者が登録されますか。**
 
 > [!div class="button"]
-[共有 >](choose-how-to-enroll-devices4.md)<br>[専用 >](choose-how-to-enroll-devices6.md)
+[共有 >](choose-how-to-enroll-devices4.md)
+> [!div class="button"]
+[専用 >](choose-how-to-enroll-devices6.md)
 
 - **会社所有のデバイスを共有** - デバイスの利用者が 1 名ではなく、通常、電子メールにアクセスできるように設定されません。 たとえば、キオスク デバイスやタスク指向デバイスなどがあります。利用者が必要に応じてプールから取り出し、利用後に返却します。 推奨される登録方法は、デバイスのプラットフォームにより異なります。
 
@@ -36,6 +38,6 @@ ms.openlocfilehash: 43bbb8590738182a26efcbeead1e59eff9e5f20d
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 
