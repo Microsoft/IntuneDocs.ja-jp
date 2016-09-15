@@ -12,25 +12,26 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: c2b4b6308569e1e67a1c3da18c12d19bdeecf08e
+ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
+ms.openlocfilehash: 0b52bd8360f11e226674aefe80a578c451c2679d
 
 ---
 # リモート ロックとパスコードのリセットによってデバイスを保護する
 Microsoft Intune には、リモート ロック機能とパスコードのリセット機能が備わっています。
 
 ## デバイスのリモート ロック
-ユーザーがデバイスを紛失した場合は、リモートでデバイスをロックできます。 以下の表は、各モバイル プラットフォームのリモート ロックの動作です。
+ユーザーがデバイスを紛失した場合は、リモートでデバイスをロックできます。 以下の表は、各モバイル プラットフォームのリモート ロックの動作です。 リモート ロックはサポートされていません。
 
 |プラットフォーム|リモート ロック|
 |------------|---------------|
 |iOS|サポートされています|
 |Android|サポート|
 |Windows 10 および Windows 10 Mobile|サポート|
-|Windows Phone 8 および Windows Phone 8.1|サポートされています|
+|Windows Phone 8 および Windows Phone 8.1|サポート|
 |Windows RT 8.1 および Windows RT|デバイスの現在のユーザーが、デバイスを登録したユーザーと同じ場合にはサポートされます。|
 |Windows 8.1|デバイスの現在のユーザーが、デバイスを登録したユーザーと同じ場合にはサポートされます。|
 
+リモート ロックは、Intune ソフトウェア クライアントに登録されている Windows PC ではサポートされません。
 
 ### Intune コンソールを使用してモバイル デバイスをリモートでロックするには
 
@@ -51,9 +52,11 @@ Microsoft Intune には、リモート ロック機能とパスコードのリ�
 |iOS|デバイスからパスコードをクリアする場合にサポートされます。 新しい一時的なパスコードは作成されません。|
 |Android|サポートされます。一時的なパスコードが作成されます。|
 |[Windows] 10 Mobile|サポート|
-|Windows Phone 8 および Windows Phone 8.1|サポートされています|
+|Windows Phone 8 および Windows Phone 8.1|サポート|
 |Windows RT 8.1 および Windows RT|サポートされません|
 |Windows 8.1|サポートされません|
+
+パスコード リセットは、Intune ソフトウェア クライアントに登録されている Windows PC ではサポートされません。
 
 ### パスコードをリセットするには
 
@@ -73,6 +76,6 @@ Microsoft Intune には、リモート ロック機能とパスコードのリ�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 
