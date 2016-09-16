@@ -4,7 +4,7 @@ description: "Apple Device Enrollment Program (DEP) または Apple Configurator
 keywords: 
 author: NathBarn
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 09/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d81ef697518745b258598124d6e73899bdd76a0f
-ms.openlocfilehash: 00d7e73154bb293fec48b74b6f6454d67e5ef378
+ms.sourcegitcommit: bee93334e7b868ef6c827fba9efc3318c8419527
+ms.openlocfilehash: b295ee11d566fbfbe84513c045f3a76dfd51cda4
 
 
 ---
@@ -40,6 +40,11 @@ DEP では、DEP を通じて購入したデバイスに "無線で" 登録プ�
 ## DEP または Apple Configurator で登録されたデバイスでのポータル サイトの使用
 
 ユーザー アフィニティが構成されたデバイスでは、ポータル サイト アプリをインストールして実行し、アプリをダウンロードしてデバイスを管理できます。 ユーザーは、デバイスを受け取った後、セットアップ アシスタントを完了してポータル サイト アプリをインストールするために、いくつもの追加の手順を完了する必要があります。
+
+以下をサポートするには、ユーザー アフィニティが必要です。
+  - モバイル アプリケーション管理 (MAM) アプリ
+  - 電子メールと会社データへの条件付きアクセス
+  - ポータル サイト アプリ
 
 **ユーザー アフィニティありで企業所有 iOS デバイスを登録する方法**
 1. ユーザーは、デバイスの電源をオンにすると、セットアップ アシスタントを完了するように求められます。 セットアップ中にユーザーは資格情報を要求されます。 Intune のサブスクリプションに関連付けられている資格情報 (つまり一意の個人名または UPN) を使用する必要があります。
@@ -75,6 +80,6 @@ DEP では、DEP を通じて購入したデバイスに "無線で" 登録プ�
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
