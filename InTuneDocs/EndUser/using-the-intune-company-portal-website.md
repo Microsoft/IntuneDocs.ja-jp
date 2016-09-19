@@ -3,8 +3,8 @@ title: "Intune ポータル サイト Web サイトの使用 | Microsoft Intune"
 description: "ポータル サイト Web サイトを説明し、Web サイト上で実行できるタスクの手順へのリンクを示します"
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 06/03/2016
+manager: angrobe
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 118a25b6ebb156c4ed642fee8802ef6a54582f8e
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 558840491a701347e23697cee22c52c1218bc6af
 
 
 ---
@@ -24,19 +24,19 @@ ms.openlocfilehash: 118a25b6ebb156c4ed642fee8802ef6a54582f8e
 
 ポータル サイト Web サイトでは、次のことができます。
 
--   [デバイスのパスコードのリセット](reset-your-passcode-cpwebsite.md)
-
 -   [デバイスの名前の変更](rename-your-device-cpwebsite.md)
 
 -   [デバイスの削除](remove-your-device-cpwebsite.md)
 
 -   [デバイスのリセット](reset-your-device-cpwebsite.md)
 
+-   [デバイスのパスコードのリセット](reset-your-passcode-cpwebsite.md)
+
 -   [デバイスのリモート ロック](remote-lock-your-device-cpwebsite.md)
 
 -   [デバイスの手動同期による、低速アプリ インストールの高速化](sync-your-device-manually-cpwebsite.md)
 
--   IT 管理者の連絡先情報の検索 (IT 管理者が構成している場合)。 
+-   IT 管理者の連絡先情報の検索 (IT 管理者が構成している場合)。
 
 -   会社または学校のポリシーに準拠しているかどうかを含む、デバイスの詳細の表示
 
@@ -50,6 +50,6 @@ ms.openlocfilehash: 118a25b6ebb156c4ed642fee8802ef6a54582f8e
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 
