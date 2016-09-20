@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55d3bd060b5567e98ca9ee6f4c4a003ce40a0371
-ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
 
 
 ---
@@ -41,7 +41,7 @@ Simple Certificate Enrollment Protocol (SCEP) または PKCS #12 (.PFX) 証明�
 1.  [Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[ポリシーの追加]** を選択します。
 2.  以下のポリシーの種類のいずれかを追加します。
     - **Android &gt; 信頼された証明書プロファイル (Android 4 以降)**
-    - **iOS &gt; 信頼された証明書プロファイル (iOS 7.1 以降)**
+    - **iOS &gt; 信頼された証明書プロファイル (iOS 8.0 以降)**
     - **Mac OS X &gt; 信頼された証明書プロファイル (Mac OS X 10.9 以降)**
     - **Windows &gt; 信頼された証明書プロファイル (Windows 8.1 以降)**
     - **Windows &gt; 信頼された証明書プロファイル (Windows Phone 8.1 以降)**
@@ -63,7 +63,7 @@ Simple Certificate Enrollment Protocol (SCEP) または PKCS #12 (.PFX) 証明�
 1.  [Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[ポリシーの追加]** を選択します。
 2.  以下のポリシーの種類のいずれかを追加します。
     - **Android &gt; SCEP 証明書プロファイル (Android 4 以降)**
-    - **iOS &gt; SCEP 証明書プロファイル (iOS 7.1 以降)**
+    - **iOS &gt; SCEP 証明書プロファイル (iOS 8.0 以降)**
     - **Mac OS X &gt; SCEP 証明書プロファイル (Mac OS X 10.9 以降)**
     - **Windows &gt; SCEP 証明書プロファイル (Windows 8.1 以降)**
     - **Windows &gt; SCEP 証明書プロファイル (Windows Phone 8.1 以降)**
@@ -92,7 +92,7 @@ Simple Certificate Enrollment Protocol (SCEP) または PKCS #12 (.PFX) 証明�
   - **Android &gt; .PFX 証明書プロファイル (Android 4 以降)**
   - **Windows &gt; PKCS #12 (.PFX) 証明書プロファイル (Windows 10 以降)**
   - **Windows &gt; PKCS #12 (.PFX) 証明書プロファイル (Windows Phone 10 以降)**
-  - **iOS > PKCS #12 (.PFX) 証明書プロファイル (iOS 7.1 以降)**    
+  - **iOS > PKCS #12 (.PFX) 証明書プロファイル (iOS 8.0 以降)**    
     詳しくは、「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」をご覧ください。
 3.  ポリシー フォームで要求されている情報を入力します。
 4.  **[ポリシーの保存]** を選択します。
@@ -130,6 +130,6 @@ Intune の他のポリシーをデプロイするのと同じ方法で、証明�
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO3-->
 
 
