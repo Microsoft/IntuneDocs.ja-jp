@@ -56,7 +56,7 @@
 ## [デバイスを保護する](protect-your-devices-with-microsoft-intune.md)
 ### [リモート ロックとパスコードのリセット](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 ### [MFA を使って Windows デバイスを保護する](protect-windows-devices-with-multi-factor-authentication.md)
-### [デバイスで Microsoft Passport の設定を制御する](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
+### [Windows Hello for Business の設定を制御する](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [iOS のアクティブ化ロックをバイパスする](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Windows PC を保護するためのポリシー](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 #### [ソフトウェア更新プログラム](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)

@@ -4,7 +4,7 @@ description: "Intune 証明書プロファイルを作成する方法につい�
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8e3f7cac8eb3495aad3835ec4713d67a58383c66
-ms.openlocfilehash: 8b08f8fde6136b8eca61f6ae7a8c21635f7d452e
+ms.sourcegitcommit: 55d3bd060b5567e98ca9ee6f4c4a003ce40a0371
+ms.openlocfilehash: 370a21f559fd1f86f60aeef5cbddea05d6fea682
 
 
 ---
@@ -48,15 +48,9 @@ Simple Certificate Enrollment Protocol (SCEP) または PKCS #12 (.PFX) 証明�
 
     詳しくは、「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」をご覧ください。
 
-3.  要求された情報を入力して、Android、iOS、Mac OS X、Windows 8.1、または Windows Phone 8.1 用の信頼された証明書プロファイルの設定を構成します。
-
-    - **[証明書ファイル]** 設定で、発行元 CA からエクスポートした信頼されたルート CA 証明書 (.cer ファイル) をインポートします。 **[保存先ストア]** 設定は、Windows 8.1 以降を実行中のデバイスで、1 つ以上の証明書ストアを持っているデバイスにのみ適用されます。
-    -  **[サブジェクト名の形式]** で、**[カスタム]** を選択してサブジェクト名のカスタム形式を入力します。  
-        カスタム形式で現在サポートされている 2 つの変数は、`Common Name (CN)` と `Email (E)` です。 これらの変数と静的文字列の組み合わせを使用することで、このようなサブジェクト名のカスタム形式を作成できます。  
-
-        `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
-
-        この例では、管理者は `CN` と `E` の変数に加えて、組織単位、組織、市区町村、州、および国の値の文字列を使用してサブジェクト名形式を作成しています。 「[CertStrToName 関数](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx)」で、サポートされる文字列を一覧にしています。  
+3.  要求された情報を入力して、Android、iOS、Mac OS X、Windows 8.1、または Windows Phone 8.1 用の信頼された証明書プロファイルの設定を構成します。 
+4.  **[証明書ファイル]** 設定で、発行元 CA からエクスポートした信頼されたルート CA 証明書 (.cer ファイル) をインポートします。 **[保存先ストア]** 設定は、Windows 8.1 以降を実行中のデバイスで、1 つ以上の証明書ストアを持っているデバイスにのみ適用されます。
+    
 4.  **[ポリシーの保存]** を選択します。
 
 新しいポリシーが **[ポリシー]** ワークスペースに表示されます。 これでデプロイが可能になりました。
@@ -79,7 +73,7 @@ Simple Certificate Enrollment Protocol (SCEP) または PKCS #12 (.PFX) 証明�
 3.  プロファイル構成ページの指示に従って、SCEP 証明書プロファイル設定を構成します。
     > [!NOTE]
     >
-    > **[サブジェクト名の形式]** で、**[カスタム]** を選択してサブジェクト名のカスタム形式を入力します。
+    > **[サブジェクト名の形式]** で、**[カスタム]** を選択してサブジェクト名のカスタム形式を入力します (iOS のプロファイルのみ)。
     >
     > カスタム形式で現在サポートされている 2 つの変数は、`Common Name (CN)` と `Email (E)` です。 これらの変数と静的文字列の組み合わせを使用することで、このようなサブジェクト名のカスタム形式を作成できます。
 
@@ -136,6 +130,6 @@ Intune の他のポリシーをデプロイするのと同じ方法で、証明�
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

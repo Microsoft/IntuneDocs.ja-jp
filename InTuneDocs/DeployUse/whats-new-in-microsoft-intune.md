@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 500cc93b595e04cea987bda699abf94ae010443a
-ms.openlocfilehash: 1f6a4b3988dbebce23a59b4ba14c79cd28cf6882
+ms.sourcegitcommit: c636efee82331d6feac75153b872526f7af7c882
+ms.openlocfilehash: 814312b0ac6055ffff2efad2ddbdaa8664f84fde
 
 
 ---
@@ -27,8 +27,23 @@ Microsoft Intune の今回のリリースの新機能について説明します
 
 >[!IMPORTANT] 
 >ブログ記事: Ensuring mobile devices are up to date using Microsoft Intune (Microsoft Intune を使ってモバイル デバイスを確実に更新する)<br>
->iOS デバイスへの "Trident" マルウェアによる最近の攻撃を踏まえ、ブログ記事 ([Ensuring mobile devices are up to date using Microsoft Intune (Microsoft Intune でモバイル デバイスを使って確実に更新する)](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/)) を新たに公開しました。デバイスを安全に、かつ最新の状態に保つために役立つ Intune のさまざまな使い方について説明しています。
+>iOS デバイスへの "Trident" マルウェアによる最近の攻撃を踏まえ、ブログ記事「[Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/)」(Microsoft Intune でモバイル デバイスを確実に更新する) を新たに公開しました。デバイスを安全に、かつ最新の状態に保つために役立つ Intune のさまざまな使い方について説明しています。
 
+## 2016 年 9 月
+
+## ポータル サイトの更新
+### Android
+
+**Android 用ポータル サイトへの "通知" の追加**
+
+Android 用ポータル サイトのホームページに新しい通知アイコンが追加されました。 このアイコンをタップすると [通知] ページが開き、ポータル サイト アプリの中でエンドユーザーが注目する必要のある項目がすべて表示されます。たとえば、デバイスのコンプライアンス非対応、登録の更新、登録のアクティブ化です。 iOS 版のポータル サイト アプリには既に、この通知機能が追加されています。 この新しい [通知] ページの導入に伴い、[会社アクセスのセットアップ] ページがポータル サイトの起動または再開のたびに表示されることはなくなりました (ただし、デバイスが登録済みである場合)。 管理者が独自にエンド ユーザー向けガイドを作成している場合は、必要に応じてこの変更をドキュメントに反映してください。 更新後のスクリーン ショットは[こちら](https://aka.ms/androidcpupdate)にあります。  
+<!---TFS 1095560--->
+
+### Windows
+**フィードバック ボタンを Windows Phone 8.1 ポータル サイト アプリに追加**
+
+Windows Phone 8.1 ポータル サイト アプリでは、エンド ユーザーが新しい [フィードバックの送信] ボタンを使用してアプリに関するフィードバックを送ることができます。 フィードバックを送信するには、ポータル サイト アプリの画面の右下にある "..." メニューをタップし、[**フィードバックの送信**] をタップします。 フィードバックは匿名化して収集され、ポータル サイト アプリのユーザー エクスペリエンス向上に役立てられます。
+<!---TFS 1317806--->
 
 ## 2016 年 8 月
 ## アプリ管理
@@ -87,6 +102,10 @@ iOS 用の Microsoft Intune Managed Browser アプリは、iOS 8.0 以降を実�
 <!---TFS 1313253 checked--->
 
 ## 今後の更新情報
+
+### iOS 10 のサポート
+Intune は iOS 10 を完全サポートする予定です。 詳細については、iOS 10 のパブリック リリース後にお知らせします。
+
 ### Intune グループから Azure Active Directory グループへの移行 (2016年 9 月以降)
 Intune は、Intune でのユーザーとデバイスのグループとして Azure Active Directory (AAD) のセキュリティ グループを使用する、新しいグループ管理エクスペリエンスを作成しています。 これらのグループは、**新しい Azure ベースの Intune 管理ポータルの導入時**に、すべてのグループの管理、ポリシーの展開、およびプロファイルの展開に使用されます。
 
@@ -158,6 +177,6 @@ Intune notification rules define who an email alert will be sent to from Intune.
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 564edd672052f41215294a9562101289f20128db
+ms.sourcegitcommit: f86fe2710318209a2a4373beea1590c5343cbf4c
+ms.openlocfilehash: 08e112bfae9a3655f428d53f68922fd3ff4713b4
 
 
 ---
@@ -30,7 +30,7 @@ Microsoft Enterprise Mobility + Security (EMS) を使用している組織には
 サブスクリプションに関連付けられている他のクラウド サービスと Azure AD を共有している場合、これらのサービスに追加されたユーザーにもアクセスできます。 この各ユーザーには、管理者がライセンスを割り当てるまで、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] のライセンスは付与されません。
 
 > [!TIP]
-> [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] へのライセンスの割り当てまたはライセンスの失効を行うオプションが無効になっている場合、[Enterprise Mobility Suite](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx) を使用する場合に利用できるボリューム ライセンス オプションなどが、サブスクリプションに含まれている可能性があります。 ライセンスを割り当てる、または失効させる方法の詳細については、ライセンス オプションのドキュメントを参照してください。
+> [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] へのライセンスの割り当てまたは取り消しを行うオプションが選択不可能になっている場合は、サブスクリプションにボリューム ライセンス オプションが含まれている可能性があります。たとえば、[Enterprise Mobility Suite + Security](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx) を使用しているときに利用可能になるオプションです。 ライセンスを割り当てる、または失効させる方法の詳細については、ライセンス オプションのドキュメントを参照してください。
 
 ## Intune のユーザー ライセンスを割り当てる
 
@@ -92,6 +92,6 @@ EMS サービスのユーザー ライセンスを選択的に割り当てるに
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 
