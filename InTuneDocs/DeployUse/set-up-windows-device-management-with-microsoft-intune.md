@@ -4,7 +4,7 @@ description: "Microsoft Intune を使用して Windows 10 デバイスを含む 
 keywords: 
 author: NathBarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,42 +13,49 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
-ms.openlocfilehash: fae2aa496ec38d9ddc2cb6800bed10ccb32fd154
+ms.sourcegitcommit: ebb1648ab13d31a2ba1ab17615814be8dda8a08c
+ms.openlocfilehash: 9b063c1e6b1ff5dcab16fce958ede49303284b18
 
 
 ---
 
 # Windows デバイスの管理をセットアップする
-Windows デバイスのセットアップについては、[こちら](../enduser/using-your-windows-device-with-intune.md)をご覧ください。
 
-Intune を使用すると、Windows PC デバイスを登録し、会社の電子メールとアプリにアクセスできるようにして、BYOD ("Bring Your Own Device") を実現できます。 Azure Active Directory と共に使用すると、すばやく自動的に新しい Windows 10 デバイスを管理対象に登録し、コンピューターを再イメージ化することなく、会社のリソースにアクセスできるようになります。 登録すると、ユーザーがログインでき、Intune 管理コンソールを使用して、ユーザーのデバイスをポリシー、アプリ、および設定の対象にできます。 また、[Microsoft Intune を使用して Windows Phone の管理をセットアップする](set-up-windows-phone-management-with-microsoft-intune.md)ことや、Intune クライアントを使用して [Intune クライアント ソフトウェアを搭載したコンピューターを管理する](manage-windows-pcs-with-microsoft-intune.md)こともできます。
+Intune 管理者として、以下の 2 つの方法で Windows PC の登録と管理を有効にできます。
 
-DNS の CNAME を作成すると、ユーザーはサーバー名を入力せずに Intune に接続して登録できるようになります。
+- **[Azure AD での自動登録](#azure-active-directory-enrollment)** -Windows 10 および Windows 10 Mobile のユーザーが職場または学校のアカウントを追加することでデバイスを登録します。
+- **[ポータル サイト登録](#company-portal-app-enrollment)** - ポータル サイト アプリをダウンロードおよびインストールして、職場または学校のアカウント資格情報を入力し、Windows 8.1 以降のデバイスを登録します。
 
-### Windows デバイスの管理をセットアップする
+[!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-  1.  会社のドメインの **CNAME** DNS リソース レコードを作成します。 たとえば、会社の Web サイトが contoso.com の場合、EnterpriseEnrollment.contoso.com を EnterpriseEnrollment-s.manage.microsoft.com にリダイレクトする CNAME を DNS に作成します。 CNAME DNS エントリは Windows デバイス登録では省略可能ですが、Windows デバイスの登録プロセス中にわかりやすくするために、必要なときは 1 つまたは複数のレコードを作成することをお勧めします。 CNAME レコードが検出されない場合は、MDM サーバー名を手動で入力するように求められます。
+## ポータル サイト アプリの登録を構成する
+Intune ポータル サイト アプリをデバイスにインストールして、登録することによって、ユーザーはデバイスを登録できます。 DNS の CNAME を作成すると、ユーザーはサーバー名を入力せずに Intune に接続して登録できるようになります。
 
-  検証済みドメインが複数ある場合、ドメインごとに CNAME レコードを作成します。 CNAME リソース レコードには次の情報を含める必要があります。
+1. **Intune をセットアップする**<br>
+**Microsoft Intune** を[モバイル デバイス管理機関に設定](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)して、MDM の設定を行うことにより、モバイル デバイス管理を準備します (この作業をまだ行っていない場合)。
+
+2. **CNAME を作成する** (省略可能)<br>会社のドメインの **CNAME** DNS リソース レコードを作成すると、簡単に登録できます。 CNAME DNS エントリの作成は省略可能ですが、CNAME レコードを作成すると登録が簡単になります。 CNAME レコードの登録が見つからない場合、ユーザーは手動で MDM サーバー名 `https://manage.microsoft.com` を入力するように求められます。  CNAME リソース レコードには次の情報を含める必要があります。
 
   |種類:|ホスト名|指定先|TTL|
   |--------|-------------|-------------|-------|
   |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com |1 時間|
   |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 時間|
 
-  DNS レコードの変更が反映されるまでには、最大で 72 時間かかります。 DNS レコードの変更が反映されるまで、Intune で DNS の変更を確認することはできません。
+  `EnterpriseEnrollment-s.manage.microsoft.com` – Intune サービスへのリダイレクトと電子メールのドメイン名によるドメイン認識をサポートします。
 
-  **EnterpriseEnrollment-s.manage.microsoft.com** – Intune サービスへのリダイレクトと電子メールのドメイン名によるドメイン認識をサポートします。
+  `EnterpriseRegistration.windows.net` – 職場または学校のアカウントを使用して Azure Active Directory に登録される Windows 8.1 および Windows 10 Mobile デバイスをサポートします。
 
-  **EnterpriseRegistration.windows.net** – 職場または学校のアカウントを使用して Azure Active Directory に登録される Windows 8.1 および Windows 10 Mobile デバイスをサポートします。
+  会社でユーザーの資格情報に複数のドメインを使用する場合は、各ドメインに CNAME レコードを作成します。
 
-  2.  [Intune 管理コンソール](http://manage.microsoft.com)で、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[Windows]** の順にクリックします。
+  たとえば、会社の Web サイトが contoso.com の場合、EnterpriseEnrollment.contoso.com を EnterpriseEnrollment-s.manage.microsoft.com にリダイレクトする CNAME を DNS に作成します。 DNS レコードの変更が反映されるまでには、最大で 72 時間かかります。 DNS レコードの変更が反映されるまで、Intune で DNS の変更を確認することはできません。
+
+3.  **CNAME を確認する**<br>[Intune 管理コンソール](http://manage.microsoft.com)で、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[Windows]** の順にクリックします。 **[検証済みドメイン名の指定]** ボックスに会社の Web サイトの検証済みドメインの URL を入力し、**[自動検出のテスト]** をクリックします。
+
   ![Windows デバイスの管理ダイアログ ボックス](../media/enroll-intune-winenr.png)
 
-  3.  **[検証済みドメイン名の指定]** ボックスに会社の Web サイトの検証済みドメインの URL を入力し、**[自動検出のテスト]** をクリックします。
+4.  **オプションの手順**<br>**サイドローディング キーの追加**の手順は、Windows 10 には必要ありません。 **コード署名証明書のアップロード**の手順は、Windows ストアから使用できないデバイスに基幹業務 (LOB) アプリを配信する場合にのみ必要です。 [詳細情報](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
 
-  4.  ユーザーは自分のデバイスを登録する方法とデバイスが管理されるとどうなるかを知る必要があります。
+6.  **ユーザーに通知する**<br>ユーザーに自分のデバイスを登録する方法とデバイスが管理されるとどうなるかを知らせる必要があります。
       - [Microsoft Intune の使用に関するエンドユーザーへの通知内容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
       - [Windows デバイス向けエンド ユーザー ガイダンス](../enduser/using-your-windows-device-with-intune.md)
 
@@ -57,6 +64,6 @@ DNS の CNAME を作成すると、ユーザーはサーバー名を入力せず
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -4,17 +4,17 @@ description: "登録するデバイスの管理における Intune の利点に�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/23/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
-ms.reviewer: jeffgilb
+ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a09c5e3349945cfdcb4ae9d3aa51aa3f7024330a
-ms.openlocfilehash: eab582d30408d1a57643e30ba4965bd08f6ce847
+ms.sourcegitcommit: ff6bfdc079e00f8a39cc532d1f6f9049aa6a32c8
+ms.openlocfilehash: 10dfecd41e68440a4c27aa7358dbbc88b6106001
 
 
 ---
@@ -46,7 +46,8 @@ Microsoft Intune では、サービスにデバイスを*登録*することに�
 |iOS モバイル アプリの構成|モバイル アプリ構成ポリシーを使用して、ユーザーがアプリを実行するときに必要となる可能性がある設定を iOS アプリに指定できます。 たとえば、アプリによってはユーザーがポート番号やログオン情報を指定しなければなりません。 これは、アプリの構成を簡素化し、サポート コールの数を減らすのに役立ちます。|[Microsoft Intune でのモバイル アプリ構成ポリシーを使用した iOS アプリの構成](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
 |iOS モバイル アプリ プロビジョニング プロファイル|有効期限が近づいている iOS アプリにプロビジョニング プロファイルを展開できます。 |[iOS モバイル プロビジョニング プロファイルのポリシーを使用して、アプリが期限切れにならないようにする](/intune/deploy-use/ios-mobile-app-provisioning-profiles)|
 |管理対象ブラウザー|管理対象ブラウザー ポリシーを構成し、デバイスのユーザーがアクセスできる Web サイトを管理します。 さらに、モバイル アプリケーション管理ポリシーを管理対象ブラウザーに適用することもできます。|[Microsoft Intune と Managed Browser のポリシーを使用したインターネット アクセスの管理](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)|
-|Microsoft Passport|Microsoft Passport for Work を統合できます。これはオンプレミスの Active Directory または Azure Active Directory を使った Windows 10 への代替サインイン方法であり、パスワード、スマート カード、または仮想スマート カードの代わりに使用されます。|[Microsoft Intune を使ってデバイスで Microsoft Passport の設定を制御する](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
+|Windows Hello for Business|Windows Hello for Business と統合できます。Windows Hello for Business は、パスワード、スマート カード、または仮想スマート カードの代わりにオンプレミスの Active Directory または Azure Active Directory による Windows 10 への代替サインイン方法です。|[Microsoft Intune を使用したデバイスで Windows Hello for Business の設定を制御する](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
+|ボリューム購入アプリ|ボリューム購入プログラムを通じて購入したアプリを管理するために、アプリ ストアからライセンス情報をインポートし、使用ライセンス数を監視して、所有しているアプリより多くインストールできないようにします。|[Microsoft Intune を使用してボリューム購入アプリを管理する](/intune/deploy-use/manage-volume-purchased-apps-in-microsoft-intune)|
 
 ## 会社のリソースへのアクセス
 
@@ -70,6 +71,6 @@ Microsoft Intune では、サービスにデバイスを*登録*することに�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

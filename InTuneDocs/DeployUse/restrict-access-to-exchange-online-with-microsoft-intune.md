@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
-ms.openlocfilehash: 38273970b6bb6f576786e6a7a2aeaaa65ee07d37
+ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
+ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
 
 
 ---
@@ -108,6 +108,8 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
     準拠していると見なされるためには、PC が [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録済みで、ポリシーに準拠している必要があります。
 
     ドメインに参加する PC の場合、[デバイスを Azure Active Directory に自動的に登録](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/)するように設定する必要があります。
+    >[!NOTE]
+    >Intune コンピューター クライアントを実行する PC では、条件付きアクセスはサポートされていません。
 
 -   [Office 365 の先進認証が有効化](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)されていて、最新の Office 更新プログラムがすべて適用されていること。
 
@@ -154,7 +156,7 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 |管理チャネル|AAD に登録済み|準拠|Exchange ActiveSync ID|結果の動作|
 |----------------------|------------------|-------------|--------------------------|--------------------|
 |**Microsoft Intune および Exchange ActiveSync による管理の対象**|○|○|値が表示される|電子メール アクセスが許可される|
-|その他の値|×|×|値が表示されない|電子メール アクセスがブロックされる|
+|その他の値|いいえ|いいえ|値が表示されない|電子メール アクセスがブロックされる|
 ----------------------
 レポートの内容をエクスポートし、**[メール アドレス]** 列を使って、ブロックされることをユーザーに通知できます。
 
@@ -260,6 +262,6 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

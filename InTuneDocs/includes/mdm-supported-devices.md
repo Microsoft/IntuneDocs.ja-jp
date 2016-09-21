@@ -7,9 +7,9 @@
   - Windows 10 (Home、Pro、Education、および Enterprise バージョン) を実行している PC
   - Mac OS X 10.9 以降
 
-[Intune ソフトウェア クライアント](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)では、Windows 7 以降のオペレーティング システムを実行している Windows PC を管理することができます。 Enterprise Management Suite (EMS) をお持ちのお客様は、[Azure Active Directory (AAD) を使用して Windows 10 デバイスを登録する](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)こともできます。
+[Intune ソフトウェア クライアント](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)では、Windows Vista 以降のオペレーティング システム (サポート対象外のすべての Home Edition の Windows は除く) を実行している Windows PC を管理することができます。  Enterprise Management + Security (EMS) を使用している場合は、[Azure Active Directory (AAD) を使用して Windows 10 デバイスを登録する](set-up-windows-device-management-with-microsoft-intune.md#azure-active-directory-enrollment)こともできます。
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

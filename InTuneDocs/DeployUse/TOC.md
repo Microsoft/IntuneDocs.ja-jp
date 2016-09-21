@@ -9,8 +9,9 @@
 ## [デバイスの登録](enroll-devices-in-microsoft-intune.md)
 ### [Intune にデバイスを登録する準備](get-ready-to-enroll-devices-in-microsoft-intune.md)
 #### [iOS と Mac の管理](set-up-ios-and-mac-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile と Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+#### [Android の管理](set-up-android-management-with-microsoft-intune.md)
 #### [Windows デバイスの管理 ](set-up-windows-device-management-with-microsoft-intune.md)
+#### [Windows 10 Mobile と Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 ### [企業所有のデバイスの管理](manage-corporate-owned-devices.md)
 #### [企業所有の iOS デバイスの登録](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [iOS のセットアップ アシスタントの登録](ios-setup-assistant-enrollment-in-microsoft-intune.md)
@@ -55,7 +56,7 @@
 ## [デバイスを保護する](protect-your-devices-with-microsoft-intune.md)
 ### [リモート ロックとパスコードのリセット](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 ### [MFA を使って Windows デバイスを保護する](protect-windows-devices-with-multi-factor-authentication.md)
-### [デバイスで Microsoft Passport の設定を制御する](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
+### [Windows Hello for Business の設定を制御する](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [iOS のアクティブ化ロックをバイパスする](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Windows PC を保護するためのポリシー](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 #### [ソフトウェア更新プログラム](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
@@ -107,6 +108,7 @@
 #### [MAM ポリシーを作成および展開する](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Android 用 MAM ポリシー](android-mam-policy-settings.md)
 #### [iOS 用 MAM ポリシー](ios-mam-policy-settings.md)
+#### [MAM ポリシーを確認する](validate-mobile-application-management.md)
 #### [ポリシーの準拠状況を監視する](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [iOS アプリ間のデータ転送を管理する](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 #### [エンド ユーザー エクスペリエンス](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
@@ -135,6 +137,6 @@
 # [トラブルシューティング](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO1-->
 
 

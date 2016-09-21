@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8fe47a5843414fbe4add7f77df63c0d6466273cd
-ms.openlocfilehash: f15fce6890d6e5850d12115a97bf7331ce515508
+ms.sourcegitcommit: bf8da72092a2380e73cfbed2a693831706b40d23
+ms.openlocfilehash: c005a1b38289580b1543e0e62cbb4cd00cb22c47
 
 
 
@@ -22,10 +22,10 @@ ms.openlocfilehash: f15fce6890d6e5850d12115a97bf7331ce515508
 # 事前共有キーを使用した Wi-Fi プロファイルの作成
 Intune の**カスタム構成**を使用して、事前共有キーを使用した Wi-Fi プロファイルを作成する方法を次に示します。 このトピックでは、EAP ベースの Wi-Fi プロファイルを作成する方法の例も示します。
 
-注:
--   次のように、そのネットワークに接続されているコンピューターからコードをコピーした方が簡単な場合があります。
+> [!NOTE]
+-   以下のように、そのネットワークに接続しているコンピューターからコードをコピーした方が簡単な場合があります。
 - Android では、Johnathon Biersack 氏が提供しているこの [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) を使用することも可能です。
--   OMA-URI 設定をさらに追加することにより、複数のネットワークとキーを追加することも可能です。
+-   OMA-URI 設定をさらに追加することにより、複数のネットワークとキーを追加できます。
 -  iOS でプロファイルを構成するには、Mac ステーションで Apple Configurator を使用します。 また、Johnathon Biersack 氏が提供する [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) を使用します。
 
 
@@ -40,18 +40,27 @@ Intune の**カスタム構成**を使用して、事前共有キーを使用し
 
    c.   **データ型**: "String(XML)" に設定
 
-   d.   **OMA-URI**: 
-        
-- **Android の場合**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-- **Windows の場合**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   d.   **OMA-URI**:
 
-注: 先頭にピリオドを必ず入力してください。
+    - **Android の場合**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+    - **Windows の場合**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-SSID は、作成しているポリシーの SSID です。 例:
-`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+    > [!NOTE]
+先頭にピリオドを必ず入力してください。
 
-  e.    値フィールド: ここに XML コードを貼り付けます。 次に例を示します。 それぞれの値は、ネットワーク設定に適したものにする必要があります。 一部のポインターのコードについては、コメント セクションをご覧ください。
+    SSID は、作成しているポリシーの SSID です。 例:
+    `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
+  e. **値フィールド**に、XML コードを貼り付けます。 次に例を示します。 それぞれの値は、ネットワーク設定に適したものにする必要があります。 一部のポインターのコードについては、コメント セクションをご覧ください。
+4. **[OK]** を選択して、保存し、ポリシーをデプロイします。
+
+    > [!NOTE]
+このポリシーは、ユーザー グループにのみデプロイできます。
+
+次回各デバイスがチェックインするときに、ポリシーは適用され、そのデバイスに Wi-Fi プロファイルが作成されます。 デバイスは自動的にネットワークに接続できるようになります。
+## Android または Windows の Wi-Fi プロファイル
+
+次に、Android または Windows の Wi-Fi プロファイルの XML コードの例を示します。
 
     <!--
     <Name of wifi profile> = Name of profile
@@ -173,33 +182,31 @@ SSID は、作成しているポリシーの SSID です。 例:
       </MSM>
     </WLANProfile>
 
-4.  [OK] をクリックし、ポリシーを保存して展開します。
-注: このポリシーは、ユーザー グループにのみ展開できます。
-
-次回各デバイスがチェックインするときに、ポリシーは適用され、そのデバイスに Wi-Fi プロファイルが作成されます。 デバイスは自動的にネットワークに接続できるようになります。
 ## 既存の Wi-Fi 接続からの XML ファイルの作成
 次のように、既存の Wi-Fi 接続から XML ファイルを作成することもできます。
-1.     ワイヤレス ネットワークに接続中のコンピューターまたは最近接続されたコンピューターの、C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid} のフォルダーを開きます。 すべての中から正しいプロファイルを探す必要があるため、多数のワイヤレス ネットワークに接続したことのないコンピューターを使用するのが最良です。
+1. ワイヤレス ネットワークに接続中のコンピューターまたは最近接続されたコンピューターの、C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid} のフォルダーを開きます。
+
+    すべての中から正しいプロファイルを探す必要があるため、多数のワイヤレス ネットワークに接続したことのないコンピューターを使用するのが最良です。
 3.     XML ファイルを検索し、正しい名前のファイルを探します。
 4.     正しい XML ファイルを見つけたら、OMA-URI の設定ページの [データ] フィールドに、XML コードをコピーして貼り付けます。
 
 ## ポリシーの展開
 
-1.   **[ポリシー]** ワークスペースで、展開するポリシーを選択し、 **[展開の管理]**をクリックします。
+1.  **[ポリシー]** ワークスペースで、展開するポリシーを選び、**[展開の管理]** を選びます。
 
 2.   **[展開の管理]** ダイアログ ボックスで、次の操作を実行します。
 
-    -   **ポリシーを展開するには**、ポリシーを展開する対象となる 1 つ以上のグループを選択して、**[追加]** &gt; **[OK]** をクリックします。
+    -   **ポリシーを展開するには** - ポリシーを展開する対象となる 1 つ以上のグループを選択して、**[追加]** &gt; **[OK]** の順に選択します。
 
-    -   **ポリシーを展開せずにダイアログ ボックスを閉じるには**、**[キャンセル]** をクリックします。
+    -   **ポリシーを展開せずにダイアログ ボックスを閉じるには**、**[キャンセル]** を選択します。
 
-展開済みポリシーを選択すると、ポリシー一覧の下部に展開についての詳細が表示されます。
+デプロイ済みポリシーを選択すると、ポリシー一覧の下部にデプロイについての詳細が表示されます。
 
 ### 関連項目
 [Wi-Fi connections in Microsoft Intune (Microsoft Intune での Wi-Fi 接続)](wi-fi-connections-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
