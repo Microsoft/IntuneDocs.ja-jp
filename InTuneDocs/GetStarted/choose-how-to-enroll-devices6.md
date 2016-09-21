@@ -13,8 +13,8 @@ ms.assetid: 40262e47-1ab4-437d-8ca5-c89b5022f91f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 6fc98df3df19e8858e60427f3b0bfd44c4f4b17d
-ms.openlocfilehash: dbdd2649ed565efffe50916c1dd661aac2ed38d8
+ms.sourcegitcommit: 2bfba29b5b2585f276a85a8dee7e62009e41ec3f
+ms.openlocfilehash: b96b970b3326b0b17f1a5f57f6d1407756c78e41
 
 
 ---
@@ -25,7 +25,11 @@ ms.openlocfilehash: dbdd2649ed565efffe50916c1dd661aac2ed38d8
 ## **企業所有の専用デバイスはどのような方法で管理しますか。**
 
   > [!div class="button"]
-[iOS DEP >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [iOS 設定アシスタント >](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [IMEI を持つタグ >](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+[iOS DEP >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
+> [!div class="button"]
+[iOS のセットアップ アシスタント >](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+> [!div class="button"]
+[IMEI によるタグ付け >](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   次のようにして、会社が所有するデバイスを専用ユーザーに登録できます。
 
@@ -40,6 +44,6 @@ ms.openlocfilehash: dbdd2649ed565efffe50916c1dd661aac2ed38d8
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

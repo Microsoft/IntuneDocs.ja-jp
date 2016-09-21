@@ -13,26 +13,14 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 95b3401b66256ef44623b74e6e0b549ec1e7fc2c
-ms.openlocfilehash: 27af2b714ff51f8710f67e7445225366d2722fb7
+ms.sourcegitcommit: 3d737c44e3586a4339a324dcb6701f7c86a29d01
+ms.openlocfilehash: 3bf0e6f8bc010c23712f9908cff7d515c2c62671
 
 
 ---
 
 # Android デバイスの管理をセットアップする
-Android デバイスのセットアップについては、[こちら](../enduser/using-your-android-device-with-intune.md)をご覧ください。
-
-Microsoft Intune を使用すると、プラットフォームに対して追加作業を行うことなく、Android デバイスの BYOD ("Bring Your Own Device") を実現できます。
-
-詳細については、次のデバイス プラットフォーム オプションから選択してください。
-
-> [!div class="op_single_selector"]
-- [Microsoft Intune を使用して Android の管理をセットアップする](set-up-android-management-with-microsoft-intune.md)
-- [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
-- [Microsoft Intune を使用して Windows Phone の管理をセットアップする](set-up-windows-phone-management-with-microsoft-intune.md)
-- [Microsoft Intune を使用して Windows デバイスの管理をセットアップする](set-up-windows-device-management-with-microsoft-intune.md)
-
-Android モバイル デバイスは、ユーザーが、Google Play から入手できるポータル サイト アプリを使用して登録できます。 ユーザーが Intune にデバイスを登録できるようにするには、次の手順を実行します。
+Intune 管理者として、ポータル サイトから Android デバイス管理を有効にできます。 ユーザーが、Google Play から入手できるポータル サイト アプリを使用してデバイスを登録できます。
 
 1.  **Intune をセットアップする**<br>
     **Microsoft Intune** を[モバイル デバイス管理機関に設定](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)して、MDM の設定を行うことにより、モバイル デバイス管理を準備します (この作業をまだ行っていない場合)。
@@ -52,6 +40,6 @@ Android モバイル デバイスは、ユーザーが、Google Play から入�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

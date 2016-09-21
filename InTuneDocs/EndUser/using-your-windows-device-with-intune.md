@@ -13,30 +13,30 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: ba1e9ae9b17b6cb3ef9bccdcd19bafd9443915ff
+ms.sourcegitcommit: d0cc50bb5d79f4840afee7984cf3f58f6dd26dac
+ms.openlocfilehash: 8832235ffdc8cd0b5b3eec244315711cfa59e069
 
 
 ---
 
 # Windows デバイスを Intune で使用する
 
-この記事には、エンドユーザーが Intune 管理対象デバイスで実行できるすべてのタスクへのリンクが掲載されています。 IT 管理者はこの情報を参照して、ユーザーがさまざまなタスクを実行するための手順を確認できます。タスクはカテゴリ別にグループ化されています。 
-- ポータル サイト アプリのインストールと Intune の登録 
+この記事には、ユーザーが Intune 管理対象デバイスで実行できるすべてのタスクへのリンクが掲載されています。 IT 管理者はこの情報を参照して、ユーザーがさまざまなタスクを実行するために従うべき手順を確認できます。タスクは以下のカテゴリにグループ化されます。
+- ポータル サイト アプリのインストールと Intune の登録
 - 登録後の管理タスク
 - ポリシー準拠の問題
 
 ## ポータル サイト アプリのインストールと Intune の登録
 
-このセクションの情報は、ポータル サイトのインストールと Windows デバイスのデバイス登録に役立ちます。
+このセクションの情報は、Intune ポータル サイトのインストールと Windows デバイスの登録に役立ちます。
 
 - [Intune に Windows デバイスを登録する](enroll-your-device-in-intune-windows.md)
 - [ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-- [デバイスを Intune に登録した場合に IT 管理者が確認できるもの](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
+- [デバイスを Intune に登録した場合に IT 管理者が確認できること](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 ## Intune にデバイスを登録する際に実行できること
 
-このセクションの情報は、Windows デバイスを Intune に登録した後に行える操作で役立ちます。
+このセクションの情報は、Windows デバイスを Intune に登録した後に実行できる操作で役立ちます。
 
 - [デバイスを暗号化する](encrypt-your-device-windows.md)
 - [パスワードを設定または変更する](set-or-change-your-password-windows.md)
@@ -47,9 +47,9 @@ ms.openlocfilehash: ba1e9ae9b17b6cb3ef9bccdcd19bafd9443915ff
 - [Microsoft による使用状況データの収集を無効にする](turn-off-microsoft-usage-data-collection-windows.md)
 - [デバイスを手動で同期する](sync-your-device-manually-windows.md)
 
-## ご利用のデバイスでの問題の解決
+## ご利用のデバイスで問題を解決するには
 
-このセクションの情報は、Windows デバイスを Intune に登録した場合に発生する可能性がある問題を修正するのに役立ちます。
+このセクションの情報は、Windows デバイスを Intune に登録した場合に発生する可能性がある問題を解決するのに役立ちます。
 
 - [デバイスに最低限必要なバージョンのオペレーティング システムがインストールされていない](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)
 - [デバイスが最新のオペレーティング システムのバージョンに準拠していない](device-doesnt-comply-with-maximum-operating-system-version-windows.md)
@@ -60,6 +60,6 @@ ms.openlocfilehash: ba1e9ae9b17b6cb3ef9bccdcd19bafd9443915ff
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

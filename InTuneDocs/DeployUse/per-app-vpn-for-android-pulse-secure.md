@@ -4,7 +4,7 @@ description: "Intune で管理する、アプリごとの VPN プロファイル
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 08/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,17 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a2464a9d2276319f75a3da7db70c2613152bed9b
-ms.openlocfilehash: 177ed5f693b8f1ce16d96e1b3e729630d661475f
+ms.sourcegitcommit: eb2260f6bd37647d34871c9776dba3628d0aa8f6
+ms.openlocfilehash: a2af91827f3a5ebc549e7f474943f1b0cc6208dd
 
 
 ---
 
 # カスタム ポリシーを使用して、Android デバイスにアプリごとの VPN プロファイルを作成する
 
-Intune で管理される Android デバイス用にアプリごとの VPN プロファイルを作成できます。 最初に、Pulse Secure 接続の種類を使用する VPN プロファイルを作成します。 次に、特定のアプリと VPN プロファイルを関連付けるカスタム構成ポリシーを作成します。 ポリシーを Android デバイスまたはユーザー グループに展開した後は、ユーザーがそれらのデバイス上の指定されているアプリの 1 つの起動すると、そのアプリの VPN 接続が開きます。
+Intune で管理する、アプリごとの VPN プロファイルを Android 5.0 以降のデバイスに作成できます。 最初に、Pulse Secure 接続の種類を使用する VPN プロファイルを作成します。 次に、特定のアプリと VPN プロファイルを関連付けるカスタム構成ポリシーを作成します。 
+
+Android デバイスまたはユーザー グループにポリシーをデプロイした後、ユーザーは PulseSecure VPN を開始します。 PulseSecure は、特定のアプリからのトラフィックのみに OpenVPN 接続の使用を許可します。
 
 > [!NOTE]
 >
@@ -49,8 +51,7 @@ Intune で管理される Android デバイス用にアプリごとの VPN プ�
    6. **[OMA-URI]** には、**./Vendor/MSFT/VPN/Profile/*Name*/PackageList** の文字列を指定します。ここの *Name* は手順 1 でメモした VPN プロファイル名です。 この例では、文字列は **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList** になります。
    7.   **[値]** には、プロファイルと関連付けるセミコロンで区切られたパッケージの一覧を入力します。 たとえば、Excel と Google Chrome ブラウザーで VPN 接続を使用するには、「**com.microsoft.office.excel;com.android.chrome**」と入力します。
 
-
-    ![Android のアプリごとの VPN カスタム ポリシーの例](..\media\android_per_app_vpn_oma_uri.png)
+![Android のアプリごとの VPN カスタム ポリシーの例](./media/android_per_app_vpn_oma_uri.png)
 
 #### アプリの一覧をブラックリストまたはホワイトリストとして設定する (省略可能)
   **BLACKLIST** 値を使用すると、VPN 接続を使用*できない*アプリの一覧を指定できます。 他のすべてのアプリは、VPN を使用して接続されます。
@@ -76,6 +77,6 @@ Intune で管理される Android デバイス用にアプリごとの VPN プ�
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 

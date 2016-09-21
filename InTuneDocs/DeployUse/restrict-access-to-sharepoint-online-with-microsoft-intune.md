@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
-ms.openlocfilehash: ab765d181cb2eb9e3e6a9c79c597241c4fd5985f
+ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
+ms.openlocfilehash: 2d8304964908986943c82ebed1dd7fd23b2c222e
 
 
 ---
@@ -35,7 +35,7 @@ ms.openlocfilehash: ab765d181cb2eb9e3e6a9c79c597241c4fd5985f
 >[!IMPORTANT]
 >先進認証を使用したアプリでの PC および Windows 10 Mobile デバイスに対する条件付きアクセスは、現在、Intune の一部のお客様だけが使用できます。 これらの機能を既に使用している場合は、何も行う必要はありません。 機能を引き続き使用できます。
 
->最新の認証を使用するアプリ用に、PC または Windows 10 Mobile の条件付きアクセス ポリシーをこれから作成しようとしている場合は、Intune の管理対象デバイスまたはドメインに参加している Windows PC 用のデバイス ベースの条件付きアクセスを含む Azure Active Directory のパブリック プレビューにサインアップします。 詳細については[このブログの投稿](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/)をお読みください。
+>最新の認証を使用したアプリ用に PC または Windows 10 Mobile の条件付きアクセス ポリシーを初めて作成する場合は、Intune の管理対象デバイスまたはドメイン参加 Windows PC 用のデバイス ベースの条件付きアクセスが含まれる Azure Active Directory のパブリック プレビューにサインアップしてください。 詳細については[このブログの投稿](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/)をお読みください。
 
 SharePoint Online の条件付きアクセス ポリシーを構成する**前に**、次のことを行う必要があります。
 - **SharePoint Online サブスクリプション**を取得します。ユーザーには SharePoint Online のライセンスが必要です。
@@ -83,6 +83,9 @@ AAD DRS は、Intune や Office 365 のお客様に対して自動的にアク�
   - ドメインへの参加を要求するようにポリシーを設定していて、PC がドメインに参加していない場合は、IT 管理者に連絡するようにメッセージが表示されます。
 
   - ドメインへの参加または準拠を要求するようにポリシーを設定していて、PC がいずれかの要件を満たしていない場合は、ポータル サイト アプリをインストールして登録する方法についての手順が示されたメッセージが表示されます。
+  >[!NOTE]
+  >Intune コンピューター クライアントを実行する PC では、条件付きアクセスはサポートされていません。
+
 -    [Office 365 の先進認証が有効化](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)されていて、最新の Office 更新プログラムがすべて適用されていること。
 
     先進認証により、Active Directory Authentication Library (ADAL) ベースのサインインが Office 2013 Windows クライアントに導入され、**多要素認証**や**証明書ベースの認証**などのより強力なセキュリティを使用できるようになります。
@@ -189,6 +192,6 @@ SharePoint Online ポリシーには、次の 2 つのグループの種類を�
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 
