@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 44443db664753b202cc3fa07f8b76894320dc55d
-ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
+ms.sourcegitcommit: 0be23ec10b8e380d57fc8263c68f08c0287c1b93
+ms.openlocfilehash: 7a9d68de99c624ccfe4d7d741c1c8ac5c0044314
 
 
 ---
@@ -32,9 +32,9 @@ ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
 
 次の表は、コンプライアンス ポリシーによってサポートされているデバイスの種類と、ポリシーが条件付きアクセス ポリシーと共に使用される場合に非準拠設定がどのように管理されるかを示した一覧です。
 
---------------
+-----------------------------
 
-|ポリシー設定| Windows 8.1 以降| Windows Phone 8.1 以降| iOS 6.0 以降|Android 4.0 以降<br/>Samsung KNOX Standard 4.0 以降|
+|ポリシー設定| Windows 8.1 以降| Windows Phone 8.1 以降| iOS 8.0 以降|Android 4.0 以降<br/>Samsung KNOX Standard 4.0 以降|
 |-----|----|----|----|----|
 |**PIN またはパスワードの構成** |修復|修復|修復|検疫済み|
 |**デバイスの暗号化**|該当なし|修復|修復 (PIN の設定による)|検疫済み|
@@ -43,7 +43,9 @@ ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
 |**最小 OS バージョン**|検疫済み|検疫済み|検疫済み|検疫済み|
 |**最大 OS バージョン**|検疫済み| 検疫済み| 検疫済み| 検疫済み|
 |**Windows 正常性構成証明書**|Windows 10 および Windows 10 Mobile は検疫されます。<br /><br />Windows 8.1 には設定を適用できません。|N/A|該当なし|該当なし|
---------------
+
+------------------------------
+
 **修復** = デバイスのオペレーティング システムによってコンプライアンスが適用されます (たとえば、ユーザーが PIN の設定を求められます)。  設定が非準拠となる場合はありません。
 
 **検疫済み** = デバイスのオペレーティング システムはコンプライアンスを適用しません (たとえば、Android デバイスはユーザーにデバイスの暗号化を求めません)。 デバイスが準拠していない場合、次のアクションが行われます。
@@ -62,6 +64,6 @@ ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

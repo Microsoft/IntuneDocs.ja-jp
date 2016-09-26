@@ -4,7 +4,7 @@ description: "Managed Browser アプリケーションを展開して、Web 閲�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/03/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fcd53d335aa18701ba0b8c3c75569febbee2cd5
-ms.openlocfilehash: d07a5dde05055c54f5b89c8aa5f49203d0a22b97
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: d4d05508e44fe0864ce6dabf0864f6ed67109a7c
 
 
 ---
@@ -34,7 +34,7 @@ Android - Managed Browser アプリは使用できません。<br /><br />
 
 -   Android 4 以降が実行されているデバイス
 
--   iOS 7.1 以降を実行するデバイス
+-   iOS 8.0 以降を実行するデバイス
 
 Intune Managed Browser では、[Microsoft Intune アプリケーション パートナー](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)から Web コンテンツを開くことができます。
 
@@ -44,9 +44,9 @@ Intune Managed Browser では、[Microsoft Intune アプリケーション パ�
 
 2.  次のいずれかの種類の **ソフトウェア** ポリシーを構成します。
 
-    -   **Managed Browser のポリシー (Android 4 以降)**
+    -   **Managed Browser (Android 4 以降)**
 
-    -   **Managed Browser のポリシー (iOS 7.1 以降)**
+    -   **Managed Browser (iOS 8.0 以降)**
 
     ポリシーの作成および展開方法の詳細については、「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」トピックを参照してください。
 
@@ -154,6 +154,6 @@ Microsoft は、Microsoft の製品やサービスを改善するために、Man
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

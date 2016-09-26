@@ -4,7 +4,7 @@ description: "Intune のモバイル アプリ構成ポリシーを使用して�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 06/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 917761ab6be2ccd94f32e7d2f12c0ed18d335d41
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: 9b70517251c6225afee719c7e3380c584785251b
 
 
 ---
@@ -37,7 +37,7 @@ Microsoft Intune のモバイル アプリ構成ポリシーを使用して、�
 これらのポリシーをユーザーやデバイスに直接展開しないでください。 代わりに、ポリシーをアプリに関連付け、そのアプリを展開します。 ポリシー設定は、アプリがポリシーを確認する際に (通常は初めて実行したときに) 必ず使用されます。
 
 > [!TIP]
-> この種類のポリシーは現在、iOS 7.1 以降を実行しているデバイスでのみ有効です。 次の種類のアプリ インストールをサポートします。
+> この種類のポリシーは現在、iOS 8.0 以降を実行しているデバイスでのみ有効です。 次の種類のアプリ インストールをサポートします。
 >
 > -   **App Store の管理対象 iOS アプリ**
 > -   **iOS 用アプリ パッケージ**
@@ -139,6 +139,6 @@ Intune は、プロパティ リストで次のデータ型をサポートしま
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

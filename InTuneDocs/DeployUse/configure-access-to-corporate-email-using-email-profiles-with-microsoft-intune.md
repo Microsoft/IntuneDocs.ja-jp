@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d8a4fd4673560d6e2ffb4264ba8d8e56b0e5cb8d
-ms.openlocfilehash: 59b8cc2ad33521fd4575e46d78129c168da757b3
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: ef4041b7d9f47d9e1e1463e62274f93597fc6503
 
 
 ---
@@ -31,7 +31,7 @@ IT 管理者やユーザーは、代替電子メール クライアント (Andro
 電子メール プロファイルを使用して、次のデバイスの種類でネイティブ電子メール クライアントを構成できます。
 -   Windows Phone 8 以降
 -   Windows 10 (デスクトップの場合) および Windows 10 Mobile 以降
--   iOS 7.1 以降
+-   iOS 8.0 以降
 -   Samsung KNOX Standard (4.0 以降)
 
 デバイスで電子メール アカウントをセットアップするだけでなく、同期する電子メールの数や、デバイスの種類によっては同期するコンテンツの種類をセットアップできます。
@@ -71,7 +71,7 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
 
     -   **Samsung KNOX Standard (4.0 以降) 用の電子メール プロファイル**
 
-    -   **電子メール プロファイル (iOS 7.1 以降)**
+    -   **電子メール プロファイル (iOS 8.0 以降)**
 
     -   **電子メール プロファイル (Windows Phone 8 以降)**
 
@@ -122,6 +122,6 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO3-->
 
 

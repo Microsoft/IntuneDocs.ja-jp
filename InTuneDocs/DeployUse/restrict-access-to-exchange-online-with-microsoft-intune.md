@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
-ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
+ms.sourcegitcommit: 4f98937d7adfc0c1584625303da3350785af8169
+ms.openlocfilehash: 2bbb17881a1e40cd6552fe4303d55bd0cb4ffcf6
 
 
 ---
@@ -67,7 +67,7 @@ Exchange Online または新しい Exchange Online Dedicated 環境への電子�
 **Outlook** およびその他の**先進認証を使用するアプリ**から Exchange Online の電子メールへのアクセスを制限できます。
 
 - Android 4.0 以降、Samsung Knox Standard 4.0 以降
-- iOS 7.1 以降
+- iOS 8.0 以降
 - Windows Phone 8.1 以降
 
 **先進認証**では、Active Directory Authentication Library (ADAL) ベースのサインインが Microsoft Office クライアントに導入されます。
@@ -93,7 +93,7 @@ iOS と Android 用の OWA アプリはサポートされていません。  こ
 
 - Android 4.0 以降、Samsung Knox Standard 4.0 以降
 
-- iOS 7.1 以降
+- iOS 8.0 以降
 
 - Windows Phone 8.1 以降
 
@@ -262,6 +262,6 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

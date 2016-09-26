@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
-ms.openlocfilehash: 2d8304964908986943c82ebed1dd7fd23b2c222e
+ms.sourcegitcommit: 4f98937d7adfc0c1584625303da3350785af8169
+ms.openlocfilehash: 84c9d355fde49fd18899a43ed0def0c801694291
 
 
 ---
@@ -62,7 +62,7 @@ SharePoint Online の条件付きアクセス ポリシーを構成する**前�
 >[!NOTE]
 >SharePoint Online で条件付きアクセスを有効にする場合は、[Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) のトピックの説明に従って、一覧にあるドメインを無効にすることをお勧めします。  
 ## モバイル デバイスのサポート
-- iOS 7.1 以降
+- iOS 8.0 以降
 - Android 4.0 以降、Samsung Knox Standard 4.0 以降
 - Windows Phone 8.1 以降
 
@@ -192,6 +192,6 @@ SharePoint Online ポリシーには、次の 2 つのグループの種類を�
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

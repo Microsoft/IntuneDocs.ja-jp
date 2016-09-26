@@ -4,7 +4,7 @@ description: "Cisco ISE で制御されている Wi-Fi および VPN にアク�
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 06/24/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 40194f4359d0889806e080a4855b8e1934b667f9
-ms.openlocfilehash: 9d6b7198e3c2e30898a8ec83785c7f3b777eda5f
+ms.sourcegitcommit: ecaf92b327538e3da4df268e4c67c73af262b731
+ms.openlocfilehash: fa73c5e2b4e6737377acd206807399b31df37364
 
 
 ---
@@ -27,7 +27,7 @@ Intune を Cisco Identity Services Engine (ISE) と統合すると、Intune の�
 この統合を有効にするために、Intune テナントでセットアップを行う必要はありません。 Intune テナントにアクセスするアクセス許可を、Cisco ISE サーバーに与える必要があります。 これを行った後、セットアップの残りの部分は Cisco ISE サーバーで行われます。 この記事では、Intune テナントにアクセスする権限を持つ ISE サーバーを提供する手順について説明します。
 
 ### 手順 1: 証明書を管理する
-1. Azure Active Directory (Azure AD) コンソールで、証明書をエクスポートします。
+Azure Active Directory (Azure AD) のコンソールから証明書をエクスポートし、それを ISE コンソールの信頼された証明書ストアにインポートします。
 
 #### Internet Explorer 11
 
@@ -44,6 +44,8 @@ Intune を Cisco Identity Services Engine (ISE) と統合すると、Intune の�
 
    f. **[エクスポートするファイル]** ページで、**[参照]** をクリックして、ファイルを保存する場所を選択し、ファイル名を指定します。 エクスポートするファイルを選択するのと似ていますが、実際にエクスポートする証明書が保存されるファイルに名前を付けます。 **[次へ]** &gt; **[完了]** を選択します。
 
+   g. ISE コンソール内から、Intune 証明書 (エクスポートしたファイル) を **[信頼できる証明書]** にインポートします。
+
 #### Safari
 
  a. Azure AD コンソールにサインインします。
@@ -52,14 +54,13 @@ b. ロック アイコン &gt; **[詳細]** をクリックします。
 
    c. **[証明書の表示]** &gt; **[詳細]** を選択します。
 
-   d. 証明書を選択し、**[エクスポート]** を選択します。  
+   d. 証明書を選択し、**[エクスポート]** を選択します。 
+
+   e. ISE コンソール内から、Intune 証明書 (エクスポートしたファイル) を **[信頼できる証明書]** にインポートします。
 
 > [!IMPORTANT]
 >
 > 証明書の有効期限が切れた場合、新しい証明書をエクスポートしてインポートする必要があるため、証明書の有効期限を確認します。
-
-
-2. ISE コンソール内から、Intune 証明書 (エクスポートしたファイル) を **[信頼できる証明書]** にインポートします。
 
 
 ### ISE からの自己署名証明書の取得 
@@ -97,8 +98,57 @@ b. ロック アイコン &gt; **[詳細]** をクリックします。
 |OAuth 2.0 トークン エンドポイント|トークン発行 URL|
 |クライアント ID でコードを更新する|クライアント ID|
 
+### 手順 4: 自己署名証明書を ISE から、Azure AD で作成した ISE アプリにアップロードする
+1.     .cer X509 公開証明書ファイルから、base64 でエンコードされた証明書値と拇印を取得します。 この例では PowerShell を使用します。
+   
+      
+    `$cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2`
+     `$cer.Import(“mycer.cer”)`
+      `$bin = $cer.GetRawCertData()`
+      `$base64Value = [System.Convert]::ToBase64String($bin)`
+      `$bin = $cer.GetCertHash()`
+      `$base64Thumbprint = [System.Convert]::ToBase64String($bin)`
+      `$keyid = [System.Guid]::NewGuid().ToString()`
+ 
+    次の手順で使用する $base64Thumbprint、$base64Value、および $keyid の値を格納します。
+2.       マニフェスト ファイルを介して証明書をアップロードします。 Azure [管理ポータル](https://manage.windowsazure.com)にログインする
+2.      Azure AD スナップインで、X.509 証明書を使用して構成するアプリケーションを検索します。
+3.      アプリケーション マニフェスト ファイルをダウンロードします。 
+5.      空の “KeyCredentials”: [], プロパティを次の JSON に置換します。  KeyCredentials 複合型の詳細については、「[Entity and complex type reference](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType)」 (エンティティおよび複合型参照) を参照してください。
 
-### 手順 3: ISE 設定を構成する
+ 
+    `“keyCredentials“: [`
+    `{`
+     `“customKeyIdentifier“: “$base64Thumbprint_from_above”,`
+     `“keyId“: “$keyid_from_above“,`
+     `“type”: “AsymmetricX509Cert”,`
+     `“usage”: “Verify”,`
+     `“value”:  “$base64Value_from_above”`
+     `}2. `
+     `], `
+ 
+たとえば、
+ 
+    `“keyCredentials“: [`
+    `{`
+    `“customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,`
+    `“keyId“: “2d6d849e-3e9e-46cd-b5ed-0f9e30d078cc”,`
+    `“type”: “AsymmetricX509Cert”,`
+    `“usage”: “Verify”,`
+    `“value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”`
+    `}`
+    `],`
+ 
+6.      アプリケーション マニフェスト ファイルに変更を保存します。
+7.      編集したアプリケーションのマニフェスト ファイルを、Azure 管理ポータルを介してアップロードします。
+8.      省略可能: アプリケーションに X.509 証明書が存在しているかどうか確認するために、もう一度、マニフェストをダウンロードします。
+
+>[!NOTE]
+>
+> KeyCredentials はコレクションであるため、ロール オーバー シナリオ用に複数の X.509 証明書をアップロードすることも、侵害シナリオで証明書を削除することもできます。
+
+
+### 手順 4: ISE 設定を構成する
 ISE 管理コンソールで、次の設定値を指定します。
   - **サーバーの種類**: Mobile Device Manager
   - **認証の種類**: OAuth – クライアントの資格情報
@@ -150,6 +200,6 @@ ISE 管理コンソールで、次の設定値を指定します。
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 
