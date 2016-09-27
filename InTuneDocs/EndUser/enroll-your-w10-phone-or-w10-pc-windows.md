@@ -4,7 +4,7 @@ description: "Intune に Windows 10 のモバイル デバイスまたはデス�
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 06/27/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d1df63c349685333fbebcbba527e46b1f3047f43
-ms.openlocfilehash: a34d3fb4fe45ad4dd6da3dfacc832f0e97b5bee6
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: fb950108f3232af8049e90af977b0f3f9f2b3576
 
 
 ---
@@ -59,7 +59,7 @@ Windows 10 Mobile または Windows 10 デスクトップ デバイスを登録�
 
 4. 「**準備が完了しました!**」という画面が表示されたら、 **[閉じる]** をタップします。 以上で完了です。
 
-  ![「準備が完了しました!」画面で、[閉じる] をタップ します。](./media/w10-enroll-rs1-youre-all-set.png)
+  ![「You're all set! (準備が完了しました。)」画面で、[閉じる] をタップします。 screen](./media/w10-enroll-rs1-youre-all-set.png)
 
 5. 接続が適切なことを再確認する場合は、**[設定]** に戻ります。すると、職場または学校のアカウントが表示されます。
 
@@ -106,6 +106,6 @@ Windows 10 Mobile または Windows 10 デスクトップ デバイスを登録�
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 
