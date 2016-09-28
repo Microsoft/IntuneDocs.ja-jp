@@ -1,54 +1,33 @@
 ---
-title: "紛失したまたは盗難にあった Android デバイスをリセット (消去) する | Microsoft Intune"
+title: "Android デバイスでコンプライアンス対応を確認する | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 8bb47a5c-f66d-491b-b909-e6a8844f773a
+ms.assetid: d98d9bbe-98fa-48a9-8808-110435eac9e4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 2b759c45a045fff29c6d21a16b3798482886d587
+ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
+ms.openlocfilehash: e5f519253cfa380a973db428bc5acaac3a2101df
 
 
 ---
 
 
-# 紛失したまたは盗難にあった Android デバイスをリセット (消去) する
+# Android デバイスでコンプライアンス対応を確認する
 
-Intune に登録されている携帯電話が紛失や盗難にあった場合は、別のデバイスのポータル サイト アプリか、[ポータル Web サイト](http://portal.manage.microsoft.com)を使用して、携帯電話を出荷時の既定設定にリセットできます。
+ご使用のデバイスでしばらくの間、Intune にチェックインしていない場合、会社または学校のリソースにアクセスすることができない可能性があります。 アクセスを回復するには、次を試してください。
 
-デバイスをリセットした場合の影響については、「[ポータル サイトを使用してデバイスをリセットするとどうなるか](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)」をご覧ください。
+1. デバイス上で Android 用ポータル サイト アプリを開きます。
 
-> [!WARNING]
-> デバイスを出荷時の状態にリセットすることで、私的な情報と仕事や学校の情報の両方をデバイスから削除することができます。
-
-## 会社のポータル アプリからデバイスをリセットするには
-
-1.  登録済みの別のデバイスから、会社のポータル アプリを開き、お使いの会社や学校のアカウントを使用してサインインします。
-
-2.  **[デバイス]** をタップして、紛失または盗難にあったデバイスの名前を選びます。
-
-3.  **[リセット]** &gt; **[リセット]** の順にクリックします。
-
-## 会社のポータル Web サイトを使用してデバイスをリセットするには
-
-次の手順を使用するか、このビデオをご覧いただけます。
-
-<iframe width="675" height="379" src="https://www.youtube.com/embed/6e73o7f8gxE" frameborder="0" allowfullscreen></iframe>
-
-1.  ブラウザーで、[会社のポータル Web サイト](http://portal.manage.microsoft.com)を開き、職場のアカウントにサインインします。
-
-2.  **[デバイス]** で、紛失したまたは盗難にあったデバイスを選択します。
-
-3.  **[リセット]** &gt; **[リセット]** の順にタップします。
+2. 
 
 紛失したまたは盗難にあったデバイスを自分でリセットできない場合は、IT 管理者に依頼してください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
@@ -56,6 +35,6 @@ Intune に登録されている携帯電話が紛失や盗難にあった場合�
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 

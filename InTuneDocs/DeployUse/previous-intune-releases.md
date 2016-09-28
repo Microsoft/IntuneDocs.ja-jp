@@ -13,13 +13,135 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: noindex,nofollow
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 57570fcf2f738b68a01bb1c5fc8962c7ef117920
-ms.openlocfilehash: 43546721245f92309d86c496dbcde7900a598ed0
+ms.sourcegitcommit: 9d3305d9938244f0da769dc547cd7a42d7ef81ed
+ms.openlocfilehash: 996198a2525dc830d229e7143afda3c71f4276b8
 
 
 ---
 
 # 以前の Intune のリリース
+## 2016 年 8 月
+## 2016 年 8 月
+## アプリ管理
+<!---@Barry, I created the buckets of App management, Device management, etc but am not tied to them. Just wanted to break up and organize the feature list. If you're going to take over the Company Portal section, please talk to Stacie about how she's been organizing it. --->
+
+### iOS 9.3 で表示されないアプリと表示されるアプリ
+iOS 9.3 以降を実行する監視対象デバイスでは、iOS の一般構成ポリシーの表示されないアプリと表示されるアプリのリストを使用して次のことができます。
+- ユーザーに対して表示されないアプリの一覧を指定します。 ユーザーはこのようなアプリを表示または起動できません。
+- ユーザーが表示および起動できるアプリの一覧を指定します。 他のアプリは表示または起動できません。
+
+ユーザー自身が展開したアプリと、Messages や Notes などの iOS 組み込みアプリの両方を指定できます。 詳細については、「[Microsoft Intune の iOS ポリシー設定]( https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)」を参照してください。
+<!---TFS 1279009 checked--->
+### Samsung KNOX デバイスでの許可するアプリとブロックするアプリのポリシー
+Samsung KNOX デバイスでは、次のいずれかを作成できるカスタム ポリシーを構成できます。
+- デバイスでの実行をブロックするアプリの一覧。 ブロック リストで定義されているアプリは、インストールされている場合でも、デバイスでアクティブにできません。
+- デバイスのユーザーが Google Play ストアからインストールできるアプリの一覧。 他のアプリはストアからインストールできません。
+
+これらの設定は、Samsung KNOX を実行するデバイスでのみ使用できます。
+詳細については、「[カスタム ポリシーを使用して、Samsung KNOX デバイス用のアプリを許可またはブロックする]( custom-policy-to-allow-and-block-samsung-knox-apps.md)」を参照してください。
+<!---TFS 1311629 checked --->
+### モバイル アプリケーション管理 (MAM) ポリシーと互換性のある新しいアプリ
+[iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) および [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) 向けの Yammer アプリは、デバイスが登録されていてもいなくても、[Intune モバイル アプリケーション管理 (MAM) ポリシー](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)と互換性があります。
+
+MAM と互換性のある全アプリの一覧については、[Microsoft Intune アプリケーション パートナー](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners)のサイトをご覧ください。
+<!--- TFS 1252335 & 1252336 checked--->
+
+
+<!--- I started putting TFS numbers in the What's Coming topic and found it helpful when updating the What's New. Up to you if you want to continue. --->
+
+### Intune Viewer アプリ
+新しい RMS 共有アプリのリリースに伴い、2016 年 8 月以降、次の Intune Viewer アプリを削除する予定です。
+- Intune AV Viewer
+- Intune PDF Viewer
+- Google Play の Android 用 Intune Image Viewer
+
+Intune Viewer アプリを使用する代わりに、[Android 用の新しい Rights Management アプリ (RMS 共有) ](https://docs.microsoft.com/en-us/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app)を使用することをお勧めします。そうすることで、3 つのアプリを個別にではなく、1 つのアプリを展開して、Android デバイス上の企業ファイルを安全に表示することができます。 Intune Viewer アプリがサポートされなくなると、Google ストアから削除され、その後使用することができなくなります。
+
+## デバイス管理
+### Android 7.0 のサポート
+Intune は近日公開予定のモバイル デバイス向け Android 7.0 オペレーティング システムの "Day 0" サポートを提供します。
+<!---TFS 1262053--->
+### Google による Android 7.0 デバイスでのリモート パスコード リセット機能の削除
+Google は、IT 管理者やエンド ユーザーが Android 7.0 デバイスのパスコードをリモートでリセットする機能を削除しています。 これまでは、IT 管理者はユーザーのパスコードをリモートでリセットでき、エンド ユーザーはポータル サイトから自分のパスコードをリセットできました。
+
+
+
+## ポータル サイトの更新
+### ポータル Web サイト
+- **ポータル サイトから Microsoft へのフィードバック リンク** <br/>
+ポータル サイトの Web サイトでは、エンドユーザーはページの下部にある新しい [フィードバック] リンクをタップして、サイトの操作性に関するフィードバックを Microsoft に送信できるようになります。 収集されて匿名化されたフィードバックは、Microsoft がポータル サイトの Web サイトについてユーザーの操作性を向上させるのに役立ちます。
+<!--- TFS 1313657 checked--->
+
+### iOS
+- **iOS Managed Browser の最小バージョンの 8.0 への更新**<br/>
+iOS 用の Microsoft Intune Managed Browser アプリは、iOS 8.0 以降を実行するデバイスをサポートするように更新されました。 iOS 7.1 デバイスでは、既存の Managed Browser アプリを使用することができますが、新しい Managed Browser の機能にアクセスしてフル活用できるように、ユーザーに iOS 8.0 以降に更新することをお勧めしてください。  
+<!---TFS 1313253 checked--->
+
+## 今後の更新情報
+
+### iOS 10 のサポート
+Intune は iOS 10 を完全サポートする予定です。 詳細については、iOS 10 のパブリック リリース後にお知らせします。
+
+### Intune グループから Azure Active Directory グループへの移行 (2016年 9 月以降)
+Intune は、Intune でのユーザーとデバイスのグループとして Azure Active Directory (AAD) のセキュリティ グループを使用する、新しいグループ管理エクスペリエンスを作成しています。 これらのグループは、**新しい Azure ベースの Intune 管理ポータルの導入時**に、すべてのグループの管理、ポリシーの展開、およびプロファイルの展開に使用されます。
+
+この新しいエクスペリエンスにより、サービス間でグループを複製する必要がなくなり、**新しい Azure Active Directory Premium (AADP) グループ機能の一部にアクセスすることができ** 、PowerShell および Graph を使用して拡張機能を提供します。 またこれにより、エンタープライズ モビリティ管理でのグループ管理エクスペリエンスも統合されます。
+
+セキュリティ グループへの移行を有効にするため、**現在の管理コンソール**のエクスペリエンスにいくつかの変更が施されます。 **これらの変更と、AAD セキュリティ グループの使用については、Intune のドキュメントに記録されます**。
+
+Intune の新規のお客様には、**現在のテナントに表示される前に、セキュリティ グループの変更の一部**が表示されます。
+
+グループ管理の変更に加えて、**次の機能が廃止される予定です**。
+- 新規グループ作成時のメンバーまたはグループの除外
+- **グループ化を解除されたユーザー**と**グループ化を解除されたデバイス**のグループ
+- サービス管理者の役割での**グループの管理**
+- 通知ルールに対するカスタム グループベースの警告
+- レポート内のグループのピボット
+<!--- TFS 1295329--->
+
+### Android 用ポータル サイトへの '通知' の追加
+Microsoft は、Android 用ポータル サイトに対する更新を 9 月にリリースし、ホームページ上に新しい**通知**アイコンを導入します。 このアイコンをタップすると、**通知**ページにアクセスし、デバイスのコンプライアンス非対応、登録の更新、および登録のアクティブ化などのポータル サイト アプリで注意が必要なすべての項目をエンド ユーザーに表示します。 iOS 用ポータル サイト アプリも使用している場合は、通知エクスペリエンスがすでに表示されます。 **通知**ページの導入に伴い、デバイスがすでに登録されている限り、Android 用ポータル サイトを起動または再開するたびに**会社アクセスのセットアップ**ページが表示されることはなくなります。 Microsoft は、多くのお客様がエンドユーザー ガイダンスを作成していることを把握しており、ガイダンスとスクリーンショットの更新が必要になる場合に事前に通知くださることに感謝いたします。 ドキュメントに今後のエクスペリエンスの変更を反映し、更新してください。 最新のスクリーンショットは、 https://aka.ms/androidcpupdate でご確認いただけます。  
+
+### iOS エンドユーザーのアプリ取得方法の改善
+9 月に、iOS 用ポータル サイト アプリのアプリ タイルに以下のような変更が行われ、ユーザーは単一の場所 (ポータル サイト Web サイト) のさまざまなビューですべてのアプリを確認できるようになる予定です。 現在、Apple の制限では、基幹業務および管理対象アプリのストア アプリをポータル サイト アプリに一覧表示することが禁止されており、ユーザーが自分のすべてのアプリを見るには異なるビューを表示する必要があります。
+
+- 現時点では、**[会社のアプリ]** タイルはポータル サイト Web サイトの [すべて] タブにあるすべてのアプリのリストと関連付けられており、今後も機能は同じです。 このタイル名が **[すべてのアプリ]** に変更されます。
+- **[その他のアプリ]** タイルは、現在、Apple がポータル サイト アプリに表示を許可しているすべてのアプリを一覧表示する、ポータル サイト アプリ内のビューに関連付けられています。 このタイル名は **[おすすめアプリ]** に変更され、ユーザーがこのタイルをタップするとポータル サイト Web サイトの [おすすめ] タブが表示されるようになります。
+-  **[カテゴリ]** タイルは、現在、アプリのカテゴリを一覧表示する、ポータル サイト アプリ内のビューに関連付けられています。 このタイル名は変更されませんが、ポータル サイト Web サイトの [カテゴリ] タブに関連付けられるようになります。 更新後のスクリーン ショットは[こちら](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186)で確認することができます。
+<!---TFS 1317133--->
+
+### クラウドのロードマップ
+[クラウド プラットフォームのロードマップ](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)では、Intune の今後の開発に関する情報を入手できます。
+
+### 廃止予定のサービス
+<!---@Barry, we started listing service deprecations earlier this summer. --->
+- **iOS ポータル サイト アプリのサポートの変更**<br/>
+9 月には、iOS 用 Microsoft Intune ポータル サイト アプリのすべてのユーザーが、アプリの最新バージョンを使用するように要求されます。 新しいユーザーは最新バージョンのみをダウンロードでき、現在のユーザーは最新バージョンへの更新を求められます。 最新バージョンを使用するには iOS 8.0 以降が必要であり、デバイスで以前の iOS バージョンを実行している場合は、デバイスを iOS 8.0 以降に更新したうえでポータル サイト アプリを最新バージョンに更新するまで、ポータル サイトを使用できず、登録することもできません。 iOS 8.0 以前のバージョンを実行している登録済みのデバイスは、引き続き管理対象であり、Intune 管理コンソールに表示されます。  
+
+- **iOS Managed Browser の最小バージョンの 8.0 への更新**<br/>
+8 月、Intune は iOS 8.0 以降を実行するデバイスのみをサポートする、iOS 用の最新の Microsoft Intune Managed Browser アプリをリリースします。 iOS 7.1 デバイスでは、既存の Managed Browser アプリを使用することができますが、新しい Managed Browser の機能にアクセスしてフル活用できるように、ユーザーに iOS 8.0 以降に更新することをお勧めしてください。  
+<!---TFS 1313253--->
+
+- **Windows 8 および Windows Phone 8 用のポータル サイト アプリの廃止** <br/>
+2016年 10 月以降、Microsoft Intune は Windows 8 および Windows Phone 8 ポータル サイト アプリのサポートを廃止します。 Microsoft Intune は、Windows Phone 8 プラットフォームのサポートも廃止します。 その結果、Windows Phone 8 デバイスの登録または更新はできなくなります。 既に登録されている Windows Phone 8 および Windows 8 デバイスは継続して管理できます。 デバイスへのアプリの配布を中断することなく続行するには、Windows Phone 8 および Windows 8 デバイスを Windows 8.1 および Windows Phone 8.1 に更新し、対応する Windows 8.1 および Windows Phone 8.1 のポータル サイト アプリを使用します。
+<!---TFS 1255391--->
+
+<!--- - **Custom Group Targeting of Notification Rules Removal.**<br/>
+Intune notification rules define who an email alert will be sent to from Intune. Currently, you can configure notification rules to send emails to all users of devices in an Intune device group that you created. From around June 1st 2016 moving forward, targeting user-created groups will no longer be supported.
+
+    Today, to target a notification rule to a group you created from the Microsoft Intune administration console, you would take the following steps:
+
+    In the **Admin** workspace, click **Notification Rules** > **Create New Rule**
+
+    In step two of the Create Notification Rule Wizard, select the device groups which the rule will target. This step, “select device groups”, is being removed from the Intune Console.
+
+    The preliminary timeline for this change is as follows:
+    - In August, 2016, new tenants will not see step two of the Create Notification Rule Wizard. Exiting tenants are unaffected.
+    - Around September, 2016, some existing tenants will not see the “select device groups” in the wizard.
+    - Around November, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
+
+--->
+
 ## 2016 年 7 月
 ### アプリ管理
 #### アプリのプロビジョニング プロファイルの更新エクスペリエンスを向上
@@ -43,7 +165,7 @@ Intune クライアントを実行する Windows PC の [TeamViewer](https://www
 ### ポータル サイトの更新
 #### ポータル Web サイト
 - **Windows デバイス登録時のエンドユーザー エクスペリエンスの向上**<br/>
-条件付きアクセスを使用している場合の、ポータル サイト Web サイトで Windows 8.1、Windows 10 デスクトップ、および Windows 10 Mobile の登録手順が明確化されました。 今後は、「デバイス登録」および「社内参加」の手順が個別に表示されます。そのため、社内参加 (WPJ) の失敗後にデバイスの状態を確認し プロセスを完了することが簡単になります。 この手順の分離により、IT 管理者のトラブルシューティングのプロセスも簡略化されることが見込まれます。 これまで、エンド ユーザーが登録しようとして、WPJ を除くすべての登録が成功した場合、登録されたデバイスがデバイス一覧に表示されないため識別できず、ユーザーの混乱の原因となっていました。
+条件付きアクセスを使用している場合の、ポータル サイト Web サイトで Windows 8.1、Windows 10 デスクトップ、および Windows 10 Mobile の登録手順が明確化されました。 今後は、「デバイス登録」および「社内参加」の手順が個別に表示されます。そのため、社内参加 (WPJ) の失敗後にデバイスの状態を確認し、プロセスを完了することが簡単になります。 この手順の分離により、IT 管理者のトラブルシューティングのプロセスも簡略化されることが見込まれます。 これまで、エンド ユーザーが登録しようとして、WPJ を除くすべての登録が成功した場合、登録されたデバイスがデバイス一覧に表示されないため識別できず、ユーザーの混乱の原因となっていました。
 
 #### Android
 - **Android 用ポータル サイト アプリ**<br/>
@@ -357,6 +479,6 @@ Intune モバイル アプリケーション管理 (MAM) ポリシーと互換�
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 

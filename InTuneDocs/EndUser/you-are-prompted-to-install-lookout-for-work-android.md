@@ -1,5 +1,5 @@
 ---
-title: "Lookout for Work のインストールを求められる | Microsoft Intune"
+title: "Android デバイスで Lookout for Work のインストールを求められる | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
@@ -12,19 +12,18 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: e1f0ee69c16c48932c7ea1fefff03f6f35416865
-ms.openlocfilehash: 82f99577b674050d20362204b1032ad3992c7d9a
+ms.sourcegitcommit: 5c522c12325925c45f47bc7b521e3d8aa87454f4
+ms.openlocfilehash: d4ffed6fa0a2380ebfc5c4cf9999233635a3469f
 
 
 ---
 
 # Lookout for Work のインストールを求められる
 
-下に示す "Lookout for Work はインストールされていないかアクティブ化されていません" というメッセージが表示された場合は、IT 管理者から Lookout for Work アプリのインストールが要求されています。このアプリは、お使いのデバイスを守るためにセキュリティ上の潜在的な脅威を検出します。
+作業内容にアクセスする前に、IT 管理者から潜在的なセキュリティ脅威を検出してデバイスを保護することができる、Lookout for Work アプリをインストールするように求められます。
 
-![コンプライアンスの問題を解決する必要があります](./media/lookout-resolve-compliance-issues_expanded-android.png)
 
-**この問題を解決するために必要なこと:**
+**必要な操作**
 
 1.  画面の一番上から下にドラッグして通知バーを開き、[**Required application – Install Lookout for Work from Play Store**] (必要なアプリケーション – Lookout for Work を Play ストアからインストール) をタップします。
 
@@ -32,7 +31,7 @@ ms.openlocfilehash: 82f99577b674050d20362204b1032ad3992c7d9a
 
     Play ストアの Lookout for Work のインストール ページが表示されます。
 
-2.  Lookout for Work をインストールし、[**同意する**] をタップして Lookout for Work によるデバイスへのアクセスを許可します。
+2.  Lookout for Work をインストールしてから、[**同意する**] をタップして Lookout for Work によるデバイスへのアクセスを許可します。
 
     ![[同意する] をタップして Lookout for Work によるデバイスへのアクセスを許可します](./media/lookout-accept-store-permissions-android.png)
 
@@ -40,7 +39,7 @@ ms.openlocfilehash: 82f99577b674050d20362204b1032ad3992c7d9a
 
     ![Lookout for Work を開いて [有効化する] をタップします](./media/lookout-activate-button-android.png)
 
-4. [**職場アカウントでサインインする**] をタップし、職場または学校の電子メールやファイルなどのデータへのアクセスに使用しているアカウントを入力します。
+4. [**職場アカウントでサインインする**] をタップし、職場または学校の電子メールやファイルへのアクセスに使用しているアカウントを入力します。
 
     ![職場または学校のアカウントでサインインします](./media/lookout-sign-in-android.png)
 

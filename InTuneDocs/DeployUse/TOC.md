@@ -66,8 +66,9 @@
 ## [デバイスをインベントリから削除する](retire-devices-from-microsoft-intune-management.md)
 
 ## [アプリを追加する](add-apps.md)
-### [モバイル デバイス用のアプリを追加する](add-apps-for-mobile-devices-in-microsoft-intune.md)
-### [Windows PC 用のアプリを追加する](add-apps-for-windows-pcs-in-microsoft-intune.md)
+### [登録デバイスのアプリを追加する](add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [Intune のクライアント PC のアプリを追加する](add-apps-for-windows-pcs-in-microsoft-intune.md)
+#### [Intune のクライアント PC のライセンス契約を管理する](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [アプリの展開](deploy-apps.md)
 ### [デバイスと PC にアプリを展開する](deploy-apps-in-microsoft-intune.md)
 ### [アプリの監視](monitor-apps-in-microsoft-intune.md)
@@ -95,12 +96,17 @@
 
 #### [Exchange Online と新しい Exchange Online Dedicated](restrict-access-to-exchange-online-with-microsoft-intune.md)
 #### [Exchange On-Premises と以前の Exchange Online Dedicated](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-#### [SharePo条件付きアクセスt Onl条件付きアクセスe](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+#### [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 #### [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [電子メールへのアクセスを制限する: 例](restrict-email-access-example-scenarios.md)
 
 ### [ネットワークへのアクセスを制限する (Cisco ISE)](restrict-access-to-networks.md)
+### [デバイス、ネットワーク、アプリケーションのリスクに基づいてアクセスを制限する](restrict-access-based-on-device-network-app-risk.md)
+#### [Lookout MTP を設定する](set-up-your-subscription-with-lookout-mtp.md)
+#### [Intune で Lookout を有効にする](enable-lookout-mtp-connection-in-intune.md)
+#### [Lookout for Work アプリを展開する](configure-and-deploy-lookout-for-work-apps.md)
+#### [デバイスの脅威防御のコンプライアンス ポリシーを有効にする](enable-device-threat-protection-rule-in-compliance-policy.md)
 
 ### [MAM でアプリ データを保護する](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Azure ポータルの MAM ポリシー対応](azure-portal-for-microsoft-intune-mam-policies.md)
@@ -137,6 +143,6 @@
 # [トラブルシューティング](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -3,25 +3,25 @@ title: "サービスの説明 | Microsoft Intune"
 description: "Intune は、クラウドベースのサービスであり、Windows PC に加えて、iOS、Mac OS X、Android、および Windows のモバイル デバイスを管理するのに便利です。"
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
-ms.reviewer: jeffgilb
+ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 98a5013ef42732e6a1a541e128986bedbb004611
+ms.sourcegitcommit: a7cced90c482498b5f5af424165f8dcf77b79b75
+ms.openlocfilehash: e3694f80d6148abbce004bb0c7143bf394b313d9
 
 
 ---
 
 # Microsoft Intune サービスの説明
 
-Microsoft Intune は、クラウドベースのサービスであり、Windows PC に加えて、iOS、Mac OS X、Android、および Windows のモバイル デバイスを管理するのに便利です。 Intune では、会社のアプリケーションとデータを保護することもできます。 Intune 単独で使用することも、System Center 2012 R2 Configuration Manager と統合して管理機能を拡張することもできます。
+Microsoft Intune は、クラウドベースのサービスであり、Windows PC に加えて、iOS、Mac OS X、Android、および Windows のモバイル デバイスを管理するのに便利です。 Intune では、会社のアプリケーションとデータを保護することもできます。 Intune は単独で使用することも、System Center Configuration Manager と統合して管理機能を拡張することもできます。 
 
 Microsoft では、Intune オンボーディング特典で、適格なプランの適格なサービスを提供します。 オンボーディング特典では、Intune 環境を使用できるようにするために、Microsoft の専門家がリモートでお手伝いします。 詳細については、[Microsoft Intune オンボーディング特典の説明](http://go.microsoft.com/fwlink/?LinkId=619281)のページを参照してください。
 
@@ -32,18 +32,18 @@ Intune は、100 ユーザー ライセンスを含む 30 日間の無料試用�
 
 モバイル デバイスで構成できる設定の一覧については、次のページを参照してください。
 
--   [Microsoft Intune のモバイル デバイス管理機能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
+-   [Microsoft Intune の登録済みデバイス管理機能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
 
--   [Configuration Manager でのモバイル デバイスの全般設定](https://technet.microsoft.com/library/dn376523.aspx)
+-   [System Center Configuration Manager と Microsoft Intune を使用するハイブリッド モバイル デバイス管理 (MDM)](https://technet.microsoft.com/library/mt627883.aspx) 
 
-System Center 2012 R2 Configuration Manager については、「[System Center 2012 Configuration Manager のドキュメント ライブラリ](https://technet.microsoft.com/library/gg682041.aspx)」を参照してください。
+System Center Configuration Manager については、「[System Center Configuration Manager のドキュメント](https://technet.microsoft.com/library/mt346023.aspx)」を参照してください。
 
 ## Intune サービスの更新が及ぼす影響
 Intune はオンライン サービスであるため、Microsoft によって定期的に更新される可能性があります。
 
 このトピックでは、これらのサービスが更新される頻度について、またサービスの更新がサービスの使用に影響を及ぼす可能性がある場合に届く事前通知について有用な情報を提供します。
 
-Intune サービスの変更点については、「[Microsoft Intune の新機能](/intune/deploy-use/Whats-new-in-microsoft-intune.md)」を参照してください。 [Microsoft Intune ブログ](http://blogs.technet.com/b/microsoftintune/)でも、サービスの変更について取り上げており、Intune を最大限に利用するのに役立つヒントを提供しています。
+Intune サービスの変更点については、「[Microsoft Intune の新機能](/intune/deploy-use/whats-new-in-microsoft-intune)」を参照してください。 [Microsoft Intune ブログ](http://blogs.technet.com/b/microsoftintune/)でも、サービスの変更について取り上げており、Intune を最大限に利用するのに役立つヒントを提供しています。 
 
 重要なサービスの更新情報も、[Office 365 管理ポータル](https://portal.office.com/Admin/Default.aspx)のメッセージ センターでユーザーに公開されます。 コンパニオン [Office 365 Admin Mobile アプリ](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)をインストールしている場合、モバイル デバイスで通知を受け取ることができます。
 
@@ -65,7 +65,7 @@ Intune には、会社のモバイル デバイスとコンピューター (こ�
 
 -   **Intune スタンドアロン構成。** Intune の Web ベースの管理コンソールを使用して組織内のデバイスを管理します。 Intune を使用するときに社内の IT インフラストラクチャを使用する必要はありませんが、Intune と Active Directory ドメイン サービスを使用している場合は、ドメイン サービスで管理しているドメイン ユーザー アカウントを Intune に使用できます。
 
--   **Intune と System Center Configuration Manager。** Configuration Manager の管理コンソールを使うと、企業のコンピューターやモバイル デバイスを管理できます。 この構成を利用すると、Configuration Manager 管理コンソールという 1 つのコンソールで、すべての組織のデバイスを管理することができます。 Configuration Manager は、多数のモバイル デバイス、サーバー、コンピューターをサポートしています。 詳細については、「[System Center 2012 Configuration Manager のドキュメント ライブラリ](https://technet.microsoft.com/library/gg682041.aspx)」の [Configuration Manager と Microsoft Intune を使用してモバイル デバイスを管理する方法](http://go.microsoft.com/fwlink/?LinkID=271118)に関するページを参照してください。  自分に適した手法を決める際は、「[Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](https://technet.microsoft.com/en-us/library/mt706478.aspx)」 (Microsoft Intune スタンドアロンを実行するのと Configuration Manager でハイブリッド MDM を実行するのはどちらが良いか) がお役に立ちます。
+-   **Intune と System Center Configuration Manager。** Configuration Manager の管理コンソールを使うと、企業のコンピューターやモバイル デバイスを管理できます。 この構成を利用すると、Configuration Manager 管理コンソールという 1 つのコンソールで、すべての組織のデバイスを管理することができます。 Configuration Manager は、多数のモバイル デバイス、サーバー、コンピューターをサポートしています。 詳細については、「[System Center Configuration Manager と Microsoft Intune を使用するハイブリッド モバイル デバイス管理 (MDM)](https://technet.microsoft.com/library/mt627883.aspx)」を参照してください。  自分に適した手法を決める際は、「[Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](https://technet.microsoft.com/en-us/library/mt706478.aspx)」 (Microsoft Intune スタンドアロンを実行するのと Configuration Manager でハイブリッド MDM を実行するのはどちらが良いか) がお役に立ちます。 
 
 
 ## Intune の詳細
@@ -73,7 +73,7 @@ Intune の詳細については、次のリソースを参照してください�
 
 -   [Microsoft Intune セキュリティ センター](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/)では、Intune のセキュリティ、プライバシー、およびコンプライアンスのプラクティスに関する情報を提供しているほか、Intune の認定資格の一部についても説明しています。
 
--   [Microsoft Intune のモバイル デバイス管理機能](/intune/understand-explore/mobile-device-management-capabilities-in-microsoft-intune)
+-   [Microsoft Intune の登録済みデバイス管理機能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
 
 ### 関連項目
 [Microsoft Intune](https://docs.microsoft.com/intune/)
@@ -83,6 +83,6 @@ Intune の詳細については、次のリソースを参照してください�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
