@@ -4,7 +4,7 @@ description: "Intune ソフトウェア クライアントで Windows PC を管�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/25/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 12d75bc67fd61a2e807eed2543f21b756a65a900
-ms.openlocfilehash: 3066ef98c0a1df6fc0ae455860635e7c12f82c4f
+ms.sourcegitcommit: 453323aa38eed0a01aa8d583376162734439a69c
+ms.openlocfilehash: 0d4ec8077e2521b23808fcb537c4b2389fee714a
 
 
 ---
@@ -22,16 +22,16 @@ ms.openlocfilehash: 3066ef98c0a1df6fc0ae455860635e7c12f82c4f
 # Intune ソフトウェア クライアントを使用する場合の Windows PC の管理機能
 ほとんどのシナリオでは、デバイスを Microsoft Intune に登録します。そうすることで、さらに多くの機能を使用できるようになります。 ただし、PC の管理には、Intune ソフトウェアを使用することもできます。このソフトウェアでは、次の機能が利用できます。
 
--   **ソフトウェア更新プログラムの管理。**PC を最新の状態に保ち、更新プログラムを適用する時間を決定できます。
+-   **[ソフトウェア更新プログラムの管理](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** - PC を最新の状態に保ち、更新プログラムを適用する時間を決定できます。
 
--   **Windows ファイアウォールのポリシー。**この機能により、会社で使用する PC に、非アクティブまたは適切でない構成の Windows ファイアウォールが存在しないようにします。
+-   **[Windows ファイアウォールのポリシー](/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)** - この機能により、会社で使用する PC に、非アクティブまたは適切でない構成の Windows ファイアウォールが存在しないようにします。
 
--   **マルウェア対策。**Intune には、マルウェアから PC を保護するのに役立つ Endpoint Protection が含まれています。
+-   **[マルウェア対策](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)** - Intune には、マルウェアから PC を保護するのに役立つ Endpoint Protection が含まれています。
 
--   **リモート アシスタンス。**ユーザーは Intune を使用して、IT サポート スタッフに連絡できます。IT サポート スタッフは、Intune に含まれているリモート デスクトップ機能を使用してサポートを提供できます (TeamViewer ソフトウェアが必要)。
+-   **[リモート アシスタンス](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-to-windows-pcs-that-use-the-intune-client-software )** - ユーザーは Intune を使用して、IT サポート スタッフに連絡できます。IT サポート スタッフは、Intune に含まれているリモート デスクトップ機能を使用してサポートを提供できます (TeamViewer ソフトウェアが必要)。
 
--   **ソフトウェア ライセンス管理。**使用可能なソフトウェア ライセンスの数と、そのうちの使用中のライセンスの数を追跡します。
--   **アプリの展開。**管理対象の PC にソフトウェアを展開します。 ソフトウェア クライアントを使用して PC を管理する場合、一部のアプリ管理機能は利用できません。
+-   **[ソフトウェア ライセンス管理](/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)** - 使用可能なソフトウェア ライセンスの数と、そのうちの使用中のライセンスの数を追跡します。
+-   **[アプリの展開](/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)** - 管理対象の PC にソフトウェアを展開します。 ソフトウェア クライアントを使用して PC を管理する場合、一部のアプリ管理機能は利用できません。
 
 
 Intune は、最大 7,000 台の Windows デバイスへのソフトウェア クライアントのインストールをサポートしています。
@@ -74,6 +74,6 @@ Intune ソフトウェア クライアントのインストールの最小ソフ
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

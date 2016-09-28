@@ -1,5 +1,5 @@
 ---
-title: "Windows PC のアプリを追加する | Microsoft Intune"
+title: "Intune ソフトウェア クライアントを実行している Windows PC にアプリを追加する | Microsoft Intune"
 description: "このトピックでは、Windows PC のアプリを展開する前に、それらのアプリを Intune に追加する方法について説明します。"
 keywords: 
 author: robstackmsft
@@ -13,18 +13,18 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 24767de9ad5a1f0ebe6f713018098a5dd692466e
+ms.sourcegitcommit: f01f2715ebd5666b53de848f06300e7aa3344caf
+ms.openlocfilehash: 33ef6a417c38ab04095afc8fb7573ea92253f229
 
 
 ---
 
-# Microsoft Intune で Windows PC のアプリを追加する
+# Intune ソフトウェア クライアントを実行している Windows PC にアプリを追加する
 
 このトピックでは、アプリを展開する前に、それらのアプリを Intune に追加する方法について説明します。
 
 > [!IMPORTANT]
-> このトピックの情報は、Intune PC クライアント ソフトウェアで管理する Windows PC のアプリを追加する際に役立ちます。 登録済みの Windows PC やその他のモバイル デバイスにアプリを追加する場合は、「[Microsoft Intune でモバイル デバイスのアプリを追加する](add-apps-for-mobile-devices-in-microsoft-intune.md)」を参照してください。
+> このトピックの情報は、Intune ソフトウェア クライアントで管理する Windows PC のアプリを追加するときに役立ちます。 登録済みの Windows PC やその他のモバイル デバイスにアプリを追加する場合は、「[Microsoft Intune でモバイル デバイスのアプリを追加する](add-apps-for-mobile-devices-in-microsoft-intune.md)」を参照してください。
 
 
 ## アプリを追加する
@@ -90,6 +90,6 @@ ms.openlocfilehash: 24767de9ad5a1f0ebe6f713018098a5dd692466e
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

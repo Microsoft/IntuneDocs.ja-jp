@@ -4,7 +4,7 @@ description: "Intune には多要素認証 (MFA) 機能があり、会社のリ�
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 09/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4993982adcfbc960ad71022268cc44d216d1c585
-ms.openlocfilehash: fb4ae43ffcbec24147e2e3ce3c96ec795289c925
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: 00d63fa55cd29c938dd082e2eff240f08319e01a
 
 
 ---
@@ -25,11 +25,15 @@ Microsoft Intune には多要素認証 (MFA) 機能があり、会社のリソ�
 ## 内部設置型インフラストラクチャの ADFS MFA の要件
 Multi-Factor Authentication をセットアップするうえで必要なものは次のとおりです。
 
+-   「[Windows デバイスの管理をセットアップする](set-up-windows-device-management-with-microsoft-intune.md)」に説明されている自動登録。
 -   **ADFS サーバーが参加している Active Directory ドメイン。**
 
 -   **Active Directory フェデレーション サービス (ADFS)、構成されているサーバー MFA のです。** Windows Server 2012 R2 を実行し、ADFS サーバーとしてセットアップされたサーバー。 詳細については、「[Secure cloud and on-premises resources using Azure Multi-Factor Authentication Server with Windows Server 2012 R2 AD FS (Azure Multi-Factor Authentication Server と Windows Server 2012 R2 AD FS を使用したクラウド リソースと社内リソースのセキュリティ保護)](https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication-get-started-adfs-w2k12/)」を参照してください。
 
-上記のすべてのサーバーは、「[Windows Server 2012 R2 のシステム要件とインストール情報](http://technet.microsoft.com/library/dn303418.aspx)」に記載されているシステム要件を満たす必要があります。
+サーバーは、「[Windows Server 2012 R2 のシステム要件とインストール情報](http://technet.microsoft.com/library/dn303418.aspx)」に記載されているシステム要件を満たす必要があります。
+
+ 
+
 
 #### MFA (Intune あり)
 組織に Active Directory フェデレーション サービス (ADFS) が構成された Active Directory ドメインを含むオンプレミスの IT インフラストラクチャが存在する場合、フェデレーション サーバーで MFA をセットアップして、Intune 登録のために MFA を有効にできます。 Intune で MFA を構成すると、ユーザーは登録時に一度認証すれば、その後、毎回 MFA プロセスを繰り返さなくても、企業リソースを使用できます。
@@ -55,6 +59,6 @@ ADFS で MFA を有効にする方法の詳細については、「 [追加の�
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO3-->
 
 

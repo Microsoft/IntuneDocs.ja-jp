@@ -13,8 +13,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 3e09af2cd329d556a9a0a1b2fb4750856e336ab1
+ms.sourcegitcommit: 45c6622624230e3486d2498b1b023f2efcdc2970
+ms.openlocfilehash: eb04f0e7b9627ad1869ef677f1b32380db868490
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 3e09af2cd329d556a9a0a1b2fb4750856e336ab1
 ##  手順 1: アプリを準備する
 MAM ポリシーをアプリに適用する前に、まず Microsoft Intune アプリ ラッピング ツールを使用してアプリをラップする必要があります。  アプリ ラッピング ツールをインストールして使用する手順は、ダウンロードに含まれています。  
 >[!IMPORTANT]  
->Intune に登録されていないデバイスをサポートするこのアプリ ラッパー ツールのバージョンは、数週間のうちにプライベート プレビューとなります。 参加希望の場合は、詳細を msintuneappsdk@microsoft.com にメールでお問い合わせてください。
+>Intune に登録されていないデバイスをサポートするこのアプリ ラッピング ツールのバージョンは、パブリック プレビューで提供されています。 パブリック プレビューへの参加を希望する場合、iOS については[この GitHub ページ](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview)からツールをダウンロードし、Android については[この GitHub サイト](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview)からツールをダウンロードします。
 
 ## 手順 2: アプリを追加する
 
@@ -75,6 +75,6 @@ MAM ポリシーと基幹業務アプリを関連付けるには、次の手順�
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

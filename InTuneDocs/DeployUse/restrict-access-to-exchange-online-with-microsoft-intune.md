@@ -4,7 +4,7 @@ description: "条件付きアクセスで Exchange Online の会社電子メー�
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 06/16/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
-ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
+ms.sourcegitcommit: 99b01f5ca5bb389fc8a9d87e956796823fee6c0d
+ms.openlocfilehash: dd5ae411cc2541566805131d0076efc15875c988
 
 
 ---
@@ -67,7 +67,7 @@ Exchange Online または新しい Exchange Online Dedicated 環境への電子�
 **Outlook** およびその他の**先進認証を使用するアプリ**から Exchange Online の電子メールへのアクセスを制限できます。
 
 - Android 4.0 以降、Samsung Knox Standard 4.0 以降
-- iOS 7.1 以降
+- iOS 8.0 以降
 - Windows Phone 8.1 以降
 
 **先進認証**では、Active Directory Authentication Library (ADAL) ベースのサインインが Microsoft Office クライアントに導入されます。
@@ -93,7 +93,7 @@ iOS と Android 用の OWA アプリはサポートされていません。  こ
 
 - Android 4.0 以降、Samsung Knox Standard 4.0 以降
 
-- iOS 7.1 以降
+- iOS 8.0 以降
 
 - Windows Phone 8.1 以降
 
@@ -262,6 +262,6 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

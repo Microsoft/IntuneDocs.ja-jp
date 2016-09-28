@@ -13,8 +13,8 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06a9c78300d7ff384299957102114c69c43a1ad5
-ms.openlocfilehash: 06616ba43069cc6e81692a4c638f2bf8b072fdc1
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: adf9a0603cbb1ed4183bff5110e1f3342bcf373a
 
 
 ---
@@ -44,16 +44,16 @@ ms.openlocfilehash: 06616ba43069cc6e81692a4c638f2bf8b072fdc1
 
 |ポリシー名|使用するタイミング|
 |---------------|------------------------|
-|**カスタム構成 (iOS 7.1 以降)**|Apple Configurator を使用して作成した構成プロファイルを iOS デバイスに展開します。 これは、必要な設定が構成ポリシーで使用できない場合に役立ちます。<br /><br />詳細については、「[Microsoft Intune の iOS ポリシー設定](ios-policy-settings-in-microsoft-intune.md)」を参照してください。|
-|**電子メール プロファイル (iOS 7.1 以降)**|管理対象デバイスで Exchange ActiveSync 電子メール設定を作成、展開、および監視します。 これにより、ユーザー側で特別な設定を行わなくても、各自が個人用端末で会社の電子メールにアクセスできます。<br /><br />詳細については、「[Microsoft Intune で電子メール プロファイルを使用して会社の電子メールへのアクセスを構成にする](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)」を参照してください。|
-|**全般構成 (iOS 7.1 以降)**|モバイル デバイスのセキュリティと機能の設定を構成します。<br />準拠アプリまたは非準拠アプリを指定し、それらのアプリが使用された場合にレポートします。<br />特定の機能のみが動作するようにデバイスをロックするキオスク モードを構成して、たとえば、デバイスでアプリを 1 つだけ実行できるようにしたり、音量ボタンを無効にしたりします。<br /><br />詳細については、「[Microsoft Intune の iOS ポリシー設定](ios-policy-settings-in-microsoft-intune.md)」を参照してください。|
-|**モバイル アプリ構成ポリシー (iOS 7.1 以降)**|モバイル アプリ構成ポリシーを使用すると、ユーザーが iOS アプリを実行している場合に必要となる可能性のある設定を自動的に提供できます。<br /><br />詳細については、「[Microsoft Intune のモバイル アプリ構成ポリシーを使用した iOS アプリの構成](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)」を参照してください。|
-|**モバイル プロビジョニング プロファイル ポリシー (iOS 7.1 以降)**|Apple iOS 基幹業務モバイル アプリは、プロビジョニング プロファイルを含み、証明書で署名されたコードと共に構築されます。 iOS デバイスでアプリを実行すると、iOS により iOS アプリの整合性の確認と、プロビジョニング プロファイルで定義されたポリシーの施行が行われます。<br><br>アプリの署名に使用するエンタープライズ署名証明書は、通常 3 年間は継続します。 ただし、プロビジョニング プロファイルは 1 年後に期限が切れます。 このポリシーは、証明書はまだ有効だがアプリの有効期限が近づいているデバイスに新しいプロビジョニング プロファイルのポリシーを事前に展開するために使用します。<br><br>詳細については、「[iOS モバイル プロビジョニング プロファイルのポリシーを使用して、アプリが期限切れにならないようにする](ios-mobile-app-provisioning-profiles.md)」を参照してください。|
-|**PKCS #12 (.PFX) 証明書プロファイル (iOS 7.1 以降)**|このプロファイルは、デバイス証明書要求のための .PFX 設定を作成して展開する場合に使用します。<br /><br />詳細については、「[Microsoft Intune の証明書プロファイルでリソースへのアクセスを保護する](secure-resource-access-with-certificate-profiles.md)」を参照してください。|
-|**SCEP 証明書プロファイル (iOS 7.1 以降)**|Simple Certificate Enrollment Protocol 証明書を構成します。これを信頼できるモバイル デバイスの証明書と共に使用してモバイル デバイスを認証して、モバイル デバイスが Wi-Fi プロファイルおよび VPN プロファイルによって構成されたネットワーク リソースにアクセスできるようにします。<br /><br />詳細については、「[Microsoft Intune の証明書プロファイルでリソースへのアクセスを保護する](secure-resource-access-with-certificate-profiles.md)」を参照してください。|
-|**信頼できる証明書プロファイル (iOS 7.1 以降)**|信頼できるモバイル デバイスの証明書を構成します。これを使用してモバイル デバイスを認証して、モバイル デバイスが Wi-Fi プロファイルおよび VPN プロファイルによって構成されたネットワーク リソースにアクセスできるようにします。<br /><br />詳細については、「[Microsoft Intune の証明書プロファイルでリソースへのアクセスを保護する](secure-resource-access-with-certificate-profiles.md)」を参照してください。|
-|**VPN プロファイル (iOS 7.1 以降)**|ユーザーがモバイル デバイスから企業ネットワークにアクセスする際にセキュリティ保護を提供する設定を構成および展開します。 これらの設定を展開することで、会社へのエンド ユーザーの接続が簡単になります。<br /><br />詳細については、「[Microsoft Intune での VPN 接続](vpn-connections-in-microsoft-intune.md)」を参照してください。|
-|**Wi-Fi プロファイル (iOS 7.1 以降)**|ワイヤレス ネットワーク設定を構成して組織のユーザーに展開します。 これらの設定を展開することで、ワイヤレス ネットワークへのエンド ユーザーの接続が簡単になります。<br /><br />詳細については、「[Microsoft Intune での Wi-Fi 接続](wi-fi-connections-in-microsoft-intune.md)」を参照してください。|
+|**カスタム構成 (iOS 8.0 以降)**|Apple Configurator を使用して作成した構成プロファイルを iOS デバイスに展開します。 これは、必要な設定が構成ポリシーで使用できない場合に役立ちます。<br /><br />詳細については、「[Microsoft Intune の iOS ポリシー設定](ios-policy-settings-in-microsoft-intune.md)」を参照してください。|
+|**電子メール プロファイル (iOS 8.0 以降)**|管理対象デバイスで Exchange ActiveSync 電子メール設定を作成、展開、および監視します。 これにより、ユーザー側で特別な設定を行わなくても、各自が個人用端末で会社の電子メールにアクセスできます。<br /><br />詳細については、「[Microsoft Intune で電子メール プロファイルを使用して会社の電子メールへのアクセスを構成にする](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)」を参照してください。|
+|**全般構成 (iOS 8.0 以降)**|モバイル デバイスのセキュリティと機能の設定を構成します。<br />準拠アプリまたは非準拠アプリを指定し、それらのアプリが使用された場合にレポートします。<br />特定の機能のみが動作するようにデバイスをロックするキオスク モードを構成して、たとえば、デバイスでアプリを 1 つだけ実行できるようにしたり、音量ボタンを無効にしたりします。<br /><br />詳細については、「[Microsoft Intune の iOS ポリシー設定](ios-policy-settings-in-microsoft-intune.md)」を参照してください。|
+|**モバイル アプリ構成ポリシー (iOS 8.0 以降)**|モバイル アプリ構成ポリシーを使用すると、ユーザーが iOS アプリを実行している場合に必要となる可能性のある設定を自動的に提供できます。<br /><br />詳細については、「[Microsoft Intune のモバイル アプリ構成ポリシーを使用した iOS アプリの構成](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)」を参照してください。|
+|**モバイル プロビジョニング プロファイル ポリシー (iOS 8.0 以降)**|Apple iOS 基幹業務モバイル アプリは、プロビジョニング プロファイルを含み、証明書で署名されたコードと共に構築されます。 iOS デバイスでアプリを実行すると、iOS により iOS アプリの整合性の確認と、プロビジョニング プロファイルで定義されたポリシーの施行が行われます。<br><br>アプリの署名に使用するエンタープライズ署名証明書は、通常 3 年間は継続します。 ただし、プロビジョニング プロファイルは 1 年後に期限が切れます。 このポリシーは、証明書はまだ有効だがアプリの有効期限が近づいているデバイスに新しいプロビジョニング プロファイルのポリシーを事前に展開するために使用します。<br><br>詳細については、「[iOS モバイル プロビジョニング プロファイルのポリシーを使用して、アプリが期限切れにならないようにする](ios-mobile-app-provisioning-profiles.md)」を参照してください。|
+|**PKCS #12 (.PFX) 証明書プロファイル (iOS 8.0 以降)**|このプロファイルは、デバイス証明書要求のための .PFX 設定を作成して展開する場合に使用します。<br /><br />詳細については、「[Microsoft Intune の証明書プロファイルでリソースへのアクセスを保護する](secure-resource-access-with-certificate-profiles.md)」を参照してください。|
+|**SCEP 証明書プロファイル (iOS 8.0 以降)**|Simple Certificate Enrollment Protocol 証明書を構成します。これを信頼できるモバイル デバイスの証明書と共に使用してモバイル デバイスを認証して、モバイル デバイスが Wi-Fi プロファイルおよび VPN プロファイルによって構成されたネットワーク リソースにアクセスできるようにします。<br /><br />詳細については、「[Microsoft Intune の証明書プロファイルでリソースへのアクセスを保護する](secure-resource-access-with-certificate-profiles.md)」を参照してください。|
+|**信頼できる証明書プロファイル (iOS 8.0 以降)**|信頼できるモバイル デバイスの証明書を構成します。これを使用してモバイル デバイスを認証して、モバイル デバイスが Wi-Fi プロファイルおよび VPN プロファイルによって構成されたネットワーク リソースにアクセスできるようにします。<br /><br />詳細については、「[Microsoft Intune の証明書プロファイルでリソースへのアクセスを保護する](secure-resource-access-with-certificate-profiles.md)」を参照してください。|
+|**VPN プロファイル (iOS 8.0 以降)**|ユーザーがモバイル デバイスから企業ネットワークにアクセスする際にセキュリティ保護を提供する設定を構成および展開します。 これらの設定を展開することで、会社へのエンド ユーザーの接続が簡単になります。<br /><br />詳細については、「[Microsoft Intune での VPN 接続](vpn-connections-in-microsoft-intune.md)」を参照してください。|
+|**Wi-Fi プロファイル (iOS 8.0 以降)**|ワイヤレス ネットワーク設定を構成して組織のユーザーに展開します。 これらの設定を展開することで、ワイヤレス ネットワークへのエンド ユーザーの接続が簡単になります。<br /><br />詳細については、「[Microsoft Intune での Wi-Fi 接続](wi-fi-connections-in-microsoft-intune.md)」を参照してください。|
 
 
 ## Mac OS X 構成ポリシー
@@ -92,8 +92,8 @@ Windows Phone と登録されている Windows デバイスのみに適用され
 
 |ポリシー名|使用するタイミング|
 |---------------|------------------------|
-|**Managed Browser のポリシー (Android 4 以降)**<br /><br />**Managed Browser のポリシー (iOS 7.1 以降)**|ユーザーが Managed Browser アプリを使用する場合に、アクセスできる Web サイトとアクセスできない Web サイトを指定します。<br /><br />詳細については、「[Microsoft Intune と Managed Browser のポリシーを使用したインターネット アクセスの管理](manage-internet-access-using-managed-browser-policies.md)」を参照してください。|
-|**モバイル アプリケーション管理ポリシー (Android 4 以降)**<br /><br />**モバイル アプリケーション管理ポリシー (iOS 7.1 以降)**|展開するアプリの機能を変更することで、アプリが企業のコンプライアンスとセキュリティ ポリシーに従うようにすることができます。 たとえば、制限付きアプリでの切り取り、コピー、および貼り付け操作を制限することや、Managed Browser 内ですべての Web リンクを開くようにアプリを構成することができます。<br /><br />詳細については、「[Microsoft Intune でモバイル アプリケーション管理ポリシーを使用してデータを保護する](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)」を参照してください。|
+|**Managed Browser のポリシー (Android 4 以降)**<br /><br />**Managed Browser のポリシー (iOS 8.0 以降)**|ユーザーが Managed Browser アプリを使用する場合に、アクセスできる Web サイトとアクセスできない Web サイトを指定します。<br /><br />詳細については、「[Microsoft Intune と Managed Browser のポリシーを使用したインターネット アクセスの管理](manage-internet-access-using-managed-browser-policies.md)」を参照してください。|
+|**モバイル アプリケーション管理 (Android 4 以降)**<br /><br />**モバイル アプリケーション管理ポリシー (iOS 8.0 以降)**|展開するアプリの機能を変更することで、アプリが企業のコンプライアンスとセキュリティ ポリシーに従うようにすることができます。 たとえば、制限付きアプリでの切り取り、コピー、および貼り付け操作を制限することや、Managed Browser 内ですべての Web リンクを開くようにアプリを構成することができます。<br /><br />詳細については、「[Microsoft Intune でモバイル アプリケーション管理ポリシーを使用してデータを保護する](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)」を参照してください。|
 
 ## 一般的なモバイル デバイスの設定
 
@@ -118,6 +118,6 @@ Microsoft Intune では、デバイス プラットフォームごとに**構成
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -1,5 +1,5 @@
 
-  - Apple iOS 7.1 以降
+  - Apple iOS 8.0 以降
   - Google Android 4.0 以降 (Samsung KNOX SDK 4.0 以降を含む)
   - Windows Phone 8.0 以降
   - Windows RT と Windows 8.1 RT

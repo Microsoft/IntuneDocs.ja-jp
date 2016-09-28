@@ -13,8 +13,8 @@ ms.assetid: aeeccfa4-0f14-447e-a3df-c8435c8a4bb2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: e14a56fce0aa57b3744946d7dbf6641b8d98773b
+ms.sourcegitcommit: 5f8a145fa2c0355eaffc403084872c1f9524b6e5
+ms.openlocfilehash: 2cb4920663019f8a1ff66a7c52e12b1313f33871
 
 
 ---
@@ -29,7 +29,7 @@ Microsoft Intune をセットアップする前に、このトピックと「[Mi
 
 デバイスを登録すると、[これらのことが可能になります](/Intune/get-started/choose-how-to-manage-devices)。
 
-別の方法として、Windows PC を Intune PC クライアント ソフトウェアで管理することもできます。 Intune PC クライアント ソフトウェアは Windows 7 以降をサポートしていますが、Windows 10 Home を除きます。PC の管理にこのクライアント ソフトウェアを使用すると、[これらのことが可能になります](/Intune/)。
+別の方法として、Windows PC を Intune PC クライアント ソフトウェアで管理することもできます。 Intune PC クライアント ソフトウェアでは、Windows 10 Home を除く Windows 7 以降の PC がサポートされます。 クライアント ソフトウェアを使用して PC を管理する場合、[こちらの機能](set-up-windows-device-management-with-microsoft-intune.md)を使用できます。
 
 Enterprise Management Suite をお使いの場合は、Azure Active Directory (Azure AD) を使用して Windows 10 デバイスを登録することもできます。
 
@@ -38,6 +38,6 @@ Enterprise Management Suite をお使いの場合は、Azure Active Directory (A
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

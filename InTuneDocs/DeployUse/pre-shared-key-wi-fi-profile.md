@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bf8da72092a2380e73cfbed2a693831706b40d23
-ms.openlocfilehash: c005a1b38289580b1543e0e62cbb4cd00cb22c47
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: daecea644300ee1e47db9b028b72d71b3211f46d
 
 
 
@@ -55,12 +55,18 @@ Intune の**カスタム構成**を使用して、事前共有キーを使用し
 4. **[OK]** を選択して、保存し、ポリシーをデプロイします。
 
     > [!NOTE]
-このポリシーは、ユーザー グループにのみデプロイできます。
+    > このポリシーは、ユーザー グループにのみデプロイできます。
 
 次回各デバイスがチェックインするときに、ポリシーは適用され、そのデバイスに Wi-Fi プロファイルが作成されます。 デバイスは自動的にネットワークに接続できるようになります。
 ## Android または Windows の Wi-Fi プロファイル
 
 次に、Android または Windows の Wi-Fi プロファイルの XML コードの例を示します。
+
+> [!IMPORTANT]
+> 
+> `<protected>false</protected>`**false** に設定します。**true** に設定すると、デバイスはパスワードが暗号化されているとみなし、暗号化の解除を試みます。その結果、接続が接続する場合があります。
+> 
+>  `<hex>53534944</hex>`  は、`<name><SSID of wifi profile></name>` の 16 進値に設定する必要があります。
 
     <!--
     <Name of wifi profile> = Name of profile
@@ -70,6 +76,7 @@ Intune の**カスタム構成**を使用して、事前共有キーを使用し
     <Type of encryption> = Type of encryption used by the network
     <protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
     <password> = Password to connect to the network
+    <hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
     -->
     <WLANProfile
     xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -207,6 +214,6 @@ Intune の**カスタム構成**を使用して、事前共有キーを使用し
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 
