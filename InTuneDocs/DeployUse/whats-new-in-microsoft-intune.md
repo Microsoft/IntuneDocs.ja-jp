@@ -2,9 +2,9 @@
 title: "新機能 | Microsoft Intune"
 description: "Microsoft Intune の今月の新機能と過去のリリースの情報について説明します"
 keywords: 
-author: Lindavr
+author: barlanmsft
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 03a5dd14b854fedf7e2cb5b949580960a0eab9de
-ms.openlocfilehash: 1d09e5a0adb3ecfa8f2d64f668ea7ff16bdf31fa
+ms.sourcegitcommit: 5b3256852431efb83fb2cc9fa067dd3f4a68a050
+ms.openlocfilehash: cef0a26204a22c95d2b639500246e435fcf7f9f7
 
 
 ---
@@ -72,6 +72,11 @@ Microsoft は、デバイス上のマルウェアやリスクの高いアプリ�
 Android 用ポータル サイトのホームページに新しい通知アイコンが追加されました。 このアイコンをタップすると [通知] ページが開き、ポータル サイト アプリの中でエンドユーザーが注目する必要のある項目がすべて表示されます。たとえば、デバイスのコンプライアンス非対応、登録の更新、登録のアクティブ化です。 iOS 版のポータル サイト アプリには既に、この通知機能が追加されています。 この新しい [通知] ページの導入に伴い、[会社アクセスのセットアップ] ページがポータル サイトの起動または再開のたびに表示されることはなくなりました (ただし、デバイスが登録済みである場合)。 管理者が独自にエンド ユーザー向けガイドを作成している場合は、必要に応じてこの変更をドキュメントに反映してください。 更新後のスクリーン ショットは[こちら](https://aka.ms/androidcpupdate)にあります。  
 <!---TFS 1095560--->
 
+**Company Portal for Android でフィードバックを送信する**</br>
+Company Portal for Android のメニューには新しい項目が追加されています。 **[ヘルプとフィードバック]** をタップすると、次の 3 つのアクションが表示されます。
+* **[ヘルプの表示]** を使用して、Company Portal に関する問題を IT 部門に報告します。 IT 部門では、電子メール クライアントを使用してメールを作成し、Company Portal のログをそのメールに添付します。 **[ヘルプの表示]** は **[設定]** ページの **[データを送信する]** 機能の代わりに使用されます。
+* **[フィードバックの送信]** を使用して、Company Portal チームにフィードバックを送信します。
+* **[アプリを評価]** を使用して、Google Play で Company Portal アプリを評価またはレビューの対象のままとします。
 
 ### iOS
 **iOS ポータル サイト アプリのサポートの変更**<br/>
@@ -88,7 +93,7 @@ iOS 用ポータル サイト アプリのアプリ タイルに以下のよう�
 <!---TFS 1317133--->
 
 **IT プロフェッショナルが iOS の管理対象ブラウザー アプリをインストールするようにアプリの要件を設定している場合は、そのダイアログを表示する**<br/>
-管理対象ブラウザーでのみ Web クリップを開くように構成したものの、管理対象ブラウザーがデバイスにインストールされていない場合に、デバイスのポータル サイト アプリがユーザーに Web クリップをインストールする前に管理対象ブラウザーをインストールするように求めるダイアログが表示されるようになります。 
+管理対象ブラウザーでのみ Web クリップを開くように構成したものの、管理対象ブラウザーがデバイスにインストールされていない場合に、デバイスのポータル サイト アプリがユーザーに Web クリップをインストールする前に管理対象ブラウザーをインストールするように求めるダイアログが表示されるようになります。
 <!---TFS 1228570--->
 
 ### Windows
@@ -141,6 +146,6 @@ Outlook、Word、Excel、OneDrive などの Office モバイル アプリから�
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
