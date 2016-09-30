@@ -11,6 +11,12 @@
 ### [ネットワーク帯域幅の使用量](network-bandwidth-use.md)
 ### [カスタム ドメイン名](domain-names-for-microsoft-intune.md)
 
+## [デバイスを管理する方法を選択する](choose-how-to-manage-devices.md)
+### [登録済みのデバイス管理機能](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Intune PC ソフトウェア クライアントの機能](windows-pc-management-capabilities-in-microsoft-intune.md)
+
+## [Intune に移行する](migrate-to-intune.md)
+
 ## [Intune のクイック スタート ガイド](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Intune にサインインする](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [カスタムのドメイン名を構成する](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
@@ -22,10 +28,6 @@
 ### [モバイル デバイスを登録してアプリをインストールする](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [構成後のタスク](post-configuration-tasks.md)
 
-## [デバイスを管理する方法を選択する](choose-how-to-manage-devices.md)
-### [登録済みのデバイス管理機能](mobile-device-management-capabilities-in-microsoft-intune.md)
-### [Intune PC ソフトウェア クライアントの機能](windows-pc-management-capabilities-in-microsoft-intune.md)
-
 ## [Intune の展開のロールアウト フェーズ](rollout-phases-for-microsoft-intune-deployment.md)
 ### [プロジェクト スコープ](project-scope.md)
 ### [概念実証](proof-of-concept.md)
@@ -34,11 +36,12 @@
 ### [運用とメンテナンス](operations-and-maintenance.md)
 
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
+# [新機能](/intune/whats-new/whats-new-in-microsoft-intune)
 # [展開と使用](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [アプリの開発とカスタマイズ](/intune/develop/intune-app-sdk)
 # [トラブルシューティング](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 
