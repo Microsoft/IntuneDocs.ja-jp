@@ -13,8 +13,8 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d40ec3b5b7c5c4ee2cfd48a95ada0dadcaa80be4
-ms.openlocfilehash: 077029a962797a18fab27c3f1f5340eae6edfe04
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 8eee27e0c24e353143ce2014b65dc91af2c04843
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: 077029a962797a18fab27c3f1f5340eae6edfe04
 
 ## アップグレードを開始する前に
 ビジネス向け Windows ストアからアプリを同期して展開する前に、以下のことを確認してください。
-* 組織のモバイル デバイス管理機関として Intune を構成する必要があります。 詳細については、「[Microsoft Intune にデバイスを登録する準備](get-ready-to-enroll-devices-in-microsoft-intune.md)」を参照してください。
+* 組織のモバイル デバイス管理機関として Intune を構成する必要があります。 詳細については、「[Intune でデバイスを登録するための前提条件](prerequisites-for-enrollment.md)」を参照してください。
 * ビジネス向け Windows ストアのアカウントにサインアップする必要があります。
 * Intune に Windows ビジネス ストア アカウントを関連付けた後で別のアカウントに変更することはできません。
 * Intune に対して、ストアから購入したアプリを手動で追加したり、削除したりすることはできません。 ビジネス向け Windows ストアとの同期のみが可能です。
@@ -77,6 +77,6 @@ Intune コンソールで同期を有効にする前に、以下の手順に従�
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

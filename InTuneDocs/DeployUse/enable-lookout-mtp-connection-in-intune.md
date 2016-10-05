@@ -13,14 +13,14 @@ ms.assetid: 2f835fd0-4e62-42f3-b7ca-ce8b7ddd40e4
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1334500471d2aea5e8c58a3219c755bfd9953424
-ms.openlocfilehash: 4ae7d6c571f69c0cc51dc15355e50325afb88694
+ms.sourcegitcommit: ceaeba74f8671caf4125252fce02fd06752c3fe8
+ms.openlocfilehash: 2052aca24baa752bc4fad3bd7a75f8efa109e9e9
 
 
 ---
 
 # Intune 管理者コンソールで Lookout MTP 接続を有効にする
-このトピックでは、Intune で Lookout MTP 接続を有効にする方法を説明します。 この手順を実行する前に、Lookout MTP コンソールで Intune コネクタを構成しておく必要があります。  これをまだ行っていない場合は、「[Lookout Mobile Threat Protection 用にサブスクリプションを設定する](set-up-your-subscription-with-lookout-mtp.md)」で説明されている手順を実行します。
+このトピックでは、Intune で Lookout MTP 接続を有効にする方法を説明します。 この手順を実行する前に、Lookout コンソールで Intune コネクタを構成しておく必要があります。  これをまだ行っていない場合は、「[Lookout Mobile Threat Protection 用にサブスクリプションを設定する](set-up-your-subscription-with-lookout-mtp.md)」で説明されている手順を実行します。
 
 Intune で Lookout MTP 接続を有効にするには、[Microsoft Intune 管理者コンソール](https://manage.microsoft.com)の **[管理]** ページで、**[Third Party Service Integration]** (サードパーティ サービスの統合) を選択します。 **[Lookout status]** (Lookout の状態) を選択し、トグル ボタンを使用して **[Synchronization with MTP]** (MTP との同期) を有効にします。
 
@@ -35,6 +35,6 @@ Intune で Lookout MTP 接続を有効にするには、[Microsoft Intune 管理
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 66dc46eb9dc1010b8c176ccfdea68b9a6e4b0618
+ms.sourcegitcommit: dc767abc733457d975b61b96e21781952f79c6f9
+ms.openlocfilehash: fb99e78261b678ef776f992d5abfd2ba0555d4da
 
 
 ---
@@ -58,7 +58,7 @@ Windows Phone ストアの Microsoft Corporation から**ポータル サイト*
 ## 以前に展開したアプリのインストール
 モバイル デバイスでポータル サイトを開き、**[アプリ]** を選択して、**Microsoft Skype** をインストールします。
 
-Intune を使用したモバイル デバイス管理の詳細については、「[Microsoft Intune にデバイスを登録する準備](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)」を参照してください。
+Intune を使用したモバイル デバイス管理の詳細については、「[Microsoft Intune にデバイスを登録する準備](/Intune/deploy-use/prerequisites-for-enrollment)」を参照してください。
 
 ### 次のステップ
 これで終了です。 *Microsoft Intune の評価*チュートリアルの手順 5 を修了しました。
@@ -69,6 +69,6 @@ Intune を使用したモバイル デバイス管理の詳細については、
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO5-->
 
 

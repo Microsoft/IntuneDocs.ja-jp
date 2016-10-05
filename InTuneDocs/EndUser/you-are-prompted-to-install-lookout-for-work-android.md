@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 5c522c12325925c45f47bc7b521e3d8aa87454f4
-ms.openlocfilehash: d4ffed6fa0a2380ebfc5c4cf9999233635a3469f
+ms.sourcegitcommit: dd08b2e454b14c82e1dd9704617b32ac86ff7790
+ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
 
 
 ---
@@ -39,9 +39,9 @@ ms.openlocfilehash: d4ffed6fa0a2380ebfc5c4cf9999233635a3469f
 
     ![Lookout for Work を開いて [有効化する] をタップします](./media/lookout-activate-button-android.png)
 
-4. [**職場アカウントでサインインする**] をタップし、職場または学校の電子メールやファイルへのアクセスに使用しているアカウントを入力します。
+4. [**Azure Active Directory でサインインする**] をタップし、職場または学校の電子メールやファイルへのアクセスに使用しているアカウントを入力します。
 
-    ![職場または学校のアカウントでサインインします](./media/lookout-sign-in-android.png)
+    ![職場または学校のアカウントでサインインします](./media/lookout-sign-in-azure-android.png)
 
 5. 職場または学校の電子メールやファイルへのアクセスに使用するアカウントを選択してから [**アカウントの追加**] をタップします。
 
@@ -78,6 +78,6 @@ ms.openlocfilehash: d4ffed6fa0a2380ebfc5c4cf9999233635a3469f
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

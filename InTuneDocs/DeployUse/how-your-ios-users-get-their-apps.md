@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
-ms.openlocfilehash: a215d547507dcc460e83009cc6a04baf3fd8f4a4
+ms.sourcegitcommit: a3db9269bf4f93021d16d8ea23a2a13b87b43677
+ms.openlocfilehash: 61c4cb00fba3352f6898ec41b6d07834da4ec63d
 
 
 ---
@@ -34,7 +34,7 @@ Microsoft Intune を通して配布したアプリをエンド ユーザーが�
 
 Apple の制限により、基幹業務アプリおよび管理対象アプリ ストアのアプリはポータル サイト アプリに表示されません。 この問題を回避するため、iOS 用ポータル サイト アプリのアプリ タイルでは、次のように、ユーザーは単一の場所 (ポータル サイト Web サイト) のさまざまなビューですべてのアプリを確認できます。
 
-- これまで **[会社のアプリ]** タイルは[ポータル サイトの Web サイト](http://portal.manage.microsoft.com)の [すべて] タブにあるすべてのアプリのリストと関連付けられており、今後も機能は同じです。 このタイル名は **[すべてのアプリ]** に変更されました。
+- これまで **[会社のアプリ]** タイルは[ポータル サイト Web サイト](http://portal.manage.microsoft.com)の [すべて] タブにあるすべてのアプリの一覧と関連付けられており、今後も同様に動作します。 このタイル名は **[すべてのアプリ]** に変更されました。
 
 - **[その他のアプリ]** タイルはこれまで、Apple がポータル サイト アプリに表示を許可しているすべてのアプリを一覧表示する、ポータル サイト アプリ内のビューに関連付けられていました。 このタイル名は **[おすすめアプリ]** に変更され、ユーザーがこのタイルをタップするとポータル サイト Web サイトの [おすすめ] タブが表示されるようになりました。
 
@@ -44,11 +44,12 @@ Apple の制限により、基幹業務アプリおよび管理対象アプリ �
 
 
 ###関連項目
-[Android ユーザーがアプリを入手する方法](how-your-android-users-get-their-apps.md)</br>
+[Android ユーザーがアプリを入手する方法](how-your-android-users-get-their-apps.md)
+
 [Windows ユーザーがアプリを入手する方法](how-your-windows-users-get-their-apps.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO5-->
 
 
