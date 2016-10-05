@@ -13,8 +13,8 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 93c05ecd0154bb637f421dcc5d7ee56ff8d3ab2d
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: c4b1e5d3bb8b949096f7d15ddbbf0d1540485d0d
 
 
 ---
@@ -46,7 +46,7 @@ Microsoft Intune でアプリの展開を開始する前に、このトピック
 管理対象 iOS アプリを使用して App Store から無料で利用できる iOS アプリを管理および展開できます。 また、管理対象 iOS アプリを使用して[モバイル アプリケーションの管理ポリシー](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)を[互換性のあるアプリ](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)に関連付け、その状態を管理コンソールで確認することもできます。<br /><br />管理対象の iOS アプリは、Intune のクラウド記憶域には格納されません。
 
 > [!TIP]
-> [MDM 機関の設定](get-ready-to-enroll-devices-in-microsoft-intune.md)を Intune にすると、モバイル デバイス用のオプションを使用できるようになります。
+> [MDM 機関の設定](prerequisites-for-enrollment.md)を Intune にすると、モバイル デバイス用のオプションを使用できるようになります。
 
 ## Intune ソフトウェア パブリッシャー
 Intune 管理者コンソールからアプリを追加または変更したときに、Microsoft Intune ソフトウェア パブリッシャーが起動します。 パブリッシャーから、次のいずれかを実施するソフトウェア インストーラーの種類を選択して構成します。
@@ -82,6 +82,6 @@ Windows 10 Mobile デバイス上では、Symantec 以外のコード署名証�
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

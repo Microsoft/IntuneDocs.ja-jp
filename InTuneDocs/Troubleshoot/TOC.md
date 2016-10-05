@@ -1,5 +1,6 @@
 # [理解と調査](/intune/understand-explore/introduction-to-microsoft-intune)
 # [作業の開始](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [新機能](/intune/whats-new/whats-new-in-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [展開と使用](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [アプリの開発とカスタマイズ](/intune/develop/intune-app-sdk)
@@ -22,6 +23,6 @@
 ## [Lookout の統合に関するトラブルシューティング](troubleshooting-lookout-integration.md)
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO5-->
 
 
