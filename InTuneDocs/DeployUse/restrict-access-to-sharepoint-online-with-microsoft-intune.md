@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4f98937d7adfc0c1584625303da3350785af8169
-ms.openlocfilehash: 84c9d355fde49fd18899a43ed0def0c801694291
+ms.sourcegitcommit: baf87ad746a320784252966398bd665241209935
+ms.openlocfilehash: ba7e7e19966ce3ad582c8a520b7c9174dba76bf5
 
 
 ---
@@ -32,14 +32,10 @@ ms.openlocfilehash: 84c9d355fde49fd18899a43ed0def0c801694291
 
 ![デバイスに SharePoint へのアクセスを許可するかブロックするかを判断する決定ポイントを示す図 ](../media/ConditionalAccess8-6.png)
 
->[!IMPORTANT]
->先進認証を使用したアプリでの PC および Windows 10 Mobile デバイスに対する条件付きアクセスは、現在、Intune の一部のお客様だけが使用できます。 これらの機能を既に使用している場合は、何も行う必要はありません。 機能を引き続き使用できます。
-
->最新の認証を使用したアプリ用に PC または Windows 10 Mobile の条件付きアクセス ポリシーを初めて作成する場合は、Intune の管理対象デバイスまたはドメイン参加 Windows PC 用のデバイス ベースの条件付きアクセスが含まれる Azure Active Directory のパブリック プレビューにサインアップしてください。 詳細については[このブログの投稿](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/)をお読みください。
 
 SharePoint Online の条件付きアクセス ポリシーを構成する**前に**、次のことを行う必要があります。
 - **SharePoint Online サブスクリプション**を取得します。ユーザーには SharePoint Online のライセンスが必要です。
-- **Enterprise Mobility Suite** または **Azure Active Directory Premium** のサブスクリプションを取得します。
+- **Azure Active Directory Premium サブスクリプション**を用意します。 詳細については、「[Azure Active Directory の価格](https://azure.microsoft.com/en-us/pricing/details/active-directory/)」ページを参照してください。**Enterprise Mobility Suite + Security のサブスクリプション**には、Intune および Azure Active Directory Premium のサブスクリプションが両方とも含まれます。 詳細については、「[Enterprise Mobility Suite pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility Suite の価格) ページを参照してください。
 
   必要なファイルに接続するには、デバイスが次の条件を満たしている必要があります。
 -   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に**登録**されているか、ドメインに参加している PC である。
@@ -61,6 +57,7 @@ SharePoint Online の条件付きアクセス ポリシーを構成する**前�
 
 >[!NOTE]
 >SharePoint Online で条件付きアクセスを有効にする場合は、[Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) のトピックの説明に従って、一覧にあるドメインを無効にすることをお勧めします。  
+
 ## モバイル デバイスのサポート
 - iOS 8.0 以降
 - Android 4.0 以降、Samsung Knox Standard 4.0 以降
@@ -75,7 +72,9 @@ SharePoint Online の条件付きアクセス ポリシーを構成する**前�
 
 ## PC のサポート
 - Windows 8.1 以降 (Intune に登録されている場合)
-- Windows 7.0 または Windows 8.1 (ドメインに参加している場合)
+- Windows 7.0、Windows 8.1、または Windows 10 (ドメインに参加している場合)
+> [!NOTE]
+>Windows 10 を搭載した PC で条件付きアクセスを使用するには、Windows 10 Anniversary Update で PC を更新する必要があります。
 
   - ドメインに参加している PC の場合、Azure Active Directory に[自動的に登録](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/)するように設定する必要があります。
 AAD DRS は、Intune や Office 365 のお客様に対して自動的にアクティブ化されます。 ADFS Device Registration Service をデプロイ済みのお客様には、オンプレミスの Active Directory で登録されたデバイスは表示されません。
@@ -122,6 +121,10 @@ SharePoint Online ポリシーには、次の 2 つのグループの種類を�
 
 #### <a name="bkmk_spopolicy"></a>
 
+>[!NOTE]
+> Azure AD 管理コンソールでは、条件付きアクセス ポリシーを作成することもできます。 Azure AD 管理コンソールを使用すると、Intune デバイスの条件付きアクセス ポリシー (Azure AD では**デバイスベースの条件付きアクセス ポリシー**と呼ばれている) に加えて、多要素認証など、他の条件付きアクセス ポリシーを作成することもできます。  Azure AD がサポートするサード パーティ製の Enterprise アプリ (Salesforce や Box など) に条件付きアクセス ポリシーを設定することもできます。 詳細については、「[Azure Active Directory に接続されたアプリケーションのアクセスを制御する Azure Active Directory デバイス ベースの条件付きアクセス ポリシーを設定する方法](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/)」を参照してください。
+
+
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** > **[条件付きアクセス]** > **[SharePoint Online ポリシー]** の順に選択します。
 ![SharePoint Online ポリシー ページのスクリーンショット](../media/mdm-ca-spo-policy-configuration.png)
 
@@ -136,8 +139,6 @@ SharePoint Online ポリシーには、次の 2 つのグループの種類を�
         **[すべてのプラットフォーム]** オプションを選択することは、クライアント アプリケーションから報告されたプラットフォームでない限り、Azure Active Directory がこのポリシーをすべての認証要求に適用することを意味します。  次の場合を除いて、すべてのプラットフォームが登録されて準拠している必要があります。
         *   Windows デバイスが登録されて準拠している必要があるか、またはオンプレミスの Active Directory でドメインに参加している (一方または両方)
         * Mac などのサポートされていないプラットフォーム  ただし、これらのプラットフォームからの最新の認証を使用しているアプリは、それでもブロックされます。
-        >[!TIP]
-        >PC に対して条件付きアクセスを使用していないと、このオプションは表示されない場合があります。  その場合は、代わりに **[特定のプラットフォーム]** を使用してください。 PC の条件付きアクセスは、現在、Intune の一部のお客様だけが使用できます。   この機能にアクセスする方法の詳細については[このブログの投稿](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/)をお読みください。
 
     -   **特定のプラットフォーム**
 
@@ -192,6 +193,6 @@ SharePoint Online ポリシーには、次の 2 つのグループの種類を�
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO5-->
 
 

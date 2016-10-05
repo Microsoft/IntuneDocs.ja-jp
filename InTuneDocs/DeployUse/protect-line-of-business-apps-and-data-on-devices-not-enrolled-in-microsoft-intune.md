@@ -13,21 +13,27 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 45c6622624230e3486d2498b1b023f2efcdc2970
-ms.openlocfilehash: eb04f0e7b9627ad1869ef677f1b32380db868490
+ms.sourcegitcommit: ffe11b4eb4b0f4c2ffdc831cad9deb30d7180809
+ms.openlocfilehash: 94de65185af64052226985f2c65c7b8a18e2f829
 
 
 ---
 
 # Microsoft Intune に登録されていないデバイスの基幹業務アプリとデータを保護する
 
-モバイル アプリ管理 (MAM) ポリシーでは、コピーや貼り付けなどのデータの移動を制限したり、ユーザーが個人用の場所に会社のドキュメントを保存したりすることを防いで、会社のデータの保護を支援します。   MAM ポリシーを iOS または Android の基幹業務アプリに適用するには、最初に Microsoft Intune アプリ ラッピング ツールを使用してアプリをラップする必要があります。  アプリ ラッピングは、モバイル アプリに、基になるアプリケーションは何も変更せずに、管理レイヤーを適用するプロセスです。  アプリをラップしたら、MAM ポリシーを適用し、それをエンドユーザーに配布できます。  
+モバイル アプリ管理 (MAM) ポリシーでは、会社のデータを保護するために、会社データが漏洩する可能性があるアクションを制限し、アプリ PIN などのデータ アクセス要件を強制することができます。 MAM ポリシーを iOS または Android の基幹業務アプリに適用するには、最初に Microsoft Intune アプリ ラッピング ツールを使用してアプリをラップする必要があります。  アプリ ラッピングは、モバイル アプリに、基になるアプリケーションは何も変更せずに、管理レイヤーを適用するプロセスです。  アプリをラップしたら、MAM ポリシーを適用し、それをエンドユーザーに配布できます。  
 
-このトピックでは、**従業員が所有している管理外のデバイス**からアクセスするアプリと、**サード パーティ製のモバイル デバイス管理 (MDM) ソリューション**で管理されているデバイスに MAM ポリシーを適用する手順を説明します。  **Intune に登録されているデバイス**で実行されている基幹業務アプリを準備するには、「[Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)」をご覧ください。
+このトピックでは、**従業員が所有している管理外のデバイス**からアクセスするアプリと、**サード パーティ製のモバイル デバイス管理 (MDM) ソリューション**で管理されているデバイスに MAM ポリシーを適用する手順を説明します。  **Intune MDM に登録されているデバイス**で実行されている基幹業務アプリを準備するには、「[Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)」をご覧ください。
+
+
 ##  手順 1: アプリを準備する
-MAM ポリシーをアプリに適用する前に、まず Microsoft Intune アプリ ラッピング ツールを使用してアプリをラップする必要があります。  アプリ ラッピング ツールをインストールして使用する手順は、ダウンロードに含まれています。  
+MAM ポリシーをアプリに適用する前に、まず Microsoft Intune アプリ ラッピング ツールを使用してアプリをラップする必要があります。  アプリ ラッピング ツールをダウンロードして使用する手順については、次のページを参照してください。
+
+- [Intune アプリ ラッピング ツールでモバイル アプリケーションを管理するために iOS アプリを準備する](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 
+- [Intune アプリ ラッピング ツールでモバイル アプリケーションを管理するために Android アプリを準備する](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)
+
 >[!IMPORTANT]  
->Intune に登録されていないデバイスをサポートするこのアプリ ラッピング ツールのバージョンは、パブリック プレビューで提供されています。 パブリック プレビューへの参加を希望する場合、iOS については[この GitHub ページ](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview)からツールをダウンロードし、Android については[この GitHub サイト](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview)からツールをダウンロードします。
+>このアプリ ラッピング ツールのバージョン (Intune に登録されていないデバイスをサポートする) は、iOS および Android のパブリック プレビューに対応しています。 iOS の場合は、[こちらの GitHub リポジトリ](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)から、Android の場合は、[こちらの GitHub リポジトリ](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview)からツールをダウンロードできます。
 
 ## 手順 2: アプリを追加する
 
@@ -75,6 +81,6 @@ MAM ポリシーと基幹業務アプリを関連付けるには、次の手順�
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

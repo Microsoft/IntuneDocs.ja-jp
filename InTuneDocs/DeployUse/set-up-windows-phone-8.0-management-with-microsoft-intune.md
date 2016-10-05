@@ -13,8 +13,8 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: 5b659bb63c34887684f90fd56ea853bade8bf791
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 1d3823392b7060b9d04996c29c68213d421ef4bd
 
 
 ---
@@ -42,7 +42,7 @@ Windows Phone 8.0 では、Intune ポータル サイト アプリのインス�
 Window Phone のモバイル デバイス管理のセットアップ要件は、デバイスの管理方法によって異なります。  会社の DNS 登録で 2 つの CNAME を設定すると、ユーザーが簡単に登録できるようになります。 ユーザーがストアからポータル サイト アプリをダウンロードする場合は、DNS 設定を構成したら、必要な作業は、ポータル サイトをセットアップし、ユーザーに登録方法を通知することだけです。  ポータル サイトを Windows Phone 8.0 または Windows Phone 8.1 に展開する場合は、アプリのコード署名に Symantec 証明書が必要です。
 
 ## Windows Phone 管理を有効にするためのセットアップ要件を構成する
-1.  **Intune をセットアップする** **Microsoft Intune** を[モバイル デバイス管理機関に設定](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)して、MDM の設定を行うことにより、モバイル デバイス管理を準備します (この作業をまだ行っていない場合)。
+1.  **Intune をセットアップする** **Microsoft Intune** を[モバイル デバイス管理機関に設定](prerequisites-for-enrollment.md#set-mobile-device-management-authority)して、MDM の設定を行うことにより、モバイル デバイス管理を準備します (この作業をまだ行っていない場合)。
 
 2.  **登録サーバーのアドレスの DNS エイリアスを設定する** (オプション)
 
@@ -183,6 +183,6 @@ Windows Phone ストアからインストールしなくても、Intune を使�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
