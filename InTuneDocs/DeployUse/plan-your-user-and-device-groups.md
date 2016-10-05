@@ -2,7 +2,7 @@
 title: "ユーザーとデバイス グループを計画する | Microsoft Intune"
 description: "組織のニーズを満たすグループを計画します。"
 keywords: 
-author: nbigman
+author: sanchusa
 manager: angrobe
 ms.date: 07/21/2016
 ms.topic: article
@@ -13,8 +13,8 @@ ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55e21f56c3d1b73427e4019054a0f9fab862f26d
-ms.openlocfilehash: 70949301499efedd99eeddb60dd2fa0efc6d2309
+ms.sourcegitcommit: 0ea1aeee65381420af8662e7c0e16741879948e2
+ms.openlocfilehash: 9fc92c7724a9e1f256faa8b028bcf93e354e7997
 
 
 ---
@@ -215,6 +215,6 @@ Android、iOS、Windows などの特定のオペレーティング システム�
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO3-->
 
 

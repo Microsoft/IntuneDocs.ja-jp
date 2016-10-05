@@ -1,6 +1,5 @@
 # [理解と調査](/intune/understand-explore/introduction-to-microsoft-intune)
 # [作業の開始](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
-# [計画と設計](ways-to-do-enterprise-mobility.md)
 <!--- ## [Migrate to Intune](migrating-to-intune.md)
 ### [Set up Intune](migrating-to-intune-step-one.md)
 ### [Configure Intune](migrating-to-intune-step-two.md)
@@ -15,12 +14,12 @@
 ## [Help secure access from hotel kiosks](help-secure-access-from-hotel-kiosks.md)
 ## [Best practices for using Microsoft Intune](best-practices-for-using-intune.md)--->
 <!--- ## [What to tell your end users](what-to-tell-your-end-users-about-using-microsoft-intune.md)--->
-
+# [新機能](/intune/whats-new/whats-new-in-microsoft-intune)
 # [展開と使用](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [アプリの開発とカスタマイズ](/intune/develop/intune-app-sdk)
 # [トラブルシューティング](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Sep16_HO5-->
 
 

@@ -9,19 +9,16 @@
 ### [その他のオプションと機能](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [次のステップ](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [一般的なシナリオ](common-ways-to-use-intune.md)
-## [クイック スタート ガイド](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
-### [Office 365 モバイル アプリから会社のデータが漏えいすることを防止する](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
-### [ユーザーにモバイル アプリを発行する](publish-mobile-apps-to-users.md)
-### [Windows PC をマルウェアの脅威から保護する](protect-pcs-against-malware-threats.md)
-### [モバイル デバイスでの電子メールの構成を簡略化する](simplify-email-configuration-on-mobile-devices.md)
+## [用語集](intune-glossary.md)
 
 # [作業の開始](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [新機能](/intune/whats-new/whats-new-in-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [展開と使用](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [アプリの開発とカスタマイズ](/intune/develop/intune-app-sdk)
 # [トラブルシューティング](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 

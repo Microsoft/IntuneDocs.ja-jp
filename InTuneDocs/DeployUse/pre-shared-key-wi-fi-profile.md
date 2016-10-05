@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: daecea644300ee1e47db9b028b72d71b3211f46d
+ms.sourcegitcommit: b7f11f752f6c38736a2dfa5875050f50bd86bae4
+ms.openlocfilehash: 14e43dadc0d7bc20238ec87447f311fdc864d891
 
 
 
@@ -64,9 +64,10 @@ Intune の**カスタム構成**を使用して、事前共有キーを使用し
 
 > [!IMPORTANT]
 > 
-> `<protected>false</protected>`**false** に設定します。**true** に設定すると、デバイスはパスワードが暗号化されているとみなし、暗号化の解除を試みます。その結果、接続が接続する場合があります。
+> `<protected>false</protected>`**false** に設定する必要があります。**true** に設定すると、デバイスはパスワードが暗号化されているとみなし、暗号化の解除を試みます。その結果、接続が失敗する場合があります。
 > 
 >  `<hex>53534944</hex>`  は、`<name><SSID of wifi profile></name>` の 16 進値に設定する必要があります。
+>  Windows 10 デバイスは、"*0x87D1FDE8 修復できませんでした*" という間違ったエラーを返す場合があります。それでも、これまでどおり、プロファイルでプロビジョニングすることができます。
 
     <!--
     <Name of wifi profile> = Name of profile
