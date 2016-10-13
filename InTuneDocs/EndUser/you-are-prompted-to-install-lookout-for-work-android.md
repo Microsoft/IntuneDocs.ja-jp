@@ -25,7 +25,7 @@ ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
 
 **必要な操作**
 
-1.  画面の一番上から下にドラッグして通知バーを開き、[**Required application – Install Lookout for Work from Play Store**] (必要なアプリケーション – Lookout for Work を Play ストアからインストール) をタップします。
+1.  画面の一番上から下にドラッグして通知バーを開き、**[Required application – Install Lookout for Work from Play Store]** (必要なアプリケーション – Lookout for Work を Play ストアからインストール) をタップします。
 
     ![Lookout for Work をインストールする必要があります](./media/lookout-required-app-install-android.png)
 
