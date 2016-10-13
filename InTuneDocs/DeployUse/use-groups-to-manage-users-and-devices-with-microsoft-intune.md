@@ -13,8 +13,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1fbe37aa081f850224ce4ee76f66e154c6001c9c
-ms.openlocfilehash: 480a7a60b484f28b621c4c135713a65953f46f41
+ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
+ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 
 
 ---
@@ -24,7 +24,9 @@ ms.openlocfilehash: 480a7a60b484f28b621c4c135713a65953f46f41
 
 >[!IMPORTANT]
 >
->Intune ポータルでグループ ワークスペースを開き、Azure Active Directory (Azure AD) ポータルへのリンクを確認すると、Intune でのグループ管理に*新しい* Azure AD セキュリティ グループのアプローチが既に使用されています (「[グループの管理エクスペリエンスに対して予定されている改善点に関するお知らせ](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups)」を参照)。 グループを作成して管理するには、Azure AD ポータルへのリンクをクリックします。 
+>Intune ポータルでグループ ワークスペースを開き、Azure Active Directory (Azure AD) ポータルへのリンクを確認すると、Intune でのグループ管理に*新しい* Azure AD セキュリティ グループのアプローチが既に使用されています (「[グループの管理エクスペリエンスに対して予定されている改善点に関するお知らせ](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups)」を参照)。 グループを作成して管理するには、Azure AD ポータルへのリンクをクリックします。
+>
+>![Azure グループの管理へのリンクのスクリーン ショット](../media/groups-link-azure.png) 
 >
 >Azure AD ポータルへのリンクが表示されない場合は、まだ*現在の*グループ管理アプローチを使用しています (このトピックの「[Microsoft Intune でユーザーとデバイスを管理するためのグループを作成する](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune)」を参照)。
 
@@ -202,6 +204,6 @@ Microsoft Intune 管理コンソールの **[グループ]** ワークスペー�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

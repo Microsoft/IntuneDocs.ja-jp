@@ -4,7 +4,7 @@ description: "このトピックのポリシー設定の一覧を、登録済み
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/31/2016
+ms.date: 10/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4ce69e8a22f1b25dac7060ff575bbd97934eff91
-ms.openlocfilehash: 712883874f022ceb3f38473839fe0d6e4c373164
+ms.sourcegitcommit: b8522406a3c73746b09616c3ec917464cf751312
+ms.openlocfilehash: 6e482beb5e2edce648ecb6f1821baa6214fa0f2f
 
 
 ---
@@ -53,7 +53,7 @@ ms.openlocfilehash: 712883874f022ceb3f38473839fe0d6e4c373164
 - **値** - 入力した OMA-URI に関連付ける値を指定します。
 
 ### 例
-以下のスクリーン ショットで、**Conectivity/AllowVPNOverCellular** 設定が有効になりました。 これにより、移動体通信ネットワーク上の Windows 10 デバイスで OpenVPN 接続を利用できます。
+以下のスクリーン ショットで、**Connectivity/AllowVPNOverCellular** 設定が有効になりました。 これにより、移動体通信ネットワーク上の Windows 10 デバイスで OpenVPN 接続を利用できます。
 
 > ![VPN 設定を含むカスタム ポリシーの例](./media/custom-policy-example.png)
 
@@ -225,7 +225,7 @@ Windows 10 用の Microsoft Intune **全般構成ポリシー**を使用して�
 
 |設定の名前|追加情報 (必要な場合)|
 |----------------|----------------------|
-|**Web ブラウザーを許可する**|デバイスで Edge Web ブラウザーを使用できるようにします。<br>(Windows 10 Mobile のみ)|
+|**Web ブラウザーを許可する**|デバイスで Microsoft Edge Web ブラウザーを使用できるようにします。<br>(Windows 10 Mobile のみ)|
 |**アドレス バーで検索候補を許可する**|検索語句を入力したときに、検索エンジンからサイトが提案されるようになります。|
 |**Internet Explorer へのイントラネット トラフィックの送信を許可する**|ユーザーが Internet Explorer でイントラネット Web サイトを開けるようになります。<br>(Windows 10 デスクトップのみ)|
 |**追跡禁止を許可する**|ユーザーがアクセスする Web サイトへトラッキング拒否ヘッダーを送信できるように、Edge ブラウザーを構成します。|
@@ -234,7 +234,7 @@ Windows 10 用の Microsoft Intune **全般構成ポリシー**を使用して�
 |**ポップアップを許可する**|Windows 10 デスクトップのみに適用|
 |**Cookie を使用する**|-|
 |**オートコンプリートを使用する**|ユーザーがブラウザーのオートコンプリートの設定を変更できるようにします。<br>(Windows 10 デスクトップのみ)|
-|**Password Manager を許可する**|Edge Password Manager 機能を有効または無効にします。|
+|**Password Manager を許可する**|Microsoft Edge Password Manager 機能を有効または無効にします。|
 |**エンタープライズ モード サイト リストの場所**|エンタープライズ モードで開く Web サイトの一覧を検索できる場所を指定します。 ユーザーは、この一覧を編集できません。<br>(Windows 10 デスクトップのみ)|
 
 ## &nbsp;&nbsp;&nbsp;アプリ
@@ -326,6 +326,6 @@ Windows 10 用の Microsoft Intune **全般構成ポリシー**を使用して�
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

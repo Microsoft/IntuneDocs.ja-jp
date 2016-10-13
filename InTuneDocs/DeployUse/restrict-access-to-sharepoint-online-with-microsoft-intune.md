@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: baf87ad746a320784252966398bd665241209935
-ms.openlocfilehash: ba7e7e19966ce3ad582c8a520b7c9174dba76bf5
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: 76ac4c92d090ef0057bd7c9687b169cd12b901a1
 
 
 ---
@@ -35,7 +35,8 @@ ms.openlocfilehash: ba7e7e19966ce3ad582c8a520b7c9174dba76bf5
 
 SharePoint Online の条件付きアクセス ポリシーを構成する**前に**、次のことを行う必要があります。
 - **SharePoint Online サブスクリプション**を取得します。ユーザーには SharePoint Online のライセンスが必要です。
-- **Azure Active Directory Premium サブスクリプション**を用意します。 詳細については、「[Azure Active Directory の価格](https://azure.microsoft.com/en-us/pricing/details/active-directory/)」ページを参照してください。**Enterprise Mobility Suite + Security のサブスクリプション**には、Intune および Azure Active Directory Premium のサブスクリプションが両方とも含まれます。 詳細については、「[Enterprise Mobility Suite pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility Suite の価格) ページを参照してください。
+- **Enterprise Mobility + Security または Azure Active Directory Premium サブスクリプション**を用意してください。ユーザーに EMS または Azure AD のライセンスが付与される必要があります。 詳細については、「[Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility の価格) ページまたは「[Azure Active Directory の価格](https://azure.microsoft.com/en-us/pricing/details/active-directory/)」ページを参照してください。
+
 
   必要なファイルに接続するには、デバイスが次の条件を満たしている必要があります。
 -   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に**登録**されているか、ドメインに参加している PC である。
@@ -156,7 +157,7 @@ SharePoint Online ポリシーには、次の 2 つのグループの種類を�
 
   **Android** デバイスで、ユーザーはブラウザー アクセスを有効にする必要があります。  この操作を行うには、次のようにエンドユーザーが、登録されるデバイスで “ブラウザー アクセスを有効にする” オプションを有効にする必要があります。
   1.    **ポータル サイト アプリ**を起動します。
-  2.    トリプル ドット (…) またはハードウェアのメニュー ボタンから **[設定]** ページに移動します。
+  2.    トリプル ドット (...) またはハードウェアのメニュー ボタンから **[設定]** ページに移動します。
   3.    **[ブラウザー アクセスを有効にする]** ボタンを押します。
   4.  Chrome ブラウザーで Office 365 からサインアウトして、Chrome を再起動します。
 
@@ -193,6 +194,6 @@ SharePoint Online ポリシーには、次の 2 つのグループの種類を�
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

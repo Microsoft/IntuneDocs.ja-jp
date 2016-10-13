@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99b01f5ca5bb389fc8a9d87e956796823fee6c0d
-ms.openlocfilehash: dd5ae411cc2541566805131d0076efc15875c988
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
 
 
 ---
@@ -26,14 +26,12 @@ Exchange Online Dedicated 環境を使用していて、それが新しい構成
 Exchange Online または新しい Exchange Online Dedicated 環境への電子メール アクセスを制御するには、Intune で Exchange Online の条件付きアクセスを構成します。
 条件付きアクセスの動作の詳細については、[電子メール、O365、およびその他のサービスへのアクセスを制限する](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)に関する記事をご覧ください。
 
->[!IMPORTANT]
->先進認証を使用したアプリでの PC および Windows 10 Mobile デバイスに対する条件付きアクセスは、現在、Intune の一部のお客様だけが使用できます。 これらの機能を既に使用している場合は、何も行う必要はありません。 機能を引き続き使用できます。
-
->最新の認証を使用したアプリ用に PC または Windows 10 Mobile の条件付きアクセス ポリシーを初めて作成する場合は、Intune の管理対象デバイスまたはドメイン参加 Windows PC 用のデバイス ベースの条件付きアクセスが含まれる Azure Active Directory のパブリック プレビューにサインアップしてください。 詳細については、[こちらのブログ投稿](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/)をお読みください。  
 
 条件付きアクセスを構成する**前に**、次のことを行う必要があります。
 
 -   **Exchange Online を含む Office 365 サブスクリプション (E3 など)** を取得します。ユーザーには Exchange Online のライセンスが必要です。
+
+- **Enterprise Mobility + Security または Azure Active Directory Premium サブスクリプション**を用意してください。ユーザーに EMS または Azure AD のライセンスが付与される必要があります。 詳細については、「[Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility の価格) ページまたは「[Azure Active Directory の価格](https://azure.microsoft.com/en-us/pricing/details/active-directory/)」ページを参照してください。
 
 -  オプションの **Microsoft Intune Service to Service Connector** の構成を検討します。これによって [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] が Microsoft Exchange Online に接続され、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] コンソールを使用してデバイス情報を管理できるようになります。 コンプライアンス ポリシーまたは条件付きアクセス ポリシーを使用するうえでコネクタを使用する必要はありませんが、条件付きアクセスの影響を評価するためのレポートの実行に必要です。
 
@@ -84,9 +82,7 @@ Exchange Online または新しい Exchange Online Dedicated 環境への電子�
 
 **サポートされていないブラウザーはブロックされます**。
 
-iOS と Android 用の OWA アプリはサポートされていません。  これらのアプリは、ADFS 要求規則によってブロックされます。
-
-
+**IOS および Android 用 OWA アプリケーションでは、最新の認証がサポートされていないため、最新の認証を使用しないように変更することができます。  OWA アプリケーションからのアクセスは、ADFS 要求規則を使用してブロックする必要があります。**
 
 
 以下のプラットフォームの組み込み **Exchange ActiveSync 電子メール クライアント**による Exchange 電子メールへのアクセスを制限できます。
@@ -101,14 +97,18 @@ iOS と Android 用の OWA アプリはサポートされていません。  こ
 
 PC が Office デスクトップ アプリケーションを実行して **Exchange Online** と **SharePoint Online** にアクセスする場合、次の要件を満たす PC に対して条件付きアクセスをセットアップできます。
 
--   Windows 7.0 または Windows 8.1 を実行している PC であること。
+-   Windows 7.0、Windows 8.1、または Windows 10 を実行している PC であること。
 
--   ドメインに参加しているか、コンプライアンス ポリシーのルールに準拠している PC であること。
+  >[!NOTE]
+  > Windows 10 を搭載した PC で条件付きアクセスを使用するには、Windows 10 Anniversary Update で PC を更新する必要があります。
 
-    準拠していると見なされるためには、PC が [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録済みで、ポリシーに準拠している必要があります。
+  ドメインに参加しているか、コンプライアンス ポリシーのルールに準拠している PC であること。
 
-    ドメインに参加する PC の場合、[デバイスを Azure Active Directory に自動的に登録](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/)するように設定する必要があります。
-    >[!NOTE]
+  準拠していると見なされるためには、PC が [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録済みで、ポリシーに準拠している必要があります。
+
+  ドメインに参加する PC の場合、[デバイスを Azure Active Directory に自動的に登録](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/)するように設定する必要があります。
+
+  >[!NOTE]
     >Intune コンピューター クライアントを実行する PC では、条件付きアクセスはサポートされていません。
 
 -   [Office 365 の先進認証が有効化](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)されていて、最新の Office 更新プログラムがすべて適用されていること。
@@ -177,6 +177,10 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 
 ### 手順 4: 条件付きアクセス ポリシーを構成する
 
+>[!NOTE]
+> Azure AD 管理コンソールでは、条件付きアクセス ポリシーを作成することもできます。 Azure AD 管理コンソールを使用すると、Intune デバイスの条件付きアクセス ポリシー (Azure AD では**デバイスベースの条件付きアクセス ポリシー**と呼ばれている) に加えて、多要素認証など、他の条件付きアクセス ポリシーを作成することもできます。  Azure AD がサポートするサード パーティ製の Enterprise アプリ (Salesforce や Box など) に条件付きアクセス ポリシーを設定することもできます。 詳細については、「[Azure Active Directory に接続されたアプリケーションのアクセスを制御する Azure Active Directory デバイス ベースの条件付きアクセス ポリシーを設定する方法](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/)」を参照してください。
+
+
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]**、**[条件付きアクセス]** > **[Exchange Online ポリシー]** の順に選択します。
 ![Exchange Online の条件付きアクセス ポリシー ページのスクリーンショット](../media/mdm-ca-exo-policy-configuration.png)
 
@@ -197,9 +201,6 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
         *   Windows デバイスが登録されて準拠している必要があるか、またはオンプレミスの Active Directory でドメインに参加している (一方または両方)
         * Mac OS などのサポートされていないプラットフォーム  ただし、これらのプラットフォームからの最新の認証を使用しているアプリは、それでもブロックされます。
 
-        >[!TIP]
-           PC に対して条件付きアクセスを使用していないと、このオプションは表示されない場合があります。  その場合は、代わりに **[特定のプラットフォーム]** を使用してください。 PC の条件付きアクセスは、現在、Intune の一部のお客様だけが使用できます。   この機能を利用する方法の詳細については、[こちらのブログ投稿](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/)をお読みください。
-
     -   **特定のプラットフォーム**
 
          指定したデバイス プラットフォームで**先進認証**を使用しているすべてのクライアント アプリに条件付きアクセス ポリシーが適用されます。
@@ -208,7 +209,7 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 
   **Android** デバイスで、ユーザーはブラウザー アクセスを有効にする必要があります。  この操作を行うには、次のようにエンドユーザーが、登録されるデバイスで “ブラウザー アクセスを有効にする” オプションを有効にする必要があります。
   1.    **ポータル サイト アプリ**を起動します。
-  2.    トリプル ドット (…) またはハードウェアのメニュー ボタンから **[設定]** ページに移動します。
+  2.    トリプル ドット (...) またはハードウェアのメニュー ボタンから **[設定]** ページに移動します。
   3.    **[ブラウザー アクセスを有効にする]** ボタンを押します。
   4.    Chrome ブラウザーで Office 365 からサインアウトして、Chrome を再起動します。
 
@@ -262,6 +263,6 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 
