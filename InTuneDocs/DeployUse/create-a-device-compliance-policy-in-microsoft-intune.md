@@ -4,7 +4,7 @@ description: "会社データのアクセスに使用するモバイル デバ�
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 2ff0b24d0a6991c22b23da5da5c63a9bb26ccdd2
+ms.sourcegitcommit: 55fea2e479273af7ff915449c96a72aeebba85a9
+ms.openlocfilehash: 3f434fc4cb9c90e28e516620383def8d91f11138
 
 
 ---
@@ -53,24 +53,24 @@ ms.openlocfilehash: 2ff0b24d0a6991c22b23da5da5c63a9bb26ccdd2
 -------------
 |Setting|iOS|Android|Windows|
 |-----|----|-----|-----|
-|モバイル デバイスのロックを解除するパスワードを要求する|iOS 6 以降|Android 4.0 以降 <br>Samsung KNOX Standard 4.0 以降|Windows Phone 8 以降|
-|単純なパスワードを許可する|iOS 6 以降|サポートされていません|Windows Phone 8 以降|
-|パスワードの最小文字数|iOS 6 以降| Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降| Windows Phone 8 以降<br>Windows 8.1|
-|必要なパスワードの種類|iOS 6 以降|利用不可|Windows Phone 8 以降 <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
-|文字セットの最小数|iOS 6 以降|利用不可|Windows Phone 8 以降 <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
+|モバイル デバイスのロックを解除するパスワードを要求する|iOS 6 以降|Android 4.0 以降 <br>Samsung KNOX Standard 4.0 以降|Windows Phone 8.1 以降|
+|単純なパスワードを許可する|iOS 6 以降|サポートされていません|Windows Phone 8.1 以降|
+|パスワードの最小文字数|iOS 6 以降| Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降| Windows Phone 8.1 以降<br>Windows 8.1|
+|必要なパスワードの種類|iOS 6 以降|利用不可|Windows Phone 8.1 以降 <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
+|文字セットの最小数|iOS 6 以降|利用不可|Windows Phone 8.1 以降 <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
 |パスワードの品質|利用不可|Android 4.0 以降 <br>Samsung KNOX Standard 4.0 以降|利用不可|
-|パスワードが必要になるまでの非アクティブ状態の時間 (分)|iOS 6 以降|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降|Windows Phone 8 以降<br>Windows RT および Windows RT 8.1<br>Windows 8.1|
-|パスワードの有効期限 (日数)|iOS 6 以降|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降|Windows Phone 8 以降<br>Windows RT および Windows RT 8.1<br>Windows 8.1|
-|パスワードの履歴を記憶する|iOS 6 以降|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降|Windows Phone 8 以降<br>Windows RT および Windows RT 8.1<br>Windows 8.1|
-|前のパスワードの再利用を防止|iOS 6 以降|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降|Windows Phone 8 以降<br>Windows RT および Windows RT 8.1<br>Windows 8.1|
+|パスワードが必要になるまでの非アクティブ状態の時間 (分)|iOS 6 以降|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降|Windows Phone 8.1 以降<br>Windows RT および Windows RT 8.1<br>Windows 8.1|
+|パスワードの有効期限 (日数)|iOS 6 以降|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降|Windows Phone 8.1 以降<br>Windows RT および Windows RT 8.1<br>Windows 8.1|
+|パスワードの履歴を記憶する|iOS 6 以降|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降|Windows Phone 8.1 以降<br>Windows RT および Windows RT 8.1<br>Windows 8.1|
+|前のパスワードの再利用を防止|iOS 6 以降|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降|Windows Phone 8.1 以降<br>Windows RT および Windows RT 8.1<br>Windows 8.1|
 |デバイスがアイドル状態から戻るときにパスワードを必須とする| 利用不可| 利用不可|[Windows] 10 Mobile|
-|モバイル デバイスの暗号化を要求する|該当なし|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降|Windows Phone 8 以降<br> Windows 8.1|
+|モバイル デバイスの暗号化を要求する|該当なし|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降|Windows Phone 8.1 以降<br> Windows 8.1|
 |デバイスが正常と報告されることを要求する| 利用不可| 利用不可|Windows <br>[Windows] 10 Mobile|
 |デバイスは改造もルート化も行われていなければならない|iOS 6 以降|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降|利用不可|
 |電子メール アカウントは Intune によって管理される必要がある|iOS 6 以降|利用不可| 利用不可|
 |Intune によって管理される必要のある電子メール プロファイルを選択する|iOS 6 以降|利用不可| 利用不可|
-|必要な最小 OS バージョン|iOS 6 以降|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降| Windows Phone 8 以降<br>Windows 8.1|
-|許可される最大 OS バージョン|iOS 6 以降|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降|Windows Phone 8 以降<br>Windows 8.1|
+|必要な最小 OS バージョン|iOS 6 以降|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降| Windows Phone 8.1 以降<br>Windows 8.1|
+|許可される最大 OS バージョン|iOS 6 以降|Android 4.0 以降<br>Samsung KNOX Standard 4.0 以降|Windows Phone 8.1 以降<br>Windows 8.1|
 
 各プラットフォームでサポートされるコンプライアンス設定の詳細については、次のいずれかを選択してください。
 > [!div class="op_single_selector"]
@@ -87,6 +87,6 @@ ms.openlocfilehash: 2ff0b24d0a6991c22b23da5da5c63a9bb26ccdd2
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

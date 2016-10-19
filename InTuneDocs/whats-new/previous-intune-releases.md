@@ -2,7 +2,7 @@
 title: "以前のリリース |Microsoft Intune"
 description: 
 keywords: 
-author: Lindavr
+author: barlanmsft
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,8 +13,8 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: noindex,nofollow
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3206634884807743576f2d9dc1ca17b6bbbc9cc6
-ms.openlocfilehash: 996198a2525dc830d229e7143afda3c71f4276b8
+ms.sourcegitcommit: ffbb26f30c7801789a47d57ffed00696f5e6d81a
+ms.openlocfilehash: 11e90ce994d17d9dcc62edba775dd0ab8110414e
 
 
 ---
@@ -30,7 +30,7 @@ iOS 9.3 以降を実行する監視対象デバイスでは、iOS の一般構�
 - ユーザーに対して表示されないアプリの一覧を指定します。 ユーザーはこのようなアプリを表示または起動できません。
 - ユーザーが表示および起動できるアプリの一覧を指定します。 他のアプリは表示または起動できません。
 
-ユーザー自身が展開したアプリと、Messages や Notes などの iOS 組み込みアプリの両方を指定できます。 詳細については、「[Microsoft Intune の iOS ポリシー設定]( https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)」を参照してください。
+ユーザー自身が展開したアプリと、Messages や Notes などの iOS 組み込みアプリの両方を指定できます。 詳細については、「[Microsoft Intune の iOS ポリシー設定]( /intune/deploy-use/ios-policy-settings-in-microsoft-intune)」を参照してください。
 <!---TFS 1279009 checked--->
 ### Samsung KNOX デバイスでの許可するアプリとブロックするアプリのポリシー
 Samsung KNOX デバイスでは、次のいずれかを作成できるカスタム ポリシーを構成できます。
@@ -38,7 +38,7 @@ Samsung KNOX デバイスでは、次のいずれかを作成できるカスタ�
 - デバイスのユーザーが Google Play ストアからインストールできるアプリの一覧。 他のアプリはストアからインストールできません。
 
 これらの設定は、Samsung KNOX を実行するデバイスでのみ使用できます。
-詳細については、「[カスタム ポリシーを使用して、Samsung KNOX デバイス用のアプリを許可またはブロックする]( custom-policy-to-allow-and-block-samsung-knox-apps.md)」を参照してください。
+詳細については、「[カスタム ポリシーを使用して、Samsung KNOX デバイス用のアプリを許可またはブロックする](/intune/deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps)」を参照してください。
 <!---TFS 1311629 checked --->
 ### モバイル アプリケーション管理 (MAM) ポリシーと互換性のある新しいアプリ
 [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) および [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) 向けの Yammer アプリは、デバイスが登録されていてもいなくても、[Intune モバイル アプリケーション管理 (MAM) ポリシー](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)と互換性があります。
@@ -55,7 +55,7 @@ MAM と互換性のある全アプリの一覧については、[Microsoft Intun
 - Intune PDF Viewer
 - Google Play の Android 用 Intune Image Viewer
 
-Intune Viewer アプリを使用する代わりに、[Android 用の新しい Rights Management アプリ (RMS 共有) ](https://docs.microsoft.com/en-us/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app)を使用することをお勧めします。そうすることで、3 つのアプリを個別にではなく、1 つのアプリを展開して、Android デバイス上の企業ファイルを安全に表示することができます。 Intune Viewer アプリがサポートされなくなると、Google ストアから削除され、その後使用することができなくなります。
+Intune Viewer アプリを使用する代わりに、[Android 用の新しい Rights Management アプリ (RMS 共有) ](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app)を使用することをお勧めします。そうすることで、3 つのアプリを個別にではなく、1 つのアプリを展開して、Android デバイス上の企業ファイルを安全に表示することができます。 Intune Viewer アプリがサポートされなくなると、Google ストアから削除され、その後使用することができなくなります。
 
 ## デバイス管理
 ### Android 7.0 のサポート
@@ -159,7 +159,7 @@ Intune は、構成可能なデバイスの最大登録数をユーザーごと�
 <!---TFS 1289896 --->
 
 #### Intune クライアント ソフトウェアを実行する Windows PC のための TeamViewer の統合
-Intune クライアントを実行する Windows PC の [TeamViewer](https://www.teamviewer.com) 統合により、Windows PC とのリモート アシスタント セッションを確立して、エンド ユーザーのヘルプ デスク部門をサポートできるようになります。 Windows 7、8、8.1、10 が対象となります。 詳細については、「[Microsoft Intune コンピューター クライアントを使用した一般的な Windows PC 管理タスク](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)」を参照してください。
+Intune クライアントを実行する Windows PC の [TeamViewer](https://www.teamviewer.com) 統合により、Windows PC とのリモート アシスタント セッションを確立して、エンド ユーザーのヘルプ デスク部門をサポートできるようになります。 Windows 7、8、8.1、10 が対象となります。 詳細については、「[Microsoft Intune コンピューター クライアントを使用した一般的な Windows PC 管理タスク](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client)」を参照してください。
 <!---TFS 1284856--->
 
 ### ポータル サイトの更新
@@ -185,7 +185,7 @@ Android 用 Intune ポータル サイト アプリを使用してデバイス�
 <!---TFS 1233681--->
 
 ### Windows 機能の名前の変更
-- [Microsoft Passport for Windows](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) は **Windows Hello for Business** と呼ばれるようになりました。
+- [Microsoft Passport for Windows](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune) は **Windows Hello for Business** と呼ばれるようになりました。
 - [エンタープライズ データ保護](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune)は **Windows Information Protection** と呼ばれるようになりました。
 
 ## 2016 年 6 月
@@ -209,10 +209,10 @@ Intune のサービス正常性に関する情報は他の Microsoft サービ�
     * 展開されているすべての Intune コンプライアンス ポリシーに準拠していること
 
  準拠していないデバイスのエンド ユーザーは、アクセスを取得するために、デバイスを登録することと、コンプライアンス関連の問題を修正することを求められます。
-- **ブラウザーの条件付きアクセス。** [Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md) と [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md) 用の条件付きアクセス ポリシーを設定すると、管理下にあって、かつ条件を満たした iOS デバイスと Android デバイス上のサポートされる Web ブラウザーに、Exchange Online と SharePoint Online へのアクセスを限定することができます。 Outlook Web Access (OWA) や SharePoint サイトにエンド ユーザーが iOS または Android デバイスでサインインしようとすると、そのデバイスを Intune に登録するよう求めるメッセージが表示されます。また条件を満たしていないことが問題になっている場合は、その問題を解消してから、サインインを試行するように求められます。
+- **ブラウザーの条件付きアクセス。** [Exchange Online](/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune) と [SharePoint Online](/intune/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune) 用の条件付きアクセス ポリシーを設定すると、管理下にあって、かつ条件を満たした iOS デバイスと Android デバイス上のサポートされる Web ブラウザーに、Exchange Online と SharePoint Online へのアクセスを限定することができます。 Outlook Web Access (OWA) や SharePoint サイトにエンド ユーザーが iOS または Android デバイスでサインインしようとすると、そのデバイスを Intune に登録するよう求めるメッセージが表示されます。また条件を満たしていないことが問題になっている場合は、その問題を解消してから、サインインを試行するように求められます。
 <!---TFS 1175844--->
 
-- **Dynamics CRM Online では、条件付きアクセスをサポートしています。** [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md) 用の条件付きアクセス ポリシーを設定すると、管理下にあって、かつ条件を満たした iOS デバイスと Android デバイスに、Dynamics CRM Online へのアクセスを限定することができます。 Dynamics CRM モバイル アプリにエンド ユーザーが iOS または Android でサインインしようとすると、Intune に登録するよう求めるメッセージが表示されます。また条件を満たしていないことが問題になっている場合は、その問題を修正してから、サインインを試行するように求められます。
+- **Dynamics CRM Online では、条件付きアクセスをサポートしています。** [Dynamics CRM Online](/intune/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune) 用の条件付きアクセス ポリシーを設定すると、管理下にあって、かつ条件を満たした iOS デバイスと Android デバイスに、Dynamics CRM Online へのアクセスを限定することができます。 Dynamics CRM モバイル アプリにエンド ユーザーが iOS または Android でサインインしようとすると、Intune に登録するよう求めるメッセージが表示されます。また条件を満たしていないことが問題になっている場合は、その問題を修正してから、サインインを試行するように求められます。
 <!---TFS1295358--->
 
 ##E 会社のポータルの更新
@@ -249,9 +249,9 @@ Intune のサービス正常性に関する情報は他の Microsoft サービ�
 
 
 ### アプリ管理
-- **MAM SDK: PIN の長さの構成に対応。** デバイス PIN と同様、MAM アプリに使用する PIN の長さを指定できるようになります。 この場合エンド ユーザーは、管理者が設定した新しい制限に従う必要があります。 入力文字数が増える分、PIN 画面の外観が若干調整されます。 詳細については、「[MAM policy settings for Android](android-mam-policy-settings.md)」 (Android 用 MAM ポリシー設定) および「[MAM policy settings for iOS](ios-mam-policy-settings.md)」 (iOS 用 MAM ポリシー設定) を参照してください。
+- **MAM SDK: PIN の長さの構成に対応。** デバイス PIN と同様、MAM アプリに使用する PIN の長さを指定できるようになります。 この場合エンド ユーザーは、管理者が設定した新しい制限に従う必要があります。 入力文字数が増える分、PIN 画面の外観が若干調整されます。 詳細については、「[MAM policy settings for Android](/intune/deploy-use/android-mam-policy-settings)」 (Android 用 MAM ポリシー設定) および「[MAM policy settings for iOS](/intune/deploy-use/ios-mam-policy-settings)」 (iOS 用 MAM ポリシー設定) を参照してください。
 
-- **iOS および Android 用 Skype for Business。** Skype for Business を [MAM の対象にできるようになりました (登録ポリシー不要)](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)。 ユーザーがログインすると、MAM ポリシーが適用されます。
+- **iOS および Android 用 Skype for Business。** Skype for Business を [MAM の対象にできるようになりました (登録ポリシー不要)](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)。 ユーザーがログインすると、MAM ポリシーが適用されます。
 
 - **MAM ポリシーで管理できるようになった新しいアプリ。** Android 用の Microsoft Word、Excel、および PowerPoint の各アプリを、Intune に登録されていないデバイス上の MAM ポリシーに関連付けられるようになりました。 サポートされているアプリの完全なリストについては、[Microsoft Intune アプリケーション パートナー](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) ページの Microsoft Intune モバイル アプリケーション ギャラリーを参照してください。
 
@@ -305,7 +305,7 @@ Intune の通知規則では、Intune からの電子メール アラートの�
 これらの機能はすべて、Configuration Manager と Intune のハイブリッド環境でもサポートされます。
 ### アプリ管理
 - **MAM ユーザー コンプライアンス。**
-Azure Active Directory (AAD) テナント内の任意のユーザーについて、アプリケーション管理ポリシーの[状態](monitor-mobile-app-management-policies-with-Microsoft-Intune.md)を表示できるようになりました。 以下は、必要な操作の例です。
+Azure Active Directory (AAD) テナント内の任意のユーザーについて、アプリケーション管理ポリシーの[状態](/intune/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune)を表示できるようになりました。 以下は、必要な操作の例です。
    - [デバイス]
    - デバイス上のアプリ
 
@@ -317,7 +317,7 @@ Azure Active Directory (AAD) テナント内の任意のユーザーについて
 
 
 - **Outlook 連絡先の同期 (Android) ができないよう MAM によって制御。**
-[モバイル アプリケーションの管理](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)に、デバイスを登録せずに行える新しい設定が追加されました。 この設定を使用して、Android デバイス上のネイティブのアドレス帳と連絡先との同期をアプリケーションに禁止することができます。 この設定を有効にすると、対象アプリケーションはネイティブのアドレス帳に連絡先を保存できなくなります。 この設定を無効にすると、対象アプリケーションはネイティブのアドレス帳に連絡先を保存できるようになります。 [デバイスまたはアプリをリモートからワイプ](wipe-managed-company-app-data-with-Microsoft-Intune.md)すると、ネイティブのアドレス帳に保存されているすべての連絡先が削除されます。 この新しい設定は最初に、Android デバイスの Outlook アプリケーションでサポートされます。
+[モバイル アプリケーションの管理](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)に、デバイスを登録せずに行える新しい設定が追加されました。 この設定を使用して、Android デバイス上のネイティブのアドレス帳と連絡先との同期をアプリケーションに禁止することができます。 この設定を有効にすると、対象アプリケーションはネイティブのアドレス帳に連絡先を保存できなくなります。 この設定を無効にすると、対象アプリケーションはネイティブのアドレス帳に連絡先を保存できるようになります。 [デバイスまたはアプリをリモートからワイプ](/intune/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune)すると、ネイティブのアドレス帳に保存されているすべての連絡先が削除されます。 この新しい設定は最初に、Android デバイスの Outlook アプリケーションでサポートされます。
 
 ### デバイス管理
 - **会社が所有するデバイスの電話番号の識別。** 会社の所有として分類される電話は今後、完全な電話番号で識別されます (モバイル デバイスのインベントリ レポートを実行するときなど)。 BYOD デバイスの電話番号は引き続き **** でマスクされ、表示されるのは最後の 4 桁のみとなります。
@@ -377,7 +377,7 @@ Azure Active Directory (AAD) テナント内の任意のユーザーについて
 
 ### アプリ管理
 
-- **サード パーティ製 MDM ソリューションに登録されているデバイスについては、iOS の [開く] 管理を利用できる** iOS の [開く] 管理を利用するために、サードパーティ製モバイル デバイス管理 (MDM) のベンダーを使用できます。 構成プロファイルの設定で制限を設定し、「[Manage data transfer between iOS apps](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)」 (iOS アプリ間のデータ転送を管理する) を使用して、アプリを展開できます。
+- **サード パーティ製 MDM ソリューションに登録されているデバイスについては、iOS の [開く] 管理を利用できる** iOS の [開く] 管理を利用するために、サードパーティ製モバイル デバイス管理 (MDM) のベンダーを使用できます。 構成プロファイルの設定で制限を設定し、「[Manage data transfer between iOS apps](/intune/deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune)」 (iOS アプリ間のデータ転送を管理する) を使用して、アプリを展開できます。
 
      この方法には、次の 2 つの主な利点があります。
 
@@ -388,22 +388,22 @@ Azure Active Directory (AAD) テナント内の任意のユーザーについて
 - **Intune に登録されていないデバイスの Microsoft Outlook アプリを MAM ポリシーで管理できる** Intune モバイル アプリケーション管理ポリシーを使用して、Intune で登録されていないデバイス上の Microsoft Outlook アプリを管理できるようになりました。 MAM 機能を備えた最新の Microsoft Outlook アプリは、[iOS](https://itunes.apple.com/us/app/microsoft-outlook-email-calendar/id951937596?mt=8) デバイスと [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook) デバイスの両方で使用可能です。 MAM ポリシーを作成するには、「[モバイル アプリ管理ポリシーの作成および展開](https://technet.microsoft.com/library/mt627829.aspx)」の指示に従ってください。  
 
 
-- **モバイル アプリの構成ポリシーによって iOS アプリのユーザーの詳細をより柔軟に指定できる** iOS アプリを開いたときに必要になる可能性のあるユーザー設定を指定できます。 たとえば、ネットワーク ポートやユーザー名を指定できます。 詳細については、「[Microsoft Intune のモバイル アプリ構成ポリシーを使用した iOS アプリの構成](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)」を参照してください。
+- **モバイル アプリの構成ポリシーによって iOS アプリのユーザーの詳細をより柔軟に指定できる** iOS アプリを開いたときに必要になる可能性のあるユーザー設定を指定できます。 たとえば、ネットワーク ポートやユーザー名を指定できます。 詳細については、「[Microsoft Intune のモバイル アプリ構成ポリシーを使用した iOS アプリの構成](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)」を参照してください。
 
 
 - **企業内の Intune で管理された iOS デバイスに Adobe Reader for Microsoft Intune を展開できる** Intune モバイル アプリケーション管理ポリシーを使用して、登録済みのデバイスで iOS 用の Adobe Reader アプリを管理できるようになりました。
 
-- **展開された Web クリップが Managed Browser で開かれるようになった** 対象となる Web クリップを iOS および Android デバイスに展開し、Managed Browser のみを使用して開くことができます。 たとえば、社内ポータル サイトを通して社内リソースへのリンクを展開したときに、ユーザーがリンクにナビゲートすると、MAM ポリシーによって保護されている Managed Browser でリンクが直接開きます。 詳細については、「[アプリの展開](deploy-apps.md)」を参照してください。
+- **展開された Web クリップが Managed Browser で開かれるようになった** 対象となる Web クリップを iOS および Android デバイスに展開し、Managed Browser のみを使用して開くことができます。 たとえば、社内ポータル サイトを通して社内リソースへのリンクを展開したときに、ユーザーがリンクにナビゲートすると、MAM ポリシーによって保護されている Managed Browser でリンクが直接開きます。 詳細については、「[アプリの展開](/intune/deploy-use/deploy-apps)」を参照してください。
 
 
-- **Intune 管理者コンソールから Windows 10 デバイスのビジネス向け Windows ストア アプリを検索、管理、配布できる** Intune では、ビジネス向け Windows ストアのサポートを使用して、アプリを検索および管理し、管理対象 Windows 10 デバイスに配布できます。 ビジネス向け Windows ストアでは、Intune 管理者コンソール (他のアプリを管理するときに使用する同じコンソール) から、これらのアプリを展開および監視するプロセスを管理できます。 具体的には、ビジネス向け Windows ストアは「オンライン ライセンスされたアプリ」のコンテンツとライセンスを管理します。 詳細については、「[ビジネス向け Windows ストアから購入したアプリを管理する](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)」を参照してください。
+- **Intune 管理者コンソールから Windows 10 デバイスのビジネス向け Windows ストア アプリを検索、管理、配布できる** Intune では、ビジネス向け Windows ストアのサポートを使用して、アプリを検索および管理し、管理対象 Windows 10 デバイスに配布できます。 ビジネス向け Windows ストアでは、Intune 管理者コンソール (他のアプリを管理するときに使用する同じコンソール) から、これらのアプリを展開および監視するプロセスを管理できます。 具体的には、ビジネス向け Windows ストアは「オンライン ライセンスされたアプリ」のコンテンツとライセンスを管理します。 詳細については、「[ビジネス向け Windows ストアから購入したアプリを管理する](/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)」を参照してください。
 
 
 ### デバイス管理
-- **iOS デバイス用の PFX 証明書を配布できる** Intune 管理者は、iOS デバイスの Wi-Fi、メール、VPN 認証用の iOS PFX 証明書を作成して展開できます。 この機能は、Android および Windows 10 デバイスで既に利用可能です。 詳細については、「[証明書ポリシーを使用して会社のリソースへのアクセスを有効にする](secure-resource-access-with-certificate-profiles.md)」を参照してください。
+- **iOS デバイス用の PFX 証明書を配布できる** Intune 管理者は、iOS デバイスの Wi-Fi、メール、VPN 認証用の iOS PFX 証明書を作成して展開できます。 この機能は、Android および Windows 10 デバイスで既に利用可能です。 詳細については、「[証明書ポリシーを使用して会社のリソースへのアクセスを有効にする](/intune/deploy-use/secure-resource-access-with-certificate-profiles)」を参照してください。
 
 
-- **ユーザーのカテゴリ選択に基づいて別のデバイス グループにアプリとポリシーを適用できる** Intune 管理者は、登録時にユーザーが選ぶカスタム デバイス カテゴリを定義できるようになりました。 たとえば、管理者は、登録するデバイスの用途が「レジ」、「配送トラック」、「インベントリ室」かどうかをユーザーに指定させることができます。 カテゴリを選ぶことで、デバイスは Intune デバイス グループのメンバーになり、このグループを使用して登録済みのデバイスに異なるアプリとポリシーを展開できます。 詳細については、「[デバイス グループのマッピングを使用してデバイスを分類する](categorize-devices-with-device-group-mapping-in-microsoft-intune.md)」を参照してください。
+- **ユーザーのカテゴリ選択に基づいて別のデバイス グループにアプリとポリシーを適用できる** Intune 管理者は、登録時にユーザーが選ぶカスタム デバイス カテゴリを定義できるようになりました。 たとえば、管理者は、登録するデバイスの用途が「レジ」、「配送トラック」、「インベントリ室」かどうかをユーザーに指定させることができます。 カテゴリを選ぶことで、デバイスは Intune デバイス グループのメンバーになり、このグループを使用して登録済みのデバイスに異なるアプリとポリシーを展開できます。 詳細については、「[デバイス グループのマッピングを使用してデバイスを分類する](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune)」を参照してください。
 
 ### Microsoft ポータル サイトの変更と更新
 このリリースでは、ポータル サイトに次の変更が加えられました。
@@ -447,9 +447,9 @@ Azure Active Directory (AAD) テナント内の任意のユーザーについて
     * セキュア ブート
     * コードの整合性
 
-    デバイス正常性の設定、収集されるデータ ポイント、正常性構成証明書レポートの詳細については、「[Introduction to device compliance policies for Microsoft Intune (Microsoft Intune のデバイス コンプライアンス ポリシーの概要)](introduction-to-device-compliance-policies-in-microsoft-intune.md)」を参照してください。 このサービスの詳細については、「[HAS サービスの詳細情報](https://msdn.microsoft.com/en-us/library/dn934876.aspx)」を参照してください。
+    デバイス正常性の設定、収集されるデータ ポイント、正常性構成証明書レポートの詳細については、「[Introduction to device compliance policies for Microsoft Intune (Microsoft Intune のデバイス コンプライアンス ポリシーの概要)](/intune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune)」を参照してください。 このサービスの詳細については、「[HAS サービスの詳細情報](https://msdn.microsoft.com/en-us/library/dn934876.aspx)」を参照してください。
 
-* **Windows 10 Passport for Work ポリシーと証明書の管理** Intune では、[Microsoft Passport for Work を統合](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)できます。これは Active Directory または Azure Active Directory アカウントを使った Windows 10 への代替サインイン方法であり、パスワード、スマート カード、または仮想スマート カードの代わりに使用されます。 Passport を使用すると、パスワードの代わりにユーザー ジェスチャを使用してログインできます。 ユーザー ジェスチャには、単純な暗証番号 (PIN)、Windows Hello などの生体認証、または指紋リーダーなどの外部のデバイスがあります。
+* **Windows 10 Passport for Work ポリシーと証明書の管理** Intune では、[Microsoft Passport for Work を統合](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)できます。これは Active Directory または Azure Active Directory アカウントを使った Windows 10 への代替サインイン方法であり、パスワード、スマート カード、または仮想スマート カードの代わりに使用されます。 Passport を使用すると、パスワードの代わりにユーザー ジェスチャを使用してログインできます。 ユーザー ジェスチャには、単純な暗証番号 (PIN)、Windows Hello などの生体認証、または指紋リーダーなどの外部のデバイスがあります。
 
 * **特定のアプリ用の VPN** VPN 経由で会社のネットワークに自動的に接続するアプリを選ぶことができます。 VPN プロファイルを設定するときに、「Microsoft Intune での VPN プロファイルを使用したユーザー作業への接続」の説明に従って、アプリの一覧を作成します。
 
@@ -457,10 +457,10 @@ Azure Active Directory (AAD) テナント内の任意のユーザーについて
 
 
 ### Apple Volume Purchase Program (VPP) の更新
-Intune を使用して、[Apple のビジネス向け Volume Purchase Program (VPP) で購入したアプリを管理](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)できるようになりました。 これには、Apple と Intune 間のライセンス情報の同期や、各アプリの展開したコピー数の追跡が含まれています。
+Intune を使用して、[Apple のビジネス向け Volume Purchase Program (VPP) で購入したアプリを管理](/intune/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)できるようになりました。 これには、Apple と Intune 間のライセンス情報の同期や、各アプリの展開したコピー数の追跡が含まれています。
 
 ### IMEI 番号を使用して企業所有のデバイスを識別できる
-IMEI (International Mobile Equipment Identity: 国際移動体装置識別) 番号を持つモバイル デバイス プラットフォームの場合に [IMEI 番号をインポート](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)して、企業所有のモバイル デバイスを識別できるようになりました。 インポートされた IMEI 番号を持つデバイスを Intune に登録すると、デバイスに企業のタグが付けられます。これを使用して、個人所有のデバイスとは異なるポリシーを適用できます。
+IMEI (International Mobile Equipment Identity: 国際移動体装置識別) 番号を持つモバイル デバイス プラットフォームの場合に [IMEI 番号をインポート](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)して、企業所有のモバイル デバイスを識別できるようになりました。 インポートされた IMEI 番号を持つデバイスを Intune に登録すると、デバイスに企業のタグが付けられます。これを使用して、個人所有のデバイスとは異なるポリシーを適用できます。
 
 ### Intune MAM ポリシーと互換性があるアプリが追加された
 Intune モバイル アプリケーション管理 (MAM) ポリシーと互換性がある Microsoft パートナーのアプリが追加されました (Intune によって管理されるデバイス用)。
@@ -479,6 +479,6 @@ Intune モバイル アプリケーション管理 (MAM) ポリシーと互換�
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 

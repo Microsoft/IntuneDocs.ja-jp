@@ -4,7 +4,7 @@ description: "Intune は、アプリ ストアからライセンス情報をイ�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 164f9656246a46bf39e263fc3c5f16828674e1fd
-ms.openlocfilehash: a5c37c470f937c682d9138a636d1211f641da784
+ms.sourcegitcommit: 611cfb0176a922234c29642c305dd03699922c5f
+ms.openlocfilehash: 5981a2e147c89776d304226250170ec4114e35d8
 
 
 ---
@@ -26,6 +26,7 @@ Microsoft Intune では、このプログラムを通じて購入したアプリ
 
 > [!Important]
 > 現在、Intune は、デバイスではなくユーザーに iOS Volume Purchase Program for Business (VPP) アプリ ライセンスを割り当てます。 そのため、ユーザーは、アプリをインストールするために Apple ID パスワードを入力する必要があります。
+> Apple の教育向け Volume Purchase Program はこのリリースではサポートされていません。
 
 ## iOS デバイス用のボリューム購入アプリの管理
 iOS アプリの複数のライセンスを購入するには、[Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) を利用します。 このためには、Apple Web サイトから Apple VPP アカウントをセットアップし、Apple VPP トークンの Intune へのアップロードを行います。  その後、ボリューム購入情報を Intune と同期し、ボリューム購入アプリの使用を追跡することができます。
@@ -89,6 +90,6 @@ iOS アプリの複数のライセンスを購入するには、[Apple Volume Pu
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e332bbf9aa8f6543950eba7e1fd734b3fb4b1edb
-ms.openlocfilehash: ca81a72fe98d454591765296445215a2b574243b
+ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
+ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
 
 
 ---
@@ -44,7 +44,7 @@ ms.openlocfilehash: ca81a72fe98d454591765296445215a2b574243b
   - ポータル サイトからこれらのデバイスをリセットすることはできません。
   - ポータル サイト アプリまたは Web サイトには、ローカルのデバイスのみが表示されます。
   - アプリ管理に関するユーザーごとの Apple ID の要件により、Apple Volume Purchase Program (VPP) アプリを使用できません。
-  - また、Apple Configurator や Apple Device Enrollment Program (iOS デバイス) にも登録できません。
+  - (iOS) デバイスは Apple Configurator または Apple Device Enrollment Program (DEP) でも登録できませんが、DEP または Apple Configurator で管理されるデバイスはユーザー アフィニティなしで登録することができます。
 
 > [!NOTE]
 > デバイス登録マネージャーで管理されているデバイスに会社のアプリを展開するには、ポータル サイト アプリを**必須のインストール**としてデバイス登録マネージャーのユーザー アカウントに展開します。
@@ -65,7 +65,7 @@ ms.openlocfilehash: ca81a72fe98d454591765296445215a2b574243b
 
 5.  ナビゲーション ウィンドウで、**[管理]**、**[管理者の管理]** の順に選択し、**[デバイス登録マネージャー]** を選択します。 **[デバイス登録マネージャー]** ページが表示されます。
 
-6.  **[追加...]** を選択します。 **[デバイス登録マネージャーの追加]** ダイアログ ボックスが表示されます。
+6.  **[追加]** を選択します。 **[デバイス登録マネージャーの追加]** ダイアログ ボックスが表示されます。
 
 7.  Intune アカウントを **[ユーザー ID]** に入力し、**[OK]** を選択します。 デバイス登録マネージャーのユーザーを Intune 管理者にすることはできません。
 
@@ -95,6 +95,6 @@ ms.openlocfilehash: ca81a72fe98d454591765296445215a2b574243b
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

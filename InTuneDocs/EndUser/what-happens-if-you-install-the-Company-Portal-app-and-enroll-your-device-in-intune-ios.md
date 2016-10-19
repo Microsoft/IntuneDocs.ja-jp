@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 7/7/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: b5ecb5b4c7629b04c679995b5788ee307bac79f0
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 
 ---
@@ -75,7 +75,7 @@ ms.openlocfilehash: b5ecb5b4c7629b04c679995b5788ee307bac79f0
 
 -   条項に同意する必要があります。
 
--   デバイスのカメラを有効または無効にする。
+-   会社の機密データの写真が撮影されないように、デバイスのカメラを有効または無効にする。
 
 -   デバイスの Web 閲覧を有効または無効にする。
 
@@ -91,12 +91,10 @@ ms.openlocfilehash: b5ecb5b4c7629b04c679995b5788ee307bac79f0
 
 -   デバイスがローミング モード中の自動ファイル同期を有効または無効にする。 自動ファイル同期が許可されている場合、ローミング料金がかかる可能性があります。
 
-デバイスを登録する方法の手順については、「[Intune に iOS デバイスを登録する](enroll-your-device-in-intune-ios.md)」または「[Intune に Mac OS X デバイスを登録する](enroll-your-device-in-intune-mac-os-x.md)」を参照してください。
-
 ご質問がございましたら、IT 管理者に問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO4-->
 
 

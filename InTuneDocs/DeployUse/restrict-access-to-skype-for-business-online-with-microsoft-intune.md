@@ -3,7 +3,7 @@ title: "Skype for Business Online へのアクセスを制限する | Microsoft 
 description: "条件付きアクセスで Skype for Business Online へのアクセスを保護および制御します。"
 keywords: 
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
-ms.openlocfilehash: 6e32de28117f31ccd73418b4f0167e9e5971944a
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: 0abe3a79135a9b6db14502f1132da0bd1537d445
 
 
 ---
@@ -32,7 +32,8 @@ ms.openlocfilehash: 6e32de28117f31ccd73418b4f0167e9e5971944a
 
 Skype for Business Online の条件付きアクセス ポリシーを構成する**前に**、次のことを行う必要があります。
 - **Skype for Business Online サブスクリプション**を取得し、Skype for Business Online のライセンスをユーザーに割り当てます。
-- **Enterprise Mobility Suite** または **Azure Active Directory Premium** のサブスクリプションを取得します。
+- **Enterprise Mobility + Security または Azure Active Directory Premium サブスクリプション**を用意してください。ユーザーに EMS または Azure AD のライセンスが付与される必要があります。 詳細については、「[Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility の価格) ページまたは「[Azure Active Directory の価格](https://azure.microsoft.com/en-us/pricing/details/active-directory/)」ページを参照してください。 
+
 -   Skype for Business Online で[先進認証を有効](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune)にします。
 -  すべてのエンド ユーザーが **Skype for Business Online** を使用している必要があります。 展開に Skype for Business Online とオンプレミスの Skype for Business の両方が含まれる場合は、エンド ユーザーに条件付きアクセス ポリシーが適用されません。
 
@@ -116,6 +117,6 @@ Skype for Business ポリシーに対して使用する 2 つのグループの�
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO1-->
 
 

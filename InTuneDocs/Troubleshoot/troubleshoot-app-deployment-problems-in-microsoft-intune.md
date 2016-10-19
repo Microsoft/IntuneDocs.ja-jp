@@ -4,7 +4,7 @@ description: "このトピックは、Microsoft Intune でのアプリの展開�
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a5256d4decfcd14de2d50a32a0906b6894639010
-ms.openlocfilehash: 552514971a64b16f88a7d83a0f7d66a0c00b61b0
+ms.sourcegitcommit: 30d42bc4ee38a45895320eebd665fe8f5a0cb4ee
+ms.openlocfilehash: 0db3e6a39bd0d30231c339cb4501ce25059e4657
 
 
 ---
@@ -32,11 +32,23 @@ Intune でのアプリの展開と管理に関して問題がある場合は、�
 |0x80073CFB|指定したパッケージは既にインストールされており、パッケージの再インストールがブロックされます|既にインストールされているパッケージと同じではないパッケージをインストールしようとすると、このエラーが発生することがあります。 デジタル署名がパッケージにも含まれることを確認します。 パッケージを再ビルドまたは再署名すると、パッケージは以前にインストールしたパッケージとビット単位で同じではなくなります。 このエラーを修正するには、次のように 2 つの選択肢が考えられます。<br /><br />-   アプリのバージョン番号を増やして、パッケージの再ビルドと再署名を行います。<br />-   システムのすべてのユーザーの古いパッケージを削除してから、新しいパッケージをインストールします。|
 |0x87D1041C|アプリケーションがインストールされましたが、検出されません。|- アプリは Intune によって正しくデプロイされ、(おそらくエンドユーザーにより) その後、アンインストールされました。 ユーザーは、ポータル サイトからアプリを再インストールするように指示されます。 デバイスが次回チェックインするときに、必要なアプリが自動的に再インストールされます。|
 
+## Windows ストア アプリのトラブルシューティング アプリ
+
+トピック「[Troubleshooting packaging, deployment, and query of Windows Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx)」 (Windows ストア アプリのパッケージ化、展開、およびクエリのトラブルシューティング) に記載された情報は、Windows ストアからアプリをインストールする際に発生する可能性がある一般的な問題のトラブルシューティングで役に立ちます (Intune を使用する場合、または他の手段を使用する場合に関係なく)。
+
+## Intune ソフトウェア クライアントによって管理されている PC へのアプリ展開で発生した問題のトラブルシューティング
+Intune ソフトウェア クライアントによって管理されている PC にアプリを展開する際に問題が発生した場合、次の 2 つのログ ファイルがトラブルシューティングに役立ちます。
+- %ProgramFiles%\Microsoft\OnlineManagement\Logs folder
+- %ProgramFiles%\Microsoft\OnlineManagement\Updates\ReportingEvents.log
+
+さらに、Intune のサポート事例を開く必要がある場合は、これらのログを Microsoft に送信することも効果的です。
+
+
 ### 次のステップ
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

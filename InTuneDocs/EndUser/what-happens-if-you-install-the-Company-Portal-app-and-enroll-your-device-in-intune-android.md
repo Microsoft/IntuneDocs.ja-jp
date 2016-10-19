@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 05/31/2016
+ms.date: 09/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: df5cf2d5a78ccf58ba5920ad1856675538794874
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
 
 
 ---
@@ -39,13 +39,13 @@ Android デバイスを登録すると、そのデバイスにアクセスする
 
 -   すべての会社関連データを削除する。 個人データや設定は削除されません。
 
--   デバイスにパスワードまたは PIN の設定することを必須にする。パスワードの入力を何度も間違えた場合に、デバイスをロックしたり、工場出荷時の既定設定にリセットしたりすることができます。
+-   会社のデータを保護するため、デバイスのパスワードや PIN の入力を求めるなどの要件をデバイスに設定してください。 IT 管理者は、パスワードの試行回数の制限、または試行回数を超えた場合のデバイスのロックなども設定できます。
 
 -   条項に同意する必要があります。
 
--   デバイスのカメラを有効または無効にする。
+-   共有すべきでない重要な作業資料の写真が撮影されないように、カメラを無効化する (Samsung Knox デバイスのみ。Nexus デバイスでは適用されない)。
 
--   会社データと個人データを含め、デバイスのすべてのデータを強制的に暗号化する。 この操作で、デバイスの紛失時または盗難時にデータを保護できます。
+-   デバイスの紛失または盗難時にデータが保護されるように、デバイス上のすべてのデータの暗号化を要求する。
 
 -   デバイスがポータル サイトに追加された後は、約 8 時間ごとに、次の処理が行われます。
 
@@ -58,11 +58,8 @@ Android デバイスを登録すると、そのデバイスにアクセスする
 サポートが必要な場合は、 IT 管理者に問い合わせるか (連絡先情報については[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください)、または Microsoft Android チーム (wintunedroidfbk@microsoft.com) にご連絡ください。
 
 
-### 関連項目
-[Android デバイスを Intune で使用する](using-your-android-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

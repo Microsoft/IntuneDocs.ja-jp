@@ -4,17 +4,17 @@ description: "このトピックの情報を使用して、アプリ自体のコ
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/06/2016
+ms.date: 09/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
-ms.reviewer: matgates
+ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 061bde9155c30bf8d7063d40478bbdf35fc7b53a
+ms.sourcegitcommit: 45c6622624230e3486d2498b1b023f2efcdc2970
+ms.openlocfilehash: ea1a6ef60b6a9cdd64559f67276280a4f491e30e
 
 
 ---
@@ -24,9 +24,14 @@ ms.openlocfilehash: 061bde9155c30bf8d7063d40478bbdf35fc7b53a
 
 このツールは、PowerShell で実行される Windows のコマンドライン アプリケーションであり、アプリの "ラッパー" を作成します。 アプリが処理されたら、ユーザーが構成する[モバイル アプリケーション管理ポリシー](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)を利用してアプリの機能を変更できます。
 
-アプリで Azure Active Directory Authentication Library (ADAL) を使用している場合は、アプリをラップする前に「[Azure Active Directory Library を使用するアプリをラップする方法](#how-to-wrap-apps-that-use-the-azure-active-directory-library)」の手順を完了する必要があります。 自分のアプリでこのライブラリが使用されているかどうかがわからない場合、アプリの開発者にお問い合わせください。
 
 このツールを実行する前に、「[アプリ ラッピング ツールを実行するうえでのセキュリティ上の考慮事項](#security-considerations-for-running-the-app-wrapping-tool)」を確認してください。 このツールをダウンロードするには、「[Android 用 Microsoft Intune アプリ ラッピング ツール](https://www.microsoft.com/download/details.aspx?id=47267)」を参照してください。
+
+>[!IMPORTANT]
+>Intune に登録されていないデバイスをサポートするこのアプリ ラッピング ツールのバージョンは、パブリック プレビューで提供されています。 パブリック プレビューへの参加を希望する場合、Android 向けについては[この GitHub サイト](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview)からツールをダウンロードします。
+
+シナリオについては、「[Microsoft Intune に登録されていないデバイスの基幹業務アプリとデータを保護する](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)」トピックに説明されています。
+
 
 ## 手順 1: アプリ ラッピング ツールを使用するための前提条件を満たす
 
@@ -65,7 +70,7 @@ ms.openlocfilehash: 061bde9155c30bf8d7063d40478bbdf35fc7b53a
     Import-Module .\IntuneAppWrappingTool.psm1
     ```
 
-3.  **invoke-AppWrappingTool** コマンドを次のパラメーターと共に使用してツールを実行します。 "省略可能" と示されているパラメーターは、Azure Active Directory Library (ADAL) を使用するアプリ用のパラメーターです。 詳細については、「[Azure Active Directory Library を使用するアプリをラップする方法](#how-to-wrap-apps-that-use-the-azure-active-directory-library)」を参照してください。
+3.  **invoke-AppWrappingTool** コマンドを次のパラメーターと共に使用してツールを実行します。
 
 |パラメーター|詳細情報|例|
 |-------------|--------------------|---------|
@@ -76,10 +81,6 @@ ms.openlocfilehash: 061bde9155c30bf8d7063d40478bbdf35fc7b53a
 |**-KeyAlias**&lt;String&gt;|署名に使用するキーの名前。| |
 |**-KeyPassword**&lt;SecureString&gt;|署名に使用する秘密キーの暗号化を解除するために使用するパスワード。| |
 |**-SigAlg**&lt;SecureString&gt;|署名に使用する署名アルゴリズムの名前。 アルゴリズムは秘密キーと互換性を持つ必要があります。|例: SHA256withRSA、SHA1withRSA、MD5withRSA|
-|**-ClientID**&lt;GUID&gt;|入力アプリの Azure Active Directory クライアント ID (省略可能)。| |
-|**-AuthorityURI**&lt;Uri&gt;|入力アプリの Azure Active Directory 証明機関 URI (省略可能)。| |
-|**-SkipBroker**&lt;Boolean&gt;|入力アプリケーションがデバイス全体にわたる仲介型シングル サインオンをサポートするかどうかを示します (省略可能)。 |**True** - 入力アプリケーションはデバイス全体にわたる仲介型シングル サインオンをサポートしません。 NonBrokerRedirectURI パラメーターを使用します。 **False** - 入力アプリケーションはデバイス全体にわたる仲介型シングル サインオンをサポートします。|
-|**-NonBrokerRedirectURI**&lt;URI&gt;|SkipBroker が true の場合に使用する Azure Active Directory リダイレクト URI (省略可能)。|  |
 
 
 **&lt;CommonParameters&gt;**
@@ -92,7 +93,6 @@ ms.openlocfilehash: 061bde9155c30bf8d7063d40478bbdf35fc7b53a
     ```
     Help Invoke-AppWrappingTool
     ```
-- Azure Active Directory (AAD) の統合の詳細については、「[Azure Active Directory Library を使用するアプリをラップする方法](#how-to-wrap-apps-that-use-the-azure-active-directory-library)」を参照してください。
 
 **例:**
 
@@ -113,59 +113,10 @@ ms.openlocfilehash: 061bde9155c30bf8d7063d40478bbdf35fc7b53a
 
 -   出力アプリケーションとツールが汎用名前付け規則 (UNC) パスにあり、ツールと入力ファイルを同じコンピューター上で実行していない場合、 [インターネット プロトコル セキュリティ (IPsec)](http://en.wikipedia.org/wiki/IPsec) または [サーバー メッセージ ブロック (SMB) 署名](https://support.microsoft.com/en-us/kb/887429)を使用して環境をセキュリティで保護します。
 
--   Azure Active Directory (AAD) を使用していて、実行時にアプリケーションから AAD トークンにアクセスできる可能性がある場合は特に、そのアプリケーションが信頼されたソースから入手されていることを確認します。
+-   実行時にアプリケーションから AAD トークンにアクセスできる可能性がある場合は、そのアプリケーションが信頼されたソースから入手されていることを確認します。
 
 -   ラップされたアプリが格納されている出力ディレクトリをセキュリティで保護します。 出力にユーザー レベルのディレクトリを使用することを検討します。
 
-## Azure Active Directory Library を使用するアプリをラップする方法
-アプリで Azure Active Directory Authentication Library (ADAL) を使用している場合は、アプリをラップする前にこれらの手順を完了する必要があります。
-
-### 手順 1: ADAL の要件を満たしていることを確認する
-ADAL を使用するアプリの場合、次を満たす必要があります。
-
--   アプリは 1.0.2 以上のバージョンの ADAL を組み込む必要があります。
-
--   開発者は、「[手順 3: AAD でモバイル アプリ管理へのアクセスを構成する](#step-3-configure-access-to-mobile-app-management-in-aad)」の説明に従って、Intune モバイル アプリケーション管理リソースに対するアクセス権をアプリに付与する必要があります。
-
-### 手順 2: アプリを登録するときに取得する必要のある識別子を確認する
-次の手順では、Azure 管理ポータルを使用して、次の表に示されている一意の識別子を取得するために、(Azure Active Directory (AAD) と共に ADAL を使用している) アプリを登録します。 ADAL をアプリと統合するときに、これらの識別子を開発者に渡します。
-
-|識別子|説明|既定値|
-|--------------|--------------------|-----------------|
-|**クライアント ID**|AAD での登録後にアプリに対して生成される一意の GUID 識別子。<br /><br />アプリのクライアント ID がわかっている場合は、その値を指定します。 わからない場合は、既定値を使用します。|6c7e8096-f593-4d72-807f-a5f86dcc9c77|
-|**証明機関 URI**|AAD のオブジェクト (ユーザーやグループなど) に対する証明機関の URI (Uniform Resource Identifier)。<br /><br />AuthorityURI パラメーターは、アプリ ラッピング ツールに対しては省略可能です。 このパラメーターを使用しない場合は、既定の URI が使用されます。||
-|**SkipBroker**|会社ポータルをブローカーとして使用するかどうかを示す値。<br /><br />**True** – ADAL の認証に会社ポータルを使用しません。<br /><br />**False** – ADAL の認証に会社ポータルを使用します。 ポータル サイトでは、登録済みのユーザーをシングル サインオンの目的で使用します。||
-|**非ブローカーのリダイレクト URI**|ADAL でブローカー アプリ (Intune ポータル サイト) を使用しない場合に使用されるログイン URI。|urn:ietf:wg:oauth:2.0:oob|
-|**リソース ID**|アプリの AAD リソースへのポインター。||
-
-### 手順 3: AAD でモバイル アプリ管理へのアクセスを構成する
-アプリ ラッピング ツールでアプリの AAD 登録値を使用する前に、アプリ開発者は次の手順に従って、そのアプリのアクセス権限を Intune Mobile Application Management リソースに与える必要があります。
-
-1.  Azure 管理ポータルで既存の AAD アカウントにログインします。
-
-2.  **[既存の LOB アプリケーションの登録]** を選択します。
-
-3.  **構成** セクションで、 **[他のアプリケーションの Web API へのアクセスの構成]**を選択します。
-
-4.  **[他のアプリケーションへのアクセス許可]** セクションの最初のドロップダウン リストから **[Intune モバイル アプリケーション管理]** を選択します。
-
-これで、アプリ ラッピング ツールでアプリのクライアント ID を使用できるようになります。 「[手順 2: アプリを登録するときに取得する必要のある識別子を確認する](#step-2-review-the-identifiers-you-need-to-get-when-you-register-the-app)」の表で説明したように、クライアント ID は Azure Active Directory の管理ポータルに表示されます。
-
-### 手順 4: アプリ ラッピング ツールで AAD 識別子の値を使用する
-登録プロセスから取得した識別子の値を、アプリ ラッピング ツールでコマンド ライン プロパティとして入力します。 エンドユーザーが正しくアプリを認証できるように、表に示されるすべての値を指定する必要があります。 値を指定しない場合は、既定の値が使用されます。
-
-|識別子|パラメーター|
-|--------------|-------------|
-|クライアント ID|ClientID|
-|証明機関 URI|Authority-URI|
-|SkipBroker|SkipBroker|
-|非ブローカーのリダイレクト URI|NonBrokerRedirectURI|
-|リソース ID|ResourceID|
-アプリをラッピングするときには、次の点に注意してください。
-
--   認証が成功したことを確認するために、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] では MAM リソース ID に関連付けられている AAD トークンを取得します。 ただし、このトークンは、さらにトークンの有効性を確認する呼び出しで使用されることはありません。 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] サインインしているユーザーのユーザー プリンシパル名 (UPN) のみを読み取って、アプリのアクセス許可を決定します。 AAD トークンはその他のサービスの呼び出しには使用されません。
-
--   クライアント アプリケーションのクライアント ID と証明機関 URI を提供する場合、ダブル ログイン プロンプトは回避されます。 AAD ダッシュ ボードで、公開された [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] MAM リソース ID にアクセスするには、クライアント ID を登録して有効にする必要があります。 クライアント ID を登録しないと、アプリの実行時にユーザーがログインに失敗します。
 
 
 ### 関連項目
@@ -175,6 +126,6 @@ ADAL を使用するアプリの場合、次を満たす必要があります。
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

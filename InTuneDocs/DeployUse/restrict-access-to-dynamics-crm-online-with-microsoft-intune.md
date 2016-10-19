@@ -1,6 +1,6 @@
 ---
 title: "Dynamics CRM Online への電子メール アクセスを制限する | Microsoft Intune"
-description: "条件付きアクセスで Dynamics CRM Online  へのアクセスを保護および制御します。"
+description: "条件付きアクセスで Dynamics CRM Online へのアクセスを保護および制御します。"
 keywords: 
 author: karthikaraman
 manager: angrobe
@@ -13,8 +13,8 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 875da922b311b06fa8a1eb8ba7207108684825d5
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: 233b7cad41fbd35e0fef615737fc41f8a49db35e
 
 
 ---
@@ -25,6 +25,8 @@ Microsoft Intune の条件付きアクセスを使用して、iOS および Andr
 * [条件付きアクセス ポリシー](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)。デバイスがサービスにアクセスするために満たす必要のある条件を指定します。
 
 条件付きアクセスの動作の詳細については、[電子メールおよび O365 サービスへのアクセスを制限する](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)に関する記事をご覧ください。
+
+[!IMPORTANT] 条件付きアクセスを展開するには、Intune および Azure Active Directory Premium のサブスクリプションが必要です。ユーザーに両方のライセンスが付与されている必要があります。 **Enterprise Mobility + Security (EMS) のサブスクリプション**には、Intune および Azure Active Directory Premium のサブスクリプションが両方とも含まれます。 詳細については、「[Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility の価格) ページを参照してください。 EMS のサブスクリプションを持っていない場合は、Azure Active Directory Premium のサブスクリプションを取得できます。 「[Azure Active Directory の価格](https://azure.microsoft.com/en-us/pricing/details/active-directory/)」ページを参照してください。 
 
 対象となるユーザーがデバイスで Dynamics CRM アプリを使用しようとすると、次の評価が行われます。
 
@@ -87,7 +89,7 @@ Dynamics CRM ポリシーに使用する 2 つのグループの種類を指定�
 * **準拠していないデバイス** – これらのデバイスは Dynamics CRM からブロックされます。
 * **AAD に登録され、準拠しているデバイス** – これらのデバイスは Dynamics CRM にアクセスできます。
 
-##  次の手順
+##  次のステップ
 [Exchange Online へのアクセスを制限する](restrict-access-to-exchange-online-with-microsoft-intune.md)
 
 [Exchange On-Premises へのアクセスを制限する](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
@@ -97,6 +99,6 @@ Dynamics CRM ポリシーに使用する 2 つのグループの種類を指定�
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

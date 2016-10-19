@@ -13,8 +13,8 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 70f9fb5580b114fe1ba14a1bd05de58467d5cd00
-ms.openlocfilehash: b5dd5bec0910a8ce3a940b5ed288907aba0f7ee4
+ms.sourcegitcommit: df1b58d5ce94c985e71f3afbe228dba9438040dc
+ms.openlocfilehash: d79c498fd775ee9b3d59761fec2fe6ebba116d6d
 
 
 ---
@@ -23,26 +23,30 @@ ms.openlocfilehash: b5dd5bec0910a8ce3a940b5ed288907aba0f7ee4
 Intune アプリ ラッピング ツールまたは Intune アプリ SDK のいずれかを使うと、アプリでモバイル アプリケーション管理 (MAM) ポリシーを使用することが可能です。 ここでは、これら 2 つの方法の内容と用途について説明します。
 
 ## Intune アプリ ラッピング ツール
-アプリ ラッピング ツールは、主として、内部基幹業務 (LOB) アプリケーションに使います。 このツールは、アプリのラッパーを作成するコマンド ライン アプリケーションです。このラッパーにより、アプリを Intune モバイル アプリケーション管理ポリシーで管理できるようになります。 このツールを使うためにソース コードは必要ありませんが、署名資格情報が必要です。  署名資格情報の詳細については、[Intune のブログ](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)を参照してください。 アプリ ラッピング ツールのドキュメントとしては、[Android アプリ ラッピング ツール](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)と [iOS アプリ ラッピング ツール](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)をご覧ください。
+アプリ ラッピング ツールは、主として、内部基幹業務 (LOB) アプリケーションに使います。 このツールは、アプリのラッパーを作成するコマンド ライン アプリケーションです。このラッパーにより、アプリを Intune モバイル アプリケーション管理ポリシーで管理できるようになります。 
 
-アプリ ラッピング ツールは、アプリ ストアまたは Play ストアにあるアプリ、あるいは開発時の統合を必要とする機能をサポートしていません (次の機能比較表をご覧ください)。
+このツールを使うためにソース コードは必要ありませんが、署名資格情報が必要です。  署名資格情報の詳細については、[Intune のブログ](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)を参照してください。 アプリ ラッピング ツールのドキュメントとしては、[Android アプリ ラッピング ツール](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)と [iOS アプリ ラッピング ツール](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)をご覧ください。
+
+アプリ ラッピング ツールは、Apple App Store または Google Play ストアにあるアプリ、あるいは開発ツールの統合を必要とする機能を**サポートしていません** (次の機能比較表をご覧ください)。
 
 アプリが既に完成している場合、またはソース コードが利用できない場合は、SDK ではなく、アプリ ラッピング ツールを使用する必要があります。
 
-**Intune に登録されていないデバイスでの MAM 用アプリ ラッピング ツールは、現在パブリック プレビューでサポートされています。詳細については、「[Microsoft Intune に登録されていないデバイスの基幹業務アプリとデータを保護する](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)」トピックをご覧ください**。
+**Intune に登録されていないデバイスの MAM 用アプリ ラッピング ツールの詳細については、「[Microsoft Intune に登録されていないデバイスの基幹業務アプリとデータを保護する](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)**」を参照してください。
 
-### サポートされるプラットフォーム
+### サポートされるアプリ開発プラットフォーム
 
 |**アプリ ラッピング ツール** | **Xamarin** |**Cordova** |
 |------|----|----|
 |**iOS** |Yes|[はい]|
 |**Android**| いいえ |Yes|
+
 ## Intune アプリ SDK
-アプリ SDK は、主として、App Store または Play ストアにあるアプリを Intune で管理できるようにするお客様向けに設計されています。 ただし、どのようなアプリでも (LOB アプリでさえ)、SDK の統合を利用できます。
+アプリ SDK は、主として、Apple App Store または Google Play ストアにあるアプリを Intune で管理できるようにするお客様向けに設計されています。 ただし、どのようなアプリでも (基幹業務アプリでさえ)、SDK の統合を利用できます。
 
 SDK の詳細については、「[概要](/intune/develop/intune-app-sdk)」を参照してください。 SDK で作業を開始するには、「[Microsoft Intune アプリ SDK を使ってみる](/intune/develop/intune-app-sdk-get-started)」を参照してください。
 
-### サポートされるプラットフォーム
+### サポートされるアプリ開発プラットフォーム
+
 |**Intune アプリ SDK** |**Xamarin** |**Cordova**
 |------|----|----|
 |**iOS**|はい – Intune App SDK Xamarin コンポーネントを使用します|はい – Intune App SDK Cordova プラグインを使用します|
@@ -75,6 +79,7 @@ SDK の詳細については、「[概要](/intune/develop/intune-app-sdk)」を
 |選択的なワイプ <br></br>**注:** iOS では、管理プロファイルを削除するとアプリも削除されます。|○||
 |[[名前を付けて保存] を禁止する] |○||
 |[マルチ ID アプリのサポート]|○||
+|デバイスの登録なしで MAM をサポート|○|○|
 ### 関連項目
 
 [Android アプリ ラッピング ツール](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
@@ -83,6 +88,6 @@ SDK の詳細については、「[概要](/intune/develop/intune-app-sdk)」を
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

@@ -3,8 +3,8 @@ title: "MAM 対応アプリでのエンド ユーザー エクスペリエンス
 description: "このトピックでは、アプリがモバイル アプリ管理ポリシーを使用して管理されている場合に予想される結果について説明します。"
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 359f76daa35a14e4107a9e03c6a1b1f4d1215777
-ms.openlocfilehash: e43dea5630975165ea7468836a8b0328f0656030
+ms.sourcegitcommit: 26c62a000470030ef0109b397261b3049d3984ed
+ms.openlocfilehash: 710e5b2a59121d6ace53bd23f125dbe398c9ddae
 
 
 ---
@@ -140,30 +140,24 @@ Android デバイスを使用している場合は、既存のアカウントを
 
 ![エラー メッセージとアカウントの削除手順のスクリーンショット](../media/AppManagement/Android_SwitchUser.png)
 
-##  Rights Management 共有アプリを使用したメディア ファイルの表示
-Android デバイスで会社の AV、PDF、および画像ファイルを表示するには、[Microsoft Rights Management (RMS) 共有アプリ](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer)を使用します。
+##  Azure Information Protection アプリ (旧称: Rights Management 共有アプリ) でメディア ファイルを表示する
+Android デバイスで会社の AV、PDF、および画像ファイルを表示するには、[Azure Information Protection アプリ](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer)を使用します。
 
-このアプリは、Google Play ストアからダウンロードします。  アプリをデバイスにインストールした後、アプリを起動し、会社の資格情報で認証します。 これで、他のポリシー管理対象アプリから保護されていないファイルと保護されているファイルを表示できます。
+このアプリは、Google Play ストアからダウンロードします。  
 
 次のファイルの種類がサポートされます。
 
 * **音声:** AAC LC、HE-AACv1 (AAC+)、HE-AACv2 (Enhanced AAC+)、AAC ELD (Enhanced Low Delay AAC)、AMR-NB、AMR-WB、FLAC、MP3、MIDI、Vorbis、PCM/WAVE。
 * **ビデオ:** H.263、H.264 AVC、MPEG-4 SP、VP8。
 * **画像:** jpg、pjpg、png、ppng、bmp、pbmp、gif、pgif、jpeg、pjpeg。
-* PDF、PPDF
+* **PDF、PPDF**
 
 ------------
 |**pfile**|**text**|
 |----|----|
-|pfile は、保護するファイル向けの汎用的な "ラッパー" 形式です。暗号化されたコンテンツと RMS ライセンスをカプセル化し、任意のファイルの種類を保護できます。|XML、CSV などのテキスト ファイルは、保護されているときでもアプリで開いて表示できます。 ファイルの種類: txt、ptxt、csv、pcsv、log、plog、xml、pxml。|
+|pfile は、保護するファイル向けの汎用的な "ラッパー" 形式です。暗号化されたコンテンツと Azure Information Protection ライセンスをカプセル化し、任意のファイルの種類を保護できます。|XML、CSV などのテキスト ファイルは、保護されているときでもアプリで開いて表示できます。 ファイルの種類: txt、ptxt、csv、pcsv、log、plog、xml、pxml。|
 ---------------
-**Intune で登録されていない Android デバイス**
 
-RMS 共有アプリを使用して Intune により管理されているその他のアプリからファイルを表示するには、事前に RMS アプリを起動し、仕事用アカウントで認証しておく必要があります。  ログインすると、**RMS ライセンスを持っていない場合にのみ**、次のメッセージが表示されます。
-
-**認証成功 – 会社のファイルを確認できるようになりましたが、ユーザーがファイルを保護できるように組織はセットアップされていません。 詳細については、IT 管理者に問い合わせてください。**
-
-この場合、ユーザーが RMS 共有アプリを使用して会社のファイルを表示する操作は阻止されません。 Intune によって管理されているその他のアプリから引き続き会社のファイルを開いて閲覧しすることができ、まだ MAM ポリシーが適用されます。  このメッセージが示す内容は、RMS 共有アプリによって提供されている保護機能を追加することができないということです。  ファイルに対して保護を追加するには RMS ライセンスを取得する必要があります。 RMS ファイル保護機能の詳細については、「[Protect a file on a device](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place)」 (デバイス上のファイルを保護する) と「[Protect a file that you share by email](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email)」 (電子メールで共有するファイルを保護する) を参照してください。
 
 
 ### 関連項目
@@ -171,6 +165,6 @@ RMS 共有アプリを使用して Intune により管理されているその�
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 
