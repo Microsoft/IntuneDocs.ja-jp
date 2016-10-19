@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e6b182ebab1691c62e69cabaf4689ac7395ab31a
-ms.openlocfilehash: 0995d3ced978f5213fdb0e9905f508b64a1e5c09
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: 145d373edd65d7ba01c696c3b851692a13831dad
 
 
 ---
@@ -35,17 +35,24 @@ Windows PC などのデバイスを登録し、Microsoft Intune によるモバ�
 
 | **方法** |  **ワイプ** |  **アフィニティ**    |   **ロック** | **説明** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ|    ○ |   いいえ | [情報](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management)|
+|**[BYOD](#byod)** | いいえ|    ○ |   いいえ | [情報](prerequisites-for-enrollment.md#set-up-device-management)|
 |**[DEM](#dem)**|   いいえ |いいえ |いいえ  | [情報](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 |**[DEP](#dep)**|   Yes |   省略可能 |  省略可能|[情報](ios-device-enrollment-program-in-microsoft-intune.md)|
 |**[USB-SA](#usb-sa)**| [はい] |   省略可能 |  いいえ| [情報](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
 |**[USB-Direct](#usb-direct)**| いいえ |    いいえ  | いいえ|[情報](ios-direct-enrollment-in-microsoft-intune.md)|
 
-**Windows と Android の登録方法**
+**Windows の登録方法**
 
 | **方法** |  **ワイプ** |  **アフィニティ**    |   **ロック** | **説明**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ|    ○ |   いいえ | [情報](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management)|
+|**[BYOD](#byod)** | Yes|   ○ |   いいえ | [情報](prerequisites-for-enrollment.md#set-up-device-management)|
+|**[DEM](#dem)**|   いいえ |いいえ |いいえ  |[情報](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+
+**Android の登録方法**
+
+| **方法** |  **ワイプ** |  **アフィニティ**    |   **ロック** | **説明**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**[BYOD](#byod)** | いいえ|    ○ |   いいえ | [情報](prerequisites-for-enrollment.md#set-up-device-management)|
 |**[DEM](#dem)**|   いいえ |いいえ |いいえ  |[情報](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 適切な方法を選択するのに役立つ一連の質問については、「[モバイル デバイスの登録方法の選択](/intune/get-started/choose-how-to-enroll-devices1)」をご覧ください。
@@ -111,6 +118,6 @@ Intune では、次のデバイス プラットフォームを管理できます
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 

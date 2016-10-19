@@ -4,7 +4,7 @@ description: "グループ ワークスペースを使用してグループを�
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8c474810f8d3c7db4784c38c45c85c83b647860b
-ms.openlocfilehash: fa0c235d3ab5f9dde04f8345e7e28fdd00603e58
+ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
+ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 
 
 ---
@@ -24,7 +24,9 @@ ms.openlocfilehash: fa0c235d3ab5f9dde04f8345e7e28fdd00603e58
 
 >[!IMPORTANT]
 >
->Intune ポータルでグループ ワークスペースを開き、Azure Active Directory (Azure AD) ポータルへのリンクを確認すると、Intune でのグループ管理に*新しい* Azure AD セキュリティ グループのアプローチが既に使用されています (「[グループの管理エクスペリエンスに対して予定されている改善点に関するお知らせ](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups)」を参照)。 グループを作成して管理するには、Azure AD ポータルへのリンクをクリックします。 Azure AD セキュリティ グループの使用方法については、「[Azure Active Directory グループを利用したリソースへのアクセス管理](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/)」をご覧ください。
+>Intune ポータルでグループ ワークスペースを開き、Azure Active Directory (Azure AD) ポータルへのリンクを確認すると、Intune でのグループ管理に*新しい* Azure AD セキュリティ グループのアプローチが既に使用されています (「[グループの管理エクスペリエンスに対して予定されている改善点に関するお知らせ](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups)」を参照)。 グループを作成して管理するには、Azure AD ポータルへのリンクをクリックします。
+>
+>![Azure グループの管理へのリンクのスクリーン ショット](../media/groups-link-azure.png) 
 >
 >Azure AD ポータルへのリンクが表示されない場合は、まだ*現在の*グループ管理アプローチを使用しています (このトピックの「[Microsoft Intune でユーザーとデバイスを管理するためのグループを作成する](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune)」を参照)。
 
@@ -42,7 +44,7 @@ Enterprise Mobility + Security 全体でグループ化とターゲット設定�
 
 
 ### 新しいグループ エクスペリエンスへの移行の方法と時期
-現在の Intune ユーザーは時間をかけて移行されます。 現在は移行スケジュールの最終処理を行っており、このトピックは、詳細情報をお知らせするため、数週間以内に更新されます。 移行の前には通知が送られます。 移行に問題がある場合は、移行チーム (<intunegrps@microsoft.com>) に問い合わせてください。
+現在の Intune ユーザーは時間をかけて移行されます。 現在は移行スケジュールの最終処理を行っており、このトピックは、詳細情報をお知らせするため、数週間以内に更新されます。 移行の前には通知が送られます。 移行に問題がある場合は、移行チーム ([intunegrps@microsoft.com](mailto:intunegrps@microsoft.com)) に問い合わせてください。 グループの移行方法の詳細については、「[Azure Active Directory への移行](migrating-groups-to-azure-active-directory.md)」を参照してください。
 
 ### 既存のユーザー グループとデバイス グループに対する影響
  Intune で作成されているユーザー グループとデバイス グループは、Azure AD セキュリティ グループに移行されます。 既定の Intune グループ (すべてのユーザー グループなど) は、移行時に展開で使用されている場合にのみ移行されます。 一部のグループについては移行がさらに複雑になる場合があります。 移行に追加手順が必要な組織にはご連絡します。
@@ -202,6 +204,6 @@ Microsoft Intune 管理コンソールの **[グループ]** ワークスペー�
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
-ms.openlocfilehash: 45aa4511945ab4763dc0dc35baefe47887e561bb
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: e42c2e5db17943562ccd88ab8fe838056c67553a
 
 
 ---
@@ -89,7 +89,7 @@ Apple Configurator を使用して、iOS デバイスを工場出荷時の設定
 
 5.  **プロファイルを割り当てる** 使用できるプロファイルのリストから、追加するデバイスに割り当てるプロファイルを指定し、**[登録プロファイルの詳細]** を確認し、**[完了]** を選択します。 手動で追加したデバイスは、任意の登録プロファイルに割り当てることができます。
 
-6.  **iOS デバイスに展開するプロファイルをエクスポートする** [Microsoft Intune の管理コンソール](http://manage.microsoft.com)で、**[ポリシー]** &gt; **[業務用デバイスの登録]** に進み、モバイル デバイスに展開するデバイス プロファイルを選択します。 タスク バーの **[エクスポート…]**  をクリックします。 **プロファイルの URL**をコピーおよび保存します。 Apple Configurator を使用してこれを後でアップロードして、iOS デバイスで使用する Intune プロファイルを定義します。
+6.  **iOS デバイスに展開するプロファイルをエクスポートする** [Microsoft Intune の管理コンソール](http://manage.microsoft.com)で、**[ポリシー]** &gt; **[業務用デバイスの登録]** に進み、モバイル デバイスに展開するデバイス プロファイルを選択します。 タスク バーの **[エクスポート]**  をクリックします。 **プロファイルの URL**をコピーおよび保存します。 Apple Configurator を使用してこれを後でアップロードして、iOS デバイスで使用する Intune プロファイルを定義します。
     Apple Configurator 2 をサポートするには、2.0 プロファイルの URL を編集する必要があります。 置換
     ```
     https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
@@ -139,10 +139,10 @@ Apple Configurator を使用して、iOS デバイスを工場出荷時の設定
 
 
 ### 関連項目
-[デバイスの登録の準備](get-ready-to-enroll-devices-in-microsoft-intune.md)
+[デバイスを登録するための前提条件](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO4-->
 
 

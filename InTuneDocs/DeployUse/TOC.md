@@ -2,12 +2,13 @@
 # [作業の開始](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 
+# [新機能](/intune/whats-new/whats-new-in-microsoft-intune)
 # [展開と使用](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ## [デバイスとアプリのライフサイクルの概要](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ### [デバイスのライフサイクル](overview-of-device-lifecycle-in-microsoft-intune.md)
 ### [アプリのライフサイクル](overview-of-app-lifecycle-in-microsoft-intune.md)
 ## [デバイスの登録](enroll-devices-in-microsoft-intune.md)
-### [Intune にデバイスを登録する準備](get-ready-to-enroll-devices-in-microsoft-intune.md)
+### [MDM の前提条件](prerequisites-for-enrollment.md)
 #### [iOS と Mac の管理](set-up-ios-and-mac-management-with-microsoft-intune.md)
 #### [Android の管理](set-up-android-management-with-microsoft-intune.md)
 #### [Windows デバイスの管理 ](set-up-windows-device-management-with-microsoft-intune.md)
@@ -103,7 +104,7 @@
 
 ### [ネットワークへのアクセスを制限する (Cisco ISE)](restrict-access-to-networks.md)
 ### [デバイス、ネットワーク、アプリケーションのリスクに基づいてアクセスを制限する](restrict-access-based-on-device-network-app-risk.md)
-#### [Lookout MTP を設定する](set-up-your-subscription-with-lookout-mtp.md)
+#### [Lookout デバイス脅威保護をセットアップする](set-up-your-subscription-with-lookout-mtp.md)
 #### [Intune で Lookout を有効にする](enable-lookout-mtp-connection-in-intune.md)
 #### [Lookout for Work アプリを展開する](configure-and-deploy-lookout-for-work-apps.md)
 #### [デバイスの脅威防御のコンプライアンス ポリシーを有効にする](enable-device-threat-protection-rule-in-compliance-policy.md)
@@ -134,15 +135,11 @@
 
 ## [エンド ユーザーへの通知内容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
-## [Intune に移行する](migrate-to-intune.md)
-
-## [新機能](whats-new-in-microsoft-intune.md)
-
 # [アプリの開発とカスタマイズ](/intune/develop/intune-app-sdk)
 
 # [トラブルシューティング](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO5-->
 
 

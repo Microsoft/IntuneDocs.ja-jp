@@ -13,8 +13,8 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 66dc46eb9dc1010b8c176ccfdea68b9a6e4b0618
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 7bd5f5d8f4931133a8ef1e697b2fec4cccd07b83
 
 
 ---
@@ -49,16 +49,10 @@ App Store の Microsoft Corporation から **Microsoft Intune ポータル サ�
 ### Windows Phone 8。1
 Windows Phone ストアの Microsoft Corporation から**ポータル サイト** アプリをインストールし、前述の手順で追加した Intune ユーザー資格情報を使用してサインインします。  **[登録済みデバイス]** を表示して、デバイスを追加します。
 
- ### Windows Phone 8。0
- **[システム設定]** &gt; **[業務用アプリ]** をクリックし、前述の手順で追加した Intune ユーザー資格情報を使用してサインインします。 ポータル サイト アプリがお使いの電話に展開されます。
-
-**サーバー アドレス**の入力を求めるメッセージが表示された場合は、「manage.microsoft.com」と入力します。
-
-
 ## 以前に展開したアプリのインストール
 モバイル デバイスでポータル サイトを開き、**[アプリ]** を選択して、**Microsoft Skype** をインストールします。
 
-Intune を使用したモバイル デバイス管理の詳細については、「[Microsoft Intune にデバイスを登録する準備](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)」を参照してください。
+Intune を使用したモバイル デバイス管理の詳細については、「[Microsoft Intune にデバイスを登録する準備](/Intune/deploy-use/prerequisites-for-enrollment)」を参照してください。
 
 ### 次のステップ
 これで終了です。 *Microsoft Intune の評価*チュートリアルの手順 5 を修了しました。
@@ -69,6 +63,6 @@ Intune を使用したモバイル デバイス管理の詳細については、
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 
