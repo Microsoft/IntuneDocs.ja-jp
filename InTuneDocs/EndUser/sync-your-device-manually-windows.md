@@ -14,18 +14,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: afe5beb508796244b914d6b0bae59eaa571e9c3a
+ms.sourcegitcommit: 8450facfe63d947df6e6a152805ad882ae220c3e
+ms.openlocfilehash: d7c2fb804e01df6689044d6ca2e72ff00ee95fbc
 
 
 ---
 
 
 # Windows デバイスを手動で同期する
-アプリのインストールに時間がかかりすぎる場合は、次の手順に従って Windows デバイスを手動で同期すると、インストールの高速化に役立つことがあります。 一覧にあるバージョンのみがサポートされています。 お使いのデバイスの種類に対応する、上記「この記事の内容」セクションに示されているリンクを使用してください。
+アプリのインストールに時間がかかりすぎる場合は、Windows デバイスを手動で同期してみてください。 手動で同期すると、インストールを高速化できることがあります。
+
+次のバージョンのみがサポートされています。 お使いのデバイスの種類に対応した手順に従ってください。
 
 * [[Windows] 10 Mobile](#windows-10-mobile)
-* [[Windows] 10 Desktop](#windows-10-desktop)
+* [Windows 10 Desktop](#windows-10-desktop)
 * [Windows Phone 8。1](#windows-phone-8-1)
 
 
@@ -34,44 +36,44 @@ ms.openlocfilehash: afe5beb508796244b914d6b0bae59eaa571e9c3a
 
 1. **[すべてのアプリ]** > **[設定]** > **[アカウント]** の順にタップします。
 
-    ![win10m-sync-1-settings-accounts](./media/win10m-sync-1-settings-accounts.png)
+    ![[設定] 画面の [アカウント] の選択](./media/win10m-sync-1-settings-accounts.png)
 
-2. **[職場のアクセス]** をタップします。
+2. **[職場のアクセス]** を選択します。
 
-    ![win10m-sync-2-work-access](./media/win10m-sync-2-work-access.png)
+    ![アカウントの種類として職場のアクセスを選択する](./media/win10m-sync-2-work-access.png)
 
-3. **[デバイス管理に登録する]** で、次に示すように会社名をタップします。
+3. **[デバイス管理に登録する]** で、会社名を選択します。
 
-    ![win10m-sync-3-tap-comp-name](./media/win10m-sync-3-tap-comp-name.png)
+    ![デバイス管理の会社名の選択](./media/win10m-sync-3-tap-comp-name.png)
 
-4. **[同期]** アイコンをタップします。
+4. **[同期]** アイコンを選択します。
 
-    ![win10m-sync-4-tap-sync](./media/win10m-sync-4-tap-sync.png)
+    ![[同期] アイコンの選択](./media/win10m-sync-4-tap-sync.png)
 
-    画面の上部に、"アカウントを同期中" というメッセージが表示されます。 同期が完了するまで、[同期] ボタンは灰色表示になります。
+    画面の上部に、"アカウントを同期中" というメッセージが表示されます。 同期が完了するまで、**[同期]** ボタンは灰色表示になります。
 
 ## Windows 10 Desktop
 アプリのインストールを高速化するために Windows 10 Desktop デバイスを手動で同期するには:
 
-1. 次に示す **[スタート]** ボタンをクリックし、**[設定]** をクリックします。
+1. **[スタート]** ボタンを選択し、**[設定]** を選択します。
 
-    ![win10pc-sync-1-start-button](./media/win10pc-sync-1-start-button.png)
+    ![[スタート] ボタン](./media/win10pc-sync-1-start-button.png)
 
 2. **[設定]** ページで、**[アカウント]** をクリックします。
 
-    ![win10pc-sync-2-settings-accounts](./media/win10pc-sync-2-settings-accounts.png)
+    ![[設定] ページの [アカウント] の選択](./media/win10pc-sync-2-settings-accounts.png)
 
-3. **[アカウント]** ページで、**[職場のアクセス]** をクリックします。
+3. **[アカウント]** ページで、**[職場のアクセス]** を選択します。
 
-    ![win10pc-sync-3-work-access](./media/win10pc-sync-3-work-access.png)
+    ![アカウントの種類として職場のアクセスを選択する](./media/win10pc-sync-3-work-access.png)
 
-4. **[デバイス管理に登録する]** セクションで、会社の名前をクリックします (次の図で青色の枠で示された部分)。
+4. **[Enroll in to device management]** (デバイス管理に登録する) セクションで、会社名を選択します。
 
-    ![win10pc-sync-4-tap-com-name](./media/win10pc-sync-4-tap-com-name.png)
+    ![デバイス管理の会社名の選択](./media/win10pc-sync-4-tap-com-name.png)
 
-5. **[同期]** ボタンをクリックします。
+5. **[同期]** ボタンを選択します。
 
-    ![win10pc-sync-5-tap-sync](./media/win10pc-sync-5-tap-sync.png)
+    ![[同期] ボタンの選択](./media/win10pc-sync-5-tap-sync.png)
 
    同期が完了するまで、このボタンは灰色表示になります。
 
@@ -80,15 +82,15 @@ ms.openlocfilehash: afe5beb508796244b914d6b0bae59eaa571e9c3a
 
 1. **[すべてのアプリ]** > **[設定]** > **[会社アカウント]** の順にタップします。
 
-    ![wp81-1-sync-settings-workplace](./media/wp81-1-sync-settings-workplace.png)
+    ![設定の一覧](./media/wp81-1-sync-settings-workplace.png)
 
-2. 会社の名前をタップします (次の図で青色の枠で示された部分)。
+2. 会社名を選択します。
 
-    ![wp81-2-sync-tap-compname](./media/wp81-2-sync-tap-compname.png)
+    ![職場のアカウントの会社名の選択](./media/wp81-2-sync-tap-compname.png)
 
-3. **[同期]** アイコンをタップします。
+3. **[同期]** アイコンを選択します。
 
-    ![wp81-3-sync-tap-sync-button](./media/wp81-3-sync-tap-sync-button.png)
+    ![[同期] アイコンの選択](./media/wp81-3-sync-tap-sync-button.png)
 
    デバイスで同期が完了するまでの間、画面の上部に、"アカウントを同期中" というメッセージが表示されます。
 
@@ -96,8 +98,6 @@ ms.openlocfilehash: afe5beb508796244b914d6b0bae59eaa571e9c3a
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

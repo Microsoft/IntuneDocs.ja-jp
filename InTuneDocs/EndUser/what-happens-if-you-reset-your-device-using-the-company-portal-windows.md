@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 6942bd5653bcb0aa11cdab18055bda7b86d0eae2
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: b597e3557ec2c5661490b417e1d0459eb4e8b477
 
 
 ---
@@ -27,8 +27,8 @@ ms.openlocfilehash: 6942bd5653bcb0aa11cdab18055bda7b86d0eae2
 
 |デバイスの構成と管理|デバイスの種類|
 |---------------------------------------|---------------|
-|IT 管理者がモバイル デバイスを管理している|**Windows 10、Windows Phone 8.1、および Windows Phone 8**</br>デバイスはポータル サイトに表示されなくなります。また、ポータル サイトはデバイスを製造元の既定の設定にリセットしようとします。 個人のデータ、アプリケーション、および設定は削除されます。 <br /><br />**Windows 10 Mobile**: デバイスの登録を解除するには、リセットを実行する必要があります。<br /><br />**Windows RT**<br />Windows RT デバイスは、電子メール専用の場合を除き、リセットできません。|
-|デバイスは会社の電子メールのみにアクセスできる|**Windows Phone 8.1 および Windows Phone 8**<br />デバイスはポータル サイトに表示されなくなります。また、会社のメール アカウントは削除され、保存されていないメールは削除されます。<br /><br />**Windows RT**<br />デバイスはポータル サイトに表示されなくなります。また、会社のメール アカウントは削除され、保存されていないメールは削除されます。<br /><br />**Windows 7 または Windows Vista コンピューター**<br />電子メール専用で Windows 7 以前を実行しているコンピューターはリセットできません。<br /><br />**Windows 8.1 および Windows 8 コンピューター**<br />デバイスはポータル サイトに表示されなくなります。また、会社のメール アカウントは削除され、保存されていないメールは削除されます。|
+|IT 管理者がモバイル デバイスを管理している|**Windows 10 および Windows Phone 8.1**</br>デバイスはポータル サイトに表示されなくなります。また、ポータル サイトはデバイスを製造元の既定の設定にリセットしようとします。 個人のデータ、アプリケーション、および設定は削除されます。 <br /><br />**Windows 10 Mobile**: デバイスの登録を解除するには、リセットを実行する必要があります。|
+|デバイスは会社の電子メールのみにアクセスできる|**Windows Phone 8。1**<br />デバイスはポータル サイトに表示されなくなります。また、会社のメール アカウントは削除され、保存されていないメールは削除されます。<br /><br />**Windows 7 または Windows Vista コンピューター**<br />電子メール専用で Windows 7 以前を実行しているコンピューターはリセットできません。<br /><br />**Windows 8.1 および Windows 8 コンピューター**<br />デバイスはポータル サイトに表示されなくなります。また、会社のメール アカウントは削除され、保存されていないメールは削除されます。|
 |PC およびラップトップ|**Windows 8.1 および Windows 8 コンピューター**<br />電子メール専用で Windows 8 または Windows 8.1 を実行しているコンピューターはリセットできません。<br /><br />**Windows 7 または Windows Vista コンピューター**<br />Windows 7 以前を実行しているコンピューターはリセットできません。|
 
 ご質問がございましたら、IT 管理者に問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
@@ -37,6 +37,6 @@ ms.openlocfilehash: 6942bd5653bcb0aa11cdab18055bda7b86d0eae2
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

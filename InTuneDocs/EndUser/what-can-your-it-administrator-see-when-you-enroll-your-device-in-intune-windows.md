@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: 2631541ea974769308aea30d2b37a3a79c22db99
+ms.sourcegitcommit: f69d2b222e9409a79dae07fd77f29c46876f11cb
+ms.openlocfilehash: 38a8a92581a990c321c6c57bfaa5a506733eb1b4
 
 
 ---
@@ -57,12 +57,10 @@ Windows デバイスを Intune に登録すると、対象のデバイスの管�
 
 -   製造元
 
-詳細については、[こちら](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows)をご覧ください。
+詳細については、「[ポータル サイト アプリをインストールし、Intune に Windows デバイスを登録するとどうなりますか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows)」を参照してください。
 
 
 
-
-
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

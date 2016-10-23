@@ -1,6 +1,6 @@
 ---
 title: "IT 管理者に登録に関するエラーを送信する | Microsoft Intune"
-description: 
+description: "管理者に登録に関するエラーを送信する"
 keywords: 
 author: staciebarker
 manager: angrobe
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: 081764e59649cbc486ad3a757ad4bf9c65c91112
+ms.sourcegitcommit: c10f9548c00972a018e742601586f6e03e1a05cc
+ms.openlocfilehash: 93f4d2c93f17146a704031dae0d35cfde077b384
 
 
 ---
@@ -23,9 +23,9 @@ ms.openlocfilehash: 081764e59649cbc486ad3a757ad4bf9c65c91112
 
 # IT 管理者に登録に関するエラーを送信する
 
-Intune で Android デバイスの登録を試みている間にエラーが発生した場合は、**[再試行]** をタップしてやり直すことも、**[情報の送信]** をタップして、IT 管理者にメールでエラー情報を送信することもできます。
+Intune に Android デバイスを登録する際にエラーが発生した場合は、**[再試行]** をタップしてもう一度登録を試すことができます。 また、**[情報の送信]** をタップして、エラー情報を電子メールで IT 管理者に送信することもできます。
 
-IT 管理者宛てアドレス指定された電子メールが自動的に作成されます。この電子メールには、IT 管理者がデバイスをトラブルシューティングする上で要なログが含まれます。
+**[情報の送信]** をタップすると、IT 管理者宛ての電子メールが自動的に作成されます。この電子メールには、IT 管理者がデバイスをトラブルシューティングする際に必要なログが含まれます。
 
 エラーについて支援を得るために、デバイスのデータ ログを IT 管理者に送信するには、いくつかの方法があります。
 
@@ -34,7 +34,6 @@ IT 管理者宛てアドレス指定された電子メールが自動的に作�
 
 
 
-
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

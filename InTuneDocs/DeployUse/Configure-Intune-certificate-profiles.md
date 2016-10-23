@@ -4,7 +4,7 @@ description: "Intune 証明書プロファイルを作成する方法につい�
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 3f657e6a49fb83faddf9c139985369f27656b4bd
 
 
 ---
@@ -38,13 +38,22 @@ Simple Certificate Enrollment Protocol (SCEP) または PKCS #12 (.PFX) 証明�
 
 ### 信頼された証明書プロファイルを作成するには
 
-1.  [Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[ポリシーの追加]** を選択します。
-2.  以下のポリシーの種類のいずれかを追加します。
-    - **Android &gt; 信頼された証明書プロファイル (Android 4 以降)**
-    - **iOS &gt; 信頼された証明書プロファイル (iOS 8.0 以降)**
-    - **Mac OS X &gt; 信頼された証明書プロファイル (Mac OS X 10.9 以降)**
-    - **Windows &gt; 信頼された証明書プロファイル (Windows 8.1 以降)**
-    - **Windows &gt; 信頼された証明書プロファイル (Windows Phone 8.1 以降)**
+1.  [Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[ポリシーの追加]** を選択し、デバイスのプラットフォームを選択します。 次のデバイスについて信頼済み証明書プロファイルを作成できます。
+
+-  Android 4 以降
+
+-  Android for Work
+
+-  iOS 7.1 以降
+
+-  Mac OS X 10.9 以降
+
+-  Windows 8.1 以降
+
+-  Windows Phone 8.1 以降
+
+
+2.  **信頼済み証明書プロファイル** ポリシーを追加します。
 
     詳しくは、「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」をご覧ください。
 
@@ -60,14 +69,22 @@ Simple Certificate Enrollment Protocol (SCEP) または PKCS #12 (.PFX) 証明�
 
 ### SCEP 証明書プロファイルを作成するには
 
-1.  [Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[ポリシーの追加]** を選択します。
-2.  以下のポリシーの種類のいずれかを追加します。
-    - **Android &gt; SCEP 証明書プロファイル (Android 4 以降)**
-    - **iOS &gt; SCEP 証明書プロファイル (iOS 8.0 以降)**
-    - **Mac OS X &gt; SCEP 証明書プロファイル (Mac OS X 10.9 以降)**
-    - **Windows &gt; SCEP 証明書プロファイル (Windows 8.1 以降)**
-    - **Windows &gt; SCEP 証明書プロファイル (Windows Phone 8.1 以降)**
+1.  [Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[ポリシーの追加]** を選択し、デバイスのプラットフォームを選択します。  次のデバイスについて SCEP 証明書プロファイルを作成できます。
 
+-  Android 4 以降
+
+-  Android for Work
+
+-  iOS 7.1 以降
+
+-  Mac OS X 10.9 以降
+
+-  Windows 8.1 以降
+
+-  Windows Phone 8.1 以降
+
+2.  **SCEP 証明書プロファイル** ポリシーを追加します
+    
     詳しくは、「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」をご覧ください。
 
 3.  プロファイル構成ページの指示に従って、SCEP 証明書プロファイル設定を構成します。
@@ -87,13 +104,16 @@ Simple Certificate Enrollment Protocol (SCEP) または PKCS #12 (.PFX) 証明�
 
 ### .PFX 証明書プロファイルを作成するには
 
-1.  [Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[ポリシーの追加]** を選択します。
-2.  以下のポリシーの種類のいずれかを追加します。
-  - **Android &gt; .PFX 証明書プロファイル (Android 4 以降)**
-  - **Windows &gt; PKCS #12 (.PFX) 証明書プロファイル (Windows 10 以降)**
-  - **Windows &gt; PKCS #12 (.PFX) 証明書プロファイル (Windows Phone 10 以降)**
-  - **iOS > PKCS #12 (.PFX) 証明書プロファイル (iOS 8.0 以降)**    
-    詳しくは、「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」をご覧ください。
+1.  [Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[ポリシーの追加]** を選択し、デバイスのプラットフォームを選択します。 次のデバイスについては、.PFX 証明書がサポートされています。
+  - Android 4 以降
+  - Android for Work
+  - Windows 10 以降
+  - Windows Phone 10 以降
+  - iOS 8.0 以降)    
+
+    
+2.  **.PFX 証明書プロファイル** ポリシーを追加します。 
+      詳しくは、「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」をご覧ください。
 3.  ポリシー フォームで要求されている情報を入力します。
 4.  **[ポリシーの保存]** を選択します。
 
@@ -130,6 +150,6 @@ Intune の他のポリシーをデプロイするのと同じ方法で、証明�
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

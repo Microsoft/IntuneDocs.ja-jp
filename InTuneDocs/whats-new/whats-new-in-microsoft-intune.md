@@ -4,7 +4,7 @@ description: "Microsoft Intune の今月の新機能と過去のリリースの�
 keywords: 
 author: barlanmsft
 manager: angrobe
-ms.date: 09/26/2016
+ms.date: 10/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,138 +13,93 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ecf43b38e9593375981770583220d4ce2dfd709f
-ms.openlocfilehash: 32610d4138fba82e034cc7dadccc09e0a6d31cd3
+ms.sourcegitcommit: 503719953031bf5079b2bf5bc84a0497d708f79a
+ms.openlocfilehash: 730809e0841a248b90f5fe157f2c6338bfd32b2d
 
 
 ---
-# Microsoft Intune の新機能 -- 9 月
+# Microsoft Intune の新機能 - 2016 年 10 月
 Microsoft Intune の今回のリリースの新機能について説明します。 また、過去のリリースに関する情報だけでなく、準備する必要がある今後の変更についても説明します。
 
 これらのすべての機能は、最終的にハイブリッド環境 (Configuration Manager と Intune の共存環境) でサポートされるようになります。 最新のハイブリッド機能の詳細については、[ハイブリッド環境の新機能に関するページ](https://technet.microsoft.com/library/mt718155.aspx)を参照してください。
 <!---@Barry, the above blurb stays in each version, but make sure Tyler signs off each time. Also, remember to set the ms.date in the metadata to the sprint release. --->
 
->[!IMPORTANT]
->ブログ記事: Ensuring mobile devices are up to date using Microsoft Intune (Microsoft Intune を使ってモバイル デバイスを確実に更新する)<br>
->iOS デバイスへの "Trident" マルウェアによる最近の攻撃を踏まえ、ブログ記事「[Ensuring mobile devices are up to date using Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/)」(Microsoft Intune でモバイル デバイスを確実に更新する) を新たに公開しました。デバイスを安全に、かつ最新の状態に保つために役立つ Intune のさまざまな使い方について説明しています。
+## 新機能
 
-## 新しい機能、お知らせ、情報
-* [Windows の条件付きアクセス](#windows-conditional-access)
-* [iOS 10 のサポート](#ios-10-support)
-* [Android と iOS のデバイス登録がなくても、アプリ ラッピング ツールで MAM がサポートされます](#app-wrapping-tool-supports-mam-without-device-enrollment-for-android-and-ios)
-* [9 月に Intune グループから Azure Active Directory への移行が開始されます](#intune-groups-begin-transitioning-to-azure-active-directory-in-september)
-* [Android デバイスを保護するため Lookout が統合されます](#lookout-integration-to-protect-android-devices)
-* [Android、iOS、および Windows 用のポータル サイトの更新](#company-portal-updates)
-* [Intune の用語集](#intune-glossary)
-* [今後の更新情報](#whats-coming)
+### モバイル アプリケーションを管理するための条件付きアクセス
+Exchange Online へのアクセスを制限して、Intune モバイル アプリケーション管理ポリシーをサポートするアプリ (Outlook など) からのアクセスのみを許可することができます。 [この新機能](/intune/deploy-use/allow-policy-managed-apps-access-to-o365)は組み込みのメール クライアントや Intune MAM ポリシーが構成されていない他のアプリへのアクセスをブロックできるため、Intune のモバイル アプリ管理 (MAM) ポリシーと組み合わせると効果的です。 これにより、ユーザーが組織のデータにアクセスする際に、Intune MAM を使用して保護できるアプリを使用するようになります。 Intune モバイル アプリ管理は、Azure ポータルから使用することができます。 [設定] ブレードの新しい [条件付きアクセス] セクションを探してください。
 
-## Windows の条件付きアクセス
-Intune 管理コンソールを通して条件付きアクセス ポリシーを作成することで、Windows PC が Exchange Online および SharePoint Online にアクセスするのをブロックできるようになりました。 また、Office デスクトップおよびユニバーサル アプリケーションへのアクセスをブロックする条件付きアクセス ポリシーを作成することもできます。 
+### Windows PC の条件付きアクセス
+Intune 管理コンソールを通して条件付きアクセス ポリシーを作成することで、Windows PC が [Exchange Online](/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune) および [SharePoint Online](/intune/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune) にアクセスするのをブロックできるようになりました。 また、Office デスクトップおよびユニバーサル アプリケーションへのアクセスをブロックする条件付きアクセス ポリシーを作成することもできます。
 
-## iOS 10 のサポート
-既存の Intune MDM と MAM のシナリオには、iOS 10 との互換性があります。 ヒントについては、[Intune サポート チームのブログ](https://blogs.technet.microsoft.com/intunesupport/2016/09/13/support-tip-intune-support-for-ios-10/)を参照してください。
+### Android for Work のサポート
+Intune は、現在、Android for Work プログラムの一部となっています。 Intune に対する Android for Work 機能のサポートのロールアウトを今月から開始します。
+[Android for Work の Intune サポートに関する Microsoft からのお知らせをお読みください](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/12/microsoft-intune-support-for-android-for-work/)。
 
-## Android と iOS のデバイス登録がなくても、アプリ ラッピング ツールで MAM がサポートされます
-Intune のアプリ ラッピング ツールは、iOS と Android の基幹業務 (LOB) アプリで Intune MAM を有効にするために使用するコマンド ライン ツールです。 Intune MAM SDK をお使いのアプリに組み込み、アプリが Intune を使用して展開された MAM ポリシーを適用できるようにするには、この方法が最も簡単です。 MAM ポリシーを使用すると、以下の操作を実行できます。
+次の Intune トピックは、Android for Work に関する新しい情報と更新情報を扱っています。
 
-1. アプリのデータを暗号化します。
-2. インフォメーション ワーカーがアプリを起動するときに PIN の入力を求めます。
-3. アプリに対し、他の管理対象アプリにのみデータの転送を許可します。
-4. アプリが Android、iTunes、および iCloud にデータをバックアップしないようにします。
-5. 他の管理対象アプリとの間で切り取り、コピー、貼り付けのみを許可します。
+IT プロフェッショナル向け:
+- [Android for Work のセットアップ](/intune/deploy-use/set-up-android-for-work)
+<!--- [Nathan Bigman's resource access topics]()-->
+- [Intune で Exchange Online と新しい Exchange Online Dedicated への電子メール アクセスを制限する](/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune)
+- [Intune で Exchange On-premises と従来の Exchange Online Dedicated への電子メール アクセスを制限する](/intune/deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune)
+- [Android for Work のコンプライアンス ポリシー設定](/intune/deploy-use/afw-compliance-policy-settings-in-microsoft-intune)
+- [Android for Work アプリを展開する方法](/intune/deploy-use/android-for-work-apps)
+- [モバイル アプリ構成ポリシーを使用した Android for Work アプリの構成](/intune/deploy-use/afw-app-configuration-policy)
+- [Android for Work のポリシー設定](/intune/deploy-use/android-for-work-policy-settings-in-microsoft-intune)
 
-新しくなった Intune のアプリ ラッピング ツールのパブリック プレビューでは、iOS および Android の内部 LOB アプリにデバイスを登録しなくても MAM がサポートされるようになりました。 つまり、エンドユーザーは MAM の有効な LOB アプリを使用するために、デバイスを Intune に登録する必要はありません。
+エンド ユーザー向け:
+- [仕事用プロファイルを作成するとどうなりますか](/intune/enduser/what-happens-when-you-create-a-work-profile-android)
+- [Intune での仕事用プロファイルの作成とデバイスの登録](/intune/enduser/create-a-work-profile-and-enroll-your-device-in-intune-android)
 
-誰でもパブリック プレビューのソフトウェアをテストしたり、次の msintuneappsdk の GitHub にある、役に立つドキュメントを参照したりできます。
+### iOS デバイスを保護するため Lookout 統合
+10 月、Microsoft は、デバイス上のマルウェアやリスクの高いアプリなどを検出して iOS モバイル デバイスを保護するため、Lookout のモバイル脅威保護ソリューションに統合します。 Lookout のソリューションにより、構成可能な脅威レベルを決定できます。 Intune に、Lookout によるリスク評価に基づいてデバイスのコンプライアンスを判断するためのコンプライアンス ポリシー ルールを作成できます。 条件付きアクセス ポリシーを使用すると、デバイスのコンプライアンス状態に基づいて、会社のリソースへのアクセスを許可したりブロックしたりできます。
 
-http://www.github.com/msintuneappsdk/intune-app-wrapper-ios-preview
+非準拠 iOS デバイスのエンド ユーザーは登録が求められ、会社のデータへのアクセス権を得るにはデバイスへの Lookout for Work アプリケーションのインストール、アプリのアクティブ化、Lookout for Work アプリケーションで報告された驚異の修復が必要となります。 [Lookout for Work アプリを構成して展開する](/intune/deploy-use/configure-and-deploy-lookout-for-work-apps)方法について説明します。
+<!--TFS 1319493-->
 
-http://www.github.com/msintuneappsdk/intune-app-wrapper-android-preview
+<!--### New Microsoft Intune Company Portal available for Windows 10 devices
+Microsoft is releasing a new [Microsoft Intune Company Portal for Windows 10 devices](https://go.microsoft.com/fwlink/?linkid=830663). This app, which leverages the new Windows 10 Universal format, will provide the user with an updated user experience within the app and identical experiences across all Windows 10 devices, PC and Mobile alike, while still enabling all the same functionality that they are using today.
 
-Android および iOS のプレリリース版 Microsoft Intune アプリのラッパーをインストールして使用するには、次を実行しておく必要があります。
+The new app will also allow users to leverage additional platform features like single sign-on (SSO) and certificate-based authentication on Windows 10 devices. The app will be made available as an upgrade to the existing Windows 8.1 Company Portal and Windows Phone 8.1 Company Portal installs from the Windows Store.-->
 
-* Android および iOS のプレリリース版 Microsoft Intune アプリ ラッピング ツールに関するマイクロソフト ソフトウェア ライセンス条項を確認します。
-* 記録用にライセンス条項を印刷し、保持します。 Android のプレリリース版 Microsoft Intune アプリ ラッピング ツールをダウンロードして使用することで、このライセンス条項に同意することになります。 本ライセンス条項に同意されない場合、お客様は本ソフトウェアを使用できません。
-<!---TFS 1235607--->
+### Android 用 Intune アプリ ラッピング ツール
+Intune アプリ ラッピング ツールを使うと、アプリで Intune モバイル アプリケーション管理 (MAM) ポリシーを使用できるようになります。 デバイスの登録を必要としない Intune MAM ポリシーのサポートが開始されました。
 
-## 9 月に Intune グループから Azure Active Directory への移行が開始されます
-一部の新しい Intune アカウントが Intune ユーザー グループではなく Azure Active Directory セキュリティ グループを使用します。 セキュリティ グループで作業していることは、Intune ポータル グループ ページに Azure 管理ポータルにリダイレクトするリンクが表示されることで確認できます。
+### MAM ポリシーを使用して管理されたアプリケーションから印刷する
+MAM ポリシーを使用しているアプリから会社データが印刷されるのを防ぐことができるようになりました。 この設定は、[Azure ポータル](/Intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)で利用することができ、[iOS](/Intune/deploy-use/ios-mam-policy-settings) デバイスと [Android](/Intune/deploy-use/android-mam-policy-settings) デバイスの両方でサポートされています。
+<!--TFS 1014328-->
 
-## Android デバイスを保護するため Lookout が統合されます
-Microsoft は、デバイス上のマルウェアやリスクの高いアプリなどを検出して Android モバイル デバイスを保護するため、Lookout のモバイル脅威保護ソリューションに統合します。 Lookout のソリューションにより、構成可能な脅威レベルを決定できます。 Intune に、Lookout によるリスク評価に基づいてデバイスのコンプライアンスを判断するためのコンプライアンス ポリシー ルールを作成できます。 条件付きアクセス ポリシーを使用すると、デバイスのコンプライアンス状態に基づいて、会社のリソースへのアクセスを許可したりブロックしたりできます。
+## 通知
 
-非準拠デバイスのエンド ユーザーは登録が求められ、アクセス権を得るには Android デバイスへの Lookout for Work アプリケーションのインストール、アプリのアクティブ化、Lookout for Work アプリケーションで報告された驚異の修復が必要となります。 詳細については、「[Restrict access based on device, network, and application risk](restrict-access-based-on-device-network-app-risk.md)」 (デバイス、ネットワーク、アプリケーションのリスクに基づいてアクセスを制限する) を参照してください。
+### Android Samsung KNOX と Intune の互換性
+スマートフォン Samsung Galaxy Ace の特定のモデルは、Samsung KNOX デバイスとして Intune で管理することができません。 これらのデバイスは、Intune に登録すると、標準の Android デバイスとして管理されます。
 
+該当するモデルの番号は次のとおりです。
 
-## ポータル サイトの更新
+* SM-G313HU
+* SM-G313HY
+* SM-G313M
+* SM-G313MY
+* SM-G313U
 
-### Android
+お客様とエンドユーザーは、これ以上操作を行う必要はありません。 詳細については、[Samsung KNOX](https://www.samsungknox.com) の Web サイトをご覧ください。
 
-**Android 用ポータル サイトへの "通知" の追加**<br/>
-Android 用ポータル サイトのホームページに新しい通知アイコンが追加されました。 このアイコンをタップすると [通知] ページが開き、ポータル サイト アプリの中でエンドユーザーが注目する必要のある項目がすべて表示されます。たとえば、デバイスのコンプライアンス非対応、登録の更新、登録のアクティブ化です。 iOS 版のポータル サイト アプリには既に、この通知機能が追加されています。 この新しい [通知] ページの導入に伴い、[会社アクセスのセットアップ] ページがポータル サイトの起動または再開のたびに表示されることはなくなりました (ただし、デバイスが登録済みである場合)。 管理者が独自にエンド ユーザー向けガイドを作成している場合は、必要に応じてこの変更をドキュメントに反映してください。 更新後のスクリーン ショットは[こちら](https://aka.ms/androidcpupdate)にあります。  
-<!---TFS 1095560--->
+### Windows 8 のポータル サイト アプリは廃止されています。Windows Phone 8 および Windows RT プラットフォームのサポートは廃止される予定です。
+2016年 10 月以降、Microsoft Intune は Windows 8 ポータル サイトのサポートを廃止します。 Microsoft Intune は、Windows Phone 8 プラットフォームおよび Windows RT プラットフォームのサポートも廃止します。 その結果、Windows Phone 8 デバイスまたは Windows RT デバイスの登録または更新はできなくなります。
 
-**Company Portal for Android でフィードバックを送信する**</br>
-Company Portal for Android のメニューには新しい項目が追加されています。 **[ヘルプとフィードバック]** をタップすると、次の 3 つのアクションが表示されます。
-* **[ヘルプの表示]** を使用して、ポータル サイトに関する問題を IT 部門に報告します。 IT 部門では、電子メール クライアントを使用してメールを作成し、ポータル サイトのログをそのメールに添付します。 **[ヘルプの表示]** は **[設定]** ページの **[データを送信する]** 機能の代わりに使用されます。
-* **[フィードバックの送信]** を使用して、ポータル サイト チームにフィードバックを送信します。
-* **[アプリを評価]** を使用して、Google Play でポータル サイト アプリを評価またはレビューの対象のままとします。
+既に登録されている Windows Phone 8 デバイス、 Windows RT デバイス、Windows 8 デバイスは継続して管理できます。 デバイスへのアプリの配布を中断することなく続行するには、Windows Phone 8 および Windows 8 デバイスを Windows 8.1 および Windows Phone 8.1 に更新し、対応する Windows 8.1 および Windows Phone 8.1 のポータル サイト アプリを使用します。
 
-### iOS
-**iOS ポータル サイト アプリのサポートの変更**<br/>
-iOS 用 Microsoft Intune ポータル サイト アプリのすべてのユーザーが、最新バージョンのアプリを使用するように要求されます。 新しいユーザーは最新バージョンのみをダウンロードでき、現在のユーザーは最新バージョンへの更新を求められます。 最新バージョンを使用するには iOS 8.0 以降が必要であり、デバイスで以前の iOS バージョンを実行している場合は、デバイスを iOS 8.0 以降に更新したうえでポータル サイト アプリを最新バージョンに更新するまで、ポータル サイトを使用できず、登録することもできません。 iOS 8.0 以前のバージョンを実行している登録済みのデバイスは、引き続き管理対象であり、Intune 管理コンソールに表示されます。
-<!---TFS 1283165--->
-
-**iOS エンドユーザーのアプリ取得方法の改善**<br/>
-iOS 用ポータル サイト アプリのアプリ タイルに以下のような変更が行われ、ユーザーは単一の場所 (ポータル サイト Web サイト) のさまざまなビューですべてのアプリを確認できるようになりました。 Apple の制限では、基幹業務および管理対象アプリのストア アプリをポータル サイト アプリに一覧表示することが禁止されており、ユーザーが自分のすべてのアプリを見るには異なるビューを表示する必要があります。
-
-- これまで **[会社のアプリ]** タイルはポータル サイト Web サイトの [すべて] タブにあるすべてのアプリの一覧と関連付けられており、今後も機能は同じです。 このタイル名は **[すべてのアプリ]** に変更されました。
-- **[その他のアプリ]** タイルはこれまで、Apple がポータル サイト アプリに表示を許可しているすべてのアプリを一覧表示する、ポータル サイト アプリ内のビューに関連付けられていました。 このタイル名は **[おすすめアプリ]** に変更され、ユーザーがこのタイルをタップするとポータル サイト Web サイトの [おすすめ] タブが表示されるようになりました。
--  **[カテゴリ]** タイルはこれまで、アプリのカテゴリを一覧表示する、ポータル サイト アプリ内のビューに関連付けられていました。 このタイル名は変更されませんが、ポータル サイト Web サイトの [カテゴリ] タブに関連付けられるようになりました。
-更新後のスクリーン ショットは[こちら](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186)で確認することができます。
-<!---TFS 1317133--->
-
-**IT プロフェッショナルが iOS の管理対象ブラウザー アプリをインストールするようにアプリの要件を設定している場合は、そのダイアログを表示する**<br/>
-管理対象ブラウザーでのみ Web クリップを開くように構成したものの、管理対象ブラウザーがデバイスにインストールされていない場合に、デバイスのポータル サイト アプリがユーザーに Web クリップをインストールする前に管理対象ブラウザーをインストールするように求めるダイアログが表示されるようになります。
-<!---TFS 1228570--->
-
-### Windows
-**フィードバック ボタンを Windows Phone 8.1 ポータル サイト アプリに追加**<br/>
-Windows Phone 8.1 ポータル サイト アプリでは、エンド ユーザーが新しい [フィードバックの送信] ボタンを使用してアプリに関するフィードバックを送ることができます。 フィードバックを送信するには、ポータル サイト アプリの画面の右下にある "..." メニューをタップし、[**フィードバックの送信**] をタップします。 フィードバックは匿名化して収集され、ポータル サイト アプリのユーザー エクスペリエンス向上に役立てられます。
-<!---TFS 1317806--->
-
-## Intune の用語集</br>
-Intune 製品で使用されている用語を説明する新しい[用語集トピック](https://docs.microsoft.com/intune/understand-explore/intune-glossary)をライブラリに追加しました。
-
-----------
+2016 年 11 月以降、Windows Phone 8 ポータル サイトのサポートは廃止されます。
+<!--TFS 1255391-->
 
 ## 今後の更新情報
 
-### Intune グループから Azure Active Directory グループへの移行
-Intune は、Intune でのユーザーとデバイスのグループとして Azure Active Directory (AAD) のセキュリティ グループを使用する、新しいグループ管理エクスペリエンスを作成しています。 これらのグループは、**新しい Azure ベースの Intune 管理ポータルの導入時**に、すべてのグループの管理、ポリシーの展開、およびプロファイルの展開に使用されます。
+### Windows 10 デバイスで使用可能な新しい Microsoft Intune ポータル サイト
+Microsoft は、Windows 10 デバイス用に新しい Microsoft Intune ポータル サイトをリリースします。 このアプリでは新しい Windows 10 ユニバーサル形式を利用します。このアプリ内ではユーザーに対して更新されたユーザー エクスペリエンスが提供され、すべての Windows 10 デバイスで同じエクスペリエンスが提供されます。現在使用されている機能はすべて引き続き利用できます。
 
-この新しいエクスペリエンスにより、サービス間でグループを複製する必要がなくなり、**新しい Azure Active Directory Premium (AADP) グループ機能の一部にアクセスすることができ** 、PowerShell および Graph を使用して拡張機能を提供します。 またこれにより、エンタープライズ モビリティ管理でのグループ管理エクスペリエンスも統合されます。
-
-セキュリティ グループへの移行を有効にするため、**現在の管理コンソール**のエクスペリエンスにいくつかの変更が施されます。 **これらの変更と、AAD セキュリティ グループの使用については、Intune のドキュメントに記録されます**。
-
-Intune の新規のお客様には、**現在のテナントに表示される前に、セキュリティ グループの変更の一部**が表示されます。
-
-グループ管理の変更に加えて、**次の機能が廃止される予定です**。
-- 新規グループ作成時のメンバーまたはグループの除外
-- **グループ化を解除されたユーザー**と**グループ化を解除されたデバイス**のグループ
-- サービス管理者の役割での**グループの管理**
-- 通知ルールに対するカスタム グループベースの警告
-- レポート内のグループのピボット
-<!--- TFS 1295329--->
-
-### Exchange Online および SharePoint Online の新しい条件付きアクセス アプリ ポリシー
-Outlook、Word、Excel、OneDrive などの Office モバイル アプリからしかアクセスできないように、Exchange Online と SharePoint Online へのアクセスを制限できるようになります。 この新機能は組み込みのメール クライアントや Intune MAM ポリシーが構成されていない他のアプリへのアクセスをブロックできるため、Intune のモバイル アプリ管理 (MAM) ポリシーと組み合わせると効果的です。 これにより、ユーザーが組織のデータにアクセスする際に、Intune MAM を使用して保護できるアプリを使用するようになります。 Intune モバイル アプリ管理は、Azure ポータルから使用することができます。 [設定] ブレードの新しい [条件付きアクセス] セクションを探してください。
-
-
-### 廃止予定のサービス
-
-- **Windows 8 および Windows Phone 8 用のポータル サイト アプリの廃止** <br/>
-2016年 10 月以降、Microsoft Intune は Windows 8 および Windows Phone 8 ポータル サイト アプリのサポートを廃止します。 Microsoft Intune は、Windows Phone 8 プラットフォームのサポートも廃止します。 その結果、Windows Phone 8 デバイスの登録または更新はできなくなります。 既に登録されている Windows Phone 8 および Windows 8 デバイスは継続して管理できます。 デバイスへのアプリの配布を中断することなく続行するには、Windows Phone 8 および Windows 8 デバイスを Windows 8.1 および Windows Phone 8.1 に更新し、対応する Windows 8.1 および Windows Phone 8.1 のポータル サイト アプリを使用します。
+この新しいアプリでは、ユーザーは、Windows 10 デバイスでのシングル サインオン (SSO) や証明書ベースの認証など、追加のプラットフォーム機能も利用することができます。 アプリは、既存の Windows 8.1 ポータル サイトおよび Windows Phone 8.1 ポータル サイトのインストールのアップグレードとして Windows ストアから入手できるようになります。 詳細については、[aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp) を参照してください。
+<!--TFS 1016502-->
 
 ### 関連項目
 * [Microsoft Intune のブログ](http://go.microsoft.com/fwlink/?LinkID=273882)
@@ -153,6 +108,6 @@ Outlook、Word、Excel、OneDrive などの Office モバイル アプリから�
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

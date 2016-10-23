@@ -4,7 +4,7 @@ description: "このトピックでは、iOS デバイス用のモバイル ア�
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: ba258bfb3140ffc79aa38ef2f46497346cdc6bfa
+ms.sourcegitcommit: 3f6e500ef942e0f0e89ffd9ddb4889384f296e16
+ms.openlocfilehash: 36d21aee42c8a4812b1ed9623be2da3e65442bff
 
 
 ---
@@ -84,6 +84,11 @@ ms.openlocfilehash: ba258bfb3140ffc79aa38ef2f46497346cdc6bfa
   会社のデータを削除するために選択的ワイプを行うと、アプリからネイティブ アドレス帳に直接同期された連絡先が削除されます。 ネイティブ アドレス帳から別の外部ソースに同期された連絡先はワイプできません。 現在、これは **Microsoft Outlook** アプリにのみ適用されます。
 
   **既定値 = はい**
+  
+- **Disable printing (印刷を無効にする):** **[はい]** を選択すると、MAM ポリシーに関連付けられているアプリから会社のデータを印刷できなくなります。
+
+    **既定値 = はい**
+
 ##  iOS アクセス ポリシー設定
 **ポリシーで管理されているアプリ**という用語は、MAM ポリシーで構成されるアプリを表す場合に使用されます。
 - **アクセスの際にシンプルな PIN を要求する:** ポリシーで管理されているアプリを使用する際に PIN を要求する場合は、**[はい]** を選択します。 ユーザーは、作業コンテキストでアプリを初めて実行するとき、このセットアップを求められます。
@@ -114,6 +119,6 @@ iOS デバイスでは、数字による PIN の代わりに、iOS デバイス�
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -21,7 +21,7 @@
 
 5. Intune の URL 指定
 
-  - **MDM 登録 URL** – MDM 登録 URL に `https://enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc` を使用します。
+  - **MDM 登録 URL** – 既定値を使用します。
   - **MDM 使用条件 URL** – 既定値を使用します。 この URL は、デバイスを登録すると、ユーザーの使用条件を表示します。
   - **MDM 準拠 URL** – 既定値を使用します。 デバイスが非対応だと分かった場合、**[アクセスが拒否されました]** というメッセージがこの URL に表示されます。 その URL では、デバイスがポリシーに準拠していない理由やどのようにすれば準拠できるのかを分かりやすくユーザーに説明しています。
 
@@ -34,6 +34,6 @@
 7. **[保存]** を選びます。
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

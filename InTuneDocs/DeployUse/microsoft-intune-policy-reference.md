@@ -4,7 +4,7 @@ description: "このトピックの情報は、デバイスの管理に使用す
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
-ms.openlocfilehash: adf9a0603cbb1ed4183bff5110e1f3342bcf373a
+ms.sourcegitcommit: 3ea160fc82cc821740efeeabb0642e1dd323d43b
+ms.openlocfilehash: a36aa92de62cfa3abb7f8c26b2fa4f9c781c1dcd
 
 
 ---
@@ -31,14 +31,15 @@ ms.openlocfilehash: adf9a0603cbb1ed4183bff5110e1f3342bcf373a
 
 |ポリシー名|使用するタイミング|
 |---------------|------------------------|
-|**カスタム構成 (Android 4 以降、Samsung KNOX Standard 4.0 以降)**|デバイスの機能を制御するために使用できる、Wi-Fi 設定などの Open Mobile Alliance Uniform Resource Identifier (OMA-URI) の設定を展開します。 これは、必要な設定が構成ポリシーで使用できない場合に役立ちます。<br /><br />詳細については、「[Microsoft Intune の Android および Samsung KNOX 構成ポリシー設定](android-policy-settings-in-microsoft-intune.md)」を参照してください。|
-|**電子メール プロファイル (Samsung KNOX Standard 4.0 以降)**|管理対象デバイスで Exchange ActiveSync 電子メール設定を作成、展開、および監視します。 これにより、ユーザー側で特別な設定を行わなくても、各自が個人用端末で会社の電子メールにアクセスできます。<br /><br />詳細については、「[Microsoft Intune で電子メール プロファイルを使用して会社の電子メールへのアクセスを構成にする](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)」を参照してください。|
-|**全般構成 (Android 4 以降、Samsung KNOX Standard 4.0 以降)**|モバイル デバイスのセキュリティと機能の設定を構成します。<br />準拠アプリまたは非準拠アプリを指定し、それらのアプリが使用された場合にレポートします。<br />特定の機能のみが動作するようにデバイスをロックするキオスク モードを構成して、たとえば、デバイスでアプリを 1 つだけ実行できるようにしたり、音量ボタンを無効にしたりします。<br /><br />詳細については、「[Microsoft Intune の Android および Samsung KNOX 構成ポリシー設定](android-policy-settings-in-microsoft-intune.md)」を参照してください。|
-|**PKCS #12 (.PFX) 証明書プロファイル (Android 4 以降)**|このプロファイルは、デバイス証明書要求のための .PFX 設定を作成して展開する場合に使用します。<br /><br />詳細については、「[Microsoft Intune の証明書プロファイルでリソースへのアクセスを保護する](secure-resource-access-with-certificate-profiles.md)」を参照してください。|
-|**SCEP 証明書プロファイル (Android 4 以降)**|Simple Certificate Enrollment Protocol 証明書を構成します。これを信頼できるモバイル デバイスの証明書と共に使用してモバイル デバイスを認証して、モバイル デバイスが Wi-Fi プロファイルおよび VPN プロファイルによって構成されたネットワーク リソースにアクセスできるようにします。<br /><br />詳細については、「[Microsoft Intune の証明書プロファイルでリソースへのアクセスを保護する](secure-resource-access-with-certificate-profiles.md)」を参照してください。|
-|**信頼できる証明書プロファイル (Android 4 以降)**|信頼できるモバイル デバイスの証明書を構成します。これを使用してモバイル デバイスを認証して、モバイル デバイスが Wi-Fi プロファイルおよび VPN プロファイルによって構成されたネットワーク リソースにアクセスできるようにします。<br /><br />詳細については、「[Microsoft Intune の証明書プロファイルでリソースへのアクセスを保護する](secure-resource-access-with-certificate-profiles.md)」を参照してください。|
-|**VPN プロファイル (Android 4 以降)**|ユーザーがモバイル デバイスから企業ネットワークにアクセスする際にセキュリティ保護を提供する設定を構成および展開します。 これらの設定を展開することで、会社へのエンド ユーザーの接続が簡単になります。<br /><br />詳細については、「[Microsoft Intune での VPN 接続](vpn-connections-in-microsoft-intune.md)」を参照してください。|
-|**Wi-Fi プロファイル (Android 4 以降)**|ワイヤレス ネットワーク設定を構成して組織のユーザーに展開します。 これらの設定を展開することで、ワイヤレス ネットワークへのエンド ユーザーの接続が簡単になります。<br /><br />詳細については、「[Microsoft Intune での Wi-Fi 接続](wi-fi-connections-in-microsoft-intune.md)」を参照してください。|
+|**カスタム構成 (Android 4 以降、Samsung KNOX Standard 4.0 以降)**<br><br>**カスタム構成 (Android for Work)**|デバイスの機能を制御するために使用できる、Wi-Fi 設定などの Open Mobile Alliance Uniform Resource Identifier (OMA-URI) の設定を展開します。 これは、必要な設定が構成ポリシーで使用できない場合に役立ちます。<br /><br />詳細については、「[Microsoft Intune の Android および Samsung KNOX 構成ポリシー設定](android-policy-settings-in-microsoft-intune.md)」を参照してください。|
+|**電子メール プロファイル (Samsung KNOX Standard 4.0 以降)**<br><br>**電子メール プロファイル (Android for Work - Gmail)**<br><br>**電子メール プロファイル (Android for Work - Nine Work)**|管理対象デバイスで Exchange ActiveSync 電子メール設定を作成、展開、および監視します。 これにより、ユーザー側で特別な設定を行わなくても、各自が個人用端末で会社の電子メールにアクセスできます。<br /><br />詳細については、「[Microsoft Intune で電子メール プロファイルを使用して会社の電子メールへのアクセスを構成にする](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)」を参照してください。|
+|**全般構成 (Android 4 以降、Samsung KNOX Standard 4.0 以降)**<br><br>**全般構成 (Android for Work)**|モバイル デバイスのセキュリティと機能の設定を構成します。<br />準拠アプリまたは非準拠アプリを指定し、それらのアプリが使用された場合にレポートします。<br />特定の機能のみが動作するようにデバイスをロックするキオスク モードを構成して、たとえば、デバイスでアプリを 1 つだけ実行できるようにしたり、音量ボタンを無効にしたりします。<br /><br />詳細については、「[Microsoft Intune の Android および Samsung KNOX 構成ポリシー設定](android-policy-settings-in-microsoft-intune.md)」を参照してください。|
+|**PKCS #12 (.PFX) 証明書プロファイル (Android 4 以降)**<br><br>**PKCS #12 (.PFX) 証明書プロファイル (Android for Work)**|このプロファイルは、デバイス証明書要求のための .PFX 設定を作成して展開する場合に使用します。<br /><br />詳細については、「[Microsoft Intune の証明書プロファイルでリソースへのアクセスを保護する](secure-resource-access-with-certificate-profiles.md)」を参照してください。|
+|**SCEP 証明書プロファイル (Android 4 以降)**<br><br>**SCEP 証明書プロファイル (Android for Work)**|Simple Certificate Enrollment Protocol 証明書を構成します。これを信頼できるモバイル デバイスの証明書と共に使用してモバイル デバイスを認証して、モバイル デバイスが Wi-Fi プロファイルおよび VPN プロファイルによって構成されたネットワーク リソースにアクセスできるようにします。<br /><br />詳細については、「[Microsoft Intune の証明書プロファイルでリソースへのアクセスを保護する](secure-resource-access-with-certificate-profiles.md)」を参照してください。|
+|**信頼できる証明書プロファイル (Android 4 以降)**<br><br>**信頼済み証明書プロファイル (Android for Work)**|信頼できるモバイル デバイスの証明書を構成します。これを使用してモバイル デバイスを認証して、モバイル デバイスが Wi-Fi プロファイルおよび VPN プロファイルによって構成されたネットワーク リソースにアクセスできるようにします。<br /><br />詳細については、「[Microsoft Intune の証明書プロファイルでリソースへのアクセスを保護する](secure-resource-access-with-certificate-profiles.md)」を参照してください。|
+|**VPN プロファイル (Android 4 以降)**<br><br>**VPN プロファイル (Android for Work)**|ユーザーがモバイル デバイスから企業ネットワークにアクセスする際にセキュリティ保護を提供する設定を構成および展開します。 これらの設定を展開することで、会社へのエンド ユーザーの接続が簡単になります。<br /><br />詳細については、「[Microsoft Intune での VPN 接続](vpn-connections-in-microsoft-intune.md)」を参照してください。|
+|**Wi-Fi プロファイル (Android 4 以降)**<br><br>**Wi-Fi プロファイル (Android for Work)**|ワイヤレス ネットワーク設定を構成して組織のユーザーに展開します。 これらの設定を展開することで、ワイヤレス ネットワークへのエンド ユーザーの接続が簡単になります。<br /><br />詳細については、「[Microsoft Intune での Wi-Fi 接続](wi-fi-connections-in-microsoft-intune.md)」を参照してください。|
+|**モバイル アプリ構成ポリシー (Android for Work)**|モバイル アプリ構成ポリシーを使用すると、ユーザーが Android for Work アプリを実行している場合に必要となる可能性のある設定を自動的に提供できます。<br /><br />詳細については、「[Microsoft Intune でのモバイル アプリ構成ポリシーを使用した Android for Work アプリの構成](afw-app-configuration-policy.md)」を参照してください。
 
 ## iOS 構成ポリシー
 
@@ -75,7 +76,7 @@ Windows Phone と登録されている Windows デバイスのみに適用され
 |**カスタム構成 (Windows 10 デスクトップおよび Windows 10 Mobile 以降)**|デバイスの機能を制御するために使用できる OMA-URI 設定を展開します。 これは、必要な設定が構成ポリシーで使用できない場合に役立ちます。<br />    詳細については、「[Microsoft Intune の Windows 10 ポリシー設定](windows-10-policy-settings-in-microsoft-intune.md)」を参照してください。|
 |**カスタム構成 (Windows Phone 8.1 以降)**|デバイスの機能を制御するために使用できる OMA-URI 設定を展開します。 これは、必要な設定が構成ポリシーで使用できない場合に役立ちます。<br /><br />詳細については、「[Microsoft Intune の Windows Phone 8.1 ポリシー設定](windows-phone-8-1-policy-settings-in-microsoft-intune.md)」を参照してください。|
 |**エディションのアップグレード ポリシー (Windows 10 Desktop 以降)**<br><br>**エディションのアップグレード ポリシー (Windows 10 Holographic 以降)**<br><br>**エディションのアップグレード ポリシー (Windows 10 Mobile 以降)**|Windows 10 デバイスを新しいバージョンに更新するために使用されるライセンスまたはプロダクト キーの情報を含むポリシーを構成して展開します。<br><br>詳細については、「[Microsoft Intune のエディションのアップグレード ポリシー設定](edition-upgrade-policy-settings-in-microsoft-intune.md)」を参照してください。|  
-|**電子メール プロファイル (Windows Phone 8 以降)**<br /><br />**電子メール プロファイル (Windows 10 デスクトップおよび Windows 10 Mobile 以降)**|管理対象デバイスで Exchange ActiveSync 電子メール設定を作成、展開、および監視します。 これにより、ユーザー側で特別な設定を行わなくても、各自が個人用端末で会社の電子メールにアクセスできます。<br /><br />詳細については、「[Microsoft Intune で電子メール プロファイルを使用して会社の電子メールへのアクセスを構成にする](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)」を参照してください。|
+|**電子メール プロファイル (Windows Phone 8.1 以降)**<br /><br />**電子メール プロファイル (Windows 10 デスクトップおよび Windows 10 Mobile 以降)**|管理対象デバイスで Exchange ActiveSync 電子メール設定を作成、展開、および監視します。 これにより、ユーザー側で特別な設定を行わなくても、各自が個人用端末で会社の電子メールにアクセスできます。<br /><br />詳細については、「[Microsoft Intune で電子メール プロファイルを使用して会社の電子メールへのアクセスを構成にする](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)」を参照してください。|
 |**全般構成 (Windows 10 デスクトップおよび Windows 10 Mobile 以降)**|登録されている Windows 10 デスクトップおよび Windows 10 Mobile デバイスのモバイル デバイスのセキュリティと機能の設定を構成します。<br /><br />詳細については、「[Microsoft Intune の Windows 10 ポリシー設定](windows-10-policy-settings-in-microsoft-intune.md)」を参照してください。|
 |**全般構成 (Windows 10 Team 以降)**|登録されている Windows 10 Team デバイス (たとえば、Surface Hub デバイス) のためにデバイスのセキュリティと機能の設定を構成します。<br /><br />詳細については、「[Microsoft Intune の Windows Team 構成ポリシー設定](windows-team-configuration-policy-settings-in-microsoft-intune.md)」を参照してください。|
 |**全般構成 (Windows 8.1 以降)**|登録されている Windows デバイスのモバイル デバイスのセキュリティと機能の設定を構成します。<br /><br />詳細については、「[Windows policy settings in Microsoft Intune](windows-configuration-policy-settings-in-microsoft-intune.md)」 (Microsoft Intune の Windows ポリシー設定) を参照してください。|
@@ -118,6 +119,6 @@ Microsoft Intune では、デバイス プラットフォームごとに**構成
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

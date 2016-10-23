@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 3d8b33e5227ed7d13ffc0e6fb7867618c48cac6f
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 577d14f29880d16046bbb703773d6362c2458c1b
 
 
 ---
@@ -27,6 +27,11 @@ ms.openlocfilehash: 3d8b33e5227ed7d13ffc0e6fb7867618c48cac6f
 
 Mac OS X デバイスを登録しようとしている場合は、「[Intune に Mac OS X デバイスを登録する](enroll-your-device-in-intune-mac-os-x.md)」を参照してください。
 
+**開始前の準備:**
+
+- この手順を開始した後に、登録が完了したことを確認します。 手順を開始しても完了しなかった場合、後で完了しようとしても登録できない可能性があります。
+- Wi-Fi が機能していることを確認します。 Wi-Fi が機能していない場合、登録は失敗します。
+- デバイスで Safari をブロックしている場合はブロックを解除します。 登録には Safari を使用する必要があります。
 
 
 **iOS デバイスを登録するには:**
@@ -41,7 +46,7 @@ Mac OS X デバイスを登録しようとしている場合は、「[Intune に
 
     ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
 
-4. IT 管理者が登録済みのデバイスに関して確認できる情報と確認できない情報について確認し、**[続行]** をタップします。
+4. IT 管理者がユーザーの登録デバイスに関して確認できる情報と確認できない情報について確認し、**[続行]** をタップします。
 
     ![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png)
 
@@ -69,7 +74,7 @@ Mac OS X デバイスを登録しようとしている場合は、「[Intune に
 
     ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
 
-    “デバイス登録中” メッセージが画面に表示されます。
+    “デバイス登録中” というメッセージが画面に表示されます。
 
 11.  ポータル サイトでページを開くことを確認するメッセージが表示されたら、**[開く]** をタップします。
 
@@ -85,12 +90,11 @@ Mac OS X デバイスを登録しようとしている場合は、「[Intune に
 
 これでデバイスが Intune に登録され、ポータル サイト アプリに戻ります。
 
+
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
 
 
-
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

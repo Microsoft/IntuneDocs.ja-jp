@@ -15,14 +15,14 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f88c9f6b856f91db8c9218ab41a87bc95f45a578
-ms.openlocfilehash: efc6fed1d9e0766dd0deb24e8f5f422d1f60f568
+ms.sourcegitcommit: 3318201cd77ec16f72e65275eda0e65c0dd9e05c
+ms.openlocfilehash: 256a1e7873a6603226843d2936e44c09424b8050
 
 
 ---
 
 # Intune の概要
-Microsoft Intune は、Microsoft Enterprise Mobility + Security (EMS、旧称 Enterprise Mobility Suite) の "管理部門" です。 Enterprise Mobility とは、組織の情報を保護しつつ、従業員がデバイスで生産性を高められるようにすることです。  
+Microsoft Intune は、Microsoft Enterprise Mobility + Security (EMS、旧称 Enterprise Mobility Suite) の管理部門です。 Enterprise Mobility とは、組織の情報を保護しつつ、従業員がデバイスで生産性を高められるようにすることです。  
 
 EMS は、生産性、ID、アクセス制御、管理、データ保護を含む Enterprise Mobility の完全な統合スイートです。 これにより、効果的にモビリティ ソリューションを組織に展開し、運用することができます。  
 
@@ -55,6 +55,6 @@ Intune が提供する主なツールには次のものがあります。
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

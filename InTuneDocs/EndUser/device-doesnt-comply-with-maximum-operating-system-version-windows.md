@@ -1,5 +1,5 @@
 ---
-title: "Windows デバイスが最新のオペレーティング システムのバージョンに準拠していない | Microsoft Intune"
+title: "Windows デバイスが最新のオペレーティング システムのバージョンの設定に準拠していない | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
@@ -14,20 +14,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: 0a83e44f95ad1619cd0eff94d70c3dcc81852acb
+ms.sourcegitcommit: 964f39fa7a3971f37777e93f7cddd75367e6c026
+ms.openlocfilehash: edd9aa9b7c2dabbc90bb3777f855478c703c7882
 
 
 ---
 
 
-# Windows デバイスが最新のオペレーティング システムのバージョンに準拠していない
+# Windows デバイスが最新のオペレーティング システムのバージョンの設定に準拠していない
 
-IT 管理者がお使いの Windows デバイスで許可されるオペレーティング システムの最大バージョンを設定していますが、デバイスがその設定に準拠してません。 お使いの Windows デバイスで許可されるオペレーティング システムの最大バージョンを確認するには、IT 管理者に問い合わせる必要があります。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
+IT 管理者がお使いの Windows デバイスで許可されるオペレーティング システムの最新バージョンを設定していますが、デバイスがその設定に準拠してません。 お使いの Windows デバイスで許可されるオペレーティング システムの最新バージョンを確認するには、IT 管理者に問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
 
-<!--HONumber=Sep16_HO2-->
+
+<!--HONumber=Oct16_HO2-->
 
 

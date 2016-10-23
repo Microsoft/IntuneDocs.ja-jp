@@ -14,14 +14,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: ce231116ad405d274546cee81dbdd0b0909b2d01
+ms.sourcegitcommit: 8eb98946c39b98d3c338b32a7d955818020ef478
+ms.openlocfilehash: f33287c51fb769505cd1fb4fcfe2bbc1e4da0ea2
 
 
 ---
 
 # 検出された既存の会社の電子メール アカウント
-会社の電子メール アカウントがあります。 会社の電子メールに接続を続行するには、IT 管理者は適切に設定して、アカウントの管理を有効にするのには、次の手順を実行する必要があります。
+会社の電子メール アカウントがあります。 会社の電子メールに接続を続行するには、IT 管理者は適切に設定して、アカウントの管理を有効にするには、次の手順を実行してください。
 
 1.   **設定** 、デバイスで会社の電子メールに以前を設定する接続を削除します。
 
@@ -35,6 +35,6 @@ ms.openlocfilehash: ce231116ad405d274546cee81dbdd0b0909b2d01
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

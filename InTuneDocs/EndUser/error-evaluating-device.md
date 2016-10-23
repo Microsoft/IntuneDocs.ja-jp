@@ -14,22 +14,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: a497a3e9372a89326f31d6eb869e38200ebe6802
+ms.sourcegitcommit: 703878a70227716213f5a25b1b5dfa99fce42ee5
+ms.openlocfilehash: 43688a00d61785ddabdfef3c45bd30a533a85fe7
 
 
 ---
 
 
 # デバイスの評価エラー
-デバイスのいずれかに準拠していないことが検出されましたまたはこの状態のデバイスを評価する際、会社のポリシーと、エラーが発生しました。
+デバイスは 1 つまたは複数の会社のポリシーに準拠していませんが、デバイスの評価中にシステムに問題が発生したため、現在はエラーを表示できません。  
 
-この問題を解決するには、数分待ってからし、順にタップ **コンプライアンスの確認**です。
-
-問題が解決しない場合は、IT 管理者に依頼します。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
+この問題を解決するには、数分待ってからし、順にタップ **コンプライアンスの確認**です。 問題が解決しない場合は、IT 管理者に依頼します。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

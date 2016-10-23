@@ -4,7 +4,7 @@ description: "条件付きアクセスで Exchange On-premises の会社電子�
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 651e352161f8d0e1e4a9a0cb1944ebb5f7003e0e
-ms.openlocfilehash: b902da2f077a3b18157eca9501d86c916c32a8a0
+ms.sourcegitcommit: b6e647c66d6de7d455d290dfa3358499a3f13453
+ms.openlocfilehash: e5c9d2a19f588ddd067a1e194568186f66afb85b
 
 
 ---
@@ -64,17 +64,19 @@ Exchange On-premises または従来の Exchange Online Dedicated 環境への�
 -   デバイスがポリシーに準拠していない場合は、ユーザーを [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ポータル サイト Web サイトやポータル サイト アプリに導くメッセージが表示されます。このポータルで、問題とその修復方法に関する情報を確認することができます。
 
 ## モバイル デバイスのサポート
--   Windows Phone 8 以降
+-   Windows Phone 8.1 以降
 
 -   iOS のネイティブ電子メール アプリ。
 
--   Android 4 以降での EAS メール クライアント (Gmail など)
+-   Android 4 以降での EAS メール クライアント (Gmail など)。
+- EAS メール クライアント **Android for Work デバイス:** Android for Work デバイスでは、**仕事用プロファイル**の **Gmail** アプリと **Nine Work** アプリのみがサポートされています。 条件付きアクセスが Android for Work で動作するには、Gmail アプリまたは Nine Work アプリ用の電子メール プロファイルを展開する必要があります。また、必要なインストールとしてそのアプリを展開する必要があります。 
+
 > [!NOTE]
 > Android と iOS の Microsoft Outlook アプリはサポートされていません。
 
 ## PC のサポート
 
-Windows 8 以降用の**メール** アプリケーション ([!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録されている場合)
+Windows 8.1 以降用の**メール** アプリケーション ([!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録されている場合)
 
 ##  条件付きアクセス ポリシーの構成
 
@@ -123,6 +125,6 @@ Windows 8 以降用の**メール** アプリケーション ([!INCLUDE[wit_next
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 
