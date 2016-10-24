@@ -3,6 +3,7 @@ title: "Intune から Android デバイスの登録を解除する | Microsoft I
 description: "Intune から Android デバイスの登録を解除する方法について説明します"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

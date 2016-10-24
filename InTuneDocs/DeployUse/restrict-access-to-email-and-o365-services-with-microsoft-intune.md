@@ -3,6 +3,7 @@ title: "電子メールおよび O365 サービスへのアクセスを制限す
 description: "このトピックでは、条件式を使用して、準拠デバイスのみに SharePoint Online およびその他のサービスの会社の電子メールや会社データへのアクセスを許可する方法について説明します。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "企業所有の iOS デバイスの登録 | Microsoft Intune"
 description: "Apple Device Enrollment Program (DEP) または Apple Configurator を使用した企業所有の iOS デバイスの登録"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 09/07/2016
 ms.topic: article

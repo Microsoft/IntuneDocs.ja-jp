@@ -3,6 +3,7 @@ title: "Android for Work モバイル アプリ構成ポリシーを使用する
 description: "Intune のモバイル アプリ構成ポリシーを使用して、ユーザーが Android for Work アプリを実行するときに必要となる可能性がある設定を指定できます。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

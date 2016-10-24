@@ -3,6 +3,7 @@ title: "iOS MAM ポリシーの設定 | Microsoft Intune"
 description: "このトピックでは、iOS デバイス用のモバイル アプリ管理ポリシーの設定について説明します。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article

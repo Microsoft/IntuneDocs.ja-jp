@@ -4,6 +4,7 @@ title: "Android for Work ポリシーの設定 | Microsoft Intune"
 description: "Intune で管理する Android for Work デバイスの設定と機能を制御するポリシーを作成します。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Windows 10 ポリシー設定 | Microsoft Intune"
 description: "このトピックのポリシー設定の一覧を、登録済みの Windows 10 デスクトップおよび Windows 10 Mobile デバイスの組込み設定およびユーザー設定構成に役立ててください。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/03/2016
 ms.topic: article

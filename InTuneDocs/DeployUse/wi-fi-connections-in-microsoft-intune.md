@@ -3,6 +3,7 @@ title: "Wi-Fi 接続 | Microsoft Intune"
 description: "Wi-Fi プロファイルを使用すると、ユーザーはWi-Fi ネットワークに接続できます。"
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article

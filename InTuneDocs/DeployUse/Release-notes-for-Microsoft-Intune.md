@@ -3,6 +3,7 @@ title: "Microsoft Intune のリリース ノート | Microsoft Intune"
 description: "Intune リリース ノート"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

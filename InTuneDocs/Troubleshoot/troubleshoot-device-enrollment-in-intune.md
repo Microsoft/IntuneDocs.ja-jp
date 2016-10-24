@@ -3,6 +3,7 @@ title: "デバイス登録に関するトラブルシューティング | Micros
 description: "デバイス登録で問題が発生した場合の解決方法の推奨事項。"
 keywords: 
 author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article

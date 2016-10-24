@@ -3,6 +3,7 @@ title: "Android デバイスを Intune で使用する | Microsoft Intune"
 description: "Android モバイル デバイスが Intune で登録されている場合にデバイスで実行できるタスクへのリンクの一覧"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Windows デバイスを Intune で使用する | Microsoft Intune"
 description: "Windows デバイスが Intune で登録されている場合にデバイスで実行できるタスクへのリンクの一覧"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

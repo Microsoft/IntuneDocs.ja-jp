@@ -3,6 +3,7 @@ title: "デバイスに最低限必要なバージョンのオペレーティン
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

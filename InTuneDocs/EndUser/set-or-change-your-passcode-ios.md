@@ -3,6 +3,7 @@ title: "パスコードを設定または変更する | Microsoft Intune"
 description: "パスコードを設定または変更する"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

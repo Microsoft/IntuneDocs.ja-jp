@@ -3,6 +3,7 @@ title: "アプリを追加する | Microsoft Intune"
 description: "Intune でアプリの展開を開始する前に、このトピックで説明している概念について理解を深めてください。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

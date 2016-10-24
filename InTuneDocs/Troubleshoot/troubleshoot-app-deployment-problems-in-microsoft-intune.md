@@ -3,6 +3,7 @@ title: "アプリ展開に関する問題のトラブルシューティング | 
 description: "このトピックは、Microsoft Intune でのアプリの展開の問題を解決するために役立ちます。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/27/2016
 ms.topic: article

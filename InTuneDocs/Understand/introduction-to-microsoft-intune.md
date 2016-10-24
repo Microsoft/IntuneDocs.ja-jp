@@ -5,6 +5,7 @@ title: "Microsoft Intune の概要 | Microsoft Intune"
 description: "Intune が Enterprise Mobility および Security ソリューションでどのようにしてモバイル デバイスを管理するかについて説明します。"
 keywords: 
 author: Lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/10/2016
 ms.topic: article

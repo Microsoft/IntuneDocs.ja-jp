@@ -3,6 +3,7 @@ title: "モバイル デバイス セキュリティ ポリシー設定 | Micros
 description: "Intune を使用すると、組織内の管理対象デバイスに展開できるさまざまな設定を構成できます。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

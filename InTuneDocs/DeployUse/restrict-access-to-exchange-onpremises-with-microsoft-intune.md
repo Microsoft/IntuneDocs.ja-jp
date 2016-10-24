@@ -3,6 +3,7 @@ title: "Exchange On-premises への電子メール アクセスを制限する |
 description: "条件付きアクセスで Exchange On-premises の会社電子メールへのアクセスを保護および制御します。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

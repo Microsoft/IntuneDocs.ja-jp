@@ -3,6 +3,7 @@ title: "Intune コンソールで MAM ポリシーを構成する |Microsoft Int
 description: "Microsoft Intune のモバイル アプリケーション管理ポリシーでは、会社のコンプライアンスとセキュリティ ポリシーに合わせて展開するアプリの機能を変更できます。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article

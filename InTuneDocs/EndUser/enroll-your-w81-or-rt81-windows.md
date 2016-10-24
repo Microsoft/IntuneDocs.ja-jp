@@ -3,6 +3,7 @@ title: "Windows 8.1 または Windows RT 8.1 デバイスを登録する | Micro
 description: "Intune に Windows 8.1 または Windows RT 8.1 デバイスを登録する方法について説明します"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

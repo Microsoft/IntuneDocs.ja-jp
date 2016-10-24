@@ -3,6 +3,7 @@ title: "Lookout を利用できるようにサブスクリプションを設定�
 description: "このトピックでは、Lookout デバイス脅威保護を構成する方法について説明します。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "USB ケーブルを使用して診断データのログを IT 管理者�
 description: "USB ケーブルを使用してデータ ログを送信する"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

@@ -7,6 +7,7 @@ title: "Intune のドキュメント | Microsoft ドキュメント"
 description: "Microsoft Intune のテクニカル ドキュメント - モバイル デバイスとアプリケーションの管理"
 keywords: "Intune ドキュメント, アプリ管理, デバイス管理, MDM ドキュメント, MAM ドキュメント"
 author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 10/07/2016
 ms.topic: hubpage

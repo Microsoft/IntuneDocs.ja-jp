@@ -3,6 +3,7 @@ title: "ユーザーとデバイスの管理にグループを使用する | Mic
 description: "グループ ワークスペースを使用してグループを作成および管理します。"
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article

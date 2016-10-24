@@ -3,6 +3,7 @@ title: "デバイスのコンプライアンス ポリシーを作成する | Mi
 description: "会社データのアクセスに使用するモバイル デバイスや PC をセキュリティで保護するためにコンプライアンス ポリシーを作成します。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

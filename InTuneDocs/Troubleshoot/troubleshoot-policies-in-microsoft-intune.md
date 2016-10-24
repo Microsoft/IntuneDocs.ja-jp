@@ -3,6 +3,7 @@ title: "ポリシーのトラブルシューティング | Microsoft Intune"
 description: "ポリシー構成に関する問題のトラブルシューティングを行います。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article

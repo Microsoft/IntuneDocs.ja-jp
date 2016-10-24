@@ -3,6 +3,7 @@ title: "Microsoft Intune を使用したエンドユーザー エクスペリエ
 description: "エンド ユーザーに共有する情報へのリンク"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: get-started-article

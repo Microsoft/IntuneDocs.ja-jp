@@ -3,6 +3,7 @@ title: "アプリ ラッピング ツールで iOS アプリをラップする |
 description: "このトピックの情報を使用して、アプリ自体のコードを変更することなく、iOS アプリをラップする方法について説明します。 モバイル アプリ管理ポリシーを適用できるように、アプリを準備します。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

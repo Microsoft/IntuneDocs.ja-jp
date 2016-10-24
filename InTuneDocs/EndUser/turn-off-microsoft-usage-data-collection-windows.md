@@ -3,6 +3,7 @@ title: "Microsoft による Windows の使用状況データの収集を無効�
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

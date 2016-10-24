@@ -3,6 +3,7 @@ title: "デバイス脅威保護を使用してアクセスを制限する | Mic
 description: "デバイス、ネットワーク、アプリケーションのリスクに基づいて、会社のリソースへのアクセスを制限します。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

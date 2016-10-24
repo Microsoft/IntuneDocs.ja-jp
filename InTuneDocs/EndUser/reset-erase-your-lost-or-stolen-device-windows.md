@@ -3,6 +3,7 @@ title: "紛失したまたは盗難にあった Windows デバイスをリセッ
 description: "紛失したまたは盗難にあった Windows デバイスをリセットする"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

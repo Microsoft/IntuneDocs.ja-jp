@@ -3,6 +3,7 @@ title: "Android ユーザーがアプリを入手する方法 | Microsoft Intune
 description: "エンド ユーザーが Android アプリを入手する方法"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "モバイル デバイスを登録してアプリをインストール�
 description: "モバイル デバイスを登録して、Intune 登録デバイスにアプリをインストールする方法を説明します"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

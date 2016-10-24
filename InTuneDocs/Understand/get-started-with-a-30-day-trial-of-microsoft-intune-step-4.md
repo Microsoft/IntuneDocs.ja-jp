@@ -3,6 +3,7 @@ title: "ポリシーを作成してアプリをユーザーに発行する | Mic
 description: "Intune の 30 日間無料評価版にサインアップするときに、ポリシーを作成しアプリを発行する方法"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

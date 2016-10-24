@@ -3,6 +3,7 @@ title: "ポリシーを使用してデバイスの設定を管理する | Micros
 description: "Intune を使用して、管理する登録デバイスの設定と機能を制御するポリシーを作成して展開します。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

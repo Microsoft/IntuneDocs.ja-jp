@@ -3,6 +3,7 @@ title: "iOS ユーザーがアプリを入手する方法 | Microsoft Intune"
 description: "エンド ユーザーが iOS アプリを使用できるようにするための方法"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article

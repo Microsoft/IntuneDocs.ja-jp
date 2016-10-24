@@ -3,6 +3,7 @@ title: "モバイル デバイスでの電子メールの構成を簡略化す�
 description: 
 keywords: 
 author: jeffgilb
+ms.author: jeffgilb
 manager: angrobe
 ms.date: 10/14/2016
 ms.topic: article

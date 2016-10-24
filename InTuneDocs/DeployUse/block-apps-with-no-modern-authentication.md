@@ -3,6 +3,7 @@ title: "最新の認証を使用していないアプリをブロックする | 
 description: 
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/15/2016
 ms.topic: article

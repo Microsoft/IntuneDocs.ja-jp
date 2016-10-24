@@ -3,6 +3,7 @@ title: "デバイスを Intune に登録した場合に IT 管理者が確認で
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

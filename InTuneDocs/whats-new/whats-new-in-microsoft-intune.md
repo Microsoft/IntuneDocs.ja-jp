@@ -3,6 +3,7 @@ title: "新機能 | Microsoft Intune"
 description: "Microsoft Intune の今月の新機能と過去のリリースの情報について説明します"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/13/2016
 ms.topic: article

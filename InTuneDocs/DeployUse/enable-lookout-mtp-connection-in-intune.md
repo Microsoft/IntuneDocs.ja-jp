@@ -3,6 +3,7 @@ title: "Intune で Lookout MTP を有効にする | Microsoft Intune"
 description: "Intune 管理者コンソールで Lookout Mobile Threat Protection を有効にします。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

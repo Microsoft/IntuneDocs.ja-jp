@@ -3,6 +3,7 @@ title: "デバイスでコードの整合性が有効ではない | Microsoft In
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

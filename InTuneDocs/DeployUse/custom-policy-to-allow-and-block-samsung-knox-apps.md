@@ -3,6 +3,7 @@ title: "KNOX が許可するアプリとブロックするアプリ |Microsoft I
 description: "KNOX が許可するアプリとブロックするアプリの一覧を作成するためのカスタム プロファイル。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article

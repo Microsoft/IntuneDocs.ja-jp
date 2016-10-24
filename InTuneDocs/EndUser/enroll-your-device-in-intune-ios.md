@@ -3,6 +3,7 @@ title: "Intune に iOS デバイスを登録する | Microsoft Intune"
 description: "Intune に iOS デバイスを登録する方法について説明します"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Intune の評価ガイド | Microsoft Intune"
 description: "Intune の無料の 30 日間評価版を設定する方法の概要と前提条件"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

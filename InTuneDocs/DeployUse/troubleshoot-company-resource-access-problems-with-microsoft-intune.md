@@ -3,6 +3,7 @@ title: "会社のリソースへのアクセスに関する問題のトラブル
 description: "このトピックに記載されているエラー コードと状態コードは、リソースのアクセスに関する問題のトラブルシューティングに役立ちます。"
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/06/2016
 ms.topic: article

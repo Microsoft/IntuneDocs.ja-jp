@@ -3,6 +3,7 @@ title: "Microsoft Intune のドメイン名 | Microsoft Intune"
 description: "Intune のドメイン名を追加する"
 keywords: 
 author: andredm7
+ms.author: andredm
 manager: swadhwa
 ms.date: 10/11/2016
 ms.topic: article

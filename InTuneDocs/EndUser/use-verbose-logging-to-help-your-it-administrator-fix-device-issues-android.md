@@ -3,6 +3,7 @@ title: "IT 管理者がデバイスの問題を解決するのに役立つ、詳
 description: "詳細なログ記録を使用すると、IT 管理者がデバイスの問題を解決する際に役立ちます。"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

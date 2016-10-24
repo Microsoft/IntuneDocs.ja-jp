@@ -3,6 +3,7 @@ title: "Skype for Business Online へのアクセスを制限する | Microsoft 
 description: "条件付きアクセスで Skype for Business Online へのアクセスを保護および制御します。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

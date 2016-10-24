@@ -3,6 +3,7 @@ title: "Azure Active Directory グループへの移行 | Microsoft Intune"
 description: "Intune から Azure AD へのグループの移行方法"
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angerobe
 ms.date: 10/10/2016
 ms.topic: article

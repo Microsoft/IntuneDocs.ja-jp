@@ -3,6 +3,7 @@ title: "IT 管理者にエラーを送信する | Microsoft Intune"
 description: "管理者にエラーを送信する"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

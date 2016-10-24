@@ -3,6 +3,7 @@ title: "アプリ ベースの O365 に対する条件付きアクセス | Micro
 description: "MAM CA を利用して、O365 サービスに対してアクセス権を持つアプリを制御する方法の概念について説明します。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/15/2016
 ms.topic: article

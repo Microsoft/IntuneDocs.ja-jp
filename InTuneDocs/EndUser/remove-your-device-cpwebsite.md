@@ -3,6 +3,7 @@ title: "ポータル サイトからのデバイスの削除 | Microsoft Intune"
 description: "ポータル サイトからのデバイスの削除"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

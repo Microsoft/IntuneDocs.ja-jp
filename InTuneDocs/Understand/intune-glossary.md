@@ -3,6 +3,7 @@ title: "Intune の用語集 | Microsoft Intune"
 description: "Microsoft Intune で使用される用語について説明します。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/23/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Exchange Online のアプリのアクセス権を構成する | Microsof
 description: "このトピックでは、MAM アプリの条件付きアクセス ポリシーを構成する方法について説明します。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/15/2016
 ms.topic: article

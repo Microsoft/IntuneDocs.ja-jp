@@ -3,6 +3,7 @@ title: "アプリを Android for Work デバイスに展開する | Microsoft In
 description: "このトピックでは、Google Play for Work ストアから Android for Work デバイスにアプリを同期してから展開します。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

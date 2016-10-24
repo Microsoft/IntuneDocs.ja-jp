@@ -3,6 +3,7 @@ title: "構成ポリシー リファレンス | Microsoft Intune"
 description: "このトピックの情報は、デバイスの管理に使用する必要がある Microsoft Intune ポリシーを判断するのに役立ちます。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

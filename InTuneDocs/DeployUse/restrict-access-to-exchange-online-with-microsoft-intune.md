@@ -3,6 +3,7 @@ title: "Exchange Online への電子メール アクセスを制限する | Micr
 description: "条件付きアクセスで Exchange Online の会社電子メールへのアクセスを保護および制御します。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

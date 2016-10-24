@@ -3,6 +3,7 @@ title: "Android for Work 向けのコンプライアンス ポリシー設定 | 
 description: "このトピックでは、Android for Work と互換性のある Android デバイスのデバイス コンプライアンス ポリシーの設定について説明します。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

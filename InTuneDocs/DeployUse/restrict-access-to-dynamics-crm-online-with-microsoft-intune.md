@@ -3,6 +3,7 @@ title: "Dynamics CRM Online への電子メール アクセスを制限する | 
 description: "条件付きアクセスで Dynamics CRM Online へのアクセスを保護および制御します。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article

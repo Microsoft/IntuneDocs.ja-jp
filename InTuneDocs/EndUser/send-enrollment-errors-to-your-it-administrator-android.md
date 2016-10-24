@@ -3,6 +3,7 @@ title: "IT 管理者に登録に関するエラーを送信する | Microsoft In
 description: "管理者に登録に関するエラーを送信する"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article
