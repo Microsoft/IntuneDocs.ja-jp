@@ -12,8 +12,8 @@ ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99005e15268a60cd801ef1c717088dff2f82927b
-ms.openlocfilehash: 8dce0689d5c4a0672b227eedf3ae738217eb17cf
+ms.sourcegitcommit: 4a69be67c3ef9f028c77c738de5f1fcbd59a8d33
+ms.openlocfilehash: 2c626cb0a36c38c7b5deeca0ff1e902018540634
 
 
 ---
@@ -40,7 +40,7 @@ ms.openlocfilehash: 8dce0689d5c4a0672b227eedf3ae738217eb17cf
 
 ## iOS (Enterprise 署名バージョンの Lookout アプリ)
 
-* **手順 1:** **iOS 管理**がデバイスにセットアップされていることを確認します。 デバイスで iOS 管理をセットアップする手順については、「[iOS および Mac のデバイス管理をセットアップする](Set up iOS and Mac device management.md)」を参照してください。
+* **手順 1:** **iOS 管理**がデバイスにセットアップされていることを確認します。 デバイスで iOS 管理をセットアップする手順については、「[iOS および Mac のデバイス管理をセットアップする](set-up-ios-and-mac-management-with-microsoft-intune.md)」を参照してください。
 
 * **手順 2:** Lookout for Work iOS アプリに**再署名**します。 Lookout は、iOS App Store 以外の場所で Lookout for Work iOS アプリを配布しています。 **アプリを配布する前に**、iOS Enterprise Developer Certificate でアプリに再署名する必要があります。 Lookout for Work アプリに再署名する詳細な手順については、Lookout サイトの「[Lookout for Work iOS app re-signing process](https://personal.support.lookout.com/hc/en-us/articles/114094038714)」(Lookout for Work iOS アプリの再署名プロセス) を参照してください。
 
@@ -49,7 +49,7 @@ ms.openlocfilehash: 8dce0689d5c4a0672b227eedf3ae738217eb17cf
   1.  [Azure Active Directory 管理ポータル](https://manage.windowsazure.com)にログインし、アプリケーション ページに移動します。
   2.  **ネイティブ クライアント アプリケーション**として **Lookout for Work iOS アプリ**を追加します。
   ![ネイティブ クライアント アプリ オプションが表示されたアプリの追加ダイアログのスクリーンショット](../media/mtp/aad-add-app.png)
-  
+
   3. **com.lookout.enterprise.yourcompanyname** は、IPA に署名したときに選択したカスタマー バンドル ID で置き換えます。
   4.  リダイレクト URI を追加します。**&lt;companyportal://code/>** の後に、元のリダイレクト URI を URL エンコードしたバージョンを続けます。
   5.  アプリに**デリゲートされたアクセス許可**を追加します。

@@ -13,8 +13,8 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: 4c72b39296c9c2f0fe435d57f1e829ba3114fc61
+ms.sourcegitcommit: 3306d772b074ddcfd1bfcf7178b32f9b371321e7
+ms.openlocfilehash: f57728bb41b750f53b021bed532de18187e764a0
 
 
 ---
@@ -52,7 +52,7 @@ Intune を使用してモバイル デバイス管理をセットアップする
 
 登録済みのモバイル デバイスでポータル サイトを開き、**[アプリ]** を選択して、**Microsoft Skype** をインストールします。
 
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] を使用したモバイル デバイス管理の詳細については、「[Intune でデバイスを登録するための前提条件](/intune/deploy-use/prerequisites-for-enrollment.md)」を参照してください。
+[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] を使用したモバイル デバイス管理の詳細については、「[Intune でデバイスを登録するための前提条件](/intune/deploy-use/prerequisites-for-enrollment)」を参照してください。
 
 
 ### 次のステップ
@@ -64,6 +64,6 @@ Intune を使用してモバイル デバイス管理をセットアップする
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 
