@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ Microsoft Intune の条件付きアクセスを使用して、iOS および Andr
 
 条件付きアクセスの動作の詳細については、[電子メールおよび O365 サービスへのアクセスを制限する](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)に関する記事をご覧ください。
 
-[!IMPORTANT] 条件付きアクセスを展開するには、Intune および Azure Active Directory Premium のサブスクリプションが必要です。ユーザーに両方のライセンスが付与されている必要があります。 **Enterprise Mobility + Security (EMS) のサブスクリプション**には、Intune および Azure Active Directory Premium のサブスクリプションが両方とも含まれます。 詳細については、「[Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility の価格) ページを参照してください。 EMS のサブスクリプションを持っていない場合は、Azure Active Directory Premium のサブスクリプションを取得できます。 「[Azure Active Directory の価格](https://azure.microsoft.com/en-us/pricing/details/active-directory/)」ページを参照してください。 
+[!IMPORTANT] 条件付きアクセスを展開するには、Intune および Azure Active Directory Premium のサブスクリプションが必要です。ユーザーに両方のライセンスが付与されている必要があります。 **Enterprise Mobility + Security (EMS) のサブスクリプション**には、Intune および Azure Active Directory Premium のサブスクリプションが両方とも含まれます。 詳細については、「[Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility の価格) ページを参照してください。 EMS のサブスクリプションを持っていない場合は、Azure Active Directory Premium のサブスクリプションを取得できます。 「[Azure Active Directory の価格](https://azure.microsoft.com/en-us/pricing/details/active-directory/)」ページを参照してください。
 
 対象となるユーザーがデバイスで Dynamics CRM アプリを使用しようとすると、次の評価が行われます。
 

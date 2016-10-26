@@ -2,8 +2,8 @@
 title: "Intune に Windows Phone 8.1 デバイスを登録する | Microsoft Intune"
 description: "Intune に Windows Phone 8.1 デバイスを登録する方法について説明します"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

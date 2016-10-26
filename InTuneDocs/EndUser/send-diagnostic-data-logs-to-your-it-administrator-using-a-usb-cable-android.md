@@ -2,8 +2,8 @@
 title: "USB ケーブルを使用して診断データのログを IT 管理者に送信する | Microsoft Intune"
 description: "USB ケーブルを使用してデータ ログを送信する"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article

@@ -2,8 +2,8 @@
 title: "Intune に Android デバイスを登録する | Microsoft Intune"
 description: "Intune に Android デバイスを登録する方法について説明します"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/09/2016
 ms.topic: article

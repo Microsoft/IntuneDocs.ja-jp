@@ -2,8 +2,8 @@
 title: "電子メールを使用して診断データのログを IT 管理者に送信する | Microsoft Intune"
 description: "Android デバイスで電子メールを使用してデータ ログを送信する"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article
