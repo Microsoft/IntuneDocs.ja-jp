@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 2fff575f84512304a119508b49486d02695a06bd
+ms.sourcegitcommit: 690c94c970a97057a65f3f3d5aafa86c235c6df0
+ms.openlocfilehash: 57ede1360c2f85df24dc0245a715d420165b348a
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 2fff575f84512304a119508b49486d02695a06bd
 
 # デバイスを暗号化する
 
-勤務先の会社や組織で、社内のファイルや電子メール、データにアクセスする Android デバイスの暗号化が義務付けられている場合、以下の手順に従ってお使いのデバイスを暗号化してください。 IT 管理者が要求する場合、暗号化の前に PIN またはパスワードを設定するように求められることがあります。
+勤務先の会社や組織で、社内のファイルや電子メール、データにアクセスする Android デバイスの暗号化が求められている場合、以下の手順に従ってお使いのデバイスを暗号化してください。 IT 管理者が要求する場合、暗号化の前に PIN またはパスワードを設定するように求められることがあります。
 
 電話の登録を解除しても、暗号化は維持されます。
 
@@ -64,6 +64,6 @@ ms.openlocfilehash: 2fff575f84512304a119508b49486d02695a06bd
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -3,8 +3,9 @@ title: "ポリシーを使用してデバイスの設定を管理する | Micros
 description: "Intune を使用して、管理する登録デバイスの設定と機能を制御するポリシーを作成して展開します。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
-ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 058843a1cdd0ca4c32c7cc4d7a901e7547da633e
 
 
 ---
@@ -61,6 +62,7 @@ Intune ポリシーの一覧については、「[Microsoft Intune policy refere
 
     - [iOS デバイス向けの設定](ios-policy-settings-in-microsoft-intune.md)
     - [Android デバイス向けの設定](android-policy-settings-in-microsoft-intune.md)
+    - [Android for Work デバイス向けの設定](android-for-work-policy-settings-in-microsoft-intune.md)
     - [Windows 8 および Windows 8.1 デバイス向けの設定](windows-configuration-policy-settings-in-microsoft-intune.md)
     - [Windows Phone 8.1 デバイス向けの設定](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
     - [Windows 10 デスクトップおよびモバイル デバイス向けの設定](windows-10-policy-settings-in-microsoft-intune.md)
@@ -115,7 +117,6 @@ Intune ポリシーの一覧については、「[Microsoft Intune policy refere
 - iOS と Mac OS X: 6 時間ごと
 - Android: 8 時間ごと
 - Windows Phone: 8 時間ごと
-- 登録済み Windows RT デバイス: 24 時間ごと
 - デバイスとして登録された Windows 8.1 および Windows 10 PC: 8 時間ごと
 
 登録してすぐのデバイスでは、チェックイン頻度が高くなります。頻度は次のとおりです。
@@ -212,6 +213,6 @@ Intune は Apple 構成ファイルのペイロードまたはカスタム Open 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

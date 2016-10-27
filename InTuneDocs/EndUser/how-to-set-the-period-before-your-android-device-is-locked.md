@@ -3,6 +3,7 @@ title: "Android デバイスがロックされる前に期間を設定する方�
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

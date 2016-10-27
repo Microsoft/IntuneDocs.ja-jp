@@ -3,8 +3,9 @@ title: "Wi-Fi 接続 | Microsoft Intune"
 description: "Wi-Fi プロファイルを使用すると、ユーザーはWi-Fi ネットワークに接続できます。"
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: beba0471f31a19dad78ddf71c07e323b18af18e8
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 7b49b7d9b6054f7d153359c1ee1b6cf5875fba32
 
 
 ---
@@ -29,7 +30,7 @@ Microsoft Intune の Wi-Fi プロファイルを使用して、ワイヤレス �
 
 1.   **Contoso Wi-Fi** ワイヤレス ネットワークへの接続に必要な設定が含まれている Wi-Fi プロファイルを作成します。
 
-2. iOS デバイスを所有するユーザーのグループにこのプロファイルをデプロイします。
+2.   iOS デバイスを所有するユーザーのグループにこのプロファイルをデプロイします。
 
 3.   ユーザーは、ワイヤレス ネットワークの一覧で新しい **Contoso Wi-Fi** ネットワークを参照し、このネットワークに簡単に接続できるようになります。
 
@@ -39,6 +40,8 @@ Microsoft Intune の Wi-Fi プロファイルを使用して、ワイヤレス �
 Wi-Fi プロファイルは次のプラットフォームに展開できます。
 
 -   Android 4.0 以降
+
+-   Android for Work   
 
 -   iOS 8.0 以降
 
@@ -52,10 +55,13 @@ Windows 8.1 または Windows 10 デスクトップまたはモバイルを実�
 
     -   Wi-Fi プロファイル (Android 4 以降)
 
+    -   Wi-Fi プロファイル (Android for Work)
+
     -   Wi-Fi プロファイル (iOS 8.0 以降)
 
     -   Wi-Fi プロファイル (Mac OS X 10.9 以降)
-
+    
+    
     このポリシーの種類に対して推奨される設定はありません。 カスタム ポリシーを作成する必要があります。
 
 3.  プロファイルの名前と説明を指定します。
@@ -173,6 +179,6 @@ Windows では、**netsh wlan** ユーティリティを使用して、既存の
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

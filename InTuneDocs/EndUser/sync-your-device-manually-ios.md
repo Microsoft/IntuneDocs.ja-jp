@@ -3,6 +3,7 @@ title: "iOS デバイスを手動で同期する | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 54633d57fc1898c70abf1f37cff08e2dd553e5a1
+ms.sourcegitcommit: 3aadcc1acccb5cf54ce4a452a2c639175fccd81b
+ms.openlocfilehash: f012f980015214769bae3b960b9ae4398463c111
 
 
 ---
@@ -23,17 +24,17 @@ ms.openlocfilehash: 54633d57fc1898c70abf1f37cff08e2dd553e5a1
 
 # iOS デバイスを手動で同期する
 
-アプリのインストールに時間がかかりすぎる場合は、次の手順に従って iOS デバイスを手動で同期すると、インストールの高速化に役立つことがあります。 同期機能は iOS のみに適用され、Mac OS X には適用されません。
+アプリのインストールに時間がかかりすぎる場合は、次の手順に従って iOS デバイスを手動で同期してください。 手動で同期すると、インストールを高速化できることがあります。 同期機能は iOS のみに適用され、Mac OS X には適用されません。
 
 1. iOS のポータル サイト アプリを開きます。
 
-2. **[デバイス]** セクションで、現在使用しているデバイスをタップします。 これは、チェック マークが表示されている一番左のデバイス タイルです。
+2. **[デバイス]** セクションで、現在使用しているデバイスを選択します。 これは、チェック マークが表示されている一番左のデバイス タイルです。
 
-    ![ios-sync-1-comp-portal-apps](./media/ios-sync-1-comp-portal-apps.png)
+    ![[デバイス] セクションが表示された [デバイス] 画面](./media/ios-sync-1-comp-portal-apps.png)
 
-3.  画面の右下にある **[同期]** ボタンをタップします。
+3.  画面の右下にある **[同期]** ボタンを選択します。
 
-    ![ios-sync-2-sync-button](./media/ios-sync-2-sync-button.png)
+    ![[同期] ボタンが表示されたデバイスの詳細](./media/ios-sync-2-sync-button.png)
 
 同期が完了するまでの間、回転する円が画面に表示されます。
 
@@ -41,7 +42,6 @@ ms.openlocfilehash: 54633d57fc1898c70abf1f37cff08e2dd553e5a1
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

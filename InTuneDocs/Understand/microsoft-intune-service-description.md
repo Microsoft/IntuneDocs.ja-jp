@@ -3,6 +3,7 @@ title: "サービスの説明 | Microsoft Intune"
 description: "Intune は、クラウドベースのサービスであり、Windows PC に加えて、iOS、Mac OS X、Android、および Windows のモバイル デバイスを管理するのに便利です。"
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "iOS デバイスが最新のオペレーティング システムのバ�
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article
@@ -14,21 +15,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: e9ffe9caddf6c0f6bf93f19b49672f197dc64708
+ms.sourcegitcommit: 994fbd726b5173ce18e284c94a658189f100a9b0
+ms.openlocfilehash: 99c41c884d1e6e4e0d1ba6d2edb0d902551ea21a
 
 
 ---
 
 
-# iOS デバイスが最新のオペレーティング システムのバージョンに準拠していない
+# iOS デバイスが最新のオペレーティング システムのバージョンの設定に準拠していない
 
-お使いの iOS デバイスは、最新バージョンのオペレーティング システムについての IT 管理者のポリシーに準拠していません。 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
+お使いの iOS デバイスは、使用できる最新バージョンのオペレーティング システムについての IT 管理者のポリシーに準拠していません。 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

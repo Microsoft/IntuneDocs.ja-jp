@@ -3,6 +3,7 @@ title: "ポータル サイトの概要 | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 78d0ff0d282cc91cb361dbb324a03778548dcf45
+ms.sourcegitcommit: 1a1975bb10d4a35f6ab52d724405f77300c40feb
+ms.openlocfilehash: f0c50a7a028fdc17acaad4e0498aaabfb58987a8
 
 
 ---
@@ -25,10 +26,10 @@ ms.openlocfilehash: 78d0ff0d282cc91cb361dbb324a03778548dcf45
 ## ポータル サイトの概要とサイトで実行できる操作
 Microsoft Intune ポータル サイトでは、会社や学校のデータとアプリにアクセスできます。 ポータル サイトは 2 通りの方法で入手できます。
 
-- ポータル サイト アプリをデバイスにインストールします。 一般的に、ポータル サイト アプリはお使いのデバイスのアプリ ストアで入手しますが、IT 管理者が他の方法を利用し、ポータル サイト アプリを代理でインストールすることもできます。
+- ポータル サイト アプリをデバイスにインストールします。 一般的に、ポータル サイト アプリはお使いのデバイスのアプリ ストアで入手しますが、IT 管理者がポータル サイト アプリを代理でインストールすることもできます。
 - IT 管理者が設定した[ポータル サイト Web サイト](http://portal.manage.microsoft.com)にアクセスします。
 
-ポータル サイトとポータル サイト Web サイトには微妙な違いがいくつかありますが、ほとんどの作業は同じように実行できます。 例:
+ポータル サイトとポータル サイト Web サイトには微妙な違いがいくつかありますが、ほとんどのタスクは同じように実行できます。 主に次のタスクを実行できます。
 
 - デバイスの登録
 - デバイスの状態の確認
@@ -57,23 +58,21 @@ Microsoft Intune ポータル サイトでは、会社や学校のデータと�
 
 ## ポータル サイトにはどのような種類のコンピューターまたはデバイスを追加できますか。
 
--   iPhone、iPad、Mac OS X
+-   iPhone、iPad、Mac OS X デバイス
 
 -   Android モバイル デバイス
 
 -   Windows デバイス
-    -   10 モバイル
+    -   [Windows] 10 Mobile
     -   [Windows] 10 Desktop
     -   Windows Phone 8。1
     -   Windows 8.1
-    -   Windows RT デバイス
-    -   Windows Phone 8
     -   iPhone、iPad、Mac OS X
     -   Android モバイル デバイス
 
 
 ## ポータル サイトからコンピューターまたはデバイスを削除できますか。
-はい。ポータル サイトのコンピューターまたはデバイスは、削除またはリセットできます。 **削除**と**リセット**には違いがあります。
+ポータル サイトのコンピューターまたはデバイスは、削除またはリセットできます。 **削除**と**リセット**には違いがあります。
 
 コンピューターまたはデバイスを*削除*すると、デバイスの登録が Intune で解除されます。 登録が解除されると、そのデバイスからポータル サイトにはアクセスできなくなります。また、一部の会社データがデバイスから削除される場合があります。 ポータル サイトからデバイスを削除する方法については、次のいずれかのリンクを参照してください。
 
@@ -100,6 +99,6 @@ Microsoft Intune ポータル サイトでは、会社や学校のデータと�
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: "ビジネス向け Windows ストアのアプリの管理 | Microsoft In
 description: "Intune コンソールからボリューム購入したアプリを管理および展開する場合に、Microsoft Intune をビジネス向け Windows ストアに接続する"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

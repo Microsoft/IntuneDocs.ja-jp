@@ -3,8 +3,9 @@ title: "KNOX が許可するアプリとブロックするアプリ |Microsoft I
 description: "KNOX が許可するアプリとブロックするアプリの一覧を作成するためのカスタム プロファイル。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/09/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
-ms.openlocfilehash: 937e291f193f61329598395baa63c24d7fefa25f
+ms.sourcegitcommit: c7679d624ba22b2a062ef2534a642e38a5f57fde
+ms.openlocfilehash: 273627573f58e1bde4fd19c548ce87639f25ca4b
 
 
 
@@ -23,7 +24,7 @@ ms.openlocfilehash: 937e291f193f61329598395baa63c24d7fefa25f
 
 次のいずれかを作成する Microsoft Intune のカスタム ポリシーを作成するには、このトピックの手順を使用します。
 
-- デバイスでの実行をブロックするアプリの一覧。 他のアプリは実行を許可されません。 この一覧のアプリは、ポリシー適用時に既にインストールされていた場合でも、実行をブロックされます。
+- デバイスでの実行をブロックするアプリの一覧。 この一覧のアプリは、ポリシー適用時に既にインストールされていた場合でも、実行をブロックされます。
 - デバイスのユーザーが Google Play ストアからインストールできるアプリの一覧。 一覧のアプリのみをインストールできます。 他のアプリはストアからインストールできません。
 
 これらの設定は、Samsung KNOX を実行するデバイスでのみ使用できます。
@@ -51,7 +52,8 @@ ms.openlocfilehash: 937e291f193f61329598395baa63c24d7fefa25f
 
 4. **[OK]** をクリックし、**[ポリシーの保存]** をクリックします。 
 
->[ヒント] Google Play ストアでアプリを参照して、アプリのパッケージ ID を確認できます。 パッケージ ID は、アプリのページの URL に含まれます。 たとえば、Microsoft Word アプリのパッケージ ID は **com.microsoft.office.word** です。
+>[!TIP]
+> Google Play ストアでアプリを参照して、アプリのパッケージ ID を確認できます。 パッケージ ID は、アプリのページの URL に含まれます。 たとえば、Microsoft Word アプリのパッケージ ID は **com.microsoft.office.word** です。
 
 各対象デバイスの次のチェックイン時に、アプリの設定が適用されます。
 
@@ -70,6 +72,6 @@ ms.openlocfilehash: 937e291f193f61329598395baa63c24d7fefa25f
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

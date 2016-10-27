@@ -11,6 +11,7 @@
 ### [MDM の前提条件](prerequisites-for-enrollment.md)
 #### [iOS と Mac の管理](set-up-ios-and-mac-management-with-microsoft-intune.md)
 #### [Android の管理](set-up-android-management-with-microsoft-intune.md)
+#### [Android for Work の管理](set-up-android-for-work.md)
 #### [Windows デバイスの管理 ](set-up-windows-device-management-with-microsoft-intune.md)
 #### [Windows 10 Mobile と Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 ### [企業所有のデバイスの管理](manage-corporate-owned-devices.md)
@@ -34,6 +35,7 @@
 ### [ポリシーを使用したデバイスの設定と機能の管理](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS の設定](ios-policy-settings-in-microsoft-intune.md)
 #### [Android と Samsung KNOX の設定](android-policy-settings-in-microsoft-intune.md)
+#### [Android for Work の設定](android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Windows 8 と Windows 8.1 の設定](windows-configuration-policy-settings-in-microsoft-intune.md)
 #### [Windows Phone 8.1 の設定](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
 #### [Windows 10 デスクトップおよびモバイルの設定](windows-10-policy-settings-in-microsoft-intune.md)
@@ -72,6 +74,7 @@
 #### [Intune のクライアント PC のライセンス契約を管理する](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [アプリの展開](deploy-apps.md)
 ### [デバイスと PC にアプリを展開する](deploy-apps-in-microsoft-intune.md)
+### [アプリを Android for Work デバイスに展開する](android-for-work-apps.md)
 ### [アプリの監視](monitor-apps-in-microsoft-intune.md)
 ### [ボリューム購入アプリを管理する](manage-volume-purchased-apps-in-microsoft-intune.md)
 #### [ボリューム購入した iOS アプリを管理する](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
@@ -80,19 +83,21 @@
 ## [アプリの構成](update-apps-using-microsoft-intune.md)
 ### [アプリを更新する ](update-apps-using-microsoft-intune.md)
 ### [iOS アプリ構成ポリシー](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
+### [Android for Work アプリ構成ポリシー](afw-app-configuration-policy.md)
 ### [iOS モバイル アプリ プロビジョニング プロファイル](ios-mobile-app-provisioning-profiles.md)
 ### [インターネット アクセスを管理する](manage-internet-access-using-managed-browser-policies.md)
 
 
 ## [アプリとデータを保護する](protect-apps-and-data-with-microsoft-intune.md)
 ### [デバイス コンプライアンス ポリシー](introduction-to-device-compliance-policies-in-microsoft-intune.md)
-#### [デバイス コンプライアンス ポリシーを作成する](create-a-device-compliance-policy-in-microsoft-intune.md)
-#### [Android の場合](android-compliance-policy-settings-in-microsoft-intune.md)
-#### [iOS の場合](ios-compliance-policy-settings-in-microsoft-intune.md)
-#### [Windows と Windows Phone の場合](windows-compliance-policy-settings-in-microsoft-intune.md)
+#### [デバイス コンプライアンス ポリシーの作成](create-a-device-compliance-policy-in-microsoft-intune.md)
+#### [ Android](android-compliance-policy-settings-in-microsoft-intune.md)
+#### [Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
+#### [iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
+#### [Windows と Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [デバイス コンプライアンス ポリシーを展開する](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### [電子メール、O365、その他のサービスへのアクセスを制限する](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+### [デバイス コンプライアンスに基づいてアクセスを制限する](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 #### [Exchange Online と新しい Exchange Online Dedicated](restrict-access-to-exchange-online-with-microsoft-intune.md)
@@ -101,7 +106,9 @@
 #### [Skype for Business Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 #### [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [電子メールへのアクセスを制限する: 例](restrict-email-access-example-scenarios.md)
-
+### [ポリシーで管理されたアプリにのみ Office 365 サービスへのアクセスを許可する](allow-policy-managed-apps-access-to-o365.md)
+#### [Exchange Online](mam-ca-for-exchange-online.md)
+#### [ADAL がないアプリをブロックする](block-apps-with-no-modern-authentication.md)
 ### [ネットワークへのアクセスを制限する (Cisco ISE)](restrict-access-to-networks.md)
 ### [デバイス、ネットワーク、アプリケーションのリスクに基づいてアクセスを制限する](restrict-access-based-on-device-network-app-risk.md)
 #### [Lookout デバイス脅威保護をセットアップする](set-up-your-subscription-with-lookout-mtp.md)
@@ -133,13 +140,13 @@
 ### [アプリをインベントリから削除する ](retire-apps-using-microsoft-intune.md)
 ### [管理対象の業務用アプリのデータをワイプする](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
-## [エンド ユーザーへの通知内容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+## [エンドユーザー エクスペリエンスに関するリソース](what-to-tell-your-end-users-about-using-microsoft-intune.md)
 
 # [アプリの開発とカスタマイズ](/intune/develop/intune-app-sdk)
 
 # [トラブルシューティング](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

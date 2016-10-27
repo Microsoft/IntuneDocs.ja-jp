@@ -2,7 +2,8 @@
 title: "Microsoft による iOS の使用状況データの収集を無効にする | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "MAM ポリシーを使用してアプリ データを保護する | Micr
 description: "このトピックでは、モバイル アプリ管理ポリシーが、会社データの保護、データ損失の防止、および個人用情報と作業情報の個別管理に役立つ仕組みについて説明します。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 6163f2b2a1c562e5315785b8b4c486fe2347f89d
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: e751619f6d65e10099d1f8ff5a2342185181af69
 
 
 ---
@@ -122,8 +123,6 @@ MDM ソリューションに登録されていない BYOD デバイスの場合�
 
 たとえば、エンド ユーザーが仕事用のアカウントを使用して OneDrive アプリが起動した場合、個人のストレージにファイルを移動できません。 ただし、エンド ユーザーが個人のアカウントで OneDrive を使用する場合、個人の OneDrive から制限なしでデータをコピーしたり、移動したりできます。  
 
-MAM ポリシーに関連付けられているアプリの使用方法と、複数の ID に対応しているアプリを使用するとき、作業コンテキストでのみ MAM ポリシーを適用する方法の詳細については、「[using apps with multi-identity support (複数 ID 対応アプリの使用)](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md#using-apps-with-multi-identity-support)」をご覧ください。
-
 すべての Office モバイル アプリは複数 ID をサポートしています。
 
 ##  次のステップ
@@ -133,6 +132,6 @@ MAM ポリシーに関連付けられているアプリの使用方法と、複�
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

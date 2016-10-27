@@ -3,8 +3,9 @@ title: "ユーザーとデバイスの管理にグループを使用する | Mic
 description: "グループ ワークスペースを使用してグループを作成および管理します。"
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 09/27/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
-ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
+ms.sourcegitcommit: d92c9ffe42b36770a32c28941de3c402aec9dd68
+ms.openlocfilehash: 896e8cf77c0898fca7838b24386db745b01f4022
 
 
 ---
@@ -36,11 +37,11 @@ ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 Enterprise Mobility + Security 全体でグループ化とターゲット設定の操作環境を統一してほしいという要望が寄せられています。 それにお応えします。 フィードバックに基づき、間もなく Intune のグループを Azure Active Directory ベースのセキュリティ グループに変換します。 この変更により、Intune と Azure Active Directory (Azure AD) のグループ管理が統一されます。 新しい操作環境では、サービス間でグループを複製する必要がなくなります。 また、Windows PowerShell と Microsoft Graph を使用するオプションによる拡張性も提供されます。
 
 ### 現時点での影響
-現時点では、この変更による影響はありません。 ただし、次のことが予定されています。
+既に Intune をご利用の場合、現時点では、この変更による影響はありません。 ただし、次のことが予定されています。
 
--   2016 年 9 月には、毎月のサービス リリース後にプロビジョニングされる新しいアカウントで、Intune ユーザー グループではなく、Azure AD セキュリティ グループが使われるようになります。   
--   2016 年 10 月の毎月のサービス リリース後にプロビジョニングされる新しいアカウントでは、ユーザー ベースのグループとデバイス ベースのグループの両方が Azure AD ポータルで管理されるようになります。 既存のお客様への影響はありません。
--   2016 年 11 月には、Intune 製品チームは既存顧客の新しい Azure AD ベースのグループ管理操作環境への移行を開始します。 現在 Intune に存在するすべてのユーザー グループとデバイス グループが、Azure AD セキュリティ グループに移行されます。 移行は 2016 年 11 月から一括して行われます。 お客様の日常業務への影響を最小限に抑えることができ、お客様のユーザーに影響がないものと予想されるまで、移行は開始されません。 また、アカウント移行前にはお客様にご連絡します。
+-   新規アカウントは、Intune の*ユーザー* グループではなく、Azure AD セキュリティ グループを使用するようになります。   
+-   2016 年 11 月の月例サービス リリース後にプロビジョニングされる新しいアカウントでは、ユーザー ベースのグループとデバイス ベースのグループの両方が Azure AD ポータルで管理されるようになります。 既存のお客様への影響はありません。
+-   2016 年 12 月には、Intune 製品チームは既存顧客の新しい Azure AD ベースのグループ管理操作環境への移行を開始します。 現在 Intune に存在するすべてのユーザー グループとデバイス グループが、Azure AD セキュリティ グループに移行されます。 お客様の日常業務への影響を最小限に抑えることができ、お客様のユーザーに影響がないものと予想されるまで、移行は開始されません。 また、アカウント移行前にはお客様にご連絡します。
 
 
 ### 新しいグループ エクスペリエンスへの移行の方法と時期
@@ -204,6 +205,6 @@ Microsoft Intune 管理コンソールの **[グループ]** ワークスペー�
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO2-->
 
 

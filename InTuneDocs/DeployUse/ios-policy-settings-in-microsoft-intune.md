@@ -3,6 +3,7 @@ title: "iOS ポリシー設定 | Microsoft Intune"
 description: "Intune で管理する iOS デバイスの設定と機能を制御するポリシーを作成します。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article
@@ -382,6 +383,6 @@ Microsoft Intune の **iOS カスタム ポリシー**を使用して、[Apple C
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

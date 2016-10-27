@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: cb7510d92019f27e15ecc7d8666df3f4e09c8707
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: ebd1300c490f3d69110a5f1920fd25d1dc5cb850
 
 
 ---
@@ -23,11 +23,7 @@ ms.openlocfilehash: cb7510d92019f27e15ecc7d8666df3f4e09c8707
 
 # Intune から Windows デバイスの登録を解除するとどうなりますか。
 
-登録を解除した場合の詳細については、お使いのデバイスの種類に対応する、上記「この記事の内容」セクションに示されているリンクを使用してください。
-
-- [Windows 10、Windows 8.1、Windows 8、Windows 7、Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
-- [Windows 10 Mobile、Windows Phone 8.1 または Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
-- [Windows 8.1 を実行している Windows RT または Windows RT](#windows-rt-running-windows-8-1-or-windows-rt)
+お使いのデバイスの種類に関する情報については、このページの右側の "この記事内の項目" の下にあるリンクを使用してください。
 
 
 ## Windows 10、Windows 8.1、Windows 8、Windows 7、Vista
@@ -55,7 +51,7 @@ ms.openlocfilehash: cb7510d92019f27e15ecc7d8666df3f4e09c8707
 
 -   お使いのデバイスで、ファイルの共有または内部 Web サイトなど、一部の会社リソースにアクセスできなくなる可能性があります。
 
-## Windows 10 Mobile、Windows Phone 8.1、Windows Phone 8
+## Windows 10 Mobile および Windows Phone 8.1
 
 -   デバイスからポータル サイト アプリがアンインストールされます。これにより、デバイスがポータル サイトに表示されなくなります。また、ポータル サイト アプリまたはポータル サイト Web サイトからアプリをインストールできなくなります。
 
@@ -66,7 +62,7 @@ ms.openlocfilehash: cb7510d92019f27e15ecc7d8666df3f4e09c8707
     > [!IMPORTANT]
     > 例外は暗号化のポリシーのみです。暗号化のポリシーは以降も適用されます。 会社のポリシーで、Windows Phone の暗号化が必須になっていた場合、電話の暗号化を解除するには、Windows Phone の **[設定]** メニューを使用して電話をリセットする必要があります。
 
-## Windows 8.1 を実行している Windows RT または Windows RT
+## Windows 8.1 を実行している Windows RT
 
 -   デバイスからポータル サイト アプリがアンインストールされます。これにより、デバイスがポータル サイトに表示されなくなります。また、ポータル サイトからアプリをインストールできなくなります。
 
@@ -93,6 +89,6 @@ Windows RT デバイスを削除すると、次のような結果になります
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 
