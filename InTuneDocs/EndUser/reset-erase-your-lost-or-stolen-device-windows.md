@@ -1,8 +1,9 @@
 ---
 title: "紛失したまたは盗難にあった Windows デバイスをリセット (消去) する | Microsoft Intune"
-description: 
+description: "紛失したまたは盗難にあった Windows デバイスをリセットする"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: c83dc6768dcd000fefedd4bae4ef87a2d69cef3b
+ms.sourcegitcommit: f2283b5896541e58d7ae515cab9d4faa1e9df735
+ms.openlocfilehash: 4a206e30c1334681f82b8077da6191ef3e28e4b1
 
 
 ---
@@ -23,11 +24,11 @@ ms.openlocfilehash: c83dc6768dcd000fefedd4bae4ef87a2d69cef3b
 
 # 紛失したまたは盗難にあったデバイスをリセット (消去) する
 
-Intune に登録されている携帯電話が紛失や盗難にあった場合は、[会社のポータル Web サイト](http://portal.manage.microsoft.com)を使用して、携帯電話を出荷時の既定設定にリセットできます。
+Intune に登録されているデバイスが紛失や盗難にあった場合は、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)を使用して、携帯電話を出荷時の既定設定にリセットできます。
 
 
 > [!WARNING]
-> デバイスを出荷時の状態にリセットすることで、私的な情報と仕事の情報の両方をデバイスから削除することができます。 デバイスをリセットした場合の影響については、「[ポータル サイトを使用してデバイスをリセットするとどうなるか](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)」を参照してください。
+> デバイスを出荷時の状態にリセットすることで、私的な情報と仕事の情報の両方をデバイスから削除することができます。 デバイスをリセットした場合の影響については、「[What happens if you reset your device using the Company Portal (ポータル サイトを使用してデバイスをリセットした場合の影響)](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)」を参照してください。
 
 
 1.  ブラウザーで、[会社のポータル Web サイト](http://portal.manage.microsoft.com)を開き、職場のアカウントにサインインします。
@@ -40,8 +41,6 @@ Intune に登録されている携帯電話が紛失や盗難にあった場合�
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

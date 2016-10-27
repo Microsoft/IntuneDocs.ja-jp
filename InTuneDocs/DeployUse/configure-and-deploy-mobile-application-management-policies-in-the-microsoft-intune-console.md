@@ -3,6 +3,7 @@ title: "Intune コンソールで MAM ポリシーを構成する |Microsoft Int
 description: "Microsoft Intune のモバイル アプリケーション管理ポリシーでは、会社のコンプライアンスとセキュリティ ポリシーに合わせて展開するアプリの機能を変更できます。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
-ms.openlocfilehash: a4ab7287b2328fccbea5203bbfe5d87cbfc912b8
+ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
+ms.openlocfilehash: d7978e558c68ad3209f1503619a9113dba126028
 
 
 ---
@@ -37,7 +38,7 @@ Microsoft Intune のモバイル アプリケーション管理 (MAM) ポリシ�
 
 アプリに制限を適用するには、アプリに Microsoft Intune アプリ SDK を組み込む必要があります。 この種類のアプリを取得するには、次の 3 つの方法があります。
 
--   **ポリシー管理型アプリを使用する**。 ポリシー管理型アプリにはアプリ SDK が組み込まれています。 この種類のアプリを追加するには、iTunes ストアや Google Play などのアプリ ストアからアプリへのリンクを指定します。 それ以上の処理は、この種類のアプリには必要ありません。 詳細については、「[Microsoft Intune のモバイル アプリケーション管理ポリシーと共に使用できるアプリ](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)」の一覧を参照してください。
+-   **ポリシー管理型アプリを使用する**。 ポリシー管理型アプリにはアプリ SDK が組み込まれています。 この種類のアプリを追加するには、iTunes ストアや Google Play などのアプリ ストアからアプリへのリンクを指定します。 それ以上の処理は、この種類のアプリには必要ありません。 詳細については、「[Microsoft Intune のモバイル アプリケーション管理ポリシーと共に使用できるアプリ](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)」の一覧を参照してください。
 
 -   **ラップされたアプリを使用する**。 ラップされたアプリとは、Microsoft Intune アプリ ラッピング ツールを使用して、アプリ SDK を含むように再パッケージされたアプリのことです。 通常、このツールは、社内で作成された企業アプリの処理に使用されます。 アプリ ストアからダウンロードされたアプリの処理には使用できません。 詳細については、「[Microsoft Intune アプリ ラッピング ツールでモバイル アプリケーション管理のために iOS アプリを準備する](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)」および「[Microsoft Intune アプリ ラッピング ツールでモバイル アプリケーション管理のために Android アプリを準備する](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)」を参照してください。
 
@@ -136,7 +137,7 @@ Outlook アプリの使用例を次に示します。
     |**[オフラインの猶予期間]**|デバイスがオフラインの場合は、アプリのアクセス要件を再確認するまでの時間を指定します。|
     |**[アプリ データの暗号化]**|この設定はこのアプリに関連付けられているすべてのデータを暗号化するように指定します。 これには、SD カードなどの外部に格納されたデータが含まれます。<br /><br />**iOS 用の暗号化**<br /><br />Intune モバイル アプリケーション管理ポリシーに関連付けられているアプリでは、データは OS によって提供されるデバイス レベルの暗号化を使用して、格納中に暗号化されます。 これは、IT 管理者によって設定されるデバイスの暗証番号ポリシーを介して有効になります。 暗証番号が必要な場合、モバイル アプリケーション管理ポリシーの設定に従ってデータが暗号化されます。 Apple のドキュメントで説明されているように、 [iOS で使用されるモジュールは、FIPS 140-2 で認定されています](http://support.apple.com/en-us/HT202739)。<br /><br />**Android 用の暗号化**<br /><br />Intune モバイル アプリケーション管理ポリシーに関連付けられているアプリでは、暗号化は Microsoft によって提供されます。 データは、ファイル I/O 操作中に同期的に暗号化されます。  デバイス ストレージ上のコンテンツは常に暗号化されます。 この暗号化方法は FIPS 140-2 で認定されていません。|
     |[**画面キャプチャをブロック** (Android デバイスのみ) ]|この設定はこのアプリを使用するときに、デバイスの画面キャプチャ機能をブロックするように指定します。|
-    
+
 4. 終了したら、**[ポリシーの保存]** を選びます。
 
 **[ポリシー]** ワークスペースの **[構成ポリシー]** ノードに新しいポリシーが表示されます。
@@ -193,6 +194,6 @@ Outlook アプリの使用例を次に示します。
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

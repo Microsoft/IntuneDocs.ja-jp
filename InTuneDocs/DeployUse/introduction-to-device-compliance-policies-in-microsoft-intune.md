@@ -3,6 +3,7 @@ title: "デバイス コンプライアンス ポリシー | Microsoft Intune"
 description: "このトピックでは、デバイス コンプライアンス ポリシーの内容とその仕組みに関して、理解しておくべき概念について説明します。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

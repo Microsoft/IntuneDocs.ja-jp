@@ -3,6 +3,7 @@ title: "PowerShell を使用して Intune ライセンスを管理する | Micro
 description: "PowerShell を使用して Intune ライセンスを管理する"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

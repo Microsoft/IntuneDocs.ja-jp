@@ -3,16 +3,17 @@ title: "Azure Active Directory グループへの移行 | Microsoft Intune"
 description: "Intune から Azure AD へのグループの移行方法"
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angerobe
-ms.date: 09/27/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 translationtype: Human Translation
-ms.sourcegitcommit: d7a1da3b9e1e6ce3e2034cc5e8e1926a671276b8
-ms.openlocfilehash: f7aa05f4a569392be60522437508fdb78f56c55c
+ms.sourcegitcommit: d92c9ffe42b36770a32c28941de3c402aec9dd68
+ms.openlocfilehash: 08bcc258f64e6385ae6fa648ddb8f2b5fe68942e
 
 
 ---
@@ -21,10 +22,8 @@ ms.openlocfilehash: f7aa05f4a569392be60522437508fdb78f56c55c
     
 Enterprise Mobility とセキュリティ全体でグループおよびターゲットの操作環境を統一した方がよいというフィードバックに基づき、Intune のグループを Azure Active Directory ベースのセキュリティ グループに変換しています。 これにより、Intune と Azure Active Directory (Azure AD) でグループ管理が統一されます。 新しいエクスペリエンスでは、サービス間でグループを複製する必要がなく、PowerShell と Graph を使用する拡張性が提供されます。 
 
-既存の Intune のお客様につきましては、11 月から、Azure AD ベースの新しいグループ管理の操作環境への移行が開始されます。 Intune のユーザー グループおよびデバイス グループは、Azure AD セキュリティ グループに移行されます。 お客様の日常の業務への影響を最小限に抑え、エンド ユーザーへの影響がなくなるまで、移行は開始されません。 また、アカウント移行の前には通知をいたします。
-
 ### 新しいグループ エクスペリエンスへの移行の方法と時期
-現在のお客様は時間をかけて移行されます。 移行スケジュールの確定を現在行っており、このトピックは数週間以内に詳細情報に更新されます。 移行の前には通知が送られます。 移行に問題がある場合は、移行チーム ([intunegrps@microsoft.com](mailto:intunegrps@microsoft.com)) に問い合わせてください。
+現在のお客様は、2016 年 12 月以降に時間をかけて移行されます。 お客様のグループが移行される前に、お知らせいたします。 移行に問題がある場合は、移行チーム ([intunegrps@microsoft.com](mailto:intunegrps@microsoft.com)) に問い合わせてください。
 
 ### 使用できるようになる新機能
 次のような新機能が導入されます。 
@@ -116,6 +115,6 @@ Intune 機能のすべてが Azure 管理ポータルに移行されると (2017
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

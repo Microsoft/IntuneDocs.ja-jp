@@ -3,6 +3,7 @@ title: "Intune ポータル サイト アプリをインストールしてサイ
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: b23073a0bad085c8994f5e9b7c1b46e2985cd05c
+ms.sourcegitcommit: 1d133011004fa9c684f81c7adc085dc43a4a2ee4
+ms.openlocfilehash: 29bc67a9ce4120cbb9f157c8d0eefb78dce020ca
 
 
 ---
@@ -29,7 +30,7 @@ ms.openlocfilehash: b23073a0bad085c8994f5e9b7c1b46e2985cd05c
 
 2.  **Microsoft Intune ポータル サイト アプリ**をダウンロードします。
 
-    ![download-ios-comp-portal-app](./media/ios-cpinstall-1-cpinstore.png)
+    ![Intune ポータル サイト アプリをダウンロードする](./media/ios-cpinstall-1-cpinstore.png)
 
 3.  ポータル サイト アプリを開き、職場または学校の電子メール アドレスとパスワードを入力して、**[サインイン]** をタップします。
 
@@ -39,7 +40,6 @@ ms.openlocfilehash: b23073a0bad085c8994f5e9b7c1b46e2985cd05c
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

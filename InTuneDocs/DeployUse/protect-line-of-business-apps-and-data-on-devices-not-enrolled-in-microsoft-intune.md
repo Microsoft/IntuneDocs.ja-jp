@@ -3,6 +3,7 @@ title: "登録されていないデバイスで LOB アプリを保護する |Mi
 description: "このトピックでは、データの損失を防ぐことができるモバイル アプリ管理ポリシーを適用できるように、カスタム基幹業務アプリを準備する方法について説明します。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

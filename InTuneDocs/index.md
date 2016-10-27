@@ -3,19 +3,20 @@ experimental: true
 experiment_id: lindavr-hubpage-20160925
 asset_id: 3414479e-e548-4753-bcf7-6322b43221fd
 layout: HubPage
-title: "Intune ドキュメント - MDM ドキュメント | Microsoft ドキュメント"
+title: "Intune のドキュメント | Microsoft ドキュメント"
 description: "Microsoft Intune のテクニカル ドキュメント - モバイル デバイスとアプリケーションの管理"
-keywords: "Intune ドキュメント、MDM ドキュメント、モバイル デバイス管理のドキュメント、モバイル デバイスとアプリケーション管理のドキュメント"
-author: jeffgilb
-manager: jeffgilb
-ms.date: 04/28/2016
+keywords: "Intune ドキュメント, アプリ管理, デバイス管理, MDM ドキュメント, MAM ドキュメント"
+author: arob98
+ms.author: angrobe
+manager: angrobe
+ms.date: 10/07/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: bbab228b86bbec49bf68c7d91a05c4d0e7f37209
-ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
+ms.sourcegitcommit: 63317c16082b1fb2764bd698c97fa1d435f58dfe
+ms.openlocfilehash: 1108adb5622c3cdb7720e07a53a35957ce80cca6
 
 
 ---
@@ -24,20 +25,20 @@ ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
     <section id="hero-content">
       <h1>Intune ドキュメント</h1>
       <h2>モバイル デバイスとモバイル アプリケーションを管理するサービスである Microsoft Intune を展開および管理する方法について説明します。</h2>
-      <h3>Configuration Manager で Intune を管理している場合は、 <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">Configuration Manager のドキュメントを参照してください &rarr;</a></h3>
+      <h3>Configuration Manager で Intune を管理している場合は、 <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management" target="_blank">ハイブリッド モバイル デバイス管理に関するトピックを参照してください &rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> おすすめコンテンツ</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/intune/understand-explore/introduction-to-microsoft-intune">Microsoft Intune の概要</a></li>
-          <li><a href="/intune/understand-explore/common-ways-to-use-intune">Intune に依存する一般的なシナリオ</a></li>
-          <li><a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">Intune のクイック スタート ガイド</a></li>
+          <li><a href="/intune/whats-new/whats-new-in-microsoft-intune">新機能</a></li>
+          <li><a href="/intune/understand-explore/common-ways-to-use-intune">Intune の一般的な使用方法</a></li>
+          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">アプリ データを保護する</a></li>
         </ul>
         <ul class="column column-half">
-          <li><a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">デバイスとアプリのライフサイクルの概要</a></li>
-          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">アプリ データを保護する</a></li>
-          <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">Intune に関するエンド ユーザーへの通知内容</a></li>
+          <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">会社のリソースへのアクセスを保護する</a></li>
+          <li><a href="/intune/develop/intune-app-sdk-ios">iOS 用 Microsoft Intune アプリ SDK 開発者ガイド</a></li>
+          <li><a href="/intune/develop/intune-app-sdk-android">Android 用 Microsoft Intune アプリ SDK 開発者ガイド</a></li>
         </ul>
       </div>
     </section>
@@ -284,6 +285,6 @@ ms.openlocfilehash: a478d1dce92e9bf9de2b485e613c607ebc2de88c
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

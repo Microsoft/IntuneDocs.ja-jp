@@ -3,6 +3,7 @@ title: "Azure AD を使用する多要素認証 | Microsoft Intune"
 description: "デバイス登録で Azure AD の多要素認証を要求する方法。"
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angerobe
 ms.date: 09/22/2016
 ms.topic: article

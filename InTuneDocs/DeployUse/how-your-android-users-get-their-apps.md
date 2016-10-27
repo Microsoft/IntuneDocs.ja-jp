@@ -3,6 +3,7 @@ title: "Android ユーザーがアプリを入手する方法 | Microsoft Intune
 description: "エンド ユーザーが Android アプリを入手する方法"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article
@@ -13,15 +14,15 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a3db9269bf4f93021d16d8ea23a2a13b87b43677
-ms.openlocfilehash: d3d37b9bcf8cc5833b4e11185b49902e26a625dc
+ms.sourcegitcommit: 627914b2ac877c1b5ff5bc95f7f2098ab8988250
+ms.openlocfilehash: 98e712fb852c89c1d092b87482f30ada33010a33
 
 
 ---
 
 
 # Android ユーザーがアプリを入手する方法
-Microsoft Intune を通して配布したアプリを Android エンド ユーザーがどこでどのように取得するかについて説明します。 情報は、Samsung KNOX デバイスとネイティブの Android デバイスでは異なる場合があります。
+Microsoft Intune を通して配布したアプリを Android エンド ユーザーがどこでどのように取得するかについて説明します。 この情報はデバイスの種類 (Android ネイティブ デバイスや Samsung Knox デバイス) によって異なる可能性があります。
 
 ## ネイティブの Android デバイス (Samsung KNOX 以外)
 
@@ -39,9 +40,9 @@ Microsoft Intune を通して配布したアプリを Android エンド ユー�
 
 アプリは、以下に示すように管理することも管理外にすることも可能です。 アプリを管理するプロセスは、すべての種類の Android デバイスで共通です。
 
-**管理されているアプリ** - ポリシーによって管理できる、Intune によって "ラップされた" アプリまたは Intune モバイル アプリケーション管理 (MAM) ソフトウェア開発キット (SDK) で構築されたアプリです。 これらのアプリは Intune によって管理することができます。また、これらのアプリにはアプリケーション ポリシーを適用することができます。
+**管理対象のアプリ** - ポリシーで管理できるアプリです。 Intune によって "ラップ" されているか、Intune モバイル アプリケーション管理 (MAM) ソフトウェア開発キット (SDK) で構築されています。 これらのアプリは Intune によって管理することができます。また、これらのアプリにはアプリケーション ポリシーを適用することができます。
 
-**管理されていないアプリ** - ポリシーによって管理でき、Intune によってラップされていないアプリまたは Intune MAM SDK を組み込んでいないアプリです。 これらのアプリにアプリケーション ポリシーを適用することはできません。
+**管理対象外のアプリ** - ポリシーで管理できないアプリです。 Intune によってラップされていないか、Intune MAM SDK を組み込んでいません。 これらのアプリにアプリケーション ポリシーを適用することはできません。
 
 ### 関連項目
 [Microsoft Intune でアプリを追加する](/intune/deploy-use/add-apps)
@@ -52,6 +53,6 @@ Microsoft Intune を通して配布したアプリを Android エンド ユー�
 
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

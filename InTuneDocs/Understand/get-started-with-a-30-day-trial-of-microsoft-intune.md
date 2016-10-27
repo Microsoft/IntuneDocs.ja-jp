@@ -3,6 +3,7 @@ title: "Intune の評価ガイド | Microsoft Intune"
 description: "Intune の無料の 30 日間評価版を設定する方法の概要と前提条件"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,8 +14,8 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: cbf863619a385d596630ee4ff0b216a4cbbe6cb7
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 3973ac11d4734b17f905e88259863d7ddb59c1f4
 
 
 ---
@@ -37,12 +38,12 @@ Intune の使用を開始する前に、以下のものが必要となります�
 
 -   既存の Microsoft Online Services アカウントがある場合、そのアカウントの管理者の資格情報が必要です。 そのようなアカウントが存在しない場合、またはこの Intune テナントを評価目的でのみ使用する場合、テナント管理者の資格情報は不要です。
 
--   iOS または Windows Phone デバイスを Intune 評価版で管理する場合、証明書 (またはキー) とそれを取得するためのアカウントが必要になります (以下の表を参照してください)。 Android デバイスの場合、特別な証明書は必要ありません。
+-   iOS または Windows Phone 8.1 デバイスを Intune 評価版で管理する場合、証明書 (またはキー) とそれを取得するためのアカウントが必要になります (以下の表を参照してください)。 Android デバイスの場合、特別な証明書は必要ありません。
 
-    |プラットフォーム|証明書の要件|詳細情報|
+    |プラットフォーム|証明書の要件|説明|
     |------------|----------------------------|--------------------|
-    |Windows Phone 8.1 および Windows Phone 8 |ポータル サイト アプリをストアからインストールする Windows Phone 8.1 のユーザーについては証明書は不要です。 Windows Phone 8.0 の場合、または Intune を使用してポータル サイト アプリを Windows Phone 8.1 デバイスに展開する場合、Symantec の証明書が必要となります。|この要件は、管理下にあるユーザーが、ポータル サイト アプリを Windows Phone 8.1 以降のデバイスでストアから取得することを前提としています。 Windows Phone 8.0 のサポートについては、「[Microsoft Intune を使用して Windows Phone の管理をセットアップする](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune)」を参照してください。|
-    |Windows 10、Windows RT 8.1、Windows RT、または Windows 8.1 デバイス|Windows RT デバイスまたは Windows デバイスを登録するうえでの証明書の要件はありません。|[Microsoft Intune を使用して Windows PC クライアントをインストールする](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune)。|
+    |Windows Phone 8。1 |ポータル サイト アプリをストアからインストールする Windows Phone 8.1 のユーザーについては証明書は不要です。 |この要件は、管理下にあるユーザーが、ポータル サイト アプリを Windows Phone 8.1 以降のデバイスでストアから取得することを前提としています。 |
+    |Windows 10、Windows RT 8.1、Windows 8.1 デバイス|Windows RT デバイスまたは Windows デバイスを登録するうえでの証明書の要件はありません。|[Microsoft Intune を使用して Windows PC クライアントをインストールする](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune)。|
     |iOS 7.1 以降|Apple Push Notification サービス証明書を取得する。|「[Microsoft Intune を使用した iOS および Mac の管理のセットアップ](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune)」で説明しているように、Apple に Apple Push Notification サービス証明書を要求する必要があります。|
 
 ## Intune の 30 日間評価版の完了手順
@@ -66,6 +67,6 @@ Intune の使用を開始する前に、以下のものが必要となります�
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

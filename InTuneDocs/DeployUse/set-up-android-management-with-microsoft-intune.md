@@ -3,6 +3,7 @@ title: "Android の管理をセットアップする | Microsoft Intune"
 description: "Microsoft Intune を使用して Android および KNOX デバイスのモバイル デバイス管理 (MDM) を有効にします。"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article

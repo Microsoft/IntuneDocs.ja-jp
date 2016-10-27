@@ -3,6 +3,7 @@ title: "ボリューム購入 iOS アプリを管理する | Microsoft Intune"
 description: "Intune は、アプリ ストアからライセンス情報をインポートし、使用したライセンスの数を追跡し、所有しているより多くのアプリをインストールできないようにすることで、Apple からボリューム購入したアプリを管理するために使用します。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/01/2016
 ms.topic: article

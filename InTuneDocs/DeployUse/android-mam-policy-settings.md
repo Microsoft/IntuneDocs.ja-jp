@@ -4,7 +4,7 @@ description: "このトピックでは、Android デバイス用のモバイル 
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 652f3aac9bd0925bd8e8718df04c0eb4b5629902
+ms.sourcegitcommit: 7313854dc9cee26412ed4759e570f0aecc5f156b
+ms.openlocfilehash: e8b1ccca0c905ccdefd5c4a97b78561c6edb7908
 
 
 ---
@@ -67,6 +67,9 @@ ms.openlocfilehash: 652f3aac9bd0925bd8e8718df04c0eb4b5629902
 - **連絡先の同期を無効にする:** デバイス上のネイティブ アドレス帳アプリに連絡先情報が同期されないようにするには、**[はい]** を選択します。 **[いいえ]** を選択した場合、アプリは、デバイス上のネイティブ アドレス帳アプリに連絡先情報を保存します。<br/>会社のデータを削除するために選択的ワイプを行うと、アプリからネイティブ アドレス帳に直接同期された連絡先が削除されます。 ネイティブ アドレス帳から別の外部ソースに同期された連絡先はワイプできません。 現在、これは **Microsoft Outlook** アプリにのみ適用されます。
 
   **既定値 = はい**
+- **Disable printing (印刷を無効にする):** **[はい]** を選択すると、MAM ポリシーに関連付けられているアプリから会社のデータを印刷できなくなります。
+
+  **既定値 = はい**
 
 ##  Android アクセス ポリシー設定
 **ポリシーで管理されているアプリ**という用語は、MAM ポリシーで構成されるアプリを表す場合に使用されます。
@@ -96,6 +99,6 @@ ms.openlocfilehash: 652f3aac9bd0925bd8e8718df04c0eb4b5629902
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

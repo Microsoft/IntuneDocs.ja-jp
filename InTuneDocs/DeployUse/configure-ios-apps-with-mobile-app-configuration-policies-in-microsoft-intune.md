@@ -3,6 +3,7 @@ title: "iOS モバイル アプリ構成ポリシーを使用する | Microsoft 
 description: "Intune のモバイル アプリ構成ポリシーを使用して、ユーザーが iOS アプリを実行するときに必要となる可能性がある設定を指定できます。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

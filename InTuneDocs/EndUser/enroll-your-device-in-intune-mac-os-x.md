@@ -3,6 +3,7 @@ title: "Intune に Mac OS X デバイスを登録する | Microsoft Intune"
 description: "Intune に Mac OS X デバイスを登録する方法について説明します"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 0460982186386378d5461861d9098ac3269e6fd0
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 4a682db8e949fa087fdffe945a758554c1bfb164
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: 0460982186386378d5461861d9098ac3269e6fd0
 
 # Intune に Mac OS X デバイスを登録する
 
-Intune に Mac OS X デバイスを登録すると、会社のネットワーク、勤務先の電子メール アドレス、および作業ファイルにアクセスできるほか、会社のアプリも取得できます。 デバイスを登録した場合の詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)」を参照してください。
+Intune に Macintosh OS X デバイスを登録すると、会社のネットワーク、職場の電子メール、作業ファイルにアクセスできるようになります。 また、会社のアプリを入手することもできます。 デバイスを登録した場合の詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)」を参照してください。
 
 iOS デバイスを登録しようとしている場合は、「[Intune に iOS デバイスを登録する](enroll-your-device-in-intune-ios.md)」を参照してください。
 
@@ -44,7 +45,7 @@ Mac OS X デバイスを登録するには
 
     ![install-management-profile](./media/3-macosx-enroll-tap-install.png)
 
-    登録が完了すると、プロファイルが検証されたことを示す管理プロファイル ページが表示されます。
+    登録が完了すると、プロファイルが検証されたことを示す **[管理プロファイル]** ページが表示されます。
 
     ![management-profile-verified](./media/4-macosx-enroll-done.png)
 
@@ -52,7 +53,6 @@ Mac OS X デバイスを登録するには
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 
