@@ -2,8 +2,8 @@
 title: "IT 管理者にエラーを送信する | Microsoft Intune"
 description: "管理者にエラーを送信する"
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: c7ddd516273360d42426d05528f7846f144c6667
 ---
 
 
-# IT 管理者にエラーを送信する
+# <a name="send-errors-to-your-it-admin"></a>IT 管理者にエラーを送信する
 
 ポータル サイト アプリの使用中に iOS デバイスでエラーが発生した場合は、IT 管理者が問題のトラブルシューティングを行う際に役立つように情報を送信することができます。 さまざまな方法では、エラー情報を送信できます。
 

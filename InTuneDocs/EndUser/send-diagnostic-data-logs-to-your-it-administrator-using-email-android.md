@@ -2,8 +2,8 @@
 title: "電子メールを使用して診断データのログを IT 管理者に送信する | Microsoft Intune"
 description: "Android デバイスで電子メールを使用してデータ ログを送信する"
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: 9dd0f089d220538a5526979a84dc165151b86f4f
 ---
 
 
-# 電子メールを使用して診断データのログを IT 管理者に送信する
+# <a name="send-diagnostic-data-logs-to-your-it-admin-using-email"></a>電子メールを使用して診断データのログを IT 管理者に送信する
 
 学校または会社のアプリでの作業中に、あるいはポータル サイト アプリを操作中に Android デバイスでエラーが発生した場合は、エラーを診断して解決する際に有用である診断データ ログを IT 管理者に送信することができます。 すべての詳細情報をログに含めるには、詳細ログ記録をオンにします。詳細ログがあると、IT 管理者は問題を解決しやすくなります。 詳細ログ記録の詳細については、「[IT 管理者がデバイスの問題を解決するのに役立つ、詳細なログ記録を使用する](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)」を参照してください。
 

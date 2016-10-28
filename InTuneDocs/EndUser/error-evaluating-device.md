@@ -2,8 +2,8 @@
 title: "デバイスの評価エラー | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: 43688a00d61785ddabdfef3c45bd30a533a85fe7
 ---
 
 
-# デバイスの評価エラー
+# <a name="error-evaluating-device"></a>デバイスの評価エラー
 デバイスは 1 つまたは複数の会社のポリシーに準拠していませんが、デバイスの評価中にシステムに問題が発生したため、現在はエラーを表示できません。  
 
 この問題を解決するには、数分待ってからし、順にタップ **コンプライアンスの確認**です。 問題が解決しない場合は、IT 管理者に依頼します。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。

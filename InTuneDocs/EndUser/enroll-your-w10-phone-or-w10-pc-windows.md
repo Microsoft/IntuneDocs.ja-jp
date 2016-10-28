@@ -2,8 +2,8 @@
 title: "Intune に Windows 10 デバイスを登録する | Microsoft Intune"
 description: "Intune に Windows 10 のモバイル デバイスまたはデスクトップ デバイスを登録する方法について説明します"
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/18/2016
 ms.topic: article
@@ -21,7 +21,7 @@ ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
 ---
 
 
-# Intune に Windows 10 Mobile または Windows 10 デスクトップ デバイスを登録する
+# <a name="enroll-your-windows-10-mobile-or-windows-10-desktop-device-in-intune"></a>Intune に Windows 10 Mobile または Windows 10 デスクトップ デバイスを登録する
 
 職場または学校が Microsoft Intune を使用している場合は、お使いのデバイスを登録して、会社の電子メール、ファイル、またその他のリソースにアクセスできます。 デバイスを登録すると、組織は企業データをセキュリティで保護することができます。 登録の詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)」と「[What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)」 (IT 管理者がお客様のデバイスに関して確認できる情報と確認できない情報) を参照してください。
 
@@ -42,7 +42,7 @@ Windows 10 Mobile または Windows 10 デスクトップ デバイスを登録�
 
     ![アカウント](./media/w10-enroll-2-accounts-your-account.png)
 
-## [職場または学校にアクセスする] が表示されている場合の手順
+## <a name="steps-to-follow-if-you-see-access-work-or-school"></a>[職場または学校にアクセスする] が表示されている場合の手順
 
 1.  **[職場または学校にアクセスする]** をタップし、**[接続]** をタップします。
 
@@ -69,7 +69,7 @@ Windows 10 Mobile または Windows 10 デスクトップ デバイスを登録�
 前の手順を実行しても職場または学校の電子メール アカウントとファイルにまだアクセスできない場合は、「[[職場または学校にアクセスする] が表示されている場合のトラブルシューティング手順](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school)」に従ってください。
 
 
-## [お使いのアカウント] が表示されている場合の手順
+## <a name="steps-to-follow-if-you-see-your-account"></a>[お使いのアカウント] が表示されている場合の手順
 
 1.  Windows の **[設定]** に移動し、**[アカウント]** をタップします。
 
