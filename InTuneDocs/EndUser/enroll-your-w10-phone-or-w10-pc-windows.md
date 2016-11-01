@@ -3,7 +3,7 @@ title: "Intune に Windows 10 デバイスを登録する | Microsoft Intune"
 description: "Intune に Windows 10 のモバイル デバイスまたはデスクトップ デバイスを登録する方法について説明します"
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/18/2016
 ms.topic: article

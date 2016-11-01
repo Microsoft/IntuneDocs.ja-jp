@@ -3,7 +3,7 @@ title: "電子メールを使用して診断データのログを IT 管理者�
 description: "Android デバイスで電子メールを使用してデータ ログを送信する"
 keywords: 
 author: barlanmsft
-ms.author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article

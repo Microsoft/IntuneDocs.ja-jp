@@ -2,8 +2,8 @@
 title: "会社のリソースへのアクセスに関する問題のトラブルシューティング | Microsoft Intune"
 description: "このトピックに記載されているエラー コードと状態コードは、リソースのアクセスに関する問題のトラブルシューティングに役立ちます。"
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -44,7 +44,7 @@ Microsoft Intune の操作でエラー コードが返された場合の問題�
 |130 (APP_CI_ENFORCEMENT_ERROR)|MSADP ライセンスのインストールが失敗しました||
 |状態なし (APP_CI_ENFORCEMENT_UNKNOWN)|該当なし|状態は現在不明です。|
 
-## <a name="company-resource-access-(common-errors)"></a>会社のリソースへのアクセス (一般的なエラー)
+## <a name="company-resource-access-common-errors"></a>会社のリソースへのアクセス (一般的なエラー)
 
 |状態コード|16 進数のエラー コード|エラー メッセージ|
 |---------------|--------------------------|-----------------|
