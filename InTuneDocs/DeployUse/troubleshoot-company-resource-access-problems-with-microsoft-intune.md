@@ -2,8 +2,8 @@
 title: "会社のリソースへのアクセスに関する問題のトラブルシューティング | Microsoft Intune"
 description: "このトピックに記載されているエラー コードと状態コードは、リソースのアクセスに関する問題のトラブルシューティングに役立ちます。"
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/06/2016
 ms.topic: article
@@ -20,12 +20,12 @@ ms.openlocfilehash: 98b93ca894cfc616b023a313e19c5553b2284769
 
 ---
 
-# Microsoft Intune での会社のリソースへのアクセスに関する問題のトラブルシューティング
+# <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Microsoft Intune での会社のリソースへのアクセスに関する問題のトラブルシューティング
 Microsoft Intune の操作でエラー コードが返された場合の問題を解決するには、このトピックのエラー コードと状態コードの説明を参考にしてください。
 
 この情報で問題が解決しない場合、さらに役立つ方法を探すには、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」を参照してください。
 
-## MDM 管理の Windows デバイスの状態コード
+## <a name="status-codes-for-mdm-managed-windows-devices"></a>MDM 管理の Windows デバイスの状態コード
 
 |状態コード|エラー メッセージ|対処|
 |---------------|-----------------|--------------|
@@ -44,7 +44,7 @@ Microsoft Intune の操作でエラー コードが返された場合の問題�
 |130 (APP_CI_ENFORCEMENT_ERROR)|MSADP ライセンスのインストールが失敗しました||
 |状態なし (APP_CI_ENFORCEMENT_UNKNOWN)|該当なし|状態は現在不明です。|
 
-## 会社のリソースへのアクセス (一般的なエラー)
+## <a name="company-resource-access-common-errors"></a>会社のリソースへのアクセス (一般的なエラー)
 
 |状態コード|16 進数のエラー コード|エラー メッセージ|
 |---------------|--------------------------|-----------------|
@@ -73,7 +73,7 @@ Microsoft Intune の操作でエラー コードが返された場合の問題�
 |-2016341111|0x87D11389|iOS デバイスが予期されないアイドル ステータスを返しました|
 |-2016341112|0x87D11388|iOS デバイスは現在ビジーです|
 
-## iOS デバイスによって返されるエラー
+## <a name="errors-returned-by-ios-devices"></a>iOS デバイスによって返されるエラー
 
 |状態コード|16 進数のエラー コード|エラー メッセージ|
 |---------------|--------------------------|-----------------|
@@ -283,7 +283,7 @@ Microsoft Intune の操作でエラー コードが返された場合の問題�
 |-2016335111|0x87D12AF9|1001: サポートされていないプロファイル バージョンです|
 |-2016335112|0x87D12AF8|1000: プロファイルの形式が正しくありません|
 
-## OMA 応答コード
+## <a name="oma-response-codes"></a>OMA 応答コード
 
 |状態コード|16 進数のエラー コード|エラー メッセージ|
 |---------------|--------------------------|-----------------|
@@ -368,7 +368,7 @@ Microsoft Intune の操作でエラー コードが返された場合の問題�
 |-2016345912|0x87D100C8|SyncML コマンドが正常に完了しました。|
 |-2016346011|0x87D10065|指定された SyncML コマンドは実行されていますが、まだ完了していません。|
 
-### 次のステップ
+### <a name="next-steps"></a>次のステップ
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
 
 
