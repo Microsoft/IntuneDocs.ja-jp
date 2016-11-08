@@ -14,8 +14,8 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eba2421fb929d21eb36c273eb6cb43a06ac03cb4
-ms.openlocfilehash: ed92874cce2877d31d83a619ec8ffb63a57cd5c3
+ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
+ms.openlocfilehash: 7d239a80ed68d39b2a7179a45178ba6ae11c5423
 
 
 ---
@@ -106,7 +106,7 @@ Intune クライアント ソフトウェアは、次の手順に従って、オ
 
 ## <a name="instruct-users-to-selfenroll"></a>自分で登録するユーザーへの指示
 
-ユーザーは、[ポータル Web サイト](http://portal..manage.microsoft.com)に移動して、Intune クライアント ソフトウェアをインストールできます。 デバイスが Windows PC であることを Web ポータルが検出できる場合、ユーザーは Intune ソフトウェア クライアントをダウンロードして、PC を登録するように求められます。 ソフトウェアがダウンロードされたら、ユーザーはインストールして、PC を管理できます。
+ユーザーは、[ポータル Web サイト](http://portal.manage.microsoft.com)に移動して、Intune クライアント ソフトウェアをインストールできます。 デバイスが Windows PC であることを Web ポータルが検出できる場合、ユーザーは Intune ソフトウェア クライアントをダウンロードして、PC を登録するように求められます。 ソフトウェアがダウンロードされたら、ユーザーはインストールして、PC を管理できます。
 
 ![Intune ポータルが Intune ソフトウェア クライアントをダウンロードするように要求する](../media/software-client-download.png)
 
