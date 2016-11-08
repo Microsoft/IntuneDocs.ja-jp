@@ -2,8 +2,8 @@
 title: "Cisco ISE でネットワークへのアクセスを制限する | Microsoft Intune"
 description: "Cisco ISE で制御されている Wi-Fi および VPN にアクセスする前に、デバイスが登録されポリシーに準拠するように、Intune で Cisco ISE を使用します。"
 keywords: 
-author: nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/05/2016
 ms.topic: article
@@ -14,23 +14,23 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
-ms.openlocfilehash: 44dc8ce90537580ef30ba4b8c9f3ee2dd5e20c24
+ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
+ms.openlocfilehash: a29473cb0931c01143614116ce0e99a579f35923
 
 
 ---
 
-# Microsoft Intune で Cisco ISE を使用する
+# <a name="using-cisco-ise-with-microsoft-intune"></a>Microsoft Intune で Cisco ISE を使用する
 Intune を Cisco Identity Services Engine (ISE) と統合すると、Intune のデバイス登録と準拠の状態を使用して、ISE 環境内でネットワーク ポリシーを作成することができます。 これらのポリシーを使用すると、会社のネットワークへのアクセスが、Intune で管理され Intune ポリシーに準拠しているデバイスに制限されるように処理することができます。
 
-## 構成手順
+## <a name="configuration-steps"></a>構成手順
 
 この統合を有効にするために、Intune テナントでセットアップを行う必要はありません。 Intune テナントにアクセスするアクセス許可を、Cisco ISE サーバーに与える必要があります。 これを行った後、セットアップの残りの部分は Cisco ISE サーバーで行われます。 この記事では、Intune テナントにアクセスする権限を持つ ISE サーバーを提供する手順について説明します。
 
-### 手順 1: 証明書を管理する
+### <a name="step-1-manage-the-certificates"></a>手順 1: 証明書を管理する
 Azure Active Directory (Azure AD) のコンソールから証明書をエクスポートし、それを ISE コンソールの信頼された証明書ストアにインポートします。
 
-#### Internet Explorer 11
+#### <a name="internet-explorer-11"></a>Internet Explorer 11
 
 
    a. 管理者として Internet Explorer を実行して、Azure AD コンソールにサインインします。
@@ -47,7 +47,7 @@ Azure Active Directory (Azure AD) のコンソールから証明書をエクス�
 
    g. ISE コンソール内から、Intune 証明書 (エクスポートしたファイル) を **[信頼できる証明書]** にインポートします。
 
-#### Safari
+#### <a name="safari"></a>Safari
 
  a. Azure AD コンソールにサインインします。
 
@@ -64,7 +64,7 @@ b. ロック アイコン &gt; **[詳細]** をクリックします。
 > 証明書の有効期限が切れた場合、新しい証明書をエクスポートしてインポートする必要があるため、証明書の有効期限を確認します。
 
 
-### ISE からの自己署名証明書の取得 
+### <a name="obtain-a-selfsigned-cert-from-ise"></a>ISE からの自己署名証明書の取得 
 
 1.  ISE コンソールで、**[Administration]** (管理)  > **[Certificates]** (証明書)  > **[System Certificates]** (システム証明書)  > **[Generate Self Signed Certificate]** (自己署名証明書の生成) の順に選択します。  
 2.       自己署名証明書をエクスポートします。
@@ -75,7 +75,7 @@ b. ロック アイコン &gt; **[詳細]** をクリックします。
 すべてのテキストが単一行であることを確認する
 
 
-### 手順 2: Azure AD テナントで ISE のアプリを作成する
+### <a name="step-2-create-an-app-for-ise-in-your-azure-ad-tenant"></a>手順 2: Azure AD テナントで ISE のアプリを作成する
 1. Azure AD コンソールで、**[アプリケーション]** > **[アプリケーションの追加]** > **[組織で開発中のアプリケーションを追加]** の順に選択します。
 2. アプリの名前と URL を指定します。 URL は、会社の Web サイトである可能性があります。
 3. アプリ マニフェスト (JSON ファイル) をダウンロードします。
@@ -99,7 +99,7 @@ b. ロック アイコン &gt; **[詳細]** をクリックします。
 |OAuth 2.0 トークン エンドポイント|トークン発行 URL|
 |クライアント ID でコードを更新する|クライアント ID|
 
-### 手順 4: 自己署名証明書を ISE から、Azure AD で作成した ISE アプリにアップロードする
+### <a name="step-4-upload-the-selfsigned-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>手順 4: 自己署名証明書を ISE から、Azure AD で作成した ISE アプリにアップロードする
 1.     .cer X509 公開証明書ファイルから、base64 でエンコードされた証明書値と拇印を取得します。 この例では PowerShell を使用します。
    
       
@@ -136,7 +136,7 @@ b. ロック アイコン &gt; **[詳細]** をクリックします。
 > KeyCredentials はコレクションであるため、ロール オーバー シナリオ用に複数の X.509 証明書をアップロードすることも、侵害シナリオで証明書を削除することもできます。
 
 
-### 手順 4: ISE 設定を構成する
+### <a name="step-4-configure-ise-settings"></a>手順 4: ISE 設定を構成する
 ISE 管理コンソールで、次の設定値を指定します。
   - **サーバーの種類**: Mobile Device Manager
   - **認証の種類**: OAuth – クライアントの資格情報
@@ -147,7 +147,7 @@ ISE 管理コンソールで、次の設定値を指定します。
 
 
 
-## Intune テナントと Cisco ISE サーバー間で共有される情報
+## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Intune テナントと Cisco ISE サーバー間で共有される情報
 次の表には、Intune テナントと Intune によって管理されるデバイス用の Cisco ISE サーバー間で共有される情報を一覧します。
 
 |プロパティ|  説明|
@@ -166,7 +166,7 @@ ISE 管理コンソールで、次の設定値を指定します。
 |lastContactTimeUtc|デバイスが Intune の管理サービスで最後に確認された日付と時刻。
 
 
-## ユーザー側の表示と操作
+## <a name="user-experience"></a>ユーザー側の表示と操作
 
 ユーザーが登録したデバイスを使用してリソースにアクセスしようとすると、次のように、登録するように求めるメッセージが表示されます。
 
@@ -182,12 +182,12 @@ ISE 管理コンソールで、次の設定値を指定します。
 また、ユーザー エクスペリエンスのためにカスタマイズされたガイダンスを作成できる、[ダウンロード可能な一連の登録手順](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a)もあります。
 
 
-### 関連項目
+### <a name="see-also"></a>関連項目
 
 [Cisco Identity Services Engine 管理者ガイド、リリース 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

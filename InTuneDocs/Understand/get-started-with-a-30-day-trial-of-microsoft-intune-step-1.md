@@ -3,6 +3,7 @@ title: "Microsoft Intune の 30 日間評価版にサインアップする | Mic
 description: "Intune の無料の 30 日間評価版にサインアップする方法、およびサインアップする前の考慮事項"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,17 +14,17 @@ ms.assetid: dad88d43-0054-4be6-9e5d-ada5a957dd6c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 081d396975473cd605e9619498aef78fb2d0e1dd
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 0eb72fba9bd299a29c8da1b3477582fb4a0a31ab
 
 
 ---
 
-# Microsoft Intune の 30 日間評価版にサインアップする
+# <a name="sign-up-for-a-30day-evaluation-of-microsoft-intune"></a>Microsoft Intune の 30 日間評価版にサインアップする
 
 モバイル デバイスとコンピューターを管理する Microsoft Intune は、30 日間の無料評価版を迅速かつ簡単に設定できます。 評価版ではいくつかの簡単な手順を行うだけで、最大 100 のユーザーとデバイスの追加、グループの設定、コンプライアンス ポリシーの構成、モバイル デバイスとコンピューターの登録と管理を行うことができます。 このトピックでは、Intune の特長と機能を評価できるよう、Intune の評価版の稼働方法とサービスの概要の理解に関する基本的な内容を学習します。
 
-## サインアップする前の考慮事項
+## <a name="what-to-consider-before-you-sign-up"></a>サインアップする前の考慮事項
 
 Intune にサインアップまたはサインインするには、あらかじめ次の点を考慮しておく必要があります。
 
@@ -37,7 +38,7 @@ Intune にサインアップまたはサインインするには、あらかじ�
 |-----------------------------------------------------------------|------------------------------------------------|
 |**職場または学校アカウントを持っていない。** 職場または学校アカウントは、Microsoft とボリューム ライセンス契約を結んだとき、または Office 365 をサブスクライブしたときに支給されます。 組織が Enterprise Agreement または同等のボリューム ライセンス契約を Microsoft と結んでいない場合 (または Office 365 アカウントを持っていない場合)、Microsoft Online Services へのサインインに使用できる Microsoft Online Services アカウントを持っていません。<br /><br />**30 日の評価期間後に Intune テナントを破棄する。** 評価のみを目的として Intune の無料評価版のサブスクリプションを使用している場合で、なおかつ評価後に、Intune サービスのセットアップとデバイスのプロビジョニングをやり直す場合は、新しいアカウントにサインアップする必要があります。 Intune と System Center 2012 Configuration Manager を使用する予定の場合に推奨されるオプションです。<br /><br />新しいアカウントにサインアップする場合、後で既存の職場アカウントまたは学校アカウントを使用するように変更してそのアカウントを管理したり、既存のボリューム ライセンス契約と結合したりすることはできません。|**ボリューム ライセンス契約または Office 365 アカウントのサブスクリプションで支給された職場または学校アカウントがあり、評価版を使用して Intune を評価する。**<br /><br />既存のアカウントで Intune をセットアップする場合、作業前に「[デバイスを管理する方法を選択する](/intune/get-started/choose-how-to-manage-devices)」の内容を確認することをお勧めします。|
 
-## Intune にサインアップまたはサインインする
+## <a name="sign-up-or-sign-in-to-intune"></a>Intune にサインアップまたはサインインする
 
 1.  まず、 [ここをクリックして Intune のサインアップ ページにアクセスします](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)。
 
@@ -52,7 +53,7 @@ Intune にサインアップまたはサインインするには、あらかじ�
 
 サインアップ フォームに入力して、Microsoft Online サブスクリプション契約に同意すると、テナントの管理者アカウントを使用して自動的に Office 365 管理センターにサインインします。 また、アカウント情報が記載された電子メール メッセージが、サインアップ中に指定した電子メール アドレスに送信されます。 このメールで、サブスクリプションがアクティブになったことが確認されます。
 
-### 次のステップ
+### <a name="next-steps"></a>次のステップ
 これで終了です。 *Microsoft Intune の評価*チュートリアルの手順 1 が完了しました。
 
 >[!div class="step-by-step"]
@@ -61,6 +62,6 @@ Intune にサインアップまたはサインインするには、あらかじ�
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

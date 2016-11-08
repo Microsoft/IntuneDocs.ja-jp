@@ -4,7 +4,7 @@ description: "ユーザーが Intune の条件付きアクセスでリソース�
 keywords: 
 author: karaman
 manager: angrobe
-ms.date: 07/24/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,37 +13,37 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: a04037453382420540dbec721179ccb623df0829
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: d819e2e25e00791793add519694fc34a251178db
 
 
 ---
 
-# 条件付きアクセスに関するトラブルシューティング
+# <a name="troubleshoot-conditional-access"></a>条件付きアクセスに関するトラブルシューティング
 
 通常、ユーザーは電子メールまたは SharePoint にアクセスしようとし、登録を要求されます。 そのプロンプトからユーザーはポータル サイトに移動します。
 
 このトピックでは、ユーザーが Intune の条件付きアクセスでリソースにアクセスできない場合の対処方法について説明します。
 
 
-## 条件付きアクセスが機能するための基礎
+## <a name="the-basics-for-success-in-conditional-access"></a>条件付きアクセスが機能するための基礎
 
 条件付きアクセスを機能させるには、次の要件を満たす必要があります。
 
 -   デバイスを Intune で管理する必要がある
 -   デバイスを Azure Active Directory (AAD) に登録する必要がある。 通常の状況下では、この登録は Intune の登録時に自動的に行われます
 -   デバイスはデバイスおよびそのデバイスのユーザーの Intune コンプライアンス ポリシーに準拠している必要がある。  コンプライアンス ポリシーが存在しない場合は、Intune の登録で十分です。
--   ユーザーが Outlook ではなくデバイスのネイティブ メール クライアントを利用してメールを取得する場合、Exchange ActiveSync をデバイスで有効にする必要がある。     これは、iOS、Windows Phone、および Android/KNOX デバイスで自動的に発生します。
+-   ユーザーが Outlook ではなくデバイスのネイティブ メール クライアントを利用してメールを取得する場合、Exchange ActiveSync をデバイスで有効にする必要がある。     これは、iOS、Windows Phone、および Android/KNOX 標準デバイスで自動的に発生します。
 -   Intune Exchange Connector を適切に構成する必要がある。 詳細については、[Microsoft Intune での Exchange Connector のトラブルシューティング](troubleshoot-exchange-connector.md)に関するページを参照してください。
 
 各デバイスのこれらの状態は、Azure 管理ポータルまたはデバイスのインベントリ レポートで確認できます。
 
-## 登録に関する問題
+## <a name="enrollment-issues"></a>登録に関する問題
 
  -  デバイスが登録されていません。登録することで問題が解消されます。
  -  ユーザーがデバイスを登録しましたが、社内参加できませんでした。 ユーザーはポータル サイトから登録を更新する必要があります。
 
-## ポリシー準拠の問題
+## <a name="compliance-issues"></a>ポリシー準拠の問題
 
  -  デバイスが Intune ポリシーに準拠していません。 一般的な問題は暗号化とパスワードの要件です。 ユーザーはポータル サイトにリダイレクトされます。ポータル サイトでデバイスがポリシーに準拠するように設定できます。
  -  デバイスのコンプライアンス情報が登録されるまで時間がかかることがあります。 しばらく待ってからもう一度お試しください。
@@ -53,23 +53,23 @@ ms.openlocfilehash: a04037453382420540dbec721179ccb623df0829
 
         通常、デバイスがこの状態にあるのは、サービスの接続に問題があるか、同期に時間がかかっていることが原因です。  別のネットワーク構成 (携帯電話、Wi-Fi、VPN) を使用、デバイスを再起動、およびデバイスの SSP が最新であることを確認しても問題が解決しない場合は、「[Microsoft Intune のサポート受ける方法](how-to-get-support-for-microsoft-intune.md)」に従って Microsoft サポートにお問い合わせください。
 
-## ポリシーの問題
+## <a name="policy-issues"></a>ポリシーの問題
 
 コンプライアンス ポリシーを作成し、それを電子メール ポリシーにリンクするとき、両方のポリシーを同じユーザーに展開する必要があります。そのため、どのポリシーをどのグループに展開するか計画するときは注意が必要です。 ユーザーにポリシーが 1 つだけ適用されている場合、そのユーザーのデバイスはおそらくポリシー非準拠となります。
 
 
-## Exchange ActiveSync の問題
+## <a name="exchange-activesync-issues"></a>Exchange ActiveSync の問題
 
-### 対応する Android デバイスが検疫通知を受け取る
+### <a name="compliant-android-device-gets-quarantine-notice"></a>対応する Android デバイスが検疫通知を受け取る
 - 登録され、ポリシーに準拠している Android デバイスでも、企業のリソースにアクセスしようとしたとき、検疫通知を受け取ることができます。 **[開始]** と記載されたリンクを選択する前に、リソースにアクセスしようとしたとき、ポータル サイトが開いていなかったことをユーザーは確認する必要があります。 ユーザーはポータル サイトを閉じ、リソースへのアクセスをもう一度試し、それから **[開始]** リンクを選択します。
 
-### 使用中止となったデバイスで引き続きアクセスできる
+### <a name="retired-device-continues-to-have-access"></a>使用中止となったデバイスで引き続きアクセスできる
 - Exchange Online を使用すると、使用中止となったデバイスでも使用中止後の数時間はアクセスできることがあります。 これは Exchange がアクセス権を 6 時間キャッシュするためです。 このシナリオでは、使用中止となったデバイスのデータの保護には別の手段を検討してください。
 
-### デバイスが AAD に準拠し登録されているがまだブロックされている
+### <a name="device-is-compliant-and-registered-with-aad-but-still-blocked"></a>デバイスが AAD に準拠し登録されているがまだブロックされている
 - Exchange ActiveSync ID (EASID) から AAD へのプロビジョニングが遅延することがあります。 この問題の一般的な原因は調整です。しばらく待ってからもう一度お試しください。
 
-### デバイスがブロックされている
+### <a name="device-blocked"></a>デバイスがブロックされている
 
 デバイスは、ライセンス認証の電子メールを受信することなく条件付きアクセスからブロックされることがあります。
 
@@ -79,7 +79,7 @@ ms.openlocfilehash: a04037453382420540dbec721179ccb623df0829
 - Exchange Connector のログで sendemail アクティビティにエラーがないかを確認します。 検索するコマンドの例は、「SendEmail from notification account to useremail」です。
 - Exchange Connector はデバイスをブロックする前に、ライセンス認証の電子メールを送信します。 デバイスがオフラインである場合、ライセンス認証の電子メールを受信できない可能性があります。 デバイスの電子メール クライアントがポーリングでなくプッシュを使用して電子メールを取得しているかどうかを確認します。ユーザーが電子メールを受信しない可能性があるためです。 ポーリングに切り替え、デバイスが電子メールを受信することを確認してください。
 
-## 非対応のデバイスがブロックされていない
+## <a name="noncompliant-device-not-blocked"></a>非対応のデバイスがブロックされていない
 
 非対応のデバイスで引き続きアクセス可能なデバイスが見つかった場合は、次の手順を実行します。
 
@@ -89,10 +89,10 @@ ms.openlocfilehash: a04037453382420540dbec721179ccb623df0829
     - PowerShell コマンドレット "Get-ActiveSyncDeviceStatistics -mailbox mbx" を使用してメールボックスのすべてのモバイル デバイスの一覧を取得します。 デバイスが一覧に表示されない場合、デバイスは Exchange にアクセスしていません。
     - デバイスが一覧に表示されている場合は、Get-CASmailbox -identity:’upn’ | fl コマンドレットを使用してアクセスの状態に関する詳細情報を取得し、その情報を Microsoft サポートに提供します。
 
-## サポート チケットを開く前に
+## <a name="before-you-open-a-support-ticket"></a>サポート チケットを開く前に
 これらのトラブルシューティング手順で問題が解決しない場合、OWA メールボックスのログや Exchange Connector のログなどの情報の提供を Microsoft サポートに求められることがあります。
 
-### OWA メールボックス ログオンの回収
+### <a name="collecting-owa-mailbox-logs"></a>OWA メールボックス ログオンの回収
 
 1. OWA 経由でログオンし、右上隅の自分の名前の隣にある設定 (歯車) のアイコンを選択します。
 2. **[オプション]** を選択します。
@@ -104,15 +104,15 @@ ms.openlocfilehash: a04037453382420540dbec721179ccb623df0829
 8. 1、2 分待ち、OWA の電話番号の一覧に戻ります。 一覧で電話が選択し、上部のメニューから **[ログの取得]** を選択します。
 9. これで自身から添付ファイル付きの電子メールが届きます。 サポート チケットを開くとき、Microsoft サポートに電子メールの内容を提供します。
 
-### Exchange Connector のログ
+### <a name="exchange-connector-logs"></a>Exchange Connector のログ
 
-#### 一般的なログ情報
+#### <a name="general-log-information"></a>一般的なログ情報
 Exchange Connector のログを表示するには、[サービス トレース ビューアー ツール] (サービス トレース ビューアー ツール (https://msdn.microsoft.com/ja-jp/library/ms732023(v=vs.110).aspx) を使用します。 このツールを使用するには、Windows Server SDK をダウンロードする必要があります。
 
 >[!NOTE]
 >ログは C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs に置かれます。 ログは *Connector0.log* から *Connector29.log* までの 30 個の一連のログ ファイルで格納されます。 10MB のデータが蓄積されると次のログにロールオーバーします。 ログが Connector29 に達すると、Connector0 から再開され、以前のログが上書きされます。
 
-#### 同期ログを特定する
+#### <a name="locating-sync-logs"></a>同期ログを特定する
 
 -    ログ内で **full sync** を検索して完全同期を探します。 完全同期の開始は、次のテキストでマークされます。
 
@@ -124,10 +124,10 @@ Exchange Connector のログを表示するには、[サービス トレース �
 
 -   ログ内で **quick sync** を検索してクイック (デルタ) 同期を探します。
 
-##### Get next コマンドの例外
+##### <a name="exceptions-in-get-next-command"></a>Get next コマンドの例外
 Exchange Connector ログで **Get next コマンド**の例外を確認し、それらを Microsoft サポートに提供します。
 
-#### 詳細ログ記録
+#### <a name="verbose-logging"></a>詳細ログ記録
 
 詳細ログ記録を有効にするには:
 
@@ -153,11 +153,11 @@ Exchange Connector ログで **Get next コマンド**の例外を確認し、�
 
 
 
-### 次の手順
+### <a name="next-steps"></a>次のステップ
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 

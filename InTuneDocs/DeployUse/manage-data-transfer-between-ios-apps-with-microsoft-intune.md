@@ -3,6 +3,7 @@ title: "iOS アプリ間のデータ転送を管理する | Microsoft Intune"
 description: "このトピックを使用すると、iOS の開く機能とモバイル アプリ管理ポリシーを使用してアプリ間のデータ転送を管理する方法を把握できます。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 488ecb801eac2b591db87683bbe9f371879483c4
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 080d861e8fd2d0140ffe5d9987032213ae0e4d4c
 
 
 ---
 
-# Microsoft Intune を使用して iOS アプリ間のデータ転送を管理する
-## iOS アプリを管理する
+# <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Microsoft Intune を使用して iOS アプリ間のデータ転送を管理する
+## <a name="manage-ios-apps"></a>iOS アプリを管理する
 会社データの保護には、ファイル転送を管理対象のアプリに限定する処理も含まれます。  iOS アプリは次の方法で管理できます。
 
 -   アプリ (**ポリシーで管理されている**アプリと呼ばれます) の MAM ポリシーを構成して、会社データの損失を回避します。
@@ -28,7 +29,7 @@ ms.openlocfilehash: 488ecb801eac2b591db87683bbe9f371879483c4
 -   また、アプリは **MDM チャネル**から展開して管理することもできます。  これには、デバイスが MDM ソリューションに登録されていることが必要です。 これらは**ポリシーで管理されている**アプリであるか、またはその他の管理対象アプリである必要があります。
 
 iOS デバイスの **Open In Management** 機能を使用すると、**MDM チャネル**を使用して展開されているアプリ間でのみファイル転送が行われるよう制限できます。 Open In Management の制限は、構成設定で設定され、MDM ソリューションを使用して展開されます。  展開されているアプリをユーザーがインストールすると、管理者が設定した制限が適用されます。
-##  iOS アプリで MAM を使用する
+##  <a name="using-mam-with-ios-apps"></a>iOS アプリで MAM を使用する
 モバイル アプリ管理 (MAM) ポリシーは、iOS の **Open in Management** 機能と共に使用して、以下のように会社データを保護できます。
 
 -   **MDM ソリューションで管理されていない従業員所有のデバイス:** MAM ポリシー設定を **[アプリで管理対象アプリへのデータ転送のみ許可する]**に設定できます。 保護されたファイルをポリシーで管理されていないアプリでアプリで開くと、エンドユーザーはファイルを読み取れません。
@@ -41,7 +42,7 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 > [!IMPORTANT]
 > ユーザー UPN 設定は、サード パーティの MDM によって管理されるデバイスに展開されたアプリに対してのみ必要です。  Intune の管理対象デバイスの場合は、この設定は必要ありません。
 
-## ユーザー UPN 設定を構成する
+## <a name="configure-user-upn-setting"></a>ユーザー UPN 設定を構成する
 この構成は、サード パーティの MDM ソリューションによって管理されているデバイスに必要となります。 以下に示す手順では、UPN 設定の一般的な実装方法と、その結果として得られるのエンドユーザー エクスペリエンスを示しています。
 
 
@@ -49,11 +50,11 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 
 2.  手順 3 と 4 で説明した設定を使用して、**サードパーティの MDM ソリューションで**管理するアプリと電子メール プロファイルを展開します。
 
-3.  key=IntuneMAMUPN, Value=<username@company.com> というアプリ構成設定でアプリを展開します [例: ‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]。
+3.  key=IntuneMAMUPN, Value=<username@company.com> [例: ‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
 4.  Open In Management ポリシーを登録済みデバイスに展開します。
 
-### エンド ユーザー エクスペリエンスの例
+### <a name="example-end-user-experience"></a>エンド ユーザー エクスペリエンスの例
 
 1.  エンド ユーザーは、デバイスに Microsoft Word アプリをインストールします。
 
@@ -70,11 +71,11 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 
 6.  これでデータ転送が成功し、ドキュメントにはアプリで企業 ID のタグが付けられます。 また、データが作業コンテキスト内で処理されるときには、ポリシー設定が適切に適用されます。
 
-### 関連項目
+### <a name="see-also"></a>関連項目
 [Microsoft Intune でモバイル アプリケーション管理ポリシーを使用してデータを保護する](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

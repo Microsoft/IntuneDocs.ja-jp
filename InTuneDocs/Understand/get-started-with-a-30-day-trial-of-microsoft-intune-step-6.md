@@ -3,6 +3,7 @@ title: "Intune 評価版のその他のオプションと機能 | Microsoft Intu
 description: "Intune の 30 日間無料評価版にサインアップするときに知っておくべきアラート、通知、レポートと、一般的な Intune 機能についての説明"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
@@ -13,15 +14,15 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: ae624aed9ea09467c212e0bf16fef72bfef1956d
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: ede6429d334608a326c6c2eed311df37ab9e344b
 
 
 ---
 
-# Intune 評価版サブスクリプションのその他のオプションと機能
+# <a name="other-options-and-extras-for-intune-evaluation-subscriptions"></a>Intune 評価版サブスクリプションのその他のオプションと機能
 
-## アラート、通知およびレポート
+## <a name="alerts-notifications-and-reports"></a>アラート、通知およびレポート
 Intune 管理コンソールでは、組織内の管理されているデバイスの全体的なヘルスをすばやく評価するために**アラート**を使います。 アラートを構成してカスタマイズして、組織の必要な情報だけが報告、表示されるようにすることができます。 アラートを有効にするか無効にするかを設定する操作、重要度を構成する操作、表示のしきい値を使用して、アラートを表示する前にアラート イベントをトリガーする頻度を指定する操作、特定の種類のアラートに固有の設定を構成する操作を実行できます。
 
 **通知** とは、特定の種類のアラートがトリガーされたときに管理者 (および他のユーザー) に通知するために使用する電子メールです。
@@ -30,7 +31,7 @@ Intune 管理コンソールでは、組織内の管理されているデバイ�
 
 アラート、通知、レポートの詳細については、「[Microsoft Intune を使用した監視とレポート](/Intune/Deploy-Use/monitoring-and-reports-with-microsoft-intune)」をご覧ください。
 
-## Intune の機能
+## <a name="intune-capabilities"></a>Intune の機能
 Intune は、この短いセットアップの手順では説明しきれないさまざまな機能を備えています。 そのような機能の例をいくつか次に示します。
 
 -   **Exchange および Office 365 へのアクセスを制御します。** 詳細については、[アプリによる Exchange Online へのアクセスの管理に関するページ](https://technet.microsoft.com/library/dn705841.aspx)と[アプリによる Office 365 サービスへのアクセスに関するページ](https://technet.microsoft.com/library/dn818907.aspx)を参照してください。
@@ -49,7 +50,7 @@ Intune に最近導入された機能の詳細については、「[Microsoft In
 
 サポート オプションについて詳しくは、「[Microsoft Intune のサポートを受ける方法](/Intune/Troubleshoot/how-to-get-support-for-microsoft-intune)」を参照するか、[Microsoft Intune フォーラム](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)で Intune に関するディスカッションに参加できます。
 
-### 次のステップ
+### <a name="next-steps"></a>次のステップ
 これで終了です。 これで、*Microsoft Intune の評価*チュートリアルを修了しました。
 
 >[!div class="step-by-step"]
@@ -58,6 +59,6 @@ Intune に最近導入された機能の詳細については、「[Microsoft In
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
