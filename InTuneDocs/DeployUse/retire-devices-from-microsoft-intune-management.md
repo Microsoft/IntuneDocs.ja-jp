@@ -2,8 +2,8 @@
 title: "デバイスをインベントリから削除する | Microsoft Intune"
 description: "Intune では、デバイスのポリシーとポータル サイトを削除することによって Intune の管理対象からデバイスを削除する選択的ワイプとフル ワイプの両方をサポートします。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
