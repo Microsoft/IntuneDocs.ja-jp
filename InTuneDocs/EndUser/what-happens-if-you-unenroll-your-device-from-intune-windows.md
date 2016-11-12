@@ -89,6 +89,6 @@ Windows RT デバイスを削除すると、次のような結果になります
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

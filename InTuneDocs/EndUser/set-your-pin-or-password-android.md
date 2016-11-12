@@ -36,6 +36,6 @@ PIN またはパスワードを設定するには、次の手順に従います�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

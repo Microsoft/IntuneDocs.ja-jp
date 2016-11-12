@@ -57,6 +57,6 @@ Intune からデバイスの登録を解除すると、どのようになるか�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
