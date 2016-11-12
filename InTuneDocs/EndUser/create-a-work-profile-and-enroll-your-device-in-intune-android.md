@@ -2,7 +2,8 @@
 title: "Intune での仕事用プロファイルの作成とデバイスの登録 | Microsoft Intune"
 description: "Android デバイスを暗号化する方法について説明します"
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,16 +14,16 @@ ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 29eb7c7fb17eb640eefb0cb4a58834d5e3d77591
-ms.openlocfilehash: 528f2e3c2e4acbc45132d12e127dc9b7a4e3f49b
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: f3aa8f3169eebb19301d4bdc5624817f54a29aa0
 
 
 ---
 
 
-# Intune での仕事用プロファイルの作成とデバイスの登録
+# <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Intune での仕事用プロファイルの作成とデバイスの登録
 
-仕事用プロファイルを使用すると、会社または学校の電子メール、アプリ、ファイルにアクセスできるようにデバイスに設定できます。 詳細については、「[仕事用プロファイルを作成するとどうなりますか](what-happens-when-you-create-a-work-profile-android.md)」を参照してください。
+自分の Android デバイスを登録すると、会社のメール、アプリ、その他の作業データにアクセスできます。 登録の一環として、仕事用のプロファイルを設定します。これはデバイス上の個人データと仕事のデータを分けるものです。 IT 管理者は、仕事のデータが含まれる仕事用のプロファイルのみを管理できます。 IT 管理者は、デバイス上の個人情報を管理できません。 詳細については、「[仕事用プロファイルを作成するとどうなりますか](what-happens-when-you-create-a-work-profile-android.md)」を参照してください。
 
 仕事用プロファイルを作成するには:
 
@@ -56,11 +57,11 @@ ms.openlocfilehash: 528f2e3c2e4acbc45132d12e127dc9b7a4e3f49b
 
     "仕事用プロファイルのセットアップ" と "デバイスの登録" に関するメッセージがいくつか表示されます。
 
-8. **[まだ途中です]** の 画面で、バッジが付いているポータル サイト アプリ アイコンをタップします。
+8. **[まだ途中です]** の 画面で数秒待つと、ポータル サイト アプリが開きます。
 
     ![バッジが付いたポータル サイト アプリをタップする](./media/andr-afw-tap-work-badged-company-portal-icon2.png)
 
-9. Android ポータル サイトの **[ようこそ]** 画面で、**[サインイン]** をタップし、職場または学校アカウントを使用してサインインします。
+9. Android ポータル サイトの **[ようこそ]** 画面で、**[サインイン]** をタップし、このプロセスの最初の段階で利用した、職場または学校アカウントを使用してサインインします。
 
 10. **[会社アクセスのセットアップ]** 画面で仕事用プロファイルのセットアップが完了したことを確認し、**[続行]** をタップします。
 
@@ -72,11 +73,11 @@ ms.openlocfilehash: 528f2e3c2e4acbc45132d12e127dc9b7a4e3f49b
 
     ![仕事用プロファイルと登録が完了したことが表示されている [会社アクセスのセットアップ]](./media/andr-afw-company-access-setup-green-checks.png)
 
-12. **[会社アクセスのセットアップが完了しました]** の画面で、**[完了]** をタップします。
+12. **[会社アクセスのセットアップが完了しました]** の画面で、**[完了]** をタップします。 IT 管理者がその他の要件を追加した場合、追加の手順を実行する必要があります。
 
     ![会社アクセスのセットアップが完了しました](./media/andr-afw-company-access-setup-complete.png)
 
-    Play Store for Work が表示されます。ここで会社のアプリを入手できます。
+    これで Play Store for Work から会社のアプリを入手できます。
 
     ![Play Store for Work アプリ ページ](./media/andr-afw-tap-work-play-store-icon.png)
 

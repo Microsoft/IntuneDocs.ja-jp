@@ -13,8 +13,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 77c8df8f1886786a2e772429d93b034798b22a66
-ms.openlocfilehash: 8c500a5bfd59f801d1177a681fa9d55d1aa1ee0e
+ms.sourcegitcommit: 92e40930c0ccbeb3d98bef43b115fd92f24beaef
+ms.openlocfilehash: 93a29266ad9d18f444f0cc0c5aadf9b414eedfa2
 
 
 ---
@@ -24,23 +24,23 @@ ms.openlocfilehash: 8c500a5bfd59f801d1177a681fa9d55d1aa1ee0e
 
 |手順|説明|  
 |-----------|-------------|  
-|**手順 1:** [デバイス登録の依存関係](#step-1-device-enrollment-dependencies)|カスタム ドメイン名が構成されていて、ネットワーク通信の準備が整っていることを確認します。|  
-|**手順 2:** [デバイス管理機関を設定する](#step-2-set-mobile-device-management-authority)|モバイル デバイス管理機関は、お客様のデバイスに割り当てるサービスを定義します。|
-|**手順 3:** [Intune のポータル サイトを構成する](#step-3-configure-the-intune-company-portal)|ユーザーの要求に応じてポータル サイト アプリの設定を構成します。|  
-|**手順 4:** [Intune ユーザー ライセンスを割り当てる](#step-4-assign-intune-user-licenses)|ユーザーがデバイスを登録できるようにユーザーに Intune ライセンスを割り当てます。|
-|**手順 5:** [デバイス管理をセットアップする](#step-5-set-up-device-management)|iOS および Windows での管理に備えてプラットフォームに固有の設定を有効にします。 Android デバイスでは、追加の構成は不要です。|
+|**手順 1:** [接続を有効にする](#step-1-enable-connections)|カスタム ドメイン名が構成されていて、ネットワーク通信の準備が整っていることを確認します。|  
+|**手順 2:** [MDM 機関を設定する](#step-2-set-mdm-authority)|モバイル デバイス管理機関は、お客様のデバイスに割り当てるサービスを定義します。|
+|**手順 3:** [会社のポータルを構成する](#step-3-configure-company-portal)|ユーザーの要求に応じてポータル サイト アプリの設定を構成します。|  
+|**手順 4:** [ユーザー ライセンスを割り当てる](#step-4-assign-user-licenses)|ユーザーがデバイスを登録できるようにユーザーに Intune ライセンスを割り当てます。|
+|**手順 5:** [登録を有効にする](#step-5-enable-enrollment)|iOS および Windows での管理に備えてプラットフォームに固有の設定を有効にします。 Android デバイスでは、追加の構成は不要です。|
 
 Configuration Manager で Intune を管理するには
 > [!div class="button"]
 [SCCM のドキュメントを見る >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
-## 手順 1: デバイス登録の依存関係
+## 手順 1: 接続を有効にする
 
 モバイル デバイスの登録を有効にする前に、次のことが完了していることを確認してください。
 - [必要なネットワーク URL とポートの確認](../get-started/network-infrastructure-requirements-for-microsoft-intune)
 - [ドメイン名の追加と検証](../get-started/domain-names-for-microsoft-intune)
 
-## 手順 2: モバイル デバイスの管理機関を設定する
+## 手順 2: MDM 機関を設定する
 MDM 機関では、一連のデバイスを管理するためのアクセス許可を持つ管理サービスを定義します。 MDM 機関のオプションには、Intune 単体で使用するか、Intune を Configuration Manager と連携させて使用する方法があります。 Configuration Manager を管理機関として設定した場合、モバイル デバイス管理のために使用できるサービスは他にありません。
 
 >[!IMPORTANT]
@@ -56,7 +56,7 @@ MDM 機関では、一連のデバイスを管理するためのアクセス許�
 
 3.  Intune によって、Intune を MDM 機関にすることを確認するよう求められます。 チェック ボックスを選択してから、**[はい]** を選択し、Microsoft Intune を使用してモバイル デバイスを管理します。
 
-## 手順 3: Intune のポータル サイトを構成する
+## 手順 3: 会社のポータルを構成する
 
 ユーザーは、Intune ポータル サイトを使用して、会社のデータにアクセスしたり、デバイスの登録、アプリケーションのインストール、IT 部門からのサポート情報の検索などの一般的なタスクを実行したりできます。
 
@@ -102,7 +102,7 @@ MDM 機関では、一連のデバイスを管理するためのアクセス許�
 
 変更を保存した後で、管理コンソールの **[ポータル サイト]** ページの下部に表示されるリンクを使用して、ポータル サイト Web サイトを表示できます。 これらのリンクは変更できません。 ユーザーがサインインするときに、これらのリンクでポータル サイトが表示されます。
 
-## 手順 4: Intune ユーザー ライセンスを割り当てる
+## 手順 4: ユーザー ライセンスを割り当てる
 
 **Office 365 管理ポータル**を使用して、手動でクラウドベースのユーザーを追加し、クラウドベースのユーザー アカウントと、オンプレミスの Active Directory から Azure Active Directory (Azure AD) に同期されているアカウントの両方にライセンスを割り当てます。 [オンプレミスのユーザーを Azure AD と同期する](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md)ことができます。
 
@@ -119,7 +119,7 @@ MDM 機関では、一連のデバイスを管理するためのアクセス許�
 3. [Azure AD Connect Sync](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/) を実行して、オンプレミス ユーザーを Azure AD と統合します。
 4. ユーザー アカウント情報が正常に同期したら、[Office 365 管理ポータル](https://portal.office.com/Admin/Default.aspx)を使用して Microsoft Intune ライセンスを割り当てることができます。
 
-## 手順 5: デバイス管理をセットアップする
+## 手順 5: 登録を有効にする
 MDM 機関を設定したら、組織がサポートするオペレーティング システムにデバイス管理をセットアップする必要があります。 デバイス管理のセットアップに必要な手順は、オペレーティング システムによって異なります。 たとえば、Android OS では、Intune 管理コンソールで必要になる操作はありません。 これに対して、Windows および iOS では管理を許可するため、デバイスと Intune との間に信頼関係が必要です。
 
 次のプラットフォームの管理を設定します。
@@ -134,6 +134,6 @@ MDM 機関を設定したら、組織がサポートするオペレーティン�
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

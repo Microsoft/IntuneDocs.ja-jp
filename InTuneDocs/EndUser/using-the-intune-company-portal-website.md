@@ -3,6 +3,7 @@ title: "Intune ポータル サイト Web サイトの使用 | Microsoft Intune"
 description: "ポータル サイト Web サイトを説明し、Web サイト上で実行できるタスクの手順へのリンクを示します"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: f44f4785f768e6fea8532199b28d3621248e2dd4
+ms.sourcegitcommit: d69ae68d704a7a4178c43cb1239b27d132221f5a
+ms.openlocfilehash: 1078832ee0296674ea96ee2827795e86148031d4
 
 
 ---
 
 # Intune ポータル サイト Web サイトの使用
-[ポータル サイト Web サイト](http://portal.manage.microsoft.com) は、Intune で登録したコンピューターとデバイスの管理に使用できる Web ページです。
+[ポータル サイト Web サイト](http://portal.manage.microsoft.com)は、Intune で登録したコンピューターとデバイスの管理に使用できる Web ページです。
 
 ポータル サイト Web サイトでは、次のことができます。
 
@@ -36,13 +37,13 @@ ms.openlocfilehash: f44f4785f768e6fea8532199b28d3621248e2dd4
 
 -   [デバイスの手動同期による、低速アプリ インストールの高速化](sync-your-device-manually-cpwebsite.md)
 
--   IT 管理者の連絡先情報の検索 (IT 管理者が構成している場合)。
+-   IT 管理者の連絡先情報の検索 (IT 管理者が構成している場合)
 
 -   会社または学校のポリシーに準拠しているかどうかを含む、デバイスの詳細の表示
 
 -   PC のリモート管理 (PC に対してのみ機能します)
 
-デバイスにインストールされた **ポータル サイト アプリ** を使用して実行できるタスクの大部分は、 **ポータル サイト Web サイト** でも行うことができます。 ポータル サイト アプリや Intune へのデバイスの登録についての詳細を確認するには、お使いのデバイスの種類のリンクをタップしてください。
+デバイスにインストールされた **ポータル サイト アプリ** を使用して実行できるタスクの大部分は、 **ポータル サイト Web サイト** でも行うことができます。 ポータル サイト アプリや Intune へのデバイスの登録方法についての詳細を確認するには、お使いのデバイスの種類のリンクをタップしてください。
 
 - [Android デバイスを Intune で使用する](using-your-android-device-with-intune.md)
 - [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
@@ -50,6 +51,6 @@ ms.openlocfilehash: f44f4785f768e6fea8532199b28d3621248e2dd4
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: "MAM ポリシーの作成と展開 | Microsoft Intune"
 description: "モバイル アプリ管理ポリシーを作成して展開するには、このトピックのステップ バイ ステップの指示に従ってください。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 74d9c9843fd6119095c9670a76afd26443bcc796
-ms.openlocfilehash: dab86ce2210c1f0cec81e402d730a6b996db64fc
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: e5befdd4925f88d41c454d9c1c36eaf02fdb598d
 
 
 ---
@@ -111,8 +112,9 @@ MAM ポリシーを作成する前に、[前提条件とサポート](get-ready-
 >[!IMPORTANT]
 > Intune を使用し、Configuration Manager によって iOS デバイスと Android デバイスを管理する場合、このポリシーは、選択したグループ直下のユーザーにのみ適用されます。  選択したグループ内にネストされた子グループのメンバーは、影響を受けません。
 
-エンドユーザーは App Store または Google Play からアプリをダウンロードできます。 MAM がデバイス上の会社データをどのように保護するかについての詳細なチュートリアルについては、「[End user experience for MAM enabled apps with Microsoft Intune](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)」(MAM が有効なアプリでのエンド ユーザー エクスペリエンス) トピックを参照してください。
-
+エンドユーザーは App Store または Google Play からアプリをダウンロードできます。 詳細については、次をご覧ください。
+* [MAM ポリシーを使用して Android アプリを管理するときの注意点](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [MAM ポリシーを使用して iOS アプリを管理するときの注意点](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 ##  既存のポリシーの変更
 既存のポリシーを編集して、対象ユーザーに適用できます。 ただし、既存のポリシーを変更する場合、アプリに既にサインインしているユーザーには、8 時間にわたって変更が表示されません。
 
@@ -165,10 +167,11 @@ IOS と Android 用のポリシー設定の完全な一覧を表示するには�
 [コンプライアンスとユーザーの状態を監視する](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### 関連項目
-[End user experience for MAM enabled app (MAM が有効なアプリでのエンド ユーザー エクスペリエンス)](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+* [MAM ポリシーを使用して Android アプリを管理するときの注意点](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [MAM ポリシーを使用して iOS アプリを管理するときの注意点](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

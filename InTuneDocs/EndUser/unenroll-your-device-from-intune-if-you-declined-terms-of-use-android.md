@@ -1,8 +1,9 @@
 ---
-title: "利用規約を拒否した場合に Intune からデバイスの登録を解除する | Microsoft Intune"
-description: "使用条件を拒否し、ポータル サイト アプリにサインインできない場合に、Android デバイスを Intune から登録解除する方法について説明します"
+title: Unenroll your device from Intune if you declined "Terms of Use" | Microsoft Intune
+description: "利用規約を拒否し、ポータル サイト アプリにサインインできない場合に、Android デバイスを Intune から登録解除する方法について説明します。"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,18 +14,18 @@ ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08eeb1f330ed8fcea5da41f71ded0ccf124da7c5
-ms.openlocfilehash: 373b349a6a43e79d83ce44a8c1670410ca17c6cf
+ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
+ms.openlocfilehash: 4f5088bc645fed0451885078f5ab0dcd04a33d81
 
 
 ---
 
 
-# 利用規約を拒否した場合に Intune からデバイスの登録を解除する
+# "利用規約" を拒否した場合に Intune からデバイスの登録を解除する
 
-Android デバイスの登録を解除する方法として最も良いのは、利用規約を受け入れ、ポータル サイト アプリにサインインしてから、[こちらの手順](unenroll-your-device-from-intune-android.md)を使用して登録を解除する方法です。 ただし、ポータル サイト アプリへのサインインの試行中に利用規約を拒否した場合は、次回以降、ポータル サイト アプリにサインインできなくなるため、デバイスの登録を解除するときは次の "回避策" の手順を実施する必要があります。
+Android デバイスの登録を解除する方法として最も良いのは、利用規約を受け入れ、ポータル サイト アプリにサインインしてから、[こちらの手順](unenroll-your-device-from-intune-android.md)を使用して登録を解除する方法です。 ただし、ポータル サイト アプリへのサインインの試行中に利用規約を拒否した場合は、次回以降、ポータル サイト アプリにサインインできなくなります。 その場合は、"回避策" の手順を使用してデバイス登録を解除する必要があります。
 
-会社のポータル アプリをアンインストールする場合は、Intune からもデバイスの登録を解除するため、デバイスから会社のリソースにはアクセスできなくなります。  登録解除した場合の詳細については、「[Intune からデバイスの登録を解除するとどうなるか](what-happens-if-you-unenroll-your-device-from-intune-android.md)」を参照してください。
+ポータル サイト アプリをアンインストールすると、Intune からそのデバイスの登録も解除されます。 デバイスは会社のリソースにアクセスできなくなります。 登録解除した場合の詳細については、「[Intune からデバイスの登録を解除するとどうなるか](what-happens-if-you-unenroll-your-device-from-intune-android.md)」を参照してください。
 
 会社のポータル アプリをアンインストールするには、最初に **[Device administrators]** 設定に進み、**[会社のポータル]** をオフにします。 使用している Android デバイスによっては、手順が多少異なる場合があります。
 
@@ -34,7 +35,7 @@ Intune からデバイスの登録を解除し、会社のポータル アプリ
 
     この手順は、デバイスの登録を解除したらすぐに実行します。
 
-2.  **[会社のポータル]** の横のチェック ボックスをクリアして、オフにします。
+2.  **[会社のポータル]** の横のチェック ボックスの選択を解除 (オフに) します。
 
     これで、会社のポータル アプリをアンインストールできます。
 
@@ -42,7 +43,6 @@ Intune からデバイスの登録を解除し、会社のポータル アプリ
 
 
 
-
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

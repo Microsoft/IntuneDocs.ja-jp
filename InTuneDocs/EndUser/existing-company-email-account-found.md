@@ -2,7 +2,8 @@
 title: "検出された既存の会社の電子メール アカウント | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,14 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8eb98946c39b98d3c338b32a7d955818020ef478
-ms.openlocfilehash: f33287c51fb769505cd1fb4fcfe2bbc1e4da0ea2
+ms.sourcegitcommit: eebc35277aedabb2575b753afbaf9ea05b1555e8
+ms.openlocfilehash: 6b7123dc4ec0b7a73e6e3151ca9c66a65354f9de
 
 
 ---
 
-# 検出された既存の会社の電子メール アカウント
-会社の電子メール アカウントがあります。 会社の電子メールに接続を続行するには、IT 管理者は適切に設定して、アカウントの管理を有効にするには、次の手順を実行してください。
+# <a name="existing-company-email-account-found"></a>検出された既存の会社の電子メール アカウント
+
+会社の電子メール アカウントがあります。 続けて会社の電子メール アカウントに接続するには、次の手順を実行し、IT 管理者がアカウントを適切に設定し、管理できるようにします。
 
 1.   **設定** 、デバイスで会社の電子メールに以前を設定する接続を削除します。
 
@@ -35,6 +37,6 @@ ms.openlocfilehash: f33287c51fb769505cd1fb4fcfe2bbc1e4da0ea2
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

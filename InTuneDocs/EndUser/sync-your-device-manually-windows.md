@@ -3,8 +3,9 @@ title: "Windows デバイスを手動で同期する | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8450facfe63d947df6e6a152805ad882ae220c3e
-ms.openlocfilehash: d7c2fb804e01df6689044d6ca2e72ff00ee95fbc
+ms.sourcegitcommit: 2d7630d71505fadc22ab135ff0c8988b314793ad
+ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
 
 
 ---
@@ -53,7 +54,7 @@ ms.openlocfilehash: d7c2fb804e01df6689044d6ca2e72ff00ee95fbc
     画面の上部に、"アカウントを同期中" というメッセージが表示されます。 同期が完了するまで、**[同期]** ボタンは灰色表示になります。
 
 ## Windows 10 Desktop
-アプリのインストールを高速化するために Windows 10 Desktop デバイスを手動で同期するには:
+Windows 10 には複数のバージョンがあるため、2 つの手順があります。 スクリーンショットを確認し、お使いのデバイスの表示画面に近い方の手順に従ってください。 
 
 1. **[スタート]** ボタンを選択し、**[設定]** を選択します。
 
@@ -63,15 +64,46 @@ ms.openlocfilehash: d7c2fb804e01df6689044d6ca2e72ff00ee95fbc
 
     ![[設定] ページの [アカウント] の選択](./media/win10pc-sync-2-settings-accounts.png)
 
-3. **[アカウント]** ページで、**[職場のアクセス]** を選択します。
+3. 次の 2 つの画面を見て、お使いのデバイスの表示画面に似ている方をご確認ください。 お使いのデバイスの表示画面に対応する手順に従います。
+
+    [職場または学校にアクセスする] の画面が表示されている場合は、「[[職場または学校にアクセスする] が表示されている場合の手順](#steps-to-follow-if-you-see-access-work-or-school)」にある指示に従います。
+
+    ![[職場または学校にアクセスする] が表示されている場合の同期手順](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+    [職場のアクセス] の画面が表示されている場合は、「[[職場のアクセス] が表示されている場合の手順](#steps-to-follow-if-you-see-your-account)」にある指示に従います。
+
+    ![アカウントの種類として職場のアクセスを選択する](./media/win10pc-sync-3-work-access.png) 
+
+### [職場または学校にアクセスする] が表示されている場合の手順
+
+1. **[アカウント]** ページで、**[職場または学校にアクセスする]** を選択します。
+
+    ![[職場または学校にアクセスする] を選択する](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+2. 職場または学校のアカウントを選択します。 IT 管理者が行った設定に応じて、以下に示す例のような 2 種類のアカウントが表示されます。 1 つのアカウントの横にはブリーフケースがあり、もう 1 つのアカウントの横には Microsoft のロゴがあります。 
+
+    - ブリーフケースが表示されているアカウントがある場合はそれを選択し、その下に **[情報]** ボタンが表示されていることを確認します。 
+    - Microsoft のロゴが表示されているアカウントしかない場合はそのアカウントを選択して、その下に **[情報]** ボタンが表示されていることを確認します。
+
+    ![ブリーフケースまたは Microsoft のロゴの横にあるアカウント名を選択する](./media/win10pc-rs1-sync-info-button.png)
+
+3. **[情報]** ボタンを選択します。 次の例のようなダイアログ ボックスが開きます。
+
+    ![ブリーフケースまたは Microsoft のロゴの横にあるアカウント名を選択する](./media/win10pc-rs1-sync-button.png)
+
+4. **[同期]** ボタンを選択します。 デバイスと Intune が同期されます。
+
+### [職場のアクセス] が表示されている場合の手順
+    
+1. **[アカウント]** ページで、**[職場のアクセス]** を選択します。
 
     ![アカウントの種類として職場のアクセスを選択する](./media/win10pc-sync-3-work-access.png)
 
-4. **[Enroll in to device management]** (デバイス管理に登録する) セクションで、会社名を選択します。
+2. **[Enroll in to device management]** (デバイス管理に登録する) セクションで、会社名を選択します。
 
     ![デバイス管理の会社名の選択](./media/win10pc-sync-4-tap-com-name.png)
 
-5. **[同期]** ボタンを選択します。
+3. **[同期]** ボタンを選択します。
 
     ![[同期] ボタンの選択](./media/win10pc-sync-5-tap-sync.png)
 
@@ -98,6 +130,6 @@ ms.openlocfilehash: d7c2fb804e01df6689044d6ca2e72ff00ee95fbc
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -3,8 +3,9 @@ title: "Android デバイスで Lookout for Work のインストールを求め�
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +13,8 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: dd08b2e454b14c82e1dd9704617b32ac86ff7790
-ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
+ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
+ms.openlocfilehash: f152da14c347cd41edbaf7cc8f4d16abc57bedbb
 
 
 ---
@@ -21,6 +22,8 @@ ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
 # Lookout for Work のインストールを求められる
 
 作業内容にアクセスする前に、IT 管理者から潜在的なセキュリティ脅威を検出してデバイスを保護することができる、Lookout for Work アプリをインストールするように求められます。
+
+インストールで問題が発生する場合、このトピックの終わりに示すトラブルシューティングの手順を試してください。
 
 
 **必要な操作**
@@ -35,7 +38,7 @@ ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
 
     ![[同意する] をタップして Lookout for Work によるデバイスへのアクセスを許可します](./media/lookout-accept-store-permissions-android.png)
 
-3. Lookout for Work を開いて [**有効化する**] をタップします。
+3. Lookout for Work を開いて [**有効化する**] をタップします
 
     ![Lookout for Work を開いて [有効化する] をタップします](./media/lookout-activate-button-android.png)
 
@@ -61,7 +64,7 @@ ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
 
     ![Lookout for Work に接続している状態になりました](./media/lookout-you-are-now-connected-android.png)
 
-    Lookout for Work がこのデバイス上のセキュリティの脅威を探す処理がただちに開始します。 脅威が見つからなかった場合は、次に示す画面が表示されます。
+    Lookout for Work がこのデバイス上のセキュリティの脅威を探す処理をただちに開始します。 脅威が見つからなかった場合は、次に示す画面が表示されます。
 
     ![セキュリティ上の脅威はありませんでした](./media/lookout-scan-no-threats-found-android.png)
 
@@ -69,15 +72,16 @@ ms.openlocfilehash: 53a239f574c327be461663872545bda63ac4b7a5
 
     ![このデバイスはポリシーに準拠している状態になりました](./media/lookout-device-now-compliant-android.png)
 
-    Lookout for Work によってこのデバイスでセキュリティ上の脅威が見つかった場合は、問題を解決する手順が表示されます。
+    Lookout for Work がこのデバイスでセキュリティ上の脅威を検出した場合は、問題を解決する手順が表示されます。
+
+**インストールが機能しない場合**
+
+ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。 このような場合は、Play ストアから Lookout for Work を手動でインストールしてください ([https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise))。 
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
 
 
-
-
-
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 
