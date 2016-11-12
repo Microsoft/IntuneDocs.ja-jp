@@ -14,8 +14,8 @@ ms.assetid: 098b652c-01e0-45d1-a731-620b0d3dc7c1
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0f78ece8bbaf813c0082e6b764d174cf25bcb618
-ms.openlocfilehash: 89f0bc5dd10c173718f9698e6e0342b5eb8c56e8
+ms.sourcegitcommit: 5083cb49e7a98f19ff21c1972149b00aee4ec93e
+ms.openlocfilehash: 8c2718da6f90f18ffbaa6a977dfca7fbc9a1bb09
 
 
 ---
@@ -27,11 +27,16 @@ MAM ポリシーを使用したアプリの条件付きアクセス (MAM CA) は
 
 * 最新ではない認証プロトコルをブロックするように ADFS 要求規則を設定します。 詳しい手順は、シナリオ 3 の[ブラウザー ベースのアプリケーションを除く Office 365 への外部アクセスをすべてブロックする方法](https://technet.microsoft.com/library/dn592182.aspx)に関するページを参照してください。
 
+>[!IMPORTANT]
+>MAM CA は、Azure Active Directory (Azure AD) 証明書ベースの認証と併用することはできません。 同時に使用できるのは、いずれかの構成のみです。
+
+
+
 ### 関連項目
 [Intune でサポートされているアプリにのみ Office 365 サービスへのアクセスを許可する](allow-policy-managed-apps-access-to-o365.md)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

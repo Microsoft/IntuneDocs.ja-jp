@@ -3,6 +3,7 @@ title: "登録済みのデバイス管理機能 | Microsoft Intune"
 description: "登録するデバイスの管理における Intune の利点についてはこのトピックを参照してください。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/01/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ff6bfdc079e00f8a39cc532d1f6f9049aa6a32c8
-ms.openlocfilehash: 10dfecd41e68440a4c27aa7358dbbc88b6106001
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 710295f0eaeee71bba549c22706ecbfd062ffcb1
 
 
 ---
@@ -71,6 +72,6 @@ Microsoft Intune では、サービスにデバイスを*登録*することに�
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Oct16_HO4-->
 
 

@@ -2,7 +2,8 @@
 title: "お使いのコンピューターは既に登録されています | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -14,20 +15,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: f61840073cdb6a41c98e20bb5e1457e22f02d5bb
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: f1ef3603c074e0f746fc7126f85a6ab55095042e
 
 
 ---
 
 
-# お使いのコンピューターは既に登録されています
+# <a name="your-computer-is-already-enrolled"></a>お使いのコンピューターは既に登録されています
 
 コンピューターが既に登録されていることを示すエラーが表示された場合、コンピューターは既にポータル サイトに追加されていますが、ユーザー アカウントにはまだ関連付けられていません。 この手順に従って、コンピューターをユーザー アカウントにリンクし、プロセスを完了してください。  
 
 コンピューターを関連付けるには
 
-1.  ユーザー アカウントに関連付けるコンピューターで **[スタート]** をクリックし、**[Microsoft Intune Center]** をクリックします。
+1.  ユーザー アカウントに関連付けるコンピューターで **[スタート]** を選択し、**[Microsoft Intune Center]** を選択します。
 
 2.  ポータル サイトを開きます。
 
@@ -39,6 +40,6 @@ ms.openlocfilehash: f61840073cdb6a41c98e20bb5e1457e22f02d5bb
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 

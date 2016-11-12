@@ -2,9 +2,10 @@
 title: "Windows 10 デバイスの登録に関するトラブルシューティング | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 8/18/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +15,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: ff70fb247133234f1a90113326c5641b4f73b9df
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: ecd84b62d34e22a72da87995ff0d62dad5e5a9ed
 
 
 ---
 
-# Windows 10 デバイスの登録に関するトラブルシューティング
+# <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 デバイスの登録に関するトラブルシューティング
 「[Intune に Windows 10 Mobile または Windows 10 デスクトップ デバイスを登録する](enroll-your-w10-phone-or-w10-pc-windows.md)」の手順を完了しても職場または学校の電子メールやファイルにアクセスできない場合は、次のトラブルシューティング手順を試してください。
 
 1.  次の 2 つの画面を見て、お使いのデバイスの表示画面に似ている方をご確認ください。 お使いのデバイスの表示画面に対応する手順に従います。
@@ -33,7 +34,7 @@ ms.openlocfilehash: ff70fb247133234f1a90113326c5641b4f73b9df
 
     ![settings-accounts-your-account](./media/W10-enroll-2-accounts-your-account.png)
 
-## [Access work or school (職場または学校へのアクセス)] が表示されている場合のトラブルシューティング手順
+## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>[Access work or school (職場または学校へのアクセス)] が表示されている場合のトラブルシューティング手順
 
 1.  上記の手順を実行しても職場または学校の電子メールやファイルにアクセスできない場合は、**[Access work or school (職場または学校へのアクセス)]** に戻ります。
 
@@ -45,7 +46,7 @@ ms.openlocfilehash: ff70fb247133234f1a90113326c5641b4f73b9df
 
     - 上に示した接続情報が表示されない場合、または接続情報は表示されるが一部のオプションが表示されない場合は、**[接続]** をタップし、職場または学校の資格情報でサインインします。 これで接続が完了します。
 
-## [お使いのアカウント] が表示されている場合のトラブルシューティング手順
+## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>[お使いのアカウント] が表示されている場合のトラブルシューティング手順
 
 上記の手順を実行しても、職場または学校の電子メールやファイルなどのデータにアクセスできない場合は、**[アカウント]** に戻り、**[職場のアクセス]** をタップします。
 
@@ -57,6 +58,6 @@ ms.openlocfilehash: ff70fb247133234f1a90113326c5641b4f73b9df
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

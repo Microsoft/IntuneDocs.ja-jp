@@ -3,6 +3,7 @@ title: "電子メールへのアクセスを制限するシナリオ例 | Micros
 description: "いくつかのシナリオ例と、条件付きアクセスを使用した場合の実装方法。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 6b4751a67414a0b8a16886070b323a0296eeb829
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 6c1a1c90b442eac039f93103264059ea415b43ff
 
 
 ---
@@ -81,6 +82,6 @@ ms.openlocfilehash: 6b4751a67414a0b8a16886070b323a0296eeb829
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

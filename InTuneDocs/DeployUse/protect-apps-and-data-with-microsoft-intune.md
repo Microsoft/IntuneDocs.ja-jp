@@ -14,13 +14,13 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dd7a51b5ba176c8c7b593d2d7a3e5cfabd72a1e6
-ms.openlocfilehash: 77ce4cca5f85f1847e599a6151411bfc12afbc8b
+ms.sourcegitcommit: 30fae0cc2e9b3b08f9195c2622b0daec639e0d62
+ms.openlocfilehash: 3b8a263a45690c9bb213128b592e1ef9788cacd8
 
 
 ---
 
-# Microsoft Intune でアプリとデータを保護する
+# <a name="protect-apps-and-data-with-microsoft-intune"></a>Microsoft Intune でアプリとデータを保護する
 
 
 Intune は、複数のテクノロジ層を介して会社のデータを保護します。  ID 層では、条件付きアクセスによりサービスへのアクセスを保護します。管理対象のデバイスが条件を満たした場合にのみアクセスが許可されます。  クライアント アプリケーション層では、モバイル アプリ管理 (MAM) がデータ紛失を防止します。保護されていないアプリや記憶域にデータを異動する行為を禁止し、デバイスをなくしたり、盗難に遭ったりした場合、データを消去します。  データをセキュリティで保護し、モバイルの生産性を維持するために、これらの 2 つの保護層は合わせて使用してください。
@@ -46,7 +46,7 @@ Intune は、複数のテクノロジ層を介して会社のデータを保護�
 
 アプリと MAM ポリシーを関連付けるには、アプリに Microsoft Intune App ソフトウェア開発キット (SDK) を組み込むか、アプリでアプリ ラッピング ツールを使用する必要があります。
 
-Microsoft Office アプリのようなアプリには、アプリ SDK が組み込まれています。 サポートされているアプリの完全リストは、Microsoft Intune アプリケーション パートナー ページの [Microsoft Intune モバイル アプリケーション ギャラリー](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)にあります。 アプリを選択し、サポートされるシナリオ、プラットフォーム、アプリのマルチ ID 対応を確認してください。
+Microsoft Office アプリのようなアプリには、アプリ SDK が組み込まれています。 サポートされているアプリの完全リストは、Microsoft Intune アプリケーション パートナー ページの [Microsoft Intune モバイル アプリケーション ギャラリー](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)にあります。 アプリを選択し、サポートされるシナリオ、プラットフォーム、アプリのマルチ ID 対応を確認してください。
 
 [特注の基幹業務アプリ](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)で MAM ポリシーを使用することもできます。
 
@@ -54,6 +54,6 @@ Microsoft Office アプリのようなアプリには、アプリ SDK が組み�
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

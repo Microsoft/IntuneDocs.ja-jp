@@ -3,6 +3,7 @@ title: "エンドポイント保護のトラブルシューティング | Micros
 description: "Microsoft Intune Endpoint Protection の使用中に生じた問題を解決します。"
 keywords: 
 author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 71f976fba252950fd9a8818fb27fbbb294369894
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 95c9b857665bdb97ea035fd4cee18ca4508c4cbb
 
 
 ---
@@ -49,6 +50,6 @@ Microsoft Intune エンドポイント保護の使用中に生じた問題を解
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Oct16_HO4-->
 
 

@@ -2,10 +2,10 @@
 title: "Intune ポータル サイト アプリをインストールしてサインインする | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1d133011004fa9c684f81c7adc085dc43a4a2ee4
-ms.openlocfilehash: 29bc67a9ce4120cbb9f157c8d0eefb78dce020ca
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 5633cc9b9a97211bd5ff6a2d876bdb36ee8888c9
 
 
 ---
 
 
-# Intune ポータル サイト アプリをインストールしてサインインする
+# <a name="install-and-sign-in-to-the-intune-company-portal-app"></a>Intune ポータル サイト アプリをインストールしてサインインする
 
 ポータル サイトはアプリの一種であり、iOS デバイスにインストールすることで、会社または学校のアプリ、電子メール、およびネットワークにアクセスできるようになります。  アクセスを可能にするには、事前に、ポータル サイト アプリをインストールし、このアプリを使用して、Microsoft Intune にデバイスを登録しておく必要があります。 詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなりますか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)」を参照してください。
 
@@ -40,6 +40,6 @@ ms.openlocfilehash: 29bc67a9ce4120cbb9f157c8d0eefb78dce020ca
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

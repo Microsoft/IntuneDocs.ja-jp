@@ -3,8 +3,9 @@ title: "アプリケーションのロールアウト | Microsoft Intune"
 description: "Microsoft Intune でアプリを段階的にロールアウトする場合の推奨事項。"
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+ms.author: nbigman
+manager: angrobe
+ms.date: 10/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2427768c0ca73d20140462946ba2984b7999d864
-ms.openlocfilehash: d72247936a0dec8e2e00d107c0d52c1568a92c03
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: aea7c235ad643a2a03ac7b3ea68c6b8c717bcd48
 
 
 ---
@@ -29,9 +30,9 @@ ms.openlocfilehash: d72247936a0dec8e2e00d107c0d52c1568a92c03
 
 -   概念実証
 
--   パイロット
+-   パイロット運用
 
--   全社的なロールアウト
+-   企業でのロールアウト
 
 -   運用とメンテナンス
 
@@ -71,7 +72,7 @@ ms.openlocfilehash: d72247936a0dec8e2e00d107c0d52c1568a92c03
 
 -   パイロット ユーザーのコミュニケーション計画を有効にします。
 
-## 全社的なロールアウト
+## 企業でのロールアウト
 
 -   パイロット運用の結果に基づき、全社的なロールアウトの調整を行います。
 
@@ -95,6 +96,6 @@ ms.openlocfilehash: d72247936a0dec8e2e00d107c0d52c1568a92c03
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

@@ -2,9 +2,10 @@
 title: "アプリごとの VPN のパッケージ ファミリ名 (PFN) を検索する | Microsoft Intune"
 description: "アプリごとの VPN を構成できるように PFN を検索する。"
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +14,17 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3cc73e43f09709b71c78a81c73b044d92d4ef401
-ms.openlocfilehash: 77977ea32ea37a54e9d67638bb0e4c3bb6841fb3
+ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
+ms.openlocfilehash: 6d3e43c1380114634c44bd364076df404bce95e3
 
 
 ---
 
-# アプリごとの VPN 構成のパッケージ ファミリー名 (PFN) を検索する
+# <a name="find-a-package-family-name-pfn-for-perapp-vpn-configuration"></a>アプリごとの VPN 構成のパッケージ ファミリー名 (PFN) を検索する
 
 アプリごとの VPN をセットアップできるように PFN を検索する方法は 2 つあります。
 
-## Windows 10 コンピューターにインストールされているアプリの PFN を検索する
+## <a name="find-a-pfn-for-an-app-thats-installed-on-a-windows-10-computer"></a>Windows 10 コンピューターにインストールされているアプリの PFN を検索する
 
 使用しているアプリが既に Windows 10 コンピューターにインストールされている場合、[Get-AppxPackage](https://technet.microsoft.com/library/hh856044.aspx) PowerShell コマンドレットを使用して PFN を取得できます。
 
@@ -66,7 +67,7 @@ OneNote について取得される情報の例を次に示します。
 
 
 
-## アプリがコンピューターにインストールされていない場合に PFN を検索する
+## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>アプリがコンピューターにインストールされていない場合に PFN を検索する
 
 1.  https://www.microsoft.com/en-us/store/apps に移動します。
 2.  検索バーにアプリ名を入力します。 この例では、OneNote を検索します。
@@ -85,6 +86,6 @@ Microsoft Edge に目的の情報が表示されます。Internet Explorer で *
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
