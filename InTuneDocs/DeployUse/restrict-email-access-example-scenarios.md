@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -20,10 +20,10 @@ ms.openlocfilehash: 6c1a1c90b442eac039f93103264059ea415b43ff
 
 ---
 
-# Microsoft Intune で電子メールへのアクセスを制限する: シナリオ例
+# <a name="restrict-access-to-email-with-microsoft-intune-example-scenarios"></a>Microsoft Intune で電子メールへのアクセスを制限する: シナリオ例
 
-## 非準拠のデバイスを使用して Exchange Online にアクセスするユーザーをブロックする
-### シナリオの要件
+## <a name="block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>非準拠のデバイスを使用して Exchange Online にアクセスするユーザーをブロックする
+### <a name="scenario-requirements"></a>シナリオの要件
 - 展開したコンプライアンス ポリシーにデバイスが準拠していない場合、**[アカウンティング]** Active Directory セキュリティ グループ内のすべてのユーザーの Exchange Online へのアクセスをブロックする必要があります。
 - このグループ内に [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] によってデバイスがサポートされていないユーザーが存在する場合、それらのデバイスでのユーザーによる Exchange Online へのアクセスをブロックする必要があります。
 - **[ファイナンス]** Active Directory セキュリティ グループに属するユーザーはいずれも、さらに **[アカウンティング]** セキュリティ グループに属していたとしても、ポリシーから除外する必要があります。
@@ -43,8 +43,8 @@ ms.openlocfilehash: 6c1a1c90b442eac039f93103264059ea415b43ff
 
 ![デバイス アクセス フロー](./media/ConditionalAccess8-5.png)
 
-## Exchange On-premises にアクセスするすべての iOS デバイスを Intune で管理する必要がある
-### シナリオの要件
+## <a name="all-ios-devices-that-access-exchange-onpremises-must-be-managed-by-intune"></a>Exchange On-premises にアクセスするすべての iOS デバイスを Intune で管理する必要がある
+### <a name="scenario-requirements"></a>シナリオの要件
 - iOS を実行しているデバイスだけが Exchange On-premises にアクセスできるようにする必要があります。
 - デバイスを Exchange へのアクセスに使用するには、それらのデバイスが Intune に登録され、コンプライアンス ポリシーのルールに準拠している必要があります。
 
@@ -62,8 +62,8 @@ ms.openlocfilehash: 6c1a1c90b442eac039f93103264059ea415b43ff
 
 ![デバイス アクセス フロー](./media/ConditionalAccess8-3.png)
 
-## Android デバイスは Exchange On-premises にアクセスできない
-### シナリオの要件
+## <a name="no-android-devices-can-access-exchange-onpremises"></a>Android デバイスは Exchange On-premises にアクセスできない
+### <a name="scenario-requirements"></a>シナリオの要件
 - すべての Android デバイスに対して Exchange へのアクセスをブロックする必要があります。
 - その他すべてのサポートされるデバイスは、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] で管理されている限り Exchange にアクセスできます。
 

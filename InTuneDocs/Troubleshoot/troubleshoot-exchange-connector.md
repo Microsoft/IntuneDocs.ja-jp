@@ -2,8 +2,8 @@
 title: "Exchange Connector のトラブルシューティング | Microsoft Intune"
 description: "Intune Exchange Connector に関連する問題のトラブルシューティングを行います。"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/26/2016
 ms.topic: article
@@ -20,10 +20,10 @@ ms.openlocfilehash: f6b673d05e385ddfe6ef3d3e63cf857439b164de
 
 ---
 
-# Exchange Connector のトラブルシューティングを行う
+# <a name="troubleshoot-the-exchange-connector"></a>Exchange Connector のトラブルシューティングを行う
 このトピックでは、Intune Exchange Connector に関連する可能性のある問題のトラブルシューティングを行う方法について説明します。
 
-## Connector の構成を確認する手順 
+## <a name="steps-for-checking-the-connector-configuration"></a>Connector の構成を確認する手順 
 
 Exchange Connector の構成を調べて、問題を解決できるかどうかを確認します。
 
@@ -32,7 +32,7 @@ Exchange Connector の構成を調べて、問題を解決できるかどうか�
 - Exchange Connector を構成するときに、Exchange Connector をホストするサーバーに近接するクライアント アクセス サーバー (CAS) を指定します。 特に O365 Dedicated を使用している場合は、CAS と Exchange Connector 間の通信の遅延によってデバイスの検出が遅くなる可能性があります。
 - Exchange Connector と Exchange CAS の同期にはタイム ラグがあることに注意してください。 完全同期は 1 日に 1 回実行され、差分 (クイック) 同期は 2 時間間隔で実行されます。 新しく登録されたデバイスを持つユーザーは、アクセスの取得が遅れる可能性があります。
 - 
-## Exchange ActiveSync device not discovered from Exchange (Exchange ActiveSync デバイスが Exchange から検出されない)
+## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>Exchange ActiveSync device not discovered from Exchange (Exchange ActiveSync デバイスが Exchange から検出されない)
 Exchange Connector が Exchange サーバーと同期しているかどうかを調べます。 これを行うには、ログで完全同期または差分同期を探します。 Exchange Connector のログを確認します。 デバイスの参加以降、完全同期または差分同期が正常に完了している場合は、問題の原因から同期を排除します。 同期が行われていない場合は、同期ログを収集し、サポート依頼に添付してください。
 
 - ユーザーが Intune ライセンスを持っていない場合、Exchange Connector は、それらのユーザーのデバイスを検出しません。
@@ -41,12 +41,12 @@ Exchange Connector が Exchange サーバーと同期しているかどうかを
 - Exchange Dedicated (O365 Dedicated) 環境では、初期セットアップ中に Exchange Connector が専用環境内の (2010 ではなく) Exchange 2013 CAS をポイントするように構成する必要があります。理由は、Exchange Connector は、Powershell コマンドレットを実行するときに、この CAS のみと通信するためです。
 
 
-## Powershell を使用して Exchange Connector の問題に関するより多くのデータを取得する
+## <a name="using-powershell-to-get-more-data-on-exchange-connector-issues"></a>Powershell を使用して Exchange Connector の問題に関するより多くのデータを取得する
 - メールボックスのすべてのモバイル デバイスの一覧を取得するには、Get-ActiveSyncDeviceStatistics -mailbox mbx を使用します。
 - メールボックスの SMTP アドレスの一覧を取得するには、Get-Mailbox -Identity user | select emailaddresses | fl を使用します。
 - デバイスのアクセス状態に関する詳細情報を取得するには、Get-CASMailbox <upn> | fl を使用します。
 
-### 次のステップ
+### <a name="next-steps"></a>次のステップ
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
 
 
