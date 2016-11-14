@@ -14,8 +14,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 3422d47a5759e22a512cf6de8578d774ad3bb8cd
+ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
+ms.openlocfilehash: 0b60e7a7a921762e682185af273bb94f24441a0c
 
 
 ---
@@ -100,7 +100,7 @@ Microsoft Intune では、Intune クライアント ソフトウェアを使用�
 
  - ソフトウェアおよびハードウェアのインベントリのレポート
  - デスクトップ アプリケーション (.exe ファイルや .msi ファイルなど) のインストール
- - ファイアウォール設定
+ - ファイアウォール設定を管理します。
 
 Intune クライアント ソフトウェアを利用して管理される PC は、選択的ワイプを利用できますが、完全にはワイプされません。 Intune クライアント ソフトウェアを使用して管理される PC では、条件付きアクセス、VPN と Wi-Fi の設定、証明書と電子メール構成の展開などの多数の Intune 管理機能を利用できません。
 
@@ -119,6 +119,6 @@ Intune では、次のデバイス プラットフォームを管理できます
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
