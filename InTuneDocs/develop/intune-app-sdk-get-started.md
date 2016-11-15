@@ -19,15 +19,15 @@ ms.openlocfilehash: c80868fdee79df62aae0aa64e378be5dcc9664ae
 
 ---
 
-# Microsoft Intune アプリ SDK を使ってみる
+# <a name="getting-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune アプリ SDK を使ってみる
 
 この入門ガイドを使用すると、Microsoft Intune でモバイル アプリケーション管理用のモバイル アプリをすぐに有効にできます。 [Intune アプリ SDK の概要](intune-app-sdk.md)に列挙されている Intune アプリ SDK の利点を最初に理解しておくと、役に立つ場合があります。
 
 このガイドは、Microsoft Intune を使用したアプリケーションでモバイル アプリ管理を有効にするために必要な主要な手順について、段階的に説明します。 Intune アプリ SDK は、プラットフォーム間で類似するシナリオをサポートしており、プラットフォーム全体にわたって一貫した操作性を IT 管理者に提供することを目的としています。 ただし、プラットフォームの制限事項により、特定機能のサポートについてわずかな相違点があります。
 
-# 概要
+# <a name="getting-started"></a>概要
 
-## Microsoft でのストア アプリの登録
+## <a name="register-your-store-app-with-microsoft"></a>Microsoft でのストア アプリの登録
 
 **アプリが社内用であり、社外向けアプリ ストアでは提供しない場合**:
 
@@ -55,7 +55,7 @@ Microsoft はアンケートに入力された電子メール アドレスを使
 
 
 
-## SDK ファイルをダウンロードする
+## <a name="download-the-sdk-files"></a>SDK ファイルをダウンロードする
 
 ネイティブ iOS 用および Android 用の Intune アプリ SDK は、Microsoft GitHub アカウントでホストされています。 以下のパブリック リポジトリには、それぞれ iOS 用および Android 用の SDK ファイルが含まれます。
 
@@ -73,7 +73,7 @@ Microsoft はアンケートに入力された電子メール アドレスを使
 
 
 
-## SDK を使用する MAM に対して iOS または Android のモバイル アプリを有効にする
+## <a name="enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk"></a>SDK を使用する MAM に対して iOS または Android のモバイル アプリを有効にする
 
 Intune アプリ SDK をネイティブ iOS アプリに統合するには、次のものが必要です。 
 
@@ -87,7 +87,7 @@ Intune アプリ SDK をネイティブ Android アプリに統合するには�
 Intune App SDK Xamarin コンポーネントおよび Intune App SDK Cordova プラグインのドキュメントは、それぞれの GitHub リポジトリにあります。 
 
 
-## アプリの製品利用統計情報を構成する
+## <a name="configuring-telemetry-for-your-app"></a>アプリの製品利用統計情報を構成する
 
 Microsoft Intune はアプリの利用統計データを収集します。
 
@@ -97,7 +97,7 @@ Microsoft Intune はアプリの利用統計データを収集します。
 
 * **Android 用 Intune アプリ SDK**: SDK によって製品利用統計情報データがログに記録されることはありません。
 
-## Microsoft Intune での MAM が有効になっているアプリのテスト
+## <a name="test-your-mam-enabled-app-with-microsoft-intune"></a>Microsoft Intune での MAM が有効になっているアプリのテスト
 
 iOS または Android アプリを Intune アプリ SDK と統合するために必要な手順を完了した後、すべてのアプリ管理ポリシーが、エンドユーザーと IT 管理者に対して有効化され機能していることを確認する必要があります。 統合されたアプリをテストするには、次の手順を実行します。
 
