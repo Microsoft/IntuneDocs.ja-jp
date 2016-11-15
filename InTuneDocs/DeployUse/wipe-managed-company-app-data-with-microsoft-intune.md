@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 3ba40ad3a8c5eaba684d589c7526435ba87d0390
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: 4718d61f9d76a903ffc1820c77fc755d1ca1707b
 
 
 ---
 
-# 管理対象の業務用アプリのデータを Microsoft Intune でワイプする
+# <a name="wipe-managed-company-app-data-with-microsoft-intune"></a>管理対象の業務用アプリのデータを Microsoft Intune でワイプする
 デバイスが紛失や盗難にあった場合、または従業員が離職した場合、会社のアプリのデータがデバイスから削除されたことを確認する必要があります。 ただし、個人のデータをデバイスから削除するのは好ましくありません。そのデバイスの所有者が従業員である場合はなおさらです。
 
 会社のアプリのデータだけを選択して削除するには、このトピックの「**ワイプ要求の作成**」セクションに記載されているワイプ要求を作成します。  ワイプ要求の完了後、次にデバイス上でアプリが実行されると、そのアプリから会社のデータが削除されます。
@@ -29,7 +29,7 @@ ms.openlocfilehash: 3ba40ad3a8c5eaba684d589c7526435ba87d0390
 
 
 
-## ワイプ要求の作成
+## <a name="create-a-wipe-request"></a>ワイプ要求の作成
 
 1.   **[Intune モバイル アプリケーション管理]** ブレードで **[ワイプ要求]** タイルを選択します。
 
@@ -48,20 +48,24 @@ ms.openlocfilehash: 3ba40ad3a8c5eaba684d589c7526435ba87d0390
 
 ![[ワイプ要求] タイルのスクリーンショット ](../media/AppManagement/AzurePortal_MAM_WipeRequestsSummary.png)
 
-## ワイプ要求を監視する
+## <a name="monitor-your-wipe-requests"></a>ワイプ要求を監視する
  **[Intune モバイル アプリケーション管理]** ブレードの **[ワイプ要求]** タイルに、集計レポートが表示されます。  これには保留中の要求およびエラーの数を含めた全体的な状態が表示されます。 次に示す手順に従って詳しい情報を確認できます。
 
 1.  **[Intune モバイル アプリケーション管理]** ブレードで、**[ワイプ要求]** タイルを選択して **[ワイプ要求]** ブレードを開きます。
 
 2.   **[ワイプ要求]** ブレードでは、要求をユーザー別にグループ化して一覧表示できます。  ワイプ要求はデバイスで実行されている保護アプリごとに作成されるため、1 ユーザーに対する要求が複数ある場合があります。  状態は、ワイプ要求が **[保留中]**、 **[失敗]**、または **[成功]**のいずれかであることを示します。
 
-### 関連項目
-[モバイル アプリケーション管理ポリシーを使用してデータを保護する ](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+ワイプを実行するにはユーザーがアプリを開く必要があるため、ワイプには要求後最大で 30 分かかる場合があります。 
 
-[Azure ポータルの使用](azure-portal-for-microsoft-intune-mam-policies.md)
+[保留中] 状態のワイプは、手動で削除するまで表示されます。  手動でワイプ要求を削除する場合は、右クリックして [削除] を選択します。
+
+### <a name="see-also"></a>関連項目
+[モバイル アプリケーション管理ポリシーを使用してデータを保護する](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+
+[Azure Portal の使用](azure-portal-for-microsoft-intune-mam-policies.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
