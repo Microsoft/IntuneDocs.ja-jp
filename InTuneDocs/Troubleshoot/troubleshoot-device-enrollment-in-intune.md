@@ -2,8 +2,8 @@
 title: "デバイス登録に関するトラブルシューティング | Microsoft Intune"
 description: "デバイス登録で問題が発生した場合の解決方法の推奨事項。"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -14,18 +14,18 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
+ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
+ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 
 
 ---
 
-# Intune のデバイス登録に関するトラブルシューティング
+# <a name="troubleshoot-device-enrollment-in-intune"></a>Intune のデバイス登録に関するトラブルシューティング
 
 このトピックでは、デバイス登録で問題が発生した場合の解決方法を提案します。 この情報で問題が解決しない場合、さらに役立つ方法を探すには、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」を参照してください。
 
 
-## 最初のトラブルシューティングの手順
+## <a name="initial-troubleshooting-steps"></a>最初のトラブルシューティングの手順
 
 トラブルシューティングを開始する前に、登録を有効にするように Intune を構成していることを確認してください。 構成要件は次で確認できます。
 
@@ -44,15 +44,15 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 
 
-## 登録に関する一般的な問題
+## <a name="general-enrollment-issues"></a>登録に関する一般的な問題
 これらの問題は、すべてのデバイス プラットフォームで発生する可能性があります。
 
-### デバイスの上限に達しました
+### <a name="device-cap-reached"></a>デバイスの上限に達しました
 **問題:** 登録中にデバイスのエラーがユーザーに表示されます。たとえば、iOS デバイスで **"ポータル サイトは一時的に使用できません"** のエラーが表示される、Configuration Manager の DMPdownloader.log にエラー **DeviceCapReached** が含まれる、などです。
 
 **解決方法:** 設計では、登録できるデバイスの上限は 5 台です。
 
-#### 登録済みデバイス数と上限を確認する
+#### <a name="check-number-of-devices-enrolled-and-allowed"></a>登録済みデバイス数と上限を確認する
 
 1.  Intune 管理ポータルで、ユーザーに割り当てられているデバイス数が 5 以下であることを確認します
 
@@ -62,7 +62,7 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 管理者は、Azure Active Directory ポータルでデバイスを削除できます。
 
-#### Azure Active Directory ポータルでデバイスを削除するには
+#### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Azure Active Directory ポータルでデバイスを削除するには
 
 1.  [http://aka.ms/accessaad](http://aka.ms/accessaad) にアクセスするか、[https://portal.office.com](https://portal.office.com) から **[管理]** &gt; **[Azure AD]** の順にクリックします。
 
@@ -86,10 +86,10 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 >
 > デバイス登録マネージャー グループに追加されているユーザー アカウントのユーザー ログインについて条件付きアクセス ポリシーが適用されている場合、そのアカウントは登録を完了できません。
 
-### "ポータル サイトは一時的に使用できません"
+### <a name="company-portal-temporarily-unavailable"></a>"ポータル サイトは一時的に使用できません"
 **問題:** デバイスで **"ポータル サイトは一時的に使用できません"** というエラーがユーザーに表示されます。
 
-#### "ポータル サイトは一時的に使用できません" エラーのトラブルシューティング
+#### <a name="troubleshooting-company-portal-temporarily-unavailable-error"></a>"ポータル サイトは一時的に使用できません" エラーのトラブルシューティング
 
 1.  デバイスから Intune ポータル サイト アプリを削除します。
 
@@ -101,10 +101,10 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 5.  iOS デバイスでは、ユーザーがログインに成功すると、Intune ポータル サイト アプリをインストールして登録するように求められます。 Android デバイスでは、Intune ポータル サイト アプリを手動でインストールする必要があります。インストール後に、登録を再試行できます。
 
-### MDM 機関が定義されていません
+### <a name="mdm-authority-not-defined"></a>MDM 機関が定義されていません
 **問題:** ユーザーに **"MDM 機関が定義されていません"** というエラーが表示されます。
 
-#### "MDM 機関が定義されていません" というエラーのトラブルシューティング
+#### <a name="troubleshooting-mdm-authority-not-defined-error"></a>"MDM 機関が定義されていません" というエラーのトラブルシューティング
 
 1.  使用している Intune サービスのバージョンに適した MDM 機関が設定されていることを確認します。つまり、Intune の場合は O365 MDM、または System Center Configuration Manager と Intune などです。 Intune の場合、MDM 機関は **[管理]** &gt; **[モバイル デバイス管理]** で設定されています。 Configuration Manager と Intune の場合、Intune コネクタを構成するときに設定します。O365 では、**[モバイル デバイス]** 設定です。
 
@@ -134,28 +134,28 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
         -   すべてのユーザーを表示する場合のクエリ: `select * from [CM_ DBName].[dbo].[User_DISC]`
 
-        -   特定のユーザーを表示する場合のクエリ (%testuser1% は、検索するユーザーの username@domain.com を示します): `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
+        -   特定のユーザーを表示する場合のクエリ (%testuser1% は、検索対象ユーザーの username@domain.com を示します): `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
         クエリを入力したら、**[! 実行]** を選択します。
         結果が返されたら、クラウド ユーザー ID を検索します。  ID が見つからない場合、そのユーザーには Intune を使用するライセンスが付与されていません。
 
-### 会社名に特殊文字が含まれている場合にポリシーの作成またはデバイスの登録ができない
+### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>会社名に特殊文字が含まれている場合にポリシーの作成またはデバイスの登録ができない
 **問題:** ポリシーを作成することやデバイスを登録することができません。
 
 **解決方法:** [Office 365 管理センター](https://portal.office.com/)で、会社名から特殊文字を削除した後、会社情報を保存します。
 
-### 確認済みドメインが複数ある場合にデバイスへのログインまたはデバイスの登録ができない
+### <a name="unable-to-log-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>確認済みドメインが複数ある場合にデバイスへのログインまたはデバイスの登録ができない
 **問題:** ADFS に 2 番目の確認済みドメインを追加すると、2 番目のドメインのユーザー プリンシパル名 (UPN) サフィックスを持つユーザーがポータルにログインできなくなる場合や、デバイスを登録できなくなる場合があります。
 
 
-**解決方法:** AD FS 2.0 によるシングル サインオン (SSO) を利用している Microsoft Office 365 ユーザーが、組織内にユーザーの UPN サフィックス用のトップ レベル ドメイン (@contoso.com、@fabrikam.com など) を複数持っている場合、各サフィックスに対して別々の AD FS 2.0 フェデレーション サービス インスタンスを展開する必要があります。  現在は [AD FS 2.0 用ロールアップ](http://support.microsoft.com/kb/2607496)が用意されており、これを **SupportMultipleDomain** スイッチと組み合わせて使用することで、AD FS 2.0 サーバーを追加しなくても、このような状況に対応することができます。 詳細については、[このブログ](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)を参照してください。
+**解決方法:** AD FS 2.0 によるシングル サインオン (SSO) を利用している Microsoft Office 365 ユーザーが、組織内にユーザーの UPN サフィックス用のトップ レベル ドメイン (@contoso.com、@fabrikam.com) など) を複数持っている場合、各サフィックスに対して別々の AD FS 2.0 フェデレーション サービス インスタンスを展開する必要があります。  現在は [AD FS 2.0 用ロールアップ](http://support.microsoft.com/kb/2607496)が用意されており、これを **SupportMultipleDomain** スイッチと組み合わせて使用することで、AD FS 2.0 サーバーを追加しなくても、このような状況に対応することができます。 詳細については、[このブログ](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)を参照してください。
 
 
-## Android の問題
-### プロファイルのインストールに失敗しました
+## <a name="android-issues"></a>Android の問題
+### <a name="profile-installation-failed"></a>プロファイルのインストールに失敗しました
 **問題:** Android デバイスで **"プロファイルのインストールに失敗しました"** というエラーがユーザーに表示されます。
 
-### プロファイルのインストールに失敗する場合のトラブルシューティング手順
+### <a name="troubleshooting-steps-for-failed-profile-installation"></a>プロファイルのインストールに失敗する場合のトラブルシューティング手順
 
 1.  使用している Intune サービスのバージョンについて、適切なライセンスがユーザーに割り当てられていることを確認します。
 
@@ -163,7 +163,7 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 4.  Android 用の Chrome が既定のブラウザーであり、Cookie が有効であることを確認します。
 
-### Android 証明書に関する問題
+### <a name="android-certificate-issues"></a>Android 証明書に関する問題
 
 **問題**: ユーザーが自分のデバイスで、*「You cannot sign in because your device is missing a required certificate.」* (デバイスに必要な証明書がないためにサインインすることはできません。) というメッセージを受信します。
 
@@ -184,11 +184,11 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 
 
-## iOS の問題
-### プロファイルのインストールに失敗しました
+## <a name="ios-issues"></a>iOS の問題
+### <a name="profile-installation-failed"></a>プロファイルのインストールに失敗しました
 **問題:** iOS デバイスで **"プロファイルのインストールに失敗しました"** というエラーがユーザーに表示されます。
 
-### プロファイルのインストールに失敗する場合のトラブルシューティング手順
+### <a name="troubleshooting-steps-for-failed-profile-installation"></a>プロファイルのインストールに失敗する場合のトラブルシューティング手順
 
 1.  使用している Intune サービスのバージョンについて、適切なライセンスがユーザーに割り当てられていることを確認します。
 
@@ -198,7 +198,7 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 4.  iOS 用の Safari が既定のブラウザーであり、Cookie が有効であることを確認します。
 
-### Intune と System Center Configuration Manager を使用するときに、登録済みの iOS デバイスがコンソールに表示されない
+### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Intune と System Center Configuration Manager を使用するときに、登録済みの iOS デバイスがコンソールに表示されない
 **問題:** ユーザーが iOS デバイスを登録しても、そのデバイスが Configuration Manager 管理コンソールに表示されません。 そのデバイスでは、登録済みであることが示されません。 次の原因が考えられます。
 
 - あるアカウントで Intune コネクタを登録した後で、それを別のアカウントに登録した可能性があります。
@@ -227,13 +227,13 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 
 1. 新しい APN 証明書を取得し、アップロードします。Configuration Manager の左側のウィンドウで Intune サブスクリプションを右クリックします。 **[APNs 証明書要求の作成]** を選択して、指示に従います。
-## System Center Configuration Manager と Intune を使用しているときの問題
-### モバイル デバイスが表示されない
+## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>System Center Configuration Manager と Intune を使用しているときの問題
+### <a name="mobile-devices-disappear"></a>モバイル デバイスが表示されない
 **問題:** モバイル デバイスを Configuration Manager に正常に登録した後に、モバイル デバイス コレクションに表示されませんが、デバイスには管理プロファイルがあり、CSS ゲートウェイには表示されます。
 
 **解決方法:** 問題の原因として、ドメインに参加していないデバイスを削除するカスタム プロセスがあるか、ユーザーがサブスクリプションからデバイスを削除した可能性があります。 Configuration Manager コンソールで、デバイスを削除したプロセスまたはユーザー アカウントを確認するには、次の手順を実行します。
 
-#### デバイスの削除方法を確認する
+#### <a name="check-how-device-was-removed"></a>デバイスの削除方法を確認する
 
 1.  Configuration Manager 管理者コンソールで、**[監視]** &gt; **[システム ステータス]** &gt; **[ステータス メッセージ クエリ]** を選択します。
 
@@ -250,19 +250,19 @@ ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 
 
-### iOS のその他の登録エラー
+### <a name="other-ios-enrollment-errors"></a>iOS のその他の登録エラー
 iOS 登録エラーの一覧は、デバイスのユーザー ドキュメントの「[Intune にデバイスを登録している最中にエラーが表示される](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune)」に記載されています。
 
-## PC の問題
+## <a name="pc-issues"></a>PC の問題
 
-### コンピューターは既にサービスに登録されています - エラー hr 0x8007064c
+### <a name="the-machine-is-already-enrolled-error-hr-0x8007064c"></a>コンピューターは既にサービスに登録されています - エラー hr 0x8007064c
 **問題:** **"The machine is already enrolled"** (コンピューターは既にサービスに登録されています) というエラーが発生し、登録に失敗します。 登録ログにはエラー **hr 0x8007064c** が記録されます。
 
 これは、そのコンピューターが以前に登録されているか、コンピューターの複製イメージが登録されていることが原因である可能性があります。 前のアカウントのアカウント証明書が、そのコンピューターにまだ存在しています。
 
 
 
-**解決策:**
+**解決方法:**
 
 1. **[スタート]** メニューで、**[ファイル名を指定して実行]** を選択し、 -> 「**MMC**」と入力します。
 1. **[ファイル]**  ->  **[スナップインの追加と削除]** の順にクリックします。
@@ -278,7 +278,7 @@ iOS 登録エラーの一覧は、デバイスのユーザー ドキュメント
     > このセクションの作業には、レジストリを変更する手順が含まれます。 ただし、レジストリを正しく変更していない場合、重大な問題が発生する可能性があります。 そのため、手順は確認の上、注意して行ってください。 さらに安全を考慮して、レジストリのバックアップをとってから変更を行ってください。 バックアップがあれば、問題が生じた場合でもレジストリを復元できます。
     > レジストリのバックアップと復元の方法については、「[Windows でレジストリをバックアップおよび復元する方法](https://support.microsoft.com/en-us/kb/322756)」をご覧ください。
 
-## 登録の一般的なエラー コード
+## <a name="general-enrollment-error-codes"></a>登録の一般的なエラー コード
 
 |エラー コード|問題|推奨される解決策|
 |--------------|--------------------|----------------------------------------|
@@ -302,11 +302,11 @@ iOS 登録エラーの一覧は、デバイスのユーザー ドキュメント
 
 
 
-### 次のステップ
+### <a name="next-steps"></a>次のステップ
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

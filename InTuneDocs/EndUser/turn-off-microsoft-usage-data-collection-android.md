@@ -2,10 +2,10 @@
 title: "Microsoft による Android の使用状況データの収集を無効にする | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1e00d2d1e8e46b512eb70c2c594712b9505541ec
-ms.openlocfilehash: 01fce3200a5aa481dde6cd560cbad426592ef381
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: ca96e8d4aed005db46bdb468268e2f86e6e9e1d4
 
 
 ---
 
 
-# Microsoft による使用状況データの収集を無効にする
+# <a name="turn-off-microsoft-usage-data-collection"></a>Microsoft による使用状況データの収集を無効にする
 Microsoft では、Microsoft の製品やサービスの向上を目的として、ポータル サイト アプリの信頼性やパフォーマンス、および使用方法に関する匿名データを自動的に収集します。 Android デバイスでのこのようなデータの収集は、ポータル サイト アプリの **[使用状況データ]** 設定を使用して無効にすることができます。 IT 管理者は、このデータの収集を制御することはできません。また、この設定の選択を変更することもできません。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

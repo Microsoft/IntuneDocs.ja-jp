@@ -3,8 +3,9 @@ title: "証明書プロファイルを構成する | Microsoft Intune"
 description: "Intune 証明書プロファイルを作成する方法について説明します。"
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
-ms.openlocfilehash: 3f657e6a49fb83faddf9c139985369f27656b4bd
+ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
+ms.openlocfilehash: d4fd80ad7819911b6bf47ccd51e62bebdec24f04
 
 
 ---
@@ -63,6 +64,11 @@ Simple Certificate Enrollment Protocol (SCEP) または PKCS #12 (.PFX) 証明�
 4.  **[ポリシーの保存]** を選択します。
 
 新しいポリシーが **[ポリシー]** ワークスペースに表示されます。 これでデプロイが可能になりました。
+
+> [!NOTE]
+>
+> Android デバイスと Android for Work デバイスでは、サードパーティにより信頼できる証明書がインストールされたことを知らせる通知が表示されます。
+    
 
 ## **タスク 3** – SCEP または .PFX 証明書プロファイルを作成する
 信頼された CA 証明書プロファイルを作成した後、使用する各プラットフォーム用の SCEP または .PFX 証明書プロファイルを作成します。 SCEP 証明書プロファイルを作成するときは、その同じプラットフォームに対する信頼された証明書プロファイルを指定する必要があります。 これにより 2 つの証明書プロファイルがリンクされますが、それでも各プロファイルを個別にデプロイする必要があります。

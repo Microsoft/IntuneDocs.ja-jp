@@ -2,8 +2,8 @@
 title: "Azure AD を使用する多要素認証 | Microsoft Intune"
 description: "デバイス登録で Azure AD の多要素認証を要求する方法。"
 keywords: 
-author: nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angerobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -19,7 +19,7 @@ ms.openlocfilehash: ccd55cc8637ebccfdbddd05c4f6b182c7923a2ab
 
 ---
 
-# Microsoft Intune の多要素認証
+# <a name="multifactor-authentication-for-microsoft-intune"></a>Microsoft Intune の多要素認証
 
 Intune には、デバイス登録用に Azure AD の多要素認証 (MFA) 機能が統合されていて、会社のリソースのセキュリティ保護に利用できます。 MFA には、ユーザー名とパスワードだけでなくテキスト認証などの認証の要素が必要です。 iOS、Android、Windows 8.1 以上、または Windows Phone 8.1 以上のデバイスでサポートされています。
 
@@ -27,7 +27,7 @@ Intune には、デバイス登録用に Azure AD の多要素認証 (MFA) 機�
 >
 > 以前のバージョンの Configuration Manager (リリース 1610 より前) では、Configuration Manager 管理コンソールに MFA の設定が表示されますが、 Configuration Manager 管理コンソールで MFA を構成しようとしないでください。MFA は機能しません。 MFA はこのトピックの説明に従って構成してください。
 
-### デバイス登録時に多要素認証を要求する Intune の構成
+### <a name="configuring-intune-to-require-multifactor-authentication-at-device-enrollment"></a>デバイス登録時に多要素認証を要求する Intune の構成
 デバイス登録時に MFA を要求するには、次の手順に従います。
 
 1. 管理者資格情報で [Microsoft Azure ポータル](https://manage.windowsazure.com)にサインインします。

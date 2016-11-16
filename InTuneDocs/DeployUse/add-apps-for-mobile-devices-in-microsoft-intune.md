@@ -3,6 +3,7 @@ title: "登録デバイスのアプリを追加する | Microsoft Intune"
 description: "アプリを展開する前に、Intune に追加する必要があります。 追加すると、Intune コンソールに表示され、展開と管理を実行できるようになります。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 727d28cff074124b5401f6c2931f87df3a9d2d23
-ms.openlocfilehash: 0951a8c8ae635fed089e7bbf87018282a73daf74
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 239a4b932eed61fc0b2b870892730330565eac93
 
 
 ---
@@ -99,6 +100,6 @@ Intune ソフトウェア パブリッシャーを利用し、アプリのプロ
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

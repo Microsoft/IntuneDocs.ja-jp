@@ -2,8 +2,8 @@
 title: "ポータル サイト Web サイトからデバイスをリモートでロックする | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: b53e57b28cbf2de2e7820ffd38fc94ef05b994b6
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 31b3f4c556c27de7a1793bfe84a1d3eb12302424
 
 
 ---
 
 
-# ポータル サイト Web サイトからデバイスをリモートでロックする
+# <a name="remotely-lock-a-device-from-the-company-portal-website"></a>ポータル サイト Web サイトからデバイスをリモートでロックする
 
 デバイスを紛失した、またはデバイスが盗難にあった場合、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)のリモート ロック オプションを使用してデバイスをロックすることができます。 リモート ロックは、次の種類のデバイスで機能します。
 
@@ -64,6 +64,6 @@ PC (Windows 8.1) | サポートされていません
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

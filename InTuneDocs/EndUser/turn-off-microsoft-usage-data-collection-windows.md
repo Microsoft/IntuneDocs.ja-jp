@@ -2,8 +2,8 @@
 title: "Microsoft による Windows の使用状況データの収集を無効にする | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: e8558df80e36c15ab740f919eee98af9ab00b508
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 461b46e1c14767127969d582448b672487da4b32
 
 
 ---
 
 
-# Microsoft による使用状況データの収集を無効にする
+# <a name="turn-off-microsoft-usage-data-collection"></a>Microsoft による使用状況データの収集を無効にする
 
 Microsoft では、Microsoft の製品やサービスの向上を目的として、ポータル サイト アプリの信頼性やパフォーマンス、および使用方法に関する匿名データを自動的に収集します。
 
@@ -34,6 +34,6 @@ Windows デバイスでのこのようなデータの収集は、ポータル �
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

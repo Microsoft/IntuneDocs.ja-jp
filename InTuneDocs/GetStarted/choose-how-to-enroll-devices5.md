@@ -3,6 +3,7 @@ title: "モバイル デバイスの登録方法の選択 | Microsoft Intune"
 description: "いくつかの簡単な質問に答えることによって、Intune でモバイル デバイスを登録する方法を決定する"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: ed9250aa-e894-4eac-92b8-5f1a3748e255
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
-ms.openlocfilehash: fea9e10de761fa1bacfb87d07ce571d40f8286bc
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 74f8fc68f0443d9535798663504a198c14f04446
 
 
 ---
@@ -43,6 +44,6 @@ ms.openlocfilehash: fea9e10de761fa1bacfb87d07ce571d40f8286bc
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

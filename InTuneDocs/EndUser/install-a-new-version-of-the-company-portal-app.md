@@ -2,32 +2,32 @@
 title: "新しいバージョンのポータル サイト アプリをインストールする | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 849632d4b07b2e4417fd955d945fed21461edc6a
-ms.openlocfilehash: e3ccc0fda42c00ced108401c31df4106fe4049a3
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: e831586172ef700b869a392d9938821b004f1e04
 
 
 ---
 
-# 新しいバージョンのポータル サイトをインストールする
+# <a name="install-a-new-version-of-the-company-portal-app"></a>新しいバージョンのポータル サイトをインストールする
 
 お使いのバージョンのポータル サイト アプリがサポートされなくなった場合、または新しいバージョンのポータル サイトを使用できる場合、新しいバージョンに更新する必要があります。 使用するデバイスの種類に対応する手順に従います。
 
-## Android デバイスで Intune ポータル サイト アプリを更新する
+## <a name="update-the-intune-company-portal-app-on-your-android-device"></a>Android デバイスで Intune ポータル サイト アプリを更新する
 
 新しいバージョンのポータル サイトを使用できる場合、Play ストアからアラートが送信されます。 ポータル サイト アプリ内にはプロンプトは表示されません。 アラートの指示に従ってデバイスを更新してください。
 
-## iOS デバイスで Intune ポータル サイト アプリを更新する
+## <a name="update-the-intune-company-portal-app-on-your-ios-device"></a>iOS デバイスで Intune ポータル サイト アプリを更新する
 
 新しいバージョンが利用できる場合、インストールされているアプリの一覧でアプリを検索する際に [更新] オプションが表示されます。  
 
@@ -37,7 +37,7 @@ ms.openlocfilehash: e3ccc0fda42c00ced108401c31df4106fe4049a3
 
 2. アプリが見つかったら、アプリ名の右側にある **[アップデート]** ボタンをタップします。
 
-## Windows デバイスで Intune ポータル サイト アプリを更新する
+## <a name="update-the-intune-company-portal-app-on-your-windows-device"></a>Windows デバイスで Intune ポータル サイト アプリを更新する
 
 1.  Windows ストアにアクセスし、**[ポータル サイト]** を検索します。
 
@@ -51,6 +51,6 @@ ms.openlocfilehash: e3ccc0fda42c00ced108401c31df4106fe4049a3
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -2,9 +2,10 @@
 title: "不明なソースを無効にすることを求められる | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,13 +13,13 @@ ms.technology:
 ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: d7d43bf3727d58ae8ad821de34d2d328d6b0603a
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: a3264803b8581a5b6ccf627eb0d39d13b12c1cdd
 
 
 ---
 
-# 不明なソースを無効にすることを求められる
+# <a name="you-are-asked-to-turn-off-unknown-sources"></a>不明なソースを無効にすることを求められる
 
 "不明なソースからのインストールを無効にする必要があります" というメッセージが表示される場合、**[設定]** > **[セキュリティ]** を選択し (一部のデバイスでは、代わりに **[Lock screen and security]** (ロック画面とセキュリティ) が表示されることがあります)、**[不明なソース]** を無効にする必要があります。
 
@@ -30,8 +31,6 @@ IT 管理者は、Android デバイス上の会社のデータを保護するた
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

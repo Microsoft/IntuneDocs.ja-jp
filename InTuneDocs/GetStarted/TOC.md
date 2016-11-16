@@ -17,7 +17,7 @@
 
 ## [Intune に移行する](migrate-to-intune.md)
 
-## [Intune のクイック スタート ガイド](start-with-a-paid-subscription-to-microsoft-intune.md)
+## [クイック スタート ガイド](start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Intune にサインインする](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [カスタムのドメイン名を構成する](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
 ### [AD を同期してユーザーを追加する](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
@@ -27,6 +27,13 @@
 ### [ポータル サイトをカスタマイズする](start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
 ### [モバイル デバイスを登録してアプリをインストールする](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [構成後のタスク](post-configuration-tasks.md)
+
+## [クイック ガイド](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [クイック ガイド: Office 365 モバイル アプリから会社のデータが漏洩することを防止する](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [クイック ガイド: データの暗号化により会社のデータを保護する](protect-data-encryption.md)
+### [クイック ガイド: ユーザーにモバイル アプリを発行する](publish-mobile-apps-to-users.md)
+### [クイック ガイド: モバイル デバイスでの電子メールの構成を簡略化する](simplify-email-configuration-on-mobile-devices.md)
+### [クイック ガイド: Windows PC をマルウェアの脅威から保護する](protect-pcs-against-malware-threats.md)
 
 ## [Intune の展開のロールアウト フェーズ](rollout-phases-for-microsoft-intune-deployment.md)
 ### [プロジェクト スコープ](project-scope.md)
@@ -42,6 +49,6 @@
 # [トラブルシューティング](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Sep16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

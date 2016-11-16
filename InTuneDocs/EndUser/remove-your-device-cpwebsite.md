@@ -2,8 +2,8 @@
 title: "ポータル サイトからのデバイスの削除 | Microsoft Intune"
 description: "ポータル サイトからのデバイスの削除"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a0f3e42568634a4c5369919ad4feaf1be4b941e
-ms.openlocfilehash: 4c0186214893e9a056e331e7ec081dbdbee3a71e
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: a4cd1655098d2df2b3d095ff0906762d1f0561e5
 
 
 ---
 
 
-# ポータル サイトからのデバイスの削除
+# <a name="remove-your-device-from-the-company-portal"></a>ポータル サイトからのデバイスの削除
 
 今後デバイスを Intune および IT 管理者で管理しない場合は、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)から、デバイスを削除することができます。 ポータル サイト Web サイトは、Intune で登録したコンピューターとデバイスの管理に使用できる Web ページです。 ポータル サイト Web サイトでは、ポータル サイト アプリで使用できるほとんどのタスクを実行できます。
 
@@ -40,10 +40,10 @@ ms.openlocfilehash: 4c0186214893e9a056e331e7ec081dbdbee3a71e
 
 これでデバイスが削除されました。
 
-サポートが必要な場合は、 IT 管理者にお問い合わせください。 管理者の連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

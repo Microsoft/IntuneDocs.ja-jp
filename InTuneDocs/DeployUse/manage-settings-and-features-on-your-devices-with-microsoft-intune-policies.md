@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/11/2016
+ms.date: 11/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,16 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
-ms.openlocfilehash: 058843a1cdd0ca4c32c7cc4d7a901e7547da633e
+ms.sourcegitcommit: 0238350139837a06a48d0bff7c53e4c39e07168c
+ms.openlocfilehash: b2cba92c4cf75412b562267aef9d6a138f25952b
 
 
 ---
 
-# Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する
+# <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する
 Microsoft Intune の*ポリシー*は、モバイル デバイスとコンピューターの機能を制御する設定のグループです。 ポリシーは、推奨設定やカスタム設定を含むテンプレートを使用することで作成し、デバイスまたはユーザー グループに展開します。
 
-## ポリシーの種類
+## <a name="types-of-policies"></a>ポリシーの種類
 
 Intune のポリシーは以下のカテゴリに分類されます。 使用するカテゴリは、ポリシーの作成方法と展開方法に影響があります。
 
@@ -37,13 +37,11 @@ Intune のポリシーは以下のカテゴリに分類されます。 使用す
 - **リソース アクセス ポリシー:** これらのポリシーを使用すると、ユーザーはどこにいても仕事を確実に遂行するために必要なファイルとリソースにアクセスできます。
 詳細については、「[Microsoft Intune を使用して、会社のリソースへのアクセスを有効にする](enable-access-to-company-resources-with-microsoft-intune.md)」を参照してください。
 
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Intune ポリシーの一覧については、「[Microsoft Intune policy reference (Microsoft Intune ポリシー リファレンス)](microsoft-intune-policy-reference.md)」を参照してください。
 
-
-
-
-## 構成ポリシーを作成する
+## <a name="create-a-configuration-policy"></a>構成ポリシーを作成する
 
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[ポリシー]、** &gt; **[構成ポリシー]** &gt; **[追加]** の順に選択します。
 
@@ -84,7 +82,7 @@ Intune ポリシーの一覧については、「[Microsoft Intune policy refere
 > [!TIP]
 > すべての種類のポリシーを展開するわけではありません。 たとえば、モバイル アプリケーション管理 (MAM) ポリシーは展開されません。 代わりに、この種類のポリシーはアプリに関連付けられ、このアプリが展開されます。
 
-## 構成ポリシーを展開する
+## <a name="deploy-a-configuration-policy"></a>構成ポリシーを展開する
 
 1.  **[ポリシー]** ワークスペースで、展開するポリシーを選び、**[展開の管理]** を選びます。
 
@@ -96,7 +94,7 @@ Intune ポリシーの一覧については、「[Microsoft Intune policy refere
 
 展開済みポリシーを選択すると、ポリシー一覧の下部に展開についての詳細が表示されます。
 
-## ポリシーの管理
+## <a name="manage-policies"></a>ポリシーの管理
 
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[ポリシー]** を選択し、管理するポリシーを参照して選択します。
 
@@ -107,9 +105,9 @@ Intune ポリシーの一覧については、「[Microsoft Intune policy refere
 - **展開の管理** - ポリシーを展開するグループを選択し、**[追加]** を選択します。
 
 
-## Intune ポリシーについてよく寄せられる質問
+## <a name="frequently-asked-questions-about-intune-policies"></a>Intune ポリシーについてよく寄せられる質問
 
-### モバイル デバイスが展開後にポリシーまたはアプリを取得するのにどれくらいの時間がかかりますか。
+### <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-deployed"></a>モバイル デバイスが展開後にポリシーまたはアプリを取得するのにどれくらいの時間がかかりますか。
 ポリシーまたはアプリが展開されると、Intune はデバイスに対して、Intune サービスにチェックインする必要があることをすぐに通知し始めます。 これにかかる時間は通常 5 分未満です。
 
 最初の通知が送信された後、デバイスがチェックインしてポリシーを取得しない場合、Intune はさらに 3 回試行します。  デバイスがオフライン (たとえば、デバイスの電源がオフである、ネットワークに接続されていない) の場合、通知を受信していない可能性があります。 この場合、デバイスは次回のスケジュールされた Intune サービスへのチェックインでポリシーを取得することになります。チェックイン頻度は次のとおりです。
@@ -128,12 +126,12 @@ Intune ポリシーの一覧については、「[Microsoft Intune policy refere
 
 また、ユーザーはポータル サイト アプリを起動し、デバイスを同期して、いつでもすぐにポリシーを確認できます。
 
-### どのような操作を行うと Intune は通知をデバイスにすぐに送信しますか。
+### <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>どのような操作を行うと Intune は通知をデバイスにすぐに送信しますか。
 デバイスは、チェックインを指示する通知を受け取ったとき、または定期的にスケジュールされたチェックイン時に Intune にチェックインします。  ワイプ、ロック、パスコードのリセット、アプリの展開、プロファイルの展開 (Wi-Fi、VPN、メールなど)、ポリシーの展開などの操作で具体的にデバイスまたはユーザーを対象とする場合、Intune は、デバイスが Intune サービスにチェックインしてこれらの更新プログラムを受信するよう指示する通知をすぐに開始します。
 
 ポータル サイトの連絡先情報の修正など、他の変更ではデバイスへの通知はすぐに行われません。
 
-### 複数のポリシーが同じユーザーまたはデバイスに展開される場合、どの設定が適用されるのかどうすればわかりますか。
+### <a name="if-multiple-policies-are-deployed-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>複数のポリシーが同じユーザーまたはデバイスに展開される場合、どの設定が適用されるのかどうすればわかりますか。
 2 つ以上のポリシーが同じユーザーまたはデバイスに展開される場合、適用される設定の評価は個々の設定レベルで行われます。
 
 -   コンプライアンス ポリシー設定は常に構成ポリシー設定よりも優先されます。
@@ -142,22 +140,22 @@ Intune ポリシーの一覧については、「[Microsoft Intune policy refere
 
 -   構成ポリシーの設定が別の構成ポリシーの設定と競合する場合、Intune コンソールにその競合が表示されます。 このような競合は手動で解決する必要があります。
 
-### モバイル アプリケーション管理ポリシーが互いに競合する場合はどうなりますか。 どのポリシーがアプリに適用されますか。
+### <a name="what-happens-when-mobile-application-management-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>モバイル アプリケーション管理ポリシーが互いに競合する場合はどうなりますか。 どのポリシーがアプリに適用されますか。
 競合している値は、(リセットする前の PIN の試行で使用するような) 番号入力フィールドを除き、MAM ポリシーで使用可能な最も制限の厳しい設定になっています。  番号入力フィールドは、推奨設定のオプションを使用することでコンソールで MAM ポリシーを作成した場合と同じ値に設定されます。
 
 競合は、2 つのポリシー設定が同じ場合に発生します。  たとえば、コピー/貼り付けの設定以外は同じ MAM ポリシーを 2 つ構成したとします。  この場合、コピー/貼り付けの設定は最も厳しい値になりますが、残りの設定は構成したとおりに適用されます。
 
 1 つのポリシーをアプリに展開し、このポリシーが有効になった後、2 つ目のポリシーを展開すると、2 つ目のポリシーは競合の状態になりますが、最初のポリシーは優先され、適用されたままになります。 両方を同時に適用する (優先されるポリシーがない) 場合は、両方が競合の状態になります。 競合する設定は、最も制限の厳しい値に設定されます。
 
-### iOS カスタム ポリシーが競合するとどうなりますか。
+### <a name="what-happens-when-ios-custom-policies-conflict"></a>iOS カスタム ポリシーが競合するとどうなりますか。
 Intune は Apple 構成ファイルのペイロードまたはカスタム Open Mobile Alliance Uniform Resource Identifier (OMA-URI) ポリシーを評価しません。 配信メカニズムとしてのみ機能します。
 
 カスタム ポリシーを展開するときは、構成した設定がコンプライアンス、構成、または他のカスタム ポリシーと競合していないことを確認してください。 設定が競合しているカスタム ポリシーの場合、設定が適用される順序はランダムになります。
 
-### ポリシーが削除された場合または適用できなくなった場合はどうなりますか。
+### <a name="what-happens-when-a-policy-is-deleted-or-no-longer-applicable"></a>ポリシーが削除された場合または適用できなくなった場合はどうなりますか。
 ポリシーを削除した場合やポリシーを展開したグループからデバイスを削除した場合は、次のリストに従ってポリシーと設定がデバイスから削除されます。
 
-#### [登録済みデバイス]
+#### <a name="enrolled-devices"></a>[登録済みデバイス]
 
 - Wi-Fi、VPN、証明書、電子メールのプロファイル: これらのプロファイルは、すべてのサポートされる登録デバイスから削除されます。
 - その他のすべてのポリシーの種類:
@@ -194,7 +192,7 @@ Intune は Apple 構成ファイルのペイロードまたはカスタム Open 
         - データ ローミングを許可する
         - ローミング中の自動同期を許可する
 
-#### Intune クライアント ソフトウェアを実行している Windows PC
+#### <a name="windows-pcs-running-the-intune-client-software"></a>Intune クライアント ソフトウェアを実行している Windows PC
 
 - **Endpoint Protection 設定**: 設定は、推奨値に復元されます。 例外は、**[Microsoft Active Protection Service に参加する]** の設定だけで、既定値は **[いいえ]** です。 詳細については、「[Microsoft Intune の Endpoint Protection を使用して Windows PC を保護する](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)」を参照してください。
 - **ソフトウェアの更新プログラムの設定**: 設定は、オペレーティング システムの既定の状態にリセットされます。 詳細については、「[Microsoft Intune でソフトウェア更新プログラムを使用して Windows PC を最新の状態に保つ](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)」を参照してください。
@@ -202,17 +200,17 @@ Intune は Apple 構成ファイルのペイロードまたはカスタム Open 
 - **Windows ファイアウォールの設定**: 設定は、コンピューターのオペレーティング システムの既定にリセットされます。 詳細については、「[Microsoft Intune の Endpoint Protection を使用して Windows PC を保護する](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)」を参照してください。
 
 
-### どうしたらデバイスのポリシーを更新して最新の状態に保つことができますか (Intune クライアント ソフトウェアを実行している Windows PC にのみ適用されます)。
+### <a name="how-can-i-refresh-the-policies-on-a-device-to-ensure-that-they-are-current-applies-to-windows-pcs-running-the-intune-client-software-only"></a>どうしたらデバイスのポリシーを更新して最新の状態に保つことができますか (Intune クライアント ソフトウェアを実行している Windows PC にのみ適用されます)。
 
 1.  任意のデバイス グループで、ポリシーを更新するデバイスを選択して、**[リモート タスク]** &gt; **[ポリシーの更新]** の順に選択します。
 2.  Intune 管理コンソールの右下にある **[リモート タスク]** を選択し、タスクの状態を確認します。
 
-### ポリシーのトラブルシューティングのヘルプはどこにありますか?
+### <a name="where-can-i-find-help-troubleshooting-policies"></a>ポリシーのトラブルシューティングのヘルプはどこにありますか?
 
 「[Microsoft Intune のポリシーのトラブルシューティング](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)」をご覧ください。
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

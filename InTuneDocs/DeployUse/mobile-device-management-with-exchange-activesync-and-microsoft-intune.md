@@ -3,6 +3,7 @@ title: "Exchange ActiveSync デバイス管理 | Microsoft Intune"
 description: "Exchange Connector を使用した Exchange ActiveSync (EAS) 管理によるモバイル デバイスの管理"
 keywords: 
 author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: 9518381dfd967b8cbf8d01bf834d8148d2c2501b
+ms.sourcegitcommit: d5d5345dc6ef022e385a33ccc19b19cc022af2d5
+ms.openlocfilehash: c67ad198c1693f84c9e00d15da00a131f7d0af87
 
 
 ---
@@ -29,7 +30,7 @@ Exchange では、モバイル デバイスが EAS への接続を試みたと�
 [モバイル デバイスの Exchange アクセス ルール](exchange-access-rules-for-mobile-devices.md)
 
 ## Exchange Connector をインストールする
-Exchange Connector を使用すると、Intune コンソールで Exchange の展開を管理できます。 最初に、適切な Intune-to-Exchange Connector をインストールして構成する必要があります。 Exchange サーバーがオンプレミスか、クラウドにサービスとしてホストされているかに応じて、適切なオプションを選択します。
+Exchange Connector を使用すると、Intune コンソールで Exchange の展開を管理できます。 最初に、適切な Intune-to-Exchange Connector をインストールしてセットアップする必要があります。 Exchange サーバーがオンプレミスか、クラウドにサービスとしてホストされているかに応じて、適切なオプションを選択します。
 
 -   [Exchange Online または新しい Exchange Online Dedicated 環境に対して Intune を構成する](intune-service-to-service-exchange-connector.md)
 -   [オンプレミスの Exchange サーバーおよび従来の Exchange Online Dedicated 環境で Intune コネクタをインストールする](intune-on-premises-exchange-connector.md)
@@ -46,6 +47,6 @@ Intune コンソールを使用すれば、[EAS ポリシー設定](exchange-act
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -2,7 +2,8 @@
 title: "Android デバイスが root 化され、接続できない | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 14180d4dd324134f3b4e0a8d0241ccb61c3207e0
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: 5b7586c57f3f2825edfa9ae45a3fdec9af0fe956
 
 
 ---
 
 
-# Android デバイスが root 化され、接続できない
+# <a name="your-android-device-is-rooted-and-you-cant-connect"></a>Android デバイスが root 化され、接続できない
 
-Android デバイスが root 化されている場合、そのデバイスが会社のリソースとセキュリティを侵害するおそれのある特定の機能を有効にするよう変更されていることを示します。 このメッセージが表示された場合は、問題が解決されるまで、会社のリソースにアクセスできません。
+Android デバイスが root 化されている場合、そのデバイスが会社のリソースとセキュリティを侵害するおそれのある特定の機能を有効にするよう変更されています。 このメッセージが表示された場合は、問題が解決されるまで、会社のリソースにアクセスできません。
 
 意図的にデバイスを root 化した記憶がない場合は、デバイスが root 化される可能性のある他の理由を確認します。
 
@@ -33,8 +34,6 @@ Android デバイスが root 化されている場合、そのデバイスが会
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

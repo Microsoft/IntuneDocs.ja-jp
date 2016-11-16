@@ -1,10 +1,11 @@
 ---
 title: "Windows デバイス向けのコンプライアンス ポリシー設定 | Microsoft Intune"
-description: 
+description: "このトピックでは、Windows デバイスのコンプライアンス ポリシーにおいて構成できるルールと設定を説明しました。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/22/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 12239464012029e3ffff3a9bed4f4ccb2cebe633
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: c330f730b4eced38f9d0ee972063198ccafc0bcf
 
 
 ---
 
-# Microsoft Intune での Windows デバイス向けのコンプライアンス ポリシー設定
+# <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Microsoft Intune での Windows デバイス向けのコンプライアンス ポリシー設定
 
 このトピックで説明されているポリシー設定は、Windows オペレーティング システムを実行するデバイスが対象となります。 以降のセクションには、具体的なサポート対象の Windows バージョンが記載されています。
 
@@ -27,12 +28,13 @@ ms.openlocfilehash: 12239464012029e3ffff3a9bed4f4ccb2cebe633
 > [!div class="op_single_selector"]
 - [iOS デバイス向けのコンプライアンス ポリシー設定](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Android デバイス向けのコンプライアンス ポリシー設定](android-compliance-policy-settings-in-microsoft-intune.md)
+- [作業用 Android デバイス向けのコンプライアンス ポリシー設定](afw-compliance-policy-settings-in-microsoft-intune)
 
-## Windows Phone デバイス向けのコンプライアンス ポリシー設定
+## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Windows Phone デバイス向けのコンプライアンス ポリシー設定
 このセクションに記載されている設定は、Windows Phone 8.1 以降でサポートされます。
 
-## システム セキュリティ設定
-### パスワード
+## <a name="system-security-settings"></a>システム セキュリティ設定
+### <a name="password"></a>パスワード
 - **モバイル デバイスのロック解除にパスワードを必要とする:** デバイスにアクセスするユーザーにパスワードを入力するよう求める場合は、**[はい]** に設定します。
 
 - **単純なパスワードを許可する:** これを **[はい]** に設定すると、ユーザーは単純なパスワード (‘**1234**’、‘**1111**’ など) を作成できます。
@@ -59,27 +61,27 @@ ms.openlocfilehash: 12239464012029e3ffff3a9bed4f4ccb2cebe633
 - **デバイスがアイドル状態から戻るときにパスワードを必須とする:**この設定は、**[デバイスの画面がロックされるまでの非アクティブな時間 (分)]** 設定と組み合わせて使用する必要があります。 エンドユーザーは、**[デバイスの画面がロックされるまでの非アクティブな時間 (分)]** 設定で指定された時間非アクティブの状態が続いたデバイスにアクセスしようとすると、パスワードを入力するように求められます。
 
   **この設定の対象は Windows 10 Mobile デバイスに限られます。**
-### 暗号化
+### <a name="encryption"></a>暗号化
 - **モバイル デバイスで暗号化を必要とする:** リソースに接続するためにデバイスの暗号化を必要とする場合は、**[はい]** に設定します。
 
-## デバイスのヘルスの設定
+## <a name="device-health-settings"></a>デバイスのヘルスの設定
 - **デバイスが正常として報告されることを必須とします:** 新規または既存のコンプライアンス ポリシーに、**Windows 10 Mobile** デバイスが正常と報告されることを要求する規則を設定できます。  この設定が有効になっている場合、Windows 10 デバイスは正常性構成証明書サービス (HAS) を使用して次のデータ ポイントで評価されます。
   -  **BitLocker が有効になっている:** BitLocker がオンになっている場合は、システムが電源オフ状態または休止状態になっているときに、デバイスはドライブに格納されているデータを不正アクセスから保護できます。 Windows BitLocker ドライブ暗号化により、Windows オペレーティング システム ボリューム上に格納されているすべてのデータが暗号化されます。 BitLocker は、TPM を使用して Windows オペレーティング システムとユーザー データを保護し、コンピューターが放置、紛失、または盗難された場合でも、改ざんを防止するのに役立ちます。 コンピューターに互換性のある TPM が装備されている場合、BitLocker は TPM を使用してデータを保護する暗号化キーをロックします。 その結果、TPM がコンピューターの状態を確認するまで、キーにアクセスできなくなります。
   -  **コードの整合性が有効になっている:** コードの整合性は、ドライバーまたはシステム ファイルがメモリに読み込まれるたびに、その整合性を検証する機能です。 コードの整合性は、署名されていないドライバーまたはシステム ファイルがカーネルに読み込まれているかどうか、あるいは管理者特権を持つユーザー アカウントによって実行される悪意のあるソフトウェアによってシステム ファイルが変更されたかどうかを検出します。
   - **セキュア ブートが有効になっている:** セキュア ブートを有効にすると、システムが工場出荷時の信頼できる状態で強制的に起動されます。 また、セキュア ブートを有効にするときは、コンピューターを起動するために使用されるコア コンポーネントに、デバイスを製造した組織によって信頼されている正しい暗号署名が設定されている必要があります。 これは、コンピューターが起動する前に UEFI ファームウェアによって確認されます。 ファイルが改ざんされ、その署名が破損している場合、システムは起動しません。
 
   HAS サービスのしくみについては、「[HealthAttestation CSP](https://msdn.microsoft.com/library/dn934876.aspx)」をご覧ください。
-##  デバイスのプロパティの設定
+##  <a name="device-property-settings"></a>デバイスのプロパティの設定
 - **必要な最小 OS バージョン:** デバイスが最小 OS バージョンの要件を満たしていない場合、非準拠として報告されます。
     アップグレード方法に関する情報のリンクが表示されます。 エンド ユーザーは、デバイスのアップグレードを行うことを選択できます。アップグレード後は、会社のリソースにアクセスできます。
 
 - **許可される最大 OS バージョン:** ルールに指定された OS バージョンより新しいバージョンの OS がデバイスで使用されている場合、会社のリソースへのアクセスがブロックされ、IT 管理者に問い合わせることをユーザーに促すメッセージが表示されます。 対象の OS バージョンを許可するようにルールが変更されるまで、このデバイスを使用して会社のリソースへのアクセスすることはできません。
 
 
-## Windows PC 向けのコンプライアンス ポリシー設定
+## <a name="compliance-policy-settings-for-windows-pcs"></a>Windows PC 向けのコンプライアンス ポリシー設定
 このセクションに記載されている設定は、Windows PC でサポートされます。
-## システム セキュリティ設定
-### パスワード
+## <a name="system-security-settings"></a>システム セキュリティ設定
+### <a name="password"></a>パスワード
 - **パスワードの最小の長さ:** - Windows 8.1 でサポートされます。
 
   ユーザーのパスワードに含まれている必要がある数字または文字の最小数を指定します。
@@ -112,7 +114,7 @@ ms.openlocfilehash: 12239464012029e3ffff3a9bed4f4ccb2cebe633
 
   **[パスワードの履歴を保存する]** が選択されている場合は、再利用できない、以前に使用されていたパスワードの数を指定します。
 
-## デバイスのヘルスの設定
+## <a name="device-health-settings"></a>デバイスのヘルスの設定
 - **デバイスが正常として報告されることを必須とします:** - Windows 10 デバイスでサポートされます。
 新規または既存のコンプライアンス ポリシーに、Windows 10 デバイスが正常と報告されることを要求する規則を設定できます。  この設定が有効になっている場合、Windows 10 デバイスは正常性構成証明書サービス (HAS) を使用して次のデータ ポイントで評価されます。
   -  **BitLocker が有効になっている:** BitLocker がオンになっている場合は、システムが電源オフ状態または休止状態になっているときに、デバイスはドライブに格納されているデータを不正アクセスから保護できます。 Windows BitLocker ドライブ暗号化により、Windows オペレーティング システム ボリューム上に格納されているすべてのデータが暗号化されます。 BitLocker は、TPM を使用して Windows オペレーティング システムとユーザー データを保護し、コンピューターが放置、紛失、または盗難された場合でも、改ざんを防止するのに役立ちます。 コンピューターに互換性のある TPM が装備されている場合、BitLocker は TPM を使用してデータを保護する暗号化キーをロックします。 その結果、TPM がコンピューターの状態を確認するまで、キーにアクセスできなくなります。
@@ -122,7 +124,7 @@ ms.openlocfilehash: 12239464012029e3ffff3a9bed4f4ccb2cebe633
 
   HAS サービスのしくみについては、「[HealthAttestation CSP](https://msdn.microsoft.com/library/dn934876.aspx)」をご覧ください。
 
-## デバイスのプロパティの設定
+## <a name="device-property-settings"></a>デバイスのプロパティの設定
 - **Minimum OS required (必要な最小 OS バージョン):** - Windows 8.1 と Windows 10 でサポートされます。
 
   ここには、major.minor.build 番号を指定します。 バージョン番号は、winver コマンドによって返されるバージョンと対応する必要があります。
@@ -140,6 +142,6 @@ ms.openlocfilehash: 12239464012029e3ffff3a9bed4f4ccb2cebe633
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

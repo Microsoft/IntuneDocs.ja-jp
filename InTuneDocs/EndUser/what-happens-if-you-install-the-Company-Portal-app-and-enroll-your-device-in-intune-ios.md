@@ -2,9 +2,10 @@
 title: "ポータル サイト アプリをインストールし、Intune に iOS または Mac OS X デバイスを登録するとどうなるか | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
+ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
+ms.openlocfilehash: fd5ad37706bc4d7f780c5059bda5305335b4ff68
 
 
 ---
@@ -25,13 +26,13 @@ ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 ポータル サイト アプリをインストールし、iOS デバイスまたは Mac OS X デバイスを Intune に登録すると、ポータル サイト アプリを使用して次のことができるようになります。
 
--   会社のネットワークにアクセスし、電子メールや仕事用のファイルにアクセスする
+-   会社のネットワークにアクセスし、電子メールや仕事用のファイルにアクセスする。
 
--   ポータル サイトから会社のアプリを取得する
+-   ポータル サイトから会社のアプリを取得する。
 
--   携帯電話の紛失や盗難にあった場合、リモートで電話を工場出荷時設定にリセットする
+-   携帯電話の紛失や盗難にあった場合、リモートで電話を工場出荷時設定にリセットする。
 
--   会社用の電子メール アカウントを自動的に構成する
+-   会社用の電子メール アカウントを自動的にセットアップする。
 
 デバイスを Intune に登録すると、使用しているデバイスの管理を IT 管理者に許可することで、デバイスに保存されている会社情報を保護しやすくすることもできます。
 
@@ -95,6 +96,6 @@ ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 11/3/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -20,7 +20,10 @@ ms.openlocfilehash: a986e859e38e0936f53c57a75872dc86de3ee181
 
 ---
 
-# Microsoft Intune でのモバイル アプリ構成ポリシーを使用した Android for Work アプリの構成
+# <a name="configure-android-for-work-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Microsoft Intune でのモバイル アプリ構成ポリシーを使用した Android for Work アプリの構成
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 Microsoft Intune のモバイル アプリ構成ポリシーを使用して、ユーザーがアプリを実行するときに必要となる可能性がある設定を指定できます。 たとえば、アプリは次の内容を指定することをユーザーに要求することがあります。
 
 -   カスタム ポート番号。
@@ -37,7 +40,7 @@ Microsoft Intune のモバイル アプリ構成ポリシーを使用して、�
 
 アプリ構成ポリシーは、構成するアプリを展開したユーザーと同じユーザーに展開します。 ポリシー設定は、アプリの実行時に必ず使用されます。
 
-## モバイル アプリ構成ポリシーを構成する
+## <a name="configure-a-mobile-app-configuration-policy"></a>モバイル アプリ構成ポリシーを構成する
 
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[概要]** &gt; **[ポリシーの追加]** の順に選択します。
 
@@ -61,7 +64,7 @@ Microsoft Intune のモバイル アプリ構成ポリシーを使用して、�
 新しいポリシーは、 **[構成ポリシー]** ノードに表示されます。
 
 
-## アプリ構成ポリシーを展開する
+## <a name="deploy-the-app-configuration-policy"></a>アプリ構成ポリシーを展開する
 モバイル アプリ構成ポリシーを作成したら、設定が適用されるアプリを展開するユーザーと同じユーザーにポリシーを展開する必要があります。
 
 ポリシーを展開する方法の詳細については、「[構成ポリシーを展開する](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy)」を参照してください。
@@ -72,10 +75,6 @@ Android for Work デバイスにアプリを展開する方法については、
 
 > [!TIP]
 > 各ユーザーの各アプリには、1 つのアプリ構成ポリシーのみを展開します。
-
-
-
-
 
 
 

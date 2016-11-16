@@ -3,6 +3,7 @@ title: "アプリを更新する | Microsoft Intune"
 description: "新しいバージョンが必要な場合は、このトピックに含まれるアプリを更新する方法を参照してください。"
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 07/12/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffc9a753f2f5ff2aa98a589b752936d67a0888b5
-ms.openlocfilehash: cefe90cdb0cda5ada259576af7cf477642860446
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: e78642494356038d4dff259ca54030122fd90819
 
 
 ---
@@ -58,6 +59,6 @@ Microsoft Intune は、アプリの更新プログラムを管理するのに役
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

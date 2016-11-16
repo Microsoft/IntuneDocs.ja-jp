@@ -2,7 +2,8 @@
 title: "ポータル サイト アプリの使用中にエラーが発生する | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,28 +15,27 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 6d8b46a20e415f03d23b58b22ecf77fe887d344c
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: fde8d231c9638f5923826942cadf1f9bad731f55
 
 
 ---
 
 
-# 会社のポータル アプリの使用中にエラーが発生する
+# <a name="you-get-an-error-while-using-the-company-portal-app"></a>会社のポータル アプリの使用中にエラーが発生する
 
 iOS デバイスでポータル サイト アプリを使用している間にエラーが発生した場合は、IT 管理者が問題のトラブルシューティングを行う際に役立つようにエラーに関する情報を送信することができます。 さまざまな方法では、エラー情報を送信できます。
 
--   エラー アラート メッセージに対して **[レポート]** をタップする
+-   エラー アラート メッセージに対して **[レポート]** をタップします。
 
--   ポータル サイト アプリの **[バージョン情報]** 画面の **[診断レポートの送信]** をタップする
+-   ポータル サイト アプリの **[バージョン情報]** 画面の **[診断レポートの送信]** をタップします。
 
 -   ポータル サイト アプリでデバイスをシェイクし、診断アラートが表示されたら、**[電子メール]** をタップします。 デバイスをシェイクしてもアラートが表示されない場合は、**[設定]** &gt; **[ポータル サイト]** の順に開き、**[シェイク ジェスチャ]** オプションがオンになっていることを確認します。
 
+サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

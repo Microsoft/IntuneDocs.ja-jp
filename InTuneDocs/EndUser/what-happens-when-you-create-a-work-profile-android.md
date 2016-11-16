@@ -2,7 +2,8 @@
 title: "仕事用プロファイルを作成するとどうなりますか | Microsoft Intune"
 description: "Android デバイスを暗号化する方法について説明します"
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,20 +14,20 @@ ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: ad24422cd2708eb4fa59bb96d9f39b7a6444219b
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: 77d420bd1a635f8cd64b32c584c2be62f52f1706
 
 
 ---
 
 
-# 仕事用プロファイルを作成するとどうなりますか
+# <a name="what-happens-when-you-create-a-work-profile"></a>仕事用プロファイルを作成するとどうなりますか
 
-仕事用プロファイルを使用すると、会社または学校の電子メール、アプリ、ファイルにアクセスできるようにデバイスに設定できます。
+仕事用プロファイルを使用すると、会社または学校の電子メール、アプリ、データを個人用のデータとは切り離して保持するようにデバイス上で設定できます。
 
 仕事用プロファイルを作成した場合:
 
-- IT 管理者は、ユーザー個人のアプリやデータではなく、ユーザーのデバイス上の仕事関連のアプリ、設定、および構成のみを管理できます。
+- IT 管理者は、ユーザー個人のアプリやデータではなく、ユーザーのデバイス上の仕事関連のメール、アプリ、設定、およびデータのみを管理できます。
 
 - 仕事用のアプリは、Play Store for Work から入手します。 個人用のアプリを入手する場合は、いつも個人用アプリを入手している Google Play ストアを使用します。 IT 管理者は、個人用アプリを表示または管理できません。
 

@@ -2,9 +2,10 @@
 title: "一般的なトラブルシューティングのヒント | Microsoft Intune"
 description: "Intune の問題を解決するための一般的なリソース。"
 keywords: 
-author: nbigman
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +14,19 @@ ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ab7ccf4c72f8e8f3c67c65d99563fe6fbfdd42b9
-ms.openlocfilehash: 94c761071f4b578440297859662102b2b3080899
+ms.sourcegitcommit: 266ee94f0c61a3f99824a0210ec6f7a205343b21
+ms.openlocfilehash: 93add0c558be2288cd4776f1976101c2eaa2a378
 
 
 ---
 
-# Microsoft Intune の一般的なトラブルシューティングのヒント
+# <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Microsoft Intune の一般的なトラブルシューティングのヒント
 Microsoft Intune を展開した後、構成やクライアントに問題が発生する可能性があります。 以下のリソースは、問題の原因を特定し、問題を解決するのに役立ちます。
 
 > [!NOTE]
 > サポート リクエストを作成したり、既存のリクエストを確認したりするには、[Office 365 管理センターにアクセスしてしてください](https://portal.office.com/admin/default.aspx)。 サポート オプションの詳細については、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」を参照してください。
 
-## 問題の定義
+## <a name="define-the-problem"></a>問題の定義
 
 -   どのように動作しますか?
 
@@ -43,7 +44,7 @@ Microsoft Intune を展開した後、構成やクライアントに問題が発
 
 -   サービスの状態を確認しましたか? Intune のサービス正常性は、[Office 365 管理ポータル](https://portal.office.com/Admin/Default.aspx)で監視できます。 左側のウィンドウで **[サービス正常性]** を選択します。
 
-## 利用可能なデータの収集
+## <a name="collect-available-data"></a>利用可能なデータの収集
 
 -   デバイスのログ。 デバイスのログを収集する方法については、以下をご覧ください。
   - [USB ケーブルを使用して Android の診断データのログを IT 管理者に送信する](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
@@ -53,7 +54,7 @@ Microsoft Intune を展開した後、構成やクライアントに問題が発
 
 -   管理コンソール データ。たとえば、ポリシー実装の問題の場合は、「[Microsoft Intune でユーザーとデバイスの管理にグループを使用する](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)」に記載されている説明に従って、目的のポリシーとその状態を調べる必要があります。
 
-## ソリューションの調査
+## <a name="research-the-solution"></a>ソリューションの調査
 
 -   ソリューションについて Web を検索します。 たとえば、エラー 0x80073CF0 が返された場合は、Web 上で **technet intune 0x80073cf0** を検索すると、「[Microsoft Intune のアプリ展開に関する問題のトラブルシューティング](troubleshoot-app-deployment-problems-in-microsoft-intune.md)」にこの問題に対処するための推奨事項が見つかります。
 
@@ -63,7 +64,7 @@ Microsoft Intune を展開した後、構成やクライアントに問題が発
 
     サポート リクエストを作成するには、[Office 365 管理センターにアクセスしてください](https://portal.office.com/admin/default.aspx)。 サポート オプションの詳細については、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」を参照してください。
 
-## コミュニティのリソース
+## <a name="community-resources"></a>コミュニティのリソース
 以下のコミュニティ リソースには、その他の有用な情報があります。
 
 -   [Microsoft Intune サバイバル ガイド](http://social.technet.microsoft.com/wiki/contents/articles/23431.microsoft-intune-survival-guide.aspx)。ここには、Intune の構成、保守、およびトラブルシューティングに役立つ多くのリソースへのリンクが記載されています。
@@ -74,10 +75,10 @@ Microsoft Intune を展開した後、構成やクライアントに問題が発
 
 -   [Intune フォーラム](https://social.technet.microsoft.com/Forums/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 
-### 次のステップ
+### <a name="next-steps"></a>次のステップ
 以下のトピックには、特定の問題に関するトラブルシューティングのヘルプが含まれています。 この情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
 
-[Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
+[Microsoft Intune におけるエンドポイント保護のトラブルシューティング](troubleshoot-endpoint-protection-in-microsoft-intune.md)
 
 [Microsoft Intune での会社のリソースへのアクセスに関する問題のトラブルシューティング](troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
 
@@ -93,6 +94,6 @@ Microsoft Intune を展開した後、構成やクライアントに問題が発
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

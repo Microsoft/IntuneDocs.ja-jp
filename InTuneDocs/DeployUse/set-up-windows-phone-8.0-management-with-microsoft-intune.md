@@ -3,6 +3,7 @@ title: "Windows Phone 8.0 の管理をセットアップする | Microsoft Intun
 description: "Microsoft Intune を使用して Windows Phone 8.0 デバイスのモバイル デバイス管理 (MDM) を有効にします。"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/09/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: 1d3823392b7060b9d04996c29c68213d421ef4bd
+ms.sourcegitcommit: 067b46c4e537f6def75142411a6d6b60a63cd642
+ms.openlocfilehash: 32d1272d1e125c8a1a5b9f7c6291fb4acf14ea6e
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: 1d3823392b7060b9d04996c29c68213d421ef4bd
 Windows Phone 8.0 では、Intune ポータル サイト アプリのインストールとデバイスの管理の許可に Symantec 証明書が必要です。 基幹業務アプリに署名するための証明書も必要です。 次のトピックは、Windows Phone 8.0 のみに該当します。 Windows 10 Mobile を含む Windows Phone 8.1 以降を管理するには、「[Windows Phone の登録をセットアップする](set-up-windows-phone-management-with-microsoft-intune.md)」をご覧ください。
 
 > [!IMPORTANT]
-> 2016年 9 月以降、Windows 8.0 および Windows Phone 8.0 のポータル サイト アプリはダウンロードできなくなります。
+> 2016 年 9 月より、Windows Phone 8 および Windows 8 用ポータル サイト アプリはダウンロードできなくなりました。
 
 -   **Windows Phone 8** -証明書が必要
 -   **Windows Phone 8.1 および Windows 10 Mobile** では、次の場合にのみ証明書が必要です。
@@ -183,6 +184,6 @@ Windows Phone ストアからインストールしなくても、Intune を使�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

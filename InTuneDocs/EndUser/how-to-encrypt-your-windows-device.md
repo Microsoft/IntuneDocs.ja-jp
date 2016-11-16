@@ -2,9 +2,10 @@
 title: "Windows デバイスを暗号化する方法 | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +15,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 3b775464b494f5d28c870df4b2c58bb59f58eb78
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 66edf19ad9cea6f49504b70946b4e0c02dcfc99f
 
 
 ---
 
-# Windows デバイスを暗号化する方法
+# <a name="how-to-encrypt-your-windows-device"></a>Windows デバイスを暗号化する方法
 
 会社や学校のデータを保護するために、IT 管理者が Windows デバイスの暗号化を要求することがあります。 所有している Windows Phone を登録しているとき、暗号化が要求された場合、デバイスは自動的に暗号化されます。
 
@@ -34,6 +35,6 @@ ms.openlocfilehash: 3b775464b494f5d28c870df4b2c58bb59f58eb78
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 
