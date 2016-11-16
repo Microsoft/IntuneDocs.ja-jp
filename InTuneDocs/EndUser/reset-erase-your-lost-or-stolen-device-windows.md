@@ -2,8 +2,8 @@
 title: "紛失したまたは盗難にあった Windows デバイスをリセット (消去) する | Microsoft Intune"
 description: "紛失したまたは盗難にあった Windows デバイスをリセットする"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f2283b5896541e58d7ae515cab9d4faa1e9df735
-ms.openlocfilehash: 4a206e30c1334681f82b8077da6191ef3e28e4b1
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2af464dd1eb4fa97c6500131f51d48b6636b0cf2
 
 
 ---
 
 
-# 紛失したまたは盗難にあったデバイスをリセット (消去) する
+# <a name="reset-erase-your-lost-or-stolen-device"></a>紛失したまたは盗難にあったデバイスをリセット (消去) する
 
 Intune に登録されているデバイスが紛失や盗難にあった場合は、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)を使用して、携帯電話を出荷時の既定設定にリセットできます。
 
@@ -41,6 +41,6 @@ Intune に登録されているデバイスが紛失や盗難にあった場合�
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

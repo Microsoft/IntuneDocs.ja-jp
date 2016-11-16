@@ -5,38 +5,38 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ffe11b4eb4b0f4c2ffdc831cad9deb30d7180809
-ms.openlocfilehash: 94de65185af64052226985f2c65c7b8a18e2f829
+ms.sourcegitcommit: 9bf5764d1e1bd73fd62e5033b2309fc8d5a912e4
+ms.openlocfilehash: bc5d1b429157e6a6b24f4eb319be50b635466317
 
 
 ---
 
-# Microsoft Intune に登録されていないデバイスの基幹業務アプリとデータを保護する
+# <a name="protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune"></a>Microsoft Intune に登録されていないデバイスの基幹業務アプリとデータを保護する
 
 モバイル アプリ管理 (MAM) ポリシーでは、会社のデータを保護するために、会社データが漏洩する可能性があるアクションを制限し、アプリ PIN などのデータ アクセス要件を強制することができます。 MAM ポリシーを iOS または Android の基幹業務アプリに適用するには、最初に Microsoft Intune アプリ ラッピング ツールを使用してアプリをラップする必要があります。  アプリ ラッピングは、モバイル アプリに、基になるアプリケーションは何も変更せずに、管理レイヤーを適用するプロセスです。  アプリをラップしたら、MAM ポリシーを適用し、それをエンドユーザーに配布できます。  
 
 このトピックでは、**従業員が所有している管理外のデバイス**からアクセスするアプリと、**サード パーティ製のモバイル デバイス管理 (MDM) ソリューション**で管理されているデバイスに MAM ポリシーを適用する手順を説明します。  **Intune MDM に登録されているデバイス**で実行されている基幹業務アプリを準備するには、「[Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)」をご覧ください。
 
 
-##  手順 1: アプリを準備する
+##  <a name="step-1-prepare-the-app"></a>手順 1: アプリを準備する
 MAM ポリシーをアプリに適用する前に、まず Microsoft Intune アプリ ラッピング ツールを使用してアプリをラップする必要があります。  アプリ ラッピング ツールをダウンロードして使用する手順については、次のページを参照してください。
 
-- [Intune アプリ ラッピング ツールでモバイル アプリケーションを管理するために iOS アプリを準備する](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 
+- [Intune アプリ ラッピング ツールでモバイル アプリケーションを管理するために iOS アプリを準備する](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)
 - [Intune アプリ ラッピング ツールでモバイル アプリケーションを管理するために Android アプリを準備する](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)
 
 >[!IMPORTANT]  
 >このアプリ ラッピング ツールのバージョン (Intune に登録されていないデバイスをサポートする) は、iOS および Android のパブリック プレビューに対応しています。 iOS の場合は、[こちらの GitHub リポジトリ](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)から、Android の場合は、[こちらの GitHub リポジトリ](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview)からツールをダウンロードできます。
 
-## 手順 2: アプリを追加する
+## <a name="step-2-add-the-app"></a>手順 2: アプリを追加する
 
 MAM ポリシーと基幹業務アプリを関連付けるには、次の手順を使用して Intune のサブスクリプションとテナントにアプリの詳細を追加する必要があります。
 
@@ -51,7 +51,7 @@ MAM ポリシーと基幹業務アプリを関連付けるには、次の手順�
 
   ![[カスタム アプリの追加] ブレードのスクリーン ショット ](../media/mam-azure-portal-add-app-details.png) この手順で、アプリは一意のものとして一覧表示されます。  アプリは、次の手順で説明するように、テナントの MAM ポリシーの対象アプリの一覧にも表示されるようになります。
 
-## 手順 3: MAM ポリシーを適用する
+## <a name="step-3-apply-mam-policies"></a>手順 3: MAM ポリシーを適用する
 サービスにアプリのメタデータがアップロードされると、アプリはアプリ一覧に表示されます。  [新しいポリシーまたは既存のポリシーを作成し](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)、手順 2. で追加した基幹業務アプリに適用できます。
 
 >[!IMPORTANT]
@@ -59,15 +59,15 @@ MAM ポリシーと基幹業務アプリを関連付けるには、次の手順�
 
 
   ![新しい基幹業務アプリが示された [対象アプリ] 一覧が示されたブレードのスクリーンショット](../media/mam-azure-portal-lob-on-targeted-app-list.png)
-## 手順 4: アプリを配布する
+## <a name="step-4-distribute-the-app"></a>手順 4: アプリを配布する
 アプリはエンドユーザーに、次の方法で配布できます。
 * デバイスがサード パーティ製の MDM ソリューションに登録されている場合、MDM ソリューションを介してアプリを配布できます。
 * デバイスが MDM ソリューションで管理されていない場合には、カスタム ソリューションが必要です。 エンドユーザーは、自分のデバイスにアプリをダウンロードしてインストールする必要があります。
 
-## メタデータを変更する
+## <a name="changing-the-metadata"></a>メタデータを変更する
 アプリ名、バンドル ID などのアプリの詳細を変更する必要がある場合、[アプリを削除し](#remove-apps)、それに新しいメタデータを[追加](#step-2-add-the-app)する必要があります。
 
-##  アプリを削除する
+##  <a name="remove-apps"></a>アプリを削除する
 アプリの一覧から基幹業務アプリを削除できます。  これを行うと、アプリは一覧から削除され、MAM ポリシーとの関連付けが削除されますが、エンドユーザーのデバイスからアプリが削除されたり、アンインストールされたりすることはありません。  
 
 1.  [Azure ポータル](https://portal.azure.com/)の **[Intune モバイル アプリケーション管理] > [設定]** に進みます。  **[設定]** ブレードで、**[基幹業務]** を選択し、既存のアプリの一覧を開きます。  
@@ -82,6 +82,6 @@ MAM ポリシーと基幹業務アプリを関連付けるには、次の手順�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

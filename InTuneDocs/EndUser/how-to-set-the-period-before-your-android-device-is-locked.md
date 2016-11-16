@@ -2,10 +2,10 @@
 title: "Android デバイスがロックされる前に期間を設定する方法 | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 6fd49127321b665c4c23eafc0dabab6787307881
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 7407be9c7ae96652270692eeb70e35743dff2602
 
 
 ---
 
-# Android デバイスがロックされる前に期間を設定する方法
+# <a name="how-to-set-the-period-before-your-android-device-is-locked"></a>Android デバイスがロックされる前に期間を設定する方法
 再接続するには、使用するデバイスの種類ごとに、次の手順の指示に従ってデバイスにパスワードのタイムアウトを設定する必要があります。
 
-## ネイティブのデバイス (Samsung KNOX 以外)
+## <a name="native-nonsamsung-knox-device"></a>ネイティブのデバイス (Samsung KNOX 以外)
 
 1.  デバイスで、**[設定]** から、**[セキュリティ]** &gt; **[自動的にロック]** (一部のデバイスでは **[後でデバイスをロック]** として表示されます) の順にタップします。
 
@@ -32,7 +32,7 @@ ms.openlocfilehash: 6fd49127321b665c4c23eafc0dabab6787307881
 
 2.  パスワードのタイムアウト値を選択します。
 
-## Samsung KNOX デバイス
+## <a name="samsung-knox-device"></a>Samsung KNOX デバイス
 
 1.  デバイスの **[設定]** で、**[ロック画面とセキュリティ]** &gt; **[自動的にロック]** の順にタップします。
 
@@ -44,6 +44,6 @@ ms.openlocfilehash: 6fd49127321b665c4c23eafc0dabab6787307881
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

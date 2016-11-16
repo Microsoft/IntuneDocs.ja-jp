@@ -3,6 +3,7 @@ title: "Intune から Android デバイスの登録を解除するとどうな�
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: fb6f92dccb823d34b977cd42c004a17acf8fa090
+ms.sourcegitcommit: 2bc39ae41779e02882a5edf3698cb0e6976caec2
+ms.openlocfilehash: 5508b359329465e6f53fa3f5b4a93918932dfd8b
 
 
 ---
@@ -25,11 +26,11 @@ ms.openlocfilehash: fb6f92dccb823d34b977cd42c004a17acf8fa090
 
 Intune から Android デバイスの登録を解除すると次のようになります。
 
--   Intune からデバイスの登録を解除するということは、IT 管理者がデバイスを管理しなくなることを意味します。
+-   IT 管理者は、デバイスを管理できなくなります。
 
--   会社のデータおよびリソースにはアクセスができなくなります。
+-   会社のデータおよびリソースにアクセスできなくなります。
 
--   デバイスにポータル サイトは表示されなくなります。
+-   ポータル サイトにお使いのデバイスが表示されなくなります。
 
 -   ポータル サイトからアプリケーションをインストールできなくなります。
 
@@ -43,7 +44,6 @@ Intune から Android デバイスの登録を解除すると次のようにな�
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

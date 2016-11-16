@@ -3,8 +3,9 @@ title: "ポリシーのロールアウト | Microsoft Intune"
 description: "Microsoft Intune でポリシーを段階的にロールアウトする場合の推奨事項。"
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+ms.author: nbigman
+manager: angrobe
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 390d5adf-86d2-4e23-ba93-1e61e6b1028b
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: bab43006d4f142f34ecbb69487acb8b63151ee61
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: 0a363ed242f5968f3fb84b558cfa134e243a22ff
 
 
 ---
@@ -31,9 +32,9 @@ ms.openlocfilehash: bab43006d4f142f34ecbb69487acb8b63151ee61
 
 -   概念実証
 
--   パイロット
+-   パイロット運用
 
--   全社的なロールアウト
+-   企業でのロールアウト
 
 -   運用とメンテナンス
 
@@ -97,6 +98,6 @@ Intune ポリシーを展開するスコープを定義します。
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Oct16_HO4-->
 
 

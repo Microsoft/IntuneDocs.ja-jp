@@ -125,7 +125,7 @@
 #### [MAM ポリシーを確認する](validate-mobile-application-management.md)
 #### [ポリシーの準拠状況を監視する](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [iOS アプリ間のデータ転送を管理する](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
-#### [エンド ユーザー エクスペリエンス](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+
 #### [MAM ポリシー向けの Intune 管理コンソール](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [基幹業務アプリを MAM 向けに準備する](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
@@ -141,12 +141,15 @@
 ### [管理対象の業務用アプリのデータをワイプする](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [エンドユーザー エクスペリエンスに関するリソース](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+### [管理されている iOS デバイスを復元する](restore-managed-ios-devices-from-backup.md)
+### [Android アプリと MAM ポリシー](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+### [iOS アプリと MAM ポリシー](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 # [アプリの開発とカスタマイズ](/intune/develop/intune-app-sdk)
 
 # [トラブルシューティング](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

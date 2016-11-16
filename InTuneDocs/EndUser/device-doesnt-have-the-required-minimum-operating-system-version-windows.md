@@ -2,10 +2,10 @@
 title: "デバイスに最低限必要なバージョンのオペレーティング システムがインストールされていない | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a9343f7aa1ab4761bcbf36f829fe0e9be293515
-ms.openlocfilehash: a14f347ae65118852ba914085548cd17c8ec31aa
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 376866a4d2a96594413d8edd92f2a20cc37339cb
 
 
 ---
 
 
-# デバイスに最低限必要なバージョンのオペレーティング システムがインストールされていない
+# <a name="device-doesnt-have-the-required-minimum-operating-system-version"></a>デバイスに最低限必要なバージョンのオペレーティング システムがインストールされていない
 
 お使いの Windows デバイスは、IT 部門が要求しているオペレーティング システムのバージョンの最小要件を満たしていません。 モバイル デバイスを更新する前に、**[設定]** &gt; **[バージョン情報]** の順に選択して、現在のオペレーティング システムのバージョンを確認します。 次に、**[設定]** &gt; **[電話の更新]** &gt; **[更新プログラムの確認]** の順に選択します。
 
@@ -37,6 +37,6 @@ Windows 10 と Windows 8.1 のバージョンを確認するには、Windows ロ
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

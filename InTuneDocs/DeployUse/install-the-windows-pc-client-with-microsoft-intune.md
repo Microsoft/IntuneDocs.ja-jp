@@ -1,9 +1,9 @@
 ---
+
 title: "PC クライアント ソフトウェアをインストールする | Microsoft Intune"
 description: "このガイドは、Microsoft Intune クライアント ソフトウェアによって、Windows PC を管理させる場合に役立ちます。"
 keywords: 
 author: NathBarn
-ms.author: nathbarn
 manager: arob98
 ms.date: 07/19/2016
 ms.topic: article
@@ -14,13 +14,13 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: 13fa09a2b029818467062a5c589292c5f0bd0a58
+ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
+ms.openlocfilehash: 7d239a80ed68d39b2a7179a45178ba6ae11c5423
 
 
 ---
 
-# Windows PC に Intune ソフトウェア クライアントをインストールする
+# <a name="install-the-intune-software-client-on-windows-pcs"></a>Windows PC に Intune ソフトウェア クライアントをインストールする
 Intune クライアント ソフトウェアをインストールして Windows PC を登録します。 Intune クライアント ソフトウェアは、次の方法でインストールできます。
 
 - 手動インストール
@@ -28,32 +28,36 @@ Intune クライアント ソフトウェアをインストールして Windows 
 - ディスク イメージに含める
 - ユーザーによるインストール
 
-## Intune クライアント ソフトウェアのダウンロード
+最初にダウンロードされる Intune ソフトウェア クライアントには、Intune 管理で PC を登録するために必要な最小限のソフトウェアが含まれます。 PC の登録後、Intune ソフトウェア クライアントは、PC の管理に必要な完全なクライアント ソフトウェアをダウンロードします。
 
-ユーザー自身が Intune クライアント ソフトウェアをインストールする場合を除き、ソフトウェアをダウンロードして、デプロイする必要があります。
+この一連のダウンロードでは、Intune に PC を最初に登録するために必要な時間が最小限に抑えられます。 また、2 回目のダウンロードが完了した後、クライアントで最新のソフトウェアが利用できるようにします。
+
+## <a name="download-the-intune-client-software"></a>Intune クライアント ソフトウェアのダウンロード
+
+ユーザー自身が Intune クライアント ソフトウェアをインストールする場合を除き、ソフトウェアをダウンロードして、展開する必要があります。
 
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[管理]** &gt; **[クライアント ソフトウェアのダウンロード]** をクリックします。
 
   ![Intune PC クライアントのダウンロード](../media/pc-sa-client-download.png)
 
-2.  **[クライアント ソフトウェアのダウンロード]** ページで、**[クライアント ソフトウェアのダウンロード]** をクリックし、ソフトウェアを含む **Microsoft_Intune_Setup.zip** パッケージをネットワーク上の安全な場所に保存します。
+2.  [**クライアント ソフトウェアのダウンロード**] ページで、[**クライアント ソフトウェアのダウンロード**] をクリックします。 ソフトウェアが含まれている **Microsoft_Intune_Setup.zip** パッケージをネットワーク上のセキュリティで保護された場所に保存します。
 
     > [!NOTE]
-    > Intune クライアント ソフトウェアのインストール パッケージには、アカウントの情報が含まれています。 許可されていないユーザーがインストール パッケージにアクセスした場合は、埋め込み証明書に示されているアカウントにそのコンピューターを登録できることになります。
+    > Intune クライアント ソフトウェアのインストール パッケージには、アカウントの情報が含まれています。 許可されていないユーザーがインストール パッケージにアクセスした場合は、埋め込み証明書に示されているアカウントにそのコンピューターを登録できることになり、会社のリソースへのアクセスが行われる可能性があります。
 
 3.  インストール パッケージの内容をネットワーク上の安全な場所に抽出します。
 
     > [!IMPORTANT]
     > 抽出した **ACCOUNTCERT** ファイルを削除したり、名前を変更したりすると、クライアント ソフトウェアをインストールできなくなります。
 
-## 手動でデプロイする
+## <a name="deploy-the-client-software-manually"></a>クライアント ソフトウェアを手動で展開する
 
-1.  コンピューターで、クライアント ソフトウェアのインストール ファイルを抽出したフォルダーを参照し、**Microsoft_Intune_Setup.exe** を実行してインストールを開始します。
+コンピューター上で、クライアント ソフトウェアのインストール ファイルが置かれているフォルダーに移動します。 **Microsoft_Intune_Setup.exe** を実行して、クライアント ソフトウェアをインストールします。
 
     > [!NOTE]
-    > クライアント コンピューターのタスク バーに表示されるアイコンにマウスをポイントすると、インストールの状態が表示されます。
+    > The status of the installation is displayed when you hover over the icon in the taskbar on the client computer.
 
-## グループ ポリシーを使ってデプロイする
+## <a name="deploy-the-client-software-by-using-group-policy"></a>グループ ポリシーを使ってクライアント ソフトウェアを展開する
 
 1.  **Microsoft_Intune_Setup.exe** と **MicrosoftIntune.accountcert** というファイルを含むフォルダーで、次のコマンドを実行して、32 ビットおよび 64 ビット コンピューター用の Windows インストーラーベースのインストール プログラムを抽出します。
 
@@ -70,8 +74,8 @@ Intune クライアント ソフトウェアをインストールして Windows 
 
     グループ ポリシーを使用してソフトウェアを自動的に展開する方法の詳細については、Windows Server のマニュアルを参照してください。
 
-## イメージの一部としてインストールする
-Intune クライアント ソフトウェアは、次の手順例を基にして、オペレーティング システム イメージの一部としてコンピューターに展開できます。
+## <a name="deploy-the-client-software-as-part-of-an-image"></a>システム イメージの一部としてクライアント ソフトウェアを展開する
+Intune クライアント ソフトウェアは、次の手順に従って、オペレーティング システム イメージの一部としてコンピューターに展開できます。
 
 1.  クライアント インストール ファイルの **Microsoft_Intune_Setup.exe** と **MicrosoftIntune.accountcert** を、基準コンピューターの **%Systemdrive%\Temp\Microsoft_Intune_Setup** フォルダーにコピーします。
 
@@ -88,7 +92,7 @@ Intune クライアント ソフトウェアは、次の手順例を基にして
     %systemdrive%\temp\Microsoft_Intune_Setup\Microsoft_Intune_Setup.exe /PrepareEnroll
     ```
     > [!TIP]
-    >  **SetupComplete.cmd** スクリプトを使用すると、ユーザーがログオンする前に、Windows セットアップによってシステムを変更できます。 **/PrepareEnroll** というコマンド ライン引数は、Windows セットアップの実行後に、対象のコンピューターが Intune に自動的に登録されるようにする引数です。
+    > **SetupComplete.cmd** スクリプトを使用すると、ユーザーがサインオンする前に、Windows セットアップによってシステムを変更できます。 **/PrepareEnroll** というコマンド ライン引数は、Windows セットアップの実行後に、対象のコンピューターが Intune に自動的に登録されるようにする引数です。
 
 4.  **SetupComplete.cmd** を、基準コンピューターの **%Windir%\Setup\Scripts** フォルダーに配置します。
 
@@ -98,30 +102,30 @@ Intune クライアント ソフトウェアは、次の手順例を基にして
 
 スケジュールに従って、次回の自動登録タスクが実行されると、 **indowsIntuneEnrollPending** レジストリ値が存在するかどうかがチェックされ、対象の PC が Intune に登録されます。 登録できなかった場合は、このタスクが次回実行されるときに登録されます。 再試行は 1 か月間継続されます。
 
-登録が正常に完了するか、1 か月後に、対象のコンピューターから Intune への自動登録タスク、**WindowsIntuneEnrollPending** レジストリ値、およびアカウント証明書が削除されます。
+登録が正常に完了するか、1 か月後に (どちらか早い方)、対象のコンピューターから Intune への自動登録タスク、**WindowsIntuneEnrollPending** レジストリ値、およびアカウント証明書が削除されます。
 
-## 自分で登録するユーザーへの指示
+## <a name="instruct-users-to-selfenroll"></a>自分で登録するユーザーへの指示
 
-ユーザーは、[http://portal.manage.microsoft.com](http://portal..manage.microsoft.com) を参照して Intune クライアント ソフトウェアをインストールできます。 デバイスが Windows PC であることを Web ポータルが検出できる場合、Intune ソフトウェア クライアントをダウンロードして、PC を登録するように求められます。 ダウンロードすると、ユーザーはソフトウェアをインストールして、PC を管理できます。
+ユーザーは、[ポータル Web サイト](http://portal.manage.microsoft.com)に移動して、Intune クライアント ソフトウェアをインストールできます。 デバイスが Windows PC であることを Web ポータルが検出できる場合、ユーザーは Intune ソフトウェア クライアントをダウンロードして、PC を登録するように求められます。 ソフトウェアがダウンロードされたら、ユーザーはインストールして、PC を管理できます。
 
 ![Intune ポータルが Intune ソフトウェア クライアントをダウンロードするように要求する](../media/software-client-download.png)
 
-## クライアントの正常展開の監視と確認
+## <a name="monitor-and-validate-successful-client-deployment"></a>クライアントの正常展開の監視と確認
 次のいずれかの手順を使用して、クライアントの正常展開を監視および確認できます。
 
-### Microsoft Intune 管理コンソールでクライアント ソフトウェアのインストールを確認するには
+### <a name="to-verify-the-installation-of-the-client-software-from-the-microsoft-intune-administrator-console"></a>Microsoft Intune 管理コンソールでクライアント ソフトウェアのインストールを確認するには
 
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[グループ]** &gt; **[すべてのデバイス]** &gt; **[すべてのコンピューター]** をクリックします。
 
-2.  コンピューターの一覧を下にスクロールして、Intune と通信している管理対象コンピューターを見つけます。または、特定の管理対象コンピューターを検索する場合は、 **[デバイスの検索]** ボックスに、そのコンピューターの名前か名前の一部を入力します。
+2.  一覧内で、Intune と通信しているコンピューターを見つけるか、または、**[デバイスの検索]** ボックスにコンピューターの名前 (または名前の一部) を入力して、特定の管理対象コンピューターを検索します。
 
-3.  コンソールの下部ウィンドウに表示されるコンピューターの状態を確認し、エラーがあれば解決します。
+3.  コンソールの下部ウィンドウに表示されるコンピューターの状態を確認します。 エラーがあれば解決します。
 
-### 登録されているすべてのコンピューターを表示する、コンピューターのインベントリ レポートを作成するには
+### <a name="to-create-a-computer-inventory-report-to-display-all-enrolled-computers"></a>登録されているすべてのコンピューターを表示する、コンピューターのインベントリ レポートを作成するには
 
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[レポート]** &gt; **[コンピューター インベントリ レポート]** をクリックします。
 
-2.   **[新しいレポートの作成]** ページで、(フィルターを適用しない場合は) すべてのフィールドを既定値のままにして、 **[レポートの表示]**をクリックします。
+2.  **[新しいレポートの作成]** ページで、(フィルターを適用しない場合は) すべてのフィールドを既定値のままにして、**[レポートの表示]**をクリックします。
 
 3.  新しいウィンドウで **[コンピューター インベントリ レポート]** ページが開き、Intune に登録されているすべてのコンピューターが表示されます。
 
@@ -129,12 +133,12 @@ Intune クライアント ソフトウェアは、次の手順例を基にして
     > レポートの列見出しをクリックすると、列の内容で一覧が並べ替えられます。
 
 
-### 関連項目
+### <a name="see-also"></a>関連項目
 [Microsoft Intune を使用して Windows PC を管理する](manage-windows-pcs-with-microsoft-intune.md)
 [Microsoft Intune でのクライアント セットアップのトラブルシューティング](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -3,8 +3,9 @@ title: "電子メールへのアクセスを制限するシナリオ例 | Micros
 description: "いくつかのシナリオ例と、条件付きアクセスを使用した場合の実装方法。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +14,16 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 6b4751a67414a0b8a16886070b323a0296eeb829
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 6c1a1c90b442eac039f93103264059ea415b43ff
 
 
 ---
 
-# Microsoft Intune で電子メールへのアクセスを制限する: シナリオ例
+# <a name="restrict-access-to-email-with-microsoft-intune-example-scenarios"></a>Microsoft Intune で電子メールへのアクセスを制限する: シナリオ例
 
-## 非準拠のデバイスを使用して Exchange Online にアクセスするユーザーをブロックする
-### シナリオの要件
+## <a name="block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>非準拠のデバイスを使用して Exchange Online にアクセスするユーザーをブロックする
+### <a name="scenario-requirements"></a>シナリオの要件
 - 展開したコンプライアンス ポリシーにデバイスが準拠していない場合、**[アカウンティング]** Active Directory セキュリティ グループ内のすべてのユーザーの Exchange Online へのアクセスをブロックする必要があります。
 - このグループ内に [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] によってデバイスがサポートされていないユーザーが存在する場合、それらのデバイスでのユーザーによる Exchange Online へのアクセスをブロックする必要があります。
 - **[ファイナンス]** Active Directory セキュリティ グループに属するユーザーはいずれも、さらに **[アカウンティング]** セキュリティ グループに属していたとしても、ポリシーから除外する必要があります。
@@ -42,8 +43,8 @@ ms.openlocfilehash: 6b4751a67414a0b8a16886070b323a0296eeb829
 
 ![デバイス アクセス フロー](./media/ConditionalAccess8-5.png)
 
-## Exchange On-premises にアクセスするすべての iOS デバイスを Intune で管理する必要がある
-### シナリオの要件
+## <a name="all-ios-devices-that-access-exchange-onpremises-must-be-managed-by-intune"></a>Exchange On-premises にアクセスするすべての iOS デバイスを Intune で管理する必要がある
+### <a name="scenario-requirements"></a>シナリオの要件
 - iOS を実行しているデバイスだけが Exchange On-premises にアクセスできるようにする必要があります。
 - デバイスを Exchange へのアクセスに使用するには、それらのデバイスが Intune に登録され、コンプライアンス ポリシーのルールに準拠している必要があります。
 
@@ -61,8 +62,8 @@ ms.openlocfilehash: 6b4751a67414a0b8a16886070b323a0296eeb829
 
 ![デバイス アクセス フロー](./media/ConditionalAccess8-3.png)
 
-## Android デバイスは Exchange On-premises にアクセスできない
-### シナリオの要件
+## <a name="no-android-devices-can-access-exchange-onpremises"></a>Android デバイスは Exchange On-premises にアクセスできない
+### <a name="scenario-requirements"></a>シナリオの要件
 - すべての Android デバイスに対して Exchange へのアクセスをブロックする必要があります。
 - その他すべてのサポートされるデバイスは、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] で管理されている限り Exchange にアクセスできます。
 
@@ -81,6 +82,6 @@ ms.openlocfilehash: 6b4751a67414a0b8a16886070b323a0296eeb829
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

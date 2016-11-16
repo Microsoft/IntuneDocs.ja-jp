@@ -3,8 +3,9 @@ title: "VPN 接続 | Microsoft Intune"
 description: "組織内のユーザーとデバイスに VPN 設定を展開するには、VPN プロファイルを使用します。"
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 10/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
-ms.openlocfilehash: 026e7c918f8b2457dd1afb9a5134ad3bd6f65cd5
+ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
+ms.openlocfilehash: 188cb3890da83332431743445959bba73e7f2484
 
 
 ---
@@ -44,20 +45,20 @@ Intune では、次の接続の種類を使用する VPN プロファイルを�
 
 
 
-接続の種類 |iOS および Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8。1|Windows 10 デスクトップおよび Windows 10 Mobile |
+接続の種類 |iOS および Mac OS X  |Android と Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8。1|Windows 10 デスクトップおよび Windows 10 Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
-Cisco AnyConnect|○ |○   |[いいえ]    |     いいえ    |いいえ  |いいえ    | ○ (OMA-URI、Windows 10 Mobile のみ)|     
-Cisco (IPsec)|Yes |[いいえ]   |いいえ  |  いいえ|いいえ  |いいえ | いいえ|
-Citrix|Yes |[いいえ]   |いいえ  |  いいえ|いいえ  |いいえ | いいえ|
-Pulse Secure|○  |○ |○   |いいえ  |○  |○| ○|        
-F5 Edge Client|○ |○ |○ |いいえ  |○  |   ○ |  ○|   
-Dell SonicWALL Mobile Connect|○ |○ |○ |いいえ  |○ |○ |○|         
-CheckPoVPNt Mobile VPN|○ |○ |○ |○ |○|○|○|
-Microsoft SSL (SSTP)|[いいえ] |いいえ |いいえ |いいえ |いいえ|いいえ|VPNv1 OMA-URI*|
-Microsoft 自動|いいえ |いいえ |いいえ |いいえ |いいえ|○ (OMA-URI)|○|
-IKEv2|iOS カスタム プロファイル|いいえ |いいえ |いいえ |いいえ|○ (OMA-URI)|○|
-PPTP|iOS カスタム プロファイル|いいえ |いいえ |いいえ |いいえ|[いいえ]|○|
-L2TP|iOS カスタム プロファイル|いいえ |いいえ |いいえ |いいえ|○ (OMA-URI)|○|
+Cisco AnyConnect|○ |○   |[いいえ]    |いいえ  |いいえ    | ○ (OMA-URI、Windows 10 Mobile のみ)|     
+Cisco (IPsec)|Yes |[いいえ]   |いいえ  |いいえ  |いいえ | いいえ|
+Citrix|Yes |[いいえ]   |いいえ  |いいえ  |いいえ | いいえ|
+Pulse Secure|○  |○ |○   |○  |○| ○|        
+F5 Edge Client|○ |○ |○ |○  |   ○ |  ○|   
+Dell SonicWALL Mobile Connect|○ |○ |○ |○ |○ |○|         
+CheckPoVPNt Mobile VPN|○ |○ |○ |○|○|○|
+Microsoft SSL (SSTP)|[いいえ] |いいえ |いいえ |いいえ|いいえ|VPNv1 OMA-URI*|
+Microsoft 自動|いいえ |いいえ |いいえ |いいえ|○ (OMA-URI)|○|
+IKEv2|iOS カスタム プロファイル|いいえ |いいえ |いいえ|○ (OMA-URI)|○|
+PPTP|iOS カスタム プロファイル|いいえ |いいえ |いいえ|[いいえ]|○|
+L2TP|iOS カスタム プロファイル|いいえ |いいえ |いいえ|○ (OMA-URI)|○|
 
 \* Windows 10 用に使用できるその他の設定を使用しない場合。
 
@@ -96,6 +97,8 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
 
 > [!Note]
 > Android for Work デバイス用の VPN プロファイルを使用すると、デバイスの仕事用プロファイルにインストールされているアプリに対してのみ VPN 接続が有効になります。
+>
+> VPN 接続の一部の種類では、Android for Work デバイス用にアプリごとの VPN をサポートし、さらに Intune によって配布されるアプリに対してアプリごとの VPN を有効にすることができます。  
 
 3. 次の表を参考に、VPN プロファイル設定を構成してください。
 

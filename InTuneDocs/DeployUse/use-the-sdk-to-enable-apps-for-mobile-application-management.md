@@ -1,8 +1,9 @@
 ---
 title: "SDK を使用して MAM のアプリを有効にする |Microsoft Intune"
-description: 
+description: "このトピックでは、Intune SDK を使用する必要がある理由について概説します。"
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: 26b00081-7c05-4969-ace1-0585e44d5cd2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eec08a92ff38f55ca04e9c1822c041e8bd0273fd
-ms.openlocfilehash: 5c7f25b31288a112fbfb1744c061c4cc2eb73e49
+ms.sourcegitcommit: 37e12d1d78f40acb616ad5762eeb5f034ecc0081
+ms.openlocfilehash: 57b7cefce3715568b77a8c16a857a16434d72821
 
 
 ---
 
 # Use the SDK to enable apps for mobile application management (アプリでモバイル アプリケーション管理を実行できるよう SDK を使用する)
-特定の機能を Intune で管理できるようにモバイル アプリ (iOS または Android) を開発するには、Microsoft Intune App SDK を使用します。 Intune での管理に向けた対応化が済んだら、アプリにポリシーを展開することができます。 それらの機能をポリシーから使用することによって、会社のデータが保護されます。 SDK で実装できる保護には、次のようなものがあります。
+iOS または Android アプリの特定の機能を Intune で管理できるようにするには、Microsoft Intune App SDK を使用します。 Intune での管理に向けた対応化が済んだら、アプリにポリシーを展開することができます。 それらの機能をポリシーから使用することによって、会社のデータが保護されます。 SDK で実装できる保護には、次のようなものがあります。
 
 -   会社のドキュメントをクラウドにコピーすることを禁止する
 
@@ -39,6 +40,6 @@ SDK の概要については、[概要](/intune/develop/intune-app-sdk)ページ
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

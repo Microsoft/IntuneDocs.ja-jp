@@ -14,13 +14,13 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
-ms.openlocfilehash: 3973ac11d4734b17f905e88259863d7ddb59c1f4
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 559917b5b3c12534a5aa5d5eb5247d36e4ac1728
 
 
 ---
 
-# Intune の評価ガイド
+# <a name="intune-evaluation-guide"></a>Intune の評価ガイド
 モバイル デバイスとコンピューターを管理する Intune の無料の 30 日間評価版を迅速かつ簡単に設定できます。 評価版ではいくつかの簡単な手順を行うだけで、最大 100 のユーザーとデバイスの追加、グループの設定、コンプライアンス ポリシーの構成、モバイル デバイスとコンピューターの登録と管理を行うことができます。
 
 このトピックでは、Intune の特長と機能を評価できるよう、Intune の評価版の稼働方法とサービスの概要の理解に関する基本的な内容を学習します。
@@ -29,7 +29,7 @@ ms.openlocfilehash: 3973ac11d4734b17f905e88259863d7ddb59c1f4
 
 <iframe width="675" height="480" src="https://www.youtube.com/embed/ltcZvm4VOFU" frameborder="0" allowfullscreen></iframe>
 
-## 始める前に
+## <a name="before-you-begin"></a>始める前に
 Intune の使用を開始する前に、以下のものが必要となります。
 
 -   Silverlight 対応 Web ブラウザーを備えたデバイス。これは、Intune ユーザーのアカウントを作成するための Web サイト (**Office 365 管理センター**) や、デバイス、グループ、ポリシーの管理を行う Web サイト (**Intune 管理コンソール**) にアクセスする際に使用します。
@@ -46,7 +46,7 @@ Intune の使用を開始する前に、以下のものが必要となります�
     |Windows 10、Windows RT 8.1、Windows 8.1 デバイス|Windows RT デバイスまたは Windows デバイスを登録するうえでの証明書の要件はありません。|[Microsoft Intune を使用して Windows PC クライアントをインストールする](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune)。|
     |iOS 7.1 以降|Apple Push Notification サービス証明書を取得する。|「[Microsoft Intune を使用した iOS および Mac の管理のセットアップ](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune)」で説明しているように、Apple に Apple Push Notification サービス証明書を要求する必要があります。|
 
-## Intune の 30 日間評価版の完了手順
+## <a name="steps-to-complete-a-30day-evaluation-of-intune"></a>Intune の 30 日間評価版の完了手順
 - [手順 1: 30 日間評価版にサインインまたはサインアップします](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)。 Intune にサインアップまたはサインインする前に、既存のアカウントを使用してサインインするか、Microsoft Intune の 30 日間評価版にのみ使用する一時的なアカウントを作成するかを検討する必要があります。
 - [手順 2: ユーザーを追加します](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)。 アカウントを設定したので、個別のユーザー アカウントを Intune に追加するか、一括でユーザーを追加します (このセクションの手順を参照してください)。 操作を開始する前に、Intune が管理者アカウントを処理する方法について理解することが重要です。
 - [手順 3: ユーザーとデバイスを編成するグループを作成します](get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)。 Intune の [グループ] を使用すると、デバイスとユーザーを柔軟に管理できます。 グループは、組織ごとのニーズ (地理的位置、部門、ハードウェアの特性など) に合わせて設定できます。一連のユーザーに対するポリシーの設定から、一連のデバイスに対するアプリケーションの展開まで、さまざまな管理タスクをそれらのグループを使って一度に実行することができます。
@@ -56,17 +56,17 @@ Intune の使用を開始する前に、以下のものが必要となります�
 - [手順 7: 次のステップ](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)。 Intune の有料サブスクリプションに移行し、Intune の "FastTrack センターの特典" を活用する準備をします。
 
 
-### 次のステップ
+### <a name="next-steps"></a>次のステップ
 これで 30 日間評価版を使用する準備が整いました。
 
 >[!div class="step-by-step"]
 [**Intune にサインアップ** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
 
-### 関連項目
+### <a name="see-also"></a>関連項目
 [Intune のクイック スタート ガイド](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

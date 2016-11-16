@@ -2,9 +2,10 @@
 title: "アラートを管理する | Microsoft Intune"
 description: "Intune の [アラート] ワークスペースを使って、組織にあるデバイスの全体的なヘルスを評価します。"
 keywords: 
-author: Nbigman
+author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +15,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed8b7e42bd7c6f3839cc93cc3efcdd3241e88e2a
-ms.openlocfilehash: f254c1a486305e54305392b9688c563b8be93237
+ms.sourcegitcommit: ab9ad1fb42176f2fc2babaa6fa3c91cea40b4ca5
+ms.openlocfilehash: 3bbeafbe78148d038b7673ee8c1abfd5bc6c5f87
 
 
 ---
 
-# Microsoft Intune でアラートを管理する
+# <a name="manage-alerts-in-microsoft-intune"></a>Microsoft Intune でアラートを管理する
 Intune 管理コンソールで **[アラート]** ワークスペースを使用して、組織内のデバイスの全体的なヘルスを評価し、問題を特定します。
 
-## アクティブなアラートの表示
+## <a name="view-active-alerts"></a>アクティブなアラートの表示
 
 アクティブなアラートについての一般的な情報と概要データを表示します。
 
-#### アクティブなアラートを表示するには
+#### <a name="to-view-active-alerts"></a>アクティブなアラートを表示するには
 
 Intune 管理コンソールで、次のいずれかの手順を実行します。
 
@@ -55,10 +56,10 @@ Intune 管理コンソールで、次のいずれかの手順を実行します�
 
     -   **重要度**。 アラートの重要度を示します。
 
-## 掲示板のアラートの表示
+## <a name="view-notice-board-alerts"></a>掲示板のアラートの表示
 掲示板のアラートでは、サービスに関する重要なお知らせが提供されます。 今後のサービスのアップグレード、メンテナンス スケジュール、停止の状態などに関する情報が提供されます。
 
-#### 掲示板のアラートを表示および管理するには
+#### <a name="to-view-and-manage-notice-board-alerts"></a>掲示板のアラートを表示および管理するには
 
 1.  Intune 管理コンソールで、**[システムの概要]** を選びます。
 
@@ -66,10 +67,10 @@ Intune 管理コンソールで、次のいずれかの手順を実行します�
 
 3.  掲示板のアラートをコンマ区切り値 (CSV) または HTML ファイルにエクスポートする場合は、Intune 管理コンソールで **[アラート]** > **[すべてのアラート]** >    **[通知]** の順に選びます。 通知を選び、**[一覧のエクスポート]** アイコンを選んで、表示される指示に従って操作します。
 
-## Intune のシステム状態の確認
+## <a name="review-intune-system-status"></a>Intune のシステム状態の確認
 **[システムの概要]** ワークスペースの **[システムの状態]** には、Endpoint Protection、更新プログラム、エージェントのヘルス、ポリシー、ソフトウェア カテゴリの概要が表示されます。この情報は、問題を特定し、どの問題に緊急に対処する必要があるかを確認するのに便利です。 システムが中断したときに生成されるエラー メッセージにも、**[サービスの状態]** の概要へのリンクが含まれています。 **[サービスの状態]** の概要には、各場所で発生した問題の詳細と、状態の概要が最後に更新された日時が表示されます。
 
-#### サブスクリプションの状態を表示するには
+#### <a name="to-view-the-status-of-your-subscription"></a>サブスクリプションの状態を表示するには
 
 1.  Intune 管理コンソールで、**[システムの概要]** を選びます。
 
@@ -77,7 +78,7 @@ Intune 管理コンソールで、次のいずれかの手順を実行します�
 
   多くの項目には詳細情報へのリンクがあります。 たとえば、**[Endpoint Protection]** でインスタンスの数を選択すると、**[Endpoint Protection]** ワークスペースが開き、検出されたマルウェアの一覧が表示されます。 デバイスの数を選択すると、**[グループ]** ワークスペースが開き、マルウェアが検出されたデバイスの一覧を見ることができます。
 
-## アラートを閉じて再アクティブ化する
+## <a name="close-and-reactivate-alerts"></a>アラートを閉じて再アクティブ化する
 Intune のアラートは、次のいずれかのイベントが発生するまでアクティブな状態のままです。
 
 -   アラートの原因となった問題が解決された。
@@ -88,7 +89,7 @@ Intune のアラートは、次のいずれかのイベントが発生するま�
 
 終了というマークが付いたアラートは、90 日後に完全に削除される。
 
-#### アラートを手動で閉じるには
+#### <a name="to-manually-close-an-alert"></a>アラートを手動で閉じるには
 
 Intune 管理コンソールで、次のいずれかの手順を実行します。
 
@@ -98,7 +99,7 @@ Intune 管理コンソールで、次のいずれかの手順を実行します�
 
 - **掲示板のアラートを閉じるには**、**[システムの概要]** を選びます。 掲示板のアラートの横にある **[X]** を選びます。
 
-#### 閉じたアラートを表示および再アクティブ化するには
+#### <a name="to-view-and-reactivate-closed-alerts"></a>閉じたアラートを表示および再アクティブ化するには
 
 1.  Intune 管理コンソールで、**[アラート]** > **[すべてのアラート]** の順に選びます。
 
@@ -108,11 +109,11 @@ Intune 管理コンソールで、次のいずれかの手順を実行します�
 
 3.  選んだアラートを再アクティブ化するには、**[アラートの再アクティブ化]** を選びます。
 
-### 関連項目
+### <a name="see-also"></a>関連項目
 [Microsoft Intune のアラートによる通知](../deploy-use/get-notified-by-alerts.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

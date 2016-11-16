@@ -2,7 +2,8 @@
 title: "デバイス登録マネージャーを使用した登録 |Microsoft Intune"
 description: "デバイス登録マネージャー (DEM) アカウントでは、1 つのユーザー アカウントで企業所有の多数の共有モバイル デバイスを管理できます。"
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/12/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
-ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: 51e5f248c5e8759d5992918a99e1f114e2614142
 
 
 ---
 
 
-# Microsoft Intune のデバイス登録マネージャーを使用した企業所有デバイスの登録
+# <a name="enroll-corporateowned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Microsoft Intune のデバイス登録マネージャーを使用した企業所有デバイスの登録
 組織は Intune を使用して、単一のユーザー アカウントで多数のモバイル デバイスを管理することができます。 *デバイス登録マネージャー* (DEM) アカウントは、最大で 1,000 台のデバイスを登録できる特別な Intune アカウントです。 このアカウントで登録したデバイスは、個人用 ("BYOD") デバイスではなく共有デバイスとして使用することをお勧めします。 たとえば、ユーザーは "ネイティブ" メール アプリを使用できなくなります。
 
 一例として、デバイス登録マネージャーのユーザー アカウントをストア マネージャーやスーパーバイザーに割り当てた場合、これらのユーザーは以下の操作を実行できます。
@@ -50,10 +51,10 @@ ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
 > デバイス登録マネージャーで管理されているデバイスに会社のアプリを展開するには、ポータル サイト アプリを**必須のインストール**としてデバイス登録マネージャーのユーザー アカウントに展開します。
 > パフォーマンスを改善するために、DEM デバイスでポータル サイト アプリを表示すると、ローカル デバイスのみが表示されます。 その他の DEM デバイスのリモート管理は、Intune 管理コンソールからのみ実行できます。
 
-## デバイス登録マネージャー アカウントを作成する
+## <a name="create-device-enrollment-manager-accounts"></a>デバイス登録マネージャー アカウントを作成する
 デバイス登録マネージャー アカウントは、企業が所有する大量のデバイスを登録するためのアクセス許可を持つユーザー アカウントです。 Intune コンソール内のユーザーのみがデバイス登録マネージャーになることができます。
 
-#### Intune へのデバイス登録マネージャーの追加
+#### <a name="add-a-device-enrollment-manager-to-intune"></a>Intune へのデバイス登録マネージャーの追加
 
 1.  [Microsoft Intune アカウント ポータル](http://go.microsoft.com/fwlink/?LinkId=698854)にアクセスし、管理者アカウントでサインインします。
 
@@ -71,7 +72,7 @@ ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
 
 8.  これで、デバイス登録マネージャーが、BYOD シナリオの場合にエンド ユーザーがポータル サイトで実行する際と同じ手順で、モバイル デバイスを登録できるようになりました。
 
-## Intune からのデバイス登録マネージャーの削除
+## <a name="delete-a-device-enrollment-manager-from-intune"></a>Intune からのデバイス登録マネージャーの削除
 
 1.  管理者の資格情報を使用して、[Microsoft Intune 管理ポータル](http://manage.microsoft.com)にサインインします。
 
@@ -95,6 +96,6 @@ ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
