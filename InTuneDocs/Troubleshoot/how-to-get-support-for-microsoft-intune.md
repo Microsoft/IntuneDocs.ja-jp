@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 10/31/2016
+ms.date: 11/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d332e46b27bea274a38355dfb01806160b1041ee
-ms.openlocfilehash: 44069a34c1c9c2fb05f2b250188fe45a7d419911
+ms.sourcegitcommit: 2c50c38843521dfc2c9df48305e619803f32b1e9
+ms.openlocfilehash: 8b0591195b58f5fa331d213cfe03a38aa5ffafdd
 
 
 ---
@@ -36,11 +36,12 @@ Intune のサポートについては、Configuration Manager で使用する場
 2.  [管理者] タイルを選択します。
 3.  左側の [**サポート**] で、[**サポート**] を選んでチケットを開きます。 おそらく次のような画面が表示されます。
 
-    ![新しい Intune サポート チケットを開く](../media/suport-open-ticket.png)
+    ![新しい Intune サポート チケットを開く](../media/support-open-ticket.png)
 
     >[!NOTE]
     >
     >  ライセンス数が 100 以下の O365 アカウントを持っている、または持っていたお客様には、次の画面が表示されるので、「[サポート チケットを開く別の方法](#alternate-method-to-open-a-support-ticket)」を参照する必要があります。
+    >  
     > ![別の Intune サポート](../media/alternate-support-ui.png)
 
     -   請求、ライセンス、アカウントの問題については、**[請求と製品に関する情報]** を選択します。
@@ -114,6 +115,6 @@ Intune のセルフ ヘルプについては、「[Microsoft Intune の一般的
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 
