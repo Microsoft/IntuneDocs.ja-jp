@@ -2,8 +2,8 @@
 title: "IMEI 番号を指定する | Microsoft Intune"
 description: "Microsoft Intune では、管理者は、モバイル デバイス プラットフォームの IMEI 番号をインポートして会社所有のモバイル デバイスを識別できます"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
@@ -14,13 +14,13 @@ ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c6b01a5efc0f60622b95623fd91f192c267ff766
-ms.openlocfilehash: 9bd2b4bb676e23712c0a668161b81c4e352bce87
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: 040413b59c81c20cf579660a83acebc494c0a1b9
 
 
 ---
 
-# IMEI (国際移動体装置識別番号) を使って企業所有のデバイスを指定する
+# <a name="specify-corporateowned-devices-with-international-mobile-equipment-identity-imei-numbers"></a>IMEI (国際移動体装置識別番号) を使って企業所有のデバイスを指定する
 Microsoft Intune では、管理者が IMEI (International Mobile Equipment Identity: 国際移動体装置識別番号) をモバイル デバイスのプラットフォームにインポートできます。IMEI 番号は、企業所有のモバイル デバイスを識別するために役立ちます。 Intune にデバイスが登録されると、デバイスの **[グループ]** > **[概要]** > **[すべてのデバイス]** に IMEI 番号がインポートされています。 **[デバイス グループ]** の一覧で、インポートされた IMEI 番号を持つデバイスは、**[所有権]** 欄に **[会社]** と表示されます。
 
 1. [Microsoft Intune の管理コンソール](http://manage.microsoft.com)で、**[グループ]** &gt; **[すべてのデバイス]** &gt; **[会社の事前登録済みデバイス]** &gt; **[IMEI (すべてのプラットフォーム) を使用]** に移動し、**[デバイスの追加]** を選択します。 デバイスの追加方法は 2 つあります。
@@ -29,8 +29,8 @@ Microsoft Intune では、管理者が IMEI (International Mobile Equipment Iden
 
         |||
         |-|-|
-        |&lt;IMEI 1&gt;|&lt;デバイス 1 の詳細&gt;|
-        |&lt;IMEI 2&gt;|&lt;デバイス 2 の詳細&gt;|
+        |&lt;IMEI #1&gt;|&lt;デバイス 1 の詳細&gt;|
+        |&lt;IMEI #2&gt;|&lt;デバイス 2 の詳細&gt;|
         この .csv ファイルをテキスト エディターで開くと、次のように表示されます。
 
         ```
@@ -38,7 +38,7 @@ Microsoft Intune では、管理者が IMEI (International Mobile Equipment Iden
         AABBBBBBCCCCCCE,PO 1234
         ```
 
-    -   **デバイスの詳細を手動で追加** - 最大 5 台のデバイスの IMEI 番号とデバイスの詳細を入力します。
+    -   **デバイスの詳細を手動で追加** - 最大 15 台のデバイスの IMEI 番号とデバイスの詳細を入力します。
 
    *詳細*は、管理作業で使う情報で、デバイスに関連付けられた IMEI 番号を識別できます。 この情報はデバイスには送信されませんが、Intune のコンソールに表示されます。
 
@@ -50,6 +50,6 @@ IMEI 番号を持つデバイスを Intune に登録する (通常は、ユー�
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
