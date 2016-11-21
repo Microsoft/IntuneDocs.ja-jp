@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: 78137299b1c4e18fe68e1f9720a2111d1794e177
+ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
+ms.openlocfilehash: 9929294dd93e7bad47e6674ccafab0c036a1f89c
 
 
 ---
@@ -34,7 +34,11 @@ Intune ポータル サイト アプリをデバイスにインストールし�
 1. **Intune をセットアップする**<br>
 **Microsoft Intune** を[モバイル デバイス管理 (MDM) 機関に設定](prerequisites-for-enrollment.md#set-mobile-device-management-authority)して、MDM の設定を行うことにより、モバイル デバイス管理を準備します (この作業をまだ行っていない場合)。
 
-2. **CNAME を作成する** (省略可能)<br>会社のドメインの **CNAME** DNS リソース レコードを作成すると、簡単に登録できます。 CNAME DNS エントリの作成は省略可能ですが、CNAME レコードにより登録が簡単になります。 CNAME レコードの登録が見つからない場合、ユーザーは手動で MDM サーバー名 `https://manage.microsoft.com` を入力するように求められます。 CNAME リソース レコードには次の情報を含める必要があります。
+2. **CNAME を作成する** (省略可能)<br>会社のドメインの **CNAME** DNS リソース レコードを作成します。 たとえば、会社の Web サイトが contoso.com の場合、EnterpriseEnrollment.contoso.com を enterpriseenrollment-s.manage.microsoft.com にリダイレクトする CNAME を DNS に作成します。
+
+    EnterpriseEnrollment.contoso.com を manage.microsoft.com にリダイレクトする CNAME が DNS に既にある場合は、その CNAME を、EnterpriseEnrollment.contoso.com を enterpriseenrollment-s.manage.microsoft.com にリダイレクトする CNAME に置き換えることをお勧めします。 manage.microsoft.com endpoint エンドポイントは将来のリリースで登録に使用されなくなる予定であるため、このように変更することが推奨されます。
+
+    CNAME リソース レコードには次の情報を含める必要があります。
 
   |種類:|ホスト名|指定先|TTL|
   |--------|-------------|-------------|-------|
@@ -68,6 +72,6 @@ Intune ポータル サイト アプリをデバイスにインストールし�
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 
