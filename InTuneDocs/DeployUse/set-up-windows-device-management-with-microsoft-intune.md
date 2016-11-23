@@ -2,9 +2,8 @@
 title: "Microsoft Intune を使用して Windows デバイスの管理をセットアップする | Microsoft Intune"
 description: "Microsoft Intune を使用して Windows 10 デバイスを含む Windows PC のモバイル デバイス管理 (MDM) を有効にします。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
-manager: angrobe
+author: staciebarker
+manager: stabar
 ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
@@ -14,13 +13,13 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dfc5241376033471a232b059ac07fa4488f05514
-ms.openlocfilehash: c405408bd6a1e2b0743566e413436aefbaa7018b
+ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
+ms.openlocfilehash: 9929294dd93e7bad47e6674ccafab0c036a1f89c
 
 
 ---
 
-# Windows デバイスの管理をセットアップする
+# <a name="set-up-windows-device-management"></a>Windows デバイスの管理をセットアップする
 
 Intune 管理者として、以下の 2 つの方法で Windows PC の登録と管理を有効にできます。
 
@@ -29,22 +28,26 @@ Intune 管理者として、以下の 2 つの方法で Windows PC の登録と�
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## ポータル サイト アプリの登録を設定する
-Intune ポータル サイト アプリをデバイスにインストールして登録することによって、ユーザーはデバイスを登録できます。 DNS の CNAME リソース レコードを作成すると、ユーザーはサーバー名を入力することなく  Intune に接続して登録できるようになります。
+## <a name="set-up-company-portal-app-enrollment"></a>ポータル サイト アプリの登録を設定する
+Intune ポータル サイト アプリをデバイスにインストールして登録することによって、ユーザーはデバイスを登録できます。 DNS の CNAME リソース レコードを作成すると、ユーザーはサーバー名を入力することなく Intune に接続して登録できるようになります。
 
 1. **Intune をセットアップする**<br>
 **Microsoft Intune** を[モバイル デバイス管理 (MDM) 機関に設定](prerequisites-for-enrollment.md#set-mobile-device-management-authority)して、MDM の設定を行うことにより、モバイル デバイス管理を準備します (この作業をまだ行っていない場合)。
 
-2. **CNAME を作成する** (省略可能)<br>会社のドメインの **CNAME** DNS リソース レコードを作成すると、簡単に登録できます。 CNAME DNS エントリの作成は省略可能ですが、CNAME レコードにより登録が簡単になります。 CNAME レコードの登録が見つからない場合、ユーザーは手動で MDM サーバー名 `https://manage.microsoft.com` を入力するように求められます。 CNAME リソース レコードには次の情報を含める必要があります。
+2. **CNAME を作成する** (省略可能)<br>会社のドメインの **CNAME** DNS リソース レコードを作成します。 たとえば、会社の Web サイトが contoso.com の場合、EnterpriseEnrollment.contoso.com を enterpriseenrollment-s.manage.microsoft.com にリダイレクトする CNAME を DNS に作成します。
+
+    EnterpriseEnrollment.contoso.com を manage.microsoft.com にリダイレクトする CNAME が DNS に既にある場合は、その CNAME を、EnterpriseEnrollment.contoso.com を enterpriseenrollment-s.manage.microsoft.com にリダイレクトする CNAME に置き換えることをお勧めします。 manage.microsoft.com endpoint エンドポイントは将来のリリースで登録に使用されなくなる予定であるため、このように変更することが推奨されます。
+
+    CNAME リソース レコードには次の情報を含める必要があります。
 
   |種類:|ホスト名|指定先|TTL|
   |--------|-------------|-------------|-------|
   |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com |1 時間|
   |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 時間|
 
-  `EnterpriseEnrollment-s.manage.microsoft.com` – Intune サービスへのリダイレクトと電子メールのドメイン名によるドメイン認識をサポートします。
+  `EnterpriseEnrollment-s.manage.microsoft.com` – Intune サービスへのリダイレクトと電子メールのドメイン名によるドメイン認識をサポートします
 
-  `EnterpriseRegistration.windows.net` – 職場または学校のアカウントを使用して Azure Active Directory に登録される Windows 8.1 および Windows 10 Mobile デバイスをサポートします。
+  `EnterpriseRegistration.windows.net` – 職場または学校のアカウントを使用して Azure Active Directory に登録される Windows 8.1 および Windows 10 Mobile デバイスをサポートします
 
   会社でユーザーの資格情報に複数のドメインを使用する場合は、各ドメインに CNAME レコードを作成します。
 
@@ -54,17 +57,21 @@ Intune ポータル サイト アプリをデバイスにインストールし�
 
   ![Windows デバイスの管理ダイアログ ボックス](../media/enroll-intune-winenr.png)
 
-4.  **オプションの手順**<br>**サイドローディング キーの追加**の手順は、Windows 10 には必要ありません。 **コード署名証明書のアップロード**の手順は、Windows ストアから使用できない基幹業務 (LOB) アプリをデバイスに配信する場合にのみ必要です。 [詳細については、ここをクリック](set-up-windows-phone-8.0-management-with-microsoft-intune.md)してください。
+4.  **オプションの手順**<br>**サイドローディング キーの追加**の手順は、Windows 10 には必要ありません。 **コード署名証明書のアップロード**の手順は、Windows ストアから使用できない基幹業務 (LOB) アプリをデバイスに配信する場合にのみ必要です。
 
-6.  **ユーザーに通知する**<br>ユーザーに自分のデバイスを登録する方法とデバイスが管理されるとどうなるかを知らせる必要があります。
-      - [Microsoft Intune の使用に関するエンドユーザーへの通知内容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+6.  **ユーザーに、デバイスを登録する方法とデバイスが管理されるとどうなるかを伝える**
+
+    エンドユーザー用の登録手順については、「[Intune に Windows デバイスを登録する](../enduser/enroll-your-device-in-intune-windows.md)」を参照してください。
+
+    エンドユーザー タスクの詳細については、次の記事を参照してください。
+      - [Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](what-to-tell-your-end-users-about-using-microsoft-intune.md)
       - [Windows デバイス向けエンド ユーザー ガイダンス](../enduser/using-your-windows-device-with-intune.md)
 
-### 関連項目
-[Intune でデバイスを登録するための前提条件](prerequisites-for-enrollment.md)
+### <a name="see-also"></a>関連項目
+[Microsoft Intune でデバイスを登録するための前提条件](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO3-->
 
 

@@ -2,8 +2,8 @@
 title: "iOS および Mac の管理をセットアップする | Microsoft Intune"
 description: "Microsoft Intune で、iPad や iPhone だけでなく Mac OS X デバイスを含む iOS デバイスのモバイル デバイス管理 (MDM) を有効にします。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
@@ -14,15 +14,13 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b3f6323912707d56d23380217a07e6474593d83f
-ms.openlocfilehash: f93f7bfe99e878691dccd24c124a781c8607e7c6
+ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
+ms.openlocfilehash: 930419b20b675aa48c2b8bf1c49a1b576bbab414
 
 
 ---
 
-# iOS および Mac のデバイス管理をセットアップする
-iOS または Mac デバイスのセットアップの詳細については、「[Using your iOS or Mac OS X device with Intune](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)」(iOS または Mac OS X デバイスで Intune を使用する) を参照してください。
-
+# <a name="set-up-ios-and-mac-device-management"></a>iOS および Mac のデバイス管理をセットアップする
 Intune では、iPad、iPhone、および Mac OS X デバイスのモバイル デバイス管理 (MDM) が有効にされ、会社の電子メールおよびアプリへのアクセス権がユーザーに付与されます。 Intune で iOS および Mac デバイスを管理するには、Apple Push Notification サービス (APNs) 証明書が必要です。 証明書を Intune に追加すると、ユーザーがポータル サイト アプリをインストールして自分のデバイスを登録できます。または管理者が[企業所有の iOS デバイス管理](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)をセットアップできます。
 
 1.  **Intune をセットアップする**<br>
@@ -41,18 +39,21 @@ Intune では、iPad、iPhone、および Mac OS X デバイスのモバイル �
 4.  **APNs 証明書を Intune に追加する**<br>
     [Microsoft Intune 管理コンソール](http://manage.microsoft.com)で、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[iOS および Mac OS X]** &gt; **[APNs 証明書のアップロード]** の順に移動して、**[APNs 証明書のアップロード]** を選択します。 証明書 (.pem) ファイルに移動し、**[開く]** を選択して、**Apple ID** を入力します。 この APNs 証明書を使用して、Intune はモバイル デバイスを登録し、登録したモバイル デバイスにポリシーを適用して iOS デバイスを管理できます。
 
-5.  **ポータル サイトで会社のリソースにアクセスする方法をユーザーに通知する**<br>
-    ユーザーは自分のデバイスを登録する方法とデバイスが管理されるとどうなるかを知る必要があります。
-    - [Microsoft Intune の使用に関するエンドユーザーへの通知内容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+5.  **デバイスを登録して会社のリソースへのアクセスを取得する方法をユーザーに知らせる**
+
+    エンドユーザー用の登録手順については、「[Intune に iOS デバイスを登録する](../enduser/enroll-your-device-in-intune-ios.md)」および「[Intune に Mac OS X デバイスを登録する](../enduser/enroll-your-device-in-intune-mac-os-x.md)」を参照してください。 登録プロセスでは、登録により可能になる操作、および IT 管理者が見ることのできるデバイス上のデータと見られないデータについての説明が行われます。
+
+    その他のエンドユーザー タスクの詳細については、次の記事を参照してください。
+    - [Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](what-to-tell-your-end-users-about-using-microsoft-intune.md)
     - [IOS および Mac デバイス向けのエンド ユーザー ガイダンス](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)
 
 会社または組織でユーザーのために iOS デバイスを購入した場合は、それらのデバイスも[会社所有の iOS デバイス](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)として管理対象に登録できます。
 
-### 関連項目
+### <a name="see-also"></a>関連項目
 [Microsoft Intune で登録するための前提条件](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,8 +2,8 @@
 title: "使用条件ポリシー設定 | Microsoft Intune"
 description: "Intune の使用条件をユーザー グループに展開すると、登録、会社のリソースへのアクセス、ポータル サイト アプリの使用によるデバイスとユーザーへの影響を説明できます。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/11/2016
 ms.topic: article
@@ -14,18 +14,18 @@ ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 70fcc08a5619892387aaf8223e9a74661d9c90f6
-ms.openlocfilehash: 1ab7f0b1979e8bc4dad8ce9244a5270935433f9c
+ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
+ms.openlocfilehash: bc9a7b837ab4dcd402aeec572b819d56070eba82
 
 
 ---
 
-# Microsoft Intune の使用条件ポリシー設定
+# <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Microsoft Intune の使用条件ポリシー設定
 Intune の使用条件をユーザー グループに展開すると、登録、会社のリソースへのアクセス、ポータル サイト アプリによるデバイスとユーザーへの影響を説明できます。 ユーザーは、会社のポータルを使用して登録したり作業にアクセスしたりする前に、使用条件に同意する必要があります。
 
 さまざまな使用条件を含む複数のポリシーを作成して展開できます。 また、同じ使用条件のさまざまな言語のバージョンを作成し、適切なグループに展開することもできます。
 
-## 使用条件ポリシーの作成
+## <a name="create-a-terms-and-conditions-policy"></a>使用条件ポリシーの作成
 
 1.  [Microsoft Intune の管理コンソール](http://manage.microsoft.com)で、**[ポリシー]** &gt; **[使用条件]** の順にクリックします。
 
@@ -47,7 +47,7 @@ Intune の使用条件をユーザー グループに展開すると、登録、
 
 4.  操作が完了したら、**[保存]** をクリックします。 新しいポリシーが**[ポリシー]** ワークスペースの **[使用条件]** ノードに表示されます。
 
-## 使用条件ポリシーの展開
+## <a name="deploy-a-terms-and-conditions-policy"></a>使用条件ポリシーの展開
 
 1.  [Microsoft Intune の管理コンソール](http://manage.microsoft.com)で、**[ポリシー]** &gt; **[使用条件]** の順にクリックします。
 
@@ -57,16 +57,16 @@ Intune の使用条件をユーザー グループに展開すると、登録、
 
     対象ユーザーがポータル サイトにアクセスすると、Intune では、展開した使用条件が表示されます。 ユーザーは、これらの使用条件に同意しないと、会社のリソースへのアクセスできません。
 
-## 使用条件ポリシーの監視
+## <a name="monitor-a-terms-and-conditions-policy"></a>使用条件ポリシーの監視
 
 1.  [Microsoft Intune の管理コンソール](http://manage.microsoft.com)で、**[ポリシー]** &gt; **[使用条件]** の順にクリックします。
 
 2.  **[新しいレポートの作成]** ウィンドウで、**[レポートの表示]** をクリックします。 展開した使用条件に同意したユーザーの詳細を示すレポートが開きます。
 
-### 使用条件の更新およびバージョン管理
+### <a name="updates-and-version-control-for-terms-and-conditions"></a>使用条件の更新およびバージョン管理
 既存の使用条件ポリシーを編集するときは、ポリシーを展開するときの動作を選択できます。 既存の使用条件ポリシーを更新するには、次の手順に従います。
 
-## 使用条件の複数のバージョンを使用する
+## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>使用条件の複数のバージョンを使用する
 
 1.  [Microsoft Intune の管理コンソール](http://manage.microsoft.com)で、**[ポリシー]** &gt; **[使用条件]** の順にクリックします。
 
@@ -76,11 +76,11 @@ Intune の使用条件をユーザー グループに展開すると、登録、
 
     使用条件ポリシーに対して重要な変更を行うときは常にバージョン番号を大きくし、同意を求めることをお勧めします。 誤植の修正や書式設定の変更などを行った場合は、現在のバージョン番号をそのままにします。
 
-### 関連項目
+### <a name="see-also"></a>関連項目
 [Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
