@@ -2,9 +2,10 @@
 title: "VPN プロファイルのカスタムの構成 |Microsoft Intune"
 description: "Intune でカスタム構成を使用して VPN プロファイルを作成します。"
 keywords: 
-author: Nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 11/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +14,26 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 374a56612b5c2a4dfd65d920307d5a4deb709b9b
-ms.openlocfilehash: e96daf7f10db82adf0f4f92412128fabbe652d51
+ms.sourcegitcommit: fb3b6cccaa3e62be3a7271ae6a67e76f8cf8d858
+ms.openlocfilehash: a1c7648a4ee4ab91e00f5305a8124a07570824fc
 
 
 ---
 
-# VPN プロファイルのカスタム構成
+# <a name="custom-configurations-for-vpn-profiles"></a>VPN プロファイルのカスタム構成
 
-## カスタム構成を作成する
-Intune でカスタム構成を使用して VPN プロファイルを作成できます。 カスタム構成を使用するには:
+## <a name="create-a-custom-configuration"></a>カスタム構成を作成する
+Intune でカスタム構成を使用して、以下のデバイスの VPN プロファイルを作成できます。
 
-   1. Intune 管理コンソールで、**[ポリシー]** > **[ポリシーの追加]** > *<Expand platform>* > **[カスタム構成]** > **[ポリシーの作成]** の順に選択します。
+* Android 4 以降が実行されているデバイス
+* Android for Work デバイス
+* Windows 8.1 以降を実行する登録済みのデバイス
+* Windows Phone 8.1 以降が実行されているデバイス
+* Windows 10 デスクトップまたは Windows 10 Mobile が実行されているデバイス
+
+カスタム構成を使用するには:
+
+   1. Intune 管理コンソールで、**[ポリシー]** > **[ポリシーの追加]** > *<プラットフォームを展開>* > **[カスタム構成]** > **[ポリシーの作成]** の順に進みます。
    2. ポリシーの名前を指定します。
    3. 各 URI の設定で、**[追加]** を選択し、必要な情報を指定します。 次に例を示します。
 
@@ -32,7 +41,7 @@ Intune でカスタム構成を使用して VPN プロファイルを作成で�
 
    4.  すべての URI 設定を入力したら、**[ポリシーの保存]** を選択した後、ポリシーを展開します。
 
-## 構成ポリシーを展開する
+## <a name="deploy-a-configuration-policy"></a>構成ポリシーを展開する
 
 1.  **[ポリシー]** ワークスペースで、展開するポリシーを選び、**[展開の管理]** をクリックします。
 
@@ -44,7 +53,7 @@ Intune でカスタム構成を使用して VPN プロファイルを作成で�
 
 展開済みポリシーを選ぶと、ポリシー一覧の下部に展開についての詳細が表示されます。
 
-##カスタム VPN プロファイル構成の URI 設定の例
+##<a name="example-of-uri-settings-for-a-custom-vpn-profile-configuration"></a>カスタム VPN プロファイル構成の URI 設定の例
 Contoso という架空の会社で VPN のカスタム構成を作成するための URI 値のエントリの例を次に示します。 各エントリのデータ型などの詳細については、「[VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx)」を参照してください。
 
 Contoso のネイティブ VPN (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
@@ -85,10 +94,10 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 これらの設定の使用方法についてのご質問または設定がどのように機能するかの詳細については、次の構成サービス プロバイダー (CSP) のドキュメントを参照してください。https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx
 
-## PulseSecure での Android のアプリごとの VPN 用の URI 設定
-### パッケージ リスト用のカスタム URI
+## <a name="uri-settings-for-android-perapp-vpn-on-pulsesecure"></a>PulseSecure での Android のアプリごとの VPN 用の URI 設定
+### <a name="custom-uri-for-package-list"></a>パッケージ リスト用のカスタム URI
 -  データ型 = 文字列
--  OMA-URI = ./Vendor/MSFT/VPN/Profile/<Name>/PackageList
+-  OMA-URI = ./Vendor/MSFT/VPN/Profile/Name/PackageList
 -  値 = 区切り記号で区切られたパッケージ リスト
    - 区切り記号: セミコロン (;)、コロン (:)、コンマ (,)、パイプ (|)
 
@@ -96,7 +105,7 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 - com.android.chrome
 - com.android.chrome;com.android.browser
 
-### モード用のカスタム URI (省略可能)
+### <a name="custom-uri-for-mode-optional"></a>モード用のカスタム URI (省略可能)
 - データ型 = 文字列
 - OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode
 
@@ -107,11 +116,11 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 > - PackageList が指定されている場合の既定値は *WHITELIST* です
 
 
-### 関連項目
+### <a name="see-also"></a>関連項目
 (Microsoft Intune での VPN 接続)[vpn-connections-in-microsoft-intune.md]
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

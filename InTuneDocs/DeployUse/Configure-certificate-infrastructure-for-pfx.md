@@ -2,9 +2,10 @@
 title: "PFX の証明書インフラストラクチャを構成する | Microsoft Intune"
 description: ".PFX 証明書プロファイルを作成および展開します。"
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 11/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c4ce620e073608f6bcbfc9d698255dd75deae4be
-ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
+ms.sourcegitcommit: 7d1f37a2ba2e634fb75058d33eaaccf3aa5845b0
+ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
 
 
 
 ---
-# 証明書インフラストラクチャを構成する
+# <a name="configure-certificate-infrastructure"></a>証明書インフラストラクチャを構成する
 このトピックでは、.PFX 証明書プロファイルを作成して展開するために必要なものについて説明します。
 
 組織で証明書ベースの認証を行うには、エンタープライズ証明機関が必要です。
@@ -30,7 +31,7 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
 
 -  証明機関と通信できるコンピューターで実行する Intune 証明書コネクタ。
 
-## オンプレミス インフラストラクチャの説明
+## <a name="onpremises-infrastructure-description"></a>オンプレミス インフラストラクチャの説明
 
 
 -    **Active Directory ドメイン**: このセクションで示されているすべてのサーバー (Web アプリケーション プロキシ サーバーを除く) は、Active Directory ドメインに参加する必要があります。
@@ -50,7 +51,7 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
     WAP の証明書については、「[内部アプリケーションの公開のために Web アプリケーション プロキシをインストールおよび構成する](https://technet.microsoft.com/library/dn383650.aspx)」の**証明書の計画**に関するセクションを参照してください。 WAP サーバーの一般的な情報については、「[Web アプリケーション プロキシの使用](http://technet.microsoft.com/library/dn584113.aspx)」を参照してください。|
 
 
-### 証明書とテンプレート
+### <a name="certificates-and-templates"></a>証明書とテンプレート
 
 |オブジェクト|説明|
 |----------|-----------|
@@ -58,16 +59,16 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
 |**信頼されたルート CA 証明書**|これを発行元 CA または発行元 CA を信頼するデバイスから **.cer** ファイルとしてエクスポートし、信頼された CA 証明書プロファイルを使用してデバイスに展開します。<br /><br />オペレーティング システムのプラットフォームごとに 1 つの信頼されたルート CA 証明書を使用し、作成する各信頼されたルート証明書プロファイルに関連付けます。<br /><br />必要に応じて、信頼されたルート CA 証明書を追加して使用できます。 ルート CA 証明書を追加する局面としては、Wi-Fi アクセス ポイント用のサーバー認証証明書に署名する CA の信頼性を担保する必要がある場合などが考えられます。|
 
 
-## インフラストラクチャを構成する
+## <a name="configure-your-infrastructure"></a>インフラストラクチャを構成する
 証明書プロファイルを構成するには、次のタスクを完了する必要があります。 以下のタスクには、Windows Server 2012 R2 と Active Directory 証明書サービス (ADCS) についての知識が必要となります。
 
 - **タスク 1** - 証明機関で証明書テンプレートを構成する。
 - **タスク 2** - Intune 証明書コネクタを有効にし、インストールし、構成する。
 
-### タスク 1 - 証明機関で証明書テンプレートを構成する
+### <a name="task-1-configure-certificate-templates-on-the-certification-authority"></a>タスク 1 - 証明機関で証明書テンプレートを構成する
 このタスクでは、証明書テンプレートを公開します。
 
-##### 証明機関を構成するには
+##### <a name="to-configure-the-certification-authority"></a>証明機関を構成するには
 
 1.  発行元 CA で、証明書テンプレート スナップインを使用して、新しいカスタム テンプレートを作成するか、または .PFX で使用するために (ユーザー テンプレートのように) 既存のテンプレートをコピーして、編集します。
 
@@ -75,7 +76,7 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
 
     -   テンプレートのわかりやすい **テンプレート表示名** を指定します。
 
-    -   [ **サブジェクト名** ] タブで [ **要求に含まれる**] を選択します (セキュリティが NDES の Intune ポリシー モジュールによって適用されます)。
+    -   [ **サブジェクト名** ] タブで [ **要求に含まれる**] を選択します 
 
     -   [ **拡張** ] タブで、[ **アプリケーション ポリシーの説明** ] に [ **クライアント認証**] が含まれることを確認します。
 
@@ -103,12 +104,12 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
 
 4.  CA コンピューターで、Intune 証明書コネクタをホストするコンピューターが、.PFX プロファイルの作成で使用するテンプレートにアクセスできるように、登録アクセス許可を持つことを確認します。 CA コンピューター プロパティの **[セキュリティ]** タブでそのアクセス許可を設定します。
 
-### タスク 2 - Intune 証明書コネクタを有効にし、インストールし、構成する
+### <a name="task-2-enable-install-and-configure-the-intune-certificate-connector"></a>タスク 2 - Intune 証明書コネクタを有効にし、インストールし、構成する
 このタスクでは次のことを行います。
 
 証明書コネクタをダウンロードし、インストールして、構成します。
 
-##### 証明書コネクタのサポートを有効にするには
+##### <a name="to-enable-support-for-the-certificate-connector"></a>証明書コネクタのサポートを有効にするには
 
 1.  [Intune の管理コンソール](https://manage.microsoft.com)を開き、**[管理者]** &gt; **[証明書コネクタ]** の順に選択します。
 
@@ -116,7 +117,7 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
 
 3.  **[証明書コネクタを有効にする]**を選択し、 **[OK]**を選択します。
 
-##### 証明書コネクタをダウンロードし、インストールして、構成するには
+##### <a name="to-download-install-and-configure-the-certificate-connector"></a>証明書コネクタをダウンロードし、インストールして、構成するには
 
 1.  [Intune の管理コンソール](https://manage.microsoft.com)を開き、**[管理者]** &gt; **[モバイル デバイス管理]** &gt; **[証明書コネクタ]** &gt; **[証明書コネクタのダウンロード]** を選択します。
 
@@ -141,8 +142,6 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
 
     a. **[サインイン]** を選択し、Intune サービス管理者の資格情報、またはグローバル管理アクセス許可を持つテナント管理者の資格情報を入力します。
 
-  <!--  If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, click **Use proxy server** and then provide the proxy server name, port, and account credentials to connect.-->
-
     b. **[詳細設定]** タブを選択し、発行元 CA で**証明書の発行と管理**アクセス許可を持つアカウントの資格情報を指定します。
 
     c. **[適用]** を選択します。
@@ -151,15 +150,12 @@ ms.openlocfilehash: 3d50aa40b6c3e8aa34c5699a0c53befce9549055
 
 6.  コマンド プロンプトを開き、**services.msc** を入力します。 **[Enter]** キーを押し、**[Intune コネクタ サービス]** を右クリックして、**[再起動]** を選択します。
 
-サービスが実行していることを確認するには、ブラウザーを開き、次の URL を入力します。 **403** エラーが返る必要があります。
 
-**http:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
-
-### 次のステップ
+### <a name="next-steps"></a>次のステップ
 これで、「[Configure certificate profiles (証明書プロファイルを構成する)](Configure-Intune-certificate-profiles.md)」の説明に従って証明書プロファイルを構成する準備が整いました。
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 

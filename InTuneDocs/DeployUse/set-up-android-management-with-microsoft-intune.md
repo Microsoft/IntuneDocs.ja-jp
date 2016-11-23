@@ -1,9 +1,9 @@
 ---
 title: "Android の管理をセットアップする | Microsoft Intune"
-description: "Microsoft Intune を使用して Android および KNOX デバイスのモバイル デバイス管理 (MDM) を有効にします。"
+description: "Microsoft Intune を使用して Android および KNOX Standard デバイスのモバイル デバイス管理 (MDM) を有効にします。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
@@ -14,14 +14,14 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
-ms.openlocfilehash: 68ae3b90977e73c49b21d3196100f73d11549b63
+ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
+ms.openlocfilehash: 504b8334485217ab00d42080e1fab8728e7b62c4
 
 
 ---
 
-# Android デバイスの管理をセットアップする
-Intune 管理者として、ポータル サイトから Android デバイス管理を有効にできます。 ユーザーが、Google Play から入手できるポータル サイト アプリを使用してデバイスを登録できます。
+# <a name="set-up-android-device-management"></a>Android デバイスの管理をセットアップする
+Intune 管理者は、ポータル サイトから Samsung Knox Standard デバイスなどの Android デバイスの管理を有効にできます。 ユーザーが、Google Play から入手できるポータル サイト アプリを使用してデバイスを登録できます。
 
 1.  **Intune をセットアップする**<br>
     **Microsoft Intune** を[モバイル デバイス管理機関に設定](prerequisites-for-enrollment.md#set-mobile-device-management-authority)して、MDM の設定を行うことにより、モバイル デバイス管理を準備します (この作業をまだ行っていない場合)。
@@ -29,18 +29,19 @@ Intune 管理者として、ポータル サイトから Android デバイス管
 2.  **Android の登録が有効になる**<br>
     Android モバイル デバイスの登録を有効にするために、Intune コンソールで追加の構成を行う必要はありません。
 
-3.  **ポータル サイトで会社のリソースにアクセスする方法をユーザーに通知する**<br>
-    ユーザーは自分のデバイスを登録する方法とデバイスが管理されるとどうなるかを知る必要があります。 [Microsoft Intune の使用に関するエンドユーザーへの通知内容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+3.  **デバイスを登録して会社のリソースへのアクセスを取得する方法をユーザーに知らせる**
 
-4.  ユーザーは自分のデバイスを登録する方法とデバイスが管理されるとどうなるかを知る必要があります。
-  - [Microsoft Intune の使用に関するエンドユーザーへの通知内容](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-  - [Windows デバイス向けエンド ユーザー ガイダンス](../enduser/using-your-android-device-with-intune.md)
+    エンドユーザー用の登録手順については、「[Intune に Android デバイスを登録する](../enduser/enroll-your-device-in-intune-android.md)」を参照してください。 登録プロセスでは、登録により可能になる操作、および IT 管理者が見ることのできるデバイス上のデータと見られないデータについての説明が行われます。
 
-### 関連項目
+    その他のエンドユーザー タスクの詳細については、次の記事を参照してください。
+  - [Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+  - [Android デバイス向けエンド ユーザー ガイダンス](../enduser/using-your-android-device-with-intune.md)
+
+### <a name="see-also"></a>関連項目
 [Microsoft Intune でデバイスを登録するための前提条件](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

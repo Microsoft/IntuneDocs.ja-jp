@@ -1,10 +1,11 @@
 ---
-title: "リモート ロックの使用とパスコードのリセット | Microsoft Intune"
+title: "リモート ロックとパスコードのリセット | Microsoft Intune"
 description: "Intune には、リモート ロック機能とパスコードのリセット機能の両方が備わっています。"
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,15 +13,15 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
-ms.openlocfilehash: 0b52bd8360f11e226674aefe80a578c451c2679d
+ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
+ms.openlocfilehash: f69855f27ddc8ab6903c317383ef715f98590caf
 
 ---
-# リモート ロックとパスコードのリセットによってデバイスを保護する
+# <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>リモート ロックとパスコードのリセットによってデバイスを保護する
 Microsoft Intune には、リモート ロック機能とパスコードのリセット機能が備わっています。
 
-## デバイスのリモート ロック
-ユーザーがデバイスを紛失した場合は、リモートでデバイスをロックできます。 以下の表は、各モバイル プラットフォームのリモート ロックの動作です。 リモート ロックはサポートされていません。
+## <a name="lock-a-device-remotely"></a>デバイスのリモート ロック
+ユーザーがデバイスを紛失した場合は、リモートでデバイスをロックできます。 次の表に、各モバイル プラットフォームのリモート ロックの動作を示します。
 
 |プラットフォーム|リモート ロック|
 |------------|---------------|
@@ -33,24 +34,24 @@ Microsoft Intune には、リモート ロック機能とパスコードのリ�
 
 リモート ロックは、Intune ソフトウェア クライアントに登録されている Windows PC ではサポートされません。
 
-### Intune コンソールを使用してモバイル デバイスをリモートでロックするには
+### <a name="lock-a-mobile-device-remotely-through-the-intune-console"></a>Intune コンソールを使用してモバイル デバイスをリモートでロックする
 
 1.  [Intune 管理コンソール](https://manage.microsoft.com/)で、**[グループ]** &gt; **[すべてのデバイス]** &gt; **[すべてのモバイル デバイス]** を選択します。
 
 2.  Intune に登録されているデバイスの場合は **[ダイレクト管理されているすべてのデバイス]**、それ以外の場合は **[Exchange ActiveSync で管理されているすべてのデバイス]** を選択します。
 
     > [!TIP]
-    > 各ユーザーのデバイスを選択することもできます。 **[すべてのユーザー]** を選択します。 ユーザーの [プロパティ] ページで、**[デバイス]** を選択して、ワイプするモバイル デバイスの名前を選択します。
+    > 各ユーザーのデバイスを選択することもできます。 **[すべてのユーザー]** を選択します。 ユーザーの [プロパティ] ページで、**[デバイス]** を選択して、ロックするモバイル デバイスの名前を選択します。
 
 3.  一覧で、ロックするデバイスを選択します (複数も可)。 タスク バーで、**[リモート タスク]** をクリックして、**[リモート ロック]** を選択します。
 
-## デバイスのパスコードをリセットします。
+## <a name="reset-the-passcode-on-a-device"></a>デバイスのパスコードをリセットします。
 ユーザーがパスコードを忘れた場合、デバイスからパスコードを削除したり、デバイスに新しい一時的なパスコードを強制したりすることができます。 以下の表は、各モバイル プラットフォームでパスコードをリセットしたときの動作です。
 
 |プラットフォーム|パスコードのリセット|
 |------------|------------------|
 |iOS|デバイスからパスコードをクリアする場合にサポートされます。 新しい一時的なパスコードは作成されません。|
-|Android|サポートされます。一時的なパスコードが作成されます。|
+|Android|Android 7.0 より前のバージョンでサポートされます。 一時的なパスコードを作成します。|
 |[Windows] 10 Mobile|サポート|
 |Windows Phone 8 および Windows Phone 8.1|サポート|
 |Windows RT 8.1 および Windows RT|サポートされません|
@@ -58,7 +59,7 @@ Microsoft Intune には、リモート ロック機能とパスコードのリ�
 
 パスコード リセットは、Intune ソフトウェア クライアントに登録されている Windows PC ではサポートされません。
 
-### パスコードをリセットするには
+### <a name="reset-a-passcode"></a>パスコードのリセット
 
 1.  [Intune 管理コンソール](https://manage.microsoft.com/)で、**[グループ]** &gt; **[すべてのデバイス]** &gt; **[すべてのモバイル デバイス]** を選択します。
 
@@ -70,12 +71,11 @@ Microsoft Intune には、リモート ロック機能とパスコードのリ�
 3.  一覧で、ロックするデバイスを選択します (複数も可)。 タスク バーで、**[リモート タスク]** をクリックして、**[パスコードのリセット]** を選択します。
 
 
-### 関連項目
-[デバイスをインベントリから削除する](retire-devices-from-microsoft-intune-management.md)
-[Windows のデバイス データ管理の選択的ワイプ](http://technet.microsoft.com/library/dn486874.aspx)
+### <a name="see-also"></a>関連項目
+[デバイスをインベントリから削除する](retire-devices-from-microsoft-intune-management.md)および[Windows のデバイス データ管理の選択的ワイプ](http://technet.microsoft.com/library/dn486874.aspx)
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

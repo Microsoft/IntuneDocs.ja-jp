@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,25 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e24de6814d9e01c64768f425e961a7822f4b27a1
-ms.openlocfilehash: 5f02618da6fb3c538ad131fe8abaf35a6be6e177
+ms.sourcegitcommit: 8cde3ffb3be8656d5f256e16eb71ed4aaa7ceb5b
+ms.openlocfilehash: 2fd4d3c7cb92e27a01090fdec85e02db4010f859
 
 
 ---
 
 
-# Microsoft Intune での Android デバイス向けのコンプライアンス ポリシー設定
+# <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune での Android デバイス向けのコンプライアンス ポリシー設定
 
-このトピックで説明するポリシー設定は、Android 4.0 以降または Samsung KNOX 4.0 を実行しているデバイスに適用されます。
+このトピックで説明するポリシー設定は、Android 4.0 以降または Samsung KNOX Standard 4.0 を実行しているデバイスに適用されます。
 
 その他のプラットフォームに関する情報を探している場合は、次のいずれかを選択します。
-> [!div class="op_single_selector"]
+> [!div class = "op_single_selector"]
+- [Android for Work 向けのコンプライアンス ポリシー設定](afw-compliance-policy-settings-in-microsoft-intune.md)
 - [iOS デバイス向けのコンプライアンス ポリシー設定](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Windows デバイス向けのコンプライアンス ポリシー設定](windows-compliance-policy-settings-in-microsoft-intune.md)
 
-## システム セキュリティ設定
-### パスワード
+## <a name="system-security-settings"></a>システム セキュリティ設定
+### <a name="password"></a>パスワード
 - **モバイル デバイスのロック解除にパスワードを必要とする**: デバイスにアクセスするユーザーにパスワードを入力するよう求める場合は、**[はい]** に設定します。
 
 -  **パスワードの最小文字数**: ユーザーのパスワードに含まれている必要がある数字または文字の最小数を指定します。
@@ -55,10 +56,10 @@ ms.openlocfilehash: 5f02618da6fb3c538ad131fe8abaf35a6be6e177
 
 - **デバイスがアイドル状態から戻るときにパスワードを必須とする**: この設定は、**[デバイスの画面がロックされるまでの非アクティブな時間 (分)]** 設定と組み合わせて使用する必要があります。 ユーザーは、**[デバイスの画面がロックされるまでの非アクティブな時間 (分)]** 設定で指定された時間非アクティブの状態が続いたデバイスにアクセスしようとすると、パスワードを入力するように求められます。
 
-### 暗号化
+### <a name="encryption"></a>暗号化
 - **モバイル デバイスで暗号化を必要とする**: リソースに接続するためにデバイスの暗号化を必要とする場合は、**[はい]** に設定します。 **[モバイル デバイスのロック解除にパスワードを必要とする]** 設定を選択すると、デバイスは暗号化されます。
 
-## デバイスの正常性とセキュリティ設定
+## <a name="device-health-and-security-settings"></a>デバイスの正常性とセキュリティ設定
 
 - **デバイスの脱獄または root 化を認めない**: この設定を有効にした場合、脱獄デバイスは非準拠として評価されます。
 - **デバイスが提供元不明のアプリのインストールを禁止する必要がある (Android 4.0 以降)**: **[セキュリティ]** > **[提供元不明のアプリ]** が有効になっているデバイスをブロックするには、この設定を有効にして **[はい]** に設定します。  
@@ -77,7 +78,7 @@ ms.openlocfilehash: 5f02618da6fb3c538ad131fe8abaf35a6be6e177
 
   詳細については、「[コンプライアンス ポリシーでデバイスの脅威防御ルールを有効にする](enable-device-threat-protection-rule-in-compliance-policy.md)」を参照してください。
 
-## デバイスのプロパティの設定
+## <a name="device-property-settings"></a>デバイスのプロパティの設定
 - **必要な最小 OS バージョン**: デバイスが最小 OS バージョンの要件を満たしていない場合、非準拠として報告されます。
   アップグレード方法に関する情報のリンクが表示されます。 ユーザーは、デバイスのアップグレードを行うことを選択できます。アップグレード後は、会社のリソースにアクセスできます。
 
@@ -85,6 +86,6 @@ ms.openlocfilehash: 5f02618da6fb3c538ad131fe8abaf35a6be6e177
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

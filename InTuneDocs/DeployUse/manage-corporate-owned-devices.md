@@ -1,8 +1,9 @@
 ---
 title: "企業所有のデバイスの管理 | Microsoft Intune"
-description: "企業所有のデバイス (COD) を、デバイスや購入方法、組織のニーズに応じて多様な方法で管理対象にする。"
+description: "企業所有のデバイスを、デバイスの種類、購入方法、組織のニーズに応じて、さまざまな方法で登録します。"
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
@@ -13,46 +14,53 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ecfeb73efed4a47256275120c52de232c556adfe
-ms.openlocfilehash: 58efadf2f9fc34a31070aff93e86083583630caa
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: 7577cbab528d88635e8551bf8de1ffd49becaa84
 
 
 ---
 
-# Microsoft Intune で企業所有のデバイスを登録する
-組織または企業所有のデバイス (COD) は、デバイス、購入方法、組織のニーズに応じて多様な方法で Intune の管理対象にすることができます。 また、企業所有のデバイスは、ポータル サイト アプリを "Bring Your Own Device" (BYOD) シナリオでインストールすることで登録および管理できます。
+# <a name="enroll-corporateowned-devices-by-using-intune"></a>Intune を使用して企業所有のデバイスを登録する
 
-## 企業所有の iOS デバイス
-これらの登録方法は、組織がユーザーのデバイスを購入し、デバイスの管理は組織が行う "Choose Your Own Device (CYOD)" シナリオに適しています。 組織が iOS デバイスを購入した場合、登録を事前に構成し、ユーザーが初めて起動したときからデバイスを管理対象にすることができます。 Intune は、[Apple のデバイス登録プログラム (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) による登録、または Mac コンピューターで実行されている Apple Configurator ツールを使用した[直接](ios-direct-enrollment-in-microsoft-intune.md)登録、または[セットアップ アシスタント](ios-setup-assistant-enrollment-in-microsoft-intune.md)による登録をサポートしています。
+組織所有または企業所有のデバイスを登録し、デバイスの種類、デバイスの購入方法、組織のニーズに応じて、さまざまな方法により Intune で管理することができます。 また、ポータル サイト アプリをインストールし、"Bring Your Own Device" (BYOD) シナリオのように、企業所有のデバイスを登録して管理することもできます。
 
-[企業所有の iOS デバイスの登録](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
+## <a name="enroll-corporateowned-ios-devices"></a>企業所有の iOS デバイスの登録
 
-## デバイス登録マネージャー
-組織は、Intune を使用して、デバイス登録マネージャー アカウントという 1 つのユーザー アカウントで多数のモバイル デバイスを管理できます。 通常のユーザーが登録できる既定の標準デバイス数は 5 台ですが、デバイス登録マネージャー アカウントを作成すると、マネージャーはそのアカウントを使用して 5 台を超える台数を登録できます。 デバイス登録マネージャーを使用したデバイスの登録は、特定のユーザーが使用していないデバイスにのみ利用できます。 このようなデバイスは、たとえば POS アプリやユーティリティ アプリには適していますが、電子メールや会社のリソースにアクセスする必要がある場合には適していません。
+企業所有デバイスの登録方法は、"Choose Your Own Device" (CYOD) シナリオに適しています。 CYOD 環境では、組織はユーザーが選択したデバイスに対する支払いと管理を行います。
 
-[デバイス登録マネージャーを使った企業所有のデバイスの登録](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
+ユーザーが複数の iOS デバイスから選択できるようにすれば、登録を事前に構成できるため、デバイスはユーザーが初めてオンにした時点から Intune で管理されます。 Intune は、[Apple のデバイス登録プログラム (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) による登録、または Mac コンピューター上の Apple Configurator ツールを使用した[直接](ios-direct-enrollment-in-microsoft-intune.md)登録、または[セットアップ アシスタント](ios-setup-assistant-enrollment-in-microsoft-intune.md)による登録をサポートしています。
 
-## 企業所有の Windows 10 デスクトップの登録
+企業所有の iOS デバイスの登録方法については、[こちら](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)を参照してください。
 
-組織で Azure Active Directory Premium (AADP) または Enterprise Management Suite (EMS) を所有している場合は、[エンタープライズ向け Windows 10 を登録](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)でき、ユーザーが職場または学校アカウントを追加するときに、これらは自動的に "企業所有" としてタグ付けされます。
+## <a name="create-a-device-enrollment-manager-account"></a>デバイス登録マネージャー アカウントを作成する
 
-## デバイスの企業所有としての識別
+Intune で単一のユーザー デバイス登録マネージャー (DEM) アカウントを作成し、組織の多数のモバイル デバイスを管理することができます。 DEM アカウントを作成すると、指定されたアカウント マネージャーは、標準ユーザーが登録できる 15 台を超えるデバイスを登録できます。
 
-企業所有のデバイスは、デバイス一覧の **[Ownership (所有権)]** で **[Corporate (会社)]** として一覧表示されます。 企業所有のデバイスは次の方法で識別できます。
+DEM アカウントを使用すれば、単一の特定ユーザーが使用していないデバイスのみを登録することできます。 この種のデバイスは、POS アプリやユーティリティ アプリなどには適していますが、電子メールや会社のリソースにアクセスする必要があるユーザーには適していません。
 
- - [デバイス登録マネージャー (DEM) を使用した登録](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
- - Apple の [デバイス登録プログラム (DEP)](ios-device-enrollment-program-in-microsoft-intune.md) または [Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) を使用した登録
- - [IMEI 番号を使用したデバイスの事前宣言](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
- - [Windows 10 デバイスの Azure Active Directory/Enterprise Management Suite 登録](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)
+[DEM アカウントを使用して企業所有のデバイスを登録する方法については、こちら](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)を参照してください。
 
-### International Mobile Equipment Identity (IMEI)
+## <a name="enroll-corporateowned-windows-10-enterprise-devices"></a>企業所有の Windows 10 Enterprise デバイスの登録
 
-一意の IMEI (国際移動体装置識別番号) は、多くのモバイル デバイス製造元が採用している共通のデバイス プロパティです。 Intune 管理者は、会社が所有するデバイスの IMEI をインポートできます。 デバイスが Intune の管理対象になると、企業所有のデバイスとしてタグ付けされます。
+組織で Azure Active Directory Premium または Microsoft Enterprise Mobility Suite を使用している場合は、[Windows 10 Enterprise デバイスを登録](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)できます。 ユーザーがデバイスで職場または学校アカウントを追加すると、デバイスは自動的に "企業所有" としてタグ付けされます。
 
-[IMEI (国際移動体装置識別番号) を使って企業所有のデバイスを指定する](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
+## <a name="import-imei-numbers"></a>IMEI 番号のインポート
+
+多くのモバイル デバイス製造元が、デバイスに IMEI (International Mobile Equipment Identity) という一意の番号を使用しています。 組織が所有するデバイスの IMEI 番号をインポートすることができます。 デバイスが Intune の管理対象になると、企業所有のデバイスとしてタグ付けされます。
+
+IMEI 番号を使用して企業所有のデバイスにタグを付ける方法については、[こちら](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)を参照してください。
+
+## <a name="identify-a-device-as-corporateowned"></a>デバイスの企業所有としての識別
+
+デバイスのリストでは、**所有権**の値が**企業**となっています。 企業所有のデバイスには次のいずれかの特性があります。
+
+ - デバイスが [DEM アカウントを使用して登録](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)されている。
+ - デバイスが [Apple DEP](ios-device-enrollment-program-in-microsoft-intune.md) または [Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) を使用して登録されている。
+ - デバイスの製造元が [IMEI 番号を使用してデバイスを事前に宣言している](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)。
+ - デバイスが [Azure Active Directory または Enterprise Mobility Suite に Windows 10 Enterprise デバイスとして](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)登録されている。
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
