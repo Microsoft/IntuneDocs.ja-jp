@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
-ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
+ms.sourcegitcommit: 07f18c0011624f760f4d1db05cf954551dee3a85
+ms.openlocfilehash: d63f62011acaad154790b88f710eb4eda4fb261b
 
 
 ---
 
-# Intune で Exchange Online と新しい Exchange Online Dedicated への電子メール アクセスを制限する
+# <a name="restrict-email-access-to-exchange-online-and-new-exchange-online-dedicated-with-intune"></a>Intune で Exchange Online と新しい Exchange Online Dedicated への電子メール アクセスを制限する
 
 Exchange Online Dedicated 環境を使用していて、それが新しい構成であるか既存の構成であるかを確認する必要がある場合は、アカウント マネージャーに問い合わせてください。
 
@@ -62,12 +62,14 @@ Exchange Online または新しい Exchange Online Dedicated 環境への電子�
 
 ![デバイスのアクセスを許可するかブロックするかを判断する決定ポイントを示す図](../media/ConditionalAccess8-1.png)
 
-## モバイル デバイスのサポート
+## <a name="support-for-mobile-devices"></a>モバイル デバイスのサポート
 **Outlook** およびその他の**先進認証を使用するアプリ**から Exchange Online の電子メールへのアクセスを制限できます。
 
 - Android 4.0 以降、Samsung KNOX Standard 4.0 以降、Android for Work
 - iOS 8.0 以降
 - Windows Phone 8.1 以降
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 **先進認証**では、Active Directory Authentication Library (ADAL) ベースのサインインが Microsoft Office クライアントに導入されます。
 
@@ -79,11 +81,11 @@ Exchange Online または新しい Exchange Online Dedicated 環境への電子�
 
 * Safari (iOS)
 * Chrome (Android)
-* 管理対象ブラウザー (iOS と Android)
+* 管理対象ブラウザー (iOS と Android 5.0 以降)
 
 **サポートされていないブラウザーはブロックされます**。
 
-**IOS および Android 用 OWA アプリケーションでは、最新の認証がサポートされていないため、最新の認証を使用しないように変更することができます。  OWA アプリケーションからのアクセスは、ADFS 要求規則を使用してブロックする必要があります。**
+**IOS および Android 用 OWA アプリケーションでは、最新の認証がサポートされていないため、最新の認証を使用しないように変更することができます。OWA アプリケーションからのアクセスは、ADFS 要求規則を使用してブロックする必要があります。**
 
 
 以下のプラットフォームの組み込み **Exchange ActiveSync 電子メール クライアント**による Exchange 電子メールへのアクセスを制限できます。
@@ -94,7 +96,7 @@ Exchange Online または新しい Exchange Online Dedicated 環境への電子�
 
 - Windows Phone 8.1 以降
 
-## PC のサポート
+## <a name="support-for-pcs"></a>PC のサポート
 
 PC が Office デスクトップ アプリケーションを実行して **Exchange Online** と **SharePoint Online** にアクセスする場合、次の要件を満たす PC に対して条件付きアクセスをセットアップできます。
 
@@ -118,15 +120,15 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 
 -   最新ではない認証プロトコルをブロックするように ADFS 要求規則を設定します。 詳しい手順は、シナリオ 3 の[ブラウザー ベースのアプリケーションを除く Office 365 への外部アクセスをすべてブロックする](https://technet.microsoft.com/library/dn592182.aspx)、に関するページをご覧ください。
 
-## 条件付きアクセスの構成
-### 手順 1: コンプライアンス ポリシーを構成し、展開する
+## <a name="configure-conditional-access"></a>条件付きアクセスの構成
+### <a name="step-1-configure-and-deploy-a-compliance-policy"></a>手順 1: コンプライアンス ポリシーを構成し、展開する
 条件付きアクセス ポリシーを適用するユーザー グループに対しては、コンプライアンス ポリシーも[作成](create-a-device-compliance-policy-in-microsoft-intune.md)して[展開](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)する必要があります。
 
 
 > [!IMPORTANT]
 > コンプライアンス ポリシーを展開していない場合、デバイスはポリシーに準拠していると見なされ、Exchange へのアクセスが許可されます。
 
-### 手順 2: 条件付きアクセス ポリシーの効果を評価する
+### <a name="step-2-evaluate-the-effect-of-the-conditional-access-policy"></a>手順 2: 条件付きアクセス ポリシーの効果を評価する
 **モバイル デバイスのインベントリ レポート**を使用して、条件付きアクセス ポリシーを構成した後に Exchange へのアクセスがブロックされるデバイスを特定できます。
 
 これを行うには、[Microsoft Intune Service to Service Connector](intune-service-to-service-exchange-connector.md) を使用して、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] と Exchange の間の接続を構成します。
@@ -161,7 +163,7 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 ----------------------
 レポートの内容をエクスポートし、**[メール アドレス]** 列を使って、ブロックされることをユーザーに通知できます。
 
-### 手順 3: 条件付きアクセス ポリシーのユーザー グループを構成する
+### <a name="step-3-configure-user-groups-for-the-conditional-access-policy"></a>手順 3: 条件付きアクセス ポリシーのユーザー グループを構成する
 条件付きアクセス ポリシーは、さまざまな Azure Active Directory セキュリティ グループのユーザーに適用されます。 また、このポリシーから特定のユーザー グループを除外することもできます。  ユーザーがポリシーの対象となる場合、ユーザーに使用される各デバイスが電子メールにアクセスするには、ポリシーを遵守している必要があります。
 
 これらのグループは、 **Office 365 管理センター**または **Intune アカウント ポータル**で構成できます。
@@ -176,14 +178,14 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 
 条件付きアクセス ポリシーの対象となるグループだけが評価されます。
 
-### 手順 4: 条件付きアクセス ポリシーを構成する
+### <a name="step-4-configure-the-conditional-access-policy"></a>手順 4: 条件付きアクセス ポリシーを構成する
 
 >[!NOTE]
 > Azure AD 管理コンソールでは、条件付きアクセス ポリシーを作成することもできます。 Azure AD 管理コンソールを使用すると、Intune デバイスの条件付きアクセス ポリシー (Azure AD では**デバイスベースの条件付きアクセス ポリシー**と呼ばれている) に加えて、多要素認証など、他の条件付きアクセス ポリシーを作成することもできます。  Azure AD がサポートするサード パーティ製の Enterprise アプリ (Salesforce や Box など) に条件付きアクセス ポリシーを設定することもできます。 詳細については、「[Azure Active Directory に接続されたアプリケーションのアクセスを制御する Azure Active Directory デバイス ベースの条件付きアクセス ポリシーを設定する方法](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/)」を参照してください。
 
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]**、**[条件付きアクセス]** > **[Exchange Online ポリシー]** の順に選択します。
-![Exchange Online の条件付きアクセス ポリシー ページのスクリーンショット](../media/mdm-ca-exo-policy-configuration.png)
+1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** > **[条件付きアクセス]** > **[Exchange Online ポリシー]** の順に選択します。
+
 
 2.  **[Exchange Online ポリシー]** ページで、**[Exchange Online の条件付きアクセス ポリシーを有効にする]** を選択します。
 
@@ -214,20 +216,20 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
   3.    **[ブラウザー アクセスを有効にする]** ボタンを押します。
   4.    Chrome ブラウザーで Office 365 からサインアウトして、Chrome を再起動します。
 
-  **iOS と Android** プラットフォームで、サービスにアクセスするために使用するデバイスを識別するために、Azure Active Directory はデバイスにトランスポート層セキュリティ (TLS) 証明書を発行します。  デバイスには、次のスクリーン ショットに示すように、証明書を選択するエンドユーザーに対してプロンプトで証明書が表示されます。 エンドユーザーは、ブラウザーの使用を続けられるように、この証明書を選択する必要があります。
-
-  **iOS**
-
-  ![iPad 上の証明書プロンプトのスクリーンショット](../media/mdm-browser-ca-ios-cert-prompt.png)
+  **iOS と Android** プラットフォームで、サービスにアクセスするために使用するデバイスを識別するために、Azure Active Directory はデバイスにトランスポート層セキュリティ (TLS) 証明書を発行します。  デバイスには、次のスクリーン ショットに示すように、証明書を選択するエンドユーザーに対してプロンプトで証明書が表示されます。 エンドユーザーは、ブラウザーを使用し続けるには、まずこの証明書を選択する必要があります。
 
   **Android**
+
+  ![iPad での証明書プロンプトのスクリーンショット](../media/mdm-browser-ca-ios-cert-prompt.png)
+
+  **Outlook Web Access (OWA)**
 
   ![Android デバイス上の証明書プロンプトのスクリーンショット](../media/mdm-browser-ca-android-cert-prompt.png)
 
 5.  **[Exchange ActiveSync アプリ]** では、非準拠のデバイスから Exchange Online へのアクセスをブロックするよう選択できます。 また、サポートされているプラットフォームを実行していないデバイスに対して、電子メールへのアクセスを許可するかブロックするかを選択することもできます。 サポートされているプラットフォームは、Android、iOS、Windows、および Windows Phone です。
 
  Exchange Active Sync アプリ **Android for Work** デバイス:
- -  Android for Work デバイスでは、**仕事用プロファイル**の **Gmail** アプリと **Nine Work** アプリのみがサポートされています。 条件付きアクセスが Android for Work デバイスで動作するには、Gmail アプリまたは Nine Work アプリ用の電子メール プロファイルを展開する必要があります。また、**必要な**インストールとして展開する必要があります。 
+ -  Android for Work デバイスでは、**仕事用プロファイル**の **Gmail** アプリと **Nine Work** アプリのみがサポートされています。 条件付きアクセスが Android for Work デバイスで動作するには、Gmail アプリまたは Nine Work アプリ用の電子メール プロファイルを展開する必要があります。また、**必要な**インストールとして展開する必要があります。
 
 6.  **[対象グループ]** で、ポリシーを適用するユーザーの Active Directory セキュリティ グループを選択します。 すべてのユーザーと、ユーザー グループの選択した一覧のどちらを対象にするかを選択できます。
 ![対象グループと例外グループのオプションを表示した Exchange Online の条件付きアクセス ポリシー ページのスクリーンショット](../media/IntuneSA5eTargetedExemptedGroups.PNG)
@@ -253,20 +255,20 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 
 **デバイスのアクセスを制限する条件付きアクセス ポリシーの構成方法を示したシナリオの例を見るには、[電子メール アクセスの制限のシナリオ例](restrict-email-access-example-scenarios.md)をご覧ください。**
 
-## コンプライアンスと条件付きアクセス ポリシーを監視する
+## <a name="monitor-the-compliance-and-conditional-access-policies"></a>コンプライアンスと条件付きアクセス ポリシーを監視する
 
-#### Exchange からブロックされているデバイスを表示するには
+#### <a name="to-view-devices-that-are-blocked-from-exchange"></a>Exchange からブロックされているデバイスを表示するには
 
 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ダッシュボードで、**[Exchange からブロックされているデバイス]** タイルを選択します。ブロックされているデバイスの数と詳細情報へのリンクが表示されます。
 ![Exchange へのアクセスがブロックされているデバイスの数を表示した Intune ダッシュボードのスクリーンショット](../media/IntuneSA6BlockedDevices.PNG)
 
-## 次のステップ
+## <a name="next-steps"></a>次のステップ
 [SharePoint Online へのアクセスを制限する](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 [Skype for Business Online へのアクセスを制限する](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 
