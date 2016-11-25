@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/14/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: e786cd33b5c963fa373d281e93721d0dd0f5456c
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 1bc5370574c038d0fe34746aa89067d06cc80c31
 
 
 ---
 
-# Intune ソフトウェア クライアントを使用する場合の Windows PC の管理機能
+# <a name="windows-pc-management-capabilities-when-you-use-the-intune-software-client"></a>Intune ソフトウェア クライアントを使用する場合の Windows PC の管理機能
 ほとんどのシナリオでは、デバイスを Microsoft Intune に登録します。そうすることで、さらに多くの機能を使用できるようになります。 ただし、PC の管理には、Intune ソフトウェアを使用することもできます。このソフトウェアでは、次の機能が利用できます。
 
 -   **[ソフトウェア更新プログラムの管理](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** - PC を最新の状態に保ち、更新プログラムを適用する時間を決定できます。
@@ -37,7 +37,7 @@ ms.openlocfilehash: e786cd33b5c963fa373d281e93721d0dd0f5456c
 
 Intune は、最大 7,000 台の Windows デバイスへのソフトウェア クライアントのインストールをサポートしています。
 
-## オペレーティング システムの要件
+## <a name="operating-system-requirements"></a>オペレーティング システムの要件
 Intune では、次の Windows バージョンを実行する PC を管理できます (32 ビットと 64 ビットの両方)。
 
 
@@ -52,7 +52,7 @@ Intune では、次の Windows バージョンを実行する PC を管理でき
 - **Windows 10** - Pro、Education、および Enterprise バージョン
 
 
-## ハードウェアに最低限必要な条件
+## <a name="minimum-hardware-requirements"></a>ハードウェアに最低限必要な条件
 Intune ソフトウェア クライアントのインストールの最小ハードウェア要件を次に示します。
 
 |要件|説明|
@@ -61,7 +61,7 @@ Intune ソフトウェア クライアントのインストールの最小ハー
 |プロセッサとメモリ|PC のオペレーティング システムに対するプロセッサ要件と RAM 要件を参照してください。|
 |ディスク領域|クライアント ソフトウェアをインストールする前に、200 MB の空きディスク領域が必要です。|
 
-## その他の要件
+## <a name="further-requirements"></a>その他の要件
 Intune ソフトウェア クライアントのインストールの最小ソフトウェア要件を次に示します。
 
 |要件|説明|
@@ -70,11 +70,11 @@ Intune ソフトウェア クライアントのインストールの最小ソフ
 |Windows インストーラー 3.1|PC には Windows インストーラー 3.1 以降がインストールされている必要があります。|
 |互換性のないクライアント ソフトウェアを削除する|Intune PC クライアント ソフトウェアをインストールする前に、その PC から次のクライアント ソフトウェアをアンインストールする必要があります。<br /><br />-   Configuration Manager のすべてのバージョン<br />-   Microsoft Systems Management Server (SMS) のすべてのバージョン|
 
-### 関連項目
+### <a name="see-also"></a>関連項目
 [Microsoft Intune の登録済みデバイス管理機能](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 
