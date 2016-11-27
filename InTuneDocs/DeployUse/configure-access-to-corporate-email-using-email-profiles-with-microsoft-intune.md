@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
-ms.openlocfilehash: dcd8f956d1706f4bdcb2dca79e9f1ff5d5bb57b0
+ms.sourcegitcommit: f0c5920f7cc46e40bf4d1795a68ba1d67840fcfa
+ms.openlocfilehash: 6ac7034ba0713c7b6bdd28c7b53b99c247d3aeb3
 
 
 ---
@@ -100,7 +100,7 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
     |**説明**|このプロファイルの説明。|
     |**ホスト**|ネイティブ電子メール サービスをホストする、会社のサーバーのホスト名。|
     |**アカウント名**|ユーザーのデバイスに表示される電子メール アカウントの表示名。|
-    |**ユーザー名**|電子メール アカウントのユーザー名の取得方法。 社内の Exchange サーバーの場合は **[ユーザー名]** を選択し、Office 365 の場合は **[ユーザー プリンシパル名]** を選択します。|
+    |**ユーザー名**|この電子メール プロファイルのユーザー名を生成するために使用される Active Directory (AD) または Azure AD の属性です。 プライマリ SMTP アドレス (*user1@contoso.com* など) またはユーザー プリンシパル名 (*user1*、*user1@contoso.com* など) を選択します。|
     |**電子メール アドレス**|各デバイスでユーザーの電子メール アドレスを生成する方法。 Exchange へのログインにプライマリ SMTP アドレスを使用する場合は **[プライマリ SMTP アドレス]** を選択し、完全プリンシパル名を電子メール アドレスとして使用する場合は **[ユーザー プリンシパル名]** を使用します。|
     |**認証方法** (Android for Work、Samsung KNOX、iOS)|電子メール プロファイルで使用する認証方法として、**[ユーザー名とパスワード]** または **[証明書]** を選択します。|
     |**クライアント認証用のクライアント証明書 (ID 証明書) を選択する** (Android for Work、Samsung KNOX、iOS)|Exchange 接続の認証に使用するために事前に作成しておいたクライアント SCEP 証明書を選択します。 Intune で証明書プロファイルを使用する方法の詳細については、[証明書プロファイルを使用したリソースへのアクセスのセキュリティ保護](secure-resource-access-with-certificate-profiles.md)に関する記事を参照してください。 このオプションは、認証方法が **[証明書]** の場合にのみ表示されます。|
@@ -138,6 +138,6 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

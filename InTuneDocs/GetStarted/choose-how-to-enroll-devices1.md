@@ -5,26 +5,26 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: e87fb7eaadcb578303a83d3d81ba650e65f6853c
+ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
+ms.openlocfilehash: 4af2a967142c1781ccb5d6b23d467d3407cdf5ef
 
 
 ---
 
-# モバイル デバイスの登録方法の選択
+# <a name="choose-how-to-enroll-mobile-devices"></a>モバイル デバイスの登録方法の選択
 
 次の一連の質問に答えることで、管理するデバイスの最適な登録方法が決まります。
 
-## **社員が自分のデバイスを持ち込みますか (BYOD)。それとも、会社が提供しますか (COD)。**
+## <a name="do-employees-bring-their-own-devices-byod-or-are-devices-provided-by-your-organization-cod"></a>**社員が自分のデバイスを持ち込みますか (BYOD)。それとも、会社が提供しますか (COD)。**
 
 > [!div class="button"]
 [BYOD >](choose-how-to-enroll-devices2.md)
@@ -37,6 +37,6 @@ ms.openlocfilehash: e87fb7eaadcb578303a83d3d81ba650e65f6853c
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 
