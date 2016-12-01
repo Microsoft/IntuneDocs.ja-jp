@@ -1,11 +1,11 @@
 ---
-title: "モバイル デバイスを登録してアプリをインストールする | Microsoft Intune"
-description: "モバイル デバイスを登録して、Intune 登録デバイスにアプリをインストールする方法を説明します"
+title: "デバイス登録を有効にする | Microsoft Intune"
+description: "MDM 機関を設定し、iOS、Windows、Android、および Mac の各デバイスの登録を有効にします。"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,49 +14,50 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3306d772b074ddcfd1bfcf7178b32f9b371321e7
-ms.openlocfilehash: f57728bb41b750f53b021bed532de18187e764a0
+ms.sourcegitcommit: 149f3a3310907d131affeaad4bd372aa60be9206
+ms.openlocfilehash: ca6e016927da1de6604b0c6a2924702ec90c9fab
 
 
 ---
 
-# モバイル デバイスを登録してアプリをインストールする
-Intune を使用してモバイル デバイス管理をセットアップするには、まずモバイル デバイス管理機関を設定し、デバイス プラットフォームの管理を有効にして、ポータル サイト アプリでデバイスを登録する必要があります。 その後、手順 6. で発行した Microsoft Skype アプリケーションを展開できます。
+# <a name="enroll-mobile-devices-and-install-an-app"></a>モバイル デバイスを登録してアプリをインストールする
+Intune でモバイル デバイス管理をセットアップするには、まず、*モバイル デバイス管理機関*を設定する必要があります。この機関は、アカウントに関連付けられているデバイスを管理できるサービスを特定します。 このガイダンスでは、System Center Configuration Manager ではなく、Intune サービスを使用することを想定します。 MDM 機関を設定したら、デバイス プラットフォームの管理を有効にし、デバイスをポータル サイト アプリに登録できます。
 
-## デバイス管理を有効にして、デバイスを登録する
+## <a name="enable-device-enrollment"></a>デバイスの登録を可能にする
 
-1.  **Intune をモバイル デバイス管理機関にする** [Intune 管理コンソール](https://manage.microsoft.com/)で、**[管理者]** > **[モバイル デバイス管理]** の順に選択し、**[タスク]** で **[MDM 機関の設定]** を選択します。  MDM 機関ダイアログ ボックスで **[はい]** をクリックします。
+1. **Intune をモバイル デバイス管理機関にする**
+    [Intune 管理コンソール](https://manage.microsoft.com/)で、**[管理者]** > **[モバイル デバイス管理]** の順に選択し、**[タスク]** で **[MDM 機関の設定]** を選択します。  
+
+2. MDM 機関ダイアログ ボックスで **[はい]** をクリックします。
+
     ![管理コンソール。 MDM を Intune に設定](./media/mdmAuthority.png)
 
-2.  **デバイス プラットフォームの MDM を有効にする** 管理対象のデバイス プラットフォームに対してモバイル デバイス管理を有効にします。 要件はプラットフォームによって異なります。
+## <a name="choose-how-to-enroll-devices"></a>デバイスの登録方法の選択
 
-    -   **iOS および Mac OS X**: 「[Microsoft Intune を使用して iOS および Mac の管理をセットアップする](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)」を参照してください。
+Intune では、会社の要件に応じて、さまざまな方法でデバイスを管理できます。 使用できる登録シナリオは "Bring Your Own Device" (BYOD)、企業所有デバイス、"Choose Your Own Device" (CYOD)、およびキオスク モード デバイスです。
 
-    -   **Windows Phone**: 「[Microsoft Intune を使用して Windows Phone の管理をセットアップする](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)」を参照してください。
+以下の手順に従って、[デバイスの登録方法を選択](choose-how-to-enroll-devices1.md)します。
 
-    -   **Android**: Android モバイル デバイスは、ユーザーが、[Google Play](https://play.google.com/store/apps/details?id=com.skype.raider) から入手できるポータル サイト アプリを使用して登録できます。 Intune での追加構成は不要です。
+## <a name="enable-mdm-for-your-device-platform"></a>デバイス プラットフォームの MDM を有効にする
+プラットフォーム プロバイダーと Intune テナント間の関係を確立して、iOS、Mac、および Android for Work デバイスの登録を有効にする必要があります。 Windows および Android デバイスには追加の手順は必要ありませんが、Windows デバイスの場合、特別な DNS レジストリ エントリを作成して、ユーザーのデバイス登録を簡略化することができます。
 
-3.  **デバイスを登録する**
+管理対象のデバイス プラットフォームに対してデバイス管理を有効にします。 要件はプラットフォームによって異なります。
 
-    -   **Android** - [Google Play](http://go.microsoft.com/fwlink/p/?LinkId=386612) から Microsoft Corporation の **Intune ポータル サイト** アプリをインストールし、前述の手順で追加した Intune ユーザー資格情報を使用してサインインします。
+-  [iOS と macOS](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [Windows PC](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-  [Windows 10 Mobile と Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+- [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
 
-    -   **iOS および Mac OS X** - App Store から Microsoft Corporation の **Microsoft Intune ポータル サイト** アプリをインストールし、前述の手順で追加した Intune ユーザー資格情報を使用してサインインします。 **[登録済みデバイス]** を表示して、デバイスを追加します。
+登録が有効になったら、ユーザーは自分のデバイスにポータル サイト アプリをダウンロードして、デバイス登録プロセスを完了できます。
 
-    -   **Windows Phone 8.1** - Windows Phone ストアから Microsoft Corporation の**ポータル サイト** アプリをインストールし、前述の手順で追加した Intune ユーザー資格情報を使用してサインインします。  **[登録済みデバイス]** を表示して、デバイスを追加します。
+### <a name="enable-company-owned-device-enrollment"></a>会社所有のデバイス登録を有効にする
+次のような、[会社所有のデバイス登録](https://docs.microsoft.com/intune/deploy-use/manage-corporate-owned-devices)シナリオを有効にすることもできます。
+- [Apple Device Enrollment Program](https://docs.microsoft.com/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
+- [Apple Configurator セットアップ アシスタントでの登録](https://docs.microsoft.com/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+- [Apple Configurator セットアップ アシスタントでの登録](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+- [デバイス登録マネージャー](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
-    -   **Windows Phone 8.0** - **[システム設定]**&gt;**[業務用アプリ]** の順に選択し、前述の手順で追加した Intune ユーザー資格情報を使用してサインインします。 ポータル サイト アプリがお使いの電話に展開されます。
-
-    **サーバー アドレス**の入力を求めるメッセージが表示された場合は、「manage.microsoft.com」と入力します。
-
-## 登録済みのデバイスにアプリをインストールする
-このクイック スタート ガイドの[手順 6.](start-with-a-paid-subscription-to-microsoft-intune-step-6.md) では、カスタムの Intune ユーザー グループに Skype アプリを発行しました。 そのため、新しく登録したデバイスにそのアプリをインストールできます。
-
-登録済みのモバイル デバイスでポータル サイトを開き、**[アプリ]** を選択して、**Microsoft Skype** をインストールします。
-
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] を使用したモバイル デバイス管理の詳細については、「[Intune でデバイスを登録するための前提条件](/intune/deploy-use/prerequisites-for-enrollment)」を参照してください。
-
-
-### 次のステップ
+### <a name="next-steps"></a>次のステップ
 これで終了です。 *Intune のクイック スタート ガイド*の最後の手順が完了しました。 これで初期構成が完了したので、追加の MDM 機能の有効化を検討できます。
 
 >[!div class="step-by-step"]
@@ -65,6 +66,6 @@ Intune を使用してモバイル デバイス管理をセットアップする
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

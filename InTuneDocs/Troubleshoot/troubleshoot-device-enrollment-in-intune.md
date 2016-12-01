@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 11/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
+ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
+ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 
 トラブルシューティングを開始する前に、登録を有効にするように Intune を構成していることを確認してください。 構成要件は次で確認できます。
 
--   [Microsoft Intune にデバイスを登録する準備](/intune/deploy-use/gprerequisites-for-enrollment.md)
+-   [Microsoft Intune にデバイスを登録する準備](/intune/deploy-use/prerequisites-for-enrollment.md)
 -   [iOS および Mac のデバイス管理をセットアップする](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [Microsoft Intune を使用して Windows Phone と Windows 10 Mobile の管理をセットアップする](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [Windows デバイスの管理をセットアップする](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -47,16 +47,16 @@ ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 ## <a name="general-enrollment-issues"></a>登録に関する一般的な問題
 これらの問題は、すべてのデバイス プラットフォームで発生する可能性があります。
 
-### <a name="device-cap-reached"></a>デバイスの上限に達しました
+### <a name="device-cap-reached"></a>デバイス キャップに達しました
 **問題:** 登録中にデバイスのエラーがユーザーに表示されます。たとえば、iOS デバイスで **"ポータル サイトは一時的に使用できません"** のエラーが表示される、Configuration Manager の DMPdownloader.log にエラー **DeviceCapReached** が含まれる、などです。
 
-**解決方法:** 設計では、登録できるデバイスの上限は 5 台です。
+**解決方法:**
 
 #### <a name="check-number-of-devices-enrolled-and-allowed"></a>登録済みデバイス数と上限を確認する
 
-1.  Intune 管理ポータルで、ユーザーに割り当てられているデバイス数が 5 以下であることを確認します
+1.  Intune 管理ポータルで、ユーザーに割り当てられているデバイス数が許容最大数の 15 以下であることを確認します。
 
-2.  Intune 管理ポータルの [管理]\[モバイル デバイス管理]\[登録ルール] で、登録の上限が 5 に設定されていることを確認します。
+2.  Intune 管理ポータルの [管理]\[モバイル デバイス管理]\[登録ルール] で、デバイス登録の上限が 15 に設定されていることを確認します。
 
 モバイル デバイス ユーザーは、 [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/)でデバイスを削除できます。
 
@@ -89,7 +89,7 @@ ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 ### <a name="company-portal-temporarily-unavailable"></a>"ポータル サイトは一時的に使用できません"
 **問題:** デバイスで **"ポータル サイトは一時的に使用できません"** というエラーがユーザーに表示されます。
 
-#### <a name="troubleshooting-company-portal-temporarily-unavailable-error"></a>"ポータル サイトは一時的に使用できません" エラーのトラブルシューティング
+**解決方法:**
 
 1.  デバイスから Intune ポータル サイト アプリを削除します。
 
@@ -104,7 +104,7 @@ ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 ### <a name="mdm-authority-not-defined"></a>MDM 機関が定義されていません
 **問題:** ユーザーに **"MDM 機関が定義されていません"** というエラーが表示されます。
 
-#### <a name="troubleshooting-mdm-authority-not-defined-error"></a>"MDM 機関が定義されていません" というエラーのトラブルシューティング
+**解決方法:**
 
 1.  使用している Intune サービスのバージョンに適した MDM 機関が設定されていることを確認します。つまり、Intune の場合は O365 MDM、または System Center Configuration Manager と Intune などです。 Intune の場合、MDM 機関は **[管理]** &gt; **[モバイル デバイス管理]** で設定されています。 Configuration Manager と Intune の場合、Intune コネクタを構成するときに設定します。O365 では、**[モバイル デバイス]** 設定です。
 
@@ -152,16 +152,65 @@ ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
 
 
 ## <a name="android-issues"></a>Android の問題
+### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>デバイスが Intune サービスでチェックインできず、Intune 管理コンソールに "異常" と表示される
+**問題:** Android バージョン 4.4.x と 5.x を実行している一部の Samsung デバイスで、Intune サービスでのチェックインが停止する場合があります。 デバイスがチェックインしないと次のような状態になります。
+
+- デバイスは Intune サービスから、ポリシー、アプリ、およびリモート コマンドを受信できない。
+- 管理コンソールに**異常**という管理状態が表示される。
+- 条件付きアクセス ポリシーによって保護されているユーザーが、企業リソースにアクセスできない可能性がある。
+
+Samsung は、特定の Samsung デバイスに付属する Samsung Smart Manager ソフトウェアが、Intune ポータル サイトとそのコンポーネントを非アクティブ化できることを確認しています。 ポータル サイトが非アクティブ状態の場合、バックグラウンドで実行できないため、Intune サービスには接続できません。
+
+**解決方法 1:**
+
+ポータル サイト アプリを手動で起動するようユーザーに通知します。 アプリが再起動すると、デバイスは Intune サービスでチェックインします。
+
+> [!IMPORTANT]
+> Samsung Smart Manager はポータル サイト アプリを再度非アクティブ化する場合があるため、ポータル サイト アプリを手動で開くのは一時的な解決法です。
+
+**解決方法 2:**
+
+Android 6.0 へのアップグレードを試みるようユーザーに通知します。 Android 6.0 デバイスでは、非アクティブ化の問題は発生しません。 更新プログラムが利用可能かどうかを確認するには、**[設定]** > **[デバイスのバージョン情報]** > **[Download updates manually]** (更新プログラムを手動でダウンロードする) の順に移動し、デバイスで表示される指示に従います。
+
+**解決方法 3:**
+
+解決方法 2 で解決しない場合は、ユーザーに以下の手順に従って、Smart Manager でポータル サイト アプリを除外するよう通知します。
+
+1. デバイスで Smart Manager アプリを起動します。
+
+  ![デバイスの Smart Manager アイコンを選択する](./media/smart-manager-app-icon.png)
+
+2. **[バッテリ]** タイルを選択します。
+
+  ![[バッテリ] タイルを選択する](./media/smart-manager-battery-tile.png)
+
+3. **[App power saving]** (アプリの省電力) または **[App optimization]** (アプリの最適化) で、**[詳細]** を選択します。
+
+  ![[App power saving] (アプリの省電力) または [App optimization] (アプリの最適化) で [詳細] を選択する](./media/smart-manager-app-power-saving-detail.png)
+
+4. アプリのリストから **[ポータル サイト]** を選択します。
+
+  ![アプリ リストから [ポータル サイト] を選択する](./media/smart-manager-company-portal.png)
+
+5. **[オフ]** を選択します。
+
+  ![[App optimization] (アプリの最適化) ダイアログから [オフ] を選択する](./media/smart-manager-app-optimization-turned-off.png)
+
+6. **[App power saving]** (アプリの省電力) または **[App optimization]** (アプリの最適化) で、ポータル サイトがオフになっていることを確認します。
+
+  ![ポータル サイトがオフになっていることを確認する](./media/smart-manager-verify-comp-portal-turned-off.png)
+
+
 ### <a name="profile-installation-failed"></a>プロファイルのインストールに失敗しました
 **問題:** Android デバイスで **"プロファイルのインストールに失敗しました"** というエラーがユーザーに表示されます。
 
-### <a name="troubleshooting-steps-for-failed-profile-installation"></a>プロファイルのインストールに失敗する場合のトラブルシューティング手順
+**解決方法:**
 
 1.  使用している Intune サービスのバージョンについて、適切なライセンスがユーザーに割り当てられていることを確認します。
 
 2.  デバイスが別の MDM プロバイダーに登録されていないこと、また管理プロファイルがインストールされていないことを確認します。
 
-4.  Android 用の Chrome が既定のブラウザーであり、Cookie が有効であることを確認します。
+3.  Android 用の Chrome が既定のブラウザーであり、Cookie が有効であることを確認します。
 
 ### <a name="android-certificate-issues"></a>Android 証明書に関する問題
 
@@ -255,7 +304,7 @@ iOS 登録エラーの一覧は、デバイスのユーザー ドキュメント
 
 ## <a name="pc-issues"></a>PC の問題
 
-### <a name="the-machine-is-already-enrolled-error-hr-0x8007064c"></a>コンピューターは既にサービスに登録されています - エラー hr 0x8007064c
+### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>コンピューターは既にサービスに登録されています - エラー hr 0x8007064c
 **問題:** **"The machine is already enrolled"** (コンピューターは既にサービスに登録されています) というエラーが発生し、登録に失敗します。 登録ログにはエラー **hr 0x8007064c** が記録されます。
 
 これは、そのコンピューターが以前に登録されているか、コンピューターの複製イメージが登録されていることが原因である可能性があります。 前のアカウントのアカウント証明書が、そのコンピューターにまだ存在しています。
@@ -307,6 +356,6 @@ iOS 登録エラーの一覧は、デバイスのユーザー ドキュメント
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

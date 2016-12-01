@@ -2,9 +2,10 @@
 title: "Android 用の Pulse Secure を使用したアプリごとの VPN | Microsoft Intune"
 description: "Intune で管理する、アプリごとの VPN プロファイルを Android デバイスに作成できます。"
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/28/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,35 +14,35 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eb2260f6bd37647d34871c9776dba3628d0aa8f6
-ms.openlocfilehash: a2af91827f3a5ebc549e7f474943f1b0cc6208dd
+ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
+ms.openlocfilehash: ace975b8a53e3ccd8b754019ec7f155c563339b5
 
 
 ---
 
-# カスタム ポリシーを使用して、Android デバイスにアプリごとの VPN プロファイルを作成する
+# <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>カスタム ポリシーを使用して、Android デバイスにアプリごとの VPN プロファイルを作成する
 
-Intune で管理する、アプリごとの VPN プロファイルを Android 5.0 以降のデバイスに作成できます。 最初に、Pulse Secure 接続の種類を使用する VPN プロファイルを作成します。 次に、特定のアプリと VPN プロファイルを関連付けるカスタム構成ポリシーを作成します。 
+Intune で管理する、アプリごとの VPN プロファイルを Android 5.0 以降のデバイスに作成できます。 最初に、Pulse Secure または Citrix 接続の種類を使用する VPN プロファイルを作成します。 次に、特定のアプリと VPN プロファイルを関連付けるカスタム構成ポリシーを作成します。 
 
-Android デバイスまたはユーザー グループにポリシーをデプロイした後、ユーザーは PulseSecure VPN を開始します。 PulseSecure は、特定のアプリからのトラフィックのみに OpenVPN 接続の使用を許可します。
+Android デバイスまたはユーザー グループにポリシーをデプロイした後、ユーザーは Pulse Secure または Citrix VPN を開始します。 この接続は、特定のアプリからのトラフィックのみに OpenVPN 接続の使用を許可します。
 
 > [!NOTE]
 >
 > このプロファイルに対しては Pulse Secure 接続タイプのみがサポートされます。
 
 
-### 手順 1: VPN プロファイルを作成する
+### <a name="step-1-create-a-vpn-profile"></a>手順 1: VPN プロファイルを作成する
 
 1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]**  >  **[ポリシーの追加]** を選択します。
 2. 新しいポリシー用のテンプレートを選ぶには、**[Android]** を展開し、**[VPN プロファイル (Android 4 以降)]** を選びます。
-3. テンプレートの **[接続の種類]** に **[Pulse Secure]** を選択します。
+3. テンプレートの **[接続の種類]** に **[Pulse Secure]** または **[Citrix]** を選択します。
 4. VPN プロファイルの作成を終了して保存します。 VPN プロファイルの詳細については、「[VPN 接続](../deploy-use/vpn-connections-in-microsoft-intune.md)」をご覧ください。
 
 > [!NOTE]
 >
 > VPN プロファイル名は、次の手順で使用するためメモしておきます。 たとえば、MyAppVpnProfile などです。
 
-### 手順 2: カスタム構成ポリシーを作成する
+### <a name="step-2-create-a-custom-configuration-policy"></a>手順 2: カスタム構成ポリシーを作成する
 
    1. Intune 管理コンソールで、**[ポリシー]** > **[ポリシーの追加]** > **[Android]** > **[カスタム構成]** > **[ポリシーの作成]** の順に選択します。
    2. ポリシーの名前を入力します。
@@ -53,7 +54,7 @@ Android デバイスまたはユーザー グループにポリシーをデプ�
 
 ![Android のアプリごとの VPN カスタム ポリシーの例](./media/android_per_app_vpn_oma_uri.png)
 
-#### アプリの一覧をブラックリストまたはホワイトリストとして設定する (省略可能)
+#### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>アプリの一覧をブラックリストまたはホワイトリストとして設定する (省略可能)
   **BLACKLIST** 値を使用すると、VPN 接続を使用*できない*アプリの一覧を指定できます。 他のすべてのアプリは、VPN を使用して接続されます。
 または、**WHITELIST** 値を使用して、VPN 接続を使用*できる*アプリの一覧を指定することもできます。 一覧に含まれないアプリは、VPN 経由で接続しません。
   1.    **[OMA-URI 設定]**で **[追加]** を選択します。
@@ -64,7 +65,7 @@ Android デバイスまたはユーザー グループにポリシーをデプ�
 
 
 
-### 手順 3: 両方のポリシーを展開する
+### <a name="step-3-deploy-both-policies"></a>手順 3: 両方のポリシーを展開する
 
 *両方*のポリシーは、*同じ* Intune グループに展開する必要があります。
 
@@ -77,6 +78,6 @@ Android デバイスまたはユーザー グループにポリシーをデプ�
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

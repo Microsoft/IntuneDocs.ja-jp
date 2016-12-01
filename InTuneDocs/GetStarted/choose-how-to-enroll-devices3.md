@@ -5,25 +5,25 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 24b8ecbf-7336-4543-8094-32688bda0b8f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 679a9c5a008bd94796b8aefe71c7da04174fc6e5
+ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
+ms.openlocfilehash: 09007527fe4c2c94c02a674ccef01c0bb8893709
 
 
 ---
-# モバイル デバイスの登録方法の選択
+# <a name="choose-how-to-enroll-mobile-devices"></a>モバイル デバイスの登録方法の選択
 
 次の一連の質問に答えることで、管理するデバイスの最適な登録方法が決まります。
 
-## **会社所有デバイスを共有しますか。デバイスごとに専用の利用者が登録されますか。**
+## <a name="are-your-company-owned-devices-shared-or-do-they-have-dedicated-users"></a>**会社所有デバイスを共有しますか。デバイスごとに専用の利用者が登録されますか。**
 
 > [!div class="button"]
 [共有 >](choose-how-to-enroll-devices4.md)
@@ -39,6 +39,6 @@ ms.openlocfilehash: 679a9c5a008bd94796b8aefe71c7da04174fc6e5
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO3-->
 
 

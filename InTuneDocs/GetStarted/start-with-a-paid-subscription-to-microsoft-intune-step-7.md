@@ -1,10 +1,11 @@
 ---
 title: "ポータル サイトをカスタマイズする | Microsoft Intune"
-description: "Intune サブスクリプションの会社のポータルをカスタマイズする方法を説明します"
+description: "Intune ポータル サイトでは、ユーザーはデバイスの登録、アプリのインストール、および IT 部署情報の検索など、一般的なタスクを行うことができます。"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,24 +14,46 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 1578ebcc6d4d01a6e9bee2f40cfcc07b3ae54cb2
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 15ef5c5b7f4c8aa2ceaa6867306e0e82a9835b02
 
 
 ---
 
+# <a name="customize-the-company-portal"></a>ポータル サイトをカスタマイズする
+ユーザーは、Intune ポータル サイトを使用して、会社のデータにアクセスしたり、デバイスの登録、アプリケーションのインストール、IT 部門からのサポート情報の検索などの一般的なタスクを実行したりできます。
 
-# ポータル サイトをカスタマイズする
-ユーザーは、[!INCLUDE[wit_iwportal_1](../includes/wit_iwportal_1_md.md)]を使用して、会社のデータにアクセスしたり、デバイスの登録、アプリケーションのインストール、IT 部門からのサポート情報の検索などの一般的なタスクを実行したりできます。
+Intune ポータル サイトは、ユーザーが会社のデータとアプリにアクセスできるようにします。 ポータル サイトは、次の 2 つの形式で使用できます。
+
+-   **ポータル サイト アプリ**: Intune を使用して管理するデバイスで利用できるアプリケーション。 [Android](/Intune/EndUser/using-your-android-device-with-intune)、[iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) および [Windows](/Intune/EndUser/using-your-windows-device-with-intune) 用のポータル サイトの詳細を、それぞれご確認ください。
+
+
+- **ポータル Web サイト**: エンドユーザーがポータル サイト アプリから実行できるタスクのほとんどを行うことができる Web サイト。 Intune ポータル サイトの URL は [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com) です。 この Web サイトの詳細については、「[Intune ポータル サイト Web サイトの使用](/Intune/EndUser/using-the-intune-company-portal-website)」を参照してください。
 
 > [!TIP]
 > ポータル サイトをカスタマイズすると、構成がポータル サイトの Web サイトとポータル サイト アプリの両方に適用されます。
 
-ポータル サイトをカスタマイズすることで、エンド ユーザーの利便性を向上させることができます。 これを行うには、テナント管理者またはサービス管理者として [Microsoft Intune 管理コンソール](https://manage.microsoft.com)にログインし、**[管理者]** &gt; **[ポータル サイト]** の順にクリックして、ポータル サイトの設定を構成します。
+ユーザーは、ポータル サイトで次のようなタスクを実行できます。
+
+-   デバイスの登録
+-   デバイスの状態の表示
+-   デバイスのリセット
+-   パスワードのリセット
+-   デバイスのリモートからのロック
+-   組織で展開されているソフトウェアのダウンロード
+-   サポートの IT 部門への連絡
+
+> [!NOTE]
+> 会社のポータル アプリは一部の国ではまだ使用できません。
+> __iOS__: iOS 用の会社のポータル アプリは、Apple iOS App Store を[利用可能なすべての地域に](https://go.microsoft.com/fwlink/?linkid=831284)公開されています。
+> __Android__: Android のポータル サイト アプリは現在、中国では利用できません。 これらの国の場合、代替ソリューションとして、[会社のポータル アプリの Android バージョンをサイドロード](https://www.microsoft.com/en-us/download/details.aspx?id=49140)します。  
+
+## <a name="customize-company-portal-settings"></a>ポータル サイト設定をカスタマイズする
+ポータル サイトをカスタマイズすることで、エンド ユーザーの利便性を向上させることができます。 テナントまたはサービス管理者として [Microsoft Intune 管理コンソール](https://manage.microsoft.com)にログインし、**[管理者]** &gt; **[ポータル サイト]** の順に選択して、ポータル サイトの設定を構成します。
 
 ![admin-console-admin-workspace-comp-portal-settings](./media/companyportal.png)
 
-## 会社の連絡先情報とプライバシーに関する声明
+## <a name="company-contact-information-and-privacy-statement"></a>会社の連絡先情報とプライバシーに関する声明
 会社名は、ポータル サイトのタイトルとして表示されます。 連絡先情報と詳細は、ポータル サイトの [IT に連絡] 画面でユーザーに対して表示されます。 プライバシーに関する声明は、ユーザーがプライバシー リンクをクリックすると表示されます。
 
 |フィールド名|最大長|詳細情報|
@@ -42,7 +65,7 @@ ms.openlocfilehash: 1578ebcc6d4d01a6e9bee2f40cfcc07b3ae54cb2
     |追加情報|120|**[IT に連絡]** ページに表示されます。|
     |会社のプライバシーに関する声明の URL|79|ポータル サイトでユーザーがプライバシー リンクをクリックすると表示される、各社のプライバシーに関する声明を指定できます。 https://www.contoso.com の形式で URL を入力します。|
 
-## サポートの連絡先
+## <a name="support-contacts"></a>サポートの連絡先
 サポート Web サイトは、ポータル サイトに表示されます。ユーザーは、サポート サイトからオンライン サポートを利用できます。
 
 |フィールド名|最大長|詳細情報|
@@ -50,7 +73,7 @@ ms.openlocfilehash: 1578ebcc6d4d01a6e9bee2f40cfcc07b3ae54cb2
     |サポート Web サイトの URL|150|ユーザーが使用するサポート Web サイトがある場合、その URL を指定します。 URL は、https://www.contoso.com という形式にする必要があります。 URL を指定しない場合、ポータル サイトの **[IT に連絡]** ページのサポート Web サイトには何も表示されません。|
     |Web サイト名|40|サポート Web サイトの URL に表示されるフレンドリ名です。 サポート Web サイトの URL を指定し、フレンドリ名を指定しない場合、ポータル サイトの **[IT に連絡]** ページに **[IT Web サイトに移動する]** が表示されます。|
 
-## 会社のブランドのカスタマイズ
+## <a name="company-branding-customization"></a>会社のブランドのカスタマイズ
 ポータル サイトのロゴや会社名、テーマの色や背景をカスタマイズできます。
 
 |フィールド名|詳細情報|
@@ -62,7 +85,7 @@ ms.openlocfilehash: 1578ebcc6d4d01a6e9bee2f40cfcc07b3ae54cb2
 
 変更を保存した後で、管理コンソールの **[ポータル サイト]** ページの下部に表示されるリンクを使用して、ポータル サイト Web サイトを表示できます。 これらのリンクは変更できません。 ユーザーがサインインするときに、これらのリンクでポータル サイトが表示されます。
 
-### 次のステップ
+### <a name="next-steps"></a>次のステップ
 これで終了です。 *Intune のクイック スタート ガイド*の手順 7 が完了しました。
 >[!div class="step-by-step"]
 
@@ -70,6 +93,6 @@ ms.openlocfilehash: 1578ebcc6d4d01a6e9bee2f40cfcc07b3ae54cb2
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO4-->
 
 

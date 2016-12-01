@@ -1,11 +1,11 @@
 ---
 title: "PowerShell を使用して Intune ライセンスを管理する | Microsoft Intune"
-description: "PowerShell を使用して Intune ライセンスを管理する"
+description: "PowerShell を使用して Intune ライセンスを管理します"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: d2d31c80-c32c-4315-8271-1b0cf9a1f78a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8f99159079002b9e44dd1ba328b0f2fc079770d8
-ms.openlocfilehash: 9a3e28cad00f99035b18182a33c24bcb714cca19
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 8f0786bc821c4a93e5f1ff4bf3d693dd6d59ca8e
 
 
 ---
 
-# PowerShell を使用して Intune ライセンスを管理する
+# <a name="manage-intune-licenses-using-powershell"></a>PowerShell を使用して Intune ライセンスを管理する
 Intune サービスにサインインして使用したり、デバイスを管理対象に登録したりするためには、「[Manage Intune licenses (Intune ライセンスの管理)](start-with-a-paid-subscription-to-microsoft-intune-step-4.md)」で説明されているとおり、先に各ユーザーに Intune サブスクリプションのライセンスを割り当てる必要があります。 ただし、Microsoft Enterprise Mobility + Security を使用している組織には、EMS パッケージの Azure Active Directory Premium または Intune サービスのみを必要とするユーザーがいる可能性があります。 [Azure Active Directory PowerShell コマンドレット](https://msdn.microsoft.com/library/jj151815.aspx)を使用して、いずれかのサービスまたはサービスのサブセットを割り当てることができます。
 
 EMS サービスのユーザー ライセンスを選択的に割り当てるには、[Azure Active Directory Module for Windows PowerShell](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule) がインストールされているコンピューターで管理者として PowerShell を開きます。 PowerShell は、ローカル コンピューターまたは ADFS サーバーにインストールできます。
@@ -60,7 +60,7 @@ EMS サービスのユーザー ライセンスを選択的に割り当てるに
 
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
 
-### 次のステップ
+### <a name="next-steps"></a>次のステップ
 これで終了です。 *Intune のクイック スタート ガイド*の手順 4 が完了しました。
 >[!div class="step-by-step"]
 
@@ -68,6 +68,6 @@ EMS サービスのユーザー ライセンスを選択的に割り当てるに
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

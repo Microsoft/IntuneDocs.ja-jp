@@ -1,9 +1,9 @@
 # [理解と調査](/intune/understand-explore/introduction-to-microsoft-intune)
-# [作業の開始](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [概要](/intune/get-started/get-started)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 
 # [新機能](/intune/whats-new/whats-new-in-microsoft-intune)
-# [展開と使用](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
+# 展開と使用
 ## [デバイスとアプリのライフサイクルの概要](overview-of-device-and-app-lifecycles-in-microsoft-intune.md)
 ### [デバイスのライフサイクル](overview-of-device-lifecycle-in-microsoft-intune.md)
 ### [アプリのライフサイクル](overview-of-app-lifecycle-in-microsoft-intune.md)
@@ -12,13 +12,13 @@
 #### [iOS と Mac の管理](set-up-ios-and-mac-management-with-microsoft-intune.md)
 #### [Android の管理](set-up-android-management-with-microsoft-intune.md)
 #### [Android for Work の管理](set-up-android-for-work.md)
-#### [Windows デバイスの管理 ](set-up-windows-device-management-with-microsoft-intune.md)
+#### [Windows デバイスの管理](set-up-windows-device-management-with-microsoft-intune.md)
 #### [Windows 10 Mobile と Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 ### [企業所有のデバイスの管理](manage-corporate-owned-devices.md)
 #### [企業所有の iOS デバイスの登録](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
-##### [iOS のセットアップ アシスタントの登録](ios-setup-assistant-enrollment-in-microsoft-intune.md)
-##### [iOS の直接登録](ios-direct-enrollment-in-microsoft-intune.md)
-##### [iOS の DEP 登録](ios-device-enrollment-program-in-microsoft-intune.md)
+##### [セットアップ アシスタントの登録](ios-setup-assistant-enrollment-in-microsoft-intune.md)
+##### [直接登録](ios-direct-enrollment-in-microsoft-intune.md)
+##### [DEP 登録](ios-device-enrollment-program-in-microsoft-intune.md)
 #### [デバイス登録マネージャーを使用した登録](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)
 #### [IMEI 番号を使用したデバイスへのタグ付け](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md)
 ### [Exchange ActiveSync を使用した MDM](mobile-device-management-with-exchange-activesync-and-microsoft-intune.md)
@@ -35,6 +35,9 @@
 ### [ポリシーを使用したデバイスの設定と機能の管理](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS の設定](ios-policy-settings-in-microsoft-intune.md)
 #### [Android と Samsung KNOX の設定](android-policy-settings-in-microsoft-intune.md)
+##### [カスタム ポリシーを使用して、事前共有キーを使用した Wi-Fi プロファイルを作成する](pre-shared-key-wi-fi-profile.md)
+##### [カスタム ポリシーを使用して、Android デバイスにアプリごとの VPN プロファイルを作成する](per-app-vpn-for-android-pulse-secure.md)
+##### [カスタム ポリシーを使用して、Samsung KNOX デバイス用のアプリを許可またはブロックする](custom-policy-to-allow-and-block-samsung-knox-apps.md)
 #### [Android for Work の設定](android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Windows 8 と Windows 8.1 の設定](windows-configuration-policy-settings-in-microsoft-intune.md)
 #### [Windows Phone 8.1 の設定](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
@@ -81,17 +84,17 @@
 #### [ボリューム購入した Windows アプリを管理する](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
 
 ## [アプリの構成](update-apps-using-microsoft-intune.md)
-### [アプリを更新する ](update-apps-using-microsoft-intune.md)
+### [アプリを更新する](update-apps-using-microsoft-intune.md)
 ### [iOS アプリ構成ポリシー](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
 ### [Android for Work アプリ構成ポリシー](afw-app-configuration-policy.md)
 ### [iOS モバイル アプリ プロビジョニング プロファイル](ios-mobile-app-provisioning-profiles.md)
 ### [インターネット アクセスを管理する](manage-internet-access-using-managed-browser-policies.md)
-
+### [LOB アプリをサイドロードする](sideload-apps-for-windows.md)
 
 ## [アプリとデータを保護する](protect-apps-and-data-with-microsoft-intune.md)
 ### [デバイス コンプライアンス ポリシー](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 #### [デバイス コンプライアンス ポリシーの作成](create-a-device-compliance-policy-in-microsoft-intune.md)
-#### [ Android](android-compliance-policy-settings-in-microsoft-intune.md)
+#### [Android](android-compliance-policy-settings-in-microsoft-intune.md)
 #### [Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
 #### [iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
 #### [Windows と Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
@@ -107,6 +110,7 @@
 #### [Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [電子メールへのアクセスを制限する: 例](restrict-email-access-example-scenarios.md)
 ### [ポリシーで管理されたアプリにのみ Office 365 サービスへのアクセスを許可する](allow-policy-managed-apps-access-to-o365.md)
+#### [アプリと MAM CA](use-apps-with-mam-ca.md)
 #### [Exchange Online](mam-ca-for-exchange-online.md)
 #### [ADAL がないアプリをブロックする](block-apps-with-no-modern-authentication.md)
 ### [ネットワークへのアクセスを制限する (Cisco ISE)](restrict-access-to-networks.md)
@@ -137,7 +141,7 @@
 
 ## [アプリとデータをインベントリから削除する](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
 ### [フル ワイプまたは選択的ワイプを使用する](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-### [アプリをインベントリから削除する ](retire-apps-using-microsoft-intune.md)
+### [アプリをインベントリから削除する](retire-apps-using-microsoft-intune.md)
 ### [管理対象の業務用アプリのデータをワイプする](Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [エンドユーザー エクスペリエンスに関するリソース](what-to-tell-your-end-users-about-using-microsoft-intune.md)
@@ -150,6 +154,6 @@
 # [トラブルシューティング](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 
