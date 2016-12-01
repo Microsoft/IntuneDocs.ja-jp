@@ -14,13 +14,13 @@ ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
-ms.openlocfilehash: 040413b59c81c20cf579660a83acebc494c0a1b9
+ms.sourcegitcommit: 656c93771776fd317f2b8d91bc59125fba1eb0b9
+ms.openlocfilehash: 8b19cb740ed34b479fa8c4f5e2c1d13f13cda1f4
 
 
 ---
 
-# <a name="specify-corporateowned-devices-with-international-mobile-equipment-identity-imei-numbers"></a>IMEI (国際移動体装置識別番号) を使って企業所有のデバイスを指定する
+# <a name="specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers"></a>IMEI (国際移動体装置識別番号) を使って企業所有のデバイスを指定する
 Microsoft Intune では、管理者が IMEI (International Mobile Equipment Identity: 国際移動体装置識別番号) をモバイル デバイスのプラットフォームにインポートできます。IMEI 番号は、企業所有のモバイル デバイスを識別するために役立ちます。 Intune にデバイスが登録されると、デバイスの **[グループ]** > **[概要]** > **[すべてのデバイス]** に IMEI 番号がインポートされています。 **[デバイス グループ]** の一覧で、インポートされた IMEI 番号を持つデバイスは、**[所有権]** 欄に **[会社]** と表示されます。
 
 1. [Microsoft Intune の管理コンソール](http://manage.microsoft.com)で、**[グループ]** &gt; **[すべてのデバイス]** &gt; **[会社の事前登録済みデバイス]** &gt; **[IMEI (すべてのプラットフォーム) を使用]** に移動し、**[デバイスの追加]** を選択します。 デバイスの追加方法は 2 つあります。
@@ -40,7 +40,7 @@ Microsoft Intune では、管理者が IMEI (International Mobile Equipment Iden
 
     -   **デバイスの詳細を手動で追加** - 最大 15 台のデバイスの IMEI 番号とデバイスの詳細を入力します。
 
-   *詳細*は、管理作業で使う情報で、デバイスに関連付けられた IMEI 番号を識別できます。 この情報はデバイスには送信されませんが、Intune のコンソールに表示されます。
+   *[詳細]* フィールドは管理用です。 ハードウェア ID ごとにリストされている企業所有デバイスのリストでデバイスを識別するのに役立つ詳細を指定することができます。 この情報はデバイスには送信されませんが、Intune のコンソールに表示されます。
 
 2.   **[次へ]** を選択します。
 3.  **[デバイスの確認]** ウィンドウで、インポートされたデバイスの IMEI 番号を確認できます。 また、再インポートされている IMEI 番号の**詳細**を上書きするかどうかを決めることもできます。 **[上書き]** ボックスをオフにすると、現在の詳細が保持されます。 **[完了]** を選択して、IMEI 番号をインポートします。
@@ -50,6 +50,6 @@ IMEI 番号を持つデバイスを Intune に登録する (通常は、ユー�
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

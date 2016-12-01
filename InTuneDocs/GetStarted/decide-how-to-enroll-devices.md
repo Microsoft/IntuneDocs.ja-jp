@@ -5,21 +5,21 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 178df739-d3b9-43cb-8440-c5c110b1276b
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: f4e6c17624f509b83ca594750c0db8931bc54b35
+ms.sourcegitcommit: 149f3a3310907d131affeaad4bd372aa60be9206
+ms.openlocfilehash: b5cc645ea50e6c4bb521e04371037c3978c9426a
 
 
 ---
 
-# モバイル デバイスの登録方法の選択
+# <a name="choose-how-to-enroll-mobile-devices"></a>モバイル デバイスの登録方法の選択
 
 モバイル デバイス登録は、スマートフォン、タブレット、PC を Microsoft Intune で管理できるようにするためのプロセスです。 管理者は、デバイスの最適な登録方法を次の基準で決定する必要があります。
 
@@ -29,7 +29,7 @@ ms.openlocfilehash: f4e6c17624f509b83ca594750c0db8931bc54b35
 
 次の質問に答えることで、管理するデバイスの最適な登録方法が決まります。
 
-## **社員が自分のデバイスを持ち込みますか。それとも、会社が提供しますか。**
+## <a name="do-employees-bring-their-own-devices-or-are-devices-provided-by-your-organization"></a>**社員が自分のデバイスを持ち込みますか。それとも、会社が提供しますか。**
 
   - **ユーザーが所有するデバイス** - "BYOD” (Bring Your Own Device) 登録 – ユーザーは自分のデバイスに Intune ポータル サイト アプリをインストールし、登録できます。電子メール、会社のアプリ、会社のデータ、サポートなど、会社のリソースにアクセスできます。  
 
@@ -38,12 +38,12 @@ ms.openlocfilehash: f4e6c17624f509b83ca594750c0db8931bc54b35
 > [!div class="button"]
 [BYOD 登録 >](#what-byod-devices-can-your-users-enroll)   [COD 登録 >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
 
-## **ユーザーはどのような BYOD デバイスを登録できますか。**
+## <a name="what-byod-devices-can-your-users-enroll"></a>**ユーザーはどのような BYOD デバイスを登録できますか。**
 
 > [!div class="button"]
 [Android](/intune/deploy-use/set-up-android-management-with-microsoft-intune) [iOS と Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) [Windows 10 Mobile と Window Phone](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune) [Windows PC](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
-## **会社所有デバイスを共有しますか。デバイスごとに専用の利用者が登録されますか。**
+## <a name="are-your-company-owned-devices-shared-or-do-they-have-dedicated-users"></a>**会社所有デバイスを共有しますか。デバイスごとに専用の利用者が登録されますか。**
 
 - **会社所有のデバイスを共有** - デバイスの利用者が 1 名ではなく、通常、電子メールにアクセスできるように設定されません。 たとえば、キオスク デバイスやタスク指向デバイスなどがあります。利用者が必要に応じてプールから取り出し、利用後に返却します。 推奨される登録方法は、デバイスのプラットフォームにより異なります。
 
@@ -53,12 +53,12 @@ ms.openlocfilehash: f4e6c17624f509b83ca594750c0db8931bc54b35
 [共有 >](#what-operating-system-are-your-shared-devices-running)   [専用 >](#how-will-you-manage-dedicated-ios-devices)
 
 
-## **共有デバイスが実行しているのはどのようなオペレーティング システムですか。**
+## <a name="what-operating-system-are-your-shared-devices-running"></a>**共有デバイスが実行しているのはどのようなオペレーティング システムですか。**
 
-  > [!div class="button"]
-  [Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
+> [!div class="button"]
+[Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
 
-## **共有 iOS デバイスはどのような方法で管理しますか。**
+## <a name="how-will-you-manage-shared-ios-devices"></a>**共有 iOS デバイスはどのような方法で管理しますか。**
 
 - **Apple のデバイス登録プログラム (DEP)** - DEP で購入し、管理している iOS デバイスが対象となります。登録プロファイルが利用されます。 利用者がデバイスの電源を初めて入れると、デバイスが DEP プロファイルをダウンロードし、プロファイル DEP で登録します。
 
@@ -69,7 +69,7 @@ ms.openlocfilehash: f4e6c17624f509b83ca594750c0db8931bc54b35
   > [!div class="button"]
   [iOS の DEP 登録 >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [iOS の直接登録 >](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)  [DEM 登録 >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)。
 
-## **専用 iOS デバイスはどのような方法で管理しますか。**
+## <a name="how-will-you-manage-dedicated-ios-devices"></a>**専用 iOS デバイスはどのような方法で管理しますか。**
 
 次のようにして、会社が所有するデバイスを専用ユーザーに登録できます。
 
@@ -84,6 +84,6 @@ ms.openlocfilehash: f4e6c17624f509b83ca594750c0db8931bc54b35
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -5,25 +5,25 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 242de106-36a0-469f-a89c-4173ae8bdd7f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: dac8e71a74609f894c97009343020ac72fa61566
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: a30634f7a33e99083dbb5e1c2cca61352c3eed14
 
 
 ---
-# モバイル デバイスの登録方法の選択
+# <a name="choose-how-to-enroll-mobile-devices"></a>モバイル デバイスの登録方法の選択
 
 次の一連の質問に答えることで、管理するデバイスの最適な登録方法が決まります。
 
-## **どの BYOD プラットフォームを有効にしますか。**
+## <a name="which-byod-platform-do-you-want-to-enable"></a>**どの BYOD プラットフォームを有効にしますか。**
 
 > [!div class="button"]
 [Android >](/intune/deploy-use/set-up-android-management-with-microsoft-intune)
@@ -40,6 +40,6 @@ ms.openlocfilehash: dac8e71a74609f894c97009343020ac72fa61566
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -1,10 +1,11 @@
 ---
 title: "ユーザーとデバイスを編成するグループを作成する | Microsoft Intune"
-description: "Intune サブスクリプションのユーザーとグループを作成する方法について説明します"
+description: "Intune サブスクリプションのユーザーとグループを作成します"
 keywords: 
-author: barlanmsft
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +14,28 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c1e08cc49d75303f6793894e3c8a040f6e7a8b1
-ms.openlocfilehash: 3b2f896ea6c3e66924dbd8b35fcddcccd0b65ca6
+ms.sourcegitcommit: 4f8db75ed17e70dae5d3507b6af33a835c1658e9
+ms.openlocfilehash: 5195de40f35085c45ae63957da1a9058ed7d6493
 
 
 ---
 
 
-# ユーザーとデバイスを編成するグループを作成する
+# <a name="create-groups-to-organize-users-and-devices"></a>ユーザーとデバイスを編成するグループを作成する
 Intune の [グループ] を使用すると、デバイスとユーザーを柔軟に管理できます。 グループは、組織ごとのニーズ (地理的位置、部門、ハードウェアの特性など) に合わせて設定できます。一連のユーザーに対するポリシーの展開から、一連のデバイスに対するアプリケーションの展開まで、まざまな管理タスクをそれらのグループを使って実行することができます。
+
+## <a name="group-management-moving-to-azure-ad"></a>Azure AD へのグループ管理の移行
+
+**2016 年 11 月以降**、Azure Active Directory (AD) ポータルでは新しいアカウントでユーザーとデバイス グループが管理されます。 2016 年 12 月には、Intune 製品チームは既存顧客の新しい Azure AD ベースのグループ管理操作環境への移行を開始します。 すべてのユーザーおよびデバイス グループは、Azure AD セキュリティ グループに移行されます。 お客様の日常業務への影響を最小限に抑えることができ、お客様のユーザーに影響がないものと予想されるまで、移行は開始されません。 また、アカウント移行前にはお客様にご連絡します。
+
+
+>[!IMPORTANT]
+>
+>Intune ポータルでグループ ワークスペースを開いたときに、Azure Active Directory ポータルへのリンクと共に、"**Intune ユーザー グループは、Azure Active Directory のグループとして管理されるようになりました**" というメッセージが表示された場合は、Intune でのグループ管理に*新しい* Azure AD セキュリティ グループのアプローチが既に使用されています。 グループの作成方法の詳細については、「[Azure Active Directory でのグループの管理](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-manage-groups)」を参照してください。
+>
+>Azure AD ポータルへのリンクが表示されない場合は、グループ管理にはまだ Intune ポータルが使用されています。
+
+## <a name="group-management-in-the-intune-portal"></a>Intune ポータルでのグループ管理
 
 デバイスとユーザー グループは両方とも Intune 管理コンソールの [グループ] ワークスペースで作成します。
 
@@ -32,7 +46,7 @@ Intune の [グループ] を使用すると、デバイスとユーザーを柔
 > グループの使用方法の詳細については、「[Microsoft Intune でユーザーとデバイスの管理にグループを使用する](/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)」をご覧ください。
 
 
-## デバイス グループを作成する
+## <a name="create-a-device-group"></a>デバイス グループを作成する
 デバイス グループは、アプリや更新プログラムの展開のほか、各種機能の構成に使用します。 たとえば、"My Devices" というグループを設定するには、次の手順に従います。
 
 1.  [Intune 管理コンソール](https://manage.microsoft.com/)で、**[グループ]** > **[概要]** > **[グループの作成]** を選択します。
@@ -47,7 +61,7 @@ Intune の [グループ] を使用すると、デバイスとユーザーを柔
 
 新しく作成したグループは、**[グループ]** 一覧の **[グループ]** ワークスペースにある **[すべてのデバイス]** の下に表示されます。 ここから、グループを編集または削除することもできます。
 
-## ユーザー グループを作成する
+## <a name="create-a-user-group"></a>ユーザー グループを作成する
 ソフトウェアやデバイスのポリシーは、ユーザー グループを使用して展開します。 たとえば、"Intune Users" というグループを設定するには、次の手順に従います。
 
 1.  [Intune 管理コンソール](https://manage.microsoft.com/)で、**[グループ]** > **[概要]** > **[グループの作成]** を選択します。
@@ -66,7 +80,7 @@ Intune の [グループ] を使用すると、デバイスとユーザーを柔
 
 
 
-### 次のステップ
+### <a name="next-steps"></a>次のステップ
 これで終了です。 *Intune のクイック スタート ガイド*の手順 5 が完了しました。
 
 >[!div class="step-by-step"]
@@ -75,6 +89,6 @@ Intune の [グループ] を使用すると、デバイスとユーザーを柔
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Nov16_HO4-->
 
 

@@ -2,10 +2,10 @@
 title: "デバイスを管理する方法を選択する | Microsoft Intune"
 description: "デバイスを登録および管理するさまざまな方法について説明します。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 7b5cadfbc759b025fdad995e34040762b15e0d30
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: fccdf689868dbb181a171328fb7a8d186b9cb309
 
 
 ---
@@ -65,6 +65,6 @@ Intune がサポートしているデバイスと PC については、「[サ�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO4-->
 
 

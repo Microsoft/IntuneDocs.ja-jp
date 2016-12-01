@@ -1,4 +1,4 @@
-# [理解と調査](introduction-to-microsoft-intune.md)
+# 理解と調査
 ## [Intune の概要](introduction-to-microsoft-intune.md)
 ## [Intune の評価ガイド](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 ### [30 日間評価版にサインインまたはサインアップする](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
@@ -11,7 +11,7 @@
 ## [一般的なシナリオ](common-ways-to-use-intune.md)
 ## [用語集](intune-glossary.md)
 
-# [作業の開始](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [概要](/intune/get-started/get-started)
 # [新機能](/intune/whats-new/whats-new-in-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [展開と使用](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
@@ -19,6 +19,6 @@
 # [トラブルシューティング](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 
