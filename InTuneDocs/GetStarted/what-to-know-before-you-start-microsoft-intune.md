@@ -1,43 +1,34 @@
 ---
-title: "Microsoft Intune を使い始める前に | Microsoft Intune"
+title: "前提条件 | Microsoft Intune"
 description: "Intune の前提条件と要件へのリンク"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/10/2016
+ms.date: 11/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
-ms.reviewer: jeffgilb
+ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1ed86339103f165092776ec94b50c5a02d054236
-ms.openlocfilehash: 7a5ff0f021b487f4586ca3199c6db2cb0ada3930
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: fde2cac719a7c8d8461db49014c42957db2abe6b
 
 
 ---
 
-# <a name="what-to-know-before-you-start-microsoft-intune"></a>Microsoft Intune を使い始める前に
+# <a name="prerequisites-to-getting-started-with-intune"></a>Intune の使用を開始するための前提条件
 
 Microsoft Intune のセットアップを開始する前に、次の要件を確認してください。
 
-- [サポートされるモバイル デバイスとコンピューター](supported-mobile-devices-and-computers.md)
-- [Intune でサポートされている Web ブラウザー](supported-web-browsers.md)
-- [Microsoft Intune に使用するネットワーク インフラストラクチャの要件](network-infrastructure-requirements-for-microsoft-intune.md)
-- [Microsoft Intune の管理者アカウント、Web サイト、アクセス許可](administrative-accounts-websites-perms.md)
-- [Microsoft Intune ポータル サイト](microsoft-intune-company-portal.md)
-- [Microsoft クラウド サービスおよび製品と Intune の統合](integration-with-cloud-services.md)
-- [Intune のネットワーク帯域幅の使用](network-bandwidth-use.md)
-- [Microsoft Intune でのカスタム ドメイン名](domain-names-for-microsoft-intune.md)
-
-
-Intune を使用する前に、「[Intune のモバイル デバイス管理機能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)」を確認することをお勧めします。 最初は評価版のサブスクリプションを使用し、後から製品版のサブスクリプションに変換することができます。 詳細については、[Microsoft Intune の購入方法](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx)に関するページを参照してください。
+- [サポートされているデバイスとブラウザー](supported-mobile-devices-and-computers.md)
+- [ネットワーク帯域幅の使用量](network-bandwidth-use.md)
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 
