@@ -14,15 +14,15 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: 51e5f248c5e8759d5992918a99e1f114e2614142
+ms.sourcegitcommit: 656c93771776fd317f2b8d91bc59125fba1eb0b9
+ms.openlocfilehash: 83b89d06793f6f3934537408fb600b3b89afd35b
 
 
 ---
 
 
-# <a name="enroll-corporateowned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Microsoft Intune のデバイス登録マネージャーを使用した企業所有デバイスの登録
-組織は Intune を使用して、単一のユーザー アカウントで多数のモバイル デバイスを管理することができます。 *デバイス登録マネージャー* (DEM) アカウントは、最大で 1,000 台のデバイスを登録できる特別な Intune アカウントです。 このアカウントで登録したデバイスは、個人用 ("BYOD") デバイスではなく共有デバイスとして使用することをお勧めします。 たとえば、ユーザーは "ネイティブ" メール アプリを使用できなくなります。
+# <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Microsoft Intune のデバイス登録マネージャーを使用した企業所有デバイスの登録
+組織は Intune を使用して、単一のユーザー アカウントで多数のモバイル デバイスを管理することができます。 *デバイス登録マネージャー* (DEM) アカウントは、最大で 1,000 台のデバイスを登録できる特別な Intune アカウントです。 登録される各デバイスは 1 つのライセンスを使用します。 このアカウントで登録したデバイスは、個人用 ("BYOD") デバイスではなく共有デバイスとして使用することをお勧めします。 たとえば、ユーザーは "ネイティブ" メール アプリを使用できなくなります。 DEM のライセンスはデバイス単位であり、ユーザー単位ではありません。
 
 一例として、デバイス登録マネージャーのユーザー アカウントをストア マネージャーやスーパーバイザーに割り当てた場合、これらのユーザーは以下の操作を実行できます。
 
@@ -70,7 +70,7 @@ ms.openlocfilehash: 51e5f248c5e8759d5992918a99e1f114e2614142
 
 7.  Intune アカウントを **[ユーザー ID]** に入力し、**[OK]** を選択します。 デバイス登録マネージャーのユーザーを Intune 管理者にすることはできません。
 
-8.  これで、デバイス登録マネージャーが、BYOD シナリオの場合にエンド ユーザーがポータル サイトで実行する際と同じ手順で、モバイル デバイスを登録できるようになりました。
+8.  これで、デバイス登録マネージャーが、BYOD シナリオの場合にエンド ユーザーがポータル サイトで実行する際と同じ手順で、モバイル デバイスを登録できるようになりました。 マネージャーであるエンド ユーザーは、ポータル サイト アプリをインストールし、DEM の資格情報を使用して最大 1,000 台のデバイスを登録することができます。
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>Intune からのデバイス登録マネージャーの削除
 
@@ -96,6 +96,6 @@ ms.openlocfilehash: 51e5f248c5e8759d5992918a99e1f114e2614142
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

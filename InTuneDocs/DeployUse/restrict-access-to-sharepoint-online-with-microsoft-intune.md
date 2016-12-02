@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
-ms.openlocfilehash: 76ac4c92d090ef0057bd7c9687b169cd12b901a1
+ms.sourcegitcommit: 4f6e7525ae2a125851ad402644d5fbc8767c77dc
+ms.openlocfilehash: 9bfc8886b464452f8fe35d4b740607ef3bc07a71
 
 
 ---
 
-# Microsoft Intune で SharePoint Online へのアクセスを制限する
+# <a name="restrict-access-to-sharepoint-online-with-microsoft-intune"></a>Microsoft Intune で SharePoint Online へのアクセスを制限する
 [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] の条件付きアクセスを使用して、SharePoint Online 上にあるファイルへのアクセスを制御します。
 条件付きアクセスには、2 つのコンポーネントがあります。
 - デバイス コンプライアンス ポリシー。準拠したデバイスと見なされるには、このポリシーに準拠している必要があります。
@@ -55,12 +55,12 @@ SharePoint Online の条件付きアクセス ポリシーを構成する**前�
 
 -   デバイスがポリシーに準拠していない場合は、ユーザーを [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ポータル サイト Web サイトに導くメッセージが表示されます。このポータルで、問題とその修復方法に関する情報を確認することができます。
 
-**条件付きアクセスはすべての SharePoint サイトに適用され、外部共有がブロックされる**
+**条件付きアクセスは外部共有に適用されません**。 テナントまたはサイト コレクションで外部共有を使用しない方法については、「[SharePoint Online 環境の外部共有を管理する](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)」をご覧ください。
 
 >[!NOTE]
 >SharePoint Online で条件付きアクセスを有効にする場合は、[Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) のトピックの説明に従って、一覧にあるドメインを無効にすることをお勧めします。  
 
-## モバイル デバイスのサポート
+## <a name="support-for-mobile-devices"></a>モバイル デバイスのサポート
 - iOS 8.0 以降
 - Android 4.0 以降、Samsung Knox Standard 4.0 以降
 - Windows Phone 8.1 以降
@@ -68,11 +68,11 @@ SharePoint Online の条件付きアクセス ポリシーを構成する**前�
 **iOS** と **Android** デバイス上のブラウザーからアクセスした場合、SharePoint Online へのアクセスを制限することができます。  準拠デバイスでサポートされているブラウザーからのアクセスのみが許可されます。
 * Safari (iOS)
 * Chrome (Android)
-* 管理対象ブラウザー (iOS と Android)
+* 管理対象ブラウザー (iOS と Android 5.0 以降)
 
 **サポートされていないブラウザーはブロックされます**。
 
-## PC のサポート
+## <a name="support-for-pcs"></a>PC のサポート
 - Windows 8.1 以降 (Intune に登録されている場合)
 - Windows 7.0、Windows 8.1、または Windows 10 (ドメインに参加している場合)
 > [!NOTE]
@@ -92,9 +92,9 @@ AAD DRS は、Intune や Office 365 のお客様に対して自動的にアク�
     先進認証により、Active Directory Authentication Library (ADAL) ベースのサインインが Office 2013 Windows クライアントに導入され、**多要素認証**や**証明書ベースの認証**などのより強力なセキュリティを使用できるようになります。
 
 
-## SharePoint Online の条件付きアクセスの構成
+## <a name="configure-conditional-access-for-sharepoint-online"></a>SharePoint Online の条件付きアクセスの構成
 
-### 手順 1. Active Directory セキュリティ グループを構成する
+### <a name="step-1-configure-active-directory-security-groups"></a>手順 1. Active Directory セキュリティ グループを構成する
 開始する前に、条件付きアクセス ポリシーの Azure Active Directory セキュリティ グループを構成します。 これらのグループは、 **Office 365 管理センター**または **Intune アカウント ポータル**で構成できます。 これらのグループは、ユーザーをポリシーの対象とするか、または除外するために使用されます。 ユーザーがポリシーの対象となる場合、ユーザーに使用される各デバイスがリソースにアクセスするには、ポリシーを遵守している必要があります。
 
 SharePoint Online ポリシーには、次の 2 つのグループの種類を指定できます。
@@ -105,7 +105,7 @@ SharePoint Online ポリシーには、次の 2 つのグループの種類を�
 
 ユーザーが両方のグループに含まれている場合は、ポリシーから除外されます。
 
-### 手順 2. コンプライアンス ポリシーを構成し、展開する
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>手順 2. コンプライアンス ポリシーを構成し、展開する
 まだ行っていない場合は、コンプライアンス ポリシーを作成し、SharePoint Online ポリシーの対象となるユーザーに対して展開します。
 
 > [!NOTE]
@@ -118,7 +118,7 @@ SharePoint Online ポリシーには、次の 2 つのグループの種類を�
 
 準備ができたら、 **手順 3**に進みます。
 
-### 手順 3. SharePoint Online ポリシーを構成する
+### <a name="step-3-configure-the-sharepoint-online-policy"></a>手順 3. SharePoint Online ポリシーを構成する
 次に、管理デバイスおよび準拠デバイスのみが SharePoint Online にアクセスできるように要求するポリシーを構成します。 このポリシーは、Azure Active Directory に格納されます。
 
 #### <a name="bkmk_spopolicy"></a>
@@ -148,11 +148,11 @@ SharePoint Online ポリシーには、次の 2 つのグループの種類を�
 
      Windows PC の場合は、ドメインに参加しているか、または [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録されてポリシーに準拠している必要があります。 以下の要件を設定できます。
 
-     -   **[デバイスはドメインに参加しているか準拠デバイスである必要があります]。** このオプションを選択した場合、PC はドメインに参加しているか、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] で設定されたポリシーに準拠している必要があります。 PC がどちらの要件も満たさない場合、ユーザーはデバイスを [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録するように求められます。
+     -   **デバイスはドメインに参加しているか準拠デバイスである必要があります。** このオプションを選択した場合、PC はドメインに参加しているか、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] で設定されたポリシーに準拠している必要があります。 PC がどちらの要件も満たさない場合、ユーザーはデバイスを [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録するように求められます。
 
-     -   **[デバイスはドメインに参加している必要があります]。** このオプションを選択した場合、PC は Exchange Online にアクセスするために、ドメインに参加する必要があります。 PC がドメインに参加していない場合、電子メールへのアクセスはブロックされ、ユーザーは IT 管理者に連絡するように求められます。
+     -   **デバイスはドメインに参加している必要があります。** このオプションを選択した場合、PC は Exchange Online にアクセスするために、ドメインに参加する必要があります。 PC がドメインに参加していない場合、電子メールへのアクセスはブロックされ、ユーザーは IT 管理者に連絡するように求められます。
 
-     -   **[デバイスは準拠デバイスである必要があります]。** このオプションを選択した場合、PC は [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録され、ポリシーに準拠している必要があります。 PC を登録していない場合は、登録する方法についての手順を示したメッセージが表示されます。
+     -   **デバイスは準拠デバイスである必要があります** このオプションを選択した場合、PC は [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録され、ポリシーに準拠している必要があります。 PC を登録していない場合は、登録する方法についての手順を示したメッセージが表示されます。
 
 4.   SharePoint Online と OneDrive for Business への **[ブラウザー アクセス]** では、サポートされているブラウザー (Safari (iOS)、Chrome (Android)) を通じてのみ、Exchange Online へのアクセスを許可することを選択できます。 その他のブラウザーからのアクセスはブロックされます。  OneDrive のアプリケーションのアクセス用に選択した同じプラットフォームの制限が、ここにも適用されます。
 
@@ -162,13 +162,13 @@ SharePoint Online ポリシーには、次の 2 つのグループの種類を�
   3.    **[ブラウザー アクセスを有効にする]** ボタンを押します。
   4.  Chrome ブラウザーで Office 365 からサインアウトして、Chrome を再起動します。
 
-  **iOS と Android** プラットフォームで、サービスにアクセスするために使用するデバイスを識別するために、Azure Active Directory はデバイスにトランスポート層セキュリティ (TLS) 証明書を発行します。  デバイスには、次のスクリーン ショットに示すように、証明書を選択するエンドユーザーに対してプロンプトで証明書が表示されます。 エンドユーザーは、ブラウザーの使用を続けられるように、この証明書を選択する必要があります。
-
-  **iOS**
-
-  ![iPad 上の証明書プロンプトのスクリーンショット](../media/mdm-browser-ca-ios-cert-prompt.png)
+  **iOS と Android** プラットフォームで、サービスにアクセスするために使用するデバイスを識別するために、Azure Active Directory はデバイスにトランスポート層セキュリティ (TLS) 証明書を発行します。  デバイスには、次のスクリーン ショットに示すように、証明書を選択するエンドユーザーに対してプロンプトで証明書が表示されます。 エンドユーザーは、ブラウザーを使用し続けるには、まずこの証明書を選択する必要があります。
 
   **Android**
+
+  ![iPad での証明書プロンプトのスクリーンショット](../media/mdm-browser-ca-ios-cert-prompt.png)
+
+  **Outlook Web Access (OWA)**
 
   ![Android デバイス上の証明書プロンプトのスクリーンショット](../media/mdm-browser-ca-android-cert-prompt.png)
 5.  **[対象グループ]**で、**[変更]** を選択して、ポリシーを適用する Azure Active Directory セキュリティ グループを選択します。 すべてのユーザーを対象にすることも、選んだユーザーのグループのみを対象にすることもできます。
@@ -179,7 +179,7 @@ SharePoint Online ポリシーには、次の 2 つのグループの種類を�
 
 条件付きアクセス ポリシーを展開する必要はありません。直ちに有効になります。
 
-### 手順 4. コンプライアンスと条件付きアクセス ポリシーを監視する
+### <a name="step-4-monitor-the-compliance-and-conditional-access-policies"></a>手順 4. コンプライアンスと条件付きアクセス ポリシーを監視する
 **[グループ]** ワークスペースで、デバイスの状態を表示できます。
 
 モバイル デバイス グループを選択し、 **[デバイス]** タブで、次の **[フィルター]**のいずれかを選択します。
@@ -190,11 +190,11 @@ SharePoint Online ポリシーには、次の 2 つのグループの種類を�
 
 -   **AAD に登録され、準拠しているデバイス** – これらのデバイスは、SharePoint Online にアクセスできます。
 
-### 関連項目
+### <a name="see-also"></a>関連項目
 [Microsoft Intune を使用して電子メールおよび O365 サービスへのアクセスを制限する](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO4-->
 
 
