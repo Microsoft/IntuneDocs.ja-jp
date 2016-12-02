@@ -3,8 +3,7 @@
 title: "PC クライアント ソフトウェアをインストールする | Microsoft Intune"
 description: "このガイドは、Microsoft Intune クライアント ソフトウェアによって、Windows PC を管理させる場合に役立ちます。"
 keywords: 
-author: NathBarn
-manager: arob98
+author: staciebarker
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +13,8 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
-ms.openlocfilehash: 7d239a80ed68d39b2a7179a45178ba6ae11c5423
+ms.sourcegitcommit: 103e7065d1e2c3281f8f04808ee2546d3c7e2b53
+ms.openlocfilehash: 32af8a615453b8c72e704f40dcdf0de6fbf10907
 
 
 ---
@@ -104,7 +103,7 @@ Intune クライアント ソフトウェアは、次の手順に従って、オ
 
 登録が正常に完了するか、1 か月後に (どちらか早い方)、対象のコンピューターから Intune への自動登録タスク、**WindowsIntuneEnrollPending** レジストリ値、およびアカウント証明書が削除されます。
 
-## <a name="instruct-users-to-selfenroll"></a>自分で登録するユーザーへの指示
+## <a name="instruct-users-to-self-enroll"></a>自分で登録するユーザーへの指示
 
 ユーザーは、[ポータル Web サイト](http://portal.manage.microsoft.com)に移動して、Intune クライアント ソフトウェアをインストールできます。 デバイスが Windows PC であることを Web ポータルが検出できる場合、ユーザーは Intune ソフトウェア クライアントをダウンロードして、PC を登録するように求められます。 ソフトウェアがダウンロードされたら、ユーザーはインストールして、PC を管理できます。
 
@@ -139,6 +138,6 @@ Intune クライアント ソフトウェアは、次の手順に従って、オ
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO5-->
 
 

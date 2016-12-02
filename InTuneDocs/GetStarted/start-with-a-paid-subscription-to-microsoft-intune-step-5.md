@@ -14,8 +14,8 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4f8db75ed17e70dae5d3507b6af33a835c1658e9
-ms.openlocfilehash: 5195de40f35085c45ae63957da1a9058ed7d6493
+ms.sourcegitcommit: dcca68485db7e2c206077ce457081fdbf5cccea4
+ms.openlocfilehash: 92c59bd8061648cedaf31e50c5c599a96302a50f
 
 
 ---
@@ -31,7 +31,7 @@ Intune の [グループ] を使用すると、デバイスとユーザーを柔
 
 >[!IMPORTANT]
 >
->Intune ポータルでグループ ワークスペースを開いたときに、Azure Active Directory ポータルへのリンクと共に、"**Intune ユーザー グループは、Azure Active Directory のグループとして管理されるようになりました**" というメッセージが表示された場合は、Intune でのグループ管理に*新しい* Azure AD セキュリティ グループのアプローチが既に使用されています。 グループの作成方法の詳細については、「[Azure Active Directory でのグループの管理](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-manage-groups)」を参照してください。
+>Intune ポータルでグループ ワークスペースを開いたときに、Azure Active Directory ポータルへのリンクと共に、"**Intune ユーザー グループは、Azure Active Directory のグループとして管理されるようになりました**" というメッセージが表示された場合は、Intune でのグループ管理に*新しい* Azure AD セキュリティ グループのアプローチが既に使用されています。 グループの作成方法の詳細については、「[Azure Active Directory でのグループの管理](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal)」を参照してください。
 >
 >Azure AD ポータルへのリンクが表示されない場合は、グループ管理にはまだ Intune ポータルが使用されています。
 
@@ -89,6 +89,6 @@ Intune の [グループ] を使用すると、デバイスとユーザーを柔
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

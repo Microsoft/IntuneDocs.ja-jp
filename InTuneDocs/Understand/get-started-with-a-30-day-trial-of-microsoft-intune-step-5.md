@@ -1,69 +1,13 @@
 ---
-title: "評価モバイル デバイスの登録 | Microsoft Intune"
-description: "Intune の 30 日間無料評価版にサインアップするときに、モバイル デバイスを登録しアプリをインストールする方法"
-keywords: 
-author: lindavr
-ms.author: lindavr
-manager: angrobe
-ms.date: 08/09/2016
-ms.topic: get-started-article
-ms.prod: 
-ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
-ms.reviewer: jeffgilb
-ms.suite: ems
+redirect_url: https://docs.microsoft.com/intune/understand-explore/mobile-device-management-trial-guide-microsoft-intune
 translationtype: Human Translation
-ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
-ms.openlocfilehash: 7bd5f5d8f4931133a8ef1e697b2fec4cccd07b83
-
+ms.sourcegitcommit: b2e666c0a448d2b851f44ffa896db193248bb056
+ms.openlocfilehash: 45a97d0fcaf095be171bb43751abbf0f351fadf3
 
 ---
 
-# 評価版モバイル デバイスを登録してアプリをインストールする
-Intune を使用してモバイル デバイス管理をセットアップするには、まずモバイル デバイス管理機関を設定し、デバイス プラットフォームの管理を有効にして、ポータル サイト アプリでデバイスを登録する必要があります。 その後、発行した Microsoft Skype アプリケーションを展開できます。
-
-## デバイス管理のサービスを準備する
-
-1.  **Intune をモバイル デバイス管理機関に設定する**
-
-    [Intune 管理コンソール](https://manage.microsoft.com/)で、**[管理]** &gt; **[モバイル デバイス管理]** の順に選択します。 **[タスク]**  >  **[MDM 機関の設定]** を選択してから、**[MDM 機関]** ダイアログ ボックスで **[はい]** を選択します。
-
-2.  **デバイス プラットフォームの MDM を有効にする**
-
-    管理対象のデバイス プラットフォームに対してモバイル デバイス管理を有効にします。 要件はプラットフォームによって異なります。
-
-    -   **iOS と Mac OS X**: 「[Microsoft Intune を使用して iOS および Mac の管理をセットアップする](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune)」を参照してください。
-
-    -   **Android**:Android モバイル デバイスは、ユーザーが、Google Play から入手できるポータル サイト アプリを使用して登録できます。 Intune での追加構成は不要です。
-
-    -   **Windows Phone**: 「[Microsoft Intune を使用して Windows Phone の管理をセットアップする](/Intune/Deploy-Use/set-up-windows-phone-management-with-microsoft-intune)」を参照してください。
-
-## テスト デバイスの登録
-
-### iOS および Mac OS X
-App Store の Microsoft Corporation から **Microsoft Intune ポータル サイト** アプリをインストールし、前の手順で追加した Intune ユーザー資格情報を使用してサインインします。 **[登録済みデバイス]** を表示して、デバイスを追加します。
-
-### Android
-[Google Play](http://go.microsoft.com/fwlink/p/?LinkId=386612) の Microsoft Corporation から **Intune ポータル サイト** アプリをインストールし、前述の手順で追加した Intune ユーザー資格情報を使用してサインインします。
-
-### Windows Phone 8。1
-Windows Phone ストアの Microsoft Corporation から**ポータル サイト** アプリをインストールし、前述の手順で追加した Intune ユーザー資格情報を使用してサインインします。  **[登録済みデバイス]** を表示して、デバイスを追加します。
-
-## 以前に展開したアプリのインストール
-モバイル デバイスでポータル サイトを開き、**[アプリ]** を選択して、**Microsoft Skype** をインストールします。
-
-Intune を使用したモバイル デバイス管理の詳細については、「[Microsoft Intune にデバイスを登録する準備](/Intune/deploy-use/prerequisites-for-enrollment)」を参照してください。
-
-### 次のステップ
-これで終了です。 *Microsoft Intune の評価*チュートリアルの手順 5 を修了しました。
-
->[!div class="step-by-step"]
-
->[&larr; **ポリシーの作成**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)     [**オプションとその他の機能** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)  
 
 
-
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

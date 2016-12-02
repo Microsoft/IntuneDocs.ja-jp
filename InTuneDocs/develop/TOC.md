@@ -1,5 +1,5 @@
 # [理解と調査](/intune/understand-explore/introduction-to-microsoft-intune)
-# [新機能](/intune/whats-new/whats-new-in-microsoft-intune)
+# [概要](/intune/get-started/get-started)
 # [新機能](/intune/whats-new/whats-new-in-microsoft-intune)
 # [展開と使用](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # アプリの開発とカスタマイズ
@@ -12,6 +12,6 @@
 # [トラブルシューティング](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
