@@ -2,10 +2,10 @@
 title: "Intune から Windows デバイスを登録解除する | Microsoft Intune"
 description: "Intune から Windows デバイスの登録を解除する方法について説明します"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
-ms.openlocfilehash: b3dda0cda3600721db5f2ea73166652abff7a44d
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: e71dece9a286ecb086197959739b0f4cb66c856d
 
 
 ---
 
 
-# Intune から Windows デバイスを登録解除する
+# <a name="unenroll-your-windows-device-from-intune"></a>Intune から Windows デバイスを登録解除する
 
 現在 Intune に登録されている Windows デバイスを職場や学校で使用する必要がなくなった場合、または職場や学校の電子メール、アプリ、その他のリソースにアクセスする必要がなくなった場合には、デバイスの登録を解除する必要があります。 Intune からデバイスの登録を解除した後は、これらのリソースにアクセスできなくなります。 デバイスを登録解除した場合の詳細については、「[Intune からデバイスの登録を解除するとどうなるか](what-happens-if-you-unenroll-your-device-from-intune-windows.md)」を参照してください。
 
@@ -31,7 +31,7 @@ ms.openlocfilehash: b3dda0cda3600721db5f2ea73166652abff7a44d
 -   [Windows 8.1 コンピューターの登録解除](#unenroll-your-windows-8-1-computer)
 -   [Windows Phone 8.1 デバイスの登録解除](#unenroll-your-windows-phone-8-1-device)
 
-## Windows 10 デバイスの登録解除
+## <a name="unenroll-your-windows-10-device"></a>Windows 10 デバイスの登録解除
 
 1.  アプリの一覧で、 **ポータル サイト** アプリをタップします。
 
@@ -41,7 +41,7 @@ ms.openlocfilehash: b3dda0cda3600721db5f2ea73166652abff7a44d
 
 4.  **[削除]** &gt; **[削除]** の順にタップします。
 
-## Windows 8.1 コンピューターの登録解除
+## <a name="unenroll-your-windows-81-computer"></a>Windows 8.1 コンピューターの登録解除
 
 1.  **[PC 設定]** &gt; **[ネットワーク]** &gt; **[ワークプレース]** の順に移動します。
 
@@ -51,7 +51,7 @@ ms.openlocfilehash: b3dda0cda3600721db5f2ea73166652abff7a44d
 
 4.  開いたポップアップ ウィンドウで、**[オフにする]** を選択します。
 
-## Windows Phone 8.1 デバイスの登録解除
+## <a name="unenroll-your-windows-phone-81-device"></a>Windows Phone 8.1 デバイスの登録解除
 
 1.  **[設定]** &gt; **[社内]** の順にタップします。
 
@@ -65,6 +65,6 @@ ms.openlocfilehash: b3dda0cda3600721db5f2ea73166652abff7a44d
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

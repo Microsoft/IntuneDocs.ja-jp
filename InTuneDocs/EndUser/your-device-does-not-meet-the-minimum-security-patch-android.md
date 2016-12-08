@@ -2,7 +2,7 @@
 title: "デバイスが最小限のセキュリティ パッチを満たしていない | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/25/2016
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: 8569d99d7f79b0a27f31aec33f364d30499c6520
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 257eff56731f991b80443d996485286c1ce63b3b
 
 
 ---
 
-# デバイスが最小限のセキュリティ パッチを満たしていない
+# <a name="your-device-does-not-meet-the-minimum-security-patch"></a>デバイスが最小限のセキュリティ パッチを満たしていない
 
 "最低限の Android セキュリティ パッチが構成されていません" というメッセージが表示される場合、最低限のセキュリティ パッチ以降をインストールする必要があります。 IT 管理者は、Android デバイス上の会社のデータを保護するために、このインストールを必須にしています。
 
@@ -41,6 +41,6 @@ ms.openlocfilehash: 8569d99d7f79b0a27f31aec33f364d30499c6520
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -2,10 +2,10 @@
 title: "デバイスを暗号化する |Microsoft Intune"
 description: "Android デバイスを暗号化する方法について説明します"
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 11/7/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ff5e76e5d768b9feccb42c91c72aa71b3f724002
-ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
+ms.sourcegitcommit: 81c0c29e1b874a7f5c7faa1c1216dbaa99ec4543
+ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
 
 
 ---
 
 
-# デバイスを暗号化する
+# <a name="encrypt-your-device"></a>デバイスを暗号化する
 
 勤務先の会社や組織で、社内のファイルや電子メール、データにアクセスする Android デバイスの暗号化が求められている場合、以下の手順に従ってお使いのデバイスを暗号化してください。 IT 管理者が要求する場合、暗号化の前に PIN またはパスワードを設定するように求められることがあります。
 
@@ -34,7 +34,7 @@ ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
 
 3.  画面の指示に従います。 暗号化が行われている間、デバイスが何度か再起動する場合があります。
 
-### 問題がある場合の対処方法
+### <a name="what-to-do-if-you-have-issues"></a>問題がある場合の対処方法
 **問題**: デバイスに既に暗号化を適用していますが、次のいずれかの状態に遭遇しました。
 
 - 暗号化ボタンが無効です。
@@ -57,10 +57,10 @@ ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
 
     5. ポータル サイト アプリを開き、デバイスを選択して、**[Check Compliance]** (ポリシー準拠状況の確認) をタップします。
 
-サポートが必要な場合は、 IT 管理者に問い合わせるか (連絡先情報については[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください)、または Microsoft Android チーム (wintunedroidfbk@microsoft.com) にご連絡ください。
+サポートが必要な場合は、 IT 管理者に問い合わせるか (連絡先情報については[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください)、または [Microsoft Android チーム](mailto:wintunedroidfbk@microsoft.com)にご連絡ください。
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

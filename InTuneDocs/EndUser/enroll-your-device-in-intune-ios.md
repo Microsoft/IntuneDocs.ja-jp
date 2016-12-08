@@ -2,10 +2,10 @@
 title: "Intune に iOS デバイスを登録する | Microsoft Intune"
 description: "Intune に iOS デバイスを登録する方法について説明します"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,20 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 577d14f29880d16046bbb703773d6362c2458c1b
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 7d11e716750c4920234de5419e262d6c2c6e2d44
 
 
 ---
 
 
-# Intune に iOS デバイスを登録する
+# <a name="enroll-your-ios-device-in-intune"></a>Intune に iOS デバイスを登録する
 
 職場または学校が Microsoft Intune を使用している場合は、お使いの iOS デバイスを登録して、会社の電子メール、ファイル、またその他のリソースにアクセスできます。 デバイスを登録すると、IT 部門が職場や学校のリソースを管理してそれらの安全性を保持する一方で、ユーザーは好みのデバイスを使用して作業を進めることができます。 登録の詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)」を参照してください。
 
 Mac OS X デバイスを登録しようとしている場合は、「[Intune に Mac OS X デバイスを登録する](enroll-your-device-in-intune-mac-os-x.md)」を参照してください。
 
-**開始前の準備:**
+**開始する前に:**
 
 - この手順を開始した後に、登録が完了したことを確認します。 手順を開始しても完了しなかった場合、後で完了しようとしても登録できない可能性があります。
 - Wi-Fi が機能していることを確認します。 Wi-Fi が機能していない場合、登録は失敗します。
@@ -96,6 +96,6 @@ Mac OS X デバイスを登録しようとしている場合は、「[Intune に
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

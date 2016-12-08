@@ -1,11 +1,11 @@
 ---
 title: "Android デバイスを Intune で使用する | Microsoft Intune"
-description: "Android モバイル デバイスが Intune で登録されている場合にデバイスで実行できるタスクへのリンクの一覧"
+description: "Android モバイル デバイスが Intune で登録されている場合に、エンド ユーザーがデバイスで実行できるタスクへのリンクの一覧"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
-ms.openlocfilehash: 21517d4aa198771ce26dedbfc8f00f54d21c7f2a
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 7751d5661f3fb9235820c716fdbded3dab385ec4
 
 
 ---
 
 
-# Android デバイスを Intune で使用する
+# <a name="using-your-android-device-with-intune"></a>Android デバイスを Intune で使用する
 
 この記事には、エンドユーザーが Intune 管理対象デバイスで実行できるすべてのタスクへのリンクが掲載されています。 IT 管理者はこの情報を参照して、ユーザーがさまざまなタスクを実行するための手順を確認できます。タスクは以下のカテゴリにグループ化されます。
 
@@ -29,7 +29,7 @@ ms.openlocfilehash: 21517d4aa198771ce26dedbfc8f00f54d21c7f2a
 - 登録後の管理タスク
 - ポリシー準拠の問題
 
-## ポータル サイト アプリのインストールと Intune の登録
+## <a name="company-portal-app-installation-and-intune-enrollment"></a>ポータル サイト アプリのインストールと Intune の登録
 
 このセクションの情報は、Intune ポータル サイトのインストールと Android デバイスのデバイス登録に役立ちます。
 
@@ -37,7 +37,7 @@ ms.openlocfilehash: 21517d4aa198771ce26dedbfc8f00f54d21c7f2a
 - [Intune での仕事用プロファイルの作成とデバイスの登録](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 - [ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
-## Intune にデバイスを登録する際に実行できること
+## <a name="things-users-can-do-when-their-device-is-enrolled-in-intune"></a>Intune にデバイスを登録する際にユーザーが実行できること
 
 このセクションの情報は、Android デバイスを Intune に登録した後に実行できる操作で役立ちます。
 
@@ -54,7 +54,7 @@ ms.openlocfilehash: 21517d4aa198771ce26dedbfc8f00f54d21c7f2a
 - [ポータル サイト アプリを使用して Android デバイスをリセットするとどうなるか](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
 <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
 
-## ご利用のデバイスでの問題の解決
+## <a name="steps-to-fix-device-and-compliance-issues"></a>デバイスとコンプライアンスに関する問題を解決する手順
 
 このセクションの情報は、Android デバイスを Intune に登録した場合に発生する可能性がある問題を解決するのに役立ちます。
 
@@ -75,6 +75,6 @@ ms.openlocfilehash: 21517d4aa198771ce26dedbfc8f00f54d21c7f2a
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
