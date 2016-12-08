@@ -2,7 +2,7 @@
 title: "iOS デバイスで Lookout for Work のインストールを求められる | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/17/2016
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
-ms.openlocfilehash: 03eee971fe74b73983111549338b13bf4068a85c
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 0c1fd681cd2ef9001083df16d4fb7506c47f9572
 
 
 ---
 
-# iOS デバイスで Lookout for Work のインストールを求められる
+# <a name="you-are-prompted-to-install-lookout-for-work-on-your-ios-device"></a>iOS デバイスで Lookout for Work のインストールを求められる
 
 作業内容にアクセスする前に、IT 管理者から潜在的なセキュリティ脅威を検出してデバイスを保護することができる、Lookout for Work アプリをインストールするように求められます。 IT 管理者の設定によって、Lookout for Work で表示されるプロンプトは異なります。
 
@@ -55,6 +55,6 @@ Lookout for Work によってこのデバイスでセキュリティ上の脅威
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

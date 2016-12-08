@@ -2,10 +2,10 @@
 title: "ポータル サイト アプリをインストールし、Intune に Android デバイスを登録するとどうなるか | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/16/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: bf3d0db1b4322ff417e96331b29faabd046abb65
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 8843fe7854db72cf3983dc9a6ab44c1517d92b60
 
 
 ---
 
 
-# ポータル サイト アプリをインストールし、Intune に Android デバイスを登録するとどうなりますか。
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>ポータル サイト アプリをインストールし、Intune に Android デバイスを登録するとどうなりますか。
 
 ポータル サイト アプリをインストールし、Android デバイスを Intune に登録すると、ポータル サイト アプリを使用して次のことができるようになります。
 
@@ -56,10 +56,10 @@ Android デバイスを登録すると、そのデバイスにアクセスする
 
 -   会社のアプリのインベントリの更新情報を送信する。 (これらの更新プログラムに個人情報は含まれていない。)
 
-サポートが必要な場合は、 IT 管理者に問い合わせるか (連絡先情報については[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください)、または Microsoft Android チーム (wintunedroidfbk@microsoft.com) にご連絡ください。
+サポートが必要な場合は、 IT 管理者に問い合わせるか (連絡先情報については[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください)、または [Microsoft Android チーム](mailto:wintunedroidfbk@microsoft.com)にご連絡ください。
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

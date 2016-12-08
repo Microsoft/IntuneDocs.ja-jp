@@ -2,10 +2,10 @@
 title: "ポータル サイト アプリをインストールし、Intune に Windows デバイスを登録するとどうなるか | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2d56c2f23fd70ab0ca593d1ad5d60889e5855a7a
 
 
 ---
 
 
-# ポータル サイト アプリをインストールし、Intune に Windows デバイスを登録するとどうなりますか。
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>ポータル サイト アプリをインストールし、Intune に Windows デバイスを登録するとどうなりますか。
 
 ポータル サイト アプリをインストールして、Windows または Windows Phone デバイスを登録する場合、デバイスを IT 管理者が管理して、会社または学校のデータを保護することができるようになります。 このトピックでは、Windows 10 より前のデバイスの動作について説明します。 Windows 10 デバイスについては、[関連項目](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)を参照してください。
 
-## 登録後にすべての Windows デバイスでできるようになること
+## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>登録後にすべての Windows デバイスでできるようになること
 Intune に Windows または Windows Phone デバイスを登録すると、次のことができます。
 
 -   会社のネットワークにアクセスし、電子メールや仕事用のファイルにアクセスする。
@@ -53,7 +53,7 @@ Intune に Windows または Windows Phone デバイスを登録すると、次�
 
 -   会社に関連するデータの撮影を禁止する。
 
-## 登録後にすべての Windows PC でできるようになること
+## <a name="what-happens-to-all-windows-pcs-after-enrollment"></a>登録後にすべての Windows PC でできるようになること
 
 -  コンピューターにソフトウェアがインストールされ、IT 管理者がそのコンピューターを管理できるようになり、ユーザーがアプリケーションやサポート情報などの会社のリソースを入手できるようになります。 このソフトウェアは、IT 管理者によって自動更新に設定される可能性があります。
 
@@ -63,7 +63,7 @@ Intune に Windows または Windows Phone デバイスを登録すると、次�
 
 -  IT 管理者は、コンピューターにアプリケーションと更新プログラムをインストールすることができます。
 
-## デバイスの登録後 8 時間ごとに生じる動作
+## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>デバイスの登録後 8 時間ごとに生じる動作
 登録済みのデバイスは、約 8 時間ごとに以下のことを行います。
 
 -   IT 管理者が許可したポリシーまたはアプリケーションの更新プログラムをダウンロードする。
@@ -76,6 +76,6 @@ Intune に Windows または Windows Phone デバイスを登録すると、次�
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
