@@ -3,9 +3,8 @@ title: "アプリ ベースの O365 に対する条件付きアクセス | Micro
 description: "MAM CA を利用して、O365 サービスに対してアクセス権を持つアプリを制御する方法の概念について説明します。"
 keywords: 
 author: karthikaraman
-ms.author: karaman
 manager: angrobe
-ms.date: 10/15/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,44 +13,33 @@ ms.assetid: bd6bee60-5e39-42c8-a2e9-f5865ac3573f
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 64eaba6918c4a5c7ccc39fb8ccfeae729a34ff4c
-ms.openlocfilehash: a03faa57f9bf1ec6784f0b1ec2d41d3f4cd88a12
+ms.sourcegitcommit: 5083cb49e7a98f19ff21c1972149b00aee4ec93e
+ms.openlocfilehash: e57280821168ddb043d093485ec74f042bbebfef
 
 
 ---
 
-# Intune MAM ポリシーをサポートするモバイル アプリケーションのみが Office 365 サービスにアクセスできるポリシーを作成する
+# Intune MAM ポリシーをサポートするモバイル アプリケーションのみが Office 365 サービスにアクセスできるようにする
 [Intune モバイル アプリ管理 (MAM) ポリシー](protect-apps-and-data-with-microsoft-intune.md)を使用すると、Intune の管理対象に登録されているデバイス上の会社のデータを保護できます。 **Intune の監視対象に登録されていない従業員が所有するデバイス**に対して、MAM ポリシーを使用することもできます。  この場合、デバイスを管理しなくても、会社のデータとリソースが保護されていることを確認する必要があります。 MAM の条件付きアクセス (MAM CA) を使用すると、Exchange Online などの Office 365 サービスへのアクセスを、Intune MAM ポリシーをサポートするモバイル アプリのみに許可するポリシーを作成できます。
 
 たとえば、Exchange Online へのアクセスを **Microsoft Outlook アプリ**のみに許可すると、**Exchange Online** からから電子メールを取得するように Intune MAM ポリシーのデータ保護を受けていない **iOS と Android の組み込み電子メール アプリをブロックできます**。
+
+次の図は、MAM CA がアクセスを許可するかブロックするかを決定するために使用するフローです。![アクセスを許可するかブロックするかを決定するための多様な条件を示す図](../media/mam-ca-decision-flow_simple.png)。
+
+図に使用されている省略語の説明は次のとおりです。
+* **CP**: ポータル サイト アプリ
+* **AA**: Azure Authenticator アプリ
+* **AAD**: Azure Active Directory
+* **EAS**: Exchange Active Sync
 
 ## 必要条件
 MAM CA ポリシーを構成する**前に**、**Enterprise Mobility + Security または Azure Active Directory Premium サブスクリプション**を用意する必要があります。また、ユーザーに EMS または Azure AD のライセンスが付与される必要があります。 詳細については、「[Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility の価格) ページまたは「[Azure Active Directory の価格](https://azure.microsoft.com/en-us/pricing/details/active-directory/)」ページを参照してください。
 
 
 ## サポートされているアプリ
-**Exchange Online**
-* Android および iOS 用 Microsoft Outlook
+**Exchange Online**: Android および iOS 用 **Microsoft Outlook**。
 
-## 他の条件付きアクセスと認証方法との重複
-### MAM CA と Azure Active Directory 証明書ベースの認証
-
-MAM CA は、Azure Active Directory (Azure AD) 証明書ベースの認証と併用することはできません。 同時に使用できるのは、いずれかの構成のみです。
-### MAM CA とデバイスのコンプライアンスに基づく条件付きアクセス  
-
-[Intune 管理コンソール](https://manage.microsoft.com)または [Azure AD Premium 管理コンソール] (https://manage.windowsazure.com) で[デバイスのコンプライアンスに基づいて条件付きアクセス](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**デバイス CA**) を構成できます。 デバイス CA を使用する場合、ユーザーが Exchange Online に接続するには、Intune デバイス コンプライアンス ポリシーに準拠している Intune の管理対象デバイス、またはドメインに参加しているコンピューターを使用する必要があります。  ユーザーが、MAM CA とデバイス CA ポリシー両方の対象である 1 つまたは複数のセキュリティ グループに属している場合、ユーザーは次の 2 つの要件のうち 1 つを満たす必要があります。
-* サービスへのアクセスに使用されるアプリは、MAM CA でサポートされているモバイル アプリであり、アプリを実行するデバイスには、**iOS Authenticator (iOS デバイスの場合)** または**ポータル サイト アプリ (Android デバイスの場合)** がインストールされている。
-* サービスへのアクセスに使用されるデバイスは、**Intune の管理対象で Intune のデバイス コンプライアンス ポリシーに準拠している**か、**ドメインに参加しているコンピューター**である。  わかりやすい例を示します。
-  * ユーザーが**ネイティブ iOS 電子メール アプリ**から接続する場合、ネイティブ電子メール アプリは MAM CA でサポートされていないため、**管理対象で準拠しているデバイス**を使用して接続する必要があります。
-  * ユーザーが **Windows Home コンピューター**から接続する場合、**デバイス CA ポリシー**が適用されるので、ドメインに参加しているコンピューターを使用する必要があります。
-
-
-## アプリと MAM CA を使用する場合の結果
-MAM CA は、デバイス上に必ずあるブローカー アプリを利用して、承認されたアプリケーションの ID を確認します。
-*  **iOS** の場合、**Azure Authenticator アプリ**がブローカー アプリです。
-* **Android** の場合、**Intune ポータル サイト アプリ**がブローカー アプリです。 
-
-OneDrive や Outlook など、MAM CA でサポートされているアプリにエンドユーザーが初めてサインインする場合、ブローカー アプリをインストールし、デバイスを Azure AD に登録するように求められます。 Azure AD にデバイスを登録すると (以前は社内参加と呼ばれていました)、トークンの発行先に対してデバイス レコードと証明書が作成されます。  これは **MDM の登録**と**同じではありません**。 適用される管理プロファイルまたはポリシーはありません。また、デバイスのアプリから取得されるインベントリはありません。  ブローカー アプリのインストールとデバイスの登録プロセスは、管理対象アプリを初めて使用する場合にのみ実行されます。
+MAM CA ポリシーがあるアプリのユーザー エクスペリエンスの詳細については、「[What to expect when using an app with MAM CA](use-apps-with-mam-ca.md)」(アプリと MAM CA を使用する場合の結果) を参照してください。
 
 
 ## 次のステップ
@@ -65,6 +53,6 @@ OneDrive や Outlook など、MAM CA でサポートされているアプリに�
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

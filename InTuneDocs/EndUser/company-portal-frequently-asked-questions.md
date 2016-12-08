@@ -2,10 +2,10 @@
 title: "ポータル サイトの概要 | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1a1975bb10d4a35f6ab52d724405f77300c40feb
-ms.openlocfilehash: f0c50a7a028fdc17acaad4e0498aaabfb58987a8
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: adf7fc0b7ddeb7fa8361d37efd0fdd5c714a72e4
 
 
 ---
 
-# ポータル サイトの概要
+# <a name="about-the-company-portal"></a>ポータル サイトの概要
 
-## ポータル サイトの概要とサイトで実行できる操作
+## <a name="what-is-the-company-portal-and-what-can-you-do-with-it"></a>ポータル サイトの概要とサイトで実行できる操作
 Microsoft Intune ポータル サイトでは、会社や学校のデータとアプリにアクセスできます。 ポータル サイトは 2 通りの方法で入手できます。
 
 - ポータル サイト アプリをデバイスにインストールします。 一般的に、ポータル サイト アプリはお使いのデバイスのアプリ ストアで入手しますが、IT 管理者がポータル サイト アプリを代理でインストールすることもできます。
@@ -46,7 +46,7 @@ Microsoft Intune ポータル サイトでは、会社や学校のデータと�
 - [Windows](using-your-windows-device-with-intune.md)
 - [ポータル Web サイト](using-the-intune-company-portal-website.md)
 
-## コンピューターやデバイスをポータル サイトに追加すると、どうなりますか。
+## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>コンピューターやデバイスをポータル サイトに追加すると、どうなりますか。
 コンピューターやデバイスをポータル サイトに追加すると、なんらかのソフトウェアがインストールされるか、アプリがダウンロードされる場合があります (デバイスによって異なります)。  また、使用しているデバイスの管理を IT 管理者に許可することで、デバイスに保存されている会社情報を保護しやすくすることもできます。
 
 お使いのデバイスで IT 管理者に表示される情報と表示されない情報については、お使いのデバイスのリンクを参照してください。
@@ -56,7 +56,7 @@ Microsoft Intune ポータル サイトでは、会社や学校のデータと�
 - [iOS および Mac OS X](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
-## ポータル サイトにはどのような種類のコンピューターまたはデバイスを追加できますか。
+## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>ポータル サイトにはどのような種類のコンピューターまたはデバイスを追加できますか。
 
 -   iPhone、iPad、Mac OS X デバイス
 
@@ -67,11 +67,8 @@ Microsoft Intune ポータル サイトでは、会社や学校のデータと�
     -   [Windows] 10 Desktop
     -   Windows Phone 8。1
     -   Windows 8.1
-    -   iPhone、iPad、Mac OS X
-    -   Android モバイル デバイス
 
-
-## ポータル サイトからコンピューターまたはデバイスを削除できますか。
+## <a name="can-you-remove-a-computer-or-device-from-the-company-portal"></a>ポータル サイトからコンピューターまたはデバイスを削除できますか。
 ポータル サイトのコンピューターまたはデバイスは、削除またはリセットできます。 **削除**と**リセット**には違いがあります。
 
 コンピューターまたはデバイスを*削除*すると、デバイスの登録が Intune で解除されます。 登録が解除されると、そのデバイスからポータル サイトにはアクセスできなくなります。また、一部の会社データがデバイスから削除される場合があります。 ポータル サイトからデバイスを削除する方法については、次のいずれかのリンクを参照してください。
@@ -89,16 +86,16 @@ Microsoft Intune ポータル サイトでは、会社や学校のデータと�
 - [Android](reset-erase-your-lost-or-stolen-device-android.md)
 - [iOS および Mac OS X](reset-erase-your-lost-or-stolen-device-ios.md)
 - [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
-- [ポータル サイト Web サイトからデバイスをリセットする](reset-your-device-cpwebsite.md)
+- [ポータル Web サイトからデバイスをリセットする](reset-your-device-cpwebsite.md)
 
-## ポータル サイトに表示されないデバイスがあります。
+## <a name="you-do-not-see-all-of-your-devices-in-the-company-portal"></a>ポータル サイトに表示されないデバイスがあります。
 デバイスを表示するには、ポータル サイトに追加する必要があります。 管理者に指定されたポータル サイトを開き、手順に従ってデバイスを追加してください。 会社が所有および管理しているデバイスは表示されません。
 
-## ご質問がございましたら、IT 管理者に問い合わせてください。
+## <a name="if-you-have-questions-contact-your-it-administrator"></a>ご質問がございましたら、IT 管理者に問い合わせてください。
 サポートが必要な場合は、IT 管理者に問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
