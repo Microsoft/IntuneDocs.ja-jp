@@ -2,7 +2,8 @@
 title: "電子メール プロファイルに関するトラブルシューティング | Microsoft Intune"
 description: "電子メール プロファイルに関する問題と、そのトラブルシューティングと解決方法。"
 keywords: 
-author: Nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/01/2016
 ms.topic: article
@@ -13,23 +14,23 @@ ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 79076b65fe85adeaffd5435915cb5eca2a15413f
+ms.sourcegitcommit: 1b6fcf0cae23581c0391009fd7d63498d3c7eb2d
+ms.openlocfilehash: 504714c09815d8c6fed6515cf7a27b841d77eb57
 
 
 ---
 
-# Microsoft Intune の電子メール プロファイルに関するトラブルシューティング
+# <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Microsoft Intune の電子メール プロファイルに関するトラブルシューティング
 ここでは、電子メール プロファイルに関する問題と、そのトラブルシューティングと解決方法について説明します。
 
 この情報で問題が解決しない場合、さらに役立つ方法を探すには、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」を参照してください。
 
 
-## 電子メール アカウントから画像を送信できない
+## <a name="unable-to-send-images-from-email-account"></a>電子メール アカウントから画像を送信できない
 電子メール アカウントを自動的に構成したユーザーが、自分のデバイスから画像を送信することができません。
 **[サード パーティ アプリケーションから電子メールを送信できるようにする]** がオフになっている場合に、この問題が発生します。
 
-### Intune での解決方法
+### <a name="intune-solution"></a>Intune での解決方法
 
 1.  Microsoft Intune 管理コンソールで、**[ポリシー]** ワークロード &gt;**[構成ポリシー]** の順に選択します。
 
@@ -37,18 +38,18 @@ ms.openlocfilehash: 79076b65fe85adeaffd5435915cb5eca2a15413f
 
 3.  **[サード パーティ アプリケーションから電子メールを送信できるようにする]** をオンにします。
 
-### Windows Intune と統合された Configuration Manager
+### <a name="configuration-manager-integrated-with-intune-solution"></a>Windows Intune と統合された Configuration Manager
 
 1.  Configuration Manager コンソール &gt;**[資産とコンプライアンス]** の順に開きます。
 
-2.  **[概要]**  -&gt; **[コンプライアンス設定]**  -&gt; **[会社のリソースへのアクセス]** の順に展開して、**[電子メール プロファイル]** を選択します。
+2.  **[概要]**  -&gt;** [コンプライアンス設定]**  -&gt;** [会社のリソースへのアクセス]** の順に展開して、**[電子メール プロファイル]** を選択します。
 
 3.  電子メール プロファイルを右クリックし、**[プロパティ]** を開きます。
 
 4.  **[同期設定]** タブで、**[サード パーティ アプリケーションから電子メールを送信できるようにする]** をオンにします。
 
 
-## デバイスに電子メール プロファイルが既にインストールされている
+## <a name="device-already-has-an-email-profile-installed"></a>デバイスに電子メール プロファイルが既にインストールされている
 
 Intune によるプロファイルのプロビジョニングの前にユーザーが電子メール プロファイルをインストールしてある場合、Intune による電子メール プロファイルの展開の結果はデバイスのプラットフォームに依存します。
 
@@ -56,20 +57,20 @@ Intune によるプロファイルのプロビジョニングの前にユーザ�
 
 -**Windows**: Intune は、ホスト名と電子メール アドレスに基づいて既存の重複する電子メール プロファイルを検出します。 Intune は、ユーザーによって作成された既存の電子メール プロファイルを上書きします。
 
--**Samsung KNOX**: Intune は、電子メール アドレスに基づいて重複する電子メール アカウントを識別し、Intune プロファイルで上書きします。 ユーザーがそのアカウントを構成した場合、Intune プロファイルによって再び上書きされます。 このため、アカウントの構成を上書きされたユーザーが混乱する可能性があることに注意してください。
+-**Samsung KNOX Standard**: Intune は、電子メール アドレスに基づいて重複する電子メール アカウントを識別し、Intune プロファイルで上書きします。 ユーザーがそのアカウントを構成した場合、Intune プロファイルによって再び上書きされます。 このため、アカウントの構成を上書きされたユーザーが混乱する可能性があることに注意してください。
 
 Samsung KNOX はプロファイルを識別するためにホスト名を使用しないため、複数の電子メール プロファイルを作成して異なるホスト上の同じ電子メール アドレスに展開することはお勧めしません。プロファイルが相互に上書きされます。
 
-## KNOX デバイスのエラー 0x87D1FDE8
-**問題**: さまざまな Android デバイスで Samsung KNOX の Exchange Active Sync 電子メール プロファイルを作成して展開すると、デバイスの [プロパティ] &gt; [ポリシー] タブに **0x87D1FDE8** または「**修復できませんでした**」というエラーが報告される。
+## <a name="error-0x87d1fde8-for-knox-standard-device"></a>KNOX Standard デバイスのエラー 0x87D1FDE8
+**問題**: さまざまな Android デバイスで Samsung KNOX Standard の Exchange Active Sync 電子メール プロファイルを作成して展開すると、デバイスの [プロパティ] &gt; [ポリシー] タブに **0x87D1FDE8** または [**修復できませんでした**] というエラーが報告される。
 
 Samsung KNOX の EAS プロファイルおよびソース ポリシーの構成を確認します。 Samsung Note 同期オプションはサポートされなくなったため、このオプションをプロファイルで選択することはできません。 デバイスには、ポリシーを処理するための十分な時間を最大 24 時間設定してください。
 
-## 次のステップ
+## <a name="next-steps"></a>次のステップ
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Nov16_HO1-->
 
 
