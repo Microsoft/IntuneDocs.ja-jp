@@ -2,7 +2,7 @@
 title: "Intune に Android デバイスを登録する | Microsoft Intune"
 description: "Intune に Android デバイスを登録する方法について説明します"
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/09/2016
@@ -14,24 +14,24 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 5d7507d9c09867b5c302caba409f1a7347fae4b6
+ms.sourcegitcommit: 6dc3173207d1e99e1bd0207f8ea5a5b137b36be1
+ms.openlocfilehash: b87799b0ee8dcf98b82bd8353ca7684ede0d8bc2
 
 
 ---
 
 
-# Intune に Android デバイスを登録する
+# <a name="enroll-your-android-device-in-intune"></a>Intune に Android デバイスを登録する
 
 職場または学校が Microsoft Intune を使用している場合は、お使いの Android デバイスを登録して、会社の電子メール、ファイル、またその他のリソースにアクセスできます。 デバイスを登録すると、IT 部門が職場や学校のリソースを管理してそれらの安全性を保持する一方で、ユーザーは好みのデバイスを使用して作業を進めることができます。 登録の詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md)」を参照してください。
 
-これらの登録手順は Samsung Knox Android デバイスと、"ネイティブな" (Samsung Knox 以外の) Android デバイス用の手順です。 Samsung Knox デバイスがあるかどうかを確認するには、**[設定]** &gt; **[About device]** を選択します。 "KNOX version" という文字がない場合、デバイスはネイティブ Android デバイスです。
+これらの登録手順は Samsung KNOX Android デバイスと、"ネイティブな" (Samsung Knox 以外の) Android デバイス用の手順です。 Samsung KNOX デバイスがあるかどうかを確認するには、**[設定]** &gt; **[About device]** の順に移動します。 "KNOX version" という文字がない場合、デバイスはネイティブ Android デバイスです。
 
 登録の前後に、デバイスの使用方法に適したカテゴリを選ぶように求められる場合があります。 IT 管理者は、このカテゴリを使用して、ユーザーがアクセスできるアプリの確認に役立てています。
 
 Intune にデバイスを登録している最中にエラーが表示された場合は、[IT 管理者に登録に関するエラーを送信](send-enrollment-errors-to-your-it-administrator-android.md)できます。
 
-**Intune に Android デバイスを登録するには:**
+**Android デバイスを登録するには:**
 
 1.  無料の Intune ポータル サイト アプリを [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) からインストールします。
 
@@ -110,10 +110,10 @@ Intune にデバイスを登録している最中にエラーが表示された�
 
 会社のアプリをインストールするには、最初に **[設定]** &gt; **[セキュリティ]** の順に選択し、**[不明なソース]** をオンにします。 アプリをインストールする前に、このオプションをオンにしない場合、次のメッセージが表示されます。[インストールがブロックされました。 セキュリティ上の理由から、デバイスは不明のソースから取得したアプリのインストールをブロックするように設定されています。] エラー ダイアログ ボックスの **[設定]** をタップすると、**[不明なソース]** オプションを表示できます。
 
-サポートが必要な場合は、 IT 管理者に問い合わせるか (連絡先情報については[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください)、または Microsoft Android チーム (wintunedroidfbk@microsoft.com) にご連絡ください。
+サポートが必要な場合は、 IT 管理者に問い合わせるか (連絡先情報については[ポータル Web サイト](http://portal.manage.microsoft.com)をご確認ください)、または Microsoft Android チーム (wintunedroidfbk@microsoft.com.) にご連絡ください。
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -2,8 +2,8 @@
 title: "ポータル サイト Web サイトからデバイスをリセットする | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 05f54088f3b18d90368e1b408b7012d28021abfc
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: c5791e70c35446fb11971321b6b7a4178ebdfdb5
 
 
 ---
 
 
-# ポータル サイト Web サイトからデバイスをリセットする
+# <a name="reset-your-device-from-the-company-portal-website"></a>ポータル サイト Web サイトからデバイスをリセットする
 
-デバイスが紛失した、または盗難にあった場合は、データへの不正なアクセスを防ぐため、デバイスを出荷時の状態にリセットすることができます。 [ポータル サイト Web サイト](http://portal.manage.microsoft.com)を使用してデバイスをリモートでリセットすることができます。 ポータル サイト Web サイトは、Intune に登録したコンピューターとデバイスを管理し、ポータル サイト アプリを使用する場合とほぼ同じタスクを実行できる Web ページです。
+デバイスが紛失した、または盗難にあった場合は、データへの不正なアクセスを防ぐため、デバイスを出荷時の状態にリセットすることができます。 [ポータル サイト Web サイト](http://portal.manage.microsoft.com)を使用してデバイスをリモートでリセットすることができます。 ポータル サイト Web サイトは、Intune で登録したコンピューターとデバイスの管理に使用できる Web ページです。 この Web サイトを使用すると、ポータル サイト アプリを使用して実行できるタスクのほとんどを実行できます。
 
 デバイスをリセットすると、そのデバイスはポータル サイトに表示されなくなり、出荷時の状態に戻ります。
 
@@ -46,6 +46,6 @@ ms.openlocfilehash: 05f54088f3b18d90368e1b408b7012d28021abfc
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

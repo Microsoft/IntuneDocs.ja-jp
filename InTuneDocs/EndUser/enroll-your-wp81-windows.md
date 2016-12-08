@@ -2,7 +2,7 @@
 title: "Intune に Windows Phone 8.1 デバイスを登録する | Microsoft Intune"
 description: "Intune に Windows Phone 8.1 デバイスを登録する方法について説明します"
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
@@ -14,14 +14,14 @@ ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 843011aca535d8416b931f43bb622bc5c01ed546
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: b4569ec01a0b8c6a8ec06cb9036d7753e34b38d2
 
 
 ---
 
 
-# Intune に Windows Phone 8.1 デバイスを登録する
+# <a name="enroll-your-windows-phone-81-device-in-intune"></a>Intune に Windows Phone 8.1 デバイスを登録する
 
 職場または学校が Microsoft Intune を使用している場合は、お使いのデバイスを登録して、会社の電子メール、ファイル、またその他のリソースにアクセスできます。 デバイスを登録すると、組織は会社のデータをセキュリティで保護することができます。 登録の詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)」と「[What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)」 (IT 管理者がお客様のデバイスに関して確認できる情報と確認できない情報) を参照してください。
 
@@ -32,7 +32,7 @@ Intune に Phone 8.1 デバイスを登録するには、自分の職場また�
 
 -   [Windows Phone から Windows ストアへのアクセスが許可されていない場合、または Microsoft アカウントを所有していない場合](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
-## 会社で Windows ストアからポータル サイトを使用できるようにする場合
+## <a name="if-your-company-lets-you-use-the-company-portal-from-the-windows-store"></a>会社で Windows ストアからポータル サイトを使用できるようにする場合
 ポータル サイト アプリをデバイスにインストールします。
 
 1.  **[スタート]** &gt; **[ストア]** をタップします。
@@ -71,7 +71,7 @@ Intune に Phone 8.1 デバイスを登録するには、自分の職場また�
 
     ![追加されたアカウントの画面](./media/WP81-enroll-4-account-added.png)
 
-## Windows Phone から Windows ストアへのアクセスが許可されていない場合、または Microsoft アカウントを所有していない場合
+## <a name="if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>Windows Phone から Windows ストアへのアクセスが許可されていない場合、または Microsoft アカウントを所有していない場合
 
 1.  **[設定]** &gt; **[社内]** の順にタップします。
 
@@ -87,6 +87,6 @@ IT 管理者によって、登録時にポータル サイトがインストー�
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
