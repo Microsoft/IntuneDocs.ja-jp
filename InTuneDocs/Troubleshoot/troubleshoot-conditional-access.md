@@ -2,7 +2,8 @@
 title: "条件付きアクセスに関するトラブルシューティング | Microsoft Intune"
 description: "ユーザーが Intune の条件付きアクセスでリソースにアクセスできない場合の対処方法。"
 keywords: 
-author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
-ms.openlocfilehash: d819e2e25e00791793add519694fc34a251178db
+ms.sourcegitcommit: 001bacbfc6a61a1c6b8f75c8e7ca55e311a1fa71
+ms.openlocfilehash: 7d52b3bb05a00b0da5e0845380f8431044b1c121
 
 
 ---
@@ -79,7 +80,7 @@ ms.openlocfilehash: d819e2e25e00791793add519694fc34a251178db
 - Exchange Connector のログで sendemail アクティビティにエラーがないかを確認します。 検索するコマンドの例は、「SendEmail from notification account to useremail」です。
 - Exchange Connector はデバイスをブロックする前に、ライセンス認証の電子メールを送信します。 デバイスがオフラインである場合、ライセンス認証の電子メールを受信できない可能性があります。 デバイスの電子メール クライアントがポーリングでなくプッシュを使用して電子メールを取得しているかどうかを確認します。ユーザーが電子メールを受信しない可能性があるためです。 ポーリングに切り替え、デバイスが電子メールを受信することを確認してください。
 
-## <a name="noncompliant-device-not-blocked"></a>非対応のデバイスがブロックされていない
+## <a name="non-compliant-device-not-blocked"></a>非対応のデバイスがブロックされていない
 
 非対応のデバイスで引き続きアクセス可能なデバイスが見つかった場合は、次の手順を実行します。
 
@@ -158,6 +159,6 @@ Exchange Connector ログで **Get next コマンド**の例外を確認し、�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

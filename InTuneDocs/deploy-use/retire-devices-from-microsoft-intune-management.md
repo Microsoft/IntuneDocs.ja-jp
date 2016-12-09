@@ -14,8 +14,8 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
-ms.openlocfilehash: be3a30535fc9cebad5d4a167b75c484ddafd7f85
+ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
+ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
 
 
 ---
@@ -55,7 +55,7 @@ ms.openlocfilehash: be3a30535fc9cebad5d4a167b75c484ddafd7f85
 8.  対象のデバイスを選択して、**[デバイスの削除]** を選択します。 Active Directory との次の同期時にデバイスが削除されます。 通常は 4 時間内に行われます。 同期の後、デバイスは管理から削除されます。 これにより、そのユーザーのデバイス制限から 1 つのデバイスが削除されます。
 
 ## <a name="retire-managed-computers"></a>管理対象コンピューターを削除する
-Intune クライアント ソフトウェアによって管理されているコンピューターを、Intune 管理コンソールで管理から削除できます。 これにより、コンピューターからのクライアント ソフトウェアのアンインストールと Intune ポリシーの削除も行われます。 [Intune クライアント ソフトウェアで管理されているコンピューターの削除](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md)に関する情報を参照してください。
+Intune クライアント ソフトウェアによって管理されているコンピューターを、Intune 管理コンソールで管理から削除できます。 これにより、コンピューターからのクライアント ソフトウェアのアンインストールと Intune ポリシーの削除も行われます。 [Intune クライアント ソフトウェアで管理されているコンピューターの削除](retire-a-windows-pc-with-microsoft-intune.md)に関する情報を参照してください。
 
 ## <a name="block-access-a-device"></a>デバイスへのアクセスをブロックする
 デバイスを紛失した場合、または社員が会社所有のハードウェアを返却しないで退職したためにデバイスを削除する必要がある場合は、デバイスの[パスコードをリセットしてリモートでロック](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)することもできます。 これにより、会社の情報の不正使用を防止できます。ただし、デバイスを損失として会計処理することが必要な場合があります。
@@ -70,6 +70,6 @@ Intune クライアント ソフトウェアによって管理されているコ
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 
