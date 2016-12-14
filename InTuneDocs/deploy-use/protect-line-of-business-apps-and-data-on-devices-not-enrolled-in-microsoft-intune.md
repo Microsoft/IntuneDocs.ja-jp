@@ -2,8 +2,8 @@
 title: "登録されていないデバイスで LOB アプリを保護する |Microsoft Intune"
 description: "このトピックでは、データの損失を防ぐことができるモバイル アプリケーション管理ポリシーを適用できるように、カスタム基幹業務アプリを準備する方法について説明します。"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 3bce8989944985c36a3d233fbb05d2f3f135b7e7
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: bc1efb1e0c62e6bd52658690db95901c70403d4d
 
 
 ---
@@ -29,9 +29,9 @@ ms.openlocfilehash: 3bce8989944985c36a3d233fbb05d2f3f135b7e7
 
 ##  <a name="step-1-prepare-the-app"></a>手順 1: アプリを準備する
 
-MAM ポリシーをアプリに適用する前に、まず Microsoft Intune アプリ ラッピング ツール ([iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool) 用または [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool) 用) を使用してアプリをラップする必要があります。あるいは、[Intune アプリ SDK](/../develop/intune-app-sdk) を利用し、Intune アプリ保護機能を手動で統合します。
+MAM ポリシーをアプリに適用する前に、まず Microsoft Intune アプリ ラッピング ツール ([iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 用または [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 用) を使用してアプリをラップする必要があります。あるいは、[Intune アプリ SDK](../develop/intune-app-sdk.md) を利用し、Intune アプリ保護機能を手動で統合します。
 
-アプリ ラッピング ツールと SDK の比較については、「[Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)」を参照してください。
+アプリ ラッピング ツールと SDK の比較については、「[Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)」を参照してください。
 
 ## <a name="step-2-add-the-app"></a>手順 2: アプリを追加する
 
@@ -81,6 +81,6 @@ MAM ポリシーと基幹業務アプリを関連付けるには、次の手順�
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

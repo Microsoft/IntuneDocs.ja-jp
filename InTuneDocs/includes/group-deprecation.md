@@ -1,7 +1,7 @@
 >[!Important]
->グループの割り当てが Intune から Azure Active Directory に移動します。 この更新により Intune アカウントでは **[Assign devices to the following group (デバイスを次のグループに割り当てる)]** オプションが表示されなくなります。 [詳細情報](../deploy-use/ios-device-enrollment-program-in-microsoft-intune#changes-to-intune-group-assignments)
+>グループの割り当てが Intune から Azure Active Directory に移動します。 この更新により Intune アカウントでは **[Assign devices to the following group (デバイスを次のグループに割り当てる)]** オプションが表示されなくなります。 [詳細情報](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune#changes-to-intune-group-assignments)
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

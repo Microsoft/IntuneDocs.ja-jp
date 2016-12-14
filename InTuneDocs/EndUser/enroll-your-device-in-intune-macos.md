@@ -15,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 162d176c5f272f5f19ba18cdd07fe815ac1bcce7
-ms.openlocfilehash: fc0efceb8a0c3e1323f7d94625bc5f618d35bfd6
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 650e9b0700971e626e4062c312111ef60e74badc
 
 
 ---
@@ -46,7 +46,7 @@ ms.openlocfilehash: fc0efceb8a0c3e1323f7d94625bc5f618d35bfd6
  ![このデバイスの macOS を登録する](./media/macOS_enroll_003_enroll_popup.png)
 
   > [!NOTE]
-  > Intune は、ユーザーのコンピューターにアクセスして、そのデバイスが組織のリソースにアクセスしても十分に安全であることを確認する必要があります。 「[ポータル サイト アプリをインストールし、Intune に iOS または Mac OS X デバイスを登録するとどうなりますか](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios)」をご覧ください。
+  > Intune は、ユーザーのコンピューターにアクセスして、そのデバイスが組織のリソースにアクセスしても十分に安全であることを確認する必要があります。 「[ポータル サイト アプリをインストールし、Intune に iOS または Mac OS X デバイスを登録するとどうなりますか](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)」をご覧ください。
 
 6. __[システム環境設定]__ が開き、__"管理プロファイル" をインストール__するかどうかの確認を求められます。 __[インストール]__ をクリックして続行するか、__[プロファイルの表示]__ をクリックして詳細を確認します。
 
@@ -64,6 +64,6 @@ ms.openlocfilehash: fc0efceb8a0c3e1323f7d94625bc5f618d35bfd6
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

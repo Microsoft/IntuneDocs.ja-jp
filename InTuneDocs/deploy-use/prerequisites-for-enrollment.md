@@ -14,8 +14,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 391612c35a7665073ca8a5c629169e5be967ab59
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 270e6015e629c048b01b218793640888706d118e
 
 
 ---
@@ -40,8 +40,8 @@ Configuration Manager で Intune を管理するには
 ## <a name="step-1-enable-connections"></a>手順 1: 接続を有効にする
 
 モバイル デバイスの登録を有効にする前に、次のことが完了していることを確認してください。
-- [必要なネットワーク URL とポートの確認](../get-started/network-infrastructure-requirements-for-microsoft-intune)
-- [ドメイン名の追加と検証](../get-started/domain-names-for-microsoft-intune)
+- [必要なネットワーク URL とポートの確認](../get-started/network-infrastructure-requirements-for-microsoft-intune.md)
+- [ドメイン名の追加と検証](../get-started/domain-names-for-microsoft-intune.md)
 
 ## <a name="step-2-set-mdm-authority"></a>手順 2: MDM 機関を設定する
 MDM 機関では、一連のデバイスを管理するためのアクセス許可を持つ管理サービスを定義します。 MDM 機関のオプションには、Intune 単体で使用するか、Intune を Configuration Manager と連携させて使用する方法があります。 Configuration Manager を管理機関として設定した場合、モバイル デバイス管理のために使用できるサービスは他にありません。
@@ -111,7 +111,7 @@ MDM 機関では、一連のデバイスを管理するためのアクセス許�
 
 ## <a name="step-5-assign-user-licenses"></a>手順 5: ユーザー ライセンスを割り当てる
 
-**Office 365 管理ポータル**を使用して、手動でクラウドベースのユーザーを追加し、クラウドベースのユーザー アカウントと、オンプレミスの Active Directory から Azure Active Directory (Azure AD) に同期されているアカウントの両方にライセンスを割り当てます。 [オンプレミスのユーザーを Azure AD と同期する](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md)ことができます。
+**Office 365 管理ポータル**を使用して、手動でクラウドベースのユーザーを追加し、クラウドベースのユーザー アカウントと、オンプレミスの Active Directory から Azure Active Directory (Azure AD) に同期されているアカウントの両方にライセンスを割り当てます。 [オンプレミスのユーザーを Azure AD と同期する](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad)ことができます。
 
 1.  テナント管理者の資格情報を使用して、[Office 365 管理ポータル](https://portal.office.com/Admin/Default.aspx)にサインインします。
 
@@ -136,7 +136,7 @@ MDM 機関を設定したら、組織がサポートするオペレーティン�
 - [Windows PC とノート PC](set-up-windows-device-management-with-microsoft-intune.md)
 - [Windows 10 Mobile と Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 
-[企業所有デバイスの登録](manage-corporate-owned-devices)を有効にすることもできます。
+[企業所有デバイスの登録](manage-corporate-owned-devices.md)を有効にすることもできます。
 
 ## <a name="step-7-next-steps"></a>手順 7: 次のステップ
 
@@ -149,6 +149,6 @@ MDM 機関を設定したら、組織がサポートするオペレーティン�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
