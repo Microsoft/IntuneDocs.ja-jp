@@ -14,8 +14,8 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: 504b8334485217ab00d42080e1fab8728e7b62c4
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: f1e019d66858357987ee34e8a5144fb6a3511400
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 504b8334485217ab00d42080e1fab8728e7b62c4
 Intune 管理者は、ポータル サイトから Samsung Knox Standard デバイスなどの Android デバイスの管理を有効にできます。 ユーザーが、Google Play から入手できるポータル サイト アプリを使用してデバイスを登録できます。
 
 1.  **Intune をセットアップする**<br>
-    **Microsoft Intune** を[モバイル デバイス管理機関に設定](prerequisites-for-enrollment.md#set-mobile-device-management-authority)して、MDM の設定を行うことにより、モバイル デバイス管理を準備します (この作業をまだ行っていない場合)。
+    **Microsoft Intune** を[モバイル デバイス管理機関に設定](prerequisites-for-enrollment.md#step-2-set-mdm-authority)して、MDM の設定を行うことにより、モバイル デバイス管理を準備します (この作業をまだ行っていない場合)。
 
 2.  **Android の登録が有効になる**<br>
     Android モバイル デバイスの登録を有効にするために、Intune コンソールで追加の構成を行う必要はありません。
@@ -42,6 +42,6 @@ Intune 管理者は、ポータル サイトから Samsung Knox Standard デバ�
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

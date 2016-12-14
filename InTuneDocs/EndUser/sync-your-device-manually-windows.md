@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 9561cf77e1569a6ab0da5d9b8e90e03ce5c9e998
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 デスクトップ](#windows-10-desktop)
-* [Windows Phone 8.1](#windows-phone-8-1)
+* [Windows Phone 8.1](#windows-phone-81)
 
 
 ## <a name="windows-10-mobile"></a>[Windows] 10 Mobile
@@ -54,7 +54,7 @@ ms.openlocfilehash: 2fad0ea18485290a513d175fecf0a4947786e5eb
     画面の上部に、"アカウントを同期中" というメッセージが表示されます。 同期が完了するまで、**[同期]** ボタンは灰色表示になります。
 
 ## <a name="windows-10-desktop"></a>Windows 10 Desktop
-Windows 10 には複数のバージョンがあるため、2 つの手順があります。 スクリーンショットを確認し、お使いのデバイスの表示画面に近い方の手順に従ってください。 
+Windows 10 には複数のバージョンがあるため、2 つの手順があります。 スクリーンショットを確認し、お使いのデバイスの表示画面に近い方の手順に従ってください。
 
 1. **[スタート]** ボタンを選択し、**[設定]** を選択します。
 
@@ -72,7 +72,7 @@ Windows 10 には複数のバージョンがあるため、2 つの手順があ�
 
     [職場のアクセス] の画面が表示されている場合は、「[[職場のアクセス] が表示されている場合の手順](#steps-to-follow-if-you-see-your-account)」にある指示に従います。
 
-    ![アカウントの種類として職場のアクセスを選択する](./media/win10pc-sync-3-work-access.png) 
+    ![アカウントの種類として職場のアクセスを選択する](./media/win10pc-sync-3-work-access.png)
 
 ### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>[職場または学校にアクセスする] が表示されている場合の手順
 
@@ -80,9 +80,9 @@ Windows 10 には複数のバージョンがあるため、2 つの手順があ�
 
     ![[職場または学校にアクセスする] を選択する](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-2. 職場または学校のアカウントを選択します。 IT 管理者が行った設定に応じて、以下に示す例のような 2 種類のアカウントが表示されます。 1 つのアカウントの横にはブリーフケースがあり、もう 1 つのアカウントの横には Microsoft のロゴがあります。 
+2. 職場または学校のアカウントを選択します。 IT 管理者が行った設定に応じて、以下に示す例のような 2 種類のアカウントが表示されます。 1 つのアカウントの横にはブリーフケースがあり、もう 1 つのアカウントの横には Microsoft のロゴがあります。
 
-    - ブリーフケースが表示されているアカウントがある場合はそれを選択し、その下に **[情報]** ボタンが表示されていることを確認します。 
+    - ブリーフケースが表示されているアカウントがある場合はそれを選択し、その下に **[情報]** ボタンが表示されていることを確認します。
     - Microsoft のロゴが表示されているアカウントしかない場合はそのアカウントを選択して、その下に **[情報]** ボタンが表示されていることを確認します。
 
     ![ブリーフケースまたは Microsoft のロゴの横にあるアカウント名を選択する](./media/win10pc-rs1-sync-info-button.png)
@@ -94,7 +94,7 @@ Windows 10 には複数のバージョンがあるため、2 つの手順があ�
 4. **[同期]** ボタンを選択します。 デバイスと Intune が同期されます。
 
 ### <a name="steps-to-follow-if-you-see-work-access"></a>[職場のアクセス] が表示されている場合の手順
-    
+
 1. **[アカウント]** ページで、**[職場のアクセス]** を選択します。
 
     ![アカウントの種類として職場のアクセスを選択する](./media/win10pc-sync-3-work-access.png)
@@ -130,6 +130,6 @@ Windows 10 には複数のバージョンがあるため、2 つの手順があ�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

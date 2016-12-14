@@ -1,11 +1,11 @@
 ---
 title: "Windows デバイスを Intune で使用する | Microsoft Intune"
-description: "Windows デバイスが Intune で登録されている場合にデバイスで実行できるタスクへのリンクの一覧"
+description: "Windows デバイスが Intune で登録されている場合にユーザーがデバイスで実行できるタスクへのリンクの一覧"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,20 @@ ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 28062ec58760a793d0e19f281efd026c3d8070da
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 05eb711e65e6db13e480a966849e7f39d3ec8c71
 
 
 ---
 
-# Windows デバイスを Intune で使用する
+# <a name="using-your-windows-device-with-intune"></a>Windows デバイスを Intune で使用する
 
 この記事には、ユーザーが Intune 管理対象デバイスで実行できるすべてのタスクへのリンクが掲載されています。 IT 管理者はこの情報を参照して、ユーザーがさまざまなタスクを実行するために従うべき手順を確認できます。タスクは以下のカテゴリにグループ化されます。
 - ポータル サイト アプリのインストールと Intune の登録
 - 登録後の管理タスク
 - ポリシー準拠の問題
 
-## ポータル サイト アプリのインストールと Intune の登録
+## <a name="company-portal-app-installation-and-intune-enrollment"></a>ポータル サイト アプリのインストールと Intune の登録
 
 このセクションの情報は、Intune ポータル サイトのインストールと Windows デバイスの登録に役立ちます。
 
@@ -35,7 +35,7 @@ ms.openlocfilehash: 28062ec58760a793d0e19f281efd026c3d8070da
 - [ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 - [デバイスを Intune に登録した場合に IT 管理者が確認できること](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
-## Intune にデバイスを登録する際に実行できること
+## <a name="things-users-can-do-when-their-device-is-enrolled-in-intune"></a>Intune にデバイスを登録する際にユーザーが実行できること
 
 このセクションの情報は、Windows デバイスを Intune に登録した後に実行できる操作で役立ちます。
 
@@ -48,7 +48,7 @@ ms.openlocfilehash: 28062ec58760a793d0e19f281efd026c3d8070da
 - [Microsoft による使用状況データの収集を無効にする](turn-off-microsoft-usage-data-collection-windows.md)
 - [デバイスを手動で同期する](sync-your-device-manually-windows.md)
 
-## ご利用のデバイスで問題を解決するには
+## <a name="steps-to-fix-device-and-compliance-issues"></a>デバイスとコンプライアンスに関する問題を解決する手順
 
 このセクションの情報は、Windows デバイスを Intune に登録した場合に発生する可能性がある問題を解決するのに役立ちます。
 
@@ -61,6 +61,6 @@ ms.openlocfilehash: 28062ec58760a793d0e19f281efd026c3d8070da
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
