@@ -2,8 +2,8 @@
 title: "Lookout を利用できるようにサブスクリプションを設定する | Microsoft Intune"
 description: "このトピックでは、Lookout デバイス脅威保護を構成する方法について説明します。"
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 8477a2f1-2e1d-4d42-8bcb-e1181cc900bb
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1187ad3fdd4a427333d610686698c1f806c6ee33
-ms.openlocfilehash: 1d8cdaa36a852fba5912c250daa500e16bd3b661
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: bd22d4d19a8337194d331931995c0bd2321a90c5
 
 
 ---
@@ -69,9 +69,9 @@ Lookout コンソールに初めてログインするときは、Azure AD の全
 
 1.  Lookout コンソールで **[System]** (システム) モジュールから **[Connectors]** (コネクタ) タブを選択し、**[Intune]** を選択します。
 
-  ![Lookout コンソールの [Connectors] (コネクタ) タブが開き [Intune] オプションが強調されている状態のスクリーンショット](../media/mtp/lookout_mtp_setup-intune-connector.png)
+  ![Lookout コンソールの 「Connectors」 (コネクタ) タブが開き [Intune] オプションが強調されている状態のスクリーンショット](../media/mtp/lookout_mtp_setup-intune-connector.png)
 
-2.  [Connection Settings] (接続設定) オプションで [Heartbeat Frequency] (ハートビート周期) を分単位で構成します。  Intune コネクタの準備ができました。  
+2.  「Connection Settings」 (接続設定) オプションで 「Heartbeat Frequency」 (ハートビート周期) を分単位で構成します。  Intune コネクタの準備ができました。  
 
   ![ハートビート周期が構成されている接続設定タブのスクリーンショット](../media/mtp/lookout-mtp-connection-settings.png)
 
@@ -110,7 +110,7 @@ Lookout コンソールに初めてログインするときは、Azure AD の全
 ### <a name="step-7-configure-email-notifications"></a>手順 7: 電子メール通知を構成する
 脅威に関する電子メール通知を受け取りたい場合は、通知を受け取るユーザー アカウントで [Lookout コンソール](https://aad.lookout.com)にサインインします。 **[System]** (システム) モジュールの **[Preferences]** (基本設定) タブで、通知を選択して、**[ON]** (オン) に設定します。 変更を保存します。
 
-![ユーザー アカウントが表示された [Preferences] (基本設定) ページのスクリーンショット](../media/mtp/lookout-mtp-email-notifications.png) 電子メール通知を受け取る必要がなくなった場合は、通知を **[OFF]** (オフ) に設定して変更を保存します。
+![ユーザー アカウントが表示された基本設定ページのスクリーンショット](../media/mtp/lookout-mtp-email-notifications.png) 電子メール通知を受け取る必要がなくなった場合は、通知を **[OFF]** (オフ) に設定して変更を保存します。
 ### <a name="step-8-configure-threat-classification"></a>手順 8: 脅威の分類を構成する
 Lookout デバイス脅威保護によって、さまざまな種類のモバイルの脅威が分類されます。 [Lookout の脅威の分類](http://personal.support.lookout.com/hc/en-us/articles/114094130693)には、既定のリスク レベルが関連付けられています。 これらは会社の要件に合わせていつでも変更できます。
 
@@ -120,12 +120,12 @@ Lookout デバイス脅威保護によって、さまざまな種類のモバイ
 > ここで指定するリスク レベルは、デバイス脅威保護における重要な要素の 1 つです。デバイスのコンプライアンスは、これらのリスク レベルに従って実行時に計算されるためです。 つまり、Intune 管理者が設定するポリシーのルールに従って、デバイスはアクティブな脅威の最低レベルが高、中、または低の場合に非準拠と判断されます。 Lookout デバイス脅威保護での脅威分類ポリシーは、Intune でのデバイスのコンプライアンス計算に直接影響を与えます。
 
 ## <a name="watching-enrollment"></a>登録を監視する
-セットアップが完了すると、Lookout デバイス脅威保護は Azure AD のポーリングを開始し、指定された登録グループに対応するデバイスを探します。  登録されたデバイスに関する情報は、[Devices] (デバイス) モジュールで確認できます。  デバイスの初期状態は保留中と表示されます。  Lookout for Work アプリがデバイスでインストールされたり、オープンになったり、アクティブ化されたりすると、デバイスの状態が変わります。  Lookout for Work アプリをデバイスにプッシュする方法の詳細については、「[Lookout for Work アプリを構成して展開する](configure-and-deploy-lookout-for-work-apps.md)」をご覧ください。
+セットアップが完了すると、Lookout デバイス脅威保護は Azure AD のポーリングを開始し、指定された登録グループに対応するデバイスを探します。  登録されたデバイスに関する情報は、「Devices」 (デバイス) モジュールで確認できます。  デバイスの初期状態は保留中と表示されます。  Lookout for Work アプリがデバイスでインストールされたり、オープンになったり、アクティブ化されたりすると、デバイスの状態が変わります。  Lookout for Work アプリをデバイスにプッシュする方法の詳細については、「[Lookout for Work アプリを構成して展開する](configure-and-deploy-lookout-for-work-apps.md)」をご覧ください。
 ## <a name="next-steps"></a>次のステップ
 [Intune 管理コンソールで Lookout MTP の接続を有効にする](enable-lookout-mtp-connection-in-intune.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

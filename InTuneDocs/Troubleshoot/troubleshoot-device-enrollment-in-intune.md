@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
-ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
+ms.sourcegitcommit: 998c24744776e0b04c9201ab44dfcdf66537d523
+ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
 
 
 ---
@@ -86,7 +86,7 @@ ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
 >
 > デバイス登録マネージャー グループに追加されているユーザー アカウントのユーザー ログインについて条件付きアクセス ポリシーが適用されている場合、そのアカウントは登録を完了できません。
 
-### <a name="company-portal-temporarily-unavailable"></a>"ポータル サイトは一時的に使用できません"
+### <a name="company-portal-emporarily-unavailable"></a>ポータル サイトは一時的に使用できません
 **問題:** デバイスで **"ポータル サイトは一時的に使用できません"** というエラーがユーザーに表示されます。
 
 **解決方法:**
@@ -214,23 +214,40 @@ Android 6.0 へのアップグレードを試みるようユーザーに通知�
 
 ### <a name="android-certificate-issues"></a>Android 証明書に関する問題
 
-**問題**: ユーザーが自分のデバイスで、*「You cannot sign in because your device is missing a required certificate.」* (デバイスに必要な証明書がないためにサインインすることはできません。) というメッセージを受信します。
+**問題**: ユーザーが自分のデバイスで、[*You cannot sign in because your device is missing a required certificate.*] (デバイスに必要な証明書がないためにサインインすることはできません。) というメッセージを受信します。
 
-**解決方法**:
+**解決方法 1**:
 
-- ユーザーは、[この手順](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator)に従って、欠落している証明書を取得できる場合があります。
-- ユーザーが証明書を取得できない場合は、ADFS サーバーの中間証明書が欠落している可能性があります。 Android では、サーバーを信頼するために中間証明書が必要です。
+[[デバイスに必要な証明書がない](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator)] に書かれている指示に従うようユーザーに促します。 ユーザーが指示に従っているにもかかわらずこのエラーが解消されない場合、解決方法 2 をお試しください。
 
-次のように、ADFS サーバーまたはプロキシで証明書を中間ストア内にインポートできます。
+**解決方法 2**:
 
-1.  ADFS サーバーで、**Microsoft 管理コンソール**を起動し、**コンピューター アカウント**に証明書スナップインを追加します。
-5.  ADFS サービスが使用している証明書を検索し、その親証明書を表示します。
-6.  親証明書をコピーして、**Computer\Intermediate Certification Authorities\Certificates** に貼り付けます。
-7.  ADFS、ADFS 復号化、および ADFS 署名証明書をコピーして、ADFS サービスの個人用ストアに貼り付けます。
-8.  ADFS サーバーを再起動します。
+企業の資格情報を入力し、フェデレーション ログイン ページにリダイレクトされた後も、「証明書がない」というエラーが表示される場合、Active Directory フェデレーション サービス (AD FS) サーバーで中間証明書が不足している可能性があります。
 
+Android デバイスでは、[SSL Server hello](https://technet.microsoft.com/library/cc783349.aspx) に中間証明書を含めることが要求されるため、この証明書エラーが発生します。しかしながら、現在のところ、既定の AD FS サーバーまたは AD FS Proxy サーバーのインストールでは、AD FS のサービス SSL 証明書だけを SSL Client hello への SSL Server hello の応答で送信します。
+
+この問題を解決するには、AD FS サーバーまたはプロキシでコンピューターの個人証明書に証明書を次のようにインポートします。
+
+1.  ADFS サーバーとプロキシ サーバーで、ローカル コンピューターの証明書管理コンソールを起動します。**[スタート]** ボタンを右クリックし、**[ファイル名を指定して実行]** を選択し、「**certlm.msc**」と入力します。
+2.  **[個人用]** を展開し、**[証明書]** を選択します。
+3.  AD FS サービス通信の証明書を見つけ (公的に署名された証明書)、ダブルクリックしてそのプロパティを表示します。
+4.  **[証明のパス]** タブを選択し、証明書の親証明書を確認します。
+5.  親証明書ごとに、**[証明書の表示]** を選択します。
+6.  **[詳細]** タブを選択し、**[ファイルにコピー]** を選択します。
+7.  ウィザードの指示に従い、証明書の公開鍵をファイル場所にエクスポートします (保存します)。
+8.  手順 3 でエクスポートした親証明書を Local Computer\Personal\Certificates にインポートします。**[証明書]** を右クリックし、**[すべてのタスク]**、**[インポート]** の順に選択し、ウィザードの指示に従って証明書をインポートします。
+9.  AD FS サーバーを再起動します。
+10. すべての AD FS サーバーとプロキシ サーバーで上記の手順を繰り返します。
 これで、Android デバイスでポータル サイトにサインインできるようになります。
 
+**証明書が正しくインストールされていることを確認するには**:
+
+証明書が正しくインストールされていることを確認する方法とツールはたくさんあります。下記で紹介する手順はその 1 つです。
+
+1. [[無料の Digicert ツール]](ttps://www.digicert.com/help/) に進みます。
+2. AD FS サーバーの完全修飾ドメイン名 (例: sts.contoso.com) を入力し、**[CHECK SERVER]** を選択します。
+
+サーバー証明書が正しくインストールされている場合、結果にすべてのチェック マークが表示されます。 上記の問題が存在する場合、レポートの "Certificate Name Matches" (証明書名の一致) セクションと "SSL Certificate is correctly Installed" (SSL 証明書が正しくインストールされている) セクションに赤い X 印が付きます。
 
 
 ## <a name="ios-issues"></a>iOS の問題
@@ -356,6 +373,6 @@ iOS 登録エラーの一覧は、デバイスのユーザー ドキュメント
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 
