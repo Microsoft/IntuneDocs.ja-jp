@@ -1,21 +1,21 @@
 ---
-title: "iOS 用 Microsoft Intune App SDK 開発者ガイド | Microsoft Intune"
+title: "iOS 用 Microsoft Intune App SDK 開発者ガイド | Microsoft Docs"
 description: 
 keywords: 
-author: Msmbaldwin
+author: mtillman
 manager: angrobe
-ms.author: oydang
-ms.date: 09/08/2016
+ms.author: mtillman
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-ms.reviewer: jeffgilb
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01b927178ad5fb1019781863e243133861887148
-ms.openlocfilehash: eb14be40a94513a21dbd24a62e42afb7a3e57381
+ms.sourcegitcommit: b55147e2be338bd46661695134fd0f0de105bb72
+ms.openlocfilehash: b8a723fce088c1d61bddb5f2479da59a4b5c3771
 
 
 ---
@@ -32,6 +32,8 @@ iOS 用 Microsoft Intune App SDK を使用すると、モバイル アプリ管�
 * OS X 10.8.5 以降を実行し、Xcode ツールセットのバージョン 5 以降がインストールされている Mac OS コンピューターが必要になります。
 
 * [iOS 用の Intune アプリ SDK のライセンス条項](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf)を読みます。 記録用にライセンス条項を印刷し、保持します。 iOS 用の Intune App SDK をダウンロードし、使用すると、このライセンス条項に同意したことになります。  本ライセンス条項に同意されない場合、お客様は本ソフトウェアを使用できません。
+
+* [GitHub](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) で iOS 用 Intune アプリ SDK のファイルをダウンロードします。
 
 ## <a name="whats-in-the-sdk"></a>SDK の機能
 
@@ -322,9 +324,9 @@ Azure Active Directory でユーザーをサインインしないアプリでも
 
 この API が呼び出された後、アプリは通常どおりに機能し続けることができます。 登録が成功した場合、SDK はアプリの再起動が必要であることをユーザーに通知します。
 
-## <a name="debug-information"></a>デバッグに関する情報
+## <a name="status-result-and-debug-notifications"></a>状態、結果、およびデバッグ通知
 
-アプリは、Intune MAM サービスに対する次の要求についてのデバッグ通知を受け取ることができます。
+アプリは、Intune MAM サービスに対する次の要求についての状態、結果、およびデバッグ通知を受け取ることができます。
 
  - 登録要求
  - ポリシー更新要求
@@ -365,7 +367,7 @@ Azure Active Directory でユーザーをサインインしないアプリでも
 
 このオブジェクトは、返される可能性のある特定のステータス コードと共に Headers/IntuneMAMEnrollmentStatus.h で定義されています。
 
-これらの通知をアプリのビジネス ロジックの基盤にしないことが重要です。 アプリでは、デバッグまたは監視を目的としてテレメトリ サービスにこの情報を送信できます。
+
 
 
 ## <a name="sample-code"></a>サンプル コード
@@ -637,7 +639,7 @@ SDK は、次の操作をバックグラウンドで定期的に実行します�
 
 ## <a name="submit-your-app-to-the-app-store"></a>アプリ ストアにアプリを送信する
 
-Intune App SDK の静的ライブラリおよびフレームワークのビルドはどちらもユニバーサル バイナリです。 これはデバイスとシミュレーターのすべてのアーキテクチャ用のコードが含まれていることを意味します。 Apple は、App Store に送信されたアプリにシミュレーターのコードが含まれていると、そのアプリを拒否します。 デバイス専用ビルドの静的ライブラリ用にコンパイルするとき、リンカーは自動的にシミュレーター コードを削除します。
+Intune App SDK の静的ライブラリおよびフレームワークのビルドはどちらもユニバーサル バイナリです。 これはデバイスとシミュレーターのすべてのアーキテクチャ用のコードが含まれていることを意味します。 Apple は、App Store に送信されたアプリにシミュレーターのコードが含まれていると、そのアプリを拒否します。 デバイス専用ビルドの静的ライブラリ用にコンパイルするとき、リンカーは自動的にシミュレーター コードを削除します。 以下の手順に従って、アプリ ストアにアプリをアップロードする前にすべてのシミュレーター コードが削除されていることを確認します。
 
 1. `IntuneMAM.framework` がデスクトップにあることを確認します。
 
@@ -654,6 +656,6 @@ Intune App SDK の静的ライブラリおよびフレームワークのビル�
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 
