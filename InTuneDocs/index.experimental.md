@@ -5,33 +5,33 @@ layout: HubPage
 title: "Intune ドキュメント - MDM ドキュメント | Microsoft ドキュメント"
 description: "Microsoft Intune のテクニカル ドキュメント - モバイル デバイスとアプリケーションの管理"
 keywords: "Intune ドキュメント、MDM ドキュメント、モバイル デバイス管理のドキュメント、モバイル デバイスとアプリケーション管理のドキュメント"
-author: jeffgilb
-ms.author: jeffgilb
-manager: jeffgilb
-ms.date: 04/28/2016
+author: arob98
+ms.author: angrobe
+manager: angrobe
+ms.date: 11/15/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: bbab228b86bbec49bf68c7d91a05c4d0e7f37209
-ms.openlocfilehash: 1dd09018114ba68deae1adbde8e2c8167017bef7
+ms.sourcegitcommit: f9ab2200b1d357d6a805e3e5cd37f3c4391e3571
+ms.openlocfilehash: 89789e5b5f7b5030f8ec1bd0c62e8e410b9ed8be
 
 
 ---
-# Intune ドキュメント
+# <a name="intune-documentation"></a>Intune ドキュメント
 <article id="main">
     <section id="hero-content">
       <h1>Intune ドキュメント</h1>
       <h2>モバイル デバイスとモバイル アプリケーションを管理するサービスである Microsoft Intune を展開および管理する方法について説明します。</h2>
-      <h3>Configuration Manager で Intune を管理している場合は、 <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">Configuration Manager のドキュメントを参照してください &rarr;</a></h3>
+      <h3>Configuration Manager で Intune を管理している場合は、 <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">Configuration Manager のドキュメントを参照してください&rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> おすすめコンテンツ</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/intune/understand-explore/introduction-to-microsoft-intune">Microsoft Intune の概要</a></li>
+          <li><a href="http://fasttrack.microsoft.com/ems">ライセンス数が 150 以上ある場合に FastTrack 特典を利用する</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Intune に依存する一般的なシナリオ</a></li>
           <li><a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">Intune のクイック スタート ガイド</a></li>
         </ul>
@@ -278,13 +278,13 @@ ms.openlocfilehash: 1dd09018114ba68deae1adbde8e2c8167017bef7
       <p>Intune の最新情報</p>
       <ol class="action-list">
         <li><a href="https://blogs.technet.com/b/microsoftintune/" target="_blank" class="button-bordered button-translucent">Intune チーム ブログ</a></li>
-        <li><a href="https://twitter.com/msintune/" target="_blank" class="button-bordered button-translucent">Twitter で @MSIntune をフォローする</a></li>
+        <li><a href="https://twitter.com/msintune/" target="_blank" class="button-bordered button-translucent">@MSIntune on Twitter</a></li>
       </ol>
     </aside>
 </article>
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Jan17_HO1-->
 
 
