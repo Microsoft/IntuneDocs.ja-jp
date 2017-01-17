@@ -1,5 +1,5 @@
 ---
-title: "Intune ポータル サイト Web サイトの使用 | Microsoft Intune"
+title: "Intune ポータル サイト Web サイトの使用 | Microsoft Docs"
 description: "ポータル サイト Web サイトを説明し、エンド ユーザーが Web サイト上で実行できるタスクの手順へのリンクを示します"
 keywords: 
 author: barlanmsft
@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
+searchScope:
+- Company Portal
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
-ms.openlocfilehash: 695a419ea05b6d3ff93cfe45eae3d80012f44568
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: d10cc421dc6fe422b7a2c26b4902997c8c6b2e61
 
 
 ---
@@ -46,11 +48,11 @@ ms.openlocfilehash: 695a419ea05b6d3ff93cfe45eae3d80012f44568
 デバイスにインストールされた**ポータル サイト アプリ**を使用してエンド ユーザーが実行できるタスクの大部分は、**ポータル サイト Web サイト**でも行うことができます。 エンド ユーザーがデバイスに対して実行できるすべてのタスクのリンクについては、次のページを参照してください。
 
 - [Android デバイスを Intune で使用する](using-your-android-device-with-intune.md)
-- [iOS デバイスまたは macOS デバイスを Intune で使用する](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [iOS デバイスまたは macOS デバイスを Intune で使用する](using-your-ios-or-macOS-device-with-intune.md)
 - [Windows デバイスを Intune で使用する](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 
