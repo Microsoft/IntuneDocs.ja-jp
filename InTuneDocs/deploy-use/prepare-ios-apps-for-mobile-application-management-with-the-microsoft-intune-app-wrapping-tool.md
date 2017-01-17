@@ -1,5 +1,5 @@
 ---
-title: "Intune アプリ ラッピング ツールで iOS アプリをラップする |Microsoft Intune"
+title: "Intune アプリ ラッピング ツールで iOS アプリをラップする | Microsoft Docs"
 description: "このトピックの情報を使用して、アプリ自体のコードを変更することなく、iOS アプリをラップする方法について説明します。 モバイル アプリ管理ポリシーを適用できるように、アプリを準備します。"
 keywords: 
 author: mtillman
@@ -14,34 +14,154 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 0eee40c3c3c6bdfc3da2e715ef7b46e8408ba319
+ms.sourcegitcommit: b0abdd44716f8fe0ff8298fa8f6b9f4197964cb9
+ms.openlocfilehash: 06f0f7c436eef63a63182196d4d124b2d928a083
 
 
 ---
 
 # <a name="prepare-ios-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでモバイル アプリケーションを管理するために iOS アプリを準備する
 
-iOS 用 Microsoft Intune アプリ ラッピング ツールを使用すれば、アプリ自体のコードを変更せずに Intune アプリの機能を有効にして、社内 iOS アプリの動作を変更できます。
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-このツールはアプリを囲むように "ラッパー" を作成する macOS コマンド ライン アプリケーションです。 アプリが処理されたら、IT 管理者が展開した Intune の[モバイル アプリケーション管理ポリシー](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)を利用してアプリの機能を変更できます。
+iOS 用 Microsoft Intune アプリ ラッピング ツールを使用すれば、アプリ自体のコードを変更せずに社内の iOS アプリの Intune アプリ保護ポリシーを有効にすることができます。
+
+このツールはアプリを囲むように "ラッパー" を作成する macOS コマンド ライン アプリケーションです。 アプリが処理されると、[アプリの保護ポリシー](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)をアプリに展開することで、アプリの機能を変更できます。
 
 このツールをダウンロードする場合は、GitHub の「[iOS 用 Microsoft Intune アプリ ラッピング ツール](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)」を参照してください。
 
 
 
-## <a name="fulfill-the-prerequisites-for-the-app-wrapping-tool"></a>アプリ ラッピング ツールの前提条件を満たす
-前提条件の取得方法の詳細については、「[How to obtain prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)」 (iOS 用 Intune アプリ ラッピング ツールの前提条件の取得方法) というブログ投稿を参照してください。
+## <a name="general-prerequisites-for-the-app-wrapping-tool"></a>アプリ ラッピング ツールの一般的な前提条件
 
-|要件|詳細情報|
-|---------------|--------------------------------|
-|サポートされるオペレーティング システムとツールセット | このアプリ ラッピング ツールは Xcode ツールセットのバージョン 5 以降がインストールされている OS X 10.8.5 以降を実行している macOS コンピューターで実行する必要があります。|
-|署名証明書とプロビジョニング プロファイル | Apple 署名証明書とプロビジョニング プロファイルを持っている必要があります。 [Apple 開発者ドキュメント](https://developer.apple.com/)を参照してください。|
-|App Wrapping Tool でアプリを処理する  |アプリはあなたの会社または独立系ソフトウェア ベンダー (ISV) が開発し、署名したものでなければなりません。 このツールを使用し、Apple ストアのアプリを処理することはできません。 アプリは iOS 8.0 以降向けに作成されている必要があります。 また、アプリは PIE (Position Independent Executable/位置独立実行) 形式にする必要があります。 PIE 形式に関する詳細については、Apple 開発者ドキュメントを参照してください。 最後に、アプリの拡張子は **.app** または **.ipa** にする必要があります。|
-|ツールで処理できないアプリ | 暗号化されたアプリ、署名のないアプリ、および拡張ファイル属性があるアプリ。|
-|アプリの権利の設定|アプリをラップする前に、権利を設定して、通常よりも多くのアクセス許可や機能をアプリに付与しておく必要があります。 手順については、「[アプリ権限の設定](#setting-app-entitlements)」を参照してください。|
+アプリ ラッピング ツールを実行する前に、いくつかの一般的な前提条件を満たす必要があります。
 
-## <a name="install-the-app-wrapping-tool"></a>アプリ ラッピング ツールをインストールする
+* GitHub から [iOS 用 Microsoft Intune アプリ ラッピング ツール](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)をダウンロードします。
+
+* OS X 10.8.5 以降を実行し、Xcode ツールセットのバージョン 5 以降がインストールされている mac OS コンピューター。
+
+* 入力 iOS アプリはあなたの会社または独立系ソフトウェア ベンダー (ISV) が開発し、署名したものでなければなりません。
+
+  * 入力アプリのファイルの拡張子は、**.ipa** または **.app** でなければなりません。
+
+  * 入力アプリは、iOS 8.0 以降 用にコンパイルする必要があります。
+
+  * 入力アプリは暗号化できません。
+
+  * 入力アプリに拡張ファイル属性を持つことはできません。
+
+  * 入力アプリを Intune アプリ ラッピング ツールで処理する前に、権限を設定する必要があります。 [権限](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html)によって、アプリに通常よりも多くのアクセス許可や機能が付与されます。 手順については、「[アプリ権限の設定](#setting-app-entitlements)」を参照してください。
+
+## <a name="apple-developer-prerequisites-for-the-app-wrapping-tool"></a>アプリ ラッピング ツールの Apple Developer の前提条件
+
+
+ラップされたアプリを組織のユーザーだけに配布するには、[Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/) のアカウントと、自分の Apple Developer アカウントとリンクしたアプリ署名のいくつかのエンティティが必要です。
+
+組織のユーザーに内部的に iOS アプリを配布する方法の詳細については、「[Distributing Apple Developer Enterprise Program Apps](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/DistributingEnterpriseProgramApps/DistributingEnterpriseProgramApps.html#//apple_ref/doc/uid/TP40012582-CH33-SW1)」(Apple Developer Enterprise Program アプリの配布) の公式ガイドを参照してください。
+
+Intune によってラップされたアプリを配布するには、次が必要となります。
+
+* Apple Developer Enterprise Program の開発者アカウント。
+
+* 有効なチーム識別子を持つ、社内およびアドホック配布の署名証明書。
+
+  * Intune アプリ ラッピング ツールのパラメーターとして、署名証明書の SHA1 ハッシュが必要になります。
+
+
+* 社内配布プロビジョニング プロファイル。
+
+### <a name="steps-to-create-an-apple-developer-enterprise-account"></a>Apple Developer Enterprise アカウントを作成する手順
+1. [Apple Developer Enterprise Program のサイト](https://developer.apple.com/programs/enterprise/)に移動します。
+
+2. ページの右上にある **[Enroll]** (登録) をクリックします。
+
+3. 何を登録する必要があるかのチェックリストを参照してください。 ページの下部にある **[Start Your Enrollment]** (登録の開始) をクリックします。
+
+4. 組織の Apple ID で**サインイン**します。 Apple ID がない場合は、**[Create Apple ID]** (Apple ID の作成) をクリックします。
+
+5. **[Entity Type]** (エンティティ型) を選択して、**[Continue]** (続行) をクリックします。
+
+6. 組織の情報をフォームに入力します。 [ **続行**] をクリックします。 この時点で、組織を登録する権限があるかどうかが Apple によって確認されます。
+
+8. 確認したら、**[Agree to License]** (ライセンスに同意する) をクリックします。
+
+9. ライセンスに同意したら、**プログラムを購入し、アクティブ化して**終了します。
+
+10. チーム エージェント (組織に代わって Apple Developer Enterprise Program に参加する人) である場合は、最初にチーム メンバーを招待して役割を割り当てて、チームを作成します。 チームを管理する方法については、Apple のドキュメント「[開発者アカウント チームの管理](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1)」を参照してください。
+
+### <a name="steps-to-create-an-apple-signing-certificate"></a>Apple 署名証明書を作成する手順
+
+1. [Apple Developer ポータル](https://developer.apple.com/)に移動します。
+
+2. ページの右上にある **[アカウント]** をクリックします。
+
+3. 組織の Apple ID を使用して**サインイン**します。
+
+4. **[Certificates, IDs & Profiles]** (証明書、ID、プロファイル) をクリックします。
+
+  ![Azure Developer ポータル](../media/app-wrapper/iOS-signing-cert-1.png)
+
+5. をクリックして ![右上隅の Apple Developer ポータルのプラス記号、](../media/app-wrapper/iOS-signing-cert-2.png) iOS 証明書を追加します。
+
+6. **[Production]** (運用) の下にある **[In-House and Ad Hoc]** (社内およびアドホック) 証明書の作成を選択します。
+
+  ![社内およびアドホック証明書を選択する](../media/app-wrapper/iOS-signing-cert-3.png)
+
+7. ページの下部にある **[Next]** (次へ) をクリックします。
+
+8. macOS コンピューターでキーチェーン アクセス アプリケーションを使用して**証明書署名要求 (CSR)** を作成する方法を確認します。
+
+  ![CSR を作成する方法を確認する](../media/app-wrapper/iOS-signing-cert-4.png)
+
+9. 上記の手順に従い、証明書署名要求を作成します。 macOS コンピューターで、**キーチェーン アクセス** アプリケーションを起動します。
+
+10. 画面の上部にある macOS メニューで **[キーチェーン アクセス] > [証明書アシスタント] > [Request a Certificate From a Certificate Authority] (証明機関から証明書を要求する)** の順に移動します。  
+
+  ![キーチェーン アクセスで証明機関から証明書を要求する](../media/app-wrapper/iOS-signing-cert-5.png)
+
+11. 上記の Apple Developer サイトの指示に従い、CSR ファイルを作成します。 macOS コンピューターに CSR ファイルを保存します。
+
+  ![キーチェーン アクセスで証明機関から証明書を要求する](../media/app-wrapper/iOS-signing-cert-6.png)
+
+12. Apple Developer サイトに戻ります。 [ **続行**] をクリックします。 それから、CSR ファイルをアップロードします。
+
+13. Apple から署名証明書が生成されます。 これをダウンロードして、macOS コンピューター上の覚えやすい場所に保存します。
+
+  ![署名証明書をダウンロードする](../media/app-wrapper/iOS-signing-cert-7.png)
+
+14. ダウンロードした証明書ファイルをダブルクリックして、証明書をキーチェーンに追加します。
+
+15. もう一度、**キーチェーン アクセス**を開きます。 キーチェーン アクセス ウィンドウの右上の検索バーで **"iPhone"** を検索して、証明書を見つけます。 項目を右クリックして開いたメニューから、**[Get Info]** (情報を取得する) をクリックします。
+
+  ![証明書をキーチェーンに追加する](../media/app-wrapper/iOS-signing-cert-8.png)
+
+16. 情報ウィンドウが表示されます。 一番下までスクロールし、**[Fingerprints]** (指紋) ラベルの下を確認します。 アプリ ラッピング ツールの -c パラメーターとして使用するため、**[SHA1]** 文字列をコピーします。
+
+  ![証明書をキーチェーンに追加する](../media/app-wrapper/iOS-signing-cert-9.png)
+
+
+
+### <a name="steps-to-create-an-in-house-distribution-provisioning-profile"></a>社内配布プロビジョニング プロファイルを作成する手順
+
+1. [Apple Developer アカウント ポータル](https://developer.apple.com/account/)に戻り、組織の Apple ID で**サインイン**します。
+
+2. **[Certificates, IDs & Profiles]** (証明書、ID、プロファイル) をクリックします。
+
+3. をクリックして ![右上隅の Apple Developer ポータルのプラス記号、](../media/app-wrapper/iOS-signing-cert-2.png) iOS プロビジョニング プロファイルを追加します。
+
+4. **[Distribution]** (配布) の下にある**[In House]** (社内) プロビジョニング ファイルの作成を選択します。
+
+  ![社内プロビジョニング プロファイルを選択する](../media/app-wrapper/iOS-provisioning-profile-1.png)
+
+5. [ **続行**] をクリックします。 以前に生成された署名証明書をこのプロビジョニング プロファイルにリンクさせてください。
+
+6. 手順に従って、macOS コンピューターにプロファイル (拡張子 .mobileprovision) をダウンロードします。
+
+7. ファイルを覚えやすい場所に保存します。 このファイルは、アプリ ラッピング ツールを使用しているときに -p パラメータで使用されます。
+
+
+
+## <a name="download-the-app-wrapping-tool"></a>アプリ ラッピング ツールをダウンロードする
 
 1.  アプリ ラッピング ツールのファイルを [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) から macOS コンピューターにダウンロードします。
 
