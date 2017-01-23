@@ -1,11 +1,11 @@
 ---
-title: "Android の管理をセットアップする | Microsoft Intune"
+title: "Android の管理をセットアップする | Microsoft Docs"
 description: "Microsoft Intune を使用して Android および KNOX Standard デバイスのモバイル デバイス管理 (MDM) を有効にします。"
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: f1e019d66858357987ee34e8a5144fb6a3511400
+ms.sourcegitcommit: 26ddc03985ab8a4959a1d2c9a47e77f042ab9310
+ms.openlocfilehash: 6b74c09c37970429d3eaa571db655854d592a2fe
 
 
 ---
 
 # <a name="set-up-android-device-management"></a>Android デバイスの管理をセットアップする
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune 管理者は、ポータル サイトから Samsung Knox Standard デバイスなどの Android デバイスの管理を有効にできます。 ユーザーが、Google Play から入手できるポータル サイト アプリを使用してデバイスを登録できます。
 
 1.  **Intune をセットアップする**<br>
@@ -37,11 +40,28 @@ Intune 管理者は、ポータル サイトから Samsung Knox Standard デバ�
   - [Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](what-to-tell-your-end-users-about-using-microsoft-intune.md)
   - [Android デバイス向けエンド ユーザー ガイダンス](../enduser/using-your-android-device-with-intune.md)
 
+中国には Google Play ストアがないので、Android デバイスは中国のアプリ マーケットプレースからポータル サイトを入手する必要があります。 Android 用ポータル サイト アプリは、以下のストアでダウンロードできます。
+* [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
+* [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
+* [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
+* [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
+* [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
+
+Android 用ポータル サイト アプリは、Google Play 開発者サービスを使って Microsoft Intune サービスと通信します。 中国では Google Play 開発者サービスをまだ利用できないので、次のタスクには最大 8 時間かかることがあります。 
+
+|Intune 管理コンソール| Android 用 Intune ポータル サイト アプリ |Intune ポータル サイト Web サイト|   
+|---|---|---|
+|フル ワイプ| リモート デバイスの削除| デバイスの削除 (ローカルおよびリモート)|
+|選択的ワイプ| デバイスのリセット| デバイスのリセット|
+|新規アプリまたは更新アプリの展開| 使用可能な基幹業務アプリのインストール| デバイスのパスコードのリセット|
+|リモート ロック|||
+|パスコードのリセット|||
+
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune でデバイスを登録するための前提条件](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

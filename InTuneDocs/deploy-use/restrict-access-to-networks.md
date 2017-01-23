@@ -1,11 +1,11 @@
 ---
-title: "Cisco ISE でネットワークへのアクセスを制限する | Microsoft Intune"
+title: "Cisco ISE でネットワークへのアクセスを保護する | Microsoft Docs"
 description: "Cisco ISE で制御されている Wi-Fi および VPN にアクセスする前に、デバイスが登録されポリシーに準拠するように、Intune で Cisco ISE を使用します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/06/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1dd3fde8119b54f574265c2ca9cf62cee9e77b01
-ms.openlocfilehash: bd6307cd8ff465bbce3de124ffdb444333d12efe
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 8ef24e4d413662012f091c1be318d1d274e16439
 
 
 ---
 
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Microsoft Intune で Cisco ISE を使用する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune を Cisco Identity Services Engine (ISE) と統合すると、Intune のデバイス登録と準拠の状態を使用して、ISE 環境内でネットワーク ポリシーを作成することができます。 これらのポリシーを使用すると、会社のネットワークへのアクセスが、Intune で管理され Intune ポリシーに準拠しているデバイスに制限されるように処理することができます。
 
 ## <a name="configuration-steps"></a>構成手順
@@ -64,7 +67,7 @@ b. ロック アイコン &gt; **[詳細]** をクリックします。
 > 証明書の有効期限が切れた場合、新しい証明書をエクスポートしてインポートする必要があるため、証明書の有効期限を確認します。
 
 
-### <a name="obtain-a-selfsigned-cert-from-ise"></a>ISE からの自己署名証明書の取得 
+### <a name="obtain-a-self-signed-cert-from-ise"></a>ISE からの自己署名証明書の取得 
 
 1.  ISE コンソールで、**[Administration]** (管理)  > **[Certificates]** (証明書)  > **[System Certificates]** (システム証明書)  > **[Generate Self Signed Certificate]** (自己署名証明書の生成) の順に選択します。  
 2.       自己署名証明書をエクスポートします。
@@ -100,7 +103,7 @@ b. ロック アイコン &gt; **[詳細]** をクリックします。
 |OAuth 2.0 トークン エンドポイント|トークン発行 URL|
 |クライアント ID でコードを更新する|クライアント ID|
 
-### <a name="step-4-upload-the-selfsigned-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>手順 4: 自己署名証明書を ISE から、Azure AD で作成した ISE アプリにアップロードする
+### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>手順 4: 自己署名証明書を ISE から、Azure AD で作成した ISE アプリにアップロードする
 1.     .cer X509 公開証明書ファイルから、base64 でエンコードされた証明書値と拇印を取得します。 この例では PowerShell を使用します。
    
       
@@ -189,6 +192,6 @@ ISE 管理コンソールで、次の設定値を指定します。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

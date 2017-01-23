@@ -1,33 +1,34 @@
 ---
-title: "ポータル サイト Web サイトからデバイスのパスコードをリセットする | Microsoft Intune"
+title: "ポータル サイト Web サイトからデバイスのパスコードをリセットする方法 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: b3a3b7c2a983776f79ffa8562e130bb11e714e29
+ms.sourcegitcommit: beba9603ffb43d025132d2d86f0996ff505a9019
+ms.openlocfilehash: f9d66fe07173245ff831f204dd120598ad7564db
 
 
 ---
 
-
-# <a name="reset-your-device-passcode-from-the-company-portal-website"></a>ポータル サイト Web サイトからデバイスのパスコードをリセットする
+# <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>ポータル サイト Web サイトからデバイスのパスコードをリセットする方法
 
 Intune に登録したデバイスの PIN またはパスワードを紛失した場合は、[ポータル サイト web サイト](http://portal.manage.microsoft.com)からリセットすることができます。 会社のポータル Web サイトを使用すると、Intune に登録したコンピューターとデバイスを管理し、会社のポータル アプリを使用する場合とほぼ同じタスクを実行できます。
 
 > [!NOTE]
-> IT 管理者の Intune の構成によっては、ポータル サイト Web サイトに **[パスコードのリセット]** ボタンが表示されない場合があります。 Windows 8.1 デバイスでは、パスコードのリセットがサポートされていません。
+> ポータル サイト Web サイトに **[パスコードのリセット]** ボタンが表示されないことがあります。 表示されない場合、ポータル サイト Web サイトで IT 管理者にサポートを依頼してください。
 
 パスコードをリセットするには:
 
@@ -47,15 +48,14 @@ Intune に登録したデバイスの PIN またはパスワードを紛失し�
 
     デバイスで**パスコードをリセット**した場合の影響については、次の表を確認してください。
 
-    |プラットフォーム|Support|
+    |デバイスの種類|リセットの結果|
     |------------|-----------|
-    |Android|英数字の一時パスコードが作成されます。|
-    |iOS|デバイスからパスコードが削除され、一時パスコードは作成されません。 Touch ID を使用している場合、パスコードをリセットすると、Tech ID が削除されるため、デバイスで再度セットアップする必要があります。|
-    |Windows 10 (モバイル デバイスのみ)|英数字の一時パスコードが作成されます。 Windows Hello がサポートされています。|
-    |Windows Phone 8。1|数字の一時パスコードが作成されます。|
-    デバイスのロックを解除した後、デバイスの **[設定]** から新しいパスコードを設定することができます。
+    |Android|既存のパスコードが削除され、文字と数字の両方で仮のパスコードが作成されます。|
+    |iOS|既存のパスコードが削除されます。一時パスコードは作成されません。 Touch ID 指紋スキャナーでデバイスを開いたり、商品を購入したりしている場合、Touch ID をもう一度設定する必要があります。|
+    |[Windows] 10 Mobile|既存のパスコードが削除され、文字と数字の両方で仮のパスコードが作成されます。 Windows Hello 顔認識でログインしている場合、その機能を引き続け利用できます。|
+    |Windows Phone 8。1|既存のパスコードが削除され、数字で仮のパスコードが作成されます。|
 
-5.  デバイスのロックを解除したら、新しいパスコードを設定するか、デバイスの **[設定]** で一時パスコードを変更することができます。
+    5.  デバイスのロックを解除したら、新しいパスコードを設定するか、デバイスの **[設定]** で一時パスコードを変更することができます。
 
     パスコードが正常にリセットされたことを確認する通知を表示するには、ポータル サイト Web サイトの右上にある通知フラグをクリックします。
 
@@ -63,6 +63,6 @@ Intune に登録したデバイスの PIN またはパスワードを紛失し�
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

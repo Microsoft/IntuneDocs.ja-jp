@@ -1,11 +1,11 @@
 ---
-title: "Dynamics CRM Online へのアクセスを制限する | Microsoft Intune"
+title: "Dynamics CRM Online へのアクセスを保護する | Microsoft Docs"
 description: "条件付きアクセスで Dynamics CRM Online へのアクセスを保護および制御します。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dae04661289c79798c2f37272a0f941d30335ea5
-ms.openlocfilehash: 2f4ba24ca6c56cee684931519937525fcde1c211
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 0049da7a47070e42cf0f377da5a99d3222d9ed82
 
 
 ---
 
-# <a name="restrict-access-to-dynamics-crm-online-with-intune"></a>Intune で Dynamics CRM Online へのアクセスを制限する
+# <a name="protect-access-to-dynamics-crm-online-with-intune"></a>Intune で Dynamics CRM Online へのアクセスを保護する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune の条件付きアクセスを使用して、iOS および Android デバイスから Microsoft Dynamics CRM Online へのアクセスを制御できます。  Intune の条件付きアクセスには、次の 2 つのコンポーネントがあります。
 * [デバイス コンプライアンス ポリシー](introduction-to-device-compliance-policies-in-microsoft-intune.md)。準拠したデバイスと見なされるには、このポリシーに準拠している必要があります。
 * [条件付きアクセス ポリシー](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)。デバイスがサービスにアクセスするために満たす必要のある条件を指定します。
 
-条件付きアクセスの動作の詳細については、[電子メールおよび O365 サービスへのアクセスを制限する](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)に関する記事をご覧ください。
+条件付きアクセスの動作の詳細については、「[Microsoft Intune で電子メール、Office 365、およびその他のサービスへのアクセスを制限する](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)」という記事をご覧ください。
 
 > [!IMPORTANT]
 > 条件付きアクセスを展開するには、Intune および Azure Active Directory Premium のサブスクリプションが必要です。ユーザーに両方のライセンスが付与されている必要があります。 **Enterprise Mobility + Security (EMS) のサブスクリプション**には、Intune および Azure Active Directory Premium のサブスクリプションが両方とも含まれます。 詳細については、「[Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility の価格) ページを参照してください。 EMS のサブスクリプションを持っていない場合は、Azure Active Directory Premium のサブスクリプションを取得できます。 「[Azure Active Directory の価格](https://azure.microsoft.com/en-us/pricing/details/active-directory/)」ページを参照してください。
@@ -84,7 +87,7 @@ Dynamics CRM ポリシーに使用する 2 つのグループの種類を指定�
 これで、Dynamics CRM の条件付きアクセスの構成が完了しました。 条件付きアクセス ポリシーを展開する必要はありません。直ちに有効になります。
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>コンプライアンスと条件付きアクセス ポリシーを監視する
 
- **[グループ]** ワークスペースで、デバイスの条件付きアクセスの状態を表示できます。
+**[グループ]** ワークスペースで、デバイスの条件付きアクセスの状態を表示できます。
 
 モバイル デバイス グループを選択し、**[デバイス]** タブで、次の **[フィルター]**のいずれかを選択します。
 * **AAD に登録されていないデバイス**。 これらのデバイスは Dynamics CRM からブロックされます。
@@ -92,15 +95,15 @@ Dynamics CRM ポリシーに使用する 2 つのグループの種類を指定�
 * **AAD に登録され、準拠しているデバイス**。 これらのデバイスで Dynamics CRM にアクセスできます。
 
 ##  <a name="next-steps"></a>次のステップ
-* [Exchange Online へのアクセスを制限する](restrict-access-to-exchange-online-with-microsoft-intune.md)
+* [Exchange Online へのアクセスを保護する](restrict-access-to-exchange-online-with-microsoft-intune.md)
 
-* [Exchange On-Premises へのアクセスを制限する](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-* [SharePoint Online へのアクセスを制限する](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+* [Exchange On-Premises へのアクセスを保護する](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+* [SharePoint Online へのアクセスを保護する](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-* [Skype for Business Online へのアクセスを制限する](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+* [Skype for Business Online へのアクセスを保護する](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 
