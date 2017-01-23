@@ -1,3 +1,53 @@
+## <a name="december-2016"></a>2016 年 12 月
+
+### <a name="public-preview-of-the-new-intune-admin-experience-on-azure--736542--"></a>Azure での新しい Intune 管理者エクスペリエンスのパブリック プレビュー<!--736542-->
+2017 年初めには、すべての管理者エクスペリエンスが Azure に移行され、Graph API を幅広く使用する最新のサービス プラットフォーム上で、EMS の中核的ワークフローの強力な統合管理を利用できるようになります。 すべての Intune テナントでこのポータルが広く利用できるようになりますが、それに先立ち、今月中にこの新しい管理者エクスペリエンスのプレビューを一部のテナントに提供することを謹んでお伝えします。
+
+Azure Portal の管理者エクスペリエンスでは、既に発表されている新しいグループ化とターゲット設定の機能が使用されます。既存のテナントを新しいグループ化エクスペリエンスに移行すると、テナントの管理者エクスペリエンスも新しいプレビュー版に移行されます。 それまでの間、Azure Portal で Microsoft Intune のために用意しているものを[新しいドキュメント](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune)でご確認いただけます。
+
+テナント移行のスケジュールに関して質問がある場合は、Microsoft の移行チーム ([intunegrps@microsoft.com](mailto:intunegrps@microsoft.com)) にお問い合わせください。
+
+__Azure Portal のパブリック プレビューでの電気通信経費管理の統合__ <!--747605--> Azure Portal では、サード パーティの電気通信経費管理 (TEM) サービスとの統合のプレビューが始められています。 Intune を使用して、国内およびローミングのデータ使用量を制限できます。 これらの統合は、[Saaswedo](http://www.saaswedo.com) で始まっています。 試用テナントでこの機能を有効にする場合は、[Microsoft サポートにお問い合わせください](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune)。
+
+### <a name="new-capabilities"></a>新しい機能
+
+__すべてのプラットフォームでの多要素認証__ <!--747590--> Azure Active Directory で Microsoft Intune 登録アプリケーションに多要素認証 (MFA) を構成することにより、Azure の管理ポータルから iOS、Android、Windows 8.1+、または Windows Phone 8.1+ デバイスを登録すると、選択したユーザー グループに MFA を適用できます。
+
+__モバイル デバイス登録を制限する機能__ <!--747596--> Intune では、登録を許可されるモバイル デバイス プラットフォームを制御する新しい登録制限が追加されています。 Intune では、モバイル デバイス プラットフォームが iOS、macOS、Android、Windows、Windows Mobile に分かれています。
+* モバイル デバイスの登録を制限しても、PC クライアントの登録は制限されません。
+* iOS のみについては、個人所有デバイスの登録をブロックする 1 つの追加オプションがあります。
+
+[この記事](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices)で説明されているように、IT 管理者が明示的に会社所有と指定しない限り、Intune はすべての新しいデバイスを個人所有としてマークします。
+
+### <a name="notices"></a>通知
+
+__Azure Portal に移動する登録での多要素認証__ <!--VSO 750545--> これまで、Intune の登録に MFA を設定するには、Intune コンソールまたは構成マネージャー (2016 年 10 月のリリースより前) コンソールを使用しました。 この機能更新により、今後は Intune の資格情報で [Microsoft Azure Portal ](https://manage.windowsazure.com)にログインし、Azure AD を使用して MFA の設定を構成するようになります。 詳細については、[こちら](https://aka.ms/mfa_ad)をご覧ください。
+
+__Android 用ポータル サイト アプリが中国で利用可能になる__ <!--VSO 658093--> Android 用ポータル サイト アプリが中国でダウンロードできるようになりました。 中国には Google Play ストアがないので、Android デバイスは中国のアプリ マーケットプレースからアプリを入手する必要があります。 Android 用ポータル サイト アプリは、以下のストアでダウンロードできます。
+* [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
+* [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
+* [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
+* [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
+* [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
+
+Android 用ポータル サイト アプリは、Google Play 開発者サービスを使って Microsoft Intune サービスと通信します。 中国では Google Play 開発者サービスをまだ利用できないので、次のタスクには最大 8 時間かかることがあります。 
+
+|Intune 管理コンソール| Android 用 Intune ポータル サイト アプリ |Intune ポータル サイト Web サイト|   
+|---|---|---|
+|フル ワイプ| リモート デバイスの削除| デバイスの削除 (ローカルおよびリモート)|
+|選択的ワイプ| デバイスのリセット| デバイスのリセット|
+|新規アプリまたは更新アプリの展開| 使用可能な基幹業務アプリのインストール| デバイスのパスコードのリセット|
+|リモート ロック|||
+|パスコードのリセット|||
+
+### <a name="deprecations"></a>廃止予定
+
+__Firefox による Silverlight のサポート終了__ <!--VSO TBA--> Mozilla では、2017 年 3 月をもって、[Firefox ブラウザー](https://www.mozilla.org/firefox)のバージョン 52 で Silverlight のサポートを終了します。 結果として、バージョンが 51 より後の Firefox では既存の Intune コンソールにログインできなくなります。 管理コンソールにアクセスするときは、Internet Explorer 10 または 11 を使用するか、[バージョンが 52 より前の Firefox](https://ftp.mozilla.org/pub/firefox/releases/) を使用することが推奨されます。 Intune を Azure Portal に移行することで、Silverlight を利用しなくてもさまざまな[最新ブラウザー](https://docs.microsoft.com/en-us/azure/azure-preview-portal-supported-browsers-devices)に対応します。
+
+__Exchange Online モバイル受信トレイ ポリシーの削除__ <!--770687--> 12 月以降、管理者は Intune コンソールで Exchange Online (EAS) モバイル メールボックス ポリシーを表示または構成できなくなります。 この変更は、12 月から 1 月にかけてすべての Intune テナントに展開されます。 既存のすべてのポリシー構成は今までどおりですが、新しいポリシーの構成には Exchange 管理シェルを使います。 詳しくは、[こちら](https://technet.microsoft.com/en-us/library/bb123783%28v=exchg.150%29.aspx)をご覧ください。
+
+__Android での Intune AV Player、Image Viewer、PDF Viewer アプリのサポート終了__<!--747553--> 2016 年 12 月中旬以降、Intune AV Player、Image Viewer、PDF Viewer の各アプリが使用できなくなります。 これらのアプリの代わりに、Azure Information Protection アプリが使用できるようになります。 Azure Information Protection アプリについて詳しくは、[こちら](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq)をご覧ください。
+
 ## <a name="november-2016"></a>2016 年 11 月
 
 ### <a name="new-capabilities"></a>新しい機能
@@ -310,7 +360,6 @@ Intune notification rules define who an email alert will be sent to from Intune.
     - Around November, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
 
 --->
-
 ## <a name="july-2016"></a>2016 年 7 月
 ### <a name="app-management"></a>アプリ管理
 
@@ -357,52 +406,7 @@ __iOS__
 - [Microsoft Passport for Windows](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune) は **Windows Hello for Business** と呼ばれるようになりました。
 - [エンタープライズ データ保護](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune)は **Windows Information Protection** と呼ばれるようになりました。
 
-## <a name="june-2016"></a>2016 年 6 月
-### <a name="intune-service-health"></a>Intune のサービス正常性
-Intune のサービス正常性に関する情報は他の Microsoft サービスと共に中央の場所に移動されました。 そのため、この情報は Office 365 管理ポータルの [サービス正常性] で参照できるようになりました。 詳細については、[このブログ投稿](https://blogs.technet.microsoft.com/enterprisemobility/2016/04/28/intune-service-health-is-now-available-in-the-office-365-portal/)を参照してください。
 
-### <a name="app-management"></a>アプリ管理
-- **Windows 10 の強化されたエンタープライズ データ ポリシー構成のエクスペリエンス。** Windows 10 のエンタープライズ データ保護ポリシー構成のエクスペリエンスが、アプリ規則の作成、ネットワーク境界の定義の指定、その他のエンタープライズ データ保護の設定などにおいて強化されました。 詳細については、「[Create an enterprise data protection (EDP) policy using Microsoft Intune](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune)」(Microsoft Intune を使用してエンタープライズ データ保護 (EDP) ポリシーを作成する) を参照してください。
-
-
-### <a name="device-management"></a>デバイス管理
-- **望ましくない可能性があるアプリから保護するための Windows Defender ポリシー設定。** **望ましくない可能性があるアプリケーションの検出**という名前の新しい Windows Defender 設定が、Windows 10 Desktop と Mobile の全般構成ポリシーに追加されました。 この設定を使えば、Windows Defender によって望ましくない可能性があると判断されたソフトウェアの実行から、登録済みの Windows デスクトップ コンピューターを保護することができます。 このようなアプリケーションの実行からコンピューターを保護したり、望ましくない可能性があるアプリケーションがいつインストールされたのかを監査モードでレポートしたりできます。 詳細については、「[Microsoft Intune の Windows 10 ポリシー設定](https://docs.microsoft.com/en-us/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune)」を参照してください。
-<!---TFS 1244478--->
-
-### <a name="conditional-access"></a>条件付きアクセス
-- **Intune の Cisco ISE ネットワーク アクセス制御ポリシー。**  Cisco Identity Service Engine (ISE) 2.1 と Microsoft Intune の両方を使用する場合、ISE でネットワーク アクセス制御ポリシーを設定できます。
-
-    このポリシーを使用すると、WiFi または VPN でネットワークに接続するデバイスは、アクセスが許可される前に、次の条件を満たすことが必要になります。
-
-    * Intune で管理されていること
-    * 展開されているすべての Intune コンプライアンス ポリシーに準拠していること
-
- 準拠していないデバイスのエンド ユーザーは、アクセスを取得するために、デバイスを登録することと、コンプライアンス関連の問題を修正することを求められます。
-- **ブラウザーの条件付きアクセス。** [Exchange Online](/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune) と [SharePoint Online](/intune/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune) 用の条件付きアクセス ポリシーを設定すると、管理下にあって、かつ条件を満たした iOS デバイスと Android デバイス上のサポートされる Web ブラウザーに、Exchange Online と SharePoint Online へのアクセスを限定することができます。 Outlook Web Access (OWA) や SharePoint サイトにエンド ユーザーが iOS または Android デバイスでサインインしようとすると、そのデバイスを Intune に登録するよう求めるメッセージが表示されます。また条件を満たしていないことが問題になっている場合は、その問題を解消してから、サインインを試行するように求められます。
-<!---TFS 1175844--->
-
-- **Dynamics CRM Online では、条件付きアクセスをサポートしています。** [Dynamics CRM Online](/intune/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune) 用の条件付きアクセス ポリシーを設定すると、管理下にあって、かつ条件を満たした iOS デバイスと Android デバイスに、Dynamics CRM Online へのアクセスを限定することができます。 Dynamics CRM モバイル アプリにエンド ユーザーが iOS または Android でサインインしようとすると、Intune に登録するよう求めるメッセージが表示されます。また条件を満たしていないことが問題になっている場合は、その問題を修正してから、サインインを試行するように求められます。
-<!---TFS1295358--->
-
-### <a name="intune-company-portal-updates"></a>Intune 会社のポータルの更新
-
-__Android 用ポータル サイト アプリ__
-
-- IT 管理者が新しい [不明なソースからのアプリのインストールをデバイスが禁止することを必須にする (Android 4.0 以上)] ポリシーを適用すると、Android 4.0 以降のデバイスを使用するエンド ユーザーには、"不明なソースからのインストールを無効にする必要があります" というメッセージが表示されます。 ユーザーは、**[設定]** > **[セキュリティ]** を選択し、**[不明なソース]** を無効にする必要があります。 ユーザーは、コンプライアンス メッセージのリンクをクリックして、メッセージと、設定を無効にする必要がある理由に関する詳細[情報](/Intune/EndUser/you-are-asked-to-turn-off-unknown-sources-android)を確認できます。
-
-- IT 管理者が新しい [セキュリティ上の脅威に対してデバイスがアプリのスキャンを有効にすることを必須にする (Android 4.0 以上)] ポリシーを適用すると、Android 4.0 以降のデバイスを使用するエンド ユーザーには、"端末をスキャンしてセキュリティ上の脅威を確認" というメッセージが表示されます。 ユーザーは、**[設定]** > **[Google]** > **[セキュリティ]** を選択し、**[端末をスキャンしてセキュリティ上の脅威を確認]** をオンにする必要があります。 ユーザーは、コンプライアンス メッセージのリンクをクリックして、メッセージと、設定を有効にする必要がある理由に関する詳細[情報](/Intune/EndUser/you-are-asked-to-turn-on-scan-device-for-security-threats-android)を確認できます。
-
-- IT 管理者が新しい [USB デバッグの無効化を必須にする (Android 4.2 以上)] ポリシーを適用すると、Android 4.2 以降のデバイスを使用するエンド ユーザーには、"USB デバッグを無効にする必要があります" というメッセージが表示されます。 ユーザーは、**[設定]** > **[開発者オプション]** を選択し、**[USB デバッグ]** を無効にする必要があります。 ユーザーは、コンプライアンス メッセージのリンクをクリックして、メッセージと、設定を無効にする必要がある理由に関する詳細[情報](/Intune/EndUser/you-are-asked-to-turn-off-usb-debugging-android)を確認できます。
-
-- IT 管理者が新しい [最低限の Android セキュリティ パッチ レベル (Android 6.0 以上)] ポリシーを適用すると、Android 6.0 以降のデバイスを使用するエンド ユーザーには、"このデバイスは Android の最小セキュリティ パッチ レベルを満たしていません" というメッセージが表示されます。 ユーザーは必要なセキュリティ パッチをインストールする必要があります。 ユーザーは、コンプライアンス メッセージのリンクをクリックして、必要なセキュリティ パッチをインストールする方法と、現在インストールされているセキュリティ パッチに関する[情報](/Intune/EndUser/you-are-asked-to-turn-on-scan-device-for-security-threats-android)を確認できます。
-
-__iOS ポータル サイト アプリ__
-
-- エンド ユーザーが基幹業務アプリをインストールするときの操作性が向上しています。 アプリのインストールに時間がかかる場合、ユーザーがデバイスを手動で同期させることによって、強制的に同期処理を再開することができます。 エンド ユーザー向けの手順については、「[デバイスを手動で同期する](/Intune/EndUser/sync-your-device-manually-ios)」を参照してください。
-
-- iOS 向けの Microsoft Intune ポータル サイト アプリが更新され、iOS Version 8.0 以降をサポートするようになりました。 この更新は、デバイスで iOS Version 8.0 以降が実行されている場合にのみ、エンド ユーザーがポータル サイト アプリをインストールして Intune に新しいデバイスを登録できることを意味します。 サポートされていないバージョンの iOS が実行されているデバイスを登録済みの場合、ユーザーはそのデバイス上のポータル サイト アプリを引き続き使用できます。
-
-
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

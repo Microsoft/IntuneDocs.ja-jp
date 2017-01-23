@@ -5,16 +5,18 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/04/2017
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: f6fe6f76a700137914ef9cea7ce02753882e2fa3
-ms.openlocfilehash: 8893b397f5a29568ab5d4238e56d7e9806633e30
+ms.sourcegitcommit: 440d0e75c9373d5de44897b8a997da6c24de4e3c
+ms.openlocfilehash: ca6f6453d2b6ba28152c44e1b66700608c07c97a
 
 
 ---
@@ -27,18 +29,20 @@ Samsung デバイスを使用している場合は、**[Settings]** > **[About p
 
 [!INCLUDE[wit_nextref](../includes/end-user-os-update-guidance.md)]
 
-## <a name="if-you-have-a-samsung-knox-device"></a>Samsung Knox デバイスを使用している場合
+## <a name="for-most-android-devices-non-samsung-knox"></a>ほとんどの Android デバイスの場合 (Samsung KNOX 以外)
+
+**[Settings]** > **[About]** > **[Software updates]** の順に移動します。 更新プログラムをインストールして、デバイスに適切なセキュリティ パッチがインストールされるようにします。
+
+## <a name="for-samsung-knox-android-devices"></a>Samsung KNOX Android デバイスの場合
 
 **[Settings]** > **[System updates]** > **[Check for new system update]** の順に移動します。 更新プログラムをインストールして、Samsung Knox デバイスに適切なセキュリティ パッチがインストールされるようにします。
 
-## <a name="if-you-do-not-have-a-samsung-knox-device"></a>Samsung Knox デバイスを使用していない場合
 
-**[Settings]** > **[About]** > **[Software updates]** の順に移動します。 更新プログラムをインストールして、デバイスに適切なセキュリティ パッチがインストールされるようにします。 
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 
