@@ -1,5 +1,5 @@
 ---
-title: "Intune から Windows デバイスの登録を解除するとどうなるか | Microsoft Intune"
+title: "Intune から Windows デバイスの登録を解除するとどうなりますか。 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 5cf2e7e821f962d2f12813062cc30b724e2fc45a
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 7a04c458044bf5e3ec5e050da7cf80f8dc924221
 
 
 ---
@@ -89,6 +91,6 @@ Windows RT デバイスを削除すると、次のような結果になります
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 
