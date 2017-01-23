@@ -1,11 +1,11 @@
 ---
-title: "ポータル サイトをカスタマイズする | Microsoft Intune"
+title: "ポータル サイトをカスタマイズする | Microsoft Docs"
 description: "Intune ポータル サイトでは、ユーザーはデバイスの登録、アプリのインストール、および IT 部署情報の検索など、一般的なタスクを行うことができます。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 12/13/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 04cccd410417dca4477c0d6cd61b0940dda8c389
+ms.sourcegitcommit: 77f1af3a07e5a5758227c81010ce853906803b08
+ms.openlocfilehash: f103a919d0708c2925cb6af4cf7231ed05029e46
 
 
 ---
 
 # <a name="customize-the-company-portal"></a>ポータル サイトをカスタマイズする
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ユーザーは、Intune ポータル サイトを使用して、会社のデータにアクセスしたり、デバイスの登録、アプリケーションのインストール、IT 部門からのサポート情報の検索などの一般的なタスクを実行したりできます。
 
 Intune ポータル サイトは、ユーザーが会社のデータとアプリにアクセスできるようにします。 ポータル サイトは、次の 2 つの形式で使用できます。
 
--   **ポータル サイト アプリ**: Intune を使用して管理するデバイスで利用できるアプリケーション。 [Android](/Intune/EndUser/using-your-android-device-with-intune)、[iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) および [Windows](/Intune/EndUser/using-your-windows-device-with-intune) 用のポータル サイトの詳細を、それぞれご確認ください。
+-   **ポータル サイト アプリ**: Intune を使用して管理するデバイスで利用できるアプリケーション。 [Android](/Intune/EndUser/using-your-android-device-with-intune)、[iOS](/Intune/EndUser/using-your-iOS-or-macOS-device-with-intune) および [Windows](/Intune/EndUser/using-your-windows-device-with-intune) 用のポータル サイトの詳細を、それぞれご確認ください。
 
 
 - **ポータル Web サイト**: エンドユーザーがポータル サイト アプリから実行できるタスクのほとんどを行うことができる Web サイト。 Intune ポータル サイトの URL は [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com) です。 この Web サイトの詳細については、「[Intune ポータル サイト Web サイトの使用](/Intune/EndUser/using-the-intune-company-portal-website)」を参照してください。
@@ -42,11 +45,6 @@ Intune ポータル サイトは、ユーザーが会社のデータとアプリ
 -   デバイスのリモートからのロック
 -   組織で展開されているソフトウェアのダウンロード
 -   サポートの IT 部門への連絡
-
-> [!NOTE]
-> 会社のポータル アプリは一部の国ではまだ使用できません。
-> __iOS__: iOS 用の会社のポータル アプリは、Apple iOS App Store を[利用可能なすべての地域に](https://go.microsoft.com/fwlink/?linkid=831284)公開されています。
-> __Android__: Android のポータル サイト アプリは現在、中国では利用できません。 これらの国の場合、代替ソリューションとして、[会社のポータル アプリの Android バージョンをサイドロード](https://www.microsoft.com/en-us/download/details.aspx?id=49140)します。  
 
 ## <a name="customize-company-portal-settings"></a>ポータル サイト設定をカスタマイズする
 ポータル サイトをカスタマイズすることで、エンド ユーザーの利便性を向上させることができます。 テナントまたはサービス管理者として [Microsoft Intune 管理コンソール](https://manage.microsoft.com)にログインし、**[管理者]** &gt; **[ポータル サイト]** の順に選択して、ポータル サイトの設定を構成します。
@@ -91,6 +89,6 @@ Intune ポータル サイトは、ユーザーが会社のデータとアプリ
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

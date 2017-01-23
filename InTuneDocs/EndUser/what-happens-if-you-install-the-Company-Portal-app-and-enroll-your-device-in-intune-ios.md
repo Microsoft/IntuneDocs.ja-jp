@@ -1,5 +1,5 @@
 ---
-title: "ポータル サイト アプリをインストールし、Intune に iOS または Mac OS X デバイスを登録するとどうなるか | Microsoft Intune"
+title: "ポータル サイト アプリをインストールし、Intune に iOS または macOS デバイスを登録するとどうなるか | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,20 +11,22 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 737effbcd9d7e70186d874c3aefd8afaab05fca8
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: cef8045c071396419805274ba94cbcfff864a495
 
 
 ---
 
 
-# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-mac-os-x-device-in-intune"></a>ポータル サイト アプリをインストールし、Intune に iOS または Mac OS X デバイスを登録するとどうなりますか。
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>ポータル サイト アプリをインストールし、Intune に iOS または macOS デバイスを登録するとどうなるか
 
-ポータル サイト アプリをインストールし、iOS デバイスまたは Mac OS X デバイスを Intune に登録すると、ポータル サイト アプリを使用して次のことができるようになります。
+ポータル サイト アプリをインストールし、iOS デバイスまたは macOS デバイスを Intune に登録すると、ポータル サイト アプリを使用して次のことができるようになります。
 
 -   会社のネットワークにアクセスし、電子メールや仕事用のファイルにアクセスする。
 
@@ -96,6 +98,6 @@ ms.openlocfilehash: 737effbcd9d7e70186d874c3aefd8afaab05fca8
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
