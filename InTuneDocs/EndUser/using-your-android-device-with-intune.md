@@ -1,5 +1,5 @@
 ---
-title: "Android デバイスを Intune で使用する | Microsoft Intune"
+title: "Android デバイスを Intune で使用する | Microsoft Docs"
 description: "Android モバイル デバイスが Intune で登録されている場合に、エンド ユーザーがデバイスで実行できるタスクへのリンクの一覧"
 keywords: 
 author: barlanmsft
@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
+searchScope:
+- Company Portal
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 7751d5661f3fb9235820c716fdbded3dab385ec4
+ms.sourcegitcommit: bb949c9a83fdde630dd2023765d32e98c43a1c20
+ms.openlocfilehash: 22a5cab46a6ca8cf2d350ba9844328a3dea13766
 
 
 ---
@@ -59,22 +61,22 @@ ms.openlocfilehash: 7751d5661f3fb9235820c716fdbded3dab385ec4
 このセクションの情報は、Android デバイスを Intune に登録した場合に発生する可能性がある問題を解決するのに役立ちます。
 
 - [IT 管理者がデバイスの問題を解決するのに役立つ、詳細なログ記録を使用する](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [電子メールを使用して診断データのログを IT 管理者に送信する](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
-- [USB ケーブルを使用して診断データのログを IT 管理者に送信する](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
-- [IT 管理者に登録に関するエラーを送信する](send-enrollment-errors-to-your-it-administrator-android.md)
-- [デバイスに最低限必要なバージョンのオペレーティング システムがインストールされていない](device-doesnt-have-the-required-minimum-operating-system-version-android.md)
-- [デバイスが最新のオペレーティング システムのバージョンに準拠していない](device-doesnt-comply-with-maximum-operating-system-version-android.md)
+- [電子メールを使用してログを IT 管理者に送信する](send-logs-to-your-it-admin-by-email-android.md)
+- [USB ケーブルを使用してログを IT 管理者に送信する](send-logs-to-your-it-admin-using-cable-android.md)
+- [IT 管理者に登録に関するエラーを送信する](send-enrollment-errors-to-your-it-admin-android.md)
+- [デバイスに最低限必要なバージョンのオペレーティング システムがインストールされていない](you-need-to-update-your-android-device.md)
+- [デバイスが最新のオペレーティング システムのバージョンに準拠していない](your-android-version-isnt-yet-supported.md)
 - [デバイスが root 化され、接続できない](your-device-is-rooted-and-you-cant-connect-android.md)
-- [デバイスに必要な証明書がない](your-device-is-missing-a-required-certificate-android.md)
-- [不明なソースを無効にすることを求められる](you-are-asked-to-turn-off-unknown-sources-android.md)
-- [USB デバッグを無効にすることを求められる](you-are-asked-to-turn-off-usb-debugging-android.md)
-- [セキュリティ上の脅威に対してデバイスのスキャンを有効にすることを求められる](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
+- [デバイスに必要な証明書がない](your-device-is-missing-a-required-certificate-landing-android.md)
+- [不明なソースを無効にする必要がある](you-need-to-turn-off-unknown-sources-android.md)
+- [USB デバッグを無効にする必要がある](you-need-to-turn-off-usb-debugging-android.md)
+- [セキュリティ上の脅威に対するスキャンを有効にする必要がある](you-need-to-turn-on-scanning-for-security-threats-android.md)
 - [デバイスが最小限のセキュリティ パッチを満たしていない](your-device-does-not-meet-the-minimum-security-patch-android.md)
 - [Android デバイスで Lookout for Work のインストールを求められる](you-are-prompted-to-install-lookout-for-work-android.md)
 - [Android デバイスで Lookout for Work が検出した脅威を解決する必要がある](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 
