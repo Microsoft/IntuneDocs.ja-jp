@@ -1,22 +1,24 @@
 ---
-title: "ポータル サイトの概要 | Microsoft Intune"
+title: "ポータル サイトとは何ですか。 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: adf7fc0b7ddeb7fa8361d37efd0fdd5c714a72e4
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: fa9c3fd2c995615e9aa9a16f3bd834b0c145b6d0
 
 
 ---
@@ -24,7 +26,7 @@ ms.openlocfilehash: adf7fc0b7ddeb7fa8361d37efd0fdd5c714a72e4
 # <a name="about-the-company-portal"></a>ポータル サイトの概要
 
 ## <a name="what-is-the-company-portal-and-what-can-you-do-with-it"></a>ポータル サイトの概要とサイトで実行できる操作
-Microsoft Intune ポータル サイトでは、会社や学校のデータとアプリにアクセスできます。 ポータル サイトは 2 通りの方法で入手できます。
+ポータル サイトでは、会社や学校のデータとアプリにアクセスできます。 ポータル サイトは 2 通りの方法で入手できます。
 
 - ポータル サイト アプリをデバイスにインストールします。 一般的に、ポータル サイト アプリはお使いのデバイスのアプリ ストアで入手しますが、IT 管理者がポータル サイト アプリを代理でインストールすることもできます。
 - IT 管理者が設定した[ポータル サイト Web サイト](http://portal.manage.microsoft.com)にアクセスします。
@@ -41,10 +43,10 @@ Microsoft Intune ポータル サイトでは、会社や学校のデータと�
 次のリンクで、ポータル サイトとポータル サイト Web サイトで可能な操作を比較できます。
 
 > [!div class="op_single_selector"]
-- [Android](using-your-android-device-with-intune.md)
-- [iOS および Mac OS X](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Windows](using-your-windows-device-with-intune.md)
-- [ポータル Web サイト](using-the-intune-company-portal-website.md)
+- [Android デバイスを Intune で使用する](using-your-android-device-with-intune.md)
+- [iOS デバイスおよび macOS デバイスを Intune で使用する](using-your-ios-or-macOS-device-with-intune.md)
+- [Windows デバイスを Intune で使用する](using-your-windows-device-with-intune.md)
+- [ポータル Web サイトを使用する](using-the-intune-company-portal-website.md)
 
 ## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>コンピューターやデバイスをポータル サイトに追加すると、どうなりますか。
 コンピューターやデバイスをポータル サイトに追加すると、なんらかのソフトウェアがインストールされるか、アプリがダウンロードされる場合があります (デバイスによって異なります)。  また、使用しているデバイスの管理を IT 管理者に許可することで、デバイスに保存されている会社情報を保護しやすくすることもできます。
@@ -53,14 +55,14 @@ Microsoft Intune ポータル サイトでは、会社や学校のデータと�
 
 > [!div class="op_single_selector"]
 - [Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [iOS および Mac OS X](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [iOS と macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>ポータル サイトにはどのような種類のコンピューターまたはデバイスを追加できますか。
 
--   iPhone、iPad、Mac OS X デバイス
+-   iOS (iPhone、iPad) や macOS (iMac、MacBook) を使用する Apple デバイス
 
--   Android モバイル デバイス
+-   Android デバイス
 
 -   Windows デバイス
     -   [Windows] 10 Mobile
@@ -75,7 +77,7 @@ Microsoft Intune ポータル サイトでは、会社や学校のデータと�
 
 > [!div class="op_single_selector"]
 - [Android](unenroll-your-device-from-intune-android.md)
-- [iOS および Mac OS X](unenroll-your-device-from-intune-ios.md)
+- [iOS と macOS](unenroll-your-device-from-intune-ios.md)
 - [Windows](unenroll-your-device-from-intune-windows.md)
 
 コンピューターまたはデバイスを*リセット*すると、ポータル サイトは、コンピューターまたはデバイスを製造元の既定の設定にリセットしようとします。 デバイスをリセットすると、デバイスから会社データと個人データがすべて削除されます。 デバイスを紛失した場合、ポータル サイト Web サイトからリモート リセットできます。
@@ -84,7 +86,7 @@ Microsoft Intune ポータル サイトでは、会社や学校のデータと�
 
 > [!div class="op_single_selector"]
 - [Android](reset-erase-your-lost-or-stolen-device-android.md)
-- [iOS および Mac OS X](reset-erase-your-lost-or-stolen-device-ios.md)
+- [iOS と macOS](reset-erase-your-lost-or-stolen-device-ios.md)
 - [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
 - [ポータル Web サイトからデバイスをリセットする](reset-your-device-cpwebsite.md)
 
@@ -96,6 +98,6 @@ Microsoft Intune ポータル サイトでは、会社や学校のデータと�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 
