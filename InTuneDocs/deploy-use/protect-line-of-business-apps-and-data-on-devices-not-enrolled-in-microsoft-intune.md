@@ -1,5 +1,5 @@
 ---
-title: "登録されていないデバイスで LOB アプリを保護する |Microsoft Intune"
+title: "登録されていないデバイスで LOB アプリを保護する |Microsoft Docs"
 description: "このトピックでは、データの損失を防ぐことができるモバイル アプリケーション管理ポリシーを適用できるように、カスタム基幹業務アプリを準備する方法について説明します。"
 keywords: 
 author: mtillman
@@ -14,13 +14,15 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
-ms.openlocfilehash: bc1efb1e0c62e6bd52658690db95901c70403d4d
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1d3efa5d35e346ea668c71ba8b46ba21b11c39e7
 
 
 ---
 
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Microsoft Intune に登録されていないデバイスの基幹業務アプリとデータを保護する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 モバイル アプリケーション管理 (MAM) ポリシーでは、会社のデータを保護するために、会社データが漏洩する可能性があるアクションを制限し、アプリ PIN などのデータ アクセス要件を強制することができます。 MAM ポリシーを iOS または Android の基幹業務アプリに適用するには、最初に Microsoft Intune アプリ ラッピング ツールを使用してアプリをラップする必要があります。 アプリ ラッピングは、モバイル アプリに、基になるアプリケーションは何も変更せずに、管理レイヤーを適用するプロセスです。 アプリをラップしたら、MAM ポリシーを適用し、それをユーザーに配布できます。  
 
