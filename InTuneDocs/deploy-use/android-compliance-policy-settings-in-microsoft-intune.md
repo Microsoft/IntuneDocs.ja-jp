@@ -1,11 +1,11 @@
 ---
-title: "Android デバイス向けのコンプライアンス ポリシー設定 |Microsoft Intune"
+title: "Android のコンプライアンス ポリシー設定 | Microsoft Docs"
 description: "このトピックでは、Android デバイスのデバイス コンプライアンス ポリシーの設定について説明します。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/08/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,16 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 398f0c8bc789d9106a296e50f0e0cdc27d5920a7
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 90484c98e58203696e0acbfebd71eeb36b274969
 
 
 ---
 
 
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune での Android デバイス向けのコンプライアンス ポリシー設定
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 このトピックで説明するポリシー設定は、Android 4.0 以降または Samsung KNOX 4.0 を実行しているデバイスに適用されます。
 
@@ -87,6 +89,6 @@ ms.openlocfilehash: 398f0c8bc789d9106a296e50f0e0cdc27d5920a7
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

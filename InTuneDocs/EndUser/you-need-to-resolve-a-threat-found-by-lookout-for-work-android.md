@@ -1,20 +1,22 @@
 ---
-title: "Android デバイスで Lookout for Work が検出した脅威を解決する必要がある | Microsoft Intune"
+title: "Android で Lookout for Work が検出した脅威を解決する | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: c5b1be5043b5e0ad2774d9214a3e09ccd8d9d991
-ms.openlocfilehash: aae9d4666ab356bb6d3c5e929d311c53ea065485
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: a49f27dd42d2c9d16be49cb222e56147c4699208
 
 
 ---
@@ -47,8 +49,6 @@ Lookout for Work が脅威と判断するアプリがインストールされて
 
 
 
-
-
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

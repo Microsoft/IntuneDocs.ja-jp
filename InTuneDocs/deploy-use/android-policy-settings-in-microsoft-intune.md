@@ -1,12 +1,12 @@
 ---
 
-title: "Android および Samsung KNOX Standard ポリシー設定 | Microsoft Intune"
+title: "Android および Samsung KNOX ポリシー設定 | Microsoft Docs"
 description: "Intune で管理する Android デバイスの設定と機能を制御するポリシーを作成します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,15 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 08ec9963bf00d81f080c0cf4f26e23a3104763ea
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 2da96c2ffb6cc826494972ab8c88ce62981eeae6
 
 
 ---
 
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Microsoft Intune の Android および Samsung KNOX Standard ポリシー設定
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune には、Android デバイスで構成できるさまざまな全般設定が組み込まれています。 また、Open Mobile Alliance Uniform Resource Identifier (OMA-URI) 値を指定して、Intune にはないユーザー設定を作成できます。
 
@@ -31,7 +33,7 @@ Intune の **Android 全般構成ポリシー**を使用すると、次の設定
 
 -   **モバイル デバイスのセキュリティ設定** – デバイスのさまざまな機能を制御できる定義済みの設定の一覧から選択します。
 
--   **キオスク モード** (Samsung KNOX Standard デバイス専用) - 特定の機能の動作のみを許可するようにデバイスをロックできます。 たとえば、指定した 1 つの管理対象アプリの実行のみをデバイスに許可することや、デバイスのボリューム ボタンを無効にすることができます。 これらの設定は、デバイスのデモ モデルや、POS デバイスなどの 1 つの機能の実行専用のデバイス向けに使用できます。
+-   **キオスク モード** (Samsung KNOX Standard デバイス専用) - 特定の機能の動作のみを許可するようにデバイスをロックできます。 たとえば、指定した&1; つの管理対象アプリの実行のみをデバイスに許可することや、デバイスのボリューム ボタンを無効にすることができます。 これらの設定は、デバイスのデモ モデルや、POS デバイスなどの&1; つの機能の実行専用のデバイス向けに使用できます。
 
 -   **準拠しているアプリと非準拠アプリ** - 社内の準拠アプリまたは非準拠アプリの一覧を指定します。 Android や iOS のデバイスで、**[非準拠アプリ レポート]** を使用して、一覧に指定したアプリの準拠状況と、ユーザーがインストール済みのアプリを比較して表示できます。 レポートでは実際にアプリのインストールをブロックすることはできません。
 
@@ -144,6 +146,8 @@ Intune の **Android 全般構成ポリシー**を使用すると、次の設定
 |**編集**|選択したアプリの名前、発行者、および URL を編集します。|
 |**削除**|選択したアプリを一覧から削除します。|
 
+準拠アプリと非準拠アプリの設定を含むポリシーを、ユーザーのグループに展開する必要があります。
+
 ### <a name="kiosk-mode-settings"></a>キオスク モードの設定
 **Samsung KNOX Standard デバイス**の場合は、次の設定を指定します。
 
@@ -177,9 +181,7 @@ Intune の **Android 全般構成ポリシー**を使用すると、次の設定
 Microsoft Intune **Android カスタム構成ポリシー**を使用して、Android デバイスで各機能の制御に使用できる OMA-URI 設定を展開します。 これらの設定は、多くのデバイス製造元がデバイスの機能を制御するために使用する標準の設定です。
 
 この機能は、Intune ポリシーで構成できない Android 設定を展開できるようにするためのものです。
-
-> [!NOTE]
-> 現時点で Android カスタム ポリシーは、事前共有キーを含む、Android デバイスの Wi-Fi 設定の構成のみをサポートしています。
+現時点では、Intune でサポートされる Android カスタム ポリシーの数は限られています。 構成できるポリシーを見つける場合は、このトピックの例を参照してください。
 
 ### <a name="general-settings"></a>全般設定
 
@@ -209,6 +211,6 @@ Microsoft Intune **Android カスタム構成ポリシー**を使用して、And
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

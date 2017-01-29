@@ -1,25 +1,27 @@
 ---
-title: "Android デバイスで Lookout for Work のインストールを求められる | Microsoft Intune"
+title: "Android デバイスで Lookout for Work をインストールする必要がある | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: d55c7d4a7c77472453e6d317a22c4ad6209255a5
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 356de226dce12a1e079b0f58214d9bc590f3a71d
 
 
 ---
 
-# <a name="you-are-prompted-to-install-lookout-for-work"></a>Lookout for Work のインストールを求められる
+# <a name="you-need-to-install-lookout-for-work"></a>Lookout for Work をインストールする必要がある
 
 作業内容にアクセスする前に、IT 管理者から潜在的なセキュリティ脅威を検出してデバイスを保護することができる、Lookout for Work アプリをインストールするように求められます。
 
@@ -76,12 +78,12 @@ ms.openlocfilehash: d55c7d4a7c77472453e6d317a22c4ad6209255a5
 
 **インストールが機能しない場合**
 
-ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。 このような場合は、Play ストアから Lookout for Work を手動でインストールしてください ([https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise))。 
+ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。 このような場合は、Play ストアから Lookout for Work を手動でインストールしてください ([https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise))。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

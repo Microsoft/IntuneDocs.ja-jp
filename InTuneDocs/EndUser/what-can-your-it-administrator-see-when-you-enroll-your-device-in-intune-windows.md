@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,14 +17,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: c3c4fc47e953a562def6e1334502760fc08390ac
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: e810d66c46eafe2acd505c1a28054f7e97ff9f4a
 
 
 ---
 
 
-# <a name="what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune"></a>デバイスを Intune に登録した場合に IT 管理者が確認できるもの
+# <a name="what-can-your-it-admin-see-when-you-enroll-a-device-in-intune"></a>デバイスを Intune に登録した場合に IT 管理者が確認できるもの
 
 Windows デバイスを Intune に登録すると、対象のデバイスの管理を IT 管理者に許可することで、デバイスに保存されている会社情報を保護しやすくすることができます。
 
@@ -64,6 +64,6 @@ Windows デバイスを Intune に登録すると、対象のデバイスの管�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Dynamics CRM Online へのアクセスを保護する | Microsoft Docs"
+title: "Dynamics CRM Online を保護する | Microsoft Docs"
 description: "条件付きアクセスで Dynamics CRM Online へのアクセスを保護および制御します。"
 keywords: 
 author: andredm7
@@ -14,8 +14,8 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 0049da7a47070e42cf0f377da5a99d3222d9ed82
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 0049da7a47070e42cf0f377da5a99d3222d9ed82
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Microsoft Intune の条件付きアクセスを使用して、iOS および Android デバイスから Microsoft Dynamics CRM Online へのアクセスを制御できます。  Intune の条件付きアクセスには、次の 2 つのコンポーネントがあります。
+Microsoft Intune の条件付きアクセスを使用して、iOS および Android デバイスから Microsoft Dynamics CRM Online へのアクセスを制御できます。  Intune の条件付きアクセスには、次の&2; つのコンポーネントがあります。
 * [デバイス コンプライアンス ポリシー](introduction-to-device-compliance-policies-in-microsoft-intune.md)。準拠したデバイスと見なされるには、このポリシーに準拠している必要があります。
 * [条件付きアクセス ポリシー](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)。デバイスがサービスにアクセスするために満たす必要のある条件を指定します。
 
@@ -53,7 +53,7 @@ Dynamics CRM Online にアクセスするデバイスは、次の条件を満た
 
 開始する前に、条件付きアクセス ポリシーの Azure Active Directory セキュリティ グループを構成します。 これらのグループは、**Office 365 管理センター**で構成できます。 これらのグループは、ユーザーをポリシーの対象とするか、または除外するために使用されます。 ユーザーがポリシーの対象となる場合、ユーザーに使用される各デバイスがリソースにアクセスするには、ポリシーを遵守している必要があります。
 
-Dynamics CRM ポリシーに使用する 2 つのグループの種類を指定できます。
+Dynamics CRM ポリシーに使用する&2; つのグループの種類を指定できます。
 * **対象グループ**。 ポリシーを適用するユーザーのグループが含まれます。
 * **例外グループ**。 ポリシーから除外されるユーザーのグループが含まれます。
 
@@ -104,6 +104,6 @@ Dynamics CRM ポリシーに使用する 2 つのグループの種類を指定�
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

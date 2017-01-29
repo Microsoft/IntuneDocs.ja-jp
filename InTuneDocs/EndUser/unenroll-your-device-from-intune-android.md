@@ -1,27 +1,29 @@
 ---
-title: "Intune から Android デバイスの登録を解除する | Microsoft Intune"
+title: "Intune から Android デバイスの登録を解除する方法 | Microsoft Docs"
 description: "Intune から Android デバイスの登録を解除する方法について説明します"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
+searchScope:
+- Company Portal
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 350598f5fef3bcfa3b1421a70039f5af90aa56f9
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: 6233e939dce9e79f85ec5cb87d28f135a300db6e
 
 
 ---
 
 
-# <a name="unenroll-your-android-device-from-intune"></a>Intune から Android デバイスの登録を解除する
+# <a name="how-to-unenroll-your-android-device-from-intune"></a>Intune から Android デバイスの登録を解除する方法
 
 Intune から Android デバイスの登録を解除した後は、会社のリソースにアクセスできなくなります。  登録解除した場合の詳細については、「[Intune からデバイスの登録を解除するとどうなるか](what-happens-if-you-unenroll-your-device-from-intune-android.md)」を参照してください。
 
@@ -47,6 +49,6 @@ Intune からデバイスの登録を解除し、会社のポータル アプリ
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

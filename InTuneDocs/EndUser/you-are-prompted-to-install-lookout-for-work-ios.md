@@ -1,25 +1,27 @@
 ---
-title: "iOS デバイスで Lookout for Work のインストールを求められる | Microsoft Intune"
+title: "iOS デバイスで Lookout for Work をインストールする必要がある | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/17/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 0c1fd681cd2ef9001083df16d4fb7506c47f9572
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 15c820d4b25b8deb3ab17601a4835c57e5ede780
 
 
 ---
 
-# <a name="you-are-prompted-to-install-lookout-for-work-on-your-ios-device"></a>iOS デバイスで Lookout for Work のインストールを求められる
+# <a name="you-need-to-install-lookout-for-work-on-your-ios-device"></a>iOS デバイスで Lookout for Work をインストールする必要がある
 
 作業内容にアクセスする前に、IT 管理者から潜在的なセキュリティ脅威を検出してデバイスを保護することができる、Lookout for Work アプリをインストールするように求められます。 IT 管理者の設定によって、Lookout for Work で表示されるプロンプトは異なります。
 
@@ -41,7 +43,7 @@ ms.openlocfilehash: 0c1fd681cd2ef9001083df16d4fb7506c47f9572
 
     ![[設定]、[ロケーション サービス] の順にタップする](./media/ios-lfw-allow-notifications.png)
 
-    
+
 Lookout for Work がインストールを完了し、デバイスでセキュリティ上の脅威が検出されない場合、次の画面が表示されます。
 
 ![セキュリティ上の脅威はありませんでした](./media/ios-lfw-no-threats-found.png)
@@ -54,7 +56,6 @@ Lookout for Work によってこのデバイスでセキュリティ上の脅威
 
 
 
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

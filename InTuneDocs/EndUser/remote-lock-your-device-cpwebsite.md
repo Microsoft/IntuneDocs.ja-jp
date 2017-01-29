@@ -1,5 +1,5 @@
 ---
-title: "ポータル サイト Web サイトからデバイスをリモートでロックする | Microsoft Docs"
+title: "ポータル サイトからデバイスをロックする | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -17,8 +17,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
-ms.openlocfilehash: fad219ca06ceb62e8bad0b3dbd30b330d90ac977
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: a888592c4bf4f71cba44cebadb5cf90d2cc9aef6
 
 
 ---
@@ -49,7 +49,7 @@ ms.openlocfilehash: fad219ca06ceb62e8bad0b3dbd30b330d90ac977
 
     **[リモート ロック]** をタップすると、"リモート ロック保留中" というメッセージが表示されます。  リモート ロックが成功した場合、状態が ”リモート ロック成功” に変わります。
 
-    リモート ロックの状態は次の 3 つの場所に表示されます。
+    リモート ロックの状態は次の&3; つの場所に表示されます。
 
     * Web サイトの通知領域。
     * デバイスの **[詳細]** ページ。
@@ -64,6 +64,6 @@ ms.openlocfilehash: fad219ca06ceb62e8bad0b3dbd30b330d90ac977
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

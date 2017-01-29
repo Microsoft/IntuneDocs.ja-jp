@@ -1,5 +1,5 @@
 ---
-title: "電子メールへのアクセスを保護するシナリオ例 | Microsoft Docs"
+title: "電子メールの保護に関するシナリオ | Microsoft Docs"
 description: "いくつかのシナリオ例と、条件付きアクセスを使用した場合の実装方法。"
 keywords: 
 author: andredm7
@@ -14,8 +14,8 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: eca68c053185dbd5e7f89a426d3bed44cc09acf1
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
 
 
 ---
@@ -84,6 +84,6 @@ ms.openlocfilehash: eca68c053185dbd5e7f89a426d3bed44cc09acf1
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

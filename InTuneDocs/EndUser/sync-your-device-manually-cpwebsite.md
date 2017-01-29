@@ -1,40 +1,43 @@
 ---
-title: "会社のポータル Web サイトを使用して手動でデバイスを同期する | Microsoft Intune"
+title: "ポータル Web サイトを使用してデバイスを同期する | Microsoft Docs"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ecd0628a-3c8a-4d6b-8985-1641dd24132b
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d53602bf4d767341924c4c4af8edae0d376a149
-ms.openlocfilehash: c49aa7e21f002110155e883894d211266ddbcb6c
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 1dded693cb60bacb9c0a445bb26c818dde778a7a
 
 
 ---
 
 
-# 会社のポータル Web サイトを使用して手動でデバイスを同期する
+# <a name="sync-your-device-with-the-company-portal-website"></a>ポータル Web サイトを使用してデバイスを同期する
 
-アプリのインストールや他のタスクに時間がかかりすぎる場合は、デバイスを手動で同期してみてください。 手動で同期すると、インストールやタスクを高速化できることがあります。
+アプリをインストールするときや他の作業を行うとき、通常より時間がかかることがあります。 時間がかかりすぎる場合、デバイスを手動で同期し、作業時間を短縮してみてください。
 
-同期機能は、以下のバージョンでのみ利用できます。 使用しているデバイスに応じた手順を実行してください。
+> [!Note]
+> 現在のところ、一部のデバイスでは同期機能をご利用いただけません。 デバイスが一覧にない場合、デバイスのリセットをお試しください。WiFi を 30 秒ほどオフにし、それからネットワークに再接続します。
 
-* [[Windows] 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
-* [Windows 10 Desktop](sync-your-device-manually-windows.md#windows-10-desktop)
-* [Windows Phone 8。1](sync-your-device-manually-windows.md#windows-phone-8-1)
 * [iOS](sync-your-device-manually-ios.md)
+* [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
+* [Windows 10 デスクトップ](sync-your-device-manually-windows.md#windows-10-desktop)
+* [Windows Phone 8.1](sync-your-device-manually-windows.md#windows-phone-81)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "ポータル サイト Web サイトからデバイスのパスコードをリセットする方法 | Microsoft Docs"
+title: "ポータル Web サイトからパスコードをリセットする方法 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,8 +17,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: beba9603ffb43d025132d2d86f0996ff505a9019
-ms.openlocfilehash: f9d66fe07173245ff831f204dd120598ad7564db
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: a8ce59755a74199eda6865feda68c0613d10c2a7
 
 
 ---
@@ -38,7 +38,7 @@ Intune に登録したデバイスの PIN またはパスワードを紛失し�
 
     ![[パスコードのリセット] ボタンとデバイスの詳細](./media/iwp-screen-with-all-options.png)
 
-3.  **[サインアウト]** を選択し、職場または学校の資格情報でサインインし直します。 サインインは 5 分以内に行う必要があります。
+3.  **[サインアウト]** を選択し、職場または学校の資格情報でサインインし直します。 サインインは&5; 分以内に行う必要があります。
 
     ![サインアウト ボタンでメッセージをリセットする](./media/iwp-2-sign-out.png)
 
@@ -63,6 +63,6 @@ Intune に登録したデバイスの PIN またはパスワードを紛失し�
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

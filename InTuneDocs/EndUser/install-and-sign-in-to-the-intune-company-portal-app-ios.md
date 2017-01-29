@@ -1,28 +1,30 @@
 ---
-title: "Intune ポータル サイト アプリをインストールしてサインインする | Microsoft Intune"
+title: "ポータル サイト アプリをインストールしてサインインする | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8dfe66b4-f585-4862-87fa-7dbb4487549c
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 5633cc9b9a97211bd5ff6a2d876bdb36ee8888c9
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: cf110d8758e8ab589acbceabb5df733b29068b0f
 
 
 ---
 
 
-# <a name="install-and-sign-in-to-the-intune-company-portal-app"></a>Intune ポータル サイト アプリをインストールしてサインインする
+# <a name="install-and-sign-in-to-the-company-portal-app"></a>ポータル サイト アプリをインストールしてサインインする
 
 ポータル サイトはアプリの一種であり、iOS デバイスにインストールすることで、会社または学校のアプリ、電子メール、およびネットワークにアクセスできるようになります。  アクセスを可能にするには、事前に、ポータル サイト アプリをインストールし、このアプリを使用して、Microsoft Intune にデバイスを登録しておく必要があります。 詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなりますか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)」を参照してください。
 
@@ -34,12 +36,12 @@ ms.openlocfilehash: 5633cc9b9a97211bd5ff6a2d876bdb36ee8888c9
 
 3.  ポータル サイト アプリを開き、職場または学校の電子メール アドレスとパスワードを入力して、**[サインイン]** をタップします。
 
-    職場または学校で Intune を使用している場合は、ポータル サイト アプリに初めてサインインするときに、デバイスを Intune に登録するよう求められます。 登録するには、「[Intune に iOS デバイスを登録する](enroll-your-device-in-intune-ios.md)」または「[Intune に Mac OS X デバイスを登録する](enroll-your-device-in-intune-mac-os-x.md)」の手順に従います。
+    職場または学校で Intune を使用している場合は、ポータル サイト アプリに初めてサインインするときに、デバイスを Intune に登録するよう求められます。 登録するには、「[Intune に iOS デバイスを登録する](enroll-your-device-in-intune-ios.md)」または「[Intune に macOS デバイスを登録する](enroll-your-device-in-intune-macos.md)」の手順に従います。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

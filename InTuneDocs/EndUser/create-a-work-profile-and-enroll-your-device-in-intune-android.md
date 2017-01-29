@@ -1,21 +1,23 @@
 ---
-title: "Intune での仕事用プロファイルの作成とデバイスの登録 | Microsoft Intune"
+title: "仕事用プロファイルを使用するデバイスの登録 | Microsoft Docs"
 description: "Android デバイスを暗号化する方法について説明します"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
+searchScope:
+- Company Portal
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
-ms.openlocfilehash: f3aa8f3169eebb19301d4bdc5624817f54a29aa0
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 179f0ba2a70637f91856037e132eeeea9a57c68c
 
 
 ---
@@ -69,7 +71,7 @@ ms.openlocfilehash: f3aa8f3169eebb19301d4bdc5624817f54a29aa0
 
     "デバイスを登録しています" というメッセージが短時間表示されます。
 
-11. **[会社アクセスのセットアップ]** 画面ですべてのセットアップが完了したことを確認したら、**[続行]** をタップします。 
+11. **[会社アクセスのセットアップ]** 画面ですべてのセットアップが完了したことを確認したら、**[続行]** をタップします。
 
     ![仕事用プロファイルと登録が完了したことが表示されている [会社アクセスのセットアップ]](./media/andr-afw-company-access-setup-green-checks.png)
 
@@ -85,8 +87,6 @@ ms.openlocfilehash: f3aa8f3169eebb19301d4bdc5624817f54a29aa0
 
 
 
-
-
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

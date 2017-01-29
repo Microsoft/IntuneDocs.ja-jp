@@ -1,3 +1,25 @@
+---
+title: "MAM とアプリの保護に関してよく寄せられる質問"
+description: "この記事では、Intune モバイル アプリケーション管理 (MAM) と Intune アプリ保護に関してよく寄せられる質問に対する回答を示します。"
+keywords: 
+author: oydang
+ms.author: oydang
+manager: mtillman
+ms.date: 01/20/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
+ms.reviewer: oydang
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 474bb04d743290ff78aa0772595b744be46ae1af
+ms.openlocfilehash: b6b2d066b773e91003884a8735b6663ebf125aa3
+
+
+---
+
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM とアプリの保護に関してよく寄せられる質問
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -11,8 +33,8 @@
 
 **MAM のアプリ保護の利点は何ですか。** MAM は、アプリケーション内の組織のデータを保護します。 MAM-WE を使用すれば、機密データが含まれる職場または学校関連のアプリを、Bring Your Own Device (BYOD) シナリオにおける個人所有デバイスを含むほぼすべてのデバイスで管理できます。 Microsoft Office アプリなどの多くの仕事効率化アプリを、Intune MAM で管理することができます。 一般使用が可能な [Intune 対応アプリ](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)の公式の一覧を参照してください。
 
-**MAM でサポートされるのはどのようなデバイス構成ですか。** Intune MAM では次の 2 つの構成をサポートしています。
-  1. **Intune MDM と MAM**: これは MAM の初回起動時にサポートされる 1 つ目の構成です。 IT 管理者は、Intune モバイル デバイス管理 (MDM) に登録されているデバイスで MAM とアプリ保護ポリシーを使用したアプリの管理のみを行うことができます。 MDM と MAM を使ってアプリを管理するには、Intune スタンドアロン コンソール (http://manage.microsoft.com) を使用する必要があります。
+**MAM でサポートされるのはどのようなデバイス構成ですか。** Intune MAM では次の&2; つの構成をサポートしています。
+  1. **Intune MDM と MAM**: これは MAM の初回起動時にサポートされる&1; つ目の構成です。 IT 管理者は、Intune モバイル デバイス管理 (MDM) に登録されているデバイスで MAM とアプリ保護ポリシーを使用したアプリの管理のみを行うことができます。 MDM と MAM を使ってアプリを管理するには、Intune スタンドアロン コンソール (http://manage.microsoft.com) を使用する必要があります。
 
   2. **デバイス登録なしの MAM**: デバイス登録なしの MAM (MAM-WE) では、IT 管理者は Intune MDM に登録されていないデバイスで MAM とアプリ保護ポリシーを使ってアプリを管理できます。 つまり、サードパーティ EMM プロバイダーに登録されているデバイスで Intune によりアプリを管理できます。 MAM-WE でアプリを管理するには、Azure Portal (http://portal.azure.com) の Intune コンソールを使用する必要があります。
 
@@ -86,7 +108,7 @@
 
   2. **何が暗号化されますか。** IT 管理者のアプリ保護ポリシーに従い、"企業" データとしてマークされたデータのみが暗号化されます。 勤務地から送信されたデータは "企業" データと見なされます。 Office アプリについては、Intune では電子メール (Exchange) またはクラウド ストレージ (OneDrive for Business アカウントを使用した OneDrive アプリ) が勤務地と見なされます。 Intune アプリ ラッピング ツールによって有効化された基幹業務アプリでは、すべてのアプリ データが "企業" データと見なされます。
 
-**Intune でのデータのリモート ワイプはどのように行われますか。** Intune は、フル デバイス ワイプ、MDM の選択的ワイプ、および MAM の選択的ワイプという 3 つの異なる方法でアプリのデータをワイプできます。 MDM のリモート ワイプの詳細については、「[Microsoft Intune のフル ワイプまたは選択的ワイプを使用してデータを保護する](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)」を参照してください。 MAM を使用する選択的ワイプの詳細については、「[管理対象の業務用アプリのデータを Microsoft Intune でワイプする](wipe-managed-company-app-data-with-microsoft-intune.md)」を参照してください。
+**Intune でのデータのリモート ワイプはどのように行われますか。** Intune は、フル デバイス ワイプ、MDM の選択的ワイプ、および MAM の選択的ワイプという&3; つの異なる方法でアプリのデータをワイプできます。 MDM のリモート ワイプの詳細については、「[Microsoft Intune のフル ワイプまたは選択的ワイプを使用してデータを保護する](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)」を参照してください。 MAM を使用する選択的ワイプの詳細については、「[管理対象の業務用アプリのデータを Microsoft Intune でワイプする](wipe-managed-company-app-data-with-microsoft-intune.md)」を参照してください。
 
   1. **フル ワイプとは何ですか。** [フル ワイプ](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe)では、デバイスを出荷時の既定の設定に戻すことにより、すべてのユーザー データと設定が**デバイス**から削除されます。 デバイスは Intune から削除されません。
   >[!NOTE]
@@ -111,7 +133,15 @@
 
 **データ転送ポリシーが "管理対象アプリのみ" または "アプリなし" に設定されている場合でも、iOS 共有拡張機能を使って、管理対象ではないアプリの職場または学校のデータを開くことができます。これはデータのリークではないのですか。** Intune アプリ保護ポリシーでは、デバイスを管理せずに iOS 共有拡張機能を制御することはできません。 したがって、Intune は _**"企業" データがアプリの外部で共有される前に、データを暗号化します**_。 これは、管理対象アプリの外部で "企業" ファイルを開いてみることによって確認できます。 ファイルは暗号化されていて、管理対象アプリの外部では開くことができないはずです。
 
+### <a name="see-also"></a>関連項目
+- [Microsoft Intune での Android モバイル アプリ管理ポリシーの設定](android-mam-policy-settings.md)
+- [iOS モバイル アプリ管理ポリシーの設定](ios-mam-policy-settings.md)
+- [モバイル アプリケーション管理のセットアップの検証](validate-mobile-application-management.md)
+- [Microsoft Intune でのモバイル アプリ管理ポリシーの作成および展開](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+- [Microsoft Intune のサポートを受ける方法](../troubleshoot/how-to-get-support-for-microsoft-intune.md)
 
-<!--HONumber=Jan17_HO2-->
+
+
+<!--HONumber=Jan17_HO4-->
 
 

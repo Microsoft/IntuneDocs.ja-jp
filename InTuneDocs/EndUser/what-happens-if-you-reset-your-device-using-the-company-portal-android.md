@@ -1,11 +1,11 @@
 ---
-title: "ポータル サイトを使用して Android デバイスをリセットするとどうなりますか。 | Microsoft Docs"
+title: "Android デバイスをリセットするとどうなるか | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,8 +17,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: a696858380fe15efd4e40db9f2b4c6b5157051bc
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: c860e112f661ebac761684ba5d1607b37a817acd
 
 
 ---
@@ -38,6 +38,6 @@ Samsung Knox デバイスがある場合は、ポータル サイトから**デ�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
