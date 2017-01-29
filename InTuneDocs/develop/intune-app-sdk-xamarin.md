@@ -1,21 +1,21 @@
 ---
-title: "Microsoft Intune App SDK Xamarin コンポーネント | Microsoft Intune"
+title: "Microsoft Intune App SDK Xamarin コンポーネント | Microsoft Docs"
 description: 
 keywords: sdk, Xamarin, intune
-author: oydang
-manager: karthikaraman
-ms.author: oydang
+author: mtillman
+manager: angrobe
+ms.author: mtillman
 ms.date: 11/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
-ms.reviewer: karthikaraman
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af7df3fcf50c3508d495522341bb287c638f40a3
-ms.openlocfilehash: 2ea1763881a7d10ae8bc21c98754d2767b2fc954
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 74607fc704234e6ac85eae3bf55c186000c6e68a
 
 
 ---
@@ -83,7 +83,7 @@ Intune App SDK Xamarin コンポーネントで開発された Xamarin アプリ
 
       ```
 
-2.  コンポーネントが追加され、初期化されたので、App SDK を iOS モバイル アプリに組み込むための一般的な手順を実行できます。 ネイティブ iOS アプリを有効にする方法は、「[iOS 用 Intune アプリ SDK 開発者ガイド](intune-app-sdk-ios)」にすべて記載されています。
+2.  コンポーネントが追加され、初期化されたので、App SDK を iOS モバイル アプリに組み込むための一般的な手順を実行できます。 ネイティブ iOS アプリを有効にする方法は、「[iOS 用 Intune アプリ SDK 開発者ガイド](intune-app-sdk-ios.md)」にすべて記載されています。
 3. **重要**: Xamarin 基盤の iOS アプリに固有の変更がいくつかあります。 たとえば、キーチェーン グループを有効にするとき、以下を追加し、コンポーネントに含めた Xamarin サンプル アプリを含めます。 以下は、キーチェーン アクセス グループで利用されるようなグループの例です。
 
       ```xml
@@ -102,10 +102,10 @@ Intune App SDK Xamarin コンポーネントで開発された Xamarin アプリ
       </plist>
       ```
 
-Xamarin 基盤の iOS アプリにコンポーネントを組み込むための手順が完了しました。 プロジェクトの開発に Xcode を利用している場合、`Intune App SDK Settings.bundle` を利用できます。 プロジェクトを開発するとき、テストやデバッグのために Intune ポリシー設定のオン/オフを切り替えることができます。 このバンドルを活用するには、「[iOS 用 Intune アプリ SDK 開発者ガイド](intune-app-sdk-ios)」の手順に従い、[Xcode デバッグ](intune-app-sdk-ios#debug-information)に関するセクションをお読みください。
+Xamarin 基盤の iOS アプリにコンポーネントを組み込むための手順が完了しました。 プロジェクトの開発に Xcode を利用している場合、`Intune App SDK Settings.bundle` を利用できます。 プロジェクトを開発するとき、テストやデバッグのために Intune ポリシー設定のオン/オフを切り替えることができます。 このバンドルを活用するには、「[iOS 用 Intune アプリ SDK 開発者ガイド](intune-app-sdk-ios.md)」の手順に従い、[Xcode デバッグ](intune-app-sdk-ios.md#status-result-and-debug-notifications)に関するセクションをお読みください。
 
 ## <a name="enabling-mam-in-your-android-mobile-app"></a>Android モバイル アプリで MAM を有効にする
-UI フレームワークを利用しない Xamarin 基盤の Android アプリの場合、「Android 用 Intune アプリ SDK 開発者ガイド」をお読みいただき、それに沿う必要があります。 Xamarin 基盤の Android アプリの場合、ガイドに含まれる[表](intune-app-sdk-android#replace-classes-methods-and-activities-with-their-mam-equivalent-required)に基づき、クラス、メソッド、アクティビティを MAM のそれらと置換する必要があります。 アプリで `android.app.Application` クラスが定義されない場合、それを作成し、`MAMApplication` から継承するように設定する必要があります。
+UI フレームワークを利用しない Xamarin 基盤の Android アプリの場合、「Android 用 Intune アプリ SDK 開発者ガイド」をお読みいただき、それに沿う必要があります。 Xamarin 基盤の Android アプリの場合、ガイドに含まれる[表](intune-app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent-required)に基づき、クラス、メソッド、アクティビティを MAM のそれらと置換する必要があります。 アプリで `android.app.Application` クラスが定義されない場合、それを作成し、`MAMApplication` から継承するように設定する必要があります。
 
 Xamarin Forms とその他の UI フレームワークの場合、「`MAM.Remapper`」と呼ばれているツールがあります。 このツールは、ユーザーに代わってクラス置換を実行します。 ただし、次の手順を実行する必要があります。
 
@@ -121,10 +121,10 @@ Xamarin Forms とその他の UI フレームワークの場合、「`MAM.Remapp
 
 ## <a name="test-your-app"></a>アプリのテスト
 
-コンポーネントをアプリに組み込む基本的な手順を完了しました。 これで、Xamarin Android サンプル アプリに含まれている手順を実行できます。 サンプルは 2 つあります。Xamarin.Forms 用が 1 つ、Android 用が 1 つです。
+コンポーネントをアプリに組み込む基本的な手順を完了しました。 これで、Xamarin Android サンプル アプリに含まれている手順を実行できます。 サンプルは&2; つあります。Xamarin.Forms 用が&1; つ、Android 用が&1; つです。
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

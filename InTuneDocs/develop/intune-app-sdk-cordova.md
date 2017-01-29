@@ -1,25 +1,25 @@
 ---
-title: "Microsoft Intune App SDK Cordova プラグイン | Microsoft Intune"
+title: "Microsoft Intune App SDK Cordova プラグイン | Microsoft Docs"
 description: 
 keywords: sdk, Cordova, intune
 author: oydang
 manager: angrobe
 ms.author: oydang
-ms.date: 11/15/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
-ms.reviewer: karthikaraman
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: af7df3fcf50c3508d495522341bb287c638f40a3
-ms.openlocfilehash: 2af369cc44c710789ab65eb25f10602882772019
+ms.sourcegitcommit: 613e293d9bd853d6de7cdc0d753cc8473afc180b
+ms.openlocfilehash: 9ef09f43e6c878af689a500457bab578149de499
 
 
 ---
-# ﻿<a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova プラグイン
+# <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova プラグイン
 
 > [!NOTE]
 > 最初に、[Intune アプリ SDK の概要](intune-app-sdk-get-started.md)に関する記事に目を通すことをお勧めします。このガイドでは、サポートする各プラットフォームで統合のための準備をする方法について説明しています。
@@ -92,7 +92,7 @@ Intune App SDK Cordova プラグインで開発された Cordova アプリでは
 
 アプリで Intune MAM を有効にするには、いくつかの手順を完了する必要があります。 便宜上、これらの手順はビルド前フックとして Cordova ビルド プロセスで自動実行されます。 結果として、この自動手順により、プロジェクト構成に関連付けられている `*.pbxproj`、`*-Info.plist`、`*.entitlements` ファイルが変更されます。 プロジェクトに権利ファイルが含まれていない場合、プラグインにより権利ファイルが自動作成されます。
 
-このセットアップでサポートされる対象は 1 つだけです。複数の対象が見つかった場合、最初の対象で構成が実行されます。 プロセスが失敗した場合、次を確認してください。
+このセットアップでサポートされる対象は&1; つだけです。複数の対象が見つかった場合、最初の対象で構成が実行されます。 プロセスが失敗した場合、次を確認してください。
 
 1. アプリの Xcode プロジェクトは `[name].xcodeproj` です。`[name]` は `config.xml` に定義されている値です。
 2. プロジェクトで[標準の Cordova アプリ ディレクトリ構造](https://cordova.apache.org/docs/en/latest/reference/cordova-cli/index.html#directory-structure)が利用されます。
@@ -161,6 +161,6 @@ $ cordova run --nobuild
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 
