@@ -1,12 +1,12 @@
 ---
-title: "Intune の一般的な使用方法 |Microsoft Intune"
+title: "Intune の一般的な使用方法 | Microsoft Docs"
 description: "Intune でできる最も一般的なタスクのうち 6 つを表示する"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.date: 11/09/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,15 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 39e68e467c3295f4751bf3466957a8a377a8e7d6
-ms.openlocfilehash: 095be86be3658a294d3f0aab525f5e0dd29b4cfe
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 6a38eb2a071dc2134c9b255b22b5b21a2ef783d0
 
 
 ---
 
 # <a name="common-ways-to-use-intune"></a>Intune の一般的な使用方法
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 実装を始める前に、自社のエンタープライズ モビリティの関係者と、ビジネス目標に関する認識を合わせておくことが重要です。  これは、エンタープライズ モビリティを初めて導入する場合も、別の製品から移行する場合も同様です。  
 
@@ -99,6 +101,6 @@ Intune の[一括プロビジョニングと管理のソリューション](/int
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

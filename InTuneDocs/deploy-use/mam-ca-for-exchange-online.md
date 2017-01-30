@@ -1,5 +1,5 @@
 ---
-title: "Exchange Online のアプリのアクセス権を構成する | Microsoft Intune"
+title: "Exchange Online のアプリのアクセス権を構成する | Microsoft Docs"
 description: "このトピックでは、MAM アプリの条件付きアクセス ポリシーを構成する方法について説明します。"
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: f2cd1a1f-fd29-4081-8dfa-c40993a107d5
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dae04661289c79798c2f37272a0f941d30335ea5
-ms.openlocfilehash: a0c0bac5082119b2cfa1518934dea8cdc3f75067
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 49b5b50016e2b36a7ad88fdf0a4e3ae2153290ba
 
 
 ---
 
 # <a name="create-an-exchange-online-conditional-access-to-only-allow-apps-supported-by-mam"></a>MAM でサポートされているアプリのみを許可する Exchange Online の条件付きアクセスを作成する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 このトピックでは、Intune モバイル アプリ管理 (MAM) ポリシーをサポートするモバイル アプリのみを許可するように Exchange Online の条件付きアクセスをセットアップする手順について説明します。
 
 

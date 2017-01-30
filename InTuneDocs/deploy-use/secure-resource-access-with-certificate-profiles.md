@@ -1,5 +1,5 @@
 ---
-title: "リソース アクセス用の証明書プロファイル |Microsoft Intune"
+title: "リソース アクセス用の証明書プロファイル | Microsoft Docs"
 description: "各ユーザーのデバイスにインストールされている証明書で、VPN、Wi-Fi、および電子メール アクセスを保護します。"
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 35d08100b4332cc63667a401143c17972225a908
-ms.openlocfilehash: b64260fd44e5c3fd0fb80e0dab4d75bd5c4eb305
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9cf53cb240ba14317fbb680ad4f4c40c8320506d
 
 
 ---
 
 # <a name="secure-resource-access-with-certificate-profiles-in-microsoft-intune"></a>Secure resource access with certificate profiles in Microsoft Intune (Microsoft Intune の証明書プロファイルでリソースへのアクセスを保護する)
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 VPN、Wi-Fi、または電子メール プロファイル経由でユーザーが企業リソースへアクセスできるようにする場合、各ユーザー デバイスにインストールされている証明書を使用してこのアクセスを保護することができます。 そのしくみは次のとおりです。
 
 1. 「[SCEP の証明書インフラストラクチャを構成する](configure-certificate-infrastructure-for-scep.md)」および「[PFX の証明書インフラストラクチャを構成する](configure-certificate-infrastructure-for-pfx.md)」の説明に従って、適切な証明書インフラストラクチャを構成します。
@@ -44,7 +47,7 @@ VPN、Wi-Fi、または電子メール プロファイル経由でユーザー�
 
   次のプラットフォームを実行するデバイスに対しては、**SCEP 証明書プロファイル**を使用します。
     -   Mac OS X 10.9 以降
-    -   Windows Phone 8。1 
+    -   Windows Phone 8。1
 
 プラットフォームごとに別個のプロファイルを作成する必要があります。 プロファイルを作成したら、それを既に作成済みの**信頼されたルート証明書プロファイル**に関連付けます。
 
@@ -61,6 +64,6 @@ VPN、Wi-Fi、または電子メール プロファイル経由でユーザー�
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

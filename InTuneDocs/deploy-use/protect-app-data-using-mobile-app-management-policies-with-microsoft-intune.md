@@ -1,9 +1,9 @@
 ---
-title: "MAM ポリシーを使用してアプリ データを保護する | Microsoft Intune"
+title: "MAM ポリシーを使用してアプリ データを保護する | Microsoft Docs"
 description: "このトピックでは、モバイル アプリケーション管理ポリシーが、会社データの保護、データ損失の防止、および個人用情報と作業情報の個別管理に役立つしくみについて説明します。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,15 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 66a5814ba34f9fd15460512b0a6d40566ec33401
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: c2293306e847148ff7413be3e9eeafb8349e33fe
 
 
 ---
 
 # <a name="protect-app-data-using-mobile-application-management-policies-with-microsoft-intune"></a>Microsoft Intune でモバイル アプリケーション管理ポリシーを使用してアプリ データを保護する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="how-you-can-protect-app-data"></a>アプリ データを保護する方法
 従業員は個人のタスクと仕事のタスクの両方にモバイル デバイスを使用しています。 従業員の生産性を維持したまま、意図的なデータ損失や意図しないデータ損失が起こらないようにする必要があります。  さらに、会社が管理していないデバイスを使用して従業員がアクセスする会社のデータを保護できるようにします。
@@ -130,6 +132,6 @@ MDM ソリューションに登録されていない BYOD デバイスの場合�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

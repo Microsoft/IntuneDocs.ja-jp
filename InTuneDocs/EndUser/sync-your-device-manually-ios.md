@@ -1,5 +1,5 @@
 ---
-title: "iOS デバイスを手動で同期する | Microsoft Intune"
+title: "iOS デバイスを手動で同期する | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: a08a9865463edcea2308df33fb40635d9466091f
+ms.sourcegitcommit: 1df8924bd7f94040db28f0c26f0aa29bb7620a0a
+ms.openlocfilehash: 6d57eae82b84b4cd64e0f22829d02fc02bbd9663
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: a08a9865463edcea2308df33fb40635d9466091f
 
 # <a name="sync-your-ios-device-manually"></a>iOS デバイスを手動で同期する
 
-アプリのインストールに時間がかかりすぎる場合は、デバイスを手動で同期してみてください。 手動で同期すると、インストールを高速化できることがあります。 同期機能は iOS のみに適用され、Mac OS X には適用されません。
+アプリのインストールに時間がかかりすぎる場合は、デバイスを手動で同期してみてください。 手動で同期すると、インストールを高速化できることがあります。 同期機能は iOS のみに適用されます。
 
 1. iOS のポータル サイト アプリを開きます。
 
@@ -42,6 +42,6 @@ ms.openlocfilehash: a08a9865463edcea2308df33fb40635d9466091f
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

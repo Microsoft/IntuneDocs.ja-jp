@@ -1,5 +1,5 @@
 ---
-title: "クライアント セットアップのトラブルシューティング | Microsoft Intune"
+title: "クライアント セットアップのトラブルシューティング | Microsoft Docs"
 description: "一般的なクライアント セットアップに関する問題のトラブルシューティングを行います。"
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 889a13bd50943b9cdf0f40d50b6f8ce263dde56d
-ms.openlocfilehash: e37b5da81150f89fce1ee3d57bd84de0ff7fb76f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2d5c7d4800e1140efb502c47151ea8cc87548acd
 
 
 ---
 
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Microsoft Intune でのクライアント セットアップのトラブルシューティング
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 クライアントのセットアップで生じる一般的な問題のトラブルシューティングについては、以下の情報を参照してください。 この情報で問題が解決しない場合、さらに役立つ方法を探すには、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」を参照してください。
 
 ## <a name="client-installation-fails"></a>クライアントのインストールが失敗する
@@ -33,7 +36,7 @@ ms.openlocfilehash: e37b5da81150f89fce1ee3d57bd84de0ff7fb76f
 
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[アラート]** &gt; **[概要]** の順に選択します。
 
-2.   **[アラートの概要]** ページで次の情報を確認できます。
+2.  **[アラートの概要]** ページで次の情報を確認できます。
 
     -   上位 3 件のアラート。日付、カテゴリ、または重要度を基準に並べ替えることができます。
 
@@ -70,7 +73,7 @@ ms.openlocfilehash: e37b5da81150f89fce1ee3d57bd84de0ff7fb76f
 **解決方法:** 「[Microsoft Intune でソフトウェア更新プログラムを使用して Windows PC を最新の状態に保つ](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)」の説明に従って、重要な更新プログラムがインストールされるようにソフトウェア更新ポリシーを設定してください。
 
 
-## <a name="microsoft-intune-policyrelated-errors-in-policyplatformlog"></a>policyplatform.log に記録される Microsoft Intune ポリシー関連エラー
+## <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>policyplatform.log に記録される Microsoft Intune ポリシー関連エラー
 MDM Windows デバイス以外のデバイスでは、policyplatform.log ファイルに記録されるポリシー エラーは、デバイスの Windows ユーザー アカウント制御 (UAC) の設定が既定値以外であることが原因である場合があります。 いくつかの既定値以外の UAC 設定は、Microsoft Intune クライアントのインストールやポリシーの実行に影響を与えます。
 
 ### <a name="to-resolve-uac-issues"></a>UAC の問題を解決するには
@@ -127,6 +130,6 @@ MDM Windows デバイス以外のデバイスでは、policyplatform.log ファ�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

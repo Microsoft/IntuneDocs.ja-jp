@@ -1,5 +1,5 @@
 ---
-title: "条件付きアクセスに関するトラブルシューティング | Microsoft Intune"
+title: "条件付きアクセスに関するトラブルシューティング | Microsoft Docs"
 description: "ユーザーが Intune の条件付きアクセスでリソースにアクセスできない場合の対処方法。"
 keywords: 
 author: andredm7
@@ -14,13 +14,15 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 001bacbfc6a61a1c6b8f75c8e7ca55e311a1fa71
-ms.openlocfilehash: 7d52b3bb05a00b0da5e0845380f8431044b1c121
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: d4b935ba28edc1b41afb46b0aa7d0ee586de2a1c
 
 
 ---
 
 # <a name="troubleshoot-conditional-access"></a>条件付きアクセスに関するトラブルシューティング
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 通常、ユーザーは電子メールまたは SharePoint にアクセスしようとし、登録を要求されます。 そのプロンプトからユーザーはポータル サイトに移動します。
 

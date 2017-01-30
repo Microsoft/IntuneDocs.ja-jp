@@ -1,5 +1,5 @@
 ---
-title: "ポリシーとアプリを展開する |Microsoft Intune"
+title: "ポリシーとアプリを展開する |Microsoft Docs"
 description: "ポリシー設定を有効にし、デバイスが管理に登録されたらすぐに適用されるアプリを展開することができます。"
 keywords: 
 author: nathbarn
@@ -14,13 +14,16 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 56f7d1578ba6b193c6547686675e0fd4fde5f378
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
 
 
 ---
 
 # <a name="create-policies-and-publish-apps"></a>ポリシーを作成してアプリを発行する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune へのアプリの登録を開始する前に、ポリシー設定とアプリを有効にします。アプリは、デバイスが管理対象になるとすぐに展開されます。 モバイル デバイスのセキュリティ設定を制御したり、コンピューターの Windows ファイアウォールや Endpoint Protection の設定を管理したり、アプリケーションを展開したりする作業は、Intune のポリシー設定を使用して効率的に行うことができます。 ポリシーを構成し、アプリを追加して展開し、Intune に登録されたらすぐにデバイスが設定とアプリを受信するようにすることができます。
 
 ポリシーとアプリはプラットフォームに固有です。

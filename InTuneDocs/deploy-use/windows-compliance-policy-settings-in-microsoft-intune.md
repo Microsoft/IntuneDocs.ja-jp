@@ -1,11 +1,11 @@
 ---
-title: "Windows デバイス向けのコンプライアンス ポリシー設定 | Microsoft Intune"
+title: "Windows デバイス向けのコンプライアンス ポリシー設定 | Microsoft Docs"
 description: "このトピックでは、Windows デバイスのコンプライアンス ポリシーにおいて構成できるルールと設定を説明しました。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
-ms.openlocfilehash: e079fea47a10296067fe82fc05d82f0a863ae7bd
+ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
+ms.openlocfilehash: a7edd3d23a28f3496b22efdc3b17fb25b40399b6
 
 
 ---
 
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Microsoft Intune での Windows デバイス向けのコンプライアンス ポリシー設定
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 このトピックで説明されているポリシー設定は、Windows オペレーティング システムを実行するデバイスが対象となります。 以下のセクションでは、サポートされる Windows バージョンについて説明します。
 
@@ -151,6 +153,6 @@ ms.openlocfilehash: e079fea47a10296067fe82fc05d82f0a863ae7bd
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "アプリを更新する | Microsoft Intune"
+title: "アプリを更新する | Microsoft Docs"
 description: "新しいバージョンが必要な場合は、このトピックに含まれるアプリを更新する方法を参照してください。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,22 @@ ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: e78642494356038d4dff259ca54030122fd90819
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 824605544487c987c8726e0efe91d06a597fadb2
 
 
 ---
 
-# Microsoft Intune を使用してアプリを更新する
+# <a name="update-apps-using-microsoft-intune"></a>Microsoft Intune を使用してアプリを更新する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune は、アプリの更新プログラムを管理するのに役立ちます。 新しいバージョンが必要な場合は、このトピックに含まれるアプリを更新する方法を参照してください。
 
-## アプリを更新する方法
+## <a name="how-to-update-apps"></a>アプリを更新する方法
 展開しているアプリの新しいバージョンがリリースされるときに、Intune によって、新しいバージョンのアプリケーションを更新し、展開することができます。 展開のみを同じアプリの新しいバージョン (同じ識別子を使用) に置き換えることができます。 アプリの更新プログラムを使用して、別のアプリ パッケージで展開を更新することはできません。
 
-### アプリ識別子
+### <a name="app-identifiers"></a>アプリ識別子
 アプリ識別子は、アプリを一意に識別するプロパティです。 同じ識別子を持つアプリの複数のコピーをインストールすることはできません。 次に、アプリ ID の例をいくつか示します。
 
 - **iOS** - バンドル ID (例: com.microsoft.excel)
@@ -42,7 +45,7 @@ Microsoft Intune は、アプリの更新プログラムを管理するのに役
 > -   デバイスのユーザーに対して、ポータル サイトに移動し、インストールされているアプリを選択し、[**インストール**] を選択するように指示します。
 > -   展開アクションを [ **アンインストール**] に変更します。アプリがアンインストールされた後で、[ **利用可能なインストール**] の展開アクションでアプリを再展開します。
 
-### アプリを更新するには
+### <a name="to-update-an-app"></a>アプリを更新するには
 
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、[**アプリ**] &gt; [**アプリ**] の順に選びます。
 
@@ -59,6 +62,6 @@ Microsoft Intune は、アプリの更新プログラムを管理するのに役
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

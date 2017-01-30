@@ -1,5 +1,5 @@
 ---
-title: "Android 用の Pulse Secure を使用したアプリごとの VPN | Microsoft Intune"
+title: "Android 用の Pulse Secure を使用したアプリごとの VPN | Microsoft Docs"
 description: "Intune で管理する、アプリごとの VPN プロファイルを Android デバイスに作成できます。"
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
-ms.openlocfilehash: ace975b8a53e3ccd8b754019ec7f155c563339b5
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: afbb103f1deecff323d07c510f42a2083a4ea0d5
 
 
 ---
 
 # <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>カスタム ポリシーを使用して、Android デバイスにアプリごとの VPN プロファイルを作成する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune で管理する、アプリごとの VPN プロファイルを Android 5.0 以降のデバイスに作成できます。 最初に、Pulse Secure または Citrix 接続の種類を使用する VPN プロファイルを作成します。 次に、特定のアプリと VPN プロファイルを関連付けるカスタム構成ポリシーを作成します。 
 
@@ -70,14 +72,14 @@ Android デバイスまたはユーザー グループにポリシーをデプ�
 *両方*のポリシーは、*同じ* Intune グループに展開する必要があります。
 
 1.  **[ポリシー]** ワークスペースで、展開するポリシーを選び、**[展開の管理]** を選びます。
-2.   **[展開の管理]** ダイアログ ボックスで、次の操作を実行します。
+2.  **[展開の管理]** ダイアログ ボックスで、次の操作を実行します。
     -   **ポリシーを展開するには**、ポリシーを展開する 1 つ以上のグループを選択して、**[追加]** > **[OK]** の順に選択します。
     -   **ポリシーを展開せずにダイアログ ボックスを閉じるには**、**[キャンセル]** を選択します。
 
- **[ポリシー]** ワークスペースの **[概要]** ページに表示されるステータスの概要とアラートを見ると、注意が必要なポリシーの問題を識別できます。 ステータスの概要は **[ダッシュボード]** ワークスペースにも表示されます。
+**[ポリシー]** ワークスペースの **[概要]** ページに表示されるステータスの概要とアラートを見ると、注意が必要なポリシーの問題を識別できます。 ステータスの概要は **[ダッシュボード]** ワークスペースにも表示されます。
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

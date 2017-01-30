@@ -1,57 +1,40 @@
 ---
-title: "Windows デバイスを手動で同期する | Microsoft Intune"
+title: "Windows デバイスを手動で同期する | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 9561cf77e1569a6ab0da5d9b8e90e03ce5c9e998
+ms.sourcegitcommit: 9dd9a601f2e13a16157a43c28e77db6a6efd1619
+ms.openlocfilehash: 5584ec2d387830dcdcf6b06631996a0bade76014
 
 
 ---
 
-
 # <a name="sync-your-windows-device-manually"></a>Windows デバイスを手動で同期する
-アプリのインストールに時間がかかりすぎる場合は、Windows デバイスを手動で同期してみてください。 手動で同期すると、インストールを高速化できることがあります。
 
-次のバージョンのみがサポートされています。 デバイスがリストにない場合、同期はサポートされません。 お使いのデバイスの種類に対応した手順に従ってください。
+Windows デバイスにアプリをインストールしようとしたとき、予想より長くかかることがあります。 その場合は、手動で Windows デバイスの同期を試みることができます。 同期すると、インストールが速くなる可能性があります。
 
-* [Windows 10 Mobile](#windows-10-mobile)
-* [Windows 10 デスクトップ](#windows-10-desktop)
-* [Windows Phone 8.1](#windows-phone-81)
+> [!Note] 
+> 低速のネットワークを使っている場合、または同時に多数のデバイスにコンテンツをダウンロードする場合は、アプリのインストールに少し時間がかかることがあります。
 
+次のバージョンの Windows は手動で同期できます。 残念ながら、他のバージョンの Windows をデバイスが使っている場合は、手動同期を開始できません。
 
-## <a name="windows-10-mobile"></a>[Windows] 10 Mobile
-アプリのインストールを高速化するために Windows 10 Mobile デバイスを手動で同期するには:
-
-1. **[すべてのアプリ]** > **[設定]** > **[アカウント]** の順にタップします。
-
-    ![[設定] 画面の [アカウント] の選択](./media/win10m-sync-1-settings-accounts.png)
-
-2. **[職場のアクセス]** を選択します。
-
-    ![アカウントの種類として職場のアクセスを選択する](./media/win10m-sync-2-work-access.png)
-
-3. **[デバイス管理に登録する]** で、会社名を選択します。
-
-    ![デバイス管理の会社名の選択](./media/win10m-sync-3-tap-comp-name.png)
-
-4. **[同期]** アイコンを選択します。
-
-    ![[同期] アイコンの選択](./media/win10m-sync-4-tap-sync.png)
-
-    画面の上部に、"アカウントを同期中" というメッセージが表示されます。 同期が完了するまで、**[同期]** ボタンは灰色表示になります。
+* [Windows 10 Desktop を同期する](#windows-10-desktop)
+* [Windows 10 Mobile を同期する](#windows-10-mobile)
+* [Windows Phone 8.1 を同期する](#windows-phone-81)
 
 ## <a name="windows-10-desktop"></a>Windows 10 Desktop
 Windows 10 には複数のバージョンがあるため、2 つの手順があります。 スクリーンショットを確認し、お使いのデバイスの表示画面に近い方の手順に従ってください。
@@ -109,6 +92,27 @@ Windows 10 には複数のバージョンがあるため、2 つの手順があ�
 
    同期が完了するまで、このボタンは灰色表示になります。
 
+   ## <a name="windows-10-mobile"></a>[Windows] 10 Mobile
+   アプリのインストールを高速化するために Windows 10 Mobile デバイスを手動で同期するには:
+
+   1. **[すべてのアプリ]** > **[設定]** > **[アカウント]** の順にタップします。
+
+       ![[設定] 画面の [アカウント] の選択](./media/win10m-sync-1-settings-accounts.png)
+
+   2. **[職場のアクセス]** を選択します。
+
+       ![アカウントの種類として職場のアクセスを選択する](./media/win10m-sync-2-work-access.png)
+
+   3. **[デバイス管理に登録する]** で、会社名を選択します。
+
+       ![デバイス管理の会社名の選択](./media/win10m-sync-3-tap-comp-name.png)
+
+   4. **[同期]** アイコンを選択します。
+
+       ![[同期] アイコンの選択](./media/win10m-sync-4-tap-sync.png)
+
+       画面の上部に、"アカウントを同期中" というメッセージが表示されます。 同期が完了するまで、**[同期]** ボタンは灰色表示になります。
+
 ## <a name="windows-phone-81"></a>Windows Phone 8。1
 アプリのインストールを高速化するために Windows Phone 8.1 デバイスを手動で同期するには:
 
@@ -130,6 +134,6 @@ Windows 10 には複数のバージョンがあるため、2 つの手順があ�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

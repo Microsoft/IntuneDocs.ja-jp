@@ -1,11 +1,11 @@
 ---
-title: "ソフトウェアの更新に関するトラブルシューティング | Microsoft Intune"
+title: "ソフトウェアの更新に関するトラブルシューティング | Microsoft Docs"
 description: "Microsoft Intune でのソフトウェア更新に関する問題を解決します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 9c08ebe1a4cf1a7768b5dbecf7ffccdd7c8d8006
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 66ec65e856c0ab70264b797bb3ef7fe4f5673b54
 
 
 ---
 
-# Microsoft Intune でのソフトウェア更新のトラブルシューティング
+# <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Microsoft Intune でのソフトウェア更新のトラブルシューティング
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune のソフトウェア更新の問題を解決するには、このセクションの情報を参考にしてください。
 
 この情報で問題が解決しない場合、さらに役立つ方法を探すには、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」を参照してください。
 
-## 更新エージェントのエラー コード
+## <a name="update-agent-error-codes"></a>更新エージェントのエラー コード
 
 次の表に、Intune **更新エージェント**のエラー コードを示します。 発生したエラーのコードが、この表に見つからない場合は、「 [Windows Update Agent Result Codes (Windows 更新エージェントの結果コード)](http://go.microsoft.com/fwlink/?LinkID=221542)」を参照してください。
 
@@ -241,7 +244,7 @@ Microsoft Intune のソフトウェア更新の問題を解決するには、こ
 |**0x80af0005**|OMC_E_INSTALL_NOT_ALLOWED_REBOOT_REQUIRED|必要な再起動が保留中になっているため、インストールできませんでした。|
 |**0x80af0006**|OMC_E_DOWNLOAD_CANCELLED|ダウンロードが取り消されました。|
 
-## 置き換えられた更新プログラムが大量にある Windows 7 ベース コンピューターで Microsoft Intune コンソールへの報告が停止する
+## <a name="windows-7-based-computers-with-lots-of-superseded-updates-stop-reporting-to-the-microsoft-intune-console"></a>置き換えられた更新プログラムが大量にある Windows 7 ベース コンピューターで Microsoft Intune コンソールへの報告が停止する
 **問題**: Microsoft Intune クライアントで次の症状が 1 つ以上発生する場合があります。
 - 突然、Microsoft 管理コンソールに報告しなくなる。  
 - CPU 使用率が高くなる。
@@ -260,11 +263,11 @@ Microsoft Intune のソフトウェア更新の問題を解決するには、こ
 
 さらに、Windows 7 を実行している場合は、次の更新プログラムがインストールされていることを確認します。[3050265 Windows Update Client for Windows 7: June 2015](https://support.microsoft.com/kb/3050265)
 
-### 次のステップ
+### <a name="next-steps"></a>次のステップ
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

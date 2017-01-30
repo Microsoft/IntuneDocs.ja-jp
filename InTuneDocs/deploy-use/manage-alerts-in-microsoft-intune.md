@@ -1,5 +1,5 @@
 ---
-title: "アラートを管理する | Microsoft Intune"
+title: "アラートを管理する | Microsoft Docs"
 description: "Intune の [アラート] ワークスペースを使って、組織にあるデバイスの全体的なヘルスを評価します。"
 keywords: 
 author: arob98
@@ -15,13 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: b84a6e353103f35ad62fb95052c44581dd439963
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 67a7e25c8365970eb108b2529692a6f67c5de054
 
 
 ---
 
 # <a name="manage-alerts-in-microsoft-intune"></a>Microsoft Intune でアラートを管理する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune 管理コンソールで **[アラート]** ワークスペースを使用して、組織内のデバイスの全体的なヘルスを評価し、問題を特定します。
 
 ## <a name="view-active-alerts"></a>アクティブなアラートの表示

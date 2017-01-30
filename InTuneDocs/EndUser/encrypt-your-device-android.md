@@ -1,5 +1,5 @@
 ---
-title: "デバイスを暗号化する |Microsoft Intune"
+title: "デバイスを暗号化する | Microsoft Docs"
 description: "Android デバイスを暗号化する方法について説明します"
 keywords: 
 author: barlanmsft
@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
+searchScope:
+- Company Portal
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 81c0c29e1b874a7f5c7faa1c1216dbaa99ec4543
-ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 54439c96b75efd60e2068207eb1602e669504831
 
 
 ---
@@ -61,6 +63,6 @@ ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

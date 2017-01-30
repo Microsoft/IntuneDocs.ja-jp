@@ -1,5 +1,5 @@
 ---
-title: "証明書プロファイルを構成する | Microsoft Intune"
+title: "証明書プロファイルを構成する | Microsoft Docs"
 description: "Intune 証明書プロファイルを作成する方法について説明します。"
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: bafb86b1e388163c07110559e2a51bbe0dadc5ed
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f5b5bc13a834cb5071ebf875f3c5512c564efe93
 
 
 ---
 
 # <a name="configure-intune-certificate-profiles"></a>Intune 証明書プロファイルを構成する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 「[SCEP の証明書インフラストラクチャを構成する](configure-certificate-infrastructure-for-scep.md)」または「[PFX の証明書インフラストラクチャを構成する](configure-certificate-infrastructure-for-pfx.md)」の説明に従ってインフラストラクチャおよび証明書を構成した後、証明書プロファイルを作成できます。 その手順は次のとおりです。
 
 - **タスク 1** - 信頼されたルート CA 証明書をエクスポートする
@@ -141,7 +144,7 @@ Simple Certificate Enrollment Protocol (SCEP) または PKCS #12 (.PFX) 証明�
 Intune の他のポリシーをデプロイするのと同じ方法で、証明書プロファイルをデプロイします。
 
 1.  **[ポリシー]** ワークスペースで、展開するポリシーを選び、**[展開の管理]** を選びます。
-2.   **[展開の管理]** ダイアログ ボックスで、次の操作を実行します。
+2.  **[展開の管理]** ダイアログ ボックスで、次の操作を実行します。
     -   **ポリシーをデプロイするには**、ポリシーをデプロイする 1 つ以上のグループを選択して、**[追加]**&gt;**[OK]** の順に選択します。
     -   **ポリシーをデプロイせずにダイアログ ボックスを閉じるには**、**[キャンセル]** を選択します。
 
@@ -157,6 +160,6 @@ Intune の他のポリシーをデプロイするのと同じ方法で、証明�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "社内 EAS 用の Exchange Connector | Microsoft Intune"
+title: "社内 EAS 用の Exchange Connector | Microsoft Docs"
 description: "Connector ツールを使用して、Exchange ActiveSync MDM 用に、Intune 管理コンソールと社内の Exchange Server 間の通信を有効にします。"
 keywords: 
 author: andredm7
@@ -14,13 +14,15 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d50a5751a5afd987196336e9443dc5a429a283fd
-ms.openlocfilehash: 58c5ab6b506695fb5b0f7556dc1deac39580f59b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1b74d19762a81313325eac27cab50a144a569620
 
 
 ---
 
 # <a name="install-the-intune-on-premises-exchange-connector"></a>Intune の内部設置型 Exchange Connector のインストール
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 
 モバイル デバイスのメールボックスをホストする Exchange Server と Microsoft Intune が通信できるように接続をセットアップするには、Intune 管理コンソールで内部設置型 Exchange Connector をダウンロードして構成する必要があります。 Intune は、サブスクリプションごとに任意の種類の Exchange Connector 接続を 1 つだけサポートします。
@@ -93,10 +95,10 @@ Intune Exchange Connector が使用する Active Directory ユーザー アカ�
 
     2. 左上の **?**  アイコンを選択し、**[バージョン情報]** を選択します。
 
-    3.  **[POP 外部サーバー]** の値を探します。
+    3. **[POP 外部サーバー]** の値を探します。
 
     4. **[プロキシ サーバー]** を選んで、ホスト型 Exchange サーバーのプロキシ サーバー設定を指定します。
-        1.  **[モバイル デバイス情報を同期するときにプロキシ サーバーを使用する]**を選択します。
+        1. **[モバイル デバイス情報を同期するときにプロキシ サーバーを使用する]**を選択します。
 
         2. サーバーへのアクセスに使用する **[プロキシ サーバー名]** と **[ポート番号]** を入力します。
 

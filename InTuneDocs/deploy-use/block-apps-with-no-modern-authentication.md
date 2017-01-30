@@ -1,9 +1,9 @@
 ---
-title: "最新の認証を使用していないアプリをブロックする | Microsoft Intune"
+title: "最新の認証を使用していないアプリをブロックする | Microsoft Docs"
 description: 
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/15/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: 098b652c-01e0-45d1-a731-620b0d3dc7c1
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5083cb49e7a98f19ff21c1972149b00aee4ec93e
-ms.openlocfilehash: 8c2718da6f90f18ffbaa6a977dfca7fbc9a1bb09
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 0e1fa2341c0f74492a0ef80d0054922052bbe561
 
 
 ---
 
-# 最新の認証を使用していないアプリをブロックする (ADAL)
+# <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>最新の認証を使用していないアプリをブロックする (ADAL)
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 MAM ポリシーを使用したアプリの条件付きアクセス (MAM CA) は、OAuth2 の実装である[最新の認証](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)を使用するアプリケーションに依存しています。 最新の Office モバイル アプリとデスクトップ アプリケーションは最新の認証を使用していますが、基本認証やフォームベースの認証など、他の認証方式を使用しているサードパーティ製アプリや古い Office アプリもあります。
 
 このようなアプリに対するアクセスをブロックするには、以下を推奨します。
@@ -32,11 +35,11 @@ MAM ポリシーを使用したアプリの条件付きアクセス (MAM CA) は
 
 
 
-### 関連項目
+### <a name="see-also"></a>関連項目
 [Intune でサポートされているアプリにのみ Office 365 サービスへのアクセスを許可する](allow-policy-managed-apps-access-to-o365.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

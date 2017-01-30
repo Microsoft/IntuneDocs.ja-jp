@@ -1,5 +1,5 @@
 ---
-title: "アプリと MAM CA の使用 | Microsoft Intune"
+title: "アプリと MAM CA の使用 | Microsoft Docs"
 description: "MAM CA を利用して、O365 サービスに対してアクセス権を持つアプリを制御する方法の概念について説明します。"
 keywords: 
 author: andredm7
@@ -14,12 +14,15 @@ ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 317d101c34854fdf4913adcf53bdef614599deb7
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 22746475bf50f8e4775c81e6833428c7f2ef9eba
 
 
 ---
 # <a name="what-to-expect-when-using-an-app-with-mam-ca"></a>アプリと MAM CA を使用する場合の結果
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 MAM CA は、デバイス上に必ずあるブローカー アプリを利用して、承認されたアプリケーションの ID を確認します。
 *  **iOS** の場合、**Azure Authenticator アプリ**がブローカー アプリです。
 * **Android** の場合、**Intune ポータル サイト アプリ**がブローカー アプリです。 

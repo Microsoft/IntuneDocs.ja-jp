@@ -1,11 +1,11 @@
 ---
-title: "アプリを展開する | Microsoft Intune"
+title: "アプリを展開する | Microsoft Docs"
 description: "このトピックでは、Intune を使用してアプリの展開を開始する前に理解する必要がある概念について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,20 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: eedf7db0a974f9a0aa0a21b27b64ed8b4a91b378
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: efa8245020b961797405a6f8b90df7e7b172b4c3
 
 
 ---
 
-# Microsoft Intune を使用してアプリを展開する
+# <a name="deploy-apps-with-microsoft-intune"></a>Microsoft Intune を使用してアプリを展開する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 このトピックでは、Microsoft Intune を使用してアプリの展開を開始する前に理解する必要がある概念について説明します。
 
 
-## アプリの展開操作
+## <a name="app-deployment-actions"></a>アプリの展開操作
 アプリを展開する場合は、次のような展開操作のいずれかから選択できます。
 
 -   **必須のインストール** – ユーザーの介入なしで、デバイス上にアプリがインストールされます。
@@ -41,7 +43,7 @@ ms.openlocfilehash: eedf7db0a974f9a0aa0a21b27b64ed8b4a91b378
 
 -   **該当なし** – アプリはポータル サイトに表示されず、どのデバイスにもインストールされません。
 
-#### 各インストーラーの種類で利用できる展開アクションを理解する
+#### <a name="understand-which-deployment-actions-are-available-for-each-installer-type"></a>各インストーラーの種類で利用できる展開アクションを理解する
 
 |インストーラーの種類|必須のインストール|利用可能なインストール|[アンインストール]|該当なし|
 |------------------|--------------------|---------------------|-------------|------------------|
@@ -58,7 +60,7 @@ ms.openlocfilehash: eedf7db0a974f9a0aa0a21b27b64ed8b4a91b378
 > [!TIP]
 > アプリを展開するときに、ユーザーとデバイス グループの両方を選択した場合、アプリは **[利用可能なインストール]** としてのみ展開できます。
 
-## 展開の競合
+## <a name="deployment-conflicts"></a>展開の競合
 同じ展開操作によって 2 回の展開を行うと、1 つのデバイスで受信され、次の規則が適用されます。
 
 -   デバイス グループへの展開はユーザー グループへの展開より優先されます。 ただし、**利用可能**な展開のアクションでユーザー グループにアプリを展開し、同じアプリをデバイス グループに、**該当なし**の展開操作で展開すると、このアプリは、ユーザーがポータル サイトからインストールできるようになります。
@@ -68,12 +70,12 @@ ms.openlocfilehash: eedf7db0a974f9a0aa0a21b27b64ed8b4a91b378
 -   1 つのデバイスで、必須のインストールと利用可能なインストールを受信した場合は、この 2 つの操作が組み合わされます。 別の言い方をすると、ユーザーは利用可能なアプリを必須のインストールが開始する前にポータル サイトからインストールできます。
 
 
-## 次のステップ
+## <a name="next-steps"></a>次のステップ
 
 [Microsoft Intune でアプリを展開する](deploy-apps-in-microsoft-intune.md)方法を知る
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

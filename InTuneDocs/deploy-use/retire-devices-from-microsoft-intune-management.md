@@ -1,11 +1,11 @@
 ---
-title: "デバイスをインベントリから削除する | Microsoft Intune"
+title: "デバイスをインベントリから削除する | Microsoft Docs"
 description: "Intune では、デバイスのポリシーとポータル サイトを削除することによって Intune の管理対象からデバイスを削除する選択的ワイプとフル ワイプの両方をサポートします。"
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 12/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,21 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
-ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
+ms.sourcegitcommit: 464e6d73765a75aaefb3eca95281bf54b4cc7a2d
+ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
 
 
 ---
 
 # <a name="retire-devices-from-intune-management"></a>Intune の管理からデバイスを削除する
 
-会社所有のデバイスであっても個人所有のデバイスであっても、デバイスを Intune の管理対象から削除することが必要となる場合があります。 デバイスの削除が必要になる理由はさまざまです。
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+会社所有のデバイスであっても個人所有のデバイスであっても、デバイスを Intune の管理対象から削除することが必要となる場合があります。 
+
+デバイスが一定期間 Intune サービスに接続されていない場合でも、ユーザーが手動で削除しなければ、Intune からデバイスが削除されることはありません。 
+
+デバイスの削除が必要になる理由はさまざまです。
 
 -   ユーザーが予定どおりに退社する ("管理された" 退職)
 -   ユーザーが急に退社する (解雇や辞職など)
@@ -70,6 +76,6 @@ Intune クライアント ソフトウェアによって管理されているコ
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Windows デバイスを Intune で使用する | Microsoft Intune"
+title: "Windows デバイスを Intune で使用する | Microsoft Docs"
 description: "Windows デバイスが Intune で登録されている場合にユーザーがデバイスで実行できるタスクへのリンクの一覧"
 keywords: 
 author: barlanmsft
@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0de5f03a-c288-423b-b9ea-493a39eb715a
+searchScope:
+- Company Portal
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 05eb711e65e6db13e480a966849e7f39d3ec8c71
+ms.sourcegitcommit: 8611566f5f5d33b7f0937fabd15892353953df77
+ms.openlocfilehash: a3433e1976063513ee836189738ff02d85d40044
 
 
 ---
@@ -52,15 +54,15 @@ ms.openlocfilehash: 05eb711e65e6db13e480a966849e7f39d3ec8c71
 
 このセクションの情報は、Windows デバイスを Intune に登録した場合に発生する可能性がある問題を解決するのに役立ちます。
 
-- [デバイスに最低限必要なバージョンのオペレーティング システムがインストールされていない](device-doesnt-have-the-required-minimum-operating-system-version-windows.md)
-- [デバイスが最新のオペレーティング システムのバージョンに準拠していない](device-doesnt-comply-with-maximum-operating-system-version-windows.md)
-- [デバイスで BitLocker が有効ではない](device-doesnt-have-bitlocker-enabled-windows.md)
-- [デバイスでマルウェア対策ソフトウェアが有効ではない](device-doesnt-have-antimalware-software-enabled-windows.md)
-- [デバイスでセキュア ブートが有効ではない](device-doesnt-have-secure-boot-enabled-windows.md)
-- [デバイスでコードの整合性が有効ではない](device-doesnt-have-code-integrity-enabled-windows.md)
+- [デバイスに最低限必要なバージョンのオペレーティング システムがインストールされていない](you-need-to-update-your-windows-device.md)
+- [デバイスが最新のオペレーティング システムのバージョンに準拠していない](your-windows-version-isnt-yet-supported.md)
+- [デバイスで BitLocker が有効ではない](you-need-to-enable-windows-encryption.md)
+- [デバイスでマルウェア対策ソフトウェアが有効ではない](your-device-needs-antimalware-software.md)
+- [デバイスでセキュア ブートが有効ではない](you-need-to-enable-secure-boot-windows.md)
+- [デバイスでコードの整合性が有効ではない](you-need-to-enable-code-integrity.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

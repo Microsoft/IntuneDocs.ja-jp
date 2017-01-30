@@ -1,5 +1,5 @@
 ---
-title: "企業所有の iOS デバイスの登録 | Microsoft Intune"
+title: "企業所有の iOS デバイスの登録 | Microsoft Docs"
 description: "Apple Device Enrollment Program (DEP) または Apple Configurator を使用した企業所有の iOS デバイスの登録"
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 00ca6ea06aa63646d6ede6337f8e70d1ab956c5f
-ms.openlocfilehash: cfc97f4ed931a5c7dc5b38eafd0a2d081bc30975
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: fdaeddae669a5b519973117b9adf676b43ce1aa1
 
 
 ---
 
 # <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>Microsoft Intune での企業所有の iOS デバイスの登録
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune は、Mac コンピューターで実行される Apple Device Enrollment Program (DEP) または [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) ツールによる、企業所有の iOS デバイスの登録をサポートします。
 
 **前提条件:** [Apple Push Notification サービス証明書](set-up-ios-and-mac-management-with-microsoft-intune.md)が必要です。
@@ -81,6 +84,6 @@ DEP では、DEP を通じて購入したデバイスに "無線で" 登録プ�
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

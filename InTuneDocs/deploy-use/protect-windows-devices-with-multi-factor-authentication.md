@@ -1,11 +1,11 @@
 ---
-title: "Windows の多要素認証 | Microsoft Intune"
+title: "Windows の多要素認証 | Microsoft Docs"
 description: "Intune には多要素認証 (MFA) 機能があり、会社のリソースのセキュリティ保護に利用できます。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/15/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,22 @@ ms.assetid: 9b4f197d-bc10-4bee-91c9-19bcc8287d36
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1bfd17f9fcc73049254bc77351eae48da874fb4c
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: cc60ffb2cd7a1d0cad141712ba7e2341954b1f02
 
 
 ---
 
 # <a name="protect-windows-devices-with-multi-factor-authentication"></a>Protect Windows devices with multi-factor authentication
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune には多要素認証 (MFA) 機能があり、会社のリソースをセキュリティ保護に利用できます。 MFA には、ユーザー名とパスワードだけでなくテキスト認証などの認証の要素が必要です。 Intune では、Windows 8.1 以降、Windows Phone 8.1、Windows 10 のデスクトップとモバイル デバイスの登録で、MFA を利用できます。
+
+>[!NOTE]
+>
+>MFA は、ADFS サーバーでユーザーまたはグループごとに要求されます。  
+
 
 ## <a name="on-premises-infrastructure-requirements-for-adfs-mfa"></a>内部設置型インフラストラクチャの ADFS MFA の要件
 Multi-Factor Authentication をセットアップするうえで必要なものは次のとおりです。
@@ -40,6 +48,7 @@ Multi-Factor Authentication をセットアップするうえで必要なもの�
 組織に Active Directory フェデレーション サービス (ADFS) が構成された Active Directory ドメインを含むオンプレミスの IT インフラストラクチャが存在する場合、フェデレーション サーバーで MFA をセットアップして、Intune 登録のために MFA を有効にできます。 Intune で MFA を構成すると、ユーザーは登録時に一度認証すれば、その後、毎回 MFA プロセスを繰り返さなくても、企業リソースを使用できます。
 
 >[!NOTE]
+>
 >MFA は、ADFS サーバーでユーザーまたはグループごとに要求されます。  
 
 #### <a name="mfa-without-intune"></a>MFA (Intune なし)
@@ -60,6 +69,6 @@ ADFS で MFA を有効にする方法の詳細については、「 [追加の�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO5-->
 
 

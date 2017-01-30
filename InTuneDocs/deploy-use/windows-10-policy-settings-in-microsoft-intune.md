@@ -1,5 +1,5 @@
 ---
-title: "Windows 10 ポリシー設定 | Microsoft Intune"
+title: "Windows 10 ポリシー設定 | Microsoft Docs"
 description: "このトピックのポリシー設定の一覧を、登録済みの Windows 10 デスクトップおよび Windows 10 Mobile デバイスの組み込み設定およびユーザー設定構成に役立ててください。"
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 8c970a4d1362def67e17da656b5e12e5bab2667b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 5a1a861096bdfae461b6ad05e424f770796279a2
 
 
 ---
 
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune での Windows 10 デバイス向けの Intune ポリシー設定
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 このトピックには、Windows 10 デバイスの管理に使用できる Intune ポリシー設定を理解するのに役立つ情報が含まれています。 「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」にある手順とともにこのトピックを参照して、登録済みの Windows 10 デスクトップ、および Windows 10 Mobile デバイスの組み込みおよびカスタムの設定を構成してください。 これらのポリシーは、[Intune PC クライアント ソフトウェア](/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune)を実行する PC では使用できません。
 

@@ -1,11 +1,11 @@
 ---
-title: "ユーザーとデバイスの管理にグループを使用する | Microsoft Intune"
+title: "ユーザーとデバイスの管理にグループを使用する | Microsoft Docs"
 description: "グループ ワークスペースを使用してグループを作成および管理します。"
 keywords: 
 author: Mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,78 +14,26 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 46fd83ac8048a313b0fe4f15e01563698bf7995c
+ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
+ms.openlocfilehash: 59e376202ee268a9b99c017f813a7ef870e79548
 
 
 ---
 # <a name="use-groups-to-manage-users-and-devices-in-microsoft-intune"></a>Microsoft Intune でユーザーとデバイスの管理にグループを使用する
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ここでは、Intune でグループを作成する方法について説明します。 また、今後数か月間におけるグループ管理の変更予定についても説明します。 
 
 >[!IMPORTANT]
 >
->Intune ポータルでグループ ワークスペースを開き、Azure Active Directory (Azure AD) ポータルへのリンクを確認すると、Intune でのグループ管理に*新しい* Azure AD セキュリティ グループのアプローチが既に使用されています (「[グループの管理エクスペリエンスに対して予定されている改善点に関するお知らせ](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups)」を参照)。 グループを作成して管理するには、Azure AD ポータルへのリンクをクリックします。
+>Intune ポータルでグループ ワークスペースを開き、Azure Active Directory (Azure AD) ポータルへのリンクを確認すると、Intune でのグループ管理に*新しい* Azure AD セキュリティ グループのアプローチが使用されています (「[Azure Active Directory グループへの移行](migrating-groups-to-azure-active-directory.md)」を参照)。 グループを作成して管理するには、Azure AD ポータルへのリンクをクリックします。
 >
 >![Azure グループの管理へのリンクのスクリーン ショット](../media/groups-link-azure.png) 
 >
 >Azure AD ポータルへのリンクが表示されない場合は、まだ*現在の*グループ管理アプローチを使用しています (このトピックの「[Microsoft Intune でユーザーとデバイスを管理するためのグループを作成する](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune)」を参照)。
 
-
-## <a name="notice-of-upcoming-improvements-to-the-admin-experience-for-groups"></a>グループの管理エクスペリエンスに対して予定されている改善点に関するお知らせ
-
-Enterprise Mobility + Security 全体でグループ化とターゲット設定の操作環境を統一してほしいという要望が寄せられています。 それにお応えします。 フィードバックに基づき、間もなく Intune のグループを Azure Active Directory ベースのセキュリティ グループに変換します。 この変更により、Intune と Azure Active Directory (Azure AD) のグループ管理が統一されます。 新しい操作環境では、サービス間でグループを複製する必要がなくなります。 また、Windows PowerShell と Microsoft Graph を使用するオプションによる拡張性も提供されます。
-
-### <a name="how-does-this-affect-me-right-now"></a>現時点での影響
-既に Intune をご利用の場合、現時点では、この変更による影響はありません。 ただし、次のことが予定されています。
-
--   新規アカウントは、Intune の*ユーザー* グループではなく、Azure AD セキュリティ グループを使用するようになります。   
--   2016 年 11 月の月例サービス リリース後にプロビジョニングされる新しいアカウントでは、ユーザー ベースのグループとデバイス ベースのグループの両方が Azure AD ポータルで管理されるようになります。 既存のお客様への影響はありません。
--   2016 年 12 月には、Intune 製品チームは既存顧客の新しい Azure AD ベースのグループ管理操作環境への移行を開始します。 現在 Intune に存在するすべてのユーザー グループとデバイス グループが、Azure AD セキュリティ グループに移行されます。 お客様の日常業務への影響を最小限に抑えることができ、お客様のユーザーに影響がないものと予想されるまで、移行は開始されません。 また、アカウント移行前にはお客様にご連絡します。
-
-
-### <a name="how-and-when-will-i-migrate-to-the-new-groups-experience"></a>新しいグループ エクスペリエンスへの移行の方法と時期
-現在の Intune ユーザーは時間をかけて移行されます。 現在は移行スケジュールの最終処理を行っており、このトピックは、詳細情報をお知らせするため、数週間以内に更新されます。 移行の前には通知が送られます。 移行に問題がある場合は、移行チーム ([intunegrps@microsoft.com](mailto:intunegrps@microsoft.com)) に問い合わせてください。 グループの移行方法の詳細については、「[Azure Active Directory への移行](migrating-groups-to-azure-active-directory.md)」を参照してください。
-
-### <a name="what-happens-to-my-existing-user-and-device-groups"></a>既存のユーザー グループとデバイス グループに対する影響
- Intune で作成されているユーザー グループとデバイス グループは、Azure AD セキュリティ グループに移行されます。 既定の Intune グループ (すべてのユーザー グループなど) は、移行時に展開で使用されている場合にのみ移行されます。 一部のグループについては移行がさらに複雑になる場合があります。 移行に追加手順が必要な組織にはご連絡します。
-
-### <a name="what-new-features-will-be-available-to-me"></a>使用できるようになる新機能
-Intune から Azure Active Directory へのこの移行によって導入される新しい機能は次のとおりです。
-
--    すべての種類の展開について、Azure AD セキュリティ グループが Intune でサポートされるようになります。
--    Azure AD セキュリティ グループは、デバイスとユーザーのグループ化をサポートするようになります。
--    Azure AD セキュリティ グループは、Intune のデバイス属性を持つ動的グループをサポートするようになります。 たとえば、iOS などのプラットフォーム別に動的にデバイスをグループ化できるようになります。 組織で新しい iOS デバイスが登録されると、iOS 動的デバイス グループに自動的に追加されるようになります。
--    Azure AD と Intune 全体に一貫したグループ管理の操作環境が提供されます。
-- Intune サービス管理者ロールが Azure AD に追加されるため、Intune のサービス管理者は Azure AD でグループ管理タスクを実行できるようになります。
-
-### <a name="what-intune-functionality-wont-be-available"></a>使用できない Intune の機能
-グループ操作環境は向上しますが、Intune グループから Azure AD セキュリティ グループへの移行後に利用できなくなる Intune の機能がいくつかあります。
-
-#### <a name="group-management-functionality"></a>グループ管理機能
-
--   移行後には、新しいグループを作成するときにメンバーまたはグループを除外できなくなります。 ただし、Azure AD の動的なグループでは、属性を使用して高度なルールを作成し、設定した条件に基づいてグループからメンバーを除外するために使用できます。
--   グループに属していないユーザー グループとグループに属していないデバイス グループは、サポートされなくなります。 これらのグループは Intune から Azure AD に移行されません。
-
-
-#### <a name="group-dependent-functionality"></a>グループに依存する機能
-
--   サービス管理者の役割は、**グループ管理**アクセス許可を持ちません。
--   Exchange ActiveSync デバイスをグループ化することはできません。 Exchange ActiveSync で管理されているすべてのデバイス グループは、グループ ビューからレポート ビューに変換されます。
--  レポートでのグループによるピボット処理は使用できません。
--  カスタム グループを対象とした通知規則は使用できません。
-
-### <a name="what-should-i-do-to-prepare-for-this-change"></a>この変更に対する準備
- 簡単に切り替えができるように以下のことをお勧めします。
-
-- 移行の前に、不要な Intune グループをクリーンアップします。
-- グループでの除外の使用を評価して、除外を使用する必要がないようにグループの再設計を検討します。
--  Azure AD でのグループ作成権限を持たない管理者がいる場合は、Azure AD 管理者に依頼して、その管理者を Intune サービス管理者の Azure AD ロールに追加します。
-
-
-## <a name="create-groups-to-manage-users-and-devices-with-microsoft-intune"></a>Microsoft Intune でユーザーとデバイスを管理するためのグループを作成する
-
-このセクションでは、Intune 管理コンソールで Intune グループを作成する方法について説明します。
+このトピックでは、Intune 管理コンソールで Intune グループを作成する方法について説明します。
 
 Microsoft Intune 管理コンソールの **[グループ]** ワークスペースで、グループを作成して管理できます。 **[グループの概要]** ページに表示される状態の概要を参照して、注意が必要な問題を特定し、優先順位を指定することができます。 状態の概要には以下の情報が表示されます。
 
@@ -108,7 +56,7 @@ Microsoft Intune 管理コンソールの **[グループ]** ワークスペー�
 >
 > 制限の厳しいポリシーを作成する場合は、その都度ユーザーとのやり取りが必要になります。 一般的なグループとポリシーを作成した後でより小さなグループを作成する場合は、不要なやり取りを減らせるように、注意を払ってください。
 
-### <a name="to-create-a-device-group"></a>デバイス グループを作成するには
+## <a name="to-create-a-device-group"></a>デバイス グループを作成するには
 
 1.  Intune 管理コンソールで、**[グループ]** &gt; **[概要]** &gt; **[グループの作成]** の順に選択します。
 
@@ -128,7 +76,7 @@ Microsoft Intune 管理コンソールの **[グループ]** ワークスペー�
 
 新しく作成したグループは、**[グループ]** ワークスペースの **[グループ]** 一覧の、親グループの下に表示されます。 ここからは、グループを編集または削除することもできます。
 
-### <a name="to-create-a-user-group"></a>ユーザー グループを作成するには
+## <a name="to-create-a-user-group"></a>ユーザー グループを作成するには
 
 1.  Intune 管理コンソールで、**[グループ]** &gt; **[概要]** &gt; **[グループの作成]** の順に選択します。
 
@@ -205,6 +153,6 @@ Microsoft Intune 管理コンソールの **[グループ]** ワークスペー�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

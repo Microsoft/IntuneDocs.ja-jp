@@ -1,5 +1,5 @@
 ---
-title: "ポリシーを使用してデバイスの設定を管理する | Microsoft Intune"
+title: "ポリシーを使用してデバイスの設定を管理する | Microsoft Docs"
 description: "Intune を使用して、管理する登録デバイスの設定と機能を制御するポリシーを作成して展開します。"
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0238350139837a06a48d0bff7c53e4c39e07168c
-ms.openlocfilehash: b2cba92c4cf75412b562267aef9d6a138f25952b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f153e3a58f9655bd1e36094f292098c9f55742b6
 
 
 ---
 
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune の*ポリシー*は、モバイル デバイスとコンピューターの機能を制御する設定のグループです。 ポリシーは、推奨設定やカスタム設定を含むテンプレートを使用することで作成し、デバイスまたはユーザー グループに展開します。
 
 ## <a name="types-of-policies"></a>ポリシーの種類
@@ -86,7 +89,7 @@ Intune ポリシーの一覧については、「[Microsoft Intune policy refere
 
 1.  **[ポリシー]** ワークスペースで、展開するポリシーを選び、**[展開の管理]** を選びます。
 
-2.   **[展開の管理]** ダイアログ ボックスで、次の操作を実行します。
+2.  **[展開の管理]** ダイアログ ボックスで、次の操作を実行します。
 
     -   ポリシーを展開するには、ポリシーを展開する対象となる 1 つ以上のグループを選択して、**[追加]** &gt; **[OK]** の順に選択します。
 
@@ -211,6 +214,6 @@ Intune は Apple 構成ファイルのペイロードまたはカスタム Open 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

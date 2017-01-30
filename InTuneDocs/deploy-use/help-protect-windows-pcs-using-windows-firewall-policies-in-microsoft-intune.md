@@ -1,11 +1,11 @@
 ---
-title: "Windows PC 用ファイアウォール ポリシー | Microsoft Intune"
+title: "Windows PC 用ファイアウォール ポリシー | Microsoft Docs"
 description: "Intune を使用すると、Intune クライアントで管理する PC をさまざまな方法で保護することができます。たとえば、Windows ファイアウォールの設定を構成できます。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,20 @@ ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 3faede4b60ac989e688b87ddb8112aebcf4c56ef
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: bad0d8867602baf69dc398cc06b91ca30b24c487
 
 
 ---
 
-# Microsoft Intune で Windows ファイアウォール ポリシーを使用して Windows PC を保護する
+# <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Microsoft Intune で Windows ファイアウォール ポリシーを使用して Windows PC を保護する
 Microsoft Intune を使用すると、Intune クライアントで管理する Windows PC をさまざまな方法で保護することができます。 たとえば、PC で Windows ファイアウォールの設定を構成できるようにするポリシーを提供できます。
 
 まだ Intune Windows PC クライアントをコンピューターにインストールしていない場合は、「[Microsoft Intune を使用して Windows PC クライアントをインストールする](install-the-windows-pc-client-with-microsoft-intune.md)」を参照してください。
 
 Windows PC で Windows ファイアウォール ポリシーを構成、展開、監視する方法については、以下のセクションの情報を参照してください。
 
-## Intune ポリシーを使用して Windows ファイアウォールを管理する
+## <a name="use-intune-policies-to-manage-windows-firewall"></a>Intune ポリシーを使用して Windows ファイアウォールを管理する
 Windows ファイアウォール ポリシーを使用すると、管理された PC の Windows ファイアウォールを制御する設定を作成し、展開することができます。 Windows ファイアウォールのカスタム例外を管理することはできません。また、これらの設定はサードパーティ製ファイアウォールには影響しません。
 
 > [!NOTE]
@@ -41,7 +41,7 @@ Windows ファイアウォール ポリシーを使用すると、管理され�
 > -   Windows ファイアウォール
 > -   IPSec ポリシー エージェント
 
-## Windows ファイアウォール ポリシーの構成
+## <a name="configure-a-windows-firewall-policy"></a>Windows ファイアウォール ポリシーの構成
 
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[ポリシー]** &gt; **[ポリシーの追加]** を選択します。
 
@@ -51,9 +51,9 @@ Windows ファイアウォール ポリシーを使用すると、管理され�
 
 Windows ファイアウォール ポリシーを展開したら、**[ポリシー]** ワークスペースの **[すべてのポリシー]** ページでその状態を確認できます。
 
-## Windows ファイアウォールのポリシー設定を指定する
+## <a name="specify-policy-settings-for-windows-firewall"></a>Windows ファイアウォールのポリシー設定を指定する
 
-### Windows ファイアウォールを有効にする
+### <a name="turn-on-windows-firewall"></a>Windows ファイアウォールを有効にする
 
 これらのポリシー設定は、次のような管理対象コンピューターで Windows ファイアウォールを有効にします。
 - ドメインに接続されている (職場など)
@@ -64,7 +64,7 @@ Windows ファイアウォール ポリシーを展開したら、**[ポリシ�
 
 
 
-### 許可されたプログラムの一覧にあるプログラムからの接続も含み、すべての着信をブロックする
+### <a name="block-all-incoming-connections-including-those-in-the-list-of-allowed-programs"></a>許可されたプログラムの一覧にあるプログラムからの接続も含み、すべての着信をブロックする
 
 これらのポリシー設定は、次のような管理対象コンピューターで着信ネットワーク トラフィックをブロックするように Windows ファイアウォールを構成します。
 - ドメインに接続されている (職場など)
@@ -76,7 +76,7 @@ Windows ファイアウォール ポリシーを展開したら、**[ポリシ�
 > [!IMPORTANT]
 > 管理されているコンピューターの中に、サービスパックなしの Windows Vista を実行しているものがある場合は、Microsoft サポート技術情報の[記事 971800](http://go.microsoft.com/fwlink/?LinkId=188405) にある更新プログラムをダウンロードしてインストールするか、これらのコンピューターに展開するポリシーの **[すべてのプログラムからの接続をブロックする]** 設定を無効にする必要があります。
 
-### Windows ファイアウォールが新しいプログラムをブロックしたときにユーザーに通知する
+### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>Windows ファイアウォールが新しいプログラムをブロックしたときにユーザーに通知する
 
 これらのポリシー設定は、次のような管理対象コンピューターで着信ネットワーク トラフィックをブロックしたときに Windows ファイアウォールが PC ユーザーに通知するかどうかを決定します。
 - ドメインに接続されている (職場など)
@@ -86,7 +86,7 @@ Windows ファイアウォール ポリシーを展開したら、**[ポリシ�
 これらの各設定の既定値は **[はい]** です。
 
 
-### 定義済みの例外を構成する
+### <a name="configure-predefined-exceptions"></a>定義済みの例外を構成する
 
 前に構成した値に関係なく特定の種類のネットワーク トラフィックがファイアウォールを通過するのを許可する例外を構成することができます。 既定では、いずれの設定も構成されません。
 
@@ -126,15 +126,15 @@ Windows ファイアウォール ポリシーを展開したら、**[ポリシ�
 |**Windows ミーティング スペース**|ユーザーはネットワークを経由でドキュメント、プログラム、およびデスクトップを他のユーザーと共有して共同作業できるようになります。 この設定は、分散ファイル システム レプリケーション (DFSR) と P2P を使用します。|
 |**Windows ピア ツー ピア共同作業ファンデーション**|さまざまなピア ツー ピア プログラムやテクノロジが接続できるように構成します。 この設定は SSDP と PNRP を使用します。|
 |**Windows リモート管理 (互換)**|オペレーティング システムとデバイスのリモート管理用の Web サービス ベースのプロトコルである WS-Management を使用して、管理されたコンピューターをリモート管理できるようになります。|
-|**[Windows リモート管理]**<br>(Windows 8 以降)|オペレーティング システムとデバイスのリモート管理用の Web サービス ベースのプロトコルである WS-Management を使用して、管理されたコンピューターをリモート管理できるようになります。|
+|**Windows リモート管理**<br>(Windows 8 以降)|オペレーティング システムとデバイスのリモート管理用の Web サービス ベースのプロトコルである WS-Management を使用して、管理されたコンピューターをリモート管理できるようになります。|
 |**Windows Virtual PC**<br>(Windows 7 以降)|仮想マシンが他のコンピューターと通信できるようになります。|
 |**ワイヤレス ポータブル デバイス**|メディア転送プロトコル (MTP) を使用して、ネットワーク対応のカメラまたはメディア デバイスから、管理されたコンピューターにメディアを転送できるようになります。 この設定は、SSDP および UPnP ネットワーク プロトコルを使用します。|
 
-### 関連項目
+### <a name="see-also"></a>関連項目
 [Windows PC を保護するためのポリシー](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

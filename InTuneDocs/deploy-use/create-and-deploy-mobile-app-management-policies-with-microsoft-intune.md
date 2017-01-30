@@ -1,9 +1,9 @@
 ---
-title: "MAM ポリシーの作成と展開 | Microsoft Intune"
+title: "MAM ポリシーの作成と展開 | Microsoft Docs"
 description: "モバイル アプリ管理ポリシーを作成して展開するには、このトピックのステップ バイ ステップの指示に従ってください。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 05b898ffdd0b76eb04d344adb3cfb20ec15aeb52
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: 3e077bfa8a03526b9472b4e9fdd4a75da22c28c8
 
 
 ---
 
 # <a name="create-and-deploy-mobile-app-management-policies-with-microsoft-intune"></a>Microsoft Intune でのモバイル アプリ管理ポリシーの作成および展開
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 モバイル アプリ管理 (MAM) ポリシーは、デバイスを Intune で管理できるかできないかに関係なく、デバイスで実行されるアプリに適用できます。 MAM ポリシーの動作方法と Intune MAM ポリシーがサポートするシナリオの詳細については、[モバイル アプリ管理ポリシーを使用するアプリ データの保護](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)に関するトピックを参照してください。
 
 このトピックでは、**Azure ポータル**で MAM ポリシーを作成するプロセスについて説明します。 Azure Portal は MAM ポリシーを作成するための新しい管理コンソールです。このポータルを使用して、MAM ポリシーを作成することをお勧めします。 Azure ポータルでは、次の MAM シナリオをサポートします。
@@ -173,6 +176,6 @@ iOS と Android 用のポリシー設定の完全な一覧を表示するには�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

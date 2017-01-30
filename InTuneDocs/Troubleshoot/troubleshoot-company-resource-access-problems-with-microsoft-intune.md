@@ -1,11 +1,11 @@
 ---
-title: "会社のリソースへのアクセスに関する問題のトラブルシューティング | Microsoft Intune"
+title: "会社のリソースへのアクセスに関する問題のトラブルシューティング | Microsoft Docs"
 description: "このトピックに記載されているエラー コードと状態コードは、リソースのアクセスに関する問題のトラブルシューティングに役立ちます。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/22/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 03f7433bc46d6a24498104bed7e5f1f366aca890
-ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 2640df8eb3f8505320f965ee1f6edbf5d4f8cfe7
 
 
 ---
 
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Microsoft Intune での会社のリソースへのアクセスに関する問題のトラブルシューティング
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune の操作でエラー コードが返された場合の問題を解決するには、このトピックのエラー コードと状態コードの説明を参考にしてください。
 
 この情報で問題が解決しない場合、さらに役立つ方法を探すには、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」を参照してください。
@@ -373,6 +376,6 @@ Microsoft Intune の操作でエラー コードが返された場合の問題�
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

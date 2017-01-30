@@ -1,5 +1,5 @@
 ---
-title: "パスコードを設定または変更する | Microsoft Intune"
+title: "パスコードを設定または変更する | Microsoft Docs"
 description: "パスコードを設定または変更する"
 keywords: 
 author: barlanmsft
@@ -11,10 +11,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 6e941b8ac3d26afce65eb5a7d60f7c56dbbdbe87
+ms.sourcegitcommit: fc22acb9f0c08491852592f41dc60bef0fcf0928
+ms.openlocfilehash: 9e616d6368a40e3ae06303cf3556b5e0760fb477
 
 
 ---
@@ -27,13 +29,13 @@ IT 管理者は、パスコードの要件を 1 つ以上設定できます。 �
 
 パスコード要件を満たすようパスコードを設定できない場合は、IT 管理者に問い合わせてください。
 
-## <a name="set-your-passcode"></a>パスコードを設定する##
+## <a name="set-your-passcode"></a>パスコードを設定する
 
 1. **[Settings]** (設定)  > **[Touch ID & Passcode]** (Touch ID とパスコード) をタップします。
 2. **[Touch ID & Passcode]** (Touch ID とパスコード) メニューの **[Turn Passcode On]** (パスコードをオンにする) をタップします。
 3. IT 管理者の要件を満たす新しいパスコードを入力し、それを再入力して確認します。
 
-## <a name="change-your-passcode"></a>パスコードを変更する##
+## <a name="change-your-passcode"></a>パスコードを変更する
 
 1. **[Settings]** (設定)  > **[Touch ID & Passcode]** (Touch ID とパスコード) をタップします。
 2. パスコードを入力します。 **[Touch ID & Passcode]** (Touch ID とパスコード) メニューが開きます。
@@ -44,6 +46,6 @@ IT 管理者は、パスコードの要件を 1 つ以上設定できます。 �
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

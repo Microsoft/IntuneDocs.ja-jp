@@ -1,9 +1,9 @@
 ---
-title: "Exchange Connector のトラブルシューティング | Microsoft Intune"
+title: "Exchange Connector のトラブルシューティング | Microsoft Docs"
 description: "Intune Exchange Connector に関連する問題のトラブルシューティングを行います。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/26/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: c5cb5465-fd8e-4524-83b9-ccdf3393b6dc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: f6b673d05e385ddfe6ef3d3e63cf857439b164de
+ms.sourcegitcommit: 04c89b6dba34be4e3c49bfc907abe7a6240f3d51
+ms.openlocfilehash: 4ada25264aee779f5b31708fdec4f44d19b2e7f7
 
 
 ---
 
 # <a name="troubleshoot-the-exchange-connector"></a>Exchange Connector のトラブルシューティングを行う
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 このトピックでは、Intune Exchange Connector に関連する可能性のある問題のトラブルシューティングを行う方法について説明します。
 
 ## <a name="steps-for-checking-the-connector-configuration"></a>Connector の構成を確認する手順 
@@ -51,6 +54,6 @@ Exchange Connector が Exchange サーバーと同期しているかどうかを
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

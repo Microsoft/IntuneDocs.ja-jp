@@ -1,12 +1,12 @@
 ---
-title: "データ暗号化で会社のデータを保護する | Microsoft Intune"
+title: "データ暗号化で会社のデータを保護する | Microsoft Docs"
 description: "このガイドでは、モバイル アプリでポリシーを使用してパスコードとデータ暗号化を強制することによりデータ損失から会社を保護する方法を説明します。"
 keywords: "暗号化, PIN, データ"
 author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,16 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4ee5f39ac31c2a35770b88c937f138f9c0b525b6
-ms.openlocfilehash: b907803b2170a09e076712e018987821dfb3caef
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 11ed6b14bc940940e6fa22f6760420e690ac364f
 
 
 ---
 
 # <a name="quick-start-guide-protect-company-data-with-data-encryption"></a>クイック スタート ガイド: データの暗号化により会社のデータを保護する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune は、次のようなさまざまな方法で Office モバイル アプリからデータ損失を防ぐのに役立ちます。
 - IOS および Android で提供される最高レベルのデバイス暗号化で企業のデータを暗号化。
 - プライバシーや法的要件のためにモバイル デバイス管理ソリューションに登録できない IOS および Android デバイス。
@@ -50,6 +53,6 @@ Microsoft Intune は、iOS または Android モバイル デバイスを完全�
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

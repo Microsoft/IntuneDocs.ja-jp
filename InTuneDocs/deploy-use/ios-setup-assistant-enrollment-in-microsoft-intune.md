@@ -1,5 +1,5 @@
 ---
-title: "セットアップ アシスタントを使用した iOS デバイスの登録 | Microsoft Intune"
+title: "セットアップ アシスタントを使用した iOS デバイスの登録 | Microsoft Docs"
 description: "Apple Configurator ツールを使用して企業所有の iOS デバイスを登録し、デバイスを工場出荷時の設定にリセットして、セットアップ アシスタントを実行する準備をします。"
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
-ms.openlocfilehash: ea6a4732e747dccf9c42732c06bd1b8cdf20e91f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 01de894167a65f6b3a46808610232feb8dd7e536
 
 
 ---
 
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>Apple Configurator でセットアップ アシスタントを使用して iOS デバイスを登録する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune は、Mac コンピューターで実行される [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) を使用した、企業所有の iOS デバイスの登録をサポートします。 このプロセスではデバイスを工場出荷時の設定にリセットし、セットアップ アシスタントを実行してデバイスの新しいユーザー用に会社のポリシーをインストールするための準備を行います。
 
 ## <a name="setup-assistant-enrollment-for-ios-devices-with-microsoft-intune"></a>Microsoft Intune での iOS デバイスのセットアップ アシスタントを使用した登録
@@ -151,6 +154,6 @@ Apple Configurator を使用して、iOS デバイスを工場出荷時の設定
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

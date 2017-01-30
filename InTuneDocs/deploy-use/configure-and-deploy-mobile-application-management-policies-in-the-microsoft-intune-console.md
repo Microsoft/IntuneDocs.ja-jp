@@ -1,11 +1,11 @@
 ---
-title: "Intune コンソールで MAM ポリシーを構成する |Microsoft Intune"
+title: "Intune コンソールで MAM ポリシーを構成する | Microsoft Docs"
 description: "Microsoft Intune のモバイル アプリケーション管理ポリシーでは、会社のコンプライアンスとセキュリティ ポリシーに合わせて展開するアプリの機能を変更できます。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 90b5a9f78a93cde7466937d0ce9dac3d83f3ff64
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: f7504657f5fb2d73242f25f2f059c8c4e7ab1547
 
 
 ---
 
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Microsoft Intune コンソールでモバイル アプリケーション管理ポリシーを構成して展開する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune のモバイル アプリケーション管理 (MAM) ポリシーでは、会社のコンプライアンスとセキュリティ ポリシーに合わせて展開するアプリの機能を変更できます。 たとえば、管理対象アプリでの切り取り、コピー、および貼り付け操作を制限することや、管理対象ブラウザー内ですべての Web リンクを開くようにアプリを構成することができます。
 
 モバイル アプリケーション管理ポリシーのサポート:
@@ -71,7 +74,7 @@ Outlook アプリの使用例を次に示します。
 
 -   **手順 5:** アプリの展開を監視する。
 
-## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mamenabled-app"></a>手順 1: ポリシー管理型アプリへのリンクを取得して、ラップされたアプリを作成するか、Intune アプリ SDK を使用して MAM 対応アプリを作成する
+## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mam-enabled-app"></a>手順 1: ポリシー管理型アプリへのリンクを取得して、ラップされたアプリを作成するか、Intune アプリ SDK を使用して MAM 対応アプリを作成する
 
 アプリ ストアから、展開するポリシー管理型アプリの URL を見つけてメモします。 たとえば、Microsoft Word for iPad アプリの URL は、**https://itunes.apple.com/jp/app/microsoft-word-for-ipad/id586447913?mt=8** です。
 
@@ -194,6 +197,6 @@ Outlook アプリの使用例を次に示します。
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

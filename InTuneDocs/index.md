@@ -9,14 +9,14 @@ keywords: "Intune ドキュメント, アプリ管理, デバイス管理, MDM �
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 10/07/2016
+ms.date: 12/20/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: 315c159869303fd6a26caa35160d5ba3c7ccdc1f
-ms.openlocfilehash: db637ebb1165466493b633012ab170059678996c
+ms.sourcegitcommit: d63d670f12f27511671b9015ad53a93f1a784c40
+ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
 
 
 ---
@@ -24,21 +24,21 @@ ms.openlocfilehash: db637ebb1165466493b633012ab170059678996c
 <article id="main">
     <section id="hero-content">
       <h1>Intune ドキュメント</h1>
-      <h2>モバイル デバイスとモバイル アプリケーションを管理するサービスである Microsoft Intune を展開および管理する方法について説明します。</h2>
-      <h3>Configuration Manager で Intune を管理している場合は、 <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management" target="_blank">ハイブリッド モバイル デバイス管理に関するトピックを参照してください&rarr;</a></h3>
+      <h2>モバイル デバイスとアプリの管理、PC の管理をクラウドから行います。 </h2>
+      <h3>Configuration Manager で Intune を管理している場合は、 <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management" target="_blank">ハイブリッド モバイル デバイス管理に関するトピックを参照してください&rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> おすすめコンテンツ</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/intune/whats-new/whats-new-in-microsoft-intune">新機能</a></li>
+          <li><a href="http://fasttrack.microsoft.com/ems">ライセンス数が 150 以上ある場合に FastTrack 特典を利用する</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Intune の一般的な使用方法</a></li>
-          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">アプリ データを保護する</a></li>
+          <li><a href="/intune-azure/introduction/what-is-microsoft-intune">Azure プレビュー ポータルでの Intune</a></li>
         </ul>
         <ul class="column column-half">
           <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">会社のリソースへのアクセスを保護する</a></li>
-          <li><a href="/intune/develop/intune-app-sdk-ios">iOS 用 Microsoft Intune アプリ SDK 開発者ガイド</a></li>
-          <li><a href="/intune/develop/intune-app-sdk-android">Android 用 Microsoft Intune アプリ SDK 開発者ガイド</a></li>
+          <li><a href="https://graph.microsoft.io/en-us/docs/api-reference/beta/intune_graph_overview">Microsoft Graph での Intune の使用</a></li>
+          <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース</a></li>
         </ul>
       </div>
     </section>
@@ -61,7 +61,7 @@ ms.openlocfilehash: db637ebb1165466493b633012ab170059678996c
               <ul class="row">
                 <li class="column-third">
                   <a href="/intune/understand-explore/introduction-to-microsoft-intune">
-                    <h3>Intune の概要</h3>
+                    <h3>Intune とは何か</h3>
                     <p>Intune がモバイル デバイス (iOS デバイス、Android デバイス、Windows Phone) と Windows PC に対してデバイス、アプリ、データの管理機能を提供する方法を説明します。</p>
                   </a>
                 </li>
@@ -94,21 +94,21 @@ ms.openlocfilehash: db637ebb1165466493b633012ab170059678996c
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
-                    <h3>事前に確認が必要な事項</h3>
-                    <p>Intune の展開の基本要件を短時間で理解できるように説明します。</p>
-                  </a>
-                </li>
-                <li class="column-third">
                   <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">
-                    <h3>Intune のクイック スタート ガイド</h3>
-                    <p>30 日間の試用版ガイドに基づいて、Azure Active Directory の同期、ドメインと DNS の考慮事項、およびその他の Intune のカスタマイズについて説明します。</p>
+                    <h3>入門ガイド</h3>
+            <p>30 日間の試用版ガイドに基づいて、Azure Active Directory の同期、ドメインと DNS の考慮事項、およびその他の Intune のカスタマイズについて説明します。</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/get-started/rollout-phases-for-microsoft-intune-deployment">
-                    <h3>ロールアウト フェーズ</h3>
-                    <p>Intune の目標、アーキテクチャ、パイロット、および運用ロールアウト計画を定義します。</p>
+                  <a href="/intune/get-started/prevent-company-data-leaks-from-office-365-mobile-apps">
+                    <h3>Office 365 モバイル アプリから会社のデータが漏えいすることを防止する</h3>
+                    <p>会社のデータ漏洩を防ぐのに役立つアプリ保護ポリシーを使用して、組織のデータを保護します。</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="/intune/get-started/simplify-email-configuration-on-mobile-devices">
+                    <h3>モバイル デバイスでの電子メールの構成を簡略化する</h3>
+                    <p>Intune サービスによって管理される Windows、iOS、および Android モバイル デバイスに電子メール (および VPN と WiFi) のプロファイルを展開することで、会社の時間とリソースを節約します。</p>
                   </a>
                 </li>
               </ul>
@@ -155,8 +155,8 @@ ms.openlocfilehash: db637ebb1165466493b633012ab170059678996c
                 </li>
                 <li class="column-third">
                   <a href="/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune">
-                    <h3>Restrict access to email and O365 services (電子メールと O365 サービスへのアクセスの制限)</h3>
-                    <p>Intune の条件付きアクセス機能を使用して、会社の電子メールおよび Office 365 サービスへのアクセスを制限します。</p>
+                    <h3>電子メールと O365 サービスへのアクセスの保護</h3>
+                    <p>Intune の条件付きアクセス機能を使用して、会社の電子メールおよび Office 365 サービスへのアクセスを保護します。</p>
                   </a>
                 </li>
                 <li class="column-third">
@@ -285,6 +285,6 @@ ms.openlocfilehash: db637ebb1165466493b633012ab170059678996c
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

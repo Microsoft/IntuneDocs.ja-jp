@@ -1,5 +1,5 @@
 ---
-title: "アプリ展開に関する問題のトラブルシューティング | Microsoft Intune"
+title: "アプリ展開に関する問題のトラブルシューティング | Microsoft Docs"
 description: "このトピックは、Microsoft Intune でのアプリの展開の問題を解決するために役立ちます。"
 keywords: 
 author: robstackmsft
@@ -14,16 +14,19 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
-ms.openlocfilehash: efc280f0a1143cacc252ee9fc9344064aa211cb2
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 239371198cbbc01b1345c72b3f887055acd44462
 
 
 ---
 
-# Microsoft Intune のアプリ展開に関する問題のトラブルシューティング
+# <a name="troubleshoot-app-deployment-problems-in-microsoft-intune"></a>Microsoft Intune のアプリ展開に関する問題のトラブルシューティング
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune でのアプリの展開と管理に関して問題がある場合は、ここから始めてください。 このトピックでは、発生する可能性がある一般的な問題とその解決策が示されています。
 
-## アプリ展開時の一般的なエラー コード
+## <a name="common-app-deployment-error-codes"></a>アプリ展開時の一般的なエラー コード
 
 |エラー コード|問題|推奨される解決策|
 |--------------|--------------------|------------------------|
@@ -33,11 +36,11 @@ Intune でのアプリの展開と管理に関して問題がある場合は、�
 |0x80073CFB|指定したパッケージは既にインストールされており、パッケージの再インストールがブロックされます|既にインストールされているパッケージと同じではないパッケージをインストールしようとすると、このエラーが発生することがあります。 デジタル署名がパッケージにも含まれることを確認します。 パッケージを再ビルドまたは再署名すると、パッケージは以前にインストールしたパッケージとビット単位で同じではなくなります。 このエラーを修正するには、次のように 2 つの選択肢が考えられます。<br /><br />-   アプリのバージョン番号を増やして、パッケージの再ビルドと再署名を行います。<br />-   システムのすべてのユーザーの古いパッケージを削除してから、新しいパッケージをインストールします。|
 |0x87D1041C|アプリケーションがインストールされましたが、検出されません。|- アプリは Intune によって正しくデプロイされ、(おそらくエンドユーザーにより) その後、アンインストールされました。 ユーザーは、ポータル サイトからアプリを再インストールするように指示されます。 デバイスが次回チェックインするときに、必要なアプリが自動的に再インストールされます。|
 
-## Windows ストア アプリのトラブルシューティング アプリ
+## <a name="troubleshooting-apps-from-the-windows-store"></a>Windows ストア アプリのトラブルシューティング アプリ
 
 トピック「[Troubleshooting packaging, deployment, and query of Windows Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx)」 (Windows ストア アプリのパッケージ化、展開、およびクエリのトラブルシューティング) に記載された情報は、Windows ストアからアプリをインストールする際に発生する可能性がある一般的な問題のトラブルシューティングで役に立ちます (Intune を使用する場合、または他の手段を使用する場合に関係なく)。
 
-## Intune ソフトウェア クライアントによって管理されている PC へのアプリ展開で発生した問題のトラブルシューティング
+## <a name="troubleshooting-app-deployment-to-pcs-managed-by-the-intune-software-client"></a>Intune ソフトウェア クライアントによって管理されている PC へのアプリ展開で発生した問題のトラブルシューティング
 Intune ソフトウェア クライアントによって管理されている PC にアプリを展開する際に問題が発生した場合、次の 2 つのログ ファイルがトラブルシューティングに役立ちます。
 - %ProgramFiles%\Microsoft\OnlineManagement\Logs folder
 - %ProgramFiles%\Microsoft\OnlineManagement\Updates\ReportingEvents.log
@@ -45,11 +48,11 @@ Intune ソフトウェア クライアントによって管理されている PC
 さらに、Intune のサポート事例を開く必要がある場合は、これらのログを Microsoft に送信することも効果的です。
 
 
-### 次のステップ
+### <a name="next-steps"></a>次のステップ
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 
