@@ -67,6 +67,6 @@ Windows 8.1 または Windows RT 8.1 デバイスを登録するには、次の�
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Jan17_HO5-->
 
 

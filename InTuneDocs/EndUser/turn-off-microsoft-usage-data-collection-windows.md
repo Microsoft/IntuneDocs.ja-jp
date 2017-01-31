@@ -34,6 +34,6 @@ Windows デバイスでのこのような使用状況データの収集は、ポ
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Jan17_HO5-->
 
 

@@ -170,6 +170,6 @@ Azure Active Directory (AAD) テナント内の任意のユーザーについて
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO5-->
 
 

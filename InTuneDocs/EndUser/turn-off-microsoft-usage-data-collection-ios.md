@@ -33,6 +33,6 @@ iOS デバイスで使用状況に関するデータの収集をオフにする�
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Jan17_HO5-->
 
 
