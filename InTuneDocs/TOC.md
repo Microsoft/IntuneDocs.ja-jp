@@ -42,8 +42,8 @@
 ## [セクション 9: テストして検証する](plan-design/section-9-test-and-validation.md)
 ## [その他のリソース](plan-design/additional-resources.md)
 
-# 新機能
-## [新機能](whats-new/whats-new-in-microsoft-intune.md)
+# [新機能](whats-new/whats-new-in-microsoft-intune.md)
+## [アプリ UI の新機能](whats-new/whats-new-in-intune-app-ui.md)
 ## [Azure プレビューの新機能](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [新機能の公開履歴](whats-new/whats-new-archive.md)
 
@@ -106,7 +106,7 @@
 
 ## [デバイスを保護する](deploy-use/protect-your-devices-with-microsoft-intune.md)
 ### [リモート ロックとパスコードのリセット](deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-### [MFA を使って Windows デバイスを保護する](deploy-use/protect-windows-devices-with-multi-factor-authentication.md)
+### [MFA を使って Windows デバイスを保護する](deploy-use/multi-factor-authentication-azure-active-directory.md)
 ### [Windows Hello for Business の設定を制御する](deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [iOS のアクティブ化ロックをバイパスする](deploy-use/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Windows PC を保護するためのポリシー](deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md)
@@ -159,9 +159,9 @@
 #### [ADAL がないアプリをブロックする](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [ネットワークへのアクセスを保護する (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
 ### [デバイス、ネットワーク、アプリケーションのリスクに基づいてアクセスを保護する](deploy-use/device-threat-protection.md)
-#### [Lookout デバイス脅威保護をセットアップする](deploy-use/device-threat-protection-subscription-setup.md)
-#### [Intune で Lookout を有効にする](deploy-use/device-threat-protection-enable.md)
-#### [Lookout for Work アプリを展開する](deploy-use/device-threat-protection-apps.md)
+#### [デバイス脅威保護を設定する](deploy-use/device-threat-protection-subscription-setup.md)
+#### [デバイス脅威保護を有効にする](deploy-use/device-threat-protection-enable.md)
+#### [デバイス脅威保護アプリを展開する](deploy-use/device-threat-protection-apps.md)
 #### [デバイスの脅威防御のコンプライアンス ポリシーを有効にする](deploy-use/device-threat-protection-policy.md)
 
 ### [MAM でアプリ データを保護する](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
@@ -217,11 +217,11 @@
 
 ## [モバイル アプリケーション管理に関するトラブルシューティング](troubleshoot/troubleshoot-mam.md)
 
-## [Lookout の統合に関するトラブルシューティング](troubleshoot/troubleshooting-lookout-integration.md)
+## [デバイス脅威保護に関するトラブルシューティング](troubleshoot/device-threat-protection-troubleshooting.md)
 
 # [用語集](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Jan17_HO5-->
 
 
