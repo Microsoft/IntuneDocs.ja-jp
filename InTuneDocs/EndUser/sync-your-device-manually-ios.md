@@ -5,18 +5,20 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2780101b-f703-4b78-9d33-f68490b9382d
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1df8924bd7f94040db28f0c26f0aa29bb7620a0a
-ms.openlocfilehash: 6d57eae82b84b4cd64e0f22829d02fc02bbd9663
+ms.sourcegitcommit: 30695011befb8c590bbd90656843e38638759443
+ms.openlocfilehash: 148660008fbe0eeea3ee9f7d9490443f60abbf0c
 
 
 ---
@@ -24,24 +26,24 @@ ms.openlocfilehash: 6d57eae82b84b4cd64e0f22829d02fc02bbd9663
 
 # <a name="sync-your-ios-device-manually"></a>iOS デバイスを手動で同期する
 
-アプリのインストールに時間がかかりすぎる場合は、デバイスを手動で同期してみてください。 手動で同期すると、インストールを高速化できることがあります。 同期機能は iOS のみに適用されます。
+ポータル サイトからアプリをダウンロードするとき、時間がかかりすぎることがあります。 その場合は、手動でデバイスの同期を試みることができます。 つまり、ダウンロードできないでいる情報をもう一度取得してみるようにデバイスに通知します。
 
-1. iOS のポータル サイト アプリを開きます。
+1. ポータル サイト アプリを開きます。
 
-2. **[デバイス]** セクションで、現在使用しているデバイスを選択します。 これは、チェック マークが表示されている一番左のデバイス タイルです。
+2. **[デバイス]** セクションで、現在使用しているデバイスを選択します。 これは一番左にあるデバイス タイルです。チェックマークが付いています。
 
     ![[デバイス] セクションが表示された [デバイス] 画面](./media/ios-sync-1-comp-portal-apps.png)
 
-3.  画面の右下にある **[同期]** ボタンを選択します。
+3. 画面の右下にある **[同期]** ボタンをタップします。
 
     ![[同期] ボタンが表示されたデバイスの詳細](./media/ios-sync-2-sync-button.png)
 
-同期が完了するまでの間、回転する円が画面に表示されます。
+ダウンロード進捗状況バーが画面に表示され、同期が完了するまでダウンロードが続きます。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 
