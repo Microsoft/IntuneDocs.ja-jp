@@ -74,6 +74,6 @@ Intune コンソールから [Exchange ActiveSync デバイス](/intune/deploy-u
 
 
 
-<!--HONumber=Jan17_HO5-->
+<!--HONumber=Feb17_HO1-->
 
 
