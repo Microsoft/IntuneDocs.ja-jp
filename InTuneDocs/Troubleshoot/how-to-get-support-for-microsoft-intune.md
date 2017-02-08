@@ -14,19 +14,35 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1a83bd41e4dc3aaa2e98b78b918b0cfe4c74dfe3
+ms.sourcegitcommit: 9d891933178d4bdf1079287efc151fe8859c7e83
+ms.openlocfilehash: e91c9da9614791e128a64add822d7f101818b9c0
 
 
 ---
 
-# <a name="how-to-get-admin-support-for-microsoft-intune"></a>Microsoft Intune の管理権限を取得する方法
+# <a name="how-admins-get-support-for-microsoft-intune"></a>管理者が Microsoft Intune のサポートを受ける方法
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft サポートは、Microsoft Intune に世界的な技術、購入前、請求、およびサブスクリプションのサポートを提供しています。 有料サブスクリプションとトライアル サブスクリプションについて、オンラインと電話によるサポートを利用できます。 オンライン テクニカル サポートは、英語と日本語で提供されています。 電話によるサポートとオンライン課金サポートは、他の言語でも利用できます。
 
 Intune のサポートについては、Configuration Manager で使用する場合、無料です。 Premier サポートを契約されているお客様は、手順に関する質問 (たとえば、Intune 機能を構成する方法) の場合、料金が発生します。
+
+## <a name="find-help-without-opening-a-support-ticket"></a>サポート チケットを開かずにヘルプを見つける
+
+サポート チケットを作成する前に、次のリソースに回答がないかを確認してください。
+
+### <a name="microsoft-intune-technet-forums"></a>Microsoft Intune TechNet フォーラム
+
+Microsoft の技術スタッフに質問をお送りいただくか、ディスカッションにご参加ください。 回答や情報は、[Microsoft Intune TechNet フォーラム](https://social.technet.microsoft.com/Forums/home)で検索できます。
+
+    ![Microsoft Intune TechNet Forum](../media/technet-forum-for-support.png)
+
+### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Microsoft Intune UserVoice 製品フィードバック サイト
+
+Microsoft による Intune の改善に役立つフィードバックはありますか。 Microsoft Intune の [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) フィードバック サイトにアイデアを追加してください。 他のユーザーが UserVoice に追加したアイデアに投票することもできます。 
+
+    ![Microsoft Intune UserVoice feedback page](../media/intune-uservoice-feedback-page.png)
 
 ## <a name="create-an-online-service-ticket"></a>オンライン サービス チケットの作成
 
@@ -82,7 +98,7 @@ Intune のサポートについては、Configuration Manager で使用する場
 - 運用、操作、または展開の期日が重大な影響を受けているか、運用または収益性に重大な影響が出ると予想されます。
 - 複数のユーザーまたはサービスが影響を受けています。
 
-重大度が中程度の場合、Professional サポートをご利用のお客様に対しては、初回の応答が 4 時間以内に行われます。 Premier サポートをご契約のお客様の場合、応答はサポート契約の内容によって変わります。  次のような事例が該当します。
+重大度が中程度の場合、Professional サポートをご利用のお客様に対しては、初回の応答が&4; 時間以内に行われます。 Premier サポートをご契約のお客様の場合、応答はサポート契約の内容によって変わります。  次のような事例が該当します。
 
 - サービスは使用できますが、通常の機能とは異なります。
 - ビジネスに中程度の影響があり、営業時間中に処理できます。
@@ -116,6 +132,6 @@ Intune のセルフ ヘルプについては、「[Microsoft Intune の一般的
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
