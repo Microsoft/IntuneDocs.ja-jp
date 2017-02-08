@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 09/07/2016
+ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fdaeddae669a5b519973117b9adf676b43ce1aa1
+ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
+ms.openlocfilehash: 03f5da3a819768ff8221257f091a000f18f00fb4
 
 
 ---
@@ -26,9 +26,18 @@ ms.openlocfilehash: fdaeddae669a5b519973117b9adf676b43ce1aa1
 
 Microsoft Intune は、Mac コンピューターで実行される Apple Device Enrollment Program (DEP) または [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) ツールによる、企業所有の iOS デバイスの登録をサポートします。
 
-**前提条件:** [Apple Push Notification サービス証明書](set-up-ios-and-mac-management-with-microsoft-intune.md)が必要です。
+**前提条件:** [Apple Push Notification Service 証明書](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
-企業登録対象の iOS デバイスは、Apple Configurator、DEP、またはポータル サイトを使用して登録することができます。
+企業登録対象の iOS デバイスは、次の&3; つの方法のいずれかを使用して登録することができます。
+
+- Apple Configurator (セットアップ アシスタントまたは直接登録を使用)
+- デバイス登録プログラム
+- ポータル サイト アプリ
+
+>[!NOTE]
+>Apple Configurator とデバイス登録プログラムの登録メソッドは、[デバイス登録マネージャー](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)のメソッドと同時に使用することはできません。
+
+既定では、すべての iOS デバイスを Intune に登録することができます。 個人または会社所有のデバイスの登録をブロックするには、管理者資格情報を使用して [Microsoft Intune 管理ポータル](http://manage.microsoft.com)にサインインします。 **[管理]** > **[モバイル デバイス管理]** > **[登録ルール]** の順に選択し、該当するオプションをオフにします。
 
 ## <a name="use-apple-configurator"></a>Apple Configurator を使用する場合
 
@@ -63,7 +72,7 @@ DEP では、DEP を通じて購入したデバイスに "無線で" 登録プ�
 
   ユーザーのデバイスがまだ企業登録済みでない場合は、**[新しいデバイス]** を選択して標準の登録フローを行う必要があります。
 
-6. 次の画面で、ユーザーは、新しいデバイスのシリアル番号を確認する必要があります。 シリアル番号は、**[シリアル番号を確認]** リンクをタップして設定アプリを起動すると確認できます。 その後、ポータル サイト アプリにシリアル番号の最後の 4 文字を入力する必要があります。
+6. 次の画面で、ユーザーは、新しいデバイスのシリアル番号を確認する必要があります。 シリアル番号は、**[シリアル番号を確認]** リンクをタップして設定アプリを起動すると確認できます。 その後、ポータル サイト アプリにシリアル番号の最後の&4; 文字を入力する必要があります。
 
   この手順では、デバイスが Intune に登録されている会社のデバイスであることが確認されます。 デバイスのシリアル番号が一致しない場合は、間違ったデバイスが選択されています。 その場合は、前の画面に戻って、別のデバイスを選択する必要があります。
 
@@ -84,6 +93,6 @@ DEP では、DEP を通じて購入したデバイスに "無線で" 登録プ�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

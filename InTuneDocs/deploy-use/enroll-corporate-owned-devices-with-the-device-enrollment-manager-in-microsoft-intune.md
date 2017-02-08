@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/04/17
+ms.date: 01/29/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b06bb501e71bae5225d451d9ee460213eee183de
-ms.openlocfilehash: 058212ff935f085d569b37298f146623d217ddbe
+ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
+ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
 
 
 ---
@@ -25,9 +25,12 @@ ms.openlocfilehash: 058212ff935f085d569b37298f146623d217ddbe
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-組織は Intune を使用して、単一のユーザー アカウントで多数のモバイル デバイスを管理することができます。 *デバイス登録マネージャー (DEM)* アカウントは、最大で 1,000 台のデバイスを登録できる特別なユーザー アカウントです。 既存のユーザーを DEM アカウントに追加し、特別な DEM 機能を与えます。 登録される各デバイスは 1 つのライセンスを使用します。 このアカウントで登録したデバイスは、個人用 ("BYOD") デバイスではなく共有デバイスとして使用することをお勧めします。  
+組織は Intune を使用して、単一のユーザー アカウントで多数のモバイル デバイスを管理することができます。 *デバイス登録マネージャー (DEM)* アカウントは、最大で 1,000 台のデバイスを登録できる特別なユーザー アカウントです。 既存のユーザーを DEM アカウントに追加し、特別な DEM 機能を与えます。 登録される各デバイスは&1; つのライセンスを使用します。 このアカウントで登録したデバイスは、個人用 ("BYOD") デバイスではなく共有デバイス (つまり、ユーザー アフィニティなし) として使用することをお勧めします。  
 
 ユーザーをデバイス登録マネージャーとして追加するには、そのユーザーが Azure Portal に存在する必要があります。 最適なセキュリティのために、DEM ユーザーを Intune 管理にも指定することは避けてください。
+
+>[!NOTE]
+>DEM の登録方法は、[Apple Configurator セットアップ アシスタント](ios-setup-assistant-enrollment-in-microsoft-intune.md)、[直接登録](ios-direct-enrollment-in-microsoft-intune.md)、または [DEP の登録方法](ios-device-enrollment-program-in-microsoft-intune.md)と同時に使用することはできません。 
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>デバイス登録マネージャーのシナリオの例
 
@@ -105,6 +108,6 @@ DEM ユーザーができること:
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 
