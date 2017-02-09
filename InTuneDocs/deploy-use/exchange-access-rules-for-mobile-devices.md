@@ -2,8 +2,8 @@
 title: "モバイル デバイスの Exchange アクセス ルール | Microsoft Docs"
 description: "EAS とのデバイスの接続を許可またはブロックする Exchange ActiveSync アクセス ルール"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
