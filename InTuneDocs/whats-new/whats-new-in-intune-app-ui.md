@@ -45,7 +45,7 @@ ms.openlocfilehash: ef2855f400b64eb7d1e0f77ce767faf431fa897d
    <table id="wrapper">
       <tr>
          <td>
-            <img src="https://docs.microsoft.com/en-us/InTune/whats-new/media/cp_android_contactit_after.png" alt="The Company Portal app for Android displaying an updated version of the Contact IT tab. The tab shows available contact information for IT, including phone number, email address, IT website, and IT contact information.">
+            <img src="https://docs.microsoft.com/en-us/InTune/whats-new/media/cp_android_contactit_after.png" alt="The Company Portal app for Android displaying an updated version of the Contact IT tab. The tab shows available contact information for IT, including phone number, email address, IT website, and IT contact information." width=200 height=366 align=center>
           </td>
       </tr>
    </table>

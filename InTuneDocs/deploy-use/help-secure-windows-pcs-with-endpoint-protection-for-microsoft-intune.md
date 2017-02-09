@@ -2,10 +2,10 @@
 title: "Endpoint Protection による Windows PC の保護 | Microsoft Docs"
 description: "マルウェアの脅威からリアルタイムで保護する Endpoint Protection で、管理対象コンピューターを保護します。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: arob98
-ms.date: 07/25/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune

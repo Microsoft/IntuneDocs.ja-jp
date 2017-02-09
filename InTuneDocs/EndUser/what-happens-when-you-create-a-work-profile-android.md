@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
@@ -45,8 +46,6 @@ ms.openlocfilehash: 215e630141aa2739a2fe73926476db965c42922a
 仕事用プロファイルの作成手順については、「[Create a work profile and enroll your device](create-a-work-profile-and-enroll-your-device-in-intune-android.md)」(仕事用プロファイルの作成とデバイスの登録) を参照してください。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
 
 
 
