@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -22,6 +22,9 @@ ms.openlocfilehash: 7777b7fb4a0977ed663a3ef01547f22e9e61bb8a
 
 
 # <a name="intune-quick-start-guide"></a>Intune のクイック スタート ガイド
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 このガイドでは、Microsoft Intune の有料サブスクリプションの基本について説明します。 以下の手順で組織のモバイル デバイス、Windows PC、アプリを管理します。 各手順に順番に従っても、環境やビジネス ニーズに適用できない手順をスキップして先に進んでもかまいません。 Intune をお試しになる場合は、「[Intune の評価ガイド](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)」を参照してください。  
 
 現在コンピューターとサーバーの管理に Microsoft System Center Configuration Manager を使用している場合は、[Configuration Manager を拡張してモバイル デバイスを管理する](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)ことができます。
