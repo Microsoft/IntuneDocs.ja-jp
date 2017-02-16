@@ -6,6 +6,7 @@
 ### [ポリシーを作成してアプリを発行する](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
 ### [その他のオプションと機能](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [有料サブスクリプションに切り替える](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
+## [MAM とアプリ保護 FAQ](understand-explore/mam-faq.md)
 ## [一般的なシナリオ](understand-explore/common-ways-to-use-intune.md)
 
 
@@ -182,7 +183,6 @@
 #### [Intune で管理されていないデバイスの LOB アプリ](deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [アプリを記述するときに SDK を使用する](deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
-### [MAM とアプリ保護 FAQ](deploy-use/mam-faq.md)
 
 ## アプリとデータをインベントリから削除する
 ### [フル ワイプまたは選択的ワイプを使用する](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
@@ -222,6 +222,6 @@
 # [用語集](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 
