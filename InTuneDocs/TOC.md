@@ -11,7 +11,8 @@
 
 # [作業の開始](get-started/get-started.md)
 ## [Intune をセットアップする](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [必要条件](get-started/what-to-know-before-you-start-microsoft-intune.md)
+### [前提条件]
+#### [サポートされるデバイス](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [ネットワーク使用量](get-started/network-bandwidth-use.md)
 ### [Intune にサインインする](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [ドメインを構成する](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
@@ -57,7 +58,6 @@
 #### [Android の管理](deploy-use/set-up-android-management-with-microsoft-intune.md)
 #### [Android for Work の管理](deploy-use/set-up-android-for-work.md)
 #### [Windows デバイスの管理](deploy-use/set-up-windows-device-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile と Windows Phone](deploy-use/set-up-windows-phone-management-with-microsoft-intune.md)
 ### [企業所有のデバイスの管理](deploy-use/manage-corporate-owned-devices.md)
 #### [企業所有の iOS デバイスの登録](deploy-use/enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [セットアップ アシスタントの登録](deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune.md)
@@ -165,13 +165,13 @@
 #### [デバイスの脅威防御のコンプライアンス ポリシーを有効にする](deploy-use/device-threat-protection-policy.md)
 
 ### [MAM でアプリ データを保護する](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Azure ポータルの MAM ポリシー対応](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [MAM ポリシーを構成する準備](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [MAM ポリシーを作成および展開する](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Android 用 MAM ポリシー](deploy-use/android-mam-policy-settings.md)
-#### [iOS 用 MAM ポリシー](deploy-use/ios-mam-policy-settings.md)
-#### [MAM ポリシーを確認する](deploy-use/validate-mobile-application-management.md)
-#### [ポリシーの準拠状況を監視する](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+#### [アプリ保護ポリシーの Azure ポータル](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
+#### [アプリ保護ポリシーを構成する準備をする](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [アプリ保護ポリシーを作成して展開する](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Android 用アプリ保護ポリシー](deploy-use/android-mam-policy-settings.md)
+#### [iOS 用アプリ保護ポリシー](deploy-use/ios-mam-policy-settings.md)
+#### [アプリ保護ポリシーを確認する](deploy-use/validate-mobile-application-management.md)
+#### [アプリの保護ポリシーのコンプライアンスを監視する](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [iOS アプリ間のデータ転送を管理する](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 #### [MAM ポリシー向けの Intune 管理コンソール](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
@@ -222,6 +222,6 @@
 # [用語集](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Jan17_HO5-->
+<!--HONumber=Feb17_HO2-->
 
 

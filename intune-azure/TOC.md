@@ -4,6 +4,7 @@
 <!---(introduction/get-started.md) --->
 ### [無料試用版にサインアップ](introduction/sign-up-free-trial-microsoft-intune.md)
 ## [新機能](introduction/whats-new.md)
+## [既知の問題](introduction/known-issues-in-the-intune-preview.md)
 <!--- ## [Get support](introduction/get-support.md)
 ## [Related resources](introduction/related-resources.md)
 
@@ -37,13 +38,12 @@
 #### [Apple Configurator のシリアル番号を追加する](enroll-devices/add-apple-configurator-serial-numbers.md)
 #### [デバイス登録プログラムを使用して iOS デバイスを登録する](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [デバイス登録マネージャーを使用してデバイスを登録する](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
-### Windows デバイスの登録
-#### [Windows Phone および Windows 10 Mobile デバイスを登録する](enroll-devices/enroll-windows-mobile-devices.md)
-#### [Windows PC をモバイル デバイスとして登録する](enroll-devices/enroll-windows-pcs-as-mobile-devices.md)
+### [macOS デバイスの登録](enroll-devices/enroll-macos-devices.md)
+### [Windows デバイスの登録](enroll-devices/enroll-window-devices.md)
 ### デバイス登録を管理する
 #### [使用条件を作成する](enroll-devices/create-terms-and-conditions.md)
 #### [登録制限を設定する](enroll-devices/set-enrollment-restrictions.md)
-#### [デバイス グループをマップする](enroll-devices/how-to-use-device-group-mapping.md)
+#### [デバイスをグループにマッピングする](enroll-devices/how-to-use-device-group-mapping.md)
 #### [企業 ID を追加する](enroll-devices/add-corporate-identifiers.md)
 #### [Windows Hello for Business を使用する](enroll-devices/how-to-use-windows-hello.md)
 <!--- ## [Troubleshoot](enroll-devices/troubleshooting.md) --->
@@ -81,14 +81,14 @@
 ### [アプリを割り当てる](manage-apps/deploy-apps.md)
 ### [アプリの監視](manage-apps/monitor-apps.md)
 ### [アプリ構成ポリシーを使用する](manage-apps/app-configuration-policies.md)
-<!--- ### [Selectively wipe apps](manage-apps/app-selective-wipe.md)--->
+### [選択的にワイプするアプリ](manage-apps/app-selective-wipe.md)
 <!---Is this specific to app protection policy or more general app management?--->
 ### [ボリューム購入アプリを操作する](manage-apps/volume-purchased-apps.md)
 #### [iOS VPP アプリ](manage-apps/ios-vpp-apps.md)
 #### [ビジネス向け Windows ストアのアプリ](manage-apps/wsfb-apps.md)
 ### [ポータル サイト アプリを構成する](manage-apps/company-portal-app.md)
 ## アプリ保護ポリシーを使用する方法
-### [アプリの保護ポリシーを作成して展開する](manage-apps/app-protection-policies.md)
+### [アプリ保護ポリシーを作成して割り当てる](manage-apps/app-protection-policies.md)
 #### [Android の設定](manage-apps/android-app-protection-policy-settings.md)
 #### [iOS の設定](manage-apps/ios-app-protection-policy-settings.md)
 ### [アプリ保護ポリシーを確認する](manage-apps/validate-app-protection-policies.md)
@@ -187,6 +187,6 @@
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 
