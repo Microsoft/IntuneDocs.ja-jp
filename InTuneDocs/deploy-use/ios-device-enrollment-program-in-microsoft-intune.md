@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: arob98
-ms.date: 1/30/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: 09276410743b5941cbcb5a30fe5de57c275b9788
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: ab035d069fa1dbf5f5f38a959dc2f896a0109b6f
 
 
 ---
@@ -156,13 +156,13 @@ Microsoft Intune は、"無線" で Device Enrollment Program (DEP) を通じて
 
 ## <a name="changes-to-intune-group-assignments"></a>Intune グループ割り当ての変更
 
-2016 年 12 月から、デバイス グループの管理は Azure Active Directory に移行されます。 Azure Active Directory グループに切り替えた後は、グループの割り当ては**企業の登録プロファイル**のオプションに表示されません。 この変更は数か月間にわたりロールアウトされるため、変更はすぐに表示されないことがあります。 新しいポータルに移動した後、会社の登録プロファイルの名前に基づいて動的なデバイス グループの割り当てを定義できます。 このプロセスにより、デバイス グループに既に割り当てられているデバイスが、ポリシーおよびデプロイされたアプリと共にグループに自動的に登録されることが保証されます。 Azure Active Directory グループの詳細については[こちら](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)を参照してください。
+2016 年 12 月から、デバイス グループの管理は Azure Active Directory に移行されます。 Azure Active Directory グループに切り替えた後は、グループの割り当ては企業の登録プロファイルのオプションに表示されません。 この変更は数か月間にわたりロールアウトされるため、変更はすぐに表示されないことがあります。 新しいポータルに移動した後、会社の登録プロファイルの名前に基づいて動的なデバイス グループの割り当てを定義できます。 業務用デバイスの登録プロファイルで事前に割り当てられている Intune デバイス グループごとに、Azure Active Directory デバイス グループへの移行時に、業務用デバイスの登録プロファイルの名前に基づいて、AAD に対応する動的デバイス グループが作成されます。 このプロセスにより、デバイス グループに既に割り当てられているデバイスが、ポリシーおよびデプロイされたアプリと共にグループに自動的に登録されることが保証されます。 Azure Active Directory グループの詳細については[こちら](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)を参照してください。
 
 ### <a name="see-also"></a>関連項目
 [デバイスを登録するための前提条件](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 
