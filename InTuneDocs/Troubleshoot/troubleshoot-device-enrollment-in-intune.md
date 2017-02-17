@@ -185,7 +185,7 @@ Android 6.0 へのアップグレードを試みるようユーザーに通知�
 
 3. **[App power saving]** (アプリの省電力) または **[App optimization]** (アプリの最適化) で、**[詳細]** を選択します。
 
-  ![[App power saving] (アプリの省電力) または [App optimization] (アプリの最適化) で [詳細] を選択する](./media/smart-manager-app-power-saving-detail.png)
+  ![[App power saving] \(アプリの省電力) または [App optimization] \(アプリの最適化) で [詳細] を選択する](./media/smart-manager-app-power-saving-detail.png)
 
 4. アプリのリストから **[ポータル サイト]** を選択します。
 
@@ -193,7 +193,7 @@ Android 6.0 へのアップグレードを試みるようユーザーに通知�
 
 5. **[オフ]** を選択します。
 
-  ![[App optimization] (アプリの最適化) ダイアログから [オフ] を選択する](./media/smart-manager-app-optimization-turned-off.png)
+  ![[App optimization] \(アプリの最適化) ダイアログから [オフ] を選択する](./media/smart-manager-app-optimization-turned-off.png)
 
 6. **[App power saving]** (アプリの省電力) または **[App optimization]** (アプリの最適化) で、ポータル サイトがオフになっていることを確認します。
 
@@ -213,7 +213,7 @@ Android 6.0 へのアップグレードを試みるようユーザーに通知�
 
 ### <a name="android-certificate-issues"></a>Android 証明書に関する問題
 
-**問題**: ユーザーが自分のデバイスで、[*You cannot sign in because your device is missing a required certificate.*] (デバイスに必要な証明書がないためにサインインすることはできません。) というメッセージを受信します。
+**問題**: ユーザーが自分のデバイスで、[*You cannot sign in because your device is missing a required certificate.*] \(デバイスに必要な証明書がないためにサインインすることはできません。) というメッセージを受信します。
 
 **解決方法 1**:
 
