@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: 11ed6b14bc940940e6fa22f6760420e690ac364f
@@ -42,9 +43,9 @@ Microsoft Intune は、iOS または Android モバイル デバイスを完全�
 このガイドでは、デバイス管理ソリューションへの完全な登録を必要とせずに、機密データにアクセスするために従業員が使用しているモバイル アプリでポリシーを使用してパスコードとデータ暗号化を強制することにより、データ損失から会社を保護する方法を説明します。 Microsoft Intune では、[iOS](https://products.office.com/en-us/mobile/office-mobile-apps-for-ios) および [Android](https://products.office.com/en-us/mobile/office-mobile-apps-for-android) 用の Office モバイル アプリにモバイル アプリケーション管理 (MAM) ポリシーを設定できます。 これにより、モバイル デバイス管理ソリューションへのデバイスの登録をユーザーに要求しなくても O365 のデータを保護することができ、Office モバイル アプリの優れたエンド ユーザー エクスペリエンスを維持できます。
 
 ## <a name="how-do-i-do-it"></a>実行方法
-1.  [アプリ データを保護する方法を確認する](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-2.  [モバイル アプリ管理ポリシーを構成する準備](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
-3.  [モバイル アプリ管理ポリシーの作成および展開](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+1.    [アプリ データを保護する方法を確認する](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+2.    [モバイル アプリ管理ポリシーを構成する準備](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+3.    [モバイル アプリ管理ポリシーの作成および展開](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## <a name="additional-information"></a>追加情報:
 - [Microsoft Intune での MAM 対応アプリのエンド ユーザー エクスペリエンスについて確認します。](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)

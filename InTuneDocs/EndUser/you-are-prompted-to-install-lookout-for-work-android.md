@@ -14,6 +14,7 @@ ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 356de226dce12a1e079b0f58214d9bc590f3a71d
@@ -30,13 +31,13 @@ ms.openlocfilehash: 356de226dce12a1e079b0f58214d9bc590f3a71d
 
 **必要な操作**
 
-1.  画面の一番上から下にドラッグして通知バーを開き、**[Required application – Install Lookout for Work from Play Store]** (必要なアプリケーション – Lookout for Work を Play ストアからインストール) をタップします。
+1.    画面の一番上から下にドラッグして通知バーを開き、**[Required application – Install Lookout for Work from Play Store]** (必要なアプリケーション – Lookout for Work を Play ストアからインストール) をタップします。
 
     ![Lookout for Work をインストールする必要があります](./media/lookout-required-app-install-android.png)
 
     Play ストアの Lookout for Work のインストール ページが表示されます。
 
-2.  Lookout for Work をインストールしてから、[**同意する**] をタップして Lookout for Work によるデバイスへのアクセスを許可します。
+2.    Lookout for Work をインストールしてから、[**同意する**] をタップして Lookout for Work によるデバイスへのアクセスを許可します。
 
     ![[同意する] をタップして Lookout for Work によるデバイスへのアクセスを許可します](./media/lookout-accept-store-permissions-android.png)
 

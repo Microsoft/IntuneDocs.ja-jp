@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: bb706f122753219d8034bcd25fbe2e25b7142b30
 ms.openlocfilehash: 7fce50c88419a920aa7c4814517523e7a4ced919
@@ -27,24 +28,24 @@ ms.openlocfilehash: 7fce50c88419a920aa7c4814517523e7a4ced919
 Intune の**カスタム構成**を使用して、事前共有キーを使用した Wi-Fi プロファイルを作成する方法を次に示します。 このトピックでは、EAP ベースの Wi-Fi プロファイルを作成する方法の例も示します。
 
 > [!NOTE]
--   以下のように、そのネットワークに接続しているコンピューターからコードをコピーした方が簡単な場合があります。
+-    以下のように、そのネットワークに接続しているコンピューターからコードをコピーした方が簡単な場合があります。
 - Android では、Johnathon Biersack 氏が提供しているこの [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) を使用することも可能です。
--   OMA-URI 設定をさらに追加することにより、複数のネットワークとキーを追加できます。
+-    OMA-URI 設定をさらに追加することにより、複数のネットワークとキーを追加できます。
 -  iOS でプロファイルを構成するには、Mac ステーションで Apple Configurator を使用します。 また、Johnathon Biersack 氏が提供する [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) を使用します。
 
 
-1.  Android または Windows 用に事前共有キーを使用した Wi-Fi プロファイル、または EAP ベースの Wi-Fi プロファイルを作成する場合、ポリシーを作成するときに、Wi-Fi プロファイルではなく、そのデバイスのプラットフォーム用の**カスタム構成**を選択します。
+1.    Android または Windows 用に事前共有キーを使用した Wi-Fi プロファイル、または EAP ベースの Wi-Fi プロファイルを作成する場合、ポリシーを作成するときに、Wi-Fi プロファイルではなく、そのデバイスのプラットフォーム用の**カスタム構成**を選択します。
 
-2.  名前と説明を入力します。
-3.  新しい OMA-URI 設定を追加します。
+2.    名前と説明を入力します。
+3.    新しい OMA-URI 設定を追加します。
 
-   a.   この Wi-Fi ネットワーク設定の名前を入力します。
+   a.    この Wi-Fi ネットワーク設定の名前を入力します。
 
-   b.   OMA-URI 設定の説明を入力するか、空白のままにします。
+   b.    OMA-URI 設定の説明を入力するか、空白のままにします。
 
-   c.   **データ型**: "String(XML)" に設定
+   c.    **データ型**: "String(XML)" に設定
 
-   d.   **OMA-URI**:
+   d.    **OMA-URI**:
 
     - **Android の場合**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Windows の場合**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml

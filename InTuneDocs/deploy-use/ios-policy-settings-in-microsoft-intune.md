@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: 05d47e6cf5c7b380ac981d06a3938f38b27a430b
@@ -85,7 +86,7 @@ Microsoft Intune の **iOS 全般構成ポリシー**を使用して、次の設
 |**管理対象アプリがデータを iCloud に同期することを許可する**|Intune で管理するアプリがユーザーの iCloud アカウントにデータを同期することを許可します。|
 |**Handoff が別のデバイスで作業を継続することを許可する**|ユーザーがある iOS デバイスで開始した作業を別の iOS または Mac OS X デバイスで続行できるようにします。|
 |**iCloud の写真共有を許可する**|デバイスの **iCloud の写真共有**を無効にするには、**[いいえ]** に設定します。|
-|**iCloud フォト ライブラリを許可する**|**[いいえ]** に設定すると、ユーザーがクラウドに写真やビデオを保存できる iCloud フォト ライブラリが使用できなくなります。   これを **[いいえ]** に設定すると、iCloud フォト ライブラリからデバイスに完全にダウンロードされていない写真はすべてデバイスから削除されます。|
+|**iCloud フォト ライブラリを許可する**|**[いいえ]** に設定すると、ユーザーがクラウドに写真やビデオを保存できる iCloud フォト ライブラリが使用できなくなります。    これを **[いいえ]** に設定すると、iCloud フォト ライブラリからデバイスに完全にダウンロードされていない写真はすべてデバイスから削除されます。|
 
 ### <a name="application-settings-for-the-browser"></a>ブラウザーのアプリケーション設定
 すべての設定は、iOS 8.0 以降に適用されます。

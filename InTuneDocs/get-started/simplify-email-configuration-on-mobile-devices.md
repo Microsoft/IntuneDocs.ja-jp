@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 1696c715-1e9a-401e-a530-77904fd189ad
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: bf25dd15aa9074692017d94bb94285b4c8e77ca8
@@ -34,8 +35,8 @@ Microsoft Intune は、Intune サービスによって管理される Windows、
 電子メール プロファイルを構成した後、Intune の条件付きアクセス ポリシーを使用して、会社の電子メールと Office 365 サービスへのアクセスを簡単に制限できます。 これらのポリシーによって、会社の電子メールと O365 サービスへのアクセスが、Intune に設定したルールを準拠しているデバイスに制限されることを保証できます。
 
 ## <a name="how-do-i-do-it"></a>実行方法
-1.  Windows、iOS、および Android デバイスで自動的に[エンド ユーザーの電子メール プロファイルを構成](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)します。
-2.  条件付きアクセス ポリシーを使用して、[会社の電子メールへのアクセスを制御](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)します。
+1.    Windows、iOS、および Android デバイスで自動的に[エンド ユーザーの電子メール プロファイルを構成](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)します。
+2.    条件付きアクセス ポリシーを使用して、[会社の電子メールへのアクセスを制御](/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)します。
 
 
 ### <a name="additional-information"></a>追加情報:

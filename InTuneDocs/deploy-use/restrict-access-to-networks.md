@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
 ms.openlocfilehash: 8ef24e4d413662012f091c1be318d1d274e16439
@@ -154,7 +155,7 @@ ISE 管理コンソールで、次の設定値を指定します。
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Intune テナントと Cisco ISE サーバー間で共有される情報
 次の表には、Intune テナントと Intune によって管理されるデバイス用の Cisco ISE サーバー間で共有される情報を一覧します。
 
-|プロパティ|  説明|
+|プロパティ|    説明|
 |---------------|------------------------------------------------------------|
 |complianceState|デバイスが準拠か非準拠かを示す true または false の文字列。|
 |isManaged|クライアントが Intune で管理されるかどうかを示す true または false の文字列。|

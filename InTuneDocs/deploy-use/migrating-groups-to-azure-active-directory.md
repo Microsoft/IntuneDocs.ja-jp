@@ -11,6 +11,7 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: dd4c8f1d810338912b4926be8419ccf9a52ae722
 ms.openlocfilehash: 8d3900da91c89700b97d8774f893d82d3a74ea83
@@ -92,7 +93,7 @@ Intune では、すべてのグループに親グループが必要です。 グ
 
 ## <a name="how-to-get-more-information"></a>詳しい情報の入手方法
 
-[intunegrps@microsoft.com](mailto:intunegrps@microsoft.com) で移行チームにお問い合わせください。  
+[intunegrps@microsoft.com](mailto:intunegrps@microsoft.com) で移行チームにお問い合わせください。    
      
 
 

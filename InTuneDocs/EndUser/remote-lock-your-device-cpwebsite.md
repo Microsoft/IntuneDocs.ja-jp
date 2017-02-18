@@ -16,6 +16,7 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
 ms.openlocfilehash: a888592c4bf4f71cba44cebadb5cf90d2cc9aef6
@@ -39,13 +40,13 @@ ms.openlocfilehash: a888592c4bf4f71cba44cebadb5cf90d2cc9aef6
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>リモート ロックを使用してデバイスをロックするには
 
-1.  [ポータル サイト Web サイト](http://portal.manage.microsoft.com)で、ロックするデバイスの名前をタップします。
+1.    [ポータル サイト Web サイト](http://portal.manage.microsoft.com)で、ロックするデバイスの名前をタップします。
 
-2.  **[リモート ロック]** をタップします。
+2.    **[リモート ロック]** をタップします。
 
     ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
-3.  デバイスをロックしようとしていることを伝える警告が画面に表示されます。 **[リモート ロック]** をタップすると、ポータル サイト Web サイトはデバイスのロックを試行します。
+3.    デバイスをロックしようとしていることを伝える警告が画面に表示されます。 **[リモート ロック]** をタップすると、ポータル サイト Web サイトはデバイスのロックを試行します。
 
     **[リモート ロック]** をタップすると、"リモート ロック保留中" というメッセージが表示されます。  リモート ロックが成功した場合、状態が ”リモート ロック成功” に変わります。
 

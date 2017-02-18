@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: fc2fb3c2c59b4fc2de048d8a27a6eadec592fba3
@@ -32,9 +33,9 @@ Microsoft Intune では、エンド ユーザーが選択したデバイスか�
 そうであれば、Microsoft Intune で、1 つの共通のポータル ([Intune ポータル サイトまたは Web サイト](/intune/enduser/company-portal-frequently-asked-questions)) に、アプリ (Office モバイル、社内向けの基幹業務やその他のモバイルまたはデスクトップアプリ) を発行できます。
 
 ## <a name="how-do-i-do-it"></a>実行方法
-1.  Intune モバイルデバイス管理に[デバイスを登録](/intune/deploy-use/enroll-devices-in-microsoft-intune)します。
-2.  登録されたデバイスに展開する[アプリを Intuneに追加](/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)します。
-3.  登録されたデバイスに[ Intune を使用してアプリを展開](/intune/deploy-use/deploy-apps)します。
+1.    Intune モバイルデバイス管理に[デバイスを登録](/intune/deploy-use/enroll-devices-in-microsoft-intune)します。
+2.    登録されたデバイスに展開する[アプリを Intuneに追加](/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)します。
+3.    登録されたデバイスに[ Intune を使用してアプリを展開](/intune/deploy-use/deploy-apps)します。
 
 ### <a name="additional-information"></a>追加情報:
 アプリのデータ損失保護を管理するために Intune の MAM 機能を使用して Office モバイル アプリを発行する場合は、MAM ポリシーを割り当てるエンド ユーザーに [Office 365 のユーザーライセンスを割り当てる](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)必要があります。

@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
 ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
@@ -31,10 +32,10 @@ ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
 
 トラブルシューティングを開始する前に、登録を有効にするように Intune を構成していることを確認してください。 構成要件は次で確認できます。
 
--   [Microsoft Intune にデバイスを登録する準備](/intune/deploy-use/prerequisites-for-enrollment)
--   [iOS および Mac のデバイス管理をセットアップする](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--   [Microsoft Intune を使用して Windows Phone と Windows 10 Mobile の管理をセットアップする](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
--   [Windows デバイスの管理をセットアップする](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-    [Microsoft Intune にデバイスを登録する準備](/intune/deploy-use/prerequisites-for-enrollment)
+-    [iOS および Mac のデバイス管理をセットアップする](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-    [Microsoft Intune を使用して Windows Phone と Windows 10 Mobile の管理をセットアップする](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+-    [Windows デバイスの管理をセットアップする](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
 
 管理対象デバイスのユーザーが登録ログと診断ログを収集しておくと、管理者が確認できます。 ユーザーがログを収集する手順については、次のページを参照してください。
@@ -227,16 +228,16 @@ Android デバイスでは、[SSL Server hello](https://technet.microsoft.com/li
 
 この問題を解決するには、AD FS サーバーまたはプロキシでコンピューターの個人証明書に証明書を次のようにインポートします。
 
-1.  ADFS サーバーとプロキシ サーバーで、ローカル コンピューターの証明書管理コンソールを起動します。**[スタート]** ボタンを右クリックし、**[ファイル名を指定して実行]** を選択し、「**certlm.msc**」と入力します。
-2.  **[個人用]** を展開し、**[証明書]** を選択します。
-3.  AD FS サービス通信の証明書を見つけ (公的に署名された証明書)、ダブルクリックしてそのプロパティを表示します。
-4.  **[証明のパス]** タブを選択し、証明書の親証明書を確認します。
-5.  親証明書ごとに、**[証明書の表示]** を選択します。
-6.  **[詳細]** タブを選択し、**[ファイルにコピー]** を選択します。
-7.  ウィザードの指示に従い、証明書の公開鍵をファイル場所にエクスポートします (保存します)。
-8.  手順 3 でエクスポートした親証明書を Local Computer\Personal\Certificates にインポートします。**[証明書]** を右クリックし、**[すべてのタスク]**、**[インポート]** の順に選択し、ウィザードの指示に従って証明書をインポートします。
-9.  AD FS サーバーを再起動します。
-10. すべての AD FS サーバーとプロキシ サーバーで上記の手順を繰り返します。
+1.    ADFS サーバーとプロキシ サーバーで、ローカル コンピューターの証明書管理コンソールを起動します。**[スタート]** ボタンを右クリックし、**[ファイル名を指定して実行]** を選択し、「**certlm.msc**」と入力します。
+2.    **[個人用]** を展開し、**[証明書]** を選択します。
+3.    AD FS サービス通信の証明書を見つけ (公的に署名された証明書)、ダブルクリックしてそのプロパティを表示します。
+4.    **[証明のパス]** タブを選択し、証明書の親証明書を確認します。
+5.    親証明書ごとに、**[証明書の表示]** を選択します。
+6.    **[詳細]** タブを選択し、**[ファイルにコピー]** を選択します。
+7.    ウィザードの指示に従い、証明書の公開鍵をファイル場所にエクスポートします (保存します)。
+8.    手順 3 でエクスポートした親証明書を Local Computer\Personal\Certificates にインポートします。**[証明書]** を右クリックし、**[すべてのタスク]**、**[インポート]** の順に選択し、ウィザードの指示に従って証明書をインポートします。
+9.    AD FS サーバーを再起動します。
+10.    すべての AD FS サーバーとプロキシ サーバーで上記の手順を繰り返します。
 これで、Android デバイスでポータル サイトにサインインできるようになります。
 
 **証明書が正しくインストールされていることを確認するには**:

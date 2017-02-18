@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
@@ -40,9 +41,9 @@ ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
     
     - **設定の名前。** 「**PreventStartPackages**」と入力します。
     - **設定の説明。** "実行をブロックするアプリの一覧" のようなオプションの説明を入力します。
-    -   **データ型。** ドロップダウン リストで **[文字列]** を選びます。
-    -   **OMA-URI。** 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**」と入力します。
-    -   **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : , ****|** を使用できます。 (例: package1;package2;)
+    -     **データ型。** ドロップダウン リストで **[文字列]** を選びます。
+    -     **OMA-URI。** 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**」と入力します。
+    -     **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : , ****|** を使用できます。 (例: package1;package2;)
 
     他のすべてのアプリの実行中にユーザーが Google Play ストアからインストールできるアプリの一覧の場合:
 

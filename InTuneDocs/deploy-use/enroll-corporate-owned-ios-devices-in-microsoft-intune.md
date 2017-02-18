@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
 ms.openlocfilehash: 03f5da3a819768ff8221257f091a000f18f00fb4
@@ -56,8 +57,8 @@ DEP では、DEP を通じて購入したデバイスに "無線で" 登録プ�
 
 以下をサポートするには、ユーザー アフィニティが必要です。
   - モバイル アプリケーション管理 (MAM) アプリ
-  - 電子メールと会社データへの条件付きアクセス
-  - ポータル サイト アプリ
+  -    電子メールと会社データへの条件付きアクセス
+  -    ポータル サイト アプリ
 
 **ユーザー アフィニティありで企業所有 iOS デバイスを登録する方法**
 1. ユーザーは、デバイスの電源をオンにすると、セットアップ アシスタントを完了するように求められます。 セットアップ中にユーザーは資格情報を要求されます。 Intune のサブスクリプションに関連付けられている資格情報 (つまり一意の個人名または UPN) を使用する必要があります。

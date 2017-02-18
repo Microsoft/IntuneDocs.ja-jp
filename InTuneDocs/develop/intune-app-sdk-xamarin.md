@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: oydang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
 ms.openlocfilehash: 74607fc704234e6ac85eae3bf55c186000c6e68a
@@ -57,22 +58,22 @@ Intune App SDK Xamarin コンポーネントで開発された Xamarin アプリ
 
 ## <a name="get-started"></a>作業開始
 
-1.  **Xamarin-component.exe** を[ここ](https://components.xamarin.com/submit/xpkg)からダウンロードし、抽出します。
+1.    **Xamarin-component.exe** を[ここ](https://components.xamarin.com/submit/xpkg)からダウンロードし、抽出します。
 
 2. Microsoft Intune MAM Xamarin コンポーネントの[ライセンス条項](https://components.xamarin.com/license/microsoft.intune.mam)を読みます。
 
-3.  [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) または [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) から Intune App SDK Xamarin コンポーネント フォルダーをダウンロードし、抽出します。 手順 1 と手順 2 でダウンロードしたファイルを両方とも同じディレクトリ レベルに配置する必要があります。
+3.    [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) または [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) から Intune App SDK Xamarin コンポーネント フォルダーをダウンロードし、抽出します。 手順 1 と手順 2 でダウンロードしたファイルを両方とも同じディレクトリ レベルに配置する必要があります。
 
-4.  監理者として起動したコマンド ラインで、`Xamain.Component.exe install <.xam> file` を実行します。
+4.    監理者として起動したコマンド ラインで、`Xamain.Component.exe install <.xam> file` を実行します。
 
-5.  Visual Studio で、前に作成した Xamarin プロジェクトの**コンポーネント**を右クリックします。
+5.    Visual Studio で、前に作成した Xamarin プロジェクトの**コンポーネント**を右クリックします。
 
-6.  **[コンポーネントの編集]** を選択し、コンピューターにローカル ダウンロードした Intune App SDK コンポーネントを追加します。
+6.    **[コンポーネントの編集]** を選択し、コンピューターにローカル ダウンロードした Intune App SDK コンポーネントを追加します。
 
 
 
 ## <a name="enabling-intune-mam-in-your-ios-mobile-app"></a>iOS モバイル アプリで Intune MAM を有効にする
-1.  Intune App SDK を初期化するには、`AppDelegate.cs` クラスで何らかの API を呼び出す必要があります。 たとえば、
+1.    Intune App SDK を初期化するには、`AppDelegate.cs` クラスで何らかの API を呼び出す必要があります。 たとえば、
 
       ```csharp
       public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
@@ -83,7 +84,7 @@ Intune App SDK Xamarin コンポーネントで開発された Xamarin アプリ
 
       ```
 
-2.  コンポーネントが追加され、初期化されたので、App SDK を iOS モバイル アプリに組み込むための一般的な手順を実行できます。 ネイティブ iOS アプリを有効にする方法は、「[iOS 用 Intune アプリ SDK 開発者ガイド](intune-app-sdk-ios.md)」にすべて記載されています。
+2.    コンポーネントが追加され、初期化されたので、App SDK を iOS モバイル アプリに組み込むための一般的な手順を実行できます。 ネイティブ iOS アプリを有効にする方法は、「[iOS 用 Intune アプリ SDK 開発者ガイド](intune-app-sdk-ios.md)」にすべて記載されています。
 3. **重要**: Xamarin 基盤の iOS アプリに固有の変更がいくつかあります。 たとえば、キーチェーン グループを有効にするとき、以下を追加し、コンポーネントに含めた Xamarin サンプル アプリを含めます。 以下は、キーチェーン アクセス グループで利用されるようなグループの例です。
 
       ```xml
@@ -109,15 +110,15 @@ UI フレームワークを利用しない Xamarin 基盤の Android アプリ�
 
 Xamarin Forms とその他の UI フレームワークの場合、「`MAM.Remapper`」と呼ばれているツールがあります。 このツールは、ユーザーに代わってクラス置換を実行します。 ただし、次の手順を実行する必要があります。
 
-1.  ` Microsoft.Intune.MAM.Remapper.Tasks` nuget パッケージ バージョン 0.1.0.0 以降の参照を追加します。
+1.    ` Microsoft.Intune.MAM.Remapper.Tasks` nuget パッケージ バージョン 0.1.0.0 以降の参照を追加します。
 
-2.  Android csproj に次の行を追加します。
+2.    Android csproj に次の行を追加します。
   ```xml
   <Import
   Project="$(NugetPack)\\Microsoft.Intune.MAM.Remapper.Tasks.0.1.X.X\\build\\MonoAndroid10\\Microsoft.Intune.MAM.Remapper.targets" />
   ```
 
-3.  追加した `remapping-config.json` ファイルのビルド アクションを **RemappingConfigFile** に設定します。 追加した `remapping-config.json` は、Xamarin.Forms とのみ連動します。 その他の UI フレームワークの場合、Remapper nuget に付属する Readme を参照してください。
+3.    追加した `remapping-config.json` ファイルのビルド アクションを **RemappingConfigFile** に設定します。 追加した `remapping-config.json` は、Xamarin.Forms とのみ連動します。 その他の UI フレームワークの場合、Remapper nuget に付属する Readme を参照してください。
 
 ## <a name="test-your-app"></a>アプリのテスト
 

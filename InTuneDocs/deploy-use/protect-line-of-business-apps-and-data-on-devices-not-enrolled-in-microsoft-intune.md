@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 1d3efa5d35e346ea668c71ba8b46ba21b11c39e7
@@ -46,7 +47,7 @@ MAM ポリシーと基幹業務アプリを関連付けるには、次の手順�
 2. **[基幹業務アプリ]** ブレードで、**[カスタム アプリの追加]** を選択します。
 
   ![[カスタム アプリの追加] ボタンが上部に示された [基幹業務アプリ] ブレードのスクリーンショット](../media/mam-azure-portal-add-lob-app-action.png)
-3.  アプリの名前、[アプリ ID] フィールドにバンドル ID、プラットフォーム (iOS または Android) を指定します。
+3.    アプリの名前、[アプリ ID] フィールドにバンドル ID、プラットフォーム (iOS または Android) を指定します。
 
   ![[カスタム アプリの追加] ブレードのスクリーン ショット](../media/mam-azure-portal-add-app-details.png)
 
@@ -71,11 +72,11 @@ MAM ポリシーと基幹業務アプリを関連付けるには、次の手順�
 ##  <a name="remove-apps"></a>アプリを削除する
 アプリの一覧から基幹業務アプリを削除できます。 これを行うと、アプリは一覧から削除され、MAM ポリシーとの関連付けが削除されますが、ユーザーのデバイスからアプリが削除されたり、アンインストールされたりすることはありません。  
 
-1.  [Azure Portal](https://portal.azure.com/) の **[Intune モバイル アプリケーション管理]**、**[設定]** に進みます。 **[設定]** ブレードで、**[基幹業務]** を選択し、既存のアプリの一覧を開きます。  
-2.  削除するアプリを選択し、**(...) のコンテキスト** メニューを選択します。
+1.    [Azure Portal](https://portal.azure.com/) の **[Intune モバイル アプリケーション管理]**、**[設定]** に進みます。 **[設定]** ブレードで、**[基幹業務]** を選択し、既存のアプリの一覧を開きます。  
+2.    削除するアプリを選択し、**(...) のコンテキスト** メニューを選択します。
 
   ![省略記号がある基幹業務アプリのブレードのスクリーンショット](../media/mam-azure-portal-lob-context-menu.png)
-3.  **[アプリケーションの削除]** を選択しアプリを削除します。
+3.    **[アプリケーションの削除]** を選択しアプリを削除します。
 
   ![[アプリケーションの削除] オプションがある基幹業務ブレードのスクリーンショット](../media/mam-azure-portal-delete-app.png)
 
