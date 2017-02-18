@@ -1,11 +1,11 @@
 ---
-title: "デバイスを暗号化する | Microsoft Docs"
-description: "Android デバイスを暗号化する方法について説明します"
+title: "暗号化を使用して Android デバイスを保護する方法 | Microsoft Docs"
+description: "Android デバイスを保護する"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/7/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,24 @@ ms.technology:
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 54439c96b75efd60e2068207eb1602e669504831
+ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
+ms.openlocfilehash: 727b99f9ca2f0322eb1fee5fec29cd71dc901e01
 
 
 ---
 
 
-# <a name="encrypt-your-device"></a>デバイスを暗号化する
+# <a name="how-to-protect-your-android-device-using-encryption"></a>暗号化を使用して Android デバイスを保護する方法
 
-勤務先の会社や組織で、社内のファイルや電子メール、データにアクセスする Android デバイスの暗号化が求められている場合、以下の手順に従ってお使いのデバイスを暗号化してください。 IT 管理者が要求する場合、暗号化の前に PIN またはパスワードを設定するように求められることがあります。
+デバイスを暗号化するときに、承認されていないユーザーがアクセスできないように保護コード層でデバイスに関する情報をラップします。 ユーザーの情報を確実にセキュリティで保護するために、組織ではまず、企業のファイル、電子メール、またはデータにアクセスする前にユーザーに Android デバイスを暗号化するよう求める必要があります。
+
+> [!Note]
+> IT 管理者が要求する場合、暗号化の前に PIN またはパスワードを設定するように求められることがあります。
 
 電話の登録を解除しても、暗号化は維持されます。
 
@@ -63,6 +68,6 @@ ms.openlocfilehash: 54439c96b75efd60e2068207eb1602e669504831
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO5-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: arob98
-ms.date: 07/19/2016
+ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1daefaabe8877ced9b090f7316e525829e8c673d
+ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
+ms.openlocfilehash: f75c4a6412d34923ec45524d765d3eb270f15e13
 
 
 ---
@@ -27,6 +28,9 @@ ms.openlocfilehash: 1daefaabe8877ced9b090f7316e525829e8c673d
 Intune は、Mac コンピューターで実行される [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) ツールを使用した、企業所有の iOS デバイスの登録をサポートします。 このプロセスはデバイスを工場出荷時の設定に戻さず、定義済みのポリシーでデバイスを登録します。 この方法は、**ユーザー アフィニティなし**になっているデバイス向けであり、iOS デバイスを Mac コンピューターに USB 接続して、会社の登録をセットアップする必要があります。
 
 iOS デバイスを直接登録する場合は、デバイスのシリアル番号を取得しなくてもデバイスを登録することができます。 登録時に Intune がデバイス名をキャプチャする前に、デバイスを識別するための名前を指定することもできます。 会社のポータル アプリは、直接登録されているデバイスではサポートされていません。 このガイドでは、Mac コンピューターで Apple Configurator 2.0 を使用していることを想定しています。
+
+>[!NOTE]
+>この登録方法は、[デバイス登録マネージャー](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)の方法と同時に使用することはできません。
 
 1.  まだ定義していない場合は、Apple Configurator を使用して、iOS デバイス用のデバイス登録プロファイルを作成してください。 デバイス登録プロファイルで、デバイスに適用する設定を定義します。
 
@@ -58,7 +62,7 @@ iOS デバイスを直接登録する場合は、デバイスのシリアル番�
 
 6.  ダウンロードした .mobileconfig ファイルを Mac コンピューターにコピーして、ファイルを転送します。
     > [!NOTE]
-    > 登録プロファイルの URL は、エクスポートしたときから 2 週間有効です。 2 週間後、セットアップ アシスタントで iOS デバイスを登録するには、新しい登録プロファイルの URL をエクスポートする必要があります。
+    > 登録プロファイルの URL は、エクスポートしたときから&2; 週間有効です。 2 週間後、セットアップ アシスタントで iOS デバイスを登録するには、新しい登録プロファイルの URL をエクスポートする必要があります。
 
 7.  Apple Configurator を使用してデバイスを準備します。 モバイル デバイスを管理するために、iOS デバイスを Mac コンピューターに接続および登録します。
 
@@ -90,6 +94,6 @@ iOS デバイスを直接登録する場合は、デバイスのシリアル番�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO5-->
 
 

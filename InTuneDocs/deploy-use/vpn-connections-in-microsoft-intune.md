@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 02/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0ba06e1d698e051ba72e9f88a654d37041c57cf1
-ms.openlocfilehash: cd9785889ca8b2a78a49ea2b04284d32b3fa8a65
+ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
+ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
 
 
 ---
@@ -40,20 +41,16 @@ ms.openlocfilehash: cd9785889ca8b2a78a49ea2b04284d32b3fa8a65
 
 VPN プロファイルの構成オプションは、選択したデバイスの種類によって異なります。
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 ## <a name="vpn-connection-types"></a>VPN 接続の種類
 
 Intune では、次の接続の種類を使用する VPN プロファイルを作成できます。
 
 
-
-
 接続の種類 |iOS および Mac OS X  |Android と Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8。1|Windows 10 デスクトップおよび Windows 10 Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
-Cisco AnyConnect|○ |○   |[いいえ]    |いいえ  |いいえ    | ○ (OMA-URI、Windows 10 Mobile のみ)|     
+Cisco AnyConnect|○ |○   |[いいえ]    |いいえ  |いいえ    | ○ (OMA-URI、Windows&10; Mobile のみ)|     
 Cisco (IPsec)|Yes |○   |[いいえ]  |いいえ  |いいえ | いいえ|
-Citrix|Yes |[いいえ]   |いいえ  |いいえ  |いいえ | いいえ|
+Citrix|Yes |○ (Android のみ)   |いいえ  |いいえ  |いいえ | いいえ|
 Pulse Secure|○  |○ |○   |○  |○| ○|        
 F5 Edge Client|○ |○ |○ |○  |   ○ |  ○|   
 Dell SonicWALL Mobile Connect|○ |○ |○ |○ |○ |○|         
@@ -73,7 +70,7 @@ L2TP|iOS カスタム プロファイル|いいえ |いいえ |いいえ|○ (OM
 
 ## <a name="methods-of-securing-vpn-profiles"></a>VPN プロファイルをセキュリティで保護する方法
 
-VPN プロファイルは、さまざまな製造元から提供される多くの異なる接続の種類およびプロトコルに対応しています。 これらの接続は、通常、次の 2 つの方法のどちらかを使用してセキュリティで保護されます。
+VPN プロファイルは、さまざまな製造元から提供される多くの異なる接続の種類およびプロトコルに対応しています。 これらの接続は、通常、次の&2; つの方法のどちらかを使用してセキュリティで保護されます。
 
 ### <a name="certificates"></a>証明書
 
@@ -130,7 +127,7 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
 **プロキシ サーバーを使用する** (iOS、Mac OS X、Windows 8.1、Windows Phone 8.1 のみ)|VPN サーバーが接続にプロキシ サーバーを必要とする場合は、このオプションを選択し、プロキシ サーバーのアドレスとポート番号を指定します。 詳細については、Windows Server のマニュアルを参照してください。
 **ローカル アドレスのプロキシ設定をバイパスする** (iOS、Mac OS X、Windows 8.1、Windows Phone 8.1 のみ)|VPN サーバーが接続にプロキシ サーバーを必要とする場合、指定したローカル アドレスに対してプロキシ サーバーを使用しないようにするには、このオプションを選択します。 詳細については、Windows Server のマニュアルを参照してください。
 **カスタム XML** (Windows 8.1 以降および Windows Phone 8.1 以降)|VPN 接続を構成するカスタムの XML コマンドを指定します。 **[Pulse Secure]** の例: &lt;pulse-schema&gt;&lt;isSingleSignOnCredential&gt;true&lt;/isSingleSignOnCredential&gt;&lt;/pulse-schema&gt;。 **[CheckPoint Mobile VPN]** の例: &lt;CheckPointVPN port="443" name="CheckPointSelfhost" sso="true"  debug="3" /&gt;。 **[Dell SonicWALL Mobile Connect]** の例: &lt;MobileConnect&gt;&lt;Compression&gt;false&lt;/Compression&gt;&lt;debugLogging&gt;True&lt;/debugLogging&gt;&lt;packetCapture&gt;False&lt;/packetCapture&gt;&lt;/MobileConnect&gt;。 **[F5 Edge Client]** の例: &lt;f5-vpn-conf&gt;&lt;single-sign-on-credential/&gt;&lt;/f5-vpn-conf&gt;。 カスタムの XML コマンドの記述方法については、各製造元の VPN に関するマニュアルを参照してください。
-**DNS サフィックス検索一覧** (Windows Phone 8.1 のみ)|各行に 1 つずつ DNS サフィックスを指定します。 短い名前を使用して Web サイトに接続するときに、指定した各 DNS サフィックスが検索されます。 たとえば、**domain1.contoso.com** と **domain2.contoso.com** の DNS サフィックスを指定して URL **http://mywebsite** にアクセスすると、URL **http://mywebsite.domain1.contoso.com** と **http://mywebsite.domain2.contoso.com** が検索されます。
+**DNS サフィックス検索一覧** (Windows Phone 8.1 のみ)|各行に&1; つずつ DNS サフィックスを指定します。 短い名前を使用して Web サイトに接続するときに、指定した各 DNS サフィックスが検索されます。 たとえば、**domain1.contoso.com** と **domain2.contoso.com** の DNS サフィックスを指定して URL **http://mywebsite** にアクセスすると、URL **http://mywebsite.domain1.contoso.com** と **http://mywebsite.domain2.contoso.com** が検索されます。
 **企業の Wi-Fi ネットワークに接続しているときは VPN をバイパスする** (Windows Phone 8.1 のみ)|デバイスが企業の Wi-Fi ネットワークに接続しているときは VPN 接続を使用しないことを指定するには、このオプションを選択します。
 **家庭の Wi-Fi ネットワークに接続しているときは VPN をバイパスする** (Windows Phone 8.1 のみ)|デバイスが家庭の Wi-Fi ネットワークに接続しているときは VPN 接続を使用しないことを指定するには、このオプションを選択します。
 
@@ -145,7 +142,7 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
 
 
 > [!IMPORTANT]
-> アプリごとの VPN の構成で使用するためにコンパイルするアプリのすべてのリストをセキュリティで保護することをお勧めします。 承認されていないユーザーが変更したリストをアプリごとの VPN アプリ リストにインポートすると、アクセス権のないアプリへの VPN アクセスが承認される可能性があります。 アプリ リストをセキュリティで保護する 1 つの方法は、アクセス制御リスト (ACL) を使用することです。
+> アプリごとの VPN の構成で使用するためにコンパイルするアプリのすべてのリストをセキュリティで保護することをお勧めします。 承認されていないユーザーが変更したリストをアプリごとの VPN アプリ リストにインポートすると、アクセス権のないアプリへの VPN アクセスが承認される可能性があります。 アプリ リストをセキュリティで保護する&1; つの方法は、アクセス制御リスト (ACL) を使用することです。
 
 企業の境界設定を使用する必要がある例として、次のような状況が考えられます。 リモート デスクトップ用のみに VPN を有効にする場合、プロトコル番号 27 のトラフィックを外部ポート 3996 で許可するネットワーク トラフィック規則を作成します。 これにより、その他のトラフィックでは、VPN が使用されません。
 
@@ -163,13 +160,13 @@ iOS 8.0 以降のデバイスではオンデマンド VPN を構成すること�
 > アプリごとの VPN とオンデマンド VPN を同じポリシーで使用することはできません。
 
 1. ポリシーの構成ページで、**[この VPN 接続に関するオンデマンド ルール]** を見つけます。 列のラベルには **[一致]** (ルールによって確認される条件)、および **[アクション]** (条件が一致した場合にポリシーによってトリガーされるアクション) があります。
-2. **[追加]** を選択してルールを作成します。 ルールで設定可能な一致条件には 2 つの種類があります。 ルールごとに構成できるのはこれらの種類のうち 1 つのみです。
+2. **[追加]** を選択してルールを作成します。 ルールで設定可能な一致条件には&2; つの種類があります。 ルールごとに構成できるのはこれらの種類のうち&1; つのみです。
   - **SSID** は、ワイヤレス ネットワークを参照します。
   - **DNS 検索ドメイン**は、以下を参照します。  完全修飾名 (*team. corp.contoso.com* など) を使用するか、ドメイン (*contoso.com* など。"* *.contoso.com*” を使用するのと同等です) を使用できます。
 3. オプション: URL 文字列プローブ (ルールによってテストとして使用される URL) を入力します。 このプロファイルがインストールされているデバイスがリダイレクトなしでこの URL にアクセスできる場合は、VPN が確立され、デバイスが接続先の URL に接続されます。 ユーザーには、URL 文字列プローブ サイトは表示されません。 URL 文字列プローブの例としては、VPN への接続前にデバイスのポリシー準拠を確認する監査 Web サーバーのアドレスがあります。 別の例としては、デバイスを VPN 経由でターゲット URL に接続する前に、サイトに接続する VPN の機能をテストする URL があります。
 4. 次のアクションのうちいずれかを選択します。
   - **接続**
-  - **[接続の評価]**: 次の 3 種類の設定があります。a.  **[ドメインのアクション]** - **[必要な場合に接続する]** または **[接続しない]** を選択します。
+  - **[接続の評価]**: 次の&3; 種類の設定があります。a.  **[ドメインのアクション]** - **[必要な場合に接続する]** または **[接続しない]** を選択します。
      b.  **[ドメインのコンマ区切りリスト]** - これは、**[ドメインのアクション]** で **[必要な場合に接続する]** を選択した場合にのみ構成します。
      c.  **[必要な URL 文字列プローブ]** - HTTP または HTTPS (優先) URL (*https://vpntestprobe.contoso.com* など)。 ルールにより、このアドレスからの応答があるかどうかが確認されます。 応答がなく、**[ドメインのアクション]** が **[必要に応じて接続]** の場合は、VPN がトリガーされます。
      > [!TIP]
@@ -187,7 +184,7 @@ iOS 8.0 以降のデバイスではオンデマンド VPN を構成すること�
 
 2.  **[展開の管理]** ダイアログ ボックスで、次の操作を実行します。
 
-    -   ポリシーを展開するには、ポリシーを展開する対象となる 1 つ以上のグループを選択して、**[追加]** &gt; **[OK]** の順に選択します。
+    -   ポリシーを展開するには、ポリシーを展開する対象となる&1; つ以上のグループを選択して、**[追加]** &gt; **[OK]** の順に選択します。
 
     -   ポリシーを展開せずにダイアログ ボックスを閉じるには、**[キャンセル]** を選択します。
 
@@ -198,8 +195,6 @@ iOS 8.0 以降のデバイスではオンデマンド VPN を構成すること�
 
 
 
-
-
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO1-->
 
 
