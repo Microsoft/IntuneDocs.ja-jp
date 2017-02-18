@@ -1,11 +1,11 @@
 ---
-title: "iOS デバイスの登録を解除するとどうなるか | Microsoft Docs"
+title: "iOS または macOS デバイスの登録を解除するとどうなるか  | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,20 @@ ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: esmich
+ms.reviewer: esmich, elocholi
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: e88c9d7d65cb9408b46a5ebc8b1f1d011bdfc1c0
+ms.sourcegitcommit: 9b2eba939bccf5b1296e21868fdf3af93297b42c
+ms.openlocfilehash: e8065b2964e8995a58a2aa3e6322fb235f0829af
 
 
 ---
 
 
-# <a name="what-happens-if-you-unenroll-your-ios-device-from-intune"></a>Intune から iOS デバイスの登録を解除するとどうなりますか。
+# <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>Intune から iOS または macOS デバイスの登録を解除するとどうなるか
 
-Intune から iOS デバイスの登録を解除すると次のようになります。
+Intune から iOS または macOS デバイスの登録を解除すると、次のようになります。
 
 -   ポータル サイトにお使いのデバイスが表示されなくなります。
 
@@ -48,6 +49,6 @@ Intune から iOS デバイスの登録を解除すると次のようになり�
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 

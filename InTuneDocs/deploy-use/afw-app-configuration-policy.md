@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/3/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 008c0d20312e90f3897c3da8ae2226e3e2595225
-ms.openlocfilehash: 6cb6b4b989d88289c5dffb693f98198ba6439aae
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 58671d037c7f62e5fdaa56657737a4470c90bdb7
 
 
 ---
@@ -28,19 +29,17 @@ ms.openlocfilehash: 6cb6b4b989d88289c5dffb693f98198ba6439aae
 
 Microsoft Intune のモバイル アプリ構成ポリシーを使用して、ユーザーがアプリを実行するときに必要となる可能性がある設定を指定できます。 たとえば、アプリは次の内容を指定することをユーザーに要求することがあります。
 
--   カスタム ポート番号。
+-   カスタム ポート番号
+-   言語の設定
+-   会社のロゴなどのブランドの設定
 
--   言語設定。
+ユーザーが設定を誤って入力すると、ヘルプ デスクの負荷が増加し、新しいアプリの採用が遅くなる可能性があります。
 
--   会社のロゴなどのブランドの設定。
-
-ユーザーがこれらの設定を誤って入力すると、ヘルプ デスクの負荷が増加し、新しいアプリの採用が遅くなる可能性もあります。
-
-モバイル アプリ構成ポリシーを使用すると、アプリを実行する前にこれらの設定をユーザーに展開することで、これらの問題を排除できます。 設定が自動的に指定されるため、ユーザーの操作は不要です。
+モバイル アプリ構成ポリシーを使用すると、ユーザーがアプリを実行する前にこれらの設定をデバイスに展開することができます。 設定は自動的に指定されるため、ユーザーの操作は不要です。
 
 アプリ構成ポリシーを利用するには、アプリの開発元が作成時にエンタープライズ アプリ構成を公開している必要があります。 たとえば、Google Chrome は、既定のブックマーク、許可するサイト、拒否するサイトの設定を公開しているので、アプリ構成ポリシーを利用できます。 このような設定がサポートされているかどうか、およびポリシーで指定する方法については、アプリの開発元に問い合わせてください。
 
-アプリ構成ポリシーは、構成するアプリを展開したユーザーと同じユーザーに展開します。 ポリシー設定は、アプリの実行時に必ず使用されます。
+アプリ構成ポリシーは、構成するアプリを展開したユーザーと同じユーザーに展開します。 アプリ設定はアプリの実行時に適用されます。
 
 ## <a name="configure-a-mobile-app-configuration-policy"></a>モバイル アプリ構成ポリシーを構成する
 
@@ -80,6 +79,6 @@ Android for Work デバイスにアプリを展開する方法については、
 
 
 
-<!--HONumber=Jan17_HO5-->
+<!--HONumber=Feb17_HO1-->
 
 

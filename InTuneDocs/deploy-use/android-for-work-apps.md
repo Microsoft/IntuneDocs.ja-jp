@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/6/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: cd0bbd90-d3fe-4efc-83fd-d1f3f86800d4
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: c3a46f9a8e66a1d7de8878105f5752b17a3857b7
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: e67ec317b22e18d0be8bca449b9382f74935d6e8
 
 
 ---
@@ -24,10 +25,9 @@ ms.openlocfilehash: c3a46f9a8e66a1d7de8878105f5752b17a3857b7
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 Android for Work デバイスにアプリを展開する方法は、標準の Android デバイスに展開する場合と異なります。 Android for Work 用にインストールするすべてのアプリは、Google Play for Work ストアから入手します。 ストアにログインし、目的のアプリを検索し、承認します。
 承認したアプリは、Intune コンソールの **[ボリューム購入アプリ]** ノードに表示されます。 ここでアプリの展開を管理する方法は、他のアプリを展開する方法と同じです。
+
 また、独自の基幹業務 (LOB) アプリを作成している場合、そのアプリも展開できます。 LOB アプリを展開するには、Google Developer アカウントにサインアップする必要があります。サインアップすると、Google Play ストアの非公開領域にアプリを公開し、Intune と同期できるようになります。
 
 ## <a name="before-you-start"></a>アップグレードを開始する前に
@@ -40,9 +40,9 @@ Android for Work デバイスにアプリを展開する方法は、標準の An
 1. [Google Play for Work ストア](https://play.google.com/work)にアクセスします。 Intune と Android for Work 間の接続を構成するときに使用したものと同じアカウントでサインインします。
 2. Intune を使用して展開するアプリをストアで検索します。
 3. 選択するアプリのページで、**[承認]** を選択します。 この例では、Microsoft Excel アプリを選択しました。<br>
-  ![アプリの承認例](/intune/deploy-use/media/approve.png)
+  ![アプリの承認例](media/approve.png)
 4. 多様な操作を実行するアクセス許可をアプリに付与するように求めるウィンドウが開きます。 続行するには、**[承認]** を選択する必要があります。<br>
-  ![アプリのアクセス許可の承認例](/intune/deploy-use/media/approve-app-permissions.png)
+  ![アプリのアクセス許可の承認例](media/approve-app-permissions.png)
 5. しばらくすると、アプリが承認され、IT 管理コンソールで使用できるようになったことを示す確認メッセージが表示されます。
 
 ## <a name="publish-then-synchronize-a-line-of-business-app-from-the-google-play-for-work-store"></a>Google Play for Work ストアから基幹業務アプリを公開し、同期する
@@ -51,7 +51,7 @@ Android for Work デバイスにアプリを展開する方法は、標準の An
 2. Intune と Android for Work 間の接続を構成するときに使用したものと同じアカウントでサインインします。 初めてサインインする場合は、Google Developer プログラムに登録し、料金を払ってメンバーになる必要があります。
 3. コンソールで、**[Add new application]** (新しいアプリケーションの追加) を選択します。
 4. アプリをアップロードし、アプリに関する情報を提供する方法は、アプリを Google Play ストアに公開する方法と同じです。 ただし、次の図のように、*[*Only make this application available to my organization (<*組織名*>)**] (このアプリケーションを自分の組織 (<組織名>) のみが入手できるようにする) 設定を選択する必要があります。<br>
-  ![組織のみがアプリを入手できるようにするためのオプション](/intune/deploy-use/media/restrict.png)<br>
+  ![組織のみがアプリを入手できるようにするためのオプション](media/restrict.png)<br>
 このオプションをオンにすると、自分の組織のみがアプリを入手でき、公開されている Google Play ストアでは入手できないようになります。
 Android アプリのアップロードと公開の詳細については、[Google Developer Console のヘルプ](https://support.google.com/googleplay/android-developer/answer/113469)を参照してください。
 5. アプリを公開したら、[Google Play for Work ストア](https://play.google.com/work)にアクセスします。 Intune と Android for Work 間の接続を構成するときに使用したものと同じアカウントでサインインします。
@@ -59,7 +59,7 @@ Android アプリのアップロードと公開の詳細については、[Googl
 
 ## <a name="deploy-an-android-for-work-app"></a>Android for Work アプリを展開する
 
-通常、Intune は Google Play for Work ストアと 1 日に 2 回同期します。 ストアのアプリを承認しても、**[アプリ]** ワークスペースの **[ボリューム購入アプリ]** ノードに表示されない場合、次の手順で即時の同期を強制できます。
+通常、Intune は Google Play for Work ストアと&1; 日に&2; 回同期します。 ストアのアプリを承認しても、**[アプリ]** ワークスペースの **[ボリューム購入アプリ]** ノードに表示されない場合、次の手順で即時の同期を強制できます。
 
 1. [Intune 管理コンソール](https://manage.microsoft.com)で、**[管理]** > **[モバイル デバイス管理]** > **[Android for Work]** の順に選択します。
 2. **[Android for Work モバイル デバイス管理のセットアップ]** ページで、**[今すぐ同期]** を選択します。
@@ -71,6 +71,6 @@ Android アプリのアップロードと公開の詳細については、[Googl
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 90484c98e58203696e0acbfebd71eeb36b274969
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 4ddc0839f05b2dd7cb1faf0a3e0901df67010f71
 
 
 ---
@@ -31,6 +32,7 @@ ms.openlocfilehash: 90484c98e58203696e0acbfebd71eeb36b274969
 > [!div class="op_single_selector"]
 - [iOS デバイス向けのコンプライアンス ポリシー設定](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Windows デバイス向けのコンプライアンス ポリシー設定](windows-compliance-policy-settings-in-microsoft-intune.md)
+- [Android for Work デバイス向けのコンプライアンス ポリシー設定](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="system-security-settings"></a>システム セキュリティ設定
 ### <a name="password"></a>パスワード
@@ -89,6 +91,6 @@ ms.openlocfilehash: 90484c98e58203696e0acbfebd71eeb36b274969
 
 
 
-<!--HONumber=Jan17_HO5-->
+<!--HONumber=Feb17_HO1-->
 
 

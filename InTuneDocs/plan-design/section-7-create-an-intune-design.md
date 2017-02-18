@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fa33bd3833f7f7198eed3f4f486c27bae3ba47d7
-ms.openlocfilehash: 5f05aa4a27be14a05663aa9de82af63291699403
+ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
+ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 
 ---
@@ -95,7 +96,7 @@ ms.openlocfilehash: 5f05aa4a27be14a05663aa9de82af63291699403
 | **ソリューション項目** | **現在の環境** | **コメント** |
 |:---:|:---:|:---:|
 | **ID** | Azure AD、Azure AD Connect、フェデレーションなし、MFA なし | 年末まで MFA 有効化プロジェクト実施中 |                 
-| **メール環境** | オンプレミスの Exchange、Exchange Online | 現在、オンプレミスの Exchange から Exchange Online に移行中。 メールボックスの 75% を移行済み。 残りの 25% は、Intune の試験運用が開始する前に移行される。 |                
+| **メール環境** | オンプレミスの Exchange、Exchange Online | 現在、オンプレミスの Exchange から Exchange Online に移行中。 メールボックスの&75;% を移行済み。 残りの 25% は、Intune の試験運用が開始する前に移行される。 |                
 | **SharePoint** | オンプレミスの SharePoint | SharePoint Online への移行計画はなし |  
 | **現在の MDM** | Exchange ActiveSync |  |
 | **証明書ソリューション** | Microsoft Server 2012 R2、AD 証明書サービス | Web サイト サーバー用に PKI のみを使用 |
@@ -104,7 +105,7 @@ ms.openlocfilehash: 5f05aa4a27be14a05663aa9de82af63291699403
 
 ## <a name="choose-an-intune-deployment-option"></a>Intune の展開オプションを選択する
 
-Intune には、スタンドアロンとハイブリッドの 2 種類の展開オプションがあります。 どちらがビジネス要件に合うかを判断する必要があります。 スタンドアロンとはクラウドで実行されている Intune サービスのことであり、ハイブリッドとは Intune と System Center Configuration Manager が統合されたものです。
+Intune には、スタンドアロンとハイブリッドの&2; 種類の展開オプションがあります。 どちらがビジネス要件に合うかを判断する必要があります。 スタンドアロンとはクラウドで実行されている Intune サービスのことであり、ハイブリッドとは Intune と System Center Configuration Manager が統合されたものです。
 
 - 詳しくは、「[Microsoft Intune スタンドアロンか System Center Configuration Manager を使用するハイブリッド モバイル デバイス管理を選択する](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)」をご覧ください。
 
@@ -135,7 +136,7 @@ Intune には、スタンドアロンとハイブリッドの 2 種類の展開�
 
 ### <a name="identity"></a>ID
 
-ID は、組織に属していてデバイスを登録するユーザーを識別する方法です。 Intune では、ユーザー ID プロバイダーとして Azure Active Directory (Azure AD) が必要です。 このサービスを既に使っている場合は、クラウドの既存の ID を利用できます。 さらに、オンプレミスのユーザー ID を Microsoft クラウド サービスと同期するには、Azure AD Connect が推奨されるツールです。 組織が Office 365 を既に使っている場合は、Intune でも同じ Azure Active Directory 環境を使うことが重要です。
+ID は、組織に属している、デバイスに登録されているユーザーを識別する方法です。 Intune では、ユーザー ID プロバイダーとして Azure Active Directory (Azure AD) が必要です。 このサービスを既に使っている場合は、クラウドの既存の ID を利用できます。 さらに、オンプレミスのユーザー ID を Microsoft クラウド サービスと同期するには、Azure AD Connect が推奨されるツールです。 組織が Office 365 を既に使っている場合は、Intune でも同じ Azure Active Directory 環境を使うことが重要です。
 
 Intune の ID 要件に関する詳細については、以下をご覧ください。
 
@@ -147,7 +148,7 @@ Intune の ID 要件に関する詳細については、以下をご覧くださ
 
 ### <a name="user-and-device-groups"></a>ユーザーとデバイス グループ
 
-ユーザーとデバイス グループは、展開の対象を決定します。 これには、ポリシー、アプリケーション、プロファイルの展開対象が含まれます。 Intune クラウドは、ユーザーとデバイス グループだけをサポートします。必要なユーザーとデバイス グループを決定する必要があります。 すべてのグループをオンプレミスの Active Directory 内に作成してから、Azure Active Directory に同期することをお勧めします。 ユーザーおよびデバイス グループの計画と作成の詳細については、以下をご覧ください。
+ユーザーとデバイス グループは、展開の対象を決定します。 これには、ポリシー、アプリケーション、プロファイルの展開対象が含まれます。 Intune クラウドは、ユーザーとデバイス グループのみをサポートします。必要なユーザーとデバイス グループを決定する必要があります。 すべてのグループをオンプレミスの Active Directory 内に作成してから、Azure Active Directory に同期することをお勧めします。 ユーザーおよびデバイス グループの計画と作成の詳細については、以下をご覧ください。
 
 -   [ユーザーとデバイス グループの計画](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups)についてはこちらをご覧ください。
 
@@ -249,7 +250,7 @@ Intune は、企業所有と BYOD 所有権の両方をサポートします。 
 
 構成ポリシーは、デバイスのセキュリティ設定と機能を管理するために使われます。 構成ポリシーを設計するときは、ユース ケース要件セクションを参照して、Intune デバイスに必要な構成を決定します。 どの設定をどのように構成する必要があるか、およびその対象となるユーザーまたはデバイス グループを文書化します。
 
-プラットフォームごとに少なくとも 1 つの構成ポリシーを作成する必要があります。 必要な場合は、プラットフォームごとに複数の構成ポリシーを作成できます。 次に示すのは、異なるプラットフォームとユース ケース シナリオに対して 4 つの異なる構成ポリシーを設計する例です。
+プラットフォームごとに少なくとも&1; つの構成ポリシーを作成する必要があります。 必要な場合は、プラットフォームごとに複数の構成ポリシーを作成できます。 次に示すのは、異なるプラットフォームとユース ケース シナリオに対して&4; つの異なる構成ポリシーを設計する例です。
 
 | **ポリシー名** | **デバイスのプラットフォーム** | **設定** | **対象グループ** |   
 |:---:|:---:|:---:|:---:|
@@ -386,7 +387,7 @@ Intune では、複数の方法でユーザーまたはデバイスにアプリ�
 
 条件付きアクセスは、準拠デバイスのみに企業リソースへのアクセスを許可するために使用します。 Intune は、Enterprise Mobility + Security (EMS) 全体と連携して、企業リソースへのアクセスを制御します。 条件付きアクセスが必要かどうか、およびセキュリティで保護する必要があるものを、決める必要があります。
 
--   詳しくは、「[Microsoft Intune で電子メール、Office 365、およびその他のサービスへのアクセスを制限する](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)」をご覧ください。
+-   詳しくは、「[Microsoft Intune で電子メール、Office&365;、およびその他のサービスへのアクセスを制限する](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)」をご覧ください。
 
 オンライン アクセスについては、条件付きアクセス ポリシーの対象となるプラットフォームおよびユーザー グループを決めます。
 
@@ -411,6 +412,6 @@ Intune サービス間コネクタをインストールして構成する方法�
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO3-->
 
 

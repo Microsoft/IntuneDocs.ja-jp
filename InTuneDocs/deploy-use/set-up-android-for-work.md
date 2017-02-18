@@ -5,15 +5,16 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 01/23/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 00994a92eb555827d17ad633ffcf765804365621
-ms.openlocfilehash: b419a07ef13d386fc08aa7fd5605fbb0bea79348
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 24ab39a92d69e92e1c202005fcd783018c4d4621
 
 
 ---
@@ -21,8 +22,6 @@ ms.openlocfilehash: b419a07ef13d386fc08aa7fd5605fbb0bea79348
 # <a name="enable-enrollment-of-android-for-work-devices"></a>Android for Work デバイスの登録を有効にする
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Android for Work デバイスの管理を有効にするには、Android for Work バインディングを Intune に追加する必要があります。 Android for Work をサポートするデバイスで、以前に Android デバイスとして登録していたデバイスを登録するには、デバイスの登録を解除してから、再登録する必要があります。
 
@@ -54,7 +53,7 @@ Android for Work のバインディングと設定を構成したら、次の管
 
 ## <a name="unbinding-your-android-for-work-administrative-account"></a>Android for Work 管理者アカウントのバインドを解除する
 
-Android for Work の登録と管理を無効にすることもできます。 **[バインドの解除]** をクリックすると、登録されているすべての Android for Work デバイスが登録から削除され、Android for Work アカウントと Intune 間の関係が削除されます。
+Android for Work の登録と管理を無効にすることもできます。 Intune の管理コンソールで **[バインドの解除]** をクリックすると、登録されているすべての Android for Work デバイスの登録が削除され、Android for Work アカウントと Intune 間の関係が削除されます。
 
 ### <a name="how-to-unbind-an-android-for-work-account"></a>Android for Work アカウントのバインドを解除する方法
 
@@ -66,6 +65,6 @@ Android for Work の登録と管理を無効にすることもできます。 **
 
 
 
-<!--HONumber=Jan17_HO5-->
+<!--HONumber=Feb17_HO1-->
 
 

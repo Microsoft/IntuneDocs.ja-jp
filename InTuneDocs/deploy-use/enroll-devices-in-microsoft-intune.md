@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9d891933178d4bdf1079287efc151fe8859c7e83
-ms.openlocfilehash: ab2bf9bbc3e7b15d581c4b0c3e55e6af25a40b4c
+ms.sourcegitcommit: 39f7de3a94b813cbd7b353cd319ecc54fcbf8694
+ms.openlocfilehash: 483fd327be25a1cb08e5295d72a27987ab018062
 
 
 ---
@@ -28,6 +29,8 @@ Windows PC などのデバイスを登録し、Microsoft Intune によるモバ�
 
 オンプレミスの、またはクラウドでホストされている [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune) を使用すると、登録を必要としない簡単な Intune 管理が可能です。 Windows PC は、[Intune クライアント ソフトウェア](#manage-windows-pcs-with-intune)を使用して管理することもできます。
 
+既定では、すべてのプラットフォーム用のデバイスを Intune に登録することができます。 デバイスの登録をブロックするには、管理者資格情報を使用して [Microsoft Intune 管理ポータル](http://manage.microsoft.com)にサインインします。 **[管理]** > **[モバイル デバイス管理]** > **[登録ルール]** の順に選択し、登録をブロックするプラットフォームの該当するチェック ボックスをオフにします。
+
 ## <a name="overview-of-device-enrollment-methods"></a>デバイスの登録方法の概要
 
 次の表は、Intune の登録方法とサポートされる機能、各方法の要件の一覧です。 また、機能と要件について説明しています。
@@ -38,41 +41,41 @@ Windows PC などのデバイスを登録し、Microsoft Intune によるモバ�
 
 **iOS の登録方法**
 
-| **方法** |  **ワイプが必要?** |    **アフィニティ**    |   **ロック** | **詳細** |
+| **方法** |    **ワイプが必要?** |    **アフィニティ**    |    **ロック** | **詳細** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ|    ○ |   いいえ | [詳細情報](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   いいえ |いいえ |いいえ  | [詳細情報](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
-|**[DEP](#dep)**|   Yes |   省略可能 |  省略可能|[詳細情報](ios-device-enrollment-program-in-microsoft-intune.md)|
-|**[USB-SA](#usb-sa)**| Yes |   省略可能 |  いいえ| [詳細情報](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
-|**[USB-Direct](#usb-direct)**| いいえ |    いいえ  | いいえ|[詳細情報](ios-direct-enrollment-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | いいえ|    ○ |    いいえ | [詳細情報](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|    いいえ |いいえ |いいえ    | [詳細情報](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[DEP](#dep)**|    Yes |    省略可能 |    省略可能|[詳細情報](ios-device-enrollment-program-in-microsoft-intune.md)|
+|**[USB-SA](#usb-sa)**|    Yes |    省略可能 |    いいえ| [詳細情報](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
+|**[USB-Direct](#usb-direct)**|    いいえ |    いいえ    | いいえ|[詳細情報](ios-direct-enrollment-in-microsoft-intune.md)|
 
 **Windows の登録方法**
 
-| **方法** |  **ワイプが必要?** |    **アフィニティ**    |   **ロック** | **詳細**|
+| **方法** |    **ワイプが必要?** |    **アフィニティ**    |    **ロック** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | [はい]|   ○ |   いいえ | [詳細情報](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   いいえ |いいえ |いいえ  |[詳細情報](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | [はい]|    ○ |    いいえ | [詳細情報](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|    いいえ |いいえ |いいえ    |[詳細情報](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android の登録方法**
 
-| **方法** |  **ワイプが必要?** |    **アフィニティ**    |   **ロック** | **詳細**|
+| **方法** |    **ワイプが必要?** |    **アフィニティ**    |    **ロック** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ|    ○ |   いいえ | [詳細情報](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   いいえ |いいえ |いいえ  |[詳細情報](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | いいえ|    ○ |    いいえ | [詳細情報](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|    いいえ |いいえ |いいえ    |[詳細情報](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android for Work の登録方法**
 
-| **方法** |  **ワイプが必要?** |    **アフィニティ**    |   **ロック** | **詳細**|
+| **方法** |    **ワイプが必要?** |    **アフィニティ**    |    **ロック** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ|    ○ |   いいえ | [詳細情報](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   いいえ |いいえ |いいえ  |[詳細情報](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | いいえ|    ○ |    いいえ | [詳細情報](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|    いいえ |いいえ |いいえ    |[詳細情報](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **macOS の登録方法**
 
-| **方法** |  **ワイプが必要?** |    **アフィニティ**    |   **ロック** | **詳細**|
+| **方法** |    **ワイプが必要?** |    **アフィニティ**    |    **ロック** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | [はい]|   ○ |   いいえ | [詳細情報](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|   いいえ |いいえ |いいえ  |[詳細情報](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | [はい]|    ○ |    いいえ | [詳細情報](prerequisites-for-enrollment.md)|
+
 
 適切な方法を選択するのに役立つ一連の質問については、「[モバイル デバイスの登録方法の選択](/intune/get-started/choose-how-to-enroll-devices1)」をご覧ください。
 
@@ -89,15 +92,15 @@ Windows PC などのデバイスを登録し、Microsoft Intune によるモバ�
 
 ### <a name="dep"></a>DEP
 Apple Device Enrollment Program (DEP) 管理では、ポリシーを作成し、DEP で購入および管理されている iOS デバイスに "無線で" 展開できます。 ユーザーが初めてデバイスの電源を入れて iOS Setup Assistant を実行した際に、デバイスが登録されます。 この方法は、**iOS 監視対象**モードをサポートしているので、以下が有効になります。
-  - 登録のロック
-  - キオスク モード、およびその他の高度な構成および制限
+  -    登録のロック
+  -    キオスク モード、およびその他の高度な構成および制限
 
 DEP の詳細については[ここ](ios-device-enrollment-program-in-microsoft-intune.md)を参照してください。 ([表に戻る](#overview-of-device-enrollment-methods))
 
 ### <a name="usb-sa"></a>USB-SA
 IT 管理者は、セットアップ アシスタントを使用した登録を行うため、USB を介し Apple Configurator を使用して、会社が所有するデバイスを手動で準備します。 IT 管理者は登録プロファイルを作成して、Apple Configurator にエクスポートします。 ユーザーは、自分のデバイスを受け取ると、セットアップ アシスタントを実行してデバイスを登録するように求められます。 この方法は、**iOS 監視対象**モードをサポートしているので、以下が有効になります。
-  - 登録のロック
-  - キオスク モード、およびその他の高度な構成および制限
+  -    登録のロック
+  -    キオスク モード、およびその他の高度な構成および制限
 
 Apple Configurator を使用したセットアップ アシスタントの登録については、[ここ](ios-setup-assistant-enrollment-in-microsoft-intune.md)を参照してください。 ([表に戻る](#overview-of-device-enrollment-methods))
 
@@ -130,6 +133,6 @@ Intune では、次のデバイス プラットフォームを管理できます
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 
