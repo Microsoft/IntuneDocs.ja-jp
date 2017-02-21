@@ -15,8 +15,8 @@ ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: d63d670f12f27511671b9015ad53a93f1a784c40
-ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
+ms.sourcegitcommit: 8c4351761b1e4047a0e997cdfabe3deb35b31e54
+ms.openlocfilehash: 9d35de896e21abd8b7e0026e915745aa6dbcb80f
 
 
 ---
@@ -31,9 +31,9 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
       <h2 class="section-heading"><span class="icon icon-warning"></span> おすすめコンテンツ</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="http://fasttrack.microsoft.com/ems">ライセンス数が 150 以上ある場合に FastTrack 特典を利用する</a></li>
+          <li><a href="http://fasttrack.microsoft.com/ems">ライセンス数が&150; 以上ある場合にFastTrack 特典を利用する</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Intune の一般的な使用方法</a></li>
-          <li><a href="/intune-azure/introduction/what-is-microsoft-intune">Azure プレビュー ポータルでの Intune</a></li>
+          <li><a href="/intune-azure/introduction/what-is-microsoft-intune">Azure ポータル プレビューでの Intune</a></li>
         </ul>
         <ul class="column column-half">
           <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">会社のリソースへのアクセスを保護する</a></li>
@@ -140,7 +140,7 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">
+                  <a href="/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune">
                     <h3>エンド ユーザーへの通知内容</h3>
                     <p>Intune でユーザー自身のデバイスを使用し、ユーザーだけでタスクを完了できるようにこの情報を共有するために、エンド ユーザーが実行する必要のある手順について説明します。</p>
                   </a>
@@ -269,7 +269,7 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
           <ul class="column-half">
           <li><a href="/enterprise-mobility/solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems" target="_blank">Enterprise Mobility Suite 用の Fast Track センター</a></li>
           <li><a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc" target="_blank">Microsoft Intune TechNet フォーラム</a></li>
-          <li><a href="https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/default.aspx" target="_blank">Intune 製品ページ</a></li>
+          <li><a href="https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/default.aspx" target="_blank">Intune の製品ページ</a></li>
           </ul>
       </div>
       </section>
@@ -277,7 +277,7 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
     <aside class="alert alert-social">
       <p>Intune の最新情報</p>
       <ol class="action-list">
-        <li><a href="https://blogs.technet.com/b/microsoftintune/" target="_blank" class="button-bordered button-translucent">Intune チーム ブログ</a></li>
+        <li><a href="https://blogs.technet.com/b/microsoftintune/" target="_blank" class="button-bordered button-translucent">Intune チームのブログ</a></li>
         <li><a href="https://twitter.com/msintune/" target="_blank" class="button-bordered button-translucent">@MSIntune on Twitter</a></li>
       </ol>
     </aside>
@@ -285,6 +285,6 @@ ms.openlocfilehash: eda6352368a3593d56ce8879501e2ebf4fda41f9
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 

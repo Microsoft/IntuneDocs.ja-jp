@@ -79,6 +79,7 @@
 ## デバイスの構成
 ### [ポリシーを使用したデバイスの設定と機能の管理](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS の設定](deploy-use/ios-policy-settings-in-microsoft-intune.md)
+#### [管理されている iOS デバイスを復元する](deploy-use/restore-managed-ios-devices-from-backup.md)
 #### [Android と Samsung KNOX の設定](deploy-use/android-policy-settings-in-microsoft-intune.md)
 ##### [カスタム ポリシーを使用して、事前共有キーを使用した Wi-Fi プロファイルを作成する](deploy-use/pre-shared-key-wi-fi-profile.md)
 ##### [カスタム ポリシーを使用して、Android デバイスにアプリごとの VPN プロファイルを作成する](deploy-use/per-app-vpn-for-android-pulse-secure.md)
@@ -107,7 +108,7 @@
 
 ## [デバイスを保護する](deploy-use/protect-your-devices-with-microsoft-intune.md)
 ### [リモート ロックとパスコードのリセット](deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-### [MFA を使って Windows デバイスを保護する](deploy-use/multi-factor-authentication-azure-active-directory.md)
+### [多要素認証でデバイスを保護する](deploy-use/multi-factor-authentication-azure-active-directory.md)
 ### [Windows Hello for Business の設定を制御する](deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)
 ### [iOS のアクティブ化ロックをバイパスする](deploy-use/help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md)
 ### [Windows PC を保護するためのポリシー](deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md)
@@ -173,6 +174,7 @@
 #### [iOS 用アプリ保護ポリシー](deploy-use/ios-mam-policy-settings.md)
 #### [アプリ保護ポリシーを確認する](deploy-use/validate-mobile-application-management.md)
 #### [アプリの保護ポリシーのコンプライアンスを監視する](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+
 #### [iOS アプリ間のデータ転送を管理する](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 #### [MAM ポリシー向けの Intune 管理コンソール](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
@@ -189,10 +191,10 @@
 ### [アプリをインベントリから削除する](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [管理対象の業務用アプリのデータをワイプする](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
-## [エンドユーザー エクスペリエンスに関するリソース](deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md)
-### [管理されている iOS デバイスを復元する](deploy-use/restore-managed-ios-devices-from-backup.md)
-### [Android アプリと MAM ポリシー](deploy-use/user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-### [iOS アプリと MAM ポリシー](deploy-use/user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+## [Intune に関してエンド ユーザーを教育する方法](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
+### [Android ユーザーがアプリを入手する方法](deploy-use/how-your-android-users-get-their-apps.md)
+### [iOS ユーザーがアプリを入手する方法](deploy-use/how-your-ios-users-get-their-apps.md)
+### [Windows ユーザーがアプリを入手する方法](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # アプリの開発とカスタマイズ
 ## [Microsoft Intune アプリ SDK の概要](develop/intune-app-sdk.md)
