@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b15f56f6e771faeb924668aa68140ab89a174b8d
-ms.openlocfilehash: c9bba34d2252e6b9dff295724f9c935c558aa179
+ms.sourcegitcommit: 06e0a74dd2c0b861497062f2d659c5eb08126fca
+ms.openlocfilehash: 6ec9f6136cf23b9015da125817bfeb86ecfbfca6
 
 
 ---
@@ -55,7 +56,7 @@ Intune に登録されていないデバイスの MAM 用アプリ ラッピン�
 ## <a name="intune-app-sdk"></a>Intune アプリ SDK
 アプリ SDK は、主として、Apple App Store または Google Play ストアにあるアプリを Intune で管理できるようにするお客様向けに設計されています。 ただし、どのようなアプリでも (基幹業務アプリでさえ)、SDK の統合を利用できます。
 
-SDK の詳細については、「[概要](/intune/develop/intune-app-sdk)」を参照してください。 SDK で作業を開始するには、「[Microsoft Intune アプリ SDK を使ってみる](/intune/develop/intune-app-sdk-get-started)」を参照してください。
+SDK の詳細については、「[概要](../develop/intune-app-sdk.md)」を参照してください。 SDK で作業を開始するには、「[Microsoft Intune アプリ SDK を使ってみる](../develop/intune-app-sdk-get-started.md)」を参照してください。
 
 ### <a name="reasons-to-use-the-sdk"></a>SDK を使用する理由
 * アプリに組み込みのデータ保護機能がない。
@@ -69,8 +70,8 @@ SDK の詳細については、「[概要](/intune/develop/intune-app-sdk)」を
 
 |**Intune アプリ SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|はい – [Intune App SDK Xamarin コンポーネント](/../develop/intune-app-sdk-xamarin)を使用します。|はい – [Intune App SDK Cordova プラグイン](/../develop/intune-app-sdk-cordova)を使用します。|
-|**Android**| はい – [Intune App SDK Xamarin コンポーネント](/../develop/intune-app-sdk-xamarin)を使用します。|はい – [Intune App SDK Cordova プラグイン](/../develop/intune-app-sdk-cordova)を使用します。|
+|**iOS**|はい – [Intune App SDK Xamarin コンポーネント](../develop/intune-app-sdk-xamarin.md)を使用します。|はい – [Intune App SDK Cordova プラグイン](../develop/intune-app-sdk-cordova.md)を使用します。|
+|**Android**| はい – [Intune App SDK Xamarin コンポーネント](../develop/intune-app-sdk-xamarin.md)を使用します。|はい – [Intune App SDK Cordova プラグイン](../develop/intune-app-sdk-cordova.md)を使用します。|
 
 ## <a name="feature-comparison"></a>機能の比較
 アプリ SDK とアプリ ラッピング ツールに対して利用できる設定を、次の表に示します。
