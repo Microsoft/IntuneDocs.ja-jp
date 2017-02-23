@@ -1,11 +1,11 @@
 ---
-title: "Exchange Online への電子メール アクセスを保護する | Microsoft Docs"
+title: "Exchange Online への電子メールを保護する | Microsoft Docs"
 description: "条件付きアクセスで Exchange Online の会社電子メールへのアクセスを保護および制御します。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
+ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
+ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
 
 
 ---
@@ -25,24 +26,26 @@ ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+Microsoft Intune を使用して、Exchange Online または Exchange Online Dedicated の条件付きアクセスを構成できます。 条件付きアクセスの動作の詳細については、[電子メール、O365、およびその他のサービスへのアクセスを保護する](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)に関する記事をご覧ください。
+
 > [!NOTE]
 >Exchange Online Dedicated 環境を使用していて、それが新しい構成であるか既存の構成であるかを確認する必要がある場合は、アカウント マネージャーに問い合わせてください。
 
-Exchange Online または新しい Exchange Online Dedicated 環境への電子メール アクセスを制御するには、Microsoft Intune で Exchange Online の条件付きアクセスを構成できます。 条件付きアクセスの動作の詳細については、[電子メール、O365、およびその他のサービスへのアクセスを保護する](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)に関する記事をご覧ください。
+## <a name="before-you-begin"></a>始める前に
 
-
-条件付きアクセスを構成する**前に**、次のことを行う必要があります。
+条件付きアクセスを構成するには
 
 -   **Exchange Online を含む Office 365 サブスクリプション (E3 など)** を取得します。ユーザーには Exchange Online のライセンスが必要です。
 
 - **Enterprise Mobility + Security (EMS) サブスクリプション**または **Azure Active Directory (Azure AD) Premium サブスクリプション**を取得します。ユーザーに EMS または Azure AD のライセンスが付与される必要があります。 詳細については、「[Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility の価格) ページまたは「[Azure Active Directory の価格](https://azure.microsoft.com/en-us/pricing/details/active-directory/)」ページを参照してください。
 
 -  オプションの **Intune Service to Service Connector** の構成を検討します。これによって [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] が Exchange Online に接続され、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] コンソールを使用してデバイス情報を管理できるようになります。 コンプライアンス ポリシーまたは条件付きアクセス ポリシーを使用するうえでコネクタを使用する必要はありませんが、条件付きアクセスの影響を評価するためのレポートの実行に必要です。
+    -  詳細については、[Intune Service to Service Connector](intune-service-to-service-exchange-connector.md) に関するページを参照してください。
 
    > [!NOTE]
-   > Exchange Online と Exchange On-premises の両方で条件付きアクセスを使用する場合は、Service to Service Connector を構成しないでください。
+   > Exchange Online と Exchange On-Premises の両方で条件付きアクセスを使用する場合は、Intune Service to Service Connector を構成しないでください。
 
-   コネクタを構成する手順については、[Intune Service to Service Connector](intune-service-to-service-exchange-connector.md) に関するページをご覧ください。
+### <a name="device-compliance-requirements"></a>デバイス コンプライアンスの要件
 
 条件付きアクセス ポリシーを構成してユーザーに適用すると、ユーザーが電子メールに接続するには、使用する**デバイス**が以下の条件を満たさなくてはならなくなります。
 
@@ -54,12 +57,15 @@ Exchange Online または新しい Exchange Online Dedicated 環境への電子�
 
 -   そのデバイス、またはオンプレミス ドメインに参加しているドメインに展開された [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] コンプライアンス ポリシーに**準拠**している。
 
-条件付きアクセス ポリシーが満たされない場合、ユーザーにはサインイン時に以下のうちのいずれかのメッセージが表示されます。
+### <a name="when-the-device-is-not-compliant"></a>デバイスが準拠していない場合
+
+条件付きアクセス ポリシーが満たされない場合、デバイスはすぐに検疫され、ユーザーは電子メールを受信し、サインイン時に次のいずれかの検疫通知が表示されます。
 
 - デバイスが [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録されていない、または Azure Active Directory に登録されていない場合は、メッセージが表示され、ポータル サイト アプリのインストール、デバイスの登録、および電子メールのアクティブ化の手順が示されます。 また、このプロセスによって、デバイスの Exchange ActiveSync ID が Azure Active Directory のレコードに関連付けられます。
 
 -   デバイスがコンプライアンス ポリシーのルールに準拠していないと評価された場合は、ユーザーを [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ポータル サイト Web サイトまたはポータル サイト アプリに導くメッセージが表示されます。このポータルで、問題とその修復方法に関する情報を確認することができます。
 
+### <a name="how-conditional-access-works-with-exchange-online"></a>Exchange Online での条件付きアクセスのしくみ
 
 次の図は、Exchange Online の条件付きアクセス ポリシーで使用されるフローを示します。
 
@@ -70,7 +76,6 @@ Exchange Online または新しい Exchange Online Dedicated 環境への電子�
 
 - Android 4.0 以降、Samsung KNOX Standard 4.0 以降、Android for Work
 - iOS 8.0 以降
-- Windows Phone 8.1 以降
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -85,7 +90,8 @@ Exchange Online または新しい Exchange Online Dedicated 環境への電子�
 * Chrome (Android)
 * Intune Managed Browser (iOS、Android 5.0 以降)
 
-**サポートされていないブラウザーはブロックされます**。
+   > [!IMPORTANT]
+   > **サポートされていないブラウザーはブロックされます**。
 
 **iOS 用と Android 用 OWA アプリケーションでは、最新の認証がサポートされていないため、最新の認証を使用しないように変更することができます。OWA アプリケーションからのアクセスは、ADFS 要求規則を使用してブロックする必要があります。**
 
@@ -142,7 +148,7 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 レポート ビューアが新しいウィンドウで開きます。
 ![モバイル デバイスのインベントリ レポートのサンプルのスクリーンショット](../media/IntuneSA2cViewReport.PNG)
 
-レポートを実行した後、ユーザーをブロックするかどうかを判断するために、次の 4 つの列を調べます。
+レポートを実行した後、ユーザーをブロックするかどうかを判断するために、次の&4; つの列を調べます。
 
 -   **[管理チャネル]**: デバイスが Intune、Exchange ActiveSync、またはその両方のいずれによって管理されているかを示します。
 
@@ -170,7 +176,7 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 
 これらのグループは、**Office 365 管理センター**または **Intune アカウント ポータル**で構成できます。
 
-各ポリシーには、次の 2 つのグループの種類を指定できます。
+各ポリシーには、次の&2; つのグループの種類を指定できます。
 
 -   **対象グループ**: ポリシーが適用されるユーザー グループ
 
@@ -197,14 +203,14 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
     >
     > コンプライアンスの状態に関係なく、ポリシーの対象となっているすべてのユーザーがデバイスを [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録する必要があります。
 
-3.  **[アプリケーション アクセス]** では、先進認証を使用するアプリに対して、ポリシーを適用するプラットフォームを選択する方法が 2 つあります。 サポートされているプラットフォームは、Android、iOS、Windows、および Windows Phone です。
+3.  **[アプリケーション アクセス]** では、先進認証を使用するアプリに対して、ポリシーを適用するプラットフォームを選択する方法が&2; つあります。 サポートされているプラットフォームは、Android、iOS、Windows、および Windows Phone です。
 
     -   **すべてのプラットフォーム**
 
         **Exchange Online** にアクセスするために使用するデバイスはすべて、Intune に登録され、またポリシーに準拠している必要があります。 **先進認証**を使っているすべてのクライアント アプリケーションに、条件付きアクセス ポリシーが適用されます。 プラットフォームが現在 Intune でサポートされていない場合、**Exchange Online** へのアクセスはブロックされます。
 
         **[すべてのプラットフォーム]** オプションを選択することは、クライアント アプリケーションから報告されたプラットフォームでない限り、Azure Active Directory がすべての認証要求にこのポリシーを適用することを意味します。 次の場合を除いて、すべてのプラットフォームが登録されて準拠している必要があります。
-        *   Windows デバイスが登録されて準拠している必要があるか、またはオンプレミスの Active Directory でドメインに参加している (一方または両方)
+        *    Windows デバイスが登録されて準拠している必要があるか、またはオンプレミスの Active Directory でドメインに参加している (一方または両方)
         * Mac OS などのサポートされていないプラットフォーム ただし、これらのプラットフォームからの最新の認証を使用しているアプリは、それでもブロックされます。
 
     -   **特定のプラットフォーム**
@@ -252,9 +258,9 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 
 -   ユーザーが電子メール アカウントを作成すると、デバイスはすぐにブロックされます。
 
--   ブロックされたユーザーがデバイスを [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録し、非準拠の問題を修正すると、メールのアクセスは 2 分以内でブロック解除されます。
+-   ブロックされたユーザーがデバイスを [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録し、非準拠の問題を修正すると、メールのアクセスは&2; 分以内でブロック解除されます。
 
--   ユーザーがデバイスの登録を解除した場合、メールは約 6 時間後にブロックされます。
+-   ユーザーがデバイスの登録を解除した場合、メールは約&6; 時間後にブロックされます。
 
 **デバイスのアクセスを保護する条件付きアクセス ポリシーの構成方法を示したシナリオの例**を見るには、[電子メール アクセスの保護のシナリオ例](restrict-email-access-example-scenarios.md)をご覧ください。
 
@@ -272,6 +278,6 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 
