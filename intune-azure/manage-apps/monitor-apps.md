@@ -1,0 +1,37 @@
+---
+title: "アプリの割り当てを監視する方法 | Intune Azure プレビュー | Microsoft Docs"
+description: "Intune Azure プレビュー: ユーザーまたはデバイスにアプリを割り当てた後は、この情報を参考にして、その状態を監視できます。"
+keywords: 
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 01/23/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
+ms.reviewer: mghadial
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
+ms.openlocfilehash: c4e634bb584e2b593b441a7d81d9ecf72bafa79f
+
+---
+
+# <a name="how-to-monitor-app-assignments"></a>アプリの割り当てを監視する方法
+
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+Intune アプリの割り当ての進捗状況は、2 つの方法で監視できます。
+
+1. **[モバイル アプリ]** ワークロードで、**[管理]** > **[アプリ]** の順に選択します。
+2. アプリの一覧ブレードで、目的のアプリを選択し、次のいずれかを実行します。
+    - [<*アプリ名*>] ブレードで、**[概要]** を選択して、アプリおよびその割り当てに関する基本的な情報を表示します。
+    - [<*アプリ名*>] ブレードで、**[レポート]** を選択して、アプリおよびその割り当てに関する詳細な情報を表示します。
+
+
+
+<!--HONumber=Feb17_HO1-->
+
+

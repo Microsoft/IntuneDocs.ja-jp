@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 519d3f475e158391b08ab4e51f9410b7bdefcd4c
+ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
+ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
 
 
 ---
@@ -33,14 +34,14 @@ ms.openlocfilehash: 519d3f475e158391b08ab4e51f9410b7bdefcd4c
 IT 管理者やユーザーは、代替電子メール クライアント (Android または iOS 向け Microsoft Outlook など) をインストールすることもできます。 これらの電子メール クライアントは電子メール プロファイルに対応していない場合があり、Intune の電子メール プロファイルを使用してセットアップすることはできません。  
 
 電子メール プロファイルを使用して、次のデバイスの種類でネイティブ電子メール クライアントを構成できます。
--   Windows Phone 8.1 以降
--   Windows 10 (デスクトップの場合) および Windows 10 Mobile 以降
--   iOS 8.0 以降
--   Samsung KNOX Standard (4.0 以降)
--   Android for Work
+-    Windows Phone 8.1 以降
+-    Windows 10 (デスクトップの場合) および Windows 10 Mobile 以降
+-    iOS 8.0 以降
+-    Samsung KNOX Standard (4.0 以降)
+-    Android for Work
 
 >[!NOTE]
->Intune には Android for Work 電子メール プロファイルが 2 つあります。Gmail 用と Nine Work 電子メール アプリ用です。 これらのアプリは Google Play ストアで入手できます。また、Exchange への接続をサポートしています。 電子メール接続を有効にするには、いずれかの電子メール アプリをユーザーのデバイスに展開し、適切なプロファイルを作成して展開します。
+>Intune には Android for Work 電子メール プロファイルが&2; つあります。Gmail 用と Nine Work 電子メール アプリ用です。 これらのアプリは Google Play ストアで入手できます。また、Exchange への接続をサポートしています。 電子メール接続を有効にするには、いずれかの電子メール アプリをユーザーのデバイスに展開し、適切なプロファイルを作成して展開します。
 
 デバイスで電子メール アカウントをセットアップするだけでなく、同期する電子メールの数や、デバイスの種類によっては同期するコンテンツの種類をセットアップできます。
 
@@ -88,7 +89,7 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
 
     -   **電子メール プロファイル (Android for Work - Gmail)**
 
-    -   **電子メール プロファイル (Android for Work - Nine Work)**
+    -    **電子メール プロファイル (Android for Work - Nine Work)**
 
     カスタムの電子メール プロファイル ポリシーのみを作成して展開できます。 推奨設定はありません。
 
@@ -126,7 +127,7 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
 
 2.  **[展開の管理]** ダイアログ ボックスで、次の操作を実行します。
 
-    -   **ポリシーを展開するには** - ポリシーを展開する対象となる 1 つ以上のグループを選択して、**[追加]** &gt; **[OK]** の順に選択します。
+    -   **ポリシーを展開するには** - ポリシーを展開する対象となる&1; つ以上のグループを選択して、**[追加]** &gt; **[OK]** の順に選択します。
 
     -   **ポリシーを展開せずにダイアログ ボックスを閉じるには**、**[キャンセル]** を選択します。
 
@@ -134,10 +135,10 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
 
 > [!NOTE]
 > - Android for Work の場合は、適切な電子メール プロファイルに加え、Gmail または Nine Work アプリも展開したことを確認してください。
-> - デバイスから電子メール プロファイルを削除する場合、展開を編集し、デバイスがメンバーになっているすべてのグループを削除します。
+> - デバイスから電子メール プロファイルを削除する場合、展開を編集し、デバイスがメンバーになっているすべてのグループを削除します。 デバイスで唯一の電子メール プロファイルはこの方法で削除できないことに注意してください。
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

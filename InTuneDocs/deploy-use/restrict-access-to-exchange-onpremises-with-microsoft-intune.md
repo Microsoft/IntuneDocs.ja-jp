@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 590a5df066c69e2369d0b586d52def1abd64a379
+ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
+ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
 
 
 ---
@@ -24,18 +25,19 @@ ms.openlocfilehash: 590a5df066c69e2369d0b586d52def1abd64a379
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+Microsoft Intune を使用して、Exchange On-premises または従来の Exchange Online Dedicated への電子メール アクセスを制御するように条件付きアクセスを構成することができます。
+条件付きアクセスの動作の詳細については、「[電子メールと O365 サービスへのアクセスを保護する](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)」をご覧ください。
+
 > [!NOTE]
 > Exchange Online Dedicated 環境を使用していて、それが新しい構成であるか既存の構成であるかを確認する必要がある場合は、アカウント マネージャーに問い合わせてください。
 
+## <a name="before-you-begin"></a>始める前に
 
-Exchange On-premises または従来の Exchange Online Dedicated 環境への電子メール アクセスを制御するには、Microsoft Intune で Exchange On-premises の条件付きアクセスを構成できます。
-条件付きアクセスの動作の詳細については、「[電子メールと O365 サービスへのアクセスを保護する](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)」をご覧ください。
-
-条件付きアクセスを構成する**前に**、次のことを確認します。
+以下のことを確認します。
 
 -   Exchange のバージョンは、**Exchange 2010 以降**である必要があります。 Exchange Server クライアント アクセス サーバー (CAS) アレイがサポートされています。
 
--   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] を Exchange On-premises に接続するために、**On-Premises Exchange Connector** を使用する必要があります。 これにより、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] コンソールでデバイスを管理できます。 コネクタの詳細については、[Intune On-Premises Exchange Connector](intune-on-premises-exchange-connector.md) に関するページをご覧ください。
+-   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] を Exchange On-premises に接続するために、[Intune On-Premises Exchange Connector](intune-on-premises-exchange-connector.md) を使用する必要があります。 これにより、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] コンソールでデバイスを管理できます。
 
     -   Intune コンソールで利用可能な On-Premises Exchange Connector は、Intune テナントに固有であり、他のテナントでは使用できません。 また、テナントの Exchange Connector は **1 台のコンピューターにのみ**インストールすることが推奨されます。
 
@@ -47,6 +49,8 @@ Exchange On-premises または従来の Exchange Online Dedicated 環境への�
 
 -   **Exchange ActiveSync** は、証明書ベースの認証またはユーザーの資格情報のエントリで構成する必要があります。
 
+### <a name="device-compliance-requirements"></a>デバイス コンプライアンスの要件
+
 条件付きアクセス ポリシーを構成してユーザーに適用すると、ユーザーが電子メールに接続するには、使用する**デバイス**が以下の条件を満たさなくてはならなくなります。
 
 -  ドメインに参加している PC であるか、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に**登録**されている。
@@ -57,11 +61,13 @@ Exchange On-premises または従来の Exchange Online Dedicated 環境への�
 
 -   そのデバイスに展開されているすべての [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] コンプライアンス ポリシーに**準拠**している。
 
+### <a name="how-conditional-access-works-with-exchange-on-premises"></a>Exchange On-Premises での条件付きアクセスのしくみ
+
 次の図は、Exchange On-premises の条件付きアクセス ポリシーでデバイスを許可するかブロックするかを評価するフローを示しています。
 
 ![デバイスに Exchange On-premises へのアクセスを許可するかブロックするかを判断する決定ポイントを示す図](../media/ConditionalAccess8-2.png)
 
-条件付きアクセス ポリシーが満たされない場合、ユーザーにはサインイン時に以下のうちのいずれかのメッセージが表示されます。
+条件付きアクセス ポリシーが満たされない場合は、デバイスがブロックされてから 10 分経過すると、ユーザーはサインイン時に次のいずれかの検疫メッセージを受け取ります。
 
 - デバイスが [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録されていない、または Azure Active Directory に登録されていない場合は、メッセージが表示され、ポータル サイト アプリのインストール、デバイスの登録、および電子メールのアクティブ化の手順が示されます。 また、このプロセスによって、デバイスの Exchange ActiveSync ID が Azure Active Directory のデバイス レコードに関連付けられます。
 
@@ -136,6 +142,6 @@ Exchange On-premises または従来の Exchange Online Dedicated 環境への�
 
 
 
-<!--HONumber=Jan17_HO5-->
+<!--HONumber=Feb17_HO2-->
 
 
