@@ -1,34 +1,32 @@
 ---
-title: "リモート ワイプを使用したデータ保護 | Microsoft Docs"
-description: "Intune には会社の重要なデータを削除し、数多くの会社リソースへのアクセスを削除する、選択的なワイプ機能とフル ワイプ機能が備わっています。"
+title: "Intune を使用したデバイスでのフル ワイプまたは選択的ワイプ | Intune Azure プレビュー | Microsoft Docs"
+description: "Intune Azure プレビュー: デバイス上の会社のデータを選択的にワイプする方法、またはフル ワイプを実行してデバイスを出荷時の設定にリセットする方法について説明します。"
 keywords: 
 author: staciebarker
-ms.author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
-ms.reviewer: lancecra
+ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
-ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7da3108cbc3185cd40c1ca9b52545bbd4e46b21f
-ms.openlocfilehash: 043b5ccb611600bdf18ce93fccfa853f3994a860
+ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
+ms.openlocfilehash: 9188f4bb4ea526227ccd9f2029fc9b44cbd4a334
 
 
 ---
 
-# <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Microsoft Intune のフル ワイプまたは選択的ワイプを使用してデータを保護する
+# <a name="use-full-or-selective-wipe"></a>フル ワイプまたは選択的ワイプを使用する 
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Intune 管理対象デバイスが不要になるか、別の目的で再利用するか、または紛失した場合、そのデバイスからアプリとデータをワイプできます。 そのための手段として Intune には、選択的ワイプ機能とフル ワイプ機能が備わっています。 ユーザーは、Intune に登録済みの個人所有デバイスの Intune ポータル サイト アプリからリモート デバイス ワイプ コマンドを発行することもできます。
 
   > [!NOTE]
-  > このトピックでは、Intune のモバイル デバイス管理によって管理されているデバイスのワイプについてのみ説明します。 [Azure ポータル](https://portal.azure.com)を使用して、[アプリから会社のデータをワイプする](wipe-managed-company-app-data-with-microsoft-intune.md)こともできます。 また、[Intune クライアント ソフトウェアで管理されているコンピューターを削除する](retire-a-windows-pc-with-microsoft-intune.md)こともできます。
+  > このトピックでは、Intune のモバイル デバイス管理によって管理されているデバイスのワイプについてのみ説明します。 [Azure ポータル](https://portal.azure.com)を使用して、[アプリから会社のデータをワイプする](https://docs.microsoft.com/intune/deploy-use/wipe-managed-company-app-data-with-microsoft-intune)こともできます。 また、[Intune クライアント ソフトウェアで管理されているコンピューターを削除する](https://docs.microsoft.com/intune/deploy-use/retire-a-windows-pc-with-microsoft-intune)こともできます。
 
 ## <a name="full-wipe"></a>フル ワイプ
 
@@ -38,37 +36,18 @@ Intune 管理対象デバイスが不要になるか、別の目的で再利用�
 > [!Warning]
 > ワイプした場合、4 GB 未満の RAM の Windows 10 RTM デバイス (Windows 10 バージョン 1511 よりも前のデバイス) にアクセスできなくなることがあります。 応答しなくなった Windows 10 デバイスにアクセスするには、デバイスを USB ドライブを使用して起動することができます。
 
-### <a name="remotely-wipe-a-device-from-the-intune-administrator-console"></a>Intune 管理コンソールからデバイスをリモートでワイプする
 
-1.  ワイプするデバイスを選択します。 デバイスはユーザー単位、またはデバイス単位のいずれかで検索できます。
+**デバイスのフル ワイプ (工場出荷時の設定へのリセット) を実行するには**:
 
-    -   **ユーザー単位:**
+1.  **[デバイスとグループ]** ブレードで、**[すべてのデバイス]** を選択します。
 
-        1.  [Intune 管理コンソール](https://manage.microsoft.com/)で、**[グループ]** &gt; **[すべてのユーザー]** の順にクリックします。
+2.  ワイプするデバイスの名前を選択します。
 
-        2.  ワイプするモバイル デバイスのユーザー名を選択します。 **[プロパティの表示]** を選択します。
-
-        3.  ユーザーの **[プロパティ]** ページで、**[デバイス]** を選択して、ワイプするモバイル デバイスの名前を選択します。 複数のデバイスを選択するには、Ctrl キーを押しながらデバイスをクリックします。
-
-    -   **デバイス単位:**
-
-        1.  [Intune 管理者コンソール](https://manage.microsoft.com/)で、**[グループ]** &gt; **[すべてのモバイル デバイス]** の順に選択します。
-
-         ![インベントリからの削除 (ワイプ) 操作の開始](../media/dev-sa-wipe.png)
-
-        2.  **[デバイス]** を選択し、ワイプするモバイル デバイスの名前を選択します。 複数のデバイスを選択するには、Ctrl キーを押しながらデバイスをクリックします。
-
-2.  **[インベントリからの削除/ワイプ]** を選択します。
-
-3.  インベントリからデバイスを削除するかどうかを確認するメッセージが表示されます。
-
-    -   会社のアプリとデータのみを削除する**選択的ワイプ**を実行する場合は、**[はい]** を選択します。
-
-    -   アプリとデータをすべて消去し、デバイスを出荷時の既定設定に戻す**フル ワイプ**を実行する場合は、**[デバイスをインベントリから削除する前にワイプする]** を選択します。 この処理は、Windows 8.1 を除くすべてのプラットフォームに適用されます。 **フル ワイプで削除されたデータを回復することはできません**。
+3.  デバイスの名前が表示されているブレードで、**[工場出荷時の設定へのリセット]** を選択し、**[はい]** を選択してワイプを確定します。
 
 デバイスに電源が入り、接続されている場合、ワイプ コマンドは 15 分以内にすべてのデバイス タイプに伝達されます。
 
-#### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Azure Active Directory ポータルでデバイスを削除するには
+### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Azure Active Directory ポータルでデバイスを削除するには
 
 1.  [http://aka.ms/accessaad](http://aka.ms/accessaad) にアクセスするか、[https://portal.office.com](https://portal.office.com) から **[管理]** &gt; **[Azure AD]** の順にクリックします。
 
@@ -118,14 +97,10 @@ Intune 管理対象デバイスが不要になるか、別の目的で再利用�
 |Wi-fi と VPN プロファイルの設定|削除されます。|削除されます。|
 |証明書プロファイルの設定|失効済みで、削除されていない証明書。|削除済みおよび失効済みの証明書。|
 |管理エージェント|デバイス管理者特権は無効になります。|デバイス管理者特権は無効になります。|
-|電子メール|該当なし Outlook の項目を参照してください。|Intune を介してプロビジョニングされている電子メール プロファイルは削除され、デバイスにキャッシュされた電子メールは削除されます。|
-|Outlook|Android 用の Microsoft Outlook アプリで受信された電子メールは削除されますが、これは Outlook が MAM ポリシーによって保護されている場合に限ります。 それ以外の場合、登録解除時に Outlook はワイプされません。</br>例外: Exchange がオンプレミスでホストされている場合は、電子メールは削除されません。|Android 用の Microsoft Outlook アプリで受信された電子メールは削除されますが、これは Outlook が MAM ポリシーによって保護されている場合に限ります。 それ以外の場合、登録解除時に Outlook はワイプされません。</br>例外: Exchange がオンプレミスでホストされている場合は、電子メールは削除されません。|
+|電子メール|Android 用の Microsoft Outlook アプリで受信された電子メールは削除されます。|Intune を介してプロビジョニングされている電子メール プロファイルは削除され、デバイスにキャッシュされた電子メールは削除されます。|
+|Outlook|iOS 用の Microsoft Outlook アプリで受信された電子メールは削除されます。</br>例外: Exchange がオンプレミスでホストされている場合は、電子メールは削除されません。|iOS 用の Microsoft Outlook アプリで受信された電子メールは削除されます。</br>例外: Exchange がオンプレミスでホストされている場合は、電子メールは削除されません。|
 |Azure Active Directory (AAD) の切断|AAD レコードは削除されます。|AAD レコードは削除されます。|
 |連絡先 | アプリケーションからネイティブ アドレス帳に直接同期された連絡先が削除されます。  ネイティブ アドレス帳から別の外部ソースに同期された連絡先はワイプできません。 <br /> <br />現時点では、Outlook アプリのみがサポートされています。|アプリケーションからネイティブ アドレス帳に直接同期された連絡先が削除されます。  ネイティブ アドレス帳から別の外部ソースに同期された連絡先はワイプできません。 <br /> <br />現時点では、Outlook アプリのみがサポートされています。
-
-**Android for Work**
-
-会社の Android デバイスで選択的ワイプを行うと、そのデバイスの仕事用のプロファイルのすべてのデータ、アプリケーション、および設定が削除されます。 これによって、そのデバイスは Intune の管理対象ではなくなります。 Android for Work ではフル ワイプはサポートされていません。
 
 **Windows**
 
@@ -138,41 +113,18 @@ Intune 管理対象デバイスが不要になるか、別の目的で再利用�
 |電子メール|Windows の電子メールと添付ファイル用のメール アプリケーションを含む EFS 対応の電子メールを削除します。|サポートされていません。|Intune を介してプロビジョニングされている電子メール プロファイルは削除され、デバイスにキャッシュされた電子メールは削除されます。|Windows の電子メールと添付ファイル用のメール アプリケーションを含む EFS 対応の電子メールを削除します。 Intune によってプロビジョニングされたメール アカウントを削除します。</br>**例外**: Microsoft Exchange がオンプレミスでホストされている場合は、電子メール アカウントは削除されません。|
 |Azure Active Directory (AAD) の切断|いいえ。|いいえ。|AAD レコードは削除されます。|該当なし。 Windows 10 では、Azure Active Directory に参加しているデバイスの選択的ワイプはサポートされません。|
 
-## <a name="wipe-encryption-file-system-efs-enabled-content"></a>暗号化ファイル システム (EFS) 対応コンテンツのワイプ
-EFS で暗号化されたコンテンツの選択的ワイプは、Windows 8.1 と Windows RT 8.1 でサポートされます。 EFS 対応コンテンツの選択的ワイプには次の点が適用されます。
+**選択的ワイプを実行するには**:
 
--   Intune アカウントと同じインターネット ドメインを使用して EFS で保護されているアプリケーションとデータのみが、選択的にワイプされます。 詳細については、「[デバイス データ管理用の Windows 選択的ワイプ](http://technet.microsoft.com/library/dn486874.aspx)」を参照してください。
+1.  **[デバイスとグループ]** ブレードで、**[すべてのデバイス]** を選択します。
 
--   EFS に関連付けられているドメインに何らかの変更が加えられた場合、新しいドメインを使用するアプリケーションとデータが選択的にワイプできるようになるまで最大 48 時間かかります。
+2.  ワイプするデバイスの名前を選択します。
 
--   Intune に登録されている各ドメインは、ワイプされます。
+3.  デバイスの名前が表示されているブレードで、**[会社データを削除する]** を選択し、**[はい]** を選択してワイプを確定します。
 
-EFS の選択的ワイプで現在サポートされているデータとアプリケーションは、次のとおりです。
-
--   Windows 用メール アプリケーション
-
--   作業フォルダー
-
--   EFS で暗号化されたファイルとフォルダー 詳細については、「[ファイル システムを暗号化するためのベスト プラクティス](http://support.microsoft.com/kb/223316)」を参照してください。
-
--   組織で Active Directory の ID を管理している場合は、EFS の選択的ワイプが正常に動作するように、ディレクトリ同期 (DirSync) ツールを使用して AAD に情報を同期する必要があります。  DirSync の詳細については、Azure Active Directory のドキュメントの「[ディレクトリ同期シナリオ](http://technet.microsoft.com/library/dn441212.aspx)」を参照してください。
-
-## <a name="monitor-retire-wipe-and-delete-actions"></a>インベントリからの削除、ワイプ、削除の各操作の監視
-インベントリから削除、ワイプ、削除されたデバイスのレポートを取得するには:
-
-1.  [Intune 管理コンソール](https://manage.microsoft.com/)で、**[レポート]** &gt; **[デバイス履歴のレポート]** の順に選択します。
-
-2.  レポートの開始日と終了日を指定し、**[レポートの表示]** を選択します。
-
-このレポートには、操作を実行したユーザーも表示されます。
-
-### <a name="see-also"></a>関連項目
-[デバイスをインベントリから削除する](retire-devices-from-microsoft-intune-management.md)
-
-[Windows のデバイス データ管理の選択的ワイプ](http://technet.microsoft.com/library/dn486874.aspx)
+デバイスに電源が入り、接続されている場合、ワイプ コマンドは 15 分以内にすべてのデバイス タイプに伝達されます。
 
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

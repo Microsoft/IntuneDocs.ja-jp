@@ -1,11 +1,11 @@
 ---
-title: "前提条件 | Microsoft Docs"
-description: "Intune の前提条件と要件へのリンク"
+title: "サポートされるデバイス - Microsoft Intune | Microsoft Docs"
+description: "Intune デバイス管理でサポートされるデバイス プラットフォームとブラウザーの一覧を示します"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 01/10/2017
+ms.date: 02/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,19 @@ ms.technology:
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e2810513646828cc5da734f3af9cc8d81e0c03fc
-ms.openlocfilehash: 444d08d1a5e709572efbc2f639cef037453b9c0e
+ms.sourcegitcommit: b3732d0c6461f9fb8462ae5584055204d597aae0
+ms.openlocfilehash: 0af4f49713a65900079d69a09f20d210797c935c
 
 
 ---
 
-# <a name="prerequisites-to-getting-started-with-intune"></a>Intune の使用を開始するための前提条件
+# <a name="supported-devices-and-browsers"></a>サポートされるデバイスとブラウザー
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+この記事は、企業でデバイス管理を担当するシステム管理者を対象としています。 電話への Intune インストールについては、[管理デバイスでの作業](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions)に関するページを参照してください。
 
 Microsoft Intune のセットアップを開始する前に、次の要件を確認してください。
 
@@ -74,6 +77,6 @@ Intune コンソールから [Exchange ActiveSync デバイス](/intune/deploy-u
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

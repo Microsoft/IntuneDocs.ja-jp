@@ -9,13 +9,13 @@
 
 ### <a name="configure-automatic-mdm-enrollment"></a>自動 MDM 登録の構成
 
-1. [Azure 管理ポータル](https://manage.windowsazure.com) (https://manage.WindowsAzure.com) で、**[Active Directory]** ノードに移動し、ディレクトリを選択します。
+1. [Azure 管理ポータル](https://portal.azure.com) (https://manage.WindowsAzure.com) で、**[Active Directory]** ノードに移動し、ディレクトリを選択します。
 
 2. **[アプリケーション]** タブを選択します。 **Microsoft Intune** がアプリケーションの一覧に表示されます。
 
     ![Microsoft Intune での Azure AD アプリ](../media/aad-intune-app.png)
 
-3. **Microsoft Intune** の矢印を選択します。 Microsoft Intune を構成できるページが表示されます。
+3. **Microsoft Intune** の矢印を選択します。 Microsoft Intune を構成できるページが開きます。
 
 4. **[構成]** を選択すると、Microsoft Intune での自動 MDM 登録の構成を開始します。
 
@@ -23,7 +23,7 @@
 
   - **MDM 登録 URL** – 既定値を使用します。
   - **MDM 使用条件 URL** – 既定値を使用します。 この URL は、デバイスを登録すると、ユーザーの使用条件を表示します。
-  - **MDM 準拠 URL** – 既定値を使用します。 デバイスが非対応だと分かった場合、**[アクセスが拒否されました]** というメッセージがこの URL に表示されます。 その URL では、デバイスがポリシーに準拠していない理由やどのようにすれば準拠できるのかを分かりやすくユーザーに説明しています。
+  - **MDM 準拠 URL** – 既定値を使用します。 デバイスが非対応だと分かった場合、**[アクセスが拒否されました]** というメッセージがこの URL に表示されます。 この URL からアクセスできるページで、ユーザーは、自身のデバイスがポリシーに準拠していない理由と、デバイスをポリシーに準拠させる方法について理解することができます。
 
 6.  どのユーザーのデバイスを Microsoft Intune で管理するのかを指定します。 これらのユーザーの Windows 10 デバイスは、Microsoft Intune の管理対象として自動的に登録されます。
 
