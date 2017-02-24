@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 27e6a4d59c0cc00ac9dd154605518d9c937e5fc6
+ms.sourcegitcommit: f7998da5566f9b963807b613a47d35b629620f96
+ms.openlocfilehash: 9e8b9e1c935dd771c3e37bea5a552fba2374bf68
 
 
 ---
@@ -37,7 +38,7 @@ Microsoft Intune でアプリの展開を開始する前に、このトピック
 |**iOS 用アプリ パッケージ (&#42;.ipa)**|iOS アプリを展開するには、有効な .ipa パッケージ ファイルが必要です。<br><br>.ipa パッケージは Apple によって署名され、プロビジョニング プロファイルの有効期限の期限内である必要があります。 Intune では、エンタープライズ証明書付き iOS アプリケーションを配布できます。<br><br>Apple のデベロッパー証明書付きアプリがすべてサポートされているわけではありません。<br><br>お客様の企業で、iOS Developer Enterprise Program に登録する必要があります。<br><br>組織のファイアウォールで、iOS の準備および認証用 Web サイトへのアクセスが許可されていることを確認してください。<br><br>アプリのマニフェスト ファイル (.plist) を展開する必要はありません。|
 |**Windows Phone アプリケーション パッケージ (&#42;.xap、.appx、.appxbundle)**|アプリを展開するには、エンタープライズ モバイル コード署名証明書が必要です。 詳細については、「[Microsoft Intune を使用して Windows Phone の管理をセットアップする](set-up-windows-phone-management-with-microsoft-intune.md)」を参照してください。|
 |**Windows アプリケーション パッケージ (.appx、.appxbundle)**|アプリを展開するには、エンタープライズ モバイル コード署名証明書が必要です。 詳細については、「[Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)」 (Microsoft Intune を使用して Windows デバイスの管理をセットアップする) を参照してください。|
-|**MDM を介した Windows インストーラー (&#42;.msi)**|このアプリを使用して Windows インストーラー ベースのアプリを作成し、Windows 10 を実行する登録済み PC に展開できます。 これらの PC は、モバイル デバイス管理 (MDM) によって管理されます。<br /><br />アップロードできるのは、拡張子が .msi であるファイルを 1 つのみです。<br><br>アプリの検出では、ファイルの製品コードと製品バージョンが使用されます。<br><br>アプリの既定の再起動動作が使用されます。 Intune ではこの機能を制御しません。<br><br>ユーザー単位の MSI パッケージは単一のユーザーにインストールされます。<br><br>コンピューター単位の MSI パッケージはデバイス上のすべてのユーザーにインストールされます。<br><br>デュアル モードの MSI パッケージは現在、デバイス上のすべてのユーザーに対してのみインストールされています。<br><br>アプリの更新プログラムは、各バージョンの MSI 製品コードが同じである場合にサポートされます。<br>
+|**MDM を介した Windows インストーラー (&#42;.msi)**|このアプリを使用して Windows インストーラー ベースのアプリを作成し、Windows 10 を実行する登録済み PC に展開できます。 これらの PC は、モバイル デバイス管理 (MDM) によって管理されます。<br /><br />アップロードできるのは、拡張子が .msi であるファイルを&1; つのみです。<br><br>アプリの検出では、ファイルの製品コードと製品バージョンが使用されます。<br><br>アプリの既定の再起動動作が使用されます。 Intune ではこの機能を制御しません。<br><br>ユーザー単位の MSI パッケージは単一のユーザーにインストールされます。<br><br>コンピューター単位の MSI パッケージはデバイス上のすべてのユーザーにインストールされます。<br><br>デュアル モードの MSI パッケージは現在、デバイス上のすべてのユーザーに対してのみインストールされています。<br><br>アプリの更新プログラムは、各バージョンの MSI 製品コードが同じである場合にサポートされます。<br>
 すべてのソフトウェア インストーラー アプリの種類は、クラウド ストレージ領域にアップロードされます。
 
 ### <a name="external-link"></a>**外部リンク**
@@ -63,7 +64,7 @@ Intune 管理者コンソールからアプリを追加または変更したと�
 ## <a name="cloud-storage-space"></a>クラウドの記憶域の容量
 ソフトウェア インストーラーのインストールの種類を使用して作成したすべてのアプリ (たとえば、基幹業務アプリ) は、パッケージ化され、Microsoft Intune クラウドの記憶域にアップロードされます。 Intune の試用版サブスクリプションでは、管理対象のアプリと更新プログラムの保管用として、2 ギガバイト (GB) 分のクラウドの記憶域を使用できます。 完全版のサブスクリプションには、20 GB のストレージ領域が含まれています。
 
-**[管理]** ワークスペースの **[記憶域の使用]** ノードで、使用中の記憶域を確認できます。
+**[管理]** ワークスペースの **[記憶域の使用]** ノードで、使用中の記憶域を確認できます。 Intune の追加ストレージは、当初の購入方法を使用して購入できます。  請求書やクレジット カードでお支払いの場合は、[サブスクリプション管理ポータル](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions)をご覧ください。  それ以外の場合は、パートナーまたは営業担当者にお問い合わせください。
 
 クラウドの記憶域の容量の要件は次のとおりです。
 
@@ -96,6 +97,6 @@ Intune に Windows 10 ユニバーサル appxbundle パッケージを追加す�
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Feb17_HO2-->
 
 

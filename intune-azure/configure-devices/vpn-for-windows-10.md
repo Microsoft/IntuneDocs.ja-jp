@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/22/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aff935508551b45ee0a69f907506b0703290fddf
-ms.openlocfilehash: 1d0459bc414ce43258aff6fdc2e9313784440f52
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 7f09fa9bb8a9817aaad40c6452cff2a866a926d9
 
 
 ---
 
-# <a name="vpn-settings-for-windows-10-devices-in-intune-azure-preview"></a>Intune Azure プレビューでの Windows 10 デバイス向けの VPN 設定
+# <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune での Windows 10 デバイス向けの VPN 設定
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -90,7 +90,7 @@ ms.openlocfilehash: 1d0459bc414ce43258aff6fdc2e9313784440f52
 >[!IMPORTANT]
 >アプリごとの VPN の構成で使用するためにコンパイルするアプリのすべてのリストをセキュリティで保護することをお勧めします。 承認されていないユーザーが変更したリストをアプリごとの VPN アプリ リストにインポートすると、アクセス権のないアプリへの VPN アクセスが承認される可能性があります。 アプリ リストをセキュリティで保護する&1; つの方法は、アクセス制御リスト (ACL) を使用することです。
 
-**[この VPN 接続のネットワーク トラフィック規則]** - VPN 接続に対して有効にするプロトコル、ローカル ポートとリモート ポート、およびアドレス範囲を選択します。 ネットワーク トラフィック規則を作成しない場合は、すべてのプロトコル、ポート、およびアドレス範囲が有効になります。 規則を作成すると、その規則で指定したプロトコル、ポート、およびアドレス範囲だけが、VPN 接続で使用されます。
+**[この VPN 接続のネットワーク トラフィック規則]** - VPN 接続に対して有効にするプロトコル、ローカル ポートとリモート ポート、アドレス範囲を選択します。 ネットワーク トラフィック規則を作成しない場合は、すべてのプロトコル、ポート、およびアドレス範囲が有効になります。 規則を作成すると、その規則で指定したプロトコル、ポート、およびアドレス範囲だけが、VPN 接続で使用されます。
 
 
 ## <a name="conditional-access"></a>条件付きアクセス
@@ -119,6 +119,6 @@ ms.openlocfilehash: 1d0459bc414ce43258aff6fdc2e9313784440f52
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 
