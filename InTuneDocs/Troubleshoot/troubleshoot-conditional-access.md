@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: d4b935ba28edc1b41afb46b0aa7d0ee586de2a1c
+ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
+ms.openlocfilehash: 66a8f72e2560352c2e4f422b41c7e54b4ae124e6
 
 
 ---
@@ -33,11 +34,11 @@ ms.openlocfilehash: d4b935ba28edc1b41afb46b0aa7d0ee586de2a1c
 
 条件付きアクセスを機能させるには、次の要件を満たす必要があります。
 
--   デバイスを Intune で管理する必要がある
--   デバイスを Azure Active Directory (AAD) に登録する必要がある。 通常の状況下では、この登録は Intune の登録時に自動的に行われます
--   デバイスはデバイスおよびそのデバイスのユーザーの Intune コンプライアンス ポリシーに準拠している必要がある。  コンプライアンス ポリシーが存在しない場合は、Intune の登録で十分です。
--   ユーザーが Outlook ではなくデバイスのネイティブ メール クライアントを利用してメールを取得する場合、Exchange ActiveSync をデバイスで有効にする必要がある。     これは、iOS、Windows Phone、および Android/KNOX 標準デバイスで自動的に発生します。
--   Intune Exchange Connector を適切に構成する必要がある。 詳細については、[Microsoft Intune での Exchange Connector のトラブルシューティング](troubleshoot-exchange-connector.md)に関するページを参照してください。
+-    デバイスを Intune で管理する必要がある
+-    デバイスを Azure Active Directory (AAD) に登録する必要がある。 通常の状況下では、この登録は Intune の登録時に自動的に行われます
+-    デバイスはデバイスおよびそのデバイスのユーザーの Intune コンプライアンス ポリシーに準拠している必要がある。  コンプライアンス ポリシーが存在しない場合は、Intune の登録で十分です。
+-    ユーザーが Outlook ではなくデバイスのネイティブ メール クライアントを利用してメールを取得する場合、Exchange ActiveSync をデバイスで有効にする必要がある。     これは、iOS、Windows Phone、および Android/KNOX 標準デバイスで自動的に発生します。
+-    Intune Exchange Connector を適切に構成する必要がある。 詳細については、[Microsoft Intune での Exchange Connector のトラブルシューティング](troubleshoot-exchange-connector.md)に関するページを参照してください。
 
 各デバイスのこれらの状態は、Azure 管理ポータルまたはデバイスのインベントリ レポートで確認できます。
 
@@ -52,13 +53,13 @@ ms.openlocfilehash: d4b935ba28edc1b41afb46b0aa7d0ee586de2a1c
  -  デバイスのコンプライアンス情報が登録されるまで時間がかかることがあります。 しばらく待ってからもう一度お試しください。
  -  iOS デバイスの場合:
      -   ユーザーによって作成された既存の電子メール プロファイルは、Intune の管理者が作成したプロファイルの展開をブロックします。 これは一般的な問題です。iOS ユーザーは通常、電子メール プロファイルを作成し、それから登録するためです。 ポータル サイトは、手動で設定した電子メール プロファイルに起因してポリシーに準拠していないことをユーザーに通知し、そのプロファイルを取り除くようにユーザーに要求します。Intune プロファイルを展開できるように、ユーザーは電子メール プロファイルを取り除く必要があります。 この問題を防ぐには、電子メール プロファイルを設定せずに登録し、Intune によるプロファイルの展開を許可するようにユーザーに指示します。
-     -   iOS デバイスがポリシー準拠状況の確認中の状態でスタックし、ユーザーが別のチェックインを開始できません。 ポータル サイトの再起動で解決することがあり、ポリシー準拠の状態が Intune のデバイスの状態を反映します。 デバイスの同期からすべてのデータが収集された後、ポリシー準拠の確認は平均して 0.5 秒で完了します。
+     -     iOS デバイスがポリシー準拠状況の確認中の状態でスタックし、ユーザーが別のチェックインを開始できません。 ポータル サイトの再起動で解決することがあり、ポリシー準拠の状態が Intune のデバイスの状態を反映します。 デバイスの同期からすべてのデータが収集された後、ポリシー準拠の確認は平均して&0;.5 秒で完了します。
 
         通常、デバイスがこの状態にあるのは、サービスの接続に問題があるか、同期に時間がかかっていることが原因です。  別のネットワーク構成 (携帯電話、Wi-Fi、VPN) を使用、デバイスを再起動、およびデバイスの SSP が最新であることを確認しても問題が解決しない場合は、「[Microsoft Intune のサポート受ける方法](how-to-get-support-for-microsoft-intune.md)」に従って Microsoft サポートにお問い合わせください。
 
 ## <a name="policy-issues"></a>ポリシーの問題
 
-コンプライアンス ポリシーを作成し、それを電子メール ポリシーにリンクするとき、両方のポリシーを同じユーザーに展開する必要があります。そのため、どのポリシーをどのグループに展開するか計画するときは注意が必要です。 ユーザーにポリシーが 1 つだけ適用されている場合、そのユーザーのデバイスはおそらくポリシー非準拠となります。
+コンプライアンス ポリシーを作成し、それを電子メール ポリシーにリンクするとき、両方のポリシーを同じユーザーに展開する必要があります。そのため、どのポリシーをどのグループに展開するか計画するときは注意が必要です。 ユーザーにポリシーが&1; つだけ適用されている場合、そのユーザーのデバイスはおそらくポリシー非準拠となります。
 
 
 ## <a name="exchange-activesync-issues"></a>Exchange ActiveSync の問題
@@ -125,7 +126,7 @@ Exchange Connector のログを表示するには、[サービス トレース �
 
     Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
 
--   ログ内で **quick sync** を検索してクイック (デルタ) 同期を探します。
+-    ログ内で **quick sync** を検索してクイック (デルタ) 同期を探します。
 
 ##### <a name="exceptions-in-get-next-command"></a>Get next コマンドの例外
 Exchange Connector ログで **Get next コマンド**の例外を確認し、それらを Microsoft サポートに提供します。
@@ -134,9 +135,9 @@ Exchange Connector ログで **Get next コマンド**の例外を確認し、�
 
 詳細ログ記録を有効にするには:
 
-1.  Exchange Connector のトレース構成ファイルを開きます。 ファイルは、%ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml に置かれます。
-2.  キー OnPremisesExchangeConnectorService を使用して、TraceSourceLine を探します。
-3.  **SourceLevel** ノードの値を、以下のように **Warning ActivityTracing** (既定値) から **Verbose ActivityTracing** に変更します。
+1.    Exchange Connector のトレース構成ファイルを開きます。 ファイルは、%ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml に置かれます。
+2.    キー OnPremisesExchangeConnectorService を使用して、TraceSourceLine を探します。
+3.    **SourceLevel** ノードの値を、以下のように **Warning ActivityTracing** (既定値) から **Verbose ActivityTracing** に変更します。
 
     <TraceSourceLine>
           <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>
@@ -161,6 +162,6 @@ Exchange Connector ログで **Get next コマンド**の例外を確認し、�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

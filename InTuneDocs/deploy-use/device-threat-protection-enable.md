@@ -15,8 +15,8 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
-ms.openlocfilehash: 1297522d0f7b52ebe14eb7b938f3458e7308ae27
+ms.sourcegitcommit: 6f687a1db84b49bc173d2067ab95598b4485daa8
+ms.openlocfilehash: 618819ff8dded925bc4745160dde8c9e75694faf
 
 
 ---
@@ -34,14 +34,14 @@ Intune で Lookout MTP 接続を有効にするには、[Microsoft Intune 管理
 >[!IMPORTANT]
 > コンプライアンス ポリシー ルールを作成して条件付きアクセスを構成する前に、Lookout for Work アプリを構成する**必要があります**。 これにより、アプリはエンド ユーザーがインストールできる状態になり、アプリをインストールするとエンド ユーザーは電子メールや他の会社のリソースにアクセスできます。
 
-以上で、Intune 管理者コンソールでの Lookout と Intune の統合のセットアップは完了です。  このソリューションを実装するこの後の手順では、[Lookout for Work アプリ](configure-and-deploy-lookout-for-work-apps.md)を展開し、[コンプライアンス](enable-device-threat-protection-rule-in-compliance-policy.md) ポリシーを設定します。
+以上で、Intune 管理者コンソールでの Lookout と Intune の統合のセットアップは完了です。  このソリューションを実装するこの後の手順では、[Lookout for Work アプリ](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-apps)を展開し、[コンプライアンス](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-policy) ポリシーを設定します。
 
 
 ## <a name="next-steps"></a>次のステップ
-[Lookout for Work アプリを構成する](configure-and-deploy-lookout-for-work-apps.md)
+[Lookout for Work アプリを構成する](https://docs.microsoft.com/intune/deploy-use/device-threat-protection-apps)
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

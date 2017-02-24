@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +13,23 @@ ms.technology:
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 68cdc77de1fa77b4fed6a1f37850b5427fb2b121
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: b6ab60eff3c65244290b7141e81a7b052dd790ed
 
 
 ---
 
 # <a name="manage-intune-licenses"></a>Intune のライセンスを管理する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+このトピックでは、管理者が Intune ライセンスをユーザーに割り当てて、デバイスを管理対象にする方法を説明します。
+
 Intune サービスにサインインして使用したり、デバイスを管理対象に登録するためには、まず [Office 365 ポータル](http://go.microsoft.com/fwlink/p/?LinkId=698854)を使用して、各ユーザーに Intune サブスクリプションのライセンスを割り当てる必要があります。
 
-Microsoft Enterprise Mobility + Security (EMS) を使用している組織には、EMS パッケージの Azure Active Directory Premium または Intune サービスのみを必要とするユーザーがいる可能性があります。 [Azure Active Directory PowerShell コマンドレット](https://msdn.microsoft.com/library/jj151815.aspx)を使用して、いずれかのサービスまたはサービスのサブセットを割り当てることができます。 詳細については、「[PowerShell を使用して Intune ライセンスを管理する](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md)」をご覧ください。
+Microsoft Enterprise Mobility + Security (EMS) を使用している組織には、EMS パッケージの Azure Active Directory Premium または Intune サービスのみを必要とするユーザーがいる可能性があります。 [Azure Active Directory PowerShell コマンドレット](https://msdn.microsoft.com/library/jj151815.aspx)を使用して、いずれかのサービスまたはサービスのセットを割り当てることができます。 詳細については、「[PowerShell を使用して Intune ライセンスを管理する](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md)」をご覧ください。
 
 ## <a name="how-intune-licenses-are-assigned"></a>Intune のライセンスを割り当てる方法
 オンプレミスの Active Directory から同期しているユーザー アカウントや、[Office 365 ポータル](http://go.microsoft.com/fwlink/p/?LinkId=698854)を使用してクラウド サービスのサブスクリプションに手動で追加されたユーザー アカウントには、Intune のライセンスが自動的に割り当てられません。 代わりに、後で Intune テナント管理者が Office 365 ポータルでユーザー アカウントを編集して、ユーザーにライセンスを割り当てる必要があります。
@@ -94,6 +100,6 @@ EMS サービスのユーザー ライセンスを選択的に割り当てるに
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

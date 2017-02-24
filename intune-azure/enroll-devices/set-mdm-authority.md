@@ -1,5 +1,6 @@
 ---
-title: "モバイル デバイス管理機関を設定する | Intune Azure プレビュー | Microsoft Docs"
+title: "モバイル デバイス管理機関の設定"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: Intune でモバイル デバイス管理機関を設定する方法について説明します。 "
 keywords: 
 author: staciebarker
@@ -13,9 +14,10 @@ ms.technology:
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 3c0de501c172484f036aa2d812f0c40fcfa1d93f
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 9d7a1a934188f0a40553d3c6b8b567ba8f6af034
 
 ---
 
@@ -36,7 +38,7 @@ ms.openlocfilehash: 3c0de501c172484f036aa2d812f0c40fcfa1d93f
 
 **モバイル デバイス管理機関を設定するには、以下の手順に従います。**
 
-1. Azure Portal で、**[その他のサービス]** を選択し、テキスト ボックスに「**Intune**」と入力して、**[その他]** > **[Intune]** の順に選択します。
+1. Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** を選択します。
 
 2. [Intune] ブレードで **[デバイスの登録]** を選択し、**[概要]** を選択します。
 
@@ -44,6 +46,6 @@ ms.openlocfilehash: 3c0de501c172484f036aa2d812f0c40fcfa1d93f
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

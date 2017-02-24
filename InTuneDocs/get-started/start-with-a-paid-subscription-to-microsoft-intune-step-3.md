@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 247bc72fce1146d83729cadb9905d8ceed134c14
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: b1f16df329c01aeb45885f3981e2d9d7ef854e8b
 
 
 ---
 
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Intune にユーザーを追加して管理権限を付与する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+このトピックでは、管理者が Intune にユーザーを追加する方法と、Intune サービスで使用できる管理アクセス許可について説明します。
 
 管理者は、ユーザーを直接追加することも、オンプレミスの Active Directory からユーザーを同期することもできます。 追加されたユーザーは、デバイスを登録し、会社のリソースにアクセスできます。 また、*テナント管理者*、*サービス管理者*、*デバイス登録マネージャー*などの追加権限を、ユーザーに付与することもできます。
 
@@ -33,7 +38,7 @@ ms.openlocfilehash: 247bc72fce1146d83729cadb9905d8ceed134c14
   - [デバイス登録マネージャー](#device-enrollment-managers)
 
 ## <a name="add-users-to-intune"></a>Intune にユーザーを追加する
-[Office 365 ポータル](http://go.microsoft.com/fwlink/p/?LinkId=698854)から Intune サブスクリプションにユーザーを手動で追加することができます。ユーザーに Intune ライセンスが自動的に割り当てられることはありません。 代わりに、後で Intune テナント管理者が Office 365 ポータルでユーザー アカウントを編集して、ユーザーにライセンスを割り当てる必要があります。 ガイダンスについては、「[Office 365 にユーザーを個別に、またはまとめて追加する - 管理者向けヘルプ](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)」をご覧ください。
+[Office 365 ポータル](http://go.microsoft.com/fwlink/p/?LinkId=698854)から Intune サブスクリプションにユーザーを手動で追加することができますが、ユーザーに Intune ライセンスが自動的に割り当てられることはありません。 代わりに、後で Intune テナント管理者が Office 365 ポータルでユーザー アカウントを編集して、ユーザーにライセンスを割り当てる必要があります。 ガイダンスについては、「[Office 365 にユーザーを個別に、またはまとめて追加する - 管理者向けヘルプ](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)」をご覧ください。
 
 ### <a name="sync-active-directory-and-add-users-to-intune"></a>Active Directory を同期化して Intune にユーザーを追加する
 ディレクトリの同期化によって、オンプレミスの Active Directory から Intune ユーザーを含む Microsoft Azure Active Directory (Azure AD) に、ユーザー アカウントをインポートできます。 オンプレミスの Active Directory サービスが Azure Active Directory ベースの全サービスに反映され、ユーザー ID の管理が大幅に単純化されます。 また、シングル サインオン機能を構成することによってユーザー認証の利便性を高めることもできます。 同じ [Azure AD テナント](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)を複数のサービスとリンクすることにより、前に同期したユーザー アカウントをすべてのクラウド ベース サービスで使用できるようになります。
@@ -79,7 +84,7 @@ Office 365 ポータルにアクセスするには、アカウントのサイン
 
 既定では、Intune はサービス管理者を割り当てません。 代わりに、全体管理者の役割を持つテナント管理者を使用して、サブスクリプション用の最初のサービス管理者を割り当てる必要があります。 サービス管理者は、[Intune 管理コンソール](https://manage.microsoft.com/)を使って、Intune の日常のタスクを管理します。 サービス管理者は、管理コンソール内から割り当てます。 サービス管理者が管理コンソールにアクセスするには、Intune のライセンスが必要です。
 
-サービス管理者には、次の権限の 1 つが割り当てられます。
+サービス管理者には、次の権限の&1; つが割り当てられます。
 - **フル アクセス**: Intune 管理コンソールのあらゆる部分に無制限にアクセスでき、他のサービス管理者を追加および管理できます
 - **読み取り専用アクセス**: Intune 管理コンソールのすべての部分に対する読み取り権限であり、データを変更することはできませんが、レポートは実行できます
 - **ヘルプデスク - グループ ノード**: この権限を持つサービス管理者は、ヘルプデスクのシナリオに関するタスクだけを実行できます。「[管理者の役割に応じて Intune コンソール ビューをカスタマイズする](/intune/deploy-use/control-what-admins-can-see-in-the-microsoft-intune-admin-console)」をご覧ください
@@ -93,7 +98,7 @@ Office 365 ポータルにアクセスするには、アカウントのサイン
 
 ### <a name="device-enrollment-managers"></a>デバイス登録マネージャー
 
-デバイス登録マネージャーは、より多くのユーザーレス デバイスを登録するための追加の権限を持つ標準ユーザー アカウントです。 既定では、各 Intune ユーザーが登録できるデバイスは最大 15 台までです。 管理者は、ユーザー アカウントにデバイス登録マネージャーの権限を付与できます。 そのアカウントは、企業が所有する多数のデバイスを登録できます。 これは、一時的にデバイスをユーザーに割り当てる可能性がある場合や、ユーザーとデバイスの関連付けが必要ないキオスク モードで使用する場合に役立ちます。 詳しくは、「[Microsoft Intune のデバイス登録マネージャーを使用した企業所有デバイスの登録](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)」をご覧ください。
+デバイス登録マネージャーは、より多くのユーザーレス デバイスを登録するための追加の権限を持つ標準ユーザー アカウントです。 既定では、各 Intune ユーザーが登録できるデバイスは最大&15; 台までです。 管理者は、ユーザー アカウントにデバイス登録マネージャーの権限を付与できます。 そのアカウントは、企業が所有する多数のデバイスを登録できます。 これは、一時的にデバイスをユーザーに割り当てる可能性がある場合や、ユーザーとデバイスの関連付けが必要ないキオスク モードで使用する場合に役立ちます。 詳しくは、「[Microsoft Intune のデバイス登録マネージャーを使用した企業所有デバイスの登録](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)」をご覧ください。
 
 >[!div class="step-by-step"]
 
@@ -101,6 +106,6 @@ Office 365 ポータルにアクセスするには、アカウントのサイン
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,21 @@ ms.technology:
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 047a2fb0ad286ece183116a70466fc259b9a0dea
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
 
 
 ---
 
 
 # <a name="sign-up-or-sign-in-to-intune"></a>Intune にサインアップまたはサインインする
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+このトピックでは、システム管理者が Intune アカウントにサインアップする方法を説明します。
+
 Intune にサインインまたはサインアップする前に、Microsoft Online Services の職場または学校アカウントが既に組織に存在するかどうか、または組織で Enterprise Agreement または同等のボリューム ライセンス契約を Microsoft と結んでいるかどうかを確認する必要があります。 職場または学校アカウントは、Microsoft とボリューム ライセンス契約を結んだとき、または Office 365 などの他の Microsoft クラウド サービスをサブスクライブしたときに支給されます。
 
 既に職場または学校アカウントを持っている場合は、そのアカウントで**サインイン**して、既存のサブスクリプション環境に Intune を追加できます。 持っていない場合は、**サインアップ**して、Intune の管理に使用する組織の新しいアカウントを作成する必要があります。
@@ -50,6 +56,6 @@ Intune にサインインまたはサインアップする前に、Microsoft Onl
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

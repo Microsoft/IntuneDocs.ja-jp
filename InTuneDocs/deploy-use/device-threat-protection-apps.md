@@ -14,8 +14,8 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
-ms.openlocfilehash: a7c1a2b7ec1719a47c36e1fe09d1deccd0eed1b1
+ms.sourcegitcommit: 6f687a1db84b49bc173d2067ab95598b4485daa8
+ms.openlocfilehash: ab94439d9fd5300d61c5991434d41f7fdca693d2
 
 
 ---
@@ -78,7 +78,7 @@ ms.openlocfilehash: a7c1a2b7ec1719a47c36e1fe09d1deccd0eed1b1
 
 6. **アプリをユーザーに展開する**には、Lookout for Work アプリを選択し、**[展開の管理]** を選択します。
 
-  Lookout コンソールの 「Enrollment Management」 (登録管理) オプションで追加したのと同じユーザーを選択する必要があります。  Lookout MTP へのユーザー グループの追加の詳細については、「[Lookout デバイス脅威保護用にサブスクリプションを構成する](configure-and-deploy-lookout-for-work-apps.md)」セクションの手順 3 をご覧ください。
+  Lookout コンソールの 「Enrollment Management」 (登録管理) オプションで追加したのと同じユーザーを選択する必要があります。  Lookout MTP へのユーザー グループの追加の詳細については、「[Lookout デバイス脅威保護用にサブスクリプションを構成する](https://docs.microsoft.com/sccm/protect/deploy-use/configure-and-deploy-lookout-for-work-apps)」セクションの手順 3 をご覧ください。
 
   >[!IMPORTANT]
   > Intune アプリ展開ウィザードでは、Azure AD ユーザー グループは認識されず、代わりに Intune ユーザー グループが使用されます。このため、[こちら](plan-your-user-and-device-groups.md)のトピックの説明に従って Lookout コンソールで登録した Azure AD ユーザー グループに基づいて Intune ユーザー グループを作成する必要があります。
@@ -94,10 +94,10 @@ ms.openlocfilehash: a7c1a2b7ec1719a47c36e1fe09d1deccd0eed1b1
 * [Android デバイスで Lookout for Work が検出した脅威を解決する必要がある](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>次のステップ
-* [コンプライアンス ポリシーでデバイスの脅威防御ルールを有効にする](enable-device-threat-protection-rule-in-compliance-policy.md)
+* [コンプライアンス ポリシーでデバイスの脅威防御ルールを有効にする](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

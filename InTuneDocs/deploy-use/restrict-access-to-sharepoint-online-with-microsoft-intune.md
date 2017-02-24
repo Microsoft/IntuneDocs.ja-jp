@@ -15,8 +15,8 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
+ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
+ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 
 
 ---
@@ -155,8 +155,6 @@ SharePoint Online ポリシーには、次の&2; つのグループの種類を�
 
      -   **デバイスはドメインに参加しているか準拠デバイスである必要があります。** PC に、ドメインに参加しているか、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] で設定されたポリシーに準拠していることを求める場合は、このオプションを選択します。 PC がどちらの要件も満たさない場合、ユーザーはデバイスを [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録するように求められます。
 
-     -   **デバイスはドメインに参加している必要があります** このオプションを選択した場合、PC は Exchange Online にアクセスするために、ドメインに参加する必要があります。 PC がドメインに参加していない場合、メールへのアクセスはブロックされ、ユーザーは IT 管理者に連絡するように求められます。
-
      -   **デバイスは準拠デバイスである必要があります** このオプションを選択した場合、PC は [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録され、ポリシーに準拠している必要があります。 PC を登録していない場合は、登録する方法についての手順を示したメッセージが表示されます。
 
 4.   SharePoint Online と OneDrive for Business への **[ブラウザー アクセス]** では、サポートされているブラウザー (Safari (iOS)、Chrome (Android)) を通じてのみ、Exchange Online へのアクセスを許可することを選択できます。 その他のブラウザーからのアクセスはブロックされます。 OneDrive のアプリケーションのアクセス用に選択した同じプラットフォームの制限が、ここにも適用されます。
@@ -200,6 +198,6 @@ SharePoint Online ポリシーには、次の&2; つのグループの種類を�
 
 
 
-<!--HONumber=Jan17_HO5-->
+<!--HONumber=Feb17_HO3-->
 
 

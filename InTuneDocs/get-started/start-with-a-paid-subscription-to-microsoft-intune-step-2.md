@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,20 @@ ms.technology:
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: b40ce33560ea49fdc966889a1bf2cac2ae537578
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 7e921e3f92b0c9b94e4fdc387513ab5c1627817a
 
 
 ---
 
 
 # <a name="configure-a-custom-domain-name"></a>カスタムのドメイン名を構成する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+このトピックでは、管理者が DNS CNAME を作成して、ログオン エクスペリエンスの簡略化とカスタマイズを行う方法を説明します。
 
 組織が Intune などの Microsoft クラウド ベース サービスにサインアップすると、**yourdomain.onmicrosoft.com** のように Azure Active Directory (AD) でホストされる最初のドメイン名が付与されます。 この例で、**yourdomain** はサインアップ時に選択したドメイン名、**onmicrosoft.com** はサブスクリプションに追加するアカウントに割り当てられるサフィックスです。 組織でカスタムのドメインを保有している場合、Intune のインスタンスを構成して、サブスクリプションで提供されたドメイン名ではなく、カスタムのドメインを使用できます。
 
@@ -59,6 +64,6 @@ Microsoft のクラウドベースのサービスにサブスクライブする�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

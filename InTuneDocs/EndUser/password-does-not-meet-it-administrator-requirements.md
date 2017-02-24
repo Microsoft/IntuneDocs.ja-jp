@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 02/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,10 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 395c9bdc8aad13123b6a22b6edac0b8714323f2f
+ms.sourcegitcommit: c5c857b46c13aee790ab5f780a59d9cd51029cd2
+ms.openlocfilehash: a2af33a5b274b01f6651c76bd0b0038dc74b785f
 
 
 ---
@@ -45,12 +46,12 @@ PIN またはパスワードの問題についての説明:
 
 - **パスワードがごく最近に使用されました**。 過去に使用したものと同じパスワードの使用を、IT 管理者が禁止しています。 前に使ったことのないパスワードを選択します。
 
-- **パスワードが要件を満たすほど複雑ではありません**。 IT 管理者は、さらに複雑な文字をパスワードに使うように要求しています。 数字、英大文字、および $、%、# などの記号を使ってみてください。
+- **パスワードが要件を満たすほど複雑ではありません**。 IT 管理者は、さらに複雑な文字をパスワードに使うように要求しています。 数字、英大文字、および $、%、# などの記号を使ってみてください。 これはデバイス上の他のアカウントにも該当する場合があるため、IT がデバイスに対して設定した要件をパスワードが満たしていることを他の作業アカウントでご確認ください。
 
 パスワードの要件への準拠で問題が発生している場合は、IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
 
 
-<!--HONumber=Jan17_HO5-->
+<!--HONumber=Feb17_HO2-->
 
 

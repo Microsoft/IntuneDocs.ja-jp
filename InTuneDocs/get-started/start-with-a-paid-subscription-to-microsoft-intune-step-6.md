@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 4093497553ccb7cc5f5c949f2ff0004697beb42a
 
 
 ---
@@ -24,13 +25,15 @@ ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+このトピックでは、Intune 管理者がポリシーを作成し、アプリを発行した後、管理対象デバイスにデプロイする方法を説明します。
+
 Intune へのアプリの登録を開始する前に、ポリシー設定とアプリを有効にします。アプリは、デバイスが管理対象になるとすぐに展開されます。 モバイル デバイスのセキュリティ設定を制御したり、コンピューターの Windows ファイアウォールや Endpoint Protection の設定を管理したり、アプリケーションを展開したりする作業は、Intune のポリシー設定を使用して効率的に行うことができます。 ポリシーを構成し、アプリを追加して展開し、Intune に登録されたらすぐにデバイスが設定とアプリを受信するようにすることができます。
 
 ポリシーとアプリはプラットフォームに固有です。
 
 ## <a name="manage-device-settings"></a>デバイス設定の管理
 
- デバイス ポリシー設定は、プラットフォームごとに構成され、管理されます。 次のプラットフォームに対してポリシーを構成できます。
+ デバイス ポリシー設定は、プラットフォームごとに構成され、管理されます。 次のリンクは、それぞれのプラットフォームで使用できる設定の一覧を提供します。
 
 - [iOS](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
 - [Android および Samsung KNOX Standard](https://docs.microsoft.com/intune/deploy-use/android-policy-settings-in-microsoft-intune)
@@ -45,7 +48,7 @@ Intune へのアプリの登録を開始する前に、ポリシー設定とア�
 
 ## <a name="add-and-deploy-apps"></a>アプリを追加して展開する
 
-Intune にアプリを追加した後で、次の 2 つの方法で管理対象アプリに展開することができます。
+Intune にアプリを追加した後で、次の&2; つの方法で管理対象アプリに展開することができます。
 - **必須のインストール** - アプリを自動的に管理対象デバイスにインストールします。
 - **利用可能なインストール** - ユーザーがデバイスにインストールするかどうかを選択できるように、Intune ポータル サイトにアプリが表示されます。
 
@@ -72,6 +75,6 @@ Intune にアプリを追加した後で、次の 2 つの方法で管理対象�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d92b8b03c1c71898a15b1d1f0a1ee5e1f288dc2e
-ms.openlocfilehash: 759e5b7d04ccbbfb338d182bad03e0b0218cdeca
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: 43ac18d298901f24c8d6352537b285bf0108f667
 
 
 ---
@@ -46,7 +47,7 @@ Intune に登録する前に、デバイスを既存のエンタープライズ 
 
 ## <a name="enrolling-devices-in-intune"></a>Intune にデバイスを登録する
 
-移行対象のユーザーは、会社のリソース、電子メール、アプリケーションへのアクセスを回復するため、またはアクセスできなくなるのを防ぐため、Intune に直ちに登録する必要があります。 条件付きアクセスを構成してある場合、ユーザーが Intune 登録前に電子メールに接続しようとすると、アクセスはブロックされて、登録メールが送られます。 この電子メールでは、Intune にデバイスを登録する方法が説明されています。  ユーザーは、Intune ポータル サイト アプリで、または Windows 8.1 および Windows 10 Mobile オペレーティング システムでネイティブに、Intune に登録することもできます。 プラットフォームごとの登録手順の詳細については、「[Microsoft Intune の使用に関するエンドユーザーへの通知内容](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)」を参照してください。
+移行対象のユーザーは、会社のリソース、電子メール、アプリケーションへのアクセスを回復するため、またはアクセスできなくなるのを防ぐため、Intune に直ちに登録する必要があります。 条件付きアクセスを構成してある場合、ユーザーが Intune 登録前に電子メールに接続しようとすると、アクセスはブロックされて、登録メールが送られます。 この電子メールでは、Intune にデバイスを登録する方法が説明されています。  ユーザーは、Intune ポータル サイト アプリで、または Windows 8.1 および Windows 10 Mobile オペレーティング システムでネイティブに、Intune に登録することもできます。 プラットフォームごとの登録手順の詳細については、「[Microsoft Intune の使用に関するエンドユーザーへの通知内容](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)」を参照してください。
 
 ## <a name="configure-intune-conditional-access-optional"></a>Intune の条件付きアクセスを構成する (省略可能)
 
@@ -75,6 +76,6 @@ Intune への移行に関してさらに支援が必要な場合は、 問題な
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 
