@@ -156,7 +156,7 @@
 #### [Dynamics CRM Online](deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 #### [電子メールへのアクセスを保護する: 例](deploy-use/restrict-email-access-example-scenarios.md)
 ### [ポリシーで管理されたアプリにのみ Office&365; サービスへのアクセスを許可する](deploy-use/allow-policy-managed-apps-access-to-o365.md)
-#### [アプリと MAM CA](deploy-use/use-apps-with-mam-ca.md)
+#### [アプリベース CA でアプリを使用する](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [ADAL がないアプリをブロックする](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [ネットワークへのアクセスを保護する (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
@@ -224,6 +224,6 @@
 # [用語集](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Feb17_HO3-->
+<!--HONumber=Feb17_HO4-->
 
 
