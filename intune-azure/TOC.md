@@ -5,7 +5,9 @@
 ### [無料試用版にサインアップ](introduction/sign-up-free-trial-microsoft-intune.md)
 ## [新機能](introduction/whats-new.md)
 ## [既知の問題](introduction/known-issues-in-the-intune-preview.md)
-<!--- ## [Get support](introduction/get-support.md)
+## [サポートを受ける](introduction/how-to-get-support-for-microsoft-intune.md)
+<!--- 
+
 ## [Related resources](introduction/related-resources.md)
 
 ## [Get started](plan-and-design/get-started.md) --->
@@ -185,8 +187,3 @@
 ### [Android 用アプリ ラッピング ツール](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool?toc=%2fintune-azure%2ftoc.json)
 ## [Intune アプリ SDK](/intune/develop/intune-app-sdk?toc=%2fintune-azure%2ftoc.json)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
-
-
-<!--HONumber=Feb17_HO3-->
-
-

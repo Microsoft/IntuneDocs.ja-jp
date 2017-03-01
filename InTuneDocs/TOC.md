@@ -206,6 +206,7 @@
 
 # [トラブルシューティング](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
 ## [サポートを受ける方法](troubleshoot/how-to-get-support-for-microsoft-intune.md)
+## [レポートを使用した Intune の監視](deploy-use/understand-microsoft-intune-operations-by-using-reports.md)
 ## [Endpoint Protection に関するトラブルシューティング](troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md)
 ## [会社のリソースへのアクセスに関する問題のトラブルシューティング](troubleshoot/troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
 ## [アプリケーションの展開に関する問題のトラブルシューティング](troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune.md)
@@ -222,8 +223,3 @@
 ## [デバイス脅威保護に関するトラブルシューティング](troubleshoot/device-threat-protection-troubleshooting.md)
 
 # [用語集](understand-explore/intune-glossary.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-
