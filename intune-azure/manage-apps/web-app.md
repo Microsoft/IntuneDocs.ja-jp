@@ -1,5 +1,6 @@
 ---
-title: "Web アプリを Intune に追加する方法 | Intune Azure プレビュー | Microsoft Docs"
+title: "Web アプリを Intune に追加する方法"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: Web アプリを Intune に追加する方法について説明します。"
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 8b14b9dfef7100a86c338c362ba56be329a8639c
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: c2e54d3e57a4b02ba277b88cc672d5587c449281
+ms.lasthandoff: 02/18/2017
 
 ---
 
