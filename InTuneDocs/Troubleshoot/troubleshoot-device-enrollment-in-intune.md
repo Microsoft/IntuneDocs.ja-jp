@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 01/24/17
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
 ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
+ms.lasthandoff: 01/30/2017
 
 
 ---
@@ -261,7 +262,7 @@ Android デバイスでは、[SSL Server hello](https://technet.microsoft.com/li
 
 **解決方法:** 次の解決方法をエンド ユーザーに伝え、企業リソースへのアクセスの回復を支援します。
 
-ユーザーが iOS 用のポータル サイト アプリを起動すると、デバイスと Intune の通信状態が通知されることがあります。 通信していないことが検出された場合、Intune との同期 (再接続) が自動的に試行されます。**[同期しています...]** インライン通知が 表示されます。 
+ユーザーが iOS 用のポータル サイト アプリを起動すると、デバイスと Intune の通信状態が通知されることがあります。 通信していないことが検出された場合、Intune との同期 (再接続) が自動的に試行されます。**[同期しています...]** インライン通知が 表示されます。
 
   ![[同期しています...] 通知](./media/ios_cp_app_trying_to_sync_notification.png)
 
@@ -269,11 +270,11 @@ Android デバイスでは、[SSL Server hello](https://technet.microsoft.com/li
 
   ![[同期に成功しました] 通知](./media/ios_cp_app_sync_successful_notification.png)
 
-同期できなかった場合、**[同期できません]** インライン通知が iOS ポータル サイト アプリに表示されます。 
+同期できなかった場合、**[同期できません]** インライン通知が iOS ポータル サイト アプリに表示されます。
 
   ![[同期できません] 通知](./media/ios_cp_app_unable_to_sync_notification.png)
 
-この問題を修正するには、**[セットアップ]** ボタンを選択する必要があります。このボタンは、**[同期できません]** 通知の右にあります。 [セットアップ] ボタンを押すと、[会社アクセスのセットアップ] フロー画面が表示されます。この画面の指示に従い、デバイスを登録します。 
+この問題を修正するには、**[セットアップ]** ボタンを選択する必要があります。このボタンは、**[同期できません]** 通知の右にあります。 [セットアップ] ボタンを押すと、[会社アクセスのセットアップ] フロー画面が表示されます。この画面の指示に従い、デバイスを登録します。
 
   ![[会社アクセスのセットアップ] 画面](./media/ios_cp_app_company_access_setup.png)
 
@@ -386,9 +387,4 @@ iOS 登録エラーの一覧は、デバイスのユーザー ドキュメント
 
 ### <a name="next-steps"></a>次のステップ
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 
