@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/010/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 151e71f719b459a4f2c9612035201908d2610980
-ms.openlocfilehash: 78f0ff9a1b7bdaf30721d8702c36ff0e613b109e
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 8d56b6600ca86faabbb50d29405969385eb29940
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -46,7 +47,7 @@ ms.openlocfilehash: 78f0ff9a1b7bdaf30721d8702c36ff0e613b109e
 
 #### <a name="check-number-of-devices-enrolled-and-allowed"></a>登録済みデバイス数と上限を確認する
 
-Azure Portal の [Intune] ブレードで、**[デバイスの登録]** > **[登録の制限]** の順に移動し、ユーザーに割り当てられているデバイス数が許容最大数の 15 以下であることを確認します。
+Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。 Azure Portal の [Intune] ブレードで、**[デバイスの登録]** > **[登録の制限]** の順に移動し、ユーザーに割り当てられているデバイス数が許容最大数の 15 以下であることを確認します。
 
 <!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
@@ -218,16 +219,16 @@ Android デバイスでは、[SSL Server hello](https://technet.microsoft.com/li
 
 この問題を解決するには、AD FS サーバーまたはプロキシでコンピューターの個人証明書に証明書を次のようにインポートします。
 
-1.  ADFS サーバーとプロキシ サーバーで、ローカル コンピューターの証明書管理コンソールを起動します。**[スタート]** ボタンを右クリックし、**[ファイル名を指定して実行]** を選択し、「**certlm.msc**」と入力します。
-2.  **[個人用]** を展開し、**[証明書]** を選択します。
-3.  AD FS サービス通信の証明書を見つけ (公的に署名された証明書)、ダブルクリックしてそのプロパティを表示します。
-4.  **[証明のパス]** タブを選択し、証明書の親証明書を確認します。
-5.  親証明書ごとに、**[証明書の表示]** を選択します。
-6.  **[詳細]** タブを選択し、**[ファイルにコピー]** を選択します。
-7.  ウィザードの指示に従い、証明書の公開鍵をファイル場所にエクスポートします (保存します)。
-8.  手順 3 でエクスポートした親証明書を Local Computer\Personal\Certificates にインポートします。**[証明書]** を右クリックし、**[すべてのタスク]**、**[インポート]** の順に選択し、ウィザードの指示に従って証明書をインポートします。
-9.  AD FS サーバーを再起動します。
-10. すべての AD FS サーバーとプロキシ サーバーで上記の手順を繰り返します。
+1.    ADFS サーバーとプロキシ サーバーで、ローカル コンピューターの証明書管理コンソールを起動します。**[スタート]** ボタンを右クリックし、**[ファイル名を指定して実行]** を選択し、「**certlm.msc**」と入力します。
+2.    **[個人用]** を展開し、**[証明書]** を選択します。
+3.    AD FS サービス通信の証明書を見つけ (公的に署名された証明書)、ダブルクリックしてそのプロパティを表示します。
+4.    **[証明のパス]** タブを選択し、証明書の親証明書を確認します。
+5.    親証明書ごとに、**[証明書の表示]** を選択します。
+6.    **[詳細]** タブを選択し、**[ファイルにコピー]** を選択します。
+7.    ウィザードの指示に従い、証明書の公開鍵をファイル場所にエクスポートします (保存します)。
+8.    手順 3 でエクスポートした親証明書を Local Computer\Personal\Certificates にインポートします。**[証明書]** を右クリックし、**[すべてのタスク]**、**[インポート]** の順に選択し、ウィザードの指示に従って証明書をインポートします。
+9.    AD FS サーバーを再起動します。
+10.    すべての AD FS サーバーとプロキシ サーバーで上記の手順を繰り返します。
 これで、Android デバイスでポータル サイトにサインインできるようになります。
 
 **証明書が正しくインストールされていることを確認するには**:
@@ -386,9 +387,4 @@ Android デバイスでは、[SSL Server hello](https://technet.microsoft.com/li
 
 ### <a name="next-steps"></a>次のステップ
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune)」の説明に従って Microsoft サポートにお問い合わせください。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
