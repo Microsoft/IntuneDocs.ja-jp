@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,36 +14,37 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
-ms.openlocfilehash: b46d445ce1da103308559939a5bfd8e5e38d46d3
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 009fa0f9ab097d57389f96d2d86a88b0811fef4e
+ms.lasthandoff: 02/16/2017
 
 
 
 ---
-# <a name="use-an-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key-in-intune-azure-preview"></a>Intune カスタム デバイス プロファイルを使用して、Intune Azure プレビューの事前共有キーで Wi-Fi プロファイルを作成する
+# <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Microsoft Intune カスタム デバイス プロファイルを使用して、事前共有キーで Wi-Fi プロファイルを作成する
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Intune の**カスタム デバイス プロファイル**を使用して、事前共有キーを使用して Wi-Fi プロファイルを作成する方法を次に示します。 このトピックでは、EAP ベースの Wi-Fi プロファイルを作成する方法の例も示します。
 
 > [!NOTE]
--   以下のように、そのネットワークに接続しているコンピューターからコードをコピーした方が簡単な場合があります。
+-    以下のように、そのネットワークに接続しているコンピューターからコードをコピーした方が簡単な場合があります。
 - Android では、Johnathon Biersack 氏が提供しているこの [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) を使用することも可能です。
--   OMA-URI 設定をさらに追加することにより、複数のネットワークとキーを追加できます。
+-    OMA-URI 設定をさらに追加することにより、複数のネットワークとキーを追加できます。
 -  iOS でプロファイルを構成するには、Mac ステーションで Apple Configurator を使用します。 また、Johnathon Biersack 氏が提供する [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) を使用します。
 
 
-1.  Android または Windows 用に事前共有キーを使用した Wi-Fi プロファイル、または EAP ベースの Wi-Fi プロファイルを作成するには、デバイス プロファイルを作成するときに、Wi-Fi プロファイルではなく、そのデバイス プラットフォームの**カスタム**を選択します。
+1.    Android または Windows 用に事前共有キーを使用した Wi-Fi プロファイル、または EAP ベースの Wi-Fi プロファイルを作成するには、デバイス プロファイルを作成するときに、Wi-Fi プロファイルではなく、そのデバイス プラットフォームの**カスタム**を選択します。
 
-2.  名前と説明を入力します。
-3.  新しい OMA-URI 設定を追加します。
+2.    名前と説明を入力します。
+3.    新しい OMA-URI 設定を追加します。
 
-   a.   この Wi-Fi ネットワーク設定の名前を入力します。
+   a.    この Wi-Fi ネットワーク設定の名前を入力します。
 
-   b.   OMA-URI 設定の説明を入力するか、空白のままにします。
+   b.    OMA-URI 設定の説明を入力するか、空白のままにします。
 
-   c.   **[データ型]**: **String** に設定します。
+   c.    **[データ型]**: **String** に設定します。
 
-   d.   **OMA-URI**:
+   d.    **OMA-URI**:
 
     - **Android の場合**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Windows の場合**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
@@ -204,9 +205,4 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
     すべての中から正しいプロファイルを探す必要があるため、多数のワイヤレス ネットワークに接続したことのないコンピューターを使用するのが最良です。
 3.     XML ファイルを検索し、正しい名前のファイルを探します。
 4.     正しい XML ファイルを見つけたら、OMA-URI の設定ページの [データ] フィールドに、XML コードをコピーして貼り付けます。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

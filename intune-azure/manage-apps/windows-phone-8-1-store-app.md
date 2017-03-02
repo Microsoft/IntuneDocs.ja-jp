@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 4a95e575-2c63-4bfc-b9c4-f0a132eef618
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01e5bfeb98aee9314fa04679cc27c8aba0e18fb0
-ms.openlocfilehash: 307819e2416ebefa091166af338e6b1a0a8a6cc7
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 4a08e0ac90faa0715172e7c5355b474822536afe
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-add-windows-phone-81-store-apps-to-intune"></a>Windows Phone 8.1 ストア アプリを Intune に追加する方法
+# <a name="how-to-add-windows-phone-81-store-apps-to-microsoft-intune"></a>Windows Phone 8.1 ストア アプリを Microsoft Intune に追加する方法
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -47,8 +48,3 @@ ms.openlocfilehash: 307819e2416ebefa091166af338e6b1a0a8a6cc7
 8. 構成が終了したら、**[アプリの追加]** ブレードで、**[保存]** を選択します。
 
 作成したアプリはアプリの一覧に表示され、選択したグループに割り当てることができるようになります。 詳細については、[アプリをグループに割り当てる方法](/intune-azure/manage-apps/deploy-apps)に関するページを参照してください。
-
-
-<!--HONumber=Feb17_HO1-->
-
-

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: f91d919a72b7d14353250d2de532ab083a62c210
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: bc7d94f70c65f06d10fffa04788072e504a2d071
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-wi-fi-settings"></a>Wi-Fi 設定を構成する方法 
+# <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Microsoft Intune で Wi-Fi の設定を構成する方法
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -67,10 +68,5 @@ Windows 8.1、Windows 10、および Windows 10 Mobile を実行しているデ�
 
 プロファイルが作成され、プロファイルの一覧ブレードに表示されます。
 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルを割り当てる方法](how-to-assign-device-profiles.md)に関する記事を参照してください。
-
-
-
-
-<!--HONumber=Feb17_HO1-->
 
 

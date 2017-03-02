@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: f6770556e6ee4e6a6fa1173c8c65c7e54d159016
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 642ecb716a4325d736be6fc392f39162e903d835
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -53,7 +54,7 @@ iOS デバイスの登録を設定する前に、以下の前提条件を満た�
 
 デバイス登録プロファイルで、デバイスのグループに適用する設定を定義します。 以下の手順は、Apple Configurator を使用して登録される iOS デバイス用のデバイス登録プロファイルを作成する方法を示しています。
 
-1. Azure Portal で、**[その他のサービス]** を選択し、テキスト ボックスに「**Intune**」と入力して、**[その他]** > **[Intune]** の順に選択します。
+1. Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 
 2. [Intune] ブレードで **[デバイスの登録]** を選択し、**[Apple の登録]** を選択します。
 
@@ -98,9 +99,4 @@ iOS デバイスの登録を設定する前に、以下の前提条件を満た�
 4. iOS デバイスで、**[設定]** を開き、**[全般]** > **[デバイス管理]** > **[管理プロファイル]** に移動します。 プロファイルのインストールが一覧に表示されていることを確認し、iOS のポリシー制限とインストールされているアプリを確認します。 ポリシー制限とアプリがデバイスに表示されるまでに、最大 10 分かかることがあります。
 
 5. デバイスを配布します。 これで、iOS デバイスが Intune に登録され、管理対象になりました。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
-ms.openlocfilehash: 79faa771a9af0761703ca3e72b937fab1a83a81f
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 66c189ed45b8b5226e36ef4769c0872c428646bb
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-email-settings"></a>電子メール設定を構成する方法 
+# <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Microsoft Intune で電子メールの設定を構成する方法
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -85,9 +86,4 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
 - **Windows:** ホスト名と電子メール アドレスに基づいて、既存の重複する電子メール プロファイルが検出されます。 Intune は、ユーザーによって作成された既存の電子メール プロファイルを上書きします。
 - **Android:** 電子メール アドレスに基づいて既存の重複する電子メール プロファイルが検出され、Intune プロファイルで上書きされます。
 Android はプロファイルを識別するためにホスト名を使用しないため、複数の電子メール プロファイルを作成して異なるホスト上の同じ電子メール アドレスで使用することはお勧めしません。プロファイルが相互に上書きされます。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

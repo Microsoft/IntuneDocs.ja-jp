@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/22/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: c1a9053f-02a7-4735-bc0d-fe4573b31ed4
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aff935508551b45ee0a69f907506b0703290fddf
-ms.openlocfilehash: abe6fb1a5684cbeb0b893793a1932652b7ec1c16
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 674a806b16d1f88413c1d1bbda1fb1d4f3363771
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="vpn-settings-for-windows-phone-81-devices-in-intune-azure-preview"></a>Intune Azure プレビューでの Windows Phone 8.1 デバイス向けの VPN 設定
+# <a name="vpn-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Microsoft Intune での Windows Phone 8.1 デバイス向けの VPN 設定
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -98,9 +99,4 @@ ms.openlocfilehash: abe6fb1a5684cbeb0b893793a1932652b7ec1c16
     - **[アドレス]** - プロキシ サーバーのアドレスを (IP アドレスとして) 入力します。
     - **[ポート番号]** - プロキシ サーバーに関連付けられているポート番号を入力します。
 - **[ローカル アドレスにはプロキシ サーバーを使用しない]** - VPN サーバーが接続にプロキシ サーバーを必要とする場合、指定したローカル アドレスに対してプロキシ サーバーを使用しないようにするには、このオプションを選択します。 詳細については、Windows Server のマニュアルを参照してください。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

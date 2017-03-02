@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4a02b320498b3094db1e07ed3d1dab82e4d9effa
-ms.openlocfilehash: e3df68aee2a1584063f77429c828b0fd31103920
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 86f493e0ffd2a96ac4cfdfe6d8719f56532ed77c
+ms.lasthandoff: 02/16/2017
 
 ---
-# <a name="configure-certificate-infrastructure-for-scep-in-intune-azure-preview"></a>Intune Azure プレビューで SCEP の証明書インフラストラクチャを構成する
+# <a name="configure-certificate-infrastructure-for-scep-in-microsoft-intune"></a>Microsoft Intune で SCEP の証明書インフラストラクチャを構成する
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 このトピックでは、SCEP 証明書プロファイルを作成して展開するために必要なインフラストラクチャについて説明します。
@@ -348,9 +349,4 @@ NDES サーバーで証明書コネクタをダウンロードし、インスト
 
 ## <a name="next-steps"></a>次のステップ
 これで、「[Configure certificate profiles](how-to-configure-certificates.md)」 (証明書プロファイルを構成する) の説明に従って証明書プロファイルを構成する準備が整いました。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

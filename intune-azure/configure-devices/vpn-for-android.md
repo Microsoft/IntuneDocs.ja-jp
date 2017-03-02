@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 16c056ca-320e-4107-ad03-a0cf96c28885
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6cd3069a63bd657d1c9f5e33b96db39a3b3f98d2
-ms.openlocfilehash: f93ab44889837fe8acc5dd5287b63f3b30678159
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: edf359b326626155a2e6acd01f72321c4cd0fe9c
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="vpn-settings-for-android-devices-in-intune-azure-preview"></a>Intune Azure プレビューでの Android デバイス向けの VPN 設定
+# <a name="vpn-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune での Android デバイス向けの VPN 設定
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -41,9 +42,4 @@ ms.openlocfilehash: f93ab44889837fe8acc5dd5287b63f3b30678159
 
 - **[指紋]** (Check Point Capsule VPN のみ) - 信頼できる VPN サーバーであることを確認するために使用される文字列を指定します (たとえば、"Contoso 指紋コード")。 指紋をクライアントに送信することにより、クライアントは、接続するときに同じ指紋を示すすべてのサーバーを信頼します。 デバイスにまだ指紋がない場合、接続先の VPN サーバーを信頼するように促すメッセージと共にその指紋が表示されます (ユーザーは手動で指紋を検証し、接続先を信頼することを選択する必要があります)。
 - **[Citrix VPN 属性に対してキーと値を入力します]** (Citrix のみ) - VPN 接続のプロパティを構成するために、Citrix から提供されたキーと値のペアを入力します。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

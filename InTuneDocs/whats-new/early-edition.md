@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/07/2017
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,11 @@ ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 68c7a23dc8769330c14f74e6aebb07eeb188a991
-ms.openlocfilehash: 4bc9a2799bcce035c6847b7b2884ee24160426da
+ms.sourcegitcommit: d0b3a883bb307fb06cb8d16500798086f328314a
+ms.openlocfilehash: eeebf8b6b3bc5c7c35386eb20c96097af1f6769c
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -34,7 +36,7 @@ ms.openlocfilehash: 4bc9a2799bcce035c6847b7b2884ee24160426da
 ## <a name="new-capabilities"></a>新しい機能
 
 ### <a name="modernizing-the-company-portal-website---753980--"></a>ポータル Web サイトの進化 <!--753980-->
-ポータル Web サイトで管理対象のデバイスを持っていないユーザーを対象とするアプリをサポートします。 この Web サイトは新しいコントラストの配色パターン、動的な図、"ハンバーガー メニュー" (ヘルプデスクの連絡先詳細や既存の管理対象デバイスに関する情報を含む ![ポータル Web サイトの左上隅に新たに追加されたハンバーガー メニューの小さなイメージ](./media/CP_hamburger_menu.png)) を使用することで、Microsoft の他の製品やサービスと連携します。 ランディング ページはユーザーが利用できるアプリをわかりやすくするために再配置され、おすすめのアプリや最近更新されたアプリはカルーセル ビューで表示されます。 [UI の更新ページ](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui)で、更新前と後のイメージを確認できます。
+2 月以降、ポータル Web サイトのデザインは、新しいコントラストの配色パターン、動的な図、"ハンバーガー メニュー" (ヘルプデスクの連絡先詳細や既存の管理対象デバイスに関する情報を含む、![ポータル Web サイトの左上隅に新たに追加されたハンバーガー メニューの小さな画像](./media/CP_hamburger_menu.png)) を使用することで、Microsoft の他の製品やサービスと連携します。 ランディング ページはユーザーが利用できるアプリをわかりやすくするために再配置され、おすすめのアプリや最近更新されたアプリはカルーセル ビューで表示されます。 [UI の更新ページ](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui)で、更新前と後のイメージを確認できます。
 
 ### <a name="new-guided-experience-for-windows-10-company-portal---713927--"></a>Windows 10 ポータル サイトの新しいガイド機能 <!--713927-->
 3 月以降、Windows 10 用のポータル サイトでは、特定されていないデバイスや登録されていないデバイス向けのガイド付き Intune チュートリアルを利用できるようになります。 この新しい機能では、ユーザーの Windows 10 ビルド向けにカスタマイズされた詳しい手順が提供され、これに従ってユーザーは AAD 登録 (条件付きアクセス機能の識別に必要) と MDM 登録 (デバイス管理機能に必要) を実行できます。 ガイド付きチュートリアルにはポータル サイトのホーム ページからアクセスできます。また、これはオプションなので、ユーザーは、登録が完了していなくても、引き続きアプリを使用できます。ただし、使用できる機能は限定される可能性があります。
@@ -114,9 +116,4 @@ Azure Portal では、サード パーティの電気通信経費管理 (TEM) �
 
 ### <a name="see-also"></a>関連項目
 最近の開発状況について詳しくは、「[Microsoft Intune の新機能](whats-new-in-microsoft-intune.md)」をご覧ください。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

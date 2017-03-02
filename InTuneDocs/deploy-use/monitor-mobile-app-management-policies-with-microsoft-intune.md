@@ -13,15 +13,17 @@ ms.technology:
 ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 22c30f51bf83219053f97310ed1830ad9e01acd8
-ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: 96c25307c4060a8872ba4f6de47992c4d9f9dd85
+ms.lasthandoff: 02/14/2017
 
 
 ---
 
-# <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>Microsoft Intune でのモバイル アプリ管理ポリシーの監視
-ユーザーに適用したモバイル アプリ管理 (MAM) ポリシーのコンプライアンス状態を監視できます。 MAM ポリシーによって影響を受けるユーザー、コンプライアンスの状態、ユーザーに対して発生する可能性がある問題に関する情報を見つけることができます。
+# <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Microsoft Intune でアプリ保護ポリシーを監視する
+ユーザーに適用したアプリ保護ポリシーのコンプライアンス状態を監視できます。 アプリ保護ポリシーによって影響を受けるユーザー、コンプライアンスの状態、ユーザーに対して発生する可能性がある問題に関する情報を見つけることができます。
 
 コンプライアンス状態は&3; つの異なる場所で監視できます。
 
@@ -59,7 +61,7 @@ ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
 1 人のユーザーを検索し、そのユーザーのコンプライアンス状態を確認できます。 **[アプリ レポート]** ブレードには、選択したユーザーの次の情報が表示されます。
 - ユーザー アカウントに関連付けられているデバイス
 
-- デバイスのアプリと MAM ポリシー
+- デバイスのアプリとアプリ保護ポリシー
 
 - 状態:
 
@@ -68,7 +70,7 @@ ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
   - **[チェックインされていません]**: ポリシーはユーザーに展開されましたが、それ以降にアプリが作業コンテキストで使用されていません。
 
 >[!NOTE]
-> 検索したユーザーに MAM ポリシーが展開されていない場合は、そのユーザーがいずれの MAM ポリシーの対象でもないことを知らせるメッセージが表示されます。
+> 検索したユーザーにアプリ保護ポリシーが展開されていない場合は、そのユーザーがいずれのアプリ保護ポリシーの対象でもないことを知らせるメッセージが表示されます。
 
 ユーザーのレポートを表示するには次のようにします。
 
@@ -87,7 +89,7 @@ ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
 
 ## <a name="reporting-view"></a>レポート ビュー
 
-詳細ビューと同じレポートと追加のレポートがあります。MAM ポリシーのコンプライアンス状態の確認に役立ちます。
+詳細ビューと同じレポートと追加のレポートがあります。アプリ保護ポリシーのコンプライアンス状態の確認に役立ちます。
 
 ![スクリーンショット&4;](../media/MAM-reporting-7.png)
 
@@ -97,13 +99,13 @@ ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
 
     -   管理対象 MAM アクティビティ (保護) のユーザーの状態: このレポートには、管理対象 MAM アプリ別のアクティビティがユーザー別にまとめられています。
 
-        -   MAM ポリシーの対象になっているすべてのアプリがユーザーごとに表示されます。MAM ポリシーでチェックインしたときの各アプリの状態が分析されます。あるいは、MAM ポリシーの対象ではあるが、アプリがチェックインしていないことが表示されます。
+        -   アプリ保護ポリシーの対象になっているすべてのアプリがユーザーごとに表示されます。アプリ保護ポリシーでチェックインしたときの各アプリの状態が分析されます。または、アプリ保護ポリシーの対象ではあっても、アプリがチェックインされていないことが表示されます。
 <br></br>
     -   非管理対象 MAM アクティビティ (非保護) のユーザーの状態: このレポートには、現在管理対象ではない MAM 対応アプリのアクティビティがユーザーごとにまとめられています。 次の理由で発生することがあります。
 
-        -   これらのアプリは、現在のところ、MAM ポリシーの対象になっていないユーザーまたはアプリにより使用されています。
+        -   これらのアプリは、現在のところ、アプリ保護ポリシーの対象になっていないユーザーまたはアプリにより使われています。
 
-        -   すべてのアプリがチェックインされているが、MAM ポリシーが与えられていません。
+        -   すべてのアプリがチェックインされていますが、アプリ保護ポリシーが与えられていません。
 
 ![スクリーンショット&2;](../media/MAM-reporting-4.png)
 
@@ -131,11 +133,6 @@ ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
 ## <a name="see-also"></a>関連項目
 [iOS アプリ間のデータ転送を管理する](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [MAM ポリシーを使用して Android アプリを管理するときの注意点](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [MAM ポリシーを使用して iOS アプリを管理するときの注意点](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
+* [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 

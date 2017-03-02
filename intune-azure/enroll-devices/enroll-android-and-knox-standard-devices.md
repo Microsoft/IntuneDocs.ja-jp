@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/16/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: edd6303f3bb05dfff758cbb7d4bd08e21f083998
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 99b790e33843efcf83a4687490b186a6e174bd81
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: edd6303f3bb05dfff758cbb7d4bd08e21f083998
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Intune 管理者は、ポータル サイトから Samsung Knox Standard デバイスなどの Android デバイスの管理を有効にできます。 ユーザーが、Google Play から入手できるポータル サイト アプリを使用してデバイスを登録できます。
+Intune では、Samsung Knox Standard デバイスを含む、Android デバイスを管理することができます。 デバイス管理を有効にするには、ユーザーは Intune ポータル サイト アプリ (Google Play から入手可能) をダウンロードし、アプリを開き、登録に関する画面の指示に従って、デバイスを登録する必要があります。 Android デバイスを管理下に置いたら、[コンプライアンス ポリシーの作成](https://docs.microsoft.com/intune-azure/set-device-compliance/create-a-compliance-policy-for-android)や[アプリの管理](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-management)などを行うことができます。
 
 ## <a name="prerequisite"></a>前提条件
 
@@ -32,20 +33,19 @@ Intune 管理者は、ポータル サイトから Samsung Knox Standard デバ�
 
 ## <a name="set-up-android-enrollment"></a>Android の登録を設定する
 
-Intune は、既定で Android および Samsung Knox Standard デバイスの登録を許可するように設定されています。 
+Intune では、既定で Android および Samsung Knox Standard デバイスの登録が既に許可されています。 
 
-Android デバイスの登録を許可またはブロックする設定を確認するには、Azure Portal の [Intune] ブレードに移動し、**[登録]** > **[登録の制限]** の順に選択します。 
+Android デバイスをブロックする場合や、個人所有の Android デバイスのみの登録をブロックする場合は、「[Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions)」 (デバイスの種類の制限を設定する) を参照してください。 
+
+ユーザーが登録できるデバイスの最大数を設定する場合は、「[Set device limit restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions)」 (デバイス数の制限を設定する) を参照してください。
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>デバイスを登録して会社のリソースにアクセスする方法をユーザーに知らせる
 
-エンドユーザー用の登録手順については、「[Intune に Android デバイスを登録する](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-android)」を参照してください。 登録プロセスでは、登録により可能になる操作、および IT 管理者が見ることのできるデバイス上のデータと見られないデータについての説明が行われます。
+Google Play に移動して Intune ポータル サイト アプリをダウンロードしてから、アプリを開き、画面の指示に従ってデバイスを登録するようにエンド ユーザーに指示する必要があります。 アプリに登録プロセスが示されます。このプロセスでは、登録により可能になる操作、および IT 管理者が見ることのできるデバイス上のデータと見ることのできないデータが説明されます。
+
+オンライン登録の手順 (「[Intune に Android デバイスを登録する](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-android)」) へのリンクを送信することもできます。 
 
 その他のエンドユーザー タスクの詳細については、次の記事を参照してください。
 
 - [Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
 - [Android デバイスを Intune で使用する](https://docs.microsoft.com/intune/enduser/using-your-android-device-with-intune)
-
-
-<!--HONumber=Feb17_HO1-->
-
-

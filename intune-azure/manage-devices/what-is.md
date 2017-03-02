@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/06/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,14 @@ ms.technology:
 ms.assetid: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 040c4e18d87110ab7380a64540d08127574a7c46
-ms.openlocfilehash: 5a967cc1be387f83f95591186f786db61d3debcd
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 5ed437eca48375def0e4da9715693325845f53a9
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="what-is-device-management"></a>デバイス管理とは 
+# <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune デバイスの管理とは 
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -53,9 +54,4 @@ ms.openlocfilehash: 5a967cc1be387f83f95591186f786db61d3debcd
     ![[検出されたアプリケーション] ノード](./media/detected-applications.png)
 - **[監視]** - **[デバイス アクション]** を選択すると、管理対象のデバイスで実行されたデバイス アクションの一覧と、それらのアクションの現在の状態が表示されます。
 ![デバイス アクションの監視](./media/monitor-device-actions.png)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

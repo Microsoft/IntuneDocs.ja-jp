@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 12/13/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: c228601451b33238d0f6929987dcdec3a5e56e8d
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: a08274fd4b2d3105b28f46a6d35257b3664f7510
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.openlocfilehash: c228601451b33238d0f6929987dcdec3a5e56e8d
 
 ## <a name="user-owned-ios-devices-byod"></a>ユーザー所有の iOS デバイス (BYOD)
 
-個人の BYOD (Bring Your Own Device) デバイスを登録する場合は、ユーザーがアプリ ストアから iOS 向けポータル サイト アプリをダウンロードし、そのアプリに示されている登録手順に従う必要があります。 登録後、ユーザーは社内ネットワークに接続し、ドメインまたは Azure Active Directory に参加して、企業リソースにアクセスできるようになります。
+個人の BYOD (Bring Your Own Device) デバイスを登録する場合は、ユーザーがアプリ ストアから iOS 向けポータル サイト アプリをダウンロードし、そのアプリに示されている登録手順に従う必要があります。 登録後、ユーザーは社内ネットワークに接続し、ドメインまたは Azure Active Directory に参加して、企業リソースにアクセスできるようになります。 個人所有の iOS デバイスの登録をブロックすることができます。 その手順については、「[Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions)」 (デバイスの種類の制限を設定する) を参照してください。
 
 ## <a name="apple-configurator"></a>Apple Configurator
 
@@ -48,9 +49,4 @@ DEP では、DEP を通じて購入したデバイスに "無線で" 登録プ�
 
 ## <a name="use-the-device-enrollment-manager-dem"></a>デバイス登録マネージャー (DEM) の使用
 デバイス登録マネージャーは、最大 1,000 台のデバイスを登録して管理できるユーザー アカウントの種類です。 こうした機能を既存のユーザーに提供するには、そのユーザーを DEM アカウントに追加します。 DEM ユーザーの登録デバイスごとに&1; つの Intune ライセンスが使用されます。 詳細については、「[デバイス登録マネージャーを使用してデバイスを登録する](enroll-devices-using-device-enrollment-manager.md)」を参照してください。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

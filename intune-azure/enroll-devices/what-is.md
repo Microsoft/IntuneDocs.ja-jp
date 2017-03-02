@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/26/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 10cf9980468eff912557747c31994747c17a3ab4
-ms.openlocfilehash: 01bf32ef874385019ea4b0fb0ce278554459287d
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: a92daf02c6fb2405c1255ff4ff8988f669dd76ce
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -43,33 +44,33 @@ Intune で Windows PC などのデバイスを登録し、それらのデバイ�
 
 **iOS の登録方法**
 
-| **方法** |  **ワイプが必要?** |    **アフィニティ**    |   **ロック** | **詳細** |
+| **方法** |    **ワイプが必要?** |    **アフィニティ**    |    **ロック** | **詳細** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ|    ○ |   いいえ | 詳細は近日公開予定|
-|**[DEM](#dem)**|   いいえ |いいえ |いいえ  | [詳細情報](enroll-ios-devices-using-device-enrollment-program.md)|
-|**[DEP](#dep)**|   Yes |   省略可能 |  省略可能|[詳細情報](enroll-ios-devices-using-device-enrollment-program.md)|
-|**[USB-SA](#usb-sa)**| Yes |   省略可能 |  いいえ| [詳細情報](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
-|**[USB-Direct](#usb-direct)**| いいえ |    いいえ  | いいえ|[詳細情報](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
+|**[BYOD](#byod)** | いいえ|    ○ |    いいえ | 詳細は近日公開予定|
+|**[DEM](#dem)**|    いいえ |いいえ |いいえ    | [詳細情報](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[DEP](#dep)**|    Yes |    省略可能 |    省略可能|[詳細情報](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[USB-SA](#usb-sa)**|    Yes |    省略可能 |    いいえ| [詳細情報](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
+|**[USB-Direct](#usb-direct)**|    いいえ |    いいえ    | いいえ|[詳細情報](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
 
 
 
 **Windows の登録方法**
 
-| **方法** |  **ワイプが必要?** |    **アフィニティ**    |   **ロック** | **詳細**|
+| **方法** |    **ワイプが必要?** |    **アフィニティ**    |    **ロック** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | [はい]|   ○ |   いいえ | 詳細は近日公開予定|
-|**[DEM](#dem)**|   いいえ |いいえ |いいえ  |[詳細情報](enroll-devices-using-device-enrollment-manager.md)|
+|**[BYOD](#byod)** | [はい]|    ○ |    いいえ | 詳細は近日公開予定|
+|**[DEM](#dem)**|    いいえ |いいえ |いいえ    |[詳細情報](enroll-devices-using-device-enrollment-manager.md)|
 
 **Android の登録方法**
 
-| **方法** |  **ワイプが必要?** |    **アフィニティ**    |   **ロック** | **詳細**|
+| **方法** |    **ワイプが必要?** |    **アフィニティ**    |    **ロック** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ|    ○ |   いいえ | 詳細は近日公開予定|
-|**[DEM](#dem)**|   いいえ |いいえ |いいえ  |[詳細情報](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[BYOD](#byod)** | いいえ|    ○ |    いいえ | 詳細は近日公開予定|
+|**[DEM](#dem)**|    いいえ |いいえ |いいえ    |[詳細情報](enroll-ios-devices-using-device-enrollment-program.md)|
 
 
 ## <a name="byod"></a>BYOD
-"Bring your own device" はユーザーがポータル サイト アプリをインストールし、自分のデバイスを登録します。 これにより、ユーザーは会社のネットワークに接続して、ドメインまたは Azure Active Directory に参加できます。 ほとんどのプラットフォームで、多くの COD シナリオのために BYOD 登録を有効にする必要があります。
+"Bring your own device" はユーザーがポータル サイト アプリをインストールし、自分のデバイスを登録します。 これにより、ユーザーは会社のネットワークに接続して、ドメインまたは Azure Active Directory に参加できます。 ほとんどのプラットフォームで、多くの COD シナリオのために BYOD 登録を有効にする必要があります。 個人所有の iOS および Android デバイスの登録をブロックすることができます。 その手順については、「[Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions)」 (デバイスの種類の制限を設定する) を参照してください。
 
 ## <a name="corporate-owned-devices"></a>企業所有のデバイス
 企業所有のデバイス (COD) は、Azure Portal を利用して管理できます。 iOS デバイスは、Apple が提供するツールを利用して直接登録できます。 管理者またはマネージャーは、デバイス登録マネージャーを使用して、すべてのデバイスの種類を登録できます。 IMEI 番号を持つデバイスを識別し、会社所有としてタグ付けして、COD シナリオで使用することもできます。
@@ -80,8 +81,8 @@ Intune で Windows PC などのデバイスを登録し、それらのデバイ�
 ### <a name="dep"></a>DEP
 Apple Device Enrollment Program (DEP) 管理では、ポリシーを作成し、DEP で購入および管理されている iOS デバイスに "無線で" 展開できます。 ユーザーが初めてデバイスの電源を入れて iOS Setup Assistant を実行した際に、デバイスが登録されます。 この方法は、**iOS 監視対象**モードをサポートしているので、以下が有効になります。
 
-  - 登録のロック
-  - キオスク モード、およびその他の高度な構成および制限
+  -    登録のロック
+  -    キオスク モード、およびその他の高度な構成および制限
 
 iOS 登録の詳細については、以下を参照してください。
 
@@ -91,8 +92,8 @@ iOS 登録の詳細については、以下を参照してください。
 
 ### <a name="usb-sa"></a>USB-SA
 IT 管理者は、セットアップ アシスタントを使用した登録を行うため、USB を介し Apple Configurator を使用して、会社が所有するデバイスを手動で準備します。 IT 管理者は登録プロファイルを作成して、Apple Configurator にエクスポートします。 ユーザーは、自分のデバイスを受け取ると、セットアップ アシスタントを実行してデバイスを登録するように求められます。 この方法は、**iOS 監視対象**モードをサポートしているので、以下が有効になります。
-  - 登録のロック
-  - キオスク モード、およびその他の高度な構成および制限
+  -    登録のロック
+  -    キオスク モード、およびその他の高度な構成および制限
 
 iOS 登録の詳細については、以下を参照してください。
 
@@ -127,9 +128,4 @@ Intune クライアント ソフトウェアを利用して管理される PC �
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 証明書の有効期限が切れた後のモバイル デバイスのクリーンアップ
 
 MDM 証明書は、モバイル デバイスが Intune サービスと通信しているときに自動的に更新されます。 (PC ではなく) モバイル デバイスがワイプされたり、一定の時間 Intune サービスとモバイル デバイスが通信できなかったりすると、MDM 証明書は更新されません。 デバイスは、MDM 証明書の有効期限が切れてから 180 日後に、Azure Portal から削除されます。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

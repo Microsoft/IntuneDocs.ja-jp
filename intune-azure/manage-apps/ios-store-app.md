@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01e5bfeb98aee9314fa04679cc27c8aba0e18fb0
-ms.openlocfilehash: b29374c3abcca90de6cba7ed83866c04350f69c5
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 6026c942aea906e7e730152e6e92797ec5775bc3
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-add-ios-store-apps-to-intune"></a>iOS ストア アプリを Intune に追加する方法
+# <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>iOS ストア アプリを Microsoft Intune に追加する方法
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -55,8 +56,3 @@ ms.openlocfilehash: b29374c3abcca90de6cba7ed83866c04350f69c5
 3. 構成が終了したら、**[アプリの追加]** ブレードで、**[保存]** を選択します。
 
 作成したアプリはアプリの一覧に表示され、選択したグループに割り当てることができるようになります。 詳細については、[アプリをグループに割り当てる方法](/intune-azure/manage-apps/deploy-apps)に関するページを参照してください。
-
-
-<!--HONumber=Feb17_HO1-->
-
-

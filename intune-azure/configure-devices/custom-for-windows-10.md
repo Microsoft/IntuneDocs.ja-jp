@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0da8c0fe399f76f43439cc66eaecd12bb454f9a6
-ms.openlocfilehash: 05856480f8bb76e561f2b459d4ab800f9909a40a
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: bc740d9e43e2937757075bf84735fe611433f6f0
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="custom-device-settings-for-windows-10-devices-in-intune-azure-preview"></a>Intune Azure プレビューでの Windows 10 デバイス向けのカスタム デバイス設定
+# <a name="custom-device-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune での Windows 10 デバイス向けのカスタム デバイス設定
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -167,9 +168,4 @@ ms.openlocfilehash: 05856480f8bb76e561f2b459d4ab800f9909a40a
 |**パスワードの保存を許可する**<br>./Vendor/MSFT/Policy/Config/Browser/AllowPasswordManager|デスクトップおよびモバイル<br />**データ型:** 整数<br />**値:**<br>**0**: Password Manager を無効にします。 <br>**1**: Password Manager を有効にします (既定)。|
 |**オートコンプリートを使用する**<br>./Vendor/MSFT/Policy/Config/Browser/AllowAutofill|デスクトップのみ<br />**データ型:** 整数<br />**値:** **0** : 無効 (既定)。**1** :有効。|
 |**エンタープライズ サイトのリストを構成する**<br>./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList|デスクトップのみ<br />**データ型:** 文字列<br />**値:<br>**0**: 構成されていません。<br>**1**: IE のエンタープライズ モード サイト リストが構成されている場合は使用します (既定)。<br>**2** : エンタープライズ サイト リストの場所を指定します。|
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/02/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a57ac0e6cb29dbfc87bb09c04bb372228a1d72be
-ms.openlocfilehash: 2acb58a8fc71ae7f2e0bce127e709a678faa27cb
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: b213fcaae8f17af412687d01df6ea27b39b3edb9
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-manage-apps-you-purchased-from-the-windows-store-for-business"></a>ビジネス向け Windows ストアから購入したアプリを管理する方法
+# <a name="how-to-manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>ビジネス向け Windows ストアから購入したアプリを Microsoft Intune で管理する方法
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -78,9 +79,4 @@ Intune コンソールで同期を有効にする前に、以下の手順に従�
 
 > [!Important]
 > 展開されたアプリは、最初にデバイスを登録したユーザーのみが利用できます。 他のユーザーは、そのアプリにアクセスすることができません。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

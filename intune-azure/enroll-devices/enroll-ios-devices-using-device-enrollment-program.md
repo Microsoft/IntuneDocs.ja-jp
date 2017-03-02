@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: 2986e659d384eaa67b64af1ce3ae48a1ac81a600
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: da6d377c94ce5db7bbfa1cb3fc165581d649a1fb
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -50,7 +51,7 @@ iOS デバイスの登録を設定する前に、以下の前提条件を満た�
 
 デバイス登録プロファイルで、デバイスのグループに適用する設定を定義します。 以下の手順では、DEP を使用して登録される iOS デバイス用のデバイス登録プロファイルを作成する方法を示しています。
 
-1. Azure Portal で、**[その他のサービス]** を選択し、テキスト ボックスに「**Intune**」と入力して、**[その他]** > **[Intune]** の順に選択します。
+1. Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 
 2. [Intune] ブレードで **[デバイスの登録]** を選択し、**[Apple の登録]** を選択します。
 
@@ -110,17 +111,19 @@ iOS デバイスの登録を設定する前に、以下の前提条件を満た�
 
 ## <a name="synchronize-dep-managed-devices"></a>DEP で管理されるデバイスを同期する
 
-1. Azure Portal の [Intune] ブレードで **[デバイスの登録]** を選択し、**[Apple の登録]** を選択します。
+1. Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 
-2. **[Apple Device Enrollment Program (DEP) 設定の管理]** で、**[DEP シリアル番号]** を選択します。
+2. Azure Portal の [Intune] ブレードで **[デバイスの登録]** を選択し、**[Apple の登録]** を選択します。
+
+3. **[Apple Device Enrollment Program (DEP) 設定の管理]** で、**[DEP シリアル番号]** を選択します。
 
 4. **[Apple DEP シリアル番号]** ブレードで **[同期]** を選択します。
 
 5. **[同期]**ブレードで、**[同期を要求]** を選択します。 進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
 
     許容される DEP トラフィックについての Apple の規約に準拠するため、Intune では次の制限が課せられます。
-     -  完全な DEP 同期は&7; 日ごとに&1; 回以上実行できません。 完全同期時に、Intune は Apple が Intune に割り当てたすべてのシリアル番号を、シリアルが以前に同期されているかどうかに関係なく更新します。 前回の完全同期の&7; 日以内に完全同期が試みられると、Intune は Intune にまだ一覧表示されていないシリアル番号のみを更新します。
-     -  すべての同期要求は、完了までに 10 分与えられます。 この時間中または要求が成功するまで、**[同期]** ボタンは無効にされます。
+     -    完全な DEP 同期は&7; 日ごとに&1; 回以上実行できません。 完全同期時に、Intune は Apple が Intune に割り当てたすべてのシリアル番号を、シリアルが以前に同期されているかどうかに関係なく更新します。 前回の完全同期の&7; 日以内に完全同期が試みられると、Intune は Intune にまだ一覧表示されていないシリアル番号のみを更新します。
+     -    すべての同期要求は、完了までに 10 分与えられます。 この時間中または要求が成功するまで、**[同期]** ボタンは無効にされます。
 
 >[!NOTE]
 >**[Apple DEP シリアル番号]** ブレードでプロファイルに DEP シリアル番号を割り当てることもできます。
@@ -153,9 +156,4 @@ iOS デバイスの登録を設定する前に、以下の前提条件を満た�
 7. シリアル番号が確認されると、ポータル サイト アプリはポータル サイトの Web サイトにリダイレクトされ、登録の最終処理が行われます。 Web サイトでは、ユーザーにアプリに戻るように促すメッセージが表示されます。
 
 これで、登録が完了し、ユーザーはこのデバイスのすべての機能を使用できるようになります。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

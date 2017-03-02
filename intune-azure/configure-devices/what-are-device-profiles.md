@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: 0e126c067b5c212ae5bfe1cf69e01128a00b1c8e
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: a5f6ad4dd5339b31a6a1fd549a3b29b0ff258a5b
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="what-are-device-profiles"></a>デバイス プロファイルとは
-<!--- This topic doesn't really answer the topic title: What are device profiles?" It needs to answer that question, then it can go on to discuss what profiles are in Intune and how to use them. Linda--->
+# <a name="what-are-microsoft-intune-device-profiles"></a>Microsoft Intune のデバイス プロファイルとは
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Microsoft Intune の **[デバイスの構成]** ワークロードを使用して、管理対象とするすべてのデバイスの設定と機能を管理します。
+Microsoft Intune の **[デバイスの構成]** ワークロードを使用して、管理対象とするすべてのデバイスの設定と機能を管理します。 ほとんどの場合、このワークロードを使用してデバイス プロファイルを作成します。これにより、管理対象デバイスであらゆる種類の機能を管理および制御することができます。
 
 このワークロードを開くと、以下のオプションが表示されます。
 
@@ -60,10 +60,6 @@ Wi-Fi プロファイルを使用すると、ワイヤレス ネットワーク�
 この種類のプロファイルでは、デバイスに割り当てて Wi-Fi、VPN、電子メール プロファイルの認証に利用できる、信頼済み証明書、SCEP 証明書、PKCS 証明書を構成できます。
 詳細については、[証明書の構成方法](how-to-configure-certificates.md)に関するページを参照してください。サポート対象: Android、iOS、Windows Phone 8.1、Windows 8.1、Windows 10。
 
-## <a name="education"></a>教育
-教育環境で iOS デバイスを使用するのに適した証明書を指定するために役立ちます。
-詳細については、[iOS デバイス向けの Intune 教育設定の構成方法](education-settings-for-ios.md)に関するページを参照してください。サポート対象: iOS のみ。
-
 ## <a name="edition-upgrade"></a>エディションのアップグレード
 この種類のプロファイルでは、一部のバージョンの Windows 10 が実行されているデバイスを自動的に新しいエディションにアップグレードできます。詳細については、[Windows 10 エディションのアップグレードの構成方法](how-to-configure-windows-10-edition-upgrade.md)に関するページを参照してください。サポート対象: Windows 10 のみ。
 
@@ -74,9 +70,4 @@ Windows 情報保護はデータ漏えいの防止に役立ち、それ以外の
 ## <a name="custom"></a>カスタム
 カスタム設定により、Intune に組み込まれていないデバイス設定を割り当てることができます。 たとえば、Android デバイスでは、デバイスを構成する OMA-URI 値を指定できます。 iOS デバイスの場合は、Apple Configurator で作成した構成ファイルをインポートできます。
 詳細については、[カスタム設定の構成方法](how-to-configure-custom-settings.md)に関するページを参照してください。サポート対象: Android、iOS、macOS、Windows Phone 8.1。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

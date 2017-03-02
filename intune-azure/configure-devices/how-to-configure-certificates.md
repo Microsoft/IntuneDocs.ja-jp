@@ -1,11 +1,12 @@
 ---
-title: "Intune で証明書を構成する方法 | Intune Azure プレビュー | Microsoft Docs"
+title: "Intune で証明書を構成する方法"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: Wi-Fi や VPN などの接続をセキュリティで保護するのに役立つ証明書を、Intune を使用して作成し、割り当てる方法について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,16 @@ ms.technology:
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 3f05e0018fb202ab5774e935c3f59855e4aa2e75
-ms.openlocfilehash: a0183f2a170ed458b19c7688b20ee5ba5c2c696e
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 364534ad788466f8b268b4091decee5326b94163
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-certificates-with-intune-azure-preview"></a>Intune Azure プレビューを使用して証明書を構成する方法
+# <a name="how-to-configure-certificates-in-microsoft-intune"></a>Microsoft Intune で証明書を構成する方法
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -42,8 +45,8 @@ VPN、Wi-Fi、または電子メール プロファイル経由でユーザー�
 
     次のプラットフォームでは、SCEP 証明書プロファイルのみを使用できます。
 
--   macOS 10.9 以降
--   Windows Phone 8.1 以降
+-     macOS 10.9 以降
+-     Windows Phone 8.1 以降
 
 デバイス プラットフォームごとに別個のプロファイルを作成する必要があります。 プロファイルを作成したら、それを既に作成済みの信頼されたルート証明書プロファイルに関連付けます。
 
@@ -196,9 +199,4 @@ Azure Portal で、**[デバイスの構成]** ワークロードを選択しま
 
 ## <a name="next-steps"></a>次のステップ
 デバイス プロファイルを割り当てる方法に関する一般的な情報については、[デバイス プロファイルを割り当てる方法](how-to-assign-device-profiles.md)に関する記事を参照してください。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

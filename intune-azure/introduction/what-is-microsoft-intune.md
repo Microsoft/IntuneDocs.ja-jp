@@ -1,21 +1,23 @@
 ---
-title: "Azure Portal プレビューでの Intune の概要 | Intune Azure プレビュー | Microsoft Docs"
+title: "Azure Portal プレビューでの Intune の概要"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: Azure Portal プレビューでの Intune の基本と、Intune を利用してデバイスを管理する方法について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 01/08/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
-ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 1024d2a33d843c628ffbb68f7b01a5d511191e7e
-ms.openlocfilehash: f7f6dd79531d8d69eda3ed80bbb1cddf2692ab81
+ms.sourcegitcommit: 851ed5e9967939a930d6d9c22a23d7c72a7b52a7
+ms.openlocfilehash: f6f8babaca68fdb75ab6ff36d931f8dbd734acf0
+ms.lasthandoff: 02/16/2017
 
 
 ---
@@ -44,14 +46,14 @@ Microsoft Intune は Azure Portal への移行中であり、これまでの使�
 - すべての Enterprise Mobility + Security (EMS) コンポーネント用の統合コンソール
 - Web 標準に基づく HTML ベースのコンソール
 - 多数のアクションを自動化するために Microsoft Graph API をサポート
-- Azure AD グループによってすべての Azure アプリケーション間での互換性を提供
+- Azure Active Directory (AD) グループによってすべての Azure アプリケーション間での互換性を提供
 - 最新の Web ブラウザーの大部分に対応
 
-クラシック Intune コンソールに関するドキュメントをお探しの場合は、[Intune ドキュメント ライブラリ](https://docs.microsoft.com/en-us/intune/)のページを参照してください。
+クラシック Intune コンソールに関するドキュメントをお探しの場合は、[Intune ドキュメント ライブラリ](https://docs.microsoft.com/en-us/intune/)を参照してください。
 
 ## <a name="before-you-start"></a>アップグレードを開始する前に
 
-Azure Portal で Intune を使用するには、Intune の管理者およびテナント アカウントが必要です。 アカウントには、[こちら](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)からサインアップできます。
+Azure Portal で Intune を使用するには、Intune の管理者およびテナント アカウントが必要です。 まだお持ちでない場合は、[アカウントにサインアップ](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)してください。
 
 ## <a name="supported-web-browsers-for-the-azure-portal"></a>Azure Portal でサポートされている Web ブラウザー
 
@@ -64,7 +66,7 @@ Azure Portal は、ほとんどの最新 PC、Mac、タブレットで動作し�
 - Chrome (最新バージョン)
 - Firefox (最新バージョン)
 
-サポート対象のブラウザーに関する最新情報については、[こちら](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices)を参照してください。
+サポート対象のブラウザーに関する最新情報については、[Azure Portal に関するページ](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices)を参照してください。
 
 ## <a name="whats-in-this-library"></a>このライブラリの内容
 
@@ -76,35 +78,25 @@ Azure Portal は、ほとんどの最新 PC、Mac、タブレットで動作し�
 Information to help you plan and design your Intune environment.
 [Read more](/intune-azure/plan-and-design/get-started) --->
 ### <a name="enroll-devices"></a>デバイスの登録
-デバイスを Intune の管理対象にする方法。
-[詳細については、こちらを参照してください](/intune-azure/enroll-devices/what-is)
+[デバイスを Intune の管理対象にする方法](/intune-azure/enroll-devices/what-is)。
 ### <a name="devices--groups"></a>デバイスとグループ
-インベントリとレポートによって管理対象デバイスの情報を把握します。
-[詳細については、こちらを参照してください](/intune-azure/manage-devices/what-is)
+[インベントリとレポートによって管理対象デバイスの情報を把握します](/intune-azure/manage-devices/what-is)。
 ### <a name="manage-users"></a>ユーザーの管理
-管理対象デバイスのユーザーの情報が得られます。
-[詳細については、こちらを参照してください](/intune-azure/manage-users/what-is)
+[管理対象デバイスのユーザーの情報が得られます](/intune-azure/manage-users/what-is)。
 ### <a name="manage-apps"></a>アプリを管理する
-アプリの発行、管理、構成、保護についての情報が含まれています。
-[詳細については、こちらを参照してください](/intune-azure/manage-apps/what-is-app-management)
+[アプリの発行、管理、構成、および保護方法](/intune-azure/manage-apps/what-is-app-management)。
 ### <a name="configure-devices"></a>デバイスの構成
-管理対象のデバイスで設定と機能を構成するために使用できるプロファイルについての情報が含まれています。
-[詳細については、こちらを参照してください](/intune-azure/configure-devices/what-are-device-profiles)
+[管理対象のデバイスで設定と機能を構成するために使用できるプロファイルについて理解します](/intune-azure/configure-devices/what-are-device-profiles)。
 ### <a name="set-device-compliance"></a>デバイス コンプライアンスの設定
-デバイスのコンプライアンス レベルを定義し、準拠していないデバイスについてのレポートを作成します。詳細については、[こちら](/intune-azure/set-device-compliance/what-is-device-compliance)を参照してください。
+[デバイスのコンプライアンス レベルを定義し、準拠していないデバイスについてのレポートを作成します](/intune-azure/set-device-compliance/what-is-device-compliance)。
 ### <a name="conditional-access"></a>条件付きアクセス
-指定した条件に応じて Exchange サービスへのアクセスを制限します。
-[詳細については、こちらを参照してください](/intune-azure/conditional-access/what-is-conditional-access)
+[指定した条件に応じて Exchange サービスへのアクセスを制限します](/intune-azure/conditional-access/what-is-conditional-access)。
 ### <a name="access-control"></a>アクセス制御
-Intune の各種アクションを実行できるユーザーと、それらのアクションの適用先となるユーザーを制御します。 一般的な Intune シナリオを対象とする組み込みロールを使用するか、独自のロールを作成することができます。
-[詳細については、こちらを参照してください](/intune-azure/access-control/role-based-access-control)
+[Intune の各種アクションを実行できるユーザーと、それらのアクションの適用先となるユーザーを制御します](/intune-azure/access-control/role-based-access-control)。 一般的な Intune シナリオを対象とする組み込みロールを使用するか、独自のロールを作成することができます。
+
 
 
 ## <a name="whats-new"></a>新機能
 
 プレビュー リリースの新機能については、[こちら](/intune-azure/introduction/whats-new)を参照してください。
-
-
-<!--HONumber=Feb17_HO1-->
-
 

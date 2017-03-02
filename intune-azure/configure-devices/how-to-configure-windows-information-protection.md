@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: f233672c-7d9b-4554-af1f-92c001a1a3c5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: 828e14936d250123b3da3bbc0dbc06747fe78b65
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 0d62e8a7e9117a724770750c7724ff8f46cef7d6
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-windows-information-protection"></a>Windows 情報保護を構成する方法 
+# <a name="how-to-configure-windows-information-protection-in-microsoft-intune"></a>Microsoft Intune で Windows Information Protection を構成する方法
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -32,9 +33,4 @@ ms.openlocfilehash: 828e14936d250123b3da3bbc0dbc06747fe78b65
 
 ### <a name="next-steps"></a>次のステップ
 詳細については、「[Protect your enterprise data using Windows Information Protection (Windows 情報保護を使用してエンタープライズ データを保護する)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)」を参照してください。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

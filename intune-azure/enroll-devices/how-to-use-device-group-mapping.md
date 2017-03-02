@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,9 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1609ed2f127fe9d7d1f1c3b3e923bd12f1088200
-ms.openlocfilehash: 41b3cfb8006a7390094d01b4f0fdc38417e858be
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 57dce5b23b9c8cd878a9ce746e6459a69f1270ff
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -41,7 +42,7 @@ Microsoft Intune のデバイス カテゴリを使用して、ユーザー定�
 ## <a name="how-to-configure-device-categories"></a>デバイス カテゴリを構成する方法
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>手順 1 - Azure Portal の [Intune] ブレードでデバイス カテゴリを作成する
-1. Azure ポータルにサインインします。
+1. Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイスの登録]** を選択します。
 3. **[登録]** ブレードで、**[デバイス カテゴリ]** を選択します。
@@ -61,17 +62,20 @@ Microsoft Intune のデバイス カテゴリを使用して、ユーザー定�
 デバイス グループを構成し、ユーザーがデバイスを登録すると、構成したカテゴリの一覧が表示されます。 ユーザーがカテゴリを選択して登録を完了すると、選択したカテゴリに対応する Active Directory セキュリティ グループにデバイスが追加されます。
 
 ### <a name="how-to-view-the-categories-of-devices-you-manage"></a>管理対象デバイスのカテゴリを表示する方法
-1.    Azure Portal の [Intune] ブレードで、**[デバイスとグループ]** を選択します。
 
-2.    **[管理]** の **[すべてのデバイス]** をクリックします。
+1.    Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 
-3.    デバイスの一覧の **[カテゴリ]** 列を確認します。
+2. Azure Portal の [Intune] ブレードで、**[デバイスとグループ]** を選択します。
+
+3.    **[管理]** の **[すべてのデバイス]** をクリックします。
+
+4.    デバイスの一覧の **[カテゴリ]** 列を確認します。
 
 **[カテゴリ]** 列が表示されていない場合は、**[列]** をクリックし、一覧から**[カテゴリ]** を選択して、**[適用]** をクリックします。
 
 ### <a name="to-change-the-category-of-a-device"></a>デバイスのカテゴリを変更するには
 
-1. Azure ポータルにサインインします。
+1. Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイスとグループ]** を選択します。
 4. **[デバイスとグループ]** ブレードで、**[管理]** > **[すべてのデバイス]** の順に選択します。
@@ -85,10 +89,5 @@ Microsoft Intune のデバイス カテゴリを使用して、ユーザー定�
 
 - カテゴリを削除すると、そのカテゴリに割り当てられていたすべてのデバイスのカテゴリ名が "**未割り当て**" と表示されます。
 
-
-
-
-
-<!--HONumber=Feb17_HO2-->
 
 

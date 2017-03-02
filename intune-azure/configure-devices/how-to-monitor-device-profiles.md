@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 938129f210d1a4a6b4719deb63d1dc47dad21b29
-ms.openlocfilehash: e36ecf949bf9a604c29de2f21a3761125eb60f7f
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: e48ef79726c542da210e167707c4ca044a7cdd51
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-monitor-device-profiles-with-intune-azure-preview"></a>Intune Azure プレビューでデバイス プロファイルを監視する方法
+# <a name="how-to-monitor-device-profiles-in-microsoft-intune"></a>Microsoft Intune でデバイス プロファイルを監視する方法
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -34,9 +35,4 @@ Intune デバイス プロファイルの割り当ての進捗状況は、2 つ�
 2. プロファイルの一覧ブレードで、管理するプロファイルを選択し、次のいずれかを実行します。
     - **[<*プロファイル名*> レポート]** ブレードで、**[概要]** を選択して、プロファイルおよびその割り当てに関する基本的な情報を表示します。
     - **[<*プロファイル名*> レポート]** ブレードで、**[レポート]** を選択して、プロファイルおよびその割り当てに関する詳細な情報を表示します。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

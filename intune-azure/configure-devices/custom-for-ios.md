@@ -1,11 +1,12 @@
 ---
-title: "iOS デバイス向けの Intune カスタム設定 | Intune Azure プレビュー | Microsoft Docs"
+title: "iOS デバイス向けの Intune のカスタム設定"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: iOS カスタム プロファイルで使用できる設定について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,16 @@ ms.technology:
 ms.assetid: 6da8caa8-65c2-4f47-842f-9570dcb1ac22
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab494a3dd1e1bdea9703ab314574b192c5208ee
-ms.openlocfilehash: cfccdbf34437c5ab23cefba5307c53c60573ddb0
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: d8e6d0d641dd55c79442f68e7e97d21efcdad7fa
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="intune-custom-settings-for-ios-devices-in-intune-azure-preview"></a>Intune Azure プレビューでの iOS デバイス向けの Intune カスタム設定
+# <a name="microsoft-intune-custom-settings-for-ios-devices"></a>iOS デバイス向けの Microsoft Intune のカスタム設定
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -37,9 +40,4 @@ Microsoft Intune の iOS カスタム プロファイルを使用して、[Apple
 Apple Configurator ツールからエクスポートした設定に、iOS カスタム ポリシーを展開するデバイス上の iOS のバージョンとの互換性があることを確認します。 互換性のない設定を解決する方法については、[Apple 開発者](https://developer.apple.com/) Web サイトで「**Configuration Profile Reference**」 (構成プロファイル リファレンス) および「**Mobile Device Management Protocol Reference**」 (モバイル デバイス管理プロトコル リファレンス) を検索してください。
 
 インポートしたファイルは、ブレードの **[ファイルの内容]** 領域に表示されます。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

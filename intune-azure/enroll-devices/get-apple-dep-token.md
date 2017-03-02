@@ -14,8 +14,9 @@ ms.assetid: 7e5c79c5-2883-4841-9be6-74cba16ee447
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65a6b2e22359bdcb9b0c15a84c6b3586dafe4d6c
-ms.openlocfilehash: c740dedebdc4afd909a8c38447f698c2724de5a1
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: b2c79e92f6378825bdaac03d2d9be699bdaca95b
+ms.lasthandoff: 02/15/2017
 
 ---
 
@@ -31,7 +32,7 @@ Apple の Device Enrollment Program (DEP) を使用して企業所有の iOS デ
 > Intune 管理コンソールから Azure Portal に移行した場合のみ、この注を読んでください。 移行期間中に Intune 管理コンソールから Apple DEP トークンを削除した場合は、Intune アカウントに DEP トークンが復元されていることがあります。 その場合は、Azure Portal から DEP トークンを削除します。 
 
 **Apple DEP 証明書を取得するには**</br>
-Azure Portal で、**[その他のサービス]** を選択し、テキスト ボックスに「**Intune**」と入力して、**[その他]** > **[Intune]** の順に選択します。 [Intune] ブレードで、**[デバイスの登録]** > **[Apple DEP トークン]** の順に選択し、Azure Portal で次に示す番号付きの手順に従います。
+Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。 [Intune] ブレードで、**[デバイスの登録]** > **[Apple DEP トークン]** の順に選択し、Azure Portal で次に示す番号付きの手順に従います。
 
 **手順 1: Apple DEP トークンを作成するために必要な Intune 公開キー証明書をダウンロードします。**<br>
 **[Download your public key (公開キーをダウンロードする)]** を選択して、暗号化キー (.pem) ファイルをダウンロードし、ローカルに保存します。 .pem ファイルは、Apple Device Enrollment Program ポータルから信頼関係証明書を要求するために使用します。
@@ -53,9 +54,4 @@ Azure Portal で、**[その他のサービス]** を選択し、テキスト �
 
 **手順 4:アップロードする Apple DEP トークンを参照します。Intune は自動的に DEP アカウントと同期します。**<br>
 証明書 (.pem) ファイルに移動し、**[開く]** を選択して、**[アップロード]** を選択します。 このプッシュ証明書を使用して、Intune はモバイル デバイスを登録し、登録したモバイル デバイスにポリシーを適用して iOS デバイスを管理できます。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

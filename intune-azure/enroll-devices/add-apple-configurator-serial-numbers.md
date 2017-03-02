@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 02/03/17
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,18 @@ ms.assetid: d408aa38-7d1e-40df-9067-246e53f6e26f
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65a6b2e22359bdcb9b0c15a84c6b3586dafe4d6c
-ms.openlocfilehash: 71d29a245f8f900a7427528167bae0b52565d42b
+ms.sourcegitcommit: 37c56d0c219c61c345874b24e8ba9ac640f1ef76
+ms.openlocfilehash: 4c2ebe535935518127a799ae0518c43a2e53de72
+ms.lasthandoff: 02/17/2017
 
 
 ---
 
-# <a name="add-apple-configurator-serial-numbers"></a>Apple Configurator のシリアル番号を追加する 
+# <a name="add-apple-configurator-serial-numbers"></a>Apple Configurator のシリアル番号を追加する
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-以下の手順を使用して、[セットアップ アシスタントで Apple Configurator を使用して企業所有の iOS デバイスを登録]((enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)する必要がある場合に、シリアル番号を Intune に追加します。 シリアル番号は&1; つずつ追加することも、シリアル番号が含まれるコンマ区切り値 (CSV) ファイルをアップロードすることもできます。 追加したシリアル番号にはプロファイルを割り当てることができます。 プロファイルには、デバイスに適用する特定の管理設定が含まれています。 
+以下の手順を使用して、[セットアップ アシスタントで Apple Configurator を使用して企業所有の iOS デバイスを登録する](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)必要がある場合に、シリアル番号を Intune に追加します。 シリアル番号は&1; つずつ追加することも、シリアル番号が含まれるコンマ区切り値 (CSV) ファイルをアップロードすることもできます。 追加したシリアル番号にはプロファイルを割り当てることができます。 プロファイルには、デバイスに適用する特定の管理設定が含まれています。
 
 iOS デバイスの他の登録方法については、[Intune での iOS デバイスの登録方法の選択](choose-ios-enrollment-method.md)に関するページを参照してください。
 
@@ -35,7 +36,7 @@ iOS デバイスの他の登録方法については、[Intune での iOS デバ
     F7TLWCLBX196,デバイスの詳細</br>
     DLXQPCWVGHMJ,デバイスの詳細
 
-2. Azure Portal で、**[その他のサービス]** を選択し、テキスト ボックスに「**Intune**」と入力して、**[その他]** > **[Intune]** の順に選択します。
+2. Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 
 3.  [Intune] ブレードで **[デバイスの登録]** を選択し、**[Apple の登録]** を選択します。
 
@@ -51,11 +52,13 @@ iOS デバイスの他の登録方法については、[Intune での iOS デバ
 
 Intune を使用すると、Azure Portal の&2; つの異なる場所からプロファイルを割り当てることができます。 以下の手順を使用するか、[Apple Configurator の登録プロファイル] ブレードからプロファイルを割り当てることができます。このブレードではプロファイルを作成できます ([Apple Configurator によるセットアップ アシスタントを使用した iOS デバイスの登録](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)に関するページを参照してください)。 次の手順は、作成済みのプロファイルを割り当てる場合にのみ使用できます。
 
-1. [Intune] ブレードで **[デバイスの登録]** を選択し、**[Apple の登録]** を選択します。
+1. Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 
-2. **[Apple Configurator のシリアル番号]** ブレードで、プロファイルの割り当て先シリアル番号を選択し、**[プロファイルの割り当て]** を選択します。
+2. [Intune] ブレードで **[デバイスの登録]** を選択し、**[Apple の登録]** を選択します。
 
-3. **[プロファイルの割り当て]** ブレードで、割り当てるプロファイルを選択し、**[割り当て]** を選択します。
+3. **[Apple Configurator のシリアル番号]** ブレードで、プロファイルの割り当て先シリアル番号を選択し、**[プロファイルの割り当て]** を選択します。
+
+4. **[プロファイルの割り当て]** ブレードで、割り当てるプロファイルを選択し、**[割り当て]** を選択します。
 
 ## <a name="delete-serial-numbers"></a>シリアル番号の削除
 前にインポートしたシリアル番号を削除できます。 シリアル番号を削除するには、デバイスを最初に登録解除しておく必要があります。 シリアル番号を削除すると、シリアル番号を再度追加しない限り、セットアップ アシスタントで Apple Configurator を使用することはできません。
@@ -70,9 +73,4 @@ Intune を使用すると、Azure Portal の&2; つの異なる場所からプ�
 **シリアル番号の状態を表示するには**
 
 **[Apple Configurator のシリアル番号]** ブレードで、状態を確認するシリアル番号を選択し、**[状態]** 項目を確認します。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -14,8 +14,9 @@ ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: a7249e96e737cc844e742a78d8a34899a428f52b
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 56e78f2c80c860c4cdf1c79bf94d7575d5cd9674
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -49,7 +50,7 @@ Intune と Hello for Business の統合には&2; 通りの方法があります�
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Windows Hello for Business のポリシーの作成
 
-1.  Azure Portal で、**[その他のサービス]** を選択し、テキスト ボックスに「**Intune**」と入力して、**[その他]** > **[Intune]** の順に選択します。
+1.  Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 
 2.  [Intune] ブレードで **[デバイスの登録]** を選択してから、**[管理]** > **[Windows Hello for Business]** の順に選択します。
 
@@ -96,9 +97,4 @@ Intune と Hello for Business の統合には&2; 通りの方法があります�
 
 ## <a name="further-information"></a>詳細情報
 Microsoft Passport について詳しくは、Windows 10 ドキュメントの[こちらのガイド](https://technet.microsoft.com/library/mt589441.aspx)をご覧ください。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

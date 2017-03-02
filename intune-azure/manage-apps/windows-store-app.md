@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01e5bfeb98aee9314fa04679cc27c8aba0e18fb0
-ms.openlocfilehash: ee0079d7b1098c2c9a2a679c46336e2fb8e09585
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 80fe042dbdc909d1c81098567b1a87d8b089cc19
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-add-windows-store-apps-to-intune"></a>Windows ストア アプリを Intune に追加する方法
+# <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Windows ストア アプリを Microsoft Intune に追加する方法
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -47,8 +48,3 @@ ms.openlocfilehash: ee0079d7b1098c2c9a2a679c46336e2fb8e09585
 8. 構成が終了したら、**[アプリの追加]** ブレードで、**[保存]** を選択します。
 
 作成したアプリはアプリの一覧に表示され、選択したグループに割り当てることができるようになります。 詳細については、[アプリをグループに割り当てる方法](/intune-azure/manage-apps/deploy-apps)に関するページを参照してください。
-
-
-<!--HONumber=Feb17_HO1-->
-
-

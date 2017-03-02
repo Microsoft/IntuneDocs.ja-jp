@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87250baede6c86e7ac5c402e79026908e712f48c
-ms.openlocfilehash: 809fe8d8eea7e472d80f6ee22e26c1f376e870eb
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 7a2d494a995072c6fa61cf99aa5f841256e86885
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program"></a>Volume Purchase Program で購入した iOS アプリを管理する方法
+# <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Volume Purchase Program で購入した iOS アプリを Microsoft Intune で管理する方法
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -81,9 +82,4 @@ iOS アプリの複数のライセンスを購入するには、[ビジネス向
 ライセンスを再利用するには、割り当てアクションを **[アンインストール]** に変更する必要があります。 アプリをアンインストールすると、ライセンスは回収されます。
 
 対象となるデバイスを持つユーザーが初めて VPP アプリをインストールしようとすると、Apple Volume Purchase Program に参加するように求められます。 アプリのインストールを実行する前に、このプログラムに参加する必要があります。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

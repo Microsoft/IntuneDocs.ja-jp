@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 21c55041-3821-4a62-9f85-855b97dba269
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab494a3dd1e1bdea9703ab314574b192c5208ee
-ms.openlocfilehash: 3656db2d9828dcc16c479ba072de691848fdd23b
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: ab1ad9852b8f9145f405bb71cf52bfcb00e078f6
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="custom-settings-for-windows-phone-81-devices-in-intune-azure-preview"></a>Intune Azure プレビューでの Windows Phone 8.1 デバイス向けのカスタム設定
+# <a name="custom-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Microsoft Intune での Windows Phone 8.1 デバイス向けのカスタム設定
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -40,9 +41,4 @@ Microsoft Intune Windows Phone 8.1 **カスタム** プロファイルを使用�
     - **[値]** - 入力した OMA-URI に関連付ける値を入力します。
 
 4. 完了したら **[OK]** をクリックし、必要に応じて引き続き他の設定を追加します。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

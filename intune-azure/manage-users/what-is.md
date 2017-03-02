@@ -2,10 +2,10 @@
 title: "ユーザー管理のワークロードとは | Intune Azure プレビュー | Microsoft Docs"
 description: "Intune Azure プレビュー: Microsoft Intune と Azure を使用してユーザーを表示して管理する方法について説明します。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 01/18/2017
+ms.date: 02/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,9 @@ ms.technology:
 ms.assetid: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: d778e7d1dee49da4155b109692b80b23489f0ae8
+ms.sourcegitcommit: 00e9dfd165a449182c5b937372db7085c981c68f
+ms.openlocfilehash: 9c9a10dc47dc6a8fc38ac197230c3c131d5aff03
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -24,12 +25,13 @@ ms.openlocfilehash: d778e7d1dee49da4155b109692b80b23489f0ae8
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Azure Portal で Intune を初めて使う場合は、Intune 固有のグループの作成が不要になったことに注意してください。 Intune では、使用している他の多くのアプリケーションと同じように Azure AD グループが使用されます。
+Azure Portal で Intune を初めて使用する場合は、Intune のグループの作成が不要になったことに注意してください。 Intune では、使用している他の多くのアプリケーションと同じように Azure AD グループが使用されます。
+
 Azure AD でグループを使用する方法の詳細については、「[Azure Active Directory グループによるリソースへのアクセス管理](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-manage-groups)」を参照してください。
 
-**[ユーザーの管理]** を選択すると、Microsoft Azure の [ユーザーとグループ] ワークロードが表示されます。ここでは次の操作を実行できます。
+[Azure Portal](https://portal.azure.com) でグループを管理するには、**Intune** を検索し、**[ユーザーの管理]** を選択します。そうすると、**[ユーザーとグループ]** ワークロードが表示されます。ここでは次の操作を実行できます。
 
-1. 管理するユーザーとグループに関する概要を確認する。
+1. 管理するユーザーとグループに関する**概要**情報を確認する。
 2. Azure で管理するすべてのユーザーの詳細を確認する。
 3. ユーザーとデバイスのグループを作成する。
 4. グループ アクションの監査アクティビティを表示する。
@@ -40,9 +42,4 @@ Azure AD でグループを使用する方法の詳細については、「[Azur
 ## <a name="next-step"></a>次の手順
 
 [グループの概要](/intune-azure/manage-users/get-started-with-groups)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

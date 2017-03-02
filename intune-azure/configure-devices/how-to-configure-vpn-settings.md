@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: 6ec26a2d3e0566a5c96e39d2b7e37fdad8a3780b
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: ff05d9ed7bae2742de8dbbe908f2c92d2459a7f4
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="how-to-configure-vpn-settings"></a>VPN 設定を構成する方法 
+# <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Microsoft Intune で VPN の設定を構成する方法
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -96,9 +97,4 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
 ### <a name="user-name-and-password"></a>ユーザー名とパスワード
 
 ユーザーは、ユーザー名とパスワードを提供することにより、VPN サーバーに対して認証を行います。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
