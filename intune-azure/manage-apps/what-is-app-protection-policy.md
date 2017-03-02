@@ -1,5 +1,6 @@
 ---
-title: "アプリ保護ポリシーとは | Intune Azure プレビュー | Microsoft Docs"
+title: "アプリ保護ポリシーとは"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: このトピックでは、Microsoft Intune のアプリ保護ポリシーで会社のデータを保護する方法について説明します。"
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: 34f5f17e581e8e146fccce6534202939d1418135
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: cb3342812a8b77f0b2ee8e2cdd1532ba6dfc651b
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -134,9 +137,4 @@ MDM ソリューションに登録されていない BYOD デバイスでは、�
 ##  <a name="next-steps"></a>次のステップ
 
 [Microsoft Intune でアプリ保護ポリシーを作成および展開する方法](app-protection-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

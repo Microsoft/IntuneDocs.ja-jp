@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 106b24e73a21d7cd8608c44c4dd7ded4c0eebe4f
+ms.sourcegitcommit: b7a066c1387a97d6100be0e6ab22d78222bf2a30
+ms.openlocfilehash: 3311ba5081c4b04d72fdeb1f9a558ffc2e1b02fc
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -39,16 +41,11 @@ ms.openlocfilehash: 106b24e73a21d7cd8608c44c4dd7ded4c0eebe4f
 - [**Windows PC の管理ポリシー (Intune クライアント ソフトウェアを使用)**](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)。 Windows PC を Intune に登録するとほとんどのデバイス管理機能を利用できますが、Intune では引き続き Intune クライアント ソフトウェアによる Windows PC の管理をサポートします。 PC で実行できるタスクの一部について情報が必要な場合は、ここから始めてください。
 
 ## <a name="protect"></a>保護
-最新の IT 世界で、不正アクセスからデバイスを保護することは、実施しなければならない最も重要なタスクの 1 つです。 デバイス ライフサイクルの**構成**ステップの項目に加えて、Intune では管理対象のデバイスを不正なアクセスまたは悪意のある攻撃から保護するのに役立つ次の機能も提供されます。
-- [**多要素認証**](protect-windows-devices-with-multi-factor-authentication.md)。 追加の認証層をユーザー サインインに追加すると、デバイスの安全性をさらに強化するのに役立ちます。 Windows、Windows Phone、および Windows Mobile デバイスでは、ユーザーがアクセスできるようになるまでに電話またはテキスト メッセージなどの第 2 レベルの認証が必要となる多要素認証を用意しています。
+最新の IT 世界で、不正アクセスからデバイスを保護することは、実施しなければならない最も重要なタスクの&1; つです。 デバイス ライフサイクルの**構成**ステップの項目に加えて、Intune では管理対象のデバイスを不正なアクセスまたは悪意のある攻撃から保護するのに役立つ次の機能も提供されます。
+- [**多要素認証**](protect-your-devices-with-microsoft-intune.md)。 追加の認証層をユーザー サインインに追加すると、デバイスの安全性をさらに強化するのに役立ちます。 多くのデバイスで、ユーザーがアクセスできるようになるまでに電話またはテキスト メッセージなどの第&2; レベルの認証が必要となる多要素認証がサポートされています。
 - [**Microsoft Passport 設定**](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md)。 Microsoft Passport は別のサインイン方法であり、ユーザーが*ジェスチャ* (指紋や Windows Hello など) を使用して、パスワードなしでサインインできるようにするものです。
 - [**Windows PC を保護するためのポリシー (Intune クライアント ソフトウェアを使用)**](policies-to-protect-windows-pcs-in-microsoft-intune.md)。 Intune クライアント ソフトウェアを使用して Windows PC を管理する場合は、更新する PC に対する Endpoint Protection、ソフトウェア更新プログラム、および Windows ファイアウォールの設定を制御するためのポリシーを利用できます。
 
 ## <a name="retire"></a>インベントリから削除
 デバイスを紛失したり盗まれたりしたとき、デバイスの交換が必要なとき、またはユーザーが別の職場に移動になったとき、通常はデバイスを[インベントリから削除またはワイプ](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)します。 それを行うには、デバイスをリセットする、デバイスを管理から削除する、またはデバイス上の企業データをワイプするなど、さまざまな方法があります。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

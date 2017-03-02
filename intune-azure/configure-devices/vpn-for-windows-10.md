@@ -1,5 +1,6 @@
 ---
-title: "Windows 10 デバイス向けの Intune VPN 設定 | Intune Azure プレビュー | Microsoft Docs"
+title: "Windows 10 デバイス向けの Intune の VPN 設定"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: Windows 10 デバイスで VPN 接続を構成するために使用できる Intune 設定について説明します。"
 keywords: 
 author: robstackmsft
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 7f09fa9bb8a9817aaad40c6452cff2a866a926d9
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 87004408ddcb07571507f68d5b9925b7e475282a
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -116,9 +119,4 @@ ms.openlocfilehash: 7f09fa9bb8a9817aaad40c6452cff2a866a926d9
     - **[アドレス]** - プロキシ サーバーのアドレスを (IP アドレスとして) 入力します。
     - **[ポート番号]** - プロキシ サーバーに関連付けられているポート番号を入力します。
 - **[ローカル アドレスにはプロキシ サーバーを使用しない]** - VPN サーバーが接続にプロキシ サーバーを必要とする場合、指定したローカル アドレスに対してプロキシ サーバーを使用しないようにするには、このオプションを選択します。 詳細については、Windows Server のマニュアルを参照してください。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

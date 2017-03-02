@@ -2,10 +2,10 @@
 title: "企業所有の iOS デバイスの登録 | Microsoft Docs"
 description: "Apple Device Enrollment Program (DEP) または Apple Configurator を使用した企業所有の iOS デバイスの登録"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: 03f5da3a819768ff8221257f091a000f18f00fb4
+ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
+ms.openlocfilehash: 7fcb910dfc566cdf7112a48558cda375ea1c39a8
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -36,7 +37,7 @@ Microsoft Intune は、Mac コンピューターで実行される Apple Device 
 - ポータル サイト アプリ
 
 >[!NOTE]
->Apple Configurator とデバイス登録プログラムの登録メソッドは、[デバイス登録マネージャー](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)のメソッドと同時に使用することはできません。
+>Apple Configurator とデバイス登録プログラムの登録方法は、[デバイス登録マネージャー](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)の方法と同時に使用することはできません。
 
 既定では、すべての iOS デバイスを Intune に登録することができます。 個人または会社所有のデバイスの登録をブロックするには、管理者資格情報を使用して [Microsoft Intune 管理ポータル](http://manage.microsoft.com)にサインインします。 **[管理]** > **[モバイル デバイス管理]** > **[登録ルール]** の順に選択し、該当するオプションをオフにします。
 
@@ -49,7 +50,7 @@ Microsoft Intune は、Mac コンピューターで実行される Apple Device 
 - **直接登録** - デバイスの準備で使用する Apple Configurator 準拠ファイルを作成します。 登録対象デバイスは出荷時の設定に戻されませんが、ユーザーの関連付け情報は含まれません。 この方法では、管理者は [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) を実行している Mac コンピューターに iOS デバイスを USB で接続して、デバイスを登録する必要があります。 詳しくは、[Apple Configurator の直接登録を使用した iOS デバイスの登録](ios-direct-enrollment-in-microsoft-intune.md)に関するページを参照してください。
 
 ## <a name="use-the-device-enrollment-program-dep"></a>Device Enrollment Program (DEP) のサポートを使用する場合
-DEP では、DEP を通じて購入したデバイスに "無線で" 登録プロファイルが展開されます。 ユーザーがデバイスでセットアップ アシスタントを実行すると、デバイスが Intune に登録されます。  DEP を使用して登録したデバイスの場合は、ユーザーが登録を解除することはできません。 詳しくは、[Device Enrollment Program による iOS デバイスの登録](ios-device-enrollment-program-in-microsoft-intune.md)に関するページを参照してください。
+DEP では、DEP を通じて購入したデバイスに "無線で" 登録プロファイルが展開されます。 ユーザーがデバイスでセットアップ アシスタントを実行すると、デバイスが Intune に登録されます。 詳しくは、[Device Enrollment Program による iOS デバイスの登録](ios-device-enrollment-program-in-microsoft-intune.md)に関するページを参照してください。
 
 ## <a name="use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices"></a>DEP または Apple Configurator で登録されたデバイスでのポータル サイトの使用
 
@@ -91,9 +92,4 @@ DEP では、DEP を通じて購入したデバイスに "無線で" 登録プ�
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune でデバイスを登録するための前提条件](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

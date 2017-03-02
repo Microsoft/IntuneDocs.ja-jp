@@ -1,5 +1,6 @@
 ---
-title: "iOS アプリとアプリ保護ポリシー | Intune Azure プレビュー | Microsoft Docs"
+title: "iOS アプリとアプリ保護ポリシー | Intune Azure プレビュー"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: このトピックでは、アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点について説明します。"
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: ae646cf3dd1b1469b9f87ac66ad7171d77ef6518
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 5a4ce6d6248378ba48cddeaefb941c139dd990f6
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -63,9 +66,4 @@ iOS デバイスを使用している場合は、同じデバイスに&2; つ目
 [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](app-protection-enabled-android-apps.md)
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune でのアプリ保護ポリシーの作成と展開](app-protection-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

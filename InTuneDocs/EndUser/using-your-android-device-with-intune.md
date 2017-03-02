@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,11 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: bb949c9a83fdde630dd2023765d32e98c43a1c20
-ms.openlocfilehash: 22a5cab46a6ca8cf2d350ba9844328a3dea13766
+ms.sourcegitcommit: 76001bd12e5f665eb1a5a0f0fe5442f0a6fedb8c
+ms.openlocfilehash: d653d3eb1d71d30e2bf1104b1d55bfbcf2725c13
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -26,23 +28,15 @@ ms.openlocfilehash: 22a5cab46a6ca8cf2d350ba9844328a3dea13766
 
 # <a name="using-your-android-device-with-intune"></a>Android デバイスを Intune で使用する
 
-この記事には、エンドユーザーが Intune 管理対象デバイスで実行できるすべてのタスクへのリンクが掲載されています。 IT 管理者はこの情報を参照して、ユーザーがさまざまなタスクを実行するための手順を確認できます。タスクは以下のカテゴリにグループ化されます。
+仕事を効率化するために Intune でできることは数多くあります。 会社から求められる可能性のある最も一般的な仕事内容のリストを以下に示します。
 
-- ポータル サイト アプリのインストールと Intune の登録
-- 登録後の管理タスク
-- ポリシー準拠の問題
-
-## <a name="company-portal-app-installation-and-intune-enrollment"></a>ポータル サイト アプリのインストールと Intune の登録
-
-このセクションの情報は、Intune ポータル サイトのインストールと Android デバイスのデバイス登録に役立ちます。
+## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Intune に登録して、ポータル サイトをインストールする
 
 - [Intune にデバイスを登録する](enroll-your-device-in-Intune-android.md)
 - [Intune での仕事用プロファイルの作成とデバイスの登録](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 - [ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
-## <a name="things-users-can-do-when-their-device-is-enrolled-in-intune"></a>Intune にデバイスを登録する際にユーザーが実行できること
-
-このセクションの情報は、Android デバイスを Intune に登録した後に実行できる操作で役立ちます。
+## <a name="things-you-can-do-when-your-device-is-enrolled-in-intune"></a>Intune にデバイスを登録する際に実行できること
 
 - [デバイスで管理対象アプリを使用する](use-managed-apps-on-your-device-android.md)
 - [デバイスを暗号化する](encrypt-your-device-android.md)
@@ -56,28 +50,4 @@ ms.openlocfilehash: 22a5cab46a6ca8cf2d350ba9844328a3dea13766
 - [Intune からデバイスの登録を解除するとどうなるか](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [ポータル サイト アプリを使用して Android デバイスをリセットするとどうなるか](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
 <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
-
-## <a name="steps-to-fix-device-and-compliance-issues"></a>デバイスとコンプライアンスに関する問題を解決する手順
-
-このセクションの情報は、Android デバイスを Intune に登録した場合に発生する可能性がある問題を解決するのに役立ちます。
-
-- [IT 管理者がデバイスの問題を解決するのに役立つ、詳細なログ記録を使用する](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [電子メールを使用してログを IT 管理者に送信する](send-logs-to-your-it-admin-by-email-android.md)
-- [USB ケーブルを使用してログを IT 管理者に送信する](send-logs-to-your-it-admin-using-cable-android.md)
-- [IT 管理者に登録に関するエラーを送信する](send-enrollment-errors-to-your-it-admin-android.md)
-- [デバイスに最低限必要なバージョンのオペレーティング システムがインストールされていない](you-need-to-update-your-android-device.md)
-- [デバイスが最新のオペレーティング システムのバージョンに準拠していない](your-android-version-isnt-yet-supported.md)
-- [デバイスが root 化され、接続できない](your-device-is-rooted-and-you-cant-connect-android.md)
-- [デバイスに必要な証明書がない](your-device-is-missing-a-required-certificate-landing-android.md)
-- [不明なソースを無効にする必要がある](you-need-to-turn-off-unknown-sources-android.md)
-- [USB デバッグを無効にする必要がある](you-need-to-turn-off-usb-debugging-android.md)
-- [セキュリティ上の脅威に対するスキャンを有効にする必要がある](you-need-to-turn-on-scanning-for-security-threats-android.md)
-- [デバイスが最小限のセキュリティ パッチを満たしていない](your-device-does-not-meet-the-minimum-security-patch-android.md)
-- [Android デバイスで Lookout for Work のインストールを求められる](you-are-prompted-to-install-lookout-for-work-android.md)
-- [Android デバイスで Lookout for Work が検出した脅威を解決する必要がある](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

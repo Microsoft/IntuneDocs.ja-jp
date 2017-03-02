@@ -1,5 +1,6 @@
 ---
-title: "通信費管理サービスをセットアップする | Intune Azure プレビュー | Microsoft Docs"
+title: "通信費管理サービスをセットアップする"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー:Saaswedo 通信費管理サービスを Intune と統合するように構成します。"
 keywords: Saaswedo
 author: staciebarker
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: d243aaf8de5bb235f1c60141ff62f156b81f312b
-ms.openlocfilehash: faf662d2d5c9cb05fe507da8a1ec5c2eb89f3352
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: aa2e668641da1a87e6145fe826d88c2ca5b184a2
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -164,9 +167,4 @@ Azure Portal で Datalert サービスを無効にすると、以下のような
 現時点では、Saaswedo の Datalert 管理コンソールでのみデータ使用量のレポートを利用できます。
 
 エンドユーザーが Datalert アプリをインストールするための手順はまもなく追加されます。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

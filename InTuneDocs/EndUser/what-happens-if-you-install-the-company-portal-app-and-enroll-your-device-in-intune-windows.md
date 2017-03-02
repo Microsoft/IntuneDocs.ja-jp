@@ -18,8 +18,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 7a4b5acea4a4bdce32c42ca33f81778965ee1abb
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: bde2ccc0c170a85e926357d54fcf4ffe6ee50fd9
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -34,7 +35,7 @@ Intune に Windows または Windows Phone デバイスを登録すると、次�
 
 -   会社のネットワークにアクセスし、電子メールや仕事用のファイルにアクセスする。
 
--   ポータル Web サイトから会社のアプリを取得する。 (Windows 7 と Windows Vista の場合は、ポータル Web サイトからしか会社用アプリを取得できません。)
+-   ポータル Web サイトから会社のアプリを取得する。 (__注__: Windows 7 と Windows Vista の場合は、ポータル Web サイトからしか会社用アプリを取得できません。)
 
 -   会社または学校用の電子メール アカウントを自動的にセットアップする。
 
@@ -67,6 +68,7 @@ Intune に Windows または Windows Phone デバイスを登録すると、次�
 -  IT 管理者は、コンピューターにアプリケーションと更新プログラムをインストールすることができます。
 
 ## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>デバイスの登録後&8; 時間ごとに生じる動作
+
 登録済みのデバイスは、約&8; 時間ごとに以下のことを行います。
 
 -   IT 管理者が許可したポリシーまたはアプリケーションの更新プログラムをダウンロードする。
@@ -76,9 +78,4 @@ Intune に Windows または Windows Phone デバイスを登録すると、次�
 -   会社のアプリのインベントリの更新情報を送信する。
 
 ご質問がございましたら、IT 管理者に問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

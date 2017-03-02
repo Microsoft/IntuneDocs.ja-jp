@@ -11,9 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: ea5407c284f5408774ee5934ad6151bccfd7e6d1
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -61,7 +63,7 @@ ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
 |-|-|
 |電子メールのプロファイル|このポリシーを使用すると、モバイル デバイス上の特定の電子メール クライアントに[電子メール アクセス設定](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)をセットアップし、エンド ユーザーが行う必要のある設定の量を最小限に抑えることができます。|
 |EMS|Microsoft Enterprise Mobility + Security (旧称 Enterprise Mobility Suite) は、会社のデータを保護しながら、ユーザーには[必要なアプリとコンテンツにアクセスできる](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility)ようにします。|
-|エンド ユーザー|Intune を使用して管理する[スマートフォンや PC などのデバイスのユーザー](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)です。|
+|エンド ユーザー|Intune を使用して管理される[スマートフォンや PC などのデバイスのユーザー](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)です。|
 |登録|Microsoft Intune は、[登録](/intune/deploy-use/enroll-devices-in-microsoft-intune)を使用して、デバイスを管理対象にし、リソースへのアクセスを許可します。|
 
 ## <a name="f"></a>F
@@ -145,9 +147,4 @@ ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
 |||
 |-|-|
 |Wi-Fi プロファイル|ユーザーが設定を知らなくても、または構成しなくても、会社のネットワークに接続できるようにする[ワイヤレス ネットワーク設定](/intune/deploy-use/wi-fi-connections-in-microsoft-intune)をデバイスに展開するポリシーです。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

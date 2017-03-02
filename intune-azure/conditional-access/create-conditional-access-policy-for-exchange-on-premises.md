@@ -1,5 +1,6 @@
 ---
-title: "Exchange On-premises の条件付きアクセス ポリシー | Intune Azure プレビュー | Microsoft Docs"
+title: "Exchange On-Premises の条件付きアクセス ポリシー"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: Intune で Exchange On-premises 条件付きアクセスと従来の Exchange Online Dedicated を構成する方法"
 keywords: 
 author: andredm7
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 581f9be824ea883fd0208abc3b2ecc09174cb911
-ms.openlocfilehash: a80d6a19948291cc80e42ad5a9a2f016effb2f37
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: a9edd882e2cf0fb7abf50002e9f1e8dfd5634fe1
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -96,9 +99,4 @@ Windows 8.1 以降用の**メール** アプリケーション (Intune に登録
   - アクセスをブロックするように設定した場合、最初はすべてのデバイスが直ちに Exchange On-premises にアクセスできなくなります。  **[組み込まれたグループ]** のユーザーのデバイスについては、そのデバイスが Intune に登録され、準拠と評価されると許可されます。 Samsung KNOX Standard が実行されていない Android デバイスは、この設定をサポートしていないため常にブロックされます。
 10. **[デバイス プラットフォームの例外]** で、**[追加]** を選択してプラットフォームを指定します。 **[管理対象外デバイス アクセス]** 設定が "**ブロック済み**" に設定されている場合は、ブロックに対してプラットフォーム例外があっても、登録済みの準拠デバイスは許可されます。 **[OK]** を選択して、設定を保存します。
 11. **[On-premises]** ブレードで **[保存]** をクリックして、条件付きアクセス ポリシーを保存します。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

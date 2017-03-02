@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/21/2016
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
 searchScope:
 - Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: esmich
+ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
-ms.openlocfilehash: 60879acf553934d246c662060e3d57ec50c51658
+ms.sourcegitcommit: e2a507ff6f803cf022536824ca2f12f6d6a64d75
+ms.openlocfilehash: 4b532299070bdb8ddf0e9de1e6b598e8dcd8ffb3
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,37 +37,36 @@ ms.openlocfilehash: 60879acf553934d246c662060e3d57ec50c51658
 
   [!INCLUDE[wit_nextref](../includes/end-user-password-guidance.md)]
 
-3. ログインすると、利用できる__アプリ__、__デバイス__、IT スタッフの__連絡先情報__が表示されます。 ページの先頭に次のように表示されます。"**このデバイスはまだ登録されていないか、ポータル サイトで特定できません。別のデバイスを選択するには、<u>ここをタップ</u>してください。**" __[ここをタップ]__ をクリックします。
+3. ログインすると、使用可能な __[ホーム]__、__[アプリ]__、および __[カテゴリ]__ の各タブが表示されます。 このページには、インストール可能なアプリがすべて表示されます。 デバイスがまだ登録されていない場合は、**アプリを表示できない**ことを示す通知が表示されます。 __[デバイス]__ を選択して、先に進むことができます。
 
- ![macOS の会社のポータル ランディング ページ](./media/macOS_enroll_001_landing_page.png)
+ ![アプリをまだインストールできないことと、下に [デバイス] ボタンが示されている Web ポータルのランディング ページのスクリーンショット。](./media/macOS_enroll_001_landing_page.png)
 
-4. __このデバイスを特定または登録する__理由についての簡単な説明がポップアップ ウィンドウに表示されます。 それを確認した後、__[登録]__ をクリックして続けます。
+4. __[デバイス]__ ページには、登録済みのデバイスのリスト、またはバナーのみが表示されます。 デバイスが既に登録されている場合や macOS などの場合は表示内容が異なります。 リストされていないデバイスを登録するには、[__If your device is listed, tap here to identify it.You can also tap here to enroll your device if it is not listed. (デバイスがリストに表示されている場合は、ここをタップして特定してください。リストに含まれていない場合は、ここをタップするとデバイスを登録できます)__] という内容のバナーを選択します。
 
- ![このデバイスの macOS の特定または登録](./media/macOS_enroll_002_IDenroll_popup.png)
+  ![リスト表示されていないデバイスの登録または不明なデバイスの識別を求めるバナーの上に&2; つの不明なデバイスが示された、[デバイス] ページのスクリーンショット。](./media/macOS_enroll_002_tap_here_banner.png)
 
-5. 別のポップアップ ウィンドウが開き、__このデバイスを登録__した場合についての簡単な説明が表示されます。 それを確認した後、__[インストール]__ をクリックして続けます。
+5. __このデバイスを特定または登録する__理由についての簡単な説明がポップアップ ウィンドウに表示されます。 それを確認した後、__[登録]__ をクリックして続けます。
 
- ![このデバイスの macOS を登録する](./media/macOS_enroll_003_enroll_popup.png)
+ ![このデバイスの macOS の特定または登録](./media/macOS_enroll_003_IDenroll_popup.png)
+
+6. 別のポップアップ ウィンドウが開き、__このデバイスを登録__した場合についての簡単な説明が表示されます。 それを確認した後、__[インストール]__ をクリックして続けます。
+
+ ![このデバイスの macOS を登録する](./media/macOS_enroll_004_enroll_popup.png)
 
   > [!NOTE]
   > Intune は、ユーザーのコンピューターにアクセスして、そのデバイスが組織のリソースにアクセスしても十分に安全であることを確認する必要があります。 「[ポータル サイト アプリをインストールし、Intune に iOS または Mac OS X デバイスを登録するとどうなりますか](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)」をご覧ください。
 
-6. __[システム環境設定]__ が開き、__"管理プロファイル" をインストール__するかどうかの確認を求められます。 __[インストール]__ をクリックして続行するか、__[プロファイルの表示]__ をクリックして詳細を確認します。
+7. __[システム環境設定]__ が開き、__"管理プロファイル" をインストール__するかどうかの確認を求められます。 __[インストール]__ をクリックして続行するか、__[プロファイルの表示]__ をクリックして詳細を確認します。
 
- ![管理プロファイルをインストールする](./media/macOS_enroll_004_sysprefs_mgmt_profile.png)
+ ![管理プロファイルをインストールする](./media/macOS_enroll_005_sysprefs_mgmt_profile.png)
 
-7. macOS のポップアップ ウィンドウが表示されます。 使用するコンピューターの __[ユーザー名]__ と __[パスワード]__ を入力して __[OK]__ をクリックし、変更を行うことを確認します。 これにより、管理プロファイルが Mac にインストールされます。
+8. macOS のポップアップ ウィンドウが表示されます。 使用するコンピューターの __[ユーザー名]__ と __[パスワード]__ を入力して __[OK]__ をクリックし、変更を行うことを確認します。 これにより、管理プロファイルが Mac にインストールされます。
 
- ![macOS のプロファイル インストール ポップアップ](./media/macOS_enroll_005_sysprefs_admin_login.png)
+ ![macOS のプロファイル インストール ポップアップ](./media/macOS_enroll_006_sysprefs_admin_login.png)
 
-8. プロファイルの詳細または__インストール__の確認についての追加メッセージが Mac から表示される場合があります。 __[続行]__ および __[インストール]__ をクリックして処理を続けます。 インストールが終了すると、新しくインストールした__管理プロファイル__を __[デバイス プロファイル]__ の一覧で確認できます。
+9. プロファイルの詳細または__インストール__の確認についての追加メッセージが Mac から表示される場合があります。 __[続行]__ および __[インストール]__ をクリックして処理を続けます。 インストールが終了すると、新しくインストールした__管理プロファイル__を __[デバイス プロファイル]__ の一覧で確認できます。
 
- ![インストールされた macOS プロファイル](./media/macOS_enroll_006_sysprefs_installed_profile.png)
+ ![インストールされた macOS プロファイル](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
 サポートが必要な場合は、 IT 管理者に問い合わせてください。 連絡先の情報は、[会社のポータル Web サイト](http://portal.manage.microsoft.com)でわかります。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

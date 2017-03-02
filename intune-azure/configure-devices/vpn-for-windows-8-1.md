@@ -1,11 +1,12 @@
 ---
-title: "Windows 8.1 デバイス向けの Intune VPN 設定 | Intune Azure プレビュー | Microsoft Docs"
+title: "Windows 8.1 デバイス向けの Intune の VPN 設定"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: Windows 8.1 デバイスで VPN 接続を構成するために使用できる Intune 設定について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/22/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,16 @@ ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: aff935508551b45ee0a69f907506b0703290fddf
-ms.openlocfilehash: 31a7779537062a63fac1fb512a7cf4b9033368f7
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: f38526a3e60f2a6628e61ffca5f5d179a2718e9b
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
-# <a name="vpn-settings-for-windows-81-devices-in-intune-azure-preview"></a>Intune Azure プレビューでの Windows 8.1 デバイス向けの VPN 設定
+# <a name="vpn-settings-for-windows-81-devices-in-microsoft-intune"></a>Microsoft Intune での Windows 8.1 デバイス向けの VPN 設定
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -93,9 +96,4 @@ ms.openlocfilehash: 31a7779537062a63fac1fb512a7cf4b9033368f7
     - **[アドレス]** - プロキシ サーバーのアドレスを (IP アドレスとして) 入力します。
     - **[ポート番号]** - プロキシ サーバーに関連付けられているポート番号を入力します。
 - **[ローカル アドレスにはプロキシ サーバーを使用しない]** - VPN サーバーが接続にプロキシ サーバーを必要とする場合、指定したローカル アドレスに対してプロキシ サーバーを使用しないようにするには、このオプションを選択します。 詳細については、Windows Server のマニュアルを参照してください。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -16,9 +16,11 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 30695011befb8c590bbd90656843e38638759443
-ms.openlocfilehash: 148660008fbe0eeea3ee9f7d9490443f60abbf0c
+ms.sourcegitcommit: 4b5f0129d6824a51c36662a1cc7ef4e8a2de9e20
+ms.openlocfilehash: a35fa4ed88f1cb0e0e4e96b26bb76c009a25e436
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -41,9 +43,4 @@ ms.openlocfilehash: 148660008fbe0eeea3ee9f7d9490443f60abbf0c
 ダウンロード進捗状況バーが画面に表示され、同期が完了するまでダウンロードが続きます。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

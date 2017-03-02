@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
-ms.openlocfilehash: b8452e55f8ba76e787e43e2239510d7665a561f4
+ms.sourcegitcommit: f413846b6f302502c31ca7b4178ebca4d1e0350e
+ms.openlocfilehash: 8d5165465e0e99462cefaae9494481d618acc80f
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -30,18 +31,17 @@ ms.openlocfilehash: b8452e55f8ba76e787e43e2239510d7665a561f4
 
 デバイスの名前を変更するには:
 
-1.  [ポータル サイト Web サイト](http://portal.manage.microsoft.com)を開き、名前を変更するデバイスをタップします。
+1.    [ポータル Web サイト](http://portal.manage.microsoft.com)で、__メニュー__ ボタン ![3 つの横棒が並行に積み上げられている、メニュー ボタンの小さな画像](/Intune/whats-new/media/CP_hamburger_menu.png) をタップしてから、__[デバイス]__ を選択します。
 
-2.  **[名前の変更]** をタップします。
+2. __[デバイス]__ ページで、名前を変更するデバイスの名前を選択します。
 
-    ![rename-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+  ![リスト表示されていないデバイスの登録または不明なデバイスの識別を求めるバナーの上に&2; つの不明なデバイスが示された、[デバイス] ページのスクリーンショット。](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  デバイス名が表示されているボックスにデバイスの新しい名前を入力し、**[名前の変更]** ボタンをタップします。 これで、デバイスが新しい名前で表示されます。
+3.    デバイスがポップアップ ウィンドウに開きます。 **[名前の変更]** ボタンをタップします。
+
+    ![[名前の変更]、[削除]、[デバイスのリセット]、[パスコードのリセット]、[リモート ロック] を含む、ポータル Web サイト上の選択されたデバイスに対するすべてのオプション。 ](./media/iwp-screen-with-all-options.png)
+
+4.  デバイス名が表示されているボックスにデバイスの新しい名前を入力し、**[名前の変更]** ボタンをタップします。 これで、デバイスが新しい名前で表示されます。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

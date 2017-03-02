@@ -1,11 +1,11 @@
 ---
-title: "デバイスを保護する | Microsoft Docs"
+title: "Microsoft Intune でデバイスを保護する | Microsoft Docs"
 description: "不正アクセスなどの脅威からのデバイス保護に Intune が役立つ方法のいくつかについて説明します。"
 keywords: 
 author: Robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 47263a7b0e4255cfa3fe830c969ce6116447ae9f
+ms.sourcegitcommit: 10191f27ae7efd097ea6e74b557776f8be8fe6e6
+ms.openlocfilehash: 042c5673c48bb19aacd624028260267670f9846e
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -45,10 +47,10 @@ Intune は [デバイス コンプライアンス ポリシー](introduction-to-
 ### <a name="protect-apps-and-the-data-they-use"></a>アプリと使用しているデータを保護する
 Intune では、アプリとそのデータを保護するのに役立つ機能を提供します。 たとえば、モバイル アプリケーション管理 (MAM) ポリシーが、保護されているアプリからデータをバックアップされないようにし、他のアプリへのコピーや貼り付けを制限し、アプリへのアクセスに暗証番号 (PIN) を要求します。 アプリの保護の詳細については、「[Microsoft Intune でアプリとデータを保護する](protect-apps-and-data-with-microsoft-intune.md)」をご覧ください。
 
-## <a name="further-capabilities-for-windows-devices"></a>Windows デバイスの他の機能
+### <a name="add-an-additional-layer-of-protection-to-devices"></a>デバイスに保護層を追加する
+[多要素認証 (MFA)](multi-factor-authentication-azure-active-directory.md) は、ネットワーク上のデバイスのユーザーを認証するより安全な方法です。  MFA を使用すると、ユーザーは、ユーザー名とパスワード以外に、電話やテキスト メッセージを使用して本人であることを証明する必要があります。
 
-### <a name="add-an-additional-layer-of-protection-to-windows-devices"></a>Windows デバイスに保護層を追加する
-[多要素認証 (MFA)](protect-windows-devices-with-multi-factor-authentication.md) は、ネットワーク上の Windows デバイスと Windows Phone デバイスのユーザーを認証するより安全な方法です。  MFA を使用すると、ユーザーは、ユーザー名とパスワード以外に、電話やテキスト メッセージを使用して本人であることを証明する必要があります。
+## <a name="further-capabilities-for-windows-devices"></a>Windows デバイスの他の機能
 
 ### <a name="control-windows-hello-for-business-settings-on-windows-devices"></a>Windows デバイスで Windows Hello for Business の設定を制御する
 Intune は、[Windows Hello for Business](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) (旧 Microsoft Passport) と統合でき、パスワード、スマート カード、または仮想スマート カードの代わりに Active Directory または Azure Active Directory アカウントを使った Windows 10 以降の代替サインイン方法です。
@@ -62,9 +64,4 @@ Intune は、[Windows Hello for Business](control-microsoft-passport-settings-on
 
 ## <a name="protect-windows-pcs-managed-with-the-intune-client"></a>Intune クライアントで管理されている Windows PC を保護する
 Intune は引き続き、ユーザーは登録しないが、Intune コンピューター クライアント ソフトウェアで管理する Windows PC のセキュリティ ポリシーをサポートします。 これらのポリシーで Windows PC をセキュリティ保護する方法については、「[Use policies to help protect Windows PCs that run the Intune client software (Intune クライアント ソフトウェアを搭載した Windows PC の保護に有用なポリシーを使用する)](policies-to-protect-windows-pcs-in-microsoft-intune.md)」を参照してください。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

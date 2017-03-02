@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
-ms.openlocfilehash: a888592c4bf4f71cba44cebadb5cf90d2cc9aef6
+ms.sourcegitcommit: 7f2bd282056b035b6f7008db4159d1e2f44953a5
+ms.openlocfilehash: 424d3deedbec2ba28d6c92d0ccd1cb8dc26845b4
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -40,15 +41,21 @@ ms.openlocfilehash: a888592c4bf4f71cba44cebadb5cf90d2cc9aef6
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>リモート ロックを使用してデバイスをロックするには
 
-1.    [ポータル サイト Web サイト](http://portal.manage.microsoft.com)で、ロックするデバイスの名前をタップします。
+1.    [ポータル Web サイト](http://portal.manage.microsoft.com)で、__メニュー__ ボタン ![3 つの横棒が並行に積み上げられている、メニュー ボタンの小さな画像](/Intune/whats-new/media/CP_hamburger_menu.png) をタップしてから、__[デバイス]__ を選択します。
 
-2.    **[リモート ロック]** をタップします。
+  ![[ホーム]、[すべてのアプリ]、[デバイス]、[ヘルプデスク]、[サインアウト] の各ボタンが示され、画面の左側にサイド メニューが展開されたポータル Web サイトのイメージ。](/media/iwp-expanded-sidebar.png)
 
-    ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+2. __[デバイス]__ ページで、ロックするデバイスの名前を選択します。
 
-3.    デバイスをロックしようとしていることを伝える警告が画面に表示されます。 **[リモート ロック]** をタップすると、ポータル サイト Web サイトはデバイスのロックを試行します。
+  ![リスト表示されていないデバイスの登録または不明なデバイスの識別を求めるバナーの上に&2; つの不明なデバイスが示された、[デバイス] ページのスクリーンショット。](./media/macOS_enroll_002_tap_here_banner.png)
 
-    **[リモート ロック]** をタップすると、"リモート ロック保留中" というメッセージが表示されます。  リモート ロックが成功した場合、状態が ”リモート ロック成功” に変わります。
+3.    デバイスがポップアップ ウィンドウに開きます。 **[リモート ロック]** ボタンをタップします。
+
+    ![[名前の変更]、[削除]、[デバイスのリセット]、[パスコードのリセット]、[リモート ロック] を含む、ポータル Web サイト上の選択されたデバイスに対するすべてのオプション。 ](./media/iwp-screen-with-all-options.png)
+
+4.    デバイスをロックしようとしていることを伝える警告が画面に表示されます。 **[リモート ロック]** をタップすると、ポータル サイト Web サイトはデバイスのロックを試行します。
+
+    **[リモート ロック]** を選択すると、"リモート ロック保留中" というメッセージが表示されます。  リモート ロックが成功した場合、状態が ”リモート ロック成功” に変わります。
 
     リモート ロックの状態は次の&3; つの場所に表示されます。
 
@@ -62,9 +69,4 @@ ms.openlocfilehash: a888592c4bf4f71cba44cebadb5cf90d2cc9aef6
 デバイスが見つかった場合は、パスコードを入力するだけでリモート ロックしたデバイスのロックを解除できます。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 
