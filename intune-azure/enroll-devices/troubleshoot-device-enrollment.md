@@ -1,5 +1,6 @@
 ---
-title: "デバイス登録に関するトラブルシューティング | Intune Azure プレビュー | Microsoft Docs"
+title: "デバイス登録に関するトラブルシューティング"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: デバイス登録に関するトラブルシューティング方法について説明します。"
 keywords: 
 author: staciebarker
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: 8d56b6600ca86faabbb50d29405969385eb29940
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 9fff350240e4313994056bc5aebf82e204ab3c62
+ms.lasthandoff: 02/18/2017
 
 
 ---
