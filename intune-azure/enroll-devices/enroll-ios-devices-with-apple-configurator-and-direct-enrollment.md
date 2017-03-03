@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: d335572ae2bc5ce74532de281658d06903f995ee
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: b464a07e701797d39b7f9f50d1854a9a2682ac8e
+ms.openlocfilehash: 3208e964f2676ebcc1e54e29f039c4965c20238f
+ms.lasthandoff: 03/01/2017
 
 
 ---
@@ -44,7 +44,7 @@ iOS デバイスの登録を設定する前に、以下の前提条件を満た�
 - [ドメインを構成する](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [MDM 機関を設定する](set-mdm-authority.md)
 - [グループの作成](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- [ポータル サイト アプリを構成する](/intune-azure/manage-apps/company-portal-app.md)
+- [ポータル サイト アプリを構成する](/intune-azure/manage-apps/company-portal-app)
 - [Office 365 ポータル](http://go.microsoft.com/fwlink/p/?LinkId=698854)でユーザー ライセンスを割り当てる
 - [Apple MDM プッシュ証明書を取得する](get-an-apple-mdm-push-certificate.md)
 - iOS デバイスに物理的にアクセスできることを確認する

@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 76001bd12e5f665eb1a5a0f0fe5442f0a6fedb8c
-ms.openlocfilehash: d653d3eb1d71d30e2bf1104b1d55bfbcf2725c13
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 57a067684ccada3df4faa15e6bf009b39caf5c94
+ms.openlocfilehash: 5732f52474a8b2b61426e349647f88f4f142d2e2
+ms.lasthandoff: 03/02/2017
 
 
 ---
@@ -43,7 +43,8 @@ ms.lasthandoff: 02/18/2017
 - [PIN またはパスワードを設定する](set-your-pin-or-password-android.md)
 - [会社の仮想プライベート ネットワーク (VPN) をインストールする](install-your-companys-virtual-private-network-VPN-android.md)
 - [デバイスがロックされるまでの時間を設定する](set-the-amount-of-time-before-your-device-is-locked-android.md)
-- [紛失したまたは盗難にあったデバイスをリセット (消去) する](reset-erase-your-lost-or-stolen-device-android.md)
+<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
+- [紛失したまたは盗難にあったデバイスをリセット (消去) する](reset-erase-your-device-cpwebsite.md)
 - [Microsoft による使用状況データの収集を無効にする](turn-off-microsoft-usage-data-collection-android.md)
 - [Intune からデバイスの登録を解除する](unenroll-your-device-from-intune-android.md)
 - [利用規約を拒否した場合にデバイスの登録を解除する](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
