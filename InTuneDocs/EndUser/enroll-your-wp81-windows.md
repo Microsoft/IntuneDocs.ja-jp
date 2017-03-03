@@ -1,21 +1,25 @@
 ---
-title: "Intune に Windows Phone 8.1 デバイスを登録する | Microsoft Intune"
+title: "Intune に Windows Phone 8.1 デバイスを登録する | Microsoft Docs"
 description: "Intune に Windows Phone 8.1 デバイスを登録する方法について説明します"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: b4569ec01a0b8c6a8ec06cb9036d7753e34b38d2
+ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
+ms.openlocfilehash: ad18e2bdfe8a045077a1c91abfcc123afec72cb9
 
 
 ---
@@ -23,7 +27,7 @@ ms.openlocfilehash: b4569ec01a0b8c6a8ec06cb9036d7753e34b38d2
 
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Intune に Windows Phone 8.1 デバイスを登録する
 
-職場または学校が Microsoft Intune を使用している場合は、お使いのデバイスを登録して、会社の電子メール、ファイル、またその他のリソースにアクセスできます。 デバイスを登録すると、組織は会社のデータをセキュリティで保護することができます。 登録の詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)」と「[What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)」 (IT 管理者がお客様のデバイスに関して確認できる情報と確認できない情報) を参照してください。
+職場または学校が Microsoft Intune を使用している場合は、お使いのデバイスを登録して、会社の電子メール、ファイル、またその他のリソースにアクセスできます。 デバイスを登録すると、組織は会社のデータをセキュリティで保護することができます。 登録の詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)」と「[What your IT administrator can and can't see on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)」 (IT 管理者がお客様のデバイスに関して確認できる情報と確認できない情報) を参照してください。
 
 
 Intune に Phone 8.1 デバイスを登録するには、自分の職場または学校に当てはまる手順に従ってください。
@@ -87,6 +91,6 @@ IT 管理者によって、登録時にポータル サイトがインストー�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

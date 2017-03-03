@@ -1,11 +1,11 @@
 ---
-title: "Android for Work 向けのコンプライアンス ポリシー設定 | Microsoft Intune"
+title: "Android for Work のコンプライアンス設定 | Microsoft Docs"
 description: "このトピックでは、Android for Work と互換性のある Android デバイスのデバイス コンプライアンス ポリシーの設定について説明します。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/13/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 050da562fb03bbc32c4a7c293b6faad4f87ab78e
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 1b84b7137bd01b695d20bea67d77c694f2533b4e
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: 050da562fb03bbc32c4a7c293b6faad4f87ab78e
 
 # <a name="compliance-policy-settings-for-android-for-work-devices-in-microsoft-intune"></a>Microsoft Intune での Android for Work デバイス向けのコンプライアンス ポリシー設定
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 このトピックで説明するポリシー設定は、Android for Work デバイスに適用されます。
 
@@ -68,7 +69,7 @@ ms.openlocfilehash: 050da562fb03bbc32c4a7c293b6faad4f87ab78e
 - **USB デバッグの無効化を必須にする**: Android for Work デバイスでは、USB デバッグは無効にされているので、この設定を構成する必要はありません。
 
 - **最低限の Android セキュリティ パッチ レベル**: この設定を使用して、Android の修正プログラムの最小レベルを指定します。  修正プログラムがこのレベルに達していないデバイスは非対応になります。 日付は YYYY-MM-DD の形式で指定する必要があります。
-- **デバイス脅威保護を有効にすることを必須とする**: この設定は、Lookout MTP ソリューションからのリスク評価をコンプライアンスの条件とする場合に使用します。 最大許容脅威レベルとして次のいずれかを選択します。
+- **デバイス脅威保護を有効にすることを必須とする**: この設定は、デバイス脅威保護ソリューションからのリスク評価をコンプライアンスの条件とする場合に使用します。 最大許容脅威レベルとして次のいずれかを選択します。
 
   - **[なし (セキュリティ保護)]**: これはセキュリティ上最も安全です。 デバイスにはいかなる脅威も存在できないことを意味します。 デバイスで何らかのレベルの脅威が検出された場合、非準拠と評価されます。
   - **[低]**: 存在する脅威が低レベルの場合のみ、デバイスは準拠として評価されます。 低レベルより高い脅威が存在する場合、デバイスは非準拠状態になります。
@@ -78,13 +79,13 @@ ms.openlocfilehash: 050da562fb03bbc32c4a7c293b6faad4f87ab78e
   詳細については、「[コンプライアンス ポリシーでデバイスの脅威防御ルールを有効にする](enable-device-threat-protection-rule-in-compliance-policy.md)」を参照してください。
 
 ## <a name="device-property-settings"></a>デバイスのプロパティの設定
-- **必要な最小 OS バージョン:** デバイスが最小 OS バージョンの要件を満たしていない場合、非準拠として報告されます。
+- **必要な最小 OS バージョン**: デバイスが最小オペレーティング システム (OS) バージョンの要件を満たしていない場合、非準拠として報告されます。
   アップグレード方法に関する情報のリンクが表示されます。 エンド ユーザーは、デバイスのアップグレードを行うことを選択できます。アップグレード後は、会社のリソースにアクセスできます。
 
-- **許可される最大 OS バージョン:** ルールに指定された OS バージョンより新しいバージョンの OS がデバイスで使用されている場合、会社のリソースへのアクセスがブロックされ、IT 管理者に問い合わせることをユーザーに促すメッセージが表示されます。 対象の OS バージョンを許可するようにルールが変更されるまで、このデバイスを使用して会社のリソースへのアクセスすることはできません。
+- **許可される最大 OS バージョン**: ルールに指定されたものより新しいバージョンのオペレーティング システム (OS) がデバイスで使用されている場合、会社のリソースへのアクセスがブロックされ、IT 管理者に問い合わせることをユーザーに促すメッセージが表示されます。 対象のオペレーティング システム バージョンを許可するようにルールが変更されるまで、このデバイスを使用して会社のリソースへのアクセスすることはできません。
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

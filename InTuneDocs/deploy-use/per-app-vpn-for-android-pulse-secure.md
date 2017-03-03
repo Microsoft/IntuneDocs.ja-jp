@@ -1,11 +1,11 @@
 ---
-title: "Android 用の Pulse Secure を使用したアプリごとの VPN | Microsoft Intune"
+title: "Android 用の Pulse Secure を使用したアプリごとの VPN | Microsoft Docs"
 description: "Intune で管理する、アプリごとの VPN プロファイルを Android デバイスに作成できます。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
-ms.openlocfilehash: ace975b8a53e3ccd8b754019ec7f155c563339b5
+ms.sourcegitcommit: b268bb16b7fc7e38021441bb16517e754b5e395f
+ms.openlocfilehash: 4a52d714d47a0b3af56be6eb5096fffae160e435
+ms.lasthandoff: 01/13/2017
 
 
 ---
 
 # <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>カスタム ポリシーを使用して、Android デバイスにアプリごとの VPN プロファイルを作成する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune で管理する、アプリごとの VPN プロファイルを Android 5.0 以降のデバイスに作成できます。 最初に、Pulse Secure または Citrix 接続の種類を使用する VPN プロファイルを作成します。 次に、特定のアプリと VPN プロファイルを関連付けるカスタム構成ポリシーを作成します。 
 
@@ -28,7 +32,7 @@ Android デバイスまたはユーザー グループにポリシーをデプ�
 
 > [!NOTE]
 >
-> このプロファイルに対しては Pulse Secure 接続タイプのみがサポートされます。
+> このプロファイルに対しては Pulse Secure 接続タイプと Citrix 接続タイプのみがサポートされます。
 
 
 ### <a name="step-1-create-a-vpn-profile"></a>手順 1: VPN プロファイルを作成する
@@ -50,7 +54,7 @@ Android デバイスまたはユーザー グループにポリシーをデプ�
    4. 設定の名前を入力します。
    5. **[データ型]** に **[文字列]** を指定します。
    6. **[OMA-URI]** には、**./Vendor/MSFT/VPN/Profile/*Name*/PackageList** の文字列を指定します。ここの *Name* は手順 1 でメモした VPN プロファイル名です。 この例では、文字列は **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList** になります。
-   7.   **[値]** には、プロファイルと関連付けるセミコロンで区切られたパッケージの一覧を入力します。 たとえば、Excel と Google Chrome ブラウザーで VPN 接続を使用するには、「**com.microsoft.office.excel;com.android.chrome**」と入力します。
+   7.    **[値]** には、プロファイルと関連付けるセミコロンで区切られたパッケージの一覧を入力します。 たとえば、Excel と Google Chrome ブラウザーで VPN 接続を使用するには、「**com.microsoft.office.excel;com.android.chrome**」と入力します。
 
 ![Android のアプリごとの VPN カスタム ポリシーの例](./media/android_per_app_vpn_oma_uri.png)
 
@@ -70,14 +74,9 @@ Android デバイスまたはユーザー グループにポリシーをデプ�
 *両方*のポリシーは、*同じ* Intune グループに展開する必要があります。
 
 1.  **[ポリシー]** ワークスペースで、展開するポリシーを選び、**[展開の管理]** を選びます。
-2.   **[展開の管理]** ダイアログ ボックスで、次の操作を実行します。
+2.  **[展開の管理]** ダイアログ ボックスで、次の操作を実行します。
     -   **ポリシーを展開するには**、ポリシーを展開する 1 つ以上のグループを選択して、**[追加]** > **[OK]** の順に選択します。
     -   **ポリシーを展開せずにダイアログ ボックスを閉じるには**、**[キャンセル]** を選択します。
 
- **[ポリシー]** ワークスペースの **[概要]** ページに表示されるステータスの概要とアラートを見ると、注意が必要なポリシーの問題を識別できます。 ステータスの概要は **[ダッシュボード]** ワークスペースにも表示されます。
-
-
-
-<!--HONumber=Nov16_HO2-->
-
+**[ポリシー]** ワークスペースの **[概要]** ページに表示されるステータスの概要とアラートを見ると、注意が必要なポリシーの問題を識別できます。 ステータスの概要は **[ダッシュボード]** ワークスペースにも表示されます。
 

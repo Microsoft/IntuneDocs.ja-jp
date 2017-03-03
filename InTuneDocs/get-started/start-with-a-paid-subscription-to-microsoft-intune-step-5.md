@@ -1,11 +1,11 @@
 ---
-title: "ユーザーとデバイスを編成するグループを作成する | Microsoft Intune"
+title: "ユーザーとデバイスを編成するグループを作成する | Microsoft Docs"
 description: "Intune サブスクリプションのユーザーとグループを作成します"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,21 @@ ms.technology:
 ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 85b2e7c50f4ea1e07bd1474e3902cebcbccc1467
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 1b14ec6330c512981025a2910dbd222fa4d7cf7f
 
 
 ---
 
 
 # <a name="create-groups-to-organize-users-and-devices"></a>ユーザーとデバイスを編成するグループを作成する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+このトピックでは、管理者が Intune でユーザーのグループを作成する方法を説明します。
+
 Intune の [グループ] を使用すると、デバイスとユーザーを柔軟に管理できます。 グループは、組織ごとのニーズ (地理的位置、部門、ハードウェアの特性など) に合わせて設定できます。一連のユーザーに対するポリシーの展開から、一連のデバイスに対するアプリケーションの展開まで、まざまな管理タスクをそれらのグループを使って実行することができます。
 
 ## <a name="group-management-moving-to-azure-ad"></a>Azure AD へのグループ管理の移行
@@ -84,6 +90,6 @@ Intune の [グループ] を使用すると、デバイスとユーザーを柔
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

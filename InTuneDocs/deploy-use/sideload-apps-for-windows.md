@@ -1,5 +1,5 @@
 ---
-title: "Windows および Windows Phone 用アプリのサイドロード |Microsoft Intune"
+title: "Windows および Windows Phone 用アプリのサイドロード | Microsoft Docs"
 description: "Intune を使用して展開できるように、基幹業務アプリに署名する方法について説明します。"
 keywords: 
 author: robstackmsft
@@ -10,13 +10,16 @@ ms.prod:
 ms.service: 
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 938e3a1914f379d115bf24ebd7d990f6e1d319a9
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2e8220f850e3b38a24aa4c48bcc3a59088251c24
 
 
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune を使用して Windows デバイスに展開できるように基幹業務アプリに署名する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune 管理者は、ポータル サイト アプリを含め、基幹業務 (LOB) アプリを Windows および Windows 10 Mobile デバイスに展開することができます。 Windows 10 および Windows 10 Mobile デバイスに .appx または .xap アプリを展開する場合や、Windows 8.1 または Windows Phone 8.1 デバイスに LOB アプリを展開する場合は、**Symantec エンタープライズ モバイル コード署名証明書**を取得する必要があります。 これらの各 Windows デバイスのアプリで信頼されているのは Symantec 証明書のみです。 Windows 10 アプリと "ユニバーサル" アプリの場合は独自の証明機関を使用できます。 この証明書は、以下の操作を行うために必要です。
 

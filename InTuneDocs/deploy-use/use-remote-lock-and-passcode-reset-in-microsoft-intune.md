@@ -1,34 +1,41 @@
 ---
-title: "リモート ロックとパスコードのリセット | Microsoft Intune"
+title: "リモート ロックとパスコードのリセット | Microsoft Docs"
 description: "Intune には、リモート ロック機能とパスコードのリセット機能の両方が備わっています。"
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: NathBarn
+ms.author: NathBarn
 manager: angrobe
-ms.date: 11/08/2016
+ms.date: 02/16/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: aae739b5ea8640449f180535a6d8f1550c7ae228
-ms.openlocfilehash: 8dc7f1c7eb32828854b4e2309c915f4fd0cba9a2
+ms.sourcegitcommit: 87589903acd3c2e7c45d62c619571a1273e7fb76
+ms.openlocfilehash: 8de91a0e0640b9c0fb281686d4ecd4983134d4af
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>リモート ロックとパスコードのリセットによってデバイスを保護する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune には、リモート ロック機能とパスコードのリセット機能が備わっています。
 
 ## <a name="lock-a-device-remotely"></a>デバイスのリモート ロック
-ユーザーがデバイスを紛失した場合は、リモートでデバイスをロックできます。 次の表に、各モバイル プラットフォームのリモート ロックの動作を示します。
+ユーザーがデバイスを紛失した場合は、リモートでデバイスをロックできます。 リモート ロックを利用するには、PIN またはパスコードをデバイスに設定しておく必要があります。
+
+次の表に、各モバイル プラットフォームのリモート ロックの動作を示します。
 
 |プラットフォーム|リモート ロック|
 |------------|---------------|
 |macOS|サポートされていません|
 |iOS|サポートされています|
 |Android|サポート|
-|Windows 10 および Windows 10 Mobile|サポート|
+|Windows 10 (モバイル)|サポート|
+|Windows 10 (デスクトップ)|サポートされていません|
 |Windows Phone 8 および Windows Phone 8.1|サポート|
 |Windows RT 8.1 および Windows RT|デバイスの現在のユーザーが、デバイスを登録したユーザーと同じ場合にはサポートされます。|
 |Windows 8.1|デバイスの現在のユーザーが、デバイスを登録したユーザーと同じ場合にはサポートされます。|
@@ -79,6 +86,6 @@ Microsoft Intune には、リモート ロック機能とパスコードのリ�
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

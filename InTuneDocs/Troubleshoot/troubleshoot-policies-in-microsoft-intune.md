@@ -1,11 +1,11 @@
 ---
-title: "ポリシーのトラブルシューティング | Microsoft Intune"
+title: "ポリシーのトラブルシューティング | Microsoft Docs"
 description: "ポリシー構成に関する問題のトラブルシューティングを行います。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,20 +13,24 @@ ms.technology:
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
-ms.openlocfilehash: fbc18b12c00a4b61f7419731c6b4306b583638cc
+ms.sourcegitcommit: b28590bdb5a9387331354c8e5766975e3188bb91
+ms.openlocfilehash: e314d247c964b98c4159ca05cd746862d1b0db2e
+ms.lasthandoff: 01/13/2017
 
 
 ---
 
-# Microsoft Intune のポリシーのトラブルシューティング
+# <a name="troubleshoot-policies-in-microsoft-intune"></a>Microsoft Intune のポリシーのトラブルシューティング
 
-Intune でのポリシーの展開と管理に関して問題がある場合は、ここから始めてください。 このトピックでは、発生する可能性がある一般的な問題とその解決策が示されています。
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-## 一般的な問題
+Intune ポリシーの展開と管理に関して問題がある場合は、ここから始めてください。 このトピックでは、発生する可能性がある一般的な問題とその解決策が示されています。
 
-### 展開したポリシーはデバイスに適用されていますか。
+## <a name="general-issues"></a>一般的な問題
+
+### <a name="was-a-deployed-policy-applied-to-the-device"></a>展開したポリシーはデバイスに適用されていますか。
 **問題:** ポリシーが正しく適用されているかどうかがわかりません。
 
 Intune の管理コンソールでは、すべてのデバイスの **[デバイスのプロパティ]**の下に [ポリシー] タブがあります。 各ポリシーには、 **[想定値]** と **[状態]**があります。 [想定値] は、ポリシーを割り当てるときに実現しようとした内容です。 [状態] は、ハードウェアとオペレーティング システムの制限事項と要件だけでなく、デバイスに適用されるすべてのポリシーがまとめて考慮されたときに実際に適用される内容です。 表示される状態は次のとおりです。
@@ -49,27 +53,27 @@ Intune の管理コンソールでは、すべてのデバイスの **[デバイ
 > 制限レベルが異なる 2 つのポリシーを同じデバイスまたはユーザーに適用すると、より厳しい方のポリシーが実際に適用されます。
 
 
-## 登録済みデバイスに関する問題
+## <a name="issues-with-enrolled-devices"></a>登録済みデバイスに関する問題
 
-### アラート: アクセス ルールを Exchange に保存できませんでした
+### <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>アラート: アクセス ルールを Exchange に保存できませんでした
 **問題**: 管理コンソールが「 **アクセス ルールを Exchange に保存できませんでした** 」のアラートを受信する。
 
 管理コンソールの下の [Exchange On-Premises ポリシー] ワークスペースでポリシーを作成し、O365 を使用すると、構成されたポリシー設定が Intune によって適用されません。 アラートのポリシー ソースを確認してください。  [Exchange On-Premises ポリシー] ワークスペースで古いルールを削除します。古いルールはオンプレミスの Exchange で使用する、Intune 内のグローバルの Exchange ルールであり、O365 に関連しないためです。 次に、O365 の新しいポリシーを作成します。
 
-### 各種登録済みデバイスのセキュリティ ポリシーを変更できない
+### <a name="cannot-change-security-policy-for-various-enrolled-devices"></a>各種登録済みデバイスのセキュリティ ポリシーを変更できない
 Windows Phone デバイスから、MDM または EAS で設定されたセキュリティ ポリシーのセキュリティを一度設定した後に緩くすることはできません。 たとえば、 **パスワードの最小文字数** を 8 に設定し、次に 4 に減らしてみます。 より制限の厳しいポリシーが、デバイスに既に適用されています。
 
 ポリシーを安全度の低い値に変更する場合、デバイスのプラットフォームによっては、セキュリティ ポリシーをリセットしなければならない場合があります。
-たとえば、Windows で、デスクトップを右からスワイプして、**[チャーム]** バーを開き、**[設定]** &gt; **[コントロール パネル]** の順にクリックします。   **[ユーザー アカウント]** アプレットを選択します。
+たとえば、Windows で、デスクトップを右からスワイプして、**[チャーム]** バーを開き、**[設定]** &gt; **[コントロール パネル]** の順にクリックします。  **[ユーザー アカウント]** アプレットを選択します。
 左側のナビゲーション メニューの下部に、 **[セキュリティ ポリシーのリセット]** リンクがあります。 このリンクを選択し、**[ポリシーのリセット]** ボタンを選択します。
 Android、Windows Phone 8.1 以降、iOS などのその他の MDM デバイスでは、制限の緩いポリシーを適用するにはいったんデバイスを削除して、サービスに再登録しなければならない場合があります。
 
-## Intune ソフトウェア クライアントを実行している PC に関する問題
+## <a name="issues-with-pcs-that-run-the-intune-software-client"></a>Intune ソフトウェア クライアントを実行している PC に関する問題
 
-### policyplatform.log に記録される Microsoft Intune ポリシー関連エラー
+### <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>policyplatform.log に記録される Microsoft Intune ポリシー関連エラー
 Intune ソフトウェア クライアントで管理されている Windows PC では、policyplatform.log ファイルに記録されるポリシー エラーの原因としては、デバイスの Windows ユーザー アカウント制御 (UAC) で既定値以外が設定されていることが考えられます。 いくつかの既定値以外の UAC 設定は、Microsoft Intune クライアントのインストールやポリシーの実行に影響を与えます。
 
-#### UAC の問題を解決するには
+#### <a name="to-resolve-uac-issues"></a>UAC の問題を解決するには
 
 1.  「[Retire devices from Microsoft Intune management](/intune/deploy-use/retire-devices-from-microsoft-intune-management)」 (Microsoft Intune の管理からデバイスを削除する) の説明に従って、コンピューターを削除します。
 
@@ -82,7 +86,7 @@ Intune ソフトウェア クライアントで管理されている Windows PC 
 
 4.  通知のスライダーを既定の設定に移動します。
 
-### エラー: コンピューター 0x80041013 から値を取得できません
+### <a name="error-cannot-obtain-the-value-from-the-computer-0x80041013"></a>エラー: コンピューター 0x80041013 から値を取得できません
 これは、ローカル システム上の時間が 5 分以上ずれている場合に発生します。 ローカル コンピューターの時間が同期されていない場合は、タイム スタンプが有効でないためセキュリティで保護されたトランザクションが失敗します。
 
 この問題を解決するには、ローカル システムの時間をインターネット時間か、またはネットワーク上のドメイン コントローラーに設定された時間にできる限り近い時間に設定します。
@@ -94,11 +98,6 @@ Intune ソフトウェア クライアントで管理されている Windows PC 
 
 
 
-### 次のステップ
+### <a name="next-steps"></a>次のステップ
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
-
-
-
-<!--HONumber=Oct16_HO2-->
-
 

@@ -1,12 +1,12 @@
 ---
 
-title: "Android for Work ポリシーの設定 | Microsoft Intune"
+title: "Android for Work ポリシーの設定 | Microsoft Docs"
 description: "Intune で管理する Android for Work デバイスの設定と機能を制御するポリシーを作成します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,19 @@ ms.technology:
 ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 748b9b74b65e8d17bb3956d0ce1859c160d8c10a
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
 
 
 ---
 
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Microsoft Intune での Android for Work ポリシー設定
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Intune には、Android for Work デバイスで構成できるさまざまな全般設定が組み込まれています。
+Intune には、[Android for Work デバイス](android-for-work.md)で構成できるさまざまな全般設定が組み込まれています。
 
 ## <a name="general-configuration-policy"></a>全般構成ポリシー
 
@@ -40,7 +41,7 @@ Intune **Android for Work の全般構成ポリシー**を使用して、実際�
 
 |設定の名前|説明|
 |----------------|-|
-|**モバイル デバイスのロックを解除するパスワードを要求する**|管理対象デバイスでパスワードを必須にするかどうかを指定します。 次の中から選択します。<br><br>- **[Complex]** (複合) – 少なくとも 1 文字の英字、数字、および記号を含める必要があります<br>- **[英数字]** - 少なくとも 1 文字の数字と 1 文字の英字を含める必要があります<br>- **[Alphabetic]** (英字) - 少なくとも 1 文字の英字または記号を含める必要があります<br>- **[Numeric complex]** (数値複素数) – 数値の繰り返しまたは連続がないようにする必要があります<br>- **[数値]**<br><br>この設定が有効な場合、複雑さの要件はありません。|
+|**モバイル デバイスのロックを解除するパスワードを要求する**|管理対象デバイスでパスワードを必須にするかどうかを指定します。 次の中から選択します。<br><br>- **[Complex]** (複合) – 少なくとも&1; 文字の英字、数字、および記号を含める必要があります<br>- **[英数字]** - 少なくとも&1; 文字の数字と&1; 文字の英字を含める必要があります<br>- **[Alphabetic]** (英字) - 少なくとも&1; 文字の英字または記号を含める必要があります<br>- **[Numeric complex]** (数値複素数) – 数値の繰り返しまたは連続がないようにする必要があります<br>- **[数値]**<br><br>この設定が有効な場合、複雑さの要件はありません。|
 |**最小のパスワードの長さ**|パスワードの最小文字数または桁数を指定します。|
 |**デバイスがロックされるまでの非アクティブな時間**|デバイスが自動的にロックされるまでのユーザーが操作していない分数を指定します。|
 |**Smart Lock やその他の信頼できるエージェントを許可する**<br>(Android 6 以降)|互換性のある Android デバイスで Smart Lock 機能を制御できます。 信頼エージェントとも呼ばれるこの電話機能では、デバイスが信頼できる場所にある場合 (デバイスが特定の Bluetooth デバイスに接続したときや、NFC タグの近くにある場合など)、デバイスのロック画面のパスワードを無効化またはバイパスすることができます。この設定を使用して、ユーザーが SmartLock を構成することを禁止できます。|
@@ -60,15 +61,11 @@ Intune **Android for Work の全般構成ポリシー**を使用して、実際�
 |**アプリの既定のアクセス許可ポリシーを設定する**<br>(Android 6 以降)|仕事用プロファイル内のすべてのアプリに対して既定のアクセス許可ポリシーを設定します。|
 
 
-
-
 ## <a name="custom-policy-settings"></a>カスタム ポリシー設定
 Microsoft Intune **Android for Work カスタム構成ポリシー**を使用して、Android for Work デバイスで各機能の制御に使用できる OMA-URI 設定を展開します。 これらの設定は、多くのデバイス製造元がデバイスの機能を制御するために使用する標準の設定です。
 
 この機能は、Intune ポリシーで構成できない Android 設定を展開できるようにするためのものです。
-
-> [!NOTE]
-> 現時点で Android カスタム ポリシーは、事前共有キーを含む、Android デバイスの Wi-Fi 設定の構成のみをサポートしています。
+現時点では、Intune でサポートされる Android カスタム ポリシーの数は限られています。 構成できるポリシーを見つける場合は、このトピックの例を参照してください。
 
 ### <a name="general-settings"></a>全般設定
 
@@ -97,6 +94,6 @@ Microsoft Intune **Android for Work カスタム構成ポリシー**を使用し
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO1-->
 
 

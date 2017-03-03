@@ -1,28 +1,31 @@
 ---
-title: "会社の仮想プライベート ネットワーク (VPN) をインストールする | Microsoft Intune"
+title: "会社の仮想プライベート ネットワーク (VPN) をインストールする | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed4a9f15-72fb-4171-84cb-63d2f1a6d04c
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: f82bc74083f522498425af3a01bf11300b8133ea
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 009b86dd581b01464b72bdbd0107d08ee6645f03
 
 
 ---
 
 
-# <a name="install-your-companys-virtual-private-network-vpn"></a>会社の仮想プライベート ネットワーク (VPN) をインストールする
+# <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>会社の仮想プライベート ネットワーク (VPN) をインストールする方法
 
 ユーザーが会社のリソースに接続できるように VPN アプリケーションが IT 管理者によって構成されている場合は、VPN アプリをインストールする必要があることを知らせる通知が Android デバイスに表示されます。 VPN アプリをインストールするには、次の手順を実行します。
 
@@ -37,8 +40,6 @@ ms.openlocfilehash: f82bc74083f522498425af3a01bf11300b8133ea
 
 
 
-
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO5-->
 
 

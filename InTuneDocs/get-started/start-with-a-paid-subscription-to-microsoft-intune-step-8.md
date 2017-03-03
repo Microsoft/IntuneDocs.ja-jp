@@ -1,11 +1,11 @@
 ---
-title: "デバイス登録を有効にする | Microsoft Intune"
+title: "デバイス登録を有効にする | Microsoft Docs"
 description: "MDM 機関を設定し、iOS、Windows、Android、および Mac の各デバイスの登録を有効にします。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,20 @@ ms.technology:
 ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 031cf995da4fa46b244b65a6b1c51b6a1aa00d9f
-ms.openlocfilehash: 8c3076b26844669f9927478b5847f88f2265c6c9
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
 
 
 ---
 
-# <a name="enroll-mobile-devices-and-install-an-app"></a>モバイル デバイスを登録してアプリをインストールする
+# <a name="enable-enrollment-for-mobile-devices"></a>モバイル デバイスの登録を有効にする
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+このトピックでは、Intune 管理者がモバイル デバイスの登録を有効にする方法について説明します。 電話で Intune の使用する際のヘルプについては、[管理デバイスを使用した作業の完了](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions)に関するページを参照してください。 
+
 Intune でモバイル デバイス管理をセットアップするには、まず、*モバイル デバイス管理機関*を設定する必要があります。この機関は、アカウントに関連付けられているデバイスを管理できるサービスを特定します。 このガイダンスでは、System Center Configuration Manager ではなく、Intune サービスを使用することを想定します。 MDM 機関を設定したら、デバイス プラットフォームの管理を有効にし、デバイスをポータル サイト アプリに登録できます。
 
 ## <a name="enable-device-enrollment"></a>デバイスの登録を可能にする
@@ -43,7 +49,7 @@ Intune では、会社の要件に応じて、さまざまな方法でデバイ�
 
 管理対象のデバイス プラットフォームに対してデバイス管理を有効にします。 要件はプラットフォームによって異なります。
 
--  [iOS と macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [iOS と macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -  [Windows PC](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -  [Windows 10 Mobile と Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
@@ -66,6 +72,6 @@ Intune では、会社の要件に応じて、さまざまな方法でデバイ�
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

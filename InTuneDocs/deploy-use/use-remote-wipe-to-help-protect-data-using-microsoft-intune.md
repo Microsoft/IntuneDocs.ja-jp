@@ -1,11 +1,11 @@
 ---
-title: "リモート ワイプを使用したデータ保護 | Microsoft Intune"
+title: "リモート ワイプを使用したデータ保護 | Microsoft Docs"
 description: "Intune には会社の重要なデータを削除し、数多くの会社リソースへのアクセスを削除する、選択的なワイプ機能とフル ワイプ機能が備わっています。"
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: cbfdb0e5db6862fcf046f42b85b8c9aabbba8721
+ms.sourcegitcommit: 7da3108cbc3185cd40c1ca9b52545bbd4e46b21f
+ms.openlocfilehash: 043b5ccb611600bdf18ce93fccfa853f3994a860
 
 
 ---
 
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Microsoft Intune のフル ワイプまたは選択的ワイプを使用してデータを保護する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune 管理対象デバイスが不要になるか、別の目的で再利用するか、または紛失した場合、そのデバイスからアプリとデータをワイプできます。 そのための手段として Intune には、選択的ワイプ機能とフル ワイプ機能が備わっています。 ユーザーは、Intune に登録済みの個人所有デバイスの Intune ポータル サイト アプリからリモート デバイス ワイプ コマンドを発行することもできます。
 
   > [!NOTE]
@@ -72,9 +76,9 @@ Intune 管理対象デバイスが不要になるか、別の目的で再利用�
 
 3.  組織 ID がない場合は、Azure サブスクリプションを作成します。 有料アカウントを持っている場合は、作成時にクレジット カードや支払いは必要ありません (**[無料の Azure Active Directory の登録]** サブスクリプション リンクを選択します)。
 
-4.   **[Active Directory]** を選択し、組織を選択します。
+4.  **[Active Directory]** を選択し、組織を選択します。
 
-5.   **[ユーザー]** タブを選択します。
+5.  **[ユーザー]** タブを選択します。
 
 6.  削除するデバイスのユーザーを選択します。
 
@@ -114,10 +118,14 @@ Intune 管理対象デバイスが不要になるか、別の目的で再利用�
 |Wi-fi と VPN プロファイルの設定|削除されます。|削除されます。|
 |証明書プロファイルの設定|失効済みで、削除されていない証明書。|削除済みおよび失効済みの証明書。|
 |管理エージェント|デバイス管理者特権は無効になります。|デバイス管理者特権は無効になります。|
-|電子メール|Android 用の Microsoft Outlook アプリで受信された電子メールは削除されます。|Intune を介してプロビジョニングされている電子メール プロファイルは削除され、デバイスにキャッシュされた電子メールは削除されます。|
-|Outlook|iOS 用の Microsoft Outlook アプリで受信された電子メールは削除されます。</br>例外: Exchange がオンプレミスでホストされている場合は、電子メールは削除されません。|iOS 用の Microsoft Outlook アプリで受信された電子メールは削除されます。</br>例外: Exchange がオンプレミスでホストされている場合は、電子メールは削除されません。|
+|電子メール|該当なし Outlook の項目を参照してください。|Intune を介してプロビジョニングされている電子メール プロファイルは削除され、デバイスにキャッシュされた電子メールは削除されます。|
+|Outlook|Android 用の Microsoft Outlook アプリで受信された電子メールは削除されますが、これは Outlook が MAM ポリシーによって保護されている場合に限ります。 それ以外の場合、登録解除時に Outlook はワイプされません。</br>例外: Exchange がオンプレミスでホストされている場合は、電子メールは削除されません。|Android 用の Microsoft Outlook アプリで受信された電子メールは削除されますが、これは Outlook が MAM ポリシーによって保護されている場合に限ります。 それ以外の場合、登録解除時に Outlook はワイプされません。</br>例外: Exchange がオンプレミスでホストされている場合は、電子メールは削除されません。|
 |Azure Active Directory (AAD) の切断|AAD レコードは削除されます。|AAD レコードは削除されます。|
 |連絡先 | アプリケーションからネイティブ アドレス帳に直接同期された連絡先が削除されます。  ネイティブ アドレス帳から別の外部ソースに同期された連絡先はワイプできません。 <br /> <br />現時点では、Outlook アプリのみがサポートされています。|アプリケーションからネイティブ アドレス帳に直接同期された連絡先が削除されます。  ネイティブ アドレス帳から別の外部ソースに同期された連絡先はワイプできません。 <br /> <br />現時点では、Outlook アプリのみがサポートされています。
+
+**Android for Work**
+
+会社の Android デバイスで選択的ワイプを行うと、そのデバイスの仕事用のプロファイルのすべてのデータ、アプリケーション、および設定が削除されます。 これによって、そのデバイスは Intune の管理対象ではなくなります。 Android for Work ではフル ワイプはサポートされていません。
 
 **Windows**
 
@@ -165,6 +173,6 @@ EFS の選択的ワイプで現在サポートされているデータとアプ�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "証明書プロファイルを構成する | Microsoft Intune"
+title: "証明書プロファイルを構成する | Microsoft Docs"
 description: "Intune 証明書プロファイルを作成する方法について説明します。"
 keywords: 
 author: robstackmsft
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: bafb86b1e388163c07110559e2a51bbe0dadc5ed
+ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
+ms.openlocfilehash: 70fba8f983efb245afc3fb19fa38287d1a84b1f4
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
 # <a name="configure-intune-certificate-profiles"></a>Intune 証明書プロファイルを構成する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 「[SCEP の証明書インフラストラクチャを構成する](configure-certificate-infrastructure-for-scep.md)」または「[PFX の証明書インフラストラクチャを構成する](configure-certificate-infrastructure-for-pfx.md)」の説明に従ってインフラストラクチャおよび証明書を構成した後、証明書プロファイルを作成できます。 その手順は次のとおりです。
 
 - **タスク 1** - 信頼されたルート CA 証明書をエクスポートする
@@ -72,7 +77,7 @@ Simple Certificate Enrollment Protocol (SCEP) または PKCS #12 (.PFX) 証明�
 
 
 ## <a name="task-3-create-scep-or-pfx-certificate-profiles"></a>**タスク 3** – SCEP または .PFX 証明書プロファイルを作成する
-信頼された CA 証明書プロファイルを作成した後、使用する各プラットフォーム用の SCEP または .PFX 証明書プロファイルを作成します。 SCEP 証明書プロファイルを作成するときは、その同じプラットフォームに対する信頼された証明書プロファイルを指定する必要があります。 これにより 2 つの証明書プロファイルがリンクされますが、それでも各プロファイルを個別にデプロイする必要があります。
+信頼された CA 証明書プロファイルを作成した後、使用する各プラットフォーム用の SCEP または .PFX 証明書プロファイルを作成します。 SCEP 証明書プロファイルを作成するときは、その同じプラットフォームに対する信頼された証明書プロファイルを指定する必要があります。 これにより&2; つの証明書プロファイルがリンクされますが、それでも各プロファイルを個別にデプロイする必要があります。
 
 ### <a name="to-create-an-scep-certificate-profile"></a>SCEP 証明書プロファイルを作成するには
 
@@ -99,7 +104,7 @@ Simple Certificate Enrollment Protocol (SCEP) または PKCS #12 (.PFX) 証明�
     >
     > **[サブジェクト名の形式]** で、**[カスタム]** を選択してサブジェクト名のカスタム形式を入力します (iOS のプロファイルのみ)。
     >
-    > カスタム形式で現在サポートされている 2 つの変数は、`Common Name (CN)` と `Email (E)` です。 これらの変数と静的文字列の組み合わせを使用することで、このようなサブジェクト名のカスタム形式を作成できます。
+    > カスタム形式で現在サポートされている&2; つの変数は、`Common Name (CN)` と `Email (E)` です。 これらの変数と静的文字列の組み合わせを使用することで、このようなサブジェクト名のカスタム形式を作成できます。
 
     >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
 
@@ -141,8 +146,8 @@ Simple Certificate Enrollment Protocol (SCEP) または PKCS #12 (.PFX) 証明�
 Intune の他のポリシーをデプロイするのと同じ方法で、証明書プロファイルをデプロイします。
 
 1.  **[ポリシー]** ワークスペースで、展開するポリシーを選び、**[展開の管理]** を選びます。
-2.   **[展開の管理]** ダイアログ ボックスで、次の操作を実行します。
-    -   **ポリシーをデプロイするには**、ポリシーをデプロイする 1 つ以上のグループを選択して、**[追加]**&gt;**[OK]** の順に選択します。
+2.  **[展開の管理]** ダイアログ ボックスで、次の操作を実行します。
+    -   **ポリシーをデプロイするには**、ポリシーをデプロイする&1; つ以上のグループを選択して、**[追加]**&gt;**[OK]** の順に選択します。
     -   **ポリシーをデプロイせずにダイアログ ボックスを閉じるには**、**[キャンセル]** を選択します。
 
 デプロイ済みポリシーを選択すると、ポリシー一覧の下部にデプロイについての詳細が表示されます。
@@ -154,9 +159,4 @@ Intune の他のポリシーをデプロイするのと同じ方法で、証明�
 -  [電子メール プロファイルを使用して会社の電子メールへのアクセスを構成する](configure-access-to-corporate-email-using-email-profiles-with-Microsoft-Intune.md)
 -  [Microsoft Intune での Wi-Fi 接続](wi-fi-connections-in-microsoft-intune.md)
 -  [Microsoft Intune での VPN 接続](vpn-connections-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

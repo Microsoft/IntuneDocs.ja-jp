@@ -1,11 +1,11 @@
 ---
-title: "iOS デバイス向けのコンプライアンス ポリシー設定 | Microsoft Intune"
+title: "iOS デバイス向けのコンプライアンス ポリシー設定 | Microsoft Docs"
 description: "このトピックでは、iOS デバイスのコンプライアンス ポリシーで設定できるルールと設定について説明します。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,18 @@ ms.technology:
 ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
-ms.openlocfilehash: 0ee697472a7cb553d78aef9977381197149c3177
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: f4867d18634add8cb6ffc61a4413618b1bea5a4b
 
 
 ---
 
 
 # <a name="compliance-policy-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune での iOS デバイス向けのコンプライアンス ポリシー設定
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 このトピックで説明するポリシー設定は、iOS 8.0 以降を実行しているデバイスに適用されます。
 
@@ -41,7 +44,7 @@ ms.openlocfilehash: 0ee697472a7cb553d78aef9977381197149c3177
 
 - **必要なパスワードの種類**: ユーザーが **[英数字]** パスワードまたは **[数字]** パスワードのどちらを作成する必要があるかを指定します。
 
-- **文字セットの最小数**: **[必要なパスワードの種類]** を **[英数字]** に設定した場合、この設定を使用して、パスワードに含める必要がある文字セットの最小数を指定します。 次の 4 つの文字セットがあります。
+- **文字セットの最小数**: **[必要なパスワードの種類]** を **[英数字]** に設定した場合、この設定を使用して、パスワードに含める必要がある文字セットの最小数を指定します。 次の&4; つの文字セットがあります。
   -   小文字
   -   大文字
   -   記号
@@ -82,6 +85,6 @@ ms.openlocfilehash: 0ee697472a7cb553d78aef9977381197149c3177
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO5-->
 
 

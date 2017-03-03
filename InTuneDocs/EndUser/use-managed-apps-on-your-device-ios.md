@@ -1,5 +1,5 @@
 ---
-title: "iOS デバイスで管理対象アプリを使用する | Microsoft Intune"
+title: "iOS デバイスで管理対象アプリを使用する | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: c051fe1128f2156943eac7eb4d4fa5983ed90771
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 6da5f6a3b017a93446011f8d59e73a4ea7730196
 
 
 ---
@@ -35,7 +38,7 @@ ms.openlocfilehash: c051fe1128f2156943eac7eb4d4fa5983ed90771
 ### <a name="how-do-i-get-managed-apps"></a>管理対象アプリを取得する方法
 管理対象アプリはいくつかの方法で取得できます。
 
--   デバイスが Microsoft Intune に登録されるときに、会社のポータル アプリまたは会社のポータル Web サイトからアプリをインストールするか、または IT 管理者がアプリをデバイスにインストールする場合があります。 登録については、「[Intune に iOS デバイスを登録する](enroll-your-device-in-intune-ios.md)」または「[Intune に Mac OS X デバイスを登録する](enroll-your-device-in-intune-mac-os-x.md)」を参照してください。
+-   デバイスが Microsoft Intune に登録されるときに、会社のポータル アプリまたは会社のポータル Web サイトからアプリをインストールするか、または IT 管理者がアプリをデバイスにインストールする場合があります。 登録については、「[Intune に iOS デバイスを登録する](enroll-your-device-in-intune-ios.md)」または「[Intune に macOS デバイスを登録する](enroll-your-device-in-intune-macos.md)」を参照してください。
 
 -   アプリ ストアからアプリをインストールし、Intune で管理されている会社のユーザー アカウントでサインインします。
 
@@ -65,6 +68,6 @@ ms.openlocfilehash: c051fe1128f2156943eac7eb4d4fa5983ed90771
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

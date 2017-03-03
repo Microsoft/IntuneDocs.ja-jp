@@ -1,11 +1,11 @@
 ---
-title: "モバイル デバイスの登録の前提条件 | Microsoft Intune"
+title: "モバイル デバイスの登録の前提条件 | Microsoft Docs"
 description: "モバイル デバイス管理 (MDM) の前提条件の設定、およびさまざまなオペレーティング システムに登録する準備。"
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: 270e6015e629c048b01b218793640888706d118e
+ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
+ms.openlocfilehash: fc97e1266c2e859104b21f3bf4ff24f33123f66a
+ms.lasthandoff: 02/22/2017
 
 
 ---
 
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Intune でのモバイル デバイス管理の前提条件
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 従業員が自分のモバイル デバイスを Intune に登録できるようにするには、以下の手順に従う必要があります。 会社所有のデバイスを管理する場合も同じ手順が必要です。
 
 |手順|説明|  
@@ -47,8 +52,7 @@ Configuration Manager で Intune を管理するには
 MDM 機関では、一連のデバイスを管理するためのアクセス許可を持つ管理サービスを定義します。 MDM 機関のオプションには、Intune 単体で使用するか、Intune を Configuration Manager と連携させて使用する方法があります。 Configuration Manager を管理機関として設定した場合、モバイル デバイス管理のために使用できるサービスは他にありません。
 
 >[!IMPORTANT]
-> モバイル デバイスの管理に Intune のみ (オンライン サービス) を使用するか、System Center Configuration Manager と Intune との統合 (オンプレミス ソフトウェア ソリューションをオンライン サービスと組み合わせて使用) を使用するのかについて、慎重に検討します。 モバイル デバイス管理機関は、設定後に変更することはできません。
-
+> モバイル デバイスの管理に Intune のみ (オンライン サービス) を使用するか、System Center Configuration Manager と Intune との統合 (オンプレミス ソフトウェア ソリューションをオンライン サービスと組み合わせて使用) を使用するのかについて、慎重に検討します。 モバイル デバイス管理機関の設定後は、Microsoft サポートの支援がないと変更できません。 詳細については、「[不適切な MDM 機関の設定を選択した場合の対処方法](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)」を参照してください。
 
 
 1.  [Microsoft Intune 管理コンソール](http://manage.microsoft.com)で、**[管理]** &gt; **[モバイル デバイス管理]** の順に選択します。
@@ -103,7 +107,7 @@ MDM 機関では、一連のデバイスを管理するためのアクセス許�
 |フィールド名|詳細情報|
     |----------|----------------|
     |テーマの色|ポータル サイトに適用するテーマの色を選択します。|
-    |会社のロゴを含める|このオプションを有効にすると、ポータル サイトに表示する会社のロゴをアップロードできます。 2 つのロゴをアップロードできます。1 つは、ポータル サイトの背景が白の場合に表示するロゴ、もう 1 つは、選択したテーマの色がポータル サイトの背景に使用されている場合に表示するロゴです。 各ロゴは、.png または .jpg ファイルにし、最大解像度が 400 x 100 ピクセルで、750 KB 以下のサイズにします。|
+    |会社のロゴを含める|このオプションを有効にすると、ポータル サイトに表示する会社のロゴをアップロードできます。 2 つのロゴをアップロードできます。1 つは、ポータル サイトの背景が白の場合に表示するロゴ、もう&1; つは、選択したテーマの色がポータル サイトの背景に使用されている場合に表示するロゴです。 各ロゴは、.png または .jpg ファイルにし、最大解像度が 400 x 100 ピクセルで、750 KB 以下のサイズにします。|
     |ポータル サイト アプリ用の背景を選択する|この設定は、ポータル サイト アプリの背景のみに適用されます。|
 
 
@@ -147,8 +151,63 @@ MDM 機関を設定したら、組織がサポートするオペレーティン�
 - [アプリを追加](add-apps.md)し、管理対象デバイスに[アプリを展開](deploy-apps.md)する
 - [デバイス コンプライアンス ポリシーを作成](introduction-to-device-compliance-policies-in-microsoft-intune.md)し、[コンプライアンスに基づいてアクセスを制限](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)する
 
+## <a name="what-to-do-if-you-choose-the-wrong-mdm-authority-setting"></a>不適切な MDM 機関の設定を選択した場合の対処方法
 
+不適切な MDM 機関の設定を選択したため、変更する必要がある場合は、必ず、Microsoft サポートにお問い合わせください。 自分で設定を変更することはできません。 Microsoft サポートにお問い合わせいただく前に、以下の情報を確認してください。この情報は、Microsoft サポートで変更する際に必要になります。
 
-<!--HONumber=Dec16_HO2-->
+MDM 機関をリセットする場合に適用できる方法は&3; つあります。 サポートを依頼する際に、状況に適用する方法を選択する必要があります。 リストに該当するものがない場合は、Microsoft サポートにお知らせください。
 
+Microsoft サポートが確認をお願いする情報は次のとおりです。
+
+- テナント ID: サービスへのログインに使用したドメイン (intune.onmicrosoft.com など)
+- 変更する必要がある MDM 機関
+- 完了した前提条件となる手順の確認 (以下のリストを参照)
+
+共存を使用している場合は、Intune と Office 365 の両方のチェックリストを確認する必要があります。
+
+### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>Intune から Configuration Manager へのMDM 機関のリセット
+
+MDM 機関をリセットするために Microsoft サポートにお問い合わせいただく前に、次の手順を完了してください。
+
+- Intune 管理コンソールですべてのデバイスをインベントリから削除します。 デバイス自体から削除しないでください。 
+- Service To Service Connector (**[管理]** > **[モバイル デバイス管理]** > **[Microsoft Exchange]** の順に移動) を削除するか、Exchange Connector を無効にします (設定している場合)。 
+- **[管理者]** > **[デバイス登録マネージャー]** で、デバイス登録マネージャーのロールを削除します。
+- **[管理者]** > **[モバイル デバイス管理]** > **[デバイス グループ マッピング]** で、デバイス グループ マッピングを無効にします。
+- **[管理者]** > **[モバイル デバイス管理]** > **[Windows]** > **[サイドローディング キー]** で、サイドローディング キーを削除します。
+- **[管理者]** > **[モバイル デバイス管理]** > **[iOS]** ページで、iOS APNs 証明書を削除します。
+- **[管理者]** > **[モバイル デバイス管理]** > **[iOS]** ページで、iOS DEP トークンを削除します。
+- **[ポリシー]** > **[構成ポリシー]** で、MDM デバイスのポリシーをすべて削除します。
+- **[アプリ]** > **[管理されているソフトウェア]** で、MDM デバイスの公開済みアプリケーションをすべて削除します。
+
+### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>Configuration Manager から Intuneへの MDM 機関のリセット
+
+MDM 機関をリセットするために Microsoft サポートにお問い合わせいただく前に、次の手順を完了してください。
+
+- Configuration Manager コンソールで、すべてのデバイス (モバイル デバイスとして管理されている) をインベントリから削除します。 デバイス自体から削除しないでください。 
+- Intune ユーザー グループからすべてのユーザーを削除します。 Intune サブスクリプションを空のユーザー コレクションに指定するか、対象のコレクションからすべてのユーザーを削除します。  CloudUserSync.log でユーザーが削除されていることを確認します。 
+- iOS プラットフォームをオフにして、APNs 証明書を削除します。
+- MDM デバイスの公開済みアプリケーションをすべて削除します。
+- MDM デバイスのポリシーをすべて削除します。 
+- Configuration Manager コンソールで Windows Intune コネクタを削除します (R2 SP1 以下にのみ適用可能)。
+- Intune サブスクリプションを右クリックし、**[削除]** を選択して削除します。
+- SMS Executive サービスを再起動します。
+- プロセスの完了後に、Configuration Manager ライセンスが削除されたことを確認できるように、ユーザーの例をいくつか提供します。
+
+### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Office 365 から Configuration Manager への MDM 機関のリセット
+
+1. [https://protection.office.com](https://protection.office.com) に移動します。
+2. **[セキュリティ ポリシー]** タブを選択し、**[デバイス管理]** を選択します。 
+3. **[選択的ワイプ]** を選択して、すべてのデバイスをインベントリから削除します。 デバイス自体から削除しないでください。 選択的ワイプが無効になっている場合は、これ以上の操作は必要ありません。
+4. **[セキュリティ ポリシー]** タブを選択し、**[デバイス セキュリティ ポリシー]** を選択します。 
+5. 既存のすべてのポリシーに対して **[削除]** を選択します。 ポリシーが保留状態の場合は、これ以上の操作は必要ありません。
+
+>[!NOTE]
+>iOS APsN 証明書は削除できません。これは、アカウントにアタッチされたままです。 
+
+### <a name="next-steps-for-mdm-authority-resets"></a>MDM 機関のリセットの次のステップ
+
+Microsoft サポートで適切なチェックリストの項目が確認されてから、MDM 機関がリセットされるまでに最大で&3; 営業日かかる場合がありますが、通常は&1; 日以内にリセットされます。 
+
+>[!IMPORTANT]
+>Microsoft サポートでリセットが正常に行われたことが確認されるまで、サブスクリプションを構成しないでください。 構成が不完全な場合、破損の原因になったり、Intune サービスの使用に影響が生じたりする場合があります。 
 

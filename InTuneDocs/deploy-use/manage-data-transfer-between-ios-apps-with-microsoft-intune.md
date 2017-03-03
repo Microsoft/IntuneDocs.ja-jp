@@ -1,9 +1,9 @@
 ---
-title: "iOS アプリ間のデータ転送を管理する | Microsoft Intune"
+title: "iOS アプリ間のデータ転送を管理する | Microsoft Docs"
 description: "このトピックを使用すると、iOS の開く機能とモバイル アプリ管理ポリシーを使用してアプリ間のデータ転送を管理する方法を把握できます。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -13,48 +13,74 @@ ms.technology:
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 94163d5f303b293da2301b81a5c96f6c9c2e5e5d
+ms.sourcegitcommit: c09c0b5d76a3035b2af82fe32d4b6c6e35d06baf
+ms.openlocfilehash: 46b140db09163187c68385d0919edb9a58056923
 
 
 ---
 
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Microsoft Intune を使用して iOS アプリ間のデータ転送を管理する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## <a name="manage-ios-apps"></a>iOS アプリを管理する
 会社データの保護には、ファイル転送を管理対象のアプリに限定する処理も含まれます。  iOS アプリは次の方法で管理できます。
 
--   アプリ (**ポリシーで管理されている**アプリと呼ばれます) の MAM ポリシーを構成して、会社データの損失を回避します。
+-   アプリ (**ポリシーで管理されている**アプリと呼ばれます) のアプリ保護ポリシーを構成して、会社データの損失を回避します。
 
 -   また、アプリは **MDM チャネル**から展開して管理することもできます。  これには、デバイスが MDM ソリューションに登録されていることが必要です。 これらは**ポリシーで管理されている**アプリであるか、またはその他の管理対象アプリである必要があります。
 
 iOS デバイスの **Open In Management** 機能を使用すると、**MDM チャネル**を使用して展開されているアプリ間でのみファイル転送が行われるよう制限できます。 Open In Management の制限は、構成設定で設定され、MDM ソリューションを使用して展開されます。  展開されているアプリをユーザーがインストールすると、管理者が設定した制限が適用されます。
-##  <a name="using-mam-with-ios-apps"></a>iOS アプリで MAM を使用する
-モバイル アプリ管理 (MAM) ポリシーは、iOS の **Open in Management** 機能と共に使用して、以下のように会社データを保護できます。
 
--   **MDM ソリューションで管理されていない従業員所有のデバイス:** MAM ポリシー設定を **[アプリで管理対象アプリへのデータ転送のみ許可する]**に設定できます。 保護されたファイルをポリシーで管理されていないアプリでアプリで開くと、エンドユーザーはファイルを読み取れません。
+##  <a name="manage-data-transfer-between-ios-apps"></a>iOS アプリ間のデータ転送を管理する
+アプリ保護ポリシーは、iOS の **Open in Management** 機能と共に使用して、以下のように会社データを保護できます。
 
--   **Intune で管理されているデバイス:** Intune で登録したデバイスの場合、MAM ポリシーを使用するアプリと、他の Intune で展開された管理対象の iOS アプリの間で自動的にデータを転送できるようになります。 MAM ポリシーを使用するアプリ間でデータを転送できるようにするには、**[アプリで管理対象アプリへのデータ転送のみ許可する]** 設定を有効にします。 **Open in Management** 機能を使用して、Intune で展開されているアプリ間のデータ転送を制御できます。   
+-   **MDM ソリューションで管理されていない従業員所有のデバイス:** [アプリ保護ポリシー設定](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)を **[Allow app to transfer data to only managed apps (アプリで管理対象アプリへのデータ転送のみ許可する)]** に設定できます。 保護されたファイルをポリシーで管理されていないアプリでアプリで開くと、エンドユーザーはファイルを読み取れません。
+
+-   **Intune で管理されているデバイス:** Intune で登録したデバイスの場合、アプリ保護ポリシーを使用するアプリと、Intune でデプロイされた管理対象の他の iOS アプリの間でデータを自動的に転送できるようになります。 アプリ保護ポリシーを使用するアプリ間でデータを転送できるようにするには、**[Allow app to transfer data to only managed apps (アプリで管理対象アプリへのデータ転送のみ許可する)]** 設定を有効にします。 **Open in Management** 機能を使用して、Intune で展開されているアプリ間のデータ転送を制御できます。   
 
 -   **サード パーティの MDM ソリューションで管理されているデバイス:** iOS の **Open In Management** 機能を使用して、データ転送が管理対象のアプリに対してのみ行われるよう制限できます。
-サードパーティの MDM ソリューションを使用して展開するアプリを、Intune で構成した MAM ポリシーとも関連付けるには、「[ユーザー UPN 設定を構成する](#configure-user-upn-setting)」のチュートリアルに従ってユーザー UPN 設定を構成する必要があります。  アプリがユーザー UPN 設定を使用して展開されている場合、エンドユーザーが職場アカウントを使用してサインインすると、MAM ポリシーがアプリに適用されます。
+サードパーティの MDM ソリューションを使用してデプロイするアプリを、Intune で構成したアプリ保護ポリシーとも関連付けるには、[ユーザー UPN 設定の構成](#configure-user-upn-setting-for-third-party-emm)チュートリアルに従ってユーザー UPN 設定を構成する必要があります。  アプリがユーザー UPN 設定を使用してデプロイされている場合、エンド ユーザーが職場アカウントを使用してサインインすると、アプリ保護ポリシーがアプリに適用されます。
 
 > [!IMPORTANT]
 > ユーザー UPN 設定は、サード パーティの MDM によって管理されるデバイスに展開されたアプリに対してのみ必要です。  Intune の管理対象デバイスの場合は、この設定は必要ありません。
 
-## <a name="configure-user-upn-setting"></a>ユーザー UPN 設定を構成する
-この構成は、サード パーティの MDM ソリューションによって管理されているデバイスに必要となります。 以下に示す手順では、UPN 設定の一般的な実装方法と、その結果として得られるのエンドユーザー エクスペリエンスを示しています。
+## <a name="configure-user-upn-setting-for-third-party-emm"></a>サードパーティ EMM のユーザー UPN 設定を構成する
+ユーザー UPN 設定の構成は、サード パーティの EMM ソリューションによって管理されているデバイスに**必要**となります。 以下に示す手順では、UPN 設定の一般的な構成方法と、その結果として得られるエンドユーザー エクスペリエンスを示しています。
 
 
-1.  Azure ポータルで、iOS プラットフォームの[モバイル アプリ管理ポリシーを構成します](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)。 企業の要件に合わせてポリシー設定を構成し、このポリシーを使用するアプリを選択します。
+1.  Azure ポータルで、iOS プラットフォームの[アプリ保護ポリシーを構成します](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)。 企業の要件に合わせてポリシー設定を構成し、このポリシーを使用するアプリを選択します。
 
-2.  手順 3 と 4 で説明した設定を使用して、**サードパーティの MDM ソリューションで**管理するアプリと電子メール プロファイルを展開します。
+2.  次の汎用化された手順を使用して、**サードパーティの MDM ソリューションで**管理するアプリとメール プロファイルをデプロイします。 このエクスペリエンスは例 1 でも取り上げています。
 
-3.  key=IntuneMAMUPN, Value=<username@company.com> [例: ‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+  1.  次のアプリ構成設定でアプリをデプロイします。
 
-4.  Open In Management ポリシーを登録済みデバイスに展開します。
+      **キー** = IntuneMAMUPN、**値** = <username@company.com>
 
-### <a name="example-end-user-experience"></a>エンド ユーザー エクスペリエンスの例
+      例: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+
+  2.  登録済みデバイスに、サードパーティの MDM プロバイダーを使用して Open in management ポリシーをデプロイします。
+
+
+### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>例 1: サードパーティ MDM コンソールの管理エクスペリエンス
+
+1. サードパーティ MDM プロバイダーの管理コンソールに移動します。 登録済みの iOS デバイスにアプリケーション構成設定をデプロイするコンソールのセクションに移動します。
+
+2. [アプリケーションの構成] セクションで、次の設定を入力します。
+
+  **キー** = IntuneMAMUPN、**値** = <username@company.com>
+
+  キー/値ペアの正確な構文は、サード パーティ MDM プロバイダーによって異なります。 次の表は、サードパーティ MDM プロバイダーの例と、キー/値ペアに入力する必要のある正確な値を示します。
+
+|サードパーティ MDM プロバイダー| Configuration キー | 値の種類 | 構成値|
+| ------- | ---- | ---- | ---- |
+|VMware AirWatch| IntuneMAMUPN | 文字列型 | {UserPrincipalName}|
+|MobileIron | IntuneMAMUPN | 文字列型 | ${userUPN} **または** ${userEmailAddress} |
+
+
+### <a name="example-2-end-user-experience"></a>例 2: エンドユーザー エクスペリエンス
 
 1.  エンド ユーザーは、デバイスに Microsoft Word アプリをインストールします。
 
@@ -65,17 +91,27 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 4.  Word アプリが起動するとき、エンド ユーザーは職場アカウントを使用してログインするよう求められます。  プロンプトが表示されたときにエンド ユーザーが入力するこの職場アカウントは、Microsoft Word アプリのアプリ構成設定で構成し、指定したアカウントと一致する必要があります。
 
     > [!NOTE]
-    > エンド ユーザーは、私用で Word アプリを使用するときに、個人の作業に使用し、MAM ポリシーの影響を受けない個人アカウントを Word に追加することができます。
+    > エンド ユーザーは、私用で Word アプリを使用するときに、個人の作業に使用し、アプリ保護ポリシーの影響を受けない個人アカウントを Word に追加することができます。
 
-5.  ログインが成功すると、アプリのポリシー設定が Word アプリに適用されます。
+5.  ログインが成功すると、アプリの保護ポリシー設定が Word アプリに適用されます。
 
 6.  これでデータ転送が成功し、ドキュメントにはアプリで企業 ID のタグが付けられます。 また、データが作業コンテキスト内で処理されるときには、ポリシー設定が適切に適用されます。
 
+### <a name="validate-user-upn-setting-for-third-party-emm"></a>サードパーティ EMM のユーザー UPN 設定を検証する
+
+ユーザー UPN 設定を構成した後で、iOS アプリが Intune アプリ保護ポリシーを受信して準拠できることを検証する必要があります。
+
+たとえば、**Require app PIN** ポリシー設定はデバイスで簡単に視覚的にテストできます。 ポリシー設定が **[はい]** に設定されている場合、エンド ユーザーが会社のデータにアクセスしようとしたときに PIN の設定または入力を求めるプロンプトが表示されます。
+
+まず、[アプリ保護ポリシーを作成し、iOS アプリにデプロイ](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)します。 アプリ保護ポリシーをテストする方法について詳しくは、「[Validate app protection policies](validate-mobile-application-management.md)」(アプリ保護ポリシーの検証) をご覧ください。
+
+
+
 ### <a name="see-also"></a>関連項目
-[Microsoft Intune でモバイル アプリケーション管理ポリシーを使用してデータを保護する](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+[Microsoft Intune でアプリ保護ポリシーを使用してアプリ データを保護する](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

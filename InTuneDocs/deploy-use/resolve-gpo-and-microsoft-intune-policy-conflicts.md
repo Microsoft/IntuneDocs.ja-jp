@@ -1,11 +1,11 @@
 ---
-title: "GPO と Intune ポリシーの競合を解決する| Microsoft Intune"
+title: "GPO と Intune ポリシーの競合を解決する | Microsoft Docs"
 description: "グループ ポリシーと Intune 構成ポリシーの競合を解決する方法について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,20 @@ ms.technology:
 ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 3d883851ae9fecd8a5c3baa0aff8312552915ba4
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 439607bf79424ab32118948f112e3814577969e5
 
 
 ---
 
-# グループ ポリシー オブジェクト (GPO) と Microsoft Intune ポリシーの競合を解決する
+# <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>グループ ポリシー オブジェクト (GPO) と Microsoft Intune ポリシーの競合を解決する
 Intune は、Windows PC の設定を管理するためにポリシーを使用します。 たとえば、ポリシーを使用して、PC の Windows ファイアウォールに関する設定を制御できます。 多くの Intune 設定は、Windows グループ ポリシーで構成する設定と似ています。 ただし、この 2 つの設定が互いに競合することがあります。
 
 競合が発生した場合、PC がドメインにサインインできない場合を除き、ドメインレベルのグループ ポリシーの方が Intune ポリシーより優先されます。 ドメインにログオンできない場合は、Intune ポリシーがクライアント PC に適用されます。
 
-## グループ ポリシーを使用する場合の操作
+## <a name="what-to-do-if-you-are-using-group-policy"></a>グループ ポリシーを使用する場合の操作
 適用するポリシーがグループ ポリシーの管理対象かどうかを確認してください。 競合を回避するために、次の方法の 1 つまたは複数を使用できます。
 
 -   グループ ポリシー設定が適用されない Active Directory 組織単位 (OU) に PC を移動してから、Intune クライアントをインストールします。 また、Intune に登録されている PC を含む OU にグループ ポリシー設定を適用しない場合は、その OU へのグループ ポリシーの継承をブロックすることもできます。
@@ -36,7 +37,7 @@ Intune は、Windows PC の設定を管理するためにポリシーを使用�
 
 Active Directory と Windows グループ ポリシーの詳細については、Windows Server のマニュアルを参照してください。
 
-## 既存の GPO をフィルターして Intune ポリシーとの競合を回避する方法
+## <a name="how-to-filter-existing-gpos-to-avoid-conflicts-with-intune-policy"></a>既存の GPO をフィルターして Intune ポリシーとの競合を回避する方法
 Intune ポリシーと設定が競合するグループ ポリシー オブジェクト (GPO) を見つけたら、セキュリティ グループ フィルターを使用して、Intune で管理しない PC のみにこれらの GPO が適用されるようにします。
 
 <!--- ### Use WMI filters
@@ -113,11 +114,11 @@ GPO は、グループ ポリシー管理コンソールで、選択した GPO �
 
 新しいセキュリティ グループは、Intune サービス変更の登録として保持する必要があります。
 
-### 関連項目
+### <a name="see-also"></a>関連項目
 [Microsoft Intune を使用して Windows PC を管理する](manage-windows-pcs-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

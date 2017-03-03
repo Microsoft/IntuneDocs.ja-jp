@@ -1,11 +1,11 @@
 ---
-title: "モバイル アプリケーション管理のためにアプリを準備する | Microsoft Intune"
+title: "Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める | Microsoft Docs"
 description: "このトピックの情報は、カスタム基幹業務アプリでモバイル アプリ管理ポリシーを使用できるようにするために、アプリ ラッピング ツールとアプリ SDK を使用するタイミングを判断するときに役立ちます。"
 keywords: 
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 02/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,19 @@ ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 3d7b60862942742d663ff23c7b5f3fd135c72640
+ms.sourcegitcommit: 06e0a74dd2c0b861497062f2d659c5eb08126fca
+ms.openlocfilehash: 6ec9f6136cf23b9015da125817bfeb86ecfbfca6
 
 
 ---
 
-# <a name="decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune"></a>Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める
-Intune アプリ ラッピング ツールまたは Intune アプリ SDK のいずれかを使うと、アプリでモバイル アプリケーション管理 (MAM) ポリシーを使用することが可能です。 ここでは、これら 2 つの方法の内容と用途について説明します。
+# <a name="prepare-line-of-business-apps-for-mam"></a>基幹業務アプリを MAM 向けに準備する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Intune アプリ ラッピング ツールまたは Intune アプリ SDK のいずれかを使うと、アプリでモバイル アプリケーション管理 (MAM) ポリシーを使用することが可能です。 ここでは、これら&2; つの方法の内容と用途について説明します。
 
 ## <a name="intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツール
 アプリ ラッピング ツールは、主として、内部基幹業務 (LOB) アプリケーションに使います。 このツールは、アプリのラッパーを作成するコマンド ライン アプリケーションです。このラッパーにより、アプリを Intune MAM ポリシーで管理できるようになります。
@@ -52,7 +56,7 @@ Intune に登録されていないデバイスの MAM 用アプリ ラッピン�
 ## <a name="intune-app-sdk"></a>Intune アプリ SDK
 アプリ SDK は、主として、Apple App Store または Google Play ストアにあるアプリを Intune で管理できるようにするお客様向けに設計されています。 ただし、どのようなアプリでも (基幹業務アプリでさえ)、SDK の統合を利用できます。
 
-SDK の詳細については、「[概要](/intune/develop/intune-app-sdk)」を参照してください。 SDK で作業を開始するには、「[Microsoft Intune アプリ SDK を使ってみる](/intune/develop/intune-app-sdk-get-started)」を参照してください。
+SDK の詳細については、「[概要](../develop/intune-app-sdk.md)」を参照してください。 SDK で作業を開始するには、「[Microsoft Intune アプリ SDK を使ってみる](../develop/intune-app-sdk-get-started.md)」を参照してください。
 
 ### <a name="reasons-to-use-the-sdk"></a>SDK を使用する理由
 * アプリに組み込みのデータ保護機能がない。
@@ -66,8 +70,8 @@ SDK の詳細については、「[概要](/intune/develop/intune-app-sdk)」を
 
 |**Intune アプリ SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|はい – [Intune App SDK Xamarin コンポーネント](/../develop/intune-app-sdk-xamarin)を使用します。|はい – [Intune App SDK Cordova プラグイン](/../develop/intune-app-sdk-cordova)を使用します。|
-|**Android**| はい – [Intune App SDK Xamarin コンポーネント](/../develop/intune-app-sdk-xamarin)を使用します。|はい – [Intune App SDK Cordova プラグイン](/../develop/intune-app-sdk-cordova)を使用します。|
+|**iOS**|はい – [Intune App SDK Xamarin コンポーネント](../develop/intune-app-sdk-xamarin.md)を使用します。|はい – [Intune App SDK Cordova プラグイン](../develop/intune-app-sdk-cordova.md)を使用します。|
+|**Android**| はい – [Intune App SDK Xamarin コンポーネント](../develop/intune-app-sdk-xamarin.md)を使用します。|はい – [Intune App SDK Cordova プラグイン](../develop/intune-app-sdk-cordova.md)を使用します。|
 
 ## <a name="feature-comparison"></a>機能の比較
 アプリ SDK とアプリ ラッピング ツールに対して利用できる設定を、次の表に示します。
@@ -106,6 +110,6 @@ SDK の詳細については、「[概要](/intune/develop/intune-app-sdk)」を
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

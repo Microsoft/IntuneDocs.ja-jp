@@ -1,5 +1,5 @@
 ---
-title: "ポータル サイトを使用して Windows デバイスをリセットするとどうなりますか。 | Microsoft Docs"
+title: "Windows デバイスをリセットするとどうなるか | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: cc2800d11bc36b4414f9b76587e3c4bf751d3224
+ms.sourcegitcommit: 42e6b4d44dffa457f009e8402d5c429aa55932d6
+ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: cc2800d11bc36b4414f9b76587e3c4bf751d3224
 
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>ポータル サイトを使用して Windows デバイスをリセットするとどうなりますか。
 
-ポータル サイト アプリや[ポータル サイト Web サイト](reset-your-device-cpwebsite.md)を使用して Windows デバイスをリセットすると、デバイスが工場出荷時設定にリセットされ、アプリケーション、設定、お客様の個人データを含むデータがすべて削除されます。 各デバイスでの操作結果は、デバイスの種類とその使用方法によって異なります (次の表を参照してください)。 紛失または盗難にあったデバイスをリセットする方法の手順については、「[紛失したまたは盗難にあったデバイスをリセット (消去) する](reset-erase-your-lost-or-stolen-device-windows.md)」を参照してください。
+ポータル サイト アプリや[ポータル サイト Web サイト](reset-erase-your-device-cpwebsite.md)を使用して Windows デバイスをリセットすると、デバイスが工場出荷時設定にリセットされ、アプリケーション、設定、お客様の個人データを含むデータがすべて削除されます。 各デバイスでの操作結果は、デバイスの種類とその使用方法によって異なります (次の表を参照してください)。 紛失または盗難にあったデバイスをリセットする方法の手順については、「[紛失したまたは盗難にあったデバイスをリセット (消去) する](reset-erase-your-device-cpwebsite.md)」を参照してください。
 
 |デバイスの構成と管理|デバイスの種類|
 |---------------------------------------|---------------|
@@ -38,6 +39,6 @@ ms.openlocfilehash: cc2800d11bc36b4414f9b76587e3c4bf751d3224
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

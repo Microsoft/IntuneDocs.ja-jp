@@ -1,11 +1,11 @@
 ---
-title: "Intune ソフトウェア クライアントを実行している Windows PC にアプリを追加する | Microsoft Intune"
+title: "Intune ソフトウェア クライアントを実行している Windows PC にアプリを追加する | Microsoft Docs"
 description: "このトピックでは、Windows PC のアプリを展開する前に、それらのアプリを Intune に追加する方法について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 02/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,22 +13,25 @@ ms.technology:
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: e6537b7b0a42c76ec99d51a6a09fe1f6ab4400a1
+ms.sourcegitcommit: 547330c05b7fbdd2981e49320c913d8109563384
+ms.openlocfilehash: f8f1359ff08b67261b23a694a4f6bbbeca24fa2a
 
 
 ---
 
-# Intune ソフトウェア クライアントを実行している Windows PC にアプリを追加する
+# <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Intune ソフトウェア クライアントを実行している Windows PC にアプリを追加する
 
 このトピックでは、アプリを展開する前に、それらのアプリを Intune に追加する方法について説明します。
 
 > [!IMPORTANT]
 > このトピックの情報は、Intune ソフトウェア クライアントで管理する Windows PC のアプリを追加するときに役立ちます。 登録済みの Windows PC やその他のモバイル デバイスにアプリを追加する場合は、「[Microsoft Intune でモバイル デバイスのアプリを追加する](add-apps-for-mobile-devices-in-microsoft-intune.md)」を参照してください。
 
+PC にアプリをインストールするには、ユーザー操作なしで自動的にインストールできる必要があります。 そうでない場合、インストールは失敗します。
 
-## アプリを追加する
+
+## <a name="add-the-app"></a>アプリを追加する
 次の手順に従って、Intune ソフトウェア パブリッシャーでアプリのプロパティを構成し、クラウド ストレージ領域にアップロードします。
 
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[アプリ]** &gt; **[アプリの追加]** の順に選択し、Intune ソフトウェア パブリッシャーを開始します。
@@ -40,7 +43,7 @@ ms.openlocfilehash: e6537b7b0a42c76ec99d51a6a09fe1f6ab4400a1
 
     - **ソフトウェア インストーラー ファイルの種類を選択する**。 これは展開するソフトウェアの種類を示します。 Windows PC の場合、**[Windows インストーラー]** を選択します。
     - **ソフトウェア セットアップ ファイルの場所を指定する**。 インストール ファイルの場所を入力するか、**[参照]** を選択して一覧から場所を選択します。
-    - **追加のファイルおよび同じフォルダーのサブフォルダーを含める**。 Windows インストーラーを使用する一部のソフトウェアでは、サポート ファイルが必要です。 これらは通常、インストール ファイルと同じフォルダーにあります。 これらのサポート ファイルも展開する場合、このオプションを選択します。
+    - **追加のファイルおよび同じフォルダーのサブフォルダーを含める**。 Windows インストーラーを使用する一部のソフトウェアでは、サポート ファイルが必要です。 これらは、インストール ファイルと同じフォルダーにある必要があります。 これらのサポート ファイルも展開する場合、このオプションを選択します。
 
     たとえば、Intune に Application.msi という名前のアプリを発行する場合、ページは![発行元のソフトウェア セットアップ ページ](./media/publisher-for-pc.png)のようになります。
 
@@ -52,7 +55,7 @@ ms.openlocfilehash: e6537b7b0a42c76ec99d51a6a09fe1f6ab4400a1
     > 使用するインストーラー ファイルにもよりますが、これらの値の一部は自動的に入力されることもあれば、表示されないこともあります。
 
     - **発行元**。 アプリの発行元の名前を入力します。
-    - **名前**。 アプリの名前を入力します。この名前は会社のポータルに表示されます。<br />使用するアプリ名はすべて一意にします。 同じアプリ名が 2 つ存在する場合、会社のポータルではそのいずれかのみがユーザーに表示されます。
+    - **名前**。 アプリの名前を入力します。この名前は会社のポータルに表示されます。<br />使用するアプリ名はすべて一意にします。 同じアプリ名が&2; つ存在する場合、会社のポータルではそのいずれかのみがユーザーに表示されます。
     - **説明**。 アプリの説明を入力します。 これは会社のポータルでユーザーに表示されます。
     - **ソフトウェア情報の URL** (省略可能)。 このアプリに関する情報が含まれる Web サイトの URL を入力します。 この URL は会社のポータルでユーザーに表示されます。
     - **プライバシー URL** (省略可能)。 このアプリのプライバシー情報が含まれる Web サイトの URL を入力します。 この URL は会社のポータルでユーザーに表示されます。
@@ -73,7 +76,11 @@ ms.openlocfilehash: e6537b7b0a42c76ec99d51a6a09fe1f6ab4400a1
 
     構成した規則のいずれかをアプリが満たすと、それはインストールされません。
 
-6.  **Windows インストーラー** ファイルの種類のみ (msi と exe): **[コマンド ライン引数]** ページで、インストーラーの任意のコマンドライン引数を指定するかどうかを選択します。 たとえば、一部のインストーラーでは、引数 **/q** がサポートされ、ユーザーの介入なしにサイレント インストールを実行します。
+6.  **Windows インストーラー** ファイルの種類のみ (msi と exe): **[コマンド ライン引数]** ページで、インストーラーの任意のコマンドライン引数を指定するかどうかを選択します。
+    次のパラメーターは、Intune によって自動的に追加されます。
+    - .exe ファイルの場合、**/install** が追加されます。
+    - .msi ファイルの場合、**/quiet** が追加されます。
+    これらのオプションは、アプリ パッケージの作成者がこの機能を有効にした場合のみ機能することにご注意ください。
 
 7.  **Windows インストーラー** ファイルの種類のみ (exe のみ): **[リターン コード]** ページで、アプリが管理対象 Windows PC にインストールされるときに Intune で解釈される新しいエラー コードを追加できます。
 
@@ -85,12 +92,14 @@ ms.openlocfilehash: e6537b7b0a42c76ec99d51a6a09fe1f6ab4400a1
 
 アプリは **[アプリ]** ワークスペースの **[アプリ]** ノードに表示されます。
 
-## 次の手順
+## <a name="next-steps"></a>次の手順
 
 アプリを作成したら、次はアプリを展開します。 詳細については、「[Microsoft Intune でアプリを展開する](deploy-apps.md)」を参照してください。
 
+Windows PC にソフトウェアをデプロイする際のヒントとテクニックに関する詳細情報を読むには、「[Support Tip: Best Practices for Intune Software Distribution to PC’s](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/)」(サポートのヒント: PC への Intune ソフトウェア配布のベスト プラクティス) というブログの投稿をご覧ください。
 
 
-<!--HONumber=Oct16_HO4-->
+
+<!--HONumber=Feb17_HO3-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "ポータル サイト アプリをインストールし、Intune に iOS または macOS デバイスを登録するとどうなるか | Microsoft Docs"
+title: "iOS および macOS 用ポータル サイト アプリをインストールする | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: cef8045c071396419805274ba94cbcfff864a495
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: d593b00ee3fd30adec6c36c3939c895647e8dada
 
 
 ---
@@ -37,36 +38,6 @@ ms.openlocfilehash: cef8045c071396419805274ba94cbcfff864a495
 -   会社用の電子メール アカウントを自動的にセットアップする。
 
 デバイスを Intune に登録すると、使用しているデバイスの管理を IT 管理者に許可することで、デバイスに保存されている会社情報を保護しやすくすることもできます。
-
-**IT 管理者が確認できないもの**
-
--   発信と Web の履歴
-
--   場所
-
--   電子メールとテキスト メッセージ
-
--   連絡先
-
--   パスワード
-
--   予定表
-
--   カメラロール
-
-**IT 管理者が確認できるもの**
-
--   モデル
-
--   シリアル番号
-
--   オペレーティング システム
-
--   アプリ名
-
--   Owner
-
--   デバイス名
 
 デバイスが登録されると、IT 管理者は次のことができるようになります。
 
@@ -98,6 +69,6 @@ ms.openlocfilehash: cef8045c071396419805274ba94cbcfff864a495
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "デバイスをインベントリから削除する | Microsoft Intune"
+title: "デバイスをインベントリから削除する | Microsoft Docs"
 description: "Intune では、デバイスのポリシーとポータル サイトを削除することによって Intune の管理対象からデバイスを削除する選択的ワイプとフル ワイプの両方をサポートします。"
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,21 +13,28 @@ ms.technology:
 ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
-ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
+ms.sourcegitcommit: 00e9dfd165a449182c5b937372db7085c981c68f
+ms.openlocfilehash: cca12024ba12cff5cdb8c515f7719a7592ba97ea
 
 
 ---
 
 # <a name="retire-devices-from-intune-management"></a>Intune の管理からデバイスを削除する
 
-会社所有のデバイスであっても個人所有のデバイスであっても、デバイスを Intune の管理対象から削除することが必要となる場合があります。 デバイスの削除が必要になる理由はさまざまです。
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
--   ユーザーが予定どおりに退社する ("管理された" 退職)
--   ユーザーが急に退社する (解雇や辞職など)
--   デバイスの紛失
--   デバイスの用途変更 (別のユーザーへの移譲、異なる目的での再使用など)
+会社所有のデバイスであっても個人所有のデバイスであっても、デバイスを Intune の管理対象から削除することが必要となる場合があります。
+
+デバイスが一定期間 Intune サービスに接続されていない場合でも、ユーザーが手動で削除しなければ、Intune からデバイスが削除されることはありません。
+
+デバイスの削除が必要になる理由はさまざまです。
+
+-    ユーザーが予定どおりに退社する ("管理された" 退職)
+-    ユーザーが急に退社する (解雇や辞職など)
+-    デバイスの紛失
+-    デバイスの用途変更 (別のユーザーへの移譲、異なる目的での再使用など)
 
 モバイル デバイスとして管理されているデバイスで選択的ワイプまたはフル ワイプを実行することも、デバイスをロックしてパスワードをリセットすることもできます。 デバイスをワイプすると、ユーザーのサブスクリプションを解放して別のデバイスを追加することができます。 また、Intune クライアント ソフトウェアの管理対象 PC も削除できます。
 
@@ -37,6 +44,9 @@ ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
 [選択的ワイプ](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe)は、デバイス上の個人情報には影響を与えないため、従業員が Intune に個人のデバイスを登録している場合にお勧めの方法です。 会社のデータだけが削除されます。
 
 他の目的に再利用する必要のあるデバイスの場合、デバイスを工場出荷時の既定の設定にリセットする[フル ワイプ](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe)も使用できます。
+
+### <a name="removing-user-licenses-and-managed-devices"></a>ユーザー ライセンスと管理対象デバイスを削除する
+ユーザー ライセンスを削除する場合は、そのユーザーの登録済みデバイスの登録を停止します。 ベスト プラクティスとして、選択的ワイプを使用して、ユーザーの Intune ライセンスを削除する前に、管理対象デバイスから会社のデータを削除する必要があります。 ユーザー ライセンスを削除すると、デバイスをリモート アクションのターゲットにすることはできません。
 
 ## <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Azure Active Directory ポータルでデバイスを削除するには
 
@@ -52,7 +62,7 @@ ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
 
 7.  **[デバイス]** を選択します。
 
-8.  対象のデバイスを選択して、**[デバイスの削除]** を選択します。 Active Directory との次の同期時にデバイスが削除されます。 通常は 4 時間内に行われます。 同期の後、デバイスは管理から削除されます。 これにより、そのユーザーのデバイス制限から 1 つのデバイスが削除されます。
+8.  対象のデバイスを選択して、**[デバイスの削除]** を選択します。 Active Directory との次の同期時にデバイスが削除されます。 通常は&4; 時間内に行われます。 同期の後、デバイスは管理から削除されます。 これにより、そのユーザーのデバイス制限から&1; つのデバイスが削除されます。
 
 ## <a name="retire-managed-computers"></a>管理対象コンピューターを削除する
 Intune クライアント ソフトウェアによって管理されているコンピューターを、Intune 管理コンソールで管理から削除できます。 これにより、コンピューターからのクライアント ソフトウェアのアンインストールと Intune ポリシーの削除も行われます。 [Intune クライアント ソフトウェアで管理されているコンピューターの削除](retire-a-windows-pc-with-microsoft-intune.md)に関する情報を参照してください。
@@ -70,6 +80,6 @@ Intune クライアント ソフトウェアによって管理されているコ
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "クライアント セットアップのトラブルシューティング | Microsoft Intune"
+title: "クライアント セットアップのトラブルシューティング | Microsoft Docs"
 description: "一般的なクライアント セットアップに関する問題のトラブルシューティングを行います。"
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,19 @@ ms.technology:
 ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 889a13bd50943b9cdf0f40d50b6f8ce263dde56d
-ms.openlocfilehash: e37b5da81150f89fce1ee3d57bd84de0ff7fb76f
+ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
+ms.openlocfilehash: 9de1c3f8c3dbb7a5e00c5384cc7321aedfa5b9b5
+ms.lasthandoff: 02/22/2017
 
 
 ---
 
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Microsoft Intune でのクライアント セットアップのトラブルシューティング
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 クライアントのセットアップで生じる一般的な問題のトラブルシューティングについては、以下の情報を参照してください。 この情報で問題が解決しない場合、さらに役立つ方法を探すには、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」を参照してください。
 
 ## <a name="client-installation-fails"></a>クライアントのインストールが失敗する
@@ -33,9 +38,9 @@ ms.openlocfilehash: e37b5da81150f89fce1ee3d57bd84de0ff7fb76f
 
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[アラート]** &gt; **[概要]** の順に選択します。
 
-2.   **[アラートの概要]** ページで次の情報を確認できます。
+2.  **[アラートの概要]** ページで次の情報を確認できます。
 
-    -   上位 3 件のアラート。日付、カテゴリ、または重要度を基準に並べ替えることができます。
+    -   上位&3; 件のアラート。日付、カテゴリ、または重要度を基準に並べ替えることができます。
 
     -   アクティブなアラートの合計数
 
@@ -70,7 +75,7 @@ ms.openlocfilehash: e37b5da81150f89fce1ee3d57bd84de0ff7fb76f
 **解決方法:** 「[Microsoft Intune でソフトウェア更新プログラムを使用して Windows PC を最新の状態に保つ](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)」の説明に従って、重要な更新プログラムがインストールされるようにソフトウェア更新ポリシーを設定してください。
 
 
-## <a name="microsoft-intune-policyrelated-errors-in-policyplatformlog"></a>policyplatform.log に記録される Microsoft Intune ポリシー関連エラー
+## <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>policyplatform.log に記録される Microsoft Intune ポリシー関連エラー
 MDM Windows デバイス以外のデバイスでは、policyplatform.log ファイルに記録されるポリシー エラーは、デバイスの Windows ユーザー アカウント制御 (UAC) の設定が既定値以外であることが原因である場合があります。 いくつかの既定値以外の UAC 設定は、Microsoft Intune クライアントのインストールやポリシーの実行に影響を与えます。
 
 ### <a name="to-resolve-uac-issues"></a>UAC の問題を解決するには
@@ -116,17 +121,22 @@ MDM Windows デバイス以外のデバイスでは、policyplatform.log ファ�
 |**0x80070032**|クライアント コンピューターが、クライアント ソフトウェアのインストールに必要な前提条件を満たしていません。|必要なすべての更新プログラムがクライアント コンピューターにインストールされていることを確認してから、クライアント ソフトウェアをもう一度インストールしてください。 クライアント ソフトウェアをインストールするための前提条件の詳細については、「[Microsoft Intune に使用するネットワーク インフラストラクチャの要件](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)」を参照してください。|
 |**0x80043008**|Microsoft Online Management 更新ービスを開始できませんでした。|「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って、サポートにお問い合わせください。|
 |**0x80043009**|クライアント コンピューターは、既にサービスに登録されています。|サービスを再登録する前に、クライアント コンピューターを削除する必要があります。 その方法については、「[Retire devices from Intune management](/intune/deploy-use/retire-devices-from-microsoft-intune-management)」 (Microsoft Intune の管理からデバイスを削除する) を参照してください。|
+|**0x8004300A**|(ステージ 21) コンピューター スコープではなく、ユーザー スコープにインストールするために GPO に登録パッケージを展開すると、エラーが発生します。 |GPSI を使用して、コンピューター スコープに正しく GPO のターゲットが指定されていることを確認してください。 これに関するフォーラムの投稿を参照する場合は、こちらの [TechNet フォーラム](https://social.technet.microsoft.com/Forums/en-US/bb9fa71c-c132-4954-abb0-70be8acbd925/failed-to-install-windows-intune?forum=microsoftintuneprod)をご覧ください。|
 |**0x8004300B**|クライアントで実行されている Windows のバージョンがサポートされていないため、クライアント ソフトウェア インストール パッケージを実行できません。|Intune が、クライアント コンピューターで実行されている Windows のバージョンをサポートしていません。 サポートされるオペレーティング システムの一覧は、「[Microsoft Intune に使用するネットワーク インフラストラクチャの要件](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)」を参照してください。|
-|**0xAB2**|Windows インストーラーが、カスタム動作に必要な VBScript ランタイムにアクセスできませんでした。|このエラーは、ダイナミック リンク ライブラリ (DLL) に基づくカスタム動作が原因で発生します。 DLL のトラブルシューティング時に、場合によっては「[Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](http://go.microsoft.com/fwlink/?LinkID=234255)」 (Microsoft サポート技術情報 198038: パッケージと展開の問題に役立つツール) に記載されているツールを使用する必要があります。|
+|**0xAB2**|Windows インストーラーが、カスタム動作に必要な VBScript ランタイムにアクセスできませんでした。|このエラーは、ダイナミック リンク ライブラリ (DLL) に基づくカスタム動作が原因で発生します。 DLL のトラブルシューティング時に、場合によっては「[Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](http://go.microsoft.com/fwlink/?LinkID=234255)」 (Microsoft サポート技術情報&19803;8: パッケージと展開の問題に役立つツール) に記載されているツールを使用する必要があります。|
 |**0x8004300f**|System Center Configuration Manager クライアントが既にインストールされているため、ソフトウェアをインストールすることはできません。|Configuration Manager クライアントを削除してから、クライアント ソフトウェアをもう一度インストールしてください。|
 |**0x80043010**|Open Mobile Alliance Device Management (OMADM) が既にインストールされているため、このソフトウェアはインストールできません。|OMADM クライアントの登録を解除してから、クライアント ソフトウェアをもう一度インストールしてください。|
 インストールの問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って、サポートにお問い合わせください。 このとき、クライアント コンピューターの登録ログ (%*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log と %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log)、および Windows Update ログ (%*windir*%\windowsupdate.log) を手元に用意してください。
 
+## <a name="what-to-do-if-endpoint-protection-is-not-uninstalled-when-you-uninstall-the-client"></a>クライアントのアンインストール時に Endpoint Protection がアンインストールされない場合の対処方法
+
+上記のコマンドを実行しても、Host Protection (Endpoint Protection) エージェントが残る場合があります。 そのような場合は、管理者特権のプロンプトから以下のコマンドを実行します。
+
+    ```
+    "C:\Program Files\Managed Defender\Setup.exe" /x /q /s
+    ```
+
+
 ### <a name="next-steps"></a>次のステップ
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

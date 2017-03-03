@@ -1,11 +1,11 @@
 ---
-title: "ポータル サイト アプリをインストールし、Intune に Windows 10 デバイスを登録するとどうなりますか。 | Microsoft Docs"
+title: "Windows 10 用ポータル サイト アプリをインストールする | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,13 +16,13 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1f872d245144727406d926b0c9401827939470f1
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: 329d34e7a6ad83512e98dce85e1effe9c54a1bce
 
 
 ---
-
 
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>ポータル サイト アプリをインストールし、Intune に Windows 10 デバイスを登録するとどうなりますか。
 
@@ -36,7 +36,7 @@ ms.openlocfilehash: 1f872d245144727406d926b0c9401827939470f1
 
 -   携帯電話の紛失や盗難にあった場合、電話を工場出荷時設定にリセットする。
 
-登録の手順については、「[Intune に Windows 10 Mobile または Windows 10 デスクトップ デバイスを登録する](enroll-your-w10-phone-or-w10-pc-windows.md)」を参照してください。 IT 管理者が対象のデバイスで確認できるものの詳細については、「[デバイスを Intune に登録した場合に IT 管理者が確認できるもの](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)」を参照してください。
+登録の手順については、「[Intune に Windows 10 Mobile または Windows 10 デスクトップ デバイスを登録する](enroll-your-w10-phone-or-w10-pc-windows.md)」を参照してください。 IT 管理者が対象のデバイスで確認できるものの詳細については、「[デバイスを Intune に登録した場合に IT 管理者が確認できるもの](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)」を参照してください。
 
 コンピューターを追加した場合:
 
@@ -58,6 +58,6 @@ ms.openlocfilehash: 1f872d245144727406d926b0c9401827939470f1
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

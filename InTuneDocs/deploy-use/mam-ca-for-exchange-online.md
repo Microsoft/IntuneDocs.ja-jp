@@ -1,5 +1,5 @@
 ---
-title: "Exchange Online のアプリのアクセス権を構成する | Microsoft Intune"
+title: "Exchange Online のアプリのアクセス権 | Microsoft Docs"
 description: "このトピックでは、MAM アプリの条件付きアクセス ポリシーを構成する方法について説明します。"
 keywords: 
 author: andredm7
@@ -13,33 +13,44 @@ ms.technology:
 ms.assetid: f2cd1a1f-fd29-4081-8dfa-c40993a107d5
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: dae04661289c79798c2f37272a0f941d30335ea5
-ms.openlocfilehash: a0c0bac5082119b2cfa1518934dea8cdc3f75067
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: ab6d1cf6a6b77be6aff6398ff99135674471ba35
 
 
 ---
 
 # <a name="create-an-exchange-online-conditional-access-to-only-allow-apps-supported-by-mam"></a>MAM でサポートされているアプリのみを許可する Exchange Online の条件付きアクセスを作成する
-このトピックでは、Intune モバイル アプリ管理 (MAM) ポリシーをサポートするモバイル アプリのみを許可するように Exchange Online の条件付きアクセスをセットアップする手順について説明します。
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+このトピックでは、Intune アプリ保護ポリシーをサポートするモバイル アプリのみを許可するように Exchange Online の条件付きアクセスをセットアップする手順について説明します。
 
 
 ## <a name="create-an-exchange-online-policy"></a>Exchange Online ポリシーを作成する
-1.  アプリのアクセス機能が含まれる [Azure ポータル](https://portal.azure.com)にサインインします。 Azure ポータルを初めて使用する場合は、「[Azure ポータルの Microsoft Intune MAM ポリシー対応](azure-portal-for-microsoft-intune-mam-policies.md)」トピックを参照してください。
+1.  アプリのアクセス機能が含まれる [Azure ポータル](https://portal.azure.com)にサインインします。 Azure ポータルを初めて使用する場合は、[アプリ保護ポリシーの Azure ポータル](azure-portal-for-microsoft-intune-mam-policies.md)に関するトピックをご覧ください。
 
-2.  **[参照] > [Intune] > [Intune モバイル アプリケーション管理] ブレード > [設定]** の順に選択し、**[条件付きアクセス]** セクションで **[Exchange Online]** を選択します。
+2.  **[その他のサービス]** を選択し、"Intune" と入力します。
 
-  ![[条件付きアクセス] セクションの [Exchange Online] オプションが強調表示された設定ブレードのスクリーンショット](../media/mam-ca-settings-exo.png)
+3.  **[Intune アプリ保護]** を選択します。
 
-3.  **[Allowed apps]** (許可されているアプリ) ブレードの **[Allow apps that support Intune app policies]** (Intune アプリ ポリシーをサポートするアプリを許可する) オプションを選択して、Exchange Online へのアクセスを Intune MAM ポリシーでサポートされているアプリにのみ許可します。 このオプションを選択すると、サポートされるアプリの一覧が表示されます。
+4.  **[Intune モバイル アプリケーション管理]** ブレードで **[すべての設定]** を選択します。
 
-  >[!NOTE]
-  >iOS と Android の組み込みのメール クライアントを含め、Exchange Online に接続するすべての Exchange Active Sync メール クライアントは、電子メールを送受信できなくなります。 ユーザーには、Outlook メール アプリを使用する必要があることを知らせる 1 通の電子メールが送信されます。 
-4.   このポリシーをユーザーに適用するには、**[制限対象のユーザー グループ]** ブレードを開き、**[ユーザー グループの追加]** を選択します。 このポリシーを適用する 1 つまたは複数のユーザー グループを選択します。
+5.  **[条件付きアクセス]** セクションで、**[Exchange Online]** を選択します。
 
-  ![[ユーザー グループの追加] オプションが強調表示されている [制限対象のユーザー グループ] ブレードのスクリーンショット](../media/mam-ca-add-user-group.png)
+    ![[条件付きアクセス] セクションの [Exchange Online] オプションが強調表示された設定ブレードのスクリーンショット](../media/MAM-conditional-access-1.png)
 
-5.  前の手順で選択したユーザー グループのうち、このポリシーの影響を受けないようにするユーザーがいるとします。 このような場合、ユーザーのグループを除外ユーザー グループ一覧に追加します。 **[Exchange Online]** ブレードで、**[Exempted user groups]** (除外するユーザー グループ) を選択します。 **[ユーザー グループの追加]** を選択してユーザー グループの一覧を開きます。 このポリシーから除外するグループを選択します。  
+6. **[許可されているアプリ]** ブレードの **[Allow apps that support Intune app policies]** (Intune アプリ ポリシーをサポートするアプリを許可する) オプションを選択して、Exchange Online へのアクセスを Intune アプリ保護ポリシーでサポートされているアプリにのみ許可します。 このオプションを選択すると、サポートされるアプリの一覧が表示されます。
+
+    >[!NOTE]
+    >iOS と Android の組み込みのメール クライアントを含め、Exchange Online に接続するすべての Exchange Active Sync メール クライアントは、電子メールを送受信できなくなります。 ユーザーには、Outlook メール アプリを使用する必要があることを知らせる&1; 通の電子メールが送信されます。
+
+7. このポリシーをユーザーに適用するには、**[制限対象のユーザー グループ]** ブレードを開き、**[ユーザー グループの追加]** を選択します。 このポリシーを適用する&1; つまたは複数のユーザー グループを選択します。
+
+    ![[ユーザー グループの追加] オプションが強調表示されている [制限対象のユーザー グループ] ブレードのスクリーンショット](../media/mam-ca-add-user-group.png)
+
+8. 前の手順で選択したユーザー グループのうち、このポリシーの影響を受けないようにするユーザーがいるとします。 このような場合、ユーザーのグループを除外ユーザー グループ一覧に追加します。 **[Exchange Online]** ブレードで、**[Exempted user groups]** (除外するユーザー グループ) を選択します。 **[ユーザー グループの追加]** を選択してユーザー グループの一覧を開きます。 このポリシーから除外するグループを選択します。  
 
 ## <a name="modify-an-existing-policy"></a>既存のポリシーを変更する
 ### <a name="add-or-delete-user-groups"></a>ユーザー グループを追加または削除する
@@ -50,10 +61,10 @@ ms.openlocfilehash: a0c0bac5082119b2cfa1518934dea8cdc3f75067
 ## <a name="next-steps"></a>次のステップ
 [最新の認証を使用していないアプリをブロックする](block-apps-with-no-modern-authentication.md)
 ### <a name="see-also"></a>関連項目
-[MAM ポリシーでアプリ データを保護する](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+[アプリ保護ポリシーを使用したアプリ データの保護](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)に関する記事
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

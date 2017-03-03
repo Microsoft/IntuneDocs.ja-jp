@@ -1,39 +1,45 @@
 ---
-title: "Android デバイスが root 化され、接続できない | Microsoft Intune"
+title: "Android デバイスが root 化され、接続できない"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: 5b7586c57f3f2825edfa9ae45a3fdec9af0fe956
+ms.sourcegitcommit: 3bebc6cb1d44e99f8337a057eadfae676904ea3d
+ms.openlocfilehash: 27b57f7f8723a1271442b4ed18e219660959b0a8
 
 
 ---
 
+# <a name="your-android-device-is-rooted-so-you-cant-connect"></a>Android デバイスが root 化され、接続できない
 
-# <a name="your-android-device-is-rooted-and-you-cant-connect"></a>Android デバイスが root 化され、接続できない
+デバイスが _root 化_されているというメッセージが表示されると、このページにリダイレクトされます。
 
-Android デバイスが root 化されている場合、そのデバイスが会社のリソースとセキュリティを侵害するおそれのある特定の機能を有効にするよう変更されています。 このメッセージが表示された場合は、問題が解決されるまで、会社のリソースにアクセスできません。
+Android デバイスが "root 化" されている場合、存在しない可能性のある機能を有効化するようにデバイスのソフトウェアの一部が変更されていることを意味します。 このような変更は、電子メールやドキュメントなどの組織のリソースに対する安全なアクセスを侵害する場合があります。 そのため、root 化されたデバイスは問題が修正されるまで、こうしたリソースにアクセスできなくなります。  
 
-意図的にデバイスを root 化した記憶がない場合は、デバイスが root 化される可能性のある他の理由を確認します。
+デバイスが root 化される一般的な理由はいくつかあります。
 
-- root 化検出ソフトウェアがセキュリティ リスクと認識するアプリをデバイスにインストールした可能性があります。 アプリをインストールした後にこのメッセージが表示された場合は、そのアプリをアンインストールしてメッセージが表示されなくなるかどうか確認してみてください。
+- root 化検出ソフトウェアがセキュリティ リスクと認識するアプリをデバイスにインストールした可能性があります。 アプリをインストールした直後にこのメッセージが表示される場合は、そのアプリをアンインストールしてください。
 
-- デバイスの製造元が、root 化検出ソフトウェアがセキュリティ リスと認識するソフトウェアをデバイスにインストールした可能性があります。 IT 管理者に問い合わせる必要があります。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
+- デバイスの製造元が、root 化検出ソフトウェアがセキュリティ リスと認識するソフトウェアをデバイスにインストールした可能性があります。 この場合は、IT 管理者に問い合わせる必要があります。 連絡先情報については、[ポータル サイトの Web サイト](http://portal.manage.microsoft.com)をご確認ください。
+
+デバイスを自分で root 化した場合は、処理を元に戻し、デバイスを root 化されていない状態に戻す必要があります。
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Jan17_HO5-->
 
 
