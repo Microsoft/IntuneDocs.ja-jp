@@ -1,5 +1,5 @@
 ---
-title: "デバイスのコンプライアンス ポリシーを作成する | Microsoft Intune"
+title: "デバイスのコンプライアンス ポリシーを作成する | Microsoft Docs"
 description: "会社データのアクセスに使用するモバイル デバイスや PC をセキュリティで保護するためにコンプライアンス ポリシーを作成します。"
 keywords: 
 author: andredm7
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: b21fcbf10659e072d8eb73703dfdd6695ac9a9b0
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 21875001129da8f5ca01869fa69960f18ae28c56
 
 
 ---
 
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Microsoft Intune でデバイスのコンプライアンス ポリシーを作成する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 このトピックでは、デバイスが準拠しているとみなされるために従う必要があるコンプライアンス ポリシーを作成するために使用できる手順について説明します。
 
 ##  <a name="step-1-add-a-new-policy"></a>手順 1: 新しいポリシーを追加する
@@ -28,7 +32,7 @@ ms.openlocfilehash: b21fcbf10659e072d8eb73703dfdd6695ac9a9b0
 
   ![上部の [追加] メニューを示している Intune 管理コンソールのコンプライアンス ポリシー ページ](./media/intune-sa-3a-add-compliance-policy.png)
 
-##  <a name="step-2-configure-settings"></a>手順 2: 設定を構成する
+##  <a name="step-2--configure-settings"></a>手順 2: 設定を構成する
 **[ポリシーの作成]** ページで、必要に応じて以下の設定を有効にします。
   -   パスワードや暗号化などのシステムのセキュリティ設定
   -   デバイスが改造されているかどうか、Windows デバイス正常性構成証明書サービスによって正常と報告されているかどうかなどのデバイスのヘルスの設定

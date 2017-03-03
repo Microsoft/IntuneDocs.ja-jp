@@ -1,11 +1,11 @@
 ---
-title: "アプリとデータの保護 | Microsoft Intune"
+title: "アプリとデータの保護 | Microsoft Docs"
 description: "このトピックでは、さまざまな Intune の機能と、会社のアプリとデータを保護するために使用可能な機能について説明します。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,17 @@ ms.technology:
 ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: 4f8cb86126a982b21ad3288108295d1784f08df3
+ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
+ms.openlocfilehash: 16e4b6ddd1df9c56e36318dfd3050d1a1f627adc
 
 
 ---
 
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>Microsoft Intune でアプリとデータを保護する
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune は、複数のテクノロジ層を介して会社のデータを保護します。 ID 層では、条件付きアクセスによりサービスへのアクセスを保護します。管理対象のデバイスが条件を満たした場合にのみアクセスが許可されます。 クライアント アプリケーション層では、モバイル アプリ管理 (MAM) がデータ紛失を防止します。保護されていないアプリや記憶域にデータを移動する行為を禁止し、デバイスをなくしたり、盗難に遭ったりした場合、データを消去します。 これらの 2 つの保護層は合わせて使用し、データをセキュリティで保護し、モバイルの生産性を維持することが推奨されます。
 
@@ -54,6 +56,6 @@ Microsoft Office アプリのようなアプリには、Intune アプリ SDK が
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "アプリ ラッピング ツールで Android アプリをラップする |Microsoft Intune"
+title: "アプリ ラッピング ツールで Android アプリをラップする | Microsoft Docs"
 description: "この記事の情報を使用して、アプリ自体のコードを変更することなく、Android アプリをラップする方法について説明します。 モバイル アプリ管理ポリシーを適用できるように、アプリを準備します。"
 keywords: 
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,17 @@ ms.technology:
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: e8ca141b31104fb5759d9796f19b618debe74752
+ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
+ms.openlocfilehash: 9a9899e192db1488c9a2c0fd38ffed6cef625c34
 
 
 ---
 
 # <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでモバイル アプリケーションを管理するために Android アプリを準備する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Android 用 Microsoft Intune アプリ ラッピング ツールを使用して社内 Android アプリの動作を変更すれば、アプリ自体のコードを変更しなくてもアプリの機能を制限できます。
 
@@ -140,6 +143,6 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

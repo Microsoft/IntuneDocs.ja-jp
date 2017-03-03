@@ -1,22 +1,25 @@
 ---
-title: "Intune に iOS デバイスを登録する | Microsoft Intune"
+title: "Intune に iOS デバイスを登録する | Microsoft Docs"
 description: "Intune に iOS デバイスを登録する方法について説明します"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
-ROBOTS: 
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 7d11e716750c4920234de5419e262d6c2c6e2d44
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: c7fa06ea443523c51a79c33af7e8094d7a7777c5
 
 
 ---
@@ -26,7 +29,10 @@ ms.openlocfilehash: 7d11e716750c4920234de5419e262d6c2c6e2d44
 
 職場または学校が Microsoft Intune を使用している場合は、お使いの iOS デバイスを登録して、会社の電子メール、ファイル、またその他のリソースにアクセスできます。 デバイスを登録すると、IT 部門が職場や学校のリソースを管理してそれらの安全性を保持する一方で、ユーザーは好みのデバイスを使用して作業を進めることができます。 登録の詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)」を参照してください。
 
-Mac OS X デバイスを登録しようとしている場合は、「[Intune に Mac OS X デバイスを登録する](enroll-your-device-in-intune-mac-os-x.md)」を参照してください。
+<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+
+> [!NOTE]
+> MacBook Pro や iMac などの macOS デバイスを実際に登録してみる場合は、[代わりにこちらの説明をご覧ください](enroll-your-device-in-intune-macos.md)。
 
 **開始する前に:**
 
@@ -53,7 +59,7 @@ Mac OS X デバイスを登録しようとしている場合は、「[Intune に
 
 5.  **[次に行うこと]** 画面で、登録中に行う内容を確認し、**[登録]** をタップします。
 
-    ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
+     ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
 
 6.  **[プロファイルのインストール]** 画面で、**[インストール]** をタップし、入力を求められたらパスコードを入力します。
 
@@ -65,15 +71,15 @@ Mac OS X デバイスを登録しようとしている場合は、「[Intune に
 
 8.  **[インストール]** をタップすると、警告を読んだことになります。
 
-    ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
+       ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
 
 9.  **[信頼]** をタップします。
 
-    ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
+       ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
 
 10.  プロファイルのインストールが完了したことを示す画面に変わったら、**[完了]** をタップします。
 
-    ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
+     ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
 
     “デバイス登録中” というメッセージが画面に表示されます。
 
@@ -91,11 +97,10 @@ Mac OS X デバイスを登録しようとしている場合は、「[Intune に
 
 これでデバイスが Intune に登録され、ポータル サイト アプリに戻ります。
 
-
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

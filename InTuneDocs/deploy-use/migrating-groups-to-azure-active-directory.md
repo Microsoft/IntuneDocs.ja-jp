@@ -1,120 +1,104 @@
 ---
-title: "Azure Active Directory グループへの移行 | Microsoft Intune"
+title: "Azure Active Directory グループへの移行 | Microsoft Docs"
 description: "Intune から Azure AD へのグループの移行方法"
 keywords: 
-author: Mtillman
-ms.author: mtillman
+author: robstackmsft
+ms.author: robstack
 manager: angerobe
-ms.date: 10/10/2016
+ms.date: 12/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: e14bbadc4293b7b963197b35704a7170e4fc29e8
+ms.sourcegitcommit: dd4c8f1d810338912b4926be8419ccf9a52ae722
+ms.openlocfilehash: 8d3900da91c89700b97d8774f893d82d3a74ea83
 
 
 ---
 
-## <a name="the-new-admin-experience-for-groups"></a>グループに対する新しい管理者の操作環境
-    
-Enterprise Mobility とセキュリティ全体でグループおよびターゲットの操作環境を統一した方がよいというフィードバックに基づき、Intune のグループを Azure Active Directory ベースのセキュリティ グループに変換しています。 これにより、Intune と Azure Active Directory (Azure AD) でグループ管理が統一されます。 新しいエクスペリエンスでは、サービス間でグループを複製する必要がなく、PowerShell と Graph を使用する拡張性が提供されます。 
+# <a name="a-new-way-of-using-groups-in-intune"></a>Intune でグループを使う新しい方法
 
-### <a name="how-and-when-will-i-migrate-to-the-new-groups-experience"></a>新しいグループ エクスペリエンスへの移行の方法と時期
-現在のお客様は、2016 年 12 月以降に時間をかけて移行されます。 お客様のグループが移行される前に、お知らせいたします。 移行に問題がある場合は、移行チーム ([intunegrps@microsoft.com](mailto:intunegrps@microsoft.com)) に問い合わせてください。
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-### <a name="what-new-features-will-be-available-to-me"></a>使用できるようになる新機能
-次のような新機能が導入されます。 
- 
--    すべての種類の展開について、Azure AD セキュリティ グループが Intune でサポートされるようになります。 
--    Azure AD セキュリティ グループは、ユーザーだけでなくデバイスのグループ化をサポートするようになります。
--    Azure AD セキュリティ グループは、Intune のデバイス属性での動的グループをサポートするようになります。 たとえば、iOS などのプラットフォームに基づいて動的にデバイスをグループ化できます。 つまり、組織で新しい iOS デバイスが登録されると、iOS 動的デバイス グループに自動的に追加されます。
--    Azure AD と Intune 全体で共有されるグループ管理エクスペリエンス。
-- *Intune サービス管理者ロール*が Azure AD に追加され、Intune のサービス管理者が Azure AD でグループ管理タスクを実行できます。
+ユーザーからのフィードバックに対応して、Microsoft Intune でグループを操作する方法にいくつかの変更が行われています。
+お客様のすべての Intune グループを Azure Active Directory セキュリティ グループに移行する作業を行っています。
 
- 
-### <a name="what-intune-functionality-wont-be-available"></a>使用できない Intune の機能
-グループ エクスペリエンスは向上しますが、移行後に使用できなくなる Intune の機能がいくつかあります。
+お客様にとってのメリットは、すべての Enterprise Mobility + Security と Azure AD アプリで同じグループ エクスペリエンスを使えるようになることです。 さらに、PowerShell と Graph API を使って、この新しい機能を拡張およびカスタマイズすることができます。
 
-#### <a name="group-management-functionality"></a>グループ管理機能
+Azure AD セキュリティ グループは、ユーザーとデバイスの両方に対するあらゆる種類の Intune 展開をサポートします。 さらに、ユーザーが指定した属性に基づいて自動的に更新する Azure AD の動的グループを使用できます。 たとえば、iOS 9 搭載デバイスのグループを作成できます。 IOS 9 を搭載している新しいデバイスが登録されると常に、動的グループに自動的に追加されます。
 
--   新しいグループを作成する時点では、メンバーまたはグループを除外できません。 ただし、Azure AD の動的グループを使用すると、条件に基づいてメンバーを除外する高度なルールを、属性を使用して作成することができます。 たとえば、次の高度なルールを作成することで、肩書に "Assistant" が付いているユーザーを除く、営業部内のすべてのユーザーをセキュリティ グループに含めることが可能です。`(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`。 詳細については、「[属性を利用した高度なルールの作成](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)」を参照してください。
--   **グループ化を解除されたユーザー**と**グループ化を解除されたデバイス**のグループはサポートされません。 これらのグループは移行されません。
+## <a name="when-is-this-happening"></a>移行の時期
 
-#### <a name="group-dependent-functionality"></a>グループの依存機能
+移行プロセスは現在進行中です。 お客様には、実際に移行が行われる前に通知されます。
+既に移行が済んだお客様には、従来の Intune コンソールからグループにアクセスしようとすると次のようなメッセージが表示されます。
 
--   サービス管理者の役割は、**グループ管理**アクセス許可を持ちません。
--   Exchange ActiveSync デバイスをグループ化することはできません。  **EAS で管理されているすべてのデバイス** グループは、グループ ビューからレポート ビューに変換されます。
--  レポートでのグループによるピボット処理は使用できません。
--  カスタム グループを対象とした通知規則は使用できません。
+![グループが移行されたことを示すメッセージ。](http://i.imgur.com/72KRaXj.png)
 
-### <a name="what-should-i-do-to-prepare-for-this-change"></a>この変更に対する準備
- 簡単に切り替えができるように以下のことをお勧めします。
- 
-- 移行の前に、不要な Intune グループをクリーンアップします。
-- グループでの除外条件の使用を評価した上で、除外を使用しなくても済むように、または高度なルールを使用して同じ目的を達成できるようにグループを再設計する方法を検討します。
--  Azure AD でのグループ作成権限を持たない管理者がいる場合は、Azure AD 管理者に依頼して、その管理者を **Intune サービス管理者** Azure AD の役割に追加します。
+## <a name="what-wont-be-available"></a>使用できなくなる機能
 
-Azure AD セキュリティ グループの詳細について学習することもできます。
--  概要については、「[Azure Active Directory グループを利用したリソースへのアクセス管理](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/)」を参照してください。
--  Azure AD グループを作成し管理する方法については、「[Azure Active Directory におけるグループの管理](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/)」を参照してください。
--  セキュリティ グループに対する高度なルールの詳細については、「[属性を使用した高度なルールの作成](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)」を参照してください。
+Intune グループの既存機能の一部は、Azure AD では利用できません。
 
-> [!NOTE]
-Azure AD セキュリティ グループに関するドキュメントには、デバイスのグループの作成に関する説明がありません。 この機能は、Intune グループの移行の前に Azure AD で有効にされることになります。
+- Intune の**グループに属していないユーザー** グループと**グループに属していないデバイス** グループは、移行されません。
+- 現在 Intune コンソールに存在する、グループから**特定のメンバーを除外**するオプションは、Azure ポータルにはありません。 ただし、Azure AD セキュリティ グループと高度なルールを使って、この動作を複製できます。 たとえば、次の高度なルールを使うことで、肩書に "Assistant" が付いているユーザーを除く、営業部内のすべてのユーザーをセキュリティ グループに含めることが可能です。`(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`。
+- Intune コンソールに組み込まれている **Exchange ActiveSync で管理されているすべてのデバイス** グループは、Azure AD には移行されません。 ただし、EAS で管理されたデバイスに関する情報には、Azure ポータルからもアクセスできます。
+- 従来の Intune コンソールでグループによりレポートをフィルター処理することはできなくなります。
+<!--- - Custom group targeting of notification rules will not be available. ROB I took this out as I couldn't replicate the behavior. --->
 
-## <a name="migration-details"></a>移行の詳細
-Intune グループが Azure AD セキュリティ グループに移行する方法の詳細を次に示します。
+## <a name="how-to-get-ready"></a>準備する方法
 
-### <a name="migration-of-existing-groups"></a>既存のグループの移行
+- Azure AD のセキュリティ グループとそのしくみの詳細については、次の Azure AD トピックをご覧ください。
+    -  [Azure Active Directory グループを利用したリソースへのアクセス管理](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/)
+    -  [Azure Active Directory でのグループの管理](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/)
+    -  [属性を利用した高度なルールの作成](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)
+- 移行が行われる前に、使われなくなった Intune グループを削除することを検討してください。
+-  グループを作成する必要があるすべての管理者が、**Intune サービス管理者** Azure AD ロールに追加されていることを確認します。 Azure AD サービス管理者ロールには**グループの管理**アクセス許可がないことに注意してください。
+-  **[特定のメンバーを除外]** オプションが有効なグループを使っている場合は、除外を必要としないようにグループを再設計できるかどうか、または Azure AD クエリの高度なルールを使って同じ結果を実現できるかどうかを、検討してください。
 
-| Intune グループ...|...Azure AD セキュリティ グループ|
+
+## <a name="what-happens-to-intune-groups"></a>Intune グループに対する移行処理の内容
+
+| Intune のグループ|Azure AD のグループ|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
-|Intune ポリシーの適用対象となる静的なユーザー グループ|同じユーザーを含む静的な Azure AD セキュリティ グループ|
-|Intune ポリシーの適用対象となる動的なユーザー グループ|Azure AD セキュリティ グループの階層構造を持つ静的な Azure AD セキュリティ グループ|
-|Intune ポリシーの適用対象となる静的なデバイス グループ|デバイスを含む静的な Azure AD セキュリティ グループ|
-|Intune ポリシーの適用対象となる、デバイスの属性を持つ動的なデバイス グループ|デバイス属性を持つ動的な Azure AD セキュリティ グループ|
-|"含める条件" 付きのグループ|Intune で含める条件により許容されたグループと任意の静的/動的なメンバーを含む、別個の静的な Azure AD セキュリティ グループ|
-|"除外条件" 付きのグループ|...移行されません。 Azure AD での静的なグループの作成時に除外条件はサポートされません。 Azure AD で動的なグループを作成する場合は、除外条件を使用できます。|
-|Intune ポリシーで使用する既定のグループ。**すべてのユーザー**、**グループに属していないユーザー**、**すべてのデバイス**、**グループに属していないデバイス**、**すべてのコンピューター**、**すべてのモバイル デバイス**、**MDM で管理されているすべてのデバイス**、**EAS で管理されているすべてのデバイス**。  |Azure AD セキュリティ グループ。 使用されていない既定のグループがある場合は、必要に応じて、お客様が動的なグループを使用して作成する必要があります。|
+|静的なユーザー グループ|静的な Azure AD セキュリティ グループ|
+|動的なユーザー グループ|Azure AD セキュリティ グループの階層構造を持つ静的な Azure AD セキュリティ グループ|
+|静的なデバイス グループ|静的な Azure AD セキュリティ グループ|
+|動的なデバイス グループ|静的な Azure AD セキュリティ グループ|
+|"含める条件" 付きのグループ|Intune の "含める条件" のすべての静的メンバーまたは動的メンバーを含む静的な Azure AD セキュリティ グループ|
+|"除外条件" 付きのグループ|移行されません|
+|組み込みグループ: **すべてのユーザー**、**グループに属していないユーザー**、**すべてのデバイス**、**グループに属していないデバイス**、**すべてのコンピューター**、**すべてのモバイル デバイス**、**MDM で管理されているすべてのデバイス**、**EAS で管理されているすべてのデバイス**|Azure AD セキュリティ グループ。|
 
-### <a name="changes-in-hierarchical-views"></a>階層ビューの変更
-Intune の Intune 親子リレーションシップでのグループの階層ビューは、スーパーセットとサブセットのリレーションシップでした。一方、Azure AD の場合はこれに該当しません。 子は、親に含まれていないメンバーを持つことができます。 Azure AD のグループはまた、本質的に循環型です。親グループは、子グループの子になることができます。
+Intune では、すべてのグループに親グループが必要です。 グループには、親グループのメンバーのみを含めることができます。 Azure AD の子グループには、親グループに含まれないメンバーを含めることができます。
 
-### <a name="attribute-conversion-during-migration"></a>移行中の属性の変換
 属性は、グループの定義時に使用できるデバイス プロパティです。 次の表では、条件を Azure AD セキュリティ グループに移行する方法について説明します。
 
-| Intune 属性|Azure AD 属性|
+| Intune での属性|Azure AD での属性|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
-|デバイス グループの組織単位 (OU) 属性|動的なグループの OU 属性。 表示対象のテナント要素の 1 つとしてそれを追加することで、各テナントに関連する管理者は属性値を利用できるようになります。|
-|デバイス グループのドメイン名属性|動的なグループのドメイン名属性。 表示対象のテナント要素の 1 つとしてそれを追加することで、各テナントに関連する管理者は属性値を利用できるようになります。|
+|デバイス グループの組織単位 (OU) 属性|動的なグループの OU 属性。|
+|デバイス グループのドメイン名属性|動的なグループのドメイン名属性。|
 |ユーザー グループの属性としてセキュリティ グループ|Azure AD の動的クエリで属性を使用することはできません。 動的なグループには、ユーザーまたはデバイス固有の属性のみを含めることができます。|
 |ユーザー グループに対するマネージャー属性|動的グループの *manager* 属性に対する高度なルール|
 |親ユーザー グループのすべてのユーザー|そのグループをメンバーとして含む静的なグループ|
 |親デバイス グループのすべてのモバイル デバイス|そのグループをメンバーとして含む静的なグループ|
-|Microsoft Intune ダイレクト管理機能で管理されているすべてのモバイル デバイス|動的なグループの値として 'MDM' が使用される Management Type 属性|
-|EAS によって管理されているすべてのモバイル デバイス|Azure AD では、EAS デバイスをグループ化することはできません。 **EAS で管理されているすべてのデバイス** グループは、グループ ビューからレポート ビューに変換されます。|
+|Intune によって管理されているすべてのモバイル デバイス|動的なグループの値として 'MDM' が使用される Management Type 属性|
 |静的なグループ内で入れ子になったグループ |静的なグループ内で入れ子になったグループ|
 |動的なグループ内で入れ子になったグループ|入れ子のレベルが 1 である動的なグループ|
 
+## <a name="what-happens-to-policies-and-apps-youve-already-deployed"></a>既に展開されているポリシーおよびアプリに対する処理
 
-## <a name="migration-of-policies"></a>ポリシーの移行
-グループの移行が行われている間、Intune コンソールで引き続きポリシーを管理することができます。 Intune コンソールには、グループの管理を行うことになる Azure 管理コンソールへのリンクが追加されます。 ポリシーは、古い Intune グループに対応する移行済み AD セキュリティ グループに引き続き展開されます。
+ポリシーとアプリは、移行前と同じように、引き続きグループに展開されます。 ただし、これらのグループの管理は、従来の Intune コンソールではなく、Azure ポータルから行うようになります。
 
-Intune 機能のすべてが Azure 管理ポータルに移行されると (2017 年の第 1 四半期頃)、Azure 管理ポータルでポリシーとグループを管理することになります。
 
+## <a name="how-to-get-more-information"></a>詳しい情報の入手方法
+
+[intunegrps@microsoft.com](mailto:intunegrps@microsoft.com) で移行チームにお問い合わせください。    
      
-### <a name="see-also"></a>関連項目
-[Azure Active Directory グループを利用したリソースへのアクセス管理](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/)
-
-[Azure Active Directory でのグループの管理](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/)
-
-[属性を利用した高度なルールの作成](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)
 
 
 
-<!--HONumber=Nov16_HO1-->
+
+<!--HONumber=Dec16_HO4-->
 
 

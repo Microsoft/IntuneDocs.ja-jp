@@ -1,9 +1,9 @@
 ---
-title: "Exchange Online 用の Exchange Connector | Microsoft Intune"
+title: "Exchange Online 用の Exchange Connector | Microsoft Docs"
 description: "Exchange ActiveSync モバイル デバイス管理 (MDM) をサポートするために、Intune を Office 365 Exchange サービスに接続する。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
@@ -13,14 +13,17 @@ ms.technology:
 ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: b6d67391b50954e591817610164d8fe80fda8fd5
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: b322f368637e39da1ab10b41dd724859fb49e1f2
 
 
 ---
 
 # <a name="configure-the-intune-service-to-service-connector-for-exchange-online"></a>Exchange Online 用の Intune Service to Service Connector の構成
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune と Exchange Online サービスまたは新しい Exchange Online Dedicated サービスを接続するには、この情報を使用します。 Exchange Online Dedicated 環境が**新しい**バージョンか**従来の**バージョンかを確認するには、アカウント マネージャーに問い合わせてください。 Intune は、サブスクリプションごとに任意の種類の Exchange Connector 接続を 1 つだけサポートします。
 

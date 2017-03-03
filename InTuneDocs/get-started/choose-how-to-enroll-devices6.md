@@ -1,25 +1,28 @@
 ---
-title: "モバイル デバイスの登録方法の選択 | Microsoft Intune"
+title: "モバイル デバイスの登録方法の選択 | Microsoft Docs"
 description: "いくつかの簡単な質問に答えることによって、Intune でモバイル デバイスを登録する方法を決定する"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/14/2016
-ms.topic: article
+ms.date: 02/14/2017
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 40262e47-1ab4-437d-8ca5-c89b5022f91f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
+ms.custom: intune-classic EXPIERIMENT
 translationtype: Human Translation
-ms.sourcegitcommit: 3a00f9cdfb137306a28b33f9d1acdb6bc108670f
-ms.openlocfilehash: 7859266f639e148a032b6dd44d9313733aaa0269
+ms.sourcegitcommit: b4295fbc9df88fa537f18b1280dfcc32702ccc51
+ms.openlocfilehash: 173e95ac2d0039accb3465386bf67fb3dee90723
 
 
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>モバイル デバイスの登録方法の選択
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 次の一連の質問に答えることで、管理するデバイスの最適な登録方法が決まります。
 
@@ -45,6 +48,6 @@ ms.openlocfilehash: 7859266f639e148a032b6dd44d9313733aaa0269
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 

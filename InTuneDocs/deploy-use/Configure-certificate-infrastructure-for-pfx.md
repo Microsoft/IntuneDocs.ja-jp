@@ -1,5 +1,5 @@
 ---
-title: "PFX の証明書インフラストラクチャを構成する | Microsoft Intune"
+title: "PFX の証明書インフラストラクチャを構成する | Microsoft Docs"
 description: ".PFX 証明書プロファイルを作成および展開します。"
 keywords: 
 author: robstackmsft
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7d1f37a2ba2e634fb75058d33eaaccf3aa5845b0
-ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 12773352970deeacf30b1336a4e560e08b400ee3
 
 
 
 ---
 # <a name="configure-certificate-infrastructure"></a>証明書インフラストラクチャを構成する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 このトピックでは、.PFX 証明書プロファイルを作成して展開するために必要なものについて説明します。
 
 組織で証明書ベースの認証を行うには、エンタープライズ証明機関が必要です。
@@ -31,7 +35,7 @@ ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
 
 -  証明機関と通信できるコンピューターで実行する Intune 証明書コネクタ。
 
-## <a name="onpremises-infrastructure-description"></a>オンプレミス インフラストラクチャの説明
+## <a name="on-premises-infrastructure-description"></a>オンプレミス インフラストラクチャの説明
 
 
 -    **Active Directory ドメイン**: このセクションで示されているすべてのサーバー (Web アプリケーション プロキシ サーバーを除く) は、Active Directory ドメインに参加する必要があります。
@@ -65,7 +69,7 @@ ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
 - **タスク 1** - 証明機関で証明書テンプレートを構成する。
 - **タスク 2** - Intune 証明書コネクタを有効にし、インストールし、構成する。
 
-### <a name="task-1-configure-certificate-templates-on-the-certification-authority"></a>タスク 1 - 証明機関で証明書テンプレートを構成する
+### <a name="task-1---configure-certificate-templates-on-the-certification-authority"></a>タスク 1 - 証明機関で証明書テンプレートを構成する
 このタスクでは、証明書テンプレートを公開します。
 
 ##### <a name="to-configure-the-certification-authority"></a>証明機関を構成するには
@@ -104,7 +108,7 @@ ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
 
 4.  CA コンピューターで、Intune 証明書コネクタをホストするコンピューターが、.PFX プロファイルの作成で使用するテンプレートにアクセスできるように、登録アクセス許可を持つことを確認します。 CA コンピューター プロパティの **[セキュリティ]** タブでそのアクセス許可を設定します。
 
-### <a name="task-2-enable-install-and-configure-the-intune-certificate-connector"></a>タスク 2 - Intune 証明書コネクタを有効にし、インストールし、構成する
+### <a name="task-2---enable-install-and-configure-the-intune-certificate-connector"></a>タスク 2 - Intune 証明書コネクタを有効にし、インストールし、構成する
 このタスクでは次のことを行います。
 
 証明書コネクタをダウンロードし、インストールして、構成します。
@@ -156,6 +160,6 @@ ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

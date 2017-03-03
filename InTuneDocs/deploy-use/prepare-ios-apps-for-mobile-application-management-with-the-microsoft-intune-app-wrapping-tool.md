@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b0abdd44716f8fe0ff8298fa8f6b9f4197964cb9
-ms.openlocfilehash: 06f0f7c436eef63a63182196d4d124b2d928a083
+ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
+ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
 
 
 ---
@@ -107,6 +108,9 @@ Intune によってラップされたアプリを配布するには、次が必�
 
   ![社内およびアドホック証明書を選択する](../media/app-wrapper/iOS-signing-cert-3.png)
 
+>[!NOTE]
+>アプリを配布する予定がなく、内部でテストのみ行いたい場合、本番用の証明書の代わりに iOS アプリ開発用の証明書を使用できます。 開発用の証明書を使用する場合、モバイルのプロビジョニング プロファイルがアプリをインストールするデバイスを参照するようにしてください。
+
 7. ページの下部にある **[Next]** (次へ) をクリックします。
 
 8. macOS コンピューターでキーチェーン アクセス アプリケーションを使用して**証明書署名要求 (CSR)** を作成する方法を確認します。
@@ -131,11 +135,12 @@ Intune によってラップされたアプリを配布するには、次が必�
 
 14. ダウンロードした証明書ファイルをダブルクリックして、証明書をキーチェーンに追加します。
 
-15. もう一度、**キーチェーン アクセス**を開きます。 キーチェーン アクセス ウィンドウの右上の検索バーで **"iPhone"** を検索して、証明書を見つけます。 項目を右クリックして開いたメニューから、**[Get Info]** (情報を取得する) をクリックします。
+15. もう一度、**キーチェーン アクセス**を開きます。 右上の検索バーに証明書の名前を入力して探します。 項目を右クリックして開いたメニューから、**[Get Info]** (情報を取得する) をクリックします。 例の画面では、本番用の証明書の代わりに開発用の証明書を使用しています。
+
 
   ![証明書をキーチェーンに追加する](../media/app-wrapper/iOS-signing-cert-8.png)
 
-16. 情報ウィンドウが表示されます。 一番下までスクロールし、**[Fingerprints]** (指紋) ラベルの下を確認します。 アプリ ラッピング ツールの -c パラメーターとして使用するため、**[SHA1]** 文字列をコピーします。
+16. 情報ウィンドウが表示されます。 一番下までスクロールし、**[Fingerprints]** (指紋) ラベルの下を確認します。 アプリ ラッピング ツールの "-c" 引数として使用するため、**[SHA1]** 文字列 (図ではぼかしています) をコピーします。
 
   ![証明書をキーチェーンに追加する](../media/app-wrapper/iOS-signing-cert-9.png)
 
@@ -147,7 +152,7 @@ Intune によってラップされたアプリを配布するには、次が必�
 
 2. **[Certificates, IDs & Profiles]** (証明書、ID、プロファイル) をクリックします。
 
-3. をクリックして ![右上隅の Apple Developer ポータルのプラス記号、](../media/app-wrapper/iOS-signing-cert-2.png) iOS プロビジョニング プロファイルを追加します。
+3. をクリックして ![右上隅の Apple Developer ポータルのプラス記号をクリックして、](../media/app-wrapper/iOS-signing-cert-2.png) iOS プロビジョニング プロファイルを追加します。
 
 4. **[Distribution]** (配布) の下にある**[In House]** (社内) プロビジョニング ファイルの作成を選択します。
 
@@ -397,6 +402,6 @@ iOS 用アプリ ラッピング ツールで権利のエラーが表示され�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

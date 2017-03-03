@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/13/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 77f1af3a07e5a5758227c81010ce853906803b08
-ms.openlocfilehash: f103a919d0708c2925cb6af4cf7231ed05029e46
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 2191295407e0c1bb2c3861b8a8d168dd3697da45
 
 
 ---
@@ -24,9 +25,11 @@ ms.openlocfilehash: f103a919d0708c2925cb6af4cf7231ed05029e46
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+このトピックでは、管理者が Intune ポータル サイト アプリとポータル サイト Web サイトをカスタマイズする方法を説明します。
+
 ユーザーは、Intune ポータル サイトを使用して、会社のデータにアクセスしたり、デバイスの登録、アプリケーションのインストール、IT 部門からのサポート情報の検索などの一般的なタスクを実行したりできます。
 
-Intune ポータル サイトは、ユーザーが会社のデータとアプリにアクセスできるようにします。 ポータル サイトは、次の 2 つの形式で使用できます。
+Intune ポータル サイトは、ユーザーが会社のデータとアプリにアクセスできるようにします。 ポータル サイトは、次の&2; つの形式で使用できます。
 
 -   **ポータル サイト アプリ**: Intune を使用して管理するデバイスで利用できるアプリケーション。 [Android](/Intune/EndUser/using-your-android-device-with-intune)、[iOS](/Intune/EndUser/using-your-iOS-or-macOS-device-with-intune) および [Windows](/Intune/EndUser/using-your-windows-device-with-intune) 用のポータル サイトの詳細を、それぞれご確認ください。
 
@@ -77,7 +80,7 @@ Intune ポータル サイトは、ユーザーが会社のデータとアプリ
 |フィールド名|詳細情報|
     |----------|----------------|
     |テーマの色|ポータル サイトに適用するテーマの色を選択します。|
-    |会社のロゴを含める|このオプションを有効にすると、ポータル サイトに表示する会社のロゴをアップロードできます。 2 つのロゴをアップロードできます。1 つは、ポータル サイトの背景が白の場合に表示するロゴ、もう 1 つは、選択したテーマの色がポータル サイトの背景に使用されている場合に表示するロゴです。 各ロゴは、.png または .jpg ファイルの種類にし、最大解像度が 400 x 100 ピクセルで、750 KB 以下のサイズにします。|
+    |会社のロゴを含める|このオプションを有効にすると、ポータル サイトに表示する会社のロゴをアップロードできます。 2 つのロゴをアップロードできます。1 つは、ポータル サイトの背景が白の場合に表示するロゴ、もう&1; つは、選択したテーマの色がポータル サイトの背景に使用されている場合に表示するロゴです。 各ロゴは、.png または .jpg ファイルの種類にし、最大解像度が 400 x 100 ピクセルで、750 KB 以下のサイズにします。|
     |[!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)] ポータル サイト アプリ用の背景を選択する|この設定は、[!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)] ポータル サイト アプリの背景のみに適用されます。|
 
 
@@ -89,6 +92,6 @@ Intune ポータル サイトは、ユーザーが会社のデータとアプリ
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

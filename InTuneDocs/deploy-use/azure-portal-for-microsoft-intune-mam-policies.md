@@ -1,9 +1,9 @@
 ---
-title: "Azure ポータルの MAM ポリシー対応 | Microsoft Intune"
+title: "Azure ポータルの MAM ポリシー対応 | Microsoft Docs"
 description: "Azure ポータルを使用してモバイル アプリ管理ポリシーを作成します。 ここで作成したポリシーは、Intune に登録されているデバイスにも未登録のデバイスにも適用できます。"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/22/2016
 ms.topic: article
@@ -13,30 +13,29 @@ ms.technology:
 ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: b377d527621693f4c231f6f8b16cab277853cdf7
+ms.sourcegitcommit: e2503c44f434e67f45064f28d1e921eb5accb0b6
+ms.openlocfilehash: 2707e3fae32e73aa17696886f493932e903ffc10
 
 
 ---
 
-# <a name="azure-portal-for-microsoft-intune-mam-policies"></a>Azure ポータルの Microsoft Intune MAM ポリシー対応
+# <a name="azure-portal-for-intune-app-protection-policies"></a>Intune アプリ保護ポリシーの Azure ポータル
 
-## <a name="use-the-azure-portal"></a>Azure ポータルを使用する
-Azure ポータルでは、モバイル アプリ管理ポリシー (MAM) を作成して管理できます。
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Azure ポータルでは、次の MAM ポリシーの作成をサポートしています。
+Azure ポータルを使用して、次のようなアプリに対してアプリ保護ポリシー作成して管理できます。
+
 - **Intune で登録および管理されている**デバイスで実行中のアプリ
 
 - どの MDM ソリューションにも**登録していない**デバイスで実行中のアプリ
 - **サード パーティの MDM ソリューションに登録済み**のデバイスで実行中のアプリ
 
 >[!IMPORTANT]
+> Azure ポータルはアプリ保護ポリシーを作成するための新しい管理コンソールです。ただし、MDM シナリオの [Intune 管理コンソール](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)を利用し、Intune に登録したデバイスのアプリをサポートするアプリ保護ポリシーを作成することもできます。
 
-
-> Intune 管理コンソールを使用してデバイスを管理している場合は、Intune に登録済みのデバイスのアプリをサポートする MAM ポリシーを [Intune 管理コンソール](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)を使用して作成できます。
-
-> Intune 管理コンソールでは、MAM ポリシー設定の一部が表示されない可能性があります。 Azure ポータルは MAM ポリシーを作成するための新しい管理コンソールです。 Intune 管理コンソールと Azure ポータルの両方で MAM ポリシーを作成した場合、Azure ポータルのポリシーがアプリに適用され、ユーザーに展開されます。
+> Intune 管理コンソールでは、アプリ保護ポリシー設定の一部が利用できない可能性があります。 また、Intune 管理コンソールと Azure ポータルの両方でアプリ保護ポリシーを作成した場合、Azure ポータルで作成されたポリシーは、Intune 管理コンソールで作成されたポリシーに優先します。 このシナリオでは、Azure ポータルアプリ保護ポリシーはアプリに適用され、ユーザーにデプロイされます。
 
 
 ## <a name="sign-in-to-the-azure-portal-and-customize-your-start-page"></a>Azure ポータルにサインインし、スタート ページをカスタマイズする
@@ -49,24 +48,25 @@ Azure ポータルでは、次の MAM ポリシーの作成をサポートして
 
     ![Azure ポータルのダッシュボードのスクリーンショット](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  **[参照]** メニューで、**[Intune]** を探します。![[Intune] が強調表示されている [参照] メニューのスクリーンショット](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
+3.  左側のメニューから **[More services]** (その他のサービス) を選択し、テキスト ボックス フィルターに**「Intune」**と入力します。
 
-4.  **[Intune]** > **[Intune モバイル アプリケーション管理]** > **[設定]** の順に選択します。
+    ![[参照] メニューのスクリーンショット、[Intune] が強調表示されています](../media/AppManagement/MAM-Azure-Portal-1.png)
 
-    ![[Intune モバイル アプリケーション管理] ブレードのスクリーンショット](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
+4.  **[Intune アプリ保護]** > **[Intune モバイル アプリケーション管理]** > **[すべての設定]** の順に選択します。
 
-    > [!TIP]
+    ![[Intune モバイル アプリケーション管理] ブレードのスクリーンショット](../media/AppManagement/MAM-Azure-Portal-2.png)
 
-    > ブレードを **[開始]** ページにピン留めするには、ブレードの **[ピン留め]** オプションを使用できます。 **[Intune モバイル アプリケーション管理ブレード]**のピン アイコンをクリックして、そのブレードを **[開始]** ページにピン留めします。
+5. (任意): ブレードを **[開始]** ページにピン留めするには、ブレードの **[ピン留め]** オプションを使用できます。 **[Intune モバイル アプリケーション管理ブレード]**のピン アイコンをクリックして、そのブレードを **[開始]** ページにピン留めします。
 
     ![ピン アイコンが強調表示されている [Intune モバイル アプリケーション管理] ブレードのスクリーンショット](../media/AppManagement/AzurePortal_MAM_PinBladeAction.png)
 
     ![Intune タイルが固定されているダッシュボードのスクリーンショット](../media/AppManagement/AzurePortal_MAM_Startboard_withMAM.png)
+
 ## <a name="next-steps"></a>次のステップ
-[モバイル アプリ管理ポリシーの作成と展開](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+[アプリ保護ポリシーを構成する準備をする](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

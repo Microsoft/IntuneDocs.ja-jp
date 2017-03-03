@@ -1,11 +1,11 @@
 ---
-title: "Intune への移行 | Microsoft Intune"
-description: 
+title: "Intune への移行 | Microsoft Docs"
+description: "以下の一般的な手順に従って、既存のエンタープライズ モビリティ管理ソリューションから Intune に移行できます。"
 keywords: 
-author: jeffgilb
-ms.author: jeffgilb
-manager: jeffgilb
-ms.date: 11/22/2016
+author: andredm7
+ms.author: andredm
+manager: angrobe
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,17 @@ ms.technology:
 ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: c5adeb2164a55d029c9d7f86490092a72f04f126
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: 43ac18d298901f24c8d6352537b285bf0108f667
 
 
 ---
 
 # <a name="migrate-to-intune"></a>Intune への移行
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 以下の一般的な手順に従って、既存のエンタープライズ モビリティ管理ソリューションから Intune に移行できます。
 
@@ -45,7 +47,7 @@ Intune に登録する前に、デバイスを既存のエンタープライズ 
 
 ## <a name="enrolling-devices-in-intune"></a>Intune にデバイスを登録する
 
-移行対象のユーザーは、会社のリソース、電子メール、アプリケーションへのアクセスを回復するため、またはアクセスできなくなるのを防ぐため、Intune に直ちに登録する必要があります。 条件付きアクセスを構成してある場合、ユーザーが Intune 登録前に電子メールに接続しようとすると、アクセスはブロックされて、登録メールが送られます。 この電子メールでは、Intune にデバイスを登録する方法が説明されています。  ユーザーは、Intune ポータル サイト アプリで、または Windows 8.1 および Windows 10 Mobile オペレーティング システムでネイティブに、Intune に登録することもできます。 プラットフォームごとの登録手順の詳細については、「[Microsoft Intune の使用に関するエンドユーザーへの通知内容](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)」を参照してください。
+移行対象のユーザーは、会社のリソース、電子メール、アプリケーションへのアクセスを回復するため、またはアクセスできなくなるのを防ぐため、Intune に直ちに登録する必要があります。 条件付きアクセスを構成してある場合、ユーザーが Intune 登録前に電子メールに接続しようとすると、アクセスはブロックされて、登録メールが送られます。 この電子メールでは、Intune にデバイスを登録する方法が説明されています。  ユーザーは、Intune ポータル サイト アプリで、または Windows 8.1 および Windows 10 Mobile オペレーティング システムでネイティブに、Intune に登録することもできます。 プラットフォームごとの登録手順の詳細については、「[Microsoft Intune の使用に関するエンドユーザーへの通知内容](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)」を参照してください。
 
 ## <a name="configure-intune-conditional-access-optional"></a>Intune の条件付きアクセスを構成する (省略可能)
 
@@ -74,6 +76,6 @@ Intune への移行に関してさらに支援が必要な場合は、 問題な
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

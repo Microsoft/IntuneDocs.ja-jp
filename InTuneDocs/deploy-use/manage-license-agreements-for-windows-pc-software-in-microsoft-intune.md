@@ -1,11 +1,11 @@
 ---
-title: "Intune ソフトウェア クライアントを実行する PC のソフトウェア ライセンス契約を管理する | Microsoft Intune"
+title: "Intune ソフトウェア クライアントを実行する PC のソフトウェア ライセンス契約を管理する | Microsoft Docs"
 description: "Intune では、Microsoft ボリューム ライセンス契約で購入したソフトウェアと、他の方法で購入したソフトウェアのライセンス契約情報を追加および管理できます。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/14/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,15 @@ ms.technology:
 ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 6eead7cd7f04641687b334c8f0c09a3af1f9b4ba
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 47c923cf145a7783a1bc2222442831fcbc0f6a47
 
 
 ---
 
-# Microsoft Intune で Windows PC ソフトウェアのライセンス契約を管理する
+# <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Microsoft Intune で Windows PC ソフトウェアのライセンス契約を管理する
 Microsoft Intune を使用すると、Microsoft ボリューム ライセンス契約で購入したソフトウェアのライセンス契約情報を追加して管理できます。 他の方法で購入した Microsoft のソフトウェアまたは Microsoft 以外のソフトウェアも管理できます。 この情報は論理的なグループに分類できます。
 
 > [!IMPORTANT]
@@ -43,7 +44,7 @@ Intune 管理者コンソールの **[ライセンス]** ワークスペース�
 > [!TIP]
 > Intune Windows PC クライアントを使用して少なくとも 1 つの Windows PC を管理するまで、**[ライセンス]** ワークスペースは管理コンソールに表示されません。
 
-## Microsoft ボリューム ライセンス契約の追加
+## <a name="add-microsoft-volume-licensing-agreements"></a>Microsoft ボリューム ライセンス契約の追加
 Intune のボリューム ライセンス契約には、Microsoft ボリューム ライセンス契約で購入したソフトウェアのライセンス情報が含まれています。 契約番号の一致するペアを入力して、Microsoft ボリューム ライセンス契約を Intune に追加できます。 契約番号または認証番号は、正しいライセンス番号または登録番号と一致している必要があります。 契約番号のペアは、ライセンス契約を購入するときに、 [ボリューム ライセンス サービス センター (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842)から入手します。
 
 1.  [Microsoft Intune 管理者コンソール](https://account.manage.microsoft.com/admin/default.aspx)で、**[ライセンス]** を選択します。
@@ -123,13 +124,13 @@ Intune でライセンス契約を追加した後で、ボリューム ライセ
 > [!NOTE]
 > どの Microsoft ボリューム ライセンス契約の **[製品タイトル]** にも **[利用不可]**と表示されます。
 
-## その他のソフトウェア ライセンス契約の追加と編集
+## <a name="add-and-edit-other-software-licensing-agreements"></a>その他のソフトウェア ライセンス契約の追加と編集
 Intune には、Microsoft ボリューム ライセンス契約に加えて、他の種類のライセンス契約を追加することもできます。 これらのライセンスには、販売店から購入した Microsoft 以外のソフトウェアと Microsoft のソフトウェアのライセンスが含まれます。
 
 > [!IMPORTANT]
 > 契約を追加するには、事前に少なくとも 1 台の Windows PC が Intune に登録されている必要があります。  また、少なくとも 1 台の登録済みコンピューターが、ライセンス契約の追加に使用するライセンス対象ソフトウェア パッケージをアップロードしている必要があります。
 
-### 他のソフトウェア ライセンス契約を追加するには
+### <a name="to-add-other-software-agreements"></a>他のソフトウェア ライセンス契約を追加するには
 
 1.  [Microsoft Intune 管理者コンソール](https://account.manage.microsoft.com/admin/default.aspx)で、**[ライセンス]** を選択します。
 
@@ -168,7 +169,7 @@ Intune には、Microsoft ボリューム ライセンス契約に加えて、�
 
 **[すべての契約]** 一覧が表示されます。
 
-## ライセンス契約の管理
+## <a name="manage-license-agreements"></a>ライセンス契約の管理
 ソフトウェア ライセンス契約をライセンス グループに追加することができます。 ライセンス グループは、組織の構造に合った単位でライセンス契約をまとめるのに便利です。 また、以前に作成したライセンス契約を削除することもできます。
 
 |||
@@ -181,6 +182,6 @@ Intune には、Microsoft ボリューム ライセンス契約に加えて、�
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

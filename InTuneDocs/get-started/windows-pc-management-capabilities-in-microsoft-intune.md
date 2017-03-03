@@ -1,26 +1,30 @@
 ---
-title: "Intune PC ソフトウェア クライアントの機能 | Microsoft Intune"
+title: "Intune PC ソフトウェア クライアントの機能 | Microsoft Docs"
 description: "Intune ソフトウェア クライアントで Windows PC を管理する場合の Intune の機能について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: 1bc5370574c038d0fe34746aa89067d06cc80c31
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 36a20feed1756ea8dde2230db81099b6c5f8c7f6
 
 
 ---
 
 # <a name="windows-pc-management-capabilities-when-you-use-the-intune-software-client"></a>Intune ソフトウェア クライアントを使用する場合の Windows PC の管理機能
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ほとんどのシナリオでは、デバイスを Microsoft Intune に登録します。そうすることで、さらに多くの機能を使用できるようになります。 ただし、PC の管理には、Intune ソフトウェアを使用することもできます。このソフトウェアでは、次の機能が利用できます。
 
 -   **[ソフトウェア更新プログラムの管理](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)** - PC を最新の状態に保ち、更新プログラムを適用する時間を決定できます。
@@ -75,6 +79,6 @@ Intune ソフトウェア クライアントのインストールの最小ソフ
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

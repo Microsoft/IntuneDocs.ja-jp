@@ -1,5 +1,5 @@
 ---
-title: "KNOX が許可するアプリとブロックするアプリ |Microsoft Intune"
+title: "KNOX が許可するアプリとブロックするアプリ | Microsoft Docs"
 description: "KNOX が許可するアプリとブロックするアプリの一覧を作成するためのカスタム プロファイル。"
 keywords: 
 author: robstackmsft
@@ -13,14 +13,17 @@ ms.technology:
 ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 9fa2de1d7e36f53415e28a7c963232eecb9bc5ca
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
 
 
 
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>カスタム ポリシーを使用して、Samsung KNOX Standard デバイス用のアプリを許可またはブロックする
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 次のいずれかを作成する Microsoft Intune のカスタム ポリシーを作成するには、このトピックの手順を使用します。
 
@@ -38,9 +41,9 @@ ms.openlocfilehash: 9fa2de1d7e36f53415e28a7c963232eecb9bc5ca
     
     - **設定の名前。** 「**PreventStartPackages**」と入力します。
     - **設定の説明。** "実行をブロックするアプリの一覧" のようなオプションの説明を入力します。
-    -   **データ型。** ドロップダウン リストで **[文字列]** を選びます。
-    -   **OMA-URI。** 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**」と入力します。
-    -   **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : , ****|** を使用できます。 (例: package1;package2;)
+    -     **データ型。** ドロップダウン リストで **[文字列]** を選びます。
+    -     **OMA-URI。** 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**」と入力します。
+    -     **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : , ****|** を使用できます。 (例: package1;package2;)
 
     他のすべてのアプリの実行中にユーザーが Google Play ストアからインストールできるアプリの一覧の場合:
 
@@ -60,7 +63,7 @@ ms.openlocfilehash: 9fa2de1d7e36f53415e28a7c963232eecb9bc5ca
 
 ## <a name="deploy-the-policy"></a>ポリシーの展開
 
-1.   **[ポリシー]** ワークスペースで、展開するポリシーを選択し、 **[展開の管理]**をクリックします。
+1.  **[ポリシー]** ワークスペースで、展開するポリシーを選択し、 **[展開の管理]**をクリックします。
 
 2.  **[展開の管理]** ダイアログ ボックスで、ポリシーを展開するユーザー グループを 1 つまたは複数選び、**[追加]** &gt; **[OK]** をクリックします。
 
@@ -72,6 +75,6 @@ ms.openlocfilehash: 9fa2de1d7e36f53415e28a7c963232eecb9bc5ca
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Managed Browser で Web アクセスを管理する |Microsoft Intune"
+title: "Managed Browser で Web アクセスを管理する |Microsoft Docs"
 description: "Managed Browser アプリケーションを展開して、Web 閲覧と他のアプリへの Web データ転送を制限します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: a85aa3ce78425f2e00479ab0e48338e5eef8aec3
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 3982f05e4c81c26d2eb8bdab3a266597d6aab4df
 
 
 ---
 
-# Microsoft Intune と Managed Browser のポリシーを使用したインターネット アクセスの管理
+# <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune と Managed Browser のポリシーを使用したインターネット アクセスの管理
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Managed Browser は、Microsoft Intune を使用して組織で展開できる、Web を参照するためのアプリケーションです。 Managed Browser ポリシーは、Managed Browser のユーザーがアクセスできる Web サイトを制限する許可リストまたはブロック リストを構成するものです。
 
 このアプリは管理対象のアプリであるため、モバイル アプリケーション管理ポリシーをアプリに適用することもできます。 これらのポリシーでは、切り取り、コピー、貼り付けの使用を制御したり、画面のキャプチャを禁止したり、ユーザーが選択したコンテンツへのリンクのみを他の管理対象アプリで開けるようにしたりします。 詳細については、「[Microsoft Intune コンソールでモバイル アプリケーション管理ポリシーを構成して展開する](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)」で説明されている方法を参照してください。
@@ -39,7 +43,7 @@ Android - Managed Browser アプリは使用できません。<br /><br />
 
 Intune Managed Browser では、[Microsoft Intune アプリケーション パートナー](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)から Web コンテンツを開くことができます。
 
-## Managed Browser のポリシーを作成する
+## <a name="create-a-managed-browser-policy"></a>Managed Browser のポリシーを作成する
 
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[ポリシーの追加]** を選択します。
 
@@ -65,7 +69,7 @@ Intune Managed Browser では、[Microsoft Intune アプリケーション パ�
 
 **[ポリシー]** ワークスペースの **[構成ポリシー]** ノードに新しいポリシーが表示されます。
 
-## Managed Browser アプリ向けに展開を作成する
+## <a name="create-a-deployment-for-the-managed-browser-app"></a>Managed Browser アプリ向けに展開を作成する
 Managed Browser ポリシーの作成後、Managed Browser アプリ向けにソフトウェアの展開を作成し、作成した Managed Browser ポリシーに関連付けることができます。
 
 > [!IMPORTANT]
@@ -75,7 +79,7 @@ Managed Browser ポリシーの作成後、Managed Browser アプリ向けにソ
 
 アプリの展開方法の詳細については、「[Microsoft Intune でアプリを展開する](deploy-apps-in-microsoft-intune.md)」を参照してください。
 
-## Managed Browser のセキュリティとプライバシー
+## <a name="security-and-privacy-for-the-managed-browser"></a>Managed Browser のセキュリティとプライバシー
 
 -   iOS デバイスでは、証明書の有効期限が切れている Web サイトや証明書が信頼されていない Web サイトにユーザーがアクセスしても、開くことができません。
 
@@ -87,12 +91,12 @@ Managed Browser ポリシーの作成後、Managed Browser アプリ向けにソ
 
 -   認証を許可し、Intune のドキュメントにアクセスできるようにするため、**&#42;.microsoft.com** は許可リストとブロック リストの設定から除外されており、 常に許可されます。
 
-### 使用状況データをオフにする
+### <a name="turn-off-usage-data"></a>使用状況データをオフにする
 Microsoft は、Microsoft の製品やサービスを改善するために、Managed Browser のパフォーマンスおよび使用に関する匿名データを自動的に収集します。 ただし、ユーザーはデバイスの **[使用状況データ]** 設定を使用して、データの収集を無効にすることができます。 このデータの収集方法は制御できません。
 
-## 参照情報
+## <a name="reference-information"></a>参照情報
 
-### 許可される URL とブロックされる URL の形式
+### <a name="url-format-for-allowed-and-blocked-urls"></a>許可される URL とブロックされる URL の形式
 許可リストとブロック リストで URL を指定するときに使用できる形式とワイルドカードについて説明します。
 
 -   ワイルドカード記号 (**&#42;**) は、以下の許可されているパターン リストの規則に従って使用できます。
@@ -142,7 +146,7 @@ Microsoft は、Microsoft の製品やサービスを改善するために、Man
 
     -   http://www.contoso.com: /&#42;
 
-### 許可リストとブロック リストの競合を解決する方法
+### <a name="how-conflicts-between-the-allow-and-block-list-are-resolved"></a>許可リストとブロック リストの競合を解決する方法
 複数の Managed Browser ポリシーがデバイスに展開され、設定が競合する場合、モード (許可またはブロック) と URL の一覧の両方が競合していると判断されます。 競合が発生した場合は、次の動作が適用されます。
 
 -   各ポリシーのモードは同じで、URL の一覧が異なる場合、URL はデバイスに適用されません。
@@ -155,6 +159,6 @@ Microsoft は、Microsoft の製品やサービスを改善するために、Man
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

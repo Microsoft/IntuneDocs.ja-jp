@@ -1,24 +1,28 @@
 ---
-title: "Intune の用語集 | Microsoft Intune"
+title: "Intune の用語集 | Microsoft Docs"
 description: "Microsoft Intune で使用される用語について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.date: 11/17/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0c6c9d44e6a328b4bfb3827f54ac35b83e3c7aac
-ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: ea5407c284f5408774ee5934ad6151bccfd7e6d1
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune の用語集
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 ## <a name="a"></a>A
 
@@ -32,7 +36,7 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 ## <a name="b"></a>B
 |||
 |-|-|
-|BYOD|[Bring Your Own Device](/intune/get-started/choose-how-to-enroll-devices1)。 ユーザーは自分のデバイスに Intune ポータル サイト アプリをインストールし、登録できます。電子メール、会社のアプリ、会社のデータ、サポートなど、会社のリソースにアクセスできます。| 
+|BYOD|[Bring Your Own Device](/intune/get-started/choose-how-to-enroll-devices1)。 ユーザーは自分のデバイスに Intune ポータル サイト アプリをインストールし、登録できます。電子メール、会社のアプリ、会社のデータ、サポートなど、会社のリソースにアクセスできます。|
 
 ## <a name="c"></a>C
 |||
@@ -59,7 +63,7 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 |-|-|
 |電子メールのプロファイル|このポリシーを使用すると、モバイル デバイス上の特定の電子メール クライアントに[電子メール アクセス設定](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)をセットアップし、エンド ユーザーが行う必要のある設定の量を最小限に抑えることができます。|
 |EMS|Microsoft Enterprise Mobility + Security (旧称 Enterprise Mobility Suite) は、会社のデータを保護しながら、ユーザーには[必要なアプリとコンテンツにアクセスできる](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility)ようにします。|
-|エンド ユーザー|Intune を使用して管理する[スマートフォンや PC などのデバイスのユーザー](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)です。|
+|エンド ユーザー|Intune を使用して管理される[スマートフォンや PC などのデバイスのユーザー](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)です。|
 |登録|Microsoft Intune は、[登録](/intune/deploy-use/enroll-devices-in-microsoft-intune)を使用して、デバイスを管理対象にし、リソースへのアクセスを許可します。|
 
 ## <a name="f"></a>F
@@ -95,7 +99,7 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 |-|-|
 |Managed Browser|Microsoft Intune を使用して組織で展開できる、[Web を参照するためのアプリケーション](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)です。 Managed Browser ポリシーは、Managed Browser のユーザーがアクセスできる Web サイトを制限する許可リストまたはブロック リストを構成するものです。|
 |モバイル アプリケーション管理|[モバイル アプリケーション管理 (MAM)](/intune/deploy-use/overview-of-app-lifecycle-in-microsoft-intune) を使用すると、ユーザーのモバイル アプリを公開、プッシュ、構成、セキュリティ保護、監視、および更新できます。
-|モバイル デバイス管理|[モバイル デバイス管理 (MDM)](/intune/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) を使用すると、プロビジョニング、構成、監視、およびアクションをデバイスで実行できるように、それらのデバイスを Intune に登録できます。 
+|モバイル デバイス管理|[モバイル デバイス管理 (MDM)](/intune/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) を使用すると、プロビジョニング、構成、監視、およびアクションをデバイスで実行できるように、それらのデバイスを Intune に登録できます。
 |MDM 機関|[MDM 機関](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)では、一連のデバイスを管理するためのアクセス許可を持つ管理サービスを定義します。 MDM 機関のオプションには、Intune 単体で使用するか、Intune を Configuration Manager と連携させて使用する方法があります。|
 |モバイル アプリ プロビジョニング ポリシー|展開する iOS アプリ用[プロビジョニング プロファイル](/intune/deploy-use/ios-mobile-app-provisioning-profiles)が期限切れにならないようにできる iOS ポリシーです。|
 |モバイル アプリ構成ポリシー|実行時に[互換性のある iOS アプリに設定を提供する](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)ために使用される iOS ポリシー (会社名やサーバー アドレスなど)。|
@@ -143,12 +147,4 @@ ms.openlocfilehash: e3aec8468dab4796cdc9b4afd783219f8aeef00b
 |||
 |-|-|
 |Wi-Fi プロファイル|ユーザーが設定を知らなくても、または構成しなくても、会社のネットワークに接続できるようにする[ワイヤレス ネットワーク設定](/intune/deploy-use/wi-fi-connections-in-microsoft-intune)をデバイスに展開するポリシーです。
-
-
-
-
-
-
-<!--HONumber=Nov16_HO3-->
-
 

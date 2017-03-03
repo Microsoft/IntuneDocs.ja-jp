@@ -1,5 +1,5 @@
 ---
-title: "デバイス コンプライアンス ポリシー | Microsoft Intune"
+title: "デバイス コンプライアンス ポリシー | Microsoft Docs"
 description: "このトピックでは、デバイス コンプライアンス ポリシーの内容とそのしくみについて説明します。"
 keywords: 
 author: andredm7
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: b41307f620284315e4c71b0d0292b229753876ad
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 7b91e52d72704b6beb79a1b35bb1a24ebb340a4b
 
 
 ---
 
 # <a name="device-compliance-policies-in-microsoft-intune"></a>Microsoft Intune のデバイス コンプライアンス ポリシー
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## <a name="what-is-a-compliance-policy"></a>コンプライアンス ポリシーとは
 会社のデータを容易に保護できるようにするには、会社のアプリとデータへのアクセスに使用されるデバイスが特定のルールに準拠していることを確認する必要があります。 これらのルールには、PIN を使用するデバイスへのアクセスと、デバイスに格納されているデータの暗号化に関するものが含まれる場合があります。 このような一連のルールは、コンプライアンス ポリシーと呼ばれます。
 

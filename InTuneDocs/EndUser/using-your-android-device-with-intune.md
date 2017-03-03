@@ -1,21 +1,26 @@
 ---
-title: "Android デバイスを Intune で使用する | Microsoft Intune"
+title: "Android デバイスを Intune で使用する | Microsoft Docs"
 description: "Android モバイル デバイスが Intune で登録されている場合に、エンド ユーザーがデバイスで実行できるタスクへのリンクの一覧"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 7751d5661f3fb9235820c716fdbded3dab385ec4
+ms.sourcegitcommit: 57a067684ccada3df4faa15e6bf009b39caf5c94
+ms.openlocfilehash: 5732f52474a8b2b61426e349647f88f4f142d2e2
+ms.lasthandoff: 03/02/2017
 
 
 ---
@@ -23,58 +28,27 @@ ms.openlocfilehash: 7751d5661f3fb9235820c716fdbded3dab385ec4
 
 # <a name="using-your-android-device-with-intune"></a>Android デバイスを Intune で使用する
 
-この記事には、エンドユーザーが Intune 管理対象デバイスで実行できるすべてのタスクへのリンクが掲載されています。 IT 管理者はこの情報を参照して、ユーザーがさまざまなタスクを実行するための手順を確認できます。タスクは以下のカテゴリにグループ化されます。
+仕事を効率化するために Intune でできることは数多くあります。 会社から求められる可能性のある最も一般的な仕事内容のリストを以下に示します。
 
-- ポータル サイト アプリのインストールと Intune の登録
-- 登録後の管理タスク
-- ポリシー準拠の問題
-
-## <a name="company-portal-app-installation-and-intune-enrollment"></a>ポータル サイト アプリのインストールと Intune の登録
-
-このセクションの情報は、Intune ポータル サイトのインストールと Android デバイスのデバイス登録に役立ちます。
+## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Intune に登録して、ポータル サイトをインストールする
 
 - [Intune にデバイスを登録する](enroll-your-device-in-Intune-android.md)
 - [Intune での仕事用プロファイルの作成とデバイスの登録](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 - [ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
-## <a name="things-users-can-do-when-their-device-is-enrolled-in-intune"></a>Intune にデバイスを登録する際にユーザーが実行できること
-
-このセクションの情報は、Android デバイスを Intune に登録した後に実行できる操作で役立ちます。
+## <a name="things-you-can-do-when-your-device-is-enrolled-in-intune"></a>Intune にデバイスを登録する際に実行できること
 
 - [デバイスで管理対象アプリを使用する](use-managed-apps-on-your-device-android.md)
 - [デバイスを暗号化する](encrypt-your-device-android.md)
 - [PIN またはパスワードを設定する](set-your-pin-or-password-android.md)
 - [会社の仮想プライベート ネットワーク (VPN) をインストールする](install-your-companys-virtual-private-network-VPN-android.md)
 - [デバイスがロックされるまでの時間を設定する](set-the-amount-of-time-before-your-device-is-locked-android.md)
-- [紛失したまたは盗難にあったデバイスをリセット (消去) する](reset-erase-your-lost-or-stolen-device-android.md)
+<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
+- [紛失したまたは盗難にあったデバイスをリセット (消去) する](reset-erase-your-device-cpwebsite.md)
 - [Microsoft による使用状況データの収集を無効にする](turn-off-microsoft-usage-data-collection-android.md)
 - [Intune からデバイスの登録を解除する](unenroll-your-device-from-intune-android.md)
 - [利用規約を拒否した場合にデバイスの登録を解除する](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 - [Intune からデバイスの登録を解除するとどうなるか](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [ポータル サイト アプリを使用して Android デバイスをリセットするとどうなるか](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
 <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
-
-## <a name="steps-to-fix-device-and-compliance-issues"></a>デバイスとコンプライアンスに関する問題を解決する手順
-
-このセクションの情報は、Android デバイスを Intune に登録した場合に発生する可能性がある問題を解決するのに役立ちます。
-
-- [IT 管理者がデバイスの問題を解決するのに役立つ、詳細なログ記録を使用する](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [電子メールを使用して診断データのログを IT 管理者に送信する](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
-- [USB ケーブルを使用して診断データのログを IT 管理者に送信する](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
-- [IT 管理者に登録に関するエラーを送信する](send-enrollment-errors-to-your-it-administrator-android.md)
-- [デバイスに最低限必要なバージョンのオペレーティング システムがインストールされていない](device-doesnt-have-the-required-minimum-operating-system-version-android.md)
-- [デバイスが最新のオペレーティング システムのバージョンに準拠していない](device-doesnt-comply-with-maximum-operating-system-version-android.md)
-- [デバイスが root 化され、接続できない](your-device-is-rooted-and-you-cant-connect-android.md)
-- [デバイスに必要な証明書がない](your-device-is-missing-a-required-certificate-android.md)
-- [不明なソースを無効にすることを求められる](you-are-asked-to-turn-off-unknown-sources-android.md)
-- [USB デバッグを無効にすることを求められる](you-are-asked-to-turn-off-usb-debugging-android.md)
-- [セキュリティ上の脅威に対してデバイスのスキャンを有効にすることを求められる](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
-- [デバイスが最小限のセキュリティ パッチを満たしていない](your-device-does-not-meet-the-minimum-security-patch-android.md)
-- [Android デバイスで Lookout for Work のインストールを求められる](you-are-prompted-to-install-lookout-for-work-android.md)
-- [Android デバイスで Lookout for Work が検出した脅威を解決する必要がある](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
-
-
-
-<!--HONumber=Nov16_HO1-->
-
 

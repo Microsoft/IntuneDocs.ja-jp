@@ -13,8 +13,10 @@ ms.technology:
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
 ms.openlocfilehash: d10cc421dc6fe422b7a2c26b4902997c8c6b2e61
@@ -37,7 +39,7 @@ ms.openlocfilehash: d10cc421dc6fe422b7a2c26b4902997c8c6b2e61
 
 -   [デバイスのリモート ロック](remote-lock-your-device-cpwebsite.md)
 
--   [デバイスの手動同期による、低速アプリ インストールの高速化](sync-your-device-manually-cpwebsite.md)
+-    [デバイスの手動同期による、低速アプリ インストールの高速化](sync-your-device-manually-cpwebsite.md)
 
 -   IT 管理者の連絡先情報の検索 (構成している場合)
 

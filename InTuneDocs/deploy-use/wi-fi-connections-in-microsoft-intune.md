@@ -1,11 +1,11 @@
 ---
-title: "Wi-Fi 接続 | Microsoft Intune"
+title: "Wi-Fi 接続 | Microsoft Docs"
 description: "Wi-Fi プロファイルを使用すると、ユーザーはWi-Fi ネットワークに接続できます。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,17 @@ ms.technology:
 ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: df3f5bd6f44b9de8c4f24a82c7f4e000f08aac5a
-ms.openlocfilehash: c90ede1f10ca8f01e01cf2ac4aed7afb8641f02f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 985b3d14091f1adff15ae08dd95800640363d2f2
 
 
 ---
 
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>デバイスを構成すると、会社の Wi-Fi ネットワークに接続できます。
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune の Wi-Fi プロファイルを使用して、ワイヤレス ネットワーク設定を組織のユーザーとデバイスに展開します。 Wi-Fi プロファイルを展開するときに、ユーザーはプロファイルを構成することなく、会社の Wi-Fi にアクセスできます。
 
@@ -41,15 +44,13 @@ Wi-Fi プロファイルは次のプラットフォームに展開できます�
 
 -   Android 4.0 以降
 
--   Android for Work   
+-    Android for Work   
 
 -   iOS 8.0 以降
 
 -   Mac OS X 10.9 以降
 
 Windows 8.1 または Windows 10 デスクトップまたはモバイル オペレーティング システムを実行するデバイスの場合は、以前エクスポートされた Wi-Fi 構成プロファイルをファイルにインポートすることができます。 詳細については、「[Export or Import a Wi-Fi configuration profile for Windows devices](#export-or-import-a-wi-fi-configuration-profile-for-windows-devices)」 (Windows デバイスの Wi-Fi 構成プロファイルのエクスポートまたはインポート) を参照してください。
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[ポリシーの追加]** を選択します。
 
@@ -138,7 +139,7 @@ Windows では、**netsh wlan** ユーティリティを使用して、既存の
 
 1.  **[ポリシー]** ワークスペースで、展開するポリシーを選び、**[展開の管理]** を選びます。
 
-2.   **[展開の管理]** ダイアログ ボックスで、次の操作を実行します。
+2.  **[展開の管理]** ダイアログ ボックスで、次の操作を実行します。
 
     -   **ポリシーを展開するには**: ポリシーを展開する 1 つ以上のグループを選択します。 次に、**[追加]** &gt; **[OK]** の順に選択します。
 
@@ -181,6 +182,6 @@ Windows では、**netsh wlan** ユーティリティを使用して、既存の
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

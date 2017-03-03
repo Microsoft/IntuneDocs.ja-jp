@@ -1,5 +1,5 @@
 ---
-title: "使用条件ポリシー設定 | Microsoft Intune"
+title: "使用条件ポリシー設定 | Microsoft Docs"
 description: "Intune の使用条件をユーザー グループに展開すると、登録、会社のリソースへのアクセス、ポータル サイト アプリの使用によるデバイスとユーザーへの影響を説明できます。"
 keywords: 
 author: staciebarker
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
-ms.openlocfilehash: bc9a7b837ab4dcd402aeec572b819d56070eba82
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
 
 
 ---
 
 # <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Microsoft Intune の使用条件ポリシー設定
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune の使用条件をユーザー グループに展開すると、登録、会社のリソースへのアクセス、ポータル サイト アプリによるデバイスとユーザーへの影響を説明できます。 ユーザーは、会社のポータルを使用して登録したり作業にアクセスしたりする前に、使用条件に同意する必要があります。
 
 さまざまな使用条件を含む複数のポリシーを作成して展開できます。 また、同じ使用条件のさまざまな言語のバージョンを作成し、適切なグループに展開することもできます。
@@ -81,6 +85,6 @@ Intune の使用条件をユーザー グループに展開すると、登録、
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

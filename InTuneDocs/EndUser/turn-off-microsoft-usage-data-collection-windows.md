@@ -1,39 +1,40 @@
 ---
-title: "Microsoft による Windows の使用状況データの収集を無効にする | Microsoft Intune"
+title: "Windows での Microsoft データ収集をオフにする方法 | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 51f1594d-0283-41d2-b4c3-a7a4ad70b369
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 461b46e1c14767127969d582448b672487da4b32
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: fc48199acad7a65bd4a06b5a51f6f5b851997edb
 
 
 ---
 
 
-# <a name="turn-off-microsoft-usage-data-collection"></a>Microsoft による使用状況データの収集を無効にする
+# <a name="how-to-turn-off-microsoft-data-collection"></a>Microsoft のデータ収集をオフにする方法
 
-Microsoft では、Microsoft の製品やサービスの向上を目的として、ポータル サイト アプリの信頼性やパフォーマンス、および使用方法に関する匿名データを自動的に収集します。
+Microsoft は、製品やサービスに関する特定のデータを自動的に収集します。 ポータル サイト アプリなどの製品の信頼性とパフォーマンスを向上させることが目的です。 このデータは匿名化されていますが、ユーザーによってはこのような収集を不安に感じるかもしれません。 IT 管理者は、このデータの収集を制御することはできません。また、この設定の選択を変更することもできません。
 
-Windows デバイスでのこのようなデータの収集は、ポータル サイト アプリの **[使用状況データ]** 設定を使用して無効にすることができます。 IT 管理者は、このデータの収集を制御することはできません。また、この設定の選択を変更することもできません。
+Windows デバイスでのこのような使用状況データの収集は、ポータル サイト アプリの **[使用状況データ]** 設定を使用して無効にすることができます。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 
 
 
-
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO5-->
 
 

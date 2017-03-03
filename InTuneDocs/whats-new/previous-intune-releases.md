@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/11/2017
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: noindex,nofollow
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0e4d08c4fd66bb1ae3fe683db503915725bc3134
-ms.openlocfilehash: 5f09c46e7dcd5aabc603838ce60a1e8e7fed694e
+ms.sourcegitcommit: 6bc3afe58d5e0f1f12c8b6c6fc62e37d01cd5132
+ms.openlocfilehash: cab9833a1e1b92c156a2eb77411436289c70ad71
 
 
 ---
@@ -25,6 +26,54 @@ ms.openlocfilehash: 5f09c46e7dcd5aabc603838ce60a1e8e7fed694e
 このページは、「[Microsoft Intune の新機能](whats-new-in-microsoft-intune.md)」で発表された内容の一覧です。
 
 [!INCLUDE[wit_nextref](../includes/whats-new-last-six-months.md)]
+
+## <a name="july-2016"></a>2016 年 7 月
+
+### <a name="app-management"></a>アプリ管理
+
+__アプリのプロビジョニング プロファイルの更新エクスペリエンスを向上__ Apple iOS 基幹業務モバイル アプリは、プロビジョニング プロファイルを含み、証明書で署名されたコードと共に構築されます。 iOS デバイスでアプリを実行すると、iOS により iOS アプリの整合性の確認と、プロビジョニング プロファイルで定義されたポリシーの施行が行われます。
+
+アプリの署名に使用するエンタープライズ署名証明書は、通常 3 年間は継続します。 ただし、プロビジョニング プロファイルは 1 年後に期限が切れます。 この更新により、証明書がまだ有効である期間中、Intune には、有効期限が近づいているアプリを持つデバイスに新しいプロビジョニング プロファイルのポリシーを事前に展開するツールが用意されます。 詳細については、「[Use iOS mobile provisioning profile policies to keep your line of business apps up to date (基幹業務アプリケーションを常に最新の状態に保つために iOS モバイル プロビジョニング プロファイル ポリシーを使用する)](/intune/deploy-use/ios-mobile-app-provisioning-profiles)」を参照してください。
+<!--- TFS 1280247--->
+
+__Intune アプリ用の Xamarin SDK の提供開始__ Intune アプリ SDK Xamarin コンポーネントを使用すると、Xamarin でビルドされたモバイル iOS および Android アプリで Intune のモバイル アプリ管理機能を有効にすることができます。 [Xamarin ストア](https://components.xamarin.com/view/Microsoft.Intune.MAM)または、[Microsoft Intune の Github ページ](https://github.com/msintuneappsdk)でコンポーネントを見つけることができます。
+<!--- TFS 1061478 --->
+
+### <a name="device-management"></a>デバイス管理
+__デバイス登録数上限の増加__ Intune は、構成可能なデバイスの最大登録数をユーザーごとに 5 から 15 デバイスまで増加しました。
+<!---TFS 1289896 --->
+
+__Intune クライアント ソフトウェアを実行する Windows PC のための TeamViewer の統合__
+ Intune クライアントを実行する Windows PC の [TeamViewer](https://www.teamviewer.com) 統合により、Windows PC とのリモート アシスタント セッションを確立して、エンド ユーザーのヘルプ デスク部門をサポートできるようになります。 Windows 7、8、8.1、10 が対象となります。 詳細については、「[Microsoft Intune コンピューター クライアントを使用した一般的な Windows PC 管理タスク](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client)」を参照してください。
+<!---TFS 1284856--->
+
+### <a name="company-portal-updates"></a>ポータル サイトの更新
+
+__ポータル Web サイト__
+- **Windows デバイス登録時のエンドユーザー エクスペリエンスの向上**<br/>
+条件付きアクセスを使用している場合の、ポータル サイト Web サイトで Windows 8.1、Windows 10 デスクトップ、および Windows 10 Mobile の登録手順が明確化されました。 今後は、「デバイス登録」および「社内参加」の手順が個別に表示されます。そのため、社内参加 (WPJ) の失敗後にデバイスの状態を確認し、プロセスを完了することが簡単になります。 この手順の分離により、IT 管理者のトラブルシューティングのプロセスも簡略化されることが見込まれます。 これまで、エンド ユーザーが登録しようとして、WPJ を除くすべての登録が成功した場合、登録されたデバイスがデバイス一覧に表示されないため識別できず、ユーザーの混乱の原因となっていました。
+
+__Android__
+- **Android 用ポータル サイト アプリ**<br/>
+Android エンド ユーザーに自分のデバイスに必要な証明書がないことを示すエラー メッセージが表示される場合、[How to resolve this (この問題解決する方法)] ボタンをタップすると、欠落している証明書をインストールするための[手順](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator)を取得できます。 ユーザーが手順を完了しても、追加の「証明書が見つかりません」というエラー メッセージが表示される場合は、IT 管理者に連絡し、この[リンク](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues)を提供することが求められます。このリンクには、証明書の問題を解決するために IT 管理者が使用できる手順が含まれています。
+
+- **登録済みデバイスへのサイド ロード アプリのインストールの制限**<br/>
+Android 用 Intune ポータル サイト アプリを使用してデバイスを Intune に登録している場合を除き、Android デバイスは、ポータル サイト Web サイトを通じてアプリケーションをインストールすることができなくなります。
+<!---TFS 1299082--->
+
+__iOS__
+- **iOS ポータル サイト アプリのデバイス登録マネージャー アカウントへの変更**<br/>
+パフォーマンスと拡張性を高めるために、Intune において、iOS のポータル サイト アプリの [**デバイス**] ウィンドウには今後、デバイス登録マネージャー (DEM) のデバイスの一部が表示されなくなります。 アプリを実行しているローカル デバイスのみ、ポータル サイト アプリ経由で登録されている場合にだけ表示されます。
+
+ローカル デバイスに対する操作は DEM で実行できますが、他の登録デバイスのリモート管理は、Intune 管理コンソールから実行する必要があります。 また、Apple Device Enrollment Program または Apple Configurator ツールでの DEM アカウントの使用は廃止されます。 共有 iOS デバイスに関しては、どちらの登録手段も既にユーザーレスの登録がサポートされています。
+
+共有デバイスのユーザーレスの登録が利用できない場合のみ DEM アカウントを使用してください。 詳細については、「[Microsoft Intune のデバイス登録マネージャーを使用した企業所有のデバイスの登録](https://docs.microsoft.com/en-us/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)」を参照してください。
+<!---TFS 1233681--->
+
+### <a name="change-of-names-for-windows-features"></a>Windows 機能の名前の変更
+- [Microsoft Passport for Windows](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune) は **Windows Hello for Business** と呼ばれるようになりました。
+- [エンタープライズ データ保護](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-intune)は **Windows Information Protection** と呼ばれるようになりました。
+
 
 ## <a name="june-2016"></a>2016 年 6 月
 ### <a name="intune-service-health"></a>Intune のサービス正常性
@@ -116,7 +165,7 @@ Intune の通知規則では、Intune からの電子メール アラートの�
 
     **[管理者]** ワークスペースで、**[通知規則]** > **[新しい規則の作成]** の順にクリックします。
 
-    通知規則の作成ウィザードの手順 2. で、規則の対象とするデバイス グループを選択します。 この "デバイス グループの選択" の手順は Intune コンソールから削除されます。
+    通知規則の作成ウィザードの手順&2;. で、規則の対象とするデバイス グループを選択します。 この "デバイス グループの選択" の手順は Intune コンソールから削除されます。
 
     この変更に向けた準備は次のように予定されています。
     - 2016 年 6 月に、新しいテナントでは通知規則の作成ウィザードの手順 2. が表示されなくなります。 既存のテナントは影響を受けません。
@@ -170,6 +219,6 @@ Azure Active Directory (AAD) テナント内の任意のユーザーについて
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

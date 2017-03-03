@@ -1,21 +1,22 @@
 ---
-title: "ユーザー補助機能 | Microsoft Intune"
+title: "ユーザー補助機能 | Microsoft Docs"
 description: "障碍のある方に快適にご利用いただくための Intune の機能の詳細。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/05/2016
-ms.topic: article
+ms.date: 12/30/2016
+ms.topic: reference
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b99c90bfafd65e87e258e1e0ac01691e83581659
-ms.openlocfilehash: 9915f85e6bc2dc20b061618fc8ccc6da8f3cec36
+ms.sourcegitcommit: 9e3d509cf404c89b27f92ad54c900e927ce3878b
+ms.openlocfilehash: c1b585da0b2875f393a0cbe929f11d3a04875905
 
 
 ---
@@ -48,6 +49,6 @@ Microsoft Windows のユーザー補助機能と各種ツールに加え、[!INC
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO5-->
 
 

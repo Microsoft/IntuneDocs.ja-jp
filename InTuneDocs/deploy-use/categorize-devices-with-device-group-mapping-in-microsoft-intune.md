@@ -1,5 +1,5 @@
 ---
-title: "デバイス グループのマッピングを使用してデバイスを分類する | Microsoft Intune"
+title: "デバイス グループのマッピングを使用してデバイスを分類する | Microsoft Docs"
 description: "Microsoft Intune のデバイス グループ マッピングを使用して、ユーザー定義のカテゴリにデバイスをグループ化することで、それらのデバイスの管理が容易になります。"
 keywords: 
 author: robstackmsft
@@ -13,13 +13,17 @@ ms.technology:
 ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: bdfa96a4268733bf6fa3a7999d85a881a7c4e513
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 28af253b0a0fe174478961810a26b45d8ac3d959
 
 ---
 
-# Microsoft Intune でデバイス グループのマッピングを使用してデバイスを分類する
+# <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>Microsoft Intune でデバイス グループのマッピングを使用してデバイスを分類する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune の**デバイス グループ マッピング**を使用して、ユーザー定義のカテゴリに基づいてデバイスを自動的にグループに追加することで、デバイスの管理が容易になります。 
 
 デバイス グループ マッピングでは、次のワークフローを使用します。
@@ -36,18 +40,18 @@ Microsoft Intune の**デバイス グループ マッピング**を使用して
 * アカウンティング
 * Manager
 
-## Intune のグループ管理の変更に関する重要な情報
+## <a name="important-information-about-a-change-in-group-management-for-intune"></a>Intune のグループ管理の変更に関する重要な情報
 
 お客様のフィードバックに基づいて、Enterprise Mobility + Security 全体のグループ化およびターゲット設定を統合する作業を進めています。 そのため、間もなく Intune のグループを Azure Active Directory ベースのセキュリティ グループに変換します。 この変更後は、Intune を使用してグループを作成しません。 代わりに、Azure ポータルでグループを作成するようになります。 この変更は段階的に行う予定です。変更内容の詳細とタイムラインについては、[このトピック](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)を参照してください。
 
-### デバイス グループ マッピングを構成する際にこのトピックで使用する手順
+### <a name="which-procedure-in-this-topic-should-you-use-to-configure-device-group-mapping"></a>デバイス グループ マッピングを構成する際にこのトピックで使用する手順
 
 Azure Active Directory ベースのセキュリティ グループは段階的に実装されるため、使用する手順を特定するには、[Intune 管理コンソール](https://manage.microsoft.com)の **[グループ]** ワークスペースを開く必要があります。
 
 -  Azure ポータルへのリンクが表示される場合、Intune グループが使用されなくなったことを示します。 後述する「[デバイス グループ マッピングの構成方法 (Azure Active Directory グループ)](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune#how-to-configure-device-group-mapping-for-azure-active-directory-groups)」の手順に従ってください。
 -  Azure ポータルへのリンクが表示されない場合、まだ Intune グループが使用されていることを示します。 後述する「[デバイス グループ マッピングの構成方法 (Intune グループ)](/intune/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune#how-to-configure-device-group-mapping-for-intune-groups)」の手順に従ってください。
 
-## デバイス グループ マッピングの構成方法 (Intune グループ)
+## <a name="how-to-configure-device-group-mapping-for-intune-groups"></a>デバイス グループ マッピングの構成方法 (Intune グループ)
 1. 使用するデバイス カテゴリごとに、Intune のデバイス グループを作成するか、既存のグループを指定します。 グループの作成方法については、「[Microsoft Intune でユーザーとデバイスの管理にグループを使用する](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)」を参照してください。
 2. [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[管理者]** を選択します。
 3. **[管理]** ワークスペースで、**[モバイル デバイス管理]** を展開してから、**[デバイス グループ マッピング]** を選択します。
@@ -58,9 +62,9 @@ Azure Active Directory ベースのセキュリティ グループは段階的�
 
 
 
-## デバイス グループ マッピングの構成方法 (Azure Active Directory グループ)
+## <a name="how-to-configure-device-group-mapping-for-azure-active-directory-groups"></a>デバイス グループ マッピングの構成方法 (Azure Active Directory グループ)
 
-### 手順 1 - Intune 管理コンソールでデバイス カテゴリを作成する
+### <a name="step-1---create-device-categories-in-the-intune-administration-console"></a>手順 1 - Intune 管理コンソールでデバイス カテゴリを作成する
 1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[管理者]** を選択します。
 3. **[管理]** ワークスペースで、**[モバイル デバイス管理]** を展開してから、**[デバイス カテゴリ]** を選択します。
 4. **[デバイス カテゴリ]** ページには、デバイス カテゴリを構成できる一覧が表示されます。 
@@ -69,7 +73,7 @@ Azure Active Directory ベースのセキュリティ グループは段階的�
 
 デバイス カテゴリ名は、手順 2 で Azure Active Directory セキュリティ グループを作成するときに使用します。
 
-### 手順 2 - Azure Active Directory セキュリティ グループを作成する
+### <a name="step-2---create-azure-active-directory-security-groups"></a>手順 2 - Azure Active Directory セキュリティ グループを作成する
 
 この手順では、デバイス カテゴリとデバイス カテゴリ名に基づいて、Azure ポータルで動的グループを作成します。
 
@@ -78,15 +82,15 @@ Azure Active Directory ベースのセキュリティ グループは段階的�
 たとえば、次のようなグループを作成します。(**device.deviceCategory -eq** "<*Intune 管理コンソールで確認したデバイス カテゴリ名*>")
 
 
-## デバイス グループの構成後
+## <a name="after-you-configure-device-groups"></a>デバイス グループの構成後
 
 デバイスを登録すると、構成したカテゴリの一覧が表示されます。 ユーザーがカテゴリを選択して登録を完了すると、選択したカテゴリに対応する Intune デバイス グループまたは Active Directory セキュリティ グループにデバイスが追加されます。
 
-### 関連項目
+### <a name="see-also"></a>関連項目
 [Microsoft Intune でユーザーとデバイスの管理にグループを使用する](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 
