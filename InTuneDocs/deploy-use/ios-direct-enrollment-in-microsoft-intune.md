@@ -4,7 +4,7 @@ description: "Apple Configurator ツールを使用して、企業所有の iOS 
 keywords: 
 author: staciebarker
 ms.author: stabar
-manager: arob98
+manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
 ms.openlocfilehash: f75c4a6412d34923ec45524d765d3eb270f15e13
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -91,9 +92,4 @@ iOS デバイスを直接登録する場合は、デバイスのシリアル番�
 9.  iOS デバイスで、**[設定]** を開き、**[全般]** &gt; **[デバイス管理]** &gt; **[管理プロファイル]** に移動します。 プロファイルのインストールが一覧に表示されていることを確認し、iOS のポリシー制限とインストールされているアプリを確認します。 ポリシー制限とアプリがデバイスに表示されるまでに、最大 10 分かかることがあります。
 
 10.  デバイスを配布します。 これで、iOS デバイスが Intune に登録され、管理対象になりました。
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 
