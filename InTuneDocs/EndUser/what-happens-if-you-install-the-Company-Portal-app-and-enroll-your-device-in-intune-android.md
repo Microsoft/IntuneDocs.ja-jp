@@ -20,10 +20,10 @@ ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: f80c6e7089519860e822f974753ac9dc0356e055
+ms.lasthandoff: 01/24/2017
 
 
 ---
-
 
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>ポータル サイト アプリをインストールし、Intune に Android デバイスを登録するとどうなりますか。
 
@@ -60,9 +60,4 @@ Android デバイスを登録すると、そのデバイスにアクセスする
 -   会社のアプリのインベントリの更新情報を送信する。 (これらの更新プログラムに個人情報は含まれていない。)
 
 サポートが必要な場合は、 IT 管理者に問い合わせるか (連絡先情報については[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください)、または [Microsoft Android チーム](mailto:wintunedroidfbk@microsoft.com)にご連絡ください。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
