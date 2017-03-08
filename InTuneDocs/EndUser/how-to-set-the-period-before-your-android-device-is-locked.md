@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
 ms.openlocfilehash: be3307165b420ef0fe9c143a3a55f88285a344da
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -45,9 +46,4 @@ ms.openlocfilehash: be3307165b420ef0fe9c143a3a55f88285a344da
 2.  パスワードのタイムアウト値を選択します。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

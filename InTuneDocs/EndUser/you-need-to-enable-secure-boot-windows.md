@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: de881f1b-7622-4ec2-8bf8-025f71ca9887
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
 ms.openlocfilehash: b90aec6297fdeb00940109ae0465e2bc25ab9436
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -34,9 +35,4 @@ ms.openlocfilehash: b90aec6297fdeb00940109ae0465e2bc25ab9436
 PC を使用している場合は、IT 管理者に問い合わせるか、「[セキュア ブートの無効化](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx)」ページの「セキュア ブートを再有効化するには」セクションを参照して、自分でセキュア ブートを有効にしてみます。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

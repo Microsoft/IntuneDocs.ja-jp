@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
 ms.openlocfilehash: 04e27d9c0752ac5b5d29bdbdb3033e989a3945f9
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -29,9 +30,4 @@ Android デバイスは、さまざまなタスクを実行できるアプリを
 スキャンを有効にするには、**[設定]** > **[Google]** > **[セキュリティ]** を選択し、**[端末をスキャンしてセキュリティ上の脅威を確認]** をオンにします。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

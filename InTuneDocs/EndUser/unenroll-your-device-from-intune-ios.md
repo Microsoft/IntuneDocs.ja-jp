@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: eb41be0b4096c2b2ee5711204b34e8c3bb13e25b
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -57,9 +58,4 @@ Intune からデバイスの登録を解除すると、どのようになるか�
 -   電子メール専用に構成されているデバイスは、ポータル サイト アプリまたは Web サイトに表示されなくなります。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

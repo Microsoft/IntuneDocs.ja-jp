@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0dc35efe-4fd4-4d4a-8569-d649ea704fea
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
 ms.openlocfilehash: 329d34e7a6ad83512e98dce85e1effe9c54a1bce
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -55,9 +56,4 @@ ms.openlocfilehash: 329d34e7a6ad83512e98dce85e1effe9c54a1bce
 -   IT 管理者は、コンピューターに対してポリシーを適用することがあります。 たとえば、コンピューターにパスワードまたは PIN を設定するように求められる場合があります。 IT 管理者は、パスワードの試行回数の制限、および試行回数を超えた場合のコンピューターのロックまたはコンピューターのハード ドライブからのすべてのデータの削除なども設定できます。
 
 ご質問がございましたら、IT 管理者に問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 635cd7c9cd6edec82fec76400b410cabce2d8c4c
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -47,9 +48,4 @@ Windows デバイスが IT 管理者のパスワード ポリシーに準拠し�
 4. **[完了]** を選択します。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

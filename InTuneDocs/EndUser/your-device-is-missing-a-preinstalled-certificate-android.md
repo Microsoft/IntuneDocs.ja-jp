@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: df973b18-9166-417d-8aa3-49edd2bda256
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: d6fcfac7c8bd469f5163ec9b4017ae8c3d486428
 ms.openlocfilehash: e0aaa48e46e547d4853478fdbb80711700a9c22a
+ms.lasthandoff: 01/05/2017
 
 ---
 
@@ -49,9 +50,4 @@ ms.openlocfilehash: e0aaa48e46e547d4853478fdbb80711700a9c22a
 > この証明書をインストールしても問題が解決せず、別の "証明書が見つかりません" というメッセージが表示される場合は、[不足している証明書をインストールする](your-device-is-missing-an-IT-required-certificate-android.md)別の手順を実行する必要があります。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

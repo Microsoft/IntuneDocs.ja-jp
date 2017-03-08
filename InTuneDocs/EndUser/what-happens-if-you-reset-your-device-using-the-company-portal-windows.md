@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 42e6b4d44dffa457f009e8402d5c429aa55932d6
 ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,9 +37,4 @@ ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
 |PC およびラップトップ|**Windows 8.1 および Windows 8**<br />電子メール専用で Windows 8 または Windows 8.1 を実行しているコンピューターはリセットできません。<br /><br />**Windows 7 または Windows Vista**<br />Windows 7 以前を実行しているコンピューターはリセットできません。|
 
 ご質問がございましたら、IT 管理者に問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

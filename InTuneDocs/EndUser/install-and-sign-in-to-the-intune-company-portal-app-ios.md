@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8dfe66b4-f585-4862-87fa-7dbb4487549c
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: cf110d8758e8ab589acbceabb5df733b29068b0f
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -40,9 +41,4 @@ ms.openlocfilehash: cf110d8758e8ab589acbceabb5df733b29068b0f
     職場または学校で Intune を使用している場合は、ポータル サイト アプリに初めてサインインするときに、デバイスを Intune に登録するよう求められます。 登録するには、「[Intune に iOS デバイスを登録する](enroll-your-device-in-intune-ios.md)」または「[Intune に macOS デバイスを登録する](enroll-your-device-in-intune-macos.md)」の手順に従います。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

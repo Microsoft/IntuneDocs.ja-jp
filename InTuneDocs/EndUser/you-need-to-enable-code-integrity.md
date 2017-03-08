@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 84892bbc-f888-417b-bbeb-978cc7e10028
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
 ms.openlocfilehash: d73777a0fb6cb981d57c92740a70e9d3058c03cb
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -36,9 +37,4 @@ ms.openlocfilehash: d73777a0fb6cb981d57c92740a70e9d3058c03cb
 <!--Or, see the section “To re-enable Secure Boot” on the [Disabling Secure Boot](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) page to try enabling Secure Boot yourself.-->
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

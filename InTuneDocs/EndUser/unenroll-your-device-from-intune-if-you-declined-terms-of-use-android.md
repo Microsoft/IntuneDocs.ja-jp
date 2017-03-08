@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
 ms.openlocfilehash: 73dfec1fe1a0a027aa560de62b6bd7ed7732faa0
+ms.lasthandoff: 02/09/2017
 
 
 ---
@@ -44,9 +45,4 @@ Intune からデバイスの登録を解除し、会社のポータル アプリ
     これで、会社のポータル アプリをアンインストールできます。
 
 サポートが必要な場合は、 IT 管理者に問い合わせるか (連絡先情報については[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください)、または [Microsoft Android チーム](mailto:wintunedroidfbk@microsoft.com)にご連絡ください。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

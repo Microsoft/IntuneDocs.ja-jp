@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed4a9f15-72fb-4171-84cb-63d2f1a6d04c
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 009b86dd581b01464b72bdbd0107d08ee6645f03
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -37,9 +38,4 @@ ms.openlocfilehash: 009b86dd581b01464b72bdbd0107d08ee6645f03
 
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

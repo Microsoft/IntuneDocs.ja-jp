@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 09cd4ed6-1ce4-4530-9753-59808f01c6d7
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
 ms.openlocfilehash: 34ad0d3c65230d4d296027e8431f1087c59f289a
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -36,9 +37,4 @@ iOS デバイスでポータル サイト アプリを使用している間に�
 -   ポータル サイト アプリでデバイスをシェイクし、診断アラートが表示されたら **[電子メール]** をタップします。 デバイスをシェイクしてもアラートが表示されない場合は、**[設定]** > **[ポータル サイト]** の順に開き、**[シェイク ジェスチャ]** オプションがオンになっていることを確認します。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

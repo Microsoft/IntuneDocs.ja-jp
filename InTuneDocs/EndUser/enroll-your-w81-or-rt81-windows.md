@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 28984f26-1070-4f7a-877c-669a59375c0c
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
 ms.openlocfilehash: 8e030c7b4b4aad7793b55e274a4d022bcf098611
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -66,9 +67,4 @@ Windows 8.1 または Windows RT 8.1 デバイスを登録するには、次の�
 4.  **[インストール]** または **[無料]** をタップします。 表示されるオプションは、会社がどのようにアプリをセットアップしたかによって異なります。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 6da5f6a3b017a93446011f8d59e73a4ea7730196
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -65,9 +66,4 @@ ms.openlocfilehash: 6da5f6a3b017a93446011f8d59e73a4ea7730196
 
 
 デバイスの管理対象アプリの詳細については、IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

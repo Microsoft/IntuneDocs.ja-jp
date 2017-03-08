@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: jieyan
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
 ms.openlocfilehash: b6e9a357b79b0069e5fadf5aa280dae5b4787212
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -54,9 +55,4 @@ ms.openlocfilehash: b6e9a357b79b0069e5fadf5aa280dae5b4787212
 4.    バージョンが __1607__ の場合、[こちらの手順](enroll-your-w10-device-access-work-or-school.md)に進みます。 バージョンが __1511 以前__の場合、[こちらの手順](enroll-your-w10-device-your-account.md)に進みます。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

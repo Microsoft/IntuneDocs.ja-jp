@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 51f1594d-0283-41d2-b4c3-a7a4ad70b369
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
 ms.openlocfilehash: fc48199acad7a65bd4a06b5a51f6f5b851997edb
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -32,9 +33,4 @@ Microsoft は、製品やサービスに関する特定のデータを自動的�
 Windows デバイスでのこのような使用状況データの収集は、ポータル サイト アプリの **[使用状況データ]** 設定を使用して無効にすることができます。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

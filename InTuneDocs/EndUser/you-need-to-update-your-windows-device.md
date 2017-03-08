@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2df6fca5-9731-4ea0-a8ee-45b648caa5b4
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
 ms.openlocfilehash: dc3444f6da563ac3489790d6d2bc112c497376d4
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -38,9 +39,4 @@ Windows を実行しているコンピューターの場合は、**オペレー�
 Windows 10 および Windows 8.1 の場合は、__検索バー__に「__Windows バージョン__」と入力します。 __[Can I help?]__ (ヘルプが必要ですか?) で、__[windows version]__ (windows バージョン) を選択します。 バージョン番号が表示されます。 この番号は、__10.0.14393.447__ のようになります。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

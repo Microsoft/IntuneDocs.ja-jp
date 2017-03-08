@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3ef43ff5-8d6b-4be1-baa4-6fb6a7f3c312
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
 ms.openlocfilehash: b70e80fdbbf5009d570f0e4e268537b44996ff50
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -31,9 +32,4 @@ ms.openlocfilehash: b70e80fdbbf5009d570f0e4e268537b44996ff50
 **[設定]** > **[タブレット情報]** の順にタップして、Android デバイスを更新します。 __[設定]__ セクションで、__[更新プログラムの確認]__ をタップし、利用可能な更新プログラムをインストールします。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

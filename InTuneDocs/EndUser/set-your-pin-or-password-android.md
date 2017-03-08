@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b29ac1bb-ef57-4ef1-9ea5-191ee8694e58
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
 ms.openlocfilehash: 95c8983428ee4770ec71f804f8dac59c427e096c
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -36,9 +37,4 @@ PIN またはパスワードを設定するには、次の手順に従います�
 
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

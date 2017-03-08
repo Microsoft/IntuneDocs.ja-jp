@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: fc22acb9f0c08491852592f41dc60bef0fcf0928
 ms.openlocfilehash: 9e616d6368a40e3ae06303cf3556b5e0760fb477
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -44,9 +45,4 @@ IT 管理者は、パスコードの要件を 1 つ以上設定できます。 �
 3. IT 管理者の要件を満たす新しいパスコードを入力し、それを再入力して確認します。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6515f4c4-3821-49b0-9bfe-abdf8143c8d1
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
 ms.openlocfilehash: cea226a32c5c2c6d49f1444e55a986d0c68d5448
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -31,9 +32,4 @@ Microsoft は、製品やサービスに関する特定のデータを自動的�
 iOS デバイスで使用状況に関するデータの収集をオフにするには、**[設定]** を開き、**[ポータル サイト]** をタップして **[使用状況データ]** をオフにします。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

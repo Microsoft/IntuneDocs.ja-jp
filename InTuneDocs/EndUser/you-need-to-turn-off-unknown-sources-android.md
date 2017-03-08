@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 16589a70cabe4971e89f2fe7983d2d79def2caca
 ms.openlocfilehash: 25d954040f7b94089e8b931a39257c05663002e0
+ms.lasthandoff: 01/12/2017
 
 
 ---
@@ -31,9 +32,4 @@ Android デバイスは、複数の場所からアプリをインストールで
 **[不明なソース]** を無効にしてから、Android デバイスで会社や学校のデータにアクセスできるようになるまでに数分間かかることがあります。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 
