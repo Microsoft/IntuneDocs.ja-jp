@@ -2,8 +2,8 @@
 title: "デバイス登録に関するトラブルシューティング | Microsoft Docs"
 description: "デバイス登録で問題が発生した場合の解決方法の推奨事項。"
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 03/01/2017
 ms.topic: article

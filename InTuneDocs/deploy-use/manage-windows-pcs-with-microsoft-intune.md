@@ -2,8 +2,8 @@
 title: "クライアント ソフトウェアを使用して PC を管理する |Microsoft Docs"
 description: "Intune クライアント ソフトウェアをインストールして Windows PC を管理します。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/09/2017
 ms.topic: article

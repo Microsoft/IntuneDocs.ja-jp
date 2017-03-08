@@ -2,8 +2,8 @@
 title: "一般的な Windows PC 管理タスク | Microsoft Docs"
 description: "Intune ソフトウェア クライアントを実行する Windows PC を管理する方法について説明します。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: 2fc2d7e57267f82897dac8a0cc222c2b7009d14d
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -35,10 +36,5 @@ ms.openlocfilehash: 2fc2d7e57267f82897dac8a0cc222c2b7009d14d
 
 - [Windows PC のリモート アシスタンス要求と提供](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md) - Intune PC ユーザーがリモート アシスタンスのヘルプを入手する方法、および前提条件と TeamViewer のセットアップについて説明します。
 
-
-
-
-
-<!--HONumber=Dec16_HO3-->
 
 

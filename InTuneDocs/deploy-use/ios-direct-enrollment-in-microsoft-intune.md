@@ -2,8 +2,8 @@
 title: "iOS デバイスの直接登録 | Microsoft Docs"
 description: "Apple Configurator ツールを使用して、企業所有の iOS デバイスを Mac コンピューターに USB で接続し、定義済みのポリシーで直接登録する。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article

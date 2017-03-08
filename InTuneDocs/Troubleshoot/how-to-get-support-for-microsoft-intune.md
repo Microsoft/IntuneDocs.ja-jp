@@ -2,8 +2,8 @@
 title: "サポートを受ける方法 | Microsoft Docs"
 description: "有料サブスクリプションとトライアル サブスクリプションについて、オンラインと電話によるサポートを利用できます。"
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 01/27/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
 ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
+ms.lasthandoff: 01/28/2017
 
 
 ---
@@ -146,9 +147,4 @@ Microsoft による Intune の改善に役立つフィードバックはあり�
 サポート エンジニアから追加の問題についてサポート インシデントを作成するように求められた場合は、それがすべてのユーザーにとって役立つ情報であるということをご理解ください。 世界規模のサポートの提供について、ご理解とご協力をいただきありがとうございます。
 
 インシデントごとの料金および深刻度については、「[プロフェッショナル サポート オプション](https://support.microsoft.com/gp/offerprophone)」を参照してください。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

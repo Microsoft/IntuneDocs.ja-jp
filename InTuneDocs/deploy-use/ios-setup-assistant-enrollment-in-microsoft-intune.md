@@ -2,8 +2,8 @@
 title: "セットアップ アシスタントを使用した iOS デバイスの登録 | Microsoft Docs"
 description: "Apple Configurator ツールを使用して企業所有の iOS デバイスを登録し、デバイスを工場出荷時の設定にリセットして、セットアップ アシスタントを実行する準備をします。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/13/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
 ms.openlocfilehash: facae5f49b52760dcea0653bd261e16e13e11bbf
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -186,9 +187,4 @@ Apple Configurator を使用して、iOS デバイスを工場出荷時の設定
 
 ### <a name="see-also"></a>関連項目
 [デバイスを登録するための前提条件](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

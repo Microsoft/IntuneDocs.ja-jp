@@ -2,8 +2,8 @@
 title: "Windows PC をインベントリから削除する | Microsoft Docs"
 description: "Intune で管理されている Windows PC をインベントリから削除する方法。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: fbf188be16ca4a47ee369e3fdde8c0a7f799beab
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -56,8 +57,3 @@ PC をインベントリから削除した場合:
 ### <a name="see-also"></a>関連項目
 
 [Intune ソフトウェア クライアントを使用した一般的な Windows PC 管理タスク](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-
-
-<!--HONumber=Dec16_HO3-->
-
-

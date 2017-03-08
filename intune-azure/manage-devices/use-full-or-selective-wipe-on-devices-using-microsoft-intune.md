@@ -3,8 +3,8 @@ title: "Intune を使用するデバイスでの全体または選択的ワイ�
 titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: デバイス上の会社のデータを選択的にワイプする方法、またはフル ワイプを実行してデバイスを出荷時の設定にリセットする方法について説明します。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article

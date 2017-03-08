@@ -2,7 +2,8 @@
 title: "Windows 10 Mobile と Windows Phone の管理をセットアップする | Microsoft Docs"
 description: "Microsoft Intune を使用して Windows 10 Mobile または Windows Phone デバイスのモバイル デバイス管理 (MDM) を有効にします。"
 keywords: 
-author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/08/2017
 ms.topic: article

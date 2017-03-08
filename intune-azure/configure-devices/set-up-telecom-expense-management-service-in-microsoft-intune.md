@@ -3,8 +3,8 @@ title: "通信費管理サービスをセットアップする"
 titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー:Saaswedo 通信費管理サービスを Intune と統合するように構成します。"
 keywords: Saaswedo
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/16/2017
 ms.topic: article

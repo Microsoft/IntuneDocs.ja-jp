@@ -3,8 +3,8 @@ title: "デバイス登録に関するトラブルシューティング"
 titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: デバイス登録に関するトラブルシューティング方法について説明します。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

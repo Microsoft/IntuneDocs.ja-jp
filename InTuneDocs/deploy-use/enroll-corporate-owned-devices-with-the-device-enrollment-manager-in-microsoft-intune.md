@@ -2,8 +2,8 @@
 title: "デバイス登録マネージャーを使用した登録 | Microsoft Docs"
 description: "デバイス登録マネージャー (DEM) アカウントでは、1 つのユーザー アカウントで企業所有の多数の共有モバイル デバイスを管理できます。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/17
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
 ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
+ms.lasthandoff: 02/04/2017
 
 
 ---
@@ -106,9 +107,4 @@ DEM ユーザーができること:
 -   削除されたデバイス登録マネージャー アカウントの資格情報では、デバイスのワイプとインベントリからの削除を実行できません。
 
 -   削除されたデバイス登録マネージャー アカウントと登録済みデバイスの関係は残りますが、追加のデバイスは登録できません。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

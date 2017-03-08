@@ -3,8 +3,8 @@ title: "モバイル デバイス管理機関の設定"
 titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: Intune でモバイル デバイス管理機関を設定する方法について説明します。 "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/06/2016
 ms.topic: article
@@ -18,6 +18,7 @@ ms.custom: intune-azure
 translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 9d7a1a934188f0a40553d3c6b8b567ba8f6af034
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -43,9 +44,4 @@ ms.openlocfilehash: 9d7a1a934188f0a40553d3c6b8b567ba8f6af034
 2. [Intune] ブレードで **[デバイスの登録]** を選択し、**[概要]** を選択します。
 
 3. **[デバイスの管理を開始する]** ブレードで、**[MDM 機関を Intune に設定する]** を選択します。 MDM 機関が Intune に正しく設定されたことを示すメッセージが表示されます。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

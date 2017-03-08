@@ -2,8 +2,8 @@
 title: "クライアント セットアップのトラブルシューティング | Microsoft Docs"
 description: "一般的なクライアント セットアップに関する問題のトラブルシューティングを行います。"
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/22/2017
 ms.topic: article
