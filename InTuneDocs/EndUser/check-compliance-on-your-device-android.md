@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d98d9bbe-98fa-48a9-8808-110435eac9e4
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 385565bd1ce05c9402a52cdd6eeb93f58caaf72a
-ms.openlocfilehash: e14f60637daa89607f015da81eea45801bc39a78
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: a183035e8fdc91c8d6db2e0a64ba4edb3ac19c5b
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -34,9 +35,4 @@ ms.openlocfilehash: e14f60637daa89607f015da81eea45801bc39a78
 2. **[ポリシー準拠状況の確認]** をタップします。
 
 紛失したまたは盗難にあったデバイスを自分でリセットできない場合は、IT 管理者に依頼してください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

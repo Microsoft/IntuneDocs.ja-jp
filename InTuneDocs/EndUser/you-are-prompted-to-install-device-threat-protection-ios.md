@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 15c820d4b25b8deb3ab17601a4835c57e5ede780
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: 6157cef87c5cdad6d0e293946321fa8bdf18e61a
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -54,9 +55,4 @@ Lookout for Work によってこのデバイスでセキュリティ上の脅威
 **インストールが機能しない場合**
 
 ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。 このようなことが起こる場合、IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

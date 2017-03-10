@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 0e47c60c8cbbd635427916b84690959d2c69ce31
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: b9d7c7970ddc334dd6c500105b250d516a60a6d4
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -49,9 +50,4 @@ Lookout for Work が脅威と判断するアプリがインストールされて
 アプリケーションをアンインストールするとすぐに、会社または学校の電子メールやその他のデータへのアクセスが回復します。 アプリケーションのアンインストール要求を無視すると、アプリをアンインストールするまで、会社のメールやデータにアクセスできなくなります。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 
