@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -40,7 +40,6 @@ ms.lasthandoff: 03/02/2017
 
 - [デバイスで管理対象アプリを使用する](use-managed-apps-on-your-device-ios.md)
 - [パスコードを設定または変更する](set-or-change-your-passcode-ios.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [紛失したまたは盗難にあったデバイスをリセット (消去) する](reset-erase-your-device-cpwebsite.md)
 - [Microsoft による使用状況データの収集を無効にする](turn-off-microsoft-usage-data-collection-ios.md)
 - [Intune からデバイスの登録を解除する](unenroll-your-device-from-intune-ios.md)

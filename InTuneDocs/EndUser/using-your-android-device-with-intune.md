@@ -43,7 +43,6 @@ ms.lasthandoff: 03/02/2017
 - [PIN またはパスワードを設定する](set-your-pin-or-password-android.md)
 - [会社の仮想プライベート ネットワーク (VPN) をインストールする](install-your-companys-virtual-private-network-VPN-android.md)
 - [デバイスがロックされるまでの時間を設定する](set-the-amount-of-time-before-your-device-is-locked-android.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
 - [紛失したまたは盗難にあったデバイスをリセット (消去) する](reset-erase-your-device-cpwebsite.md)
 - [Microsoft による使用状況データの収集を無効にする](turn-off-microsoft-usage-data-collection-android.md)
 - [Intune からデバイスの登録を解除する](unenroll-your-device-from-intune-android.md)
