@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
-ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
+ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
+ms.openlocfilehash: d60b9afdf7fe9f78dd5cc4693259b8667fb17299
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -41,7 +42,7 @@ IT 管理者やユーザーは、代替電子メール クライアント (Andro
 -    Android for Work
 
 >[!NOTE]
->Intune には Android for Work 電子メール プロファイルが&2; つあります。Gmail 用と Nine Work 電子メール アプリ用です。 これらのアプリは Google Play ストアで入手できます。また、Exchange への接続をサポートしています。 電子メール接続を有効にするには、いずれかの電子メール アプリをユーザーのデバイスに展開し、適切なプロファイルを作成して展開します。
+>Intune には Android for Work 電子メール プロファイルが&2; つあります。Gmail 用と Nine Work 電子メール アプリ用です。 これらのアプリは Google Play ストアで入手できます。また、Exchange への接続をサポートしています。 電子メール接続を有効にするには、いずれかの電子メール アプリをユーザーのデバイスに展開し、適切なプロファイルを作成して展開します。 Nine Work などの電子メール アプリは無料とは限りません。 アプリケーションのライセンスの詳細を確認するか、アプリの会社に問い合わせてください。
 
 デバイスで電子メール アカウントをセットアップするだけでなく、同期する電子メールの数や、デバイスの種類によっては同期するコンテンツの種類をセットアップできます。
 
@@ -105,7 +106,7 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
     |**電子メール アドレス**|各デバイスでユーザーの電子メール アドレスを生成する方法。 Exchange へのログインにプライマリ SMTP アドレスを使用する場合は **[プライマリ SMTP アドレス]** を選択し、完全プリンシパル名を電子メール アドレスとして使用する場合は **[ユーザー プリンシパル名]** を使用します。|
     |**認証方法** (Android for Work、Samsung KNOX、iOS)|電子メール プロファイルで使用する認証方法として、**[ユーザー名とパスワード]** または **[証明書]** を選択します。|
     |**クライアント認証用のクライアント証明書 (ID 証明書) を選択する** (Android for Work、Samsung KNOX、iOS)|Exchange 接続の認証に使用するために事前に作成しておいたクライアント SCEP 証明書を選択します。 Intune で証明書プロファイルを使用する方法の詳細については、[証明書プロファイルを使用したリソースへのアクセスのセキュリティ保護](secure-resource-access-with-certificate-profiles.md)に関する記事を参照してください。 このオプションは、認証方法が **[証明書]** の場合にのみ表示されます。|
-    |**S/MIME を使用する** (Samsung KNOX および iOS)|S/MIME 暗号化を使用して送信メールを送信します。|
+    |**S/MIME を使用する** (Samsung KNOX および iOS)|S/MIME 署名を使用して送信メールを送信します。|
     |**署名証明書** (Samsung KNOX および iOS)|送信メールの署名に使用される署名証明書を選択します。 このオプションは、**[S/MIME を使用する]** を選択した場合にのみ表示されます。|
     |**同期する電子メールの日数**|同期する電子メールの日数を選択します。利用可能なすべての電子メールを同期する場合は **[無制限]** を選択します。|
     |**同期スケジュール** (Android for Work、Samsung KNOX、Windows Phone 8 以降、Windows 10)|デバイスが Exchange サーバーからデータを同期するスケジュールを選択します。 **[メッセージが到着したとき]** を選択すると、電子メールが届いたらすぐにデータが同期されます。**[手動]** を選択した場合は、デバイスのユーザーが同期を開始する必要があります。|
@@ -136,9 +137,4 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
 > [!NOTE]
 > - Android for Work の場合は、適切な電子メール プロファイルに加え、Gmail または Nine Work アプリも展開したことを確認してください。
 > - デバイスから電子メール プロファイルを削除する場合、展開を編集し、デバイスがメンバーになっているすべてのグループを削除します。 デバイスで唯一の電子メール プロファイルはこの方法で削除できないことに注意してください。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

@@ -2,10 +2,10 @@
 title: "IMEI 番号を指定する | Microsoft Docs"
 description: "Microsoft Intune では、管理者は、モバイル デバイス プラットフォームの IMEI 番号をインポートして会社所有のモバイル デバイスを識別できます"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbc9e94d3fc5dc7e69f5d59ca1d52493b2beefc3
-ms.openlocfilehash: 5fa3c62553403dfafd182a691f611ba12a2d729c
+ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
+ms.openlocfilehash: 97bedfdd2d756ae79350496f54076c16ada64def
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -50,13 +51,11 @@ Microsoft Intune では、管理者が IMEI (International Mobile Equipment Iden
 3.  **[デバイスの確認]** ウィンドウで、インポートされたデバイスの IMEI 番号を確認できます。 また、再インポートされている IMEI 番号の**詳細**を上書きするかどうかを決めることもできます。 **[上書き]** ボックスをオフにすると、現在の詳細が保持されます。 **[完了]** を選択して、IMEI 番号をインポートします。
 4.  インポートされた IMEI 番号および説明が、**[IMEI (すべてのプラットフォーム) を使用]** の一覧に追加されます。
 
+> [!IMPORTANT]
+> Android デバイスの IMEI 番号をインポートする場合は、一部の Android デバイスが複数の IMEI 番号を所有できることに注意してください。 IMEI 番号をインポートするときに、その番号がデバイスが Intune に報告した IMEI ではない場合、デバイスは会社所有のデバイスではなく個人のデバイスとして分類されます。
+
 IMEI 番号を持つデバイスを Intune に登録する (通常は、ユーザーがポータル サイト アプリをインストールし、登録プロセスを完了する) と、そのデバイスは会社所有としてタグ付けされ、**IMEI デバイス** グループに登録されたデバイスとして表示されます。
 
->[!NOTE] 
+>[!NOTE]
 > 今後、組織が新しい Azure Portal に移行された場合、この機能への変更が表示されます。 既存の Intune 管理者コンソールでは、管理者はアップロードされた CSV から関連する詳細をそのまま使用し、個々のハードウェア ID の既存の詳細を上書きすることができます。 新しい Azure Portal では、自動ですべてのハードウェア ID の詳細を上書きするか、既存の ID の新しい詳細をすべて無視することができます。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

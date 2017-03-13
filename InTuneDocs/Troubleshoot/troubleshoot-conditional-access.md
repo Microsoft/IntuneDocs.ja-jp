@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 66a8f72e2560352c2e4f422b41c7e54b4ae124e6
+ms.sourcegitcommit: 7ac6041fb33f95e5b0c53b81c2af9aef42767a38
+ms.openlocfilehash: 115a27512930fa995a2781afc8a94c1d7f97958e
+ms.lasthandoff: 03/02/2017
 
 
 ---
@@ -159,9 +160,4 @@ Exchange Connector ログで **Get next コマンド**の例外を確認し、�
 
 ### <a name="next-steps"></a>次のステップ
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -15,21 +15,22 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 2babdeaaf10e9a58716d299cbde0babe45967fb1
+ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
+ms.openlocfilehash: d53cded6670069f10bf645d23ff9a9102bd97539
+ms.lasthandoff: 02/25/2017
 
 
 ---
 
-# <a name="allow-only-mobile-apps-that-support-intune-mam-policies-to-access-office-365-services"></a>Intune MAM ポリシーをサポートするモバイル アプリケーションのみが Office 365 サービスにアクセスできるようにする
+# <a name="allow-only-mobile-apps-that-support-intune-app-protection-policies-to-access-office-365-services"></a>Intune アプリ保護ポリシーをサポートするモバイル アプリのみが Office 365 サービスにアクセスできるようにする
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-[Intune モバイル アプリ管理 (MAM) ポリシー](protect-apps-and-data-with-microsoft-intune.md)を使用すると、Intune の管理対象に登録されているデバイス上の会社のデータを保護できます。 **Intune の監視対象に登録されていない従業員が所有するデバイス**に対して、MAM ポリシーを使用することもできます。  この場合、デバイスを管理しなくても、会社のデータとリソースが保護されていることを確認する必要があります。 MAM の条件付きアクセス (MAM CA) を使用すると、Exchange Online などの Office 365 サービスへのアクセスを、Intune MAM ポリシーをサポートするモバイル アプリのみに許可するポリシーを作成できます。
+[Intune アプリ保護ポリシー](protect-apps-and-data-with-microsoft-intune.md)を使用すると、Intune の管理対象に登録されているデバイス上の会社のデータを保護できます。 **Intune の監視対象に登録されていない従業員が所有するデバイス**に対して、アプリ保護ポリシーを使用することもできます。  この場合、デバイスを管理しなくても、会社のデータとリソースが保護されていることを確認する必要があります。 MAM とアプリ ベースの条件付きアクセスを使用すると、Exchange Online などの Office&365; サービスにアクセスするための Intune アプリ保護ポリシーをサポートするモバイル アプリのみに許可するポリシーを作成できます。
 
 たとえば、Exchange Online へのアクセスを **Microsoft Outlook アプリ**のみに許可すると、**Exchange Online** からから電子メールを取得するように Intune MAM ポリシーのデータ保護を受けていない **iOS と Android の組み込み電子メール アプリをブロックできます**。
 
-次の図は、MAM CA がアクセスを許可するかブロックするかを決定するために使用するフローです。![アクセスを許可するかブロックするかを決定するための多様な条件を示す図](../media/mam-ca-decision-flow_simple.png)。
+次の図は、アプリ ベースの条件付きアクセス ポリシーがアクセスを許可するかブロックするかを決定するために使用するフローです。![アクセスを許可するかブロックするかを決定するための多様な条件を示す図](../media/mam-ca-decision-flow_simple.png)。
 
 図に使用されている省略語の説明は次のとおりです。
 * **CP**: ポータル サイト アプリ
@@ -38,13 +39,13 @@ ms.openlocfilehash: 2babdeaaf10e9a58716d299cbde0babe45967fb1
 * **EAS**: Exchange Active Sync
 
 ## <a name="prerequisites"></a>必要条件
-MAM CA ポリシーを構成する**前に**、**Enterprise Mobility + Security または Azure Active Directory Premium サブスクリプション**を用意する必要があります。また、ユーザーに EMS または Azure AD のライセンスが付与される必要があります。 詳細については、「[Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility の価格) ページまたは「[Azure Active Directory の価格](https://azure.microsoft.com/en-us/pricing/details/active-directory/)」ページを参照してください。
+アプリ ベースの条件付きアクセス ポリシーを作成する**前に**、**Enterprise Mobility + Security または Azure Active Directory Premium サブスクリプション**を用意する必要があります。また、ユーザーに EMS または Azure AD のライセンスが付与される必要があります。 詳細については、「[Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility の価格) ページまたは「[Azure Active Directory の価格](https://azure.microsoft.com/en-us/pricing/details/active-directory/)」ページを参照してください。
 
 
 ## <a name="supported-apps"></a>サポートされているアプリ
 **Exchange Online**: Android および iOS 用 **Microsoft Outlook**。
 
-MAM CA ポリシーがあるアプリのユーザー エクスペリエンスの詳細については、「[What to expect when using an app with MAM CA](use-apps-with-mam-ca.md)」(アプリと MAM CA を使用する場合の結果) を参照してください。
+アプリ ベースの条件付きアクセス ポリシーがあるアプリのユーザー エクスペリエンスの詳細については、「[What to expect when using an app with MAM CA](use-apps-with-mam-ca.md)」(アプリと MAM CA を使用する場合の結果) を参照してください。
 
 
 ## <a name="next-steps"></a>次のステップ
@@ -54,10 +55,5 @@ MAM CA ポリシーがあるアプリのユーザー エクスペリエンスの
 
 ### <a name="see-also"></a>関連項目
 
-[MAM ポリシーでアプリ データを保護する](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
+[アプリ保護ポリシーを使用したアプリ データの保護](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 

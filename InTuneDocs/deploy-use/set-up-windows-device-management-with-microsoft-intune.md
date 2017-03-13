@@ -2,9 +2,9 @@
 title: "Microsoft Intune を使用して Windows デバイスの管理をセットアップする | Microsoft Docs"
 description: "Microsoft Intune で Windows デバイスのモバイル デバイス管理 (MDM) を有効にします。"
 keywords: 
-author: staciebarker
-manager: stabar
-ms.date: 02/15/2017
+author: NathBarn
+manager: angrobe
+ms.date: 02/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
-ms.openlocfilehash: 6277f82483eb8fb7f5a4e4a832a909490ba0050c
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 255c3e47464ac7670a971881cf399e8e2bb17044
+ms.openlocfilehash: 4acbae2aba4cff21286d45cb7cb1691864c281dc
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -27,13 +27,13 @@ ms.lasthandoff: 02/18/2017
 
 Windows デバイスの登録を設定するには、以下のいずれかの方法を使用します。
 
-- [**Azure Active Directory Premium による Windows 10 と Windows 10 Mobile の自動登録**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium) 
+- [**Azure Active Directory Premium による Windows 10 と Windows 10 Mobile の自動登録**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)
  -  この方法は、Windows 10 および Windows 10 Mobile デバイスにのみ適用できます。
  -  この方法を使用するには、Azure Active Directory Premium を所有している必要があります。 所有していない場合は、Windows 8.1 および Windows Phone 8.1 向けの登録方法を使用してください。
  -  自動登録を有効にしない場合は、Windows 8.1 および Windows Phone 8.1 向けの登録方法を使用してください。
 
 
-- [**CNAME の構成による Windows 8.1 および Windows Phone 8.1 の登録**](#set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname) 
+- [**CNAME の構成による Windows 8.1 および Windows Phone 8.1 の登録**](#set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname)
  - Windows 8.1 および Windows Phone 8.1 デバイスを登録するには、この方法を使用する必要があります。
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
@@ -41,17 +41,18 @@ Windows デバイスの登録を設定するには、以下のいずれかの方
 ## <a name="set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname"></a>CNAME の構成によって Windows 8.1 および Windows Phone 8.1 の登録を設定する
 Intune ポータル サイトを使用することで、ユーザーがデバイスをインストールして登録できるようにします。 DNS の CNAME リソース レコードを作成すると、ユーザーはサーバー名を入力することなく Intune に接続して登録できるようになります。
 
-1. **Intune をセットアップする**<br>
+### <a name="step-1-set-up-intune"></a>手順 1: Intune をセットアップする
+
 **Microsoft Intune** を[モバイル デバイス管理 (MDM) 機関に設定](prerequisites-for-enrollment.md#step-2-set-mdm-authority)して、MDM の設定を行うことにより、モバイル デバイス管理を準備します (この作業をまだ行っていない場合)。
 
-2. **CNAME を作成する** (省略可能)<br>
+### <a name="step-2-create-cnames-optional"></a>手順 2 CNAME を作成する (省略可能)
+
 会社のドメインの **CNAME** DNS リソース レコードを作成します。 たとえば、会社の Web サイトが contoso.com の場合、EnterpriseEnrollment.contoso.com を enterpriseenrollment-s.manage.microsoft.com にリダイレクトする CNAME を DNS に作成します。
 
 
-    CNAME DNS エントリの作成は省略可能ですが、CNAME レコードにより登録が簡単になります。 CNAME レコードの登録が見つからない場合、ユーザーは手動で MDM サーバー名 https://enrollment.manage.microsoft.com を入力するように求められます。
+   CNAME DNS エントリの作成は省略可能ですが、CNAME レコードにより登録が簡単になります。 CNAME レコードの登録が見つからない場合、ユーザーは手動で MDM サーバー名 enrollment.manage.microsoft.com を入力するように求められます。
 
-
-    CNAME リソース レコードには次の情報を含める必要があります。
+   CNAME リソース レコードには次の情報を含める必要があります。
 
   |種類:|ホスト名|指定先|TTL|
   |--------|-------------|-------------|-------|
@@ -66,16 +67,15 @@ Intune ポータル サイトを使用することで、ユーザーがデバイ
 
   たとえば、会社の Web サイトが contoso.com の場合、EnterpriseEnrollment.contoso.com を EnterpriseEnrollment-s.manage.microsoft.com にリダイレクトする CNAME を DNS に作成します。 DNS レコードの変更が反映されるまでには、最大で 72 時間かかります。 DNS レコードの変更が反映されるまで、Intune で DNS の変更を確認することはできません。
 
-3.  **CNAME を確認する**<br>[Intune 管理コンソール](http://manage.microsoft.com)で、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[Windows]** の順に選択します。 **[検証済みドメイン名の指定]** ボックスに会社の Web サイトの検証済みドメインの URL を入力し、**[自動検出のテスト]** を選択します。
+### <a name="step-3-verify-cname"></a>手順 3: CNAME を確認する
 
-4.  **ユーザーに、デバイスを登録する方法とデバイスが管理されるとどうなるかを伝える**
+[Intune 管理コンソール](http://manage.microsoft.com)で、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[Windows]** の順に選択します。 **[検証済みドメイン名の指定]** ボックスに会社の Web サイトの検証済みドメインの URL を入力し、**[自動検出のテスト]** を選択します。
 
-    エンドユーザー用の登録手順については、「[Intune に Windows デバイスを登録する](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows)」を参照してください。
+### <a name="step-4-tell-your-users-how-to-enroll-their-devices-and-what-to-expect-after-theyre-brought-into-management"></a>手順 4: ユーザーに、デバイスを登録する方法とデバイスが管理されるとどうなるかを伝える
 
-    エンドユーザー タスクの詳細については、「[Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)」を参照してください。
+   エンドユーザー用の登録手順については、「[Intune に Windows デバイスを登録する](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows)」を参照してください。
 
-エンドユーザー タスクの詳細については、次の記事を参照してください。      - [Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](how-to-educate-your-end-users-about-microsoft-intune.md)
-      - [Windows デバイス用のエンドユーザー ガイダンス](../enduser/using-your-windows-device-with-intune.md)
+   エンドユーザー タスクの詳細については、「[Microsoft Intune に関してエンド ユーザーを教育する方法](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)」および「[Windows デバイスを Intune で使用する](../enduser/using-your-windows-device-with-intune.md)」を参照してください。
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune でデバイスを登録するための前提条件](prerequisites-for-enrollment.md)

@@ -1,5 +1,6 @@
 ---
-title: "Android デバイス向けの Intune Wi-Fi 設定 | Intune Azure プレビュー | Microsoft Docs"
+title: "Android デバイス向けの Intune Wi-Fi 設定"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: Android デバイスで Wi-Fi 接続を構成するために使用できる Intune 設定について説明します。"
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 103e17a4-2993-4359-b340-73e2acf4cf7d
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: e4d42dd165d6a485e9b5691ef9ed9f420d82d3dc
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: b274dd2b6e7e6c2c0bd8b6315b5924b72611ab40
+ms.lasthandoff: 02/18/2017
 
 
 ---

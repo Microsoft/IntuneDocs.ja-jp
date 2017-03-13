@@ -5,18 +5,19 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
-ms.reviewer: cacampbell
+ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 846084a3810e43d9fd6a6c254f1b0167a36f37ff
-ms.openlocfilehash: b99731c7becd90f4092ec758234a96e202d95130
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: cb1679deda0ba325ee3bd7288713f12317489006
+ms.openlocfilehash: 37d44dc2752815ef7abf47e5d4a658a126892a86
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -37,7 +38,7 @@ Microsoft Intune の今回のリリースの新機能について説明します
 ## <a name="notices"></a>通知
 
 ### <a name="group-migration-will-not-require-any-updates-to-groups-or-policies-for-ios-devices---898837--"></a>グループの移行に、iOS デバイス用のグループまたはポリシーの更新は不要<!--898837-->
-業務用デバイスの登録プロファイルで事前に割り当てられている Intune デバイス グループごとに、Azure Active Directory デバイス グループへの移行時に、業務用デバイスの登録プロファイルの名前に基づいて、AAD に対応する動的デバイス グループが作成されます。 これにより、デバイスは登録時に確実に自動でグループ化され、元の Intune グループと同じポリシーおよびアプリが受信されるようになります。 
+業務用デバイスの登録プロファイルで事前に割り当てられている Intune デバイス グループごとに、Azure Active Directory デバイス グループへの移行時に、業務用デバイスの登録プロファイルの名前に基づいて、AAD に対応する動的デバイス グループが作成されます。 これにより、デバイスは登録時に確実に自動でグループ化され、元の Intune グループと同じポリシーおよびアプリが受信されるようになります。
 
 テナントがグループ化と対象設定のための移行プロセスに入ると、Intune で自動的に動的 AAD グループが作成され、業務用デバイスの登録プロファイルの対象となる Intune グループに対応します。 Intune 管理者が対象となる Intune グループを削除しても、対応する動的 AAD グループは削除されません。 グループのメンバーと動的クエリは消去されますが、グループ自体は、IT 管理者が AAD ポータルで削除するまで残ります。
 
@@ -53,7 +54,7 @@ Windows 10 デスクトップを登録するための既定の動作が変わり
 iOS 用ポータル サイト内のリンク (ドキュメントとアプリへのリンクを含む) は、Safari のアプリ内ビューを使用して、ポータル サイト アプリに直接開きます。 この更新プログラムは、1 月にサービス更新プログラムとは別に提供されます。
 
 ### <a name="new-mdm-server-address-for-windows-devices---893007--"></a>Windows デバイス用の新しい MDM サーバー アドレス <!--893007-->
-Windows および Windows Phone のユーザーがデバイスを登録しようとして、MDM サーバー アドレスとして (入力を求められた場合に) __manage.microsoft.com__ を入力した場合、登録は失敗します。 MDM サーバー アドレスは、__manage.microsoft.com__ から __enrollment.manage.microsoft.com__ に変更されています。 Windows や Windows Phone デバイスの登録時に、MDM サーバー アドレスの入力を求められた場合は、__enrollment.manage.microsoft.com__ を使用するようにユーザーに通知してください。 この変更の詳細については、[aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange) を参照してください。
+Windows および Windows Phone のユーザーがデバイスを登録しようとして、MDM サーバー アドレスとして (入力を求められた場合に) __manage.microsoft.com__ を入力した場合、登録は失敗します。 MDM サーバー アドレスは、__manage.microsoft.com__ から __enrollment.manage.microsoft.com__ に変更されています。 Windows や Windows Phone デバイスの登録時に、MDM サーバー アドレスの入力を求められた場合は、__enrollment.manage.microsoft.com__ を使用するようにユーザーに通知してください。 CNAME 設定に変更は必要ありません。 この変更の詳細については、[aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange) を参照してください。
 
 ### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android 用ポータル サイト アプリに関する新しいユーザー エクスペリエンス <!--621622-->
 3 月以降、Android 用ポータル サイト アプリでは[材料設計ガイドライン](https://material.io/guidelines/material-design/introduction.html)に従って、最新の外観が作成されます。 この改善されたユーザー エクスペリエンスには、次のものが含まれます。
