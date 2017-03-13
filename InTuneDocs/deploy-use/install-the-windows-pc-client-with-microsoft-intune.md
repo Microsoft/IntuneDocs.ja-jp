@@ -3,9 +3,9 @@
 title: "PC クライアント ソフトウェアをインストールする | Microsoft Docs"
 description: "このガイドは、Microsoft Intune クライアント ソフトウェアによって、Windows PC を管理させる場合に役立ちます。"
 keywords: 
-author: staciebarker
-ms.author: stabar
-ms.date: 02/14/2017
+author: nathbarn
+ms.author: nathbarn
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
-ms.openlocfilehash: 9606d8f79166e6b38f02aefd4afc52f2a47c1362
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
+ms.openlocfilehash: e7e199bd1820299e7c0ea4f9adc3f5e62bffab97
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -179,6 +179,83 @@ Intune PC クライアント ソフトウェアを使用して既に登録され
     > [!TIP]
     > レポートの列見出しをクリックすると、列の内容で一覧が並べ替えられます。
 
+## <a name="uninstall-the-windows-client-software"></a>Windows クライアント ソフトウェアをアンインストールする
+
+Windows クライアント ソフトウェアは&2; 通りの方法で登録解除できます。
+
+- Intune 管理コンソールから (推奨される方法)
+- クライアントのコマンド プロンプトから
+
+### <a name="unenroll-by-using-the-intune-admin-console"></a>Intune 管理コンソールを使用して登録解除する
+
+Intune 管理コンソールを使用してソフトウェア クライアントの登録を解除するには、**[グループ]**、**[すべてのコンピューター]**、**[デバイス]** の順に進みます。 クライアントを右クリックし、**[インベントリからの削除/ワイプ]** を選択します。
+
+### <a name="unenroll-by-using-a-command-prompt-on-the-client"></a>クライアントでコマンド プロンプトを使用して登録解除する
+
+管理者特権のコマンド プロンプトで、次のいずれかのコマンドを実行します。
+
+**方法 1**:
+
+    ```
+    "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
+    ```
+
+**方法 2** Windows のすべての SKU でこれらのエージェントがすべてインストールされるわけではないことに注意してください:
+
+    ```
+    wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
+    wmic product where name="Microsoft Intune Notification Service" call uninstall<br>
+    wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
+    wmic product where name="Microsoft Online Management Policy Agent" call uninstall<br>
+    wmic product where name="Microsoft Policy Platform" call uninstall<br>
+    wmic product where name="Microsoft Security Client" call uninstall<br>
+    wmic product where name="Microsoft Online Management Client" call uninstall<br>
+    wmic product where name="Microsoft Online Management Client Service" call uninstall<br>
+    wmic product where name="Microsoft Easy Assist v2" call uninstall<br>
+    wmic product where name="Microsoft Intune Monitoring Agent" call uninstall<br>
+    wmic product where name="Windows Intune Endpoint Protection Agent" call uninstall<br>
+    wmic product where name="Windows Firewall Configuration Provider" call uninstall<br>
+    wmic product where name="Microsoft Intune Center" call uninstall<br>
+    wmic product where name="Microsoft Online Management Update Manager" call uninstall<br>
+    wmic product where name="Microsoft Online Management Agent Installer" call uninstall<br>
+    wmic product where name="Microsoft Intune" call uninstall<br>
+    wmic product where name="Windows Endpoint Protection Management Components" call uninstall<br>
+    wmic product where name="Windows Intune Notification Service" call uninstall<br>
+    wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
+    wmic product where name="Windows Online Management Policy Agent" call uninstall<br>
+    wmic product where name="Windows Policy Platform" call uninstall<br>
+    wmic product where name="Windows Security Client" call uninstall<br>
+    wmic product where name="Windows Online Management Client" call uninstall<br>
+    wmic product where name="Windows Online Management Client Service" call uninstall<br>
+    wmic product where name="Windows Easy Assist v2" call uninstall<br>
+    wmic product where name="Windows Intune Monitoring Agent" call uninstall<br>
+    wmic product where name="Windows Intune Endpoint Protection Agent" call uninstall<br>
+    wmic product where name="Windows Firewall Configuration Provider" call uninstall<br>
+    wmic product where name="Windows Intune Center" call uninstall<br>
+    wmic product where name="Windows Online Management Update Manager" call uninstall<br>
+    wmic product where name="Windows Online Management Agent Installer" call uninstall<br>
+    wmic product where name="Windows Intune" call uninstall
+    ```
+
+> [!TIP]
+> クライアントの登録を解除すると、関連するクライアントの無効になったサーバー側レコードが残ります。 登録解除プロセスは非同期です。9 つのエージェントをアンインストールする場合、完了に最大 30 分かかることがあります。
+
+### <a name="check-the-unenrollment-status"></a>登録解除状態を確認する
+
+"%ProgramFiles%\Microsoft\OnlineManagement" を確認し、次のディレクトリのみが左に表示されていることを確認します。
+
+- AgentInstaller
+- ログ
+- Updates
+- 共通 
+
+### <a name="remove-the-onlinemanagement-folder"></a>OnlineManagement フォルダーを削除する
+
+登録解除プロセスでは、OnlineManagement フォルダーが削除されません。 アンインストール後、30 分待ち、このコマンドを実行します。 30 分待たずに実行した場合、アンインストールの状態がわからなくなる可能性があります。 フォルダーを削除するには、プロンプトを管理者特権で開き、次を実行します。
+
+    ```
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    ```
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune を使用して Windows PC を管理する](manage-windows-pcs-with-microsoft-intune.md)
