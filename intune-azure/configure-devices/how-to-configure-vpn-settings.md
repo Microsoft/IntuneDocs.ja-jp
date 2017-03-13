@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -35,8 +35,8 @@ ms.lasthandoff: 02/18/2017
 
 次の接続の種類を使用して、VPN プロファイルを作成できます。
 
-|||
-|-|-|
+||||||||
+|-|-|-|-|-|-|-|
 |接続の種類|Android|iOS|macOS|Windows Phone 8。1|Windows 8.1|Windows 10|
 |Pulse Secure|○|○|○|○|○|[はい]|
 |Cisco (IPSec)|いいえ|○|[いいえ]|いいえ|いいえ|いいえ|
