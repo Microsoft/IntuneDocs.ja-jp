@@ -193,12 +193,10 @@
 ### [管理対象の業務用アプリのデータをワイプする](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [Intune に関してエンド ユーザーを教育する方法](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
-### [Android デバイスを Intune で使用する](EndUser/using-your-android-device-with-intune.md)
-#### [Android ユーザーがアプリを入手する方法](deploy-use/how-your-android-users-get-their-apps.md)
-### [iOS デバイスを Intune で使用する](EndUser/using-your-iOS-or-macos-device-with-intune.md)
-#### [iOS ユーザーがアプリを入手する方法](deploy-use/how-your-ios-users-get-their-apps.md)
-### [Windows デバイスを Intune で使用する](EndUser/using-your-windows-device-with-intune.md)
-#### [Windows ユーザーがアプリを入手する方法](deploy-use/how-your-windows-users-get-their-apps.md)
+### [エンド ユーザーが参照する会社のポータルのメッセージ](deploy-use/help-end-users-understand-company-portal-app-messages.md)
+### [Android ユーザーがアプリを入手する方法](deploy-use/how-your-android-users-get-their-apps.md)
+### [iOS ユーザーがアプリを入手する方法](deploy-use/how-your-ios-users-get-their-apps.md)
+### [Windows ユーザーがアプリを入手する方法](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # アプリの開発とカスタマイズ
 ## [Microsoft Intune アプリ SDK の概要](develop/intune-app-sdk.md)
