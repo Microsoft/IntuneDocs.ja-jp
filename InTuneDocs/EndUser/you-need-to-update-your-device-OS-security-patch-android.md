@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 440d0e75c9373d5de44897b8a997da6c24de4e3c
-ms.openlocfilehash: ca6f6453d2b6ba28152c44e1b66700608c07c97a
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: e8a25b1c89dc84adb05458a93b2048c7149c2a6f
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: ca6f6453d2b6ba28152c44e1b66700608c07c97a
 
 "Minimum Android security patch level is not configured" (最低限の Android セキュリティ パッチ レベルが構成されていません) というメッセージが表示された場合は、更新プログラムをインストールしてデバイスの安全性を確保する必要があります。 _パッチ_は、ソフトウェアの円滑な動作と最新の状態を常に保つためにリリースされます。 IT 管理者から、このパッチをインストールして、デバイスで企業データが可能な限り保護されるようにすることが求められます。 必要なセキュリティ パッチの入手先は、特定の Samsung デバイスを使用しているかどうかで異なります。
 
-Samsung デバイスを使用している場合は、**[Settings]** > **[About phone]** に移動し、"Knox" という単語が画面上に表示されるかを確認します。 表示される場合は、以下の Samsung Knox の手順を実行します。
+Samsung デバイスを使用している場合は、**[Settings]** > **[About phone]** に移動し、"KNOX" という単語が画面上に表示されるかを確認します。 表示される場合は、以下の Samsung KNOX の手順を実行します。
 
 [!INCLUDE[wit_nextref](../includes/end-user-os-update-guidance.md)]
 
@@ -36,14 +37,9 @@ Samsung デバイスを使用している場合は、**[Settings]** > **[About p
 
 ## <a name="for-samsung-knox-android-devices"></a>Samsung KNOX Android デバイスの場合
 
-**[Settings]** > **[System updates]** > **[Check for new system update]** の順に移動します。 更新プログラムをインストールして、Samsung Knox デバイスに適切なセキュリティ パッチがインストールされるようにします。
+**[Settings]** > **[System updates]** > **[Check for new system update]** の順に移動します。 更新プログラムをインストールして、Samsung KNOX デバイスに適切なセキュリティ パッチがインストールされるようにします。
 
 
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 
