@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: c388cb26be11edb6f8f4b23d455632fad9ca98c9
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 78f99bba07180c06f979fec997a7bfb749d879c8
+ms.openlocfilehash: f18fd3ceee5c73a96444092691c590c7d9a7419c
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/18/2017
 - **[認証方法]** - 電子メール プロファイルで使用する認証方法として、**[ユーザー名とパスワード]** または **[証明書]** を選択します。
     - **[証明書]** を選択した場合は、Exchange 接続の認証に使用するために事前に作成しておいたクライアント SCEP または PKCS 証明書プロファイルを選択します。
 - **[SSL]** - 電子メールの送受信および Exchange サーバーとの通信に、SSL (Secure Sockets Layer) 通信を使用します。
-- **[S/MIME]** - S/MIME 暗号化を使用して電子メールを送信します。
+- **[S/MIME]** - S/MIME 署名を使用して送信メールを送信します。
     - **[証明書]** を選択した場合は、Exchange 接続の認証に使用するために事前に作成しておいたクライアント SCEP または PKCS 証明書プロファイルを選択します。
 - **[同期するメールの量]** - 同期する電子メールの日数を選択するか、利用可能なすべての電子メールを同期する場合は **[無制限]** を選択します。
 - **[他の電子メール アカウントにメッセージを移動することを許可する]** - デバイスで構成されている複数のアカウント間で、ユーザーが電子メール メッセージを移動できるようにします。

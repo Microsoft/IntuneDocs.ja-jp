@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cb1679deda0ba325ee3bd7288713f12317489006
-ms.openlocfilehash: 37d44dc2752815ef7abf47e5d4a658a126892a86
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: a9336e3d230de962d2623dd627e45c6e9262a822
+ms.openlocfilehash: cfe4a0bb802956278387ac2a39d5316482e09332
+ms.lasthandoff: 03/01/2017
 
 
 ---
@@ -80,6 +80,12 @@ Azure Portal の管理者エクスペリエンスでは、既に発表されて�
 テナント移行のスケジュールに関して質問がある場合は、Microsoft の移行チーム ([intunegrps@microsoft.com](mailto:intunegrps@microsoft.com)) にお問い合わせください。
 
 Azure の Intune プレビューの新機能は[ここ](https://docs.microsoft.com/intune-azure/introduction/whats-new)で確認できます。
+
+## <a name="whats-coming"></a>今後の更新情報
+
+### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple の要求による Application Transport Security 対応のための更新<!--748318-->
+
+Apple は、2017 年春より Application Transport Security (ATS) の特定の要件を適用すると発表しました。 ATS では、HTTPS 経由で行われるアプリ通信すべてに、より厳格なセキュリティ保護が適用されます。 この変更により、iOS ポータル サイト アプリを使用している Intune ユーザーが影響を受けます。 詳細については、[Intune サポートのブログ](https://aka.ms/compportalats)をご覧ください。 
 
 ### <a name="see-also"></a>関連項目
 * [Microsoft Intune のブログ](http://go.microsoft.com/fwlink/?LinkID=273882)

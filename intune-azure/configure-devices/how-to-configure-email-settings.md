@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e9d1c64ef617a134f05c3e80c23145fd1fdc5399
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: d201715e5e744b0bf2bd37aca2867ef17133311b
+ms.openlocfilehash: 12ad8430d4a9bd6a3f91447db2422f1eb4144a24
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-電子メール プロファイル設定を使用すると、会社の電子メールに接続し、同期するために必要な設定で管理対象デバイスを構成できます。 こうすると、すべてのデバイスに標準の設定を適用し、正しい電子メールの設定がわからないエンド ユーザーからの問い合わせを減らすことができます。
+電子メール プロファイルを使用すると、会社の電子メールに接続し、同期するために必要な設定で管理対象デバイスを構成できます。 こうすると、すべてのデバイスに標準の設定を適用し、正しい電子メールの設定がわからないエンド ユーザーからの問い合わせを減らすことができます。
 
 ほとんどのプラットフォームに組み込まれているメール クライアントをサポートしています。 ほとんどのサード パーティ製の電子メール アプリは現在サポートしていません。
 
