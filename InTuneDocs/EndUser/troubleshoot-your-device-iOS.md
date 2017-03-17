@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: cd5d97ec4524477fe6ac08a863eaf5cc03913e50
-ms.openlocfilehash: 53062067c250434b65911c47b8c2eda052a353c3
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: 54bb8e68ac4435d2ae687f27317445cd18c7a5db
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -37,6 +37,7 @@ iOS デバイスで発生する問題の一部は、トラブルシューティ�
 - [デバイスのシリアル番号を検索する方法](how-do-i-find-the-serial-number-on-my-device-ios.md)
 - [iOS デバイスを更新する必要がある](you-need-to-update-your-ios-device.md)
 - [使用しているバージョンの iOS がまだサポートされていない](your-ios-version-isnt-yet-supported.md)
+- [電子メールを使用してログを IT 管理者に送信する](send-logs-to-your-it-admin-by-email-iOS.md)
 - [iOS デバイスで Lookout for Work をインストールする必要がある](you-are-prompted-to-install-lookout-for-work-ios.md)
 - [iOS デバイスで Lookout for Work が検出した脅威を解決する必要がある](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
 
