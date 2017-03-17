@@ -169,6 +169,8 @@
 ### [Android for Work コンプライアンス ポリシーを作成する](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [iOS コンプライアンス ポリシーを作成する](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Windows コンプライアンス ポリシーを作成する](set-device-compliance/create-a-compliance-policy-for-windows.md)
+### [コンプライアンス非対応に対するアクションを作成する](set-device-compliance/actions-for-noncompliance.md)
+### [デバイス コンプライアンスを監視する](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
 

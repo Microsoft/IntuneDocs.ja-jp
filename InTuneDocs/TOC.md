@@ -120,6 +120,7 @@
 
 ## [アプリを追加する](deploy-use/add-apps.md)
 ### [登録デバイスのアプリを追加する](deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [Windows アプリをサイドローディングする](deploy-use/sideload-apps-for-windows.md)
 ### [Intune のクライアント PC のアプリを追加する](deploy-use/add-apps-for-windows-pcs-in-microsoft-intune.md)
 #### [Intune のクライアント PC のライセンス契約を管理する](deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [アプリの展開](deploy-use/deploy-apps.md)
@@ -136,7 +137,6 @@
 ### [Android for Work アプリ構成ポリシー](deploy-use/afw-app-configuration-policy.md)
 ### [iOS モバイル アプリ プロビジョニング プロファイル](deploy-use/ios-mobile-app-provisioning-profiles.md)
 ### [インターネット アクセスを管理する](deploy-use/manage-internet-access-using-managed-browser-policies.md)
-### [LOB アプリをサイドロードする](deploy-use/sideload-apps-for-windows.md)
 
 ## [アプリとデータを保護する](deploy-use/protect-apps-and-data-with-microsoft-intune.md)
 ### [デバイス コンプライアンス ポリシー](deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune.md)
@@ -168,7 +168,7 @@
 ##### [Mobile Threat Defense コンプライアンス ポリシーを有効にする](deploy-use/device-threat-protection-policy.md)
 
 ### [MAM でアプリ データを保護する](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-#### [アプリ保護ポリシーの Azure ポータル](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
+#### [アプリ保護ポリシーの Azure Portal](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
 #### [アプリ保護ポリシーを構成する準備をする](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 #### [アプリ保護ポリシーを作成して展開する](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Android 用アプリ保護ポリシー](deploy-use/android-mam-policy-settings.md)
