@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 22e188e81f2bc278045bb0988642b1b68372d6af
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 6b723069108ff2cbe85951f7d65ef803323eceb9
+ms.lasthandoff: 03/13/2017
 
 
 ---
 
-# <a name="use-full-or-selective-wipe"></a>フル ワイプまたは選択的ワイプを使用する 
+# <a name="use-full-or-selective-wipe"></a>フル ワイプまたは選択的ワイプを使用する
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -104,6 +104,10 @@ Intune 管理対象デバイスが不要になるか、別の目的で再利用�
 |Outlook|iOS 用の Microsoft Outlook アプリで受信された電子メールは削除されます。</br>例外: Exchange がオンプレミスでホストされている場合は、電子メールは削除されません。|iOS 用の Microsoft Outlook アプリで受信された電子メールは削除されます。</br>例外: Exchange がオンプレミスでホストされている場合は、電子メールは削除されません。|
 |Azure Active Directory (AAD) の切断|AAD レコードは削除されます。|AAD レコードは削除されます。|
 |連絡先 | アプリケーションからネイティブ アドレス帳に直接同期された連絡先が削除されます。  ネイティブ アドレス帳から別の外部ソースに同期された連絡先はワイプできません。 <br /> <br />現時点では、Outlook アプリのみがサポートされています。|アプリケーションからネイティブ アドレス帳に直接同期された連絡先が削除されます。  ネイティブ アドレス帳から別の外部ソースに同期された連絡先はワイプできません。 <br /> <br />現時点では、Outlook アプリのみがサポートされています。
+
+**Android for Work**
+
+会社の Android デバイスで選択的ワイプを行うと、そのデバイスの仕事用のプロファイルのすべてのデータ、アプリケーション、および設定が削除されます。 これによって、そのデバイスは Intune の管理対象ではなくなります。 Android for Work ではフル ワイプはサポートされていません。
 
 **Windows**
 
