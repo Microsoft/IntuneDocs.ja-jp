@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7ac6041fb33f95e5b0c53b81c2af9aef42767a38
-ms.openlocfilehash: 115a27512930fa995a2781afc8a94c1d7f97958e
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
+ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
+ms.lasthandoff: 03/04/2017
 
 
 ---
@@ -57,6 +57,13 @@ ms.lasthandoff: 03/02/2017
      -     iOS デバイスがポリシー準拠状況の確認中の状態でスタックし、ユーザーが別のチェックインを開始できません。 ポータル サイトの再起動で解決することがあり、ポリシー準拠の状態が Intune のデバイスの状態を反映します。 デバイスの同期からすべてのデータが収集された後、ポリシー準拠の確認は平均して&0;.5 秒で完了します。
 
         通常、デバイスがこの状態にあるのは、サービスの接続に問題があるか、同期に時間がかかっていることが原因です。  別のネットワーク構成 (携帯電話、Wi-Fi、VPN) を使用、デバイスを再起動、およびデバイスの SSP が最新であることを確認しても問題が解決しない場合は、「[Microsoft Intune のサポート受ける方法](how-to-get-support-for-microsoft-intune.md)」に従って Microsoft サポートにお問い合わせください。
+
+ - Android デバイスの場合:
+     - 一部の Android デバイスは暗号化されているように見えることがありますが、ポータル サイト アプリでは、このようなデバイスを暗号化されていないデバイスと認識します。 
+    
+        -    この状態のデバイスでは、ユーザーが安全なスタートアップ パスコードを設定する必要があります。 ユーザーには、ポータル サイト アプリから、デバイスのスタートアップ パスコードを設定するように求めるデバイス通知が表示されます。 デバイス通知をタップし、既存の PIN またはパスワードを確認した後に、**[Secure start-up]** (安全な起動) 画面で **[Require PIN to start device]** (デバイスの起動に PIN が必要) を選択します。 ポータル サイト アプリからデバイスの **[ポリシー準拠状況の確認]** ボタンをタップします。 デバイスは暗号化済みとして検出されるようになります。
+    
+        -     デバイスの製造元によっては、ユーザーが設定したシークレット PIN ではなく既定の PIN を使用してデバイスを暗号化する場合があります。 Intune は、既定の PIN を使用した暗号化を安全ではないと認識します。この方法の暗号化では、悪意のあるユーザーがデバイスに物理的にアクセスできる場合、デバイス上のデータが危険な状態になるためです。 この問題が生じた場合は、[アプリの保護ポリシー](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies)を使用することを検討してください。
 
 ## <a name="policy-issues"></a>ポリシーの問題
 
