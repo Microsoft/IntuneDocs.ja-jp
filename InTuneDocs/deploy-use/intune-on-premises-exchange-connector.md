@@ -15,8 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1b74d19762a81313325eac27cab50a144a569620
+ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
+ms.openlocfilehash: 68dbebbd7d29514bde438b7dff3142dc45e8471d
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: 1b74d19762a81313325eac27cab50a144a569620
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 
-モバイル デバイスのメールボックスをホストする Exchange Server と Microsoft Intune が通信できるように接続をセットアップするには、Intune 管理コンソールで内部設置型 Exchange Connector をダウンロードして構成する必要があります。 Intune は、サブスクリプションごとに任意の種類の Exchange Connector 接続を 1 つだけサポートします。
+モバイル デバイスのメールボックスをホストする Exchange Server と Microsoft Intune が通信できるように接続をセットアップするには、Intune 管理コンソールで内部設置型 Exchange Connector をダウンロードして構成する必要があります。 Intune は、サブスクリプションごとに任意の種類の Exchange Connector 接続を&1; つだけサポートします。
 
 ## <a name="on-premises-exchange-connector-requirements"></a>内部設置型 Exchange Connector の要件
 以下の表に、内部設置型 Exchange Connector をインストールするコンピューターの要件を示します。
@@ -75,7 +76,7 @@ Intune Exchange Connector が使用する Active Directory ユーザー アカ�
 > オンプレミス Exchange Connector フォルダー内のファイルの名前を変更したり、ファイルを移動したりしないでください。 フォルダーの内容を移動したり、名前を変更したりすると、インストールが失敗します。
 
 ## <a name="install-and-configure-the-intune-on-premises-exchange-connector"></a>Intune の内部設置型 Exchange Connector のインストールと構成
-次の手順を実行して、Intune の内部設置型 Exchange Connector をインストールします。 内部設置型 Exchange Connector は、Intune サブスクリプション 1 つで 1 台のコンピューターに 1 回だけインストールできます。 内部設置型 Exchange Connector をもう 1 つ構成しようとすると、新しい接続で元の接続が置き換えられます。
+次の手順を実行して、Intune の内部設置型 Exchange Connector をインストールします。 内部設置型 Exchange Connector は、Intune サブスクリプション&1; つで&1; 台のコンピューターに&1; 回だけインストールできます。 内部設置型 Exchange Connector をもう&1; つ構成しようとすると、新しい接続で元の接続が置き換えられます。
 
 1.  内部設置型 Connector のサポートされているオペレーティング システムで、**Exchange_Connector_Setup.zip** を安全な場所に抽出します。
 
@@ -132,9 +133,4 @@ Exchange Connector を正常に構成したら、接続のステータスと前�
 
 
 また、前回いつ同期が完了したかも確認することができます。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
