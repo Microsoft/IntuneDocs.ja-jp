@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
 ms.openlocfilehash: 651899219458f799e26ed7957ccef97d7ae2af09
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -36,8 +37,8 @@ Intune のアプリ保護ポリシーを使用すれば、会社のデータを�
 
 -   **サードパーティの MDM ソリューションに登録されているデバイス:** このカテゴリに属するデバイスは、通常、企業所有デバイスです。
 
-  > [!NOTE]
-  > サードパーティのモバイル アプリケーション管理ソリューションやセキュア コンテナー ソリューションでアプリ保護ポリシーを使用することはお勧めしません。
+      > [!NOTE]
+      > サードパーティのモバイル アプリケーション管理ソリューションやセキュア コンテナー ソリューションでアプリ保護ポリシーを使用することはお勧めしません。
 
 -   **いずれの MDM ソリューションにも登録されていないデバイス:** このカテゴリに属するデバイスは、通常、Intune またはその他の MDM ソリューションで管理も登録もされていない社員所有のデバイスです。
 
@@ -133,9 +134,4 @@ MDM ソリューションに登録されていない BYOD デバイスでは、�
 - [アプリ保護ポリシーを構成する準備をする](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 - [Microsoft Intune でのアプリ保護ポリシーの作成とデプロイ](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
