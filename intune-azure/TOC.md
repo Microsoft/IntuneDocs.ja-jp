@@ -41,7 +41,7 @@
 #### [デバイス登録プログラムを使用して iOS デバイスを登録する](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [デバイス登録マネージャーを使用してデバイスを登録する](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [macOS デバイスの登録](enroll-devices/enroll-macos-devices.md)
-### [Windows デバイスの登録](enroll-devices/enroll-window-devices.md)
+### [Windows デバイスの登録](enroll-devices/enroll-windows-devices.md)
 ### デバイス登録を管理する
 #### [使用条件を作成する](enroll-devices/create-terms-and-conditions.md)
 #### [登録制限を設定する](enroll-devices/set-enrollment-restrictions.md)
