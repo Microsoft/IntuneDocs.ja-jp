@@ -92,7 +92,7 @@ Office 365 管理センターのサポート ページが次のように表示�
 ![別の Intune サポート](../media/alternate-support-ui.png)
 
 
-1. [**Need help**] (ヘルプが必要) を選択します。
+1. [**Need help**]\(ヘルプが必要) を選択します。
 2. テキスト ボックスに問題に関する説明を入力して、**[ヘルプの表示]** を選択します。
 
     ![別の Intune サポート チケット](../media/support-need-help.png)
