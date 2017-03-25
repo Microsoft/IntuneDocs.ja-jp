@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 53862e49c922b75b414fd5aceec3bba2b10299a6
 ms.openlocfilehash: a61cbc076167dfaffeb1af82d78654f2bb7f7721
+ms.lasthandoff: 01/14/2017
 
 
 ---
@@ -76,11 +77,11 @@ Lookout を Intune に統合するために、Lookout Mobility Endpoint Security
 
   ログインで問題が発生した場合は、「[Lookout と Intune の統合に関するトラブルシューティング](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration)」を参照してください。
 
-3.  [Lookout コンソール](https://aad.lookout.com)で **[System]** (システム) モジュールから **[Connectors]** (コネクタ) タブを選択し、**[Intune]** を選択します。
+3.  [Lookout コンソール](https://aad.lookout.com)で **[System]** (システム) モジュールから **[Connectors]\** (コネクタ) タブを選択し、**[Intune]** を選択します。
 
-  ![Lookout コンソールの 「Connectors」 (コネクタ) タブが開き [Intune] オプションが強調されている状態のスクリーンショット](../media/mtp/lookout_mtp_setup-intune-connector.png)
+  ![Lookout コンソールの 「Connectors」\ (コネクタ) タブが開き [Intune] オプションが強調されている状態のスクリーンショット](../media/mtp/lookout_mtp_setup-intune-connector.png)
 
-4.  **[Connectors] (コネクタ)** > **[Connection Settings] (接続設定)** を選択し、**[Heartbeat Frequency] (ハートビート頻度)** を分単位で指定します。
+4.  **[Connectors]\(コネクタ)** > **[Connection Settings]\(接続設定)** を選択し、**[Heartbeat Frequency]\(ハートビート頻度)** を分単位で指定します。
 
   ![ハートビート周期が構成されている接続設定タブのスクリーンショット](../media/mtp/lookout-mtp-connection-settings.png)
 
@@ -89,7 +90,7 @@ Lookout を Intune に統合するために、Lookout Mobility Endpoint Security
 
   Azure AD で識別され、サポートされている登録グループのユーザーの Lookout のサポートを受け、Intune に登録されているすべてのデバイスは、Lookout デバイス脅威保護に登録されてアクティブ化の対象になります。
 
-2. [Lookout コンソール](https://aad.lookout.com)の **[System]** (システム) モジュールで、**[Connectors]** (コネクタ) タブを選択し、**[Enrollment Management]** (登録管理) を選択し、Lookout に登録するデバイスのユーザー セットを定義します。 Azure AD セキュリティ グループの登録の **[表示名]** を追加します。
+2. [Lookout コンソール](https://aad.lookout.com)の **[System]**\(システム) モジュールで、**[Connectors]**\(コネクタ) タブを選択し、**[Enrollment Management]**\(登録管理) を選択し、Lookout に登録するデバイスのユーザー セットを定義します。 Azure AD セキュリティ グループの登録の **[表示名]** を追加します。
 
   ![Intune コネクタ登録ページのスクリーンショット](../media/mtp/lookout-mtp-enrollment.png)
 
@@ -116,7 +117,7 @@ Lookout を Intune に統合するために、Lookout Mobility Endpoint Security
 ![Intune コネクタ エラー管理ページのスクリーンショット](../media/mtp/lookout-mtp-connector-error-notifications.png)
 
 ## <a name="configure-enrollment-settings"></a>登録設定を構成する
-**[System]** (モジュール) の **[Connectors]** (コネクタ) ページで、デバイスが切断されたと判断されるまでの日数を指定します。  切断されたデバイスは非準拠と見なされ、Intune の条件付きアクセス ポリシーに基づいて会社のアプリケーションにアクセスできなくなります。 1 から 90 日の値を指定できます。
+**[System]**\ (モジュール) の **[Connectors]**\ (コネクタ) ページで、デバイスが切断されたと判断されるまでの日数を指定します。  切断されたデバイスは非準拠と見なされ、Intune の条件付きアクセス ポリシーに基づいて会社のアプリケーションにアクセスできなくなります。 1 から 90 日の値を指定できます。
 
 ![](../media/mtp/lookout-console-enrollment-settings.png)
 
@@ -131,15 +132,10 @@ Lookout デバイス脅威保護によって、さまざまな種類のモバイ
 ![脅威と分類を示すポリシー ページのスクリーンショット](../media/mtp/lookout-mtp-threat-classification.png)
 
 >[!IMPORTANT]
-> リスク レベルは、デバイス脅威保護における重要な要素の 1 つです。デバイスのコンプライアンスは、これらのリスク レベルに従って実行時に計算されるためです。 Intune 管理者が設定するポリシーのルールに従って、デバイスはアクティブな脅威の最低レベルが**高**、**中**、または**低**の場合に非準拠と判断されます。 Lookout デバイス脅威保護での脅威分類ポリシーは、Intune でのデバイスのコンプライアンス計算に直接影響を与えます。
+> リスク レベルは、デバイス脅威保護における重要な要素の&1; つです。デバイスのコンプライアンスは、これらのリスク レベルに従って実行時に計算されるためです。 Intune 管理者が設定するポリシーのルールに従って、デバイスはアクティブな脅威の最低レベルが**高**、**中**、または**低**の場合に非準拠と判断されます。 Lookout デバイス脅威保護での脅威分類ポリシーは、Intune でのデバイスのコンプライアンス計算に直接影響を与えます。
 
 ## <a name="watching-enrollment"></a>登録を監視する
 セットアップが完了すると、Lookout デバイス脅威保護は Azure AD のポーリングを開始し、指定された登録グループに対応するデバイスを探します。  登録されたデバイスに関する情報は、「Devices」 (デバイス) モジュールで確認できます。  デバイスの初期状態は保留中と表示されます。  Lookout for Work アプリがデバイスでインストールされたり、オープンになったり、アクティブ化されたりすると、デバイスの状態が変わります。  Lookout for Work アプリをデバイスにプッシュする方法の詳細については、「[Lookout for Work アプリを構成して展開する](configure-and-deploy-lookout-for-work-apps.md)」をご覧ください。
 ## <a name="next-steps"></a>次のステップ
 [Intune 管理コンソールで Lookout MTP の接続を有効にする](enable-lookout-mtp-connection-in-intune.md)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 
