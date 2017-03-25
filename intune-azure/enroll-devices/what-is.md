@@ -15,9 +15,9 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 900883ea9e38342cced195f97693447fafd0e73f
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 6127604afb01a9482eadc3d03b566304e2acdd21
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -59,7 +59,7 @@ Intune で Windows PC などのデバイスを登録し、それらのデバイ�
 
 | **方法** |    **ワイプが必要?** |    **アフィニティ**    |    **ロック** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | [はい]|    ○ |    いいえ | 詳細は近日公開予定|
+|**[BYOD](#byod)** | いいえ |    ○ |    いいえ | 詳細は近日公開予定|
 |**[DEM](#dem)**|    いいえ |いいえ |いいえ    |[詳細情報](enroll-devices-using-device-enrollment-manager.md)|
 
 **Android の登録方法**

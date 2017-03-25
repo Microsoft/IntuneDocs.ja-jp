@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: afca2af0b07b939adc66c8804f04a1125e12001b
-ms.openlocfilehash: 9c71a83f9514187753360fa9c2085584d1b76711
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 86fd9d7212277f9524eb4d7f225df2c7beda1313
+ms.openlocfilehash: 825acdb4452aa7fc9369be653b8afcdd4312ab23
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -49,11 +49,11 @@ Intune では、iPad、iPhone、および macOS デバイスのモバイル デ�
 
 5.  **デバイスを登録して会社のリソースへのアクセスを取得する方法をユーザーに知らせる**
 
-    エンドユーザー用の登録手順については、「[Intune に iOS デバイスを登録する](../enduser/enroll-your-device-in-intune-ios.md)」および「[Intune に macOS デバイスを登録する](../enduser/enroll-your-device-in-intune-macos.md)」を参照してください。 登録プロセスでは、登録により可能になる操作、および IT 管理者が見ることのできるデバイス上のデータと見られないデータについての説明が行われます。
+    エンドユーザー用の登録手順については、「[Intune に iOS デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)」および「[Intune に macOS デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)」を参照してください。 登録プロセスでは、登録により可能になる操作、および IT 管理者が見ることのできるデバイス上のデータと見られないデータについての説明が行われます。
 
     その他のエンドユーザー タスクの詳細については、次の記事を参照してください。
     - [Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](how-to-educate-your-end-users-about-microsoft-intune.md)
-    - [IOS および Mac デバイス向けのエンド ユーザー ガイダンス](../enduser/using-your-ios-or-macOS-device-with-intune.md)
+    - [IOS および Mac デバイス向けのエンド ユーザー ガイダンス](https://docs.microsoft.com/intune-user-help/using-your-ios-or-macOS-device-with-intune)
 
 会社または組織でユーザーのために iOS デバイスを購入した場合は、それらのデバイスも[会社所有の iOS デバイス](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)として管理対象に登録できます。
 
