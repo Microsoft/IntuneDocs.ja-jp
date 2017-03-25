@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,15 +18,15 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: b90aec6297fdeb00940109ae0465e2bc25ab9436
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 364b2b4bfbf91f006447dd42d6a196f0b3b81542
+ms.lasthandoff: 03/16/2017
 
 
 ---
 
 
-# <a name="device-doesnt-have-secure-boot-enabled"></a>デバイスでセキュア ブートが有効ではない
+# <a name="you-need-to-enable-secure-boot"></a>セキュア ブートを有効にする必要がある
 
 所属組織が Windows のセキュア ブートを有効にしておくことを要求しています。これは、デバイスを保護するために役立つセキュリティ機能です。
 

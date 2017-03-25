@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,8 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 962eb30ada84355c1aceacbf8f487b0f5b3cf1f2
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 9bc5b328fc204a12cf7aa992f62ac00b9ddfd45d
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -34,14 +35,14 @@ ms.openlocfilehash: 962eb30ada84355c1aceacbf8f487b0f5b3cf1f2
 
 最初の通知が送信された後、デバイスがチェックインしてポリシーを取得しない場合、Intune はさらに&3; 回試行します。  デバイスがオフライン (たとえば、デバイスの電源がオフである、ネットワークに接続されていない) の場合、通知を受信していない可能性があります。 この場合、デバイスは次回のスケジュールされた Intune サービスへのチェックインでポリシーを取得することになります。チェックイン頻度は次のとおりです。
 
-- iOS と Mac OS X: 6 時間ごと
+- iOS と macOS: 6 時間ごと
 - Android: 8 時間ごと
 - Windows Phone: 8 時間ごと
 - デバイスとして登録された Windows 8.1 および Windows 10 PC: 8 時間ごと
 
 登録してすぐのデバイスでは、チェックイン頻度が高くなります。頻度は次のとおりです。
 
-- iOS と Mac OS X: 6 時間まで 15 分ごと、その後 6 時間ごと
+- iOS と macOS: 6 時間まで 15 分ごと、その後 6 時間ごと
 - Android: 15 分まで 3 分ごと、その後の 2 時間は 15 分ごと、その後 8 時間ごと
 - Windows Phone: 15 分まで 5 分ごと、その後の 2 時間は 15 分ごと、その後 8 時間ごと
 - デバイスとして登録された Windows PC: 30 分まで 3 分ごと、その後 8 時間ごと
@@ -499,8 +500,3 @@ Android、Windows Phone 8.1 以降、iOS などのその他の MDM デバイス�
 
 ### <a name="next-steps"></a>次のステップ
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)」の説明に従って Microsoft サポートにお問い合わせください。
-
-
-<!--HONumber=Feb17_HO3-->
-
-

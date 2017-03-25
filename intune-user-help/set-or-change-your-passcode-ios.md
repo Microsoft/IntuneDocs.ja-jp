@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: fc22acb9f0c08491852592f41dc60bef0fcf0928
-ms.openlocfilehash: 9e616d6368a40e3ae06303cf3556b5e0760fb477
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: fbb3143baa0063343d639d2df6101ebaec98ee65
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 12/21/2016
 
 iOS デバイスが、IT 管理者のパスコード ポリシーに準拠していない場合、問題の簡単な説明と、パスコード要件を満たすために実行する必要のある事柄が説明されたメッセージが表示されます。
 
-IT 管理者は、パスコードの要件を 1 つ以上設定できます。 たとえば、パスコードの文字数を指定したり、数字、英字、記号を混在させる必要があることなどを指定したりすることができます。 要件は 1 つ以上設定される可能性もあるため、これらの手順では、パスコードの設定および変更方法のみを説明します。 可能性のある要件の組み合わせをすべて網羅しているわけではありません。
+IT 管理者は、パスコードの要件を&1; つ以上設定できます。 たとえば、パスコードの文字数を指定したり、数字、英字、記号を混在させる必要があることなどを指定したりすることができます。 要件は&1; つ以上設定される可能性もあるため、これらの手順では、パスコードの設定および変更方法のみを説明します。 可能性のある要件の組み合わせをすべて網羅しているわけではありません。 例として、これらのパスコードを使用して、ロック画面からデバイスにアクセスします。
 
 パスコード要件を満たすようパスコードを設定できない場合は、IT 管理者に問い合わせてください。
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 851ed5e9967939a930d6d9c22a23d7c72a7b52a7
-ms.openlocfilehash: f6f8babaca68fdb75ab6ff36d931f8dbd734acf0
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: 13d20cd985dbc22cd6d833fa333f31be809ffae5
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -30,11 +30,11 @@ ms.lasthandoff: 02/16/2017
 
 Microsoft Intune は Azure Portal への移行中であり、これまでの使い慣れたワークフローと機能には変更が加えられることになります。
 新しいポータルでは、Azure Portal の新機能と更新された機能のプレビューが提供されており、組織で所有するモバイル デバイス、PC、アプリの管理に利用できます。
-最終的には Intune のすべての機能が Azure に移行しますが、現時点での Azure Portal では特定の Intune タスクのみを実行できます。 この新しいエクスペリエンスはプレビュー段階にあり、一部の機能はまだポータル上に存在しない場合があります。 詳細については、「[新機能](#what's-new-in-the-preview)」セクションを参照してください。
+最終的には Intune のすべての機能が Azure に移行しますが、現時点での Azure Portal では特定の Intune タスクのみを実行できます。 この新しいエクスペリエンスはプレビュー段階にあり、一部の機能はまだポータル上に存在しない場合があります。 詳細については、「[新機能](#what's-new)」セクションを参照してください。
 
 > [!IMPORTANT]
 > **新しいポータルがまだ表示されない場合**<br>
-> 一部のテナントに対して、既にプレビュー版のロールアウトが開始されています。 2017 年の初めには、新しいエクスペリエンスへの既存テナントの移行が開始される予定です。 ご利用のテナントが移行される際は、事前に Office メッセージ センターに通知が届きます。 テナント移行のスケジュールに関して質問がある場合は、Microsoft の移行チーム ([intunegrps@microsoft.com](mailto:intunegrps@microsoft.com)) にお問い合わせください。
+> 一部のテナントに対して、既にプレビュー版のロールアウトが開始されています。 2017 年の初めには、新しいエクスペリエンスへの既存テナントの移行が開始される予定です。 ご利用のテナントが移行される際は、事前に Office メッセージ センターに通知が届きます。
 
 
 このライブラリには新しい製品ドキュメントが追加され、プレビュー期間中に随時更新されます。 ドキュメントの内容についてご提案がございましたら、トピックのコメント欄にフィードバックをお寄せください。 ご意見をお待ちしております。
@@ -74,24 +74,25 @@ Azure Portal は、ほとんどの最新 PC、Mac、タブレットで動作し�
 
 ![Azure Portal のワークロード](./media/azure-portal-workloads.png)
 
-<!--- ### Plan and design
-Information to help you plan and design your Intune environment.
-[Read more](/intune-azure/plan-and-design/get-started) --->
-### <a name="enroll-devices"></a>デバイスの登録
+### <a name="introduction-and-get-started"></a>概要と作業開始
+このセクションには、Intune の[新機能](/intune-azure/introduction/whats-new)、[既知の問題](/intune-azure/introduction/known-issues-in-the-intune-preview)、[サポートを受ける方法](/intune-azure/introduction/how-to-get-support-for-microsoft-intune)、[無料評価版を開始](/intune-azure/introduction/sign-up-free-trial-microsoft-intune)する方法に関する情報が含まれています。
+### <a name="plan-and-design"></a>計画と設計
+Intune 環境の[計画と設計](/intune-azure/plan-and-design/get-started)に役立つ情報が含まれています。
+### <a name="device-enrollment"></a>デバイスの登録
 [デバイスを Intune の管理対象にする方法](/intune-azure/enroll-devices/what-is)。
-### <a name="devices--groups"></a>デバイスとグループ
+### <a name="devices"></a>[デバイス]
 [インベントリとレポートによって管理対象デバイスの情報を把握します](/intune-azure/manage-devices/what-is)。
-### <a name="manage-users"></a>ユーザーの管理
-[管理対象デバイスのユーザーの情報が得られます](/intune-azure/manage-users/what-is)。
+### <a name="manage-users-and-groups"></a>ユーザーおよびグループの管理
+[リソースを管理し、グループに分類するデバイスのユーザーについて](/intune-azure/manage-users/what-is)説明します。
 ### <a name="manage-apps"></a>アプリを管理する
 [アプリの発行、管理、構成、および保護方法](/intune-azure/manage-apps/what-is-app-management)。
-### <a name="configure-devices"></a>デバイスの構成
+### <a name="device-configuration"></a>デバイス構成
 [管理対象のデバイスで設定と機能を構成するために使用できるプロファイルについて理解します](/intune-azure/configure-devices/what-are-device-profiles)。
-### <a name="set-device-compliance"></a>デバイス コンプライアンスの設定
+### <a name="device-compliance"></a>デバイスのポリシー準拠
 [デバイスのコンプライアンス レベルを定義し、準拠していないデバイスについてのレポートを作成します](/intune-azure/set-device-compliance/what-is-device-compliance)。
 ### <a name="conditional-access"></a>条件付きアクセス
 [指定した条件に応じて Exchange サービスへのアクセスを制限します](/intune-azure/conditional-access/what-is-conditional-access)。
-### <a name="access-control"></a>アクセス制御
+### <a name="intune-roles"></a>Intune ロール
 [Intune の各種アクションを実行できるユーザーと、それらのアクションの適用先となるユーザーを制御します](/intune-azure/access-control/role-based-access-control)。 一般的な Intune シナリオを対象とする組み込みロールを使用するか、独自のロールを作成することができます。
 
 

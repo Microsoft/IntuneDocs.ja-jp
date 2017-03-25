@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
-ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
+ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
+ms.openlocfilehash: 1768b98cdcb18b5489d9a30b8c1f455f5de58418
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -25,11 +26,11 @@ ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
-このガイドのセクションは、セクション 2 の他のトピックと併せて参照する必要があります。 この設計は、このガイドの前のセクションで完了している情報収集と決定に基づきます。 この設計セクションでは、クラウド内に存在する Microsoft クラウド ベースのサービスである Intune スタンドアロンに注目します。
+このガイドのセクションは、セクション 2 の他のトピックと併せて参照する必要があります。 この設計は、このガイドの前のセクションで完了している情報収集と決定に基づきます。 この設計セクションでは、Microsoft クラウド ベースのサービスである Intune スタンドアロンに注目します。
 
-オンプレミスのインフラストラクチャに関する最低限の要件はありますが、設計計画を作成し、モバイル デバイス管理ソリューションを目的、目標、および要件を満たす適切なものにすることをお勧めします。
+オンプレミスのインフラストラクチャに関する最低限の要件はありますが、モバイル デバイス管理ソリューションを目的、目標、および要件を満たす適切なものにするために、設計計画を作成しましょう。
 
-さらに、実装およびテスト フェーズの間に設計を変更し、発生したすべての変更とその根拠を文書化することが一般的です。 次の項目について説明します。
+また、通常、実装およびテスト フェーズの間に設計を変更し、発生した変更とその根拠を文書化します。 次の項目について説明します。
 
 -   現在の環境
 
@@ -409,9 +410,4 @@ Intune サービス間コネクタをインストールして構成する方法�
 ## <a name="next-section"></a>次のセクション
 
 次のセクションでは、[Intune の実装プロセス](section-8-onboarding-process.md)に関するガイダンスについて説明します。
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

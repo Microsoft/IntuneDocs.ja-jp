@@ -16,34 +16,35 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: b245dac28f88e7eab70dfa9d759b15e155f8a7df
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: 7d5a1859ef1a373ce424dd4f351fc137c6052fb7
+ms.lasthandoff: 03/10/2017
 
 
 ---
 
 # <a name="what-is-device-compliance-in-intune-azure-preview"></a>Intune Azure プレビューでのデバイス コンプライアンスとは
 
-
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-会社のデータを容易に保護できるようにするには、会社のアプリとデータへのアクセスに使用されるデバイスが特定のルールに準拠していることを確認する必要があります。 これらのルールには、PIN を使用するデバイスへのアクセスと、デバイスに格納されているデータの暗号化に関するものが含まれる場合があります。 このような一連のルールは、**コンプライアンス ポリシー**と呼ばれます。
+Intune のデバイス コンプライアンス ポリシーは、デバイスが Intune および EMS 条件付きアクセス ポリシーによって "準拠している" と見なされるために遵守する必要がある規則および設定を定義します。 デバイス コンプライアンス ポリシーを使用して、デバイスのコンプライアンスに関する問題を監視および修復することもできます。 
 
-##  <a name="how-should-i-use-a-device-compliance-policy"></a>デバイス コンプライアンス ポリシーの使用方法
-コンプライアンス ポリシーは、条件付きアクセスと一緒に使用することで、コンプライアンス ポリシー ルールに準拠しているデバイスにのみ電子メールや他のサービスへのアクセスを許可することができます。
+この規則には次のようなものがあります。
 
-また、条件付きアクセスと独立してコンプライアンス ポリシーを使用することもできます。
-コンプライアンス ポリシーを単独で使用した場合、対象のデバイスが評価され、コンプライアンス ステータスを含めて報告されます。 たとえば、暗号化されていないデバイスの数や脱獄またはルート化されたデバイスに関するレポートを取得できます。 ただし、コンプライアンス ポリシーを単独で使用した場合、会社のリソースへのアクセス制限が設定されません。
+- パスワードを使用したデバイスへのアクセス
+- 暗号化
+- デバイスが脱獄またはルート化されているかどうか
+- 必要な最小 OS バージョン
+- 許可される最大 OS バージョン
+- デバイスが Mobile Threat Defense レベル以下であることが必要
 
-コンプライアンス ポリシーはユーザーに展開して使用します。 コンプライアンス ポリシーがユーザーに展開されると、ユーザーのデバイスのコンプライアンスがチェックされます。 ポリシーの展開後にモバイル デバイスがポリシーを取得できるようになるまでにかかる時間については、デバイスでの設定と機能の管理に関するページを参照してください。
+<!---##  Concepts
+Following are some terms and concepts that are useful to understanding how to use compliance policies.
 
-##  <a name="concepts"></a>概念
-以下に、コンプライアンス ポリシーの使用方法を把握するうえで役立ついくつかの用語と概念を挙げます。
+### Device compliance requirements
+Compliance requirements are essentially rules like requiring a device PIN or encryption that you can specify as required or not required for a compliance policy.
 
-### <a name="compliance-requirements"></a>コンプライアンス要件
-コンプライアンス要件とは、基本的にはデバイスの PIN または暗号化を要求するようなルールであり、コンプライアンス ポリシーに対して必要か不要かを指定できます。
-
-<!---### Actions for noncompliance
+### Actions for noncompliance
 
 You can specify what needs to happen when a device is determined as noncompliant. This can be a sequence of actions during a specific time.
 When you specify these actions, Intune will automatically initiate them in the sequence you specify. See the following example of a sequence of
@@ -66,14 +67,22 @@ compliance issues on the device. You can also use this time to create your actio
 
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
-##  <a name="differences-between-the-classic-intune-admin-console-and-intune-in-the-azure-portal"></a>クラシック Intune 管理コンソールと Azure Portal の Intune の相違点
+##  <a name="how-should-i-use-a-device-compliance-policy"></a>デバイス コンプライアンス ポリシーの使用方法
 
+### <a name="using-ems-conditional-access"></a>EMS 条件付きアクセスを使用
+コンプライアンス ポリシーは、EMS 条件付きアクセスと一緒に使用することで、1 つ以上のデバイス コンプライアンス ポリシー ルールに準拠しているデバイスにのみ電子メールや他の企業リソースへのアクセスを許可することができます。
 
-以前からクラシック Intune 管理コンソールを利用している場合は、以下の相違点について把握し、Azure Portal の新しいデバイス コンプライアンス ワークフローへの移行に役立ててください。
+### <a name="not-using-ems-conditional-access"></a>EMS 条件付きアクセスを使用しない
+また、EMS 条件付きアクセスと独立してデバイス コンプライアンス ポリシーを使用することもできます。
+コンプライアンス ポリシーを単独で使用した場合、対象のデバイスが評価され、コンプライアンス ステータスを含めて報告されます。 たとえば、暗号化されていないデバイスの数や脱獄またはルート化されたデバイスに関するレポートを取得できます。 ただし、コンプライアンス ポリシーを単独で使用した場合、会社のリソースへのアクセス制限が設定されません。
 
+コンプライアンス ポリシーはユーザーに展開して使用します。 コンプライアンス ポリシーがユーザーに展開されると、ユーザーのデバイスのコンプライアンスがチェックされます。 ポリシーの展開後にモバイル デバイスがポリシーを取得できるようになるまでにかかる時間については、デバイスでの設定と機能の管理に関するページを参照してください。
+
+##  <a name="intune-classic-admin-console-vs-intune-azure-preview-portal"></a>Intune クラシック 管理コンソール対Intune Azure プレビュー ポータル
+
+Intune クラシック管理コンソールを利用している場合は、以下の相違点について把握し、Azure Portal の新しいデバイス コンプライアンス ポリシー ワークフローへの移行に役立ててください。
 
 -   Azure Portal では、コンプライアンス ポリシーがサポート対象のプラットフォームごとに個別に作成されます。 Intune 管理コンソールでは、すべてのサポート対象プラットフォームで&1; つのコンプライアンス ポリシーが共有されていました。
-
 
 <!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
@@ -81,15 +90,10 @@ Remember that you need to implement conditional access policies in addition to c
 
 ##  <a name="next-steps"></a>次のステップ
 
-[コンプライアンス ポリシーの概要](get-started-with-device-compliance.md)
+[デバイス コンプライアンス ポリシーの概要](get-started-with-device-compliance.md)
 
 
 <!---### See also
 
 Conditional access--->
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

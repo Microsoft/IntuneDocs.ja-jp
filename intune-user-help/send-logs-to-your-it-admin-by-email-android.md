@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 1bf478eae73bb7385369e4d5cde26b937831e665
-ms.openlocfilehash: 5ce680b35ff2a931b13e0395d7bb550f534d2b29
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 3794f6c908dabb1946a262a7238a38537b7b06ec
+ms.lasthandoff: 03/16/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 12/30/2016
 
 # <a name="send-logs-to-your-it-admin-using-email"></a>電子メールを使用してログを IT 管理者に送信する
 
-Android デバイスでポータル サイト アプリを使用している間にエラーが発生した場合は、IT 管理者が問題のトラブルシューティングを行う際に役立つようにエラーに関する情報を電子メールで送信することができます。 この情報は、_diagnostic log__ という特殊なドキュメントでデバイスに保存されます。
+Android デバイスでポータル サイト アプリを使用している間にエラーが発生した場合は、IT 管理者が問題のトラブルシューティングを行う際に役立つようにエラーに関する情報を電子メールで送信することができます。 この情報は、デバイスの _diagnostic log_ という名前の特殊なドキュメントに保存されています。
 
 > [!Note]
 > IT 管理者が問題を把握しやすいように、_詳細ログ記録_を有効にすることをお勧めします。 詳細ログ記録を使用すると、レポートに関連するすべての詳細情報が含まれます。 詳細ログ記録を有効にする方法については[こちら](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)を参照してください。

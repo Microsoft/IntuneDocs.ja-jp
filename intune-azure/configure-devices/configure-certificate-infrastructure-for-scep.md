@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 8f713769e0b8a13e91e6d9991e4e7415e1da22a2
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: ea910594195313978d6defae529a526bc0310022
+ms.lasthandoff: 03/13/2017
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep-in-microsoft-intune"></a>Microsoft Intune で SCEP の証明書インフラストラクチャを構成する
@@ -54,7 +54,7 @@ ms.lasthandoff: 02/18/2017
 NDES サーバーは、[Azure AD アプリケーション プロキシ](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/)、[Web アクセス プロキシ](https://technet.microsoft.com/en-us/library/dn584107.aspx)、サード パーティ製のプロキシなどのプロキシを通じて公開することをお勧めします。
 
 
-### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a><a name="BKMK_CertsAndTemplates"></a>証明書とテンプレート
+### <a name="BKMK_CertsAndTemplates"></a>証明書とテンプレート
 
 |オブジェクト|説明|
 |----------|-----------|
@@ -63,13 +63,13 @@ NDES サーバーは、[Azure AD アプリケーション プロキシ](https://
 |**サーバー認証証明書**|発行元 CA またはパブリック CA から要求されます。この SSL 証明書をインストールし NDES サーバーの IIS にバインドします。|
 |**信頼されたルート CA 証明書**|これをルート CA またはルート CA を信頼するデバイスから **.cer** ファイルとしてエクスポートし、信頼された CA 証明書プロファイルを使用してデバイスに展開します。<br /><br />オペレーティング システムのプラットフォームごとに&1; つの信頼されたルート CA 証明書を使用し、作成する各信頼されたルート証明書プロファイルに関連付けます。<br /><br />必要に応じて、信頼されたルート CA 証明書を追加して使用できます。 ルート CA 証明書を追加する局面としては、Wi-Fi アクセス ポイント用のサーバー認証証明書に署名する CA の信頼性を担保する必要がある場合などが考えられます。|
 
-### <a name="a-namebkmkaccountsaaccounts"></a><a name="BKMK_Accounts"></a>アカウント
+### <a name="BKMK_Accounts"></a>アカウント
 
 |名前|説明|
 |--------|-----------|
 |**NDES サービス アカウント**|NDES サービス アカウントとして使用するドメイン ユーザー アカウントを指定します。|
 
-## <a name="a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure"></a><a name="BKMK_ConfigureInfrastructure"></a>インフラストラクチャを構成する
+## <a name="BKMK_ConfigureInfrastructure"></a>インフラストラクチャを構成する
 証明書プロファイルを構成する前に、次のタスクを行う必要があります。これには、Windows Server 2012 R2 および Active Directory 証明書サービス (ADCS) の知識が必要です。
 
 **タスク 1**: NDES サービス アカウントを作成する
@@ -108,7 +108,7 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
     -   [ **拡張** ] タブで、[ **アプリケーション ポリシーの説明** ] に [ **クライアント認証**] が含まれることを確認します。
 
         > [!IMPORTANT]
-        > iOS および Mac OS X の証明書テンプレートの場合、**[拡張]** タブで、**[キー使用法]** を編集し、**[署名は発行元の証明である]** がオンになっていないことを確認します。
+        > iOS および macOS の証明書テンプレートの場合、**[拡張]** タブで、**[キー使用法]** を編集し、**[署名は発行元の証明である]** がオンになっていないことを確認します。
 
     -   **[セキュリティ]** タブで、NDES サービス アカウントを追加し、テンプレートへの **[登録]** アクセス許可を付与します。 SCEP プロファイルを作成する Intune 管理者は、SCEP プロファイルの作成時にテンプレートを閲覧できるように、**読み取り**権限を必要とします。
 
@@ -118,7 +118,7 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 3.  [ **一般** ] タブでテンプレートの [ **有効期間** ] を確認します。 既定では、Intune はテンプレートで構成されている値を使用します。 ただし、要求元が異なる値を指定できるように CA を構成できます。異なる値は、Intune 管理者コンソールから設定できます。 常にテンプレートの値を使用する場合は、この手順の残りの部分をスキップします。
 
     > [!IMPORTANT]
-    > iOS および Mac OS X プラットフォームは、他の構成に関係なく、常にテンプレートで設定される値を使用します。
+    > iOS および macOS は、他の構成に関係なく、常にテンプレートで設定される値を使用します。
 
 次は、サンプル テンプレート構成のスクリーンショットです。
 

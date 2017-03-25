@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
-ms.openlocfilehash: 2e05e3af45628930eadec0ac97736b0354412aec
-ms.lasthandoff: 01/31/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 586a5355e2ee4b0dda6e0238628fa71bdce6f1a2
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -43,7 +43,7 @@ ms.lasthandoff: 01/31/2017
 
 ## <a name="update-the-intune-company-portal-app-on-your-windows-device"></a>Windows デバイスで Intune ポータル サイト アプリを更新する
 
-1.  Windows ストアにアクセスし、**[ポータル サイト]** を検索します。
+1.  Windows ストアにアクセスし、**Intune ポータル サイト**を検索します。
 
 2.  インストール手順に従って操作します。
 

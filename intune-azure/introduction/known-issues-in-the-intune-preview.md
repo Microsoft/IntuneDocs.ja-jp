@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: ee4422f462270b6466f11721aa7dc8cb2d432f7d
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
+ms.openlocfilehash: ec3f87994b19591bda4ec201eac3c839798d634c
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -38,4 +38,7 @@ Intune への新機能の追加を依頼する場合は、[Uservoice](https://mi
 ## <a name="administration-and-accounts"></a>管理とアカウント
 
 - グローバル管理者 (テナント管理者とも呼ばれる) は別個の Intune または Enterprise Mobility Suite (EMS) ライセンスがなくても日常的な管理タスクを続行できます。 ただし、グローバル管理者が自分自身のデバイスの登録、会社のデバイスの登録、Intune ポータル サイトの使用などを行うためにサービスを使用する場合は、他のユーザーと同じように Intune または EMS のライセンスが必要になります。
+
+## <a name="apple-enrollment-profile-migration"></a>Apple 登録プロファイルの移行
+- 今後数か月のうちに、Intune では、新しい Azure Portal を使用して、Apple Device Enrollment Program および Apple Configurator の登録の管理が可能になります。 Apple Device Enrollment Program トークンを削除したり、更新されたトークンをアップロードしなかった場合、元のトークンが Intune アカウントの移行の一部として新しい Azure Portal に復元されます。 このトークンを削除し、DEP 登録をブロックするには、Azure Portal で単にトークンを削除します。 
 

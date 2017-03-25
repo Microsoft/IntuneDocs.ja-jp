@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: a062b92cba0042153ffe22b949ce8a3b7b740b3f
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: 01e8a6968797bc2b2b0f3bb5710ee396d9094584
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -222,7 +222,7 @@ ms.lasthandoff: 02/18/2017
 -     **[iCloud フォトライブラリ]** - **[いいえ]** に設定すると、ユーザーがクラウドに写真やビデオを保存できる iCloud フォトライブラリが使用できなくなります。    これを **[いいえ]** に設定すると、iCloud フォト ライブラリからデバイスに完全にダウンロードされていない写真はすべてデバイスから削除されます。
 -     **[管理対象アプリのクラウドへの同期]** - Intune で管理するアプリがユーザーの iCloud アカウントにデータを同期することを許可します。
 -     **[共有フォト ストリーム]** - デバイスの **[iCloud Photo Sharing (iCloud の写真共有)]** を無効にするには、**[いいえ]** に設定します。
--     **[アクティビティの継続]** - ユーザーがある iOS デバイスで開始した作業を別の iOS または Mac OS X デバイスで続行できるようにします (Handoff)。
+-     **[アクティビティの継続]** - ユーザーがある iOS デバイスで開始した作業を別の iOS または macOS デバイスで続行できるようにします (Handoff)。
 
 ## <a name="kiosk"></a>キオスク
 -     **[アクティベーション ロック]** - 監視されている iOS デバイスでアクティベーション ロックを有効にします。

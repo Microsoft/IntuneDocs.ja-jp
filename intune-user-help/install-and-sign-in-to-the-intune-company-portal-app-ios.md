@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: cf110d8758e8ab589acbceabb5df733b29068b0f
-ms.lasthandoff: 01/31/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: d4491a6068ebde632b8af0dfa6bee500def8e4b2
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 01/31/2017
 
 ポータル サイトはアプリの一種であり、iOS デバイスにインストールすることで、会社または学校のアプリ、電子メール、およびネットワークにアクセスできるようになります。  アクセスを可能にするには、事前に、ポータル サイト アプリをインストールし、このアプリを使用して、Microsoft Intune にデバイスを登録しておく必要があります。 詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなりますか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)」を参照してください。
 
-1.  **App Store** を開いて、**intune** を探します。
+1.  **App Store** を開いて、**Intune ポータル サイト**を探します。
 
 2.  **Microsoft Intune ポータル サイト アプリ**をダウンロードします。
 

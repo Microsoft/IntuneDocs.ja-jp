@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 2b60f327c2e48c3c933a6cff0a68df138df4dd3d
-ms.openlocfilehash: ffc912af791c4b243877f026a554cc14b614ffa0
-ms.lasthandoff: 01/05/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 3e91ccb2aae973892044f19d0d26c7f57bd5d786
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 01/05/2017
 
 # <a name="send-logs-to-your-it-admin-using-a-usb-cable"></a>USB ケーブルを使用してログを IT 管理者に送信する
 
-Android デバイスでポータル サイト アプリを使用している間にエラーが発生した場合は、IT 管理者が問題のトラブルシューティングを行う際に役立つようにエラーに関する情報を電子メールで送信することができます。 この情報は、デバイスの _diagnostic log__ という名前の特殊なドキュメントに保存されています。
+Android デバイスでポータル サイト アプリを使用している間にエラーが発生した場合は、IT 管理者が問題のトラブルシューティングを行う際に役立つようにエラーに関する情報を電子メールで送信することができます。 この情報は、デバイスの _diagnostic log_ という名前の特殊なドキュメントに保存されています。
 
 > [!Note]
 > 開始する前に、IT 管理者の電子メール アドレスを用意してください。 アドレスは、[ポータル Web サイト](http://portal.manage.microsoft.com)またはポータル サイト アプリで見つけることができます。
