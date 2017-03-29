@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/01/2017
+ms.date: 03/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
-ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
-ms.lasthandoff: 01/30/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 3d4a89cd8e6e57f5a1e268dcda98cfb3c68c5587
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -35,9 +35,9 @@ ms.lasthandoff: 01/30/2017
 
 -    [Microsoft Intune にデバイスを登録する準備](/intune/deploy-use/prerequisites-for-enrollment)
 -    [iOS および Mac のデバイス管理をセットアップする](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--    [Microsoft Intune を使用して Windows Phone と Windows 10 Mobile の管理をセットアップする](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -    [Windows デバイスの管理をセットアップする](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
-
+-    [Android デバイスの管理をセットアップする](/intune/deploy-use/set-up-android-management-with-microsoft-intune) - 追加の手順は必要ありません
+-    [Android デバイスの管理をセットアップする](/intune/deploy-use/set-up-android-for-work)
 
 管理対象デバイスのユーザーが登録ログと診断ログを収集しておくと、管理者が確認できます。 ユーザーがログを収集する手順については、次のページを参照してください。
 
@@ -119,7 +119,7 @@ ms.lasthandoff: 01/30/2017
 
     2.  **Intune アカウント ポータル** のユーザー一覧から、一致しないユーザーを削除します。
 
-    3.  Azure サービスで不適切なデータが削除されるまで、約&1; 時間待ちます。
+    3.  Azure サービスで不適切なデータが削除されるまで、約 1 時間待ちます。
 
     4.  再び DirSync を有効にして、ユーザーが適切に同期していることを確認します。
 
@@ -146,10 +146,10 @@ ms.lasthandoff: 01/30/2017
 **解決方法:** [Office 365 管理センター](https://portal.office.com/)で、会社名から特殊文字を削除した後、会社情報を保存します。
 
 ### <a name="unable-to-log-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>確認済みドメインが複数ある場合にデバイスへのログインまたはデバイスの登録ができない
-**問題:** ADFS に&2; 番目の確認済みドメインを追加すると、2 番目のドメインのユーザー プリンシパル名 (UPN) サフィックスを持つユーザーがポータルにログインできなくなる場合や、デバイスを登録できなくなる場合があります。
+**問題:** ADFS に 2 番目の確認済みドメインを追加すると、2 番目のドメインのユーザー プリンシパル名 (UPN) サフィックスを持つユーザーがポータルにログインできなくなる場合や、デバイスを登録できなくなる場合があります。
 
 
-**解決方法:** AD FS 2.0 によるシングル サインオン (SSO) を利用している Microsoft Office 365 ユーザーが、組織内にユーザーの UPN サフィックス用のトップ レベル ドメイン (@contoso.com、@fabrikam.com) など) を複数持っている場合、各サフィックスに対して別々の AD FS 2.0 フェデレーション サービス インスタンスを展開する必要があります。 現在は [AD FS 2.0 用ロールアップ](http://support.microsoft.com/kb/2607496)が用意されており、これを **SupportMultipleDomain** スイッチと組み合わせて使用することで、AD FS 2.0 サーバーを追加しなくても、このような状況に対応することができます。 詳細については、[このブログ](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)を参照してください。
+**解決方法:** AD FS 2.0 によるシングル サインオン (SSO) を利用している Microsoft Office 365 ユーザーが、組織内にユーザーの UPN サフィックス用のトップ レベル ドメイン (@contoso.com、@fabrikam.com など) を複数持っている場合、各サフィックスに対して別々の AD FS 2.0 フェデレーション サービス インスタンスを展開する必要があります。 現在は [AD FS 2.0 用ロールアップ](http://support.microsoft.com/kb/2607496)が用意されており、これを **SupportMultipleDomain** スイッチと組み合わせて使用することで、AD FS 2.0 サーバーを追加しなくても、このような状況に対応することができます。 詳細については、[このブログ](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)を参照してください。
 
 
 ## <a name="android-issues"></a>Android の問題
@@ -187,7 +187,7 @@ Android 6.0 へのアップグレードを試みるようユーザーに通知�
 
 3. **[App power saving]** (アプリの省電力) または **[App optimization]** (アプリの最適化) で、**[詳細]** を選択します。
 
-  ![[App power saving] \(アプリの省電力) または [App optimization] \(アプリの最適化) で [詳細] を選択する](./media/smart-manager-app-power-saving-detail.png)
+  ![[App power saving] (アプリの省電力) または [App optimization] (アプリの最適化) で [詳細] を選択する](./media/smart-manager-app-power-saving-detail.png)
 
 4. アプリのリストから **[ポータル サイト]** を選択します。
 
@@ -195,7 +195,7 @@ Android 6.0 へのアップグレードを試みるようユーザーに通知�
 
 5. **[オフ]** を選択します。
 
-  ![[App optimization] \(アプリの最適化) ダイアログから [オフ] を選択する](./media/smart-manager-app-optimization-turned-off.png)
+  ![[App optimization] (アプリの最適化) ダイアログから [オフ] を選択する](./media/smart-manager-app-optimization-turned-off.png)
 
 6. **[App power saving]** (アプリの省電力) または **[App optimization]** (アプリの最適化) で、ポータル サイトがオフになっていることを確認します。
 
@@ -215,7 +215,7 @@ Android 6.0 へのアップグレードを試みるようユーザーに通知�
 
 ### <a name="android-certificate-issues"></a>Android 証明書に関する問題
 
-**問題**: ユーザーが自分のデバイスで、[*You cannot sign in because your device is missing a required certificate.*] \(デバイスに必要な証明書がないためにサインインすることはできません。) というメッセージを受信します。
+**問題**: ユーザーが自分のデバイスで、[*You cannot sign in because your device is missing a required certificate.*] (デバイスに必要な証明書がないためにサインインすることはできません。) というメッセージを受信します。
 
 **解決方法 1**:
 
@@ -243,7 +243,7 @@ Android デバイスでは、[SSL Server hello](https://technet.microsoft.com/li
 
 **証明書が正しくインストールされていることを確認するには**:
 
-証明書が正しくインストールされていることを確認する方法とツールはたくさんあります。下記で紹介する手順はその&1; つです。
+証明書が正しくインストールされていることを確認する方法とツールはたくさんあります。下記で紹介する手順はその 1 つです。
 
 1. [[無料の Digicert ツール]](ttps://www.digicert.com/help/) に進みます。
 2. AD FS サーバーの完全修飾ドメイン名 (例: sts.contoso.com) を入力し、**[CHECK SERVER]** を選択します。
@@ -279,6 +279,18 @@ Android デバイスでは、[SSL Server hello](https://technet.microsoft.com/li
   ![[会社アクセスのセットアップ] 画面](./media/ios_cp_app_company_access_setup.png)
 
 登録後、デバイスは正常な状態に戻り、会社リソースへのアクセスが回復します。
+
+### <a name="verify-ws-trust-13-is-enabled"></a>WS-Trust 1.3 が有効になっていることを確認する
+**問題** Device Enrollment Program (DEP) iOS デバイスを登録できません
+
+ユーザー アフィニティが設定された DEP デバイスでユーザー トークンを要求するには、WS-Trust 1.3 Username/Mixed エンドポイントを有効にする必要があります。 Active Directory は既定でこのエンドポイントを有効にします。 Get-AdfsEndpoint PowerShell コマンドレットを利用し、trust/13/UsernameMixed エンドポイントを探すと、有効なエンドポイントの一覧が見つかります。 たとえば、
+
+      Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
+
+詳細については、[Get-AdfsEndpoint のドキュメント](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)を参照してください。
+
+詳細については、「[Best practices for securing Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs)」 (Active Directory フェデレーション サービスのセキュリティ保護に関するベスト プラクティス) を参照してください。 WS-Trust 1.3 Username/Mixed が ID フェデレーション プロバイダーで有効になっているかどうかわからない場合、ADFS またはサードパーティの ID ベンダーをご利用であれば、Microsoft サポートにお問い合わせください。
+
 
 ### <a name="profile-installation-failed"></a>プロファイルのインストールに失敗しました
 **問題:** iOS デバイスで **"プロファイルのインストールに失敗しました"** というエラーがユーザーに表示されます。
@@ -352,7 +364,7 @@ iOS 登録エラーの一覧は、デバイスのユーザー ドキュメント
 1. **[証明書]** をダブルクリックし、**[コンピューター アカウント]** > **[次へ]**、**[ローカル コンピューター]** の順に選択します。
 1. **[証明書 (ローカル コンピューター)]** をダブルクリックして、**[個人証明書]** を選択します。
 1. Sc_Online_Issuing によって発行された Intune 証明書を探し、もし見つかった場合は削除します。
-1. レジストリ キー ** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** が存在する場合は削除し、サブ キーもすべて削除します。
+1. レジストリ キー **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** が存在する場合は削除し、サブ キーもすべて削除します。
 1. 再登録を試行します。
 1. それでも PC を登録できない場合は、キー **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95** を探して、存在する場合は削除してください。
 1. 再登録を試行します。
@@ -379,7 +391,7 @@ iOS 登録エラーの一覧は、デバイスのユーザー ドキュメント
 |0x80043008、0x80CF3008|Microsoft オンライン管理更新ービスを開始できませんでした。|「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って、Microsoft サポートにお問い合わせください。|
 |0x80043009、0x80CF3009|クライアント コンピューターは、既にサービスに登録されています。|サービスを再登録する前に、クライアント コンピューターを削除する必要があります。|
 |0x8004300B、0x80CF300B|クライアントで実行されている Windows のバージョンがサポートされていないため、クライアント ソフトウェア インストール パッケージを実行できません。|Intune が、クライアント コンピューターで実行されている Windows のバージョンをサポートしていません。|
-|0xAB2|Windows インストーラーが、カスタム動作に必要な VBScript ランタイムにアクセスできませんでした。|このエラーは、ダイナミック リンク ライブラリ (DLL) に基づくカスタム動作が原因で発生します。 DLL のトラブルシューティング時に、場合によっては「[Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](https://support.microsoft.com/en-us/kb/198038)」 (Microsoft サポート技術情報&19803;8: パッケージと展開の問題に役立つツール) に記載されているツールを使用する必要があります。|
+|0xAB2|Windows インストーラーが、カスタム動作に必要な VBScript ランタイムにアクセスできませんでした。|このエラーは、ダイナミック リンク ライブラリ (DLL) に基づくカスタム動作が原因で発生します。 DLL のトラブルシューティング時に、場合によっては「[Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](https://support.microsoft.com/en-us/kb/198038)」 (Microsoft サポート技術情報 198038: パッケージと展開の問題に役立つツール) に記載されているツールを使用する必要があります。|
 |0x80cf0440|サービス エンドポイントとの接続が切断されました。|試用アカウントまたは有料アカウントが中断されています。 新しい試用アカウントまたは有料アカウントを作成し、再登録してください。|
 
 
