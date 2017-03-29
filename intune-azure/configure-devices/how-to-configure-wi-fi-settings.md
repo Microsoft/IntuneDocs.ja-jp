@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: aea6d9868d91260dd7a3a4c3b1426f12fcc9f47d
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 34b906301fca2e91f2c014b9959c305a39f46af1
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -49,7 +49,7 @@ Windows 8.1、Windows 10、および Windows 10 Mobile を実行しているデ�
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイスの構成]** を選択します。
+3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
 3. [プロファイル] ブレードで、**[プロファイルを作成します]** を選択します。
 4. **[プロファイルを作成します]** ブレードで、Wi-Fi プロファイルの**名前**と**説明**を入力します。

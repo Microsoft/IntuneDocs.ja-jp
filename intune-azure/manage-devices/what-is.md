@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/14/2017
+ms.date: 03/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 957192c744bf05cd835dfae60b6bb521b8f8b26b
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 8a43e1646476696b978a7f8a3e92f920606a698b
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -73,9 +73,10 @@ iOS デバイスが紛失または盗難にあった場合は、紛失モード�
 2.    **[紛失モード]** ブレードで、紛失モードを有効にし、表示されるメッセージと、必要に応じて、連絡先の電話番号を入力します。
 3.    **[OK]**をクリックします。
 紛失モードを有効にすると、デバイスのすべての利用がブロックされます。 エンド ユーザーは、紛失モードを無効にするまでデバイスにアクセスできなくなります。 紛失モードを有効にした場合、**[デバイスを検索する]** アクションを使って、デバイスの場所を検索できます。
+会社所有の iOS デバイスを DEP で登録し、監視モードに設定していなければ、紛失モードは利用できません。
 
 ### <a name="locate-device"></a>**デバイスを検索する**
-このリモート アクションでは、紛失または盗難に遭った iOS デバイスの場所を表示できます。 デバイスは、監視モードにある企業所有の iOS デバイスである必要があります。 このアクションを使用する前に、デバイスは紛失モードに設定されている必要があります。
+このリモート アクションでは、紛失または盗難に遭った iOS デバイスの場所を表示できます。 会社所有の iOS デバイスを DEP で登録し、監視モードに設定している必要があります。 このアクションを使用する前に、デバイスは紛失モードに設定されている必要があります。
 1.    iOS デバイスのプロパティ ブレードで、**[詳細]**  >  **[デバイスを探索する]** を選択します。
 2.    デバイスの位置が特定されると、その場所が **[デバイスを探索する]** ブレードに表示されます。 
     ![[デバイスを検索する] ブレード](./media/locate-device.png)

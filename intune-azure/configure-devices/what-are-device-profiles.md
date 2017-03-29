@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: eb48265e4655117976c9847b1f5bee712f0c2e3c
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 5383e20081285131f91418b47162e0cd5ba92c90
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -41,8 +41,13 @@ Microsoft Intune の **[デバイスの構成]** ワークロードを使用し�
 
 以下に挙げるデバイスの機能を管理することができます。
 
+## <a name="device-features"></a>デバイスの機能
+
+デバイス機能では、AirPrint、通知、共有デバイス構成など、iOS デバイスと macOS デバイスの機能を制御できます。
+詳細については、「[How to configure device feature settings in Microsoft Intune](how-to-configure-device-features.md)」 (Microsoft Intune でデバイスの機能設定を構成する方法) で iOS と macOS のサポートに関するトピックを参照してください。
+
 ## <a name="device-restrictions"></a>デバイスの制限
-デバイスの制限では、セキュリティ、ブラウザー、ハードウェア、データ共有設定を含む広範なカテゴリにわたって、管理対象のさまざまな設定と機能を制御できます。 たとえば、iOS デバイスのユーザーがデバイスのカメラにアクセスできないようにするデバイスの制限プロファイルを作成できます。
+デバイスの制限では、セキュリティ、ブラウザー、ハードウェア、データ共有設定を含む広範なカテゴリにわたって、管理対象のさまざまなデバイス設定を制御できます。 たとえば、iOS デバイスのユーザーがデバイスのカメラにアクセスできないようにするデバイスの制限プロファイルを作成できます。
 詳細については、[デバイス制限設定の構成方法](how-to-configure-device-restrictions.md)に関するページを参照してください。サポート対象: Android、iOS、macOS、Windows 10、Windows 10 Team。
 
 ## <a name="email"></a>電子メール
@@ -57,6 +62,10 @@ Wi-Fi プロファイルを使用すると、ワイヤレス ネットワーク�
 仮想プライベート ネットワーク (VPN) を使用すると、会社のユーザーが社内ネットワークにリモート アクセスする際にセキュリティで保護することができます。 デバイスは、VPN 接続プロファイルを使用して、VPN サーバーとの接続を開始します。 VPN プロファイルを使用すると、VPN 設定を組織内のユーザーとデバイスに展開し、社内ネットワークに簡単かつ安全に接続できるようになります。
 詳細については、[VPN 設定の構成方法](how-to-configure-vpn-settings.md)に関するページを参照してください。
 サポート対象: Android、iOS、macOS、Windows Phone 8.1、Windows 8.1、Windows 10。
+
+## <a name="education"></a>教育
+Windows テスト アプリのオプションを構成できます。 これらのオプションを構成するとき、テストが完了するまで他のアプリをデバイスで実行できません。
+詳細については、[教育設定の構成方法](how-to-configure-education-settings.md)に関するページを参照してください。
 
 ## <a name="certificates"></a>証明書
 この種類のプロファイルでは、デバイスに割り当てて Wi-Fi、VPN、電子メール プロファイルの認証に利用できる、信頼済み証明書、SCEP 証明書、PKCS 証明書を構成できます。

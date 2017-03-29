@@ -5,7 +5,7 @@ description: "Intune Azure プレビュー: Windows デバイスの Intune モ�
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 03/15/17
+ms.date: 03/21/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: a95aca706a4996d40e268a80c7c334ebb9854df5
-ms.openlocfilehash: 6cbaf8414452f11f0aa97616bbed2cf164b49ac0
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: 609656c2831c09c67e911c8150d31f38faad020b
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -33,23 +33,13 @@ Windows デバイスの登録を設定するには、以下のいずれかの方
  -  この方法を使用するには、Azure Active Directory Premium を所有している必要があります。 所有していない場合は、Windows 8.1 および Windows Phone 8.1 向けの登録方法を使用してください。
  -  自動登録を有効にしない場合は、Windows 8.1 および Windows Phone 8.1 向けの登録方法を使用してください。
 
-- [**CNAME の構成による Windows 8.1 および Windows Phone 8.1 の登録**](#simplify-enrollment-by-configuring-cname)
+- [**Azure AD Premium 自動登録なしで登録する**](#enable-windows-enrollment-without-azure-ad-premium)
  - Windows 8.1 および Windows Phone 8.1 デバイスを登録するには、この方法を使用する必要があります。
- - またこの方法は、Azure Active Directory (AD) Premium を所有していない場合にも使用することができます。
-
-
-## <a name="prerequisites"></a>必要条件
-
-次の前提条件の一部が Intune Azure プレビューにまだ存在しない場合は、従来の Intune 管理コンソールから操作を行う必要があります。
-
-- [カスタムのドメイン名を構成する](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
-- [モバイル デバイス管理 (MDM) 機関](set-mdm-authority.md)を **Microsoft Intune** に設定する
-- [ポータル サイト アプリを構成する](/intune-azure/manage-apps/company-portal-app.md)
-- ユーザーにライセンスを割り当てる
+ - Azure Active Directory (AD) Premium を使用しない場合、Windows 8.1 以降のデバイスにはこの方法を利用できます。
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## <a name="enable-windows-workplace-enrollment"></a>Windows ワークプレースの登録を有効にする
+## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>Azure AD Premium なしの Windows 登録を有効にする
 
 Azure AD Premium の自動登録なしで、ユーザー自身でデバイスをインストールおよび登録させることができます。 DNS の CNAME リソース レコードを作成すると、ユーザーはサーバー名を入力することなく Intune に接続して登録できるようになります。
 
@@ -79,7 +69,7 @@ Azure AD Premium の自動登録なしで、ユーザー自身でデバイスを
 
     エンドユーザー用の登録手順については、「[Intune に Windows デバイスを登録する](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows)」を参照してください。 また、ユーザーには、[IT 管理者がユーザーのデバイスに関して確認できる情報](https://docs.microsoft.com/intune/enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows)に関するページを案内してください。
 
-    エンドユーザー タスクの詳細については、「[Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)」を参照してください。
+    エンドユーザー タスクの詳細については、「[Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)」を参照してください。
 
 デバイスにポータル サイトを展開する場合を除き、追加の作業は必要ありません。  管理コンソールでの手順 2. および 3. は、無視してかまいません。
 

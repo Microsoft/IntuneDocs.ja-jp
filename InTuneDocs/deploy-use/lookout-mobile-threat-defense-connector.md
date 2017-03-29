@@ -15,9 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6f78150b6c3821f6e9822ccfa905ac367bd359ad
-ms.openlocfilehash: 9e00e60472c8ba9f10a6071c42a53f58dcc00a08
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: dfed1ece238210e8b98934d8add7dbb9b0f1c1fb
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -26,17 +26,17 @@ ms.lasthandoff: 03/02/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Microsoft Intune に統合されたデバイス脅威保護ソリューションである Lookout によって実行されるリスク評価に基づいて、モバイル デバイスから会社のリソースへのアクセスを制御することができます。 リスクは、Lookout サービスによりデバイスから収集される次のような製品利用統計情報に基づいて評価されます。
+Microsoft Intune に統合された Mobile Threat Defense ソリューションである Lookout によって実行されるリスク評価に基づいて、モバイル デバイスから会社のリソースへのアクセスを制御することができます。 リスクは、Lookout サービスによりデバイスから収集される次のような製品利用統計情報に基づいて評価されます。
 - オペレーティング システムの脆弱性
 - インストールされた悪意のあるアプリ
 - 悪意のあるネットワーク プロファイル
 
 Intune コンプライアンス ポリシーにより有効になった Lookout のリスク評価に基づいて条件付きアクセス ポリシーを構成できます。 設定により、検出された脅威に基づいて非準拠デバイスを許可したり、ブロックしたりできます。
 
-## <a name="how-do-intune-and-lookout-device-threat-protection-help-protect-company-resources"></a>Intune および Lookout のデバイス脅威保護は会社リソースの保護にどのように役立ちますか?
+## <a name="how-do-intune-and-lookout-mobile-threat-defense-help-protect-company-resources"></a>Intune および Lookout の Mobile Threat Defense は会社リソースの保護にどのように役立ちますか?
 Lookout のモバイル アプリ、**Lookout for work** は、モバイル デバイスにインストールされ、実行されます。 このアプリは、利用できる場合、ファイル システム、ネットワーク スタック、デバイスとアプリケーションの製品利用統計情報を記録し、Lookout クラウド サービスに送信し、モバイル デバイスの脅威に対するリスクを評価します。 Lookout コンソールでは、要件に合わせ、脅威に対するリスク レベルの分類を変更できます。  
 
-Intune のコンプライアンス ポリシーには、Lookout のリスク評価に基づく Lookout モバイル脅威保護のルールが含まれています。 このルールを有効にすると、Intune は、有効にされたポリシーに基づいてデバイスの準拠状態を評価します。
+Intune のコンプライアンス ポリシーには、Lookout のリスク評価に基づく Lookout Mobile Threat Defense のルールが含まれています。 このルールを有効にすると、Intune は、有効にされたポリシーに基づいてデバイスの準拠状態を評価します。
 
 デバイスが準拠していないことが判明した場合、Exchange Online や SharePoint Online などのリソースに対するアクセスをブロックできます。 ブロックされたデバイスのユーザーには、問題を解決し、アクセスを回復するための手順が与えられます。 ガイダンスは Lookout for work アプリから起動されます。
 
@@ -92,9 +92,9 @@ Man-in-the-middle 攻撃など、ネットワークに対する脅威を検出�
 
 ## <a name="next-steps"></a>次のステップ
 このソリューションを実装するために実行する必要がある主な手順を次に示します。
-1.    [デバイス脅威保護を含むサブスクリプションを設定する](device-threat-protection-subscription-setup.md)
-2.    [Intune でデバイス脅威保護の接続を有効にする](device-threat-protection-enable.md)
-3.  [デバイス脅威保護アプリを構成して展開する](device-threat-protection-apps.md)
-4.    [デバイス脅威保護のコンプライアンス ポリシーを構成する](device-threat-protection-policy.md)
-5.    [デバイス脅威保護の統合をトラブルシューティングする](http://docs.microsoft.com/intune/troubleshoot/device-threat-protection-troubleshooting)
+1.    [Lookout サブスクリプションを設定する](device-threat-protection-subscription-setup.md)
+2.    [Intune で Lookout Mobile Threat Defense を有効にする](device-threat-protection-enable.md)
+3.  [Lookout Mobile Threat Defense アプリを構成し、展開する](device-threat-protection-apps.md)
+4.    [Lookout デバイス コンプライアンス ポリシーを構成する](device-threat-protection-policy.md)
+5.    [Lookout Mobile Threat Defense 統合の問題を解決する](http://docs.microsoft.com/intune/troubleshoot/device-threat-protection-troubleshooting)
 

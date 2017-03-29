@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 01e8a6968797bc2b2b0f3bb5710ee396d9094584
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -51,7 +51,8 @@ ms.lasthandoff: 03/15/2017
 -     **[キーボード ショートカット (監視のみ)]** - キーボード ショートカットを使用できるようにします。
 -     **[ペアリングされている Apple Watch の手首検出]** - 有効にすると、Apple Watch が装着されていないときには Apple Watch に通知が表示されません。
 - **[AirPlay 送信要求のペアリング パスワードが必須]** - ユーザーが AirPlay を使用して他の Apple デバイスにコンテンツをストリーミングするときに、ペアリング パスワードを要求します。
-- **[アカウントの変更 (監視モードのみ)]** - ユーザーが電子メールの構成などのアカウントの設定を変更することを許可します。
+- **アカウント変更 (監視のみ)** - ブロックされているとき、ユーザーは iOS 設定アプリからデバイス固有設定を変更できなくなります。デバイス アカウントの新規作成、ユーザー名やパスワードの変更などが禁止されます。
+これは、メール、連絡先、予定表、Facebook、Twitter など、iOS 設定アプリからアクセスできる設定にも適用されます。 Microsoft Outlook アプリなど、アカウント設定が iOS 設定アプリから構成できないアプリには適用されません。
 - **[Apple Watch のペアリング (監視モードのみ)]** - デバイスと Apple Watch とのペアリングを許可します。
 - **[Bluetooth の変更 (監視モードのみ)]** - エンド ユーザーがデバイスの Bluetooth 設定を変更できないようにします。
 - **[Classroom アプリによるリモート画面の監視 (監視のみ)]** - Classroom アプリがリモート デバイス上の画面を監視することを許可またはブロックします。

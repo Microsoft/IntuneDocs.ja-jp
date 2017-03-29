@@ -3,10 +3,10 @@ title: "Microsoft Intune プレビューの新機能"
 titleSuffix: Intune Azure preview
 description: "Intune Azure プレビューの新機能を確認する"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: mtillman
+ms.author: mtillman
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 92bb81440b9374b2b0b433b32fc0a1301998ea80
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 586bdab54ee60ba8d620857ab3506aa27622d17a
+ms.lasthandoff: 03/17/2017
 
 ---
 
@@ -37,7 +37,9 @@ ms.lasthandoff: 03/15/2017
 
 iOS 9.3 以降のデバイスについて、Intune で**紛失モード**のサポートが追加されました。 デバイスをロックダウンしてすべての使用を回避し、デバイスのロック画面のメッセージおよび連絡先の電話番号を表示できるようになりました。
 
-エンドユーザーは、管理者が紛失モードを無効にするまで、デバイスのロックを解除することはできません。 紛失モードを有効にした場合、デバイスを探索するアクションを使用して、Intune コンソールでマップ上にデバイスの地理的な場所を表示することができます。
+エンドユーザーは、管理者が紛失モードを無効にするまで、デバイスのロックを解除することはできません。 紛失モードを有効にした場合、**デバイスを探索する**アクションを使用して、Intune コンソールでマップ上にデバイスの地理的な場所を表示することができます。
+
+会社所有の iOS デバイスを DEP で登録し、監視モードに設定している必要があります。
 
 詳細については、「[Microsoft Intune デバイスの管理とは](/intune-azure/manage-devices/what-is)」を参照してください。
 
@@ -86,7 +88,7 @@ Intune では、2017 年 1 月以降に作成された Intune アカウントに
 Intune では、登録を許可されるモバイル デバイス プラットフォームを制御する新しい登録制限が追加されています。 Intune では、モバイル デバイス プラットフォームが iOS、macOS、Android、Windows、Windows Mobile に分かれています。
 
 * モバイル デバイスの登録を制限しても、PC クライアントの登録は制限されません。  
-* iOS と Android のみに、個人所有デバイスの登録をブロックする&1; つの追加オプションがあります。
+* iOS と Android のみに、個人所有デバイスの登録をブロックする 1 つの追加オプションがあります。
 
 [この記事](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices)で説明されているように、IT 管理者が明示的に会社所有と指定しない限り、Intune はすべての新しいデバイスを個人所有としてマークします。
 
@@ -138,7 +140,7 @@ Azure Portal では、サード パーティの電気通信経費管理 (TEM) �
 ## <a name="deprecated-features-in-the-azure-portal"></a>Azure Portal の非推奨の機能
 
 ### <a name="support-for-row-by-row-review-of-hardware-identifiers"></a>ハードウェア識別子の行単位レビューのサポート
-Azure Portal では、IMEI 番号と Apple シリアル番号のハードウェア識別子に対する行単位のレビューがサポートされません。 従来の Intune コンソールでは、コンマ区切り値 (.csv) ファイルから詳細情報をインポートし、個別のハードウェア識別子の既存の情報を上書きできます。 Azure Portal には、効率的なオプションが&1; つ用意されており、ハードウェア識別子すべての詳細情報を自動的に上書きするか、既存の識別子の新しい詳細情報を無視することができます。
+Azure Portal では、IMEI 番号と Apple シリアル番号のハードウェア識別子に対する行単位のレビューがサポートされません。 従来の Intune コンソールでは、コンマ区切り値 (.csv) ファイルから詳細情報をインポートし、個別のハードウェア識別子の既存の情報を上書きできます。 Azure Portal には、効率的なオプションが 1 つ用意されており、ハードウェア識別子すべての詳細情報を自動的に上書きするか、既存の識別子の新しい詳細情報を無視することができます。
 
 #### <a name="how-this-affects-you"></a>影響
 Azure Portal では、どの International Mobile Equipment Identity (IMEI) デバイスを更新するかを、行単位で決めることができません。 従来の Intune コンソールでは、この機能が引き続きサポートされます。

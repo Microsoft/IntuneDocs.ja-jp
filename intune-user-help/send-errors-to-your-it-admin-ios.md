@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
-ms.openlocfilehash: c6a9c0aa97a06f7b54768ee6927ea8866c40eb13
-ms.lasthandoff: 03/16/2017
+ms.sourcegitcommit: 07a1f63d02e2517e4ab64305304127a40922263c
+ms.openlocfilehash: 1e501c1a94a44c677569b8b85be7704844587694
+ms.lasthandoff: 03/20/2017
 
 
 ---
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/16/2017
 
 -   ポータル サイト アプリの **[バージョン情報]** 画面の **[診断レポートの送信]** をタップする。
 
--   ポータル サイト アプリでデバイスをシェイクし、診断アラートが表示されたら、**[電子メール]** をタップする。 デバイスをシェイクしてもアラートが表示されない場合は、**[設定]** > **[ポータル サイト]** の順に開き、**[シェイク ジェスチャ]** オプションがオンになっていることを確認します。
+-   ポータル サイト アプリでデバイスをシェイクし、診断アラートが表示されたら、**[診断レポートの送信]** をタップする。 デバイスをシェイクしてもアラートが表示されない場合は、**[設定]** > **[ポータル サイト]** の順に開き、**[シェイク ジェスチャ]** オプションがオンになっていることを確認します。
 
 この方法でログを送信できない場合は、[電子メールを使用して IT 管理ログの送信](send-logs-to-your-it-admin-by-email-iOS.md)を試してみることもできます。
 

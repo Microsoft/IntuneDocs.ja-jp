@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 861e14227b847422d584d69364315a2418a986de
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 238c67c3edb843ef62deccb42cfa2879232e1434
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -30,8 +30,8 @@ ms.lasthandoff: 02/18/2017
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイスの構成]** を選択します。
-1. **[デバイスの構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
+3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
+1. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
 2. プロファイルの一覧ブレードで、管理するプロファイルを選択し、**[<*プロファイル名*> レポート]** ブレードで、**[管理]** > **[割り当て]** の順に選択します。
 3. 次のブレードで、**[グループの選択]** をクリックし、**[グループの選択]** ブレードで、プロファイルを割り当てる Azure AD グループを選択します。 **Ctrl** キーを押したままにすると、複数のグループを選択できます。
 4. 終了したら、**[グループの選択]** ブレードで、**[選択]** を選択します。

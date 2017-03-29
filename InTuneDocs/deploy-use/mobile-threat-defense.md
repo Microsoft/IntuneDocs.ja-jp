@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b7ab3041a38bd394195a67690d245d1ad9fd0566
-ms.openlocfilehash: fd54a1c94c9a4a279710d6be9f7cfe3b48468cb7
-ms.lasthandoff: 03/03/2017
+ms.sourcegitcommit: c3c5126b1c9437c2689b162c28e1a60e5dc4b108
+ms.openlocfilehash: ad39f4b2cc4a51346fcf226dc07208af336d3581
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -41,14 +41,15 @@ Intune Mobile Threat Defense コネクターを使用すると、選択した Mo
 
 Mobile Threat Defense ソリューションによってデバイスが感染したと見なされた場合
 
-![](http://i.imgur.com/kF8tI42.png)
+![Mobile Threat Defense と感染しているデバイス](../media/mtp/MTD-image-1.png)
 
 デバイスが修復されたときにアクセスが許可されます。
 
-![](http://i.imgur.com/zG4ZrzX.png)
+![Mobile Threat Defense とアクセス付与](../media/mtp/MTD-image-2.png)
 
 ## <a name="mobile-threat-defense-partners"></a>Mobile Threat Defense パートナー
 
 デバイス、ネットワーク、アプリケーションのリスクに基づいて、会社のリソースへのアクセスを保護する方法について説明します。次のものを使用します。
 
 - [Lookout](https://docs.microsoft.com/intune/deploy-use/lookout-mobile-threat-defense-connector)
+- [Skycure](https://docs.microsoft.com/intune/deploy-use/skycure-mobile-threat-defense-connector)

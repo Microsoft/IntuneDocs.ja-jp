@@ -16,9 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: f7680666ca466bd37711eeb363fe2c1f9d52e371
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: a47ea4c8d3027cb34fd8ecd8324fac52c9846a77
+ms.lasthandoff: 03/17/2017
 
 
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 02/18/2017
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイスの構成]** を選択します。
+3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
 2. プロファイルの一覧ブレードで、**[プロファイルを作成します]** を選択します。
 3. **[プロファイルを作成します]** ブレードで、デバイス プロファイルの**名前**と省略可能な**説明**を入力します。
@@ -50,14 +50,14 @@ ms.lasthandoff: 02/18/2017
 - **[説明]** - "実行されないようにブロックされているアプリの一覧" のような説明 (省略可能) を入力します。
 -     **[データ型]** - ドロップダウン リストで **[文字列]** を選択します。
 -     **[OMA-URI]** - 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**」と入力します
--     **[値]** - ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : , ****|** を使用できます。 (例: package1;package2;)
+-     **[値]** - ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,****|** を使用できます。 (例: package1;package2;)
 
 ### <a name="for-a-list-of-apps-that-users-are-allowed-to-install-from-the-google-play-store-while-excluding-all-other-apps"></a>他のすべてのアプリの実行中にユーザーが Google Play ストアからインストールできるアプリの一覧の場合:
 - **[名前]** - 「**AllowInstallPackages**」と入力します。
 - **[説明]**: "ユーザーが Google Play からインストールできるアプリの一覧" のような説明 (省略可能) を入力します。
 - **[データ型]** - ドロップダウン リストで **[文字列]** を選択します。
 - **[OMA-URI]** - 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**」と入力します
-- **[値]** - 許可するアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : , ****|** を使用できます。 (例: package1;package2;)
+- **[値]** - 許可するアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,****|** を使用できます。 (例: package1;package2;)
 
 4. **[OK]** をクリックし、**[プロファイルを作成します]** ブレードで **[作成]** を選択します。
 
