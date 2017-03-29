@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: 3982f05e4c81c26d2eb8bdab3a266597d6aab4df
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -109,7 +110,7 @@ Microsoft は、Microsoft の製品やサービスを改善するために、Man
 
     -   https の場合はポート 443
 
-    ポート番号にワイルドカードを使用することはできません。 たとえば、**http&colon;//www&period;contoso&period;com:*;** や **http&colon;//www&period;contoso&period;com: /*;** はサポートされていません。
+    ポート番号にワイルドカードを使用することはできません。 たとえば、**http&colon;//www&period;contoso&period;com:*;**や**http&colon;//www&period;contoso&period;com: /*;** はサポートされていません。
 
 -   URL を指定するときに使用できるパターンの詳細については、次の表を参照してください。
 
@@ -156,9 +157,4 @@ Microsoft は、Microsoft の製品やサービスを改善するために、Man
 -   デバイスが初めて Managed Browser ポリシーを受信するときに、2 つのポリシーが競合する場合、URL はデバイスに適用されません。 **[ポリシー]** ワークスペースの **[ポリシーの競合]** ノードを使用して、競合を表示します。
 
 -   デバイスが Managed Browser ポリシーを既に受信していて、2 番目のポリシーが競合する設定で展開される場合、元の設定がデバイスに残ります。 **[ポリシー]** ワークスペースの **[ポリシーの競合]** ノードを使用して、競合を表示します。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

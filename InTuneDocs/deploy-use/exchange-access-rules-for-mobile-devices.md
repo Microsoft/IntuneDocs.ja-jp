@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: fa8f4b1df83e37ab20d5b4a045ba535758368835
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -46,7 +47,7 @@ ms.openlocfilehash: fa8f4b1df83e37ab20d5b4a045ba535758368835
 
 ## <a name="create-a-default-access-rule"></a>既定のアクセス ルールの作成
 
-1.  [Microsoft Intune 管理コンソール](http://manage.microsoft.com)で、**[ポリシー]** &gt; ** [Exchange ActiveSync]** の順に選択します。
+1.  [Microsoft Intune 管理コンソール](http://manage.microsoft.com)で、**[ポリシー]** &gt; **[Exchange ActiveSync]** の順に選択します。
 
 2.  **[既定のルール]** リストで、ルールまたは個人の適用除外の対象にならないすべてのモバイル デバイスに適用するアクセス ルールを選択します。 **[保存]** を選びます。
 
@@ -54,12 +55,7 @@ ms.openlocfilehash: fa8f4b1df83e37ab20d5b4a045ba535758368835
 
 ## <a name="create-a-custom-access-rule"></a>カスタム アクセス ルールの作成
 
-1. [Microsoft Intune 管理コンソール](http://manage.microsoft.com)で、**[ポリシー]** &gt; ** [Exchange ActiveSync]** の順に選択します。
+1. [Microsoft Intune 管理コンソール](http://manage.microsoft.com)で、**[ポリシー]** &gt; **[Exchange ActiveSync]** の順に選択します。
 
 2.  **[プラットフォームの例外]** リストで、**[ルールの追加]** を選び、カスタム ルールを作成します。 **[保存]** を選びます。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
