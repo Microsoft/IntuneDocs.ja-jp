@@ -33,6 +33,7 @@
 ### [Apple DEP トークンを取得する](enroll-devices/get-apple-dep-token.md)
 ### [iOS デバイスの登録方法を選択する](enroll-devices/choose-ios-enrollment-method.md)
 ## 方法
+### [ユーザーにライセンスを割り当てる](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [Android デバイスを登録する](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### iOS デバイスを登録する
 #### [セットアップ アシスタントを使用して iOS デバイスを登録する](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
