@@ -2,8 +2,8 @@
 title: "アプリ保護ポリシー付きの iOS アプリ | Microsoft Docs"
 description: "このトピックでは、アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点について説明します。"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 03/06/2017
 ms.topic: article
