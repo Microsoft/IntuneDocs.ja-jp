@@ -18,9 +18,9 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 982588ddc808123efd107759ed15c31ced6f110e
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 8da2695c4c6dc8b45559323b83a4bb77167303b7
+ms.openlocfilehash: f2f93bccd17d16f258e90268f0ddef3e3cb7a598
+ms.lasthandoff: 03/28/2017
 
 
 ---
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/08/2017
 
 データおよび音声プランが許容範囲内で使用されていることを確認するために、通信費管理ソフトウェアを使用している組織もあります。 デバイスの登録後、そのデバイスに最適なカテゴリを選択するよう求められます。
 
-  ![iOS デバイス上の "デバイスの最適なカテゴリの選択" 画面のスクリーンショット。 選択された企業または個人の登録が表示されています。](./media/and-enroll-11-tem-select-best-category.png)
+![iOS デバイス上の "デバイスの最適なカテゴリの選択" 画面のスクリーンショット。 選択された企業または個人の登録が表示されています。](./media/and-enroll-11-tem-select-best-category.png)
 
 1. 適切なオプションを選択すると、Google Play Store の [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) アプリをインストールするように通知されます。 Datalert アプリを使用すると、組織のデータ使用量を測定できます。 画面の右上隅にある __[次へ]__ の矢印をタップして進みます。
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 03/08/2017
 
   ![Datalert アプリが電話番号を要求している画面のスクリーンショット。](./media/and-enroll-13-tem-datalert-phone-number.png)
 
-3. 次に SMS メッセージで確認メッセージを受信します。 コードを入力して __[OK]__ をタップします。
+3. 次に SMS メッセージで確認コードを受信します。 コードを入力して __[OK]__ をタップします。
 
   ![Datalert アプリが SMS 確認コードを要求している画面のスクリーンショット。](./media/and-enroll-14-tem-datalert-sms.png)
 
