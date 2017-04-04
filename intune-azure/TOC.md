@@ -1,5 +1,6 @@
 # 概要
 ## [Azure Portal プレビューとは](introduction/what-is-microsoft-intune.md)
+## [Azure での Intune の機能](introduction/ui-changes-in-microsoft-intune.md)
 ## 作業開始
 <!---(introduction/get-started.md) --->
 ### [無料試用版にサインアップ](introduction/sign-up-free-trial-microsoft-intune.md)
