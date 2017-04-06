@@ -5,7 +5,7 @@ description: "このガイドは、Microsoft Intune クライアント ソフト
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-ms.date: 02/22/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
-ms.openlocfilehash: e7e199bd1820299e7c0ea4f9adc3f5e62bffab97
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 2b3041019a7fe5a1ed7421401b36a72321af6cea
+ms.openlocfilehash: 0498aebe8e06314cb6f63f3f4def7011a3badf64
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -25,7 +25,7 @@ ms.lasthandoff: 02/22/2017
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Windows PC に Intune ソフトウェア クライアントをインストールする
 Intune クライアント ソフトウェアをインストールして Windows PC を登録します。 Intune クライアント ソフトウェアは、次の方法を使用してインストールできます。
 
-- IT 管理者の場合、次のうちいずれか&1; つの方法でインストール: 手動インストール、グループ ポリシーを使用したインストール、またはディスク イメージに含まれるインストール
+- IT 管理者の場合、次のうちいずれか 1 つの方法でインストール: 手動インストール、グループ ポリシーを使用したインストール、またはディスク イメージに含まれるインストール
 
 - エンド ユーザーの場合: クライアント ソフトウェアを手動でインストール
 
@@ -100,13 +100,13 @@ Intune クライアント ソフトウェアは、次の手順に従って、オ
 
     対象のコンピューターで Windows セットアップの実行が完了し、コンピューターが再起動すると、 **WindowsIntuneEnrollPending** レジストリ キーが作成されます。 登録パッケージによって、コンピューターが登録されたかどうかがチェックされます。 登録されている場合は、何も行われません。 登録されていない場合は、Microsoft Intune への自動登録タスクが作成されます。
 
-    スケジュールに従って、次回の自動登録タスクが実行されると、 **indowsIntuneEnrollPending** レジストリ値が存在するかどうかがチェックされ、対象の PC が Intune に登録されます。 登録できなかった場合は、このタスクが次回実行されるときに登録されます。 再試行は&1; か月間継続されます。
+    スケジュールに従って、次回の自動登録タスクが実行されると、 **indowsIntuneEnrollPending** レジストリ値が存在するかどうかがチェックされ、対象の PC が Intune に登録されます。 登録できなかった場合は、このタスクが次回実行されるときに登録されます。 再試行は 1 か月間継続されます。
 
     登録が正常に完了するか、1 か月後に (どちらか早い方)、対象のコンピューターから Intune への自動登録タスク、**WindowsIntuneEnrollPending** レジストリ値、およびアカウント証明書が削除されます。
 
 ## <a name="instruct-users-to-self-enroll"></a>自分で登録するユーザーへの指示
 
-ユーザーは、[ポータル Web サイト](http://portal.manage.microsoft.com)に移動して、Intune クライアント ソフトウェアをインストールします。 Web ポータルでユーザーに対して実際に表示される情報は、アカウントの MDM 機関およびユーザーの PC の OS プラットフォーム/バージョンによって異なります。 
+ユーザーは、[ポータル Web サイト](http://portal.manage.microsoft.com)に移動して、Intune クライアント ソフトウェアをインストールします。 Web ポータルでユーザーに対して実際に表示される情報は、アカウントの MDM 機関およびユーザーの PC の OS プラットフォーム/バージョンによって異なります。
 
 ユーザーに Intune ライセンスが割り当てられていない場合や、組織の MDM 機関が Intune に設定されていない場合、ユーザーには登録するためのオプションが表示されません。
 
@@ -181,7 +181,7 @@ Intune PC クライアント ソフトウェアを使用して既に登録され
 
 ## <a name="uninstall-the-windows-client-software"></a>Windows クライアント ソフトウェアをアンインストールする
 
-Windows クライアント ソフトウェアは&2; 通りの方法で登録解除できます。
+Windows クライアント ソフトウェアは 2 通りの方法で登録解除できます。
 
 - Intune 管理コンソールから (推奨される方法)
 - クライアントのコマンド プロンプトから
@@ -200,7 +200,7 @@ Intune 管理コンソールを使用してソフトウェア クライアント
     "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
     ```
 
-**方法 2** Windows のすべての SKU でこれらのエージェントがすべてインストールされるわけではないことに注意してください:
+**方法 2** <br>Windows のすべての SKU でこれらのエージェントがすべてインストールされていることに注意してください:
 
     ```
     wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
@@ -247,7 +247,7 @@ Intune 管理コンソールを使用してソフトウェア クライアント
 - AgentInstaller
 - ログ
 - Updates
-- 共通 
+- 共通
 
 ### <a name="remove-the-onlinemanagement-folder"></a>OnlineManagement フォルダーを削除する
 
