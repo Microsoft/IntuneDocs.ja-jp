@@ -18,9 +18,9 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: cd5d97ec4524477fe6ac08a863eaf5cc03913e50
-ms.openlocfilehash: 53062067c250434b65911c47b8c2eda052a353c3
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 1d0284ca2b5fd935a8657e3dd73d23d45071fd50
+ms.openlocfilehash: 200c992caa36ca74bf3e4ad82a21099a4b7ada4c
+ms.lasthandoff: 03/25/2017
 
 
 ---
@@ -37,6 +37,6 @@ iOS デバイスで発生する問題の一部は、トラブルシューティ�
 - [デバイスのシリアル番号を検索する方法](how-do-i-find-the-serial-number-on-my-device-ios.md)
 - [iOS デバイスを更新する必要がある](you-need-to-update-your-ios-device.md)
 - [使用しているバージョンの iOS がまだサポートされていない](your-ios-version-isnt-yet-supported.md)
-- [iOS デバイスで Lookout for Work をインストールする必要がある](you-are-prompted-to-install-lookout-for-work-ios.md)
-- [iOS デバイスで Lookout for Work が検出した脅威を解決する必要がある](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
+- [iOS デバイスに Mobile Threat Defense アプリをインストールする必要がある](you-are-prompted-to-install-mtd-ios.md)
+- [iOS デバイスで Mobile Threat Defense アプリが検出した脅威を解決する必要がある](you-need-to-resolve-a-threat-found-by-mtd-ios.md)
 

@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: f1d8ecdf64b680940e46afc90dec79d237d80030
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -80,11 +81,12 @@ Microsoft Intune を使用して、Exchange On-premises または従来の Excha
 -   iOS のネイティブ電子メール アプリ。
 
 -   Android 4 以降での Exchange ActiveSync メール クライアント (Gmail など)。
-- Exchange ActiveSync メール クライアント **Android for Work デバイス:** Android for Work デバイスでは、**仕事用プロファイル**の **Gmail** アプリと **Nine Work** アプリのみがサポートされています。 条件付きアクセスが Android for Work で動作するには、Gmail アプリまたは Nine Work アプリ用の電子メール プロファイルを展開する必要があります。また、必要なインストールとしてそのアプリを展開する必要があります。 
+-   Exchange ActiveSync メール クライアント **Android for Work デバイス:** Android for Work デバイスでは、**仕事用プロファイル**の **Gmail** アプリと **Nine Work** アプリのみがサポートされています。 条件付きアクセスが Android for Work で動作するには、Gmail アプリまたは Nine Work アプリ用の電子メール プロファイルを展開する必要があります。また、必要なインストールとしてそのアプリを展開する必要があります。 
 
+<!---
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
-> [!NOTE]
+--->
+> [!NOTE] 
 > Android と iOS の Microsoft Outlook アプリはサポートされていません。
 
 ## <a name="support-for-pcs"></a>PC のサポート
@@ -110,14 +112,12 @@ Microsoft Intune を使用して、Exchange On-premises または従来の Excha
   - **[プラットフォーム例外]:** **[ルールの追加]** を選択して、指定したモバイル デバイスのファミリとモデルのアクセス レベルを定義するルールを構成します。 任意の種類のデバイスを使用できるので、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] でサポートされていないデバイスの種類を構成することもできます。
 
   - **[既定のルール]:** 他のどのルールにも含まれていないデバイスの場合、Exchange へのアクセスの許可、Exchange へのアクセスのブロック、検疫のいずれかを選択できます。 登録された準拠デバイスに対してアクセスを許可するルールを設定すると、iOS、Windows、および Samsung KNOX のデバイスには電子メールへのアクセス権が自動的に付与されます。 ユーザーは自分の電子メールを取得するために何もプロセスを実行する必要はありません。
-
-        Samsung KNOX を実行していない Android デバイスの場合、ユーザーには、電子メールにアクセスする前に、登録とコンプライアンスの確認方法に関するチュートリアルを含む検疫電子メールが送信されます。 アクセスをブロックするか、デバイスを検疫するルールを設定すると、Intune に登録済みであるかどうかに関係なく、すべてのデバイスが Exchange にアクセスできなくなります。 登録および準拠デバイスがこのルールに影響されるのを防ぐためには、**[既定ルールの上書き]** ボックスをオンにします。
+      - Samsung KNOX を実行していない Android デバイスの場合、ユーザーには、電子メールにアクセスする前に、登録とコンプライアンスの確認方法に関するチュートリアルを含む検疫電子メールが送信されます。 アクセスをブロックするか、デバイスを検疫するルールを設定すると、Intune に登録済みであるかどうかに関係なく、すべてのデバイスが Exchange にアクセスできなくなります。 登録および準拠デバイスがこのルールに影響されるのを防ぐためには、**[既定ルールの上書き]** ボックスをオンにします。
 >[!TIP]
 >電子メールへのアクセスを許可する前にすべてのデバイスをブロックする場合は、アクセスのブロック ルールまたは検疫ルールを選択します。 既定のルールはすべてのデバイスの種類に適用されるので、プラットフォームの例外として構成されているデバイスの種類や [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] でサポートされていないデバイスの種類も影響を受けます。
 
   - **[ユーザー通知]:** Exchange から送信される通知電子メールの他に、デバイスのブロック解除の手順が記載された電子メールが Intune によって送信されます。 この既定のメッセージは、ニーズに合わせてカスタマイズすることができます。 修復手順が記載されている Intune 通知電子メールが届く前にユーザーのデバイスがブロックされた場合 (このメールはユーザーの Exchange 受信トレイに送信されます)、ブロックされていないデバイスや、Exchange にアクセスする別の方法を使用して、メッセージを表示できます。
-
-        This is especially true when the **Default Rule** is set to block or quarantine. In this case, the user has to go to their app store, download the Microsoft Company Portal app, and enroll their device. This is applicable to iOS, Windows, and Samsung KNOX devices. For devices that don't run Samsung KNOX, you need to send the quarantine email to an alternate email account. The user has to copy the email to their blocked device to complete the enrollment and compliance process.
+      - これは特に**既定のルール**がブロックまたは検疫に設定されている場合に当てはまります。 この場合、ユーザーはアプリ ストアに移動し、Microsoft ポータル サイト アプリをダウンロードして、デバイスを登録する必要があります。 これは iOS、Windows、および Samsung KNOX デバイスに適用されます。 Samsung KNOX を実行していないデバイスの場合は、代替の電子メール アカウントに検疫電子メールを送信する必要があります。 ユーザーはブロックされたデバイスにこの電子メールをコピーして、登録とコンプライアンス プロセスを完了する必要があります。
   > [!NOTE]
   > Exchange が通知電子メールを送信できるようにするには、通知電子メールの送信に使用されるアカウントを指定する必要があります。
   >
@@ -127,11 +127,11 @@ Microsoft Intune を使用して、Exchange On-premises または従来の Excha
 
 -   条件付きアクセス ポリシーを展開する必要はありません。直ちに有効になります。
 
--   ユーザーが Exchange ActiveSync のプロファイルを設定してからデバイスがブロックされるまでに、1 ～&3; 時間かかる場合があります ([!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] で管理されていない場合)。
+-   ユーザーが Exchange ActiveSync のプロファイルを設定してからデバイスがブロックされるまでに、1 ～ 3 時間かかる場合があります ([!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] で管理されていない場合)。
 
--   ブロックされたユーザーがデバイスを [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録し、非準拠の問題を修正すると、メールのアクセスは&2; 分以内でブロック解除されます。
+-   ブロックされたユーザーがデバイスを [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録し、非準拠の問題を修正すると、メールのアクセスは 2 分以内でブロック解除されます。
 
--   ユーザーが [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] から登録解除した場合、デバイスがブロックされるまでに&1; ～&3; 時間かかる場合があります。
+-   ユーザーが [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] から登録解除した場合、デバイスがブロックされるまでに 1 ～ 3 時間かかる場合があります。
 
 **デバイスのアクセスを保護する条件付きアクセス ポリシーの構成方法を示したシナリオの例[を見るには、](restrict-email-access-example-scenarios.md)電子メール アクセスの保護のシナリオ例**をご覧ください。
 
@@ -139,9 +139,4 @@ Microsoft Intune を使用して、Exchange On-premises または従来の Excha
 -   [SharePoint Online へのアクセスを保護する](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 -   [Skype for Business Online へのアクセスを保護する](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
