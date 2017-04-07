@@ -182,7 +182,7 @@ Intune では、デバイスで検出されたマルウェアのインスタン�
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>コンピューターでのマルウェア スキャンの実行またはマルウェア定義の更新
 Intune では、Intune クライアントがインストールされているリモートの管理対象 PC で Endpoint Protection または Windows Defender を使用して、フル マルウェア スキャンまたはクイック マルウェア スキャンを実行できます。
 
-1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[グループ]**  > ** [概要]**  >  **[すべてのデバイス]**  >  **[すべてのコンピューター]** に移動し、対象のコンピューターを選択します。
+1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[グループ]**  > **[概要]**  >  **[すべてのデバイス]**  >  **[すべてのコンピューター]** に移動し、対象のコンピューターを選択します。
 
 2. **[リモート タスク]** ドロップダウン リストを選択し、リモート コンピューターで実行するタスクを選択します。
 
