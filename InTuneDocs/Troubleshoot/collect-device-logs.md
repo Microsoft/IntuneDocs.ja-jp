@@ -2,8 +2,8 @@
 title: "デバイス ログを回収する | Microsoft Docs"
 description: "管理対象デバイスからログを回収する方法について説明します。"
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 02/07/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 211b996263aae7a42f8370eb343c7e759ef87790
 ms.openlocfilehash: 5aae8edd2b851eb94156e82bc9b6e604644cb900
+ms.lasthandoff: 02/08/2017
 
 
 ---
@@ -57,9 +58,4 @@ Windows Phone の会社のポータル アプリで、ユーザーは省略記�
 ### <a name="windows"></a>Windows
 
 Windows ポータル サイトの場合、ログは *%localappdata%\Packages\Microsoft.CompanyPortal_8wekyb3d8bbwe\LocalState* にあります。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

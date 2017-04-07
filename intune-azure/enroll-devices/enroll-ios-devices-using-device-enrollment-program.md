@@ -1,9 +1,10 @@
 ---
-title: "iOS デバイスを登録する - Device Enrollment Program | Intune Azure プレビュー | Microsoft Docs"
+title: "iOS デバイスの登録 - Device Enrollment Program"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: Device Enrollment Program を使用して会社が所有している iOS デバイスを登録する方法について説明します。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: da6d377c94ce5db7bbfa1cb3fc165581d649a1fb
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 3e1898441b7576c07793e8b70f3c3f09f1cac534
+ms.openlocfilehash: ddeaeb2d532635802c615d09b4625dee0a824919
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -63,7 +65,7 @@ iOS デバイスの登録を設定する前に、以下の前提条件を満た�
 
 6. **[ユーザー アフィニティ]** で、このプロファイルに対応するデバイスをユーザー アフィニティと共に登録するかどうかを選択します。
 
- - **[ユーザー アフィニティとともに登録する]** - 初回セットアップ時にデバイスをユーザーに関連付ける必要があります。その後、デバイスは企業のデータや電子メールにアクセスすることが許可されます。 ユーザーに属していて、アプリのインストールなどのサービスにポータル サイトを使用する必要がある DEP 管理対象のデバイスの場合、ユーザー アフィニティを選択する必要があります。 多要素認証 (MFA) は、ユーザー アフィニティを使用して DEP デバイスに登録しているときに動作しないことに注意してください。 DEP デバイスに登録が完了すると、MFA は期待どおりに動作します。
+ - **[ユーザー アフィニティとともに登録する]** - 初回セットアップ時にデバイスをユーザーに関連付ける必要があります。その後、デバイスは企業のデータや電子メールにアクセスすることが許可されます。 ユーザーに属していて、アプリのインストールなどのサービスにポータル サイトを使用する必要がある DEP 管理対象のデバイスの場合、ユーザー アフィニティを選択する必要があります。 多要素認証 (MFA) は、ユーザー アフィニティを使用して DEP デバイスに登録しているときに動作しないことに注意してください。 DEP デバイスに登録が完了すると、MFA は期待どおりに動作します。 最初にサインインするときにパスワードを変更する必要がある新しいユーザーには、DEP デバイスの登録時にプロンプトを表示することはできません。 さらに、パスワードの有効期限が切れているユーザーには、DEP 登録時にパスワードのリセットは求められません。このユーザーは別のデバイスからパスワードをリセットする必要があります。
 
     >[!NOTE]
     >ユーザー アフィニティが設定された DEP でユーザー トークンを要求するには、WS-Trust 1.3 Username/Mixed エンドポイントを有効にする必要があります。
@@ -101,11 +103,11 @@ iOS デバイスの登録を設定する前に、以下の前提条件を満た�
 
 ## <a name="assign-apple-dep-serial-numbers-to-your-mdm-server"></a>MDM サーバーに Apple DEP シリアル番号を割り当てる
 
-1. [Device Enrollment Program ポータル](https://deploy.apple.com) (https://deploy.apple.com) に移動し、会社の Apple ID でサインインします。 
+1. [Device Enrollment Program ポータル](https://deploy.apple.com) (https://deploy.apple.com) に移動し、会社の Apple ID でサインインします。
 
-2. **[Deployment Program]** (展開プログラム) &gt; **[Device Enrollment Program]** (デバイス登録プログラム) &gt; **[Manage Devices]** (デバイスの管理) の順に移動します。 
+2. **[Deployment Program]** (展開プログラム) &gt; **[Device Enrollment Program]** (デバイス登録プログラム) &gt; **[Manage Devices]** (デバイスの管理) の順に移動します。
 
-3. **デバイスの選択**方法を指定し、デバイス情報を入力して、デバイスの**シリアル番号**、**注文番号**、または **CSV ファイルのアップロード**で詳細を指定します。 
+3. **デバイスの選択**方法を指定し、デバイス情報を入力して、デバイスの**シリアル番号**、**注文番号**、または **CSV ファイルのアップロード**で詳細を指定します。
 
 4. **[Assign to Server]** (サーバーに割り当てる) を選択し、Microsoft Intune に指定した &lt;ServerName&gt; を選択して、**[OK]** を選択します。
 
@@ -137,7 +139,7 @@ iOS デバイスの登録を設定する前に、以下の前提条件を満た�
 
 ユーザー アフィニティが構成されたデバイスでは、ポータル サイト アプリをインストールして実行し、アプリをダウンロードしてデバイスを管理できます。 ユーザーは、デバイスを受け取った後、セットアップ アシスタントを完了してポータル サイト アプリをインストールするために、次に示す追加の手順を完了する必要があります。
 
-### <a name="how-users-enroll-corporate-owned-ios-devices-with-user-affinity"></a>ユーザー アフィニティありで企業所有 iOS デバイスを登録する方法 
+### <a name="how-users-enroll-corporate-owned-ios-devices-with-user-affinity"></a>ユーザー アフィニティありで企業所有 iOS デバイスを登録する方法
 
 1. ユーザーは、デバイスの電源をオンにすると、セットアップ アシスタントを完了するように求められます。 セットアップ中にユーザーは資格情報を要求されます。 Intune のサブスクリプションに関連付けられている資格情報 (つまり一意の個人名または UPN) を使用する必要があります。
 

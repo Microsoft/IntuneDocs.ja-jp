@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 2ab3769ff878cf8b6223e4f46244f16eab8743a0
+ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
+ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -44,12 +45,10 @@ OneDrive や Outlook など、アプリ ベースの CA でサポートされて
 * **iOS デバイス**: Azure Authenticator アプリを開き、アカウントを左にスワイプし、登録の解除を選択します。  
 * **Android デバイス**: ポータル サイト アプリをアンインストールするか、**[システム設定]** からアカウントを削除します。
 
-
-
-## <a name="app-based-ca-with-conditional-access-based-on-device-compliance"></a>アプリ ベースの CA とデバイスのコンプライアンスに基づく条件付きアクセス  
+## <a name="app-based-ca-with-device-based-ca"></a>アプリ ベースの CA とデバイス ベースの CA  
 
 [Intune 管理コンソール](https://manage.microsoft.com)または [Azure AD Premium 管理コンソール] (https://manage.windowsazure.com) で[デバイスのコンプライアンスに基づいて条件付きアクセス](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**デバイス CA**) を構成できます。 デバイス CA を使用する場合、ユーザーが Exchange Online に接続するには、Intune デバイス コンプライアンス ポリシーに準拠している Intune の管理対象デバイス、またはドメインに参加しているコンピューターを使用する必要があります。  ユーザーが、アプリ ベースの CA とデバイス CA ポリシー両方の対象である&1; つまたは複数のセキュリティ グループに属している場合、ユーザーは次の&2; つの要件のうち&1; つを満たす必要があります。
-* サービスへのアクセスに使用されるアプリは、アプリ ベースの CA でサポートされているモバイル アプリであり、 
+* サービスへのアクセスに使用されるアプリは、サポートされているモバイル アプリである。 
 * アプリを実行するデバイスには、**iOS Authenticator (iOS デバイスの場合)** または**ポータル サイト アプリ (Android デバイスの場合)** がインストールされている。
 * サービスへのアクセスに使用されるデバイスは、**Intune の管理対象で Intune のデバイス コンプライアンス ポリシーに準拠している**か、**ドメインに参加しているコンピューター**である。  わかりやすい例を示します。
   * ユーザーが**ネイティブ iOS 電子メール アプリ**から接続する場合、ネイティブ電子メール アプリは アプリ ベースの CA でサポートされていないため、**管理対象で準拠しているデバイス**を使用して接続する必要があります。
@@ -63,9 +62,4 @@ OneDrive や Outlook など、アプリ ベースの CA でサポートされて
 ### <a name="see-also"></a>関連項目
 
 [アプリ保護ポリシーを使用したアプリ データの保護](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

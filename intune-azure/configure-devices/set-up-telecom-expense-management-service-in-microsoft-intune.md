@@ -3,8 +3,8 @@ title: "通信費管理サービスをセットアップする"
 titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー:Saaswedo 通信費管理サービスを Intune と統合するように構成します。"
 keywords: Saaswedo
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/16/2017
 ms.topic: article
@@ -16,9 +16,9 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: aa2e668641da1a87e6145fe826d88c2ca5b184a2
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 7edbba3a86213db71e41bd0d0de6c5d285025b8b
+ms.lasthandoff: 03/17/2017
 
 ---
 
@@ -81,9 +81,9 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
 1. Azure ポータルにサインインします。
 
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** を選択します。
+2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 
-3. **[Intune]** ブレードで、**[デバイスの構成]** を選択します。
+3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 
 4. **[デバイス構成]** ブレードで、**[セットアップ]** > **[通信費管理]** を選択します。 
 
@@ -97,7 +97,7 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
 #### <a name="define-device-categories-and-device-groups-mapped-to-the-categories"></a>デバイスのカテゴリと各カテゴリにマップされるデバイス グループを定義する
 
-組織のニーズに従って、少なくとも&2; つのデバイス カテゴリ (たとえば、企業と個人) を作成し、各カテゴリの動的なデバイス グループを作成する必要があります。 必要に応じて、組織用のその他のカテゴリを作成できます。 
+組織のニーズに従って、少なくとも 2 つのデバイス カテゴリ (たとえば、企業と個人) を作成し、各カテゴリの動的なデバイス グループを作成する必要があります。 必要に応じて、組織用のその他のカテゴリを作成できます。 
 
 これらのカテゴリは、登録時にユーザーに表示されます。 ユーザーが選択したカテゴリに応じて、登録デバイスは該当するデバイス グループに移動されます。 デバイスのカテゴリを作成する方法の手順については、「[Map devices to groups](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping)」(デバイスをグループにマップする) を参照してください。
 

@@ -2,8 +2,8 @@
 title: "Windows PC のリモート アシスタンス要求と提供 | Microsoft Docs"
 description: "PC として管理されている Windows デスクトップにリモート アシスタントを提供し、PC をリモートで起動するためにエンドユーザーまたは IT 監理者が行う手順について説明します。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: 628875c2f874c824761befd9886d7f7987c045df
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -85,8 +86,3 @@ Intune では別売りの [TeamViewer](https://www.teamviewer.com) ソフトウ�
 ### <a name="see-also"></a>関連項目
 
 [Intune ソフトウェア クライアントを使用した一般的な Windows PC 管理タスク](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-
-
-<!--HONumber=Dec16_HO3-->
-
-

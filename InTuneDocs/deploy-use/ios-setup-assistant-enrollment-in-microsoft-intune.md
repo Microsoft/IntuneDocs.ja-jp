@@ -2,10 +2,10 @@
 title: "セットアップ アシスタントを使用した iOS デバイスの登録 | Microsoft Docs"
 description: "Apple Configurator ツールを使用して企業所有の iOS デバイスを登録し、デバイスを工場出荷時の設定にリセットして、セットアップ アシスタントを実行する準備をします。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 02/13/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
-ms.openlocfilehash: facae5f49b52760dcea0653bd261e16e13e11bbf
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 5bb9c68db8edb68531fc40bc93c28881a95b6940
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -84,9 +85,9 @@ Apple Configurator を使用して、iOS デバイスを工場出荷時の設定
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>セットアップ アシスタントに登録する iOS デバイスを追加する
 
-1. [Microsoft Intune の管理コンソール](http://manage.microsoft.com)で、**[グループ]**&gt;**[すべてのデバイス]**&gt;**[会社が所有しているすべてのデバイス]**&gt;**[すべてのデバイス]** の順に移動し、**[デバイスの追加]** を選択します。 
+1. [Microsoft Intune の管理コンソール](http://manage.microsoft.com)で、**[グループ]**&gt;**[すべてのデバイス]**&gt;**[会社が所有しているすべてのデバイス]**&gt;**[すべてのデバイス]** の順に移動し、**[デバイスの追加]** を選択します。
 
-   デバイスの追加方法は&2; つあります。
+   デバイスの追加方法は 2 つあります。
 
    ![[デバイスの追加] ダイアログ ボックス](../media/pol-SA-enroll-iOS-SetupAssistant.png)
 
@@ -95,7 +96,7 @@ Apple Configurator を使用して、iOS デバイスを工場出荷時の設定
     |||
     |-|-|
     |&lt;シリアル 1&gt;|&lt;デバイス 1 の詳細&gt;|
-    |&lt;シリアル&2;&gt;|&lt;デバイス 2 の詳細&gt;|
+    |&lt;シリアル 2&gt;|&lt;デバイス 2 の詳細&gt;|
 
   この .csv ファイルをテキスト エディターで開くと、次のように表示されます。
 
@@ -106,13 +107,13 @@ Apple Configurator を使用して、iOS デバイスを工場出荷時の設定
 
   -  **デバイスの詳細を手動で追加** &mdash; 最大 15 台のデバイスのシリアル番号とメモまたは詳細を入力します。
 
-  **[デバイスの確認]** ウィンドウで、シリアル番号を確認できます。 再度インポートするシリアル番号の**詳細**を上書きするかどうかを決定することもできます。あるいは、**[上書き]** チェック ボックスをオフにして、現在の詳細を保持することもできます。 
+  **[デバイスの確認]** ウィンドウで、シリアル番号を確認できます。 再度インポートするシリアル番号の**詳細**を上書きするかどうかを決定することもできます。あるいは、**[上書き]** チェック ボックスをオフにして、現在の詳細を保持することもできます。
 
-> [!NOTE] 
+> [!NOTE]
 > 既存の Intune 管理者コンソールでは、管理者はアップロードされた CSV から関連する詳細をそのまま使用し、個々のシリアル番号の既存の詳細を上書きすることができます。 新しい Azure Portal では、単にすべてのシリアル番号の詳細を上書きするか、すべてのシリアル番号の新しい詳細を無視することができます。
 
-  > [!NOTE]
-  > 後で Intune 管理対象から会社所有のデバイスを除外する場合は、**[会社の事前登録済みデバイス]** の **[iOS シリアル番号を使用]** デバイス グループに移動し、Intune からデバイスのシリアル番号を削除して、デバイスの登録を無効にする必要がある場合があります。 シリアル番号の削除時またはその前後に Intune が障害復旧手順を実行した場合、アクティブなデバイスのシリアル番号のみがそのグループ内に存在していることを確認する必要があります。
+> [!NOTE]
+> 後で Intune 管理対象から会社所有のデバイスを除外する場合は、**[会社の事前登録済みデバイス]** の **[iOS シリアル番号を使用]** デバイス グループに移動し、Intune からデバイスのシリアル番号を削除して、デバイスの登録を無効にする必要がある場合があります。 シリアル番号の削除時またはその前後に Intune が障害復旧手順を実行した場合、アクティブなデバイスのシリアル番号のみがそのグループ内に存在していることを確認する必要があります。
 
 2. **[次へ]** を選択します。
 
@@ -127,23 +128,22 @@ Apple Configurator を使用して、iOS デバイスを工場出荷時の設定
 
 ### <a name="export-a-profile-to-deploy-to-ios-devices"></a>iOS デバイスに展開するプロファイルをエクスポートする
 
-1. [Microsoft Intune の管理コンソール](http://manage.microsoft.com)で、**[ポリシー]**&gt;**[業務用デバイスの登録]** の順に進み、モバイル デバイスに展開するデバイス プロファイルを選択します。 
+1. [Microsoft Intune の管理コンソール](http://manage.microsoft.com)で、**[ポリシー]**&gt;**[業務用デバイスの登録]** の順に進み、モバイル デバイスに展開するデバイス プロファイルを選択します。
 
 2. タスク バーの **[エクスポート]** を選択します。 **プロファイルの URL**をコピーおよび保存します。 Apple Configurator を使用してこれを後でアップロードして、iOS デバイスで使用する Intune プロファイルを定義します。
 
   Apple Configurator 2 をサポートするには、2.0 プロファイルの URL を編集する必要があります。 これを行うには、
-    ```
-    https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
-    ```
-    上記のコードを以下のコードに置き換えます。
 
-    ```
-    https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
-    ```
+  ```
+  https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
+  ```
+  上記のコードを以下のコードに置き換えます。
+
+  ```
+  https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
+  ```
 
    iOS デバイスで使用される Intune プロファイルを定義するには、以下の手順で Apple Configurator を使用して Apple DEP サービスにこのプロファイル URL をアップロードします。
-
-
 
 ### <a name="prepare-the-device-with-apple-configurator"></a>Apple Configurator を使用してデバイスを準備する
 
@@ -179,16 +179,12 @@ Apple Configurator を使用して、iOS デバイスを工場出荷時の設定
 
 ### <a name="distribute-devices"></a>デバイスを配布する
 
-これで、デバイスを企業登録できるようになりました。 
+これで、デバイスを企業登録できるようになりました。 デバイスをオフにし、ユーザーにデバイスを配布します。 ユーザーがデバイスをオンにすると、セットアップ アシスタントが起動します。
 
-デバイスをオフにし、ユーザーにデバイスを配布します。 ユーザーがデバイスをオンにすると、セットアップ アシスタントが起動します。
+>[!NOTE]
+>DEP デバイスを登録しようとしてデバイスの制限を超えた場合、登録は失敗しますがユーザーへの警告はありません。
 
 
 ### <a name="see-also"></a>関連項目
 [デバイスを登録するための前提条件](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

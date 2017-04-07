@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 9a814f6df407802b8e48626ed0e3f828c52c661b
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -148,7 +149,7 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 レポート ビューアが新しいウィンドウで開きます。
 ![モバイル デバイスのインベントリ レポートのサンプルのスクリーンショット](../media/IntuneSA2cViewReport.PNG)
 
-レポートを実行した後、ユーザーをブロックするかどうかを判断するために、次の&4; つの列を調べます。
+レポートを実行した後、ユーザーをブロックするかどうかを判断するために、次の 4 つの列を調べます。
 
 -   **[管理チャネル]**: デバイスが Intune、Exchange ActiveSync、またはその両方のいずれによって管理されているかを示します。
 
@@ -176,7 +177,7 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 
 これらのグループは、**Office 365 管理センター**または **Intune アカウント ポータル**で構成できます。
 
-各ポリシーには、次の&2; つのグループの種類を指定できます。
+各ポリシーには、次の 2 つのグループの種類を指定できます。
 
 -   **対象グループ**: ポリシーが適用されるユーザー グループ
 
@@ -203,7 +204,7 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
     >
     > コンプライアンスの状態に関係なく、ポリシーの対象となっているすべてのユーザーがデバイスを [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録する必要があります。
 
-3.  **[アプリケーション アクセス]** では、先進認証を使用するアプリに対して、ポリシーを適用するプラットフォームを選択する方法が&2; つあります。 サポートされているプラットフォームは、Android、iOS、Windows、および Windows Phone です。
+3.  **[アプリケーション アクセス]** では、先進認証を使用するアプリに対して、ポリシーを適用するプラットフォームを選択する方法が 2 つあります。 サポートされているプラットフォームは、Android、iOS、Windows、および Windows Phone です。
 
     -   **すべてのプラットフォーム**
 
@@ -258,9 +259,9 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 
 -   ユーザーが電子メール アカウントを作成すると、デバイスはすぐにブロックされます。
 
--   ブロックされたユーザーがデバイスを [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録し、非準拠の問題を修正すると、メールのアクセスは&2; 分以内でブロック解除されます。
+-   ブロックされたユーザーがデバイスを [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録し、非準拠の問題を修正すると、メールのアクセスは 2 分以内でブロック解除されます。
 
--   ユーザーがデバイスの登録を解除した場合、メールは約&6; 時間後にブロックされます。
+-   ユーザーがデバイスの登録を解除した場合、メールは約 6 時間後にブロックされます。
 
 **デバイスのアクセスを保護する条件付きアクセス ポリシーの構成方法を示したシナリオの例**を見るには、[電子メール アクセスの保護のシナリオ例](restrict-email-access-example-scenarios.md)をご覧ください。
 
@@ -275,9 +276,4 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 - [SharePoint Online へのアクセスを保護する](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 - [Skype for Business Online へのアクセスを保護する](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 874146573898e8a28de83ed599dbd4829ea8f335
-ms.openlocfilehash: fb72b74d922cef8659c34ef9d3d36e14b1a22ac1
+ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
+ms.openlocfilehash: e21b088dbb7fdcef9996e2b970bb406cab5ee0aa
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -41,7 +42,7 @@ Intune サポート計画を立てると、より効率的に Intune に関連�
 
 ## <a name="which-teams-are-responsible-for-providing-support"></a>Intune のサポートを提供する担当チーム
 
-組織には、場合によっては複数階層/レベル (1 ～ 3 など) のサポートがあります。 たとえば、階層 1 と階層 2 はサポート チームに属し、階層 3 には Intune の展開を担当する MDM チームのメンバーが含まれる場合があります。
+組織には、場合によっては複数階層/レベル (1 ～&3; など) のサポートがあります。 たとえば、階層 1 と階層 2 はサポート チームに属し、階層 3 には Intune の展開を担当する MDM チームのメンバーが含まれる場合があります。
 
 ## <a name="what-is-the-support-process"></a>サポート プロセスの内容
 
@@ -95,9 +96,4 @@ IT サポート/ヘルプデスク スタッフが Intune 展開計画やパイ�
 ## <a name="next-section"></a>次のセクション
 
 次のセクションは、[Intune の設計](section-7-create-an-intune-design.md)に関するガイダンスです。
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

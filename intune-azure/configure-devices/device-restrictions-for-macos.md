@@ -1,5 +1,6 @@
 ---
-title: "macOS 向けの Intune デバイスの制限設定 | Intune Azure プレビュー | Microsoft Docs"
+title: "macOS の Intune デバイス制限設定"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: macOS デバイスのデバイス設定と機能を制御するために使用できる Intune 設定について説明します。"
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 3129cbaf-96c2-4837-8907-ca87a605a496
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: b666f442fe2f71b2a04747a50951da38d8d8b3b4
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: e6b308547331e20a8373aca56f9a0781dcd210a2
+ms.lasthandoff: 02/18/2017
 
 
 ---

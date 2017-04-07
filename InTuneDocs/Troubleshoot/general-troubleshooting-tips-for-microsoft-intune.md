@@ -2,7 +2,8 @@
 title: "一般的なトラブルシューティングのヒント | Microsoft Docs"
 description: "Intune の問題を解決するための一般的なリソース。"
 keywords: 
-author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/08/2016
 ms.topic: article

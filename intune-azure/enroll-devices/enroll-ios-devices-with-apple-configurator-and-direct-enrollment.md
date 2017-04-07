@@ -3,8 +3,8 @@ title: "Apple Configurator と直接登録を使用して iOS デバイスを登
 titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: Apple Configurator で、直接登録を使用して会社が所有している iOS デバイスを登録する方法について説明します。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

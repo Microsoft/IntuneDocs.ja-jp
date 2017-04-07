@@ -2,8 +2,8 @@
 title: "企業所有のデバイスの管理 | Microsoft Docs"
 description: "企業所有のデバイスを、デバイスの種類、購入方法、組織のニーズに応じて、さまざまな方法で登録します。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
 ms.openlocfilehash: ae077d80e05b33d625285d796917f4f6c153ca3f
+ms.lasthandoff: 01/31/2017
 
 
 ---
@@ -65,9 +66,4 @@ Intune は、次のいずれかの条件を満たす場合、デバイスを "�
  - デバイスが [Azure Active Directory または Enterprise Mobility Suite に Windows 10 Enterprise デバイスとして](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)登録されている (Windows 10 のみ)。
 
 デバイスに企業とタグが付けられると、管理コンソールのそのデバイス レコードの **[所有権]** 列に **[企業]** と表示されます。 
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: arob98
-ms.date: 01/31/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6e2658cdfcd0b78a254c375fe39b67f7ef9afad6
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -171,11 +172,12 @@ Microsoft Active Protection Service は、潜在的な脅威の対処方法に�
 ### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>コンピューター上のマルウェアに対する [最近の検出パス] を表示する方法
 Intune では、デバイスで検出されたマルウェアのインスタンスのパスを最新 10 件まで表示できます。 **[最近の検出パス]** は、既定では無効になっています。 この表示を有効にするには、次の手順を実行します。
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[グループ]**  >  **[すべてのデバイス]**  >  **[マルウェア]** の順に選択します。
+1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[グループ]** > **[すべてのデバイス]** > **[すべてのコンピューター]** を選択します。
+2. 最近の検出パスを表示したいコンピューターを右クリックして、**[プロパティ]** を選択します。
+3. 上部のタブから **[マルウェア]** を選択します。
 
-2.  列見出しを右クリックします。 表示可能な列のリストが表示されます。
-
-3.  リスト内の **[最近の検出パス]** チェック ボックスをオンにします。 **[最近の検出パス]** 列が現れ、デバイスで監視された最新 10 件までのマルウェア インスタンスが表示されます。
+   ![[マルウェア] タブを選択して、[最近の検出パス] チェック ボックスをクリックします。](../media/malware-path-column.png)
+4. 列見出しを右クリックします。 表示可能な列のリストが表示されます。 リスト内の **[最近の検出パス]** チェック ボックスをオンにします。 **[最近の検出パス]** 列が現れ、デバイスで監視された最新 10 件までのマルウェア インスタンスが表示されます。
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>コンピューターでのマルウェア スキャンの実行またはマルウェア定義の更新
 Intune では、Intune クライアントがインストールされているリモートの管理対象 PC で Endpoint Protection または Windows Defender を使用して、フル マルウェア スキャンまたはクイック マルウェア スキャンを実行できます。
@@ -184,17 +186,9 @@ Intune では、Intune クライアントがインストールされているリ
 
 2. **[リモート タスク]** ドロップダウン リストを選択し、リモート コンピューターで実行するタスクを選択します。
 
-
-
-
 ## <a name="need-more-help"></a>さらにヘルプが必要な場合
 さらにヘルプやサポートが必要な場合は、「[Microsoft Intune におけるエンドポイント保護のトラブルシューティング](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune)」を参照してください。
 
 ### <a name="see-also"></a>関連項目
 [Windows PC を保護するためのポリシー](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -1,22 +1,24 @@
 ---
-title: "Intune で Windows 10 エディションのアップグレードを構成する | Intune Azure プレビュー | Microsoft Docs"
+title: "Intune で Windows 10 エディションのアップグレードを構成する"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: Intune を使用して、管理対象の Windows 10 デバイスをアップグレードする方法について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
-ms.reviewer: heenamac
+ms.reviewer: coryfe
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 49da713cfe61ce21501e0a8e0f6e0c225b2bc291
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 3d0616601509b310034cdbf6e34cf185712c91d2
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -27,9 +29,10 @@ ms.lasthandoff: 02/16/2017
 
 このトピックでは、Windows 10 エディションのアップグレード プロファイルを構成する方法について説明します。 このプロファイルを使用して、次に挙げる Windows 10 のバージョンのいずれかを実行するデバイスを自動的に新しいエディションにアップグレードできます。
 
-- [Windows] 10 Desktop
+- Windows 10 Home
 - Windows 10 Holographic
 - [Windows] 10 Mobile
+
 
 次のアップグレード パスがサポートされます。
 
@@ -37,6 +40,7 @@ ms.lasthandoff: 02/16/2017
 - Windows 10 Home から Windows 10 Education へのアップグレード パス
 - Windows 10 Mobile から Windows 10 Mobile Enterprise へのアップグレード パス
 - Windows 10 Holographic Pro から Windows 10 Holographic Enterprise へのアップグレード パス
+
 
 ## <a name="before-you-start"></a>アップグレードを開始する前に
 デバイスを最新バージョンにアップグレードし始める前に、次のいずれかを用意する必要があります。
@@ -48,7 +52,7 @@ ms.lasthandoff: 02/16/2017
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイスの構成]** を選択します。
+3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
 3. [プロファイル] ブレードで、**[プロファイルを作成します]** を選択します。
 4. **[プロファイルを作成します]** ブレードで、エディションのアップグレード プロファイルの**名前**と**説明**を入力します。

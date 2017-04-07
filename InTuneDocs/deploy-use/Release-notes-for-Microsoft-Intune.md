@@ -2,10 +2,10 @@
 title: "Microsoft Intune のリリース ノート | Microsoft Docs"
 description: "Intune リリース ノート"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fd300a5dfe6d6976491988453ec69e99668889fb
+ms.sourcegitcommit: f0e027d1c63435084c434c591fed7bb71b5c07f2
+ms.openlocfilehash: 8369cc039ac1c4c24b29927a96360cd872f8e9bc
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -27,21 +28,21 @@ ms.openlocfilehash: fd300a5dfe6d6976491988453ec69e99668889fb
 
 Microsoft Intune は、クラウドベースの総合的なクライアント管理ソリューションで、さまざまな管理ツールとレポート機能が搭載され、Windows の最新バージョンへのアップグレード ライセンスも利用できます。 また、コンピューターを常に最新で安全な状態に保つことができます。 また、Intune を使用すると、ネットワーク上のモバイル デバイスを Microsoft Easy Assist または Intune で直接管理できます。 このリリース ノートでは、Microsoft Intune の重要な情報と既知の問題について説明します。
 
+<!-- 3-6-17: customer asked if this is still current; Stacie asked Chris Baldwin about it. Chris said it's a Samsung issue, but that he hasn't heard any reports about it for months, so he suggested that I share that with the customer and remove this item from the release notes. I'm only going to comment it out in case it resurfaces.
+## Android users can’t send email when conditional access for Exchange Online is implemented
 
-## <a name="android-users-cant-send-email-when-conditional-access-for-exchange-online-is-implemented"></a>Exchange Online の条件付きアクセスが実装された場合、Android ユーザーが電子メールを送信できない
+**Issue:** Users running Samsung Android 5.1.1 and later on their devices can't send email when conditional access for Exchange Online has been set up. Samsung acknowledges that the issue is in its built-in email client in Android 5.1.1 and later, and is investigating a fix.
 
-**問題:** Samsung のデバイスで Android 5.1.1 以降を実行しているユーザーは、Exchange Online の条件付きアクセスがセットアップされたという電子メールを送信できません。 Samsung は、この問題が Android 5.1.1 以降の組み込みの電子メール クライアントで起きていることを確認しており、解決策を調査中です。
+**Workaround 1:** Advise users to use the Outlook app for Android.
 
-**対応策 1:** Android 用の Outlook アプリを使用することをユーザーに勧めます。
+**Workaround 2:** To let affected users send email, you can follow these steps:
 
-**対応策 2:** 影響を受けるユーザーが電子メールを送信できるようにするには、次の手順に従います。
+1. Put each affected user in a security group in the “exempted groups” section of the conditional access policy for Exchange Online.
+2. Let the user temporarily sync email on the built-in email client.
+3. Remove the affected user from the exempted group, and confirm that the user can now send email.
 
-1. 影響を受けるユーザーを Exchange Online の条件付きアクセス ポリシーの [適用除外グループ] セクションのセキュリティ グループに移します。
-2. ユーザーに、組み込みの電子メール クライアントにあるメールとの一時的な同期を許可します。
-3. [除外されるグループ] から、影響を受けるユーザーを削除し、そのユーザーが電子メールを送信できるようになったことを確認します。
-
-Microsoft は、修正プログラムやその他の回避策について Samsung と引き続き緊密に連携していきます。
-
+Microsoft will continue to work closely with Samsung on a fix or additional workarounds.
+-->
 
 
 ## <a name="changing-resource-access-profiles-between-groups-for-ios-and-android-might-fail"></a>iOS と Android のグループ間でリソース アクセス プロファイルを変更するとエラーになる
@@ -49,7 +50,7 @@ Microsoft は、修正プログラムやその他の回避策について Samsun
 
 この時点で、次のいずれかが発生します。 
 * 電子メール プロファイル A と B が同じである場合、電子メール プロファイル B に電子メール プロファイル A が既に含まれているため、デバイスが電子メール プロファイル B を拒否します。
-* 例のように電子メール プロファイル A が電子メール プロファイル B と異なる場合は、デバイスに 2 つの電子メール プロファイルが作成されることになります。
+* 例のように電子メール プロファイル A が電子メール プロファイル B と異なる場合は、デバイスに&2; つの電子メール プロファイルが作成されることになります。
 
 > [!NOTE]
 > 電子メール プロファイルを区別するため、ユーザー名に使用されるホスト名と属性が確認されます。
@@ -92,9 +93,4 @@ Microsoft は、修正プログラムやその他の回避策について Samsun
 Azure ポータルがサポートしている言語は、簡体字中国語、繁体字中国語、チェコ語、オランダ語、英語、ドイツ語、ハンガリー語、イタリア語、日本語、ポルトガル (ブラジル) 語、ポルトガル (ポルトガル) 語、ロシア語、スペイン語、英語、フランス語、韓国語、ポーランド語、スウェーデン語、およびトルコ語です。
 
 Intune 管理コンソールとユーザーが対面するモバイル エクスペリエンスでは、Azure ポータルでサポートされている言語だけでなくデンマーク語、ギリシャ語、フィンランド語、ノルウェー語、およびルーマニア語もサポートしています。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

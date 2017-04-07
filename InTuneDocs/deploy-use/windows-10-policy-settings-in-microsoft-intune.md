@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 5a1a861096bdfae461b6ad05e424f770796279a2
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -133,7 +134,7 @@ ms.openlocfilehash: 5a1a861096bdfae461b6ad05e424f770796279a2
 |**Experience/AllowCopyPaste**<br>./Vendor/MSFT/Policy/Config/Experience/AllowCopyPaste|デスクトップのみ<br />**データ型:** 整数<br />**値:<br>** **0**: 許可しません。<br> **1**: 許可します (既定)|
 |**Force Start Size**<br>./Vendor/MSFT/Policy/Config/Start/ForceStartSize|モバイルのみ<br />**データ型:** 整数<br />**値:**<br>**0**: ユーザーによるサイズ変更を許可します (既定)。<br>**1**: 非全画面表示を強制します。<br>**2**: 全画面表示を強制します。|
 |**Update/RequireDeferUpgrade**<br>./Vendor/MSFT/Policy/Config/Update/RequireDeferUpgrade|デスクトップおよびモバイル<br />**データ型:** 整数<br />**値:**<br>**0**: アップグレードを遅延せず、CB (現在のブランチ) を維持します (既定)。<br>**1**: 更新とアップグレードの遅延を有効にします。デバイスは CBB (ビジネスの現在のブランチ) の規則に従います。<br />詳細については、以下を参照してください。<br>[Windows 10 サービスの概要](https://technet.microsoft.com/library/mt598226.aspx)<br>[Windows 10 の展開計画](https://technet.microsoft.com/library/mt574241.aspx)|
-|**Update/DeferUpdatePeriod**<br>./Vendor/MSFT/Policy/Config/Update/DeferUpdatePeriod|デスクトップおよびモバイル<br>**説明:** ソフトウェアの更新を最大 4 週間遅延させるポリシー。<br />**データ型:** 整数<br />**値:**<br> **0**: 直ちに更新プログラムを適用します (既定)。<br>**1 ** - **4**: ソフトウェアの更新を遅延する期間 (週)。<br />詳細については、以下を参照してください。<br>[Windows 10 サービスの概要](https://technet.microsoft.com/library/mt598226.aspx)<br>[Windows 10 の展開計画](https://technet.microsoft.com/library/mt574241.aspx)|
+|**Update/DeferUpdatePeriod**<br>./Vendor/MSFT/Policy/Config/Update/DeferUpdatePeriod|デスクトップおよびモバイル<br>**説明:** ソフトウェアの更新を最大 4 週間遅延させるポリシー。<br />**データ型:** 整数<br />**値:**<br> **0**: 直ちに更新プログラムを適用します (既定)。<br>**1** - **4**: ソフトウェアの更新を遅延する期間 (週)。<br />詳細については、以下を参照してください。<br>[Windows 10 サービスの概要](https://technet.microsoft.com/library/mt598226.aspx)<br>[Windows 10 の展開計画](https://technet.microsoft.com/library/mt574241.aspx)|
 |**Update/DeferUpgradePeriod**<br>./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod|デスクトップおよびモバイル<br>**説明:** 機能のアップグレードを最大 8 か月間遅延させるポリシー。<br />**データ型:** 整数<br />**値:**<br>**0**: 直ちに更新プログラムを適用します (既定)。<br>**1** - **8**: 機能のアップグレードを遅延する期間 (月)。<br />詳細については、以下を参照してください。<br>[Windows 10 サービスの概要](https://technet.microsoft.com/library/mt598226.aspx)<br>[Windows 10 の展開計画](https://technet.microsoft.com/library/mt574241.aspx)|
 |**Update/PauseDeferrals**<br>./Vendor/MSFT/Policy/Config/Update/PauseDeferrals|デスクトップおよびモバイル<br>**説明:** デバイスが更新とアップグレードの受信を 5 週間停止できるようにします。<br />**データ型:** 整数<br />**値:**<br>**0**: 直ちに更新プログラムを適用します (既定)。<br>**1**: 更新とアップグレードを一時停止します (一時停止の期限は 5 週間です)。|
 
@@ -325,9 +326,4 @@ Windows 10 用の Microsoft Intune **全般構成ポリシー**を使用して�
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

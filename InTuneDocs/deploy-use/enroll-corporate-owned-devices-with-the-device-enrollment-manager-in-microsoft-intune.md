@@ -2,8 +2,8 @@
 title: "デバイス登録マネージャーを使用した登録 | Microsoft Docs"
 description: "デバイス登録マネージャー (DEM) アカウントでは、1 つのユーザー アカウントで企業所有の多数の共有モバイル デバイスを管理できます。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/29/17
 ms.topic: article
@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
+ms.sourcegitcommit: a4b6d8b0a63d707631e3f0e231b2e9b40f2609cf
+ms.openlocfilehash: 1d8109fca8170ad127f6377918d7c0313ba26d78
+ms.lasthandoff: 03/24/2017
 
 
 ---
@@ -26,12 +27,12 @@ ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-組織は Intune を使用して、単一のユーザー アカウントで多数のモバイル デバイスを管理することができます。 *デバイス登録マネージャー (DEM)* アカウントは、最大で 1,000 台のデバイスを登録できる特別なユーザー アカウントです。 既存のユーザーを DEM アカウントに追加し、特別な DEM 機能を与えます。 登録される各デバイスは&1; つのライセンスを使用します。 このアカウントで登録したデバイスは、個人用 ("BYOD") デバイスではなく共有デバイス (つまり、ユーザー アフィニティなし) として使用することをお勧めします。  
+組織は Intune を使用して、単一のユーザー アカウントで多数のモバイル デバイスを管理することができます。 *デバイス登録マネージャー (DEM)* アカウントは、最大で 1,000 台のデバイスを登録できる特別なユーザー アカウントです。 既存のユーザーを DEM アカウントに追加し、特別な DEM 機能を与えます。 登録される各デバイスは 1 つのライセンスを使用します。 このアカウントで登録したデバイスは、個人用 ("BYOD") デバイスではなく共有デバイス (つまり、ユーザー アフィニティなし) として使用することをお勧めします。  
 
 ユーザーをデバイス登録マネージャーとして追加するには、そのユーザーが Azure Portal に存在する必要があります。 最適なセキュリティのために、DEM ユーザーを Intune 管理にも指定することは避けてください。
 
 >[!NOTE]
->DEM の登録方法は、[Apple Configurator セットアップ アシスタント](ios-setup-assistant-enrollment-in-microsoft-intune.md)、[直接登録](ios-direct-enrollment-in-microsoft-intune.md)、または [DEP の登録方法](ios-device-enrollment-program-in-microsoft-intune.md)と同時に使用することはできません。 
+>DEM の登録方法は、[Apple Configurator セットアップ アシスタント](ios-setup-assistant-enrollment-in-microsoft-intune.md)、[直接登録](ios-direct-enrollment-in-microsoft-intune.md)、または [DEP の登録方法](ios-device-enrollment-program-in-microsoft-intune.md)と同時に使用することはできません。
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>デバイス登録マネージャーのシナリオの例
 
@@ -41,9 +42,9 @@ Intune コンソール内のユーザーのみがデバイス登録マネージ�
 
 DEM ユーザーができること:
 
--   Intune に最大 1,000 台のデバイスを登録する。
--   ポータル サイトにサインインして会社のアプリを取得する。
--   タブレットにロール固有のアプリを展開することで、会社データへのアクセスを構成する。
+-   Intune に最大 1,000 台のデバイスを登録する
+-   会社のポータル アプリを使用して会社のアプリを取得する
+-   タブレットにロール固有のアプリを展開することで、会社データへのアクセスを構成する
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>DEM アカウントで登録されるデバイスの制限事項
 
@@ -56,9 +57,9 @@ DEM ユーザーができること:
   - DEM ユーザーは、会社ポータルを使用して、デバイス自体で DEM 登録のデバイスを登録解除することはできません。 Intune 管理者にはこの機能が与えられますが、DEM ユーザーはこの機能を使用できません。
 
   - ポータル サイト アプリまたは Web サイトには、ローカルのデバイスのみが表示されます。
- 
+
   - アプリ管理のための Apple ID 要件がユーザー単位になるため、ユーザーは Apple Volume Purchase Program (VPP) アプリを利用できません。
- 
+
   - (iOS のみ) DEM を利用して iOS デバイスを登録する場合、Apple Configurator またはデバイス登録プログラム (DEP) を利用してデバイスを登録することはできません。
 
 > [!NOTE]
@@ -76,7 +77,7 @@ DEM ユーザーができること:
 
 4.  **[追加]** を選択します。 **[デバイス登録マネージャーの追加]** ダイアログ ボックスが表示されます。
 
-5.  Intune アカウントを **[ユーザー ID]** に入力し、**[OK]** を選択します。 
+5.  Intune アカウントを **[ユーザー ID]** に入力し、**[OK]** を選択します。
 
     これで、DEM ユーザーが、BYOD シナリオの場合にエンド ユーザーがポータル サイトで実行する際と同じ手順で、モバイル デバイスを登録できるようになりました。 マネージャーであるエンド ユーザーは、ポータル サイト アプリをインストールし、DEM の資格情報を使用して最大 1,000 台のデバイスを登録することができます。 プラットフォーム別のエンドユーザー登録手順については、次を参照してください。
 
@@ -106,9 +107,4 @@ DEM ユーザーができること:
 -   削除されたデバイス登録マネージャー アカウントの資格情報では、デバイスのワイプとインベントリからの削除を実行できません。
 
 -   削除されたデバイス登録マネージャー アカウントと登録済みデバイスの関係は残りますが、追加のデバイスは登録できません。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

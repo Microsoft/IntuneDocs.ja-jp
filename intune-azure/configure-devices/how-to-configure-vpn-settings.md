@@ -1,11 +1,12 @@
 ---
-title: "Intune VPN 設定を構成する方法 | Intune Azure プレビュー | Microsoft Docs"
+title: "Intune VPN 設定を構成する方法"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: Intune を使用して、管理対象デバイスの VPN 接続を構成する方法について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: ff05d9ed7bae2742de8dbbe908f2c92d2459a7f4
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 96756c4aa5afa52821614d5f7fbc6d0bca15895b
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -33,8 +35,8 @@ ms.lasthandoff: 02/16/2017
 
 次の接続の種類を使用して、VPN プロファイルを作成できます。
 
-|||
-|-|-|
+||||||||
+|-|-|-|-|-|-|-|
 |接続の種類|Android|iOS|macOS|Windows Phone 8。1|Windows 8.1|Windows 10|
 |Pulse Secure|○|○|○|○|○|[はい]|
 |Cisco (IPSec)|いいえ|○|[いいえ]|いいえ|いいえ|いいえ|
@@ -59,7 +61,7 @@ ms.lasthandoff: 02/16/2017
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイスの構成]** を選択します。
+3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
 3. [プロファイル] ブレードで、**[プロファイルを作成します]** を選択します。
 4. **[プロファイルを作成します]** ブレードで、VPN プロファイルの**名前**と**説明**を入力します。
@@ -86,7 +88,7 @@ ms.lasthandoff: 02/16/2017
 
 ## <a name="methods-of-securing-vpn-profiles"></a>VPN プロファイルをセキュリティで保護する方法
 
-VPN プロファイルは、さまざまな製造元から提供される多くの異なる接続の種類およびプロトコルに対応しています。 これらの接続は、通常、次の&2; つの方法のどちらかを使用してセキュリティで保護されます。
+VPN プロファイルは、さまざまな製造元から提供される多くの異なる接続の種類およびプロトコルに対応しています。 これらの接続は、通常、次の 2 つの方法のどちらかを使用してセキュリティで保護されます。
 
 ### <a name="certificates"></a>証明書
 

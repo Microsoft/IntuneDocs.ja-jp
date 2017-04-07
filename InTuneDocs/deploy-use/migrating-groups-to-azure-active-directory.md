@@ -13,8 +13,9 @@ ms.technology:
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: dd4c8f1d810338912b4926be8419ccf9a52ae722
-ms.openlocfilehash: 8d3900da91c89700b97d8774f893d82d3a74ea83
+ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
+ms.openlocfilehash: d3b4b823683196148d4fb8aa296b59c9c712e99f
+ms.lasthandoff: 03/11/2017
 
 
 ---
@@ -84,21 +85,10 @@ Intune では、すべてのグループに親グループが必要です。 グ
 |親デバイス グループのすべてのモバイル デバイス|そのグループをメンバーとして含む静的なグループ|
 |Intune によって管理されているすべてのモバイル デバイス|動的なグループの値として 'MDM' が使用される Management Type 属性|
 |静的なグループ内で入れ子になったグループ |静的なグループ内で入れ子になったグループ|
-|動的なグループ内で入れ子になったグループ|入れ子のレベルが 1 である動的なグループ|
+|動的なグループ内で入れ子になったグループ|入れ子のレベルが&1; である動的なグループ|
 
 ## <a name="what-happens-to-policies-and-apps-youve-already-deployed"></a>既に展開されているポリシーおよびアプリに対する処理
 
 ポリシーとアプリは、移行前と同じように、引き続きグループに展開されます。 ただし、これらのグループの管理は、従来の Intune コンソールではなく、Azure ポータルから行うようになります。
-
-
-## <a name="how-to-get-more-information"></a>詳しい情報の入手方法
-
-[intunegrps@microsoft.com](mailto:intunegrps@microsoft.com) で移行チームにお問い合わせください。    
-     
-
-
-
-
-<!--HONumber=Dec16_HO4-->
-
+ 
 

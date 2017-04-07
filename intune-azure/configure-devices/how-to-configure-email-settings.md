@@ -1,11 +1,12 @@
 ---
-title: "Intune 電子メール設定を構成する方法 | Intune Azure プレビュー | Microsoft Docs"
+title: "Intune 電子メール設定を構成する方法"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: 管理対象デバイスで会社の電子メールへの接続を作成するように Intune を構成する方法について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 66c189ed45b8b5226e36ef4769c0872c428646bb
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: 70d013768c07f1782255a309b5941f05c2222912
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -25,13 +27,14 @@ ms.lasthandoff: 02/16/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-電子メール プロファイル設定を使用すると、会社の電子メールに接続し、同期するために必要な設定で管理対象デバイスを構成できます。 こうすると、すべてのデバイスに標準の設定を適用し、正しい電子メールの設定がわからないエンド ユーザーからの問い合わせを減らすことができます。
+電子メール プロファイルを使用すると、会社の電子メールに接続し、同期するために必要な設定で管理対象デバイスを構成できます。 こうすると、すべてのデバイスに標準の設定を適用し、正しい電子メールの設定がわからないエンド ユーザーからの問い合わせを減らすことができます。
 
 ほとんどのプラットフォームに組み込まれているメール クライアントをサポートしています。 ほとんどのサード パーティ製の電子メール アプリは現在サポートしていません。
 
 電子メール プロファイルを使用して、次のデバイスの種類でネイティブ電子メール クライアントを構成できます。
 
-- Android 4.0 以降
+- Android Samsung KNOX Standard 4.0 以降
+- Android for Work
 - iOS 8.0 以降
 - Windows Phone 8.1 以降
 - Windows 10 (デスクトップ) と Windows 10 Mobile
@@ -42,7 +45,7 @@ ms.lasthandoff: 02/16/2017
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイスの構成]** を選択します。
+3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
 3. [プロファイル] ブレードで、**[プロファイルを作成します]** を選択します。
 4. **[プロファイルを作成します]** ブレードで、電子メール プロファイルの**名前**と**説明**を入力します。

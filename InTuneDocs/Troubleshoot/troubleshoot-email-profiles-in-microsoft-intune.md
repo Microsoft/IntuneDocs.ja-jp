@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: 017a7912cb991f00916373acc18f4ab2b97ce8ed
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -46,7 +47,7 @@ ms.openlocfilehash: 017a7912cb991f00916373acc18f4ab2b97ce8ed
 
 1.  Configuration Manager コンソール &gt;**[資産とコンプライアンス]** の順に開きます。
 
-2.  **[概要]**  -&gt;** [コンプライアンス設定]**  -&gt;** [会社のリソースへのアクセス]** の順に展開して、**[電子メール プロファイル]** を選択します。
+2.  **[概要]**  -&gt;**[コンプライアンス設定]**  -&gt;** [会社のリソースへのアクセス]** の順に展開して、**[電子メール プロファイル]** を選択します。
 
 3.  電子メール プロファイルを右クリックし、**[プロパティ]** を開きます。
 
@@ -72,9 +73,4 @@ Samsung KNOX の EAS プロファイルおよびソース ポリシーの構成�
 
 ## <a name="next-steps"></a>次のステップ
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

@@ -1,12 +1,13 @@
 # 概要
 ## [Azure Portal プレビューとは](introduction/what-is-microsoft-intune.md)
+## [Azure での Intune の機能](introduction/ui-changes-in-microsoft-intune.md)
 ## 作業開始
 <!---(introduction/get-started.md) --->
 ### [無料試用版にサインアップ](introduction/sign-up-free-trial-microsoft-intune.md)
 ## [新機能](introduction/whats-new.md)
 ## [既知の問題](introduction/known-issues-in-the-intune-preview.md)
 ## [サポートを受ける](introduction/how-to-get-support-for-microsoft-intune.md)
-<!--- 
+<!---
 
 ## [Related resources](introduction/related-resources.md)
 
@@ -33,6 +34,7 @@
 ### [Apple DEP トークンを取得する](enroll-devices/get-apple-dep-token.md)
 ### [iOS デバイスの登録方法を選択する](enroll-devices/choose-ios-enrollment-method.md)
 ## 方法
+### [ユーザーにライセンスを割り当てる](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [Android デバイスを登録する](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### iOS デバイスを登録する
 #### [セットアップ アシスタントを使用して iOS デバイスを登録する](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
@@ -41,7 +43,7 @@
 #### [デバイス登録プログラムを使用して iOS デバイスを登録する](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [デバイス登録マネージャーを使用してデバイスを登録する](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [macOS デバイスの登録](enroll-devices/enroll-macos-devices.md)
-### [Windows デバイスの登録](enroll-devices/enroll-window-devices.md)
+### [Windows デバイスの登録](enroll-devices/enroll-windows-devices.md)
 ### デバイス登録を管理する
 #### [使用条件を作成する](enroll-devices/create-terms-and-conditions.md)
 #### [登録制限を設定する](enroll-devices/set-enrollment-restrictions.md)
@@ -108,6 +110,11 @@
 ## [Plan and design](configure-devices/plan-and-design.md) --->
 ## 方法
 ### [デバイス プロファイルを構成する](configure-devices/how-to-create-device-profiles.md)
+
+### [デバイス機能を構成する](configure-devices/how-to-configure-device-features.md)
+#### [iOS](configure-devices/device-features-for-ios.md)
+#### [macOS](configure-devices/device-features-for-macos.md)
+
 ### [デバイス制限を構成する](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
 #### [iOS](configure-devices/device-restrictions-for-ios.md)
@@ -138,6 +145,7 @@
 #### [Windows 8.1 および Windows 10](configure-devices/wi-fi-import-for-windows-8-1.md)
 
 ### [Windows 10 エディションのアップグレード設定を構成する](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
+### [ビジネス設定向けの Windows Update の構成](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [証明書を構成する](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
 #### [PKCS](configure-devices/configure-certificate-infrastructure-for-pfx.md)
@@ -168,6 +176,8 @@
 ### [Android for Work コンプライアンス ポリシーを作成する](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [iOS コンプライアンス ポリシーを作成する](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Windows コンプライアンス ポリシーを作成する](set-device-compliance/create-a-compliance-policy-for-windows.md)
+### [コンプライアンス非対応に対するアクションを作成する](set-device-compliance/actions-for-noncompliance.md)
+### [デバイス コンプライアンスを監視する](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
 

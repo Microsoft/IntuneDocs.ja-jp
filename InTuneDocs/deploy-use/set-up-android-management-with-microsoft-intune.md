@@ -2,10 +2,10 @@
 title: "Android の管理をセットアップする | Microsoft Docs"
 description: "Microsoft Intune を使用して Android および KNOX Standard デバイスのモバイル デバイス管理 (MDM) を有効にします。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: lacranda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
-ms.openlocfilehash: 8e2588e2bb0537877f0164bc996fa973f25ea4dd
+ms.sourcegitcommit: 86fd9d7212277f9524eb4d7f225df2c7beda1313
+ms.openlocfilehash: a5a4f11ae341480b2e674ca55a514b62831bdd60
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -37,11 +38,11 @@ Intune 管理者は、ポータル サイトから Samsung Knox Standard デバ�
 
 3.  **デバイスを登録して会社のリソースへのアクセスを取得する方法をユーザーに知らせる**
 
-    エンドユーザー用の登録手順については、「[Intune に Android デバイスを登録する](../enduser/enroll-your-device-in-intune-android.md)」を参照してください。 登録プロセスでは、登録により可能になる操作、および IT 管理者が見ることのできるデバイス上のデータと見られないデータについての説明が行われます。
+    エンドユーザー用の登録手順については、「[Intune に Android デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)」を参照してください。 登録プロセスでは、登録により可能になる操作、および IT 管理者が見ることのできるデバイス上のデータと見られないデータについての説明が行われます。
 
     その他のエンドユーザー タスクの詳細については、次の記事を参照してください。
   - [Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](how-to-educate-your-end-users-about-microsoft-intune.md)
-  - [Android デバイス向けエンド ユーザー ガイダンス](../enduser/using-your-android-device-with-intune.md)
+  - [Android デバイス向けエンド ユーザー ガイダンス](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 中国には Google Play ストアがないので、Android デバイスは中国のアプリ マーケットプレースからポータル サイトを入手する必要があります。 Android 用ポータル サイト アプリは、以下のストアでダウンロードできます。
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
@@ -62,9 +63,4 @@ Android 用ポータル サイト アプリは、Google Play 開発者サービ�
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune でデバイスを登録するための前提条件](prerequisites-for-enrollment.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

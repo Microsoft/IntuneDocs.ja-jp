@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/21/2017
+ms.date: 03/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
-ms.openlocfilehash: d1b24b745fe1e860e42fa23647976aadea1953cd
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
+ms.openlocfilehash: 8f18f9ff2c32bb24b68fa987a8aad990b911a549
+ms.lasthandoff: 03/11/2017
 
 
 ---
@@ -38,7 +38,7 @@ Windows PC などのデバイスを登録し、Microsoft Intune によるモバ�
 
 - **ワイプ** - ユーザーがデバイスを登録する前に、デバイスのワイプが必要かどうかを示します。 "ワイプ" という用語は、デバイスを出荷時の設定にリセットし、すべてのデータを削除することを意味します。 詳細については、「[Retire devices](retire-devices-from-microsoft-intune-management.md)」 (デバイスの削除) を参照してください。
 - **アフィニティ** - デバイスとユーザーを関連付けます。 モバイル アプリケーション管理 (MAM) および会社データへの条件付きアクセスのために必要です。 詳細については、「[ユーザー アフィニティ](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices)」を参照してください。
-- **ロック** - ユーザーがネイティブ オペレーティング システムのメニューを使用して、デバイスを登録解除できるかどうかを示します。 ユーザーは、ポータル サイト アプリを使用してすべてのプラットフォームで自分のデバイスを登録解除できます。 
+- **ロック** - ユーザーがネイティブ オペレーティング システムのメニューを使用して、デバイスを登録解除できるかどうかを示します。 ユーザーは、ポータル サイト アプリを使用してすべてのプラットフォームで自分のデバイスを登録解除できます。
 
 **iOS の登録方法**
 
@@ -54,7 +54,7 @@ Windows PC などのデバイスを登録し、Microsoft Intune によるモバ�
 
 | **方法** |    **ワイプが必要?** |    **アフィニティ**    |    **ロック** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | [はい]|    ○ |    いいえ | [詳細情報](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | いいえ|    ○ |    いいえ | [詳細情報](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|    いいえ |いいえ |いいえ    |[詳細情報](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android の登録方法**
@@ -75,7 +75,7 @@ Windows PC などのデバイスを登録し、Microsoft Intune によるモバ�
 
 | **方法** |    **ワイプが必要?** |    **アフィニティ**    |    **ロック** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | [はい]|    ○ |    いいえ | [詳細情報](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | いいえ|    ○ |    いいえ | [詳細情報](prerequisites-for-enrollment.md)|
 
 
 適切な方法を選択するのに役立つ一連の質問については、「[モバイル デバイスの登録方法の選択](/intune/get-started/choose-how-to-enroll-devices1)」をご覧ください。

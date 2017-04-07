@@ -1,11 +1,12 @@
 ---
-title: "PKCS の Intune 証明書インフラストラクチャを構成する | Intune Azure プレビュー | Microsoft Docs"
+title: "PKCS の Intune 証明書インフラストラクチャを構成する"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: Intune で PKCS 証明書を使用するようにインフラストラクチャを構成する方法について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 6f08dc63a9afaa5e92b188883d160d0b76f3631f
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: ed1d6ce687666e1630ca25b08db72d6c99ef617a
+ms.lasthandoff: 03/13/2017
 
 
 
@@ -84,12 +86,12 @@ ms.lasthandoff: 02/16/2017
     -   [ **拡張** ] タブで、[ **アプリケーション ポリシーの説明** ] に [ **クライアント認証**] が含まれることを確認します。
 
         > [!IMPORTANT]
-        > iOS および Mac OS X の証明書テンプレートの場合、**[拡張]** タブで、**[キー使用法]** を編集し、**[署名は発行元の証明である]** がオンになっていないことを確認します。
+        > iOS および macOS の証明書テンプレートの場合、**[拡張]** タブで、**[キー使用法]** を編集し、**[署名は発行元の証明である]** がオンになっていないことを確認します。
 
 2.  [ **一般** ] タブでテンプレートの [ **有効期間** ] を確認します。 既定では、Intune はテンプレートで構成されている値を使用します。 ただし、要求元が異なる値を指定できるように CA を構成できます。異なる値は、Intune 管理者コンソールから設定できます。 常にテンプレートの値を使用する場合は、この手順の残りの部分をスキップします。
 
     > [!IMPORTANT]
-    > iOS および Mac OS X プラットフォームは、他の構成に関係なく、常にテンプレートで設定される値を使用します。
+    > iOS および macOS は、他の構成に関係なく、常にテンプレートで設定される値を使用します。
 
     要求元が有効期間を指定できるように CA を構成するには、CA で次のコマンドを実行します。
 

@@ -3,8 +3,8 @@ title: "Apple Configurator のシリアル番号を追加する"
 titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: Apple Configurator を使用して企業所有の iOS デバイスにシリアル番号を追加する方法について説明します。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

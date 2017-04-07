@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
 ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
+ms.lasthandoff: 01/14/2017
 
 
 ---
@@ -119,7 +120,7 @@ Intune によってラップされたアプリを配布するには、次が必�
 
 9. 上記の手順に従い、証明書署名要求を作成します。 macOS コンピューターで、**キーチェーン アクセス** アプリケーションを起動します。
 
-10. 画面の上部にある macOS メニューで **[キーチェーン アクセス] > [証明書アシスタント] > [Request a Certificate From a Certificate Authority] (証明機関から証明書を要求する)** の順に移動します。  
+10. 画面の上部にある macOS メニューで **[キーチェーン アクセス] > [証明書アシスタント] > [Request a Certificate From a Certificate Authority]\(証明機関から証明書を要求する)** の順に移動します。  
 
   ![キーチェーン アクセスで証明機関から証明書を要求する](../media/app-wrapper/iOS-signing-cert-5.png)
 
@@ -399,9 +400,4 @@ iOS 用アプリ ラッピング ツールで権利のエラーが表示され�
 - [Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)</br>
 - [Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
 - [SDK を使用してモバイル アプリケーション管理に対応する](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

@@ -2,10 +2,10 @@
 title: "クライアント ソフトウェアを使用して PC を管理する |Microsoft Docs"
 description: "Intune クライアント ソフトウェアをインストールして Windows PC を管理します。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 02/09/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,21 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
-ms.openlocfilehash: 10ba007095182c9cb07710656ba5f275e254d92e
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 74f2848dcd2863022dac44cf302b330a99cf1a55
+ms.lasthandoff: 03/29/2017
 
 
 ---
 
 # <a name="manage-windows-pcs-with-intune-pc-client-software"></a>Intune PC クライアント ソフトウェアを使用して Windows PC を管理する
-[モバイル デバイスとしての Windows PC の登録](set-up-windows-device-management-with-microsoft-intune.md)は、Intune に Windows PC を登録する際の推奨される方法ですが、このトピックで説明するように、Intune クライアント ソフトウェアをインストールすることによって Windows PC を登録して管理することもできます。
+[モバイル デバイスとしての Windows PC の登録](set-up-windows-device-management-with-microsoft-intune.md)は、Intune に Windows PC を登録する際の推奨される方法ですが、このトピックで説明するように、IT 管理者として Intune クライアント ソフトウェアをインストールすることによって Windows PC を登録して管理することもできます。 Intune ソフトウェア クライアントは、モバイル デバイスとしての登録がサポートされていません。
 
 Intune では、Windows Server における Active Directory Domain Services (AD DS) グループ ポリシー オブジェクト (GPO) と似た方法でポリシーを使用して Windows PC を管理します。 Active Directory ドメインに参加しているコンピューターを Intune で管理する場合は、[Intune のポリシーが組織で設定されているどの GPO とも競合しないようにしてください](resolve-gpo-and-microsoft-intune-policy-conflicts.md)。 GPO の詳細は、[ここ](https://technet.microsoft.com/library/hh147307.aspx)で確認できます。
 
 ## <a name="policies-and-app-deployments-for-the-intune-software-client"></a>Intune ソフトウェア クライアントに対するポリシーとアプリの展開
 
-Intune クライアント ソフトウェアでは、ソフトウェアの更新、Windows ファイアウォール、および Endpoint Protection を管理することで [PC の保護に役立つ管理機能](policies-to-protect-windows-pcs-in-microsoft-intune.md)がサポートされますが、Intune クライアント ソフトウェアで管理される PC を、モバイル デバイス管理に特化した **Windows** ポリシー設定などの他の Intune ポリシーの対象とすることはできません。 
+Intune クライアント ソフトウェアでは、ソフトウェアの更新、Windows ファイアウォール、および Endpoint Protection を管理することで [PC の保護に役立つ管理機能](policies-to-protect-windows-pcs-in-microsoft-intune.md)がサポートされますが、Intune クライアント ソフトウェアで管理される PC を、モバイル デバイス管理に特化した **Windows** ポリシー設定などの他の Intune ポリシーの対象とすることはできません。
 
 Intune クライアント ソフトウェアを使って Windows PC を管理する場合は、**[コンピューター管理]** セクションに表示されているポリシーのみを使うことができます。
 
@@ -70,7 +70,7 @@ Intune クライアント ソフトウェアを使って Windows PC を管理す
 
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Intune クライアント ソフトウェアを使ったコンピューター管理機能
 
-Intune クライアント ソフトウェアをインストールすると、以下の管理機能を使うことができます。 
+Intune クライアント ソフトウェアをインストールすると、以下の管理機能を使うことができます。
 
 - [アプリケーション管理](deploy-apps-in-microsoft-intune.md)
 

@@ -1,11 +1,12 @@
 ---
-title: "iOS 向けの Intune デバイスの制限設定 | Intune Azure プレビュー | Microsoft Docs"
+title: "iOS の Intune デバイス制限設定"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: iOS デバイスのデバイス設定と機能を制御するために使用できる Intune 設定について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 2b8bf6d3944f9968d0f4020fbb5c57ef8180062c
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -49,7 +51,8 @@ ms.lasthandoff: 02/16/2017
 -     **[キーボード ショートカット (監視のみ)]** - キーボード ショートカットを使用できるようにします。
 -     **[ペアリングされている Apple Watch の手首検出]** - 有効にすると、Apple Watch が装着されていないときには Apple Watch に通知が表示されません。
 - **[AirPlay 送信要求のペアリング パスワードが必須]** - ユーザーが AirPlay を使用して他の Apple デバイスにコンテンツをストリーミングするときに、ペアリング パスワードを要求します。
-- **[アカウントの変更 (監視モードのみ)]** - ユーザーが電子メールの構成などのアカウントの設定を変更することを許可します。
+- **アカウント変更 (監視のみ)** - ブロックされているとき、ユーザーは iOS 設定アプリからデバイス固有設定を変更できなくなります。デバイス アカウントの新規作成、ユーザー名やパスワードの変更などが禁止されます。
+これは、メール、連絡先、予定表、Facebook、Twitter など、iOS 設定アプリからアクセスできる設定にも適用されます。 Microsoft Outlook アプリなど、アカウント設定が iOS 設定アプリから構成できないアプリには適用されません。
 - **[Apple Watch のペアリング (監視モードのみ)]** - デバイスと Apple Watch とのペアリングを許可します。
 - **[Bluetooth の変更 (監視モードのみ)]** - エンド ユーザーがデバイスの Bluetooth 設定を変更できないようにします。
 - **[Classroom アプリによるリモート画面の監視 (監視のみ)]** - Classroom アプリがリモート デバイス上の画面を監視することを許可またはブロックします。
@@ -220,7 +223,7 @@ ms.lasthandoff: 02/16/2017
 -     **[iCloud フォトライブラリ]** - **[いいえ]** に設定すると、ユーザーがクラウドに写真やビデオを保存できる iCloud フォトライブラリが使用できなくなります。    これを **[いいえ]** に設定すると、iCloud フォト ライブラリからデバイスに完全にダウンロードされていない写真はすべてデバイスから削除されます。
 -     **[管理対象アプリのクラウドへの同期]** - Intune で管理するアプリがユーザーの iCloud アカウントにデータを同期することを許可します。
 -     **[共有フォト ストリーム]** - デバイスの **[iCloud Photo Sharing (iCloud の写真共有)]** を無効にするには、**[いいえ]** に設定します。
--     **[アクティビティの継続]** - ユーザーがある iOS デバイスで開始した作業を別の iOS または Mac OS X デバイスで続行できるようにします (Handoff)。
+-     **[アクティビティの継続]** - ユーザーがある iOS デバイスで開始した作業を別の iOS または macOS デバイスで続行できるようにします (Handoff)。
 
 ## <a name="kiosk"></a>キオスク
 -     **[アクティベーション ロック]** - 監視されている iOS デバイスでアクティベーション ロックを有効にします。

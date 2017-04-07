@@ -16,6 +16,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
 ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
+ms.lasthandoff: 01/05/2017
 
 
 ---
@@ -80,9 +81,8 @@ System Center Configuration Manager で Intune を使用してモバイル デ�
 1. **証明書署名要求を取得する**<br/>
 管理アカウントで Intune にログオンし、**[管理]** > **[モバイル デバイス管理]** > **[iOS および Mac OS X]** > **[APNs 証明書のアップロード]** の順に移動して、**[APNs 証明書要求のダウンロード]** を選択します。 証明書署名要求 (.csr) ファイルをローカルに保存します。 .csr ファイルは、Apple Push Certificates Portal からの信頼関係証明書を要求するために使用します。 <!--- screen shot--->
 2.    **Apple Push Notification サービス証明書を取得する**<BR/>
-[Apple Push Certificates Portal](https://idmsa.apple.com/IDMSWebAuth/login?appIdKey=3fbfc9ad8dfedeb78be1d37f6458e72adc3160d1ad5b323a9e5c5eb2f8e7e3e2&rv=2) に移動します。会社の Apple ID でサインインし、.csr ファイルを使用して APNs 証明書を作成します。 Apple Push Certificate Portal で **[Upload]** (アップロード) を選択すると、APNs に使用できない .json ファイルを受け取ります。 ダウンロードが完了したら、Apple Push Certificates Portal に戻り、[Certificates for Third-Party Servers] (サード パーティのサーバーの証明書) で、**[Download]** (ダウンロード) を選択します。
-
- APNs (.pem) 証明書をダウンロードして、ファイルをローカルに保存します。 この Apple ID は、後で APNs 証明書を更新するときにも使用する必要があります。
+[Apple Push Certificates Portal](https://idmsa.apple.com/IDMSWebAuth/login?appIdKey=3fbfc9ad8dfedeb78be1d37f6458e72adc3160d1ad5b323a9e5c5eb2f8e7e3e2&rv=2) に移動します。会社の Apple ID でサインインし、.csr ファイルを使用して APNs 証明書を作成します。 Apple Push Certificate Portal で **[Upload]** (アップロード) を選択すると、APNs に使用できない .json ファイルを受け取ります。 ダウンロードが完了したら、Apple Push Certificates Portal に戻り、[Certificates for Third-Party Servers]\(サード パーティのサーバーの証明書) で、**[Download]** (ダウンロード) を選択します。<br/>
+APNs (.pem) 証明書をダウンロードして、ファイルをローカルに保存します。 この Apple ID は、後で APNs 証明書を更新するときにも使用する必要があります。
 3.    **APNs 証明書を Intune に追加する**<BR/>
 Microsoft Intune 管理コンソールで、**[管理]** > **[モバイル デバイス管理]** > **[iOS および Mac OS X]** > **[APNs 証明書のアップロード]** の順に移動して、**[APNs 証明書のアップロード]** を選択します。 証明書 (.pem) ファイルに移動し、**[開く]** を選択して、Apple ID を入力します。 この APNs 証明書を使用して、 Intune はモバイル デバイスを登録し、登録したモバイル デバイスにポリシーを適用して iOS デバイスを管理できます。
 4.    **デバイスを登録して会社のリソースへのアクセスを取得する方法をユーザーに知らせる**<br/>
@@ -118,9 +118,4 @@ Open the Company Portal on the mobile device, choose **Apps**, and then install 
 
 ## <a name="next-steps"></a>次のステップ
 [ユーザーとデバイスを編成するグループを作成する](get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

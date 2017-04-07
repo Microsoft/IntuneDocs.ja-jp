@@ -1,5 +1,6 @@
 ---
-title: "Intune デバイスの制限設定を構成する | Intune Azure プレビュー | Microsoft Docs"
+title: "Intune デバイス制限設定の構成"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: Intune を使用して、管理対象デバイスの設定と機能を構成する方法について説明します。"
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: c6293e9c669266203705a8fe06c323869dc7881f
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: b593b2ddd756bc5bf7700eca4f2544b87008a8ab
+ms.lasthandoff: 03/17/2017
 
 
 ---

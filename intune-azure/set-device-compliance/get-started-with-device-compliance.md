@@ -16,9 +16,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: a3e3d4968623f29e320f1fcca8243c861c7caab4
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: 0c0d2f73e48864caabdec6e83c2fdf58db5a0630
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -28,19 +28,20 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-このトピックでは、デバイスのコンプライアンス ポリシーの作成を開始するために必要な条件について詳しく説明し、Azure Portal で表示できる項目と実行できる操作を簡単に紹介します。 デバイス コンプライアンスを初めて使用する場合、このトピックはデバイス コンプライアンスの概要と会社での利用方法を学ぶのに役立ちます。
+このトピックでは、以下について説明します。 
+
+- デバイスのコンプライアンス ポリシーの作成を開始するために必要な条件
+- Intune Azure プレビュー ポータルで表示できる項目と実行できる操作 
+
+デバイス コンプライアンスに詳しくない場合、[このトピック](https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance)はデバイス コンプライアンスの概要と組織での利用方法を学ぶのに役立ちます。
 
 ##  <a name="pre-requisites"></a>前提条件
-
 
 -   Intune のサブスクリプション
 
 -   Azure Active Directory へのサブスクリプション
 
-
-
 ##  <a name="supported-platforms"></a>サポートされているプラットフォーム:
-
 
 -   Android
 
@@ -54,8 +55,7 @@ ms.lasthandoff: 02/18/2017
 
 ##  <a name="azure-portal-workflow"></a>Azure Portal のワークフロー
 
-
-Azure Portal でデバイス コンプライアンスを作成および管理する方法の概要を次に示します。
+Intune Azure プレビュー ポータルでデバイス コンプライアンスを作成および管理する方法の概要を次に示します。
 
 <!---### Overview
 

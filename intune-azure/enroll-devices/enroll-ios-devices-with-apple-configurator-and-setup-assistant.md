@@ -1,9 +1,10 @@
 ---
-title: "iOS デバイスを登録する - Apple Configurator セットアップ アシスタント | Intune Azure プレビュー | Microsoft Docs"
+title: "iOS デバイスの登録 - Apple Configurator - セットアップ アシスタント"
+titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: Apple Configurator でセットアップ アシスタントを使用して会社が所有している iOS デバイスを登録する方法について説明します。"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -13,15 +14,16 @@ ms.technology:
 ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: 888e7b7af7dcca4154f67a1de781eb7908d9a187
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: b2d2e4e0210526ff70b86526bd0b2e17bab0286b
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
-# <a name="enroll-ios-devices-with-apple-configurator-and-setup-assistant"></a>Apple Configurator とセットアップ アシスタントを使用して iOS デバイスを登録する 
+# <a name="enroll-ios-devices-with-apple-configurator-and-setup-assistant"></a>Apple Configurator とセットアップ アシスタントを使用して iOS デバイスを登録する
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -100,50 +102,39 @@ Apple Configurator プロファイルを作成した後、デバイスのシリ�
 3. プロファイルのブレードで、**[プロファイルのエクスポート]** を選択します。
 
 4. iOS デバイスが接続されている [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) にプロファイル URL をコピーします。 Apple Configurator を使用してこれを後でアップロードして、iOS デバイスで使用する Intune プロファイルを定義します。
-
   Apple Configurator 2 をサポートするには、2.0 プロファイルの URL を編集する必要があります。 これを行うには、
     ```
     https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
     ```
     上記のコードを以下のコードに置き換えます。
-
     ```
     https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
     ```
-
-   iOS デバイスで使用される Intune プロファイルを定義するには、以下の手順で Apple Configurator を使用して Apple DEP サービスにこのプロファイル URL をアップロードします。
+iOS デバイスで使用される Intune プロファイルを定義するには、以下の手順で Apple Configurator を使用して Apple DEP サービスにこのプロファイル URL をアップロードします。
 
 5. Apple Configurator を使用して Apple DEP サービスにこのプロファイル URL をアップロードして、iOS デバイスで使用される Intune プロファイルを定義します。
+ 1.  Mac コンピューターで **Apple Configurator 2** を開きます。 メニュー バーで、**[Apple Configurator 2]** を選択し、**[基本設定]** を選択します。
 
+  > [!WARNING]
+  > デバイスは、登録プロセス中に、出荷時の構成にリセットされます。 ベスト プラクティスとして、デバイスをリセットし、オンにします。 デバイスを接続するときはデバイスの **[こんにちは]** 画面を表示する必要があります。
 
-    1.  Mac コンピューターで **Apple Configurator 2** を開きます。 メニュー バーで、**[Apple Configurator 2]** を選択し、**[基本設定]** を選択します。
+  2. **基本設定**ウィンドウで **[サーバー]** を選択し、プラス記号 (+) を選択して MDM サーバー ウィザードを起動します。 **[次へ]** を選択します。
 
-         > [!WARNING]
-         > デバイスは、登録プロセス中に、出荷時の構成にリセットされます。 ベスト プラクティスとして、デバイスをリセットし、オンにします。 デバイスを接続するときはデバイスの **[こんにちは]** 画面を表示する必要があります。
+  3. 「Microsoft Intune での iOS デバイスのセットアップ アシスタントを使用した登録」の手順 6 の MDM サーバーの**名前**と**登録 URL** を入力します。 登録 URL には、Intune からエクスポートされた登録プロファイル URL を入力します。 **[次へ]** を選択します。  
 
-    2. **基本設定**ウィンドウで **[サーバー]** を選択し、プラス記号 (+) を選択して MDM サーバー ウィザードを起動します。 **[次へ]** を選択します。
+  "サーバー URL が検証されていない" ことを示す警告は、無視して構いません。 操作を続行するには、ウィザードが完了するまで **[次へ]** を選択します。
 
-    3. 「Microsoft Intune での iOS デバイスのセットアップ アシスタントを使用した登録」の手順 6 の MDM サーバーの**名前**と**登録 URL** を入力します。 登録 URL には、Intune からエクスポートされた登録プロファイル URL を入力します。 **[次へ]** を選択します。  
+  4.  USB アダプターを使用して iOS モバイル デバイスを Mac コンピューターに接続します。
 
-       "サーバー URL が検証されていない" ことを示す警告は、無視して構いません。 操作を続行するには、ウィザードが完了するまで **[次へ]** を選択します。
+  > [!WARNING]
+  > デバイスは、登録プロセス中に、出荷時の構成にリセットされます。 ベスト プラクティスとして、デバイスをリセットし、オンにします。 セットアップ アシスタントを開始するとデバイスに **[こんにちは]** 画面が表示されます。
 
-    4.  USB アダプターを使用して iOS モバイル デバイスを Mac コンピューターに接続します。
-
-        > [!WARNING]
-        > デバイスは、登録プロセス中に、出荷時の構成にリセットされます。 ベスト プラクティスとして、デバイスをリセットし、オンにします。 セットアップ アシスタントを開始するとデバイスに **[こんにちは]** 画面が表示されます。
-
-    5.  **[準備]** を選択します。 **[iOS デバイスを準備]** ウィンドウで、**[手動]** を選択してから **[次へ]** を選択します。
-
-    6. **[MDM サーバーに登録]** ウィンドウで、作成したサーバーの名前を選択してから **[次へ]** を選択します。
-
-    7. **[デバイスを監視]** ウィンドウで、監視レベルを選択してから **[次へ]** を選択します。
-
-    8. **[組織を作成]** ウィンドウで、**[組織]** を選択するか、新しい組織を作成して **[次へ]** を選択します。
-
-    9. **[iOS 設定アシスタントを構成]** ウィンドウで、ユーザーに表示する手順を選択し、**[準備]** を選択します。 メッセージが表示されたら、認証して信頼の設定を更新します。  
-
-    10. iOS デバイスの準備が完了したら、USB ケーブルを取り外します。  
-
+  5.  **[準備]** を選択します。 **[iOS デバイスを準備]** ウィンドウで、**[手動]** を選択してから **[次へ]** を選択します。
+  6. **[MDM サーバーに登録]** ウィンドウで、作成したサーバーの名前を選択してから **[次へ]** を選択します。
+  7. **[デバイスを監視]** ウィンドウで、監視レベルを選択してから **[次へ]** を選択します。
+  8. **[組織を作成]** ウィンドウで、**[組織]** を選択するか、新しい組織を作成して **[次へ]** を選択します。
+  9. **[iOS 設定アシスタントを構成]** ウィンドウで、ユーザーに表示する手順を選択し、**[準備]** を選択します。 メッセージが表示されたら、認証して信頼の設定を更新します。  
+  10. iOS デバイスの準備が完了したら、USB ケーブルを取り外します。  
 6.  **デバイスを配布します**。
     これで、デバイスを企業登録できるようになりました。 デバイスをオフにし、ユーザーにデバイスを配布します。 ユーザーがデバイスをオンにすると、セットアップ アシスタントが起動します。
 

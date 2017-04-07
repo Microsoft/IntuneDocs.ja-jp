@@ -2,8 +2,8 @@
 title: "サポートを受ける方法 | Microsoft Docs"
 description: "有料サブスクリプションとトライアル サブスクリプションについて、オンラインと電話によるサポートを利用できます。"
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 01/27/2016
 ms.topic: article
@@ -15,8 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
-ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
+ms.sourcegitcommit: 5726934501b3d6b243de94951cf0c57cbd79a811
+ms.openlocfilehash: ccc0502c81cb16d2ca13e5d6a702c0ff863b83e4
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -41,15 +42,13 @@ Microsoft の技術スタッフに質問をお送りいただくか、ディス�
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Microsoft Intune UserVoice 製品フィードバック サイト
 
-Microsoft による Intune の改善に役立つフィードバックはありますか。 Microsoft Intune の [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) フィードバック サイトにアイデアを追加してください。 他のユーザーが UserVoice に追加したアイデアに投票することもできます。 
+Microsoft による Intune の改善に役立つフィードバックはありますか。 Microsoft Intune の [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) フィードバック サイトにアイデアを追加してください。 他のユーザーが UserVoice に追加したアイデアに投票することもできます。
 
 ![Microsoft Intune UserVoice フィードバック ページ](./media/intune-uservoice-feedback-page.png)
 
-## <a name="create-an-online-support-ticket"></a>オンライン サポート チケットの作成
+## <a name="create-a-support-ticket"></a>サポート チケットを作成する
 
-セルフヘルプ リソースに回答が見つからない場合は、オンライン サポート チケットを作成できます。
-
-より良いサービスを提供するため、**各サポート チケットに含める問題は&1; つに制限してください**。 その理由を次に示します。
+セルフヘルプ リソースに回答が見つからない場合は、オンライン サポート チケットを作成できます。 より良いサービスを提供するため、**各サポート チケットに含める問題は&1; つに制限してください**。 その理由を次に示します。
 
 - 支援を提供するサポート エンジニアは、特定の分野を専門としている場合が多く、問題の解決に適した分野の専門家を見つける方がより簡単に解決します。
 - エンジニアリング チームは多くのインシデントが発生している製品領域の作業を優先することができます。
@@ -57,12 +56,15 @@ Microsoft による Intune の改善に役立つフィードバックはあり�
 
 サポート チケットを作成する前に、[サポート インシデントの定義](#definition-of-a-support-incident)を確認してください。
 
-**オンライン サポート チケットを作成するには**:
+### <a name="steps-to-create-an-online-support-ticket"></a>オンライン サポート チケットを作成する手順
 
 1.  Intune 資格情報を使用して [Office 365 管理センター](https://portal.office.com)にサインインします。
+
+    Premier サポートを契約されている場合は、代わりに [Premier サポート ページ](https://support.microsoft.com/en-us/premier/contacts)で Intune サポート チケットを開く必要があります。
+
     >[!NOTE]
     >
-    >Premier サポートを契約されているお客様は [Premier サポート ページ](https://support.microsoft.com/en-us/premier/contacts)で Intune サポート チケットを開くことができます。
+    >Premier サポートを契約されているお客様は [Premier サポート ページ](https://support.microsoft.com/en-us/premier/contacts)で Intune サポート チケットを開く必要があります。
 
 2.  **[管理者]** タイルを選択します。
 3.  左側の **[サポート]** で、**[サポート]** を選んでチケットを開きます。
@@ -83,14 +85,14 @@ Microsoft による Intune の改善に役立つフィードバックはあり�
 
 3.  手順に従ってリクエストを開きます。
 
-### <a name="create-a-support-ticket-with-alternate-methods"></a>別の方法でサポート チケットを作成する
+### <a name="steps-to-create-a-support-ticket-with-alternate-methods"></a>別の方法でサポート チケットを作成する手順
 
-サポート ページが次のように表示される場合は、以下の手順に従います。
+Office 365 管理センターのサポート ページが次のように表示される場合は、以下の手順に従います。
 
 ![別の Intune サポート](../media/alternate-support-ui.png)
 
 
-1. [**Need help**] (ヘルプが必要) を選択します。
+1. [**Need help**]\(ヘルプが必要) を選択します。
 2. テキスト ボックスに問題に関する説明を入力して、**[ヘルプの表示]** を選択します。
 
     ![別の Intune サポート チケット](../media/support-need-help.png)
@@ -101,30 +103,30 @@ Microsoft による Intune の改善に役立つフィードバックはあり�
 国および地域別のサポート電話番号、サポート時間、各地域でのサポート言語の一覧については、「[Microsoft Intune のサポートの電話番号](contact-assisted-phone-support-for-microsoft-intune.md)」を参照してください。
 
 ## <a name="track-your-support-requests"></a>サポート リクエストの追跡
-1.  Intune 資格情報を使用して [Office 365 管理センター](https://portal.office.com)にサインインします。
+1.  Intune 管理者資格情報を使用して [Office 365 管理センター](https://portal.office.com)にサインインします。
 2.  **[管理者]** タイルを選択します。
 3.  左側の **[サポート]** で **[サービス要求]** を選択します。 要求を確認できます。
 
-要求に対する初回の応答は、問題の重大度によって異なります。 重大度が最も高い問題の場合、Professional サポートをご利用のお客様に対する初回の応答は、2 時間以内に行われます。 Premier サポートをご契約のお客様の場合、応答はサポート契約の内容によって変わります。 次のような事例が該当します。
+要求に対する初回の応答は、問題の重大度によって異なります。 重大度が最も高い問題の場合、Professional サポートをご利用のお客様に対する初回の応答は、2 時間以内に行われます。 Premier サポートをご契約のお客様の場合、応答はサポート契約の内容によって変わります。 次のようなケースでは、**重大度が最も高い**と言えます。
 
 - 1 つまたは複数のサービスにアクセスできないか使用不能です。
 - 運用、操作、または展開の期日が重大な影響を受けているか、運用または収益性に重大な影響が出ると予想されます。
 - 複数のユーザーまたはサービスが影響を受けています。
 
-重大度が中程度の場合、Professional サポートをご利用のお客様に対しては、初回の応答が&4; 時間以内に行われます。 Premier サポートをご契約のお客様の場合、応答はサポート契約の内容によって変わります。  次のような事例が該当します。
+重大度が中程度の場合、Professional サポートをご利用のお客様に対しては、初回の応答が&4; 時間以内に行われます。 Premier サポートをご契約のお客様の場合、応答はサポート契約の内容によって変わります。 次のようなケースでは、**重大度が中程度**だと言えます。
 
 - サービスは使用できますが、通常の機能とは異なります。
 - ビジネスに中程度の影響があり、営業時間中に処理できます。
 - 1 人のユーザー、顧客、またはサービスが部分的に影響を受けています。
 
-その他の問題の場合、Professional サポートをご利用のお客様に対する初回の応答は、8 時間以内に行われます。 Premier サポートをご契約のお客様の場合、応答はサポート契約の内容によって変わります。  次のような事例が該当します。
+その他の問題の場合、Professional サポートをご利用のお客様に対する初回の応答は、8 時間以内に行われます。 Premier サポートをご契約のお客様の場合、応答はサポート契約の内容によって変わります。 次のようなケースでは、重大度が最小限だと言えます。
 
 - ビジネスへの影響は最小限です。
 - 問題は重要ですが、顧客向けの現在のサービスや生産性に大きな影響はありません。
 - 1 人のユーザーに部分的な中断が発生していますが、許容できる回避策があります。
 
 > [!NOTE]
-> **Microsoft System Center Configuration Manager** または **Microsoft System Center Endpoint Protection** を使用している場合: Configuration Manager または Endpoint Protection のテクニカル サポートについては、パートナーに問い合わせるか、[Microsoft System Center Configuration Manager/System Center Endpoint Protection Solution Center](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx) にアクセスしてください。 オンラインまたは電話でサポート リクエストを開始することもできます。
+> **Microsoft System Center Configuration Manager** または **Microsoft System Center Endpoint Protection** を使用している場合: Configuration Manager または Endpoint Protection のテクニカル サポートについては、パートナーに問い合わせるか、[Microsoft System Center Configuration Manager](https://docs.microsoft.com/sccm/) および [Endpoint Protection](https://technet.microsoft.com/en-us/library/hh508836.aspx) に関するドキュメントにアクセスして、豊富なセルフヘルプ資料を参照してください。 オンラインまたは電話でサポート リクエストを開始することもできます。
 >
 > System Center Configuration Manager または System Center Endpoint Protection のテクニカル サポートは有料です。または既存のライセンスまたは Premire サポート契約の利用分としてカウントされます。
 
@@ -146,9 +148,4 @@ Microsoft による Intune の改善に役立つフィードバックはあり�
 サポート エンジニアから追加の問題についてサポート インシデントを作成するように求められた場合は、それがすべてのユーザーにとって役立つ情報であるということをご理解ください。 世界規模のサポートの提供について、ご理解とご協力をいただきありがとうございます。
 
 インシデントごとの料金および深刻度については、「[プロフェッショナル サポート オプション](https://support.microsoft.com/gp/offerprophone)」を参照してください。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
