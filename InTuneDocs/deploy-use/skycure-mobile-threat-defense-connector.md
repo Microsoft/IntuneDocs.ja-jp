@@ -26,7 +26,7 @@ ms.lasthandoff: 03/21/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Microsoft Intune に統合されたモバイル脅威保護ソリューションである Skycure によって実行されるリスク評価に基づき、条件付きアクセスを利用し、モバイル デバイスから会社のリソースへのアクセスを制御できます。 リスクは、Skycure を実行するデバイスから収集される次のような製品利用統計情報に基づいて評価されます。
+Microsoft Intune に統合されたモバイル脅威保護ソリューションである Skycure によって実行されるリスク評価に基づき、条件付きアクセスを利用し、モバイル デバイスから会社のリソースへのアクセスを制御できます。 リスクは、Skycure を実行するデバイスから収集される製品利用統計情報に基づいて以下のとおり評価されます。
 
 -   物理的防御
 
@@ -40,7 +40,7 @@ Intune デバイス コンプライアンス ポリシーで有効にした Skyc
 
 ## <a name="how-do-intune-and-skycure-help-protect-your-company-resources"></a>Intune と Skycure を利用し、会社のリソースをどのように保護しますか?
 
-Android または iOS 向け Skycure モバイル アプリは、利用できる場合、ファイル システム、ネットワーク スタック、デバイスとアプリケーションの製品利用統計情報を記録し、Skycure クラウド サービスに送信し、モバイル デバイスの脅威に対するリスクを評価します。
+Android または iOS 向け Skycure モバイル アプリは、ファイル システム、ネットワーク スタック、デバイスとアプリケーションの製品利用統計情報を可能な限り記録し、Skycure クラウド サービスに送信し、モバイル デバイスの脅威に対するリスクを評価します。
 
 Intune デバイス コンプライアンス ポリシーには、Skycure リスク評価に基づく、Skycure モバイル脅威防御のルールが含まれています。 このルールを有効にすると、Intune は、有効にされたポリシーに基づいてデバイスの準拠状態を評価します。
 
@@ -84,7 +84,7 @@ Intune では、Skycure との統合に 2 つのモードがあります。
 
 **修復時に付与されるアクセス権:**
 
-![修復時に付与されるアクセス権](../media/mtp/skycure-arch-4.png)
+![修復するとアクセス権が付与される](../media/mtp/skycure-arch-4.png)
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいて SharePoint Online へのアクセスを制御する
 
@@ -122,9 +122,9 @@ Intune と Skycure の統合は次の手順で行います。
 
 2.  [Skycure iOS アプリ構成ポリシーをダウンロードする](https://docs.microsoft.com/intune/deploy-use/download-skycure-ios-app-configuration-policy)
 
-3.  [Skycure アプリ、Microsoft Authenticator、iOS 構成ポリシーを追加する](https://docs.microsoft.com/intune/deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy)
+3.  [Skycure アプリ、Microsoft Authenticator、iOS アプリ構成ポリシーを追加する](https://docs.microsoft.com/intune/deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy)
 
-4.  [Skycure アプリ、Microsoft Authenticator、iOS 構成ポリシーを展開する](https://docs.microsoft.com/intune/deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy)
+4.  [Skycure アプリ、Microsoft Authenticator、iOS アプリ構成ポリシーを展開する](https://docs.microsoft.com/intune/deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy)
 
 5.  [Skycure と Intune の統合をセットアップする](https://docs.microsoft.com/intune/deploy-use/setup-the-skycure-integration-with-Intune)
 
