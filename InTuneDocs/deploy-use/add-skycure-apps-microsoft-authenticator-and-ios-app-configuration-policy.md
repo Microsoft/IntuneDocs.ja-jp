@@ -28,7 +28,7 @@ ms.lasthandoff: 03/21/2017
 
 脅威がモバイル デバイスで特定されたときにエンドユーザーが通知を受け取れるように、また、脅威を除去するための手引きが受けられるように、Intune を利用して Skycure アプリを追加して展開する必要があります。
 
-また、[Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) と iOS アプリ構成ポリシーが必要になります。Microsoft Authenticator を用意すると、ユーザーは自分の ID を Azure AD で確認できます。iOS アプリ構成ポリシーは、Intune と Azure AD のシングル サインオン (SSO) を使用するように Skycure iOS アプリに信号を送るため、ユーザーは Skycure アプリにログインするたびにユーザー名とパスワードを入力する必要がありません。
+また、[Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) と iOS アプリ構成ポリシーが必要になります。Microsoft Authenticator を使用すると、Azure AD によってユーザーの ID の確認が行われます。iOS アプリ構成ポリシーは、Intune と Azure AD のシングル サインオン (SSO) を使用するように Skycure iOS アプリに信号を送るため、ユーザーは Skycure アプリにログインするたびにユーザー名とパスワードを入力する必要がありません。
 
 ## <a name="before-you-begin"></a>始める前に
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 03/21/2017
 
 1.  Intune クラシック コンソールで、**[アプリ]** &gt; **[アプリの追加]** の順に選択して Intune ソフトウェア パブリッシャーを起動し、**[次へ]** をクリックします。
 
-2.  **[ソフトウェア セットアップ]** ページで **[App Store の管理対象 iOS アプリ]** を選択し、**[URL の指定]** に [iOS 向け Skycure アプリの URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) を貼り付けます。
+2.  **[ソフトウェア セットアップ]** ページで **[App Store の管理されている iOS アプリ]** を選択し、**[URL の指定]** に [iOS 向け Skycure アプリの URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) を貼り付けます。
 
     ![Intune ソフトウェア パブリッシャーの管理対象 iOS アプリ](../media/mtp/skycure-add-apps-3.png)
 
@@ -78,7 +78,7 @@ ms.lasthandoff: 03/21/2017
 
 1.  Intune クラシック コンソールで、**[アプリ]** &gt; **[アプリの追加]** の順に選択して Intune ソフトウェア パブリッシャーを起動し、**[次へ]** をクリックします。
 
-2.  **[ソフトウェア セットアップ]** ページで **[App Store の管理対象 iOS アプリ]** を選択し、**[URL の指定]** に [iOS 向け Microsoft Authenticator アプリの URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) を貼り付けます。
+2.  **[ソフトウェア セットアップ]** ページで **[App Store の管理されている iOS アプリ]** を選択し、**[URL の指定]** に [iOS 向け Microsoft Authenticator アプリの URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) を貼り付けます。
 
     ![Intune ソフトウェア パブリッシャーの管理対象 iOS アプリ 2](../media/mtp/skycure-add-apps-5.png)
 
@@ -98,9 +98,9 @@ ms.lasthandoff: 03/21/2017
 
     ![iOS アプリ構成ポリシー](../media/mtp/skycure-add-apps-7.png)
 
-3.  **[ポリシーの作成]** ページの **[全般]** セクションで、名前と iOS アプリ構成ポリシーのオプションの説明を指定します。
+3.  **[ポリシーの作成]** ページの **[全般]** セクションで、iOS アプリ構成ポリシーの名前と説明を指定します。説明は省略可能です。
 
-    a.  メモ帳のようなテキスト エディターで **skycure\_configuration.plist** ファイルを開き、その内容をコピーして**モバイル アプリ構成ポリシー**の本文に貼り付け、**[検証]** を選択し、**[ポリシーの保存]** を保存します。
+    a.  メモ帳のようなテキスト エディターで **skycure\_configuration.plist** ファイルを開き、その内容をコピーして**モバイル アプリ構成ポリシー**の本文に貼り付け、**[検証]**、**[ポリシーの保存]** の順に選択します。
 
        ![iOS アプリ構成ポリシー 2](../media/mtp/skycure-add-apps-8.png)
 
