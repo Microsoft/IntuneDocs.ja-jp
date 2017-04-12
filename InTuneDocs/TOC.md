@@ -24,7 +24,6 @@
 ### [ポータル サイトをカスタマイズする](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
 ### [デバイスの登録](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [構成後のタスク](get-started/post-configuration-tasks.md)
-## [Intune への移行](get-started/migrate-to-intune.md)
 ## 次のステップ
 ### [Office 365 モバイル アプリから会社のデータが漏えいすることを防止する](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 ### [データの暗号化により会社のデータを保護する](get-started/protect-data-encryption.md)
