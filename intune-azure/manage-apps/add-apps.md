@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 296e7db9be18323b44cc79592c981f5d7241602f
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: e4a6aaa1a8e23dc2c58345f73ff8db86018843e1
+ms.openlocfilehash: fe12a6b890c2d5cba874e820afbe7671b754deb5
+ms.lasthandoff: 04/11/2017
 
 ---
 
@@ -34,9 +34,7 @@ Intune で追加と割り当てがサポートされるアプリの種類を次�
 
 次のプラットフォームがサポートされます。 各種のアプリを追加する方法の詳細については、次のいずれかのトピックをクリックします。
 
-- [Android の基幹業務アプリ](/intune-azure/manage-apps/android-lob-app)
 - [Android ストア アプリ](/intune-azure/manage-apps/android-store-app)
-- [iOS の基幹業務アプリ](/intune-azure/manage-apps/ios-lob-app)
 - [iOS ストア アプリ](/intune-azure/manage-apps/ios-store-app)
 - [Web アプリ (すべてのプラットフォーム)](/intune-azure/manage-apps/web-app)
 - [Windows Phone 8.1 ストア アプリ](/intune-azure/manage-apps/windows-phone-8-1-store-app)
@@ -64,7 +62,7 @@ Intune の追加ストレージは、当初の購入方法を使用して購入�
 3. **[Intune]** ブレードで、**[アプリの管理]** を選択します。 
 4. **[モバイル アプリ]** ワークロードで、**[セットアップ]** > **[アプリのカテゴリ]** の順に選択します。 
 5. **[アプリのカテゴリ]** ブレードで、現在のカテゴリの一覧が表示されます。 次の操作のいずれかを選択します。 
-    - **[カテゴリの作成]** - **[Create category (カテゴリの作成)]** ブレードで、新しいカテゴリの名前を入力します。 名前を入力できる言語は&1; つのみです。Intune では翻訳されません。 完了したら [**作成**] をクリックします。
+    - **[カテゴリの作成]** - **[Create category (カテゴリの作成)]** ブレードで、新しいカテゴリの名前を入力します。 名前を入力できる言語は 1 つのみです。Intune では翻訳されません。 完了したら [**作成**] をクリックします。
     - **[カテゴリの編集]** - 一覧の任意のカテゴリについては、"**...**" を選択します。 **[プロパティ]** ブレードで、カテゴリの新しい名前を入力するか、カテゴリを削除できます。
 
 
