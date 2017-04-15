@@ -31,17 +31,16 @@
 ### [MDM 機関を設定する](enroll-devices/set-mdm-authority.md)
 ## 計画と設計
 ### [Apple MDM プッシュ証明書を取得する](enroll-devices/get-an-apple-mdm-push-certificate.md)
-### [Apple DEP トークンを取得する](enroll-devices/get-apple-dep-token.md)
 ### [iOS デバイスの登録方法を選択する](enroll-devices/choose-ios-enrollment-method.md)
 ## 方法
 ### [ユーザーにライセンスを割り当てる](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [Android デバイスを登録する](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### iOS デバイスを登録する
-#### [セットアップ アシスタントを使用して iOS デバイスを登録する](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
-#### [直接登録を使用して iOS デバイスを登録する](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
+#### [Apple Configurator - セットアップ アシスタント](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
+#### [Apple Configurator - 直接登録](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
 #### [Apple Configurator のシリアル番号を追加する](enroll-devices/add-apple-configurator-serial-numbers.md)
-#### [デバイス登録プログラムを使用して iOS デバイスを登録する](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
-### [デバイス登録マネージャーを使用してデバイスを登録する](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
+#### [DEP](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
+### [デバイス登録マネージャー](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [macOS デバイスの登録](enroll-devices/enroll-macos-devices.md)
 ### [Windows デバイスの登録](enroll-devices/enroll-windows-devices.md)
 ### デバイス登録を管理する
@@ -75,9 +74,7 @@
 ## [Plan and design](manage-apps/plan-and-design.md) --->
 ## アプリを管理する方法
 ### [アプリを追加する](manage-apps/add-apps.md)
-#### [Android の基幹業務アプリ](manage-apps/android-lob-app.md)
 #### [Android ストア アプリ](manage-apps/android-store-app.md)
-#### [iOS の基幹業務アプリ](manage-apps/ios-lob-app.md)
 #### [iOS ストア アプリ](manage-apps/ios-store-app.md)
 #### [Web アプリ](manage-apps/web-app.md)
 #### [Windows Phone 8.1 ストア アプリ](manage-apps/windows-phone-8-1-store-app.md)
