@@ -23,7 +23,7 @@ ms.lasthandoff: 02/07/2017
 ---
 # <a name="whats-new-archive"></a>新機能の公開履歴
 
-このページは、過去&6; か月間に「[Microsoft Intune の新機能](whats-new-in-microsoft-intune.md)」で発表された内容の一覧です。
+このページは、過去 6 か月間に「[Microsoft Intune の新機能](whats-new-in-microsoft-intune.md)」で発表された内容の一覧です。
 
 [!INCLUDE[wit_nextref](../includes/whats-new-last-six-months.md)]
 
