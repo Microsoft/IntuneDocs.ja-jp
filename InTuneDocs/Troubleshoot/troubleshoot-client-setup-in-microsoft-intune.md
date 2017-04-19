@@ -40,7 +40,7 @@ ms.lasthandoff: 02/22/2017
 
 2.  **[アラートの概要]** ページで次の情報を確認できます。
 
-    -   上位&3; 件のアラート。日付、カテゴリ、または重要度を基準に並べ替えることができます。
+    -   上位 3 件のアラート。日付、カテゴリ、または重要度を基準に並べ替えることができます。
 
     -   アクティブなアラートの合計数
 
@@ -123,7 +123,7 @@ MDM Windows デバイス以外のデバイスでは、policyplatform.log ファ�
 |**0x80043009**|クライアント コンピューターは、既にサービスに登録されています。|サービスを再登録する前に、クライアント コンピューターを削除する必要があります。 その方法については、「[Retire devices from Intune management](/intune/deploy-use/retire-devices-from-microsoft-intune-management)」 (Microsoft Intune の管理からデバイスを削除する) を参照してください。|
 |**0x8004300A**|(ステージ 21) コンピューター スコープではなく、ユーザー スコープにインストールするために GPO に登録パッケージを展開すると、エラーが発生します。 |GPSI を使用して、コンピューター スコープに正しく GPO のターゲットが指定されていることを確認してください。 これに関するフォーラムの投稿を参照する場合は、こちらの [TechNet フォーラム](https://social.technet.microsoft.com/Forums/en-US/bb9fa71c-c132-4954-abb0-70be8acbd925/failed-to-install-windows-intune?forum=microsoftintuneprod)をご覧ください。|
 |**0x8004300B**|クライアントで実行されている Windows のバージョンがサポートされていないため、クライアント ソフトウェア インストール パッケージを実行できません。|Intune が、クライアント コンピューターで実行されている Windows のバージョンをサポートしていません。 サポートされるオペレーティング システムの一覧は、「[Microsoft Intune に使用するネットワーク インフラストラクチャの要件](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)」を参照してください。|
-|**0xAB2**|Windows インストーラーが、カスタム動作に必要な VBScript ランタイムにアクセスできませんでした。|このエラーは、ダイナミック リンク ライブラリ (DLL) に基づくカスタム動作が原因で発生します。 DLL のトラブルシューティング時に、場合によっては「[Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](http://go.microsoft.com/fwlink/?LinkID=234255)」 (Microsoft サポート技術情報&19803;8: パッケージと展開の問題に役立つツール) に記載されているツールを使用する必要があります。|
+|**0xAB2**|Windows インストーラーが、カスタム動作に必要な VBScript ランタイムにアクセスできませんでした。|このエラーは、ダイナミック リンク ライブラリ (DLL) に基づくカスタム動作が原因で発生します。 DLL のトラブルシューティング時に、場合によっては「[Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](http://go.microsoft.com/fwlink/?LinkID=234255)」 (Microsoft サポート技術情報 198038: パッケージと展開の問題に役立つツール) に記載されているツールを使用する必要があります。|
 |**0x8004300f**|System Center Configuration Manager クライアントが既にインストールされているため、ソフトウェアをインストールすることはできません。|Configuration Manager クライアントを削除してから、クライアント ソフトウェアをもう一度インストールしてください。|
 |**0x80043010**|Open Mobile Alliance Device Management (OMADM) が既にインストールされているため、このソフトウェアはインストールできません。|OMADM クライアントの登録を解除してから、クライアント ソフトウェアをもう一度インストールしてください。|
 インストールの問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って、サポートにお問い合わせください。 このとき、クライアント コンピューターの登録ログ (%*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log と %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log)、および Windows Update ログ (%*windir*%\windowsupdate.log) を手元に用意してください。

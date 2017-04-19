@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: a43fc6fcd33f65725d325060a513d5380baae10f
 ms.openlocfilehash: b47469c8c5d35098e2e932e5ae9c9de4f5cdafb8
+ms.lasthandoff: 02/09/2017
 
 
 ---
@@ -43,15 +44,10 @@ Microsoft Intune エンドポイント保護の使用中に生じた問題を解
 |**スクリプトのスキャンは無効になっています**|管理者 (ポリシーを使用)、または管理対象コンピューターのユーザーが、スクリプトのスキャンを無効にしています。|スクリプトのスキャンが無効になっている場合は、[Intune 管理コンソール](https://manage.microsoft.com)、または管理対象コンピューターで有効にすることができます。 以下のいずれかを実行します。<br /><br />[Intune 管理コンソール](https://manage.microsoft.com)でスクリプトのスキャンを有効にするには、**[ポリシー]** ワークスペースを開き、コンピューターに適用されるポリシーの **[スクリプトのスキャンを有効にする]** 設定を **[はい]** に変更します。<br /><br />または、<br /><br />管理対象コンピューターでスクリプトのスキャンを有効にするには、通知領域から Endpoint Protection クライアント ソフトウェアを起動します。 **[設定]** タブの **[リアルタイム保護]** を選択し、**[スクリプトのスキャンを有効にする]** チェック ボックスをオンにして、**[変更の保存]** を選択します。|
 |**ネットワーク検査システムは無効になっています**|管理されたコンピューターのネットワーク検査システムが、管理者 (ポリシーを使用) またはユーザーによって無効にされています。|ネットワーク検査システムは、[Intune 管理コンソール](https://manage.microsoft.com)、または管理対象コンピューターで有効にすることができます。 以下のいずれかを実行します。<br /><br />[Intune 管理コンソール](https://manage.microsoft.com)でネットワーク検査システムを有効にするには、**[ポリシー]** ワークスペースを開き、コンピューターに適用されるポリシーの **[ネットワーク検査システムを有効にする]** 設定を **[はい]** に変更してから、管理対象コンピューターを再起動します。<br /><br />または、<br /><br />管理対象コンピューターでネットワーク検査システムを有効にするには、通知領域から Endpoint Protection クライアント ソフトウェアを起動します。 **[設定]** タブの **[リアルタイム保護]** を選択し、**[ネットワーク検査システムを有効にする]** チェック ボックスをオンにして、**[変更の保存]** を選択します。 コンピューターを再起動します。|
 |**マルウェア定義が最新ではない**|コンピューターが長期間インターネットから切断されていたため、そのマルウェア定義が更新されていない可能性があります。 このメッセージは、コンピューターのマルウェア定義の更新が 14 日以上遅れた場合に表示されます。|古くなったマルウェア定義は、[Intune 管理コンソール](https://manage.microsoft.com)、または管理対象コンピューターで更新することができます。<br /><br />詳細については、トピック「[Microsoft Intune の Endpoint Protection を使用して Windows PC を保護する](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)」をご覧ください。|
-|**フル スキャンの期限が過ぎています**|フル スキャンが 14 日間実行されていません。 フル スキャン中にコンピューターが再起動された可能性があります。|フル スキャンの期限が過ぎている場合は、「[Microsoft Intune コンピューター クライアントを使用した一般的な Windows PC 管理タスク](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client)」に従い、[Intune 管理コンソール](https://manage.microsoft.com)で&1; 回限りのフル スキャンを実行するか、定期的なフル スキャンのスケジュールを設定することができます。|
-|**クイック スキャンの期限が過ぎています**|クイック スキャンが 14 日間実行されていません。 クイック スキャン中にコンピューターが再起動された可能性があります。|クイック スキャンの期限が過ぎている場合は、「[Microsoft Intune コンピューター クライアントを使用した一般的な Windows PC 管理タスク](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client)」に従い、[Intune 管理コンソール](https://manage.microsoft.com)で&1; 回限りのクイック スキャンを実行するか、定期的なクイック スキャンのスケジュールを設定することができます。|
+|**フル スキャンの期限が過ぎています**|フル スキャンが 14 日間実行されていません。 フル スキャン中にコンピューターが再起動された可能性があります。|フル スキャンの期限が過ぎている場合は、「[Microsoft Intune コンピューター クライアントを使用した一般的な Windows PC 管理タスク](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client)」に従い、[Intune 管理コンソール](https://manage.microsoft.com)で 1 回限りのフル スキャンを実行するか、定期的なフル スキャンのスケジュールを設定することができます。|
+|**クイック スキャンの期限が過ぎています**|クイック スキャンが 14 日間実行されていません。 クイック スキャン中にコンピューターが再起動された可能性があります。|クイック スキャンの期限が過ぎている場合は、「[Microsoft Intune コンピューター クライアントを使用した一般的な Windows PC 管理タスク](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client)」に従い、[Intune 管理コンソール](https://manage.microsoft.com)で 1 回限りのクイック スキャンを実行するか、定期的なクイック スキャンのスケジュールを設定することができます。|
 |**別のエンドポイント保護アプリケーションが実行されています**|別のエンドポイント保護アプリケーションが実行されており、コンピューターの状態は正常です。|既定では、別のエンドポイント保護アプリケーションがインストールされていることが検出された場合、Endpoint Protection が自動的に無効になります。 別のエンドポイント保護アプリケーションが検出されなかった場合、Endpoint Protection は引き続き有効です。 詳細については、「[Microsoft Intune の Endpoint Protection を使用して Windows PC を保護する](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)」を参照してください。|
 
 ### <a name="next-steps"></a>次のステップ
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
