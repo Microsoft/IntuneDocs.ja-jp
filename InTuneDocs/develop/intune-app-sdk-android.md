@@ -63,7 +63,7 @@ Intune アプリ SDK では、Intune アプリ管理ポリシーを有効にす�
 
 たとえば、`AppSpecificActivity` がその親と対話する場合 (たとえば、`super.onCreate()` を呼び出して)、`MAMActivity` がスーパー クラスとなります。
 
-標準的な Android アプリはモードが&1; つで、[コンテキスト](https://developer.android.com/reference/android/content/Context.html) オブジェクトを使用してシステムにアクセスできます。 一方、Intune アプリ SDK が組み込まれたアプリはデュアル モードになります。 これらのアプリは引き続き `Context` オブジェクトを通じてシステムにアクセスします。 使用する基本 `Activity` に応じて、`Context` オブジェクトが Android によって提供されるか、システムの制限付きビューと Android から提供される `Context` の間でインテリジェントに多重化されます。
+標準的な Android アプリはモードが 1 つで、[コンテキスト](https://developer.android.com/reference/android/content/Context.html) オブジェクトを使用してシステムにアクセスできます。 一方、Intune アプリ SDK が組み込まれたアプリはデュアル モードになります。 これらのアプリは引き続き `Context` オブジェクトを通じてシステムにアクセスします。 使用する基本 `Activity` に応じて、`Context` オブジェクトが Android によって提供されるか、システムの制限付きビューと Android から提供される `Context` の間でインテリジェントに多重化されます。
 
 Android の[エントリ ポイント](https://developer.android.com/guide/components/fundamentals.html)が同等の MAM で上書きされている場合、エントリ ポイントのライフ サイクルの MAM バージョンを使用する必要があります (`MAMApplication` クラスを除く)。
 
@@ -72,7 +72,7 @@ Android の[エントリ ポイント](https://developer.android.com/guide/compo
 
 ###<a name="sdk-permissions"></a>SDK のアクセス許可
 
-Intune アプリ SDK では、統合するアプリに対する次の&3; つの [Android システムのアクセス許可](https://developer.android.com/guide/topics/security/permissions.html)が必要になります。
+Intune アプリ SDK では、統合するアプリに対する次の 3 つの [Android システムのアクセス許可](https://developer.android.com/guide/topics/security/permissions.html)が必要になります。
 
 * `android.permission.GET_ACCOUNTS`  (必要に応じて実行時に要求)
 
@@ -228,7 +228,7 @@ String toString();
 
 ### <a name="enable-it-control-over-app-saving-behavior"></a>IT 部門でアプリの保存動作を制御できるようにする
 
-多くのアプリでは、ユーザーがローカルまたはクラウド ストレージ サービスにファイルを保存できる機能を実装しています。 Intune アプリ SDK は、IT 管理者が組織に合ったポリシー制限を適用し、データの漏えいを防ぐのに役立ちます。  IT 部門で制御できるポリシーの&1; つに、ユーザーが "個人用" の管理対象外のデータ ストアに保存できるかどうかというものがあります。 これには、ローカルの場所、SD カード、またはサード パーティ バックアップ サービスへの保存が含まれます。
+多くのアプリでは、ユーザーがローカルまたはクラウド ストレージ サービスにファイルを保存できる機能を実装しています。 Intune アプリ SDK は、IT 管理者が組織に合ったポリシー制限を適用し、データの漏えいを防ぐのに役立ちます。  IT 部門で制御できるポリシーの 1 つに、ユーザーが "個人用" の管理対象外のデータ ストアに保存できるかどうかというものがあります。 これには、ローカルの場所、SD カード、またはサード パーティ バックアップ サービスへの保存が含まれます。
 
 この機能を有効にするには、アプリによる処理が必要です。 アプリから直接個人またはクラウドの場所に保存することをアプリで許可する場合は、IT 管理者がある場所への保存を許可するかどうかを制御できるように、この機能を実装する必要があります。   
 
@@ -378,7 +378,7 @@ Android Marshmallow でのバックアップが簡易化される、`MAMDefaultF
 
 SDK は認証と条件付き起動シナリオで ADAL を利用します。 これらのシナリオでは、アプリに Azure Active Directory (Azure AD) 構成がある程度必要になります。 構成値は、 `AndroidManifest` メタデータを使用して SDK に伝達されます。
 
-アプリをセットアップして適切な認証を有効にするには、`AndroidManifest` のアプリ ノードに次の内容を追加します。 これらの構成の一部は、通常、アプリで認証のために ADAL を使用する場合にのみ必要になります。 その場合、Azure AD でのアプリ自体の登録時に使用した特定の値が必要になります。 これにより、Azure AD で&2; つ (アプリと SDK から&1; つずつ) の個別の登録値が認識されるため、ユーザーに対して認証が&2; 回求められることがなくなります。
+アプリをセットアップして適切な認証を有効にするには、`AndroidManifest` のアプリ ノードに次の内容を追加します。 これらの構成の一部は、通常、アプリで認証のために ADAL を使用する場合にのみ必要になります。 その場合、Azure AD でのアプリ自体の登録時に使用した特定の値が必要になります。 これにより、Azure AD で 2 つ (アプリと SDK から 1 つずつ) の個別の登録値が認識されるため、ユーザーに対して認証が 2 回求められることがなくなります。
 
         <meta-data
             android:name="com.microsoft.intune.mam.aad.Authority"
@@ -433,7 +433,7 @@ GUID の前後に中かっこは必要ありません。
 
 既定では、Intune アプリ SDK はポリシーをアプリ全体に適用します。 複数 ID は、ID 別レベルでのポリシー適用を可能にする MAM の機能です。 これには、他の MAM 機能よりはるかに多くのアプリの参加が必要です。 アプリは、アクティブな ID を変更するときにアプリ SDK に通知する必要があります。 また、SDK は ID の変更が必要なときにもアプリに通知する必要があります。
 
-現時点では、サポートされる管理対象 ID は&1; つだけです。 ユーザーがデバイスまたはアプリを登録すると、SDK はこの ID を使用し、それをプライマリ管理対象 ID であると判断します。 アプリの他のユーザーは、無制限のポリシー設定を持つ管理対象外として扱われます。
+現時点では、サポートされる管理対象 ID は 1 つだけです。 ユーザーがデバイスまたはアプリを登録すると、SDK はこの ID を使用し、それをプライマリ管理対象 ID であると判断します。 アプリの他のユーザーは、無制限のポリシー設定を持つ管理対象外として扱われます。
 
 ID は文字列として簡単に定義されることに注意してください。 ID の大文字と小文字は区別されません。 SDK に ID を要求すると返される ID は、大文字と小文字の使い分けが ID 設定時の本来のものと異なる可能性があります。
 
@@ -489,7 +489,7 @@ public static AppPolicy getPolicyForIdentity(final String identity);
 public static boolean getIsIdentityManaged(final String identity);
 
 ```
-null に設定することで、アプリの ID をクリアすることもできます。 無制限の ID として空の文字列を使用することができます。 ID を設定するすべてのメソッドは、``` MAMIdentitySwitchResult``` を使用して結果の値を返します。 次の&4; つの値を返すことができます。
+null に設定することで、アプリの ID をクリアすることもできます。 無制限の ID として空の文字列を使用することができます。 ID を設定するすべてのメソッドは、``` MAMIdentitySwitchResult``` を使用して結果の値を返します。 次の 4 つの値を返すことができます。
 
 * **SUCCEEDED**: ID 変更が正常に行われました。
 
