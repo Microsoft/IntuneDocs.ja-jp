@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 64b59ccb29e05af0472d463f426a06509d242034
-ms.openlocfilehash: 7a13afcbfd6b37a209c2cb879a47370f9a00b937
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: 9759c1331a3fb5308e1dbc53564059618a8ef45c
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -38,7 +39,7 @@ Azure ポータルはアプリ保護ポリシーを作成するための新し�
 
 現在のところ、**Intune 管理者コンソール**と **Azure ポータル**の両方でアプリ保護ポリシーを構成できます。  次の点を考慮します。
 
-* **Azure Portal ** で作成するポリシーは、上記の**すべての MAM シナリオ**でサポートされます。 **Intune 管理者コンソール**は、**Intune で登録し、管理するデバイス**のポリシー作成にのみ対応しています。
+* **Azure Portal** で作成するポリシーは、上記の**すべての MAM シナリオ**でサポートされます。 **Intune 管理者コンソール**は、**Intune で登録し、管理するデバイス**のポリシー作成にのみ対応しています。
 
 * **新しい設定**は **Azure ポータル**にのみ追加できるため、一部のアプリ ポリシー設定は Intune 管理者コンソールに表示されない場合があります。
 
@@ -57,9 +58,10 @@ Intune 管理コンソールでアプリ ポリシーを作成する方法につ
 ##  <a name="supported-platforms"></a>サポートされているプラットフォーム
 - iOS 8.1 以降
 - Android 4 以降
+- Windows 10
 
 >[!NOTE]
->Windows デバイスでは、これらのアプリ保護ポリシーはサポートされていません。 ただし、Intune で Windows 10 デバイスを登録すると、同様の機能を提供する Windows 情報保護を使用できます。 詳細については、「[Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip)」 (Windows 情報保護 (WIP) を使用してエンタープライズ データを保護する) を参照してください。
+>バージョン 1703 より、アプリの保護ポリシーを、MAM に登録シナリオなしで Windows 10 デバイスに対して定義することができます。 詳細については、「[Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip)」 (Windows 情報保護 (WIP) を使用してエンタープライズ データを保護する) を参照してください。
 
 ##  <a name="supported-apps"></a>サポートされているアプリ
 * **Microsoft アプリ:** これらのアプリには Intune アプリ SDK が組み込まれているので、アプリ保護ポリシーを適用する前に必要な処理はありません。
@@ -106,9 +108,4 @@ Intune 管理コンソールでアプリ ポリシーを作成する方法につ
 
 ## <a name="next-steps"></a>次のステップ
 [Microsoft Intune でのアプリ保護ポリシーの作成とデプロイ](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -15,8 +15,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
+ms.sourcegitcommit: adf7e2d0f76e63f67b7cf3d26d26df0da0e50bd0
+ms.openlocfilehash: 933a47163ccc66a1bab636982ca422c4a704656d
+ms.lasthandoff: 03/31/2017
 
 
 
@@ -43,7 +44,7 @@ ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
     - **設定の説明。** "実行をブロックするアプリの一覧" のようなオプションの説明を入力します。
     -     **データ型。** ドロップダウン リストで **[文字列]** を選びます。
     -     **OMA-URI。** 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**」と入力します。
-    -     **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : , ****|** を使用できます。 (例: package1;package2;)
+    -     **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,****|** を使用できます。 (例: package1;package2;)
 
     他のすべてのアプリの実行中にユーザーが Google Play ストアからインストールできるアプリの一覧の場合:
 
@@ -51,7 +52,7 @@ ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
     - **設定の説明。** "ユーザーが Google Play からインストールできるアプリの一覧" といったオプションの説明を入力します。
     - **データ型。** ドロップダウン リストで **[文字列]** を選びます。
     - **OMA-URI。** 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**」と入力します。
-    - **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : , ****|** を使用できます。 (例: package1;package2;)
+    - **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,****|** を使用できます。 (例: package1;package2;)
 
 4. **[OK]** をクリックし、**[ポリシーの保存]** をクリックします。 
 
@@ -72,9 +73,4 @@ ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune の Android および Samsung KNOX ポリシー設定](android-policy-settings-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

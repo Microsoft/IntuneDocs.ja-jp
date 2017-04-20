@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: a2f8067bc169147a60db582d796631bea1ea5a8d
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -25,7 +26,7 @@ ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-このトピックでは、Intune 管理者がモバイル デバイスの登録を有効にする方法について説明します。 電話で Intune の使用する際のヘルプについては、[管理デバイスを使用した作業の完了](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions)に関するページを参照してください。 
+このトピックでは、Intune 管理者がモバイル デバイスの登録を有効にする方法について説明します。 電話で Intune の使用する際のヘルプについては、[管理デバイスを使用した作業の完了](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions)に関するページを参照してください。
 
 Intune でモバイル デバイス管理をセットアップするには、まず、*モバイル デバイス管理機関*を設定する必要があります。この機関は、アカウントに関連付けられているデバイスを管理できるサービスを特定します。 このガイダンスでは、System Center Configuration Manager ではなく、Intune サービスを使用することを想定します。 MDM 機関を設定したら、デバイス プラットフォームの管理を有効にし、デバイスをポータル サイト アプリに登録できます。
 
@@ -49,9 +50,9 @@ Intune では、会社の要件に応じて、さまざまな方法でデバイ�
 
 管理対象のデバイス プラットフォームに対してデバイス管理を有効にします。 要件はプラットフォームによって異なります。
 
--  [iOS と macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--  [Windows PC](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
--  [Windows 10 Mobile と Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+- [iOS と macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+- [Windows 10 および Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+- [Window PC](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) (Intune ソフトウェア クライアント)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
 
 登録が有効になったら、ユーザーは自分のデバイスにポータル サイト アプリをダウンロードして、デバイス登録プロセスを完了できます。
@@ -60,18 +61,12 @@ Intune では、会社の要件に応じて、さまざまな方法でデバイ�
 次のような、[会社所有のデバイス登録](https://docs.microsoft.com/intune/deploy-use/manage-corporate-owned-devices)シナリオを有効にすることもできます。
 - [Apple Device Enrollment Program](https://docs.microsoft.com/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
 - [Apple Configurator セットアップ アシスタントでの登録](https://docs.microsoft.com/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
-- [Apple Configurator セットアップ アシスタントでの登録](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+- [Apple Configurator の直接登録](https://docs.microsoft.com/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)
 - [デバイス登録マネージャー](https://docs.microsoft.com/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
 ### <a name="next-steps"></a>次のステップ
 これで終了です。 *Intune のクイック スタート ガイド*の最後の手順が完了しました。 これで初期構成が完了したので、追加の MDM 機能の有効化を検討できます。
 
 >[!div class="step-by-step"]
-
 >[&larr; **デバイスを登録する**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**構成後のタスク** &rarr;](.\post-configuration-tasks.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
