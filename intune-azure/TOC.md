@@ -43,6 +43,7 @@
 ### [デバイス登録マネージャー](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [macOS デバイスの登録](enroll-devices/enroll-macos-devices.md)
 ### [Windows デバイスの登録](enroll-devices/enroll-windows-devices.md)
+### [Windows デバイスの一括登録](enroll-devices/bulk-enroll-windows.md)
 ### デバイス登録を管理する
 #### [使用条件を作成する](enroll-devices/create-terms-and-conditions.md)
 #### [登録制限を設定する](enroll-devices/set-enrollment-restrictions.md)
@@ -57,6 +58,7 @@
 <!--- ## [Plan and design](manage-devices/plan-and-design.md) --->
 ## 方法
 ### [フル ワイプまたは選択的ワイプを使用する](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
+### [Android デバイスのリモート コントロール](manage-devices/control-android-devices-with-teamviewer.md)
 <!--- ## [Troubleshoot](manage-devices/troubleshooting.md) --->
 
 # ユーザーの管理
@@ -75,7 +77,9 @@
 ## アプリを管理する方法
 ### [アプリを追加する](manage-apps/add-apps.md)
 #### [Android ストア アプリ](manage-apps/android-store-app.md)
+#### [Android LOB アプリ](manage-apps/android-lob-app.md)
 #### [iOS ストア アプリ](manage-apps/ios-store-app.md)
+#### [iOS LOB アプリ](manage-apps/ios-lob-app.md)
 #### [Web アプリ](manage-apps/web-app.md)
 #### [Windows Phone 8.1 ストア アプリ](manage-apps/windows-phone-8-1-store-app.md)
 #### [Windows ストア アプリ](manage-apps/windows-store-app.md)
@@ -109,8 +113,12 @@
 ### [デバイス プロファイルを構成する](configure-devices/how-to-create-device-profiles.md)
 
 ### [デバイス機能を構成する](configure-devices/how-to-configure-device-features.md)
-#### [iOS](configure-devices/device-features-for-ios.md)
-#### [macOS](configure-devices/device-features-for-macos.md)
+#### [iOS および MacOS 用 AirPrint](configure-devices/air-print-settings-for-ios-and-macos.md)
+#### [iOS 用 AirPlay](configure-devices/airplay-settings-for-ios-devices.md)
+#### [iOS 用ホーム画面のレイアウト](configure-devices/home-screen-settings-for-ios.md)
+#### [iOS 用アプリの通知](configure-devices/app-notification-settings-for-ios.md)
+#### [iOS 用共有デバイス](configure-devices/shared-device-settings-for-ios.md)
+#### [iOS 用 Web コンテンツ フィルター](configure-devices/web-content-filter-settings-for-ios.md)
 
 ### [デバイス制限を構成する](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
@@ -120,6 +128,7 @@
 #### [Windows Phone 8.1](configure-devices/device-restrictions-for-windows-phone-8-1.md)
 #### [Windows 10](configure-devices/device-restrictions-for-windows-10.md)
 #### [Windows 10 Team](configure-devices/device-restrictions-for-windows-10-team.md)
+#### [Android for Work](configure-devices/device-restrictions-for-afw.md)
 
 ### [電子メールの設定を構成する](configure-devices/how-to-configure-email-settings.md)
 #### [Android](configure-devices/email-profile-settings-for-android.md)
@@ -142,6 +151,7 @@
 #### [Windows 8.1 および Windows 10](configure-devices/wi-fi-import-for-windows-8-1.md)
 
 ### [Windows 10 エディションのアップグレード設定を構成する](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
+### [Windows 10 の教育設定を構成する](configure-devices/how-to-configure-education-settings.md)
 ### [ビジネス設定向けの Windows Update の構成](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [証明書を構成する](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
@@ -159,6 +169,7 @@
 #### [macOS](configure-devices/custom-for-macos.md)
 #### [Windows Phone 8.1](configure-devices/custom-for-windows-phone-8-1.md)
 #### [Windows 10](configure-devices/custom-for-windows-10.md)
+#### [Android for Work](configure-devices/custom-android-for-work.md)
 
 ### [デバイス プロファイルを割り当てる](configure-devices/how-to-assign-device-profiles.md)
 ### [デバイス プロファイルを監視する](configure-devices/how-to-monitor-device-profiles.md)
