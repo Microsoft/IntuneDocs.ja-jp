@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
-ms.openlocfilehash: fc97e1266c2e859104b21f3bf4ff24f33123f66a
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: e3c3f834a80eaf5e8b992ba41b19a1d53b89fdc3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -137,8 +137,8 @@ MDM 機関を設定したら、組織がサポートするオペレーティン�
 - [iOS および Mac >](set-up-ios-and-mac-management-with-microsoft-intune.md)
 - [Android](set-up-android-management-with-microsoft-intune.md)
 - [Android for Work](set-up-android-for-work.md)
-- [Windows PC とノート PC](set-up-windows-device-management-with-microsoft-intune.md)
-- [Windows 10 Mobile と Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+- [Windows 10 Mobile と Windows Phone](set-up-windows-device-management-with-microsoft-intune.md)
+- [Windows PC とノート PC](manage-windows-pcs-with-microsoft-intune.md) (Intune クライアント ソフトウェア)
 
 [企業所有デバイスの登録](manage-corporate-owned-devices.md)を有効にすることもできます。
 
@@ -170,7 +170,7 @@ Microsoft サポートが確認をお願いする情報は次のとおりです�
 MDM 機関をリセットするために Microsoft サポートにお問い合わせいただく前に、次の手順を完了してください。
 
 - Intune 管理コンソールですべてのデバイスをインベントリから削除します。 デバイス自体から削除しないでください。 
-- Service To Service Connector (**[管理]** > **[モバイル デバイス管理]** > **[Microsoft Exchange]** の順に移動) を削除するか、Exchange Connector を無効にします (設定している場合)。 
+- Service To Service Connector (**[管理]** > **[モバイル デバイス管理]** > **[Microsoft Exchange]** の順に移動) を削除するか、Exchange Connector を無効にします (設定している場合)。
 - **[管理者]** > **[デバイス登録マネージャー]** で、デバイス登録マネージャーのロールを削除します。
 - **[管理者]** > **[モバイル デバイス管理]** > **[デバイス グループ マッピング]** で、デバイス グループ マッピングを無効にします。
 - **[管理者]** > **[モバイル デバイス管理]** > **[Windows]** > **[サイドローディング キー]** で、サイドローディング キーを削除します。
@@ -187,7 +187,7 @@ MDM 機関をリセットするために Microsoft サポートにお問い合�
 - Intune ユーザー グループからすべてのユーザーを削除します。 Intune サブスクリプションを空のユーザー コレクションに指定するか、対象のコレクションからすべてのユーザーを削除します。  CloudUserSync.log でユーザーが削除されていることを確認します。 
 - iOS プラットフォームをオフにして、APNs 証明書を削除します。
 - MDM デバイスの公開済みアプリケーションをすべて削除します。
-- MDM デバイスのポリシーをすべて削除します。 
+- MDM デバイスのポリシーをすべて削除します。
 - Configuration Manager コンソールで Windows Intune コネクタを削除します (R2 SP1 以下にのみ適用可能)。
 -Intune サブスクリプションを右クリックし、**[削除]** を選択して削除します。
 - SMS Executive サービスを再起動します。
@@ -196,18 +196,18 @@ MDM 機関をリセットするために Microsoft サポートにお問い合�
 ### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Office 365 から Configuration Manager への MDM 機関のリセット
 
 1. [https://protection.office.com](https://protection.office.com) に移動します。
-2. **[セキュリティ ポリシー]** タブを選択し、**[デバイス管理]** を選択します。 
+2. **[セキュリティ ポリシー]** タブを選択し、**[デバイス管理]** を選択します。
 3. **[選択的ワイプ]** を選択して、すべてのデバイスをインベントリから削除します。 デバイス自体から削除しないでください。 選択的ワイプが無効になっている場合は、これ以上の操作は必要ありません。
-4. **[セキュリティ ポリシー]** タブを選択し、**[デバイス セキュリティ ポリシー]** を選択します。 
+4. **[セキュリティ ポリシー]** タブを選択し、**[デバイス セキュリティ ポリシー]** を選択します。
 5. 既存のすべてのポリシーに対して **[削除]** を選択します。 ポリシーが保留状態の場合は、これ以上の操作は必要ありません。
 
 >[!NOTE]
->iOS APsN 証明書は削除できません。これは、アカウントにアタッチされたままです。 
+>iOS APsN 証明書は削除できません。これは、アカウントにアタッチされたままです。
 
 ### <a name="next-steps-for-mdm-authority-resets"></a>MDM 機関のリセットの次のステップ
 
-Microsoft サポートで適切なチェックリストの項目が確認されてから、MDM 機関がリセットされるまでに最大で 3 営業日かかる場合がありますが、通常は 1 日以内にリセットされます。 
+Microsoft サポートで適切なチェックリストの項目が確認されてから、MDM 機関がリセットされるまでに最大で 3 営業日かかる場合がありますが、通常は 1 日以内にリセットされます。
 
 >[!IMPORTANT]
->Microsoft サポートでリセットが正常に行われたことが確認されるまで、サブスクリプションを構成しないでください。 構成が不完全な場合、破損の原因になったり、Intune サービスの使用に影響が生じたりする場合があります。 
+>Microsoft サポートでリセットが正常に行われたことが確認されるまで、サブスクリプションを構成しないでください。 構成が不完全な場合、破損の原因になったり、Intune サービスの使用に影響が生じたりする場合があります。
 
