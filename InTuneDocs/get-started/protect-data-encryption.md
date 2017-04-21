@@ -15,8 +15,9 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 11ed6b14bc940940e6fa22f6760420e690ac364f
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: c47106ddfebcd1df8c1bc5090bf3f047015b6c45
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -40,7 +41,7 @@ Microsoft Intune は、iOS または Android モバイル デバイスを完全�
 > [!NOTE]
 > Windows は、まだ Office モバイル アプリに対してサポートされているプラットフォームではありません。 登録不要のモバイル アプリケーション管理は、まだオンプレミスの Exchange または SharePoint と互換性がありません。 保護できるのはオンライン バージョンでホストされているデータだけです。
 
-このガイドでは、デバイス管理ソリューションへの完全な登録を必要とせずに、機密データにアクセスするために従業員が使用しているモバイル アプリでポリシーを使用してパスコードとデータ暗号化を強制することにより、データ損失から会社を保護する方法を説明します。 Microsoft Intune では、[iOS](https://products.office.com/en-us/mobile/office-mobile-apps-for-ios) および [Android](https://products.office.com/en-us/mobile/office-mobile-apps-for-android) 用の Office モバイル アプリにモバイル アプリケーション管理 (MAM) ポリシーを設定できます。 これにより、モバイル デバイス管理ソリューションへのデバイスの登録をユーザーに要求しなくても O365 のデータを保護することができ、Office モバイル アプリの優れたエンド ユーザー エクスペリエンスを維持できます。
+このガイドでは、デバイス管理ソリューションへの完全な登録を必要とせずに、機密データにアクセスするために従業員が使用しているモバイル アプリでポリシーを使用してパスコードとデータ暗号化を強制することにより、データ損失から会社を保護する方法を説明します。 Microsoft Intune では、[iOS](https://products.office.com/mobile/office-mobile-apps-for-ios) および [Android](https://products.office.com/mobile/office-mobile-apps-for-android) 用の Office モバイル アプリにモバイル アプリケーション管理 (MAM) ポリシーを設定できます。 これにより、モバイル デバイス管理ソリューションへのデバイスの登録をユーザーに要求しなくても O365 のデータを保護することができ、Office モバイル アプリの優れたエンド ユーザー エクスペリエンスを維持できます。
 
 ## <a name="how-do-i-do-it"></a>実行方法
 1.    [アプリ データを保護する方法を確認する](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
@@ -50,10 +51,5 @@ Microsoft Intune は、iOS または Android モバイル デバイスを完全�
 ## <a name="additional-information"></a>追加情報:
 - [Microsoft Intune での MAM 対応アプリのエンド ユーザー エクスペリエンスについて確認します。](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
 - [Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決めます。](/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
-- [Microsoft Intune アプリケーション パートナー一覧を確認します。](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
+- [Microsoft Intune アプリケーション パートナー一覧を確認します。](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)
 

@@ -14,18 +14,18 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bed28fc91271c12377f45662aa00fc9616d16fe8
-ms.openlocfilehash: 3d3f35f38a4d6f09f8fdc3e1bbc1c6ca5af6bbe7
-ms.lasthandoff: 04/11/2017
+ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
+ms.openlocfilehash: a0ae4d74ad99adcfab596eb0c441c845fbca3a9e
+ms.lasthandoff: 04/20/2017
 
 
 ---
 
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Microsoft Intune に関してエンド ユーザーを教育する方法
 
-Microsoft Intune は、会社のデータを保護した状態で、従業員がモバイル デバイスを使用できるようにします。 [無料試用版](/Intune/Understand/mobile-device-management-trial-guide-microsoft-intune.md)で Intune を評価する、[電子メールを保護する](https://docs.microsoft.com/intune/understand-explore/common-ways-to-use-intune#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)、および [Intune SDK にアプリを埋め込む](/intune/develop/intune-app-sdk.md)など、確実に展開するための多くの手順があります。
+Microsoft Intune は、会社のデータを保護した状態で、従業員がモバイル デバイスを使用できるようにします。 [無料試用版](/Intune/Understand/mobile-device-management-trial-guide-microsoft-intune)で Intune を評価する、[電子メールを保護する](https://docs.microsoft.com/intune/understand-explore/common-ways-to-use-intune#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)、および [Intune SDK にアプリを埋め込む](/intune/develop/intune-app-sdk)など、確実に展開するための多くの手順があります。
 
-こうしたテクノロジでは、デバイスを管理する理由の重要性について、ユーザーの理解を確保することはできません。 実際にエンド ユーザーの多くは、特に Intune を [BYOD ソリューション](/enterprise-mobility-security/solutions/byod-design-considerations-guide.md)として展開する場合に、プライバシーが侵害されるように感じることがあります。
+こうしたテクノロジでは、デバイスを管理する理由の重要性について、ユーザーの理解を確保することはできません。 実際にエンド ユーザーの多くは、特に Intune を [BYOD ソリューション](/enterprise-mobility-security/solutions/byod-design-considerations-guide)として展開する場合に、プライバシーが侵害されるように感じることがあります。
 
 > [!Important]
 > 会社がデバイスを管理する必要がある理由に関するエンド ユーザーの懸念を理解し、積極的に対処することは、確実にロールアウトするために不可欠となります。
@@ -59,7 +59,7 @@ __エンド ユーザーに不便な点__ アプリのインストール、デ�
   * [Android ユーザーがアプリを入手する方法](how-your-android-users-get-their-apps.md)
 
 * **iOS**
-  * [iOS デバイスを Intune で使用する](https://docs.microsoft.com/Intune/EndUser/using-your-ios-device-with-intune)
+  * [iOS デバイスを Intune で使用する](https://docs.microsoft.com/intune-user-help/using-your-ios-or-macos-device-with-intune)
   * [iOS ユーザーがアプリを入手する方法](how-your-ios-users-get-their-apps.md)
 
 * **Windows**

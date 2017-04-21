@@ -14,8 +14,9 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 361348939341b580a9abc576938522d166125183
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 31788f18d983ab6b0fc57a93566bd43e6606f10f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -36,7 +37,7 @@ Intune 管理コンソールでは、組織内の管理されているデバイ�
 ## <a name="intune-capabilities"></a>Intune の機能
 Intune は、この短いセットアップの手順では説明しきれないさまざまな機能を備えています。 そのような機能の例をいくつか次に示します。
 
--   **Exchange および Office 365 へのアクセスを制御します。** 詳細については、[アプリによる Exchange Online へのアクセスの管理に関するページ](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)と[アプリによる Office 365 サービスへのアクセスに関するページ](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)を参照してください。
+-   **Exchange および Office 365 へのアクセスを制御します。** 詳細については、[アプリによる Exchange Online へのアクセスの管理に関するページ](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)と[アプリによる Office 365 サービスへのアクセスに関するページ](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)を参照してください。
 
 -   **企業所有の iOS デバイスの管理。** 詳しくは、「[Microsoft Intune での企業所有の iOS デバイスの登録](/Intune/Deploy-Use/enroll-corporate-owned-ios-devices-in-microsoft-intune)」をご覧ください。
 
@@ -56,9 +57,4 @@ Intune に最近導入された機能の詳細については、「[Microsoft In
 [Intune の一般的な使用方法](common-ways-to-use-intune.md)を読む
 
 [有料サブスクリプション](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)に切り替える
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

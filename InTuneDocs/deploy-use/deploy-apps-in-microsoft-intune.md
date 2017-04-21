@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 32653a46d8758eac5b884f4f6f7a2e07447c1e36
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 7451b1872a848ac322db4ec485564f2ebf983f0d
+ms.lasthandoff: 04/14/2017
 
 ---
 # <a name="deploy-apps-in-microsoft-intune"></a>Deploy apps in Microsoft Intune (Microsoft Intune でアプリを展開する)
@@ -48,7 +49,7 @@ ms.openlocfilehash: 32653a46d8758eac5b884f4f6f7a2e07447c1e36
 
 5. 展開するアプリがモバイル アプリケーション管理ポリシーで構成できる場合、**[モバイル アプリの管理]** ページが表示されます。 このページで、このアプリに関連付けるモバイル アプリケーションの管理ポリシーを選択します。
 
-    [モバイル アプリケーション管理ポリシーに対応する Microsoft アプリを確認してください。](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)
+    [モバイル アプリケーション管理ポリシーに対応する Microsoft アプリを確認してください。](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)
 
 6. 展開するアプリに Intune VPN プロファイルとの互換性がある場合、**[VPN プロファイル]** ページが表示されます。 このページで、展開した VPN プロファイルに iOS アプリを関連付けることができます。 アプリを起動すると、VPN 接続が自動的に開きます。 VPN プロファイルを使用できるようにするには、**アプリごとの VPN** プロファイル設定を有効にする必要があります。
  プロファイルをアプリと関連付ける方法に関する情報など、VPN プロファイルを構成する方法については、「[Microsoft Intune での VPN 接続](vpn-connections-in-microsoft-intune.md)」をご覧ください。
@@ -72,9 +73,4 @@ ms.openlocfilehash: 32653a46d8758eac5b884f4f6f7a2e07447c1e36
 ## <a name="next-steps"></a>次のステップ
 
 アプリケーションを展開した後、その進行状況を監視できます。 詳細については、「[Monitor apps in Microsoft Intune](monitor-apps-in-microsoft-intune.md)」 (Microsoft Intune でアプリを監視する) を参照してください。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

@@ -15,9 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: c294a0abaf69017b6c098a95870fc035f28d0787
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 23037cdb5a474b2c62c231ac1966989902a983e1
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -34,7 +34,7 @@ Microsoft Intune でアプリの展開を開始する前に、このトピック
 
 |アプリの種類|説明|
 |----------------|-------|
-|**Windows インストーラー (&#42;.exe、&#42;.msi)**|この種類のアプリは、ユーザー入力なしのサイレント インストールをサポートする必要があります。 アプリのマニュアルに、サイレント インストールの実行に関連するコマンドライン オプションが記載されている必要があります (たとえば、**/q**)。 一般的なコマンドライン オプションの一覧は、「[Microsoft Windows インストーラ ツールのコマンド ライン スイッチ](https://support.microsoft.com/en-us/kb/227091)」で見つかります。<br><br>アプリのセットアップ プログラムに必要なその他のファイルとフォルダーは、アプリのセットアップ ファイルに指定した場所から使用できるようにする必要があります。<br><br>多くの場合、Windows インストーラー (.msi) と Windows インストーラー パッチ (.msp) ファイルではコマンドライン引数をインストールするために Intune は必要ありません。 詳細については、アプリのマニュアルを確認してください。<br><br>コマンドライン引数が必要な場合は、"名前=値" の対 (例: TRANSFORMS=custom_transform.mst) の形式で入力します。<br><br>このアプリの種類は、Intune ソフトウェア クライアントを実行しているコンピューターのみに適用されます。|
+|**Windows インストーラー (&#42;.exe、&#42;.msi)**|この種類のアプリは、ユーザー入力なしのサイレント インストールをサポートする必要があります。 アプリのマニュアルに、サイレント インストールの実行に関連するコマンドライン オプションが記載されている必要があります (たとえば、**/q**)。 一般的なコマンドライン オプションの一覧は、「[Microsoft Windows インストーラ ツールのコマンド ライン スイッチ](https://support.microsoft.com/kb/227091)」で見つかります。<br><br>アプリのセットアップ プログラムに必要なその他のファイルとフォルダーは、アプリのセットアップ ファイルに指定した場所から使用できるようにする必要があります。<br><br>多くの場合、Windows インストーラー (.msi) と Windows インストーラー パッチ (.msp) ファイルではコマンドライン引数をインストールするために Intune は必要ありません。 詳細については、アプリのマニュアルを確認してください。<br><br>コマンドライン引数が必要な場合は、"名前=値" の対 (例: TRANSFORMS=custom_transform.mst) の形式で入力します。<br><br>このアプリの種類は、Intune ソフトウェア クライアントを実行しているコンピューターのみに適用されます。|
 |**Android 用アプリ パッケージ (&#42;.apk)**|Android アプリを展開するには、有効な .apk パッケージが必要です。|
 |**iOS 用アプリ パッケージ (&#42;.ipa)**|iOS アプリを展開するには、有効な .ipa パッケージ ファイルが必要です。<br><br>.ipa パッケージは Apple によって署名され、プロビジョニング プロファイルの有効期限の期限内である必要があります。 Intune では、エンタープライズ証明書付き iOS アプリケーションを配布できます。<br><br>Apple のデベロッパー証明書付きアプリがすべてサポートされているわけではありません。<br><br>お客様の企業で、iOS Developer Enterprise Program に登録する必要があります。<br><br>組織のファイアウォールで、iOS の準備および認証用 Web サイトへのアクセスが許可されていることを確認してください。<br><br>アプリのマニフェスト ファイル (.plist) を展開する必要はありません。|
 |**Windows Phone アプリケーション パッケージ (&#42;.xap、.appx、.appxbundle)**|アプリを展開するには、エンタープライズ モバイル コード署名証明書が必要です。 詳細については、「[Microsoft Intune を使用して Windows Phone の管理をセットアップする](set-up-windows-device-management-with-microsoft-intune.md)」を参照してください。|
@@ -49,7 +49,7 @@ Microsoft Intune でアプリの展開を開始する前に、このトピック
 
 外部リンク ベースのアプリは、Intune のクラウド記憶域には格納されません。
 ### <a name="managed-ios-app-from-the-app-store"></a>**App Store の管理対象 iOS アプリ**
-管理対象 iOS アプリを使用して App Store から無料で利用できる iOS アプリを管理および展開できます。 また、管理対象 iOS アプリを使用して[モバイル アプリケーションの管理ポリシー](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)を[互換性のあるアプリ](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)に関連付け、その状態を管理コンソールで確認することもできます。<br /><br />管理対象の iOS アプリは、Intune のクラウド記憶域には格納されません。
+管理対象 iOS アプリを使用して App Store から無料で利用できる iOS アプリを管理および展開できます。 また、管理対象 iOS アプリを使用して[モバイル アプリケーションの管理ポリシー](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)を[互換性のあるアプリ](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)に関連付け、その状態を管理コンソールで確認することもできます。<br /><br />管理対象の iOS アプリは、Intune のクラウド記憶域には格納されません。
 
 > [!TIP]
 > [MDM 機関の設定](prerequisites-for-enrollment.md)を Intune にすると、モバイル デバイス用のオプションを使用できるようになります。

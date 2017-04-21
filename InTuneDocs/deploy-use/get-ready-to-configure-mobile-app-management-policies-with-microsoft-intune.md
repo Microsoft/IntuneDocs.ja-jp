@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: 9759c1331a3fb5308e1dbc53564059618a8ef45c
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 53b86bf579af6af29fd36ce58f9cdf1e92b98abc
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -61,11 +61,11 @@ Intune 管理コンソールでアプリ ポリシーを作成する方法につ
 - Windows 10
 
 >[!NOTE]
->バージョン 1703 より、アプリの保護ポリシーを、MAM に登録シナリオなしで Windows 10 デバイスに対して定義することができます。 詳細については、「[Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip)」 (Windows 情報保護 (WIP) を使用してエンタープライズ データを保護する) を参照してください。
+>バージョン 1703 より、アプリの保護ポリシーを、MAM に登録シナリオなしで Windows 10 デバイスに対して定義することができます。 詳細については、「[Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)」 (Windows 情報保護 (WIP) を使用してエンタープライズ データを保護する) を参照してください。
 
 ##  <a name="supported-apps"></a>サポートされているアプリ
 * **Microsoft アプリ:** これらのアプリには Intune アプリ SDK が組み込まれているので、アプリ保護ポリシーを適用する前に必要な処理はありません。
-サポートされている Microsoft アプリの完全な一覧については、Microsoft Intune アプリケーション パートナー ページの [Microsoft Intune モバイル アプリケーション ギャラリー](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)を参照してください。 アプリをクリックし、サポートされるシナリオ、プラットフォーム、アプリのマルチ ID 対応について確認してください。
+サポートされている Microsoft アプリの完全な一覧については、Microsoft Intune アプリケーション パートナー ページの [Microsoft Intune モバイル アプリケーション ギャラリー](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)を参照してください。 アプリをクリックし、サポートされるシナリオ、プラットフォーム、アプリのマルチ ID 対応について確認してください。
 
 * **社内で構築した基幹業務アプリ:** アプリ保護ポリシーを適用する前に、Intune アプリ SDK を含めるようにアプリを準備する必要があります。
 
@@ -76,7 +76,7 @@ Intune 管理コンソールでアプリ ポリシーを作成する方法につ
 ## <a name="prerequisites"></a>必要条件
 
 -   **Microsoft Intune サブスクリプション**。 アプリ保護ポリシーが適用されているアプリを入手するには、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ライセンスが必要です。
-デバイスを管理するために現在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] を使用している場合、既に [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] サブスクリプションを所有していることになります。 Enterprise Mobility Suite (EMS) ライセンスを購入している場合も、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] サブスクリプションを所有しています。 MAM 機能を調べるために [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] を試してみる場合は、試用アカウントを [Microsoft Intune Web ページ](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/)から取得できます。
+デバイスを管理するために現在 [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] を使用している場合、既に [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] サブスクリプションを所有していることになります。 Enterprise Mobility Suite (EMS) ライセンスを購入している場合も、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] サブスクリプションを所有しています。 MAM 機能を調べるために [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] を試してみる場合は、試用アカウントを [Microsoft Intune Web ページ](https://www.microsoft.com/server-cloud/products/microsoft-intune/)から取得できます。
 
     自分が [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] サブスクリプションを所有しているかどうかを確認するには、Office ポータルの**課金情報**のページをご覧ください。  サブスクリプションを所有している場合は、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] が **Active** になっているはずです。
 
@@ -98,13 +98,13 @@ Intune 管理コンソールでアプリ ポリシーを作成する方法につ
 
 1.  管理者資格情報で [Office ポータル](http://portal.office.com)にサインインします。
 
-2.  [Intune の評価ガイド](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)の、**Intune の 30 日間評価版の完了手順**のセクションにある説明に従ってユーザーを追加して、Intune ライセンスを割り当てます。 ユーザーが Office ポータル、Azure AD ポータル、Azure ポータルにアクセスできるようにするには、**全体管理者ロール**をユーザーに割り当てます。
+2.  [Intune の評価ガイド](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)の、**Intune の 30 日間評価版の完了手順**のセクションにある説明に従ってユーザーを追加して、Intune ライセンスを割り当てます。 ユーザーが Office ポータル、Azure AD ポータル、Azure ポータルにアクセスできるようにするには、**全体管理者ロール**をユーザーに割り当てます。
 
-5.  アプリ保護ポリシーは、Azure Active Directory のユーザー グループにデプロイされます。 アプリ保護ポリシーのユーザー グループを作成するには、「[評価版のサブスクリプションのユーザーとデバイスを編成するグループを作成する](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3)」の「**ユーザー グループを作成する**」セクションの説明にあるようにユーザー グループを作成します。
+5.  アプリ保護ポリシーは、Azure Active Directory のユーザー グループにデプロイされます。 アプリ保護ポリシーのユーザー グループを作成するには、「[評価版のサブスクリプションのユーザーとデバイスを編成するグループを作成する](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3)」の「**ユーザー グループを作成する**」セクションの説明にあるようにユーザー グループを作成します。
 
 ### <a name="assign-roles-to-non-global-admin-users"></a>グローバル管理者でないユーザーにロールを割り当てる
 
-全体管理者には [Azure ポータル](https://portal.azure.com)へのアクセス権があります。  グローバル管理者ではないユーザーもポリシーを構成して他のモバイル アプリ管理タスクを実行できるようにする場合は、「[Azure サブスクリプション リソースへのアクセスをロールの割り当てによって管理する](https://azure.microsoft.com/en-us/documentation/articles/role-based-access-control-configure/)」の記事をご確認ください。
+全体管理者には [Azure ポータル](https://portal.azure.com)へのアクセス権があります。  グローバル管理者ではないユーザーもポリシーを構成して他のモバイル アプリ管理タスクを実行できるようにする場合は、「[Azure サブスクリプション リソースへのアクセスをロールの割り当てによって管理する](https://azure.microsoft.com/documentation/articles/role-based-access-control-configure/)」の記事をご確認ください。
 
 ## <a name="next-steps"></a>次のステップ
 [Microsoft Intune でのアプリ保護ポリシーの作成とデプロイ](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

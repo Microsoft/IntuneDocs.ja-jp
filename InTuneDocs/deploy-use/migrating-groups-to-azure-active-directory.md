@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: d3b4b823683196148d4fb8aa296b59c9c712e99f
-ms.lasthandoff: 03/11/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 2296490a8c3984e79eeeb553d90591048ed46711
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -43,7 +43,7 @@ Azure AD セキュリティ グループは、ユーザーとデバイスの両�
 Intune グループの既存機能の一部は、Azure AD では利用できません。
 
 - Intune の**グループに属していないユーザー** グループと**グループに属していないデバイス** グループは、移行されません。
-- 現在 Intune コンソールに存在する、グループから**特定のメンバーを除外**するオプションは、Azure ポータルにはありません。 ただし、Azure AD セキュリティ グループと高度なルールを使って、この動作を複製できます。 たとえば、次の高度なルールを使うことで、肩書に "Assistant" が付いているユーザーを除く、営業部内のすべてのユーザーをセキュリティ グループに含めることが可能です。`(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`。
+- 現在 Intune コンソールに存在する、グループから**特定のメンバーを除外**するオプションは、Azure ポータルにはありません。 ただし、Azure AD セキュリティ グループと高度なルールを使って、この動作を複製できます。 たとえば、次の高度なルールを使うことで、肩書に "Assistant" が付いているユーザーを除く、営業部内のすべてのユーザーをセキュリティ グループに含めることが可能です`(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`。
 - Intune コンソールに組み込まれている **Exchange ActiveSync で管理されているすべてのデバイス** グループは、Azure AD には移行されません。 ただし、EAS で管理されたデバイスに関する情報には、Azure ポータルからもアクセスできます。
 - 従来の Intune コンソールでグループによりレポートをフィルター処理することはできなくなります。
 <!--- - Custom group targeting of notification rules will not be available. ROB I took this out as I couldn't replicate the behavior. --->
@@ -51,9 +51,9 @@ Intune グループの既存機能の一部は、Azure AD では利用できま�
 ## <a name="how-to-get-ready"></a>準備する方法
 
 - Azure AD のセキュリティ グループとそのしくみの詳細については、次の Azure AD トピックをご覧ください。
-    -  [Azure Active Directory グループを利用したリソースへのアクセス管理](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/)
-    -  [Azure Active Directory でのグループの管理](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/)
-    -  [属性を利用した高度なルールの作成](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)
+    -  [Azure Active Directory グループを利用したリソースへのアクセス管理](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/)
+    -  [Azure Active Directory でのグループの管理](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+    -  [属性を利用した高度なルールの作成](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)
 - 移行が行われる前に、使われなくなった Intune グループを削除することを検討してください。
 -  グループを作成する必要があるすべての管理者が、**Intune サービス管理者** Azure AD ロールに追加されていることを確認します。 Azure AD サービス管理者ロールには**グループの管理**アクセス許可がないことに注意してください。
 -  **[特定のメンバーを除外]** オプションが有効なグループを使っている場合は、除外を必要としないようにグループを再設計できるかどうか、または Azure AD クエリの高度なルールを使って同じ結果を実現できるかどうかを、検討してください。
@@ -85,7 +85,7 @@ Intune では、すべてのグループに親グループが必要です。 グ
 |親デバイス グループのすべてのモバイル デバイス|そのグループをメンバーとして含む静的なグループ|
 |Intune によって管理されているすべてのモバイル デバイス|動的なグループの値として 'MDM' が使用される Management Type 属性|
 |静的なグループ内で入れ子になったグループ |静的なグループ内で入れ子になったグループ|
-|動的なグループ内で入れ子になったグループ|入れ子のレベルが&1; である動的なグループ|
+|動的なグループ内で入れ子になったグループ|入れ子のレベルが 1 である動的なグループ|
 
 ## <a name="what-happens-to-policies-and-apps-youve-already-deployed"></a>既に展開されているポリシーおよびアプリに対する処理
 

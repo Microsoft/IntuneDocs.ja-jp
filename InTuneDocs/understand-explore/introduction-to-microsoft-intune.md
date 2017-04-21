@@ -15,9 +15,9 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: ee1f41384df083d6479804ba05c0252d9ba12e1b
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 3b1c61bc78db2c674bf108ed6110c3826cff150e
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -72,13 +72,13 @@ MAM という用語は、上記のいずれかを表す言葉として、また�
 
 EMS の他のサービスと共に Intune を使用すると、モバイルオペレーティング システムとモバイル アプリ自体がアプリ構成を介して提供するセキュリティに加え、組織のモバイル アプリ セキュリティを提供できます。 EMS で管理されるアプリには、次のようなさまざまなモバイル アプリへのアクセスとデータ保護が与えられます。
 
-* [シングル サインオン](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-appssoaccess-whatis)  
-*    [多要素認証](https://docs.microsoft.com/en-us/multi-factor-authentication/multi-factor-authentication)
-* [アプリの条件付きアクセス (モバイル アプリに企業データが含まれる場合、アクセスを許可する)](https://docs.microsoft.com/en-us/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
-* [同じアプリ内で企業データと個人データを分離する](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [アプリの保護ポリシー (PIN、暗号化、名前を付けて保存、クリップボードなど)](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [モバイル アプリから企業データを消去する](https://docs.microsoft.com/en-us/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-* [Rights Management の保護](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-azure-rms)
+* [シングル サインオン](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
+*    [多要素認証](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
+* [アプリの条件付きアクセス (モバイル アプリに企業データが含まれる場合、アクセスを許可する)](https://docs.microsoft.com/intune/deploy-use/allow-policy-managed-apps-access-to-o365)
+* [同じアプリ内で企業データと個人データを分離する](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [アプリの保護ポリシー (PIN、暗号化、名前を付けて保存、クリップボードなど)](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [モバイル アプリから企業データを消去する](https://docs.microsoft.com/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+* [Rights Management の保護](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 ![アプリ管理データ セキュリティのレベルを示す画像](./media/managing-mobile-apps.png)
 
@@ -88,7 +88,7 @@ EMS の他のサービスと共に Intune を使用すると、モバイルオ�
 * コピー、切り取り/貼り付け、保存、表示など、企業情報に対してユーザーが行う操作を制限すること
 * モバイル アプリから企業データを削除すること (選択的なワイプや企業ワイプとも呼ばれています)
 
-Intune がモバイル アプリ セキュリティを提供する方法の&1; つとして、**アプリの保護ポリシー**機能があります。 アプリの保護ポリシーでは、Azure AD ID を利用し、個人データと企業データが分離されます。 企業の資格情報を利用してアクセスされるデータには、追加の企業保護機能が与えられます。
+Intune がモバイル アプリ セキュリティを提供する方法の 1 つとして、**アプリの保護ポリシー**機能があります。 アプリの保護ポリシーでは、Azure AD ID を利用し、個人データと企業データが分離されます。 企業の資格情報を利用してアクセスされるデータには、追加の企業保護機能が与えられます。
 
 ユーザーが自分の企業資格情報で自分のデバイスにログオンすると、そのユーザーの企業 ID により、自分の個人 ID では拒否されるデータにアクセスできます。 その企業データが使用されるとき、Intune とその他の EMS 技術によりその保存と共有が制御されます。 ユーザーが自分のデバイスに自分の個人 ID でログオンするときにアクセスされるデータには同じ保護機能は適用されません。 このように、IT 部署が企業データを管理し、エンド ユーザーが個人データを管理し、プライバシーを保護します。
 
@@ -97,7 +97,7 @@ Intune がモバイル アプリ セキュリティを提供する方法の&1; �
 
 組織が “登録なし” シナリオを採用する程度はさまざまです。 それを標準とする組織もあります。 個人のタブレットなど、コンパニオン デバイスでそれを許可する組織もあります。 まったくサポートしない組織もあります。 まったくサポートせず、従業員のすべてのデバイスに MDM 登録を要求する場合でも、通常、コントラクター、ベンダー、特定の例外を持つその他のデバイスに関して、"登録なし" シナリオがサポートされます。
 
-登録済みデバイスでも Intune の “登録なし” 技術を利用できます。 たとえば、MDM に登録されているデバイスには、モバイル オペレーティング システムによりオープンイン保護が与えられていることがあります。 (オープンイン保護は、Outlook などの&1; つのアプリから Word などの別のアプリで、両方のアプリが MDM プロバイダーによって管理されている場合を除き、ドキュメントを開くことを制限する iOS の機能です。)さらに、IT 部署はアプリの保護ポリシーを EMS で管理するモバイル アプリに提供し、名前を付けて保存を制御したり、多要素認証を提供したりすることがあります。
+登録済みデバイスでも Intune の “登録なし” 技術を利用できます。 たとえば、MDM に登録されているデバイスには、モバイル オペレーティング システムによりオープンイン保護が与えられていることがあります。 (オープンイン保護は、Outlook などの 1 つのアプリから Word などの別のアプリで、両方のアプリが MDM プロバイダーによって管理されている場合を除き、ドキュメントを開くことを制限する iOS の機能です。)さらに、IT 部署はアプリの保護ポリシーを EMS で管理するモバイル アプリに提供し、名前を付けて保存を制御したり、多要素認証を提供したりすることがあります。
 
 組織がモバイル デバイスやモバイル アプリを登録する場合でも登録しない場合でも、Intune は、EMS の一部として、社員の生産性を強化し、同時に企業データを保護するためのツールを提供します。
 

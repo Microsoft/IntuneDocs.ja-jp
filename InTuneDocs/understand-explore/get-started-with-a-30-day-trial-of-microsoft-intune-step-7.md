@@ -14,8 +14,9 @@ ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: f121ff01a3eee20473637626128239c4d883e826
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 08b5b555ed44275c428c15fe3529bd683dc8c004
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -28,16 +29,11 @@ ms.openlocfilehash: f121ff01a3eee20473637626128239c4d883e826
 
 次の方法で Intune 無料評価版を有料サブスクリプションに変換できます。
 
--   **Intune のサブスクリプション** - ユーザーごとにライセンスが付与されます。 詳細については、 [Microsoft Intune の購入方法](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx)に関するページを参照してください。 購入を完了したら、「[Microsoft Intune の有料サブスクリプションの基本](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune)」の手順に従い、Intune の使用を開始する際の追加の構成手順を確認します。
+-   **Intune のサブスクリプション** - ユーザーごとにライセンスが付与されます。 詳細については、 [Microsoft Intune の購入方法](https://www.microsoft.com/server-cloud/products/microsoft-intune/Purchasing.aspx)に関するページを参照してください。 購入を完了したら、「[Microsoft Intune の有料サブスクリプションの基本](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune)」の手順に従い、Intune の使用を開始する際の追加の構成手順を確認します。
 
--   **Enterprise Mobility + Security** - Intune、Azure Active Directory Premium、Azure RMS サービスが提供されます。 詳細については、Microsoft の担当者または最寄りのリセラーに連絡するか、[EMS の機能](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx)と[価格](http://www.microsoft.com/en-us/server-cloud/products/enterprise-mobility-suite/Purchasing.aspx)についてお読みください。
+-   **Enterprise Mobility + Security** - Intune、Azure Active Directory Premium、Azure RMS サービスが提供されます。 詳細については、Microsoft の担当者または最寄りのリセラーに連絡するか、[EMS の機能](https://www.microsoft.com/server-cloud/enterprise-mobility/overview.aspx)と[価格](https://www.microsoft.com/server-cloud/products/enterprise-mobility-suite/Purchasing.aspx)についてお読みください。
 
 -   **Enterprise Agreement** (&gt; 250 ユーザー) - 250 名を超えるユーザー数の組織に最適なライセンス プログラムです。 EA を利用すると、内部設置型ソフトウェアとオンライン サービスからニーズに最も合うものを選択し、使用するテクノロジを最適化することができます。 詳細については、Microsoft の担当者また最寄りのリセラーに連絡するか、 [ボリューム ライセンス Enterprise Agreement のサイト](http://www.microsoft.com/licensing/licensing-options/enterprise.aspx)を参照してください。
 
 -   **オンライン サブスクリプション プログラム** (&lt; 250 ユーザー) - [オンライン サービス ボリューム ライセンス](http://www.microsoft.com/licensing/online-services/default.aspx) プログラムは、250 名未満のユーザー数の組織向けに設計されています。 このプログラムを使用して、Intune サービスのサブスクライブ、管理、および展開を行うことができます。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

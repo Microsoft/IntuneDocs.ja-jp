@@ -13,8 +13,9 @@ ms.technology:
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a2e43444bff3b189c1516c6ca7131771035313ea
-ms.openlocfilehash: 6258917de60bdbf8efde4720c17ec6fc643154bd
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: c795b0b5b12d900155e55e0874009177b32a2546
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -35,7 +36,7 @@ Intune モバイル アプリケーション管理に関して問題がある場
 | 問題 | 説明 | 解決方法 |
 | -- | -- | -- |
 | ポリシーが Skype for Business に適用されない | Azure Portal でデバイスを登録しないで設定したアプリ保護ポリシーが、iOS デバイスと Android デバイスの Skype for Business アプリに適用されません。 | 先進認証を使うように Skype for Business を設定する必要があります。  「[Enable your tenant for modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)」 (テナントで先進認証を有効にする) の説明に従って、Skype に先進認証を設定してください。 |
-| Office のアプリ ポリシーが適用されない | アプリ保護ポリシーが、すべてのユーザーの、どの[サポートされる Office アプリ](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners)にも適用されません。 | ユーザーに Intune のライセンスが与えられていること、および Office アプリが展開されるアプリ保護ポリシーの対象であることを確認します。 新しく展開したアプリ保護ポリシーが適用されるには最大 8 時間かかります。 |
+| Office のアプリ ポリシーが適用されない | アプリ保護ポリシーが、すべてのユーザーの、どの[サポートされる Office アプリ](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)にも適用されません。 | ユーザーに Intune のライセンスが与えられていること、および Office アプリが展開されるアプリ保護ポリシーの対象であることを確認します。 新しく展開したアプリ保護ポリシーが適用されるには最大 8 時間かかります。 |
 | 管理者が Azure ポータルでアプリ保護ポリシーを構成できない | IT 管理者ユーザーが、Azure Portal でアプリ保護ポリシーを構成できません。 | 次のユーザー ロールには Azure Portal へのアクセス権があります。 <ul><li>グローバル管理者: [Office ポータル](http://portal.office.com/)で設定できます。</li><li>所有者: [Azure ポータル](https://portal.azure.com/)で設定できます。</li><li>共同作成者: [Azure ポータル](https://portal.azure.com/)で設定できます。</li></ul>  これらのロールの設定については、「[Microsoft Intune でのモバイル アプリ管理ポリシーの作成および展開](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)」をご覧ください。|
 |ユーザー アカウントがアプリ保護ポリシー レポートに表示されない | 管理コンソールのレポートに、アプリ保護ポリシーが最近展開されたユーザー アカウントが表示されません。 | 新しくアプリ保護ポリシーの対象になったユーザーは、対象ユーザーとしてレポートに表示されるまでに最大で 24 時間かかります。 |
 | ポリシーの変更が行われない | アプリ保護ポリシーの変更および更新が適用されるまで、最大 8 時間かかります。 | 該当する場合、エンド ユーザーは、いったんアプリをログアウトしてから再びログインすることで、サービスと強制的に同期できます。 |
@@ -87,7 +88,7 @@ Android | **ポータル サイトが必要**: このアプリで職場または
 **Intune Managed Browser へようこそ**: このアプリは、Microsoft Intune で管理するのが最も効果的です。 いつでもこのアプリを使って Web を閲覧できます。また、このアプリを Microsoft Intune で管理している場合は、追加のデータ保護機能を利用できます。 | Intune Managed Browser アプリに必要なアプリ保護ポリシーを検出できませんでした。 <br><br>ユーザーは引き続きこのアプリで Web を閲覧できますが、このアプリは Intune で管理されません。 | iOS アプリ保護ポリシーがユーザーのセキュリティ グループに展開されていることと Intune Managed Browser アプリが対象になっていることを確認してください。
 **サインインに失敗しました**: 現在、ユーザーをサインインできません。 後で再試行してください。 | ユーザーが自分の職場または学校のアカウントでサインインを試行した後、ユーザーを MAM サービスに登録できませんでした。 | iOS アプリ保護ポリシーがユーザーのセキュリティ グループに展開されていることとこのアプリが対象になっていることを確認してください。
 **アカウントがセットアップされていません**: お使いのアカウントは、組織により職場または学校のデータに対するアクセスがセットアップされていません。 IT 管理者にお問い合わせください。 | ユーザー アカウントに Intune A Direct ライセンスがありません。 | [Office ポータル](http://portal.office.com)でユーザーのアカウントに Intune ライセンスが割り当てられていることを確認します。
-**デバイスが準拠していません**: 脱獄が行われたデバイスを使用しているため、このアプリを使用できません。 サポートが必要であれば、IT 管理者にお問い合わせください。 | 脱獄が行われたデバイスをユーザーが使用していることが Intune で検出されました。 | デバイスを既定の設定にリセットしてください。 Apple サポート サイトの[こちらの手順](https://support.apple.com/en-us/HT201274)に従ってください。
+**デバイスが準拠していません**: 脱獄が行われたデバイスを使用しているため、このアプリを使用できません。 サポートが必要であれば、IT 管理者にお問い合わせください。 | 脱獄が行われたデバイスをユーザーが使用していることが Intune で検出されました。 | デバイスを既定の設定にリセットしてください。 Apple サポート サイトの[こちらの手順](https://support.apple.com/HT201274)に従ってください。
 **インターネット接続が必要です**: このアプリを使用できることを確認するには、インターネットに接続する必要があります。 | このデバイスはインターネットに接続されていません。 | WiFi またはデータ ネットワークにデバイスを接続します。
 **不明なエラー**: このアプリを再起動してみてください。 問題が解決しない場合は、IT 管理者にお問い合わせください。 | 不明なエラーが発生しました。 | しばらくしてからやり直してください。 エラーが解決しない場合、[ここ](how-to-get-support-for-microsoft-intune.md)で Intune のサポート チケットを作成します。
 **組織のデータにアクセスしています**: 指定した職場または学校のアカウントに、このアプリにアクセスする許可が与えられていません。 場合によっては、別のアカウントでサインインする必要があります。 サポートが必要であれば、IT 管理者にお問い合わせください。 | デバイスの MAM 登録アカウントとは異なる職場または学校の 2 つ目のアカウントでユーザーがサインインを試行したことを Intune が検出します。 デバイスごとに MAM で一度に管理できる職場または学校のアカウントは 1 つだけです。 | サインイン画面でユーザー名が事前入力されるアカウントでユーザーにサインインしてもらいます。 <br> <br> あるいは、職場または学校の新しいアカウントでユーザーにサインインしてもらい、既存の MAM 登録アカウントを削除させます。
@@ -116,9 +117,4 @@ Android | **ポータル サイトが必要**: このアプリで職場または
 - [モバイル アプリケーション管理のセットアップの検証](../deploy-use/validate-mobile-application-management.md)
 - [Microsoft Intune でのモバイル アプリ管理ポリシーの作成および展開](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 - [Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

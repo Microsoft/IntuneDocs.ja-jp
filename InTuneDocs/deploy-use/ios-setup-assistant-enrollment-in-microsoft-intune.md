@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
-ms.openlocfilehash: 5bb9c68db8edb68531fc40bc93c28881a95b6940
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 2a1a9bb4e49e997a6f152cadcf0c7a75b553cb42
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -39,7 +39,7 @@ Apple Configurator を使用して、iOS デバイスを工場出荷時の設定
 
 - iOS デバイスに物理的にアクセスできることを確認する &mdash; デバイスを、パスワードで保護されていない工場出荷時の設定にリセットする必要があります。
 
-- デバイスのシリアル番号を取得する &mdash; [iOS シリアル番号を取得する方法](https://support.apple.com/en-us/HT204308)に関するページを参照してください。
+- デバイスのシリアル番号を取得する &mdash; [iOS シリアル番号を取得する方法](https://support.apple.com/HT204308)に関するページを参照してください。
 
 - USB 接続ケーブルを手元に置いておく。
 

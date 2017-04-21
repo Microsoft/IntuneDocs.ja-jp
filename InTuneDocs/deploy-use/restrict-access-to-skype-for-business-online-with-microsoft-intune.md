@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 312a3ae8a74b0a8460f969f96bee14077c6c7161
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -37,9 +38,9 @@ ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
 
 Skype for Business Online の条件付きアクセス ポリシーを構成する**前に**、次のことを行う必要があります。
 - **Skype for Business Online サブスクリプション**を取得し、Skype for Business Online のライセンスをユーザーに割り当てます。
-- **Enterprise Mobility + Security (EMS) サブスクリプション**または **Azure Active Directory (Azure AD) Premium サブスクリプション**を取得します。ユーザーに EMS または Azure AD のライセンスを付与します。 詳細については、「[Enterprise Mobility pricing](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility の価格) または「[Azure Active Directory の価格](https://azure.microsoft.com/en-us/pricing/details/active-directory/)」を参照してください。
+- **Enterprise Mobility + Security (EMS) サブスクリプション**または **Azure Active Directory (Azure AD) Premium サブスクリプション**を取得します。ユーザーに EMS または Azure AD のライセンスを付与します。 詳細については、「[Enterprise Mobility pricing](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility の価格) または「[Azure Active Directory の価格](https://azure.microsoft.com/pricing/details/active-directory/)」を参照してください。
 
--   Skype for Business Online で[先進認証を有効](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune)にします。
+-   Skype for Business Online で[先進認証を有効](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune)にします。
 -  すべてのエンド ユーザーに **Skype for Business Online** を使わせます。 展開に Skype for Business Online とオンプレミスの Skype for Business の両方が含まれる場合は、ユーザーに条件付きアクセス ポリシーが適用されません。
 
 Skype for Business Online にアクセスするデバイスは、次の条件を満たしている必要があります。
@@ -64,7 +65,7 @@ Skype for Business Online にアクセスするデバイスは、次の条件を
 ### <a name="step-1-configure-azure-active-directory-security-groups"></a>手順 1. Azure Active Directory セキュリティ グループを構成する
 開始する前に、条件付きアクセス ポリシーの Azure Active Directory セキュリティ グループを構成します。 これらのグループは、**Office 365 管理センター**で構成できます。 これらのグループは、ユーザーをポリシーの対象とするか、または除外するために使用されます。 ユーザーがポリシーの対象となる場合、ユーザーに使用される各デバイスがリソースにアクセスするには、ポリシーを遵守している必要があります。
 
-Skype for Business ポリシーに対して使用する&2; つのグループの種類を指定できます。
+Skype for Business ポリシーに対して使用する 2 つのグループの種類を指定できます。
 
 -   **対象グループ**: ポリシーを適用するユーザーのグループが含まれます。
 
@@ -118,9 +119,4 @@ Skype for Business ポリシーに対して使用する&2; つのグループの
 * **準拠していないデバイス**: これらのデバイスは Skype for Business Online からブロックされます。
 
 * **AAD に登録され、準拠しているデバイス**: これらのデバイスは、Skype for Business Online にアクセスできます。
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

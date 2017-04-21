@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: 4093497553ccb7cc5f5c949f2ff0004697beb42a
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 402475d87dc1c57d34669cc9553939521adcd146
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -48,7 +49,7 @@ Intune へのアプリの登録を開始する前に、ポリシー設定とア�
 
 ## <a name="add-and-deploy-apps"></a>アプリを追加して展開する
 
-Intune にアプリを追加した後で、次の&2; つの方法で管理対象アプリに展開することができます。
+Intune にアプリを追加した後で、次の 2 つの方法で管理対象アプリに展開することができます。
 - **必須のインストール** - アプリを自動的に管理対象デバイスにインストールします。
 - **利用可能なインストール** - ユーザーがデバイスにインストールするかどうかを選択できるように、Intune ポータル サイトにアプリが表示されます。
 
@@ -65,16 +66,11 @@ Intune にアプリを追加した後で、次の&2; つの方法で管理対象
 - 以下のボリューム購入アプリを展開します。
     - [iOS - ボリューム購入プログラム](https://docs.microsoft.com/intune/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
     - [ビジネス向け Windows ストア](https://docs.microsoft.com/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
-    - [Android for Work](https://docs.microsoft.com/en-us/Intune/deploy-use/android-for-work-apps)
+    - [Android for Work](https://docs.microsoft.com/Intune/deploy-use/android-for-work-apps)
 
     展開用にアプリを構成したら、[アプリを構成](https://docs.microsoft.com/intune/deploy-use/update-apps-using-microsoft-intune)し、[アプリを監視](https://docs.microsoft.com/intune/deploy-use/monitor-apps-in-microsoft-intune)できます。
 
 >[!div class="step-by-step"]
 
 >[&larr;**ユーザーとデバイスを整理する**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**ポータル サイトをカスタマイズする** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

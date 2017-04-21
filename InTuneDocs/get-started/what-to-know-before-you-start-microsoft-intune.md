@@ -15,9 +15,9 @@ ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 61851f7669e9a5c3a192b2eda344fcde9c4fa3e6
-ms.lasthandoff: 03/20/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0fa045d31125ba0d67f19bb46aa2728ae9bbcc93
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -67,7 +67,7 @@ Intune コンソールから [Exchange ActiveSync デバイス](/intune/deploy-u
 |**ポータル Web サイト**     |**モバイル デバイスの場合:** サポートされている各プラットフォームに対して既定の Web ブラウザーを使用します   <br /><br />**Windows PC の場合:** Internet Explorer 10 以降または Microsoft Edge<br /><br />**Mac OS X 10.9 以降の場合:** Apple Safari    |
 
 > [!Note]
-> Microsoft Edge とモバイル ブラウザーで管理コンソールがサポートされていないのは、[Microsoft Silverlight](https://msdn.microsoft.com/en-us/library/cc838158(v=vs.95).aspx) がサポートされていないためです。 Intune コンソールは一定期間を経て Silverlight に移行します。最終的には、Intune のすべてのモバイル デバイスとアプリケーションの管理機能が[新しい Microsoft Azure ポータルで使用できるようになります](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/)。
+> Microsoft Edge とモバイル ブラウザーで管理コンソールがサポートされていないのは、[Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx) がサポートされていないためです。 Intune コンソールは一定期間を経て Silverlight に移行します。最終的には、Intune のすべてのモバイル デバイスとアプリケーションの管理機能が[新しい Microsoft Azure ポータルで使用できるようになります](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/)。
 
 
 このポータルには、サービス管理者のアクセス許可を持つユーザーまたは全体管理者の役割を持つテナント管理者のみがサインインできます。 管理コンソールにアクセスするには、アカウントに Intune を使用するライセンスがあり、サインイン状態が**許可済み**になっている必要があります。
