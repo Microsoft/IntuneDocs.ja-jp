@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: e3c3f834a80eaf5e8b992ba41b19a1d53b89fdc3
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: f57323fe0b093f2478d71d3f01b9c0e5ee2727eb
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -125,9 +125,9 @@ MDM 機関では、一連のデバイスを管理するためのアクセス許�
 
 ### <a name="to-synchronize-on-premises-users-with-azure-ad"></a>オンプレミスのユーザーを Azure AD と同期するには
 
-1. オンプレミス Active Directory でカスタム ドメインの [UPN サフィックスを追加します](https://technet.microsoft.com/en-us/library/cc772007.aspx)。
+1. オンプレミス Active Directory でカスタム ドメインの [UPN サフィックスを追加します](https://technet.microsoft.com/library/cc772007.aspx)。
 2. インポートする予定のオンプレミス ユーザー用に新しい UPN サフィックスを設定します。
-3. [Azure AD Connect Sync](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/) を実行して、オンプレミス ユーザーを Azure AD と統合します。
+3. [Azure AD Connect Sync](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) を実行して、オンプレミス ユーザーを Azure AD と統合します。
 4. ユーザー アカウント情報が正常に同期したら、[Office 365 管理ポータル](https://portal.office.com/Admin/Default.aspx)を使用して Microsoft Intune ライセンスを割り当てることができます。
 
 ## <a name="step-6-enable-enrollment"></a>手順 6: 登録を有効にする

@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 9a814f6df407802b8e48626ed0e3f828c52c661b
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: cfb3a7cc4e70a062bc511cd4fe80a50b6262864f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -38,7 +38,7 @@ Microsoft Intune を使用して、Exchange Online または Exchange Online Ded
 
 -   **Exchange Online を含む Office 365 サブスクリプション (E3 など)** を取得します。ユーザーには Exchange Online のライセンスが必要です。
 
-- **Enterprise Mobility + Security (EMS) サブスクリプション**または **Azure Active Directory (Azure AD) Premium サブスクリプション**を取得します。ユーザーに EMS または Azure AD のライセンスが付与される必要があります。 詳細については、「[Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility の価格) ページまたは「[Azure Active Directory の価格](https://azure.microsoft.com/en-us/pricing/details/active-directory/)」ページを参照してください。
+- **Enterprise Mobility + Security (EMS) サブスクリプション**または **Azure Active Directory (Azure AD) Premium サブスクリプション**を取得します。ユーザーに EMS または Azure AD のライセンスが付与される必要があります。 詳細については、「[Enterprise Mobility pricing page](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility の価格) ページまたは「[Azure Active Directory の価格](https://azure.microsoft.com/pricing/details/active-directory/)」ページを参照してください。
 
 -  オプションの **Intune Service to Service Connector** の構成を検討します。これによって [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] が Exchange Online に接続され、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] コンソールを使用してデバイス情報を管理できるようになります。 コンプライアンス ポリシーまたは条件付きアクセス ポリシーを使用するうえでコネクタを使用する必要はありませんが、条件付きアクセスの影響を評価するためのレポートの実行に必要です。
     -  詳細については、[Intune Service to Service Connector](intune-service-to-service-exchange-connector.md) に関するページを参照してください。
@@ -83,7 +83,7 @@ Microsoft Intune を使用して、Exchange Online または Exchange Online Ded
 **先進認証**では、Active Directory Authentication Library (ADAL) ベースのサインインが Microsoft Office クライアントに導入されます。
 
 -   ADAL ベースの認証を使用すると、Office クライアントでブラウザー ベースの認証 (パッシブ認証とも呼ばれます) を利用できます。 認証するときに、ユーザーはサインイン Web ページに転送されます。
--   この新しいサインイン方法によって、**多要素認証**や**証明書ベースの認証**などのより強力なセキュリティを使用できるようになります。 詳細については、「[How modern authentication works](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517)」 (先進認証の動作) を参照してください。 最新ではない認証プロトコルをブロックするように ADFS 要求規則を設定できます。 詳しい手順は、[シナリオ 3: ブラウザー ベースのアプリケーションを除く Office 365 への外部アクセスをすべてブロックする方法](https://technet.microsoft.com/library/dn592182.aspx)に関するページを参照してください。
+-   この新しいサインイン方法によって、**多要素認証**や**証明書ベースの認証**などのより強力なセキュリティを使用できるようになります。 詳細については、「[How modern authentication works](https://support.office.com/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517)」 (先進認証の動作) を参照してください。 最新ではない認証プロトコルをブロックするように ADFS 要求規則を設定できます。 詳しい手順は、[シナリオ 3: ブラウザー ベースのアプリケーションを除く Office 365 への外部アクセスをすべてブロックする方法](https://technet.microsoft.com/library/dn592182.aspx)に関するページを参照してください。
 
 **iOS** と **Android** デバイス上のブラウザーからユーザーがアクセスした場合、Exchange Online の **Outlook Web Access (OWA)** へのアクセスを保護することができます。 準拠デバイスでサポートされているブラウザーからのアクセスのみが許可されます。
 
@@ -123,7 +123,7 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
   >[!NOTE]
     >Intune コンピューター クライアントを実行する PC では、条件付きアクセスはサポートされていません。
 
--   [Office 365 の先進認証が有効化](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)されていて、最新の Office 更新プログラムがすべて適用されていること。
+-   [Office 365 の先進認証が有効化](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)されていて、最新の Office 更新プログラムがすべて適用されていること。
 
     先進認証では、Active Directory Authentication Library (ADAL) ベースのサインインが Office 2013/Windows クライアントに導入されます。 この方法によって、**多要素認証**や**証明書ベースの認証**などのより強力なセキュリティを使用できるようになります。
 
@@ -192,7 +192,7 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 >[!NOTE]
 > Azure AD 管理コンソールでは、条件付きアクセス ポリシーを作成することもできます。 Azure AD 管理コンソールを使用すると、Intune デバイスの条件付きアクセス ポリシー (Azure AD では**デバイスベースの条件付きアクセス ポリシー**と呼ばれている) に加えて、多要素認証など、他の条件付きアクセス ポリシーを作成することもできます。
 
->Azure AD がサポートするサード パーティ製の Enterprise アプリ (Salesforce や Box など) に条件付きアクセス ポリシーを設定することもできます。 詳細については、「[Azure Active Directory に接続されたアプリケーションのアクセスを制御する Azure Active Directory デバイス ベースの条件付きアクセス ポリシーを設定する方法](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/)」を参照してください。
+>Azure AD がサポートするサード パーティ製の Enterprise アプリ (Salesforce や Box など) に条件付きアクセス ポリシーを設定することもできます。 詳細については、「[Azure Active Directory に接続されたアプリケーションのアクセスを制御する Azure Active Directory デバイス ベースの条件付きアクセス ポリシーを設定する方法](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/)」を参照してください。
 
 
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** > **[条件付きアクセス]** > **[Exchange Online ポリシー]** の順に選択します。
