@@ -14,9 +14,9 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 4133c64d283682f0be37cd6ac69164ef872a5026
-ms.lasthandoff: 01/05/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9a988945c499c3145208b86d6832d02c28136ece
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -43,8 +43,8 @@ ms.lasthandoff: 01/05/2017
 ## <a name="whats-not-covered"></a>このガイドには記載されていない内容
 |関心がある内容 |参照先 |
 |------------------------|----------|
-|非テスト環境での MDM | [はじめに](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
-|Intune と System Center Configuration Manager での MDM | [ハイブリッド モバイル デバイス管理](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management) |
+|非テスト環境での MDM | [はじめに](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune) |
+|Intune と System Center Configuration Manager での MDM | [ハイブリッド モバイル デバイス管理](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management) |
 
 上記のガイドは運用環境への Intune のセットアップに関するものなので、評価ガイドより手順は長く、より多くの事柄を決定する必要があります。
 
@@ -61,7 +61,7 @@ Intune によるモバイル デバイス管理に必要な最初の手順は、
 
 Intune スタンドアロンを使用している場合 (このガイドで想定されていること)、または Enterprise Mobility + Security (EMS) の一部として Intune を使用している場合は、Intune をモバイル デバイス管理機関として設定する必要があります。 つまり、組織内のモバイル デバイスの管理に使用するサービスとして Intune を指定します。
 
-System Center Configuration Manager で Intune を使用してモバイル デバイスを管理する場合は、モバイル デバイス管理機関として Intune または Configuration Manager のどちらを使用するかを決定する必要があります。 現在ではいったん行った設定を変更するのはとても困難であるため、これは運用環境での重要な決定事項です。ただし、これについてはこの評価ガイドでは説明しません。 MDM 機関として Intune または Configuration Manager のいずれかを設定する場合の影響の詳細については、「[Choose between standalone Intune and hybrid mobile device management](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)」 (スタンドアロンの Intune またはハイブリッド モバイル デバイス管理の選択) を参照してください。
+System Center Configuration Manager で Intune を使用してモバイル デバイスを管理する場合は、モバイル デバイス管理機関として Intune または Configuration Manager のどちらを使用するかを決定する必要があります。 現在ではいったん行った設定を変更するのはとても困難であるため、これは運用環境での重要な決定事項です。ただし、これについてはこの評価ガイドでは説明しません。 MDM 機関として Intune または Configuration Manager のいずれかを設定する場合の影響の詳細については、「[Choose between standalone Intune and hybrid mobile device management](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)」 (スタンドアロンの Intune またはハイブリッド モバイル デバイス管理の選択) を参照してください。
 
 このガイドでは、試用版で Intune を MDM 機関として設定します。運用環境で試用版を使用しない限り、この設定による運用環境への影響はありません。
 
@@ -86,7 +86,7 @@ APNs (.pem) 証明書をダウンロードして、ファイルをローカル�
 3.    **APNs 証明書を Intune に追加する**<BR/>
 Microsoft Intune 管理コンソールで、**[管理]** > **[モバイル デバイス管理]** > **[iOS および Mac OS X]** > **[APNs 証明書のアップロード]** の順に移動して、**[APNs 証明書のアップロード]** を選択します。 証明書 (.pem) ファイルに移動し、**[開く]** を選択して、Apple ID を入力します。 この APNs 証明書を使用して、 Intune はモバイル デバイスを登録し、登録したモバイル デバイスにポリシーを適用して iOS デバイスを管理できます。
 4.    **デバイスを登録して会社のリソースへのアクセスを取得する方法をユーザーに知らせる**<br/>
-エンドユーザー用の登録手順については、「[Intune に iOS デバイスを登録する](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-ios)」および「[Intune に Mac OS X デバイスを登録する](https://docs.microsoft.com/en-us/Intune/enduser/enroll-your-device-in-intune-mac-os-x)」を参照してください。 登録プロセスでは、登録により可能になる操作、および IT 管理者が見ることのできるデバイス上のデータと見られないデータについての説明が行われます。
+エンドユーザー用の登録手順については、「[Intune に iOS デバイスを登録する](https://docs.microsoft.com/Intune/enduser/enroll-your-device-in-intune-ios)」および「[Intune に Mac OS X デバイスを登録する](https://docs.microsoft.com/Intune/enduser/enroll-your-device-in-intune-mac-os-x)」を参照してください。 登録プロセスでは、登録により可能になる操作、および IT 管理者が見ることのできるデバイス上のデータと見られないデータについての説明が行われます。
 
 
 ### <a name="learn-more-about-device-enrollment"></a>デバイス登録の詳細

@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
-ms.openlocfilehash: 16e4b6ddd1df9c56e36318dfd3050d1a1f627adc
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: fdd85177f21a430eb940d1f88b3bb016c56cee55
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -48,14 +49,9 @@ Intune は、複数のテクノロジ層を介して会社のデータを保護�
 
 アプリと MAM ポリシーを関連付けるには、アプリに Microsoft Intune App ソフトウェア開発キット (SDK) を組み込む必要があります。あるいは、アプリ ラッピング ツールを使用できます。
 
-Microsoft Office アプリのようなアプリには、Intune アプリ SDK が組み込まれています。 Microsoft Intune アプリケーション パートナー ページの [Microsoft Intune モバイル アプリケーション ギャラリー](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)で、サポートされているアプリの完全な一覧を参照できます。 アプリを選択し、サポートされるシナリオ、プラットフォーム、アプリのマルチ ID 対応を確認してください。
+Microsoft Office アプリのようなアプリには、Intune アプリ SDK が組み込まれています。 Microsoft Intune アプリケーション パートナー ページの [Microsoft Intune モバイル アプリケーション ギャラリー](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)で、サポートされているアプリの完全な一覧を参照できます。 アプリを選択し、サポートされるシナリオ、プラットフォーム、アプリのマルチ ID 対応を確認してください。
 
 [特注の基幹業務アプリ](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)で MAM ポリシーを使用することもできます。
 
 データ移動を制限するだけでなく、デバイスをなくしたり、盗難に遭ったりした場合、あるいは、ユーザーが退職した場合、[会社のデータを選択消去](wipe-managed-company-app-data-with-microsoft-intune.md)し、個人データだけを残すことができます。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

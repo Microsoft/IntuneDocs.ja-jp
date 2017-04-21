@@ -15,9 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
-ms.openlocfilehash: 1768b98cdcb18b5489d9a30b8c1f455f5de58418
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: ce51e92f9643ddc77e84e6b4c65825d397a37ddc
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -97,7 +97,7 @@ ms.lasthandoff: 03/13/2017
 | **ソリューション項目** | **現在の環境** | **コメント** |
 |:---:|:---:|:---:|
 | **ID** | Azure AD、Azure AD Connect、フェデレーションなし、MFA なし | 年末まで MFA 有効化プロジェクト実施中 |                 
-| **メール環境** | オンプレミスの Exchange、Exchange Online | 現在、オンプレミスの Exchange から Exchange Online に移行中。 メールボックスの&75;% を移行済み。 残りの 25% は、Intune の試験運用が開始する前に移行される。 |                
+| **メール環境** | オンプレミスの Exchange、Exchange Online | 現在、オンプレミスの Exchange から Exchange Online に移行中。 メールボックスの 75% を移行済み。 残りの 25% は、Intune の試験運用が開始する前に移行される。 |                
 | **SharePoint** | オンプレミスの SharePoint | SharePoint Online への移行計画はなし |  
 | **現在の MDM** | Exchange ActiveSync |  |
 | **証明書ソリューション** | Microsoft Server 2012 R2、AD 証明書サービス | Web サイト サーバー用に PKI のみを使用 |
@@ -106,7 +106,7 @@ ms.lasthandoff: 03/13/2017
 
 ## <a name="choose-an-intune-deployment-option"></a>Intune の展開オプションを選択する
 
-Intune には、スタンドアロンとハイブリッドの&2; 種類の展開オプションがあります。 どちらがビジネス要件に合うかを判断する必要があります。 スタンドアロンとはクラウドで実行されている Intune サービスのことであり、ハイブリッドとは Intune と System Center Configuration Manager が統合されたものです。
+Intune には、スタンドアロンとハイブリッドの 2 種類の展開オプションがあります。 どちらがビジネス要件に合うかを判断する必要があります。 スタンドアロンとはクラウドで実行されている Intune サービスのことであり、ハイブリッドとは Intune と System Center Configuration Manager が統合されたものです。
 
 - 詳しくは、「[Microsoft Intune スタンドアロンか System Center Configuration Manager を使用するハイブリッド モバイル デバイス管理を選択する](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)」をご覧ください。
 
@@ -153,7 +153,7 @@ Intune の ID 要件に関する詳細については、以下をご覧くださ
 
 -   [ユーザーとデバイス グループの計画](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups)についてはこちらをご覧ください。
 
--   [ユーザーとデバイス グループを作成する方法](https://docs.microsoft.com/en-us/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)についてはこちらをご覧ください。
+-   [ユーザーとデバイス グループを作成する方法](https://docs.microsoft.com/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)についてはこちらをご覧ください。
 
 ### <a name="public-key-infrastructure-pki"></a>公開キー基盤 (PKI)
 
@@ -251,7 +251,7 @@ Intune は、企業所有と BYOD 所有権の両方をサポートします。 
 
 構成ポリシーは、デバイスのセキュリティ設定と機能を管理するために使われます。 構成ポリシーを設計するときは、ユース ケース要件セクションを参照して、Intune デバイスに必要な構成を決定します。 どの設定をどのように構成する必要があるか、およびその対象となるユーザーまたはデバイス グループを文書化します。
 
-プラットフォームごとに少なくとも&1; つの構成ポリシーを作成する必要があります。 必要な場合は、プラットフォームごとに複数の構成ポリシーを作成できます。 次に示すのは、異なるプラットフォームとユース ケース シナリオに対して&4; つの異なる構成ポリシーを設計する例です。
+プラットフォームごとに少なくとも 1 つの構成ポリシーを作成する必要があります。 必要な場合は、プラットフォームごとに複数の構成ポリシーを作成できます。 次に示すのは、異なるプラットフォームとユース ケース シナリオに対して 4 つの異なる構成ポリシーを設計する例です。
 
 | **ポリシー名** | **デバイスのプラットフォーム** | **設定** | **対象グループ** |   
 |:---:|:---:|:---:|:---:|
@@ -326,7 +326,7 @@ VPN プロファイルの設計を文書化する例を次に示します。
 
 電子メール プロファイルを使うと、メール クライアントを接続情報とメール構成で自動的にセットアップできます。 Intune は、一部のデバイスで電子メール プロファイルをサポートします。
 
--   [電子メール プロファイル](https://docs.microsoft.com/en-us/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)とサポートされるプラットフォームの詳細を参照してください。
+-   [電子メール プロファイル](https://docs.microsoft.com/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)とサポートされるプラットフォームの詳細を参照してください。
 
 電子メール プロファイルの設計を文書化する例を次に示します。
 
@@ -388,7 +388,7 @@ Intune では、複数の方法でユーザーまたはデバイスにアプリ�
 
 条件付きアクセスは、準拠デバイスのみに企業リソースへのアクセスを許可するために使用します。 Intune は、Enterprise Mobility + Security (EMS) 全体と連携して、企業リソースへのアクセスを制御します。 条件付きアクセスが必要かどうか、およびセキュリティで保護する必要があるものを、決める必要があります。
 
--   詳しくは、「[Microsoft Intune で電子メール、Office&365;、およびその他のサービスへのアクセスを制限する](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)」をご覧ください。
+-   詳しくは、「[Microsoft Intune で電子メール、Office 365、およびその他のサービスへのアクセスを制限する](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)」をご覧ください。
 
 オンライン アクセスについては、条件付きアクセス ポリシーの対象となるプラットフォームおよびユーザー グループを決めます。
 

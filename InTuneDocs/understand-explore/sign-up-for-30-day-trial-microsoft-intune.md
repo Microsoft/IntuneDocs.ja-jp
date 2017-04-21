@@ -14,8 +14,9 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ca4af205f8f391089e86e0ee7787e32813d54cca
-ms.openlocfilehash: 6bd6cc3470c93f96e7c71b5d1efe6d9ffc045a7e
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 55556d781149b97af3556f3a6774b4bc5b3b76ac
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: 6bd6cc3470c93f96e7c71b5d1efe6d9ffc045a7e
 この記事では、Intune 試用版にサインアップし、ユーザーを追加する方法について説明します。これを読んだ後に、関連する試用版ガイドを読み、Intune によるモバイル デバイスの管理方法を確認できます。 <!---or app data when devices are not enrolled in Intune.--->
 
 >[!Note]
-> 2016 年 12 月以降、Microsoft Intune は Azure ポータルに移行します。一部の無料試用版のサインアップは Azure ポータルの Intune、他のサインアップはクラシック Intune になります。 試用版が Azure ポータルの場合、この記事の手順を実行した後に、[Intune Azure プレビューに関するコンテンツ](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune)を参照してください。
+> 2016 年 12 月以降、Microsoft Intune は Azure ポータルに移行します。一部の無料試用版のサインアップは Azure ポータルの Intune、他のサインアップはクラシック Intune になります。 試用版が Azure ポータルの場合、この記事の手順を実行した後に、[Intune Azure プレビューに関するコンテンツ](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune)を参照してください。
 
 ## <a name="assumptions"></a>前提条件
 サインアップに関するこの記事と試用版ガイドでは、試用版が評価目的のみで使用されること、サブスクライブするときにクリーンな環境から始めることを前提としています。
@@ -39,7 +40,7 @@ ms.openlocfilehash: 6bd6cc3470c93f96e7c71b5d1efe6d9ffc045a7e
 ## <a name="sign-up-for-your-trial"></a>試用版にサインアップする
 [Intune サインアップ](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) ページにアクセスしてフォームに入力し、試用版サブスクリプションにサインアップします。
 
-職場や学校のアカウントを Intune 試用版に使用する場合、代わりに[このリンクにあるサインイン方法](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1)に従ってください。 ただし、この記事と試用版ガイドでは、職場や学校のアカウントを使用していないものと想定しています。
+職場や学校のアカウントを Intune 試用版に使用する場合、代わりに[このリンクにあるサインイン方法](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1)に従ってください。 ただし、この記事と試用版ガイドでは、職場や学校のアカウントを使用していないものと想定しています。
 
 > [!TIP]
 > IT 業務とユーザーのほとんどが自分とは別の場所にある場合、試用版にその場所を設定し、性能を試験できます。
@@ -54,7 +55,7 @@ ms.openlocfilehash: 6bd6cc3470c93f96e7c71b5d1efe6d9ffc045a7e
 ## <a name="add-users"></a>ユーザーの追加
 Office 365 管理センターを離れ、Intune に移動する前に、試用版アカウントにユーザーを追加する必要があります。
 
-Office 365 管理センターでは、.csv ファイルをアップロードしてユーザーを個別または一括で追加できます。 ここでは個別追加と一括追加の両方を行います。 ただし、運用環境では、おそらく Azure Active Directory ユーザー アカウントを活用することになります。それに関しては、「[入門ガイド](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3)」と本記事の「[次のステップ](#Next-steps)」セクションを参照してください。
+Office 365 管理センターでは、.csv ファイルをアップロードしてユーザーを個別または一括で追加できます。 ここでは個別追加と一括追加の両方を行います。 ただし、運用環境では、おそらく Azure Active Directory ユーザー アカウントを活用することになります。それに関しては、「[入門ガイド](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3)」と本記事の「[次のステップ](#Next-steps)」セクションを参照してください。
 
 ### <a name="add-an-individual-user"></a>個々のユーザーを追加する
 1. いずれかのユーザー追加オプションを選択し、フォームを開きます。そのフォームでユーザーを作成できます。 アスタリスク (\*) の付いている項目だけが入力必須となります。
@@ -137,18 +138,13 @@ Intune から Office 365 管理センターに戻るには、ブラウザーの�
 評価シナリオ: [Microsoft Intune でモバイル デバイス管理を評価する](mobile-device-management-trial-guide-microsoft-intune.md)
 
 ### <a name="intune-azure-preview"></a>Intune Azure プレビュー
-詳細については、「[Intune in the Azure portal preview](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune)」(Azure プレビュー ポータルの Intune) を参照してください。
+詳細については、「[Intune in the Azure portal preview](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune)」(Azure プレビュー ポータルの Intune) を参照してください。
 
 ### <a name="integration-with-other-products"></a>他の製品との統合
 Intune で Azure Active Directory ユーザー アカウントを使用する方法に関するページ:
-- [ID の要件](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
-- [ディレクトリ同期の要件](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
-- [多要素認証の要件](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+- [ID の要件](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
+- [ディレクトリ同期の要件](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
+- [多要素認証の要件](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
-[Intune と System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management) を使用する方法に関するページ
-
-
-
-<!--HONumber=Dec16_HO3-->
-
+[Intune と System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management) を使用する方法に関するページ
 

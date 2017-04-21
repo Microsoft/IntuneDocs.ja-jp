@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 8da2695c4c6dc8b45559323b83a4bb77167303b7
-ms.openlocfilehash: 2e7bcedebdf777db64a9ec90aa758822634ed435
-ms.lasthandoff: 03/28/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 4bf9bd15f3f22e0609c4f56f5651454a62dbb7a8
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -58,7 +58,7 @@ Intune の設定の詳細について説明する前に、組織のモバイル 
 
 -   一般的に、ユーザーは技術と IT についてよく理解していますか。
 
-### <a name="what-is-your-device-security-policy"></a>デバイスのセキュリティ ポリシーについて 
+### <a name="what-is-your-device-security-policy"></a>デバイスのセキュリティ ポリシーについて
 
 -   デバイス レベルの暗号化が必要ですか。
 
@@ -84,7 +84,7 @@ Intune の設定の詳細について説明する前に、組織のモバイル 
 
 ## <a name="additional-information"></a>追加情報
 
--   詳細な例については、さまざまな業界セクターの[ケース スタディ](https://customers.microsoft.com/en-US/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune)を参照して、モバイル デバイス管理の要件をどのように評価したかを確認してください。
+-   詳細な例については、さまざまな業界セクターの[ケース スタディ](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune)を参照して、モバイル デバイス管理の要件をどのように評価したかを確認してください。
 
 ## <a name="next-steps"></a>次のステップ
 

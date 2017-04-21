@@ -15,8 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7447a85e03e38aa0f536ce008bae9f3c82528cec
-ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: aea41c86e1fe784d6234f4ff90e299632b2a6d5f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,10 +33,10 @@ ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
 
 **MAM とは何ですか。** [Intune モバイル アプリケーション管理](../deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md)とは、ユーザーのモバイル アプリの公開、プッシュ、構成、セキュリティ保護、監視、および更新を可能にする一連の Intune 管理機能のことです。
 
-**MAM のアプリ保護の利点は何ですか。** MAM は、アプリケーション内の組織のデータを保護します。 MAM-WE を使用すれば、機密データが含まれる職場または学校関連のアプリを、Bring Your Own Device (BYOD) シナリオにおける個人所有デバイスを含むほぼすべてのデバイスで管理できます。 Microsoft Office アプリなどの多くの仕事効率化アプリを、Intune MAM で管理することができます。 一般使用が可能な [Intune 対応アプリ](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)の公式の一覧を参照してください。
+**MAM のアプリ保護の利点は何ですか。** MAM は、アプリケーション内の組織のデータを保護します。 MAM-WE を使用すれば、機密データが含まれる職場または学校関連のアプリを、Bring Your Own Device (BYOD) シナリオにおける個人所有デバイスを含むほぼすべてのデバイスで管理できます。 Microsoft Office アプリなどの多くの仕事効率化アプリを、Intune MAM で管理することができます。 一般使用が可能な [Intune 対応アプリ](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)の公式の一覧を参照してください。
 
-**MAM でサポートされるのはどのようなデバイス構成ですか。** Intune MAM では次の&2; つの構成をサポートしています。
-  1. **Intune MDM と MAM**: これは MAM の初回起動時にサポートされる&1; つ目の構成です。 IT 管理者は、Intune モバイル デバイス管理 (MDM) に登録されているデバイスで MAM とアプリ保護ポリシーを使用したアプリの管理のみを行うことができます。 MDM と MAM を使ってアプリを管理するには、Intune スタンドアロン コンソール (http://manage.microsoft.com) を使用する必要があります。
+**MAM でサポートされるのはどのようなデバイス構成ですか。** Intune MAM では次の 2 つの構成をサポートしています。
+  1. **Intune MDM と MAM**: これは MAM の初回起動時にサポートされる 1 つ目の構成です。 IT 管理者は、Intune モバイル デバイス管理 (MDM) に登録されているデバイスで MAM とアプリ保護ポリシーを使用したアプリの管理のみを行うことができます。 MDM と MAM を使ってアプリを管理するには、Intune スタンドアロン コンソール (http://manage.microsoft.com) を使用する必要があります。
 
   2. **デバイス登録なしの MAM**: デバイス登録なしの MAM (MAM-WE) では、IT 管理者は Intune MDM に登録されていないデバイスで MAM とアプリ保護ポリシーを使ってアプリを管理できます。 つまり、サードパーティ EMM プロバイダーに登録されているデバイスで Intune によりアプリを管理できます。 MAM-WE でアプリを管理するには、Azure Portal (http://portal.azure.com) の Intune コンソールを使用する必要があります。
 
@@ -48,7 +49,7 @@ ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>アプリ保護ポリシーで管理できるアプリ
 
-**どのアプリをアプリ保護ポリシーで管理できますか。** Intune アプリ保護ポリシーでは、[Intune アプリ SDK](../develop/intune-app-sdk.md) で有効化されたアプリや [Intune アプリ ラッピング ツール](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)によってラップされたアプリを管理できます。 一般使用が可能な [Intune 対応アプリ](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)の公式の一覧を参照してください。
+**どのアプリをアプリ保護ポリシーで管理できますか。** Intune アプリ保護ポリシーでは、[Intune アプリ SDK](../develop/intune-app-sdk.md) で有効化されたアプリや [Intune アプリ ラッピング ツール](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)によってラップされたアプリを管理できます。 一般使用が可能な [Intune 対応アプリ](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)の公式の一覧を参照してください。
 
 **Intune 対応アプリでアプリ保護ポリシーを使用するための基本要件は何ですか。**
   1. エンドユーザーに、Azure Active Directory (AAD) アカウントが必要です。 Azure Active Directory で Intune ユーザーを作成する方法については、「[Intune にユーザーを追加して管理権限を付与する](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md)」を参照してください。
@@ -59,18 +60,18 @@ ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
 
   4. エンドユーザーは、AAD アカウントを使用してアプリにサインインする必要があります。
 
-**[Outlook モバイル アプリ](https://www.microsoft.com/en-us/outlook-com/mobile/)を使用するための追加要件は何ですか。**
+**[Outlook モバイル アプリ](https://www.microsoft.com/outlook-com/mobile/)を使用するための追加要件は何ですか。**
 
   1. エンドユーザーが、Outlook モバイル アプリをデバイスにインストールしている必要があります。
 
-  2. エンド ユーザーに、[Office 365 Exchange Online](https://products.office.com/en-us/exchange/exchange-online) メールボックスと Azure Active Directory アカウントにリンクされたライセンスが必要です。
+  2. エンド ユーザーに、[Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) メールボックスと Azure Active Directory アカウントにリンクされたライセンスが必要です。
 
   >[!NOTE]
   > 現段階では、Outlook モバイル アプリは Microsoft Exchange Online のみをサポートし、Exchange On-Premises と Office 365 専用の Exchange はサポートされていません。
 
 **[Word、Excel、PowerPoint](https://products.office.com/business/office) のアプリを使用するための追加要件は何ですか。**
 
-  1. エンドユーザーに、Azure Active Directory アカウントにリンクされた [Office 365 Business または Office 365 Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) のライセンスが必要です。 サブスクリプションには、モバイル デバイスの Office アプリと [OneDrive for Business](https://onedrive.live.com/about/business/) のクラウド ストレージ アカウントが含まれている必要があります。 Office 365 のライセンスは、[Office ポータル](http://portal.office.com)でこちらの[手順](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&rs=en-US&ad=US)を実行して割り当てることができます。
+  1. エンドユーザーに、Azure Active Directory アカウントにリンクされた [Office 365 Business または Office 365 Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) のライセンスが必要です。 サブスクリプションには、モバイル デバイスの Office アプリと [OneDrive for Business](https://onedrive.live.com/about/business/) のクラウド ストレージ アカウントが含まれている必要があります。 Office 365 のライセンスは、[Office ポータル](http://portal.office.com)でこちらの[手順](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)を実行して割り当てることができます。
 
   2. エンドユーザーは、[OneDrive](https://onedrive.live.com/about/) アプリをデバイスにインストールし、AAD アカウントを使用してサインインする必要があります。
 
@@ -109,7 +110,7 @@ ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
 
   2. **何が暗号化されますか。** IT 管理者のアプリ保護ポリシーに従い、"企業" データとしてマークされたデータのみが暗号化されます。 勤務地から送信されたデータは "企業" データと見なされます。 Office アプリについては、Intune では電子メール (Exchange) またはクラウド ストレージ (OneDrive for Business アカウントを使用した OneDrive アプリ) が勤務地と見なされます。 Intune アプリ ラッピング ツールによって有効化された基幹業務アプリでは、すべてのアプリ データが "企業" データと見なされます。
 
-**Intune でのデータのリモート ワイプはどのように行われますか。** Intune は、フル デバイス ワイプ、MDM の選択的ワイプ、および MAM の選択的ワイプという&3; つの異なる方法でアプリのデータをワイプできます。 MDM のリモート ワイプの詳細については、「[Microsoft Intune のフル ワイプまたは選択的ワイプを使用してデータを保護する](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)」を参照してください。 MAM を使用する選択的ワイプの詳細については、「[管理対象の業務用アプリのデータを Microsoft Intune でワイプする](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)」を参照してください。
+**Intune でのデータのリモート ワイプはどのように行われますか。** Intune は、フル デバイス ワイプ、MDM の選択的ワイプ、および MAM の選択的ワイプという 3 つの異なる方法でアプリのデータをワイプできます。 MDM のリモート ワイプの詳細については、「[Microsoft Intune のフル ワイプまたは選択的ワイプを使用してデータを保護する](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)」を参照してください。 MAM を使用する選択的ワイプの詳細については、「[管理対象の業務用アプリのデータを Microsoft Intune でワイプする](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)」を参照してください。
 
   1. **フル ワイプとは何ですか。** [フル ワイプ](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe)では、デバイスを出荷時の既定の設定に戻すことにより、すべてのユーザー データと設定が**デバイス**から削除されます。 デバイスは Intune から削除されません。
   >[!NOTE]
@@ -140,9 +141,4 @@ ms.openlocfilehash: 1ab1645a8c25bf51fc42788364e498d18c2f15d9
 - [モバイル アプリケーション管理のセットアップの検証](../deploy-use/validate-mobile-application-management.md)
 - [Microsoft Intune でのモバイル アプリ管理ポリシーの作成および展開](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 - [Microsoft Intune のサポートを受ける方法](../troubleshoot/how-to-get-support-for-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

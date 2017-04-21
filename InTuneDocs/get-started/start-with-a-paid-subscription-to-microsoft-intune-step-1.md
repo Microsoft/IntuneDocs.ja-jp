@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: abeef923eb5c964ef1e306bbb2c25d0570959674
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -44,7 +45,7 @@ Intune にサインインまたはサインアップする前に、Microsoft Onl
 ## <a name="post-sign-up-considerations"></a>サインアップ後の考慮事項
 新しいサブスクリプションにサインアップすると、アカウント情報の記載された電子メール メッセージが、サインアップ過程で登録した電子メール アドレスに送信されます。 このメールで、サブスクリプションがアクティブになったことが確認されます。
 
-サインアップ プロセスが完了すると、Office 365 管理センターを使用して、ユーザーを追加し、ライセンスを割り当てるページに移動します。 既定の onmicrosoft.com ドメイン名を使用したクラウドベースのアカウントだけを使用する場合は、この時点でユーザーを追加し、ライセンスを割り当てることができます。 一方、組織のカスタム ドメイン名を使用する場合や、オンプレミスの Active Directory からユーザー アカウント情報を同期する場合は、そのブラウザー ウィンドウを閉じ、このクイック スタート ガイドの手順 2. に進んでください。 詳しくは、「[Office 365 の最初の onmicrosoft.com ドメインの概要](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)」をご覧ください
+サインアップ プロセスが完了すると、Office 365 管理センターを使用して、ユーザーを追加し、ライセンスを割り当てるページに移動します。 既定の onmicrosoft.com ドメイン名を使用したクラウドベースのアカウントだけを使用する場合は、この時点でユーザーを追加し、ライセンスを割り当てることができます。 一方、組織のカスタム ドメイン名を使用する場合や、オンプレミスの Active Directory からユーザー アカウント情報を同期する場合は、そのブラウザー ウィンドウを閉じ、このクイック スタート ガイドの手順 2. に進んでください。 詳しくは、「[Office 365 の最初の onmicrosoft.com ドメインの概要](https://support.office.com/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A)」をご覧ください
 
 >[!TIP]
 > 次回 Intune にサインインすると、Intune 管理コンソールに自動的に移動します。
@@ -53,9 +54,4 @@ Intune にサインインまたはサインアップする前に、Microsoft Onl
 >[!div class="step-by-step"]
 
 >[&larr; **前提条件**](.\what-to-know-before-you-start-microsoft-intune.md)     [**ドメインの設定** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

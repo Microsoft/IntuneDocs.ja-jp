@@ -15,8 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 8e8257a426bd6b9a99e21e928b08c84f162d5da3
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 5975ba0219f464c8f5aa1735657ff3d1c186b991
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -29,7 +30,7 @@ Microsoft Intune は、クラウドベースのサービスであり、Windows�
 
 Microsoft では、Intune オンボーディング特典で、適格なプランの適格なサービスを提供します。 オンボーディング特典では、Intune 環境を使用できるようにするために、Microsoft の専門家がリモートでお手伝いします。 オンボーディング特典の詳細については、「[Enterprise Mobility の FastTrack プログラム](http://go.microsoft.com/fwlink/?LinkId=619281)」を参照してください。
 
-Intune は、100 ユーザー ライセンスを含む 30 日間の無料試用版で使用することができます。 無料試用版を開始する場合は、[Intune のサインアップ ページ](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/)にアクセスしてください。 お客様の組織が Enterprise Agreement または同等のボリューム ライセンス契約を結んでいる場合は、Microsoft 担当者に連絡して無料試用版の設定を依頼してください。
+Intune は、100 ユーザー ライセンスを含む 30 日間の無料試用版で使用することができます。 無料試用版を開始する場合は、[Intune のサインアップ ページ](https://www.microsoft.com/server-cloud/products/microsoft-intune/)にアクセスしてください。 お客様の組織が Enterprise Agreement または同等のボリューム ライセンス契約を結んでいる場合は、Microsoft 担当者に連絡して無料試用版の設定を依頼してください。
 
 > [!NOTE]
 > お客様の組織が Microsoft Online Services の職場や学校用アカウントをお持ちで、試用期間の終了後に Intune サブスクリプションを本番環境で継続して使用する場合、ページで **[サインイン]** オプションを選択し、組織のグローバル管理者アカウントを使用して認証を受けてください。 こうすることで、Intune 試用版が既存の職場や学校用アカウントと関連付けられます。
@@ -69,13 +70,13 @@ Intune には、会社のモバイル デバイスとコンピューター (こ�
 
 -**Intune スタンドアロン構成。** Intune の Web ベースの管理コンソールを使用して組織内のデバイスを管理します。 オンプレミスの IT インフラストラクチャを使用しなくても Intune を使用できます。 Intune と Active Directory Domain Services を使用している場合は、ドメイン サービスで管理しているドメイン ユーザー アカウントを Intune に使用できます。
 
--**Intune と System Center Configuration Manager。** Configuration Manager の管理コンソールを使うと、企業のコンピューターやモバイル デバイスを管理できます。 この構成を利用すると、Configuration Manager 管理コンソールという 1 つのコンソールで、すべての組織のデバイスを管理することができます。 Configuration Manager は、多数のモバイル デバイス、サーバー、コンピューターをサポートしています。 Configuration Manager の詳細については、「[System Center Configuration Manager と Microsoft Intune を使用するハイブリッド モバイル デバイス管理 (MDM)](https://technet.microsoft.com/library/mt627883.aspx)」を参照してください。 自分に適した手法を決める際は、「[Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](https://technet.microsoft.com/en-us/library/mt706478.aspx)」 (Microsoft Intune スタンドアロンを実行するのと Configuration Manager でハイブリッド MDM を実行するのはどちらが良いか) がお役に立ちます。
+-**Intune と System Center Configuration Manager。** Configuration Manager の管理コンソールを使うと、企業のコンピューターやモバイル デバイスを管理できます。 この構成を利用すると、Configuration Manager 管理コンソールという 1 つのコンソールで、すべての組織のデバイスを管理することができます。 Configuration Manager は、多数のモバイル デバイス、サーバー、コンピューターをサポートしています。 Configuration Manager の詳細については、「[System Center Configuration Manager と Microsoft Intune を使用するハイブリッド モバイル デバイス管理 (MDM)](https://technet.microsoft.com/library/mt627883.aspx)」を参照してください。 自分に適した手法を決める際は、「[Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](https://technet.microsoft.com/library/mt706478.aspx)」 (Microsoft Intune スタンドアロンを実行するのと Configuration Manager でハイブリッド MDM を実行するのはどちらが良いか) がお役に立ちます。
 
 
 ## <a name="learn-more-about-intune"></a>Intune の詳細
 Intune の詳細については、次のリソースを参照してください。
 
-- [Microsoft Intune セキュリティ センター](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/)では、Intune のセキュリティ、プライバシー、およびコンプライアンスのプラクティスに関する情報を提供しているほか、Intune の認定資格の一部についても説明しています。
+- [Microsoft Intune セキュリティ センター](https://www.microsoft.com/server-cloud/products/intune-trust-center/)では、Intune のセキュリティ、プライバシー、およびコンプライアンスのプラクティスに関する情報を提供しているほか、Intune の認定資格の一部についても説明しています。
 
 - [Microsoft Intune の登録済みデバイス管理機能](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 
@@ -84,9 +85,4 @@ Intune の詳細については、次のリソースを参照してください�
 [System Center 2012 Configuration Manager のドキュメント ライブラリ](https://technet.microsoft.com/library/gg682041.aspx)
 
 [Microsoft Intune の新機能](/intune/deploy-use/whats-new-in-microsoft-intune)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

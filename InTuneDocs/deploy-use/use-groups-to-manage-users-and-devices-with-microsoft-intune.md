@@ -15,8 +15,9 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
-ms.openlocfilehash: 59e376202ee268a9b99c017f813a7ef870e79548
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0325f60e83b6e339c96b38b36465f53d6ee5421b
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -89,7 +90,7 @@ Microsoft Intune 管理コンソールの **[グループ]** ワークスペー�
     > 現時点では、グループに特定のセキュリティ グループまたはマネージャー グループのメンバーが含まれる場合、一部のグループからメンバーを除外すると、最初に含まれていたメンバーが削除されます。 追加するメンバーと除外するメンバー両方のグループを作成するには、追加するメンバーの親グループを最初に作成することをお勧めします。 次に、その親グループの子グループを作成します。 新しい子グループで、除外するメンバーの一覧を表示します。 その後、その子グループを使用して、Intune のポリシー、プロファイル、アプリの配信を管理します。
 
     > [!NOTE]
-    > Azure ポータルでは、ユーザーの報告先のマネージャーに基づいてグループを作成できます。 この種のグループは動的で、Azure Active Directory でマネージャーのチームの従業員が追加または削除されると変更されます。 マネージャーの名前に基づいて Azure のグループを作成する方法については、「[属性を使用した高度なルールの作成](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)」の「**“Manager” グループとしてグループを構成するには**」セクションをご覧ください。
+    > Azure ポータルでは、ユーザーの報告先のマネージャーに基づいてグループを作成できます。 この種のグループは動的で、Azure Active Directory でマネージャーのチームの従業員が追加または削除されると変更されます。 マネージャーの名前に基づいて Azure のグループを作成する方法については、「[属性を使用した高度なルールの作成](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)」の「**“Manager” グループとしてグループを構成するには**」セクションをご覧ください。
 
 4.  **[ダイレクト メンバーシップの定義]** ページで、**[参照]** をクリックして追加または除外する個々のユーザーを選択します。 指定した親グループに含まれていないユーザーを選択した場合、そのユーザーは親グループに自動的に追加されます。 ユーザーを手動で追加するオプションは、**[メンバーの選択]** ダイアログ ボックスの一番下にあります。 これはまだ登録済みのデバイスのないユーザーを追加する場合に使用します。
 
@@ -151,9 +152,4 @@ Microsoft Intune 管理コンソールの **[グループ]** ワークスペー�
 
 > [!NOTE]
 > 制限レベルが異なる 2 つのポリシーを同じデバイスまたはユーザーに適用すると、より厳しい方のポリシーが実際に適用されます。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

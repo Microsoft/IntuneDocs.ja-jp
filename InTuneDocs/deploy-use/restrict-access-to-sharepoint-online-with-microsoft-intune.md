@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
-ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9e4fca9e29c8f0c2ec3ef088c3f91ad15ac11804
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -40,7 +41,7 @@ ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 
 SharePoint Online の条件付きアクセス ポリシーを構成する**前に**、次のことを行う必要があります。
 - **SharePoint Online サブスクリプション**を取得します。ユーザーには SharePoint Online のライセンスが必要です。
-- **Enterprise Mobility + Security (EMS) サブスクリプション**または **Azure Active Directory (Azure AD) Premium サブスクリプション**を取得します。ユーザーに EMS または Azure AD のライセンスが付与される必要があります。 詳細については、「[Enterprise Mobility pricing page](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility の価格) ページまたは「[Azure Active Directory の価格](https://azure.microsoft.com/en-us/pricing/details/active-directory/)」ページを参照してください。
+- **Enterprise Mobility + Security (EMS) サブスクリプション**または **Azure Active Directory (Azure AD) Premium サブスクリプション**を取得します。ユーザーに EMS または Azure AD のライセンスが付与される必要があります。 詳細については、「[Enterprise Mobility pricing page](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility の価格) ページまたは「[Azure Active Directory の価格](https://azure.microsoft.com/pricing/details/active-directory/)」ページを参照してください。
 
 
   必要なファイルに接続するには、デバイスが次の条件を満たしている必要があります。
@@ -59,10 +60,10 @@ SharePoint Online の条件付きアクセス ポリシーを構成する**前�
 
 -   デバイスがポリシーに準拠していない場合は、ユーザーを [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ポータル サイト Web サイトに導くメッセージが表示されます。このポータルで、問題とその修復方法に関する情報を確認することができます。
 
-**条件付きアクセスは外部共有に適用されません**。 テナントまたはサイト コレクションで外部共有を使用しない方法については、「[SharePoint Online 環境の外部共有を管理する](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US)」をご覧ください。
+**条件付きアクセスは外部共有に適用されません**。 テナントまたはサイト コレクションで外部共有を使用しない方法については、「[SharePoint Online 環境の外部共有を管理する](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)」をご覧ください。
 
 >[!NOTE]
->SharePoint Online で条件付きアクセスを有効にする場合は、[Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx) のトピックの説明に従って、一覧にあるドメインを無効にすることをお勧めします。  
+>SharePoint Online で条件付きアクセスを有効にする場合は、[Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/library/dn917451.aspx) のトピックの説明に従って、一覧にあるドメインを無効にすることをお勧めします。  
 
 ## <a name="support-for-mobile-devices"></a>モバイル デバイスのサポート
 次のものがサポートされています。
@@ -84,7 +85,7 @@ SharePoint Online の条件付きアクセス ポリシーを構成する**前�
 > [!NOTE]
 >Windows 10 を搭載した PC で条件付きアクセスを使用するには、Windows 10 Anniversary Update で PC を更新する必要があります。
 
-  - ドメインに参加している PC の場合、Azure Active Directory に[自動的に登録](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/)するように設定する必要があります。 Azure AD Device Registration サービスは、Intune や Office 365 のお客様に対して自動的にアクティブ化されます。 ADFS Device Registration Service をデプロイ済みのお客様には、オンプレミスの Active Directory で登録されたデバイスは表示されません。
+  - ドメインに参加している PC の場合、Azure Active Directory に[自動的に登録](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/)するように設定する必要があります。 Azure AD Device Registration サービスは、Intune や Office 365 のお客様に対して自動的にアクティブ化されます。 ADFS Device Registration Service をデプロイ済みのお客様には、オンプレミスの Active Directory で登録されたデバイスは表示されません。
 
   - ドメインへの参加を要求するようにポリシーを設定していて、PC がドメインに参加していない場合は、IT 管理者に連絡するようにメッセージが表示されます。
 
@@ -92,7 +93,7 @@ SharePoint Online の条件付きアクセス ポリシーを構成する**前�
   >[!NOTE]
   >Intune コンピューター クライアントを実行する PC では、条件付きアクセスはサポートされていません。
 
-[Office 365 の先進認証が有効化](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)されていて、最新の Office 更新プログラムがすべて適用されていること。
+[Office 365 の先進認証が有効化](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)されていて、最新の Office 更新プログラムがすべて適用されていること。
 
 先進認証により、Active Directory Authentication Library (ADAL) に基づくサインインが Office 2013 Windows クライアントに導入され、**多要素認証**や**証明書ベースの認証**などのより強力なセキュリティを使用できるようになります。
 
@@ -102,7 +103,7 @@ SharePoint Online の条件付きアクセス ポリシーを構成する**前�
 ### <a name="step-1-configure-active-directory-security-groups"></a>手順 1. Active Directory セキュリティ グループを構成する
 開始する前に、条件付きアクセス ポリシーの Azure Active Directory セキュリティ グループを構成します。 これらのグループは、**Office 365 管理センター**または **Intune アカウント ポータル**で構成できます。 これらのグループは、ユーザーをポリシーの対象とするか、または除外するために使用されます。 ユーザーがポリシーの対象となる場合、ユーザーに使用される各デバイスがリソースにアクセスするには、ポリシーを遵守している必要があります。
 
-SharePoint Online ポリシーには、次の&2; つのグループの種類を指定できます。
+SharePoint Online ポリシーには、次の 2 つのグループの種類を指定できます。
 
 -   **対象グループ**: ポリシーを適用するユーザーのグループが含まれます。
 
@@ -129,7 +130,7 @@ SharePoint Online ポリシーには、次の&2; つのグループの種類を�
 #### <a name="bkmk_spopolicy"></a>
 
 >[!NOTE]
-> Azure AD 管理コンソールで、Intune デバイスの条件付きアクセス ポリシーを作成することもできます (このようなポリシーは、Azure AD の**デバイス ベースの条件付きアクセス ポリシー**と呼ばれます)。 さらに、多要素認証のような他の条件付きアクセス ポリシーを作成することもできます。 Azure AD がサポートするサード パーティ製の Enterprise アプリ (Salesforce や Box など) に条件付きアクセス ポリシーを設定することもできます。 詳細については、「[Azure Active Directory に接続されたアプリケーションのアクセスを制御する Azure Active Directory デバイス ベースの条件付きアクセス ポリシーを設定する方法](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/)」を参照してください。
+> Azure AD 管理コンソールで、Intune デバイスの条件付きアクセス ポリシーを作成することもできます (このようなポリシーは、Azure AD の**デバイス ベースの条件付きアクセス ポリシー**と呼ばれます)。 さらに、多要素認証のような他の条件付きアクセス ポリシーを作成することもできます。 Azure AD がサポートするサード パーティ製の Enterprise アプリ (Salesforce や Box など) に条件付きアクセス ポリシーを設定することもできます。 詳細については、「[Azure Active Directory に接続されたアプリケーションのアクセスを制御する Azure Active Directory デバイス ベースの条件付きアクセス ポリシーを設定する方法](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/)」を参照してください。
 
 
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** > **[条件付きアクセス]** > **[SharePoint Online ポリシー]** の順に選択します。
@@ -195,9 +196,4 @@ SharePoint Online ポリシーには、次の&2; つのグループの種類を�
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune を使用して電子メールおよび O365 サービスへのアクセスを保護する](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

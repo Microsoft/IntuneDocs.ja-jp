@@ -14,9 +14,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: ad1133d17f8d64c79c08437b914ae28e00cae638
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: eaf30c8a59013af6359743227edc8aa6709577c5
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -57,7 +57,7 @@ ms.lasthandoff: 03/21/2017
 
 1. **iOS 管理**がデバイスにセットアップされていることを確認します。 デバイスで iOS 管理をセットアップする手順については、「[iOS および Mac のデバイス管理をセットアップする](set-up-ios-and-mac-management-with-microsoft-intune.md)」を参照してください。
 
-2. Lookout for Work iOS アプリに**再署名**します。 Lookout は、iOS App Store 以外の場所で Lookout for Work iOS アプリを配布しています。 **アプリを配布する前に**、iOS Enterprise Developer Certificate でアプリに再署名する必要があります。 Lookout for Work アプリに再署名する詳細な手順については、Lookout サイトの「[Lookout for Work iOS app re-signing process](https://personal.support.lookout.com/hc/en-us/articles/114094038714)」(Lookout for Work iOS アプリの再署名プロセス) を参照してください。
+2. Lookout for Work iOS アプリに**再署名**します。 Lookout は、iOS App Store 以外の場所で Lookout for Work iOS アプリを配布しています。 **アプリを配布する前に**、iOS Enterprise Developer Certificate でアプリに再署名する必要があります。 Lookout for Work アプリに再署名する詳細な手順については、Lookout サイトの「[Lookout for Work iOS app re-signing process](https://personal.support.lookout.com/hc/articles/114094038714)」(Lookout for Work iOS アプリの再署名プロセス) を参照してください。
 
 3. 次の手順を実行して、iOS ユーザーの Azure Active Directory 認証を有効にします。
   1.  [Azure Active Directory 管理ポータル](https://manage.windowsazure.com)にログインし、アプリケーション ページに移動します。
@@ -67,13 +67,13 @@ ms.lasthandoff: 03/21/2017
   4.  リダイレクト URI を追加します。**&lt;companyportal://code/>** の後に、元のリダイレクト URI を URL エンコードしたバージョンを続けます。
   5.  アプリに**デリゲートされたアクセス許可**を追加します。
 
-  詳細については、「[ネイティブ クライアント アプリケーションの構成](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application)」を参照してください。
+  詳細については、「[ネイティブ クライアント アプリケーションの構成](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application)」を参照してください。
 
-4. [Microsoft Intune でのモバイル デバイスのアプリの追加](https://docs.microsoft.com/en-us/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)に関するトピックの説明に従って、再署名した .ipa ファイルをアップロードします。 最小 OS バージョンを iOS 8.0 以降に設定します。
+4. [Microsoft Intune でのモバイル デバイスのアプリの追加](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)に関するトピックの説明に従って、再署名した .ipa ファイルをアップロードします。 最小 OS バージョンを iOS 8.0 以降に設定します。
 
   ![アプリの一覧に Lookout for Work アプリが表示された Intune 管理コンソールのアプリ ページのスクリーンショット](../media/mtp/ios-app-uploaded-intune.png)
 
-5. 「[Configure iOS apps with mobile app configuration policies in Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)」 (Microsoft Intune でのモバイル アプリ構成ポリシーを使用した iOS アプリの構成) の説明に従って、管理対象アプリの構成ポリシーを作成します。
+5. 「[Configure iOS apps with mobile app configuration policies in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)」 (Microsoft Intune でのモバイル アプリ構成ポリシーを使用した iOS アプリの構成) の説明に従って、管理対象アプリの構成ポリシーを作成します。
 
   ![iOS 8.0 以降のアプリ構成ポリシーが強調表示された新しいポリシーの作成ウィザードのスクリーンショット](../media/mtp/ios-app-config.png)
 

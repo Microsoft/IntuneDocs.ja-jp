@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
-ms.openlocfilehash: ea5407c284f5408774ee5934ad6151bccfd7e6d1
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9e084cce8e34b0de2dce7c6b8503d5b5089c930e
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -62,7 +62,7 @@ ms.lasthandoff: 02/18/2017
 |||
 |-|-|
 |電子メールのプロファイル|このポリシーを使用すると、モバイル デバイス上の特定の電子メール クライアントに[電子メール アクセス設定](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)をセットアップし、エンド ユーザーが行う必要のある設定の量を最小限に抑えることができます。|
-|EMS|Microsoft Enterprise Mobility + Security (旧称 Enterprise Mobility Suite) は、会社のデータを保護しながら、ユーザーには[必要なアプリとコンテンツにアクセスできる](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility)ようにします。|
+|EMS|Microsoft Enterprise Mobility + Security (旧称 Enterprise Mobility Suite) は、会社のデータを保護しながら、ユーザーには[必要なアプリとコンテンツにアクセスできる](https://www.microsoft.com/cloud-platform/enterprise-mobility)ようにします。|
 |エンド ユーザー|Intune を使用して管理される[スマートフォンや PC などのデバイスのユーザー](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)です。|
 |登録|Microsoft Intune は、[登録](/intune/deploy-use/enroll-devices-in-microsoft-intune)を使用して、デバイスを管理対象にし、リソースへのアクセスを許可します。|
 
@@ -122,7 +122,7 @@ ms.lasthandoff: 02/18/2017
 |リモート ロック|デバイスを所有していない場合でも[サポートされているデバイスをロック](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune)できる Intune の機能です。|
 |Reports|Intune には、管理対象デバイスに関する情報を提供するさまざまな[組み込みレポート](/intune/deploy-use/understand-microsoft-intune-operations-by-using-reports)があります。|
 |必須のインストール|この操作でアプリを展開すると、[ユーザーによる介入なしで](/intune/deploy-use/deploy-apps)デバイスにアプリがインストールされます (ただし、一部のプラットフォームでは、エンド ユーザーがインストールを受け入れる必要があります)。|
-|要件|アプリをインストールする前にデバイスが満たす必要のある要件を選択できる[アプリ展開操作](/en-us/intune/deploy-use/add-apps)です。 たとえば、アプリをインストールする前にインストールされている必要がある iOS の OS バージョンを指定できます。|
+|要件|アプリをインストールする前にデバイスが満たす必要のある要件を選択できる[アプリ展開操作](/intune/deploy-use/add-apps)です。 たとえば、アプリをインストールする前にインストールされている必要がある iOS の OS バージョンを指定できます。|
 
 ## <a name="s"></a>S
 |||

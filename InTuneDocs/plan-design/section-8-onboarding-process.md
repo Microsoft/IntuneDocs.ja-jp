@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fa33bd3833f7f7198eed3f4f486c27bae3ba47d7
-ms.openlocfilehash: 87832ec7f295c08678052d19164af9a8db051f9f
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 23d40a31c43a061e0f3b1fbb05827697ca7380ac
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -61,7 +62,7 @@ Intune を実装するときの各作業の概要は次のようになります�
 
 前の要件セクションで確認したように、EMS または Intune サブスクリプションが必要です。 組織が EMS または Intune サブスクリプションを持っていない場合、Microsoft または組織の Microsoft アカウント チームに問い合わせ、Enterprise Mobility + Security (EMS) または Intune の購入に関心がある旨をお伝えください。
 
--   Microsoft Intune の購入方法については[こちら](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing)をご覧ください。
+-   Microsoft Intune の購入方法については[こちら](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing)をご覧ください。
 
 #### <a name="task-2-add-office-365-subscription"></a>作業 2: Office 365 サブスクリプションを追加する
 
@@ -115,7 +116,7 @@ Microsoft Intune は、電子メール、Wi-Fi、VPN のプロファイルに対
 
 Microsoft Intune では、Web、LOB、パブリック ストアのアプリを展開できます。 また、MAM ポリシーと関連付けることで Intune SDK を統合しているアプリを管理できます。 アプリの追加と展開は Intune 管理ポータルのアプリ ワークスペースで行います。 MAM ポリシーの追加は Intune 管理ポータルのポリシー ワークスペースで行います。 Intune 展開のユース ケースと要件に基づき、アプリを適宜追加し、対象グループに展開します。
 
--   アプリの追加と展開方法の詳細については、[ここ](https://docs.microsoft.com/en-us/intune/deploy-use/deploy-apps)をご覧ください。
+-   アプリの追加と展開方法の詳細については、[ここ](https://docs.microsoft.com/intune/deploy-use/deploy-apps)をご覧ください。
 
 #### <a name="task-11-add-and-deploy-compliance-policies"></a>作業 11: コンプライアンス ポリシーを追加し、展開する
 
@@ -141,9 +142,4 @@ Intune は、iOS、Mac OS、Android、Windows デスクトップ、Windows モ�
 ## <a name="next-section"></a>次のセクション
 
 次のセクションでは、[Intune 展開をテストし、検証する](section-9-test-and-validation.md)方法について説明します。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

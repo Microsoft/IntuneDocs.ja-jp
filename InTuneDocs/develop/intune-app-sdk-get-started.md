@@ -15,8 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: dc059b2865cef32091582b0f0d2a2ced8b35e8fa
-ms.openlocfilehash: 55e4be001c3ff946b8a63291ed9227bc3d185001
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 95c12111693e00fb6f67d20464dd159aeb4bb609
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -37,14 +38,14 @@ Intune アプリ SDK は、iOS と Android で類似するシナリオをサポ�
 
 最初に Microsoft Intune にアプリを登録し、登録規約に同意する_**必要があります**_。 その後、IT 管理者はアプリ保護ポリシーを対応アプリに適用できるようになり、そのアプリは Intune アプリ パートナーとしてリストされます。
 
-登録が完了し、Microsoft Intune チームによって確認されるまで、Intune 管理者はアプリ保護ポリシーをアプリのディープ リンクに適用できません。 アプリは、[Microsoft Intune パートナーのページ](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)にも追加されます。 ここには、Intune のアプリ保護ポリシーに対応していることを示すアプリのアイコンが表示されます。
+登録が完了し、Microsoft Intune チームによって確認されるまで、Intune 管理者はアプリ保護ポリシーをアプリのディープ リンクに適用できません。 アプリは、[Microsoft Intune パートナーのページ](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)にも追加されます。 ここには、Intune のアプリ保護ポリシーに対応していることを示すアプリのアイコンが表示されます。
 
 登録プロセスを開始するには、[Microsoft Intune アプリ パートナー アンケート](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u)に記入します。
 
 Microsoft が、アンケートに入力された電子メール アドレスを使用してご連絡し、登録プロセスを続行します。 また、何らかの問題が発生した場合の連絡にも、登録電子メール アドレスを使用します。
 
 > [!NOTE]
-> アンケートおよび Microsoft Intune チームとの電子メール通信で収集されたすべての情報は、[Microsoft のプライバシーに関する声明](https://www.microsoft.com/en-us/privacystatement/default.aspx)に従って処理されます。
+> アンケートおよび Microsoft Intune チームとの電子メール通信で収集されたすべての情報は、[Microsoft のプライバシーに関する声明](https://www.microsoft.com/privacystatement/default.aspx)に従って処理されます。
 
 **登録プロセスの流れ**:
 
@@ -52,7 +53,7 @@ Microsoft が、アンケートに入力された電子メール アドレスを
 
 2. 必要な情報をすべて受け取った後、Microsoft は署名のために Microsoft Intune アプリ パートナー契約をお送りします。 この契約には、Microsoft Intune アプリ パートナーになる上でお客様の会社が同意する必要のある条項が記載されています。
 
-3. また、アプリが正常に Microsoft Intune サービスに登録されたり、アプリが [Microsoft Intune パートナー](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps)のサイトで推奨されたりした場合にも連絡があります。
+3. また、アプリが正常に Microsoft Intune サービスに登録されたり、アプリが [Microsoft Intune パートナー](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)のサイトで推奨されたりした場合にも連絡があります。
 
 4. 最後に、アプリのディープ リンクが、次の月の Intune サービス更新に追加されます。 たとえば、7 月に登録情報を完了した場合、ディープ リンクのサポートは 8 月中旬になります。
 
@@ -137,9 +138,4 @@ Intune アプリ保護ポリシーがアプリで機能していることを確�
 * **.eps** ファイルを読み取れるイメージ操作アプリケーション、または **.ai** ファイルを読み取れる Adobe アプリケーション。
 
 * [Intune アプリ バッジのアセットとガイドライン](https://github.com/msintuneappsdk/intune-app-partner-badge)は、Microsoft Intune GitHub にあります。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
