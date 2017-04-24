@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 8a43e1646476696b978a7f8a3e92f920606a698b
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: 24498abc504f05bd22dc7309bc22948292f9b1e6
+ms.openlocfilehash: 731d57859474276b51c0cb0b17a3354eaec17348
+ms.lasthandoff: 04/13/2017
 
 
 ---
@@ -80,6 +80,9 @@ iOS デバイスが紛失または盗難にあった場合は、紛失モード�
 1.    iOS デバイスのプロパティ ブレードで、**[詳細]**  >  **[デバイスを探索する]** を選択します。
 2.    デバイスの位置が特定されると、その場所が **[デバイスを探索する]** ブレードに表示されます。 
     ![[デバイスを検索する] ブレード](./media/locate-device.png)
+
+>[!NOTE]
+>プライバシーのために、マップでズームインできる距離は制限されています。
 
 ### <a name="restart"></a>**再起動**
 デバイスを再起動します。 デバイスの所有者には再起動の自動通知が行われないため、作業内容が失われる可能性があります。

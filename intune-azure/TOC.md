@@ -58,13 +58,13 @@
 <!--- ## [Plan and design](manage-devices/plan-and-design.md) --->
 ## 方法
 ### [フル ワイプまたは選択的ワイプを使用する](manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)
-### [Android デバイスのリモート コントロール](manage-devices/control-android-devices-with-teamviewer.md)
 <!--- ## [Troubleshoot](manage-devices/troubleshooting.md) --->
 
 # ユーザーの管理
 ## [ユーザー管理とは](manage-users/what-is.md)
 <!--- Was What is users & group management--->
 ## [作業開始](manage-users/get-started-with-groups.md)
+## [ヘルプのユーザー](manage-users/help-desk.md)
 <!--- ## [Plan and design](manage-users/plan-and-design.md) --->
 
 <!--- ## [Troubleshoot](manage-users/troubleshooting.md) --->
