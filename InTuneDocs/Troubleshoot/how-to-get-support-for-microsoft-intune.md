@@ -5,7 +5,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 01/27/2016
+ms.date: 04/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,23 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 5726934501b3d6b243de94951cf0c57cbd79a811
-ms.openlocfilehash: ccc0502c81cb16d2ca13e5d6a702c0ff863b83e4
-ms.lasthandoff: 03/09/2017
+ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
+ms.openlocfilehash: ae9af31263de8b0b95f98e423f8a9a59c0c66c4c
+ms.lasthandoff: 04/12/2017
 
 
 ---
 
-# <a name="how-admins-get-support-for-microsoft-intune"></a>管理者が Microsoft Intune のサポートを受ける方法
+# <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune のサポートを受ける方法
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft サポートは、Microsoft Intune に世界的な技術、購入前、請求、およびサブスクリプションのサポートを提供しています。 有料サブスクリプションとトライアル サブスクリプションについて、オンラインと電話によるサポートを利用できます。 オンライン テクニカル サポートは、英語と日本語で提供されています。 電話によるサポートとオンライン課金サポートは、他の言語でも利用できます。
 
 Intune のサポートについては、Configuration Manager で使用する場合、無料です。 Premier サポートを契約されているお客様は、手順に関する質問 (たとえば、Intune 機能を構成する方法) の場合、料金が発生します。
+
+>[!IMPORTANT]
+> Intune と連携し、Microsoft 製ではない製品 (SaaSwedo、Cisco、Lookout などの製品) のテクニカル サポートについては、まずその製品の提供元に連絡し、構成が正しいことを確認してから、Intune サポートのケースを開いてください。
 
 ## <a name="find-help-without-opening-a-support-ticket"></a>サポート チケットを開かずにヘルプを見つける
 
@@ -40,6 +43,13 @@ Microsoft の技術スタッフに質問をお送りいただくか、ディス�
 
 ![Microsoft Intune TechNet フォーラム](./media/technet-forum-for-support.png)
 
+### <a name="get-started-with-the-forum"></a>フォーラムの利用
+
+1. フォーラム ページで、[フォーラム] ボックスに「Microsoft Intune」と入力し、一覧から選択します。<br>
+![Intune フォーラムの選択コントロール](./media/forum-select-intune.png)
+2. 選択したフォーラムの一覧に Microsoft Intune が表示されます。<br>
+![フォーラム コントロールで選択されている Intune](./media/forum-selected-intune.png)
+
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Microsoft Intune UserVoice 製品フィードバック サイト
 
 Microsoft による Intune の改善に役立つフィードバックはありますか。 Microsoft Intune の [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) フィードバック サイトにアイデアを追加してください。 他のユーザーが UserVoice に追加したアイデアに投票することもできます。
@@ -48,7 +58,7 @@ Microsoft による Intune の改善に役立つフィードバックはあり�
 
 ## <a name="create-a-support-ticket"></a>サポート チケットを作成する
 
-セルフヘルプ リソースに回答が見つからない場合は、オンライン サポート チケットを作成できます。 より良いサービスを提供するため、**各サポート チケットに含める問題は&1; つに制限してください**。 その理由を次に示します。
+セルフヘルプ リソースに回答が見つからない場合は、オンライン サポート チケットを作成できます。 より良いサービスを提供するため、**各サポート チケットに含める問題は 1 つに制限してください**。 その理由を次に示します。
 
 - 支援を提供するサポート エンジニアは、特定の分野を専門としている場合が多く、問題の解決に適した分野の専門家を見つける方がより簡単に解決します。
 - エンジニアリング チームは多くのインシデントが発生している製品領域の作業を優先することができます。
@@ -113,7 +123,7 @@ Office 365 管理センターのサポート ページが次のように表示�
 - 運用、操作、または展開の期日が重大な影響を受けているか、運用または収益性に重大な影響が出ると予想されます。
 - 複数のユーザーまたはサービスが影響を受けています。
 
-重大度が中程度の場合、Professional サポートをご利用のお客様に対しては、初回の応答が&4; 時間以内に行われます。 Premier サポートをご契約のお客様の場合、応答はサポート契約の内容によって変わります。 次のようなケースでは、**重大度が中程度**だと言えます。
+重大度が中程度の場合、Professional サポートをご利用のお客様に対しては、初回の応答が 4 時間以内に行われます。 Premier サポートをご契約のお客様の場合、応答はサポート契約の内容によって変わります。 次のようなケースでは、**重大度が中程度**だと言えます。
 
 - サービスは使用できますが、通常の機能とは異なります。
 - ビジネスに中程度の影響があり、営業時間中に処理できます。

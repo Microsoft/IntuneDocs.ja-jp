@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,9 +17,9 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1d0284ca2b5fd935a8657e3dd73d23d45071fd50
-ms.openlocfilehash: 126fce43ea91d5ec9e447d731e4e9ab5663df956
-ms.lasthandoff: 03/25/2017
+ms.sourcegitcommit: bed28fc91271c12377f45662aa00fc9616d16fe8
+ms.openlocfilehash: f46a93d42427ea41adf71403c91fa95052c0bba2
+ms.lasthandoff: 04/11/2017
 
 
 ---
@@ -41,6 +41,7 @@ Android デバイスで発生する問題の一部は、トラブルシューテ
 - [USB デバッグを無効にする必要がある](you-need-to-turn-off-usb-debugging-android.md)
 - [セキュリティ上の脅威に対するスキャンを有効にする必要がある](you-need-to-turn-on-scanning-for-security-threats-android.md)
 - [デバイスが最小限のセキュリティ パッチを満たしていない](you-need-to-update-your-device-OS-security-patch-android.md)
+- [デバイスはポータル サイト アプリで暗号化されているようだが、他の方法で暗号化されている](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
 - [Android デバイスに Device Threat Protection アプリをインストールするよう求められた](you-are-prompted-to-install-mtd-android.md)
 - [Android デバイスで Device Threat Protection アプリが検出した脅威を解決する必要がある](you-need-to-resolve-a-threat-found-by-mtd-android.md)
 

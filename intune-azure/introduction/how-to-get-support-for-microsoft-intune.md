@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/27/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 4c790438911b06915c49bd76a4ae413b7a9471d1
-ms.openlocfilehash: 70f9638941b61309fc2d97987ab20b3d54e529ee
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
+ms.openlocfilehash: 679ac408349a82b17ec63109770126e0ad072c6d
+ms.lasthandoff: 04/12/2017
 
 
 ---
@@ -31,6 +31,10 @@ Microsoft サポートは、Microsoft Intune に世界的な技術、購入前�
 
 Intune のサポートについては、Configuration Manager で使用する場合、無料です。 Premier サポートを契約されているお客様は、手順に関する質問 (たとえば、Intune 機能を構成する方法) の場合、料金が発生します。
 
+>[!IMPORTANT]
+> Intune と連携し、Microsoft 製ではない製品 (SaaSwedo、Cisco、Lookout などの製品) のテクニカル サポートについては、まずその製品の提供元に連絡し、構成が正しいことを確認してから、Intune サポートのケースを開いてください。
+
+
 ## <a name="find-help-without-opening-a-support-ticket"></a>サポート チケットを開かずにヘルプを見つける
 
 サポート チケットを作成する前に、次のリソースで回答や情報を確認してください。 また、[Microsoft Intune の一般的なトラブルシューティングのヒント](https://docs.microsoft.com/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)も確認してください。
@@ -40,6 +44,13 @@ Intune のサポートについては、Configuration Manager で使用する場
 Microsoft の技術スタッフに質問をお送りいただくか、ディスカッションにご参加ください。 回答や情報は、[Microsoft Intune TechNet フォーラム](https://social.technet.microsoft.com/Forums/home)で検索できます。
 
 ![Microsoft Intune TechNet フォーラム](./media/technet-forum-for-support.png)
+
+### <a name="get-started-with-the-forum"></a>フォーラムの利用
+
+1. フォーラム ページで、[フォーラム] ボックスに「Microsoft Intune」と入力し、一覧から選択します。<br>
+![Intune フォーラムの選択コントロール](./media/forum-select-intune.png)
+2. 選択したフォーラムの一覧に Microsoft Intune が表示されます。<br>
+![フォーラム コントロールで選択されている Intune](./media/forum-selected-intune.png)
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Microsoft Intune UserVoice 製品フィードバック サイト
 
@@ -51,7 +62,7 @@ Microsoft による Intune の改善に役立つフィードバックはあり�
 
 セルフヘルプ リソースに回答が見つからない場合は、オンライン サポート チケットを作成できます。
 
-より良いサービスを提供するため、**各サポート チケットに含める問題は&1; つに制限してください**。 その理由を次に示します。
+より良いサービスを提供するため、**各サポート チケットに含める問題は 1 つに制限してください**。 その理由を次に示します。
 
 - 支援を提供するサポート エンジニアは、特定の分野を専門としている場合が多く、問題の解決に適した分野の専門家を見つける方がより簡単に解決します。
 - エンジニアリング チームは多くのインシデントが発生している製品領域の作業を優先することができます。
@@ -92,7 +103,7 @@ Microsoft による Intune の改善に役立つフィードバックはあり�
 ![別の Intune サポート](./media/alternate-support-ui.png)
 
 
-1. [**Need help**] (ヘルプが必要) を選択します。
+1. [**Need help**]\(ヘルプが必要) を選択します。
 2. テキスト ボックスに問題に関する説明を入力して、**[ヘルプの表示]** を選択します。
 
     ![別の Intune サポート チケット](./media/support-need-help.png)
@@ -113,7 +124,7 @@ Microsoft による Intune の改善に役立つフィードバックはあり�
 - 運用、操作、または展開の期日が重大な影響を受けているか、運用または収益性に重大な影響が出ると予想されます。
 - 複数のユーザーまたはサービスが影響を受けています。
 
-重大度が中程度の場合、Professional サポートをご利用のお客様に対しては、初回の応答が&4; 時間以内に行われます。 Premier サポートをご契約のお客様の場合、応答はサポート契約の内容によって変わります。  次のような事例が該当します。
+重大度が中程度の場合、Professional サポートをご利用のお客様に対しては、初回の応答が 4 時間以内に行われます。 Premier サポートをご契約のお客様の場合、応答はサポート契約の内容によって変わります。  次のような事例が該当します。
 
 - サービスは使用できますが、通常の機能とは異なります。
 - ビジネスに中程度の影響があり、営業時間中に処理できます。
