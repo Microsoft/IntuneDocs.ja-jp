@@ -78,8 +78,6 @@ Microsoft Intune を使用して、Exchange Online または Exchange Online Ded
 - Android 4.0 以降、Samsung KNOX Standard 4.0 以降、Android for Work
 - iOS 8.0 以降
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 **先進認証**では、Active Directory Authentication Library (ADAL) ベースのサインインが Microsoft Office クライアントに導入されます。
 
 -   ADAL ベースの認証を使用すると、Office クライアントでブラウザー ベースの認証 (パッシブ認証とも呼ばれます) を利用できます。 認証するときに、ユーザーはサインイン Web ページに転送されます。

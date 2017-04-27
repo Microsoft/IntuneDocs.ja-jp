@@ -58,8 +58,6 @@ Simple Certificate Enrollment Protocol (SCEP) または PKCS #12 (.PFX) 証明�
 
 -  Windows Phone 8.1 以降
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 2.  **信頼済み証明書プロファイル** ポリシーを追加します。
 
     詳しくは、「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」をご覧ください。

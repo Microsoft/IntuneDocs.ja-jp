@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
 ms.openlocfilehash: 58671d037c7f62e5fdaa56657737a4470c90bdb7
+ms.lasthandoff: 02/04/2017
 
 
 ---
@@ -24,8 +25,6 @@ ms.openlocfilehash: 58671d037c7f62e5fdaa56657737a4470c90bdb7
 # <a name="configure-android-for-work-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Microsoft Intune でのモバイル アプリ構成ポリシーを使用した Android for Work アプリの構成
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Microsoft Intune のモバイル アプリ構成ポリシーを使用して、ユーザーがアプリを実行するときに必要となる可能性がある設定を指定できます。 たとえば、アプリは次の内容を指定することをユーザーに要求することがあります。
 
@@ -76,9 +75,4 @@ Android for Work デバイスにアプリを展開する方法については、
 
 > [!TIP]
 > 各ユーザーの各アプリには、1 つのアプリ構成ポリシーのみを展開します。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
