@@ -15,9 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
-ms.openlocfilehash: ae9af31263de8b0b95f98e423f8a9a59c0c66c4c
-ms.lasthandoff: 04/12/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 15229d2dff3b5e9a13bf1f9321ba09df81717052
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -70,11 +70,11 @@ Microsoft による Intune の改善に役立つフィードバックはあり�
 
 1.  Intune 資格情報を使用して [Office 365 管理センター](https://portal.office.com)にサインインします。
 
-    Premier サポートを契約されている場合は、代わりに [Premier サポート ページ](https://support.microsoft.com/en-us/premier/contacts)で Intune サポート チケットを開く必要があります。
+    Premier サポートを契約されている場合は、代わりに [Premier サポート ページ](https://support.microsoft.com/premier/contacts)で Intune サポート チケットを開く必要があります。
 
     >[!NOTE]
     >
-    >Premier サポートを契約されているお客様は [Premier サポート ページ](https://support.microsoft.com/en-us/premier/contacts)で Intune サポート チケットを開く必要があります。
+    >Premier サポートを契約されているお客様は [Premier サポート ページ](https://support.microsoft.com/premier/contacts)で Intune サポート チケットを開く必要があります。
 
 2.  **[管理者]** タイルを選択します。
 3.  左側の **[サポート]** で、**[サポート]** を選んでチケットを開きます。
@@ -136,7 +136,7 @@ Office 365 管理センターのサポート ページが次のように表示�
 - 1 人のユーザーに部分的な中断が発生していますが、許容できる回避策があります。
 
 > [!NOTE]
-> **Microsoft System Center Configuration Manager** または **Microsoft System Center Endpoint Protection** を使用している場合: Configuration Manager または Endpoint Protection のテクニカル サポートについては、パートナーに問い合わせるか、[Microsoft System Center Configuration Manager](https://docs.microsoft.com/sccm/) および [Endpoint Protection](https://technet.microsoft.com/en-us/library/hh508836.aspx) に関するドキュメントにアクセスして、豊富なセルフヘルプ資料を参照してください。 オンラインまたは電話でサポート リクエストを開始することもできます。
+> **Microsoft System Center Configuration Manager** または **Microsoft System Center Endpoint Protection** を使用している場合: Configuration Manager または Endpoint Protection のテクニカル サポートについては、パートナーに問い合わせるか、[Microsoft System Center Configuration Manager](https://docs.microsoft.com/sccm/) および [Endpoint Protection](https://technet.microsoft.com/library/hh508836.aspx) に関するドキュメントにアクセスして、豊富なセルフヘルプ資料を参照してください。 オンラインまたは電話でサポート リクエストを開始することもできます。
 >
 > System Center Configuration Manager または System Center Endpoint Protection のテクニカル サポートは有料です。または既存のライセンスまたは Premire サポート契約の利用分としてカウントされます。
 
