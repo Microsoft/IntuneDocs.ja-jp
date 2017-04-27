@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 9cf53cb240ba14317fbb680ad4f4c40c8320506d
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -36,8 +37,6 @@ VPN、Wi-Fi、または電子メール プロファイル経由でユーザー�
  -  Android for Work
  -  Windows 8.1 以降
  -  Windows Phone 8.1 以降
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 3. 「[Intune 証明書プロファイルを構成する](configure-intune-certificate-profiles.md)」の説明に従って、デバイスが VPN、Wi-Fi、電子メールによるアクセスの認証に使用する証明書を要求するように、証明書プロファイルを作成します。 次のプラットフォームを実行するデバイスに対しては、**PKCS #12 (.PFX) 証明書プロファイル***または* **SCEP 証明書プロファイル**を作成して展開できます。
 
@@ -62,9 +61,4 @@ VPN、Wi-Fi、または電子メール プロファイル経由でユーザー�
 - [SCEP の証明書インフラストラクチャを構成する](configure-certificate-infrastructure-for-scep.md)
 - [PFX の証明書インフラストラクチャを構成する](configure-certificate-infrastructure-for-pfx.md)
 - [Intune 証明書プロファイルを構成する](configure-intune-certificate-profiles.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

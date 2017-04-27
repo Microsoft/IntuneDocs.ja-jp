@@ -83,10 +83,7 @@ Microsoft Intune を使用して、Exchange On-premises または従来の Excha
 -   Android 4 以降での Exchange ActiveSync メール クライアント (Gmail など)。
 -   Exchange ActiveSync メール クライアント **Android for Work デバイス:** Android for Work デバイスでは、**仕事用プロファイル**の **Gmail** アプリと **Nine Work** アプリのみがサポートされています。 条件付きアクセスが Android for Work で動作するには、Gmail アプリまたは Nine Work アプリ用の電子メール プロファイルを展開する必要があります。また、必要なインストールとしてそのアプリを展開する必要があります。 
 
-<!---
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
---->
-> [!NOTE] 
+> [!NOTE]
 > Android と iOS の Microsoft Outlook アプリはサポートされていません。
 
 ## <a name="support-for-pcs"></a>PC のサポート

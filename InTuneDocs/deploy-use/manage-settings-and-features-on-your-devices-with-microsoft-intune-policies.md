@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: f153e3a58f9655bd1e36094f292098c9f55742b6
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -41,7 +42,6 @@ Intune のポリシーは以下のカテゴリに分類されます。 使用す
 - **リソース アクセス ポリシー:** これらのポリシーを使用すると、ユーザーはどこにいても仕事を確実に遂行するために必要なファイルとリソースにアクセスできます。
 詳細については、「[Microsoft Intune を使用して、会社のリソースへのアクセスを有効にする](enable-access-to-company-resources-with-microsoft-intune.md)」を参照してください。
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Intune ポリシーの一覧については、「[Microsoft Intune policy reference (Microsoft Intune ポリシー リファレンス)](microsoft-intune-policy-reference.md)」を参照してください。
 
@@ -212,9 +212,4 @@ Intune は Apple 構成ファイルのペイロードまたはカスタム Open 
 ### <a name="where-can-i-find-help-troubleshooting-policies"></a>ポリシーのトラブルシューティングのヘルプはどこにありますか?
 
 「[Microsoft Intune のポリシーのトラブルシューティング](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)」をご覧ください。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
