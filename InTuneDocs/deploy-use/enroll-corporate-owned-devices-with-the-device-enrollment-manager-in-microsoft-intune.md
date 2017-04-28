@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a4b6d8b0a63d707631e3f0e231b2e9b40f2609cf
-ms.openlocfilehash: 1d8109fca8170ad127f6377918d7c0313ba26d78
-ms.lasthandoff: 03/24/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ea57a51f2855dea416ad4a76e657e1846ffe41f1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -69,9 +69,9 @@ DEM ユーザーができること:
 
 ## <a name="add-a-device-enrollment-manager"></a>デバイス登録マネージャーの追加
 
-1.  DEM アカウントに追加するユーザーが既に存在することを確認します。 ユーザーを追加する必要がある場合、[Office 365 ポータル](http://go.microsoft.com/fwlink/p/?LinkId=698854)にサインインし、「[Office 365 にユーザーを個別に、またはまとめて追加する - 管理者向けヘルプ](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)」の手順を実行します。
+1.  DEM アカウントに追加するユーザーが既に存在することを確認します。 ユーザーを追加する必要がある場合、[Office 365 ポータル](https://go.microsoft.com/fwlink/p/?LinkId=698854)にサインインし、「[Office 365 にユーザーを個別に、またはまとめて追加する - 管理者向けヘルプ](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)」の手順を実行します。
 
-2.  管理者の資格情報を使用して、[Microsoft Intune 管理コンソール](http://manage.microsoft.com) にサインインします。
+2.  管理者の資格情報を使用して、[Microsoft Intune 管理コンソール](https://manage.microsoft.com) にサインインします。
 
 3.  ナビゲーション ウィンドウで、**[管理]**、**[管理者の管理]** の順に選択し、**[デバイス登録マネージャー]** を選択します。 **[デバイス登録マネージャー]** ページが表示されます。
 
@@ -88,7 +88,7 @@ DEM ユーザーができること:
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>Intune からのデバイス登録マネージャーの削除
 
-1.  管理者の資格情報を使用して、[Microsoft Intune 管理ポータル](http://manage.microsoft.com)にサインインします。
+1.  管理者の資格情報を使用して、[Microsoft Intune 管理ポータル](https://manage.microsoft.com)にサインインします。
 
 2.  ナビゲーション ウィンドウで、**[管理]**、**[管理者の管理]** の順に選択し、**[デバイス登録マネージャー]** を選択します。 **[デバイス登録マネージャー]** ページが表示されます。
 

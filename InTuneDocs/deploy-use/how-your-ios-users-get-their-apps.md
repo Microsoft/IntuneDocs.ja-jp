@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: dbc5f1b106df17aa8875997330dbfbb04a81f82f
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 02e54d4ae2ffa860fb95725c74fdff913e88365b
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -40,13 +41,13 @@ Apple の制限により、基幹業務アプリおよび管理対象アプリ �
 
 登録済みユーザーは、ポータル サイト アプリのアプリ画面で、以下のタイルをタップしてアプリを取得します。
 
-- **[すべてのアプリ]**。[ポータル Web サイト](http://portal.manage.microsoft.com)の [すべて] タブのすべてのアプリのリストをポイントします。
+- **[すべてのアプリ]**。[ポータル Web サイト](https://portal.manage.microsoft.com)の [すべて] タブのすべてのアプリのリストをポイントします。
 
 - **[おすすめアプリ]**。ポータル Web サイトの [おすすめ] タブを表示します。
 
 - **[カテゴリ]**。ポータル Web サイトの [カテゴリ] タブをポイントします。
 
- 
+
 ![iOS ポータル サイト アプリの画面](./media/ios-cp-app-main-apps-screen.png)
 
 アプリを追加し、これらのタイルに配置する方法については、「[Intune に登録されたデバイスのアプリを追加する](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)」を参照してください。
@@ -55,9 +56,4 @@ Apple の制限により、基幹業務アプリおよび管理対象アプリ �
 [Android ユーザーがアプリを入手する方法](how-your-android-users-get-their-apps.md)
 
 [Windows ユーザーがアプリを入手する方法](how-your-windows-users-get-their-apps.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

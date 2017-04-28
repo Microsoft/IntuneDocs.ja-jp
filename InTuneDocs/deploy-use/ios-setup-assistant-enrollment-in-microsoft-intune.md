@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 2a1a9bb4e49e997a6f152cadcf0c7a75b553cb42
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 5c57a069fc9d2ca561954f50cbefa21b13a563d1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -58,7 +58,7 @@ Apple Configurator を使用して、iOS デバイスを工場出荷時の設定
 
 デバイス登録プロファイルで、デバイスのグループに適用する設定を定義します。
 
-1. [Microsoft Intune 管理コンソール](http://manage.microsoft.com)で、**[ポリシー]** &gt; **[業務用デバイスの登録]** の順に選択し、**[追加]** を選択します。
+1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[業務用デバイスの登録]** の順に選択し、**[追加]** を選択します。
 
   ![デバイス登録プロファイルの作成](../media/pol-sa-corp-enroll.png)
 
@@ -85,7 +85,7 @@ Apple Configurator を使用して、iOS デバイスを工場出荷時の設定
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>セットアップ アシスタントに登録する iOS デバイスを追加する
 
-1. [Microsoft Intune の管理コンソール](http://manage.microsoft.com)で、**[グループ]**&gt;**[すべてのデバイス]**&gt;**[会社が所有しているすべてのデバイス]**&gt;**[すべてのデバイス]** の順に移動し、**[デバイスの追加]** を選択します。
+1. [Microsoft Intune の管理コンソール](https://manage.microsoft.com)で、**[グループ]**&gt;**[すべてのデバイス]**&gt;**[会社が所有しているすべてのデバイス]**&gt;**[すべてのデバイス]** の順に移動し、**[デバイスの追加]** を選択します。
 
    デバイスの追加方法は 2 つあります。
 
@@ -128,7 +128,7 @@ Apple Configurator を使用して、iOS デバイスを工場出荷時の設定
 
 ### <a name="export-a-profile-to-deploy-to-ios-devices"></a>iOS デバイスに展開するプロファイルをエクスポートする
 
-1. [Microsoft Intune の管理コンソール](http://manage.microsoft.com)で、**[ポリシー]**&gt;**[業務用デバイスの登録]** の順に進み、モバイル デバイスに展開するデバイス プロファイルを選択します。
+1. [Microsoft Intune の管理コンソール](https://manage.microsoft.com)で、**[ポリシー]**&gt;**[業務用デバイスの登録]** の順に進み、モバイル デバイスに展開するデバイス プロファイルを選択します。
 
 2. タスク バーの **[エクスポート]** を選択します。 **プロファイルの URL**をコピーおよび保存します。 Apple Configurator を使用してこれを後でアップロードして、iOS デバイスで使用する Intune プロファイルを定義します。
 

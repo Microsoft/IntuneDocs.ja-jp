@@ -14,9 +14,9 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
-ms.openlocfilehash: a0ae4d74ad99adcfab596eb0c441c845fbca3a9e
-ms.lasthandoff: 04/20/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: abba595672fa88efc022128ec8751cb27d14b089
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -50,7 +50,7 @@ __エンド ユーザーに不便な点__ アプリのインストール、デ�
 
 * __個人向けにする。__ 展開について具体的でない手順を示すと、エンド ユーザーは経験が考慮されていないと思うかもしれません。 [IT 管理者向けのカスタマイズ可能なエンド ユーザー Intune 登録テンプレート](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c)を使用して、独自にエンドユーザー向けの登録手順を作成することができます。
 
-* __さまざまなコミュニケーションの方法を見つける。__ [学習スタイルが異なる](http://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/)のと同じように、ユーザーによって、好まれる情報の使用方法は異なります。 ドキュメントよりもビデオを好むユーザーのために、Channel 9 で[さまざまな種類のデバイスを登録する方法を紹介するビデオ](https://channel9.msdn.com/Series/IntuneEnrollment)などを提供しています。 これらのビデオは、独自の [SharePoint サイト](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581)に直接埋め込むことも、ビデオまたは単なるオーディオ トラックのローカル コピーとしてダウンロードできるようにすることもできます。
+* __さまざまなコミュニケーションの方法を見つける。__ [学習スタイルが異なる](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/)のと同じように、ユーザーによって、好まれる情報の使用方法は異なります。 ドキュメントよりもビデオを好むユーザーのために、Channel 9 で[さまざまな種類のデバイスを登録する方法を紹介するビデオ](https://channel9.msdn.com/Series/IntuneEnrollment)などを提供しています。 これらのビデオは、独自の [SharePoint サイト](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581)に直接埋め込むことも、ビデオまたは単なるオーディオ トラックのローカル コピーとしてダウンロードできるようにすることもできます。
 
 * __意識する。__ エンド ユーザーの経験は生産性に影響します。経験を理解することで、発生している問題のトラブルシューティングをより簡単に行うことができます。 また、エンド ユーザーがアプリを取得する方法を理解することで、発生している問題を診断しやすくなり、より迅速に問題を解決できます。
 
