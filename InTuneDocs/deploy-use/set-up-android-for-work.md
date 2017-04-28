@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: df1a9b21cd7114c2eebfeb114edf161c4a0e9ef3
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 660d0c69fc09c6ec8b82185b3808269ef4bb6852
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ Android for Work デバイスの管理を有効にするには、Android for Wor
 **Microsoft Intune** を[モバイル デバイス管理機関に設定](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8#enable-device-enrollment)して、MDM の設定を行うことにより、モバイル デバイス管理を準備します (この作業をまだ行っていない場合)。
 
 2. **Android for Work のバインディングを構成する**<br>
-   Intune 管理者として [Microsoft Intune 管理コンソール](http://manage.microsoft.com)を開き、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[Android for Work]** の順に選択し、**[構成]** をクリックして Google Play の Android for Work Web サイトを開きます。 この操作で、ブラウザーの新しいタブが開きます。
+   Intune 管理者として [Microsoft Intune 管理コンソール](https://manage.microsoft.com)を開き、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[Android for Work]** の順に選択し、**[構成]** をクリックして Google Play の Android for Work Web サイトを開きます。 この操作で、ブラウザーの新しいタブが開きます。
 
 3. **Google にログインする**<br>
    Google のサインイン ページで、このテナントのすべての Android for Work 管理タスクに関連付ける Google アカウントを入力します。 これは、お客様の組織の IT 管理者が Play for Work コンソールでアプリを管理および公開するときに共有する Google アカウントです。
@@ -59,7 +59,7 @@ Android for Work の登録と管理を無効にすることもできます。 In
 ### <a name="how-to-unbind-an-android-for-work-account"></a>Android for Work アカウントのバインドを解除する方法
 
 1. **Android for Work のバインドを解除する**<br>
-   管理者として [Microsoft Intune 管理コンソール](http://manage.microsoft.com)を開き、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[Android for Work]** の順に選択し、**[バインドの解除]** をクリックします。
+   管理者として [Microsoft Intune 管理コンソール](https://manage.microsoft.com)を開き、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[Android for Work]** の順に選択し、**[バインドの解除]** をクリックします。
 
 2. **Android for Work のバインドの削除に同意する**<br>
   **[はい]** をクリックしてバインドを削除し、Intune からすべての Android for Work デバイスの登録を解除します。

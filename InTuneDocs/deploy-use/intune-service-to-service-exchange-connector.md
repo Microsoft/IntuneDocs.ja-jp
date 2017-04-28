@@ -15,8 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: b322f368637e39da1ab10b41dd724859fb49e1f2
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: dce7050a7439a7e24e34be3c79473d6ec3159c83
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -50,7 +51,7 @@ Intune Exchange Connector が使用する Exchange Online ユーザー アカウ
 
 ## <a name="set-up-the-service-to-service-connector"></a>Service to Service Connector を設定します。
 
-1. Exchange 管理者権限と[上記](#exchange-cmdlet-requirements)のコマンドレットのアクセス許可を持つユーザー アカウントで、[Microsoft Intune 管理コンソール](http://manage.microsoft.com)を開きます。 Microsoft Intune は、現在サインインしているユーザーの電子メール アドレスを使用して、接続をセットアップします。
+1. Exchange 管理者権限と[上記](#exchange-cmdlet-requirements)のコマンドレットのアクセス許可を持つユーザー アカウントで、[Microsoft Intune 管理コンソール](https://manage.microsoft.com)を開きます。 Microsoft Intune は、現在サインインしているユーザーの電子メール アドレスを使用して、接続をセットアップします。
 
 2.  ワークスペースのショートカット ウィンドウで **[管理]** > **[モバイル デバイス管理]** > **[Microsoft Exchange]** > **[Exchange 接続のセットアップ]** の順に進みます。
 ![Service To Service Connector のセットアップページ](../media/intunesa5cservicetoserviceconnector.png)
@@ -62,12 +63,7 @@ Service to Service Connector は自動的に構成され、Exchange Online 環�
 
 ## <a name="validate-your-exchange-connection"></a>Exchange 接続の確認
 
-Exchange Connector を正常に構成した後で、[Microsoft Intune 管理コンソール](http://manage.microsoft.com)に進みます。 [**管理**] > [**モバイル デバイス管理**] > [**Microsoft Exchange**] の順に選択します。 入力した詳細が [**Exchange の接続情報**] の下に表示されることを確認します。
+Exchange Connector を正常に構成した後で、[Microsoft Intune 管理コンソール](https://manage.microsoft.com)に進みます。 [**管理**] > [**モバイル デバイス管理**] > [**Microsoft Exchange**] の順に選択します。 入力した詳細が [**Exchange の接続情報**] の下に表示されることを確認します。
 
 また、前回いつ同期が完了したかも確認することができます。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -15,8 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: f35a6da93e48141489b89e62b37b473d885479cf
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: c4023007f993436e0d7628cce52f78a1127c88f8
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -50,7 +51,7 @@ Microsoft Intune **Exchange ActiveSync** ポリシーを使用して、Exchange 
 |**メモリ カードの暗号化を必要とする**|(サポートされているデバイス上で) SD カードなどの外部ストレージに保存されたデータの暗号化を要求します。
 <sup>1</sup> Windows 8.1 が実行されているデバイスの追加情報
 
--   Windows 8.1 搭載デバイスで暗号化を適用する場合は、[Windows の 2014 年 12 月付け MDM クライアント更新プログラム](http://support.microsoft.com/kb/3013816)を各デバイスにインストールする必要があります。
+-   Windows 8.1 搭載デバイスで暗号化を適用する場合は、[Windows の 2014 年 12 月付け MDM クライアント更新プログラム](https://support.microsoft.com/kb/3013816)を各デバイスにインストールする必要があります。
 
 -   Windows 8.1 デバイスに対してこの設定を有効にすると、デバイスのすべてのユーザーに Microsoft アカウントが必要になります。
 
@@ -82,9 +83,4 @@ Microsoft Intune **Exchange ActiveSync** ポリシーを使用して、Exchange 
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

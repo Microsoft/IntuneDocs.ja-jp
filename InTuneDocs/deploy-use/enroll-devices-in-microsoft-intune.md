@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: 8f18f9ff2c32bb24b68fa987a8aad990b911a549
-ms.lasthandoff: 03/11/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 2a35387cdc2ebeb3c83fa043a8b2c6583fccdbc9
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -30,7 +30,7 @@ Windows PC などのデバイスを登録し、Microsoft Intune によるモバ�
 
 オンプレミスの、またはクラウドでホストされている [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune) を使用すると、登録を必要としない簡単な Intune 管理が可能です。 Windows PC は、[Intune クライアント ソフトウェア](#manage-windows-pcs-with-intune)を使用して管理することもできます。
 
-既定では、すべてのプラットフォーム用のデバイスを Intune に登録することができます。 デバイスの登録をブロックするには、管理者資格情報を使用して [Microsoft Intune 管理ポータル](http://manage.microsoft.com)にサインインします。 **[管理]** > **[モバイル デバイス管理]** > **[登録ルール]** の順に選択し、登録をブロックするプラットフォームの該当するチェック ボックスをオフにします。
+既定では、すべてのプラットフォーム用のデバイスを Intune に登録することができます。 デバイスの登録をブロックするには、管理者資格情報を使用して [Microsoft Intune 管理ポータル](https://manage.microsoft.com)にサインインします。 **[管理]** > **[モバイル デバイス管理]** > **[登録ルール]** の順に選択し、登録をブロックするプラットフォームの該当するチェック ボックスをオフにします。
 
 ## <a name="overview-of-device-enrollment-methods"></a>デバイスの登録方法の概要
 

@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: f75c4a6412d34923ec45524d765d3eb270f15e13
-ms.lasthandoff: 01/31/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ee0320db2c4a1a977326f62fcd20597fa39aba24
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -35,7 +35,7 @@ iOS デバイスを直接登録する場合は、デバイスのシリアル番�
 
 1.  まだ定義していない場合は、Apple Configurator を使用して、iOS デバイス用のデバイス登録プロファイルを作成してください。 デバイス登録プロファイルで、デバイスに適用する設定を定義します。
 
-    1.  [Microsoft Intune 管理コンソール](http://manage.microsoft.com)で、**[ポリシー]** &gt; **[業務用デバイスの登録]** の順に選択し、**[追加]** を選択します。
+    1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[業務用デバイスの登録]** の順に選択し、**[追加]** を選択します。
 
         ![[デバイス登録プロファイルの作成] ページ](../media/pol-sa-corp-enroll.png)
 
@@ -63,7 +63,7 @@ iOS デバイスを直接登録する場合は、デバイスのシリアル番�
 
 6.  ダウンロードした .mobileconfig ファイルを Mac コンピューターにコピーして、ファイルを転送します。
     > [!NOTE]
-    > 登録プロファイルの URL は、エクスポートしたときから&2; 週間有効です。 2 週間後、セットアップ アシスタントで iOS デバイスを登録するには、新しい登録プロファイルの URL をエクスポートする必要があります。
+    > 登録プロファイルの URL は、エクスポートしたときから 2 週間有効です。 2 週間後、セットアップ アシスタントで iOS デバイスを登録するには、新しい登録プロファイルの URL をエクスポートする必要があります。
 
 7.  Apple Configurator を使用してデバイスを準備します。 モバイル デバイスを管理するために、iOS デバイスを Mac コンピューターに接続および登録します。
 

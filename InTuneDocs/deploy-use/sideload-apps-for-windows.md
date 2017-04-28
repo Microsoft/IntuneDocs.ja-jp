@@ -12,9 +12,9 @@ ms.technology:
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: bb0fe422999246fd40dae16299cf3154b7d7f97b
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 44af7e7805843eeb6a2112afc89057c10c26f835
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -55,7 +55,7 @@ Intune 管理者は、ポータル サイト アプリを含め、基幹業務 (
 6.  **Intune にアプリをアップロードする**<br>
     署名付きのアプリ ファイルと、コード署名証明書をアップロードして、アプリをエンド ユーザーが使用できるようにします。
 
-    1.  [Intune 管理コンソール](http://manage.microsoft.com)で、**[管理]** &gt; **[Windows Phone]** の順にクリックします。
+    1.  [Intune 管理コンソール](https://manage.microsoft.com)で、**[管理]** &gt; **[Windows Phone]** の順にクリックします。
 
     2.  **[署名済みアプリ ファイルのアップロード]** をクリックし、Intune 管理者 ID でサインインします。
 

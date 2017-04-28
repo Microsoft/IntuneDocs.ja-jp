@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 177485a0b09a2b0213a293914799a34a3bfa1136
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ Intune の使用条件をユーザー グループに展開すると、登録、
 
 ## <a name="create-a-terms-and-conditions-policy"></a>使用条件ポリシーの作成
 
-1.  [Microsoft Intune の管理コンソール](http://manage.microsoft.com)で、**[ポリシー]** &gt; **[使用条件]** の順にクリックします。
+1.  [Microsoft Intune の管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[使用条件]** の順にクリックします。
 
     ![使用条件ポリシーのスクリーンショット](./media/pol-sa-terms-conditions.png)
 
@@ -54,7 +54,7 @@ Intune の使用条件をユーザー グループに展開すると、登録、
 
 ## <a name="deploy-a-terms-and-conditions-policy"></a>使用条件ポリシーの展開
 
-1.  [Microsoft Intune の管理コンソール](http://manage.microsoft.com)で、**[ポリシー]** &gt; **[使用条件]** の順にクリックします。
+1.  [Microsoft Intune の管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[使用条件]** の順にクリックします。
 
 2.  **[使用条件ポリシー]** の一覧で、展開するポリシーを選び、**[展開の管理]** をクリックします。
 
@@ -64,7 +64,7 @@ Intune の使用条件をユーザー グループに展開すると、登録、
 
 ## <a name="monitor-a-terms-and-conditions-policy"></a>使用条件ポリシーの監視
 
-1.  [Microsoft Intune の管理コンソール](http://manage.microsoft.com)で、**[ポリシー]** &gt; **[使用条件]** の順にクリックします。
+1.  [Microsoft Intune の管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[使用条件]** の順にクリックします。
 
 2.  **[新しいレポートの作成]** ウィンドウで、**[レポートの表示]** をクリックします。 展開した使用条件に同意したユーザーの詳細を示すレポートが開きます。
 
@@ -73,7 +73,7 @@ Intune の使用条件をユーザー グループに展開すると、登録、
 
 ## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>使用条件の複数のバージョンを使用する
 
-1.  [Microsoft Intune の管理コンソール](http://manage.microsoft.com)で、**[ポリシー]** &gt; **[使用条件]** の順にクリックします。
+1.  [Microsoft Intune の管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[使用条件]** の順にクリックします。
 
 2.  編集する使用条件ポリシーを選んで、**[編集]** をクリックします。
 
