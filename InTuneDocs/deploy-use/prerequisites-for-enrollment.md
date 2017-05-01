@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: f57323fe0b093f2478d71d3f01b9c0e5ee2727eb
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 160b8a7fe883b8af61831b30b711ad0243a3ec08
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -55,7 +55,7 @@ MDM 機関では、一連のデバイスを管理するためのアクセス許�
 > モバイル デバイスの管理に Intune のみ (オンライン サービス) を使用するか、System Center Configuration Manager と Intune との統合 (オンプレミス ソフトウェア ソリューションをオンライン サービスと組み合わせて使用) を使用するのかについて、慎重に検討します。 モバイル デバイス管理機関の設定後は、Microsoft サポートの支援がないと変更できません。 詳細については、「[不適切な MDM 機関の設定を選択した場合の対処方法](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)」を参照してください。
 
 
-1.  [Microsoft Intune 管理コンソール](http://manage.microsoft.com)で、**[管理]** &gt; **[モバイル デバイス管理]** の順に選択します。
+1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[管理]** &gt; **[モバイル デバイス管理]** の順に選択します。
 
 2.  **[タスク]** リストで **[モバイル デバイス管理機関の設定]**をクリックします。 **[MDM 機関の設定]** ダイアログ ボックスが開きます。
 
