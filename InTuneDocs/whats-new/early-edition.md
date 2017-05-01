@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
-ms.openlocfilehash: 2b6e29e7323d42b1ce3d75a46648203a7a43165c
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 31f984fabd2373d242e5e3399bd0c82fbaf53070
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -59,7 +59,7 @@ iOS 用のポータル サイト アプリに既にサインインしている�
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 用ポータル サイトでのサインイン進行状況インジケーター<!--953374-->
 
-Android 用ポータル サイト アプリが更新されて、起動または再開時にサインイン進行状況インジケーターが表示されるようになります。 ユーザーがアプリへのアクセスを許可されるまでにインジケーターに順番に表示される新しいステータスは、[接続中...]、[サインイン中...]、[Checking for security requirements... (セキュリティ要件確認中...)] です。 Android 用ポータル サイト アプリの新しい画面は、[Intune アプリ UI の新機能に関するページ](whats-new-in-intune-app-ui.md)でご覧いただけます。 
+Android 用ポータル サイト アプリが更新されて、起動または再開時にサインイン進行状況インジケーターが表示されるようになります。 ユーザーがアプリへのアクセスを許可されるまでにインジケーターに順番に表示される新しいステータスは、[接続中...]、[サインイン中...]、[Checking for security requirements... (セキュリティ要件確認中...)] です。 Android 用ポータル サイト アプリの新しい画面は、[Intune アプリ UI の新機能に関するページ](whats-new-in-intune-app-ui.md)でご覧いただけます。
 
 
 ## <a name="notices"></a>通知
@@ -186,7 +186,7 @@ Samsung KNOX Standard を実行するデバイスが、Intune によるマルチ
 
 ### <a name="multi-user-support-for-windows-10-creators-update----822547---"></a>Windows 10 Creators Update のマルチユーザー サポート <!-- 822547 -->
 
-Windows 10 Creators Update を実行し Azure Active Directory ドメインに参加しているデバイスのマルチユーザー管理のサポートが追加されました。 異なるユーザーが AAD 資格情報でデバイスにログオンすると、ユーザー名に割り当てられているすべてのアプリとポリシーを受け取ります。
+Windows 10 Creators Update を実行し Azure Active Directory ドメインに参加しているデバイスのマルチユーザー管理のサポートが追加されました。 異なる標準ユーザーが Azure AD 資格情報でデバイスにログオンすると、ユーザー名に割り当てられているすべてのアプリとポリシーを受け取ります。 現時点では、アプリのインストールのようなセルフサービスのシナリオにポータル サイトは使用できません。
 
 ### <a name="fresh-start-for-windows-10-pcs---1004830---"></a>Windows 10 PC の Fresh Start <!-- 1004830 -->
 
@@ -203,7 +203,7 @@ Windows 10 Creators Update を実行し Azure Active Directory ドメインに�
 
 ### <a name="bulk-enroll-windows-10-devices----747607---"></a>Windows 10 デバイスを一括登録する <!-- 747607 -->
 
-IT オートメーション ツールを使って、Azure Active Directory と Intune に多数の Windows 10 デバイスを参加させることができます。 Azure AD テナントの自動 MDM 登録を有効にするには、Windows 構成デザイナーを使ってデバイスを Azure AD テナントに参加させるプロビジョニング パッケージを作成します。 一括して登録および管理する会社所有のデバイスに、そのパッケージを適用します。  パッケージが適用されると、デバイスは Azure AD に接続し、Intune に登録され、Azure AD ユーザーがログオンできる状態になります。
+Windows Configuration Designer (WCD) を使用すると、Windows 10 Creators Update を実行する多数のデバイスを Azure Active Directory と Intune へ登録することができます。 Azure AD テナントの自動 MDM 登録を有効にするには、Windows Configuration Designer を使用してデバイスを Azure AD テナントに参加させるプロビジョニング パッケージを作成し、一括登録と管理の対象となる会社所有のデバイスにパッケージを適用します。 パッケージがデバイスに適用されると、デバイスは Azure AD に参加し、Intune に登録され、Azure AD ユーザーがログオンできる状態になります。  Azure AD ユーザーはこれらのデバイス上の標準ユーザーであり、割り当て済みのポリシーと必須アプリを受け取ります。 現時点では、セルフサービスとポータル サイトのシナリオはサポートされていません。
 
 ### <a name="new-mam-settings-for-pin-and-managed-storage-locations----58112-736644---"></a>暗証番号 (PIN) および管理対象記憶域の場所に対する新しい MAM 設定<!-- 58112, 736644 -->
 
