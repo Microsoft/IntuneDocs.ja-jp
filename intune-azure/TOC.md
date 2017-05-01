@@ -118,7 +118,6 @@
 #### [iOS 用ホーム画面のレイアウト](configure-devices/home-screen-settings-for-ios.md)
 #### [iOS 用アプリの通知](configure-devices/app-notification-settings-for-ios.md)
 #### [iOS 用共有デバイス](configure-devices/shared-device-settings-for-ios.md)
-#### [iOS 用 Web コンテンツ フィルター](configure-devices/web-content-filter-settings-for-ios.md)
 
 ### [デバイス制限を構成する](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
@@ -194,7 +193,8 @@
 ## [条件付きアクセスとは](conditional-access/what-is-conditional-access.md)
 ## 方法
 ### [Exchange On-premises Connector をインストールする](conditional-access/install-intune-on-premises-exchange-connector.md)
-### [条件付きアクセス ポリシーを作成する](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [作成し、条件付きアクセス ポリシーを割り当てる](conditional-access/create-conditional-access-policy-for-exchange-on-premises.md)
+### [条件付きアクセスのコンプライアンス対応を監視します。](conditional-access/monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online.md)
 
 # アクセス制御
 ## [ロールベースのアクセス制御とは](access-control/role-based-access-control.md)

@@ -12,7 +12,7 @@
 
 # [作業の開始](get-started/get-started.md)
 ## [Intune をセットアップする](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [前提条件]
+### 必要条件
 #### [サポートされるデバイス](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [ネットワーク使用量](get-started/network-bandwidth-use.md)
 ### [Intune にサインインする](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
@@ -189,10 +189,13 @@
 
 ### [MAM でアプリ データを保護する](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [アプリ保護ポリシーの Azure Portal](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [アプリ保護ポリシーを構成する準備をする](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [アプリ保護ポリシーを作成して展開する](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [iOS 用と Android 用のアプリ保護ポリシーを構成する準備をする](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Windows 10 用のアプリ保護ポリシーを構成する準備をする](deploy-use/get-ready-to-configure-app-protection-policies-for-windows-10.md)
 #### [Android 用アプリ保護ポリシー](deploy-use/android-mam-policy-settings.md)
 #### [iOS 用アプリ保護ポリシー](deploy-use/ios-mam-policy-settings.md)
+#### [Windows 用アプリ保護ポリシー](deploy-use/create-windows-information-protection-policy-with-intune.md)
+#### [iOS 用と Android 用のアプリ保護ポリシーを作成して展開する](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Windows 10 用の WIP アプリ保護ポリシーを作成して展開する](deploy-use/create-windows-information-protection-policy-with-intune.md)
 #### [アプリ保護ポリシーを確認する](deploy-use/validate-mobile-application-management.md)
 #### [アプリの保護ポリシーのコンプライアンスを監視する](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
