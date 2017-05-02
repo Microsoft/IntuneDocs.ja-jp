@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: a6fa910c0a8ec1a9542e03a276dbb8d0757d75b4
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 742fac9c401c24bfc0f2500a238c41fa00c47fd3
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -47,6 +48,8 @@ Microsoft Intune では、iOS 8.0 以降向けの iPhone を探すアプリの�
 > [!TIP]
 > iOS デバイスの監視モードでは、Apple Configurator を使用して、デバイスをロックダウンし、特定のビジネス目的に必要な機能のみに制限することができます。 監視モードは、通常、企業所有のデバイス専用の機能です。
 
+アクティベーション ロックについては、 [こちら](https://support.apple.com/en-us/HT201365)を参照してください。
+
 ## <a name="how-intune-helps-you-manage-activation-lock"></a>Intune でアクティブ化ロックを管理する方法
 Intune では、iOS 8.0 以降を実行している監視対象デバイスのアクティブ化ロックの状態を要求できます。 監視対象のデバイスのみの場合、Intune では、アクティベーション ロックのバイパス コードを取得し、直接デバイスに発行できます。 デバイスがワイプされている場合は、空のユーザー名とコードをパスワードとして使用し、デバイスに直接アクセスすることができます。
 
@@ -55,6 +58,14 @@ Intune では、iOS 8.0 以降を実行している監視対象デバイスの�
 -   ユーザーが iPhone を探すアプリのセキュリティ上のメリットを受けることができる。
 
 -   デバイスを再利用する必要がある場合に、デバイスをインベントリから削除することや、ロック解除できることを把握したうえで、ユーザーが業務を遂行できるようにすることができる。
+
+## <a name="before-you-start"></a>開始する前に
+
+デバイスのアクティブ化ロックをバイパスするには、先にそれを有効にする必要があります。 このためには、次の操作を行います。
+
+1. 「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)」トピックの情報を使って、iOS の[デバイス構成ポリシー](/intune/deploy-use/ios-policy-settings-in-microsoft-intune)を作成します。
+2. 設定ページの **[登録]** セクションで、**[デバイスが監視モードの場合にアクティブ化ロックを許可する]** を **[はい]** に設定します。
+3. ポリシーを保存し、アクティブ化ロックのバイパスを管理するデバイスに展開します。
 
 ## <a name="how-to-use-activation-lock-bypass-from-the-intune-admin-console"></a>Intune 管理コンソールからアクティブ化ロックのバイパスを使用する方法
 > [!IMPORTANT]
@@ -94,9 +105,4 @@ Intune では、iOS 8.0 以降を実行している監視対象デバイスの�
 ### <a name="see-also"></a>関連項目
 [デバイスをインベントリから削除する](retire-devices-from-microsoft-intune-management.md)
 [リモート ロックとパスコードのリセットによってデバイスを保護する](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

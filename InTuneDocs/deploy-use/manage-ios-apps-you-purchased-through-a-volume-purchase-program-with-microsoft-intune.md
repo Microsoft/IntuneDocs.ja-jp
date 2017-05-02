@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/20/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 56ef80138d0790933ae216bb02101c3f408311c7
-ms.openlocfilehash: 5bea5a9f1a69193543fa3c5e8997a6527721d3ef
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: b81228ccd1c515bfd82486475996eecf20655993
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -39,11 +40,11 @@ iOS アプリの複数のライセンスを購入するには、[Apple Volume Pu
 ## <a name="before-you-start"></a>アップグレードを開始する前に
 開始する前に、Apple から VPP トークンを取得し、これを Intune アカウントにアップロードする必要があります。 さらに、次の点を理解する必要があります。
 
-* 各組織には、VPP アカウントとトークンが&1; つだけあります。
+* 各組織には、VPP アカウントとトークンが 1 つだけあります。
 * Apple VPP アカウントを Intune に関連付けた後は、異なるアカウントを関連付けることができません。 そのため、使用するアカウントの詳細を複数のユーザーが持っていることが非常に重要です。
 * 以前に異なる製品で VPP トークンを使用していた場合は、Intune で使用するための新しい VPP トークンを生成する必要があります。
 * 各トークンは、1 年間有効です。
-* 既定では、Intune は&1; 日に&2; 回、Apple VPP サービスと同期します。 いつでも手動での同期を開始できます。
+* 既定では、Intune は 1 日に 2 回、Apple VPP サービスと同期します。 いつでも手動での同期を開始できます。
 * Intune に VPP トークンをインポートした後、同じトークンを他のデバイス管理ソリューションにインポートすることはできません。 これを行うと、ライセンスの割り当てとユーザー レコードが失われる恐れがあります。
 * Intune で iOS VPP の使用を開始する前に、他のモバイル デバイス管理 (MDM) ベンダーで作成された既存の VPP ユーザー アカウントを削除してください。 Intune は、セキュリティ対策として、そのようなユーザー アカウントを Intune と同期しません。 Intune は、Intune によって作成された Apple VPP サービスからのデータのみを同期します。
 * デバイスのユーザー アフィニティが構成されている場合、Device Enrollment Protocol (DEP) を使用して登録されたユーザーのデバイスにのみ iOS VPP アプリを展開することができます。
@@ -66,7 +67,7 @@ iOS アプリの複数のライセンスを購入するには、[Apple Volume Pu
 
 ## <a name="to-deploy-a-volume-purchased-app"></a>ボリューム購入アプリを展開するには
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[アプリ]、**&gt;**[管理されているソフトウェア]** &gt; **[ボリューム購入されたアプリ]** の順に選択します。 この一覧には、Apple VPP サービスから同期されたアプリがすべて表示されます。
+1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[アプリ]** &gt; **[アプリ]** &gt; **[ボリューム購入されたアプリ]** の順に選択します。 この一覧には、Apple VPP サービスから同期されたアプリがすべて表示されます。
 
 2.  展開するアプリを選択し、**[展開の管理]** を選択して、「[Microsoft Intune でアプリを展開する](deploy-apps-in-microsoft-intune.md)」トピックの手順に従って、アプリのアップロード、作成、展開を完了します。
 
@@ -79,22 +80,14 @@ iOS アプリの複数のライセンスを購入するには、[Apple Volume Pu
 
 対象となるデバイスを持つユーザーが初めて VPP アプリをインストールしようとすると、Apple Volume Purchase Program に参加するように求められます。 アプリのインストールを実行する前に、このプログラムに参加する必要があります。
 
-> [!TIP]
-> **[VPP 使用条件の状態]** 列を見ると、アプリが展開された各ユーザーの同意状態が分かります。
-
 それ以上使用できるライセンスがない場合、展開は失敗します。
 
 ## <a name="to-monitor-apple-vpp-apps"></a>Apple VPP アプリを監視するには
-どの VPP アプリが展開されているか、ライセンスがいくつ使われているかを監視するには、**[アプリ]** ワークスペースで、**[管理されているソフトウェア]** &gt; **[ボリューム購入されたアプリ]** ノードを使います。
+**[ボリューム購入されたアプリ]** ノードの **[アプリ]** ワークスペースを使って、展開されている VPP アプリおよび使われているライセンスの数を監視できます。
 
 > [!TIP]
 > また、アプリの **[フィルター]** を使って、各アプリのインストールの状態を調べることもできます。
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune でアプリを展開する](deploy-apps-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

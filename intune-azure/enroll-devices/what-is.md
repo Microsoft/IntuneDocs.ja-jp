@@ -15,9 +15,9 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 6127604afb01a9482eadc3d03b566304e2acdd21
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: a816ee8fd2738cf244fd46a91af46d2b137a5dfb
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -27,11 +27,11 @@ ms.lasthandoff: 03/17/2017
 
 このトピックでは登録について説明します。また、Intune 管理でモバイル デバイスを登録する方法をいくつか紹介します。
 
-Intune で Windows PC などのデバイスを登録し、それらのデバイスを管理できるようにします。 この機能は、Intune ドキュメントでは、モバイル デバイス管理 (MDM) と呼ばれます。 デバイスを (PC ではなく) モバイル デバイスとして登録すると、MDM 証明書が発行されます。デバイスは、この証明書を使用して Intune サービスと通信します。
+Intune にデバイスを登録して、それらのデバイスを管理できるようにします。 この機能は、Intune ドキュメントでは、モバイル デバイス管理 (MDM) と呼ばれます。 デバイスを Intune に登録すると、MDM 証明書が発行されます。デバイスは、この証明書を使用して Intune サービスと通信します。
 
 デバイスの登録方法は、デバイスの種類、所有権、必要な管理レベルによって決まります。 "Bring Your Own Device" (BYOD) の登録では、ユーザーは個人で所有するスマートフォン、タブレット、PC を登録できます。 会社が所有しているデバイス (COD) の登録では、自動登録、共有デバイス、事前承認された登録要件などの管理シナリオが有効になります。
 
-オンプレミスの、またはクラウドでホストされている Exchange ActiveSync を使用すると、登録を必要としない簡単な Intune 管理が可能です (詳細は近日公開予定)。 Windows PC はモバイル デバイスとして管理できます (推奨)。この方法については以下で説明します。 また、[Intune クライアント ソフトウェア](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)を使用して PC として管理することもできます。
+オンプレミスの、またはクラウドでホストされている Exchange ActiveSync を使用すると、登録を必要としない簡単な Intune 管理が可能です (詳細は近日公開予定)。 Windows PC はモバイル デバイスとして管理できます (推奨)。この方法については以下で説明します。
 
 
 ## <a name="overview-of-device-enrollment-methods"></a>デバイスの登録方法の概要
@@ -53,21 +53,20 @@ Intune で Windows PC などのデバイスを登録し、それらのデバイ�
 |**[USB-SA](#usb-sa)**|    Yes |    省略可能 |    いいえ| [詳細情報](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)|
 |**[USB-Direct](#usb-direct)**|    いいえ |    いいえ    | いいえ|[詳細情報](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)|
 
-
-
 **Windows の登録方法**
 
 | **方法** |    **ワイプが必要?** |    **アフィニティ**    |    **ロック** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ |    ○ |    いいえ | 詳細は近日公開予定|
+|**[BYOD](#byod)** | いいえ |    ○ |    いいえ | [詳細情報](#enroll-windows-devices.md)|
 |**[DEM](#dem)**|    いいえ |いいえ |いいえ    |[詳細情報](enroll-devices-using-device-enrollment-manager.md)|
 
 **Android の登録方法**
 
 | **方法** |    **ワイプが必要?** |    **アフィニティ**    |    **ロック** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ|    ○ |    いいえ | 詳細は近日公開予定|
+|**[BYOD](#byod)** | いいえ|    ○ |    いいえ | [詳細情報](#enroll-android-and-knox-standard-devices.md)|
 |**[DEM](#dem)**|    いいえ |いいえ |いいえ    |[詳細情報](enroll-ios-devices-using-device-enrollment-program.md)|
+|[**Android for Work**](#android-for-work)| いいえ | ○ | いいえ| [詳細情報](#enroll-android-and-knox-standard-devices.md) |
 
 
 ## <a name="byod"></a>BYOD
@@ -112,21 +111,11 @@ iOS 登録の詳細については、以下を参照してください。
 ## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>Exchange ActiveSync および Intune を使用したモバイル デバイス管理
 登録されていないが Exchange ActiveSync (EAS) に接続するモバイル デバイスは、EAS MDM ポリシーを使用して Intune で管理できます。 Intune は Exchange Connector を使用し、オンプレミスまたはクラウドでホストされている EAS と通信します。 詳細は近日公開予定。
 
-
-## <a name="windows-pc-management-with-intune"></a>Intune による Windows PC 管理  
-Microsoft Intune では、Intune クライアント ソフトウェアを使用して Windows PC を管理することもできます。 Intune クライアントを使用して管理される PC では、次の操作を実行できます。
-
- - ソフトウェアおよびハードウェアのインベントリのレポート
- - デスクトップ アプリケーション (.exe ファイルや .msi ファイルなど) のインストール
- - ファイアウォール設定を管理します。
-
-Intune クライアント ソフトウェアを利用して管理される PC は、選択的ワイプを利用できますが、完全にはワイプされません。 Intune クライアント ソフトウェアを使用して管理される PC では、条件付きアクセス、VPN と Wi-Fi の設定、証明書と電子メール構成の展開などの多数の Intune 管理機能を利用できません。 詳細は近日公開予定。
-
 ## <a name="supported-device-platforms-and-browsers"></a>サポートされるデバイス プラットフォームとブラウザー
 
 [Intune でサポートされるデバイスとブラウザー](https://docs.microsoft.com/intune/get-started/supported-mobile-devices-and-computers)に関するトピックを参照してください
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 証明書の有効期限が切れた後のモバイル デバイスのクリーンアップ
 
-MDM 証明書は、モバイル デバイスが Intune サービスと通信しているときに自動的に更新されます。 (PC ではなく) モバイル デバイスがワイプされたり、一定の時間 Intune サービスとモバイル デバイスが通信できなかったりすると、MDM 証明書は更新されません。 デバイスは、MDM 証明書の有効期限が切れてから 180 日後に、Azure Portal から削除されます。
+MDM 証明書は、モバイル デバイスが Intune サービスと通信しているときに自動的に更新されます。 モバイル デバイスがワイプされたり、一定の時間 Intune サービスとモバイル デバイスが通信できなかったりすると、MDM 証明書は更新されません。 デバイスは、MDM 証明書の有効期限が切れてから 180 日後に、Azure Portal から削除されます。
 

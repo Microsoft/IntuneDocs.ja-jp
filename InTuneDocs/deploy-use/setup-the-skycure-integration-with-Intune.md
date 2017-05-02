@@ -15,14 +15,14 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 6ff56f736c289dbc9a8340ad76e044363acbfea5
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 18afa2b84c90e77280daf7ed9b1b8357365f7380
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
-# <a name="setup-the-skycure-integration-with-intune"></a>Skycure と Intune の統合をセットアップする
+# <a name="set-up-the-skycure-integration-with-intune"></a>Skycure と Intune の統合をセットアップする
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -54,7 +54,7 @@ Skycure では、Intune との統合に 2 つのモードがあります。
 
 ## <a name="to-set-up-the-read-only-integration-between-intune-and-skycure"></a>Intune と Skycure の間に読み取り専用の統合を設定するには
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Skycure 管理者の資格情報は電子メールですが、そのメールは Azure Active Directory の有効なユーザーに属している必要があります。属していない場合、ログインは失敗します。 Skycure は、シングル サインオン (SSO) を使用して、管理者の認証に Azure Active Directory を使用します。
 
 1.  [Skycure 管理コンソール](https://aad.skycure.com)に進みます。
@@ -75,7 +75,7 @@ Skycure では、Intune との統合に 2 つのモードがあります。
 
     ![iOS アプリの完了画面](../media/mtp/skycure-setup-3.png)
 
-> [!NOTE] 
+> [!NOTE]
 > **Skycure Android** アプリと**管理**アプリで同じプロセスを繰り返します。
 
 ### <a name="add-an-azure-ad-security-group-into-skycure"></a>Skycure に Azure AD セキュリティ グループを追加する

@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: 26d11bc64802005bcce8cc1962d531af6ffe5cd5
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 12584743534a76d0b2ce92e5de6cb5f916453938
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -50,7 +50,7 @@ Intune で条件付きアクセス機能を有効にする (未登録のデバ�
 
 -   条件付きアクセスが有効になるまでは、以前のソリューションのユーザーが管理されていないデバイスを使用してリソースにアクセスする可能性があります。
 
-> [!TIP] 
+> [!TIP]
 > 数多くの方法のうち 1 つを紹介します。 すべてのフェーズで登録の指示を行うまでは条件付きアクセスを延期する簡単なプロセスを選択するか、最初から条件付きアクセスを適用して、すべてのアクセスにおいて完全な準拠を要求する厳格なプロセスを選択することができます。
 
 -   条件付きアクセスの詳細については、[ここ](https://docs.microsoft.com/intune-azure/conditional-access/what-is-conditional-access)をご覧ください。
@@ -61,7 +61,7 @@ Intune で条件付きアクセス機能を有効にする (未登録のデバ�
 
 -   条件付きアクセスを構成する方法については、[こちら](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)を参照してください。
 
-### <a name="task-2-setup-intune-conditional-access"></a>タスク 2: Intune の条件付きアクセスのセットアップ
+### <a name="task-2-set-up-intune-conditional-access"></a>タスク 2: Intune の条件付きアクセスのセットアップ
 
 詳細については、次の条件付きアクセス ポリシーの種類のいずれかを選択します。
 

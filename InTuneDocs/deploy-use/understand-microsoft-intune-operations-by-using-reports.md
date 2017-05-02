@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/27/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cc1a3c8c3e2f25ee154db964de2601510e32f1ea
-ms.openlocfilehash: 41354f0eee051bd9c691a27830264f6c95502fa5
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
+ms.lasthandoff: 04/24/2017
 
 
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/28/2017
 ## <a name="using-reports"></a>レポートの使用
 Intune レポートには、組織内のソフトウェア、ハードウェア、およびソフトウェア ライセンスに関する情報が表示されます。 レポートは、現在必要なものを確認し、今後の支出を見積もるのに便利です。 **[レポート]** ワークスペースには、レポートの作成と管理を行うツールが用意されています。 
 
-### <a name="report-types"></a>レポートの種類
+## <a name="report-types"></a>レポートの種類
 
 |レポートの種類|説明|
 |---------------|---------------|
@@ -49,8 +49,10 @@ Intune レポートには、組織内のソフトウェア、ハードウェア�
 |**正常性構成レポート**|モバイル デバイスの正常性を表示します。|
 |**Mac OS X ハードウェア レポート**|選んだグループに登録されているすべての Mac OS X デバイスのハードウェアの詳細を表示します。 これらのデバイスから収集されたハードウェア インベントリについては、「[Microsoft Intune でインベントリを使用してデバイスを把握する](understand-your-devices-with-inventory-in-microsoft-intune.md)」を参照してください。|
 |**Mac OS X ソフトウェア レポート**|選んだグループ内のすべての Mac OS X デバイスにインストールされているソフトウェアを表示します。 このレポートには、バンドル ID としてのソフトウェアの名前、短縮版の名前 (またはフレンドリ名)、バージョン、およびソフトウェアがインストールされたデバイスの数が一覧表示されます。|
+|**Windows 情報保護レポート**|管理しているデバイスでの Windows 情報保護 (WIP) の操作に関する情報が表示されます。|
+|**正常性構成レポート**|管理しているデバイスについて Windows 正常性構成証明サービスによって報告された情報が表示されます。|
 
-#### <a name="to-create-a-report"></a>レポートを作成するには
+## <a name="to-create-a-report"></a>レポートを作成するには
 
 1.  Intune 管理コンソールで、**[レポート]** を選択します。 次に、前の表に記載されている通り、生成するレポートの種類を選択します。
 
