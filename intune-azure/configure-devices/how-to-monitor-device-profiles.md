@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: ae5cf453d578dd7df4ce0590b14e97468c893093
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 7d0821ee6941e9e6f05e2da59cf1c0ddd25a9501
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -35,6 +35,6 @@ Intune デバイス プロファイルの割り当ての進捗状況は、2 つ�
 3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
 2. プロファイルの一覧ブレードで、管理するプロファイルを選択し、次のいずれかを実行します。
-    - **[<*プロファイル名*> レポート]** ブレードで、**[概要]** を選択して、プロファイルおよびその割り当てに関する基本的な情報を表示します。
+    - [<*プロファイル名*> **レポート]** ブレードで、**[概要]** を選択して、プロファイルおよびその割り当てに関する基本的な情報を表示します。
     - **[<*プロファイル名*> レポート]** ブレードで、**[レポート]** を選択して、プロファイルおよびその割り当てに関する詳細な情報を表示します。
 

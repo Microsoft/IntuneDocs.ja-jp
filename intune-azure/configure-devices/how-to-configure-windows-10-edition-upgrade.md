@@ -1,12 +1,12 @@
 ---
 title: "Intune で Windows 10 エディションのアップグレードを構成する"
 titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Intune を使用して、管理対象の Windows 10 デバイスをアップグレードする方法について説明します。"
+description: "Intune Azure プレビュー: Intune を使用して、管理対象の Windows 10 デバイスを別のエディションにアップグレードする方法について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 3d0616601509b310034cdbf6e34cf185712c91d2
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 0274a76fa7dd301ab19d1e8bc155c4ef2c79266f
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/17/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-このトピックでは、Windows 10 エディションのアップグレード プロファイルを構成する方法について説明します。 このプロファイルを使用して、次に挙げる Windows 10 のバージョンのいずれかを実行するデバイスを自動的に新しいエディションにアップグレードできます。
+このトピックでは、Windows 10 エディションのアップグレード プロファイルを構成する方法について説明します。 このプロファイルを使用して、次に挙げる Windows 10 のバージョンのいずれかを実行するデバイスを自動的に別のエディションにアップグレードできます。
 
 - Windows 10 Home
 - Windows 10 Holographic

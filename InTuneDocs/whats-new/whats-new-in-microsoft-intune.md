@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 03/28/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
-ms.openlocfilehash: bddd8c0dc74835f74a71af1d900d43d84aab894c
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
+ms.openlocfilehash: b3cf8d8f60482be2d4d903d1b2c00c1a3a392b73
+ms.lasthandoff: 04/20/2017
 
 
 ---
-# <a name="whats-new-in-microsoft-intune---march-2017"></a>Microsoft Intune の新機能 - 2017 年 3 月
+# <a name="whats-new-in-microsoft-intune---april-2017"></a>Microsoft Intune の新機能 - 2017 年 4 月
 Microsoft Intune の今回のリリースの新機能について説明します。 また、過去のリリースに関する情報だけでなく、準備する必要がある今後の変更についても説明します。
 
 > [!Note]
@@ -29,68 +29,55 @@ Microsoft Intune の今回のリリースの新機能について説明します
 
 ## <a name="new-capabilities"></a>新しい機能
 
-### <a name="support-for-skycure"></a>Skycure のサポート
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>すべてのプラットフォームでのポータル サイト アプリのサインイン操作の改善<!--User Story 1132123-->
 
-Microsoft Intune に統合されたモバイル脅威保護ソリューションである Skycure によって実行されるリスク評価に基づき、条件付きアクセスを利用し、モバイル デバイスから会社のリソースへのアクセスを制御できます。 リスクは、Skycure を実行するデバイスから収集される次のような製品利用統計情報に基づいて評価されます。
+Android、iOS、Windows の Intune ポータル サイト アプリのサインイン エクスペリエンスを改善中です。 Azure AD でこの変更が行われ次第、自動的にすべてのプラットフォームでポータル サイト アプリのユーザー エクスペリエンスが一新される予定です。 また、自動生成される一時使用コードを使用して、別のデバイスからポータル サイトにサインインできるようになりました。 これは、資格情報を使用せずにサインインする必要がある場合には特に便利です。
 
-- 物理的防御
-- ネットワーク防御
-- アプリケーション防御
-- 脆弱性防御
+以前のサインイン エクスペリエンス、資格情報を使用した新たなエクスペリエンス、別のデバイスからのエクスペリエンスのスクリーンショットを [アプリ UI の新機能](whats-new-in-intune-app-ui.md)に関するページで確認できます。
 
-Intune のデバイス コンプライアンス ポリシーにより有効になった Skycure のリスク評価に基づいて、EMS の条件付きアクセス ポリシーを構成できます。 これらのポリシーを使用して、検出された脅威に基づき、非準拠のデバイスによる企業リソースへのアクセスを許可またはブロックすることができます。 詳細については、「[Skycure Mobile Threat Defense コネクター](/intune/deploy-use/skycure-mobile-threat-defense-connector)」を参照してください。
+### <a name="myapps-available-for-managed-browser---822308-822303--"></a>Managed Browser に使用できる MyApps <!--822308, 822303-->
 
-### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android 用ポータル サイト アプリに関する新しいユーザー エクスペリエンス <!--621622-->
+Managed Browser での Microsoft MyApps のサポートが向上します。 管理の対象になっていない Managed Browser ユーザーは、MyApps サービスに直接送られ、そこで管理者がプロビジョニングした SaaS アプリにアクセスできます。 Intune の管理の対象になっているユーザーは、引き続き組み込みの Managed Browser ブックマークから MyApps にアクセスできます。
 
-Android 用ポータル サイト アプリでは、ユーザー インターフェイスが最新の外観となり、ユーザー エクスペリエンスが向上しました。 主な更新内容は次のとおりです。
+### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431-971473--"></a>Managed Browser とポータル サイトの新しいアイコン <!--918433, 918431, 971473-->
 
-- 色: ポータル サイトのタブ ヘッダーの色が、IT が定義するブランド色になります。
-- アプリ: **[アプリ]** タブの **[おすすめアプリ]** ボタンと **[すべてのアプリ]** ボタンが更新されました。
-- 検索: **[アプリ]** タブの **[検索]** ボタンが浮動アクション ボタンになりました。
-- ナビゲーション アプリ: **[すべてのアプリ]** ビューで **[おすすめ]**、**[すべて]** および **[カテゴリ]** のタブ付きビューが表示され、移動がより簡単になります。
-- サポート: **[デバイス]** タブと **[IT に連絡]** タブが更新されて、読みやすくなりました。
+Managed Browser の Android バージョンと iOS バージョンのアイコンが更新されます。 新しいアイコンには、Enterprise Mobility + Security (EM+S) での他のアプリとの一貫性が向上した新しい Intune バッジが含まれます。 Managed Browser 用の新しいアイコンは、[Intune アプリ UI の新機能](whats-new-in-intune-app-ui.md)に関するページでご覧いただけます。
 
-これらの変更について詳しくは、「[Intune とエンド ユーザー アプリの UI の更新](whats-new-in-intune-app-ui.md)」をご覧ください。
+Android、iOS、Windows でのポータル サイト アプリのアイコンも更新されて、EM+S での他のアプリとの一貫性が向上します。 これらのアイコンは、4 月から 5 月末にかけて段階的にプラットフォーム全体にリリースされます。
 
-### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>管理されていないデバイスから割り当てられているアプリにアクセス可能 <!--664691-->
+### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 用ポータル サイトでのサインイン進行状況インジケーター<!--953374-->
 
-ポータル Web サイトでの設計変更に伴い、iOS と Android ユーザーは、管理されていないデバイスで "登録なしで使用可能" として割り当てられているアプリをインストールできるようになります。 Intune 資格情報を使用して、ユーザーはポータル Web サイトにログインし、割り当てられているアプリの一覧を表示することができます。 "登録なしで使用可能" なアプリのアプリ パッケージは、ポータル Web サイトからダウンロードできます。 この変更は、インストールするために登録が必要なアプリには影響しません。そのようなアプリをインストールする場合は、デバイスの登録が求められます。
+Android 用ポータル サイト アプリが更新されて、起動または再開時にサインイン進行状況インジケーターが表示されるようになります。 ユーザーがアプリへのアクセスを許可されるまでにインジケーターに順番に表示される新しいステータスは、[接続中...]、[サインイン中...]、[Checking for security requirements... (セキュリティ要件確認中...)] です。 Android 用ポータル サイト アプリの新しい画面は、[Intune アプリ UI の新機能](whats-new-in-intune-app-ui.md)に関するページでご覧いただけます。
 
-### <a name="signing-script-for-windows-10-company-portal---941642--"></a>Windows 10 ポータル サイトの署名スクリプト<!--941642-->
+### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>アプリの SharePoint Online へのアクセスをブロック<!-- 679339 -->
 
-Windows 10 ポータル サイト アプリのダウンロードおよびサイドロードの必要がある場合に、スクリプトを使用して、組織のアプリ署名プロセスを簡素化および合理化できるようになりました。   スクリプトとこれを使用するための手順をダウンロードするには、TechNet ギャラリーの [Windows 10 ポータル サイトの Microsoft Intune 署名スクリプト](https://aka.ms/win10cpscript)に関する記事をご覧ください。 この発表に関して詳しくは、Intune サポート チームのブログの「[Updating your Windows 10 Company Portal app (Windows 10 ポータル サイト アプリの更新)](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/)」をご覧ください。
+アプリ ベースの条件付きアクセス ポリシーを作成して、アプリ保護ポリシーが適用されていないアプリが [SharePoint Online](/InTune/deploy-use/mam-ca-for-sharepoint-online) にアクセスするのをブロックできるようになりました。 アプリ ベースの条件付きアクセスのシナリオでは、Azure Portal を使用して SharePoint Online にアクセスするアプリを指定できます。
 
+### <a name="bulk-enroll-windows-10-devices----747607---"></a>Windows 10 デバイスを一括登録する <!-- 747607 -->
+
+Windows 構成デザイナー (WCD) で Azure Active Directory と Intune に Windows 10 Creators Update を実行する多数のデバイスを参加させることができるようになりました。 Azure AD テナントの [一括 MDM 登録](/intune/deploy-use/bulk-enroll-windows) を有効にするには、Windows 構成デザイナーを使用して Azure AD テナントにデバイスを参加させるプロビジョニング パッケージを作成し、一括登録と管理を行う会社所有のデバイスにパッケージを適用します。 パッケージがデバイスに適用されると、デバイスは Azure AD に参加し、Intune に登録され、Azure AD ユーザーがログオンできる状態になります。  Azure AD ユーザーはこれらのデバイス上の標準ユーザーであり、割り当て済みのポリシーと必須アプリを受け取ります。 この時点では、セルフ サービスと会社ポータルのシナリオはサポートされていません。
 
 ## <a name="notices"></a>通知
 
-### <a name="support-for-ios-103"></a>iOS 10.3 のサポート
+### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Apple 登録シナリオへの直接アクセス <!--951869-->
 
-2017 年 3 月 27 日に、iOS ユーザー向けに iOS 10.3 がリリースされました。 既存の Intune MDM と MAM のシナリオには、Apple の最新バージョンの OS との互換性があります。 現在利用できる iOS デバイスを管理するすべて既存の Intune 機能は、ユーザーがデバイスとアプリを iOS 10.3 にアップグレードすることによって機能し続けます。
+Intune では、2017 年 1 月以降に作成された Intune アカウントについて、Azure プレビュー ポータルの Enroll Devices ワークロードを使用して、Apple 登録シナリオに直接アクセスできるようになりました。 これまでは、Apple 登録プレビューはクラシックの Intune ポータルのリンクからのみアクセスが可能でした。 2017 年 1 月より前に作成された Intune アカウントの場合は、これらの機能が Azure で利用可能になるまでの間、1 回限りの移行が必要です。 移行スケジュールはまだ発表されていませんが、詳細はできる限り早く発表します。 既存のアカウントでプレビューにアクセスできない場合は、試用アカウントを作成して、新しいエクスペリエンスをテストすることを強くお勧めします。
 
-現時点で共有すべき既知の問題はありません。 iOS 10.3 に関する問題が発生した場合は、[Intune サポート チーム](/intune/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)にお問い合わせください。
+### <a name="whats-coming-for-appx-in-intune-on-azure----1000270---"></a>Intune on Azure での appx に予定されている新機能 <!-- 1000270 -->
 
-### <a name="improved-support-for-android-users-based-in-china---720444--"></a>中国の Android ユーザー向けのサポートが向上しました <!--720444-->
+Intune on Azure への移行の一環として、appx に関して次の 3 つの変更が行われています。
 
-中国では Google Play ストアを利用できないため、Android デバイスの場合は中国のマーケットプレースからアプリを入手する必要があります。 ポータル サイトでは、中国の Android ユーザーをリダイレクトして、ローカルのアプリ ストアからポータル サイトおよび Outlook のアプリをダウンロードできるようにし、このワークフローをサポートします。 これにより、モバイル デバイス管理およびモバイル アプリケーション管理の両方について、条件アクセス ポリシーが有効な場合に、ユーザー エクスペリエンスが向上します。 Android 用ポータル サイト アプリおよび Outlook アプリは、次の中国のアプリ ストアで入手できます。
+1. MDM 登録デバイスに対してのみ展開できる新しい appx アプリの種類を、クラシック Intune コンソールに追加します。
+2. 既存の appx アプリの種類を、Intune PC エージェントによって管理される PC のみを対象とするように用途を変更します。
+3. 移行において、すべての既存 appx を MDM appx に変換します。
 
-- [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
-- [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
-- [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
-- [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
-- [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
+#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
 
-### <a name="best-practice-make-sure-your-company-portal-apps-are-up-to-date---879465--"></a>ベスト プラクティス: ポータル サイト アプリが最新かどうかを確認する<!--879465-->
+Intune PC エージェントによって管理されるデバイスへの既存の展開に対する影響はありません。 ただし、移行後に、これらの移行された appx を、Intune PC エージェントによって管理される、以前は対象になっていなかった新しいデバイスに展開することはできません。
 
-2016 年 12 月にマイクロソフトは、ユーザーのグループの iOS、Android、Windows 8.1 以降、または Windows Phone 8.1 以降のデバイスの登録時に、これらのグループへの多要素認証 (MFA) の強制を有効にする更新プログラムをリリースしました。 この機能を使用するには、Android (v5.0.3419.0 以降) および iOS (v2.1.17 以降) 向けのポータル サイト アプリの特定のベースライン バージョンが必要です。
+#### <a name="what-action-do-i-need-to-take"></a>実行する必要があるアクション
 
-マイクロソフトでは、あらゆるサポートされたプラットフォームでコンソールとポータル サイト アプリの両方に新機能を追加することで Intune の向上に継続的に取り組んでいます。 この結果、マイクロソフトは、現在のバージョンのポータル サイト アプリに見つかった問題のみの修正プログラムをリリースしています。 このため、ユーザー エクスペリエンスを最善にするために、最新バージョンのポータル サイト アプリを使用することをお勧めします。
-
->[!Tip]
-> ユーザーに、適切なアプリ ストアからアプリを自動的に更新するようにデバイスを設定してもらうようにしてください。 Android ポータル サイト アプリをネットワーク共有で使用できるようにしている場合は、[Microsoft ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=49140)から最新バージョンをダウンロードできます。
-
-### <a name="microsoft-teams-is-now-enabled-for-mam-on-ios-and-android"></a>iOS および Android で MAM で利用できるようになった Microsoft Teams
-
-マイクロソフトは、Microsoft Teams の一般公開を発表しました。 更新された iOS および Android 向け Microsoft Teams アプリが Intune モバイル アプリ管理 (MAM) 機能で有効になったため、すべての段階で会話や企業データを保護しながら、デバイスを問わず作業することでチームの生産性をたかめることができるようになりました。 詳しくは、Enterprise Mobility and Security チームのブログの [Microsoft Teams に関するお知らせ](https://blogs.technet.microsoft.com/enterprisemobility/2017/03/14/microsoft-teams-is-now-generally-available-and-mam-enabled-on-ios-and-android/)をご覧ください。
+移行終了後、新しい PC 展開を行いたい場合は、appx を PC appx として再アップロードする必要があります。 詳しくは、Intune サポート チーム ブログの「[Appx changes in Intune on Azure](https://aka.ms/appxchange)」 (Intune on Azure での appx の変更) をご覧ください。  
 
 
 ## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Azure での新しい Intune 管理者エクスペリエンスのパブリック プレビューの新機能<!--736542-->
@@ -117,7 +104,7 @@ Apple は、2017 年春より Application Transport Security (ATS) の特定の�
 
 ### <a name="see-also"></a>関連項目
 * [Microsoft Intune のブログ](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [クラウド プラットフォームのロードマップ](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [クラウド プラットフォームのロードマップ](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Azure プレビューの新機能](https://docs.microsoft.com/intune-azure/introduction/whats-new)
 * [ポータル Web サイトの UI の新機能](https://docs.microsoft.com/intune/whats-new/whats-new-in-company-portal-ui)
 * [新機能の公開履歴](whats-new-archive.md)

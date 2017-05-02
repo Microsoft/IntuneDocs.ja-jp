@@ -1,6 +1,6 @@
 ## <a name="enable-windows-10-automatic-enrollment"></a>Windows 10 の自動登録を有効にする
 
-ユーザーは自動登録を使用して、職場または学校のアカウントを追加し、管理することに同意して、Intune に会社所有または個人の Windows 10 PC および Windows 10 Mobile デバイスを登録できます。 簡単にできます。 バック グラウンドでユーザーのデバイスが登録され、Azure Active Directory に参加します。 登録されると、デバイスは Intune で管理されます。
+自動登録により、ユーザーは個人所有のデバイスに職場のアカウントを追加したり、会社所有のデバイスを Azure Active Directory に参加させたりして、Windows 10 デバイスを Intune に登録することができます。 バック グラウンドでユーザーのデバイスが登録され、Azure Active Directory に参加します。 登録されると、デバイスは Intune で管理されます。
 
 **必要条件**
 - Azure Active Directory Premium サブスクリプション ([試用版サブスクリプション](http://go.microsoft.com/fwlink/?LinkID=816845))
@@ -21,19 +21,19 @@
 
   ![Azure Portal のスクリーンショット](../media/auto-enroll-intune.png)
 
-4. 自動的に登録するユーザーを構成します。
+4. **[MDM ユーザー スコープ]** を構成します。 どのユーザーのデバイスを Microsoft Intune で管理するのかを指定します。 これらのユーザーの Windows 10 デバイスは、Microsoft Intune の管理対象として自動的に登録されます。
 
-  ![Azure Portal のスクリーンショット](../media/auto-enroll-scope.png)
-
-  次の URL の既定値を使用します。
-  - **MDM 登録**
-  - **MDM 使用条件**
-  - **MDM コンプライアンス**
-
-5. どのユーザーのデバイスを Microsoft Intune で管理するのかを指定します。 これらのユーザーの Windows 10 デバイスは、Microsoft Intune の管理対象として自動的に登録されます。
-
-  - **すべて**
-  - **グループ**
   - **なし**
+  - **一部**
+  - **すべて**
+
+   ![Azure Portal のスクリーンショット](../media/auto-enroll-scope.png)
+
+5. 次の URL の既定値を使用します。
+    - **MDM 使用条件 URL**
+    - **MDM 探索 URL**
+    - **MDM 準拠 URL**
 
 6. **[保存]** を選択します。
+
+既定では、サービスに対して 2 要素認証は有効になっていません。 ただし、デバイスを登録するときには 2 要素認証をお勧めします。 このサービスの 2 要素認証を要求する前に、Azure Active Directory で 2 要素認証プロバイダーを構成し、多要素認証用にユーザー アカウントを構成する必要があります。 「[クラウドでの Azure Multi-Factor Authentication Server の概要](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud)」を参照してください。

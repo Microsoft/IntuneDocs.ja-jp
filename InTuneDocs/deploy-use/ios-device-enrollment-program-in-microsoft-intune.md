@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
-ms.openlocfilehash: 89a573abb8853ffdab713ce838de323abac03c37
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: ab91737586103ecc6f279daf6a55eb8988ad991a
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -162,7 +162,9 @@ Microsoft Intune は、"無線" で Device Enrollment Program (DEP) を通じて
 
 ## <a name="changes-to-intune-group-assignments"></a>Intune グループ割り当ての変更
 
-2017 年 4 月から、デバイス グループの管理は Azure Active Directory に移行されます。 Azure Active Directory グループに切り替えた後は、グループの割り当ては企業の登録プロファイルのオプションに表示されません。 この変更は数か月間にわたりロールアウトされるため、変更はすぐに表示されないことがあります。 新しいポータルに移動した後、会社の登録プロファイルの名前に基づいて動的なデバイス グループの割り当てを定義できます。 業務用デバイスの登録プロファイルで事前に割り当てられている Intune デバイス グループごとに、Azure Active Directory デバイス グループへの移行時に、業務用デバイスの登録プロファイルの名前に基づいて、AAD に対応する動的デバイス グループが作成されます。 このプロセスにより、デバイス グループに既に割り当てられているデバイスが、ポリシーおよびデプロイされたアプリと共にグループに自動的に登録されることが保証されます。 Azure Active Directory グループの詳細については[こちら](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)を参照してください。
+2017 年 4 月から、デバイス グループの管理は Azure Active Directory に移行されます。 Azure Active Directory グループに切り替えた後は、グループの割り当ては企業の登録プロファイルのオプションに表示されません。 この変更は数か月間にわたりロールアウトされるため、変更はすぐに表示されないことがあります。 新しいポータルに移動した後、会社の登録プロファイルの名前に基づいて動的なデバイス グループの割り当てを定義できます。 業務用デバイスの登録プロファイルで事前に割り当てられている Intune デバイス グループごとに、Azure Active Directory デバイス グループへの移行時に、業務用デバイスの登録プロファイルの名前に基づいて、AAD に対応する動的デバイス グループが作成されます。 このプロセスにより、デバイス グループに既に割り当てられているデバイスが、ポリシーおよびデプロイされたアプリと共にグループに自動的に登録されることが保証されます。 会社所有の iOS デバイスの登録に与える影響の詳細については、「[Changes to Automatic Grouping for Corporate Pre-enrolled iOS Devices](https://blogs.technet.microsoft.com/intunesupport/2017/04/19/changes-to-automatic-grouping-for-corporate-pre-enrolled-ios-devices/)(会社の事前登録済み iOS デバイスに対する自動グループ化の変更)」を参照してください。
+
+[Azure Active Directory グループの詳細について学習する](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)こともできます。
 
 ### <a name="see-also"></a>関連項目
 [デバイスを登録するための前提条件](prerequisites-for-enrollment.md)

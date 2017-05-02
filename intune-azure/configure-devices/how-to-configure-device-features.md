@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: dd53e547a8f834eff528e79cf2506be1e6c2dc2a
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: e1bc6388ec1927693bac676a20a18935cdbf894e
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -44,8 +44,12 @@ ms.lasthandoff: 03/17/2017
     - **macOS**
 6. **[プロファイルの種類]** ドロップダウン リストで、**[デバイス機能]** を選択します。 
 7. 選択したプラットフォームによって構成できる設定が異なります。 各プラットフォームの詳細な設定については、次のいずれかのトピックを参照してください。
-    - [iOS の設定](device-features-for-ios.md)
-    - [macOS の設定](device-features-for-macos.md)
+    - [iOS および macOS 用 AirPrint の設定](air-print-settings-for-ios-and-macos.md)
+     - [iOS 用 AirPlay の設定](airplay-settings-for-ios-devices.md)
+    - [iOS 用ホーム画面のレイアウト設定](home-screen-settings-for-ios.md)
+    - [iOS 用アプリの通知設定](app-notification-settings-for-ios.md)
+    - [iOS 用共有デバイス構成設定](shared-device-settings-for-ios.md)
+    - [iOS 用 Web コンテンツ フィルター設定](web-content-filter-settings-for-ios.md)
 
 8. 完了したら、**[プロファイルを作成します]** ブレードに戻り、**[作成]** をクリックします。
 

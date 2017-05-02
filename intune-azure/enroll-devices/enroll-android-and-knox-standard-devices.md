@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: b664620f424f9ef612d17beb810564dbdd68ff79
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: b2cbabea781840df0a2a283f803dc76520590aba
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -28,6 +28,8 @@ ms.lasthandoff: 03/22/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 Intune では、Samsung Knox Standard デバイスを含む、Android デバイスを管理することができます。 デバイス管理を有効にするには、ユーザーは Intune ポータル サイト アプリ (Google Play から入手可能) をダウンロードし、アプリを開き、登録に関する画面の指示に従って、デバイスを登録する必要があります。 Android デバイスを管理下に置いたら、[コンプライアンス ポリシーの作成](https://docs.microsoft.com/intune-azure/set-device-compliance/create-a-compliance-policy-for-android)や[アプリの管理](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-management)などを行うことができます。
+
+Samsung KNOX Standard を実行するデバイスが、Intune によるマルチユーザー管理のサポート対象になりました。 つまり、エンド ユーザーは Azure AD の資格情報を使ってデバイスのサインインとサインアウトを行うことができ、デバイスは使用中かどうかに関わらず一元管理されます。 サインインしたエンド ユーザーはアプリにアクセスでき、適用されるポリシーをさらに受け取ります。 ユーザーがサインアウトすると、すべてのアプリ データがクリアされます。
 
 ## <a name="prerequisite"></a>前提条件
 

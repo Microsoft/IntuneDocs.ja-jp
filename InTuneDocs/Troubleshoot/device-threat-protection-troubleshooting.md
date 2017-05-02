@@ -15,8 +15,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: b02a5247cec36b45679a76bf3d637cf8b5c031f4
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: de2f224f203257fe539196557180f0b5da5d8373
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -36,7 +37,7 @@ Lookout MTP は、構成されている Azure AD グループのユーザーの�
 
 * 電子メール: enterprisesupport@lookout.com
 * [MTP コンソール](http://aad.lookout.com)にログインして、**[Support]** (サポート) モジュールに移動します。
-* https://enterprise.support.lookout.com/hc/en-us/requests にアクセスしてサポートを要求します。
+* https://enterprise.support.lookout.com/hc/requests にアクセスしてサポートを要求します。
 
 ## <a name="unable-to-sign-in"></a>サインインできない
 Azure AD グローバル管理者ユーザーが初期 Lookout セットアップを受け入れていない場合、次のエラーが表示されます。
@@ -55,7 +56,7 @@ Azure AD グローバル管理者ユーザーが初期 Lookout セットアッ�
 
 ### <a name="device-reported-as-pending"></a>デバイスが**保留中**として報告される
 
-エンド ユーザーが Lookout for Work アプリを開かずに **[Activate]** (アクティブ化) ボタンをタップした場合、デバイスは **[Pending]** (保留中) と表示されます。 Lookout for Work アプリでのデバイスのアクティブ化の詳細については、「[Android デバイスで Lookout for Work のインストールを求められる](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)」または「[iOS デバイスで Lookout for Work のインストールを求められる](https://docs.microsoft.com/en-us/intune/enduser/you-are-prompted-to-install-lookout-for-work-ios)」をご覧ください。
+エンド ユーザーが Lookout for Work アプリを開かずに **[Activate]** (アクティブ化) ボタンをタップした場合、デバイスは **[Pending]** (保留中) と表示されます。 Lookout for Work アプリでのデバイスのアクティブ化の詳細については、「[Android デバイスで Lookout for Work のインストールを求められる](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)」または「[iOS デバイスで Lookout for Work のインストールを求められる](https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-ios)」をご覧ください。
 
 ## <a name="device-whos-active-but-has-no-device-id"></a>デバイスはアクティブであるがデバイス ID がない
 Lookout MTP コンソールでアクティブなデバイスにデバイス ID が表示されない場合は、デバイスのユーザーが登録グループに含まれません。 デバイスのユーザーが登録グループから削除された場合、または登録グループが削除された場合、デバイスはこの状態になる可能性があります。
@@ -83,14 +84,9 @@ Lookout MTP コンソールの **[Devices]** (デバイス) モジュールで�
 ## <a name="compliance-remediation-workflows"></a>コンプライアンス修復のワークフロー
 - [Android デバイスで Lookout for Work のインストールを求められる]( http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 - [Android デバイスで Lookout for Work が検出した脅威を解決する必要がある](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
-- [iOS デバイスで Lookout for Work が検出した脅威を解決する必要がある](https://docs.microsoft.com/en-us/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
+- [iOS デバイスで Lookout for Work が検出した脅威を解決する必要がある](https://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
 
 ### <a name="see-also"></a>関連項目
-[Lookout MTP でサブスクリプションをセットアップする](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
+[Lookout MTP でサブスクリプションをセットアップする](https://docs.microsoft.com/intune/deploy-use/set-up-your-subscription-with-lookout-mtp)
 

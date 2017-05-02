@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 9e348278f62b2b9ba10f0f77c9fda214b43812a7
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -225,6 +225,67 @@ ms.lasthandoff: 03/17/2017
 -     **[共有フォト ストリーム]** - デバイスの **[iCloud Photo Sharing (iCloud の写真共有)]** を無効にするには、**[いいえ]** に設定します。
 -     **[アクティビティの継続]** - ユーザーがある iOS デバイスで開始した作業を別の iOS または macOS デバイスで続行できるようにします (Handoff)。
 
+## <a name="autonomous-single-app-mode-supervised-only"></a>自律的シングル App モード (監視モードのみ)
+
+これらの設定を使用して、自律的シングル App モードで指定したアプリを実行するように iOS デバイスを構成できます。 このモードを構成した場合、指定したアプリが実行されると、デバイスはそのアプリだけを実行できるようにロックされます。 たとえば、ユーザーがデバイスでテストを受けられるようにアプリを構成するような場合です。 アプリのアクションが完了した場合、または管理者がこのポリシーを削除した場合、デバイスは通常の状態に戻ります。
+
+### <a name="settings"></a>Settings
+
+- **[アプリ名]** - このブレードのアプリ一覧に表示される通りにアプリの名前を入力します。
+- **[アプリ バンドル ID]** - アプリのバンドル ID を入力します。 詳細については、このトピックの「**組み込み iOS アプリのバンドル ID リファレンス**」をご覧ください。
+
+アプリ名とバンドル ID をそれぞれ指定したら、**[追加]** を選択して一覧に追加します。
+
+- **[インポート]** - アプリ名とそれに関連付けられているバンドル ID の一覧を含むコンマ区切り値 (.csv) ファイルをインポートします。
+- **[エクスポート]** - 構成したアプリ名とそれに関連付けられているバンドル ID を、コンマ区切り値 (.csv) ファイルにエクスポートします。
+
+### <a name="bundle-id-reference-for-built-in-ios-apps"></a>組み込み iOS アプリのバンドル ID リファレンス
+
+この一覧は、一般的な組み込み iOS アプリのバンドル ID を示しています。 他のアプリのバンドル ID を調べるには、ソフトウェア ベンダーにお問い合わせください。
+
+|||
+|-|-|
+|アプリ名|バンドル ID|
+|アプリ ストア|com.apple.AppStore|
+|計算機|com.apple.calculator|
+|予定表|com.apple.mobilecal|
+|カメラ|com.apple.camera|
+|時計|com.apple.mobiletimer|
+|コンパス|com.apple.compass|
+|連絡先|com.apple.MobileAddressBook|
+|FaceTime|com.apple.facetime|
+|友達を探す|com.apple.mobileme.fmf1|
+|Find iPhone|com.apple.mobileme.fmip1|
+|Game Center|com.apple.gamecenter|
+|GarageBand|com.apple.mobilegarageband|
+|正常性|com.apple.Health|
+|iBooks|com.apple.iBooks|
+|iTunes Store|com.apple.MobileStore|
+|iTunes U|com.apple.itunesu|
+|Keynote|com.apple.Keynote|
+|メール|com.apple.mobilemail|
+|マップ|com.apple.Maps|
+|メッセージ|com.apple.MobileSMS|
+|ミュージック|com.apple.Music|
+|News|com.apple.news|
+|注|com.apple.mobilenotes|
+|数字|com.apple.Numbers|
+|ページ|com.apple.Pages|
+|Photo Booth|com.apple.Photo-Booth|
+|写真|com.apple.mobileslideshow|
+|Podcast|com.apple.podcasts|
+|リマインダー|com.apple.reminders|
+|Safari|com.apple.mobilesafari|
+|Settings|com.apple.Preferences|
+|株価|com.apple.stocks|
+|ヒント|com.apple.tips|
+|ビデオ|com.apple.videos|
+|VoiceMemos|com.apple.VoiceMemos|
+|Wallet|com.apple.Passbook|
+|視聴する|com.apple.Bridge|
+|天気|com.apple.weather|
+
+
 ## <a name="kiosk"></a>キオスク
 -     **[アクティベーション ロック]** - 監視されている iOS デバイスでアクティベーション ロックを有効にします。
 -     **[キオスク モードで実行されるアプリ]** - **[管理対象アプリ]** を選択して Intune に追加したアプリケーションを選択するか、**[ストア アプリ]** を選択してストア内のアプリの URL を指定します。 他のアプリはデバイスでの実行が許可されません。 詳細については、このトピックで後述する「アプリ ストアの URL を指定する方法」を参照してください。
@@ -256,4 +317,21 @@ ms.lasthandoff: 03/17/2017
 -     **[JavaScript]** - JavaScript をブラウザーで実行できるようにします。
 -     **[不正行為の警告]** - ブラウザーで不正行為の警告を使用できるようにします。
 -     **[ポップアップ]** - ブラウザーのポップアップ ブロックを有効または無効にします。
+
+
+## <a name="domains"></a>Domains
+
+### <a name="unmarked-email-domains"></a>マークされていないメール ドメイン
+
+**[メール ドメイン URL]** フィールドで、1 つ以上の URL を一覧に追加します。 構成したドメイン以外のドメインからのメールをエンド ユーザーが受信すると、そのメールは iOS のメール アプリで信頼されていないメールとしてマークされます。
+
+
+### <a name="managed-web-domains"></a>管理された Web ドメイン
+
+**[Web ドメイン URL]** フィールドで、1 つ以上の URL を一覧に追加します。 指定したドメインからダウンロードされたドキュメントは、管理されているものと見なされます。 この設定は、Safari ブラウザーを使用してダウンロードされたドキュメントにのみ適用されます。
+
+
+### <a name="safari-password-auto-fill-domains"></a>Safari パスワードの自動入力ドメイン
+
+**[ドメイン URL]** フィールドで、1 つ以上の URL を一覧に追加します。 ユーザーは、この一覧の URL からの Web パスワードのみを保存できます。 この設定は、Safari ブラウザー、および iOS 9.3 以降の監視モードのデバイスにのみ適用されます。 URL を指定しないと、すべての Web サイトからのパスワードが保存されます。
 

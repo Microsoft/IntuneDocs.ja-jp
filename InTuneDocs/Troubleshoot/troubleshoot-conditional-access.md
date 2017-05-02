@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
-ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
-ms.lasthandoff: 03/04/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: cc14d6a44b3dcb6234cc77cb463098a9d2f4c5b8
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -63,7 +63,7 @@ ms.lasthandoff: 03/04/2017
     
         -    この状態のデバイスでは、ユーザーが安全なスタートアップ パスコードを設定する必要があります。 ユーザーには、ポータル サイト アプリから、デバイスのスタートアップ パスコードを設定するように求めるデバイス通知が表示されます。 デバイス通知をタップし、既存の PIN またはパスワードを確認した後に、**[Secure start-up]** (安全な起動) 画面で **[Require PIN to start device]** (デバイスの起動に PIN が必要) を選択します。 ポータル サイト アプリからデバイスの **[ポリシー準拠状況の確認]** ボタンをタップします。 デバイスは暗号化済みとして検出されるようになります。
     
-        -     デバイスの製造元によっては、ユーザーが設定したシークレット PIN ではなく既定の PIN を使用してデバイスを暗号化する場合があります。 Intune は、既定の PIN を使用した暗号化を安全ではないと認識します。この方法の暗号化では、悪意のあるユーザーがデバイスに物理的にアクセスできる場合、デバイス上のデータが危険な状態になるためです。 この問題が生じた場合は、[アプリの保護ポリシー](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies)を使用することを検討してください。
+        -     デバイスの製造元によっては、ユーザーが設定したシークレット PIN ではなく既定の PIN を使用してデバイスを暗号化する場合があります。 Intune は、既定の PIN を使用した暗号化を安全ではないと認識します。この方法の暗号化では、悪意のあるユーザーがデバイスに物理的にアクセスできる場合、デバイス上のデータが危険な状態になるためです。 この問題が生じた場合は、[アプリの保護ポリシー](https://docs.microsoft.com/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies)を使用することを検討してください。
 
 ## <a name="policy-issues"></a>ポリシーの問題
 
@@ -119,7 +119,7 @@ ms.lasthandoff: 03/04/2017
 ### <a name="exchange-connector-logs"></a>Exchange Connector のログ
 
 #### <a name="general-log-information"></a>一般的なログ情報
-Exchange Connector のログを表示するには、[サービス トレース ビューアー ツール] (サービス トレース ビューアー ツール (https://msdn.microsoft.com/ja-jp/library/ms732023(v=vs.110).aspx) を使用します。 このツールを使用するには、Windows Server SDK をダウンロードする必要があります。
+Exchange Connector のログを表示するには、[サーバー トレース ビューアー ツール] (サーバー トレース ビューアー ツール (https://msdn.microsoft.com/ja-jp/library/ms732023(v=vs.110).aspx) を使用します。 このツールを使用するには、Windows Server SDK をダウンロードする必要があります。
 
 >[!NOTE]
 >ログは C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs に置かれます。 ログは *Connector0.log* から *Connector29.log* までの 30 個の一連のログ ファイルで格納されます。 10MB のデータが蓄積されると次のログにロールオーバーします。 ログが Connector29 に達すると、Connector0 から再開され、以前のログが上書きされます。

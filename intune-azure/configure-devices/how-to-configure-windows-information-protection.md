@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: be070e8bdb339cfea1dbc288923620c8604e9b30
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 84fb6c275995fc43226adbda5fc5c40344d6eb09
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -32,6 +32,9 @@ ms.lasthandoff: 02/18/2017
 **Windows 情報保護**は、この潜在的なデータ漏えいの防止に役立ちます。それ以外の場合は従業員のエクスペリエンスを妨げることはありません。 また、企業が所有するデバイスと従業員が作業のために持ち込む個人用デバイスでもエンタープライズ アプリとデータを偶発的なデータ漏えいから保護します。既存の環境や他のアプリを変更する必要はありません。
 
 この Intune ポリシーは、Windows 情報保護によって保護されているアプリ、エンタープライズ ネットワークの場所、保護レベル、および暗号化設定の一覧を管理します。
+
+>[!NOTE]
+> Windows 10 ポータル サイト アプリを Windows Information Protection とともに使用するには、ポータル サイト アプリを Windows Information Protection モードの**除外対象**に追加する必要があります。 
 
 ### <a name="next-steps"></a>次のステップ
 詳細については、「[Protect your enterprise data using Windows Information Protection (Windows 情報保護を使用してエンタープライズ データを保護する)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)」を参照してください。

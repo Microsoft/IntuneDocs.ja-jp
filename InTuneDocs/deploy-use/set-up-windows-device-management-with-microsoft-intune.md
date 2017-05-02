@@ -14,9 +14,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
-ms.openlocfilehash: f6014c5500b05762d123b2285ef859d67382e402
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 1d9bd55a8abee4175d2e71727d7ff18274defd3d
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -25,21 +25,21 @@ ms.lasthandoff: 04/06/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Windows デバイスの登録を設定するには、以下のいずれかの方法を使用します。
+このトピックは IT 管理者がユーザーの Windows の登録を簡略化する際に役立ちます。  Windows デバイスは追加の手順なしに登録できますが、ユーザーのため、登録をより簡単にすることができます。
 
-- [**Azure Active Directory Premium による Windows 10 の自動登録**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)
- -  この方法は、Windows 10 デバイスでのみ使用できます。
- -  この方法を使用するには、Azure Active Directory Premium を所有している必要があります。
- -  自動登録を有効にしない場合は、Windows 8.1 および Windows Phone 8.1 向けの登録方法を使用してください。
+Windows デバイスの登録を簡略化する方法は、次の 2 つの要素によって決まります。
+- **Azure Active Directory Premium を使用していますか?** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) は、Enterprise Mobility + Security およびその他のライセンス プランに付属します。
+- **どのバージョンの Windows クライアントが登録されますか?** <br>Windows 10 デバイスは、職場または学校のアカウントを追加すると自動的に登録できます。 以前のバージョンでは、会社ポータル アプリを使用して登録する必要があります。
 
-- [**Azure AD Premium 自動登録なしで登録する**](#enable-windows-enrollment-without-azure-ad-premium)
- - Windows 8.1 および Windows Phone 8.1 デバイスを登録するには、この方法を使用する必要があります。
- - Azure Active Directory (AD) Premium を使用しない場合、Windows 8.1 以降のデバイスにはこの方法を利用できます。
+||**Azure AD Premium**|**その他の AD**|
+|----------|---------------|---------------|  
+|**Windows 10**|[自動登録](#enable-windows-10-automatic-enrollment) |[ユーザー登録](#enable-windows-enrollment-without-azure-ad-premium)|
+|**以前の Windows バージョン**|[ユーザー登録](#enable-windows-enrollment-without-azure-ad-premium)|[ユーザー登録](#enable-windows-enrollment-without-azure-ad-premium)|
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-automatic-enrollment"></a>自動登録なしの Windows 登録を有効にする
-Azure AD Premium の自動登録なしで、ユーザー自身でデバイスをインストールおよび登録させることができます。 ライセンスをユーザーのアカウントに割り当てると、ユーザーはそのアカウントを Windows デバイスに追加してそのデバイスを管理対象に登録できるようになります。 DNS の CNAME リソース レコードを作成すると、ユーザーはサーバー名を入力することなく Intune に接続して登録できるようになります。
+Azure AD Premium の自動登録なしで、ユーザー自身にデバイスを登録させることができます。 ライセンスを割り当てると、ユーザーは個人所有のデバイスに職場のアカウントを追加したり、会社所有のデバイスを Azure AD に参加させたりして登録することができます。 DNS エイリアス (CNAME レコード タイプ) を作成すると、ユーザーがデバイスを簡単に登録できるようになります。 DNS の CNAME リソース レコードを作成すると、ユーザーは Intune サーバー名を入力することなく Intune に接続して登録できるようになります。
 
 **手順 1: CNAME を作成する** (省略可能)<br>
 会社のドメインの CNAME DNS リソース レコードを作成します。 たとえば、会社の Web サイトが contoso.com の場合、EnterpriseEnrollment.contoso.com を enterpriseenrollment-s.manage.microsoft.com にリダイレクトする CNAME を DNS に作成します。

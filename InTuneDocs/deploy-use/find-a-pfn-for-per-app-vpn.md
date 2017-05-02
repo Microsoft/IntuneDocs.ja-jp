@@ -15,8 +15,9 @@ ms.reviewer: tycast
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: b0006416f2b078c8c0cf5eb14ccea4749604e1dc
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0fd7d7e1e09f193479c6ad221c8ace7470942c5a
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -72,10 +73,10 @@ OneNote について取得される情報の例を次に示します。
 
 ## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>アプリがコンピューターにインストールされていない場合に PFN を検索する
 
-1.    https://www.microsoft.com/en-us/store/apps に移動します。
+1.    https://www.microsoft.com/ja-jp/store/apps に移動します。
 2.    検索バーにアプリ名を入力します。 この例では、OneNote を検索します。
-3.    アプリのリンクを選びます。 URL の末尾に一連の文字があることに注意してください。 この例では、URL は `https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl` のようになります。
-4.    別のタブに URL "`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`" を貼り付けます。 `<app id>` の部分を、https://www.microsoft.com/en-us/store/apps から取得したアプリ ID (手順 3 の URL の末尾にある一連の文字) で置き換えます。 この OneNote の例の場合、`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata` を貼り付けます。
+3.    アプリのリンクを選びます。 URL の末尾に一連の文字があることに注意してください。 この例では、URL は `https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl` のようになります。
+4.    別のタブに URL "`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`" を貼り付けます。 `<app id>` の部分を、https://www.microsoft.com/ja-jp/store/apps から取得したアプリ ID (手順 3 の URL の末尾にある一連の文字) で置き換えます。 この OneNote の例の場合、`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata` を貼り付けます。
 
 Microsoft Edge に目的の情報が表示されます。Internet Explorer で **[開く]** を選んで情報を確認します。 PFN 値は最初の行に表示されます。 この例の結果は次のようになります。
 
@@ -86,9 +87,4 @@ Microsoft Edge に目的の情報が表示されます。Internet Explorer で *
 `  "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",`
 `  "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"`
 `}`
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

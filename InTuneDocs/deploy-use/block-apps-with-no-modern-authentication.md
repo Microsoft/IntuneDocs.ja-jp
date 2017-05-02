@@ -1,5 +1,5 @@
 ---
-title: "最新の認証を使用していないアプリをブロックする | Microsoft Docs"
+title: "最新の認証を使用していないアプリをブロックする"
 description: 
 keywords: 
 author: andredm7
@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
-ms.openlocfilehash: b2d708e35a7993ff7c5e3db170b1025794b33baf
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: abfb3912ba6dfa6802e1321782afd155a96fbefc
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -26,15 +26,22 @@ ms.lasthandoff: 02/25/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-アプリ保護ポリシーを使用したアプリ ベースの条件付きアクセスは、OAuth2 の実装である[最新の認証](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)を使用するアプリケーションに依存しています。 最新の Office モバイル アプリとデスクトップ アプリケーションは最新の認証を使用していますが、基本認証やフォームベースの認証など、他の認証方式を使用しているサードパーティ製アプリや古い Office アプリもあります。
+アプリ保護ポリシーを使用したアプリ ベースの条件付きアクセスは、OAuth2 の実装である[最新の認証](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)を使用するアプリケーションに依存しています。 最新の Office モバイル アプリとデスクトップ アプリケーションは最新の認証を使用していますが、基本認証やフォームベースの認証など、他の認証方式を使用しているサードパーティ製アプリや古い Office アプリもあります。
 
 このようなアプリに対するアクセスをブロックするには、以下を推奨します。
 
 * 最新ではない認証プロトコルをブロックするように ADFS 要求規則を設定します。 詳しい手順は、シナリオ 3 の[ブラウザー ベースのアプリケーションを除く Office 365 への外部アクセスをすべてブロックする方法](https://technet.microsoft.com/library/dn592182.aspx)に関するページを参照してください。
+* **SharePoint Online** では、PowerShell コマンドレット [Set-SPOTenant](https://technet.microsoft.com/library/fp161390.aspx) を使用して従来の認証プロトコルのプロパティを false に設定することで、SharePoint Online サービスの最新ではない認証を無効にします。
+
+```
+ Set-SPOTenant -LegacyAuthProtocolsEnabled $false
+ 
+```
+
 
 >[!IMPORTANT]
 >アプリ ベースの CA は、Azure Active Directory (Azure AD) 証明書ベースの認証と併用することはできません。 同時に使用できるのは、いずれかの構成のみです。
 
 ### <a name="see-also"></a>関連項目
-[Intune でサポートされているアプリにのみ Office&365; サービスへのアクセスを許可する](allow-policy-managed-apps-access-to-o365.md)
+[Intune でサポートされているアプリにのみ Office 365 サービスへのアクセスを許可する](allow-policy-managed-apps-access-to-o365.md)
 

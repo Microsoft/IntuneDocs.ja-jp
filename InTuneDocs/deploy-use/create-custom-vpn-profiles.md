@@ -15,8 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f2b364b2c57adab33df2a8e6b34c1f30c02988d3
-ms.openlocfilehash: 9dbb44981c1525e6137dd8a469b1582731ee9719
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 260c328d37174c94bde37162ec011aded26a9f72
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +33,7 @@ Intune のカスタム構成ポリシーを使用して、以下の VPN プロ�
 * Android for Work デバイス
 * Windows 8.1 以降を実行する登録済みのデバイス
 * Windows Phone 8.1 以降が実行されているデバイス
-* Windows 10 デスクトップを実行する登録済みのデバイス 
+* Windows 10 デスクトップを実行する登録済みのデバイス
 * Windows 10 Mobile を実行するデバイス
 
 この種のポリシーは、標準的な Intune VPN ポリシーに、使用する設定が含まれていない場合に役立ちます。
@@ -52,7 +53,7 @@ Intune のカスタム構成ポリシーを使用して、以下の VPN プロ�
 ## <a name="example-uri-settings"></a>URI 設定の例
 
 これらの設定は、Contoso という架空の会社で VPN のカスタム構成を作成する場合に使用できます。
-使用できるすべての設定の詳細については、「[VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx)」を参照してください。
+使用できるすべての設定の詳細については、「[VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx)」を参照してください。
 
 Contoso のネイティブ VPN (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
 
@@ -90,7 +91,7 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 **./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/1/App/Id** Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 
-これらの設定の使用方法についてのご質問または設定がどのように機能するかの詳細については、次の構成サービス プロバイダー (CSP) のドキュメントを参照してください。https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx
+これらの設定の使用方法についてのご質問または設定がどのように機能するかの詳細については、次の構成サービス プロバイダー (CSP) のドキュメントを参照してください。https://msdn.microsoft.com/library/windows/hardware/dn914776(v=vs.85).aspx
 
 ## <a name="uri-settings-for-android-per-app-vpn-on-pulsesecure"></a>PulseSecure での Android のアプリごとの VPN 用の URI 設定
 ### <a name="custom-uri-for-package-list"></a>パッケージ リスト用のカスタム URI
@@ -116,9 +117,4 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune での VPN 接続](vpn-connections-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

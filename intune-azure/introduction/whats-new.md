@@ -6,7 +6,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/20/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 586bdab54ee60ba8d620857ab3506aa27622d17a
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
+ms.openlocfilehash: 9554a431859665312daf414f2c6cdfb47baf8547
+ms.lasthandoff: 04/20/2017
 
 ---
 
@@ -30,6 +30,127 @@ ms.lasthandoff: 03/17/2017
 
 > [!Note]
 > Azure Portal プレビューについて、このページに記載されている変更が展開されます。 ただし、Intune サービスの更新方法により、変更はすぐに入手できない場合があります。  新しいポータル機能を入手できるようになる前に、サービスのいくつかのコンポーネントを順次更新する必要があります。 今後、今月ロールアウトされる変更を随時ご確認ください。
+
+## <a name="april-2017"></a>2017 年 4 月
+
+### <a name="support-for-managed-configuration-options-for-android-apps----621621---"></a>Android アプリ向けの管理対象構成オプションのサポート<!-- 621621 -->
+
+管理対象構成オプションをサポートする Play ストアの Android アプリを、Intune で構成できるようになりました。  この機能は、アプリによってサポートされる構成値の一覧を表示できるようにし、値を構成できるガイド付きの使いやすい UI を提供します。
+
+### <a name="new-android-policy-for-complex-pins----722069---"></a>複雑な暗証番号 (PIN) に対する新しい Android ポリシー <!-- 722069 -->
+
+Android 5.0 以降を搭載しているデバイスの Android デバイス プロファイルに、数値複素数タイプの必須[パスワード](/intune-azure/configure-devices/device-restrictions-for-android#password)を設定できるようになりました。  反復する値や連続する値 (1111 や 1234 など) を含む暗証番号 (PIN) をデバイスのユーザーが作成しないようにするには、この設定を使います。
+
+### <a name="additional-support-for-android-for-work-devices"></a>Android for Work デバイスの追加サポート
+
+- **パスワードと仕事用プロファイルの設定を管理する** <!-- 612808 -->
+
+  この新しい Android for Work デバイス制限ポリシーにより、管理対象の Android for Work デバイスで、パスワードと仕事用プロファイルの設定を管理できるようになりました。
+
+- **仕事用プロファイルと個人プロファイル間でのデータ共有を許可する** <!-- 1045102 -->
+
+この Android for Work デバイス制限プロファイルには、仕事用プロファイルと個人用プロファイルでのデータ共有の設定ができる新しいオプションが用意されました。
+
+- **仕事用プロファイルと個人プロファイルの間でのコピーと貼り付けを制限する** <!-- 1046094 -->
+
+  Android for Work デバイス用の新しいカスタム デバイス プロファイルでは、仕事用アプリと個人用アプリの間でのコピーと貼り付け操作を許可するかどうかを制限できます。
+
+詳細については、[Android for Work 用のデバイスの制限](/intune-azure/configure-devices/device-restrictions-for-afw)に関するページをご覧ください。
+
+### <a name="assign-lob-apps-to-ios-and-android-devices----1057568---"></a>iOS デバイスと Android デバイスに LOB アプリを割り当てる <!-- 1057568 -->
+
+[iOS](/intune-azure/manage-apps/ios-lob-app) 用 (.ipa ファイル) と [Android](/intune-azure/manage-apps/android-lob-app) 用 (.apk ファイル) の基幹業務 (LOB) アプリを、ユーザーまたはデバイスに割り当てることができるようになりました。
+
+###  <a name="new-device-policies-for-ios----723774-723815-723826-723830---"></a>iOS 用の新しいデバイス ポリシー <!-- 723774, 723815, 723826, 723830 -->
+
+- **ホーム画面のアプリ** - [iOS デバイスのホーム画面](/intune-azure/configure-devices/home-screen-settings-for-ios)に表示されるアプリを制御します。 このポリシーは、ホーム画面のレイアウトを変更しますが、管理者によって指定されたインストールされていないアプリの展開は行いません。
+
+- **AirPrint デバイスへの接続** - iOS デバイスのエンド ユーザーが接続できる [AirPrint デバイス](/intune-azure/configure-devices/air-print-settings-for-ios-and-macos) (ネットワーク プリンター) を制御します。
+
+- **AirPlay デバイスへの接続** - iOS デバイスのエンド ユーザーが接続できる [AirPlay デバイス](/intune-azure/configure-devices/airplay-settings-for-ios-devices) (Apple TV など) を制御します。
+
+- **ロック画面のカスタム メッセージ** - ユーザーの iOS デバイスのロック画面に表示されるカスタム メッセージを構成して、既定のメッセージと置き換えます。 詳細については、「[行えるデバイス アクション](/intune-azure/manage-devices/what-is#available-device-actions)」をご覧ください。
+
+
+### <a name="restrict-push-notifications-for-ios-apps----723767---"></a>iOS アプリのプッシュ通知を制限する <!-- 723767 -->
+
+Intune のデバイス制限プロファイルでは、iOS デバイスに対して次の[通知設定](/intune-azure/configure-devices/app-notification-settings-for-ios)を構成できるようになりました。
+
+- 指定したアプリの通知を完全に有効または無効にします。
+- 指定したアプリの通知センターでの通知を有効または無効にします。
+- アラートの種類を、**なし**、**バナー**、または**モーダル アラート**に指定します。
+- このアプリに対してバッジを許可するかどうかを指定します。
+- 通知サウンドを許可するかどうかを指定します。
+
+### <a name="configure-ios-apps-to-run-in-single-app-mode-autonomously----737837---"></a>単一アプリ モードで自律的に実行するように iOS アプリを構成する<!-- 737837 -->
+
+Intune のデバイス プロファイルを使って、[自律的シングル App モード](/intune-azure/configure-devices/device-restrictions-for-ios#autonomous-single-app-mode-supervised-only)で指定したアプリを実行するように iOS デバイスを構成できるようになりました。 このモードを構成した場合、指定したアプリが実行されると、デバイスはそのアプリだけを実行できるようにロックされます。 たとえば、ユーザーがデバイスでテストを受けられるようにアプリを構成するような場合です。 アプリのアクションが完了した場合、または管理者がこのポリシーを削除した場合、デバイスは通常の状態に戻ります。
+
+### <a name="configure-trusted-domains-for-email-and-web-browsing-on-ios-devices----723765---"></a>iOS デバイスでメールと Web ブラウザー用の信頼されたドメインを構成する <!-- 723765 -->
+
+iOS デバイス制限プロファイルから、次の[ドメイン設定](/intune-azure/configure-devices/device-restrictions-for-ios#domains)を構成できるようになりました。
+
+- **[マークされていないメール ドメイン]** - ユーザーが送信または受信するメールのうち、ここで指定したドメインと一致しないものは、信頼されていないメールとしてマークされます。
+
+- **[管理された Web ドメイン]** - ここで指定した URL からダウンロードされたドキュメントは、管理されているものと見なされます (Safari のみ)。  
+
+- **[Safari パスワードの自動入力ドメイン]** - ユーザーは、ここで指定したパターンに一致する URL からのパスワードのみを Safari に保存できます。 この設定を使うには、デバイスが監視モードであり、複数ユーザー用に構成されていない必要があります。 (iOS 9.3 以降)
+
+
+### <a name="vpp-apps-available-in-ios-company-portal----748782---"></a>iOS ポータル サイトで使用できる VPP アプリ <!-- 748782 -->
+
+**利用可能な**インストールとして、iOS ボリューム購入 (VPP) アプリをエンド ユーザーに割り当てられるようになりました。 エンド ユーザーがアプリをインストールするには、Apple ストア アカウントが必要です。
+
+### <a name="synchronize-ebooks-from-apple-vpp-store----800878---"></a>Apple VPP ストアから電子ブックを同期する <!-- 800878 -->
+
+Intune と、Apple ボリューム購入プログラム ストアから購入した[本を同期](/intune-azure/manage-apps/ios-vpp-apps)し、ユーザーに割り当てることができるようになりました。
+
+### <a name="multi-user-management-for-samsung-knox-standard-devices----971988---"></a>Samsung KNOX Standard デバイスのマルチ ユーザー管理 <!-- 971988 -->
+
+Samsung KNOX Standard を実行するデバイスが、Intune による[マルチ ユーザー管理](/intune-azure/enroll-devices/enroll-android-and-knox-standard-devices)のサポート対象になりました。 つまり、エンド ユーザーは Azure Active Directory の資格情報を使ってデバイスのサインインとサインアウトを行うことができ、デバイスは使用中かどうかに関わらず一元管理されます。  サインインしたエンド ユーザーはアプリにアクセスでき、適用されるポリシーをさらに受け取ります。 ユーザーがサインアウトすると、すべてのアプリ データがクリアされます。
+
+### <a name="additional-windows-device-restriction-settings----818566---"></a>追加の Windows デバイス制限設定 <!-- 818566 -->
+
+追加の Edge ブラウザー サポート、デバイス ロック画面のカスタマイズ、スタート メニューのカスタマイズ、Windows スポットライト検索セットの壁紙、プロキシ設定など、追加の [Windows デバイス制限設定](/intune-azure/configure-devices/device-restrictions-for-windows-10)のサポートが追加されました。
+
+### <a name="multi-user-support-for-windows-10-creators-update----822547---"></a>Windows 10 Creators Update のマルチユーザー サポート <!-- 822547 -->
+
+Windows 10 Creators Update を実行し Azure Active Directory ドメインに参加しているデバイスの[マルチユーザー管理](/intune-azure/enroll-devices/enroll-windows-devices)のサポートが追加されました。 つまり、異なる標準ユーザーが Azure AD 資格情報でデバイスにログオンすると、ユーザー名に割り当てられているすべてのアプリとポリシーを受け取ります。 現時点では、アプリのインストールのようなセルフサービスのシナリオにポータル サイトは使用できません。
+
+### <a name="fresh-start-for-windows-10-pcs---1004830---"></a>Windows 10 PC の Fresh Start <!-- 1004830 -->
+
+Windows 10 PC で、新しい [Fresh Start デバイス アクション](/intune-azure/manage-devices/what-is#available-device-actions)が使用できるようになりました。  このアクションを発行すると、PC にインストールされたすべてのアプリが削除され、PC は Windows の最新バージョンに自動的に更新されます。 この機能は、新しい PC に付属することの多い事前インストール済み OEM アプリを削除するのに使うことができます。 このデバイス アクションを発行するときにユーザー データを保持するかどうかを構成できます。
+
+### <a name="additional-windows-10-upgrade-paths----903672---"></a>Windows 10 の追加アップグレード パス <!-- 903672 -->
+
+以下のエディションの Windows 10 にも、[エディション アップグレード ポリシーの作成によりデバイスをアップグレード](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade)できるようになりました。
+
+- Windows 10 Professional
+- Windows 10 Professional N
+- Windows 10 Professional Education
+- Windows 10 Professional Education N
+
+### <a name="bulk-enroll-windows-10-devices----747607---"></a>Windows 10 デバイスを一括登録する <!-- 747607 -->
+
+Windows 構成デザイナー (WCD) で Azure Active Directory と Intune に Windows 10 Creators Update を実行する多数のデバイスを参加させることができるようになりました。 Azure AD テナントの [一括 MDM 登録](/intune-azure/enroll-devices/bulk-enroll-windows) を有効にするには、Windows 構成デザイナーを使用して Azure AD テナントにデバイスを参加させるプロビジョニング パッケージを作成し、一括登録と管理を行う会社所有のデバイスにパッケージを適用します。 パッケージがデバイスに適用されると、デバイスは Azure AD に参加し、Intune に登録され、Azure AD ユーザーがログオンできる状態になります。  Azure AD ユーザーはこれらのデバイス上の標準ユーザーであり、割り当て済みのポリシーと必須アプリを受け取ります。 この時点では、セルフ サービスと会社ポータルのシナリオはサポートされていません。
+
+### <a name="new-mam-settings-for-pin-and-managed-storage-locations----581122-736644---"></a>暗証番号 (PIN) および管理対象記憶域の場所に対する新しい MAM 設定<!-- 581122, 736644 -->
+
+モバイル アプリケーション管理 (MAM) シナリオに役立つ 2 つの新しいアプリ設定が使用できるようになりました。
+
+- **[Disable app PIN when device PIN is managed (デバイスの PIN が管理されるときはアプリの PIN を無効にする)]** - 登録されたデバイスにデバイス暗証番号 (PIN) が存在するかどうかを検出し、存在する場合は、アプリ保護ポリシーによってトリガーされるアプリ PIN をバイパスします。 この設定を使うと、登録されたデバイスで MAM が有効なアプリケーションを開くユーザーに対して表示される PIN 要求の回数を減らすことができます。 この機能は、Android と iOS の両方で使うことができます。
+
+- **[会社のデータを保存できるストレージ サービスの選択]** - 会社のデータを保存する記憶域の場所を指定できます。 ユーザーは選択したストレージ ロケーション サービスに保存できます。つまり、表示されていない他のすべてのストレージ ロケーション サービスはブロックされます。
+
+  サポートされるストレージ ロケーション サービスの一覧は次のとおりです。
+
+  - OneDrive
+  - Business SharePoint Online
+  - ローカル ストレージ
+
+### <a name="help-desk-troubleshooting-portal----907448---"></a>ヘルプ デスクのトラブルシューティング ポータル<!-- 907448 -->
+
+新しい[トラブルシューティング ポータル](/intune-azure/manage-users/help-desk)を使用すると、ヘルプ デスクと Intune 管理者は、ユーザーと彼らのデバイスを表示して、Intune の技術的な問題を解決するタスクを実行できます。
 
 ## <a name="march-2017"></a>2017 年 3 月
 
