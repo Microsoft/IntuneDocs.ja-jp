@@ -16,16 +16,16 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 7edbba3a86213db71e41bd0d0de6c5d285025b8b
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: b0d0ad102942c65ac3988ea4659b34b397289126
+ms.lasthandoff: 04/19/2017
 
 ---
 
 # <a name="set-up-a-telecom-expense-management-service-in-intune-azure-preview"></a>Intune Azure プレビューで通信費管理サービスを設定する
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Intune を使用して、企業所有のモバイル デバイスでのデータの使用から発生する通信費を管理することができます。 この機能を有効にするために、Intune は、サードパーティのソフトウェア開発企業である Saaswedo の Datalert 通信費管理ソリューションと統合されています。 Datalert とは、Intune で管理されているデバイスの通信データ使用量を管理し、コストのかかる予想外のデータ超過やローミング超過を防止することができる、リアルタイム通信費管理ソフトウェアです。 
+Intune を使用して、企業所有のモバイル デバイスでのデータの使用から発生する通信費を管理することができます。 この機能を有効にするために、Intune は、サードパーティのソフトウェア開発企業である Saaswedo の Datalert 通信費管理ソリューションと統合されています。 Datalert とは、Intune で管理されているデバイスの通信データ使用量を管理し、コストのかかる予想外のデータ超過やローミング超過を防止することができる、リアルタイム通信費管理ソフトウェアです。
 
 Intune と Datalert の統合により、定義済みのしきい値を超えた場合に警告する自動化されたアラートを使用することで、ローミングおよび国内のデータ使用料の上限を一元的に設定、監視、適用できるようになります。 ユーザーがしきい値を超過した場合に、ローミングの無効化を含むさまざまなアクションを個々のエンド ユーザーやそのグループに適用するように、サービスを構成できます。 Datalert 管理コンソールでは、データ使用量と監視情報を示すレポートが利用できます。
 
@@ -85,7 +85,7 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
 3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 
-4. **[デバイス構成]** ブレードで、**[セットアップ]** > **[通信費管理]** を選択します。 
+4. **[デバイス構成]** ブレードで、**[セットアップ]** > **[通信費管理]** を選択します。
 
    ページの上部に表示されている接続状態が**[アクティブ]** になっていることを確認します。
 
@@ -97,7 +97,7 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
 #### <a name="define-device-categories-and-device-groups-mapped-to-the-categories"></a>デバイスのカテゴリと各カテゴリにマップされるデバイス グループを定義する
 
-組織のニーズに従って、少なくとも 2 つのデバイス カテゴリ (たとえば、企業と個人) を作成し、各カテゴリの動的なデバイス グループを作成する必要があります。 必要に応じて、組織用のその他のカテゴリを作成できます。 
+組織のニーズに従って、少なくとも 2 つのデバイス カテゴリ (たとえば、企業と個人) を作成し、各カテゴリの動的なデバイス グループを作成する必要があります。 必要に応じて、組織用のその他のカテゴリを作成できます。
 
 これらのカテゴリは、登録時にユーザーに表示されます。 ユーザーが選択したカテゴリに応じて、登録デバイスは該当するデバイス グループに移動されます。 デバイスのカテゴリを作成する方法の手順については、「[Map devices to groups](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping)」(デバイスをグループにマップする) を参照してください。
 
@@ -109,7 +109,7 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
 1. Azure Portal の **[Intune]** ブレードで、**[アプリの管理]** を選択します。
 
-2. **[アプリの管理]** ブレードで、**[管理]** > **[アプリ]** を選択します。 
+2. **[アプリの管理]** ブレードで、**[管理]** > **[アプリ]** を選択します。
 
 3. **[追加]** を選択してアプリを追加します。
 
@@ -129,7 +129,7 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
 1. 前の手順で作成した iOS Datalert アプリを選択します。
 
-2. **[アプリ]** ブレードで、**[管理]** > **[割り当て]** に移動します。 
+2. **[アプリ]** ブレードで、**[管理]** > **[割り当て]** に移動します。
 
 3. **[グループの選択]** を選択し、企業のデバイス グループを選択する手順に従います。
 
@@ -137,9 +137,9 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
   ![[ポリシーの追加] ブレードのスクリーンショット](../media/tem-assign-datalert-app-to-device-group.png)
 
-### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>手順 4: 企業が料金を支払う電話回線をDatalert コンソールに追加する 
+### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>手順 4: 企業が料金を支払う電話回線をDatalert コンソールに追加する
 
-これで、Intune サービスと Datalert サービスが互いに通信するように構成されました。 次に、企業が料金を支払う電話回線を Datalert コンソールに追加し、携帯データまたはローミング データの使用量違反に対するしきい値と動作を定義する必要があります。 
+これで、Intune サービスと Datalert サービスが互いに通信するように構成されました。 次に、企業が料金を支払う電話回線を Datalert コンソールに追加し、携帯データまたはローミング データの使用量違反に対するしきい値と動作を定義する必要があります。 企業が料金を支払う電話回線は、手動で Datalert コンソールに追加するか、あるいはデバイスが Intune に登録されたら自動的に追加されます。
 
 これらの項目を設定するには、[[Datalert setup for Microsoft Intune (Microsoft Intune 用のDatalert のセットアップ)]](http://www.datalert.fr/microsoft-intune/intune-setup) ページ (http://www.datalert.fr/microsoft-intune/intune-setup) に移動し、**[Settings (設定)]** タブでセットアップ ウィザードの手順に従います。
 
@@ -147,6 +147,11 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
 
 これで Datalert サービスがアクティブになってデータ使用量の監視が開始され、デバイスでの構成済み使用量制限を超える携帯データおよびローミング データが無効化されるようになります。
+
+## <a name="client-enrollment-experience"></a>クライアント登録のエクスペリエンス
+クライアント登録のエクスペリエンスについては、以下をご覧ください。
+-    [通信費管理サービスに iOS デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
+-    [通信費管理サービスに Android デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
 
 ## <a name="turning-off-the-datalert-service"></a>Datalert サービスを無効にする
 

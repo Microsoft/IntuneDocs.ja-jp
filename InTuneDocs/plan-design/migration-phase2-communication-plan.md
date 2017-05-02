@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: d59ddb11ef96e90fdc47ad556c300cfa1dd53de5
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 9178404c1ed0b09ac4ae21c9c3a1b8d817241ea0
+ms.openlocfilehash: 4c5e436373303d44e01a9ee8d1474334cf8655db
+ms.lasthandoff: 04/17/2017
 
 
 ---
@@ -54,7 +54,7 @@ ms.lasthandoff: 03/27/2017
 
 Intune では、エンド ユーザーのデバイス登録を推進するその他のテンプレート リソースを用意しています。
 
--   モバイル OS プラットフォームごとの登録手順の詳細については、[Microsoft Intune の使用に関するエンド ユーザーへの通知内容](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)に関するページを参照してください。
+-   モバイル OS プラットフォームごとの登録手順の詳細については、[Microsoft Intune の使用に関するエンド ユーザーへの通知内容](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)に関するページを参照してください。
 
 -   カスタマイズ可能な、[エンド ユーザーの Intune 登録テンプレート (IT 管理者用)](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) をダウンロードする
 

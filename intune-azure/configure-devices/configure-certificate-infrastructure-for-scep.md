@@ -1,12 +1,12 @@
 ---
-title: "SCEP の証明書インフラストラクチャを構成する"
+title: "Intune で SCEP 証明書を構成して管理する"
 titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Intune SCEP 証明書プロファイルを作成して展開する前にインフラストラクチャを構成する方法について説明します。"
+description: "Intune Azure プレビュー: インフラストラクチャを構成してから、Intune で SCEP 証明書プロファイルを作成して割り当てる方法について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,27 +16,28 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: ea910594195313978d6defae529a526bc0310022
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: 6838993b5b19bc1e23c9efe0911a01a2c66c6886
+ms.lasthandoff: 04/19/2017
 
 ---
-# <a name="configure-certificate-infrastructure-for-scep-in-microsoft-intune"></a>Microsoft Intune で SCEP の証明書インフラストラクチャを構成する
+# <a name="configure-and-manage-scep-certificates-with-intune"></a>Intune で SCEP 証明書を構成して管理する
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-このトピックでは、SCEP 証明書プロファイルを作成して展開するために必要なインフラストラクチャについて説明します。
+このトピックでは、インフラストラクチャを構成してから、Intune で SCEP (Simple Certificate Enrollment Protocol) 証明書プロファイルを作成して割り当てる方法について説明します。
 
-### <a name="on-premises-infrastructure"></a>内部設置型インフラストラクチャ
+## <a name="configure-on-premises-infrastructure"></a>オンプレミス インフラストラクチャを構成する
 
 -    **Active Directory ドメイン**: このセクションで示されているすべてのサーバー (Web アプリケーション プロキシ サーバーを除く) は、Active Directory ドメインに参加する必要があります。
 
--  **証明機関** (CA): Windows Server 2008 R2 以降の Enterprise エディションで実行するエンタープライズ証明機関 (CA) が必要です。 スタンドアロン CA はサポートされません。 証明機関をセットアップする方法の詳細については、 [証明機関のインストールに関するページ](http://technet.microsoft.com/library/jj125375.aspx)を参照してください。
+-  **証明機関** (CA): Windows Server 2008 R2 以降の Enterprise エディションで実行するエンタープライズ証明機関 (CA) が必要です。 スタンドアロン CA はサポートされません。 詳細については、「[Install the Certification Authority (証明機関のインストール)](http://technet.microsoft.com/library/jj125375.aspx)」をご覧ください。
     CA が Windows Server 2008 R2 を搭載している場合は、 [KB2483564 の修正プログラムをインストール](http://support.microsoft.com/kb/2483564/)する必要があります。
 
--  **NDES サーバー**: Windows Server 2012 R2 以降を実行しているサーバーに、ネットワーク デバイス登録サービス (NDES) をセットアップする必要があります。 エンタープライズ CA も実行しているサーバーで Intune を実行する場合には、ネットワーク デバイス登録サービスは使用できません。 ネットワーク デバイス登録サービスをホストするための Windows Server 2012 R2 の構成方法については、「[ネットワーク デバイス登録サービスのガイダンス](http://technet.microsoft.com/library/hh831498.aspx)」を参照してください。 NDES サーバーは、CA をホストしているドメインに参加する必要があります。CA と同じサーバーに置くことはできません。 別個のフォレスト、分離ネットワーク、内部ドメインで NDES サーバーを展開する方法については、「[ポリシー モジュールとネットワーク デバイス登録サービスの使用](https://technet.microsoft.com/en-us/library/dn473016.aspx)」を参照してください。
+-  **NDES サーバー**: Windows Server 2012 R2 以降を実行しているサーバーに、ネットワーク デバイス登録サービス (NDES) をセットアップする必要があります。 エンタープライズ CA も実行しているサーバーで Intune を実行する場合には、ネットワーク デバイス登録サービスは使用できません。 ネットワーク デバイス登録サービスをホストするための Windows Server 2012 R2 の構成方法については、「[ネットワーク デバイス登録サービスのガイダンス](http://technet.microsoft.com/library/hh831498.aspx)」を参照してください。
+NDES サーバーは、CA をホストしているドメインに参加する必要があります。CA と同じサーバーに置くことはできません。 別個のフォレスト、分離ネットワーク、内部ドメインで NDES サーバーを展開する方法については、「[ポリシー モジュールとネットワーク デバイス登録サービスの使用](https://technet.microsoft.com/library/dn473016.aspx)」を参照してください。
 
--  **Microsoft Intune 証明書コネクタ**: Intune 管理コンソールを使用して**証明書コネクタ** インストーラー (**ndesconnectorssetup.exe**) をダウンロードします。 これにより、証明書コネクタをインストールするコンピューターで **ndesconnectorssetup.exe** を実行できます。
--  **Web アプリケーション プロキシ サーバー** (省略可能): Web アプリケーション プロキシ (WAP) サーバーとして Windows Server 2012 R2 以降を実行しているサーバーを使用できます。 この構成は:
+-  **Microsoft Intune Certificate Connector**: Intune ポータルを使用して **Certificate Connector** インストーラー (**ndesconnectorssetup.exe**) をダウンロードします。 これにより、証明書コネクタをインストールするコンピューターで **ndesconnectorssetup.exe** を実行できます。
+-  **Web アプリケーション プロキシ サーバー** (省略可能): Web アプリケーション プロキシ (WAP) サーバーとして Windows Server 2012 R2 以降を実行しているサーバーを使用します。 この構成は:
     -  デバイスはインターネット接続を使用して証明書を受信できます。
     -  デバイスがインターネット接続経由で証明書を受信して更新する場合のセキュリティ推奨事項です。
 
@@ -51,49 +52,49 @@ ms.lasthandoff: 03/13/2017
 
 境界ネットワークから信頼されたネットワークまでを範囲として、ドメイン参加 NDES サーバーのドメイン アクセスに必要なすべてのポートとプロトコルを割り当てます。 NDES サーバーは、証明書サーバー、DNS サーバー、構成マネージャー サーバー、ドメイン コントローラーへのアクセス許可を必要とします。
 
-NDES サーバーは、[Azure AD アプリケーション プロキシ](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/)、[Web アクセス プロキシ](https://technet.microsoft.com/en-us/library/dn584107.aspx)、サード パーティ製のプロキシなどのプロキシを通じて公開することをお勧めします。
+NDES サーバーは、[Azure AD アプリケーション プロキシ](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/)、[Web アクセス プロキシ](https://technet.microsoft.com/library/dn584107.aspx)、サード パーティ製のプロキシなどのプロキシを通じて公開することをお勧めします。
 
 
-### <a name="BKMK_CertsAndTemplates"></a>証明書とテンプレート
+### <a name="certificates-and-templates"></a>証明書とテンプレート
 
 |オブジェクト|説明|
 |----------|-----------|
 |**証明書テンプレート**|発行元 CA でこのテンプレートを構成します。|
 |**クライアント認証証明書**|発行元 CA またはパブリック CA から要求されます。この証明書を NDES サーバーにインストールします。|
 |**サーバー認証証明書**|発行元 CA またはパブリック CA から要求されます。この SSL 証明書をインストールし NDES サーバーの IIS にバインドします。|
-|**信頼されたルート CA 証明書**|これをルート CA またはルート CA を信頼するデバイスから **.cer** ファイルとしてエクスポートし、信頼された CA 証明書プロファイルを使用してデバイスに展開します。<br /><br />オペレーティング システムのプラットフォームごとに&1; つの信頼されたルート CA 証明書を使用し、作成する各信頼されたルート証明書プロファイルに関連付けます。<br /><br />必要に応じて、信頼されたルート CA 証明書を追加して使用できます。 ルート CA 証明書を追加する局面としては、Wi-Fi アクセス ポイント用のサーバー認証証明書に署名する CA の信頼性を担保する必要がある場合などが考えられます。|
+|**信頼されたルート CA 証明書**|これをルート CA またはルート CA を信頼するデバイスから **.cer** ファイルとしてエクスポートし、信頼された CA 証明書プロファイルを使用してデバイスに割り当てます。<br /><br />オペレーティング システムのプラットフォームごとに 1 つの信頼されたルート CA 証明書を使用し、作成する各信頼されたルート証明書プロファイルに関連付けます。<br /><br />必要に応じて、信頼されたルート CA 証明書を追加して使用できます。 ルート CA 証明書を追加する局面としては、Wi-Fi アクセス ポイント用のサーバー認証証明書に署名する CA の信頼性を担保する必要がある場合などが考えられます。|
 
-### <a name="BKMK_Accounts"></a>アカウント
+### <a name="accounts"></a>アカウント
 
 |名前|説明|
 |--------|-----------|
 |**NDES サービス アカウント**|NDES サービス アカウントとして使用するドメイン ユーザー アカウントを指定します。|
 
-## <a name="BKMK_ConfigureInfrastructure"></a>インフラストラクチャを構成する
+## <a name="configure-your-infrastructure"></a>インフラストラクチャを構成する
 証明書プロファイルを構成する前に、次のタスクを行う必要があります。これには、Windows Server 2012 R2 および Active Directory 証明書サービス (ADCS) の知識が必要です。
 
-**タスク 1**: NDES サービス アカウントを作成する
+**手順 1**: NDES サービス アカウントを作成する
 
-**タスク 2**: 証明機関で証明書テンプレートを構成する
+**手順 2**: 証明機関で証明書テンプレートを構成する
 
-**タスク 3**: NDES サーバーで前提条件を構成する
+**手順 3**: NDES サーバーで前提条件を構成する
 
-**タスク 4**: Intune で使用するための NDES を構成する
+**手順 4**: Intune で使用するための NDES を構成する
 
-**タスク 5**: Intune 証明書コネクタを有効にし、インストールし、構成する
+**手順 5**: Intune Certificate Connector を有効にし、インストールし、構成する
 
-### <a name="task-1---create-an-ndes-service-account"></a>タスク 1 - NDES サービス アカウントを作成する
+#### <a name="step-1---create-an-ndes-service-account"></a>手順 1 - NDES サービス アカウントを作成する
 
 NDES サービス アカウントとして使用するドメイン ユーザー アカウントを作成します。 NDES をインストールして構成する前に、発行元 CA でテンプレートを構成するときに、このアカウントを指定します。 ユーザーに既定の権限、**ローカル ログオン**の権限、**サービスとしてログオン**の権限、**バッチ ジョブとしてログオン**の権限を与えます。 ポリシーを強化し、これらの権限を無効にしている組織もあります。
 
-### <a name="task-2---configure-certificate-templates-on-the-certification-authority"></a>タスク 2 - 証明機関で証明書テンプレートを構成する
+#### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>手順 2 - 証明機関で証明書テンプレートを構成する
 このタスクでは次のことを行います。
 
 -   NDES の証明書テンプレートを構成します
 
 -   NDES に証明書テンプレートを発行します
 
-#### <a name="to-configure-the-certification-authority"></a>証明機関を構成するには
+##### <a name="to-configure-the-certification-authority"></a>証明機関を構成するには
 
 1.  エンタープライズ管理者としてログオンします。
 
@@ -133,24 +134,22 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 ![テンプレート、[発行要件] タブ](.\media\scep_ndes_issuance_reqs.jpg)
 
 >   [!IMPORTANT]
-    > アプリケーション ポリシー (4 番目のスクリーン ショット) の場合、必要なアプリケーション ポリシーのみを追加します。 セキュリティ管理者の選択を確定します。
+    > アプリケーション ポリシーの場合、必要なアプリケーション ポリシーのみを追加します。 セキュリティ管理者の選択を確定します。
 
 
 
-要求元が有効期間を指定できるように CA を構成するには、CA で次のコマンド実行します。
+要求元が有効期間を指定できるように CA を構成するには、
 
-   1.  **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
-   2.  **net stop certsvc**
-   3.  **net start certsvc**
-
-4.  発行元 CA で、証明機関スナップインを使用して証明書テンプレートを発行します。
-
-    1.  **[証明書テンプレート]** ノードを選択し、**[アクション]** -&gt; **[新規]** &gt; **[発行する証明書テンプレート]** の順にクリックして、手順 2. で作成したテンプレートを選択します。
-
-    2.  [ **証明書テンプレート** ] フォルダーに表示されることで、テンプレートが発行されたことを確認します。
+1. CA で次のコマンドを実行します。
+    - **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
+    - **net stop certsvc**
+    - **net start certsvc**
+2. 発行元 CA で、証明機関スナップインを使用して証明書テンプレートを発行します。
+    **[証明書テンプレート]** ノードを選択し、**[アクション]** -&gt; **[新規]** &gt; **[発行する証明書テンプレート]** の順にクリックして、手順 2. で作成したテンプレートを選択します。
+3. [ **証明書テンプレート** ] フォルダーに表示されることで、テンプレートが発行されたことを確認します。
 
 
-### <a name="task-3---configure-prerequisites-on-the-ndes-server"></a>タスク 3 - NDES サーバーで前提条件を構成する
+#### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>手順 3 - NDES サーバーで前提条件を構成する
 このタスクでは次のことを行います。
 
 -   Windows サーバーに NDES を追加し、NDES をサポートするように IIS を構成する
@@ -191,7 +190,7 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
-### <a name="task-4---configure-ndes-for-use-with-intune"></a>タスク 4 - Intune で使用するための NDES を構成する
+#### <a name="step-4---configure-ndes-for-use-with-intune"></a>手順 4 - Intune で使用するための NDES を構成する
 このタスクでは次のことを行います。
 
 -   発行元 CA で使用するための NDES を構成する
@@ -200,7 +199,6 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 
 -   IIS で要求フィルター処理を構成します
 
-##### <a name="to-configure-ndes-for-use-with-intune"></a>Intune で使用するための NDES を構成するには
 
 1.  NDES サーバーで AD CS 構成ウィザードを開き、次の構成を行います。
 
@@ -263,7 +261,7 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
     3.  [ **SSL 証明書**] で、サーバー認証証明書を指定します。
 
         > [!NOTE]
-        > NDES サーバーが&1; つのネットワーク アドレスに対して外部名と内部名の両方を使用している場合、サーバー認証証明書の [ **サブジェクト名** ] は外部パブリック サーバー名、[ **サブジェクトの別名** ] は内部サーバー名である必要があります。
+        > NDES サーバーが 1 つのネットワーク アドレスに対して外部名と内部名の両方を使用している場合、サーバー認証証明書の [ **サブジェクト名** ] は外部パブリック サーバー名、[ **サブジェクトの別名** ] は内部サーバー名である必要があります。
 
 2.  NDES サーバーで、内部 CA またはパブリック CA に **クライアント認証** 証明書を要求してインストールします。 証明書に両方の機能がある場合、これはサーバー認証証明書と同じ証明書でもかまいません。
 
@@ -295,14 +293,14 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 
 4.  NDES サーバーを再起動します。 サーバーは証明書コネクタをサポートする準備ができました。
 
-### <a name="task-5---enable-install-and-configure-the-intune-certificate-connector"></a>タスク 5 - Intune 証明書コネクタを有効にし、インストールし、構成する
+#### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>手順 5 - Intune Certificate Connector を有効にし、インストールし、構成する
 このタスクでは次のことを行います。
 
 Intune で NDES のサポートを有効にします。
 
 NDES サーバーで証明書コネクタをダウンロードし、インストールし、構成します。
 
-##### <a name="to-enable-support-for-the-certificate-connector"></a>証明書コネクタのサポートを有効にするには
+##### <a name="to-enable-support-for-the-certificate-connector"></a>Certificate Connector のサポートを有効にするには
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
@@ -310,7 +308,7 @@ NDES サーバーで証明書コネクタをダウンロードし、インスト
 4. **[デバイス構成]** ブレードで **[証明機関]** を選択します。
 5.  **[証明書コネクタを有効にする]** を選択します。
 
-##### <a name="to-download-install-and-configure-the-certificate-connector"></a>証明書コネクタをダウンロードし、インストールして、構成するには
+##### <a name="to-download-install-and-configure-the-certificate-connector"></a>Certificate Connector をダウンロードし、インストールして、構成するには
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
@@ -349,6 +347,61 @@ NDES サーバーで証明書コネクタをダウンロードし、インスト
 
 **http:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
 
-## <a name="next-steps"></a>次のステップ
-これで、「[Configure certificate profiles](how-to-configure-certificates.md)」 (証明書プロファイルを構成する) の説明に従って証明書プロファイルを構成する準備が整いました。
+## <a name="how-to-create-a-scep-certificate-profile"></a>SCEP 証明書プロファイルを作成する方法
+
+1. Azure Portal で、**[デバイスの構成]** ワークロードを選択します。
+2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
+3. [プロファイル] ブレードで、**[プロファイルを作成します]** を選択します。
+4. **[プロファイルを作成します]** ブレードで、SCEP 証明書プロファイルの**名前**と**説明**を入力します。
+5. **[プラットフォーム]** ドロップダウン リストで、この SCEP 証明書のデバイス プラットフォームを選択します。 現時点では、デバイスの制限設定に対応している次のいずれかのプラットフォームを選択できます。
+    - **Android**
+    - **iOS**
+    - **macOS**
+    - **Windows Phone 8.1**
+    - **Windows 8.1 以降**
+    - **Windows 10 以降**
+6. **[プロファイルの種類]** ドロップダウン リストで、**[SCEP 証明書]** を選択します。
+7. **[SCEP 証明書]** ブレードで、次の設定を構成します。
+    - **[証明書の有効期間]** - 発行元 CA で **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** コマンドを実行してカスタム有効期間を設定できるようにした場合は、証明書が失効するまでの期間を指定します。<br>指定した証明書テンプレートの有効期限よりも小さい値を指定できますが、大きい値は指定できません。 たとえば、証明書テンプレートで証明書の有効期限が 2 年になっている場合は、この値を 1 年することはできますが、5 年にすることはできません。 また、発行元の CA の証明書の残りの有効期限よりも小さい値を指定する必要があります。 
+    - **[キー格納プロバイダー (KSP)]** (Windows Phone 8.1、Windows 8.1、Windows 10) - 証明書のキーを格納する場所を指定します。 次のいずれかの値を選択します。
+        - **トラステッド プラットフォーム モジュール (TPM) KSP が存在する場合は TPM KSP に登録する (それ以外はソフトウェア KSP に登録する)**
+        - **トラステッド プラットフォーム モジュール (TPM) KSP に登録する (それ以外は失敗)**
+        - **Passport に登録する、それ以外は失敗 (Windows 10 以降)**
+        - **ソフトウェア KSP に登録する**
+    - **[サブジェクト名の形式]** - 一覧から、Intune が証明書要求のサブジェクト名をどのように自動生成するかを指定します。 証明書がユーザー用の場合、サブジェクト名にユーザーのメール アドレスを追加することもできます。 次の中から選択します。
+        - **未構成**
+        - **共通名**
+        - **電子メールを含む共通名**
+        - **電子メールとしての共通名**
+    - **[サブジェクトの別名]** - Intuneが証明書要求のサブジェクトの別名 (SAN) をどのように自動生成するかを指定します。 たとえば、ユーザー証明書の種類を選択した場合は、サブジェクトの別名にユーザー プリンシパル名 (UPN) を含めることができます。 クライアント証明書を Windows ポリシー サーバーでの認証に使用する場合は、サブジェクトの別名を UPN に設定する必要があります。 
+    - **[キー使用法]** - 証明書のキー使用法のオプションを指定します。 次のオプションから選択できます。 
+        - **キーの暗号化:** キーが暗号化されている場合だけキーを交換できます。 
+        - **デジタル署名:** キーがデジタル署名で保護されている場合だけ、キーを交換できます。 
+    - **[キー サイズ (ビット)]** -キーに含まれるビット数を選択します。 
+    - **[ハッシュ アルゴリズム]** (Android、Windows Phone 8.1、Windows 8.1、Windows 10) - この証明書で使用するハッシュ アルゴリズムの種類を 1 つ選択します。 接続しているデバイスをサポートするセキュリティの最も強力なレベルを選択します。 
+    - **[ルート証明書]** - 既に構成してユーザーまたはデバイスに割り当てているルート CA 証明書プロファイルを選択します。 この CA 証明書は、この証明書プロファイルで構成している証明書を発行する CA のルート証明書である必要があります。 
+    - **[拡張キー使用法]** - **[追加]** を選択して、証明書の使用目的に対応する値を追加します。 ほとんどの場合、ユーザーまたはデバイスがサーバーに対して認証できるように、証明書には [ **クライアント認証** ] が必要です。 ただし、必要に応じてその他のキー使用法を追加できます。 
+    - **登録設定**
+        - **[更新しきい値 (%)]** - 証明書の有効期間の残りがどの程度 (%) になったら、デバイスが更新を要求するかを指定します。
+        - **[SCEP サーバーの URL]** - SCEP 経由で証明書を発行する NDES サーバーの URL を 1 つまたは複数指定します。 
+8. 完了したら、**[プロファイルを作成します]** ブレードに戻り、**[作成]** をクリックします。
+
+プロファイルが作成され、プロファイルの一覧ブレードに表示されます。
+
+>[!Note]
+> iOS デバイスのみ: [サブジェクト名の形式] で、[カスタム] を選択してサブジェクト名のカスタム形式を入力します。
+> カスタム形式で現在サポートされている 2 つの変数は、**共通名 (CN)** と**電子メール (E)** です。 これらの変数と静的文字列の組み合わせを使用することで、**CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US** のようなサブジェクト名のカスタム形式を作成できます。この例では、CN と E 変数に加えて、組織単位、組織、市区町村、州、および国の値の文字列を使用してサブジェクト名形式を作成しています。 [このトピック](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)では、**CertStrToName** 関数とそのサポートされている文字列について説明しています。
+
+## <a name="how-to-assign-the-certificate-profile"></a>証明書プロファイルを割り当てる方法
+
+証明書プロファイルをグループに割り当てる前に、次の点を考慮します。
+
+- 証明書プロファイルをグループに割り当てるときに、信頼された CA 証明書プロファイルの証明書ファイルは、デバイスにインストールされます。 デバイスは、SCEP 証明書プロファイルを使用してデバイスによる証明書要求を作成します。
+- 証明書プロファイルは、プロファイルを作成するときに使用するプラットフォームを実行しているデバイスのみにインストールされます。
+- ユーザー コレクションまたはデバイス コレクションに証明書プロファイルを割り当てることができます。
+- デバイス登録後すぐに証明書をデバイスに公開するには、証明書プロファイルをデバイス グループではなくユーザー グループに割り当てます。 デバイス グループに割り当てた場合は、デバイスがポリシーを受け取る前に、デバイスの登録を完全に行う必要があります。
+- 各プロファイルは個別に割り当てますが、信頼されたルート CA と、SCEP または PKCS プロファイルを割り当てる必要もあります。 そうしないと、SCEP または PKCS 証明書ポリシーは失敗します。
+
+プロファイルを割り当てる方法については、[デバイス プロファイルを割り当てる方法](how-to-assign-device-profiles.md)に関する記事をご覧ください。
+
 

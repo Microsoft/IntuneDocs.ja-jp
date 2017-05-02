@@ -1,22 +1,23 @@
 ---
 title: "Windows エディションのアップグレード ポリシー設定 | Microsoft Docs"
-description: "Intune を使用して Windows 10 デバイスを最新バージョンに自動的にアップグレードする方法について説明します。"
+description: "Intune を使用して Windows 10 デバイスを別のバージョンに自動的にアップグレードする方法について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/30/2016
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
-ms.reviewer: jeffgilb
+ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ae6477866991cec4091ff2790b925b0e464375f9
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 81061f032ef2079695f45e54e99cbb6479252bed
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -25,7 +26,7 @@ ms.openlocfilehash: ae6477866991cec4091ff2790b925b0e464375f9
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Microsoft Intune の**エディションのアップグレード ポリシー**を使用して、次に挙げる Windows 10 のバージョンのいずれかを実行するデバイスを自動的に新しいエディションにアップグレードできます。
+Microsoft Intune の**エディションのアップグレード ポリシー**を使用して、次に挙げる Windows 10 のバージョンのいずれかを実行するデバイスを自動的に別のエディションにアップグレードできます。
 * [Windows] 10 Desktop
 * Windows 10 Holographic
 * [Windows] 10 Mobile
@@ -54,9 +55,4 @@ Microsoft Intune の**エディションのアップグレード ポリシー**�
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

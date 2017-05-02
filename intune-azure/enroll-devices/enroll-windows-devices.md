@@ -5,7 +5,7 @@ description: "Intune Azure プレビュー: Windows デバイスの Intune モ�
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 03/21/17
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
-ms.openlocfilehash: b62a5704605f5cf89efb4052180f09f88eb788e1
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 3c764b269916ae1a9b076617842eb26d7fd13bab
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -28,7 +28,10 @@ ms.lasthandoff: 04/06/2017
 
 このトピックは IT 管理者がユーザーの Windows の登録を簡略化する際に役立ちます。  Windows デバイスは追加の手順なしに登録できますが、ユーザーのため、登録をより簡単にすることができます。
 
-2 つの要素によって、Windows デバイスの登録方法が決まります。
+Windows 10 Creators Update を実行し Azure Active Directory ドメインに参加するデバイスが、Intune のマルチユーザー管理でサポートされるようになりました。 つまり、異なる標準ユーザーが Azure AD 資格情報でデバイスにログオンすると、ユーザー名に割り当てられているすべてのアプリとポリシーを受け取ります。 現時点では、アプリのインストールのようなセルフサービスのシナリオにポータル サイトは使用できません。
+
+Windows デバイスの登録を簡単にする方法は、次の 2 つの要素で決まります。
+
 - **Azure Active Directory Premium を使用していますか?** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) は、Enterprise Mobility + Security およびその他のライセンス プランに付属します。
 - **どのバージョンの Windows クライアントが登録されますか?** <br>Windows 10 デバイスは、職場または学校のアカウントを追加すると自動的に登録できます。 以前のバージョンでは、会社ポータル アプリを使用して登録する必要があります。
 
@@ -40,7 +43,7 @@ ms.lasthandoff: 04/06/2017
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>Azure AD Premium なしの Windows 登録を有効にする
-Azure AD Premium の自動登録なしで、ユーザー自身にデバイスを登録させることができます。 ライセンスをユーザーのアカウントに割り当てると、ユーザーはそのアカウントを Windows デバイスに追加してそのデバイスを管理対象に登録できるようになります。 DNS エイリアス (CNAME レコード タイプ) を作成すると、ユーザーがデバイスを簡単に登録できるようになります。 DNS の CNAME リソース レコードを作成すると、ユーザーは Intune サーバー名を入力することなく Intune に接続して登録できるようになります。
+Azure AD Premium の自動登録なしで、ユーザー自身にデバイスを登録させることができます。 ライセンスを割り当てると、ユーザーは、職場のアカウントを個人所有のデバイスに追加するか、会社所有のデバイスを Azure AD に参加させた後に登録を行うことができます。 DNS エイリアス (CNAME レコード タイプ) を作成すると、ユーザーがデバイスを簡単に登録できるようになります。 DNS の CNAME リソース レコードを作成すると、ユーザーは Intune サーバー名を入力することなく Intune に接続して登録できるようになります。
 
 **手順 1: CNAME を作成する** (省略可能)<br>
 会社のドメインの CNAME DNS リソース レコードを作成します。 たとえば、会社の Web サイトが contoso.com の場合、EnterpriseEnrollment.contoso.com を enterpriseenrollment-s.manage.microsoft.com にリダイレクトする CNAME を DNS に作成します。
