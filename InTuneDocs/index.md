@@ -9,9 +9,9 @@ ms.topic: hub-page
 title: "Microsoft Intune のドキュメント | Microsoft ドキュメント"
 description: "Microsoft Intune の使用方法について説明します。"
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 1f8b03315c6026a60ef25b1ee6946d4186c82b08
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e96413a9f1398e7f025bbc2fbd66153c1c54c504
+ms.openlocfilehash: af6af39a041582bd93bac6aad551881be4cf0291
+ms.lasthandoff: 04/24/2017
 
 ---
 <div id="main" class="v2">
@@ -451,7 +451,7 @@ ms.lasthandoff: 04/14/2017
                     <a href="#manage-plan">展開の計画</a>
                     <ul id="manage-plan" class="cardsC">
                         <li>
-                            <a href="/intune/plan-design/section-1-determine-deployment-goals-objectives-challenges">
+                            <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -461,8 +461,8 @@ ms.lasthandoff: 04/14/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>目標、目的、課題の判別</h3>
-                                            <p>展開を行うときに管理が必要な目標、目的、および課題を調査します。</p>
+                                            <h3>サポートされるデバイスとブラウザー</h3>
+                                            <p>サービスによってサポートされているデバイスとブラウザーに関する詳細を確認します。</p>
                                         </div>
                                     </div>
                                 </div>
@@ -476,12 +476,12 @@ ms.lasthandoff: 04/14/2017
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/intune/intune-deployments-identify.svg" alt="" />
+                                                <img src="/media/hubs/intune/intune-deployments-plan.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>ユース ケース シナリオを特定する</h3>
-                                            <p>展開のユース ケースのシナリオを識別するために、いくつかのユース ケースの例を確認します。 </p>
+                                            <h3>展開の計画、設計、実装ガイド</h3>
+                                            <p>展開計画の作成、デザインの作成、Intune への登録、運用ロールアウトを行います。</p>
                                         </div>
                                     </div>
                                 </div>
@@ -489,18 +489,18 @@ ms.lasthandoff: 04/14/2017
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/plan-design/section-4-develop-a-rollout-plan">
+                            <a href="/intune/plan-design/intune-mdm-migration-guide">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/intune/intune-deployments-plan.svg" alt="" />
+                                                <img src="/media/hubs/intune/intune-deployments-identify.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>ロールアウト計画を作成する</h3>
-                                            <p>Intune ロールアウトおよび各グループの展開の期間を対象とする組織のグループを判別します。</p>
+                                            <h3>移行ガイド</h3>
+                                            <p>サードパーティの MDM プロバイダーからの Intune への移行に関連したさまざまな詳細情報を説明します。</p>
                                         </div>
                                     </div>
                                 </div>
