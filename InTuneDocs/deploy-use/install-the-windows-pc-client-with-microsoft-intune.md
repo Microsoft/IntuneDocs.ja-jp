@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2b3041019a7fe5a1ed7421401b36a72321af6cea
-ms.openlocfilehash: 0498aebe8e06314cb6f63f3f4def7011a3badf64
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 19cfb242fbd1be613b38c8aa06c12b741bc6cd74
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -106,7 +106,7 @@ Intune クライアント ソフトウェアは、次の手順に従って、オ
 
 ## <a name="instruct-users-to-self-enroll"></a>自分で登録するユーザーへの指示
 
-ユーザーは、[ポータル Web サイト](http://portal.manage.microsoft.com)に移動して、Intune クライアント ソフトウェアをインストールします。 Web ポータルでユーザーに対して実際に表示される情報は、アカウントの MDM 機関およびユーザーの PC の OS プラットフォーム/バージョンによって異なります。
+ユーザーは、[ポータル Web サイト](https://portal.manage.microsoft.com)に移動して、Intune クライアント ソフトウェアをインストールします。 Web ポータルでユーザーに対して実際に表示される情報は、アカウントの MDM 機関およびユーザーの PC の OS プラットフォーム/バージョンによって異なります。
 
 ユーザーに Intune ライセンスが割り当てられていない場合や、組織の MDM 機関が Intune に設定されていない場合、ユーザーには登録するためのオプションが表示されません。
 
@@ -200,7 +200,7 @@ Intune 管理コンソールを使用してソフトウェア クライアント
     "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
     ```
 
-**方法 2** <br>Windows のすべての SKU でこれらのエージェントがすべてインストールされていることに注意してください:
+**方法 2**<br>Windows のすべての SKU でこれらのエージェントがすべてインストールされていることに注意してください。
 
     ```
     wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
