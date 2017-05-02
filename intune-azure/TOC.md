@@ -94,6 +94,8 @@
 ### [ポータル サイト アプリを構成する](manage-apps/company-portal-app.md)
 ## アプリ保護ポリシーを使用する方法
 ### [アプリ保護ポリシーを作成して割り当てる](manage-apps/app-protection-policies.md)
+### [WIP アプリ保護ポリシーの準備をする](manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md)
+### [WIP アプリ保護ポリシーを作成して割り当てる](manage-apps/create-windows-information-protection-policy-with-intune.md)
 #### [Android の設定](manage-apps/android-app-protection-policy-settings.md)
 #### [iOS の設定](manage-apps/ios-app-protection-policy-settings.md)
 ### [アプリ保護ポリシーを確認する](manage-apps/validate-app-protection-policies.md)
@@ -151,6 +153,7 @@
 
 ### [Windows 10 エディションのアップグレード設定を構成する](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
 ### [Windows 10 の教育設定を構成する](configure-devices/how-to-configure-education-settings.md)
+### [iOS の教育設定を構成する](configure-devices/how-to-configure-ios-edu-settings.md)
 ### [ビジネス設定向けの Windows Update の構成](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [証明書を構成する](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
