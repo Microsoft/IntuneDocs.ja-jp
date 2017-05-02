@@ -51,7 +51,7 @@ Android for Work デバイスにアプリを展開する方法は、標準の An
 1. Google Play Developer Console で、[play.google.com/apps/publish](https://play.google.com/apps/publish) を開きます。
 2. Intune と Android for Work 間の接続を構成するときに使用したものと同じアカウントでサインインします。 初めてサインインする場合は、Google Developer プログラムに登録し、料金を払ってメンバーになる必要があります。
 3. コンソールで、**[Add new application]** (新しいアプリケーションの追加) を選択します。
-4. アプリをアップロードし、アプリに関する情報を提供する方法は、アプリを Google Play ストアに公開する方法と同じです。 ただし、次の図のように、[ **Only make this application available to my organization (<* 組織名* >)** ] \(このアプリケーションを自分の組織 (<組織名>) のみが入手できるようにする) 設定を選択する必要があります。<br>
+4. アプリをアップロードし、アプリに関する情報を提供する方法は、アプリを Google Play ストアに公開する方法と同じです。 ただし、次の図のように、[ Only make this application available to my organization (< 組織名 >)** ] \(このアプリケーションを自分の組織 (<組織名>) のみが入手できるようにする) 設定を選択する必要があります。****<br>
   ![組織のみがアプリを入手できるようにするためのオプション](media/restrict.png)<br>
 このオプションをオンにすると、自分の組織のみがアプリを入手でき、公開されている Google Play ストアでは入手できないようになります。
 Android アプリのアップロードと公開の詳細については、[Google Developer Console のヘルプ](https://support.google.com/googleplay/android-developer/answer/113469)を参照してください。
