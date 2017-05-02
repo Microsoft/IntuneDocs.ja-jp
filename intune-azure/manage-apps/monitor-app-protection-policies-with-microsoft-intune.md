@@ -16,8 +16,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 330dba6b9402ef354d0925da27ee1b37ef50db00
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -30,7 +31,7 @@ ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
 
 [Azure Portal](https://portal.azure.com) の Intune アプリ保護ブレードでユーザーに適用したモバイル アプリ管理 (MAM) ポリシーのコンプライアンス状態を監視できます。 MAM ポリシーによって影響を受けるユーザー、コンプライアンスの状態、ユーザーに対して発生する可能性がある問題に関する情報を見つけることができます。
 
-コンプライアンス状態は&3; つの異なる場所で監視できます。
+コンプライアンス状態は 3 つの異なる場所で監視できます。
 
 -   概要ビュー
 
@@ -42,14 +43,14 @@ ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[アプリの管理]** を選択します。
-4. **[アプリの管理]** ワークロードで、**[監視]** > **[App protection user status (アプリ保護のユーザー状態)]** の順に選択して、概要ビューを表示します。
+3. **[Intune]** ブレードで、**[モバイル アプリ]** を選択します。
+4. **[モバイル アプリ]** ワークロードで、**[監視]** > **[アプリ保護ユーザー状態]** の順に選択して、概要ビューを表示します。
 
 ![[Intune モバイル アプリケーション管理] ブレードの [概要] タイル](../media/app-protection-user-status-summary.png)
 
 -   **[ユーザー]**: ポリシーに関連付けられているアプリを使用している社内ユーザーの合計数。
 
--   **[ポリシーによって管理されています]**: 作業コンテキストで少なくとも&1; つのアプリを使用したユーザーの数。
+-   **[ポリシーによって管理されています]**: 作業コンテキストで少なくとも 1 つのアプリを使用したユーザーの数。
 
 -   **[ポリシーなし]**: ポリシーに関連付けられたアプリを使用しているが、ポリシーの対象にはなっていないユーザーの数。 これらのユーザーをポリシーに追加することを検討できます。
 
@@ -67,7 +68,7 @@ ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
 
 - 状態:
 
-  - **[チェックイン済み]**: ポリシーはユーザーに展開され、アプリが&1; 回以上作業コンテキストで使用されました。
+  - **[チェックイン済み]**: ポリシーはユーザーに展開され、アプリが 1 回以上作業コンテキストで使用されました。
 
   - **[チェックインされていません]**: ポリシーはユーザーに展開されましたが、それ以降にアプリが作業コンテキストで使用されていません。
 
@@ -93,11 +94,11 @@ ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
 
 詳細ビューと同じレポートと追加のレポートがあります。MAM ポリシーのコンプライアンス状態の確認に役立ちます。
 
-![スクリーンショット&4;](../media/MAM-reporting-7.png)
+![スクリーンショット 4](../media/MAM-reporting-7.png)
 
 -   **アプリ保護ユーザー レポート:** 上の「詳細ビュー」セクションの**ユーザーの状態**レポートと同じ情報がまとめられています。
 
--   **アプリ保護アプリ レポート:**&2; つの異なるアプリ保護状態があります。管理者はいずれかを選択し、レポートを生成できます。 状態には、保護と非保護があります。
+-   **アプリ保護アプリ レポート:** 2 つの異なるアプリ保護状態があります。管理者はいずれかを選択し、レポートを生成できます。 状態には、保護と非保護があります。
 
     -   管理対象 MAM アクティビティ (保護) のユーザーの状態: このレポートには、管理対象 MAM アプリ別のアクティビティがユーザー別にまとめられています。
 
@@ -109,7 +110,7 @@ ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
 
         -   すべてのアプリがチェックインされているが、MAM ポリシーが与えられていません。
 
-![スクリーンショット&2;](../media/MAM-reporting-4.png)
+![スクリーンショット 2](../media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>テーブルのグループ化
 
@@ -120,26 +121,21 @@ ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
 
 ## <a name="export-app-protection-activities-to-csv"></a>CSV へのアプリ保護アクティビティのエクスポート
 
-アプリ保護ポリシーのすべてのアクティビティを&1; つの .csv ファイルにエクスポートできます。 これは、ユーザーから報告されたアプリ保護のすべての状態を分析するのに役立ちます。
+アプリ保護ポリシーのすべてのアクティビティを 1 つの .csv ファイルにエクスポートできます。 これは、ユーザーから報告されたアプリ保護のすべての状態を分析するのに役立ちます。
 
 アプリ保護レポートを生成するには、次の手順に従います。
 
 1. [Intune モバイル アプリケーション管理] ブレードで [App protection report (アプリ保護レポート)] を選択します。
 
-    ![スクリーンショット&6;](../media/app-protection-report-csv-2.png)
+    ![スクリーンショット 6](../media/app-protection-report-csv-2.png)
 
 2. [はい] を選択して、レポートを保存します。次に、[名前を付けて保存] を選択し、レポートを保存するフォルダーを選択します。
 
-    ![スクリーンショット&7;](../media/app-protection-report-csv-1.png)
+    ![スクリーンショット 7](../media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>関連項目
 [iOS アプリ間のデータ転送を管理する](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 * [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](app-protection-enabled-android-apps.md)
 * [アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](app-protection-enabled-ios-apps.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

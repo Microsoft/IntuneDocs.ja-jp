@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: 2191295407e0c1bb2c3861b8a8d168dd3697da45
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 3794981387e73176152c212854a97b4333023f5d
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -29,12 +30,12 @@ ms.openlocfilehash: 2191295407e0c1bb2c3861b8a8d168dd3697da45
 
 ユーザーは、Intune ポータル サイトを使用して、会社のデータにアクセスしたり、デバイスの登録、アプリケーションのインストール、IT 部門からのサポート情報の検索などの一般的なタスクを実行したりできます。
 
-Intune ポータル サイトは、ユーザーが会社のデータとアプリにアクセスできるようにします。 ポータル サイトは、次の&2; つの形式で使用できます。
+Intune ポータル サイトは、ユーザーが会社のデータとアプリにアクセスできるようにします。 ポータル サイトは、次の 2 つの形式で使用できます。
 
 -   **ポータル サイト アプリ**: Intune を使用して管理するデバイスで利用できるアプリケーション。 [Android](/Intune/EndUser/using-your-android-device-with-intune)、[iOS](/Intune/EndUser/using-your-iOS-or-macOS-device-with-intune) および [Windows](/Intune/EndUser/using-your-windows-device-with-intune) 用のポータル サイトの詳細を、それぞれご確認ください。
 
 
-- **ポータル Web サイト**: エンドユーザーがポータル サイト アプリから実行できるタスクのほとんどを行うことができる Web サイト。 Intune ポータル サイトの URL は [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com) です。 この Web サイトの詳細については、「[Intune ポータル サイト Web サイトの使用](/Intune/EndUser/using-the-intune-company-portal-website)」を参照してください。
+- **ポータル Web サイト**: エンドユーザーがポータル サイト アプリから実行できるタスクのほとんどを行うことができる Web サイト。 Intune ポータル サイトの URL は [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) です。 この Web サイトの詳細については、「[Intune ポータル サイト Web サイトの使用](/Intune/EndUser/using-the-intune-company-portal-website)」を参照してください。
 
 > [!TIP]
 > ポータル サイトをカスタマイズすると、構成がポータル サイトの Web サイトとポータル サイト アプリの両方に適用されます。
@@ -80,7 +81,7 @@ Intune ポータル サイトは、ユーザーが会社のデータとアプリ
 |フィールド名|詳細情報|
     |----------|----------------|
     |テーマの色|ポータル サイトに適用するテーマの色を選択します。|
-    |会社のロゴを含める|このオプションを有効にすると、ポータル サイトに表示する会社のロゴをアップロードできます。 2 つのロゴをアップロードできます。1 つは、ポータル サイトの背景が白の場合に表示するロゴ、もう&1; つは、選択したテーマの色がポータル サイトの背景に使用されている場合に表示するロゴです。 各ロゴは、.png または .jpg ファイルの種類にし、最大解像度が 400 x 100 ピクセルで、750 KB 以下のサイズにします。|
+    |会社のロゴを含める|このオプションを有効にすると、ポータル サイトに表示する会社のロゴをアップロードできます。 2 つのロゴをアップロードできます。1 つは、ポータル サイトの背景が白の場合に表示するロゴ、もう 1 つは、選択したテーマの色がポータル サイトの背景に使用されている場合に表示するロゴです。 各ロゴは、.png または .jpg ファイルの種類にし、最大解像度が 400 x 100 ピクセルで、750 KB 以下のサイズにします。|
     |[!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)] ポータル サイト アプリ用の背景を選択する|この設定は、[!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)] ポータル サイト アプリの背景のみに適用されます。|
 
 
@@ -89,9 +90,4 @@ Intune ポータル サイトは、ユーザーが会社のデータとアプリ
 >[!div class="step-by-step"]
 
 >[&larr;**ポリシーとアプリを作成する**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**デバイスを登録する**&rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -14,9 +14,9 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: eaf30c8a59013af6359743227edc8aa6709577c5
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 44429b8694d15006f77a9eb5206293a6bcc8090b
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -87,12 +87,11 @@ ms.lasthandoff: 04/14/2017
   **[必須のインストール]** オプションを選択し、Lookout アプリがユーザーのデバイスに必ずインストールされるようにします。
 
 ## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>展開したアプリがデバイスで開かれている場合はどうなりますか
+https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md ユーザーがデバイスで Lookout for Work を開くと、アプリをアクティブ化し、[Sign in with Azure Active Directory (Azure Active Directory でサインインする)] オプションを選択するように求められます。 エンド ユーザーの詳細な手順については、次のトピックをご覧ください。
 
-ユーザーがデバイスで Lookout for Work を開くと、アプリをアクティブ化し、「Sign in with Azure Active Directory」 (Azure Active Directory でサインインする) オプションを選択するように求められます。 エンド ユーザーの詳細な手順については、次のトピックをご覧ください。
+* [Android デバイスで Lookout for Work のインストールを求められる](https://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
 
-* [Android デバイスで Lookout for Work のインストールを求められる](http://docs.microsoft.com/intune/enduser/you-are-prompted-to-install-lookout-for-work-android)
-
-* [Android デバイスで Lookout for Work が検出した脅威を解決する必要がある](http://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+* [Android デバイスで Lookout for Work が検出した脅威を解決する必要がある](https://docs.microsoft.com/intune/enduser/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>次のステップ
 * [Intune での Lookout デバイス コンプライアンス ポリシーの作成](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)

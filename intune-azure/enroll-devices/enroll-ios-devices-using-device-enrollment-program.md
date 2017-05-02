@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 61fbc2af9a7c43d01c20f86ff26012f63ee0a3c2
-ms.openlocfilehash: c56bea46c8b505e0d357cfe90678ab149559b896
-ms.lasthandoff: 04/07/2017
+ms.sourcegitcommit: 53f1c688aad2f810d8a887435dd8d122d4f471ae
+ms.openlocfilehash: d8fa3a19915076f1a603449dd426172fbc5a613a
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -38,9 +38,8 @@ ms.lasthandoff: 04/07/2017
 2. [DEP プロファイルを作成する](#create-anapple-dep-profile)
 3. [Intune サーバーに Apple DEP シリアル番号を割り当てる](#assign-apple-dep-serial-numbers-to-your-mdm-server)
 4. [DEP 管理対象デバイスを同期する](#synchronize-dep-managed-devices)
-5. デバイスをユーザーに配布する
-
-
+5. [デバイスに DEP プロファイルを割り当てる](#assign-a-dep-profile-to-devices)
+6. [デバイスをユーザーに配布する](#distribute-devices-to-users)
 
 ## <a name="get-the-apple-dep-certificate"></a>Apple DEP 証明書を取得する
 Apple の Device Enrollment Program (DEP) に会社所有の iOS デバイスを登録するには、Apple から提供される DEP 証明書 (.p7m) ファイルが必要です。 このトークンにより、Intune は企業所有の DEP 参加デバイスに関する情報を同期できるようになります。 また、Intune は Apple への登録プロファイルのアップロードを実行して、デバイスをそれらのプロファイルに割り当てられるようになります。
@@ -49,9 +48,6 @@ DEP を使用して企業所有の iOS デバイスを管理するには、組�
 
 > [!NOTE]
 > Intune テナントを Intune クラシック コンソールから Azure Portal に移行し、移行の間に Apple DEP トークンを Intune 管理コンソールから削除した場合、その DEP トークンは Intune アカウントに復元されていない可能性があります。 Azure Portal から DEP トークンを再び削除できます。
-
-
-
 
 **手順 1: Apple DEP トークンを作成するために必要な Intune 公開キー証明書をダウンロードします。**<br>
 1. Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。 Intune ブレードで、**[デバイスの登録]** > **[Apple DEP トークン]** の順に選びます。
@@ -118,6 +114,7 @@ DEP を使用して企業所有の iOS デバイスを管理するには、組�
 9. プロファイルの設定を保存するには、**[登録プロファイルの作成]** ブレードで **[作成]** を選択します。
 
 ## <a name="assign-apple-dep-serial-numbers-to-your-mdm-server"></a>MDM サーバーに Apple DEP シリアル番号を割り当てる
+Intune でデバイスを管理できるようにするには、Apple DEP Web ポータルで、デバイスのシリアル番号を Intune MDM サーバーに割り当てる必要があります。
 
 1. [Device Enrollment Program ポータル](https://deploy.apple.com) (https://deploy.apple.com) に移動し、会社の Apple ID でサインインします。
 
@@ -128,6 +125,7 @@ DEP を使用して企業所有の iOS デバイスを管理するには、組�
 4. **[Assign to Server]** (サーバーに割り当てる) を選択し、Microsoft Intune に指定した &lt;ServerName&gt; を選択して、**[OK]** を選択します。
 
 ## <a name="synchronize-dep-managed-devices"></a>DEP 管理対象デバイスを同期する
+DEP デバイスを管理するアクセス許可を Intune に割り当てたので、Intune と DEP サービスを同期し、管理対象デバイスを Intune ポータルに表示できます。
 
 1. Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 
@@ -146,12 +144,29 @@ DEP を使用して企業所有の iOS デバイスを管理するには、組�
 >[!NOTE]
 >**[Apple DEP シリアル番号]** ブレードでプロファイルに DEP シリアル番号を割り当てることもできます。
 
+## <a name="assign-a-dep-profile-to-devices"></a>デバイスに DEP プロファイルを割り当てる
+Intune によって管理される DEP デバイスを登録する前に、デバイスに DEP プロファイルを割り当てる必要があります。
+
+1. Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
+
+2. Azure Portal の [Intune] ブレードで **[デバイスの登録]** > **[Apple の登録]** の順に選択し、**[DEP プロファイル]** を選択します。
+
+3. **[Apple DEP 登録プロファイル]** の一覧からデバイスに割り当てるプロファイルを選択し、**[デバイスの割り当て]** を選択します。
+
+4. **[割り当て]** を選択し、このプロファイルを割り当てる DEP デバイスを選択します。 フィルターを適用して DEP の使用可能なデバイスを表示できます。
+  - **未割り当て**
+  - **任意**
+  - **&lt;DEP プロファイル名&gt;**
+
+  ![Intune ポータルで DEP プロファイルを割り当てるための [割り当て] ボタンのスクリーンショット](media/dep-profile-assignment.png)
+
+5. 割り当てるデバイスを選択します。 列の上のチェック ボックスで最大 1,000 のデバイスを選び、**[割り当て]** をクリックします。 1,000 を超えるデバイスを登録するには、すべてのデバイスに DEP プロファイルを割り当てるまで割り当て手順を繰り返します。
+
 ## <a name="distribute-devices-to-users"></a>デバイスをユーザーに配布する
 
-これで、会社が所有するデバイスをユーザーに配布できるようになりました。 iOS デバイスの電源をオンにすると、iOS デバイスが Intune の管理対象として登録されます。
+これで、会社が所有するデバイスをユーザーに配布できるようになりました。 iOS DEP デバイスの電源をオンにすると、iOS DEP デバイスが Intune の管理対象として登録されます。 デバイスがアクティブ化されて使用中の場合、デバイスを工場出荷時の状態にリセットするまで、プロファイルを適用できません。
 
-
-## <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>デバイスにポータル サイト アプリをインストールして使用する方法
+### <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>デバイスにポータル サイト アプリをインストールして使用する方法
 
 ユーザー アフィニティが構成されたデバイスでは、ポータル サイト アプリをインストールして実行し、アプリをダウンロードしてデバイスを管理できます。 ユーザーは、デバイスを受け取った後、セットアップ アシスタントを完了してポータル サイト アプリをインストールするために、次に示す追加の手順を完了する必要があります。
 
@@ -159,7 +174,7 @@ DEP を使用して企業所有の iOS デバイスを管理するには、組�
 
 1. ユーザーは、デバイスの電源をオンにすると、セットアップ アシスタントを完了するように求められます。 セットアップ中にユーザーは資格情報を要求されます。 Intune のサブスクリプションに関連付けられている資格情報 (つまり一意の個人名または UPN) を使用する必要があります。
 
-2. セットアップ中にユーザーは Apple ID を要求されます。 デバイスでポータル サイトをインストールできるように、Apple ID を入力する必要があります。 この ID は、セットアップの完了後に iOS の設定メニューから入力することもできます。
+2. セットアップ中にユーザーは Apple ID を要求されます。 デバイスでポータル サイトをインストールできるように、Apple ID を入力する必要があります。 Apple ID は、セットアップの完了後に iOS の設定メニューで入力することもできます。
 
 3. セットアップが完了したら、ユーザーは App Store からポータル サイト アプリをインストールする必要があります。
 

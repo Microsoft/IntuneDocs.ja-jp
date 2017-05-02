@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b372d4ee505ca39a4739069e5798918ecde134ea
-ms.openlocfilehash: abf45b835d13ef5fe4acb769194542611448504e
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: a6a6992ab450a5601468c5d5e3eff112fc7ea222
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -76,8 +76,8 @@ Intune Azure プレビューでは、Intune グループを利用してアプリ
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[アプリの管理]** を選択します。
-1. **[アプリの管理]** ワークロードで、**[管理]** > **[アプリ]** の順に選択します。
+3. **[Intune]** ブレードで、**[モバイル アプリ]** を選びます。
+1. **[モバイル アプリ]** ワークロードで、**[管理]** > **[アプリ]** の順に選択します。
 2. アプリの一覧ブレードで、割り当てるアプリをクリックします。
 3. **[<*アプリ名*> - 概要]** ブレードで、**[管理]** > **[割り当て]** の順に選択します。
 4. **[グループの選択]** を選択し、**[グループの選択]** ブレードで、アプリを割り当てる Azure AD グループを選択します。

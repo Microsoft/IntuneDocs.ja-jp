@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 73360154765d53fe1f42e4e97699ad9385bfda6f
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 82af84bc3e31317023a2f8f7089431b1dbcaed52
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -54,8 +54,8 @@ Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[アプリの管理]** を選択します。
-1.  **[アプリの管理]** ワークロードで、**[管理]** > **[アプリの構成ポリシー]** の順に選択します。
+3. **[Intune]** ブレードで、**[モバイル アプリ]** を選びます。
+1.  **[モバイル アプリ]** ワークロードで、**[管理]** > **[アプリの構成ポリシー]** の順に選びます。
 
 2.  ポリシーの一覧ブレードで、**[追加]** を選択します。
 
@@ -109,7 +109,7 @@ Intune は、プロパティ リストで次のデータ型をサポートしま
 
 ## <a name="example-format-for-an-app-configuration-xml-file"></a>アプリ構成 XML ファイルの形式の例
 
-アプリ構成ファイルを作成する場合、この形式を使用して次の値を&1; つ以上指定できます。
+アプリ構成ファイルを作成する場合、この形式を使用して次の値を 1 つ以上指定できます。
 
 ```
 <dict>

@@ -15,9 +15,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 68dbebbd7d29514bde438b7dff3142dc45e8471d
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: f760d567ac339bbb60240ee9f8d28cb550656a59
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/21/2017
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 
-モバイル デバイスのメールボックスをホストする Exchange Server と Microsoft Intune が通信できるように接続をセットアップするには、Intune 管理コンソールで内部設置型 Exchange Connector をダウンロードして構成する必要があります。 Intune は、サブスクリプションごとに任意の種類の Exchange Connector 接続を&1; つだけサポートします。
+モバイル デバイスのメールボックスをホストする Exchange Server と Microsoft Intune が通信できるように接続をセットアップするには、Intune 管理コンソールで内部設置型 Exchange Connector をダウンロードして構成する必要があります。 Intune は、サブスクリプションごとに任意の種類の Exchange Connector 接続を 1 つだけサポートします。
 
 ## <a name="on-premises-exchange-connector-requirements"></a>内部設置型 Exchange Connector の要件
 以下の表に、内部設置型 Exchange Connector をインストールするコンピューターの要件を示します。
@@ -63,7 +63,7 @@ Intune Exchange Connector が使用する Active Directory ユーザー アカ�
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>内部設置型 Exchange Connector ソフトウェア インストール パッケージのダウンロード
 
-1. 内部設置型 Exchange Connector のサポートされている Windows Server オペレーティング システムで、Exchange Server を使用するライセンスを持つ Exchange テナント内の管理者であるユーザー アカウントを使用して、[Microsoft Intune 管理コンソール](http://manage.microsoft.com) (http://manage.microsoft.com) を開きます。
+1. 内部設置型 Exchange Connector のサポートされている Windows Server オペレーティング システムで、Exchange Server を使用するライセンスを持つ Exchange テナント内の管理者であるユーザー アカウントを使用して、[Microsoft Intune 管理コンソール](https://manage.microsoft.com) (https://manage.microsoft.com) を開きます。
 ![[Exchange 接続のセットアップ] を開く](../media/ExchangeConnector.gif)
 
 2.  ワークスペースのショートカット ウィンドウで **[管理]**>**[モバイル デバイス管理]** > **[Microsoft Exchange]**>**[Exchange 接続のセットアップ]** の順に選択します。
@@ -76,7 +76,7 @@ Intune Exchange Connector が使用する Active Directory ユーザー アカ�
 > オンプレミス Exchange Connector フォルダー内のファイルの名前を変更したり、ファイルを移動したりしないでください。 フォルダーの内容を移動したり、名前を変更したりすると、インストールが失敗します。
 
 ## <a name="install-and-configure-the-intune-on-premises-exchange-connector"></a>Intune の内部設置型 Exchange Connector のインストールと構成
-次の手順を実行して、Intune の内部設置型 Exchange Connector をインストールします。 内部設置型 Exchange Connector は、Intune サブスクリプション&1; つで&1; 台のコンピューターに&1; 回だけインストールできます。 内部設置型 Exchange Connector をもう&1; つ構成しようとすると、新しい接続で元の接続が置き換えられます。
+次の手順を実行して、Intune の内部設置型 Exchange Connector をインストールします。 内部設置型 Exchange Connector は、Intune サブスクリプション 1 つで 1 台のコンピューターに 1 回だけインストールできます。 内部設置型 Exchange Connector をもう 1 つ構成しようとすると、新しい接続で元の接続が置き換えられます。
 
 1.  内部設置型 Connector のサポートされているオペレーティング システムで、**Exchange_Connector_Setup.zip** を安全な場所に抽出します。
 
@@ -129,7 +129,7 @@ Exchange Connector が接続をセットアップすると、Exchange Connector 
 
 ## <a name="validate-the-exchange-connection"></a>Exchange 接続を確認する
 
-Exchange Connector を正常に構成したら、接続のステータスと前回の成功した同期の試行を表示できます。 [Microsoft Intune 管理コンソール](http://manage.microsoft.com)で、**[管理者]** ワークスペースを選択します。 **[モバイル デバイス管理]** で **[Microsoft Exchange]** を選択して、**[Exchange の接続情報]** に表示される設定内容の詳細を確認します。
+Exchange Connector を正常に構成したら、接続のステータスと前回の成功した同期の試行を表示できます。 [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[管理者]** ワークスペースを選択します。 **[モバイル デバイス管理]** で **[Microsoft Exchange]** を選択して、**[Exchange の接続情報]** に表示される設定内容の詳細を確認します。
 
 
 また、前回いつ同期が完了したかも確認することができます。

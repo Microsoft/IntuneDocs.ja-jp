@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 53b86bf579af6af29fd36ce58f9cdf1e92b98abc
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 71ebb310699cf80310b33be1b665a968ac102bde
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -39,7 +39,7 @@ Azure ポータルはアプリ保護ポリシーを作成するための新し�
 
 現在のところ、**Intune 管理者コンソール**と **Azure ポータル**の両方でアプリ保護ポリシーを構成できます。  次の点を考慮します。
 
-* **Azure Portal** で作成するポリシーは、上記の**すべての MAM シナリオ**でサポートされます。 **Intune 管理者コンソール**は、**Intune で登録し、管理するデバイス**のポリシー作成にのみ対応しています。
+* **Azure Portal**  で作成するポリシーは、上記の**すべての MAM シナリオ**でサポートされます。 **Intune 管理者コンソール**は、**Intune で登録し、管理するデバイス**のポリシー作成にのみ対応しています。
 
 * **新しい設定**は **Azure ポータル**にのみ追加できるため、一部のアプリ ポリシー設定は Intune 管理者コンソールに表示されない場合があります。
 
@@ -86,7 +86,7 @@ Intune 管理コンソールでアプリ ポリシーを作成する方法につ
 
   - SharePoint Online および Exchange Online 作業アカウントを作成する。 Exchange On-Premises と SharePoint On-Premises はサポートされていません。
 
--   **Skype for Business Online の先進認証の設定**。 詳細については、「[Enable modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)」 (先進認証の有効化) をご覧ください。
+-   **Skype for Business Online の先進認証の設定**。 詳細については、「[Enable modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)」 (先進認証の有効化) をご覧ください。
 
 
 - ユーザーを作成するための Azure Active Directory (Azure AD)。 Azure AD では、ユーザーがアプリを開いて作業用の資格情報を入力するときに、ユーザーを認証します。
@@ -96,7 +96,7 @@ Intune 管理コンソールでアプリ ポリシーを作成する方法につ
 
 ### <a name="create-users-and-assign-microsoft-intune-licenses"></a>ユーザーの作成と Microsoft Intune ライセンスの割り当て
 
-1.  管理者資格情報で [Office ポータル](http://portal.office.com)にサインインします。
+1.  管理者資格情報で [Office ポータル](https://portal.office.com)にサインインします。
 
 2.  [Intune の評価ガイド](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)の、**Intune の 30 日間評価版の完了手順**のセクションにある説明に従ってユーザーを追加して、Intune ライセンスを割り当てます。 ユーザーが Office ポータル、Azure AD ポータル、Azure ポータルにアクセスできるようにするには、**全体管理者ロール**をユーザーに割り当てます。
 

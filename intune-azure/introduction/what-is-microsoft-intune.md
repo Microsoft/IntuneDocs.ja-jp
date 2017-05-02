@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 03/15/2017
+ms.date: 04/24/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 13d20cd985dbc22cd6d833fa333f31be809ffae5
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 92e07a49205ffaf287fc3aa2da6a6376b75fda4f
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -80,20 +80,26 @@ Azure Portal は、ほとんどの最新 PC、Mac、タブレットで動作し�
 Intune 環境の[計画と設計](/intune-azure/plan-and-design/get-started)に役立つ情報が含まれています。
 ### <a name="device-enrollment"></a>デバイスの登録
 [デバイスを Intune の管理対象にする方法](/intune-azure/enroll-devices/what-is)。
-### <a name="devices"></a>[デバイス]
-[インベントリとレポートによって管理対象デバイスの情報を把握します](/intune-azure/manage-devices/what-is)。
-### <a name="manage-users-and-groups"></a>ユーザーおよびグループの管理
-[リソースを管理し、グループに分類するデバイスのユーザーについて](/intune-azure/manage-users/what-is)説明します。
-### <a name="manage-apps"></a>アプリを管理する
-[アプリの発行、管理、構成、および保護方法](/intune-azure/manage-apps/what-is-app-management)。
-### <a name="device-configuration"></a>デバイス構成
-[管理対象のデバイスで設定と機能を構成するために使用できるプロファイルについて理解します](/intune-azure/configure-devices/what-are-device-profiles)。
 ### <a name="device-compliance"></a>デバイスのポリシー準拠
 [デバイスのコンプライアンス レベルを定義し、準拠していないデバイスについてのレポートを作成します](/intune-azure/set-device-compliance/what-is-device-compliance)。
+### <a name="device-configuration"></a>デバイス構成
+[管理対象のデバイスで設定と機能を構成するために使用できるプロファイルについて理解します](/intune-azure/configure-devices/what-are-device-profiles)。
+### <a name="devices"></a>[デバイス]
+[インベントリとレポートによって管理対象デバイスの情報を把握します](/intune-azure/manage-devices/what-is)。
+### <a name="mobile-apps"></a>モバイル アプリ
+[アプリの発行、管理、構成、および保護方法](/intune-azure/manage-apps/what-is-app-management)。
 ### <a name="conditional-access"></a>条件付きアクセス
 [指定した条件に応じて Exchange サービスへのアクセスを制限します](/intune-azure/conditional-access/what-is-conditional-access)。
+### <a name="on-premises-access"></a>オンプレミスのアクセス
+[Exchange ActiveSync および Exchange On-premises へのアクセスを構成します](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
+### <a name="users"></a>Users
+[リソースを管理し、グループに分類するデバイスのユーザーについて](/intune-azure/manage-users/what-is)説明します。
+### <a name="groups"></a>[グループ]
+[Intune で Azure Active Directory グループを使用する方法について説明します](/intune-azure/manage-users/get-started-with-groups)
 ### <a name="intune-roles"></a>Intune ロール
 [Intune の各種アクションを実行できるユーザーと、それらのアクションの適用先となるユーザーを制御します](/intune-azure/access-control/role-based-access-control)。 一般的な Intune シナリオを対象とする組み込みロールを使用するか、独自のロールを作成することができます。
+### <a name="software-updates"></a>ソフトウェア更新プログラム
+[Windows 10 デバイスのソフトウェア更新を構成する方法について説明します](/intune-azure/configure-devices/how-to-configure-windows-update-for-business)。
 
 
 
