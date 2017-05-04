@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: ee35fb2c8e39af099fb061211ea1fdf767230217
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -39,7 +40,7 @@ Microsoft Intune 管理コンソール ビューをフィルター処理して�
     -   **読み取り専用アクセス**
     -   **ヘルプデスク - グループ ノード**
 
-    フル アクセスと読み取り専用アクセスは、特に説明することはありません。 <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] admin console:--->
+    フル アクセスと読み取り専用アクセスは、特に説明することはありません。 <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the Intune admin console:--->
 
     **ヘルプデスク - グループ ノード**は、次に示す管理者が確認できる項目と実行できる操作を制限します。
 
@@ -70,9 +71,4 @@ Microsoft Intune 管理コンソール ビューをフィルター処理して�
         -   パスコードのリセット
 
 構成した管理者が次に Intune 管理コンソールを開いたとき、指定したアクセス レベルが与えられます。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
