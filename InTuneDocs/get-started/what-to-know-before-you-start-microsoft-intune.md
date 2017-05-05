@@ -15,9 +15,9 @@ ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 0fa045d31125ba0d67f19bb46aa2728ae9bbcc93
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 271459e3faf886a45bcd673d2450f36a4a33a5db
+ms.openlocfilehash: 7171dab36ace4915b51def2dd717e63df8438135
+ms.lasthandoff: 04/28/2017
 
 
 ---
@@ -47,7 +47,7 @@ Intune デバイス管理は、[これらの機能](mobile-device-management-cap
 
 ### <a name="windows-pc-software-client"></a>Windows PC ソフトウェア クライアント
 
-代替登録方法として、[Intune ソフトウェア クライアント](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)を Windows PC に展開し、インストールできます。 Intune ソフトウェア クライアントを利用し、Windows 10 Home エディションを除く、Windows 7 以降の PC を管理できます。 クライアント ソフトウェアを使用して PC を管理する場合、[こちらの機能](windows-pc-management-capabilities-in-microsoft-intune.md)を使用できます。
+代替登録方法として、[Intune ソフトウェア クライアント](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune)を Windows PC に展開し、インストールできます。 Intune ソフトウェア クライアントを利用し、Windows 10 Home エディションを除く、Windows 7 以降の PC を管理できます。
 
 ### <a name="exchange-activesync-management"></a>Exchange ActiveSync による管理
 

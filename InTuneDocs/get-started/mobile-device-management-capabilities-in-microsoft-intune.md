@@ -15,8 +15,9 @@ ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 898975338edcd3267fd47d62d23b35e295f0d99b
+ms.sourcegitcommit: 271459e3faf886a45bcd673d2450f36a4a33a5db
+ms.openlocfilehash: 54a424677ef2df62c7a1fb18f2419f7b419112c0
+ms.lasthandoff: 04/28/2017
 
 
 ---
@@ -68,13 +69,4 @@ Microsoft Intune では、サービスにデバイスを*登録*することに�
 |機能|説明|詳細情報|
 |--------------|-----------|--------------------|
 |インベントリとレポート|管理対象のデバイスと、デバイスが使用しているソフトウェアの詳細が記載されています。|[Microsoft Intune でインベントリを使用してデバイスを把握する](/intune/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
-
-
-### <a name="see-also"></a>関連項目
-[Microsoft Intune の Windows PC 管理機能](windows-pc-management-capabilities-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
