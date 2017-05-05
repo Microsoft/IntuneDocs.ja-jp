@@ -1,5 +1,6 @@
 # 理解と調査
 ## [Intune の概要](understand-explore/introduction-to-microsoft-intune.md)
+## [教育用の Intune](understand-explore/introduction-to-intune-education.md)
 ## [無料試用版にサインアップ](understand-explore/sign-up-for-30-day-trial-microsoft-intune.md)
 ## [Intune MDM を評価する](understand-explore/mobile-device-management-trial-guide-microsoft-intune.md)
 ### [ユーザーとデバイスを整理するためのグループを作成する](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
