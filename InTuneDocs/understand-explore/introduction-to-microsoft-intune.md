@@ -5,7 +5,7 @@ keywords: "Intune の概要"
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 03/7/2017
+ms.date: 05/04/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 3b1c61bc78db2c674bf108ed6110c3826cff150e
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 2552f84dc38c4453851167cd1570143c7a9820c2
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -32,7 +32,7 @@ Intune はクラウドベースのエンタープライズ モビリティ管理
 * 社員が会社の情報にアクセスし、共有する方法を制御し、会社の情報を保護します。
 * デバイスやアプリが会社のセキュリティ要件に準拠するように管理します。
 
-Intune は ID とアクセス制御のために Azure Active Directory (Azure AD) と、データ保護のために Azure Information Protection と密接に統合されます。 Intune は Microsoft Enterprise Mobility + Security (EMS) の *管理部門* であり、Office 365 は Microsoft のモバイル ソリューションの *生産性部門* です。  
+Intune は ID とアクセス制御のために Azure Active Directory (Azure AD) と、データ保護のために Azure Information Protection と密接に統合されます。
 
 Office 365 と EMS の連携で、社員があらゆるデバイスを生産的に活用し、同時に会社の情報を保護することができます。 Office 365 と EMS の組み合わせで、生産性、ID、アクセス制御、管理、データ保護を含む Enterprise Mobility の完全な統合スイートとなります。 これにより、効果的にモビリティ ソリューションを組織に展開し、運用することができます。
 
