@@ -1,5 +1,6 @@
 # 概要
 ## [Azure Portal プレビューとは](introduction/what-is-microsoft-intune.md)
+## [教育用の Intune とは](/intune/understand-explore/introduction-to-intune-education?toc=/intune/toc.json)
 ## [Azure での Intune の機能](introduction/ui-changes-in-microsoft-intune.md)
 ## 作業開始
 <!---(introduction/get-started.md) --->
@@ -82,10 +83,13 @@
 #### [iOS LOB アプリ](manage-apps/ios-lob-app.md)
 #### [Web アプリ](manage-apps/web-app.md)
 #### [Windows Phone 8.1 ストア アプリ](manage-apps/windows-phone-8-1-store-app.md)
+#### [Windows Phone LOB アプリ](manage-apps/windows-phone-line-of-business-app.md)
 #### [Windows ストア アプリ](manage-apps/windows-store-app.md)
+#### [Windows LOB アプリ](manage-apps/windows-line-of-business-app.md)
 ### [アプリを割り当てる](manage-apps/deploy-apps.md)
 ### [アプリの監視](manage-apps/monitor-apps.md)
-### [アプリ構成ポリシーを使用する](manage-apps/app-configuration-policies.md)
+### [アプリ構成プロファイルを使用する](manage-apps/app-configuration-policies.md)
+### [iOS アプリ プロビジョニング プロファイルを使用する](manage-apps/ios-app-provisioning-profile.md)
 ### [選択的にワイプするアプリ](manage-apps/app-selective-wipe.md)
 <!---Is this specific to app protection policy or more general app management?--->
 ### [ボリューム購入アプリを操作する](manage-apps/volume-purchased-apps.md)
@@ -186,7 +190,7 @@
 ### [Android for Work コンプライアンス ポリシーを作成する](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [iOS コンプライアンス ポリシーを作成する](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Windows コンプライアンス ポリシーを作成する](set-device-compliance/create-a-compliance-policy-for-windows.md)
-### [コンプライアンス非対応に対するアクションを作成する](set-device-compliance/actions-for-noncompliance.md)
+<!---### [Create Actions for noncompliance](set-device-compliance/actions-for-noncompliance.md)--->
 ### [デバイス コンプライアンスを監視する](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
