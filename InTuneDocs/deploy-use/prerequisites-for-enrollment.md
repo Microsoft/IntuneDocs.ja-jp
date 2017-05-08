@@ -14,9 +14,10 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
 ms.openlocfilehash: 160b8a7fe883b8af61831b30b711ad0243a3ec08
+ms.contentlocale: ja-jp
 ms.lasthandoff: 04/24/2017
 
 
@@ -88,7 +89,7 @@ MDM 機関では、一連のデバイスを管理するためのアクセス許�
     |IT 部門の担当者名|40|**[IT に連絡]** ページに表示される名前です。|
     |IT 部門の電話番号|20|**[IT に連絡]** ページに表示される連絡先の電話番号です。|
     |IT 部門の電子メール アドレス|40|**[IT に連絡]** ページに表示される連絡先の電子メール アドレスです。 **alias@domainname.com** の形式で有効な電子メール アドレスを入力する必要があります。|
-    |追加情報|120|[IT に連絡]** ページに表示される情報です。|
+    |追加情報|120|**[IT に連絡]** ページに表示される情報です。|
     |会社のプライバシーに関する声明の URL|79|ポータル サイトでユーザーがプライバシー リンクをクリックすると表示される、各社のプライバシーに関する声明を指定できます。 https://www.contoso.com の形式で URL を入力します。|
 
 ### <a name="support-contacts"></a>サポートの連絡先
