@@ -15,9 +15,10 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 82585886bb053d5b6b5981f61d0337fc6feffea4
 ms.openlocfilehash: b26d66d557e084b5b328aec2222c50c2db254bf7
+ms.contentlocale: ja-jp
 ms.lasthandoff: 03/14/2017
 
 
@@ -36,7 +37,7 @@ Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[I
 **[CSR のダウンロード]** を選択して、.csr ファイルをダウンロードし、ローカルに保存します。 .csr ファイルは、Apple Push Certificates Portal からの信頼関係証明書を要求するために使用します。
 
 **手順 2:Apple MDM プッシュ証明書を取得します。**<br>
-**[MDM プッシュ証明書を作成する]** を選択して、Apple Push Certificates Portal に移動します。 会社の Apple ID でサインインし、.csr ファイルを使用してプッシュ証明書を作成します。 Apple Push Certificate Portal で **[Upload (アップロード)]** を選択すると、.json ファイルを受け取ります。 プッシュ証明書にこのファイルを使用しないでください。 ダウンロードが完了したら、Apple Push Certificates Portal に戻り、[Certificates for Third-Party Servers] (サード パーティのサーバーの証明書) で、**[Download]** (ダウンロード) を選択します。 プッシュ証明書 (.pem ファイル) をダウンロードして、ローカルに保存します。
+**[MDM プッシュ証明書を作成する]** を選択して、Apple Push Certificates Portal に移動します。 会社の Apple ID でサインインし、.csr ファイルを使用してプッシュ証明書を作成します。 Apple Push Certificate Portal で **[Upload (アップロード)]** を選択すると、.json ファイルを受け取ります。 プッシュ証明書にこのファイルを使用しないでください。 ダウンロードが完了したら、Apple Push Certificates Portal に戻り、[Certificates for Third-Party Servers]\(サード パーティのサーバーの証明書) で、**[Download]** (ダウンロード) を選択します。 プッシュ証明書 (.pem ファイル) をダウンロードして、ローカルに保存します。
 メモ
 
 **手順 3:Apple MDM プッシュ証明書の作成に使用する Apple ID を入力します。**
