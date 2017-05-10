@@ -15,9 +15,10 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
 ms.openlocfilehash: a47ea4c8d3027cb34fd8ecd8324fac52c9846a77
+ms.contentlocale: ja-jp
 ms.lasthandoff: 03/17/2017
 
 
@@ -50,14 +51,14 @@ ms.lasthandoff: 03/17/2017
 - **[説明]** - "実行されないようにブロックされているアプリの一覧" のような説明 (省略可能) を入力します。
 -     **[データ型]** - ドロップダウン リストで **[文字列]** を選択します。
 -     **[OMA-URI]** - 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**」と入力します
--     **[値]** - ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,****|** を使用できます。 (例: package1;package2;)
+-     **[値]** - ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,** **|** を使用できます。 (例: package1;package2;)
 
 ### <a name="for-a-list-of-apps-that-users-are-allowed-to-install-from-the-google-play-store-while-excluding-all-other-apps"></a>他のすべてのアプリの実行中にユーザーが Google Play ストアからインストールできるアプリの一覧の場合:
 - **[名前]** - 「**AllowInstallPackages**」と入力します。
 - **[説明]**: "ユーザーが Google Play からインストールできるアプリの一覧" のような説明 (省略可能) を入力します。
 - **[データ型]** - ドロップダウン リストで **[文字列]** を選択します。
 - **[OMA-URI]** - 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**」と入力します
-- **[値]** - 許可するアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,****|** を使用できます。 (例: package1;package2;)
+- **[値]** - 許可するアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,** **|** を使用できます。 (例: package1;package2;)
 
 4. **[OK]** をクリックし、**[プロファイルを作成します]** ブレードで **[作成]** を選択します。
 
