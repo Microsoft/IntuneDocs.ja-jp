@@ -14,10 +14,11 @@ ms.assetid: 098b652c-01e0-45d1-a731-620b0d3dc7c1
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: abfb3912ba6dfa6802e1321782afd155a96fbefc
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 0f192c0e41cf3b639cbfdac3f8c4fc3b8167266d
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -35,7 +36,7 @@ ms.lasthandoff: 04/19/2017
 
 ```
  Set-SPOTenant -LegacyAuthProtocolsEnabled $false
- 
+
 ```
 
 
