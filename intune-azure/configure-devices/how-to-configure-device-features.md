@@ -15,10 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: e1bc6388ec1927693bac676a20a18935cdbf894e
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: fddd4963ceea09b37ad4d8c739f437dbcf3b053e
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -49,7 +50,6 @@ ms.lasthandoff: 04/19/2017
     - [iOS 用ホーム画面のレイアウト設定](home-screen-settings-for-ios.md)
     - [iOS 用アプリの通知設定](app-notification-settings-for-ios.md)
     - [iOS 用共有デバイス構成設定](shared-device-settings-for-ios.md)
-    - [iOS 用 Web コンテンツ フィルター設定](web-content-filter-settings-for-ios.md)
 
 8. 完了したら、**[プロファイルを作成します]** ブレードに戻り、**[作成]** をクリックします。
 
