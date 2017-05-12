@@ -15,10 +15,11 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 748f5b6e18b7bc6d9e9d3e6635ac2c3e7eb11a67
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 3015c5493e8b38b425309584430c372e6a4d90cf
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -35,7 +36,7 @@ ms.lasthandoff: 02/18/2017
 
 ## <a name="user-owned-ios-devices-byod"></a>ユーザー所有の iOS デバイス (BYOD)
 
-個人の BYOD (Bring Your Own Device) デバイスを登録する場合は、ユーザーがアプリ ストアから iOS 向けポータル サイト アプリをダウンロードし、そのアプリに示されている登録手順に従う必要があります。 登録後、ユーザーは社内ネットワークに接続し、ドメインまたは Azure Active Directory に参加して、企業リソースにアクセスできるようになります。 個人所有の iOS デバイスの登録をブロックすることができます。 その手順については、「[Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions)」 (デバイスの種類の制限を設定する) を参照してください。
+個人の BYOD (Bring Your Own Device) デバイスを登録する場合は、ユーザーがアプリ ストアから iOS 向けポータル サイト アプリをダウンロードし、そのアプリに示されている登録手順に従う必要があります。 登録後、ユーザーは社内ネットワークに接続し、ドメインまたは Azure Active Directory に参加して、企業リソースにアクセスできるようになります。 個人所有の iOS デバイスの登録をブロックすることができます。 その手順については、「[Set device type restrictions](set-enrollment-restrictions.md#set-device-type-restrictions)」 (デバイスの種類の制限を設定する) を参照してください。
 
 ## <a name="apple-configurator"></a>Apple Configurator
 
@@ -50,5 +51,5 @@ ms.lasthandoff: 02/18/2017
 DEP では、DEP を通じて購入したデバイスに "無線で" 登録プロファイルが展開されます。 ユーザーがデバイスでセットアップ アシスタントを実行すると、デバイスが Intune に登録されます。 DEP を使用して登録したデバイスの場合は、ユーザーが登録を解除することはできません。 詳細については、「[Device Enrollment Program を使用して iOS デバイスを登録する](enroll-ios-devices-using-device-enrollment-program.md)」を参照してください。
 
 ## <a name="use-the-device-enrollment-manager-dem"></a>デバイス登録マネージャー (DEM) の使用
-デバイス登録マネージャーは、最大 1,000 台のデバイスを登録して管理できるユーザー アカウントの種類です。 こうした機能を既存のユーザーに提供するには、そのユーザーを DEM アカウントに追加します。 DEM ユーザーの登録デバイスごとに&1; つの Intune ライセンスが使用されます。 詳細については、「[デバイス登録マネージャーを使用してデバイスを登録する](enroll-devices-using-device-enrollment-manager.md)」を参照してください。
+デバイス登録マネージャーは、最大 1,000 台のデバイスを登録して管理できるユーザー アカウントの種類です。 こうした機能を既存のユーザーに提供するには、そのユーザーを DEM アカウントに追加します。 DEM ユーザーの登録デバイスごとに 1 つの Intune ライセンスが使用されます。 詳細については、「[デバイス登録マネージャーを使用してデバイスを登録する](enroll-devices-using-device-enrollment-manager.md)」を参照してください。
 

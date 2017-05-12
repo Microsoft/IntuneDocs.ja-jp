@@ -15,10 +15,11 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
-ms.openlocfilehash: 3ef80446889e40464aed39fc83d9777dbfcc4d11
-ms.lasthandoff: 03/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 6fcbeb30fb11b6bc8def3a1c245bff56b3f7cca4
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.lasthandoff: 03/22/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Intune では、macOS デバイスを管理することができます。 デバイスの管理を有効にするには、[ポータル Web サイト](http://portal.manage.microsoft.com)に移動し、画面の指示に従ってデバイスを登録する必要があります。 macOS デバイスを管理下に置いたら、[macOS デバイスのカスタム設定を作成](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-macos)できます。 その他の機能は近日公開予定です。
+Intune では、macOS デバイスを管理することができます。 デバイスの管理を有効にするには、[ポータル Web サイト](http://portal.manage.microsoft.com)に移動し、画面の指示に従ってデバイスを登録する必要があります。 macOS デバイスを管理下に置いたら、[macOS デバイスのカスタム設定を作成](../configure-devices/custom-for-macos.md)できます。 その他の機能は近日公開予定です。
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -36,7 +37,7 @@ macOS デバイスの登録を設定する前に、以下の前提条件を満�
 - [ドメインを構成する](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [MDM 機関を設定する](set-mdm-authority.md)
 - [グループの作成](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- [ポータル サイト アプリを構成する](/intune-azure/manage-apps/company-portal-app.md)
+- [ポータル サイト アプリを構成する](../manage-apps/company-portal-app.md)
 - [Office 365 ポータル](http://go.microsoft.com/fwlink/p/?LinkId=698854)でユーザー ライセンスを割り当てる
 - [Apple MDM プッシュ証明書を取得する](get-an-apple-mdm-push-certificate.md)
 
@@ -44,9 +45,9 @@ macOS デバイスの登録を設定する前に、以下の前提条件を満�
 
 Intune では、既定で macOS デバイスの登録が既に許可されています。
 
-macOS デバイスの登録をブロックする場合は、「[Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions)」 (デバイスの種類の制限を設定する) を参照してください。
+macOS デバイスの登録をブロックする場合は、「[Set device type restrictions](set-enrollment-restrictions.md#set-device-type-restrictions)」 (デバイスの種類の制限を設定する) を参照してください。
 
-ユーザーが登録できるデバイスの最大数を設定する場合は、「[Set device limit restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions)」 (デバイス数の制限を設定する) を参照してください。
+ユーザーが登録できるデバイスの最大数を設定する場合は、「[Set device limit restrictions](set-enrollment-restrictions.md#set-device-limit-restrictions)」 (デバイス数の制限を設定する) を参照してください。
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>デバイスを登録して会社のリソースにアクセスする方法をユーザーに知らせる
 
