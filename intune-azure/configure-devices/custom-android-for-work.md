@@ -15,23 +15,24 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: ac27b1915483568b9b9857405f7acaf704fd53d9
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 05afa9140e34b372cc49ace03a3ada965b907c17
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/10/2017
 
 
 ---
 
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>Android for Work デバイス向けの Intune カスタム プロファイル設定の作成
 
-Intune Android for Work カスタム構成ポリシーを使用して、Android for Work デバイスでの各機能の制御に使用できる OMA-URI 設定を展開します。 これらの設定は、多くのデバイス製造元がデバイスの機能を制御するために使用する標準の設定です。
+Intune Android for Work カスタム構成ポリシーを使用して、Android for Work デバイスでの各機能の制御に使用できる OMA-URI 設定を割り当てます。 これらの設定は、多くのデバイス製造元がデバイスの機能を制御するために使用する標準の設定です。
 
-この機能は、Intune ポリシーで構成できない Android 設定を展開できるようにするためのものです。 現時点では、Intune でサポートされる Android カスタム ポリシーの数は限られています。 構成できるポリシーを見つける場合は、このトピックの例を参照してください。
+この機能は、Intune ポリシーで構成できない Android 設定を割り当てられるようにするためのものです。 現時点では、Intune でサポートされる Android カスタム ポリシーの数は限られています。 構成できるポリシーを見つける場合は、このトピックの例を参照してください。
 
 ## <a name="create-a-custom-profile"></a>カスタム プロファイルの作成
 
-1. 「[Microsoft Intune でカスタム デバイス設定を構成する方法](/intune-azure/configure-devices/how-to-configure-custom-settings)」の手順に従って開始します。
+1. 「[Microsoft Intune でカスタム デバイス設定を構成する方法](how-to-configure-custom-settings.md)」の手順に従って開始します。
 2. **[OMA-URI のカスタム設定]** ブレードで **[追加]** を選択して、新しい設定を追加します。
 3. **[行の追加]** ブレードで、以下を構成します。
     - **[名前]** - Android for Work カスタム設定の一意の名前を入力すると、Intune ポータル内で容易に識別できます。

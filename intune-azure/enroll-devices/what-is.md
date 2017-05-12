@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
-ms.openlocfilehash: a816ee8fd2738cf244fd46a91af46d2b137a5dfb
-ms.lasthandoff: 04/25/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: adeea52461f58bd03b291c4b2cc336e9da19d429
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -38,7 +39,7 @@ Intune にデバイスを登録して、それらのデバイスを管理でき�
 
 次の表は、Intune の登録方法とサポートされる機能、各方法の要件の一覧です。 また、機能と要件について説明しています。 ここで使用される用語を次に示します。
 
-- **ワイプ** - ユーザーがデバイスを登録する前に、デバイスのワイプが必要かどうかを示します。 "ワイプ" という用語は、デバイスを出荷時の設定にリセットし、すべてのデータを削除することを意味します。 詳細については、[デバイスでのフル ワイプまたは選択的ワイプの使用](/intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune)に関するページを参照してください。
+- **ワイプ** - ユーザーがデバイスを登録する前に、デバイスのワイプが必要かどうかを示します。 "ワイプ" という用語は、デバイスを出荷時の設定にリセットし、すべてのデータを削除することを意味します。 詳細については、[デバイスでのフル ワイプまたは選択的ワイプの使用](../manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md)に関するページを参照してください。
 - **アフィニティ** - デバイスとユーザーを関連付けます。 モバイル アプリケーション管理 (MAM) および会社データへの条件付きアクセスのために必要です。 詳細については、「[ユーザー アフィニティ](enroll-ios-devices-using-device-enrollment-program.md)」を参照してください。
 - **ロック** - ユーザーが管理メニューから自分のデバイスを登録解除できるかどうかを示します。 ユーザーは、ポータル サイト アプリを使用してすべてのプラットフォームで自分のデバイスを登録解除できます。 ネイティブのオペレーティング システムのメニューでは登録解除ができません。
 
@@ -70,7 +71,7 @@ Intune にデバイスを登録して、それらのデバイスを管理でき�
 
 
 ## <a name="byod"></a>BYOD
-"Bring your own device" はユーザーがポータル サイト アプリをインストールし、自分のデバイスを登録します。 これにより、ユーザーは会社のネットワークに接続して、ドメインまたは Azure Active Directory に参加できます。 ほとんどのプラットフォームで、多くの COD シナリオのために BYOD 登録を有効にする必要があります。 個人所有の iOS および Android デバイスの登録をブロックすることができます。 その手順については、「[Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions)」 (デバイスの種類の制限を設定する) を参照してください。
+"Bring your own device" はユーザーがポータル サイト アプリをインストールし、自分のデバイスを登録します。 これにより、ユーザーは会社のネットワークに接続して、ドメインまたは Azure Active Directory に参加できます。 ほとんどのプラットフォームで、多くの COD シナリオのために BYOD 登録を有効にする必要があります。 個人所有の iOS および Android デバイスの登録をブロックすることができます。 その手順については、「[Set device type restrictions](set-enrollment-restrictions.md#set-device-type-restrictions)」 (デバイスの種類の制限を設定する) を参照してください。
 
 ## <a name="corporate-owned-devices"></a>企業所有のデバイス
 企業所有のデバイス (COD) は、Azure Portal を利用して管理できます。 iOS デバイスは、Apple が提供するツールを利用して直接登録できます。 管理者またはマネージャーは、デバイス登録マネージャーを使用して、すべてのデバイスの種類を登録できます。 IMEI 番号を持つデバイスを識別し、会社所有としてタグ付けして、COD シナリオで使用することもできます。

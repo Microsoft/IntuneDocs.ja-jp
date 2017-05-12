@@ -14,9 +14,11 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e2503c44f434e67f45064f28d1e921eb5accb0b6
-ms.openlocfilehash: 2707e3fae32e73aa17696886f493932e903ffc10
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 2b064d14e8a46c19c0eafc3276b470dead114438
+ms.openlocfilehash: e7fd0a83e21d499da39bd65502d8981bc3b1f61c
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/06/2017
 
 
 ---
@@ -40,7 +42,7 @@ Azure ポータルを使用して、次のようなアプリに対してアプ�
 
 ## <a name="sign-in-to-the-azure-portal-and-customize-your-start-page"></a>Azure ポータルにサインインし、スタート ページをカスタマイズする
 
-1.  [Azure ポータル](https://portal.azure.com)に移動し、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] 資格情報でサインインします。
+1.  [Azure Portal](https://portal.azure.com) に移動し、Intune 資格情報でサインインします。
 
     ![Azure ポータルのサインイン ページのスクリーンショット](../media/AppManagement/AzurePortal_MAMSigninPage.png)
 
@@ -48,7 +50,7 @@ Azure ポータルを使用して、次のようなアプリに対してアプ�
 
     ![Azure ポータルのダッシュボードのスクリーンショット](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  左側のメニューから **[More services]** (その他のサービス) を選択し、テキスト ボックス フィルターに**「Intune」**と入力します。
+3.  左側のメニューから **[その他のサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
 
     ![[参照] メニューのスクリーンショット、[Intune] が強調表示されています](../media/AppManagement/MAM-Azure-Portal-1.png)
 
@@ -64,9 +66,4 @@ Azure ポータルを使用して、次のようなアプリに対してアプ�
 
 ## <a name="next-steps"></a>次のステップ
 [アプリ保護ポリシーを構成する準備をする](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 29b33341b136c8e8d76b666f94a9f620212944c5
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: eaddfc647c5e755e6b033a7970e003ce516bba04
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -38,7 +39,7 @@ You can do everything in the trial version that you can do in a subscription ver
 <!--- ## Sign up for your trial--->
 1. [Intune サインアップ](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) ページにアクセスしてフォームに入力し、試用版サブスクリプションにサインアップします。
 
- <!--- If you have a work or school account and want to use that for your Intune trial, follow [these sign-in instructions](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1) instead. However, this article assumes that you are not using such an account.---><br/> ![サインアップ ページの画像](./media/1-clicking-try.png)
+ <!--- If you have a work or school account and want to use that for your Intune trial, follow [these sign-in instructions](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1) instead. However, this article assumes that you are not using such an account.---><br/> ![サインアップ ページの画像](./media/1-clicking-try.png)
 
  > [!TIP]
 > IT 運用チームやユーザーの大半が自分と異なるロケールに属している場合は、そのロケールを **[Where's your company located? (会社の所在地はどこですか?)]** で選択することをお勧めします。
@@ -56,7 +57,7 @@ Intune Azure プレビューに初めてサインオンすると、Azure ダッ�
 <!--- ## Add users
 Before you leave the Office 365 Admin center for Intune, you need to add some users to your trial account.
 
-In the Office 365 Admin center, you can add users individually or in bulk by uploading a .csv file. We will do both to set up your trial. However, in your production environment, you will probably want to take advantage of your Azure Active Directory user accounts, which you can learn more about in our [Getting Started guide](https://docs.microsoft.com/en-us/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) and in the [Next steps](#Next-steps) section of this article.
+In the Office 365 Admin center, you can add users individually or in bulk by uploading a .csv file. We will do both to set up your trial. However, in your production environment, you will probably want to take advantage of your Azure Active Directory user accounts, which you can learn more about in our [Getting Started guide](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) and in the [Next steps](#Next-steps) section of this article.
 
 ### Add an individual user
 1. Choose either of the options to add a use to open a form that allows you to create a user. Only the items starred with an asterisk (\*) are required.
@@ -111,7 +112,7 @@ To get from Intune back to the Office 365 Admin center, choose the **Add Users**
 ![Image of link back to Office 365  Admin center](./media/sign-up/task-add-users.png)--->
 
 <!---### Intune Azure preview--->
-Intune Azure プレビューで使用するポータルは&3; つあります。
+Intune Azure プレビューで使用するポータルは 3 つあります。
 - Azure ([portal.azure.com](https://portal.azure.com)) の Intune ダッシュボードでは、[Azure Portal にある Intune の各機能](what-is-microsoft-intune.md)を確認できます。
 - Office 365 管理センター ([portal.office.com](https://portal.office.com)) では、ユーザーの追加と管理ができます (Azure Active Directory を使用していない場合)。 また、課金やサポートなど、アカウントのその他の要素を管理することもできます。
 - クラシック Intune 管理コンソール ([manage.microsoft.com](https://manage.microsoft.com)) では、まだ Azure に追加されていない機能を確認できます。
@@ -142,9 +143,9 @@ Intune から Office 365 管理センターに戻るには、ブラウザーの�
 
 ### <a name="integration-with-other-products"></a>他の製品との統合
 Intune で Azure Active Directory ユーザー アカウントを使用する方法に関するページ:
-- [ID の要件](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
-- [ディレクトリ同期の要件](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
-- [多要素認証の要件](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+- [ID の要件](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
+- [ディレクトリ同期の要件](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
+- [多要素認証の要件](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
-[Intune と System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management) を使用する方法に関するページ
+[Intune と System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management) を使用する方法に関するページ
 

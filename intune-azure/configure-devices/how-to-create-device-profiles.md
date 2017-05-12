@@ -15,10 +15,11 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 17c5649e7ece5becd17e8ef9a74d748b6202693f
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 74a905ed2ba9ec04ae14df96fcd3f6b6caf1241c
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -39,16 +40,16 @@ ms.lasthandoff: 03/17/2017
     - **[プラットフォーム]** - 作成するプロファイルのプラットフォームの種類を選択します。
     - **[プロファイルの種類]** - 作成するプロファイルの種類を選択します。 選択可能な種類の一覧は、選択したプラットフォームによって異なります。
     - **[設定]** - プロファイルの種類ごとの設定に関する情報については、次のトピックを参照してください。
-        -  [デバイス機能設定](/intune-azure/configure-devices/how-to-configure-device-features)
-        -  [デバイスの制限設定](/intune-azure/configure-devices/how-to-configure-device-restrictions)
-        -  [電子メールの設定](/intune-azure/configure-devices/how-to-configure-email-settings)
-        -  [VPN 設定](/intune-azure/configure-devices/how-to-configure-vpn-settings)
-        -  [Wi-Fi 設定](/intune-azure/configure-devices/how-to-configure-wi-fi-settings)
-        -  [Windows 10 エディションのアップグレード設定](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade)
-        -  [証明書の設定](/intune-azure/configure-devices/how-to-configure-certificates)
-        -  [Windows 情報保護の設定](/intune-azure/configure-devices/how-to-configure-windows-information-protection)
-        -  [教育設定](/intune-azure/configure-devices/how-to-configure-education-settings)
-        -  [カスタム設定](/intune-azure/configure-devices/how-to-configure-custom-settings)
+        -  [デバイス機能設定](how-to-configure-device-features.md)
+        -  [デバイスの制限設定](how-to-configure-device-restrictions.md)
+        -  [電子メールの設定](how-to-configure-email-settings.md)
+        -  [VPN 設定](how-to-configure-vpn-settings.md)
+        -  [Wi-Fi 設定](how-to-configure-wi-fi-settings.md)
+        -  [Windows 10 エディションのアップグレード設定](how-to-configure-windows-10-edition-upgrade.md)
+        -  [証明書の設定](how-to-configure-certificates.md)
+        -  [Windows 情報保護の設定](how-to-configure-windows-information-protection.md)
+        -  [教育設定](how-to-configure-education-settings.md)
+        -  [カスタム設定](how-to-configure-custom-settings.md)
 
     ![デバイス プロファイルの作成](./media/create-device-profile.png)
 4. 設定の構成が完了したら、**[プロファイルを作成します]** ブレードで、**[作成]** を選択します。
@@ -58,5 +59,5 @@ ms.lasthandoff: 03/17/2017
 
 
 ### <a name="next-steps"></a>次のステップ
-デバイス プロファイルを割り当てる方法については、[Microsoft Intune でデバイス プロファイルを割り当てる方法](/intune-azure/configure-devices/how-to-assign-device-profiles)に関する記事を参照してください。
+デバイス プロファイルを割り当てる方法については、[Microsoft Intune でデバイス プロファイルを割り当てる方法](how-to-assign-device-profiles.md)に関する記事を参照してください。
 

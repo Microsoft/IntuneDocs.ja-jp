@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: 5e2516611b933bb9c74c2b8dc973f85e1d82237f
-ms.lasthandoff: 03/11/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e825d47860924de1350299c8998d958ed68c0418
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -54,9 +55,9 @@ Windows Update for Business を使用することで、デバイスのグルー�
 
     ![診断と使用状況データの Windows 設定](./media/telemetry-basic.png)
 
-    この設定は手動で構成できます。または Windows 10 以降向けの Intune デバイスの制限プロファイルを使用することもできます。 これを行うには、設定 **[全般]**  >  **[診断データの送信]** を**基本**以上に設定します。 デバイスのプロファイルについて詳しくは、「[Microsoft Intune でデバイスの制限設定を構成する方法](/intune-azure/configure-devices/how-to-configure-device-restrictions)」をご覧ください。
+    この設定は手動で構成できます。または Windows 10 以降向けの Intune デバイスの制限プロファイルを使用することもできます。 これを行うには、設定 **[全般]**  >  **[診断データの送信]** を**基本**以上に設定します。 デバイスのプロファイルについて詳しくは、「[Microsoft Intune でデバイスの制限設定を構成する方法](how-to-configure-device-restrictions.md)」をご覧ください。
 
-- 従来の Intune 管理コンソールには、ソフトウェア更新プログラムの動作を制御する&4; つの設定があります。 これらの設定は、Windows 10 Desktop および Mobile デバイスの全般的な構成ポリシーの一部です。
+- 従来の Intune 管理コンソールには、ソフトウェア更新プログラムの動作を制御する 4 つの設定があります。 これらの設定は、Windows 10 Desktop および Mobile デバイスの全般的な構成ポリシーの一部です。
     - **自動更新を直ちにインストールすることを許可する**
     - **プレリリース機能を有効にする**
     - **インストールを実行する日**
@@ -94,7 +95,7 @@ Windows Update for Business を使用することで、デバイスのグルー�
     例:  
     **サービス ブランチが CB に設定され、遅延期間が 30 日の場合**: 機能更新プログラム X が Windows Update で 1 月に CB として公開されるとします。 デバイスは 2 月になるまで (30 日後まで) 更新プログラムを受信しません。
 
-    **サービス ブランチが CBB に設定され、遅延期間が 30 日の場合**: 機能更新プログラム X が Windows Update で 1 月に CB として公開されるとします。 4 か月後の&4; 月に、機能更新プログラム X が CBB にリリースされたとします。 デバイスは、この CBB リリースの 30 日後に機能更新プログラムを受信し、5 月に更新されます。
+    **サービス ブランチが CBB に設定され、遅延期間が 30 日の場合**: 機能更新プログラム X が Windows Update で 1 月に CB として公開されるとします。 4 か月後の 4 月に、機能更新プログラム X が CBB にリリースされたとします。 デバイスは、この CBB リリースの 30 日後に機能更新プログラムを受信し、5 月に更新されます。
 
     - **配信の最適化** - デバイスが Windows 更新プログラムをダウンロードする方法を選択します。 詳しくは、「[DeliveryOptimization/DEDownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode)」をご覧ください。
 8. 完了したら、**[OK]** をクリックして、**[Create Update Ring (更新プログラム リングの作成)]** ブレードで **[作成]** をクリックします。

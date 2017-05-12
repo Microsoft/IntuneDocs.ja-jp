@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 195a7333e09f3a269b5ff10c51e0cfb3e7d10bdc
-ms.openlocfilehash: 3e363183f3ac33e4cde1060fb141f5e4eb7d566c
-ms.lasthandoff: 04/04/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 45b00ac17232aad7c404c7455fd10ca5cf8cb3f9
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -49,13 +50,13 @@ ms.lasthandoff: 04/04/2017
     - **[アップロード アイコン]** - アプリに関連付けるアイコンをアップロードします。 ユーザーが会社のポータルを参照するとき、アプリにこのアイコンが表示されます。
 8. 構成が終了したら、**[アプリの追加]** ブレードで、**[保存]** を選択します。
 
-作成したアプリはアプリの一覧に表示され、選択したグループに割り当てることができるようになります。 詳細については、[アプリをグループに割り当てる方法](/intune-azure/manage-apps/deploy-apps)に関するページを参照してください。
+作成したアプリはアプリの一覧に表示され、選択したグループに割り当てることができるようになります。 詳細については、[アプリをグループに割り当てる方法](deploy-apps.md)に関するページを参照してください。
 
-## <a name="manually-deploy-windows-10-company-portal-app"></a>Windows 10 ポータル サイト アプリの手動展開
-エンド ユーザーは Windows ストアからポータル サイト アプリをインストールすることで、デバイスを管理し、アプリをインストールすることができます。 ただし、ビジネスでポータル サイト アプリを展開する必要がある場合は、Intune をビジネス向け Windows ストアと統合していない場合でも、Intune から直接 Windows 10 ポータル サイト アプリを手動で展開できます。
+## <a name="manually-assign-windows-10-company-portal-app"></a>Windows 10 ポータル サイト アプリの手動割り当て
+エンド ユーザーは Windows ストアからポータル サイト アプリをインストールすることで、デバイスを管理し、アプリをインストールすることができます。 ただし、ビジネスでポータル サイト アプリを割り当てる必要がある場合は、Intune をビジネス向け Windows ストアと統合していない場合でも、Intune から直接 Windows 10 ポータル サイト アプリを手動で割り当てることができます。
 
  > [!NOTE]
- > このオプションでは、アプリの更新プログラムがリリースされるたびに、手動更新を展開する必要があります。
+ > このオプションでは、アプリの更新プログラムがリリースされるたびに、手動更新を割り当てる必要があります。
 
 1. [ビジネス向け Windows ストア](https://www.microsoft.com/business-store)のアカウントにログインし、ポータル サイト アプリの**オフライン ライセンス** バージョンを取得します。  
 2. アプリが取得されたら、**[インベントリ]** ページでアプリを選択します。  
@@ -69,8 +70,8 @@ ms.lasthandoff: 04/04/2017
   ![APPXBUN ファイルと共に保存された依存関係フォルダーのイメージ](../media/Win10CP-Dependencies-save.png)
   2. 依存関係フォルダーに 9 つの依存関係パッケージを配置します。  
   依存関係がこの形式で配置されていないと、Intune はパッケージのアップロード時にこれらを認識、アップロードすることができます、次のエラーでアップロードが失敗します。  
-  ![このソフトウェア インストーラーに関する Windows アプリの依存関係がアプリケーション フォルダー内で見つかりませんでした。 このアプリケーションの作成と展開を続行できますが、不明な Windows アプリの依存関係が提供されるまでは実行されません。](../media/Win10CP-error-message.png)
-6. Intune に戻り、ポータル サイト アプリを新しいアプリとしてアップロードします。 これを必要なアプリとして対象の一連のターゲット ユーザーに展開します。  
+  ![このソフトウェア インストーラーに関する Windows アプリの依存関係がアプリケーション フォルダー内で見つかりませんでした。 このアプリケーションの作成と割り当てを続行できますが、不明な Windows アプリの依存関係が提供されるまでは実行されません。](../media/Win10CP-error-message.png)
+6. Intune に戻り、ポータル サイト アプリを新しいアプリとしてアップロードします。 これを必要なアプリとして対象の一連のターゲット ユーザーに割り当てます。  
 
 Intune がユニバーサル アプリ用に依存関係をどのように処理するかについて詳しくは、「[Deploying an appxbundle with dependencies via Microsoft Intune MDM (Microsoft Intune MDM 経由で依存関係を使用して appxbundle を展開する)](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)」ご覧ください。  
 
@@ -78,20 +79,20 @@ Intune がユニバーサル アプリ用に依存関係をどのように処理
 貴社のユーザーがストアから Windows 8.1 または Windows Phone 8.1 ポータル サイト アプリを既にインストールしている場合は、お客様またはお客様のユーザーが特に操作を行わなくても新しいバージョンに自動的に更新されます。 更新が実行されない場合は、デバイスでストア アプリの自動更新を有効にしているかどうかをユーザーに確認してください。   
 
 ### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>サイドロードした Windows 8.1 のポータル サイト アプリを Windows 10 のポータル サイト アプリにアップグレードする方法
-推奨される移行パスとして、展開アクションを "アンインストール" に設定して、Windows 8.1 ポータル サイト アプリの展開を削除します。 これが完了したら、上記のいずれかのオプションを使用して、Windows 10 ポータル サイト アプリを展開できるようになります。  
+推奨される移行パスとして、割り当てアクションを "アンインストール" に設定して、Windows 8.1 ポータル サイト アプリの割り当てを削除します。 これが完了したら、上記のいずれかのオプションを使用して、Windows 10 ポータル サイト アプリを割り当てできるようになります。  
 
-アプリをサイドロードする必要があり、Symantec 証明書で署名せずに Windows 8.1 ポータル サイトを展開した場合は、上の Intune セクションから直接、展開に関する手順に従ってアップグレードを完了します。
+アプリをサイドロードする必要があり、Symantec 証明書で署名せずに Windows 8.1 ポータル サイトを割り当てた場合は、上の Intune セクションから直接、割り当てに関する手順に従ってアップグレードを完了します。
 
-アプリをサイドロードする必要があり、Symantec コード署名証明書で Windows 8.1 ポータル サイトに署名し展開した場合は、以下のセクションの手順に従ってください。  
+アプリをサイドロードする必要があり、Symantec コード署名証明書で Windows 8.1 ポータル サイトに署名し割り当てた場合は、以下のセクションの手順に従ってください。  
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>署名およびサイドロードした Windows Phone 8.1 ポータル サイト アプリまたは Windows 8.1 ポータル サイト アプリを Windows 10 ポータル サイト アプリにアップグレードする方法
-推奨される移行パスとして、展開アクションを "アンインストール" に設定して、Windows Phone 8.1 ポータル サイト アプリまたは Windows 8.1 ポータル サイト アプリの既存の展開を削除します。 これが完了したら、通常どおり Windows 10 ポータル サイト アプリを展開できるようになります。  
+推奨される移行パスとして、割り当てアクションを "アンインストール" に設定して、Windows Phone 8.1 ポータル サイト アプリまたは Windows 8.1 ポータル サイト アプリの既存の割り当てを削除します。 これが完了したら、通常どおり Windows 10 ポータル サイト アプリを割り当てできるようになります。  
 
 これ以外の場合は、アップグレードのパスが確実に考慮されるように Windows 10 ポータル サイト アプリを適切に更新し、署名する必要があります。  
 
-この方法で Windows 10 ポータル サイト アプリに署名し展開した場合、ストアで入手可能になった新しいアプリの更新プログラムごとにこのプロセスを繰り返す必要があります。 ストアが更新されたときに、アプリは自動的に更新されません。  
+この方法で Windows 10 ポータル サイト アプリに署名し割り当てた場合、ストアで入手可能になった新しいアプリの更新プログラムごとにこのプロセスを繰り返す必要があります。 ストアが更新されたときに、アプリは自動的に更新されません。  
 
-この場合のアプリへの署名および展開方法は、次のとおりです。
+この場合のアプリへの署名および割り当て方法は、次のとおりです。
 
 1. Microsoft Intune Windows 10 ポータル サイト アプリの署名スクリプトを [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) からダウンロードします。  このスクリプトでは、Windows SDK for Windows 10 をホスト コンピューターにインストールする必要があります。 Windows SDK for Windows 10 をダウンロードするには、[https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) にアクセスします。
 2. 上で説明されているように、ビジネス向け Windows ストアから Windows 10 ポータル サイト アプリをダウンロードします。  
@@ -105,5 +106,5 @@ Intune がユニバーサル アプリ用に依存関係をどのように処理
 |PfxPassword| Symantec エンタープライズ モバイル コード署名証明書のパスワード |
 |PublisherId |エンタープライズの発行者 ID 指定しない場合、Symantec エンタープライズ モバイル コード署名証明書の 'Subject' フィールドが使用されます。|
 |SdkPath | Windows SDK for Windows 10 のルート フォルダーへのパス この引数は省略可能で、既定値は ${env:ProgramFiles(x86)}\Windows Kits\10 です。|
-実行が終了したら、スクリプトにより Windows 10 ポータル サイト アプリの署名されたバージョンが出力されます。 その後、アプリの署名されたバージョンを Intune 経由で LOB アプリとして展開できます。これにより、現在展開されているバージョンがこの新しいアプリにアップグレードされます。  
+実行が終了したら、スクリプトにより Windows 10 ポータル サイト アプリの署名されたバージョンが出力されます。 その後、アプリの署名されたバージョンを Intune 経由で LOB アプリとして割り当てることができます。これにより、現在割り当てられているバージョンがこの新しいアプリにアップグレードされます。  
 

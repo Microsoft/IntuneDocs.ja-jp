@@ -1,29 +1,29 @@
 ---
-title: "iOS の基幹業務アプリを Intune に追加する方法"
+title: "Windows の基幹業務アプリを Intune に追加する方法 | Microsoft Docs"
 titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: iOS の基幹業務アプリを Intune に追加する方法について説明します。"
+description: "Intune Azure プレビュー: Windows の基幹業務アプリを Intune に追加する方法について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 05/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
+ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
-ms.openlocfilehash: 70f0b575c92fb000f267e8b2585aff4482c5518c
+ms.openlocfilehash: deafb0a37609b957a0cd4fa0880eeb5ff40314bc
 ms.contentlocale: ja-jp
 ms.lasthandoff: 05/10/2017
 
 ---
 
-# <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>iOS の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法
+# <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Windows の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -39,8 +39,8 @@ ms.lasthandoff: 05/10/2017
 
 ## <a name="step-2---configure-the-app-package-file"></a>手順 2 - アプリのパッケージ ファイルを構成する
 
-1. **[アプリの追加]** ブレードで、**アプリケーション パッケージ** ファイルを選択します。
-2. **[アプリケーション パッケージ** ファイル] ブレードで、[参照] ボタンを選択し、拡張子 **.ipa** が付いた iOS インストール ファイルを選択します。
+1. **[アプリの追加]** ブレードで、**[アプリのパッケージ** ファイル] を選択します。
+2. **[アプリのパッケージ ファイル]** ブレードで、参照ボタンを選択し、拡張子 **.msi** が付いた Windows インストール ファイルを選択します (他の種類のインストール ファイルはサポートされません)。
 3. 終了したら **[OK]** を選択します。
 
 
@@ -51,11 +51,11 @@ ms.lasthandoff: 05/10/2017
     - **名前** - アプリの名前を入力します。この名前は会社のポータルに表示されます。 使用するアプリ名はすべて一意にします。 同じアプリ名が 2 つ存在する場合、会社のポータルではそのいずれかのみがユーザーに表示されます。
     - **説明** - アプリの説明を入力します。 これは会社のポータルでユーザーに表示されます。
     - **発行元** - アプリの発行元の名前を入力します。
-    - **[オペレーティング システムの最小要件]** - アプリをインストールできる最小限のオペレーティング システム バージョンを一覧から選択します。 これよりも前のオペレーティング システムがアプリの割り当て先デバイスにインストールされている場合、そのアプリはインストールされません。
     - **[カテゴリ]** - 1 つまたは複数の組み込みアプリ カテゴリ、または作成したカテゴリを選択します。 会社のポータルを閲覧するとき、ユーザーにとってアプリを探すのが簡単になります。
     - **[会社のポータルでおすすめアプリとして表示します]** - ユーザーがアプリを探す際に、会社のポータルのメイン ページでアプリを目立つように表示します。
     - **[情報 URL]** - 必要に応じて、このアプリに関する情報が含まれる Web サイトの URL を入力します。 この URL は会社のポータルでユーザーに表示されます。
     - **[プライバシー URL]** - 必要に応じて、このアプリのプライバシー情報が含まれる Web サイトの URL を入力します。 この URL は会社のポータルでユーザーに表示されます。
+    - **[コマンド ライン引数]** - 必要に応じて、実行時に .msi ファイルに適用するコマンド ライン引数を入力します (**/q** など)。
     - **[開発者]** - 必要に応じて、アプリ開発者の名前を入力します。
     - **[所有者]** - 必要に応じて、このアプリの所有者の名前 ("**人事部**" など) を入力します。
     - **[メモ]** - このアプリに関連付けるメモを入力します。

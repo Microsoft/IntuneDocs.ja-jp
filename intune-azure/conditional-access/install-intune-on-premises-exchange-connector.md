@@ -15,10 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: d112f453302361ac95eb2c44d7440a72d212cc4a
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 8f31db9ba2c57277c90315a7a395cae8012b37f0
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -28,7 +29,7 @@ ms.lasthandoff: 02/18/2017
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
 
-モバイル デバイスのメールボックスをホストする Exchange Server と Microsoft Intune が通信できるように接続をセットアップするには、Intune 管理コンソールで内部設置型 Exchange Connector をダウンロードして構成する必要があります。 Intune は、サブスクリプションごとに任意の種類の Exchange Connector 接続を&1; つだけサポートします。
+モバイル デバイスのメールボックスをホストする Exchange Server と Microsoft Intune が通信できるように接続をセットアップするには、Intune 管理コンソールで内部設置型 Exchange Connector をダウンロードして構成する必要があります。 Intune は、サブスクリプションごとに任意の種類の Exchange Connector 接続を 1 つだけサポートします。
 
 ## <a name="on-premises-exchange-connector-requirements"></a>内部設置型 Exchange Connector の要件
 以下の表に、内部設置型 Exchange Connector をインストールするコンピューターの要件を示します。
@@ -37,7 +38,7 @@ ms.lasthandoff: 02/18/2017
 |---------------|--------------------|
 |Operating systems|Intune は、Windows Server 2008 SP2 64 ビット、Windows Server 2008 R2、Windows Server 2012、または Windows Server 2012 R2 の任意のエディションを実行しているコンピューター上の内部設置型 Exchange Connector をサポートします。<br /><br />Server Core インストールでは、Connector はサポートされません。|
 |Microsoft Exchange|内部設置型 Connector には、Microsoft Exchange 2010 SP1 以降または従来の Exchange Online Dedicated が必要です。 Exchange Online Dedicated 環境が**新しい**構成か**従来の**構成かを確認するには、アカウント マネージャーに問い合わせてください。|
-|モバイル デバイス管理機関| [モバイル デバイス管理機関を Intune に設定します](https://docs.microsoft.com/en-us/intune/deploy-use/prerequisites-for-enrollment#step-2-set-mdm-authority)。|
+|モバイル デバイス管理機関| [モバイル デバイス管理機関を Intune に設定します](https://docs.microsoft.com/intune/deploy-use/prerequisites-for-enrollment#step-2-set-mdm-authority)。|
 |ハードウェア|コネクタをインストールするコンピューターには、1.6 GHz の CPU と 2 GB の RAM と 10 GB の空きディスク容量が必要です。|
 |Active Directory の同期|Connector を使用して Intune を Exchange Server に接続するには、[Active Directory の同期をセットアップ](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3)して、ローカル ユーザーとセキュリティ グループが Azure Active Directory のインスタンスと同期されるようにする必要があります。|
 |その他のソフトウェア|コネクタをホストするコンピューターに、Microsoft .NET Framework 4.5 および Windows PowerShell 2.0 の完全インストールがインストールされている必要があります。|
@@ -77,7 +78,7 @@ Intune Exchange Connector が使用する Active Directory ユーザー アカ�
 > オンプレミス Exchange Connector フォルダー内のファイルの名前を変更したり、ファイルを移動したりしないでください。 フォルダーの内容を移動したり、名前を変更したりすると、インストールが失敗します。
 
 ## <a name="install-and-configure-the-intune-on-premises-exchange-connector"></a>Intune の内部設置型 Exchange Connector のインストールと構成
-次の手順を実行して、Intune の内部設置型 Exchange Connector をインストールします。 内部設置型 Exchange Connector は、Intune サブスクリプション&1; つで&1; 台のコンピューターに&1; 回だけインストールできます。 内部設置型 Exchange Connector をもう&1; つ構成しようとすると、新しい接続で元の接続が置き換えられます。
+次の手順を実行して、Intune の内部設置型 Exchange Connector をインストールします。 内部設置型 Exchange Connector は、Intune サブスクリプション 1 つで 1 台のコンピューターに 1 回だけインストールできます。 内部設置型 Exchange Connector をもう 1 つ構成しようとすると、新しい接続で元の接続が置き換えられます。
 
 1.  内部設置型 Connector のサポートされているオペレーティング システムで、**Exchange_Connector_Setup.zip** を安全な場所に抽出します。
 

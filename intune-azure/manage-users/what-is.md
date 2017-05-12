@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 03860275184824e72c94937ef3bb32c76cfef933
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 41de68c6962056164e8ac62aea657a74dd9b229e
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -29,7 +30,7 @@ ms.lasthandoff: 02/18/2017
 
 Azure Portal で Intune を初めて使用する場合は、Intune のグループの作成が不要になったことに注意してください。 Intune では、使用している他の多くのアプリケーションと同じように Azure AD グループが使用されます。
 
-Azure AD でグループを使用する方法の詳細については、「[Azure Active Directory グループによるリソースへのアクセス管理](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-manage-groups)」を参照してください。
+Azure AD でグループを使用する方法の詳細については、「[Azure Active Directory グループによるリソースへのアクセス管理](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)」を参照してください。
 
 [Azure Portal](https://portal.azure.com) でグループを管理するには、**Intune** を検索し、**[ユーザーの管理]** を選択します。そうすると、**[ユーザーとグループ]** ワークロードが表示されます。ここでは次の操作を実行できます。
 
@@ -43,5 +44,5 @@ Azure AD でグループを使用する方法の詳細については、「[Azur
 
 ## <a name="next-step"></a>次の手順
 
-[グループの概要](/intune-azure/manage-users/get-started-with-groups)
+[グループの概要](../manage-users/get-started-with-groups.md)
 
