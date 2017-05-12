@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/19/2017
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: 1c13d39b8b193c56439602a6e9d9a34e547aef81
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: ff43a0be6ebc124bb7e52e5be31e89985ce32166
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -53,8 +54,8 @@ iOS アプリの複数のライセンスを購入するには、[ビジネス向
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[アプリの管理]** を選択します。
-1.  **[アプリの管理]** ワークロードで、**[セットアップ]** > **[iOS VPP トークン]** の順に選択します。
+3. **[Intune]** ブレードで、**[モバイル アプリ]** を選択します。
+1.  **[Mobile Apps]** ワークロードで、**[セットアップ]** > **[iOS VPP トークン]** の順に選択します。
 2.  VPP トークンの一覧ブレードで、**[追加]** をクリックします。
 3.  [新しい VPP トークン] ブレードで、次の情報を指定します。
     - **[VPP トークン ファイル]** - サインアップしていない場合は、ビジネス向け Volume Purchase Program または教育向け Volume Purchase Program にサインアップします。 サインアップした後、アカウントの Apple VPP トークンをダウンロードし、ここで選択します。
@@ -69,7 +70,7 @@ iOS アプリの複数のライセンスを購入するには、[ビジネス向
 
 ## <a name="to-assign-a-volume-purchased-app"></a>ボリューム購入アプリを割り当てるには
 
-1. **[アプリの管理]** ワークロードで、**[管理]** > **[ライセンスされたアプリ]** の順に選択します。
+1. **[Mobile Apps]** ワークロードで、**[管理]** > **[ライセンスされたアプリ]** の順に選択します。
 2. アプリの一覧ブレードで、割り当てるアプリを選択し、**[...]** > **[グループの割り当て]** の順に選択します。
 3. **[<*アプリ名*> - 割り当てられたグループ]** ブレードで、**[管理]** > **[割り当てられたグループ]** の順に選択します。
 4. **[グループの割り当て]** を選択し、**[グループの選択]** ブレードで、アプリを割り当てる Azure AD ユーザーまたはデバイス グループを選択します。
