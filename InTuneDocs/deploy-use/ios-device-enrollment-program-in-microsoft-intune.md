@@ -14,10 +14,11 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: ab91737586103ecc6f279daf6a55eb8988ad991a
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c8715f96f532ee6bacda231e1147d03226ecbb48
+ms.openlocfilehash: 81f5b33bc344cd6ed305d72178c7eb4cac315a13
+ms.contentlocale: ja-jp
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -30,7 +31,7 @@ Microsoft Intune は、"無線" で Device Enrollment Program (DEP) を通じて
 
 >[!NOTE]
 >DEP 登録は、[デバイス登録マネージャー](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)の方法と同時に使用することはできません。
->また、( ポータル サイト アプリを使用して) iOS デバイスを登録し、デバイスのシリアル番号がインポートされて DEP プロファイルが割り当てられると、このデバイスは Intune から登録が解除されます。
+>また、ユーザーが ポータル サイト アプリなどを使用して iOS デバイスを登録し、デバイスのシリアル番号がインポートされて DEP プロファイルが割り当てられると、このデバイスは Intune から登録が解除されます。
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>Apple DEP 管理を使用して iOS デバイスを登録する場合の前提条件
 
@@ -46,7 +47,7 @@ Microsoft Intune は、"無線" で Device Enrollment Program (DEP) を通じて
 
 ### <a name="get-an-encryption-key"></a>暗号化キーを取得する
 
-1. 管理者ユーザーとして、[Microsoft Intune の管理コンソール](http://manage.microsoft.com)を開き、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[iOS]** &gt; **[デバイス登録プログラム]** の順に移動して、**[暗号化キーのダウンロード]** を選択します。
+1. 管理者ユーザーとして、[Microsoft Intune の管理コンソール](https://manage.microsoft.com)を開き、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[iOS]** &gt; **[デバイス登録プログラム]** の順に移動して、**[暗号化キーのダウンロード]** を選択します。
 
 2. 暗号化キー (.pem) ファイルをローカルに保存します。 .pem ファイルは、Apple Device Enrollment Program ポータルから信頼関係証明書を要求するために使用します。
 
@@ -68,13 +69,13 @@ Microsoft Intune は、"無線" で Device Enrollment Program (DEP) を通じて
 
 ### <a name="add-the-dep-token-to-intune"></a>Intune に DEP トークンを追加する
 
-1. [Microsoft Intune 管理コンソール](http://manage.microsoft.com)で、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[iOS]** &gt; **[デバイス登録プログラム]** の順に移動します。
+1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[iOS]** &gt; **[デバイス登録プログラム]** の順に移動します。
 
 2. **[DEP トークンをアップロードする]** を選択します。 証明書 (.p7m) ファイルを**参照**し、**Apple ID** を入力して、**[アップロード]** を選択します。
 
 ### <a name="add-the-corporate-device-enrollment-policy"></a>業務用デバイスの登録ポリシーを追加する
 
-1. [Microsoft Intune 管理コンソール](http://manage.microsoft.com)で、**[ポリシー]** &gt; **[業務用デバイスの登録]** の順に選択し、**[追加]** を選択します。
+1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[業務用デバイスの登録]** の順に選択し、**[追加]** を選択します。
 
 2. **[名前]** や **[説明]** などの **[全般]** の各項目を入力し、次のように、プロファイルに割り当てられているデバイスにユーザー アフィニティがあるか、グループに属するかを指定します。
 
@@ -122,7 +123,7 @@ Microsoft Intune は、"無線" で Device Enrollment Program (DEP) を通じて
 
 ### <a name="assign-the-profile-to-devices"></a>デバイスにプロファイルを割り当てる
 
-1. [Microsoft Intune 管理コンソール](http://manage.microsoft.com)で、**[ポリシー]** &gt; **[業務用デバイスの登録]** の順に移動し、**[割り当て]** を選択します。
+1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[業務用デバイスの登録]** の順に移動し、**[割り当て]** を選択します。
 
 2. 作成したプロファイルを割り当てるデバイスを選択します。 **[すべてのデバイス]** を選択することも、特定のデバイスを選択することもできます。その後、**[追加]** を選択します。
 
@@ -143,9 +144,9 @@ Microsoft Intune は、"無線" で Device Enrollment Program (DEP) を通じて
 
 この手順では、デバイスを Apple DEP サービスと同期し、そのデバイスが Intune コンソールに表示されるようにします。
 
-1. 管理者ユーザーとして、[Microsoft Intune の管理コンソール](http://manage.microsoft.com)を開き、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[iOS]** &gt; **[デバイス登録プログラム]** の順に移動して、**[今すぐ同期]** を選択します。 同期要求が Apple に送信されます。
+1. 管理者ユーザーとして、[Microsoft Intune の管理コンソール](https://manage.microsoft.com)を開き、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[iOS]** &gt; **[デバイス登録プログラム]** の順に移動して、**[今すぐ同期]** を選択します。 同期要求が Apple に送信されます。
 
-2. 同期後に DEP 管理対象デバイスを表示するには、[Microsoft Intune 管理コンソール](http://manage.microsoft.com)で、**[グループ]** &gt; **[すべてのデバイス]** &gt; **[会社の事前登録済みデバイス]** &gt; **[iOS シリアル番号を使用]** の順に移動します。 デバイスの電源を入れ、セットアップ アシスタントを実行して、デバイスを登録するまで、**[iOS シリアル番号を使用]** ワークスペースには管理対象デバイスの **[状態]** が "未接続" と表示されます。
+2. 同期後に DEP 管理対象デバイスを表示するには、[Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[グループ]** &gt; **[すべてのデバイス]** &gt; **[会社の事前登録済みデバイス]** &gt; **[iOS シリアル番号を使用]** の順に移動します。 デバイスの電源を入れ、セットアップ アシスタントを実行して、デバイスを登録するまで、**[iOS シリアル番号を使用]** ワークスペースには管理対象デバイスの **[状態]** が "未接続" と表示されます。
 
    許容される DEP トラフィックについての Apple の規約に準拠するため、Intune では次の制限が課せられます。
 
@@ -162,7 +163,11 @@ Microsoft Intune は、"無線" で Device Enrollment Program (DEP) を通じて
 
 ## <a name="changes-to-intune-group-assignments"></a>Intune グループ割り当ての変更
 
-2017 年 4 月から、デバイス グループの管理は Azure Active Directory に移行されます。 Azure Active Directory グループに切り替えた後は、グループの割り当ては企業の登録プロファイルのオプションに表示されません。 この変更は数か月間にわたりロールアウトされるため、変更はすぐに表示されないことがあります。 新しいポータルに移動した後、会社の登録プロファイルの名前に基づいて動的なデバイス グループの割り当てを定義できます。 業務用デバイスの登録プロファイルで事前に割り当てられている Intune デバイス グループごとに、Azure Active Directory デバイス グループへの移行時に、業務用デバイスの登録プロファイルの名前に基づいて、AAD に対応する動的デバイス グループが作成されます。 このプロセスにより、デバイス グループに既に割り当てられているデバイスが、ポリシーおよびデプロイされたアプリと共にグループに自動的に登録されることが保証されます。 会社所有の iOS デバイスの登録に与える影響の詳細については、「[Changes to Automatic Grouping for Corporate Pre-enrolled iOS Devices](https://blogs.technet.microsoft.com/intunesupport/2017/04/19/changes-to-automatic-grouping-for-corporate-pre-enrolled-ios-devices/)(会社の事前登録済み iOS デバイスに対する自動グループ化の変更)」を参照してください。
+2017 年 4 月から、デバイス グループの管理は Azure Active Directory に移行されます。 Azure Active Directory グループに切り替えた後は、グループの割り当ては企業の登録プロファイルのオプションに表示されません。 この変更は数か月間にわたりロールアウトされるため、変更はすぐに表示されないことがあります。 新しいポータルに移動した後、会社の登録プロファイルの名前に基づいて動的なデバイス グループの割り当てを定義できます。
+
+移行時に、業務用デバイスの登録プロファイルで事前に割り当てられている Intune デバイス グループごとに、業務用デバイスの登録プロファイルの名前に基づいて、Azure AD に対応する動的デバイス グループが作成されます。 新しいプロファイル名のフォーマットは、*EnrollmentProfile:&lt;関連付けられているプロファイルの名前&gt;* です。 このプロセスにより、デバイス グループに既に割り当てられているデバイスが、ポリシーおよびデプロイされたアプリと共にグループに自動的に登録されることが保証されます。
+
+この自動グループ作成は、グループの移行中に 1 回だけ実行されます。 移行後は、Intune 管理者が Azure Portal を使用してグループを作成する必要があります。 会社所有の iOS デバイスの登録に与える影響の詳細については、「[Changes to Automatic Grouping for Corporate Pre-enrolled iOS Devices](https://blogs.technet.microsoft.com/intunesupport/2017/04/19/changes-to-automatic-grouping-for-corporate-pre-enrolled-ios-devices/)(会社の事前登録済み iOS デバイスに対する自動グループ化の変更)」を参照してください。
 
 [Azure Active Directory グループの詳細について学習する](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)こともできます。
 
