@@ -15,10 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
-ms.openlocfilehash: a0950e3b816128ccd042620eb1344f908c915a21
-ms.lasthandoff: 03/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 49c06de8ae4b04a3f6ea81cc17bc303b842374a5
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -75,7 +76,7 @@ ms.lasthandoff: 03/10/2017
   - **[中]**: デバイスに存在する脅威が低レベルまたは中レベルの場合、デバイスは準拠として評価されます。 デバイスで高レベルの脅威が検出された場合は、非準拠と判定されます。
   - **[高]**: 最も安全性の低い状態です。 基本的に、すべての脅威レベルが許容されます。 レポート目的でこのソリューションを利用する場合であれば、便利かもしれません。
 
-詳細については、「[コンプライアンス ポリシーでデバイスの脅威防御ルールを有効にする](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy)」を参照してください。
+詳細については、「[コンプライアンス ポリシーでデバイスの脅威防御ルールを有効にする](https://docs.microsoft.com/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy)」を参照してください。
 
 ## <a name="system-security-settings"></a>システム セキュリティ設定
 

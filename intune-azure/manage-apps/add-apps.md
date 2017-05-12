@@ -1,12 +1,12 @@
 ---
-title: "アプリを Microsoft Intune に追加する方法"
+title: "アプリを Microsoft Intune に追加する方法 | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: この手順では、Intune にアプリを追加して、ユーザーとデバイスに割り当てる準備を行います。 "
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: d85544bdfaa3a369e1d2d03e5454ff7aa2d75467
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 529a3e91e1f86129de77df0529f48a42f86a6521
+ms.openlocfilehash: 69ae0926631edc00cc2dc12be559d366e1623140
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/11/2017
 
 ---
 
@@ -32,27 +33,30 @@ Intune では、以下の種類のアプリを追加して割り当てること�
 
 ![Intune でサポートされているアプリの種類](./media/app-types.png)
 
-次のプラットフォームがサポートされます。 各種のアプリを追加する方法の詳細については、次のいずれかのトピックをクリックします。
+次のプラットフォームがサポートされます。
 
-- [Android ストア アプリ](/intune-azure/manage-apps/android-store-app)
-- [Android LOB アプリ](/intune-azure/manage-apps/android-lob-app)
-- [iOS ストア アプリ](/intune-azure/manage-apps/ios-store-app)
-- [iOS LOB アプリ](/intune-azure/manage-apps/ios-lob-app)
-- [Web アプリ (すべてのプラットフォーム)](/intune-azure/manage-apps/web-app)
-- [Windows Phone 8.1 ストア アプリ](/intune-azure/manage-apps/windows-phone-8-1-store-app)
-- [Windows ストア アプリ](/intune-azure/manage-apps/windows-store-app)
+- Android ストア アプリ
+- Android 基幹業務 (LOB) アプリ
+- iOS ストア アプリ
+- iOS 基幹業務 (LOB) アプリ
+- Web アプリ
+- Windows Phone 8.1 ストア アプリ
+- Windows Phone 基幹業務アプリ (.xap ファイル)
+- Windows ストア アプリ
+- Windows 基幹業務アプリ (.msi ファイルのみ)
 
-さらに、テナントを設定すると、Intune によって一部の Microsoft アプリは自動的に追加されます。 それらの一覧は、このトピックの後のほうで確認できます。
+>[!TIP]
+> 基幹業務 (LOB) アプリは、アプリ ストアからではなく、アプリのインストール ファイルからインストールするアプリです。 たとえば、iOS LOB アプリをインストールするには、アプリケーションのアーカイブ ファイル (拡張子 .ipa) を追加します。 これらは通常、社内で作成したアプリです。
 
 ## <a name="before-you-start"></a>アップグレードを開始する前に
 
 アプリの追加と割り当てを始める前に、次の点を検討してください。
 
-- ストアからアプリを追加し、展開するとき、エンド ユーザーがそのアプリをインストールするには、そのストアのアカウントをエンド ユーザーが用意する必要があります。
-- 展開するアプリまたは項目が、組み込みの iOS アプリに依存する場合があります。 たとえば、iOS ストアからブックを展開する場合は、デバイス上に iBooks アプリが存在する必要があります。 iBooks の組み込みアプリを削除した場合は、Intune を使用してそれを元に戻すことはできません。
+- ストアからアプリを追加して割り当てる場合、エンド ユーザーがそのアプリをインストールするには、そのストアのアカウントをエンド ユーザーが用意する必要があります。
+- 割り当てるアプリまたは項目は、組み込みの iOS アプリに依存する場合があります。 たとえば、iOS ストアからブックを割り当てる場合は、デバイス上に iBooks アプリが存在する必要があります。 iBooks の組み込みアプリを削除した場合は、Intune を使用してそれを元に戻すことはできません。
 
 ## <a name="cloud-storage-space"></a>クラウドの記憶域の容量
-ソフトウェア インストーラーのインストールの種類を使用して作成したすべてのアプリ (たとえば、基幹業務アプリ) は、パッケージ化され、Microsoft Intune クラウドの記憶域にアップロードされます。 Intune の試用版サブスクリプションでは、管理対象のアプリと更新プログラムの保管用として、2 ギガバイト (GB) 分のクラウドの記憶域を使用できます。 完全版のサブスクリプションには、20 GB のストレージ領域が含まれています。
+ソフトウェア インストーラーのインストールの種類を使用して作成したすべてのアプリ (たとえば、基幹業務アプリ) は、パッケージ化され、Intune クラウドの記憶域にアップロードされます。 Intune の試用版サブスクリプションでは、管理対象のアプリと更新プログラムの保管用として、2 ギガバイト (GB) 分のクラウドの記憶域を使用できます。 完全版のサブスクリプションには、20 GB の記憶領域が含まれています。
 
 Intune の追加ストレージは、当初の購入方法を使用して購入できます。  請求書やクレジット カードでお支払いの場合は、[サブスクリプション管理ポータル](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions)をご覧ください。  それ以外の場合は、パートナーまたは営業担当者にお問い合わせください。
 
@@ -68,7 +72,7 @@ Intune の追加ストレージは、当初の購入方法を使用して購入�
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[アプリの管理]** を選択します。
+3. **[Intune]** ブレードで、**[モバイル アプリ]** を選択します。
 4. **[モバイル アプリ]** ワークロードで、**[セットアップ]** > **[アプリのカテゴリ]** の順に選択します。
 5. **[アプリのカテゴリ]** ブレードで、現在のカテゴリの一覧が表示されます。 次の操作のいずれかを選択します。
     - **[カテゴリの作成]** - **[Create category (カテゴリの作成)]** ブレードで、新しいカテゴリの名前を入力します。 名前を入力できる言語は 1 つのみです。Intune では翻訳されません。 完了したら [**作成**] をクリックします。
@@ -105,4 +109,18 @@ Intune の追加ストレージは、当初の購入方法を使用して購入�
 |Outlook グループ|Android|管理対象の Android ストア アプリ|
 |Outlook グループ|iOS|管理対象の iOS ストア アプリ|
 |PowerPoint|iOS|管理対象の iOS ストア アプリ|
+
+## <a name="next-steps"></a>次の手順
+
+次のトピックのいずれかを選択して、各プラットフォーム用のアプリを Intune に追加する方法を確認してください。
+
+- [Android ストア アプリ](android-store-app.md)
+- [Android LOB アプリ](android-lob-app.md)
+- [iOS ストア アプリ](ios-store-app.md)
+- [iOS LOB アプリ](ios-lob-app.md)
+- [Web アプリ (すべてのプラットフォーム)](web-app.md)
+- [Windows Phone 8.1 ストア アプリ](windows-phone-8-1-store-app.md)
+- [Windows Phone LOB アプリ](windows-phone-line-of-business-app.md)
+- [Windows ストア アプリ](windows-store-app.md)
+- [Windows LOB アプリ](windows-line-of-business-app.md)
 

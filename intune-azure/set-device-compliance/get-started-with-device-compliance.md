@@ -15,10 +15,11 @@ ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
-ms.openlocfilehash: 0c0d2f73e48864caabdec6e83c2fdf58db5a0630
-ms.lasthandoff: 03/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: a0fa37130948126ea08e4cc0140d4c326c26782b
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -33,7 +34,7 @@ ms.lasthandoff: 03/10/2017
 - デバイスのコンプライアンス ポリシーの作成を開始するために必要な条件
 - Intune Azure プレビュー ポータルで表示できる項目と実行できる操作 
 
-デバイス コンプライアンスに詳しくない場合、[このトピック](https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance)はデバイス コンプライアンスの概要と組織での利用方法を学ぶのに役立ちます。
+デバイス コンプライアンスに詳しくない場合、[このトピック](what-is-device-compliance.md)はデバイス コンプライアンスの概要と組織での利用方法を学ぶのに役立ちます。
 
 ##  <a name="pre-requisites"></a>前提条件
 
