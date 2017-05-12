@@ -1,12 +1,12 @@
 ---
-title: "Intune で証明書を構成する方法"
+title: "Intune を使用して証明書を構成する方法 | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: Wi-Fi や VPN などの接続をセキュリティで保護するのに役立つ証明書を、Intune を使用して作成し、割り当てる方法について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: 7d1d3c101aaa3832e36a0b9e9369fd1eeb0a6250
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: ecb6a806e7870fd2b1986c4247607c9374431151
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -47,7 +48,7 @@ Intune を使用して、管理するデバイスに証明書を割り当てる�
     - Windows 8.1 以降
     - Windows Phone 8.1 以降
     - Windows 10 以降
-3. デバイスが VPN、Wi-Fi、電子メールによるアクセスの認証に使用する証明書を要求するように、証明書プロファイルを作成します。 次のプラットフォームを実行するデバイスに対しては、**PKCS** または **SCEP** 証明書プロファイルを作成して展開できます。
+3. デバイスが VPN、Wi-Fi、電子メールによるアクセスの認証に使用する証明書を要求するように、証明書プロファイルを作成します。 次のプラットフォームを実行するデバイスに対しては、**PKCS** または **SCEP** 証明書プロファイルを作成し、割り当てることができます。
     - iOS 8.0 以降
     - Android 4.0 以降
     - Android for Work
@@ -71,8 +72,8 @@ Intune を使用して、管理するデバイスに証明書を割り当てる�
 
 インフラストラクチャの構成については、証明書プロファイルの種類に応じて次のトピックのいずれかを参照してください。
 
-- [Intune で SCEP 証明書を構成して管理する](/intune-azure/configure-devices/configure-certificate-infrastructure-for-scep)
-- [Intune で PKCS 証明書を構成して管理する](/intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx)
+- [Intune で SCEP 証明書を構成して管理する](configure-certificate-infrastructure-for-scep.md)
+- [Intune で PKCS 証明書を構成して管理する](configure-certificate-infrastructure-for-pfx.md)
 
 
 ## <a name="step-2---export-your-trusted-root-ca-certificate"></a>手順 2 - 信頼されたルート CA 証明書をエクスポートする
@@ -119,8 +120,8 @@ SCEP または PKCS 証明書プロファイルを作成する前に、信頼さ
 
 各種類の証明書プロファイルの構成と割り当てについては、次のトピックのいずれかを参照してください。
 
-- [Intune で SCEP 証明書を構成して管理する](/intune-azure/configure-devices/configure-certificate-infrastructure-for-scep)
-- [Intune で PKCS 証明書を構成して管理する](/intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx)
+- [Intune で SCEP 証明書を構成して管理する](configure-certificate-infrastructure-for-scep.md)
+- [Intune で PKCS 証明書を構成して管理する](configure-certificate-infrastructure-for-pfx.md)
 
 信頼された証明書プロファイルを作成した後、使用する各プラットフォーム用の SCEP または PKCS 証明書プロファイルを作成します。 SCEP 証明書プロファイルを作成するときは、その同じプラットフォームに対する信頼された証明書プロファイルを指定する必要があります。 これにより 2 つの証明書プロファイルがリンクされますが、それでも各プロファイルを個別に割り当てる必要があります。
 

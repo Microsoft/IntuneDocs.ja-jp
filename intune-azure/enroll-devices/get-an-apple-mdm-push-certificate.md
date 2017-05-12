@@ -16,10 +16,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 82585886bb053d5b6b5981f61d0337fc6feffea4
-ms.openlocfilehash: b26d66d557e084b5b328aec2222c50c2db254bf7
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 91c6b063fbc17cf92aab50c4911e4bb33b76deb9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 03/14/2017
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/14/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Intune では、iPad、iPhone、および Mac コンピューターのモバイル デバイス管理 (MDM) が有効になり、会社の電子メールおよびアプリへのアクセス権がユーザーに付与されます。 Intune で iOS および Mac デバイスを管理するには、MDM プッシュ証明書が必要です。 証明書を Intune に追加すると、ユーザーがポータル サイト アプリをインストールして自分のデバイスを登録できます。 管理者が、Apple の Device Enrollment Program を使用して企業所有の iOS デバイス管理をセットアップしたり、Apple Configurator を使用してデバイスを登録したりすることもできます。 登録オプションについて詳しくは、「[iOS デバイスの登録方法を選択する](https://docs.microsoft.com/intune-azure/enroll-devices/choose-ios-enrollment-method)」をご覧ください。
+Intune では、iPad、iPhone、および Mac コンピューターのモバイル デバイス管理 (MDM) が有効になり、会社の電子メールおよびアプリへのアクセス権がユーザーに付与されます。 Intune で iOS および Mac デバイスを管理するには、MDM プッシュ証明書が必要です。 証明書を Intune に追加すると、ユーザーがポータル サイト アプリをインストールして自分のデバイスを登録できます。 管理者が、Apple の Device Enrollment Program を使用して企業所有の iOS デバイス管理をセットアップしたり、Apple Configurator を使用してデバイスを登録したりすることもできます。 登録オプションについて詳しくは、「[iOS デバイスの登録方法を選択する](choose-ios-enrollment-method.md)」をご覧ください。
 
 ## <a name="steps-to-get-your-certificate"></a>証明書を取得する手順
 Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。 [Intune] ブレードで、**[デバイスの登録]**、**[Apple の登録]**、**[Apple MDM プッシュ証明書]** の順に選択し、Azure Portal で次に示す番号付きの手順に従います。

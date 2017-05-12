@@ -1,12 +1,12 @@
 ---
-title: "Microsoft Intune のデバイス プロファイルに関するトラブルシューティング"
+title: "Microsoft Intune のデバイス プロファイルに関するトラブルシューティング | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: Intune デバイス プロファイルの問題が解決できずに困っている場合は、このトピックに従って問題を解決してください。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: 9bc5b328fc204a12cf7aa992f62ac00b9ddfd45d
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e2d0adc25417db96a2aeb1e57c2ef444dc96ff4d
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -30,10 +31,10 @@ ms.lasthandoff: 03/13/2017
 
 このトピックに記載されている情報は、Intune デバイス プロファイルに関する一般的な問題のトラブルシューティングに活用できます。
 
-## <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-deployed"></a>モバイル デバイスが展開後にポリシーまたはアプリを取得するのにどれくらいの時間がかかりますか。
-ポリシーまたはアプリが展開されると、Intune はデバイスに対して、Intune サービスにチェックインする必要があることをすぐに通知し始めます。 これにかかる時間は通常&5; 分未満です。
+## <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned"></a>モバイル デバイスが割り当て後にポリシーまたはアプリを取得するのにどれくらいの時間がかかりますか。
+ポリシーまたはアプリが割り当てられると、Intune はデバイスに対して、Intune サービスにチェックインする必要があることをすぐに通知し始めます。 これにかかる時間は通常 5 分未満です。
 
-最初の通知が送信された後、デバイスがチェックインしてポリシーを取得しない場合、Intune はさらに&3; 回試行します。  デバイスがオフライン (たとえば、デバイスの電源がオフである、ネットワークに接続されていない) の場合、通知を受信していない可能性があります。 この場合、デバイスは次回のスケジュールされた Intune サービスへのチェックインでポリシーを取得することになります。チェックイン頻度は次のとおりです。
+最初の通知が送信された後、デバイスがチェックインしてポリシーを取得しない場合、Intune はさらに 3 回試行します。  デバイスがオフライン (たとえば、デバイスの電源がオフである、ネットワークに接続されていない) の場合、通知を受信していない可能性があります。 この場合、デバイスは次回のスケジュールされた Intune サービスへのチェックインでポリシーを取得することになります。チェックイン頻度は次のとおりです。
 
 - iOS と macOS: 6 時間ごと
 - Android: 8 時間ごと
@@ -50,12 +51,12 @@ ms.lasthandoff: 03/13/2017
 また、ユーザーはポータル サイト アプリを起動し、デバイスを同期して、いつでもすぐにポリシーを確認できます。
 
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>どのような操作を行うと Intune は通知をデバイスにすぐに送信しますか。
-デバイスは、チェックインを指示する通知を受け取ったとき、または定期的にスケジュールされたチェックイン時に Intune にチェックインします。  ワイプ、ロック、パスコードのリセット、アプリの展開、プロファイルの展開 (Wi-Fi、VPN、メールなど)、ポリシーの展開などの操作で具体的にデバイスまたはユーザーを対象とする場合、Intune は、デバイスが Intune サービスにチェックインしてこれらの更新プログラムを受信するよう指示する通知をすぐに開始します。
+デバイスは、チェックインを指示する通知を受け取ったとき、または定期的にスケジュールされたチェックイン時に Intune にチェックインします。  ワイプ、ロック、パスコードのリセット、アプリの割り当て、プロファイルの割り当て (Wi-Fi、VPN、メールなど)、ポリシーの割り当てなどの操作で具体的にデバイスまたはユーザーを対象とする場合、Intune は、デバイスが Intune サービスにチェックインしてこれらの更新プログラムを受信するよう指示する通知をすぐに開始します。
 
 ポータル サイトの連絡先情報の修正など、他の変更ではデバイスへの通知はすぐに行われません。
 
-## <a name="if-multiple-policies-are-deployed-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>複数のポリシーが同じユーザーまたはデバイスに展開される場合、どの設定が適用されるのかどうすればわかりますか。
-2 つ以上のポリシーが同じユーザーまたはデバイスに展開される場合、適用される設定の評価は個々の設定レベルで行われます。
+## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>複数のポリシーが同じユーザーまたはデバイスに割り当てられる場合、どの設定が適用されるのかどうすればわかりますか。
+2 つ以上のポリシーが同じユーザーまたはデバイスに割り当てられる場合、適用される設定の評価は個々の設定レベルで行われます。
 
 -   コンプライアンス ポリシー設定は常に構成ポリシー設定よりも優先されます。
 
@@ -63,25 +64,25 @@ ms.lasthandoff: 03/13/2017
 
 -   構成ポリシーの設定が別の構成ポリシーの設定と競合する場合、Intune コンソールにその競合が表示されます。 このような競合は手動で解決する必要があります。
 
-## <a name="what-happens-when-mobile-application-management-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>モバイル アプリケーション管理ポリシーが互いに競合する場合はどうなりますか。 どのポリシーがアプリに適用されますか。
-競合している値は、(リセットする前の PIN の試行で使用するような) 番号入力フィールドを除き、MAM ポリシーで使用可能な最も制限の厳しい設定になっています。  番号入力フィールドは、推奨設定のオプションを使用することでコンソールで MAM ポリシーを作成した場合と同じ値に設定されます。
+## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>アプリ保護ポリシー同士が競合している場合はどうなりますか。 どのポリシーがアプリに適用されますか。
+競合している値は、(リセットする前の PIN の試行で使用するような) 番号入力フィールドを除き、アプリ保護ポリシーで使用可能な最も制限の厳しい設定になっています。  番号入力フィールドは、推奨設定のオプションを使用することでコンソールで MAM ポリシーを作成した場合と同じ値に設定されます。
 
-競合は、2 つのポリシー設定が同じ場合に発生します。  たとえば、コピー/貼り付けの設定以外は同じ MAM ポリシーを&2; つ構成したとします。  この場合、コピー/貼り付けの設定は最も厳しい値になりますが、残りの設定は構成したとおりに適用されます。
+競合は、2 つのプロファイル設定が同じ場合に発生します。  たとえば、コピー/貼り付けの設定以外は同じ MAM ポリシーを 2 つ構成したとします。  この場合、コピー/貼り付けの設定は最も厳しい値になりますが、残りの設定は構成したとおりに適用されます。
 
-1 つのポリシーをアプリに展開し、このポリシーが有効になった後、2 つ目のポリシーを展開すると、2 つ目のポリシーは競合の状態になりますが、最初のポリシーは優先され、適用されたままになります。 両方を同時に適用する (優先されるポリシーがない) 場合は、両方が競合の状態になります。 競合する設定は、最も制限の厳しい値に設定されます。
+1 つのプロファイルをアプリに割り当て、このプロファイルが有効になった後、2 つ目のプロファイルを割り当てると、2 つ目のプロファイルは競合の状態になりますが、最初のプロファイルは優先され、適用されたままになります。 両方が同時に適用される (優先されるプロファイルがない) 場合は、両方が競合の状態になります。 競合する設定は、最も制限の厳しい値に設定されます。
 
 ## <a name="what-happens-when-ios-custom-policies-conflict"></a>iOS カスタム ポリシーが競合するとどうなりますか。
-Intune は Apple 構成ファイルのペイロードまたはカスタム Open Mobile Alliance Uniform Resource Identifier (OMA-URI) ポリシーを評価しません。 配信メカニズムとしてのみ機能します。
+Intune は Apple 構成ファイルのペイロードまたはカスタム Open Mobile Alliance Uniform Resource Identifier (OMA-URI) プロファイルを評価しません。 配信メカニズムとしてのみ機能します。
 
-カスタム ポリシーを展開するときは、構成した設定がコンプライアンス、構成、または他のカスタム ポリシーと競合していないことを確認してください。 設定が競合しているカスタム ポリシーの場合、設定が適用される順序はランダムになります。
+カスタム プロファイルを割り当てるときは、構成した設定がコンプライアンス、構成、または他のカスタム プロファイルと競合していないことを確認してください。 設定が競合しているカスタム プロファイルの場合、設定が適用される順序はランダムになります。
 
-## <a name="what-happens-when-a-policy-is-deleted-or-no-longer-applicable"></a>ポリシーが削除された場合または適用できなくなった場合はどうなりますか。
-ポリシーを削除した場合やポリシーを展開したグループからデバイスを削除した場合は、次のリストに従ってポリシーと設定がデバイスから削除されます。
+## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>プロファイルが削除された場合または適用できなくなった場合はどうなりますか。
+プロファイルを削除した場合やプロファイルを割り当てたグループからデバイスを削除した場合は、次のリストに従ってプロファイルと設定がデバイスから削除されます。
 
 ### <a name="enrolled-devices"></a>[登録済みデバイス]
 
 - Wi-Fi、VPN、証明書、電子メールのプロファイル: これらのプロファイルは、すべてのサポートされる登録デバイスから削除されます。
-- その他のすべてのポリシーの種類:
+- 他のすべてのプロファイルの種類:
     - **Windows および Android デバイス**: 設定はデバイスから削除されません。
     - **Windows Phone 8.1 デバイス**: 次の設定が削除されます。
         - モバイル デバイスのロックを解除するパスワードを要求する
@@ -115,44 +116,13 @@ Intune は Apple 構成ファイルのペイロードまたはカスタム Open 
         - データ ローミングを許可する
         - ローミング中の自動同期を許可する
 
-### <a name="windows-pcs-running-the-intune-client-software"></a>Intune クライアント ソフトウェアを実行している Windows PC
+## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>デバイス制限プロファイルを変更しましたが、変更内容が適用されていません
+Windows Phone デバイスから、MDM または EAS で設定されたセキュリティ ポリシーのセキュリティを一度設定した後に緩くすることはできません。 たとえば、 **パスワードの最小文字数** を 8 に設定し、次に 4 に減らしてみます。 より制限の厳しいプロファイルが、デバイスに既に適用されています。
 
-- **Endpoint Protection 設定**: 設定は、推奨値に復元されます。 例外は、**[Microsoft Active Protection Service に参加する]** の設定だけで、既定値は **[いいえ]** です。 詳細については、「[Microsoft Intune の Endpoint Protection を使用して Windows PC を保護する](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)」を参照してください。
-- **ソフトウェアの更新プログラムの設定**: 設定は、オペレーティング システムの既定の状態にリセットされます。 詳細については、「[Microsoft Intune でソフトウェア更新プログラムを使用して Windows PC を最新の状態に保つ](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)」を参照してください。
-- **Microsoft Intune Center の設定**: ポリシーで構成されたサポートの連絡先情報は、すべてコンピューターから削除されます。
-- **Windows ファイアウォールの設定**: 設定は、コンピューターのオペレーティング システムの既定にリセットされます。 詳細については、「[Microsoft Intune の Endpoint Protection を使用して Windows PC を保護する](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)」を参照してください。
-
-
-## <a name="how-can-i-refresh-the-policies-on-a-device-to-ensure-that-they-are-current-applies-to-windows-pcs-running-the-intune-client-software-only"></a>どうしたらデバイスのポリシーを更新して最新の状態に保つことができますか (Intune クライアント ソフトウェアを実行している Windows PC にのみ適用されます)。
-
-1.  任意のデバイス グループで、ポリシーを更新するデバイスを選択して、**[リモート タスク]** &gt; **[ポリシーの更新]** の順に選択します。
-2.  Intune 管理コンソールの右下にある **[リモート タスク]** を選択し、タスクの状態を確認します。
-
-
-
-### <a name="how-do-i-know-that-my-profile-was-assigned-to-a-device"></a>自分のプロファイルがデバイスに割り当てられたかどうかを把握するにはどうすればよいですか
-
-Intune の管理コンソールでは、すべてのデバイスの **[デバイスのプロパティ]**の下に [ポリシー] タブがあります。 各ポリシーには、 **[想定値]** と **[状態]**があります。 [想定値] は、ポリシーを割り当てるときに実現しようとした内容です。 [状態] は、ハードウェアとオペレーティング システムの制限事項と要件だけでなく、デバイスに適用されるすべてのポリシーがまとめて考慮されたときに実際に適用される内容です。 表示される状態は次のとおりです。
-
--   **[準拠]**: デバイスがポリシーを受信しており、設定に準拠していることをサービスに報告します。
-
--   **[該当なし]**: ポリシー設定は適用されません。 たとえば、iOS デバイス用の電子メール設定は、Android デバイスには適用されません。
-
--   **[保留]**: ポリシーはデバイスに送信されましたが、サービスに状態を報告していません。 たとえば、Android での暗号化では、ユーザーが暗号化を有効にする必要があるため、保留になる可能性があります。
-
-
-> [!NOTE]
-> 制限レベルが異なる&2; つのポリシーを同じデバイスまたはユーザーに適用すると、より厳しい方のポリシーが実際に適用されます。
-
-
-## <a name="i-changed-a-device-restriction-policy-but-the-changes-havent-taken-effect"></a>デバイス制限ポリシーを変更しましたが、変更内容が適用されていません
-Windows Phone デバイスから、MDM または EAS で設定されたセキュリティ ポリシーのセキュリティを一度設定した後に緩くすることはできません。 たとえば、 **パスワードの最小文字数** を 8 に設定し、次に 4 に減らしてみます。 より制限の厳しいポリシーが、デバイスに既に適用されています。
-
-ポリシーを安全度の低い値に変更する場合、デバイスのプラットフォームによっては、セキュリティ ポリシーをリセットしなければならない場合があります。
+プロファイルを安全度の低い値に変更する場合、デバイスのプラットフォームによっては、セキュリティ ポリシーをリセットしなければならない場合があります。
 たとえば、Windows で、デスクトップを右からスワイプして、**[チャーム]** バーを開き、**[設定]** &gt; **[コントロール パネル]** の順にクリックします。  **[ユーザー アカウント]** アプレットを選択します。
 左側のナビゲーション メニューの下部に、 **[セキュリティ ポリシーのリセット]** リンクがあります。 このリンクを選択し、**[ポリシーのリセット]** ボタンを選択します。
-Android、Windows Phone 8.1 以降、iOS などのその他の MDM デバイスでは、制限の緩いポリシーを適用するにはいったんデバイスを削除して、サービスに再登録しなければならない場合があります。
-
+Android、Windows Phone 8.1 以降、iOS などのその他の MDM デバイスでは、制限の緩いプロファイルを適用するにはいったんデバイスを削除して、サービスに再登録しなければならない場合があります。
 
 <!--- ## Status codes for MDM managed Windows devices
 
@@ -499,4 +469,4 @@ Android、Windows Phone 8.1 以降、iOS などのその他の MDM デバイス�
 --->
 
 ### <a name="next-steps"></a>次のステップ
-このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)」の説明に従って Microsoft サポートにお問い合わせください。
+このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](../introduction/how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。

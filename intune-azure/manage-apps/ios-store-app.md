@@ -1,12 +1,12 @@
 ---
-title: "iOS ストア アプリを Intune に追加する方法"
+title: "iOS ストア アプリを Intune に追加する方法 | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: iOS ストア アプリを Intune に追加する方法について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,21 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 21e6089bf8a88f107518c7bccfa7bf79b3021a23
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 011f33d1d8569a079f73baaca6ba2a665131691d
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/10/2017
 
 ---
 
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>iOS ストア アプリを Microsoft Intune に追加する方法
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
+
+## <a name="before-you-start"></a>アップグレードを開始する前に
+
+アプリ ストアで無料になっている場合にのみ、この方法でアプリを割り当てることができます。 Intune を利用し、有料のアプリを割り当てる場合、[iOS ボリューム購入プログラム](ios-vpp-apps.md)の利用を検討してください。
 
 
 ## <a name="step-1---search-for-the-app-in-the-store"></a>手順 1 - ストアでアプリを検索する
@@ -42,7 +47,7 @@ ms.lasthandoff: 02/18/2017
 
 1. **[アプリの追加]** ブレードで、**[アプリ情報]** を選択します。
 2. **[アプリの編集]** ブレードで、以下の情報を構成します。 構成が終わったら、**[追加]** をクリックします。 選択したアプリによっては、このブレード内の一部の値が自動的に入力されている場合があります。
-- **[アプリ名]** - アプリの名前を入力します。この名前は会社のポータルに表示されます。 使用するアプリ名はすべて一意にします。 同じアプリ名が&2; つ存在する場合、会社のポータルではそのいずれかのみがユーザーに表示されます。
+- **[アプリ名]** - アプリの名前を入力します。この名前は会社のポータルに表示されます。 使用するアプリ名はすべて一意にします。 同じアプリ名が 2 つ存在する場合、会社のポータルではそのいずれかのみがユーザーに表示されます。
     - **[アプリの説明]** - アプリの説明を入力します。 これは会社のポータルでユーザーに表示されます。
 - **発行元** - アプリの発行元の名前を入力します。
 - **[アプリ ストア URL]** - 作成するアプリのアプリ ストア URL を入力します。
@@ -57,4 +62,5 @@ ms.lasthandoff: 02/18/2017
 - **[アップロード アイコン]** - アプリに関連付けるアイコンをアップロードします。 ユーザーが会社のポータルを参照するとき、アプリにこのアイコンが表示されます。
 3. 構成が終了したら、**[アプリの追加]** ブレードで、**[保存]** を選択します。
 
-作成したアプリはアプリの一覧に表示され、選択したグループに割り当てることができるようになります。 詳細については、[アプリをグループに割り当てる方法](/intune-azure/manage-apps/deploy-apps)に関するページを参照してください。
+作成したアプリはアプリの一覧に表示され、選択したグループに割り当てることができるようになります。 詳細については、[アプリをグループに割り当てる方法](deploy-apps.md)に関するページを参照してください。
+

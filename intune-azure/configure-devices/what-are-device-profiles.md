@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Intune のデバイス プロファイルとは"
+title: "Microsoft Intune のデバイス プロファイルとは | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: Intune デバイス プロファイルと、それを活用して社内のデバイスを管理および保護する方法について説明します。"
 keywords: 
@@ -15,10 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 5383e20081285131f91418b47162e0cd5ba92c90
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: b33d8ec48c057ce1e67487d5772ca203793d8a79
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -37,7 +38,7 @@ Microsoft Intune の **[デバイスの構成]** ワークロードを使用し�
 
 ## <a name="getting-started"></a>はじめに
 
-デバイス プロファイルを作成するためのワークフローには、プロファイルごとの違いはありません。 プロファイルの作成方法については、[Microsoft Intune のデバイス構成プロファイルの作成方法](/intune-azure/configure-devices/how-to-create-device-profiles)に関するページを参照してください。 その後は、各種プロファイル向けの設定の具体的な作成方法について読み進めてください。
+デバイス プロファイルを作成するためのワークフローには、プロファイルごとの違いはありません。 プロファイルの作成方法については、[Microsoft Intune のデバイス構成プロファイルの作成方法](how-to-create-device-profiles.md)に関するページを参照してください。 その後は、各種プロファイル向けの設定の具体的な作成方法について読み進めてください。
 
 以下に挙げるデバイスの機能を管理することができます。
 
@@ -51,15 +52,15 @@ Microsoft Intune の **[デバイスの構成]** ワークロードを使用し�
 詳細については、[デバイス制限設定の構成方法](how-to-configure-device-restrictions.md)に関するページを参照してください。サポート対象: Android、iOS、macOS、Windows 10、Windows 10 Team。
 
 ## <a name="email"></a>電子メール
-電子メール プロファイルを使用すると、管理対象とするデバイスの Exchange ActiveSync 電子メール設定を作成、展開、監視できます。 このような設定を展開することで一貫性の確保とサポート負荷の軽減が可能になり、エンド ユーザーは自分では何の設定もせずに個人デバイスで会社の電子メールにアクセスできるようになります。
+電子メール プロファイルを使用すると、管理対象とするデバイスの Exchange ActiveSync 電子メール設定の作成、割り当て、監視を行うことができます。 このような設定を割り当てることで一貫性の確保とサポート負荷の軽減が可能になり、エンド ユーザーは自分では何の設定もせずに個人デバイスで会社の電子メールにアクセスできるようになります。
 詳細については、[電子メール設定の構成方法](how-to-configure-email-settings.md)に関するページを参照してください。サポート対象: Android、iOS、Windows Phone 8.1、Windows 10。
 
 ## <a name="wi-fi"></a>Wi-Fi
-Wi-Fi プロファイルを使用すると、ワイヤレス ネットワーク設定を組織内のユーザーとデバイスに展開できます。 Wi-Fi プロファイルをデプロイするときに、ユーザーはプロファイルを構成することなく、会社の Wi-Fi にアクセスできます。
+Wi-Fi プロファイルを使用すると、ワイヤレス ネットワーク設定を組織内のユーザーとデバイスに割り当てることができます。 Wi-Fi プロファイルを割り当てるときに、ユーザーはプロファイルを構成することなく、会社の Wi-Fi にアクセスできます。
 詳細については、[Wi-Fi 設定の構成方法](how-to-configure-wi-fi-settings.md)に関するページを参照してください。サポート対象: Android、iOS、macOS、Windows 8.1 (インポートのみ)。
 
 ## <a name="vpn"></a>VPN
-仮想プライベート ネットワーク (VPN) を使用すると、会社のユーザーが社内ネットワークにリモート アクセスする際にセキュリティで保護することができます。 デバイスは、VPN 接続プロファイルを使用して、VPN サーバーとの接続を開始します。 VPN プロファイルを使用すると、VPN 設定を組織内のユーザーとデバイスに展開し、社内ネットワークに簡単かつ安全に接続できるようになります。
+仮想プライベート ネットワーク (VPN) を使用すると、会社のユーザーが社内ネットワークにリモート アクセスする際にセキュリティで保護することができます。 デバイスは、VPN 接続プロファイルを使用して、VPN サーバーとの接続を開始します。 VPN プロファイルを使用すると、VPN 設定を組織内のユーザーとデバイスに割り当て、社内ネットワークに簡単かつ安全に接続できるようになります。
 詳細については、[VPN 設定の構成方法](how-to-configure-vpn-settings.md)に関するページを参照してください。
 サポート対象: Android、iOS、macOS、Windows Phone 8.1、Windows 8.1、Windows 10。
 

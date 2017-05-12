@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/19/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
-ms.openlocfilehash: d5c84c5d3bc700985cc14dbd7eaae5a493cca064
-ms.lasthandoff: 04/20/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 37bfb7c9c35e5da5a346c822ed9d4252b5fff0e4
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -75,8 +76,8 @@ ms.lasthandoff: 04/20/2017
 
 電子メール プロファイルは、2 つの方法のいずれかを使用して保護できます。
 
-1. **[証明書]** - 電子メール プロファイルを作成する際に、事前に Intune で作成しておいた証明書プロファイルを選択します。 これは ID 証明書と呼ばれ、ユーザーのデバイスが接続を許可されていることを示す信頼できる証明書プロファイル (または、ルート証明書) に対して認証を行うために使用されます。 信頼された証明書は、電子メールの接続を認証するコンピューター (通常はネイティブ電子メール サーバー) に展開されます。
-Intune で証明書プロファイルを作成および使用する方法の詳細については、[Intune で証明書を構成する方法](/intune-azure/configure-devices/how-to-configure-certificates)に関する記事を参照してください。
+1. **[証明書]** - 電子メール プロファイルを作成する際に、事前に Intune で作成しておいた証明書プロファイルを選択します。 これは ID 証明書と呼ばれ、ユーザーのデバイスが接続を許可されていることを示す信頼できる証明書プロファイル (または、ルート証明書) に対して認証を行うために使用されます。 信頼された証明書は、電子メールの接続を認証するコンピューター (通常はネイティブ電子メール サーバー) に割り当てられます。
+Intune で証明書プロファイルを作成および使用する方法の詳細については、[Intune で証明書を構成する方法](how-to-configure-certificates.md)に関する記事を参照してください。
 2. **[ユーザー名とパスワード]** - ユーザーは、ユーザー名とパスワードを提供することにより、ネイティブ電子メール サーバーに対して認証を行います。
 パスワードは電子メール プロファイルに含まれていないため、電子メールに接続するときにユーザーが入力する必要があります。
 

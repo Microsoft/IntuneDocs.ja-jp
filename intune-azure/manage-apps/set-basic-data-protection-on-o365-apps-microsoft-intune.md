@@ -16,10 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e3924cb3409ab03f8070376c2248a2791a1e713d
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 9ce22cb6e4031432f8d78653230b526f504b5f8c
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -62,7 +63,7 @@ ms.lasthandoff: 02/18/2017
 >ほとんどのユーザーには、このメッセージが表示されません。 iOS デバイスで PIN を有効にしていないユーザーにのみこのメッセージが表示されます。
 
 
-5. PIN を設定して確認すると、OneDrive for Business アプリに戻ります。 IT 管理者が OneDrive の仕事のデータを保護していることを伝える&1; 回限りの通知が表示されます。 <br/> ![IT 管理者からの&1; 回限りの通知の画像](./media/one-time-notice.png)
+5. PIN を設定して確認すると、OneDrive for Business アプリに戻ります。 IT 管理者が OneDrive の仕事のデータを保護していることを伝える 1 回限りの通知が表示されます。 <br/> ![IT 管理者からの 1 回限りの通知の画像](./media/one-time-notice.png)
 6. この通知をクリックして、OneDrive for Business のファイルにアクセスします。 <br/> ![iOS デバイスでの OneDrive ファイルの画像](./media/onedrive-files-ios.png) <br/>
 
 >[!NOTE]
@@ -132,5 +133,5 @@ Android の場合、Intune MAM ポリシーに関連付けられているアプ�
 ![ポリシーを表示するユーザー インターフェイス パスの画像](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>次のステップ
-アプリ保護ポリシーの詳細については、[こちら](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-protection-policy)を参照してください。
+アプリ保護ポリシーの詳細については、[こちら](https://docs.microsoft.comwhat-is-app-protection-policy.md)を参照してください。
 
