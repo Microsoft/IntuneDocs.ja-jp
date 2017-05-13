@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: 3ba986b624e602f05eb6ab25ec30e9d58173dbd8
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 0c3a5ef16da3e2c395cb71a0fc8a23d531cfa02c
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -80,7 +81,7 @@ ms.lasthandoff: 04/19/2017
 
 **[禁止されているアプリ]** の一覧 - ユーザーによるインストールと実行が許可されていないアプリ (Intune で管理されていない) アプリを一覧表示します。
 **[承認済みアプリ]** の一覧 - ユーザーによるインストールが許可されているアプリを一覧表示します。 準拠性を維持するため、ユーザーは一覧表示されていないアプリをインストールできません。 管理対象アプリは Intune で自動的に許可されます。
-制限付きアプリの設定を含むデバイス プロファイルは、ユーザーのグループに展開する必要があります。
+制限付きアプリの設定を含むデバイス プロファイルは、ユーザーのグループに割り当てる必要があります。
 
 この一覧を構成するには、**[追加]** をクリックし、任意の名前、アプリの発行元 (省略可能)、アプリ ストアでのアプリの URL を指定します。
 

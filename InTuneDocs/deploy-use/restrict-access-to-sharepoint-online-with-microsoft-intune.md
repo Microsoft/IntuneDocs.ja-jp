@@ -14,10 +14,11 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 9e4fca9e29c8f0c2ec3ef088c3f91ad15ac11804
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 4a8b3f5a3ab5df9f31741e3331d2b6bbfd2c0c9f
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/14/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-[!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] の条件付きアクセスを使って、SharePoint Online 上にあるファイルへのアクセスを制御します。
+Microsoft Intune の条件付きアクセスを使って、SharePoint Online 上にあるファイルへのアクセスを制御します。
 条件付きアクセスには、2 つのコンポーネントがあります。
 - デバイス コンプライアンス ポリシー。準拠したデバイスと見なされるには、このポリシーに準拠している必要があります。
 - 条件付きアクセス ポリシー。デバイスがサービスにアクセスするために満たす必要のある条件を指定します。
@@ -45,20 +46,20 @@ SharePoint Online の条件付きアクセス ポリシーを構成する**前�
 
 
   必要なファイルに接続するには、デバイスが次の条件を満たしている必要があります。
--   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に**登録**されているか、ドメインに参加している PC である。
+-   Intune に**登録**されているか、ドメインに参加する PC である。
 
--   Azure Active Directory に**登録**されている (デバイスが [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録されている場合は、自動的に登録されます)。
+-   Azure Active Directory に**登録**されている (デバイスが Intune に登録されている場合は、自動的に登録されます)。
 
 
--   展開されているすべての [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] コンプライアンス ポリシーに**準拠している**。
+-   展開されているすべての Intune コンプライアンス ポリシーに**準拠**している。
 
 デバイスの状態は、Azure Active Directory に格納され、指定した条件に基づいて、ファイルへのアクセスが許可されたりブロックされたりします。
 
 条件が満たされない場合、ユーザーにはサインイン時に以下のうちのいずれかのメッセージが表示されます。
 
--   デバイスが [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録されていない、または Azure Active Directory に登録されていない場合は、メッセージが表示され、ポータル サイト アプリのインストールと登録の手順が示されます。
+-   デバイスが Intune に登録されていない、または Azure Active Directory に登録されていない場合は、メッセージが表示され、ポータル サイト アプリのインストールと登録の手順が示されます。
 
--   デバイスがポリシーに準拠していない場合は、ユーザーを [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ポータル サイト Web サイトに導くメッセージが表示されます。このポータルで、問題とその修復方法に関する情報を確認することができます。
+-   デバイスがポリシーに準拠していない場合は、ユーザーを Intune ポータル サイト Web サイトに導くメッセージが表示されます。このポータルで、問題とその修復方法に関する情報を確認することができます。
 
 **条件付きアクセスは外部共有に適用されません**。 テナントまたはサイト コレクションで外部共有を使用しない方法については、「[SharePoint Online 環境の外部共有を管理する](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85)」をご覧ください。
 
@@ -115,7 +116,7 @@ SharePoint Online ポリシーには、次の 2 つのグループの種類を�
 まだ行っていない場合は、コンプライアンス ポリシーを作成し、SharePoint Online ポリシーの対象となるユーザーに展開します。
 
 > [!NOTE]
-> コンプライアンス ポリシーは [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] グループに展開されますが、条件付きアクセス ポリシーは、Azure Active Directory セキュリティ グループを対象とします。
+> コンプライアンス ポリシーは Intune グループに展開されますが、条件付きアクセス ポリシーは、Azure Active Directory セキュリティ グループを対象とします。
 
 コンプライアンス ポリシーを構成する方法の詳細については、「[コンプライアンス ポリシーの作成](create-a-device-compliance-policy-in-microsoft-intune.md)」をご覧ください。
 
@@ -152,11 +153,11 @@ SharePoint Online ポリシーには、次の 2 つのグループの種類を�
 
          指定したプラットフォームで先進認証を使用しているすべてのクライアント アプリに条件付きアクセス ポリシーが適用されます。
 
-     Windows PC の場合は、ドメインに参加しているか、または [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録されてポリシーに準拠している必要があります。 以下の要件を設定できます。
+     Windows PC の場合は、ドメインに参加しているか、または Intune に登録されてポリシーに準拠している必要があります。 以下の要件を設定できます。
 
-     -   **デバイスはドメインに参加しているか準拠デバイスである必要があります。** PC に、ドメインに参加しているか、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] で設定されたポリシーに準拠していることを求める場合は、このオプションを選択します。 PC がどちらの要件も満たさない場合、ユーザーはデバイスを [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録するように求められます。
+     -   **デバイスはドメインに参加しているか準拠デバイスである必要があります。** PC に、ドメインに参加しているか、Intune で設定されたポリシーに準拠していることを求める場合は、このオプションを選択します。 PC がどちらの要件も満たさない場合、ユーザーはデバイスを Intune に登録するように求められます。
 
-     -   **デバイスは準拠デバイスである必要があります** このオプションを選択した場合、PC は [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録され、ポリシーに準拠している必要があります。 PC を登録していない場合は、登録する方法についての手順を示したメッセージが表示されます。
+     -   **デバイスは準拠デバイスである必要があります** このオプションを選択した場合、PC は Intune に登録され、ポリシーに準拠している必要があります。 PC を登録していない場合は、登録する方法についての手順を示したメッセージが表示されます。
 
 4.   SharePoint Online と OneDrive for Business への **[ブラウザー アクセス]** では、サポートされているブラウザー (Safari (iOS)、Chrome (Android)) を通じてのみ、Exchange Online へのアクセスを許可することを選択できます。 その他のブラウザーからのアクセスはブロックされます。 OneDrive のアプリケーションのアクセス用に選択した同じプラットフォームの制限が、ここにも適用されます。
 

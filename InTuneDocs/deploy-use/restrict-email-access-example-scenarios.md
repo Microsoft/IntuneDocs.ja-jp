@@ -14,9 +14,11 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 7d0b9cee72e8810b4f39bd81bd8f49d0818618c4
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -28,7 +30,7 @@ ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
 ## <a name="scenario-1-block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>シナリオ 1: 非準拠のデバイスを使用して Exchange Online にアクセスするユーザーをブロックする
 ### <a name="scenario-requirements"></a>シナリオの要件
 - 展開したコンプライアンス ポリシーにデバイスが準拠していない場合、**[アカウンティング]** Azure Active Directory セキュリティ グループ内のすべてのユーザーの Exchange Online へのアクセスをブロックする必要があります。
-- このグループ内に [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] によってデバイスがサポートされていないユーザーが存在する場合、それらのデバイスでのユーザーによる Exchange Online へのアクセスをブロックする必要があります。
+- このグループ内に Intune によってデバイスがサポートされていないユーザーが存在する場合、それらのデバイスでのユーザーによる Exchange Online へのアクセスをブロックする必要があります。
 - **[ファイナンス]** Azure Active Directory セキュリティ グループに属するユーザーはいずれも、さらに **[アカウンティング]** セキュリティ グループに属していたとしても、ポリシーから除外する必要があります。
 
 これらを実現するためには、次の設定で Exchange Online の条件付きアクセス ポリシーを構成します。
@@ -68,7 +70,7 @@ ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
 ## <a name="scenario-3-no-android-devices-can-access-exchange-on-premises"></a>シナリオ 3: Android デバイスは Exchange On-premises にアクセスできない
 ### <a name="scenario-requirements"></a>シナリオの要件
 - すべての Android デバイスに対して Exchange へのアクセスをブロックする必要があります。
-- その他すべてのサポートされるデバイスは、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] で管理されている限り Exchange にアクセスできます。
+- その他すべてのサポートされるデバイスは、Intune で管理されている限り Exchange にアクセスできます。
 
 これらを実現するためには、次の設定で Exchange On-premises の条件付きアクセス ポリシーを構成します。
 
@@ -82,9 +84,4 @@ ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
 次のフローを使用して、Exchange にアクセスできるデバイスを決定します。
 
 ![デバイス アクセス フロー](./media/ConditionalAccess8-4.png)
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

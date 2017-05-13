@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
-ms.openlocfilehash: 9e348278f62b2b9ba10f0f77c9fda214b43812a7
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 68738f25393eec006a8bc7a78412669859f91c27
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -123,7 +124,7 @@ ms.lasthandoff: 04/19/2017
 
 検索エンジンを使用して、iTunes App Store で使用するアプリを検索し、アプリのページを開きます。
 ページの URL をコピーして、許可されているアプリまたは禁止されているアプリの一覧、またはキオスク モードで実行するアプリを構成する URL として使用します。
-制限付きアプリの設定を含むデバイス プロファイルは、ユーザーのグループに展開する必要があります。
+制限付きアプリの設定を含むデバイス プロファイルは、ユーザーのグループに割り当てる必要があります。
 
 例: Microsoft Word for iPad を検索します。 https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8 という URL を使用します。
 
@@ -160,52 +161,6 @@ ms.lasthandoff: 04/19/2017
 ### <a name="additional-options"></a>追加オプション
 
 **[インポート]** をクリックして "<*アプリ URL*>, <*アプリ名*>, <*アプリの発行元*>" 形式の csv ファイルから一覧に値を設定したり、**[エクスポート]** をクリックして、非表示のアプリまたは表示するアプリの一覧の内容を含む csv ファイルを同じ形式で作成したりすることもできます。
-
-### <a name="app-information-for-built-in-ios-apps"></a>組み込み iOS アプリのアプリ情報
-この一覧の情報を使用して、表示または非表示にする組み込み iOS アプリの名前、発行元、およびバンドル ID を識別します。 一覧にあるすべてのアプリを表示または非表示にする場合は、次のデータをコピーして拡張子 **.csv** のテキスト ファイルに貼り付けた後、**[インポート]** オプションを使用してすべてのアプリを一度にインポートできます。
-
-
-    App Store,Apple,com.apple.AppStore
-    Calculator,Apple,com.apple.calculator
-    Calendar,Apple,com.apple.mobilecal
-    Camera,Apple,com.apple.camera
-    Clock,Apple,com.apple.mobiletimer
-    Compass,Apple,com.apple.compass
-    Contacts,Apple,com.apple.MobileAddressBook
-    FaceTime,Apple,com.apple.facetime
-    Find Friends,Apple,com.apple.mobileme.fmf1
-    Find iPhone,Apple,com.apple.mobileme.fmip1
-    Game Center,Apple,com.apple.gamecenter
-    GarageBand,Apple,com.apple.mobilegarageband
-    Health,Apple,com.apple.Health
-    iBooks,Apple,com.apple.iBooks
-    iTunes Store,Apple,com.apple.MobileStore
-    iTunes U,Apple,com.apple.itunesu
-    Keynote,Apple,com.apple.Keynote
-    Mail,Apple,com.apple.mobilemail
-    Maps,Apple,com.apple.Maps
-    Messages,Apple,com.apple.MobileSMS
-    Music,Apple,com.apple.Music
-    News,Apple,com.apple.news
-    Notes,Apple,com.apple.mobilenotes
-    Numbers,Apple,com.apple.Numbers
-    Pages,Apple,com.apple.Pages
-    Photo Booth,Apple,com.apple.Photo-Booth
-    Photos,Apple,com.apple.mobileslideshow
-    Podcasts,Apple,com.apple.podcasts
-    Reminders,Apple,com.apple.reminders
-    Safari,Apple,com.apple.mobilesafari
-    Settings,Apple,com.apple.Preferences
-    Stocks,Apple,com.apple.stocks
-    Tips,Apple,com.apple.tips
-    Videos,Apple,com.apple.videos
-    VoiceMemos,Apple,com.apple.VoiceMemos
-    Wallet,Apple,com.apple.Passbook
-    Watch,Apple,com.apple.Bridge
-    Weather,Apple,com.apple.weather
-
-
-
 
 
 ## <a name="cellular"></a>移動体通信
@@ -308,7 +263,7 @@ ms.lasthandoff: 04/19/2017
 
 >[!NOTE]
 > iOS デバイスをキオスク モードに構成する前に、Apple Configurator ツールまたは Apple デバイス登録プログラムを使用して、デバイスを監視下モードにする必要があります。 Apple Configurator ツールの詳細については、Apple のドキュメントを参照してください。
->構成ポリシーを展開した後に、指定した iOS のアプリがインストールされる場合、デバイスは再起動後にキオスク モードになります。
+>プロファイルの割り当て後に、指定した iOS のアプリがインストールされる場合、デバイスは再起動後にキオスク モードになります。
 
 ## <a name="safari"></a>Safari
 -     **[Safari (監視下のみ)]** - Safari ブラウザーをデバイスで使用できるかどうかを指定します。

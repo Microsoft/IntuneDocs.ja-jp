@@ -14,9 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: 74607fc704234e6ac85eae3bf55c186000c6e68a
+ms.translationtype: Human Translation
+ms.sourcegitcommit: cce2cd69808937f3e088aa04f6142611a4594895
+ms.openlocfilehash: a9780dd3a951cc074a38061bf67aa5485c1eab68
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -62,9 +64,9 @@ Intune App SDK Xamarin コンポーネントで開発された Xamarin アプリ
 
 2. Microsoft Intune MAM Xamarin コンポーネントの[ライセンス条項](https://components.xamarin.com/license/microsoft.intune.mam)を読みます。
 
-3.    [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) または [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) から Intune App SDK Xamarin コンポーネント フォルダーをダウンロードし、抽出します。 手順 1 と手順 2 でダウンロードしたファイルを両方とも同じディレクトリ レベルに配置する必要があります。
+3.    [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) または [Xamarin](https://components.xamarin.com/license/microsoft.intune.mam) から Intune App SDK Xamarin コンポーネント フォルダーをダウンロードし、抽出します。 手順 1 と手順 3 でダウンロードしたファイルを両方とも同じディレクトリ レベルに配置する必要があります。
 
-4.    監理者として起動したコマンド ラインで、`Xamain.Component.exe install <.xam> file` を実行します。
+4.    監理者として起動したコマンド ラインで、`Xamarin.Component.exe install <.xam> file` を実行します。
 
 5.    Visual Studio で、前に作成した Xamarin プロジェクトの**コンポーネント**を右クリックします。
 
@@ -122,10 +124,5 @@ Xamarin Forms とその他の UI フレームワークの場合、「`MAM.Remapp
 
 ## <a name="test-your-app"></a>アプリのテスト
 
-コンポーネントをアプリに組み込む基本的な手順を完了しました。 これで、Xamarin Android サンプル アプリに含まれている手順を実行できます。 サンプルは&2; つあります。Xamarin.Forms 用が&1; つ、Android 用が&1; つです。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
+コンポーネントをアプリに組み込む基本的な手順を完了しました。 これで、Xamarin Android サンプル アプリに含まれている手順を実行できます。 サンプルは 2 つあります。Xamarin.Forms 用が 1 つ、Android 用が 1 つです。
 
