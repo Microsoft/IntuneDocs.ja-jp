@@ -14,10 +14,11 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 3794981387e73176152c212854a97b4333023f5d
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 9466a2ca94ea556037c2fdd7fee88b87eed88685
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -82,7 +83,7 @@ Intune ポータル サイトは、ユーザーが会社のデータとアプリ
     |----------|----------------|
     |テーマの色|ポータル サイトに適用するテーマの色を選択します。|
     |会社のロゴを含める|このオプションを有効にすると、ポータル サイトに表示する会社のロゴをアップロードできます。 2 つのロゴをアップロードできます。1 つは、ポータル サイトの背景が白の場合に表示するロゴ、もう 1 つは、選択したテーマの色がポータル サイトの背景に使用されている場合に表示するロゴです。 各ロゴは、.png または .jpg ファイルの種類にし、最大解像度が 400 x 100 ピクセルで、750 KB 以下のサイズにします。|
-    |[!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)] ポータル サイト アプリ用の背景を選択する|この設定は、[!INCLUDE[win8_client_2](../includes/win8_client_2_md.md)] ポータル サイト アプリの背景のみに適用されます。|
+    |Windows 8 ポータル サイト アプリの背景を選択する|この設定は、Windows 8 ポータル サイト アプリのみの背景に適用されます。|
 
 
 変更を保存した後で、管理コンソールの **[ポータル サイト]** ページの下部に表示されるリンクを使用して、ポータル サイト Web サイトを表示できます。 これらのリンクは変更できません。 ユーザーがサインインするときに、これらのリンクでポータル サイトが表示されます。

@@ -1,12 +1,12 @@
 ---
-title: "アプリ管理とは"
+title: "アプリの管理とは | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: このトピックでは、Microsoft Intune を使用したアプリの管理についての基本を説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 33def827fc7417930338e56c650d01df4dad85fb
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 34970d6adcfe41a6de9636a5605a17f9f5ef2d82
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -46,6 +47,7 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
 |デバイスとユーザーにアプリを追加して割り当てる|[はい]|○|○|[はい]|
 |Intune に登録されていないデバイスにアプリを割り当てる|Yes|○|[いいえ]|いいえ|
 |アプリ構成ポリシーを使用してアプリのスタートアップ動作を制御する|いいえ|○|[いいえ]|いいえ|
+|モバイル アプリ プロビジョニング ポリシーを使用して期限切れのアプリを更新する|いいえ|○|[いいえ]|いいえ|
 |アプリ保護ポリシーでアプリ内の会社のデータを保護する|Yes|○|いいえ|×<sup>1</sup>|
 |インストール済みのアプリから会社のデータのみを削除する (アプリの選択的ワイプ)|[はい]|○|○|[はい]|
 |アプリの割り当てを監視する|[はい]|○|○|Yes|
@@ -68,7 +70,7 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[アプリの管理]** を選択します。
+3. **[Intune]** ブレードで、**[モバイル アプリ]** を選択します。
 
     ![[モバイル アプリ] ワークロード](./media/apps-workload.png)
 
@@ -77,19 +79,21 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
     - [アプリを追加する](add-apps.md)
     - [アプリを割り当てる](deploy-apps.md)
     - [アプリの監視](monitor-apps.md)
-- **[ライセンスされたアプリ]** - アプリ ストアからのボリューム購入アプリを表示、展開、監視します。
-    - [ビジネス向け一括購入アプリ向けの Windows ストア](wsfb-apps.md)
 - **[アプリの構成ポリシー]** - ユーザーがアプリを実行するときに必要となる可能性がある設定を指定できます。 詳細については、以下を参照してください。
     - [アプリの構成ポリシー](app-configuration-policies.md)
 - **[アプリ保護ポリシー]** - アプリに設定を関連付けて、アプリで使用する会社のデータを保護できます。 たとえば、アプリの機能による他のアプリとの通信を制限することや、会社のアプリにアクセスしようとするユーザーに PIN の入力を求めることができます。
     - [アプリ保護ポリシー](app-protection-policies.md)
 - **[アプリの選択的ワイプ]** - 選択したユーザーのデバイスから会社のデータのみを削除します。
     - [アプリの選択的ワイプ](app-selective-wipe.md)
+- **[iOS プロビジョニング プロファイル]** - iOS アプリには、プロビジョニング プロファイルと、証明書によって署名されたコードが含まれます。 証明書の期限が切れると、アプリを実行できなくなります。 Intune には、有効期限が近づいているアプリを持つデバイスに新しいプロビジョニング プロファイルのポリシーを事前に割り当てるツールが用意されています。
+    - [iOS アプリ プロビジョニング プロファイル](ios-app-provisioning-profile.md)
 
 ### <a name="monitor"></a>モニター
+- **[ライセンスされたアプリ]** - アプリ ストアからのボリューム購入アプリの表示、割り当て、監視を行います。
+    - [ビジネス向け一括購入アプリ向けの Windows ストア](wsfb-apps.md)
 - **[検出されたアプリ]** - Intune によって割り当てられ、デバイスにインストールされたすべてのアプリを表示します。
 - **[アプリ インストールの状態]** - 作成したアプリの割り当て状態を表示します。
-- **[アプリ保護ユーザー状態]** - 選択したユーザーのアプリ保護ポリシーの状態を表示します。
+- **[アプリの保護状態]** - 選択したユーザーのアプリ保護ポリシーの状態を表示します。
 
 詳細については、[アプリの監視](monitor-apps.md)に関するページを参照してください。
 

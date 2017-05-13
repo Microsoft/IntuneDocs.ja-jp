@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/26/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,26 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 5f172290d493717308446c4f9e2313a03ba8f3aa
-ms.openlocfilehash: 84c6c9ddeeff3570d0b00364063e43105141de0f
-ms.lasthandoff: 04/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 68dbaa2209ad1432279683a291734641e39ff736
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/05/2017
 
 
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune とエンド ユーザー アプリの UI の更新
 このリリースの Microsoft Intune でエンド ユーザーに表示されるアプリの UI に加えられた変更について説明します。 これは、ユーザーとの通信や、展開のサポートのために作成したカスタム ドキュメントの更新に役立ちます。 会社のポータルを使用してヘルプデスクにサポートを求める場合に、直面している問題のトラブルシューティングをより適切に行う方法を理解するのにも役立ちます。
 
+## <a name="coming-soon-in-the-ui"></a>UI で近日公開予定
+これらは、ユーザー インターフェイスを更新することによってユーザー エクスペリエンスを向上させるために計画されている方法です。
+
 > [!Note]
 > 次のイメージはプレビューであり、発表される製品は示されているバージョンとは異なる場合があることに注意してください。
 
-## <a name="april-2017"></a>2017 年 4 月
-
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>すべてのプラットフォームでのポータル サイト アプリのサインイン操作の改善<!--User Story 1132123-->
 
-Android、iOS、Windows の Intune ポータル サイト アプリのサインイン エクスペリエンスを改善中です。  Azure AD でこの変更が行われ次第、自動的にすべてのプラットフォームでポータル サイト アプリのユーザー エクスペリエンスが一新される予定です。 また、自動生成される一時使用コードを使用して、別のデバイスからポータル サイトにサインインできるようになりました。 この機能は、資格情報を使用せずにサインインする必要がある場合には特に便利です。  
+Android、iOS、Windows 向け Intune ポータル サイト アプリのサインイン エクスペリエンス向上のために今後数か月間に予定されている変更についてお知らせします。 Azure AD でこの変更が行われ次第、自動的にすべてのプラットフォームでポータル サイト アプリのユーザー エクスペリエンスが一新される予定です。 また、自動生成される一時使用コードを使用して、別のデバイスからポータル サイトにサインインできるようになりました。 この機能は、資格情報を使用せずにサインインする必要がある場合には特に便利です。  
 
 以下に、従来のサインイン、資格情報を使用した新たなサインイン、別のデバイスからのサインインをそれぞれ以下に示します。
 
@@ -51,13 +53,13 @@ __新たなサインイン エクスペリエンス__
 
 ![電子メールが承認されると、パスワードの入力が要求されます。](./media/cp_ios_aad_signin_after_1704_003.png)
 
+![認証プロセスが終了すると、ポータル サイト アプリはサインインを行い、読み込みバーが表示されます。](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
 __別のデバイスからサインインする際の新たなサインイン エクスペリエンス__
 
 ![Web サイトのイメージ図の前にユーザーのアイコンが表示されたポータル サイトのサインイン ページ。 アイコンの下に [サインイン] ボタンが表示されています。 下部にあるリンクから Microsoft のプライバシーと Cookie に関する情報にアクセスできます。](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
 
 __[別のデバイスからサインインする]__ リンクをタップします。
-
-![画面は同じですが電子メールとパスワードではなく、電子メールのみを入力するように要求されます。 [別のデバイスからサインインする] リンクが、電子メール フィールドの下に表示されます。](./media/cp_ios_aad_signin_from_another_device_after_1704_002.png)
 
 ![会社のコンピューターから固有のパスワードで aka.ms/devicelogin ページにアクセスし、コードを使用してサインインするように指示されます。](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
@@ -74,6 +76,8 @@ __[別のデバイスからサインインする]__ リンクをタップしま�
 ポータル サイト アプリがサインインを開始します。
 
 ![認証プロセスが終了すると、ポータル サイト アプリはサインインを行い、読み込みバーが表示されます。](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+## <a name="april-2017"></a>2017 年 4 月
 
 ### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Managed Browser とポータル サイトの新しいアイコン <!--918433, 918431-->
 
@@ -105,13 +109,13 @@ Android 用ポータル サイト アプリが更新されて、起動または�
    <table id="wrapper">
       <tr>
          <td>
-            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width=200 height=366 align=center>
+            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width=200 height=366 align=center>
           </td>
           <td>
-             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width=200 height=366 align=center>
+             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width=200 height=366 align=center>
            </td>
            <td>
-              <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width=200 height=366 align=center>
+              <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width=200 height=366 align=center>
            </td>
       </tr>
    </table>
@@ -119,22 +123,13 @@ Android 用ポータル サイト アプリが更新されて、起動または�
 </html>
 
 ### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Windows 10 ポータル サイト アプリのアプリ インストール状態の向上<!--676495-->
-Windows 10 のポータル サイト アプリでは、ポータル サイトから開始されたすべての最新アプリのインストールに対し、アプリ インストール進行状況バーが表示されようになります。
+現在の Windows 10 ポータル サイト アプリでは、アプリ詳細ページにインストール進行状況バーが表示されます。 これは、Windows 10 Anniversary Update 以降を実行するデバイスの最新アプリについてサポートされます。
 
-<html>
-<body>
-   <table id="wrapper">
-      <tr>
-         <td>
-            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_win10_install_status_before_1704.png" alt="An image of the previous version of the loading screen, where the status simply said 'installing.'" width=200 height=366 align=center>
-          </td>
-          <td>
-             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_win10_install_status_after_1704.png" alt="An image of the updated version of the loading screen, which now shows an install progress bar." width=200 height=366 align=center>
-           </td>
-      </tr>
-   </table>
-</body>
-</html>
+__変更前__
+  ![変更前のバージョンの読み込み画面の画像。状態は単に "インストール中" と表示されていました。](./media/cp_win10_install_status_before_1704.png)
+
+__変更後__
+  ![変更後のバージョンの読み込み画面の画像。インストール進行状況バーが表示されるようになりました。](./media/cp_win10_install_status_after_1704.png)
 
 ## <a name="february-2017"></a>2017 年 2 月
 

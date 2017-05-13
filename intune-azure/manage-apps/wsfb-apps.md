@@ -1,12 +1,12 @@
 ---
-title: "ビジネス向け Windows ストアからのアプリの管理"
+title: "ビジネス向け Windows ストアからのアプリの管理 | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: ビジネス向け Windows ストアから取得したアプリを同期して Intune に取り込み、そのアプリを割り当てて追跡します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/24/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 6e410a37f91e0828d5f6b205acb4d340dae86c6d
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: 40b07a011d0d4126945f6cce6304a4cbf5e8b6aa
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/03/2017
 
 ---
 
@@ -31,10 +32,10 @@ ms.lasthandoff: 04/24/2017
 * ストアから購入したアプリの一覧を Intune に同期することができます。
 * 同期されているアプリは Intune 管理コンソールに表示され、他のアプリと同様に割り当てることができます。
 * 使用可能なライセンス数、および Intune 管理コンソールで使用中のライセンス数を追跡することができます。
-* 使用可能なライセンス数が不足している場合、Intune はアプリの展開とインストールをブロックします。
+* 使用可能なライセンス数が不足している場合、Intune はアプリの割り当てとインストールをブロックします。
 
 ## <a name="before-you-start"></a>アップグレードを開始する前に
-ビジネス向け Windows ストアからアプリを同期して展開する前に、以下のことを確認してください。
+ビジネス向け Windows ストアからアプリを同期して割り当てる前に、以下のことを確認してください。
 * 組織のモバイル デバイス管理機関として Intune を構成する必要があります。
 * ビジネス向け Windows ストアのアカウントにサインアップする必要があります。
 * Intune に Windows ビジネス ストア アカウントを関連付けた後で別のアカウントに変更することはできません。
@@ -50,7 +51,7 @@ Intune コンソールで同期を有効にする前に、以下の手順に従�
 3. [管理ツール] ページで、**[管理ツールの追加]** を選択し、**[Microsoft Intune]** を選択します。
 
 > [!NOTE]
-> ビジネス向け Windows ストアのアプリを展開するために複数の管理ツールを使用する場合、これまでは、ビジネス向け Windows ストアにはそのうちの 1 つしか関連付けることはできませんでした。 これからは、複数のツール (Intune や Configuration Manager など) をストアに関連付けることができます。
+> ビジネス向け Windows ストアのアプリを割り当てるために複数の管理ツールを使用する場合、これまでは、ビジネス向け Windows ストアにはそのうちの 1 つしか関連付けることはできませんでした。 これからは、複数のツール (Intune や Configuration Manager など) をストアに関連付けることができます。
 
 これで、作業を続行し、Intune コンソールで同期を設定することができます。
 
@@ -72,13 +73,13 @@ Intune コンソールで同期を有効にする前に、以下の手順に従�
 
 ## <a name="assign-apps"></a>アプリを割り当てる
 
-他の Intune アプリを展開する場合と同じように、ストアからアプリを割り当てます。 詳細については、「[How to assign apps to groups with Microsoft Intune (Microsoft Intune を使ってアプリをグループに割り当てる方法)](deploy-apps.md)」を参照してください。 ただし、**[すべてのアプリ]** ページからではなく、**[ライセンスされたアプリ]** ページからアプリを割り当てます。
+他の Intune アプリを割り当てる場合と同じように、ストアからアプリを割り当てます。 詳細については、「[How to assign apps to groups with Microsoft Intune (Microsoft Intune を使ってアプリをグループに割り当てる方法)](deploy-apps.md)」を参照してください。 ただし、**[すべてのアプリ]** ページからではなく、**[ライセンスされたアプリ]** ページからアプリを割り当てます。
 
-ビジネス向け Windows ストア アプリを割り当てると、アプリをインストールする各ユーザーによってライセンスが使用されます。 展開されたアプリに対して使用可能なライセンスをすべて使用すると、それ以上コピーを展開することはできません。 以下のいずれかの操作を実行する必要があります。
+ビジネス向け Windows ストア アプリを割り当てると、アプリをインストールする各ユーザーによってライセンスが使用されます。 割り当てられたアプリに対して使用可能なライセンスをすべて使用すると、それ以上コピーを割り当てることはできません。 以下のいずれかの操作を実行する必要があります。
 * 一部のデバイスからアプリをアンインストールする。
-* 現在の展開の範囲を絞り、十分なライセンスがあるユーザーのみを対象にする。
+* 現在の割り当ての範囲を絞り、十分なライセンスがあるユーザーのみを対象にする。
 * ビジネス向け Windows ストアからアプリのコピーをさらに購入する。
 
 > [!Important]
-> 展開されたアプリは、最初にデバイスを登録したユーザーのみが利用できます。 他のユーザーは、そのアプリにアクセスすることができません。
+> 割り当てられたアプリは、最初にデバイスを登録したユーザーのみが利用できます。 他のユーザーは、そのアプリにアクセスすることができません。
 

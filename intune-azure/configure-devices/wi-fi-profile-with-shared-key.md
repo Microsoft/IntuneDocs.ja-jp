@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 174e919a2980ca2cf0e97cc41f5b048183a9d4a7
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: d318b8c1b6ba6ac73920e3f55519ae0472cb570c
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/05/2017
 
 
 
@@ -60,7 +61,7 @@ Intune の**カスタム デバイス プロファイル**を使用して、事�
 4. **[OK]** を選択して保存し、ポリシーを割り当てます。
 
     > [!NOTE]
-    > このポリシーは、ユーザー グループにのみデプロイできます。
+    > このポリシーは、ユーザー グループにのみ割り当てることができます。
 
 次回各デバイスがチェックインするときに、ポリシーは適用され、そのデバイスに Wi-Fi プロファイルが作成されます。 デバイスは自動的にネットワークに接続できるようになります。
 
@@ -72,7 +73,7 @@ Intune の**カスタム デバイス プロファイル**を使用して、事�
 >
 > `<protected>false</protected>` を **false** に設定する必要があります。**true** に設定すると、デバイスはパスワードが暗号化されていると見なし、暗号化の解除を試みます。その結果、接続が失敗する場合があります。
 >
->  `<hex>53534944</hex>` は、`<name><SSID of wifi profile></name>` の&16; 進値に設定する必要があります。
+>  `<hex>53534944</hex>` は、`<name><SSID of wifi profile></name>` の 16 進値に設定する必要があります。
 >  Windows 10 デバイスは、"*0x87D1FDE8 修復できませんでした*" という間違ったエラーを返す場合があります。それでも、これまでどおり、プロファイルでプロビジョニングすることができます。
 
 ```

@@ -14,10 +14,11 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 312a3ae8a74b0a8460f969f96bee14077c6c7161
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 5888ffa6f16e9a9807ce1f9a9eb0594ed31b5b18
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -47,18 +48,18 @@ Skype for Business Online にアクセスするデバイスは、次の条件を
 
 -   **Android** デバイスまたは **iOS** デバイスである。
 
--   [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に**登録**されている。
+-   Intune に**登録**されている。
 
--   展開されているすべての [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] コンプライアンス ポリシーに**準拠**している。
+-   展開されているすべての Intune コンプライアンス ポリシーに**準拠**している。
 
 
 デバイスの状態は Azure Active Directory に格納され、指定した条件に基づいて、アクセスが許可されたりブロックされたりします。
 
 条件が満たされない場合、ユーザーにはサインイン時に以下のうちのいずれかのメッセージが表示されます。
 
--   デバイスが [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録されていない、または Azure Active Directory に登録されていない場合は、メッセージが表示され、ポータル サイト アプリのインストールと登録の手順が示されます。
+-   デバイスが Intune または Azure Active Directory に登録されていない場合は、会社ポータルのアプリをインストールおよび登録する手順を含むメッセージが表示されます。
 
--   デバイスがポリシーに準拠していない場合は、ユーザーを [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ポータル サイト Web サイトやポータル サイト アプリに導くメッセージが表示されます。このポータルで、問題とその修正方法に関する情報を確認することができます。
+-   デバイスがポリシーに準拠していない場合は、ユーザーを Intune ポータル サイト Web サイトやポータル サイト アプリに導くメッセージが表示されます。このポータルで、問題とその修正方法に関する情報を確認することができます。
 
 ## <a name="configure-conditional-access-for-skype-for-business-online"></a>Skype for Business Online の条件付きアクセスの構成
 
@@ -77,7 +78,7 @@ Skype for Business ポリシーに対して使用する 2 つのグループの�
 コンプライアンス ポリシーを[作成](create-a-device-compliance-policy-in-microsoft-intune.md)し、ポリシーによって影響を受けるすべてのデバイスに[展開](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)します。 これは、**対象グループ**内のユーザーによって使用されるすべてのデバイスです。
 
 > [!NOTE]
-> コンプライアンス ポリシーは [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] グループに展開されますが、条件付きアクセス ポリシーは、Azure Active Directory セキュリティ グループを対象とします。
+> コンプライアンス ポリシーは Intune グループに展開されますが、条件付きアクセス ポリシーは、Azure Active Directory セキュリティ グループを対象とします。
 
 
 > [!IMPORTANT]

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 2c79f5f796152e930c4a952388541383ab50e595
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: efb3dee1f9617f2c8843fcb99ed251f7384329cb
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -29,7 +30,7 @@ ms.lasthandoff: 03/17/2017
 
 Intune で管理する、アプリごとの VPN プロファイルを Android 5.0 以降のデバイスに作成できます。 最初に、Pulse Secure 接続の種類を使用する VPN プロファイルを作成します。 次に、特定のアプリと VPN プロファイルを関連付けるカスタム構成ポリシーを作成します。
 
-Android デバイスまたはユーザー グループにポリシーをデプロイした後、ユーザーは PulseSecure VPN を開始します。 PulseSecure は、特定のアプリからのトラフィックのみに OpenVPN 接続の使用を許可します。
+Android デバイスまたはユーザー グループにポリシーを割り当てた後、ユーザーは PulseSecure VPN を開始します。 PulseSecure は、特定のアプリからのトラフィックのみに OpenVPN 接続の使用を許可します。
 
 > [!NOTE]
 >
@@ -65,7 +66,7 @@ VPN プロファイル名は、次の手順で使用するためメモしてお�
 3. **[OMA-URI のカスタム設定]** ブレードで、**[追加]** を選択します。
     - 設定の名前を入力します。
     - **[データ型]** に **[文字列]** を指定します。
-    - **[OMA-URI]** には、**./Vendor/MSFT/VPN/Profile/*Name*/PackageList**の文字列を指定します。ここの*Name* は手順 1 でメモした VPN プロファイル名です。 この例では、文字列は **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList** になります。
+    - **[OMA-URI]** には、**./Vendor/MSFT/VPN/Profile/*Name*/PackageList** の文字列を指定します。ここの *Name* は手順 1 でメモした VPN プロファイル名です。 この例では、文字列は **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList** になります。
     - **[値]** には、プロファイルと関連付けるセミコロンで区切られたパッケージの一覧を入力します。 たとえば、Excel と Google Chrome ブラウザーで VPN 接続を使用するには、「**com.microsoft.office.excel;com.android.chrome**」と入力します。
 
 ![Android のアプリごとの VPN カスタム ポリシーの例](./media/android_per_app_vpn_oma_uri.png)
@@ -76,7 +77,7 @@ VPN プロファイル名は、次の手順で使用するためメモしてお�
   1.    **[OMA-URI のカスタム設定]** ブレードで、**[追加]** を選択します。
   2.    設定の名前を入力します。
   3.    **[データ型]** に **[文字列]** を指定します。
-  4.    **[OMA-URI]** には、**./Vendor/MSFT/VPN/Profile/*Name*/Mode**の文字列を使用します。ここの*Name* は手順 1 でメモした VPN プロファイル名です。 この例では、文字列は **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode** になります。
+  4.    **[OMA-URI]** には、**./Vendor/MSFT/VPN/Profile/*Name*/Mode** の文字列を使用します。ここの *Name* は手順 1 でメモした VPN プロファイル名です。 この例では、文字列は **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode** になります。
   5.    **[値]** には、「**BLACKLIST**」または「**WHITELIST**」と入力します。
 
 
