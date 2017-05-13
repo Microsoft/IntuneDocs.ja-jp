@@ -84,7 +84,7 @@
 #### [Exchange のアクセス ルール](deploy-use/exchange-access-rules-for-mobile-devices.md)
 ### [Android for Work の管理](deploy-use/android-for-work.md)
 
-## [ソフトウェア エージェントを使用した PC の管理](deploy-use/manage-windows-pcs-with-microsoft-intune.md)
+## [ソフトウェア クライアントを使用した PC の管理](deploy-use/manage-windows-pcs-with-microsoft-intune.md)
 ### [PC クライアントのインストール](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
 ### [一般的な PC 管理タスク](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [PC ポリシー](deploy-use/use-policies-to-simplify-windows-pc-management.md)
