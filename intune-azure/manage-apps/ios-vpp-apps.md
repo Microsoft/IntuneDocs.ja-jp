@@ -1,12 +1,12 @@
 ---
-title: "iOS のボリューム購入アプリの管理"
+title: "iOS のボリューム購入アプリの管理 | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Intune Azure プレビュー: iOS ストアからボリューム購入したアプリを Intune に同期し、その使用状況を管理および追跡する方法について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/24/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,10 +16,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: ff43a0be6ebc124bb7e52e5be31e89985ce32166
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: 1909549b321f51069bb6ad83f2f245afbf60b7dd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/24/2017
+ms.lasthandoff: 05/03/2017
 
 ---
 
@@ -87,5 +87,5 @@ iOS アプリの複数のライセンスを購入するには、[ビジネス向
 
 対象となるデバイスを持つユーザーが初めて VPP アプリをインストールしようとすると、Apple Volume Purchase Program に参加するように求められます。 アプリのインストールを実行する前に、このプログラムに参加する必要があります。
 
-VPP アプリを利用可能として展開すると、アプリのコンテンツとライセンスは、アプリ ストアから直接展開されます。
+VPP アプリを利用可能として割り当てると、アプリのコンテンツとライセンスは、アプリ ストアから直接割り当てられます。
 

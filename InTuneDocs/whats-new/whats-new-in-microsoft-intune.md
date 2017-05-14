@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/20/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,10 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 0dc3fd3b4cc355bc95677ca648efdee07d1066b2
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: ed51f7ff7b6fd5a3234eb699234c6ad5fb3bdbc2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/24/2017
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -29,12 +29,6 @@ Microsoft Intune の今回のリリースの新機能について説明します
 > これらのすべての機能は、最終的にハイブリッド環境 (Configuration Manager と Intune の共存環境) でサポートされるようになります。 最新のハイブリッド機能の詳細については、[ハイブリッド環境の新機能に関するページ](https://docs.microsoft.com/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management)を参照してください。
 
 ## <a name="new-capabilities"></a>新しい機能
-
-### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>すべてのプラットフォームでのポータル サイト アプリのサインイン操作の改善<!--User Story 1132123-->
-
-Android、iOS、Windows の Intune ポータル サイト アプリのサインイン エクスペリエンスを改善中です。 Azure AD でこの変更が行われ次第、自動的にすべてのプラットフォームでポータル サイト アプリのユーザー エクスペリエンスが一新される予定です。 また、自動生成される一時使用コードを使用して、別のデバイスからポータル サイトにサインインできるようになりました。 これは、資格情報を使用せずにサインインする必要がある場合には特に便利です。
-
-以前のサインイン エクスペリエンス、資格情報を使用した新たなエクスペリエンス、別のデバイスからのエクスペリエンスのスクリーンショットを [アプリ UI の新機能](whats-new-in-intune-app-ui.md)に関するページで確認できます。
 
 ### <a name="myapps-available-for-managed-browser---822308-822303--"></a>Managed Browser に使用できる MyApps <!--822308, 822303-->
 
@@ -53,6 +47,21 @@ Android 用ポータル サイト アプリが更新されて、起動または�
 ### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>アプリの SharePoint Online へのアクセスをブロック<!-- 679339 -->
 
 アプリ ベースの条件付きアクセス ポリシーを作成して、アプリ保護ポリシーが適用されていないアプリが [SharePoint Online](/InTune/deploy-use/mam-ca-for-sharepoint-online) にアクセスするのをブロックできるようになりました。 アプリ ベースの条件付きアクセスのシナリオでは、Azure Portal を使用して SharePoint Online にアクセスするアプリを指定できます。
+
+### <a name="single-sign-on-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>iOS 用のポータル サイトおよび Outlook からのシングル サインオンのサポート <!--834012-->
+iOS 用のポータル サイト アプリに既にサインインしているユーザーは、同じデバイス上の同じアカウントを使う Outlook アプリであればサインインしなおす必要はありません。 Outlook アプリを起動するときに、自分のアカウントを選んで自動的にサインインできます。 現在、他の Microsoft アプリにこの機能を追加する作業を進めています。
+
+### <a name="improved-status-messaging-in-the-company-portal-app-for-ios---744866--"></a>iOS 用ポータル サイト アプリでの状態メッセージの向上<!--744866-->
+デバイスで起きていることがよくわかる情報を提供する、新しい具体的なエラー メッセージが iOS 用のポータル サイト アプリに表示されるようになります。 これらのエラー情報は、これまでは "ポータル サイトは一時的に使用できません" というタイトルの一般的なエラー メッセージに含まれていました。 さらに、ユーザーがインターネットに接続できないときに iOS でポータル サイトを開始した場合は、"インターネットに接続されていません" という内容の固定ステータス バーがホーム ページに表示されるようになります。
+
+### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Windows 10 ポータル サイト アプリのアプリ インストール状態の向上<!--676495-->
+
+Windows 10 ポータル サイト アプリで開始されるアプリ インストールの新しい改善点は次のとおりです。
+-    MSI パッケージのインストール進行状況レポートの高速化
+-    Windows 10 Anniversary Update 以降を実行するデバイス上の先進アプリのインストール進行状況レポートの高速化
+-    Windows 10 Anniversary Update 以降を実行するデバイス上の先進アプリのインストールで使用される新しい進行状況バー
+
+新しい進行状況バーは、[Intune アプリ UI の新機能に関するページ](whats-new-in-intune-app-ui.md)で確認できます。
 
 ### <a name="bulk-enroll-windows-10-devices----747607---"></a>Windows 10 デバイスを一括登録する <!-- 747607 -->
 
@@ -80,7 +89,6 @@ Intune PC エージェントによって管理されるデバイスへの既存�
 
 移行終了後、新しい PC 展開を行いたい場合は、appx を PC appx として再アップロードする必要があります。 詳しくは、Intune サポート チーム ブログの「[Appx changes in Intune on Azure](https://aka.ms/appxchange)」 (Intune on Azure での appx の変更) をご覧ください。  
 
-
 ## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Azure での新しい Intune 管理者エクスペリエンスのパブリック プレビューの新機能<!--736542-->
 
 2017 年初めには、すべての管理者エクスペリエンスが Azure に移行され、Graph API を幅広く使用する最新のサービス プラットフォーム上で、EMS の中核的ワークフローの強力な統合管理を利用できるようになります。
@@ -96,8 +104,13 @@ Azure Portal の管理者エクスペリエンスでは、既に発表されて�
 
 Intune クラシック ポータル (Silverlight) で使用される既存のモバイル アプリケーション管理 (MAM) の管理ロール (共同作成者、所有者、および読み取り専用) は、Intune Azure Portal の新しいロール ベースの管理制御 (RBAC) の完全なセットで置き換えられます。 Azure Portal に移行すると、管理者をこれらの新しい管理ロールに割り当て直す必要があります。 RBAC と新しいロールの詳細については、[Microsoft Intune のロール ベースのアクセス制御](/intune-azure/access-control/role-based-access-control)に関する記事を参照してください。
 
-
 ## <a name="whats-coming"></a>今後の更新情報
+
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>すべてのプラットフォームでのポータル サイト アプリのサインイン操作の改善<!--User Story 1132123-->
+
+Android、iOS、Windows での Intune ポータル サイト アプリのサインイン エクスペリエンス向上のために、今後数か月間に予定されている変更についてお知らせします。 Azure AD でこの変更が行われ次第、自動的にすべてのプラットフォームでポータル サイト アプリのユーザー エクスペリエンスが一新される予定です。 また、自動生成される一時使用コードを使用して、別のデバイスからポータル サイトにサインインできるようになりました。 これは、資格情報を使用せずにサインインする必要がある場合には特に便利です。
+
+以前のサインイン エクスペリエンス、資格情報を使用した新たなエクスペリエンス、別のデバイスからのエクスペリエンスのスクリーンショットを [アプリ UI の新機能](whats-new-in-intune-app-ui.md)に関するページで確認できます。
 
 ### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>変更の計画: Intune で Intune パートナー ポータル エクスペリエンスが変更されます<!-- 1050016 -->
 
@@ -105,12 +118,14 @@ Intune クラシック ポータル (Silverlight) で使用される既存のモ
 
 お客様がパートナーの管理者である場合は、Intune パートナーのページで顧客に代わって閲覧したり、操作したりすることができなくなります。代わりに、マイクロソフトの他の 2 つのパートナー ポータルのいずれかでサインインする必要があります。
 
-[Microsoft パートナー センター](https://partnercenter.microsoft.com/)と [Microsoft Office 365 パートナー管理センター](https://portal.office.com/)の両方で、管理している顧客アカウントにサインインできます。 パートナーとして前進するために、これらのサイトのいずれかを使用して顧客の管理を行いましょう。 
+[Microsoft パートナー センター](https://partnercenter.microsoft.com/)と [Microsoft Office 365 パートナー管理センター](https://portal.office.com/)の両方で、管理している顧客アカウントにサインインできます。 パートナーとして前進するために、これらのサイトのいずれかを使用して顧客の管理を行いましょう。
 
 
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple の要求による Application Transport Security 対応のための更新<!--748318-->
 
-Apple は、2017 年春より Application Transport Security (ATS) の特定の要件を適用すると発表しました。 ATS では、HTTPS 経由で行われるアプリ通信すべてに、より厳格なセキュリティ保護が適用されます。 この変更により、iOS ポータル サイト アプリを使用している Intune ユーザーが影響を受けます。 詳細については、[Intune サポートのブログ](https://aka.ms/compportalats)をご覧ください。
+Apple は、Application Transport Security (ATS) の特定の要件を適用すると発表しました。 ATS では、HTTPS 経由で行われるアプリ通信すべてに、より厳格なセキュリティ保護が適用されます。 この変更により、iOS ポータル サイト アプリを使用している Intune ユーザーが影響を受けます。
+
+Microsoft では、新しい ATS 要件を適用する Apple TestFlight プログラムから、iOS 用ポータル サイト アプリのバージョンを入手できるようにしています。 ATS コンプライアンスをテストできるように、このバージョンを試す場合は、お客様の姓名、電子メール アドレス、および会社名を <a href="mailto:CompanyPortalBeta@microsoft.com?subject=Register to TestFlight ATS Company Portal app">CompanyPortalBeta@microsoft.com</a> に電子メールで送信してください。 詳細については、[Intune サポートのブログ](https://aka.ms/compportalats)をご覧ください。
 
 ### <a name="see-also"></a>関連項目
 * [Microsoft Intune のブログ](http://go.microsoft.com/fwlink/?LinkID=273882)
