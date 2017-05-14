@@ -14,10 +14,11 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: cfb3a7cc4e70a062bc511cd4fe80a50b6262864f
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 742a989744a11dbc1c9e17a25b70388e06dd5ae7
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -40,7 +41,7 @@ Microsoft Intune を使用して、Exchange Online または Exchange Online Ded
 
 - **Enterprise Mobility + Security (EMS) サブスクリプション**または **Azure Active Directory (Azure AD) Premium サブスクリプション**を取得します。ユーザーに EMS または Azure AD のライセンスが付与される必要があります。 詳細については、「[Enterprise Mobility pricing page](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility の価格) ページまたは「[Azure Active Directory の価格](https://azure.microsoft.com/pricing/details/active-directory/)」ページを参照してください。
 
--  オプションの **Intune Service to Service Connector** の構成を検討します。これによって [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] が Exchange Online に接続され、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] コンソールを使用してデバイス情報を管理できるようになります。 コンプライアンス ポリシーまたは条件付きアクセス ポリシーを使用するうえでコネクタを使用する必要はありませんが、条件付きアクセスの影響を評価するためのレポートの実行に必要です。
+-  オプションの **Intune Service to Service Connector** の構成を検討します。これによって Intune が Exchange Online に接続され、Intune コンソールを使ってデバイス情報を管理できるようになります。 コンプライアンス ポリシーまたは条件付きアクセス ポリシーを使用するうえでコネクタを使用する必要はありませんが、条件付きアクセスの影響を評価するためのレポートの実行に必要です。
     -  詳細については、[Intune Service to Service Connector](intune-service-to-service-exchange-connector.md) に関するページを参照してください。
 
    > [!NOTE]
@@ -50,21 +51,21 @@ Microsoft Intune を使用して、Exchange Online または Exchange Online Ded
 
 条件付きアクセス ポリシーを構成してユーザーに適用すると、ユーザーが電子メールに接続するには、使用する**デバイス**が以下の条件を満たさなくてはならなくなります。
 
--   ドメインに参加している PC であるか、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に**登録**されている。
+-   ドメインに参加している PC であるか、または Intune に**登録**されていること。
 
--  **Azure Active Directory に登録されている**。 この登録は、デバイスが [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録されると自動的に行われます。 また、クライアントの Exchange ActiveSync ID を Azure Active Directory に登録する必要があります。
+-  **Azure Active Directory に登録されている**。 この登録は、デバイスが Intune に登録されると自動的に行われます。 また、クライアントの Exchange ActiveSync ID を Azure Active Directory に登録する必要があります。
 
   Azure Active Directory Device Registration サービスは、Intune や Office 365 のお客様に対して自動的にアクティブ化されます。 ADFS Device Registration Service をデプロイ済みのお客様には、オンプレミスの Active Directory で登録されたデバイスは表示されません。
 
--   そのデバイス、またはオンプレミス ドメインに参加しているドメインに展開された [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] コンプライアンス ポリシーに**準拠**している。
+-   そのデバイス、またはオンプレミス ドメインに参加しているドメインに展開された Intune コンプライアンス ポリシーに**準拠**していること。
 
 ### <a name="when-the-device-is-not-compliant"></a>デバイスが準拠していない場合
 
 条件付きアクセス ポリシーが満たされない場合、デバイスはすぐに検疫され、ユーザーは電子メールを受信し、サインイン時に次のいずれかの検疫通知が表示されます。
 
-- デバイスが [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録されていない、または Azure Active Directory に登録されていない場合は、メッセージが表示され、ポータル サイト アプリのインストール、デバイスの登録、および電子メールのアクティブ化の手順が示されます。 また、このプロセスによって、デバイスの Exchange ActiveSync ID が Azure Active Directory のレコードに関連付けられます。
+- デバイスが Intune に登録されていない、または Azure Active Directory に登録されていない場合は、メッセージが表示され、ポータル サイト アプリのインストール、デバイスの登録、および電子メールのアクティブ化の手順が示されます。 また、このプロセスによって、デバイスの Exchange ActiveSync ID が Azure Active Directory のレコードに関連付けられます。
 
--   デバイスがコンプライアンス ポリシーのルールに準拠していないと評価された場合は、ユーザーを [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ポータル サイト Web サイトまたはポータル サイト アプリに導くメッセージが表示されます。このポータルで、問題とその修復方法に関する情報を確認することができます。
+-   デバイスがコンプライアンス ポリシーのルールに準拠していないと評価された場合は、ユーザーを Intune ポータル サイト Web サイトまたはポータル サイト アプリに導くメッセージが表示されます。このポータルで、問題とその修復方法に関する情報を確認することができます。
 
 ### <a name="how-conditional-access-works-with-exchange-online"></a>Exchange Online での条件付きアクセスのしくみ
 
@@ -114,7 +115,7 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 
   ドメインに参加しているか、コンプライアンス ポリシーのルールに準拠している PC であること。
 
-  準拠していると見なされるためには、PC が [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録済みで、ポリシーに準拠している必要があります。
+  準拠していると見なされるためには、PC が Intune に登録済みで、ポリシーに準拠している必要があります。
 
   ドメインに参加する PC の場合、Azure Active Directory に[デバイスを自動的に登録](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/)するための条件付きアクセスを設定する必要があります。
 
@@ -138,11 +139,11 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 ### <a name="step-2-evaluate-the-effect-of-the-conditional-access-policy"></a>手順 2: 条件付きアクセス ポリシーの効果を評価する
 **モバイル デバイスのインベントリ レポート**を使用して、条件付きアクセス ポリシーを構成した後に Exchange へのアクセスがブロックされるデバイスを特定できます。
 
-これを行うには、[Microsoft Intune Service to Service Connector](intune-service-to-service-exchange-connector.md) を使用して、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] と Exchange の間の接続を構成します。
+これを行うには、[Microsoft Intune Service to Service Connector](intune-service-to-service-exchange-connector.md) を使って、Intune と Exchange の間の接続を構成します。
 1.  **[レポート]**、**[モバイル デバイスのインベントリ レポート]** に移動します。
 ![[モバイル デバイスのインベントリ レポート] ページのスクリーンショット](../media/IntuneSA2bMobileDeviceInventoryReport.png)
 
-2.  レポート パラメーターで、評価する [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] グループを選択し、必要に応じて、ポリシーを適用するデバイス プラットフォームを選択します。
+2.  レポート パラメーターで、評価する Intune グループを選択し、必要に応じて、ポリシーを適用するデバイス プラットフォームを選択します。
 3.  組織のニーズを満たす条件を選択したら、**[レポートの表示]** を選択します。
 レポート ビューアが新しいウィンドウで開きます。
 ![モバイル デバイスのインベントリ レポートのサンプルのスクリーンショット](../media/IntuneSA2cViewReport.PNG)
@@ -200,7 +201,7 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
     > [!NOTE]
     > コンプライアンス ポリシーを展開していない場合は、デバイスがポリシーに準拠しているものと見なされます。
     >
-    > コンプライアンスの状態に関係なく、ポリシーの対象となっているすべてのユーザーがデバイスを [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録する必要があります。
+    > コンプライアンスの状態に関係なく、ポリシーの対象となっているすべてのユーザーがデバイスを Intune に登録する必要があります。
 
 3.  **[アプリケーション アクセス]** では、先進認証を使用するアプリに対して、ポリシーを適用するプラットフォームを選択する方法が 2 つあります。 サポートされているプラットフォームは、Android、iOS、Windows、および Windows Phone です。
 
@@ -257,7 +258,7 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 
 -   ユーザーが電子メール アカウントを作成すると、デバイスはすぐにブロックされます。
 
--   ブロックされたユーザーがデバイスを [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] に登録し、非準拠の問題を修正すると、メールのアクセスは 2 分以内でブロック解除されます。
+-   ブロックされたユーザーがデバイスを Intune に登録し、非準拠の問題を修正すると、メールのアクセスは 2 分以内でブロック解除されます。
 
 -   ユーザーがデバイスの登録を解除した場合、メールは約 6 時間後にブロックされます。
 
@@ -267,7 +268,7 @@ PC が Office デスクトップ アプリケーションを実行して **Excha
 
 #### <a name="to-view-devices-that-are-blocked-from-exchange"></a>Exchange からブロックされているデバイスを表示するには
 
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ダッシュボードで、**[Exchange からブロックされているデバイス]** タイルを選択します。ブロックされているデバイスの数と詳細情報へのリンクが表示されます。
+Intune ダッシュボードで、**[Exchange からブロックされているデバイス]** タイルを選択します。ブロックされているデバイスの数と詳細情報へのリンクが表示されます。
 ![Exchange へのアクセスがブロックされているデバイスの数を表示した Intune ダッシュボードのスクリーンショット](../media/IntuneSA6BlockedDevices.PNG)
 
 ## <a name="next-steps"></a>次のステップ
