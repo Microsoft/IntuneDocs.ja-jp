@@ -14,10 +14,11 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 31b7ff2b9644f47107199f0f1d237847169c3143
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: a7d38caac1cfd035c66d02579766d60d4394dd5e
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -153,11 +154,11 @@ Intune 1703 バージョン以降では、新しいアプリ保護ポリシー�
 
 2.  ユーザー グループの一覧が、 **[ユーザー グループの追加]** ブレードに表示されます。 これは、 **Azure Active Directory**内にあるすべてのセキュリティ グループの一覧です。 このポリシーを適用するユーザー グループを選択し、**[選択]** を選択します。 **[選択]** を選択すると、ポリシーがユーザーに展開されます。
 
-    ![Azure Active Directory ユーザーの一覧を示している [ユーザー グループの追加] ブレードのスクリーン ョット](../media/AppManagement/AzurePortal_MAM_SelectUserstoDeploy.png)
+    ![Azure Active Directory ユーザーの一覧を示している [ユーザー グループの追加] ブレードのスクリーンショット](../media/AppManagement/AzurePortal_MAM_SelectUserstoDeploy.png)
 
     これで、作成したポリシーはユーザーに展開されました。
 
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ライセンスが割り当てられているユーザーのみが、このポリシーの影響を受けます。 選択したセキュリティ グループ内のユーザーのうち、[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] ライセンスが割り当てられていないユーザーは影響を受けません。
+Intune ライセンスが割り当てられているユーザーのみが、このポリシーの影響を受けます。 選択したセキュリティ グループ内のユーザーのうち、Intune ライセンスが割り当てられていないユーザーは影響を受けません。
 
 >[!IMPORTANT]
 > Intune を使用し、Configuration Manager によって iOS デバイスと Android デバイスを管理する場合、このポリシーは、選択したグループ直下のユーザーにのみ適用されます。 選択したグループ内にネストされた子グループのメンバーは、影響を受けません。
