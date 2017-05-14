@@ -15,9 +15,10 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 647415914fb0f44807eff7baf7a56ea3a382f027
+ms.contentlocale: ja-jp
 ms.lasthandoff: 02/18/2017
 
 
@@ -59,7 +60,7 @@ ms.lasthandoff: 02/18/2017
 |---------------|------------|-----------|
 |**自動更新を許可する**<br>./Vendor/MSFT/Policy/Config/Update/AllowAutoUpdate|デスクトップのみ<br>**データ型:** 整数<br />**値:** **0** - **5** (既定: **1**)|
 |**インストール日のスケジュール設定**<br>./Vendor/MSFT/Policy/Config/Update/ScheduledInstallDay|モバイルのみ<br>**データ型:** 整数<br />**値:**<br>**0** : 毎日 (既定値)<br>**1**: 日曜日<br>**2**: 月曜日<br>**3**: 火曜日<br>**4**: 水曜日<br>**5**: 木曜日<br>**6**: 金曜日<br>**7**: 土曜日|
-|**インストール時刻のスケジュール設定**<br>./Vendor/MSFT/Policy/Config/Update/ScheduledInstallTime|デスクトップおよびモバイル<br />**データ型:** 整数<br />**値:** **0** ～ **23** 時間 (**0** は午前&0; 時) (既定: **3**)|
+|**インストール時刻のスケジュール設定**<br>./Vendor/MSFT/Policy/Config/Update/ScheduledInstallTime|デスクトップおよびモバイル<br />**データ型:** 整数<br />**値:** **0** ～ **23** 時間 (**0** は午前 0 時) (既定: **3**)|
 |**DeviceLock/AllowIdleReturnWithoutPassword**<br>./Vendor/MSFT/Policy/Config/DeviceLock/AllowIdleReturnWithoutPassword|モバイルのみ<br />**データ型:** 整数<br />**値:**<br>**0**: ユーザーはパスワードの猶予期間タイマーを設定できず、値は "毎回" に設定されます。<br>**1**: ユーザーがパスワードの猶予期間タイマーを設定できます (既定)。|
 |**WiFi/AllowWiFi**<br>./Vendor/MSFT/Policy/Config/WiFi/AllowWiFi|モバイルのみ<br />**データ型:** 整数<br />**値:**<br>**0**: **Wi-Fi 接続の使用**を許可しません。<br>**1**: **Wi-Fi 接続の使用を許可** します (既定)。|
 |**WiFi/AllowInternetSharing**<br>./Vendor/MSFT/Policy/Config/WiFi/AllowInternetSharing|デスクトップおよびモバイル<br>**データ型:** 整数<br />**値:** **0**: インターネット共有を許可しません。**1**: インターネット共有を許可します (既定)。|
@@ -122,7 +123,7 @@ ms.lasthandoff: 02/18/2017
 |**Experience/AllowCopyPaste**<br>./Vendor/MSFT/Policy/Config/Experience/AllowCopyPaste|デスクトップのみ<br />**データ型:** 整数<br />**値:** **0**: 許可しません。**1**: 許可します (既定)。|
 |**Force Start Size**<br>./Vendor/MSFT/Policy/Config/Start/ForceStartSize|モバイルのみ<br />**データ型:** 整数<br />**値:**<br>**0**: ユーザーによるサイズ変更を許可します (既定)。<br>**1**: 非全画面表示を強制します。<br>**2**: 全画面表示を強制します。|
 |**Update/RequireDeferUpgrade**<br>./Vendor/MSFT/Policy/Config/Update/RequireDeferUpgrade|デスクトップおよびモバイル<br />**データ型:** 整数<br />**値:**<br>**0**: アップグレードを遅延せず、CB (現在のブランチ) を維持します (既定)。<br>**1**: 更新とアップグレードの遅延を有効にします。デバイスは CBB (ビジネスの現在のブランチ) の規則に従います。<br />詳細については、以下を参照してください。<br>[Windows 10 サービスの概要](https://technet.microsoft.com/library/mt598226.aspx)<br>[Windows 10 の展開計画](https://technet.microsoft.com/library/mt574241.aspx)|
-|**Update/DeferUpdatePeriod**<br>./Vendor/MSFT/Policy/Config/Update/DeferUpdatePeriod|デスクトップおよびモバイル<br>**説明:** ソフトウェアの更新を最大 4 週間遅延させるポリシー。<br />**データ型:** 整数<br />**値:**<br> **0**: 直ちに更新プログラムを適用します (既定)。<br>**1 ** - **4**: ソフトウェアの更新を遅延する期間 (週)。<br />詳細については、以下を参照してください。<br>[Windows 10 サービスの概要](https://technet.microsoft.com/library/mt598226.aspx)<br>[Windows 10 の展開計画](https://technet.microsoft.com/library/mt574241.aspx)|
+|**Update/DeferUpdatePeriod**<br>./Vendor/MSFT/Policy/Config/Update/DeferUpdatePeriod|デスクトップおよびモバイル<br>**説明:** ソフトウェアの更新を最大 4 週間遅延させるポリシー。<br />**データ型:** 整数<br />**値:**<br> **0**: 直ちに更新プログラムを適用します (既定)。<br>**1**  - **4**: ソフトウェアの更新を遅延する期間 (週)。<br />詳細については、以下を参照してください。<br>[Windows 10 サービスの概要](https://technet.microsoft.com/library/mt598226.aspx)<br>[Windows 10 の展開計画](https://technet.microsoft.com/library/mt574241.aspx)|
 |**Update/DeferUpgradePeriod**<br>./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod|デスクトップおよびモバイル<br>**説明:** 機能のアップグレードを最大 8 か月間遅延させるポリシー。<br />**データ型:** 整数<br />**値:**<br>**0**: 直ちに更新プログラムを適用します (既定)。<br>**1** - **8**: 機能のアップグレードを遅延する期間 (月)。<br />詳細については、以下を参照してください。<br>[Windows 10 サービスの概要](https://technet.microsoft.com/library/mt598226.aspx)<br>[Windows 10 の展開計画](https://technet.microsoft.com/library/mt574241.aspx)|
 |**Update/PauseDeferrals**<br>./Vendor/MSFT/Policy/Config/Update/PauseDeferrals|デスクトップおよびモバイル<br>**説明:** デバイスが更新とアップグレードの受信を 5 週間停止できるようにします。<br />**データ型:** 整数<br />**値:**<br>**0**: 直ちに更新プログラムを適用します (既定)。<br>**1**: 更新とアップグレードを一時停止します (一時停止の期限は 5 週間です)。|
 
@@ -149,7 +150,7 @@ ms.lasthandoff: 02/18/2017
 |**AllowFullScanRemovableDriveScanning**<br>./Vendor/MSFT/Policy/Config/Defender/AllowFullScanRemovableDriveScanning|デスクトップのみ<br />**データ型:** 整数<br />**値:** **0** : 許可しない (既定)、**1** : 許可する|
 |**AllowFullScanOnMappedNetworkDrives**<br>./Vendor/MSFT/Policy/Config/Defender/AllowFullScanOnMappedNetworkDrives|デスクトップのみ<br />**データ型:** 整数<br />**値:** **0**: 許可しません。**1**: 許可します (既定)。|
 |**AllowScanningNetworkFiles**<br>./Vendor/MSFT/Policy/Config/Defender/AllowScanningNetworkFiles|デスクトップのみ<br />**データ型:** 整数<br />**値:** **0**: 許可しません。**1**: 許可します (既定)。許可に設定されている場合は、RTP がオンのときにも実行されます。|
-|**SignatureUpdateInterval**<br>./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateInterval|デスクトップのみ<br />**データ型:** 整数<br />**値:**<br>**0**: 定期的に署名を確認しません。<br>**1**:&1; 時間ごとにシグネチャを確認します。<br>**2**: 2 時間ごとなどに確認します。<br>**24**: 毎日確認します。<br>**既定値:** 8: 8 時間ごとに確認します。|
+|**SignatureUpdateInterval**<br>./Vendor/MSFT/Policy/Config/Defender/SignatureUpdateInterval|デスクトップのみ<br />**データ型:** 整数<br />**値:**<br>**0**: 定期的に署名を確認しません。<br>**1**: 1 時間ごとにシグネチャを確認します。<br>**2**: 2 時間ごとなどに確認します。<br>**24**: 毎日確認します。<br>**既定値:** 8: 8 時間ごとに確認します。|
 |**AllowCloudProtection**<br>./Vendor/MSFT/Policy/Config/Defender/AllowCloudProtection|デスクトップのみ<br />**データ型:** 整数<br />**値:** **0**: 許可しません。**1**: 許可します (既定)。|
 |**SubmitSamplesConsent**<br>./Vendor/MSFT/Policy/Config/Defender/SubmitSamplesConsent|デスクトップのみ<br />**データ型:** 整数<br />**値:**<br>**0**: 常に確認のメッセージを表示します (既定)。<br>**1** : 安全なサンプルを自動的に送信します。<br>**2** : 送信することはありません。<br>**3** : すべてのサンプルを自動的に送信します。|
 |**ExcludedExtensions**<br>./Vendor/MSFT/Policy/Config/Defender/ExcludedExtensions|デスクトップのみ<br />**データ型:** 文字列<br />**値:**<br>*&lt;セミコロンで区切られた拡張子の一覧&gt;* 例:  **obj; lib**<br>**既定値:** 拡張子は除外されません。|
