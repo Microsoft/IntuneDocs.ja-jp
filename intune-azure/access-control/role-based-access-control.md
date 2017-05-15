@@ -15,9 +15,10 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
 ms.openlocfilehash: e60edd86289e0fca2aa03660d8ce782e373c0236
+ms.contentlocale: ja-jp
 ms.lasthandoff: 03/15/2017
 
 
@@ -92,7 +93,7 @@ Intune には、次のロールが組み込まれています。これらのロ�
 
 ## <a name="custom-role-settings-reference"></a>カスタム ロールの設定リファレンス
 
-カスタム ロールを作成する場合は、次の&1; つ以上の設定を構成できます。
+カスタム ロールを作成する場合は、次の 1 つ以上の設定を構成できます。
 
 ### <a name="device-configurations"></a>デバイスの構成
 
@@ -151,7 +152,7 @@ Intune には、次のロールが組み込まれています。これらのロ�
 |**今すぐ再起動**|デバイスを再起動します。|
 |**リモート ロック**|デバイスをロックします。 デバイスの所有者は、ロックを解除するためにパスコードを使用する必要があります。|
 |**パスコードのリセット**|デバイスの新しいパスコードを生成します。新しいパスコードは、[<device name> 概要] ブレードに表示されます。|
-|****|Intune で管理されている会社データのみを削除します。 デバイスから個人データが削除されることはありません。|
+|**削除**|Intune で管理されている会社データのみを削除します。 デバイスから個人データが削除されることはありません。|
 |**ワイプ**|デバイスを既定の設定に戻します。|
 
 
