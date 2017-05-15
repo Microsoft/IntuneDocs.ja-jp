@@ -86,6 +86,7 @@
 #### [Windows Phone LOB アプリ](manage-apps/windows-phone-line-of-business-app.md)
 #### [Windows ストア アプリ](manage-apps/windows-store-app.md)
 #### [Windows LOB アプリ](manage-apps/windows-line-of-business-app.md)
+#### [Android for Work アプリ](/manage-apps/android-for-work-apps.md)
 ### [アプリを割り当てる](manage-apps/deploy-apps.md)
 ### [アプリの監視](manage-apps/monitor-apps.md)
 ### [アプリ構成プロファイルを使用する](manage-apps/app-configuration-policies.md)
