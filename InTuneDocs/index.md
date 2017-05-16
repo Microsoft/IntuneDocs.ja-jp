@@ -8,10 +8,11 @@ ms.assetid: 99e91b60-d6a5-44a8-908f-442161fbb077
 ms.topic: hub-page
 title: "Microsoft Intune のドキュメント | Microsoft ドキュメント"
 description: "Microsoft Intune の使用方法について説明します。"
-translationtype: Human Translation
-ms.sourcegitcommit: e96413a9f1398e7f025bbc2fbd66153c1c54c504
-ms.openlocfilehash: af6af39a041582bd93bac6aad551881be4cf0291
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 7db42e591df8ec6c21f73b7ce49be624e1e29690
+ms.openlocfilehash: 3d44038d316977ad0dedef2aee844a64ca24b744
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/02/2017
 
 ---
 <div id="main" class="v2">
@@ -40,6 +41,7 @@ ms.lasthandoff: 04/24/2017
                             </div>
                         </li>
                         <li>
+                        <a href="/intune-azure/introduction/what-is-microsoft-intune">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -49,14 +51,16 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune-azure/introduction/what-is-microsoft-intune">Azure ポータル プレビューでの Intune</a></h3>
+                                            <h3>Azure プレビュー ポータルでの Intune</h3>
                                             <p>Microsoft Intune から Azure Portal への移行に際して、新しいポータルで利用可能になった変更について説明します。 </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                        <a href="/intune/plan-design/introduction">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -66,14 +70,16 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune/plan-design/introduction">展開計画および設計</a></h3>
+                                            <h3>展開計画および設計</h3>
                                             <p>展開計画の作成、設計の作成、Intune のオンボーディング、および運用環境へのロールアウトの実施プロセスを段階的に説明します。</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="/intune-education/what-is-intune-for-education">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -83,14 +89,16 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune">Microsoft Intune に関してエンド ユーザーを教育する方法</a></h3>
-                                            <p>Intune で提供されるセキュリティで保護されたアクセスを採用するためにエンドユーザーを取得する方法について説明します。</p>
+                                            <h3>教育用の Intune とは</h3>
+                                            <p>クラスルームのデバイスで行う必要がある、日常的な操作について説明します。</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -100,14 +108,16 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview">Microsoft Graph での Intune の使用</a></h3>
+                                            <h3>Microsoft Graph での Intune の使用</h3>
                                             <p>Microsoft Graph Api を使用すると、Intune の制御とポリシーを構成できます。</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -117,14 +127,16 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">ライセンス数が 150 以上ある場合にFastTrack 特典を利用する</a></h3>
+                                            <h3>ライセンス数が 150 以上ある場合に FastTrack 特典を利用する</h3>
                                             <p>Microsoft の専門家とやり取りして、サービスの使用状況にアクセスし、修復、有効化、操作します。</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
                         <li>
+                            <a href="/intune/understand-explore/mam-faq">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
@@ -134,12 +146,13 @@ ms.lasthandoff: 04/24/2017
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3><a href="/intune/understand-explore/mam-faq">MAM とアプリ保護</a></h3>
+                                            <h3>MAM とアプリ保護についての FAQ</h3>
                                             <p>Intune モバイル アプリ管理と Intune アプリ保護に関してよく寄せられる質問に対する回答を示します。</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            </a>
                         </li>
 <!--                        <li>
                             <div class="cardSize">
@@ -241,18 +254,18 @@ ms.lasthandoff: 04/24/2017
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/understand-explore/mobile-device-management-trial-guide-microsoft-intune">
-                            <div class="cardSize">
+                            <a href="/intune-education/what-is-intune-for-education">
+                           <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage bgdAccent1">
-                                                <img src="/media/hubs/intune/intune-intro-devicemgmt.svg" alt="" />
+                                                <img src="/media/hubs/intune/intune-featured-educateusers.svg" alt="" />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Microsoft Intune でのモバイル デバイス管理</h3>
-                                            <p>Intune でモバイル デバイス管理のしくみを評価します。</p>
+                                            <h3>教育用の Intune とは</h3>
+                                            <p>クラスルームのデバイスで行う必要がある、日常的な操作について説明します。</p>
                                         </div>
                                     </div>
                                 </div>
@@ -470,7 +483,7 @@ ms.lasthandoff: 04/24/2017
                             </a>
                         </li>
                         <li>
-                            <a href="/intune/plan-design/section-2-identify-use-case-scenarios">
+                            <a href="/intune/plan-design/introduction">
                             <div class="cardSize">
                                 <div class="cardPadding">
                                     <div class="card">
