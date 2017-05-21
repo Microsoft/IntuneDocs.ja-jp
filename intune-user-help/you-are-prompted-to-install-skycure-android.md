@@ -15,9 +15,10 @@ searchScope:
 - User help
 ROBOTS: 
 ms.custom: intune-enduser
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
 ms.openlocfilehash: 531963056c4e488865b1c51b76e6b9ce97fe2eb8
+ms.contentlocale: ja-jp
 ms.lasthandoff: 03/29/2017
 
 
@@ -31,13 +32,13 @@ ms.lasthandoff: 03/29/2017
 
 **必要な操作**
 
-1. 画面の一番上から下にドラッグして通知バーを開き、**[Required application – Install Skycure from Play Store](必要なアプリケーション – Skycure を Play ストアからインストール)** をタップします。 ポータル サイト アプリの __[Compliance Details](ポリシー準拠状況の詳細)__ でも確認することができます。
+1. 画面の一番上から下にドラッグして通知バーを開き、**[Required application – Install Skycure from Play Store]\(必要なアプリケーション – Skycure を Play ストアからインストール)** をタップします。 ポータル サイト アプリの __[Compliance Details]\(ポリシー準拠状況の詳細)__ でも確認することができます。
 
   ![Android デバイスの [Compliance Details](ポリシー準拠状況の詳細) ページ。 このデバイスは準拠した状態ではなく、ポータル サイト ページの下部に、デバイスはモバイル リスク ポリシーを満たしていないため、Skycure を開いて問題を解決する必要があることを示すメッセージが表示されます。](./media/skycure-resolves-compliance-android.png)
 
 2. Play ストアの Skycure のインストール ページが表示されます。 Skycure をインストールし、**[同意する]** をタップして Skycure がデバイスにアクセスすることを許可します。
 
-3. Skycure を開いて、**[VERIFY](確認)** をタップします。
+3. Skycure を開いて、**[VERIFY]\(確認)** をタップします。
 
 4. [**Azure Active Directory でサインインする**] をタップし、職場または学校の電子メールやファイルへのアクセスに使用しているアカウントを入力します。
 
