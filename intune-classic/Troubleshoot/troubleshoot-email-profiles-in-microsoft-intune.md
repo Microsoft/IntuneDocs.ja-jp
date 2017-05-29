@@ -2,8 +2,8 @@
 title: "電子メール プロファイルに関するトラブルシューティング | Microsoft Docs"
 description: "電子メール プロファイルに関する問題と、そのトラブルシューティングと解決方法。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
@@ -14,10 +14,11 @@ ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 017a7912cb991f00916373acc18f4ab2b97ce8ed
-ms.lasthandoff: 12/30/2016
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 0387fa91628c5f786d9289df309b82bd17cf6447
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -47,7 +48,7 @@ ms.lasthandoff: 12/30/2016
 
 1.  Configuration Manager コンソール &gt;**[資産とコンプライアンス]** の順に開きます。
 
-2.  **[概要]**  -&gt;**[コンプライアンス設定]**  -&gt;**[会社のリソースへのアクセス]** の順に展開して、**[電子メール プロファイル]** を選択します。
+2.  **[概要]**  -&gt; **[コンプライアンス設定]**  -&gt;** [会社のリソースへのアクセス]** の順に展開して、**[電子メール プロファイル]** を選択します。
 
 3.  電子メール プロファイルを右クリックし、**[プロパティ]** を開きます。
 

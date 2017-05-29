@@ -2,8 +2,8 @@
 title: "会社のリソースへのアクセスに関する問題のトラブルシューティング | Microsoft Docs"
 description: "このトピックに記載されているエラー コードと状態コードは、リソースのアクセスに関する問題のトラブルシューティングに役立ちます。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 10/06/2016
 ms.topic: article
@@ -14,9 +14,11 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: dd1ada2bf6505552e7dbf8b185c929fa4e40104c
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 9956d92c5d1b294c4ccf04ebecd15cdb59794c90
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -374,9 +376,4 @@ Microsoft Intune の操作でエラー コードが返された場合の問題�
 
 ### <a name="next-steps"></a>次のステップ
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](../troubleshoot/how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

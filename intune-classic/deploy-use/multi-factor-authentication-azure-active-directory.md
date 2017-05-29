@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: 47abdabd-dcd6-48d8-aade-3f3eefb92ee1
 ROBOTS: 
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 7768013a1cc764b6dfbf4b7d22be4f5cf95f50bf
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: dba070ef76de8015b347e760b424a5e28ce6ddec
-ms.lasthandoff: 02/18/2017
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.lasthandoff: 02/18/2017
 
 Intune には、デバイス登録用に Azure AD の多要素認証 (MFA) 機能が統合されていて、会社のリソースのセキュリティ保護に利用できます。
 
-MFA は、次の確認方法のうち&2; つ以上を必須にすることで機能します。 
+MFA は、次の確認方法のうち 2 つ以上を必須にすることで機能します。 
 
 - ユーザーが知っている情報 (通常はパスワードまたは PIN)。
 - ユーザーの所持品 (電話など、容易には複製できない、信頼済みのデバイス)。

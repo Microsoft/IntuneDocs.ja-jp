@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,31 +17,40 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: 351a0e6cf440b1506426db57ec0529496ed70231
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 624819ddd8afabef1e3b5419706268eef6d960d0
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Intune に Windows 10 デバイスを登録する
 
-1.  **[スタート] メニュー**に移動し、**[設定]** ボタンを選択して、**[Windows の設定]** アプリを開きます。 検索バーで "設定" を検索することもできます。
+> [!NOTE]
+> Windows 10 はあらゆる種類のデバイスで動作します。 デスクトップ、スマートフォン、タブレットのいずれを使用している場合でも、このページの画像とは少し違う部分があるかもしれませんが、手順は同じです。
 
-2. **[アカウント]** を選択します。
+1.  **[スタート]** メニューに移動します。
+
+  - **Windows 10 デスクトップ** デバイスを使用している場合は、**[スタート] メニュー**に移動します。
+  - **Windows 10 Mobile** デバイスを使用している場合は、**[スタート]** 画面に移動し、スワイプして **[すべてのアプリ]** リストを表示します。
+
+2. 検索バーで「設定」を検索して、Windows の **[設定]** アプリを開きます。
+
+3. **[アカウント]** を選択します。
 
     ![[設定] と [アカウント] に移動する](./media/W10-enroll-1-settings-accounts.png)
 
-3. **[お使いのアカウント]** を選択します。
+4. **[お使いのアカウント]** を選択します。
 
     ![[お使いのアカウント] を選択する](./media/W10-enroll-2-accounts-your-account.png)
 
-4. **[職場または学校アカウントを追加]** を選択します。
+5. **[職場または学校アカウントを追加]** を選択します。
 
     ![[職場または学校アカウントを追加] を選択する](./media/w10-enroll-3-add-work-school-acct.png)
 
-5. 職場または学校の資格情報でサインインします。
+6. 職場または学校の資格情報でサインインします。
 
     ![サインイン](./media/W10-enroll-4-sign-in.png)
 
@@ -57,5 +66,5 @@ IT 管理者のサポートを受けるには、ポータル サイト アプリ
 
 3. 結果のリストで、**[ポータル サイト]** > **[インストール]** の順に選択します。
 
-4. **[インストール]** または **[無料]** を選択します。 これら&2; つのオプションに違いはありません。表示される選択肢は、組織がポータル サイト アプリを設定した方法によって変わります。
+4. **[インストール]** または **[無料]** を選択します。 これら 2 つのオプションに違いはありません。表示される選択肢は、組織がポータル サイト アプリを設定した方法によって変わります。
 

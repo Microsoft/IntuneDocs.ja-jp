@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 02/8/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 06e0a74dd2c0b861497062f2d659c5eb08126fca
-ms.openlocfilehash: 6ec9f6136cf23b9015da125817bfeb86ecfbfca6
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 8ee746ec2ccd9b924c242e956a8c89fba248ca96
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -25,7 +27,7 @@ ms.openlocfilehash: 6ec9f6136cf23b9015da125817bfeb86ecfbfca6
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Intune アプリ ラッピング ツールまたは Intune アプリ SDK のいずれかを使うと、アプリでモバイル アプリケーション管理 (MAM) ポリシーを使用することが可能です。 ここでは、これら&2; つの方法の内容と用途について説明します。
+Intune アプリ ラッピング ツールまたは Intune アプリ SDK のいずれかを使うと、アプリでモバイル アプリケーション管理 (MAM) ポリシーを使用することが可能です。 ここでは、これら 2 つの方法の内容と用途について説明します。
 
 ## <a name="intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツール
 アプリ ラッピング ツールは、主として、内部基幹業務 (LOB) アプリケーションに使います。 このツールは、アプリのラッパーを作成するコマンド ライン アプリケーションです。このラッパーにより、アプリを Intune MAM ポリシーで管理できるようになります。
@@ -107,9 +109,4 @@ SDK の詳細については、「[概要](../develop/intune-app-sdk.md)」を�
 [Android アプリ ラッピング ツール](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
 [iOS アプリ ラッピング ツール](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)</br>
 [SDK を使用してモバイル アプリケーション管理に対応する](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

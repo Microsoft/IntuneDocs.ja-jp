@@ -14,10 +14,11 @@ ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: adf7e2d0f76e63f67b7cf3d26d26df0da0e50bd0
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 933a47163ccc66a1bab636982ca422c4a704656d
-ms.lasthandoff: 03/31/2017
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 
@@ -44,7 +45,7 @@ ms.lasthandoff: 03/31/2017
     - **設定の説明。** "実行をブロックするアプリの一覧" のようなオプションの説明を入力します。
     -     **データ型。** ドロップダウン リストで **[文字列]** を選びます。
     -     **OMA-URI。** 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**」と入力します。
-    -     **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,****|** を使用できます。 (例: package1;package2;)
+    -     **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,** **|** を使用できます。 (例: package1;package2;)
 
     他のすべてのアプリの実行中にユーザーが Google Play ストアからインストールできるアプリの一覧の場合:
 
@@ -52,7 +53,7 @@ ms.lasthandoff: 03/31/2017
     - **設定の説明。** "ユーザーが Google Play からインストールできるアプリの一覧" といったオプションの説明を入力します。
     - **データ型。** ドロップダウン リストで **[文字列]** を選びます。
     - **OMA-URI。** 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**」と入力します。
-    - **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,****|** を使用できます。 (例: package1;package2;)
+    - **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,** **|** を使用できます。 (例: package1;package2;)
 
 4. **[OK]** をクリックし、**[ポリシーの保存]** をクリックします。 
 

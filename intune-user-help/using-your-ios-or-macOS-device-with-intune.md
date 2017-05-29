@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/09/2017
+ms.date: 05/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 57a067684ccada3df4faa15e6bf009b39caf5c94
-ms.openlocfilehash: 598ecac4aafaff5715e311dcfc058c1d2661bd3e
-ms.lasthandoff: 03/02/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 5de619d98ab78384e42c8a3a2264ce4deebc2602
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -28,6 +29,10 @@ ms.lasthandoff: 03/02/2017
 # <a name="using-your-ios-or-macos-device-with-intune"></a>iOS デバイスまたは macOS デバイスを Intune で使用する
 
 仕事を効率化するために Intune でできることは数多くあります。 会社から求められる可能性のある最も一般的な仕事内容のリストを以下に示します。
+
+## <a name="supported-versions"></a>サポートされているバージョン
+
+現在、Intune は iOS 8.0 以降をサポートしています。 また、macOS 10.9 Mavericks 以降もサポートしています。 
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Intune に登録して、ポータル サイトをインストールする
 
@@ -40,6 +45,7 @@ ms.lasthandoff: 03/02/2017
 
 - [デバイスで管理対象アプリを使用する](use-managed-apps-on-your-device-ios.md)
 - [パスコードを設定または変更する](set-or-change-your-passcode-ios.md)
+<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [紛失したまたは盗難にあったデバイスをリセット (消去) する](reset-erase-your-device-cpwebsite.md)
 - [Microsoft による使用状況データの収集を無効にする](turn-off-microsoft-usage-data-collection-ios.md)
 - [Intune からデバイスの登録を解除する](unenroll-your-device-from-intune-ios.md)

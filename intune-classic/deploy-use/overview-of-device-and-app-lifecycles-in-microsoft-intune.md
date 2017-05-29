@@ -14,9 +14,11 @@ ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: c2e4087790cc6fe7025f2b3b634ba115f13a7856
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: da14fe58510f54e099ae6aeb2e9f656b9f68a470
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -32,9 +34,4 @@ ms.openlocfilehash: c2e4087790cc6fe7025f2b3b634ba115f13a7856
 管理のため、すべてのデバイスにはライフサイクルがあります。 ライフサイクルは、デバイスを登録すると開始され、デバイスをインベントリから削除するまで続きます。 [デバイス管理のライフサイクルに関する記事](overview-of-device-lifecycle-in-microsoft-intune.md)では、デバイスを登録する方法、デバイスを構成および保護する方法、管理対象から除外する方法について説明されています。
 
 同様に、使用するアプリには独自の[アプリ ライフサイクル](overview-of-app-lifecycle-in-microsoft-intune.md)があり、Intune へのアプリの追加から、不要になったときの削除までの、すべての手順が含まれます。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

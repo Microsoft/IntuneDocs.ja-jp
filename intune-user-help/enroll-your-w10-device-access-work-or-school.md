@@ -1,11 +1,11 @@
 ---
 title: "Intune に Windows 10 デバイスを登録する | Microsoft Docs"
-description: "Intune に Windows 10 1607 デバイスを登録する"
+description: "Intune に Windows 10 1607 以降のデバイスを登録する"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,21 +17,30 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: 5cf93d5f29e7fa3b989b1a00070d620e06f720c4
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: aa12a88cfd80f62e2f7b249b52333bd16cbb6533
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Intune に Windows 10 デバイスを登録する
 
+> [!NOTE]
+> Windows 10 はあらゆる種類のデバイスで動作します。 デスクトップ、スマートフォン、タブレットのいずれを使用している場合でも、このページの画像とは少し違う部分があるかもしれませんが、手順は同じです。
+
 <iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
-1.  **[スタート] メニュー**に移動し、**[設定]** ボタンを選択して、**[Windows の設定]** アプリを開きます。 検索バーで "設定" を検索することもできます。
+1. **[スタート]** メニューに移動します。
 
-2. **[アカウント]** > **[職場または学校にアクセスする]** > **[接続]** の順に選択します。
+  - **Windows 10 デスクトップ** デバイスを使用している場合は、**[スタート] メニュー**に移動します。
+  - **Windows 10 Mobile** デバイスを使用している場合は、**[スタート]** 画面に移動し、スワイプして **[すべてのアプリ]** リストを表示します。
+
+2.  検索バーで「設定」を検索して、Windows の **[設定]** アプリを開きます。
+
+3. **[アカウント]** > **[職場または学校にアクセスする]** > **[接続]** の順に選択します。
 
     ![[職場または学校にアクセスする] アカウントの選択](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 

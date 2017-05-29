@@ -14,9 +14,11 @@ ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: a57ac0e6cb29dbfc87bb09c04bb372228a1d72be
-ms.openlocfilehash: 34e9ce6a5c0b7cb912a54644e6323574c2e041a7
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 0a6c84735b6bb8e7f636ea155437e7d90b8f3cc0
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -48,7 +50,7 @@ Intune コンソールで同期を有効にする前に、以下の手順に従�
 3. [管理ツール] ページで、**[管理ツールの追加]** を選択し、**[Microsoft Intune]** を選択します。
 
 > [!NOTE]
-> ビジネス向け Windows ストアのアプリを展開するために複数の管理ツールを使用する場合、これまでは、ビジネス向け Windows ストアにはそのうちの&1; つしか関連付けることはできませんでした。 これからは、複数のツール (Intune や Configuration Manager など) をストアに関連付けることができます。
+> ビジネス向け Windows ストアのアプリを展開するために複数の管理ツールを使用する場合、これまでは、ビジネス向け Windows ストアにはそのうちの 1 つしか関連付けることはできませんでした。 これからは、複数のツール (Intune や Configuration Manager など) をストアに関連付けることができます。
 
 これで、作業を続行し、Intune コンソールで同期を設定することができます。
 
@@ -84,9 +86,4 @@ Intune コンソールで同期を有効にする前に、以下の手順に従�
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune でモバイル デバイスのアプリを追加する](add-apps-for-mobile-devices-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
