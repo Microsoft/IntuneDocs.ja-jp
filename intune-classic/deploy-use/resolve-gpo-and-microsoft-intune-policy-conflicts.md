@@ -14,9 +14,11 @@ ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 439607bf79424ab32118948f112e3814577969e5
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 250ddb35aa33523141ae0f5af19b48b75ce0bef0
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -116,9 +118,4 @@ GPO は、グループ ポリシー管理コンソールで、選択した GPO �
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune を使用して Windows PC を管理する](manage-windows-pcs-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

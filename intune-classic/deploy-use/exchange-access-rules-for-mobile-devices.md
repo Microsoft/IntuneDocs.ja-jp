@@ -15,10 +15,10 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 47d1437159da85b958e6e6fa91fa743d7746c5ce
 ms.contentlocale: ja-jp
-ms.lasthandoff: 04/24/2017
+ms.lasthandoff: 05/23/2017
 
 
 ---

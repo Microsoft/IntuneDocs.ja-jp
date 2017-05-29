@@ -14,10 +14,11 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 00e9dfd165a449182c5b937372db7085c981c68f
-ms.openlocfilehash: cca12024ba12cff5cdb8c515f7719a7592ba97ea
-ms.lasthandoff: 02/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 88a18975049158ca632d51796e8b4022c42dff94
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -63,7 +64,7 @@ ms.lasthandoff: 02/14/2017
 
 7.  **[デバイス]** を選択します。
 
-8.  対象のデバイスを選択して、**[デバイスの削除]** を選択します。 Active Directory との次の同期時にデバイスが削除されます。 通常は&4; 時間内に行われます。 同期の後、デバイスは管理から削除されます。 これにより、そのユーザーのデバイス制限から&1; つのデバイスが削除されます。
+8.  対象のデバイスを選択して、**[デバイスの削除]** を選択します。 Active Directory との次の同期時にデバイスが削除されます。 通常は 4 時間内に行われます。 同期の後、デバイスは管理から削除されます。 これにより、そのユーザーのデバイス制限から 1 つのデバイスが削除されます。
 
 ## <a name="retire-managed-computers"></a>管理対象コンピューターを削除する
 Intune クライアント ソフトウェアによって管理されているコンピューターを、Intune 管理コンソールで管理から削除できます。 これにより、コンピューターからのクライアント ソフトウェアのアンインストールと Intune ポリシーの削除も行われます。 [Intune クライアント ソフトウェアで管理されているコンピューターの削除](retire-a-windows-pc-with-microsoft-intune.md)に関する情報を参照してください。

@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: d05b3200d145aa535216dc81c62cc73b022528f2
-ms.openlocfilehash: ae364b9e77876612be4eb6d68b8b57a5d3be9db2
-ms.lasthandoff: 02/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 748fce44b696675d4b7fe4b1d3048633fba1b490
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -34,7 +35,7 @@ Microsoft Intune は、組織がデバイス (スマートフォン、タブレ�
 会社の IT 部門では、作業に関する情報は確認できますが、個人情報は確認できません。 これは、職場で使用される個人のデバイスを登録するかどうかを確認する上で特に重要なことです。 [確認できる内容とできない内容については、ユーザー ヘルプの次の記事](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)で詳しく説明します。
 
 ## <a name="how-do-i-get-the-company-portal"></a>ポータル サイトの入手方法
-ポータル サイトは&2; 通りの方法で入手できます。
+ポータル サイトは 2 通りの方法で入手できます。
 
 - ポータル サイト アプリをデバイスにインストールします。 一般的に、ポータル サイト アプリはお使いのデバイスのアプリ ストアに移動して入手しますが、IT 管理者が代わりにポータル サイト アプリをインストールすることもできます。
 - IT 管理者が設定した[ポータル Web サイト](http://portal.manage.microsoft.com)にアクセスします。

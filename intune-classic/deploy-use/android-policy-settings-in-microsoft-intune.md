@@ -15,9 +15,11 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 2da96c2ffb6cc826494972ab8c88ce62981eeae6
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: c2652e405879d4506c40b500c489a5e92ad15282
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -34,7 +36,7 @@ Intune の **Android 全般構成ポリシー**を使用すると、次の設定
 
 -   **モバイル デバイスのセキュリティ設定** – デバイスのさまざまな機能を制御できる定義済みの設定の一覧から選択します。
 
--   **キオスク モード** (Samsung KNOX Standard デバイス専用) - 特定の機能の動作のみを許可するようにデバイスをロックできます。 たとえば、指定した&1; つの管理対象アプリの実行のみをデバイスに許可することや、デバイスのボリューム ボタンを無効にすることができます。 これらの設定は、デバイスのデモ モデルや、POS デバイスなどの&1; つの機能の実行専用のデバイス向けに使用できます。
+-   **キオスク モード** (Samsung KNOX Standard デバイス専用) - 特定の機能の動作のみを許可するようにデバイスをロックできます。 たとえば、指定した 1 つの管理対象アプリの実行のみをデバイスに許可することや、デバイスのボリューム ボタンを無効にすることができます。 これらの設定は、デバイスのデモ モデルや、POS デバイスなどの 1 つの機能の実行専用のデバイス向けに使用できます。
 
 -   **準拠しているアプリと非準拠アプリ** - 社内の準拠アプリまたは非準拠アプリの一覧を指定します。 Android や iOS のデバイスで、**[非準拠アプリ レポート]** を使用して、一覧に指定したアプリの準拠状況と、ユーザーがインストール済みのアプリを比較して表示できます。 レポートでは実際にアプリのインストールをブロックすることはできません。
 
@@ -209,9 +211,4 @@ Microsoft Intune **Android カスタム構成ポリシー**を使用して、And
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

@@ -14,9 +14,11 @@ ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: f4867d18634add8cb6ffc61a4413618b1bea5a4b
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: fbb2e7ced783160fb6034aecc893d0c5dde639d7
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -44,7 +46,7 @@ ms.openlocfilehash: f4867d18634add8cb6ffc61a4413618b1bea5a4b
 
 - **必要なパスワードの種類**: ユーザーが **[英数字]** パスワードまたは **[数字]** パスワードのどちらを作成する必要があるかを指定します。
 
-- **文字セットの最小数**: **[必要なパスワードの種類]** を **[英数字]** に設定した場合、この設定を使用して、パスワードに含める必要がある文字セットの最小数を指定します。 次の&4; つの文字セットがあります。
+- **文字セットの最小数**: **[必要なパスワードの種類]** を **[英数字]** に設定した場合、この設定を使用して、パスワードに含める必要がある文字セットの最小数を指定します。 次の 4 つの文字セットがあります。
   -   小文字
   -   大文字
   -   記号
@@ -82,9 +84,4 @@ ms.openlocfilehash: f4867d18634add8cb6ffc61a4413618b1bea5a4b
 アップグレード方法に関する情報のリンクが表示されます。 ユーザーは、そのデバイスのアップグレードを行うことを選択できます。 その後、会社のリソースにアクセスできます。
 
 - **許可される最大 OS バージョン**: ルールに指定された OS バージョンより新しいバージョンの OS がデバイスで使用されている場合、会社のリソースへのアクセスがブロックされ、IT 管理者に問い合わせることをユーザーに促すメッセージが表示されます。 対象の OS バージョンを許可するようにルールが変更されるまで、このデバイスを使用して会社のリソースへのアクセスすることはできません。
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

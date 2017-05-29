@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
-ms.openlocfilehash: bde2ccc0c170a85e926357d54fcf4ffe6ee50fd9
-ms.lasthandoff: 02/21/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 3d8e399f937c98b8e91a932928b5ba4518d895e7
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -67,9 +68,9 @@ Intune に Windows または Windows Phone デバイスを登録すると、次�
 
 -  IT 管理者は、コンピューターにアプリケーションと更新プログラムをインストールすることができます。
 
-## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>デバイスの登録後&8; 時間ごとに生じる動作
+## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>デバイスの登録後 8 時間ごとに生じる動作
 
-登録済みのデバイスは、約&8; 時間ごとに以下のことを行います。
+登録済みのデバイスは、約 8 時間ごとに以下のことを行います。
 
 -   IT 管理者が許可したポリシーまたはアプリケーションの更新プログラムをダウンロードする。
 

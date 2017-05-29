@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 05/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: e83299392fc516ed2b11248f28341403419d6758
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 05b290345c761372850fb501a3707dbd53a3ef07
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -49,7 +50,7 @@ Windows 10 には複数のバージョンがあるため、2 つの手順があ�
 
     ![[設定] ページの [アカウント] の選択](./media/win10pc-sync-2-settings-accounts.png)
 
-3. 次の&2; つの画面を見て、お使いのデバイスの表示画面に似ている方をご確認ください。 お使いのデバイスの表示画面に対応する手順に従います。
+3. 次の 2 つの画面を見て、お使いのデバイスの表示画面に似ている方をご確認ください。 お使いのデバイスの表示画面に対応する手順に従います。
 
     [職場または学校にアクセスする] の画面が表示されている場合は、「[[職場または学校にアクセスする] が表示されている場合の手順](#steps-to-follow-if-you-see-access-work-or-school)」にある指示に従います。
 
@@ -65,7 +66,7 @@ Windows 10 には複数のバージョンがあるため、2 つの手順があ�
 
     ![[職場または学校にアクセスする] を選択する](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-2. 職場または学校のアカウントを選択します。 IT 管理者が行った設定に応じて、以下に示す例のような&2; 種類のアカウントが表示されます。 1 つのアカウントの横にはブリーフケースがあり、もう&1; つのアカウントの横には Microsoft のロゴがあります。
+2. 職場または学校のアカウントを選択します。 IT 管理者が行った設定に応じて、以下に示す例のような 2 種類のアカウントが表示されます。 1 つのアカウントの横にはブリーフケースがあり、もう 1 つのアカウントの横には Microsoft のロゴがあります。
 
     - ブリーフケースが表示されているアカウントがある場合はそれを選択し、その下に **[情報]** ボタンが表示されていることを確認します。
     - Microsoft のロゴが表示されているアカウントしかない場合はそのアカウントを選択して、その下に **[情報]** ボタンが表示されていることを確認します。
@@ -94,8 +95,8 @@ Windows 10 には複数のバージョンがあるため、2 つの手順があ�
 
    同期が完了するまで、このボタンは灰色表示になります。
 
-   ## <a name="windows-10-mobile"></a>[Windows] 10 Mobile
-   アプリのインストールを高速化するために Windows 10 Mobile デバイスを手動で同期するには:
+### <a name="windows-10-mobile"></a>[Windows] 10 Mobile
+アプリのインストールを高速化するために Windows 10 Mobile デバイスを手動で同期するには:
 
    1. **[すべてのアプリ]** > **[設定]** > **[アカウント]** の順にタップします。
 

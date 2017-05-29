@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: 1702b049dd1826e93be153234d2f629f770502c5
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: c3f1d42d5998e70982bc279ef99560c486412daf
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -29,6 +30,10 @@ ms.lasthandoff: 03/13/2017
 # <a name="using-your-android-device-with-intune"></a>Android デバイスを Intune で使用する
 
 仕事を効率化するために Intune でできることは数多くあります。 会社から求められる可能性のある最も一般的な仕事内容のリストを以下に示します。
+
+## <a name="supported-versions"></a>サポートされているバージョン
+
+現在、Intune は Android 4.0 以降をサポートしています。 サポート対象には、Samsung KNOX 4.0 以降のデバイスも含まれています。
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Intune に登録して、ポータル サイトをインストールする
 

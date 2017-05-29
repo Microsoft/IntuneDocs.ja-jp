@@ -14,10 +14,11 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: e71ebacec9d7b890b41e7650c8c50f42952c6326
-ms.lasthandoff: 03/29/2017
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -78,7 +79,7 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 |サードパーティ MDM プロバイダー| Configuration キー | 値の種類 | 構成値|
 | ------- | ---- | ---- | ---- |
 | VMware AirWatch | IntuneMAMUPN | 文字列型 | {UserPrincipalName}|
-| MobileIron Core | IntuneMAMUPN | 文字列型 | $EMAIL$ **または** $USER_UPN$ |
+| MobileIron Core | IntuneMAMUPN | 文字列型 | $EMAIL$  **または**  $USER_UPN$ |
 | MobileIron Cloud | IntuneMAMUPN | 文字列型 | ${userUPN} **または** ${userEmailAddress} |
 
 ### <a name="example-2-end-user-experience"></a>例 2: エンドユーザー エクスペリエンス

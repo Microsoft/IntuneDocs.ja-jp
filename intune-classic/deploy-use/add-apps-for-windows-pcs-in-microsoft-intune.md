@@ -14,9 +14,11 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 547330c05b7fbdd2981e49320c913d8109563384
-ms.openlocfilehash: f8f1359ff08b67261b23a694a4f6bbbeca24fa2a
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 41823544901f0ae2c87cba4e8591446068b8d144
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -55,7 +57,7 @@ PC にアプリをインストールするには、ユーザー操作なしで�
     > 使用するインストーラー ファイルにもよりますが、これらの値の一部は自動的に入力されることもあれば、表示されないこともあります。
 
     - **発行元**。 アプリの発行元の名前を入力します。
-    - **名前**。 アプリの名前を入力します。この名前は会社のポータルに表示されます。<br />使用するアプリ名はすべて一意にします。 同じアプリ名が&2; つ存在する場合、会社のポータルではそのいずれかのみがユーザーに表示されます。
+    - **名前**。 アプリの名前を入力します。この名前は会社のポータルに表示されます。<br />使用するアプリ名はすべて一意にします。 同じアプリ名が 2 つ存在する場合、会社のポータルではそのいずれかのみがユーザーに表示されます。
     - **説明**。 アプリの説明を入力します。 これは会社のポータルでユーザーに表示されます。
     - **ソフトウェア情報の URL** (省略可能)。 このアプリに関する情報が含まれる Web サイトの URL を入力します。 この URL は会社のポータルでユーザーに表示されます。
     - **プライバシー URL** (省略可能)。 このアプリのプライバシー情報が含まれる Web サイトの URL を入力します。 この URL は会社のポータルでユーザーに表示されます。
@@ -97,9 +99,4 @@ PC にアプリをインストールするには、ユーザー操作なしで�
 アプリを作成したら、次はアプリを展開します。 詳細については、「[Microsoft Intune でアプリを展開する](deploy-apps.md)」を参照してください。
 
 Windows PC にソフトウェアをデプロイする際のヒントとテクニックに関する詳細情報を読むには、「[Support Tip: Best Practices for Intune Software Distribution to PC’s](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/)」(サポートのヒント: PC への Intune ソフトウェア配布のベスト プラクティス) というブログの投稿をご覧ください。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

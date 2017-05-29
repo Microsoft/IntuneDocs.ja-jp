@@ -14,9 +14,11 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 8a3e8634769b05e6639f7efb6394b7333d998f06
-ms.openlocfilehash: 5d5cde748aa8fa464526d0dc2b2ef9ee460fff9d
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 6e935d74cbf75e18b9316741442dcfda16ead2e6
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -48,7 +50,7 @@ ms.openlocfilehash: 5d5cde748aa8fa464526d0dc2b2ef9ee460fff9d
 
 4.  **[ユーザー]** を選択して **[ユーザー]** ブレードを開き、アプリ データをワイプするユーザーを選びます。
 
-5.  **[デバイス]** を選択します。 これにより **[デバイス]** ブレードが開き、選択したユーザーに関連付けられているデバイスの一覧が表示されます。また、このブレードには&2; つの列があり、デバイス名 (ユーザーによって定義されるフレンドリ名) とデバイスの種類 (デバイスのプラットフォーム) が示されます。 ワイプするデバイスを選びます。
+5.  **[デバイス]** を選択します。 これにより **[デバイス]** ブレードが開き、選択したユーザーに関連付けられているデバイスの一覧が表示されます。また、このブレードには 2 つの列があり、デバイス名 (ユーザーによって定義されるフレンドリ名) とデバイスの種類 (デバイスのプラットフォーム) が示されます。 ワイプするデバイスを選びます。
 
 6.  **[新しいワイプ要求]** ブレードに戻ります。 **[OK]** を選択してワイプ要求を行います。 
 
@@ -93,9 +95,4 @@ ms.openlocfilehash: 5d5cde748aa8fa464526d0dc2b2ef9ee460fff9d
 [モバイル アプリケーション管理ポリシーを使用してデータを保護する](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Azure Portal の使用](azure-portal-for-microsoft-intune-mam-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb089cc9b6e76e13b2f5da65efb3452aa5274af
-ms.openlocfilehash: e3993c97475b699da90a0634bdb3ac1ba4f5a28c
-ms.lasthandoff: 02/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 64cfbf02e54244457aeaefb84e3049350764c410
+ms.contentlocale: ja-jp
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -28,6 +29,17 @@ ms.lasthandoff: 02/24/2017
 # <a name="using-your-windows-device-with-intune"></a>Windows デバイスを Intune で使用する
 
 仕事を効率化するために Intune でできることは数多くあります。 会社から求められる可能性のある最も一般的な仕事内容のリストを以下に示します。
+
+## <a name="supported-versions"></a>サポートされているバージョン
+
+現在、Intune は次のバージョンの Windows をサポートしています。
+
+* Windows 10 (Home、Pro、Education、および Enterprise バージョン)
+* Windows Phone 8.1 以降
+* Windows 8.1 RT
+* Windows 8.1
+
+[Windows 10 Holographic](https://www.microsoft.com/hololens) など、他の Windows にも、Intune でサポートされているバージョンがあります。 このようなバージョンはごく限定的な使用例なので、ここには記載していません。
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Intune に登録して、ポータル サイトをインストールする
 
