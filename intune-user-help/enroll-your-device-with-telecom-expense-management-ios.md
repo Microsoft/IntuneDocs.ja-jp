@@ -41,7 +41,7 @@ ms.lasthandoff: 05/23/2017
 > [!NOTE]
 > この方法で登録するには、お使いの電話に [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) アプリがインストールされアクティブになっている必要があります。
 
-1. __[Enroll with Microsoft account](Microsoft アカウントでの登録)__ を選択します。
+1. __[Enroll with Microsoft account]\(Microsoft アカウントでの登録)__ を選択します。
 
   ![Datalert アプリの [設定] 画面の画像。画面の上半分ではデバイスを登録するための[電話番号] フィールドが提供され、Microsoft Office 365 アカウントと Intune サブスクリプションがある場合は、画面下部で "Microsoft アカウントでの登録" が提供されます。](./media/ios-enroll-11a-tem-datalert-enroll-msft-account.png)
 

@@ -40,7 +40,7 @@ ms.lasthandoff: 05/23/2017
 
 ## <a name="enroll-into-datalert-using-your-microsoft-work-or-school-account"></a>職場または学校の Microsoft アカウントを使用して Datalert に登録する
 
-1. __[Enroll with Microsoft account](Microsoft アカウントでの登録)__ を選択します。
+1. __[Enroll with Microsoft account]\(Microsoft アカウントでの登録)__ を選択します。
 
   ![Datalert アプリの [設定] 画面の画像。Microsoft Office 365 アカウントと Intune サブスクリプションがある場合は、画面の上半分でデバイスを登録するための [電話番号] フィールドが提供され、画面の下半分で "Microsoft アカウントでの登録" が提供されます。](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
 

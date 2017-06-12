@@ -48,7 +48,7 @@ ms.lasthandoff: 05/23/2017
 
 ## <a name="configure-allowed-destinations"></a>許可された出力先を構成する
 
-1. **[Allowed destinations (supervised only)] (許可された出力先 (監視のみ))* ブレードで、Airplay デバイスの**デバイス ID** を入力します (例: 52:46:CD:51:83:4C)。
+1. **[Allowed destinations (supervised only)]\(許可された出力先 (監視のみ))* ブレードで、Airplay デバイスの**デバイス ID** を入力します (例: 52:46:CD:51:83:4C)。
 2. デバイス ID を入力したら、**[追加]** をクリックします。 **[デバイス ID]** 一覧に ID が表示されます。
 3. デバイスの追加を続けます。 終了したら **[OK]** を選択します。
 
