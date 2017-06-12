@@ -41,7 +41,7 @@ Windows デバイスの一括登録には、以下が必要です。
 1. Windows ストアから [Windows 構成デザイナー (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) をダウンロードします。
 ![Windows 構成デザイナー アプリ ストアのスクリーンショットと説明のスクリーンショット](media/bulk-enroll-store.png)
 
-2. **Windows 構成デザイナー** アプリを開き、**[Provision desktop devices] (デスクトップ デバイスのプロビジョニング)** を選択します。
+2. **Windows 構成デザイナー** アプリを開き、**[Provision desktop devices]\(デスクトップ デバイスのプロビジョニング)** を選択します。
 ![Windows 構成デザイナー アプリでデスクトップ デバイスのプロビジョニングを選択するスクリーンショット](media/bulk-enroll-select.png)
 
 3. **[新しいプロジェクト]** ウィンドウが開くので、そこで次の項目を指定します。
@@ -55,7 +55,7 @@ Windows デバイスの一括登録には、以下が必要です。
 5.    必要に応じて、初回起動時にデバイスが接続する Wi-fi ネットワークを構成できます。  これが構成されていない場合は、デバイスの初回起動時にワイヤード (有線) ネットワーク接続が必要になります。
 ![Windows 構成デザイナー アプリで、ネットワーク SSID やネットワーク種類のオプションを含む Wi-Fi を有効にするスクリーンショット](media/bulk-enroll-network.png)
 
-6.    **[Enroll in Azure AD] (Azure AD に登録)** を選択し、**[Bulk Token Expiry] (一括トークンの有効期限)** の日付を入力して、**[Get Bulk Token] (一括トークンの取得)** を選択します。
+6.    **[Enroll in Azure AD]\(Azure AD に登録)** を選択し、**[Bulk Token Expiry]\(一括トークンの有効期限)** の日付を入力して、**[Get Bulk Token]\(一括トークンの取得)** を選択します。
 ![Windows 構成デザイナー アプリで、名前、プロジェクト フォルダー、説明を指定するスクリーンショット](media/bulk-enroll-account.png)
 
 7. 一括トークンを取得するための Azure AD の資格情報を入力します。
