@@ -1,5 +1,5 @@
 ---
-title: "ユーザーとデバイスの管理にグループを使用する | Microsoft Docs"
+title: "ユーザーとデバイスの管理にグループを使用する"
 description: "グループ ワークスペースを使用してグループを作成および管理します。"
 keywords: 
 author: Mtillman
@@ -15,10 +15,10 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 095b8db0cb5097edca98d138edccafbe8e55b9ba
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 13c8946dd75d6bdede0e2a8941030250c6b12ef6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -108,7 +108,7 @@ Microsoft Intune 管理コンソールの **[グループ]** ワークスペー�
 -   IT 管理者が特定のユーザーとデバイスだけにアイテムを展開できるようにする
 -   IT 管理者が管理に関連するグループのみを表示できるようにする
 
-サービス管理者用のフィルター選択されたグループ ビューは、Intune 管理コンソールで構成できます。 詳細については、「[Microsoft Intune を使い始める前に](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune)」を参照してください。
+サービス管理者用のフィルター選択されたグループ ビューは、Intune 管理コンソールで構成できます。 詳細については、「[Microsoft Intune を使い始める前に](/intune/supported-devices-browsers)」を参照してください。
 
 サービス管理者用のフィルター処理されたグループ ビューが設定された後では、管理者は、ソフトウェアまたはポリシーの展開時またはレポートの実行時に、指定されているグループのみを表示および選択できます。 管理コンソールの次のページでは状態情報も表示されません。
 

@@ -18,16 +18,16 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0a4f5cbc81ed1fa7a1d1110080cc298a18463b22
+ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
+ms.openlocfilehash: f01d8b31f493b7103fe788aa62d37f9c73981984
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
 
 # <a name="using-the-intune-company-portal-website"></a>Intune ポータル サイト Web サイトの使用
-[ポータル サイト Web サイト](http://portal.manage.microsoft.com)は、Intune で登録したコンピューターとデバイスの管理にエンド ユーザーが使用できる Web ページです。
+[ポータル サイト Web サイト](https://portal.manage.microsoft.com)は、Intune で登録したコンピューターとデバイスの管理にエンド ユーザーが使用できる Web ページです。
 
 ユーザーがポータル サイト Web サイトから実行できるタスクを次に示します。
 

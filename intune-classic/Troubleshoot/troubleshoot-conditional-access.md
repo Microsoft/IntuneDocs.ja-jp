@@ -1,5 +1,5 @@
 ---
-title: "条件付きアクセスに関するトラブルシューティング | Microsoft Docs"
+title: "条件付きアクセスに関するトラブルシューティング"
 description: "ユーザーが Intune の条件付きアクセスでリソースにアクセスできない場合の対処方法。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 19635b4dda7f4f04690ad165bad6608cad7ac84f
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 04b1785c0b75d4668879488e5221d8b8c2794834
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -36,11 +36,11 @@ ms.lasthandoff: 05/23/2017
 
 条件付きアクセスを機能させるには、次の要件を満たす必要があります。
 
--    デバイスを Intune で管理する必要がある
--    デバイスを Azure Active Directory (AAD) に登録する必要がある。 通常の状況下では、この登録は Intune の登録時に自動的に行われます
--    デバイスはデバイスおよびそのデバイスのユーザーの Intune コンプライアンス ポリシーに準拠している必要がある。  コンプライアンス ポリシーが存在しない場合は、Intune の登録で十分です。
--    ユーザーが Outlook ではなくデバイスのネイティブ メール クライアントを利用してメールを取得する場合、Exchange ActiveSync をデバイスで有効にする必要がある。     これは、iOS、Windows Phone、および Android/KNOX 標準デバイスで自動的に発生します。
--    Intune Exchange Connector を適切に構成する必要がある。 詳細については、[Microsoft Intune での Exchange Connector のトラブルシューティング](troubleshoot-exchange-connector.md)に関するページを参照してください。
+-   デバイスを Intune で管理する必要がある
+-   デバイスを Azure Active Directory (AAD) に登録する必要がある。 通常の状況下では、この登録は Intune の登録時に自動的に行われます
+-   デバイスはデバイスおよびそのデバイスのユーザーの Intune コンプライアンス ポリシーに準拠している必要がある。  コンプライアンス ポリシーが存在しない場合は、Intune の登録で十分です。
+-   ユーザーが Outlook ではなくデバイスのネイティブ メール クライアントを利用してメールを取得する場合、Exchange ActiveSync をデバイスで有効にする必要がある。     これは、iOS、Windows Phone、および Android/KNOX 標準デバイスで自動的に発生します。
+-   Intune Exchange Connector を適切に構成する必要がある。 詳細については、[Microsoft Intune での Exchange Connector のトラブルシューティング](troubleshoot-exchange-connector.md)に関するページを参照してください。
 
 各デバイスのこれらの状態は、Azure 管理ポータルまたはデバイスのインベントリ レポートで確認できます。
 
@@ -55,16 +55,16 @@ ms.lasthandoff: 05/23/2017
  -  デバイスのコンプライアンス情報が登録されるまで時間がかかることがあります。 しばらく待ってからもう一度お試しください。
  -  iOS デバイスの場合:
      -   ユーザーによって作成された既存の電子メール プロファイルは、Intune の管理者が作成したプロファイルの展開をブロックします。 これは一般的な問題です。iOS ユーザーは通常、電子メール プロファイルを作成し、それから登録するためです。 ポータル サイトは、手動で設定した電子メール プロファイルに起因してポリシーに準拠していないことをユーザーに通知し、そのプロファイルを取り除くようにユーザーに要求します。Intune プロファイルを展開できるように、ユーザーは電子メール プロファイルを取り除く必要があります。 この問題を防ぐには、電子メール プロファイルを設定せずに登録し、Intune によるプロファイルの展開を許可するようにユーザーに指示します。
-     -     iOS デバイスがポリシー準拠状況の確認中の状態でスタックし、ユーザーが別のチェックインを開始できません。 ポータル サイトの再起動で解決することがあり、ポリシー準拠の状態が Intune のデバイスの状態を反映します。 デバイスの同期からすべてのデータが収集された後、ポリシー準拠の確認は平均して 0.5 秒で完了します。
+     -   iOS デバイスがポリシー準拠状況の確認中の状態でスタックし、ユーザーが別のチェックインを開始できません。 ポータル サイトの再起動で解決することがあり、ポリシー準拠の状態が Intune のデバイスの状態を反映します。 デバイスの同期からすべてのデータが収集された後、ポリシー準拠の確認は平均して 0.5 秒で完了します。
 
         通常、デバイスがこの状態にあるのは、サービスの接続に問題があるか、同期に時間がかかっていることが原因です。  別のネットワーク構成 (携帯電話、Wi-Fi、VPN) を使用、デバイスを再起動、およびデバイスの SSP が最新であることを確認しても問題が解決しない場合は、「[Microsoft Intune のサポート受ける方法](how-to-get-support-for-microsoft-intune.md)」に従って Microsoft サポートにお問い合わせください。
 
  - Android デバイスの場合:
-     - 一部の Android デバイスは暗号化されているように見えることがありますが、ポータル サイト アプリでは、このようなデバイスを暗号化されていないデバイスと認識します。 
+    - 一部の Android デバイスは暗号化されているように見えることがありますが、ポータル サイト アプリでは、このようなデバイスを暗号化されていないデバイスと認識します。 
     
-        -    この状態のデバイスでは、ユーザーが安全なスタートアップ パスコードを設定する必要があります。 ユーザーには、ポータル サイト アプリから、デバイスのスタートアップ パスコードを設定するように求めるデバイス通知が表示されます。 デバイス通知をタップし、既存の PIN またはパスワードを確認した後に、**[Secure start-up]** (安全な起動) 画面で **[Require PIN to start device]** (デバイスの起動に PIN が必要) を選択します。 ポータル サイト アプリからデバイスの **[ポリシー準拠状況の確認]** ボタンをタップします。 デバイスは暗号化済みとして検出されるようになります。
+        -   この状態のデバイスでは、ユーザーが安全なスタートアップ パスコードを設定する必要があります。 ユーザーには、ポータル サイト アプリから、デバイスのスタートアップ パスコードを設定するように求めるデバイス通知が表示されます。 デバイス通知をタップし、既存の PIN またはパスワードを確認した後に、**[Secure start-up]** (安全な起動) 画面で **[Require PIN to start device]** (デバイスの起動に PIN が必要) を選択します。 ポータル サイト アプリからデバイスの **[ポリシー準拠状況の確認]** ボタンをタップします。 デバイスは暗号化済みとして検出されるようになります。
     
-        -     デバイスの製造元によっては、ユーザーが設定したシークレット PIN ではなく既定の PIN を使用してデバイスを暗号化する場合があります。 Intune は、既定の PIN を使用した暗号化を安全ではないと認識します。この方法の暗号化では、悪意のあるユーザーがデバイスに物理的にアクセスできる場合、デバイス上のデータが危険な状態になるためです。 この問題が生じた場合は、[アプリの保護ポリシー](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies)を使用することを検討してください。
+        -   デバイスの製造元によっては、ユーザーが設定したシークレット PIN ではなく既定の PIN を使用してデバイスを暗号化する場合があります。 Intune は、既定の PIN を使用した暗号化を安全ではないと認識します。この方法の暗号化では、悪意のあるユーザーがデバイスに物理的にアクセスできる場合、デバイス上のデータが危険な状態になるためです。 この問題が生じた場合は、[アプリの保護ポリシー](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies)を使用することを検討してください。
 
 ## <a name="policy-issues"></a>ポリシーの問題
 
@@ -135,7 +135,7 @@ Exchange Connector のログを表示するには、[サーバー トレース �
 
     Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
 
--    ログ内で **quick sync** を検索してクイック (デルタ) 同期を探します。
+-   ログ内で **quick sync** を検索してクイック (デルタ) 同期を探します。
 
 ##### <a name="exceptions-in-get-next-command"></a>Get next コマンドの例外
 Exchange Connector ログで **Get next コマンド**の例外を確認し、それらを Microsoft サポートに提供します。
@@ -144,9 +144,9 @@ Exchange Connector ログで **Get next コマンド**の例外を確認し、�
 
 詳細ログ記録を有効にするには:
 
-1.    Exchange Connector のトレース構成ファイルを開きます。 ファイルは、%ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml に置かれます。
-2.    キー OnPremisesExchangeConnectorService を使用して、TraceSourceLine を探します。
-3.    **SourceLevel** ノードの値を、以下のように **Warning ActivityTracing** (既定値) から **Verbose ActivityTracing** に変更します。
+1.  Exchange Connector のトレース構成ファイルを開きます。 ファイルは、%ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml に置かれます。
+2.  キー OnPremisesExchangeConnectorService を使用して、TraceSourceLine を探します。
+3.  **SourceLevel** ノードの値を、以下のように **Warning ActivityTracing** (既定値) から **Verbose ActivityTracing** に変更します。
 
     <TraceSourceLine>
           <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>

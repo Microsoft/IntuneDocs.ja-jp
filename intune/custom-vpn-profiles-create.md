@@ -1,12 +1,12 @@
 ---
 title: "Microsoft Intune でカスタム VPN プロファイルを作成する方法"
-titleSuffix: Intune Azure preview
+titleSuffix: Intune on Azure
 description: "Intune でカスタム構成を使用して VPN プロファイルを作成します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/19/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,10 +16,10 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b38cbfb323ad4165e6cfc3edbc3c156e4fc1d6a4
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 11da0d31a9a00364a6105006c3e75b6bb6f2cb77
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -40,7 +40,7 @@ Intune のカスタム構成ポリシーを使用して、以下の VPN プロ�
 ## <a name="to-create-a-custom-configuration-policy"></a>カスタム構成ポリシーを作成するには:
 
 1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
+2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 4. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
 5. [プロファイル] ブレードで、**[プロファイルを作成します]** を選択します。

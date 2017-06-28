@@ -1,5 +1,5 @@
 ---
-title: "Office 365 モバイル アプリから会社のデータが漏洩することを防止する | Microsoft Docs"
+title: "Office 365 モバイル アプリから会社のデータが漏えいすることを防止する"
 description: "Intune を使用して、Office 365 モバイル アプリやその他の基幹業務 (LOB) アプリから会社のデータが漏洩することを防止するために役立つモバイル アプリ管理 (MAM) ポリシーを使用して、組織のデータをセキュリティで保護できます。"
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: db350fbefe5ed9b1aa796ee8430000d33ebd1b4e
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3f35dcb7168e9c76a8286a1425a26306914cfdb3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -35,13 +35,13 @@ iOS および Android デバイスをモバイル デバイス管理 (MDM) ソ�
 そう考えているのであれば、Microsoft Intune を使用して、iOS と Android 上の Office 365 モバイル アプリに適用する MAM ポリシー (切り取り/コピー/貼り付け制限、[名前を付けて保存] の使用不可、PIN 要件の設定など) を設定し、MAM 保護対象データをリモートで削除できます。  これによって、MDM ソリューションへのデバイスの登録をユーザーに要求しなくても会社のデータを保護することができ、Office モバイル アプリの優れたエンド ユーザー エクスペリエンスを維持できます。
 
 ## <a name="how-do-i-do-it"></a>実行方法
-1.    Intune モバイル アプリケーション管理 (MAM) がどのように機能するかについて、その基本を理解します。
-2.    Azure ポータルで [MAM ポリシーを作成する前に実行する必要があること](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)を確認します。
-3.    Intune で [MAM ポリシーを作成して展開](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)します。
+1.  [Intune モバイル アプリケーション管理 (MAM)](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) がどのように機能するかについて、その基本を理解します。
+2.  Azure ポータルで [MAM ポリシーを作成する前に実行する必要があること](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)を確認します。
+3.  Intune で [MAM ポリシーを作成して展開](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)します。
 
 ### <a name="additional-information"></a>追加情報:
 - MAM 対応アプリでの[エンド ユーザー エクスペリエンス](/intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
-- [Intune で MAM 用に LOB アプリを準備する](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+- [Intune で MAM 用に LOB アプリを準備する](/intune/apps-prepare-mobile-application-management)
 - <a href="https://www.microsoft.com/cloud-platform/microsoft-intune-partners" target="_blank"> Microsoft Intune アプリケーション パートナー一覧 &rarr;</a> MAM 対応アプリの提供
 
 ## <a name="what-should-i-do-next"></a>次にすべきこと

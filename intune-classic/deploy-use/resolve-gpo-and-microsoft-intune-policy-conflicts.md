@@ -1,5 +1,5 @@
 ---
-title: "GPO と Intune ポリシーの競合を解決する | Microsoft Docs"
+title: "GPO と Intune ポリシーの競合を解決する"
 description: "グループ ポリシーと Intune 構成ポリシーの競合を解決する方法について説明します。"
 keywords: 
 author: robstackmsft
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 250ddb35aa33523141ae0f5af19b48b75ce0bef0
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 42debb9e26a226da6b2485a2ab1be2855d309747
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>グループ ポリシー オブジェクト (GPO) と Microsoft Intune ポリシーの競合を解決する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune は、Windows PC の設定を管理するためにポリシーを使用します。 たとえば、ポリシーを使用して、PC の Windows ファイアウォールに関する設定を制御できます。 多くの Intune 設定は、Windows グループ ポリシーで構成する設定と似ています。 ただし、この 2 つの設定が互いに競合することがあります。
 
 競合が発生した場合、PC がドメインにサインインできない場合を除き、ドメインレベルのグループ ポリシーの方が Intune ポリシーより優先されます。 ドメインにログオンできない場合は、Intune ポリシーがクライアント PC に適用されます。

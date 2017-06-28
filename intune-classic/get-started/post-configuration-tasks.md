@@ -1,5 +1,5 @@
 ---
-title: "構成後のタスク | Microsoft Docs"
+title: "構成後のタスク"
 description: "オプションの構成タスクを完了して、モバイル デバイス管理機能を拡張します。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 705605070b2e80f1548f550aa2632b988820612a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a3a928e1b3ed6cd0bdfdaeee1da383c8e2183885
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Skycure iOS アプリ構成ポリシーをダウンロードする | Microsoft Docs"
+title: "Skycure iOS アプリ構成ポリシーをダウンロードする"
 description: "エンドユーザーに展開した Skycure iOS アプリで使用する Skycure iOS アプリ構成ポリシーをダウンロードします。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a8e46960a5d469093052148eb457140b3c235d3a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3159985bfbaec40899dd58766e214daa672ee6d4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/23/2017
 次の手順を実行するには、Skycure 管理コンソールにログインする必要があります。
 
 > [!TIP] 
-> Microsoft Internet Explorer 11 または Edge を利用しているときは、場合によっては、プライベート モードを利用して Skycure 管理コンソールを開く必要があります。
+> Microsoft Internet Explorer 11 または Microsoft Edge を利用しているときは、場合によっては、プライベート モードを利用して Skycure 管理コンソールを開く必要があります。
 
 ## <a name="to-download-the-ios-app-configuration-policy"></a>iOS アプリ構成ポリシーをダウンロードするには
 

@@ -1,5 +1,5 @@
 ---
-title: "デバイス登録を有効にする | Microsoft Docs"
+title: "デバイスの登録を可能にする"
 description: "MDM 機関を設定し、iOS、Windows、Android、および Mac の各デバイスの登録を有効にします。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 76d6000c87843d1a785cd1027eb927f565784ca2
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 64c6eb58246ac3ad232c1b8ee89d12a83e7e1784
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -38,7 +38,7 @@ Intune でモバイル デバイス管理をセットアップするには、ま
 
 2. MDM 機関ダイアログ ボックスで **[はい]** をクリックします。
 
-    ![管理コンソール。 MDM を Intune に設定](./media/mdmAuthority.png)
+    ![管理コンソール。 MDM を Intune に設定](../media/intune-mdm-authority.png)
 
 ## <a name="choose-how-to-enroll-devices"></a>デバイスの登録方法の選択
 
