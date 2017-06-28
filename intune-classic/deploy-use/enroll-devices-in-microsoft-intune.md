@@ -1,5 +1,5 @@
 ---
-title: "デバイスを登録する | Microsoft Docs"
+title: "デバイスの登録"
 description: "モバイル デバイス管理 (MDM) では、登録を使用してデバイスを管理対象にし、リソースへのアクセスを許可します。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e724e648dc8e768f11e51103a050665a60ffcb1a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: c7c4390629178256728c55e47f06bffae043a729
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -43,40 +43,40 @@ Windows PC などのデバイスを登録し、Microsoft Intune によるモバ�
 
 **iOS の登録方法**
 
-| **方法** |    **ワイプが必要?** |    **アフィニティ**    |    **ロック** | **詳細** |
+| **方法** |  **ワイプが必要?** |    **アフィニティ**    |   **ロック** | **詳細** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ|    ○ |    いいえ | [詳細情報](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|    いいえ |いいえ |いいえ    | [詳細情報](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
-|**[DEP](#dep)**|    Yes |    省略可能 |    省略可能|[詳細情報](ios-device-enrollment-program-in-microsoft-intune.md)|
-|**[USB-SA](#usb-sa)**|    Yes |    省略可能 |    いいえ| [詳細情報](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
-|**[USB-Direct](#usb-direct)**|    いいえ |    いいえ    | いいえ|[詳細情報](ios-direct-enrollment-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | いいえ|    ○ |   いいえ | [詳細情報](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   いいえ |いいえ |いいえ  | [詳細情報](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[DEP](#dep)**|   Yes |   省略可能 |  省略可能|[詳細情報](ios-device-enrollment-program-in-microsoft-intune.md)|
+|**[USB-SA](#usb-sa)**| Yes |   省略可能 |  いいえ| [詳細情報](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
+|**[USB-Direct](#usb-direct)**| いいえ |    いいえ  | いいえ|[詳細情報](ios-direct-enrollment-in-microsoft-intune.md)|
 
 **Windows の登録方法**
 
-| **方法** |    **ワイプが必要?** |    **アフィニティ**    |    **ロック** | **詳細**|
+| **方法** |  **ワイプが必要?** |    **アフィニティ**    |   **ロック** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ|    ○ |    いいえ | [詳細情報](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|    いいえ |いいえ |いいえ    |[詳細情報](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | いいえ|    ○ |   いいえ | [詳細情報](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   いいえ |いいえ |いいえ  |[詳細情報](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android の登録方法**
 
-| **方法** |    **ワイプが必要?** |    **アフィニティ**    |    **ロック** | **詳細**|
+| **方法** |  **ワイプが必要?** |    **アフィニティ**    |   **ロック** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ|    ○ |    いいえ | [詳細情報](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|    いいえ |いいえ |いいえ    |[詳細情報](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | いいえ|    ○ |   いいえ | [詳細情報](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   いいえ |いいえ |いいえ  |[詳細情報](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Android for Work の登録方法**
 
-| **方法** |    **ワイプが必要?** |    **アフィニティ**    |    **ロック** | **詳細**|
+| **方法** |  **ワイプが必要?** |    **アフィニティ**    |   **ロック** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ|    ○ |    いいえ | [詳細情報](prerequisites-for-enrollment.md)|
-|**[DEM](#dem)**|    いいえ |いいえ |いいえ    |[詳細情報](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
+|**[BYOD](#byod)** | いいえ|    ○ |   いいえ | [詳細情報](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   いいえ |いいえ |いいえ  |[詳細情報](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **macOS の登録方法**
 
-| **方法** |    **ワイプが必要?** |    **アフィニティ**    |    **ロック** | **詳細**|
+| **方法** |  **ワイプが必要?** |    **アフィニティ**    |   **ロック** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ|    ○ |    いいえ | [詳細情報](prerequisites-for-enrollment.md)|
+|**[BYOD](#byod)** | いいえ|    ○ |   いいえ | [詳細情報](prerequisites-for-enrollment.md)|
 
 
 適切な方法を選択するのに役立つ一連の質問については、「[モバイル デバイスの登録方法の選択](/intune-classic/get-started/choose-how-to-enroll-devices1)」をご覧ください。
@@ -94,15 +94,15 @@ Windows PC などのデバイスを登録し、Microsoft Intune によるモバ�
 
 ### <a name="dep"></a>DEP
 Apple Device Enrollment Program (DEP) 管理では、ポリシーを作成し、DEP で購入および管理されている iOS デバイスに "無線で" 展開できます。 ユーザーが初めてデバイスの電源を入れて iOS Setup Assistant を実行した際に、デバイスが登録されます。 この方法は、**iOS 監視対象**モードをサポートしているので、以下が有効になります。
-  -    登録のロック
-  -    キオスク モード、およびその他の高度な構成および制限
+  - 登録のロック
+  - キオスク モード、およびその他の高度な構成および制限
 
 DEP の詳細については[ここ](ios-device-enrollment-program-in-microsoft-intune.md)を参照してください。 ([表に戻る](#overview-of-device-enrollment-methods))
 
 ### <a name="usb-sa"></a>USB-SA
 IT 管理者は、セットアップ アシスタントを使用した登録を行うため、USB を介し Apple Configurator を使用して、会社が所有するデバイスを手動で準備します。 IT 管理者は登録プロファイルを作成して、Apple Configurator にエクスポートします。 ユーザーは、自分のデバイスを受け取ると、セットアップ アシスタントを実行してデバイスを登録するように求められます。 この方法は、**iOS 監視対象**モードをサポートしているので、以下が有効になります。
-  -    登録のロック
-  -    キオスク モード、およびその他の高度な構成および制限
+  - 登録のロック
+  - キオスク モード、およびその他の高度な構成および制限
 
 Apple Configurator を使用したセットアップ アシスタントの登録については、[ここ](ios-setup-assistant-enrollment-in-microsoft-intune.md)を参照してください。 ([表に戻る](#overview-of-device-enrollment-methods))
 
@@ -131,5 +131,5 @@ Intune では、次のデバイス プラットフォームを管理できます
 ## <a name="next-steps"></a>次のステップ
 - [デバイス登録の前提条件](prerequisites-for-enrollment.md)
 - [企業所有のデバイスの管理](manage-corporate-owned-devices.md)
-- [サポートされるモバイル デバイスとコンピューター](../get-started/what-to-know-before-you-start-microsoft-intune.md#intune-supported-devices)
+- [サポートされるモバイル デバイスとコンピューター](/intune/supported-devices-browsers#intune-supported-devices)
 

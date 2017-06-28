@@ -1,5 +1,5 @@
 ---
-title: "アプリごとの VPN のパッケージ ファミリ名 (PFN) を検索する | Microsoft Docs"
+title: "アプリごとの VPN のパッケージ ファミリ名 (PFN) の検索"
 description: "アプリごとの VPN を構成できるように PFN を検索する。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: tycast
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0fd7d7e1e09f193479c6ad221c8ace7470942c5a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: eea3b9e2888f07399c8cda1e81ae8a5318d02d42
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -74,10 +74,10 @@ OneNote について取得される情報の例を次に示します。
 
 ## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>アプリがコンピューターにインストールされていない場合に PFN を検索する
 
-1.    https://www.microsoft.com/ja-jp/store/apps に移動します。
-2.    検索バーにアプリ名を入力します。 この例では、OneNote を検索します。
-3.    アプリのリンクを選びます。 URL の末尾に一連の文字があることに注意してください。 この例では、URL は `https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl` のようになります。
-4.    別のタブに URL "`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`" を貼り付けます。 `<app id>` の部分を、https://www.microsoft.com/ja-jp/store/apps から取得したアプリ ID (手順 3 の URL の末尾にある一連の文字) で置き換えます。 この OneNote の例の場合、`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata` を貼り付けます。
+1.  https://www.microsoft.com/ja-jp/store/apps に移動します。
+2.  検索バーにアプリ名を入力します。 この例では、OneNote を検索します。
+3.  アプリのリンクを選びます。 URL の末尾に一連の文字があることに注意してください。 この例では、URL は `https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl` のようになります。
+4.  別のタブに URL "`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`" を貼り付けます。 `<app id>` の部分を、https://www.microsoft.com/ja-jp/store/apps から取得したアプリ ID (手順 3 の URL の末尾にある一連の文字) で置き換えます。 この OneNote の例の場合、`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata` を貼り付けます。
 
 Microsoft Edge に目的の情報が表示されます。Internet Explorer で **[開く]** を選んで情報を確認します。 PFN 値は最初の行に表示されます。 この例の結果は次のようになります。
 

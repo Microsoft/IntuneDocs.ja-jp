@@ -1,5 +1,5 @@
 ---
-title: "ユーザーにモバイル アプリを発行する | Microsoft Docs"
+title: "ユーザーにモバイル アプリを発行する"
 description: 
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fea0f98051d1a13a2ace178fe440520f495aaa68
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 71d57965164f0822e1a6d95715c4f9c92f7bf4bd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -35,9 +35,9 @@ Microsoft Intune では、エンド ユーザーが選択したデバイスか�
 そうであれば、Microsoft Intune で、1 つの共通のポータル ([Intune ポータル サイトまたは Web サイト](/intune-user-help/company-portal-frequently-asked-questions)) に、アプリ (Office モバイル、社内向けの基幹業務やその他のモバイルまたはデスクトップアプリ) を発行できます。
 
 ## <a name="how-do-i-do-it"></a>実行方法
-1.    Intune モバイルデバイス管理に[デバイスを登録](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)します。
-2.    登録されたデバイスに展開する[アプリを Intuneに追加](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)します。
-3.    登録されたデバイスに[ Intune を使用してアプリを展開](/intune-classic/deploy-use/deploy-apps)します。
+1.  Intune モバイルデバイス管理に[デバイスを登録](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)します。
+2.  登録されたデバイスに展開する[アプリを Intuneに追加](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)します。
+3.  登録されたデバイスに[ Intune を使用してアプリを展開](/intune-classic/deploy-use/deploy-apps)します。
 
 ### <a name="additional-information"></a>追加情報:
 アプリのデータ損失保護を管理するために Intune の MAM 機能を使用して Office モバイル アプリを発行する場合は、MAM ポリシーを割り当てるエンド ユーザーに [Office 365 のユーザーライセンスを割り当てる](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)必要があります。

@@ -1,5 +1,5 @@
 ---
-title: "企業所有のデバイスの管理 | Microsoft Docs"
+title: "企業所有のデバイスの管理"
 description: "企業所有のデバイスを、デバイスの種類、購入方法、組織のニーズに応じて、さまざまな方法で登録します。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8ef5f26eced99dac547be727fc96e41c11d3a0e7
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 8dae789ad1996543ddf9b92d031ac995beff6a46
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

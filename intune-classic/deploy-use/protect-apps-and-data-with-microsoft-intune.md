@@ -1,5 +1,5 @@
 ---
-title: "アプリとデータの保護 | Microsoft Docs"
+title: "アプリとデータを保護する"
 description: "このトピックでは、さまざまな Intune の機能と、会社のアプリとデータを保護するために使用可能な機能について説明します。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fdd85177f21a430eb940d1f88b3bb016c56cee55
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 09b7a1d4901a52845719e8d7094f665b12b91ab4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -52,7 +52,7 @@ Intune は、複数のテクノロジ層を介して会社のデータを保護�
 
 Microsoft Office アプリのようなアプリには、Intune アプリ SDK が組み込まれています。 Microsoft Intune アプリケーション パートナー ページの [Microsoft Intune モバイル アプリケーション ギャラリー](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)で、サポートされているアプリの完全な一覧を参照できます。 アプリを選択し、サポートされるシナリオ、プラットフォーム、アプリのマルチ ID 対応を確認してください。
 
-[特注の基幹業務アプリ](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)で MAM ポリシーを使用することもできます。
+[特注の基幹業務アプリ](/intune/apps-prepare-mobile-application-management)で MAM ポリシーを使用することもできます。
 
 データ移動を制限するだけでなく、デバイスをなくしたり、盗難に遭ったりした場合、あるいは、ユーザーが退職した場合、[会社のデータを選択消去](wipe-managed-company-app-data-with-microsoft-intune.md)し、個人データだけを残すことができます。
 

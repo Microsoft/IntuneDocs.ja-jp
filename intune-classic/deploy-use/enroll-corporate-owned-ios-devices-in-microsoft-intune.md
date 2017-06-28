@@ -1,5 +1,5 @@
 ---
-title: "企業所有の iOS デバイスの登録 | Microsoft Docs"
+title: "企業所有の iOS デバイスの登録"
 description: "Apple Device Enrollment Program (DEP) または Apple Configurator を使用した企業所有の iOS デバイスの登録"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44b4fbad45decde806fb5be41ea12f0d8bcf9c95
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 42da9c874183287bc9485035ae39e94efbaa3e8b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -59,8 +59,8 @@ DEP では、DEP を通じて購入したデバイスに "無線で" 登録プ�
 
 以下をサポートするには、ユーザー アフィニティが必要です。
   - モバイル アプリケーション管理 (MAM) アプリ
-  -    電子メールと会社データへの条件付きアクセス
-  -    ポータル サイト アプリ
+  - 電子メールと会社データへの条件付きアクセス
+  - ポータル サイト アプリ
 
 **ユーザー アフィニティありで企業所有 iOS デバイスを登録する方法**
 1. ユーザーは、デバイスの電源をオンにすると、セットアップ アシスタントを完了するように求められます。 セットアップ中にユーザーは資格情報を要求されます。 Intune のサブスクリプションに関連付けられている資格情報 (つまり一意の個人名または UPN) を使用する必要があります。

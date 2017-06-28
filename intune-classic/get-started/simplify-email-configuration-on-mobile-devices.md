@@ -1,5 +1,5 @@
 ---
-title: "モバイル デバイスでの電子メールの構成を簡略化する | Microsoft Docs"
+title: "モバイル デバイスでの電子メールの構成を簡略化する"
 description: 
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 78bce5b82cfbb65473ad0b8cadb0db349ed3df3c
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 2fe65f3021596390af8262f83704d6e4ceaa1716
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -37,8 +37,8 @@ Microsoft Intune は、Intune サービスによって管理される Windows、
 電子メール プロファイルを構成した後、Intune の条件付きアクセス ポリシーを使用して、会社の電子メールと Office 365 サービスへのアクセスを簡単に制限できます。 これらのポリシーによって、会社の電子メールと O365 サービスへのアクセスが、Intune に設定したルールを準拠しているデバイスに制限されることを保証できます。
 
 ## <a name="how-do-i-do-it"></a>実行方法
-1.    Windows、iOS、および Android デバイスで自動的に[エンド ユーザーの電子メール プロファイルを構成](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)します。
-2.    条件付きアクセス ポリシーを使用して、[会社の電子メールへのアクセスを制御](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)します。
+1.  Windows、iOS、および Android デバイスで自動的に[エンド ユーザーの電子メール プロファイルを構成](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)します。
+2.  条件付きアクセス ポリシーを使用して、[会社の電子メールへのアクセスを制御](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)します。
 
 
 ### <a name="additional-information"></a>追加情報:

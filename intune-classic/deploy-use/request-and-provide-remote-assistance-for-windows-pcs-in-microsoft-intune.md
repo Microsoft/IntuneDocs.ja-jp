@@ -1,5 +1,5 @@
 ---
-title: "Windows PC のリモート アシスタンス要求と提供 | Microsoft Docs"
+title: "Windows PC のリモート アシスタンス要求と提供"
 description: "PC として管理されている Windows デスクトップにリモート アシスタントを提供し、PC をリモートで起動するためにエンドユーザーまたは IT 監理者が行う手順について説明します。"
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 416fb7a4f4be0450dcfbd02b1fdb51097553df0a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3d173cf9a9ec8617cb7feec858b696aa0e80c12d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Windows PC のリモート アシスタンス要求と提供
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 
 このトピックの情報は、Intune ソフトウェア クライアントを使用して PC として管理している Windows デスクトップにのみ適用されます。
 

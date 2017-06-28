@@ -15,10 +15,10 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 32446d9a6f9383b5449dbabf288b0eac0b483ebb
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a39f67a532f53ef6ab2e3cc5d17b2d593a3483ae
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="mam-basics"></a>MAM の基礎
 
 
-**MAM とは何ですか。** [Intune モバイル アプリケーション管理](../deploy-use/overview-of-app-lifecycle-in-microsoft-intune.md)とは、ユーザーのモバイル アプリの公開、プッシュ、構成、セキュリティ保護、監視、および更新を可能にする一連の Intune 管理機能のことです。
+**MAM とは何ですか。** [Intune モバイル アプリケーション管理](/intune/app-lifecycle)とは、ユーザーのモバイル アプリの公開、プッシュ、構成、セキュリティ保護、監視、および更新を可能にする一連の Intune 管理機能のことです。
 
 **MAM のアプリ保護の利点は何ですか。** MAM は、アプリケーション内の組織のデータを保護します。 MAM-WE を使用すれば、機密データが含まれる職場または学校関連のアプリを、Bring Your Own Device (BYOD) シナリオにおける個人所有デバイスを含むほぼすべてのデバイスで管理できます。 Microsoft Office アプリなどの多くの仕事効率化アプリを、Intune MAM で管理することができます。 一般使用が可能な [Intune 対応アプリ](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)の公式の一覧を参照してください。
 
@@ -50,12 +50,12 @@ ms.lasthandoff: 05/23/2017
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>アプリ保護ポリシーで管理できるアプリ
 
-**どのアプリをアプリ保護ポリシーで管理できますか。** Intune アプリ保護ポリシーでは、[Intune アプリ SDK](../develop/intune-app-sdk.md) で有効化されたアプリや [Intune アプリ ラッピング ツール](../deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)によってラップされたアプリを管理できます。 一般使用が可能な [Intune 対応アプリ](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)の公式の一覧を参照してください。
+**どのアプリをアプリ保護ポリシーで管理できますか。** Intune アプリ保護ポリシーでは、[Intune アプリ SDK](/intune/app-sdk) で有効化されたアプリや [Intune アプリ ラッピング ツール](/intune/apps-prepare-mobile-application-management)によってラップされたアプリを管理できます。 一般使用が可能な [Intune 対応アプリ](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)の公式の一覧を参照してください。
 
 **Intune 対応アプリでアプリ保護ポリシーを使用するための基本要件は何ですか。**
-  1. エンドユーザーに、Azure Active Directory (AAD) アカウントが必要です。 Azure Active Directory で Intune ユーザーを作成する方法については、「[Intune にユーザーを追加して管理権限を付与する](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md)」を参照してください。
+  1. エンドユーザーに、Azure Active Directory (AAD) アカウントが必要です。 Azure Active Directory で Intune ユーザーを作成する方法については、「[Intune にユーザーを追加して管理権限を付与する](/intune/users-permissions-add)」を参照してください。
 
-  2. エンドユーザーに、Azure Active Directory アカウントに割り当てられた Microsoft Intune のライセンスが必要です。 Intune ライセンスをエンドユーザーに割り当てる方法については、「[Intune のライセンスを管理する](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)」を参照してください。
+  2. エンドユーザーに、Azure Active Directory アカウントに割り当てられた Microsoft Intune のライセンスが必要です。 Intune ライセンスをエンドユーザーに割り当てる方法については、「[Intune のライセンスを管理する](/intune/licenses-assign)」を参照してください。
 
   3. エンドユーザーは、アプリ保護ポリシーの対象となるセキュリティ グループに属している必要があります。 同一のアプリ保護ポリシーでは、使用中の特定のアプリを対象とする必要があります。 アプリ保護ポリシーは、[Azure Portal](http://portal.azure.com) の Intune コンソールで作成して展開できます。 セキュリティ グループは、現在 [Office ポータル](http://portal.office.com)で作成できます。
 

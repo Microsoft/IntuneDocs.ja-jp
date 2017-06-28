@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Intune を使用して Windows デバイスの管理をセットアップする | Microsoft Docs"
+title: "Microsoft Intune を使用して Windows デバイスの管理をセットアップする"
 description: "Microsoft Intune で Windows デバイスのモバイル デバイス管理 (MDM) を有効にします。"
 keywords: 
 author: NathBarn
@@ -14,10 +14,10 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: be2587f8ccb43632d861012416bbbca720698bb1
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: cf77cb313d5a36c5e7975e70d54bf044aa2d30c8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -69,7 +69,7 @@ CNAME リソース レコードには次の情報を含める必要がありま�
 ユーザーに、Windows デバイスを登録する方法とデバイスが管理されるとどうなるかを伝えます。
 エンドユーザー用の登録手順については、「[Intune に Windows デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)」を参照してください。 また、ユーザーには、[IT 管理者がユーザーのデバイスに関して確認できる情報](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows)に関するページを案内してください。
 
-エンドユーザー タスクの詳細については、「[Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)」を参照してください。
+エンドユーザー タスクの詳細については、「[Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](/intune/end-user-educate)」を参照してください。
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune でデバイスを登録するための前提条件](prerequisites-for-enrollment.md)

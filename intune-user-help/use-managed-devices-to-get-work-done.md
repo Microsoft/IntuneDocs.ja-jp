@@ -18,10 +18,10 @@ ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 748fce44b696675d4b7fe4b1d3048633fba1b490
+ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
+ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -38,7 +38,7 @@ Microsoft Intune は、組織がデバイス (スマートフォン、タブレ�
 ポータル サイトは 2 通りの方法で入手できます。
 
 - ポータル サイト アプリをデバイスにインストールします。 一般的に、ポータル サイト アプリはお使いのデバイスのアプリ ストアに移動して入手しますが、IT 管理者が代わりにポータル サイト アプリをインストールすることもできます。
-- IT 管理者が設定した[ポータル Web サイト](http://portal.manage.microsoft.com)にアクセスします。
+- IT 管理者が設定した[ポータル Web サイト](https://portal.manage.microsoft.com)にアクセスします。
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>アプリと Web サイトの違い
 ポータル サイトとポータル サイト Web サイトには微妙な違いがいくつかありますが、ほとんどのタスクは同じように実行できます。 実行できるいくつかのタスクを以下に示します。
@@ -100,5 +100,5 @@ Microsoft Intune は、組織がデバイス (スマートフォン、タブレ�
 - [iOS デバイスに関する一般的な問題を解決する](troubleshoot-your-device-ios.md)
 - [Windows デバイスに関する一般的な問題を解決する](troubleshoot-your-device-windows.md)
 
-以下のコメントを投稿してサポートを受けることはできますが、組織によって要求は異なるため、必ずしもすべての質問にお答えできるとは限りません。 IT 管理者にサポートを求めることで、最も迅速かつ適切な返答が得られる可能性があります。 連絡先の情報は、[ポータル Web サイト](http://portal.manage.microsoft.com)で確認できます。
+以下のコメントを投稿してサポートを受けることはできますが、組織によって要求は異なるため、必ずしもすべての質問にお答えできるとは限りません。 IT 管理者にサポートを求めることで、最も迅速かつ適切な返答が得られる可能性があります。 連絡先の情報は、[ポータル Web サイト](https://portal.manage.microsoft.com)で確認できます。
 

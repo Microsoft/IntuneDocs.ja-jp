@@ -1,5 +1,5 @@
 ---
-title: "PFX の証明書インフラストラクチャを構成する | Microsoft Docs"
+title: "PFX の証明書インフラストラクチャを構成する"
 description: ".PFX 証明書プロファイルを作成および展開します。"
 keywords: 
 author: lleonard-msft
@@ -15,10 +15,10 @@ ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d2e3d25111c35bff814923f4824a1c8bda3677ec
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 868578d6c6c87a9e7459160ed89dfd50629bdb51
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 

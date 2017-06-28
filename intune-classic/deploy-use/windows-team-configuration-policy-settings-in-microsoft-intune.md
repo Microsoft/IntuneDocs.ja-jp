@@ -1,6 +1,6 @@
 ---
-title: "Windows Team 構成ポリシー設定 | Microsoft Docs"
-description: "Microsoft Intune **Windows 10 Team 全般構成ポリシー**を使用して、Microsoft Surface Hub などの登録済みの Windows 10 Team デバイスの設定を構成します。"
+title: "Windows Team 構成ポリシー設定"
+description: "Microsoft Intune **Windows 10 Team 全般構成ポリシー** を使用して、Microsoft Surface Hub などの登録済みの Windows 10 Team デバイスの設定を構成します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 24a64db3a3cf97b679ab0fa739eb6f452499ca63
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 6e0f0ea969ed78f2daf482438b056c8b4eb1a316
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
