@@ -1,12 +1,12 @@
 ---
 title: "Intune で SCEP 証明書を構成して管理する"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: インフラストラクチャを構成してから、Intune で SCEP 証明書プロファイルを作成して割り当てる方法について説明します。"
+titleSuffix: Intune on Azure
+description: "インフラストラクチャを構成してから、Intune SCEP 証明書プロファイルを作成して割り当てる方法について説明します。&quot;"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/05/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ad0dc380eca386438e9568bf212ac9c5ad66ceb6
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: b2180833a536cdc116caf63120e1e9fcefd5ede5
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Intune で SCEP 証明書を構成して管理する
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 このトピックでは、インフラストラクチャを構成してから、Intune で SCEP (Simple Certificate Enrollment Protocol) 証明書プロファイルを作成して割り当てる方法について説明します。
 
@@ -84,9 +84,13 @@ NDES サーバーは、[Azure AD アプリケーション プロキシ](https://
 
 **手順 5**: Intune Certificate Connector を有効にし、インストールし、構成する
 
+> [!NOTE]
+> 既知の問題であるため、[[SCEP の証明書インフラストラクチャを構成する]、[インフラストラクチャを構成する]、タスク 5 ](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)という手順で証明書コネクタをダウンロードし、インストールし、構成します。
+
+
 #### <a name="step-1---create-an-ndes-service-account"></a>手順 1 - NDES サービス アカウントを作成する
 
-NDES サービス アカウントとして使用するドメイン ユーザー アカウントを作成します。 NDES をインストールして構成する前に、発行元 CA でテンプレートを構成するときに、このアカウントを指定します。 ユーザーに既定の権限、**ローカル ログオン**の権限、**サービスとしてログオン**の権限、**バッチ ジョブとしてログオン**の権限を与えます。 ポリシーを強化し、これらの権限を無効にしている組織もあります。
+NDES サービス アカウントとして使用するドメイン ユーザー アカウントを作成します。 NDES をインストールして構成する前に、発行元 CA でテンプレートを構成するときに、このアカウントを指定します。 既定の権限である、**ローカル ログオン**、**サービスとしてログオン**、**バッチ ジョブとしてログオン**などの権限がユーザーに付与されていることを確認します。 ポリシーを強化し、これらの権限を無効にしている組織もあります。
 
 #### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>手順 2 - 証明機関で証明書テンプレートを構成する
 このタスクでは次のことを行います。
@@ -246,7 +250,7 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 
     ![NDES のテスト](.\media\SCEP_NDES_URL.png)
 
-    **[503 サービスを利用できません]** が表示された場合、イベントビューアを確認します。 おそらくは、NDES ユーザーに権限がないため、アプリケーション プールが停止しているでしょう。 それらの権限に関する説明はタスク 1 にあります。
+    「**503 サービスを利用できません**」が表示された場合、イベント ビューアを確認します。 おそらくは、NDES ユーザーに権限がないため、アプリケーション プールが停止しているでしょう。 それらの権限に関する説明はタスク 1 にあります。
 
 ##### <a name="to-install-and-bind-certificates-on-the-ndes-server"></a>NDES サーバーで証明書をインストールしてバインドするには
 
@@ -304,7 +308,7 @@ NDES サーバーで証明書コネクタをダウンロードし、インスト
 ##### <a name="to-enable-support-for-the-certificate-connector"></a>Certificate Connector のサポートを有効にするには
 
 1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
+2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイスの構成]** を選択します。
 4. **[デバイス構成]** ブレードで **[証明機関]** を選択します。
 5.  **[証明書コネクタを有効にする]** を選択します。
@@ -312,10 +316,10 @@ NDES サーバーで証明書コネクタをダウンロードし、インスト
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>Certificate Connector をダウンロードし、インストールして、構成するには
 
 > [!NOTE]
-> 既知の問題であるため、[[SCEP の証明書インフラストラクチャを構成する]、[インフラストラクチャを構成する]、タスク 5 ](https://docs.microsoft.com/intune-classic/deploy-use/certificates-scep-configure#a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure)という手順で証明書コネクタをダウンロードし、インストールし、構成します。
+> 既知の問題であるため、[[SCEP の証明書インフラストラクチャを構成する]、[インフラストラクチャを構成する]、タスク 5 ](/intune-classic/deploy-use/configure-certificate-infrastructure-for-scep)という手順で証明書コネクタをダウンロードし、インストールし、構成します。
 
 1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
+2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイスの構成]** を選択します。
 4. **[デバイス構成]** ブレードで **[証明機関]** を選択します。
 5. **[Certificate Connector のダウンロード]** を選択します。
@@ -377,6 +381,8 @@ NDES サーバーで証明書コネクタをダウンロードし、インスト
         - **共通名**
         - **電子メールを含む共通名**
         - **電子メールとしての共通名**
+        - **カスタム**- このオプションを選択すると、別のドロップダウン フィールドが表示されます。 このフィールドを使用して、カスタムのサブジェクト名の形式を入力します。 カスタム形式でサポートされている 2 つの変数は、**共通名 (CN)** と**電子メール (E)** です。 これらの変数と静的文字列の 1 つ以上の組み合わせを使用することで、**CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US** のようなカスタムのサブジェクト名の形式を作成できます。この例では、CN と E 変数に加えて、組織単位、組織、市区町村、州、および国の値の文字列を使用してサブジェクト名形式を作成しています。 [このトピック](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)では、**CertStrToName** 関数とこの関数でサポートされる文字列について説明しています。
+        
     - **[サブジェクトの別名]** - Intuneが証明書要求のサブジェクトの別名 (SAN) をどのように自動生成するかを指定します。 たとえば、ユーザー証明書の種類を選択した場合は、サブジェクトの別名にユーザー プリンシパル名 (UPN) を含めることができます。 クライアント証明書を Windows ポリシー サーバーでの認証に使用する場合は、サブジェクトの別名を UPN に設定する必要があります。 
     - **[キー使用法]** - 証明書のキー使用法のオプションを指定します。 次のオプションから選択できます。 
         - **キーの暗号化:** キーが暗号化されている場合だけキーを交換できます。 
@@ -391,10 +397,6 @@ NDES サーバーで証明書コネクタをダウンロードし、インスト
 8. 完了したら、**[プロファイルを作成します]** ブレードに戻り、**[作成]** をクリックします。
 
 プロファイルが作成され、プロファイルの一覧ブレードに表示されます。
-
->[!Note]
-> iOS デバイスのみ: [サブジェクト名の形式] で、[カスタム] を選択してサブジェクト名のカスタム形式を入力します。
-> カスタム形式で現在サポートされている 2 つの変数は、**共通名 (CN)** と**電子メール (E)** です。 これらの変数と静的文字列の組み合わせを使用することで、**CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US** のようなサブジェクト名のカスタム形式を作成できます。この例では、CN と E 変数に加えて、組織単位、組織、市区町村、州、および国の値の文字列を使用してサブジェクト名形式を作成しています。 [このトピック](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)では、**CertStrToName** 関数とそのサポートされている文字列について説明しています。
 
 ## <a name="how-to-assign-the-certificate-profile"></a>証明書プロファイルを割り当てる方法
 

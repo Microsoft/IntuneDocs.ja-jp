@@ -1,12 +1,12 @@
 ---
-title: "iOS のボリューム購入アプリの管理 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: iOS ストアからボリューム購入したアプリを Intune に同期し、その使用状況を管理および追跡する方法について説明します。"
+title: "iOS のボリューム購入アプリの管理"
+titleSuffix: Intune on Azure
+description: "iOS ストアからボリューム購入したアプリを Intune に同期し、その使用状況を管理および追跡する方法について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/12/2017
+ms.date: 06/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3974145b4c244e251ee91a6216a79a6d8b1ad792
+ms.sourcegitcommit: 77277069a8c436c09be3940493a2c3e7b5dd8dc4
+ms.openlocfilehash: 32b57bba8347d815ada9705317bf467dd4644124
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/19/2017
 
 ---
 
 # <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Volume Purchase Program で購入した iOS アプリを Microsoft Intune で管理する方法
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 iOS アプリ ストアでは、社内で実行するアプリの複数のライセンスを購入できます。 これは、購入したアプリの複数コピーを追跡する管理オーバーヘッドを削減するのに役立ちます。
 
@@ -54,7 +54,7 @@ iOS アプリの複数のライセンスを購入するには、[ビジネス向
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Apple VPP トークンを取得およびアップロードするには
 
 1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
+2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[モバイル アプリ]** を選択します。
 1.  **[Mobile Apps]** ワークロードで、**[セットアップ]** > **[iOS VPP トークン]** の順に選択します。
 2.  VPP トークンの一覧ブレードで、**[追加]** をクリックします。
@@ -69,10 +69,13 @@ iOS アプリの複数のライセンスを購入するには、[ビジネス向
 
 **[今すぐ同期]** を選択すると、いつでも、Apple が保持しているデータと Intune を同期することができます。
 
+> [!NOTE]
+> Microsoft Intune は、iTunes ストアに公開されているアプリの情報だけを同期します。 **iOS 用カスタム B2B アプリケーション**には未対応です。 このようなアプリを対象にする場合、アプリ情報は同期されません。
+
 ## <a name="to-assign-a-volume-purchased-app"></a>ボリューム購入アプリを割り当てるには
 
 1. **[Mobile Apps]** ワークロードで、**[管理]** > **[ライセンスされたアプリ]** の順に選択します。
-2. アプリの一覧ブレードで、割り当てるアプリを選択し、**[...]** > **[グループの割り当て]** の順に選択します。
+2. アプリの一覧ブレードで、割り当てるアプリを選択し、**[...]** >  **[グループの割り当て]** の順に選択します。
 3. **[<*アプリ名*> - 割り当てられたグループ]** ブレードで、**[管理]** > **[割り当てられたグループ]** の順に選択します。
 4. **[グループの割り当て]** を選択し、**[グループの選択]** ブレードで、アプリを割り当てる Azure AD ユーザーまたはデバイス グループを選択します。
 **[必須]** の割り当て操作を選択する必要があります。 デバイス グループへの割り当ては、2017 年 1 月以降に作成された新しいテナントでも使用できます。 テナントがそれより前に作成されており、VPP アプリをデバイス グループに割り当てることができない場合は、Intune のサポートに連絡してください。
@@ -86,7 +89,7 @@ iOS アプリの複数のライセンスを購入するには、[ビジネス向
 
 ライセンスを再利用するには、割り当てアクションを **[アンインストール]** に変更する必要があります。 アプリをアンインストールすると、ライセンスは回収されます。
 
-対象となるデバイスを持つユーザーが初めて VPP アプリをインストールしようとすると、Apple Volume Purchase Program に参加するように求められます。 アプリのインストールを実行する前に、このプログラムに参加する必要があります。
+対象となるデバイスを持つユーザーが初めて VPP アプリをインストールしようとすると、Apple Volume Purchase Program に参加するように求められます。 アプリのインストールを実行する前に、このプログラムに参加する必要があります。 Apple Volume Purchase Program への参加招待を行うには、ユーザーが iOS デバイスで iTunes アプリを使用できる必要があります。 iTunes Store アプリを無効にするようカスタム構成ポリシーを設定した場合、VPP アプリのユーザーベース ライセンスは機能しません。 この問題を解決するには、ポリシーを削除して iTunes アプリを許可するか、デバイス ベースのライセンスを使用します。
 
 VPP アプリを利用可能として割り当てると、アプリのコンテンツとライセンスは、アプリ ストアから直接割り当てられます。
 

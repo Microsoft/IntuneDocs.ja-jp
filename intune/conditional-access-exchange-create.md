@@ -1,7 +1,7 @@
 ---
 title: "Exchange On-Premises の条件付きアクセス ポリシーを作成して割り当てる"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Intune で Exchange On-premises 条件付きアクセスと従来の Exchange Online Dedicated を構成する方法"
+titleSuffix: Intune on Azure
+description: "Intune で Exchange On-premises 条件付きアクセスと従来の Exchange Online Dedicated を構成する方法について説明します&quot;"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,17 +15,17 @@ ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2f1775eb98d6518ce35dcc38852e167c5eada616
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 61434f104ccba9e1d37a4845e38b75ac858bce63
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
-# <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune-azure-preview"></a>Microsoft Intune Azure プレビューで Exchange On-Premises と従来の Exchange Online Dedicated の条件付きアクセス ポリシーを作成して割り当てる方法
+# <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Microsoft Intune で Exchange On-Premises と従来の Exchange Online Dedicated の条件付きアクセス ポリシーを作成して割り当てる方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 このトピックでは、デバイスのコンプライアンスに基づいて Exchange On-premises の条件付きアクセスを構成するプロセスについて説明します。
 
@@ -93,8 +93,8 @@ Windows 8.1 以降用のネイティブ **メール** アプリケーション (
 
 8. **[Exchange On-premises のアクセス]** ブレードで **[はい]** を選択し、Exchange On-premises アクセス制御を有効にします。
 
-      > [!NOTE]
-      > Exchange Active Sync On-Premises Connector を構成していない場合、このオプションは無効になります。  Exchange On-premises の条件付きアクセスを有効にするには、このコネクタをインストールして構成しておく必要があります。 詳細については、[Intune On-premises Exchange Connector のインストール](exchange-connector-install.md)に関するページを参照してください
+    > [!NOTE]
+    > Exchange Active Sync On-Premises Connector を構成していない場合、このオプションは無効になります。  Exchange On-premises の条件付きアクセスを有効にするには、このコネクタをインストールして構成しておく必要があります。 詳細については、[Intune On-premises Exchange Connector のインストール](exchange-connector-install.md)に関するページを参照してください
 
 9. **[割り当て]** で、**[組み込まれたグループ]** を選択します。  条件付きアクセスが適用されているセキュリティ ユーザー グループを使用します。 これによりユーザーは自分のデバイスを Intune に登録し、コンプライアンス プロファイルに準拠する必要ができます。
 
@@ -114,12 +114,12 @@ Windows 8.1 以降用のネイティブ **メール** アプリケーション (
 
 15. **[On-premises]** ブレードで **[保存]** をクリックして、条件付きアクセス ポリシーを保存します。
 
-## <a name="create-azure-ad-conditional-access-policies-in-intune-azure-preview"></a>Intune Azure プレビューで Azure AD の条件付きアクセス ポリシーを作成する
+## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>Intune で Azure AD の条件付きアクセス ポリシーを作成する
 
-Intune 1704 リリース以降では、管理者は Intune Azure プレビューから Azure AD の条件付きアクセス ポリシーを作成できます。Azure ワークロードと Intune ワークロードを切り替える必要がなくて便利です。
+Intune 1704 リリース以降では、管理者は Intune Azure Portal から Azure AD の条件付きアクセス ポリシーを作成できます。Azure と Intune のワークロードを切り替える必要がなくて便利です。
 
 > [!IMPORTANT]
-> Intune Azure プレビュー ポータルから Azure AD の条件付きアクセス ポリシーを作成するには、Azure AD Premium ライセンスが必要です。
+> Intune Azure Portal から Azure AD の条件付きアクセス ポリシーを作成するには、Azure AD Premium ライセンスが必要です。
 
 ### <a name="to-create-azure-ad-conditional-access-policy"></a>Azure AD 条件付きアクセス ポリシーを作成するには
 

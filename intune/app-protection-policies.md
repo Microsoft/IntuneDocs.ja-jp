@@ -1,7 +1,7 @@
 ---
 title: "アプリ保護ポリシーを作成して展開する"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Intune のアプリ保護ポリシーが、管理対象アプリによって使用される会社のデータを保護するうえでどのように役立つかを説明します。"
+titleSuffix: Intune on Azure
+description: "Intune のアプリ保護ポリシーが、管理するアプリによって使用される会社のデータを保護するうえでどのように役立つかについて説明します。&quot;"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -16,20 +16,24 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d63e99561766268941b2c6d8b3bb6a1dd028f72c
+ms.sourcegitcommit: db17387360e5d40cd19613266aec153f01bdaedc
+ms.openlocfilehash: 56a19bc4d970f230f719af9369dada45ffb65e76
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/15/2017
 
 ---
 
 # <a name="how-to-create-and-assign-app-protection-policies"></a>アプリ保護ポリシーを作成して割り当てる方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-このトピックでは、**Azure Portal プレビュー プログラムの Intune サービスを使用していない場合に**、従来の Intune コンソールで[アプリ保護ポリシーを作成する方法](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)について説明します。
+## <a name="before-you-begin"></a>始める前に
+
+Intune クラシック コンソールでの手順については、[アプリ保護ポリシーを作成する方法](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)に関するページをご覧ください。
 
 アプリ保護ポリシーは、場合によっては Intune で管理できないデバイスで実行されているアプリに適用できます。 アプリ保護ポリシーのしくみと Intune のアプリ保護ポリシーでサポートされるシナリオの詳細については、[Microsoft Intune のアプリ保護ポリシー](app-protection-policy.md)に関するページを参照してください。
+
+MAM でサポートされるアプリの一覧については、[MAM アプリの一覧](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)に関するページをご覧ください。
 
 ##  <a name="create-an-app-protection-policy"></a>アプリ保護ポリシーを作成する
 1.  **[モバイル アプリ]** ワークロードで、**[管理]** > **[アプリ保護ポリシー]** の順に選びます。
@@ -116,7 +120,6 @@ Microsoft Intune ライセンスが割り当てられているユーザーのみ
 ## <a name="policy-settings"></a>ポリシー設定
 iOS と Android 用のポリシー設定の完全な一覧を表示するには、次のいずれかを選択します。
 
-> [!div class="op_single_selector"]
 - [iOS ポリシー](app-protection-policy-settings-ios.md)
 - [Android ポリシー](app-protection-policy-settings-android.md)
 

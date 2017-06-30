@@ -1,5 +1,5 @@
 ---
-title: "Windows Phone 8.1 ポリシー設定 | Microsoft Docs"
+title: "Windows Phone 8.1 ポリシー設定"
 description: "Intune には、Windows Phone 8.1 デバイスで構成できるさまざまな全般設定が組み込まれています。 また、OMA-URI 値を指定して、Intune にはないユーザー設定を作成できます。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 65d3b454531084008bdbb01dd17f5ce34ef5890f
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 091c8c3867fffa2ba6857f79ae40ed618aaf0b72
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

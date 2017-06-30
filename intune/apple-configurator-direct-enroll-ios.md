@@ -1,7 +1,7 @@
 ---
 title: "Apple Configurator と直接登録を使用して iOS デバイスを登録する"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Apple Configurator で、直接登録を使用して会社が所有している iOS デバイスを登録する方法について説明します。"
+titleSuffix: Intune on Azure
+description: "Apple Configurator で、直接登録を使用して会社が所有している iOS デバイスを登録する方法について説明します。&quot;"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -16,17 +16,17 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5347e2023a9ce19f8e8ab960e2eebf8107530220
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: dd856cc3c9d11d1079c6092025200059f0ace437
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="enroll-ios-devices-with-apple-configurator-and-direct-enrollment"></a>Apple Configurator と直接登録を使用して iOS デバイスを登録する 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune は、Mac コンピューターで実行される [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) を使用した、企業所有の iOS デバイスの登録をサポートします。 このプロセスはデバイスを工場出荷時の設定に戻さず、定義済みのポリシーでデバイスを登録します。 この方法は、**ユーザー アフィニティなし**のデバイス向けであり、iOS デバイスを Mac コンピューターに USB で接続して、会社の登録をセットアップする必要があります。
 
@@ -42,7 +42,7 @@ iOS デバイスの他の登録方法については、[Intune での iOS デバ
 
 iOS デバイスの登録を設定する前に、以下の前提条件を満たしている必要があります。
 
-- [ドメインを構成する](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
+- [ドメインを構成する](custom-domain-name-configure.md)
 - [MDM 機関を設定する](mdm-authority-set.md)
 - [グループの作成](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
 - [ポータル サイト アプリを構成する](company-portal-app.md)

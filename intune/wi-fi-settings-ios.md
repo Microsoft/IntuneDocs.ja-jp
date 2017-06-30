@@ -1,7 +1,7 @@
 ---
 title: "iOS デバイス向けの Intune Wi-Fi 設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: iOS デバイスで Wi-Fi 接続を構成するために使用できる Intune 設定について説明します。"
+titleSuffix: Intune on Azure
+description: "iOS デバイスで Wi-Fi 接続を構成するために使用できる Intune 設定について説明します。&quot;"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -16,17 +16,17 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: edd7cfc8ed6e444105f58002b3ba7c0086fde518
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 001a65733d3565df8f4aea485c5a7488f2756a88
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune での iOS デバイス向けの Wi-Fi 設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 

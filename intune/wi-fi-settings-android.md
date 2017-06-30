@@ -1,12 +1,12 @@
 ---
 title: "Android デバイス向けの Intune Wi-Fi 設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Android デバイスで Wi-Fi 接続を構成するために使用できる Intune 設定について説明します。"
+titleSuffix: Intune on Azure
+description: "Intune での Android デバイスと Android for Work デバイスの Wi-fi 接続設定の構成について説明します。&quot;"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 06/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,19 +16,21 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0dd0b8c4e4cf6733c20282817cba99d8379ef24e
+ms.sourcegitcommit: 326de9b86b80789a6ac19bb96ff6e4ca97789830
+ms.openlocfilehash: 8e1c64730dc8bb91a0fe5e7936ed963d67be1feb
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/17/2017
 
 
 ---
 
-# <a name="wi-fi-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune での Android デバイス向けの Wi-Fi 設定
+# <a name="wi-fi-settings-for-android-and-android-for-work-devices-in-microsoft-intune"></a>Microsoft Intune での Android デバイスと Android for Work デバイスの Wi-fi 設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>基本プロファイルとエンタープライズ プロファイル向けの Wi-Fi 設定
+
+次の Wi-fi 設定は、Android デバイスと Android for Work デバイスの両方で利用できます。
 
 - **[ネットワーク名]** - この Wi-Fi 接続の名前を入力します。 これは、ユーザーがデバイスで利用可能な接続の一覧を参照しているときに表示される名前です。
 - **[SSID]** - サービス セット識別子の短縮形です。 これは、デバイスの接続先となるワイヤレス ネットワークの実際の名前です。 ただし、ユーザーが接続を選択したときにユーザーに表示されるのは、作成した上記のネットワーク名のみです。

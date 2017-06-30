@@ -1,7 +1,7 @@
 ---
 title: "Windows 10 Team 向けの Intune デバイス制限"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Windows 10 Team デバイスで使用できるデバイス制限について説明します。"
+titleSuffix: Intune on Azure
+description: "Windows 10 Team デバイスで使用できるデバイス制限について説明します。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,17 +16,17 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: afbbe6b7649e1ffc3f84ada64396d9033a2db200
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 7a5c3eaf3d2b1fc4383282473352124c793b666f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="windows-10-team-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Windows 10 Team デバイスの制限設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 - **[ユーザーの入室時に画面のスリープ状態を解除する]** - 部屋にだれかがいるとセンサーで検出したときに、デバイスのスリープ状態を自動的に解除します。
 - **[ワイヤレス投影の PIN]** - デバイスのワイヤレス投影機能を使用する前に暗証番号 (PIN) を入力しなければならないかどうかを指定します。

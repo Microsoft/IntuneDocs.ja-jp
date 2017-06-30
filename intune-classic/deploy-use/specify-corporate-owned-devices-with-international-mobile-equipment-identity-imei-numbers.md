@@ -1,5 +1,5 @@
 ---
-title: "IMEI 番号を指定する | Microsoft Docs"
+title: "IMEI 番号を指定する"
 description: "Microsoft Intune では、管理者は、モバイル デバイス プラットフォームの IMEI 番号をインポートして会社所有のモバイル デバイスを識別できます"
 keywords: 
 author: NathBarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3388bce5bc4bb675b0342b463ed620c6023d51a2
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: d1ecc65dac893740b152aa743e6b32c5de5a3ec9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

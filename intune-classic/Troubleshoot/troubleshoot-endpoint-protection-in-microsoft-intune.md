@@ -1,5 +1,5 @@
 ---
-title: "エンドポイント保護のトラブルシューティング | Microsoft Docs"
+title: "Endpoint Protection に関するトラブルシューティング"
 description: "Microsoft Intune Endpoint Protection の使用中に生じた問題を解決します。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ab9bf96a8ed1cfa857e422661644e82ac097a8fb
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3577c18cd888b096dc783813d9e5ace3580173df
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

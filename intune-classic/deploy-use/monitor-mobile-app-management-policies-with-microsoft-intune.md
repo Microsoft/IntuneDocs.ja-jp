@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Intune での MAM ポリシーの監視 | Microsoft Docs"
+title: "Microsoft Intune で MAM ポリシーを監視する"
 description: "ポリシーを持つユーザー数を確認し、詳細を調べるためにドリルダウンします。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d80632aceaa675f08eb4b23ce59e3bcabb72b4d0
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 30c7c97b876922e754a1f92ec035eb4e184c7970
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

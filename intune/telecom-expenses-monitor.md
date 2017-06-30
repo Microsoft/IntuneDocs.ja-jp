@@ -1,7 +1,7 @@
 ---
 title: "通信費管理サービスをセットアップする"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー:Saaswedo 通信費管理サービスを Intune と統合するように構成します。"
+titleSuffix: Intune on Azure
+description: "Saaswedo 通信費管理サービスを Intune と統合するように構成します。&quot;"
 keywords: Saaswedo
 author: nathbarn
 ms.author: nathbarn
@@ -16,15 +16,15 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 41ac9ad43b6ddaa2b78d588cb01b467d37f2178a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: fe3735afccb30da9ea863943808e7cfad667899f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
-# <a name="set-up-a-telecom-expense-management-service-in-intune-azure-preview"></a>Intune Azure プレビューで通信費管理サービスを設定する
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+# <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune で通信費管理サービスをセットアップする
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune を使用して、企業所有のモバイル デバイスでのデータの使用から発生する通信費を管理することができます。 この機能を有効にするために、Intune は、サードパーティのソフトウェア開発企業である Saaswedo の Datalert 通信費管理ソリューションと統合されています。 Datalert とは、Intune で管理されているデバイスの通信データ使用量を管理し、コストのかかる予想外のデータ超過やローミング超過を防止することができる、リアルタイム通信費管理ソフトウェアです。
 
@@ -43,7 +43,7 @@ Datalert サービスを Intune で使用するには、Datalert コンソール
 
 ## <a name="prerequisites"></a>必要条件
 
-- Microsoft Intune のサブスクリプションと、現在パブリック プレビュー中の Azure Portal へのアクセス
+- Microsoft Intune のサブスクリプションおよび Azure Portal へのアクセス。
 - Datalert 通信費管理サービスのサブスクリプション
 
 ## <a name="list-of-telecom-expense-management-providers"></a>通信費管理プロバイダーの一覧
@@ -108,9 +108,9 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
 次の手順に従って、プラットフォームごとに、Intune で Datalert アプリを作成します。 次の手順では、例として iOS を使用します。
 
-1. Azure Portal の **[Intune]** ブレードで、**[アプリの管理]** を選択します。
+1. Azure Portal の **[Intune]** ブレードで、**[Mobile Apps]** を選択します。
 
-2. **[アプリの管理]** ブレードで、**[管理]** > **[アプリ]** を選択します。
+2. **[Mobile Apps]** ブレードで、**[管理]**  >  **[アプリ]** を選択します。
 
 3. **[追加]** を選択してアプリを追加します。
 
@@ -151,8 +151,8 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
 ## <a name="client-enrollment-experience"></a>クライアント登録のエクスペリエンス
 クライアント登録のエクスペリエンスについては、以下をご覧ください。
--    [通信費管理サービスに iOS デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
--    [通信費管理サービスに Android デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
+-   [通信費管理サービスに iOS デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
+-   [通信費管理サービスに Android デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
 
 ## <a name="turning-off-the-datalert-service"></a>Datalert サービスを無効にする
 

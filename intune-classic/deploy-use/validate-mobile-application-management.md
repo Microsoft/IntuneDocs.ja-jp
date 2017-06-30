@@ -1,5 +1,5 @@
 ---
-title: "MAM 設定の確認 | Microsoft Docs"
+title: "MAM 設定を確認する"
 description: "このトピックでは、MAM ポリシーが正しく設定され、想定通りに動作するかをテストし、確認する方法を説明します。"
 keywords: 
 author: andredm7
@@ -14,10 +14,10 @@ ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ms.reviewer: joglocke
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ab04c85d6704d7011cc5d4ea2a9f83d78b5b73e3
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 1e22be7b238cce195ee88c938b1cca009c0b21d3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -50,7 +50,7 @@ MAM はデータ保護ツールであるため、ユーザーが問題を報告�
 ### <a name="what-to-do"></a>対処
 ユーザーの状態に基づいて実行するアクションを次に示します。
 
-- ユーザーが MAM のライセンスを取得していない場合、「[Intune のライセンスを管理する](..\get-started\start-with-a-paid-subscription-to-microsoft-intune.md)」の説明に従って、ユーザーに Intune のライセンスを割り当てます。
+- ユーザーが MAM のライセンスを取得していない場合、「[Intune のライセンスを管理する](/intune/setup-steps)」の説明に従って、ユーザーに Intune のライセンスを割り当てます。
 - ユーザーが O365 のライセンスを取得していない場合、ライセンスを取得します。
 - ユーザーのアプリが **[未確認]** として一覧表示される場合、そのアプリの MAM ポリシーを正しく構成したかどうかを確認します。
 - MAM ポリシーを適用するすべてのユーザーに、これらの条件が適用されていることを確認します。

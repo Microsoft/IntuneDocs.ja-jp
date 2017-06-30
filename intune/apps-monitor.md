@@ -1,7 +1,7 @@
 ---
-title: "アプリ情報と割り当てを監視する方法 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: ユーザーまたはデバイスにアプリを割り当てた後は、この情報を参考にして、その状態を監視できます。"
+title: "アプリ情報と割り当てを監視する方法"
+titleSuffix: Intune on Azure
+description: "ユーザーまたはデバイスにアプリを割り当てた後は、この情報を参考にして、その状態を監視できます。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,16 +16,16 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 7c39c904cd2a7bd20525d9072067c6e484b4437a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: d588ecc8f2e211b5a8ccdfe7b7720869cc6327b8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune でアプリ情報と割り当てを監視する方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune には、管理しているアプリのプロパティと、割り当ての状態を監視する方法が複数あります。
 

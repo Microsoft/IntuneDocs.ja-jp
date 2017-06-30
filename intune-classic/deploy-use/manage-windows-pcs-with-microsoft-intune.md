@@ -1,5 +1,5 @@
 ---
-title: "クライアント ソフトウェアを使用して PC を管理する |Microsoft Docs"
+title: "クライアント ソフトウェアを使用して PC を管理する"
 description: "Intune クライアント ソフトウェアをインストールして Windows PC を管理します。"
 keywords: 
 author: nathbarn
@@ -15,15 +15,17 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6bd4e3315fd27201e8005b1053fa6e15bf2c21b5
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e217648c744d76d4cde6b8927137cd569b8d0a2e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune ソフトウェア クライアントを使用して Windows PC をコンピューターとして管理する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune は、モバイル デバイス管理するための組織向けの包括的なソリューションを提供します。 Intune は、Windows 10 オペレーティング システムに組み込まれている最新のデバイス管理機能を使用して、モバイル デバイスとして Windows PC を管理できます。 組織の管理ニーズを満たすため、Intune は、Intune ソフトウェア クライアントでコンピューターとして Windows PC を管理することもできます。 この管理方法は、従来の Windows オペレーティング システムでのコンピューター管理機能を使います。
 
@@ -79,7 +81,7 @@ Intune クライアント ソフトウェアでは、ソフトウェアの更新
 
 Intune クライアント ソフトウェアを使って Windows PC を管理する場合は、**[コンピューター管理]** セクションに表示されているポリシーのみを使うことができます。
 
-Intune では、Windows Server における Active Directory ドメイン サービス (AD DS) グループ ポリシー オブジェクト (GPO) と似た方法で、ポリシーを使って Windows PC を管理します。Active Directory ドメインに参加しているコンピューターを Intune で管理する場合は、組織で使われている他の GPO と Intune のポリシーが競合しないようにしてください。 詳しくは、「[初心者向けのグループ ポリシー](https://technet.microsoft.com/library/hh147307.aspx)」をご覧ください。
+Intune では、Windows Server における Active Directory ドメイン サービス (AD DS) グループ ポリシー オブジェクト (GPO) と似た方法で、ポリシーを使って Windows PC を管理します。 Active Directory ドメインに参加しているコンピューターを Intune で管理する場合は、組織で使われている[他の GPO と Intune のポリシーが競合しないようにしてください](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts)。 詳しくは、「[初心者向けのグループ ポリシー](https://technet.microsoft.com/library/hh147307.aspx)」をご覧ください。
 
   ![新しい Windows PC ポリシーのテンプレートの選択](../media/select-template-for-pc-policy.png)
 

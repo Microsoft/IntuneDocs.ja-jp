@@ -1,5 +1,5 @@
 ---
-title: "リソース アクセス用の証明書プロファイル | Microsoft Docs"
+title: "リソース アクセス用の証明書プロファイル"
 description: "各ユーザーのデバイスにインストールされている証明書で、VPN、Wi-Fi、および電子メール アクセスを保護します。"
 keywords: 
 author: lleonard-msft
@@ -15,10 +15,10 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3dd6e5971d084773640c577cace43c2f011dbb69
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 5570c13b9ca1782b12ad7ca718d18c98bda7bbfa
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

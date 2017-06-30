@@ -1,5 +1,5 @@
 ---
-title: "Android for Work アプリ構成ポリシー | Microsoft Docs"
+title: "Android for Work アプリ構成ポリシー"
 description: "Intune のモバイル アプリ構成ポリシーを使用して、ユーザーが Android for Work アプリを実行するときに必要となる可能性がある設定を指定できます。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 69cee5763cb8a24b4a3be6e981bcd46512bfc3ba
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: f2284920852de5a79cf47fee81922a5b069157c3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

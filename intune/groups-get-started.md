@@ -1,7 +1,7 @@
 ---
-title: "Intune Azure Portal プレビューでのグループの概要"
-titleSuffix: Intune Azure preview
-description: "Intune Azure Portal プレビューでのグループの新機能について説明します"
+title: "Intune でのグループの概要"
+titleSuffix: Intune on Azure
+description: "Intune Azure Portal でのグループの新機能について説明します"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0a6e2b75b1c85c0cd0ed98623dcd9d87b15eb082
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 98809446cefde3e949b620ca8ca801822e6f2759
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="get-started-with-groups"></a>グループの概要
 
-[!INCLUDE[azure preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ユーザーからのフィードバックに対応して、Microsoft Intune でグループを操作する方法が変更されています。
 Azure Portal から Intune を使用している場合、Intune グループが Azure Active Directory セキュリティ グループに移行されています。

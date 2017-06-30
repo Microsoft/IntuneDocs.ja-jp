@@ -1,5 +1,5 @@
 ---
-title: "デバイスの Windows Hello for Business の設定を制御する | Microsoft Docs"
+title: "デバイスで Windows Hello for Business の設定を制御する"
 description: "Active Directory や Azure Active Directory アカウントを使った代替サインイン方法であり、パスワード、スマート カード、または仮想スマート カードに置き換わる Windows Hello for Business と Intune を統合する方法について説明します。"
 keywords: 
 author: lleonard-msft
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9a223f7fb1fd0736541da0d6a15ad5285241577a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 7c4ac0b79e30283b90612c77acf1462a25bb6093
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

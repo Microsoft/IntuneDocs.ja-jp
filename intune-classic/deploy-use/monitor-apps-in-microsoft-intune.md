@@ -1,5 +1,5 @@
 ---
-title: "アプリの展開を監視する | Microsoft Docs"
+title: "アプリの展開を監視する"
 description: "Intune を使用して展開したアプリを監視する方法について説明します。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 808268faa797d8576f5fb693d9940d97d17abf21
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 9255a9cb966ef02aba11e0a6aaf7caf7e808a41c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

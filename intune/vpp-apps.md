@@ -1,12 +1,12 @@
 ---
-title: "Intune を使用してボリューム購入アプリを管理する"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Intune を使用して、ストアからのボリューム購入アプリの使用状況を管理および監視する方法について説明します。"
+title: "Intune によるボリューム購入アプリとブックの管理"
+titleSuffix: Intune on Azure
+description: "Intune を使用して、ストアからのボリューム購入アプリとブックの使用状況を管理および監視する方法について説明します。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,25 +16,26 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9646b0f861ea55d2d44975341de37e6a2548993b
+ms.sourcegitcommit: 73b43084c28436cb8a7e866dcee2d52694c60f5c
+ms.openlocfilehash: 82ffb4b150b9b8a379cdd6c952b448d6abb6b83e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/16/2017
 
 ---
 
-# <a name="manage-volume-purchased-apps-with-micrsoft-intune"></a>Microsoft Intune を使用してボリューム購入アプリを管理する
+# <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>Microsoft Intune によるボリューム購入アプリとブックの管理
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-一部のアプリ ストアでは、社内で実行するアプリの複数のライセンスを購入できます。 これは、購入したアプリの複数コピーを追跡する管理オーバーヘッドを削減するのに役立ちます。
+一部のアプリ ストアでは、社内で使用するアプリやブックの複数のライセンスを購入できます。 ライセンスの一括購入は、購入したアプリとブックの複数コピーを追跡する管理オーバーヘッドを削減するのに役立ちます。
 
-Microsoft Intune では、このようなプログラムを通じて購入したアプリを管理するために、アプリ ストアからライセンス情報をインポートし、使用したライセンスの数を追跡し、所有しているより多くのアプリをインストールできないようにします。
+Microsoft Intune を使用することで、このようなプログラムを通じて購入したアプリとブックを管理できます。 ライセンス情報をストアからインポートし、使用したライセンスの数を追跡し、所有しているライセンス数よりも多くのアプリまたはブックをインストールしていないことを確認できます。
 
-## <a name="which-types-of-apps-can-you-manage"></a>管理できるアプリの種類
+## <a name="which-types-of-apps-and-books-can-you-manage"></a>管理できるアプリとブックの種類
 
-Intune では、iOS アプリ ストアとビジネス向け Windows ストアからボリューム購入したアプリを管理できます。 各ストアからライセンスを購入したアプリを管理する方法については、次のいずれかのトピックを参照してください。
+Intune では、iOS ストアからボリューム購入したアプリとブックを管理し、ビジネス向け Windows ストアからボリューム購入したアプリを管理できます。 各ストアからライセンスを購入したアプリを管理する方法については、次のトピックのいずれかをご覧ください。
 
 [iOS のボリューム購入アプリの管理](vpp-apps-ios.md)
 [ビジネス向け Windows ストアからのボリューム購入アプリの管理](windows-store-for-business.md)
+[iOS eBooks の管理方法](vpp-ebooks-ios.md)
 

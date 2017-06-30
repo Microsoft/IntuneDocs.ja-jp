@@ -1,12 +1,12 @@
 ---
 title: "Windows 10 用に Intune 教育設定を構成する"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Intune を使用して、管理対象デバイスで Windows 10 の教育設定を構成する方法について説明します。"
+titleSuffix: Intune on Azure
+description: "Intune を使用して、管理対象デバイスで Windows 10 の教育設定を構成する方法について説明します。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3acb45ccc9e67fb410a9511f138d1558a49fadf9
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 39aa668794280adc612122e9b2c3c4e7737b65e9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Microsoft Intune で Windows 10 教育設定を構成する方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 教育プロファイルには、Windows テスト アプリを構成する詳細 (アカウント詳細を含む) とテスト URL を指定できます。 これを構成するとき、テスト アプリが開き、指定したテストが表示されます。テストが完了するまで他のアプリはデバイスで実行できません。
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="create-a-device-profile-containing-education-profile-settings"></a>教育プロファイル設定を含むデバイス プロファイルの作成
 
 1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
+2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
 3. [プロファイル] ブレードで、**[プロファイルを作成します]** を選択します。

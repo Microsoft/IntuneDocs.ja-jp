@@ -1,7 +1,7 @@
 ---
 title: "30 日間の無料試用版にサインアップする"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Azure で Intune にサインアップする方法。"
+titleSuffix: Intune on Azure
+description: "Azure での Intune にサインアップする方法について説明します。&quot;"
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -15,19 +15,19 @@ ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3be43e12abc1cf90da3584450ddd56ab63bdfac1
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: b74482d92ba40fafb6c98793fd9b218b2a3278f7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
-# <a name="sign-up-for-a-microsoft-intune-free-trial-for-the-azure-portal-preview"></a>Azure Portal プレビューの Microsoft Intune 無料試用版にサインアップする
+# <a name="sign-up-for-a-microsoft-intune-free-trial-for-the-azure-portal"></a>Azure Portal の Microsoft Intune 無料試用版にサインアップする
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-この記事では、Azure Portal プレビューの Intune スタンドアロンの試用版にサインアップする方法について説明します。 <!---and prepares your trial with some users so that you can then follow the associated evaluation guide to see how Intune manages mobile devices. ---> <!---or app data when devices are not enrolled in Intune.--->
+この記事では、Azure Portal の Intune スタンドアロンの試用版にサインアップする方法について説明します。 <!---and prepares your trial with some users so that you can then follow the associated evaluation guide to see how Intune manages mobile devices. ---> <!---or app data when devices are not enrolled in Intune.--->
 
 <!--- ## Assumptions
 This sign-up article and the evaluation guide assume you are using the trial for evaluation purposes only and intend to start with a clean environment when you subscribe.
@@ -38,26 +38,26 @@ You can do everything in the trial version that you can do in a subscription ver
 
 <!--- ## Sign up for your trial--->
 1. [Intune サインアップ](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) ページにアクセスしてフォームに入力し、試用版サブスクリプションにサインアップします。
-
- <!--- If you have a work or school account and want to use that for your Intune trial, follow [these sign-in instructions](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1) instead. However, this article assumes that you are not using such an account.---><br/> ![サインアップ ページの画像](./media/1-clicking-try.png)
+account-sign-up.md
+ <!--- If you have a work or school account and want to use that for your Intune trial, follow [these sign-in instructions](account-sign-up.md) instead. However, this article assumes that you are not using such an account.---><br/> ![サインアップ ページの画像](./media/1-clicking-try.png)
 
  > [!TIP]
 > IT 運用チームやユーザーの大半が自分と異なるロケールに属している場合は、そのロケールを **[Where's your company located? (会社の所在地はどこですか?)]** で選択することをお勧めします。
 
-2. サインアップ プロセスの最後に、新しいアカウントの情報を含むメッセージが表示されます。 <br/> ![アカウント情報の画像](./media/2-end-of-sign-up-process.png) <br/>この時点で **[You're ready to go (準備完了)]** をクリックすると、Office 365 管理センターが表示されるので、そこでテスト環境にユーザーを追加できます。 <br/><br/>ただし、Intune Azure Portal プレビューに直接アクセスしたい場合は、新しいブラウザー ウィンドウを開き、アドレス バーに「**https://portal.azure.com**」と入力します。 Azure サインイン ページが表示されるので、提供されている資格情報を使用してサインインします。 Intune 試用版にサインインする際は常にこのアドレスを使用してください。 <br/> ![Azure Portal のサインイン ページの画像](./media/azure-portal-signin.png)
+2. サインアップ プロセスの最後に、新しいアカウントの情報を含むメッセージが表示されます。 <br/> ![アカウント情報の画像](./media/2-end-of-sign-up-process.png) <br/>この時点で **[You're ready to go (準備完了)]** をクリックすると、Office 365 管理センターが表示されるので、そこでテスト環境にユーザーを追加できます。 <br/><br/>ただし、Intune Azure Portal に直接アクセスしたい場合は、新しいブラウザー ウィンドウを開き、アドレス バーに「**https://portal.azure.com**」と入力します。 Azure サインイン ページが表示されるので、提供されている資格情報を使用してサインインします。 Intune 試用版にサインインする際は常にこのアドレスを使用してください。 <br/> ![Azure Portal のサインイン ページの画像](./media/azure-portal-signin.png)
 
-Intune Azure プレビューに初めてサインオンすると、Azure ダッシュボードに Intune が表示されないことがあります。 Intune サービスを Azure ダッシュボードに追加するには:
+Intune Azure Portal に初めてサインオンすると、Azure ダッシュボードに Intune が表示されないことがあります。 Intune サービスを Azure ダッシュボードに追加するには:
 1. ダッシュボードの左にある Azure サービスの一覧で **[その他のサービス >]** を選択し、検索ボックスに「**Intune**」と入力します。
 2. 一覧から **[Intune]** を選択し、星を選択してサービスの一覧にサービスを追加します。<br/> ![サービス一覧から Intune を選択する画像](./media/azure-add-intune1.png)
 3. サービス一覧から **[Intune]** を選択し、Intune ダッシュボードを開きます。
 
-試用版にサインアップすると、アカウント情報の記載された電子メール メッセージが、サインアップ プロセス中に指定した電子メール アドレスに送信されます。 このメールで、評価版がアクティブになったことが確認されます。
+試用版にサインアップすると、アカウント情報の記載された電子メール メッセージが、サインアップ プロセス中に指定した電子メール アドレスに送信されます。 このメールで、試用版がアクティブになったことが確認されます。
 
 
 <!--- ## Add users
 Before you leave the Office 365 Admin center for Intune, you need to add some users to your trial account.
 
-In the Office 365 Admin center, you can add users individually or in bulk by uploading a .csv file. We will do both to set up your trial. However, in your production environment, you will probably want to take advantage of your Azure Active Directory user accounts, which you can learn more about in our [Getting Started guide](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3) and in the [Next steps](#Next-steps) section of this article.
+In the Office 365 Admin center, you can add users individually or in bulk by uploading a .csv file. We will do both to set up your trial. However, in your production environment, you will probably want to take advantage of your Azure Active Directory user accounts, which you can learn more about in our [Getting Started guide](https://docs.microsoft.comusers-permissions-add.md) and in the [Next steps](#Next-steps) section of this article.
 
 ### Add an individual user
 1. Choose either of the options to add a use to open a form that allows you to create a user. Only the items starred with an asterisk (\*) are required.
@@ -111,8 +111,7 @@ To get from Intune back to the Office 365 Admin center, choose the **Add Users**
 
 ![Image of link back to Office 365  Admin center](./media/sign-up/task-add-users.png)--->
 
-<!---### Intune Azure preview--->
-Intune Azure プレビューで使用するポータルは 3 つあります。
+Intune Azure Portal で使用するポータルは 3 つあります。
 - Azure ([portal.azure.com](https://portal.azure.com)) の Intune ダッシュボードでは、[Azure Portal にある Intune の各機能](what-is-intune.md)を確認できます。
 - Office 365 管理センター ([portal.office.com](https://portal.office.com)) では、ユーザーの追加と管理ができます (Azure Active Directory を使用していない場合)。 また、課金やサポートなど、アカウントのその他の要素を管理することもできます。
 - クラシック Intune 管理コンソール ([manage.microsoft.com](https://manage.microsoft.com)) では、まだ Azure に追加されていない機能を確認できます。
@@ -121,7 +120,7 @@ Intune Azure プレビューで使用するポータルは 3 つあります。
 
 ダッシュボードからクラシック Intune 管理コンソールを開くには、**[クラシック Intune ポータルを開く]** タイルを選択します。
 
-Intune Azure プレビューに戻るには、ブラウザーのアドレス バーに「https://portal.azure.com」と入力し、サービス一覧から **[Intune]** をもう一度選択します。
+Intune Azure Portal に戻るには、ブラウザーのアドレス バーに「https://portal.azure.com」と入力し、サービス一覧から **[Intune]** をもう一度選択します。
 
  ![Intune ダッシュボードの画像](./media/intune-azure-dashboard.png)
 
@@ -136,8 +135,8 @@ Intune から Office 365 管理センターに戻るには、ブラウザーの�
 
 ## <a name="next-steps"></a>次のステップ
 
-### <a name="intune-azure-preview"></a>Intune Azure プレビュー
-詳細については、「[Intune in the Azure portal preview](what-is-intune.md)」(Azure プレビュー ポータルの Intune) を参照してください。
+### <a name="intune-on-azure"></a>Azure での Intune
+詳細については、[Azure Portal での Intune](what-is-intune.md) に関するページを参照してください。
 ### <a name="classic-intune"></a>クラシック Intune
 評価シナリオ: [Microsoft Intune でモバイル デバイス管理を評価する](https://docs.microsoft.com/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune)
 

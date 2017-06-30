@@ -1,12 +1,12 @@
 ---
 title: "Intune VPN 設定を構成する方法"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Intune を使用して、管理対象デバイスの VPN 接続を構成する方法について説明します。"
+titleSuffix: Intune on Azure
+description: "Intune を使用して、管理対象デバイスの VPN 接続を構成する方法について説明します。&quot;"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8a8742d0b579fec734dd8335e2a610d126db21fa
+ms.sourcegitcommit: 326de9b86b80789a6ac19bb96ff6e4ca97789830
+ms.openlocfilehash: e6a59c1f5fcb94d427b6d12eef19d4d49ff930ce
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/17/2017
 
 
 ---
 
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Microsoft Intune で VPN の設定を構成する方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 仮想プライベート ネットワーク (VPN) を使用すると、会社のユーザーが社内ネットワークにリモート アクセスする際にセキュリティで保護することができます。 デバイスは、VPN 接続プロファイルを使用して、VPN サーバーとの接続を開始します。 Microsoft Intune の **VPN プロファイル**を使用して、VPN 設定を組織内のユーザーとデバイスに割り当て、社内ネットワークに簡単かつ安全に接続できるようにします。
 
@@ -36,12 +36,11 @@ ms.lasthandoff: 05/23/2017
 
 次の接続の種類を使用して、VPN プロファイルを作成できます。
 
-||||||||
+|接続の種類|Android<br>Android for Work|iOS|macOS|Windows Phone 8。1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|接続の種類|Android|iOS|macOS|Windows Phone 8。1|Windows 8.1|Windows 10|
 |Pulse Secure|○|○|○|○|○|[はい]|
 |Cisco (IPSec)|いいえ|○|[いいえ]|いいえ|いいえ|いいえ|
-|Citrix|Yes|○|[いいえ]|いいえ|いいえ|いいえ|
+|Citrix|○ (Android のみ)|Yes|[いいえ]|いいえ|いいえ|いいえ|
 |F5 Edge Client|○|○|○|○|○|○|
 |Dell SonicWALL Mobile Connect|○|○|○|○|○|[はい]|
 |Check Point Capsule VPN|Yes|○|○|○|○|[はい]|
@@ -61,13 +60,14 @@ ms.lasthandoff: 05/23/2017
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>VPN 設定を含むデバイス プロファイルの作成
 
 1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
+2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
 3. [プロファイル] ブレードで、**[プロファイルを作成します]** を選択します。
 4. **[プロファイルを作成します]** ブレードで、VPN プロファイルの**名前**と**説明**を入力します。
 5. **[プラットフォーム]** ドロップダウン リストで、VPN 設定を適用するデバイス プラットフォームを選択します。 現時点では、VPN デバイス設定に対応している次のいずれかのプラットフォームを選択できます。
     - **Android**
+    - **Android for Work**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
@@ -75,7 +75,7 @@ ms.lasthandoff: 05/23/2017
     - **Windows 10 以降**
 6. **[プロファイルの種類]** ドロップダウン リストで、**[VPN]** を選択します。
 7. 選択したプラットフォームによって構成できる設定が異なります。 各プラットフォームの詳細な設定については、次のいずれかのトピックを参照してください。
-    - [Android の設定](vpn-settings-android.md)
+    - [Android と Android for Work の設定](vpn-settings-android.md)
     - [iOS の設定](vpn-settings-ios.md)
     - [macOS の設定](vpn-settings-macos.md)
     - [Windows Phone 8.1 の設定](vpn-settings-windows-phone-8-1.md)

@@ -1,12 +1,12 @@
 ---
 title: "Intune Wi-Fi 設定を構成する方法"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Intune を使用して、管理対象デバイスの Wi-Fi 接続を構成する方法について説明します。"
+titleSuffix: Intune on Azure
+description: "Intune を使用して、管理対象デバイスの Wi-Fi 接続を構成する方法について説明します。&quot;"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3378df904936def8737ca3b5b791feebdb95823b
+ms.sourcegitcommit: 326de9b86b80789a6ac19bb96ff6e4ca97789830
+ms.openlocfilehash: 0e191fe443757a5ea43ccc2b4ef2e9cb331b2142
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/17/2017
 
 
 ---
 
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Microsoft Intune で Wi-Fi の設定を構成する方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune の Wi-Fi プロファイルを使用して、ワイヤレス ネットワーク設定を組織のユーザーとデバイスに割り当てます。 Wi-Fi プロファイルを割り当てた場合、ユーザーはプロファイルを構成することなく、会社の Wi-Fi ネットワークにアクセスできます。
 
@@ -39,6 +39,7 @@ Microsoft Intune の Wi-Fi プロファイルを使用して、ワイヤレス �
 Wi-Fi プロファイルでは次のデバイス プラットフォームをサポートしています。
 
 - Android 4 以降
+- Android for Work
 - iOS 8.0 以降
 - macOS (Mac OS X 10.9 以降)
 
@@ -49,13 +50,14 @@ Windows 8.1、Windows 10、および Windows 10 Mobile を実行しているデ�
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>Wi-Fi 設定を含むデバイス プロファイルの作成
 
 1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
+2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
 3. [プロファイル] ブレードで、**[プロファイルを作成します]** を選択します。
 4. **[プロファイルを作成します]** ブレードで、Wi-Fi プロファイルの**名前**と**説明**を入力します。
 5. **[プラットフォーム]** ドロップダウン リストで、Wi-Fi 設定を適用するデバイス プラットフォームを選択します。 現時点では、Wi-Fi 設定に対応している次のいずれかのプラットフォームを選択できます。
     - **Android**
+    - **Android for Work**
     - **iOS**
     - **macOS**
     - **Windows 8.1 以降 (プロファイルのインポート)**
@@ -63,7 +65,7 @@ Windows 8.1、Windows 10、および Windows 10 Mobile を実行しているデ�
     >[!TIP]
     >**[Wi-Fi Basic]** を使用した場合は、ネットワーク名や SSID などの基本的な機能を指定します。 **[Wi-Fi Enterprise]** を使用すると、詳細情報 (たとえば、Wi-Fi ネットワークで拡張認証プロトコル (EAP) を使用している場合は EPA) を指定できます。 **[Wi-Fi インポート]** (Windows 8.1 および Windows 10) を使用すると、以前に別のデバイスからエクスポートした Wi-Fi 設定を XML ファイルとしてインポートすることができます。
 7. 選択したプラットフォームによって構成できる設定が異なります。 各プラットフォームの詳細な設定については、次のいずれかのトピックを参照してください。
-    - [Android の設定](wi-fi-settings-android.md)
+    - [Android と Android for Work の設定](wi-fi-settings-android.md)
     - [iOS の設定](wi-fi-settings-ios.md)
     - [macOS の設定](wi-fi-settings-macos.md)
     - [Windows Phone 8.1 の設定](wi-fi-settings-import-windows-8-1.md)
@@ -71,5 +73,4 @@ Windows 8.1、Windows 10、および Windows 10 Mobile を実行しているデ�
 
 プロファイルが作成され、プロファイルの一覧ブレードに表示されます。
 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事を参照してください。
-
 

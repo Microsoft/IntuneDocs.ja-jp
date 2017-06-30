@@ -1,5 +1,5 @@
 ---
-title: "使用条件ポリシー設定 | Microsoft Docs"
+title: "使用条件ポリシー設定"
 description: "Intune の使用条件をユーザー グループに展開すると、登録、会社のリソースへのアクセス、ポータル サイト アプリの使用によるデバイスとユーザーへの影響を説明できます。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 177485a0b09a2b0213a293914799a34a3bfa1136
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 2e8028abe5f25e4a05d79ae543d3029490c01668
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

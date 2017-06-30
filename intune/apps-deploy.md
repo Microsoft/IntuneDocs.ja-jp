@@ -1,7 +1,7 @@
 ---
-title: "アプリをグループに割り当てる方法 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Intune に追加したアプリは、ユーザーまたはデバイスのグループに割り当てることができます。"
+title: "アプリをグループに割り当てる方法"
+titleSuffix: Intune on Azure
+description: "Intune に追加したアプリは、ユーザーまたはデバイスのグループに割り当てることができます。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,16 +16,16 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1246ef539c044b894b4e4a93f449e60e6462600a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 631f6fb88c6b348c6fcd0063093d622f0e4aa2c8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune を使用してアプリをグループに割り当てる方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 アプリを Intune に追加したら、そのアプリをユーザーまたはデバイスに広めることができます。 これを行うには、アプリを割り当てます。
 
@@ -46,10 +46,10 @@ ms.lasthandoff: 05/23/2017
 > [!NOTE]
 > 現時点では、iOS アプリと Android アプリ (基幹業務アプリとストアで購入したアプリの両方) を、Intune に登録されていないデバイスに割り当てることができます。
 
-## <a name="changes-to-how-you-assign-apps-to-groups-in-the-intune-preview"></a>Intune プレビューでグループにアプリを割り当てる方法が変更されました
+## <a name="changes-to-how-you-assign-apps-to-groups-in-the-intune"></a>Intune でグループにアプリを割り当てる方法の変更
 
-Intune Azure プレビューでは、Intune グループを利用してアプリを割り当てる必要がなくなりました。今後は Azure Active Directory (Azure AD) セキュリティ グループを利用します。 そのため、アプリの割り当て作業におけるいくつかの変更点について知っておく必要があります。特に、Intune 子グループにアプリを割り当てているときはこの変更点を確認してください。
-最も重要なことは、Azure AD には子グループという概念がないことです。 しかしながら、グループによっては同じメンバーが含まれるものもあります。 その場合、従来の Intune と Intune Azure プレビューの動作は異なります。 次の表にまとめてあります。
+Intune Azure Portal では、Intune グループを利用してアプリを割り当てる必要がなくなりました。今後は Azure Active Directory (Azure AD) セキュリティ グループを利用します。 そのため、アプリの割り当て作業におけるいくつかの変更点について知っておく必要があります。特に、Intune 子グループにアプリを割り当てているときはこの変更点を確認してください。
+最も重要なことは、Azure AD には子グループという概念がないことです。 しかしながら、グループによっては同じメンバーが含まれるものもあります。 その場合、クラシック Intune と Intune Azure Portal の動作は異なります。 次の表にまとめてあります。
 
 ||||||
 |-|-|-|-|-|
@@ -67,8 +67,8 @@ Intune Azure プレビューでは、Intune グループを利用してアプリ
 
 割り当て競合を回避するには次の措置を取ります。
 
-1.    関連する Intune の親グループと子グループに以前にアプリを割り当てている場合、テナント移行を開始する前に、それらの割り当てを削除することを検討してください。
-2.    親グループから子グループを削除し、以前の子グループのメンバーを含む新しいグループを作成します。 そのグループに新しいアプリ割り当てを作成できます。
+1.  関連する Intune の親グループと子グループに以前にアプリを割り当てている場合、テナント移行を開始する前に、それらの割り当てを削除することを検討してください。
+2.  親グループから子グループを削除し、以前の子グループのメンバーを含む新しいグループを作成します。 そのグループに新しいアプリ割り当てを作成できます。
 注: 以前の親グループが “All Users” の場合、子グループのメンバーを含まない新しい動的グループを作成する必要があります。
 ユーザーとデバイスのグループに対して、[Azure ポータル](https://portal.azure.com/)でグループを変更する必要があります。 [従来の Azure ポータル](https://manage.windowsazure.com/)では、ユーザー グループのみを変更できます。
 

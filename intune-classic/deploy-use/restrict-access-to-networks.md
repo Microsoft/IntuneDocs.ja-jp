@@ -1,5 +1,5 @@
 ---
-title: "Cisco ISE でネットワークへのアクセスを保護する | Microsoft Docs"
+title: "Cisco ISE でネットワークへのアクセスを保護する"
 description: "Cisco ISE で制御されている Wi-Fi および VPN にアクセスする前に、デバイスが登録されポリシーに準拠するように、Intune で Cisco ISE を使用します。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e3dd45ace4016619a962fdd6836ddddad5d143f6
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 958108c4fbeb52803bf900a1a0f9f633716cddb8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -157,7 +157,7 @@ ISE 管理コンソールで、次の設定値を指定します。
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Intune テナントと Cisco ISE サーバー間で共有される情報
 次の表には、Intune テナントと Intune によって管理されるデバイス用の Cisco ISE サーバー間で共有される情報を一覧します。
 
-|プロパティ|    説明|
+|プロパティ|  説明|
 |---------------|------------------------------------------------------------|
 |complianceState|デバイスが準拠か非準拠かを示す true または false の文字列。|
 |isManaged|クライアントが Intune で管理されるかどうかを示す true または false の文字列。|

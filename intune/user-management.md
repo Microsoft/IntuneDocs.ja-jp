@@ -1,7 +1,7 @@
 ---
 title: "ユーザー管理のワークロードとは"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Microsoft Intune と Azure を使用してユーザーを表示して管理する方法について説明します。"
+titleSuffix: Intune on Azure
+description: "Microsoft Intune と Azure を使用して、ユーザーを表示し管理する方法について説明します。&quot;"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,10 +15,10 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 29c8f436d611e590ef1304d221e27da0ceef2450
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 1cbdb92928411ff56e6740e83e081ee966fb7af8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -26,7 +26,7 @@ ms.lasthandoff: 05/23/2017
 # <a name="what-is-user-management"></a>ユーザー管理とは
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Azure Portal で Intune を初めて使用する場合は、Intune のグループの作成が不要になったことに注意してください。 Intune では、使用している他の多くのアプリケーションと同じように Azure AD グループが使用されます。
 

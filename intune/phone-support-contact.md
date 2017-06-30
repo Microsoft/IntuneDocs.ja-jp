@@ -1,7 +1,7 @@
 ---
 title: "Intune サポートの電話番号に問い合わせる"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Microsoft Intune ヘルプの電話番号。"
+titleSuffix: Intune on Azure
+description: "Microsoft Intune ヘルプの電話番号。&quot;"
 keywords: "営業時間"
 author: robstackmsft
 ms.author: robstack
@@ -16,17 +16,17 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e8d284e8bbcf472c4c03e6411902356ee42cd5a5
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a261e01b81e3ad1caa7d8b780a79004dfbbe6ecd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Microsoft Intune のサポートの電話番号
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="phone-numbers-and-business-hours"></a>電話番号と営業時間
 

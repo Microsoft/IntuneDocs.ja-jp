@@ -1,7 +1,7 @@
 ---
 title: "アプリ保護ポリシーを確認する"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: このトピックでは、アプリ保護ポリシーが正しく設定され、想定通りに機能するかどうかをテストおよび検証する方法について説明します。"
+titleSuffix: Intune on Azure
+description: "このトピックでは、アプリ保護ポリシーが正しく設定され、想定通りに機能するかどうかをテストおよび検証する方法について説明します。&quot;"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -16,20 +16,20 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 26e191965eff482cf97b920e028cdf60d1881d32
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: ddfecbcd8709569ff177e6c7021d3e8fdab39290
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>アプリ保護ポリシーの設定を検証する方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-このトピックでは、アプリ保護ポリシーを設定した後に問題がないかどうかを確認する方法について説明します。 このガイドは、Azure Portal **プレビュー**のアプリ保護ポリシーに適用されます。
+このトピックでは、アプリ保護ポリシーを設定した後に問題がないかどうかを確認する方法について説明します。 このガイドは、Azure Portal のアプリ保護ポリシーに適用されます。
 
 ### <a name="checking-for-symptoms"></a>現象の確認
 アプリ保護はデータ保護ツールであるため、ユーザーが問題を報告することはほとんどありません。 アプリ保護の構成に問題があったとしても、アプリ保護がない場合と同じようにユーザーはアクセスに制限を受けないため、問題が発生していることにも気付きません。 このため、アプリ保護の制限を意図的にテストできるユーザーの小規模なグループでアプリ保護ポリシーをパイロット運用して、アプリ保護の構成を検証することをお勧めします。

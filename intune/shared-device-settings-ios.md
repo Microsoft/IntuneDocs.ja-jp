@@ -1,7 +1,7 @@
 ---
 title: "iOS 用 Intune 共有デバイス構成設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: iOS デバイスのロック画面に情報を表示するために使用できる Intune 設定について説明します。"
+titleSuffix: Intune on Azure
+description: "iOS デバイスのロック画面に情報を表示するために使用できる Intune 設定について説明します。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,17 +16,17 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6a2aba8b2f062a3e06d517a572992b84fd977514
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 31e7f0d56d3fd6e637671b3bf551708eb626f5dc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="shared-device-configuration-settings-to-display-messages-on-the-ios-device-lock-screen"></a>iOS デバイスのロック画面にメッセージを表示する共有デバイス構成設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 共有デバイス構成設定では、ログイン ウィンドウやロック画面に表示する任意のテキストを指定できます (たとえば、"If Lost, Return to (忘れ物として見つけた場合の返却先)" メッセージや資産タグなど)。 
 

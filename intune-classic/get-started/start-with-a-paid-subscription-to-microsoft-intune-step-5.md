@@ -1,5 +1,5 @@
 ---
-title: "ユーザーとデバイスを編成するグループを作成する | Microsoft Docs"
+title: "ユーザーとデバイスを編成するグループを作成する"
 description: "Intune サブスクリプションのユーザーとグループを作成します"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 058006b2356d62c77c3a5a6ee0f4c8ed74ed4a50
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a6e9eb087b730c66bcf32f877fd22f2d3be0c121
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -87,6 +87,5 @@ Intune の [グループ] を使用すると、デバイスとユーザーを柔
 新しく作成したグループは、**[グループ]** 一覧の **[グループ]** ワークスペースにある **[すべてのユーザー]** の下に表示されます。 ここから、グループを編集または削除することもできます。
 
 >[!div class="step-by-step"]
-
->[&larr;**Intune のライセンスを管理する**](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md)       [**ポリシーとアプリを作成する**&rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
+/intune/licenses-assign [&larr; **Intune のライセンスを管理する**](/intune/licenses-assign) [**ポリシーとアプリを作成する** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
 

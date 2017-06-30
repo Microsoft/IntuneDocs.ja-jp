@@ -1,5 +1,5 @@
 ---
-title: "電子メールの保護に関するシナリオ | Microsoft Docs"
+title: "電子メールの保護に関するシナリオ"
 description: "いくつかのシナリオ例と、条件付きアクセスを使用した場合の実装方法。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 7d0b9cee72e8810b4f39bd81bd8f49d0818618c4
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a60c41d5a35ee60677db3835818ca8b90420c715
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/31/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

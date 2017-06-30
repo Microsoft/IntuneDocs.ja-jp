@@ -1,12 +1,12 @@
 ---
 title: "デバイス登録に関するトラブルシューティング"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: デバイス登録に関するトラブルシューティング方法について説明します。"
+titleSuffix: Intune on Azure
+description: "デバイス登録に関するトラブルシューティングの方法について説明します。&quot;"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3084b7179a310a44c520dd42a8e194490dca90d8
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 40e20445b1cf41c081fcdd33f0e32d0154e1f393
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune のデバイス登録に関するトラブルシューティング
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 このトピックでは、デバイス登録で問題が発生した場合の解決方法を提案します。 この情報で問題が解決しない場合、さらに役立つ方法を探すには、「[Microsoft Intune のサポートを受ける方法](https://docs.microsoft.com/intune-classic/troubleshoot/get-support)」を参照してください。
 
@@ -102,8 +102,8 @@ Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[I
 
 1.  使用している Intune サービスの種類に適した MDM 機関が設定されていることを確認します。つまり、Intune、Office 365、または System Center Configuration Manager と Intune などです。 手順については、「[モバイル デバイス管理機関の設定](mdm-authority-set.md)」を参照してください。
 
-    > [!NOTE]
-    > MDM 機関を設定した後に変更するには、サポートに連絡する必要があります。詳細については、「[Microsoft Intune のサポートを受ける方法](https://docs.microsoft.com/intune-classic/troubleshoot/get-support)」を参照してください。
+    > [!NOTE]    
+    > Configuration Manager 1610 以降のバージョンと Microsoft Intune バージョン 1705 では、MDM 機関の変更にあたって Microsoft サポートに問い合わせる必要はありません。また、既存の管理されたデバイスの登録を解除して再登録する必要もありません。 詳細については、「[不適切な MDM 機関の設定を選択した場合の対処方法](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)」を参照してください。
 
 2.  ユーザーの UPN と、アカウント ポータルの Active Directory 情報が一致していることを確認して、ユーザーの資格情報が Azure Active Directory と適切に同期されていることを確認します。
     UPN が Active Directory 情報と一致しない場合:
@@ -222,16 +222,16 @@ Android デバイスでは、[SSL Server hello](https://technet.microsoft.com/li
 
 この問題を解決するには、AD FS サーバーまたはプロキシでコンピューターの個人証明書に証明書を次のようにインポートします。
 
-1.    ADFS サーバーとプロキシ サーバーで、ローカル コンピューターの証明書管理コンソールを起動します。**[スタート]** ボタンを右クリックし、**[ファイル名を指定して実行]** を選択し、「**certlm.msc**」と入力します。
-2.    **[個人用]** を展開し、**[証明書]** を選択します。
-3.    AD FS サービス通信の証明書を見つけ (公的に署名された証明書)、ダブルクリックしてそのプロパティを表示します。
-4.    **[証明のパス]** タブを選択し、証明書の親証明書を確認します。
-5.    親証明書ごとに、**[証明書の表示]** を選択します。
-6.    **[詳細]** タブを選択し、**[ファイルにコピー]** を選択します。
-7.    ウィザードの指示に従い、証明書の公開鍵をファイル場所にエクスポートします (保存します)。
-8.    手順 3 でエクスポートした親証明書を Local Computer\Personal\Certificates にインポートします。**[証明書]** を右クリックし、**[すべてのタスク]**、**[インポート]** の順に選択し、ウィザードの指示に従って証明書をインポートします。
-9.    AD FS サーバーを再起動します。
-10.    すべての AD FS サーバーとプロキシ サーバーで上記の手順を繰り返します。
+1.  ADFS サーバーとプロキシ サーバーで、ローカル コンピューターの証明書管理コンソールを起動します。**[スタート]** ボタンを右クリックし、**[ファイル名を指定して実行]** を選択し、「**certlm.msc**」と入力します。
+2.  **[個人用]** を展開し、**[証明書]** を選択します。
+3.  AD FS サービス通信の証明書を見つけ (公的に署名された証明書)、ダブルクリックしてそのプロパティを表示します。
+4.  **[証明のパス]** タブを選択し、証明書の親証明書を確認します。
+5.  親証明書ごとに、**[証明書の表示]** を選択します。
+6.  **[詳細]** タブを選択し、**[ファイルにコピー]** を選択します。
+7.  ウィザードの指示に従い、証明書の公開鍵をファイル場所にエクスポートします (保存します)。
+8.  手順 3 でエクスポートした親証明書を Local Computer\Personal\Certificates にインポートします。**[証明書]** を右クリックし、**[すべてのタスク]**、**[インポート]** の順に選択し、ウィザードの指示に従って証明書をインポートします。
+9.  AD FS サーバーを再起動します。
+10. すべての AD FS サーバーとプロキシ サーバーで上記の手順を繰り返します。
 これで、Android デバイスでポータル サイトにサインインできるようになります。
 
 **証明書が正しくインストールされていることを確認するには**:
@@ -255,7 +255,7 @@ Android デバイスでは、[SSL Server hello](https://technet.microsoft.com/li
 
 **解決方法:** 次の解決方法をエンド ユーザーに伝え、企業リソースへのアクセスの回復を支援します。
 
-ユーザーが iOS 用のポータル サイト アプリを起動すると、デバイスと Intune の通信状態が通知されることがあります。 通信していないことが検出された場合、Intune との同期 (再接続) が自動的に試行されます。**[同期しています...]** インライン通知が 表示されます。 
+ユーザーが iOS 用のポータル サイト アプリを起動すると、デバイスと Intune の通信状態が通知されることがあります。 通信していないことが検出された場合、Intune との同期 (再接続) が自動的に試行されます。**[同期しています...]** インライン通知が 表示されます。
 
   ![[同期しています...] 通知](./media/ios_cp_app_trying_to_sync_notification.png)
 
@@ -263,11 +263,11 @@ Android デバイスでは、[SSL Server hello](https://technet.microsoft.com/li
 
   ![[同期に成功しました] 通知](./media/ios_cp_app_sync_successful_notification.png)
 
-同期できなかった場合、**[同期できません]** インライン通知が iOS ポータル サイト アプリに表示されます。 
+同期できなかった場合、**[同期できません]** インライン通知が iOS ポータル サイト アプリに表示されます。
 
   ![[同期できません] 通知](./media/ios_cp_app_unable_to_sync_notification.png)
 
-この問題を修正するには、**[セットアップ]** ボタンを選択する必要があります。このボタンは、**[同期できません]** 通知の右にあります。 [セットアップ] ボタンを押すと、[会社アクセスのセットアップ] フロー画面が表示されます。この画面の指示に従い、デバイスを登録します。 
+この問題を修正するには、**[セットアップ]** ボタンを選択する必要があります。このボタンは、**[同期できません]** 通知の右にあります。 [セットアップ] ボタンを押すと、[会社アクセスのセットアップ] フロー画面が表示されます。この画面の指示に従い、デバイスを登録します。
 
   ![[会社アクセスのセットアップ] 画面](./media/ios_cp_app_company_access_setup.png)
 
@@ -313,7 +313,7 @@ Android デバイスでは、[SSL Server hello](https://technet.microsoft.com/li
 3. SMS Executive サービスを再起動するか、CM サーバーを再起動します。
 
 4. 新しい APN 証明書を取得してアップロードします。 まずは、Configuration Manager の左側のウィンドウで Intune サブスクリプションを右クリックします。 **[APNs 証明書要求の作成]** を選択して、指示に従います。
-5. 
+5.
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>System Center Configuration Manager と Intune を使用しているときの問題
 
 ### <a name="mobile-devices-disappear"></a>モバイル デバイスが表示されない

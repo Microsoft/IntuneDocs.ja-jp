@@ -1,7 +1,7 @@
 ---
 title: "デバイスのポリシー準拠"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: このトピックでは、Microsoft Intune でのデバイス コンプライアンスについて説明します。"
+titleSuffix: Intune on Azure
+description: "このトピックでは、Microsoft Intune でのデバイス コンプライアンスについて説明します&quot;"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -16,17 +16,17 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2aec7463b9a2b3bdaa78281fca0bbb39dcd3f884
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a747d577a28433635883ad6c4fe4c858e75902d0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
-# <a name="what-is-device-compliance-in-intune-azure-preview"></a>Intune Azure プレビューでのデバイス コンプライアンスとは
+# <a name="what-is-device-compliance-in-intune"></a>Intune でのデバイス コンプライアンスとは
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune のデバイス コンプライアンス ポリシーは、デバイスが Intune および EMS 条件付きアクセス ポリシーによって "準拠している" と見なされるために遵守する必要がある規則および設定を定義します。 デバイス コンプライアンス ポリシーを使用して、デバイスのコンプライアンスに関する問題を監視および修復することもできます。 
 
@@ -79,7 +79,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 コンプライアンス ポリシーはユーザーに展開して使用します。 コンプライアンス ポリシーがユーザーに展開されると、ユーザーのデバイスのコンプライアンスがチェックされます。 ポリシーの展開後にモバイル デバイスがポリシーを取得できるようになるまでにかかる時間については、デバイスでの設定と機能の管理に関するページを参照してください。
 
-##  <a name="intune-classic-admin-console-vs-intune-azure-preview-portal"></a>Intune クラシック 管理コンソール対Intune Azure プレビュー ポータル
+##  <a name="intune-classic-admin-console-vs-intune-on-the-azure-portal"></a>Intune クラシック 管理コンソール対Azure Portal での Intune
 
 Intune クラシック管理コンソールを利用している場合は、以下の相違点について把握し、Azure Portal の新しいデバイス コンプライアンス ポリシー ワークフローへの移行に役立ててください。
 
@@ -89,7 +89,7 @@ Intune クラシック管理コンソールを利用している場合は、以�
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
-##  <a name="migration-from-intune-classic-console-to-intune-azure-preview-portal"></a>Intune クラシック コンソールから Intune Azure プレビュー ポータルへの移行
+##  <a name="migration-from-intune-classic-console-to-intune-on-the-azure-portal"></a>Intune クラシック コンソールから Azure Portal での Intune への移行
 
 [Intune クラシック コンソール](https://manage.microsoft.com)で作成したデバイス コンプライアンス ポリシーは、新しい [Intune Azure Portal](https://portal.azure.com) で表示されません。 ただし、これらのポリシーは引き続きユーザーを対象とし、Intune クラシック コンソールで管理できます。
 

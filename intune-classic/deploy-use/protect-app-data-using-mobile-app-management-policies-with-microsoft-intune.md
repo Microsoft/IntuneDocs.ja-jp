@@ -1,5 +1,5 @@
 ---
-title: "MAM ポリシーを使用してアプリ データを保護する | Microsoft Docs"
+title: "MAM ポリシーでアプリ データを保護する"
 description: "このトピックでは、モバイル アプリケーション管理ポリシーが、会社データの保護、データ損失の防止、および個人用情報と作業情報の個別管理に役立つしくみについて説明します。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9959e9f757e83c7aa4274b7e7b9df949fff022cc
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 40a6badf072c254f635a2656189d626e4f13a320
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/31/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -38,8 +38,8 @@ Intune のアプリ保護ポリシーを使用すれば、会社のデータを�
 
 -   **サードパーティの MDM ソリューションに登録されているデバイス:** このカテゴリに属するデバイスは、通常、企業所有デバイスです。
 
-      > [!NOTE]
-      > サードパーティのモバイル アプリケーション管理ソリューションやセキュア コンテナー ソリューションでアプリ保護ポリシーを使用することはお勧めしません。
+    > [!NOTE]
+    > サードパーティのモバイル アプリケーション管理ソリューションやセキュア コンテナー ソリューションでアプリ保護ポリシーを使用することはお勧めしません。
 
 -   **いずれの MDM ソリューションにも登録されていないデバイス:** このカテゴリに属するデバイスは、通常、Intune またはその他の MDM ソリューションで管理も登録もされていない社員所有のデバイスです。
 

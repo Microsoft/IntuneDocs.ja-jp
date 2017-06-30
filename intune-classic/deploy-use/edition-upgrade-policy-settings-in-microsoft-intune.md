@@ -1,5 +1,5 @@
 ---
-title: "Windows エディションのアップグレード ポリシー設定 | Microsoft Docs"
+title: "Windows エディションのアップグレード ポリシー設定"
 description: "Intune を使用して Windows 10 デバイスを別のバージョンに自動的にアップグレードする方法について説明します。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 81061f032ef2079695f45e54e99cbb6479252bed
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 1505adb219c38d9a67f4fa276ca345f05a0df42a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

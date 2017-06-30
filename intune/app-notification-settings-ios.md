@@ -1,7 +1,7 @@
 ---
 title: "Intune を使用した iOS デバイス向けのアプリ通知設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: iOS デバイスでアプリからの通知を制御するために使用できる設定について説明します。"
+titleSuffix: Intune on Azure
+description: "iOS デバイスでアプリからの通知を制御するために使用できる設定について説明します。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,17 +16,17 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c64167275a2628c6a3a4e899e00c25df4c10b06b
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: c87f5b80309242420730bb2f38da81c528e1c217
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="intune-app-notifications-settings-for-ios-devices"></a>Intune を使用した iOS デバイス向けのアプリ通知設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 デバイスにインストールされているアプリが通知を送信する方法を構成できます。 この設定は、iOS 9.3 以降を実行している監視対象のデバイスをサポートします。
 

@@ -1,7 +1,7 @@
 ---
 title: "Windows 情報保護を構成する - Intune"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Windows 情報保護を管理するために使用できる Intune 設定について説明します。"
+titleSuffix: Intune on Azure
+description: "Windows 情報保護の管理に使用できるIntune の設定について説明します。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,17 +16,17 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fc58b07fe33ff6223dfa182fb4f81f15379295fa
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 7ac59456dd2bc59a0a50eeab4e483dea2033c0fa
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="how-to-configure-windows-information-protection-in-microsoft-intune"></a>Microsoft Intune で Windows Information Protection を構成する方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 企業内に従業員所有デバイスが増加するのに従い、企業のコントロールが届かない電子メール、ソーシャル メディア、パブリック クラウドなどのアプリやサービスを介して偶発的にデータが漏えいするリスクも増大しています。 たとえば、従業員が個人用の電子メール アカウントから最新のエンジニアリング画像を送信したり、製品情報をコピーしてツイートに貼り付けたり、作成中の営業レポートをパブリック クラウドの記憶域に保存したりするときなどです。
 

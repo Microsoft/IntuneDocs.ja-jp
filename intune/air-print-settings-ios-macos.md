@@ -1,7 +1,7 @@
 ---
 title: "Intune を使用した iOS および macOS デバイス向けの AirPrint 設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Intune を使用して、iOS デバイスと macOS デバイスを AirPrint 対応プリンターに自動接続する方法について説明します。"
+titleSuffix: Intune on Azure
+description: "Intune を使用して、iOS デバイスと macOS デバイスを AirPrint 対応プリンターに自動接続する方法について説明します。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,17 +16,17 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 55486693e2f5678ceeb20dd3a0ef3c52553871d2
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: b4bbddaedffe1ec171d77654af3e0e79ae23df09
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="airprint-settings-for-ios-and-macos-devices"></a>iOS および macOS デバイス向けの AirPrint 設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 これらの設定を利用し、ネットワーク上の AirPrint 対応プリンターに自動接続するように iOS デバイスまたは macOS デバイスを構成します。 始めるにはプリンターの IP アドレスとリソース パスを用意する必要があります。
 

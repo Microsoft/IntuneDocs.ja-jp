@@ -1,5 +1,5 @@
 ---
-title: "ビジネス向け Windows ストアのアプリの管理 | Microsoft Docs"
+title: "ビジネス アプリ向け Windows ストアを管理する"
 description: "Intune コンソールからボリューム購入したアプリを管理および展開する場合に、Microsoft Intune をビジネス向け Windows ストアに接続する"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0a6c84735b6bb8e7f636ea155437e7d90b8f3cc0
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 888d825fb9955e97b49e54a0c36ab882055076d8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

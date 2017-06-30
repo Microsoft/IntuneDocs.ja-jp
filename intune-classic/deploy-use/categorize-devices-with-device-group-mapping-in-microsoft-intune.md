@@ -1,11 +1,11 @@
 ---
-title: "デバイス グループのマッピングを使用してデバイスを分類する | Microsoft Docs"
+title: "デバイス グループ マッピングを使用してデバイスを分類する"
 description: "Microsoft Intune のデバイス グループ マッピングを使用して、ユーザー定義のカテゴリにデバイスをグループ化することで、それらのデバイスの管理が容易になります。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/26/2016
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,10 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 618827ed6baf7a9dec6aef804f19bcbca08ed39f
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: ff136d430496392b6ca8e5b944820fe9e14553d3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
@@ -32,7 +32,7 @@ Microsoft Intune の**デバイス グループ マッピング**を使用して
 1. デバイス登録時の選択肢として表示するカテゴリを作成する
 2. 使用するカテゴリごとに、グループを作成するか、既存のグループを使用します。 使用している Intune のバージョンに応じて、Intune グループまたは Azure Active Directory セキュリティ グループの場合があります。
 2. 作成したデバイス グループに選択したカテゴリを対応付けるルールを構成します。
-3. デバイスを登録するエンド ユーザーは、構成されているカテゴリの一覧からカテゴリを選択する必要があります。 エンド ユーザーがカテゴリを選択すると、デバイスは自動的に対応するグループに追加されます。 デバイスが既に登録されている場合、エンド ユーザーは、次にポータル サイト アプリにアクセスしたときにカテゴリを選択するように求められます。
+3. iOS デバイスと Android デバイスのエンド ユーザーがデバイスを登録する場合、構成されているカテゴリの一覧からカテゴリを選択する必要があります。 Windows デバイスにカテゴリを割り当てるには、エンド ユーザーはポータル サイトを使用する必要があります (詳細については、このトピックの「**デバイス グループの構成後**」をご覧ください)。
 4. 次に、ポリシーとアプリをグループに展開します。
 
 次のように、任意のデバイス カテゴリを作成できます。
@@ -86,7 +86,13 @@ Azure Active Directory ベースのセキュリティ グループは段階的�
 
 ## <a name="after-you-configure-device-groups"></a>デバイス グループの構成後
 
-デバイスを登録すると、構成したカテゴリの一覧が表示されます。 ユーザーがカテゴリを選択して登録を完了すると、選択したカテゴリに対応する Intune デバイス グループまたは Active Directory セキュリティ グループにデバイスが追加されます。
+iOS デバイスと Android デバイスのエンド ユーザーがデバイスを登録する場合、構成されているカテゴリの一覧からカテゴリを選択する必要があります。 ユーザーがカテゴリを選択して登録を完了すると、選択したカテゴリに対応する Intune デバイス グループまたは Active Directory セキュリティ グループにデバイスが追加されます。
+
+Windows デバイスにカテゴリを割り当てるには、エンド ユーザーは、デバイスを登録した後、ポータル サイト (portal.manage.microsoft.com) を使用する必要があります。 Windows デバイスで Web サイトにアクセスし、**[メニュー]**   >  **[デバイス]** の順に移動します。 ページに表示されている登録済みデバイスを選択し、次にカテゴリを選択します。 
+
+カテゴリを選択すると、作成済みの対応するグループにデバイスが自動的に追加されます。 カテゴリを構成する前にデバイスが既に登録されている場合は、エンド ユーザーにはデバイスに関する通知がポータル サイトに表示され、次回ユーザーが iOS または Android でポータル サイト アプリにアクセスするときに、カテゴリの選択を求められます。
+
+
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune でユーザーとデバイスの管理にグループを使用する](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)

@@ -1,5 +1,5 @@
 ---
-title: "Windows PC のソフトウェア更新プログラム | Microsoft Docs"
+title: "Windows PC のソフトウェア更新プログラム"
 description: "Intune で最新の修正プログラムとソフトウェア更新プログラムを迅速にインストールし、管理対象のコンピューターを最新の状態に保つ。"
 keywords: 
 author: robstackmsft
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5530c1a85c53f76f94d5ebf6d356bfebd1aa2adb
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 1243d52f3d135ac02b9451022451bf9cf8c7304b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Microsoft Intune でソフトウェア更新プログラムを使用して Windows PC を最新の状態に保つ
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune は、さまざまな方法で管理対象コンピューターをセキュリティで保護します。たとえば、ソフトウェア更新プログラムの管理機能では、最新の修正プログラムやソフトウェア更新プログラムを迅速にインストールして、コンピューターを最新の状態に保ちます。
 
 まだ Intune クライアントをコンピューターにインストールしていない場合は、「[Microsoft Intune を使用して Windows PC クライアントをインストールする](install-the-windows-pc-client-with-microsoft-intune.md)」を参照してください。

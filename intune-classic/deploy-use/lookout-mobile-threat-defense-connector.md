@@ -1,5 +1,5 @@
 ---
-title: "Lookout Mobile Threat Defense コネクター | Microsoft Docs"
+title: "Lookout Mobile Threat Defense コネクター"
 description: "Lookout Mobile Threat Defense コネクターと Intune を使用して、デバイス、ネットワーク、アプリケーションのリスクを基にして会社のリソースへのアクセスを保護します。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 67654722e5c2bcbb768cf840a3f7ff1a24f99739
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 6ed808e3dd1db1bf58d4c0caa8cddccbc49c05f7
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -93,9 +93,9 @@ Man-in-the-middle 攻撃など、ネットワークに対する脅威を検出�
 
 ## <a name="next-steps"></a>次のステップ
 このソリューションを実装するために実行する必要がある主な手順を次に示します。
-1.    [Lookout サブスクリプションを設定する](setup-your-lookout-mtd-subscription.md)
-2.    [Intune で Lookout Mobile Threat Defense を有効にする](enable-lookout-mtd-connection.md)
+1.  [Lookout サブスクリプションを設定する](setup-your-lookout-mtd-subscription.md)
+2.  [Intune で Lookout Mobile Threat Defense を有効にする](enable-lookout-mtd-connection.md)
 3.  [Lookout Mobile Threat Defense アプリを構成し、展開する](configure-deploy-lookout-for-work-app.md)
-4.    [Lookout デバイス コンプライアンス ポリシーを構成する](create-lookout-device-compliance-policy.md)
-5.    [Lookout Mobile Threat Defense 統合の問題を解決する](/intune-classic/troubleshoot/device-threat-protection-troubleshooting)
+4.  [Lookout デバイス コンプライアンス ポリシーを構成する](create-lookout-device-compliance-policy.md)
+5.  [Lookout Mobile Threat Defense 統合の問題を解決する](/intune-classic/troubleshoot/device-threat-protection-troubleshooting)
 

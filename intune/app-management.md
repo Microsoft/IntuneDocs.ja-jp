@@ -1,12 +1,12 @@
 ---
-title: "アプリの管理とは | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: このトピックでは、Microsoft Intune を使用したアプリの管理についての基本を説明します。"
+title: "アプリ管理とは"
+titleSuffix: Intune on Azure
+description: "このトピックでは、Microsoft Intune を使用したアプリ管理についての基本を説明します。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,10 +16,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 56eefde5969f5426886c07bd6e9a548c8526e82e
+ms.sourcegitcommit: 73b43084c28436cb8a7e866dcee2d52694c60f5c
+ms.openlocfilehash: 515d4e2b089d077ec708fc1dea1e1747169a60ae
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/16/2017
 
 
 ---
@@ -27,13 +27,13 @@ ms.lasthandoff: 05/23/2017
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune アプリの管理とは
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-IT 管理者には、エンド ユーザーのために、業務に必要なアプリへのアクセス手段を確保するという役割があります。 これは、以下の理由により、困難になる可能性があります。
+IT 管理者は、エンド ユーザーのために、業務に必要なアプリへのアクセス手段を確保する必要があります。 これは、以下の理由により、困難になる可能性があります。
 - さまざまなデバイス プラットフォームとアプリの種類が存在する。
-- 会社のデバイスだけでなく、ユーザー所有のデバイスでもアプリの管理が必要になる場合がある。
-- これらすべてに対応しながら、社内のネットワークとデータの安全性を維持する必要がある。 
+- 会社のデバイスやユーザー所有のデバイスで、アプリの管理が必要になる場合がある。
+- 社内のネットワークとデータの安全性を確保する必要がある。
 
 また、Intune に登録されていないデバイスでアプリの割り当てと管理を行うことも必要になる可能性があります。
 
@@ -63,10 +63,9 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
 
 <sup>2</sup> Intune のみで管理されているデバイスに適用されます。
 
-
 ## <a name="how-to-get-started"></a>開始する方法
 
-アプリに関連するものは、ほとんどが **[モバイル アプリ]** ワークロード内にあり、以下の手順でアクセスできます。
+アプリに関連するものは、ほとんどが **[Mobile Apps]** ワークロード内にあり、以下の手順でアクセスできます。
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
@@ -75,12 +74,13 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
     ![[モバイル アプリ] ワークロード](./media/apps-workload.png)
 
 ### <a name="manage"></a>コンピューターの
-- **[アプリ]** - ほとんどのアプリをここで追加、割り当て、監視します。 
+- **[アプリ]** - ほとんどのアプリをこのノードで追加、割り当て、監視します。
     - [アプリを追加する](apps-add.md)
     - [アプリを割り当てる](apps-deploy.md)
     - [アプリの監視](apps-monitor.md)
-- **[アプリの構成ポリシー]** - ユーザーがアプリを実行するときに必要となる可能性がある設定を指定できます。 詳細については、以下を参照してください。
-    - [アプリの構成ポリシー](app-configuration-policies.md)
+- **[アプリの構成ポリシー]** - ユーザーがアプリを実行するときに必要となる可能性がある設定を指定できます。
+    - [iOS アプリ構成ポリシー](app-configuration-policies-use-ios.md)
+    - [Android アプリ構成ポリシー](app-configuration-policies-use-android.md)
 - **[アプリ保護ポリシー]** - アプリに設定を関連付けて、アプリで使用する会社のデータを保護できます。 たとえば、アプリの機能による他のアプリとの通信を制限することや、会社のアプリにアクセスしようとするユーザーに PIN の入力を求めることができます。
     - [アプリ保護ポリシー](app-protection-policies.md)
 - **[アプリの選択的ワイプ]** - 選択したユーザーのデバイスから会社のデータのみを削除します。
@@ -100,8 +100,8 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
 ### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **[ビジネス向け Windows ストア]** - ビジネス向け Windows ストアとの統合を設定します。 この設定を行うと、購入済みのアプリケーションを Intune に同期して割り当て、ライセンスの使用状況を追跡することができるようになります。 
+- **[ビジネス向け Windows ストア]** - ビジネス向け Windows ストアとの統合を設定します。 その後、購入済みのアプリケーションを Intune に同期して割り当て、ライセンスの使用状況を追跡できるようになります。
     - [ビジネス向け一括購入アプリ向けの Windows ストア](windows-store-for-business.md)
-- **[ポータル サイトのブランド化]** - 会社のポータルをカスタマイズして会社のブランドを付与します。 
+- **[ポータル サイトのブランド化]** - 会社のポータルをカスタマイズして会社のブランドを付与します。
     - [会社のポータルの構成](company-portal-app.md)
 

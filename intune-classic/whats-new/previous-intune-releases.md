@@ -1,5 +1,5 @@
 ---
-title: "以前のリリース | Microsoft Docs"
+title: "以前のリリース"
 description: 
 keywords: 
 author: barlanmsft
@@ -15,10 +15,10 @@ ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fd1e154aed6b2afecb7a7b24b927f7a5f92acba9
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 0226b8677f2a1ac91e2d7512aa45d44928ecbd95
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -38,7 +38,7 @@ __アプリのプロビジョニング プロファイルの更新エクスペ�
 アプリの署名に使用するエンタープライズ署名証明書は、通常 3 年間は継続します。 ただし、プロビジョニング プロファイルは 1 年後に期限が切れます。 この更新により、証明書がまだ有効である期間中、Intune には、有効期限が近づいているアプリを持つデバイスに新しいプロビジョニング プロファイルのポリシーを事前に展開するツールが用意されます。 詳細については、「[Use iOS mobile provisioning profile policies to keep your line of business apps up to date (基幹業務アプリケーションを常に最新の状態に保つために iOS モバイル プロビジョニング プロファイル ポリシーを使用する)](/intune-classic/deploy-use/ios-mobile-app-provisioning-profiles)」を参照してください。
 <!--- TFS 1280247--->
 
-__Intune アプリ用の Xamarin SDK の提供開始__ Intune アプリ SDK Xamarin コンポーネントを使用すると、Xamarin でビルドされたモバイル iOS および Android アプリで Intune のモバイル アプリ管理機能を有効にすることができます。 [Xamarin ストア](https://components.xamarin.com/view/Microsoft.Intune.MAM)または、[Microsoft Intune の Github ページ](https://github.com/msintuneappsdk)でコンポーネントを見つけることができます。
+__Intune アプリ用の Xamarin SDK の提供開始__ Intune App SDK Xamarin コンポーネントを使用すると、Xamarin でビルドされたモバイル iOS および Android アプリで Intune のモバイル アプリ管理機能を有効にすることができます。 [Xamarin ストア](https://components.xamarin.com/view/Microsoft.Intune.MAM)または、[Microsoft Intune の Github ページ](https://github.com/msintuneappsdk)でコンポーネントを見つけることができます。
 <!--- TFS 1061478 --->
 
 ### <a name="device-management"></a>デバイス管理

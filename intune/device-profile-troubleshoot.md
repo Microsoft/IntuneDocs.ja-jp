@@ -1,7 +1,7 @@
 ---
-title: "Microsoft Intune のデバイス プロファイルに関するトラブルシューティング | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Intune デバイス プロファイルの問題が解決できずに困っている場合は、このトピックに従って問題を解決してください。"
+title: "Microsoft Intune のデバイス プロファイルに関するトラブルシューティング"
+titleSuffix: Intune on Azure
+description: "Intune デバイス プロファイルの問題が解決できずに困っている場合は、このトピックに従って問題を解決してください。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,10 +16,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2f3586c4cbe37c44cc289ba3ea47bf127c150d35
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: ed238f35927f17b20402f64586686246afabb900
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 05/23/2017
 # <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>Microsoft Intune のデバイス プロファイルに関するトラブルシューティング
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 このトピックに記載されている情報は、Intune デバイス プロファイルに関する一般的な問題のトラブルシューティングに活用できます。
 

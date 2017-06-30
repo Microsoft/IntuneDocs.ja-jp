@@ -1,5 +1,5 @@
 ---
-title: "iOS デバイス向けのコンプライアンス ポリシー設定 | Microsoft Docs"
+title: "iOS デバイス向けのコンプライアンス ポリシー設定"
 description: "このトピックでは、iOS デバイスのコンプライアンス ポリシーで設定できるルールと設定について説明します。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fbb2e7ced783160fb6034aecc893d0c5dde639d7
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 1d3248747740dafe858a581ed19a02ba87c4b761
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

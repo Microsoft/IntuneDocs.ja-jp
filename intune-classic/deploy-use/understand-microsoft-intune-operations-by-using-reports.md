@@ -1,5 +1,5 @@
 ---
-title: "レポートを使用して運用状況を把握する | Microsoft Docs"
+title: "レポートを使用して運用状況を把握する"
 description: "組織内のソフトウェア、ハードウェア、およびソフトウェア ライセンスに関するレポートを作成して管理します。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: c433acc553b1f89789cdb72a33e8dbbc7929bae0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 

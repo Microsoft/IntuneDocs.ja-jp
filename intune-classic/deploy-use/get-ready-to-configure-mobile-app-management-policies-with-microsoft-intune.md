@@ -1,5 +1,5 @@
 ---
-title: "MAM ポリシーの前提条件 | Microsoft Docs"
+title: "MAM ポリシーの前提条件"
 description: "このトピックでは、モバイル アプリ管理ポリシーを作成する前にユーザーを設定するための前提条件について説明します。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3c209a350a7de7ba7ddb71468c5cd4230dcf5423
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 67c261a3a31229f84d02d4536ab78857369391f1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -65,12 +65,12 @@ Intune 管理コンソールでアプリ ポリシーを作成する方法につ
 >バージョン 1703 より、アプリの保護ポリシーを、MAM に登録シナリオなしで Windows 10 デバイスに対して定義することができます。 詳細については、「[Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)」 (Windows 情報保護 (WIP) を使用してエンタープライズ データを保護する) を参照してください。
 
 ##  <a name="supported-apps"></a>サポートされているアプリ
-* **Microsoft アプリ:** これらのアプリには Intune アプリ SDK が組み込まれているので、アプリ保護ポリシーを適用する前に必要な処理はありません。
+* **Microsoft アプリ:** これらのアプリには Intune App SDK が組み込まれているので、アプリ保護ポリシーを適用する前に必要な処理はありません。
 サポートされている Microsoft アプリの完全な一覧については、Microsoft Intune アプリケーション パートナー ページの [Microsoft Intune モバイル アプリケーション ギャラリー](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)を参照してください。 アプリをクリックし、サポートされるシナリオ、プラットフォーム、アプリのマルチ ID 対応について確認してください。
 
-* **社内で構築した基幹業務アプリ:** アプリ保護ポリシーを適用する前に、Intune アプリ SDK を含めるようにアプリを準備する必要があります。
+* **社内で構築した基幹業務アプリ:** アプリ保護ポリシーを適用する前に、Intune App SDK を含めるようにアプリを準備する必要があります。
 
-  * Intune で管理されているデバイスについては、「[Decide how to prepare apps for MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)」 (MAM 用にアプリを準備する方法を決める) を参照してください。
+  * Intune で管理されているデバイスについては、「[Decide how to prepare apps for MAM](/intune/apps-prepare-mobile-application-management)」 (MAM 用にアプリを準備する方法を決める) を参照してください。
 
   * 従業員が所有するデバイスなど管理対象ではないデバイスや、別のモバイル デバイス管理ソリューションで管理されているデバイスの場合は、「[Microsoft Intune に登録されていないデバイスの基幹業務アプリとデータを保護する](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)」を参照してください。
 

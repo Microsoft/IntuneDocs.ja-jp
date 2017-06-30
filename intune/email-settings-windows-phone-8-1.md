@@ -1,7 +1,7 @@
 ---
 title: "Windows Phone 8.1 デバイス向けの Intune 電子メール設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Windows Phone 8.1 デバイスで電子メール接続を構成するために使用できる Intune 設定について説明します。"
+titleSuffix: Intune on Azure
+description: "Windows Phone 8.1 デバイスでの電子メール接続の構成に使用できる Intune 設定について説明します。&quot;"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -16,17 +16,17 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 986d02721012ce356b18cf983087b5babd03bb23
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 4925ceb1be344a12270ee40519096a62b1f0c739
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="email-profile-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Microsoft Intune での Windows Phone 8.1 デバイス向けの電子メール プロファイル設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 - **[Apply all settings to Windows Phone 8.1 only (すべての設定を Windows Phone 8.1 のみに適用する)]** - これは、クラシック Intune ポータルで構成できる設定です。 Azure Portal では、この設定は変更できません。 これを **[構成済み]** に設定すると、すべての設定が Windows Phone 8.1 デバイスのみに適用されるようになります。 **[未構成]** に設定されている場合、これらの設定は Windows 10 Mobile デバイスにも適用されます。

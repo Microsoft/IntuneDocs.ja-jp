@@ -1,12 +1,12 @@
 ---
-title: "Azure Portal プレビューでの Intune の概要"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Azure Portal プレビューでの Intune の基本と、Intune を利用してデバイスを管理する方法について説明します。"
+title: "Azure Portal での Intune の概要"
+titleSuffix: Intune on Azure
+description: "Azure Portal での Intune の基本と、Intune を利用してデバイスを管理する方法について説明します。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 04/24/2017
+ms.date: 06/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,31 @@ ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16d7ff50eb821e0927c3c6ea21f3cdb1257762a0
+ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
+ms.openlocfilehash: 49747940e60e2463db5bdd18754bdb9f1444cd6d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
 
-# <a name="introduction-to-microsoft-intune-in-the-azure-portal-preview"></a>Azure Portal プレビューでの Microsoft Intune の概要
+# <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure Portal での Microsoft Intune の概要
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune は Azure Portal への移行中であり、これまでの使い慣れたワークフローと機能には変更が加えられることになります。
-新しいポータルでは、Azure Portal の新機能と更新された機能のプレビューが提供されており、組織で所有するモバイル デバイス、PC、アプリの管理に利用できます。
-最終的には Intune のすべての機能が Azure に移行しますが、現時点での Azure Portal では特定の Intune タスクのみを実行できます。 この新しいエクスペリエンスはプレビュー段階にあり、一部の機能はまだポータル上に存在しない場合があります。 詳細については、「[新機能](#whats-new)」セクションを参照してください。
+Microsoft Intune は Azure Portal に含まれるようになり、これまで使い慣れたワークフローと機能は変更されました。
+新しいポータルでは、Azure Portal の新機能と更新された機能が提供されており、組織のモバイル デバイス、PC、アプリを管理できます。
 
 > [!IMPORTANT]
 > **新しいポータルがまだ表示されない場合**<br>
-> 一部のテナントに対して、既にプレビュー版のロールアウトが開始されています。 2017 年の初めには、新しいエクスペリエンスへの既存テナントの移行が開始される予定です。 ご利用のテナントが移行される際は、事前に Office メッセージ センターに通知が届きます。
+> 既存のテナントは、新しいエクスペリエンスに移行中です。 お使いのテナントが移行される前に、Office メッセージ センターに通知が表示されます。
 >
-> 2017 年 1 月より前に作成された Intune アカウントの場合は、Apple 登録プロファイルが Azure で利用可能になるまでの間、1 回限りの移行が必要です。 移行スケジュールはまだ発表されていませんが、詳細はできる限り早く発表します。 既存のアカウントでプレビューにアクセスできない場合は、試用アカウントを作成して、新しいエクスペリエンスをテストすることを強くお勧めします。
+> 2017 年 1 月より前に作成された Intune アカウントの場合は、Apple Enrollment ワークフローが Azure で利用可能になる前に一度移行する必要があります。 移行のスケジュールはまだ発表されていません。 既存のアカウントで Azure Portal にアクセスできない場合は、試用アカウントを作成することをお勧めします。
 
 
-このライブラリには新しい製品ドキュメントが追加され、プレビュー期間中に随時更新されます。 ドキュメントの内容についてご提案がございましたら、トピックのコメント欄にフィードバックをお寄せください。 ご意見をお待ちしております。
-
-<!--- You can view the new Intune technical preview console in Azure at [portal.azure.com]. --->
+このライブラリでは新しいポータルに関する情報を参照でき、情報は継続的に更新されます。 内容についてご提案がございましたら、トピックのコメント欄にフィードバックをお寄せください。 ご意見をお待ちしております。
 
 新しいエクスペリエンスの概要を以下に示します。
 
@@ -78,13 +75,13 @@ Azure Portal は、ほとんどの最新 PC、Mac、タブレットで動作し�
 ![Azure Portal のワークロード](./media/azure-portal-workloads.png)
 
 ### <a name="introduction-and-get-started"></a>概要と作業開始
-このセクションには、Intune の[新機能](whats-new.md)、[既知の問題](known-issues.md)、[サポートを受ける方法](get-support.md)、[無料評価版を開始](free-trial-sign-up.md)する方法に関する情報が含まれています。
+このセクションでは、Intune の使用開始にあたって役に立つ[概要情報](introduction-intune.md)について説明します。
 ### <a name="plan-and-design"></a>計画と設計
-Intune 環境の[計画と設計](/intune-classic/plan-and-design/introduction)に役立つ情報が含まれています。
+Intune 環境の[計画と設計](/intune-classic/plan-design/introduction)に役立つ情報が含まれています。
 ### <a name="device-enrollment"></a>デバイスの登録
 [デバイスを Intune の管理対象にする方法](device-enrollment.md)。
 ### <a name="device-compliance"></a>デバイスのポリシー準拠
-[デバイスのコンプライアンス レベルを定義し、準拠していないデバイスについてのレポートを作成します](device-compliance.md)。
+[デバイスのコンプライアンス レベルを定義し、準拠していないデバイスをレポートします](device-compliance.md)。
 ### <a name="device-configuration"></a>デバイス構成
 [管理対象のデバイスで設定と機能を構成するために使用できるプロファイルについて理解します](device-profiles.md)。
 ### <a name="devices"></a>[デバイス]
@@ -108,5 +105,5 @@ Intune 環境の[計画と設計](/intune-classic/plan-and-design/introduction)�
 
 ## <a name="whats-new"></a>新機能
 
-プレビュー リリースの新機能については、[こちら](whats-new.md)を参照してください。
+[Intune の新機能をご確認ください](whats-new.md)。
 

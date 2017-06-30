@@ -1,12 +1,12 @@
 ---
-title: "条件付きアクセスとは"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: 会社のリソースにアクセスするためにユーザーおよびデバイスで満たす必要のある条件を Microsoft Intune Azure プレビューで定義する方法について説明します。"
+title: "Intune での条件付きアクセス"
+titleSuffix: Intune on Azure
+description: "会社のリソースにアクセスするためにユーザーとデバイスが満たす必要のある条件を Microsoft Intune で定義する方法について説明します。&quot;"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 05/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,43 +15,53 @@ ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8ab6d782460a857a0901abd9bd567365ee2e3f70
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: d3e6b720eeed65c81e5f3a4dbf06890ea8fd09ce
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
-# <a name="what-is-conditional-access"></a>条件付きアクセスとは
+# <a name="whats-conditional-access"></a>条件付きアクセスとは
 
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+このトピックでは、Enterprise Mobility + Security (EMS) に適用される条件付きアクセスについて説明し、さらに Intune での条件付きアクセスの一般的なシナリオについても取り上げます。
 
+Enterprise Mobility + Security (EMS) 条件付きアクセスはスタンドアロン製品ではありませんが、EMS の一部であるすべてのサービスと製品にかかわるソリューションです。 細かいアクセス制御を提供することで会社のデータをセキュリティで保護し、任意の場所と任意のデバイスで最適な仕事ができるエクスペリエンスをユーザーに提供します。
 
-このトピックでは、Enterprise Mobility + Security に適用される条件付きアクセスについて説明し、さらに Intune での条件付きアクセス機能についても取り上げます。
+場所、デバイス、ユーザーの状態、アプリケーションの機密度に基づいて、会社のデータへのアクセスを制限する条件を定義できます。
 
-Enterprise Mobility + Security (EMS) からの条件付きアクセスでは、Azure Active Directory Premium と Microsoft Intune の機能を利用することにより、会社のデータの安全性を保つために必要な制御を提供する一方で、どのようなデバイスからでも最適に作業ができるユーザー エクスペリエンスを実現しています。
+> [!NOTE] 
+> 条件付きアクセスは、その機能を[Office 365 サービス](https://blogs.technet.microsoft.com/wbaer/2017/02/17/conditional-access-policies-with-sharepoint-online-and-onedrive-for-business/)にも拡張しています。
 
-条件付きアクセスを利用すると、会社のデータへのアクセスを場所、デバイス、ユーザーの状態、アプリケーションの機密度に基づき制限する条件を定義できます。
+![条件付きアクセスのアーキテクチャ ダイアグラム](./media/ca-diagram-1.png)
 
-デバイスの観点から見ると、Intune と Azure Active Directory が連携することで、管理対象デバイスと準拠デバイスのみが電子メールおよび Office 365 サービスにアクセスできるようになっています。 たとえば、Azure Active Directory では、ドメインに参加しているコンピューターや、Intune のようなモバイル デバイス管理アプリケーションに登録されているモバイル デバイスのみが Office 365 サービスにアクセスできるようにするポリシーを設定できます。 Intune を使用すると、デバイスのコンプライアンス対応状態を評価するデバイス コンプライアンス プロファイルを設定できます。 コンプライアンス対応状態は Azure Active Directory に報告され、ユーザーが会社のリソースにアクセスしようとしたときに Azure Active Directory 内でポリシーを適用するために使用されます。 Intune でのデバイス コンプライアンスについては、「[デバイス コンプライアンスとは](device-compliance.md)」を参照してください。
+## <a name="conditional-access-with-intune"></a>Intune での条件付きアクセス
 
-Exchange Online などのクラウド アプリ向けの条件付きアクセスは、Azure Active Directory を介して構成できます。 詳細については、[こちらの記事](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)を参照してください。
+Intune では、モバイル デバイスのコンプライアンスとモバイル アプリケーション管理機能を追加し、EMS 条件付きアクセスのソリューションをサポートします。
 
-## <a name="on-premises-conditional-access-in-intune"></a>Intune のオンプレミス条件付きアクセス
+![EMS 使用時の Intune と条件付きアクセス](./media/intune-with-ca-1.png)
 
-Intune の条件付きアクセスを使用すると、デバイスの管理と登録に基づき **Exchange On-Premises** へのアクセスを許可またはブロックすることができます。
+Intune での条件付きアクセスの使用方法
 
-デバイスのコンプライアンスを評価するために、デバイス コンプライアンス プロファイルの設定が使用されます。 条件付きアクセスでは、この評価を使用して Exchange On-Premises へのアクセスを許可またはブロックします。 条件付きアクセスをデバイス コンプライアンス プロファイルと組み合わせて使用した場合は、準拠デバイスのみが Exchange On-Premises へのアクセスを許可されます。 特定のプラットフォームを許可またはブロックする、Intune で管理されていないデバイスを直ちにブロックするなど、さらにきめ細かい制御を行うには、条件付きアクセスで詳細設定を構成できます。
+-   **デバイスに基づく条件付きアクセス**
 
-デバイス コンプライアンス プロファイルと条件付きアクセスは、ユーザーに割り当てられます。 Exchange On-Premises へのアクセスにユーザーが使用するすべてのデバイスに対して、コンプライアンスのチェックが行われます。 デバイスを使用しているユーザーには、そのデバイスのコンプライアンスを評価するために、コンプライアンス プロファイルが割り当てられている必要があるという点に注意してください。 コンプライアンス ポリシーがユーザーに展開されていない場合、デバイスは準拠したものと見なされ、アクセス制限は適用されません。
+    -   Exchange On-Premises の条件付きアクセス
 
-デバイスが条件を満たしていない場合、デバイスの登録と、デバイスが準拠デバイスとなることを妨げている問題の修正を行うプロセスがエンド ユーザーに案内されます。
+    -   ネットワーク アクセス制御に基づいた条件付きアクセス
+
+    -   デバイスのリスクに基づいた条件付きアクセス
+
+    -   Windows PC の条件付きアクセス
+
+        -   企業所有
+
+        -   Bring Your Own Device (BYOD)
+
+-   **アプリベースの条件付きアクセス**
 
 ## <a name="next-steps"></a>次のステップ
 
-[Exchange On-Premises の条件付きアクセス ポリシーを作成する方法](conditional-access-exchange-create.md)
-
-[Azure Active Directory で条件付きアクセスを構成する方法](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
-
+[Intune での条件付きアクセスの一般的な使用方法](conditional-access-intune-common-ways-use.md)

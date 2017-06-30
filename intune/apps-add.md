@@ -1,7 +1,7 @@
 ---
-title: "アプリを Microsoft Intune に追加する方法 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: この手順では、Intune にアプリを追加して、ユーザーとデバイスに割り当てる準備を行います。 "
+title: "アプリを Microsoft Intune に追加する方法"
+titleSuffix: Intune on Azure
+description: "この手順では、Intune にアプリを追加して、ユーザーとデバイスに割り当てられる状態にします。 &quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,16 +16,16 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 36cafd2b943ab1dd5045a8ed1fe1fcf1b28af385
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 6b4df1ca6db5ce733ab7dab4e715ab0850dd7c8b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>アプリを Microsoft Intune に追加する方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ユーザー用アプリを管理して割り当てるには、そのアプリを Intune に追加する必要があります。 Intune ではさまざまな種類のアプリがサポートされ、オプションは種類ごとに異なる可能性があります。
 

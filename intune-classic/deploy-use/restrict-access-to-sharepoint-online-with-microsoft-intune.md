@@ -1,5 +1,5 @@
 ---
-title: "SharePoint Online を保護する | Microsoft Docs"
+title: "SharePoint Online を保護する"
 description: "条件付きアクセスを使って、SharePoint Online の会社データへのアクセスを保護および制御します。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4a8b3f5a3ab5df9f31741e3331d2b6bbfd2c0c9f
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e22686964df7415ece75361a645103006af43c51
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/31/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -146,7 +146,7 @@ SharePoint Online ポリシーには、次の 2 つのグループの種類を�
         **SharePoint Online** にアクセスするために使用するデバイスはすべて、Intune に登録され、またポリシーに準拠している必要があります。 **先進認証**を使っているすべてのクライアント アプリケーションに、条件付きアクセス ポリシーが適用されます。 プラットフォームが現在 Intune でサポートされていない場合、**SharePoint Online** へのアクセスはブロックされます。
 
         **[すべてのプラットフォーム]** オプションを選択することは、クライアント アプリケーションから報告されたプラットフォームでない限り、Azure Active Directory がすべての認証要求にこのポリシーを適用することを意味します。 次の場合を除いて、すべてのプラットフォームが登録されて準拠している必要があります。
-        *    Windows デバイスが登録されて準拠している必要があるか、またはオンプレミスの Active Directory でドメインに参加している (一方または両方)
+        *   Windows デバイスが登録されて準拠している必要があるか、またはオンプレミスの Active Directory でドメインに参加している (一方または両方)
         * Mac などのサポートされていないプラットフォーム ただし、これらのプラットフォームからの最新の認証を使用しているアプリは、それでもブロックされます。
 
     -   **特定のプラットフォーム**

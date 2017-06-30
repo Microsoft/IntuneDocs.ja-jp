@@ -1,7 +1,7 @@
 ---
 title: "Windows Phone 8.1 デバイス向けの Intune VPN 設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Windows Phone 8.1 デバイスで VPN 接続を構成するために使用できる Intune 設定について説明します。"
+titleSuffix: Intune on Azure
+description: "Windows Phone 8.1 デバイスの VPN 接続の構成に使用できる Intune 設定について説明します。&quot;"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -16,17 +16,17 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: bd6d6debcf2f62599518aec7b6998ecf29c3dd6a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: a009a16c7c475864f665f6ad0ab8fe1853c801b4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="vpn-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Microsoft Intune での Windows Phone 8.1 デバイス向けの VPN 設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 選択する設定によっては、以下の一覧に記載されている値の一部を構成できない場合もあります。
 

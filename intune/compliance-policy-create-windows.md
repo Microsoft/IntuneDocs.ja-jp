@@ -1,7 +1,7 @@
 ---
 title: "Windows 用のコンプライアンス ポリシーの作成方法"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Windows デバイス用のコンプライアンス ポリシーを作成する方法について説明します。"
+titleSuffix: Intune on Azure
+description: "Windows デバイス用のコンプライアンス ポリシーの作成方法について説明します。&quot;"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -16,17 +16,17 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4de81c3dc6f1499c2364d8bf9c3b49b219248684
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 91f0a71ed7b924746425822ce10190a8ec7a7a40
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune-azure-preview"></a>Intune Azure プレビューで Windows デバイス用のデバイス コンプライアンス ポリシーを作成する方法
+# <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune で Windows デバイス用のデバイス コンプライアンス ポリシーを作成する方法
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 コンプライアンス ポリシーは、プラットフォームごとに作成されます。  また、Azure Portal でコンプライアンス ポリシーを作成できます。 コンプライアンス ポリシーの詳細については、[デバイスのコンプライアンス](device-compliance.md)に関するトピックを参照してください。 コンプライアンス ポリシーを作成する前に対応する必要がある前提条件については、[デバイス コンプライアンスの概要](device-compliance-get-started.md)に関するトピックを参照してください。
 

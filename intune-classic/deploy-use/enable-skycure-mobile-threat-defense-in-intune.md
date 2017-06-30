@@ -1,5 +1,5 @@
 ---
-title: "Intune で Skycure Mobile Threat Defense を有効にする | Microsoft Docs"
+title: "Intune で Skycure Mobile Threat Defense を有効にする"
 description: "Intune クラシック コンソールで Skycure Mobile Threat Defense を有効にします。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9be25144ce8c556e890668979e674dd56370f8cd
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 4dad45d15fec7189fdcf184839040b9e3f9a3a48
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 05/23/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Intune で Skycure Mobile Threat Defense (MTD) 接続を有効にするには、Skycure コンソールで Intune コネクターが構成済みである必要があります。
+Skycure Mobile Threat Defense を有効にするには、[Intune Connector in the Skycure console]\(Skycure コンソールの Intune コネクタ\) が構成済みである必要があります (/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune)。
 
 ## <a name="to-enable-the-skycure-mtd-connection-in-intune"></a>Intune で Skycure MTD の接続を有効にする
 

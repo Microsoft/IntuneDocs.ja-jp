@@ -1,7 +1,7 @@
 ---
 title: "事前共有キーを使用した Wi-Fi プロファイルの作成"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Intune カスタム プロファイルを使用して、事前共有キーで Wi-Fi プロファイルを作成します。"
+titleSuffix: Intune on Azure
+description: "Intune カスタム プロファイルを使用して、事前共有キーで Wi-Fi プロファイルを作成します。&quot;"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -16,38 +16,38 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fe7d9e9998156825bfd9637c3f9d80df80b916cf
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: b56a6da04ae53a812a7d153de2618b72fa14ec44
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 
 ---
 # <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Microsoft Intune カスタム デバイス プロファイルを使用して、事前共有キーで Wi-Fi プロファイルを作成する
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune の**カスタム デバイス プロファイル**を使用して、事前共有キーを使用して Wi-Fi プロファイルを作成する方法を次に示します。 このトピックでは、EAP ベースの Wi-Fi プロファイルを作成する方法の例も示します。
 
 > [!NOTE]
--    以下のように、そのネットワークに接続しているコンピューターからコードをコピーした方が簡単な場合があります。
+-   以下のように、そのネットワークに接続しているコンピューターからコードをコピーした方が簡単な場合があります。
 - Android では、Johnathon Biersack 氏が提供しているこの [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) を使用することも可能です。
--    OMA-URI 設定をさらに追加することにより、複数のネットワークとキーを追加できます。
+-   OMA-URI 設定をさらに追加することにより、複数のネットワークとキーを追加できます。
 -  iOS でプロファイルを構成するには、Mac ステーションで Apple Configurator を使用します。 また、Johnathon Biersack 氏が提供する [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) を使用します。
 
 
-1.    Android または Windows 用に事前共有キーを使用した Wi-Fi プロファイル、または EAP ベースの Wi-Fi プロファイルを作成するには、デバイス プロファイルを作成するときに、Wi-Fi プロファイルではなく、そのデバイス プラットフォームの**カスタム**を選択します。
+1.  Android または Windows 用に事前共有キーを使用した Wi-Fi プロファイル、または EAP ベースの Wi-Fi プロファイルを作成するには、デバイス プロファイルを作成するときに、Wi-Fi プロファイルではなく、そのデバイス プラットフォームの**カスタム**を選択します。
 
-2.    名前と説明を入力します。
-3.    新しい OMA-URI 設定を追加します。
+2.  名前と説明を入力します。
+3.  新しい OMA-URI 設定を追加します。
 
-   a.    この Wi-Fi ネットワーク設定の名前を入力します。
+   a.   この Wi-Fi ネットワーク設定の名前を入力します。
 
-   b.    OMA-URI 設定の説明を入力するか、空白のままにします。
+   b.   OMA-URI 設定の説明を入力するか、空白のままにします。
 
-   c.    **[データ型]**: **String** に設定します。
+   c.   **[データ型]**: **String** に設定します。
 
-   d.    **OMA-URI**:
+   d.   **OMA-URI**:
 
     - **Android の場合**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Windows の場合**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml

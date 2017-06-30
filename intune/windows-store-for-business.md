@@ -1,12 +1,12 @@
 ---
-title: "ビジネス向け Windows ストアからのアプリの管理 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: ビジネス向け Windows ストアから取得したアプリを同期して Intune に取り込み、そのアプリを割り当てて追跡します。"
+title: "ビジネス向け Windows ストアからのアプリの管理"
+titleSuffix: Intune on Azure
+description: "ビジネス向け Windows ストアから取得したアプリを同期して Intune に取り込み、そのアプリを割り当てて追跡します。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b1a76e9f30e3587157d4b3085b1b3ce2abe0b37c
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 95edb26152cf2d11413cfd7e46b8a37bdafc78ab
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
 # <a name="how-to-manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune"></a>ビジネス向け Windows ストアから購入したアプリを Microsoft Intune で管理する方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 [ビジネス向け Windows ストア](https://www.microsoft.com/business-store)では、組織用のアプリを見つけて、個別または大量購入することができます。 Microsoft Intune にストアを接続することで、Intune ポータルからボリューム購入アプリを管理することができます。 たとえば、
@@ -58,7 +58,7 @@ Intune コンソールで同期を有効にする前に、以下の手順に従�
 ## <a name="configure-synchronization"></a>同期を構成する
 
 1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
+2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[モバイル アプリ]** を選択します。
 1. **[モバイル アプリ]** ブレードで、**[セットアップ]** > **[ビジネス用の Windows ストア]** の順に選択します。
 2. **[有効にする]** をクリックします。

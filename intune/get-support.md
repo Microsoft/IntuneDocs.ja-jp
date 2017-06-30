@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Intune のサポートを受ける方法"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: 有料サブスクリプションとトライアル サブスクリプションについて、オンラインと電話によるサポートを利用できます。"
+titleSuffix: Intune on Azure
+description: "有料サブスクリプションと試用版サブスクリプションについて、オンラインと電話によるサポートを利用できます。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,19 +16,19 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 771cd13aaac159d5286812fd509ca598dceb31f8
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 45b111c31afe8c79f3bd567401da14bbbbce3b69
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune のサポートを受ける方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Microsoft サポートは、Microsoft Intune に世界的な技術、購入前、請求、およびサブスクリプションのサポートを提供しています。 有料サブスクリプションとトライアル サブスクリプションについて、オンラインと電話によるサポートを利用できます。 オンライン テクニカル サポートは、英語と日本語で提供されています。 電話によるサポートとオンライン課金サポートは、他の言語でも利用できます。
+Microsoft サポートは、Microsoft Intune に世界的な技術、購入前、請求、およびサブスクリプションのサポートを提供しています。 有料サブスクリプションと試用版サブスクリプションについて、オンラインと電話によるサポートを利用できます。 オンライン テクニカル サポートは、英語と日本語で提供されています。 電話によるサポートとオンライン課金サポートは、他の言語でも利用できます。
 
 Intune のサポートについては、Configuration Manager で使用する場合、無料です。 Premier サポートを契約されているお客様は、手順に関する質問 (たとえば、Intune 機能を構成する方法) の場合、料金が発生します。
 

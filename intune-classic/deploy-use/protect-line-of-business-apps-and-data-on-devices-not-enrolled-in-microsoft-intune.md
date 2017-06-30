@@ -1,5 +1,5 @@
 ---
-title: "登録されていないデバイスで LOB アプリを保護する |Microsoft Docs"
+title: "登録されていないデバイスで LOB アプリを保護する"
 description: "このトピックでは、データの損失を防ぐことができるモバイル アプリケーション管理ポリシーを適用できるように、カスタム基幹業務アプリを準備する方法について説明します。"
 keywords: 
 author: mtillman
@@ -15,10 +15,10 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f30837d90954b9b30b27e77240bb241db6e2b037
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 0b09daa05db673817bea67cd8b88c2ac63be7f1e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -27,16 +27,16 @@ ms.lasthandoff: 05/23/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-モバイル アプリケーション管理 (MAM) ポリシーでは、会社のデータを保護するために、会社データが漏洩する可能性があるアクションを制限し、アプリ PIN などのデータ アクセス要件を強制することができます。 MAM ポリシーを iOS または Android の基幹業務アプリに適用するには、最初に Microsoft Intune アプリ ラッピング ツールを使用してアプリをラップする必要があります。 アプリ ラッピングは、モバイル アプリに、基になるアプリケーションは何も変更せずに、管理レイヤーを適用するプロセスです。 アプリをラップしたら、MAM ポリシーを適用し、それをユーザーに配布できます。  
+モバイル アプリケーション管理 (MAM) ポリシーでは、会社のデータを保護するために、会社データが漏洩する可能性があるアクションを制限し、アプリ PIN などのデータ アクセス要件を強制することができます。 MAM ポリシーを iOS または Android の基幹業務アプリに適用するには、最初に Microsoft Intune アプリ ラッピング ツールを使用してアプリをラップする必要があります。 アプリ ラッピングは、モバイル アプリを変更することなく管理レイヤーを適用するプロセスで、モバイル アプリはユーザーに配布されます。  
 
-このトピックでは、**従業員が所有している管理外のデバイス**からアクセスするアプリと、**サード パーティ製のモバイル デバイス管理 (MDM) ソリューション**で管理されているデバイスに MAM ポリシーを適用する手順を説明します。  **Intune MDM に登録されているデバイス**で実行されている基幹業務アプリを準備するには、「[Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)」をご覧ください。
+このトピックでは、**従業員が所有している管理外のデバイス**からアクセスするアプリと、**サード パーティ製のモバイル デバイス管理 (MDM) ソリューション**で管理されているデバイスに MAM ポリシーを適用する手順を説明します。  **Intune MDM に登録されているデバイス**で実行されている基幹業務アプリを準備するには、「[Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](/intune/apps-prepare-mobile-application-management)」をご覧ください。
 
 
 ##  <a name="step-1-prepare-the-app"></a>手順 1: アプリを準備する
 
-MAM ポリシーをアプリに適用する前に、まず Microsoft Intune アプリ ラッピング ツール ([iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 用または [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) 用) を使用してアプリをラップする必要があります。あるいは、[Intune アプリ SDK](../develop/intune-app-sdk.md) を利用し、Intune アプリ保護機能を手動で統合します。
+MAM ポリシーをアプリに適用する前に、まず Microsoft Intune アプリ ラッピング ツール (iOS 用) (prepare-ios-apps-for-mo/intune/apps-prepare-mobile-application-managementoid](/intune/app-wrapper-prepare-android) を使用してアプリをラップするか、または [Intune App SDK](/intune/app-sdk) を使用して Intune アプリ保護機能を手動で統合します。
 
-アプリ ラッピング ツールと SDK の比較については、「[Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)」を参照してください。
+アプリ ラッピング ツールと SDK の比較については、「[Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](/intune/apps-prepare-mobile-application-management)」を参照してください。
 
 ## <a name="step-2-add-the-app"></a>手順 2: アプリを追加する
 
@@ -49,7 +49,7 @@ MAM ポリシーと基幹業務アプリを関連付けるには、次の手順�
 2. **[基幹業務アプリ]** ブレードで、**[カスタム アプリの追加]** を選択します。
 
   ![[カスタム アプリの追加] ボタンが上部に示された [基幹業務アプリ] ブレードのスクリーンショット](../media/mam-azure-portal-add-lob-app-action.png)
-3.    アプリの名前、[アプリ ID] フィールドにバンドル ID、プラットフォーム (iOS または Android) を指定します。
+3.  アプリの名前、[アプリ ID] フィールドにバンドル ID、プラットフォーム (iOS または Android) を指定します。
 
   ![[カスタム アプリの追加] ブレードのスクリーン ショット](../media/mam-azure-portal-add-app-details.png)
 
@@ -74,11 +74,11 @@ MAM ポリシーと基幹業務アプリを関連付けるには、次の手順�
 ##  <a name="remove-apps"></a>アプリを削除する
 アプリの一覧から基幹業務アプリを削除できます。 これを行うと、アプリは一覧から削除され、MAM ポリシーとの関連付けが削除されますが、ユーザーのデバイスからアプリが削除されたり、アンインストールされたりすることはありません。  
 
-1.    [Azure Portal](https://portal.azure.com/) の **[Intune モバイル アプリケーション管理]**、**[設定]** に進みます。 **[設定]** ブレードで、**[基幹業務]** を選択し、既存のアプリの一覧を開きます。  
-2.    削除するアプリを選択し、**(...) のコンテキスト** メニューを選択します。
+1.  [Azure Portal](https://portal.azure.com/) の **[Intune モバイル アプリケーション管理]**、**[設定]** に進みます。 **[設定]** ブレードで、**[基幹業務]** を選択し、既存のアプリの一覧を開きます。  
+2.  削除するアプリを選択し、**(...) のコンテキスト** メニューを選択します。
 
   ![省略記号がある基幹業務アプリのブレードのスクリーンショット](../media/mam-azure-portal-lob-context-menu.png)
-3.    **[アプリケーションの削除]** を選択しアプリを削除します。
+3.  **[アプリケーションの削除]** を選択しアプリを削除します。
 
   ![[アプリケーションの削除] オプションがある基幹業務ブレードのスクリーンショット](../media/mam-azure-portal-delete-app.png)
 

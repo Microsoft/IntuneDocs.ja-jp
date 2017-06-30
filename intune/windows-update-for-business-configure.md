@@ -1,6 +1,7 @@
 ---
-title: "ビジネス設定向けの Windows Update の構成 - Intune | Intune Azure プレビュー | Microsoft Docs"
-description: "Intune Azure プレビュー: Intune でビジネス設定向けの Windows Update を構成して、Windows 10 デバイスの更新を制御します。"
+title: "ビジネス設定向けの Windows Update の構成 - Intune"
+titleSuffix: Intune on Azure
+description: "Intune でビジネス向けの Windows Update を構成して、Windows 10 デバイスの更新を制御します。&quot;"
 keywords: 
 author: dougeby
 ms.author: dougeby
@@ -14,17 +15,17 @@ ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b0bc3e557f303cd80c780634ba47b24405c327e1
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: c05a6c007b147d81c4d98b708c0e0ae92392f0e0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="how-to-configure-windows-update-for-business-settings-with-microsoft-intune"></a>Microsoft Intune でビジネス設定向けの Windows Update を構成する方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>概要
 サービスとしての Windows は、Windows 10 の更新プログラムを提供するための新しい方法です。 Windows 10 以降、すべての新しい機能更新プログラムと品質更新プログラムには、以前の更新プログラムすべての内容が含まれます。 つまり、最新の更新プログラムをインストールしている限り、Windows 10 デバイスが完全に最新の状態であることを把握できます。 以前のバージョンの Windows とは異なり、更新プログラムの一部ではなく全体をインストールすることが必要になります。
@@ -87,7 +88,7 @@ Windows Update for Business を使用することで、デバイスのグルー�
     - **自動更新の動作**: 自動更新の動作をどのように管理して更新プログラムをスキャン、ダウンロード、およびインストールするかを選択します。 詳しくは、「[Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate)」をご覧ください。
     - **品質更新プログラムの遅延期間 (日数)** - 品質更新プログラムを遅延させる日数を指定します。 これらの品質更新プログラムの受信を、リリースから最大 30 日間延期できます。  
 
-      品質更新プログラムは通常、既存の Windows 機能の修正プログラムや機能強化で、(マイクロソフトでは随時リリースできますが) 月の最初の火曜日に公開されるのが一般的です。 入手可能になってから品質更新プログラムの受信を延期するか、またどのくらい延期するかを定義できます。
+    品質更新プログラムは通常、既存の Windows 機能の修正プログラムや機能強化で、(マイクロソフトでは随時リリースできますが) 月の最初の火曜日に公開されるのが一般的です。 入手可能になってから品質更新プログラムの受信を延期するか、またどのくらい延期するかを定義できます。
     - **機能更新プログラムの遅延期間 (日数)** - 機能更新プログラムを遅延させる日数を指定します。 これらの機能更新プログラムの受信を、リリースから最大 180 日間延期できます。
 
     機能更新プログラムは一般的に Windows の新しい機能です。 **サービス ブランチ**の設定 (**CB** または **CBB**) を構成したら、Windows Update でマイクロソフトから入手可能になってから機能更新プログラムの受信を延期するか、またどのくらい延期するかを定義できます。

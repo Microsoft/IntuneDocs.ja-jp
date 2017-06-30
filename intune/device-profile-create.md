@@ -1,12 +1,12 @@
 ---
-title: "Intune デバイス構成プロファイルを作成する | Intune Azure プレビュー"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Intune デバイス構成プロファイルを作成する方法について説明します。"
+title: "Intune デバイス構成プロファイルを作成する"
+titleSuffix: Intune on Azure
+description: "Intune デバイス構成プロファイルを作成する方法について説明します。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 05/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a719b3f53076a55f1e888a9ddf8e98c7074dd25f
+ms.sourcegitcommit: 73b43084c28436cb8a7e866dcee2d52694c60f5c
+ms.openlocfilehash: 6df6813667241d3ad5f8768585f2e1a34f0fe6e3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/16/2017
 
 
 ---
 
 # <a name="how-to-create-device-configuration-profiles-in-microsoft-intune"></a>Microsoft Intune でデバイス構成プロファイルを作成する方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 1. Azure ポータルにサインインします。
@@ -34,7 +34,7 @@ ms.lasthandoff: 05/23/2017
 3. **[Intune]** ブレードで、**[デバイスの構成]** を選択します。
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
 2. プロファイルの一覧が表示されているブレードで、**[プロファイルを作成します]** を選択します。
-3. **[プロファイルを作成します]** ブレードで、次を指定します。
+3. **[プロファイルの作成]** ブレードで、次の項目を指定します。
     - **[名前]** - 新しいプロファイルのわかりやすい名前を入力します。
     - **[説明]** - プロファイルの説明を入力します (省略可能)。
     - **[プラットフォーム]** - 作成するプロファイルのプラットフォームの種類を選択します。

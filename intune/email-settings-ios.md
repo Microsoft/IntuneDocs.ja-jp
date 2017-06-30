@@ -1,7 +1,7 @@
 ---
 title: "iOS デバイス向けの Intune 電子メール設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: iOS デバイスで電子メール接続を構成するために使用できる Intune 設定について説明します。"
+titleSuffix: Intune on Azure
+description: "iOS デバイスでの電子メール接続の構成に使用できる Intune 設定について説明します。&quot;"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -16,17 +16,17 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6f941247295761815804b2e91234ce664c90e06f
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: dcac410ae5c20b5942bf37f5eaa9a46205a4cc07
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="email-profile-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune での iOS デバイス向けの電子メール プロファイル設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 

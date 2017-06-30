@@ -1,22 +1,23 @@
 ---
-title: "Intune の用語集 | Microsoft Docs"
+title: "Intune の用語集"
 description: "Microsoft Intune で使用される用語について説明します。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/17/2016
+ms.date: 06/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
+ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 43b6dbfc004e8687eaf2a0ee185728136f457bfc
+ms.sourcegitcommit: 73b43084c28436cb8a7e866dcee2d52694c60f5c
+ms.openlocfilehash: be3b078edc4e133fb586bb9476ba1dd770d0f389
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/16/2017
 
 
 ---
@@ -29,10 +30,17 @@ ms.lasthandoff: 05/23/2017
 
 |||
 |-|-|
-|アプリ SDK|[Microsoft Intune アプリ SDK](/intune-classic/develop/intune-app-sdk) を使用すると、社内で作成したアプリに、Intune モバイル アプリケーション管理ポリシーで管理できる機能を追加することができます。|
-|アプリ ラッピング ツール|基幹業務アプリのラッパーを作成する[コマンド ライン アプリケーション](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)です。このラッパーにより、アプリを Intune モバイル アプリケーション管理ポリシーで管理できるようになります。|
+|アプリ構成プロファイル|iOS アプリを実行する前に、[固有の設定](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)で iOS アプリを構成します。|
+|アプリの展開|ユーザーが必要なアプリを[検索、ダウンロード、およびインストール](/intune-classic/deploy-use/deploy-apps)できるようにします。|
+|アプリの監視|アプリの展開に関連する[最新の状態やアクティビティを確認](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune)できます。|
+|アプリ保護データ削除タスク|ユーザーのデバイスから[アプリ データを削除](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)します。|
+|アプリ保護ポリシー|ユーザーのアプリを[会社のデータ保護ポリシー](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)に準拠させます。|
+|アプリ レポート|アプリの展開の状態とアクティビティに関する[履歴データを確認する](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports)ことができます。|
+|アプリ SDK|[Microsoft Intune アプリ SDK](/intune/app-sdk) を使用すると、社内で作成したアプリに、Intune モバイル アプリケーション管理ポリシーで管理できる機能を追加することができます。|
+|アプリのアンインストール アクション|ユーザーのデバイスから[アプリをアンインストール](/intune-classic/deploy-use/deploy-apps)できます。|
+|アプリ ラッピング ツール|基幹業務アプリのラッパーを作成する[コマンド ライン アプリケーション](/intune/apps-prepare-mobile-application-management)です。このラッパーにより、アプリを Intune モバイル アプリケーション管理ポリシーで管理できるようになります。|
 |利用可能なインストール|この操作でアプリを展開すると、アプリがポータル サイトに表示され、ユーザーは[オンデマンドでこれをインストール](/intune-classic/deploy-use/deploy-apps)できます。|
-|Azure ポータル|間もなく導入される Intune の新しいコンソールです。 それまでは、Azure ポータルを使用して、デバイス用の [Intune MAM ポリシー](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies)を作成できます。|
+|Azure ポータル|間もなく導入される Intune の新しいコンソールです。 詳しくは、[新ポータル](/intune/what-is-intune)に関するページを参照してください。|
 
 ## <a name="b"></a>B
 |||
@@ -56,7 +64,7 @@ ms.lasthandoff: 05/23/2017
 |-|-|
 |展開|管理対象のデバイスまたはユーザーにアプリまたはポリシーを送信することです。|
 |展開の操作|[アプリを展開する](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)ときに行う選択です。 アプリのインストールを必須または任意にしたり、アプリをアンインストールしたりできます。|
-|デバイス登録マネージャー|組織は Intune を使用して、単一のユーザー アカウントで多数のモバイル デバイスを管理することができます。 [デバイス登録マネージャー /intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) アカウントは、最大で 1,000 台のデバイスを登録できる特別な Intune アカウントです。|
+|デバイス登録マネージャー|組織は Intune を使用して、単一のユーザー アカウントで多数のモバイル デバイスを管理することができます。 [デバイス登録マネージャー (DEM) アカウント](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)は、最大 1,000 台のデバイスを登録できる特別な Intune アカウントです。|
 |デバイス グループ マッピング|管理者またはエンド ユーザーがデバイスに割り当てることができるデバイスのカテゴリ ("個人用" や "営業用" など) に基づいて、[自動的にデバイスをグループに追加](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune)できます。|
 
 ## <a name="e"></a>E
@@ -64,13 +72,13 @@ ms.lasthandoff: 05/23/2017
 |-|-|
 |電子メールのプロファイル|このポリシーを使用すると、モバイル デバイス上の特定の電子メール クライアントに[電子メール アクセス設定](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)をセットアップし、エンド ユーザーが行う必要のある設定の量を最小限に抑えることができます。|
 |EMS|Microsoft Enterprise Mobility + Security (旧称 Enterprise Mobility Suite) は、会社のデータを保護しながら、ユーザーには[必要なアプリとコンテンツにアクセスできる](https://www.microsoft.com/cloud-platform/enterprise-mobility)ようにします。|
-|エンド ユーザー|Intune を使用して管理される[スマートフォンや PC などのデバイスのユーザー](/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)です。|
+|エンド ユーザー|Intune を使用して管理される[スマートフォンや PC などのデバイスのユーザー](/intune/end-user-educate)です。|
 |登録|Microsoft Intune は、[登録](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)を使用して、デバイスを管理対象にし、リソースへのアクセスを許可します。|
 
 ## <a name="f"></a>F
 |||
 |-|-|
-|FastTrack|対象となるプランで 150 のライセンスを持つ Intune ユーザー向けの [Microsoft サービス](https://technet.microsoft.com/library/mt228265.aspx)です。 このサービスを利用すると、マイクロソフト スペシャリストが Intune の使用開始をお手伝いします。|
+|FastTrack|対象となるプランで 150 のライセンスを持つ Intune ユーザー向けの [Microsoft サービス](https://technet.microsoft.com/library/mt228265.aspx)です。 このサービスを利用すると、Microsoft スペシャリストが Intune の使用開始をお手伝いします。|
 
 ## <a name="g"></a>G
 |||
@@ -99,8 +107,8 @@ ms.lasthandoff: 05/23/2017
 |||
 |-|-|
 |Managed Browser|Microsoft Intune を使用して組織で展開できる、[Web を参照するためのアプリケーション](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies)です。 Managed Browser ポリシーは、Managed Browser のユーザーがアクセスできる Web サイトを制限する許可リストまたはブロック リストを構成するものです。|
-|モバイル アプリケーション管理|[モバイル アプリケーション管理 /intune-classic/deploy-use/overview-of-app-lifecycle-in-microsoft-intune) では、ユーザーのモバイル アプリの公開、プッシュ、構成、セキュリティ保護、監視、および更新を行うことができます。
-|モバイル デバイス管理|[モバイル デバイス管理 /intune-classic/deploy-use/overview-of-device-lifecycle-in-microsoft-intune) を使用すると、プロビジョニング、構成、監視、およびアクションをデバイスで実行できるように、それらのデバイスを Intune に登録できます。
+|モバイル アプリケーション管理|[モバイル アプリケーション管理 (MAM)](/intune/app-lifecycle) を使用すると、ユーザーのモバイル アプリを公開、プッシュ、構成、セキュリティ保護、監視、および更新できます。
+|モバイル デバイス管理|[モバイル デバイス管理 (MDM)](/intune/device-lifecycle) を使用すると、プロビジョニング、構成、監視、およびアクションをデバイスで実行できるように、それらのデバイスを Intune に登録できます。
 |MDM 機関|[MDM 機関](/intune-classic/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)では、一連のデバイスを管理するためのアクセス許可を持つ管理サービスを定義します。 MDM 機関のオプションには、Intune 単体で使用するか、Intune を Configuration Manager と連携させて使用する方法があります。|
 |モバイル アプリ プロビジョニング ポリシー|展開する iOS アプリ用[プロビジョニング プロファイル](/intune-classic/deploy-use/ios-mobile-app-provisioning-profiles)が期限切れにならないようにできる iOS ポリシーです。|
 |モバイル アプリ構成ポリシー|実行時に[互換性のある iOS アプリに設定を提供する](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)ために使用される iOS ポリシー (会社名やサーバー アドレスなど)。|

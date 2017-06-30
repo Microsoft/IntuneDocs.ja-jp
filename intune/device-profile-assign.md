@@ -1,12 +1,12 @@
 ---
 title: "Intune でデバイス プロファイルを割り当てる方法"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: このトピックでは、作成した Intune デバイス プロファイルをデバイスに割り当てる方法について説明します。"
+titleSuffix: Intune on Azure
+description: "このトピックでは、作成した Intune デバイス プロファイルをデバイスに割り当てる方法について説明します。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,21 +16,21 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 41a76a5cd7589ac05a6ed138dd0e25fe2ae9ab76
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 6af213a819b8e053ab9b2622194090a19a82e88b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="how-to-assign-microsoft-intune-device-profiles"></a>Microsoft Intune のデバイス プロファイルを割り当てる方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
+2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 1. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
 2. プロファイルの一覧ブレードで、管理するプロファイルを選択し、**[<*プロファイル名*> レポート]** ブレードで、**[管理]** > **[割り当て]** の順に選択します。

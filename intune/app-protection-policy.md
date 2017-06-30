@@ -1,7 +1,7 @@
 ---
 title: "アプリ保護ポリシーとは"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: このトピックでは、Microsoft Intune のアプリ保護ポリシーで会社のデータを保護する方法について説明します。"
+titleSuffix: Intune on Azure
+description: "このトピックでは、Microsoft Intune のアプリ保護ポリシーで会社のデータを保護する方法について説明します。&quot;"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -16,10 +16,10 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 01f77e3511785d2c8da2edcd92df809b3b7e73e7
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e6b6664dee5e8533e1cad76a06c377e090f31086
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 05/23/2017
 # <a name="what-are-app-protection-policies"></a>アプリ保護ポリシーとは
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune のアプリ保護ポリシーは、会社のデータを保護し、データ損失を防ぐために役立ちます。
 

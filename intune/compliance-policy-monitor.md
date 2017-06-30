@@ -1,7 +1,7 @@
 ---
 title: "Intune デバイスのコンプライアンス対応ポリシーの監視"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: デバイスのコンプライアンス対応ポリシーを監視する方法について説明します。"
+titleSuffix: Intune on Azure
+description: "デバイスのコンプライアンス対応ポリシーを監視する方法について説明します。&quot;"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -16,10 +16,10 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9c57a45ed93b12c3b9fd9635bfa1aec465f63bbc
+ms.sourcegitcommit: db17387360e5d40cd19613266aec153f01bdaedc
+ms.openlocfilehash: 6d0105e49bac2af0c241fe9203c411ef7f9e7d76
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/15/2017
 
 
 ---
@@ -122,8 +122,6 @@ Intune に登録されたすべてのデバイスの集約されたコンプラ�
     -   エラー
 
 **[更新]** ボタンをクリックすると、フライアウトが閉じ、選択したフィルター条件に従って結果が更新されます。
-
-![[フィルター] の [更新] ボタン](./media/idc-5.png)
 
 ##### <a name="device-details"></a>デバイスの詳細
 

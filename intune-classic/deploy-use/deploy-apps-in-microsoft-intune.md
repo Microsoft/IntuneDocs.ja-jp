@@ -1,5 +1,5 @@
 ---
-title: "アプリを展開する方法 | Microsoft Docs"
+title: "アプリを展開する方法"
 description: "このトピックの情報を使用して、Microsoft Intune でアプリを展開できます。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 7451b1872a848ac322db4ec485564f2ebf983f0d
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: f684a1b8d74f7625d3262d4f02eb9841a203e883
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 # <a name="deploy-apps-in-microsoft-intune"></a>Deploy apps in Microsoft Intune (Microsoft Intune でアプリを展開する)

@@ -1,5 +1,5 @@
 ---
-title: "Skycure Mobile Threat Defense コネクター | Microsoft Docs"
+title: "Skycure Mobile Threat Defense コネクター"
 description: "Skycure Mobile Threat Defense コネクターと Intune を使用して、デバイス、ネットワーク、アプリケーションのリスクを基にして会社のリソースへのアクセスを保護します。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 15b00957f694863bb10ee32162eb20fc39bcda88
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: d0b401babf356e44479229c3bea27c956926a6f9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -119,7 +119,7 @@ Intune では、Skycure との統合に 2 つのモードがあります。
 
 Intune と Skycure の統合は次の手順で行います。
 
-1.  Azure Active Directory シングル サインオン (SSO) を使用するように Skycure を構成する
+1.  [Azure Active Directory シングル サインオン (SSO) を使用するように Skycure を構成する](/intune-classic/deploy-use/configure-skycure-to-use-azure-active-directory-single-sign-on)
 
 2.  [Skycure iOS アプリ構成ポリシーをダウンロードする](/intune-classic/deploy-use/download-skycure-ios-app-configuration-policy)
 

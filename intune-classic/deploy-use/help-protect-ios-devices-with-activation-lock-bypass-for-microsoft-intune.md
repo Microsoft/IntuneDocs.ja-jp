@@ -1,5 +1,5 @@
 ---
-title: "デバイスでの iOS アクティブ化ロックの管理 | Microsoft Docs"
+title: "デバイスでの iOS アクティブ化ロックを管理する"
 description: "Microsoft Intune では、iOS 7.1 以降向けの iPhone を探すアプリの機能である iOS のアクティブ化ロックを管理できます。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 22ccccefae44190ffb2d65bdf475eaef1f9b8bd2
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3695e4c047edd9b788768db36184460f0e27d3bc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

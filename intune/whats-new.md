@@ -1,12 +1,12 @@
 ---
-title: "Microsoft Intune プレビューの新機能"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビューの新機能を確認する"
+title: "Microsoft Intune の新機能"
+titleSuffix: Intune on Azure
+description: "Intune Azure Portal の新機能を確認する"
 keywords: 
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/29/2017
+ms.date: 06/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,272 +16,192 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8d36543aac7eb441d99fb4917d7d25b3dc553da6
+ms.sourcegitcommit: 73b43084c28436cb8a7e866dcee2d52694c60f5c
+ms.openlocfilehash: 1a3069e128e25f4f0f5df7cc90392055729134fa
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/16/2017
 
 ---
 
-# <a name="whats-new-in-the-microsoft-intune-preview"></a>Microsoft Intune プレビューの新機能
+# <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-パブリック プレビューの状況や、新しく追加された新機能に関する情報は、こちらで公開します。
+週ごとにまとめた、Microsoft Intune の新機能をご覧ください。 [今後の変更](#whats-coming)、サービスに関する[重要なお知らせ](#notices)、[過去のリリース](whats-new-archive.md)に関する情報も確認できます。
 
 > [!Note]
-> Azure Portal プレビューについて、このページに記載されている変更が展開されます。 ただし、Intune サービスの更新方法により、変更はすぐに入手できない場合があります。  新しいポータル機能を入手できるようになる前に、サービスのいくつかのコンポーネントを順次更新する必要があります。 今後、今月ロールアウトされる変更を随時ご確認ください。
+> これらの機能の多くは、最終的に Configuration Manager とのハイブリッド環境でサポートされるようになります。 最新のハイブリッド機能の詳細については、[ハイブリッド環境の新機能に関するページ](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management)を参照してください。
 
-## <a name="april-2017"></a>2017 年 4 月
+## <a name="week-of-june-12-2017"></a>2017 年 6 月 12 日の週
 
-### <a name="support-for-managing-the-apple-classroom-app"></a>Apple Classroom アプリの管理のサポート
+### <a name="new-menu-action-to-easily-remove-company-portal---1164569--"></a>ポータル サイトを簡単に削除できるアクション メニューの追加<!--1164569-->
+Android 用ポータル サイト アプリでは、ユーザーからのフィードバックに基づき、デバイスからポータル サイトの削除を開始できる新しいアクション メニューが追加されました。 この操作では Intune の管理対象からデバイスが削除されるため、ユーザーはデバイスからアプリを削除できるようになります。 これらの変更については、[Android エンド ユーザー向けドキュメント](/intune-user-help/unenroll-your-device-from-intune-android)の[アプリ UI の新機能](whats-new-app-ui.md)に関するページで確認できます。
 
-iPad デバイスで iOS Classroom アプリを管理できるようになりました。 クラスと学生の正しいデータで教師の iPad に Classroom アプリをセットアップした後、アプリを使って制御できるように、クラスに登録されている学生の iPad を構成します。
-詳しくは、「[Configure iOS education settings](education-settings-configure-ios.md)」 (iOS の教育設定を構成する) をご覧ください。
+### <a name="improvements-to-app-syncing-with-windows-10-creators-update---676505--"></a>Windows 10 Creators Update とアプリを同期する機能の強化 <!--676505-->
 
-### <a name="support-for-managed-configuration-options-for-android-apps----621621---"></a>Android アプリ向けの管理対象構成オプションのサポート<!-- 621621 -->
+Windows 10 用ポータル サイト アプリでは、Windows 10 Creators Update (バージョン 1703) がインストールされているデバイスのアプリ インストール要求の同期が自動的に開始されるようになりました。 "同期保留中" 状態中、アプリ インストールが止まる問題を減らします。 また、ユーザーはアプリ内から同期を手動で開始できます。 
 
-管理対象構成オプションをサポートする Play ストアの Android アプリを、Intune で構成できるようになりました。  この機能は、アプリによってサポートされる構成値の一覧を表示できるようにし、値を構成できるガイド付きの使いやすい UI を提供します。
+## <a name="week-of-june-5-2017"></a>2017 年 6 月 5 日の週
 
-### <a name="new-android-policy-for-complex-pins----722069---"></a>複雑な暗証番号 (PIN) に対する新しい Android ポリシー <!-- 722069 -->
+### <a name="microsoft-intune-and-conditional-access-admin-consoles-are-generally-available"></a>Microsoft Intune 管理コンソールと条件付きアクセス管理コンソールの一般提供開始
 
-Android 5.0 以降を搭載しているデバイスの Android デバイス プロファイルに、数値複素数タイプの必須[パスワード](device-restrictions-android.md#password)を設定できるようになりました。  反復する値や連続する値 (1111 や 1234 など) を含む暗証番号 (PIN) をデバイスのユーザーが作成しないようにするには、この設定を使います。
+Azure の新しい Intune 管理コンソールと、条件付きアクセス管理コンソールの一般提供開始が発表されました。 Azure から Intune を利用することで、Intune MAM および MDM のすべての機能を統合された 1 つの管理者エクスペリエンスで管理し、Azure AD のグループとターゲットを利用できるようになりました。 Azure の条件付きアクセスにより、Azure AD と Intune の豊富な機能が一元化されたコンソールに統合されます。 また管理者エクスペリエンスから Azure プラットフォームに移動して、最新のブラウザーを使用できます。
 
-### <a name="additional-support-for-android-for-work-devices"></a>Android for Work デバイスの追加サポート
+Intune は、**[プレビュー]** ラベルが外されて Azure コンソール (portal.azure.com) に表示されるようになりました。
 
-- **パスワードと仕事用プロファイルの設定を管理する** <!-- 612808 -->
+メッセージ センターの一連のメッセージのうち、グループを移行できるようにお客様の対応をお願いするメッセージを受信された場合を除き、現時点で既存のお客様にしていただくことはありません。 こちらのバグにより、移行に時間がかかることをお知らせする通知がメッセージ センターから送信されている場合もあります。 Microsoft では、影響を受けたユーザーを移行する作業に引き続き取り組んでまいります。
 
-  この新しい Android for Work デバイス制限ポリシーにより、管理対象の Android for Work デバイスで、パスワードと仕事用プロファイルの設定を管理できるようになりました。
+### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios"></a>iOS 用ポータル サイト アプリのアプリ タイルを改善
+ポータル サイトに設定したブランド カラーが反映されるよう、ホーム ページのアプリ タイルのデザインを一新しました。 詳細については、[アプリ UI の新機能](whats-new-app-ui.md)に関するページをご覧ください。
 
-- **仕事用プロファイルと個人プロファイル間でのデータ共有を許可する** <!-- 1045102 -->
+### <a name="account-picker-now-available-for-the-company-portal-app-for-ios"></a>iOS 用ポータル サイト アプリでアカウント選択の提供を開始
+iOS デバイスのユーザーが、職場または学校アカウントを使用して別の Microsoft アプリにサインインしているときに、ポータル サイトにサインインしようとすると、新しいアカウントの選択が表示される場合があります。 詳細については、[アプリ UI の新機能](whats-new-app-ui.md)に関するページをご覧ください。
 
-この Android for Work デバイス制限プロファイルには、仕事用プロファイルと個人用プロファイルでのデータ共有の設定ができる新しいオプションが用意されました。
+## <a name="week-of-may-29-2017"></a>2017 年 5 月 29 日の週
 
-- **仕事用プロファイルと個人プロファイルの間でのコピーと貼り付けを制限する** <!-- 1046094 -->
+### <a name="change-your-mdm-authority-without-unenrolling-managed-devices---1103950--"></a>管理対象デバイスの登録を解除せず、MDM 機関を変更する <!--1103950-->
 
-  Android for Work デバイス用の新しいカスタム デバイス プロファイルでは、仕事用アプリと個人用アプリの間でのコピーと貼り付け操作を許可するかどうかを制限できます。
+Microsoft サポートに問い合わせずに、また、既存の管理されたデバイスの登録解除と再登録を行わずに MDM 機関を変更できるようになりました。 Configuration Manager コンソールで、[Configuration Manager に設定]\(ハイブリッド\) から [Microsoft Intune]\(スタンドアロン\) に、またはその逆に [MDM 機関を変更](/sccm/mdm/deploy-use/change-mdm-authority)できます。 
 
-詳細については、[Android for Work 用のデバイスの制限](device-restrictions-android-for-work.md)に関するページをご覧ください。
 
-### <a name="assign-lob-apps-to-ios-and-android-devices----1057568---"></a>iOS デバイスと Android デバイスに LOB アプリを割り当てる <!-- 1057568 -->
+### <a name="improved-notification-for-samsung-knox-startup-pins---1087143--"></a>Samsung KNOX 起動 PIN の通知機能強化 <!--1087143-->
+暗号化に対応する目的でエンド ユーザーが Samsung KNOX デバイスに起動 PIN を設定する必要があるとき、エンド ユーザーに表示される通知をタップすると、設定アプリ内の設定場所に移動します。  以前は、エンド ユーザーは通知からパスワード変更画面に進むことができました。
 
-[iOS](lob-apps-ios.md) 用 (.ipa ファイル) と [Android](lob-apps-android.md) 用 (.apk ファイル) の基幹業務 (LOB) アプリを、ユーザーまたはデバイスに割り当てることができるようになりました。
 
-###  <a name="new-device-policies-for-ios----723774-723815-723826-723830---"></a>iOS 用の新しいデバイス ポリシー <!-- 723774, 723815, 723826, 723830 -->
+### <a name="device-enrollment"></a>デバイスの登録
 
-- **ホーム画面のアプリ** - [iOS デバイスのホーム画面](home-screen-settings-ios.md)に表示されるアプリを制御します。 このポリシーは、ホーム画面のレイアウトを変更しますが、管理者によって指定されたインストールされていないアプリの展開は行いません。
+#### <a name="apple-school-manager-asm-support-with-shared-ipad----748864-770395--"></a>共有 iPad での Apple School Manager (ASM) のサポート <!-- 748864, 770395-->
 
-- **AirPrint デバイスへの接続** - iOS デバイスのエンド ユーザーが接続できる [AirPrint デバイス](air-print-settings-ios-macos.md) (ネットワーク プリンター) を制御します。
+Intune では、Apple Device Enrollment Program の代わりに Apple School Manager (ASM) を使用できるようになりました。すぐに iOS デバイスを登録できます。 共有 iPad で Classroom アプリを使用するには ASM オンボードが必要です。これは、Microsoft School Data Sync (SDS) 経由で ASM から Azure Active Directory へのデータ同期を有効にする際にも必要です。 詳細については、「[Enable iOS device enrollment with Apple School Manager (Apple School Manager での iOS デバイス登録の有効化)](apple-school-manager-set-up-ios.md)」をご覧ください。
 
-- **AirPlay デバイスへの接続** - iOS デバイスのエンド ユーザーが接続できる [AirPlay デバイス](airplay-settings-ios.md) (Apple TV など) を制御します。
+> [!NOTE]
+> 共有 iPad で Classroom アプリを使用できるように構成するには、Azure に iOS 向けの Education の構成が必要ですが、現時点では提供されていません。  この機能は、近日中に追加される予定です。
 
-- **ロック画面のカスタム メッセージ** - ユーザーの iOS デバイスのロック画面に表示されるカスタム メッセージを構成して、既定のメッセージと置き換えます。 詳細については、「[行えるデバイス アクション](device-management.md#available-device-actions)」をご覧ください。
+### <a name="device-management"></a>デバイス管理
 
+#### <a name="provide-remote-assistance-to-android-devices-using-teamviewer----675418---"></a>TeamViewer を利用して Android デバイスに リモート アシスタンスを提供<!-- 675418 -->
 
-### <a name="restrict-push-notifications-for-ios-apps----723767---"></a>iOS アプリのプッシュ通知を制限する <!-- 723767 -->
+Intune では、別売りの [TeamViewer](https://www.teamviewer.com) ソフトウェアを利用して、Android デバイスを使用するユーザーにリモート アシスタンスを提供できるようになりました。 詳細については、「[Provide remote assistance for Intune managed Android devices (Intune 管理対象の Android デバイスにリモート アシスタンスを提供)](device-profile-android-teamviewer.md)」をご覧ください。
 
-Intune のデバイス制限プロファイルでは、iOS デバイスに対して次の[通知設定](app-notification-settings-ios.md)を構成できるようになりました。
+### <a name="app-management"></a>アプリ管理
 
-- 指定したアプリの通知を完全に有効または無効にします。
-- 指定したアプリの通知センターでの通知を有効または無効にします。
-- アラートの種類を、**なし**、**バナー**、または**モーダル アラート**に指定します。
-- このアプリに対してバッジを許可するかどうかを指定します。
-- 通知サウンドを許可するかどうかを指定します。
+#### <a name="new-app-protection-policies-conditions-for-mam----679864---"></a>MAM の新しいアプリ保護ポリシー条件 <!-- 679864 -->
 
-### <a name="configure-ios-apps-to-run-in-single-app-mode-autonomously----737837---"></a>単一アプリ モードで自律的に実行するように iOS アプリを構成する<!-- 737837 -->
+登録ユーザーなしで、次のポリシーを強制する MAM の要件を設定できるようになりました。
 
-Intune のデバイス プロファイルを使って、[自律的シングル App モード](device-restrictions-ios.md#autonomous-single-app-mode-supervised-only)で指定したアプリを実行するように iOS デバイスを構成できるようになりました。 このモードを構成した場合、指定したアプリが実行されると、デバイスはそのアプリだけを実行できるようにロックされます。 たとえば、ユーザーがデバイスでテストを受けられるようにアプリを構成するような場合です。 アプリのアクションが完了した場合、または管理者がこのポリシーを削除した場合、デバイスは通常の状態に戻ります。
+- アプリケーションの最小バージョン
+- オペレーティング システムの最小バージョン
+- 対象アプリケーションの最小 Intune APP SDK バージョン (iOS のみ)
 
-### <a name="configure-trusted-domains-for-email-and-web-browsing-on-ios-devices----723765---"></a>iOS デバイスでメールと Web ブラウザー用の信頼されたドメインを構成する <!-- 723765 -->
+この機能は、Android と iOS の両方で使うことができます。 Intune は、OS プラットフォーム バージョン、アプリケーション バージョン、Intune APP SDK の最小バージョン強制に対応しています。 iOS の場合、SDK が統合されているアプリケーションでも SDK レベルで最小バージョン強制を設定できます。 アプリ保護ポリシーの最小要件が上述の 3 つの異なるレベルで満たされていない場合、ユーザーは対象アプリケーションにアクセスできません。 この時点で、ユーザーはアカウントを削除するか (複数 ID アプリケーションの場合)、アプリケーションを閉じるか、OS またはアプリケーションのバージョンを更新できます。
 
-iOS デバイス制限プロファイルから、次の[ドメイン設定](device-restrictions-ios.md#domains)を構成できるようになりました。
+また、OS またはアプリケーションのアップグレードを推奨するブロック不可の通知を表示するように追加設定することもできます。 この通知は閉じて、アプリケーションを普段どおり使用できます。
 
-- **[マークされていないメール ドメイン]** - ユーザーが送信または受信するメールのうち、ここで指定したドメインと一致しないものは、信頼されていないメールとしてマークされます。
+詳細については、「[iOS アプリ保護ポリシー設定](app-protection-policy-settings-ios.md)」と「[Android アプリ保護ポリシー設定](app-protection-policy-settings-android.md)」をご覧ください。
 
-- **[管理された Web ドメイン]** - ここで指定した URL からダウンロードされたドキュメントは、管理されているものと見なされます (Safari のみ)。  
+#### <a name="configure-app-configurations-for-android-for-work----621621---"></a>Android for Work 用のアプリ構成の設定<!-- 621621 -->
+ストアの一部の Android アプリは管理対象の構成オプションをサポートしているため、IT 管理者は作業プロファイルでアプリの実行方法を制御できます。 Intune では、Intune ポータルからアプリがサポートする構成を表示し、構成デザイナーまたは JSON エディターを使用してこれらの構成を設定できるようになりました。 詳細については、[Android for Work 用のアプリ構成の使用](app-configuration-policies-use-android.md)に関するページをご覧ください。
 
-- **[Safari パスワードの自動入力ドメイン]** - ユーザーは、ここで指定したパターンに一致する URL からのパスワードのみを Safari に保存できます。 この設定を使うには、デバイスが監視モードであり、複数ユーザー用に構成されていない必要があります。 (iOS 9.3 以降)
+#### <a name="new-app-configuration-capability-for-mam-without-enrollment----677969---"></a>登録なしで利用できる MAM の新しいアプリ構成機能<!-- 677969 -->
 
+登録チャネルがなくても MAM からアプリ構成ポリシーを作成できるようになりました。 これは、モバイル デバイス管理 (MDM) のアプリ構成で使用できるアプリ構成ポリシーと同等の機能です。 登録せずに MAM を使用してアプリを構成する例については、「[Manage Internet access using Managed browser policies with Microsoft Intune (Microsoft Intune と Managed Browser のポリシーを使用したインターネット アクセスの管理)](app-configuration-managed-browser.md)」をご覧ください。
 
-### <a name="vpp-apps-available-in-ios-company-portal----748782---"></a>iOS ポータル サイトで使用できる VPP アプリ <!-- 748782 -->
+#### <a name="configure-allowed-and-blocked-url-lists-for-the-managed-browser----682960---"></a>Managed Browser で許可される URL とブロックされる URL 一覧の構成<!-- 682960 -->
 
-**利用可能な**インストールとして、iOS ボリューム購入 (VPP) アプリをエンド ユーザーに割り当てられるようになりました。 エンド ユーザーがアプリをインストールするには、Apple ストア アカウントが必要です。
+Azure Portal のアプリ構成設定を使用して、Intune Managed Browser で許可またはブロックされるドメインおよび URL の一覧を構成できるようになりました。 これらの設定は、管理されたデバイスで使用されているか、管理されていないデバイスで使用されているかに関係なく構成できます。 詳細については、「[Manage Internet access using Managed browser policies with Microsoft Intune (Microsoft Intune と Managed Browser のポリシーを使用したインターネット アクセスの管理)](app-configuration-managed-browser.md)」をご覧ください。
 
-### <a name="synchronize-ebooks-from-apple-vpp-store----800878---"></a>Apple VPP ストアから電子ブックを同期する <!-- 800878 -->
+#### <a name="app-protection-policy-helpdesk-view----1069473---"></a>アプリ保護ポリシー ヘルプデスクのビュー<!-- 1069473 -->
 
-Intune と、Apple ボリューム購入プログラム ストアから購入した[本を同期](vpp-apps-ios.md)し、ユーザーに割り当てることができるようになりました。
+IT ヘルプデスクのユーザーは、[トラブルシューティング] ブレードで、ユーザー ライセンスの状態と、ユーザーに割り当てられているアプリのアプリ保護ポリシーの状態を確認できるようになりました。 詳細については、[トラブルシューティング](./help-desk-operators.md)に関するページをご覧ください。
 
-### <a name="multi-user-management-for-samsung-knox-standard-devices----971988---"></a>Samsung KNOX Standard デバイスのマルチ ユーザー管理 <!-- 971988 -->
+### <a name="device-configuration"></a>デバイス構成
 
-Samsung KNOX Standard を実行するデバイスが、Intune による[マルチ ユーザー管理](android-enroll.md)のサポート対象になりました。 つまり、エンド ユーザーは Azure Active Directory の資格情報を使ってデバイスのサインインとサインアウトを行うことができ、デバイスは使用中かどうかに関わらず一元管理されます。  サインインしたエンド ユーザーはアプリにアクセスでき、適用されるポリシーをさらに受け取ります。 ユーザーがサインアウトすると、すべてのアプリ データがクリアされます。
+#### <a name="control-website-visits-on-ios-devices----723832---"></a>iOS デバイスの Web サイト アクセスの制御<!-- 723832 -->
 
-### <a name="additional-windows-device-restriction-settings----818566---"></a>追加の Windows デバイス制限設定 <!-- 818566 -->
+iOS デバイスのユーザーがアクセスできる Web サイトを次の 2 つの方法を使って制御できるようになりました。
 
-追加の Edge ブラウザー サポート、デバイス ロック画面のカスタマイズ、スタート メニューのカスタマイズ、Windows スポットライト検索セットの壁紙、プロキシ設定など、追加の [Windows デバイス制限設定](device-restrictions-windows-10.md)のサポートが追加されました。
+- Apple の組み込み Web コンテンツ フィルターを使って、許可される URL またはブロックされる URL を追加します。
 
-### <a name="multi-user-support-for-windows-10-creators-update----822547---"></a>Windows 10 Creators Update のマルチユーザー サポート <!-- 822547 -->
+- Safari ブラウザーによるアクセスを許可する Web サイトを指定します。 指定した各サイトについて、Safari にブックマークが作成されます。
 
-Windows 10 Creators Update を実行し Azure Active Directory ドメインに参加しているデバイスの[マルチユーザー管理](windows-enroll.md)のサポートが追加されました。 つまり、異なる標準ユーザーが Azure AD 資格情報でデバイスにログオンすると、ユーザー名に割り当てられているすべてのアプリとポリシーを受け取ります。 現時点では、アプリのインストールのようなセルフサービスのシナリオにポータル サイトは使用できません。
+詳細については、「[Web content filter settings for iOS devices (iOS デバイス用の Web コンテンツ フィルター設定)](web-content-filter-settings-ios.md)」をご覧ください。
 
-### <a name="fresh-start-for-windows-10-pcs---1004830---"></a>Windows 10 PC の Fresh Start <!-- 1004830 -->
+#### <a name="preconfigure-device-permissions-for-android-for-work-apps----621614---"></a>Android for Work アプリのデバイス アクセス許可の事前構成 <!-- 621614 -->
 
-Windows 10 PC で、新しい [Fresh Start デバイス アクション](device-management.md#available-device-actions)が使用できるようになりました。  このアクションを発行すると、PC にインストールされたすべてのアプリが削除され、PC は Windows の最新バージョンに自動的に更新されます。 この機能は、新しい PC に付属することの多い事前インストール済み OEM アプリを削除するのに使うことができます。 このデバイス アクションを発行するときにユーザー データを保持するかどうかを構成できます。
+Android for Work デバイスの作業プロファイルに展開したアプリの場合、個々のアプリのアクセス許可状態を構成できるようになりました。  既定では、場所やデバイス カメラへのアクセスなど、デバイスのアクセス許可を必要とする Android アプリはアクセス許可の承諾または拒否をユーザーに求めます。  たとえば、アプリでデバイスのマイクが使用される場合、そのマイクを使用するアクセス許可をアプリに与えるようにエンド ユーザーに求められます。 この機能を利用すると、エンド ユーザーの代わりにアクセス許可を定義できます。  アクセス許可は、a) ユーザーに通知することなく自動的に拒否する、b) ユーザーに通知することなく自動的に承諾する、c) 承諾または拒否をユーザーに求めるのいずれかに構成できます。 詳細については、「[Microsoft Intune での Android for Work デバイスの制限設定](device-restrictions-android-for-work.md)」をご覧ください。
 
-### <a name="additional-windows-10-upgrade-paths----903672---"></a>Windows 10 の追加アップグレード パス <!-- 903672 -->
+#### <a name="define-app-specific-pin-for-android-for-work-devices----728976-1102534---"></a>Android for Work デバイスのアプリ固有 PIN を定義する <!-- 728976, 1102534 -->
 
-以下のエディションの Windows 10 にも、[エディション アップグレード ポリシーの作成によりデバイスをアップグレード](edition-upgrade-configure-windows-10.md)できるようになりました。
+管理者は、Android for Work デバイスとして管理されている Android 7.0 以上のデバイスの作業プロファイルで、作業プロファイルのアプリにのみ適用されるパスコード ポリシーを定義できます。  次のオプションがあります。
 
-- Windows 10 Professional
-- Windows 10 Professional N
-- Windows 10 Professional Education
-- Windows 10 Professional Education N
+- デバイス全体のパスコード ポリシーだけを定義する - これは、デバイス全体のロックを解除するためにユーザーが使用しなければならないパスコードです。
+ 作業プロファイルのパスコード ポリシーだけを定義する - 作業プロファイルのアプリを起動するたびに、ユーザーにパスコードの入力が求められます。
+- デバイスと作業プロファイル ポリシーの両方を定義する - IT 管理者はデバイスのパスコード ポリシーと作業プロファイルのパスコード ポリシーをいずれも異なる強度で定義できます。たとえば、デバイスのロック解除に 4 桁の PIN を要求し、作業アプリの起動に 6 桁の PIN を要求します。
 
-### <a name="bulk-enroll-windows-10-devices----747607---"></a>Windows 10 デバイスを一括登録する <!-- 747607 -->
+詳細については、「[Microsoft Intune での Android for Work デバイスの制限設定](device-restrictions-android-for-work.md)」をご覧ください。
 
-Windows 構成デザイナー (WCD) で Azure Active Directory と Intune に Windows 10 Creators Update を実行する多数のデバイスを参加させることができるようになりました。 Azure AD テナントの [一括 MDM 登録](windows-bulk-enroll.md) を有効にするには、Windows 構成デザイナーを使用して Azure AD テナントにデバイスを参加させるプロビジョニング パッケージを作成し、一括登録と管理を行う会社所有のデバイスにパッケージを適用します。 パッケージがデバイスに適用されると、デバイスは Azure AD に参加し、Intune に登録され、Azure AD ユーザーがログオンできる状態になります。  Azure AD ユーザーはこれらのデバイス上の標準ユーザーであり、割り当て済みのポリシーと必須アプリを受け取ります。 現時点では、セルフサービスとポータル サイトのシナリオはサポートされていません。
+> [!NOTE]
+> この機能は Android 7.0 以降でのみ利用できます。  既定では、エンド ユーザーは別々に定義された 2 つの PIN を利用できます。あるいは、定義された 2 つの PIN のうちの強いほうを選択できます。
 
-### <a name="new-mam-settings-for-pin-and-managed-storage-locations----581122-736644---"></a>暗証番号 (PIN) および管理対象記憶域の場所に対する新しい MAM 設定<!-- 581122, 736644 -->
+#### <a name="new-settings-for-windows-10-devices----978585---"></a>Windows 10 デバイスの新しい設定<!-- 978585 -->
 
-モバイル アプリケーション管理 (MAM) シナリオに役立つ 2 つの新しいアプリ設定が使用できるようになりました。
+Microsoft は、無線ディスプレイ、デバイス検出、タスク切り替え、SIM カード エラー メッセージなどの機能を制御する新しい [Windows デバイス制限設定](device-restrictions-windows-10.md)を追加しています。
 
-- **[Disable app PIN when device PIN is managed (デバイスの PIN が管理されるときはアプリの PIN を無効にする)]** - 登録されたデバイスにデバイス暗証番号 (PIN) が存在するかどうかを検出し、存在する場合は、アプリ保護ポリシーによってトリガーされるアプリ PIN をバイパスします。 この設定を使うと、登録されたデバイスで MAM が有効なアプリケーションを開くユーザーに対して表示される PIN 要求の回数を減らすことができます。 この機能は、Android と iOS の両方で使うことができます。
+#### <a name="updates-to-certificate-configuration----918991-and-823198---"></a>証明書の構成の更新<!-- 918991 and 823198 -->
 
-- **[会社のデータを保存できるストレージ サービスの選択]** - 会社のデータを保存する記憶域の場所を指定できます。 ユーザーは選択したストレージ ロケーション サービスに保存できます。つまり、表示されていない他のすべてのストレージ ロケーション サービスはブロックされます。
+SCEP 証明書プロファイルを作成するときに、**[サブジェクト名の形式]**で、**[カスタム]** オプションを iOS、Android、および Windows デバイスでご利用いただけます。 今回の更新までは、**[カスタム]** フィールドを使用できるのは iOS デバイスだけでした。 詳細については、「SCEP 証明書プロファイルを作成する方法」(certificates-scep-configure.md#how-to-create-a-scep-certificate-profile) をご覧ください。
 
-  サポートされるストレージ ロケーション サービスの一覧は次のとおりです。
+PKCS 証明書プロファイルを作成するときに、**[サブジェクトの別名]** で、**[Custom Azure AD attribute]\(Azure AD のカスタム属性\)** をご使用いただけます。 **[Custom Azure AD attribute]\(Azure AD のカスタム属性\)** を選択すると、**[部門]** オプションが使用できます。 詳細については、「PKCS 証明書プロファイルを作成する方法」(certficates-pfx-configure.md#how-to-create-a-pkcs-certificate-profile) をご覧ください。
 
-  - OneDrive
-  - Business SharePoint Online
-  - ローカル ストレージ
+#### <a name="configure-multiple-apps-that-can-run-when-an-android-device-is-in-kiosk-mode----662059---"></a>Android デバイスがキオスク モードのときに実行できる複数アプリの構成<!-- 662059 -->
 
-### <a name="help-desk-troubleshooting-portal----907448---"></a>ヘルプ デスクのトラブルシューティング ポータル<!-- 907448 -->
+これまでは、Android デバイスがキオスク モードのときに実行できるアプリは 1 つしか設定できませんでした。 アプリ ID やストアの URL を使用するか、すでに管理している Android アプリを選択して、複数のアプリを設定できるようになりました。 詳細については、[キオスク モードの設定](device-restrictions-android.md#kiosk)に関するページをご覧ください。
 
-新しい[トラブルシューティング ポータル](help-desk-operators.md)を使用すると、ヘルプ デスクと Intune 管理者は、ユーザーと彼らのデバイスを表示して、Intune の技術的な問題を解決するタスクを実行できます。
 
-## <a name="march-2017"></a>2017 年 3 月
+## <a name="notices"></a>通知
 
-### <a name="support-for-ios-lost-mode---431695--"></a>iOS 紛失モードのサポート<!--431695-->
+### <a name="ip-addresses-for-intune-updated----1175274---"></a>Intune の IP アドレスの更新<!-- 1175274 -->
 
-iOS 9.3 以降のデバイスについて、Intune で**紛失モード**のサポートが追加されました。 デバイスをロックダウンしてすべての使用を回避し、デバイスのロック画面のメッセージおよび連絡先の電話番号を表示できるようになりました。
+[DNS 名と IP アドレスの更新された一覧](/intune/network-bandwidth-use)を、ファイアウォールのプロキシ設定に使用できます。
 
-エンドユーザーは、管理者が紛失モードを無効にするまで、デバイスのロックを解除することはできません。 紛失モードを有効にした場合、**デバイスを探索する**アクションを使用して、Intune コンソールでマップ上にデバイスの地理的な場所を表示することができます。
+### <a name="use-azure-active-directory-for-conditional-access----967947---"></a>Azure Active Directory で条件付きアクセスを使用<!-- 967947 -->
 
-会社所有の iOS デバイスを DEP で登録し、監視モードに設定している必要があります。
-
-詳細については、「[Microsoft Intune デバイスの管理とは](device-management.md)」を参照してください。
-
-### <a name="improvements-to-device-actions-report---677150--"></a>Device Actions レポートの機能強化 <!--677150-->
-
-Device Actions レポートの機能が強化され、パフォーマンスが向上しました。 さらに、レポートを状態別にフィルター処理できるようになりました。 たとえば、レポートをフィルター処理して、完了したデバイス アクションのみを表示できます。
-
-### <a name="actions-for-non-compliance---730266--"></a>コンプライアンス非対応に対するアクション <!--730266-->
-
-**コンプライアンス非対応に対するアクション**は、コンプライアンス非対応のデバイスに対してアクションを実行できるようにするコンプライアンス ポリシーの新しい機能です。 単一または複数のアクションを指定できます。また、実行する必要があるアクションの期間を指定することもできます。 たとえば、デバイスが非対応になった直後に電子メールで、その非対応デバイスのユーザーに通知することができます。あるいは、非対応デバイスに対して、条件付きアクセスで 3 日間の猶予期間後の企業リソースへのアクセスをブロックすることができます。
-
-### <a name="custom-app-categories---748805--"></a>カスタム アプリのカテゴリ <!--748805-->
-
-Intune に追加するアプリのカテゴリを作成、編集、および割り当てることができるようになりました。 現時点では、カテゴリは英語でのみ指定できます。
-[Intune にアプリを追加する方法](apps-add.md)に関するページを参照してください。
-
-### <a name="assign-lob-apps-to-users-with-unenrolled-devices---748823--"></a>登録していないデバイスを使用しているユーザーに LOB アプリを割り当てる <!--748823-->
-
-デバイスが Intune に登録されているかどうかに関係なく、基幹業務アプリをストアからユーザーに割り当てられるようになりました。 ユーザーのデバイスが Intune に登録されていない場合は、ポータル サイト アプリではなく、ポータル Web サイトに移動してインストールする必要があります。
-
-### <a name="new-compliance-reports---846671--"></a>新しいコンプライアンス レポート <!--846671-->
-
-コンプライアンス レポートにより、会社内のコンプライアンスの状況を表示して、社内のユーザーがコンプライアンス関連の問題に直面したときに迅速にトラブルシューティングできるようになりました。 次の情報を表示できます。
-
-- デバイスの総合的なコンプライアンスの状態
-- 設定別のコンプライアンスの状態
-- ポリシー別のコンプライアンスの状態
-
-これらのレポートを使用して個々のデバイスをドリルダウンし、そのデバイスに影響を与えている特定の設定およびポリシーを確認することもできます。
-
-<!--- You can now create an edition upgrade policy to upgrade devices to the following additional Windows 10 editions:
-
-- Windows 10 Professional
-- Windows 10 Professional N
-- Windows 10 Professional Education
-- Windows 10 Professional Education N --->
+Azure コンソールの Azure Active Directory セクションで条件付きアクセスが使用できるようになりました。Office 365 Exchange Online や SharePoint Online などのクラウド アプリのポリシー設定のための、強力かつ柔軟なフレームワークをご利用いただけます。  クラシックの Intune コンソールの代わりに **[Conditional access in Azure Active Directory]\(Azure Active Directory の条件付きアクセス\)** ブレードを使用して、ポリシーを構成します。 クラシックの Intune コンソールで作成した既存のポリシーは、Azure コンソールで再作成する必要があります。 詳細については、「[Create Azure AD conditional access policies (Azure AD の条件付きアクセス ポリシーを作成する)](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview)」をご覧ください。
 
 ### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Apple 登録シナリオへの直接アクセス <!--951869-->
 
-Intune では、2017 年 1 月以降に作成された Intune アカウントについて、Azure プレビュー ポータルの Enroll Devices ワークロードを使用して、Apple 登録シナリオに直接アクセスできるようになりました。 これまでは、Apple 登録プレビューはクラシックの Intune ポータルのリンクからのみアクセスが可能でした。 2017 年 1 月より前に作成された Intune アカウントの場合は、これらの機能が Azure で利用可能になるまでの間、1 回限りの移行が必要です。 移行スケジュールはまだ発表されていませんが、詳細はできる限り早く発表します。 既存のアカウントでプレビューにアクセスできない場合は、試用アカウントを作成して、新しいエクスペリエンスをテストすることを強くお勧めします。
+Intune では、2017 年 1 月以降に作成された Intune アカウントについて、Azure Portal の Enroll Devices ワークロードを使用して、Apple 登録シナリオに直接アクセスできるようになりました。 これまでは、Apple 登録プレビューはクラシックの Intune ポータルのリンクからのみアクセスが可能でした。 2017 年 1 月より前に作成された Intune アカウントの場合は、これらの機能が Azure で利用可能になるまでの間、1 回限りの移行が必要です。 移行スケジュールはまだ発表されていませんが、詳細はできる限り早く発表します。 既存のアカウントで Azure Portal にアクセスできない場合は、試用アカウントを作成して、新しいエクスペリエンスをテストすることを強くお勧めします。
+
+### <a name="administration-roles-being-replaced-in-azure-portal"></a>Azure Portal で置き換えられる管理ロール
+
+Intune クラシック ポータル (Silverlight) で使用される既存のモバイル アプリケーション管理 (MAM) の管理ロール (共同作成者、所有者、および読み取り専用) は、Intune Azure Portal の新しいロール ベースの管理制御 (RBAC) の完全なセットで置き換えられます。 Azure Portal に移行すると、管理者をこれらの新しい管理ロールに割り当て直す必要があります。 RBAC と新しいロールの詳細については、[Microsoft Intune のロール ベースのアクセス制御](/intune/role-based-access-control)に関する記事を参照してください。
+
+## <a name="whats-coming"></a>今後の更新情報
+
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>すべてのプラットフォームでのポータル サイト アプリのサインイン操作の改善<!--User Story 1132123-->
+
+Android、iOS、Windows 用の Intune ポータル サイト アプリのサインイン エクスペリエンス向上のために、今後数か月間に予定されている変更についてお知らせします。 Azure AD でこの変更が行われ次第、自動的にすべてのプラットフォームでポータル サイト アプリのユーザー エクスペリエンスが一新される予定です。 また、自動生成される一時使用コードを使用して、別のデバイスからポータル サイトにサインインできるようになりました。 これは、資格情報を使用せずにサインインする必要がある場合には特に便利です。
+
+以前のサインイン エクスペリエンス、資格情報を使用した新たなエクスペリエンス、別のデバイスからのエクスペリエンスのスクリーンショットを確認するには、[アプリ UI の新機能](/intune/whats-new-app-ui)に関するページをご覧ください。
+
+### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>変更の計画: Intune で Intune パートナー ポータル エクスペリエンスが変更されます<!-- 1050016 -->
+
+2017 年 5 月中旬のサービス更新で、Intune パートナーのページが manage.microsoft.com から削除されます。  
+
+お客様がパートナーの管理者である場合は、Intune パートナーのページで顧客に代わって閲覧したり、操作したりすることができなくなります。代わりに、Microsoft の他の 2 つのパートナー ポータルのいずれかでサインインする必要があります。
+
+[Microsoft パートナー センター](https://partnercenter.microsoft.com/)と [Microsoft Office 365 パートナー管理センター](https://portal.office.com/)の両方で、管理している顧客アカウントにサインインできます。 パートナーとして前進するために、これらのサイトのいずれかを使用して顧客の管理を行いましょう。
 
 
-## <a name="february-2017"></a>2017 年 2 月
+### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple の要求による Application Transport Security 対応のための更新<!--748318-->
 
-### <a name="ability-to-restrict-mobile-device-enrollment---747600-795782--"></a>モバイル デバイス登録を制限する機能 <!--747600, 795782-->
-Intune では、登録を許可されるモバイル デバイス プラットフォームを制御する新しい登録制限が追加されています。 Intune では、モバイル デバイス プラットフォームが iOS、macOS、Android、Windows、Windows Mobile に分かれています。
+Apple は、Application Transport Security (ATS) の特定の要件を適用すると発表しました。 ATS では、HTTPS 経由で行われるアプリ通信すべてに、より厳格なセキュリティ保護が適用されます。 この変更により、iOS ポータル サイト アプリを使用している Intune ユーザーが影響を受けます。
 
-* モバイル デバイスの登録を制限しても、PC クライアントの登録は制限されません。  
-* iOS と Android のみに、個人所有デバイスの登録をブロックする 1 つの追加オプションがあります。
+Microsoft では、新しい ATS 要件を適用する Apple TestFlight プログラムから、iOS 用ポータル サイト アプリのバージョンを入手できるようにしています。 ATS コンプライアンスをテストできるように、このバージョンを試す場合は、お客様の姓名、電子メール アドレス、および会社名を <a href="mailto:CompanyPortalBeta@microsoft.com?subject=Register to TestFlight ATS Company Portal app">CompanyPortalBeta@microsoft.com</a> に電子メールで送信してください。 詳細については、[Intune サポートのブログ](https://aka.ms/compportalats)をご覧ください。
 
-[この記事](https://docs.microsoft.com/intune-classic/deploy-use/manage-corporate-owned-devices)で説明されているように、IT 管理者が明示的に会社所有と指定しない限り、Intune はすべての新しいデバイスを個人所有としてマークします。
-
-### <a name="view-all-actions-on-managed-devices---677150--"></a>管理対象デバイスのすべての操作を表示 <!--677150-->
-新しい__デバイス操作__レポートには、デバイスでの出荷時の設定にリセットなどのリモート操作を実行したユーザーが表示され、さらにその操作の状態が表示されます。 「[デバイス管理とは](https://docs.microsoft.comdevice-management.md)」を参照してください。
-
-### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>管理されていないデバイスから割り当てられているアプリにアクセス可能 <!--664691-->
-ポータル Web サイトでの設計変更に伴い、iOS と Android ユーザーは、管理されていないデバイスで "登録なしで使用可能" として割り当てられているアプリをインストールできるようになります。 Intune 資格情報を使用して、ユーザーはポータル Web サイトにログインし、割り当てられているアプリの一覧を表示することができます。 "登録なしで使用可能" なアプリのアプリ パッケージは、ポータル Web サイトからダウンロードできます。 この変更は、インストールするために登録が必要なアプリには影響しません。そのようなアプリをインストールする場合は、デバイスの登録が求められます。
-
-### <a name="custom-app-categories---748805--"></a>カスタム アプリのカテゴリ <!--748805-->
-Intune に追加するアプリのカテゴリを作成、編集、および割り当てることができるようになりました。 現時点では、カテゴリは英語でのみ指定できます。
-[Intune にアプリを追加する方法](apps-add.md)に関するページを参照してください。
-
-### <a name="display-device-categories---814654--"></a>デバイス カテゴリを表示する <!--814654-->
-デバイスの一覧に、列としてデバイス カテゴリを表示できるようになりました。 デバイスのプロパティー ブレードのプロパティー セクションからカテゴリを編集することもできます。 [Intune にアプリを追加する方法](apps-add.md)に関するページを参照してください。
-
-### <a name="configure-windows-update-for-business-settings---776716--"></a>ビジネス設定向けの Windows Update の構成<!--776716-->
-
-サービスとしての Windows は、Windows 10 の更新プログラムを提供するための新しい方法です。 Windows 10 以降、すべての新しい機能更新プログラムと品質更新プログラムには、以前の更新プログラムすべての内容が含まれます。 つまり、最新の更新プログラムをインストールしている限り、Windows 10 デバイスが完全に最新の状態であることを把握できます。 以前のバージョンの Windows とは異なり、更新プログラムの一部ではなく全体をインストールすることが必要になります。
-
-Windows Update for Business を使用することで、デバイスのグループに対して個々の更新プログラムを承認する必要がなくなるため、更新プログラム管理エクスペリエンスを簡略化できます。 更新プログラムの展開戦略を構成することで環境内のリスクを引き続き管理でき、さらに Windows Update により更新プログラムが適切なタイミングでインストールされるようになります。 Microsoft Intune では、デバイスでの更新プログラムの設定を構成でき、また更新プログラムのインストールを遅らせることができます。 Intune では更新プログラムは格納されず、更新プログラムのポリシー割り当てのみが格納されます。 デバイスは更新プログラムのため Windows Update に直接アクセスします。**Windows 10 更新プログラム リング**を構成し管理するには Intune を使用します。 更新プログラム リングには、Windows 10 更新プログラムがインストールされるタイミングと方法を構成する設定のグループが含まれています。 詳しくは、「[ビジネス設定向けの Windows Update の構成](windows-update-for-business-configure.md)」をご覧ください。
-
-## <a name="january-2017"></a>2017 年 1 月
-
-### <a name="assign-line-of-business-apps-whether-or-not-devices-are-enrolled---748823--"></a>デバイスの登録に関係なく基幹業務アプリを割り当てられる <!--748823-->
-デバイスが Intune に登録されているかどうかに関係なく、基幹業務アプリをストアからユーザーに割り当てられるようになりました。 ユーザーのデバイスが Intune に登録されていない場合は、ポータル サイト アプリではなく、ポータル Web サイトに移動してインストールする必要があります。 [アプリ管理](app-management.md)に関するページを参照してください。
-
-### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>デバイスが無効か、管理コンソールとデバイスが通信できない問題を解決
-ユーザーのデバイスと Intune の接続が失われるとき、新しいトラブルシューティング手順を指示できます。会社リソースへのアクセスを回復するのに役立ちます。 「[デバイスが無効か、管理コンソールとデバイスが通信できない](enrollment-troubleshoot.md#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them)」を参照してください。
-
-## <a name="december-2016-initial-release"></a>2016 年 12 月 (初期リリース)
-
-### <a name="telecom-expense-management-integration-in-public-preview-of-azure-portal--747605--"></a>Azure Portal のパブリック プレビューでの電気通信経費管理の統合<!--747605-->
-Azure Portal では、サード パーティの電気通信経費管理 (TEM) サービスとの統合のプレビューが始められています。 Intune を使用して、国内およびローミングのデータ使用量を制限できます。 これらの統合は、[Saaswedo](http://www.saaswedo.com) で始まっています。 試用テナントでこの機能を有効にする場合は、[Microsoft サポートにお問い合わせください](https://docs.microsoft.com/intune-classic/troubleshoot/get-support)。
-
-- ストアから iOS、Android、Windows デバイスへのアプリの展開と管理
-- iOS、Android、Windows デバイスへの基幹業務 (LOB) アプリの展開と管理
-- iOS と Windows デバイスへのボリューム購入アプリの展開と管理
-- Android、iOS、Windows デバイス用の Web アプリの展開と管理
-- iOS 管理アプリの構成プロファイル
-- アプリ保護ポリシーの構成、および Intune に登録されていないデバイスへの基幹業務アプリの展開
-- VPN プロファイル、アプリごとの VPN、Wi-Fi、電子メール、証明書プロファイル
-- Compliance ポリシー
-- Azure AD の条件付きアクセス
-- オンプレミス Exchange の条件付きのアクセス
-- デバイスの登録
-- ロールベースのアクセス制御
-
-## <a name="deprecated-features-in-the-azure-portal"></a>Azure Portal の非推奨の機能
-
-### <a name="support-for-row-by-row-review-of-hardware-identifiers"></a>ハードウェア識別子の行単位レビューのサポート
-Azure Portal では、IMEI 番号と Apple シリアル番号のハードウェア識別子に対する行単位のレビューがサポートされません。 従来の Intune コンソールでは、コンマ区切り値 (.csv) ファイルから詳細情報をインポートし、個別のハードウェア識別子の既存の情報を上書きできます。 Azure Portal には、効率的なオプションが 1 つ用意されており、ハードウェア識別子すべての詳細情報を自動的に上書きするか、既存の識別子の新しい詳細情報を無視することができます。
-
-#### <a name="how-this-affects-you"></a>影響
-Azure Portal では、どの International Mobile Equipment Identity (IMEI) デバイスを更新するかを、行単位で決めることができません。 従来の Intune コンソールでは、この機能が引き続きサポートされます。
-
-#### <a name="how-to-get-ready-for-this-change"></a>この変更に対応する方法
-この情報は事前に提供します。これにより、変更の影響を受ける場合に、サポート管理者に知らせることができます。 この変更は、2017 年の前半、Azure Portal への移行と同時に行われる予定です。
-
-
-### <a name="support-for-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Apple DEP での既定の企業デバイス登録プロファイルのサポート
-Azure Portal では、Apple Device Enrollment Program (DEP) デバイス シリアル番号に対して、"既定" の業務用デバイス登録プロファイルがサポートされません。 この機能は、従来の Intune コンソールでは使用できますが、プロファイルが意図せず割り当てられることがないように、今後廃止される予定です。 Azure Portal では、Apple DEP アカウントから同期されたシリアル番号に、業務用デバイスの登録プロファイルが最初に割り当てられることはありません。
-
-#### <a name="how-this-affects-you"></a>影響
-Azure Portal では、すべての Apple デバイスに対して、既定のプロファイル ポリシーを設定することはできません。 従来の Intune コンソールでは、この機能が引き続きサポートされます。
-
-#### <a name="how-to-get-ready-for-this-change"></a>この変更に対応する方法
-この情報は事前に提供します。これにより、変更の影響を受ける場合に、サポート管理者に知らせることができます。 これは、2017 年の前半、Azure Portal への移行と同時に行われる予定です。
+### <a name="see-also"></a>関連項目
+* [Microsoft Intune のブログ](http://go.microsoft.com/fwlink/?LinkID=273882)
+* [クラウド プラットフォームのロードマップ](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [ポータル Web サイトの UI の新機能](whats-new-app-ui.md)
+* [以前の月の新機能](whats-new-archive.md)
 

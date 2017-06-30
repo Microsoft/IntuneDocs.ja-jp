@@ -1,5 +1,5 @@
 ---
-title: "Intune ソフトウェア クライアントを実行する PC のソフトウェア ライセンス契約を管理する | Microsoft Docs"
+title: "Intune ソフトウェア クライアントを実行する PC のソフトウェア ライセンス契約を管理する"
 description: "Intune では、Microsoft ボリューム ライセンス契約で購入したソフトウェアと、他の方法で購入したソフトウェアのライセンス契約情報を追加および管理できます。"
 keywords: 
 author: robstackmsft
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 18fbeb0e5bbf46795a02590a8dce205342a3a357
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: afaeb5b1af35008e6aa778e4391cafeda979bdc0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Microsoft Intune で Windows PC ソフトウェアのライセンス契約を管理する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune を使用すると、Microsoft ボリューム ライセンス契約で購入したソフトウェアのライセンス契約情報を追加して管理できます。 他の方法で購入した Microsoft のソフトウェアまたは Microsoft 以外のソフトウェアも管理できます。 この情報は論理的なグループに分類できます。
 
 > [!IMPORTANT]

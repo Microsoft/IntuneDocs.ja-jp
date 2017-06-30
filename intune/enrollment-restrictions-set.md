@@ -1,12 +1,12 @@
 ---
 title: "Intune で登録制限を設定する"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Intune でプラットフォームごとに登録を制限し、デバイス登録の上限数を設定します。 "
+titleSuffix: Intune on Azure
+description: "Intune でプラットフォームごとに登録を制限し、デバイス登録の上限数を設定します。 &quot;"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d99f7ca5b5e96a7ab113a14d36f0fef474411836
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: b13ec0113096e4efc83463ed09e4c0db7fd7d6e1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
-# <a name="set-enrollment-restrictions"></a>登録制限を設定する 
+# <a name="set-enrollment-restrictions"></a>登録制限を設定する
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 登録を許可するデバイスの種類と最大数を設定することができます。 [登録の制限] ブレードでは、次のことを設定できます。
 
@@ -35,18 +35,16 @@ ms.lasthandoff: 05/23/2017
 
 ## <a name="set-device-type-restrictions"></a>デバイスの種類の制限を設定する
 
-1. Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
+1. Intune ポータルで **[デバイスの登録]** を選択し、**[登録の制限]** を選択します。
 
-2. [Intune] ブレードで **[デバイスの登録]** を選択し、**[登録の制限]** を選択します。
+2. **[デバイスの種類の制限]** で、**[既定]** を選択します。
 
-3. **[デバイスの種類の制限]** で、**[既定]** を選択します。
+3. **[すべてのユーザー]** ブレードで、**[プラットフォーム]** を選択します。
 
-4. **[すべてのユーザー]** ブレードで、**[プラットフォーム]** を選択します。
-
-5. Intune で登録できるようにするプラットフォームに対して、**[許可]** を選択します。 登録できないようにするプラットフォームに対しては、**[ブロック]** を選択します。 プラットフォームは規定で **[許可]** に設定されます。 
+4. Intune で登録できるようにするプラットフォームに対して、**[許可]** を選択します。 登録できないようにするプラットフォームに対しては、**[ブロック]** を選択します。 プラットフォームは規定で **[許可]** に設定されます。
 
     >[!NOTE]
-    >これらの設定は、Intune ソフトウェア クライアントを使って行われる Windows の登録に適用されたり、登録をブロックしたりすることはありません。 これらの設定は、モバイル デバイス管理を使う登録にのみ影響します。 
+    >これらの設定は、Intune ソフトウェア クライアントを使って行われる Windows の登録に適用されたり、登録をブロックしたりすることはありません。 これらの設定は、モバイル デバイス管理を使う登録にのみ影響します。
 
 6. **[保存]** を選択します。
 
@@ -58,9 +56,7 @@ ms.lasthandoff: 05/23/2017
 
 ## <a name="set-device-limit-restrictions"></a>デバイス数の制限を設定する
 
-1. Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-
-2. [Intune] ブレードで **[デバイスの登録]** を選択し、**[登録の制限]** を選択します。
+1. Intune ポータルで **[デバイスの登録]** を選択し、**[登録の制限]** を選択します。
 
 3. **[デバイス数の制限]** で、**[既定]** を選択します。
 

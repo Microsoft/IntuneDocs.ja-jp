@@ -1,5 +1,5 @@
 ---
-title: "Skype for Business Online を保護する | Microsoft Docs"
+title: "Skype for Business Online を保護する"
 description: "条件付きアクセスを使って、Skype for Business Online へのアクセスを保護および制御します。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 46dc5bc7d7b4107b87a41aa8a454453d591d0ef9
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: c2d6a00f99047e4b18821e81da0c36b988e36c2a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

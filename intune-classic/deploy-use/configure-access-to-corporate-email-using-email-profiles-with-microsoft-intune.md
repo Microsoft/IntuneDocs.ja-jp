@@ -1,5 +1,5 @@
 ---
-title: "電子メール プロファイルを使用して会社の電子メールにアクセスする | Microsoft Docs"
+title: "電子メール プロファイルを使用して会社の電子メールにアクセスする"
 description: "電子メール プロファイル設定は、モバイル デバイスの特定の電子メール クライアント用の電子メール アクセス設定を構成するために使用できます。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 21eee53a4e3674dc28b01311a61dda0d71f9f7fa
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 87bf5c96ee29f8a39b875543c4f6a3731f3e604e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -36,11 +36,11 @@ ms.lasthandoff: 05/23/2017
 IT 管理者やユーザーは、代替電子メール クライアント (Android または iOS 向け Microsoft Outlook など) をインストールすることもできます。 これらの電子メール クライアントは電子メール プロファイルに対応していない場合があり、Intune の電子メール プロファイルを使用してセットアップすることはできません。  
 
 電子メール プロファイルを使用して、次のデバイスの種類でネイティブ電子メール クライアントを構成できます。
--    Windows Phone 8.1 以降
--    Windows 10 (デスクトップの場合) および Windows 10 Mobile 以降
--    iOS 8.0 以降
--    Samsung KNOX Standard (4.0 以降)
--    Android (サードパーティ製メール アプリ、ネイティブ メール アプリは個人プロファイルのみ)
+-   Windows Phone 8.1 以降
+-   Windows 10 (デスクトップの場合) および Windows 10 Mobile 以降
+-   iOS 8.0 以降
+-   Samsung KNOX Standard (4.0 以降)
+-   Android (サードパーティ製メール アプリ、ネイティブ メール アプリは個人プロファイルのみ)
 
 デバイスで電子メール アカウントをセットアップするだけでなく、同期する電子メールの数や、デバイスの種類によっては同期するコンテンツの種類をセットアップできます。
 
@@ -85,7 +85,7 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
 
     -   **電子メール プロファイル (Android for Work - Gmail)**
 
-    -    **電子メール プロファイル (Android for Work - Nine Work)**
+    -   **電子メール プロファイル (Android for Work - Nine Work)**
 
     カスタムの電子メール プロファイル ポリシーのみを作成して展開できます。 推奨設定はありません。
 

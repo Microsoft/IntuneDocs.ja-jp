@@ -1,5 +1,5 @@
 ---
-title: "Managed Browser で Web アクセスを管理する |Microsoft Docs"
+title: "Managed Browser で Web アクセスを管理する"
 description: "Managed Browser アプリケーションを展開して、Web 閲覧と他のアプリへの Web データ転送を制限します。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 49ad005846265deb7d4b34b52a1c139e8f61372b
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 89f60e34fd89784ca8ea1fa3999927c7b0bc66e4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/31/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

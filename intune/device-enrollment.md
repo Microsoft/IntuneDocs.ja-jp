@@ -1,12 +1,12 @@
 ---
 title: "Microsoft Intune デバイスの登録とは"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: iOS、Android、Windows デバイスの登録について説明します。"
+titleSuffix: Intune on Azure
+description: "iOS、Android、Windows デバイスの登録について説明します。\""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 57bad4be991b61fe5212d340ab8d89cb6af3b0f7
+ms.sourcegitcommit: b74082a73972c9d72ea399b962c01aafce5ace27
+ms.openlocfilehash: 927e2f21aad4ff39c9351bef68eb510e93410c37
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/28/2017
 
 
 ---
 
 # <a name="what-is-device-enrollment"></a>デバイス登録とは
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 このトピックでは登録について説明します。また、Intune 管理でモバイル デバイスを登録する方法をいくつか紹介します。
 
@@ -37,72 +37,73 @@ Intune にデバイスを登録して、それらのデバイスを管理でき�
 
 ## <a name="overview-of-device-enrollment-methods"></a>デバイスの登録方法の概要
 
-次の表は、Intune の登録方法とサポートされる機能、各方法の要件の一覧です。 また、機能と要件について説明しています。 ここで使用される用語を次に示します。
+以下の表では、Intune の登録方法の概要を、機能と要件とともにまとめています。
+**凡例**
 
-- **ワイプ** - ユーザーがデバイスを登録する前に、デバイスのワイプが必要かどうかを示します。 "ワイプ" という用語は、デバイスを出荷時の設定にリセットし、すべてのデータを削除することを意味します。 詳細については、[デバイスでのフル ワイプまたは選択的ワイプの使用](devices-wipe.md)に関するページを参照してください。
-- **アフィニティ** - デバイスとユーザーを関連付けます。 モバイル アプリケーション管理 (MAM) および会社データへの条件付きアクセスのために必要です。 詳細については、「[ユーザー アフィニティ](device-enrollment-program-enroll-ios.md)」を参照してください。
-- **ロック** - ユーザーが管理メニューから自分のデバイスを登録解除できるかどうかを示します。 ユーザーは、ポータル サイト アプリを使用してすべてのプラットフォームで自分のデバイスを登録解除できます。 ネイティブのオペレーティング システムのメニューでは登録解除ができません。
-
+- **リセットが必要** - デバイスは登録時に工場出荷時の状態にリセットされます。
+- **ユーザー アフィニティ** - デバイスとユーザーを関連付けます。 詳細については、「[ユーザー アフィニティ](device-enrollment-program-enroll-ios.md)」を参照してください。
+- **ロック済み** - ユーザーによるデバイス登録解除を防ぎます。
 
 **iOS の登録方法**
 
-| **方法** |    **ワイプが必要?** |    **アフィニティ**    |    **ロック** | **詳細** |
+| **方法** |  **リセットが必要** |    **ユーザー アフィニティ**   |   **ロック済み** | **詳細** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ|    ○ |    いいえ | 詳細は近日公開予定|
-|**[DEM](#dem)**|    いいえ |いいえ |いいえ    | [詳細情報](device-enrollment-program-enroll-ios.md)|
-|**[DEP](#dep)**|    Yes |    省略可能 |    省略可能|[詳細情報](device-enrollment-program-enroll-ios.md)|
-|**[USB-SA](#usb-sa)**|    Yes |    省略可能 |    いいえ| [詳細情報](apple-configurator-setup-assistant-enroll-ios.md)|
-|**[USB-Direct](#usb-direct)**|    いいえ |    いいえ    | いいえ|[詳細情報](apple-configurator-direct-enroll-ios.md)|
+|**[BYOD](#byod)** | いいえ|    ○ |   いいえ | [詳細情報](./apple-mdm-push-certificate-get.md)|
+|**[DEM](#dem)**|   いいえ |いいえ |いいえ  | [詳細情報](./device-enrollment-program-enroll-ios.md)|
+|**[DEP](#dep)**|   Yes |   省略可能 |  省略可能|[詳細情報](./device-enrollment-program-enroll-ios.md)|
+|**[USB-SA](#usb-sa)**| Yes |   省略可能 |  いいえ| [詳細情報](./apple-configurator-setup-assistant-enroll-ios.md)|
+|**[USB-Direct](#usb-direct)**| いいえ |    いいえ  | いいえ|[詳細情報](./apple-configurator-direct-enroll-ios.md)|
 
 **Windows の登録方法**
 
-| **方法** |    **ワイプが必要?** |    **アフィニティ**    |    **ロック** | **詳細**|
+| **方法** |  **リセットが必要** |    **ユーザー アフィニティ**   |   **ロック済み** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ |    ○ |    いいえ | [詳細情報](windows-enroll.md)|
-|**[DEM](#dem)**|    いいえ |いいえ |いいえ    |[詳細情報](device-enrollment-manager-enroll.md)|
+|**[BYOD](#byod)** | いいえ |   ○ |   いいえ | [詳細情報](windows-enroll.md)|
+|**[DEM](#dem)**|   いいえ |いいえ |いいえ  |[詳細情報](device-enrollment-manager-enroll.md)|
+|**自動登録** | いいえ |○ |いいえ | [詳細情報](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
+|**一括登録** |いいえ |いいえ |いいえ | [詳細情報](./windows-bulk-enroll.md) |
 
 **Android の登録方法**
 
-| **方法** |    **ワイプが必要?** |    **アフィニティ**    |    **ロック** | **詳細**|
+| **方法** |  **リセットが必要** |    **ユーザー アフィニティ**   |   **ロック済み** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ|    ○ |    いいえ | [詳細情報](android-enroll.md)|
-|**[DEM](#dem)**|    いいえ |いいえ |いいえ    |[詳細情報](device-enrollment-program-enroll-ios.md)|
-|**Android for Work**| いいえ | ○ | いいえ| [詳細情報](android-enroll.md) |
+|**[BYOD](#byod)** | いいえ|    ○ |   いいえ | [詳細情報](./android-enroll.md)|
+|**[DEM](#dem)**|   いいえ |いいえ |いいえ  |[詳細情報](./device-enrollment-program-enroll-ios.md)|
+|**Android for Work**| いいえ | ○ | いいえ| [詳細情報](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 
 ## <a name="byod"></a>BYOD
-"Bring your own device" はユーザーがポータル サイト アプリをインストールし、自分のデバイスを登録します。 これにより、ユーザーは会社のネットワークに接続して、ドメインまたは Azure Active Directory に参加できます。 ほとんどのプラットフォームで、多くの COD シナリオのために BYOD 登録を有効にする必要があります。 個人所有の iOS および Android デバイスの登録をブロックすることができます。 その手順については、「[Set device type restrictions](enrollment-restrictions-set.md#set-device-type-restrictions)」 (デバイスの種類の制限を設定する) を参照してください。
+"Bring your own device" のユーザーは、ポータル サイト アプリをインストールして実行し、自分のデバイスを登録します。 このプログラムによって、ユーザーは電子メールなどの会社のリソースにアクセスできます。
 
-## <a name="corporate-owned-devices"></a>企業所有のデバイス
-企業所有のデバイス (COD) は、Azure Portal を利用して管理できます。 iOS デバイスは、Apple が提供するツールを利用して直接登録できます。 管理者またはマネージャーは、デバイス登録マネージャーを使用して、すべてのデバイスの種類を登録できます。 IMEI 番号を持つデバイスを識別し、会社所有としてタグ付けして、COD シナリオで使用することもできます。
+## <a name="corporate-owned-devices"></a>会社所有のデバイス
+会社所有のデバイス (COD) の登録シナリオを次に示します。 iOS デバイスは、Apple が提供するツールを利用して直接登録できます。 管理者またはマネージャーは、デバイス登録マネージャーを使用して、すべてのデバイスの種類を登録できます。 IMEI 番号を持つデバイスを識別し、会社所有としてタグ付けして、COD シナリオで使用することもできます。
 
 ### <a name="dem"></a>DEM
-デバイス登録マネージャー (DEM) は、複数の企業所有のデバイスを登録して管理するために使用される特別なユーザー アカウントです。 作成後は、マネージャーがポータル サイトをインストールし、多数のユーザーがいないデバイスを登録できます。 DEM の詳細については[ここ](device-enrollment-manager-enroll.md)を参照してください。 ([表に戻る](#overview-of-device-enrollment-methods))
+デバイス登録マネージャー (DEM) は、複数の会社所有のデバイスを登録して管理するために使用される特別なユーザー アカウントです。 作成後は、マネージャーがポータル サイトをインストールし、多数のユーザーがいないデバイスを登録できます。 DEM の詳細については[ここ](./device-enrollment-manager-enroll.md)を参照してください。
 
 ### <a name="dep"></a>DEP
-Apple Device Enrollment Program (DEP) 管理では、ポリシーを作成し、DEP で購入および管理されている iOS デバイスに "無線で" 展開できます。 ユーザーが初めてデバイスの電源を入れて iOS Setup Assistant を実行した際に、デバイスが登録されます。 この方法は、**iOS 監視対象**モードをサポートしているので、以下が有効になります。
+Apple Device Enrollment Program (DEP) 管理では、ポリシーを作成し、DEP で購入および管理されている iOS デバイスに "無線で" 展開できます。 ユーザーが初めてデバイスの電源を入れて iOS Setup Assistant を実行した際に、デバイスが登録されます。 この方法は、**iOS 監視対象**モードをサポートしているため、以下の機能が有効になります。
 
-  -    登録のロック
-  -    キオスク モード、およびその他の高度な構成および制限
+  - 登録のロック
+  - キオスク モード、およびその他の高度な構成および制限
 
-iOS 登録の詳細については、以下を参照してください。
+iOS DEP 登録の詳細については、以下をご覧ください。
 
 - [iOS デバイスの登録方法を選択する](enrollment-method-choose-ios.md)
 - [Device Enrollment Program を使用して iOS デバイスを登録する](device-enrollment-program-enroll-ios.md)
-- [上の表に戻る](#overview-of-device-enrollment-methods)
 
 ### <a name="usb-sa"></a>USB-SA
-IT 管理者は、セットアップ アシスタントを使用した登録を行うため、USB を介し Apple Configurator を使用して、会社が所有するデバイスを手動で準備します。 IT 管理者は登録プロファイルを作成して、Apple Configurator にエクスポートします。 ユーザーは、自分のデバイスを受け取ると、セットアップ アシスタントを実行してデバイスを登録するように求められます。 この方法は、**iOS 監視対象**モードをサポートしているので、以下が有効になります。
-  -    登録のロック
-  -    キオスク モード、およびその他の高度な構成および制限
+IT 管理者は、セットアップ アシスタントを使用した登録を行うため、USB 経由で Apple Configurator を使用して、会社が所有するデバイスを手動で準備します。 IT 管理者は登録プロファイルを作成して、Apple Configurator にエクスポートします。 ユーザーは、自分のデバイスを受け取ると、セットアップ アシスタントを実行してデバイスを登録するように求められます。 この方法は、**iOS 監視対象**モードをサポートしているため、以下の機能が有効になります。
+  - 登録のロック
+  - キオスク モード、およびその他の高度な構成および制限
 
-iOS 登録の詳細については、以下を参照してください。
+セットアップ アシスタントを使用した iOS Apple Configurator 登録については、以下をご覧ください。
 
 - [iOS デバイスの登録方法を決定する](enrollment-method-choose-ios.md)
 - [Configurator とセットアップ アシスタントを使用して iOS デバイスを登録する](apple-configurator-setup-assistant-enroll-ios.md)
 
 ### <a name="usb-direct"></a>USB-Direct
-直接登録の場合、管理者は登録ポリシーを作成して Apple Configurator にエクスポートすることで、各デバイスを手動で登録する必要があります。 USB で接続された企業所有デバイスは直接登録されます。工場出荷時のリセットを必要としません。 デバイスはユーザーがいないデバイスとして管理されます。 これらのデバイスはロックされず、監視対象にもなりません。また、条件付きアクセス、脱獄の検出、モバイル アプリケーション管理がサポートされません。
+直接登録の場合、管理者は登録ポリシーを作成して Apple Configurator にエクスポートすることで、各デバイスを手動で登録する必要があります。 USB で接続された会社所有デバイスは直接登録されます。工場出荷時のリセットを必要としません。 デバイスはユーザーがいないデバイスとして管理されます。 これらのデバイスはロックされず、監視対象にもなりません。また、条件付きアクセス、脱獄の検出、モバイル アプリケーション管理がサポートされません。
 
 iOS 登録の詳細については、以下を参照してください。
 
@@ -111,10 +112,6 @@ iOS 登録の詳細については、以下を参照してください。
 
 ## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>Exchange ActiveSync および Intune を使用したモバイル デバイス管理
 登録されていないが Exchange ActiveSync (EAS) に接続するモバイル デバイスは、EAS MDM ポリシーを使用して Intune で管理できます。 Intune は Exchange Connector を使用し、オンプレミスまたはクラウドでホストされている EAS と通信します。 詳細は近日公開予定。
-
-## <a name="supported-device-platforms-and-browsers"></a>サポートされるデバイス プラットフォームとブラウザー
-
-[Intune でサポートされるデバイスとブラウザー](https://docs.microsoft.com/intune-classic/get-started/supported-mobile-devices-and-computers)に関するトピックを参照してください
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 証明書の有効期限が切れた後のモバイル デバイスのクリーンアップ
 
