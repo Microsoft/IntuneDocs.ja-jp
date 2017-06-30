@@ -1,11 +1,11 @@
 ---
-title: "デバイス登録に関するトラブルシューティング | Microsoft Docs"
+title: "デバイス登録に関するトラブルシューティング"
 description: "デバイス登録で問題が発生した場合の解決方法の推奨事項。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/10/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,10 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e72051f9318d24ed36fc39ea6645041f0a150a40
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: f0c55caa70c1a23da549f2fe8804c2ae69ef6045
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -34,11 +34,11 @@ ms.lasthandoff: 05/23/2017
 
 トラブルシューティングを開始する前に、登録を有効にするように Intune を構成していることを確認してください。 構成要件は次で確認できます。
 
--    [Microsoft Intune にデバイスを登録する準備](/intune-classic/deploy-use/prerequisites-for-enrollment)
--    [iOS および Mac のデバイス管理をセットアップする](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--    [Windows デバイスの管理をセットアップする](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
--    [Android デバイスの管理をセットアップする](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) - 追加の手順は必要ありません
--    [Android デバイスの管理をセットアップする](/intune-classic/deploy-use/set-up-android-for-work)
+-   [Microsoft Intune にデバイスを登録する準備](/intune-classic/deploy-use/prerequisites-for-enrollment)
+-   [iOS および Mac のデバイス管理をセットアップする](/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-   [Windows デバイスの管理をセットアップする](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-   [Android デバイスの管理をセットアップする](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) - 追加の手順は必要ありません
+-   [Android デバイスの管理をセットアップする](/intune-classic/deploy-use/set-up-android-for-work)
 
 管理対象デバイスのユーザーが登録ログと診断ログを収集しておくと、管理者が確認できます。 ユーザーがログを収集する手順については、次のページを参照してください。
 
@@ -110,8 +110,8 @@ ms.lasthandoff: 05/23/2017
 
 1.  使用している Intune サービスの種類に適した MDM 機関が設定されていることを確認します。つまり、Intune、Office 365、または System Center Configuration Manager と Intune などです。 Intune の場合、MDM 機関は **[管理]** &gt; **[モバイル デバイス管理]** で設定されています。 Configuration Manager と Intune の場合、Intune コネクタを構成するときに設定します。Office 365 では、**[モバイル デバイス]** 設定です。
 
-    > [!NOTE]
-    > MDM 機関を設定した後に変更するには、サポートに連絡する必要があります。詳細については、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」を参照してください。
+    > [!NOTE]    
+    > Configuration Manager 1610 以降のバージョンと Microsoft Intune バージョン 1705 では、MDM 機関の変更にあたって Microsoft サポートに問い合わせる必要はありません。また、既存の管理されたデバイスの登録を解除して再登録する必要もありません。 詳細については、「[不適切な MDM 機関の設定を選択した場合の対処方法](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)」を参照してください。
 
 2.  ユーザーの UPN と、Office 365 ポータルの Active Directory 情報が一致していることを確認して、ユーザーの資格情報が Azure Active Directory と適切に同期されていることを確認します。
     UPN が Active Directory 情報と一致しない場合:
@@ -230,16 +230,16 @@ Android デバイスでは、[SSL Server hello](https://technet.microsoft.com/li
 
 この問題を解決するには、AD FS サーバーまたはプロキシでコンピューターの個人証明書に証明書を次のようにインポートします。
 
-1.    ADFS サーバーとプロキシ サーバーで、ローカル コンピューターの証明書管理コンソールを起動します。**[スタート]** ボタンを右クリックし、**[ファイル名を指定して実行]** を選択し、「**certlm.msc**」と入力します。
-2.    **[個人用]** を展開し、**[証明書]** を選択します。
-3.    AD FS サービス通信の証明書を見つけ (公的に署名された証明書)、ダブルクリックしてそのプロパティを表示します。
-4.    **[証明のパス]** タブを選択し、証明書の親証明書を確認します。
-5.    親証明書ごとに、**[証明書の表示]** を選択します。
-6.    **[詳細]** タブを選択し、**[ファイルにコピー]** を選択します。
-7.    ウィザードの指示に従い、証明書の公開鍵をファイル場所にエクスポートします (保存します)。
-8.    手順 3 でエクスポートした親証明書を Local Computer\Personal\Certificates にインポートします。**[証明書]** を右クリックし、**[すべてのタスク]**、**[インポート]** の順に選択し、ウィザードの指示に従って証明書をインポートします。
-9.    AD FS サーバーを再起動します。
-10.    すべての AD FS サーバーとプロキシ サーバーで上記の手順を繰り返します。
+1.  ADFS サーバーとプロキシ サーバーで、ローカル コンピューターの証明書管理コンソールを起動します。**[スタート]** ボタンを右クリックし、**[ファイル名を指定して実行]** を選択し、「**certlm.msc**」と入力します。
+2.  **[個人用]** を展開し、**[証明書]** を選択します。
+3.  AD FS サービス通信の証明書を見つけ (公的に署名された証明書)、ダブルクリックしてそのプロパティを表示します。
+4.  **[証明のパス]** タブを選択し、証明書の親証明書を確認します。
+5.  親証明書ごとに、**[証明書の表示]** を選択します。
+6.  **[詳細]** タブを選択し、**[ファイルにコピー]** を選択します。
+7.  ウィザードの指示に従い、証明書の公開鍵をファイル場所にエクスポートします (保存します)。
+8.  手順 3 でエクスポートした親証明書を Local Computer\Personal\Certificates にインポートします。**[証明書]** を右クリックし、**[すべてのタスク]**、**[インポート]** の順に選択し、ウィザードの指示に従って証明書をインポートします。
+9.  AD FS サーバーを再起動します。
+10. すべての AD FS サーバーとプロキシ サーバーで上記の手順を繰り返します。
 これで、Android デバイスでポータル サイトにサインインできるようになります。
 
 **証明書が正しくインストールされていることを確認するには**:
@@ -261,10 +261,10 @@ Android デバイスでは、[SSL Server hello](https://technet.microsoft.com/li
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |NoEnrollmentPolicy|登録ポリシーが見つかりません|Apple Push Notification Services (APNs) 証明書などのすべての登録前提条件が構成済みであること、"プラットフォームとしての iOS" が有効であることを確認します。 手順については、「[iOS および Mac のデバイス管理をセットアップする](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)」を参照してください。|
 |DeviceCapReached|登録されているモバイル デバイス数が多すぎます。|別のモバイル デバイスを登録する前に、ユーザーは現在登録されているモバイル デバイスの 1 つをポータル サイトから削除する必要があります。 使用しているデバイスの種類ごとの手順 ([Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android)、[iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios)、[Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows)) を参照してください。|
-|APNSCertificateNotValid|モバイル デバイスと会社のネットワークとの通信を可能にする証明書に問題があります。<br /><br />|Apple Push Notification Service (APNs) には、登録済みの iOS デバイスに接続するチャネルが用意されています。 APNS 証明書を取得する手順が実行されていない場合、または APNs 証明書が期限切れの場合、登録は失敗し、このメッセージが表示されます。<br /><br />ユーザー設定方法の詳細については、「[Active Directory を同期化して Intune にユーザーを追加する](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3)」と[ユーザーとデバイスの整理](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5)に関するページを確認してください。|
+|APNSCertificateNotValid|モバイル デバイスと会社のネットワークとの通信を可能にする証明書に問題があります。<br /><br />|Apple Push Notification Service (APNs) には、登録済みの iOS デバイスに接続するチャネルが用意されています。 APNS 証明書を取得する手順が実行されていない場合、または APNs 証明書が期限切れの場合、登録は失敗し、このメッセージが表示されます。<br /><br />ユーザー設定方法の詳細については、「[Active Directory を同期化して Intune にユーザーを追加する](/intune/users-permissions-add)」と[ユーザーとデバイスの整理](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5)に関するページを確認してください。|
 |AccountNotOnboarded|モバイル デバイスと会社のネットワークとの通信を可能にする証明書に問題があります。<br /><br />|Apple Push Notification Service (APNs) には、登録済みの iOS デバイスに接続するチャネルが用意されています。 APNS 証明書を取得する手順が実行されていない場合、または APNs 証明書が期限切れの場合、登録は失敗し、このメッセージが表示されます。<br /><br />詳細については、「[Microsoft Intune を使用して iOS および Mac の管理をセットアップする](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)」を確認してください。|
 |DeviceTypeNotSupported|ユーザーが iOS 以外のデバイスを使用して登録を試みた可能性があります。 登録しようとしているモバイル デバイスの種類はサポートされていません。<br /><br />デバイスが iOS バージョン 8.0 以降を実行していることを確認します。<br /><br />|ユーザーのデバイスで iOS バージョン 8.0 以降が実行されていることを確認します。|
-|UserLicenseTypeInvalid|ユーザーのアカウントがまだ必要なユーザー グループのメンバーではないため、デバイスを登録できません。<br /><br />|ユーザーが自分のデバイスを登録できるようにするには、ユーザーは適切なユーザー グループのメンバーである必要があります。 このメッセージは、指定されたモバイル デバイス管理機関に必要なライセンスの種類をユーザーが持っていないことを示します。 たとえば、モバイル デバイス管理機関として Intune が指定され、ユーザーが System Center 2012 R2 Configuration Manager ライセンスを使用している場合に、このエラーが表示されます。<br /><br />詳細については、以下を確認してください。<br /><br />「[Microsoft Intune を使用して iOS および Mac の管理をセットアップする](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)」のほか、「[Active Directory を同期化して Intune にユーザーを追加する](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-3)」と[ユーザーとデバイスの整理](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5)に関するページでユーザー設定方法についての情報を確認してください。|
+|UserLicenseTypeInvalid|ユーザーのアカウントがまだ必要なユーザー グループのメンバーではないため、デバイスを登録できません。<br /><br />|ユーザーが自分のデバイスを登録できるようにするには、ユーザーは適切なユーザー グループのメンバーである必要があります。 このメッセージは、指定されたモバイル デバイス管理機関に必要なライセンスの種類をユーザーが持っていないことを示します。 たとえば、モバイル デバイス管理機関として Intune が指定され、ユーザーが System Center 2012 R2 Configuration Manager ライセンスを使用している場合に、このエラーが表示されます。<br /><br />詳細については、以下を確認してください。<br /><br />「[Microsoft Intune を使用して iOS および Mac の管理をセットアップする](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)」のほか、「[Active Directory を同期化して Intune にユーザーを追加する](/intune/users-permissions-add)」と[ユーザーとデバイスの整理](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5)に関するページでユーザー設定方法についての情報を確認してください。|
 |MdmAuthorityNotDefined|モバイル デバイス管理機関が定義されていません。<br /><br />|Intune でモバイル デバイス管理機関が指定されていません。<br /><br />[Microsoft Intune の 30 日間の試用版の使用](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune)に関するページの「手順 6: モバイル デバイスを登録してアプリをインストールする」セクションの項目 1 を確認してください。|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>デバイスが無効か、管理コンソールとデバイスが通信できない
