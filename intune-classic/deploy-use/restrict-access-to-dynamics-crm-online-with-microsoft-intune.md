@@ -1,5 +1,5 @@
 ---
-title: "Dynamics CRM Online を保護する | Microsoft Docs"
+title: "Dynamics CRM Online を保護する"
 description: "条件付きアクセスで Dynamics CRM Online へのアクセスを保護および制御します。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6740e6f5894f6dfd7788d90cc8f445e0a63821a9
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: da92d75cfafa2a605ed8606ba7c8f3ec18dc6063
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -84,8 +84,8 @@ Dynamics CRM ポリシーに使用する 2 つのグループの種類を指定�
   * **iOS**
   * **Android**
 4.  **[対象グループ]**で、**[変更]** を選択して、ポリシーを適用する Azure Active Directory セキュリティ グループを選択します。 すべてのユーザーを対象にすることも、選んだユーザーのグループのみを対象にすることもできます。
-5.    **[例外グループ]**で、必要に応じて **[変更]** を選択して、このポリシーから除外する Azure Active Directory セキュリティ グループを選択します。
-6.    終了したら、**[保存]** を選択します。
+5.  **[例外グループ]**で、必要に応じて **[変更]** を選択して、このポリシーから除外する Azure Active Directory セキュリティ グループを選択します。
+6.  終了したら、**[保存]** を選択します。
 
 これで、Dynamics CRM の条件付きアクセスの構成が完了しました。 条件付きアクセス ポリシーを展開する必要はありません。直ちに有効になります。
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>コンプライアンスと条件付きアクセス ポリシーを監視する

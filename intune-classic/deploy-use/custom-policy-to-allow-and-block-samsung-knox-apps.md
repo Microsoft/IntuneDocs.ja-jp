@@ -1,5 +1,5 @@
 ---
-title: "KNOX が許可するアプリとブロックするアプリ | Microsoft Docs"
+title: "KNOX が許可するアプリとブロックするアプリ"
 description: "KNOX が許可するアプリとブロックするアプリの一覧を作成するためのカスタム プロファイル。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 933a47163ccc66a1bab636982ca422c4a704656d
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: b215425534e833db7e92e3f60fc507a168ef576f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 
@@ -43,9 +43,9 @@ ms.lasthandoff: 05/23/2017
     
     - **設定の名前。** 「**PreventStartPackages**」と入力します。
     - **設定の説明。** "実行をブロックするアプリの一覧" のようなオプションの説明を入力します。
-    -     **データ型。** ドロップダウン リストで **[文字列]** を選びます。
-    -     **OMA-URI。** 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**」と入力します。
-    -     **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,** **|** を使用できます。 (例: package1;package2;)
+    -   **データ型。** ドロップダウン リストで **[文字列]** を選びます。
+    -   **OMA-URI。** 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**」と入力します。
+    -   **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,** **|** を使用できます。 (例: package1;package2;)
 
     他のすべてのアプリの実行中にユーザーが Google Play ストアからインストールできるアプリの一覧の場合:
 

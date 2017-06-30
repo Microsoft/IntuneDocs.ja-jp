@@ -1,7 +1,7 @@
 ---
-title: "Microsoft Intune のデバイス プロファイルとは | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Intune デバイス プロファイルと、それを活用して社内のデバイスを管理および保護する方法について説明します。"
+title: "Microsoft Intune のデバイス プロファイルとは"
+titleSuffix: Intune on Azure
+description: "Intune デバイス プロファイルについて、またプロファイルを用いて組織内でデバイスを管理および保護する方法について説明します。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,17 +16,17 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 54b20d405613a67e54e9d22df45a3055f093fafa
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 4e08de2a001bbd77ab3fcb7a534a7d4ec52d48a9
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="what-are-microsoft-intune-device-profiles"></a>Microsoft Intune のデバイス プロファイルとは
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune の **[デバイスの構成]** ワークロードを使用して、管理対象とするすべてのデバイスの設定と機能を管理します。 ほとんどの場合、このワークロードを使用してデバイス プロファイルを作成します。これにより、管理対象デバイスであらゆる種類の機能を管理および制御することができます。
 

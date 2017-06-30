@@ -1,5 +1,5 @@
 ---
-title: "PowerShell を使用して Intune ライセンスを管理する | Microsoft Docs"
+title: "PowerShell を使用して Intune ライセンスを管理する"
 description: "PowerShell を使用して Intune ライセンスを管理します"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 211b1aba54924204a7e2d33301824f9d7eb9c030
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 35bb4e87888a8769b3606659b93e3a73480b566f
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -29,7 +29,7 @@ ms.lasthandoff: 05/23/2017
 
 このトピックでは、管理者が PowerShell を使用して Intune のユーザー ライセンスを管理する方法を説明します。
 
-Intune サービスにサインインして使用したり、デバイスを管理対象に登録したりするためには、「[Manage Intune licenses (Intune ライセンスの管理)](start-with-a-paid-subscription-to-microsoft-intune-step-4.md)」で説明されているとおり、先に各ユーザーに Intune サブスクリプションのライセンスを割り当てる必要があります。 ただし、Microsoft Enterprise Mobility + Security を使用している組織には、EMS パッケージの Azure Active Directory Premium または Intune サービスのみを必要とするユーザーがいる可能性があります。 [Azure Active Directory PowerShell コマンドレット](https://msdn.microsoft.com/library/jj151815.aspx)を使用して、いずれかのサービスまたはサービスのサブセットを割り当てることができます。
+Intune サービスにサインインして使用したり、デバイスを管理対象に登録したりするためには、「[Manage Intune licenses (Intune ライセンスの管理)](/intune/licenses-assign)」で説明されているとおり、先に各ユーザーに Intune サブスクリプションのライセンスを割り当てる必要があります。 ただし、Microsoft Enterprise Mobility + Security を使用している組織には、EMS パッケージの Azure Active Directory Premium または Intune サービスのみを必要とするユーザーがいる可能性があります。 [Azure Active Directory PowerShell コマンドレット](https://msdn.microsoft.com/library/jj151815.aspx)を使用して、いずれかのサービスまたはサービスのサブセットを割り当てることができます。
 
 EMS サービスのユーザー ライセンスを選択的に割り当てるには、[Azure Active Directory Module for Windows PowerShell](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule) がインストールされているコンピューターで管理者として PowerShell を開きます。 PowerShell は、ローカル コンピューターまたは ADFS サーバーにインストールできます。
 
@@ -71,6 +71,5 @@ EMS サービスのユーザー ライセンスを選択的に割り当てるに
 ### <a name="next-steps"></a>次のステップ
 これで終了です。 *Intune のクイック スタート ガイド*の手順 4 が完了しました。
 >[!div class="step-by-step"]
-
->[&larr; **Intune にユーザーを同期する**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**ユーザーとデバイスを整理する**&rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
+(/intune/custom-domain-name-configure) [&larr; **ユーザーを Intune に同期する**](/intune/custom-domain-name-configure) [**ユーザーとデバイスを整理する** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
 

@@ -1,5 +1,5 @@
 ---
-title: "Endpoint Protection による Windows PC の保護 | Microsoft Docs"
+title: "Windows PC 用の Endpoint Protection"
 description: "マルウェアの脅威からリアルタイムで保護する Endpoint Protection で、管理対象コンピューターを保護します。"
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 180da5e2e0d6980214fff1cfffa3fb1d5b0058d3
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: c51f9e471b432b13e0680538c5cf4ad68c1c12f1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Microsoft Intune の Endpoint Protection を使用して Windows PC を保護する
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune を使用すると、管理されたコンピューターを Endpoint Protection で保護することができます。Endpoint Protection は、マルウェアの脅威に対するリアルタイムの保護を行い、マルウェア定義を最新の状態に保ち、自動的にコンピューターをスキャンします。 また、Endpoint Protection は、マルウェアの攻撃の管理と監視に役立つツールも提供します。
 
 まだ Intune クライアントをコンピューターにインストールしていない場合は、「[Microsoft Intune を使用して Windows PC クライアントをインストールする](install-the-windows-pc-client-with-microsoft-intune.md)」を参照してください。

@@ -1,7 +1,7 @@
 ---
-title: "iOS アプリとアプリ保護ポリシー | Intune Azure プレビュー"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: このトピックでは、アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点について説明します。"
+title: "アプリ保護ポリシーのある iOS アプリ"
+titleSuffix: Intune on Azure
+description: "このトピックでは、アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点について説明します。&quot;"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -16,16 +16,16 @@ ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5e172b940dfae32213c870b29f05f56573192704
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 912bc5230904f5798b2e0026dcf0dd1cecdb811c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]このトピックでは、アプリ保護ポリシーを使用する場合のアプリのユーザー エクスペリエンスについて説明します。 アプリ保護ポリシーが適用されるのは、作業アカウントを使用してアプリにアクセスしたり、会社の OneDrive 事業拠点に格納されたファイルにアクセスしたりするなどのワーク コンテキストでアプリが使用される場合に限定されます。
+[!INCLUDE[azure_portal](./includes/azure_portal.md)] このトピックでは、アプリ保護ポリシーを使用する場合のアプリのユーザー エクスペリエンスについて説明します。 アプリ保護ポリシーが適用されるのは、作業アカウントを使用してアプリにアクセスしたり、会社の OneDrive 事業拠点に格納されたファイルにアクセスしたりするなどのワーク コンテキストでアプリが使用される場合に限定されます。
 ##  <a name="accessing-apps"></a>アプリへのアクセス
 
 デバイスが**Intune に登録されていない**場合、エンドユーザーはアプリを初めて使用すると、アプリの再起動を求められます。  再起動すると、アプリ保護ポリシーをアプリに適用することができます。 次のスクリーンショットは、Skype アプリを使用した場合の例を示しています。

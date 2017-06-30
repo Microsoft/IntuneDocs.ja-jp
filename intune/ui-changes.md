@@ -1,7 +1,7 @@
 ---
 title: "Azure での Intune の機能の移動先"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Intune の機能を Azure コンソールで確認できます。"
+titleSuffix: Intune on Azure
+description: "Azure コンソールで Intune の機能を確認できます。&quot;"
 keywords: 
 author: dagerrit
 ms.author: dagerrit
@@ -16,26 +16,17 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9dd6e93108ffc46e9e52b6928cf513161d29f7a4
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 1b9d1ac3930e29bc024ece7e6b9b11c91a4e14c1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Azure での Intune の機能の移動先
 Intune から Azure Portal に移行する際に、いくつかのタスクがより論理的に整理されました。 しかし、このような改善を行えば、新しい構成を学ばなければなりません。 このリファレンス ガイドは、従来のコンソールを使用した Intune の知識があり、Intune で行われていた内容を Azure ではどのように実行されるのかについて関心があるユーザーに向けて作成しました。 この記事でお探しの機能が記載されていない場合は、今後更新できるように記事の最後にコメントを残してください。
 ## <a name="quick-reference-guide"></a>クイック リファレンス ガイド
-|機能 |従来のコンソールでのパス|Azure の Intune でのパス| |------------||---------------|---------------|
-|デバイス登録プログラム (DEP) |[管理者] > [モバイル デバイス管理] > [iOS および Mac OS X] > [デバイス登録プログラム]|[[デバイスの登録] > [Apple の登録] > [Enrollment Program Token] (登録プログラムのトークン)](#where-did-apple-dep-go) |
-|デバイス登録プログラム (DEP)| [管理者] > [モバイル デバイス管理] > [iOS および Mac OS X] > [デバイス登録プログラム] |[[デバイスの登録] > [Apple の登録] > [Enrollment Program Serial Numbers] (登録プログラムのシリアル番号)](#where-did-apple-dep-go) |
-|登録ルール |[管理者] > [モバイル デバイス管理] > [登録ルール]|[[デバイスの登録] > [登録の制限]](#where-did-enrollment-rules-go) |
-|iOS シリアル番号別のグループ |[グループ] > [すべてのデバイス] > [会社の事前登録済みデバイス] > [iOS シリアル番号を使用]|[[デバイスの登録] > [Apple の登録] > [Enrollment Program Serial Numbers] (登録プログラムのシリアル番号)](#where-did-corporate-pre-enrolled-devices-go) |
-|iOS シリアル番号別のグループ |[グループ] > [すべてのデバイス] > [会社の事前登録済みデバイス] > [iOS シリアル番号を使用]| [[デバイスの登録] > [Apple の登録] > [AC Serial numbers] (AC シリアル番号)](#where-did-corporate-pre-enrolled-devices-go)|
-|IMEI (すべてのプラットフォーム) 別のグループ | [グループ] > [すべてのデバイス] > [会社の事前登録済みデバイス] > [IMEI (すべてのプラットフォーム) を使用] | [[デバイスの登録] > [業務用デバイスの ID]](#by-imei-all-platforms)|
-| 業務用デバイスの登録プロファイル| [ポリシー] > [業務用デバイスの登録] | [[デバイスの登録] > [Apple の登録] > [Enrollment Program Profiles] (登録プログラムのプロファイル)](#where-did-corporate-pre-enrolled-devices-go) |
-| 業務用デバイスの登録プロファイル | [ポリシー] > [業務用デバイスの登録] | [[デバイスの登録] > [Apple の登録] > [AC プロファイル]](#where-did-corporate-pre-enrolled-devices-go) |
-| Android for Work | [管理者] > [モバイル デバイス管理] > [Android for Work] | [デバイスの登録] > [Android for Work への登録] | | 使用条件 | [ポリシー] > [使用条件] | [デバイスの登録] > [使用条件] |
+|機能 |クラシック コンソールでのパス|Azure の Intune でのパス| |------------||---------------|---------------| |Device Enrollment Program (DEP) |[管理者] > [モバイル デバイス管理] > [iOS および Mac OS X] > [Device Enrollment Program]|[[デバイスの登録] > [Apple の登録] > [Enrollment Program トークン]](#where-did-apple-dep-go) | |Device Enrollment Program (DEP)| [管理者] > [モバイル デバイス管理] > [iOS および Mac OS X] > [Device Enrollment Program] |[[デバイスの登録] > [Apple の登録] > [Enrollment Program Serial Numbers]\(登録プログラムのシリアル番号\)](#where-did-apple-dep-go) | |登録ルール |[管理者] > [モバイル デバイス管理] > [登録ルール]|[[デバイスの登録] > [登録の制限]](#where-did-enrollment-rules-go) | |iOS シリアル番号別のグループ |[グループ] > [すべてのデバイス] > [会社の事前登録済みデバイス] > [iOS シリアル番号を使用]|[[デバイスの登録] > [Apple の登録] > [Enrollment Program Serial Numbers]\(登録プログラムのシリアル番号\)](#where-did-corporate-pre-enrolled-devices-go) | |iOS シリアル番号別のグループ |[グループ] > [すべてのデバイス] > [会社の事前登録済みデバイス] > [iOS シリアル番号を使用]| [[デバイスの登録] > [Apple の登録] > [AC Serial numbers]\(AC シリアル番号\)](#where-did-corporate-pre-enrolled-devices-go)|IMEI 別のグループ (すべてのプラットフォーム)| [グループ] > [すべてのデバイス] > [会社の事前登録済みデバイス] > [IMEI を使用] (すべてのプラットフォーム)| [[デバイスの登録] > [業務用デバイスの ID]](#by-imei-all-platforms)| | 業務用デバイスの登録プロファイル| [ポリシー] > [業務用デバイスの登録] | [[デバイスの登録] > [Apple の登録] > [Enrollment Program プロファイル]](#where-did-corporate-pre-enrolled-devices-go) | | 業務用デバイスの登録プロファイル | [ポリシー] > [業務用デバイスの登録] | [[デバイスの登録] > [Apple の登録] > [AC プロファイル]](#where-did-corporate-pre-enrolled-devices-go) | | Android for Work | [管理者] > [モバイル デバイス管理] > [Android for Work] | [デバイスの登録] > [Android for Work への登録] | | 使用条件 | [ポリシー] > [使用条件] | [デバイスの登録] > [使用条件] |
 
 
 ## <a name="where-do-i-manage-groups"></a>グループを管理する場所

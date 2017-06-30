@@ -1,5 +1,5 @@
 ---
-title: "デバイス登録マネージャーを使用した登録 | Microsoft Docs"
+title: "デバイス登録マネージャーを使用して登録する"
 description: "デバイス登録マネージャー (DEM) アカウントでは、1 つのユーザー アカウントで企業所有の多数の共有モバイル デバイスを管理できます。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d1f63a9e65435e2cfc421c23de3ad87363bc446d
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 095b89d1428d6b8f06143043d8bb6ed37fd8fa5b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 06/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,10 +18,10 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3fe1ec94f3112a252b9694449d341f336e97e635
+ms.sourcegitcommit: 73b43084c28436cb8a7e866dcee2d52694c60f5c
+ms.openlocfilehash: 9af52f5433798f6852026335ca169fd295d4ed50
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/16/2017
 
 
 ---
@@ -31,25 +31,15 @@ ms.lasthandoff: 05/23/2017
 
 Intune から Android デバイスの登録を解除した後は、会社のリソースにアクセスできなくなります。  登録解除した場合の詳細については、「[Intune からデバイスの登録を解除するとどうなるか](what-happens-if-you-unenroll-your-device-from-intune-android.md)」を参照してください。
 
-Intune からデバイスの登録を解除し、会社のポータル アプリをアンインストールするには、この手順に従うか、このビデオをご覧ください。
+Intune からデバイスの登録を解除し、ポータル サイト アプリを削除するには、以下の手順に従います。
 
-<iframe width="675" height="379" src="https://www.youtube.com/embed/K-Vi7lNfaMk" frameborder="0" allowfullscreen></iframe>
+1. ポータル サイト アプリの右上隅にある垂直に並んだ 3 つのドットをタップして、**アクション メニュー**を開きます。 
 
-1. **[設定]** アプリを開き、**[デバイス管理者]** を開いて **[ポータル サイト]** をオフにします。 使用しているデバイスに応じて、環境設定一覧での **[デバイス管理者]** 設定の名前または場所が多少異なる場合があります。
+![右上隅にアクション メニューが開いた Android 用ポータル サイト アプリの画像です。 [マイ プロファイル]、[設定] の下と、[使用条件]、[ヘルプとフィードバック]、[概要] の上に、新しい [ポータル サイトの削除] オプションが 3 つ目のオプションとして表示されます。](./media/android_remove_cp_menu_action_after_1705.png)
 
-2.  会社のポータル アプリにサインインする
+2. ポータル サイトを削除してよいかを確認する確認メッセージが表示されます。 デバイスを登録解除するとどうなるかについての情報も表示されます。 このメッセージを確認したら、**[OK]** をタップして続行します。 
 
-3.  **[デバイス]** をタップして、登録を解除するデバイスを選択します。
-
-    ![登録を解除するデバイスを選択します。](./media/andr-1-my-devices-choose.png)
-
-4.  ごみ箱アイコンをタップします。
-
-    ![ごみ箱アイコンをタップします。](./media/andr-2-tap-trashcan.png)
-
-5.  [警告] ページで、**[OK]** をタップしてデバイスの登録を解除します。
-
-    ![デバイスを削除します。](./media/andr-3-warning-about-remove.png)
+![アクション メニューから新しい [ポータル サイトの削除] オプションを選択した後に表示される確認ダイアログの画像です。 "ポータル サイトの削除により、デバイスは IT 管理者による管理を離れ、会社のデータ、会社のアプリ、会社の電子メールに対するデバイスのアクセス権限が削除される可能性がある" ことを示すダイアログが表示されます。 [はい] を選択すると、ポータル サイト アプリを削除するか確認するメッセージが表示されます。](./media/android_remove_cp_menu_confirmation_after_1705.png)
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
 

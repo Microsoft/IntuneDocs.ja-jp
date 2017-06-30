@@ -1,5 +1,5 @@
 ---
-title: "Exchange Online 用の Exchange Connector | Microsoft Docs"
+title: "Exchange Online 用の Exchange Connector"
 description: "Exchange ActiveSync モバイル デバイス管理 (MDM) をサポートするために、Intune を Office 365 Exchange サービスに接続する。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4b73767f585cfa6283c7fb0601e7061efe42c606
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: c2f30e7827db280ba49fc49b6b7a00c9a8d9eade
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -36,8 +36,8 @@ Microsoft Intune と Exchange Online サービスまたは新しい Exchange Onl
 |---------------|--------------------|
 |Exchange Online が構成済みで実行中である|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
 |モバイル デバイス管理機関| [モバイル デバイスの管理機関を Microsoft Intune に設定します。](prerequisites-for-enrollment.md#step-2-set-mdm-authority)|
-|Microsoft Exchange のバージョン|Exchange Online サービスまたは新しい Exchange Online Dedicated サービス|
-|Active Directory の同期|Intune Connector を使用できるようにするには、[Active Directory の同期をセットアップ](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3)して、ローカル ユーザーとセキュリティ グループが Azure Active Directory のインスタンスと同期されるようにする必要があります。|
+|Microsoft Exchange のバージョン|Exchange Online サービスまたは新しい Exchange Online Dedicated サービス|/intune/users-permissions-add
+|Active Directory の同期|Intune Connector を使用できるようにするには、[Active Directory の同期をセットアップ](/intune/users-permissions-add)して、ローカル ユーザーとセキュリティ グループが Azure Active Directory のインスタンスと同期されるようにする必要があります。|
 
 ### <a name="exchange-cmdlet-requirements"></a>Exchange コマンドレットの要件
 

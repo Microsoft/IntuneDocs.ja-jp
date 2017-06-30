@@ -1,6 +1,6 @@
 ---
-title: "Microsoft Intune の 30 日間無料試用版にサインアップする | Microsoft Docs"
-description: "Microsoft Intune の 30 日間無料評価版にサインアップし、設定します。"
+title: "Microsoft Intune の 30 日間無料試用版にサインアップする"
+description: "Microsoft Intune の 30 日間無料試用版にサインアップし、設定します。"
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -14,10 +14,10 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 560765fa9d9afa4a1050515e1b2304c998f8c158
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: ffa07d5e36abc8686cedd600123494180c286011
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -29,7 +29,7 @@ ms.lasthandoff: 05/23/2017
 この記事では、Intune 試用版にサインアップし、ユーザーを追加する方法について説明します。これを読んだ後に、関連する試用版ガイドを読み、Intune によるモバイル デバイスの管理方法を確認できます。 <!---or app data when devices are not enrolled in Intune.--->
 
 >[!Note]
-> 2016 年 12 月以降、Microsoft Intune は Azure ポータルに移行します。一部の無料試用版のサインアップは Azure ポータルの Intune、他のサインアップはクラシック Intune になります。 試用版が Azure ポータルの場合、この記事の手順を実行した後に、[Intune Azure プレビューに関するコンテンツ](/intune/what-is--intune)を参照してください。
+> 2016 年 12 月以降、Microsoft Intune は Azure ポータルに移行します。一部の無料試用版のサインアップは Azure ポータルの Intune、他のサインアップはクラシック Intune になります。 試用版が Azure ポータルの場合、この記事の手順を実行した後に、[Intune Azure プレビューに関するコンテンツ](/intune/what-is-intune)を参照してください。
 
 ## <a name="assumptions"></a>前提条件
 サインアップに関するこの記事と試用版ガイドでは、試用版が評価目的のみで使用されること、サブスクライブするときにクリーンな環境から始めることを前提としています。
@@ -41,13 +41,13 @@ ms.lasthandoff: 05/23/2017
 ## <a name="sign-up-for-your-trial"></a>試用版にサインアップする
 [Intune サインアップ](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) ページにアクセスしてフォームに入力し、試用版サブスクリプションにサインアップします。
 
-職場や学校のアカウントを Intune 試用版に使用する場合、代わりに[このリンクにあるサインイン方法](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1)に従ってください。 ただし、この記事と試用版ガイドでは、職場や学校のアカウントを使用していないものと想定しています。
+職場や学校のアカウントを Intune 試用版に使用する場合、代わりに[このリンクにあるサインイン方法](/intune/account-sign-up)に従ってください。 ただし、この記事と試用版ガイドでは、職場や学校のアカウントを使用していないものと想定しています。
 
 > [!TIP]
 > IT 業務とユーザーのほとんどが自分とは別の場所にある場合、試用版にその場所を設定し、性能を試験できます。
 
 ### <a name="post-sign-up-considerations"></a>サインアップ後の考慮事項
-評価版にサインアップすると、アカウント情報の記載された電子メール メッセージが、サインアップ過程で登録した電子メール アドレスに送信されます。 このメールで、評価版がアクティブになったことが確認されます。
+試用版にサインアップすると、アカウント情報の記載された電子メール メッセージが、サインアップ過程で登録した電子メール アドレスに送信されます。 このメールで、試用版がアクティブになったことが確認されます。
 
 サインアップ プロセスが完了すると、Office 365 管理センターを使用して、ユーザーを追加し、ライセンスを割り当てるページに移動します。 次回**クラシック Intune** (https://manage.microsoft.com) にサインインすると、Intune 管理コンソールに自動的に移動します。
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="add-users"></a>ユーザーの追加
 Office 365 管理センターを離れ、Intune に移動する前に、試用版アカウントにユーザーを追加する必要があります。
 
-Office 365 管理センターでは、.csv ファイルをアップロードしてユーザーを個別または一括で追加できます。 ここでは個別追加と一括追加の両方を行います。 ただし、運用環境では、おそらく Azure Active Directory ユーザー アカウントを活用することになります。それに関しては、「[入門ガイド](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3)」と本記事の「[次のステップ](#Next-steps)」セクションを参照してください。
+Office 365 管理センターでは、.csv ファイルをアップロードしてユーザーを個別または一括で追加できます。 ここでは個別追加と一括追加の両方を行います。 ただし、運用環境では、おそらく Azure Active Directory ユーザー アカウントを活用することになります。それに関しては、「[入門ガイド](/intune/users-permissions-add)」と本記事の「[次のステップ](#next-steps)」セクションを参照してください。
 
 ### <a name="add-an-individual-user"></a>個々のユーザーを追加する
 1. いずれかのユーザー追加オプションを選択し、フォームを開きます。そのフォームでユーザーを作成できます。 アスタリスク (\*) の付いている項目だけが入力必須となります。
@@ -110,8 +110,8 @@ Intune から Office 365 管理センターに戻るには、[グループの概
 
 ![Office 365 管理センターに戻るリンクの画像](./media/sign-up/task-add-users.png)
 
-### <a name="intune-azure-preview"></a>Intune Azure プレビュー
-Intune Azure プレビューで使用するポータルは 3 つあります。
+### <a name="intune-on-azure"></a>Azure での Intune
+Azure での Intune で使用するポータルは 3 つあります。
 - Office 365 管理センター ([portal.office.com](https://portal.office.com))
 - Azure の Intune ダッシュボード ([portal.azure.com](https://portal.azure.com))
 - クラシック Intune 管理コンソール ([manage.microsoft.com](https://manage.microsoft.com))
@@ -138,8 +138,8 @@ Intune から Office 365 管理センターに戻るには、ブラウザーの�
 ### <a name="classic-intune"></a>クラシック Intune
 評価シナリオ: [Microsoft Intune でモバイル デバイス管理を評価する](mobile-device-management-trial-guide-microsoft-intune.md)
 
-### <a name="intune-azure-preview"></a>Intune Azure プレビュー
-詳細については、「[Intune in the Azure portal preview](/intune/what-is-intune)」(Azure プレビュー ポータルの Intune) を参照してください。
+### <a name="intune-on-azure"></a>Azure での Intune
+詳細については、[Azure での Intune](/intune/what-is-intune) に関するページを参照してください。
 
 ### <a name="integration-with-other-products"></a>他の製品との統合
 Intune で Azure Active Directory ユーザー アカウントを使用する方法に関するページ:

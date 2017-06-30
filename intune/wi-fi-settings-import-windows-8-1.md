@@ -1,12 +1,12 @@
 ---
 title: "Windows 8.1 以降の Wi-Fi 設定のインポート"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Windows から Intune Wi-Fi プロファイルに Wi-Fi 設定をインポートする方法。"
+titleSuffix: Intune on Azure
+description: "Wi-Fi 設定を Windows から Intune Wi-Fi プロファイルにインポートする方法。&quot;"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 80181ce809265dc4289e56ef65aff66214d2e765
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: c4ef9bf6ed3f731afada55d2af71d56367f4638d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="how-to-import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Microsoft Intune で Windows 8.1 以降のデバイス向け Wi-Fi 設定をインポートする方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Windows 8.1 または Windows 10 デスクトップまたはモバイルを実行するデバイスの場合は、以前エクスポートされた Wi-Fi 構成プロファイルをファイルにインポートすることができます。
 
@@ -41,7 +41,7 @@ Windows で、**netsh wlan** ユーティリティを使用して、既存の Wi
 ## <a name="import-the-wi-fi-settings-into-intune"></a>Intune への Wi-Fi 設定のインポート
 
 1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
+2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
 3. [プロファイル] ブレードで、**[プロファイルを作成します]** をクリックします。

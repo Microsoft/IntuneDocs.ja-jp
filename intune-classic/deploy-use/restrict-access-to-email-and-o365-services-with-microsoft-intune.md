@@ -1,5 +1,5 @@
 ---
-title: "電子メールおよび Office 365 を保護する | Microsoft Docs"
+title: "電子メールおよび Office 365 を保護する"
 description: "このトピックでは、条件付きアクセスを使用し、準拠デバイスのみに SharePoint Online およびその他のサービスの会社の電子メールや会社データへのアクセスを許可する方法について説明します。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fc89c1b5b502f00bab5ed02f6e7df6422241aeb1
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3405671130a58aa944d6c689264379a254face1d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -51,7 +51,7 @@ Microsoft Intune と Azure Active Directory (Azure AD) Premium はシームレ�
 
 - 詳細については、[Enterprise Mobility の価格に関するページ](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)または [Azure Active Directory の価格に関するページ](https://azure.microsoft.com/pricing/details/active-directory/)を参照してください。
 
-また、条件付きアクセス ポリシーを適用する予定のユーザーに [Azure AD Premium または EMS のライセンスが割り当てられている](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md)ことを確認してください。
+また、条件付きアクセス ポリシーを適用する予定のユーザーに [Azure AD Premium または EMS のライセンスが割り当てられている](/intune/licenses-assign)ことを確認してください。
 
 ### <a name="device-compliance-settings"></a>デバイス コンプライアンス設定
 

@@ -1,5 +1,5 @@
 ---
-title: "Lookout を利用できるようにサブスクリプションを設定する | Microsoft Docs"
+title: "Lookout でサブスクリプションを設定する"
 description: "このトピックでは、Lookout デバイス脅威保護を構成する方法について説明します。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3c777d8857fd177e5a27840ab8a97c8a137aa189
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 215d579c7e8806f98d99db9319aa5808d99653c1
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

@@ -1,6 +1,6 @@
 ---
-title: "ポリシーを作成してアプリをユーザーに発行する | Microsoft Docs"
-description: "Intune の 30 日間無料評価版にサインアップするときに、ポリシーを作成しアプリを発行する方法"
+title: "ポリシーを作成してユーザーにアプリを発行する"
+description: "Intune の 30 日間無料試用版にサインアップするときに、ポリシーを作成しアプリを発行する方法"
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0e836571b869e7a32b19968da1d78035a6bae7f2
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 335d91cd6583052bfcc72fc018b387eed8823b7e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -102,7 +102,7 @@ Skype は、以上の手順で、モバイル デバイスの構成ポリシー�
 ## <a name="next-steps"></a>次のステップ
 他の [Intune の機能](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)についてさらに学習する
 
-[Intune の一般的な使用方法](common-ways-to-use-intune.md)を読む
+[Intune の一般的な使用方法](/intune/common-scenarios)を読む
 
 [有料サブスクリプション](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)に切り替える
 

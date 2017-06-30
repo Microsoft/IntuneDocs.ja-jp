@@ -1,7 +1,7 @@
 ---
 title: "iOS デバイス向けの Intune のカスタム設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: iOS カスタム プロファイルで使用できる設定について説明します。"
+titleSuffix: Intune on Azure
+description: "iOS カスタム プロファイルで使用できる設定について説明します。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,17 +16,17 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3d1ccae3c36e13b4074c442b48943077041a8b52
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: b169fe74063b618f947f5d3d6809e0e49a5136e3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="microsoft-intune-custom-settings-for-ios-devices"></a>iOS デバイス向けの Microsoft Intune のカスタム設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune の iOS カスタム プロファイルを使用して、[Apple Configurator ツール](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12)で作成した設定を iOS デバイスに割り当てます。 このツールを使用すると、これらのデバイスの動作を制御する多くの設定を作成し、構成プロファイルにエクスポートすることができます。 その後、この構成プロファイルを Intune iOS カスタム プロファイルにインポートし、組織内のユーザーとデバイスに設定を割り当てることができます。
 

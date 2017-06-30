@@ -1,7 +1,7 @@
 ---
 title: "アプリから会社のデータのみをワイプする方法"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Microsoft Intune でアプリを選択的にワイプする方法について説明します。"
+titleSuffix: Intune on Azure
+description: "Microsoft Intune でアプリを選択的にワイプする方法について説明します。&quot;"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -16,16 +16,16 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: affe7323b8572aa17122011b293cb6a3a2fd7747
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: bfebc391997ac4e63466eb3a09044318cf807dbc
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Intune で管理されているアプリから会社のデータをワイプする方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 デバイスが紛失や盗難にあった場合、または従業員が離職した場合、会社のアプリのデータがデバイスから削除されたことを確認する必要があります。 ただし、個人のデータをデバイスから削除するのは好ましくありません。そのデバイスの所有者が従業員である場合はなおさらです。
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 05/23/2017
 
 1.  [Azure ポータル](https://portal.azure.com)にサインインします。
 
-2.  **[その他のサービス]** を選択し、フィルター ボックスに「**Intune**」と入力して、**[Intune]** を選択します。 Intune プレビュー ブレードが開いたら、**[アプリの管理]** ブレードを選択します。
+2.  **[その他のサービス]** を選択し、フィルター ボックスに「**Intune**」と入力して、**[Intune]** を選択します。 Intune ブレードが開いたら、**[アプリの管理]** ブレードを選択します。
 
     ![[新しいワイプ要求] ブレードのスクリーンショット](./media/intune-azure-preview-blade.png)
 

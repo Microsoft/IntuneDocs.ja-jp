@@ -1,5 +1,5 @@
 ---
-title: "Skycure アプリ、Microsoft Authenticator アプリ、iOS 構成ポリシーの展開 | Microsoft Docs"
+title: "Skycure アプリ、Microsoft Authenticator アプリ、iOS 構成ポリシーを展開する"
 description: "Skycure アプリ、Microsoft Authenticator アプリ、iOS 構成ポリシーを Intune クラシック コンソールに展開します。"
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 19c8ca7bbfe19649585d63ce2c0c96a8f57b3739
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 60f4ab5a656a2e253d82971d7bea6b3a6c9eb25a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

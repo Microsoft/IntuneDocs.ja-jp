@@ -1,11 +1,11 @@
 ---
 title: "Windows デバイスの登録"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Windows デバイスの Intune モバイル デバイス管理 (MDM) を有効にします。"
+titleSuffix: Intune on Azure
+description: "Windows デバイスの Intune モバイル デバイス管理 (MDM) を有効にします。\""
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 04/12/2017
+ms.date: 06/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 687be18cedd063b3c2701937f2522e801e51644b
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e24066ef91d61a9b44e9281fec9957bff243caaf
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="enroll-windows-devices"></a>Windows デバイスの登録
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 このトピックは IT 管理者がユーザーの Windows の登録を簡略化する際に役立ちます。  Windows デバイスは追加の手順なしに登録できますが、ユーザーのため、登録をより簡単にすることができます。
 
@@ -73,5 +73,5 @@ Azure Intune ポータルで、**[その他のサービス]** > **[監視 + 管�
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>Windows デバイスの登録方法をユーザーに通知する
 ユーザーに、Windows デバイスを登録する方法とデバイスが管理されるとどうなるかを伝えます。 エンドユーザー用の登録手順については、「[Intune に Windows デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)」を参照してください。 また、ユーザーには、[IT 管理者がユーザーのデバイスに関して確認できる情報](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows)に関するページも案内してください。
 
-エンドユーザー タスクの詳細については、「[Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](https://docs.microsoft.com/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)」を参照してください。
+エンドユーザー タスクの詳細については、「[Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](end-user-educate.md)」を参照してください。
 

@@ -1,5 +1,5 @@
 ---
-title: "デバイス ログを回収する | Microsoft Docs"
+title: "デバイスのログを回収する"
 description: "管理対象デバイスからログを回収する方法について説明します。"
 keywords: 
 author: arob98
@@ -15,10 +15,10 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f75719a02e37f6285fb1d7c5de32bb7eb4b3a1ed
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: b15e4b7fa0c650a85a080c42d00cd75cb8783c62
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -46,7 +46,7 @@ Android ログは *<Android Device>\Phone\Android\data\com.microsoft.windowsintu
 
 ユーザーは登録エラーを送信できます。詳細は「[IT 管理者に iOS の登録に関するエラーを送信する](/intune-user-help/send-errors-to-your-it-admin-ios)」にあります。
 
-ユーザーは「[ログを iOS デバイス向けポータル サイトの開発者に送信する](/intune-user-help/send-logs-to-your-it-admin-by-email-ios)」に従ってデバイスのログを送信できます。
+ユーザーは「[ログを iOS デバイス向けポータル サイトの開発者に送信する](/intune-user-help/send-logs-to-microsoft-ios)」に従ってデバイスのログを送信できます。
 
 ### <a name="mac-os-x-logs"></a>Mac OS X のログ
 

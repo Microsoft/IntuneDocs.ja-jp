@@ -1,7 +1,7 @@
 ---
 title: "Web アプリを Intune に追加する方法"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Web アプリを Intune に追加する方法について説明します。"
+titleSuffix: Intune on Azure
+description: "Web アプリを Intune に追加する方法について説明します。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,16 +16,16 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ac53d01e57ed302cae202a10fcc22996a47d576d
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 476e547f2ee21119443b08db0984f66844f701d3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
 # <a name="how-to-add-web-apps-to-microsoft-intune"></a>Web アプリを Microsoft Intune に追加する方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。

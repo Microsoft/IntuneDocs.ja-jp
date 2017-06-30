@@ -1,6 +1,6 @@
 ---
-title: "Intune 評価版のその他のオプションと機能 | Microsoft Docs"
-description: "Intune の 30 日間無料評価版にサインアップするときに知っておくべきアラート、通知、レポートと、一般的な Intune 機能についての説明"
+title: "Intune 試用版のその他のオプションと機能"
+description: "Intune の 30 日間無料試用版にサインアップするときに知っておくべきアラート、通知、レポートと、一般的な Intune 機能についての説明"
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -14,15 +14,15 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3dcaf3ccc8c8581704351a19bce0a0ab57013040
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: c0299b9bcb8c4cf35e2ddf60da428cc04bbdb4f0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
-# <a name="other-options-and-extras-for-intune-evaluation-subscriptions"></a>Intune 評価版サブスクリプションのその他のオプションと機能
+# <a name="other-options-and-extras-for-intune-evaluation-subscriptions"></a>Intune 試用版サブスクリプションのその他のオプションと機能
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -46,16 +46,14 @@ Intune は、この短いセットアップの手順では説明しきれない�
 
 -   **会社のリソースへのアクセスを制御します。** 証明書、電子メール プロファイル、VPN プロファイル、および Wi-Fi プロファイルをモバイル デバイスに展開し、モバイル デバイスをすばやくセットアップできるようにします。 詳細については、「[Microsoft Intune を使用して、会社のリソースへのアクセスを有効にする](/intune-classic/Deploy-Use/enable-access-to-company-resources-with-microsoft-intune)」を参照してください。
 
-Intune のあらゆる機能の詳細については、以下を参照してください。
-- [Microsoft Intune の登録済みデバイス管理機能](/intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune)
-- [Microsoft Intune の Windows PC 管理機能](/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune)
+Intune のすべての機能については、「[Microsoft Intune の登録済みデバイス管理機能](/intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune)」をご覧ください。
 
-Intune に最近導入された機能の詳細については、「[Microsoft Intune の新機能](/intune-classic/Deploy-Use/whats-new-in-microsoft-intune)」を参照してください。
+Intune に最近導入された機能の詳細については、「[Microsoft Intune の新機能](/intune-classic/whats-new/whats-new-in-microsoft-intune)」を参照してください。
 
 サポート オプションについて詳しくは、「[Microsoft Intune のサポートを受ける方法](/intune-classic/Troubleshoot/how-to-get-support-for-microsoft-intune)」を参照するか、[Microsoft Intune フォーラム](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod)で Intune に関するディスカッションに参加できます。
 
 ## <a name="next-steps"></a>次のステップ
-[Intune の一般的な使用方法](common-ways-to-use-intune.md)を読む
+[Intune の一般的な使用方法](/intune/common-scenarios)を読む
 
 [有料サブスクリプション](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)に切り替える
 

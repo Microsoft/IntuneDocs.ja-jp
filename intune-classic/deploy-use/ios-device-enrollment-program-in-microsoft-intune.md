@@ -1,5 +1,5 @@
 ---
-title: "iOS デバイスの Apple DEP 管理 | Microsoft Docs"
+title: "iOS デバイスの Apple DEP 管理"
 description: "Apple デバイスを管理するために、iOS Device Enrollment Program (DEP) を通じて購入した iOS デバイスを登録する登録プロファイルを &quot;無線&quot; で展開します。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d5facd519f53ea8534445ad95ae9221cf537b50a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 1a02a8b092242df369b382b6cdcc2c2bbd10c10a
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -81,8 +81,8 @@ Microsoft Intune は、"無線" で Device Enrollment Program (DEP) を通じて
 
    - **ユーザー アフィニティを要求する**: 初回セットアップ時にデバイスをユーザーに関連付ける必要があります。その後、デバイスはそのユーザーとして企業のデータやメールにアクセスすることが許可されます。 ユーザーに属し、ポータル サイトを使用する必要がある (つまりアプリをインストールする必要がある) DEP 管理対象のデバイスの場合、**[ユーザー アフィニティ]** を設定する必要があります。 多要素認証 (MFA) は、ユーザー アフィニティを使用して DEP デバイスに登録しているときに動作しません。 DEP デバイスに登録が完了すると、MFA は期待どおりに動作します。 最初にサインインするときにパスワードを変更する必要がある新しいユーザーには、DEP デバイスの登録時にプロンプトを表示することはできません。 さらに、パスワードの有効期限が切れているユーザーには、DEP 登録時にパスワードのリセットは求められません。このユーザーは別のデバイスからパスワードをリセットする必要があります。
 
-       >[!NOTE]
-       >ユーザー アフィニティが設定された DEP でユーザー トークンを要求するには、[WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints)を有効にする必要があります。 WS-Trust 1.3 について詳しくは、[こちら](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)をご覧ください。
+    >[!NOTE]
+    >ユーザー アフィニティが設定された DEP でユーザー トークンを要求するには、[WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints)を有効にする必要があります。 WS-Trust 1.3 について詳しくは、[こちら](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)をご覧ください。
 
    - **ユーザー アフィニティがありません**: デバイスは、ユーザーと関連付けられません。 このデバイス関連付け情報を使用すると、ローカルのユーザー データにアクセスしなくてもタスクを実行できます。 基幹業務アプリのインストールに使用されるポータル サイト アプリなど、ユーザー アフィリエーションが必要なアプリは機能しません。
 

@@ -1,7 +1,7 @@
 ---
 title: "Intune で macOS デバイスを登録する"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Intune Azure プレビューで macOS デバイスを登録する方法について説明します。"
+titleSuffix: Intune on Azure
+description: "Intune で macOS デバイスを登録する方法について説明します。&quot;"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -16,25 +16,25 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c10a28a51e9f6bed99a657cd940b00f3114e4588
+ms.sourcegitcommit: b5ad9cc6c03712090398cacb3d4bb653deb1d2a4
+ms.openlocfilehash: 59bb332519d3800e9f29e2ff160dece4b9a611d2
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/12/2017
 
 
 ---
 
-# <a name="enroll-macos-devices-in-intune-azure-preview"></a>Intune Azure プレビューで macOS デバイスを登録する
+# <a name="enroll-macos-devices-in-intune"></a>Intune で macOS デバイスを登録する
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune では、macOS デバイスを管理することができます。 デバイスの管理を有効にするには、[ポータル Web サイト](http://portal.manage.microsoft.com)に移動し、画面の指示に従ってデバイスを登録する必要があります。 macOS デバイスを管理下に置いたら、[macOS デバイスのカスタム設定を作成](custom settings-macos.md)できます。 その他の機能は近日公開予定です。
+Intune では、macOS デバイスを管理することができます。 デバイスの管理を有効にするには、[ポータル Web サイト](http://portal.manage.microsoft.com)に移動し、画面の指示に従ってデバイスを登録する必要があります。 macOS デバイスを管理下に置いたら、[macOS デバイスのカスタム設定を作成](custom-settings-macos.md)できます。 その他の機能は近日公開予定です。
 
 ## <a name="prerequisites"></a>必要条件
 
 macOS デバイスの登録を設定する前に、以下の前提条件を満たしている必要があります。
 
-- [ドメインを構成する](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
+- [ドメインを構成する](custom-domain-name-configure.md)
 - [MDM 機関を設定する](mdm-authority-set.md)
 - [グループの作成](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
 - [ポータル サイト アプリを構成する](company-portal-app.md)
@@ -55,6 +55,6 @@ macOS デバイスの登録をブロックする場合は、「[Set device type 
 
 その他のエンドユーザー タスクの詳細については、次の記事を参照してください。
 
-- [Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](https://docs.microsoft.com/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)
+- [Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](end-user-educate.md)
 - [iOS デバイスまたは macOS デバイスを Intune で使用する](https://docs.microsoft.com/intune-user-help/using-your-ios-or-mac-os-x-device-with-intune)
 

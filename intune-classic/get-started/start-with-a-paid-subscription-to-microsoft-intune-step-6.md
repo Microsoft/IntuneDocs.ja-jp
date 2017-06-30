@@ -1,5 +1,5 @@
 ---
-title: "ポリシーとアプリを展開する |Microsoft Docs"
+title: "ポリシーとアプリを展開する"
 description: "ポリシー設定を有効にし、デバイスが管理に登録されたらすぐに適用されるアプリを展開することができます。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 90ca67757367f89a7c1a0eebea70f107eb279378
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: cf86d82fe636d2641f82ca951e508bea93abf683
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -40,7 +40,7 @@ Intune へのアプリの登録を開始する前に、ポリシー設定とア�
 - [iOS](/intune-classic/deploy-use/ios-policy-settings-in-microsoft-intune)
 - [Android および Samsung KNOX Standard](/intune-classic/deploy-use/android-policy-settings-in-microsoft-intune)
 - [Android for Work](/intune-classic/deploy-use/android-for-work-policy-settings-in-microsoft-intune)
-- Windows 10 (PC およびモバイル)
+- [Windows 10 (PC とモバイル)](/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)
 - [Windows 8.1](/intune-classic/deploy-use/windows-configuration-policy-settings-in-microsoft-intune)
 - [Windows Phone 8.1](/intune-classic/deploy-use/windows-phone-8-1-policy-settings-in-microsoft-intune)
 - [Windows チーム](/intune-classic/deploy-use/windows-team-configuration-policy-settings-in-microsoft-intune)
@@ -73,5 +73,5 @@ Intune にアプリを追加した後で、次の 2 つの方法で管理対象�
 
 >[!div class="step-by-step"]
 
->[&larr;**ユーザーとデバイスを整理する**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**ポータル サイトをカスタマイズする** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
+>[&larr;**ユーザーとデバイスを整理する**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**ポータル サイトをカスタマイズする** &rarr;](/intune/company-portal-customize)  
 

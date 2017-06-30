@@ -1,11 +1,11 @@
 ---
-title: "Android 用の Pulse Secure を使用したアプリごとの VPN | Microsoft Docs"
+title: "Pulse Secure を使用した Android のアプリごとの VPN"
 description: "Intune で管理する、アプリごとの VPN プロファイルを Android デバイスに作成できます。"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,10 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6786ac87c34e913ba71cd203f431f746df816459
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 262cc461d5c1790fdfb162d5453a9cebd48271c4
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -45,7 +45,7 @@ Android デバイスまたはユーザー グループにポリシーをデプ�
 
 > [!NOTE]
 >
-> VPN プロファイル名は、次の手順で使用するためメモしておきます。 たとえば、MyAppVpnProfile などです。
+> VPN プロファイルの作成時に指定した**VPN 接続名 (ユーザーに表示される)** の値を書き留めてください。 これは次の手順で必要になります。 たとえば、**MyAppVpnProfile** です。
 
 ### <a name="step-2-create-a-custom-configuration-policy"></a>手順 2: カスタム構成ポリシーを作成する
 
@@ -55,7 +55,7 @@ Android デバイスまたはユーザー グループにポリシーをデプ�
    4. 設定の名前を入力します。
    5. **[データ型]** に **[文字列]** を指定します。
    6. **[OMA-URI]** には、**./Vendor/MSFT/VPN/Profile/*Name*/PackageList** の文字列を指定します。ここの *Name* は手順 1 でメモした VPN プロファイル名です。 この例では、文字列は **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList** になります。
-   7.    **[値]** には、プロファイルと関連付けるセミコロンで区切られたパッケージの一覧を入力します。 たとえば、Excel と Google Chrome ブラウザーで VPN 接続を使用するには、「**com.microsoft.office.excel;com.android.chrome**」と入力します。
+   7.   **[値]** には、プロファイルと関連付けるセミコロンで区切られたパッケージの一覧を入力します。 たとえば、Excel と Google Chrome ブラウザーで VPN 接続を使用するには、「**com.microsoft.office.excel;com.android.chrome**」と入力します。
 
 ![Android のアプリごとの VPN カスタム ポリシーの例](./media/android_per_app_vpn_oma_uri.png)
 

@@ -1,12 +1,12 @@
 ---
-title: "オンプレミス EAS 用の Exchange Connector"
+title: "オンプレミス EAS を Intune と接続する Exchange Connector のセットアップ"
 titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Exchange ActiveSync MDM - Connector ツールを使用して、Intune 管理コンソールと社内の Exchange Server 間の通信を有効にします"
+description: "Intune Azure プレビュー: Connector ツールである Exchange ActiveSync MDM を使用して、Intune とオンプレミス Exchange Server 間の通信を有効にします"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 06/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,20 +16,26 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 317b88e289fce216916dfa4ec3890ba7c9559c16
+ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
+ms.openlocfilehash: 9f4a310078a30f7dfefe66a9aba60cc74ad4e29b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="install-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure-preview"></a>Microsoft Intune Azure プレビューで Intune の内部設置型 Exchange Connector をインストールする
+# <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure-preview"></a>Microsoft Intune Azure プレビューで Intune のオンプレミス Exchange Connector をセットアップする
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+オンプレミス Exchange Server 環境では、オンプレミス Exchange Connector で Intune を使用して、デバイスが Intune に登録されていて Intune のデバイス コンプライアンス ポリシーに準拠しているかどうかに基づき、デバイスのオンプレミス Exchange のメールボックスへのアクセスを管理できます。 オンプレミス Exchange Connector はまた、Exchange Active Sync (EAS) の既存のレコードを Intune と同期することによって、オンプレミス Exchange Server に接続するモバイル デバイスを検出します。
 
+> [!IMPORTANT]
+> Intune は、サブスクリプションごとに任意の種類のオンプレミス Exchange Connector 接続を 1 つだけサポートします。
 
-モバイル デバイスのメールボックスをホストする Exchange Server と Microsoft Intune が通信できるように接続をセットアップするには、Intune 管理コンソールで内部設置型 Exchange Connector をダウンロードして構成する必要があります。 Intune は、サブスクリプションごとに任意の種類の Exchange Connector 接続を 1 つだけサポートします。
+オンプレミス Exchange Server と通信するために Microsoft Intune を有効にする接続を設定するには、次の手順が必要です。
+
+1.  Intune ポータルから、Intune のオンプレミス Exchange Connector をダウンロードします。
+2.  Intune のオンプレミス Exchange Connector をインストールし、構成します。
+3.  Exchange 接続を確認します。
 
 ## <a name="on-premises-exchange-connector-requirements"></a>内部設置型 Exchange Connector の要件
 以下の表に、内部設置型 Exchange Connector をインストールするコンピューターの要件を示します。
@@ -39,8 +45,8 @@ ms.lasthandoff: 05/23/2017
 |Operating systems|Intune は、Windows Server 2008 SP2 64 ビット、Windows Server 2008 R2、Windows Server 2012、または Windows Server 2012 R2 の任意のエディションを実行しているコンピューター上の内部設置型 Exchange Connector をサポートします。<br /><br />Server Core インストールでは、Connector はサポートされません。|
 |Microsoft Exchange|内部設置型 Connector には、Microsoft Exchange 2010 SP1 以降または従来の Exchange Online Dedicated が必要です。 Exchange Online Dedicated 環境が**新しい**構成か**従来の**構成かを確認するには、アカウント マネージャーに問い合わせてください。|
 |モバイル デバイス管理機関| [モバイル デバイス管理機関を Intune に設定します](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set)。|
-|ハードウェア|コネクタをインストールするコンピューターには、1.6 GHz の CPU と 2 GB の RAM と 10 GB の空きディスク容量が必要です。|
-|Active Directory の同期|Connector を使用して Intune を Exchange Server に接続するには、[Active Directory の同期をセットアップ](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3)して、ローカル ユーザーとセキュリティ グループが Azure Active Directory のインスタンスと同期されるようにする必要があります。|
+|ハードウェア|コネクタをインストールするコンピューターには、1.6 GHz の CPU と 2 GB の RAM と 10 GB の空きディスク容量が必要です。|users-permissions-add.md
+|Active Directory の同期|Connector を使用して Intune を Exchange Server に接続するには、[Active Directory の同期をセットアップ](users-permissions-add.md)して、ローカル ユーザーとセキュリティ グループが Azure Active Directory のインスタンスと同期されるようにする必要があります。|
 |その他のソフトウェア|コネクタをホストするコンピューターに、Microsoft .NET Framework 4.5 および Windows PowerShell 2.0 の完全インストールがインストールされている必要があります。|
 |Network (ネットワーク)|コネクタをインストールするコンピューターは、Exchange Server をホストするドメインと信頼関係があるドメインに参加している必要があります。<br /><br />コンピューターは、ポート 80 と 443 でファイアウォールとプロキシ サーバー経由で Intune サービスにアクセスできるように構成する必要があります。 Intune によって使用されるドメインには、manage.microsoft.com、&#42;manage.microsoft.com、および &#42;.manage.microsoft.com が含まれます。|
 
@@ -65,17 +71,18 @@ Intune Exchange Connector が使用する Active Directory ユーザー アカ�
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>内部設置型 Exchange Connector ソフトウェア インストール パッケージのダウンロード
 
-1. 内部設置型 Exchange Connector のサポートされている Windows Server オペレーティング システムで、Exchange Server を使用するライセンスを持つ Exchange テナント内の管理者であるユーザー アカウントを使用して、[Azure Portal](http://portal.azure.com) を開きます。
+1. オンプレミス Exchange Connector のサポートされている Windows Server オペレーティング システムで、Exchange Server を使用するライセンスを持つオンプレミス Exchange Server 内の管理者であるユーザー アカウントを使用して、[Azure Portal](http://portal.azure.com) を開きサインインします。
 
-2.  **[条件付きアクセス]** ワークロードを選択します。
-3.  Azure Portal で、**[条件付きアクセス]** ワークロードを選択して、**[オンプレミス]** ブレードを開きます。
+2. 左側のメニューから **[その他のサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
 
-4. **[セットアップ]** セクションで、**[Exchange ActiveSync のオンプレミス コネクタ]** を選択し、**[オンプレミス コネクタをダウンロードします]** を選択します。
+3. **[Intune]** を選択して Intune ダッシュボードを開き、**[オンプレミス アクセス]** を選択します。
 
-4.  内部設置型 Exchange Connector は、開いたり保存したりできる圧縮 (.zip) フォルダーに含まれています。 **[ファイルのダウンロード]** ダイアログ ボックスで **[保存]** を選んで、圧縮フォルダーを安全な場所に保存します。
+4. **[オンプレミス アクセス - Exchange ActiveSync のコネクタ]** ブレードで、**[セットアップ]** セクションから **[オンプレミス コネクタをダウンロードします]** を選択します。
 
-> [!IMPORTANT]
-> オンプレミス Exchange Connector フォルダー内のファイルの名前を変更したり、ファイルを移動したりしないでください。 フォルダーの内容を移動したり、名前を変更したりすると、インストールが失敗します。
+5.  内部設置型 Exchange Connector は、開いたり保存したりできる圧縮 (.zip) フォルダーに含まれています。 **[ファイルのダウンロード]** ダイアログ ボックスで **[保存]** を選んで、圧縮フォルダーを安全な場所に保存します。
+
+    > [!IMPORTANT]
+    > オンプレミス Exchange Connector フォルダー内のファイルの名前を変更したり、ファイルを移動したりしないでください。 フォルダーの内容を移動したり、名前を変更したりすると、Exchange Connector のインストールが失敗します。
 
 ## <a name="install-and-configure-the-intune-on-premises-exchange-connector"></a>Intune の内部設置型 Exchange Connector のインストールと構成
 次の手順を実行して、Intune の内部設置型 Exchange Connector をインストールします。 内部設置型 Exchange Connector は、Intune サブスクリプション 1 つで 1 台のコンピューターに 1 回だけインストールできます。 内部設置型 Exchange Connector をもう 1 つ構成しようとすると、新しい接続で元の接続が置き換えられます。
@@ -120,7 +127,8 @@ Intune Exchange Connector が使用する Active Directory ユーザー アカ�
 
     8. **[接続]**を選びます。
 
-接続が構成されるまでに数分かかることがあります。
+    > [!NOTE]
+    > 接続が構成されるまでに数分かかることがあります。
 
 接続の構成中、Exchange Connector にインターネットへのアクセスに必要なプロキシの設定が保存されます。 プロキシの設定を変更した場合は、Exchange Connector に更新されたプロキシ設定が適用されるように、Exchange Connector を構成し直す必要があります。
 
@@ -131,7 +139,9 @@ Exchange Connector が接続をセットアップすると、Exchange Connector 
 
 ## <a name="validate-the-exchange-connection"></a>Exchange 接続を確認する
 
-Exchange Connector を正常に構成したら、接続のステータスと前回の成功した同期の試行を表示できます。 [Azure Portal](http://portal.azure.com)で、**[Intune]** > **[条件付きアクセス]** ワークロードの順に選択します。 **[セットアップ]** の **[Exchange On-premises Connector]** を選択し、接続がアクティブと表示されていることを確認します。
+Exchange Connector を正常に構成したら、接続のステータスと前回の成功した同期の試行を表示できます。 Exchange Connector 接続を確認するには、以下のことを行います。
+
+- Intune ダッシュボードで、**[オンプレミス アクセス]** を選択します。 **[管理]** で、**[Exchange On-Premises のアクセス]** を選択して接続状態を確認します。
 
 また、前回いつ同期が完了したかも確認することができます。
 

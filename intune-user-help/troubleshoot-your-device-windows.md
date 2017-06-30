@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,20 +17,22 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9c3276885a588e964f30b871fd1ee91ff83f3676
+ms.sourcegitcommit: 02018f2f96dbd94c337dd28e7ed111666841aa96
+ms.openlocfilehash: 526cfed5e8f42d739c57882b454745ba5b20181c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/05/2017
 
 
 ---
 
 # <a name="fix-common-issues-with-your-windows-device"></a>Windows デバイスに関する一般的な問題を解決する
 
-Windows デバイスで発生する問題の一部は、トラブルシューティングによって解決できる場合があります。 以下に、まず自分で解決を試みることができる一般的な問題をいくつか挙げます。 さらに複雑な問題については、[ポータル Web サイト](http://portal.manage.microsoft.com)の連絡先情報を使用して IT 管理者に問い合わせることをお勧めします。
+Windows デバイスで発生する問題の一部は、トラブルシューティングによって解決できる場合があります。 以下に、まず自分で解決を試みることができる一般的な問題をいくつか挙げます。 さらに複雑な問題については、[ポータル Web サイト](https://portal.manage.microsoft.com)の連絡先情報を使用して IT 管理者に問い合わせることをお勧めします。
 
 - [Windows 10 デバイスが登録されない](troubleshoot-your-windows-10-device-windows.md)
 - [Windows デバイスを更新する必要がある](you-need-to-update-your-windows-device.md)
+- [ポータル サイト アプリから、IT 管理者にログを送信する必要がある](send-logs-to-your-it-admin-cp-windows.md)
+- [設定アプリから、IT 管理者にログを送信する必要がある](send-logs-to-your-it-admin-settings-windows.md)
 - [使用している Windows のバージョンがまだサポートされていない](your-windows-version-isnt-yet-supported.md)
 - [Windows の暗号化を有効にする必要がある](you-need-to-enable-windows-encryption.md)
 - [デバイスにはマルウェア対策ソフトウェアが必要](your-device-needs-antimalware-software.md)

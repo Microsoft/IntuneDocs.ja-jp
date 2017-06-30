@@ -1,7 +1,7 @@
 ---
 title: "デバイス コンプライアンスを監視する方法"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: デバイス コンプライアンスを監視する方法。"
+titleSuffix: Intune on Azure
+description: "デバイス コンプライアンスを監視する方法を説明します。&quot;"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -16,19 +16,19 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e073ca318d7db23239fc68b79718198dbee54b6e
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 8f18bfa7fb045dbad4ab785c2c8e1bc13fc439db
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
-# <a name="how-to-monitor-device-compliance-in-intune-azure-preview"></a>Intune Azure プレビューでデバイス コンプライアンスを監視する方法
+# <a name="how-to-monitor-device-compliance-in-intune"></a>Intune でデバイス コンプライアンスを監視する方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 **[概要]** ブレードでは、**コンプライアンス プロファイル**の状態の概要を確認できます。
-対話形式でグラフをクリックスルーして、詳細にドリルダウンできます。 複数のコンプライアンス プロファイルを構成している場合は、ポリシー ブレードに移動し、**[管理]** セクションで **[レポート]** を選択して、各ポリシーの状態を表示することもできます。  プレビューで表示できるレポートの詳細を以下に示します。
+対話形式でグラフをクリックスルーして、詳細にドリルダウンできます。 複数のコンプライアンス プロファイルを構成している場合は、ポリシー ブレードに移動し、**[管理]** セクションで **[レポート]** を選択して、各ポリシーの状態を表示することもできます。  表示できるレポートの詳細を以下に示します。
 
 ##  <a name="device-compliance"></a>デバイスのポリシー準拠
 

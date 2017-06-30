@@ -1,6 +1,6 @@
 ---
 title: "Exchange On-Premises および Exchange Online の条件付きアクセス コンプライアンスを監視する"
-titleSuffix: Intune Azure preview
+titleSuffix: Intune on Azure
 description: "Intune Azure ポータルを使用して、Exchange On-Premises および Exchange Online の条件付きアクセス コンプライアンスを監視します"
 keywords: 
 author: andredm7
@@ -15,15 +15,15 @@ ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d170958bbdc00423081aa606c9c7f4e7a8ec4b06
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 2ec9bcc605486258203f49f9f7631bd2a04cdf22
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
-# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune-azure-preview"></a>Intune Azure プレビューで Exchange On-Premises および Exchange Online の条件付きアクセス コンプライアンスを監視する
+# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Intune で Exchange On-Premises および Exchange Online の条件付きアクセス コンプライアンスを監視する
 
 Intune 1704 リリース以降では、管理者は、内部設置型 Exchange Connector またはサービス間コネクタ (Exchange Online Connector) を使って、Intune と同期化される Exchange ActiveSync デバイス レコードに関するレポート情報を見ることができます。 条件付きアクセス コンプライアンス レポートでは、さまざまな同期状態のデバイスの概要が提供されます。
 

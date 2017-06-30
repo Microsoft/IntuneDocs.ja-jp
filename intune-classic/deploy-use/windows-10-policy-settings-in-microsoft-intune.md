@@ -1,5 +1,5 @@
 ---
-title: "Windows 10 ポリシー設定 | Microsoft Docs"
+title: "Windows 10 ポリシー設定"
 description: "このトピックのポリシー設定の一覧を、登録済みの Windows 10 デスクトップおよび Windows 10 Mobile デバイスの組み込み設定およびユーザー設定構成に役立ててください。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: dd81102eb768ab8ad5f9ee1d2f122f15a8e17b89
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 85612fc63b3fb738e6135ac71065edc06169fa9e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -123,7 +123,7 @@ Windows 10 用の Microsoft Intune **全般構成ポリシー**を使用して�
 |**Internet Explorer へのイントラネット トラフィックの送信を許可する**|ユーザーが Internet Explorer でイントラネット Web サイトを開けるようになります。<br>(Windows 10 デスクトップのみ)|
 |**追跡禁止を許可する**|ユーザーがアクセスする Web サイトへトラッキング拒否ヘッダーを送信できるように、Edge ブラウザーを構成します。|
 |**SmartScreen を有効にする**||
-|**アクティブ スクリプティングを使用する**|JavaScript などのスクリプトが Edge ブラウザーで実行できるようにします。|
+|**アクティブ スクリプティングを使用する**|JavaScript などのスクリプトを Edge ブラウザーで実行できるようにします。|
 |**ポップアップを許可する**|Windows 10 デスクトップのみに適用|
 |**Cookie を使用する**||
 |**オートコンプリートを使用する**|ユーザーがブラウザーのオートコンプリートの設定を変更できるようにします。<br>(Windows 10 デスクトップのみ)|

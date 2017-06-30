@@ -1,5 +1,5 @@
 ---
-title: "VPN 接続 | Microsoft Docs"
+title: "VPN 接続"
 description: "組織内のユーザーとデバイスに VPN 設定を展開するには、VPN プロファイルを使用します。"
 keywords: 
 author: lleonard-msft
@@ -15,10 +15,10 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 51096dedbc29726b2622e0a156b0d2516522e497
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e1498cb88fe99129a5ee7f24b618f78fefcf42a6
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

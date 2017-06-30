@@ -1,5 +1,5 @@
 ---
-title: "リモート ワイプを使用したデータ保護 | Microsoft Docs"
+title: "リモート ワイプを使用したデータ保護"
 description: "Intune には会社の重要なデータを削除し、数多くの会社リソースへのアクセスを削除する、選択的なワイプ機能とフル ワイプ機能が備わっています。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b3aeb3e81a14b0c5e461422741d62c02ab635f7e
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 9d03f3936d608b9d526724eccbbdadbe030b53b8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

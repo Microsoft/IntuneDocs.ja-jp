@@ -1,5 +1,5 @@
 ---
-title: "Windows ポリシー設定 | Microsoft Docs"
+title: "Windows ポリシー設定"
 description: "Intune の Windows 全般構成ポリシー (Windows 8.1 以降) を使用して、登録済みの Windows 8 および Windows 8.1 デバイスの設定を構成します。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d95852c20b98ee86552672cf03364980f06f010a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: ab39a1847dbba495b4946d12b96b6f8c724f38d8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

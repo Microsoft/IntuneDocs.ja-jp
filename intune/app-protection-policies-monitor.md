@@ -1,7 +1,7 @@
 ---
 title: "アプリ保護ポリシーを監視する方法"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: ポリシーが割り当てられているユーザーの数を確認し、詳細を調べるためにドリルダウンします。"
+titleSuffix: Intune on Azure
+description: "ポリシーを持つユーザー数を確認し、詳細を調べるためにドリルダウンします。&quot;"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -16,18 +16,18 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1e7294e5c7bb1136718ca6d651d9375a22796fa7
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: de40d149818b2655a8fc3b647a7e850973814165
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="how-to-monitor-app-protection-policies"></a>アプリ保護ポリシーを監視する方法
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-このトピックでは、**Azure で Intune プレビューを使用していない場合に**、従来の Intune コンソールで[アプリ保護ポリシーを作成する方法](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)について説明します。
+このトピックでは、**Azure Portal を使用していない場合に**、Intune のクラシック コンソールで[アプリ保護ポリシーを作成する方法](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)について説明します。
 
 
 [Azure Portal](https://portal.azure.com) の Intune アプリ保護ブレードでユーザーに適用したモバイル アプリ管理 (MAM) ポリシーのコンプライアンス状態を監視できます。 MAM ポリシーによって影響を受けるユーザー、コンプライアンスの状態、ユーザーに対して発生する可能性がある問題に関する情報を見つけることができます。
@@ -43,7 +43,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="summary-view"></a>概要ビュー
 
 1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
+2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[モバイル アプリ]** を選択します。
 4. **[モバイル アプリ]** ワークロードで、**[監視]** > **[アプリ保護ユーザー状態]** の順に選択して、概要ビューを表示します。
 

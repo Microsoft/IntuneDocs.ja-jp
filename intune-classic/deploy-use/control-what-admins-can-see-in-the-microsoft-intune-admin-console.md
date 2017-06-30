@@ -1,5 +1,5 @@
 ---
-title: "管理者の役割用のコンソール ビューをカスタマイズする | Microsoft Docs"
+title: "管理者の役割用のコンソール ビューをカスタマイズする"
 description: "このトピックは、Intune 管理コンソール ビューをフィルター処理して、管理者がそれぞれの役割に応じて必要な項目のみが表示されるように設定するときに役立ちます。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1ab4c0a7ae79d0d3396efe7c54deaf1d794a5aeb
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 9b2016bc4f2c7ef63722becc413422d618939336
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

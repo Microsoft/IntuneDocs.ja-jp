@@ -1,7 +1,7 @@
 ---
 title: "Apple Configurator のシリアル番号を追加する"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Apple Configurator を使用して企業所有の iOS デバイスにシリアル番号を追加する方法について説明します。"
+titleSuffix: Intune on Azure
+description: "Apple Configurator を使用して企業所有の iOS デバイスにシリアル番号を追加する方法について説明します。&quot;"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -16,17 +16,17 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e3d56d93e2e229faad8effa63eeb91e627468a3a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 689008f278e676ce0bab075c6ad6b54748e56313
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="add-apple-configurator-serial-numbers"></a>Apple Configurator のシリアル番号を追加する
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 以下の手順を使用して、[セットアップ アシスタントで Apple Configurator を使用して企業所有の iOS デバイスを登録する](apple-configurator-setup-assistant-enroll-ios.md)必要がある場合に、シリアル番号を Intune に追加します。 シリアル番号は 1 つずつ追加することも、シリアル番号が含まれるコンマ区切り値 (CSV) ファイルをアップロードすることもできます。 追加したシリアル番号にはプロファイルを割り当てることができます。 プロファイルには、デバイスに適用する特定の管理設定が含まれています。
 

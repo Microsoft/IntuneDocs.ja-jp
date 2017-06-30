@@ -1,7 +1,7 @@
 ---
 title: "Windows 8.1 デバイス向けの Intune の VPN 設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Windows 8.1 デバイスで VPN 接続を構成するために使用できる Intune 設定について説明します。"
+titleSuffix: Intune on Azure
+description: "Windows 8.1 デバイスで VPN 接続の構成に使用できる Intune 設定について説明します。&quot;"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -16,17 +16,17 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 71e842d24e435c25bf24e453b36449c68d281370
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: d851a8900ae1e164cb22f1878b352c3e90096f73
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="vpn-settings-for-windows-81-devices-in-microsoft-intune"></a>Microsoft Intune での Windows 8.1 デバイス向けの VPN 設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 選択する設定によっては、以下の一覧に記載されている値の一部を構成できない場合もあります。
 

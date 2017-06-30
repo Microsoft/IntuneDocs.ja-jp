@@ -1,7 +1,7 @@
 ---
 title: "デバイス コンプライアンスの概要"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: このトピックは、Microsoft Intune でコンプライアンス ポリシーを作成するために必要な前提条件を理解するのに役立ちます"
+titleSuffix: Intune on Azure
+description: "このトピックを使用して、Microsoft Intune でコンプライアンス ポリシーを作成するために必要な前提条件を理解します&quot;"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -16,23 +16,23 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f59801abf29d15581fcdc577c5320942208595b1
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: aa9a5c8c44b82dcbc1ae7a4609b12e22c6599e9e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
-# <a name="get-started-with-device-compliance-in-intune-azure-preview"></a>Intune Azure プレビューでのデバイス コンプライアンスの概要
+# <a name="get-started-with-device-compliance-in-intune"></a>Intune でのデバイス コンプライアンスの概要
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 このトピックでは、以下について説明します。 
 
 - デバイスのコンプライアンス ポリシーの作成を開始するために必要な条件
-- Intune Azure プレビュー ポータルで表示できる項目と実行できる操作 
+- Intune Azure Portal で表示できる項目と実行できる操作の概要 
 
 デバイス コンプライアンスに詳しくない場合、[このトピック](device-compliance.md)はデバイス コンプライアンスの概要と組織での利用方法を学ぶのに役立ちます。
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 05/23/2017
 
 ##  <a name="azure-portal-workflow"></a>Azure Portal のワークフロー
 
-Intune Azure プレビュー ポータルでデバイス コンプライアンスを作成および管理する方法の概要を次に示します。
+Intune Azure Portal でデバイス コンプライアンスを作成および管理する方法の概要を次に示します。
 
 <!---### Overview
 

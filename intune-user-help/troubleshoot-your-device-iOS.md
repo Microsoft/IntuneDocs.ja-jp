@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/10/2017
+ms.date: 06/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,10 +18,10 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c06d03943863f6ab46a0943b08e1d986b210e58a
+ms.sourcegitcommit: 02018f2f96dbd94c337dd28e7ed111666841aa96
+ms.openlocfilehash: 3869659ea95f561365f40bcfcd164b82a7795ac0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/05/2017
 
 
 ---
@@ -32,6 +32,7 @@ iOS デバイスで発生する問題の一部は、トラブルシューティ�
 
 - [セキュリティを侵害された iOS デバイスを再接続する必要がある](how-to-reconnect-a-compromised-ios-device.md)
 - [IT 管理者にエラーを送信する必要がある](send-errors-to-your-it-admin-ios.md)
+- [Microsoft にエラーを送信する必要がある](send-logs-to-microsoft-ios.md)
 - [ポータル サイト アプリの使用中にエラーが発生する](you-get-an-error-while-using-the-company-portal-app-ios.md)
 - [登録するデバイスを特定する必要がある](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 - [デバイスのシリアル番号を検索する方法](how-do-i-find-the-serial-number-on-my-device-ios.md)

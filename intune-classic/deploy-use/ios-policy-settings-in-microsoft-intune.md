@@ -1,5 +1,5 @@
 ---
-title: "iOS ポリシー設定 | Microsoft Docs"
+title: "iOS ポリシー設定"
 description: "Intune で管理する iOS デバイスの設定と機能を制御するポリシーを作成します。"
 keywords: 
 author: robstackmsft
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3a59391aaf241e52f59bb3ff5de3eae84c496c51
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: ba270c2bb8780db6bc230022446f982b81f8a2ee
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -88,7 +88,7 @@ Microsoft Intune の **iOS 全般構成ポリシー**を使用して、次の設
 |**管理対象アプリがデータを iCloud に同期することを許可する**|Intune で管理するアプリがユーザーの iCloud アカウントにデータを同期することを許可します。|
 |**Handoff が別のデバイスで作業を継続することを許可する**|ユーザーがある iOS デバイスで開始した作業を別の iOS または Mac OS X デバイスで続行できるようにします。|
 |**iCloud の写真共有を許可する**|デバイスの **iCloud の写真共有**を無効にするには、**[いいえ]** に設定します。|
-|**iCloud フォト ライブラリを許可する**|**[いいえ]** に設定すると、ユーザーがクラウドに写真やビデオを保存できる iCloud フォト ライブラリが使用できなくなります。    これを **[いいえ]** に設定すると、iCloud フォト ライブラリからデバイスに完全にダウンロードされていない写真はすべてデバイスから削除されます。|
+|**iCloud フォト ライブラリを許可する**|**[いいえ]** に設定すると、ユーザーがクラウドに写真やビデオを保存できる iCloud フォト ライブラリが使用できなくなります。   これを **[いいえ]** に設定すると、iCloud フォト ライブラリからデバイスに完全にダウンロードされていない写真はすべてデバイスから削除されます。|
 
 ### <a name="application-settings-for-the-browser"></a>ブラウザーのアプリケーション設定
 すべての設定は、iOS 8.0 以降に適用されます。

@@ -1,11 +1,11 @@
 ---
-title: "モバイル デバイスの登録の前提条件 | Microsoft Docs"
+title: "モバイル デバイス登録の前提条件"
 description: "モバイル デバイス管理 (MDM) の前提条件の設定、およびさまざまなオペレーティング システムに登録する準備。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/21/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,10 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6877c5263f3c97b9cff295d62d39a365027151eb
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: ea6d7b9ffe698addc7ee317517abc7c760c232c0
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -46,15 +46,14 @@ Configuration Manager で Intune を管理するには
 ## <a name="step-1-enable-connections"></a>手順 1: 接続を有効にする
 
 モバイル デバイスの登録を有効にする前に、次のことが完了していることを確認してください。
-- [必要なネットワーク URL とポートの確認](../get-started/network-bandwidth-use.md)
-- [ドメイン名の追加と検証](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+- [必要なネットワーク URL とポートの確認](/intune/network-bandwidth-use)
+- [ドメイン名の追加と検証](/intune/custom-domain-name-configure)
 
 ## <a name="step-2-set-mdm-authority"></a>手順 2: MDM 機関を設定する
 MDM 機関では、一連のデバイスを管理するためのアクセス許可を持つ管理サービスを定義します。 MDM 機関のオプションには、Intune 単体で使用するか、Intune を Configuration Manager と連携させて使用する方法があります。 Configuration Manager を管理機関として設定した場合、モバイル デバイス管理のために使用できるサービスは他にありません。
 
 >[!IMPORTANT]
-> モバイル デバイスの管理に Intune のみ (オンライン サービス) を使用するか、System Center Configuration Manager と Intune との統合 (オンプレミス ソフトウェア ソリューションをオンライン サービスと組み合わせて使用) を使用するのかについて、慎重に検討します。 モバイル デバイス管理機関の設定後は、Microsoft サポートの支援がないと変更できません。 詳細については、「[不適切な MDM 機関の設定を選択した場合の対処方法](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)」を参照してください。
-
+> Configuration Manager 1610 以降のバージョンと Microsoft Intune バージョン 1705 では、MDM 機関の変更にあたって Microsoft サポートに問い合わせる必要はありません。また、既存の管理されたデバイスの登録を解除して再登録する必要もありません。 詳細については、「[不適切な MDM 機関の設定を選択した場合の対処方法](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)」を参照してください。
 
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[管理]** &gt; **[モバイル デバイス管理]** の順に選択します。
 
@@ -116,7 +115,7 @@ MDM 機関では、一連のデバイスを管理するためのアクセス許�
 
 ## <a name="step-5-assign-user-licenses"></a>手順 5: ユーザー ライセンスを割り当てる
 
-**Office 365 管理ポータル**を使用して、手動でクラウドベースのユーザーを追加し、クラウドベースのユーザー アカウントと、オンプレミスの Active Directory から Azure Active Directory (Azure AD) に同期されているアカウントの両方にライセンスを割り当てます。 [オンプレミスのユーザーを Azure AD と同期する](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad)ことができます。
+**Office 365 管理ポータル**を使用して、手動でクラウドベースのユーザーを追加し、クラウドベースのユーザー アカウントと、オンプレミスの Active Directory から Azure Active Directory (Azure AD) に同期されているアカウントの両方にライセンスを割り当てます。 [オンプレミスのユーザーを Azure AD と同期する](/intune/users-permissions-add#how-to-sync-on-premises-users-with-azure-ad)ことができます。
 
 1.  テナント管理者の資格情報を使用して、[Office 365 管理ポータル](https://portal.office.com/Admin/Default.aspx)にサインインします。
 
@@ -154,7 +153,13 @@ MDM 機関を設定したら、組織がサポートするオペレーティン�
 
 ## <a name="what-to-do-if-you-choose-the-wrong-mdm-authority-setting"></a>不適切な MDM 機関の設定を選択した場合の対処方法
 
-不適切な MDM 機関の設定を選択したため、変更する必要がある場合は、必ず、Microsoft サポートにお問い合わせください。 自分で設定を変更することはできません。 Microsoft サポートにお問い合わせいただく前に、以下の情報を確認してください。この情報は、Microsoft サポートで変更する際に必要になります。
+不適切な MDM 機関の設定を選択したために変更する必要がある場合は、以下のいずれかの操作を行います。
+
+### <a name="change-the-mdm-authority-yourself"></a>MDM 機関を変更する
+Configuration Manager バージョン 1610 および Microsoft Intune バージョン 1705 より、Microsoft サポートに問い合わせたり、既存の管理されたデバイスを登録解除して再登録したりすることなく、MDM 機関を Microsoft Intune から Configuration Manager (ハイブリッド) またはその逆に変更できます。 詳細については、「[MDM 機関を変更する]( /sccm/mdm/deploy-use/change-mdm-authority)」を参照してください。
+
+### <a name="contact-microsoft-support"></a>Microsoft サポートに問い合わせる
+バージョン 1610 より前の Configuration Manager をお持ちの場合には、Microsoft サポートにお問い合わせください。 自分で設定を変更することはできません。 Microsoft サポートにお問い合わせいただく前に、以下の情報を確認してください。この情報は、Microsoft サポートで変更する際に必要になります。
 
 MDM 機関をリセットする場合に適用できる方法は 3 つあります。 サポートを依頼する際に、状況に適用する方法を選択する必要があります。 リストに該当するものがない場合は、Microsoft サポートにお知らせください。
 
@@ -166,7 +171,7 @@ Microsoft サポートが確認をお願いする情報は次のとおりです�
 
 共存を使用している場合は、Intune と Office 365 の両方のチェックリストを確認する必要があります。
 
-### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>Intune から Configuration Manager へのMDM 機関のリセット
+#### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>Intune から Configuration Manager へのMDM 機関のリセット
 
 MDM 機関をリセットするために Microsoft サポートにお問い合わせいただく前に、次の手順を完了してください。
 
@@ -180,7 +185,7 @@ MDM 機関をリセットするために Microsoft サポートにお問い合�
 - **[ポリシー]** > **[構成ポリシー]** で、MDM デバイスのポリシーをすべて削除します。
 - **[アプリ]** > **[管理されているソフトウェア]** で、MDM デバイスの公開済みアプリケーションをすべて削除します。
 
-### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>Configuration Manager から Intuneへの MDM 機関のリセット
+#### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>Configuration Manager から Intuneへの MDM 機関のリセット
 
 MDM 機関をリセットするために Microsoft サポートにお問い合わせいただく前に、次の手順を完了してください。
 
@@ -194,7 +199,7 @@ MDM 機関をリセットするために Microsoft サポートにお問い合�
 - SMS Executive サービスを再起動します。
 - プロセスの完了後に、Configuration Manager ライセンスが削除されたことを確認できるように、ユーザーの例をいくつか提供します。
 
-### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Office 365 から Configuration Manager への MDM 機関のリセット
+#### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Office 365 から Configuration Manager への MDM 機関のリセット
 
 1. [https://protection.office.com](https://protection.office.com) に移動します。
 2. **[セキュリティ ポリシー]** タブを選択し、**[デバイス管理]** を選択します。
@@ -205,7 +210,7 @@ MDM 機関をリセットするために Microsoft サポートにお問い合�
 >[!NOTE]
 >iOS APsN 証明書は削除できません。これは、アカウントにアタッチされたままです。
 
-### <a name="next-steps-for-mdm-authority-resets"></a>MDM 機関のリセットの次のステップ
+#### <a name="next-steps-for-mdm-authority-resets"></a>MDM 機関のリセットの次のステップ
 
 Microsoft サポートで適切なチェックリストの項目が確認されてから、MDM 機関がリセットされるまでに最大で 3 営業日かかる場合がありますが、通常は 1 日以内にリセットされます。
 

@@ -1,5 +1,5 @@
 ---
-title: "Intune へのデバイスの登録での多要素認証 | Microsoft Docs"
+title: "Intune へのデバイスの登録での多要素認証"
 description: "デバイス登録で Azure AD の多要素認証を要求する方法。"
 keywords: 
 author: robstackmsft
@@ -14,10 +14,10 @@ ms.assetid: 47abdabd-dcd6-48d8-aade-3f3eefb92ee1
 ROBOTS: 
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: dba070ef76de8015b347e760b424a5e28ce6ddec
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 805ca79932788786636d365109e06aee836d8a0e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

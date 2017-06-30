@@ -1,6 +1,6 @@
 ---
 
-title: "PC クライアント ソフトウェアをインストールする | Microsoft Docs"
+title: "PC クライアント ソフトウェアをインストールする"
 description: "このガイドは、Microsoft Intune クライアント ソフトウェアによって、Windows PC を管理させる場合に役立ちます。"
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 19cfb242fbd1be613b38c8aa06c12b741bc6cd74
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 356ada64224f8982baf93ddaccb44df123c4568c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Windows PC に Intune ソフトウェア クライアントをインストールする
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune クライアント ソフトウェアをインストールして Windows PC を登録します。 Intune クライアント ソフトウェアは、次の方法を使用してインストールできます。
 
 - IT 管理者の場合、次のうちいずれか 1 つの方法でインストール: 手動インストール、グループ ポリシーを使用したインストール、またはディスク イメージに含まれるインストール

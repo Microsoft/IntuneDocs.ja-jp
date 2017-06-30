@@ -1,12 +1,12 @@
 ---
-title: "iOS アプリ間のデータ転送を管理する | Intune Azure プレビュー"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: このトピックを使用すると、iOS の開く機能とモバイル アプリ管理ポリシーを使用してアプリ間のデータ転送を管理する方法を把握できます。"
+title: "iOS アプリ間のデータ転送を管理する"
+titleSuffix: Intune on Azure
+description: "このトピックを使用すると、iOS の Open-in 機能とモバイル アプリ管理ポリシーを使用してアプリ間のデータ転送を管理する方法を理解できます。&quot;"
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,10 +16,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44747236ba1bda84ccb01f613e1702c536720a2c
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e3c588d2237f48501d78af364760acf1ef290639
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -36,7 +36,7 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 ##  <a name="using-app-protection-with-ios-apps"></a>iOS アプリでのアプリ保護の使用
 アプリ保護ポリシーは、iOS の **Open in Management** 機能と共に使用して、以下のように会社データを保護できます。
 
--   **MDM ソリューションで管理されていない従業員所有のデバイス:** アプリ保護ポリシー設定を **[Allow app to transfer data to only managed apps (アプリで管理対象アプリへのデータ転送のみ許可する)]** に設定できます。 エンドユーザーは保護されたファイルを、ポリシーで管理されていないアプリで開くことはできません。
+-   **MDM ソリューションで管理されていない従業員所有のデバイス:** アプリ保護ポリシー設定を **[Allow app to transfer data to only Policy Managed apps]\(アプリでポリシー管理型アプリへのデータ転送のみ許可する\)** に設定できます。 ポリシー管理型アプリで Open-In 動作を行うと、その他のポリシー管理型アプリのみが共有対象のオプションとして表示されます。 ネイティブ メールで、ユーザーが OneDrive からポリシー保護ファイルを添付ファイルとして送信すると、そのファイルは読み取り不能になります。
 
 -   **Intune で管理されているデバイス:** Intune で登録したデバイスの場合、アプリ保護ポリシーを使用するアプリと、Intune で展開された管理対象の他の iOS アプリの間で自動的にデータを転送できるようになります。 アプリ保護ポリシーを使用するアプリ間でデータを転送できるようにするには、**[Allow app to transfer data to only managed apps (アプリで管理対象アプリへのデータ転送のみ許可する)]** 設定を有効にします。 **Open in Management** 機能を使用して、Intune で展開されているアプリ間のデータ転送を制御できます。   
 

@@ -1,6 +1,6 @@
 ---
-title: "有料サブスクリプションに切り替える | Microsoft Docs"
-description: "Intune の 30 日間無料評価版を設定した後のサブスクリプションとライセンスについて知っておくべきこと。"
+title: "有料サブスクリプションに切り替える"
+description: "Intune の 30 日間無料試用版を設定した後のサブスクリプションとライセンスについて知っておくべきこと。"
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -14,10 +14,10 @@ ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 4d9adaa6cfc3c3c575e2bbe48a8a62945e7afff7
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 0ff65ec54ed6fe8701995d6ad629b34a1ba013b8
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -28,9 +28,8 @@ ms.lasthandoff: 05/23/2017
 
 対象となるプランで Microsoft Intune のライセンスを 150 個以上ご購入いただいた場合に、"FastTrack センター特典" をご利用いただけます。これは、Intune 向けに環境を整えるために Microsoft スペシャリストの支援を受けることができるサービスです。 「[Enterprise Mobility + Security (EMS) 用の FastTrack センター特典](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems)」を参照してください。
 
-次の方法で Intune 無料評価版を有料サブスクリプションに変換できます。
-
--   **Intune のサブスクリプション** - ユーザーごとにライセンスが付与されます。 詳細については、[Microsoft Intune の購入方法に関するページ](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune)を参照し、Intune の使用を開始する際の追加の構成手順を確認してください。
+次の方法で Intune 無料試用版を有料サブスクリプションに変換できます。 (/intune/setup-steps)
+-   **Intune のサブスクリプション** - ユーザーごとにライセンスが付与されます。 詳細については、[Microsoft Intune の購入方法に関するページ](/intune/setup-steps)を参照し、Intune の使用を開始する際の追加の構成手順を確認してください。
 
 -   **Enterprise Mobility + Security** - Intune、Azure Active Directory Premium、Azure RMS サービスが提供されます。 詳細については、Microsoft の担当者または最寄りのリセラーに連絡するか、[EMS の機能](https://www.microsoft.com/server-cloud/enterprise-mobility/overview.aspx)と[価格](https://www.microsoft.com/server-cloud/products/enterprise-mobility-suite/Purchasing.aspx)についてお読みください。
 

@@ -1,5 +1,5 @@
 ---
-title: "一般的なトラブルシューティングのヒント | Microsoft Docs"
+title: "一般的なトラブルシューティングのヒント"
 description: "Intune の問題を解決するための一般的なリソース。"
 keywords: 
 author: arob98
@@ -15,10 +15,10 @@ ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 63bb7ca097390582d85f3ea7daced42d2a97fbb4
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: d348cc2850864206552bf53ab1beec9b9cb55bab
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -58,7 +58,7 @@ Microsoft Intune を展開した後、構成やクライアントのデバイス
   - [IT 管理者に Android の登録に関するエラーを送信する](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
   - [IT 管理者に iOS の登録に関するエラーを送信する](/intune-user-help/send-errors-to-your-it-admin-ios)
 
--   管理コンソール データ。たとえば、ポリシー実装の問題の場合は、「Microsoft Intune でユーザーとデバイスの管理にグループを使用する」に記載されている説明に従って、目的のポリシーとその状態を調べます。
+-   管理コンソール データ。たとえば、ポリシー実装の問題の場合は、「[Microsoft Intune でユーザーとデバイスの管理にグループを使用する](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)」に記載されている説明に従って、目的のポリシーとその状態を調べます。
 
 ## <a name="research-the-solution"></a>ソリューションの調査
 

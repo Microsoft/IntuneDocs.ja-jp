@@ -1,5 +1,5 @@
 ---
-title: "データ暗号化で会社のデータを保護する | Microsoft Docs"
+title: "データ暗号化で会社のデータを保護する"
 description: "このガイドでは、モバイル アプリでポリシーを使用してパスコードとデータ暗号化を強制することによりデータ損失から会社を保護する方法を説明します。"
 keywords: "暗号化, PIN, データ"
 author: arob98
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d1cffa0066ffcbb9f0aadcb387cefee1ffe1f47a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 42ae7cdedbcbd9bf6420ca9fd2cfa39a75174736
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -45,12 +45,12 @@ Microsoft Intune は、iOS または Android モバイル デバイスを完全�
 このガイドでは、デバイス管理ソリューションへの完全な登録を必要とせずに、機密データにアクセスするために従業員が使用しているモバイル アプリでポリシーを使用してパスコードとデータ暗号化を強制することにより、データ損失から会社を保護する方法を説明します。 Microsoft Intune では、[iOS](https://products.office.com/mobile/office-mobile-apps-for-ios) および [Android](https://products.office.com/mobile/office-mobile-apps-for-android) 用の Office モバイル アプリにモバイル アプリケーション管理 (MAM) ポリシーを設定できます。 これにより、モバイル デバイス管理ソリューションへのデバイスの登録をユーザーに要求しなくても O365 のデータを保護することができ、Office モバイル アプリの優れたエンド ユーザー エクスペリエンスを維持できます。
 
 ## <a name="how-do-i-do-it"></a>実行方法
-1.    [アプリ データを保護する方法を確認する](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-2.    [モバイル アプリ管理ポリシーを構成する準備](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
-3.    [モバイル アプリ管理ポリシーの作成および展開](/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
+1.  [アプリ データを保護する方法を確認する](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
+2.  [モバイル アプリ管理ポリシーを構成する準備](/intune-classic/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune)
+3.  [モバイル アプリ管理ポリシーの作成および展開](/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)
 
 ## <a name="additional-information"></a>追加情報:
-- [Microsoft Intune での MAM 対応アプリのエンド ユーザー エクスペリエンスについて確認する]/intune-classic/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
-- [Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める]/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+- [Microsoft Intune での MAM 対応アプリのエンド ユーザー エクスペリエンスについて確認します。](/intune-classic/eploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
+- [Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決めます。](/intune/apps-prepare-mobile-application-management)
 - [Microsoft Intune アプリケーション パートナー一覧を確認します。](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)
 

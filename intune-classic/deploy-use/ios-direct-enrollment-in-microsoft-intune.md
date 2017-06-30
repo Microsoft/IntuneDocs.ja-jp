@@ -1,5 +1,5 @@
 ---
-title: "iOS デバイスの直接登録 | Microsoft Docs"
+title: "iOS デバイスを直接登録する"
 description: "Apple Configurator ツールを使用して、企業所有の iOS デバイスを Mac コンピューターに USB で接続し、定義済みのポリシーで直接登録する。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ee0320db2c4a1a977326f62fcd20597fa39aba24
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 9909e1dd4f9891a2efb47383242ed7765d3f0291
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

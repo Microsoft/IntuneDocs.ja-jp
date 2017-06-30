@@ -1,5 +1,5 @@
 ---
-title: "Lookout for Work アプリを展開する | Microsoft Docs"
+title: "Lookout for Work アプリを展開する"
 description: "Android 用の Lookout for Work アプリを構成して展開します。"
 author: andredm7
 ms.author: andredm
@@ -14,10 +14,10 @@ ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 95f7c782558f98d5be3a89d24b9e9721a7bd40c0
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 5d4f496709a8607b0d6d473355c96e8fc502838b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -30,12 +30,12 @@ ms.lasthandoff: 05/23/2017
 
 ## <a name="android-google-play-store-app"></a>Android (Google Play ストア アプリ)
 
-1.    [Microsoft Intune 管理者コンソール](https://manage.microsoft.com)で、**[アプリ]** に移動し、**[アプリの追加]** を選択します。
-2.    発行元の **[ソフトウェア セットアップ]** ページで、**[外部リンク]** を選択し、URL "https://play.google.com/store/apps/details?id=com.lookout.enterprise" を指定します。
+1.  [Microsoft Intune 管理者コンソール](https://manage.microsoft.com)で、**[アプリ]** に移動し、**[アプリの追加]** を選択します。
+2.  発行元の **[ソフトウェア セットアップ]** ページで、**[外部リンク]** を選択し、URL "https://play.google.com/store/apps/details?id=com.lookout.enterprise" を指定します。
   >[!NOTE]
   >Managed Browser を要求するボックスをオンにしないでください。
 
-3.    **[ソフトウェアの説明]** ページで、次の情報を入力します。
+3.  **[ソフトウェアの説明]** ページで、次の情報を入力します。
   * **[発行元]:** Lookout Mobile Security
   * **[名前]:**   Lookout for Work
   * **[説明]:**  Lookout はモバイルの脅威に対する最適な保護を提供し、モバイル デバイスの安全を保ちます。 デバイスにインストールされた Lookout アプリは、デバイスを脅威から保護し、検出された脅威を管理者に通知します。

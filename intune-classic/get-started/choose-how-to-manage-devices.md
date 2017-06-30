@@ -1,5 +1,5 @@
 ---
-title: "デバイスを管理する方法を選択する | Microsoft Docs"
+title: "デバイスを管理する方法を選択する"
 description: "デバイスを登録および管理するさまざまな方法について説明します。"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: dfd79323c7db53cb3291f729878bcd1d36f93fe7
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 0dbe387ee6b8130e3dc64323f89b38e868087dfe
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -48,8 +48,8 @@ Windows PC を管理するには、2 つの選択肢があります。
 - Endpoint Protection および Windows ファイアウォール
 - TeamViewer ソフトウェアを使用したユーザーへのリモート アシスタンス
 
-それぞれの方法での管理機能の詳細については、「[Microsoft Intune の登録済みデバイス管理機能](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)」を参照してください。
-Intune がサポートしているデバイスと PC については、「[サポートされるモバイル デバイスとコンピューター](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices)」を参照してください。
+それぞれの方法での管理機能の詳細については、モバイル デバイスの管理に関するページを参照してください (/intune/supported-devices-browserssoft-intune)。
+Intune がサポートしているデバイスと PC については、「[サポートされるモバイル デバイスとコンピューター](/intune/supported-devices-browsers#intune-supported-devices)」を参照してください。
 
 ## <a name="next-steps"></a>次のステップ
 

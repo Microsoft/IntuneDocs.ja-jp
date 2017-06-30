@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Intune のリリース ノート | Microsoft Docs"
+title: "Microsoft Intune のリリース ノート"
 description: "Intune リリース ノート"
 keywords: 
 author: arob98
@@ -15,10 +15,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2c7563ba79819a59740ba81c078c5540d0792ee5
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 751bd0bc90b762c5b51b85fae2129e53773b54fe
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -78,7 +78,7 @@ Microsoft will continue to work closely with Samsung on a fix or additional work
 ## <a name="microsoft-intune-app-wrapping-tool-for-android-has-no-built-in-uninstall-capability"></a>Android 用の Microsoft Intune アプリ ラッピング ツールには、アンインストール機能が組み込まれていません。
 **問題:** **Android 用の Microsoft アプリ ラッピング ツール**には、ツールをアンインストールする機能が組み込まれていません。
 
-**対応策:** ツールがインストールされている場所を指定し、ディレクトリを削除します。 既定のインストール場所は、**C:\Program Files\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool です。
+**対応策:** ツールがインストールされている場所を指定し、ディレクトリを削除します。 既定のインストール場所は、**C:\Program Files\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool です。 アプリ ラッピング ツールの詳細については、「[アプリ ラッピング ツールで管理するために Android アプリを準備する](/intune/app-wrapper-prepare-android)」を参照してください。
 
 ## <a name="remote-assistance-is-not-available-on-computers-that-run-windows-8-or-windows-81"></a>Windows 8 または Windows 8.1 を実行するコンピューターでリモート アシスタンスを使用できません
 **問題:** このリリースでは、Windows 8 または Windows 8.1 を実行しているコンピューターでリモート アシスタンス機能を使用できません。

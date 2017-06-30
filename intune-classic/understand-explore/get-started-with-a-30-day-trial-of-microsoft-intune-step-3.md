@@ -1,6 +1,6 @@
 ---
-title: "無料試用版でユーザーとデバイスを編成するグループを作成する | Microsoft Docs"
-description: "Microsoft Intune の 30 日間無料評価版にサインアップするときに、デバイス グループとユーザー グループを作成する方法を説明します。"
+title: "無料試用版でユーザーとデバイスを編成するグループを作成する"
+description: "Microsoft Intune の 30 日間無料試用版にサインアップするときに、デバイス グループとユーザー グループを作成する方法を説明します。"
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -14,15 +14,15 @@ ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f6a5926876bdd7224d0e9bfef55aa86f51c87aff
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 084cc155a64a58582e3008df10e86c1e5266054d
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
-# <a name="create-groups-to-organize-evaluation-subscription-users-and-devices"></a>評価版のサブスクリプションのユーザーとデバイスを編成するグループを作成する
+# <a name="create-groups-to-organize-evaluation-subscription-users-and-devices"></a>試用版のサブスクリプションのユーザーとデバイスを編成するグループを作成する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 

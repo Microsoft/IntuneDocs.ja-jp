@@ -1,12 +1,12 @@
 ---
-title: "iOS Classroom アプリの Intune 設定 | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: iOS デバイスの Classroom アプリの設定を制御するために使用できる Intune 設定について説明します。"
+title: "iOS Classroom アプリの Intune 設定"
+titleSuffix: Intune on Azure
+description: "iOS デバイスの Classroom アプリの設定を制御するために使用できる Intune 設定について説明します。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,10 +16,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6f24636687291ff55686277c3f24b2774cfb32f4
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 7ea8e8d95f331cf75fe7111c8f8acdfe01877cdd
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 05/23/2017
 
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>iOS Classroom アプリの Intune 設定を構成する方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>概要
 [Classroom](https://itunes.apple.com/app/id1085319084) は、教師が教室で学習を指導し、生徒のデバイスを操作するのを支援するアプリです。 たとえば、教師はこのアプリを利用して次のことができます。
@@ -77,14 +77,14 @@ SDS は SIS の情報を同期し、それを Azure AD に保管します。 Azu
 ### <a name="configure-general-settings"></a>全般的な設定を構成する
 
 1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
-3.    **[Intune]** ブレードで、**[デバイスの構成]** を選択します。
-4.    **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
-5.    [プロファイル] ブレードで、**[プロファイルを作成します]** を選択します。
-6.    **[プロファイルを作成します]** ブレードで、iOS Education プロファイルの**名前**と**説明**を入力します。
-7.    **[プラットフォーム]** ドロップダウン リストで、**[iOS]** を選択します。
-8.    **[プロファイルの種類]** ドロップダウン リストで、**[教育]** を選択します。
-9.    **[設定]** > **[構成]** の順に選択します。
+2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
+3.  **[Intune]** ブレードで、**[デバイスの構成]** を選択します。
+4.  **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
+5.  [プロファイル] ブレードで、**[プロファイルを作成します]** を選択します。
+6.  **[プロファイルを作成します]** ブレードで、iOS Education プロファイルの**名前**と**説明**を入力します。
+7.  **[プラットフォーム]** ドロップダウン リストで、**[iOS]** を選択します。
+8.  **[プロファイルの種類]** ドロップダウン リストで、**[教育]** を選択します。
+9.  **[設定]** > **[構成]** の順に選択します。
 
 
 次に、教師の iPad と生徒の iPad の間の信頼関係を確立するための証明書が必要になります。 証明書は、ユーザー名とパスワードを入力することなく、デバイス間の接続を速やかに認証するために利用されます。
@@ -120,8 +120,8 @@ iOS Education プロファイルは PFX 証明書にのみ対応しています�
 
 ### <a name="configure-student-certificates"></a>生徒の証明書を構成する
 
-1.    **[教育]** ブレードで **[学生の証明書]** を選択します。
-2.    **[学生の証明書]** ブレードで、**[Student device certificates (学生デバイス証明書)]** の種類の一覧から **[1:1]** を選択します。
+1.  **[教育]** ブレードで **[学生の証明書]** を選択します。
+2.  **[学生の証明書]** ブレードで、**[Student device certificates (学生デバイス証明書)]** の種類の一覧から **[1:1]** を選択します。
 
 #### <a name="configure-student-root-certificate"></a>生徒のルート証明書を構成する
 
@@ -143,8 +143,8 @@ iOS Education プロファイルは PFX 証明書にのみ対応しています�
 
 ## <a name="finish-up"></a>完了
 
-1.    **[教育]** ブレードで [OK] を選択します。
-2.    **[プロファイルの作成]** ブレードで、**[作成]** を選択します。
+1.  **[教育]** ブレードで [OK] を選択します。
+2.  **[プロファイルの作成]** ブレードで、**[作成]** を選択します。
     
 プロファイルが作成され、プロファイルの一覧ブレードに表示されます。
 

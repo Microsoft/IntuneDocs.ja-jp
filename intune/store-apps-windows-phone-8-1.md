@@ -1,7 +1,7 @@
 ---
 title: "Windows Phone 8.1 ストア アプリを Intune に追加する方法"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Intune への Windows Phone 8.1 ストア アプリの追加について説明します。"
+titleSuffix: Intune on Azure
+description: "Windows Phone 8.1 ストア アプリを Intune に追加する方法について説明します。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,16 +16,16 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 72a883b77a4f74abd312f68f276f6250d89b5dd7
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: dd2d590514ba370b34745c5426c0f047364a1062
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
 # <a name="how-to-add-windows-phone-81-store-apps-to-microsoft-intune"></a>Windows Phone 8.1 ストア アプリを Microsoft Intune に追加する方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 1. Azure ポータルにサインインします。

@@ -1,7 +1,7 @@
 ---
 title: "iOS 用のコンプライアンス ポリシーの作成方法"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: iOS デバイス用のコンプライアンス ポリシーを作成する方法について説明します。"
+titleSuffix: Intune on Azure
+description: "iOS デバイス用のコンプライアンス ポリシーの作成方法について説明します。&quot;"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -16,18 +16,18 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 423c6058c8a2803e62a90f309f4b9c9ad62f9ede
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 9337586ad5daa909f38aba2b25fc159b44f55e65
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
-# <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune-azure-preview"></a>Intune Azure プレビューで iOS デバイス用のデバイス コンプライアンス ポリシーを作成する方法
+# <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>Intune で iOS デバイス用のデバイス コンプライアンス ポリシーを作成する方法
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 コンプライアンス ポリシーは、プラットフォームごとに作成されます。  また、Azure Portal でコンプライアンス ポリシーを作成できます。 コンプライアンス ポリシーの詳細については、[デバイスのコンプライアンス](device-compliance.md)に関するトピックを参照してください。 コンプライアンス ポリシーを作成する前に対応する必要がある前提条件については、[デバイス コンプライアンスの概要](device-compliance-get-started.md)に関するトピックを参照してください。
 

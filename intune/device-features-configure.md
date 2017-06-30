@@ -1,12 +1,12 @@
 ---
 title: "Intune デバイス機能設定の構成"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Intune を使用して、管理対象デバイスの機能を構成する方法について説明します。"
+titleSuffix: Intune on Azure
+description: "Intune を使用して管理対象デバイスの機能を構成する方法について説明します。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,17 +16,17 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f584d76a498264f8ab1cf883f5ee95d52d3446d3
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: f286119019bb26d8851c766a9d88ad818d7e600b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="how-to-configure-device-feature-settings-in-microsoft-intune"></a>Microsoft Intune でデバイスの機能設定を構成する方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 デバイス制約では、AirPrint、通知、共有デバイス構成など、iOS デバイスと macOS デバイスの機能を制御できます。
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/23/2017
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>デバイスの制限設定を含むデバイス プロファイルの作成
 
 1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
+2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
 3. [プロファイル] ブレードで、**[プロファイルを作成します]** を選択します。
@@ -46,10 +46,11 @@ ms.lasthandoff: 05/23/2017
 6. **[プロファイルの種類]** ドロップダウン リストで、**[デバイス機能]** を選択します。 
 7. 選択したプラットフォームによって構成できる設定が異なります。 各プラットフォームの詳細な設定については、次のいずれかのトピックを参照してください。
     - [iOS および macOS 用 AirPrint の設定](air-print-settings-ios-macos.md)
-     - [iOS 用 AirPlay の設定](airplay-settings-ios.md)
+    - [iOS 用 AirPlay の設定](airplay-settings-ios.md)
     - [iOS 用ホーム画面のレイアウト設定](home-screen-settings-ios.md)
     - [iOS 用アプリの通知設定](app-notification-settings-ios.md)
     - [iOS 用共有デバイス構成設定](shared-device-settings-ios.md)
+    - [iOS 用 Web コンテンツ フィルター設定](web-content-filter-settings-ios.md)
 
 8. 完了したら、**[プロファイルを作成します]** ブレードに戻り、**[作成]** をクリックします。
 

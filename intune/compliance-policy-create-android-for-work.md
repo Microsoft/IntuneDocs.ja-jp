@@ -1,7 +1,7 @@
 ---
 title: "Android for Work 用のコンプライアンス ポリシーの作成"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: Android for Work デバイス用のコンプライアンス ポリシーを作成する方法について説明します。"
+titleSuffix: Intune on Azure
+description: "Android for Work デバイス用のコンプライアンス ポリシーの作成方法について説明します。&quot;"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -16,18 +16,18 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: af5aa4f336df0f47695484b7dce1d7df29bea03d
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 518b74703de88a1cded2ad38d33c52b54699dc44
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
-# <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune-azure-preview"></a>Intune Azure プレビューで Android for Work デバイス用のデバイス コンプライアンス ポリシーを作成する方法
+# <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Intune で Android for Work デバイス用のデバイス コンプライアンス ポリシーを作成する方法
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 コンプライアンス ポリシーは、プラットフォームごとに作成されます。  また、Azure Portal でコンプライアンス ポリシーを作成できます。 コンプライアンス ポリシーの詳細については、[デバイスのコンプライアンス](device-compliance.md)に関するトピックを参照してください。 コンプライアンス ポリシーを作成する前に対応する必要がある前提条件については、[デバイス コンプライアンスの概要](device-compliance-get-started.md)に関するトピックを参照してください。
 

@@ -1,7 +1,7 @@
 ---
 title: "ポータル サイト アプリを構成する方法"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: 会社固有のブランドを Intune ポータル サイト アプリに適用する方法について説明します。 "
+titleSuffix: Intune on Azure
+description: "会社固有のブランドを Intune ポータル サイト アプリに適用する方法について説明します。 &quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,16 +16,16 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8f68fef45f42df9a3ef11532749d91c632196781
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 5ea6c6ce480f327c5b1497a8dc61faf56724442c
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune ポータル サイト アプリを構成する方法
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ユーザーは、Microsoft Intune の会社のポータルを使用して、会社のデータにアクセスしたり、デバイスの登録、アプリケーションのインストール、IT 部門からのサポート情報の検索などの一般的なタスクを実行したりできます。
 

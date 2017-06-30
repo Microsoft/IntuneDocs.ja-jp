@@ -1,5 +1,5 @@
 ---
-title: "Android for Work の概要 | Microsoft Docs"
+title: "Android for Work について"
 description: "Intune は Android for Work を管理し、ユーザーが仕事に Android デバイスを使用するときに追加の管理機能とプライバシーを提供します。"
 keywords: 
 author: nathbarn
@@ -12,10 +12,10 @@ ms.technology:
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b5651e311bc3cd6619f9d7fd8782de4d5db4630c
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 12045c3e81686ad3e351cd5a85bc663832b87b2e
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

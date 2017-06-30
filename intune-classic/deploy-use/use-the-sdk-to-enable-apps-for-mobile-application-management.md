@@ -1,5 +1,5 @@
 ---
-title: "SDK を使用して MAM のアプリを有効にする |Microsoft Docs"
+title: "SDK を使用してアプリで MAM を有効にする"
 description: "このトピックでは、Intune APP SDK を使用する必要がある理由について概説します。"
 keywords: 
 author: mtillman
@@ -15,10 +15,10 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ec4e2f966fa8c24505ce1fa74a59c95908273bd1
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: de7c4f57e6d42ac36ba5873e3d0ba1eaee6a5e8b
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -39,8 +39,8 @@ iOS または Android アプリの特定の機能を Intune で管理できる�
 
 SDK を使用するためにはアプリのソース コードを書きかえる必要がありますが、SDK の大半の機能は、アプリの動作を変更せずに実装できます。
 
-SDK の概要については、「[概要](/intune-classic/develop/intune-app-sdk-get-started)」を参照してください。
+SDK の概要については、「[概要](/intune/app-sdk-get-started)」を参照してください。
 
 ### <a name="see-also"></a>関連項目
-[Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
+[Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](/intune/apps-prepare-mobile-application-management)
 

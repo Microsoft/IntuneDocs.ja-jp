@@ -1,7 +1,7 @@
 ---
 title: "Intune を使用した iOS デバイス向けのホーム画面のレイアウト設定"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: iOS デバイスのホーム画面と Dock のカスタマイズに使用できる設定について説明します。"
+titleSuffix: Intune on Azure
+description: "iOS デバイスのホーム画面と Dock のカスタマイズに使用できる設定について説明します。&quot;"
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -16,17 +16,17 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 7743573ab893b7d54c11e183133fa02368c00779
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 77b4e0929af72d6c4522f1b8674ba7a185b52a84
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="intune-home-screen-layout-settings-for-ios-devices"></a>Intune を使用した iOS デバイス向けのホーム画面のレイアウト設定
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 これらの設定を使用すると、ポリシーを割り当てるすべての iOS デバイスの Dock とホーム画面で、アプリ、フォルダー、Web クリップのレイアウトを構成できます。
 

@@ -1,12 +1,12 @@
 ---
 title: "Intune を使用するデバイスでの全体または選択的ワイプ"
-titleSuffix: Intune Azure preview
-description: "Intune Azure プレビュー: デバイス上の会社のデータを選択的にワイプする方法、またはフル ワイプを実行してデバイスを出荷時の設定にリセットする方法について説明します。"
+titleSuffix: Intune on Azure
+description: "デバイス上の会社のデータを選択的にワイプする方法、またはフル ワイプを実行してデバイスを出荷時の設定にリセットする方法について説明します。&quot;"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a8233ba1b5ea05a46f46219d98625e4d4bea6bb9
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 2063612ee11d2bc7915ebe4bb28c67854a2599c3
 ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="use-full-or-selective-wipe"></a>フル ワイプまたは選択的ワイプを使用する
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune 管理対象デバイスが不要になるか、別の目的で再利用するか、または紛失した場合、そのデバイスからアプリとデータをワイプできます。 そのための手段として Intune には、選択的ワイプ機能とフル ワイプ機能が備わっています。 ユーザーは、Intune に登録済みの個人所有デバイスの Intune ポータル サイト アプリからリモート デバイス ワイプ コマンドを発行することもできます。
 
@@ -101,8 +101,8 @@ Intune 管理対象デバイスが不要になるか、別の目的で再利用�
 |Wi-fi と VPN プロファイルの設定|削除されます。|削除されます。|
 |証明書プロファイルの設定|失効済みで、削除されていない証明書。|削除済みおよび失効済みの証明書。|
 |管理エージェント|デバイス管理者特権は無効になります。|デバイス管理者特権は無効になります。|
-|電子メール|Android 用の Microsoft Outlook アプリで受信された電子メールは削除されます。|Intune を介してプロビジョニングされている電子メール プロファイルは削除され、デバイスにキャッシュされた電子メールは削除されます。|
-|Outlook|iOS 用の Microsoft Outlook アプリで受信された電子メールは削除されます。</br>例外: Exchange がオンプレミスでホストされている場合は、電子メールは削除されません。|iOS 用の Microsoft Outlook アプリで受信された電子メールは削除されます。</br>例外: Exchange がオンプレミスでホストされている場合は、電子メールは削除されません。|
+|電子メール|該当なし (電子メール プロファイルは、Android デバイスではサポートされません)|Intune を介してプロビジョニングされている電子メール プロファイルは削除され、デバイスにキャッシュされた電子メールは削除されます。|
+|Outlook|Android 用の Microsoft Outlook アプリで受信された電子メールは削除されます。</br>例外: Exchange がオンプレミスでホストされている場合は、電子メールは削除されません。|Android 用の Microsoft Outlook アプリで受信された電子メールは削除されます。</br>例外: Exchange がオンプレミスでホストされている場合は、電子メールは削除されません。|
 |Azure Active Directory (AAD) の切断|AAD レコードは削除されます。|AAD レコードは削除されます。|
 |連絡先 | アプリケーションからネイティブ アドレス帳に直接同期された連絡先が削除されます。  ネイティブ アドレス帳から別の外部ソースに同期された連絡先はワイプできません。 <br /> <br />現時点では、Outlook アプリのみがサポートされています。|アプリケーションからネイティブ アドレス帳に直接同期された連絡先が削除されます。  ネイティブ アドレス帳から別の外部ソースに同期された連絡先はワイプできません。 <br /> <br />現時点では、Outlook アプリのみがサポートされています。
 

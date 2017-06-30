@@ -1,23 +1,32 @@
-mdm-authority-set---
-# <a name="required-metadata"></a>必須のメタデータ
-
-title: Intune での Android デバイスの登録 titleSuffix: "Intune Azure プレビュー" description: "Intune Azure プレビュー: Intune Azure プレビューで Android デバイスを登録する方法について説明します。"
-keywords: author: nathbarn ms.author: nathbarn manager: angrobe ms.date: 04/12/2017 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: f276d98c-b077-452a-8835-41919d674db5
-
-# <a name="optional-metadata"></a>任意のメタデータ
-
-#<a name="robots"></a>ロボット:
-#<a name="audience"></a>対象ユーザー:
-#<a name="msdevlang"></a>ms.devlang:
-ms.reviewer: chrisbal ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
+---
+title: "Intune で Android デバイスを登録する"
+titleSuffix: Intune on Azure
+description: "Intune で Android デバイスを登録する方法について説明します。&quot;"
+keywords: 
+author: nathbarn
+ms.author: nathbarn
+manager: angrobe
+ms.date: 04/12/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: f276d98c-b077-452a-8835-41919d674db5
+ms.reviewer: chrisbal
+ms.suite: ems
 ms.custom: intune-azure
+ms.translationtype: Human Translation
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 6920a17d1be4ffa9ee83d2da0af6ba69996ae028
+ms.contentlocale: ja-jp
+ms.lasthandoff: 06/08/2017
+
 
 ---
 
 # <a name="enroll-android-devices"></a>Android デバイスの登録
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune では、Intune 管理者は、Samsung Knox Standard デバイスを含む、Android デバイスを管理できます。 [Android for Work デバイス](#enable-enrollment-of-android-for-work-devices)で作業プロファイルを管理することもできます。
 
@@ -78,7 +87,7 @@ Google Play に移動して Intune ポータル サイト アプリをダウン�
 
 その他のエンドユーザー タスクの詳細については、次の記事を参照してください。
 
-- [Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](https://docs.microsoft.com/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune)
+- [Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](end-user-educate.md)
 - [Android デバイスを Intune で使用する](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
 ## <a name="unbinding-your-android-for-work-administrative-account"></a>Android for Work 管理者アカウントのバインドを解除する
@@ -92,3 +101,4 @@ Android for Work の登録と管理を無効にすることもできます。 In
 
 2. **Android for Work のバインドの削除に同意する**<br>
   **[はい]** をクリックしてバインドを削除し、Intune からすべての Android for Work デバイスの登録を解除します。
+
