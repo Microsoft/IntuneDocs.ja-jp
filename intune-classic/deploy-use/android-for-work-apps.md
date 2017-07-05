@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -36,7 +36,7 @@ Android for Work デバイスにアプリを展開する方法は、標準の An
 
 ## <a name="before-you-start"></a>アップグレードを開始する前に
 
-1. Intune コンソールの **[管理者]** タブで連携して動作するように、Intune と Android for Work を構成します。
+Intune コンソールの **[管理者]** タブで連携して動作するように、Intune と Android for Work を構成します。
 
 ## <a name="synchronize-an-app-from-the-google-play-for-work-store"></a>Google Play for Work ストアのアプリを同期する
 
