@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 2b2c86a46c671d35551a8485b5b1a70674168ac5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="your-password-does-not-meet-your-it-admins-requirements"></a>パスワードが IT 管理者の要件を満たしていない
 
 会社または学校のリソースにアクセスするために使用するパスワードが、IT 管理者が設定した 1 つまたは複数の要件を満たしていません。 問題を解決するには、デバイスに表示される手順に従います。 問題の説明を以下に示します。
@@ -51,4 +47,3 @@ PIN またはパスワードの問題についての説明:
 - **パスワードが要件を満たすほど複雑ではありません**。 IT 管理者は、さらに複雑な文字をパスワードに使うように要求しています。 数字、英大文字、および $、%、# などの記号を使ってみてください。 これはデバイス上の他のアカウントにも該当する場合があるため、IT がデバイスに対して設定した要件をパスワードが満たしていることを他の作業アカウントでご確認ください。
 
 パスワードの要件への準拠で問題が発生している場合は、IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-

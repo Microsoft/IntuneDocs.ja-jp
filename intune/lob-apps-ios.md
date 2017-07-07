@@ -1,7 +1,7 @@
 ---
 title: "iOS の基幹業務アプリを Intune に追加する方法"
 titleSuffix: Intune on Azure
-description: "iOS の基幹業務アプリを Intune に追加する方法について説明します。&quot;"
+description: "iOS の基幹業務アプリを Intune に追加する方法について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,14 +15,12 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: bb26ca341fbef6ae02556b09044f43cec23dae2b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>iOS の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -68,4 +66,3 @@ ms.lasthandoff: 06/08/2017
 2. **[追加]** を選択して、アプリを Intune にアップロードします。
 
 作成したアプリはアプリの一覧に表示され、選択したグループに割り当てることができるようになります。 詳細については、[アプリをグループに割り当てる方法](apps-deploy.md)に関するページを参照してください。
-

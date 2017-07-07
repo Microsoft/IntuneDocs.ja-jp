@@ -14,15 +14,12 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: e440864e76e1b64e65b185606fe65bc9cb94c545
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Microsoft Intune での会社のリソースへのアクセスに関する問題のトラブルシューティング
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -376,4 +373,3 @@ Microsoft Intune の操作でエラー コードが返された場合の問題�
 
 ### <a name="next-steps"></a>次のステップ
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](../troubleshoot/how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
-

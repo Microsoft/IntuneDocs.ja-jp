@@ -1,7 +1,7 @@
 ---
 title: "Intune VPN 設定を構成する方法"
 titleSuffix: Intune on Azure
-description: "Intune を使用して、管理対象デバイスの VPN 接続を構成する方法について説明します。&quot;"
+description: "Intune を使用して、管理対象デバイスの VPN 接続を構成する方法について説明します。\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,15 +15,12 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 326de9b86b80789a6ac19bb96ff6e4ca97789830
 ms.openlocfilehash: e6a59c1f5fcb94d427b6d12eef19d4d49ff930ce
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/17/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Microsoft Intune で VPN の設定を構成する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -100,4 +97,3 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
 ### <a name="user-name-and-password"></a>ユーザー名とパスワード
 
 ユーザーは、ユーザー名とパスワードを提供することにより、VPN サーバーに対して認証を行います。
-

@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 734856b1598a225f6f3a2aaf640d34d393c744e7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Intune での仕事用プロファイルの作成とデバイスの登録
 
 自分の Android デバイスを登録すると、会社のメール、アプリ、その他の作業データにアクセスできます。 登録の一環として、仕事用のプロファイルを設定します。これはデバイス上の個人データと仕事のデータを分けるものです。 IT 管理者は、仕事のデータが含まれる仕事用のプロファイルのみを管理できます。 IT 管理者は、デバイス上の個人情報を管理できません。 詳細については、「[仕事用プロファイルを作成するとどうなりますか](what-happens-when-you-create-a-work-profile-android.md)」を参照してください。
@@ -88,4 +83,3 @@ ms.lasthandoff: 05/23/2017
     ![Play Store for Work アプリ ページ](./media/andr-afw-tap-work-play-store-icon.png)
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-

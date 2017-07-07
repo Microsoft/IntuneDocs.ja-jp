@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: b0205ebce012912cacc738382cadf56a355482f0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>ポータル サイト アプリをインストールし、Intune に iOS または macOS デバイスを登録するとどうなるか
 
 ポータル サイト アプリをインストールし、iOS デバイスまたは macOS デバイスを Intune に登録すると、ポータル サイト アプリを使用して次のことができるようになります。
@@ -68,4 +63,3 @@ ms.lasthandoff: 05/25/2017
 -   デバイスがローミング モード中の自動ファイル同期を有効または無効にする。 自動ファイル同期が許可されている場合、ローミング料金がかかる可能性があります。
 
 ご質問がございましたら、IT 管理者に問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
-

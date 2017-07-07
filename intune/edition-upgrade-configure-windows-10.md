@@ -1,7 +1,7 @@
 ---
 title: "Intune で Windows 10 エディションのアップグレードを構成する"
 titleSuffix: Intune on Azure
-description: "Intune を使用して、管理対象の Windows 10 デバイスを別のエディションにアップグレードする方法について説明します。&quot;"
+description: "Intune を使用して、管理対象の Windows 10 デバイスを別のエディションにアップグレードする方法について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,15 +15,12 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 30cea0ecfa62e9bbc0200d15eff94782d48a81fa
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-windows-10-edition-upgrades-in-microsoft-intune"></a>Microsoft Intune で Windows 10 エディションのアップグレードを構成する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -68,5 +65,4 @@ ms.lasthandoff: 06/08/2017
 
 プロファイルが作成され、プロファイルの一覧ブレードに表示されます。
 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事を参照してください。
-
 

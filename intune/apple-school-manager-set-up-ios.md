@@ -1,7 +1,7 @@
 ---
 title: "iOS デバイスのための Apple School Manager プログラム登録の設定"
 titleSuffix: Intune on Azure
-description: "企業所有の iOS デバイスを Intune で登録するために、Apple School Manager プログラム登録を設定する方法について説明します。&quot;"
+description: "企業所有の iOS デバイスを Intune で登録するために、Apple School Manager プログラム登録を設定する方法について説明します。\""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,15 +15,12 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d21f440ee6806b545d2b346559d6516993a9cbf
 ms.openlocfilehash: 73556209c88759ffe0747d9927cbcbb49600e0c0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/14/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager での iOS デバイス登録の有効化
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -166,4 +163,3 @@ Intune によって管理される ASM デバイスを登録する前に、デ�
 ### <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>デバイスにポータル サイト アプリをインストールして使用する方法
 
 ユーザー アフィニティが構成されたデバイスでは、ポータル サイト アプリをインストールして実行し、アプリをダウンロードしてデバイスを管理できます。 ユーザーは、デバイスを受け取った後、セットアップ アシスタントを実行してポータル サイト アプリをインストールする必要があります。
-

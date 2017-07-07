@@ -1,7 +1,7 @@
 ---
 title: "ユーザー管理のワークロードとは"
 titleSuffix: Intune on Azure
-description: "Microsoft Intune と Azure を使用して、ユーザーを表示し管理する方法について説明します。&quot;"
+description: "Microsoft Intune と Azure を使用して、ユーザーを表示し管理する方法について説明します。\""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,15 +14,12 @@ ms.technology:
 ms.assetid: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 1cbdb92928411ff56e6740e83e081ee966fb7af8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-user-management"></a>ユーザー管理とは
 
 
@@ -45,4 +42,3 @@ Azure AD でグループを使用する方法の詳細については、「[Azur
 ## <a name="next-step"></a>次の手順
 
 [グループの概要](groups-get-started.md)
-

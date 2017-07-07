@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: a213a46066de4244df23d0cd532b5fb4596ede77
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>ポータル サイト Web サイトからデバイスをリモートでロックする
 
 不測の事態が起こり、デバイスをなくしてしまうことがあります。 デバイスをなくした、または盗まれた場合、そのデバイスがどこにあろうと、最初に心配することは、おそらく、デバイスに入っている情報を他人に見られることでしょう。
@@ -42,7 +38,7 @@ ms.lasthandoff: 05/23/2017
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>リモート ロックを使用してデバイスをロックするには
 
-1.    [ポータル Web サイト](http://portal.manage.microsoft.com)で、__メニュー__ ボタン ![3 つの横棒が並行に積み上げられている、メニュー ボタンの小さな画像](/Intune/whats-new/media/CP_hamburger_menu.png) をタップしてから、__[デバイス]__ を選択します。
+1.  [ポータル Web サイト](http://portal.manage.microsoft.com)で、__メニュー__ ボタン ![3 つの横棒が並行に積み上げられている、メニュー ボタンの小さな画像](/Intune/whats-new/media/CP_hamburger_menu.png) をタップしてから、__[デバイス]__ を選択します。
 
   ![[ホーム]、[すべてのアプリ]、[デバイス]、[ヘルプデスク]、[サインアウト] の各ボタンが示され、画面の左側にサイド メニューが展開されたポータル Web サイトのイメージ。](/media/iwp-expanded-sidebar.png)
 
@@ -50,11 +46,11 @@ ms.lasthandoff: 05/23/2017
 
   ![リスト表示されていないデバイスの登録または不明なデバイスの識別を求めるバナーの上に 2 つの不明なデバイスが示された、[デバイス] ページのスクリーンショット。](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.    デバイスがポップアップ ウィンドウに開きます。 **[リモート ロック]** ボタンをタップします。
+3.  デバイスがポップアップ ウィンドウに開きます。 **[リモート ロック]** ボタンをタップします。
 
     ![[名前の変更]、[削除]、[デバイスのリセット]、[パスコードのリセット]、[リモート ロック] を含む、ポータル Web サイト上の選択されたデバイスに対するすべてのオプション。 ](./media/iwp-screen-with-all-options.png)
 
-4.    デバイスをロックしようとしていることを伝える警告が画面に表示されます。 **[リモート ロック]** をタップすると、ポータル サイト Web サイトはデバイスのロックを試行します。
+4.  デバイスをロックしようとしていることを伝える警告が画面に表示されます。 **[リモート ロック]** をタップすると、ポータル サイト Web サイトはデバイスのロックを試行します。
 
     **[リモート ロック]** を選択すると、"リモート ロック保留中" というメッセージが表示されます。  リモート ロックが成功した場合、状態が ”リモート ロック成功” に変わります。
 
@@ -70,4 +66,3 @@ ms.lasthandoff: 05/23/2017
 デバイスが見つかった場合は、パスコードを入力するだけでリモート ロックしたデバイスのロックを解除できます。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-

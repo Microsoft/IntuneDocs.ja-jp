@@ -1,7 +1,7 @@
 ---
 title: "iOS デバイス向けの Intune 電子メール設定"
 titleSuffix: Intune on Azure
-description: "iOS デバイスでの電子メール接続の構成に使用できる Intune 設定について説明します。&quot;"
+description: "iOS デバイスでの電子メール接続の構成に使用できる Intune 設定について説明します。\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,15 +15,12 @@ ms.assetid: 9f0fa6af-3669-439a-bd0d-75d8b1a0b135
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: dcac410ae5c20b5942bf37f5eaa9a46205a4cc07
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="email-profile-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune での iOS デバイス向けの電子メール プロファイル設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -43,4 +40,3 @@ ms.lasthandoff: 06/08/2017
 - **[他の電子メール アカウントにメッセージを移動することを許可する]** - デバイスで構成されている複数のアカウント間で、ユーザーが電子メール メッセージを移動できるようにします。
 - **[サード パーティ アプリケーションから電子メールを送信できるようにする]** - 電子メールを送信するための既定のアカウントとしてこのプロファイルを選択することをユーザーに許可し、(たとえば、ファイルを電子メールに添付する目的で) ネイティブの電子メール アプリで電子メールを開くことをサードパーティ製アプリに許可します。
 - **[最近使用した電子メール アドレスを同期する]** - この機能を使用すると、ユーザーは、デバイスで最近使用された電子メール アドレスのリストをサーバーと同期できるようになります。
-

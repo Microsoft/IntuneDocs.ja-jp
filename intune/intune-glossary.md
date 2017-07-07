@@ -13,15 +13,12 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 73b43084c28436cb8a7e866dcee2d52694c60f5c
 ms.openlocfilehash: a9b43fc1a1877a3fc8bf4c5ee00e02dfee3cdea8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/16/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune の用語集
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -155,4 +152,3 @@ ms.lasthandoff: 06/16/2017
 |||
 |-|-|
 |Wi-Fi プロファイル|ユーザーが設定を知らなくても、または構成しなくても、会社のネットワークに接続できるようにする[ワイヤレス ネットワーク設定](/intune/wi-fi-settings-configure)をデバイスに割り当てるポリシーです。
-

@@ -15,15 +15,12 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
 ms.openlocfilehash: 9f4a310078a30f7dfefe66a9aba60cc74ad4e29b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure-preview"></a>Microsoft Intune Azure プレビューで Intune のオンプレミス Exchange Connector をセットアップする
 
 オンプレミス Exchange Server 環境では、オンプレミス Exchange Connector で Intune を使用して、デバイスが Intune に登録されていて Intune のデバイス コンプライアンス ポリシーに準拠しているかどうかに基づき、デバイスのオンプレミス Exchange のメールボックスへのアクセスを管理できます。 オンプレミス Exchange Connector はまた、Exchange Active Sync (EAS) の既存のレコードを Intune と同期することによって、オンプレミス Exchange Server に接続するモバイル デバイスを検出します。
@@ -147,4 +144,3 @@ Exchange Connector を正常に構成したら、接続のステータスと前�
 
 ## <a name="next-steps"></a>次のステップ
 [Exchange On-premises の条件付きアクセス ポリシーを作成する](conditional-access-exchange-create.md)
-

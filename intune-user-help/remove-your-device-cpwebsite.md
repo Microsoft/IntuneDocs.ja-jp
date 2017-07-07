@@ -11,28 +11,24 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e240419a-a836-4be3-8fd9-39a4ec890226
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 4293e05d3668c7f6d6d6b9986e006061df5afe80
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="remove-your-device-from-the-company-portal"></a>ポータル サイトからのデバイスの削除
 
 今後デバイスを会社または組織で管理しない場合は、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)から、デバイスを削除することができます。 ポータル サイト Web サイトは、IT 部署で管理するために登録したコンピューターとデバイスの管理に使用できる Web ページです。 デバイスを削除すると、そのデバイスはポータル サイトに表示されなくなり、会社または学校のデータ、アプリ、電子メールにもアクセスできなくなる場合があります。
 
 デバイスを削除するには:
 
-1.    [ポータル Web サイト](http://portal.manage.microsoft.com)で、__メニュー__ ボタン ![3 つの横棒が並行に積み上げられている、メニュー ボタンの小さな画像](/Intune/whats-new/media/CP_hamburger_menu.png) をタップしてから、__[デバイス]__ を選択します。
+1.  [ポータル Web サイト](http://portal.manage.microsoft.com)で、__メニュー__ ボタン ![3 つの横棒が並行に積み上げられている、メニュー ボタンの小さな画像](/Intune/whats-new/media/CP_hamburger_menu.png) をタップしてから、__[デバイス]__ を選択します。
 
   ![[ホーム]、[すべてのアプリ]、[デバイス]、[ヘルプデスク]、[サインアウト] の各ボタンが示され、画面の左側にサイド メニューが展開されたポータル Web サイトのイメージ。](/media/iwp-expanded-sidebar.png)
 
@@ -40,11 +36,10 @@ ms.lasthandoff: 05/23/2017
 
     ![リスト表示されていないデバイスの登録または不明なデバイスの識別を求めるバナーの上に 2 つの不明なデバイスが示された、[デバイス] ページのスクリーンショット。](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.    デバイスがポップアップ ウィンドウに開きます。 **[削除]** ボタンをタップします。
+3.  デバイスがポップアップ ウィンドウに開きます。 **[削除]** ボタンをタップします。
 
-      ![[名前の変更]、[削除]、[デバイスのリセット]、[パスコードのリセット]、[リモート ロック] を含む、ポータル Web サイト上の選択されたデバイスに対するすべてのオプション。 ](./media/iwp-screen-with-all-options.png)
+    ![[名前の変更]、[削除]、[デバイスのリセット]、[パスコードのリセット]、[リモート ロック] を含む、ポータル Web サイト上の選択されたデバイスに対するすべてのオプション。 ](./media/iwp-screen-with-all-options.png)
 
 4. ポータル サイトからデバイスを削除するには、警告メッセージを確認し、**[削除]** をタップします。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-

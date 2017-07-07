@@ -14,15 +14,12 @@ ms.assetid: 19be3de7-539c-49f5-8c46-5363b987fef9
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 3f35dcb7168e9c76a8286a1425a26306914cfdb3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="quick-start-guide-prevent-company-data-leaks-from-office-365-mobile-apps"></a>クイック スタート ガイド: Office 365 モバイル アプリから会社のデータが漏洩することを防止する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -48,4 +45,3 @@ iOS および Android デバイスをモバイル デバイス管理 (MDM) ソ�
 [Microsoft MDM 以外のソリューションから Microsoft Intune に移行する](/intune-classic/deploy-use/migrate-to-intune)
 
 [Intune MDM にデバイスを登録する](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
-

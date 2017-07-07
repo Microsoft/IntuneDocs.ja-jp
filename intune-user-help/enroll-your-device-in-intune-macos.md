@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 16f7f06d02a56b4887c0d29ffcaed111185652a9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-macos-device-in-intune"></a>Intune に macOS デバイスを登録する
 
 組織のアプリ、データ、リソースにアクセスできれば、業務を遂行することができます。 仕事に macOS デバイスを使用している場合、そのためには__管理プロファイル__をインストールする必要があります。 管理プロファイルは IT 管理者によってセットアップされるファイルにすぎず、設定とアクセス情報を Mac に読み込みます。 詳細については、 [ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)に関するページをご覧ください。
@@ -70,4 +66,3 @@ ms.lasthandoff: 05/23/2017
  ![インストールされた macOS プロファイル](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
 サポートが必要な場合は、 IT 管理者に問い合わせてください。 連絡先の情報は、[会社のポータル Web サイト](http://portal.manage.microsoft.com)でわかります。
-

@@ -14,15 +14,12 @@ ms.assetid: fd8cb5f7-19f0-4d80-8825-2bafa49624af
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 73b43084c28436cb8a7e866dcee2d52694c60f5c
 ms.openlocfilehash: 8806dc965653deaca5ab370c290403ae049e5c58
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/16/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="determine-use-case-scenario-requirements"></a>ユース ケース シナリオの要件の決定
 
 このセクションでは、各ユース ケース シナリオ内の組織グループごとに要件を決定します。 このプロセスは、アーキテクチャとデザイン、オンボード、ロールアウトなど、その他の Intune 展開の計画を準備するのに役立ちます。 また、Intune 展開プロジェクトに関連する潜在的なギャップと課題の特定にも役立ちます。
@@ -68,4 +65,3 @@ ms.lasthandoff: 06/16/2017
 ## <a name="next-section"></a>次のセクション
 
 次のセクションでは、[Intune ロールアウト計画を作成する方法](planning-guide-rollout-plan.md)についてのガイダンスを提供します。
-

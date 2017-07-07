@@ -14,15 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 1d61432eafef67ca997d4e03d305e1c068ac5fd6
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune アプリ SDK の概要
 
 このガイドを利用すると、Microsoft Intune でアプリ保護ポリシーに対してモバイル アプリをすぐに有効にできます。 まず、「[Intune アプリ SDK の概要](app-sdk.md)」で説明されている Intune アプリ SDK の利点を理解しておくことをお勧めします。
@@ -139,4 +136,3 @@ Intune アプリ保護ポリシーがアプリで機能していることを確�
 * **.eps** ファイルを読み取れるイメージ操作アプリケーション、または **.ai** ファイルを読み取れる Adobe アプリケーション。
 
 * [Intune アプリ バッジのアセットとガイドライン](https://github.com/msintuneappsdk/intune-app-partner-badge)は、Microsoft Intune GitHub にあります。
-

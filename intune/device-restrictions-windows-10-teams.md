@@ -1,7 +1,7 @@
 ---
 title: "Windows 10 Team 向けの Intune デバイス制限"
 titleSuffix: Intune on Azure
-description: "Windows 10 Team デバイスで使用できるデバイス制限について説明します。&quot;"
+description: "Windows 10 Team デバイスで使用できるデバイス制限について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,15 +15,12 @@ ms.assetid: 677c41a2-5344-4c52-85f0-809dce3a5d5b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 7a5c3eaf3d2b1fc4383282473352124c793b666f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="windows-10-team-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Windows 10 Team デバイスの制限設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,4 +34,3 @@ ms.lasthandoff: 06/08/2017
 - **[ようこそ画面の背景画像の URL]** - Windows 10 Team デバイスの**ようこそ**画面に指定した URL のカスタム背景を表示する場合は、この設定を有効にします。<br>画像は PNG 形式である必要があり、URL は **https://** で始まっている必要があります。
 - **[更新プログラムのメンテナンス期間]** - デバイスで更新を実行する期間を構成します。 期間の開始時刻と長さ (1 ~ 5 時間) を設定できます。
 - **[Azure Operational Insights]** - Microsoft Operations Manager Suite の一部である Azure Operational Insights は、Windows 10 Team デバイスからログ ファイルのデータを収集、格納、分析します。<br>Azure Operational insights に接続するには、**ワークスペース ID** と **ワークスペース キー**を指定する必要があります。
-
