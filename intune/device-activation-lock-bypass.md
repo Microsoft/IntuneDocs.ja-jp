@@ -1,7 +1,7 @@
 ---
 title: "Intune での iOS アクティベーション ロックをバイパスする"
 titleSuffix: Intune on Azure
-description: "Intune を使用して、iOS アクティベーション ロックをバイパスし、ロックされたデバイスにアクセスする方法を説明します。&quot;"
+description: "Intune を使用して、iOS アクティベーション ロックをバイパスし、ロックされたデバイスにアクセスする方法を説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -14,21 +14,18 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 309183cd546b1c69309fc0e49548fe235d71ab70
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 0b92949efca2e4dac5836755e2f32b0527d4762d
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Intune で、監視されている iOS デバイス上のアクティベーション ロックをバイパスする
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune では、iOS 8.0 以降向けの iPhone を探すアプリの機能である iOS のアクティブ化ロックを管理できます。 iPhone を探すアプリをユーザーがデバイスで開くと、アクティブ化ロックが自動的に有効になります。 有効になると、ユーザーの Apple ID とパスワードを入力しない限り、以下の操作を実行できなくなります。 
+Microsoft Intune では、iOS 8.0 以降向けの iPhone を探すアプリの機能である iOS のアクティブ化ロックを管理できます。 iPhone を探すアプリをユーザーがデバイスで開くと、アクティブ化ロックが自動的に有効になります。 有効になると、ユーザーの Apple ID とパスワードを入力しない限り、以下の操作を実行できなくなります。
 
 - iPhone を探すアプリをオフにする
 - デバイスを消去する
@@ -37,7 +34,7 @@ Microsoft Intune では、iOS 8.0 以降向けの iPhone を探すアプリの�
 ## <a name="how-activation-lock-affects-you"></a>アクティブ化ロックの影響
 
 アクティベーション ロックにより、iOS デバイスをセキュリティで保護でき、紛失や盗難にあったデバイスが戻ってくる可能性が高まりますが、この機能は IT 管理者にさまざまな課題をもたらすことがあります。 たとえば、
- 
+
 - あるユーザーがデバイスでアクティブ化ロックを設定します。 その後、そのユーザーが退職し、デバイスを返却します。 ユーザーの Apple ID とパスワードがわからなければ、デバイスを再アクティブ化する方法がありません。
 - アクティベーション ロックが有効になっているすべてのデバイスのレポートが必要です。
 - 組織でデバイスを更新するときに、一部のデバイスを別の部門に再割り当てする必要があります。 その際に再割り当てできるのは、アクティベーション ロックが有効になっていないデバイスに限られます。
@@ -47,13 +44,13 @@ Microsoft Intune では、iOS 8.0 以降向けの iPhone を探すアプリの�
 >[!TIP]
 >iOS デバイスの監視モードでは、Apple Configurator を使用して、デバイスをロックダウンし、特定のビジネス目的に必要な機能のみに制限することができます。 監視モードは、通常、会社所有のデバイス専用の機能です。
 
-アクティベーション ロックについては、[Apple の Web サイト](https://support.apple.com/en-us/HT201365)をご覧ください。
+アクティベーション ロックについては、[Apple の Web サイト](https://support.apple.com/HT201365)をご覧ください。
 
 ## <a name="how-intune-helps-you-manage-activation-lock"></a>Intune でアクティブ化ロックを管理する方法
 Intune では、iOS 8.0 以降を実行している監視対象デバイスのアクティブ化ロックの状態を要求できます。 監視対象のデバイスのみの場合、Intune では、アクティベーション ロックのバイパス コードを取得し、直接デバイスに発行できます。 デバイスがワイプされている場合は、空のユーザー名とコードをパスワードとして使用し、デバイスに直接アクセスすることができます。
- 
+
 **この機能には、ビジネス上、次のメリットがあります。**
- 
+
 - ユーザーが iPhone を探すアプリのセキュリティ上のメリットを受けることができる。
 - デバイスを再利用する必要がある場合に、デバイスをインベントリから削除することや、ロック解除できることを把握したうえで、ユーザーが業務を遂行できるようにすることができる。
 
@@ -79,7 +76,3 @@ Intune の **[アクティブ化ロックのバイパス]** のリモート デ�
 5. 管理するデバイスの一覧から監視対象の iOS デバイスを選択し、その後 **[アクティブ化ロックのバイパス]** デバイス リモート操作を選択します。
 
 **[デバイスの管理]** ワークロード内のデバイスの詳細ページで、ロック解除要求の状態を確認できます。
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "macOS デバイス向けの Intune VPN 設定"
 titleSuffix: Intune on Azure
-description: "macOS デバイスでの VPN 接続の構成に使用できる Intune 設定について説明します。&quot;"
+description: "macOS デバイスでの VPN 接続の構成に使用できる Intune 設定について説明します。\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,15 +15,12 @@ ms.assetid: d203a70d-37df-4195-85f7-ad5ef14ac2a1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 83e3776aacbddc37e5e7586d8fd7580143dead64
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="vpn-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune での macOS デバイス向けの VPN 設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -61,4 +58,3 @@ ms.lasthandoff: 06/08/2017
 - **[自動構成スクリプト]** - ファイルを使用してプロキシ サーバーを構成します。 構成ファイルが格納されている**プロキシ サーバーの URL** を入力します (たとえば、**http://proxy.contoso.com**)。
 - **[アドレス]** - プロキシ サーバーのアドレスを (IP アドレスとして) 入力します。
 - **[ポート番号]** - プロキシ サーバーに関連付けられているポート番号を入力します。
-

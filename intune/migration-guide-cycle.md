@@ -14,15 +14,12 @@ ms.assetid: 3688b724-9521-4210-bf4d-bcf47d8d4ca0
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
 ms.openlocfilehash: 70aa7155e050450a2d786a1f16e42ce2a3c77f9e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="typical-migration-cycle"></a>標準的な移行サイクル
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -65,4 +62,3 @@ Microsoft Intune は、移行を監視する方法をいくつか用意してい
 ## <a name="post-migration"></a>Post-migration
 
 Intune への移行後に、以前の MDM プロバイダーをインベントリから削除したり、サービスのサブスクリプションを解除したりする必要があります。 また、MDM プロバイダーの指示に従って、不要なインフラストラクチャの要件を削除する必要があります。
-

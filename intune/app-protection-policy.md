@@ -1,7 +1,7 @@
 ---
 title: "アプリ保護ポリシーとは"
 titleSuffix: Intune on Azure
-description: "このトピックでは、Microsoft Intune のアプリ保護ポリシーで会社のデータを保護する方法について説明します。&quot;"
+description: "このトピックでは、Microsoft Intune のアプリ保護ポリシーで会社のデータを保護する方法について説明します。\""
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,15 +15,12 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: e6b6664dee5e8533e1cad76a06c377e090f31086
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 13b3199108c34a61d117e4d89d118bdd05d7d20f
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="what-are-app-protection-policies"></a>アプリ保護ポリシーとは
 
 
@@ -68,7 +65,7 @@ MDM をアプリ保護ポリシーと共に使用することで、MDM ありの
 
 -   Android 4 以降
 
-Windows デバイスは現在サポートされていません。 ただし、Intune で Windows 10 デバイスを登録すると、同様の機能を提供する Windows 情報保護を使用できます。 詳細については、「[Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip)」 (Windows 情報保護 (WIP) を使用してエンタープライズ データを保護する) を参照してください。
+Windows デバイスは現在サポートされていません。 ただし、Intune で Windows 10 デバイスを登録すると、同様の機能を提供する Windows 情報保護を使用できます。 詳細については、「[Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)」 (Windows 情報保護 (WIP) を使用してエンタープライズ データを保護する) を参照してください。
 ##  <a name="how-app-protection-policies-protect-app-data"></a>アプリ保護ポリシーでアプリのデータを保護するしくみ
 
 ####  <a name="apps-without-app-protection-policies"></a>アプリ保護ポリシーのないアプリ
@@ -138,4 +135,3 @@ MDM ソリューションに登録されていない BYOD デバイスでは、�
 ##  <a name="next-steps"></a>次のステップ
 
 [Microsoft Intune でアプリ保護ポリシーを作成および展開する方法](app-protection-policies.md)
-

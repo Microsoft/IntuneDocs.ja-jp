@@ -1,7 +1,7 @@
 ---
 title: "Intune で PKCS 証明書を構成して管理する"
 titleSuffix: Intune on Azure
-description: "インフラストラクチャを構成してから、Intune で PKCS 証明書を作成して割り当てる方法について説明します。&quot;"
+description: "インフラストラクチャを構成してから、Intune で PKCS 証明書を作成して割り当てる方法について説明します。\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,14 +15,11 @@ ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 305a4d79aa81bd599369e72bc0cb307fdf452643
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>Intune で PKCS 証明書を構成して管理する
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -209,4 +206,3 @@ Azure Portal で、**[デバイスの構成]** ワークロードを選択しま
 - 各プロファイルは個別に割り当てますが、信頼されたルート CA と PKCS プロファイルを割り当てる必要もあります。 そうしないと、PKCS 証明書ポリシーは失敗します。
 
 プロファイルを割り当てる方法については、「[Microsoft Intune のデバイス プロファイルを割り当てる方法](device-profile-assign.md)」をご覧ください。
-

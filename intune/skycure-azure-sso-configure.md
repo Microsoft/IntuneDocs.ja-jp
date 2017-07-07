@@ -15,15 +15,12 @@ ms.assetid: e0466ac4-4942-4c4c-b8af-996b597c701d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d21f440ee6806b545d2b346559d6516993a9cbf
-ms.openlocfilehash: 2ad2d06996c60e0944b2523423d5113613064e1b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/14/2017
-
-
+ms.openlocfilehash: b2d8a79baf65208e87dbe85d8cc934e167710144
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-skycure-to-use-azure-active-directory-single-sign-on-sso"></a>Azure Active Directory シングル サインオン (SSO) を使用するように Skycure を構成する
 
 Azure AD SSO は、Intune と Skycure の統合時に利用されます。 主な利点:
@@ -85,4 +82,3 @@ Skycure を実行しているユーザーを含む専用ユーザー グルー�
 ## <a name="next-steps"></a>次のステップ
 
 [Skycure iOS アプリ構成ポリシーをダウンロードする](skycure-ios-app-configuration-policy-download.md)
-

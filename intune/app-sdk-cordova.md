@@ -14,13 +14,11 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 0329720b6f02c718ef27a59e6efc5f3a76eed1c5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova プラグイン
 
@@ -159,4 +157,3 @@ $ cordova run --nobuild
 * **Info.plist** ファイルの **CFBundleDocumentTypes** ノードの下で UTI の一覧を変更した場合、再構築する前に、同じ plist ファイル (**UTImportedTypeDeclarations** node) のインポートされた UTI セクションで Intune UTI を消去する必要があります。 Intune UTI はすべてプレフィックス `com.microsoft.intune.mam` で始める必要があります。
 
 * Cordova プロジェクトから Cordova 用 Intune App SDK プラグインを削除する場合、iOS プラットフォームも削除し、もう一度追加し、.xcodeproj ファイルと .plist ファイルで一部の Intune 設定を元に戻す必要があります。
-

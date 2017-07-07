@@ -15,15 +15,12 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d83f2c2e410d23297dad7f046f8053225c988abc
 ms.openlocfilehash: 44d80e1c72b58eccd4e69b1d561c7d651f39b3c3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/15/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Android および Samsung KNOX Standard デバイスの制限設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -140,4 +137,3 @@ ms.lasthandoff: 06/15/2017
 |**[Select a managed app]\(管理対象アプリを選択します)**|次のオプションのいずれか 1 つを選択し、デバイスがキオスク モードのときに実行できるアプリを 1 つ以上追加します。 他のアプリはデバイスでの実行が許可されません。<br><br>- **パッケージ名ごとにアプリを追加**<br>- **URL ごとにアプリを追加**<br>- **管理対象アプリを追加**|いいえ|Yes|
 |**画面のスリープ ボタン**|デバイス上の [画面のスリープ状態の解除] ボタンを有効または無効にします。|いいえ|Yes|
 |**ボリューム ボタン**|デバイスのボリューム ボタンの使用を有効または無効にします。|いいえ|はい|
-

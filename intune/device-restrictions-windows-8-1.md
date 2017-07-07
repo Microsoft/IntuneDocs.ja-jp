@@ -1,7 +1,7 @@
 ---
 title: "Windows 8.1 の Intune デバイス制限設定"
 titleSuffix: Intune on Azure
-description: "Windows 8.1 デバイスでデバイスの設定と機能を制御するために使用できる Intune 設定について説明します。&quot;"
+description: "Windows 8.1 デバイスでデバイスの設定と機能を制御するために使用できる Intune 設定について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,15 +15,12 @@ ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: cef8602418be6d35848dd48766c0e46269f4f215
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: da190ddeda62ce3385aab4308595b473c3059ed6
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Windows 8.1 以降のデバイスの制限設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -41,7 +38,7 @@ ms.lasthandoff: 06/08/2017
 -   **[パスワードの有効期限 (日数)]** - デバイスのパスワードの変更が必要になるまでの日数を指定します。
 -   **[Prevent reuse of previous passwords (前のパスワードを再利用できないようにする)]** - 過去に使用したパスワードをユーザーが構成できるかどうかを指定します。
 -   **[ピクチャ パスワードと PIN]** - ピクチャ パスワードと PIN を使用できるようにします。 ピクチャ パスワードが許可されている場合、ユーザーは画像に対するジェスチャーでサインインすることができます。 PIN が許可されている場合、ユーザーは 4 桁のコードを使用してすばやくサインインできます。
--   **[暗号化]** - デバイス上のファイルを暗号化することを要求します。<br>Windows 8.1 が実行されているデバイスで暗号化を適用するには、 [Windows の 2014 年 12 月付け MDM クライアント更新プログラム](https://support.microsoft.com/en-us/kb/3013816) を各デバイスにインストールする必要があります。
+-   **[暗号化]** - デバイス上のファイルを暗号化することを要求します。<br>Windows 8.1 が実行されているデバイスで暗号化を適用するには、 [Windows の 2014 年 12 月付け MDM クライアント更新プログラム](https://support.microsoft.com/kb/3013816) を各デバイスにインストールする必要があります。
 Windows 8.1 デバイスに対してこの設定を有効にすると、デバイスのすべてのユーザーに Microsoft アカウントが必要になります。
 暗号化を機能させるには、デバイスが Microsoft [InstantGo](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#IBHULcTfI4PokO8X.97) ハードウェア認定要件を満たしている必要があります。
 デバイスで暗号化を適用すると、回復キーは、ユーザーの Microsoft アカウントからしかアクセスできなくなります。また、OneDrive アカウントからアクセスする必要があります。 ユーザーの代わりにこのキーを回復することはできません。     
@@ -70,4 +67,3 @@ Windows 8.1 デバイスに対してこの設定を有効にすると、デバ�
 ## <a name="cloud-and-storage"></a>クラウドとストレージ
 -   **[作業フォルダーの URL]** - 作業フォルダーの URL を設定して、デバイス間でドキュメントを同期できるようにします。
 -   **[Microsoft アカウントを使用せずに Windows Mail アプリにアクセスする]** - Microsoft アカウントを使用せずに Windows メール アプリケーションにアクセスできるようにします。    
-

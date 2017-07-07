@@ -14,15 +14,12 @@ ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
 ms.openlocfilehash: 9e86f342413a0f31c51d7a56f862986c433309eb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="intune-migration-guide"></a>Intune 移行ガイド
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -77,4 +74,3 @@ Intune への移行を成功させるには、まず現在のモバイル デバ
 ## <a name="next-steps"></a>次のステップ
 
 [フェーズ 1: モバイル デバイス管理用の Intune を準備する]\(migration-guide-prepare.md\)
-

@@ -1,7 +1,7 @@
 ---
 title: "iOS の紛失モードを Intune でアクティブ化する"
 titleSuffix: Intune on Azure
-description: "Intune を使用して、紛失したまたは盗まれた iOS デバイスの紛失モードをアクティブ化する方法について説明します。&quot;"
+description: "Intune を使用して、紛失したまたは盗まれた iOS デバイスの紛失モードをアクティブ化する方法について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -14,15 +14,12 @@ ms.technology:
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: a34d008ae76355578c6f24a932c9e1e501d5b46b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="activate-lost-mode-on-ios-devices"></a>iOS デバイスの紛失モードをアクティブ化する
 
 
@@ -49,5 +46,4 @@ ms.lasthandoff: 06/08/2017
 - データは 24 時間保管されてから、削除されます。 位置データを手動で削除することはできません。
 - 位置データは、保管中も、転送中も暗号化されます。
 - 紛失モードを構成する場合、ロック画面に表示するメッセージの入力時に、デバイスを見つけた人がデバイスを返すのに役立つ情報を含めることをお勧めします。
-
 

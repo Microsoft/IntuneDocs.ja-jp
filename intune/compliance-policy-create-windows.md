@@ -1,7 +1,7 @@
 ---
 title: "Windows 用のコンプライアンス ポリシーの作成方法"
 titleSuffix: Intune on Azure
-description: "Windows デバイス用のコンプライアンス ポリシーの作成方法について説明します。&quot;"
+description: "Windows デバイス用のコンプライアンス ポリシーの作成方法について説明します。\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,13 +15,11 @@ ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 91f0a71ed7b924746425822ce10190a8ec7a7a40
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune で Windows デバイス用のデバイス コンプライアンス ポリシーを作成する方法
 
@@ -195,4 +193,3 @@ HAS サービスのしくみについては、「[HealthAttestation CSP](https:/
 <!--- ## Next steps
 
 [How to monitor device compliance](device-compliance-monitor.md)--->
-

@@ -14,15 +14,12 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d83f2c2e410d23297dad7f046f8053225c988abc
 ms.openlocfilehash: 237e141eacb413eb130b17217116b6d0c7e085f8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/15/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="common-ways-to-use-intune"></a>Intune の一般的な使用方法
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
@@ -104,4 +101,3 @@ Intune の[一括プロビジョニングと管理のソリューション](devi
 従業員は、展示会場やホテルのロビーにある公共のコンピューターなど、会社が管理できないデバイスやアプリ、ブラウザーを使用しなければならない場合があります。
 
 そのような場所から会社の電子メールにアクセスすることを従業員に許可すべきでしょうか。 Intune と Microsoft Enterprise Mobility + Security を使用している場合、答えは単純に "いいえ" であり、[電子メールへのアクセスを組織が管理しているデバイスに制限します](conditional-access.md) ([クラシック ポータル](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune))。 これにより、従業員が厳密に認証されるため、信頼されていないコンピューターに誤って会社のデータを残してしまうことがなくなります。
-

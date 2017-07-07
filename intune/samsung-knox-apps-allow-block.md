@@ -1,7 +1,7 @@
 ---
 title: "Intune ポリシーによる Samsung KNOX 用アプリの許可/禁止"
 titleSuffix: Intune on Azure
-description: "カスタム プロファイルを作成して、Samsung KNOX Standard デバイス用のアプリを許可またはブロックします。&quot;"
+description: "カスタム プロファイルを作成して、Samsung KNOX Standard デバイス用のアプリを許可またはブロックします。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,14 +15,11 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 8245bb3fa8f08e719df903a70f079f4fdf534ca5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Microsoft Intune でカスタム ポリシーを使用して Samsung KNOX Standard デバイス用のアプリを許可またはブロックする
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]次のいずれかを作成する Microsoft Intune のカスタム ポリシーを作成するには、このトピックの手順を使用します。
@@ -69,4 +66,3 @@ ms.lasthandoff: 06/08/2017
 
 
 <!---## Assign the custom profile--->
-

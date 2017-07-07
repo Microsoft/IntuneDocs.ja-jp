@@ -14,15 +14,12 @@ ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
-ms.openlocfilehash: 53932f8d76dcf05374d8ffca69821165594590c4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
-
+ms.openlocfilehash: 0b2fbcc1d63f229e1b63873841bc300bdde92fa3
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="drive-end-user-adoption-with-conditional-access"></a>条件付きアクセスを利用してエンド ユーザーの導入を推進する
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -66,7 +63,7 @@ Intune で条件付きアクセス機能を有効にする (未登録のデバ�
 
 次のいずれかのオプションを選択します。
 
--   [Azure Active Directory の条件付きアクセスを構成する](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-azure-portal)
+-   [Azure Active Directory の条件付きアクセスを構成する](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 
 -   [Intune で On-Premises Exchange Connector をインストールする](/intune/exchange-connector-install)
 
@@ -79,4 +76,3 @@ Intune で条件付きアクセス機能を有効にする (未登録のデバ�
 ## <a name="next-steps"></a>次のステップ
 
 [標準的な移行サイクル](migration-guide-cycle.md)
-

@@ -1,7 +1,7 @@
 ---
 title: "iOS ストア アプリを Intune に追加する方法"
 titleSuffix: Intune on Azure
-description: "iOS ストア アプリを Intune に追加する方法について説明します。&quot;"
+description: "iOS ストア アプリを Intune に追加する方法について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,14 +15,12 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 84c5b7c2d849fb39a9466d5b92eb4f2a4a411808
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>iOS ストア アプリを Microsoft Intune に追加する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -63,4 +61,3 @@ ms.lasthandoff: 06/08/2017
 3. 構成が終了したら、**[アプリの追加]** ブレードで、**[保存]** を選択します。
 
 作成したアプリはアプリの一覧に表示され、選択したグループに割り当てることができるようになります。 詳細については、[アプリをグループに割り当てる方法](apps-deploy.md)に関するページを参照してください。
-

@@ -1,7 +1,7 @@
 ---
 title: "iOS 用のコンプライアンス ポリシーの作成方法"
 titleSuffix: Intune on Azure
-description: "iOS デバイス用のコンプライアンス ポリシーの作成方法について説明します。&quot;"
+description: "iOS デバイス用のコンプライアンス ポリシーの作成方法について説明します。\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,15 +15,12 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 9337586ad5daa909f38aba2b25fc159b44f55e65
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>Intune で iOS デバイス用のデバイス コンプライアンス ポリシーを作成する方法
 
 
@@ -124,4 +121,3 @@ iOS デバイスの場合、この設定はパスワードに含める必要が�
 <!--- ## Next steps
 
 [How to monitor device compliance](device-compliance-monitor.md)--->
-

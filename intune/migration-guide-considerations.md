@@ -14,15 +14,12 @@ ms.assetid: f29d2894-e98b-4f2c-b444-a8ccc1b7efdd
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
 ms.openlocfilehash: bc39ffd3a4f11a4c2b32f75dc5befcd8ce42f43e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="special-migration-considerations"></a>移行において特に考慮すべき事項
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -39,4 +36,3 @@ DEP の使用を続行して Intune でデバイスを管理するには、[Devi
 ## <a name="next-steps"></a>次のステップ 
 
 [フェーズ 2: 移行のキャンペーン](migration-guide-campaign.md)
-

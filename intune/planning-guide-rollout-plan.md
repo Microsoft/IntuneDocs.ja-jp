@@ -14,15 +14,12 @@ ms.assetid: 3a63f78f-a7e7-4f44-9288-16b28d5d58ca
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 73b43084c28436cb8a7e866dcee2d52694c60f5c
 ms.openlocfilehash: 0b3f13dbc5abb8110627cfb39aa61040a977bf38
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/16/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="develop-a-rollout-plan"></a>ロールアウト計画を作成する
 
 ロールアウト計画では、Intune ロールアウトの対象となる組織グループ、各グループのロールアウト期間、使用する登録方法を特定します。
@@ -108,4 +105,3 @@ Intune のユーザー登録のもう 1 つの選択肢は、IT 技術説明会�
 ## <a name="next-section"></a>次のセクション
 
 次のセクションは、[Intune ロールアウトの情報伝達計画を立てる](planning-guide-communication-plan.md)場合のガイダンスです。
-

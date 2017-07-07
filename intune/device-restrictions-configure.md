@@ -1,7 +1,7 @@
 ---
 title: "Intune デバイス制限設定の構成"
 titleSuffix: Intune on Azure
-description: "Intune を使用して、管理対象デバイスの設定と機能を構成する方法について説明します。&quot;"
+description: "Intune を使用して、管理対象デバイスの設定と機能を構成する方法について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,15 +15,12 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 8652b2b6db340f3b0cddcf538fa418c8774b1d6c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune でデバイスの制限設定を構成する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -67,5 +64,4 @@ ms.lasthandoff: 06/08/2017
 この概要レベルの例では、Android デバイスに組み込まれているカメラ アプリの使用をブロックするデバイスの制限ポリシーを作成します。
 
 ![Android デバイスのカメラを無効にする方法](./media/disable-android-camera.png)
-
 
