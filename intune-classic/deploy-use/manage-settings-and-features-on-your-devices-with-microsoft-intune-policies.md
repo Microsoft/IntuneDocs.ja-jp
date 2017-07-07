@@ -14,15 +14,12 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: f8ceb98181543d846934a16b8c9551207892ae0e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -213,4 +210,3 @@ Intune は Apple 構成ファイルのペイロードまたはカスタム Open 
 ### <a name="where-can-i-find-help-troubleshooting-policies"></a>ポリシーのトラブルシューティングのヘルプはどこにありますか?
 
 「[Microsoft Intune のポリシーのトラブルシューティング](/intune-classic/troubleshoot/troubleshoot-policies-in-microsoft-intune)」をご覧ください。
-

@@ -14,15 +14,12 @@ ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: cf505bec8a07923db78a870e4d7bfd64660e681c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="overview-of-the-app-lifecycle"></a>アプリのライフサイクルの概要
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
@@ -54,4 +51,3 @@ Intune では、さまざまな方法でアプリのデータを保護できま�
 ## <a name="retire"></a>インベントリから削除
 
 通常は、最終的に、展開したアプリは古くなり、削除する必要があります。 Intune では、簡単に[サービスからアプリを削除](device-management.md) ([クラシック ポータル](/intune-classic/deploy-use/retire-apps-using-microsoft-intune)) できます。
-

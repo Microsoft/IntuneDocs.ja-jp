@@ -14,15 +14,12 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 262cc461d5c1790fdfb162d5453a9cebd48271c4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>カスタム ポリシーを使用して、Android デバイスにアプリごとの VPN プロファイルを作成する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -80,4 +77,3 @@ Android デバイスまたはユーザー グループにポリシーをデプ�
     -   **ポリシーを展開せずにダイアログ ボックスを閉じるには**、**[キャンセル]** を選択します。
 
 **[ポリシー]** ワークスペースの **[概要]** ページに表示されるステータスの概要とアラートを見ると、注意が必要なポリシーの問題を識別できます。 ステータスの概要は **[ダッシュボード]** ワークスペースにも表示されます。
-

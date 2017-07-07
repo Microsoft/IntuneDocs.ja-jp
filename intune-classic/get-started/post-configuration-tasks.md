@@ -14,15 +14,12 @@ ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: a3a928e1b3ed6cd0bdfdaeee1da383c8e2183885
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="post-configuration-tasks"></a>構成後のタスク
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -34,4 +31,3 @@ Intune 有料サブスクリプションで最初に行う構成が完了した�
 -   **Intune レポート:** Microsoft Intune のアラート機能とレポート機能を使用して、デバイスやソフトウェア ライセンスのステータス、デバイスに作用する操作 (デバイスのワイプなど) を監視することができます。  レポートの詳細については、「[レポートの使用に関する Microsoft Intune 操作について](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports)」を参照してください。
 
 -   **会社のリソースの保護:** Intune の構成が完了し、デバイスを登録したら、データ損失やその他の脅威からデバイスを確実に保護するための作業が必要です。 リソース保護の詳細については、「[Microsoft Intune を使用してアプリとデータを保護する](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)」をご覧ください。
-

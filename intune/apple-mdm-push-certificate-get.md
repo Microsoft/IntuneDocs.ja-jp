@@ -1,7 +1,7 @@
 ---
 title: "Apple MDM プッシュ証明書を取得する"
 titleSuffix: Intune on Azure
-description: "Intune で iOS デバイスを管理するために Apple MDM プッシュ証明書を取得する手順について説明します。&quot;"
+description: "Intune で iOS デバイスを管理するために Apple MDM プッシュ証明書を取得する手順について説明します。\""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,15 +15,12 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 3df23e1f29543701cf3806a8fecc132ef3ac4f43
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="get-an-apple-mdm-push-certificate"></a>Apple MDM プッシュ証明書を取得する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -63,4 +60,3 @@ Apple MDM プッシュ証明書の有効期間は 1 年間です。iOS と macOS
 6. Azure Intune ポータルで **[Apple MDM プッシュ証明書]** 参照アイコンを選択し、Apple からダウンロードした .pem ファイルを選択し、**[アップロード]** を選択します。
 
 Apple MDM プッシュ証明書は **[有効]** と表示され、有効期限まで 365 日と表示されます。
-

@@ -14,15 +14,12 @@ ms.assetid: 45826fbc-6df5-41b2-8e80-d1353f904b43
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 60f4ab5a656a2e253d82971d7bea6b3a6c9eb25a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy"></a>Skycure アプリ、Microsoft Authenticator アプリ、iOS アプリ構成ポリシーの展開
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -68,4 +65,3 @@ ms.lasthandoff: 06/08/2017
 ## <a name="next-steps"></a>次のステップ
 
 [Skycure と Intune の統合をセットアップする](/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune)
-

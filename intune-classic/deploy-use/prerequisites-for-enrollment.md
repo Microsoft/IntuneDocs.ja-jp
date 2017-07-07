@@ -14,15 +14,12 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: ea6d7b9ffe698addc7ee317517abc7c760c232c0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Intune でのモバイル デバイス管理の前提条件
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -216,4 +213,3 @@ Microsoft サポートで適切なチェックリストの項目が確認され�
 
 >[!IMPORTANT]
 >Microsoft サポートでリセットが正常に行われたことが確認されるまで、サブスクリプションを構成しないでください。 構成が不完全な場合、破損の原因になったり、Intune サービスの使用に影響が生じたりする場合があります。
-

@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 7b4206d49731195dc08fed5e91942f6071789724
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-device-in-intune"></a>Intune にデバイスを登録する
 
 職場または学校で Microsoft Intune を使用している場合は、お使いのデバイスを登録して、会社の電子メール、ファイル、その他のリソースにアクセスできます。 デバイスを登録すると、組織は企業データをセキュリティで保護することができます。 登録について、また IT 管理者がユーザーのデバイスに関して確認できる内容および確認できない内容についての詳細は、このトピックの下部にあるリンク先を参照してください。
@@ -34,4 +30,3 @@ ms.lasthandoff: 05/23/2017
 - [Intune に iOS デバイスを登録する](enroll-your-device-in-intune-ios.md)
 - [Intune に macOS デバイスを登録する](enroll-your-device-in-intune-macos.md)
 - [Intune に Windows デバイスを登録する](enroll-your-device-in-intune-windows.md)
-

@@ -1,7 +1,7 @@
 ---
 title: "Intune でデバイスをリモートで再起動する"
 titleSuffix: Intune on Azure
-description: "デバイスの再起動アクションを使用して、デバイスをリモートで再起動する方法について説明します。&quot;"
+description: "デバイスの再起動アクションを使用して、デバイスをリモートで再起動する方法について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -14,15 +14,12 @@ ms.technology:
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 3597af6117832adab40a2d6213ed4e2a6a9f338e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="remotely-restart-devices-with-intune"></a>Intune でデバイスをリモートで再起動する
 
 
@@ -37,4 +34,3 @@ ms.lasthandoff: 06/08/2017
 5. 管理するデバイスの一覧からデバイスを選択し、その後**[再起動]** デバイス リモート アクションを選択します。
 
 実行したアクションの状態を確認するには、**[デバイスとグループ]** ブレードで **[デバイス アクション]** を選択します。
-

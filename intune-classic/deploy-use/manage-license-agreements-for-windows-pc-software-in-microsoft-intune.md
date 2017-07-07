@@ -14,15 +14,12 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: afaeb5b1af35008e6aa778e4391cafeda979bdc0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Microsoft Intune で Windows PC ソフトウェアのライセンス契約を管理する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -184,4 +181,3 @@ Intune には、Microsoft ボリューム ライセンス契約に加えて、�
 |ライセンス グループの名前変更|**[ライセンス]** ワークスペースで、ライセンス グループを選択し、**[タスク]** メニューの **[ライセンス グループの編集]** を選択します。|
 |ライセンス グループの削除|**[ライセンス]** ワークスペースで、ライセンス グループを選択し、**[タスク]** メニューの **[ライセンス グループの削除]** を選択します。 **ヒント:** 削除されたグループに含まれていたライセンスはいずれも **[割り当てられていない契約]** ライセンス グループに移されます。|
 |ライセンス契約の削除|**[ライセンス]** ワークスペースで、契約を選択し、**[削除]** を選択します。 **ヒント:** ボリューム ライセンス契約を削除した後でライセンス情報を更新するには、**[ライセンスの概要]** ページ、または特定のライセンス グループの **[全般]** タブで、**[今すぐ最新の情報に更新]** を選択します。|
-

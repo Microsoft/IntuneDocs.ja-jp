@@ -14,15 +14,12 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 67810c51c7a7b2ec1e1ff33c11a27a8757b2bcbd
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Microsoft Intune での Windows デバイス向けのコンプライアンス ポリシー設定
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -156,4 +153,3 @@ ms.lasthandoff: 06/08/2017
 
 - Windows 10 を実行する PC の場合は、**10.0** に続けて、**winver** コマンドから返される OS ビルド番号を指定する必要があります。 たとえば、10.0.10586 などになります。
 > ![[Windows のバージョン情報] ダイアログ ボックスの強調表示された OS ビルド バージョン](./media/ca_win10-os-version.png)
-

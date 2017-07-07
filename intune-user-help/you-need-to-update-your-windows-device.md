@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2df6fca5-9731-4ea0-a8ee-45b648caa5b4
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 4b5bbaf1d475eeb8f6e468d61996131baf9c772b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-update-your-windows-device"></a>Windows デバイスを更新する必要がある
 
 [!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
@@ -40,4 +36,3 @@ Windows を実行しているコンピューターの場合は、**オペレー�
 Windows 10 および Windows 8.1 の場合は、__検索バー__に「__Windows バージョン__」と入力します。 __[Can I help?]__ (ヘルプが必要ですか?) で、__[windows version]__ (windows バージョン) を選択します。 バージョン番号が表示されます。 この番号は、__10.0.14393.447__ のようになります。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-

@@ -1,7 +1,7 @@
 ---
 title: "macOS デバイス向けの Intune カスタム設定"
 titleSuffix: Intune on Azure
-description: "macOS カスタム プロファイルで使用できる設定について説明します。&quot;"
+description: "macOS カスタム プロファイルで使用できる設定について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,15 +15,12 @@ ms.assetid: 68100ea5-7d9b-4c0b-8df7-b9a24b2442c8
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: e23972944551d9b8ec536f5055a8ef991d6ba8c1
 ms.openlocfilehash: 57c4ec3621ffaef5c1aaffd55c87baac91e50154
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/12/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="custom-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune での macOS デバイス向けのカスタム設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -41,4 +38,3 @@ Microsoft Intune の macOS カスタム プロファイルを使用して、[App
 Apple Configurator ツールからエクスポートした設定に、macOS カスタム ポリシーを割り当てるデバイス上の macOS のバージョンとの互換性があることを確認します。 互換性のない設定を解決する方法については、[Apple 開発者](https://developer.apple.com/) Web サイトで「**Configuration Profile Reference**」 (構成プロファイル リファレンス) および「**Mobile Device Management Protocol Reference**」 (モバイル デバイス管理プロトコル リファレンス) を検索してください。
 
 インポートしたファイルは、ブレードの **[ファイルの内容]** 領域に表示されます。
-

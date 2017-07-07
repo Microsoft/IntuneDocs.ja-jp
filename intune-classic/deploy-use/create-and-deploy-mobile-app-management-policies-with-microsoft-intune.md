@@ -14,15 +14,12 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 73675b3c42691f030cd292d1956e225f2175ff00
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: ebb4b03307f8af7e1390c6db994d3120942fae89
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Microsoft Intune でのアプリ保護ポリシーの作成とデプロイ
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -164,8 +161,8 @@ Intune ライセンスが割り当てられているユーザーのみが、こ�
 > Intune を使用し、Configuration Manager によって iOS デバイスと Android デバイスを管理する場合、このポリシーは、選択したグループ直下のユーザーにのみ適用されます。 選択したグループ内にネストされた子グループのメンバーは、影響を受けません。
 
 エンド ユーザーは App Store または Google Play からアプリをダウンロードできます。 詳細については、次をご覧ください。
-* [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](/intune/end-user-mam-apps-android)
+* [アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](/intune/end-user-mam-apps-ios)
 
 ##  <a name="change-existing-policies"></a>既存のポリシーの変更
 既存のポリシーを編集して、対象ユーザーに適用できます。 ただし、既存のポリシーを変更する場合、アプリに既にサインインしているユーザーには、8 時間にわたって変更が表示されません。
@@ -219,6 +216,5 @@ iOS と Android 用のポリシー設定の完全な一覧を表示するには�
 [コンプライアンスとユーザーの状態を監視する](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>関連項目
-* [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
+* [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](/intune/end-user-mam-apps-android)
+* [アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](/intune/end-user-mam-apps-ios)

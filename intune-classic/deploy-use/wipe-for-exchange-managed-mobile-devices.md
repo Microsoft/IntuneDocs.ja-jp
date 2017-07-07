@@ -14,16 +14,12 @@ ms.assetid: e116b620-1e12-4b5c-9905-2f7acf2ae530
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 665f57a4cdb25c1e9f2bef7f1c25f284589df16f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="wipe-for-exchange-managed-mobile-devices"></a>Wipe for [Exchange]-managed mobile devices
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -35,4 +31,3 @@ Microsoft Intune では、Exchange ActiveSync (EAS) と Intune Exchange Connecto
 |フル ワイプ|メール アカウントとキャッシュ済みメールを削除します。|出荷時の設定に戻します。|出荷時の設定に戻します。|
 |選択的なワイプ/電子メール|電子メール アカウントを削除します。|サポートされていません。|サポートされていません。|
 |選択的なワイプ/ポリシー|ポリシーの強制は削除されますが、設定は変更されません|ポリシーの強制は削除されますが、設定は変更されません。|ポリシーの強制は削除されますが、設定は変更されません|
-

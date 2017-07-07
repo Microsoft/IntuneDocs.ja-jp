@@ -1,7 +1,7 @@
 ---
 title: "Intune でデバイスのパスコードをリセットする"
 titleSuffix: Intune on Azure
-description: "Intune で管理するデバイスのパスコードをリセットする方法について説明します。&quot;"
+description: "Intune で管理するデバイスのパスコードをリセットする方法について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -14,15 +14,12 @@ ms.technology:
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 4cd5f79c892bc96818195d6b50a804ac2666e4e7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="reset-the-passcode-on-intune-managed-devices"></a>Intune で管理するデバイスのパスコードをリセットする
 
 
@@ -37,4 +34,3 @@ ms.lasthandoff: 06/08/2017
 5. 管理するデバイスの一覧からデバイスを選択し、その後 **[パスコードのリセット]** デバイス リモート アクションを選択します。
 
 実行したアクションの状態を確認するには、**[デバイスとグループ]** ブレードで **[デバイス アクション]** を選択します。
-

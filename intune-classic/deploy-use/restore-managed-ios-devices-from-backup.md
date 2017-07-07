@@ -14,15 +14,12 @@ ms.assetid: a19e5612-8805-4bd7-a86a-b734bde293ae
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 7fc99a944000a8d5ecfc09ebc2e956e7c0f201c9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="restore-intune-managed-ios-devices-from-backup"></a>Intune の管理対象 iOS デバイスをバックアップから復元する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -52,4 +49,3 @@ ms.lasthandoff: 06/08/2017
 
 ### <a name="for-users-who-will-use-both-their-old-and-new-devices"></a>新旧両方のデバイスを使用するユーザーの場合
 __[設定]__ > __[Safari]__ > __[Clear History and Website Data]__ (履歴と Web サイトのデータをクリア) をタップして、Safari から Cookie を消去します。 消去後、会社のポータル アプリをアンインストールして再インストールし、標準登録手順で [Intune に iOS デバイスを登録](/intune-user-help/enroll-your-device-in-intune-ios)します。
-

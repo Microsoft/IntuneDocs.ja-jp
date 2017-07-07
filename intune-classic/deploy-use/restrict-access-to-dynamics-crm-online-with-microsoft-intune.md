@@ -14,15 +14,12 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: da92d75cfafa2a605ed8606ba7c8f3ec18dc6063
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-dynamics-crm-online-with-intune"></a>Intune で Dynamics CRM Online へのアクセスを保護する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -104,4 +101,3 @@ Dynamics CRM ポリシーに使用する 2 つのグループの種類を指定�
 * [SharePoint Online へのアクセスを保護する](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 * [Skype for Business Online へのアクセスを保護する](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-

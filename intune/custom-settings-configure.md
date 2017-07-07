@@ -1,7 +1,7 @@
 ---
 title: "Intune カスタム デバイス設定を構成する方法"
 titleSuffix: Intune on Azure
-description: "Intune を使用して管理対象デバイスのカスタム設定を構成する方法について説明します。&quot;"
+description: "Intune を使用して管理対象デバイスのカスタム設定を構成する方法について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,15 +15,12 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b5ad9cc6c03712090398cacb3d4bb653deb1d2a4
 ms.openlocfilehash: 769c566c7ebb91743fc0f18ebf8f3e76377ca847
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/12/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>Microsoft Intune でカスタム デバイス設定を構成する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -61,4 +58,3 @@ ms.lasthandoff: 06/12/2017
 
 プロファイルが作成され、プロファイルの一覧ブレードに表示されます。
 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事を参照してください。
-

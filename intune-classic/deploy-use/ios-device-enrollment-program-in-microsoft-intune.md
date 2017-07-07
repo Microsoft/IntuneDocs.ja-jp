@@ -1,6 +1,6 @@
 ---
 title: "iOS デバイスの Apple DEP 管理"
-description: "Apple デバイスを管理するために、iOS Device Enrollment Program (DEP) を通じて購入した iOS デバイスを登録する登録プロファイルを &quot;無線&quot; で展開します。"
+description: "Apple デバイスを管理するために、iOS Device Enrollment Program (DEP) を通じて購入した iOS デバイスを登録する登録プロファイルを \"無線\" で展開します。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 1a02a8b092242df369b382b6cdcc2c2bbd10c10a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>会社所有のデバイス登録プログラムによる iOS デバイスの登録
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -173,4 +170,3 @@ Microsoft Intune は、"無線" で Device Enrollment Program (DEP) を通じて
 
 ### <a name="see-also"></a>関連項目
 [デバイスを登録するための前提条件](prerequisites-for-enrollment.md)
-

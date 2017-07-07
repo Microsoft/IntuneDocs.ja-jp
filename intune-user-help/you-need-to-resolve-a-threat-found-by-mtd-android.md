@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9e176e10-72fd-42fe-94ef-b41d57a4914f
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: d1276c983cdf0e22e2e78e79b6646e045c8fb135
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Mobile Threat Defense アプリが検出した脅威を解決する必要がある
 
 Mobile Threat Defense が Android デバイスで潜在的な脅威を検出したら、問題を解決して会社または学校のメール、アプリ、ファイルに再びアクセスできるようにする必要があります。 IT 管理者の設定によって、Mobile Threat Defense で次のアプリのいずれかを使用して、このような問題を解決します。
@@ -40,4 +36,3 @@ Mobile Threat Defense が脅威と判断するアプリがインストールさ�
 アプリケーションをアンインストールするとすぐに、会社または学校の電子メールやその他のデータへのアクセスが回復します。 アプリケーションのアンインストール要求を無視すると、アプリをアンインストールするまで、会社のメールやデータにアクセスできなくなります。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-

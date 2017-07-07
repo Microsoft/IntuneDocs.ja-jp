@@ -13,15 +13,12 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: cf77cb313d5a36c5e7975e70d54bf044aa2d30c8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-up-windows-device-management"></a>Windows デバイスの管理をセットアップする
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -73,4 +70,3 @@ CNAME リソース レコードには次の情報を含める必要がありま�
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune でデバイスを登録するための前提条件](prerequisites-for-enrollment.md)
-

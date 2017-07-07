@@ -1,5 +1,4 @@
 ---
-
 title: "Android for Work のポリシー設定"
 description: "Intune で管理する Android for Work デバイスの設定と機能を制御するポリシーを作成します。"
 keywords: 
@@ -15,15 +14,12 @@ ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 858c4a525945694326952e8afe280e4b66cd2ccb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Microsoft Intune での Android for Work ポリシー設定
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -93,4 +89,3 @@ Microsoft Intune **Android for Work カスタム構成ポリシー**を使用し
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

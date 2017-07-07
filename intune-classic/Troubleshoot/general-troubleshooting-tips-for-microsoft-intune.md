@@ -14,15 +14,12 @@ ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: d348cc2850864206552bf53ab1beec9b9cb55bab
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Microsoft Intune の一般的なトラブルシューティングのヒント
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -97,4 +94,3 @@ Microsoft Intune を展開した後、構成やクライアントのデバイス
 [Microsoft Intune でのクライアント セットアップのトラブルシューティング](troubleshoot-client-setup-in-microsoft-intune.md)
 
 [Microsoft Intune でのソフトウェア更新のトラブルシューティング](troubleshoot-software-updates-in-microsoft-intune.md)
-

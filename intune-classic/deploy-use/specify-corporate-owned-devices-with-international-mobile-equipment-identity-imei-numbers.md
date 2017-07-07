@@ -14,15 +14,12 @@ ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: d1ecc65dac893740b152aa743e6b32c5de5a3ec9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers"></a>IMEI (国際移動体装置識別番号) を使って企業所有のデバイスを指定する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -61,4 +58,3 @@ IMEI 番号を持つデバイスを Intune に登録する (通常は、ユー�
 > 今後、組織が新しい Azure Portal に移行された場合、この機能への変更が表示されます。 既存の Intune 管理者コンソールでは、管理者はアップロードされた CSV から関連する詳細をそのまま使用し、個々のハードウェア ID の既存の詳細を上書きすることができます。 新しい Azure Portal では、自動ですべてのハードウェア ID の詳細を上書きするか、既存の ID の新しい詳細をすべて無視することができます。
 
 International Mobile Equipment Identifier の詳しい仕様については、「[3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729)」を参照してください。
-

@@ -14,15 +14,12 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 87bf5c96ee29f8a39b875543c4f6a3731f3e604e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Microsoft Intune で電子メール プロファイルを使用して会社の電子メールへのアクセスを構成にする
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -133,4 +130,3 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
 > - Android for Work の場合は、適切な電子メール プロファイルに加え、Gmail または Nine Work アプリも展開したことを確認してください。
 > - デバイスから電子メール プロファイルを削除する場合、展開を編集し、デバイスがメンバーになっているすべてのグループを削除します。 デバイスで唯一の電子メール プロファイルはこの方法で削除できないことに注意してください。
 > - 以前に展開した電子メール プロファイルを変更すると、電子メールの設定の再構成を承認するかを確認するメッセージがエンド ユーザーに表示される場合があります。
-

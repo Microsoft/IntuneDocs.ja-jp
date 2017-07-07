@@ -1,7 +1,7 @@
 ---
 title: "Android - Pulse Secure 用のアプリ別の VPN プロファイル"
 titleSuffix: Intune on Azure
-description: "Intune で管理する Android デバイス用にアプリごとの VPN プロファイルを作成する方法について説明します。&quot;"
+description: "Intune で管理する Android デバイス用にアプリごとの VPN プロファイルを作成する方法について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,15 +15,12 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: f0e3a8363eb25ba3a3b2c16f15b8188acb694938
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Microsoft Intune のカスタム プロファイルを使って、Android デバイス用にアプリごとの VPN プロファイルを作成する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -85,4 +82,3 @@ VPN プロファイルの作成時に指定した**接続名**の値を書き留
 ## <a name="step-3-assign-both-policies"></a>手順 3: 両方のポリシーを割り当てる
 
 [デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事の指示に従って、必要なユーザーまたはデバイスに両方のプロファイルを割り当てます。
-

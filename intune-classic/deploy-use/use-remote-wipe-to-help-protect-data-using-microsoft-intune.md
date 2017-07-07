@@ -14,15 +14,12 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 9d03f3936d608b9d526724eccbbdadbe030b53b8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Microsoft Intune のフル ワイプまたは選択的ワイプを使用してデータを保護する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -172,4 +169,3 @@ EFS の選択的ワイプで現在サポートされているデータとアプ�
 [デバイスをインベントリから削除する](retire-devices-from-microsoft-intune-management.md)
 
 [Windows のデバイス データ管理の選択的ワイプ](http://technet.microsoft.com/library/dn486874.aspx)
-

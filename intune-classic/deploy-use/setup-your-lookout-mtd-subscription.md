@@ -14,15 +14,12 @@ ms.assetid: 8477a2f1-2e1d-4d42-8bcb-e1181cc900bb
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 215d579c7e8806f98d99db9319aa5808d99653c1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 5acbf2aacc747113ff8b3889dba306e30567f24a
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-up-your-lookout-mobile-threat-defense-subscription"></a>Lookout Mobile Threat Defense サブスクリプションを設定する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -76,7 +73,7 @@ Lookout を Intune に統合するために、Lookout Mobility Endpoint Security
 
   ![Lookout コンソールの初回ログイン ページのスクリーンショット](../media/mtp/lookout_mtp_initial_login.png) 承諾して同意すると、Lookout コンソールが自動的に表示されます。
 
-  ログインで問題が発生した場合は、「[Lookout と Intune の統合に関するトラブルシューティング](/intune-classic/troubleshoot/troubleshooting-lookout-integration)」を参照してください。
+  ログインで問題が発生した場合は、「[Lookout と Intune の統合に関するトラブルシューティング](/intune-classic/Troubleshoot/device-threat-protection-troubleshooting.md)」を参照してください。
 
 3.  [Lookout コンソール](https://aad.lookout.com)で **[System]** (システム) モジュールから **[Connectors]\** (コネクタ) タブを選択し、**[Intune]** を選択します。
 
@@ -139,4 +136,3 @@ Lookout Mobile Threat Defense によって、さまざまな種類のモバイ�
 セットアップが完了すると、Mobile Threat Defense は Azure AD のポーリングを開始し、指定された登録グループに対応するデバイスを探します。  登録されたデバイスに関する情報は、「Devices」 (デバイス) モジュールで確認できます。  デバイスの初期状態は保留中と表示されます。  Lookout for Work アプリがデバイスでインストールされたり、オープンになったり、アクティブ化されたりすると、デバイスの状態が変わります。  Lookout for Work アプリをデバイスにプッシュする方法の詳細については、「[Lookout for Work アプリを構成して展開する](configure-deploy-lookout-for-work-app.md)」をご覧ください。
 ## <a name="next-steps"></a>次のステップ
 [Intune 管理コンソールで Lookout MTP の接続を有効にする](/intune-classic/deploy-use/enable-lookout-mtd-connection)
-

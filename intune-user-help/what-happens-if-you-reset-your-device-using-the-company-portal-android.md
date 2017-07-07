@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5d4e31a2-7bda-4d62-a0ba-c31e77ecea03
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 6ffed5dc15722facdccc9f25e5694a03b03346b0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>ポータル サイトを使用して Android デバイスをリセットするとどうなりますか。
 
 ポータル サイトを使用して Android デバイスをリセットすると、デバイス上のすべてのアプリ、設定、個人データが削除されます。 これにより、デバイスは出荷時の既定の設定に戻ります。
@@ -38,4 +33,3 @@ Samsung KNOX デバイスがある場合は、ポータル サイトから**デ�
 - 特定の設定を適用するための IT 管理者の権限。
 
 ご質問がございましたら、IT 管理者に問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-

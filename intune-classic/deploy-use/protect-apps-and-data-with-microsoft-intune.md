@@ -14,15 +14,12 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 09b7a1d4901a52845719e8d7094f665b12b91ab4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>Microsoft Intune でアプリとデータを保護する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -55,4 +52,3 @@ Microsoft Office アプリのようなアプリには、Intune アプリ SDK が
 [特注の基幹業務アプリ](/intune/apps-prepare-mobile-application-management)で MAM ポリシーを使用することもできます。
 
 データ移動を制限するだけでなく、デバイスをなくしたり、盗難に遭ったりした場合、あるいは、ユーザーが退職した場合、[会社のデータを選択消去](wipe-managed-company-app-data-with-microsoft-intune.md)し、個人データだけを残すことができます。
-

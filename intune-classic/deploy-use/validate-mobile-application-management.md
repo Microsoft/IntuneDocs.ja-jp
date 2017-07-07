@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ms.reviewer: joglocke
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 1e22be7b238cce195ee88c938b1cca009c0b21d3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="validating-your-mobile-application-management-setup"></a>モバイル アプリケーション管理のセットアップの検証
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -59,4 +56,3 @@ MAM はデータ保護ツールであるため、ユーザーが問題を報告�
 [Microsoft Intune でのモバイル アプリ管理ポリシーの作成および展開](..\deploy-use\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Microsoft Intune でモバイル アプリケーション管理ポリシーを使用してデータを保護する](..\deploy-use\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-

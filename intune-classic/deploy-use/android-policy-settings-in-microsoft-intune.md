@@ -1,5 +1,4 @@
 ---
-
 title: "Android および Samsung KNOX ポリシー設定"
 description: "Intune で管理する Android デバイスの設定と機能を制御するポリシーを作成します。"
 keywords: 
@@ -15,15 +14,12 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 07d49d9f9628dd296c3708a063de34d485c77acb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Microsoft Intune の Android および Samsung KNOX Standard ポリシー設定
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -211,4 +207,3 @@ Microsoft Intune **Android カスタム構成ポリシー**を使用して、And
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

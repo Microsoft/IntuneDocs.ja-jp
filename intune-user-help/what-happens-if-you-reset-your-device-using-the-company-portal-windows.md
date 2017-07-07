@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 4c4d46a8d90c3435b640a6135d69df1f3949b6a3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>ポータル サイトを使用して Windows デバイスをリセットするとどうなりますか。
 
 ポータル サイト アプリや[ポータル サイト Web サイト](reset-erase-your-device-cpwebsite.md)を使用して Windows デバイスをリセットすると、デバイスが工場出荷時設定にリセットされ、アプリケーション、設定、お客様の個人データを含むデータがすべて削除されます。 各デバイスでの操作結果は、デバイスの種類とその使用方法によって異なります (次の表を参照してください)。 紛失または盗難にあったデバイスをリセットする方法の手順については、「[紛失したまたは盗難にあったデバイスをリセット (消去) する](reset-erase-your-device-cpwebsite.md)」を参照してください。
@@ -38,4 +33,3 @@ ms.lasthandoff: 05/23/2017
 |PC およびラップトップ|**Windows 8.1 および Windows 8**<br />電子メール専用で Windows 8 または Windows 8.1 を実行しているコンピューターはリセットできません。<br /><br />**Windows 7 または Windows Vista**<br />Windows 7 以前を実行しているコンピューターはリセットできません。|
 
 ご質問がございましたら、IT 管理者に問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-

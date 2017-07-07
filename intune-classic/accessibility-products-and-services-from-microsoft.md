@@ -14,15 +14,12 @@ ms.assetid: b23d4007-1866-42e9-b6cb-d45408562da4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 69ff11881d8a5e6c4abfff5e9df4eeda87d140c2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft が提供するユーザー補助製品およびサービス
 [!INCLUDE[accessibility1](./includes/accessibility1_md.md)]
 
@@ -70,4 +67,3 @@ ms.lasthandoff: 06/08/2017
 
 ## <a name="for-more-information"></a>詳細情報
 [!INCLUDE[accessibility17](./includes/accessibility17_md.md)]
-

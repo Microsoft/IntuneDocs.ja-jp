@@ -1,7 +1,7 @@
 ---
 title: "Intune デバイス構成プロファイルを作成する"
 titleSuffix: Intune on Azure
-description: "Intune デバイス構成プロファイルを作成する方法について説明します。&quot;"
+description: "Intune デバイス構成プロファイルを作成する方法について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,15 +15,12 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 73b43084c28436cb8a7e866dcee2d52694c60f5c
 ms.openlocfilehash: 6df6813667241d3ad5f8768585f2e1a34f0fe6e3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/16/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-create-device-configuration-profiles-in-microsoft-intune"></a>Microsoft Intune でデバイス構成プロファイルを作成する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -60,4 +57,3 @@ ms.lasthandoff: 06/16/2017
 
 ### <a name="next-steps"></a>次のステップ
 デバイス プロファイルを割り当てる方法については、[Microsoft Intune でデバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事を参照してください。
-

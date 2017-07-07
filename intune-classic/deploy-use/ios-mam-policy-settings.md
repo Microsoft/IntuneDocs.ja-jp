@@ -14,15 +14,12 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 384c3a8c930bf7ee8487726c37f1ff3652675650
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 #  <a name="ios-mobile-app-protection-policy-settings"></a>iOS モバイル アプリ保護ポリシーの設定
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -93,4 +90,3 @@ ms.lasthandoff: 06/08/2017
 
 - Outlook 用アドインの詳細については、[こちら](https://technet.microsoft.com/library/jj943753(v=exchg.150).aspx)を参照してください。
 - Outlook アプリ用のアドインをインストールおよび管理できる管理者とユーザーを指定する方法の詳細については、[こちら](https://technet.microsoft.com/library/jj943754(v=exchg.150).aspx)を参照してください。
-

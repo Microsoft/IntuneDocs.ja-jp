@@ -14,15 +14,12 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 8982072b93c22e0294b6e454d597e0aa5bbb7b71
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="exchange-activesync-mobile-device-management-with-microsoft-intune"></a>Microsoft Intune を使用した Exchange ActiveSync モバイル デバイスの管理
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -50,4 +47,3 @@ Intune コンソールを使用すれば、[EAS ポリシー設定](exchange-act
 
 ## <a name="wipe-company-data-from-mobile-devices"></a>会社のデータをモバイル デバイスから消去する
 最後に、会社のデータが不要になったとき、またはデバイスをなくしたり盗まれたりしたときは、[EAS で管理されたモバイル デバイスから会社のデータを消去](wipe-for-exchange-managed-mobile-devices.md)できます。
-
