@@ -14,15 +14,12 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 6ed808e3dd1db1bf58d4c0caa8cddccbc49c05f7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense コネクターと Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -98,4 +95,3 @@ Man-in-the-middle 攻撃など、ネットワークに対する脅威を検出�
 3.  [Lookout Mobile Threat Defense アプリを構成し、展開する](configure-deploy-lookout-for-work-app.md)
 4.  [Lookout デバイス コンプライアンス ポリシーを構成する](create-lookout-device-compliance-policy.md)
 5.  [Lookout Mobile Threat Defense 統合の問題を解決する](/intune-classic/troubleshoot/device-threat-protection-troubleshooting)
-

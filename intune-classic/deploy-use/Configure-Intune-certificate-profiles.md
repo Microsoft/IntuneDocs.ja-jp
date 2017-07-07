@@ -14,15 +14,12 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: aaf7bf3cb05708457c57070f4a300ece987421c3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-intune-certificate-profiles"></a>Intune 証明書プロファイルを構成する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -158,4 +155,3 @@ Intune の他のポリシーをデプロイするのと同じ方法で、証明�
 -  [電子メール プロファイルを使用して会社の電子メールへのアクセスを構成する](configure-access-to-corporate-email-using-email-profiles-with-Microsoft-Intune.md)
 -  [Microsoft Intune での Wi-Fi 接続](wi-fi-connections-in-microsoft-intune.md)
 -  [Microsoft Intune での VPN 接続](vpn-connections-in-microsoft-intune.md)
-

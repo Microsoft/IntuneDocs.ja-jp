@@ -14,16 +14,12 @@ ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 335d91cd6583052bfcc72fc018b387eed8823b7e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="create-policies-and-publish-an-app-to-evaluation-users"></a>ポリシーを作成してアプリを評価ユーザーに発行する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -105,4 +101,3 @@ Skype は、以上の手順で、モバイル デバイスの構成ポリシー�
 [Intune の一般的な使用方法](/intune/common-scenarios)を読む
 
 [有料サブスクリプション](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)に切り替える
-

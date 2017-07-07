@@ -14,15 +14,12 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 30c7c97b876922e754a1f92ec035eb4e184c7970
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: c3c41f5e3b0fc81232b03fe547bee7f72fb427a0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Microsoft Intune でアプリ保護ポリシーを監視する
 ユーザーに適用したアプリ保護ポリシーのコンプライアンス状態を監視できます。 アプリ保護ポリシーによって影響を受けるユーザー、コンプライアンスの状態、ユーザーに対して発生する可能性がある問題に関する情報を見つけることができます。
 
@@ -134,6 +131,5 @@ ms.lasthandoff: 06/08/2017
 ## <a name="see-also"></a>関連項目
 [iOS アプリ間のデータ転送を管理する](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
+* [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](/intune/end-user-mam-apps-android)
+* [アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](/intune/end-user-mam-apps-ios)

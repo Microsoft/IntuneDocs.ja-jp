@@ -14,15 +14,12 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 9b99762dfc8e527fc845755365a09fab8a0d3a0c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>デバイスを構成すると、会社の Wi-Fi ネットワークに接続できます。
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -181,4 +178,3 @@ Windows では、**netsh wlan** ユーティリティを使用して、既存の
 
 ### <a name="see-also"></a>関連項目
 事前共有キーを持つ Wi-Fi プロファイルを作成する方法については、[事前共有キーを持つ Wi-Fi プロファイル](pre-shared-key-wi-fi-profile.md)に関するページを参照してください。
-

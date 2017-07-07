@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d7c871b8-e5d8-4912-b87f-7e6bc59897be
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 667282ef1ab6e5058e852b6e3b94daecd01c5d53
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="send-enrollment-errors-to-your-it-admin"></a>IT 管理者に登録に関するエラーを送信する
 
 Intune に Android デバイスを登録する際にエラーが発生した場合は、**[再試行]** をタップしてもう一度登録を試すことができます。 これがうまくいかない場合は、**[情報の送信]** をタップして、IT 管理者に状況に関する情報を電子メールで送信することができます。
@@ -36,4 +32,3 @@ Intune に Android デバイスを登録する際にエラーが発生した場�
 
 - [[情報の送信] ボタンを使用してログを電子メールで送信する](send-logs-to-your-it-admin-by-email-android.md)
 - [USB ケーブルを使用してログを電子メールの添付ファイルとして送信する](send-logs-to-your-it-admin-using-cable-android.md)
-

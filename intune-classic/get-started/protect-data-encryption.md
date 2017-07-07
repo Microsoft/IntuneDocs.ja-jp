@@ -14,15 +14,12 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 42ae7cdedbcbd9bf6420ca9fd2cfa39a75174736
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="quick-start-guide-protect-company-data-with-data-encryption"></a>クイック スタート ガイド: データの暗号化により会社のデータを保護する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -53,4 +50,3 @@ Microsoft Intune は、iOS または Android モバイル デバイスを完全�
 - [Microsoft Intune での MAM 対応アプリのエンド ユーザー エクスペリエンスについて確認します。](/intune-classic/eploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune)
 - [Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決めます。](/intune/apps-prepare-mobile-application-management)
 - [Microsoft Intune アプリケーション パートナー一覧を確認します。](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)
-

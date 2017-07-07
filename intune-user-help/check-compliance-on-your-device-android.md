@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d98d9bbe-98fa-48a9-8808-110435eac9e4
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 088012a1dd9ee1997e7d2b578e54774c4bd586fb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="check-compliance-on-your-android-device"></a>Android デバイスでコンプライアンス対応を確認する
 
 ご使用のデバイスでしばらくの間、Intune にチェックインしていない場合、会社または学校のリソースにアクセスすることができない可能性があります。 アクセスを回復するには、次を試してください。
@@ -35,4 +31,3 @@ ms.lasthandoff: 05/23/2017
 2. **[ポリシー準拠状況の確認]** をタップします。
 
 紛失したまたは盗難にあったデバイスを自分でリセットできない場合は、IT 管理者に依頼してください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-

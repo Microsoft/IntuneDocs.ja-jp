@@ -1,7 +1,7 @@
 ---
 title: "アプリ保護ポリシー付きの Android アプリ"
 titleSuffix: Intune on Azure
-description: "このトピックでは、アプリ保護ポリシーを使用して Android アプリを管理するときの注意点について説明します。&quot;"
+description: "このトピックでは、アプリ保護ポリシーを使用して Android アプリを管理するときの注意点について説明します。\""
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,17 +15,14 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 63badd001958f22339415e0cd03da9ade275c6f3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>アプリ保護ポリシーを使用して Android アプリを管理するときの注意点 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]このトピックでは、アプリ保護ポリシーを使用する場合のアプリのユーザー エクスペリエンスについて説明します。 アプリ保護ポリシーが適用されるのは、作業アカウントを使用してアプリにアクセスしたり、会社の OneDrive 事業拠点に格納されたファイルにアクセスしたりするなどのワーク コンテキストでアプリが使用される場合に限定されます。
+[!INCLUDE[azure_portal](./includes/azure_portal.md)] このトピックでは、アプリ保護ポリシーを使用する場合のアプリのユーザー エクスペリエンスについて説明します。 アプリ保護ポリシーが適用されるのは、作業アカウントを使用してアプリにアクセスしたり、会社の OneDrive 事業拠点に格納されたファイルにアクセスしたりするなどのワーク コンテキストでアプリが使用される場合に限定されます。
 ##  <a name="accessing-apps"></a>アプリへのアクセス
 
 Android デバイス上のアプリ保護ポリシーに関連付けられたすべてのアプリでポータル サイト アプリが必要です。
@@ -84,4 +81,3 @@ Android デバイスで会社の AV、PDF、および画像ファイルを表示
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune でのアプリ保護ポリシーの作成と展開](app-protection-policies.md)
-

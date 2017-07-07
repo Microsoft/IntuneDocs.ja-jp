@@ -14,15 +14,12 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: e22686964df7415ece75361a645103006af43c51
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>Microsoft Intune で SharePoint Online へのアクセスを保護する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -197,4 +194,3 @@ SharePoint Online ポリシーには、次の 2 つのグループの種類を�
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune を使用して電子メールおよび O365 サービスへのアクセスを保護する](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
-

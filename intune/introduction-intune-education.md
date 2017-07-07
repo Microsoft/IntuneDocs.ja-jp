@@ -14,15 +14,12 @@ ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: lindavr
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: d69727762e63f0258eacc084801827c50eaa1454
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-intune-for-education"></a>Intune for Education とは
 
 Intune for Education は、教師と生徒を生産的にするように、また、学校データを保護するように設計されています。 Intune はクラウド基盤の EMM (エンタープライズ モビリティ管理) サービスであり、Intune for Education の土台です。
@@ -45,4 +42,3 @@ Intune と Intune for Education の両方で、次のことができます。
 * [Intune の 30 日間の評価版](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune)を使用して製品の理解を深める
 * Intune for Education のクイック スタート ガイドは[こちら](/intune-education/what-is-express-configuration)をご覧ください。
 * Intune の[技術的要件と機能](/intune/supported-devices-browsers)を調べる
-

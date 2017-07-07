@@ -14,15 +14,12 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 71d57965164f0822e1a6d95715c4f9c92f7bf4bd
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="quick-start-guide-publish-mobile-apps-to-your-users"></a>クイック スタート ガイド: ユーザーにモバイル アプリを発行する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -45,4 +42,3 @@ Microsoft Intune では、エンド ユーザーが選択したデバイスか�
 ## <a name="what-should-i-do-next"></a>次にすべきこと
 - [Microsoft Intune でアプリの展開を監視する](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune)
 - [モバイル デバイスで会社のデータのデータ損失保護を行う](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-

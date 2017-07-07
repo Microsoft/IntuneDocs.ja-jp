@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e6c4fedc-47b6-44b1-8c59-2fb81417f978
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: f73b8b8638cfa775edc921edd8b6206191c5d3b5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-do-i-find-the-serial-number-on-my-device"></a>デバイスのシリアル番号を検索する方法
 
 デバイスのシリアル番号はデバイスを一意に識別し、IT 管理者がデバイスを既存のものから新しいものに置き換える場合などに役立ちます。 シリアル番号を検索するには、次のようにします。
@@ -35,4 +31,3 @@ ms.lasthandoff: 05/23/2017
 3. __[バージョン番号]__ をタップし、__[シリアル番号]__ までスクロールします。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-

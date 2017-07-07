@@ -11,19 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e0c5993b-3fa5-411e-bae0-93fb66c49bea
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: be200787cf628e79e95ca40f5f733123aa2e58f9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="you-need-to-enable-encryption"></a>暗号化を有効にする必要がある
 
@@ -32,4 +29,3 @@ ms.lasthandoff: 05/23/2017
 BitLocker は、ドライブを暗号化し、データの保護に役立つソフトウェアです。 Windows 10 デバイスで BitLocker を有効にする場合は、[こちらの手順](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d)に従ってください。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-

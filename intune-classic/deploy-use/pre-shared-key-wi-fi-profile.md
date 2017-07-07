@@ -14,14 +14,11 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 7f3432f914c2f4a76d7a9303924d106b270220a1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>カスタム ポリシーを使用して、事前共有キーを使用した Wi-Fi プロファイルを作成する
 
@@ -221,4 +218,3 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune での Wi-Fi 接続](wi-fi-connections-in-microsoft-intune.md)
-

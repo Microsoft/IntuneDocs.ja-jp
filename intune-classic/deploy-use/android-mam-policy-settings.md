@@ -14,15 +14,12 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 785e36bb9354e02e4040b5cf2271cbf6f10c4041
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune の Android アプリ保護ポリシー設定
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -91,4 +88,3 @@ ms.lasthandoff: 06/08/2017
 | **アプリ データをワイプするまでのオフライン間隔 (日)** | アプリがこの日数オフラインで実行されると (日数は管理者が定義)、アプリ自体で選択的ワイプが実行されます。 この選択的ワイプは、MAM ワイプ ワークフローで管理者が開始するのと同じワイプです。 <br><br> | 90 日間 |
 | **[スクリーン キャプチャと Android Assistant をブロックする (Android 6.0 以降)]** | **[はい]** を選択すると、このアプリを使用するときに、デバイスのスクリーン キャプチャ機能と **Android Assistant** 機能がブロックされます。 また、**[はい]** を選択すると、職場または学校のアカウントでこのアプリを使用するときに、使用中のアプリ一覧プレビュー イメージがぼかし表示になります。 | いいえ |
 | **Disable app PIN when device PIN is managed (デバイスの PIN が管理されるときはアプリの PIN を無効にする)** | 登録されているデバイスでデバイス ロックが検出された場合にアプリの PIN を無効にするには、**[はい]** を選択します。 | いいえ |
-

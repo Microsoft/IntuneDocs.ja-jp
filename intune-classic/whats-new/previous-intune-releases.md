@@ -14,15 +14,12 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 0226b8677f2a1ac91e2d7512aa45d44928ecbd95
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="previous-intune-releases"></a>以前の Intune のリリース
 
 このページは、「[Microsoft Intune の新機能](whats-new-in-microsoft-intune.md)」で発表された内容の一覧です。
@@ -218,4 +215,3 @@ Azure Active Directory (AAD) テナント内の任意のユーザーについて
 >[!div class="step-by-step"]
 
 >[&larr;**Intune の新機能**](whats-new-in-microsoft-intune.md)    
-

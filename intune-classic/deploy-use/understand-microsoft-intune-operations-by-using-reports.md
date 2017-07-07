@@ -14,16 +14,12 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: c433acc553b1f89789cdb72a33e8dbbc7929bae0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>Understand Microsoft Intune operations by using reports
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -73,6 +69,5 @@ Intune レポートには、組織内のソフトウェア、ハードウェア�
 |**保存**|**[新しいレポートの作成]** ページで、各ユーザーは最大 100 レポートを保存できます。 要件に応じたレポート パラメーターを構成し、**[保存]**を選択するか、別の名前を使用する場合は **[名前を付けて保存]** を選択します。|
 |**読み込み**|以前に保存したレポート パラメーターを取得する場合は、**[新しいレポートの作成]** ページで **[読み込み]** を選択します。|
 |**削除**|**[レポート]** ワークスペースで、目的のレポートの種類を選択して **[読み込み]** を選択します。 次に、レポートの一覧で、レポートの横にある削除 (x) アイコンを選択します。|
-
 
 

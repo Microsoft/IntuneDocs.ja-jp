@@ -14,15 +14,12 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 8dae789ad1996543ddf9b92d031ac995beff6a46
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Intune を使用して企業所有のデバイスを登録する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -67,4 +64,3 @@ Intune は、次のいずれかの条件を満たす場合、デバイスを "�
  - デバイスが [Azure Active Directory または Enterprise Mobility Suite に Windows 10 Enterprise デバイスとして](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview)登録されている (Windows 10 のみ)。
 
 デバイスに企業とタグが付けられると、管理コンソールのそのデバイス レコードの **[所有権]** 列に **[企業]** と表示されます。 
-

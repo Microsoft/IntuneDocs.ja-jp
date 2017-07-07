@@ -1,7 +1,7 @@
 ---
 title: "デバイス コンプライアンスを監視する方法"
 titleSuffix: Intune on Azure
-description: "デバイス コンプライアンスを監視する方法を説明します。&quot;"
+description: "デバイス コンプライアンスを監視する方法を説明します。\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,13 +15,11 @@ ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 8f18bfa7fb045dbad4ab785c2c8e1bc13fc439db
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="how-to-monitor-device-compliance-in-intune"></a>Intune でデバイス コンプライアンスを監視する方法
 
@@ -48,4 +46,3 @@ ms.lasthandoff: 06/08/2017
 - 設定が適用されているプラットフォーム。
 
 各設定をドリルダウンすると、これらの設定が有効になっているプロファイルの詳細情報と設定の値を表示できます。
-

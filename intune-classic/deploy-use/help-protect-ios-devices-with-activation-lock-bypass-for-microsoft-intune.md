@@ -14,15 +14,12 @@ ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 3695e4c047edd9b788768db36184460f0e27d3bc
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune"></a>Microsoft Intune でアクティブ化ロックのバイパスを使用して iOS デバイスを保護する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -106,4 +103,3 @@ Intune では、iOS 8.0 以降を実行している監視対象デバイスの�
 ### <a name="see-also"></a>関連項目
 [デバイスをインベントリから削除する](retire-devices-from-microsoft-intune-management.md)
 [リモート ロックとパスコードのリセットによってデバイスを保護する](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
-

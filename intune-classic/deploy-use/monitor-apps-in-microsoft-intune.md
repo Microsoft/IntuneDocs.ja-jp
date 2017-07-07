@@ -14,16 +14,12 @@ ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 9255a9cb966ef02aba11e0a6aaf7caf7e808a41c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="monitor-app-deployments-in-microsoft-intune"></a>Microsoft Intune でアプリの展開を監視する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -49,4 +45,3 @@ Intune 管理コンソールで管理対象アプリの展開の状態を確認�
 アプリの **[ソフトウェア プロパティ]** ページで、次のいずれかのタブを選択します。**[全般]** - アプリとそのインストール状態に関する一般的な情報が表示されます。**[デバイス]** - アプリの対象となる展開が正常にインストールされているデバイスが表示されます。**[ユーザー]** - アプリの対象となる展開が正常にインストールされているデバイスのユーザーが表示されます。
 
 前述のように、**[フィルター]** ドロップダウン リストを利用し、各タブに表示される値を構成できます。
-

@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5b9ee20b-3c4e-4461-86d3-6fd26e7f71a6
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 6157a126abfb2dc145556c4524afa55d1d1e7bc1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-install-mobile-threat-defense-on-your-ios-device"></a>iOS デバイスに Mobile Threat Defense をインストールする必要がある
 
 作業内容にアクセスする前に、IT 管理者から潜在的なセキュリティ脅威を検出してデバイスを保護することができる、Mobile Threat Defense アプリをインストールするように求められます。 IT 管理者の設定によって、Mobile Threat Defense で表示されるプロンプトは異なります。
@@ -34,4 +30,3 @@ ms.lasthandoff: 05/23/2017
 **インストールが機能しない場合**
 
 ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。 このようなことが起こる場合、IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-

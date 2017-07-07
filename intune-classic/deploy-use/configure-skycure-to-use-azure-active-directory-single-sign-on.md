@@ -14,15 +14,12 @@ ms.assetid: 34d5d359-5c7c-4225-a205-8ce890b6f890
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: a26292f2247c4fa65e9aa2df047a9ef1fe98476a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-skycure-to-use-azure-active-directory-single-sign-on-sso"></a>Azure Active Directory シングル サインオン (SSO) を使用するように Skycure を構成する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -86,4 +83,3 @@ Skycure を実行しているユーザーを含む専用ユーザー グルー�
 ## <a name="next-steps"></a>次のステップ
 
 [Skycure iOS アプリ構成ポリシーをダウンロードする](/intune-classic/deploy-use/download-skycure-ios-app-configuration-policy)
-

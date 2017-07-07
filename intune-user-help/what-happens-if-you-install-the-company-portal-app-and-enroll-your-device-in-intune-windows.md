@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d65e3452-5bbf-4d26-a06e-401ddcc47f39
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
 ms.openlocfilehash: 052de47e19f4e171428ee22b4701ed516461231f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/25/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>ポータル サイト アプリをインストールし、Intune に Windows デバイスを登録するとどうなりますか。
 
 ポータル サイト アプリをインストールして、Windows または Windows Phone デバイスを登録する場合、デバイスを IT 管理者が管理して、会社または学校のデータを保護することができるようになります。 このトピックでは、Windows 10 より前のデバイスの動作について説明します。 Windows 10 デバイスについては、[関連項目](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)を参照してください。
@@ -79,4 +74,3 @@ Intune に Windows または Windows Phone デバイスを登録すると、次�
 -   会社のアプリのインベントリの更新情報を送信する。
 
 ご質問がございましたら、IT 管理者に問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
-

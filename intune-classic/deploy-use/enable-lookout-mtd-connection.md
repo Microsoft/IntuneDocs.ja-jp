@@ -14,15 +14,12 @@ ms.assetid: 2f835fd0-4e62-42f3-b7ca-ce8b7ddd40e4
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: aad5b158e1217155c3e3ec671654ee6e81054675
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-lookout-mtd-connection-in-the-intune-classic-console"></a>Intune クラシック コンソールで Lookout MTD 接続を有効にする
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -41,4 +38,3 @@ Intune で Lookout MTP 接続を有効にするには、[Microsoft Intune 管理
 
 ## <a name="next-steps"></a>次のステップ
 [Lookout for Work アプリを構成する](/intune-classic/deploy-use/device-threat-protection-apps)
-

@@ -12,15 +12,12 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 829057773e1ef40b179435b5b81bfcd9fc5c84f3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="a-new-way-of-using-groups-in-intune"></a>Intune でグループを使う新しい方法
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -92,4 +89,3 @@ Intune では、すべてのグループに親グループが必要です。 グ
 
 ポリシーとアプリは、移行前と同じように、引き続きグループに展開されます。 ただし、これらのグループの管理は、従来の Intune コンソールではなく、Azure ポータルから行うようになります。
  
-
