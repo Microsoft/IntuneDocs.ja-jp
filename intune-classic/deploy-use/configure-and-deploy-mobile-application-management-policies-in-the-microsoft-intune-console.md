@@ -14,15 +14,12 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: ce97f18a799725a86ef3ab7f4f7c0cc8cdf8f062
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Microsoft Intune コンソールでモバイル アプリケーション管理ポリシーを構成して展開する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -196,4 +193,3 @@ Outlook アプリの使用例を次に示します。
 -   ポリシーがデバイスに既にデプロイされている場合、既存のポリシー設定は上書きされません。
 
 -   ポリシーが既にデバイスにデプロイされておらず、2 つの競合する設定がデプロイされている場合、デバイスに組み込まれている既定の設定が使用されます。
-

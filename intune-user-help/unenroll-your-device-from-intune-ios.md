@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 8885b82cf452bcc6bb99efb1d7e7394706edac57
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="unenroll-your-ios-device-from-intune"></a>Intune から iOS デバイスの登録を解除する
 
 Intune から iOS デバイスの登録を解除すると、デバイスは会社のリソースにアクセスできなくなり、Intune で管理されなくなります。
@@ -59,4 +54,3 @@ Intune からデバイスの登録を解除すると、どのようになるか�
 -   電子メール専用に構成されているデバイスは、ポータル サイト アプリまたは Web サイトに表示されなくなります。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-

@@ -11,20 +11,16 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f720befe-a6f9-4422-aa9b-4d85c9fc94e2
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: f46a93d42427ea41adf71403c91fa95052c0bba2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="fix-common-issues-with-your-android-device"></a>Android デバイスに関する一般的な問題を解決する
 
 Android デバイスで発生する問題の一部は、トラブルシューティングによって解決できる場合があります。 以下に、まず自分で解決を試みることができる一般的な問題をいくつか挙げます。 さらに複雑な問題については、[ポータル Web サイト](http://portal.manage.microsoft.com)の連絡先情報を使用して IT 管理者に問い合わせることをお勧めします。
@@ -45,4 +41,3 @@ Android デバイスで発生する問題の一部は、トラブルシューテ
 - [デバイスはポータル サイト アプリで暗号化されているようだが、他の方法で暗号化されている](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
 - [Android デバイスに Device Threat Protection アプリをインストールするよう求められた](you-are-prompted-to-install-mtd-android.md)
 - [Android デバイスで Device Threat Protection アプリが検出した脅威を解決する必要がある](you-need-to-resolve-a-threat-found-by-mtd-android.md)
-

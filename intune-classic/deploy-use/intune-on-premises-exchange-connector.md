@@ -14,15 +14,12 @@ ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: c820a7071340599be161dd92441720f1eb7e9ff7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="install-the-intune-on-premises-exchange-connector"></a>Intune の内部設置型 Exchange Connector のインストール
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -134,4 +131,3 @@ Exchange Connector を正常に構成したら、接続のステータスと前�
 
 
 また、前回いつ同期が完了したかも確認することができます。
-

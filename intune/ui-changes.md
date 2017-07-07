@@ -1,7 +1,7 @@
 ---
 title: "Azure での Intune の機能の移動先"
 titleSuffix: Intune on Azure
-description: "Azure コンソールで Intune の機能を確認できます。&quot;"
+description: "Azure コンソールで Intune の機能を確認できます。\""
 keywords: 
 author: dagerrit
 ms.author: dagerrit
@@ -15,13 +15,11 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 1b9d1ac3930e29bc024ece7e6b9b11c91a4e14c1
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Azure での Intune の機能の移動先
 Intune から Azure Portal に移行する際に、いくつかのタスクがより論理的に整理されました。 しかし、このような改善を行えば、新しい構成を学ばなければなりません。 このリファレンス ガイドは、従来のコンソールを使用した Intune の知識があり、Intune で行われていた内容を Azure ではどのように実行されるのかについて関心があるユーザーに向けて作成しました。 この記事でお探しの機能が記載されていない場合は、今後更新できるように記事の最後にコメントを残してください。
@@ -108,4 +106,3 @@ Apple のデバイス登録プログラムまたは Apple Configurator ツール
 
 **Apple Configurator のプロファイル**
 ![Azure の Apple Configurator プロファイルの画像](./media/16-azure-ac-profiles.png)
-

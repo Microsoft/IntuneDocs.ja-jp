@@ -1,7 +1,7 @@
 ---
 title: "Android for Work デバイスへのアプリの割り当て"
 titleSuffix: Intune on Azure
-description: "このトピックでは、Google Play for Work ストアから Android for Work デバイスにアプリを同期してから割り当てます。&quot;"
+description: "このトピックでは、Google Play for Work ストアから Android for Work デバイスにアプリを同期してから割り当てます。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,15 +15,12 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 352242b940a90539e0645ea1646dcaebfe245e05
 ms.openlocfilehash: 94394a889d97b4d1bdf09303b11cdc3688e4f55a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/14/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Intune を使用してアプリを Android for Work デバイスに割り当てる方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -84,12 +81,11 @@ Android for Work では、Intune にアプリを同期してユーザーに割�
 
 管理対象の Google Play コンソールに定期的にアクセスして、新しいアクセス許可があるかどうか確認してください。 承認済みのアプリに新しいアクセス許可が必要な場合は、Google Play を構成して、自分や他のユーザーあてに電子メールを送信できます。 アプリを割り当ててもデバイスにインストールされていない場合は、まだ許可していないアクセス許可が新しくあるかどうかを、次の手順で確認します。
 
-1. Http://play.google.com/work にアクセスします。
+1. http://play.google.com/work にアクセスします。
 2. アプリを公開して承認する際に使用した Google アカウントでサインインします。
 3. **[更新]** タブにアクセスして、更新が必要なアプリがないかどうかを確認します。  一覧にあるアプリでは新しいアクセス許可が必要で、それらが適用されるまで割り当てられません。  
 
 あるいは、Google Play を構成することで、アプリごとにアクセス許可を自動的に再許可できます。 
-
 
 
 

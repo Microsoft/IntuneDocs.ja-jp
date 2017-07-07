@@ -14,15 +14,12 @@ ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: ade7caf544d71c062c0fa251d7a113facb700a36
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="intune-implementation"></a>Intune を実装する
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -143,4 +140,3 @@ Intune は、iOS、Mac OS、Android、Windows デスクトップ、Windows モ�
 ## <a name="next-section"></a>次のセクション
 
 次のセクションでは、[Intune 展開をテストし、検証する](planning-guide-test-validation.md)方法について説明します。
-

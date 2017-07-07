@@ -1,7 +1,7 @@
 ---
 title: "Windows Hello for Business を使用する方法"
 titleSuffix: Intune on Azure
-description: "管理されたデバイスで Windows Hello for Business の使用を制御するポリシーを作成する方法について説明します。&quot;"
+description: "管理されたデバイスで Windows Hello for Business の使用を制御するポリシーを作成する方法について説明します。\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,15 +15,12 @@ ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 0ef9e70dc918b485f893cf3193f7e76f6084a896
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-windows-hello-for-business"></a>Windows Hello for Business を使用する
 
 
@@ -100,4 +97,3 @@ Intune と Hello for Business の統合には 2 通りの方法があります�
 
 ## <a name="further-information"></a>詳細情報
 Microsoft Passport について詳しくは、Windows 10 ドキュメントの[こちらのガイド](https://technet.microsoft.com/library/mt589441.aspx)をご覧ください。
-

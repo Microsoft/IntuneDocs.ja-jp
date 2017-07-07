@@ -1,7 +1,7 @@
 ---
 title: "Intune で Office 365 アプリの基本的なデータ管理を設定する"
 titleSuffix: Intune on Azure
-description: "Office 365 アプリの管理ウィザードのサポート ドキュメント。&quot;"
+description: "Office 365 アプリの管理ウィザードのサポート ドキュメント。\""
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -16,16 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 302f646bfb9ff0ac024687fa0b3926d83158995c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>管理対象の Office 365 アプリの基本的な保護に関するユーザー エクスペリエンス
 
 **Manage Office 365 apps (Office 365 アプリの管理)** ウィザードでは、各デバイス プラットフォームのアプリ保護ポリシーを作成します。
@@ -134,4 +130,3 @@ Android の場合、Intune MAM ポリシーに関連付けられているアプ�
 
 ## <a name="next-steps"></a>次のステップ
 アプリ保護ポリシーの詳細については、[こちら](https://docs.microsoft.comapp-protection-policy.md)を参照してください。
-

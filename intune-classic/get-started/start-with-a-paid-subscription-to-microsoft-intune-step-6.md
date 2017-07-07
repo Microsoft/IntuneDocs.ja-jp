@@ -14,15 +14,12 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: cf86d82fe636d2641f82ca951e508bea93abf683
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-policies-and-publish-apps"></a>ポリシーを作成してアプリを発行する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -74,4 +71,3 @@ Intune にアプリを追加した後で、次の 2 つの方法で管理対象�
 >[!div class="step-by-step"]
 
 >[&larr;**ユーザーとデバイスを整理する**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**ポータル サイトをカスタマイズする** &rarr;](/intune/company-portal-customize)  
-

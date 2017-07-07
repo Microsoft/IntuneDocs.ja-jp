@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d3182a85-328b-45b4-bf7a-9f6249984641
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: ce0ce291f303b04f0851b93add5f5cde5e2ee13f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="reset-your-device-from-the-company-portal-website"></a>ポータル サイト Web サイトからデバイスをリセットする
 
 デバイスが紛失した、または盗難にあった場合は、データへの不正なアクセスを防ぐため、デバイスを出荷時の状態にリセットすることができます。 [ポータル サイト Web サイト](http://portal.manage.microsoft.com)を使用してデバイスをリモートでリセットすることができます。 ポータル サイト Web サイトは、Intune で登録したコンピューターとデバイスの管理に使用できる Web ページです。 この Web サイトを使用すると、ポータル サイト アプリを使用して実行できるタスクのほとんどを実行できます。
@@ -38,13 +33,13 @@ ms.lasthandoff: 05/23/2017
 
 デバイスをリセットするには:
 
-1.    [ポータル Web サイト](http://portal.manage.microsoft.com)で、__メニュー__ ボタン ![3 つの横棒が並行に積み上げられている、メニュー ボタンの小さな画像](/Intune/whats-new/media/CP_hamburger_menu.png) をタップしてから、__[デバイス]__ を選択します。
+1.  [ポータル Web サイト](http://portal.manage.microsoft.com)で、__メニュー__ ボタン ![3 つの横棒が並行に積み上げられている、メニュー ボタンの小さな画像](/Intune/whats-new/media/CP_hamburger_menu.png) をタップしてから、__[デバイス]__ を選択します。
 
 2. __[デバイス]__ ページで、名前を変更するデバイスの名前を選択します。
 
   ![リスト表示されていないデバイスの登録または不明なデバイスの識別を求めるバナーの上に 2 つの不明なデバイスが示された、[デバイス] ページのスクリーンショット。](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.    デバイスがポップアップ ウィンドウに開きます。 **[リセット]** ボタンをタップします。
+3.  デバイスがポップアップ ウィンドウに開きます。 **[リセット]** ボタンをタップします。
 
     ![[名前の変更]、[削除]、[デバイスのリセット]、[パスコードのリセット]、[リモート ロック] を含む、ポータル Web サイト上の選択されたデバイスに対するすべてのオプション。 ](./media/iwp-screen-with-all-options.png)
 
@@ -53,4 +48,3 @@ ms.lasthandoff: 05/23/2017
 これでデバイスがリセットされました。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-

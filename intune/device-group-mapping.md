@@ -1,7 +1,7 @@
 ---
 title: "Intune でデバイス カテゴリを使用する方法"
 titleSuffix: Intune on Azure
-description: "Intune でデバイスを登録するときにユーザーが選択できるデバイス カテゴリを使用する方法について説明します。&quot;"
+description: "Intune でデバイスを登録するときにユーザーが選択できるデバイス カテゴリを使用する方法について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -14,15 +14,12 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 4e7c46a0bab45223293b73f8eaa2f8b40850cd43
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="map-device-groups"></a>デバイス グループをマップする
 
 
@@ -95,6 +92,5 @@ Windows デバイスにカテゴリを割り当てるには、エンド ユー�
 - Azure Portal でデバイス カテゴリを編集できますが、これを行った場合は、そのカテゴリを参照するすべての Azure Active Directory セキュリティ グループを手動で更新する必要があります。
 
 - カテゴリを削除すると、そのカテゴリに割り当てられていたすべてのデバイスのカテゴリ名が "**未割り当て**" と表示されます。
-
 
 

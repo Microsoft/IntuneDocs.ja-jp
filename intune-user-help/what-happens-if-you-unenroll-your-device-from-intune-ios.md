@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich, elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 32fef3aebacbc0144a7c387f3bfafbb20fd2c075
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>Intune から iOS または macOS デバイスの登録を解除するとどうなるか
 
 Intune から iOS または macOS デバイスの登録を解除すると、次のようになります。
@@ -48,4 +43,3 @@ Intune から iOS または macOS デバイスの登録を解除すると、次�
 登録を解除する手順については、「[Intune からデバイスの登録を解除する](unenroll-your-device-from-intune-ios.md)」を参照してください。
 
 ご質問がございましたら、IT 管理者に問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-

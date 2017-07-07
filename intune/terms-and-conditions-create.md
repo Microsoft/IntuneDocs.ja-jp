@@ -15,14 +15,12 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d21f440ee6806b545d2b346559d6516993a9cbf
 ms.openlocfilehash: 0262b8068ddf134de5ffec0965476fb513ceb9ab
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/14/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="ensure-users-accept-company-terms-for-access"></a>ユーザーにアクセス関連の会社条項に同意させる
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -90,4 +88,3 @@ Intune 管理者は、ユーザーが会社の使用条件に同意しないと�
 4.  **[OK]** を選択し、**[保存]** を選択します。
 
 ユーザーは、更新された使用条件に 1 回だけ同意する必要があります。 複数のデバイスを持つユーザーは、各デバイスで使用条件に同意する必要はありません。
-

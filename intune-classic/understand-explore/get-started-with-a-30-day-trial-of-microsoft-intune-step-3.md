@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 084cc155a64a58582e3008df10e86c1e5266054d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-groups-to-organize-evaluation-subscription-users-and-devices"></a>試用版のサブスクリプションのユーザーとデバイスを編成するグループを作成する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -64,4 +61,3 @@ Intune の [グループ] を使用すると、デバイスとユーザーを柔
 
 ## <a name="next-steps"></a>次のステップ
 [ポリシーを作成する](get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)  
-

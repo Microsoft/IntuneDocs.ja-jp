@@ -1,7 +1,7 @@
 ---
 title: "事前共有キーを使用した Wi-Fi プロファイルの作成"
 titleSuffix: Intune on Azure
-description: "Intune カスタム プロファイルを使用して、事前共有キーで Wi-Fi プロファイルを作成します。&quot;"
+description: "Intune カスタム プロファイルを使用して、事前共有キーで Wi-Fi プロファイルを作成します。\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,14 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: b56a6da04ae53a812a7d153de2618b72fa14ec44
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Microsoft Intune カスタム デバイス プロファイルを使用して、事前共有キーで Wi-Fi プロファイルを作成する
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -208,4 +205,3 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
     すべての中から正しいプロファイルを探す必要があるため、多数のワイヤレス ネットワークに接続したことのないコンピューターを使用するのが最良です。
 3.     XML ファイルを検索し、正しい名前のファイルを探します。
 4.     正しい XML ファイルを見つけたら、OMA-URI の設定ページの [データ] フィールドに、XML コードをコピーして貼り付けます。
-

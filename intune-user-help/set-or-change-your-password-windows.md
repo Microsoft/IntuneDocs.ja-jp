@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: d7d9ce0e1dc17dfafe78757a4bd8e48f9f67132d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="make-your-device-safer-with-the-right-password"></a>適切なパスワードでデバイスを守る
 
 社員は自分の Windows デバイスから毎日のように、メールやドキュメントなど、会社のリソースにアクセスします。 そのアクセスが社員のデバイスで安全に行われていることを会社は求めています。 その方法の 1 つがパスワードの使用をデバイスに要求することです。 例として、これらのパスワードを使用して、ロック画面からデバイスにアクセスします。
@@ -49,4 +45,3 @@ Windows デバイスが IT 管理者のパスワード ポリシーに準拠し�
 4. **[完了]** を選択します。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-

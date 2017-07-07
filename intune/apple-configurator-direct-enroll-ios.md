@@ -1,7 +1,7 @@
 ---
 title: "Apple Configurator と直接登録を使用して iOS デバイスを登録する"
 titleSuffix: Intune on Azure
-description: "Apple Configurator で、直接登録を使用して会社が所有している iOS デバイスを登録する方法について説明します。&quot;"
+description: "Apple Configurator で、直接登録を使用して会社が所有している iOS デバイスを登録する方法について説明します。\""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,15 +15,12 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: dd856cc3c9d11d1079c6092025200059f0ace437
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-ios-devices-with-apple-configurator-and-direct-enrollment"></a>Apple Configurator と直接登録を使用して iOS デバイスを登録する 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -102,4 +99,3 @@ iOS デバイスの登録を設定する前に、以下の前提条件を満た�
 4. iOS デバイスで、**[設定]** を開き、**[全般]** > **[デバイス管理]** > **[管理プロファイル]** に移動します。 プロファイルのインストールが一覧に表示されていることを確認し、iOS のポリシー制限とインストールされているアプリを確認します。 ポリシー制限とアプリがデバイスに表示されるまでに、最大 10 分かかることがあります。
 
 5. デバイスを配布します。 これで、iOS デバイスが Intune に登録され、管理対象になりました。
-

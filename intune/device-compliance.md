@@ -1,7 +1,7 @@
 ---
 title: "デバイスのポリシー準拠"
 titleSuffix: Intune on Azure
-description: "このトピックでは、Microsoft Intune でのデバイス コンプライアンスについて説明します&quot;"
+description: "このトピックでは、Microsoft Intune でのデバイス コンプライアンスについて説明します\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,15 +15,12 @@ ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: a747d577a28433635883ad6c4fe4c858e75902d0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-device-compliance-in-intune"></a>Intune でのデバイス コンプライアンスとは
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -103,4 +100,3 @@ Intune Azure Portal のデバイス コンプライアンスに関連した新�
 <!---### See also
 
 Conditional access--->
-

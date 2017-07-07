@@ -1,7 +1,7 @@
 ---
 title: "Android for Work 向けの Intune カスタム プロファイル設定"
 titleSuffix: Intune on Azure
-description: "Android for Work デバイス用の Intune カスタム プロファイル設定を作成する方法について説明します。&quot;"
+description: "Android for Work デバイス用の Intune カスタム プロファイル設定を作成する方法について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,15 +15,12 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 1b48fc7bd784b5d6d531ef5bf28fe835e394b106
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>Android for Work デバイス向けの Intune カスタム プロファイル設定の作成
 
 Intune Android for Work カスタム構成ポリシーを使用して、Android for Work デバイスでの各機能の制御に使用できる OMA-URI 設定を割り当てます。 これらの設定は、多くのデバイス製造元がデバイスの機能を制御するために使用する標準の設定です。

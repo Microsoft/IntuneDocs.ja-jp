@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 0ff65ec54ed6fe8701995d6ad629b34a1ba013b8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="ways-to-subscribe-to-microsoft-intune"></a>Microsoft Intune をサブスクライブする方法
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -36,4 +33,3 @@ ms.lasthandoff: 06/08/2017
 -   **Enterprise Agreement** (&gt; 250 ユーザー) - 250 名を超えるユーザー数の組織に最適なライセンス プログラムです。 EA を利用すると、内部設置型ソフトウェアとオンライン サービスからニーズに最も合うものを選択し、使用するテクノロジを最適化することができます。 詳細については、Microsoft の担当者また最寄りのリセラーに連絡するか、 [ボリューム ライセンス Enterprise Agreement のサイト](http://www.microsoft.com/licensing/licensing-options/enterprise.aspx)を参照してください。
 
 -   **オンライン サブスクリプション プログラム** (&lt; 250 ユーザー) - [オンライン サービス ボリューム ライセンス](http://www.microsoft.com/licensing/online-services/default.aspx) プログラムは、250 名未満のユーザー数の組織向けに設計されています。 このプログラムを使用して、Intune サービスのサブスクライブ、管理、および展開を行うことができます。
-

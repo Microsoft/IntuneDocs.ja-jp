@@ -14,15 +14,12 @@ ms.assetid: 93cda587-bf56-4d41-b123-9fe203fad788
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
 ms.openlocfilehash: cbe2c794a68ab37722c56448560a3c64f6087969
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-app-protection-policies-optional"></a>アプリ保護ポリシーを構成する (省略可能)
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -54,4 +51,3 @@ Intune では移行中の企業データの保護が提供されるため、デ�
 ## <a name="next-steps"></a>次のステップ 
 
 [特殊な移行に関する考慮事項](migration-guide-considerations.md)
-

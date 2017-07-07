@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: adef9335d8f199e8dec56e92eb1fda8c180ac6ce
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="evaluate-mobile-device-management-in-microsoft-intune"></a>Microsoft Intune でのモバイル デバイス管理を評価する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -109,4 +106,3 @@ Intune は次のデバイス プラットフォームをサポートします。
 
 ## <a name="next-steps"></a>次のステップ
 [ユーザーとデバイスを編成するグループを作成する](get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
-

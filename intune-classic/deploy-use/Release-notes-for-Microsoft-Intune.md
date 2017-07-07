@@ -14,15 +14,12 @@ ms.assetid: db9479b2-582d-4a1a-9fbc-fbfc6c680e6f
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 751bd0bc90b762c5b51b85fae2129e53773b54fe
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="release-notes-for-microsoft-intune"></a>Microsoft Intune のリリース ノート
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -94,4 +91,3 @@ Microsoft will continue to work closely with Samsung on a fix or additional work
 Azure ポータルがサポートしている言語は、簡体字中国語、繁体字中国語、チェコ語、オランダ語、英語、ドイツ語、ハンガリー語、イタリア語、日本語、ポルトガル (ブラジル) 語、ポルトガル (ポルトガル) 語、ロシア語、スペイン語、英語、フランス語、韓国語、ポーランド語、スウェーデン語、およびトルコ語です。
 
 Intune 管理コンソールとユーザーが対面するモバイル エクスペリエンスでは、Azure ポータルでサポートされている言語だけでなくデンマーク語、ギリシャ語、フィンランド語、ノルウェー語、およびルーマニア語もサポートしています。
-
