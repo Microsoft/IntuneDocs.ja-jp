@@ -1,7 +1,7 @@
 ---
 title: "アプリのプロビジョニング プロファイル"
 titleSuffix: Intune on Azure
-description: "Intune には、有効期限が近づいているアプリを持つデバイスに新しいプロビジョニング プロファイルを事前に割り当てるツールが用意されています。&quot;"
+description: "Intune には、有効期限が近づいているアプリを持つデバイスに新しいプロビジョニング プロファイルを事前に割り当てるツールが用意されています。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,14 +15,12 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: bf2da880f0f092b9948a400f6a10bd9ad032f959
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-ios-mobile-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>iOS モバイル プロビジョニング プロファイルを使用して、アプリが期限切れにならないようにする
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -55,4 +53,3 @@ iPhone および iPad に割り当てられた Apple iOS 基幹業務アプリ�
 ## <a name="next-steps"></a>次のステップ
 
 必要な iOS デバイスにプロファイルを割り当てます。 詳細については、「[デバイス プロファイルを割り当てる方法](device-profile-assign.md)」の手順をご覧ください。
-

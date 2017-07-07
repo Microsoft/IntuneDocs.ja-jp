@@ -1,7 +1,7 @@
 ---
 title: "iOS アプリ保護ポリシー設定"
 titleSuffix: Intune on Azure
-description: "このトピックでは、iOS デバイスのアプリ保護ポリシー設定について説明します。&quot;"
+description: "このトピックでは、iOS デバイスのアプリ保護ポリシー設定について説明します。\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,15 +15,12 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
 ms.openlocfilehash: 537087b720338413261b3947365a4d90fed89fbb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 #  <a name="ios-app-protection-policy-settings"></a>iOS アプリ保護ポリシー設定
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -95,4 +92,3 @@ ms.lasthandoff: 06/13/2017
 
 - Outlook 用アドインの詳細については、[こちら](https://technet.microsoft.com/library/jj943753(v=exchg.150).aspx)を参照してください。
 - Outlook アプリ用のアドインをインストールおよび管理できる管理者とユーザーを指定する方法の詳細については、[こちら](https://technet.microsoft.com/library/jj943754(v=exchg.150).aspx)を参照してください。
-
