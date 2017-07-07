@@ -14,15 +14,12 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: b1fbc73c0bc3589856f09bd3b9858fef66b82b08
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-is-intune"></a>Intune とは何か
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
@@ -116,4 +113,3 @@ Intune がモバイル アプリ セキュリティを提供する方法の 1 �
 * [Intune の一般的な使用方法](common-scenarios.md) ([クラシック コンソール](/intune-classic/understand-explore/common-ways-to-use-intune)) を読む
 * [Intune の 30 日間の試用版](free-trial-sign-up.md) ([クラシック コンソール](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune)) を使用して製品の理解を深める
 * Intune の[技術面の要件と機能](supported-devices-browsers.md) ([クラシック コンソール](/intune-classic/get-started/what-to-know-before-you-start-microsoft-in)) を調べる
-

@@ -1,7 +1,7 @@
 ---
 title: "Windows Phone 8.1 の Intune デバイス制限設定"
 titleSuffix: Intune on Azure
-description: "Windows Phone 8.1 デバイスでデバイスの設定と機能を制御するために使用できる Intune 設定について説明します。&quot;"
+description: "Windows Phone 8.1 デバイスでデバイスの設定と機能を制御するために使用できる Intune 設定について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,15 +15,12 @@ ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: e425b8a3c93c2f5dc73fbe9c75aa9adf49c5cdc8
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Windows Phone 8.1 デバイスの制限設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -95,4 +92,3 @@ ms.lasthandoff: 06/08/2017
 -   **[Wi-Fi ホットスポットのレポート]** - ユーザーが近くにある接続を検出するのに役立つ、Wi-Fi 接続に関する情報を送信します。
 -   **[NFC]** - 近距離無線通信をサポートするデバイスでこの機能を使用する操作を有効または無効にします。
 -   **[Bluetooth]** - デバイスの Bluetooth 機能を有効または無効にします。
-

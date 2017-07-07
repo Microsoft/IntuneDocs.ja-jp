@@ -14,13 +14,11 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 878be925aa09159f9887009cfaa0b50bc02d9ae8
 ms.openlocfilehash: f55d99ccf2fb5263ac9c7e0c4c8d0db8208456f5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="whats-new-in-the-intune-classic-console---previous-months"></a>Intune クラシック コンソールの新機能 (過去数か月)
 
@@ -368,4 +366,3 @@ __Windows Phone 8 ポータル サイトのサポート__ Windows Phone 8 ポー
 
 ### <a name="see-also"></a>関連項目
 最近の開発状況について詳しくは、「[Microsoft Intune の新機能](whats-new.md)」をご覧ください。
-

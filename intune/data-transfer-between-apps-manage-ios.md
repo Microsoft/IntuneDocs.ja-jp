@@ -1,7 +1,7 @@
 ---
 title: "iOS アプリ間のデータ転送を管理する"
 titleSuffix: Intune on Azure
-description: "このトピックを使用すると、iOS の Open-in 機能とモバイル アプリ管理ポリシーを使用してアプリ間のデータ転送を管理する方法を理解できます。&quot;"
+description: "このトピックを使用すると、iOS の Open-in 機能とモバイル アプリ管理ポリシーを使用してアプリ間のデータ転送を管理する方法を理解できます。\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,15 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: e3c588d2237f48501d78af364760acf1ef290639
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>iOS アプリ間のデータ転送を管理する方法
 ## <a name="manage-ios-apps"></a>iOS アプリを管理する
 会社データの保護には、ファイル転送を管理対象のアプリに限定する処理も含まれます。  iOS アプリは次の方法で管理できます。
@@ -108,4 +105,3 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 
 ### <a name="see-also"></a>関連項目
 [Intune アプリ保護ポリシーとは](app-protection-policy.md)
-

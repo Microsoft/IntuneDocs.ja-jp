@@ -1,7 +1,7 @@
 ---
 title: "Windows Phone 8.1 デバイス向けの Intune VPN 設定"
 titleSuffix: Intune on Azure
-description: "Windows Phone 8.1 デバイスの VPN 接続の構成に使用できる Intune 設定について説明します。&quot;"
+description: "Windows Phone 8.1 デバイスの VPN 接続の構成に使用できる Intune 設定について説明します。\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,15 +15,12 @@ ms.assetid: c1a9053f-02a7-4735-bc0d-fe4573b31ed4
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: a009a16c7c475864f665f6ad0ab8fe1853c801b4
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="vpn-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Microsoft Intune での Windows Phone 8.1 デバイス向けの VPN 設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -102,4 +99,3 @@ ms.lasthandoff: 06/08/2017
     - **[アドレス]** - プロキシ サーバーのアドレスを (IP アドレスとして) 入力します。
     - **[ポート番号]** - プロキシ サーバーに関連付けられているポート番号を入力します。
 - **[ローカル アドレスにはプロキシ サーバーを使用しない]** - VPN サーバーが接続にプロキシ サーバーを必要とする場合、指定したローカル アドレスに対してプロキシ サーバーを使用しないようにするには、このオプションを選択します。 詳細については、Windows Server のマニュアルを参照してください。
-

@@ -14,15 +14,12 @@ ms.assetid: 60cfa440-0723-4ea0-bacf-3c5d26f9a1d3
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
 ms.openlocfilehash: c3129b2a8d93e91493455da5f3e5fd1a59dd77bb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="basic-setup"></a>基本的なセットアップ
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -90,4 +87,3 @@ MDM 機関を **Intune** に設定して、Intune Azure Portal を有効にし�
 ## <a name="next-step"></a>次の手順
 
 [デバイスおよびアプリ管理のポリシー](migration-guide-configure-policies.md)
-

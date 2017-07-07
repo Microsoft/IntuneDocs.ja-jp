@@ -14,15 +14,12 @@ ms.assetid: 4b3c9af9-78da-44d2-8bd2-3f0f8885952d
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 73b43084c28436cb8a7e866dcee2d52694c60f5c
 ms.openlocfilehash: e17fe40fc50f40bf8adefa6dfdc4d4583cc6cc80
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/16/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>モバイル デバイス管理のユース ケース シナリオを特定する
 
 ユース ケース シナリオの特定は、正常な Intune 展開のための計画プロセスにおいて重要な部分です。 ユース ケース シナリオが役立つのは、ユーザーの種類またはロール、ユーザーのデバイス (たとえば、会社または個人) の所有権によって、ユーザーを管理しやすいグループに分割できるからです。
@@ -90,4 +87,3 @@ ms.lasthandoff: 06/16/2017
 ## <a name="next-steps"></a>次のステップ
 
 次のセクションでは、[各ユース ケース シナリオの Intune 要件を特定する方法](planning-guide-requirements.md)についてのガイダンスを提供します。
-

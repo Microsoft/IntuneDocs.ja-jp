@@ -1,7 +1,7 @@
 ---
 title: "Android デバイス向けの Intune Wi-Fi 設定"
 titleSuffix: Intune on Azure
-description: "Intune での Android デバイスと Android for Work デバイスの Wi-fi 接続設定の構成について説明します。&quot;"
+description: "Intune での Android デバイスと Android for Work デバイスの Wi-fi 接続設定の構成について説明します。\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,15 +15,12 @@ ms.assetid: 103e17a4-2993-4359-b340-73e2acf4cf7d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 326de9b86b80789a6ac19bb96ff6e4ca97789830
 ms.openlocfilehash: 8e1c64730dc8bb91a0fe5e7936ed963d67be1feb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/17/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="wi-fi-settings-for-android-and-android-for-work-devices-in-microsoft-intune"></a>Microsoft Intune での Android デバイスと Android for Work デバイスの Wi-fi 設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -65,4 +62,3 @@ ms.lasthandoff: 06/17/2017
 |----------|--------------|----------|
 |**クライアント認証に使用するクライアント証明書 (ID 証明書)**|接続の認証に使用される SCEP または PKCS 証明書プロファイルを選択します。|EAP の種類が **EAP-TLS**|
 |**認証方法**|次の中から、接続の認証方法を選択します。<br>- **証明書**: ID 証明書であるクライアント証明書がサーバーに提供した、SCEP または PKCS を選択します。<br><br>- **ユーザー名とパスワード**: 認証用の別の方法を指定します。 <br><br>**[ユーザー名とパスワード]** を選択した場合は、次を構成します。<br><br>-  **EAP 以外の方法 (内部 ID)**: 次の中から接続を認証する方法を選択します。<br>- **なし**<br>- **暗号化されていないパスワード (PAP)**<br>- **チャレンジ ハンドシェイク認証プロトコル (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP バージョン 2 (MS-CHAP v2)**<br>使用できるオプションは、選択した EAP の種類によって異なります。<br><br>**および**<br><br>- **[ID プライバシー (外部 ID)]** - EAP ID 要求への応答で送信されるテキストを指定します。 このテキストには任意の値を指定できます。 認証時に、この匿名の ID が最初に送信され、その後、セキュリティで保護されたトンネルで実際の ID が送信されます。|EAP の種類が **EAP-TTLS** または **PEAP**|
-

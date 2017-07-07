@@ -1,7 +1,7 @@
 ---
 title: "ビジネス設定向けの Windows Update の構成 - Intune"
 titleSuffix: Intune on Azure
-description: "Intune でビジネス向けの Windows Update を構成して、Windows 10 デバイスの更新を制御します。&quot;"
+description: "Intune でビジネス向けの Windows Update を構成して、Windows 10 デバイスの更新を制御します。\""
 keywords: 
 author: dougeby
 ms.author: dougeby
@@ -14,15 +14,12 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: c05a6c007b147d81c4d98b708c0e0ae92392f0e0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-windows-update-for-business-settings-with-microsoft-intune"></a>Microsoft Intune でビジネス設定向けの Windows Update を構成する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -149,4 +146,3 @@ Intune コンソールで、カスタム ポリシーの OMA-URI 設定を使用
 > [!IMPORTANT]
 > 一時停止コマンドを発行した場合、デバイスは、次にサービスにチェックインしたときにこのコマンドを受信します。 チェックインする前に、スケジュールされた更新プログラムをインストールする可能性もあります。
 > また、一時停止コマンドを発行したときに対象のデバイスが無効になっていると、有効にしたときに、デバイスは Intune でチェックインする前に、スケジュールされた更新プログラムをダウンロードしインストールする場合があります。
-

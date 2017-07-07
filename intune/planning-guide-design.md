@@ -14,15 +14,12 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d83f2c2e410d23297dad7f046f8053225c988abc
 ms.openlocfilehash: fdd75bd2b96eb20e0e73b7f8f76cf1a5cc035011
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/15/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-a-design"></a>設計の作成
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -411,4 +408,3 @@ Intune サービス間コネクタをインストールして構成する方法�
 ## <a name="next-section"></a>次のセクション
 
 次のセクションでは、[Intune の実装プロセス](planning-guide-onboarding.md)に関するガイダンスについて説明します。
-

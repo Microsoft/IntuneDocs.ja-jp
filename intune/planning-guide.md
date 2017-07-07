@@ -14,15 +14,12 @@ ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: db17387360e5d40cd19613266aec153f01bdaedc
 ms.openlocfilehash: ceee7a766fa8f60b91d3a84b6577223e1bfd652e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/15/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Intune の展開計画、設計および実装ガイド
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -64,4 +61,3 @@ Intune を正常に展開するには、まず、適切に計画し、設計す�
 ## <a name="next-steps"></a>次のステップ
 
 最初のセクションの「[展開の目標、目的、課題を決定する](planning-guide-deployment-goals.md)」に取りかかりましょう。
-

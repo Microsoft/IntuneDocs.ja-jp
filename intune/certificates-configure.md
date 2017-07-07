@@ -1,7 +1,7 @@
 ---
 title: "Intune で証明書を構成する方法"
 titleSuffix: Intune on Azure
-description: "Wi-Fi や VPN などの接続をセキュリティで保護するのに役立つ証明書を、Intune を使用して作成し、割り当てる方法について説明します。&quot;"
+description: "Wi-Fi や VPN などの接続をセキュリティで保護するのに役立つ証明書を、Intune を使用して作成し、割り当てる方法について説明します。\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,15 +15,12 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: da23a0c79c5e0e178e52e956561e2764268d09df
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-certificates-in-microsoft-intune"></a>Microsoft Intune で証明書を構成する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -128,4 +125,3 @@ SCEP または PKCS 証明書プロファイルを作成する前に、信頼さ
 
 ## <a name="next-steps"></a>次のステップ
 デバイス プロファイルを割り当てる方法に関する一般的な情報については、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事を参照してください。
-

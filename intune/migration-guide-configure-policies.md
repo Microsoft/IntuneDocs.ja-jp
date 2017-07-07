@@ -14,15 +14,12 @@ ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
 ms.openlocfilehash: 5e848dda6643a28141a8f5f1d0bdc01f2bd9d390
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-device-compliance-and-app-management-policies"></a>デバイス コンプライアンス ポリシーとアプリ管理ポリシーを構成する
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -103,4 +100,3 @@ Intune MDM を使用する場合は、アプリの自動インストールを要
 ## <a name="next-steps"></a>次のステップ 
 
 [アプリ保護ポリシーを構成する (オプション)](migration-guide-app-protection-policies.md)
-

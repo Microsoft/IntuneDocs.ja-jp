@@ -13,16 +13,15 @@ ms.technology:
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 623ed8dda2b35a895e5a00c0639a647624f74e59
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 3f60ee6334ac8fa00dcaaa524485c5339b040381
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Microsoft Intune に関してエンド ユーザーを教育する方法
+
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 Microsoft Intune は、会社のデータを保護した状態で、従業員がモバイル デバイスを使用できるようにします。 [無料試用版](app-sdk.md)で Intune を評価するなど、確実に展開するための手順が多数あります。
 
@@ -57,15 +56,15 @@ __エンド ユーザーに不便な点__ アプリのインストール、デ�
 
 * **Android**
   * [Android デバイスを Intune で使用する](/intune-user-help/using-your-android-device-with-intune)
-  * [Android ユーザーがアプリを入手する方法](/intune-classic/deploy-use/how-your-android-users-get-their-apps)
+  * [Android ユーザーがアプリを入手する方法](end-user-apps-android.md)
 
 * **iOS**
   * [iOS デバイスを Intune で使用する](/intune-user-help/using-your-ios-or-macos-device-with-intune)
-  * [iOS ユーザーがアプリを入手する方法](/intune-classic/deploy-use/how-your-ios-users-get-their-apps)
+  * [iOS ユーザーがアプリを入手する方法](end-user-apps-ios.md)
 
 * **Windows**
   * [Windows デバイスを Intune で使用する](/intune-user-help/using-your-windows-device-with-intune)
-  * [Windows ユーザーがアプリを入手する方法](/intune-classic/deploy-use/how-your-windows-users-get-their-apps)
+  * [Windows ユーザーがアプリを入手する方法](end-user-apps-windows.md)
 
 * __積極的に行動する。__ デバイスでの管理内容をユーザーに明確に伝えます。 収集するデータの種類とその理由を伝えます。 すべての資産データの使用をどのように計画しているかを知らせます。 [Microsoft は、お客様がクラウド内のご自身の顧客データの処理方法について、可能な限り多くの情報を把握しておく必要があることを理解しています。](https://www.microsoft.com/trustcenter/about/transparency)また、この理念により、Intune に関するエンド ユーザーの満足度を高めることができると信じています。
 
@@ -73,4 +72,3 @@ __エンド ユーザーに不便な点__ アプリのインストール、デ�
 > 可能な限り透明性を維持することは、確実に展開するために不可欠となります。
 
 信頼と適切に作成されたコンプライアンス ポリシーを結び付けてみて、特定の種類の個人データを調べる*可能性がある*としても、それは*やむを得ない*ことだということと、プライバシーの侵害に関する責任について、エンド ユーザーが確実に認識するようにしてください。 また、法務部門と人事部門で声明を作成しておくことは、特に頑固な従業員を説得するのに役立ちます。
-

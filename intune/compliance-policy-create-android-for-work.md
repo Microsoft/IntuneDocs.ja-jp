@@ -1,7 +1,7 @@
 ---
 title: "Android for Work 用のコンプライアンス ポリシーの作成"
 titleSuffix: Intune on Azure
-description: "Android for Work デバイス用のコンプライアンス ポリシーの作成方法について説明します。&quot;"
+description: "Android for Work デバイス用のコンプライアンス ポリシーの作成方法について説明します。\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,15 +15,12 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 518b74703de88a1cded2ad38d33c52b54699dc44
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Intune で Android for Work デバイス用のデバイス コンプライアンス ポリシーを作成する方法
 
 
@@ -123,4 +120,3 @@ ms.lasthandoff: 06/08/2017
 <!--- ## Next steps
 
 [How to monitor device compliance](device-compliance-monitor.md)--->
-

@@ -1,7 +1,7 @@
 ---
 title: "Intune Wi-Fi 設定を構成する方法"
 titleSuffix: Intune on Azure
-description: "Intune を使用して、管理対象デバイスの Wi-Fi 接続を構成する方法について説明します。&quot;"
+description: "Intune を使用して、管理対象デバイスの Wi-Fi 接続を構成する方法について説明します。\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,15 +15,12 @@ ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 326de9b86b80789a6ac19bb96ff6e4ca97789830
 ms.openlocfilehash: 0e191fe443757a5ea43ccc2b4ef2e9cb331b2142
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/17/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Microsoft Intune で Wi-Fi の設定を構成する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -73,4 +70,3 @@ Windows 8.1、Windows 10、および Windows 10 Mobile を実行しているデ�
 
 プロファイルが作成され、プロファイルの一覧ブレードに表示されます。
 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事を参照してください。
-

@@ -1,7 +1,7 @@
 ---
 title: "モバイル デバイス管理機関の設定"
 titleSuffix: Intune on Azure
-description: "Intune でモバイル デバイス管理機関を設定する方法について説明します。 &quot;"
+description: "Intune でモバイル デバイス管理機関を設定する方法について説明します。 \""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,14 +15,12 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 449c45e0edcc0d0a33352ba154ad68fa6c4725c0
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="set-the-mobile-device-management-authority"></a>モバイル デバイス管理機関の設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -51,4 +49,3 @@ Configuration Manager 1610 以降のバージョンと Microsoft Intune バー�
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 証明書の有効期限が切れた後のモバイル デバイスのクリーンアップ
 
 MDM 証明書は、モバイル デバイスが Intune サービスと通信しているときに自動的に更新されます。 モバイル デバイスがワイプされたり、一定の時間 Intune サービスとモバイル デバイスが通信できなかったりすると、MDM 証明書は更新されません。 デバイスは、MDM 証明書の有効期限が切れてから 180 日後に、Azure Portal から削除されます。
-

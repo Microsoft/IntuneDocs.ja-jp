@@ -1,7 +1,7 @@
 ---
 title: "デバイスの登録 - デバイス登録マネージャー"
 titleSuffix: Intune on Azure
-description: "デバイス登録マネージャー アカウントを使用してデバイスを Intune に登録します。 &quot;"
+description: "デバイス登録マネージャー アカウントを使用してデバイスを Intune に登録します。 \""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,14 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 326de9b86b80789a6ac19bb96ff6e4ca97789830
 ms.openlocfilehash: 1667470154e5d2485e3a372ab25d36eea12109a7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/17/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-devices-using-device-enrollment-manager"></a>デバイス登録マネージャーを使用してデバイスを登録する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -99,4 +97,3 @@ DEM 登録タスクを実行するには、グローバル管理者または Int
 
 1. Intune ポータルで **[デバイスの登録]** を選択し、**[デバイス登録マネージャー]** を選択します。
 2. **[デバイス登録マネージャー]** ブレードで、DEM ユーザーを右クリックし、**[プロパティ]** を選択します。
-

@@ -14,15 +14,12 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: b7b3ee8b82b1a58762c5969cbbcea3037be8a3e7
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでモバイル アプリケーションを管理するために Android アプリを準備する
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
@@ -142,4 +139,3 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 - [Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](apps-prepare-mobile-application-management.md)
 
 - [SDK を使用してモバイル アプリケーション管理に対応する](/intune/classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
-

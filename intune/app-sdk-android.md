@@ -14,16 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b5ad9cc6c03712090398cacb3d4bb653deb1d2a4
-ms.openlocfilehash: 7dfcc0bf8f3da1e600df59927db6e78ec2021e0f
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/12/2017
-
-
+ms.openlocfilehash: 403917adb1fb1156f0ed0027a316677d1e4f2f84
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/03/2017
 ---
-
-
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android 用 Microsoft Intune アプリ SDK 開発者ガイド
 
 > [!NOTE]
@@ -80,7 +76,8 @@ Intune アプリ SDK は、外部依存関係のない標準の Android ライ�
 Azure Active Directory 認証ライブラリ (ADAL) には、独自の ProGuard の制限がある場合があります。 アプリが ADAL を統合する場合、これらの制限について ADAL のドキュメントに従う必要があります。
 
 ### <a name="entry-points"></a>エントリ ポイント
-======= Azure Active Directory Authentication Library ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) では、仲介型認証を実行する場合にこれらのアクセス許可が必要になります。 これらのアクセス許可がアプリに付与されていない場合や、ユーザーによって取り消された場合、ブローカー (ポータル サイト アプリ) を必要とする認証フローは無効になります。
+
+Azure Active Directory Authentication Library ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) では、仲介型認証を実行する場合にこれらのアクセス許可が必要になります。 これらのアクセス許可がアプリに付与されていない場合や、ユーザーによって取り消された場合、ブローカー (ポータル サイト アプリ) を必要とする認証フローは無効になります。
 
 Intune アプリ SDK では、Intune アプリ保護ポリシーを有効にするために、アプリのソース コードを変更する必要があります。 このことは、Android の基底クラスを同等の Intune の基底クラス (名前にプレフィックス **MAM** が付いている) に置き換えることで行われます。 SDK クラスは、Android の基底クラスと、アプリ独自のそのクラスの派生バージョンの間に位置します。 例としてアクティビティを使用すると、最終的な継承階層は、`Activity` > `MAMActivity` > `AppSpecificActivity` のようになります。
 
@@ -161,7 +158,7 @@ Intune アプリ SDK では、統合するアプリに対する次の 3 つの [
 
 * `android.permission.USE_CREDENTIALS`
 
-Azure Active Directory Authentication Library ([ADAL](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/)) では、仲介型認証を実行する場合にこれらのアクセス許可が必要になります。 これらのアクセス許可がアプリに付与されていない場合や、ユーザーによって取り消された場合、ブローカー (ポータル サイト アプリ) を必要とする認証フローは無効になります。
+Azure Active Directory Authentication Library ([ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/)) では、仲介型認証を実行する場合にこれらのアクセス許可が必要になります。 これらのアクセス許可がアプリに付与されていない場合や、ユーザーによって取り消された場合、ブローカー (ポータル サイト アプリ) を必要とする認証フローは無効になります。
 
 ## <a name="logging"></a>ログ記録
 
@@ -410,7 +407,7 @@ public interface MAMNotificationReceiver {
 
 最初に、[ADAL GitHub のリポジトリ](https://github.com/AzureAD/azure-activedirectory-library-for-android)にある ADAL の統合のガイドラインを参照してください。
 
-SDK では[認証](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-scenarios/)と条件付き起動シナリオを [ADAL](https://azure.microsoft.com/en-us/documentation/articles/active-directory-authentication-libraries/) に依存するため、アプリを [Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-whatis/) を使用して構成する必要があります。 構成値は、AndroidManifest メタデータを使用して SDK に伝達されます。
+SDK では[認証](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/)と条件付き起動シナリオを [ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) に依存するため、アプリを [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) を使用して構成する必要があります。 構成値は、AndroidManifest メタデータを使用して SDK に伝達されます。
 
 アプリを構成して適切な認証を有効にするには、AndroidManifest.xml のアプリのノードに次の内容を追加します。 これらの構成の中には、アプリで通常の認証に ADAL が使用される場合にのみ必要となるものがあります。この場合、アプリによって AAD への登録に使用される特定の値が必要になります。 これにより、AAD により 2 つ (アプリと SDK から 1 つずつ) の個別の登録値が認識されることによってエンドユーザーに対して認証が 2 回求められることがなくなります。
 
@@ -1181,4 +1178,3 @@ Intune SDK は Android API によって提供されるコントラクトを維�
 * 最新の Android SDK ビルド ツールを使用します。
 
 * 使用しない不要なすべてのライブラリ (例: android.support.v4) を削除します。
-

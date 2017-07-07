@@ -15,14 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: f9ea697cafa0f277c176e55443250d32ca378dbb
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-android-for-work"></a>Android for Work の Microsoft Intune アプリ構成ポリシーを使用する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -91,4 +89,3 @@ Android デバイス機能にアクセスするためのアプリのアクセス
 8. アプリ構成ポリシーを割り当てるには、アプリ構成ポリシーを選択して、**[割り当て]**、**[グループの選択]** の順に選択します。
 9. 割り当てるユーザー グループを選び、**[選択]** をクリックします。
 10. **[保存]** を選択して、ポリシーを割り当てます。
-

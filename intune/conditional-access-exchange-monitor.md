@@ -14,15 +14,12 @@ ms.technology:
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 2ec9bcc605486258203f49f9f7631bd2a04cdf22
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Intune で Exchange On-Premises および Exchange Online の条件付きアクセス コンプライアンスを監視する
 
 Intune 1704 リリース以降では、管理者は、内部設置型 Exchange Connector またはサービス間コネクタ (Exchange Online Connector) を使って、Intune と同期化される Exchange ActiveSync デバイス レコードに関するレポート情報を見ることができます。 条件付きアクセス コンプライアンス レポートでは、さまざまな同期状態のデバイスの概要が提供されます。
@@ -70,4 +67,3 @@ Intune 1704 リリース以降では、管理者は、内部設置型 Exchange C
 -   **[デバイス構成]:** すべてのデバイス構成の詳細が表示されます。
 
 -   **[Exchange へのアクセス]:** 条件付きアクセス ポリシーを適用した後のデバイスの状態についてさらに詳しく確認できます。
-

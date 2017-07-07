@@ -1,7 +1,7 @@
 ---
 title: "Windows 10 デバイス向けの Intune カスタム設定"
 titleSuffix: Intune on Azure
-description: "Windows 10 カスタム プロファイルで使用できる設定について説明します。&quot;"
+description: "Windows 10 カスタム プロファイルで使用できる設定について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,15 +15,12 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: bda9e939e2d4aba4c4d005ea55ba65bec9c6e217
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="custom-device-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune での Windows 10 デバイス向けのカスタム デバイス設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -62,6 +59,5 @@ Windows ドキュメント ライブラリの[構成サービス プロバイダ
 Windows 10 のバージョンによっては、一部の設定に互換性がありません。 Windows トピックの表を見れば、各 CSP でサポートされているバージョンを確認できます。
 
 また、トピックの一覧にある設定の一部は Intune でサポートされていません。 Intune で必要な設定がサポートされているかどうかを確認するには、その設定のトピックを開きます。 各設定ページには、サポートされている操作が示されます。 Intune で利用するには、その設定で**追加**操作または**置換**操作がサポートされている必要があります。
-
 
 

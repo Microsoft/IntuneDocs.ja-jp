@@ -15,14 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 5ea6c6ce480f327c5b1497a8dc61faf56724442c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
+ms.openlocfilehash: ee3d77b74f2313a0746b041335865f1d967ad926
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune ポータル サイト アプリを構成する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -68,4 +66,3 @@ ms.lasthandoff: 06/08/2017
 |**会社のロゴを表示する**|このオプションを有効にすると、ポータル サイトに表示する会社のロゴをアップロードできます。 2 つのロゴをアップロードできます。1 つは、ポータル サイトの背景が白の場合に表示するロゴ、もう 1 つは、選択したテーマの色がポータル サイトの背景に使用されている場合に表示するロゴです。 各ロゴは、.png または .jpg ファイルの種類にし、最大解像度が 400 x 100 ピクセルで、750 KB 以下のサイズにします。<br>入力した会社名を、アップロードしたロゴの横に表示することもできます。|      
 
 変更の保存後、**[Intune Web ポータルで設定をプレビューします]** を選択して、構成がどのように表示されるかを確認できます。
-

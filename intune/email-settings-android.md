@@ -1,7 +1,7 @@
 ---
 title: "Android と Android for Work デバイスの Intune 電子メール設定"
 titleSuffix: Intune on Azure
-description: "Android デバイスでの電子メール接続の構成に使用できる Intune 設定について説明します。&quot;"
+description: "Android デバイスでの電子メール接続の構成に使用できる Intune 設定について説明します。\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,15 +15,12 @@ ms.assetid: 4d3458cc-fcaa-4648-b13f-bf1f0616c1c5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 326de9b86b80789a6ac19bb96ff6e4ca97789830
 ms.openlocfilehash: c1f80e09241609b420a186011ff8dd059f0dd8df
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/17/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="email-profile-settings-for-android--devices-in-microsoft-intune"></a>Microsoft Intune での Android デバイス向けの電子メール プロファイル設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -72,4 +69,3 @@ Intune 管理者は、次の Android デバイスに対して電子メール設�
     - **連絡先**
     - **カレンダー**
     - **タスク**
-

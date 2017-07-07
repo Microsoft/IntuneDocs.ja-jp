@@ -1,7 +1,7 @@
 ---
 title: "Intune を使用するデバイスでの全体または選択的ワイプ"
 titleSuffix: Intune on Azure
-description: "デバイス上の会社のデータを選択的にワイプする方法、またはフル ワイプを実行してデバイスを出荷時の設定にリセットする方法について説明します。&quot;"
+description: "デバイス上の会社のデータを選択的にワイプする方法、またはフル ワイプを実行してデバイスを出荷時の設定にリセットする方法について説明します。\""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,15 +14,12 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 2063612ee11d2bc7915ebe4bb28c67854a2599c3
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-full-or-selective-wipe"></a>フル ワイプまたは選択的ワイプを使用する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -130,4 +127,3 @@ Intune 管理対象デバイスが不要になるか、別の目的で再利用�
 3.  デバイスの名前が表示されているブレードで、**[会社データを削除する]** を選択し、**[はい]** を選択してワイプを確定します。
 
 デバイスに電源が入り、接続されている場合、ワイプ コマンドは 15 分以内にすべてのデバイス タイプに伝達されます。
-

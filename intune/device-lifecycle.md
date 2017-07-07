@@ -14,15 +14,12 @@ ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 7a2eab6ece5628598a7b5a5f9414aa43abc60d69
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="overview-of-the-mobile-device-management-mdm-lifecycle"></a>モバイル デバイス管理 (MDM) ライフサイクルの概要
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
@@ -49,4 +46,3 @@ ms.lasthandoff: 06/08/2017
 
 ## <a name="retire"></a>インベントリから削除
 デバイスを紛失したり盗まれたりしたとき、デバイスの交換が必要なとき、またはユーザーが別の職場に移動になったときには、通常デバイスを[削除またはワイプ](device-management.md) ([クラシック ポータル](/intune-classic/deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune)) します。 それを行うには、デバイスをリセットする、デバイスを管理から削除する、またはデバイス上の企業データをワイプするなど、さまざまな方法があります。
-

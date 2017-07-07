@@ -14,15 +14,12 @@ ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d83f2c2e410d23297dad7f046f8053225c988abc
 ms.openlocfilehash: 4f893c0c8308a246d7bab15fed68a78c4e10b70a
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/15/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Intune の展開計画に関するその他のリソース
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
@@ -61,4 +58,3 @@ ms.lasthandoff: 06/15/2017
 -   [Intune User Voice](http://microsoftintune.uservoice.com/) - 機能をリクエストしたり、他のお客様とともに機能に投票したりすることにご興味をお持ちですか? User Voice で Intune に関するフィードバックをご提供ください。 ご意見をお待ちしています。
 
 -   [登録ガイド](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) - そのまま使用できるドキュメント一式ですが、エンド ユーザーとのコミュニケーション プランの一部として変更して、ユーザーが自分の個人用デバイスを Intune に登録する意味を理解するのに役立てることができます。
-

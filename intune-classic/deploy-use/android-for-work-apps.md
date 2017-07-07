@@ -14,15 +14,12 @@ ms.assetid: cd0bbd90-d3fe-4efc-83fd-d1f3f86800d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 352242b940a90539e0645ea1646dcaebfe245e05
-ms.openlocfilehash: 31d0a2b86b08f0fc89cae89e8870a6a0426b1822
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/14/2017
-
-
+ms.openlocfilehash: adc4a343e610a1a75f8a5bc51a1894f6fcf998bb
+ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/05/2017
 ---
-
 # <a name="how-to-deploy-apps-to-android-for-work-devices-with-intune"></a>Intune を使用してアプリを Android for Work デバイスを展開する方法
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -84,9 +81,8 @@ Android for Work では、Intune にアプリを同期してユーザーにデ�
 
 管理対象の Google Play コンソールに定期的にアクセスして、新しいアクセス許可があるかどうか確認してください。 承認済みのアプリに新しいアクセス許可が必要な場合は、Google Play を構成して、自分や他のユーザーあてに電子メールを送信できます。 アプリを割り当ててもデバイスにインストールされていない場合は、まだ許可していないアクセス許可が新しくあるかどうかを、次の手順で確認します。
 
-1. Http://play.google.com/work にアクセスします。
+1. http://play.google.com/work にアクセスします。
 2. アプリを公開して承認する際に使用した Google アカウントでサインインします。
 3. **[更新]** タブにアクセスして、更新が必要なアプリがないかどうかを確認します。  一覧にあるアプリには新しいアクセス許可が必要で、アクセス許可が適用されるまでアプリは割り当てられません。  
 
 あるいは、Google Play を構成することで、アプリごとにアクセス許可を自動的に再許可できます。 
-

@@ -1,7 +1,7 @@
 ---
 title: "Intune 電子メール設定を構成する方法"
 titleSuffix: Intune on Azure
-description: "管理するデバイスに会社の電子メールへの接続が作成されるように Intune を構成する方法について説明します。&quot;"
+description: "管理するデバイスに会社の電子メールへの接続が作成されるように Intune を構成する方法について説明します。\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,15 +15,12 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 326de9b86b80789a6ac19bb96ff6e4ca97789830
 ms.openlocfilehash: 2ae3e8ec9f9c791d536fe311bc4d30cae41b9482
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/17/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Microsoft Intune で電子メールの設定を構成する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -96,4 +93,3 @@ Android はプロファイルを識別するためにホスト名を使用しな
 ### <a name="update-an-email-profile"></a>電子メール プロファイルの更新
 
 以前に割り当てた電子メール プロファイルを変更すると、電子メールの設定の再構成を承認するかを確認するメッセージがエンド ユーザーに表示される場合があります。
-

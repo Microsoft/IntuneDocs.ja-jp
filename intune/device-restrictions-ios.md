@@ -1,7 +1,7 @@
 ---
 title: "iOS の Intune デバイス制限設定"
 titleSuffix: Intune on Azure
-description: "iOS デバイスでデバイスの設定と機能を制御するために使用できる Intune 設定について説明します。&quot;"
+description: "iOS デバイスでデバイスの設定と機能を制御するために使用できる Intune 設定について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,15 +15,12 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 365b56082207c2110965681663432cce10f27c99
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での iOS デバイスの制限設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -289,4 +286,3 @@ ms.lasthandoff: 06/08/2017
 ### <a name="safari-password-auto-fill-domains"></a>Safari パスワードの自動入力ドメイン
 
 **[ドメイン URL]** フィールドで、1 つ以上の URL を一覧に追加します。 ユーザーは、この一覧の URL からの Web パスワードのみを保存できます。 この設定は、Safari ブラウザー、および iOS 9.3 以降の監視モードのデバイスにのみ適用されます。 URL を指定しないと、すべての Web サイトからのパスワードが保存されます。
-

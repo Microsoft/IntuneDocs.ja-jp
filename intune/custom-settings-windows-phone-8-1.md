@@ -1,7 +1,7 @@
 ---
 title: "Windows Phone 8.1 デバイスの Intune カスタム設定"
 titleSuffix: Intune on Azure
-description: "Windows Phone 8.1 カスタム プロファイルで使用できる Intune の設定について説明します。&quot;"
+description: "Windows Phone 8.1 カスタム プロファイルで使用できる Intune の設定について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,15 +15,12 @@ ms.assetid: 21c55041-3821-4a62-9f85-855b97dba269
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: b3dcad95b85d967e48c8b05d655a5e679daa0aee
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="custom-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Microsoft Intune での Windows Phone 8.1 デバイス向けのカスタム設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -44,4 +41,3 @@ Microsoft Intune Windows Phone 8.1 **カスタム** プロファイルを使用�
     - **[値]** - 入力した OMA-URI に関連付ける値を入力します。
 
 4. 完了したら **[OK]** をクリックし、必要に応じて引き続き他の設定を追加します。
-

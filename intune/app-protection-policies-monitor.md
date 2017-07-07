@@ -1,7 +1,7 @@
 ---
 title: "アプリ保護ポリシーを監視する方法"
 titleSuffix: Intune on Azure
-description: "ポリシーを持つユーザー数を確認し、詳細を調べるためにドリルダウンします。&quot;"
+description: "ポリシーを持つユーザー数を確認し、詳細を調べるためにドリルダウンします。\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,15 +15,12 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: de40d149818b2655a8fc3b647a7e850973814165
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-monitor-app-protection-policies"></a>アプリ保護ポリシーを監視する方法
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -139,4 +136,3 @@ ms.lasthandoff: 06/08/2017
 
 * [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](app-protection-enabled-apps-android.md)
 * [アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](app-protection-enabled-apps-ios.md)
-

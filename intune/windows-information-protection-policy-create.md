@@ -15,15 +15,12 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6f2f0b610b900bb41a3c2bd7416b6db28434a155
 ms.openlocfilehash: 17736751a6cd1813bd03f8092739d8433eb5d9dc
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -185,4 +182,3 @@ WIP アプリ保護ポリシーを作成した後、MAM を使ってポリシー
     Azure Active Directory 内のすべてのセキュリティ グループで構成されるユーザー グループの一覧が、**[ユーザー グループの追加]** ブレードで開きます。
 
 1.  ポリシーを適用するグループを選び、**[選択]** をクリックしてポリシーを展開します。
-

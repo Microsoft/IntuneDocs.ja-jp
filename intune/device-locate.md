@@ -1,7 +1,7 @@
 ---
 title: "紛失した iOS デバイスを Intune で検索する"
 titleSuffix: Intune on Azure
-description: "紛失したまたは盗まれた iOS デバイスを Intune で検索する方法について説明します。&quot;"
+description: "紛失したまたは盗まれた iOS デバイスを Intune で検索する方法について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -14,15 +14,12 @@ ms.technology:
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 80aa0e5afd1f8862b181d455ff6b545e462f90c9
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>紛失したまたは盗まれた iOS デバイスを Intune で検索する
 
 
@@ -47,4 +44,3 @@ ms.lasthandoff: 06/08/2017
 - データは 24 時間保管されてから、削除されます。 位置データを手動で削除することはできません。
 - 位置データは、保管中も、転送中も暗号化されます。
 - 紛失モードを構成する場合、ロック画面に表示するメッセージの入力時に、デバイスを見つけた人がデバイスを返すのに役立つ情報を含めることをお勧めします。
-
