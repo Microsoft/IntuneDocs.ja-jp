@@ -19,13 +19,15 @@ ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/01/2017
 ---
-# <a name="set-up-app-based-conditional-access-ca-policies-for-sharepoint-online"></a>SharePoint Online のアプリベースの条件付きアクセス (CA) ポリシーを設定する
+<a id="set-up-app-based-conditional-access-ca-policies-for-sharepoint-online" class="xliff"></a>
+# SharePoint Online のアプリベースの条件付きアクセス (CA) ポリシーを設定する
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
 ここでは、SharePoint Online のアプリベースの条件付きアクセス ポリシーを設定する方法のガイダンスを提供します。 管理者は、アプリベースの CA を使用して、Intune App 保護ポリシーが適用されているモバイル アプリのみを許可することができます。
 
-## <a name="to-create-the-app-based-ca-policy-for-sharepoint-online"></a>SharePoint Online のアプリベースの CA ポリシーを作成するには
+<a id="to-create-the-app-based-ca-policy-for-sharepoint-online" class="xliff"></a>
+## SharePoint Online のアプリベースの CA ポリシーを作成するには
 
 1. [Azure Portal](https://portal.azure.com) に移動し、自分の資格情報でサインインします。
 
@@ -45,7 +47,8 @@ ms.lasthandoff: 07/01/2017
 
     ![アプリの一覧を示す [許可されたアプリ] ブレードのスクリーンショット](../media/mam-ca-spo-allowed-apps.png)
 
-## <a name="to-assign-app-based-ca-policies-to-your-users"></a>アプリベースの CA ポリシーをユーザーに割り当てるには
+<a id="to-assign-app-based-ca-policies-to-your-users" class="xliff"></a>
+## アプリベースの CA ポリシーをユーザーに割り当てるには
 
 1. **[制限対象のユーザー グループ]** ブレードを開き、**[ユーザー グループの追加]** を選択します。
 
@@ -56,11 +59,12 @@ ms.lasthandoff: 07/01/2017
     > [!IMPORTANT] 
     > 前の手順で選択したユーザー グループのうち、このポリシーの影響を受けないようにするユーザーがいるとします。 このような場合、ユーザーのグループを除外ユーザー グループ一覧に追加します。 
 
-3. **[SharePoint Online]** ブレードの **[Exempted user groups] (除外するユーザー グループ)** を選択し、**[ユーザー グループの追加]** を選択してユーザー グループの一覧を開きます。
+3. **[SharePoint Online]** ブレードの **[Exempted user groups] \(除外するユーザー グループ)** を選択し、**[ユーザー グループの追加]** を選択してユーザー グループの一覧を開きます。
 
 4. このポリシーから除外するグループを選択します。  
 
-## <a name="to-modify-or-delete-user-groups-from-an-existing-app-based-ca-policy"></a>既存のアプリベースの CA ポリシーからユーザー グループを変更または削除するには
+<a id="to-modify-or-delete-user-groups-from-an-existing-app-based-ca-policy" class="xliff"></a>
+## 既存のアプリベースの CA ポリシーからユーザー グループを変更または削除するには
 
 1. **[制限対象のユーザー グループ]** ブレードを開き、削除するユーザー グループを選択します。
 2. 省略記号をクリックすると、削除のオプションが表示されます。
@@ -69,11 +73,13 @@ ms.lasthandoff: 07/01/2017
 > [!NOTE] 
 > 手順は、**[制限対象のユーザー グループ]** 一覧からユーザー グループを削除する手順と同じです。
 
-## <a name="next-steps"></a>次のステップ
+<a id="next-steps" class="xliff"></a>
+## 次のステップ
 
 [最新の認証を使用していないアプリをブロックする](block-apps-with-no-modern-authentication.md)
 
-## <a name="see-also"></a>関連項目
+<a id="see-also" class="xliff"></a>
+## 関連項目
 
 [アプリ保護ポリシーを使用したアプリ データの保護](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
