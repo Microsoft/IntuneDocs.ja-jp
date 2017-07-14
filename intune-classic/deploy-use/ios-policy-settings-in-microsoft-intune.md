@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,21 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ba270c2bb8780db6bc230022446f982b81f8a2ee
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8036dbbb6486d06fa46f7f96199055b9ca7a398c
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="ios-policy-settings-in-microsoft-intune"></a>Microsoft Intune の iOS ポリシー設定
+# Microsoft Intune の iOS ポリシー設定
+<a id="ios-policy-settings-in-microsoft-intune" class="xliff"></a>
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune には、iOS デバイスで構成できるさまざまな全般設定が組み込まれています。 また、Apple Configurator ツールを使用し、Intune にはないユーザー設定を作成できます。
 
-## <a name="general-configuration-policy-settings"></a>全般構成ポリシーの設定
+## 全般構成ポリシーの設定
+<a id="general-configuration-policy-settings" class="xliff"></a>
 
 Microsoft Intune の **iOS 全般構成ポリシー**を使用して、次の設定を構成します。
 
@@ -41,7 +43,8 @@ Microsoft Intune の **iOS 全般構成ポリシー**を使用して、次の設
 
 探している設定がこのトピックに表示されていない場合は、[Apple Configurator ツール](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12)を使用して作成した設定をインポートできる iOS カスタム ポリシーを使用して、その設定を作成できます。 詳細については、このトピックで後述する「カスタム ポリシー設定」を参照してください。
 
-### <a name="security-settings"></a>セキュリティ設定
+### セキュリティ設定
+<a id="security-settings" class="xliff"></a>
 すべての設定は、iOS 8.0 以降に適用されます。
 
 |設定の名前|説明|
@@ -60,7 +63,8 @@ Microsoft Intune の **iOS 全般構成ポリシー**を使用して、次の設
 |**指紋によるロック解除を使用する**|指紋を使用してデバイスのロックを解除できるようにします。|
 <sup>1</sup> iOS デバイスの場合、**[画面がオフになるまでの非アクティブな時間 (分)]** と **[デバイスの画面がロックされるまでの非アクティブな時間 (分)]** の設定を構成すると、順番に適用されます。 たとえば、両方の設定値を「 **5** 」分に設定すると、5 分後に画面が自動的にオフになり、さらに 5 分後にデバイスがロックされます。 ただし、ユーザーが手動で画面をオフにした場合、2 つ目の設定は即時に適用されます。 同じ例で、ユーザーが画面をオフにした後、デバイスは 5 分後にロックされます。
 
-### <a name="system-settings"></a>システムの設定
+### システムの設定
+<a id="system-settings" class="xliff"></a>
 すべての設定は、iOS 8.0 以降に適用されます。
 
 |設定の名前|説明|
@@ -73,7 +77,8 @@ Microsoft Intune の **iOS 全般構成ポリシー**を使用して、次の設
 |**診断データの送信を使用する**|デバイスから Apple への診断データの送信を許可またはブロックします。|
 |**ロック中に Passbook を使用する**|ユーザーがデバイスのロック中に Passbook アプリにアクセスできるようにします。|
 
-### <a name="cloud-settings-for-documents-and-data"></a>ドキュメントおよびデータのクラウド設定
+### ドキュメントおよびデータのクラウド設定
+<a id="cloud-settings-for-documents-and-data" class="xliff"></a>
 すべての設定は、iOS 8.0 以降に適用されます。
 
 |設定の名前|説明|
@@ -87,7 +92,8 @@ Microsoft Intune の **iOS 全般構成ポリシー**を使用して、次の設
 |**iCloud の写真共有を許可する**|デバイスの **iCloud の写真共有**を無効にするには、**[いいえ]** に設定します。|
 |**iCloud フォト ライブラリを許可する**|**[いいえ]** に設定すると、ユーザーがクラウドに写真やビデオを保存できる iCloud フォト ライブラリが使用できなくなります。   これを **[いいえ]** に設定すると、iCloud フォト ライブラリからデバイスに完全にダウンロードされていない写真はすべてデバイスから削除されます。|
 
-### <a name="application-settings-for-the-browser"></a>ブラウザーのアプリケーション設定
+### ブラウザーのアプリケーション設定
+<a id="application-settings-for-the-browser" class="xliff"></a>
 すべての設定は、iOS 8.0 以降に適用されます。
 
 |設定の名前|説明|
@@ -99,7 +105,8 @@ Microsoft Intune の **iOS 全般構成ポリシー**を使用して、次の設
 |**Java スクリプティングを使用する**|Java スクリプトをブラウザーで実行できるようにします。|
 |**不正行為の警告を使用する**|ブラウザーで不正行為の警告を使用できるようにします。|
 
-### <a name="application-settings-for-apps"></a>アプリ用のアプリケーション設定
+### アプリ用のアプリケーション設定
+<a id="application-settings-for-apps" class="xliff"></a>
 すべての設定は、iOS 8.0 以降に適用されます。
 
 |設定の名前|説明|
@@ -113,7 +120,8 @@ Microsoft Intune の **iOS 全般構成ポリシー**を使用して、次の設
 |**新しいエンタープライズ アプリの作成者を信頼することをユーザーに許可する**|アプリ ストアからダウンロードされたのではないアプリを信頼するようにユーザーが選択できます。|
 
 
-### <a name="application-settings-for-games"></a>ゲーム用のアプリケーション設定
+### ゲーム用のアプリケーション設定
+<a id="application-settings-for-games" class="xliff"></a>
 すべての設定は、iOS 8.0 以降に適用されます。
 
 |設定の名前|説明|
@@ -121,7 +129,8 @@ Microsoft Intune の **iOS 全般構成ポリシー**を使用して、次の設
 |**ゲーム センターの友だちの追加を許可する**|ユーザーがゲーム センターの友だちを追加できるようにします。|
 |**マルチプレイヤー ゲームを使用する**|ユーザーがデバイスでマルチプレイヤー ゲームをプレイできるようにします。|
 
-### <a name="application-settings-for-media-content"></a>メディア コンテンツ用のアプリケーション設定
+### メディア コンテンツ用のアプリケーション設定
+<a id="application-settings-for-media-content" class="xliff"></a>
 すべての設定は、iOS 8.0 以降に適用されます。
 
 |設定の名前|説明|
@@ -131,7 +140,8 @@ Microsoft Intune の **iOS 全般構成ポリシー**を使用して、次の設
 |**'アダルト' のフラグが付いているコンテンツをユーザーが iBook ストアからダウンロードすることを許可する**|"アダルト" カテゴリのブックをユーザーがダウンロードできるようにします。|
 
 
-### <a name="device-capabilities-settings-for-hardware"></a>ハードウェア用のデバイス機能設定
+### ハードウェア用のデバイス機能設定
+<a id="device-capabilities-settings-for-hardware" class="xliff"></a>
 すべての設定は、iOS 8.0 以降に適用されます。
 
 |設定の名前|説明|
@@ -140,7 +150,8 @@ Microsoft Intune の **iOS 全般構成ポリシー**を使用して、次の設
 |**ペアリングされている Apple Watch で手首検出の使用を強制する**|有効にすると、Apple Watch が装着されていないときには Apple Watch に通知が表示されません。|
 |**送信 AirPlay 要求でペアリング パスワードを必要とする**|ユーザーが AirPlay を使用して他の Apple デバイスにコンテンツをストリーミングするときに、ペアリング パスワードを要求します。|
 
-### <a name="device-capabilities-settings-for-cellular"></a>移動体通信のデバイス機能設定
+### 移動体通信のデバイス機能設定
+<a id="device-capabilities-settings-for-cellular" class="xliff"></a>
 すべての設定は、iOS 8.0 以降に適用されます。
 
 |設定の名前|説明|
@@ -149,7 +160,8 @@ Microsoft Intune の **iOS 全般構成ポリシー**を使用して、次の設
 |**データ ローミングを許可する**|デバイスが移動体通信ネットワーク上にある場合はデータ ローミングを使用できるようにします。|
 |**ローミング中にグローバルに Background Fetch を使用する**|デバイスが移動体通信ネットワークでのローミング中に、電子メールなどのデータをフェッチできるようにします。|
 
-### <a name="device-capabilities-settings-for-features"></a>機能用のデバイス機能設定
+### 機能用のデバイス機能設定
+<a id="device-capabilities-settings-for-features" class="xliff"></a>
 すべての設定は、iOS 8.0 以降に適用されます。
 
 |設定の名前|説明|
@@ -160,7 +172,8 @@ Microsoft Intune の **iOS 全般構成ポリシー**を使用して、次の設
 |**管理対象アプリからの Airdrop を許可しない**|Airdrop 経由で管理対象アプリにデータを送信させないようにします 。|
 
 
-### <a name="settings-for-compliant-and-noncompliant-apps"></a>準拠しているアプリと非準拠アプリの設定
+### 準拠しているアプリと非準拠アプリの設定
+<a id="settings-for-compliant-and-noncompliant-apps" class="xliff"></a>
 **準拠しているアプリ &amp; 非準拠アプリ**の一覧で、次の情報を使用して、準拠しているアプリまたは非準拠アプリの一覧を指定します。
 
 > [!NOTE]
@@ -177,7 +190,8 @@ Microsoft Intune の **iOS 全般構成ポリシー**を使用して、次の設
 
 準拠アプリと非準拠アプリの設定を含むポリシーを、ユーザーのグループに展開する必要があります。
 
-### <a name="kiosk-mode-settings"></a>キオスク モードの設定
+### キオスク モードの設定
+<a id="kiosk-mode-settings" class="xliff"></a>
 
 |設定の名前|説明|
 |----------------|--------------------|
@@ -204,17 +218,20 @@ Microsoft Intune の **iOS 全般構成ポリシー**を使用して、次の設
 > -   iOS デバイスをキオスク モードに構成する前に、[Apple Configurator ツール](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12)または [Apple Device Enrollment Program](ios-device-enrollment-program-in-microsoft-intune.md) を使用して、デバイスを監視下モードにする必要があります。 Apple Configurator ツールの詳細については、Apple のドキュメントを参照してください。
 > -   構成ポリシーを展開した後に、指定した iOS のアプリがインストールされる場合、デバイスは再起動後にキオスク モードになります。
 
-### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>準拠アプリと非準拠アプリに関するリファレンス情報
+### 準拠アプリと非準拠アプリに関するリファレンス情報
+<a id="reference-information-for-compliant-and-noncompliant-apps" class="xliff"></a>
 
 **[非準拠のアプリ レポート]** を使用して、許可されているアプリとブロックされているアプリの準拠を表示します。
 
-##### <a name="to-run-the-noncompliant-apps-report"></a>非準拠アプリ レポートを実行するには
+##### 非準拠アプリ レポートを実行するには
+<a id="to-run-the-noncompliant-apps-report" class="xliff"></a>
 
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[レポート]** &gt; **[非準拠アプリ レポート]** の順に選択します。
 
 2.  準拠しているアプリ、準拠していないアプリ、またはその両方を確認するデバイス グループを選択して、**[レポートの表示]** を選択します。
 
-#### <a name="how-to-specify-urls-to-app-stores"></a>アプリ ストアの URL を指定する方法
+#### アプリ ストアの URL を指定する方法
+<a id="how-to-specify-urls-to-app-stores" class="xliff"></a>
 準拠アプリと非準拠アプリの一覧、または [ **デバイスがキオスク モードのときに実行を許可する管理対象アプリを選択します** ] オプション (iOS のみ) でアプリの URL を指定するには、次の形式を使用します。
 
 1. 検索エンジンを使用して、iTunes App Store で使用するアプリを検索し、アプリのページを開きます。
@@ -226,17 +243,20 @@ Microsoft Intune の **iOS 全般構成ポリシー**を使用して、次の設
 > [!NOTE]
 > iTunes ソフトウェアを使用してアプリを検索し、[ **リンクのコピー** ] コマンドを使用してアプリの URL を入手することもできます。
 
-### <a name="enrollment-settings"></a>登録設定
+### 登録設定
+<a id="enrollment-settings" class="xliff"></a>
 すべての設定は、iOS 8.0 以降に適用されます。
 
 |設定の名前|説明|
 |----------------|--------------------|
 |**デバイスが監視モードの場合にアクティベーション ロックを許可する**|監視されている iOS デバイスでアクティブ化ロックを有効にします。|
 
-### <a name="supervised-mode-settings"></a>監視モードの設定
+### 監視モードの設定
+<a id="supervised-mode-settings" class="xliff"></a>
 iOS 8.0 以降を実行中のデバイスで、監視モードになっているデバイスには、次の設定を構成できます。
 
-### <a name="supervised-mode-settings-for-device-restrictions"></a>デバイス制限のための監視モード設定
+### デバイス制限のための監視モード設定
+<a id="supervised-mode-settings-for-device-restrictions" class="xliff"></a>
 
 |設定の名前|説明|
 |----------------|--------------------|
@@ -252,7 +272,8 @@ iOS 8.0 以降を実行中のデバイスで、監視モードになっている
 |**通知設定の変更を許可する**|ユーザーがデバイスの通知設定を変更することを許可します。|
 |**壁紙の変更を許可する**|ユーザーがデバイスの壁紙を変更することを許可します。|
 
-### <a name="supervised-mode-settings-for-feature-restrictions"></a>機能制限のための監視モード設定
+### 機能制限のための監視モード設定
+<a id="supervised-mode-settings-for-feature-restrictions" class="xliff"></a>
 
 |設定の名前|説明|
 |----------------|--------------------|
@@ -266,7 +287,8 @@ iOS 8.0 以降を実行中のデバイスで、監視モードになっている
 |**スペル チェックを許可する**|デバイスのスペル チェック機能を使用できるようにします。|
 |**キーボード ショートカットを許可する**|キーボード ショートカットを使用できるようにします。|
 
-### <a name="supervised-mode-settings-for-app-restrictions"></a>アプリ制限のための監視モード設定
+### アプリ制限のための監視モード設定
+<a id="supervised-mode-settings-for-app-restrictions" class="xliff"></a>
 
 |設定の名前|説明|
 |----------------|--------------------|
@@ -283,7 +305,8 @@ iOS 8.0 以降を実行中のデバイスで、監視モードになっている
 |**Game Center を許可する**|Game Center アプリの使用を許可します。|
 
 
-### <a name="show-or-hide-apps"></a>アプリの表示または非表示
+### アプリの表示または非表示
+<a id="show-or-hide-apps" class="xliff"></a>
 
 iOS 9.3 以降を実行する管理対象デバイスで以下を制御するには、**[Hidden and shown apps list]** (非表示アプリと表示アプリの一覧) を使用します。
 
@@ -291,7 +314,8 @@ iOS 9.3 以降を実行する管理対象デバイスで以下を制御するに
 - ユーザーが表示および起動できるアプリの一覧を指定します。 他のアプリは表示または起動できません。
 
 
-#### <a name="how-to-create-a-hidden-or-shown-app-list"></a>非表示アプリまたは表示アプリの一覧を作成する方法
+#### 非表示アプリまたは表示アプリの一覧を作成する方法
+<a id="how-to-create-a-hidden-or-shown-app-list" class="xliff"></a>
 
 次の設定を指定します。
 
@@ -305,49 +329,50 @@ iOS 9.3 以降を実行する管理対象デバイスで以下を制御するに
 |**編集**|選択したアプリの名前、発行者、および URL を編集します。|
 |**削除**|選択したアプリを一覧から削除します。|
 
-#### <a name="app-information-for-built-in-ios-apps"></a>組み込み iOS アプリのアプリ情報
+#### 組み込み iOS アプリのアプリ情報
+<a id="app-information-for-built-in-ios-apps" class="xliff"></a>
 
 この一覧の情報を使用して、表示または非表示にする組み込み iOS アプリの名前、発行元、およびバンドル ID を識別します。 一覧のすべてのアプリを表示または非表示にする場合は、次のデータをコピーして拡張子 **.csv** のテキスト ファイルに貼り付けた後、**[アプリのインポート]** オプションを使用してすべてのアプリを一度にインポートできます。
 
 ```
-App Store,Apple,com.apple.AppStore
-Calculator,Apple,com.apple.calculator
-Calendar,Apple,com.apple.mobilecal
-Camera,Apple,com.apple.camera
-Clock,Apple,com.apple.mobiletimer
-Compass,Apple,com.apple.compass
-Contacts,Apple,com.apple.MobileAddressBook
-FaceTime,Apple,com.apple.facetime
-Find Friends,Apple,com.apple.mobileme.fmf1
-Find iPhone,Apple,com.apple.mobileme.fmip1
-Game Center,Apple,com.apple.gamecenter
-GarageBand,Apple,com.apple.mobilegarageband
-Health,Apple,com.apple.Health
-iBooks,Apple,com.apple.iBooks
-iTunes Store,Apple,com.apple.MobileStore
-iTunes U,Apple,com.apple.itunesu
-Keynote,Apple,com.apple.Keynote
-Mail,Apple,com.apple.mobilemail
-Maps,Apple,com.apple.Maps
-Messages,Apple,com.apple.MobileSMS
-Music,Apple,com.apple.Music
-News,Apple,com.apple.news
-Notes,Apple,com.apple.mobilenotes
-Numbers,Apple,com.apple.Numbers
-Pages,Apple,com.apple.Pages
-Photo Booth,Apple,com.apple.Photo-Booth
-Photos,Apple,com.apple.mobileslideshow
-Podcasts,Apple,com.apple.podcasts
-Reminders,Apple,com.apple.reminders
-Safari,Apple,com.apple.mobilesafari
-Settings,Apple,com.apple.Preferences
-Stocks,Apple,com.apple.stocks
-Tips,Apple,com.apple.tips
-Videos,Apple,com.apple.videos
-VoiceMemos,Apple,com.apple.VoiceMemos
-Wallet,Apple,com.apple.Passbook
-Watch,Apple,com.apple.Bridge
-Weather,Apple,com.apple.weather
+,com.apple.AppStore,App Store,Apple
+,com.apple.calculator,Calculator,Apple
+,com.apple.mobilecal,Calendar,Apple
+,com.apple.camera,Camera,Apple
+,com.apple.mobiletimer,Clock,Apple
+,com.apple.compass,Compass,Apple
+,com.apple.MobileAddressBook,Contacts,Apple
+,com.apple.facetime,FaceTime,Apple
+,com.apple.mobileme.fmf1,Find Friends,Apple
+,com.apple.mobileme.fmip1,Find iPhone,Apple
+,com.apple.gamecenter,Game Center,Apple
+,com.apple.mobilegarageband,GarageBand,Apple
+,com.apple.Health,Health,Apple
+,com.apple.iBooks,iBooks,Apple
+,com.apple.MobileStore,iTunes Store,Apple
+,com.apple.itunesu,iTunes U,Apple
+,com.apple.Keynote,Keynote,Apple
+,com.apple.mobilemail,Mail,Apple
+,com.apple.MapsMaps,Apple
+,com.apple.MobileSMS,Messages,Apple
+,com.apple.Music,Music,Apple
+,com.apple.news,News,Apple
+,com.apple.mobilenotes,Notes,Apple
+,com.apple.Numbers,Numbers,Apple
+,com.apple.Pages,Pages,Apple
+,com.apple.Photo-Booth,Photo Booth,Apple
+,com.apple.mobileslideshow,Photos,Apple
+,com.apple.podcasts,Podcasts,Apple
+,com.apple.reminders,Reminders,Apple
+,com.apple.mobilesafariSafari,Apple
+,com.apple.Preferences,Settings,Apple
+,com.apple.stocks,Stocks,Apple
+,com.apple.tips,Tips,Apple
+,com.apple.videos,Videos,Apple
+,com.apple.VoiceMemos,VoiceMemos,Apple
+,com.apple.Passbook,Wallet,Apple
+,com.apple.Bridge,Watch,Apple
+,com.apple.weather,Weather,Apple
 
 
 ```
@@ -355,26 +380,30 @@ Weather,Apple,com.apple.weather
 
 
 
-## <a name="custom-policy-settings"></a>カスタム ポリシー設定
+## カスタム ポリシー設定
+<a id="custom-policy-settings" class="xliff"></a>
 
 Microsoft Intune の **iOS カスタム ポリシー**を使用して、[Apple Configurator ツール](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12)で作成した設定を iOS デバイスに展開します。 このツールを使用すると、これらのデバイスの動作を制御する多くの設定を作成し、構成プロファイルにエクスポートすることができます。 その後、この構成プロファイルを Intune iOS カスタム ポリシーにインポートし、組織内のユーザーとデバイスに設定を展開できます。
 
 この機能を使用すれば、Intune 全般構成ポリシーで構成できない iOS 設定を展開することができます。
 
-### <a name="prerequisites"></a>必要条件
+### 必要条件
+<a id="prerequisites" class="xliff"></a>
 開始する前に Apple Configurator をインストールし、ユーザーまたはデバイスに展開する設定を含む構成ファイルを作成する必要があります。 Apple Configurator をダウンロードしたり、このツールについて学習したりするには、[Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) にアクセスしてください。
 
 > [!NOTE]
 > Intune では、iOS カスタム ポリシーの個々の設定が遵守されているかどうかは報告されません。 ただし、ポリシーの全体的な遵守状況は報告されます。
 
-### <a name="general-settings"></a>全般設定
+### 全般設定
+<a id="general-settings" class="xliff"></a>
 
 |設定の名前|説明|
     |----------------|--------------------|
     |**名前**|iOS カスタム ポリシーの一意の名前を入力すると、Intune コンソール内で容易に識別できます。|
     |**説明**|iOS カスタム ポリシーの概要や、ポリシーを特定するのに役立つその他の関連情報についての説明を入力します。|
 
-### <a name="custom-settings"></a>カスタム設定
+### カスタム設定
+<a id="custom-settings" class="xliff"></a>
 
 |設定の名前|説明|
     |----------------|--------------------|
@@ -382,5 +411,6 @@ Microsoft Intune の **iOS カスタム ポリシー**を使用して、[Apple C
 |**構成プロファイル ファイル**|**[インポート]** を選択し、Apple Configurator を使用して作成した構成プロファイルを指定します。 **注:** Apple Configurator ツールからエクスポートした設定に、iOS カスタム ポリシーを展開するデバイス上の iOS のバージョンとの互換性があることを確認します。 互換性のない設定を解決する方法については、[Apple 開発者](https://developer.apple.com/) Web サイトで「**Configuration Profile Reference**」 (構成プロファイル リファレンス) および「**Mobile Device Management Protocol Reference**」 (モバイル デバイス管理プロトコル リファレンス) を検索してください。|
     |**構成プロファイルの詳細**|インポートした構成プロファイルの XML コードが表示されます。|
 
-### <a name="see-also"></a>関連項目
+### 関連項目
+<a id="see-also" class="xliff"></a>
 [Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

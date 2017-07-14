@@ -14,17 +14,19 @@ ms.assetid: 3a63f78f-a7e7-4f44-9288-16b28d5d58ca
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0b3f13dbc5abb8110627cfb39aa61040a977bf38
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9dda530be47b5449a9c1ed610d8e409fd62148d7
+ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/11/2017
 ---
-# <a name="develop-a-rollout-plan"></a>ロールアウト計画を作成する
+# ロールアウト計画を作成する
+<a id="develop-a-rollout-plan" class="xliff"></a>
 
 ロールアウト計画では、Intune ロールアウトの対象となる組織グループ、各グループのロールアウト期間、使用する登録方法を特定します。
 
-## <a name="targeted-groups-and-timeframes"></a>対象とするグループと期間
+## 対象とするグループと期間
+<a id="targeted-groups-and-timeframes" class="xliff"></a>
 
 最初に、Intune ロールアウトの対象とするグループと、[ユース ケース シナリオ](planning-guide-scenarios.md)で特定したグループを確認します。
 
@@ -36,17 +38,20 @@ ms.lasthandoff: 07/01/2017
 * 地理的な場所
 * ビジネス リスク
 
-## <a name="rollout-phases"></a>ロールアウト フェーズ
+## ロールアウト フェーズ
+<a id="rollout-phases" class="xliff"></a>
 一般的に、組織では、まず IT 部門の少数のユーザー グループを対象にしたパイロット運用として Intune ロールアウトを開始します。 パイロット運用の対象を拡大して、さらに多くの IT 部門や他の組織グループのユーザーを加えてもかまいません。
 
-### <a name="pilot"></a>パイロット運用
+### パイロット運用
+<a id="pilot" class="xliff"></a>
 ロールアウトの最初のフェーズはパイロット ユーザーです。 パイロット ユーザーは、新しいソリューションの最初のユーザーであることを理解する必要があります。 構成、ドキュメント、通知を改善するためのフィードバックを提供し、その後のロールアウト フェーズで対象となる他のすべてのユーザーの負担を軽減できるよう積極的に取り組む必要があります。 幹部や重要な人物はパイロット ユーザーにしないでください。
 
 パイロット運用は、[課題](planning-guide-deployment-goals.md)をテストしたり、それまでに集めた[要件](planning-guide-requirements.md)を詳細化したりする良い機会になります。
 
 [情報伝達](planning-guide-communication-plan.md)計画や[サポート](planning-guide-support-plan.md)計画も視野に入れて、ユーザーに与える影響が小さいうちに[テストと検証](planning-guide-test-validation.md)を行って問題を解決しましょう。
 
-### <a name="production-rollout"></a>運用ロールアウト
+### 運用ロールアウト
+<a id="production-rollout" class="xliff"></a>
 パイロット運用が無事に終わったら、次は残りの組織グループを対象にして本格的な運用ロールアウトに取り掛かります。 さまざまなロールアウト グループとフェーズの例を次に示します。
 
 -   **部門** <br/>各部門を 1 つのロールアウト フェーズにすることができます。 一度に部門全体を対象にします。 この種類のロールアウトでは、各部門のユーザーはモバイル デバイスを同じようなやり方で使用し、同じアプリケーションにアクセスする傾向があります。 ユーザーが同じ種類のポリシーを使用する可能性があります。
@@ -66,22 +71,26 @@ ms.lasthandoff: 07/01/2017
 | 運用ロールアウト フェーズ 3 |  |  |  | 人事 (50 ユーザー)、財務 (40 ユーザー)、幹部 (30 ユーザー) |
 
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して、組織のロールアウト フェーズを入力できます。
-## <a name="match-rollout-groups-to-enrollment-approaches"></a>ロールアウト グループと登録方法のマッチング
+## ロールアウト グループと登録方法のマッチング
+<a id="match-rollout-groups-to-enrollment-approaches" class="xliff"></a>
 
 Intune ロールアウトの対象となるグループと期間を決めたら、次の手順では各グループに最適な Intune 登録方法を選択します。 以下のようなさまざまな登録方法を選択できます。
 * ユーザーのセルフサービス
 * ユーザー支援型登録
 * IT 技術説明会
 
-### <a name="user-self-service"></a>ユーザーのセルフサービス
+### ユーザーのセルフサービス
+<a id="user-self-service" class="xliff"></a>
 
 ここでは、ユーザーが責任を持って自分のデバイスを登録します。通常、IT 部門の指示に従って登録します。 この方法は組織で最もよく使用されており、ユーザー支援型登録よりもスケーラブルな方法です。
 
-### <a name="user-assisted-enrollment"></a>ユーザー支援型登録
+### ユーザー支援型登録
+<a id="user-assisted-enrollment" class="xliff"></a>
 
 これは ”ホワイト グローブ” アプローチと呼ばれます。 IT 部門のメンバーが直接、または Skype を使用して、ユーザーの登録作業をサポートします。 この方法は通常、幹部や、登録プロセスで特に支援が必要と思われるグループに使用されます。
 
-### <a name="it-tech-fair"></a>IT 技術説明会
+### IT 技術説明会
+<a id="it-tech-fair" class="xliff"></a>
 
 Intune のユーザー登録のもう 1 つの選択肢は、IT 技術説明会を開くことです。 このイベントでは、IT 部門が Intune 登録サポート ブースを設置します。ユーザーはそこで Intune 登録に関する情報を入手し、不明な点を聞き、登録プロセスについてサポートを受けることができます。 この選択肢は、Intune ロールアウトの初期フェーズでは特に、IT 部門とユーザーの両方に利点があります。
 
@@ -102,6 +111,7 @@ Intune のユーザー登録のもう 1 つの選択肢は、IT 技術説明会�
 | セルフサービス |  |  |  | 人事、財務 |
 | ホワイト グローブ |  |  |  | 役員 |
 
-## <a name="next-section"></a>次のセクション
+## 次のステップ
+<a id="next-steps" class="xliff"></a>
 
 次のセクションは、[Intune ロールアウトの情報伝達計画を立てる](planning-guide-communication-plan.md)場合のガイダンスです。

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/16/2017
+ms.date: 07/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,14 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 515d4e2b089d077ec708fc1dea1e1747169a60ae
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 33ddb60df7aebe36ff652e1da6da592442b96d4b
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune アプリの管理とは
+# Microsoft Intune アプリの管理とは
+<a id="what-is-microsoft-intune-app-management" class="xliff"></a>
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,7 +37,8 @@ IT 管理者は、エンド ユーザーのために、業務に必要なアプ�
 
 Intune では、必要なデバイスで必要なアプリを利用できるように、さまざまな機能を提供しています。
 
-## <a name="app-management-capabilities-by-platform"></a>プラットフォーム別のアプリ管理機能
+## プラットフォーム別のアプリ管理機能
+<a id="app-management-capabilities-by-platform" class="xliff"></a>
 
 ||||||
 |-|-|-|-|-|
@@ -56,11 +58,12 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
 |ストアからのアプリ|Yes|○|○|Yes|
 |アプリを更新する|Yes|○|○|[はい]|
 
-<sup>1</sup> Windows 10 を実行しているデバイス上のアプリを保護するには、[Windows 情報保護]windows-information-protection-configure.md) を使用することをお勧めします。
+<sup>1</sup> Windows 10 を実行しているデバイスでアプリを保護するには、[Windows 情報保護](windows-information-protection-configure.md)の使用を検討してください。
 
 <sup>2</sup> Intune のみで管理されているデバイスに適用されます。
 
-## <a name="how-to-get-started"></a>開始する方法
+## 開始する方法
+<a id="how-to-get-started" class="xliff"></a>
 
 アプリに関連するものは、ほとんどが **[Mobile Apps]** ワークロード内にあり、以下の手順でアクセスできます。
 
@@ -70,7 +73,8 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
 
     ![[モバイル アプリ] ワークロード](./media/apps-workload.png)
 
-### <a name="manage"></a>コンピューターの
+### コンピューターの
+<a id="manage" class="xliff"></a>
 - **[アプリ]** - ほとんどのアプリをこのノードで追加、割り当て、監視します。
     - [アプリを追加する](apps-add.md)
     - [アプリを割り当てる](apps-deploy.md)
@@ -85,7 +89,8 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
 - **[iOS プロビジョニング プロファイル]** - iOS アプリには、プロビジョニング プロファイルと、証明書によって署名されたコードが含まれます。 証明書の期限が切れると、アプリを実行できなくなります。 Intune には、有効期限が近づいているアプリを持つデバイスに新しいプロビジョニング プロファイルのポリシーを事前に割り当てるツールが用意されています。
     - [iOS アプリ プロビジョニング プロファイル](app-provisioning-profile-ios.md)
 
-### <a name="monitor"></a>モニター
+### モニター
+<a id="monitor" class="xliff"></a>
 - **[ライセンスされたアプリ]** - アプリ ストアからのボリューム購入アプリの表示、割り当て、監視を行います。
     - [ビジネス向け一括購入アプリ向けの Windows ストア](windows-store-for-business.md)
 - **[検出されたアプリ]** - Intune によって割り当てられ、デバイスにインストールされたすべてのアプリを表示します。
@@ -94,7 +99,8 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
 
 詳細については、[アプリの監視](apps-monitor.md)に関するページを参照してください。
 
-### <a name="setup"></a>Setup
+### Setup
+<a id="setup" class="xliff"></a>
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
 - **[ビジネス向け Windows ストア]** - ビジネス向け Windows ストアとの統合を設定します。 その後、購入済みのアプリケーションを Intune に同期して割り当て、ライセンスの使用状況を追跡できるようになります。

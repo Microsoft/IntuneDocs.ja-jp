@@ -13,18 +13,17 @@ ms.technology:
 ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 4f893c0c8308a246d7bab15fed68a78c4e10b70a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 828dd9406d308d9bdb7af686b31689df79633940
+ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/11/2017
 ---
-# <a name="additional-resources-for-planning-your-intune-deployment"></a>Intune の展開計画に関するその他のリソース
+# Intune の展開計画に関するその他のリソース
+<a id="additional-resources-for-planning-your-intune-deployment" class="xliff"></a>
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-## <a name="templates"></a>テンプレート
+## テンプレート
+<a id="templates" class="xliff"></a>
 
 計画ガイドに使用されたテーブルの Microsoft Excel テンプレートを[ダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)できます。
 
@@ -45,7 +44,8 @@ ms.lasthandoff: 07/01/2017
 | | 条件付きアクセス ポリシー|-|
 
 
-## <a name="links"></a>Links
+## 参考記事
+<a id="further-reading" class="xliff"></a>
 
 以下のリソースで追加情報を確認してください。Intune の展開計画、設計、実装プロセス時に役立つ場合があります。
 

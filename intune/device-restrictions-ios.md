@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,19 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 365b56082207c2110965681663432cce10f27c99
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 7ec66c3864aae3d680c006ada95859df0e7f0e84
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での iOS デバイスの制限設定
+# Microsoft Intune での iOS デバイスの制限設定
+<a id="ios-device-restriction-settings-in-microsoft-intune" class="xliff"></a>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="general"></a>全般
+## 全般
+<a id="general" class="xliff"></a>
 -   **[カメラ]** - デバイスのカメラを使用できるようにするかどうかを選択します。   
 -   **[診断データの送信]** - デバイスから Apple への診断データの送信を許可またはブロックします。
 -   **[FaceTime]** - FaceTime アプリをデバイスで使用できるようにします。
@@ -73,7 +75,8 @@ ms.lasthandoff: 07/01/2017
 - **[Apple News (監視モードのみ)]** - Apple News アプリの使用を許可します。
 - **[構成プロファイルの変更]** - ユーザーが構成プロファイルをインストールできるようにします。
 
-## <a name="password"></a>パスワード
+## パスワード
+<a id="password" class="xliff"></a>
 -   **[パスワードが必要です]** - エンド ユーザーがデバイスにアクセスする際にパスワードの入力を要求します。
 -   **[単純なパスワード]** - 0000 や 1234 などの単純なパスワードを許可します。
 -   **[必要なパスワードの種類]** - 数字のみや英数字など、必要なパスワードの種類を指定します。
@@ -88,7 +91,8 @@ ms.lasthandoff: 07/01/2017
 
 <sup>1</sup> **[画面がロックされるまでの非アクティブな最長時間 (分)]** と **[画面ロック後にパスワードが要求されるまでの最長時間 (分)]** の設定を構成した場合、これらの設定は順番に適用されます。 たとえば、両方の設定値を「 **5** 」分に設定すると、5 分後に画面が自動的にオフになり、さらに 5 分後にデバイスがロックされます。 ただし、ユーザーが手動で画面をオフにした場合、2 つ目の設定は即時に適用されます。 同じ例で、ユーザーが画面をオフにした後、デバイスは 5 分後にロックされます。
 
-## <a name="app-store-doc-viewing-gaming"></a>アプリ ストア、ドキュメント表示、ゲーム
+## アプリ ストア、ドキュメント表示、ゲーム
+<a id="app-store-doc-viewing-gaming" class="xliff"></a>
 
 
 -   **[アプリ ストア (監視下のみ)]** - 監視対象のデバイスでアプリ ストアへのアクセスをブロックします。
@@ -106,7 +110,8 @@ ms.lasthandoff: 07/01/2017
 -   **[年齢区分の地域]** - 許可するダウンロードを構成する年齢区分の地域を選択し、次に **[映画]** と **[テレビ番組]** の許可する年齢区分を選択します。
 -   **[アプリ]** - ユーザーがダウンロードできるアプリに関して許可する年齢区分を選択するか、**[すべてのアプリを許可する]** を選択します。
 
-## <a name="restricted-apps"></a>制限付きアプリ
+## 制限付きアプリ
+<a id="restricted-apps" class="xliff"></a>
 
 制限付きアプリの一覧では、次の一覧のいずれかを構成できます。
 
@@ -115,7 +120,8 @@ ms.lasthandoff: 07/01/2017
 
 この一覧を構成するには、**[追加]** をクリックし、任意の名前、アプリの発行元 (省略可能)、アプリ ストアでのアプリの URL を指定します。
 
-### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>ストアにおけるアプリの URL を指定する方法
+### ストアにおけるアプリの URL を指定する方法
+<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
 
 アプリの一覧でアプリの URL を指定するには、次の形式を使用します。
 
@@ -130,11 +136,13 @@ ms.lasthandoff: 07/01/2017
 
 
 
-### <a name="additional-options"></a>追加オプション
+### 追加オプション
+<a id="additional-options" class="xliff"></a>
 
 **[インポート]** をクリックして "<*アプリ URL*>, <*アプリ名*>, <*アプリの発行元*>" 形式の csv ファイルから一覧に値を設定したり、**[エクスポート]** をクリックして、制限付きアプリの一覧の内容を含む csv ファイルを同じ形式で作成したりすることもできます。
 
-## <a name="show-or-hide-apps"></a>アプリの表示/非表示
+## アプリの表示/非表示
+<a id="show-or-hide-apps" class="xliff"></a>
 
 "アプリの表示/非表示" の一覧では、次のいずれかの一覧を構成できます (iOS 9.3 以降を実行している監視対象のデバイスが必要です)。
 
@@ -143,7 +151,8 @@ ms.lasthandoff: 07/01/2017
 
 この一覧を構成するには、**[追加]** をクリックし、任意の名前、アプリの発行元 (省略可能)、アプリ ストアでのアプリの URL を指定します。
 
-### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>ストアにおけるアプリの URL を指定する方法
+### ストアにおけるアプリの URL を指定する方法
+<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
 
 アプリの一覧でアプリの URL を指定するには、次の形式を使用します。
 
@@ -155,19 +164,22 @@ ms.lasthandoff: 07/01/2017
 > [!Note]
 > iTunes ソフトウェアを使用してアプリを検索し、[ **リンクのコピー** ] コマンドを使用してアプリの URL を入手することもできます。
 
-### <a name="additional-options"></a>追加オプション
+### 追加オプション
+<a id="additional-options" class="xliff"></a>
 
 **[インポート]** をクリックして "<*アプリ URL*>, <*アプリ名*>, <*アプリの発行元*>" 形式の csv ファイルから一覧に値を設定したり、**[エクスポート]** をクリックして、非表示のアプリまたは表示するアプリの一覧の内容を含む csv ファイルを同じ形式で作成したりすることもできます。
 
 
-## <a name="cellular"></a>移動体通信
+## 移動体通信
+<a id="cellular" class="xliff"></a>
 -   **[データ ローミング]** - デバイスが移動体通信ネットワーク上にある場合はデータ ローミングを使用できるようにします。
 -   **[ローミング中のグローバルな Background Fetch]** - デバイスが移動体通信ネットワークでのローミング中に、電子メールなどのデータをフェッチできるようにします。
 -   **[音声ダイヤル]** - デバイスで音声による発信機能を使用できるようにします。
 -   **[音声通話ローミング]** - デバイスが移動体通信ネットワーク上にある場合は音声通話ローミングを使用できるようにします。
 -   **[アプリの携帯データ ネットワークの使用設定に対する変更 (監視モードのみ)]** - 携帯データ ネットワークの使用が許可されているアプリをユーザーが管理することを許可します。
 
-## <a name="cloud-and-storage"></a>クラウドとストレージ
+## クラウドとストレージ
+<a id="cloud-and-storage" class="xliff"></a>
 -   **[iCloud へのバックアップ]** - ユーザーが iCloud にデバイスをバックアップできるようにします。
 -   **[iCloud へのドキュメントの同期 (監視下のみ)]** - ドキュメントとキー値を iCloud 記憶域スペースに同期できるようにします。
 -   **[iCloud へのフォト ストリームの同期]** - ユーザーがデバイスの **[My Photo Stream (マイ フォト ストリーム)]** を有効にできるようにします。有効にすると、写真は iCloud と同期され、すべてのユーザー デバイスで使用できるようになります。
@@ -177,11 +189,13 @@ ms.lasthandoff: 07/01/2017
 -   **[共有フォト ストリーム]** - デバイスの **[iCloud Photo Sharing (iCloud の写真共有)]** を無効にするには、**[いいえ]** に設定します。
 -   **[アクティビティの継続]** - ユーザーがある iOS デバイスで開始した作業を別の iOS または macOS デバイスで続行できるようにします (Handoff)。
 
-## <a name="autonomous-single-app-mode-supervised-only"></a>自律的シングル App モード (監視モードのみ)
+## 自律的シングル App モード (監視モードのみ)
+<a id="autonomous-single-app-mode-supervised-only" class="xliff"></a>
 
 これらの設定を使用して、自律的シングル App モードで指定したアプリを実行するように iOS デバイスを構成できます。 このモードを構成した場合、指定したアプリが実行されると、デバイスはそのアプリだけを実行できるようにロックされます。 たとえば、ユーザーがデバイスでテストを受けられるようにアプリを構成するような場合です。 アプリのアクションが完了した場合、または管理者がこのポリシーを削除した場合、デバイスは通常の状態に戻ります。
 
-### <a name="settings"></a>Settings
+### Settings
+<a id="settings" class="xliff"></a>
 
 - **[アプリ名]** - このブレードのアプリ一覧に表示される通りにアプリの名前を入力します。
 - **[アプリ バンドル ID]** - アプリのバンドル ID を入力します。 詳細については、このトピックの「**組み込み iOS アプリのバンドル ID リファレンス**」をご覧ください。
@@ -191,54 +205,57 @@ ms.lasthandoff: 07/01/2017
 - **[インポート]** - アプリ名とそれに関連付けられているバンドル ID の一覧を含むコンマ区切り値 (.csv) ファイルをインポートします。
 - **[エクスポート]** - 構成したアプリ名とそれに関連付けられているバンドル ID を、コンマ区切り値 (.csv) ファイルにエクスポートします。
 
-### <a name="bundle-id-reference-for-built-in-ios-apps"></a>組み込み iOS アプリのバンドル ID リファレンス
+### 組み込み iOS アプリのバンドル ID リファレンス
+<a id="bundle-id-reference-for-built-in-ios-apps" class="xliff"></a>
 
 この一覧は、一般的な組み込み iOS アプリのバンドル ID を示しています。 他のアプリのバンドル ID を調べるには、ソフトウェア ベンダーにお問い合わせください。
 
-|||
-|-|-|
-|アプリ名|バンドル ID|
-|アプリ ストア|com.apple.AppStore|
-|計算機|com.apple.calculator|
-|予定表|com.apple.mobilecal|
-|カメラ|com.apple.camera|
-|時計|com.apple.mobiletimer|
-|コンパス|com.apple.compass|
-|連絡先|com.apple.MobileAddressBook|
-|FaceTime|com.apple.facetime|
-|友達を探す|com.apple.mobileme.fmf1|
-|Find iPhone|com.apple.mobileme.fmip1|
-|Game Center|com.apple.gamecenter|
-|GarageBand|com.apple.mobilegarageband|
-|正常性|com.apple.Health|
-|iBooks|com.apple.iBooks|
-|iTunes Store|com.apple.MobileStore|
-|iTunes U|com.apple.itunesu|
-|Keynote|com.apple.Keynote|
-|メール|com.apple.mobilemail|
-|マップ|com.apple.Maps|
-|メッセージ|com.apple.MobileSMS|
-|ミュージック|com.apple.Music|
-|News|com.apple.news|
-|注|com.apple.mobilenotes|
-|数字|com.apple.Numbers|
-|ページ|com.apple.Pages|
-|Photo Booth|com.apple.Photo-Booth|
-|写真|com.apple.mobileslideshow|
-|Podcast|com.apple.podcasts|
-|リマインダー|com.apple.reminders|
-|Safari|com.apple.mobilesafari|
-|Settings|com.apple.Preferences|
-|株価|com.apple.stocks|
-|ヒント|com.apple.tips|
-|ビデオ|com.apple.videos|
-|VoiceMemos|com.apple.VoiceMemos|
-|Wallet|com.apple.Passbook|
-|視聴する|com.apple.Bridge|
-|天気|com.apple.weather|
+```
+,com.apple.AppStore,App Store,Apple
+,com.apple.calculator,Calculator,Apple
+,com.apple.mobilecal,Calendar,Apple
+,com.apple.camera,Camera,Apple
+,com.apple.mobiletimer,Clock,Apple
+,com.apple.compass,Compass,Apple
+,com.apple.MobileAddressBook,Contacts,Apple
+,com.apple.facetime,FaceTime,Apple
+,com.apple.mobileme.fmf1,Find Friends,Apple
+,com.apple.mobileme.fmip1,Find iPhone,Apple
+,com.apple.gamecenter,Game Center,Apple
+,com.apple.mobilegarageband,GarageBand,Apple
+,com.apple.Health,Health,Apple
+,com.apple.iBooks,iBooks,Apple
+,com.apple.MobileStore,iTunes Store,Apple
+,com.apple.itunesu,iTunes U,Apple
+,com.apple.Keynote,Keynote,Apple
+,com.apple.mobilemail,Mail,Apple
+,com.apple.MapsMaps,Apple
+,com.apple.MobileSMS,Messages,Apple
+,com.apple.Music,Music,Apple
+,com.apple.news,News,Apple
+,com.apple.mobilenotes,Notes,Apple
+,com.apple.Numbers,Numbers,Apple
+,com.apple.Pages,Pages,Apple
+,com.apple.Photo-Booth,Photo Booth,Apple
+,com.apple.mobileslideshow,Photos,Apple
+,com.apple.podcasts,Podcasts,Apple
+,com.apple.reminders,Reminders,Apple
+,com.apple.mobilesafariSafari,Apple
+,com.apple.Preferences,Settings,Apple
+,com.apple.stocks,Stocks,Apple
+,com.apple.tips,Tips,Apple
+,com.apple.videos,Videos,Apple
+,com.apple.VoiceMemos,VoiceMemos,Apple
+,com.apple.Passbook,Wallet,Apple
+,com.apple.Bridge,Watch,Apple
+,com.apple.weather,Weather,Apple
 
 
-## <a name="kiosk"></a>キオスク
+```
+
+
+## キオスク
+<a id="kiosk" class="xliff"></a>
 -   **[アクティベーション ロック]** - 監視されている iOS デバイスでアクティベーション ロックを有効にします。
 -   **[キオスク モードで実行されるアプリ]** - **[管理対象アプリ]** を選択して Intune に追加したアプリケーションを選択するか、**[ストア アプリ]** を選択してストア内のアプリの URL を指定します。 他のアプリはデバイスでの実行が許可されません。 詳細については、このトピックで後述する「アプリ ストアの URL を指定する方法」を参照してください。
 -   **[Assistive touch]** - ユーザー補助の設定の **[Assistive Touch]** を有効または無効にします。Assistive Touch は、ユーザーが実行しにくい可能性のある画面の操作を実行します。
@@ -262,7 +279,8 @@ ms.lasthandoff: 07/01/2017
 > iOS デバイスをキオスク モードに構成する前に、Apple Configurator ツールまたは Apple デバイス登録プログラムを使用して、デバイスを監視下モードにする必要があります。 Apple Configurator ツールの詳細については、Apple のドキュメントを参照してください。
 >プロファイルの割り当て後に、指定した iOS のアプリがインストールされる場合、デバイスは再起動後にキオスク モードになります。
 
-## <a name="safari"></a>Safari
+## Safari
+<a id="safari" class="xliff"></a>
 -   **[Safari (監視下のみ)]** - Safari ブラウザーをデバイスで使用できるかどうかを指定します。
 -   **[オートフィル]** - ユーザーがブラウザーのオートコンプリートの設定を変更できるようにします。
 -   **[Cookie]** - ブラウザーで Cookie を使用できるようにします。
@@ -271,18 +289,22 @@ ms.lasthandoff: 07/01/2017
 -   **[ポップアップ]** - ブラウザーのポップアップ ブロックを有効または無効にします。
 
 
-## <a name="domains"></a>Domains
+## Domains
+<a id="domains" class="xliff"></a>
 
-### <a name="unmarked-email-domains"></a>マークされていないメール ドメイン
+### マークされていないメール ドメイン
+<a id="unmarked-email-domains" class="xliff"></a>
 
 **[メール ドメイン URL]** フィールドで、1 つ以上の URL を一覧に追加します。 構成したドメイン以外のドメインからのメールをエンド ユーザーが受信すると、そのメールは iOS のメール アプリで信頼されていないメールとしてマークされます。
 
 
-### <a name="managed-web-domains"></a>管理された Web ドメイン
+### 管理された Web ドメイン
+<a id="managed-web-domains" class="xliff"></a>
 
 **[Web ドメイン URL]** フィールドで、1 つ以上の URL を一覧に追加します。 指定したドメインからダウンロードされたドキュメントは、管理されているものと見なされます。 この設定は、Safari ブラウザーを使用してダウンロードされたドキュメントにのみ適用されます。
 
 
-### <a name="safari-password-auto-fill-domains"></a>Safari パスワードの自動入力ドメイン
+### Safari パスワードの自動入力ドメイン
+<a id="safari-password-auto-fill-domains" class="xliff"></a>
 
 **[ドメイン URL]** フィールドで、1 つ以上の URL を一覧に追加します。 ユーザーは、この一覧の URL からの Web パスワードのみを保存できます。 この設定は、Safari ブラウザー、および iOS 9.3 以降の監視モードのデバイスにのみ適用されます。 URL を指定しないと、すべての Web サイトからのパスワードが保存されます。
