@@ -14,13 +14,14 @@ ms.assetid: fd8cb5f7-19f0-4d80-8825-2bafa49624af
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8806dc965653deaca5ab370c290403ae049e5c58
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 032427a9965f368d7be17339e3cbe5b426800347
+ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/11/2017
 ---
-# <a name="determine-use-case-scenario-requirements"></a>ユース ケース シナリオの要件の決定
+# ユース ケース シナリオの要件の決定
+<a id="determine-use-case-scenario-requirements" class="xliff"></a>
 
 このセクションでは、各ユース ケース シナリオ内の組織グループごとに要件を決定します。 このプロセスは、アーキテクチャとデザイン、オンボード、ロールアウトなど、その他の Intune 展開の計画を準備するのに役立ちます。 また、Intune 展開プロジェクトに関連する潜在的なギャップと課題の特定にも役立ちます。
 
@@ -41,7 +42,8 @@ ms.lasthandoff: 07/01/2017
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して、お客様の組織のユース ケースとサブ ユース ケースの要件を入力できます。
 
 
-## <a name="examples-of-requirements"></a>要件の例
+## 要件の例
+<a id="examples-of-requirements" class="xliff"></a>
 
 "要件" 列に使用できる追加の例を次に示します。
 
@@ -62,6 +64,7 @@ ms.lasthandoff: 07/01/2017
     - アプリの保護ポリシー付きの Office 365
     - アプリの保護ポリシー付きの基幹業務 (LOB)
 
-## <a name="next-section"></a>次のセクション
+## 次のステップ
+<a id="next-steps" class="xliff"></a>
 
 次のセクションでは、[Intune ロールアウト計画を作成する方法](planning-guide-rollout-plan.md)についてのガイダンスを提供します。

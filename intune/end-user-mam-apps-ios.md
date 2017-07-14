@@ -2,8 +2,8 @@
 title: "アプリ保護ポリシーのある iOS アプリ"
 description: "このトピックでは、アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点について説明します。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 05/05/2017
 ms.topic: article
@@ -14,21 +14,23 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a4b7ad6cfd8e07137bac9d430088274d9161c7ac
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e66042e5198b76ec484fe0218127acb653394cce
+ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
-# <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点
+# アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点
+<a id="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies" class="xliff"></a>
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
  このトピックでは、アプリ保護ポリシーが適用されているアプリを使用するときのユーザー エクスペリエンスについて説明します。 アプリ保護ポリシーが適用されるのは、仕事でアプリが使用される場合に限られます。たとえば、職場のアカウントを使用してアプリにアクセスしたり、会社の OneDrive 事業拠点に格納されたファイルにアクセスしたりする場合です。
 
-##  <a name="access-apps"></a>アプリにアクセスする
+##  アプリにアクセスする
+<a id="access-apps" class="xliff"></a>
 
-デバイスが**Intune に登録されていない**場合、ユーザーはアプリを初めて使用すると、アプリの再起動を求められます。 再起動すると、アプリ保護ポリシーをアプリに適用することができます。 
+デバイスが**Intune に登録されていない**場合、ユーザーはアプリを初めて使用すると、アプリの再起動を求められます。 再起動すると、アプリ保護ポリシーをアプリに適用することができます。
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
 
@@ -37,7 +39,8 @@ ms.lasthandoff: 07/01/2017
 
 **Intune の管理対象として登録された**デバイスの場合、ユーザーにはアプリが管理された状態にあることを示すメッセージが表示されます。
 
-##  <a name="use-apps-with-multi-identity-support"></a>複数の ID に対応しているアプリを使用する
+##  複数の ID に対応しているアプリを使用する
+<a id="use-apps-with-multi-identity-support" class="xliff"></a>
 
 複数の ID をサポートするアプリの場合、アプリが作業コンテキストで利用されているときにアプリ保護ポリシーが適用されていれば、仕事用や個人用など、複数のアカウントを利用して同じアプリにアクセスできます。  
 
@@ -47,7 +50,8 @@ ms.lasthandoff: 07/01/2017
 
 アプリ保護ポリシーは仕事関連でのみ適用されます。 そのため、仕事で使用する場合と個人的に使用する場合でアプリの動作が異なることがあります。
 
-##  <a name="manage-user-accounts-on-the-device"></a>デバイスのユーザー アカウントの管理
+##  デバイスのユーザー アカウントの管理
+<a id="manage-user-accounts-on-the-device" class="xliff"></a>
 
 Intune では、アプリ保護ポリシーの展開は、デバイスごとに 1 ユーザー アカウントに限られます。
 
@@ -63,9 +67,11 @@ Intune では、アプリ保護ポリシーの展開は、デバイスごとに 
 
 ユーザー A は、**会社 X** と会社 **会社 Y** という 2 つの会社で働いています。ユーザー A は各会社の作業アカウントを持っており、どちらの会社も Intune を使用してアプリ保護ポリシーを展開しています。 **会社 X** は、**会社 Y** の**前に**アプリ保護ポリシーを展開しています。アプリ保護ポリシーは、**会社 X** に関連付けられたアプリ保護ポリシーに適用され、会社 Y に関連付けられたアカウントには適用されません。会社 Y に関連付けられたユーザー アカウントをアプリ保護ポリシーで管理する場合は、会社 X に関連付けられたユーザー アカウントを削除する必要があります。
 
-### <a name="add-a-second-account"></a>2 つ目のアカウントを追加する
+### 2 つ目のアカウントを追加する
+<a id="add-a-second-account" class="xliff"></a>
 
 iOS デバイスを使用している場合は、そのデバイスに 2 つ目の作業アカウントを追加しようとすると、ブロック メッセージが表示されることがあります。 アカウントが表示され、削除するアカウントを選択できるようになります。
 
-## <a name="next-steps"></a>次のステップ
+## 次のステップ
+<a id="next-steps" class="xliff"></a>
 [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](end-user-mam-apps-android.md)
