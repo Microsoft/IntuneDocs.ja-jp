@@ -38,9 +38,9 @@
 ### [実装](planning-guide-onboarding.md)
 ### [テストと検証](planning-guide-test-validation.md)
 ### [その他のリソース](planning-guide-resources.md)
-<!-- ## Scenario implementation guides
-### [BYOD](/enterprise-mobility-security/solutions/enable-byod?toc=/intune/toc.json)
-### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
+## シナリオの実装ガイド
+### [BYOD](byod-enable.md)
+<!--### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
 ### [Protect on-premises data](/enterprise-mobility-security/solutions/protect-on-premises-data-with-intune?toc=/intune/toc.json)
 ### [Protect data without enrollment](/enterprise-mobility-security/solutions/protect-company-data-without-managing-devices?toc=/intune/toc.json)
 ### [Manage company-owned devices](/enterprise-mobility-security/solutions/issue-corp-devices?toc=/intune/toc.json)
@@ -62,16 +62,15 @@
 ## [Intune をセットアップする](setup-steps.md)
 ### [必要条件](supported-devices-browsers.md)
 #### [ネットワーク帯域幅の使用量](network-bandwidth-use.md)
-### [Intune へのサインイン](account-sign-up.md)
+### [Intune にサインインする](account-sign-up.md)
 ### [ドメインを構成する](custom-domain-name-configure.md)
-### [ユーザーの追加](users-permissions-add.md)
+### [ユーザーの追加](users-add.md)
 ### [グループの追加](groups-add.md)
-### [ライセンスの割り当て](licenses-assign.md)       
-### [ポータル サイトをカスタマイズする](company-portal-customize.md)     
+### [ライセンスの割り当て](licenses-assign.md)
 ### [MDM 機関を設定する](mdm-authority-set.md)
 
 ## [デバイスの登録](device-enrollment.md)
-### セットアップ オプション
+### [登録オプション](enrollment-options.md)
 #### [使用条件](terms-and-conditions-create.md)
 #### [制限事項](enrollment-restrictions-set.md)
 #### [Apple MDM プッシュ通知証明書](apple-mdm-push-certificate-get.md)
@@ -105,7 +104,6 @@
 ### [Windows 10 の PIN のリセット](device-windows-pin-reset.md)
 ### [デバイス インベントリの確認](device-inventory.md)
 
-## [ユーザーの管理](user-management.md)
 <!--### Add and delete users -->
 
 ## [アプリの管理](app-management.md)
@@ -219,32 +217,24 @@
 
 #### [Lookout の設定](lookout-mobile-threat-defense-connector.md)
 ##### [Lookout と Intune の統合](lookout-mtd-connector-integration.md)
+
 #### [Skycure の設定](skycure-mobile-threat-defense-connector.md)
-##### [Azure AD SSO の構成](skycure-azure-sso-configure.md)
-##### [iOS アプリ構成ポリシーのダウンロード](skycure-ios-app-configuration-policy-download.md)
 ##### [Skycure と Intune の統合](skycure-mtd-connector-integration.md)
+
+#### [チェック ポイントの設定](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
+##### [チェック ポイントと Intune の統合](checkpoint-sandblast-mobile-mtd-connector-integration.md)
+
 #### [MTD アプリの追加](mtd-apps-ios-app-configuration-policy-add-assign.md)
 #### [Intune で MTD を有効にする](mtd-connector-enable.md)
 #### [MTD デバイス コンプライアンス ポリシーの作成](mtd-device-compliance-policy-create.md)
 
 ### [ネットワーク アクセス制御](network-access-control-integrate.md)
 
-
-<!-- ### Set up mobile threat protection        
-#### Prerequisites
-#### Set up Lookout
-#### Set up Skycure
-#### Enable mobile threat protection in Intune
-#### Create a mobile threat protection compliance policy -->
-
 ### [Windows Hello の設定](windows-hello.md)        
 <!-- ### Protect devices with remote actions -->
 
 ## [ロールの管理](role-based-access-control.md)
-<!-- ### Create a custom role
-### Assign a role -->
 
-<!-- ### Custom role settings -->
 
 ## [ソフトウェア エージェントを使用した PC の管理](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
 ### [PC 管理の比較](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
