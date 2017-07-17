@@ -2,6 +2,7 @@
 ## [Azure Portal とは](what-is-intune.md)
 ## [教育用の Intune とは](introduction-intune-education.md)
 ## [Azure での Intune の機能](ui-changes.md)
+### [グループへの変更](groups-get-started.md)
 ## [無料試用版にサインアップ](free-trial-sign-up.md)
 ## [新機能](whats-new.md)
 ### [アプリの UI の新機能](whats-new-app-ui.md)
@@ -16,12 +17,13 @@
 ## [一般的なシナリオ](common-scenarios.md)
 ## [既知の問題](known-issues.md)
 ## [サポートを受ける](get-support.md)
-## [Intune サービスの説明](microsoft-intune-service-description.md)
 
-<!--# Get started
-## [Manage devices](/intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune?toc=/intune/toc.json)
-## [Create policies](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3?toc=/intune/toc.json)
-## [Manage apps](/intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4?toc=/intune/toc.json) -->
+# [作業開始](get-started-evaluation.md)
+## [グループの作成](get-started-groups.md)
+## [ユーザーの作成](get-started-users.md)
+## [デバイスの登録](get-started-enroll.md)
+## [ポリシーの割り当て](get-started-policies.md)
+## [アプリを割り当てる](get-started-apps.md)
 
 
 # 展開の計画
@@ -63,6 +65,7 @@
 ### [Intune へのサインイン](account-sign-up.md)
 ### [ドメインを構成する](custom-domain-name-configure.md)
 ### [ユーザーの追加](users-permissions-add.md)
+### [グループの追加](groups-add.md)
 ### [ライセンスの割り当て](licenses-assign.md)       
 ### [ポータル サイトをカスタマイズする](company-portal-customize.md)     
 ### [MDM 機関を設定する](mdm-authority-set.md)
@@ -75,7 +78,8 @@
 #### [企業 ID](corporate-identifiers-add.md)
 #### [デバイス登録マネージャー](device-enrollment-manager-enroll.md)
 #### [デバイスをグループにマッピングする](device-group-mapping.md)
-### [Windows の登録の設定](windows-enroll.md)
+### Windows の登録の設定
+#### [Windows の登録](windows-enroll.md)
 #### [一括登録](windows-bulk-enroll.md)
 ### [Android の登録の設定](android-enroll.md)
 ### iOS の登録の設定
@@ -95,11 +99,13 @@
 ### [会社データの削除](device-company-data-remove.md)
 ### [パスコードのリセット](device-passcode-reset.md)
 ### [デバイスの再起動](device-restart.md)
+### [現在のユーザーのログアウト](device-logout-user.md)
+### [ユーザーの削除](device-remove-user.md)
 ### [Android のリモート コントロール](device-profile-android-teamviewer.md)
+### [Windows 10 の PIN のリセット](device-windows-pin-reset.md)
 ### [デバイス インベントリの確認](device-inventory.md)
 
 ## [ユーザーの管理](user-management.md)
-### [グループの概要](groups-get-started.md)
 <!--### Add and delete users -->
 
 ## [アプリの管理](app-management.md)
@@ -126,16 +132,6 @@
 #### [iOS 電子ブック](vpp-ebooks-ios.md)
 ### [ポータル サイト アプリを構成する](company-portal-app.md)
 ### [Managed Browser の構成](app-configuration-managed-browser.md)
-## [アプリ保護ポリシーの使用](app-protection-policies.md)
-### [WIP アプリ保護ポリシーの準備をする](app-protection-policies-configure-windows-10.md)
-### [WIP アプリ保護ポリシーを作成して割り当てる](windows-information-protection-policy-create.md)
-### [Android の設定](app-protection-policy-settings-android.md)
-### [iOS の設定](app-protection-policy-settings-ios.md)
-### [アプリ保護ポリシーを確認する](app-protection-policies-validate.md)
-### [アプリ保護のユーザーの状態を監視する](app-protection-policies-monitor.md)
-### [WIP アプリ保護ポリシーの準備をする](app-protection-policies-configure-windows-10.md)
-### [WIP アプリ保護ポリシーを作成して割り当てる](windows-information-protection-policy-create.md)
-### [iOS アプリ間のデータ転送を管理する](data-transfer-between-apps-manage-ios.md)
 
 ## [デバイスの構成](device-profiles.md)
 ### [デバイス プロファイルを構成する](device-profile-create.md)
@@ -173,13 +169,16 @@
 #### [macOS](wi-fi-settings-macos.md)
 #### [Windows 8.1 および Windows 10](wi-fi-settings-import-windows-8-1.md)
 ### [Windows 10 エディションのアップグレード設定を構成する](edition-upgrade-configure-windows-10.md)
+### [Windows 10 の Endpoint Protection](endpoint-protection-windows-10.md)
 ### [Windows 10 の教育設定を構成する](education-settings-configure.md)
 ### [iOS の教育設定を構成する](education-settings-configure-ios.md)
+### [iOS の教育共有デバイスの構成](education-settings-configure-ios-shared.md)
 ### [ビジネス設定向けの Windows Update の構成](windows-update-for-business-configure.md)
 ### [証明書を構成する](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
 #### [PKCS](certficates-pfx-configure.md)
 ### [Windows Information Protection 設定を構成する](windows-information-protection-configure.md)
+### [通信費の監視](telecom-expenses-monitor.md)
 ### [プロファイルの割り当て](device-profile-assign.md)
 ### [プロファイルの監視](device-profile-monitor.md)
 ### [プロファイルのトラブルシューティング](device-profile-troubleshoot.md)
@@ -190,20 +189,31 @@
 ### [Android for Work ポリシーの作成](compliance-policy-create-android-for-work.md)
 ### [iOS ポリシーの作成](compliance-policy-create-ios.md)
 ### [Windows ポリシーの作成](compliance-policy-create-windows.md)
-<!--### Create Actions for noncompliance-->
+### コンプライアンス非対応に対するアクションを作成する
 ### [デバイス コンプライアンスを監視する](compliance-policy-monitor.md)
 
 ## [条件付きアクセスの設定](conditional-access.md)
 ### [条件付きアクセスの一般的な使用方法](conditional-access-intune-common-ways-use.md)
-### [アプリベースの条件付きアクセス](app-based-conditional-access-intune.md)
 ### [Exchange On-premises Connector をインストールする](exchange-connector-install.md)
 ### [作成し、条件付きアクセス ポリシーを割り当てる](conditional-access-exchange-create.md)
-### [Exchange Online へのアプリベースの条件付きアクセスの設定](app-based-conditional-access-intune-exchange-online-create.md)
-### [SharePoint Online へのアプリベースの条件付きアクセスの設定](app-based-conditional-access-intune-sharepoint-online-create.md)
+### [条件付きアクセス ポリシーを Intune クラシック ポータルから再割り当てする](conditional-access-intune-reassign.md)
+### [アプリベースの条件付きアクセス](app-based-conditional-access-intune.md)
+### [アプリベースの条件付きアクセスの設定](app-based-conditional-access-intune-create.md)
 ### [ADAL と Intune](app-modern-authentication-block.md)
 ### [条件付きアクセスのコンプライアンス対応を監視します。](conditional-access-exchange-monitor.md)
 
-## データとデバイスの保護
+## アプリとデバイス データの保護
+
+### [アプリ保護ポリシーの使用](app-protection-policy.md)
+#### [アプリ保護ポリシーの作成](app-protection-policies.md)
+##### [Android の設定](app-protection-policy-settings-android.md)
+##### [iOS の設定](app-protection-policy-settings-ios.md)
+#### [アプリ保護ポリシーを確認する](app-protection-policies-validate.md)
+#### [アプリ保護のユーザーの状態を監視する](app-protection-policies-monitor.md)
+#### [WIP アプリ保護ポリシーの準備をする](app-protection-policies-configure-windows-10.md)
+#### [WIP アプリ保護ポリシーを作成して割り当てる](windows-information-protection-policy-create.md)
+#### [iOS アプリ間のデータ転送を管理する](data-transfer-between-apps-manage-ios.md)
+
 
 ### [Mobile Threat Defense](mobile-threat-defense.md)
 
@@ -213,19 +223,27 @@
 ##### [Azure AD SSO の構成](skycure-azure-sso-configure.md)
 ##### [iOS アプリ構成ポリシーのダウンロード](skycure-ios-app-configuration-policy-download.md)
 ##### [Skycure と Intune の統合](skycure-mtd-connector-integration.md)
-#### [MTD アプリを追加し、割り当てる](mtd-apps-ios-app-configuration-policy-add-assign.md)
+#### [MTD アプリの追加](mtd-apps-ios-app-configuration-policy-add-assign.md)
 #### [Intune で MTD を有効にする](mtd-connector-enable.md)
-#### [MTD デバイス コンプライアンス ポリシーを作成して割り当てる](mtd-device-compliance-policy-create.md)
+#### [MTD デバイス コンプライアンス ポリシーの作成](mtd-device-compliance-policy-create.md)
 
 ### [ネットワーク アクセス制御](network-access-control-integrate.md)
 
+
+<!-- ### Set up mobile threat protection        
+#### Prerequisites
+#### Set up Lookout
+#### Set up Skycure
+#### Enable mobile threat protection in Intune
+#### Create a mobile threat protection compliance policy -->
+
 ### [Windows Hello の設定](windows-hello.md)        
-<!-- ### Protect devices with remote actions        -->
+<!-- ### Protect devices with remote actions -->
 
 ## [ロールの管理](role-based-access-control.md)
 <!-- ### Create a custom role
 ### Assign a role -->
-### [ヘルプデスク オペレーター ロールを使用する](help-desk-operators.md)
+
 <!-- ### Custom role settings -->
 
 ## [ソフトウェア エージェントを使用した PC の管理](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
@@ -254,8 +272,7 @@
 ### [Windows アプリを入手する方法](end-user-apps-windows.md)
 
 # 監視とトラブルシューティング
-## [通信費の監視](telecom-expenses-monitor.md)
-
+## [ヘルプデスク オペレーター ロールを使用する](help-desk-operators.md)
 
 # 開発とカスタマイズ
 ## [カスタム デバイス設定の構成](custom-settings-configure.md)
@@ -280,6 +297,5 @@
 ### [Intune App SDK Xamarin コンポーネント](app-sdk-xamarin.md)
 ## [Intune Graph API の使用方法](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
-
 
 # [用語集](intune-glossary.md)
