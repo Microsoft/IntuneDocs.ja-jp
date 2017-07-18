@@ -118,6 +118,7 @@
 #### [Windows ストア アプリ](store-apps-windows.md)
 #### [Windows LOB アプリ](lob-apps-windows.md)
 #### [Android for Work アプリ](apps-add-android-for-work.md)
+#### [Windows 10 用の Office 365 アプリ](apps-add-office365.md)
 ### [アプリを割り当てる](apps-deploy.md)
 ### [アプリの監視](apps-monitor.md)
 ### [iOS アプリの構成プロファイル](app-configuration-policies-use-ios.md)
