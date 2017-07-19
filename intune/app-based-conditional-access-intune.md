@@ -14,15 +14,12 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 95edaa22f90743bb2821f2f656fdb8e9013c4b35
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 0893d511c73e4154c61063d96e26937ea2825467
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="app-based-conditional-access-with-intune"></a>Intune でのアプリ ベースの条件付きアクセス
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -53,6 +50,8 @@ Microsoft Outlook アプリのみが Exchange Online にアクセスできるよ
     - iOS 用と Android 用の Microsoft PowerPoint
     - iOS 用と Android 用の Microsoft OneDrive for Business
     - iOS 用の Microsoft OneNote
+<br></br>
+- **Microsoft Teams**
 
     > [!NOTE] 
     > アプリ ベースの条件付きアクセスは [LOB アプリもサポート](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication)していますが、LOB アプリが [Office 365 の先進認証](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)を使用している必要があります。
@@ -92,9 +91,6 @@ Microsoft Outlook アプリのみが Exchange Online にアクセスできるよ
 11.  会社の電子メールは、ユーザーのメールボックスに配信されています。
 
 ## <a name="next-steps"></a>次のステップ
-[MAM アプリ用の Exchange Online ポリシーを作成する](app-based-conditional-access-intune-exchange-online-create.md)
-
-[MAM アプリ用の SharePoint Online ポリシーを作成する](app-based-conditional-access-intune-sharepoint-online-create.md)
+[アプリベースの条件付きアクセス ポリシーを作成する](app-based-conditional-access-intune-create.md)
 
 [最新の認証を使用していないアプリをブロックする](app-modern-authentication-block.md)
-

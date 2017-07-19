@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 07/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,30 +15,34 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 7db72e25c8ba5846a50989b17d2c7adfb6f1c44e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: e85306934b68f64bad8c223ac117190607db8473
+ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/06/2017
 ---
-
-# <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune での Managed Browser のポリシーを使用したインターネット アクセスの管理
+# <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune で Managed Browser ポリシーを使ってインターネット アクセスを管理する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Managed Browser は、パブリック アプリ ストアからダウンロードできる、組織内で使用するための Web 閲覧アプリです。 Intune では Managed Browser を使用することで、Web データを保護した状態で、企業サイトにアクセスしたり、MyApps サービスを通してシングル サインオンで SaaS アプリにアクセスしたりできます。 さらに、URL とドメインの一覧を使用して Managed Browser を事前構成し、企業コンテキスト内でユーザーがアクセスできるサイトを制限することもできます。
+Managed Browser は、公開アプリ ストアからダウンロードできる、組織内で使用するための Web 閲覧アプリです。 Intune で構成されている場合、Managed Browser では次の管理が可能です。
+- Web データを保護した状態で、企業サイトにアクセスしたり、MyApps サービスを通してシングル サインオンで SaaS アプリにアクセスしたりできる。
+- URL とドメインの一覧を使用して事前構成し、企業コンテキスト内でユーザーがアクセスできるサイトを制限することができる。
+- ホームページ、および指定したブックマークを使用して事前定義できる。
 
-このアプリは Intune SDK と統合されているので、アプリ保護ポリシーを適用することもできます。 これらのポリシーでは、切り取り、コピー、貼り付けの使用を制御したり、画面のキャプチャを禁止したり、ユーザーが選択したコンテンツへのリンクのみを他の管理対象アプリで開けるようにしたりします。 詳細については、「[アプリ保護ポリシーとは](/intune/app-protection-policy)」をご覧ください。
+このアプリは Intune SDK と統合されているため、次のようなアプリ保護ポリシーを適用することもできます。
+- 切り取り、コピー、貼り付けの使用をコントロールする
+- 画面の取り込みを禁止する
+- ユーザーが選択したコンテンツへのリンクのみを他の管理対象アプリで開けるようにする
+
+詳細については、「[アプリ保護ポリシーとは](/intune/app-protection-policy)」を参照してください。
+
 これらの設定は、Intune に登録されているデバイスや別のデバイス管理製品に登録されているデバイスに適用できるほか、一切管理されていないデバイスにも適用できます。
-
->[!IMPORTANT]
->Managed Browser アプリは、デバイス上の別のアプリがアクセス保護ポリシーを取得した場合にのみ、Intune アクセス保護ポリシーを取得して適用します。<br><br> 
 
 ユーザーがアプリ ストアから Managed Browser をインストールし、それを Intune で管理していない場合は、Microsoft MyApps サイトを通したシングル サインオンをサポートする通常の Web ブラウザーとして使用できます。 ユーザーは直接 MyApps サイトにアクセスし、プロビジョニングされた SaaS アプリケーションのすべてを表示できます。
 Managed Browser が Intune で管理されていない場合、Intune で管理されている他のアプリケーションのデータにアクセスすることはできません。 
 
+Managed Browser では、Secure Sockets Layer バージョン 3 (SSLv3) 暗号化プロトコルをサポートしません。
 
 Managed Browser のポリシーを作成できるのは、以下のデバイスです。
 
@@ -50,25 +54,25 @@ Intune Managed Browser では、[Microsoft Intune アプリケーション パ�
 
 ## <a name="create-a-managed-browser-app-configuration"></a>Managed Browser アプリの構成を作成する
 
-1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune アプリ保護]** の順に選択します。
-3. Intune モバイル アプリケーション管理ダッシュボードの **[設定]** ブレードで、**[アプリの構成]** を選択します。
-4. **[アプリの構成]** ブレードで、**[構成の追加]** を選択します。
-5. **[アプリの構成を追加する]** ブレードで **[名前]** に入力し、必要に応じてアプリ構成設定の **[説明]** に入力します。
-5. **[必要なアプリの選択]** を選択した後、**[対象アプリ]** ブレードで、iOS 用、Android 用、またはその両方の **Managed Browser** を選択します。
-6. **[OK]** を選択し、**[アプリの構成を追加する]** ブレードに戻ります。
-7. **[構成の定義]** を選択します。 **[構成]** ブレードで、Managed Browser の構成を指定するキーと値のペアを定義します。
-定義できる別のキーと値のペアについては、このトピックの後半のセクションで説明します。
-8. 終了したら、 **[OK]**をクリックします。
-9. **[アプリの構成を追加する]** ブレードで、**[作成]** を選択します。
-10. 新しい構成が作成され、**[アプリの構成]** ブレードに表示されます。
+1.  Azure ポータルにサインインします。
+2.  **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
+3.  [管理] リストの **[アプリの構成]** ブレードで、**[アプリ構成ポリシー]** を選択します。
+4.  **[アプリ構成ポリシー]** ブレードで **[追加]** を選択します。
+5.  **[アプリの構成を追加する]** ブレードで **[名前]** に入力し、必要に応じてアプリ構成設定の **[説明]** に入力します。
+6.  [**デバイス登録の種類**] で、[**Intune に未登録**] を選択します。
+7.  [**必要なアプリの選択**] を選択して、[**対象アプリ**] ブレードで、iOS、Android、またはその両方に [**Managed Browser**] を選択します。
+8.  **[OK]** を選択し、**[アプリの構成を追加する]** ブレードに戻ります。
+9.  [**構成の設定**] を選択します。 **[構成]** ブレードで、Managed Browser の構成を指定するキーと値のペアを定義します。 定義できる別のキーと値のペアについては、このトピックの後半のセクションで説明します。
+10. 終了したら、**[OK]** を選択します。
+11. **[アプリの構成を追加する]** ブレードで、**[作成]** を選択します。
+12. 新しい構成が作成され、**[アプリの構成]** ブレードに表示されます。
 
-
-
+>[!IMPORTANT]
+>現在、Managed Browser は、自動登録に依存しています。 デバイス上の別のアプリケーションに適用するアプリの構成については、既に Intune アプリの保護ポリシーで管理されている必要があります。
 
 ## <a name="assign-the-configuration-settings-you-created"></a>作成した構成設定を割り当てる
 
-設定をユーザーの Azure AD グループに割り当てます。 そのユーザーが Managed Browser アプリをインストールしていれば、そのアプリは指定された設定で管理されます。
+設定をユーザーの Azure AD グループに割り当てます。 ユーザーが Managed Browser アプリをインストールしている場合、そのアプリは指定された設定で管理されます。
 
 1. Intune モバイル アプリケーション管理ダッシュボードの **[設定]** ブレードで、**[アプリの構成]** を選択します。
 2. アプリの構成の一覧から、割り当てる構成を選択します。
@@ -76,49 +80,72 @@ Intune Managed Browser では、[Microsoft Intune アプリケーション パ�
 4. **[ユーザー グループ]** ブレードで、アプリの構成を割り当てる Azure AD グループを選択し、**[OK]** を選択します。
 
 
+## <a name="how-to-configure-application-proxy-settings-for-the-managed-browser"></a>Managed Browser のアプリケーション プロキシ設定を構成する方法
+
+Intune Managed Browser と [Azure AD アプリケーション プロキシ]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)は、iOS および Android デバイスのユーザーに対して、次のシナリオをサポートするために一緒に使用することができます。
+
+- ユーザーがダウンロードして、Microsoft Outlook アプリにサインインします。  Intune アプリの保護ポリシーが自動的に適用されます。 保護ポリシーでは、保存されたデータを暗号化し、ユーザーが企業ファイルを管理されていないアプリまたはデバイス上の場所に転送できないようにします。 ユーザーが Outlook 内のイントラネット サイトへのリンクをクリックすると、そのリンクを別のブラウザーではなく、Managed Browser アプリ内で開くように指定することができます。
+Managed Browser は、このイントラネット サイトがアプリケーション プロキシを使用してユーザーに公開されていることを認識します。 ユーザーは、適用される多要素認証で認証するためにアプリケーション プロキシを使い、イントラネット サイトに到達する前に条件付きアクセスを使って自動的にルーティングされます。 このサイトは、ユーザーがリモートにいるときに、以前は見つけることができませんでしたが、アクセスできるようになり、Outlook のリンクが期待どおりに動作するようになりました。  
+
+- リモート ユーザーが Managed Browser アプリケーションを開き、内部 URL を使用してイントラネット サイトに移動します。 Managed Browser は、このイントラネット サイトがアプリケーション プロキシ経由でユーザーに公開されていることを認識します。 ユーザーは、適用される多要素認証で認証するためにアプリケーション プロキシを使い、イントラネット サイトに到達する前に条件付きアクセスを使って自動的にルーティングされます。
+このサイトは、ユーザーがリモートにいるときに、以前は見つけることができませんでしたが、アクセスできるようになりました。  
+
+### <a name="before-you-start"></a>アップグレードを開始する前に
+
+- 内部アプリケーションが Azure AD アプリケーション プロキシ経由で公開されていることを確認します。
+- アプリケーション プロキシを構成し、アプリケーションを公開するには、[セットアップに関するドキュメント]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)を参照してください。 
+- Managed Browser アプリの最小バージョン 1.2.0 を使用する必要があります。
+- Managed Browser アプリのユーザーは、[Intune アプリの保護ポリシー]( app-protection-policy.md)をアプリに割り当てています。
+- アプリケーション プロキシ アプリに割り当てられている自動リダイレクトのみを表示できます。
+
+#### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>ステップ 1: Outlook から Managed Browser への自動リダイレクトを有効にする
+Outlook は、アプリ保護ポリシーの [**Managed Browser に表示する Web コンテンツを制限する**] 設定を有効にして構成される必要があります。
+
+#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-managed-browser"></a>ステップ 2: Managed Browser に割り当てられたアプリ構成ポリシーを割り当てる
+この手順では、アプリ プロキシのリダイレクトを使用するように、Managed Browser アプリを構成します。 Managed Browser アプリの構成を作成する手順に従い、以下のキーと値のペアを指定します。
+
+|||
+|-|-|
+|キー|値|
+|**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**true**|
+
+
+## <a name="how-to-configure-the-homepage-for-the-managed-browser"></a>Managed Browser のホームページを構成する方法
+
+この設定では、ユーザーが Managed Browser を開始するか、新しいタブを作成したときに表示するホームページを構成することができます。 Managed Browser アプリの構成を作成する手順に従い、以下のキーと値のペアを指定します。
+
+|||
+|-|-|
+|キー|値|
+|**com.microsoft.intune.mam.managedbrowser.homepage**|有効な URL を指定します。 セキュリティ対策のため、誤った URL はブロックされます。<br>例: **https://www.bing.com**|
+
+
+## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>Managed Browser のブックマークを構成する方法
+
+この設定では、Managed Browser のユーザーが使用できるブックマークのセットを構成できます。
+
+- これらのブックマークは、ユーザーが削除または変更することはできません。
+- これらのブックマークは、リストの上部に表示されます。 ユーザーが作成したブックマークは、これらのブックマークの下に表示されます。
+
+Managed Browser アプリの構成を作成する手順に従い、以下のキーと値のペアを指定します。
+
+|||
+|-|-|
+|キー|値|
+|**com.microsoft.intune.mam.managedbrowser.bookmarks**|この構成の値は、ブックマークのリストです。 各ブックマークは、ブックマークのタイトルとブックマークの URL で構成されます。 タイトルおよび URL は、**&#124;** の文字で区切ります。<br><br>例: **Microsoft Bing&#124;https://www.bing.com**<br><br>複数のブックマークを構成するには、二重の文字 **&#124;&#124;** で各ペアを区切ります。<br><br>例: **Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com**|
+
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Managed Browser で許可する URL とブロックする URL を指定する方法
 
 Managed Browser アプリの構成を作成する手順に従い、以下のキーと値のペアを指定します。
 
-### <a name="key"></a>キー
-
-次の中から選択します。
-
-- 許可する URL を指定する場合 (ここで指定した URL にのみアクセスでき、他のサイトにはアクセスできない): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**
-- ブロックする URL を指定する場合 (他のサイトにはすべてアクセスできる): **com.microsoft.intune.mam.managedbrowser.BlockListURLs**
+|||
+|-|-|
+|キー|値|
+|次の中から選択します。<br><br>- 許可された URL を指定する場合 (ここで指定した URL のみが許可され、他のサイトにはアクセスできない): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- ブロックされた URL を指定する場合 (その他のすべてのサイトにアクセスできる): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|キーに対応する値は URL のリストです。 パイプ文字 **&#124;** によって区切られた、1 つの値として許可またはブロックする必要がある、すべての URL を入力します。<br><br>例:<br><br>-**URL1&#124;URL2&#124;URL3**<br>-**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
 
 >[!IMPORTANT]
 >両方のキーを指定しないでください。 両方のキーが同じユーザーを対象とする場合、許可のキーが最も制限の厳しいオプションとして使用されます。
 >また、会社の Web サイトなど、重要なページをブロックしないようにご注意ください。
-
-### <a name="value"></a>値
-
-キーに対応する値は URL のリストです。 許可またはブロック対象のすべての URL をパイプ **|** で区切り、単一の値として入力します。
-
-例: 
-
-- **URL1|URL2|URL3**
-- **http://*.contoso.com/*|https://*.bing.com/*|https://expenses.contoso.com**
-
-使用できる URL 形式の例について詳しくは、このトピックの参照情報セクションをご覧ください。
-
-
-## <a name="security-and-privacy-for-the-managed-browser"></a>Managed Browser のセキュリティとプライバシー
-
--   iOS デバイスでは、証明書の有効期限が切れている Web サイトや証明書が信頼されていない Web サイトにユーザーがアクセスしても、開くことができません。
-
--   ユーザーが自分のデバイスの組み込みブラウザーに対して構成した設定は、Managed Browser では使用されません。 これは、Managed Browser がこれらの設定にアクセスできないためです。
-
--   Managed Browser に関連付けられているモバイル アプリケーション管理ポリシーで **[アクセスの際にシンプルな PIN を要求する]** オプションか **[アクセスの際に会社の資格情報を要求する]** オプションが構成されている場合は、ユーザーが認証ページのヘルプ リンクを選択すると、Managed Browser ポリシーのブロック リストに追加されているかどうかに関係なく、ユーザーはすべてのインターネット サイトを閲覧することができます。
-
--   Managed Browser では、サイトへの直接のアクセスのみをブロックできます。 サイトへのアクセスに中間サービス (翻訳サービスなど) が使用されている場合は、アクセスをブロックすることができません。
-
--   認証を許可し、Intune のドキュメントにアクセスできるようにするため、**&#42;.microsoft.com** は許可リストとブロック リストの設定から除外されており、 常に許可されます。
-
-### <a name="turn-off-usage-data"></a>使用状況データをオフにする
-Microsoft は、Microsoft の製品やサービスを改善するために、Managed Browser のパフォーマンスおよび使用に関する匿名データを自動的に収集します。 ただし、ユーザーはデバイスの **[使用状況データ]** 設定を使用して、データの収集を無効にすることができます。 このデータの収集方法は制御できません。
-
-## <a name="reference-information"></a>参照情報
 
 ### <a name="url-format-for-allowed-and-blocked-urls"></a>許可される URL とブロックされる URL の形式
 許可リストとブロック リストで URL を指定するときに使用できる形式とワイルドカードについて説明します。
@@ -144,7 +171,7 @@ Microsoft は、Microsoft の製品やサービスを改善するために、Man
     |http://www.contoso.com/&#42;|www.contoso.com で始まるすべての URL と一致する|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
     |http://&#42;.contoso.com/&#42;|contoso.com の下のすべてのサブドメインに一致する|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
     |http://www.contoso.com/images|単一のフォルダーと一致する|www.contoso.com/images|www.contoso.com/images/dogs|
-    |http://www.contoso.com:80|ポート番号を使用し、単一のページと一致する|http://www.contoso.com:80||
+    |http://www.contoso.com:80|ポート番号を使用し、単一のページと一致する|http://www.contoso.com:80|
     |https://www.contoso.com|セキュリティで保護された単一のページと一致する|https://www.contoso.com|http://www.contoso.com|
     |http://www.contoso.com/images/&#42;|1 つのフォルダーおよびすべてのサブフォルダーと一致する|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
 
@@ -170,5 +197,19 @@ Microsoft は、Microsoft の製品やサービスを改善するために、Man
 
     -   http://www.contoso.com: /&#42;
 
+## <a name="security-and-privacy-for-the-managed-browser"></a>Managed Browser のセキュリティとプライバシー
+
+-   iOS デバイスでは、証明書の有効期限が切れている Web サイトや証明書が信頼されていない Web サイトにユーザーがアクセスしても、開くことができません。
+
+-   ユーザーが自分のデバイスの組み込みブラウザーに対して構成した設定は、Managed Browser では使用されません。 Managed Browser では、これらの設定にアクセスできません。
+
+-   Managed Browser に関連付けられているアプリ保護ポリシーにオプション [**アクセスの際にシンプルな PIN を要求する**] または [**アクセスの際に会社の資格情報を要求する**] を設定した場合、およびユーザーが認証ページでヘルプのリンクを選択した場合は、ポリシーのブロック リストに追加されているかどうかにかかわらず、インターネット サイトを参照できます。
+
+-   Managed Browser では、サイトへの直接のアクセスのみをブロックできます。 中間サービス (翻訳サービスなど) がサイトへのアクセスに使用される場合、そのアクセスはブロックされません。
+
+-   認証を許可し、Intune ドキュメントにアクセスするために、**&#42;.microsoft.com** は許可またはブロック リスト設定の対象から除外されます。 常に許可されます。
+
+### <a name="turn-off-usage-data"></a>使用状況データをオフにする
+Microsoft は、Microsoft の製品やサービスを改善するために、Managed Browser のパフォーマンスおよび使用に関する匿名データを自動的に収集します。 ただし、ユーザーはデバイスの **[使用状況データ]** 設定を使用して、データの収集を無効にすることができます。 このデータの収集方法は制御できません。
 
 

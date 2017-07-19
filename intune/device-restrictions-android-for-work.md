@@ -15,21 +15,18 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: ca51c413e3148039b05a9d05a9a511e7158c9a1c
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Android for Work デバイスの制限設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>仕事用プロファイル設定
-- **[仕事用プロファイルと個人プロファイル間のデータ共有]** - この設定を使用して、仕事用プロファイル内のアプリが個人プロファイル内のアプリと共有できるかどうかを制御します。 この設定によりアプリケーション内の共有操作 (Chrome ブラウザー アプリの **[共有...]**  オプションなど) を制御します。この設定はコピー/貼り付けのクリップボード動作には適用されません。 [アプリ保護ポリシー設定](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)とは異なり、デバイスの制限設定は Intune ポータルで管理され、管理対象アプリを分離するための Android for Work の仕事用プロファイル パーティションを使用します。 次の中から選択します。
+- **[仕事用プロファイルと個人プロファイル間のデータ共有]** - この設定を使用して、仕事用プロファイル内のアプリが個人プロファイル内のアプリと共有できるかどうかを制御します。 この設定は、アプリケーション内の共有アクション (たとえば、Chrome ブラウザー アプリの **[Share...]\(共有...\)** オプション など) を制御し、コピー/貼り付けのクリップボード動作には適用されません。 [アプリ保護ポリシー設定](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)とは異なり、デバイスの制限設定は Intune ポータルで管理され、管理対象アプリを分離するための Android for Work の仕事用プロファイル パーティションを使用します。 次の中から選択します。
     - **[既定の共有制限]** - これはデバイスの既定の共有動作ですが、デバイスが実行している Android のバージョンによって異なります。 既定では、個人プロファイルから仕事用プロファイルへの共有が許可されます。 また既定では、仕事用プロファイルから個人プロファイルへの共有はブロックされます。 これにより、仕事用プロファイルから個人プロファイルへのデータの共有が防止されます。 Google では、6.0 以降のバージョンを実行するデバイスで、個人プロファイルから仕事用プロファイルへのデータの共有をブロックする方法が提供されていません。   
     - **[仕事用プロファイル内のアプリで、個人プロファイルからの共有要求の処理を許可する]** - このオプションを使用して、個人プロファイルから仕事用プロファイルへの共有を許可する Android の組み込み機能を有効にすることができます。 これを有効にすると、個人プロファイル内アプリからの共有要求を仕事用プロファイル内アプリと共有できます。 これは、Android 6.0 よりも前のバージョンを実行するデバイスの既定の動作です。
     - **[Allow sharing across boundaries]\(境界を越えて共有できるようにする\)** - 仕事用プロファイルの境界を越えた双方向での共有を有効にします。 この設定を選択すると、仕事用プロファイル内のアプリと、個人プロファイル内の管理対象でないアプリとの間でデータが共有されます。 これにより、仕事用プロファイル内の管理対象アプリがデバイスの管理対象でない側のアプリと共有されるようになるため、この設定は慎重に行ってください。
@@ -80,4 +77,3 @@ ms.lasthandoff: 06/08/2017
 - **[以前のパスワードを再利用できないようにする]** - 以前のパスワードを再利用できるまでに使用する必要がある、新しいパスワードの数を入力します (**1**-**24**)。
 - **[指紋によるロック解除]** - エンド ユーザーがデバイスの指紋スキャナーを使用してロックを解除できないようにします。
 - **[Smart Lock などの信頼できるエージェント]** - 互換性のあるデバイスで Smart Lock 機能を制御できるようにします。 信頼エージェントとも呼ばれるこの電話機能では、デバイスが信頼できる場所にある場合 (デバイスが特定の Bluetooth デバイスに接続したときや、NFC タグの近くにある場合など)、デバイスのロック画面のパスワードを無効化またはバイパスすることができます。この設定を使用して、ユーザーが Smart Lock を構成することを禁止できます。
-

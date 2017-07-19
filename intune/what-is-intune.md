@@ -1,7 +1,7 @@
 ---
 title: "Azure Portal での Intune の概要"
 titleSuffix: Intune on Azure
-description: "Azure Portal での Intune の基本と、Intune を利用してデバイスを管理する方法について説明します。&quot;"
+description: "Azure Portal での Intune の基本と、Intune を利用してデバイスを管理する方法について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -14,16 +14,12 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
-ms.openlocfilehash: 49747940e60e2463db5bdd18754bdb9f1444cd6d
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
-
+ms.openlocfilehash: ae42ab64945982fedc2d6858e2f3eca8fbed334c
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/10/2017
 ---
-
-
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure Portal での Microsoft Intune の概要
 
 
@@ -37,6 +33,8 @@ Microsoft Intune は Azure Portal に含まれるようになり、これまで�
 > 既存のテナントは、新しいエクスペリエンスに移行中です。 お使いのテナントが移行される前に、Office メッセージ センターに通知が表示されます。
 >
 > 2017 年 1 月より前に作成された Intune アカウントの場合は、Apple Enrollment ワークフローが Azure で利用可能になる前に一度移行する必要があります。 移行のスケジュールはまだ発表されていません。 既存のアカウントで Azure Portal にアクセスできない場合は、試用アカウントを作成することをお勧めします。
+>
+> 潜在的な障壁の一覧については次のページをご覧ください: https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
 
 
 このライブラリでは新しいポータルに関する情報を参照でき、情報は継続的に更新されます。 内容についてご提案がございましたら、トピックのコメント欄にフィードバックをお寄せください。 ご意見をお待ちしております。
@@ -93,7 +91,7 @@ Intune 環境の[計画と設計](/intune-classic/plan-design/introduction)に�
 ### <a name="on-premises-access"></a>オンプレミスのアクセス
 [Exchange ActiveSync および Exchange On-premises へのアクセスを構成します](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
 ### <a name="users"></a>Users
-[リソースを管理し、グループに分類するデバイスのユーザーについて](user-management.md)説明します。
+[リソースを管理し、グループに分類するデバイスのユーザーについて](users-add.md)説明します。
 ### <a name="groups"></a>[グループ]
 [Intune で Azure Active Directory グループを使用する方法について説明します](groups-get-started.md)
 ### <a name="intune-roles"></a>Intune ロール
@@ -106,4 +104,3 @@ Intune 環境の[計画と設計](/intune-classic/plan-design/introduction)に�
 ## <a name="whats-new"></a>新機能
 
 [Intune の新機能をご確認ください](whats-new.md)。
-

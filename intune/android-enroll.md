@@ -1,12 +1,12 @@
 ---
 title: "Intune で Android デバイスを登録する"
 titleSuffix: Intune on Azure
-description: "Intune で Android デバイスを登録する方法について説明します。&quot;"
+description: "Intune で Android デバイスを登録する方法について説明します。\""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,12 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 6920a17d1be4ffa9ee83d2da0af6ba69996ae028
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 295315dae52662c386055747862717b85ed4b877
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-android-devices"></a>Android デバイスの登録
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -34,15 +31,13 @@ Samsung KNOX Standard を実行するデバイスが、Intune によるマルチ
 
 ## <a name="prerequisite"></a>前提条件
 
-モバイル デバイスの管理を準備するには、MDM 機関を **Microsoft Intune** に設定する必要があります。 手順については、[MDM 機関の設定](mdm-authority-set.md)に関するページを参照してください。 この項目は、モバイル デバイス管理について初めて Intune を設定するときに一度だけ設定します。したがって、これは既に設定されている可能性があります。
+モバイル デバイスの管理を準備するには、MDM 機関を **Microsoft Intune** に設定する必要があります。 手順については、[MDM 機関の設定](mdm-authority-set.md)に関するページを参照してください。 この項目は、モバイル デバイス管理について初めて Intune を設定するときに一度だけ設定します。
 
 ## <a name="set-up-android-enrollment"></a>Android の登録を設定する
 
 Intune では、既定で Android および Samsung Knox Standard デバイスの登録が許可されています。
 
-Android デバイスをブロックする場合や、個人所有の Android デバイスのみの登録をブロックする場合は、「[Set device type restrictions](enrollment-restrictions-set.md#set-device-type-restrictions)」 (デバイスの種類の制限を設定する) を参照してください。
-
-ユーザーが登録できるデバイスの最大数を設定する場合は、「[Set device limit restrictions](enrollment-restrictions-set.md#set-device-limit-restrictions)」 (デバイス数の制限を設定する) を参照してください。
+Android デバイスをブロックする場合や、個人所有の Android デバイスのみの登録をブロックする場合は、「[Set device type restrictions](enrollment-restrictions-set.md)」 (デバイスの種類の制限を設定する) を参照してください。
 
 デバイス管理を有効にするには、ユーザーは Intune ポータル サイト アプリ (Google Play から入手可能) をダウンロードし、アプリを開き、登録に関する画面の指示に従って、デバイスを登録する必要があります。 Android デバイスを管理下に置いたら、[コンプライアンス ポリシーの割り当て](compliance-policy-create-android.md)や[アプリの管理](app-management.md)などを行うことができます。
 
@@ -101,4 +96,3 @@ Android for Work の登録と管理を無効にすることもできます。 In
 
 2. **Android for Work のバインドの削除に同意する**<br>
   **[はい]** をクリックしてバインドを削除し、Intune からすべての Android for Work デバイスの登録を解除します。
-

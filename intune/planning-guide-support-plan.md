@@ -1,11 +1,11 @@
 ---
 title: "サポート計画を作成する"
-description: "この記事では、Microsoft Intune クラウドのみの設計および実装で、サポート計画を立てる方法について説明します。"
+description: "この記事では、Microsoft Intune 展開の Intune サポート計画の作成を支援します。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,17 @@ ms.assetid: b9428769-4333-4778-b677-f23dea1f74da
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d83f2c2e410d23297dad7f046f8053225c988abc
-ms.openlocfilehash: 37344319448a470afe71dbd46f1b3849407444a5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/15/2017
-
-
+ms.openlocfilehash: 87ae4378be21c81b675e847b907aca6368070ea3
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="develop-a-support-plan"></a>サポート計画を作成する
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-Intune サポート計画を立てると、より効率的に Intune に関連する問題を特定して解決し、ユーザーの全体的な Intune の使用感を改善することができます。 次に、Intune サポート計画を立てる際に考慮する必要がある事項の例を示します。
+Intune サポート計画を用意すると、Intune 関連の問題をより効果的に特定し、解決できます。 さらに、Intune の全体的な操作性が改善します。 次に、Intune サポート計画を立てる際に考慮する必要がある事項の例を示します。
 
 -   Intune のサポートを提供する担当チームはどこですか
-
--   サポート組織に複数の階層がある場合 (階層 1 ～ 3 など)、各階層はどのような Intune のサポートを担当しますか
 
 -   Intune のサポートを提供するためにどのようなプロセスを使用しますか
 
@@ -45,11 +38,11 @@ Intune サポート計画を立てると、より効率的に Intune に関連�
 
 組織には、複数階層/レベル (1 から 3) のサポートがある場合があります。 たとえば、階層 1 と階層 2 はサポート チームに属し、階層 3 には Intune の展開を担当する MDM チームのメンバーが含まれる場合があります。
 
+通常、階層 1 は第 1 レベルのサポートであり、通常、ユーザーがサポート依頼で最初に連絡する階層です。 階層 1 がエンド ユーザーの問題を解決できない場合、階層 2 にエスカレートされます。 必要であれば、階層 2 から階層 3 にエスカレートされます。 さらに、Microsoft サポートを階層 4 と考えることもできます。
+
+[Intune のサポートの詳細についてはこちら](/intune/get-support)を参照してください。
+
 ## <a name="what-is-the-support-process"></a>サポート プロセスの内容
-
-通常、階層 1 は第 1 レベルのサポートであり、通常、ユーザーがサポート依頼で最初に連絡する階層です。 階層 1 がエンド ユーザーの問題を解決できない場合、階層 2 に上申します。また、必要に応じて階層 2 は階層 3 に上申します。 さらに、Microsoft サポートを階層 4 と考えることもできます。
-
--   [Intune のサポートの詳細についてはこちら](/intune/get-support)を参照してください。
 
 運用ロールアウトの初期フェーズでは、3 つの階層すべてがブリッジまたは Skype 通話に参加するように指示することもあります。 次に、組織での IT サポート/ヘルプデスクのワークフローの実施例を示します。
 
@@ -73,7 +66,7 @@ Intune サポート計画を立てると、より効率的に Intune に関連�
 
 ## <a name="how-you-plan-to-provide-intune-support-training"></a>Intune のサポート トレーニングの計画方法
 
-IT サポート/ヘルプデスク スタッフ向けに、適切なレベルで、各サポート階層とその責任内容に合わせた Intune 技術トレーニングを用意することが重要です。 MDM チームがサポート リーダーに対してこのトレーニングを実施してから (トレーナーのトレーニング)、サポート リーダーがサポート チーム メンバーにトレーニングを実施する方法もあります。 このトレーニングの所要時間は、講義と演習を含めて一般的に 2 ～ 3 時間です。
+IT サポート/ヘルプデスク スタッフ向けに、適切なレベルで、各サポート階層とその責任内容に合わせた Intune 技術トレーニングを用意することが重要です。 Intune MDM チームがサポート リーダーに対してこのトレーニングを実施してから (トレーナーのトレーニング)、サポート リーダーがサポート チーム メンバーにトレーニングを実施する方法もあります。 このトレーニングの所要時間は、講義と演習を含めて一般的に 2 ～ 3 時間です。
 
 Intune サポート トレーニングの課題例を次に示します。
 
@@ -85,16 +78,14 @@ Intune サポート トレーニングの課題例を次に示します。
 
 -   ツールとリソース
 
--   質疑応答
+-   Q & A
 
->[!TIP]
-> 「[Additional resources](planning-guide-resources.md)」 (その他のリソース) には、Microsoft Intune の開始時にサポート チームがレビューおよび利用できる技術リソースが掲載されています。
+[Intune 文書](https://docs.microsoft.com/intune/)には、Intune 概要、詳細な機能説明、トラブルシューティング情報があります。 [Intune フォーラム](https://social.technet.microsoft.com/Forums/en-US/home)はコミュニティ基盤のリソースであり、Intune 文書にはない質問やトピックがあります。
 
 ## <a name="what-opportunities-are-there-to-involve-the-support-team-earlier"></a>初期段階でサポート チームが参加できる機会
 
-IT サポート/ヘルプデスク スタッフが Intune 展開計画やパイロット運用の初期段階に参加することは、組織にとって大きな利点があります。 サポート スタッフはソリューションに触れ、貴重な経験を得ることができます。 また、IT サポート/ヘルプデスク スタッフが組織の本格的な運用ロールアウトのサポートに備えることもできます。
+IT サポート/ヘルプデスク スタッフが Intune 展開計画やパイロット運用の初期段階に参加することは、Intune 展開の改善につながり、エンド ユーザーは効率的に Intune を導入できます。 初期段階から関与する場合、サポート スタッフに Intune を公開し、貴重な体験を始めから与えることになります。 IT サポート/ヘルプデスク スタッフが組織の本格的な運用ロールアウトのサポートに備えることができます。
 
-## <a name="next-section"></a>次のセクション
+## <a name="next-step"></a>次の手順
 
 次のセクションは、[Intune の設計](planning-guide-design.md)に関するガイダンスです。
-

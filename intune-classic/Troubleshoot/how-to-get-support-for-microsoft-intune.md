@@ -5,7 +5,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 04/12/2016
+ms.date: 06/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,149 +14,65 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: d58c4ead1edf85480a43a9ceec0ed8a36af79673
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: b65cd5855ee2610adaa54aecf8c6fc1ab3061833
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune のサポートを受ける方法
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Microsoft サポートは、Microsoft Intune に世界的な技術、購入前、請求、およびサブスクリプションのサポートを提供しています。 有料サブスクリプションとトライアル サブスクリプションについて、オンラインと電話によるサポートを利用できます。 オンライン テクニカル サポートは、英語と日本語で提供されています。 電話によるサポートとオンライン課金サポートは、他の言語でも利用できます。
-
-Intune のサポートについては、Configuration Manager で使用する場合、無料です。 Premier サポートを契約されているお客様は、手順に関する質問 (たとえば、Intune 機能を構成する方法) の場合、料金が発生します。
+Microsoft サポートは、Microsoft Intune に世界的な技術、購入前、請求、およびサブスクリプションのサポートを提供しています。 有料サブスクリプションと試用版サブスクリプションについて、オンラインと電話によるサポートを利用できます。 オンライン テクニカル サポートは、英語と日本語で提供されています。 電話によるサポートとオンライン課金サポートは、他の言語でも利用できます。
 
 >[!IMPORTANT]
-> Intune と連携し、Microsoft 製ではない製品 (SaaSwedo、Cisco、Lookout などの製品) のテクニカル サポートについては、まずその製品の提供元に連絡し、構成が正しいことを確認してから、Intune サポートのケースを開いてください。
+> Intune と連携し、Microsoft 製ではない製品 (Saaswedo、Cisco、Lookout などの製品) のテクニカル サポートについては、まずその製品の提供元に連絡してください。 Intune サポート要求を開始する前に、その他の製品が正しく構成されていることを確認します。
 
-## <a name="find-help-without-opening-a-support-ticket"></a>サポート チケットを開かずにヘルプを見つける
+## <a name="create-an-online-support-ticket"></a>オンライン サポート チケットの作成
 
-サポート チケットを作成する前に、次のリソースで回答や情報を確認してください。 また、[Microsoft Intune の一般的なトラブルシューティングのヒント](/intune-classic/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)も確認してください。
+IT 管理者は、次の手順を使用して、Azure Portal からサポート チケットを提出できます。
 
-### <a name="microsoft-intune-technet-forums"></a>Microsoft Intune TechNet フォーラム
+1. Azure Portal (https://portal.azure.com) に Intune の管理者資格情報でログオンし、ポータルの右上隅にある **[?]** の アイコンを選択し、**[ヘルプとサポート]** を選択して、[Azure のヘルプとサポート](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)のページに移動します。
 
-Microsoft の技術スタッフに質問をお送りいただくか、ディスカッションにご参加ください。 回答や情報は、[Microsoft Intune TechNet フォーラム](https://social.technet.microsoft.com/Forums/home)で検索できます。
+    ![Azure Portal のヘルプとサポートで [ヘルプとサポート] のリンクが強調表示された [?] マーク リンクのスクリーンショット](./media/azure-get-support.png)
 
-![Microsoft Intune TechNet フォーラム](./media/technet-forum-for-support.png)
+2. Azure のヘルプとサポートのページで、**[新しいサポート要求]** を選択します。
 
-### <a name="get-started-with-the-forum"></a>フォーラムの利用
+    ![[新しいサポート要求] のリンクが強調表示された Azure のヘルプとサポートのページのスクリーンショット](media/azure-support-ticket-link.png)
+3. Intune のほとんどのテクニカル サポートの問題では、**[基本]** ブレードで、次のように選択します。
+    - **[問題の種類]**: **[技術]**
+    - **[サービス]**: **[Microsoft Intune]**
+    - **[サポート プラン]**: **[テクニカル サポート - 含む]** (Intune の技術的な問題については、サポートは無料です。)
 
-1. フォーラム ページで、[フォーラム] ボックスに「Microsoft Intune」と入力し、一覧から選択します。<br>
-![Intune フォーラムの選択コントロール](./media/forum-select-intune.png)
-2. 選択したフォーラムの一覧に Microsoft Intune が表示されます。<br>
-![フォーラム コントロールで選択されている Intune](./media/forum-selected-intune.png)
+    >[!IMPORTANT]
+    >Intune のサポートについては、Configuration Manager で使用する場合、無料です。 Premier サポート サービスの詳細を確認するには、「[Description of Services](https://www.microsoft.com/en-us/microsoftservices/services-list.aspx)」(サービスの説明) のセクション 5.3.3「Advisory Services」(アドバイザリー サービス) を参照してください。
 
-### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Microsoft Intune UserVoice 製品フィードバック サイト
+    **[次へ]** をクリックして続行します。
+4. **[問題]** ブレードには、その要求を問題の内容に適した専門家が対処できるように、次のオプションを選択します。
+    - **[重大度]**
+    - **[問題の種類]**
+    - **[カテゴリ]**
 
-Microsoft による Intune の改善に役立つフィードバックはありますか。 Microsoft Intune の [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas) フィードバック サイトにアイデアを追加してください。 他のユーザーが UserVoice に追加したアイデアに投票することもできます。
+ これらの詳細を入力することで、**[関連するヘルプ]** が表示されるため、チケットを発行せずに問題が解決できる場合があります。
 
-![Microsoft Intune UserVoice フィードバック ページ](./media/intune-uservoice-feedback-page.png)
+ ![問題の項目が入力され、問題に応じた解決策が表示されている Azure のヘルプとサポートのページのスクリーンショット](./media/support-need-solutions.png)
 
-## <a name="create-a-support-ticket"></a>サポート チケットを作成する
+ 問題の調査と解決に役立てるため、次の情報を入力してください。
+    -   **詳細**
+    - **日付**
+    - **時刻**
+    - 補足データ
 
-セルフヘルプ リソースに回答が見つからない場合は、オンライン サポート チケットを作成できます。 より良いサービスを提供するため、**各サポート チケットに含める問題は 1 つに制限してください**。 その理由を次に示します。
+    **[次へ]** をクリックして続行します。
+5. このサポート要求の **[連絡先情報]** を入力します。 Microsoft サポートからの連絡は、この情報を使用します。
+6. **[作成]** を選択して、サポート要求を提出します。
 
-- 支援を提供するサポート エンジニアは、特定の分野を専門としている場合が多く、問題の解決に適した分野の専門家を見つける方がより簡単に解決します。
-- エンジニアリング チームは多くのインシデントが発生している製品領域の作業を優先することができます。
-- 難しい問題は適切なリソースにエスカレーションする方がより簡単に解決できます。
+>[!IMPORTANT]
+>請求やサブスクリプションの質問がある場合は、ケースを開いて [Office 管理センター](https://portal.office.com/Support/SupportEntry.aspx)からサポートを受けることができます。
 
-サポート チケットを作成する前に、[サポート インシデントの定義](#definition-of-a-support-incident)を確認してください。
-
-### <a name="steps-to-create-an-online-support-ticket"></a>オンライン サポート チケットを作成する手順
-
-1.  Intune 資格情報を使用して [Office 365 管理センター](https://portal.office.com)にサインインします。
-
-    Premier サポートを契約されている場合は、代わりに [Premier サポート ページ](https://support.microsoft.com/premier/contacts)で Intune サポート チケットを開く必要があります。
-
-    >[!NOTE]
-    >
-    >Premier サポートを契約されているお客様は [Premier サポート ページ](https://support.microsoft.com/premier/contacts)で Intune サポート チケットを開く必要があります。
-
-2.  **[管理者]** タイルを選択します。
-3.  左側の **[サポート]** で、**[サポート]** を選んでチケットを開きます。
-
-    ![新しい Intune サポート チケットを開く](../media/support-open-ticket.png)
-
-    >[!NOTE]
-    >  100 以下のライセンスの O365 アカウントを持つお客様には、このメッセージが表示されます。 表示される場合は、「[別の方法でサポート チケットを作成する](#create-a-support-ticket-with-alternate-methods)」を参照してください。
-
-    > ![別の Intune サポート](../media/alternate-support-ui.png)
-
-    -   請求、ライセンス、アカウントの問題については、**[請求と製品に関する情報]** を選択します。
-
-    -   その他の Intune に関する問題については、**[モバイル デバイス管理]** を選択します。
-
-    > [!NOTE]
-    > すべてのカテゴリを表示するには、一覧の一番下にある **[詳細]** を選択します。
-
-3.  手順に従ってリクエストを開きます。
-
-### <a name="steps-to-create-a-support-ticket-with-alternate-methods"></a>別の方法でサポート チケットを作成する手順
-
-Office 365 管理センターのサポート ページが次のように表示される場合は、以下の手順に従います。
-
-![別の Intune サポート](../media/alternate-support-ui.png)
-
-
-1. [**Need help**]\(ヘルプが必要) を選択します。
-2. テキスト ボックスに問題に関する説明を入力して、**[ヘルプの表示]** を選択します。
-
-    ![別の Intune サポート チケット](../media/support-need-help.png)
-
-3. 推奨オンライン リソースを確認するか、**[Let us call you]** (Microsoft からの電話サポート) を選択して、Microsoft サポートから電話を受けます。
-
-## <a name="get-phone-support"></a>電話サポートを受ける
-国および地域別のサポート電話番号、サポート時間、各地域でのサポート言語の一覧については、「[Microsoft Intune のサポートの電話番号](contact-assisted-phone-support-for-microsoft-intune.md)」を参照してください。
-
-## <a name="track-your-support-requests"></a>サポート リクエストの追跡
-1.  Intune 管理者資格情報を使用して [Office 365 管理センター](https://portal.office.com)にサインインします。
-2.  **[管理者]** タイルを選択します。
-3.  左側の **[サポート]** で **[サービス要求]** を選択します。 要求を確認できます。
-
-要求に対する初回の応答は、問題の重大度によって異なります。 重大度が最も高い問題の場合、Professional サポートをご利用のお客様に対する初回の応答は、2 時間以内に行われます。 Premier サポートをご契約のお客様の場合、応答はサポート契約の内容によって変わります。 次のようなケースでは、**重大度が最も高い**と言えます。
-
-- 1 つまたは複数のサービスにアクセスできないか使用不能です。
-- 運用、操作、または展開の期日が重大な影響を受けているか、運用または収益性に重大な影響が出ると予想されます。
-- 複数のユーザーまたはサービスが影響を受けています。
-
-重大度が中程度の場合、Professional サポートをご利用のお客様に対しては、初回の応答が 4 時間以内に行われます。 Premier サポートをご契約のお客様の場合、応答はサポート契約の内容によって変わります。 次のようなケースでは、**重大度が中程度**だと言えます。
-
-- サービスは使用できますが、通常の機能とは異なります。
-- ビジネスに中程度の影響があり、営業時間中に処理できます。
-- 1 人のユーザー、顧客、またはサービスが部分的に影響を受けています。
-
-その他の問題の場合、Professional サポートをご利用のお客様に対する初回の応答は、8 時間以内に行われます。 Premier サポートをご契約のお客様の場合、応答はサポート契約の内容によって変わります。 次のようなケースでは、重大度が最小限だと言えます。
-
-- ビジネスへの影響は最小限です。
-- 問題は重要ですが、顧客向けの現在のサービスや生産性に大きな影響はありません。
-- 1 人のユーザーに部分的な中断が発生していますが、許容できる回避策があります。
-
-> [!NOTE]
-> **Microsoft System Center Configuration Manager** または **Microsoft System Center Endpoint Protection** を使用している場合: Configuration Manager または Endpoint Protection のテクニカル サポートについては、パートナーに問い合わせるか、[Microsoft System Center Configuration Manager](https://docs.microsoft.com/sccm/) および [Endpoint Protection](https://technet.microsoft.com/library/hh508836.aspx) に関するドキュメントにアクセスして、豊富なセルフヘルプ資料を参照してください。 オンラインまたは電話でサポート リクエストを開始することもできます。
->
-> System Center Configuration Manager または System Center Endpoint Protection のテクニカル サポートは有料です。または既存のライセンスまたは Premire サポート契約の利用分としてカウントされます。
-
-## <a name="find-support-for-volume-licensing"></a>ボリューム ライセンスのサポートを探す
-ボリューム ライセンス プログラムで Microsoft からライセンスを購入済みの場合、サポートの問い合わせ先は次のとおりです。
-
--   ライセンスとキーの確認に関連するサポートの場合は、[ボリューム ライセンス サービス センター](http://go.microsoft.com/fwlink/p/?LinkID=282016)を参照してください。
-
--   請求に関する質問については、[請求とサブスクリプションの管理のサポート](http://support.microsoft.com/oas/default.aspx?prid=15371)を参照してください。
-
--   ボリューム ライセンスの一般的な情報については、[ボリューム ライセンス](http://go.microsoft.com/fwlink/p/?LinkID=282015)を参照してください。
-
-## <a name="definition-of-a-support-incident"></a>サポート インシデントの定義
-
-サポート インシデントでは、1 つのサポートが必要な問題と、それを解決するために必要な作業が定義されています。 1 つのサポートの問題はさらに下位の問題に分けることはできません。 下位の問題が特定できる場合、その下位の問題は、それぞれ個別のインシデントと見なされます。 問題によっては、解決のために複数の連絡先やオフラインでの調査が必要になる場合があります。 こうしたソリューションを提供するために費やされた時間は、料金に含まれません。
-
-"障害対応" のサポートは Microsoft Intune および Office 365 のモバイル デバイス管理のサブスクリプションに含まれているため、追加のサポート インシデントを作成しても、追加料金は発生しません。
-
-サポート エンジニアから追加の問題についてサポート インシデントを作成するように求められた場合は、それがすべてのユーザーにとって役立つ情報であるということをご理解ください。 世界規模のサポートの提供について、ご理解とご協力をいただきありがとうございます。
-
-インシデントごとの料金および深刻度については、「[プロフェッショナル サポート オプション](https://support.microsoft.com/gp/offerprophone)」を参照してください。
-
+## <a name="additional-resources"></a>その他のリソース
+- [Microsoft Intune のサポートの電話番号](contact-assisted-phone-support-for-microsoft-intune.md)
+- [ボリューム ライセンス サービス センター](http://go.microsoft.com/fwlink/p/?LinkID=282016)
+- [課金とサブスクリプション管理のサポート](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&rs=en-US&ad=US)
+- [ボリューム ライセンス](http://go.microsoft.com/fwlink/p/?LinkID=282015)

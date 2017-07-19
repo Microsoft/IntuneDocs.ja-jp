@@ -1,7 +1,7 @@
 ---
 title: "iOS デバイスの登録 - Apple Configurator - セットアップ アシスタント"
 titleSuffix: Intune on Azure
-description: "Apple Configurator を使用して、セットアップ アシスタントで会社所有の iOS デバイスを登録する方法について説明します。&quot;"
+description: "Apple Configurator を使用して、セットアップ アシスタントで会社所有の iOS デバイスを登録する方法について説明します。\""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,15 +15,12 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 326de9b86b80789a6ac19bb96ff6e4ca97789830
 ms.openlocfilehash: 1d74fbcebfe89bbafc545d11dd6316cb602db8ee
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/17/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Apple Configurator による iOS デバイスの登録
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -69,7 +66,7 @@ iOS デバイスの登録を設定する前に、以下の前提条件を満た�
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-以下の手順を使用して、[セットアップ アシスタントで Apple Configurator を使用して会社所有の iOS デバイスを登録する](apple-configurator-setup-assistant-enroll-ios.md)必要がある場合に、シリアル番号を Intune に追加します。 シリアル番号は 1 つずつ追加することも、シリアル番号が含まれるコンマ区切り値 (CSV) ファイルをアップロードすることもできます。 追加したシリアル番号にはプロファイルを割り当てることができます。 プロファイルには、デバイスに適用する特定の管理設定が含まれています。
+以下の手順を使用して、[セットアップ アシスタントで Apple Configurator を使用して企業所有の iOS デバイスを登録する](apple-configurator-setup-assistant-enroll-ios.md)必要がある場合に、シリアル番号を Intune に追加します。 シリアル番号は 1 つずつ追加することも、シリアル番号が含まれるコンマ区切り値 (CSV) ファイルをアップロードすることもできます。 追加したシリアル番号にはプロファイルを割り当てることができます。 プロファイルには、デバイスに適用する特定の管理設定が含まれています。
 
 iOS デバイスの他の登録方法については、[Intune での iOS デバイスの登録方法の選択](enrollment-method-choose-ios.md)に関するページを参照してください。
 
@@ -162,4 +159,3 @@ iOS デバイスを Apple Configurator で直接登録する場合は、デバ�
 ## <a name="how-users-install-and-use-the-company-portal-on-their-devices"></a>デバイスにポータル サイト アプリをインストールして使用する方法
 
 ユーザー アフィニティが構成されたデバイスでは、ポータル サイト アプリをインストールして実行し、アプリをダウンロードしてデバイスを管理できます。 ユーザーは、デバイスを受け取った後、セットアップ アシスタントを完了してポータル サイト アプリをインストールするために、次に示す追加の手順を完了する必要があります。
-

@@ -34,6 +34,9 @@
     - **MDM 探索 URL**
     - **MDM 準拠 URL**
 
+    > [!IMPORTANT]
+    > 自動の MDM 登録と MAM の両方が有効になっているグループのメンバーであるユーザーが自分の個人用デバイスで社内参加しようとすると、MAM のみが有効になります。 
+
 6. **[保存]** を選択します。
 
 既定では、サービスに対して 2 要素認証は有効になっていません。 ただし、デバイスを登録するときには 2 要素認証をお勧めします。 このサービスの 2 要素認証を要求する前に、Azure Active Directory で 2 要素認証プロバイダーを構成し、多要素認証用にユーザー アカウントを構成する必要があります。 「[クラウドでの Azure Multi-Factor Authentication Server の概要](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud)」を参照してください。

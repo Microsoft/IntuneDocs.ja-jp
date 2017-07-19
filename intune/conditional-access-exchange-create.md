@@ -1,7 +1,7 @@
 ---
 title: "Exchange On-Premises の条件付きアクセス ポリシーを作成して割り当てる"
 titleSuffix: Intune on Azure
-description: "Intune で Exchange On-premises 条件付きアクセスと従来の Exchange Online Dedicated を構成する方法について説明します&quot;"
+description: "Intune で Exchange On-premises 条件付きアクセスと従来の Exchange Online Dedicated を構成する方法について説明します\""
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,15 +14,12 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 61434f104ccba9e1d37a4845e38b75ac858bce63
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: b72dbe27b52be187a907392aea5a1803fb36e4d3
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Microsoft Intune で Exchange On-Premises と従来の Exchange Online Dedicated の条件付きアクセス ポリシーを作成して割り当てる方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -85,7 +82,7 @@ Windows 8.1 以降用のネイティブ **メール** アプリケーション (
 
 4. **[Intune]** を選ぶと、**Intune ダッシュボード**が表示されます。
 
-5.  **[条件付きアクセス]** を選びます。
+5. **[オンプレミス アクセス]** を選びます。
 
 6. **[On-premises]** ブレードには、条件付きアクセス ポリシーの状態と、その影響を受けるデバイスが表示されます。
 

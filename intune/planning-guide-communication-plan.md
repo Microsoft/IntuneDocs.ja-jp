@@ -1,11 +1,11 @@
 ---
 title: "ロールアウト コミュニケーション計画の作成"
-description: "この記事では、Microsoft Intune クラウドのみの設計および実装で、ロールアウトの情報伝達計画を立てる方法について説明します。"
+description: "この記事は、Intune を展開するためのロールアウト コミュニケーション計画を作成する場合に役立ちます。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/13/2016
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,15 @@ ms.assetid: 393ebe75-d001-485a-b81c-6361c8b5e6ee
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
-ms.openlocfilehash: 1443f8b8ca45fbf4880d0ebf57e5cd2657f8c261
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
-
+ms.openlocfilehash: 20f5d8e578046db34813c5a5bd14ce03bb4f56bc
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="develop-a-rollout-communication-plan"></a>ロールアウト コミュニケーション計画の作成
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-前のセクションでは、Intune 管理の対象となる組織グループ、Intune ロールアウトの期間、登録オプションなどの特定について説明しました。 次に、Intune ロールアウトの情報伝達計画を立てる必要があります。 Intune ロールアウトの情報伝達計画には、次の 4 つの領域を含める必要があります。
+適切な変更管理が行えるかどうかは、今後の変更に関する明確で有益な情報伝達にかかっています。 Intune の展開を円滑に進めるには、ロールアウト コミュニケーション計画に次の 4 つの領域を含める必要があります。
 
 -   伝達する情報
 
@@ -43,13 +38,15 @@ ms.lasthandoff: 06/13/2017
 
 伝達する情報は、Intune ロールアウト プロセスのどの段階で伝達するかによって異なります。 組織によっては、Intune ロールアウトのキックオフ、登録前、登録後の順に、組織グループとユーザーに段階的に伝達する場合があります。 各段階で伝達される可能性がある情報の種類について説明します。
 
-**キックオフ段階:** Intune プロジェクト自体について概要を説明する広範な情報伝達。Intune の概要、Intune を採用する理由 (組織とユーザーにとっての利点など)、展開とロールアウトに関する作業の計画概要などの領域の情報があります。
+**キックオフ段階** <br/>Intune プロジェクト自体を紹介する広範な情報伝達。 Intune の概要や Intune を採用する理由 (組織やユーザーにとっての利点) などの質問に答え、展開とロールアウトに関する計画の概要を説明します。
 
-**登録前段階:** Intune と補助的なサービス (Office、Outlook、OneDrive など) に関する情報、組織グループとユーザーが Intune を受け取る予定に関するユーザー リソースと具体的なタイムラインを含む広範な情報伝達。
+**登録前段階**<br/> Intune と補助的なサービス (Office、Outlook、OneDrive など) に関する情報、組織グループとユーザーが Intune を受け取る予定に関するユーザー リソースと具体的なタイムラインを含む広範な情報伝達。
 
-**登録段階:** Intune を受け取る予定の組織グループ/ユーザーを対象にした情報伝達。Intune を受け取る準備が整ったことをユーザーに知らせ、登録手順と、サポートや質問の窓口に関する情報を伝えます。
+**登録段階**<br/> Intune を受け取る予定の組織グループ/ユーザーを対象にした情報伝達。 Intune を受け取る準備が整ったことをユーザーに知らせ、登録手順と、サポートや質問の窓口に関する情報を伝えます。
 
-**登録後段階:** Intune に登録された組織グループ/ユーザーを対象にした情報伝達。ユーザーに役立つ追加のリソースを提供し、登録時と登録後の使用感に関するフィードバックを収集します。
+**登録後段階**<br/> Intune に登録された組織グループ/ユーザーを対象とする情報伝達。 ユーザーに役立つ追加のリソースを提供し、登録時と登録後の使用感に関するフィードバックを収集します。
+
+こちらの [エンドユーザー登録ガイド](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) もお役立てください。 そのまま使用することも、組織に合わせて変更することもできます。
 
 ## <a name="communication-delivery-methods"></a>情報の配信方法
 
@@ -65,7 +62,9 @@ Intune ロールアウトに関する情報を対象となる組織グループ�
 
 ## <a name="communications-timeline"></a>情報伝達のタイムライン
 
-伝達する内容と情報伝達方法を決めたら、次の手順は、情報を伝達するタイミングと相手など、情報伝達のタイムラインを決めることです。 たとえば、最初の Intune プロジェクト キックオフの情報伝達は、組織全体または一部のみを対象にして、Intune ロールアウトを開始する数週間前に行います。 次に、Intune ロールアウト スケジュールに合わせて組織グループとユーザーに段階的に伝えます。 次の例は、Intune ロールアウトの情報伝達の大まかな計画のサンプルです。
+伝達する必要がある内容と使用する情報伝達方法を決めたら、次の手順は、情報を伝達するタイミングと相手など、情報伝達のタイムラインを決めることです。
+
+たとえば、最初の Intune プロジェクト キックオフの情報伝達は、組織全体または一部のみを対象にして、Intune ロールアウトを開始する数週間前に行います。 次に、Intune ロールアウト スケジュールに合わせて組織グループとユーザーに段階的に伝えます。 次の例は、Intune ロールアウトの情報伝達の大まかな計画のサンプルです。
 
   | **情報伝達計画** | **7 月** | **8 月** | **9 月** | **10 月** |
 |:---:|:---:|:---:|:---:|:---:|
@@ -80,7 +79,8 @@ Intune ロールアウトに関する情報を対象となる組織グループ�
 | 段階 5 | IT 部門 | 営業/マーケティング | 小売 | 人事、財務、幹部 |
 | 登録後電子メール | 第 4 週 | 第 4 週 | 第 4 週 | 第 4 週 |
 
+[上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) してコミュニケーション計画を作成することができます。
+
 ## <a name="next-section"></a>次のセクション
 
 次のセクションは、[サポート計画](planning-guide-support-plan.md)を立てる場合のガイダンスです。
-

@@ -12,15 +12,12 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 852997044cef22901e8133d76f327e98b2a1ee72
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-enrollment-of-android-for-work-devices"></a>Android for Work デバイスの登録を有効にする
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -33,7 +30,7 @@ Android for Work デバイスの管理を有効にするには、Android for Wor
 **Microsoft Intune** を[モバイル デバイス管理機関に設定](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8#enable-device-enrollment)して、MDM の設定を行うことにより、モバイル デバイス管理を準備します (この作業をまだ行っていない場合)。
 
 2. **Android for Work のバインディングを構成する**<br>
-   Intune 管理者として [Microsoft Intune 管理コンソール](https://manage.microsoft.com)を開き、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[Android for Work]** の順に選択し、**[構成]** をクリックして Google Play の Android for Work Web サイトを開きます。 この操作で、ブラウザーの新しいタブが開きます。
+    Intune 管理者として [Microsoft Intune 管理コンソール](https://manage.microsoft.com)を開き、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[Android for Work]** の順に選択し、 **[構成]** をクリックして Google Play の Android for Work Web サイトを開きます。 この操作で、ブラウザーの新しいタブが開きます。
 
 3. **Google にログインする**<br>
    Google のサインイン ページで、このテナントのすべての Android for Work 管理タスクに関連付ける Google アカウントを入力します。 これは、お客様の組織の IT 管理者が Play for Work コンソールでアプリを管理および公開するときに共有する Google アカウントです。
@@ -60,8 +57,7 @@ Android for Work の登録と管理を無効にすることもできます。 In
 ### <a name="how-to-unbind-an-android-for-work-account"></a>Android for Work アカウントのバインドを解除する方法
 
 1. **Android for Work のバインドを解除する**<br>
-   管理者として [Microsoft Intune 管理コンソール](https://manage.microsoft.com)を開き、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[Android for Work]** の順に選択し、**[バインドの解除]** をクリックします。
+    管理者として [Microsoft Intune 管理コンソール](https://manage.microsoft.com)を開き、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[Android for Work]** の順に選択し、**[バインドの解除]** をクリックします。
 
 2. **Android for Work のバインドの削除に同意する**<br>
   **[はい]** をクリックしてバインドを削除し、Intune からすべての Android for Work デバイスの登録を解除します。
-

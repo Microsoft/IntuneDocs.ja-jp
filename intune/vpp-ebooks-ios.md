@@ -15,14 +15,12 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1911c8a2460a98218027c40a26d81f1ca4c482f5
 ms.openlocfilehash: e23c40eb4c13fd0d2593742c72086fc943fe2b54
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Volume Purchase Program で購入した iOS 電子ブックを Microsoft Intune で管理する方法
 
 
@@ -74,7 +72,7 @@ iOS ブックの複数のライセンスを購入するには、[ビジネス向
 ## <a name="to-assign-a-volume-purchased-app"></a>ボリューム購入アプリを割り当てるには
 
 1. **[電子ブック]** ワークロードで、**[管理]** > **[すべての電子ブック]** を選択します。
-2. ブックの一覧ブレードで、割り当てるブックを選択し、**[...]** > **[グループの割り当て]** の順に選択します。
+2. ブックの一覧ブレードで、割り当てるブックを選択し、**[...]** を選択します。 >  **[グループの割り当て]** の順に選択します。
 3. **[<*ブック名*> - 割り当てられたグループ]** ブレードで、**[管理]** > **[割り当てられたグループ]** の順に選択します。
 4. **[グループの割り当て]** を選択し、**[グループの選択]** ブレードで、ブックを割り当てる Azure AD ユーザー グループを選択します。 現時点では、デバイス グループはサポートされていません。
 **[必須]** の割り当て操作を選択します。 
@@ -83,7 +81,6 @@ iOS ブックの複数のライセンスを購入するには、[ビジネス向
 ## <a name="next-steps"></a>次のステップ
 
 ブックの割り当てを監視するのに役立つ情報については、[アプリを監視する方法](apps-monitor.md)に関する記事をご覧ください。
-
 
 
 
