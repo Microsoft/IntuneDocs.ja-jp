@@ -14,15 +14,12 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: e164d8caab5c3b04c75cf401abef443769034221
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 0ba1f12d762a6288fc2e7a3bfdae637f8ae13a94
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>Intune での条件付きアクセスの一般的な使用方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -102,9 +99,7 @@ Cisco ISE、Aruba Clear Pass、Citrix NetScaler などのパートナーと統�
 
 ユーザーが会社の Wi-Fi や VPN リソースにアクセスしようとすると、デバイスが管理されているか、Intune デバイス コンプライアンス ポリシーに準拠しているかどうかに基づいて、アクセスが許可または拒否されます。
 
-![ネットワークアクセス制御に基づいた条件付きアクセス (CA)](./media/ca-intune-common-ways-2.png)
-
--   ネットワーク アクセス制御に基づいた条件付きアクセスについて詳しくは、[こちら](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-networks)をご覧ください。
+-   NAC と Intune の統合について詳しくは、[こちら](network-access-control-integrate.md)をご覧ください。
 
 ### <a name="conditional-access-based-on-device-risk"></a>デバイスのリスクに基づいた条件付きアクセス
 
@@ -153,4 +148,3 @@ Intune と Azure Active Directory が連携することで、管理対象アプ�
 [Intune で On-Premises Exchange Connector をインストールする方法](https://docs.microsoft.com/intune/exchange-connector-install)
 
 [Exchange On-Premises の条件付きアクセス ポリシーを作成する方法](conditional-access-exchange-create.md)
-

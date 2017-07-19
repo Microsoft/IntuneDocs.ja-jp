@@ -1,12 +1,12 @@
 ---
 title: "Intune で iOS デバイスの登録方法を選択する"
 titleSuffix: Intune on Azure
-description: "Microsoft Intune で iOS デバイスの登録を設定する方法について説明します。&quot;"
+description: "Microsoft Intune で iOS デバイスの登録を設定する方法について説明します。\""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/01/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,12 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 40a300df7a3df23cb698ef933954c357ed19278b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 092f582cf30210858bd8cdd3879edfa873523ccb
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="choose-how-to-enroll-ios-and-macos-devices"></a>iOS と macOS デバイスの登録方法を選択する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,7 +33,7 @@ ms.lasthandoff: 06/08/2017
 
 ## <a name="user-owned-ios-devices-byod"></a>ユーザー所有の iOS デバイス (BYOD)
 
-個人の BYOD (Bring Your Own Device) デバイスを登録する場合は、ユーザーはアプリ ストアから iOS 向けポータル サイト アプリをダウンロードし、そのアプリに示されている登録手順に従います。 登録後、ユーザーは社内ネットワークに接続し、ドメインまたは Azure Active Directory に参加して、会社のリソースにアクセスできるようになります。 BYOD を有効にするための唯一の要件は [Apple Push Notification サービス証明書](apple-mdm-push-certificate-get.md)です。 また、個人所有の iOS デバイスの登録をブロックできます。 その手順については、「[Set device type restrictions](enrollment-restrictions-set.md#set-device-type-restrictions)」 (デバイスの種類の制限を設定する) をご覧ください。
+個人の BYOD (Bring Your Own Device) デバイスを登録する場合は、ユーザーはアプリ ストアから iOS 向けポータル サイト アプリをダウンロードし、そのアプリに示されている登録手順に従います。 登録後、ユーザーは社内ネットワークに接続し、ドメインまたは Azure Active Directory に参加して、会社のリソースにアクセスできるようになります。 BYOD を有効にするための唯一の要件は [Apple Push Notification サービス証明書](apple-mdm-push-certificate-get.md)です。 また、個人所有の iOS デバイスの登録をブロックできます。 その手順については、「[Set device type restrictions](enrollment-restrictions-set.md)」 (デバイスの種類の制限を設定する) をご覧ください。
 
 ## <a name="user-owned-macos-devices-byod"></a>ユーザー所有の macOS デバイス (BYOD)
 
@@ -45,8 +42,8 @@ macOS デバイスの登録を有効にすることができます。 macOS の�
 ## <a name="enrollment-program-with-apple"></a>Apple での登録プログラム
 Apple では、デバイスの登録と管理インフラストラクチャを含むデバイス購入プログラムを提供しています。 これらのプログラムのいずれかで購入したデバイスは、Intune 管理にデバイスのシリアル番号を割り当てることにより、"無線" で一括登録できます。
 
-- **Device Enrollment Program (DEM)** - Apple による組織と企業向けのデバイス登録プログラムです。 詳細については、「[Device Enrollment Program を使用して iOS デバイスを登録する](device-enrollment-program-enroll-ios.md)」をご覧ください。
-- **Apple School Manager (ASM)** - Apple による学校向けのデバイス登録プログラムです。 詳細については、「[Enable iOS device enrollment with Apple School Manager (Apple School Manager での iOS デバイス登録の有効化)](apple-school-manager-set-up-ios.md)」をご覧ください。
+- **Device Enrollment Program (DEM)** - Apple による組織と企業向けのデバイス登録プログラムです。 詳細については、「[Device Enrollment Program を使用して iOS デバイスを登録する](device-enrollment-program-enroll-ios.md)」を参照してください。
+- **Apple School Manager** - Apple による学校向けのデバイス登録プログラムです。 詳細については、「[Apple School Manager での iOS デバイス登録の有効化](apple-school-manager-set-up-ios.md)」をご覧ください。
 
 ## <a name="apple-configurator"></a>Apple Configurator
 
@@ -62,4 +59,3 @@ DEP では、DEP を通じて購入したデバイスに "無線で" 登録プ�
 
 ## <a name="use-the-device-enrollment-manager-dem"></a>デバイス登録マネージャー (DEM) の使用
 デバイス登録マネージャーとは、最大 1,000 台のデバイスを登録および管理できる汎用ユーザー アカウントです。 DEM で管理されたデバイスではユーザー アフィニティを持てないため、そのデバイスに所有者が存在することはありません。 Intune ユーザーに DEM アクセス許可を与えることで、これらの機能を付与します。 DEM ユーザーが登録するデバイスごとに、1 つの Intune ライセンスが使用されます。 詳細については、「[デバイス登録マネージャーを使用してデバイスを登録する](device-enrollment-manager-enroll.md)」を参照してください。
-

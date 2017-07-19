@@ -1,6 +1,6 @@
 ---
 title: "Intune を使用した Skycure コネクタ"
-titleSuffix: Intune Azure preview
+titleSuffix: Intune on Azure
 description: "Skycure コネクタを Intune と統合します。"
 keywords: 
 author: andredm7
@@ -15,15 +15,12 @@ ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d21f440ee6806b545d2b346559d6516993a9cbf
-ms.openlocfilehash: 701f5ffdce058ab0659659074f114c2a65a9cb79
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/14/2017
-
-
+ms.openlocfilehash: c55fa5b3ea86127648850ae7374107ca65db9764
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense コネクター
 
 Microsoft Intune に統合されたモバイル脅威保護ソリューションである Skycure によって実行されるリスク評価に基づき、条件付きアクセスを利用し、モバイル デバイスから会社のリソースへのアクセスを制御できます。 リスクは、Skycure を実行するデバイスから収集される製品利用統計情報に基づいて以下のとおり評価されます。
@@ -122,13 +119,10 @@ Intune と Skycure の統合は次の手順で行います。
 
 2.  [Skycure iOS アプリ構成ポリシーをダウンロードする](skycure-ios-app-configuration-policy-download.md)
 
-3.  [Skycure アプリ、Microsoft Authenticator、iOS アプリ構成ポリシーを追加する](skycure-microsoft-authenticator-app-ios-app-configuration-policy-add.md)
+3.  [Skycure アプリ、Microsoft Authenticator、iOS アプリ構成ポリシーを追加して割り当てる](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-4.  [Skycure アプリ、Microsoft Authenticator、iOS アプリ構成ポリシーを展開する](skycure-microsoft-authenticator-app-ios-app-configuration-policy-deploy.md)
+4.  [Skycure と Intune の統合をセットアップする](skycure-mtd-connector-integration.md)
 
-5.  [Skycure と Intune の統合をセットアップする](skycure-mtd-connector-integration.md)
+5.  [Intune で Skycure Mobile Threat Defense を有効にする](mtd-connector-enable.md)
 
-6.  [Intune で Skycure Mobile Threat Defense を有効にする](skycure-mtd-connector-enable.md)
-
-7.  [Intune で Skycure Mobile Threat Defense デバイスのコンプライアンス ポリシーを作成する](skycure-device-compliance-policy-create.md)
-
+6.  [Intune で Skycure Mobile Threat Defense デバイスのコンプライアンス ポリシーを作成する](mtd-device-compliance-policy-create.md)

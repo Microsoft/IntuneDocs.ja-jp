@@ -1,7 +1,7 @@
 ---
 title: "Apple Configurator のシリアル番号を追加する"
 titleSuffix: Intune on Azure
-description: "Apple Configurator を使用して企業所有の iOS デバイスにシリアル番号を追加する方法について説明します。&quot;"
+description: "Apple Configurator を使用して企業所有の iOS デバイスにシリアル番号を追加する方法について説明します。\""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -15,15 +15,12 @@ ms.assetid: d408aa38-7d1e-40df-9067-246e53f6e26f
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 689008f278e676ce0bab075c6ad6b54748e56313
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="add-apple-configurator-serial-numbers"></a>Apple Configurator のシリアル番号を追加する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -76,4 +73,3 @@ Intune を使用すると、Azure Portal の 2 つの異なる場所からプロ
 **シリアル番号の状態を表示するには**
 
 **[Apple Configurator のシリアル番号]** ブレードで、状態を確認するシリアル番号を選択し、**[状態]** 項目を確認します。
-

@@ -14,15 +14,12 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 04b1785c0b75d4668879488e5221d8b8c2794834
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-conditional-access"></a>条件付きアクセスに関するトラブルシューティング
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -148,24 +145,10 @@ Exchange Connector ログで **Get next コマンド**の例外を確認し、�
 2.  キー OnPremisesExchangeConnectorService を使用して、TraceSourceLine を探します。
 3.  **SourceLevel** ノードの値を、以下のように **Warning ActivityTracing** (既定値) から **Verbose ActivityTracing** に変更します。
 
-    <TraceSourceLine>
-          <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>
-          <Value xsi:type="TraceSource">
-            <SourceLevel>All</SourceLevel>
-            <Listeners>
-              <Listener>
-                <ListenerType>CircularTraceListener</ListenerType>
-                <SourceLevel>Verbose ActivityTracing</SourceLevel>
-                <FileSizeQuotaInBytes>10000000</FileSizeQuotaInBytes>
-                <FileName>Microsoft\Windows Intune Exchange Connector\Logs\Connector.svclog</FileName>
-                <FileQuota>30</FileQuota>
-              </Listener>
-            </Listeners>
-          </Value>
+    <TraceSourceLine> <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key> <Value xsi:type="TraceSource"> <SourceLevel>All</SourceLevel> <Listeners> <Listener> <ListenerType>CircularTraceListener</ListenerType> <SourceLevel>Verbose ActivityTracing</SourceLevel> <FileSizeQuotaInBytes>10000000</FileSizeQuotaInBytes> <FileName>Microsoft\Windows Intune Exchange Connector\Logs\Connector.svclog</FileName> <FileQuota>30</FileQuota> </Listener> </Listeners> </Value>
     </TraceSourceLine>
 
 
 
 ### <a name="next-steps"></a>次のステップ
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
-

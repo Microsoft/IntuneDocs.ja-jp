@@ -1,12 +1,12 @@
 ---
 title: "Intune を使用した iOS および macOS デバイス向けの AirPrint 設定"
 titleSuffix: Intune on Azure
-description: "Intune を使用して、iOS デバイスと macOS デバイスを AirPrint 対応プリンターに自動接続する方法について説明します。&quot;"
+description: "Intune を使用して、iOS デバイスと macOS デバイスを AirPrint 対応プリンターに自動接続する方法について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,12 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: b4bbddaedffe1ec171d77654af3e0e79ae23df09
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 743eb9a71efe1a5ea18b15312fdd4fe684f0ff07
+ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/05/2017
 ---
-
 # <a name="airprint-settings-for-ios-and-macos-devices"></a>iOS および macOS デバイス向けの AirPrint 設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -34,7 +31,7 @@ ms.lasthandoff: 06/08/2017
 
 iOS デバイス ユーザーが既知の AirPrint プリンターに印刷できるようにするには、この手順を実行して AirPrint 情報を AirPrint ペイロードに追加します。
 
-1. Airprint プリンターと同じローカル ネットワーク (サブネット) に接続している Mac で、(**/アプリケーション/ユーティリティ** フォルダから) ターミナルを開きます。
+1. AirPrint プリンターと同じローカル ネットワーク (サブネット) に接続している Mac で、(**/アプリケーション/ユーティリティ** フォルダーから) ターミナルを開きます。
 2. ターミナルで「**ippfind**」と入力し、Enter キーを押します。
 3. コマンドによって返されたプリンター情報をメモします (例: **ipp://myprinter.local.:631/ipp/port1**)。 この情報の最初の部分がプリンター名で、後の部分がリソース パスです。
 4. ターミナルで「**ping myprinter.local**」と入力し、Enter キーを押します。
@@ -49,3 +46,7 @@ iOS デバイス ユーザーが既知の AirPrint プリンターに印刷で�
 
 コンマ区切り値 (.csv) ファイルからプリンターの一覧をインポートしたり、一覧をエクスポートすることもできます。
 
+
+## <a name="next-steps"></a>次のステップ
+
+選択したグループにデバイス プロファイルを割り当てることができます。 詳しくは、「[デバイス プロファイルを割り当てる方法](device-profile-assign.md)」をご覧ください。

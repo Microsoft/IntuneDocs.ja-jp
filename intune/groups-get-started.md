@@ -1,5 +1,5 @@
 ---
-title: "Intune でのグループの概要"
+title: "Azure Portal での Intune クラシック グループ"
 titleSuffix: Intune on Azure
 description: "Intune Azure Portal でのグループの新機能について説明します"
 keywords: 
@@ -13,16 +13,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 98809446cefde3e949b620ca8ca801822e6f2759
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 3e7cf02ed43507eabdf6038940058f94eb09b0fa
+ms.sourcegitcommit: d1ad84edf4f03cb4c11fe55131556b43fc3a4500
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/05/2017
 ---
-
-# <a name="get-started-with-groups"></a>グループの概要
+# <a name="intune-classic-groups-in-the-azure-portal"></a>Azure Portal での Intune クラシック グループ
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -38,7 +35,7 @@ Azure AD セキュリティ グループは、ユーザーとデバイスの両�
 以前に使用できた Intune グループの機能は一部 Azure AD では利用できません。
 
 - Intune の**グループに属していないユーザー** グループと**グループに属していないデバイス** グループは利用できなくなります。
-- グループから**特定のメンバーを除外**するオプションは、Azure Portal にはありません。 ただし、Azure AD セキュリティ グループと高度なルールを使用して、この動作を複製できます。 たとえば、肩書きに "Assistant" が付いているユーザーを除く、営業部内のすべてのユーザーをセキュリティ グループに含める高度なルールを作成する場合は、次の高度なルールを使用できます。
+- グループから**特定のメンバーを除外**するオプションは、Azure Portal にはありません。 ただし、Azure AD セキュリティ グループと高度なルールを使用して、この動作を複製できます。 たとえば、肩書きに "Assistant" が付いているグループを除く、営業部内のすべてのユーザーをセキュリティ グループに含める高度なルールを作成する場合は、次の高度なルールを使用できます。
 
   `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`
 - Intune コンソールの **Exchange ActiveSync で管理されているすべてのデバイス** グループは、Azure AD に移行されていません。 ただし、EAS で管理されたデバイスに関する情報には、Azure Portal から引き続きアクセスできます。
@@ -46,9 +43,9 @@ Azure AD セキュリティ グループは、ユーザーとデバイスの両�
 ## <a name="how-to-get-started"></a>開始する方法
 
 - Azure AD のセキュリティ グループとそのしくみの詳細については、次のトピックを参照してください。
-    -  [Azure Active Directory グループを利用したリソースへのアクセス管理](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/)
-    -  [Azure Active Directory でのグループの管理](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/)
-    -  [属性を利用した高度なルールの作成](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)
+    -  [Azure Active Directory グループを利用したリソースへのアクセス管理](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/)
+    -  [Azure Active Directory でのグループの管理](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+    -  [属性を利用した高度なルールの作成](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/)
 -  グループを作成する必要がある管理者が、**Intune サービス管理者** Azure AD ロールに追加されていることを確認します。 Azure AD サービス管理者ロールには**グループの管理**アクセス許可がありません。
 -  Intune グループで **[特定のメンバーを除外]** オプションを使用している場合は、除外を必要としないようにグループを再設計できるかどうか、またはビジネス ニーズを満たすために高度なルールが必要かどうかを判断してください。
 
@@ -56,7 +53,7 @@ Azure AD セキュリティ グループは、ユーザーとデバイスの両�
 ## <a name="what-happened-to-intune-groups"></a>Intune グループに対する移行処理の内容
 グループをクラシック Intune ポータルから Azure Portal の Intune に移行すると、次のルールが適用されます。
 
-| Intune のグループ|Azure AD のグループ|
+| クラシック Intune でのグループ|Azure AD でのグループ|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
 |静的なユーザー グループ|静的な Azure AD セキュリティ グループ|
 |動的なユーザー グループ|Azure AD セキュリティ グループの階層構造を持つ静的な Azure AD セキュリティ グループ|
@@ -87,5 +84,4 @@ Azure AD セキュリティ グループは、ユーザーとデバイスの両�
 
 ## <a name="what-happens-to-policies-and-apps-you-previously-deployed"></a>以前に展開されているポリシーおよびアプリに対する処理
 
-ポリシーとアプリは、移行前と同じように、引き続きグループに展開されます。 ただし、これらのグループの管理は、従来の Intune コンソールではなく、Azure ポータルから行うようになります。
-
+ポリシーとアプリは、移行前と同じように、引き続きグループに展開されます。 ただし、これらのグループの管理は、従来の Intune コンソールではなく、Azure Portal から行うようになります。

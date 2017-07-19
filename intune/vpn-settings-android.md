@@ -1,7 +1,7 @@
 ---
 title: "Android デバイス向けの Intune VPN 設定"
 titleSuffix: Intune on Azure
-description: "Android デバイスでの VPN 接続の構成に使用できる Intune 設定について説明します。&quot;"
+description: "Android デバイスでの VPN 接続の構成に使用できる Intune 設定について説明します"
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,15 +15,12 @@ ms.assetid: 16c056ca-320e-4107-ad03-a0cf96c28885
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 326de9b86b80789a6ac19bb96ff6e4ca97789830
-ms.openlocfilehash: 46c889b2ea08ff328c08793542b6e303a1634131
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/17/2017
-
-
+ms.openlocfilehash: 69def564b145e58c2d5b58183e4044ae1997091d
+ms.sourcegitcommit: d1ad84edf4f03cb4c11fe55131556b43fc3a4500
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/05/2017
 ---
-
 # <a name="vpn-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune での Android デバイス向けの VPN 設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -67,4 +64,3 @@ Intune 管理者は、次のプラットフォーム向けの VPN 設定を構�
     - **Pulse Secure**
 
 - **分割トンネリング** - 他のトラフィックがインターネットを使用しているときに、特定の Web トラフィックが VPN 接続を使用できるようにします。 VPN がアクティブな場合にすべてのトラフィックで VPN を使用するには、この設定を無効にします。
-

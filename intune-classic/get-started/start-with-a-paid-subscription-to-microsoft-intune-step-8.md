@@ -14,15 +14,12 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 64c6eb58246ac3ad232c1b8ee89d12a83e7e1784
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-enrollment-for-mobile-devices"></a>モバイル デバイスの登録を有効にする
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -33,8 +30,7 @@ Intune でモバイル デバイス管理をセットアップするには、ま
 
 ## <a name="enable-device-enrollment"></a>デバイスの登録を可能にする
 
-1. **Intune をモバイル デバイス管理機関にする**
-    [Intune 管理コンソール](https://manage.microsoft.com/)で、**[管理者]** > **[モバイル デバイス管理]** の順に選択し、**[タスク]** で **[MDM 機関の設定]** を選択します。  
+1. **Intune をモバイル デバイス管理機関にする** [Intune 管理コンソール](https://manage.microsoft.com/)で、**[管理者]** > **[モバイル デバイス管理]** の順に選択し、**[タスク]** で **[MDM 機関の設定]** を選択します。  
 
 2. MDM 機関ダイアログ ボックスで **[はい]** をクリックします。
 
@@ -70,4 +66,3 @@ Intune では、会社の要件に応じて、さまざまな方法でデバイ�
 
 >[!div class="step-by-step"]
 >[&larr; **デバイスを登録する**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)     [**構成後のタスク** &rarr;](.\post-configuration-tasks.md)  
-

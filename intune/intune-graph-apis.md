@@ -5,7 +5,7 @@ keywords: "intune graphapi c# powershell アクセス許可の役割"
 author: lleonard-msft
 manager: angrobe
 ms.author: alleonar
-ms.date: 06/12/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,15 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6f2f0b610b900bb41a3c2bd7416b6db28434a155
-ms.openlocfilehash: 64b476151d03978f30e15ab1743ae6e63d7a69ff
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/13/2017
-
+ms.openlocfilehash: 4ff36855e7a20aa7696444416d8993f9be62cbe5
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-graph-api"></a>Azure AD を使用して Intune Graph API にアクセスする方法
 
-[Microsoft Graph API](https://developer.microsoft.com/en-us/graph/) が Microsoft Intune に対応し、固有の API とアクセス許可の役割を利用できるようになりました。  Graph API は、認証とアクセスの制御に Azure Active Directory (Azure AD) を使用します。  
+[Microsoft Graph API](https://developer.microsoft.com/graph/) が Microsoft Intune に対応し、固有の API とアクセス許可の役割を利用できるようになりました。  Graph API は、認証とアクセスの制御に Azure Active Directory (Azure AD) を使用します。  
 Intune Graph API へのアクセスには以下が必要です。
 
 - アプリケーション ID と、
@@ -45,13 +44,13 @@ Intune Graph API へのアクセスには以下が必要です。
 
 - C# および PowerShell の Intune Graph API 認証例を提供します。
 
-- 複数のテナントをサポートする方法について説明します。 
+- 複数のテナントをサポートする方法について説明します。
 
 詳細については、次を参照してください。
 
-- [OAuth 2.0 と Azure Active Directory を使用した Web アプリケーションへのアクセスの承認](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code)
-- [Azure AD 認証の概要](https://www.visualstudio.com/en-us/docs/integrate/get-started/auth/oauth)
-- [Azure Active Directory とアプリケーションの統合](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications)
+- [OAuth 2.0 と Azure Active Directory を使用した Web アプリケーションへのアクセスの承認](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code)
+- [Azure AD 認証の概要](https://www.visualstudio.com/docs/integrate/get-started/auth/oauth)
+- [Azure Active Directory とアプリケーションの統合](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 - [OAuth 2.0 について知る](https://oauth.net/2/)
 
 ## <a name="register-apps-to-use-graph-api"></a>Graph API を使用するアプリを登録する
@@ -66,21 +65,21 @@ Graph API を使用するアプリを登録するには、次の作業を行い�
 
 2.  メニューで、**[Azure Active Directory]** &gt; **[アプリの登録]** の順に選択します。
 
-    <img src="./media/app-registration-manage.png" width="239" height="276" alt="The App registrations menu command" />
+    <img src="./media/azure-ad-app-reg.png" width="157" height="170" alt="The App registrations menu command" />
 
 3.  **[新しいアプリケーションの登録]** を選択して新しいアプリケーションを作成するか、または既存のアプリケーションを選択します。  (既存のアプリケーションを選択した場合は、次の手順をスキップします。)
 
-4.  **[作成]** ブレードで、次を指定します。 
+4.  **[作成]** ブレードで、次を指定します。
 
     1.  アプリケーションの **[名前]**\(ユーザーがサインインするときに表示されます\)。
 
     2.  **[アプリケーションの種類]** と **[リダイレクト URI]** の値。
 
-        これらは要件によって異なります。 たとえば Azure AD [Authentication Library](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) を使用している場合、**[アプリケーションの種類]** は `Native` に、**[リダイレクト URI]** は `urn:ietf:wg:oauth:2.0:oob` に設定します。
+        これらは要件によって異なります。 たとえば Azure AD [Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) を使用している場合、**[アプリケーションの種類]** は `Native` に、**[リダイレクト URI]** は `urn:ietf:wg:oauth:2.0:oob` に設定します。
 
-        <img src="media/app-registration-redirect.png" width="355" height="232" alt="The Redirect URI value" />
+        <img src="media/azure-ad-app-new.png" width="209" height="140" alt="New app properties and values" />
 
-        詳細については、「[Azure AD の認証シナリオ](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios)」をご覧ください。
+        詳細については、「[Azure AD の認証シナリオ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)」をご覧ください。
 
 5.  [アプリケーション] ブレードで、次の作業を行います。
 
@@ -88,17 +87,17 @@ Graph API を使用するアプリを登録するには、次の作業を行い�
 
     2.  **[設定]** &gt; **[API アクセス]** &gt; **[必要なアクセス許可]** の順に選択します。
 
-    <img src="media/app-registration-req-perms.png" width="554" height="217" alt="The Required permissions setting" />
+    <img src="media/azure-ad-req-perm.png" width="483" height="186" alt="The Required permissions setting" />
 
 6.  **[必要なアクセス許可]** ブレードで、**[追加]** &gt; **[API アクセスの追加]** &gt; **[API を選択します]** の順に選択します。
 
-    <img src="media/app-registration-graph-api.png" width="558" height="165" alt="The Microsoft Graph setting" />
+    <img src="media/azure-ad-add-graph.png" width="436" height="140" alt="The Microsoft Graph setting" />
 
 7.  **[API を選択します]** ブレードで、**[Microsoft Graph]** &gt; **[選択]** の順に選択します。  **[アクセスの有効化]** ブレードが開き、アプリケーションで使用できるアクセス許可スコープが一覧表示されます。
 
-    <img src="media/aad-auth-role-permissions.png" width="479" height="293" alt="Intune Graph API permission scopes" />
+    <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
-    関連する名前の左側にチェックを入れ、アプリに必要な役割を選択します。  Intune に固有のアクセス許可スコープの詳細については、「[Intune permission scopes (Intune のアクセス許可スコープ)](#user-content-intune-permission-scopes)」をご覧ください。  Graph API の他のアクセス許可スコープの詳細については、「[Microsoft Graph のアクセス許可のリファレンス](https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference)」をご覧ください。
+    関連する名前の左側にチェックを入れ、アプリに必要な役割を選択します。  Intune に固有のアクセス許可スコープの詳細については、「[Intune permission scopes (Intune のアクセス許可スコープ)](#user-content-intune-permission-scopes)」をご覧ください。  Graph API の他のアクセス許可スコープの詳細については、「[Microsoft Graph のアクセス許可のリファレンス](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)」をご覧ください。
 
     最善の結果を得るには、アプリケーションの実装に必要な最小限の役割を選択します。
 
@@ -112,7 +111,7 @@ Graph API を使用するアプリを登録するには、次の作業を行い�
 
     初めてアプリケーションを実行すると、選択した役割を実行できるアクセス許可をアプリに付与するように求められます。
 
-    <img src="media/app-registration-grant-perms.png" width="512" height="232" alt="The Grant permissions button" />
+    <img src="media/azure-ad-grant-perm.png" width="351" height="162" alt="The Grant permissions button" />
 
 - テナントの外部ユーザーがアプリを使用できるようにします。  (これは通常、複数のテナント/組織をサポートするパートナーにのみ必要です。)  
 
@@ -120,7 +119,7 @@ Graph API を使用するアプリを登録するには、次の作業を行い�
 
     1. [アプリケーション] ブレードで **[マニフェスト]** を選択すると、**[マニフェストの編集]** ブレードが開きます。
 
-    <img src="media/app-registration-other-tenants.png" width="531" height="168" alt="The Edit manifest blade" />
+    <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
 
     2. `availableToOtherTenants` 設定の値を `true` に変更します。
 
@@ -133,24 +132,24 @@ Azure AD と Graph API では、アクセス許可スコープを使用して企
 アクセス許可スコープ (_OAuth スコープ_とも呼ばれます) は、特定の Intune エンティティとそのプロパティへのアクセスを制御します。 このセクションでは、Intune Graph API の機能に対するアクセス許可スコープの概要について説明します。
 
 詳細については、次をご覧ください。
-- [Azure AD 認証](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
-- [アプリケーションのアクセス許可スコープ](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes)
+- [Azure AD 認証](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
+- [アプリケーションのアクセス許可スコープ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
 Graph API へのアクセス許可を付与する場合は、次のスコープを指定して Intune の機能へのアクセスを制御できます。次の表に、Intune Graph API のアクセス許可スコープをまとめています。  1 番目の列には Azure Portal に表示される機能名を示し、2 番目の列にはアクセス許可スコープ名を掲載しています。
 
 _[アクセスを有効にする]_ 設定 | スコープ名
 :--|:--
-__Microsoft Intune デバイスでユーザーに影響を与えるリモート操作を実行する (プレビュー)__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#user-content-mgd-po)
-__Microsoft Intune デバイスの読み取りおよび書き込み (プレビュー)__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
-__Microsoft Intune デバイスの読み取り (プレビュー)__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
-__Microsoft Intune RBAC の設定の読み取りおよび書き込み (プレビュー)__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
-__Microsoft Intune RBAC の設定の読み取り (プレビュー)__ | [DeviceManagementRBAC.Read.All](#rac=ro)
-__Microsoft Intune アプリの読み取りおよび書き込み (プレビュー)__ | [DeviceManagementApps.ReadWrite.All](#app-rw)
-__Microsoft Intune アプリの読み取り (プレビュー)__ | [DeviceManagementApps.Read.All](#app-ro)
-__Microsoft Intune のデバイスの構成とポリシーの読み取りおよび書き込み (プレビュー)__ | [DeviceManagementConfiguration.ReadWrite.All](#cfg-rw)
-__Microsoft Intune のデバイスの構成とポリシーの読み取り (プレビュー)__ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
-__Microsoft Intune の構成の読み取りおよび書き込み (プレビュー)__ | [DeviceManagementServiceConfiguration.ReadWrite.All](#svc-rw)
-__Microsoft Intune の構成の読み取り (プレビュー)__ | [DeviceManagementServiceConfiguration.Read.All](#svc-ra)
+__Microsoft Intune デバイスでユーザーに影響を与えるリモート操作を実行する__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#user-content-mgd-po)
+__Microsoft Intune デバイスの読み取りおよび書き込み__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
+__Microsoft Intune デバイスの読み取り__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
+__Microsoft Intune RBAC の設定の読み取りおよび書き込み__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
+__Microsoft Intune RBAC の設定の読み取り__ | [DeviceManagementRBAC.Read.All](#rac=ro)
+__Microsoft Intune アプリの読み取りおよび書き込み__ | [DeviceManagementApps.ReadWrite.All](#app-rw)
+__Microsoft Intune アプリの読み取り__ | [DeviceManagementApps.Read.All](#app-ro)
+__Microsoft Intune のデバイスの構成とポリシーの読み取りおよび書き込み__ | [DeviceManagementConfiguration.ReadWrite.All](#cfg-rw)
+__Microsoft Intune のデバイスの構成とポリシーの読み取り__ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
+__Microsoft Intune の構成の読み取りおよび書き込み__ | [DeviceManagementServiceConfig.ReadWrite.All](#svc-rw)
+__Microsoft Intune の構成の読み取り__ | [DeviceManagementServiceConfig.Read.All](#svc-ra)
 
 表は、Azure Portal に表示される順序で設定を一覧表示しています。 次のセクションでは、スコープについてアルファベット順に説明します。
 
@@ -158,7 +157,7 @@ __Microsoft Intune の構成の読み取り (プレビュー)__ | [DeviceManagem
 
 ### <a name="app-ro"></a>DeviceManagementApps.Read.All
 
-- **[アクセスを有効にする]** 設定: __Microsoft Intune アプリの読み取り (プレビュー)__
+- **[アクセスを有効にする]** 設定: __Microsoft Intune アプリの読み取り__
 
 - 次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。
     - モバイル アプリ
@@ -168,7 +167,7 @@ __Microsoft Intune の構成の読み取り (プレビュー)__ | [DeviceManagem
 
 ### <a name="app-rw"></a>DeviceManagementApps.ReadWrite.All
 
-- **[アクセスを有効にする]** 設定: __Microsoft Intune アプリの読み取りおよび書き込み (プレビュー)__
+- **[アクセスを有効にする]** 設定: __Microsoft Intune アプリの読み取りおよび書き込み__
 
 - __DeviceManagementApps.Read.All__ と同じ操作を許可します。
 
@@ -181,7 +180,7 @@ __Microsoft Intune の構成の読み取り (プレビュー)__ | [DeviceManagem
 
 ### <a name="cfg-ro"></a>DeviceManagementConfiguration.Read.All
 
-- **[アクセスを有効にする]** 設定: __Microsoft Intune のデバイスの構成とポリシーの読み取り (プレビュー)__
+- **[アクセスを有効にする]** 設定: __Microsoft Intune のデバイスの構成とポリシーの読み取り__
 
 - 次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。
     - デバイス構成
@@ -190,7 +189,7 @@ __Microsoft Intune の構成の読み取り (プレビュー)__ | [DeviceManagem
 
 ### <a name="cfg-ra"></a>DeviceManagementConfiguration.ReadWrite.All
 
-- **[アクセスを有効にする]** 設定: __Microsoft Intune のデバイスの構成とポリシーの読み取りおよび書き込み (プレビュー)__
+- **[アクセスを有効にする]** 設定: __Microsoft Intune のデバイスの構成とポリシーの読み取りおよび書き込み__
 
 - __DeviceManagementConfiguration.Read.All__ と同じ操作を許可します。
 
@@ -201,7 +200,7 @@ __Microsoft Intune の構成の読み取り (プレビュー)__ | [DeviceManagem
 
 ### <a name="mgd-po"></a>DeviceManagementManagedDevices.PrivilegedOperations.All
 
-- **[アクセスを有効にする]** 設定: __Microsoft Intune デバイスでユーザーに影響を与えるリモート操作を実行する (プレビュー)__
+- **[アクセスを有効にする]** 設定: __Microsoft Intune デバイスでユーザーに影響を与えるリモート操作を実行する__
 
 - 管理されたデバイスへの次のリモート操作を許可します。
     - インベントリから削除
@@ -215,7 +214,7 @@ __Microsoft Intune の構成の読み取り (プレビュー)__ | [DeviceManagem
 
 ### <a name="mgd-ro"></a>DeviceManagementManagedDevices.Read.All
 
-- **[アクセスを有効にする]** 設定：__Microsoft Intune デバイスの読み取り (プレビュー)__
+- **[アクセスを有効にする]** 設定: __Microsoft Intune デバイスの読み取り__
 
 - 次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。
     - 管理されたデバイス
@@ -226,7 +225,7 @@ __Microsoft Intune の構成の読み取り (プレビュー)__ | [DeviceManagem
 
 ### <a name="mgd-rw"></a>DeviceManagementManagedDevices.ReadWrite.All
 
-- **[アクセスを有効にする]** 設定: __Microsoft Intune デバイスの読み取りおよび書き込み (プレビュー)__
+- **[アクセスを有効にする]** 設定: __Microsoft Intune デバイスの読み取りおよび書き込み__
 
 - __DeviceManagementManagedDevices.Read.All__ と同じ操作を許可します。
 
@@ -241,7 +240,7 @@ __Microsoft Intune の構成の読み取り (プレビュー)__ | [DeviceManagem
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All
 
-- **[アクセスを有効にする]** 設定: __Microsoft Intune RBAC の設定の読み取り (プレビュー)__
+- **[アクセスを有効にする]** 設定: __Microsoft Intune RBAC の設定の読み取り__
 
 - 次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。
     - ロールの割り当て
@@ -250,7 +249,7 @@ __Microsoft Intune の構成の読み取り (プレビュー)__ | [DeviceManagem
 
 ### <a name="rac-rw"></a>DeviceManagementRBAC.ReadWrite.All
 
-- **[アクセスを有効にする]** 設定: __Microsoft Intune RBAC の設定の読み取りおよび書き込み (プレビュー)__
+- **[アクセスを有効にする]** 設定: __Microsoft Intune RBAC の設定の読み取りおよび書き込み__
 
 - __DeviceManagementRBAC.Read.All__ と同じ操作を許可します。
 
@@ -258,9 +257,9 @@ __Microsoft Intune の構成の読み取り (プレビュー)__ | [DeviceManagem
     - ロールの割り当て
     - ロールの定義
 
-### <a name="svc-ro"></a>DeviceManagementServiceConfiguration.Read.All
+### <a name="svc-ro"></a>DeviceManagementServiceConfig.Read.All
 
-- **[アクセスを有効にする]** 設定: __Microsoft Intune の構成の読み取り (プレビュー)__
+- **[アクセスを有効にする]** 設定: __Microsoft Intune の構成の読み取り__
 
 - 次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。
     - デバイスの登録
@@ -274,11 +273,11 @@ __Microsoft Intune の構成の読み取り (プレビュー)__ | [DeviceManagem
     - ブランド化
     - Mobile Threat Defense
 
-### <a name="svc-rw"></a>DeviceManagementServiceConfiguration.ReadWrite.All
+### <a name="svc-rw"></a>DeviceManagementServiceConfig.ReadWrite.All
 
-- **[アクセスを有効にする]** 設定: __Microsoft Intune の構成の読み取りおよび書き込み (プレビュー)__
+- **[アクセスを有効にする]** 設定: __Microsoft Intune の構成の読み取りおよび書き込み__
 
-- DeviceManagementServiceConfiguration.Read.All と同じ操作を許可します。
+- DeviceManagementServiceConfig.Read.All と同じ操作を許可します。
 
 - また、アプリでは Intune の次の機能を構成できます。
     - デバイスの登録
@@ -298,17 +297,17 @@ __Microsoft Intune の構成の読み取り (プレビュー)__ | [DeviceManagem
 
 それぞれの例で、少なくとも前述のアクセス許可スコープ `DeviceManagementManagedDevices.Read.All` を持つアプリケーション ID を指定する必要があります。
 
-いずれかの例をテストすると、次のような HTTP ステータス 403 (禁止されています) のエラーが表示されることがあります。 
+いずれかの例をテストすると、次のような HTTP ステータス 403 (禁止されています) のエラーが表示されることがあります。
 
 ``` javascript
 {
   "error": {
     "code": "Forbidden",
-    "message": "Application is not authorized to perform this operation - Operation ID " + 
-       "(for customer support): 00000000-0000-0000-0000-000000000000 - " + 
-       "Activity ID: cc7fa3b3-bb25-420b-bfb2-1498e598ba43 - " + 
-       "Url: https://example.manage.microsoft.com/" + 
-       "Service/Resource/RESTendpoint?" + 
+    "message": "Application is not authorized to perform this operation - Operation ID " +
+       "(for customer support): 00000000-0000-0000-0000-000000000000 - " +
+       "Activity ID: cc7fa3b3-bb25-420b-bfb2-1498e598ba43 - " +
+       "Url: https://example.manage.microsoft.com/" +
+       "Service/Resource/RESTendpoint?" +
        "api-version=2017-03-06 - CustomApiErrorPhrase: ",
     "innerError": {
       "request-id": "00000000-0000-0000-0000-000000000000",
@@ -324,14 +323,14 @@ __Microsoft Intune の構成の読み取り (プレビュー)__ | [DeviceManagem
 
 - テナントの資格情報は、管理機能をサポートしている。
 
-- 表示されているサンプルと同様のコードを使用している。 
+- 表示されているサンプルと同様のコードを使用している。
 
 
 ### <a name="authenticate-azure-ad-in-c"></a>Azure AD の認証 (C\#)
 
-この例では、C# を使用して、Intune アカウントに関連付けられているデバイスの一覧を取得する方法を説明します。 
+この例では、C# を使用して、Intune アカウントに関連付けられているデバイスの一覧を取得する方法を説明します。
 
-1.  Visual Studio を起動して、新しい Visual C# コンソール アプリ (.NET Framework) プロジェクトを作成します。 
+1.  Visual Studio を起動して、新しい Visual C# コンソール アプリ (.NET Framework) プロジェクトを作成します。
 
 2.  プロジェクトの名前を入力し、必要に応じて他の詳細情報を入力します。
 
@@ -340,7 +339,7 @@ __Microsoft Intune の構成の読み取り (プレビュー)__ | [DeviceManagem
 3.  ソリューション エクスプローラーを使用して、プロジェクトに Microsoft ADAL NuGet パッケージを追加します。
 
     1.  ソリューション エクスプローラーを右クリックします。
-    2.  **[NuGet パッケージの管理...]**  &gt; **[参照]** の順に選択します。
+    2.  **[NuGet パッケージの管理...]**  &gt; **[参照]** を選択します。
     3.  `Microsoft.IdentityModel.Clients.ActiveDirectory` を選択して、**[インストール]** を選択します。
 
     <img src="media/aad-auth-cpp-install-package.png" width="624" height="458" alt="Selecting the Azure AD identity model module" />
@@ -362,7 +361,7 @@ __Microsoft Intune の構成の読み取り (プレビュー)__ | [DeviceManagem
         Uri redirectUri = new Uri("urn:ietf:wg:oauth:2.0:oob");
         AuthenticationContext context = new AuthenticationContext(authority);
         AuthenticationResult result = await context.AcquireTokenAsync(
-            "https://graph.microsoft.com", 
+            "https://graph.microsoft.com",
             applicationId, redirectUri,
             new PlatformParameters(PromptBehavior.Auto));
         return result.CreateAuthorizationHeader();
@@ -435,7 +434,7 @@ namespace IntuneGraphExample
 
 ### <a name="authenticate-azure-ad-powershell"></a>Azure AD の認証 (PowerShell)
 
-次の PowerShell スクリプトでは、認証のために AzureAD PowerShell モジュールを使用します。  詳細については、「[Azure Active Directory PowerShell Version 2 (Azure Active Directory PowerShell バージョン 2)](https://docs.microsoft.com/en-us/powershell/azure/install-adv2?view=azureadps-2.0)」と「[Intune PowerShell examples (Intune PowerShell の例)](https://github.com/microsoftgraph/powershell-intune-samples)」をご覧ください。
+次の PowerShell スクリプトでは、認証のために AzureAD PowerShell モジュールを使用します。  詳細については、「[Azure Active Directory PowerShell Version 2 (Azure Active Directory PowerShell バージョン 2)](https://docs.microsoft.co/powershell/azure/install-adv2?view=azureadps-2.0)」と「[Intune PowerShell examples (Intune PowerShell の例)](https://github.com/microsoftgraph/powershell-intune-samples)」をご覧ください。
 
 この例では、`$clientID` の値を、有効なアプリケーション ID と一致するように更新します。
 
@@ -450,7 +449,7 @@ function Get-AuthToken {
 
     $userUpn = New-Object "System.Net.Mail.MailAddress" -ArgumentList $User
     $tenant = $userUpn.Host
-   
+
     Write-Host "Checking for AzureAD module..."
 
     $AadModule = Get-Module -Name "AzureAD" -ListAvailable
@@ -490,7 +489,7 @@ function Get-AuthToken {
     $redirectUri = "urn:ietf:wg:oauth:2.0:oob"
     $resourceAppIdURI = "https://graph.microsoft.com"
     $authority = "https://login.microsoftonline.com/$Tenant"
-     
+
     try {
         $authContext = New-Object "Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext" -ArgumentList $authority
         # https://msdn.microsoft.com/library/azure/microsoft.identitymodel.clients.activedirectory.promptbehavior.aspx
@@ -566,11 +565,11 @@ catch {
 
 1.  **[クイック タスク]** パネルで、**[ゲスト ユーザーの追加]** を選択します。
 
-    <img src="media/aad-multiple-tenant-add-user.png" width="559" height="166" alt="Use Quick Tasks to add a guest user" />
+    <img src="media/azure-ad-add-guest.png" width="448" height="138" alt="Use Quick Tasks to add a guest user" />
 
 2.  クライアントのメール アドレスを入力し、(必要に応じて) 招待状に個人的なメッセージを追加します。
 
-    <img src="media/aad-multiple-tenant-invite-guest.png" width="508" height="373" alt="Inviting an external user as a guest" />
+    <img src="media/azure-ad-guest-invite.png" width="203" height="106" alt="Inviting an external user as a guest" />
 
 3.  **[招待する]** を選択します。
 
@@ -603,4 +602,3 @@ catch {
     ``` csharp
     string authority = "https://login.microsoftonline.com/northwind.onmicrosoft.com/";
     ```
-

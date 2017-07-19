@@ -1,7 +1,7 @@
 ---
 title: "Intune で SCEP 証明書を構成して管理する"
 titleSuffix: Intune on Azure
-description: "インフラストラクチャを構成してから、Intune SCEP 証明書プロファイルを作成して割り当てる方法について説明します。&quot;"
+description: "インフラストラクチャを構成してから、Intune SCEP 証明書プロファイルを作成して割り当てる方法について説明します。\""
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,12 +15,11 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: b2180833a536cdc116caf63120e1e9fcefd5ede5
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
+ms.openlocfilehash: e29e79b8598eddba951b3f8ee7a7bcd5c6271f83
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Intune で SCEP 証明書を構成して管理する
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -104,6 +103,9 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 1.  エンタープライズ管理者としてログオンします。
 
 2.  発行元 CA で、証明書テンプレート スナップインを使用して、新しいカスタム テンプレートを作成するか、または既存のテンプレートをコピーして NDES で使用するために (ユーザー テンプレートのように) 既存のテンプレートを編集します。
+
+    >[!NOTE]
+    > NDES 証明書テンプレートは、v2 証明書テンプレートを基盤とする必要があります (Windows 2003 の互換性あり)。
 
     テンプレートには次の構成が必要です。
 
@@ -383,7 +385,7 @@ NDES サーバーで証明書コネクタをダウンロードし、インスト
         - **電子メールとしての共通名**
         - **カスタム**- このオプションを選択すると、別のドロップダウン フィールドが表示されます。 このフィールドを使用して、カスタムのサブジェクト名の形式を入力します。 カスタム形式でサポートされている 2 つの変数は、**共通名 (CN)** と**電子メール (E)** です。 これらの変数と静的文字列の 1 つ以上の組み合わせを使用することで、**CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US** のようなカスタムのサブジェクト名の形式を作成できます。この例では、CN と E 変数に加えて、組織単位、組織、市区町村、州、および国の値の文字列を使用してサブジェクト名形式を作成しています。 [このトピック](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)では、**CertStrToName** 関数とこの関数でサポートされる文字列について説明しています。
         
-    - **[サブジェクトの別名]** - Intuneが証明書要求のサブジェクトの別名 (SAN) をどのように自動生成するかを指定します。 たとえば、ユーザー証明書の種類を選択した場合は、サブジェクトの別名にユーザー プリンシパル名 (UPN) を含めることができます。 クライアント証明書を Windows ポリシー サーバーでの認証に使用する場合は、サブジェクトの別名を UPN に設定する必要があります。 
+    - **[サブジェクトの別名]** - Intune が証明書要求のサブジェクトの別名 (SAN) をどのように自動生成するかを指定します。 たとえば、ユーザー証明書の種類を選択した場合は、サブジェクトの別名にユーザー プリンシパル名 (UPN) を含めることができます。 クライアント証明書を Windows ポリシー サーバーでの認証に使用する場合は、サブジェクトの別名を UPN に設定する必要があります。 
     - **[キー使用法]** - 証明書のキー使用法のオプションを指定します。 次のオプションから選択できます。 
         - **キーの暗号化:** キーが暗号化されている場合だけキーを交換できます。 
         - **デジタル署名:** キーがデジタル署名で保護されている場合だけ、キーを交換できます。 
@@ -409,5 +411,4 @@ NDES サーバーで証明書コネクタをダウンロードし、インスト
 - 各プロファイルは個別に割り当てますが、信頼されたルート CA と、SCEP または PKCS プロファイルを割り当てる必要もあります。 そうしないと、SCEP または PKCS 証明書ポリシーは失敗します。
 
 プロファイルを割り当てる方法については、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事をご覧ください。
-
 

@@ -14,15 +14,12 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f4f84acfa48c0de6e1478be3ee8624a7fd4841ad
-ms.openlocfilehash: 6116ccd5614a1ff3eb528f8f0ac2eb87565534a2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/16/2017
-
-
+ms.openlocfilehash: 317fad8beb708a10a4dbf81a04f03c2faab41925
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="assign-intune-licenses-to-your-user-accounts"></a>ユーザー アカウントに Intune のライセンスを割り当てる
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
@@ -39,6 +36,8 @@ ms.lasthandoff: 06/16/2017
 
 3.  **Intune** または **Enterprise Mobility + Security** を **[オン]** に切り替えて、**[保存]** を選択します。
 
+  ![Office 365 ポータルの製品ライセンス割り当ての画像。](./media/office-assign-license.png)
+
 4. ユーザー アカウントが、サービスを使用してデバイスを管理に登録するために必要なアクセス許可を持つようになります。
 
 > [!NOTE]
@@ -53,7 +52,7 @@ Intune for Education のライセンスを割り当てるときは、Intune A Di
 
 ![製品ライセンス設定の画像](./media/i4e-set-licenses.png)
 
-SDS について詳しくは、「[School Data Sync と Classroom の概要](https://support.office.com/en-us/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91?ui=en-US&rs=en-US&ad=US)」をご覧ください。
+SDS について詳しくは、「[School Data Sync と Classroom の概要](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91?ui=en-US&rs=en-US&ad=US)」をご覧ください。
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>ユーザー ライセンスとデバイス ライセンスがサービスへのアクセスに与える影響
 * ユーザー ソフトウェア ライセンスが割り当てられた各**ユーザー**は、オンライン サービスと関連するソフトウェア (System Center ソフトウェアを含む) にアクセスしてそれらを使用し、複数のアプリケーションと最大 15 台のデバイスを管理できます。
@@ -99,4 +98,3 @@ EMS サービスのユーザー ライセンスを選択的に割り当てるに
     (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com").Licenses.ServiceStatus
 
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
-

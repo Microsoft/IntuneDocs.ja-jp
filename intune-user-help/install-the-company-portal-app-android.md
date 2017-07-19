@@ -5,25 +5,22 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 68e5a234-4353-4cb9-b869-4f2af5e59f31
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d3401f32994fcd0e54d35a2615a636c5d06183d2
-ms.contentlocale: ja-jp
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ab021708898fe87c2c5acf7d8b33df5a57e36c84
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="install-the-company-portal-app-for-android"></a>Android 用ポータル サイト アプリをインストールする
 
@@ -45,7 +42,6 @@ ms.lasthandoff: 05/23/2017
 
     ![android-accept-company-portal-terms](./media/and-cpinstall-3-cp-accept.png)
 
-ポータル サイト アプリをダウンロードしたら、職場の情報へのフル アクセスを取得するために [Intune にデバイスを登録](enroll-your-device-in-Intune-android.md)することをお勧めします。
+ポータル サイト アプリをダウンロードしたら、職場の情報へのフル アクセスを取得するために [Intune にデバイスを登録](enroll-your-device-in-Intune-android.md)することをお勧めします。 [別のデバイスを使用してサインインする](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device)こともできます。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
-

@@ -1,12 +1,12 @@
 ---
 title: "アプリを Microsoft Intune に追加する方法"
 titleSuffix: Intune on Azure
-description: "この手順では、Intune にアプリを追加して、ユーザーとデバイスに割り当てられる状態にします。 &quot;"
+description: "この手順では、Intune にアプリを追加して、ユーザーとデバイスに割り当てられる状態にします。 \""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/10/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 6b4df1ca6db5ce733ab7dab4e715ab0850dd7c8b
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
+ms.openlocfilehash: 6a4dfa9e0066a2ac6f410aa9f8e4d77a40484ea5
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>アプリを Microsoft Intune に追加する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -67,7 +65,7 @@ Intune の追加ストレージは、当初の購入方法を使用して購入�
 
 ## <a name="how-to-create-and-edit-categories-for-apps"></a>アプリのカテゴリを作成して編集する方法
 
-エンド ユーザーが会社のポータルでアプリを見つけやすいように、そのアプリはカテゴリを使って並べ替えることができます。 アプリには、**デベロッパー アプリ**、**通信アプリ**など、1 つ以上のカテゴリを割り当てることができます。
+ユーザーがポータル サイトでアプリを見つけやすいように、そのアプリをカテゴリを使って並べ替えることができます。 アプリには、**デベロッパー アプリ**、**通信アプリ**など、1 つ以上のカテゴリを割り当てることができます。
 アプリを Intune に追加するときに、必要なカテゴリを選択するためのオプションが表示されます。 プラットフォーム固有のトピックを使用してアプリを追加し、カテゴリを割り当てます。 独自のカテゴリを作成して編集するには、次の手順を実行します。
 
 1. Azure ポータルにサインインします。

@@ -15,14 +15,12 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 77277069a8c436c09be3940493a2c3e7b5dd8dc4
-ms.openlocfilehash: 260c859ae95efb4a38feb0b0ddcd28b92e228f04
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/19/2017
-
+ms.openlocfilehash: 112f60ff208c27825ddd0f4c812535b255894333
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>iOS 用 Microsoft Intune アプリ構成ポリシーを使用する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -79,7 +77,8 @@ Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが
 > 1 つ以上のアプリ構成ポリシーが競合する場合は、どちらのポリシーも適用されません。
 
 ## <a name="create-a-mam-targeted-configuration-policy"></a>MAM 対象の構成ポリシーを作成する
-MAM 対象の構成では、ユーザーによって定義された設定を通常の MAM-WE 操作に統合することができます。 たとえば、これらの設定はユーザーのコンソールで定義されている場合があります。 MAM 対象の構成データは、MAM サービスを通じて MAM-WE 対応のアプリケーションに提供されます。 アプリケーション構成データは、MDM チャネルではなく MAM サービスを通して直接アプリにプッシュされます。 MDM アプリ構成ポリシー (前述の説明) は、MDM を使用したネイティブ ソリューションです。 MAM 対象の構成との主な違いは、アプリを実行するデバイスを MDM に登録する必要がない点です。 MAM 対象の構成は、iOS と Android で使用できます。 iOS の場合は、アプリに iOS 向け Intune App SDK (バージョン 7.0.1) が組み込まれている必要があります。 MAM 対象の構成ポリシーを作成する手順は、次の通りです。 
+MAM 対象の構成により、アプリは Intune App SDK から構成データを受け取ることができます。 このデータの形式とバリエーションは、アプリケーションの所有者/開発者が定義して Intune のユーザーに通知する必要があります。 Intune の管理者は、Intune Azure コンソールを使って、構成データの対象設定と展開を行うことができます。 MAM 対象の構成データは、MAM サービスを通じて MAM-WE 対応のアプリケーションに提供されます。 たとえば、[Intune Managed Browser](https://docs.microsoft.com/intune/app-configuration-managed-browser) には許可/ブロック URL リストがあります。 アプリケーション構成データは、MDM チャネルではなく MAM サービスを通して直接アプリにプッシュされます。 [MDM アプリ構成ポリシー](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#create-an-app-configuration-policy)は、MDM によるネイティブ ソリューションです。 MAM 対象の構成との主な違いは、アプリを実行するデバイスを MDM に登録する必要がない点です。 MAM 対象の構成は、iOS と Android で使用できます。 iOS の場合、アプリは Intune APP SDK for iOS (v 7.0.1) を組み込み、アプリ構成設定に参加している必要があります。 MAM 対象の構成ポリシーを作成する手順は、次の通りです。 
+
 1. サインイン、 **Azure ポータル**します。
 
 2. **[Intune] > [モバイル アプリ - アプリ構成ポリシー]** の順に選択します。
@@ -88,7 +87,7 @@ MAM 対象の構成では、ユーザーによって定義された設定を通�
 
 4. **[名前]**、および必要に応じてアプリ構成設定の **[説明]** を入力し、**[Intune に未登録]** を選択します。
 
-5. **[必要なアプリの選択]** を選択し、**[対象]** アプリ ブレードで、プラットフォームのアプリを選択します。 <br> 
+5. **[必要なアプリの選択]** を選択し、**[対象]** アプリ ブレードで、プラットフォームのアプリを選択します。 <br>
 **注:** LOB アプリの場合は、**[その他のアプリ]** を選択してください。 アプリケーションのパッケージ ID を入力します。
 
 6. **[OK]** を選択し、**[アプリの構成を追加する]** ブレードに戻ります。
@@ -99,13 +98,13 @@ MAM 対象の構成では、ユーザーによって定義された設定を通�
 
 9. **[アプリの構成を追加する]** ブレードで、**[作成]** を選択します。
 
-新しい構成が作成され、[アプリの構成] ブレードに表示されます。 
+新しい構成が作成され、[アプリの構成] ブレードに表示されます。
 
 その後、通常どおり、アプリの[割り当て](apps-deploy.md)と[監視](apps-monitor.md)に進みます。
 
-割り当てられたアプリ (Intune App SDK に統合) をデバイスで実行すると、MAM 対象の構成ポリシーで構成した設定を使用して実行されます。 割り当てられたアプリは、Intune App SDK のサポート対象バージョンに統合されている必要があります。 MAM 対象の構成ポリシーを使用するためのアプリ開発要件について詳しくは、[iOS と Intune App SDK の統合ガイド](https://docs.microsoft.com/en-us/intune/app-sdk-ios)に関するページを参照してください。
+割り当てられたアプリ (Intune App SDK に統合) をデバイスで実行すると、MAM 対象の構成ポリシーで構成した設定を使用して実行されます。 割り当てられたアプリは、Intune App SDK のサポート対象バージョンに統合されている必要があります。 MAM 対象の構成ポリシーを使用するためのアプリ開発要件について詳しくは、[iOS と Intune App SDK の統合ガイド](https://docs.microsoft.com/intune/app-sdk-ios)に関するページを参照してください。
 
-MAM 対象の構成値に関する Graph API の機能について詳しくは、[Graph API リファレンスの MAM 対象の構成](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create)に関するページをご覧ください。
+MAM 対象の構成値に関する Graph API の機能について詳しくは、[Graph API リファレンスの MAM 対象の構成](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create)に関するページをご覧ください。
 
 ## <a name="information-about-the-xml-file-format"></a>XML ファイル形式に関する情報
 
@@ -162,4 +161,3 @@ Intune は、プロパティ リストで次のデータ型をサポートしま
 </dict>
 
 ```
-

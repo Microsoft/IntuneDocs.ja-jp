@@ -1,30 +1,26 @@
 ---
 title: "iOS Classroom アプリの Intune 設定"
 titleSuffix: Intune on Azure
-description: "iOS デバイスの Classroom アプリの設定を制御するために使用できる Intune 設定について説明します。&quot;"
+description: "iOS デバイスの Classroom アプリの設定を制御するために使用できる Intune 設定について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
-ms.reviewer: heenamac
+ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 7ea8e8d95f331cf75fe7111c8f8acdfe01877cdd
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 4188c3951c9cb864b77bde52a5d19f022f17c11c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>iOS Classroom アプリの Intune 設定を構成する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -45,7 +41,7 @@ Intune iOS **Education** デバイス プロファイルとこのトピックの
 以上の設定を構成する前に、次の事項について検討してください。
 
 - 教師と生徒の両方の iPad を Intune に登録する必要があります
-- 教師のデバイスに [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) アプリがインストールされていることを確認してください。 これは手動で行うか、[Intune アプリ管理](app-management.md)を利用します。
+- 教師のデバイスに [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) アプリがインストールされていることを確認してください。 アプリは手動でインストールすることも、[Intune アプリ管理](app-management.md)を利用してインストールすることもできます。
 - 教師のデバイスと生徒のデバイスの間の接続を認証するために証明書を構成する必要があります (手順 2 参照)
 - 教師と生徒の iPad を同じ Wi-Fi ネットワークに置き、Bluetooth を有効にする必要があります
 - iOS 9.3 以降が内蔵され、監視付きの iPad で Classroom アプリを実行します
@@ -92,7 +88,7 @@ SDS は SIS の情報を同期し、それを Azure AD に保管します。 Azu
 >[!IMPORTANT]
 >教師の証明書と生徒の証明書は、異なる証明書機関 (CA) が発行する必要があります。 既存の証明書インフラストラクチャに接続する下位 CA を新しく 2 つ作成する必要があります。1 つは教師用で、もう 1 つは生徒用です。
 
-iOS Education プロファイルは PFX 証明書にのみ対応しています。SCEP 証明書には対応していません。
+iOS 教育プロファイルは、PFX 証明書のみをサポートします。 SCEP 証明書はサポートされていません。
 
 作成する証明書は、ユーザー認証に加え、サーバー認証に対応している必要があります。
 
@@ -156,3 +152,4 @@ iOS Education プロファイルは PFX 証明書にのみ対応しています�
 
 Classroom アプリの詳細については、Apple Web サイトの [Classroom ヘルプ](https://help.apple.com/classroom/ipad/2.0/)をご覧ください。
 
+受講者に対して共有 iPad デバイスを構成する場合は、[共有 iPad デバイスの Intune 教育設定の構成方法](education-settings-configure-ios-shared.md) に関するページを参照してください。

@@ -15,14 +15,12 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 15a005ae2b84c7bd4f913f892089965c10f3b23e
-ms.contentlocale: ja-jp
-ms.lasthandoff: 06/08/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="provide-remote-assistance-for-intune-managed-android-devices"></a>Intune 管理対象の Android デバイスにリモート アシスタンスを提供する
 
 Intune では、別売りの [TeamViewer](https://www.teamviewer.com) ソフトウェアを利用して、Android デバイスを使用するユーザーにリモート アシスタンスを提供できます。 このトピックの情報を活用して設定を行い、作業を開始してください。
@@ -65,10 +63,9 @@ Android デバイスにリモート アシスタンスを提供する前に、�
 
 TeamViewer ウィンドウで、さまざまな Android デバイスのリモート操作 (デバイスのリモート制御など) を行うことができます。 実行できる操作の詳細については、[TeamViewer のドキュメント](https://www.teamviewer.com/support/documents/)をご覧ください。
 
-設定が完了したら、 TeamViewer ウィンドウを閉じます。
+終了したら、 TeamViewer ウィンドウを閉じます。
 
 ## <a name="end-user-notifications"></a>エンド ユーザーへの通知
 
 デバイス上のポータル サイト アプリ アイコンに通知フラグが表示され、エンド ユーザーはアプリを開くと通知を確認できます。 その後、リモート アシスタンス要求を受け入れることができます。
-
 
