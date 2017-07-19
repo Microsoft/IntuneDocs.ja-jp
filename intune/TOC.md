@@ -15,6 +15,7 @@
 ### [デバイスのライフサイクル](device-lifecycle.md)
 ### [アプリのライフサイクル](app-lifecycle.md)
 ## [一般的なシナリオ](common-scenarios.md)
+## [サービスの説明](microsoft-intune-service-description.md)
 ## [既知の問題](known-issues.md)
 ## [サポートを受ける](get-support.md)
 
@@ -81,10 +82,10 @@
 #### [Windows の登録](windows-enroll.md)
 #### [一括登録](windows-bulk-enroll.md)
 ### [Android の登録の設定](android-enroll.md)
-### iOS の登録の設定
-#### [Device Enrollment Program の使用](device-enrollment-program-enroll-ios.md)
-#### [Apple School Manager の使用](apple-school-manager-set-up-ios.md)
-#### [Apple Configurator の使用](apple-configurator-setup-assistant-enroll-ios.md)
+### [iOS の登録の設定](ios-enroll.md)
+#### [デバイス登録プログラム](device-enrollment-program-enroll-ios.md)
+#### [Apple School Manager](apple-school-manager-set-up-ios.md)
+#### [Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
 ### [macOS の登録の設定](macos-enroll.md)
 
 ## [デバイスの管理](device-management.md)
