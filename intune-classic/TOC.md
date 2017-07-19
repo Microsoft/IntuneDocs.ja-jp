@@ -1,12 +1,6 @@
 # 理解と調査
 ## [Intune の概要](/intune/introduction-intune?toc=/intune-classic/toc.json)
 ## [教育用の Intune](/intune/introduction-intune-education?toc=/intune-classic/toc.json)
-## [無料試用版にサインアップ](understand-explore/sign-up-for-30-day-trial-microsoft-intune.md)
-## [Intune MDM を評価する](understand-explore/mobile-device-management-trial-guide-microsoft-intune.md)
-### [ユーザーとデバイスを整理するためのグループを作成する](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
-### [ポリシーを作成してアプリを発行する](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
-### [その他のオプションと機能](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
-### [有料サブスクリプションに切り替える](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [MAM とアプリ保護 FAQ](understand-explore/mam-faq.md)
 ## [一般的なシナリオ](/intune/common-scenarios?toc=/intune-classic/toc.json)
 
