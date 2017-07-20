@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/28/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 18272f21799253128cfe0ad6aa66e108b24a0b50
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: aae944c86029be6eaa111ce7c274a466095651d1
+ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="add-apps-with-microsoft-intune"></a>Microsoft Intune でアプリを追加する
 
@@ -37,7 +37,7 @@ Microsoft Intune でアプリの展開を開始する前に、このトピック
 |**iOS 用アプリ パッケージ (&#42;.ipa)**|iOS アプリを展開するには、有効な .ipa パッケージ ファイルが必要です。<br><br>.ipa パッケージは Apple によって署名され、プロビジョニング プロファイルの有効期限の期限内である必要があります。 Intune では、エンタープライズ証明書付き iOS アプリケーションを配布できます。<br><br>Apple のデベロッパー証明書付きアプリがすべてサポートされているわけではありません。<br><br>お客様の企業で、iOS Developer Enterprise Program に登録する必要があります。<br><br>組織のファイアウォールで、iOS の準備および認証用 Web サイトへのアクセスが許可されていることを確認してください。<br><br>アプリのマニフェスト ファイル (.plist) を展開する必要はありません。|
 |**Windows Phone アプリケーション パッケージ (&#42;.xap、.appx、.appxbundle)**|アプリを展開するには、エンタープライズ モバイル コード署名証明書が必要です。 詳細については、「[Microsoft Intune を使用して Windows Phone の管理をセットアップする](set-up-windows-device-management-with-microsoft-intune.md)」を参照してください。|
 |**Windows アプリケーション パッケージ (.appx、.appxbundle)**|アプリを展開するには、エンタープライズ モバイル コード署名証明書が必要です。 詳細については、「[Set up Windows device management with Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)」 (Microsoft Intune を使用して Windows デバイスの管理をセットアップする) を参照してください。|
-|**MDM を介した Windows インストーラー (&#42;.msi)**|このアプリを使用して Windows インストーラー ベースのアプリを作成し、Windows 10 を実行する登録済み PC に展開できます。 これらの PC は、モバイル デバイス管理 (MDM) によって管理されます。<br /><br />アップロードできるのは、拡張子が .msi であるファイルを 1 つのみです。<br><br>アプリの検出では、ファイルの製品コードと製品バージョンが使用されます。<br><br>アプリの既定の再起動動作が使用されます。 Intune ではこの機能を制御しません。<br><br>ユーザー単位の MSI パッケージは単一のユーザーにインストールされます。<br><br>コンピューター単位の MSI パッケージはデバイス上のすべてのユーザーにインストールされます。<br><br>デュアル モードの MSI パッケージは現在、デバイス上のすべてのユーザーに対してのみインストールされています。<br><br>アプリの更新プログラムは、各バージョンの MSI 製品コードが同じである場合にサポートされます。<br>
+|**MDM を介した Windows インストーラー (&#42;.msi)**|このアプリを使用して Windows インストーラー ベースのアプリを作成し、Windows 10 を実行する登録済み PC に展開できます。 これらの PC は、モバイル デバイス管理 (MDM) によって管理されます。<br /><br />アップロードできるのは、拡張子が .msi であるファイルを 1 つのみです。<br><br>アプリの検出では、ファイルの製品コードと製品バージョンが使用されます。<br><br>アプリの既定の再起動動作が使用されます。 Intune ではこの動作は制御されません。<br><br>ユーザー単位の MSI パッケージは単一のユーザーにインストールされます。<br><br>コンピューター単位の MSI パッケージはデバイス上のすべてのユーザーにインストールされます。<br><br>デュアル モードの MSI パッケージは現在、デバイス上のすべてのユーザーに対してのみインストールされています。<br><br>アプリの更新プログラムは、各バージョンの MSI 製品コードが同じである場合にサポートされます。<br>
 すべてのソフトウェア インストーラー アプリの種類は、クラウド ストレージ領域にアップロードされます。
 
 ### <a name="external-link"></a>**外部リンク**
@@ -61,7 +61,7 @@ Intune 管理者コンソールからアプリを追加または変更したと�
 ソフトウェア パブリッシャーを使い始める前に、フル バージョンの [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851) をインストールする必要があります。 ソフトウェア パブリッシャーを正常に開くには、インストール後にコンピューターの再起動が必要になることがあります。
 
 ## <a name="cloud-storage-space"></a>クラウドの記憶域の容量
-ソフトウェア インストーラーのインストールの種類を使用して作成したすべてのアプリ (たとえば、基幹業務アプリ) は、パッケージ化され、Microsoft Intune クラウドの記憶域にアップロードされます。 Intune の試用版サブスクリプションでは、管理対象のアプリと更新プログラムの保管用として、2 ギガバイト (GB) 分のクラウドの記憶域を使用できます。 完全版のサブスクリプションには、20 GB のストレージ領域が含まれています。
+インストールの種類としてソフトウェア インストーラーを使用して作成するすべてのアプリは、Microsoft Intune クラウド ストレージにアップロードされます。 Intune の試用版サブスクリプションでは、管理対象のアプリと更新プログラムの保管用として、2 ギガバイト (GB) 分のクラウドの記憶域を使用できます。 完全版のサブスクリプションには、20 GB のストレージ領域が含まれています。
 
 **[管理]** ワークスペースの **[記憶域の使用]** ノードで、使用中の記憶域を確認できます。 Intune の追加ストレージは、当初の購入方法を使用して購入できます。  請求書やクレジット カードでお支払いの場合は、[サブスクリプション管理ポータル](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions)をご覧ください。  それ以外の場合は、パートナーまたは営業担当者にお問い合わせください。
 
@@ -83,8 +83,8 @@ Windows 10 Mobile デバイス上では、Symantec 以外のコード署名証�
 ### <a name="dependencies-for-uwp-apps"></a>UWP アプリの依存関係
 
 Intune に Windows 10 ユニバーサル appxbundle パッケージを追加する場合、アプリのあらゆる依存関係がアップロードされていることも確認する必要があります。
-これを行うには、アプリの構築時に作成された **[Dependencies]** フォルダーが .appxbundle ファイル自体と同じフォルダーにあるようにします。
-これにより、アプリを Intune にアップロードすると、**[Dependencies]** フォルダーにあるすべてのファイルもアップロードされます。 次のスクリーン ショットを使って説明します。
+依存関係をアップロードするには、アプリの構築時に作成された **[Dependencies]** フォルダーが .appxbundle ファイル自体と同じフォルダーにあるようにします。
+これにより、アプリを Intune にアップロードすると、**[Dependencies]** フォルダーにあるすべてのファイルもアップロードされます。 次のスクリーンショットはこのプロセスを示したものです。
 
 
 ![Windows 10 UWP appxbundle の依存関係を選択する方法](./media/w10-dependencies.png)
@@ -92,4 +92,4 @@ Intune に Windows 10 ユニバーサル appxbundle パッケージを追加す�
 
 ## <a name="next-steps"></a>次のステップ
 
-アプリを展開する前に、Intune コンソールでアプリを追加する必要があります。 [登録されたデバイス](add-apps-for-mobile-devices-in-microsoft-intune.md)と [Intune クライアント ソフトウェアで管理する Windows PC](add-apps-for-windows-pcs-in-microsoft-intune.md) にアプリを追加できます。
+アプリを展開する前に、Intune コンソールでアプリを追加します。 [登録されたデバイス](add-apps-for-mobile-devices-in-microsoft-intune.md)と [Intune クライアント ソフトウェアで管理する Windows PC](add-apps-for-windows-pcs-in-microsoft-intune.md) にアプリを追加できます。

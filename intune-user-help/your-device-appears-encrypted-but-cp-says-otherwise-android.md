@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 05/25/2017
+ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,19 +16,19 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 269ad7968242f8f5ce7095c9c73347987675e846
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 370fbcf8bb424030eb7b7dbaba66fa943f08aa42
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Android デバイスは暗号化されるように見えるが、ポータル サイトではそのように認識されていない
 
-デバイスを暗号化する場合、自分しか知らない秘密キーを使用してデバイス上の情報をエンコードするため、承認されていないユーザーはデバイスにアクセスできません。 ユーザーの情報を確実にセキュリティで保護するために、組織ではまず、企業のファイル、電子メール、またはデータにアクセスする前にユーザーに Android デバイスを暗号化するよう求める必要があります。
+デバイスを暗号化する場合、自分しか知らない秘密キーを使ってデバイス上の情報をエンコードします。 これにより、承認されていないユーザーはデバイスにアクセスできません。 多くの組織では、会社のファイル、メール、またはデータにアクセスするのに、Android デバイスの暗号化を義務づけています。
 
 ## <a name="common-issues"></a>一般的な問題
 
-新しいバージョンの Android、特に v7.0 以降では、デバイスが完全に暗号化されているかどうかを確認するスタートアップ パスコードが必要です。 デバイスの製造元によって、スタートアップ パスコードに関する説明と場所は異なります。 ほとんどの場合、この機能は「安全な起動」と呼ばれています。 
+新しいバージョンの Android、特に v7.0 以降では、デバイスが完全に暗号化されているかどうかを確認するスタートアップ パスコードが必要です。 デバイスの製造元によって、スタートアップ パスコードに関する説明と場所は異なります。 ほとんどの場合、この設定は "安全な起動" と呼ばれています。 
 
 ## <a name="solutions"></a>ソリューション
 
@@ -37,14 +37,15 @@ ms.lasthandoff: 07/01/2017
 いくつかの Android デバイスでは、デバイスがセキュリティ保護されていることを確認するためにスタートアップ PIN を作成する必要があります。 異なる製造元によるさまざまな Android のバージョンが存在します。 このオプションを有効にする設定アプリで場所を見つけることにより、この問題を解決できます。 たとえば、Samsung Galaxy S7 では、**[設定]** > **[ロック画面とセキュリティ]** > **[安全な起動]** と移動して、安全なスタートアップを有効にします。  
 
 ### <a name="downgrade-your-version-of-android"></a>Android のバージョンのダウングレード
+
 デバイスで Android 6.0 以降にダウングレードできる場合は、ダウングレードします。 デバイスのダウングレードには、データ損失のリスクがあります。 そのため、IT 管理者に問い合わせて、この問題を解決することをお勧めします。 IT 管理者の連絡先情報は、[ポータル Web サイト](http://portal.manage.microsoft.com)で入手できます。
 
 ## <a name="specific-manufacturer-issues"></a>特定の製造元の問題
 
-バージョン 7.0 以上の一部の Android デバイスでは、特定の Android プラットフォームの標準に準拠していない方法でデータを暗号化します。 これらのデバイスは既定で暗号化されているように見えますが、Intune ではこのような方法は、デバイスに物理的にアクセスできる悪意のあるユーザーがデバイスの情報を盗み出す危険性があると認識されます。
+バージョン 7.0 以上の一部の Android デバイスでは、特定の Android プラットフォームの標準に準拠していない方法でデータを暗号化します。 これらのデバイスは、まったく新しい場合でも暗号化されているものとして表示されることがあります。 Intune では、これらのデバイスの暗号化方法はデバイスの情報を危険にさらすものとして認識します。 このリスクの原因は主として、デバイスに物理的にアクセスできる悪意のあるユーザーです。
 
 > [!Note]
-> Microsoft は製造元と協力して、テスト中に見つけた問題やユーザーから報告された問題に対処しています。 新しい情報があるときにはこの記事の内容を更新します。 
+> Microsoft は製造元と協力して、テスト中に見つけた問題やユーザーから報告された問題に対処しています。 新しい情報が得られたらこの記事の内容を更新します。 
 
 ## <a name="known-devices"></a>既知のデバイス
 
@@ -57,5 +58,8 @@ ms.lasthandoff: 07/01/2017
 
 ### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>更新によってこの問題を解決できない既知のデバイス
 
+以下のデバイスについてはこの問題を解決できません。 会社のリソースにアクセスするには別のデバイスを使う必要があります。 
+
 - [Huawei Mate 8](http://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
+- [Huawei Mate 9](http://consumer.huawei.com/en/phones/mate9/)
 - [Xiaomi Mi スマートフォン](https://xiaomi-mi.com/mi-smartphones/)

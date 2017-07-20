@@ -1,11 +1,11 @@
 ---
 title: "Intune 移行キャンペーンを開始する"
-description: "この記事では、移行キャンペーンを開始する方法について説明します。"
+description: "この記事では、移行キャンペーンの開始方法に関するガイダンスを提供します。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,24 +13,21 @@ ms.technology:
 ms.assetid: f781b029-50f2-46ee-8ff7-03b4a6719e80
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 9690572fd5f17fece0de7b533c98bfc52d77615b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a272d9c822a2c17592d7800c20278ce222d615bd
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="phase-2-migration-campaign"></a>フェーズ 2: 移行のキャンペーン
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-組織では、ニーズに最適な移行アプローチを取り、組織固有の要件に基づいて導入戦略を調整する必要があります。 このガイドの残りの部分では、ユーザーのデバイスを Intune に登録するという目標を達成するために必要な手段について説明します。
+組織のニーズに最適な移行アプローチを選択し、組織固有の要件に基づいて導入戦略を調整します。 このガイドの残りの部分では、ユーザーのデバイスを Intune に登録するという目標を達成するために必要な手段について説明します。
 
 ## <a name="keys-to-a-successful-migration"></a>移行を成功させるカギ
 
-サードパーティの MDM プロバイダーから Intune への移行時に得られた主な教訓は次のとおりです。
+サード パーティの MDM プロバイダーから Intune への移行を成功させるには、以下のことが重要です。
 
--   エンド ユーザーのダウンタイムを最小限に抑えつつ、満足度を向上させるカギは情報伝達です。
+-   明確で有益な通信は、エンドユーザーのダウンタイムと不満足を最小限に抑えるのに役立ちます。
 
 -   個別的かつ具体的な移行指示を行うようにします。
 
@@ -52,11 +49,11 @@ ms.lasthandoff: 07/01/2017
 
     -   データ セキュリティ:
 
-        -   コンプライアンス対応レポート
+        -   コンプライアンス レポートが行われる。
 
-        -   モバイル アプリ保護の適用
+        -   モバイル アプリ保護が適用される。
 
--   移行の最初のフェーズに満足したら、次のフェーズの移行サイクル (「標準的な移行サイクル」の下のところで説明しています) を繰り返します。
+移行の最初のフェーズに満足したら、次のフェーズの[移行サイクル](migration-guide-cycle.md)を繰り返します。
 
 -   すべてのユーザーが Intune に移行するまで、段階的なサイクルを繰り返します。
 
@@ -64,9 +61,9 @@ ms.lasthandoff: 07/01/2017
 
 -   ヘルプ デスクが残りのユーザーに対応できるまでは、登録期限を設定しないようにします。
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Exchange や SharePoint Online などのリソースへのアクセス制御を適用するために、Intune と既存のサードパーティ MDM ソリューションの両方を構成しないでください。 また、同時に複数のソリューションにデバイスを登録しないでください。
 
 ## <a name="next-steps"></a>次のステップ
 
-[情報伝達計画](migration-guide-communication-plan.md)
+[情報伝達計画](migration-guide-communication-plan.md)を作成します。

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,20 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bb26ca341fbef6ae02556b09044f43cec23dae2b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fb0e151c8b9a948dfd6bb330e1375ddeff2d8e16
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>iOS の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+このトピックの情報を使って、Intune に iOS 基幹業務アプリを追加できます。
+
+>[!NOTE]
+>iOS デバイスのユーザーは Stocks や Maps などの一部の iOS 組み込みアプリを削除できますが、Intune を使ってこれらのアプリを再展開することはできません。 エンド ユーザーがこれらのアプリを削除した場合は、アプリ ストアから手動で再インストールする必要があります。
 
 ## <a name="step-1---specify-the-software-setup-file"></a>手順 1 - ソフトウェアのセットアップ ファイルを指定する
 

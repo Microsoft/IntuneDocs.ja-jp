@@ -13,16 +13,13 @@ ms.technology:
 ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 0b2fbcc1d63f229e1b63873841bc300bdde92fa3
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 7a9c3bef955239ad653a9ca45c55c533be36c5ce
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="drive-end-user-adoption-with-conditional-access"></a>条件付きアクセスを利用してエンド ユーザーの導入を推進する
-
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 Intune で条件付きアクセス機能を有効にする (未登録のデバイスの電子メールをブロックするなど) ことにより、登録とコンプライアンスを推進できますが、移行の成功において必須ではありません。 移行の成功は、移行導入の目標とセキュリティ要件によって決まります。
 
@@ -48,16 +45,16 @@ Intune で条件付きアクセス機能を有効にする (未登録のデバ�
 
 -   条件付きアクセスが有効になるまでは、以前のソリューションのユーザーが管理されていないデバイスを使用してリソースにアクセスする可能性があります。
 
-> [!TIP]
-> 数多くの方法のうち 1 つを紹介します。 すべてのフェーズで登録の指示を行うまでは条件付きアクセスを延期する簡単なプロセスを選択するか、最初から条件付きアクセスを適用して、すべてのアクセスにおいて完全な準拠を要求する厳格なプロセスを選択することができます。
 
--   条件付きアクセスの詳細については、[ここ](/intune/conditional-access)をご覧ください。
+数多くの方法のうち 1 つを紹介します。 すべてのフェーズで登録の指示を行うまでは条件付きアクセスを延期する簡単なプロセスを選択するか、最初から条件付きアクセスを適用して、すべてのアクセスにおいて完全な準拠を要求する厳格なプロセスを選択することができます。
+
+-   条件付きアクセスの詳細については、[ここ](conditional-access.md)をご覧ください。
 
 ## <a name="task-list-for-conditional-access"></a>条件付きアクセスのタスク一覧
 
 ### <a name="task-1-decide-how-you-are-going-to-implement-conditional-access"></a>タスク 1: 条件付きアクセスを実装する方法の決定
 
-[条件付きアクセスの一般的な使用方法](/intune/conditional-access-intune-common-ways-use)。
+[条件付きアクセスの一般的な使用方法](conditional-access-intune-common-ways-use.md)。
 
 ### <a name="task-2-set-up-intune-conditional-access"></a>タスク 2: Intune の条件付きアクセスのセットアップ
 
@@ -65,14 +62,14 @@ Intune で条件付きアクセス機能を有効にする (未登録のデバ�
 
 -   [Azure Active Directory の条件付きアクセスを構成する](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 
--   [Intune で On-Premises Exchange Connector をインストールする](/intune/exchange-connector-install)
+-   [Intune で On-Premises Exchange Connector をインストールする](exchange-connector-install.md)
 
--   [Exchange Online のアプリベースの条件付きアクセス ポリシーを設定する](/intune/app-based-conditional-access-intune-exchange-online-create)
+-   [Exchange Online のアプリベースの条件付きアクセス ポリシーを設定する](app-based-conditional-access-intune-create.md)
 
--   [SharePoint Online のアプリベースの条件付きアクセス ポリシーを設定する](/intune/app-based-conditional-access-intune-sharepoint-online-create)
+-   [SharePoint Online のアプリベースの条件付きアクセス ポリシーを設定する](app-based-conditional-access-intune-create.md)
 
--   [先進認証 (ADAL) を使用していないアプリをブロックする](/intune/app-modern-authentication-block)
+-   [先進認証 (ADAL) を使用していないアプリをブロックする](app-modern-authentication-block.md)
 
 ## <a name="next-steps"></a>次のステップ
 
-[標準的な移行サイクル](migration-guide-cycle.md)
+[一般的な移行サイクル](migration-guide-cycle.md)について学習します。

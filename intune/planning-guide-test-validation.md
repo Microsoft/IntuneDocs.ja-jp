@@ -1,11 +1,11 @@
 ---
 title: "Intune のテストと検証"
-description: "この記事では、Intune クラウド専用ソリューションを環境でテストし、検証するときに考慮するべき事項について詳しく説明します。"
+description: "環境内のクラウド専用 Intune ソリューションをテストおよび検証するときに考慮する必要のある詳細について説明します。"
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,48 +13,41 @@ ms.technology:
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 4ea2974c4724564cd8f9972fdb238b06d1b100e6
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: ddeb71c6a678ff42b5075d65c2bb4e0d89ae47f1
+ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/11/2017
 ---
 # <a name="intune-testing-and-validation"></a>Intune のテストと検証
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-テスト段階は、実装段階の途中と後に行ってください。以前に確認した、必要なすべての IT (管理者) とエンド ユーザー (ユース ケース) のシナリオをテストするには、テスト用のアカウント、グループ、デバイスが必要です。
+テスト フェーズは、実装フェーズの途中と後に発生します。 前に特定したすべての必要な IT (管理者) シナリオとエンド ユーザー (ユース ケース) シナリオをテストするには、テスト用のアカウント、グループ、デバイスが必要です。
 
 サポート ドキュメントが作成され、IT サポートやヘルプデスクのスタッフが快適に製品をサポートできるように、IT サポート/ヘルプデスクのスタッフをテスト段階に組み入れることが推奨されます。 部品やシナリオがユース ケースに基づいて機能しない場合、必要な変更を記録し、変更が行われた理由を追加してください。
 
 ## <a name="before-you-begin"></a>始める前に
 
-次の内容を記録しておくことが推奨されます。
+次の内容を文書化することをお勧めします。
 
 -   **テスト条件:** 測定水準とするベンチマークを特定します。
 
 -   **設計部品:** 1 つ以上のテスト条件に存在する必要があります。
 
-ある設計部品が、要件またはシナリオに合わせて調整される 1 つ以上のテスト条件に存在しない場合、その設計部品が必要がどうかを検討してください。 また、次の項目を用意する必要があります。
+ある設計部品が、要件またはシナリオに合わせて調整される 1 つ以上のテスト条件に存在しない場合、その設計部品が必要かどうかを検討してください。 また、次の項目を用意する必要があります。
 
--   **アカウント:** テストで使用するアカウントは、あらゆるユース ケース シナリオをテストするために EMS や Office 365 にライセンス供与されているテスト アカウントにしてください。
+-   **アカウント:** あらゆるユース ケース シナリオをテストするために EMS や Office 365 にライセンス供与されているテスト アカウント。
 
--   **デバイス:** この時点で使用するデバイスは、データが消去されたり、出荷時の既定値にリセットされたりしてもかまわないテスト デバイスにしてください。
+-   **デバイス:** ワイプまたは工場出荷時の既定値へのリセットが可能なテスト デバイス。
 
 -   **統合コンポーネント:** あらゆる統合コンポーネント (Certificate Connector、ホスト型 Exchange 用 Intune Service to Service Connector、Intune On-Premises Exchange Connector) を必要に応じてインストールし、構成する必要があります。
 
 予想外の問題に対処するために、設計を変更しなければならないことがあります。 また、設計変更はすべて、その理由と共に完全に記録してください。 たとえば、次のような変更が行われます。
 
--   Network Device Enrollment Service (NDES) の要件が満たされないことに気付きましたが、VPN プロファイルと Wi-Fi プロファイルをルート CA で構成すれば、NDES を実装しなくても同じ要件を満たせることを知ります。
+<blockquote>Network Device Enrollment Service (NDES) の要件が満たされないことに気付きましたが、VPN プロファイルと Wi-Fi プロファイルをルート CA で構成すれば、NDES を実装しなくても同じ要件を満たせることを知ります。</blockquote>
 
 テストや検証のプロセスで、技術的な指南や特別なトラブルシューティングが必要な問題に遭遇することがあります。 Microsoft サポート チャンネルのサポートを利用することが推奨されます。
 
--   [Intune サポートの利用方法の詳細](/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune)
-
--   [Microsoft Intune の一般的なトラブルシューティングのヒント](/intune-classic/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
-
--   [Microsoft Intune のサポートを受ける方法](/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune)
+-   [Intune サポートの利用方法の詳細](get-support.md)
 
 -   [Microsoft Intune のサポートの電話番号](/intune-classic/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)
 
@@ -66,7 +59,7 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="use-case-validation-testing"></a>ユース ケース検証テスト
 
-ユース ケース検証テストを実行し、シナリオが完全であり、機能することを確認してください。 ユース ケース シナリオには 2 つの種類があります。IT 管理者とエンド ユーザーです。
+ユース ケース検証テストを実行し、シナリオが完全であり、機能することを確認します。 ユース ケース シナリオには 2 つの種類があります。IT 管理者とエンド ユーザーです。
 
 ### <a name="it-admin"></a>IT 管理者
 
@@ -76,10 +69,12 @@ IT 管理者の検証テストを実行し、あるデバイスまたはユー�
 
 ### <a name="end-user"></a>エンド ユーザー
 
-エンド ユーザー検証テストを実行し、エンド ユーザー側の操作性が予想どおりであり、あらゆるユーザー コミュニケーションで正しく表示されることを確認してください。 検証でエラーが出た場合、普及率が下がり、ヘルプデスクに大量の問い合わせが発生することになるため、エンド ユーザー側で正しい操作が行われることを確認することは重要です。
+エンド ユーザー検証テストを実行し、エンド ユーザー側の操作性が予想どおりであり、あらゆるユーザー コミュニケーションで正しく表示されることを確認します。 エンド ユーザー エクスペリエンスが正しいことを検証することが重要です。 検証に失敗した場合、普及率が低下し、ヘルプデスクへの問い合わせが増える可能性があります。
 
 ![セクション 9 表 3](./media/section-9-image-3-table.PNG)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-Intune の動作とユース ケース シナリオをテストし、確認しました。これで Intune 運用のロールアウトに移ることができます。 詳細については、「[Additional resources](planning-guide-resources.md)」 (その他のリソース) を参照してください。
+Intune の動作とユース ケース シナリオをテストし、確認しました。これで [Intune 運用のロールアウト](planning-guide-rollout-plan.md)に移ることができます。
+
+他の計画テンプレートと情報については、[追加リソース](planning-guide-resources.md)をご覧ください。
