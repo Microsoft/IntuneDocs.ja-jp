@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/05/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f9ea697cafa0f277c176e55443250d32ca378dbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b86d2d7f4d295ed41168c9dfdbaf8d4c253a0f75
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-android-for-work"></a>Android for Work の Microsoft Intune アプリ構成ポリシーを使用する方法
 
@@ -65,7 +65,7 @@ Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが
 
 ポリシーが作成され、ポリシーの一覧ブレードが表示されます。
 
-その後、通常どおり、アプリの[割り当て](apps-deploy.md)と[監視](apps-monitor.md)に進みます。
+
 
 割り当てたアプリをデバイスで実行すると、アプリ構成ポリシーで構成した設定を使用して実行されます。
 
@@ -89,3 +89,8 @@ Android デバイス機能にアクセスするためのアプリのアクセス
 8. アプリ構成ポリシーを割り当てるには、アプリ構成ポリシーを選択して、**[割り当て]**、**[グループの選択]** の順に選択します。
 9. 割り当てるユーザー グループを選び、**[選択]** をクリックします。
 10. **[保存]** を選択して、ポリシーを割り当てます。
+
+## <a name="next-steps"></a>次のステップ
+
+通常どおり、アプリの[割り当て](apps-deploy.md)と[監視](apps-monitor.md)に進みます。
+
