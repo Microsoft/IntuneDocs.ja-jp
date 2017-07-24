@@ -183,13 +183,12 @@
 ### [プロファイルの監視](device-profile-monitor.md)
 ### [プロファイルのトラブルシューティング](device-profile-troubleshoot.md)
 
-## [デバイス コンプライアンスの設定](device-compliance.md)
-### [必要条件](device-compliance-get-started.md)
+## [デバイス コンプライアンスの設定](device-compliance-get-started.md)
 ### [Android ポリシーの作成](compliance-policy-create-android.md)
 ### [Android for Work ポリシーの作成](compliance-policy-create-android-for-work.md)
 ### [iOS ポリシーの作成](compliance-policy-create-ios.md)
+### [macOS ポリシーの作成](compliance-policy-create-mac-os.md)
 ### [Windows ポリシーの作成](compliance-policy-create-windows.md)
-### コンプライアンス非対応に対するアクションを作成する
 ### [デバイス コンプライアンスを監視する](compliance-policy-monitor.md)
 
 ## [条件付きアクセスの設定](conditional-access.md)
