@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 112f60ff208c27825ddd0f4c812535b255894333
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 0cbcf70af17ba7690f54196790da04becd8ba1eb
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>iOS 用 Microsoft Intune アプリ構成ポリシーを使用する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが iOS アプリを実行するときに必要となる可能性がある設定を指定できます。 たとえば、アプリは次の内容を指定することをユーザーに要求することがあります。
+Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが iOS アプリを実行するときに使用される設定を指定できます。 たとえば、アプリは次の内容を指定することをユーザーに要求することがあります。
 
 -   カスタム ポート番号。
 
@@ -50,61 +50,39 @@ Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが
 > アプリのインストールの種類の詳細については、「[How to add an app to Microsoft Intune (Microsoft Intune にアプリを追加する方法)](apps-add.md)」を参照してください。
 
 ## <a name="create-an-app-configuration-policy"></a>アプリ構成ポリシーを作成する
+1.  Azure ポータルにサインインします。
+2.  **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
+3.  **[Intune]** ブレードで、**[モバイル アプリ]** を選択します。
+4.  **[モバイル アプリ]** ワークロードで、**[管理]** > **[アプリの構成ポリシー]** の順に選びます。
+5.  ポリシーの一覧ブレードで、**[追加]** を選択します。
+6.  **[構成ポリシーの追加]** ブレードで、アプリ構成ポリシーの **[名前]** と **[説明]** (省略可能) を入力します。
+7.  **[デバイス登録の種類]** には、次のいずれかを選択します。
+    - **[Intune に登録済み]** - Intune App SDK が統合されていて、Intune で管理されているアプリの場合。
+    - **[Intune に未登録]** - Intune App SDK が統合されているが Intune で管理されていない、または別のソリューションで管理されているアプリの場合。
+8.  **[プラットフォーム]** には、**[iOS]** を選択します (Intune に登録されているデバイスのみ)
+9.  **[関連アプリ]** を選択し、**[関連アプリ]** ブレードで、構成を適用する管理対象アプリを選択します。
+10. **[構成ポリシーの追加]** ブレードで、**[構成設定]** を選択します
+11. **[構成設定]** ブレードで、構成プロファイルを構成する XML 値を指定する方法を選択します。
+    - **[XML データを入力する]** (Intune に登録されているデバイスのみ) - 必要なアプリ構成設定を含む XML プロパティの一覧を入力するか貼り付けます。 XML プロパティ リストの形式は、構成するアプリによって異なります。 使用する形式の詳細については、アプリの供給元にお問い合わせください。
+Intune によって、入力した XML が有効な形式であるかどうかがチェックされます。 XML プロパティ リストが関連付けられているアプリで動作するかどうかはチェックされません。
+XML プロパティ リストの詳細については、iOS 開発者ライブラリの [XML プロパティ リスト](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html)に関するページを参照してください。
+    - **[構成デザイナーを使用する]** (デバイスが Intune に登録されているどうかを問わない) - XML キーと値のペアをポータルで直接指定できます。
+11. 完了したら、**[構成ポリシーの追加]** ブレードに戻り、**[作成]** をクリックします。
 
-1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[モバイル アプリ]** を選択します。
-1.  **[モバイル アプリ]** ワークロードで、**[管理]** > **[アプリの構成ポリシー]** の順に選びます。
+ポリシーが作成され、ポリシーの一覧ブレードに表示されます。
 
-2.  ポリシーの一覧ブレードで、**[追加]** を選択します。
 
-3.  **[構成ポリシーの追加]** ブレードで、アプリ構成ポリシーの名前と説明 (省略可能) を入力します。
-4.  **[関連アプリ]** を選択し、**[関連アプリ]** ブレードで、構成を適用する管理対象アプリを選択します。
-5.  **[構成ポリシーの追加]** ブレードで **[構成設定]** を選択し、[構成設定] ブレードから、構成プロファイルを構成する XML 値を指定する方法を選択します。
-    - **[XML データを入力する]** - 必要なアプリ構成設定を含む XML プロパティの一覧を入力するか貼り付けます。 XML プロパティ リストの形式は、構成するアプリによって異なります。 使用する形式の詳細については、アプリの供給元にお問い合わせください。
-    Intune によって、入力した XML が有効な形式であるかどうかがチェックされます。 XML プロパティ リストが関連付けられているアプリで動作するかどうかはチェックされません。
-    XML プロパティ リストの詳細については、iOS 開発者ライブラリの [XML プロパティ リスト](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html)に関するページを参照してください。
-    - **[構成デザイナーを使用する]** - XML キーと値のペアをポータルで直接指定できます。
-8. 完了したら、**[構成ポリシーの追加]** ブレードに戻り、**[作成]** をクリックします。
 
-ポリシーが作成され、ポリシーの一覧ブレードが表示されます。
+>[!Note]
+>[Intune App SDK](https://docs.microsoft.com/intune/app-sdk-ios) を使用して、デバイスが Intune に登録されているかを問わず、Intune アプリ保護ポリシーおよびアプリ構成ポリシーで管理される基幹業務アプリを準備することができます。 たとえば、アプリ構成ポリシーを使用して [Intune Managed Browser](app-configuration-managed-browser.md) で許可される URL とブロックされる URL を構成することができます。 このような URL はアプリとポリシーが互換した時点で、ポリシーを使用して構成できるようになります。
 
-その後、通常どおり、アプリの[割り当て](apps-deploy.md)と[監視](apps-monitor.md)に進みます。
 
 割り当てたアプリをデバイスで実行すると、アプリ構成ポリシーで構成した設定を使用して実行されます。
+1 つまたは複数のアプリ構成ポリシーが競合する場合に発生する事象については、構成しているアプリのドキュメントを参照してください。
 
-> [!TIP]
-> 1 つ以上のアプリ構成ポリシーが競合する場合は、どちらのポリシーも適用されません。
+>[!Tip]
+>これらのタスクは Graph API でも実行することができます。 詳細については、[Graph API のリファレンスの MAM を対象とした構成](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create)に関するページを参照してください。
 
-## <a name="create-a-mam-targeted-configuration-policy"></a>MAM 対象の構成ポリシーを作成する
-MAM 対象の構成により、アプリは Intune App SDK から構成データを受け取ることができます。 このデータの形式とバリエーションは、アプリケーションの所有者/開発者が定義して Intune のユーザーに通知する必要があります。 Intune の管理者は、Intune Azure コンソールを使って、構成データの対象設定と展開を行うことができます。 MAM 対象の構成データは、MAM サービスを通じて MAM-WE 対応のアプリケーションに提供されます。 たとえば、[Intune Managed Browser](https://docs.microsoft.com/intune/app-configuration-managed-browser) には許可/ブロック URL リストがあります。 アプリケーション構成データは、MDM チャネルではなく MAM サービスを通して直接アプリにプッシュされます。 [MDM アプリ構成ポリシー](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#create-an-app-configuration-policy)は、MDM によるネイティブ ソリューションです。 MAM 対象の構成との主な違いは、アプリを実行するデバイスを MDM に登録する必要がない点です。 MAM 対象の構成は、iOS と Android で使用できます。 iOS の場合、アプリは Intune APP SDK for iOS (v 7.0.1) を組み込み、アプリ構成設定に参加している必要があります。 MAM 対象の構成ポリシーを作成する手順は、次の通りです。 
-
-1. サインイン、 **Azure ポータル**します。
-
-2. **[Intune] > [モバイル アプリ - アプリ構成ポリシー]** の順に選択します。
-
-3. **[アプリ構成ポリシー]** ブレードで、**[追加]** を選択します。
-
-4. **[名前]**、および必要に応じてアプリ構成設定の **[説明]** を入力し、**[Intune に未登録]** を選択します。
-
-5. **[必要なアプリの選択]** を選択し、**[対象]** アプリ ブレードで、プラットフォームのアプリを選択します。 <br>
-**注:** LOB アプリの場合は、**[その他のアプリ]** を選択してください。 アプリケーションのパッケージ ID を入力します。
-
-6. **[OK]** を選択し、**[アプリの構成を追加する]** ブレードに戻ります。
-
-7. **[構成の定義]** を選択します。 **[構成]** ブレードで、構成を指定するキーと値のペアを定義します。
-
-8. 終了したら、**[OK]** を選択します。
-
-9. **[アプリの構成を追加する]** ブレードで、**[作成]** を選択します。
-
-新しい構成が作成され、[アプリの構成] ブレードに表示されます。
-
-その後、通常どおり、アプリの[割り当て](apps-deploy.md)と[監視](apps-monitor.md)に進みます。
-
-割り当てられたアプリ (Intune App SDK に統合) をデバイスで実行すると、MAM 対象の構成ポリシーで構成した設定を使用して実行されます。 割り当てられたアプリは、Intune App SDK のサポート対象バージョンに統合されている必要があります。 MAM 対象の構成ポリシーを使用するためのアプリ開発要件について詳しくは、[iOS と Intune App SDK の統合ガイド](https://docs.microsoft.com/intune/app-sdk-ios)に関するページを参照してください。
-
-MAM 対象の構成値に関する Graph API の機能について詳しくは、[Graph API リファレンスの MAM 対象の構成](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create)に関するページをご覧ください。
 
 ## <a name="information-about-the-xml-file-format"></a>XML ファイル形式に関する情報
 
@@ -161,3 +139,7 @@ Intune は、プロパティ リストで次のデータ型をサポートしま
 </dict>
 
 ```
+
+## <a name="next-steps"></a>次のステップ
+
+通常どおり、アプリの[割り当て](apps-deploy.md)と[監視](apps-monitor.md)に進みます。
