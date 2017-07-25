@@ -15,11 +15,11 @@ ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c55fa5b3ea86127648850ae7374107ca65db9764
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2a7c15cf695fd88ba5961611c78ecc28a29238af
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense コネクター
 
@@ -115,14 +115,10 @@ Intune では、Skycure との統合に 2 つのモードがあります。
 
 Intune と Skycure の統合は次の手順で行います。
 
-1.  [Azure Active Directory シングル サインオン (SSO) を使用するように Skycure を構成する](skycure-azure-sso-configure.md)
+1.  [Skycure アプリ、Microsoft Authenticator、iOS アプリ構成ポリシーを追加して割り当てる](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-2.  [Skycure iOS アプリ構成ポリシーをダウンロードする](skycure-ios-app-configuration-policy-download.md)
+2.  [Skycure と Intune の統合をセットアップする](skycure-mtd-connector-integration.md)
 
-3.  [Skycure アプリ、Microsoft Authenticator、iOS アプリ構成ポリシーを追加して割り当てる](mtd-apps-ios-app-configuration-policy-add-assign.md)
+3.  [Intune で Skycure MTD コネクタを有効にする](mtd-connector-enable.md)
 
-4.  [Skycure と Intune の統合をセットアップする](skycure-mtd-connector-integration.md)
-
-5.  [Intune で Skycure Mobile Threat Defense を有効にする](mtd-connector-enable.md)
-
-6.  [Intune で Skycure Mobile Threat Defense デバイスのコンプライアンス ポリシーを作成する](mtd-device-compliance-policy-create.md)
+4.  [Intune で Skycure デバイスのコンプライアンス ポリシーを作成する](mtd-device-compliance-policy-create.md)

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ca51c413e3148039b05a9d05a9a511e7158c9a1c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 361777884187937632b2af02d7a7f15f0574193f
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Android for Work デバイスの制限設定
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 07/01/2017
 ### <a name="work-profile-password"></a>仕事用プロファイルのパスワード
 - **[作業プロファイルのパスワードが必要です]** - (仕事用プロファイルが有効な Android 7.0 以降) 仕事用プロファイル内のアプリにのみ適用するパスコード ポリシーを定義します。 既定では、エンド ユーザーは個別に定義された 2 つの PIN を利用するか、または定義された 2 つの PIN のうちの強いほうを選択できます。
 - **[パスワードの最小文字数]** - ユーザーのパスワードに含まれている必要がある文字の最小数 (**4**-**16**) を入力します。
-- **[画面がロックされるまでの非アクティブな最長時間 (分)]** - 非アクティブなデバイスが、仕事用プロファイルのパスワードを再入力して仕事用プロファイル内のアプリを実行するようユーザーに求めるまでの時間を選択します。
+- **[画面がロックされるまでの非アクティブな最長時間 (分)]** - 仕事用プロファイルがロックされるまでの時間を選択します。 ユーザーが再度アクセスするには、資格情報を入力する必要があります。
 - **[デバイスがワイプされるまでのサインイン失敗回数]** - 仕事用プロファイルがデバイスからワイプされるまでの、誤ったパスワードの入力可能回数を入力します。
 - **[パスワードの有効期限 (日数)]** - エンド ユーザーのパスワードの変更が必要になるまでの日数 (**1**-**255**) を入力します。
 - **[必要なパスワードの種類]** - デバイスに設定する必要があるパスワードの種類を選択します。 次の中から選択します。
@@ -77,3 +77,7 @@ ms.lasthandoff: 07/01/2017
 - **[以前のパスワードを再利用できないようにする]** - 以前のパスワードを再利用できるまでに使用する必要がある、新しいパスワードの数を入力します (**1**-**24**)。
 - **[指紋によるロック解除]** - エンド ユーザーがデバイスの指紋スキャナーを使用してロックを解除できないようにします。
 - **[Smart Lock などの信頼できるエージェント]** - 互換性のあるデバイスで Smart Lock 機能を制御できるようにします。 信頼エージェントとも呼ばれるこの電話機能では、デバイスが信頼できる場所にある場合 (デバイスが特定の Bluetooth デバイスに接続したときや、NFC タグの近くにある場合など)、デバイスのロック画面のパスワードを無効化またはバイパスすることができます。この設定を使用して、ユーザーが Smart Lock を構成することを禁止できます。
+
+## <a name="next-steps"></a>次のステップ
+
+「[Microsoft Intune でデバイスの制限設定を構成する方法](device-restrictions-configure.md)」のトピックにある情報を使って、プロファイルを保存し、ユーザーとデバイスに割り当てます。

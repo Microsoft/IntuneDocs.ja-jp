@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a4dfa9e0066a2ac6f410aa9f8e4d77a40484ea5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 69b1540d325f7cfa49e11f91fcb72a464f8a2e0e
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>アプリを Microsoft Intune に追加する方法
 
@@ -79,36 +79,11 @@ Intune の追加ストレージは、当初の購入方法を使用して購入�
 
 ## <a name="apps-added-automatically-by-intune"></a>Intune によって自動的に追加されるアプリ
 
-マイクロソフトによって発行された次のアプリは、Intune に組み込まれており、割り当てられる状態になっています。
+以前は、Intune に簡単に割り当てができる組み込みのアプリが多数含まれていました。 お客様からのフィードバックに基づき、この一覧を削除しました。組み込みのアプリは今後表示されません。
+ただし、組み込みのすべてのアプリが既に割り当てられている場合、そのアプリはアプリの一覧に引き続き表示されます。 これらのアプリの割り当ては必要に応じて続行することができます。
+今後のリリースでは、Intune ポータルから組み込みのアプリをより簡単に選択して割り当てる方法を追加する予定です。
 
-|||
-|-|-|
-|名前|プラットフォーム|アプリの種類|
-|Azure Information Protection|Android|管理対象の Android ストア アプリ|
-|携帯端末用 Dynamics CRM|Android|管理対象の Android ストア アプリ|
-|タブレット PC 用 Dynamics CRM|Android|管理対象の Android ストア アプリ|
-|Excel|iOS|管理対象の iOS ストア アプリ|
-|Excel|Android|管理対象の Android ストア アプリ|
-|Managed Browser|Android|管理対象の Android ストア アプリ|
-|Managed Browser|iOS|管理対象の iOS ストア アプリ|
-|携帯端末の Microsoft Dynamics CRM|iOS|管理対象の iOS ストア アプリ|
-|タブレット PC の Microsoft Dynamics CRM|iOS|管理対象の iOS ストア アプリ|
-|Microsoft Power BI|iOS|管理対象の iOS ストア アプリ|
-|Microsoft Power BI|Android|管理対象の Android ストア アプリ|
-|Microsoft SharePoint|iOS|管理対象の iOS ストア アプリ|
-|Microsoft SharePoint|Android|管理対象の Android ストア アプリ|
-|Microsoft Teams|Android|管理対象の Android ストア アプリ|
-|Microsoft Teams|iOS|管理対象の iOS ストア アプリ|
-|OneDrive|iOS|管理対象の iOS ストア アプリ|
-|OneDrive|Android|管理対象の Android ストア アプリ|
-|OneNote|iOS|管理対象の iOS ストア アプリ|
-|Outlook|Android|管理対象の Android ストア アプリ|
-|Outlook|iOS|管理対象の iOS ストア アプリ|
-|Outlook グループ|Android|管理対象の Android ストア アプリ|
-|Outlook グループ|iOS|管理対象の iOS ストア アプリ|
-|PowerPoint|iOS|管理対象の iOS ストア アプリ|
-
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 次のトピックのいずれかを選択して、各プラットフォーム用のアプリを Intune に追加する方法を確認してください。
 
