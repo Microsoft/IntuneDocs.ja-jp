@@ -14,11 +14,11 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f5af3aefe814a52ae3b43a894242ac972e0cc8fc
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 531112301d0c3827ec7eb3ab4087218caa331b90
+ms.sourcegitcommit: 2b7d644c7a4f85315e11a7d0c5885cc66975c2ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="intune-network-bandwidth-use"></a>Intune のネットワーク帯域幅の使用
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 07/03/2017
 次の表は、各クライアントのネットワークで通信される一般的なコンテンツの概算のサイズと頻度を一覧にしたものです。
 
 > [!NOTE]
-> Intune サービスから提供される必要な更新プログラムとコンテンツをコンピューターとモバイル デバイスで確実に受信するためには、定期的にインターネットに接続する必要があります。 更新プログラムまたはコンテンツを受信するのにかかる時間は一定ではありませんが、ガイドラインとして、毎日、少なくとも 1 時間はインターネットに接続したままにしておく必要があります。
+> デバイスで確実に Intune から更新プログラムとコンテンツを受信するには、定期的にインターネットに接続する必要があります。 更新プログラムやコンテンツを受信するのに必要な時間は一定ではない場合がありますが、毎日、少なくとも 1 時間はインターネットに接続したままにしておく必要があります。
 
 |コンテンツの種類|概算サイズ|頻度と詳細|
 |----------------|--------------------|-------------------------|
@@ -51,9 +51,9 @@ ms.lasthandoff: 07/03/2017
 次の方法を使用して、Intune クライアントのネットワーク帯域幅の使用量を削減できます。
 
 ### <a name="use-a-proxy-server-to-cache-content-requests"></a>コンテンツ要求のキャッシュにプロキシ サーバーを使用する
-コンテンツをキャッシュするプロキシ サーバーを使用して、重複するダウンロードを削減し、インターネットからコンテンツを要求するクライアントのネットワーク帯域幅の使用量を減らすことができます。
+プロキシ サーバーは、重複するダウンロードを削減し、インターネットのコンテンツで使用されるネットワーク帯域幅を減らすために、コンテンツをキャッシュできます。
 
-キャッシュを行うプロキシ サーバーは、ネットワーク上のクライアント コンピューターからの要求を受け取り、インターネットからコンテンツを取得して、HTTP 応答とバイナリのダウンロード両方をキャッシュできます。 サーバーは、キャッシュされた情報を使用して、Intune クライアント コンピューターからの後続の要求に応答します。
+クライアントからコンテンツ要求を受信するキャッシュ機能付きプロキシ サーバーは、そのコンテンツを取得し、Web 応答とダウンロードの両方をキャッシュできます。 サーバーは、キャッシュされたデータを使用して、クライアントからの後続の要求に応答します。
 
 Intune クライアント用にコンテンツをキャッシュするプロキシ サーバーの一般的な設定を以下に示します。
 
@@ -70,7 +70,7 @@ Intune は、Windows コンピューターでのバックグラウンド イン�
 BITS と Windows コンピューターの詳細については、TechNet ライブラリの「[バックグラウンド インテリジェント転送サービス](http://technet.microsoft.com/library/bb968799.aspx)」を参照してください。
 
 ### <a name="use-branchcache-on-computers"></a>コンピューターで BranchCache を使用する
-Intune クライアントは、BranchCache を使用してワイド エリア ネットワーク (WAN) トラフィックを削減できます。 クライアントとしてサポートされる次のオペレーティング システムでも、BranchCache がサポートされます。
+Intune クライアントは、BranchCache を使用してワイド エリア ネットワーク (WAN) トラフィックを削減できます。 次のオペレーティング システムでは、BranchCache をサポートします。
 
 - Windows 7
 - Windows 8.0
@@ -79,22 +79,26 @@ Intune クライアントは、BranchCache を使用してワイド エリア �
 
 BranchCache を使用するには、クライアント コンピューターで BranchCache を有効にして、**分散キャッシュモード**に構成する必要があります。
 
-Intune クライアントをインストールすると、既定で、コンピューターの BranchCache と分散キャッシュ モードは有効です。 ただし、クライアントに BranchCache を無効にするグループ ポリシーが既にある場合、Intune はそのポリシーを優先し、そのコンピューターで BranchCache は無効なままになります。
+Intune クライアントをインストールすると、既定で、コンピューターの BranchCache と分散キャッシュ モードは有効です。 ただし、グループ ポリシーで BranchCache が無効になっている場合、Intune でそのポリシーが上書きされることはなく、BranchCache は無効のままになります。
 
-BranchCache を使用する場合、グループ ポリシーと Intune ファイアウォール ポリシーを管理する組織内の他の管理者にも伝えて、BranchCache を無効にするポリシーやファイアウォールの例外を展開しないようにします。 BranchCache の詳細については、「[BranchCache の概要](http://technet.microsoft.com/library/hh831696.aspx)」を参照してください。
+BranchCache を使用する場合、グループ ポリシーと Intune ファイアウォール ポリシーを管理する組織内の他の管理者と共同作業を行います。 他の管理者が、BranchCache を無効にするポリシーやファイアウォールの例外を展開しないようにしてください。 BranchCache の詳細については、「[BranchCache の概要](http://technet.microsoft.com/library/hh831696.aspx)」を参照してください。
 
 ## <a name="network-communication-requirements"></a>ネットワーク通信の要件
 
-Intune のサブスクリプションを管理するために管理および使用するデバイスと、クラウド ベースのサービスのために必要な Web サイトの間の、ネットワーク通信を可能にする必要があります。
+管理するデバイスと、クラウド ベースのサービスに必要な Web サイトの間の、ネットワーク通信を有効にします。
 
 Intune は、Intune ソフトウェアを実行するサーバーのようなオンプレミスのインフラストラクチャを使用することはありませんが、Exchange や Active Directory の同期ツールなどのオンプレミスのインフラストラクチャを使用できます。
 
-ファイアウォールとプロキシ サーバーの背後にあるコンピューターを管理するには、Intune の通信を許可するようにファイアウォールとプロキシ サーバーをセットアップする必要があります。 プロキシ サーバーの背後にあるコンピューターを管理するには、次の点に注意してください。
+ファイアウォールとプロキシ サーバーの内側にあるコンピューターを管理するには、Intune の通信を有効にする必要があります。
 
 -   Intune クライアントは、**HTTP (80)** と **HTTPS (443)** を使用しているため、プロキシ サーバーは両方のプロトコルをサポートする必要があります
--   Intune では、ソフトウェアや更新プログラムのダウンロードなどの一部の操作で、manage.microsoft.com への認証されていないプロキシ サーバー アクセスが必要です。
+-   Intune では、ソフトウェアや更新プログラムのダウンロードなどの一部のタスクで、manage.microsoft.com への認証されていないプロキシ サーバー アクセスが必要です
 
 個々のクライアント コンピューターでプロキシ サーバーの設定を変更するか、グループ ポリシー設定を使用して、特定のプロキシ サーバーの背後にあるすべてのコンピューターの設定を変更します。
+
+
+<!--
+> [!NOTE] If Windows 8.1 devices haven't cached proxy server credentials, enrollment might fail because the request doesn't prompt for credentials. Enrollment fails without warning as the request wait for a connection. If users might experience this issue, instruct them to open their browser settings and save proxy server settings to enable a connection.   -->
 
 管理対象デバイスは、**[すべてのユーザー]** がファイアウォール経由でサービスにアクセスできるように構成する必要があります。
 
