@@ -14,17 +14,17 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0b09daa05db673817bea67cd8b88c2ac63be7f1e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1627627ab1744f963d738dcedde6a772bb3ae663
+ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Microsoft Intune に登録されていないデバイスの基幹業務アプリとデータを保護する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-モバイル アプリケーション管理 (MAM) ポリシーでは、会社のデータを保護するために、会社データが漏洩する可能性があるアクションを制限し、アプリ PIN などのデータ アクセス要件を強制することができます。 MAM ポリシーを iOS または Android の基幹業務アプリに適用するには、最初に Microsoft Intune アプリ ラッピング ツールを使用してアプリをラップする必要があります。 アプリ ラッピングは、モバイル アプリを変更することなく管理レイヤーを適用するプロセスで、モバイル アプリはユーザーに配布されます。  
+モバイル アプリケーション管理 (MAM) ポリシーでは、会社のデータを保護するために、会社データが漏洩する可能性があるアクションを制限し、アプリ PIN などのデータ アクセス要件を強制することができます。 MAM ポリシーを iOS または Android の基幹業務アプリに適用するには、最初に Microsoft Intune アプリ ラッピング ツールを使用してアプリをラップする必要があります。 アプリ ラッピングは、モバイル アプリを何も変更することなく管理レイヤーを適用するプロセスで、モバイル アプリはユーザーに配布されます。  
 
 このトピックでは、**従業員が所有している管理外のデバイス**からアクセスするアプリと、**サード パーティ製のモバイル デバイス管理 (MDM) ソリューション**で管理されているデバイスに MAM ポリシーを適用する手順を説明します。  **Intune MDM に登録されているデバイス**で実行されている基幹業務アプリを準備するには、「[Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](/intune/apps-prepare-mobile-application-management)」をご覧ください。
 

@@ -14,11 +14,11 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 05975303bd45764d56f00986aea5aa30399893f9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6314f6b13ec7fa23c0b3b46ecd3418a75d581db1
+ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/20/2017
 ---
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Microsoft Intune を使用して iOS アプリ間のデータ転送を管理する
 
@@ -36,7 +36,7 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 ##  <a name="manage-data-transfer-between-ios-apps"></a>iOS アプリ間のデータ転送を管理する
 アプリ保護ポリシーは、iOS の **Open in Management** 機能と共に使用して、以下のように会社データを保護できます。
 
--   **MDM ソリューションで管理されていない従業員所有のデバイス:** [アプリ保護ポリシー設定](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)を **[Allow app to transfer data to only managed apps (アプリで管理対象アプリへのデータ転送のみ許可する)]** に設定できます。 保護されたファイルをポリシーで管理されていないアプリでアプリで開くと、エンドユーザーはファイルを読み取れません。
+-   **MDM ソリューションで管理されていない従業員所有のデバイス:** [アプリ保護ポリシー設定](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)を **[Allow app to transfer data to only managed apps (アプリで管理対象アプリへのデータ転送のみ許可する)]** に設定できます。 保護されたファイルをポリシーで管理されていないアプリで開くと、エンドユーザーはファイルを読み取れません。
 
 -   **Intune で管理されているデバイス:** Intune で登録したデバイスの場合、アプリ保護ポリシーを使用するアプリと、Intune で展開された管理対象の他の iOS アプリの間で自動的にデータを転送できるようになります。 アプリ保護ポリシーを使用するアプリ間でデータを転送できるようにするには、**[Allow app to transfer data to only managed apps (アプリで管理対象アプリへのデータ転送のみ許可する)]** 設定を有効にします。 **Open in Management** 機能を使用して、Intune で展開されているアプリ間のデータ転送を制御できます。   
 
@@ -78,6 +78,7 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 | VMware AirWatch | IntuneMAMUPN | 文字列型 | {UserPrincipalName}|
 | MobileIron Core | IntuneMAMUPN | 文字列型 | $EMAIL$  **または**  $USER_UPN$ |
 | MobileIron Cloud | IntuneMAMUPN | 文字列型 | ${userUPN} **または** ${userEmailAddress} |
+| ManageEngine Mobile Device Manager | IntuneMAMUPN | 文字列型 | %upn% |
 
 ### <a name="example-2-end-user-experience"></a>例 2: エンドユーザー エクスペリエンス
 

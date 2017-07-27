@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 07/06/2017
+ms.date: 07/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 299e2ed0a84c7158a582ee874f0711eb3c379532
-ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
+ms.openlocfilehash: ebea9fe4cbf0c6c788ba4a209132856eda06445e
+ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでモバイル アプリケーションを管理するために Android アプリを準備する
 
@@ -121,6 +121,17 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 **KeyStorePassword** と **KeyPassword** の入力を求められます。 キーストア ファイルの作成に使用した資格情報を入力します。
 
 ラップされたアプリとログ ファイルが生成されて、指定した出力パスに保存されます。
+
+## <a name="reusing-signing-certificates-and-wrapping-apps"></a>署名証明書とラッピング アプリの再利用
+Android では、Android デバイスにインストールするために、すべてのアプリを有効な証明書で署名する必要があります。
+
+ラップされたアプリは、ラッピング処理の一部、または既存の署名ツール (ラッピングが破棄される前のアプリの署名情報) を使用したラッピングの*後*のいずれかに署名できます。
+ 
+可能であれば、ビルド処理中に既に使用されている署名情報を、ラッピング中に使用する必要があります。 特定の組織では、キーストア情報 (例: アプリのビルド チーム) を所有するユーザーと共同作業する必要がある場合があります。 
+
+以前の署名証明書を使用できない、またはアプリを以前に展開していない場合は、[Android 開発者ガイド](https://developer.android.com/studio/publish/app-signing.html#signing-manually)の手順に従って、新しい署名証明書を作成できます。
+
+アプリが別の署名証明書を使って以前に展開されている場合、アップグレード後にアプリを Intune コンソールにアップロードすることはできません。 アプリをビルドした証明書ではなく、別の証明書を使ってアプリが署名されている場合、アプリのアップグレード シナリオは中断されます。 このように、新しい署名証明書は、アプリのアップグレード用に保持される必要があります。 
 
 ## <a name="security-considerations-for-running-the-app-wrapping-tool"></a>アプリ ラッピング ツールを実行するうえでのセキュリティ上の考慮事項
 スプーフィング、情報漏えい、および権限の昇格攻撃の可能性を抑制するには、次の手順に従います。
