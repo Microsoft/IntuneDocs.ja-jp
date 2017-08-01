@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/12/2017
 ---
-# Microsoft Intune アプリの管理とは
-<a id="what-is-microsoft-intune-app-management" class="xliff"></a>
+# <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune アプリの管理とは
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,8 +36,7 @@ IT 管理者は、エンド ユーザーのために、業務に必要なアプ�
 
 Intune では、必要なデバイスで必要なアプリを利用できるように、さまざまな機能を提供しています。
 
-## プラットフォーム別のアプリ管理機能
-<a id="app-management-capabilities-by-platform" class="xliff"></a>
+## <a name="app-management-capabilities-by-platform"></a>プラットフォーム別のアプリ管理機能
 
 ||||||
 |-|-|-|-|-|
@@ -62,8 +60,7 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
 
 <sup>2</sup> Intune のみで管理されているデバイスに適用されます。
 
-## 開始する方法
-<a id="how-to-get-started" class="xliff"></a>
+## <a name="how-to-get-started"></a>開始する方法
 
 アプリに関連するものは、ほとんどが **[Mobile Apps]** ワークロード内にあり、以下の手順でアクセスできます。
 
@@ -73,8 +70,7 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
 
     ![[モバイル アプリ] ワークロード](./media/apps-workload.png)
 
-### コンピューターの
-<a id="manage" class="xliff"></a>
+### <a name="manage"></a>コンピューターの
 - **[アプリ]** - ほとんどのアプリをこのノードで追加、割り当て、監視します。
     - [アプリを追加する](apps-add.md)
     - [アプリを割り当てる](apps-deploy.md)
@@ -89,8 +85,7 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
 - **[iOS プロビジョニング プロファイル]** - iOS アプリには、プロビジョニング プロファイルと、証明書によって署名されたコードが含まれます。 証明書の期限が切れると、アプリを実行できなくなります。 Intune には、有効期限が近づいているアプリを持つデバイスに新しいプロビジョニング プロファイルのポリシーを事前に割り当てるツールが用意されています。
     - [iOS アプリ プロビジョニング プロファイル](app-provisioning-profile-ios.md)
 
-### モニター
-<a id="monitor" class="xliff"></a>
+### <a name="monitor"></a>モニター
 - **[ライセンスされたアプリ]** - アプリ ストアからのボリューム購入アプリの表示、割り当て、監視を行います。
     - [ビジネス向け一括購入アプリ向けの Windows ストア](windows-store-for-business.md)
 - **[検出されたアプリ]** - Intune によって割り当てられ、デバイスにインストールされたすべてのアプリを表示します。
@@ -99,8 +94,7 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
 
 詳細については、[アプリの監視](apps-monitor.md)に関するページを参照してください。
 
-### Setup
-<a id="setup" class="xliff"></a>
+### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
 - **[ビジネス向け Windows ストア]** - ビジネス向け Windows ストアとの統合を設定します。 その後、購入済みのアプリケーションを Intune に同期して割り当て、ライセンスの使用状況を追跡できるようになります。
