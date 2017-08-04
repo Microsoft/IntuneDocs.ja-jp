@@ -21,8 +21,7 @@ ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/01/2017
 ---
-<a id="configure-and-manage-pkcs-certificates-with-intune" class="xliff"></a>
-# Intune で PKCS 証明書を構成して管理する
+# <a name="configure-and-manage-pkcs-certificates-with-intune"></a>Intune で PKCS 証明書を構成して管理する
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 このトピックでは、インフラストラクチャを構成してから、Intune で PKCS 証明書プロファイルを作成して割り当てる方法について説明します。
@@ -35,8 +34,7 @@ ms.lasthandoff: 07/01/2017
 
 -  証明機関と通信できるコンピューターで実行する Intune 証明書コネクタ。
 
-<a id="important-terms" class="xliff"></a>
-## 重要な用語
+## <a name="important-terms"></a>重要な用語
 
 
 -    **Active Directory ドメイン**: このセクションで示されているすべてのサーバー (Web アプリケーション プロキシ サーバーを除く) は、Active Directory ドメインに参加する必要があります。
@@ -56,8 +54,7 @@ ms.lasthandoff: 07/01/2017
     WAP の証明書については、「[内部アプリケーションの公開のために Web アプリケーション プロキシをインストールおよび構成する](https://technet.microsoft.com/library/dn383650.aspx)」の**証明書の計画**に関するセクションを参照してください。 WAP サーバーの一般的な情報については、「[Web アプリケーション プロキシの使用](http://technet.microsoft.com/library/dn584113.aspx)」を参照してください。|
 
 
-<a id="certificates-and-templates" class="xliff"></a>
-## 証明書とテンプレート
+## <a name="certificates-and-templates"></a>証明書とテンプレート
 
 |オブジェクト|説明|
 |----------|-----------|
@@ -65,18 +62,15 @@ ms.lasthandoff: 07/01/2017
 |**信頼されたルート CA 証明書**|これを発行元 CA または発行元 CA を信頼するデバイスから **.cer** ファイルとしてエクスポートし、信頼された CA 証明書プロファイルを使用してデバイスに割り当てます。<br /><br />オペレーティング システムのプラットフォームごとに 1 つの信頼されたルート CA 証明書を使用し、作成する各信頼されたルート証明書プロファイルに関連付けます。<br /><br />必要に応じて、信頼されたルート CA 証明書を追加して使用できます。 ルート CA 証明書を追加する局面としては、Wi-Fi アクセス ポイント用のサーバー認証証明書に署名する CA の信頼性を担保する必要がある場合などが考えられます。|
 
 
-<a id="configure-your-infrastructure" class="xliff"></a>
-## インフラストラクチャを構成する
+## <a name="configure-your-infrastructure"></a>インフラストラクチャを構成する
 証明書プロファイルを構成するには、次の手順を完了する必要があります。 以下の手順には、Windows Server 2012 R2 と Active Directory 証明書サービス (ADCS) についての知識が必要となります。
 
 - **手順 1** - 証明機関で証明書テンプレートを構成します。
 - **手順 2** - Intune 証明書コネクタを有効にし、インストールし、構成します。
 
-<a id="step-1---configure-certificate-templates-on-the-certification-authority" class="xliff"></a>
-## 手順 1 - 証明機関で証明書テンプレートを構成する
+## <a name="step-1---configure-certificate-templates-on-the-certification-authority"></a>手順 1 - 証明機関で証明書テンプレートを構成する
 
-<a id="to-configure-the-certification-authority" class="xliff"></a>
-### 証明機関を構成するには
+### <a name="to-configure-the-certification-authority"></a>証明機関を構成するには
 
 1.  発行元 CA で、証明書テンプレート スナップインを使用して、新しいカスタム テンプレートを作成するか、または PKCS で使用するために (ユーザー テンプレートのように) 既存のテンプレートをコピーして編集します。
 
@@ -112,15 +106,13 @@ ms.lasthandoff: 07/01/2017
 
 4.  CA コンピューターで、Intune 証明書コネクタをホストするコンピューターが、PKCS 証明書プロファイルの作成で使用するテンプレートにアクセスできるように、登録アクセス許可を持つことを確認します。 CA コンピューター プロパティの **[セキュリティ]** タブでそのアクセス許可を設定します。
 
-<a id="step-2---enable-install-and-configure-the-intune-certificate-connector" class="xliff"></a>
-## 手順 2 - Intune 証明書コネクタを有効にし、インストールし、構成する
+## <a name="step-2---enable-install-and-configure-the-intune-certificate-connector"></a>手順 2 - Intune 証明書コネクタを有効にし、インストールし、構成する
 この手順では、次のことを行います。
 
 - 証明書コネクタのサポートを有効にする
 - 証明書コネクタをダウンロードし、インストールして、構成します。
 
-<a id="to-enable-support-for-the-certificate-connector" class="xliff"></a>
-### 証明書コネクタのサポートを有効にするには
+### <a name="to-enable-support-for-the-certificate-connector"></a>証明書コネクタのサポートを有効にするには
 
 1.  Azure ポータルにサインインします。
 2.  **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
@@ -128,8 +120,7 @@ ms.lasthandoff: 07/01/2017
 2.  **[デバイス構成]** ブレードで、**[セットアップ]** > **[証明機関]** の順に選択します。
 2.  **[手順 1]** で、**[有効にする]** を選択します。
 
-<a id="to-download-install-and-configure-the-certificate-connector" class="xliff"></a>
-### 証明書コネクタをダウンロードし、インストールして、構成するには
+### <a name="to-download-install-and-configure-the-certificate-connector"></a>証明書コネクタをダウンロードし、インストールして、構成するには
 
 1.  **[デバイスの構成]** ブレードで、**[セットアップ]** > **[証明機関]** の順に選択します。
 2.  **[Certificate Connector のダウンロード]** を選択します。
@@ -166,8 +157,7 @@ ms.lasthandoff: 07/01/2017
 **http:// &lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
 
 
-<a id="how-to-create-a-pkcs-certificate-profile" class="xliff"></a>
-### PKCS 証明書プロファイルを作成する方法
+### <a name="how-to-create-a-pkcs-certificate-profile"></a>PKCS 証明書プロファイルを作成する方法
 
 Azure Portal で、**[デバイスの構成]** ワークロードを選択します。
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
@@ -205,8 +195,7 @@ Azure Portal で、**[デバイスの構成]** ワークロードを選択しま
 
 プロファイルが作成され、プロファイルの一覧ブレードに表示されます。
 
-<a id="how-to-assign-the-certificate-profile" class="xliff"></a>
-## 証明書プロファイルを割り当てる方法
+## <a name="how-to-assign-the-certificate-profile"></a>証明書プロファイルを割り当てる方法
 
 証明書プロファイルをグループに割り当てる前に、次の点を考慮します。
 

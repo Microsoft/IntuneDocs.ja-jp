@@ -19,11 +19,9 @@ ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/11/2017
 ---
-# Intune の展開計画に関するその他のリソース
-<a id="additional-resources-for-planning-your-intune-deployment" class="xliff"></a>
+# <a name="additional-resources-for-planning-your-intune-deployment"></a>Intune の展開計画に関するその他のリソース
 
-## テンプレート
-<a id="templates" class="xliff"></a>
+## <a name="templates"></a>テンプレート
 
 計画ガイドに使用されたテーブルの Microsoft Excel テンプレートを[ダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)できます。
 
@@ -44,8 +42,7 @@ ms.lasthandoff: 07/11/2017
 | | 条件付きアクセス ポリシー|-|
 
 
-## 参考記事
-<a id="further-reading" class="xliff"></a>
+## <a name="further-reading"></a>参考記事
 
 以下のリソースで追加情報を確認してください。Intune の展開計画、設計、実装プロセス時に役立つ場合があります。
 
