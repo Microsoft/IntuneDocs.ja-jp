@@ -15,23 +15,24 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8245bb3fa8f08e719df903a70f079f4fdf534ca5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c5403c8b81caf84a0c7d4bd126a0903ac3122539
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
-<a id="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune" class="xliff"></a>
-# Microsoft Intune でカスタム ポリシーを使用して Samsung KNOX Standard デバイス用のアプリを許可またはブロックする
-[!INCLUDE[azure_portal](./includes/azure_portal.md)] 次のいずれかを作成する Microsoft Intune のカスタム ポリシーを作成するには、このトピックの手順を使用します。
+# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Microsoft Intune でカスタム ポリシーを使用して Samsung KNOX Standard デバイス用のアプリを許可またはブロックする
+
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+次のいずれかを作成する Microsoft Intune のカスタム ポリシーを作成するには、このトピックの手順を使用します。
 
 - デバイスでの実行をブロックするアプリの一覧。 この一覧のアプリは、ポリシー適用時に既にインストールされていた場合でも、実行をブロックされます。
 - デバイスのユーザーが Google Play ストアからインストールできるアプリの一覧。 一覧のアプリのみをインストールできます。 他のアプリはストアからインストールできません。
 
 これらの設定は、Samsung KNOX Standard を実行するデバイスでのみ使用できます。
 
-<a id="create-an-allowed-or-blocked-app-list" class="xliff"></a>
-## 許可されているアプリまたはブロックされているアプリの一覧の作成
+## <a name="create-an-allowed-or-blocked-app-list"></a>許可されているアプリまたはブロックされているアプリの一覧の作成
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
@@ -44,8 +45,7 @@ ms.lasthandoff: 07/01/2017
 3. **[OMA-URI のカスタム設定]** ブレードで、**[追加]** を選択します。
 4. **[OMA-URI 設定の追加または編集]** ダイアログ ボックスで、以下を指定します。
 
-<a id="for-a-list-of-apps-that-are-blocked-from-running-on-the-device" class="xliff"></a>
-### デバイスでの実行がブロックされているアプリの一覧の場合:
+### <a name="for-a-list-of-apps-that-are-blocked-from-running-on-the-device"></a>デバイスでの実行がブロックされているアプリの一覧の場合:
 
 - **[名前]** - 「**PreventStartPackages**」と入力します。
 - **[説明]** - "実行されないようにブロックされているアプリの一覧" のような説明 (省略可能) を入力します。
@@ -53,8 +53,7 @@ ms.lasthandoff: 07/01/2017
 -   **[OMA-URI]** - 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**」と入力します
 -   **[値]** - ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,** **|** を使用できます。 (例: package1;package2;)
 
-<a id="for-a-list-of-apps-that-users-are-allowed-to-install-from-the-google-play-store-while-excluding-all-other-apps" class="xliff"></a>
-### 他のすべてのアプリの実行中にユーザーが Google Play ストアからインストールできるアプリの一覧の場合:
+### <a name="for-a-list-of-apps-that-users-are-allowed-to-install-from-the-google-play-store-while-excluding-all-other-apps"></a>他のすべてのアプリの実行中にユーザーが Google Play ストアからインストールできるアプリの一覧の場合:
 - **[名前]** - 「**AllowInstallPackages**」と入力します。
 - **[説明]**: "ユーザーが Google Play からインストールできるアプリの一覧" のような説明 (省略可能) を入力します。
 - **[データ型]** - ドロップダウン リストで **[文字列]** を選択します。

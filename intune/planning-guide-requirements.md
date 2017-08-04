@@ -20,8 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/11/2017
 ---
-# ユース ケース シナリオの要件の決定
-<a id="determine-use-case-scenario-requirements" class="xliff"></a>
+# <a name="determine-use-case-scenario-requirements"></a>ユース ケース シナリオの要件の決定
 
 このセクションでは、各ユース ケース シナリオ内の組織グループごとに要件を決定します。 このプロセスは、アーキテクチャとデザイン、オンボード、ロールアウトなど、その他の Intune 展開の計画を準備するのに役立ちます。 また、Intune 展開プロジェクトに関連する潜在的なギャップと課題の特定にも役立ちます。
 
@@ -42,8 +41,7 @@ ms.lasthandoff: 07/11/2017
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して、お客様の組織のユース ケースとサブ ユース ケースの要件を入力できます。
 
 
-## 要件の例
-<a id="examples-of-requirements" class="xliff"></a>
+## <a name="examples-of-requirements"></a>要件の例
 
 "要件" 列に使用できる追加の例を次に示します。
 
@@ -64,7 +62,6 @@ ms.lasthandoff: 07/11/2017
     - アプリの保護ポリシー付きの Office 365
     - アプリの保護ポリシー付きの基幹業務 (LOB)
 
-## 次のステップ
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>次のステップ
 
 次のセクションでは、[Intune ロールアウト計画を作成する方法](planning-guide-rollout-plan.md)についてのガイダンスを提供します。

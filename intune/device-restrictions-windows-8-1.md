@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,22 @@ ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da190ddeda62ce3385aab4308595b473c3059ed6
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 56a133105df88d0efede1dd8829285cc845d3621
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Windows 8.1 以降のデバイスの制限設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>全般
--   **[Windows 10 にすべての構成を適用する]** - Windows 8.1 デバイスに加え、Windows 10 デバイスに、このポリシーの設定を適用できます。
+
 -   **[診断データの送信]** - デバイスが Microsoft に診断情報を送信できるようにします。
 -   **[ファイアウォール]** - Windows ファイアウォールを有効にすることを要求します。
 -   **[ユーザー アカウント制御]** - デバイス上のユーザー アカウント制御 (UAC) の使用を必須とします。
+
 ## <a name="password"></a>パスワード
 -   **[必要なパスワードの種類]** - エンド ユーザーがデバイスにアクセスする際にパスワードの入力を要求します。
 -   **[パスワードの最小文字数]** - パスワードに必要な最小の長さ (文字数) を構成します。
@@ -62,8 +63,10 @@ Windows 8.1 デバイスに対してこの設定を有効にすると、デバ�
 -   **[エンタープライズ モード メニュー アクセス]** - Internet Explorer からエンタープライズ モード メニュー オプションへのアクセスをユーザーに許可します。
 この設定を選択した場合は、さらに **[ログ レポートの場所]** を指定できます。これは、エンタープライズ モード アクセスが有効にされた Web サイトの記録となるレポートの URL を表します。
 -   **[エンタープライズ モードのサイト一覧の場所]** - エンタープライズ モードがアクティブな場合に使用する Web サイトの一覧の場所を指定します。
+
 ## <a name="cellular"></a>移動体通信
 -   **[データ ローミング]** - デバイスが移動体通信ネットワーク上にある場合はデータ ローミングを使用できるようにします。
+
 ## <a name="cloud-and-storage"></a>クラウドとストレージ
 -   **[作業フォルダーの URL]** - 作業フォルダーの URL を設定して、デバイス間でドキュメントを同期できるようにします。
 -   **[Microsoft アカウントを使用せずに Windows Mail アプリにアクセスする]** - Microsoft アカウントを使用せずに Windows メール アプリケーションにアクセスできるようにします。    

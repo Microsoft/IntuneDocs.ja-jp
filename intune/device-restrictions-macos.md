@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/23/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3129cbaf-96c2-4837-8907-ca87a605a496
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 716ca0a2041bdd2ecfadd180999a09f80373cb2a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 76d532745ad3b8761a88aaf0772053f0629e050a
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での macOS デバイスの制限設定
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 07/01/2017
 この設定を使用して、デバイスの制限プロファイルの macOS デバイスを管理します。
 
 ## <a name="password"></a>パスワード
--   **[パスワードが必要です]** - エンド ユーザーがデバイスにアクセスする際にパスワードの入力を要求します。
+-   **[パスワード]** - エンド ユーザーがデバイスにアクセスする際にパスワードの入力を要求します。
     -   **[必要なパスワードの種類]** - パスワードを数字のみとすることができるかどうか、または英数字 (文字と数字を含む) にする必要があるかどうかを指定します。 この設定は、Mac OS X バージョン 10.10.3 以降でのみサポートされます。
     -   **[パスワードに使用する英数字以外の文字数]** - パスワードに必要な複雑な文字の数を指定します (**0** ～ **4** 文字)。<br>複雑な文字とは、**?** のような記号です。
     -   **[パスワードの最小文字数]** - ユーザーが構成する必要があるパスワードの最小文字数 (**4** ～ **16** 文字) を入力します。

@@ -22,8 +22,7 @@ ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/13/2017
 ---
-# Intune から iOS デバイスの登録を解除する
-<a id="unenroll-your-ios-device-from-intune" class="xliff"></a>
+# <a name="unenroll-your-ios-device-from-intune"></a>Intune から iOS デバイスの登録を解除する
 
 Intune から iOS デバイスの登録を解除すると、デバイスは会社のリソースにアクセスできなくなり、Intune で管理されなくなります。
 

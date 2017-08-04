@@ -14,11 +14,11 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fdd75bd2b96eb20e0e73b7f8f76cf1a5cc035011
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3f08f110163159c1219492539107cc6b33c8012d
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="create-a-design"></a>設計の作成
 
@@ -189,7 +189,7 @@ Intune で証明書を構成する方法の詳細については、以下をご�
 
 環境内に存在するデバイスを把握し、設計を作成するときにデバイスが Intune によってサポートされるかどうかを確認する必要があります。 Intune は、IOS、Android、Windows の各プラットフォームをサポートしています。
 
--   詳しくは、「[Intune 対応デバイス](/intune-classic/get-started/supported-mobile-devices-and-computers)」をご覧ください。
+-   詳しくは、「[Intune 対応デバイス](/intune/supported-devices-browsers)」をご覧ください。
 
 ### <a name="devices"></a>[デバイス]
 

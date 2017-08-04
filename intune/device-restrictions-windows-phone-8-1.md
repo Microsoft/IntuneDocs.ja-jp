@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e425b8a3c93c2f5dc73fbe9c75aa9adf49c5cdc8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 54a50ec2195ed2f760f69137418977f417220aa1
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Windows Phone 8.1 デバイスの制限設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>全般
--   **[Apply all settings to Windows Phone 8.1 only (すべての設定を Windows Phone 8.1 のみに適用する)]** - これは、クラシック Intune ポータルで構成できる設定です。 Azure Portal では、この設定は変更できません。 これを **[構成済み]** に設定すると、すべての設定が Windows Phone 8.1 デバイスのみに適用されるようになります。 **[未構成]** に設定されている場合、これらの設定は Windows 10 Mobile デバイスにも適用されます。
+
 -   **[カメラ]** - デバイスのカメラを許可またはブロックします。
 -   **[コピー/貼り付け]** - デバイスでコピー/貼り付け機能を許可またはブロックします。
 -   **[リムーバブル記憶域]** - リムーバブル記憶域 (SD カードなど) の使用をデバイスに許可します。
@@ -37,8 +37,8 @@ ms.lasthandoff: 07/01/2017
 -   **[カスタム メール アカウントの同期]** - Microsoft 以外の電子メール アカウントにデバイスが接続できるようにします。
 
 ## <a name="password"></a>パスワード
--   **[Apply all settings to Windows Phone 8.1 only (すべての設定を Windows Phone 8.1 のみに適用する)]** - これは、クラシック Intune ポータルで構成できる設定です。 Azure Portal では、この設定は変更できません。 これを **[構成済み]** に設定すると、すべての設定が Windows Phone 8.1 デバイスのみに適用されるようになります。 **[未構成]** に設定されている場合、これらの設定は Windows 10 Mobile デバイスにも適用されます。
--   **[パスワードが必要です]** - エンド ユーザーがデバイスにアクセスする際にパスワードの入力を要求します。
+
+-   **[パスワード]** - エンド ユーザーがデバイスにアクセスする際にパスワードの入力を要求します。
     -   **[必要なパスワードの種類]** - 英数字や数字のみなど、必要なパスワードの種類を指定します。
     -   **[パスワードの最小文字数]** - パスワードに必要な最小文字数を指定します。
     -   **[単純なパスワード]** - "0000" や "1234" などの単純なパスワードを使用できることを指定します。
@@ -49,12 +49,10 @@ ms.lasthandoff: 07/01/2017
 -   **[暗号化]** - サポートされているモバイル デバイス上のデータの暗号化を要求します。
 
 ## <a name="app-store"></a>アプリ ストア
--   **[Apply all settings to Windows Phone 8.1 only (すべての設定を Windows Phone 8.1 のみに適用する)]** - これは、クラシック Intune ポータルで構成できる設定です。 Azure Portal では、この設定は変更できません。 これを **[構成済み]** に設定すると、すべての設定が Windows Phone 8.1 デバイスのみに適用されるようになります。 **[未構成]** に設定されている場合、これらの設定は Windows 10 Mobile デバイスにも適用されます。
+
 -   **[アプリ ストア]** - デバイスからアプリ ストアへの接続をユーザーに許可します。
 
 ## <a name="restricted-apps"></a>制限付きアプリ
-
--   **[Apply all settings to Windows Phone 8.1 only (すべての設定を Windows Phone 8.1 のみに適用する)]** - これは、クラシック Intune ポータルで構成できる設定です。 Azure Portal では、この設定は変更できません。 これを **[構成済み]** に設定すると、すべての設定が Windows Phone 8.1 デバイスのみに適用されるようになります。 **[未構成]** に設定されている場合、これらの設定は Windows 10 Mobile デバイスにも適用されます。
 
 制限付きアプリの一覧では、次の一覧のいずれかを構成できます。
 
@@ -81,11 +79,11 @@ ms.lasthandoff: 07/01/2017
 
 
 ## <a name="browser"></a>ブラウザー
--   **[Apply all settings to Windows Phone 8.1 only (すべての設定を Windows Phone 8.1 のみに適用する)]** - これは、クラシック Intune ポータルで構成できる設定です。 Azure Portal では、この設定は変更できません。 これを **[構成済み]** に設定すると、すべての設定が Windows Phone 8.1 デバイスのみに適用されるようになります。 **[未構成]** に設定されている場合、これらの設定は Windows 10 Mobile デバイスにも適用されます。
+
 -   **[Web ブラウザー]** - デバイス上の組み込みの Web ブラウザーを許可またはブロックします。
 
 ## <a name="cellular-and-connectivity"></a>携帯ネットワークと接続性
--   **[Apply all settings to Windows Phone 8.1 only (すべての設定を Windows Phone 8.1 のみに適用する)]** - これは、クラシック Intune ポータルで構成できる設定です。 Azure Portal では、この設定は変更できません。 これを **[構成済み]** に設定すると、すべての設定が Windows Phone 8.1 デバイスのみに適用されるようになります。 **[未構成]** に設定されている場合、これらの設定は Windows 10 Mobile デバイスにも適用されます。
+
 -   **[Wi-Fi]** - デバイスの Wi-Fi 機能を有効または無効にします。
 -   **[Wi-Fi テザリング]** - デバイスで Wi-Fi テザリングを使用できるようにします。
 -   **[自動的に Wi-Fi ホットスポットに接続します]** - 無料の Wi-Fi ホットスポットに自動的に接続し、使用条件に自動的に同意することをデバイスに許可します。
