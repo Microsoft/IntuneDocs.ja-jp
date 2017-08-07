@@ -8,9 +8,7 @@
 ### [アプリの UI の新機能](whats-new-app-ui.md)
 ### [新しいアーカイブとは (Azure Portal)](whats-new-archive.md)
 ### [新しいアーカイブとは (クラシック ポータル)](whats-new-archive-classic.md)
-
-<!--## High-level architecture-->
-
+## [高レベル アーキテクチャ](high-level-architecture.md)
 ## [デバイスとアプリのライフサイクル](introduction-device-app-lifecycles.md)
 ### [デバイスのライフサイクル](device-lifecycle.md)
 ### [アプリのライフサイクル](app-lifecycle.md)
@@ -264,6 +262,8 @@
 
 # 監視とトラブルシューティング
 ## [ヘルプデスク オペレーター ロールを使用する](help-desk-operators.md)
+## [Intune データ ウェアハウスを使用する](reports-nav-create-intune-reports.md)
+### [Power BI でデータ ウェアハウスに接続する](reports-proc-get-a-link-powerbi.md)
 
 # 開発とカスタマイズ
 ## [カスタム デバイス設定の構成](custom-settings-configure.md)
@@ -288,5 +288,16 @@
 ### [Intune App SDK Xamarin コンポーネント](app-sdk-xamarin.md)
 ## [Intune Graph API の使用方法](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
+## [Intune データ ウェアハウス API](reports-nav-intune-date-warehouse.md)
+<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [データ ウェアハウス API エンドポイント](reports-api-url.md)
+### [データ ウェアハウスのデータ モデル](reports-ref-data-model.md)
+#### [日付エンティティのリファレンス](reports-ref-date.md)
+#### [ユーザー エンティティのリファレンス](reports-ref-user.md)
+#### [モバイル アプリ管理 (MAM) エンティティのリファレンス](reports-ref-mobile-app-management.md)
+#### [デバイス エンティティのリファレンス](reports-ref-devices.md)
+#### [アプリケーション エンティティのリファレンス](reports-ref-application.md)
+#### [ポリシー エンティティのリファレンス](reports-ref-policy.md)
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
 
 # [用語集](intune-glossary.md)
