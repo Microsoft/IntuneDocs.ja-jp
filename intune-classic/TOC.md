@@ -237,7 +237,7 @@
 ## [Intune App SDK Xamarin コンポーネント](/intune/app-sdk-xamarin?toc=/intune-classic/toc.json)
 
 # [トラブルシューティング](troubleshoot/general-troubleshooting-tips-for-microsoft-intune.md)
-## [サポートを受ける方法](troubleshoot/how-to-get-support-for-microsoft-intune.md)
+## [サポートを受ける方法](/intune/get-support?toc=/intune-classic/toc.json)
 ## [レポートを使用した Intune の監視](deploy-use/understand-microsoft-intune-operations-by-using-reports.md)
 ## [Endpoint Protection に関するトラブルシューティング](troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune.md)
 ## [会社のリソースへのアクセスに関する問題のトラブルシューティング](troubleshoot/troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
