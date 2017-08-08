@@ -83,7 +83,7 @@
 ### [iOS の登録の設定](ios-enroll.md)
 #### [デバイス登録プログラム](device-enrollment-program-enroll-ios.md)
 #### [Apple School Manager](apple-school-manager-set-up-ios.md)
-#### [Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md)
+#### [Apple Configurator](apple-configurator-enroll-ios.md)
 ### [macOS の登録の設定](macos-enroll.md)
 
 ## [デバイスの管理](device-management.md)
@@ -101,6 +101,7 @@
 ### [ユーザーの削除](device-remove-user.md)
 ### [Android のリモート コントロール](device-profile-android-teamviewer.md)
 ### [Windows 10 の PIN のリセット](device-windows-pin-reset.md)
+### [同期デバイス](device-sync.md)
 ### [デバイス インベントリの確認](device-inventory.md)
 
 <!--### Add and delete users -->
@@ -171,6 +172,7 @@
 ### [Windows 10 の教育設定を構成する](education-settings-configure.md)
 ### [iOS の教育設定を構成する](education-settings-configure-ios.md)
 ### [iOS の教育共有デバイスの構成](education-settings-configure-ios-shared.md)
+### [IOS 更新プログラム ポリシーの構成](software-updates-ios.md)
 ### [ビジネス設定向けの Windows Update の構成](windows-update-for-business-configure.md)
 ### [証明書を構成する](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
