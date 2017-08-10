@@ -14,11 +14,11 @@ ms.assetid: 9e176e10-72fd-42fe-94ef-b41d57a4914f
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: d1276c983cdf0e22e2e78e79b6646e045c8fb135
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: afb6cd7354fe0d131f249962a6f00aaa30c9c3e1
+ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/04/2017
 ---
 # <a name="you-need-to-resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Mobile Threat Defense アプリが検出した脅威を解決する必要がある
 
@@ -26,10 +26,11 @@ Mobile Threat Defense が Android デバイスで潜在的な脅威を検出し�
 
 * [Lookout for Work](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
 * [Skycure](you-need-to-resolve-a-threat-found-by-skycure-android.md)
+* [SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-android.md)
 
 この問題を解決するには、Mobile Threat Defense アプリを開き、アプリの指示に従います。
 
-## <a name="example-of-an-app-that-mobile-threat-defense-sees-as-a-threat"></a>Mobile Threat Defense によって脅威とみなされるアプリの例
+## <a name="example-of-an-app-that-mobile-threat-defense-sees-as-a-threat"></a>Mobile Threat Defense によって脅威と見なされるアプリの例
 
 Mobile Threat Defense が脅威と判断するアプリがインストールされている場合は、脅威となるアプリを示す画面が表示されます。 このようなメッセージが表示された場合、画面の上部に表示されているアプリ名をタップし、指示に従い、脅威を取り除きます。
 
