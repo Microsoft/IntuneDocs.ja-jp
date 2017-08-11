@@ -263,7 +263,7 @@
 ### [Windows アプリを入手する方法](end-user-apps-windows.md)
 
 # 監視とトラブルシューティング
-## [ヘルプデスク オペレーター ロールを使用する](help-desk-operators.md)
+## [問題のトラブルシューティングの方法](help-desk-operators.md)
 ## [Intune データ ウェアハウスを使用する](reports-nav-create-intune-reports.md)
 ### [Power BI でデータ ウェアハウスに接続する](reports-proc-get-a-link-powerbi.md)
 
