@@ -3,8 +3,8 @@ title: "アプリ保護ポリシーを作成して展開する"
 titleSuffix: Intune on Azure
 description: "Intune のアプリ保護ポリシーが、管理するアプリによって使用される会社のデータを保護するうえでどのように役立つかについて説明します。\""
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 04/24/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 56a19bc4d970f230f719af9369dada45ffb65e76
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 47cafd6fa252ca7db9ca1129c5dcc5bd0d70d154
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>アプリ保護ポリシーを作成して割り当てる方法
 
