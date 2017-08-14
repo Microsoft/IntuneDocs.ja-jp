@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 04/14/2017
+ms.date: 07/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3df23e1f29543701cf3806a8fecc132ef3ac4f43
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 915b432ed32565e820e16a65932fcdeac00d9bc3
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Apple MDM プッシュ証明書を取得する
 
@@ -28,13 +28,15 @@ ms.lasthandoff: 07/01/2017
 Intune では、iPad、iPhone、および Mac コンピューターのモバイル デバイス管理 (MDM) が有効になり、会社の電子メールおよびアプリへのアクセス権がユーザーに付与されます。 Intune で iOS および Mac デバイスを管理するには、MDM プッシュ証明書が必要です。 証明書を Intune に追加すると、ユーザーがポータル サイト アプリをインストールして自分のデバイスを登録できます。 管理者が、Apple の Device Enrollment Program を使用して企業所有の iOS デバイス管理をセットアップしたり、Apple Configurator を使用してデバイスを登録したりすることもできます。 登録オプションについて詳しくは、「[iOS デバイスの登録方法を選択する](enrollment-method-choose-ios.md)」をご覧ください。
 
 ## <a name="steps-to-get-your-certificate"></a>証明書を取得する手順
-Intune ポータルで、**[デバイスの登録]**  >  **[Apple の登録]** の順に選択します。次に、**[Apple MDM プッシュ証明書]** を選択し、Azure Portal で以下に示す番号付きの手順を実行します。
+Intune ポータルで、**[デバイスの登録]**  >  **[Apple の登録]** の順に選択します。次に、**[Apple MDM プッシュ証明書]** を選択し、Azure Portal で以下の手順を実行します。
 
 **手順 1: Apple MDM プッシュ証明書の作成に必要な Intune 証明書署名要求をダウンロードします。**<br>
-**[CSR のダウンロード]** を選択して、.csr ファイルをダウンロードし、ローカルに保存します。 .csr ファイルは、Apple Push Certificates Portal からの信頼関係証明書を要求するために使用します。
+**[CSR のダウンロード]** を選び、要求ファイルをダウンロードしてローカルに保存します。 このファイルは、Apple Push Certificates Portal からの信頼関係証明書を要求するために使用します。
+
+  ![MDM プッシュが設定されていない MDM プッシュ証明書構成画面のスクリーンショット。](./media/create-mdm-push-certificate.png)
 
 **手順 2:Apple MDM プッシュ証明書を取得します。**<br>
-**[MDM プッシュ証明書を作成する]** を選択して、Apple Push Certificates Portal に移動します。 会社の Apple ID でサインインし、.csr ファイルを使用してプッシュ証明書を作成します。 Apple Push Certificate Portal で **[Upload (アップロード)]** を選択すると、.json ファイルを受け取ります。 プッシュ証明書にこのファイルを使用しないでください。 ダウンロードが完了したら、Apple Push Certificates Portal に戻り、[Certificates for Third-Party Servers]\(サード パーティのサーバーの証明書) で、**[Download]** (ダウンロード) を選択します。 プッシュ証明書 (.pem ファイル) をダウンロードして、ローカルに保存します。
+**[MDM プッシュ証明書を作成する]** を選択して、Apple Push Certificates Portal に移動します。 会社の Apple ID でサインインし、要求ファイルを使ってプッシュ証明書を作成します。 Apple Push Certificate Portal で **[Upload (アップロード)]** を選択すると、.json ファイルを受け取ります。 プッシュ証明書にこのファイルを使用しないでください。 ダウンロードが完了したら、Apple Push Certificates Portal に戻り、[Certificates for Third-Party Servers]\(サード パーティのサーバーの証明書) で、**[Download]** (ダウンロード) を選択します。 プッシュ証明書 (.pem ファイル) をダウンロードして、ローカルに保存します。
 
 > [!NOTE]
 > 証明書は、証明書の作成に使用した Apple ID と関連付けられています。 ベスト プラクティスとして、管理タスクには会社の Apple ID を使用してください。 個人の Apple ID は使用しないでください。
@@ -52,10 +54,10 @@ Apple MDM プッシュ証明書の有効期間は 1 年間です。iOS と macOS
 > [!NOTE]
 > 証明書は、証明書の作成に使用した Apple ID と関連付けられています。 ベスト プラクティスとして、管理タスクには会社の Apple ID を使用してください。 個人の Apple ID は使用しないでください。
 
-1. Intune ポータルで **[デバイスの登録]**  >  **[Apple の登録]** の順に選択し、**[Apple MDM プッシュ証明書]** を選択します。
-2. **[CSR のダウンロード]** を選択して、.csr ファイルをダウンロードし、ローカルに保存します。 .csr ファイルは、Apple Push Certificates Portal からの信頼関係証明書を要求するために使用します。
+1. Intune ポータルで **[デバイスの登録]** > **[Apple の登録]** の順に選び、**[Apple MDM プッシュ証明書]** を選びます。
+2. **[CSR のダウンロード]** を選び、要求ファイルをダウンロードしてローカルに保存します。 このファイルは、Apple Push Certificates Portal からの信頼関係証明書を要求するために使用します。
 3. 更新する証明書を検索し、**[更新]** を選択します。
-4. **[Renew Push Certificate]\(プッシュ証明書の更新)** 画面で、今後証明書を識別しやすいようにメモを入力し、**[ファイルの選択]** を選択して、ダウンロードした新しい .csr ファイルを参照し、**[アップロード]** を選択します。
+4. **[Renew Push Certificate]\(プッシュ証明書の更新\)** 画面で、今後証明書を識別しやすいようにメモを入力し、**[ファイルの選択]** を選んで、ダウンロードした新しい要求ファイルを参照し、**[アップロード]** を選びます。
 5. **[確認]** 画面で **[ダウンロード]** を選択し、.pem ファイルをローカルに保存します。
 6. Azure Intune ポータルで **[Apple MDM プッシュ証明書]** 参照アイコンを選択し、Apple からダウンロードした .pem ファイルを選択し、**[アップロード]** を選択します。
 

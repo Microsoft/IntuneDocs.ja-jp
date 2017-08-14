@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/17/2017
+ms.date: 07/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b08a097e785f85d8b9260cdaa60e720ed88cb4a1
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: d069775cf51e8c077a6f30123bf4fa2fe58b6bd8
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune の既知の問題
 
@@ -37,7 +37,7 @@ Intune への新機能の追加を依頼する場合は、[Uservoice](https://mi
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>移行中に Intune で作成されるグループは、他の Microsoft 製品の機能に影響する可能性がある
 
-クラシック Intune から Azure に移行する場合、**All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** という新しいグループが表示されます。 このグループには、Intune のライセンスを持つユーザーだけでなく、ご利用の Azure Active Directory のすべてのユーザーが含まれます。 このグループを使用すると、一部の既存のユーザーまたは新規ユーザーがどのグループにも属さない場合に、他の Microsoft 製品に関する問題が発生することがあります。
+クラシック Intune から Azure ポータルに移行すると、**All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** という新しいグループが表示される場合があります。 このグループには、Intune のライセンスを持つユーザーだけでなく、ご利用の Azure Active Directory のすべてのユーザーが含まれます。 このグループを使用すると、一部の既存のユーザーまたは新規ユーザーがどのグループにも属さない場合に、他の Microsoft 製品に関する問題が発生することがあります。
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>特定の機能に必要な二次移行
 
@@ -64,8 +64,7 @@ Intune クラシック (Silverlight) ポータルで Apple Device Enrollment Pro
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>移行したポリシーの状態を示すブレードが機能しない
 
-クラシック ポータルから移行したポリシーの状態に関する情報は、Azure Portal では表示できません。 ただし、クラシック ポータルでこれらのポリシーに関するレポートを表示することは引き続き可能です。
-移行した構成ポリシーの状態に関する情報を表示するには、Azure Portal でポリシーを再作成します。
+クラシック ポータルから移行したポリシーの状態に関する情報は、Azure Portal では表示できません。 ただし、クラシック ポータルではこれらのポリシーに関するレポートを引き続き表示できます。 移行した構成ポリシーの状態に関する情報を表示するには、Azure Portal でポリシーを再作成します。
 
 ## <a name="apps"></a>アプリ
 
@@ -111,7 +110,7 @@ Cisco AnyConnect VPN クライアント (4.0.07072) の最新のリリースは�
 
 ### <a name="ios-app-protection-policies"></a>iOS アプリの保護ポリシー
 
-登録しなくても、MAM によって管理されているデバイス上で、ユーザーが利用できる [iOS 用アプリの保護ポリシー](app-protection-policy-settings-ios.md)を定義できます。 一時的なエラーのため、これらのポリシーは、複数の小数点ではなく、1 つの小数点のバージョンでの iOS バージョンに対してのみ定義できます。 最小バージョンの iOS 10.3.1 を設定するのではなく、iOS 10.3 に対して設定します。 これは、iOS SDK への近日公開予定の更新プログラミングによって解決されます。
+登録しなくてもモバイル アプリ管理 (MAM) によって管理されているデバイス上で、ユーザーが利用できる [iOS 用のアプリ保護ポリシー](app-protection-policy-settings-ios.md)を定義できます。 一時的なエラーのため、これらのポリシーは、複数の小数点ではなく、1 つの小数点のバージョンでの iOS バージョンに対してのみ定義できます。 最小バージョンの iOS 10.3.1 を設定するのではなく、iOS 10.3 に対して設定します。 これは、iOS SDK への近日公開予定の更新プログラミングによって解決されます。
 
 
 ## <a name="administration-and-accounts"></a>管理とアカウント

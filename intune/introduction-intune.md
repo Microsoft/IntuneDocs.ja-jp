@@ -5,7 +5,7 @@ keywords: "Intune の概要"
 author: Lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology:
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: b1fbc73c0bc3589856f09bd3b9858fef66b82b08
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.custom: 
+ms.openlocfilehash: 53115eba5e5150139b8ff0f359cde279df297d47
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="what-is-intune"></a>Intune とは何か
 
@@ -72,10 +72,10 @@ EMS の他のサービスと共に Intune を使用すると、モバイルオ�
 
 * [シングル サインオン](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
 *   [多要素認証](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
-* [アプリの条件付きアクセス - モバイル アプリに企業データが含まれる場合、アクセスを許可する](app-based-conditional-access-intune.md) ([クラシック コンソール](/intune-classic/deploy-use/allow-policy-managed-apps-access-to-o365))
-* [同じアプリ内で企業データと個人データを分離する](app-protection-policy.md) ([クラシック コンソール](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune))
-* [アプリ保護ポリシー (PIN、暗号化、名前を付けて保存、クリップボードなど)](app-protection-policies.md) ([クラシック コンソール](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune))
-* [モバイル アプリから企業データを消去する](/intune-classic/deploy-use/wipe-managed-company-app-data-with-microsoft-intune)
+* [アプリの条件付きアクセス (モバイル アプリに企業データが含まれる場合、アクセスを許可する)](app-based-conditional-access-intune.md)
+* [同じアプリ内で企業データと個人データを分離する](app-protection-policy.md)
+* [アプリの保護ポリシー (PIN、暗号化、名前を付けて保存、クリップボードなど)](app-protection-policies.md)
+* [モバイル アプリから企業データを消去する](apps-selective-wipe.md)
 * [Rights Management の保護](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 ![アプリ管理データ セキュリティのレベルを示す画像](./media/managing-mobile-apps.png)
@@ -110,6 +110,6 @@ Intune がモバイル アプリ セキュリティを提供する方法の 1 �
 * [タスク ワーカー向けに制限付きの共有タブレットを用意する](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
 ### <a name="next-steps"></a>次のステップ
-* [Intune の一般的な使用方法](common-scenarios.md) ([クラシック コンソール](/intune-classic/understand-explore/common-ways-to-use-intune)) を読む
-* [Intune の 30 日間の試用版](free-trial-sign-up.md) ([クラシック コンソール](/intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune)) を使用して製品の理解を深める
-* Intune の[技術面の要件と機能](supported-devices-browsers.md) ([クラシック コンソール](/intune-classic/get-started/what-to-know-before-you-start-microsoft-in)) を調べる
+* [Intune の一般的な使用方法](common-scenarios.md)を読む
+* [Intune の 30 日間の評価版](free-trial-sign-up.md)を使用して製品の理解を深める
+* Intune の[技術的要件と機能](supported-devices-browsers.md)を調べる

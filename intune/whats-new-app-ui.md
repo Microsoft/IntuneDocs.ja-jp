@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,62 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e2e1eb6da9114c689aae5eb06f7d7c780f35817
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 948a7d2e4e0ad80088d864708db5733f08db77c5
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune とエンド ユーザー アプリの UI の更新
 このリリースの Microsoft Intune でエンド ユーザーに表示されるアプリの UI に加えられた変更について説明します。 これは、ユーザーとの通信や、展開のサポートのために作成したカスタム ドキュメントの更新に役立ちます。 会社のポータルを使用してヘルプデスクにサポートを求める場合に、直面している問題のトラブルシューティングをより適切に行う方法を理解するのにも役立ちます。
+
+## <a name="week-of-july-31-2017"></a>2017 年 7 月 31 日の週
+
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>すべてのプラットフォームでのポータル サイト アプリのサインイン操作の改善<!--User Story 1132123-->
+
+Android、iOS、Windows での Intune ポータル サイト アプリのサインイン エクスペリエンス向上のために、今後数か月間に予定されている変更についてお知らせします。 Azure AD でこの変更が行われ次第、自動的にすべてのプラットフォームでポータル サイト アプリのユーザー エクスペリエンスが一新される予定です。 また、自動生成される一時使用コードを使用して、別のデバイスからポータル サイトにサインインできるようになりました。 この機能は、資格情報を使用せずにサインインする必要がある場合には特に便利です。  
+
+以下に、従来のサインイン、資格情報を使用した新たなサインイン、別のデバイスからのサインインをそれぞれ以下に示します。
+
+__従来のサインイン エクスペリエンス__
+
+![Web サイトのイメージ図の前にユーザーのアイコンが表示されたポータル サイトのサインイン ページ。 アイコンの下に [サインイン] ボタンが表示されています。 下部にあるリンクから Microsoft のプライバシーと Cookie に関する情報にアクセスできます。](./media/cp_ios_aad_signin_before_1704_001.png)
+
+![[サインイン] をタップした後に、このページで資格情報を入力します。電子メールとパスワードが要求され、パスワードのエラーを解決する方法も提供されます。](./media/cp_ios_aad_signin_before_1704_002.png)
+
+![パスワードを入力すると、ポータル サイト アプリはサインインを行い、読み込みバーが表示されます。](./media/cp_ios_aad_signin_before_1704_003.png)
+
+__新たなサインイン エクスペリエンス__
+
+![Web サイトのイメージ図の前にユーザーのアイコンが表示されたポータル サイトのサインイン ページ。 アイコンの下に [サインイン] ボタンが表示されています。 下部にあるリンクから Microsoft のプライバシーと Cookie に関する情報にアクセスできます。](./media/cp_ios_aad_signin_after_1704_001.png)
+
+![画面は同じですが電子メールとパスワードではなく、電子メールのみを入力するように要求されます。](./media/cp_ios_aad_signin_after_1704_002.png)
+
+![電子メールが承認されると、パスワードの入力が要求されます。](./media/cp_ios_aad_signin_after_1704_003.png)
+
+![認証プロセスが終了すると、ポータル サイト アプリはサインインを行い、読み込みバーが表示されます。](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+__別のデバイスからサインインする際の新たなサインイン エクスペリエンス__
+
+![Web サイトのイメージ図の前にユーザーのアイコンが表示されたポータル サイトのサインイン ページ。 アイコンの下に [サインイン] ボタンが表示されています。 下部にあるリンクから Microsoft のプライバシーと Cookie に関する情報にアクセスできます。](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
+
+__[別のデバイスからサインインする]__ リンクをタップします。
+
+![会社のコンピューターから固有のパスワードで aka.ms/devicelogin ページにアクセスし、コードを使用してサインインするように指示されます。](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
+
+ブラウザーを起動して、[https://aka.ms/devicelogin](https://aka.ms/devicelogin) にアクセスします。
+
+![ポータル サイト アプリの画像ではなく会社のコンピューターのブラウザーの画像です。 [デバイス ログイン] ページが表示され、ポータル サイト アプリで取得したコードを入力するように要求されます。](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
+
+ポータル サイト アプリで表示されたコードを入力します。 __[続行]__ を選択すると、スマートカードなど、お客様の会社でサポートされている任意の方法を使用して認証を行うことができます。
+
+![固有のコードをフィールドに入力すると、[デバイス ログイン] サイトから、Intune ポータル サイトがサインインを許可してよい適切なアプリであることを確認されます。](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
+
+![デバイスでポータル サイト アプリへのログインが完了したことと、このページを閉じることができることを示す確認ページ。](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
+
+ポータル サイト アプリがサインインを開始します。
+
+![認証プロセスが終了すると、ポータル サイト アプリはサインインを行い、読み込みバーが表示されます。](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
 ## <a name="week-of-june-12-2017"></a>2017 年 6 月 12 日の週
 
@@ -180,51 +228,12 @@ __変更後__ ![変更後のバージョンの読み込み画面の画像。イ�
 > [!Note]
 > 次のイメージはプレビューであり、発表される製品は示されているバージョンとは異なる場合があることに注意してください。
 
-### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>すべてのプラットフォームでのポータル サイト アプリのサインイン操作の改善<!--User Story 1132123-->
+### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>ポータル Web サイトの UI の更新 <!--1313244 part 2-->
 
-Android、iOS、Windows での Intune ポータル サイト アプリのサインイン エクスペリエンス向上のために、今後数か月間に予定されている変更についてお知らせします。 Azure AD でこの変更が行われ次第、自動的にすべてのプラットフォームでポータル サイト アプリのユーザー エクスペリエンスが一新される予定です。 また、自動生成される一時使用コードを使用して、別のデバイスからポータル サイトにサインインできるようになりました。 この機能は、資格情報を使用せずにサインインする必要がある場合には特に便利です。  
+__おすすめアプリの更新__ サイトにおすすめとして選択したアプリを参照できる専用ページを追加し、ホームページのおすすめセクションでいくつかの UI の修正を行いました。
 
-以下に、従来のサインイン、資格情報を使用した新たなサインイン、別のデバイスからのサインインをそれぞれ以下に示します。
+![アプリが表示されたカラフルなタイル。 各アプリの大きな四角形の色は、アプリのロゴに主に使われている色から取られています。 "おすすめアプリ" セクションはポータル サイト アプリの一番上に表示されます。](./media/cp_win10_colorful_tiles_after_1708.png)
 
-__従来のサインイン エクスペリエンス__
-
-![Web サイトのイメージ図の前にユーザーのアイコンが表示されたポータル サイトのサインイン ページ。 アイコンの下に [サインイン] ボタンが表示されています。 下部にあるリンクから Microsoft のプライバシーと Cookie に関する情報にアクセスできます。](./media/cp_ios_aad_signin_before_1704_001.png)
-
-![[サインイン] をタップした後に、このページで資格情報を入力します。電子メールとパスワードが要求され、パスワードのエラーを解決する方法も提供されます。](./media/cp_ios_aad_signin_before_1704_002.png)
-
-![パスワードを入力すると、ポータル サイト アプリはサインインを行い、読み込みバーが表示されます。](./media/cp_ios_aad_signin_before_1704_003.png)
-
-__新たなサインイン エクスペリエンス__
-
-![Web サイトのイメージ図の前にユーザーのアイコンが表示されたポータル サイトのサインイン ページ。 アイコンの下に [サインイン] ボタンが表示されています。 下部にあるリンクから Microsoft のプライバシーと Cookie に関する情報にアクセスできます。](./media/cp_ios_aad_signin_after_1704_001.png)
-
-![画面は同じですが電子メールとパスワードではなく、電子メールのみを入力するように要求されます。](./media/cp_ios_aad_signin_after_1704_002.png)
-
-![電子メールが承認されると、パスワードの入力が要求されます。](./media/cp_ios_aad_signin_after_1704_003.png)
-
-![認証プロセスが終了すると、ポータル サイト アプリはサインインを行い、読み込みバーが表示されます。](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
-
-__別のデバイスからサインインする際の新たなサインイン エクスペリエンス__
-
-![Web サイトのイメージ図の前にユーザーのアイコンが表示されたポータル サイトのサインイン ページ。 アイコンの下に [サインイン] ボタンが表示されています。 下部にあるリンクから Microsoft のプライバシーと Cookie に関する情報にアクセスできます。](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
-
-__[別のデバイスからサインインする]__ リンクをタップします。
-
-![会社のコンピューターから固有のパスワードで aka.ms/devicelogin ページにアクセスし、コードを使用してサインインするように指示されます。](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
-
-ブラウザーを起動して、[https://aka.ms/devicelogin](https://aka.ms/devicelogin) にアクセスします。
-
-![ポータル サイト アプリの画像ではなく会社のコンピューターのブラウザーの画像です。 [デバイス ログイン] ページが表示され、ポータル サイト アプリで取得したコードを入力するように要求されます。](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
-
-ポータル サイト アプリで表示されたコードを入力します。 __[続行]__ を選択すると、スマートカードなど、お客様の会社でサポートされている任意の方法を使用して認証を行うことができます。
-
-![固有のコードをフィールドに入力すると、[デバイス ログイン] サイトから、Intune ポータル サイトがサインインを許可してよい適切なアプリであることを確認されます。](./media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
-
-![デバイスでポータル サイト アプリへのログインが完了したことと、このページを閉じることができることを示す確認ページ。](./media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
-
-ポータル サイト アプリがサインインを開始します。
-
-![認証プロセスが終了すると、ポータル サイト アプリはサインインを行い、読み込みバーが表示されます。](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 ### <a name="see-also"></a>関連項目
 * [Microsoft Intune のブログ](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [クラウド プラットフォームのロードマップ](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)

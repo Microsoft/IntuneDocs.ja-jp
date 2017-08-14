@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/17/2017
+ms.date: 07/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f6a3cdc2b5d95f57f1ffc1f68b6748b357f2ef4
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: 1a97e58f1d108932e44b0b4e36bda5a30b7a90da
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune で Windows 10 デバイスに Office 365 ProPlus 2016 アプリを割り当てる方法
 
-このアプリの種類を使用すると、デバイスに Office 365 ProPlus 2016 アプリを簡単に割り当てることができ、Windows 10 を実行しているデバイスを管理できます。 さらに、ライセンスを所有している場合は、Microsoft Project Online デスクトップ クライアントおよび Visio Pro for Office 365 のアプリをインストールすることもできます。 必要なアプリは、Intune コンソールのアプリ一覧に 1 つのアプリとして表示されます。
+このアプリの種類を使用すると、Windows 10 を実行している管理対象のデバイスに Office 365 ProPlus 2016 アプリを簡単に割り当てることができます。 また、ライセンスを所有している場合は、Microsoft Project Online デスクトップ クライアントおよび Visio Pro for Office 365 のアプリをインストールすることもできます。 必要なアプリは、Intune コンソールのアプリ一覧に 1 つのアプリとして表示されます。
 
 
 ## <a name="before-you-start"></a>開始する前に
@@ -34,11 +34,8 @@ ms.lasthandoff: 07/17/2017
 - これらのアプリを展開するデバイスでは、Windows 10 Creators Update 以降を実行している必要があります。
 - Intune は、Office 365 ProPlus 2016 スイートの Office アプリの追加のみをサポートします。
 - Intune でアプリ スイートをインストールするときに、Office アプリが開いている場合は、エンドユーザーは保存されていないファイルのデータを失う可能性があります。
-- Office が既にインストールされているデバイスに Office をインストールする場合は、次の考慮事項を確認してください。
-    - 使用する Office のバージョンに関係なく、同じデバイスに 32 ビットおよび 64 ビットの Office 製品をインストールすることはできません。
-    - 同じバージョンのクイック実行をインストールできない、または MSI バージョンの Office を同じデバイスにインストールすることはできませんが、異なるメジャー バージョンをインストールすることができます。
-    - 既にクイック実行を使用してインストールした以前のバージョンの Office がある場合は、新しいバージョンに置き換えるアプリを削除する必要があります。 たとえば、デバイスに以前のバージョンの Word があり、最新のバージョンを割り当てる場合は、最初に古いバージョンを削除する必要があります。
-    - デバイスに既に Office 365 がインストールされている場合、Office 365 ProPlus 2016 スイートをデバイスに割り当てることは、Office サブスクリプション レベルを変更する必要があることを意味します。
+- このインストール方法は Windows 10S のデバイスではサポートされていません。
+- このアプリの種類を使用可能として割り当て、割り当てが異なる複数のユーザーを対象とする場合、最近の対象割り当てのみが表示されます。
 
 
 ## <a name="get-started"></a>作業開始

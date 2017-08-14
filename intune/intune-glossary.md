@@ -1,37 +1,35 @@
 ---
 title: "Intune の用語集"
-titleSuffix: Intune on Azure
+titleSuffix: 
 description: "Microsoft Intune で使用される用語について説明します"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: a9b43fc1a1877a3fc8bf4c5ee00e02dfee3cdea8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2df6c8c79954c2145ffa6eb33782cee690d78b1d
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune の用語集
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="a"></a>A
 
 |||
 |-|-|
 |アプリ割り当て|ユーザーが必要なアプリを[検索、ダウンロード、およびインストール](/intune/app-management)できるようにします。 以前は*アプリの展開*と呼ばれていました。|
-|アプリ構成プロファイル|[iOS](/intune/app-configuration-policies-use-ios) または [Android](/intune/app-configuration-policies-use-android) アプリを、実行前に固有の設定で構成します。|
+|アプリ構成プロファイル <br/><br/>アプリ構成ポリシー|ベンダー固有の構成でモバイル アプリを利用できます。 [iOS](/intune/app-configuration-policies-use-ios) または [Android](/intune/app-configuration-policies-use-android) アプリを、実行前に固有の設定で構成します。|
 |アプリの監視|アプリ割り当てに関連する[最新の状態やアクティビティを確認](/intune/apps-monitor)できます。|
 |アプリ保護データ削除タスク|ユーザーのデバイスから[アプリ データを削除](/intune/app-protection-policies)します。|
-|アプリ保護ポリシー|ユーザーのアプリを[会社のデータ保護ポリシー](/intune/app-protection-policies)に準拠させます。|
+|アプリ保護ポリシー|Enterprise Mobility + Security (EMS) テクノロジと統合されたモバイル アプリを利用できます。 ユーザーのアプリを[会社のデータ保護ポリシー](/intune/app-protection-policies)に準拠させます。|
 |アプリ SDK|[Microsoft Intune App SDK](/intune/app-sdk) を使用すると、社内で作成したアプリに、Intune アプリ保護ポリシーで管理できる機能を追加できます。|
 |アプリのアンインストール アクション|ユーザーのデバイスから[アプリをアンインストール](/intune/apps-deploy)できます。|
 |アプリ ラッピング ツール|基幹業務アプリのラッパーを作成する[コマンド ライン アプリケーション](/intune/apps-prepare-mobile-application-management)です。このラッパーにより、アプリを Intune アプリ保護ポリシーで管理できるようになります。|
@@ -103,7 +101,7 @@ ms.lasthandoff: 07/01/2017
 |-|-|
 |Managed Browser|[Web を参照するためのアプリケーション](/intune/app-configuration-managed-browser)です。Intune を使用して組織内で割り当てることができます。 Managed Browser ポリシーは、Managed Browser のユーザーがアクセスできる Web サイトを制限する許可リストまたはブロック リストを構成するものです。|
 |MDM 機関|[MDM 機関](/intune/mdm-authority-set)では、一連のデバイスを管理するためのアクセス許可を持つ管理サービスを定義します。 MDM 機関のオプションには、Intune 単体で使用するか、Intune を Configuration Manager と連携させて使用する方法があります。|
-|モバイル アプリ構成ポリシー|実行時に互換性のあるアプリに設定を提供するために使用される [iOS](/intune/app-configuration-policies-use-ios) または [Android](/intune/app-configuration-policies-use-android) ポリシー (会社名やサーバー アドレスなど)。|
+|モバイル アプリ構成ポリシー|ベンダー固有の構成でモバイル アプリを利用できます。 たとえば、実行時に互換性のあるアプリに設定を提供するために使用される [iOS](/intune/app-configuration-policies-use-ios) または [Android](/intune/app-configuration-policies-use-android) ポリシー (会社名やサーバー アドレスなど)。|
 |モバイル アプリ プロビジョニング ポリシー|割り当てる iOS アプリ用[プロビジョニング プロファイル](/intune/app-provisioning-profile-ios)が期限切れにならないようにできる iOS ポリシーです。|
 |モバイル アプリケーション管理|[モバイル アプリケーション管理 (MAM)](/intune/app-lifecycle) を使用すると、ユーザーのモバイル アプリを公開、プッシュ、構成、セキュリティ保護、監視、および更新できます。
 |モバイル デバイス管理|[モバイル デバイス管理 (MDM)](/intune/device-lifecycle) を使用すると、デバイスのプロビジョニング、構成、監視、管理ができるように、デバイスを Intune に登録できます。
@@ -131,7 +129,7 @@ ms.lasthandoff: 07/01/2017
 ## <a name="s"></a>S
 |||
 |-|-|
-|選択的ワイプ|[選択的ワイプ](/intune/device-company-data-remove)は、モバイル アプリ管理 (MAM) データ (該当する場合)、設定、電子メール プロファイルといった会社のデータだけをデバイスから削除します。 選択的ワイプでは、ユーザーの個人データはデバイス上にそのまま保持されます。|
+|選択的ワイプ|[選択的ワイプ](/intune/device-company-data-remove)は、デバイスの設定および電子メールのプロファイルを含め、アプリの保護ポリシーで保護されている会社データのみを削除します。 選択的ワイプでは、ユーザーの個人データはデバイス上にそのまま保持されます。|
 |サイドローディング|アプリ ストアからアクセスせずに、基幹業務アプリをインストールするアクション。|
 |Subscription|Intune テナントへのアクセスを許可することを示す同意。|
 

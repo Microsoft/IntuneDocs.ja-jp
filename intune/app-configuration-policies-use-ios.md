@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0cbcf70af17ba7690f54196790da04becd8ba1eb
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: b261834c85a9dd3cbc6f8fae40933dd7a79acf93
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>iOS 用 Microsoft Intune アプリ構成ポリシーを使用する方法
 
@@ -37,7 +37,7 @@ Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが
 
 ユーザーがこれらの設定を誤って入力すると、ヘルプ デスクの負荷が増加し、新しいアプリの採用が遅くなる可能性もあります。
 
-アプリ構成ポリシーを使用すると、ユーザーがアプリを実行する前にこれらの設定をポリシー内のユーザーに割り当てることができるため、上記の問題を排除するのに役立ちます。 設定が自動的に指定されるため、ユーザーの操作は不要です。
+アプリ構成ポリシーを使用すると、ユーザーがアプリを実行する前にこれらの設定をポリシー内のユーザーに割り当てることができるため、上記の問題を排除するのに役立ちます。 設定が自動的に指定されるため、ユーザーの操作は不要です。 アプリは、アプリ構成の使用をサポートするように作成されている必要があります。 詳細については、アプリのベンダーに問い合わせてください。
 
 これらのポリシーをユーザーとデバイスに直接割り当てないでください。 代わりに、ポリシーをアプリに関連付け、そのアプリを割り当てます。 ポリシー設定は、アプリがポリシーを確認する際に (通常は初めて実行したときに) 必ず使用されます。
 
@@ -57,8 +57,8 @@ Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが
 5.  ポリシーの一覧ブレードで、**[追加]** を選択します。
 6.  **[構成ポリシーの追加]** ブレードで、アプリ構成ポリシーの **[名前]** と **[説明]** (省略可能) を入力します。
 7.  **[デバイス登録の種類]** には、次のいずれかを選択します。
-    - **[Intune に登録済み]** - Intune App SDK が統合されていて、Intune で管理されているアプリの場合。
-    - **[Intune に未登録]** - Intune App SDK が統合されているが Intune で管理されていない、または別のソリューションで管理されているアプリの場合。
+    - **[Intune に登録済み]** - Intune によって管理されるアプリの場合。
+    - **[Intune に未登録]** - Intune によって管理されないアプリ、または別のソリューションによって管理されるアプリの場合。
 8.  **[プラットフォーム]** には、**[iOS]** を選択します (Intune に登録されているデバイスのみ)
 9.  **[関連アプリ]** を選択し、**[関連アプリ]** ブレードで、構成を適用する管理対象アプリを選択します。
 10. **[構成ポリシーの追加]** ブレードで、**[構成設定]** を選択します

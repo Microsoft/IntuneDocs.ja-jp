@@ -3,8 +3,8 @@ title: "アプリ保護ポリシーを監視する方法"
 titleSuffix: Intune on Azure
 description: "ポリシーを持つユーザー数を確認し、詳細を調べるためにドリルダウンします。\""
 keywords: 
-author: andredm7
-ms.author: andredm
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 01/23/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de40d149818b2655a8fc3b647a7e850973814165
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 241ae7d2d615cd58babfc2d14b98e2bfb2f63f7d
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>アプリ保護ポリシーを監視する方法
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -46,11 +46,13 @@ ms.lasthandoff: 07/01/2017
 
 ![[Intune モバイル アプリケーション管理] ブレードの [概要] タイル](./media/app-protection-user-status-summary.png)
 
--   **[ユーザー]**: ポリシーに関連付けられているアプリを使用している社内ユーザーの合計数。
+-   **[ユーザー]**: 作業コンテキストのポリシーに関連付けられているアプリを使っている社内ユーザーの合計数。
 
--   **[ポリシーによって管理されています]**: 作業コンテキストで少なくとも 1 つのアプリを使用したユーザーの数。
+-   **[ポリシーによって管理されています]**: 作業コンテキストで割り当てられたポリシーがある、アプリを使ったユーザーの数。
 
--   **[ポリシーなし]**: ポリシーに関連付けられたアプリを使用しているが、ポリシーの対象にはなっていないユーザーの数。 これらのユーザーをポリシーに追加することを検討できます。
+-   **[ポリシーなし]**: 作業コンテキストのポリシーのターゲットになっていないアプリを使っているユーザーの数。 これらのユーザーをポリシーに追加することを検討できます。
+    > [!NOTE]
+    > プラットフォームごとに複数のポリシーがある場合、少なくとも 1 つのポリシーが割り当てられていると、ユーザーはポリシーによって管理されているものと見なされます。
 
 - **[フラグ付きのユーザー]**: 問題が発生しているユーザーの数。 **[フラグ付きのユーザー]** では、現時点で脱獄されたデバイスを使用しているユーザーのみが報告されます。
 

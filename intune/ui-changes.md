@@ -15,16 +15,27 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b9d1ac3930e29bc024ece7e6b9b11c91a4e14c1
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 18e5ea572bde503600bc33a0b4401efed2e35d18
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Azure での Intune の機能の移動先
 Intune から Azure Portal に移行する際に、いくつかのタスクがより論理的に整理されました。 しかし、このような改善を行えば、新しい構成を学ばなければなりません。 このリファレンス ガイドは、従来のコンソールを使用した Intune の知識があり、Intune で行われていた内容を Azure ではどのように実行されるのかについて関心があるユーザーに向けて作成しました。 この記事でお探しの機能が記載されていない場合は、今後更新できるように記事の最後にコメントを残してください。
 ## <a name="quick-reference-guide"></a>クイック リファレンス ガイド
-|機能 |クラシック コンソールでのパス|Azure の Intune でのパス| |------------||---------------|---------------| |Device Enrollment Program (DEP) |[管理者] > [モバイル デバイス管理] > [iOS および Mac OS X] > [Device Enrollment Program]|[[デバイスの登録] > [Apple の登録] > [Enrollment Program トークン]](#where-did-apple-dep-go) | |Device Enrollment Program (DEP)| [管理者] > [モバイル デバイス管理] > [iOS および Mac OS X] > [Device Enrollment Program] |[[デバイスの登録] > [Apple の登録] > [Enrollment Program Serial Numbers]\(登録プログラムのシリアル番号\)](#where-did-apple-dep-go) | |登録ルール |[管理者] > [モバイル デバイス管理] > [登録ルール]|[[デバイスの登録] > [登録の制限]](#where-did-enrollment-rules-go) | |iOS シリアル番号別のグループ |[グループ] > [すべてのデバイス] > [会社の事前登録済みデバイス] > [iOS シリアル番号を使用]|[[デバイスの登録] > [Apple の登録] > [Enrollment Program Serial Numbers]\(登録プログラムのシリアル番号\)](#where-did-corporate-pre-enrolled-devices-go) | |iOS シリアル番号別のグループ |[グループ] > [すべてのデバイス] > [会社の事前登録済みデバイス] > [iOS シリアル番号を使用]| [[デバイスの登録] > [Apple の登録] > [AC Serial numbers]\(AC シリアル番号\)](#where-did-corporate-pre-enrolled-devices-go)|IMEI 別のグループ (すべてのプラットフォーム)| [グループ] > [すべてのデバイス] > [会社の事前登録済みデバイス] > [IMEI を使用] (すべてのプラットフォーム)| [[デバイスの登録] > [業務用デバイスの ID]](#by-imei-all-platforms)| | 業務用デバイスの登録プロファイル| [ポリシー] > [業務用デバイスの登録] | [[デバイスの登録] > [Apple の登録] > [Enrollment Program プロファイル]](#where-did-corporate-pre-enrolled-devices-go) | | 業務用デバイスの登録プロファイル | [ポリシー] > [業務用デバイスの登録] | [[デバイスの登録] > [Apple の登録] > [AC プロファイル]](#where-did-corporate-pre-enrolled-devices-go) | | Android for Work | [管理者] > [モバイル デバイス管理] > [Android for Work] | [デバイスの登録] > [Android for Work への登録] | | 使用条件 | [ポリシー] > [使用条件] | [デバイスの登録] > [使用条件] |
+|機能 |クラシック コンソールのパス|Azure での Intune のパス|
+|------------|---------------|---------------|
+|Device Enrollment Program (DEP) |[管理] > [モバイル デバイス管理] > [iOS および Mac OS X] > [Device Enrollment Program]|[[デバイスの登録] > [Apple の登録] > [Enrollment Program トークン]](#where-did-apple-dep-go) |
+|Device Enrollment Program (DEP)| [管理] > [モバイル デバイス管理] > [iOS および Mac OS X] > [Device Enrollment Program] |[[デバイスの登録] > [Apple の登録] > [Enrollment Program Serial Numbers]\(Enrollment Program シリアル番号\)](#where-did-apple-dep-go) |
+|登録ルール |[管理] > [モバイル デバイス管理] > [登録ルール]|[[デバイスの登録] > [登録制限]](#where-did-enrollment-rules-go) |
+|iOS シリアル番号別のグループ |[グループ] > [すべてのデバイス] > [会社の事前登録済みデバイス] > [iOS シリアル番号を使用]|[[デバイスの登録] > [Apple の登録] > [Enrollment Program Serial Numbers]\(Enrollment Program シリアル番号\)](#where-did-corporate-pre-enrolled-devices-go) |
+|iOS シリアル番号別のグループ |[グループ] > [すべてのデバイス] > [会社の事前登録済みデバイス] > [iOS シリアル番号を使用]| [[デバイスの登録] > [Apple の登録] > [AC Serial numbers]\(AC シリアル番号\)](#where-did-corporate-pre-enrolled-devices-go)|
+|IMEI 別のグループ (すべてのプラットフォーム)| [グループ] > [すべてのデバイス] > [会社の事前登録済みデバイス] > [By IMEI]\(IMEI を使用\) (すべてのプラットフォーム) | [[デバイスの登録] > [業務用デバイスの ID]](#by-imei-all-platforms)|
+| 業務用デバイスの登録プロファイル| [ポリシー] > [業務用デバイスの登録] | [[デバイスの登録] > [Apple の登録] > [Enrollment Program プロファイル]](#where-did-corporate-pre-enrolled-devices-go) |
+| 業務用デバイスの登録プロファイル | [ポリシー] > [業務用デバイスの登録] | [[デバイスの登録] > [Apple の登録] > [AC プロファイル]](#where-did-corporate-pre-enrolled-devices-go) |
+| Android for Work | [管理] > [モバイル デバイス管理] > [Android for Work] | [デバイスの登録] > [Android for Work への登録] |
+| 使用条件 | [ポリシー] > [使用条件] | [デバイスの登録] > [使用条件] |
 
 
 ## <a name="where-do-i-manage-groups"></a>グループを管理する場所

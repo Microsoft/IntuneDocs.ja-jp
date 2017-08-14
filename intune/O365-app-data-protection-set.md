@@ -6,7 +6,7 @@ keywords:
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 01/09/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 302f646bfb9ff0ac024687fa0b3926d83158995c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d21b6a03cdc8094bc8da3cecd5331b3f11400302
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>管理対象の Office 365 アプリの基本的な保護に関するユーザー エクスペリエンス
 
@@ -48,15 +48,14 @@ ms.lasthandoff: 07/01/2017
 
 1. OneDrive for Business アプリを起動し、サインイン ページを開きます。  <br/> ![iOS の OneDrive サインイン画面の画像](./media/onedrive-ios-sign-in.png)
 2. 自分の作業アカウントのユーザー名を入力します。 Office 365 認証ページにリダイレクトされたら、作業用の資格情報を入力します。 <br/> ![Office 365 サインイン ページの画像](./media/o365-sign-in-ios.png)
-3. Azure Active Directory によって資格情報が正常に認証されると、モバイル デバイス管理 (MDM) ポリシーが適用され、OneDrive for Business アプリを再起動するように求められます。  <br/>![iOS の再起動を求めるメッセージの画像](./media/ios-restart-prompt.png)
->[!NOTE]
->再起動を求めるメッセージは、Intune に登録されていないデバイスにのみ表示されます。
+3. Azure Active Directory によって資格情報が正常に認証されると、アプリ保護ポリシーが適用され、OneDrive for Business アプリを再起動するように求められます。  <br/>![iOS の再起動を求めるメッセージの画像](./media/ios-restart-prompt.png)    
+  > [!NOTE]
+  > 再起動を求めるメッセージは、Intune に登録されていないデバイスにのみ表示されます。
 
 
-4. OneDrive for Business アプリを再起動します。 MAM ポリシーが有効になっている状態でアプリが起動すると、デバイスの PIN を設定するように求められます (デバイスで PIN をまだ構成していない場合)。 <br/> ![PIN を作成するように求めるメッセージの画像](./media/pin-prompt-ios.png)
-
->[!NOTE]
->ほとんどのユーザーには、このメッセージが表示されません。 iOS デバイスで PIN を有効にしていないユーザーにのみこのメッセージが表示されます。
+4. OneDrive for Business アプリを再起動します。 アプリ保護ポリシーが有効になっている状態でアプリが起動すると、デバイスの PIN を設定するように求められます (デバイスで PIN をまだ構成していない場合)。 <br/> ![PIN を作成するように求めるメッセージの画像](./media/pin-prompt-ios.png)    
+  > [!NOTE]
+  > ほとんどのユーザーには、このメッセージが表示されません。 iOS デバイスで PIN を有効にしていないユーザーにのみこのメッセージが表示されます。
 
 
 5. PIN を設定して確認すると、OneDrive for Business アプリに戻ります。 IT 管理者が OneDrive の仕事のデータを保護していることを伝える 1 回限りの通知が表示されます。 <br/> ![IT 管理者からの 1 回限りの通知の画像](./media/one-time-notice.png)
@@ -70,9 +69,9 @@ ms.lasthandoff: 07/01/2017
 
 1. OneDrive for Business アプリを起動し、サインイン ページを開きます。  <br/> ![OneDrive アプリのようこそ画面の画像](./media/onedrive-android-welcome.png)
 2. 自分の作業アカウントのユーザー名を入力します。 Office 365 認証ページにリダイレクトされたら、作業用の資格情報を入力します。 <br/> ![Android での O365 サインインの画像](./media/o365-sign-in-android.png)
-3. Azure Active Directory によって資格情報が正常に認証されると、まだポータル サイト アプリがデバイスにインストールされていない場合はインストールするよう指示するメッセージが表示されます。 **[ストアにアクセス]** をタップして、続行します。 <br/> ![ポータル サイト アプリを入手する際のメッセージの画像](./media/get-company-portal-android.png) <br/>ポータル サイト アプリが電話に既にインストールされている場合は、OneDrive for Business アプリが自動的に起動し、文末脚注にスキップできます。
->[!IMPORTANT]
->Office アプリを MAM ポリシーで管理するように設定すると、Android では、エンド ユーザーが電子メールやドキュメントを実際に読むのにポータル サイト アプリを開いたり、ポータル サイト アプリにサインインしたりする必要がない場合でも、デバイスのユーザーは仕事の電子メールやドキュメントにアクセスするためにポータル サイト アプリをインストールする**必要があります**。
+3. Azure Active Directory によって資格情報が正常に認証されると、まだポータル サイト アプリがデバイスにインストールされていない場合はインストールするよう指示するメッセージが表示されます。 **[ストアにアクセス]** をタップして、続行します。 <br/> ![ポータル サイト アプリを入手する際のメッセージの画像](./media/get-company-portal-android.png) <br/>ポータル サイト アプリが電話に既にインストールされている場合は、OneDrive for Business アプリが自動的に起動し、文末脚注にスキップできます。    
+  > [!IMPORTANT]
+  > Office アプリをアプリ保護ポリシーで管理するように設定すると、Android では、エンド ユーザーが電子メールやドキュメントを実際に読むのにポータル サイト アプリを開いたり、ポータル サイト アプリにサインインしたりする必要がない場合でも、デバイスのユーザーは会社のメールやドキュメントにアクセスするためにポータル サイト アプリをインストールする**必要があります**。
 
 4. Google Play ストアが開かれるので、そこからポータル サイト アプリをダウンロードしてインストールします。 ポータル サイト アプリを使うと、データを安全に保護できます。 <br/> ![Google Play ストアでのアプリの画像](./media/google-play-get-app-android.png)
 5. アプリのインストールが完了したら、**[同意する]** を選択して使用条件に同意します。 OneDrive for Business アプリが自動的に起動します。
@@ -118,9 +117,9 @@ ms.lasthandoff: 07/01/2017
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>Android デバイスでのみアプリの PIN ポリシーが構成されるのはなぜですか。
 iOS と Android で暗号化の動作が異なります。
 
-iOS の場合、Intune MAM ポリシーに関連付けられているアプリでは、データはオペレーティング システムによって提供されるデバイス レベルの暗号化を使用して、格納中に暗号化されます。 そのため、アプリ暗号化ポリシーを有効にすると、デバイスの PIN を設定し、仕事のデータにアクセスする際に入力するようユーザーに自動的に要求します。 デバイスでデバイスの PIN をまだ構成していないユーザーは、デバイスの PIN を作成するよう求められます。
+iOS の場合、Intune アプリ保護ポリシーに関連付けられているアプリでは、データはオペレーティング システムによって提供されるデバイス レベルの暗号化を使用して、格納中に暗号化されます。 そのため、アプリ暗号化ポリシーを有効にすると、デバイスの PIN を設定し、仕事のデータにアクセスする際に入力するようユーザーに自動的に要求します。 デバイスでデバイスの PIN をまだ構成していないユーザーは、デバイスの PIN を作成するよう求められます。
 
-Android の場合、Intune MAM ポリシーに関連付けられているアプリでは、ファイル I/O タスク中にデータが同期的に暗号化されます。 デバイス ストレージ上のコンテンツは常に暗号化されます。 MDM で管理されていないデバイスの場合、MAM ポリシーでデバイスの PIN の要件を強制することはできません。 仕事のデータにアクセスする際に PIN を使用するようユーザーに求めるには、ウィザードでアプリの PIN ポリシーを有効にします。
+Android の場合、Intune アプリ保護ポリシーに関連付けられているアプリでは、ファイル I/O タスク中にデータが同期的に暗号化されます。 デバイス ストレージ上のコンテンツは常に暗号化されます。 MDM で管理されていないデバイスの場合、アプリ保護ポリシーでデバイスの PIN の要件を強制することはできません。 仕事のデータにアクセスする際に PIN を使用するようユーザーに求めるには、ウィザードでアプリの PIN ポリシーを有効にします。
 
 これらのポリシー設定は、組織の要件に合わせていつでも編集できます。
 
