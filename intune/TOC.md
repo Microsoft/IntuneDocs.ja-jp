@@ -74,6 +74,7 @@
 #### [制限事項](enrollment-restrictions-set.md)
 #### [Apple MDM プッシュ通知証明書](apple-mdm-push-certificate-get.md)
 #### [企業 ID](corporate-identifiers-add.md)
+#### [多要素認証](multi-factor-authentication.md)
 #### [デバイス登録マネージャー](device-enrollment-manager-enroll.md)
 #### [デバイスをグループにマッピングする](device-group-mapping.md)
 ### Windows の登録の設定
@@ -265,7 +266,7 @@
 # 監視とトラブルシューティング
 ## [問題のトラブルシューティングの方法](help-desk-operators.md)
 ## [Intune データ ウェアハウスを使用する](reports-nav-create-intune-reports.md)
-### [Power BI でデータ ウェアハウスに接続する](reports-proc-get-a-link-powerbi.md)
+### [Power BI を使用してのデータ ウェアハウスへの接続](reports-proc-get-a-link-powerbi.md)
 
 # 開発とカスタマイズ
 ## [カスタム デバイス設定の構成](custom-settings-configure.md)
@@ -291,7 +292,7 @@
 ## [Intune Graph API の使用方法](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
 ## [Intune データ ウェアハウス API](reports-nav-intune-date-warehouse.md)
-<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [REST クライアントを使用してのデータ ウェアハウス API からのデータの取得](reports-proc-data-rest.md)
 ### [データ ウェアハウス API エンドポイント](reports-api-url.md)
 ### [データ ウェアハウスのデータ モデル](reports-ref-data-model.md)
 #### [日付エンティティのリファレンス](reports-ref-date.md)
@@ -300,6 +301,6 @@
 #### [デバイス エンティティのリファレンス](reports-ref-devices.md)
 #### [アプリケーション エンティティのリファレンス](reports-ref-application.md)
 #### [ポリシー エンティティのリファレンス](reports-ref-policy.md)
-<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) -->
 
 # [用語集](intune-glossary.md)
