@@ -14,11 +14,11 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1627627ab1744f963d738dcedde6a772bb3ae663
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 205c9c52759d5fee2429fe46d19c8882aacafa7a
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Microsoft Intune に登録されていないデバイスの基幹業務アプリとデータを保護する
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 07/18/2017
 
 ##  <a name="step-1-prepare-the-app"></a>手順 1: アプリを準備する
 
-MAM ポリシーをアプリに適用する前に、まず Microsoft Intune アプリ ラッピング ツール (iOS 用) (prepare-ios-apps-for-mo/intune/apps-prepare-mobile-application-managementoid](/intune/app-wrapper-prepare-android) を使用してアプリをラップするか、または [Intune App SDK](/intune/app-sdk) を使用して Intune アプリ保護機能を手動で統合します。
+MAM ポリシーをアプリに適用する前に、まず Microsoft Intune アプリ ラッピング ツール ([iOS](/intune/app-wrapper-prepare-ios) 用、[Android](/intune/app-wrapper-prepare-android) 用) を使用してアプリをラップする必要があります。あるいは、[Intune アプリ SDK](/intune/app-sdk) を利用し、Intune アプリ保護機能を手動で統合します。
 
 アプリ ラッピング ツールと SDK の比較については、「[Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](/intune/apps-prepare-mobile-application-management)」を参照してください。
 

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 07/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 059c6d2c65c78b6a94f93c26d606abe0451edbbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0bb3ca2f63ee963dae61ee6622d41fe4aef7adfd
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune を使用してアプリをグループに割り当てる方法
 
@@ -59,6 +59,7 @@ ms.lasthandoff: 07/01/2017
     - **[必須]** - アプリは選択したグループのデバイスにインストールされます。
     - **[アンインストール]** - アプリは選択したグループのデバイスからアンインストールされます。
     - **[登録せずに使用可能]** - このアプリを、デバイスが Intune に登録されていないユーザーのグループに割り当てます。
+6. **iOS アプリの場合のみ** - アプリごとの VPN 設定を含む iOS VPN プロファイルを作成した場合は、**[VPN]** で選ぶことができます。 アプリが実行されると、VPN 接続が開かれます。 詳細については、「[iOS デバイス向けの VPN 設定](vpn-settings-ios.md)」を参照してください。
 6. 完了したら、**[保存]** を選択します。
 
 これで、選択したグループにアプリが割り当てられました。

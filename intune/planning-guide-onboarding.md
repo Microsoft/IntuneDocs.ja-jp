@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 07/10/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 71558786cc7f058cee31e9bbe3960ed75a76891b
-ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
+ms.openlocfilehash: b535c137d16ed8e17f4aee22d1fe2e922247f088
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="implement-your-intune-plan"></a>Intune の計画を実装する
 
@@ -32,7 +32,7 @@ Intune スタンドアロンの主な要件は次のようになります。
 
 -   Enterprise Mobility + Security (EMS)/Intune のサブスクリプション
 
--   Office 365 サブスクリプション (Office アプリと MAM ポリシー管理アプリ)
+-   Office 365 サブスクリプション (Office アプリとアプリ保護ポリシー管理アプリ用)
 
 -   Apple APNs 証明書 (iOS デバイス プラットフォーム管理を有効にします)
 
@@ -109,7 +109,7 @@ Intune は、メール、Wi-Fi、VPN のプロファイルに対応していま�
 
 ### <a name="task-10-add-and-deploy-apps"></a>作業 10: アプリを追加して展開する
 
-Intune は、Web アプリ、基幹業務アプリ、パブリック ストア アプリの展開をサポートしています。 また、MAM ポリシーと関連付けることで、Intune SDK を統合しているアプリを管理できます。 Intune 展開のユース ケースと要件に基づき、アプリを適宜追加し、対象グループに展開します。
+Intune は、Web アプリ、基幹業務アプリ、パブリック ストア アプリの展開をサポートしています。 また、アプリ保護ポリシーと関連付けることで、Intune SDK を統合しているアプリを管理できます。 Intune 展開のユース ケースと要件に基づき、アプリを適宜追加し、対象グループに展開します。
 
 -   詳しくは、[アプリの追加と展開](app-management.md)に関する記事をご覧ください。
 
