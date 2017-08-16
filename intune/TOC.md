@@ -291,7 +291,7 @@
 ### [Intune App SDK Xamarin コンポーネント](app-sdk-xamarin.md)
 ## [Intune Graph API の使用方法](intune-graph-apis.md)
 ## [Intune Graph API](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
-## [Intune データ ウェアハウス API](reports-nav-intune-date-warehouse.md)
+## [Intune データ ウェアハウス API](reports-nav-intune-data-warehouse.md)
 ### [REST クライアントを使用してのデータ ウェアハウス API からのデータの取得](reports-proc-data-rest.md)
 ### [データ ウェアハウス API エンドポイント](reports-api-url.md)
 ### [データ ウェアハウスのデータ モデル](reports-ref-data-model.md)
