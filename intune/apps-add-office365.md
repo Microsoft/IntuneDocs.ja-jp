@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/30/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a97e58f1d108932e44b0b4e36bda5a30b7a90da
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: e41eceed55a323a7f3c07c7b5d8ab2da7764ff53
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune で Windows 10 デバイスに Office 365 ProPlus 2016 アプリを割り当てる方法
 
@@ -36,6 +36,7 @@ ms.lasthandoff: 08/03/2017
 - Intune でアプリ スイートをインストールするときに、Office アプリが開いている場合は、エンドユーザーは保存されていないファイルのデータを失う可能性があります。
 - このインストール方法は Windows 10S のデバイスではサポートされていません。
 - このアプリの種類を使用可能として割り当て、割り当てが異なる複数のユーザーを対象とする場合、最近の対象割り当てのみが表示されます。
+- Intune では、Intune を使用して Office 365 アプリを既に展開しているデバイス上の Windows ストアから Office 365 デスクトップ アプリ (Office Centennial アプリとして知られる) をインストールすることをサポートしていません。 この構成をインストールすると、データが損失したり壊れたりする可能性があります。
 
 
 ## <a name="get-started"></a>作業開始

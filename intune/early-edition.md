@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 8/3/2017
+ms.date: 08/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5861c999752bfef05b8a33161d0bf75a6d4daf59
-ms.sourcegitcommit: 18cdbdc226f64368de892a8c5cff157c37986c57
+ms.openlocfilehash: 5d5d8e0500a0ee928b1037a978f6d4dadab71495
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/10/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2017"></a>Microsoft Intune の初期エディション - 2017 年 8 月
 
@@ -42,29 +42,8 @@ ms.lasthandoff: 08/03/2017
 
 ## <a name="intune-on-the-azure-portal"></a>Azure Portal での Intune
 
-
-
-
-### <a name="new-device-action-to-force-devices-to-sync-with-intune----711369---"></a>デバイスを Intune と強制同期する新しいデバイス アクション<!-- 711369 -->    
-選択したデバイスの Intune への即座のチェックインを強制する新しいデバイス アクションが追加されます。 チェックインしたデバイスには、それに対して保留中のアクションまたはポリシーが即座に割り当てられます。  このアクションにより、次のスケジュールされたチェックインを待つことなく、割り当てられたポリシーの検証およびトラブルシューティングを即座に実行できるようになります。
-
 ### <a name="actions-for-non-compliance----730266--"></a>コンプライアンス非対応に対するアクション <!--730266-->     
 *コンプライアンス非対応に対するアクション*は、コンプライアンス非対応のデバイスに対してアクションを実行できるようにするコンプライアンス ポリシーの新しい機能です。 単一または複数のアクションを指定できます。また、実行する必要があるアクションの期間を指定することもできます。 たとえば、デバイスが非対応になった直後に電子メールで、その非対応デバイスのユーザーに通知することができます。あるいは、非対応デバイスに対して、条件付きアクセスで 3 日間の猶予期間後の企業リソースへのアクセスをブロックすることができます。
-
-
-### <a name="restrict-android-and-ios-device-enrollment-restriction-by-os-version------1333256--1245463----"></a>Android および iOS デバイスの OS のバージョンによる登録制限 <!--- 1333256,  1245463 --->  
-オペレーティング システムのバージョン番号によって iOS と Android の登録を制限する機能が追加されました。 [**Intune**] > [**登録の制限**] > [**デバイスの種類の制限**] > [**既定**] > [**プラットフォームの制限**] で、IT 管理者は、オペレーティング システムのバージョン番号の最小値から最大値をプラットフォーム構成して、登録を制限できるようになりました。 Android オペレーティング システムのバージョンは、Major.Minor.Build.Rev の形式で指定する必要があります (Build、Rev は任意)。 iOS オペレーティング システムのバージョンは、Major.Minor.Build の形式で指定する必要があります (Build は任意)。
-
->[!NOTE]
->この設定は、Apple Device Enrollment Program や Apple School Manager や Apple Configurator など、Apple の登録プログラムを介した登録は制限しません。
-
-### <a name="restrict-android-ios-and-macos-device-personally-owned-device-enrollment------1333272--1333275-1245709----"></a>個人所有の Android、iOS、および macOS デバイスの登録を制限する<!--- 1333272,  1333275, 1245709 --->
-Intune では、デバイスのシリアル番号を使用して、個人所有の iOS、Android、および macOS デバイスの登録を制限できるようになりました。 一部のデバイスは、シリアル番号を報告しません。 詳細については、デバイスの製造元にお問い合わせください。 Intune にデバイスのシリアル番号をアップロードし、それを企業所有として事前に宣言できます。 登録の制限を使用すると、個人所有のデバイス (BYOD) をブロックして、企業所有のデバイスのみの登録を許可することができます。
-
-Intune ポータルにシリアル番号をインポートするには、[**デバイスの登録**] > [**Corporate device identifiers**]\(企業のデバイス識別子\) に進み、[**追加**] をクリックし、CSV ファイルをアップロードします。 このファイルには、ヘッダーを含めず、シリアル番号と IMEI 番号などの詳細のために列を 2 つ用意する必要があります。  個人所有のデバイスを制限するには、[**デバイスの登録**] > [**登録制限**] に移動します。 [**デバイスの種類の制限**] から [**既定**] を選択し、[**プラットフォーム構成**] を選択します。 個人所有の iOS、Android、および macOS デバイスを [**許可**] または [**ブロック**] できます。 
-
-### <a name="force-supervised-ios-devices-to-automatically-install-the-latest-available-software-update----777100---"></a>監督下の iOS デバイスに利用可能な最新のソフトウェア更新プログラムを強制的に自動インストールする<!-- 777100 -->   
-ソフトウェアの更新プログラム ワークスペースに用意された新しいポリシーを使用すると、監督下の iOS デバイスに利用可能な最新のソフトウェア更新プログラムを強制的に自動インストールできます。 また旧バージョンの iOS デバイスが列挙された新しいレポートを参照することもできます。そこには、デバイスが最新でない理由の概要が記載されています。
 
 ### <a name="new-report-that-lists-ios-devices-with-older-ios-versions------1352223---"></a>古い iOS バージョンの iOS デバイス一覧が記載された新しいレポート<!-- 1352223 -->
 [**ソフトウェア更新プログラム**] ワークスペースから [**Out-of-date iOS Devices**]\(古い iOS デバイス\) レポートを利用できるようになります。 このレポートには、iOS の更新ポリシーが対象とする監視対象の iOS デバイスの一覧と利用可能な更新が表示されます。 デバイスごとに、デバイスが自動的に更新されない理由のステータスを確認できます。 
@@ -115,9 +94,6 @@ IT 管理者は、Azure AD のワークロードで新しい条件付きアク�
 ### <a name="system-center-operations-manager-management-pack-for-exchange-connector----885457---"></a>Exchange Connector 用の System Center Operations Manager 管理パック <!-- 885457 -->   
 Exchange Connector 用の System Center Operations Manager 管理パックが Exchange Connector のログ解析に利用できるようになります。 問題のトラブルシューティングを行う必要がある場合、この管理パックによって別の方法で Intune を監視できます。
 
-### <a name="conditional-access-support-for-mac-devices-----720172---"></a>Mac デバイスの条件付きアクセスのサポート<!-- 720172 -->   
-Mac デバイスを Intune に登録し、そのデバイス コンプライアンス ポリシーに準拠することを求める条件付きアクセス ポリシーを間もなく設定できるようになります。 たとえば、ユーザーは macOS 用の Intune ポータル サイト アプリをダウンロードして、Mac デバイスを Intune に登録します。 Intune は、暗証番号 (PIN)、暗号化、OS バージョン、およびシステムの整合性などの要件にその Mac デバイスが準拠しているかどうかを評価します。
-
 ### <a name="end-of-support-for-ios-80----1164477---"></a>iOS 8.0 のサポートの終了 <!---1164477--->
 iOS 用の管理対象アプリとポータル サイト アプリから会社のリソースにアクセスするには、iOS 9.0 以降を使用している必要があります。 この 9 月までに更新されないデバイスは、ポータル サイトまたはそれらのアプリにアクセスできなくなります。 12 月には、電子メールを含む、会社のリソースにすべてアクセスできなくなります。 
 
@@ -132,13 +108,11 @@ Intune サービスによって管理されている Windows Phone 8.1 デバイ
 
 できるだけ早い機会に、対象となる Windows Phone 8.1 デバイスを Windows 10 Mobile にアップグレードすることをお勧めします。 
 
-
-
-
 ## <a name="intune-apps"></a>Intune アプリ
 
-### <a name="light-and-dark-modes-available-for-the-company-portal-app-for-windows-10----676547---"></a>Windows 10 のポータル サイト アプリで利用可能なライト モードとダーク モード<!---676547--->
-エンドユーザーは Windows 10 のポータル サイト アプリのカラー モードをカスタマイズできるようになります。 ユーザーはポータル サイト アプリの [設定] セクションでこの変更をできるようになります。 変更はユーザーがアプリを再起動した後に反映されます。 Windows 10 のバージョン 1607 以降では、アプリの既定のモードはシステム設定になります。 Windows 10 のバージョン 1511 以降を実行するデスクトップでは、アプリの既定のモードはライト モードです。
+### <a name="intune-managed-browser-support-for-ios-and-android----1374196---"></a>iOS および Android <!---1374196---> 用の Intune Managed Browser のサポート
+
+2017 年 10 月の時点で、Android アプリで使用する Intune Managed Browser アプリは、Android 4.4 以降を実行しているデバイスのみをサポートします。 iOS の Intune Managed Browser アプリは、iOS 9.0 以降を実行しているデバイスのみをサポートします。 以前のバージョンの Android および iOS は、Managed Browser の使用を続けることができますが、新しいバージョンのアプリをインストールすることはできません。また、アプリのすべての機能にアクセスできるとは限りません。 サポートされるオペレーティング システム バージョンにこれらのデバイスを更新することをお勧めします。
 
 ### <a name="allow-end-users-to-access-the-company-portal-app-for-android-without-enrollment----1169910---"></a>エンドユーザーの Android 用のポータル サイト アプリへのアクセスを登録なしで許可する<!---1169910--->  
 エンドユーザーは間もなく Android 用のポータル サイト アプリにアクセスするために、デバイスを登録しなくて済むようになります。 アプリの保護ポリシーを使用する組織のエンドユーザーが、ポータル サイト アプリを開いたときに、デバイスの登録を求めるプロンプトが表示されなくなります。 エンドユーザーはデバイスを登録することなく、ポータル サイトからアプリをインストールできるようにもなります。 

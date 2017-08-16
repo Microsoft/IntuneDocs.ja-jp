@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 8684ea31420edd836038dc9337bd8bdf56e78ba6
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 0d05918a62549559a186376d99e28c952af16b9c
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="enable-byod-with-intune"></a>Intune で BYOD を有効にする
 
@@ -75,14 +75,14 @@ Intune では、次のことが簡単にできます。
 * [ストア アプリを管理対象デバイスに配信する](apps-deploy.md)
 * ポータル サイト Web サイトを使ってアプリの対象を管理されていないデバイスにする
 
-Intune では、iOS アプリ ストアとビジネス向け Windows ストアからボリューム購入したアプリを管理して展開することもできます。 これは、ボリューム購入したアプリを追跡するための管理オーバーヘッドを削減するのに役立ちます。
+Intune では、iOS アプリ ストアとビジネス向け Microsoft ストアからボリューム購入したアプリを管理して展開することもできます。 これは、ボリューム購入したアプリを追跡するための管理オーバーヘッドを削減するのに役立ちます。
 
 > [!TIP]
 > [Azure AD Connect でシングル サインオン (SSO) を構成する](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)ことができます。 SSO を使うと、ユーザーはオンプレミスで使っているドメイン ユーザー名とパスワードでアプリにサインインできます。 また、Azure Active Directory アプリケーション プロキシを使用して、[オンプレミスでホストされている Web アプリにインターネットベースのアクセスを提供](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)できます。
 
 -   [iOS デバイス用のボリューム購入アプリの管理](vpp-apps-ios.md)。 iOS アプリの複数のライセンスを購入するには、[Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) を利用します。 このためには、Apple Web サイトから Apple VPP アカウントをセットアップし、Apple VPP トークンを Intune にアップロードする必要があります。 その後、ボリューム購入情報を Intune と同期し、ボリューム購入アプリの使用を追跡することができます。
 
--   [ビジネス向け Windows ストアから購入したアプリの管理](windows-store-for-business.md)。 [ビジネス向け Windows ストア](https://www.microsoft.com/business-store)では、組織用のアプリを見つけて、個別または大量購入することができます。 Intune にストアを接続することで、Intune ポータルからボリューム購入アプリを管理することができます。
+-   [ビジネス向け Microsoft ストアから購入したアプリの管理](windows-store-for-business.md)。 [ビジネス向け Microsoft ストア](https://www.microsoft.com/business-store)では、組織用のアプリを見つけて、個別または大量購入することができます。 Intune にストアを接続することで、Intune ポータルからボリューム購入アプリを管理することができます。
 
 ## <a name="protect-company-data"></a>会社のデータを保護する
 
@@ -105,10 +105,10 @@ Intune のアプリケーション保護ポリシーでは、デバイスの登�
 
 [Windows 情報保護 (WIP) ポリシー](app-protection-policies-configure-windows-10.md)を使用すれば、管理対象の Windows 10 デバイスにも適用できます。 これらのポリシーは、従業員のエクスペリエンスを妨げることなく動作します。 ネットワーク環境や他のアプリを変更する必要はありません。
 
-### <a name="wipe-company-data-while-leaving-personal-data-intact"></a>個人データを保持しながら会社のデータを削除する
+### <a name="remove-company-data-while-leaving-personal-data-intact"></a>個人データを保持しながら会社のデータを削除する
 
-仕事でデバイスを使用しなくなった場合や別の用途に使用することになった場合、あるいは単に紛失してしまった場合には、デバイスから会社のアプリやデータを削除できます。 これは、Intune の選択的ワイプまたは完全なワイプ機能を使って行います。 ユーザーは、デバイスが Intune に登録されている場合、Intune ポータル サイトからリモートで個人所有デバイスをワイプすることもできます。
+仕事でデバイスを使用しなくなった場合や別の用途に使用することになった場合、あるいは単に紛失してしまった場合には、デバイスから会社のアプリやデータを削除できます。 この操作を行うには、Intune の会社データの削除および工場出荷時のリセット機能を使用することができます。 ユーザーは、デバイスが Intune に登録されている場合、Intune ポータル サイトからリモートで個人所有デバイスをリセットすることもできます。
 
-[フル ワイプ](devices-wipe.md)は、デバイスを工場出荷時の既定設定に戻し、ユーザーのデータと設定を削除します。 [選択的ワイプ](devices-wipe.md#selective-wipe)は、デバイスから会社のデータのみを削除し、ユーザーの個人データはそのまま残します。
+[工場出荷時のリセット](devices-wipe.md)は、デバイスを工場出荷時の既定設定に戻し、ユーザーのデータと設定を削除し、Intune 管理からデバイスを削除します。 [会社データの削除](devices-wipe.md#remove-company-data)は、デバイスから会社のデータのみを削除し、ユーザーの個人データはそのまま残します。
 
-一度開始されると、デバイスを管理対象から削除する選択的なワイプのプロセスが即座に開始されます。 プロセスが完了すると、会社のデータはすべて削除され、Intune ポータルからデバイス名が削除されます。 これでデバイスの管理ライフサイクルは終了します。
+開始されると、デバイスではリセット プロセスがすぐに開始されます。 プロセスが完了すると、会社のデータはすべて削除され、Intune からデバイス名が削除されます。 これでデバイスの管理ライフサイクルは終了します。
