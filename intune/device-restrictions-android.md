@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,20 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b9e009e94fb4d9bdb99960e0d238d5471d1f4b50
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 09641b5e34ab8200e7dd9d4c27f0dabf59fa62d2
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Android および Samsung KNOX Standard デバイスの制限設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 これらの設定を Android デバイス制限ポリシーとともに使用して、組織内のデバイスを構成します。
+
+>[!TIP]
+>必要な設定が利用できない場合、[カスタム プロファイル](custom-settings-android.md)を使用して、デバイスを構成できることがあります。 
 
 ## <a name="general"></a>全般
 
@@ -132,3 +135,8 @@ ms.lasthandoff: 08/03/2017
     - **管理対象アプリを追加**
 - **[画面スリープ ボタン]** - デバイスの画面スリープ ウェイク ボタンを有効または無効にします。
 - **ボリューム ボタン** - デバイスのボリューム ボタンの使用を有効または無効にします。
+
+
+## <a name="next-steps"></a>次のステップ
+
+引き続き「[デバイスの制限設定を構成する方法](device-restrictions-configure.md)」の手順を使用して作成し、デバイスの制限プロファイルを割り当てます。
