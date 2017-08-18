@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0893d511c73e4154c61063d96e26937ea2825467
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9899f08cac650b1fea05370eb52327bc3c204a48
+ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Intune でのアプリ ベースの条件付きアクセス
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 07/01/2017
 
 [Intune アプリ保護ポリシー](app-protection-policy.md)を使用すると、Intune に登録されているデバイス上の会社のデータを保護できます。 Intune での管理対象に登録されていない従業員所有のデバイスでも、アプリ保護ポリシーを使用できます。 この場合、会社はデバイスを管理しなくても、会社のデータとリソースが保護されるようにする必要はあります。
 
-アプリ ベースの条件付きアクセスとモバイル アプリケーション管理は、Intune アプリ保護ポリシーをサポートするモバイル アプリのみが Exchange Online やその他の Office 365 サービスにアクセスできるようにすることで、セキュリティ層を追加します。
+アプリ ベースの条件付きアクセスとモバイル アプリ管理は、Intune アプリ保護ポリシーをサポートするモバイル アプリのみが Exchange Online やその他の Office 365 サービスにアクセスできるようにすることで、セキュリティ層を追加します。
 
 > [!NOTE]
 > 管理対象アプリは、アプリ保護ポリシーが適用されたアプリであり、Intune で管理できます。
@@ -36,8 +36,10 @@ Microsoft Outlook アプリのみが Exchange Online にアクセスできるよ
 ## <a name="prerequisites"></a>必要条件
 アプリ ベースの条件付きアクセス ポリシーを作成するには、以下を保有している必要があります。
 
-- **Enterprise Mobility + Security または Azure Active Directory Premium のサブスクリプション**。ユーザーは EMS または Azure AD のライセンスを保有している必要があります。
-    - 詳細については、「[Enterprise Mobility pricing page](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility の価格) ページまたは「[Azure Active Directory の価格](https://azure.microsoft.com/pricing/details/active-directory/)」ページを参照してください。
+- **Enterprise Mobility + Security (EMS)** または **Azure Active Directory (AD) Premium サブスクリプション**
+- ユーザーは、EMS または Azure AD のライセンスを取得している必要があります
+
+詳細については、「[Enterprise Mobility pricing](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)」(Enterprise Mobility の価格) または「[Azure Active Directory の価格](https://azure.microsoft.com/pricing/details/active-directory/)」を参照してください。
 
 ## <a name="supported-apps"></a>サポートされているアプリ
 
@@ -53,24 +55,22 @@ Microsoft Outlook アプリのみが Exchange Online にアクセスできるよ
 <br></br>
 - **Microsoft Teams**
 
-    > [!NOTE] 
-    > アプリ ベースの条件付きアクセスは [LOB アプリもサポート](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication)していますが、LOB アプリが [Office 365 の先進認証](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)を使用している必要があります。
+アプリ ベースの条件付きアクセスは[基幹業務 (LOB) アプリもサポート](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication)していますが、LOB アプリが [Office 365 の先進認証](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)を使用している必要があります。
 
 ## <a name="how-app-based-conditional-access-works"></a>アプリ ベースの条件付きアクセスのしくみ
 
 この例では、管理者は Outlook アプリにアプリ保護ポリシーを適用し、その後、会社の電子メールへのアクセス時に使用できるアプリの承認済みリストに Outlook アプリを追加する条件付きアクセス ルールを適用しています。
 
-> [!NOTE] 
+> [!NOTE]
 > 下のフローチャートの構造は、他の管理対象アプリでも使用できます。
 
-![アプリ ベースの CA と Intune フローチャート](./media/ca-intune-common-ways-3.png)
+![Intune フローチャートを使用したアプリ ベースの条件付きアクセス](./media/ca-intune-common-ways-3.png)
 
 1.  ユーザーは、Outlook アプリから Azure AD の認証を試みます。
 
 2.  ユーザーは、初回認証時、ブローカー アプリのインストールのためにアプリ ストアにリダイレクトされます。 ブローカー アプリは、iOS の場合は Microsoft Authenticator、Android デバイスの場合は Microsoft ポータル サイトになります。
 
-    > [!NOTE]
-    > このシナリオでは、ユーザーはネイティブの電子メール アプリを使おうとすると、アプリ ストアにリダイレクトされ、その後 Outlook アプリのインストールにリダイレクトされます。
+ ユーザーがネイティブの電子メール アプリを使おうとすると、アプリ ストアにリダイレクトされ、その後 Outlook アプリのインストールにリダイレクトされます。
 
 3.  ブローカー アプリがデバイスにインストールされます。
 
@@ -80,13 +80,13 @@ Microsoft Outlook アプリのみが Exchange Online にアクセスできるよ
 
 6.  ブローカー アプリが、ポリシーの承認済みリストに登録されているかどうかをチェックするユーザー認証プロセスの一部として、App Client ID を Azure AD に送信します。
 
-7.  Azure AD が、ポリシーの承認済みリストに基づいて、ユーザーによるアプリの認証と使用を許可します。 アプリがポリシーの承認済みリストに登録されていない場合、Azure AD はそのアプリへのアクセスを拒否します。
+7.  Azure AD が、ポリシーの承認済みリストに基づいて、ユーザーによるアプリの認証と使用を許可します。 アプリがリストに登録されていない場合、Azure AD はそのアプリへのアクセスを拒否します。
 
 8.  Outlook アプリが Outlook クラウド サービスと通信して、Exchange Online との通信を開始します。
 
 9.  Outlook クラウド サービスが Azure AD と通信して、ユーザーの Exchange Online サービス アクセス トークンを取得します。
 
-10.  Outlook アプリが、Exchange Online と通信して、ユーザーの会社の電子メールを取得します。
+10.  Outlook アプリが Exchange Online と通信して、ユーザーの会社の電子メールを取得します。
 
 11.  会社の電子メールは、ユーザーのメールボックスに配信されています。
 

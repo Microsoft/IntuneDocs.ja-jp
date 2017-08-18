@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 33ddb60df7aebe36ff652e1da6da592442b96d4b
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: c05b2257fe03cd23ad5ba71a3fee217cd4802650
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune アプリの管理とは
 
@@ -87,7 +87,7 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
 
 ### <a name="monitor"></a>モニター
 - **[ライセンスされたアプリ]** - アプリ ストアからのボリューム購入アプリの表示、割り当て、監視を行います。
-    - [ビジネス向け一括購入アプリ向けの Windows ストア](windows-store-for-business.md)
+    - [ビジネス向け Microsoft ストアのボリューム購入アプリ](windows-store-for-business.md)
 - **[検出されたアプリ]** - Intune によって割り当てられ、デバイスにインストールされたすべてのアプリを表示します。
 - **[アプリ インストールの状態]** - 作成したアプリの割り当て状態を表示します。
 - **[アプリの保護状態]** - 選択したユーザーのアプリ保護ポリシーの状態を表示します。
@@ -97,7 +97,7 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
 ### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **[ビジネス向け Windows ストア]** - ビジネス向け Windows ストアとの統合を設定します。 その後、購入済みのアプリケーションを Intune に同期して割り当て、ライセンスの使用状況を追跡できるようになります。
-    - [ビジネス向け一括購入アプリ向けの Windows ストア](windows-store-for-business.md)
+- **[ビジネス向け Microsoft ストア]** - ビジネス向け Microsoft ストアとの統合を設定します。 その後、購入済みのアプリケーションを Intune に同期して割り当て、ライセンスの使用状況を追跡できるようになります。
+    - [ビジネス向け Microsoft ストアのボリューム購入アプリ](windows-store-for-business.md)
 - **[ポータル サイトのブランド化]** - 会社のポータルをカスタマイズして会社のブランドを付与します。
     - [会社のポータルの構成](company-portal-app.md)

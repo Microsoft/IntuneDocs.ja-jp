@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 014e59c017eac0d54a632e545692e1a1a8053164
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 45a3a8fe4960cc1bb8c5f2150f57d34d59c08e0a
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune での Android デバイス向けのカスタム設定
 
@@ -40,3 +40,13 @@ Microsoft Intune Android **カスタム** プロファイルを使用して、An
     - **[OMA-URI]** - 設定対象の OMA-URI を指定します。
     - **[値]** - 入力した OMA-URI に関連付ける値を入力します。
 4. 完了したら **[OK]** をクリックし、必要に応じて引き続き他の設定を追加します。
+
+## <a name="next-steps"></a>次のステップ
+
+設定が完了するとプロファイルが作成され、プロファイルの一覧ブレードに表示されます。 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事を参照してください。
+
+使用できるカスタム設定の例については、以下を参照してください。
+
+- [Microsoft Intune カスタム デバイス プロファイルを使用して、事前共有キーで Wi-Fi プロファイルを作成する](/intune/wi-fi-profile-shared-key)
+- [Microsoft Intune のカスタム プロファイルを使って、Android デバイス用にアプリごとの VPN プロファイルを作成する](/intune/android-pulse-secure-per-app-vpn)
+- [Microsoft Intune でカスタム ポリシーを使用して Samsung KNOX Standard デバイス用のアプリを許可またはブロックする](/intune/samsung-knox-apps-allow-block)

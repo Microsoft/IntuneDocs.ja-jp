@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,23 +14,35 @@ ms.technology:
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cd5f79c892bc96818195d6b50a804ac2666e4e7
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 30fac990d8b4a0a088180598e7787e23b1f708b7
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="reset-the-passcode-on-intune-managed-devices"></a>Intune で管理するデバイスのパスコードをリセットする
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**[パスコードのリセット]** アクションは、デバイスの新しいパスコードを生成します。新しいパスコードは、[<*デバイス名*>  **概要**] ブレードに表示されます。
+**[パスコードのリセット]** アクションは、デバイスの新しいパスコードを生成します。新しいパスコードは、[<*デバイス名*> **概要**] ブレードに表示されます。
+
+## <a name="supported-platforms"></a>サポートされているプラットフォーム
+
+- Windows - サポートされていません
+- Windows Phone - Windows Phone 8.1 から Azure AD に参加していない Windows 10 Creators Update まで、Windows 10 Creators Update 以降でサポートされています
+- iOS - サポートされています
+- macOS - サポートされていません
+- Android - Android 7 より前の Android バージョンでサポートされています。 Android for Work はサポートされていません。
+
+## <a name="how-to-reset-a-passcode"></a>パスコードをリセットする方法
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス]** を選択します。
 4. **[デバイスとグループ]** ブレードで、**[すべてのデバイス]** を選択します。
 5. 管理するデバイスの一覧からデバイスを選択し、その後 **[パスコードのリセット]** デバイス リモート アクションを選択します。
+
+## <a name="next-steps"></a>次のステップ
 
 実行したアクションの状態を確認するには、**[デバイスとグループ]** ブレードで **[デバイス アクション]** を選択します。

@@ -14,11 +14,11 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4d214ea9e85d6f08ecff42555cc7fbc36512a825
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f935a454f077caf096c43c892980a948dcd4c3a3
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="troubleshoot-app-deployment-problems-in-microsoft-intune"></a>Microsoft Intune のアプリ展開に関する問題のトラブルシューティング
 
@@ -36,9 +36,9 @@ Intune でのアプリの展開と管理に関して問題がある場合は、�
 |0x80073CFB|指定したパッケージは既にインストールされており、パッケージの再インストールがブロックされます|既にインストールされているパッケージと同じではないパッケージをインストールしようとすると、このエラーが発生することがあります。 デジタル署名がパッケージにも含まれることを確認します。 パッケージを再ビルドまたは再署名すると、パッケージは以前にインストールしたパッケージとビット単位で同じではなくなります。 このエラーを修正するには、次のように 2 つの選択肢が考えられます。<br /><br />-   アプリのバージョン番号を増やして、パッケージの再ビルドと再署名を行います。<br />-   システムのすべてのユーザーの古いパッケージを削除してから、新しいパッケージをインストールします。|
 |0x87D1041C|アプリケーションがインストールされましたが、検出されません。|- アプリは Intune によって正しくデプロイされ、(おそらくエンド ユーザーにより) その後、アンインストールされました。 ユーザーは、ポータル サイトからアプリを再インストールするように指示されます。 デバイスが次回チェックインするときに、必要なアプリが自動的に再インストールされます。|
 
-## <a name="troubleshooting-apps-from-the-windows-store"></a>Windows ストア アプリのトラブルシューティング アプリ
+## <a name="troubleshooting-apps-from-the-microsoft-store"></a>Microsoft ストア アプリのトラブルシューティング
 
-トピック「[Troubleshooting packaging, deployment, and query of Windows Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx)」 (Windows ストア アプリのパッケージ化、展開、およびクエリのトラブルシューティング) に記載された情報は、Windows ストアからアプリをインストールする際に発生する可能性がある一般的な問題のトラブルシューティングで役に立ちます (Intune を使用する場合、または他の手段を使用する場合に関係なく)。
+トピック「[Troubleshooting packaging, deployment, and query of Microsoft Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx)」 (Microsoft ストア アプリのパッケージ化、展開、およびクエリのトラブルシューティング) に記載されている情報は、Microsoft ストアからアプリをインストールする際に発生する可能性がある一般的な問題のトラブルシューティングで役に立ちます (Intune を使用する場合、または他の手段を使用する場合に関係なく)。
 
 ## <a name="troubleshooting-app-deployment-to-pcs-managed-by-the-intune-software-client"></a>Intune ソフトウェア クライアントによって管理されている PC へのアプリ展開で発生した問題のトラブルシューティング
 Intune ソフトウェア クライアントによって管理されている PC にアプリを展開する際に問題が発生した場合、次の 2 つのログ ファイルがトラブルシューティングに役立ちます。

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e85306934b68f64bad8c223ac117190607db8473
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: b87857425a40beb9fc07a78ab144f5b14a4d7c8e
+ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 08/05/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune で Managed Browser ポリシーを使ってインターネット アクセスを管理する
 
@@ -49,6 +49,11 @@ Managed Browser のポリシーを作成できるのは、以下のデバイス�
 -   Android 4 以降が実行されているデバイス
 
 -   iOS 8.0 以降を実行するデバイス
+
+>[!IMPORTANT]
+>2017 年 10 月の時点で、Android アプリで使用する Intune Managed Browser アプリは、Android 4.4 以降を実行しているデバイスのみをサポートします。 iOS の Intune Managed Browser アプリは、iOS 9.0 以降を実行しているデバイスのみをサポートします。
+>以前のバージョンの Android および iOS は、Managed Browser の使用を続けることができますが、新しいバージョンのアプリをインストールすることはできません。また、アプリのすべての機能にアクセスできるとは限りません。 サポートされるオペレーティング システム バージョンにこれらのデバイスを更新することをお勧めします。
+
 
 Intune Managed Browser では、[Microsoft Intune アプリケーション パートナー](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)から Web コンテンツを開くことができます。
 
@@ -84,19 +89,15 @@ Intune Managed Browser では、[Microsoft Intune アプリケーション パ�
 
 Intune Managed Browser と [Azure AD アプリケーション プロキシ]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)は、iOS および Android デバイスのユーザーに対して、次のシナリオをサポートするために一緒に使用することができます。
 
-- ユーザーがダウンロードして、Microsoft Outlook アプリにサインインします。  Intune アプリの保護ポリシーが自動的に適用されます。 保護ポリシーでは、保存されたデータを暗号化し、ユーザーが企業ファイルを管理されていないアプリまたはデバイス上の場所に転送できないようにします。 ユーザーが Outlook 内のイントラネット サイトへのリンクをクリックすると、そのリンクを別のブラウザーではなく、Managed Browser アプリ内で開くように指定することができます。
-Managed Browser は、このイントラネット サイトがアプリケーション プロキシを使用してユーザーに公開されていることを認識します。 ユーザーは、適用される多要素認証で認証するためにアプリケーション プロキシを使い、イントラネット サイトに到達する前に条件付きアクセスを使って自動的にルーティングされます。 このサイトは、ユーザーがリモートにいるときに、以前は見つけることができませんでしたが、アクセスできるようになり、Outlook のリンクが期待どおりに動作するようになりました。  
+- ユーザーがダウンロードして、Microsoft Outlook アプリにサインインします。 Intune アプリの保護ポリシーが自動的に適用されます。 保護ポリシーでは、保存されたデータを暗号化し、ユーザーが企業ファイルを管理されていないアプリまたはデバイス上の場所に転送できないようにします。 ユーザーが Outlook 内のイントラネット サイトへのリンクをクリックすると、そのリンクを別のブラウザーではなく、Managed Browser アプリ内で開くように指定することができます。 Managed Browser は、このイントラネット サイトがアプリケーション プロキシを使用してユーザーに公開されていることを認識します。 ユーザーは、適用される多要素認証で認証するためにアプリケーション プロキシを使い、イントラネット サイトに到達する前に条件付きアクセスを使って自動的にルーティングされます。 このサイトは、ユーザーがリモートにいるときに、以前は見つけることができませんでしたが、アクセスできるようになり、Outlook のリンクが期待どおりに動作するようになりました。
+- リモート ユーザーが Managed Browser アプリケーションを開き、内部 URL を使用してイントラネット サイトに移動します。 Managed Browser は、このイントラネット サイトがアプリケーション プロキシ経由でユーザーに公開されていることを認識します。 ユーザーは、適用される多要素認証で認証するためにアプリケーション プロキシを使い、イントラネット サイトに到達する前に条件付きアクセスを使って自動的にルーティングされます。 このサイトは、ユーザーがリモートにいるときに、以前は見つけることができませんでしたが、アクセスできるようになりました。
 
-- リモート ユーザーが Managed Browser アプリケーションを開き、内部 URL を使用してイントラネット サイトに移動します。 Managed Browser は、このイントラネット サイトがアプリケーション プロキシ経由でユーザーに公開されていることを認識します。 ユーザーは、適用される多要素認証で認証するためにアプリケーション プロキシを使い、イントラネット サイトに到達する前に条件付きアクセスを使って自動的にルーティングされます。
-このサイトは、ユーザーがリモートにいるときに、以前は見つけることができませんでしたが、アクセスできるようになりました。  
+### <a name="before-you-start"></a>開始する前に
 
-### <a name="before-you-start"></a>アップグレードを開始する前に
-
-- 内部アプリケーションが Azure AD アプリケーション プロキシ経由で公開されていることを確認します。
-- アプリケーション プロキシを構成し、アプリケーションを公開するには、[セットアップに関するドキュメント]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)を参照してください。 
-- Managed Browser アプリの最小バージョン 1.2.0 を使用する必要があります。
-- Managed Browser アプリのユーザーは、[Intune アプリの保護ポリシー]( app-protection-policy.md)をアプリに割り当てています。
-- アプリケーション プロキシ アプリに割り当てられている自動リダイレクトのみを表示できます。
+- Azure AD アプリケーション プロキシ経由の内部アプリケーションをセットアップします。
+    - アプリケーション プロキシを構成し、アプリケーションを公開するには、[セットアップに関するドキュメント]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)を参照してください。 
+    - Managed Browser アプリの最小バージョン 1.2.0 を使用する必要があります。
+    - Managed Browser アプリのユーザーは、[Intune アプリの保護ポリシー]( app-protection-policy.md)をアプリに割り当てています。
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>ステップ 1: Outlook から Managed Browser への自動リダイレクトを有効にする
 Outlook は、アプリ保護ポリシーの [**Managed Browser に表示する Web コンテンツを制限する**] 設定を有効にして構成される必要があります。

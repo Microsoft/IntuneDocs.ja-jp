@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7bf3c9bce6d29467ad44f5c1adaa213616cc602e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: dd28f96d7664d1b1daee9a0f99fa5800f05a30b5
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="your-company-portal-app-for-windows-is-out-of-date"></a>Windows のポータル サイト アプリが古い
 
-会社の電子メール、連絡先、ドキュメントなどに引き続きアクセスするには、ポータル サイト アプリを更新する必要があります。 これを解決するには、**Windows ストア**を開き、**ポータル サイト** アプリの新しいバージョンをインストールします。
+会社の電子メール、連絡先、ドキュメントなどに引き続きアクセスするには、ポータル サイト アプリを更新する必要があります。 これを解決するには、**Microsoft ストア**を開き、**ポータル サイト** アプリの新しいバージョンをインストールします。
 
 サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。

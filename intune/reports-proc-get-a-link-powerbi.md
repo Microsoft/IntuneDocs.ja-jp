@@ -14,17 +14,17 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a9d99b71b9f84eea45ae597ed0f69010f6e95805
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: b70bf3410e20dd792c0fcff050292ddea714d63e
+ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Power BI でデータ ウェアハウスに接続する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Microsoft Power BI で使用するファイルをダウンロードし、Intune テナントに合わせて動的に生成されるインタラクティブなレポートを読み込むことができます。 データ ウェアハウス Power BI ファイル (pbix) には、テナントへの接続設定と、次のサンプル レポートとグラフが含まれています。 
+Microsoft Power BI で使用するファイルをダウンロードし、Intune テナントに合わせて動的に生成されるインタラクティブなレポートを読み込むことができます。 データ ウェアハウス Power BI ファイル (pbix) には、テナントへの接続設定と、次のサンプル レポートとグラフが含まれています。  
 
   -  [デバイス]
   -  登録
@@ -45,6 +45,9 @@ Power BI ファイルをダウンロードする方法と、Power BI で OData �
 ## <a name="load-the-data-and-reports-using-the-power-bi-file-pbix"></a>Power BI ファイル (pbix) を使用してデータとレポートを読み込む
 
 Power BI ファイル (pbix) には、テナントの接続情報と、データ ウェアハウス データ モデルに基づいて構築済みのレポートのセットが含まれています。 Power BI Desktop でファイルを開き、Azure AD にサインインします。 レポートでは Intune テナントからデータが読み込まれます。
+
+> [!Important]  
+> 各 Power BI ファイル (pbix) は、テナントの場所によって異なる場合があります。 複数の Intune テナントを管理している場合は、必ずそのテナントにログインした状態で Azure Portal からダウンロードしたファイルを使用します。  
 
 1.  Azure Portal にサインインし、**[監視 + 管理]** > **[Intune]** の順に選択します。 **Intune** のリソースを検索することもできます。  
 2.  **[Microsoft Intune データ ウェアハウス API (プレビュー)]** ブレードを開きます。

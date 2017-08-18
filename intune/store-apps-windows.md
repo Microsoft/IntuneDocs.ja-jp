@@ -15,11 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ad1156076f0ec34d5ac110e32a19a8332c8f863
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 812bdf5bde724798289668937ed2502438c524e0
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Windows ストア アプリを Microsoft Intune に追加する方法
 
@@ -51,12 +51,12 @@ ms.lasthandoff: 07/01/2017
 作成したアプリはアプリの一覧に表示され、選択したグループに割り当てることができるようになります。 詳細については、[アプリをグループに割り当てる方法](apps-deploy.md)に関するページを参照してください。
 
 ## <a name="manually-assign-windows-10-company-portal-app"></a>Windows 10 ポータル サイト アプリの手動割り当て
-エンド ユーザーは Windows ストアからポータル サイト アプリをインストールすることで、デバイスを管理し、アプリをインストールすることができます。 ただし、ビジネスでポータル サイト アプリを割り当てる必要がある場合は、Intune をビジネス向け Windows ストアと統合していない場合でも、Intune から直接 Windows 10 ポータル サイト アプリを手動で割り当てることができます。
+エンド ユーザーは Microsoft ストアからポータル サイト アプリをインストールすることで、デバイスを管理し、アプリをインストールすることができます。 ただし、ビジネスでポータル サイト アプリを割り当てる必要がある場合は、Intune をビジネス向け Microsoft ストアと統合していない場合でも、Intune から直接 Windows 10 ポータル サイト アプリを手動で割り当てることができます。
 
  > [!NOTE]
  > このオプションでは、アプリの更新プログラムがリリースされるたびに、手動更新を割り当てる必要があります。
 
-1. [ビジネス向け Windows ストア](https://www.microsoft.com/business-store)のアカウントにログインし、ポータル サイト アプリの**オフライン ライセンス** バージョンを取得します。  
+1. [ビジネス向け Microsoft ストア](https://www.microsoft.com/business-store)のアカウントにログインし、ポータル サイト アプリの**オフライン ライセンス** バージョンを取得します。  
 2. アプリが取得されたら、**[インベントリ]** ページでアプリを選択します。  
 3. **プラットフォーム**として **[Windows 10 all devices (Windows 10 のすべてのデバイス)]** を選択し、適切な**アーキテクチャ**を選択してダウンロードします。 このアプリは、アプリ ライセンス ファイルを必要としません。
 ![ダウンロードする Windows 10 のすべてのデバイスと Architecture X86 Package のイメージ](./media/Win10CP-all-devices.png)
@@ -93,7 +93,7 @@ Intune がユニバーサル アプリ用に依存関係をどのように処理
 この場合のアプリへの署名および割り当て方法は、次のとおりです。
 
 1. Microsoft Intune Windows 10 ポータル サイト アプリの署名スクリプトを [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) からダウンロードします。  このスクリプトでは、Windows SDK for Windows 10 をホスト コンピューターにインストールする必要があります。 Windows SDK for Windows 10 をダウンロードするには、[https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) にアクセスします。
-2. 上で説明されているように、ビジネス向け Windows ストアから Windows 10 ポータル サイト アプリをダウンロードします。  
+2. 上記の説明のように、ビジネス向け Microsoft ストアから Windows 10 ポータル サイト アプリをダウンロードします。  
 3. スクリプト ヘッダーに記載された入力パラメーターを使用してスクリプトを実行し、Windows 10 ポータル サイト アプリに署名します (以下に抜粋)。 スクリプトに依存関係を渡す必要はありません。 依存関係は、アプリが Intune 管理コンソールにアップロードされる場合にのみ必要です。
 
 |パラメーター | 説明|

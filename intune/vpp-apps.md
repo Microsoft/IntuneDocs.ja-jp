@@ -15,11 +15,11 @@ ms.assetid: 85b07f57-661a-4bc8-87d2-7b446d5cf4d6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e8f938e81740d1bb08e0e9995cab94329c2fe5e7
-ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.openlocfilehash: fced0a52db719fe2228d6cd91786b7de8f539f57
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>Microsoft Intune によるボリューム購入アプリとブックの管理
 
@@ -33,8 +33,8 @@ Microsoft Intune を使用することで、このようなプログラムを通
 
 ## <a name="which-types-of-apps-and-books-can-you-manage"></a>管理できるアプリとブックの種類
 
-Intune では、iOS ストアからボリューム購入したアプリとブックを管理し、ビジネス向け Windows ストアからボリューム購入したアプリを管理できます。 各ストアからライセンスを購入したアプリを管理する方法については、次のトピックのいずれかをご覧ください。
+Intune では、iOS ストアからボリューム購入したアプリとブックを管理し、ビジネス向け Microsoft ストアからボリューム購入したアプリを管理できます。 各ストアからライセンスを購入したアプリを管理する方法については、次のトピックのいずれかをご覧ください。
 
 - [iOS のボリューム購入アプリの管理](vpp-apps-ios.md)
-- [ビジネス用 Windows ストアからボリューム購入したアプリの管理](windows-store-for-business.md)
+- [ビジネス向け Microsoft ストアからボリューム購入したアプリの管理](windows-store-for-business.md)
 - [Volume Purchase Program で購入した iOS 電子ブックを Microsoft Intune で管理する方法](vpp-ebooks-ios.md)

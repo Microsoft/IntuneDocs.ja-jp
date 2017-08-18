@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/06/2017
+ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e7c46a0bab45223293b73f8eaa2f8b40850cd43
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6c5d97499545d0ad3899f28ed4e88eb4dc1fe734
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="map-device-groups"></a>デバイス グループをマップする
 
@@ -44,7 +44,7 @@ Microsoft Intune のデバイス カテゴリを使用して、ユーザー定�
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>手順 1 - Azure Portal の [Intune] ブレードでデバイス カテゴリを作成する
 1. Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイスの登録]** を選択します。
-3. **[登録]** ブレードで、**[デバイス カテゴリ]** を選択します。
+3. **[デバイスの登録]** ブレードで、**[デバイス カテゴリ]** を選択します。
 4. **[デバイス カテゴリ]** ページで、**[作成]** を選択して、新しいカテゴリを追加します。
 5. 次のブレードで、新しいカテゴリの**名前**と省略可能な**説明**を入力します。
 6. 完了したら [**作成**] をクリックします。 作成したカテゴリがカテゴリの一覧に表示されます。
