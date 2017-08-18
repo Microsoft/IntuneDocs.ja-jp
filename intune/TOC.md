@@ -17,11 +17,12 @@
 ## [既知の問題](known-issues.md)
 ## [サポートを受ける](get-support.md)
 
-# [作業開始](get-started-evaluation.md)
-## [グループの作成](get-started-groups.md)
+# [Intune の概要](get-started-evaluation.md)
+## [Azure Portal 内の移動](get-started-azure.md)
 ## [ユーザーの作成](get-started-users.md)
-## [デバイスの登録](get-started-enroll.md)
+## [グループの作成](get-started-groups.md)
 ## [ポリシーの割り当て](get-started-policies.md)
+## [デバイスの登録](get-started-enroll.md)
 ## [アプリを割り当てる](get-started-apps.md)
 
 
