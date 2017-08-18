@@ -11,11 +11,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: d668e50b3880bdaf569380fa5a5fd25f5ed4564e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 790b9b0a5feb40cd22d366438fca566b93d2138b
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune を使用して Windows デバイスに展開できるように基幹業務アプリに署名する
 
@@ -64,7 +64,7 @@ Intune 管理者は、ポータル サイト アプリを含め、基幹業務 (
 
 ## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>例: Windows デバイス用ポータル サイト アプリのダウンロード、署名、および展開
 
-Windows ストアからインストールしなくても、Intune を使用して、Windows Phone や Windows 10 Mobile デバイスなどの Windows デバイスにポータル サイト アプリを展開できます。 ポータル サイト アプリをダウンロードし、証明書を使用して署名する必要があります。  この手順は、ユーザーが会社のストアを使用しないが、ポータル サイトを Windows Phone 8.1 デバイスに展開する場合のみ必要です。
+Microsoft ストアからインストールしなくても、Intune を使用して、Windows Phone や Windows 10 Mobile デバイスなどの Windows デバイスにポータル サイト アプリを展開できます。 ポータル サイト アプリをダウンロードし、証明書を使用して署名する必要があります。  この手順は、ユーザーが会社のストアを使用しないが、ポータル サイトを Windows Phone 8.1 デバイスに展開する場合のみ必要です。
 
 
 1.  **ポータル サイトをダウンロードする**
@@ -75,7 +75,7 @@ Windows ストアからインストールしなくても、Intune を使用し�
 
     -   WinPhoneCompanyPortal.ps1 – ポータル サイト アプリ ファイルへの署名に使用する PowerShell スクリプト。これにより、ポータル サイト アプリを Windows Phone 8.1 デバイスに展開できます。
 
-    また、[ビジネス向け Windows ストア](http://businessstore.microsoft.com/)から Windows Phone 8.1 ポータル サイト (オフライン ライセンス パッケージ) または Windows 10 ポータル サイト (オフライン ライセンス パッケージ) をダウンロードすることもできます。 ポータル サイト アプリは、オフライン ライセンスと、オフラインで使用するためにダウンロードした適切なパッケージを使用して取得する必要があります。 選択項目の Windows 8 および Windows Phone 8 プラットフォーム リストでは、対応する 8.1 が参照されます。 Intune でそれを行う方法については、「[ビジネス向け Windows ストアから購入したアプリを管理する](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)」を参照してください。
+    また、[ビジネス向け Microsoft ストア](http://businessstore.microsoft.com/)から Windows Phone 8.1 ポータル サイト (オフライン ライセンス パッケージ) または Windows 10 ポータル サイト (オフライン ライセンス パッケージ) をダウンロードすることもできます。 ポータル サイト アプリは、オフライン ライセンスと、オフラインで使用するためにダウンロードした適切なパッケージを使用して取得する必要があります。 選択項目の Windows 8 および Windows Phone 8 プラットフォーム リストでは、対応する 8.1 が参照されます。 Intune でそれを行う方法については、「[ビジネス向け Microsoft ストアから購入したアプリを管理する](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)」を参照してください。
 
 2.  **Windows Phone SDK をダウンロードする** Windows Phone SDK 8.0 (http://go.microsoft.com/fwlink/?LinkId=615570) をダウンロードし、SDK をコンピューターにインストールします。 この SDK は、アプリケーション登録トークンを生成するために必要です。
 
@@ -144,12 +144,12 @@ Windows および Windows Phone モバイル アプリを展開するのに使�
 5.  新しい証明書を使用して、新しいエンタープライズ基幹業務アプリと更新されたエンタープライズ基幹業務アプリのすべてに署名します。 既存のアプリケーションを再署名して再展開する必要はありません。
 
 ## <a name="manually-deploy-windows-10-company-portal-app"></a>Windows 10 ポータル サイト アプリの手動展開
-Intune をビジネス向け Windows ストアと統合していない場合でも、Intune から直接 Windows 10 ポータル サイト アプリを手動で展開できます。
+Intune をビジネス向け Microsoft ストアと統合していない場合でも、Intune から直接 Windows 10 ポータル サイト アプリを手動で展開できます。
 
  > [!NOTE]
  > このオプションでは、アプリの更新プログラムがリリースされるたびに、手動更新を展開する必要があります。
 
-1. [ビジネス向け Windows ストア](https://www.microsoft.com/business-store)のアカウントにログインし、ポータル サイト アプリの**オフライン ライセンス** バージョンを取得します。  
+1. [ビジネス向け Microsoft ストア](https://www.microsoft.com/business-store)のアカウントにログインし、ポータル サイト アプリの**オフライン ライセンス** バージョンを取得します。  
 2. アプリが取得されたら、**[インベントリ]** ページでアプリを選択します。  
 3. **プラットフォーム**として **[Windows 10 all devices (Windows 10 のすべてのデバイス)]** を選択し、適切な**アーキテクチャ**を選択してダウンロードします。 このアプリは、アプリ ライセンス ファイルを必要としません。
 ![ダウンロードする Windows 10 のすべてのデバイスと Architecture X86 Package のイメージ](./media/Win10CP-all-devices.png)
@@ -186,7 +186,7 @@ Intune がユニバーサル アプリ用に依存関係をどのように処理
 この場合のアプリへの署名および展開方法は、次のとおりです。
 
 1. Microsoft Intune Windows 10 ポータル サイト アプリの署名スクリプトを [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) からダウンロードします。  このスクリプトでは、Windows SDK for Windows 10 をホスト コンピューターにインストールする必要があります。 Windows SDK for Windows 10 をダウンロードするには、[https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) にアクセスします。
-2. 上で説明されているように、ビジネス向け Windows ストアから Windows 10 ポータル サイト アプリをダウンロードします。  
+2. 上記の説明のように、ビジネス向け Microsoft ストアから Windows 10 ポータル サイト アプリをダウンロードします。  
 3. スクリプト ヘッダーに記載された入力パラメーターを使用してスクリプトを実行し、Windows 10 ポータル サイト アプリに署名します (以下に抜粋)。 スクリプトに依存関係を渡す必要はありません。 依存関係は、アプリが Intune 管理コンソールにアップロードされる場合にのみ必要です。
 
 |パラメーター | 説明|

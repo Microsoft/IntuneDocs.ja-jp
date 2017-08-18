@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 307999a7bb18a7b33d111bec212922558a5e10bf
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c7c03148d4063d0752a7c615222047bc6f02f58e
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Intune に Windows Phone 8.1 デバイスを登録する
 
@@ -29,11 +29,11 @@ ms.lasthandoff: 07/01/2017
 
 Intune に Phone 8.1 デバイスを登録するには、自分の職場または学校に当てはまる手順に従ってください。
 
--   [会社で Windows ストアからポータル サイトを使用できるようにする場合](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
+-   [会社で Microsoft ストアからポータル サイトを使用できるようにする場合](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
 
--   [Windows Phone から Windows ストアへのアクセスが許可されていない場合、または Microsoft アカウントを所有していない場合](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
+-   [Windows Phone から Microsoft ストアへのアクセスが許可されていない場合、または Microsoft アカウントを所有していない場合](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
-## <a name="if-your-company-lets-you-use-the-company-portal-from-the-windows-store"></a>会社で Windows ストアからポータル サイトを使用できるようにする場合
+## <a name="if-your-company-lets-you-use-the-company-portal-from-the-microsoft-store"></a>会社で Microsoft ストアからポータル サイトを使用できる場合
 ポータル サイト アプリをデバイスにインストールします。
 
 1.  **[スタート]** &gt; **[ストア]** をタップします。
@@ -72,7 +72,7 @@ Intune に Phone 8.1 デバイスを登録するには、自分の職場また�
 
     ![追加されたアカウントの画面](./media/WP81-enroll-4-account-added.png)
 
-## <a name="if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>Windows Phone から Windows ストアへのアクセスが許可されていない場合、または Microsoft アカウントを所有していない場合
+## <a name="if-you-are-not-allowed-to-access-the-microsoft-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>Windows Phone から Microsoft ストアへのアクセスが許可されていない場合、または Microsoft アカウントを所有していない場合
 
 1.  **[設定]** &gt; **[社内]** の順にタップします。
 

@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3597af6117832adab40a2d6213ed4e2a6a9f338e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5278179f22d174de6e97aa990bbe8761d8c8f8f8
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Intune でデバイスをリモートで再起動する
 
@@ -27,10 +27,22 @@ ms.lasthandoff: 07/01/2017
 
 **[再起動]** デバイス アクションでは、選択したデバイスが再起動されます。 デバイスの所有者には再起動の自動通知が行われないため、作業内容が失われる可能性があります。
 
+## <a name="supported-platforms"></a>サポートされているプラットフォーム
+
+- Windows - Windows 8.1 以降でサポートされています
+- Windows Phone - Windows Phone 8.1 以降でサポートされています
+- iOS - サポートされていません
+- macOS - サポートされていません
+- Android - サポートされていません
+
+## <a name="how-to-restart-a-device"></a>デバイスを再起動する方法
+
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス]** を選択します。
 4. **[デバイスとグループ]** ブレードで、**[すべてのデバイス]** を選択します。
 5. 管理するデバイスの一覧からデバイスを選択し、その後**[再起動]** デバイス リモート アクションを選択します。
+
+## <a name="next-steps"></a>次のステップ
 
 実行したアクションの状態を確認するには、**[デバイスとグループ]** ブレードで **[デバイス アクション]** を選択します。

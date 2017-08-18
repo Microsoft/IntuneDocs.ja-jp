@@ -15,17 +15,17 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 17736751a6cd1813bd03f8092739d8433eb5d9dc
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b5758d5af0a478335d4a7503c13af785c9c512fb
+ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune 1704 リリース以降では、登録なしのモバイル アプリケーション管理 (MAM) シナリオの Windows 10 でアプリ保護ポリシーを使うことができます。
+Intune 1704 リリース以降では、Windows 10 でアプリ保護ポリシーを使用して、デバイスを登録せずにアプリを保護できます。
 
 ## <a name="before-you-begin"></a>始める前に
 
@@ -39,17 +39,15 @@ WIP ポリシーを追加するときのいくつかの概念について説明�
 
 ### <a name="types-of-apps"></a>アプリの種類
 
--   **[おすすめのアプリ]:** 管理者がポリシーに簡単にインポートできるようにあらかじめ設定されている (ほとんどは Microsoft Office) アプリの一覧です。
+-   **おすすめのアプリ:** ポリシーに簡単にインポートできるようにあらかじめ設定されている (ほとんどは Microsoft Office) アプリの一覧です。 <!---I really don't know what you mean by "easily import into policy"--->
 
--   **[ストア アプリ]:** 管理者は、Windows ストアからポリシーに任意のアプリを追加できます。
+-   **ストア アプリ:** Windows ストアからポリシーに任意のアプリを追加できます。
 
--   **[Windows desktop apps (Windows デスクトップ アプリ)]:** 管理者は従来の Windows デスクトップ アプリをポリシーに追加できます (exe、dll など)。
+-   **Windows デスクトップ アプリ:** 従来の Windows デスクトップ アプリをポリシーに追加できます (exe、dll など)。
 
 ## <a name="pre-requisites"></a>前提条件
 
-WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを構成する必要があります。
-
--   [Intune で MAM プロバイダーを構成する方法](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md)を理解します。
+WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを構成する必要があります。 [Intune で MAM プロバイダーを構成する方法](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md)を理解します。
 
 さらに、次のものが必要です。
 
@@ -58,12 +56,13 @@ WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを
 
 > [!IMPORTANT]
 > WIP は複数の ID をサポートしていません。存在できる管理対象 ID は一度に 1 つだけです。
+<!---Should you be linking to a topic that explains what multi-identity is?--->
 
 ## <a name="to-add-a-wip-policy"></a>WIP ポリシーを追加するには
 
-組織で Intune を設定した後は、[Azure Portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) を使用して WIP 固有のポリシーを作成できます。
+組織で Intune を設定した後は、[Azure Portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) を使用して WIP 固有のポリシーを作成できます。 <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure docset?--->
 
-1.  **Intune モバイル アプリケーション管理ダッシュボード**に移動し、**[すべての設定]** を選び、**[アプリに関するポリシー]** を選びます。
+1.  **Intune モバイル アプリケーション管理ダッシュボード**に移動し、**[すべての設定]** > **[アプリに関するポリシー]** を選択します。
 
 2.  **[アプリに関するポリシー]** ブレードで **[ポリシーの追加]** を選び、次の値を入力します。
 
@@ -77,7 +76,7 @@ WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを
 
 3.  [**作成**] を選択します。 ポリシーが作成されて、**[アプリに関するポリシー]** ブレードのテーブルに表示されます。
 
-## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>おすすめのアプリを許可されているアプリの一覧に追加するには
+## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>許可されているアプリの一覧におすすめのアプリを追加するには
 
 1.  **[アプリに関するポリシー]** ブレードでポリシーの名前を選び、**[ポリシーの追加]** ブレードで **[許可されているアプリ]** を選びます。 **[許可されているアプリ]** ブレードが開き、このアプリ保護ポリシーの一覧に既に含まれているすべてのアプリが表示されます。
 
@@ -120,65 +119,64 @@ WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを
 > [!NOTE]
 > 同時に複数の**デスクトップ アプリ**を追加するには、アプリ行の末尾にあるメニュー **[...]** をクリックし、アプリの追加を続けます。 終了したら、**[OK]** を選択します。
 
-## <a name="windows-information-protection-wip-learning"></a>Windows 情報保護 (WIP) の学習
-
+## <a name="wip-learning"></a>WIP の学習
+<!---You've already defined WIP earlier in the topic. You don't need to keep doing so. --->
 WIP で保護するアプリを追加した後は、**[WIP の学習]** を使って保護モードを適用する必要があります。
 
 ### <a name="before-you-begin"></a>始める前に
 
-Windows 情報保護 (WIP) の学習は、管理者が WIP の不明アプリを監視できるレポートです。 不明アプリは、組織の IT 部門によって展開されていないアプリです。 管理者は、"上書きの非表示" モードで WIP を適用する前に、レポートからこのようなアプリをエクスポートして WIP ポリシーに追加することで、生産性への影響を回避できます。
+WIP の学習は、WIP にとって不明なアプリを監視できるようにするレポートです。 不明アプリは、組織の IT 部門によって展開されていないアプリです。 "上書きの非表示" モードで WIP を適用する前に、レポートからこのようなアプリをエクスポートして WIP ポリシーに追加することで、生産の中断を回避できます。
 
 最初は **[サイレント]** または **[上書きの許可]** を使用し、許可されているアプリの一覧に適切なアプリが含まれる小規模なグループで確認することをお勧めします。 それが済んだ後、最終的な適用ポリシーである **[上書きの非表示]** に変更できます。
 
-#### <a name="what-the-protection-modes-are"></a>保護モードの種類
+### <a name="what-are-the-protection-modes"></a>保護モードの種類
 
-- **上書きの非表示:**
-    - WIP は不適切なデータ共有行為を検索し、ユーザーが操作を完了できないようにします。
-    - これには、会社で保護されていないアプリ間での情報の共有や、組織外の他のユーザーやデバイス間での会社データの共有などが含まれます。
-<br></br>
+#### <a name="hide-overrides"></a>上書きの非表示
+WIP は不適切なデータ共有行為を検索し、ユーザーが操作を完了できないようにします。 これには、会社で保護されていないアプリ間での情報の共有や、組織外の他のユーザーやデバイス間での会社データの共有などが含まれます。
 
-- **上書きの許可:**
-    - WIP は不適切なデータ共有を検索し、ユーザーが危険なことを行うと警告します。
-    - ただし、このモードでは、ユーザーはポリシーを上書きしてデータを共有することができ、その操作は監査ログに記録されます。
-<br></br>
-- **サイレント:**
-    - WIP はサイレントで実行し、不適切なデータ共有をログに記録します。"上書きの許可" モードでは従業員にメッセージが表示された行為もブロックしません。
-    - ネットワーク リソースや WIP で保護されたデータへのアプリによる不適切なアクセスの試みなど、許可されていない操作は停止されます。
-<br></br>
-- **オフ (非推奨):**
-    - WIP は無効になり、データの保護または監査には役立ちません。
-    - WIP を無効にすると、ローカルに接続されたドライブ上の WIP でタグ付けされたファイルを復号化する試みが行われます。 WIP 保護を有効に戻しても、以前の復号化およびポリシーの情報は自動的に再適用されないことに注意してください。
+#### <a name="allow-overrides"></a>上書きの許可
+WIP は不適切なデータ共有を検索し、ユーザーが危険なことを行うと警告します。 ただし、このモードでは、ユーザーはポリシーを上書きしてデータを共有することができ、その操作は監査ログに記録されます。
 
-### <a name="to-add-a-protection-mode"></a>保護モードを追加するには
+#### <a name="silent"></a>サイレント
+WIP はサイレントで実行し、不適切なデータ共有をログに記録します。"上書きの許可" モードで従業員にメッセージが表示される行為もブロックしません。 ネットワーク リソースや WIP で保護されたデータへのアプリによる不適切なアクセスの試みなど、許可されていない操作は停止されます。
 
-1.  **[アプリに関するポリシー]** ブレードでポリシーの名前を選んだ後、**[ポリシーの追加]** ブレードで **[必須の設定]** をクリックします。
+#### <a name="off-not-recommended"></a>オフ (非推奨)
+WIP は無効になり、データの保護または監査には役立ちません。
+
+WIP を無効にすると、ローカルに接続されたドライブ上の WIP でタグ付けされたファイルを復号化する試みが行われます。 WIP 保護を有効に戻しても、以前の復号化およびポリシーの情報は自動的に再適用されないことに注意してください。
+
+### <a name="add-a-protection-mode"></a>保護モードを追加する
+
+1.  **[アプリに関するポリシー]** ブレードでポリシーの名前を選び、**[必須の設定]** を選びます。
 
     ![学習モードのスクリーンショット](./media/learning-mode-sc1.png)
 
 1.  **[保存]** を選びます。
 
-### <a name="to-use-wip-learning"></a>WIP の学習を使うには
+### <a name="use-wip-learning"></a>WIP の学習を使用する
 
-1. Azure ダッシュボードに移動します。
+1. Azure ダッシュボードに移動します。 <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
 
 2. 左側のメニューから **[その他のサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
 
 3. **[Intune]** を選んで **Intune ダッシュボード**を開き、**[モバイル アプリ]** を選択します。
 
-4. **[モニター]** セクションで **[WIP の学習]** を選択します。 WIP の学習によって記録された不明アプリが表示されます。
+4. **[モニター]** で **[WIP の学習]** を選択します。 WIP の学習によって記録された不明アプリが表示されます。
 
 > [!IMPORTANT]
 > WIP の学習のログ レポートにアプリが表示されたら、それをアプリ保護ポリシーに追加できます。
 
-## <a name="to-deploy-your-wip-app-protection-policy"></a>WIP アプリ保護ポリシーを展開するには
+## <a name="deploy-your-wip-app-protection-policy"></a>WIP アプリ保護ポリシーを展開する
 
 > [!IMPORTANT]
-> これは、登録なしのモバイル アプリケーション管理 (MAM) シナリオの WIP に適用されます。
+> これはデバイス登録なしの WIP に適用されます。
+
+<!---not sure why you need the Important note. Isn't this what the topic is about? app protection w/o enrollment?--->
 
 WIP アプリ保護ポリシーを作成した後、MAM を使ってポリシーを組織に展開する必要があります。
 
-1.  **[アプリに関するポリシー]** ブレードで新しく作成したアプリ保護ポリシーを選択し、**[ユーザー グループ]** を選んで、**[ユーザー グループの追加]** を選択します。
+1.  **[アプリに関するポリシー]** ブレードで新しく作成したアプリ保護ポリシーを選択し、**[ユーザー グループ]** > **[ユーザー グループの追加]** を選択します。
 
     Azure Active Directory 内のすべてのセキュリティ グループで構成されるユーザー グループの一覧が、**[ユーザー グループの追加]** ブレードで開きます。
 
-1.  ポリシーを適用するグループを選び、**[選択]** をクリックしてポリシーを展開します。
+1.  ポリシーを適用するグループを選び、**[選択]** を選んでポリシーを展開します。

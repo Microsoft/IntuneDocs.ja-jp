@@ -1,7 +1,7 @@
 ---
 title: "Intune で iOS デバイスのユーザーをログアウトする"
 titleSuffix: Intune on Azure
-description: "Intune で iOS デバイスの現在のユーザーをログアウトする方法について説明します。"
+description: "Intune で iOS デバイスの現在のユーザーをログアウトする方法について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 702bc46c-1a6f-4689-bd53-3b778a447baa
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dc01055995747a74782680ff2f64fb0bec6f4883
-ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
+ms.openlocfilehash: 1de2069b7b25ee5e5c21a8e4caa7512f13d4ca0e
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>Intune で管理される iOS デバイスの現在のユーザーをログアウトする
 
@@ -27,6 +27,16 @@ ms.lasthandoff: 07/14/2017
 
 
 **[現在のユーザーのログアウト]** アクションにより、[iOS 教育プロファイル](education-settings-configure-ios.md)を使用して iOS Classroom アプリを管理するように構成されている共有の iPad デバイスから現在のユーザーがログアウトします。 
+
+## <a name="supported-platforms"></a>サポートされているプラットフォーム
+
+- Windows - サポートされていません
+- Windows Phone - サポートされていません
+- iOS - iOS 9.3 以降 (共有 iPad デバイスのみ) でサポートされています
+- macOS - サポートされていません
+- Android - サポートされていません
+
+## <a name="how-to-logout-the-current-user"></a>現在のユーザーをログアウトする方法
 
 1.  Azure ポータルにサインインします。
 2.  **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。

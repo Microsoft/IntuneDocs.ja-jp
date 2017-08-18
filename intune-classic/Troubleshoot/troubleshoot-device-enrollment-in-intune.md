@@ -14,11 +14,11 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 14407e26a0715f3d5aa8cf570a2109dac7140079
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: d7a51094851af8c3b6d872300cd9b23e845c6494
+ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune のデバイス登録に関するトラブルシューティング
 
@@ -159,7 +159,7 @@ ms.lasthandoff: 07/17/2017
 |エラー メッセージ|問題|解決方法|
 |---|---|---|
 |**IT 管理者がアクセスするためのライセンスを割り当てる必要があります**<br>IT 管理者は、このアプリを使用するためのアクセス許可を付与していません。 IT 管理者から支援を受けるか、後でやり直してください。|ユーザーのアカウントに必要なライセンスがないため、このデバイスを登録することはできません。|ユーザーは自分のデバイスを登録する前に、必要なライセンスを割り当てられている必要があります。 このメッセージは、指定されたモバイル デバイス管理機関に必要なライセンスの種類をユーザーが持っていないことを示します。 たとえば、モバイル デバイス管理機関として Intune が指定され、ユーザーが System Center 2012 R2 Configuration Manager ライセンスを使用している場合に、このエラーが表示されます。<br><br>[ユーザー アカウントに Intune のライセンスを割り当てる](/intune/licenses-assign.md)方法に関する情報を参照してください。
-|**IT 管理者は、MDM 機関を設定する必要があります<br>IT 管理者が、MDM 機関を設定していないようです。 IT 管理者から支援を受けるか、後でやり直してください。|モバイル デバイス管理機関が定義されていません。|Intune でモバイル デバイス管理機関が指定されていません。 [モバイル デバイス管理機関を設定する](/intune/mdm-authority-set.md)方法に関する情報を参照してください。|
+|**IT 管理者は、MDM 機関を設定する必要があります**<br>IT 管理者が、MDM 機関を設定していないようです。 IT 管理者から支援を受けるか、後でやり直してください。|モバイル デバイス管理機関が定義されていません。|Intune でモバイル デバイス管理機関が指定されていません。 [モバイル デバイス管理機関を設定する](/intune/mdm-authority-set.md)方法に関する情報を参照してください。|
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>デバイスが Intune サービスでチェックインできず、Intune 管理コンソールに "異常" と表示される

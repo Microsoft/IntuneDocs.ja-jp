@@ -14,11 +14,11 @@ ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ba965dfdfa91920c0f76b4142dec05516c472cab
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4527f7ccf1125992841b8f317024cc64837484ab
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="manage-volume-purchased-apps-using-microsoft-intune"></a>Microsoft Intune を使用してボリューム購入アプリを管理する
 
@@ -30,8 +30,8 @@ Microsoft Intune では、このようなプログラムを通じて購入した
 
 ## <a name="which-types-of-apps-can-you-manage"></a>管理できるアプリの種類
 
-Intune では、iOS アプリ ストアとビジネス向け Windows ストアからボリューム購入したアプリを管理できます。
+Intune では、iOS アプリ ストアとビジネス向け Microsoft ストアからボリューム購入したアプリを管理できます。
 各ストアからライセンスを購入したアプリを管理する方法については、次のいずれかのトピックを参照してください。
 
 - [iOS のボリューム購入アプリの管理](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-- [ビジネス用 Windows ストアからボリューム購入したアプリの管理](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
+- [ビジネス向け Microsoft ストアからボリューム購入したアプリの管理](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)

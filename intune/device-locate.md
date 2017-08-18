@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 80aa0e5afd1f8862b181d455ff6b545e462f90c9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8c6035ce5119b618ed63cf817082dd3eedc6eda7
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>紛失したまたは盗まれた iOS デバイスを Intune で検索する
 
@@ -26,6 +26,16 @@ ms.lasthandoff: 07/01/2017
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 この**[デバイスを検索する]** デバイス アクションは、紛失したまたは盗まれた iOS デバイスの場所をマップに表示します。 会社所有の iOS デバイスを DEP で登録し、監視モードに設定している必要があります。 このアクションを使用するには、デバイスが[紛失モード](/intune-azure/manage-devices/lost-mode.md)に設定されている必要があります。
+
+## <a name="supported-platforms"></a>サポートされているプラットフォーム
+
+- Windows - サポートされていません
+- Windows Phone - サポートされていません
+- iOS - 監視されている企業所有の iOS 9.3 以降 (紛失モード) でサポートされています
+- macOS - サポートされていません
+- Android - サポートされていません
+
+## <a name="how-to-locate-a-lost-or-stolen-device"></a>紛失または盗難にあったデバイスを見つける方法
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
@@ -44,3 +54,8 @@ ms.lasthandoff: 07/01/2017
 - データは 24 時間保管されてから、削除されます。 位置データを手動で削除することはできません。
 - 位置データは、保管中も、転送中も暗号化されます。
 - 紛失モードを構成する場合、ロック画面に表示するメッセージの入力時に、デバイスを見つけた人がデバイスを返すのに役立つ情報を含めることをお勧めします。
+
+
+## <a name="next-steps"></a>次のステップ
+
+実行したアクションの状態を確認するには、**[デバイスとグループ]** ブレードで **[デバイス アクション]** を選択します。

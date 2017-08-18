@@ -14,11 +14,11 @@ ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37c4c3a1b51479b1a6450cc66ab502d579804015
-ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
+ms.openlocfilehash: a09235d53b9340d853dba95299fc5788494ed165
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Windows PC のコンピューターとしての管理とモバイル デバイスとしての管理の比較
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 07/13/2017
 |**デバイス プロファイル**|利用不可|利用可能 <br>[Microsoft Intune のデバイス プロファイルとは](https://docs.microsoft.com/intune-azure/configure-devices/what-are-device-profiles)|
 |**エージェントレスの登録**|利用不可 |利用可能<br>[Windows デバイスの登録](https://docs.microsoft.com/intune-azure/enroll-devices/enroll-windows-devices)|
 |**ソフトウェア更新管理**| Windows の更新プログラムと Microsoft アプリの更新プログラム<br>[ソフトウェア更新プログラムを使用して Windows PC を最新の状態に保つ](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)|Windows 10 と Microsoft アプリの更新プログラム用のビジネス向け Microsoft ストア<br> [ビジネス設定向けの Windows Update の構成](https://docs.microsoft.com/intune-azure/configure-devices/how-to-configure-windows-update-for-business) |
-|**ソフトウェア ライセンスの管理**|利用可能 <br>[Windows PC ソフトウェアのライセンス契約を管理する](https://docs.microsoft.com/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)|ビジネス向け Microsoft ストア (.appx アプリのみ)<br>[ビジネス向け Windows ストアから購入したアプリを管理する](https://docs.microsoft.com/intune-azure/manage-apps/wsfb-apps)|
+|**ソフトウェア ライセンスの管理**|利用可能 <br>[Windows PC ソフトウェアのライセンス契約を管理する](https://docs.microsoft.com/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)|ビジネス向け Microsoft ストア (.appx アプリのみ)<br>[ビジネス向け Microsoft ストアから購入したアプリの管理](https://docs.microsoft.com/intune-azure/manage-apps/wsfb-apps)|
 |**インベントリ**|利用可能 <br>[Windows PC のハードウェアとソフトウェアのインベントリを表示する](https://docs.microsoft.com/intune/deploy-use/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune)|利用可能 <br>[アプリ情報を監視する方法](https://docs.microsoft.com/intune/apps-monitor)<br>[デバイス管理とは](https://docs.microsoft.com/intune/device-management)|
 |**Windows ファイアウォールのポリシー**|利用可能 <br>[Windows ファイアウォール ポリシーを使用して Windows PC を保護する](https://docs.microsoft.com/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune) |利用不可|
 |**マルウェア対策**|Endpoint Protection<br>[Endpoint Protection を使用した Windows PC の保護](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)|Windows Defender<br>[Windows Defender の設定](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-windows-10#windows-defender-settings)|
