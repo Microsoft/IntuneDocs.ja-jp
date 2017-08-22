@@ -3,8 +3,8 @@ title: "Windows ストア アプリを Intune に追加する方法"
 titleSuffix: Intune on Azure
 description: "Windows ストア アプリを Intune に追加する方法について説明します。\""
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 05/04/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 812bdf5bde724798289668937ed2502438c524e0
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: ee7a15be73f3d70295ceec29e31b4fa35ea1c04e
+ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Windows ストア アプリを Microsoft Intune に追加する方法
 
