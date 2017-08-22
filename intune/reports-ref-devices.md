@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8013d7f091c154709f0dd98dcda2e7f5f09056d2
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 2dad8cf3e9a38625b4657e284f8d8bb53ba289c0
+ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/14/2017
 ---
 # <a name="reference-for-devices-entities"></a>デバイス エンティティの参照
 
@@ -261,96 +261,41 @@ ms.lasthandoff: 08/04/2017
 |---------|------------|
 | DateKey |日付テーブルの参照であり、日を示します |
 | DeviceKey |データ ウェアハウスにおけるデバイスを示す一意識別子 - 代理キー。 これは、Intune デバイス ID が含まれるデバイス テーブルの参照です。 |
-| DeviceModel |デバイスのモデル |
-| OS |デバイスの OS |
 | DeviceName |デバイスに名前を付けられるプラットフォーム上にあるデバイスの名前。 その他のプラットフォームの場合、Intune がその他のプロパティから名前を作成します。 この属性は一部のデバイスで利用できません。 |
-| SoftwareVersion |多くの場合、OS バージョンとは異なる Apple プラットフォームを除き、これは OS バージョンになります。 |
-| Imei |IMEI 番号 |
-| HardwareInventoryTimeUtc |このデバイスのインベントリが報告された最初の時刻 |
-| InventoryModifiedTimeUtc |このスナップショットが作成されたときにインベントリが保存された最後の時刻 |
-| InventoryReportingTimeUtc |このデバイスのインベントリが回収された最後の時刻 |
-| ExchangeActiveSyncId |Exchange ActiveSync デバイス ID |
-| ComputerSystemDescription |システムの説明 |
-| ComputerSystemName |システム名 |
-| ComputerSystemManufacturer |システムの製造元 |
-| ComputerSystemModel |システムのモデル |
-| UserName |[ユーザー名] |
-| OSType |OS の種類 |
-| OSCaption |OS キャプション |
-| OSName |OS の名前 |
-| OSManufacturer |OS の製造元 |
-| OSProductSuite |OS 製品スイート |
-| OSProductType |OS 製品の種類 |
-| ロケール |OS ロケール |
-| PhysicalMemoryCapacity |物理メモリ容量 (バイト単位) |
-| PhysicalMemoryRemovable |物理リムーバブル メモリ (バイト単位) |
-| SystemEnclosureChassisTypesInnerText |このデバイスのシステム シャーシの種類を定義します。 番号が示す値:  0 または空白 = 不明   1 = デスクトップ   2 = ラップトップ  3 = ワークステーション  4 = エンタープライズ サーバー  100 = スマートフォン  101 = タブレット  102/103 = モバイル デバイスであるが種類は不明 |
-| SystemEnclosureModel |システム格納装置のモデル |
-| SystemEnclosureSerialNumber |システム格納装置のシリアル番号 |
-| NetworkAdapterConfigurationText |ネットワーク アダプターからの構成テキスト |
-| MacAddress |MAC アドレス |
-| SmsID |Intune デバイス ID |
-| CertExpiry |MDM 管理証明書の有効期限日 |
-| DeviceClientAgentVersion |クライアント エージェントのバージョン |
-| DeviceClientID |デバイスのクライアント ID |
-| SerialNumber |シリアル番号 |
-| DeviceManufacturer |デバイスの製造元 |
-| DMVersion |DM バージョン |
-| FirmwareVersion |ファームウェアのバージョン |
-| HardwareVersion |ハードウェアのバージョン |
-| PlatformType |プラットフォームの種類 |
-| ProcessorLevel |プロセッサのレベル |
-| ProcessorRevision |プロセッサのリビジョン |
-| 製品 |製品 |
-| ProductVersion |製品のバージョン |
-| OEM |相手先ブランド供給 |
-| DeviceBuildVersion |デバイスのビルド バージョン |
-| Meid |モバイル機器の識別子 |
-| PhoneNumber |電話番号 |
-| SubscriberCarrierNetwork |電話通信事業者のネットワーク名 |
-| CellularTechnology |電話通信事業者のネットワークの種類 (CDMA/GSM) |
-| Imsi |IMSI 番号 |
-| JailBroken |デバイスが脱獄またはルート化されている場合は True |
-| IsActivationLockEnabled |アクティベーション ロックが有効な場合は True |
-| DeviceType |デバイスの種類 |
-| IsSupervised |監督下にあり |
-| DeviceDisplayNumberOfColors |デバイスのディスプレイの色数 |
-| HorizontalResolution |デバイスの水平画面解像度 |
-| VerticalResolution |デバイスの垂直画面解像度 |
-| StorageFree |記憶域の空き容量 (バイト単位) |
-| StorageTotal |記憶域の合計容量 (バイト単位) |
-| ProgramFree |プログラム実行用メモリの空き容量 (バイト単位) |
-| ProgramTotal |プログラム実行用メモリの合計容量 (バイト単位) |
-| RemovableStorageFree |リムーバブル記憶域の空き容量 (バイト単位) |
-| RemovableStorageTotal |リムーバブル記憶域の合計容量 (バイト単位) |
-| DeviceMemoryDeviceCapacity |デバイス メモリの容量 |
-| DeviceMemoryAvailableDeviceCapacity |デバイス メモリの空き容量 |
-| DeviceOSVersion |OS のバージョン |
-| DeviceOSPlatform |OS のプラットフォーム |
-| DeviceOSLanguage |OS の言語 |
-| PasswordMaxAttemptsBeforeWipe |パスワードの最大試行回数であり、これを超えるとデバイスがワイプされます |
-| PasswordMinComplexChars |パスワードに必要な複合文字の最小数 |
-| PasswordMinLength |パスワードの必要な長さの最小値 |
-| PasswordHistory |パスワードを記録し、過去に使った中で最も新しい n 個までのパスワードを使用禁止とするとき、その最小数をここで指定します |
-| PasswordEnabled |パスワードが有効かどうか |
-| PasswordExpiration |パスワード - 有効期限 |
-| AllowRecoveryPassword |パスワードの復元を許可する |
-| PasswordAutoLockTimeout |パスワード - 自動ロック タイムアウト |
-| PasswordType |パスワードの種類 |
-| BacklightACTimeout |電源利用時のバックライトのタイムアウト |
-| BacklightBatTimeout |バッテリー利用時のバックライトのタイムアウト |
-| PowerBackupPercent |パワー バックアップ パーセント |
-| BatteryPercent |残りのバッテリーのパーセント |
-| PlatformID |プラットフォーム ID |
-| ExchangeDeviceID |Exchange デバイス ID |
-| SmsProcessorDescription |プロセッサの説明 |
-| OwnerEmailAddress |所有者の電子メール アドレス |
-| DeviceOSName |OS の名前 |
-| WifiMac |WiFi Mac アドレス |
-| EthernetMac |イーサネット (MAC) アドレス |
-| RequireEncryption |デバイスが暗号化されているかどうかを示します |
-| ActivationLockBypassCode |アクティベーション ロックのバイパス コード |
-
+| DeviceTypeKey |このデバイスのデバイスの種類属性のキー |
+| ClientRegisterationStateKey |このデバイスのクライアント登録状態属性のキー |
+| OwnerTypeKey |このデバイスの所有者の種類属性のキー (会社、個人、不明) |
+| objectSourceKey |この列は無視してください。 |
+| CreatedDate |デバイスが登録された日付 |
+| LastContact |Intune によるデバイス チェックインで最後に確認されているもの |
+| LastContactNotification |Intune によるチェックインを Intune がデバイスに通知した最後の時刻 |
+| LastContactWorkplaceJoin |このデバイスの社内参加について最後に確認されている状態を示すタイムスタンプ |
+| ManagementAgentKey |このデバイスに関連付けられている管理エージェントのキー |
+| ManagementStateKey |このデバイスに関連付けられている管理状態を示すキーであり、リモート アクションの最新の状態を示すか、脱獄/ルート化状態を示します |
+| ReferenceId |Azure Active Directory のデバイス ID |
+| WorkPlaceJoinStateKey |このデバイスに関連付けられている社内参加の状態を示すキー |
+| CategoryId |この列は無視してください。 |
+| EnrollmentTypeKey |このデバイスに関連付けられている登録の種類を示すキーであり、登録の方法を示します |
+| CertExpirationDate |MDM 管理証明書の有効期限日 |
+| MdmStatusKey |MdmStatus キー |
+| OSFamily |OS 製品群 (Windows、iOS、Android など) |
+| OSVersion |OS のバージョン |
+| OSMajorVersion |OS バージョンのメジャー バージョン コンポーネント (major.minor.build.revision) |
+| OSMinorVersion |OS バージョンのマイナー バージョン コンポーネント (major.minor.build.revision) |
+| OSBuildNumber |OS バージョンのビルド バージョン コンポーネント (major.minor.build.revision) |
+| OSRevisionNumber |OS バージョンのリビジョン バージョン コンポーネント (major.minor.build.revision) |
+| EasID |デバイスが Exchange Active Sync で管理されている場合、このデバイスの EAS ID |
+| GraphDeviceIsManaged |Intune により AAD で最後に設定された管理状態 |
+| GraphDeviceIsCompliant |Intune により AAD で最後に設定されたコンプライアンス対応状態 |
+| SerialNumber |デバイスのシリアル番号 (ない場合もあります) |
+| EnrolledByUser |このデバイスを登録したユーザーの ID であり、ユーザー テーブルの userId 列を参照します |
+| RowLastModifiedDateTimeUTC |このレコードが変更された最後の時刻 |
+| ProcessorArchitecture |プロセッサ アーキテクチャ |
+| DeviceAction |最後に発行されたデバイス アクション (今回は無視してください) |
+| 製造元 |デバイスの製造元 |
+| モデル |デバイスのモデル |
+| LastPolicyUpdateUtc |デバイスでポリシーが更新された最後の時刻 |
+| LastExchangeStatusUtc |デバイスと Exchange が同期を行った最後の時刻 |
 ## <a name="mdmdeviceinventoryhistories"></a>MdmDeviceInventoryHistories
 
 **MdmDeviceInventoryHistories** エンティティには、過去 90 日間、MDM で管理しているデバイスのインベントリ データを対象に毎日作成されたスナップショットが含まれています。 DateKey 列は行の日を示します。 デバイスによっては適用または入力されないプロパティがあります。詳しくは、このページを参照してください。 詳細については、「[Microsoft Intune でインベントリを使用してデバイスを把握する](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune)」を参照してください。
