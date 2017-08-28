@@ -1,12 +1,12 @@
 ---
 title: "ポリシーの概要"
 titleSuffix: Intune on Azure
-description: 
+description: "ユーザーが自分のデバイスで許可のない操作を行うことを禁止する目的でポリシーを作成します。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,13 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dd3279288fe5ea1fec16224c70b4562fcf53555d
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b12b80ac13868b6706d2d4e7532ec13cba9a5b7e
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-with-policies"></a>ポリシーの概要
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-with-policies"></a>ポリシーの概要
 
 Intune を始める主な目的の 1 つは、企業ポリシーに準拠させるためにデバイスを登録することです。 コンプライアンス ポリシーは、企業所有のキオスクなど、特別な種類のデバイスだけではなく、個人 (BYO) デバイス、タブレット、ユーザーなしデバイスなどの管理にも役立ちます。
 
@@ -56,3 +54,12 @@ __ポリシーの作成方法__
 7. **[ポリシーの作成]** ブレードに戻り、**[作成]** を選択します。
 8. ポリシーが作成されたら、**[割り当て]** を選択し、テスト グループに割り当てます。 テスト グループ (この中にテスト ユーザーが入っています) を選択し、**[保存]** をクリックしてそのグループにポリシーを割り当てます。
 9. 数分待つと、登録したデバイスから、企業ポリシーに準拠するためにパスワードの更新が必要であると伝えられます。 これは **iOS 向けのポータル サイト アプリ**で手動確認できます。デバイス名をタップし、**[同期]** ボタンを押してください。
+
+## <a name="next-steps"></a>次のステップ
+
+[デバイス登録の概要](get-started-enroll.md) - iOS デバイスの登録手順を最初から最後まで行い、登録方法を学習します。
+
+## <a name="learn-more"></a>詳細情報
+
+* [Intune デバイスのコンプライアンス対応ポリシーの監視](compliance-policy-monitor.md)
+* [Intune での条件付きアクセス ポリシーの一般的な使用方法](conditional-access-intune-common-ways-use.md)

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 08/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d069775cf51e8c077a6f30123bf4fa2fe58b6bd8
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 5a9b7f69cded9258efb6c8a897e0c026f3228a6b
+ms.sourcegitcommit: c248b5a15894f0ade23bad4644c3b7035a9fcce8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune の既知の問題
 
@@ -41,26 +41,28 @@ Intune への新機能の追加を依頼する場合は、[Uservoice](https://mi
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>特定の機能に必要な二次移行
 
-2017 年 1 月よりも前に作成された Intune アカウントでは、Azure Portal で以下の機能を使用する前に、移行が必要です。
+2017 年 1 月よりも前に作成された Intune アカウントでは、Azure Portal で次の機能を使用する前に、移行が必要です。
 
 - 業務用デバイスの登録プロファイル
 - Apple Device Enrollment Program
-- iOS シリアル番号グループに事前登録された業務用デバイス
-- デバイス登録マネージャー
+- iOS シリアル番号で企業デバイスを事前宣言する
+- デバイス登録マネージャー アカウント
 - Apple Volume Purchase Program
 
-これらの機能は、従来の Silverlight コンソールや Azure コンソールでは管理できないため、移行することで以下のようになります。
+これらの機能は、従来の Intune (Silverlight) コンソールや Azure Portal では管理できないため、移行することで以下のようになります。
 - 従来のコンソールでは無効になります。
-- Azure コンソールでは有効になります。  
+- Azure Portal では有効になります。  
+
+2017 年 9 月 11 日後、これらの機能の移行は、Azure へのプライマリ移行に結合されます。 自分のアカウントが Azure Portal を使用するために既に移行されている場合、このセカンダリ移行は 2017 年の 9 月 11 日から 22 日までに行われます。 アカウントの移行が開始すると、同じ日に完了します。 移行には、Intune クラシック コンソールでこれらの機能が無効になった時刻から最大 6 時間かかります。
 
 現在 Azure Portal でこれらの Intune 機能を管理している場合は、以下の点にご注意ください。
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Apple DEP における、既定の業務用デバイスの登録プロファイルの削除
-Azure Portal では、Apple Device Enrollment Program (DEP) デバイスについての、既定の業務用デバイスの登録プロファイルがサポートされません。 この機能は、従来の Silverlight Intune コンソールでは使用できますが、プロファイルが意図せずに割り当てられることを防ぐため、廃止されています。 DEP シリアル番号が Azure Portal で同期されている場合、業務用デバイスの登録プロファイルは割り当てられません。 登録プロファイルは、デバイスを使用する前に割り当てられている必要があります。
+Azure Portal では、Apple Device Enrollment Program (DEP) デバイスについての、既定の業務用デバイスの登録プロファイルがサポートされません。 この機能は、従来の Intune (Silverlight) コンソールでは使用できますが、プロファイルが意図せずに割り当てられることを防ぐため、廃止されています。 DEP シリアル番号が Azure Portal で同期されている場合、業務用デバイスの登録プロファイルは割り当てられません。 登録プロファイルは、デバイスを使用する前に割り当てられている必要があります。
 
 #### <a name="apple-dep-token-restored-with-migration"></a>移行により復元された Apple DEP トークン
 
-Intune クラシック (Silverlight) ポータルで Apple Device Enrollment Program トークンを削除し、新しいトークンを Azure Portal にアップロードしない場合、移行の際に元のトークンが Azure Portal 上に復元されます。 このトークンを削除して DEP 登録をブロックするには、Azure Portal からトークンを削除します。
+従来の Intune (Silverlight) ポータルで Apple Device Enrollment Program トークンを削除し、新しいトークンを Azure Portal にアップロードしない場合、移行の際に元のトークンが Azure Portal 上に復元されます。 このトークンを削除して DEP 登録をブロックするには、Azure Portal からトークンを削除します。
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>移行したポリシーの状態を示すブレードが機能しない
 
@@ -72,7 +74,7 @@ Intune クラシック (Silverlight) ポータルで Apple Device Enrollment Pro
 iOS ボリューム購入アプリが表示されても、Intune アカウントと同じ国コードに対してしか割り当てることができません。 Intune は、Intune テナント アカウントの国コードと同じ iTunes ロケールのアプリのみを同期します。 たとえば、米国のストアでのみ利用可能なアプリを購入したが、自分の Intune アカウントがドイツ語である場合、Intune ではそのアプリが表示されません。
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>同じ iOS ボリューム購入プログラムの複数のコピーがアップロードされる
-同じ VPP トークンで **[アップロード]** ボタンを複数回クリックしないでください。 これにより、重複した VPP トークンがアップロードされ、同じ VPP トークンに対してアプリが複数回同期されます。 
+同じ VPP トークンで **[アップロード]** ボタンを複数回クリックしないでください。 これにより、重複した VPP トークンがアップロードされ、同じ VPP トークンに対してアプリが複数回同期されます。
 
 <!-- ## Groups -->
 
@@ -84,8 +86,9 @@ Intune に登録されていないデバイスでは、Windows 情報保護ポ�
 (**[詳細設定]** > **[ネットワーク境界]** > **[Add a protected domain]\(保護されているドメインの追加\)** で追加ドメインを追加する場合に、ポリシーを保存できません。 表示されるエラー メッセージは間もなく変更され、より正確な内容となる予定です。
 
 ### <a name="cisco-anyconnect-vpn-client-support"></a>Cisco AnyConnect VPN クライアントのサポート
- 
-Cisco AnyConnect VPN クライアント (4.0.07072) の最新のリリースは、現在 Intune との互換性がありません。 Intune の今後の更新には、この VPN クライアントのバージョンとの互換性が含まれる予定です。 それまでは、Cisco AnyConnect VPN クライアントを更新せず、既存のバージョンを使い続けることをお勧めします。
+
+Cisco AnyConnect VPN クライアント (4.0.07072) の最新のリリースは、現在 Intune との互換性がありません。
+Intune の今後の更新には、この VPN クライアントのバージョンとの互換性が含まれる予定です。 それまでは、Cisco AnyConnect VPN クライアントを更新せず、既存のバージョンを使い続けることをお勧めします。
 
 ### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>macOS Sierra デバイスで数字のパスワードを使用する
 
@@ -118,16 +121,3 @@ Cisco AnyConnect VPN クライアント (4.0.07072) の最新のリリースは�
 グローバル管理者 (テナント管理者とも呼ばれる) は別個の Intune または Enterprise Mobility Suite (EMS) のライセンスがなくても日常的な管理タスクを引き続き行うことができます。 ただし、自分自身のデバイスの登録、業務用デバイスの登録、Intune ポータル サイトの使用などのサービスを使用するためには、Intune または EMS のライセンスが必要になります。
 
 <!-- ## Additional items -->
-
-
-
-
-
-
-
-
-
-
-
-
- 

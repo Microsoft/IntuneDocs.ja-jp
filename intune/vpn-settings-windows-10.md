@@ -15,11 +15,11 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f112983a33c1af24d288f19140114084575f36d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8e7fb7697f50706566210063605e9b5d750e0c90
+ms.sourcegitcommit: 5a4529aae710ca2abac5b4d2cfd92cb2df7e67cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/17/2017
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune での Windows 10 デバイス向けの VPN 設定
 
@@ -96,10 +96,13 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="conditional-access"></a>条件付きアクセス
 
-**[この VPN 接続での条件付きアクセス]** -
-**[代替証明書を使用したシングル サインオン (SSO)]** -
-**[拡張キー使用法]** -
-**[発行元ハッシュ]** -
+**この VPN 接続の条件付きアクセス** - クライアントからのデバイス コンプライアンス フローを有効にします。 有効にすると、VPN クライアントは Azure Active Directory と通信し、認証に使用する証明書の取得を試行します。 証明書認証を利用するには、VPN を設定する必要があります。VPN サーバーは、Azure Active Directory が返すサーバーを信頼する必要があります。
+
+**代替証明書によるシングル サインオン (SSO)** - デバイス コンプライアンスの場合、Kerberos 認証のために、VPN 認証証明書とは異なる証明書を利用します。 次の設定で証明書を指定します。 
+
+- **拡張キー使用法** - 拡張キー使用法 (EKU) の名前。
+- **オブジェクト識別子** - EKU のオブジェクト識別子。
+- **発行者ハッシュ** - SSO 証明書のサムプリント。
 
 ## <a name="dns-settings"></a>DNS の設定
 

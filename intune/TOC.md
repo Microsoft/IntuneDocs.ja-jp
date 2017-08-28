@@ -175,7 +175,6 @@
 ### [iOS の教育設定を構成する](education-settings-configure-ios.md)
 ### [iOS の教育共有デバイスの構成](education-settings-configure-ios-shared.md)
 ### [IOS 更新プログラム ポリシーの構成](software-updates-ios.md)
-### [ビジネス設定向けの Windows Update の構成](windows-update-for-business-configure.md)
 ### [証明書を構成する](certificates-configure.md)
 #### [SCEP](certificates-scep-configure.md)
 #### [PKCS](certficates-pfx-configure.md)
@@ -237,7 +236,7 @@
 <!-- ### Protect devices with remote actions -->
 
 ## [ロールの管理](role-based-access-control.md)
-
+## [ソフトウェア更新プログラムの管理](windows-update-for-business-configure.md)
 
 ## [ソフトウェア エージェントを使用した PC の管理](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json)
 ### [PC 管理の比較](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)
