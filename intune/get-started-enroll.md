@@ -1,12 +1,12 @@
 ---
 title: "デバイス登録の概要"
 titleSuffix: Intune on Azure
-description: 
+description: "iOS デバイスの登録手順を最初から最後まで行い、登録方法を学習します。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,37 +15,26 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7f52c9d44a91ed6547aadd712db42ea68cfd01dc
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b072ca0ee5a1e4d0a4feb6972ee80fe717fe9f83
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="getting-started-enrolling-devices"></a>デバイス登録の概要
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+# <a name="get-started-enrolling-devices"></a>デバイス登録の概要
 
 Microsoft Intune は、会社のデータを保護した状態で、従業員がモバイル デバイスを使用できるようにします。 エンド ユーザーは管理コンソールではなく、自分のデバイスで Intune を操作するため、登録に慣れていることが推奨されます。 この方法では、よく練られて作られたコンプライアンス ポリシーと自分の経験を結合し、ユーザーの視点で見ることができます。 これは特に重要なことです。管理者に表示される情報がユーザーに伝えられるためです。
 
-## <a name="what-it-cannot-see"></a>IT 管理者が確認できないもの
-* 通話と Web 閲覧の履歴
-* 場所
-* 個人の電子メール
-* テキスト メッセージ
-* 連絡先
-* 個人アカウントのパスワード
-* 予定表のイベント
-* フォト アプリやカメラ ロールの内容を含む、画像
-
-## <a name="what-it-can-see"></a>IT 管理者が確認できるもの
-* モデル
-* シリアル番号
-* オペレーティング システムのバージョン
-* アプリ名
-* Owner
-* デバイス名
-* 製造元 (Apple 製以外のデバイスの場合)
-* 電話番号 (仕事用デバイスの場合は全桁。 個人のデバイスの場合は下 4 桁のみ。)
+| IT 管理者が確認できないもの | IT 管理者が確認できるもの |
+|---|---|
+| 通話と Web 閲覧の履歴 | モデル |
+| 場所 | シリアル番号 |
+| 個人の電子メール | オペレーティング システムのバージョン |
+| テキスト メッセージ | アプリ名 |
+| 連絡先 | Owner |
+| 個人アカウントのパスワード | デバイス名 |
+| 予定表のイベント | 製造元 (Apple 製以外のデバイスの場合) |
+| フォト アプリやカメラ ロールの内容を含む、画像 | 電話番号 (仕事用デバイスの場合は全桁。 個人のデバイスの場合は下 4 桁のみ。) |
 
 ## <a name="how-do-i-enroll-a-device"></a>デバイスはどのように登録しますか。
 
@@ -67,3 +56,13 @@ Microsoft Intune は、会社のデータを保護した状態で、従業員が
 14. プロファイルのインストールが完了したことを示す画面に変わったら、**[完了]** をタップします。
 15. “デバイスの登録中” メッセージが画面に表示され、続いてデバイスが正常に登録されたことが表示されます。 ポータル サイトでページを開くように求めるポップアップが表示されます。 **[開く]** をタップします。
 16. **[会社アクセスのセットアップ]** 画面に戻ります。 テスト ポリシーを設定していない場合、デバイスがポリシー準拠として表示されるはずです。 テスト ポリシーがない場合、**[デバイスのポリシー準拠]** をタップすると、デバイスを安全にするために行わなければならないことがあると表示されます。
+
+## <a name="next-steps"></a>次のステップ
+
+[アプリ追加の概要](get-started-apps.md) - 社員が仕事を行えるように、アプリを見つけ、デバイスに追加します。
+
+## <a name="learn-more"></a>詳細情報
+
+* [Intune の登録オプション](enrollment-options.md)
+* [Intune で個人デバイスの持ち込みを有効にする](byod-enable.md)
+* [登録とデバイス管理についてエンド ユーザーに指導する](end-user-educate.md)

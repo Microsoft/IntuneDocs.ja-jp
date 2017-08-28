@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 51e53e28-5c34-4d0f-a4b1-6390a337514c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 78352c995311f5b097954ce86098165408d5d810
-ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
+ms.openlocfilehash: a08296770ee3a326411d3267705ed6a912ab17bd
+ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/14/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 
@@ -40,7 +40,7 @@ WIP ポリシーを追加するときのいくつかの概念について説明�
 > Intune では、アプリが正しく動作するように、ポータル サイト アプリを除外リストに追加することをお勧めします。 これを行うには、次の**ストア アプリ**を **[適用から除外されるアプリ]** の一覧に追加します。  
 >   - [名前]: ポータル サイト  
 >   - [パブリッシャー]: CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  
->   - [製品名]: Microsoft.CompanyPortal”  
+>   - [製品名]: Microsoft.CompanyPortal  
 
 
 ### <a name="types-of-apps"></a>アプリの種類

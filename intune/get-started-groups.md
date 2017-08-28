@@ -1,12 +1,12 @@
 ---
 title: "グループの概要"
 titleSuffix: Intune on Azure
-description: 
+description: "ユーザーをグループにまとめ、ユーザーがアクセスできるポリシーやアプリの管理を簡単にします。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,28 +15,35 @@ ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 04843a918a3c661ab69dfa711f4d22a8feedf5f3
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 276a594abdd3c92051041a5faa34d3ee7633e32c
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/16/2017
 ---
 # <a name="get-started-with-groups"></a>グループの概要
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+グループは、ユーザーを管理し、会社のリソースに社員がアクセスする行為を制御するために使用されます。 リソースはディレクトリに含まれますが、SaaS アプリや SharePoint サイトなど、外部リソースの場合もあります。
 
-[](./media/generic-users-groups.png)
+Microsoft Intune は Azure Active Directory (Azure AD) を利用し、会社のリソースへのアクセスを管理します。 このアクセスは、ディレクトリのロールを使用して制御されます。 次に Intune でモバイル デバイスに関してこのアクセスが管理されます。該当グループのメンバーであれば、リソースへのアクセスが許可されます。
 
-Microsoft Intune は Azure Active Directory (Azure AD) を利用し、[会社のリソースへのアクセスを管理](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)します。 このアクセスは、ディレクトリのロールを使用して制御されます。 次に Intune でモバイル デバイスに関してこのアクセスが管理されます。該当グループのメンバーであれば、リソースへのアクセスが許可されます。
-
-__グループの作成方法__
+## <a name="how-do-i-create-a-group"></a>グループの作成方法
 
 1. [Azure ポータル](https://portal.azure.com)にサインインします。
-2. **[リソースの検索]** を利用し、**[ユーザーとグループ]** を検索します。
-3. **[ユーザーとグループ]** ブレードを開いたら、**[すべてのグループ]** を選択します。
+2. **[リソースの検索]** を利用し、**[Intune]** を探します。
+3. **[Microsoft Intune]** ブレードを開いたら、**[グループ]** を選択します。
 4. **[ユーザーとグループ - すべてのグループ]** ブレードで、**[新しいグループ]** コマンドを選択します。
 5. **[グループ]** ブレードで、グループの**名前**と**説明**を追加します。
 6. **[メンバーシップの種類]** に **[割り当て済み]** を設定します。 テスト グループに対して **Office 機能は有効にしないでください**。
 7. **[作成]** をクリックします。
 
 グループが作成されたら、**[すべてのグループ]** の一覧に表示されるはずです。 表示されない場合、別のグループを作成してみてください。
+
+## <a name="next-steps"></a>次のステップ
+
+[ポリシーの概要](get-started-policies.md) - ユーザーが自分のデバイスで許可のない操作を行うことを禁止する目的でポリシーを作成します。
+
+## <a name="learn-more"></a>詳細情報
+
+* [Intune でグループを利用し、登録制限を設定する](groups-add.md)
+* [Azure Active Directory でグループを利用し、会社のリソースへのアクセスを管理する](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)

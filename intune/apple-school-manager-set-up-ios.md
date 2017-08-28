@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8197e03e8a3eb42c6a5be3b6357d959ed9428454
-ms.sourcegitcommit: 0e012f25fb22124f66193f20f244362493c6b8bb
+ms.openlocfilehash: 91fd4719a4305f5e422163f9049684ebd9e9e656
+ms.sourcegitcommit: bb1a1e4e0bc26543a9c8fb52cb208e298c6b8e3f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/19/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager での iOS デバイス登録の有効化
 
@@ -103,18 +103,16 @@ Apple School Manager で企業所有の iOS デバイスを登録するには、
 
     - **[監督下]** - より多くの管理オプションが使用可能な管理モードです。既定でアクティベーション ロックは無効になります。 このチェック ボックスをオフのままにすると、管理機能が制限されます。
 
-    - **[ロックされた登録]** - ([管理モード] を [監督下] にする必要があります) 管理プロファイルの削除を許可する iOS 設定を無効にします。 このチェック ボックスをオフのままにすると、[設定] メニューから管理プロファイルを削除できます。
+     - **[ロックされた登録]** - ([管理モード] を [監督下] にする必要があります) 管理プロファイルの削除を許可する iOS 設定を無効にします。 このチェック ボックスをオフのままにすると、[設定] メニューから管理プロファイルを削除できます。
+   - **[共有 iPad]** - (**[ユーザー アフィニティなしで登録する]** と **[監視下]** モードが必要です。)管理された Apple ID を使用して、複数のユーザーが登録済みの iPad にログオンすることを許可します。 管理された Apple ID は、Apple School Manager ポータルで作成されます。 共有 iPad の詳細については[こちら](education-settings-configure-ios-shared.md)を参照してください。
+   >[!NOTE]
+   >**[ユーザー アフィニティ]** を **[With user affinity]\(ユーザー アフィニティあり\)** に設定するか、**[監視下]** モードを **[オフ]** に設定すると、登録プロファイルの [共有 iPad] モードは無効になります。
 
-  - **[共有 iPad]** - (**[ユーザー アフィニティなしで登録する]** と **[監視下]** モードが必要です。)管理された Apple ID を使用して、複数のユーザーが登録済みの iPad にログオンすることを許可します。 管理された Apple ID は、Apple School Manager ポータルで作成されます。
-
-  >[!NOTE]
-  >**[ユーザー アフィニティ]** を **[With user affinity]\(ユーザー アフィニティあり\)** に設定するか、**[監視下]** モードを **[オフ]** に設定すると、登録プロファイルの [共有 iPad] モードは無効になります。
-
-  - **[キャッシュされたユーザーの最大数]** - (**[共有 iPad]** = **[はい]** にする必要があります) 各ユーザーのデバイスにパーティションを作成します。 推奨値は、期間中にデバイスを使用する可能性がある学生の数です。 たとえば、平日に頻繁にデバイスを使用する学生が 6 人いる場合は、この数を 6 に設定します。  
+        - **Maximum Cached Users** - (Requires **Shared iPad** = **Yes**) Creates a partition on the device for each user. The recommended value is the number of students likely to use the device over a period of time. For example, if six students use the device regularly during the week, set this number to six.  
 
     - **[ペアリングの許可]** - iOS デバイスをコンピューターと同期できるかどうかを指定します。 **[証明書による Apple Configurator の許可]** を選択した場合は、**[Apple Configurator の証明書]** で証明書を選択する必要があります。
 
-    - **[Apple Configurator の証明書]** - **[ペアリングの許可]** で **[証明書による Apple Configurator の許可]** を選択した場合は、インポートする Apple Configurator の証明書を選択します。
+      - **[Apple Configurator の証明書]** - **[ペアリングの許可]** で **[証明書による Apple Configurator の許可]** を選択した場合は、インポートする Apple Configurator の証明書を選択します。
 
 7. **[セットアップ アシスタントの設定]** を選択し、次のプロファイル設定を構成して、**[保存]** を選択します。
 
@@ -140,15 +138,15 @@ Apple School Manager で企業所有の iOS デバイスを登録するには、
 
 1. **[Enrollment Program トークン]** ブレードで、青色の情報バナーまたは **[SDS の接続]** のいずれかを選択します。
 2. **[Microsoft School Data Sync でこのトークンを使用できるようにする]** を選択し、**[許可]** に設定します。 この設定により、Intune は Office 365 で SDS に接続できます。
-3. Apple School Manager と Azure AD の間の接続を有効にするには、**[Microsoft School Data Sync の設定]** を選択します。 [School Data Sync の設定方法](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1)について詳しく学びます。
+3. Apple School Manager と Azure AD の間の接続を有効にするには、**[Microsoft School Data Sync の設定]** を選択します。[School Data Sync の設定方法](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1)について詳しく学びます。
 4. **[OK]** をクリックし、設定を保存して続行します。
 
 ## <a name="sync-managed-devices"></a>管理対象デバイスを同期する
 Intune に Apple School Manager デバイスを管理するアクセス許可を割り当てたので、Intune と Apple サービスを同期し、管理されたデバイスを Intune に表示できます。
 
 1. Azure Portal の Intune で **[デバイスの登録]** を選択し、**[Apple の登録]** を選択します。
-2. **[Enrollment Program デバイス]** で、**[同期]** を選択します。 進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
-3. **[同期]** ブレードで、**[同期を要求]** を選択します。 進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
+2. **[Enrollment Program デバイス]** で、**[同期]** を選択します。進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
+3. **[同期]** ブレードで、**[同期を要求]** を選択します。進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
 
   ![[同期を要求] リンクが選ばれている [同期] ブレードのスクリーンショット。](./media/enrollment-program-device-request-sync.png)
 

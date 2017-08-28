@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97dede1ac393a434342f62d1f8488389dcb28d44
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: dfcd7b97848ed68edb4572429abc53a1cc8f8558
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="set-the-mobile-device-management-authority"></a>モバイル デバイス管理機関の設定
 
@@ -40,11 +40,27 @@ Configuration Manager 1610 以降のバージョンと Microsoft Intune バー�
 
 ## <a name="set-mdm-authority-to-intune"></a>MDM 機関を Intune に設定する
 
-1. Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-  ![Intune のトラブルシューティング ワークロードとユーザー選択リンクのスクリーンショット](media/set-mdm-auth.png)
+1. [Azure Portal](https://portal.azure.com) で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 2. [Intune] ブレードで **[デバイスの登録]** を選択し、**[概要]** を選択します。
+![Intune のモバイル デバイス管理機関設定画面のスクリーンショット](media/set-mdm-auth.png)
 
-3. **[デバイスの管理を開始する]** ブレードで、**[MDM 機関を Intune に設定する]** を選択します。 MDM 機関が Intune に正しく設定されたことを示すメッセージが表示されます。
+3. **[モバイル デバイス管理機関]** で、次の選択肢から MDM 機関を選択します。
+  - **Intune MDM 機関**
+  - **Configuration Manager MDM 機関**
+  - **なし**
+
+  MDM 機関が Intune に正しく設定されたことを示すメッセージが表示されます。
+
+## <a name="enable-device-enrollment"></a>デバイスの登録を可能にする
+
+Intune が MDM 機関として設定されると、ユーザーは個人所有デバイスを登録し、メールなどのリソースにアクセスできます。それには、ポータル サイトをインストールするか (iOS と Android)、仕事の資格情報を追加するか (Windows)、会社のポータル Web サイトにアクセスします (iOS、Android、macOS)。
+
+登録を有効に、または簡単にするために、各種プラットフォームで次のような要件があります。
+- **iOS** - (必須) [Apple MDM プッシュ証明書を取得し](apple-mdm-push-certificate-get.md)、[会社所有 iOS デバイスの登録を有効にします](ios-enroll.md) (任意)。
+- **Android** - (任意) [Android の仕事用プロファイルを有効にします](android-enroll.md)。
+- **Windows** - (任意) [自動登録](windows-enroll.md)または[一括登録](windows-bulk-enroll.md)を有効にします。
+- **macOS** - 要件はありません。
+
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 証明書の有効期限が切れた後のモバイル デバイスのクリーンアップ
 

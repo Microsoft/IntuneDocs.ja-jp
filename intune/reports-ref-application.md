@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2e12792445b36ba6657cbe6b2f6c924f6d97fe3c
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 6107059888c8d2fb6227277202a5906491ac9092
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="reference-for-application-entities"></a>アプリケーション エンティティのリファレンス
 
@@ -52,9 +52,9 @@ ms.lasthandoff: 08/04/2017
 | IsCurrent |データ ウェアハウスにおいて、このアプリ バージョンが現行のものであるかどうかを示します |真/偽 |
 | RowLastModifiedDateTimeUTC |このアプリ バージョンがデータ ウェアハウスで最後に変更されたときの UTC 日時 |11/23/2016 12:00:00 AM |
 
-## <a name="appinstallertypes"></a>AppInstallerTypes
+## <a name="apptypes"></a>AppTypes
 
-**AppInstallerTypes** エンティティは、アプリのインストール ソースを一覧表示します。
+**AppTypes** エンティティは、アプリのインストール ソースを一覧表示します。
 
 | プロパティ  | 説明 |
 |---------|------------|
@@ -80,44 +80,6 @@ ms.lasthandoff: 08/04/2017
 | 11 |Windows Mobile MSI |MSI の基幹業務アプリ |
 | 12 |Windows Phone LOB アプリ |Windows Phone 基幹業務アプリ |
 
-## <a name="applicationtypes"></a>ApplicationTypes
-
-**ApplicationTypes** エンティティは、アプリの種類を一覧表示します。
-
-| プロパティ  | 説明 |
-|---------|------------|
-| ApplicationTypeID |種類の ID |
-| ApplicationTypeKey |キーの代理キー |
-| ApplicationTypeName |アプリの種類 |
-
-## <a name="example"></a>例
-
-| ApplicationTypeID  | 名前 | 説明 |
-|---------|------------|--------|
-| 0 |InHouse |社内で開発されたアプリ |
-| 1 |DeepLink |アプリ ストアのアプリへのリンク |
-| 2 |WebLink |Web アプリへのリンク |
-
-## <a name="managedsoftwaretypes"></a>ManagedSoftwareTypes
-
-**ManagedSoftwareTypes** エンティティは、アプリの管理対象ソフトウェアの種類を一覧表示します。
-
-| プロパティ  | 説明 |
-|---------|------------|
-| SoftwareTypeID |種類の ID |
-| SoftwareTypeKey |キーの代理キー |
-| SoftwareTypeName |ソフトウェアの種類 |
-
-## <a name="example"></a>例
-
-| SoftwareTypeID  | 名前 | 説明 |
-|---------|------------|--------|
-| 0 |デスクトップ |デスクトップ アプリ |
-| 2 |更新プログラム、更新 |ウィンドウの更新 |
-| 5 |SideCarAgent | |
-| 1 |モバイル |モバイル アプリ |
-| 3 |WebLink |Web リンク |
-| 4 |VppDeepLink |アプリストアのアプリで、VPP (ボリューム購入プログラム) に含まれるアプリのリンク |
 
 ## <a name="vppprogramtypes"></a>VppProgramTypes
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8ba85e15fb55a4de1b2f1db53bc5b9962de84394
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fe406fe2deb89fca1f3ab9d949ea78b779ee13af
+ms.sourcegitcommit: eb726c7e3a6e7defb74e69861447c96de0d1bb65
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/17/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>暗号化を使用して Android デバイスを保護する方法
 
@@ -33,8 +33,8 @@ ms.lasthandoff: 07/01/2017
 
 1.  デバイスの画面ロック PIN またはパスワードが設定されていることを確認します。
 
-2.  **[設定]** から **[セキュリティ]** &gt; **[Encrypt Device (デバイスの暗号化)]** の順に選択します。
-    (電話によっては、"暗号か" オプションを表示するには、**[ストレージ]** &gt; **[ストレージの暗号化]** または **[ストレージ]** &gt; **[画面のロックとセキュリティ]** &gt; **[他のセキュリティ設定]** の順に選択する必要があります。)
+2.  **[設定]** で、**[セキュリティ]** > **[Encrypt Device]\(デバイスの暗号化\)** の順に選択します。
+    (一部の電話では、"暗号化" オプションを表示するために、**[ストレージ]** > **[ストレージの暗号化]** または **[ストレージ]** > **[画面のロックとセキュリティ]** > **[他のセキュリティ設定]** の順に選択する必要があります。)
 
 3.  画面の指示に従います。 暗号化が行われている間、デバイスが何度か再起動する場合があります。
 
@@ -54,14 +54,16 @@ ms.lasthandoff: 07/01/2017
 - デバイスで PIN やパスワードが設定されていることを確認します。
 - デバイスに PIN またはパスワードを既に設定してある場合は、次の手順を試してみます。IT 管理者がデバイスのセキュリティを強化する必要がある場合があります。 Android デバイスの種類により、手順で表示されるメニュー名が若干異なることがあります。
 
-    1. **[Settings]** (設定) > **[Security]** (セキュリティ) > **[Screen lock]** (画面のロック) の順に移動します。 現在の PIN またはパスワードを確認します。
+    1. **[設定]** > **[ロック画面とセキュリティ]** > **[画面のロック]** の順に進みます。 現在の PIN またはパスワードを確認します。
 
-    2. **[Choose screen lock]** (画面のロックの選択) 画面で、使用する画面ロックの種類を選択します。
+    2. **[Choose screen lock]** (画面のロックの選択) 画面で、使用する画面ロックの種類を選択します。 
 
-    3. **[Secure start-up]** (安全な起動) 画面で、**[Require PIN to start device]** (デバイスの起動に PIN が必要) をタップし、**[Continue]** (続行) をタップします。
+    3. 画面のロックを選択したら、**[ロック画面とセキュリティ]** 画面に戻り、**[安全な起動]** を選択します。 
+    
+    4. **[安全な起動]** 画面で、**[Require PIN to start device]\(デバイスの起動に PIN が必要\)** をタップし、**[続行]** をタップします。
 
-    4. PIN を選択し (前に入力したものと同じものを入力できます)、**[Confirm your PIN]** (PIN の確認) をタップします。
+    5. PIN を選択し (前に入力したものと同じものを入力できます)、**[Confirm your PIN]** (PIN の確認) をタップします。
 
-    5. ポータル サイト アプリを開き、デバイスを選択して、**[Check Compliance]** (ポリシー準拠状況の確認) をタップします。
+    6. ポータル サイト アプリを開き、デバイスを選択して、**[Check Compliance]** (ポリシー準拠状況の確認) をタップします。
 
 サポートが必要な場合は、 IT 管理者に問い合わせるか (連絡先情報については[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください)、または <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android チーム</a>にご連絡ください。

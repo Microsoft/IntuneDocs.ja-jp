@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b70bf3410e20dd792c0fcff050292ddea714d63e
-ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
+ms.openlocfilehash: 6b3ce7e895920d2bb9ff3537fd0ef87ecb4efcc0
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Power BI でデータ ウェアハウスに接続する
 
@@ -58,20 +58,22 @@ Power BI ファイル (pbix) には、テナントの接続情報と、データ
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>OData リンクを使用して Power BI でデータを読み込む
 
-Azure AD に対してクライアントが認証されていると、OData URL は、データ ウェアハウス API で、データ モデルをレポート クライアントに公開している RESTful エンドポイントに接続します。 Power BI Desktop を使用して接続して独自のレポートを作成するするには、次の手順を実行します。 OAUTH2.0 認証と OData v4.0 標準をサポートしているクライアントであれば、Power BI Desktop だけでなく、OData URL にお気に入りの分析ツールを使用できます。
+Azure AD に対してクライアントが認証されていると、OData URL は、データ ウェアハウス API で、データ モデルをレポート クライアントに公開している RESTful エンドポイントに接続します。 Power BI Desktop を使用して接続して独自のレポートを作成するには、次の手順を実行します。 OAUTH2.0 認証と OData v4.0 標準をサポートしているクライアントであれば、Power BI Desktop だけでなく、OData URL にお気に入りの分析ツールを使用できます。
 
-1.  たとえば、`https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta` などのレポート ブレードから **OData URL** を取得します。
-2.  **Power BI Desktop** を開きます。
-3.  **[ホーム]** > **[データの取得]** を選択します。 **[OData フィード]** を選択します。
-4.  **[基本]** を選択します。
-5.  [URL] ボックスに **[OData URL]** を入力するか貼り付けます。
-6.  **[OK]**をクリックします。
-7.  Power BI Desktop クライアントからテナントの Azure AD に対して認証されていない場合は、資格情報を入力します。  
-    a.  **[組織のアカウント]** を選択します。  
-    b.  ユーザー名とパスワードを入力します。  
-    c.  **[サインイン]** をクリックします。  
-    d.  **[接続]**をクリックします。  
-8.  **[読み込む]** をクリックします。
+1.  Azure Portal にサインインし、**[監視 + 管理]** > **[Intune]** の順に選択します。 **Intune** のリソースを検索することもできます。  
+2.  **[Microsoft Intune データ ウェアハウス API (プレビュー)]** ブレードを開きます。
+3. たとえば、`https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta` などのレポート ブレードからカスタム フィード URL を取得します。
+4. **Power BI Desktop** を開きます。
+5. **[ホーム]** > **[データの取得]** を選択します。 **[OData フィード]** を選択します。
+6. **[基本]** を選択します。
+7. [URL] ボックスに **[OData URL]** を入力するか貼り付けます。
+8. **[OK]**をクリックします。
+9. Power BI Desktop クライアントからテナントの Azure AD に対して認証されていない場合は、資格情報を入力します。  
+    1.  **[組織のアカウント]** を選択します。  
+    2.  ユーザー名とパスワードを入力します。  
+    3.  **[サインイン]** をクリックします。  
+    4.  **[接続]**をクリックします。  
+10. **[読み込む]** をクリックします。
 
 ## <a name="next-steps"></a>次のステップ
 
@@ -79,4 +81,4 @@ Azure AD に対してクライアントが認証されていると、OData URL �
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
  -  テナント データを整理し、データを基に分析しやすくすることができます。 データの整理方法については、「[Data Warehouse Data Model](reports-ref-data-model.md)」(データ ウェアハウス データ モデル) を参照してください。 
-<!-- -  You can also access the data from a RESTful interface and incorporate the data into your own app. For more information, see [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md). -->
+ -  RESTful インターフェイスからデータにアクセスし、データを自分のアプリに組み込むこともできます。 詳細については、「[REST クライアントを使用してのデータ ウェアハウス API からのデータの取得](reports-proc-data-rest.md)」を参照してください。

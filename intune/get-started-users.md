@@ -1,12 +1,12 @@
 ---
 title: "ユーザーの概要"
 titleSuffix: Intune on Azure
-description: 
+description: "Intune にユーザーを追加し、モバイル デバイスで会社のリソースにアクセスできるようにします。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,23 +15,21 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e711f32ebd77a83b17e6db468f8cb23a409c8d31
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 1559a265b28627281b484c8250d1c597d2f094c6
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="get-started-with-users"></a>ユーザーの概要
+# <a name="get-started-with-managing-users"></a>ユーザー管理の概要
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-Azure Active Directory は、デバイスやアプリなど、組織のオブジェクト グループを管理し、また、ユーザー グループを管理します。 各デバイスを個々に管理する代わりに、ユーザーやデバイスをまとめてグループにすることができます。 大量のユーザーやデバイスにアプリや設定を簡単に割り当てることができます。
+組織のさまざまな人間について考えてください。 会社のデータを利用するすべての人間が Intune でデータにアクセスするためにユーザーを必要とします。 
 
 ## <a name="how-do-i-create-a-user"></a>ユーザーの作成方法
 
 1. [Azure ポータル](https://portal.azure.com)にサインインします。
-2. **[リソースの検索]** を利用し、**[ユーザーとグループ]** を検索します。
-3. **[ユーザーとグループ]** ブレードを開いたら、**[すべてのユーザー]** を選択し、**[+ 新しいユーザー]** を選択します。
+2. **[リソースの検索]** を利用し、**[Intune]** を探します。
+3. **[Microsoft Intune]** ブレードを開いたら、**[ユーザー]** を選択します。 **[すべてのユーザー]** ページで、**[+ 新しいユーザー]** を選択します。
 4. **名前**や**ユーザー名**など、ユーザーの詳細を入力します。 ユーザー名のドメイン名の部分は初回の既定ドメイン名である “contoso.onmicrosoft.com” か、“contoso.com” など、検証済みの非フェデレーション ドメイン名にする必要があります。
 5. **[グループ]** の下で、ユーザーを追加するテスト グループを選択します。
 6. テスト デバイスにログオンするときに利用できるように、自動生成されたユーザー パスワードを保存します。 このパスワードをユーザーに与える必要があります。パスワードを与えられたユーザーは、自分が覚えられるように普通のパスワードに変更できます。
@@ -50,3 +48,7 @@ Azure Active Directory は、デバイスやアプリなど、組織のオブジ
  > このとき、このユーザーのライセンスの 1 つが使用されます。 ライブ環境を利用している場合、後でこのライセンスの使用をオフにし、実際のユーザーに再度割り当てることができます。
 
 5. **[保存]** を選択します。
+
+## <a name="next-steps"></a>次のステップ
+
+[グループの概要](get-started-groups.md) - ユーザーをグループにまとめ、ユーザーがアクセスできるポリシーやアプリの管理を簡単にします。

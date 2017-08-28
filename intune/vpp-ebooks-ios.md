@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/13/2017
+ms.date: 08/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e23c40eb4c13fd0d2593742c72086fc943fe2b54
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 43ab9e906f05a069b1399ab53a4861d7289b7024
+ms.sourcegitcommit: 6a089eb45ea3fb18ae0b2dac96683466f52f95bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/18/2017
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Volume Purchase Program で購入した iOS 電子ブックを Microsoft Intune で管理する方法
 
@@ -44,7 +44,6 @@ iOS ブックの複数のライセンスを購入するには、[ビジネス向
 * 既定では、Intune は 1 日に 2 回、Apple VPP サービスと同期します。 いつでも手動での同期を開始できます。
 * Intune に VPP トークンをインポートした後、同じトークンを他のデバイス管理ソリューションにインポートすることはできません。 これを行うと、ライセンスの割り当てとユーザー レコードが失われる恐れがあります。
 * Intune で iOS ブックの使用を開始する前に、他のモバイル デバイス管理 (MDM) ベンダーで作成された既存の VPP ユーザー アカウントを削除してください。 Intune では、セキュリティ対策として、そのようなユーザー アカウントは Intune と同期されません。 Intune では、Intune で作成された Apple VPP サービスからのデータのみが同期されます。
-* 現時点では、ブックは**必須**インストールとしてのみ割り当てることができます。 ブックを **[必須]** インストールとして割り当てる場合、ブックをインストールする各ユーザーがライセンスを使用します。
 * デバイスに本を割り当てる場合、そのデバイスには、組み込みの iBooks アプリがインストールされている必要があります。 そうでない場合は、エンド ユーザーがブックを読むには、アプリを再インストールする必要があります。 現時点では、Intune を使用して、削除された組み込みのアプリを復元することはできません。
 * Apple Volume Purchase Program サイトから実行できるのは、ブックの割り当てのみです。 社内で作成したブックをアップロードしてから割り当てることはできません。
 * 現時点では、アプリと同じようにブックをエンド ユーザー カテゴリに割り当てることはできません。
@@ -72,10 +71,10 @@ iOS ブックの複数のライセンスを購入するには、[ビジネス向
 ## <a name="to-assign-a-volume-purchased-app"></a>ボリューム購入アプリを割り当てるには
 
 1. **[電子ブック]** ワークロードで、**[管理]** > **[すべての電子ブック]** を選択します。
-2. ブックの一覧ブレードで、割り当てるブックを選択し、**[...]** を選択します。 >  **[グループの割り当て]** の順に選択します。
+2. ブックの一覧ブレードで、割り当てるブックを選択し、**[...]**、**[グループの割り当て]** の順に選択します。
 3. **[<*ブック名*> - 割り当てられたグループ]** ブレードで、**[管理]** > **[割り当てられたグループ]** の順に選択します。
 4. **[グループの割り当て]** を選択し、**[グループの選択]** ブレードで、ブックを割り当てる Azure AD ユーザー グループを選択します。 現時点では、デバイス グループはサポートされていません。
-**[必須]** の割り当て操作を選択します。 
+割り当て操作として **[利用可能]** または **[必須]** を選択します。 
 5. 完了したら、**[保存]** を選択します。
 
 ## <a name="next-steps"></a>次のステップ
