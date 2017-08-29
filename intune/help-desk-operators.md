@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 08/11/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 32d3d014abc48eb2c3d0e10a71dc7f4616c49db8
-ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
+ms.openlocfilehash: c932781f988d63395b98452a4f4739e0bce1d9c8
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>トラブルシューティング ポータルを使用してユーザーをサポートする
 
@@ -29,7 +29,6 @@ ms.lasthandoff: 08/12/2017
 たとえば、ユーザーが Intune で技術的な問題をサポートに連絡すると、ヘルプ デスクがそのユーザーの名前を入力します。 Intune には、次のような階層 1 の多くの問題を解決するのに役立つデータが示されます。
 - ユーザーの状態
 - ［割り当て］
-- アプリのインスタンス エラー
 - ポリシー準拠の問題
 - デバイスが応答しない
 -   デバイスが VPN または Wi-Fi の設定を取得できない
