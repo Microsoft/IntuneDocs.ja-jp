@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/22/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 03a278762401ee9697909cf45b3fe86212393e66
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: 12556e394e2e09307c4f89e1ae56bb3f268b28ae
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/28/2017
 ---
-# <a name="add-corporate-identifiers"></a>企業 ID を追加する
+# <a name="identify-devices-as-corporate-owned"></a>デバイスの企業所有としての識別
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -31,15 +31,13 @@ Intune 管理者はさまざまな方法でデバイスを企業所有として�
 
 - [デバイス登録マネージャー](device-enrollment-manager-enroll.md) アカウントで登録されている (すべてのプラットフォーム)
 - Apple [Device Enrollment Program](device-enrollment-program-enroll-ios.md)、[Apple School Manager](apple-school-manager-set-up-ios.md)、[Apple Configurator](apple-configurator-enroll-ios.md) (iOS のみ) で登録されている
-- IMEI (International Mobile Equipment Identifier/国際携帯機器識別) 番号 (IMEI 番号を持つすべてのプラットフォーム) またはシリアル番号 (iOS and Android) で事前宣言されている
-- Azure Active Directory または Enterprise Mobility Suite に Windows 10 Enterprise デバイスとして登録されている (Windows 10 のみ)
-- デバイスの**プロパティ**に**企業**が指定されている
+- IMEI (International Mobile Equipment Identifier/国際携帯機器識別) 番号 (IMEI 番号を持つすべてのプラットフォーム) またはシリアル番号 (iOS と Android) で、[登録前に会社所有として識別されている](#identify-corporate-owned-devices-with-imei-or-serial-number)
+- Azure Active Directory または Enterprise Mobility + Security に Windows 10 Enterprise デバイスとして登録されている (Windows 10 のみ)
+- デバイスのプロパティに、[デバイスの所有権が会社](#change-device-ownership)として表示される
 
-企業所有デバイスの場合、Intune のデバイス レコードの **[所有権]** 列に **[企業]** と表示されます。 表示するには、**[デバイス]** > **[すべてのデバイス]** の順に進みます。
+## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>IMEI またはシリアル番号により、会社所有デバイスとして特定される
 
-## <a name="predeclare-a-device-with-imei-or-serial-number"></a>IMEI またはシリアル番号を持つデバイスを事前宣言する
-
-Intune 管理者は、IMEI 番号またはシリアル番号を記載しているコンマ区切り値 (.csv) ファイルを作成し、インポートできます。 Intune は、この識別子を使用して、デバイスの所有権を会社として指定します。 サポートされているすべてのプラットフォームの IMEI 番号を宣言できます。 iOS および Android デバイスのシリアル番号のみ宣言できます。 各 IMEI またはシリアル番号の一覧には管理目的で詳細を追加できます。
+Intune 管理者は、IMEI 番号またはシリアル番号を記載しているコンマ区切り値 (.csv) ファイルを作成し、インポートできます。 Intune は、デバイス登録時、この識別子を使用し、デバイスの所有権を会社として指定します。 サポートされているすべてのプラットフォームの IMEI 番号を宣言できます。 iOS および Android デバイスのシリアル番号のみ宣言できます。 各 IMEI またはシリアル番号の一覧には管理目的で詳細を追加できます。
 
 <!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
@@ -80,7 +78,7 @@ Android デバイスのシリアル番号の検索方法については、[こ�
 
 インポートされたデバイスが必ずしも登録されているとは限りません。 デバイスは **[登録済み]** または**[未接続]** のどちらかの状態になります。 **未接続** の場合、デバイスは Intune サービスで通信に使われていません。
 
-## <a name="delete-corporate-identifiers"></a>企業 ID を削除する
+### <a name="delete-corporate-identifiers"></a>企業 ID を削除する
 
 1. Azure Portal の Intune で **[デバイスの登録]** > **[業務用デバイスの ID]** の順に選択します。
 2. 削除するデバイス識別子を選択し、**[削除]** を選択します。
@@ -88,5 +86,16 @@ Android デバイスのシリアル番号の検索方法については、[こ�
 
 登録済みデバイスの企業識別子を削除すると、デバイスの所有権が変更されます。 デバイスの所有権を変更するには、**[デバイス]** > **[すべてのデバイス]** の順に進み、デバイスを選択し、**[プロパティ]** を選択し、**[デバイスの所有者]** を変更します。
 
-## <a name="imei-specifications"></a>IMEI の仕様
+### <a name="imei-specifications"></a>IMEI の仕様
 International Mobile Equipment Identifier の詳しい仕様については、「[3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729)」を参照してください。
+
+## <a name="change-device-ownership"></a>デバイス所有権を変更する
+
+デバイスのプロパティには、Intune のデバイス レコード別の**所有権**が表示されます。 管理者はデバイスを**個人用**または**企業所有**として指定できます。
+
+**デバイス所有権を変更するには:**
+1. Azure Portal の Intune で、**[デバイス]**、**[すべてのデバイス]** の順に進み、デバイスを選択します。
+3. **[プロパティ]** を選択します。
+4. **[デバイスの所有権]** に **[個人]** または **[企業]** を指定します。
+
+  ![デバイス プロパティのスクリーンショット。デバイスのカテゴリと所有権のオプションを確認できます。](./media/device-properties.png)
