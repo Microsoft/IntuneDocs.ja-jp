@@ -14,11 +14,11 @@ ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0e1906de7e735174d660bb8508cab49196ff0aef
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: fac1ce49584af299face679270dcc43decc4d2f5
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Android ユーザーがアプリを入手する方法
 
@@ -50,9 +50,9 @@ Microsoft Intune を通して配布したアプリを Android エンド ユー�
 
 アプリは、以下に示すように管理することも管理外にすることも可能です。 アプリを管理するプロセスは、すべての種類の Android デバイスで共通です。
 
-**管理対象のアプリ** - ポリシーで管理できるアプリです。 Intune によって "ラップ" されているか、Intune モバイル アプリケーション管理 (MAM) ソフトウェア開発キット (SDK) で構築されています。 これらのアプリは Intune によって管理することができます。また、これらのアプリにはアプリケーション ポリシーを適用することができます。
+**管理対象のアプリ** - ポリシーで管理できるアプリです。 Intune で "ラップ" されているか、Intune App SDK で構築されています。 これらのアプリは Intune によって管理することができます。また、これらのアプリにはアプリケーション ポリシーを適用することができます。
 
-**管理対象外のアプリ** - ポリシーで管理できないアプリです。 Intune によってラップされていないか、Intune MAM SDK を組み込んでいません。 これらのアプリにアプリケーション ポリシーを適用することはできません。
+**管理対象外のアプリ** - ポリシーで管理できないアプリです。 Intune によってラップされていないか、Intune アプリ SDK を組み込んでいません。 これらのアプリにアプリケーション ポリシーを適用することはできません。
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune でアプリを追加する](apps-add.md)

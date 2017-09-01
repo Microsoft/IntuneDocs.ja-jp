@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 08/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c771d07cc41d91812a1cfa80ffe08234e58803e5
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+ms.openlocfilehash: ae92a75958abdc97d781c5b518d70a4e54f4939a
+ms.sourcegitcommit: b5d7442e03d9727793acd1a1dd946779dbe9218d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/22/2017
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Intune で、監視されている iOS デバイス上のアクティベーション ロックをバイパスする
 
@@ -58,8 +58,8 @@ Intune では、iOS 8.0 以降を実行している監視対象デバイスの�
 デバイスのアクティベーション ロックをバイパスするには、次の手順に従って先にそれを有効にする必要があります。
 
 1. [デバイスの制限設定を構成する方法](/intune-azure/configure-devices/how-to-configure-device-restrictions)に関するページにある情報を使用して、iOS 用の Intune デバイス制限プロファイルを構成します。
-2. **[キオスク]** モード設定 **[アクティベーション ロック]** を有効にします。
-3. プロファイルを保存し、アクティベーション ロックのバイパスを管理するデバイスに割り当てます。
+2. [iOS のデバイス制限設定](device-restrictions-ios.md)の **[全般]** 設定で、**[アクティベーション ロック]** オプションを有効にします。
+3. プロファイルを保存し、アクティベーション ロックのバイパスを管理するデバイスに[割り当て](device-profile-assign.md)ます。
 
 
 ## <a name="how-to-use-activation-lock-bypass"></a>アクティベーション ロックのバイパスの使用方法

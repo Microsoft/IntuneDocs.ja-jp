@@ -14,11 +14,11 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7f054868d0bae061f348239614f3a40b96a15b1
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 88db3730be62a9b481d924b4f09b70be775cb067
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="set-up-app-based-conditional-access-policies"></a>アプリベースの条件付きアクセス ポリシーの設定
 
@@ -59,9 +59,30 @@ ms.lasthandoff: 07/03/2017
 2. 省略記号をクリックすると、削除のオプションが表示されます。
 3. **[削除]** を選択すると、一覧からユーザー グループが削除されます。
 
+## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>Azure AD ワークロードでアプリベースの条件付きアクセス ポリシーを作成する
+
+Intune 1708 リリース以降、IT 管理者は Azure AD ワークロードからアプリベースの条件付きアクセス ポリシーを作成できます。 Azure と Intune のワークロードを切り替える必要がなくなり、便利です。
+
+> [!IMPORTANT]
+> Intune Azure Portal から Azure AD の条件付きアクセス ポリシーを作成するには、Azure AD Premium ライセンスが必要です。
+
+### <a name="to-create-an-app-based-conditional-access-policy"></a>アプリベースの条件付きアクセス ポリシーを作成するには
+
+> [!IMPORTANT]
+> アプリベースの条件付きアクセス ポリシーを利用するには、先に、[Intune アプリ保護ポリシー](app-protection-policies.md)をアプリに適用する必要があります。
+
+1. **Intune ダッシュボード**で、**[条件付きアクセス]** を選びます。
+
+2. **[ポリシー]** ブレードで、**[新しいポリシー]** を選択し、新しいアプリベースの条件付きアクセス ポリシーを作成します。
+
+4. ポリシー名を入力し、**[割り当て]** セクションで利用できる設定を構成したら、**[アクセスの制御]** セクションで **[許可]** を選択します。
+
+5. **[承認されたクライアント アプリが必要です]** を選択し、**[選択]** を選択し、**[OK]** を選択して新しいポリシーを保存します。
+
 ## <a name="next-steps"></a>次のステップ
 [最新の認証を使用していないアプリをブロックする](app-modern-authentication-block.md)
 
 ### <a name="see-also"></a>関連項目
 
-[アプリ保護ポリシーを使用したアプリ データの保護](app-protection-policies.md)
+[アプリ保護ポリシーでアプリ データを保護する](app-protection-policies.md)
+[Azure Active Directory の条件付きアクセス](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

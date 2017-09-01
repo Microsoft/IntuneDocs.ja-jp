@@ -4,7 +4,7 @@ description: "Intune App SDK は、iOS プラットフォームと Android プ�
 keywords: 
 author: mtillman
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 08/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8a9b0c398c4b6dd46823ceaaefd68ee193ab4502
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c509e324788828d8ce5a3e9ac556c82ce57e9b07
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="intune-app-sdk-overview"></a>Intune App SDK の概要
 iOS と Android の両方で使用可能な Intune App SDK で、Intune アプリ保護ポリシーに対してご使用のアプリを有効にすることができます。 アプリの開発者が必要なコード変更が最小限に抑えられます。 SDK の機能の大半は、アプリの動作を変更せずに利用できます。 エンド ユーザーと IT 管理者のエクスペリエンスを向上させるために、API を利用してアプリの動作をカスタマイズし、アプリ側の処理が必要な機能を実現できます。
@@ -62,8 +62,7 @@ IT 管理者は、アプリへのアクセスに、職場または学校のア�
 ### <a name="app-protection-without-device-enrollment"></a>デバイス登録が不要なアプリの保護
 
 >[!IMPORTANT]
->デバイス登録が不要な Intune アプリ保護は、Android 用 Intune App SDK ではまだ使用できません。 Intune アプリ ラッピング ツール、iOS 用 SDK、SDK Xamarin コンポーネント、および SDK Cordova プラグインで使用できます。
-
+>デバイス登録のない Intune アプリ保護は、Intune App ラッピング ツール、Intune App SDK for Android、Intune App SDK for iOS、SDK Xamarin コンポーネント、SDK Cordova プラグインで利用できます。
 
 個人用デバイスを使用するユーザーの多くは、モバイル デバイス管理 (MDM) プロバイダーを使用して自分の個人用デバイスを登録せずに、会社のデータにアクセスしたいと考えます。 MDM 登録にはデバイスのグローバル制御が必要になるため、多くの場合、ユーザーは自分の個人用デバイスの制御を会社に任せることをためらいます。
 

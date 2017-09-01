@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a11b094a896a2358d8e414cc248976fd34bad38b
-ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
+ms.openlocfilehash: a6e0ea5edc5a174e0400ccca3931323712f3cbbe
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android 用 Microsoft Intune アプリ SDK 開発者ガイド
 
@@ -597,7 +597,7 @@ Result getRegisteredAccountStatus(String upn);
 
 * アプリが有効な AAD トークンを返さない場合、登録の試行の最終的な結果は `AUTHENTICATION_NEEDED` になります。 アプリが通知を介してこの結果を受信する場合、アプリは、**MAMService トークン**を取得して `updateToken()` メソッドを呼び出してもう一度登録プロセスを開始することで登録プロセスを早めます。 ただし、SDK は登録を定期的に再試行してトークンを取得するためのコールバックを呼び出すので、これは確実な要件_ではありません_。
 
-* アプリの登録済みの `MAMServiceAuthenticationCallback` は、定期的なアプリ保護ポリシー更新チェックイン時にトークンを取得するためにも呼び出されます。 アプリが要求されたときにトークンを提供できない場合、通知は得られませんが、トークンの取得を試行する必要があり、チェックイン プロセスの時間を短縮するために次の便利な時刻に `updateToken()` を呼び出す必要があります。 トークンが提供されていない場合、次のチェックインの試行時にコールバックも引き続き呼び出されます。
+* アプリの登録済みの `MAMServiceAuthenticationCallback` は、定期的なアプリ保護ポリシー更新チェックイン時にトークンを取得するためにも呼び出されます。アプリが要求されたときにトークンを提供できない場合、通知は得られませんが、トークンの取得を試行する必要があり、チェックイン プロセスの時間を短縮するために次の便利な時刻に `updateToken()` を呼び出す必要があります。 トークンが提供されていない場合、次のチェックインの試行時にコールバックも引き続き呼び出されます。
 
 #### <a name="registration"></a>登録
 
@@ -663,6 +663,7 @@ Intune では、XML でカスタム ルールを定義する機能など、Andro
     ```xml
 android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
     ```
+
 
 2. **[省略可能]** 省略可能なカスタム BackupAgent を実装した場合は、MAMBackupAgent または MAMBackupAgentHelper を使用することを確認する必要があります。 次のセクションを参照してください。 Android M 以上でのバックアップが簡易化される、Intune の **MAMDefaultFullBackupAgent** (手順 1 で説明) の使用に切り替えることを検討してください。
 
@@ -1340,8 +1341,6 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
 
  Intune アプリ SDK に含まれる AndroidManifest.xml ファイルには **MAMNotificationReceiverService** が含まれます。これは、ポータル サイト アプリから対応のアプリに通知を送信できるようにする、エクスポートされたサービスである必要があります。 このサービスでは、ポータル サイト アプリのみが通知の送信を許可されるように、呼び出し元を確認します。
 
-
-
 ## <a name="expectations-of-the-sdk-consumer"></a>SDK コンシューマーの要望
 
 Intune SDK は Android API によって提供されるコントラクトを維持します。ただし、ポリシーの適用の結果として、エラー状態がより頻繁にトリガーされる可能性があります。 これらの Android のベスト プラクティスにより、エラーの可能性が減少します。
@@ -1353,6 +1352,13 @@ Intune SDK は Android API によって提供されるコントラクトを維�
 * すべての派生関数はそのスーパークラスのバージョンを介して呼び出しを行う必要があります。
 
 * あいまいな方法で API を使用することを回避します。 たとえば、requestCode を確認しないで `Activity.startActivityForResult` を使用すると、予想外の動作が発生します。
+
+## <a name="telemetry"></a>製品利用統計情報
+
+Intune App SDK for Android は、アプリからのデータ収集を制御しません。 ポータル サイト アプリケーションでは、既定で、次の使用状況イベントに関する製品利用統計情報がログに記録されます。 このデータは、Microsoft Intune に送信されます。 Microsoft ポリシーに基づき、個人を特定できる情報 (PII) は収集しません。
+
+> [!NOTE]
+> エンド ユーザーがこのデータの送信を選択しない場合、ポータル サイト アプリの [設定] で製品利用統計情報をオフにする必要があります。 詳しくは、「[Microsoft による使用状況データの収集を無効にする](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android)」をご覧ください。 
 
 ## <a name="recommended-android-best-practices"></a>推奨される Android のベスト プラクティス
 

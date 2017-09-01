@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/15/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,25 +13,46 @@ ms.technology:
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 33d1f28cd5522ed47c3fdf83b289116728ded12b
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.custom: intune-azure
+ms.openlocfilehash: 6db9bc7a3bafd61d03513ea1b6e1f0246faaab57
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune とエンド ユーザー アプリの UI の更新
 このリリースの Microsoft Intune でエンド ユーザーに表示されるアプリの UI に加えられた変更について説明します。 これは、ユーザーとの通信や、展開のサポートのために作成したカスタム ドキュメントの更新に役立ちます。 会社のポータルを使用してヘルプデスクにサポートを求める場合に、直面している問題のトラブルシューティングをより適切に行う方法を理解するのにも役立ちます。
 
+## <a name="week-of-august-21-2017"></a>2017 年 8 月 21 日の週
+
+### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Intune モバイル アプリケーション管理 (MAM) ダイアログ ボックスの現代的インターフェイス <!-- 1199015 -->
+
+Intune モバイル アプリケーション管理 (MAM) ダイアログ ボックスが現代的な外観に変更されます。 このダイアログ ボックスは、以前と同じように使用できます。
+
+**以前の操作性**
+
+![以前のインターフェイス](media\NewUI_Old_AttachFileHandler.jpg)
+
+**現代的な操作性**
+
+![現代的なインターフェイス](media\NewUI_Modern_AttachFileHandler.jpg)
+
+
 ## <a name="week-of-august-14-2017"></a>2017 年 8 月 14 日の週
 
-### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10"></a>Windows 10 のポータル サイト アプリの "デバイスの詳細" ページの更新
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Windows 10 のポータル サイト アプリの "デバイスの詳細" ページの更新 <!---1287448--->
 
 Windows 10 のポータル サイト アプリで、__[デバイスの詳細]__ ページで __[カテゴリ]__ タグがタイトルの下からプロパティに移動しました。
 
 ![Windows ポータル サイト アプリの "デバイスの詳細" 画面。"カテゴリ" フィールドが画面のタイトルのすぐ下ではなく、プロパティとして表示されています。](./media/cp_win10_category_tag_move_after_1708.png)
 
 ## <a name="week-of-july-31-2017"></a>2017 年 7 月 31 日の週
+
+### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>[アプリの詳細] ページでの Android デバイスの新しい情報の表示 <!--1287476-->
+
+Android 用のポータル サイト アプリのアプリの詳細ページに、IT 管理者がそのアプリに対して定義したアプリのカテゴリが表示されるようになります。
+
+![新しいアプリの詳細ポリシー](./media/cp_android_appdetails_after_1708.png)
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>すべてのプラットフォームでのポータル サイト アプリのサインイン操作の改善<!--User Story 1132123-->
 
@@ -115,7 +136,7 @@ Windows 10 用のポータル サイト アプリで、特定または登録さ�
 
 ![Windows 10 ポータル サイト アプリの "このデバイスに会社のアカウントを追加する" ページの画像。設定アプリに進み、"接続" を選択して登録を完了する必要があると伝えています。 その作業の後、ポータル サイト アプリに戻り、登録を完了する必要があることが伝えられます。](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
 
-![Windows 10 ポータル サイト アプリの "管理に登録する" 画面の画像。完了状態メッセージを確認できます。ユーザーのデバイスが登録されており、'次へ' ボタンをタップして続行するように伝えています。](./media/win10_guided_enroll_youre_now_enrolled_after_1706.png)
+![Windows 10 ポータル サイト アプリの "管理に登録する" 画面の画像。完了状態メッセージを確認できます。ユーザーのデバイスが登録されており、 '次へ' ボタンをタップして続行するように伝えています。](./media/win10_guided_enroll_youre_now_enrolled_after_1706.png)
 
 ![Windows 10 ポータル サイト アプリの完了画面の画像。すべて設定済みであり、デバイスに適切に追加された会社のアカウントでデバイスが登録されたことをユーザーに知らせています。](./media/win10_guided_enroll_youre_all_set_after_1706.png)
 
@@ -128,7 +149,7 @@ Android 用ポータル サイト アプリでは、ユーザーからのフィ�
 
 ## <a name="week-of-june-5-2017"></a>2017 年 6 月 5 日の週
 
-### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios"></a>iOS 用ポータル サイト アプリのアプリ タイルを改善
+### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>iOS 用ポータル サイト アプリのアプリ タイルを改善 <!--1230777-->
 ポータル サイトに設定したブランド カラーが反映されるよう、ホーム ページのアプリ タイルのデザインを一新しました。
 
 **更新前**
