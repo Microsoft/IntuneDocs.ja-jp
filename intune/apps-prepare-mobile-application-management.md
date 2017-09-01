@@ -14,29 +14,29 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e8b218ce38a7e76135a62b1155dbf9060ba511cc
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2394068c43e652accfb428ff644229f794d33f24
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
-# <a name="prepare-line-of-business-apps-for-mam"></a>基幹業務アプリを MAM 向けに準備する
+# <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>アプリ保護ポリシーを利用するために基幹業務アプリで準備を行う
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Intune アプリ ラッピング ツールまたは Intune App SDK のいずれかを使うと、アプリでモバイル アプリケーション管理 (MAM) ポリシーを使用することが可能です。 ここでは、これら 2 つの方法の内容と用途について説明します。
+Intune アプリ ラッピング ツールまたは Intune アプリ SDK のどちらかを使って、アプリでアプリ保護ポリシーを使えるようにできます。 ここでは、これら 2 つの方法の内容と用途について説明します。
 
 ## <a name="intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツール
-アプリ ラッピング ツールは、主として、内部基幹業務 (LOB) アプリケーションに使います。 このツールは、アプリのラッパーを作成するコマンド ライン アプリケーションです。このラッパーにより、アプリを Intune MAM ポリシーで管理できるようになります。
+アプリ ラッピング ツールは、主として、内部基幹業務 (LOB) アプリケーションに使います。 このツールは、アプリのラッパーを作成するコマンド ライン アプリケーションです。このラッパーにより、アプリを Intune アプリ保護ポリシーで管理できるようになります。
 
-このツールを使うためにソース コードは必要ありませんが、署名資格情報が必要です。  署名資格情報の詳細については、[Intune のブログ](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)を参照してください。 アプリ ラッピング ツールのドキュメントとしては、[Android アプリ ラッピング ツール](app-wrapper-prepare-android.md)と [iOS アプリ ラッピング ツール](app-wrapper-prepare-ios.md)をご覧ください。
+このツールを使うためにソース コードは必要ありませんが、署名資格情報が必要です。 署名資格情報の詳細については、[Intune のブログ](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)を参照してください。 アプリ ラッピング ツールのドキュメントとしては、[Android アプリ ラッピング ツール](app-wrapper-prepare-android.md)と [iOS アプリ ラッピング ツール](app-wrapper-prepare-ios.md)をご覧ください。
 
 アプリ ラッピング ツールは、Apple App Store または Google Play ストアのアプリを**サポートしていません**。 また、開発ツールの統合が必要な一部の機能もサポートしていません (次の機能比較表を参照してください)。
 
 
-Intune に登録されていないデバイスの MAM 用アプリ ラッピング ツールの詳細については、「[Microsoft Intune に登録されていないデバイスの基幹業務アプリとデータを保護する](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune)」を参照してください。
+Intune に登録されていないデバイスのアプリ保護ポリシー用アプリ ラッピング ツールの詳細については、「[Microsoft Intune に登録されていないデバイスの基幹業務アプリとデータを保護する](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune)」を参照してください。
 
-### <a name="reasons-to-use-the-app-wrapping-tool"></a>アプリ ラッピング ツールを使用する理由:
+### <a name="reasons-to-use-the-app-wrapping-tool"></a>アプリ ラッピング ツールを使用する理由
 * アプリに組み込みのデータ保護機能がない。
 * アプリが単純である。
 * アプリが内部的に展開される。
@@ -84,7 +84,7 @@ SDK の詳細については、「[概要](app-sdk.md)」を参照してくだ�
 |[Android、iTunes、iCloud のバックアップを禁止する]|○|○|
 |[アプリで他のアプリへのデータ転送を許可する]|○|○|
 |[アプリで他のアプリからのデータの受信を許可する]|○|○|
-|[切り取り、コピー、および他のアプリでの貼り付けを制限する]|○|○|
+|他のアプリとの間で切り取り、コピー、貼り付けを制限する|○|○|
 |[アクセスには簡易暗証番号が必要]|○|○|
 |[組み込みアプリ PIN を Intune PIN で置き換える]|○||
 |[PIN をリセットするまでの試行数を指定する]|○|○|
@@ -102,8 +102,10 @@ SDK の詳細については、「[概要](app-sdk.md)」を参照してくだ�
 |対象となるアプリケーションの構成 |○||
 |[マルチ ID アプリのサポート]|○||
 |カスタマイズ可能なスタイル |○|||
-### <a name="see-also"></a>関連項目
+## <a name="next-steps"></a>次のステップ
 
-[Android アプリ ラッピング ツール](app-wrapper-prepare-android.md)</br>
-[iOS アプリ ラッピング ツール](app-wrapper-prepare-ios.md)</br>
-[SDK を使用してモバイル アプリケーション管理に対応する](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+アプリ保護ポリシーと Intune の詳細については、次のトピックをご覧ください。
+
+  -  [Android アプリ ラッピング ツール](app-wrapper-prepare-android.md)</br>
+  - [iOS アプリ ラッピング ツール](app-wrapper-prepare-ios.md)</br>
+  - [SDK を使用してモバイル アプリケーション管理に対応する](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)

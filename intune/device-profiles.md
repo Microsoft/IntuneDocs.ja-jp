@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5288bfc3aebbd119b49ef5261944840fd863afa5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 95ce3b6a307a71431b9717abdc3980f15a916a18
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Microsoft Intune のデバイス プロファイルとは
 
@@ -74,7 +74,7 @@ Windows テスト アプリのオプションを構成できます。 これら�
 詳細については、[Windows 10 エディションのアップグレードを構成する方法](edition-upgrade-configure-windows-10.md)に関するページを参照してください。サポート対象: Windows 10 のみ。
 
 ## <a name="endpoint-protection"></a>Endpoint Protection
-この種類のプロファイルでは、Windows 10 デバイス用の BitLocker の設定を構成できます。
+この種類のプロファイルでは、Windows 10 デバイスの BitLocker と Windows Defender の設定を構成できます。
 詳細については、[Windows 10 での Endpoint Protection 設定](endpoint-protection-windows-10.md)に関するページを参照してください。サポート対象: Windows 10 のみ。
 
 ## <a name="windows-information-protection"></a>Windows 情報保護

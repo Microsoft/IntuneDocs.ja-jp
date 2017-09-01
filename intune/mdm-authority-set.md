@@ -6,20 +6,20 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
-ms.reviewer: dagerrit
+ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dfcd7b97848ed68edb4572429abc53a1cc8f8558
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: 4eb211fdeb8c51b67edc08f956c99c2af8319679
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="set-the-mobile-device-management-authority"></a>モバイル デバイス管理機関の設定
 
@@ -41,13 +41,13 @@ Configuration Manager 1610 以降のバージョンと Microsoft Intune バー�
 ## <a name="set-mdm-authority-to-intune"></a>MDM 機関を Intune に設定する
 
 1. [Azure Portal](https://portal.azure.com) で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-2. [Intune] ブレードで **[デバイスの登録]** を選択し、**[概要]** を選択します。
-![Intune のモバイル デバイス管理機関設定画面のスクリーンショット](media/set-mdm-auth.png)
-
+2. オレンジのバナーを選択し、**[モバイル デバイス管理機関]** 設定を開きます。
 3. **[モバイル デバイス管理機関]** で、次の選択肢から MDM 機関を選択します。
   - **Intune MDM 機関**
   - **Configuration Manager MDM 機関**
   - **なし**
+
+  ![Intune のモバイル デバイス管理機関設定画面のスクリーンショット](media/set-mdm-auth.png)
 
   MDM 機関が Intune に正しく設定されたことを示すメッセージが表示されます。
 

@@ -14,11 +14,11 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: robstackmsft
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 237e141eacb413eb130b17217116b6d0c7e085f8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d5db079d224f145336b5d3c9b9963f8a5f2c306a
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="common-ways-to-use-intune"></a>Intune の一般的な使用方法
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 07/01/2017
 
 Intune と Microsoft Enterprise Mobility + Security (EMS) は、Exchange Server 向けに独自の統合された[条件付きアクセス ソリューション](conditional-access.md) ([クラシック ポータル](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)) を提供しています。これにより、デバイスが Intune に登録されるまで、モバイル アプリは電子メールにアクセスできません。 このすべての処理は、別のゲートウェイ コンピューターを会社のネットワークのエッジに展開することなく完了できます。
 
-また、基幹業務アプリケーション サーバーのような、オンプレミス データへの安全なアクセスを必要とするモバイル アプリへのアクセスを有効にすることもできます。 通常、これを行うには、[Intune で管理されているアクセス制御に関する証明書](certificates-configure.md) ([クラシック ポータル](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)) と、境界内の標準の VPN ゲートウェイまたはプロキシ (Microsoft Azure Active Directory アプリケーション プロキシなど) を組み合わせて使用します。  
+また、基幹業務アプリケーション サーバーのような、オンプレミス データへの安全なアクセスを必要とするモバイル アプリへのアクセスを有効にすることもできます。 通常、これを行うには、[Intune で管理されているアクセス制御に関する証明書](certificates-configure.md) ([クラシック ポータル](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)) と、境界内の標準の VPN ゲートウェイまたはプロキシ (Microsoft Azure Active Directory アプリケーション プロキシなど) を組み合わせて使用します。 
 
 このようなケースで企業のデータにアクセスする唯一の方法は、デバイスを管理システムに登録することです。 デバイスが登録されると、管理システムでポリシーに準拠していることが確認されてから、デバイスが会社のデータにアクセスできるようになります。 さらに、Intune の[アプリ ラッピング ツールと App SDK](apps-prepare-mobile-application-management.md) は、アクセスされるデータを基幹業務アプリケーション内に保持することで、コンシューマー向けのアプリケーションやサービスに会社のデータを渡せないようにします。
 
@@ -75,7 +75,7 @@ Office 365 の一般的な展開方法では、デバイスを企業のアプリ
 
 デバイスの登録が現実的でない場合のために、Intune には単に[企業データを含むアプリケーションを管理する](app-protection-policies.md) ([クラシック ポータル](/intune-classic/deploy-use/protect-apps-and-data-with-microsoft-intune)) だけの BYOD アプローチも用意されています。 Intune は、Office モバイル アプリのようにアプリが会社と個人の両方のデータにアクセスする場合でも、会社のデータを保護することができます。  
 
-この場合、管理者は Office モバイル アプリから Office 365 にアクセスするようユーザーに要求し、データを保護するポリシー (暗号化、PIN による保護など) を使用してアプリを構成する必要があります。 これらのポリシーにより、管理対象外のアプリとストレージの場所 (アプリの内外を問わず) へのデータ損失を防ぎます。 たとえば、どちらも Outlook Mobile 内で構成されたプロファイルであっても、会社の電子メール プロファイルからコンシューマー向けの電子メール プロファイルにテキストがコピーされないようにします。 同様の構成は、BYOD ユーザーに必要な他のサービスやアプリケーションにも展開できます。
+この場合、管理者は Office モバイル アプリから Office 365 にアクセスするようユーザーに要求し、データを保護するポリシー (暗号化、PIN による保護など) を使用してアプリを構成する必要があります。 これらのアプリ保護ポリシーにより、管理対象外のアプリとストレージの場所 (アプリの内外を問わず) へのデータ損失を防ぎます。 たとえば、どちらも Outlook Mobile 内で構成されたプロファイルであっても、会社の電子メール プロファイルからコンシューマー向けの電子メール プロファイルにテキストがコピーされないようにします。 同様の構成は、BYOD ユーザーに必要な他のサービスやアプリケーションにも展開できます。
 
 <!-- Learn more about how to plan and deploy Intune to support BYOD.-->
 

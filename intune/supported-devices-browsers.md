@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/07/2017
+ms.date: 06/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: df9c4c0a0a23740bf9df4c13e34b8752838aa99a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f862129d73c83e078d8b29201f1d92b9b65aa609
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="supported-devices-and-browsers"></a>サポートされるデバイスとブラウザー
 
@@ -65,7 +65,7 @@ Intune ポータルでは、次のブラウザーがサポートされていま�
 
 ### <a name="intune-classic-portal"></a>Intune クラシック ポータル
 
-Intune PC ソフトウェア クライアントや Mobile Threat Defense パートナーとの統合といった Intune クラシック専用機能は、Intune クラシック ポータル (https://manage.microsoft.com) でのみ利用可能です。 Intune クラシック コンソールには、Silverlight のブラウザー サポートが必要です。
+Intune PC ソフトウェア クライアントや Mobile Threat Defense パートナーとの統合といった Intune クラシック専用機能は、Intune クラシック ポータル (https://manage.microsoft.com) でのみ利用可能です。 Intune クラシック ポータルには、Silverlight のブラウザー サポートが必要です。
 
 次の Silverlight ブラウザーは、Intune クラシック コンソールをサポートしています。
 - Internet Explorer 10 以降
@@ -74,6 +74,5 @@ Intune PC ソフトウェア クライアントや Mobile Threat Defense パー�
 
 > [!Note]
 > Intune クラシック コンソールで Microsoft Edge とモバイル ブラウザーがサポートされないのは、[Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx) がサポートされていないためです。
-
 
 このポータルには、サービス管理者のアクセス許可を持つユーザーまたは全体管理者の役割を持つテナント管理者のみがサインインできます。 管理コンソールにアクセスするには、アカウントに Intune を使用するライセンスがあり、サインイン状態が**許可済み**になっている必要があります。

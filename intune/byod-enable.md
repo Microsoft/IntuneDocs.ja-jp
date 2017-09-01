@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 0d05918a62549559a186376d99e28c952af16b9c
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: fa70e21b9e9f7adfc508e24bd442a48c834ed7db
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="enable-byod-with-intune"></a>Intune で BYOD を有効にする
 
@@ -44,22 +44,22 @@ ms.lasthandoff: 08/08/2017
 
 Intune サービスを準備した後は、管理するさまざまなデバイス種類のさまざまな登録要件を満たす必要があります。 デバイスを管理対象として登録する手順は簡単ですが、デバイスの種類によって若干の違いがあります。
 
--   **iOS および Mac デバイス** iPad、iPhone、または MacOS デバイスを登録するには、[Apple MDM プッシュ証明書を取得する](apple-mdm-push-certificate-get.md)必要があります。 MDM プッシュ証明書を Intune にアップロードすると、ポータル サイト アプリを使用して [iOS デバイスを登録](/intune-user-help/enroll-your-device-in-intune-ios)したり、ポータル Web サイトを使用して [MacOS デバイスを登録](/intune-user-help/enroll-your-device-in-intune-macos)したりできます。
+-   **iOS および Mac デバイス** iPad、iPhone、または macOS デバイスを登録するには、[Apple MDM プッシュ証明書を取得する](apple-mdm-push-certificate-get.md)必要があります。 MDM プッシュ証明書を Intune にアップロードすると、ポータル サイト アプリを使用して [iOS デバイスを登録](/intune-user-help/enroll-your-device-in-intune-ios)したり、ポータル Web サイトを使用して [macOS デバイスを登録](/intune-user-help/enroll-your-device-in-intune-macos)したりできます。
 
 -   **Android デバイス** Android デバイスは、事前準備の必要なく Intune サービスに登録できます。 ユーザーは、Google Play からポータル サイト アプリを入手して、管理対象として [Android デバイスを登録](/intune-user-help/enroll-your-device-in-intune-android)できます。
 
--   **Windows Phone および PC** 追加構成で Windows デバイスを登録することができます。 ユーザーのエクスペリエンスを簡略化するために、Azure Active Directory (AD) Premium で Windows 10 モバイル デバイスと Windows 10 PC の自動登録を有効にすることができます。 Azure AD Premium がないか、Windows 8.1 をサポートする必要がある場合は、[登録サーバーの DNS エイリアス](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium)を作成すると登録が容易になります。
+-   **Windows Phone および PC** 追加構成で Windows デバイスを登録することができます。 エンド ユーザーのエクスペリエンスを簡略化するために、Azure Active Directory (AD) Premium で Windows 10 モバイル デバイスと Windows 10 PC の自動登録を有効にすることができます。 Azure AD Premium がないか、Windows 8.1 をサポートする必要がある場合は、[登録サーバーの DNS エイリアス](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium)を作成すると登録が容易になります。
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>管理対象のデバイスが基本的なセキュリティ要件を満たしていることを確認する
 
 ユーザーがデバイスを管理対象として登録したら、IT チームは会社のアプリおよびデータへのアクセスに使用されているデバイスが、基本的なセキュリティ要件を満たしていることを確認する必要があります。 これらのルールには、PIN を使用するデバイスへのアクセスと、デバイスに格納されているデータの暗号化に関するものが含まれる場合があります。 このような一連のルールは、[コンプライアンス ポリシー](device-compliance.md)と呼ばれます。
 
-ユーザーに[コンプライアンス ポリシーを展開する](device-compliance-get-started.md)と、Intune で管理されているデバイスはすべて、BYOD ポリシーの一部として定義した基本的なセキュリティ要件を満たしているかどうかについて確認されます。 デバイスのポリシー コンプライアンスの評価が終了すると、その結果が Intune に報告されます。 場合によっては、ユーザーは PIN やデバイスの暗号化などの設定の修正を求められる場合があります。 それ以外の場合、ポータル サイト アプリは単に、ポリシーを満たしていない設定をユーザーに通知します。
+ユーザーに[コンプライアンス ポリシーを展開する](device-compliance-get-started.md)と、Intune は、ユーザーが Intune で管理している各デバイスをチェックし、BYOD ポリシーの一環として定義した基本セキュリティ要件をデバイスが満たしているか確認します。 デバイスのポリシー コンプライアンスの評価が終了すると、その結果が Intune に報告されます。 場合によっては、ユーザーは PIN やデバイスの暗号化などの設定の修正を求められる場合があります。 それ以外の場合、ポータル サイト アプリは単に、ポリシーを満たしていない設定をユーザーに通知します。
 
 ## <a name="provide-access-to-company-resources"></a>会社のリソースへのアクセスを提供する
 
-多くの従業員は、自分のモバイル デバイスから、まず会社の電子メールやドキュメントにアクセスしたいと考えます。 また、その際は、複雑な手順を踏んだり、ヘルプ デスクに問い合わせたりすることなく済ませたいと考えます。 Intune では、モバイル デバイスにプレインストールされたネイティブ メール アプリの[メール設定を簡単に作成して展開する](email-settings-configure.md)ことができます。
+ほとんどの社員が自分のモバイル デバイスで最初にアクセスするものは、会社のメールと文書です。 その際は、複雑な手順を踏んだり、ヘルプ デスクに問い合わせたりすることなく済ませたいと考えます。 Intune では、モバイル デバイスにプレインストールされたネイティブ メール アプリの[メール設定を簡単に作成して展開する](email-settings-configure.md)ことができます。
 
 
 > [!NOTE]
@@ -86,7 +86,7 @@ Intune では、iOS アプリ ストアとビジネス向け Microsoft ストア
 
 ## <a name="protect-company-data"></a>会社のデータを保護する
 
-Intune は、複数のテクノロジ層を介して会社のデータを保護します。 ID 層では、条件付きアクセスがサービスへのアクセスを保護します。 条件付きアクセスは、管理された準拠デバイスのみに、会社リソースへのアクセスを許可します。 クライアント アプリケーション層では、モバイル アプリケーション管理 (MAM) がデータの損失を保護します。  アプリ保護ポリシーは、保護されていないアプリまたは保存場所にデータが移動されるのを防ぎます。 また、これらのポリシーでは、デバイスの紛失または盗難が発生したときに会社のデータをワイプすることもできます。
+Intune は、複数のテクノロジ層を介して会社のデータを保護します。 ID 層では、条件付きアクセスがサービスへのアクセスを保護します。 条件付きアクセスは、管理された準拠デバイスのみに、会社リソースへのアクセスを許可します。 クライアント アプリ層で、アプリ保護ポリシーがデータを損失から守ります。 アプリ保護ポリシーは、保護されていないアプリまたは保存場所にデータが移動されるのを防ぎます。 また、これらのポリシーでは、デバイスの紛失または盗難が発生したときに会社のデータをワイプすることもできます。
 
 ### <a name="enforce-conditional-access-to-company-resources"></a>会社リソースに対する条件付きアクセスを適用する
 
@@ -97,17 +97,17 @@ third link was (https://docs.microsoft.com/intune/deploy-use/restrict-access-to-
 > [!IMPORTANT]
 > コンプライアンスを検証するコンプライアンス ポリシーがないと、条件付きアクセス ポリシーは機能しません。
 
-### <a name="prevent-data-loss-of-company-data-with-application-protection-policies"></a>アプリケーション保護ポリシーで会社のデータの損失を防止する
+### <a name="prevent-data-loss-of-company-data-with-app-protection-policies"></a>アプリ保護ポリシーで会社データの損失を防止する
 
-Intune のアプリケーション保護ポリシーでは、デバイスの登録の有無に関係なくデータへのアクセス方法を選択できます。 この多用途性により、ユーザーが Intune に自分のデバイスを登録していない場合でも会社のデータを保護することができ、ユーザーは会社のデータに安全にアクセスできます。
+Intune のアプリ保護ポリシーでは、デバイスの登録の有無に関係なくデータへのアクセス方法を選択できます。 この多用途性により、ユーザーが Intune に自分のデバイスを登録していない場合でも会社のデータを保護することができ、ユーザーは会社のデータに安全にアクセスできます。
 
-[Intune のアプリ保護ポリシー](app-protection-policies.md)を使用すると、ユーザーが iOS および Android デバイスでアクセスする会社のデータを保護できます。 これらのアプリレベル ポリシーを使うと、デバイス自体が Intune で管理されていなくても、従業員が会社のデータをどのように使用および共有するかを制御できます。
+[Intune のアプリ保護ポリシー](app-protection-policies.md)を使用すると、iOS や Android デバイスでアクセスする会社のデータを保護できます。 これらのアプリレベル ポリシーを使うと、デバイス自体が Intune で管理されていなくても、従業員が会社のデータをどのように使用および共有するかを制御できます。
 
-[Windows 情報保護 (WIP) ポリシー](app-protection-policies-configure-windows-10.md)を使用すれば、管理対象の Windows 10 デバイスにも適用できます。 これらのポリシーは、従業員のエクスペリエンスを妨げることなく動作します。 ネットワーク環境や他のアプリを変更する必要はありません。
+[Windows 情報保護 (WIP)](app-protection-policies-configure-windows-10.md) を使用すれば、管理対象の Windows 10 デバイスにも適用できます。 これらのポリシーは、従業員のエクスペリエンスを妨げることなく動作します。 ネットワーク環境や他のアプリを変更する必要はありません。
 
 ### <a name="remove-company-data-while-leaving-personal-data-intact"></a>個人データを保持しながら会社のデータを削除する
 
-仕事でデバイスを使用しなくなった場合や別の用途に使用することになった場合、あるいは単に紛失してしまった場合には、デバイスから会社のアプリやデータを削除できます。 この操作を行うには、Intune の会社データの削除および工場出荷時のリセット機能を使用することができます。 ユーザーは、デバイスが Intune に登録されている場合、Intune ポータル サイトからリモートで個人所有デバイスをリセットすることもできます。
+仕事でデバイスを使用しなくなった場合や別の用途に使用することになった場合、あるいは紛失してしまった場合には、デバイスから会社のアプリやデータを削除できます。 この操作を行うには、Intune の会社データの削除および工場出荷時のリセット機能を使用することができます。 ユーザーは、デバイスが Intune に登録されている場合、Intune ポータル サイトからリモートで個人所有デバイスをリセットすることもできます。
 
 [工場出荷時のリセット](devices-wipe.md)は、デバイスを工場出荷時の既定設定に戻し、ユーザーのデータと設定を削除し、Intune 管理からデバイスを削除します。 [会社データの削除](devices-wipe.md#remove-company-data)は、デバイスから会社のデータのみを削除し、ユーザーの個人データはそのまま残します。
 
