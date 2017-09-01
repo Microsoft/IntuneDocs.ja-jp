@@ -94,6 +94,7 @@
 ### [Intune のクライアント PC のアプリを追加する](deploy-use/add-apps-for-windows-pcs-in-microsoft-intune.md)
 #### [ライセンス契約の管理](deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ### [ポリシーの競合の解決](deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts.md)
+### [アラートの管理](deploy-use/get-notified-by-alerts.md)
 ## デバイスの構成
 ### [ポリシーを使用したデバイスの設定と機能の管理](deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 #### [iOS の設定](deploy-use/ios-policy-settings-in-microsoft-intune.md)
