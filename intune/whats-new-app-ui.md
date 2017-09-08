@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,35 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6db9bc7a3bafd61d03513ea1b6e1f0246faaab57
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: c5f6c5a4f5d76845c435ce979068988807120769
+ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/01/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune とエンド ユーザー アプリの UI の更新
 このリリースの Microsoft Intune でエンド ユーザーに表示されるアプリの UI に加えられた変更について説明します。 これは、ユーザーとの通信や、展開のサポートのために作成したカスタム ドキュメントの更新に役立ちます。 会社のポータルを使用してヘルプデスクにサポートを求める場合に、直面している問題のトラブルシューティングをより適切に行う方法を理解するのにも役立ちます。
+
+## <a name="week-of-august-28-2017"></a>2017 年 8 月 28 日の週
+
+
+### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 のメール アプリが OAuth をサポート <!---1196951--->
+
+Intune での条件付きアクセスで、OAuth を使用した iOS デバイスのより安全な認証がサポートされます。 これをサポートし、より安全な認証を可能にするため、iOS のポータル サイト アプリに異なるフローが生成されます。 エンドユーザーがメール アプリで新しい Exchange アカウントにサインインしようとすると、Web ビューのプロンプトが表示されます。 Intune に登録すると、ネイティブのメール アプリによる証明書へのアクセスを許可するプロンプトがユーザーに表示されます。 ほとんどのエンドユーザーにはそれ以上の検疫済みメールは表示されません。 既存のメール アカウントは引き続き基本認証プロトコルを使用するため、これに該当するユーザーには検疫済みメールが配信されます。 このエンド ユーザー向けサインイン エクスペリエンスは Office モバイル アプリの場合と似ています。
+
+![ネイティブ メール アプリでアカウントの種類を選択します。](./media/ios-11-ca-email-after-1708-01.png)
+
+![Exchange を選択すると、iOS デバイスのプロンプトで電子メール アドレスとアカウント名が求められます。](./media/ios-11-ca-email-after-1708-02.png)
+
+![電子メール アドレスとアカウント名を入力します。](./media/ios-11-ca-email-after-1708-03.png)
+
+![Microsoft の外部ログイン ページに移動します。](./media/ios-11-ca-email-after-1708-04.png)
+
+![Microsoft のページでパスワードを入力します。](./media/ios-11-ca-email-after-1708-05.png)
+
+![Microsoft からユーザーに管理するデバイスを登録するように求められます。](./media/ios-11-ca-email-after-1708-06.png)
+
+![ユーザーはポータル Web サイトから登録するように求められます。](./media/ios-11-ca-email-after-1708-07.png)
 
 ## <a name="week-of-august-21-2017"></a>2017 年 8 月 21 日の週
 
@@ -31,11 +52,11 @@ Intune モバイル アプリケーション管理 (MAM) ダイアログ ボッ�
 
 **以前の操作性**
 
-![以前のインターフェイス](media\NewUI_Old_AttachFileHandler.jpg)
+![以前のインターフェイス](./media/NewUI_Old_AttachFileHandler.jpg)
 
 **現代的な操作性**
 
-![現代的なインターフェイス](media\NewUI_Modern_AttachFileHandler.jpg)
+![現代的なインターフェイス](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
 ## <a name="week-of-august-14-2017"></a>2017 年 8 月 14 日の週
