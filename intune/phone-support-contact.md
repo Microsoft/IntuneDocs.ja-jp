@@ -1,6 +1,6 @@
 ---
 title: "Intune サポートの電話番号に問い合わせる"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Microsoft Intune ヘルプの電話番号。\""
 keywords: "営業時間"
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 1326e65e-56cc-4987-9006-3a788597ca19
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a261e01b81e3ad1caa7d8b780a79004dfbbe6ecd
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 197d9b46724bcbdcf53d322f744d903ade1674f2
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Microsoft Intune のサポートの電話番号
 

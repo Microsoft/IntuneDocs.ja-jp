@@ -1,6 +1,6 @@
 ---
 title: "アプリから会社のデータのみをワイプする方法"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Microsoft Intune でアプリを選択的にワイプする方法について説明します。\""
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bfebc391997ac4e63466eb3a09044318cf807dbc
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9aeb3525016bf820dc23402659c2c953143385c9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Intune で管理されているアプリから会社のデータをワイプする方法
 

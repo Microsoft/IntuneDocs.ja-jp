@@ -1,6 +1,6 @@
 ---
 title: "Intune デバイス機能設定の構成"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Intune を使用して管理対象デバイスの機能を構成する方法について説明します。\""
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f286119019bb26d8851c766a9d88ad818d7e600b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0a223d31a4c2a2f9d78d06afa5a2665d99f331dd
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-configure-device-feature-settings-in-microsoft-intune"></a>Microsoft Intune でデバイスの機能設定を構成する方法
 
