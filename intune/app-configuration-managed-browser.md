@@ -1,6 +1,6 @@
 ---
 title: "Managed Browser アプリで Web アクセスを管理する"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Managed Browser アプリケーションを展開して、Web 閲覧と他のアプリケーションへの Web データ転送を制限します。"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b87857425a40beb9fc07a78ab144f5b14a4d7c8e
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: 4f8534b51c89cd8dedc674468c5299b79a29f608
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune で Managed Browser ポリシーを使ってインターネット アクセスを管理する
 
@@ -113,7 +113,7 @@ Outlook は、アプリ保護ポリシーの [**Managed Browser に表示する 
 
 ## <a name="how-to-configure-the-homepage-for-the-managed-browser"></a>Managed Browser のホームページを構成する方法
 
-この設定では、ユーザーが Managed Browser を開始するか、新しいタブを作成したときに表示するホームページを構成することができます。 Managed Browser アプリの構成を作成する手順に従い、以下のキーと値のペアを指定します。
+この設定では、ユーザーが Managed Browser を開始するか、新しいタブを作成したときに表示するホームページを構成することができます。Managed Browser アプリの構成を作成する手順に従い、以下のキーと値のペアを指定します。
 
 |||
 |-|-|

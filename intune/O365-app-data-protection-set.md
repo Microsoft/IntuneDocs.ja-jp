@@ -1,6 +1,6 @@
 ---
 title: "Intune で Office 365 アプリの基本的なデータ管理を設定する"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Office 365 アプリの管理ウィザードのサポート ドキュメント。\""
 keywords: 
 author: lindavr
@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d21b6a03cdc8094bc8da3cecd5331b3f11400302
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b818152d2172ccf85a8323ba3ff70a0b270d20df
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>管理対象の Office 365 アプリの基本的な保護に関するユーザー エクスペリエンス
 
@@ -124,7 +124,7 @@ Android の場合、Intune アプリ保護ポリシーに関連付けられて�
 これらのポリシー設定は、組織の要件に合わせていつでも編集できます。
 
 ### <a name="how-can-i-view-and-edit-the-policies-created-by-the-wizard"></a>ウィザードで作成したポリシーを表示および編集するにはどうすればよいですか。
-これらのポリシーや、Intune Azure Portal で作成したポリシーを表示または更新するには、ダッシュボードで **[アプリの管理]**  >  **[アプリ保護ポリシー]** の順に選択します。 右側にポリシーの一覧が開きます。 設定を表示および編集するポリシーを選択します。 <br/>
+これらのポリシーや、Intune Azure Portal で作成したポリシーを表示または更新するには、ダッシュボードで **[アプリの管理] ** > ** [アプリ保護ポリシー]** の順に選択します。 右側にポリシーの一覧が開きます。 設定を表示および編集するポリシーを選択します。 <br/>
 ![ポリシーを表示するユーザー インターフェイス パスの画像](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>次のステップ

@@ -1,6 +1,6 @@
 ---
 title: "Intune の用語集"
-titleSuffix: 
+titleSuffix: Azure portal
 description: "Microsoft Intune で使用される用語について説明します"
 keywords: 
 author: robstackmsft
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: 2df6c8c79954c2145ffa6eb33782cee690d78b1d
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 8eaf82e995e3b572d897b63aaf36480424603ce6
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune の用語集
 
@@ -86,7 +86,7 @@ ms.lasthandoff: 08/03/2017
 ## <a name="i"></a>I
 |||
 |-|-|
-|Intune ポータル|ほとんどの Intune 管理操作に使用できる Azure Portal です。|
+|Azure ポータル|ほとんどの Intune 管理操作に使用できる Azure Portal です。|
 |Intune ソフトウェア クライアント|[一部の Windows PC を管理](/intune-classic/get-started/choose-how-to-manage-devices) する代替手段です。使用する方法を決定する場合に役に立ちます。|
 |Intune ソフトウェア パブリッシャー|[展開するアプリを定義してクラウドの記憶域スペースにアップロードする](/intune-classic/deploy-use/add-apps)ために使用するツールです。|
 |インベントリ|管理対象デバイスの[ハードウェアとインストールされているソフトウェア](/intune/device-inventory)を表示するために使用します。|

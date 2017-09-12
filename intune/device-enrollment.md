@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Intune デバイスの登録とは"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "iOS、Android、Windows デバイスの登録について説明します。\""
 keywords: 
 author: nathbarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 927e2f21aad4ff39c9351bef68eb510e93410c37
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: dda7108aedcc4d3878fe3743ee0b88b26fabbe6f
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="what-is-device-enrollment"></a>デバイス登録とは
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]

@@ -1,10 +1,10 @@
 ---
 title: "Intune の概要"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "簡単な一連の実地演習をこなし、Intune について学習します。"
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/16/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 6bfab644-c1e2-4154-a254-e95b9a1d75f2
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5dc7a76ddac12dd3e002c8780541d3dd4e976896
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: abfd1c1a05ce0eac3e6ab835d6ac8b017c9a6d77
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Intune が会社のためにできることとは。
 
@@ -27,7 +27,7 @@ Intune はクラウドベースのエンタープライズ モビリティ管理
 
 ![Microsoft Intune の概要的アーキテクチャ図](/intune/media/intunearchitecture.svg)
 
-モバイル デバイスの管理は大変な仕事になりうると理解されています。会社のためにさまざまな決定を行う必要があるためです。 以下の演習ではいくつかの作業を行い、Intune で会社のリソースを守る方法について理解します。 
+モバイル デバイスの管理は大変な仕事になりうると理解されています。会社のためにさまざまな決定を行う必要があるためです。 以下の演習ではいくつかの作業を行い、Intune で会社のリソースを守る方法について理解します。
 
 ## <a name="what-are-the-exercises"></a>演習の内容
 

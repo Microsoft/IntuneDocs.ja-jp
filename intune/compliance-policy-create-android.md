@@ -1,6 +1,6 @@
 ---
 title: "Android 用のコンプライアンス ポリシーの作成方法"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Android デバイス用のコンプライアンス ポリシーの作成方法について説明します。\""
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cc68bf4a52e5fcf9a8fbb3550a5bee814f4f46f0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 64e16233a9acb021c0a50b32f3eb750125eb0638
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Intune で Android デバイス用のデバイス コンプライアンス ポリシーを作成する方法
 
@@ -101,7 +101,7 @@ ms.lasthandoff: 07/01/2017
 ## <a name="device-property-settings"></a>デバイスのプロパティの設定
 
 - **[必要な最小 OS バージョン]**: デバイスが最小 OS バージョンの要件を満たしていない場合、非準拠として報告されます。 アップグレード方法に関する情報のリンクが表示されます。 ユーザーは、デバイスのアップグレードを行うことを選択できます。アップグレード後は、会社のリソースにアクセスできます。
-- **[許可される最大 OS バージョン]**: ルールに指定された OS バージョンより新しいバージョンの OS がデバイスで使用されている場合、会社のリソースへのアクセスがブロックされ、IT 管理者に問い合わせることをユーザーに促すメッセージが表示されます。 対象の OS バージョンを許可するようにルールが変更されるまで、このデバイスを使用して会社のリソースへのアクセスすることはできません。
+- **[許可される最大 OS バージョン]**: ルールに指定された OS バージョンより新しいバージョンの OS がデバイスで使用されている場合、会社のリソースへのアクセスがブロックされ、IT 管理者に問い合わせることをユーザーに促すメッセージが表示されます。対象の OS バージョンを許可するようにルールが変更されるまで、このデバイスを使用して会社のリソースへのアクセスすることはできません。
 
 ## <a name="how-non-compliant-settings-work-with-conditional-access-policies"></a>条件付きアクセス ポリシーを使用したコンプライアンス非対応設定の機能
 

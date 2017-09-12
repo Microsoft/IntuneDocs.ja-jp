@@ -1,6 +1,6 @@
 ---
 title: "アプリ保護ポリシーを確認する"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "このトピックでは、アプリ保護ポリシーが正しく設定され、想定通りに機能するかどうかをテストおよび検証する方法について説明します。\""
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 28fcd15d2d2e11e4aa2ba6982fc3cb8567e56a31
-ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
+ms.openlocfilehash: 0c97fbbffa416dce6b9aa8f56ecda7c265f377db
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>アプリ保護ポリシーの設定を検証する方法
 

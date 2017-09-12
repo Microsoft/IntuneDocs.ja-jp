@@ -1,6 +1,6 @@
 ---
 title: "Intune ポリシーによる Samsung KNOX 用アプリの許可/禁止"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "カスタム プロファイルを作成して、Samsung KNOX Standard デバイス用のアプリを許可またはブロックします。\""
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5403c8b81caf84a0c7d4bd126a0903ac3122539
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: acb7ae72c8b81e06a9974f2a1c6f084c565bee82
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Microsoft Intune でカスタム ポリシーを使用して Samsung KNOX Standard デバイス用のアプリを許可またはブロックする
 
@@ -51,14 +51,14 @@ ms.lasthandoff: 08/03/2017
 - **[説明]** - "実行されないようにブロックされているアプリの一覧" のような説明 (省略可能) を入力します。
 -   **[データ型]** - ドロップダウン リストで **[文字列]** を選択します。
 -   **[OMA-URI]** - 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**」と入力します
--   **[値]** - ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,** **|** を使用できます。 (例: package1;package2;)
+-   **[値]** - ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : , ****|** を使用できます。 (例: package1;package2;)
 
 ### <a name="for-a-list-of-apps-that-users-are-allowed-to-install-from-the-google-play-store-while-excluding-all-other-apps"></a>他のすべてのアプリの実行中にユーザーが Google Play ストアからインストールできるアプリの一覧の場合:
 - **[名前]** - 「**AllowInstallPackages**」と入力します。
 - **[説明]**: "ユーザーが Google Play からインストールできるアプリの一覧" のような説明 (省略可能) を入力します。
 - **[データ型]** - ドロップダウン リストで **[文字列]** を選択します。
 - **[OMA-URI]** - 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**」と入力します
-- **[値]** - 許可するアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,** **|** を使用できます。 (例: package1;package2;)
+- **[値]** - 許可するアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : , ****|** を使用できます。 (例: package1;package2;)
 
 4. **[OK]** をクリックし、**[プロファイルを作成します]** ブレードで **[作成]** を選択します。
 

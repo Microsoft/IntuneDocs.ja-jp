@@ -1,6 +1,6 @@
 ---
 title: "Intune を使用してデバイスを同期する"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "デバイスを Intune と同期して最新のポリシーとアクションを取得する方法を説明します。\""
 keywords: 
 author: robstackmsft
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 870eb3bf255cda92952a908596485d7b53259fb4
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+ms.openlocfilehash: 3906b567935f026202ccf0e81424a1bb36e376ef
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>デバイスを Intune と同期して最新のポリシーとアクションを取得する
 

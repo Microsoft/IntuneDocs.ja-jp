@@ -1,6 +1,6 @@
 ---
 title: "macOS 用のコンプライアンス ポリシーの作成方法"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "macOS デバイス用のコンプライアンス ポリシーの作成方法について説明します。"
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 55fa980c79ed178649562189dfe8fb704e26fcd9
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 0c6e3c3f8e31d9ac6d42c3a2c519836dee186f0b
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-preview-with-intune"></a>Intune で macOS デバイス (プレビュー) 用のデバイス コンプライアンス ポリシーを作成する
 
@@ -76,7 +76,7 @@ Intune に準拠したデバイスを作成するときに、選択できるさ�
 
 - **最小 OS バージョン**: デバイスが最小 OS バージョンの要件を満たしていない場合、非準拠として報告されます。 アップグレード方法に関する情報のリンクが表示されます。 ユーザーは、そのデバイスのアップグレードを行うことを選択できます。 その後、会社のリソースにアクセスできます。
 
-- **最大 OS バージョン**: ルールに指定された OS バージョンより新しいバージョンの OS がデバイスで使用されている場合、会社のリソースへのアクセスがブロックされ、IT 管理者に問い合わせることをユーザーに促すメッセージが表示されます。 対象の OS バージョンを許可するようにルールが変更されるまで、このデバイスを使用して会社のリソースへのアクセスすることはできません。
+- **最大 OS バージョン**: ルールに指定された OS バージョンより新しいバージョンの OS がデバイスで使用されている場合、会社のリソースへのアクセスがブロックされ、IT 管理者に問い合わせることをユーザーに促すメッセージが表示されます。対象の OS バージョンを許可するようにルールが変更されるまで、このデバイスを使用して会社のリソースへのアクセスすることはできません。
 
 ### <a name="system-security-settings"></a>システム セキュリティ設定
 

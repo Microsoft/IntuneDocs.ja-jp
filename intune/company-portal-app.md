@@ -1,6 +1,6 @@
 ---
 title: "ポータル サイト アプリを構成する方法"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "会社固有のブランドを Intune ポータル サイト アプリに適用する方法について説明します。 \""
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 118e842c40574a0858f6b8071fd9c0c8db5cb3a3
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 303d4a4cbce9d63abc0809a27ae1e22dcd1e195b
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune ポータル サイト アプリを構成する方法
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 08/15/2017
 
 |フィールド名|最大長|詳細情報|        
 |-|-|-|     
-|**サポート Web サイトの URL**|150|ユーザーが使用するサポート Web サイトがある場合、その URL を指定します。 URL は、**https://www.contoso.com** という形式にする必要があります。 URL を指定しない場合、ポータル サイトの **[IT に連絡]** ページのサポート Web サイトには何も表示されません。|        
+|**サポート Web サイトの URL**|150|ユーザーが使用するサポート Web サイトがある場合、その URL を指定します。 URL は、**https://www.contoso.com** という形式にする必要があります。URL を指定しない場合、ポータル サイトの **[IT に連絡]** ページのサポート Web サイトには何も表示されません。|        
 |**サポート Web サイトの名前**|40|サポート Web サイトの URL に表示されるフレンドリ名です。 サポート Web サイトの URL を指定し、フレンドリ名を指定しない場合、ポータル サイトの **[IT に連絡]** ページに [IT Web サイトに移動する] が表示されます。       
 
 ## <a name="company-branding-customization"></a>会社のブランドのカスタマイズ       

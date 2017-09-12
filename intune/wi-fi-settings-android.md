@@ -1,6 +1,6 @@
 ---
 title: "Android デバイス向けの Intune Wi-Fi 設定"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Intune での Android デバイスと Android for Work デバイスの Wi-fi 接続設定の構成について説明します。\""
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: 103e17a4-2993-4359-b340-73e2acf4cf7d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8e1c64730dc8bb91a0fe5e7936ed963d67be1feb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f54dbec7502ea09180030d00902f729161b64157
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="wi-fi-settings-for-android-and-android-for-work-devices-in-microsoft-intune"></a>Microsoft Intune での Android デバイスと Android for Work デバイスの Wi-fi 設定
 
