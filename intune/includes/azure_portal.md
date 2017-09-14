@@ -1,4 +1,4 @@
-|適用対象: Azure での Intune |
+|適用先: Azure Portal での Intune |
 |--|
-|クラシック コンソールで Intune に関するドキュメントをお探しですか。 [こちら](/intune/introduction-intune?toc=/intune-classic/toc.json)をご覧ください。|
+|クラシック ポータルで Intune に関するドキュメントをお探しですか。 [こちらを検索してください](/intune/introduction-intune?toc=/intune-classic/toc.json)。|
 | |

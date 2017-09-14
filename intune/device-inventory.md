@@ -1,12 +1,12 @@
 ---
 title: "Intune デバイス インベントリの表示"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Intune で管理するデバイスを表示して、ハードウェアとインストールされているアプリを把握する方法について説明します。\""
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 09/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3618c5ee0b4a7ff0e7b6a4d6ed58f77a2af0ba66
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: 45ef07d68248ab4c0c6f3a3e6e8da83cb210c5c7
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-view-intune-device-inventory"></a>Intune デバイス インベントリを表示する方法
 
@@ -54,3 +54,4 @@ ms.lasthandoff: 07/12/2017
 
 >[!NOTE]
 > Intune は会社所有のデバイスでのみアプリのインベントリを収集します。 個人のデバイスではアプリがインベントリされません。 Windows 10 の PC の場合、最新のアプリのインベントリのみが会社所有のデバイスで収集されます。 Intune は、デバイス上の Win32 アプリに関する情報を収集しません。
+> デバイスで使用する通信事業者によっては、一部のインベントリ項目が収集されない可能性があります。
