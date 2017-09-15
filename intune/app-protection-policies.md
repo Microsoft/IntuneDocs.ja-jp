@@ -1,6 +1,6 @@
 ---
 title: "アプリ保護ポリシーを作成して展開する"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Intune のアプリ保護ポリシーが、管理するアプリによって使用される会社のデータを保護するうえでどのように役立つかについて説明します。\""
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47cafd6fa252ca7db9ca1129c5dcc5bd0d70d154
-ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
+ms.openlocfilehash: 2e535b2aa11401d51edb33cbad54e9222fd6da6a
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>アプリ保護ポリシーを作成して割り当てる方法
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 08/09/2017
 
 ## <a name="before-you-begin"></a>始める前に
 
-Intune クラシック コンソールでの手順については、[アプリ保護ポリシーを作成する方法](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)に関するページをご覧ください。
+Intune クラシック ポータルでの手順については、[アプリ保護ポリシーを作成する方法](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)に関するページをご覧ください。
 
 アプリ保護ポリシーは、場合によっては Intune で管理できないデバイスで実行されているアプリに適用できます。 アプリ保護ポリシーのしくみと Intune のアプリ保護ポリシーでサポートされるシナリオの詳細については、[Microsoft Intune のアプリ保護ポリシー](app-protection-policy.md)に関するページを参照してください。
 

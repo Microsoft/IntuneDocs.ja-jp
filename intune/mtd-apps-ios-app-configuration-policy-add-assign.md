@@ -1,7 +1,7 @@
 ---
 title: "MTD アプリを追加して Intune に割り当てる"
-titleSuffix: Intune on Azure
-description: "MTD アプリ、Microsoft Authenticator アプリ、iOS 構成ポリシーを Azure での Intune に追加する"
+titleSuffix: Azure portal
+description: "Azure Portal 内の Intune で MTD アプリ、Microsoft Authenticator アプリ、iOS 構成ポリシーを追加する"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,11 +15,11 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7edd80c7bae429c1f4032cf59aaaf8d91786f92c
-ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.openlocfilehash: 6d0802107353eee9359e0eff17b69037d9a237a6
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune で Mobile Threat Defense (MTD) アプリを追加して割り当てる
 
@@ -115,7 +115,7 @@ Lookout for Work iOS アプリに再署名する詳細な手順については�
 
 ### <a name="for-skycure"></a>Skycure の場合
 
--   [Skycure 管理コンソール](https://aad.skycure.com)で以前に構成したものと同じ Azure AD アカウントを使用します。これは、Intune クラシック コンソールにログインするためのものと同じアカウントにする必要があります。
+-   [Skycure 管理コンソール](https://aad.skycure.com)で以前に構成したものと同じ Azure AD アカウントを使います。これは、Intune クラシック ポータルにログインするためのものと同じアカウントにする必要があります。
 
 -   iOS アプリ構成ポリシーのファイルは次のようにして**ダウンロードする**必要があります。 
     -   [Skycure Management コンソール](https://aad.skycure.com)に移動して、管理者資格情報でサインインします。

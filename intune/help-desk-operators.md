@@ -1,6 +1,6 @@
 ---
 title: "ヘルプ デスクのトラブルシューティング ポータル"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "ヘルプ デスクのスタッフが、トラブルシューティング ポータルを使用して、ユーザーの技術的な問題を解決する"
 keywords: 
 author: NathBarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: c932781f988d63395b98452a4f4739e0bce1d9c8
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: 14b47727428fcd6a16f9960e21f70ee64c7757d1
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>トラブルシューティング ポータルを使用してユーザーをサポートする
 
@@ -35,14 +35,14 @@ ms.lasthandoff: 08/28/2017
 -   アプリのインストールの失敗
 
 ## <a name="add-help-desk-operators"></a>ヘルプ デスクの追加
-Intune 管理者は、ユーザー グループに [ヘルプ デスク] のロールを割り当てることができます。 そのグループのメンバーは管理ポータルを使用して、ユーザーの問題をトラブルシューティングすることができます。 ヘルプ デスクには、それぞれ Intune ポータルにアクセスするための Intune のライセンスが必要です。 Intune のライセンスを割り当てる方法については、[こちら](licenses-assign.md)を参照してください。
+Intune 管理者は、ユーザー グループに [ヘルプ デスク] のロールを割り当てることができます。 そのグループのメンバーは Azure Portal を使用して、ユーザーの問題をトラブルシューティングすることができます。 ヘルプ デスク オペレーターには、それぞれ Azure Portal にアクセスするための Intune のライセンスが必要です。 Intune のライセンスを割り当てる方法については、[こちら](licenses-assign.md)を参照してください。
 
 ヘルプ デスク ユーザーを追加するには
 1. 必要に応じて、[Intune にユーザーを追加します](users-add.md)。
 2. [ヘルプ デスク グループを作成](groups-add.md)して、ユーザーをグループに追加します。
 3. [RBAC ヘルプ デスク オペレーターのロールを割り当てます](role-based-access-control.md#built-in-roles)。
 
-  ![Intune ロールが強調表示され、ヘルプ デスク オペレーターなどの組み込みロールの一覧を示す Intune ポータルのスクリーンショット](./media/help-desk-user-add.png) ヘルプ デスクのオペレーターにアクセス権を付与するようにさらに変更できる、[カスタム ロールを作成する](role-based-access-control.md#custom-roles)こともできます。  ヘルプ デスクのオペレーターは、ユーザーの問題のトラブルシューティングをサポートするために、次のアクセス許可が必要です。
+  ![Intune ロールが強調表示され、ヘルプ デスク オペレーターなどの組み込みロールの一覧を示す Azure Portal のスクリーンショット](./media/help-desk-user-add.png) ヘルプ デスクのオペレーターにアクセス権を付与するようにさらに変更できる、[カスタム ロールを作成する](role-based-access-control.md#custom-roles)こともできます。  ヘルプ デスクのオペレーターは、ユーザーの問題のトラブルシューティングをサポートするために、次のアクセス許可が必要です。
     - MobileApps: 読み取り
     - ManagedApps: 読み取り
     - ManagedDevices: 読み取り

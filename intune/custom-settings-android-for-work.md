@@ -1,6 +1,6 @@
 ---
 title: "Android for Work 向けの Intune カスタム プロファイル設定"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Android for Work デバイス用の Intune カスタム プロファイル設定を作成する方法について説明します。\""
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b48fc7bd784b5d6d531ef5bf28fe835e394b106
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 47af10ea2eb04b5e5a470aff36d45d41105feb15
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>Android for Work デバイス向けの Intune カスタム プロファイル設定の作成
 
@@ -32,7 +32,7 @@ Intune Android for Work カスタム構成ポリシーを使用して、Android 
 1. 「[Microsoft Intune でカスタム デバイス設定を構成する方法](custom-settings-configure.md)」の手順に従って開始します。
 2. **[OMA-URI のカスタム設定]** ブレードで **[追加]** を選択して、新しい設定を追加します。
 3. **[行の追加]** ブレードで、以下を構成します。
-    - **[名前]** - Android for Work カスタム設定の一意の名前を入力すると、Intune ポータル内で容易に識別できます。
+    - **[名前]** - Android for Work カスタム設定の一意の名前を入力すると、Azure Portal 内で容易に識別できます。
     - **[説明]** - Android カスタム ポリシーの概要や、ポリシーを特定するのに役立つその他の関連情報についての説明を入力します。
     - **[OMA-URI]** - 設定対象の OMA-URI を入力します。
     - **[データ型]** - この OMA-URI 設定を指定するデータ型を選択します。 **[文字列]**、**[文字列 (XML ファイル)]**、**[日付と時刻]**、**[整数]**、**[浮動小数点]**、**[ブール値]**、または **[Base64 (ファイル)]** から選択します。

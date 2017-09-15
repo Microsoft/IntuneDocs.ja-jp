@@ -1,6 +1,6 @@
 ---
 title: "Skycure Mobile Threat Defense コンプライアンス ポリシーを作成する"
-description: "Intune クラシック コンソールで Skycure Mobile Threat Defense コンプライアンス ポリシーを作成します。"
+description: "Intune クラシック ポータルで Skycure Mobile Threat Defense コンプライアンス ポリシーを作成します。"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,11 +14,11 @@ ms.assetid: 56ff1728-1119-4e8a-aae6-ed5c7fafa052
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 29caf162500e25c2a0151be92aabe4cc432e241b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e8f7b6c5c1e8497ca698b83215525ba9b4056f59
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-skycure-mobile-threat-defense-compliance-policy"></a>Skycure Mobile Threat Defense コンプライアンス ポリシーを作成する
 
@@ -38,7 +38,7 @@ Skycure Mobile Threat Defense をセットアップするときに、Skycure コ
 
 ## <a name="to-create-skycure-compliance-policy"></a>Skycure コンプライアンス ポリシーを作成するには
 
-1.  [Intune クラシック コンソール](https://manage.microsoft.com/)に進み、資格情報を入力します。
+1.  [Intune クラシック ポータル](https://manage.microsoft.com/)に進み、資格情報を入力します。
 
 2.  **[ポリシー]** &gt; **[コンプライアンス ポリシー]** の順に選択します。 既存のコンプライアンス ポリシーを使用することも、新たに作成することもできます。
 

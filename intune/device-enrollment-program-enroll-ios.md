@@ -1,6 +1,6 @@
 ---
 title: "iOS デバイスの登録 - Device Enrollment Program"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Device Enrollment Program を使用して会社所有の iOS デバイスを登録する方法を説明します。\""
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d88d191e3212e1999376fb2577a85c3dc957a787
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: c14903d227164089f52c9bd3288a99f29a9141b8
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する
 
@@ -55,7 +55,7 @@ DEP に iOS デバイスを登録するには、Apple の DEP トークン (.p7m
 DEP トークンを作成する場合は、Apple DEP ポータルを使用します。 また、管理のためにデバイスを Intune に割り当てる場合にも DEP ポータルを使用します。
 
 > [!NOTE]
-> Azure に移行する前にクラシックの Intune コンソールからトークンを削除すると、Intune で削除された Apple DEP トークンが復元される場合があります。 Azure Portal から DEP トークンを再び削除できます。 Azure Portal から DEP トークンを再び削除できます。
+> Azure に移行する前に Intune クラシック ポータルからトークンを削除すると、削除された Apple DEP トークンが Intune で復元される場合があります。 Azure Portal から DEP トークンを再び削除できます。 Azure Portal から DEP トークンを再び削除できます。
 
 **手順 1: Apple DEP トークンを作成するために必要な Intune 公開キー証明書をダウンロードします。**<br>
 
@@ -154,7 +154,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 2. **[Enrollment Program デバイス]** で、**[同期]** を選択します。
 
   ![[Enrollment Program デバイス] ノードと [同期] リンクが選ばれているスクリーンショット。](./media/enrollment-program-device-sync.png)
-3. **[同期]** ブレードで、**[同期を要求]** を選択します。 進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
+3. **[同期]** ブレードで、**[同期を要求]** を選択します。進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
 
   ![[同期を要求] リンクが選ばれている [同期] ブレードのスクリーンショット。](./media/enrollment-program-device-request-sync.png)
 

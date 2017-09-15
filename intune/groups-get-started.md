@@ -1,6 +1,6 @@
 ---
 title: "Azure Portal での Intune クラシック グループ"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Intune Azure Portal でのグループの新機能について説明します"
 keywords: 
 author: nathbarn
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 ms.custom: intune-azure
-ms.openlocfilehash: c51c3102cc78cf095e27da4ff199cb3fb5ae14a6
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: 7ba5c3d0e6f241c5734d629a23f092ac007f8300
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="intune-classic-groups-in-the-azure-portal"></a>Azure Portal での Intune クラシック グループ
 
@@ -38,7 +38,7 @@ Azure AD セキュリティ グループは、ユーザーとデバイスの両�
 - グループから**特定のメンバーを除外**するオプションは、Azure Portal にはありません。 ただし、Azure AD セキュリティ グループと高度なルールを使用して、この動作を複製できます。 たとえば、肩書きに "Assistant" が付いているグループを除く、営業部内のすべてのユーザーをセキュリティ グループに含める高度なルールを作成する場合は、次の高度なルールを使用できます。
 
   `(user.department -eq "Sales") -and -not (user.jobTitle -contains "Assistant")`
-- Intune コンソールの **Exchange ActiveSync で管理されているすべてのデバイス** グループは、Azure AD に移行されていません。 ただし、EAS で管理されたデバイスに関する情報には、Azure Portal から引き続きアクセスできます。
+- Intune クラシック コンソールの **Exchange ActiveSync で管理されているすべてのデバイス** グループは、Azure AD に移行されていません。 ただし、EAS で管理されたデバイスに関する情報には、Azure Portal から引き続きアクセスできます。
 
 ## <a name="how-to-get-started"></a>開始する方法
 
@@ -51,9 +51,9 @@ Azure AD セキュリティ グループは、ユーザーとデバイスの両�
 
 
 ## <a name="what-happened-to-intune-groups"></a>Intune グループに対する移行処理の内容
-グループをクラシック Intune ポータルから Azure Portal の Intune に移行すると、次のルールが適用されます。
+グループを Azure Portal から Azure Portal の Intune に移行すると、次のルールが適用されます。
 
-| クラシック Intune でのグループ|Azure AD でのグループ|
+| Intune のグループ|Azure AD でのグループ|
 |-----------------------------------------------------------------------|-------------------------------------------------------------|
 |静的なユーザー グループ|静的な Azure AD セキュリティ グループ|
 |動的なユーザー グループ|Azure AD セキュリティ グループの階層構造を持つ静的な Azure AD セキュリティ グループ|
@@ -65,7 +65,7 @@ Azure AD セキュリティ グループは、ユーザーとデバイスの両�
 
 ## <a name="group-hierarchy"></a>グループ階層
 
-クラシック Intune ポータル コンソールでは、すべてのグループに親グループがありました。 グループには、親グループのメンバーのみを含めることができました。 Azure AD の子グループには、親グループに含まれないメンバーを含めることができます。
+Intune コンソールでは、すべてのグループに親グループがありました。 グループには、親グループのメンバーのみを含めることができました。 Azure AD の子グループには、親グループに含まれないメンバーを含めることができます。
 
 ## <a name="group-attributes"></a>グループの属性
 属性は、グループの定義時に使用できるデバイス プロパティです。 次の表では、条件を Azure AD セキュリティ グループに移行する方法について説明します。
@@ -84,4 +84,4 @@ Azure AD セキュリティ グループは、ユーザーとデバイスの両�
 
 ## <a name="what-happens-to-policies-and-apps-you-previously-deployed"></a>以前に展開されているポリシーおよびアプリに対する処理
 
-ポリシーとアプリは、移行前と同じように、引き続きグループに展開されます。 ただし、これらのグループの管理は、従来の Intune コンソールではなく、Azure Portal から行うようになります。
+ポリシーとアプリは、移行前と同じように、引き続きグループに展開されます。 ただし、これらのグループの管理は、Intune コンソールではなく、Azure Portal から行うようになります。

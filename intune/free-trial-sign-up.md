@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Intune の 30 日間無料試用版にサインアップする"
-titleSuffix: 
+titleSuffix: Azure portal
 description: "Intune の 30 日間無料試用版にサインアップする方法"
 keywords: 
 author: lindavr
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: de86b6c9938d4be3f90d62e96080d8b967886792
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 21ee75ab006c1770bc61039facc28d8a0118e706
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Microsoft Intune の無料試用版にサインアップ
 
@@ -47,11 +47,11 @@ Intune Azure Portal に初めてサインオンすると、Azure ダッシュボ
 Intune Azure Portal で使用するポータルは 3 つあります。
 - Azure ([portal.azure.com](https://portal.azure.com)) の Intune ダッシュボードでは、[Azure Portal にある Intune の各機能](what-is-intune.md)を確認できます。
 - Office 365 管理センター ([portal.office.com](https://portal.office.com)) では、ユーザーの追加と管理ができます (Azure Active Directory を使用していない場合)。 また、課金やサポートなど、アカウントのその他の要素を管理することもできます。
-- クラシック Intune 管理コンソール ([manage.microsoft.com](https://manage.microsoft.com)) では、まだ Azure に追加されていない機能を確認できます。
+- Intune 管理コンソール ([manage.microsoft.com](https://manage.microsoft.com)) では、まだ Azure に追加されていない機能を確認できます。
 
 通常、次のように、Intune ダッシュボードで作業します。 これがグループ、ポリシー、デバイス、アプリを設定し、管理する場所となります。
 
-ダッシュボードからクラシック Intune 管理コンソールを開くには、ダッシュボードの一番上にある **[クラシック ポータル]** を選択します。
+ダッシュボードから Intune 管理コンソールを開くには、ダッシュボードの一番上にある **[クラシック ポータル]** を選択します。
 
 Intune Azure Portal に戻るには、ブラウザーのアドレス バーに「https://portal.azure.com」と入力し、サービス一覧から **[Intune]** をもう一度選択します。
 
@@ -68,7 +68,7 @@ Intune から Office 365 管理センターに戻るには、ブラウザーの�
 
 ## <a name="next-steps"></a>次のステップ
 
-### <a name="intune-on-azure"></a>Azure での Intune
+### <a name="intune-in-the-azure-portal"></a>Azure Portal での Intune
 詳細については、[Azure Portal での Intune](what-is-intune.md) に関するページを参照してください。
 
 ### <a name="integration-with-other-products"></a>他の製品との統合

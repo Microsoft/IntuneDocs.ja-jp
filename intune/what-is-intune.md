@@ -1,6 +1,6 @@
 ---
 title: "Azure Portal での Intune の概要"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Azure Portal での Intune の基本と、Intune を利用してデバイスを管理する方法について説明します。\""
 keywords: 
 author: robstackmsft
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: a51b3c59d922b0c150073017222dca0c90c5b7a0
-ms.sourcegitcommit: 36ae73f59ff5e9fdfe4f930ad0aa4b7795fe11f2
+ms.openlocfilehash: 6150434620f055f17563da6269c85c89c70b8e2b
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure Portal での Microsoft Intune の概要
 
@@ -72,7 +72,7 @@ Azure Portal は、ほとんどの最新 PC、Mac、タブレットで動作し�
 
 ## <a name="whats-in-this-library"></a>このライブラリの内容
 
-必要な情報が見つけやすくなるように、ドキュメントには Intune ポータルのレイアウトが反映されています。
+必要な情報が見つけやすくなるように、ドキュメントには Azure Portal のレイアウトが反映されています。
 
 ![Azure Portal のワークロード](./media/azure-portal-workloads.png)
 

@@ -1,6 +1,6 @@
 ---
 title: "Intune で Skycure Mobile Threat Defense を有効にする"
-description: "Intune クラシック コンソールで Skycure Mobile Threat Defense を有効にします。"
+description: "Intune クラシック ポータルで Skycure Mobile Threat Defense を有効にします。"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,11 +14,11 @@ ms.assetid: 0cc4e59d-819a-47a2-a26f-4f8d0f8df7bf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4dad45d15fec7189fdcf184839040b9e3f9a3a48
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9fe3c59e52d9d7732267ecfb28eac3b5c7368ed9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enable-skycure-mobile-threat-defense-in-intune"></a>Intune で Skycure Mobile Threat Defense を有効にする
 
@@ -28,11 +28,11 @@ Skycure Mobile Threat Defense を有効にするには、[Intune Connector in th
 
 ## <a name="to-enable-the-skycure-mtd-connection-in-intune"></a>Intune で Skycure MTD の接続を有効にする
 
-1.  [Intune クラシック コンソール](https://manage.microsoft.com/)に進み、資格情報を入力します。
+1.  [Intune クラシック ポータル](https://manage.microsoft.com/)に進み、資格情報を入力します。
 
 2.  **[管理]** &gt; **[Third Party Service Integration (サード パーティ サービスの統合)]** の順に選択し、**[Skycure の状態]** を選択し、切り替えボタンで **[Synchronization with MTD (MTD と同期)]** を有効にします。
 
-    ![Intune クラシック コンソールで Skycure 切り替えを有効にする](../media/mtp/enable-skycure-1.png)
+    ![Intune クラシック ポータルで Skycure 切り替えを有効にする](../media/mtp/enable-skycure-1.png)
 
 > [!IMPORTANT] 
 > コンプライアンス ポリシー ルールを作成して条件付きアクセスを構成する前に、Skycure アプリを構成する必要があります。 これにより、アプリはエンド ユーザーがインストールできる状態になり、アプリをインストールするとエンド ユーザーは電子メールや他の会社のリソースにアクセスできます。

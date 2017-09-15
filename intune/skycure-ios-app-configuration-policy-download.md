@@ -1,6 +1,6 @@
 ---
 title: "Intune で Skycure iOS アプリ構成ポリシーをダウンロードして使用する"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Intune で Skycure iOS アプリ構成ポリシーをダウンロードして使用します。"
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 1bdc2ecf-32d0-4b6a-80b4-dbcdb9909010
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ffe1027e90203d4e300a2446f15e72cc5bf53973
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 296d5545530e8001c0648bafac3101b94f45529d
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="download-skycure-ios-app-configuration-policy"></a>Skycure iOS アプリ構成ポリシーをダウンロードする
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 07/01/2017
 
 3.  **[設定]** &gt; **[Device Management Integrations (デバイス管理統合)]** &gt; **[EMM Integration Selection (EMM 統合選択)]** の順に進み、**[Microsoft Intune]** を選択し、選択を保存します。
 
-4.  **[Integration setup files (統合セットアップ ファイル)]** リンクをクリックし、生成された \*.zip ファイルを保存します。 この .zip ファイルには **skycure\_configuration.plist** ファイルが含まれます。このファイルを利用し、Intune クラシック コンソールで iOS アプリ構成ポリシーが作成されます。
+4.  **[Integration setup files (統合セットアップ ファイル)]** リンクをクリックし、生成された \*.zip ファイルを保存します。 この .zip ファイルには **skycure\_configuration.plist** ファイルが含まれます。このファイルを利用して、Intune クラシック ポータルで iOS アプリ構成ポリシーが作成されます。
 
 ![Skycure 統合セットアップ ファイル](./media/skycure-ios-app-2.png)
 

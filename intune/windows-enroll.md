@@ -1,6 +1,6 @@
 ---
 title: "Windows デバイスの登録"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Windows デバイスの Intune モバイル デバイス管理 (MDM) を有効にします。\""
 keywords: 
 author: nathbarn
@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3b5b5e2cdf2b31c33a02a90560e4abf955d398b0
-ms.sourcegitcommit: d5b5cb9b6dcb59094e436e07f8ed46924b37ac94
+ms.openlocfilehash: 067009356171184fa34dd51c9a0b01b41f14cab7
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enroll-windows-devices"></a>Windows デバイスの登録
 
@@ -27,9 +27,9 @@ ms.lasthandoff: 08/30/2017
 このトピックは IT 管理者がユーザーの Windows の登録を簡略化する際に役立ちます。 [Intune が設定](setup-steps.md)されたら、ユーザーは職場または学校のアカウントで[サインイン](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)し、Windows デバイスを登録します。  
 
 Intune 管理者は、次の方法で登録を簡略化できます。
-- 自動登録を有効にする (Azure AD プレミアム必須)
-- CNAME 登録
-- 一括登録を有効にする (Azure AD プレミアムと Windows Configuration Designer が必須)
+- [自動登録を有効にする](#enable-windows-10-automatic-enrollment) (Azure AD Premium が必須)
+- [CNAME の登録]()
+- 一括登録を有効にする (Azure AD Premium と Windows Configuration Designer が必須)
 
 Windows デバイスの登録を簡略化する方法は、次の 2 つの要素によって決まります。
 
@@ -48,8 +48,8 @@ Windows 10 Creators Update を実行し Azure Active Directory ドメインに�
 
 [!INCLUDE[AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
-## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>Azure AD Premium なしの Windows 登録を有効にする
-DNS エイリアス (CNAME レコード タイプ) を作成することで、ユーザーのために登録を簡略化できます。DNS エイリアスは自動的に Intune サーバーに要求をリダイレクトします。 DNS CNAME リソース レコードを作成しない場合、Intune に接続するユーザーは、登録時、Intune サーバー名を入力する必要があります。
+## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>Azure AD Premium なしで Windows 登録を簡略化する
+ドメイン ネーム サーバー (DNS) エイリアス (CNAME レコード タイプ) を作成することで、ユーザーのために登録を簡略化できます。DNS エイリアスは自動的に Intune サーバーに要求をリダイレクトします。 DNS CNAME リソース レコードを作成しない場合、Intune に接続するユーザーは、登録時、Intune サーバー名を入力する必要があります。
 
 **手順 1: CNAME を作成する** (省略可能)<br>
 会社のドメインの CNAME DNS リソース レコードを作成します。 たとえば、会社の Web サイトが contoso.com の場合、EnterpriseEnrollment.contoso.com を enterpriseenrollment-s.manage.microsoft.com にリダイレクトする CNAME を DNS に作成します。
@@ -74,7 +74,7 @@ CNAME DNS エントリの作成は省略可能ですが、CNAME レコードに�
 DNS レコードの変更が反映されるまでには、最大で 72 時間かかります。 DNS レコードの変更が反映されるまで、Intune で DNS の変更を確認することはできません。
 
 **手順 2: CNAME を確認する** (省略可能)<br>
-Azure Intune ポータルで、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。 [Intune] ブレードで、**[デバイスの登録]**  >  **[Windows Enrollment (Windows 登録)]** を選択します。 **[検証済みドメイン名の指定]** ボックスに会社の Web サイト URL を入力し、**[自動検出のテスト]** を選択します。
+Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。 [Intune] ブレードで、**[デバイスの登録]**  >  **[Windows Enrollment (Windows 登録)]** を選択します。 **[検証済みドメイン名の指定]** ボックスに会社の Web サイト URL を入力し、**[自動検出のテスト]** を選択します。
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>Windows デバイスの登録方法をユーザーに通知する
 ユーザーに、Windows デバイスを登録する方法とデバイスが管理されるとどうなるかを伝えます。 エンドユーザー用の登録手順については、「[Intune に Windows デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)」を参照してください。 また、ユーザーには、[IT 管理者がユーザーのデバイスに関して確認できる情報](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows)に関するページも案内してください。

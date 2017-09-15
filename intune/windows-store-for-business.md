@@ -1,6 +1,6 @@
 ---
 title: "ビジネス向け Microsoft ストア アプリの管理"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "ビジネス向け Microsoft ストアから取得したアプリを同期して Intune に取り込み、そのアプリを割り当てて追跡します。\""
 keywords: 
 author: robstackmsft
@@ -15,18 +15,18 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f5f1b49d0785682f72d208287098466934ff0e1
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: 649766b26a1061c4bce11235c04dcbe8570fcdc4
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>ビジネス向け Microsoft ストアから購入したアプリを Microsoft Intune で管理する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-[ビジネス向け Microsoft ストア](https://www.microsoft.com/business-store)では、組織用のアプリを見つけて、個別または大量に購入することができます。 Microsoft Intune にストアを接続することで、Intune ポータルからボリューム購入アプリを管理することができます。 たとえば、
+[ビジネス向け Microsoft ストア](https://www.microsoft.com/business-store)では、組織用のアプリを見つけて、個別または大量に購入することができます。 Microsoft Intune にストアを接続することで、Azure Portal からボリューム購入アプリを管理することができます。 たとえば、
 * ストアから購入したアプリの一覧を Intune に同期することができます。
 * 同期されているアプリは Intune 管理コンソールに表示され、他のアプリと同様に割り当てることができます。
 * 使用可能なライセンス数、および Intune 管理コンソールで使用中のライセンス数を追跡することができます。
@@ -64,7 +64,7 @@ Intune コンソールで同期を有効にする前に、以下の手順に従�
 1. **[モバイル アプリ]** ブレードで、**[セットアップ]** > **[ビジネス向け Microsoft ストア]** の順に選択します。
 2. **[有効にする]** をクリックします。
 3. ビジネス向け Microsoft ストアにまだサインアップしていない場合は、前に詳しく説明したように、サインアップ用のリンクをクリックしてサインアップし、アカウントを関連付けます。
-5. **[言語]** ドロップダウン リストで、Intune ポータルで表示するビジネス向け Microsoft ストアのアプリに使用する言語を選択します。 アプリは、どの言語を使用して表示するかに関係なく、使用可能なエンド ユーザーの言語でインストールされます。
+5. **[言語]** ドロップダウン リストで、Azure Portal で表示するビジネス向け Microsoft ストアのアプリに使用する言語を選択します。 アプリは、どの言語を使用して表示するかに関係なく、使用可能なエンド ユーザーの言語でインストールされます。
 6. **[同期]** をクリックして、Microsoft ストアから購入したアプリを Intune に取り込みます。
 
 ## <a name="synchronize-apps"></a>アプリを同期する

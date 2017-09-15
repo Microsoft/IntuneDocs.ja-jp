@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 2a8754d684896f2c945e11ed0fc2577114459069
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 3567f26053a235c5a5af761829f043e0db2f79b5
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune を使用して Windows デバイスに展開できるように基幹業務アプリに署名する
 
@@ -55,7 +55,7 @@ Intune 管理者は、ポータル サイト アプリを含め、基幹業務 (
 6.  **Intune にアプリをアップロードする**<br>
     署名付きのアプリ ファイルと、コード署名証明書をアップロードして、アプリをエンド ユーザーが使用できるようにします。
 
-    1.  Intune ポータルで **[管理]** &gt; **[Windows Phone]** の順にクリックします。
+    1.  Azure Portal で **[管理]** &gt; **[Windows Phone]** の順にクリックします。
 
     2.  **[署名済みアプリ ファイルのアップロード]** をクリックし、Intune 管理者 ID でサインインします。
 
@@ -118,7 +118,7 @@ Microsoft ストアからインストールしなくても、Intune を使用し
 
     -   `-EnterpriseId` - エンタープライズ ID。 この引数と 'AetxPath' のいずれかを指定する必要があります。 この引数が指定されていない場合、AETX ファイルからエンタープライズ ID が読み取られます。 たとえば、1000000001。
 
-6.  Windows Phone 8.1 ポータル サイト (SSP.appx) アプリを展開する ガイダンスについては、[Windows Phone の基幹業務 (LOB) アプリを追加する方法](lob-apps-windows-phone.md) ([クラシック コンソール](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)) に関する内容をご覧ください。
+6.  Windows Phone 8.1 ポータル サイト (SSP.appx) アプリを展開する ガイダンスについては、[Windows Phone の基幹業務 (LOB) アプリを追加する方法](lob-apps-windows-phone.md) ([クラシック ポータル](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)) に関する内容をご覧ください。
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>Symantec エンタープライズ コード署名証明書を更新する方法
 
@@ -136,7 +136,7 @@ Windows および Windows Phone モバイル アプリを展開するのに使�
 
 1.  最新バージョンの基幹業務アプリに署名します。
 
-2.  Intune コンソールを開き、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[Windows Phone]** の順に選択し、**[署名済みアプリのアップロード]** をクリックします。
+2.  Azure Portal を開き、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[Windows Phone]** の順に選択し、**[Upload Signed App]\(署名済みアプリのアップロード\)** をクリックします。
 
 3.  新しく署名したポータル サイトをアップロードします。 新しく署名した SSP.xap と、Symantec から送信された新しい .PFX ファイルまたはこの新しい .PFX ファイルを使用して作成されたアプリケーション登録トークンが必要になります。
 

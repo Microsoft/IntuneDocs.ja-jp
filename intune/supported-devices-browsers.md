@@ -14,11 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f862129d73c83e078d8b29201f1d92b9b65aa609
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: 00fc685062c090b40e20ed3dfa30afbeeb5c9780
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="supported-devices-and-browsers"></a>サポートされるデバイスとブラウザー
 
@@ -31,7 +31,7 @@ Microsoft Intune のセットアップを開始する前に、次の要件を確
 - [サポートされているデバイスとコンピューター](#intune-supported-devices)
 - [Intune 対応の Web ブラウザーの一覧](#intune-supported-web-browsers)
 
-[Intune のネットワーク帯域幅の使用法](network-bandwidth-use.md) ([クラシック コンソール](/intune-classic/get-started/network-bandwidth-use)) についてもよく理解しておく必要があります。
+[Intune のネットワーク帯域幅の使用法](network-bandwidth-use.md) ([クラシック ポータル](/intune-classic/get-started/network-bandwidth-use)) についてもよく理解しておく必要があります。
 
 ## <a name="intune-supported-devices"></a>Intune 対応デバイス
 
@@ -43,7 +43,7 @@ Intune は Windows Server オペレーティング システムを管理でき�
 
 ### <a name="windows-pc-software-client"></a>Windows PC ソフトウェア クライアント
 
-代替登録方法として、[Intune ソフトウェア クライアント](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)を Windows PC に展開し、インストールできます。 この機能は、Intune クラシック コンソールを使用する場合のみ利用可能です。 Intune ソフトウェア クライアントを利用し、Windows 10 Home エディションを除く、Windows 7 以降の PC を管理できます。
+代替登録方法として、[Intune ソフトウェア クライアント](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)を Windows PC に展開し、インストールできます。 この機能は、Intune クラシック ポータルを使用する場合のみ利用可能です。 Intune ソフトウェア クライアントを利用し、Windows 10 Home エディションを除く、Windows 7 以降の PC を管理できます。
 
 <!--  ### Exchange ActiveSync management
 
@@ -54,7 +54,7 @@ You can manage [Exchange ActiveSync devices](/intune-classic/deploy-use/mobile-d
 さまざまな管理タスクで、次の管理 Web サイトのいずれかを使用する必要があります。
 
 - [Office 365 ポータル](http://go.microsoft.com/fwlink/p/?LinkId=698854)
-- [Intune ポータル](https://portal.azure.com/)
+- [Azure Portal](https://portal.azure.com/)
 
 Intune ポータルでは、次のブラウザーがサポートされています。
 - Microsoft Edge (最新バージョン)
@@ -67,12 +67,12 @@ Intune ポータルでは、次のブラウザーがサポートされていま�
 
 Intune PC ソフトウェア クライアントや Mobile Threat Defense パートナーとの統合といった Intune クラシック専用機能は、Intune クラシック ポータル (https://manage.microsoft.com) でのみ利用可能です。 Intune クラシック ポータルには、Silverlight のブラウザー サポートが必要です。
 
-次の Silverlight ブラウザーは、Intune クラシック コンソールをサポートしています。
+次の Silverlight ブラウザーは、Intune コンソールをサポートしています。
 - Internet Explorer 10 以降
 - Google Chrome (バージョン 42 より前のバージョン)
 - SilveSilverlight が有効な Mozilla Firefox。[詳しくはこちらをご覧ください](https://go.microsoft.com/fwlink/?linkid=836872)。
 
 > [!Note]
-> Intune クラシック コンソールで Microsoft Edge とモバイル ブラウザーがサポートされないのは、[Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx) がサポートされていないためです。
+> Intune クラシック ポータルで Microsoft Edge とモバイル ブラウザーがサポートされないのは、[Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx) がサポートされていないためです。
 
 このポータルには、サービス管理者のアクセス許可を持つユーザーまたは全体管理者の役割を持つテナント管理者のみがサインインできます。 管理コンソールにアクセスするには、アカウントに Intune を使用するライセンスがあり、サインイン状態が**許可済み**になっている必要があります。

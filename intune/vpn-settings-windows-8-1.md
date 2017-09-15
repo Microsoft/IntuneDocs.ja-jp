@@ -1,6 +1,6 @@
 ---
 title: "Windows 8.1 デバイス向けの Intune の VPN 設定"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Windows 8.1 デバイスで VPN 接続の構成に使用できる Intune 設定について説明します。\""
 keywords: 
 author: lleonard-msft
@@ -15,11 +15,11 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d851a8900ae1e164cb22f1878b352c3e90096f73
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: de811d4a41aa8bdf9fd016b6ee439e1ed2ef2a92
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="vpn-settings-for-windows-81-devices-in-microsoft-intune"></a>Microsoft Intune での Windows 8.1 デバイス向けの VPN 設定
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 07/01/2017
 ## <a name="base-vpn-settings"></a>基本 VPN 設定
 
 
-- **[Apply all settings to Windows 8.1 only (すべての設定を Windows 8.1 のみに適用する)]** - これは、クラシック Intune ポータルで構成できる設定です。 Azure Portal では、この設定は変更できません。 これを **[構成済み]** に設定すると、すべての設定が Windows 8.1 デバイスのみに適用されるようになります。 **[未構成]** に設定されている場合、これらの設定は Windows 10 デバイスにも適用されます。
+- **[Apply all settings to Windows 8.1 only (すべての設定を Windows 8.1 のみに適用する)]** - これは、Intune クラシック ポータルで構成できる設定です。 Azure Portal では、この設定は変更できません。 これを **[構成済み]** に設定すると、すべての設定が Windows 8.1 デバイスのみに適用されるようになります。 **[未構成]** に設定されている場合、これらの設定は Windows 10 デバイスにも適用されます。
 - **[接続名]** - この接続の名前を入力します。 エンド ユーザーがデバイスで利用可能な VPN 接続の一覧を参照するときに、この名前が表示されます。
 - **[サーバー]** - デバイスの接続先とする 1 台以上の VPN サーバーを追加します。
     - **[追加]** - **[行の追加]** ブレードが開き、以下の情報を指定できます。
