@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 62478796f1f24464503a0d564e0d8972dd04f8b3
-ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
+ms.openlocfilehash: 0485f7c93baec13c6e0a26f391f159006fa530ec
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/02/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS 用 Microsoft Intune App SDK 開発者ガイド
 
@@ -468,7 +468,7 @@ WebViewHandledURLSchemes | 文字列の配列 | アプリの WebView で処理�
 > アプリが App Store にリリースされる場合は、App Store の標準に従って、`MAMPolicyRequired` を "NO" に設定する必要があります。
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>iOS アプリケーションの MAM 対象の構成を有効にする
-MAM 対象の構成により、アプリは Intune App SDK から構成データを受け取ることができます。 このデータの形式とバリエーションは、アプリケーションの所有者/開発者が定義して Intune のユーザーに通知する必要があります。 Intune の管理者は、Intune Azure コンソールを使って、構成データの対象設定と展開を行うことができます。 Intune App SDK for iOS (v 7.0.1) の一部として、MAM 対象構成に入っているアプリに MAM サービス経由で MAM 対象構成データを与えることができます。 アプリケーション構成データは、MDM チャネルではなく MAM サービスを通して直接アプリにプッシュされます。 Intune App SDK は、これらのコンソールから取得されたデータにアクセスするためのクラスを提供します。 次を前提条件として考慮してください。 <br>
+MAM 対象の構成により、アプリは Intune App SDK から構成データを受け取ることができます。 このデータの形式とバリエーションは、アプリケーションの所有者/開発者が定義して Intune のユーザーに通知する必要があります。 Intune の管理者は、Intune Azure Portal を使って、構成データの対象設定と展開を行うことができます。 Intune App SDK for iOS (v 7.0.1) の一部として、MAM 対象構成に入っているアプリに MAM サービス経由で MAM 対象構成データを与えることができます。 アプリケーション構成データは、MDM チャネルではなく MAM サービスを通して直接アプリにプッシュされます。 Intune App SDK は、これらのコンソールから取得されたデータにアクセスするためのクラスを提供します。 次を前提条件として考慮してください。 <br>
 * MAM 対象構成 UI にアクセスする前に、アプリを MAM-WE 登録する必要があります。 MAM-WE に関する詳細については、Intune App SDK ガイドの「[デバイス登録が不要なアプリの保護ポリシー](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment)」を参照してください。
 * アプリのソース ファイルに ```IntuneMAMAppConfigManager.h``` を追加します。
 * ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` を呼び出し、アプリ構成オブジェクトを取得します。
