@@ -1,6 +1,6 @@
 ---
-title: "ソフトウェア更新プログラムの管理"
-titleSuffix: Configure Windows Update for Business settings - Intune
+title: "Intune でのビジネス設定向けの Windows Update の構成"
+titleSuffix: Azure portal
 description: "Intune でビジネス向けの Windows Update を構成して、Windows 10 デバイスの更新を制御します。\""
 keywords: 
 author: dougeby
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 6d88fd62b84c0cc7c3678692cef5ab547bfb8c5d
-ms.sourcegitcommit: f9b01976c0fc479ac8bc3998eb55bbc517ed2d84
+ms.openlocfilehash: 71dad71cdfa9f503a47e301f0b5d3fef2567f886
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="manage-software-updates"></a>ソフトウェア更新プログラムの管理
 
@@ -54,20 +54,20 @@ Windows Update for Business を使用することで、デバイスのグルー�
 
     この設定は手動で構成できます。または Windows 10 以降向けの Intune デバイスの制限プロファイルを使用することもできます。 これを行うには、設定 **[全般]**  >  **[診断データの送信]** を**基本**以上に設定します。 デバイスのプロファイルについて詳しくは、「[Microsoft Intune でデバイスの制限設定を構成する方法](device-restrictions-configure.md)」をご覧ください。
 
-- 従来の Intune 管理コンソールには、ソフトウェア更新プログラムの動作を制御する 4 つの設定があります。 これらの設定は、Windows 10 Desktop および Mobile デバイスの全般的な構成ポリシーの一部です。
+- Intune 管理コンソールには、ソフトウェア更新プログラムの動作を制御する 4 つの設定があります。 これらの設定は、Windows 10 Desktop および Mobile デバイスの全般的な構成ポリシーの一部です。
     - **自動更新を直ちにインストールすることを許可する**
     - **プレリリース機能を有効にする**
     - **インストールを実行する日**
     - **インストールを実行する時間**
 
-  また、従来のコンソールでは、デバイスの構成プロファイルのその他の Windows 10 更新プログラムの数に制限があります。 Azure ポータルへの移行時に、従来の Intune 管理コンソールでこれらのいずれかの設定を構成している場合は、次の操作を実行することを強くお勧めします。
+  また、従来のポータルでは、デバイスの構成プロファイルのその他の Windows 10 更新プログラムの数に制限があります。 Azure Portal への移行時に、Intune 管理コンソールでこれらのいずれかの設定を構成している場合は、次の操作を実行することを強くお勧めします。
 
 1. 必要な設定を使用して、Azure ポータルで Windows 10 更新プログラム リングを作成します。 Azure ポータルでは **[プレリリース機能を許可する]** 設定はサポートされていません。これは、最新の Windows 10 ビルドに適用できなくなったためです。 更新プログラム リングを作成するとき、他の 3 つの設定と他の Windows 10 更新プログラムの設定を構成できます。
 
   > [!NOTE]
-  > 従来のコンソールで作成した Windows 10 更新プログラム設定は、移行後、Azure ポータルに表示されません。 ただし、これらの設定は引き続き適用されます。 これらのいずれかの設定を移行し、Azure ポータルから移行されたポリシーを編集した場合、これらの設定はポリシーから削除されます。
+  > 従来のポータルで作成した Windows 10 更新プログラム設定は、移行後、Azure Portal に表示されません。 ただし、これらの設定は引き続き適用されます。 これらのいずれかの設定を移行し、Azure ポータルから移行されたポリシーを編集した場合、これらの設定はポリシーから削除されます。
 
-2. 従来のコンソールで更新プログラムの設定を削除します。 Azure ポータルに移行し、同じ設定を更新プログラム リングに追加した後、従来のポータルの設定を削除して潜在的なポリシーの競合を回避する必要があります。 たとえば、異なる値で同じ設定が構成され、競合が発生した場合、これを簡単に把握することができません。なぜなら、従来のコンソールで構成した設定が Azure ポータルに表示されないためです。
+2. 従来のポータルで更新プログラムの設定を削除します。 Azure ポータルに移行し、同じ設定を更新プログラム リングに追加した後、従来のポータルの設定を削除して潜在的なポリシーの競合を回避する必要があります。 たとえば、異なる値で同じ設定が構成され、競合が発生した場合、これを簡単に把握することができません。なぜなら、従来のポータルで構成した設定が Azure Portal に表示されないためです。
 
 ## <a name="how-to-create-and-assign-update-rings"></a>更新プログラム リングを作成して割り当てる方法
 

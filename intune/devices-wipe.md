@@ -1,12 +1,12 @@
 ---
 title: "Intune を使用しているデバイスで、出荷時の設定にリセットまたは会社データの削除を使用する"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "デバイスの会社データを削除する方法またはデバイスを出荷時の設定にリセットする方法を説明します。"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/07/2017
+ms.date: 08/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 331ced93f0697f7c76d1356aae32b955602d17a3
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 41bfb62f90965288d73948650b6935434c986d92
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>出荷時の設定にリセットまたは会社データの削除を使用してデバイスを削除する
 
@@ -106,7 +106,7 @@ ms.lasthandoff: 08/10/2017
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Azure Active Directory ポータルからデバイスを削除する
 
-通信の問題やデバイスの紛失が原因で、Azure Active Directory (AD) からデバイスを削除することが必要になる場合があります。 削除コマンドではデバイスを管理対象から削除しませんが、**[削除]** を使用して、Azure に到達不能で Azure ともう一度通信する可能性が低いことがわかっているデバイスのレコードを Azure コンソールから削除することはできます。
+通信の問題やデバイスの紛失が原因で、Azure Active Directory (AD) からデバイスを削除することが必要になる場合があります。 削除コマンドではデバイスを管理対象から削除しませんが、**[削除]** を使用して、Azure に到達不能で Azure ともう一度通信する可能性が低いことがわかっているデバイスのレコードを Azure Portal から削除することはできます。
 
 1.  管理者の資格情報を使用して [Azure Portal で Azure Active Directory](http://aka.ms/accessaad) にサインインします。 [Office 365 ポータル](https://portal.office.com)にサインインし、ページ左側のリンクを使用して **[管理者]** &gt; **[Azure AD]** を選択することもできます。
 3.  組織 ID がない場合は、Azure サブスクリプションを作成します。 有料アカウントを持っている場合は、作成時にクレジット カードや支払いは必要ありません (**[無料の Azure Active Directory の登録]** サブスクリプション リンクを選択します)。

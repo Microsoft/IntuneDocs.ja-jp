@@ -5,20 +5,20 @@ keywords: SDK
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 07/05/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a6e0ea5edc5a174e0400ccca3931323712f3cbbe
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: a28305aab1fff16a46b8142e5869bfa25008017c
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android 用 Microsoft Intune アプリ SDK 開発者ガイド
 
@@ -456,8 +456,9 @@ ADAL を使用してアプリを構成する一般的な方法を次に示しま
     |--|--|
     | Authority | AAD アカウントが構成されている必要な環境 |
     | ClientID | アプリの ClientID (アプリが登録されるときに Azure AD によって生成される) |
-    | NonBrokerRedirectURI | アプリの有効なリダイレクト URI または既定値の `urn:ietf:wg:oauth:2.0:oob`。 <br><br> アプリの ClientID の許容されるリダイレクト URI として値を構成したことを確認してください。
-    | SkipBroker | False |
+    | NonBrokerRedirectURI | アプリの有効なリダイレクト URI、または `urn:ietf:wg:oauth:2.0:oob` 
+    。 <br><br> アプリの ClientID の許容されるリダイレクト URI として値を構成したことを確認してください。
+   |SkipBroker |False |
 
 
 3. **アプリは ADAL を統合しますが、仲介型認証/デバイス全体にわたる SSO をサポートしていません。**
@@ -1355,7 +1356,7 @@ Intune SDK は Android API によって提供されるコントラクトを維�
 
 ## <a name="telemetry"></a>製品利用統計情報
 
-Intune App SDK for Android は、アプリからのデータ収集を制御しません。 ポータル サイト アプリケーションでは、既定で、次の使用状況イベントに関する製品利用統計情報がログに記録されます。 このデータは、Microsoft Intune に送信されます。 Microsoft ポリシーに基づき、個人を特定できる情報 (PII) は収集しません。
+Intune App SDK for Android は、アプリからのデータ収集を制御しません。 ポータル サイト アプリケーションでは、既定で、製品利用統計情報がログに記録されます。 このデータは、Microsoft Intune に送信されます。 Microsoft ポリシーに基づき、個人を特定できる情報 (PII) は収集しません。
 
 > [!NOTE]
 > エンド ユーザーがこのデータの送信を選択しない場合、ポータル サイト アプリの [設定] で製品利用統計情報をオフにする必要があります。 詳しくは、「[Microsoft による使用状況データの収集を無効にする](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android)」をご覧ください。 

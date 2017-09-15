@@ -1,7 +1,7 @@
 ---
 title: "Azure での Intune の機能の移動先"
-titleSuffix: Intune on Azure
-description: "Azure コンソールで Intune の機能を確認できます。\""
+titlesuffix: Azure portal
+description: "Azure Portal で Intune の機能がどこにあるかを確認できます。"
 keywords: 
 author: dagerrit
 ms.author: dagerrit
@@ -15,16 +15,16 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18e5ea572bde503600bc33a0b4401efed2e35d18
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 105b874523024b58098205d94da47c07ee432dfc
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Azure での Intune の機能の移動先
-Intune から Azure Portal に移行する際に、いくつかのタスクがより論理的に整理されました。 しかし、このような改善を行えば、新しい構成を学ばなければなりません。 このリファレンス ガイドは、従来のコンソールを使用した Intune の知識があり、Intune で行われていた内容を Azure ではどのように実行されるのかについて関心があるユーザーに向けて作成しました。 この記事でお探しの機能が記載されていない場合は、今後更新できるように記事の最後にコメントを残してください。
+Intune から Azure Portal に移行する際に、いくつかのタスクがより論理的に整理されました。 しかし、このような改善を行えば、新しい構成を学ばなければなりません。 このリファレンス ガイドは、従来のポータルを使用した Intune の知識があり、Intune で行われていた内容を Azure Portal ではどのように実行されるのかについて関心があるユーザーに向けて作成しました。 この記事でお探しの機能が記載されていない場合は、今後更新できるように記事の最後にコメントを残してください。
 ## <a name="quick-reference-guide"></a>クイック リファレンス ガイド
-|機能 |クラシック コンソールのパス|Azure での Intune のパス|
+|機能 |従来のポータルでのパス|Azure Portal の Intune でのパス|
 |------------|---------------|---------------|
 |Device Enrollment Program (DEP) |[管理] > [モバイル デバイス管理] > [iOS および Mac OS X] > [Device Enrollment Program]|[[デバイスの登録] > [Apple の登録] > [Enrollment Program トークン]](#where-did-apple-dep-go) |
 |Device Enrollment Program (DEP)| [管理] > [モバイル デバイス管理] > [iOS および Mac OS X] > [Device Enrollment Program] |[[デバイスの登録] > [Apple の登録] > [Enrollment Program Serial Numbers]\(Enrollment Program シリアル番号\)](#where-did-apple-dep-go) |
@@ -39,10 +39,10 @@ Intune から Azure Portal に移行する際に、いくつかのタスクが�
 
 
 ## <a name="where-do-i-manage-groups"></a>グループを管理する場所
-Azure の Intune では、[Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) を使用してグループを管理します。
+Azure Portal の Intune では、[Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) を使用してグループを管理します。
 
 ## <a name="where-did-enrollment-rules-go"></a>登録ルールの移動先
-従来のコンソールでは、モバイルおよび最新の Windows/macOS デバイスの MDM の登録に適用されるルールを次のようにして設定できました。
+従来のポータルでは、モバイルおよび最新の Windows/macOS デバイスの MDM の登録に適用されるルールを次のようにして設定できました。
 
 ![従来のモバイル デバイスの登録ルールの画像](./media/01-classic-rules.png)
 
@@ -50,11 +50,11 @@ Azure の Intune では、[Azure Active Directory (AD)](https://docs.microsoft.c
 
 ![Azure のモバイル デバイス登録制限の画像](./media/02-azure-enroll-restrictions.png)
 
-既定の [デバイス数の制限] は、従来のコンソールの [デバイス登録制限] に対応します。
+既定の [デバイスの上限数の制限] は、従来のポータルの [デバイス登録制限] に対応します。
 
 ![Azure のデバイス数の制限の画像](./media/03-azure-device-limit.png)
 
-既定の [デバイスの種類の制限] は、従来のコンソールの [プラットフォームの制限] に対応します。
+既定の [デバイスの種類の制限] は、従来のポータルの [プラットフォームの制限] に対応します。
 
 ![Azure のデバイスの種類の制限の画像](./media/04-azure-platform-restrictions.png)
 
@@ -65,21 +65,21 @@ Azure の Intune では、[Azure Active Directory (AD)](https://docs.microsoft.c
 新しい制限の機能は、Azure Portal のみに追加されます。
 
 ## <a name="where-did-apple-dep-go"></a>Apple DEP の移動先
-従来のコンソールでは、Intune が Apple のデバイス登録プログラムと統合されるように設定し、Apple サービスとの同期を手動で要求できました。
+従来のポータルでは、Intune が Apple のデバイス登録プログラムと統合されるように設定し、Apple サービスとの同期を手動で要求できました。
 
 ![従来の DEP トークンの画像](./media/06-classic-dep-token.png)
 
-Azure Portal でも、Intune クラシックと同じ手順で Apple のデバイス登録プログラムを設定します。
+Azure Portal でも、Intune の従来のポータルと同じ手順で Apple のデバイス登録プログラムを設定します。
 
 ![Azure の DEP トークンの画像](./media/07-azure-dep-token.png)
 
-ただし、従来のコンソールの **[同期]** オプションが、シリアル番号管理のワークフローに移動しています。手動による同期の結果がここに表示されるためです。
+ただし、従来のポータルの **[同期]** オプションが、シリアル番号管理のワークフローに移動しています。手動による同期の結果がここに表示されるためです。
 
 ![Azure の DEP 同期の画像](./media/08-azure-dep-sync.png)
 
 ## <a name="where-did-corporate-pre-enrolled-devices-go"></a>会社の事前登録済みデバイスの移動先
 ### <a name="by-ios-serial-number"></a>iOS シリアル番号を使用
-従来のコンソールでは、Apple デバイス登録プログラム (DEP) と Apple Configurator ツールを使用して iOS デバイスを登録できます。 どちらの方法でも、シリアル番号を使用したデバイスの事前登録が可能で、この登録によって特別な業務用デバイスの登録プロファイルが割り当てられます。 登録の前に、**[会社の事前登録済みデバイス] の [iOS シリアル番号を使用]** のデバイス グループから登録プロファイルの割り当てを管理できます。
+従来のポータルでは、Apple デバイス登録プログラム (DEP) と Apple Configurator ツールを使用して iOS デバイスを登録できます。 どちらの方法でも、シリアル番号を使用したデバイスの事前登録が可能で、この登録によって特別な業務用デバイスの登録プロファイルが割り当てられます。 登録の前に、**[会社の事前登録済みデバイス] の [iOS シリアル番号を使用]** のデバイス グループから登録プロファイルの割り当てを管理できます。
 
 ![従来の Apple シリアル番号の画像](./media/09-classic-apple-serials.png)
 
@@ -93,18 +93,18 @@ Azure Portal でも、Intune クラシックと同じ手順で Apple のデバ�
 
 ### <a name="by-imei-all-platforms"></a>IMEI (すべてのプラットフォーム) を使用
 
-従来のコンソールでは、デバイスの IMEI 番号を事前に一覧表示することで、デバイスを Intune に登録する際に業務用としてマークすることができました。
+従来のポータルでは、デバイスの IMEI 番号を事前に一覧表示することで、デバイスを Intune に登録する際に業務用としてマークすることができました。
 
 ![IMEI 番号の従来の一覧の画像](./media/12-classic-corp-imei.png)
 
-Azure コンソールでは、コンマ区切り値 (CSV) ファイルを使用して同じ IMEI を [業務用デバイスの ID] 一覧にアップロードする必要があります。 新しいポータルでは、IMEI 番号の手動での入力はサポートされません。
+Azure Portal では、コンマ区切り値 (CSV) ファイルを使用して同じ IMEI を [業務用デバイスの ID] 一覧にアップロードする必要があります。 新しいポータルでは、IMEI 番号の手動での入力はサポートされません。
 
 ![IMEI 番号の Azure の一覧の画像](./media/13-azure-corp-imei.png)
 
 Azure Portal の Intune では IMEI 以外の種類の ID も今後サポートされることになっていますが、現在は事前表示用の IMEI 番号のみが許可されています。
 
 ## <a name="where-did-corporate-device-enrollment-profiles-go"></a>業務用デバイスの登録プロファイルの移動先
-Apple のデバイス登録プログラムまたは Apple Configurator ツールを使用して iOS デバイスを登録するには、デバイスに割り当てられる業務用デバイスの登録プロファイルを指定する必要があります。 従来のコンソールでは、これらのプロファイルの作成と管理は同じ一覧にありました。
+Apple のデバイス登録プログラムまたは Apple Configurator ツールを使用して iOS デバイスを登録するには、デバイスに割り当てられる業務用デバイスの登録プロファイルを指定する必要があります。 従来のポータルでは、これらのプロファイルの作成と管理は同じ一覧にありました。
 
 ![従来のデバイスの登録プロファイルの画像](./media/14-classic-corp-profiles.png)
 

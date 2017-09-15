@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Intune の使用条件の設定"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Intune 用ポータル サイトでユーザーに表示する使用条件を設定します。 "
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0262b8068ddf134de5ffec0965476fb513ceb9ab
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 47b153223e10ec358c61a212bdacd109ee90bbcd
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="ensure-users-accept-company-terms-for-access"></a>ユーザーにアクセス関連の会社条項に同意させる
 
@@ -32,14 +32,14 @@ Intune 管理者は、ユーザーが会社の使用条件に同意しないと�
 ## <a name="create-terms-and-conditions"></a>使用条件を作成する
 次の手順で使用条件を作成します。 表示名と説明は管理目的で使用されます。条件のプロパティはポータル サイトでユーザーに表示されます。
 
-1. Intune ポータルで **[デバイスの登録]** を選択し、**[使用条件]** を選択します。
+1. Azure Portal で **[デバイスの登録]** を選択し、**[使用条件]** を選択します。
 2. **[作成]** を選択します。
-![Intune ポータルのスクリーンショット。使用条件の [作成] ボタンを確認できます。](media/terms-create-terms.png)
+![Azure Portal のスクリーンショット。使用条件の [作成] ボタンを確認できます。](media/terms-create-terms.png)
 3. ブレードを展開し、次の情報を指定します。
 
-   - **[表示名]**: Intune ポータルにおける条件の名前。 ユーザーにはこの名前は表示されません。
+   - **[表示名]**: Azure Portal における条件の名前。 ユーザーにはこの名前は表示されません。
 
-   - **[説明]**: Intune ポータルでこの条件セットの識別に役立つ任意の説明。
+   - **[説明]**: Azure Portal でこの条件セットの識別に役立つ任意の説明。
 
 4. [Define terms of use (使用条件の定義)] の横にある矢印を選択し、[使用条件] ブレードを開いて、次の情報を入力します。
 
@@ -64,9 +64,9 @@ Intune 管理者は、ユーザーが会社の使用条件に同意しないと�
 
 ポータル サイトを利用する前に承諾を求めるユーザー グループに使用条件を割り当てることができます。
 
-1. Intune ポータルで **[デバイスの登録]** を選択し、**[使用条件]** を選択します。
+1. Azure Portal で **[デバイスの登録]** を選択し、**[使用条件]** を選択します。
 2. 使用条件の一覧で、割り当てる条件を選択し、**[割り当てられたグループ]** を選択します。
-![ポータルの [グループの割り当て] ブレードのスクリーンショット。使用条件割り当てのための [グループの選択] ボタンと [選択] ボタンを確認できます。](media/terms-assign-groups.png)
+![Azure Portal の [グループの割り当て] ブレードのスクリーンショット。使用条件割り当てのための [グループの選択] ボタンと [選択] ボタンを確認できます。](media/terms-assign-groups.png)
 3. **[グループの選択]** ボタンをクリックし、**[グループの選択]** ブレードで条件を割り当てるグループを選択し、**[選択]** をクリックします。 動的なグループには使用条件を割り当てることができません。
 4. **[割り当てられたグループ]** ブレードで、**[保存]** をクリックします。  これで使用条件が選択したグループのユーザーに割り当てられました。 次回ポータル サイトにアクセスしたとき、条件の承諾がユーザーに求められます。 使用条件に同意する必要があるのは一度のみです。 複数のデバイスを持つユーザーは、各デバイスで同意する必要はありません。
 

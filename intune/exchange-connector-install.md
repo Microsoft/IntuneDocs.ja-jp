@@ -1,7 +1,7 @@
 ---
 title: "オンプレミス EAS を Intune と接続する Exchange Connector のセットアップ"
-titleSuffix: Intune Azure
-description: "Intune Azure: Connector ツールである Exchange ActiveSync MDM を使用して、Intune とオンプレミス Exchange Server 間の通信を有効にします"
+titleSuffix: Azure portal
+description: "コネクタ ツールを使って Intune とオンプレミス Exchange Server との通信を有効にする"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1dd5143ce6c604f416af1c6b6b1df684346e2f6d
-ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
+ms.openlocfilehash: f9dc93cf0a24032eba051f770af1b35f9932acc9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Microsoft Intune Azure で Intune のオンプレミス Exchange Connector をセットアップする
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 07/14/2017
 
 オンプレミス Exchange Server と通信するために Microsoft Intune を有効にする接続を設定するには、次の手順が必要です。
 
-1.  Intune ポータルから、Intune のオンプレミス Exchange Connector をダウンロードします。
+1.  Azure Portal から、Intune のオンプレミス Exchange Connector をダウンロードします。
 2.  Intune のオンプレミス Exchange Connector をインストールし、構成します。
 3.  Exchange 接続を確認します。
 

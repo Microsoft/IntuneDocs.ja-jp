@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/10/2016
+ms.date: 09/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2d2acab722c0a1f0c5757f6bbe75687cd8416485
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4d3b03d44fee3ffe103b6eeadc362d10c6f1b228
+ms.sourcegitcommit: 00352501833818a08479758ba1c9efdf7223e264
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/05/2017
 ---
 # <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>Microsoft Intune でインベントリを使用してデバイスを把握する
 
@@ -63,6 +63,9 @@ Intune は通常、7 日ごとに管理対象デバイスからインベント�
 |**イーサネット MAC**|Mac OS X デバイスのみ|
 |**アクティブ化ロック有効**|iOS デバイスのみ|
 |**暗号化有効**|All のいずれかのデバイス|
+
+>[!NOTE]
+>上記項目の一部は、デバイスで利用している通信事業者によっては収集されない場合があります。
 
 ## <a name="whats-collected-from-windows-pcs"></a>Windows PC から収集される情報
 > [!IMPORTANT]

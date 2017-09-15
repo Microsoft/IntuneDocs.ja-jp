@@ -1,6 +1,6 @@
 ---
 title: "Intune で登録制限を設定する"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Intune でプラットフォームごとに登録を制限し、デバイス登録の上限数を設定します。 \""
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c8b945cf1722d25a9242a4a7776d023a58fe0036
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b74faadfc93485023ea71f42b703f3b102aaa5b3
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-groups-in-intune"></a>Intune でグループを追加する
 Intune では、デバイスとユーザーの管理に Azure Active Directory (AD) のグループを使用します。 Intune 管理者は、組織のニーズに合ったグループをセットアップできます。 地理的な場所、部門、ハードウェアの特性ごとにグループを作成して、ユーザーまたはデバイスを整理します。 大規模なタスクを管理するには、グループを使用します。 多数のユーザーにポリシーを設定したり、一連のデバイスにアプリを展開したりする場合などです。
@@ -33,8 +33,8 @@ Intune では、デバイスとユーザーの管理に Azure Active Directory (
 ## <a name="add-a-new-group"></a>新しいグループを追加する
 
 新しいグループを作成するには、次の手順に従います。
-1. Intune ポータルで **[グループ]** に進み、**[All groups]/(すべてのグループ)/** ブレードで **[新しいグループ]** を選択します。
-  ![[新しいグループ] が選択された Intune ポータルのスクリーンショット](./media/groups-add-new.png)
+1. Azure Portal で **[グループ]** に進み、**[All groups]/(すべてのグループ)/** ブレードで **[新しいグループ]** を選択します。
+  ![[新しいグループ] が選択された Azure Portal のスクリーンショット](./media/groups-add-new.png)
 2. 新しいグループの **[名前]** と **[説明]** を指定します。 これらのプロパティは、管理ポータルのみに表示され、ユーザーには表示されません。
 
 3. **[メンバーシップの種類]** を選択します。

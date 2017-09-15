@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: fa70e21b9e9f7adfc508e24bd442a48c834ed7db
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: f4e414f3696c64f8ea450394928aa055ad427afd
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enable-byod-with-intune"></a>Intune で BYOD を有効にする
 
@@ -48,7 +48,7 @@ Intune サービスを準備した後は、管理するさまざまなデバイ�
 
 -   **Android デバイス** Android デバイスは、事前準備の必要なく Intune サービスに登録できます。 ユーザーは、Google Play からポータル サイト アプリを入手して、管理対象として [Android デバイスを登録](/intune-user-help/enroll-your-device-in-intune-android)できます。
 
--   **Windows Phone および PC** 追加構成で Windows デバイスを登録することができます。 エンド ユーザーのエクスペリエンスを簡略化するために、Azure Active Directory (AD) Premium で Windows 10 モバイル デバイスと Windows 10 PC の自動登録を有効にすることができます。 Azure AD Premium がないか、Windows 8.1 をサポートする必要がある場合は、[登録サーバーの DNS エイリアス](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium)を作成すると登録が容易になります。
+-   **Windows Phone および PC** 追加構成で Windows デバイスを登録することができます。 エンド ユーザーのエクスペリエンスを簡略化するために、Azure Active Directory (AD) Premium で Windows 10 モバイル デバイスと Windows 10 PC の自動登録を有効にすることができます。 Azure AD Premium がないか、Windows 8.1 をサポートする必要がある場合は、[登録サーバーの DNS エイリアス](windows-enroll.md#simplify-windows-enrollment-without-azure-ad-premium)を作成すると登録が容易になります。
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>管理対象のデバイスが基本的なセキュリティ要件を満たしていることを確認する
@@ -82,7 +82,7 @@ Intune では、iOS アプリ ストアとビジネス向け Microsoft ストア
 
 -   [iOS デバイス用のボリューム購入アプリの管理](vpp-apps-ios.md)。 iOS アプリの複数のライセンスを購入するには、[Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) を利用します。 このためには、Apple Web サイトから Apple VPP アカウントをセットアップし、Apple VPP トークンを Intune にアップロードする必要があります。 その後、ボリューム購入情報を Intune と同期し、ボリューム購入アプリの使用を追跡することができます。
 
--   [ビジネス向け Microsoft ストアから購入したアプリの管理](windows-store-for-business.md)。 [ビジネス向け Microsoft ストア](https://www.microsoft.com/business-store)では、組織用のアプリを見つけて、個別または大量購入することができます。 Intune にストアを接続することで、Intune ポータルからボリューム購入アプリを管理することができます。
+-   [ビジネス向け Microsoft ストアから購入したアプリの管理](windows-store-for-business.md)。 [ビジネス向け Microsoft ストア](https://www.microsoft.com/business-store)では、組織用のアプリを見つけて、個別または大量購入することができます。 Intune にストアを接続することで、Azure Portal からボリューム購入アプリを管理することができます。
 
 ## <a name="protect-company-data"></a>会社のデータを保護する
 

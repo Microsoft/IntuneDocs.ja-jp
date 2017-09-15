@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Intune のデバイス プロファイルに関するトラブルシューティング"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Intune デバイス プロファイルの問題が解決できずに困っている場合は、このトピックに従って問題を解決してください。\""
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ed238f35927f17b20402f64586686246afabb900
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 426bed61930e045f38e3c7c658dbb7168dc2f551
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>Microsoft Intune のデバイス プロファイルに関するトラブルシューティング
 
@@ -59,7 +59,7 @@ ms.lasthandoff: 07/01/2017
 
 -   異なるコンプライアンス ポリシーの同じ設定について評価する場合、最も制限の厳しいコンプライアンス ポリシー設定が適用されます。
 
--   構成ポリシーの設定が別の構成ポリシーの設定と競合する場合、Intune コンソールにその競合が表示されます。 このような競合は手動で解決する必要があります。
+-   構成ポリシーの設定が別の構成ポリシーの設定と競合する場合、Azure Portal にその競合が表示されます。 このような競合は手動で解決する必要があります。
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>アプリ保護ポリシー同士が競合している場合はどうなりますか。 どのポリシーがアプリに適用されますか。
 競合している値は、(リセットする前の PIN の試行で使用するような) 番号入力フィールドを除き、アプリ保護ポリシーで使用可能な最も制限の厳しい設定になっています。  番号入力フィールドは、推奨設定のオプションを使用することでコンソールで MAM ポリシーを作成した場合と同じ値に設定されます。

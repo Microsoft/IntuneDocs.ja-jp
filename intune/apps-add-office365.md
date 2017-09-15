@@ -1,6 +1,6 @@
 ---
 title: "Intune を使用して Windows 10 デバイスに Office 365 ProPlus アプリをインストールする"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Intune を使用して、簡単に Windows 10 デバイスに Office 365 アプリをインストールする方法について説明します。"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 471b4dd524cea553af89acc3e158fd2a05cebe3d
-ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
+ms.openlocfilehash: c3613c1e0482654d799329069f56ec0b0aac7772
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune で Windows 10 デバイスに Office 365 ProPlus 2016 アプリを割り当てる方法
 
@@ -60,7 +60,7 @@ ms.lasthandoff: 08/14/2017
 
 ## <a name="configure-app-information"></a>アプリ情報の構成
 
-この手順では、アプリ スイートに関する情報を指定します。 この情報は、アプリ スイートを Intune コンソールで識別したり、エンドユーザーが会社のポータル サイト アプリで探したりする場合に役立ちます。
+この手順では、アプリ スイートに関する情報を指定します。 この情報は、アプリ スイートを Intune で識別したり、ユーザーが会社のポータル サイト アプリで探したりする場合に役立ちます。
 
 1.  **[アプリの追加]** ブレードで、**[アプリ スイートの情報]** を選択します。
 2.  **[アプリ スイートの情報]** ブレードで、次の情報を指定します。 

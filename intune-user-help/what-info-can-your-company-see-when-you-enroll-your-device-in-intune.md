@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/21/2017
+ms.date: 09/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,36 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 88f1d4b3e54a27be86a542e1265ea9606498ab4f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8da134d768333fb03cc87ab38230f5f022fee2e1
+ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/08/2017
 ---
-# <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>デバイスを Intune に登録した場合に会社が確認できる情報
+# <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>デバイスを登録した場合に会社が確認できる情報
 
-デバイスを管理対象として登録すると、デバイス上の特定の情報へのアクセス許可を会社の IT 部門に与えることになります。これは、デバイス上の会社のデータを保護するのに役立ちます。
+デバイスを管理対象として登録すると、デバイス上の特定の情報を表示する権限を会社に与えることになります。これは、デバイス上の会社のデータを保護するのに役立ちます。
 
-**IT 管理者が確認できないもの**
+**会社が確認できない情報**
 
 - 通話と Web 閲覧の履歴
--   場所
-- 個人の電子メール
-- テキスト メッセージ
+- 電子メールとテキスト メッセージ
 - 連絡先
--   個人アカウントのパスワード
-- 予定表のイベント
+- 予定表
+-   パスワード
 - フォト アプリやカメラ ロールの内容を含む、画像
 
-**IT 管理者が確認できるもの**
+**会社が常に確認できる情報**
 
--   モデル
--   シリアル番号
--   オペレーティング システムのバージョン
--   アプリ名
--   Owner
--   デバイス名
--   製造元 (Apple 製以外のデバイスの場合)
--   電話番号 (仕事用デバイスの場合は全桁。 個人のデバイスの場合は下 4 桁のみ。)
+- デバイス モデル (例: iPhone 7)
+- 製造元 (例: Microsoft)
+- オペレーティング システム (例: Android 7.1)
+- アプリ名 (例: Microsoft Word)
+- デバイスの所有者
+- デバイス名
+- シリアル番号
+
+**会社が確認できる場合がある情報**
+
+-  電話番号: **会社**が所有するデバイスの場合は、ユーザーの電話番号を確認できます。 **個人**が所有するデバイスの場合は、会社が確認できるのは、ユーザーの電話番号の最後の 4 桁のみです。 個々のデバイスの**所有権の種類**を確認するには、デバイスの **[デバイスの詳細]** ページを開きます。 
+-  場所: 監視対象となっている iOS デバイスを紛失した場合を除き、会社はユーザーのデバイスの場所を確認できません。 [確認方法](https://go.microsoft.com/fwlink/?linkid=853816)

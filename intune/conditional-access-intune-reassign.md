@@ -1,6 +1,6 @@
 ---
 title: "条件付きアクセス ポリシーを Intune クラシック ポータルから Azure Portal に移行する"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "条件付きアクセス ポリシーを Intune クラシック ポータルから Azure Portal に移行します。"
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5f1ea2b0ceb32d0aa05a28e0f01f65b80b1ddcf
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 5b0b0982018dcfa3c606ea55b9264e5cd6cd1a82
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>条件付きアクセス ポリシーを Intune クラシック ポータルから Azure Portal に再割り当てする
 
@@ -33,7 +33,7 @@ Azure Portal に移行する準備ができた場合、このトピックの手�
 
 - このトピックの手順に従って、Azure Portal でポリシーを再作成します。
 
-- Azure Portal で新しいポリシーが意図したとおりに動作することを確認した後、Intune クラシック コンソールで条件付きポリシーを無効にします。
+- Azure Portal で新しいポリシーが意図したとおりに動作することを確認した後、Intune クラシック ポータルで条件付きポリシーを無効にします。
 <br /><br />
     - Intune クラシック ポータルで条件付きアクセス ポリシーを**無効にする前に**、新しいポリシーへのユーザー移行方法を計画します。 これには 2 つの方法があります。
 <br /><br />
@@ -82,7 +82,7 @@ Azure Portal の **[Intune アプリ保護]** ブレードで、管理者は、I
     ![Intune ポータルと Azure Portal のユーザー グループ UI の比較](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
-    > Azure Portal で行う選択は、Intune ポータルで行った選択と対応している必要があります。 たとえば、Intune クラシック ポータルですべてのユーザーを選んだ場合は、Azure Portal でも **[すべてのユーザー]** を選びます。 さらに、Intune クラシック ポータルで **[除外グループ]** オプションを選んだ場合は、Azure Portal でもそのグループを除外する必要があります。
+    > Azure Portal で行う選択は、Azure Portal に対して行った選択と対応している必要があります。 たとえば、Intune クラシック ポータルですべてのユーザーを選んだ場合は、Azure Portal でも **[すべてのユーザー]** を選びます。 さらに、Intune クラシック ポータルで **[除外グループ]** オプションを選んだ場合は、Azure Portal でもそのグループを除外する必要があります。
 
 5. グループを選んだ後、**[選択]** をクリックし、**[完了]** をクリックします。
 
@@ -150,7 +150,7 @@ Intune クラシック ポータルで Exchange Online のポリシーの一部�
     ![Intune ポータルと Azure Portal のユーザー グループ UI の比較](./media/reassign-ca-12.png)
 
     > [!IMPORTANT] 
-    > Azure Portal で行う選択は、Intune ポータルで行った選択と対応している必要があります。 たとえば、Intune クラシック ポータルですべてのユーザーを選んだ場合は、Azure Portal でも **[すべてのユーザー]** を選びます。 さらに、Intune クラシック ポータルで **[除外グループ]** オプションを選んだ場合は、Azure Portal でもそのグループを除外する必要があります。
+    > Azure Portal で行う選択は、Azure Portal に対して行った選択と対応している必要があります。 たとえば、Intune クラシック ポータルですべてのユーザーを選んだ場合は、Azure Portal でも **[すべてのユーザー]** を選びます。 さらに、Intune クラシック ポータルで **[除外グループ]** オプションを選んだ場合は、Azure Portal でもそのグループを除外する必要があります。
 
 5. グループを選んだ後、**[選択]** をクリックし、**[完了]** をクリックします。
 

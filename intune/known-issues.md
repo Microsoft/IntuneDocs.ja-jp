@@ -1,6 +1,6 @@
 ---
-title: "Azure での Microsoft Intune の既知の問題"
-titleSuffix: Intune on Azure
+title: "Azure Portal での Microsoft Intune の既知の問題"
+titlesuffix: Azure portal
 description: "Intune の既知の問題についての説明"
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5a9b7f69cded9258efb6c8a897e0c026f3228a6b
-ms.sourcegitcommit: c248b5a15894f0ade23bad4644c3b7035a9fcce8
+ms.openlocfilehash: 7570e7b2f612d1d2a017f82967cdc5baf798a761
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune の既知の問題
 
@@ -31,13 +31,13 @@ ms.lasthandoff: 08/15/2017
 
 ここに記載されていないバグを報告する場合は、[サポートを依頼](get-support.md)してください。
 
-Intune への新機能の追加を依頼する場合は、[Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) サイトでレポートを提出することをご検討ください。
+Intune への新機能の追加を依頼する場合は、[UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) サイトでレポートを提出することをご検討ください。
 
 ## <a name="migration"></a>移行
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>移行中に Intune で作成されるグループは、他の Microsoft 製品の機能に影響する可能性がある
 
-クラシック Intune から Azure ポータルに移行すると、**All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** という新しいグループが表示される場合があります。 このグループには、Intune のライセンスを持つユーザーだけでなく、ご利用の Azure Active Directory のすべてのユーザーが含まれます。 このグループを使用すると、一部の既存のユーザーまたは新規ユーザーがどのグループにも属さない場合に、他の Microsoft 製品に関する問題が発生することがあります。
+Intune から Azure Portal に移行すると、**All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** という新しいグループが表示される場合があります。 このグループには、Intune のライセンスを持つユーザーだけでなく、ご利用の Azure Active Directory のすべてのユーザーが含まれます。 このグループを使用すると、一部の既存のユーザーまたは新規ユーザーがどのグループにも属さない場合に、他の Microsoft 製品に関する問題が発生することがあります。
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>特定の機能に必要な二次移行
 
@@ -49,20 +49,20 @@ Intune への新機能の追加を依頼する場合は、[Uservoice](https://mi
 - デバイス登録マネージャー アカウント
 - Apple Volume Purchase Program
 
-これらの機能は、従来の Intune (Silverlight) コンソールや Azure Portal では管理できないため、移行することで以下のようになります。
-- 従来のコンソールでは無効になります。
+これらの機能は、Intune (Silverlight) コンソールや Azure Portal では管理できないため、移行すると以下のようになります。
+- 従来のポータルでは無効になります
 - Azure Portal では有効になります。  
 
-2017 年 9 月 11 日後、これらの機能の移行は、Azure へのプライマリ移行に結合されます。 自分のアカウントが Azure Portal を使用するために既に移行されている場合、このセカンダリ移行は 2017 年の 9 月 11 日から 22 日までに行われます。 アカウントの移行が開始すると、同じ日に完了します。 移行には、Intune クラシック コンソールでこれらの機能が無効になった時刻から最大 6 時間かかります。
+2017 年 9 月 11 日後、これらの機能の移行は、Azure へのプライマリ移行に結合されます。 自分のアカウントが Azure Portal を使用するために既に移行されている場合、このセカンダリ移行は 2017 年の 9 月 11 日から 22 日までに行われます。 アカウントの移行が開始すると、同じ日に完了します。 移行には、Intune クラシック ポータルでこれらの機能が無効になった時刻から最大 6 時間かかります。
 
 現在 Azure Portal でこれらの Intune 機能を管理している場合は、以下の点にご注意ください。
 
 #### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Apple DEP における、既定の業務用デバイスの登録プロファイルの削除
-Azure Portal では、Apple Device Enrollment Program (DEP) デバイスについての、既定の業務用デバイスの登録プロファイルがサポートされません。 この機能は、従来の Intune (Silverlight) コンソールでは使用できますが、プロファイルが意図せずに割り当てられることを防ぐため、廃止されています。 DEP シリアル番号が Azure Portal で同期されている場合、業務用デバイスの登録プロファイルは割り当てられません。 登録プロファイルは、デバイスを使用する前に割り当てられている必要があります。
+Azure Portal では、Apple Device Enrollment Program (DEP) デバイスについての、既定の業務用デバイスの登録プロファイルがサポートされません。 この機能は、Intune (Silverlight) コンソールで使うことはできますが、プロファイルが意図せずに割り当てられることを防ぐため、廃止されています。 DEP シリアル番号が Azure Portal で同期されている場合、業務用デバイスの登録プロファイルは割り当てられません。 登録プロファイルは、デバイスを使用する前に割り当てられている必要があります。
 
 #### <a name="apple-dep-token-restored-with-migration"></a>移行により復元された Apple DEP トークン
 
-従来の Intune (Silverlight) ポータルで Apple Device Enrollment Program トークンを削除し、新しいトークンを Azure Portal にアップロードしない場合、移行の際に元のトークンが Azure Portal 上に復元されます。 このトークンを削除して DEP 登録をブロックするには、Azure Portal からトークンを削除します。
+Intune (Silverlight) ポータルで Apple Device Enrollment Program トークンを削除し、新しいトークンを Azure Portal にアップロードしない場合、移行すると元のトークンが Azure Portal 上に復元されます。 このトークンを削除して DEP 登録をブロックするには、Azure Portal からトークンを削除します。
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>移行したポリシーの状態を示すブレードが機能しない
 
@@ -101,8 +101,9 @@ Intune の今後の更新には、この VPN クライアントのバージョ�
 
 ### <a name="compliance-policies-from-intune-do-not-show-up-in-new-console"></a>Intune のコンプライアンス ポリシーが新しいコンソールに表示されない
 
-クラシック Intune ポータルで作成したコンプライアンス ポリシーは移行できますが、Azure Portal では設計が変更されているため、Azure Portal には表示されません。 クラシック Intune ポータルで作成したコンプライアンス ポリシーは依然として有効ですが、ポリシーの表示や編集はクラシック Intune ポータル上で行う必要があります。
-また、Azure Portal で作成した新しいコンプライアンス ポリシーは、クラシック Intune ポータル上には表示されません。
+クラシック Intune ポータルで作成したコンプライアンス ポリシーは移行できますが、Azure Portal では設計が変更されているため、Azure Portal には表示されません。 Intune クラシック ポータルで作成したコンプライアンス ポリシーは依然として有効ですが、ポリシーの表示や編集はクラシック ポータル上で行う必要があります。
+
+また、Azure Portal で作成した新しいコンプライアンス ポリシーは、クラシック ポータル上には表示されません。
 
 詳細については、「[Intune Azure プレビューでのデバイス コンプライアンスとは](device-compliance.md)」を参照してください。
 

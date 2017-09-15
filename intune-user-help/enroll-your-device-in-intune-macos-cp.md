@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1b177b05f065f66deb8c60be768c123fc7991937
-ms.sourcegitcommit: 091f7b34f1fbf73db2bed5b46d92a78ba0dad1e4
+ms.openlocfilehash: 8eaeb2e0c44870dbebf85d98e2b49d46008068cd
+ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>ポータル サイト アプリで Intune に macOS デバイスを登録する
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 08/23/2017
   > [!NOTE]
   > iPhone や iPad などの iOS デバイスを登録する場合、[代わりにこちらの説明をご覧ください](enroll-your-device-in-intune-ios.md)。
 
-1. __Dock__ で __Safari__ を見つけ、[Microsoft ダウンロード センター](https://www.microsoft.com/download/details.aspx?id=55770) ページを開き、macOS 向けポータル サイト アプリを探します。
+1.  __Dock__ から __Safari__ を起動し、[aka.ms/macoscompanyportal](https://aka.ms/macoscompanyportal) に移動します。 
 
 2. アプリをダウンロードします。 ダウンロードした **CompanyPortal.dmg** は安全に開けることを Mac が確認します。 **[ダウンロード]** フォルダーから開いたら、**[アプリケーション]** フォルダーに**ポータル サイト** アプリをドラッグします。
 
