@@ -3,8 +3,8 @@ title: "Intune での iOS アクティベーション ロックをバイパス�
 titlesuffix: Azure portal
 description: "Intune を使用して、iOS アクティベーション ロックをバイパスし、ロックされたデバイスにアクセスする方法を説明します。\""
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/22/2017
 ms.topic: get-started-article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a59d1bb3c159cf8340a39541e3167efa3e813d1
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: a418f489779d5232d478eeba15e1f346dce49467
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Intune で、監視されている iOS デバイス上のアクティベーション ロックをバイパスする
 

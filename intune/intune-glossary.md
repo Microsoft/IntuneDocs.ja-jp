@@ -3,8 +3,8 @@ title: "Intune の用語集"
 titleSuffix: Azure portal
 description: "Microsoft Intune で使用される用語について説明します"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 07/28/2017
 ms.topic: get-started-article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: 8eaf82e995e3b572d897b63aaf36480424603ce6
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 5d094e59b374ca306482cd1cb87f8a950df7fe14
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune の用語集
 
