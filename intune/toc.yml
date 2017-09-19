@@ -115,7 +115,7 @@
     - name: Intune をセットアップする
       href: setup-steps.md
       items:
-        - name: 必要条件
+        - name: サポートされている構成
           href: supported-devices-browsers.md
           items:
             - name: ネットワーク帯域幅の使用量

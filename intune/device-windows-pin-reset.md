@@ -3,8 +3,8 @@ title: "Intune で Windows デバイスのパスコードをリセットする"
 titlesuffix: Azure portal
 description: "Microsoft PIN Reset Service が統合された Windows デバイスのパスコードを Intune を使用してリセットする方法を説明します。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/09/2017
 ms.topic: get-started-article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0c00d52f3ed06e1810d8b537c2232221ac8f53bd
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: faf3e9b81f76755135f73f8753305d96d227ec14
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>Microsoft PIN Reset Service が統合された Windows デバイスのパスコードを Intune を使用してリセットする
 

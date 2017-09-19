@@ -2,8 +2,8 @@
 title: "KNOX が許可するアプリとブロックするアプリ"
 description: "KNOX が許可するアプリとブロックするアプリの一覧を作成するためのカスタム プロファイル。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 11/02/2016
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b215425534e833db7e92e3f60fc507a168ef576f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2632da8ca8d149e1519aeac33a57571ae1a55a54
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>カスタム ポリシーを使用して、Samsung KNOX Standard デバイス用のアプリを許可またはブロックする
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 07/01/2017
     - **設定の説明。** "実行をブロックするアプリの一覧" のようなオプションの説明を入力します。
     -   **データ型。** ドロップダウン リストで **[文字列]** を選びます。
     -   **OMA-URI。** 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**」と入力します。
-    -   **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,** **|** を使用できます。 (例: package1;package2;)
+    -   **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : , ****|** を使用できます。 (例: package1;package2;)
 
     他のすべてのアプリの実行中にユーザーが Google Play ストアからインストールできるアプリの一覧の場合:
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 07/01/2017
     - **設定の説明。** "ユーザーが Google Play からインストールできるアプリの一覧" といったオプションの説明を入力します。
     - **データ型。** ドロップダウン リストで **[文字列]** を選びます。
     - **OMA-URI。** 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**」と入力します。
-    - **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,** **|** を使用できます。 (例: package1;package2;)
+    - **値。** ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : , ****|** を使用できます。 (例: package1;package2;)
 
 4. **[OK]** をクリックし、**[ポリシーの保存]** をクリックします。 
 

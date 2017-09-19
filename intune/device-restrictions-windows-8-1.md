@@ -3,8 +3,8 @@ title: "Windows 8.1 の Intune デバイス制限設定"
 titleSuffix: Azure portal
 description: "Windows 8.1 デバイスでデバイスの設定と機能を制御するために使用できる Intune 設定について説明します。\""
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 08/01/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d1b4745e1d05d2790de71b947eafc3e6cc1a7a43
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 4bccf3a0e6c41d5baa07fcc3413be82ab52d9227
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Windows 8.1 以降のデバイスの制限設定
 
