@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/15/2017
+ms.date: 09/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fba27041fb55cfbef1cbba39e3679ce6884cd5f0
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: 7fcdd4e7679bc969a7fa000e515b59882973a3da
+ms.sourcegitcommit: 75cea2402a3726c72b12df6111f6d3ee93c852bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="set-up-intune"></a>Intune をセットアップする
 
@@ -37,7 +37,7 @@ Intune サブスクリプションの設定や MDM 権限の設定など、一�
 
 | 手順 | 状態  |
 | ------------- |-------------|
-| 1  | [前提条件](supported-devices-browsers.md) - 開始前に知っておく必要がある情報です。 サポートされる構成やネットワーク要件などです。|
+| 1  | [サポートされる構成](supported-devices-browsers.md) - 開始前に知っておく必要がある情報です。 サポートされる構成やネットワーク要件などです。|
 | 2 |  [Intune にサインインする](account-sign-up.md) - 試用版サブスクリプションにサインインするか、新しい Intune サブスクリプションを作成します。 |  
 | 3 | [ドメイン名を構成する](custom-domain-name-configure.md) - 会社のドメイン名を Intune と接続するために DNS の登録を設定します。 Intune に接続し、リソースを利用するとき、なじみのあるドメインがユーザーに与えられます。  |
 | 4 | [ユーザーを追加する](users-add.md) - 手動でユーザーを追加するか、Active Directory を接続して Intune とユーザーを同期します。 デバイスがたとえば "ユーザーなし" のキオスク デバイスでない限り、必須となります。 |

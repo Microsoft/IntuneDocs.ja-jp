@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.openlocfilehash: 6e3a5e39cf3ee38820b1ff79eb54c019dbb68d29
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: f1a5c8a15007a38942fe543e6c1062bf957a481c
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>ポータル サイト アプリで表示されるメッセージに関してエンド ユーザーをサポートする
 
@@ -95,6 +95,17 @@ ms.lasthandoff: 08/03/2017
 ### <a name="how-to-explain-this-to-your-users"></a>ユーザーへの説明方法
 ユーザーは、[IT 管理者への電子メールによるログの送信](/intune-user-help/send-logs-to-your-it-admin-by-email-android)に関する記事を参照できます。 また、[IT 管理者へのケーブルを使用したログの送信](/intune-user-help/send-logs-to-your-it-admin-by-cable-android)に関する記事を参照すると、2 つの方法を比較できます。
 
+## <a name="your-company-support-needs-to-give-you-access-to-company-resources"></a>会社のサポートが会社のリソースへのアクセス権を与える必要がある
+
+### <a name="where-it-appears"></a>表示内容
+ポータル サイト アプリを **[許可されたアプリ]** または **[適用から除外されるアプリ]** の一覧に追加していない場合にユーザーがサインインしようとすると、サインインが失敗します。 次のメッセージが表示されます:
+
+> **Your company support needs to give you access to company resources\(会社のサポートから会社のリソースへのアクセス権を付与してもらう必要があります\)**  
+> あなたの会社は Windows 情報保護ポリシーを使用してデバイスを保護しています。 ポータル サイトからこのポリシーにアクセスできることを、会社のサポートが確認する必要があります。
+
+### <a name="what-it-means"></a>意味
+
+ポータル サイトを Windows 情報保護 (WIP) のアプリ保護ポリシーの **[許可されたアプリ]** または**[適用から除外されるアプリ]** 一覧に追加します。 詳細については、「[Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune)」を参照してください。
 
 ### <a name="see-also"></a>関連項目
 [Intune の使用に関するエンドユーザーへの通知内容](end-user-educate.md)

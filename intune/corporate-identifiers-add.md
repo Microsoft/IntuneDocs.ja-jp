@@ -15,24 +15,24 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85303c503e068ec23c8321b9359760775bbdb6f8
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 58dac14dcc38329cfa0a98746e667bf6e5438170
+ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="identify-devices-as-corporate-owned"></a>デバイスの企業所有としての識別
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune 管理者はさまざまな方法でデバイスを企業所有として識別できます。 Intune では、企業所有デバイスから追加情報を収集できます。 また、デバイス制限を設定し、企業所有ではないデバイスによる登録を防止できます。
+Intune 管理者は、会社所有のデバイスを特定することで、管理と識別の対象を絞り込むことができます。 Intune は追加の管理タスクを実行して、会社所有のデバイスの完全な電話番号やアプリのインベントリなどの追加情報を収集できます。 また、デバイス制限を設定し、会社所有ではないデバイスによる登録を防止できます。
 
 デバイスは、次の条件のいずれかに該当する場合、企業所有として識別されます。
 
 - [デバイス登録マネージャー](device-enrollment-manager-enroll.md) アカウントで登録されている (すべてのプラットフォーム)
 - Apple [Device Enrollment Program](device-enrollment-program-enroll-ios.md)、[Apple School Manager](apple-school-manager-set-up-ios.md)、[Apple Configurator](apple-configurator-enroll-ios.md) (iOS のみ) で登録されている
 - IMEI (International Mobile Equipment Identifier/国際携帯機器識別) 番号 (IMEI 番号を持つすべてのプラットフォーム) またはシリアル番号 (iOS と Android) で、[登録前に会社所有として識別されている](#identify-corporate-owned-devices-with-imei-or-serial-number)
-- Azure Active Directory または Enterprise Mobility + Security に Windows 10 Enterprise デバイスとして登録されている (Windows 10 のみ)
+- Azure Active Directory または Enterprise Mobility + Security に Windows 10 Enterprise デバイスとして登録されている
 - デバイスのプロパティに、[デバイスの所有権が会社](#change-device-ownership)として表示される
 
 ## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>IMEI またはシリアル番号により、会社所有デバイスとして特定される
