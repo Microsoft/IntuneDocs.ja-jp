@@ -15,19 +15,19 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 105b874523024b58098205d94da47c07ee432dfc
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 41b358f48412585ec40e369225b4263012bfd2f8
+ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Azure での Intune の機能の移動先
 Intune から Azure Portal に移行する際に、いくつかのタスクがより論理的に整理されました。 しかし、このような改善を行えば、新しい構成を学ばなければなりません。 このリファレンス ガイドは、従来のポータルを使用した Intune の知識があり、Intune で行われていた内容を Azure Portal ではどのように実行されるのかについて関心があるユーザーに向けて作成しました。 この記事でお探しの機能が記載されていない場合は、今後更新できるように記事の最後にコメントを残してください。
 ## <a name="quick-reference-guide"></a>クイック リファレンス ガイド
 |機能 |従来のポータルでのパス|Azure Portal の Intune でのパス|
 |------------|---------------|---------------|
-|Device Enrollment Program (DEP) |[管理] > [モバイル デバイス管理] > [iOS および Mac OS X] > [Device Enrollment Program]|[[デバイスの登録] > [Apple の登録] > [Enrollment Program トークン]](#where-did-apple-dep-go) |
-|Device Enrollment Program (DEP)| [管理] > [モバイル デバイス管理] > [iOS および Mac OS X] > [Device Enrollment Program] |[[デバイスの登録] > [Apple の登録] > [Enrollment Program Serial Numbers]\(Enrollment Program シリアル番号\)](#where-did-apple-dep-go) |
+|Device Enrollment Program (DEP) [iOS のみ]|[管理] > [モバイル デバイス管理] > [iOS] > [Device Enrollment Program]|[[デバイスの登録] > [Apple の登録] > [Enrollment Program トークン]](#where-did-apple-dep-go) |
+|Device Enrollment Program (DEP) [iOS のみ]| [管理] > [モバイル デバイス管理] > [iOS および Mac OS X] > [Device Enrollment Program] |[[デバイスの登録] > [Apple の登録] > [Enrollment Program Serial Numbers]\(Enrollment Program シリアル番号\)](#where-did-apple-dep-go) |
 |登録ルール |[管理] > [モバイル デバイス管理] > [登録ルール]|[[デバイスの登録] > [登録制限]](#where-did-enrollment-rules-go) |
 |iOS シリアル番号別のグループ |[グループ] > [すべてのデバイス] > [会社の事前登録済みデバイス] > [iOS シリアル番号を使用]|[[デバイスの登録] > [Apple の登録] > [Enrollment Program Serial Numbers]\(Enrollment Program シリアル番号\)](#where-did-corporate-pre-enrolled-devices-go) |
 |iOS シリアル番号別のグループ |[グループ] > [すべてのデバイス] > [会社の事前登録済みデバイス] > [iOS シリアル番号を使用]| [[デバイスの登録] > [Apple の登録] > [AC Serial numbers]\(AC シリアル番号\)](#where-did-corporate-pre-enrolled-devices-go)|
@@ -69,7 +69,7 @@ Azure Portal の Intune では、[Azure Active Directory (AD)](https://docs.micr
 
 ![従来の DEP トークンの画像](./media/06-classic-dep-token.png)
 
-Azure Portal でも、Intune の従来のポータルと同じ手順で Apple のデバイス登録プログラムを設定します。
+Azure Portal でも、Intune クラシックと同じ手順で Apple のデバイス登録プログラムを設定します。
 
 ![Azure の DEP トークンの画像](./media/07-azure-dep-token.png)
 

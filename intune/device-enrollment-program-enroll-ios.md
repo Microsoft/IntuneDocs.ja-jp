@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c14903d227164089f52c9bd3288a99f29a9141b8
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 94eeb453e5c83c2dadaa757b4c7867f9dd3f62ff
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する
 
@@ -43,7 +43,6 @@ DEP 登録を有効にするには、Intune ポータルと Apple DEP ポータ�
 - [Apple の Device Enrollment Program](http://deploy.apple.com) で購入したデバイス
 - [MDM 機関](mdm-authority-set.md)
 - [Apple MDM プッシュ証明書](apple-mdm-push-certificate-get.md)
-- ユーザー アフィニティには [WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/library/adfs2-help-endpoints)が必要です。 [詳細については、ここをクリック](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)してください。
 
 > [!NOTE]
 > 多要素認証 (MFA) は、ユーザー アフィニティの DEP 登録セットアップ中は動作しません。 登録後、MFA はデバイスで期待どおりに動作します。 デバイスでは、最初のサインイン時にパスワードの変更が必要なユーザーにプロンプトを表示することができません。 さらに、パスワードの有効期限が切れているユーザーには、登録時にパスワードのリセットは求められません。 ユーザーは別のデバイスを使用してパスワードをリセットする必要があります。
@@ -109,7 +108,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 
   **[ユーザー アフィニティ]** で、このプロファイルに対応するデバイスを割り当て済みユーザーとともに登録するかどうかを選択します。
 
- - **[ユーザー アフィニティとともに登録する]** - ユーザーに属していて、アプリのインストールなどのサービスにポータル サイトを使用する必要があるデバイスの場合に選択します。
+ - **[ユーザー アフィニティとともに登録する]** - ユーザーに属していて、アプリのインストールなどのサービスにポータル サイトを使用する必要があるデバイスの場合に選択します。 ユーザー アフィニティには [WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/library/adfs2-help-endpoints)が必要です。 [詳細については、ここをクリック](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)してください。
 
  - **[ユーザー アフィニティなしで登録する]** - 1 人のユーザーに関連付けられていないデバイスの場合に選択します。 ローカルのユーザー データにアクセスせずにタスクを実行するデバイスで使用します。 ポータル サイト アプリなどのアプリは動作しません。
 
@@ -119,6 +118,8 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
     - **[監督下]** - より多くの管理オプションが使用可能な管理モードです。既定でアクティベーション ロックは無効になります。 このチェック ボックスをオフのままにすると、管理機能が制限されます。
 
     - **[ロックされた登録]** - ([管理モード] を [監督下] にする必要があります) 管理プロファイルの削除を許可する iOS 設定を無効にします。 このチェック ボックスをオフのままにすると、[設定] メニューから管理プロファイルを削除できます。 デバイスの登録後は、デバイスを出荷時の設定にリセットしないと、この設定を変更することができません。
+
+  - **[有効な Shared iPad]** - Apple の Device Enrollment Program は共有の iPad をサポートしていません。
 
     - **[ペアリングの許可]** - iOS デバイスをコンピューターと同期できるかどうかを指定します。 **[証明書による Apple Configurator の許可]** を選択した場合は、**[Apple Configurator の証明書]** で証明書を選択する必要があります。
 

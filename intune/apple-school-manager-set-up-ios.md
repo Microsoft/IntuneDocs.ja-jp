@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/21/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b3ecc9af91d1a78f84dd6d4b8f47f0bf3e8c742
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 787fbdd470b4e1fbb4cb3e22ba4065e52d4c63f8
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager での iOS デバイス登録の有効化
 
@@ -38,17 +38,8 @@ Apple School Manager 登録を有効にするには、Intune と Apple School Ma
 - ユーザー アフィニティには [WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/library/adfs2-help-endpoints)が必要です。 [詳細については、ここをクリック](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)してください。
 - [Apple School Management](http://school.apple.com) プログラムで購入されたデバイス
 
-**Apple School Manager 登録の手順**
-1. [Apple School Manager トークンを取得し、デバイスを割り当てる](#get-the-apple-token-and-assign-devices)
-2. [登録プロファイルの作成](#create-an-apple-enrollment-profile)
-3. [School Data Sync の接続](#connect-school-data-sync) (省略可能)
-4. [Apple School Manager 管理デバイスを同期する](#sync-managed-devices)
-5. [Apple School Manager プロファイルをデバイスに割り当てる](#assign-a-profile-to-devices)
-6. [デバイスをユーザーに配布する](#distribute-devices-to-users)
-
 >[!NOTE]
 >多要素認証 (MFA) は、ユーザー アフィニティを使用して Apple School Manager デバイスに登録している間は動作しません。 DEP デバイスに登録が完了すると、MFA は期待どおりに動作します。 登録後、MFA はデバイスで期待どおりに動作します。 デバイスでは、最初のサインイン時にパスワードの変更が必要なユーザーにプロンプトを表示することができません。 さらに、パスワードの有効期限が切れているユーザーには、登録時にパスワードのリセットは求められません。 ユーザーは別のデバイスを使用してパスワードをリセットする必要があります。
-
 
 ## <a name="get-the-apple-token-and-assign-devices"></a>Apple トークンを取得し、デバイスを割り当てる
 
@@ -104,7 +95,8 @@ Apple School Manager で企業所有の iOS デバイスを登録するには、
     - **[監督下]** - より多くの管理オプションが使用可能な管理モードです。既定でアクティベーション ロックは無効になります。 このチェック ボックスをオフのままにすると、管理機能が制限されます。
 
      - **[ロックされた登録]** - ([管理モード] を [監督下] にする必要があります) 管理プロファイルの削除を許可する iOS 設定を無効にします。 このチェック ボックスをオフのままにすると、[設定] メニューから管理プロファイルを削除できます。
-   - **[共有 iPad]** - (**[ユーザー アフィニティなしで登録する]** と **[監視下]** モードが必要です。)管理された Apple ID を使用して、複数のユーザーが登録済みの iPad にログオンすることを許可します。 管理された Apple ID は、Apple School Manager ポータルで作成されます。 共有 iPad の詳細については[こちら](education-settings-configure-ios-shared.md)を参照してください。
+   - **[共有 iPad]** - (**[ユーザー アフィニティなしで登録する]** と **[監視下]** モードが必要です。)管理された Apple ID を使用して、複数のユーザーが登録済みの iPad にログオンすることを許可します。 管理された Apple ID は、Apple School Manager ポータルで作成されます。 共有 iPad の詳細については[こちら](education-settings-configure-ios-shared.md)を参照してください。 [Apple の Shared iPad に関する要件](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56)も参照してください。
+
    >[!NOTE]
    >**[ユーザー アフィニティ]** を **[With user affinity]\(ユーザー アフィニティあり\)** に設定するか、**[監視下]** モードを **[オフ]** に設定すると、登録プロファイルの [共有 iPad] モードは無効になります。
 

@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/16/2017
+ms.date: 09/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d7a51094851af8c3b6d872300cd9b23e845c6494
-ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
+ms.openlocfilehash: d553f62ed2ee1c9e5a6b9121b766e6e427d06bf7
+ms.sourcegitcommit: 75cea2402a3726c72b12df6111f6d3ee93c852bf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune のデバイス登録に関するトラブルシューティング
 
@@ -370,7 +370,14 @@ Android デバイスでは、[SSL Server hello](https://technet.microsoft.com/li
 ### <a name="other-ios-enrollment-errors"></a>iOS のその他の登録エラー
 iOS 登録エラーの一覧は、デバイスのユーザー ドキュメントの「[Intune にデバイスを登録している最中にエラーが表示される](/intune-user-help/using-your-iOS-or-macOS-device-with-intune)」に記載されています。
 
-## <a name="pc--issues"></a>PC の問題
+## <a name="pc-issues"></a>PC の問題
+
+
+|エラー メッセージ|問題|解決方法|
+|---|---|---|
+|**IT 管理者がアクセスするためのライセンスを割り当てる必要があります**<br>IT 管理者は、このアプリを使用するためのアクセス許可を付与していません。 IT 管理者から支援を受けるか、後でやり直してください。|ユーザーのアカウントに必要なライセンスがないため、このデバイスを登録することはできません。|ユーザーは自分のデバイスを登録する前に、必要なライセンスを割り当てられている必要があります。 このメッセージは、指定されたモバイル デバイス管理機関に必要なライセンスの種類をユーザーが持っていないことを示します。 たとえば、モバイル デバイス管理機関として Intune が指定され、ユーザーが System Center 2012 R2 Configuration Manager ライセンスを使用している場合に、このエラーが表示されます。<br>[ユーザー アカウントに Intune のライセンスを割り当てる](https://docs.microsoft.com/intune/licenses-assign)方法に関する情報を参照してください。|
+
+
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>コンピューターは既にサービスに登録されています - エラー hr 0x8007064c
 **問題:** **"The machine is already enrolled"** (コンピューターは既にサービスに登録されています) というエラーが発生し、登録に失敗します。 登録ログにはエラー **hr 0x8007064c** が記録されます。
@@ -386,7 +393,7 @@ iOS 登録エラーの一覧は、デバイスのユーザー ドキュメント
 1. **[証明書]** をダブルクリックし、**[コンピューター アカウント]** > **[次へ]**、**[ローカル コンピューター]** の順に選択します。
 1. **[証明書 (ローカル コンピューター)]** をダブルクリックして、**[個人証明書]** を選択します。
 1. Sc_Online_Issuing によって発行された Intune 証明書を探し、もし見つかった場合は削除します。
-1. レジストリ キー  **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** が存在する場合は削除し、サブ キーもすべて削除します。
+1. レジストリ キー ** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** が存在する場合は削除し、サブ キーもすべて削除します。
 1. 再登録を試行します。
 1. それでも PC を登録できない場合は、キー **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95** を探して、存在する場合は削除してください。
 1. 再登録を試行します。
