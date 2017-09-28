@@ -15,17 +15,18 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9149b4d9d263a5d68fdd73e0a3754a24a74ad973
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 9b24ee84d339b728addd753cb309b4d8572e5582
+ms.sourcegitcommit: e5501cdf08d3e79bc51dc726697606be02110e57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 09/21/2017
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>共有 iPad デバイスの Intune 教育設定を構成する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-概要: Intune は iOS Classroom アプリに対応しています。このアプリは、教師が教室で学習を指導し、生徒のデバイスを操作するのを支援するアプリです。 Classroom アプリに加え、Apple では、複数の生徒が 1 台のデバイスを共有できるように、生徒の iPad デバイスを構成できます。 本書では、Intune でこの目標を達成する方法を紹介します。
+Intune は iOS Classroom をサポートしています。このアプリは、教師が教室で学習を指導し、生徒のデバイスを操作するのを支援するアプリです。 Classroom アプリに加え、Apple では、複数の生徒が 1 台のデバイスを共有できるように、生徒の iPad デバイスを構成できます。 本書では、Intune でこの目標を達成する方法を紹介します。
+
 専用 (1:1) iPad デバイスを構成し、Classroom アプリを使用する方法については、「[iOS Classroom アプリの Intune 設定を構成する方法](education-settings-configure-ios.md)」を参照してください。
 
 ## <a name="before-you-start"></a>アップグレードを開始する前に

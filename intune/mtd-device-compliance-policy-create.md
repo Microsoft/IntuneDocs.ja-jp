@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b2cffc21ba78cbd54edfb75eaa892df1539ad62b
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 2e9b1a3dc42a9c18d61fc9b55d5a7b71f00c3e29
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Intune で Mobile Threat Defense (MTD) デバイス コンプライアンス ポリシーを作成する
 
@@ -35,8 +35,6 @@ MTD の設定の一部として、MTD パートナー コンソールで、さ�
 MTD でのデバイス コンプライアンス ポリシーの前提条件:
 
 -   MTD と Intune の統合をセットアップする
-
--   Intune で MTD コネクタを有効にする
 
 ## <a name="to-create-a-mtd-device-compliance-policy"></a>MTD デバイス コンプライアンス ポリシーを作成するには
 
@@ -77,3 +75,7 @@ MTD でのデバイス コンプライアンス ポリシーの前提条件:
 
     > [!NOTE] 
     > ポリシーがユーザーに適用されました。 ポリシーの対象となっているユーザーが使用しているデバイスは、コンプライアンスについて評価されます。
+
+## <a name="next-steps"></a>次のステップ
+
+- [Intune で MTD を有効にする](mtd-connector-enable.md)

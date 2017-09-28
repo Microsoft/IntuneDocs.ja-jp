@@ -15,18 +15,18 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3ed7ac5467fe3a37a133aac61a9ccffe2e6119e6
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: d818581ca74e64bf27c968b39969afd889b6fbda
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="enable-mobile-threat-defense-in-intune"></a>Intune で Mobile Threat Defense を有効にする
 
 > [!NOTE] 
 > このトピックは、すべての Mobile Threat Defense パートナーに適用されます。
 
-Intune で Mobile Threat Defense (MTD) 接続を有効にするには、MTD ソリューション コンソールで Intune コネクタが構成済みである必要があります。
+Intune で Mobile Threat Defense (MTD) 接続を有効にするには、MTD パートナー コンソールで Intune コネクタが構成済みである必要があります。
 
 ## <a name="to-enable-the-mtd-connector"></a>MTD コネクタを有効にするには
 
@@ -65,7 +65,3 @@ Intune で Mobile Threat Defense (MTD) 接続を有効にするには、MTD ソ�
 
 > [!TIP]
 > [Mobile Threat Defense] ブレードで、**[接続の状態]** や、Intune と MTD パートナー間の **[最終同期]** 時刻を確認できます。
-
-## <a name="next-steps"></a>次のステップ
-
-[Intune で Mobile Threat Defense デバイス コンプライアンス ポリシーを作成する](mtd-device-compliance-policy-create.md)

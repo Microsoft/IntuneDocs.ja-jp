@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 77021ddc681f10d735ed0e680738122667608bdf
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 6a9925b91b009f43c08533222a5fdfc765ea51c2
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune との Lookout Mobile Threat Defense 統合を設定する
 
@@ -130,5 +130,7 @@ Lookout Mobile Threat Defense によって、さまざまな種類のモバイ�
 
 ## <a name="watching-enrollment"></a>登録を監視する
 セットアップが完了すると、Mobile Threat Defense は Azure AD のポーリングを開始し、指定された登録グループに対応するデバイスを探します。  登録されたデバイスに関する情報は、「Devices」 (デバイス) モジュールで確認できます。  デバイスの初期状態は保留中と表示されます。  Lookout for Work アプリがデバイスでインストールされたり、オープンになったり、アクティブ化されたりすると、デバイスの状態が変わります。  Lookout for Work アプリをデバイスにプッシュする方法の詳細については、[「Add Lookout for work apps with Intune」](mtd-apps-ios-app-configuration-policy-add-assign.md) (Intune で Lookout for Work アプリを追加する) をご覧ください。
+
 ## <a name="next-steps"></a>次のステップ
-[Intune 管理コンソールで Lookout MTD の接続を有効にする](mtd-connector-enable.md)
+
+[Lookout アプリを設定する](mtd-apps-ios-app-configuration-policy-add-assign.md)

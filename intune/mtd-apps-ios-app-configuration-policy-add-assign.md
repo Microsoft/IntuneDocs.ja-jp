@@ -15,11 +15,11 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6d0802107353eee9359e0eff17b69037d9a237a6
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 98a5b1b705e79b875b83cecb53cd82d7bf5dff30
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune で Mobile Threat Defense (MTD) アプリを追加して割り当てる
 
@@ -54,16 +54,6 @@ iOS デバイスでは、Azure AD によってチェックされた ID がユー
 #### <a name="microsoft-authenticator-app-for-ios"></a>iOS 向け Microsoft Authenticator アプリ
 
 - iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 5** には、この [Microsoft Authenticator アプリ ストア URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) を使用してください。
-
-### <a name="skycure"></a>Skycure
-
-#### <a name="android"></a>Android
-
-- Android ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-android.md)をご覧ください。 **手順 7**には、この [Skycure アプリ ストア URL](https://play.google.com/store/apps/details?id=com.skycure.skycure) を使用してください。
-
-#### <a name="ios"></a>iOS
-
-- iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 5** には、この [Skycure アプリ ストア URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) を使用してください。
 
 ### <a name="lookout"></a>Lookout
 
@@ -101,6 +91,16 @@ Lookout for Work iOS アプリに再署名する詳細な手順については�
 
 - [Intune での iOS LOB アプリの追加](lob-apps-ios.md)に関するトピックの説明に従って、再署名した .ipa ファイルをアップロードします。 また、最小 OS バージョンを iOS 8.0 以降に設定する必要があります。
 
+### <a name="skycure"></a>Skycure
+
+#### <a name="android"></a>Android
+
+- Android ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-android.md)をご覧ください。 **手順 7**には、この [Skycure アプリ ストア URL](https://play.google.com/store/apps/details?id=com.skycure.skycure) を使用してください。
+
+#### <a name="ios"></a>iOS
+
+- iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 5** には、この [Skycure アプリ ストア URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) を使用してください。
+
 ### <a name="check-point-sandblast-mobile"></a>Check Point SandBlast Mobile
 
 #### <a name="android"></a>Android
@@ -111,7 +111,21 @@ Lookout for Work iOS アプリに再署名する詳細な手順については�
 
 - [Check Point SandBlast Mobile](https://www.checkpoint.com/products/sandblast-mobile/) に連絡して iOS アプリを取得してください。 [iOS ストア アプリを Microsoft Intune に追加する](store-apps-ios.md)手順を確認し、「**アプリ情報を構成する**」セクションの**手順 5** で、Apple ストアの URL を使用してください。
 
+### <a name="zimperium"></a>Zimperium
+
+#### <a name="android"></a>Android
+
+- Android ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-android.md)をご覧ください。 **手順 7** には、この [Zimperium アプリ ストア URL](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en) を使用してください。
+
+#### <a name="ios"></a>iOS
+
+- iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 5** には、この [Zimperium アプリ ストア URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8) を使用してください。
+
 ## <a name="to-associate-the-mtd-app-with-an-ios-app-configuration-policy"></a>MTD アプリを iOS アプリ構成ポリシーと関連付けるには
+
+### <a name="for-lookout"></a>Lookout の場合
+
+- [iOS アプリ構成ポリシーの使用](app-configuration-policies-use-ios.md)に関するトピックの説明に従って、iOS アプリ構成ポリシーを作成します。
 
 ### <a name="for-skycure"></a>Skycure の場合
 
@@ -139,10 +153,6 @@ Lookout for Work iOS アプリに再署名する詳細な手順については�
 </dict>
 
 ```
-### <a name="for-lookout"></a>Lookout の場合
-
-- [iOS アプリ構成ポリシーの使用](app-configuration-policies-use-ios.md)に関するトピックの説明に従って、iOS アプリ構成ポリシーを作成します。
-
 ### <a name="for-check-point-sandblast-mobile"></a>Check Point SandBlast Mobile の場合
 
 - [iOS 用 Microsoft Intune アプリ構成ポリシーを使用する](app-configuration-policies-use-ios.md)手順に従って、Check Point SandBlast Mobile iOS アプリ構成ポリシーを追加します。
@@ -152,12 +162,30 @@ Lookout for Work iOS アプリに再署名する詳細な手順については�
 <dict><key>MDM</key><string>INTUNE</string></dict>
 
 ```
+
+### <a name="for-zimperium"></a>Zimperium の場合
+
+- [iOS 用 Microsoft Intune アプリ構成ポリシーを使用する](app-configuration-policies-use-ios.md)手順に従って、Zimperium iOS アプリ構成ポリシーを追加します。
+    - **手順 8** で、**[XML データを入力する]** オプションを使用して以下の内容をコピーし、構成ポリシーの本文に貼り付けます。
+
+```
+<dict>
+<key>provider</key><string>Intune</string>
+<key>userprincipalname</key><string>{{userprincipalname}}</string>
+<key>deviceid</key>
+<string>{{deviceid}}</string>
+<key>serialnumber</key>
+<string>{{serialnumber}}</string>
+<key>udidlast4digits</key>
+<string>{{udidlast4digits}}</string>
+</dict>
+
+```
+
 ## <a name="to-assign-apps-all-mtd-partners"></a>アプリを割り当てるには (すべての MTD パートナー)
 
 - [Intune でアプリをグループに割り当てる](apps-deploy.md)手順を参照してください。
 
 ## <a name="next-steps"></a>次のステップ
 
-- [Intune との Lookout 統合をセットアップする](lookout-mtd-connector-integration.md)
-- [Skycure と Intune の統合をセットアップする](skycure-mtd-connector-integration.md)
-- [Check Point SandBlast と Intune の統合をセットアップする](checkpoint-sandblast-mobile-mtd-connector-integration.md)
+- [MTD のデバイス コンプライアンス ポリシーを追加する](mtd-device-compliance-policy-create.md)
