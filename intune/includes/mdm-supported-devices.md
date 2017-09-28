@@ -1,19 +1,17 @@
 
 
 ### <a name="apple"></a>Apple
-  - Apple iOS 8.0 以降
+  - Apple iOS 9.0 以降
   - Mac OS X 10.9 以降
 
 ### <a name="windows"></a>Windows
   - Windows 10 (Home、S、Pro、Education、および Enterprise バージョン)
   - [Windows] 10 Mobile
-  - Windows Phone 8。1
-  - Windows 8.1 RT
-  - Windows 8.1 を実行している PC
   - Windows 10 IoT Enterprise (x86、x64) を実行しているデバイス
   - Windows 10 IoT Mobile Enterprise を実行しているデバイス
   - Windows Holographic と Windows Holographic Enterprise
-
+  - Windows Phone 8.1、Windows 8.1 RT、Windows 8.1 (維持モード) が稼働している PC
+  
   Enterprise Management + Security (EMS) を使用している場合は、[Azure Active Directory (Azure AD) を使用して Windows 10 デバイスを登録する](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment)こともできます。
 
 ### <a name="google"></a>Google

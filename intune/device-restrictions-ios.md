@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 07/30/2017
+ms.date: 09/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88dc94e74a2a9a79c056a81b6397c94a483fc7a9
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ff2c9943a04ec02a83e821a65e1307e311a9d1c0
+ms.sourcegitcommit: 4ce095c0c3fa2e42cf76207b6ff8edf1fe397165
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 09/20/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での iOS デバイスの制限設定
 
@@ -109,7 +109,9 @@ ms.lasthandoff: 09/15/2017
 制限付きアプリの一覧では、次の一覧のいずれかを構成できます。
 
 **[禁止されているアプリ]** の一覧 - ユーザーによるインストールと実行が許可されていないアプリ (Intune で管理されていない) アプリを一覧表示します。
-**[承認済みアプリ]** の一覧 - ユーザーによるインストールが許可されているアプリを一覧表示します。 準拠性を維持するため、ユーザーは一覧表示されていないアプリをインストールできません。 管理対象アプリは Intune で自動的に許可されます。
+**[承認済みアプリ]** の一覧 - ユーザーによるインストールが許可されているアプリを一覧表示します。 ユーザーは一覧表示されていないアプリをインストールできません。 管理対象アプリは Intune で自動的に許可されます。
+
+ユーザーは禁止されたアプリもインストールできますが、インストールした場合、そのことが報告されます。
 
 この一覧を構成するには、**[追加]** をクリックし、任意の名前、アプリの発行元 (省略可能)、アプリ ストアでのアプリの URL を指定します。
 

@@ -14,11 +14,11 @@ ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 9a84cc5b294a1a330aab978de5ef0fd8cfa4c259
-ms.sourcegitcommit: 30b51c625311398b371c0326d41216f55315f627
+ms.openlocfilehash: 534af980ff66eaa54273aaabf14609b1e221c322
+ms.sourcegitcommit: 63d862f142e2f40a1eedb7d4cbdff4fbf6dd7296
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/05/2017
+ms.lasthandoff: 09/22/2017
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>アラートを使用して Microsoft Intune から通知を受ける
 
@@ -61,6 +61,8 @@ ms.lasthandoff: 09/05/2017
 
 ## <a name="working-with-alerts"></a>アラートの操作
 
+[Microsoft Intune 管理コンソール](https://manage.microsoft.com)でアラートを表示するには、**[アラート]** を選択して、表示するアラートの種類を選択します。
+
 Intune の管理コンソールからアラートを操作するときには、次のオプションを使用できます。
 
 |オプション|説明|
@@ -70,11 +72,12 @@ Intune の管理コンソールからアラートを操作するときには、�
 |**アラートを閉じる**|アラートの一覧で、閉じるアラートを選択し、**[アラートを閉じる]** を選択します。<br /><br />閉じられたアラートは、90 日後に完全に削除されます。|
 |**閉じたアラートの再有効化**|アラートの一覧で、**[フィルター]** ドロップダウンを **[終了]** に設定します。<br /><br />閉じられたアラートの一覧で、再有効化するアラートを選択し、**[アラートの再有効化]** を選択します。|
 
-Intune のアラートは、次の条件が満たされるまでは、引き続き有効です。
+Intune のアラートは 30 日間、または次の条件が満たされるまで有効です。
 
 - アラートの原因となった問題が解決された。
-- 手動でアラートを閉じた。
-- アラートの生成から 45 日が経過した。
+- 手動でアラートが閉じられた。
+
+閉じられたアラートは、終了から 30 日間は再有効化できます。 30 日後、閉じられたアラートと無効なアラートが Intune から削除されます。
 
 > [!TIP]
 > 異なるオペレーティング システムを実行しているデバイスで同じアラートが生成された場合、アラートの一覧に同じアラートの複数のバージョンが表示される可能性があります。

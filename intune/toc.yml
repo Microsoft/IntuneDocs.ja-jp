@@ -81,12 +81,16 @@
           href: planning-guide-resources.md
     - name: シナリオの実装ガイド
       items:
-        - name: BYOD
-          href: byod-enable.md
         - name: Exchange Online の保護
           href: exchange-online-protect.md
         - name: ヘルプ デスクのコストの削減
           href: password-reset.md
+        - name: 無許可のアクセスの防止
+          href: data-outside-protect.md
+        - name: 管理されていないデバイスでのデータ漏洩の防止
+          href: data-leak-prevention.md
+        - name: BYOD
+          href: byod-enable.md
     - name: 移行ガイド
       href: migration-guide.md
       items:
@@ -434,12 +438,19 @@
               items:
                 - name: Check Point と Intune の統合
                   href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-            - name: MTD アプリの追加
-              href: mtd-apps-ios-app-configuration-policy-add-assign.md
-            - name: Intune で MTD を有効にする
-              href: mtd-connector-enable.md
-            - name: MTD デバイス コンプライアンス ポリシーの作成
-              href: mtd-device-compliance-policy-create.md
+            - name: Zimperium の設定
+              href: zimperium-mobile-threat-defense-connector.md
+              items:
+                - name: Zimperium と Intune の統合
+                  href: zimperium-mtd-connector-integration.md
+            - name: MTD 用 Intune のセットアップ
+              items:
+                - name: MTD アプリの追加
+                  href: mtd-apps-ios-app-configuration-policy-add-assign.md
+                - name: MTD デバイス コンプライアンス ポリシーの作成
+                  href: mtd-device-compliance-policy-create.md
+                - name: Intune で MTD を有効にする
+                  href: mtd-connector-enable.md
         - name: ネットワーク アクセス制御
           href: network-access-control-integrate.md
         - name: Windows Hello の設定
