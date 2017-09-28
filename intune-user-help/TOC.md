@@ -27,7 +27,7 @@
 ### [Android に関する一般的な問題の解決](troubleshoot-your-device-android.md)
 #### [デバイスのコンプライアンスを確認する](check-compliance-on-your-device-android.md)
 
-#### [ログを使用した問題の解決]
+#### ログを使用した問題の解決
 ##### [詳細ログ記録を有効にする](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [電子メールを使用してログを送信する](send-logs-to-your-it-admin-by-email-android.md)
 ##### [USB ケーブルを使用してログを送信する](send-logs-to-your-it-admin-using-cable-android.md)
