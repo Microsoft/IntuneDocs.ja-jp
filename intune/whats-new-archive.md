@@ -266,9 +266,9 @@ Android for Work デバイスの作業プロファイルに展開したアプリ
 Microsoft は、無線ディスプレイ、デバイス検出、タスク切り替え、SIM カード エラー メッセージなどの機能を制御する新しい [Windows デバイス制限設定](device-restrictions-windows-10.md)を追加しています。
 
 #### <a name="updates-to-certificate-configuration----918991-and-823198---"></a>証明書の構成の更新<!-- 918991 and 823198 -->
-SCEP 証明書プロファイルを作成するときに、**[サブジェクト名の形式]**で、**[カスタム]** オプションを iOS、Android、および Windows デバイスでご利用いただけます。 今回の更新までは、**[カスタム]** フィールドを使用できるのは iOS デバイスだけでした。 詳細については、「SCEP 証明書プロファイルを作成する方法」(certificates-scep-configure.md#how-to-create-a-scep-certificate-profile) をご覧ください。
+SCEP 証明書プロファイルを作成するときに、**[サブジェクト名の形式]**で、**[カスタム]** オプションを iOS、Android、および Windows デバイスでご利用いただけます。 今回の更新までは、**[カスタム]** フィールドを使用できるのは iOS デバイスだけでした。 詳細については、「[SCEP 証明書プロファイルを作成する方法](certificates-scep-configure.md#how-to-create-a-scep-certificate-profile)」をご覧ください。
 
-PKCS 証明書プロファイルを作成するときに、**[サブジェクトの別名]** で、**[Custom Azure AD attribute]\(Azure AD のカスタム属性\)** をご使用いただけます。 **[Custom Azure AD attribute]\(Azure AD のカスタム属性\)** を選択すると、**[部門]** オプションが使用できます。 詳細については、「PKCS 証明書プロファイルを作成する方法」(certficates-pfx-configure.md#how-to-create-a-pkcs-certificate-profile) をご覧ください。
+PKCS 証明書プロファイルを作成するときに、**[サブジェクトの別名]** で、**[Custom Azure AD attribute]\(Azure AD のカスタム属性\)** をご使用いただけます。 **[Custom Azure AD attribute]\(Azure AD のカスタム属性\)** を選択すると、**[部門]** オプションが使用できます。 詳細については、「[PKCS 証明書プロファイルを作成する方法](certficates-pfx-configure.md#how-to-create-a-pkcs-certificate-profile)」をご覧ください。
 
 #### <a name="configure-multiple-apps-that-can-run-when-an-android-device-is-in-kiosk-mode----662059---"></a>Android デバイスがキオスク モードのときに実行できる複数アプリの構成<!-- 662059 -->
 これまでは、Android デバイスがキオスク モードのときに実行できるアプリは 1 つしか設定できませんでした。 アプリ ID やストアの URL を使用するか、すでに管理している Android アプリを選択して、複数のアプリを設定できるようになりました。 詳細については、[キオスク モードの設定](device-restrictions-android.md#kiosk)に関するページをご覧ください。
