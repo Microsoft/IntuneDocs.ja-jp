@@ -79,7 +79,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 
 6.  **[Add &lt;ServerName&gt;]** (<サーバー名> の追加) ダイアログ ボックスに、**[Your Server Token]** (サーバー トークン) リンクが表示されます。 サーバー トークン (.p7m) ファイルをコンピューターにダウンロードした後、**[Done]** (完了) を選択します。
 
-7. **[Deployment Programs](展開プログラム)** &gt; **[Device Enrollment Program]** &gt; **[Manage Devices](デバイスの管理)** の順に移動します。
+7. **[Deployment Programs]\(展開プログラム)** &gt; **[Device Enrollment Program]** &gt; **[Manage Devices]\(デバイスの管理)** の順に移動します。
 8. **[Choose Devices By\(デバイスの選択方法\)]** で、デバイスを識別する方法を指定します。
     - **Serial Number\(シリアル番号\)**
     - **Order Number\(注文番号\)**
