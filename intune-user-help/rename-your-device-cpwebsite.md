@@ -16,19 +16,19 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b3a9ea6fb7134f2be6b05f883e5dab2d1aef1d59
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8023e3a75dbf9a3275654b7ed8f917546d401168
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>ポータル サイト Web サイトからデバイスの名前を変更する
 
-デバイスの名前を変更すると、識別が簡単になり、便利です。 変更は[ポータル サイト Web サイト](http://portal.manage.microsoft.com)から可能です。 ポータル サイト Web サイトは、IT 部署で管理するために登録したコンピューターとデバイスの管理に使用できる Web ページです。
+デバイスの名前を変更すると、識別が簡単になり、便利です。 変更は[ポータル サイト Web サイト](https://portal.manage.microsoft.com)から可能です。 ポータル サイト Web サイトは、IT 部署で管理するために登録したコンピューターとデバイスの管理に使用できる Web ページです。
 
 デバイスの名前を変更するには:
 
-1.  [ポータル Web サイト](http://portal.manage.microsoft.com)で、__メニュー__ ボタン ![3 つの横棒が並行に積み上げられている、メニュー ボタンの小さな画像](/Intune/whats-new/media/CP_hamburger_menu.png) をタップしてから、__[デバイス]__ を選択します。
+1.  [ポータル Web サイト](https://portal.manage.microsoft.com)で、__メニュー__ ボタン ![3 つの横棒が並行に積み上げられている、メニュー ボタンの小さな画像](/Intune/whats-new/media/CP_hamburger_menu.png) をタップしてから、__[デバイス]__ を選択します。
 
 2. __[デバイス]__ ページで、名前を変更するデバイスの名前を選択します。
 
@@ -40,4 +40,4 @@ ms.lasthandoff: 07/01/2017
 
 4.  デバイス名が表示されているボックスにデバイスの新しい名前を入力し、**[名前の変更]** ボタンをタップします。 これで、デバイスが新しい名前で表示されます。
 
-サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
