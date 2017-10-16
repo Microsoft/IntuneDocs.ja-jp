@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 501bbb1d75ec2302f7564e7a62eb5b04f40a2d04
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0a91b167911d203cd3bd1e7645e5cacbc2eb6534
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-android-device-is-rooted-so-you-cant-connect"></a>Android デバイスが root 化され、接続できない
 
@@ -32,6 +32,6 @@ Android デバイスが "root 化" されている場合、存在しない可能
 
 - root 化検出ソフトウェアがセキュリティ リスクと認識するアプリをデバイスにインストールした可能性があります。 アプリをインストールした直後にこのメッセージが表示される場合は、そのアプリをアンインストールしてください。
 
-- デバイスの製造元が、root 化検出ソフトウェアがセキュリティ リスと認識するソフトウェアをデバイスにインストールした可能性があります。 この場合は、IT 管理者に問い合わせる必要があります。 連絡先情報については、[ポータル サイトの Web サイト](http://portal.manage.microsoft.com)をご確認ください。
+- デバイスの製造元が、root 化検出ソフトウェアがセキュリティ リスと認識するソフトウェアをデバイスにインストールした可能性があります。 この場合は、会社のサポートに問い合わせる必要があります。 連絡先情報については、[ポータル サイトの Web サイト](https://portal.manage.microsoft.com)をご確認ください。
 
 デバイスを自分で root 化した場合は、処理を元に戻し、デバイスを root 化されていない状態に戻す必要があります。

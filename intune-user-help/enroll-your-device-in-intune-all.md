@@ -14,15 +14,15 @@ ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 7b4206d49731195dc08fed5e91942f6071789724
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6d6b1addbc03664e5eeaff34eef3042503a1470e
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-device-in-intune"></a>Intune にデバイスを登録する
 
-職場または学校で Microsoft Intune を使用している場合は、お使いのデバイスを登録して、会社の電子メール、ファイル、その他のリソースにアクセスできます。 デバイスを登録すると、組織は企業データをセキュリティで保護することができます。 登録について、また IT 管理者がユーザーのデバイスに関して確認できる内容および確認できない内容についての詳細は、このトピックの下部にあるリンク先を参照してください。
+職場または学校で Microsoft Intune を使用している場合は、お使いのデバイスを登録して、会社の電子メール、ファイル、その他のリソースにアクセスできます。 デバイスを登録すると、組織は企業データをセキュリティで保護することができます。 登録について、また会社のサポートがユーザーのデバイスに関して確認できる内容および確認できない内容についての詳細は、このトピックの下部にあるリンク先を参照してください。
 
 登録の手順を確認するには、使用しているデバイスの種類に対応するリンクをご使用ください。
 

@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: afd9d8263deaeadfd802806167fbbaff730555c9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4ef4b297a3c841897aa702d793f675584df39eb4
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Intune に Windows 8.1 または Windows RT 8.1 デバイスを登録する方法
 
-職場または学校が Microsoft Intune を使用している場合は、お使いのデバイスを登録して、会社の電子メール、ファイル、またその他のリソースにアクセスできます。 デバイスを登録すると、組織は会社のデータをセキュリティで保護することができます。 登録の詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)」と「[What your IT administrator can and can't see on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)」 (IT 管理者がお客様のデバイスに関して確認できる情報と確認できない情報) を参照してください。
+職場または学校が Microsoft Intune を使用している場合は、お使いのデバイスを登録して、会社の電子メール、ファイル、またその他のリソースにアクセスできます。 デバイスを登録すると、組織は会社のデータをセキュリティで保護することができます。 登録の詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)」と[会社のサポートがユーザーのデバイスに関して確認できる情報と確認できない情報](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)に関するページを参照してください。
 
 
 Windows 8.1 または Windows RT 8.1 デバイスを登録するには、次の手順を実行します。
@@ -45,7 +45,7 @@ Windows 8.1 または Windows RT 8.1 デバイスを登録するには、次の�
 
     ![turn-on-device-management](./media/W81-3-dev-mgt-turn-on.png)
 
-5.  **[IT 管理者によるアプリやサービスの管理を許可する]** ダイアログ ボックスで、**[同意する]** チェック ボックスをオンにし、**[オンにする]** をタップします。
+5.  **[Allow apps and services from company support]\(会社のサポートによるアプリやサービスの管理を許可する\)** ダイアログ ボックスで、**[同意する]** チェック ボックスをオンにし、**[オンにする]** をタップします。
 
     ![turn-on-allow-apps-services](./media/W81-4-agree-allow-apps-services.png)
 
@@ -63,4 +63,4 @@ Windows 8.1 または Windows RT 8.1 デバイスを登録するには、次の�
 
 4.  **[インストール]** または **[無料]** をタップします。 表示されるオプションは、会社がどのようにアプリをセットアップしたかによって異なります。
 
-サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。

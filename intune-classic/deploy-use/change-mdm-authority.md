@@ -4,7 +4,7 @@ description: "MDM 機関を Intune スタンドアロンから Configuration Man
 keywords: 
 author: dougeby
 manager: angrobe
-ms.date: 05/21/2017
+ms.date: 10/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.assetid: f1b4bce3-7932-4a0d-aa92-6dacc7060f42
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 816aa3effc8be66844000394f27eacc4215c1bc2
-ms.sourcegitcommit: 94177ee8bc9f2fe448738773757e40d799f71c18
+ms.openlocfilehash: 9119c9ece21117e916a5b30a6a8d80e518047b5e
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="change-the-mdm-authority"></a>MDM 機関を変更する
 Configuration Manager バージョン 1610 以降では、Microsoft サポートに連絡しなくても、また、既存の管理対象デバイスの登録を解除してから再登録しなくても、MDM 機関を変更できます。 このトピックでは、既存の管理対象デバイスの登録解除と再登録を行わずに、Intune から構成し、MDM 機関を **Microsoft Intune** (スタンドアロン) に設定した既存の Microsoft Intune テナントを、**Configuration Manager** (ハイブリッド MDM) に変更する方法について説明します。
@@ -26,13 +26,14 @@ Configuration Manager バージョン 1610 以降では、Microsoft サポート
 > Configuration Manager コンソール (ハイブリッド) から構成され、MDM 機関が **Configuration Manager** (ハイブリッド) に設定されている既存の Microsoft Intune テナントを **Microsoft Intune** スタンドアロンに変更する場合は、「[MDM 機関を Intune スタンドアロンに変更する](https://docs.microsoft.com/sccm/mdm/deploy-use/change-mdm-authority)」を参照してください。 
 
 
-### <a name="key-considerations"></a>主な考慮事項
-新しい MDM 機関に切り替えた後、多くの場合、デバイスがチェックインしてサービスと同期されるまでに移行時間 (最大 8 時間) があります。 新しい MDM 機関 (ハイブリッド) で、登録済みデバイスが変更後も管理および保護されるように設定を構成する必要があります。 」を参照し、次のことに注意してください。
-- デバイスの既存の設定が新しい MDM 機関 (Intune スタンドアロン) の設定に置き換わるように、変更後にデバイスをサービスに接続する必要があります。
+## <a name="key-considerations"></a>主な考慮事項
+新しい MDM 機関に切り替えた後、多くの場合、デバイスがチェックインしてサービスと同期されるまでに移行時間 (最大 8 時間) があります。 新しい MDM 機関 (ハイブリッド) で、登録済みデバイスが変更後も管理および保護されるように設定を構成する必要があります。 
+- デバイスの既存の設定が新しい MDM 機関の設定 (Intune スタンドアロン) に置き換わるように、変更後にご使用のデバイスをサービスに接続する必要があります。
 - MDM 機関を変更した後に、MDM 機関 (Intune スタンドアロン) の基本的な設定 (プロファイルなど) の一部は、最大 7 日間、またはデバイスが初めてサービスに接続するまで、デバイスに残ります。 可能な限り早く新しい MDM 機関 (ハイブリッド) でアプリと設定 (ポリシー、プロファイル、アプリなど) を構成し、既存の登録済みデバイスがあるユーザーを含むユーザー グループにその設定を展開することをお勧めします。 MDM 機関の変更後、デバイスがサービスに接続すると、新しい MDM 機関の新しい設定がすぐに送信されるので、管理と保護の中断を回避できます。
+- Intune と Configuration Manager の両方に同じカテゴリが存在するときは、新しい MDM 機関に切り替えた後、デバイスのいかなるカテゴリ割り当ても継承されません。 デバイス カテゴリを引き続き利用するには、MDM 機関を変更し、デバイスが Configuration Manager コンソールに表示された後、移行したデバイスを適切なコレクションに手動で追加する必要があります。
 - 関連付けられているユーザーがいない (通常は iOS Device Enrollment Program または一括登録シナリオの場合) デバイスは、新しい MDM 機関に移行されません。 これらのデバイスでは、新しい MDM 機関への移行を支援してもらうためにサポートを要請する必要があります。
 
-### <a name="prepare-to-change-the-mdm-authority-to-configuration-manager-hybrid"></a>MDM 機関を Configuration Manager (ハイブリッド) に変更する準備
+## <a name="prepare-to-change-the-mdm-authority-to-configuration-manager-hybrid"></a>MDM 機関を Configuration Manager (ハイブリッド) に変更する準備
 MDM 機関の変更に備えて、次の情報を確認します。
 - MDM 機関を変更するオプションを使用するには、Configuration Manager バージョン 1610 以降が必要です。
 - 新しい MDM 機関に変更した後に、デバイスがサービスに接続できるようになるまでに最大 8 時間かかります。
@@ -51,7 +52,7 @@ MDM 機関の変更に備えて、次の情報を確認します。
     > [!IMPORTANT]  
     > ハイブリッドに別の APNs 証明書を使用する場合、以前に登録されていた iOS デバイスはすべて未登録になるため、デバイスを再登録するプロセスを実行する必要があります。 MDM 機関を変更する前に、Intune で iOS デバイスの管理に使用されていた APNs 証明書を正確に把握しておく必要があります。 Apple Push 証明書ポータル (https://identity.apple.com) に記載されているものと同じ証明書を検索し、元の APNs 証明書の作成に使用された Apple ID を持つユーザーを特定し、新しい MDM 機関を変更する際に同じ APNs 証明書を更新できることを確認します。  
 
-### <a name="change-the-mdm-authority-to-configuration-manager"></a>MDM 機関を Configuration Manager に変更する
+## <a name="change-the-mdm-authority-to-configuration-manager"></a>MDM 機関を Configuration Manager に変更する
 MDM 機関を Configuration Manager (ハイブリッド) に変更するプロセスには、概要として次のような手順が含まれます。  
 - Configuration Manager コンソールで、Microsoft Intune サブスクリプションを追加します。
 - 更新したものと同じ APNs 証明書を使用して、Apple APNs 証明書を構成します。
@@ -67,7 +68,7 @@ MDM 機関を Configuration Manager (ハイブリッド) に変更するプロ�
 6. 同じ Intune テナントを使用して [Microsoft Intune 管理コンソール](http://manage.microsoft.com)にログインし、MDM 機関が **[Configuration Manager に設定]** に変更されたことを確認します。
 
 
-### <a name="enable-ios-enrollment"></a>iOS の登録を有効にします。
+## <a name="enable-ios-enrollment"></a>iOS の登録を有効にします。
 iOS デバイスがある場合は、Configuration Manager で APNs 証明書を構成する必要があります。
 
 #### <a name="to-enable-ios-enrollment-and-configure-the-apns-certificate"></a>iOS の登録を有効にして APNs 証明書を構成するには
@@ -105,7 +106,7 @@ iOS デバイスがある場合は、Configuration Manager で APNs 証明書を
 
         ![[Microsoft Intune サブスクリプションのプロパティ] ページ - iOS](../media/mdm-change-subscription-properties-ios.png)
 
-### <a name="enable-android-enrollment"></a>Android の登録を有効にする
+## <a name="enable-android-enrollment"></a>Android の登録を有効にする
 1. Configuration Manager コンソールで **[管理]** &gt; **[クラウド サービス]** &gt; **[Microsoft Intune サブスクリプション]** に移動し、**[プラットフォームの構成]** &gt; **[Android]** の順に選択します。  
 2. **[Android の登録を有効にする]** を選択し、**[OK]** をクリックします。
 
@@ -118,9 +119,9 @@ iOS デバイスがある場合は、Configuration Manager で APNs 証明書を
 2. 有効にするプラットフォームを選択し、**[OK]** をクリックします。
 
 
-### <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次のステップ
 MDM 機関の変更が完了したら、次の手順を実行します。
-- テナントの MDM 機関が変更されたことを Intune サービスが検出すると、登録されているすべてのデバイスに、サービスにチェックインして同期するように促す通知メッセージを送信します (これは定期的にスケジュールされているチェックインとは別になります)。 そのため、テナントの MDM 機関が Intune スタンドアロンからハイブリッドに変更された後は、電源を入れてオンラインになったすべてのデバイスはサービスに接続し、新しい MDM 機関を受信し、以降はハイブリッドに管理されるようになります。 これらのデバイスの管理と保護は中断されません。
+- テナントの MDM 機関が変更されたことを Intune サービスが検出すると、登録されているすべてのデバイスに、サービスにチェックインして同期するように促す通知メッセージを送信します (これは定期的にスケジュールされているチェックインとは別になります)。 そのため、テナントの MDM 機関が Intune スタンドアロンからハイブリッドに変更された後は、電源を入れてオンラインになったすべてのデバイスはサービスに接続し、新しい MDM 機関を受信し、ハイブリッドに管理されるようになります。 これらのデバイスの管理と保護は中断されません。
 - MDM 機関の変更中 (または変更直後) にデバイスの電源が入り、オンラインだった場合でも、デバイスが新しい MDM 機関のサービスに登録されるまでに最大 8 時間の遅れがあります (次の定期的なチェックインのタイミングによって異なります)。    
 
   > [!IMPORTANT]    
@@ -128,7 +129,7 @@ MDM 機関の変更が完了したら、次の手順を実行します。
 
 - ユーザーが新しい MDM 機関にすぐに変更するには、デバイスからサービスへのチェックインを手動で開始します。 ポータル サイト アプリを使用して、デバイス コンプライアンス チェックを開始することで、簡単にチェックインを開始できます。
 - MDM 機関の変更後に、デバイスがサービスにチェックインして同期した後に、正常に動作していることを確認するには、Configuration Manager コンソールでそのデバイスを探します。 Intune で管理されていたデバイスが、Configuration Manager で管理対象デバイスとして表示されるようになります。    
-- MDM 機関の変更中にデバイスがオフラインだったときから、デバイスがサービスにチェックインするまでは中間期間があります。 この中間期間にも確実にデバイスを保護し、利用できるように、最大 7 日間 (またはデバイスが新しい MDM 機関に接続し、新しい設定を受信して既存の設定が上書きされるまで)、次のものがデバイスに残ります。
+- MDM 機関の変更中にデバイスがオフラインだったときから、デバイスがサービスにチェックインするまでは中間期間があります。 この中間期間にも確実にデバイスを保護し、利用できるように、最大 7 日間 (またはデバイスが新しい MDM 機関に接続し、新しい設定を受信して既存の設定が上書きされるまで)、次のプロファイルがデバイスに残ります。
     - 電子メール プロファイル
     - VPN プロファイル
     - 証明書プロファイル

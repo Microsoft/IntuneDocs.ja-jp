@@ -1,12 +1,12 @@
 ---
-title: "iOS のボリューム購入アプリの管理"
+title: "iOS のボリューム購入アプリの管理 | Microsoft Docs"
 titlesuffix: Azure portal
 description: "iOS ストアからボリューム購入したアプリを Intune に同期し、その使用状況を管理および追跡する方法について説明します。\""
 keywords: 
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 08/18/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8be922d6cc839708ff26de2ebe792241b9bf357a
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: dc3160d40d4ddabcd0a7d8d5557b07b4086eea7c
+ms.sourcegitcommit: 4184db38d1a9a223e680bcb4c9b732f7069bf510
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/02/2017
 ---
-# <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Volume Purchase Program で購入した iOS アプリを Microsoft Intune で管理する方法
+# <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Volume Purchase Program で購入した iOS アプリを Microsoft Intune で管理する方法
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -48,12 +48,17 @@ Microsoft Intune を使用することで、このプログラムを通じて購
 ユーザーにアプリを割り当てると、1 つのアプリ ライセンスが使われて、ユーザーに関連付けられます。 ユーザーが所有する複数のデバイスでアプリを実行できます (上限は Apple により制御)。
 ボリューム購入アプリをユーザーに割り当てた場合、各エンド ユーザーは、アプリ ストアにアクセスするために一意の有効な Apple ID が必要です。
 
-
 さらに、Apple ボリューム購入プログラム ストアから購入した本と Intune との間で同期、管理、割り当てを行うことができます。 詳細については、「[Volume Purchase Program で購入した iOS 電子ブックを管理する方法](vpp-ebooks-ios.md)」を参照してください。
 
-
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>iOS デバイス用のボリューム購入アプリの管理
+
+### <a name="supports-apple-volume-purchase-program-volume-purchased-apps-for-ios-devices"></a>Apple Volume Purchase Program の iOS デバイス用のボリューム購入アプリをサポート
+
 iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purchase Program](http://www.apple.com/business/vpp/) 経由または[教育向け Apple Volume Purchase Program](http://volume.itunes.apple.com/us/store) 経由で購入します。 このためには、Apple Web サイトから Apple VPP アカウントをセットアップし、Apple VPP トークンを Intune にアップロードする必要があります。  その後、ボリューム購入情報を Intune と同期し、ボリューム購入アプリの使用を追跡することができます。
+
+### <a name="supports-business-to-business-volume-purchased-apps-for-ios-devices"></a>iOS デバイス用の企業間ボリューム購入アプリをサポート
+
+また、サードパーティの開発者も、iTunes Connect に指定されているビジネス メンバーに、認められたボリューム購入プログラムにプライベートでアプリを配布できます。 VPP for Business のメンバーは、Volume Purchase Program App Store にサインインし、アプリを購入できます。 エンド ユーザーが購入した VPP for Business アプリはそのユーザーの Intune テナントに同期されます。
 
 ## <a name="before-you-start"></a>アップグレードを開始する前に
 開始する前に、Apple から VPP トークンを取得し、それを Intune アカウントにアップロードする必要があります。 さらに、次の条件を理解する必要があります。
@@ -64,12 +69,9 @@ iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purc
 * 既定では、Intune は 1 日に 2 回、Apple VPP サービスと同期します。 いつでも手動での同期を開始できます。
 * Intune で iOS VPP の使用を開始する前に、他のモバイル デバイス管理 (MDM) ベンダーで作成された既存の VPP ユーザー アカウントを削除してください。 Intune では、セキュリティ対策として、そのようなユーザー アカウントは Intune と同期されません。 Intune では、Intune で作成された Apple VPP サービスからのデータのみが同期されます。
 * Intune は最大 256 VPP トークンの追加をサポートしています。
-* デバイス登録プロファイルまたは Apple Configurator から登録したデバイスのボリューム購入アプリを割り当てる場合、デバイスにターゲット設定されているアプリのみが機能します。 ユーザー アフィニティのない DEP デバイスのユーザーにボリューム購入アプリをターゲット設定することはできません。
-これは、iOS VPP ユーザーのライセンスでは、同じユーザー アカウントを利用して数千単位のデバイスを登録できるためです。 iOS VPP ユーザーのライセンスでは、エンド ユーザーは 5 台から 10 台のデバイスにアプリをインストールできます。
-つまり、最初のいくつかの DEM 登録デバイスに、ユーザー ライセンスを利用し、VPP アプリがインストールされます。他のデバイスにはアプリがインストールされません。
+* Apple の Device Enrollment Profile (DEP) プログラムは、モバイル デバイス管理 (MDM) 登録を自動化します。 DEP を利用すれば、触れることなく企業のデバイスを構成できます。 Apple の VPP で使用したものと同じプログラム エージェント アカウントを利用し、DEP プログラムに登録できます。 Apple 展開プログラム ID は [Apple 展開プログラム](https://deploy.apple.com) Web サイトに記載されているプログラムに固有であり、iTunes ストアなど、Apple サービスのログインには利用できません。 
 * VPP トークンは、一度に 1 つの Intune アカウントでのみ使用できます。 複数の Intune テナントに同じ VPP トークンを再利用することはしないでください。
-* ユーザー ライセンス モデルを利用する VPP アプリをユーザーまたは (ユーザー アフィニティのある) デバイスに割り当てるとき、デバイスで Apple の利用規約に同意するときのために、各 Intune ユーザーを一意の Apple ID またはメール アドレスに関連付ける必要があります。
-新しい Intune ユーザーにデバイスを設定するとき、そのユーザーの一意の Apple ID またはメール アドレスで構成する必要があります。 Apple ID またはメール アドレスと Intune ユーザーで一意のペアを形成し、最大 5 台のデバイスで使用できます。
+* ユーザー ライセンス モデルを利用する VPP アプリをユーザーまたは (ユーザー アフィニティのある) デバイスに割り当てるとき、デバイスで Apple の利用規約に同意するときのために、各 Intune ユーザーを一意の Apple ID またはメール アドレスに関連付ける必要があります。 Apple 展開プログラム ID に使用されている Apple ID は使用しないでください。 新しい Intune ユーザーにデバイスを設定するとき、そのユーザーの一意の Apple ID またはメール アドレスで構成する必要があります。 Apple ID またはメール アドレスと Intune ユーザーで一意のペアを形成し、最大 5 台のデバイスで使用できます。
 
 >[!IMPORTANT]
 >Intune に VPP トークンをインポートした後、同じトークンを他のデバイス管理ソリューションにインポートすることはできません。 これを行うと、ライセンスの割り当てとユーザー レコードが失われる恐れがあります。
@@ -78,17 +80,13 @@ iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purc
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[モバイル アプリ]** を選択します。
-1.  **[Mobile Apps]** ワークロードで、**[セットアップ]** > **[iOS VPP トークン]** の順に選択します。
-2.  VPP トークンの一覧ブレードで、**[追加]** をクリックします。
-3.  **[新しい VPP トークン]** ブレードで、次の情報を指定します。
+2.  VPP トークンの一覧ブレードで、**[作成]** をクリックします。
+4. **[VPP トークンの作成]** ブレードで、次の情報を指定します。
     - **[VPP トークン ファイル]** - サインアップしていない場合は、ビジネス向け Volume Purchase Program または教育向けプログラムにサインアップします。 サインアップした後、アカウントの Apple VPP トークンをダウンロードし、ここで選択します。
-    - **[Apple ID]** - Volume Purchase Program に関連付けられているアカウントの Apple ID を入力します。
-    - **[VPP アカウントの種類]** - **[ビジネス]** または **[教育]** を選択します。
+    - **アプリの自動更新** - **[オン]** か **[オフ]** を選択し、自動更新を有効/無効にします。 有効にすると、Intune は、デバイスのチェックイン時に Intune サービスを介し、指定されたトークンに対象に購入されたすべてのアプリを更新します。 アプリ ストア内の VPP アプリ更新プログラムを検出し、デバイスのチェックイン時に自動的にデバイスにプッシュします。
 4. 終了したら、**[保存]** をクリックします。
 
 トークンがトークンの一覧ブレードに表示されます。
-
 
 **[今すぐ同期]** を選択すると、いつでも、Apple が保持しているデータと Intune を同期することができます。
 
@@ -97,12 +95,11 @@ iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purc
 
 ## <a name="to-assign-a-volume-purchased-app"></a>ボリューム購入アプリを割り当てるには
 
-1.  **[モバイル アプリ]** ワークロードで、**[管理]** > **[App Licenses]\(アプリのライセンス\)** の順に選びます。
-2.  アプリの一覧ブレードで、割り当てるアプリを選択し、**[...]**、**[グループの割り当て]** の順に選択します。
-3.  ***<app name>* - [割り当て]** ブレードで、**[管理]** > **[割り当て]** の順に選びます。
-4.  **[グループの選択]** を選び、**[グループの選択]** ブレードで、アプリを割り当てる Azure AD ユーザーまたはデバイス グループを選びます。
+1.  **[Intune]** ブレードの  > [管理]** で、**[モバイル アプリ]**、**[アプリ]** の順に選択します。
+2.  アプリの一覧ブレードで、割り当てるアプリを選択し、**[割り当て]** を選択します。
+3.  ***アプリの名前***  -  **[割り当て]** ブレードで **[グループの選択]** を選択し、**[グループの選択]** ブレードでアプリを割り当てる Azure AD ユーザーまたはデバイス グループを選択します。
 5.  選択したグループごとに、次の設定を選択します。
-    - **[種類]** - アプリが **[Available]\(使用可能\)** (エンド ユーザーはポータル サイトからアプリをインストールできます) か、**[必須]** (エンド ユーザーのデバイスにアプリが自動的にインストールされ) かを選びます。
+    - **[種類]** - アプリが **[使用可能]** (エンド ユーザーはポータル サイトからアプリをインストールできます) か、**[必須]** (エンドユーザーのデバイスにアプリが自動的にインストールされ) かを選びます。
     - **[ライセンスの種類]** - **[ユーザー ライセンス]** または **[デバイス ライセンス]** を選びます。
 6.  完了したら、**[保存]** を選択します。
 

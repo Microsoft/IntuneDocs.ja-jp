@@ -16,20 +16,20 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 16f7f06d02a56b4887c0d29ffcaed111185652a9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 04009fa3fea401e3093a444b0fdbbbe12bd31c84
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-macos-device-in-intune"></a>Intune に macOS デバイスを登録する
 
-組織のアプリ、データ、リソースにアクセスできれば、業務を遂行することができます。 仕事に macOS デバイスを使用している場合、そのためには__管理プロファイル__をインストールする必要があります。 管理プロファイルは IT 管理者によってセットアップされるファイルにすぎず、設定とアクセス情報を Mac に読み込みます。 詳細については、 [ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)に関するページをご覧ください。
+組織のアプリ、データ、リソースにアクセスできれば、業務を遂行することができます。 仕事に macOS デバイスを使用している場合、そのためには__管理プロファイル__をインストールする必要があります。 管理プロファイルは会社のサポートによってセットアップされるファイルにすぎず、設定とアクセス情報を Mac に読み込みます。 詳細については、 [ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)に関するページをご覧ください。
 
   > [!NOTE]
   > iPhone や iPad などの iOS デバイスを実際に登録してみる場合は、[代わりにこちらの説明をご覧ください](enroll-your-device-in-intune-ios.md)。
 
-1. __Dock__ で __Safari__ を起動し、新しいウィンドウを開いてから、[会社のポータル Web サイト](http://portal.manage.microsoft.com)を開きます。
+1. __Dock__ で __Safari__ を起動し、新しいウィンドウを開いてから、[会社のポータル Web サイト](https://portal.manage.microsoft.com)を開きます。
 2. 職場や学校のアカウントで会社のポータル Web サイトにログインします。
 
   [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
@@ -65,4 +65,4 @@ ms.lasthandoff: 07/01/2017
 
  ![インストールされた macOS プロファイル](./media/macOS_enroll_007_sysprefs_installed_profile.png)
 
-サポートが必要な場合は、 IT 管理者に問い合わせてください。 連絡先の情報は、[会社のポータル Web サイト](http://portal.manage.microsoft.com)でわかります。
+サポートが必要な場合は、 会社のサポートに問い合わせてください。 連絡先の情報は、[会社のポータル Web サイト](https://portal.manage.microsoft.com)でわかります。

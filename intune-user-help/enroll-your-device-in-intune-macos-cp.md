@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8eaeb2e0c44870dbebf85d98e2b49d46008068cd
-ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
+ms.openlocfilehash: b40801633a130ac79b0ae5b4e1669320c70909e2
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>ポータル サイト アプリで Intune に macOS デバイスを登録する
 
@@ -48,4 +48,4 @@ ms.lasthandoff: 09/08/2017
 
 8. Mac は管理登録を開始します。 この間、コンピューターのログイン情報を求められることがあります。 登録には数分かかる場合があります。 この間、コンピューターで他の作業を行っても構いません。 会社アクセス設定が完了すると、完了を知らせるメッセージが表示されます。
 
-サポートが必要な場合は、 IT 管理者に問い合わせてください。 連絡先の情報は、[会社のポータル Web サイト](http://portal.manage.microsoft.com)でわかります。
+サポートが必要な場合は、 会社のサポートに問い合わせてください。 連絡先の情報は、[会社のポータル Web サイト](https://portal.manage.microsoft.com)でわかります。

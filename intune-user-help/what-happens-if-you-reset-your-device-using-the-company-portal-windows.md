@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4c4d46a8d90c3435b640a6135d69df1f3949b6a3
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0720707c5e24daa9ef1677c549a8d2a763944f3b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>ポータル サイトを使用して Windows デバイスをリセットするとどうなりますか。
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 07/01/2017
 
 |デバイスの構成と管理|デバイスの種類|
 |---------------------------------------|---------------|
-|IT 管理者がモバイル デバイスを管理している|**Windows 10 および Windows Phone 8.1**</br>デバイスはポータル サイトに表示されなくなります。また、ポータル サイトはデバイスを製造元の既定の設定にリセットしようとします。 個人のデータ、アプリケーション、および設定は削除されます。 <br /><br />**Windows 10 Mobile**</br>デバイスの登録を解除するには、リセットを実行するしかありません。|
+|会社のサポートがモバイル デバイスを管理している|**Windows 10 および Windows Phone 8.1**</br>デバイスはポータル サイトに表示されなくなります。また、ポータル サイトはデバイスを製造元の既定の設定にリセットしようとします。 個人のデータ、アプリケーション、および設定は削除されます。 <br /><br />**Windows 10 Mobile**</br>デバイスの登録を解除するには、リセットを実行するしかありません。|
 |デバイスは会社の電子メールのみにアクセスできる|**Windows Phone 8.1**<br />デバイスはポータル サイトに表示されなくなります。また、会社のメール アカウントと保存されていないメールは削除されます。<br /><br />**Windows 7 または Windows Vista**<br />電子メール専用で Windows 7 以前を実行しているコンピューターはリセットできません。<br /><br />**Windows 8.1 および Windows 8**<br />デバイスはポータル サイトに表示されなくなります。また、会社のメール アカウントと保存されていないメールは削除されます。|
 |PC およびラップトップ|**Windows 8.1 および Windows 8**<br />電子メール専用で Windows 8 または Windows 8.1 を実行しているコンピューターはリセットできません。<br /><br />**Windows 7 または Windows Vista**<br />Windows 7 以前を実行しているコンピューターはリセットできません。|
 
-ご質問がございましたら、IT 管理者に問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
+ご不明な点がある場合は、会社のサポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。

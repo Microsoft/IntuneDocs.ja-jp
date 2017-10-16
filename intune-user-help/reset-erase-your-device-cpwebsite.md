@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 10/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ce0ce291f303b04f0851b93add5f5cde5e2ee13f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: cadc8ac211f60fd767dbfa7d412b089c3c1c94ea
+ms.sourcegitcommit: f254f49fc65fc75a779ff721e2202c53d03cb981
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/02/2017
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>ポータル サイト Web サイトからデバイスをリセットする
 
-デバイスが紛失した、または盗難にあった場合は、データへの不正なアクセスを防ぐため、デバイスを出荷時の状態にリセットすることができます。 [ポータル サイト Web サイト](http://portal.manage.microsoft.com)を使用してデバイスをリモートでリセットすることができます。 ポータル サイト Web サイトは、Intune で登録したコンピューターとデバイスの管理に使用できる Web ページです。 この Web サイトを使用すると、ポータル サイト アプリを使用して実行できるタスクのほとんどを実行できます。
+デバイスが紛失した、または盗難にあった場合は、データへの不正なアクセスを防ぐため、デバイスを出荷時の状態にリセットすることができます。 [ポータル サイト Web サイト](https://portal.manage.microsoft.com)を使用してデバイスをリモートでリセットすることができます。 ポータル サイト Web サイトは、Intune で登録したコンピューターとデバイスの管理に使用できる Web ページです。 この Web サイトを使用すると、ポータル サイト アプリを使用して実行できるタスクのほとんどを実行できます。
 
 デバイスをリセットすると、そのデバイスはポータル サイトに表示されなくなり、出荷時の状態に戻ります。
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 07/01/2017
 
 デバイスをリセットするには:
 
-1.  [ポータル Web サイト](http://portal.manage.microsoft.com)で、__メニュー__ ボタン ![3 つの横棒が並行に積み上げられている、メニュー ボタンの小さな画像](/Intune/whats-new/media/CP_hamburger_menu.png) をタップしてから、__[デバイス]__ を選択します。
+1.  [ポータル Web サイト](https://portal.manage.microsoft.com)で、__[メニュー]__ ボタンをタップし、__[デバイス]__ を選択します。
 
 2. __[デバイス]__ ページで、名前を変更するデバイスの名前を選択します。
 
@@ -47,4 +47,4 @@ ms.lasthandoff: 07/01/2017
 
 これでデバイスがリセットされました。
 
-サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。

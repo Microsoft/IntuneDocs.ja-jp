@@ -15,21 +15,21 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: f46a93d42427ea41adf71403c91fa95052c0bba2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 976b58fcc7835b0992c5d53934642bd4fedb5b50
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>Android デバイスに関する一般的な問題を解決する
 
-Android デバイスで発生する問題の一部は、トラブルシューティングによって解決できる場合があります。 以下に、まず自分で解決を試みることができる一般的な問題をいくつか挙げます。 さらに複雑な問題については、[ポータル Web サイト](http://portal.manage.microsoft.com)の連絡先情報を使用して IT 管理者に問い合わせることをお勧めします。
+Android デバイスで発生する問題の一部は、トラブルシューティングによって解決できる場合があります。 以下に、まず自分で解決を試みることができる一般的な問題をいくつか挙げます。 さらに複雑な問題については、[ポータル Web サイト](https://portal.manage.microsoft.com)の連絡先情報を使用して、会社のサポートに問い合わせることをお勧めします。
 
 - [Android デバイスでコンプライアンス対応を確認する](check-compliance-on-your-device-android.md)
-- [詳細ログ記録を使用して、デバイスの問題解決に役立つ情報を IT 管理者に提供する](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [電子メールを使用してログを IT 管理者に送信する](send-logs-to-your-it-admin-by-email-android.md)
-- [USB ケーブルを使用してログを IT 管理者に送信する](send-logs-to-your-it-admin-using-cable-android.md)
-- [IT 管理者に登録に関するエラーを送信する](send-enrollment-errors-to-your-it-admin-android.md)
+- [詳細ログ記録を使用して、デバイスの問題解決に役立つ情報を会社のサポートに提供する](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
+- [電子メールを使用してログを会社のサポートに送信する](send-logs-to-your-it-admin-by-email-android.md)
+- [USB ケーブルを使用してログを会社のサポートに送信する](send-logs-to-your-it-admin-using-cable-android.md)
+- [会社のサポートに登録に関するエラーを送信する](send-enrollment-errors-to-your-it-admin-android.md)
 - [Android デバイスを更新する必要がある](you-need-to-update-your-android-device.md)
 - [デバイスが最新のオペレーティング システムのバージョンに準拠していない](your-android-version-isnt-yet-supported.md)
 - [デバイスが root 化され、接続できない](your-device-is-rooted-and-you-cant-connect-android.md)

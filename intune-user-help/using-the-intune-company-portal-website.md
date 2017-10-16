@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 90168dae6b73185ae8cdf6c55093c79ab3d729c0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6213bcf2e7ee2ad1ffd15010d8741b86b065d147
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="using-the-intune-company-portal-website"></a>Intune ポータル サイト Web サイトの使用
 [ポータル サイト Web サイト](https://portal.manage.microsoft.com)は、Intune で登録したコンピューターとデバイスの管理にエンド ユーザーが使用できる Web ページです。
@@ -39,10 +39,10 @@ ms.lasthandoff: 07/01/2017
 
 -   [デバイスを手動で同期してアプリのインストールにかかる時間を短縮](sync-your-device-manually-cpwebsite.md)
 
--   IT 管理者の連絡先情報の検索 (構成している場合)
+-   会社のサポートの連絡先情報の検索 (構成している場合)
 
 -   会社または学校のポリシーに準拠しているかどうかを含む、デバイスの詳細の表示
 
 -   PC のリモート管理 (PC に対してのみ機能します)
 
-サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。

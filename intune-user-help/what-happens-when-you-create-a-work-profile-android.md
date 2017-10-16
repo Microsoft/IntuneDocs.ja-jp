@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ca763562c96c4c5f4f4e6bcf317bb6ccba68d8d2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2958710c0f758e16e2613627782f81e26f1d3051
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-when-you-create-a-work-profile"></a>仕事用プロファイルを作成するとどうなりますか
 
@@ -28,9 +28,9 @@ ms.lasthandoff: 07/01/2017
 
 仕事用プロファイルを作成した場合:
 
-- IT 管理者は、ユーザー個人のアプリやデータではなく、ユーザーのデバイス上の仕事関連のメール、アプリ、設定、およびデータのみを管理できます。
+- 会社のサポートは、ユーザー個人のアプリやデータではなく、ユーザーのデバイス上の仕事関連のメール、アプリ、設定、およびデータのみを管理できます。
 
-- 仕事用のアプリは、Play Store for Work から入手します。 個人用のアプリを入手する場合は、いつも個人用アプリを入手している Google Play ストアを使用します。 IT 管理者は、個人用アプリを表示または管理できません。
+- 仕事用のアプリは、Play Store for Work から入手します。 個人用のアプリを入手する場合は、いつも個人用アプリを入手している Google Play ストアを使用します。 会社のサポートは、個人用アプリを表示または管理できません。
 
 - 仕事用のアプリは、個人用のアプリと分かれていますが、どちらのアプリも、自分のホーム画面で同時に確認できます。 次に、画面の例を示します。 実際の画面とは少し異なる可能性があります。
 
@@ -38,9 +38,9 @@ ms.lasthandoff: 07/01/2017
 
     ![Android Play Store for Work](./media/afw-google-play-store-for-work.png)
 
-- 会社または学校がユーザーの仕事用プロファイルを所有している場合、IT 管理者は仕事用のアプリまたはユーザーのプロファイルをインストールまたは削除できますが、個人用のアプリまたはデータをインストールまたは削除することはできません。
-- IT 管理者は、ユーザーのデバイスをリセットまたはワイプすることはできません。
+- 会社または学校がユーザーの仕事用プロファイルを所有している場合、会社のサポートは仕事用のアプリまたはユーザーのプロファイルをインストールまたは削除できますが、個人用のアプリまたはデータをインストールまたは削除することはできません。
+- 会社のサポートは、ユーザーのデバイスをリセットまたはワイプすることはできません。
 
 仕事用プロファイルの作成手順については、「[Create a work profile and enroll your device](create-a-work-profile-and-enroll-your-device-in-intune-android.md)」(仕事用プロファイルの作成とデバイスの登録) を参照してください。
 
-サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。

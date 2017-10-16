@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 10/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c8ae15dc7b192cbfe3f0759e568b92783f24e1fe
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 33959b941e39d8694387770e1f3264d74647de69
+ms.sourcegitcommit: 4b776d1a87c0707244f4ae0122de882e0eef6fa3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Windows の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/09/2017
 ## <a name="step-1---specify-the-software-setup-file"></a>手順 1 - ソフトウェアのセットアップ ファイルを指定する
 
 1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
+2. **[その他のサービス]** > **[監視 + 管理]** + **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[アプリの管理]** を選択します。
 4. **[モバイル アプリ]** ワークロードで、**[管理]** > **[アプリ]** の順に選択します。
 5. アプリの一覧の上にある **[追加]** を選択します。
@@ -65,6 +65,14 @@ ms.lasthandoff: 09/09/2017
 1. **[アプリの追加]** ブレードで、構成したアプリ情報が正しいことを確認します。
 2. **[追加]** を選択して、アプリを Intune にアップロードします。
 
+## <a name="step-5---update-a-line-of-business-app"></a>手順 5 - 基幹業務アプリの更新
+
+[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+
 ## <a name="next-steps"></a>次のステップ
 
 作成したアプリがアプリの一覧に表示されます。 選択したグループにアプリを割り当てることができます。 詳細については、[アプリをグループに割り当てる方法](apps-deploy.md)に関するページを参照してください。
+
+アプリのプロパティと割り当てを監視する方法について説明します。 詳細については、「[アプリ情報と割り当てを監視する方法](apps-monitor.md)」を参照してください。
+
+Intune におけるアプリのコンテキストについて説明します。 詳細については、「[デバイスとアプリのライフサイクルの概要](introduction-device-app-lifecycles.md)」を参照してください。

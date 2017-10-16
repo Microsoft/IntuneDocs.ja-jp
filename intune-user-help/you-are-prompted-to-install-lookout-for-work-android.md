@@ -1,11 +1,11 @@
 ---
 title: "Android デバイスで Lookout for Work をインストールする必要がある | Microsoft Docs"
-description: 
+description: "Android 用の Lookout for Work をインストールする方法について説明します。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 957a0f5104030043e8049bf65ba30e4579a0acb0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9e0ea429a6fd68bf984f814d512f9e5a8b327358
+ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="you-need-to-install-lookout-for-work"></a>Lookout for Work をインストールする必要がある
+# <a name="install-lookout-for-work"></a>Lookout for Work をインストールする
 
-作業内容にアクセスする前に、IT 管理者から潜在的なセキュリティ脅威を検出してデバイスを保護することができる、Lookout for Work アプリをインストールするように求められます。
+作業内容にアクセスする前に、会社のサポートから潜在的なセキュリティ脅威を検出してデバイスを保護することができる、Lookout for Work アプリをインストールするように求められます。
 
 インストールで問題が発生する場合、このトピックの終わりに示すトラブルシューティングの手順を試してください。
 
-**必要な操作**
+## <a name="what-you-need-to-do"></a>必要事項
 
 1.  画面の一番上から下にドラッグして通知バーを開き、**[Required application – Install Lookout for Work from Play Store]** (必要なアプリケーション – Lookout for Work を Play ストアからインストール) をタップします。
 
@@ -70,8 +70,10 @@ ms.lasthandoff: 07/01/2017
 
   Lookout for Work がこのデバイスでセキュリティ上の脅威を検出した場合は、問題を解決する手順が表示されます。
 
-**インストールが機能しない場合**
+## <a name="if-the-installation-doesnt-work"></a>インストールが機能しない場合
 
 ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。 このような場合は、Lookout for Work を [Play ストアから手動で](https://play.google.com/store/apps/details?id=com.lookout.enterprise)インストールします。
 
-サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
+
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+

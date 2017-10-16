@@ -5,7 +5,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 12/14/2016
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b007a3b038f1d631f1f75f5fea208de75e14fed1
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: e1b18486f84bb5d4d47caceb871bf6884b9b8f89
+ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Microsoft Intune の Android および Samsung KNOX Standard ポリシー設定
 
@@ -186,24 +186,84 @@ Microsoft Intune **Android カスタム構成ポリシー**を使用して、And
 
 |設定の名前|説明|
     |----------------|--------------------|
-    |**名前**|Android カスタム ポリシーの一意の名前を入力すると、Intune コンソール内で容易に識別できます。|
-    |**説明**|Android カスタム ポリシーの概要や、ポリシーを特定するのに役立つその他の関連情報についての説明を入力します。|
+    | **名前** |Android カスタム ポリシーの一意の名前を入力すると、Intune コンソール内で容易に識別できます。|
+    | **説明** |Android カスタム ポリシーの概要や、ポリシーを特定するのに役立つその他の関連情報についての説明を入力します。|
 
 ### <a name="oma-uri-settings"></a>OMA-URI 設定
 
    |設定の名前|説明|
     |--------|--------------------|
-    |**設定の名前**|OMA-URI 設定の一意の名前を入力すると、設定リスト内で容易に識別できます。|
-    |**設定の説明**|設定の概要と、それを特定するために役立つその他の関連情報についての説明を入力します。|
-    |**データ型**|この OMA-URI 設定を指定するデータ型を選択します。 **[文字列]、[文字列 (XML)]、[日付と時刻]、[整数]、[浮動小数点]**、または **[ブール値]** から選択します。|
-    |**OMA-URI (大文字と小文字を区別する)**|設定対象の OMA-URI を指定します。|
-    |**値**|以前に指定した OMA-URI に関連付ける値を指定します。|
+    | **設定の名前** |OMA-URI 設定の一意の名前を入力すると、設定リスト内で容易に識別できます。|
+    | **設定の説明** |設定の概要と、それを特定するために役立つその他の関連情報についての説明を入力します。|
+    | **データ型** |この OMA-URI 設定を指定するデータ型を選択します。 **[文字列]、[文字列 (XML)]、[日付と時刻]、[整数]、[浮動小数点]**、または **[ブール値]** から選択します。|
+    | **OMA-URI (大文字と小文字を区別する)** |設定対象の OMA-URI を指定します。|
+    | **値** |以前に指定した OMA-URI に関連付ける値を指定します。|
 
 ### <a name="examples"></a>例
 
 - [事前共有キーを使用した Wi-Fi プロファイルの作成](pre-shared-key-wi-fi-profile.md)
 - [カスタム ポリシーを使用して、Android デバイスにアプリごとの VPN プロファイルを作成する](per-app-vpn-for-android-pulse-secure.md)
 - [カスタム ポリシーを使用して、Samsung KNOX デバイス用のアプリを許可またはブロックする](custom-policy-to-allow-and-block-samsung-knox-apps.md)
+
+## <a name="supported-samsung-knox-standard-devices"></a>Samsung KNOX Standard デバイスのサポート
+
+ポータル サイト アプリは、MDM 登録時に、登録対象のデバイスが[サポートされている KNOX デバイスの一覧](https://www.samsungknox.com/knox-supported-devices/knox-workspace)に掲載されている場合のみ、Samsung KNOX ライセンス認証を試みます。 これにより、MDM 登録を妨げる KNOX ライセンス認証エラーの発生を回避できます。 Samsung KNOX ライセンス認証をサポートしていないデバイスは、標準の Android デバイスとして登録されます。 Samsung デバイスには、KNOX をサポートするモデル番号を持つものがある一方で、そうでないものもあります。 Samsung デバイスを購入および展開する前に、デバイスの再販業者に KNOX 対応の有無について確認してください。
+
+以下に一覧表示した Samsung デバイス モデルは、KNOX をサポートしておらず、Android 用ポータル サイト アプリによってネイティブの Android デバイスとして登録されます。
+
+| **デバイス名** | **デバイスのモデル番号** |
+| --- | --- |
+| Galaxy A3 | SM-A300G<br>SM-A310Y<br>SM-A320FL |
+| Galaxy A5 | SM-A500G |
+| Galaxy Alpha | SM-G850M |
+| Galaxy Avant | SM-G386T |
+| Galaxy C9/C9 Pro | SM-C900F |
+| Galaxy Core 2/Core 2 Duos | SM-G355H<br>SM-G355M |
+| Galaxy Core Lite | SM-G3588V |
+| Galaxy Core Prime | SM-G360H |
+| Galaxy Core LTE | SM-G386F<br>SM-G386W |
+| Galaxy Grand | GT-I9082L<br>GT-I9082<br>GT-I9080L |
+| Galaxy Grand 3 | SM-G7200 |
+| Galaxy Grand Neo | GT-I9060I |
+| Galaxy Grand Prime | SM-G530M |
+| Galaxy Grand Prime Value Edition | SM-G531H |
+| Galaxy J Max | SM-T285YD |
+| Galaxy J1 | SM-J100H<br>SM-J100M<br>SM-J100ML |
+| Galaxy J1 Ace | SM-J110F<br>SM-J110H |
+| Galaxy J1 Mini | SM-J105M |
+| Galaxy J2/J2 Pro | SM-J200H<br>SM-J210F |
+| Galaxy J3 | SM-J320F<br>SM-J320FN<br>SM-J320H<br>SM-J320M<br>SM-J320W8 |
+| Galaxy J5 | SM-J500G |
+| Galaxy J7 | SM-J710F |
+| Galaxy J7 Prime | SM-J727T1 |
+| Galaxy K Zoom | SM-C115 |
+| Galaxy Light | SGH-T399N |
+| Galaxy Note 3 | SM-N9002<br>SM-N9009 |
+| Galaxy Note 5 | SM-N920G<br>SM-N920I<br>SM-N920W8 |
+| Galaxy Note 7/Note 7 Duos | SM-N930S<br>SM-N9300<br>SM-N930F<br>SM-N930T<br>SM-N9300<br>SM-N930F<br>SM-N930S<br>SM-N930T |
+| Galaxy Note 10.1 3G | SM-P602 |
+| Galaxy NotePRO 12.2&quot; | SM-P902 |
+| Galaxy On5 | SM-G570MSM-G570Y |
+| Galaxy On7 | SM-G600FY<br>SM-G610M<br>SM-G610Y |
+| Galaxy S2 Plus | GT-I9105P |
+| Galaxy S3 Mini | SM-G730A<br>SM-G730V |
+| Galaxy S3 Neo | GT-I9300<br>GT-I9300I |
+| Galaxy S4 | SM-S975L |
+| Galaxy S4 Active | GT-I9295 |
+| Galaxy S4 Neo | SM-G318ML |
+| Galaxy S5 | SM-G9006W<br>SM-G900M |
+| Galaxy S5 Neo | SM-G903M |
+| Galaxy S6 Edge | 404SCSM-G925I<br>SM-G928G |
+| Galaxy Tab A 7.0&quot; | SM-T280SM-T285 |
+| Galaxy Tab A 9.7&quot; | SM-P555M |
+| Galaxy Tab 3 7&quot;/Tab 3 Lite 7&quot; | SM-T116SM-T210SM-T211 |
+| Galaxy Tab 3 8.0&quot; | SM-T311 |
+| Galaxy Tab 3 10.1&quot; | GT-P5200<br>GT-P5210<br>GT-P5220 |
+| Galaxy Trend 2 Lite | SM-G318H |
+| Galaxy V Plus | SM-G318HZ |
+| Galaxy Young 2 Duos | SM-G130BU |
+
+
 
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

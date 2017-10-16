@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3869659ea95f561365f40bcfcd164b82a7795ac0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 50b4b9c8399e854e2f5961f6711090778b41ba37
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="fix-common-issues-with-your-ios-device"></a>iOS デバイスに関する一般的な問題を解決する
 
-iOS デバイスで発生する問題の一部は、トラブルシューティングによって解決できる場合があります。 以下に、まず自分で解決を試みることができる一般的な問題をいくつか挙げます。 さらに複雑な問題については、[ポータル Web サイト](http://portal.manage.microsoft.com)の連絡先情報を使用して IT 管理者に問い合わせることをお勧めします。
+iOS デバイスで発生する問題の一部は、トラブルシューティングによって解決できる場合があります。 以下に、まず自分で解決を試みることができる一般的な問題をいくつか挙げます。 さらに複雑な問題については、[ポータル Web サイト](https://portal.manage.microsoft.com)の連絡先情報を使用して、会社のサポートに問い合わせることをお勧めします。
 
 - [セキュリティを侵害された iOS デバイスを再接続する必要がある](how-to-reconnect-a-compromised-ios-device.md)
-- [IT 管理者にエラーを送信する必要がある](send-errors-to-your-it-admin-ios.md)
+- [会社のサポートにエラーを送信する必要がある](send-errors-to-your-it-admin-ios.md)
 - [Microsoft にエラーを送信する必要がある](send-logs-to-microsoft-ios.md)
 - [ポータル サイト アプリの使用中にエラーが発生する](you-get-an-error-while-using-the-company-portal-app-ios.md)
 - [登録するデバイスを特定する必要がある](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)

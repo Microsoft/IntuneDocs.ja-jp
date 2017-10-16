@@ -14,11 +14,11 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 1cccc69ab772499183a7f434303d78ecf4308a5f
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: d9a7ba4e3a4c10919ba933cc59c8093bec3588db
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-update-the-company-portal-app"></a>ポータル サイト アプリを更新する方法
 
@@ -45,7 +45,7 @@ ms.lasthandoff: 08/08/2017
 2.  インストール手順に従って操作します。
 
     > [!NOTE]
-    > Microsoft ストアにアクセスできない場合は、IT 管理者に問い合わせてください。
+    > Microsoft ストアにアクセスできない場合は、会社のサポートに問い合わせてください。
 
 
-サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。

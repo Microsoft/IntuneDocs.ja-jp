@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7568ce8f8a5cb648f1f250751f1a03c7c55a0fd2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6a2a14548a57e26fe322d0c28cb515e6590acb69
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-android-devices-operating-system-version-isnt-yet-supported"></a>使用している Android デバイスのオペレーティング システムのバージョンがまだサポートされていない
 
-テクノロジの開発のペースはとても速いため、デバイスに IT 管理者のテストが追いつけない場合があります。 最新バージョンの Android では会社の一部のツールが動作しないことも考えられます。
+テクノロジの開発のペースはとても速いため、デバイスに会社のサポートのテストが追いつけない場合があります。 最新バージョンの Android では会社の一部のツールが動作しないことも考えられます。
 
-この問題を解決するには、IT 管理者に連絡する必要があります。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
+この問題を解決するには、会社のサポートに連絡する必要があります。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。

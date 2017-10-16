@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/12/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b139db1780881e5bc0aed2345f9dc456a18f0e0
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 22a03068c543ebaa410521532dfdfc96e0f10eb0
+ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Apple Configurator による iOS デバイスの登録
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune は、Mac コンピューターで実行される [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) を使用した iOS デバイスの登録をサポートします。 Apple Configurator で登録するには、各 iOS デバイスを Mac コンピューターに USB 接続し、会社の登録をセットアップする必要があります。 Apple Configurator では、次の 2 つの方法でデバイスを Intune に登録できます。
+Intune は、Mac コンピューターで実行される [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) を使用した iOS デバイスの登録をサポートします。 Apple Configurator で登録するには、各 iOS デバイスを Mac コンピューターに USB 接続し、会社の登録をセットアップする必要があります。 Apple Configurator では、次の 2 つの方法でデバイスを Intune に登録できます。
 - **セットアップ アシスタントを使用した登録** - デバイスを出荷時の設定にリセットし、セットアップ アシスタント実行時に登録するように準備します。
 - **直接登録** - デバイスを出荷時の設定にリセットせず、iOS 設定を通してデバイスを登録します。 この方法は、**ユーザー アフィニティなし**のデバイスのみに使用できます。
 
@@ -38,7 +38,7 @@ Apple Configurator の登録方法は、[デバイス登録マネージャー](d
 - [Apple MDM プッシュ証明書](apple-mdm-push-certificate-get.md)
 - デバイスのシリアル番号 (セットアップ アシスタントでの登録時のみ)
 - USB 接続ケーブル
-- [Apple Configurator 2.0](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) が実行されている Mac PC
+- [Apple Configurator 2.0](https://itunes.apple.com/app/apple-configurator-2/id1037126344) が実行されている macOS コンピューター
 
 ## <a name="create-an-apple-configurator-profile-for-devices"></a>デバイスの Apple Configurator プロファイルを作成する
 
@@ -69,7 +69,7 @@ Apple Configurator の登録方法は、[デバイス登録マネージャー](d
 
 **Apple Configurator のシリアル番号を Intune に追加するには**
 
-1. ヘッダーなしで 2 列のコンマ区切り値 (.csv) リストを作成します。 シリアル番号を左側の列に、詳細を右側の列に追加します。 リストで許可されている現在の最大行数は 500 行です。 この .csv リストをテキスト エディターで表示すると次のようになります。
+1. ヘッダーなしで 2 列のコンマ区切り値 (.csv) リストを作成します。 シリアル番号を左側の列に、詳細を右側の列に追加します。 リストで許可されている現在の最大行数は 5,000 行です。 この .csv リストをテキスト エディターで表示すると次のようになります。
 
     F7TLWCLBX196,デバイスの詳細</br>
     DLXQPCWVGHMJ,デバイスの詳細

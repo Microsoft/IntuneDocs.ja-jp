@@ -14,11 +14,11 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 531112301d0c3827ec7eb3ab4087218caa331b90
-ms.sourcegitcommit: 2b7d644c7a4f85315e11a7d0c5885cc66975c2ad
+ms.openlocfilehash: d68cbb05025e89e256a22dc88f5c4ee2afc3c536
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="intune-network-bandwidth-use"></a>Intune のネットワーク帯域幅の使用
 
@@ -155,3 +155,16 @@ Intune は、Intune ソフトウェアを実行するサーバーのようなオ
 |fef.msuc02.manage.microsoft.com|23.98.66.118|
 |fef.msuc03.manage.microsoft.com|23.101.0.100|
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
+
+### <a name="apple-device-network-information"></a>Apple デバイス ネットワークの情報
+| ホスト名  | URL (IP アドレス/サブネット) | プロトコル | ポート | デバイス |
+| --- | --- | --- | --- | --- |
+|  管理コンソール  | gateway.push.apple.com (17.0.0.0/8) | TCP | 2195 | Apple iOS と macOS |
+| 管理コンソール  | feedback.push.apple.com(17.0.0.0/8) | TCP | 2196 | Apple iOS と macOS |
+| 管理コンソール  | Apple iTunesitunes.apple.com、\*.mzstatic.com、\*.phobos.apple.com、\*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple iOS と macOS  |
+| PI サーバー  | gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8) | TCP | 2195、2196 | Apple iOS および macOS クラウド メッセージング用。 |
+| デバイス サービス  | gateway.push.apple.com | TCP | 2195 | Apple  |
+| デバイス サービス  | feedback.push.apple.com | TCP | 2196 | Apple  |
+| デバイス サービス  | Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple  |
+| デバイス (インターネット/Wi-Fi) | #-courier.push.apple.com(17.0.0.0/8) | TCP | 5223 および 443 | Apple のみ。 &#39;#&#39; は、0 から 200 の乱数です。 |
+| デバイス (インターネット/Wi-Fi) | phobos.apple.comocsp.apple.comax.itunes.apple.com | HTTP/HTTPS | 80 または 443 | Apple のみ |

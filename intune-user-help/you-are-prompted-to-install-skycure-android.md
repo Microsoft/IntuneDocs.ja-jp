@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,23 +14,21 @@ ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: f94a7cdb4feeea19527efec6486d09efcaca9b67
-ms.sourcegitcommit: 1135765fd3ac2149663341d8107f656aba236493
+ms.openlocfilehash: 6dba55de8d4c4551ff1e09bb0dffe797f0cf3190
+ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="you-need-to-install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Android デバイスに Symantec Endpoint Protection Mobile をインストールする必要がある
+# <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Android デバイスに Symantec Endpoint Protection Mobile をインストールする
 
-作業内容にアクセスする前に、潜在的なセキュリティ脅威を検出してデバイスを保護することができる、Symantec Endpoint Protection (SEP) Mobile アプリをインストールするように社内サポートから求められます。
+作業内容にアクセスする前に、潜在的なセキュリティ脅威を検出してデバイスを保護することができる、Symantec Endpoint Protection (SEP) Mobile アプリをインストールするように会社から求められます。
 
 インストールで問題が発生する場合、このトピックの終わりに示すトラブルシューティングの手順を試してください。
 
-**必要な操作**
+## <a name="what-you-need-to-do"></a>必要事項
 
 1. 画面の一番上から下にドラッグして通知バーを開き、**[Required application – Install Skycure from Play Store]\(必要なアプリケーション – Skycure を Play ストアからインストール)** をタップします。 ポータル サイト アプリの __[Compliance Details]\(ポリシー準拠状況の詳細)__ でも確認することができます。
-
-  <!--![The compliance details page on an Android device. The device is not in compliance, with a message at the bottom of the Company Portal page that says the device doesn't meet the mobile risk policy, and that Skycure must be opened to resolve the issue.](./media/skycure-resolves-compliance-android.png)-->
 
 2. Play ストアの SEP Mobile のインストール ページが表示されます。 SEP Mobile をインストールし、**[同意する]** をタップして SEP Mobile がデバイスにアクセスすることを許可します。
 
@@ -46,20 +44,16 @@ ms.lasthandoff: 08/30/2017
 
 8. SEP Mobile がこのデバイス上のセキュリティの脅威を探す処理をただちに開始します。
 
-  <!--![Skycure is analyzing your device for security threats.](./media/skycure-scan-in-progress-android.png)-->
+  * SEP Mobile によってこのデバイスでセキュリティ上の脅威が見つかった場合は、問題を解決する手順が表示されます。
 
-  SEP Mobile によってこのデバイスでセキュリティ上の脅威が見つかった場合は、問題を解決する手順が表示されます。
+  * 脅威が検出されない場合は、3 つの脅威の種類はすべて緑色で表示されます。
 
-  <!--![Skycure found a security threat.](./media/skycure-found-a-threat-android.png)-->
-
-  脅威が検出されない場合は、3 つの脅威の種類はすべて緑色で表示されます。
-
-    ポータル サイトの **[デバイスの詳細]** 画面には、このデバイスが会社のセキュリティ要件に準拠している状態であることが表示されます。
+    * ポータル サイトの **[デバイスの詳細]** 画面には、このデバイスが会社のセキュリティ要件に準拠している状態であることが表示されます。
 
     ![このデバイスはポリシーに準拠している状態になりました](./media/mtd-device-now-compliant-android.png)
 
-**インストールが機能しない場合**
+## <a name="if-the-installation-doesnt-work"></a>インストールが機能しない場合
 
 ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。 このような場合は、SEP Mobile を [Play ストアから手動で](https://play.google.com/store/apps/details?id=com.skycure.skycure)インストールします。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
