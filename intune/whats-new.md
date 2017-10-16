@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/18/2017
+ms.date: 10/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 08a22a1fa6829807860b6278181dd638f1049770
-ms.sourcegitcommit: 0d9bfd92bf5958261ed83b1f150bf207b7ba7e56
+ms.openlocfilehash: b2817537cd9bc5ec6b8e9f5800f0c8f87cfde189
+ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 
@@ -42,17 +42,77 @@ ms.lasthandoff: 09/21/2017
 
 -->   
 
+## <a name="week-of-october-2-2017"></a>2017 年 10 月 2 日の週
+
+### <a name="intune-apps"></a>Intune アプリ
+
+#### <a name="improvements-to-device-setup-workflow-in-company-portal---1490692--"></a>ポータル サイトでのデバイスのセットアップ ワークフローの機能強化<!--1490692-->
+Android 用のポータル サイト アプリでデバイスのセットアップ ワークフローを改良しました。 言語がよりわかりやすく、会社固有のものとなり、可能な範囲で画面をまとめるようにしました。 詳細については、「[アプリ UI の新機能](whats-new-app-ui.md#week-of-october-2-2017)」ページをご覧ください。
+
+#### <a name="improved-guidance-around-the-request-for-access-to-contacts-on-android-devices---1484985--"></a>Android デバイスでの連絡先へのアクセス要求に関するガイダンスの改善<!--1484985-->
+
+Android 用ポータル サイト アプリは、連絡先アクセス許可を受け入れるようにエンド ユーザーに求めることがよくあります。 エンド ユーザーがこのアクセスを拒否すると、条件付きアクセス用のアクセス許可を付与するように通知するアプリ内通知が表示されるようになります。 
+
+#### <a name="secure-startup-remediation-for-android---1490712--"></a>Android でのセキュリティで保護された起動の修復<!--1490712-->
+
+Android デバイスを持つエンド ユーザーは、ポータル サイト アプリのコンプライアンス非対応の理由をタップできるようになります。 可能であれば、問題を解決するのに適切な、設定アプリ内の場所がエンド ユーザーに直接表示されます。 
+
+#### <a name="additional-push-notifications-for-end-users-on-the-company-portal-app-for-android-o---1475932---"></a>Android O のポータル サイト アプリにエンド ユーザー向けプッシュ通知が追加<!---1475932--->
+
+エンドユーザーには、Android O のポータル サイト アプリが Intune サービスからのポリシーの取得などのバックグラウンド タスクを実行しているときにそれを示す追加の通知が表示されます。 これにより、ポータル サイトがデバイスで管理タスクをいつ実行しているかがエンド ユーザーにわかりやすくなります。 これは、Android O のポータル サイト アプリの[ポータル サイト UI の最適化](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune)の一環です。 
+
+Android O で有効になった新しい UI 要素がさらに最適化されています。ポータル サイトでバック グラウンド タスク (Intune サービスからのポリシーの取得など) がいつ実行されているかを示す追加の通知がエンド ユーザーに表示されます。  これにより、ポータル サイトがデバイスで管理タスクをいつ実行しているかがエンド ユーザーにわかりやすくなります。
+
+#### <a name="new-behaviors-for-the-company-portal-app-for-android-with-work-profiles----1485783---"></a>仕事用プロファイルを使った Android 用ポータル サイト アプリの新しい動作 <!---1485783--->
+
+仕事用プロファイルがある Android for Work デバイスを登録すると、仕事用プロファイル内のポータル サイト アプリによって、そのデバイス上での管理タスクが実行されます。 
+
+個人プロファイルで MAM 対応アプリを使っている場合を除き、Android 用ポータル サイト アプリを使用する機会がなくなります。 仕事用プロファイルのエクスペリエンスを向上させるために、Intune では仕事用プロファイルの登録が正常に完了した後、個人用ポータル サイト アプリが自動的に非表示になります。
+
+Android 用ポータル サイト アプリは、[Play ストアでポータル サイト](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) を参照して **[Enable]\(有効化\)** をタップすると、個人プロファイルでいつでも有効にできます。
+
+#### <a name="company-portal-for-windows-81-and-windows-phone-81-moving-to-sustaining-mode---1428681--"></a>Windows 8.1 および Windows Phone 8.1 のポータル サイトの維持モードへの移行 <!--1428681-->
+
+2017 年 10 月より、Windows 8.1 および Windows Phone 8.1 用ポータル サイト アプリは、維持モードに移行されます。 つまり、当該アプリに加え、登録やコンプライアンスといった既存のシナリオは、これらのプラットフォームで引き続きサポートされます。 当該アプリは、Microsoft Store など、既存のリリース チャネル経由で引き続きダウンロード可能です。 
+
+維持モードになると、当該アプリは、重要なセキュリティ更新プログラムのみを受信するようになります。 当該アプリの更新プログラムや機能が追加でリリースされることはありません。 新機能を使用するには、デバイスを Windows 10 や Windows 10 Mobile に更新することをお勧めします。 
+
+### <a name="device-enrollment"></a>デバイスの登録
+
+#### <a name="block-unsupported-samsung-knox-device-enrollment------1490695----"></a>サポートされていない Samsung KNOX デバイスの登録をブロックする<!--- 1490695 --->
+
+ポータル サイト アプリでは、サポートされている Samsung KNOX デバイスのみ、登録を試みます。 MDM の登録を妨げる KNOX ライセンス認証エラーの発生を回避するために、登録対象のデバイスが [Samsung によって発行されたデバイス一覧](https://www.samsungknox.com/knox-supported-devices/knox-workspace)に掲載されている場合にのみ、その登録が試行されます。 Samsung デバイスには、KNOX をサポートするモデル番号を持つものがある一方で、そうでないものもあります。 Samsung デバイスを購入および展開する前に、デバイスの再販業者に KNOX 対応の有無について確認してください。 検証済みのデバイスの完全な一覧については、「[Android and Samsung KNOX Standard policy settings](/intune-classic/android-policy-settings-in-microsoft-intune.md#supported-samsung-knox-standard-devices)」 (Android および Samsung KNOX Standard のポリシー設定) をご覧ください。
+
+#### <a name="end-of-support-for-android-43-and-lower----1171126-1326920----"></a>Android 4.3 以前のサポートの終了<!---1171126, 1326920 --->
+Android 用の管理対象アプリとポータル サイト アプリで会社のリソースにアクセスするには、Android 4.4 以降を使用している必要があります。 12 月には、登録されているすべてのデバイスがインベントリから削除され、会社のリソースにアクセスできなくなります。 MDM を使わずにアプリの保護ポリシーを使用している場合、アプリは更新プログラムを受信できなくなり、時間の経過と共にエクスペリエンスの質が低下していきます。
+
+#### <a name="inform-end-users-what-device-information-can-be-seen-on-enrolled-devices---1165314--"></a>登録されているデバイスで確認可能なデバイス情報のエンドユーザーへの通知<!--1165314-->
+すべてのポータル サイト アプリの [デバイスの詳細] 画面に **[所有権の種類]** が追加されます。 これにより、ユーザーは、「[デバイスを登録した場合に会社が確認できる情報](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)」の記事から直接プライバシーの詳細を確認できるようになります。 これは近い将来、すべてのポータル サイト アプリに導入される予定です。 iOS 用については、[9 月](https://docs.microsoft.com/intune/whats-new#week-of-september-11-2017)に発表しました。 
+
+
+## <a name="week-of-september-25-2017"></a>2017 年 9 月 25 日の週
+
+### <a name="device-enrollment"></a>デバイスの登録
+
+#### <a name="intune-supports-ios-11---1428975--"></a>Intune が iOS 11 をサポート<!--1428975-->
+Intune は iOS 11 をサポートします。 これについては、[Intune サポート ブログ](https://blogs.technet.microsoft.com/intunesupport/2017/09/12/support-tip-intune-support-for-ios-11/)ですでに発表しました。
+
+### <a name="end-of-support-for-ios-80----1164477---"></a>iOS 8.0 のサポートの終了 <!---1164477--->
+iOS 用の管理対象アプリとポータル サイト アプリから会社のリソースにアクセスするには、iOS 9.0 以降を使用している必要があります。 この 9 月までに更新されないデバイスは、ポータル サイトまたはそれらのアプリにアクセスできなくなります。 
+
+### <a name="intune-apps"></a>Intune アプリ
+
+#### <a name="refresh-action-added-to-the-company-portal-app-for-windows-10---1132468--"></a>Windows 10 用ポータル サイト アプリに追加された更新アクション <!--1132468-->
+
+Windows 10 向けのポータル サイト アプリでは、ユーザーがプルして更新するか、デスクトップで F5 キーを押して、アプリのデータを更新できます。
+
 ## <a name="week-of-september-11-2017"></a>2017 年 9 月 11 日の週
 
 ### <a name="device-enrollment"></a>デバイスの登録
 
-#### <a name="additional-push-notifications-for-end-users-on-the-company-portal-app-for-android-oreo----1475932---"></a>Android Oreo のポータル サイト アプリにエンド ユーザー向けプッシュ通知が追加<!---1475932--->
+#### <a name="inform-end-users-what-device-information-can-be-seen-for-ios---739894--"></a>確認可能な iOS デバイス情報のエンドユーザーへの通知<!--739894-->
 
-エンド ユーザーには、Android Oreo のポータル サイト アプリが Intune サービスからのポリシーの取得などのバックグラウンド タスクが実行されているときにそれを示す追加の通知が表示されます。 これにより、ポータル サイトがデバイスで管理タスクをいつ実行しているかがエンド ユーザーにわかりやすくなります。 これは、Android Oreo のポータル サイト アプリの[ポータル サイト UI の最適化](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune)の一環です。 
-
-#### <a name="inform-end-users-what-device-information-can-be-seen-for-ios---739894--"></a>確認可能な iOS デバイス情報のエンドユーザーへの通知<!--739894--> 
-
-iOS 用ポータル サイト アプリの [デバイスの詳細] 画面に **[Ownership Type]\(所有権の種類\)** が追加されました。 これにより、ユーザーは、Intune エンドユーザー ドキュメントのこのページから直接プライバシーの詳細を確認できるようになります。この情報は、[バージョン情報] 画面でも確認できます。 
+iOS 用ポータル サイト アプリの [デバイスの詳細] 画面に **[Ownership Type]\(所有権の種類\)** が追加されました。 これにより、ユーザーはこのページから直接、Intune のエンド ユーザー ドキュメントにあるプライバシーの詳細を参照できます。この情報は、[バージョン情報] 画面でも確認できます。
 
 #### <a name="allow-end-users-to-access-the-company-portal-app-for-android-without-enrollment----1169910---"></a>エンドユーザーの Android 用のポータル サイト アプリへのアクセスを登録なしで許可する<!---1169910--->
 
@@ -61,11 +121,11 @@ iOS 用ポータル サイト アプリの [デバイスの詳細] 画面に **[
 
 #### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Android 用ポータル サイト アプリの文言をわかりやすいように変更 <!---1396349--->  
 
-Android 用ポータル サイト アプリについて、エンドユーザーが登録しやすくなるよう、テキストを変更して登録プロセスを簡易化しました。 カスタム登録ドキュメントがある場合は、新しい画面が反映されるように更新できます。 サンプル画像は「[Intune とエンドユーザー アプリの UI の更新](whats-new-app-ui.md#week-of-september-11-2017)」のページにあります。
+Android 用ポータル サイト アプリについて、エンドユーザーが登録しやすくなるよう、テキストを変更して登録プロセスを簡易化しました。 カスタム登録ドキュメントをお持ちの場合は、ドキュメントを更新して新しい画面を反映したいと思われるかもしれません。 サンプル画像は「[Intune とエンドユーザー アプリの UI の更新](whats-new-app-ui.md#week-of-september-11-2017)」のページにあります。
 
 #### <a name="windows-10-company-portal-app-added-to-windows-information-protection-allow-policy----677129---"></a>Windows 情報保護許可ポリシーに追加された Windows 10 ポータル サイト アプリ <!-- 677129 -->
 
-Windows 10 ポータル サイト アプリが更新され、Windows 情報保護 (WIP) がサポートされます。 アプリは、WIP 許可ポリシーに追加できます。 この変更により、アプリを **[除外対象]** ボックスの一覧に追加する必要がなくなります。 
+Windows 10 ポータル サイト アプリが更新され、Windows 情報保護 (WIP) がサポートされます。 WIP 許可ポリシーにアプリを追加できます。 この変更により、アプリを **[除外対象]** ボックスの一覧に追加する必要がなくなります。
 
 
 ## <a name="week-of-august-21-2017"></a>2017 年 8 月 21 日の週
@@ -164,17 +224,9 @@ Intune クラシック ポータル (Silverlight) で使用される既存のモ
 #### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 のメール アプリが OAuth をサポート <!---1196951--->
 Intune での条件付きアクセスで、OAuth を使用した iOS デバイスのより安全な認証がサポートされます。 これをサポートし、より安全な認証を可能にするため、iOS のポータル サイト アプリに異なるフローが生成されます。 エンドユーザーがメール アプリで新しい Exchange アカウントにサインインしようとすると、Web ビューのプロンプトが表示されます。 Intune に登録すると、ネイティブのメール アプリによる証明書へのアクセスを許可するプロンプトがユーザーに表示されます。 ほとんどのエンドユーザーにはそれ以上の検疫済みメールは表示されません。 既存のメール アカウントは引き続き基本認証プロトコルを使用するため、これに該当するユーザーには検疫済みメールが配信されます。 このエンド ユーザー向けサインイン エクスペリエンスは Office モバイル アプリの場合と似ています。
 
-### <a name="end-of-support-for-ios-80----1164477---"></a>iOS 8.0 のサポートの終了 <!---1164477--->
-iOS 用の管理対象アプリとポータル サイト アプリから会社のリソースにアクセスするには、iOS 9.0 以降を使用している必要があります。 この 9 月までに更新されないデバイスは、ポータル サイトまたはそれらのアプリにアクセスできなくなります。 
-
 ### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>ポータル Web サイトの UI の更新 <!--1313244 part 2-->
 __おすすめアプリの更新__  
 機能を選択したアプリをユーザーが参照できる専用ページをサイトに追加し、ホームページのおすすめセクションでいくつかの UI の修正を行いました。 これらの変更後の外観は、「[アプリ UI の新機能](whats-new-app-ui.md)」ページで確認できます。
-
-
-### <a name="end-of-support-for-android-43-and-lower----1171127-1326920----"></a>Android 4.3 以前のサポートの終了<!---1171127, 1326920 --->
-Android 用の管理対象アプリとポータル サイト アプリで会社のリソースにアクセスするには、Android 4.4 以降を使用している必要があります。 10 月の初めまでにデバイスを更新しないと、ポータル サイトまたはそれらのアプリにアクセスできなくなります。 12 月には、登録されているすべてのデバイスがインベントリから削除され、会社のリソースにアクセスできなくなります。 MDM を使わずにアプリの保護ポリシーを使用している場合、アプリは更新プログラムを受信できなくなり、時間の経過と共にエクスペリエンスの質が低下していきます。
-
 
 ### <a name="platform-support-reminder-windows-phone-81-mainstream-support-ended-july-11-2017"></a>プラットフォーム サポートのお知らせ: Windows Phone 8.1 のメインストリーム サポートが 2017 年 7 月 11 日に終了
 <!-- 1327781 -->

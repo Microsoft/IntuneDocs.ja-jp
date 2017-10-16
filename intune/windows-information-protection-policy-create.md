@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 10/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 524b4b506855b50bb5312dc31e98eb5f451cb66d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 3cf11c53a5f1ce78dda9c703da32270b0b07874a
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 
@@ -155,16 +155,13 @@ WIP を無効にすると、ローカルに接続されたドライブ上の WIP
 
 ### <a name="use-wip-learning"></a>WIP の学習を使用する
 
-1. Azure ダッシュボードに移動します。 <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
+1. Azure ポータルを開きます。 **[その他のサービス]** を選択します。 テキスト ボックス フィルターに「**Intune**」と入力します。
 
-2. 左側のメニューから **[その他のサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
+3. **[Intune]**、**[モバイル アプリ]** の順に選択します。
 
-3. **[Intune]** を選んで **Intune ダッシュボード**を開き、**[モバイル アプリ]** を選択します。
-
-4. **[モニター]** で **[WIP の学習]** を選択します。 WIP の学習によって記録された不明アプリが表示されます。
-
-> [!IMPORTANT]
-> WIP の学習のログ レポートにアプリが表示されたら、それをアプリ保護ポリシーに追加できます。
+4. **[アプリの保護状態]** > **[レポート]** > **[Windows 情報保護の学習]** の順に選択します。  
+ 
+    WIP の学習のログ レポートにアプリが表示されたら、それをアプリ保護ポリシーに追加できます。
 
 ## <a name="deploy-your-wip-app-protection-policy"></a>WIP アプリ保護ポリシーを展開する
 
@@ -175,7 +172,7 @@ WIP を無効にすると、ローカルに接続されたドライブ上の WIP
 
 WIP アプリ保護ポリシーを作成した後、MAM を使ってポリシーを組織に展開する必要があります。
 
-1.  **[アプリに関するポリシー]** ブレードで新しく作成したアプリ保護ポリシーを選択し、**[ユーザー グループ]** > **[ユーザー グループの追加]** を選択します。
+1.  **[アプリに関するポリシー]** ブレードで新しく作成したアプリ保護ポリシーを選択し、**[ユーザー グループ]**、**[ユーザー グループの追加]** の順に選択します。
 
     Azure Active Directory 内のすべてのセキュリティ グループで構成されるユーザー グループの一覧が、**[ユーザー グループの追加]** ブレードで開きます。
 

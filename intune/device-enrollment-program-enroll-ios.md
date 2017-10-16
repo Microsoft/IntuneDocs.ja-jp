@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/13/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 94eeb453e5c83c2dadaa757b4c7867f9dd3f62ff
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 311bb42f2ef9fbf689e32eacca7420c8189251bf
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する
 
@@ -30,6 +30,9 @@ ms.lasthandoff: 09/14/2017
 DEP 登録を有効にするには、Intune ポータルと Apple DEP ポータルの両方を使います。 管理するために Intune にデバイスを割り当てられるように、シリアル番号のリストまたは注文番号が必要になります。 登録時にデバイスに適用された設定を含む DEP 登録プロファイルを作成します。
 
 なお、DEP 登録は[デバイス登録マネージャー](device-enrollment-manager-enroll.md)では動作しません。
+
+## <a name="what-is-supervised-mode"></a>監視モードとは何か。
+Apple は iOS 5 で監視モードを導入しました。 監視モードの iOS デバイスは、さらに細かく制御できます。 そのため、企業所有のデバイスで特に役立ちます。 Intune は Apple Device Enrollment Program (DEP) の一部としてデバイスの監視モードを設定できます。 
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -73,13 +76,12 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 3. **[Manage Servers\(サーバーの管理\)]** ページで、**[Add MDM Server\(MDM サーバーの追加\)]** を選びます。
 4. **MDM サーバー名**を入力し、**[Next]** (次へ) をクリックします。 サーバー名は、自分がモバイル デバイス管理 (MDM) サーバーを識別できるようにするための名前です。 Microsoft Intune サーバーの名前または URL ではありません。
 
-   ![DEP の MDM サーバー名を追加して [次へ] をクリックしたスクリーンショット。](./media/enrollment-program-token-add-server.png)
+   ![DEP の MDM サーバー名を追加して 次へをクリックしたスクリーンショット。](./media/enrollment-program-token-add-server.png)
 
 5. **[Add &lt;ServerName&gt;\(<サーバー名> の追加\)]** ダイアログ ボックスが開き、**[Upload Your Public Key\(公開キーをアップロードする\)]** と表示されます。 **[Choose File]** (ファイルを選択) をクリックして .pem ファイルをアップロードし、**[Next]** (次へ) を選択します。
 
-6.  **[Add &lt;ServerName&gt;]** (<サーバー名> の追加) ダイアログ ボックスに、**[Your Server Token]** (サーバー トークン) リンクが表示されます。 サーバー トークン (.p7m) ファイルをコンピューターにダウンロードした後、**[Done]** (完了) を選択します。
 
-7. **[Deployment Programs]\(展開プログラム)** &gt; **[Device Enrollment Program]** &gt; **[Manage Devices]\(デバイスの管理)** の順に移動します。
+7. **[Deployment Programs](展開プログラム)** &gt; **[Device Enrollment Program]** &gt; **[Manage Devices](デバイスの管理)** の順に移動します。
 8. **[Choose Devices By\(デバイスの選択方法\)]** で、デバイスを識別する方法を指定します。
     - **Serial Number\(シリアル番号\)**
     - **Order Number\(注文番号\)**
@@ -115,7 +117,10 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 4. **[デバイス管理の設定]** を選択し、次のプロファイル設定を構成します。
 
   ![管理モードが選択されているスクリーン ショット。 デバイスには [監督下]、[ロックされた登録]、[ペアリングの許可] ([すべて拒否] に設定されている) の設定があります。 [Apple Configurator の証明書] は、新しい Enrollment Program プロファイルでは淡色表示されています。](./media/enrollment-program-profile-mode.png)
-    - **[監督下]** - より多くの管理オプションが使用可能な管理モードです。既定でアクティベーション ロックは無効になります。 このチェック ボックスをオフのままにすると、管理機能が制限されます。
+    - **[監督下]** - より多くの管理オプションが使用可能な管理モードです。既定でアクティベーション ロックは無効になります。 このチェック ボックスをオフのままにすると、管理機能が制限されます。 Microsoft は、多数の iOS デバイスを展開する組織に対して特に、監視モードを有効にするメカニズムとして DPE の利用を推奨しています。
+
+ > [!NOTE]
+ > デバイスの登録後、Intune を利用してデバイスの監視モードを設定することはできません。 登録後に監視モードを有効にする唯一の方法は、USB ケーブルで iOS デバイスを Mac に接続し、Apple Configurator を使用することです。 デバイスがリセットされ、監視モードで構成されます。 詳細については、[Apple Configurator ドキュメント](http://help.apple.com/configurator/mac/2.3)を参照してください。監視対象となったデバイスのロック画面には、"この iPhone は Contoso が管理しています" と表示されます。 また、"この iPhone は監視されています。 Contoso はインターネット トラフィックを監視し、このデバイスの位置を特定できます。" と、 **[設定]**、**[全般]**、**[情報]** の順に選択すると表示されます。
 
     - **[ロックされた登録]** - ([管理モード] を [監督下] にする必要があります) 管理プロファイルの削除を許可する iOS 設定を無効にします。 このチェック ボックスをオフのままにすると、[設定] メニューから管理プロファイルを削除できます。 デバイスの登録後は、デバイスを出荷時の設定にリセットしないと、この設定を変更することができません。
 
@@ -146,6 +151,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
         - **診断データ**
 
     **[保存]** を選びます。
+
 9. プロファイルの設定を保存するには、**[登録プロファイルの作成]** ブレードで **[作成]** を選択します。 登録プロファイルが、[Apple Enrollment Program 登録プロファイル] の一覧に表示されます。
 
 ## <a name="sync-managed-devices"></a>管理対象デバイスを同期する
