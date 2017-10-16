@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d57da14ad070275f7cdef639d971c176c1010634
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9317fd747e52524d97cea5d4c79fed49246b5866
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>管理デバイスを使用して作業する
 Microsoft Intune は、組織がデバイス (スマートフォン、タブレット、PC など)、アプリ、およびその他の企業リソース (電子メールなど) を管理できるようにするソフトウェアです。 これを利用すると、企業の情報の安全性を確保しつつ、従業員が事実上どこからでも、ほぼすべてのデバイスで業務情報にアクセスできるようになります。
@@ -33,8 +33,8 @@ Microsoft Intune は、組織がデバイス (スマートフォン、タブレ�
 ## <a name="how-do-i-get-the-company-portal"></a>ポータル サイトの入手方法
 ポータル サイトは 2 通りの方法で入手できます。
 
-- ポータル サイト アプリをデバイスにインストールします。 一般的に、ポータル サイト アプリはお使いのデバイスのアプリ ストアに移動して入手しますが、IT 管理者が代わりにポータル サイト アプリをインストールすることもできます。
-- IT 管理者が設定した[ポータル Web サイト](https://portal.manage.microsoft.com)にアクセスします。
+- ポータル サイト アプリをデバイスにインストールします。 一般的に、ポータル サイト アプリはお使いのデバイスのアプリ ストアに移動して入手しますが、会社のサポートが代わりにポータル サイト アプリをインストールすることもできます。
+- 会社のサポートが設定した[ポータル Web サイト](https://portal.manage.microsoft.com)に移動します。
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>アプリと Web サイトの違い
 ポータル サイトとポータル サイト Web サイトには微妙な違いがいくつかありますが、ほとんどのタスクは同じように実行できます。 実行できるいくつかのタスクを以下に示します。
@@ -54,9 +54,9 @@ Microsoft Intune は、組織がデバイス (スマートフォン、タブレ�
 - [ポータル Web サイトを使用する](using-the-intune-company-portal-website.md)
 
 ## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>コンピューターやデバイスをポータル サイトに追加すると、どうなりますか。
-コンピューターやデバイスをポータル サイトに追加すると、なんらかのソフトウェアがインストールされるか、アプリがダウンロードされる場合があります (デバイスによって異なります)。 また、デバイスの管理を IT 管理者に許可することで、デバイス上の会社情報を保護しやすくすることもできます。
+コンピューターやデバイスをポータル サイトに追加すると、なんらかのソフトウェアがインストールされるか、アプリがダウンロードされる場合があります (デバイスによって異なります)。 また、デバイスの管理を会社のサポートに許可することで、デバイス上の会社情報を保護しやすくすることもできます。
 
-お使いのデバイスで IT 管理者が閲覧できる情報と閲覧できない情報については、お使いのデバイスの種類に該当するリンクを参照してください。
+会社のサポートがユーザーのデバイスに関して確認できる情報と確認できない情報については、使用しているデバイスの種類に該当するリンクを参照してください。
 
 - [Android 用ポータル サイト アプリのインストール](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 - [iOS および macOS 用ポータル サイト アプリのインストール](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
@@ -96,4 +96,4 @@ Microsoft Intune は、組織がデバイス (スマートフォン、タブレ�
 - [iOS デバイスに関する一般的な問題を解決する](troubleshoot-your-device-ios.md)
 - [Windows デバイスに関する一般的な問題を解決する](troubleshoot-your-device-windows.md)
 
-以下のコメントを投稿してサポートを受けることはできますが、組織によって要求は異なるため、必ずしもすべての質問にお答えできるとは限りません。 IT 管理者にサポートを求めることで、最も迅速かつ適切な返答が得られる可能性があります。 連絡先の情報は、[ポータル Web サイト](https://portal.manage.microsoft.com)で確認できます。
+以下のコメントを投稿してサポートを受けることはできますが、組織によって要求は異なるため、必ずしもすべての質問にお答えできるとは限りません。 会社のサポートにサポートを求めることで、最も迅速かつ適切な返答が得られる可能性があります。 連絡先の情報は、[ポータル Web サイト](https://portal.manage.microsoft.com)で確認できます。

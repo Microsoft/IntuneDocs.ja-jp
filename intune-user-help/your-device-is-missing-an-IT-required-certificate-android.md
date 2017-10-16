@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b1f4176704ba25f5e4ff1b1572a6f1e5ce0f620b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 784fec4e29f64db0445c857e5073ddd7e890a795
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="your-android-device-is-missing-a-certificate-required-by-your-it-admin"></a>Android デバイスに、IT 管理者が必要とする証明書がありません
+# <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Android デバイスに、会社のサポートが必要とする証明書がありません
 
-デバイスが Intune に登録されておらず、IT 管理者が必要とする特定の証明書がない場合は、ポータル サイト アプリにサインインすることはできません。 サインインしようとすると、次のメッセージが表示されます。
+デバイスが Intune に登録されておらず、会社のサポートが必要とする特定の証明書がない場合は、ポータル サイト アプリにサインインすることはできません。 サインインしようとすると、次のメッセージが表示されます。
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
@@ -35,15 +35,15 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>欠落している証明書を会社または学校の PC で確認し、特定する
 
-1. PC で、Internet Explorer を開きます。 この目的に使用する PC をお持ちでない場合は、IT 管理者に問い合わせてください。 管理者の連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
+1. PC で、Internet Explorer を開きます。 この目的に使用する PC をお持ちでない場合は、会社のサポートに問い合わせてください。 会社のサポートの連絡先情報については、[ポータル Web サイト](https://portal.manage.microsoft.com)をご確認ください。
 
-2. [ポータル サイト Web サイト](http://portal.manage.microsoft.com)に移動して、職場や学校の資格情報を使用してサインインします。
+2. [ポータル サイト Web サイト](https://portal.manage.microsoft.com)に移動して、職場や学校の資格情報を使用してサインインします。
 
 3. ブラウザーのアドレス バーの右端で、下のスクリーンショットのような、南京錠のような記号をクリックします。
 
     ![screenshot-internet-explorer-address-bar-padlock-symbol](./media/andr-missing-cert-ie-padlock-symbol.png)
 
-    南京錠の記号が表示されない場合は作業を停止し、IT 管理者に問い合わせてください。 このロックは、安全にサインインされていることを意味するため、その記号が表示されるまで作業を続行しないでください。
+    南京錠の記号が表示されない場合は作業を停止し、会社のサポートに問い合わせてください。 このロックは、安全にサインインされていることを意味するため、その記号が表示されるまで作業を続行しないでください。
 
 4. **[View certificates]** (証明書の表示) を選択します。
 
@@ -67,6 +67,6 @@ ms.lasthandoff: 07/01/2017
 
 6. 会社のポータル アプリを閉じます。
 
-7. 会社のポータル アプリをもう一度開きます。 これで、会社のポータル アプリにサインインできるようになりました。 サポートが必要な場合は、IT 管理者に問い合わせてください。
+7. 会社のポータル アプリをもう一度開きます。 これで、会社のポータル アプリにサインインできるようになりました。 サポートが必要な場合は、会社のサポートに問い合わせてください。
 
-上のような "証明書が見つかりません" というメッセージが表示されたが、この手順を既に実行している場合、別の証明書が存在する可能性があります。IT 管理者にそのインストールを依頼する必要があります。 サポートを得るには、[ポータル Web サイト](http://portal.manage.microsoft.com)で入手できる連絡先情報を使用して IT 管理者に問い合わせてください。
+上のような "証明書が見つかりません" というメッセージが表示されたが、この手順を既に実行している場合、別の証明書が存在する可能性があります。会社のサポートにそのインストールを依頼する必要があります。 サポートを得る場合は、[ポータル Web サイト](https://portal.manage.microsoft.com)で入手できる連絡先情報を使用して、会社のサポートに問い合わせてください。

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b0205ebce012912cacc738382cadf56a355482f0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8867125c9112089bda574f2bd710ddbc3d0b214c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>ポータル サイト アプリをインストールし、Intune に iOS または macOS デバイスを登録するとどうなるか
 
@@ -34,9 +34,9 @@ ms.lasthandoff: 07/01/2017
 
 -   会社用の電子メール アカウントを自動的にセットアップする。
 
-デバイスを Intune に登録すると、使用しているデバイスの管理を IT 管理者に許可することで、デバイスに保存されている会社情報を保護しやすくすることもできます。
+デバイスを Intune に登録すると、使用しているデバイスの管理を会社のサポートに許可することで、デバイスに保存されている会社情報を保護しやすくすることもできます。
 
-デバイスが登録されると、IT 管理者は次のことができるようになります。
+デバイスが登録されると、会社のサポートは次のことができるようになります。
 
 -   デバイスが紛失または盗難にあった場合にデバイスを製造元の既定設定にリセットする。
 
@@ -62,4 +62,4 @@ ms.lasthandoff: 07/01/2017
 
 -   デバイスがローミング モード中の自動ファイル同期を有効または無効にする。 自動ファイル同期が許可されている場合、ローミング料金がかかる可能性があります。
 
-ご質問がございましたら、IT 管理者に問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+ご不明な点がある場合は、会社のサポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa36b1449cb1ce5d9e0d3b1ca2f3e0db78729f1d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 87704687947aee7c1169b36009ea1960bec37edd
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>通信費管理サービスに Android デバイスを登録する
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 07/01/2017
 
 適切なオプションを選択すると、Google Play Store の [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) アプリをインストールするように通知されます。 Datalert アプリを使用すると、組織のデータ使用量を測定できます。 組織で職場または学校の登録オプションが構成されている場合は、職場または学校のアカウントを使用してログインする必要があります。 これが有効になっていない場合は、電話番号などの情報を入力し、コードを使用してデバイスを確認して、アプリから Datalert サービスに登録する必要があります。
 
-画面の右上隅にある __[次へ]__ の矢印をタップして進みます。 IT 管理者から、__職場または学校の Microsoft アカウント__、または__電話番号__のいずれかを使用してサインインするように指示されます。
+画面の右上隅にある __[次へ]__ の矢印をタップして進みます。 会社のサポートから、__職場または学校の Microsoft アカウント__、または__電話番号__のいずれかを使用してサインインするように指示されます。
 
   ![Datalert アプリの [ようこそ] 画面のスクリーンショット。Datalert でデータ プランを最大限に活用する方法に関する簡単な説明のあと、次の画面に移動するように求められます。](./media/and-enroll-12-tem-datalert-setup.png)
 
@@ -62,4 +62,4 @@ ms.lasthandoff: 07/01/2017
 
 登録が完了すると、Datalert アプリでデータ使用量が表示されるようになります。
 
-サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。

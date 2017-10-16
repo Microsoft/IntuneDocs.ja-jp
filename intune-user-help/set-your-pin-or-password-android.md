@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 393a1aa0f9e917d2a124f4deaa086f0369ded4ef
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0b6667bc25263cdc8d638027f4e846724e15b1d0
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="set-your-pin-or-password"></a>PIN またはパスワードを設定する
 
-Intune を使用して職場または学校のデータにアクセスしている場合、IT 管理者から Android デバイスに PIN またはパスワードを設定するよう求められることがあります。 安全性を高めるため、PIN またはパスワードをより長く、または複雑にするように求めるメッセージが表示される場合もあります。 例として、これらのパスコードを使用して、ロック画面からデバイスにアクセスします。
+Intune を使用して職場または学校のデータにアクセスしている場合、会社のサポートから Android デバイスに PIN またはパスワードを設定するよう求められることがあります。 安全性を高めるため、PIN またはパスワードをより長く、または複雑にするように求めるメッセージが表示される場合もあります。 例として、これらのパスコードを使用して、ロック画面からデバイスにアクセスします。
 
 PIN またはパスワードを設定するには、次の手順に従います。
 
@@ -33,4 +33,4 @@ PIN またはパスワードを設定するには、次の手順に従います�
 2.  新しいパスワードを選択し、確認します。
 
 
-サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。

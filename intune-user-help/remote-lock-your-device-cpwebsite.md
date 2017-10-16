@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a213a46066de4244df23d0cd532b5fb4596ede77
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3976327decf6b1850baed8e781609e458d375aa1
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>ポータル サイト Web サイトからデバイスをリモートでロックする
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 07/01/2017
 
 [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-[ポータル サイト Web サイト](http://portal.manage.microsoft.com)のリモート ロック オプションを利用すれば、安全のためにデバイスをロックできます。 リモート ロックの対象 OS:
+[ポータル サイト Web サイト](https://portal.manage.microsoft.com)のリモート ロック オプションを利用すれば、安全のためにデバイスをロックできます。 リモート ロックの対象 OS:
 
 * Android
 * iOS
@@ -38,7 +38,7 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>リモート ロックを使用してデバイスをロックするには
 
-1.  [ポータル Web サイト](http://portal.manage.microsoft.com)で、__メニュー__ ボタン ![3 つの横棒が並行に積み上げられている、メニュー ボタンの小さな画像](/Intune/whats-new/media/CP_hamburger_menu.png) をタップしてから、__[デバイス]__ を選択します。
+1.  [ポータル Web サイト](https://portal.manage.microsoft.com)で、__メニュー__ ボタン ![3 つの横棒が並行に積み上げられている、メニュー ボタンの小さな画像](/Intune/whats-new/media/CP_hamburger_menu.png) をタップしてから、__[デバイス]__ を選択します。
 
   ![[ホーム]、[すべてのアプリ]、[デバイス]、[ヘルプデスク]、[サインアウト] の各ボタンが示され、画面の左側にサイド メニューが展開されたポータル Web サイトのイメージ。](/media/iwp-expanded-sidebar.png)
 
@@ -61,8 +61,8 @@ ms.lasthandoff: 07/01/2017
     * ページの **[デバイス]** セクションのデバイス名を表示するタイル。
 
 > [!Note]
-> "リモート ロックに失敗しました" の通知が表示される場合は、数分待ってから、もう一度デバイスのロックを試みてください。 再試行を開始すると、状態が "リモート ロック保留中" に戻ります。 再試行でもロックできない場合、IT 管理者の支援を求めてください。
+> "リモート ロックに失敗しました" の通知が表示される場合は、数分待ってから、もう一度デバイスのロックを試みてください。 再試行を開始すると、状態が "リモート ロック保留中" に戻ります。 再試行でもロックできない場合、会社のサポートの支援を求めてください。
 
 デバイスが見つかった場合は、パスコードを入力するだけでリモート ロックしたデバイスのロックを解除できます。
 
-サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。

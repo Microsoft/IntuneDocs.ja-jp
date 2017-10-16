@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 39d2dad94b949a39451dca79431be22782cddcb8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3c110bab95cbdb7c0dbe3fbe47d34b4cad5aaf07
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Intune に Windows 10 デバイスを登録する
 
@@ -50,9 +50,9 @@ ms.lasthandoff: 07/01/2017
 
     ![サインイン](./media/W10-enroll-4-sign-in.png)
 
-それでも職場または学校の電子メール、ファイルなどのデータにアクセスできない場合は、 「[[お使いのアカウント] が表示されている場合のトラブルシューティング手順](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account)」を参照してアクセスを解決してください。 それでも解決しない場合は、IT 管理者にサポートを依頼する必要があります。
+それでも職場または学校の電子メール、ファイルなどのデータにアクセスできない場合は、 「[[お使いのアカウント] が表示されている場合のトラブルシューティング手順](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account)」を参照してアクセスを解決してください。 それでも解決しない場合は、会社のサポートにサポートを依頼する必要があります。
 
-IT 管理者のサポートを受けるには、ポータル サイト アプリに表示されている連絡先情報を使用するのが簡単です。ポータル サイト アプリでは、日常の作業に推奨されるアプリや必要なアプリを探してダウンロードすることもできます。 デバイスにはポータル サイト アプリが既にインストールされている可能性があります。 [__すべてのアプリ__] リストで [__ポータル サイト__] を探すのが簡単な確認方法です。
+会社のサポートのサポートを受けるには、ポータル サイト アプリに表示されている連絡先情報を使用するのが簡単です。ポータル サイト アプリでは、日常の作業に推奨されるアプリや必要なアプリを探してダウンロードすることもできます。 デバイスにはポータル サイト アプリが既にインストールされている可能性があります。 [__すべてのアプリ__] リストで [__ポータル サイト__] を探すのが簡単な確認方法です。
 
 アプリの一覧で、[ポータル サイト] が表示されない場合は、次の手順に従ってインストールします。
 

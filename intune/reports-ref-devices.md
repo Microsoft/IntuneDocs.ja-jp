@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2dad8cf3e9a38625b4657e284f8d8bb53ba289c0
-ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
+ms.openlocfilehash: 7730a799176a74f1ddb8e4b5e49a110229255428
+ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="reference-for-devices-entities"></a>デバイス エンティティの参照
 
@@ -106,7 +106,7 @@ ms.lasthandoff: 08/14/2017
 
 | enrollmentTypeID  | 名前 | 説明 |
 |---------|------------|--------|
-| 0 |不明 |登録の種類が不明 |
+| 0 |不明 |登録の種類が収集されませんでした |
 | 1 |UserEnrollment |ユーザーが開始した登録 |
 | 2 |DeviceEnrollment |ユーザーなしのプロファイルによるデバイス登録 |
 | 3 |DeviceEnrollmentWithUDA |UDA プロファイルによるデバイス登録 |
@@ -356,7 +356,7 @@ ms.lasthandoff: 08/14/2017
 | JailBroken |デバイスが脱獄またはルート化されている場合は True |
 | IsActivationLockEnabled |アクティベーション ロックが有効な場合は True |
 | DeviceType |デバイスの種類 |
-| IsSupervised |監督下にあり |
+| IsSupervised |監督対象モードになっています |
 | DeviceDisplayNumberOfColors |デバイスのディスプレイの色数 |
 | HorizontalResolution |デバイスの水平画面解像度 |
 | VerticalResolution |デバイスの垂直画面解像度 |

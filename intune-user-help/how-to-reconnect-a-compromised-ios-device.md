@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 208b7775ef66042339ed5e77637a6f0d63eb9831
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a808f9030053b1aee571dbde9bba01d5d503a8a2
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-reconnect-a-compromised-ios-device"></a>セキュリティを侵害された iOS デバイスを再接続する方法
 
-IT 管理者は、あなたがジェイルブレイクされたデバイスを使用していることを検出しました。 "ジェイルブレイク" とは、特定の重要なファイルに無制限でアクセスできるようにデバイスが変更されたことを意味し、セキュリティを損なう可能性があり、会社のリソースに対する脅威となる場合があります。
+会社のサポートは、ジェイルブレイクされたデバイスが使用されていることを検出しました。 "ジェイルブレイク" とは、特定の重要なファイルに無制限でアクセスできるようにデバイスが変更されたことを意味し、セキュリティを損なう可能性があり、会社のリソースに対する脅威となる場合があります。
 
-この場合、デバイスが会社のリソースにアクセスできなくなるため、IT 管理者に問い合わせる必要があります。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
+この場合、デバイスが会社のリソースにアクセスできなくなるため、会社のサポートに問い合わせる必要があります。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。

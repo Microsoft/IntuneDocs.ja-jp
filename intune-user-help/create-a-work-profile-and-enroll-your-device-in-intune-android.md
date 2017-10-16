@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 10/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 734856b1598a225f6f3a2aaf640d34d393c744e7
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fa95dc161adabcf280d9933770ce68b719a47a74
+ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Intune での仕事用プロファイルの作成とデバイスの登録
 
-自分の Android デバイスを登録すると、会社のメール、アプリ、その他の作業データにアクセスできます。 登録の一環として、仕事用のプロファイルを設定します。これはデバイス上の個人データと仕事のデータを分けるものです。 IT 管理者は、仕事のデータが含まれる仕事用のプロファイルのみを管理できます。 IT 管理者は、デバイス上の個人情報を管理できません。 詳細については、「[仕事用プロファイルを作成するとどうなりますか](what-happens-when-you-create-a-work-profile-android.md)」を参照してください。
+自分の Android デバイスを登録すると、会社のメール、アプリ、その他の作業データにアクセスできます。 登録の一環として、仕事用のプロファイルを設定します。これはデバイス上の個人データと仕事のデータを分けるものです。
+
+会社のサポートは、仕事のデータが含まれる仕事用のプロファイルのみを管理できます。 会社のサポートは、デバイス上の個人情報を管理できません。 詳細については、「[仕事用プロファイルを作成するとどうなりますか](what-happens-when-you-create-a-work-profile-android.md)」を参照してください。
 
 仕事用プロファイルを作成するには:
 
@@ -32,27 +34,27 @@ ms.lasthandoff: 07/01/2017
 
     ![Android ポータル サイト アプリの [ようこそ] 画面](./media/and-enroll-0-welcome-screen.png)
 
-2. **[会社アクセスのセットアップ]** 画面で、**[開始]** をタップします。
+2. **[会社アクセスのセットアップ]** 画面で、**[続行]** をタップします。
 
-    ![[会社アクセスのセットアップ] 画面](./media/andr-afw-begin-company-access-setup.png)
+    ![[会社アクセスのセットアップ] 画面](/intune/media/android_cp_enroll_01_1709_new.png)
 
 3.  **[Why create a work profile?]** (仕事用プロファイルを作成する理由) 画面で機能を確認し、**[続行]** をタップします。
 
     ![仕事用プロファイルを作成する理由](./media/andr-afw-why-create-a-work-profile.png)
 
-4.  IT 管理者がデバイスに関して確認できる情報と確認できない情報について確認し、**[続行]** をタップします。
+4.  会社のサポートがユーザーのデバイスに関して確認できる情報と確認できない情報について確認し、**[続行]** をタップします。
 
-    ![IT 管理者がデバイスに関して確認できる情報と確認できない情報](./media/andr-afw-what-it-can-see-on-your-device.png)
+    ![会社のサポートがデバイスに関して確認できる情報と確認できない情報](/intune/media/android_cp_enroll_02_after_1710.png)
 
-5.  **[次に行うこと]** 画面で、次の操作内容を確認し、**[続行]** をタップします。
+5.  **[What's next?]\(次のステップ\)** 画面で、登録中に行う内容を確認し、**[登録]** をタップします。
 
-    ![[次に行うこと] 画面](./media/andr-afw-what-comes-next.png)
+    ![[次のステップ] 画面](/intune/media/android_work_cp_enroll_03_after_1710.png)
 
 6. **[Set up work profile]** (仕事用プロファイルのセットアップ) 画面で **[次へ]** をタップして、ポータル サイト アプリから仕事用プロファイルにアクセスします。
 
     ![仕事用プロファイルに対するアクセス権をポータル サイト アプリに付与する](./media/andr-afw-tap-next-to-set-up-work-profile.png)
 
-7. 仕事用プロファイルの作成時に IT 管理者ができることを説明する Google 画面を確認し、**[OK]** をタップします。
+7. 仕事用プロファイルの作成時に会社のサポートができることを説明する Google 画面を確認し、**[OK]** をタップします。
 
     ![仕事用プロファイルに関する Google の情報を確認する](./media/andr-afw-google-screen-what-it-can-do.png)
 
@@ -70,16 +72,12 @@ ms.lasthandoff: 07/01/2017
 
     "デバイスを登録しています" というメッセージが短時間表示されます。
 
-11. **[会社アクセスのセットアップ]** 画面ですべてのセットアップが完了したことを確認したら、**[続行]** をタップします。
+11. **[準備が完了しました]** 画面に、 すべてのセットアップが正常に完了したことが表示されたら、**[完了]** をタップします。
 
-    ![仕事用プロファイルと登録が完了したことが表示されている [会社アクセスのセットアップ]](./media/andr-afw-company-access-setup-green-checks.png)
-
-12. **[会社アクセスのセットアップが完了しました]** の画面で、**[完了]** をタップします。 IT 管理者がその他の要件を追加した場合、追加の手順を実行する必要があります。
-
-    ![会社アクセスのセットアップが完了しました](./media/andr-afw-company-access-setup-complete.png)
+    ![仕事用プロファイルと登録が完了したことが表示されている [会社アクセスのセットアップ]](/intune/media/android_work_cp_enroll_04_after_1710.png)
 
     これで Play Store for Work から会社のアプリを入手できます。
 
     ![Play Store for Work アプリ ページ](./media/andr-afw-tap-work-play-store-icon.png)
 
-サポートが必要な場合は、 IT 管理者にお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](http://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。

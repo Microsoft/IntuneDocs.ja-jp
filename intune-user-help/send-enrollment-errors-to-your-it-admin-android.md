@@ -1,5 +1,5 @@
 ---
-title: "IT 管理者に登録に関するエラーを送信する | Microsoft Docs"
+title: "会社のサポートに登録に関するエラーを送信する | Microsoft Docs"
 description: "管理者に登録に関するエラーを送信する"
 keywords: 
 author: barlanmsft
@@ -16,19 +16,19 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 667282ef1ab6e5058e852b6e3b94daecd01c5d53
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 95be9fd1df23e8cc4c6d41f6c9f49cd30eef87cf
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-enrollment-errors-to-your-it-admin"></a>IT 管理者に登録に関するエラーを送信する
+# <a name="send-enrollment-errors-to-your-company-support"></a>会社のサポートに登録に関するエラーを送信する
 
-Intune に Android デバイスを登録する際にエラーが発生した場合は、**[再試行]** をタップしてもう一度登録を試すことができます。 これがうまくいかない場合は、**[情報の送信]** をタップして、IT 管理者に状況に関する情報を電子メールで送信することができます。
+Intune に Android デバイスを登録する際にエラーが発生した場合は、**[再試行]** をタップしてもう一度登録を試すことができます。 これがうまくいかない場合は、**[情報の送信]** をタップして、会社のサポートに状況に関する情報を電子メールで送信することができます。
 
-**[情報の送信]** をタップすると、電子メールが自動的に作成されます。 この電子メールは IT 管理者宛てで、IT 管理者がデバイスをトラブルシューティングする上で必要な情報、つまり_ログ_が含まれています。
+**[情報の送信]** をタップすると、電子メールが自動的に作成されます。 この電子メールは会社のサポート宛てで、会社のサポートがデバイスをトラブルシューティングする上で必要な情報、つまり、_ログ_が含まれています。
 
-エラーについて支援を得るために、デバイスのデータ ログを IT 管理者に送信するには、いくつかの方法があります。
+エラーについて支援を得るために、デバイスのデータ ログを会社のサポートに送信するには、いくつかの方法があります。
 
 - [[情報の送信] ボタンを使用してログを電子メールで送信する](send-logs-to-your-it-admin-by-email-android.md)
 - [USB ケーブルを使用してログを電子メールの添付ファイルとして送信する](send-logs-to-your-it-admin-using-cable-android.md)
