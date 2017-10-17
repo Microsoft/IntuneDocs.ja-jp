@@ -10,14 +10,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f1b4bce3-7932-4a0d-aa92-6dacc7060f42
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9119c9ece21117e916a5b30a6a8d80e518047b5e
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: 64e79da53aec646fc65285e41f86541ecdf6d804
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="change-the-mdm-authority"></a>MDM 機関を変更する
 Configuration Manager バージョン 1610 以降では、Microsoft サポートに連絡しなくても、また、既存の管理対象デバイスの登録を解除してから再登録しなくても、MDM 機関を変更できます。 このトピックでは、既存の管理対象デバイスの登録解除と再登録を行わずに、Intune から構成し、MDM 機関を **Microsoft Intune** (スタンドアロン) に設定した既存の Microsoft Intune テナントを、**Configuration Manager** (ハイブリッド MDM) に変更する方法について説明します。

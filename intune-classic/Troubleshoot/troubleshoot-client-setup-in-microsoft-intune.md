@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bb0eea78d469bb45b833251482d55b44894f32e8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 27f9d3172750d4db5b96d0477ecaeeafa1e59ed2
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Microsoft Intune でのクライアント セットアップのトラブルシューティング
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 07/01/2017
 
 ## <a name="client-installation-fails"></a>クライアントのインストールが失敗する
 
--   [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)に、コンピューターへのクライアント ソフトウェアの展開に関するアラートが何も表示されていない場合は、まず、クライアント コンピューターがインターネットに接続可能かどうかと、プロキシの構成を確認します。次に、コンピューターがサービスの URL ([ https://manage.microsoft.com](https://manage.microsoft.com/)) と通信できることを確かめてから、 クライアント ソフトウェアのインストールを再試行してください。
+-   [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)に、コンピューターへのクライアント ソフトウェアの展開に関するアラートが何も表示されていない場合は、まず、クライアント コンピューターがインターネットに接続可能かどうかと、プロキシの構成を確認します。次に、コンピューターがサービスの URL ([ https://manage.microsoft.com](https://manage.microsoft.com/)) と通信できることを確かめてから、クライアント ソフトウェアのインストールを再試行してください。
 
 -   "クライアント ソフトウェアの展開エラー" アラートが発生した場合に、特定のユーザーに電子メールが送信されるようにすることができます。このためには、[ **管理** ] ワークスペースで通知規則を構成します。 詳しくは、「[Microsoft Intune のアラートによる通知](/intune-classic/deploy-use/get-notified-by-alerts)」を参照してください。
 

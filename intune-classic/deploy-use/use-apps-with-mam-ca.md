@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ee407827c1c4eb7b113d29c301da0b9fa08fa86d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 725783751c13b2301e7fbef4dea1a47bc339c8b7
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>アプリとアプリ ベースの CA を使用する場合の結果
 
@@ -43,7 +44,7 @@ OneDrive や Outlook など、アプリ ベースの CA でサポートされて
   * OneDrive または Outlook アプリを使用して、デバイスの登録を行う必要があります。
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>Azure AD の登録からデバイスを削除するには
-デバイスの登録は、Azure AD 管理コンソールで削除することができます。通常、IT 管理者が削除を実行します。  また、エンドユーザーが自分のデバイスで削除することもできます。
+デバイスの登録は、Azure AD 管理コンソールで削除することができます。通常、IT 管理者が削除を実行します。また、エンドユーザーが自分のデバイスで削除することもできます。
 
 * **Azure AD 管理コンソール**: Azure AD 管理コンソール**で、対象のデバイスを削除します。
 * **iOS デバイス**: Azure Authenticator アプリを開き、アカウントを左にスワイプし、登録の解除を選択します。  
