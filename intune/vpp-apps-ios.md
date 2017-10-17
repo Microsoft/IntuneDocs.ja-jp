@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dc3160d40d4ddabcd0a7d8d5557b07b4086eea7c
-ms.sourcegitcommit: 4184db38d1a9a223e680bcb4c9b732f7069bf510
+ms.openlocfilehash: 76764155e66ab69b5428712dae8a860233acaeb6
+ms.sourcegitcommit: 751587b1c6ed15877152d770772748e042c1e3ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2017
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Volume Purchase Program で購入した iOS アプリを Microsoft Intune で管理する方法
 
@@ -70,8 +70,8 @@ iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purc
 * Intune で iOS VPP の使用を開始する前に、他のモバイル デバイス管理 (MDM) ベンダーで作成された既存の VPP ユーザー アカウントを削除してください。 Intune では、セキュリティ対策として、そのようなユーザー アカウントは Intune と同期されません。 Intune では、Intune で作成された Apple VPP サービスからのデータのみが同期されます。
 * Intune は最大 256 VPP トークンの追加をサポートしています。
 * Apple の Device Enrollment Profile (DEP) プログラムは、モバイル デバイス管理 (MDM) 登録を自動化します。 DEP を利用すれば、触れることなく企業のデバイスを構成できます。 Apple の VPP で使用したものと同じプログラム エージェント アカウントを利用し、DEP プログラムに登録できます。 Apple 展開プログラム ID は [Apple 展開プログラム](https://deploy.apple.com) Web サイトに記載されているプログラムに固有であり、iTunes ストアなど、Apple サービスのログインには利用できません。 
+* ユーザー ライセンス モデルを利用する VPP アプリをユーザーまたは (ユーザー アフィニティのある) デバイスに割り当てるとき、デバイスで Apple の利用規約に同意するときのために、各 Intune ユーザーを一意の Apple ID またはメール アドレスに関連付ける必要があります。 新しい Intune ユーザーにデバイスを設定するとき、そのユーザーの一意の Apple ID またはメール アドレスで構成する必要があります。 Apple ID またはメール アドレスと Intune ユーザーで一意のペアを形成し、最大 5 台のデバイスで使用できます。
 * VPP トークンは、一度に 1 つの Intune アカウントでのみ使用できます。 複数の Intune テナントに同じ VPP トークンを再利用することはしないでください。
-* ユーザー ライセンス モデルを利用する VPP アプリをユーザーまたは (ユーザー アフィニティのある) デバイスに割り当てるとき、デバイスで Apple の利用規約に同意するときのために、各 Intune ユーザーを一意の Apple ID またはメール アドレスに関連付ける必要があります。 Apple 展開プログラム ID に使用されている Apple ID は使用しないでください。 新しい Intune ユーザーにデバイスを設定するとき、そのユーザーの一意の Apple ID またはメール アドレスで構成する必要があります。 Apple ID またはメール アドレスと Intune ユーザーで一意のペアを形成し、最大 5 台のデバイスで使用できます。
 
 >[!IMPORTANT]
 >Intune に VPP トークンをインポートした後、同じトークンを他のデバイス管理ソリューションにインポートすることはできません。 これを行うと、ライセンスの割り当てとユーザー レコードが失われる恐れがあります。

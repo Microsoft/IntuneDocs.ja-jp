@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 402b5b469b1536e9f2ea13948e45c9232baca458
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8a97ccdb8f557c4c2bfd542fb1c96d84d768eae5
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>Apple Configurator でセットアップ アシスタントを使用して iOS デバイスを登録する
 
@@ -111,7 +112,7 @@ Apple Configurator を使用して、iOS デバイスを工場出荷時の設定
   > 既存の Intune 管理者コンソールでは、管理者はアップロードされた CSV から関連する詳細をそのまま使用し、個々のシリアル番号の既存の詳細を上書きすることができます。 新しい Azure Portal では、単にすべてのシリアル番号の詳細を上書きするか、すべてのシリアル番号の新しい詳細を無視することができます。
 
   > [!NOTE]
-  > 後で Intune 管理対象から会社所有のデバイスを除外する場合は、**[会社の事前登録済みデバイス]** の **[iOS シリアル番号を使用]** デバイス グループに移動し、Intune からデバイスのシリアル番号を削除して、デバイスの登録を無効にする必要がある場合があります。 シリアル番号の削除時またはその前後に Intune が障害復旧手順を実行した場合、アクティブなデバイスのシリアル番号のみがそのグループ内に存在していることを確認する必要があります。
+  > 後で Intune 管理対象から会社所有のデバイスを除外する場合は、**[会社の事前登録済みデバイス]** の **[iOS シリアル番号を使用]** デバイス グループに移動し、Intune からデバイスのシリアル番号を削除して、デバイスの登録を無効にする必要がある場合があります。 シリアル番号の削除時またはその前後に Intune がディザスター リカバリー手順を実行した場合、アクティブなデバイスのシリアル番号のみがそのグループ内に存在していることを確認する必要があります。
 
 2. **[次へ]** を選択します。
 

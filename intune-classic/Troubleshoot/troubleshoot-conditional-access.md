@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 04b1785c0b75d4668879488e5221d8b8c2794834
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 21053cd7ce930bd11625807f7fdda3ebbdd953f3
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="troubleshoot-conditional-access"></a>条件付きアクセスに関するトラブルシューティング
 
@@ -124,7 +125,7 @@ Exchange Connector のログを表示するには、[サーバー トレース �
 
 #### <a name="locating-sync-logs"></a>同期ログを特定する
 
--    ログ内で **full sync** を検索して完全同期を探します。 完全同期の開始は、次のテキストでマークされます。
+-    ログ内で **full sync** を検索して完全同期を探します。完全同期の開始は、次のテキストでマークされます。
 
     'Handling command: Getting the mobile device list without a time filter (full sync) for <number> users`
 

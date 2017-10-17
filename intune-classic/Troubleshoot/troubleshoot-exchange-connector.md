@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c5cb5465-fd8e-4524-83b9-ccdf3393b6dc
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ebcbcbc36c925b3c3d9600eb9a5039b70d7e056d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 08a21197fd7c67aff037396e86a1555a8033daac
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="troubleshoot-the-exchange-connector"></a>Exchange Connector のトラブルシューティングを行う
 
@@ -36,7 +37,7 @@ Exchange Connector の構成を調べて、問題を解決できるかどうか�
 - Exchange Connector と Exchange CAS の同期にはタイム ラグがあることに注意してください。 完全同期は 1 日に 1 回実行され、差分 (クイック) 同期は 2 時間間隔で実行されます。 新しく登録されたデバイスを持つユーザーは、アクセスの取得が遅れる可能性があります。
 - 
 ## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>Exchange ActiveSync device not discovered from Exchange (Exchange ActiveSync デバイスが Exchange から検出されない)
-Exchange Connector が Exchange サーバーと同期しているかどうかを調べます。 これを行うには、ログで完全同期または差分同期を探します。 Exchange Connector のログを確認します。 デバイスの参加以降、完全同期または差分同期が正常に完了している場合は、問題の原因から同期を排除します。 同期が行われていない場合は、同期ログを収集し、サポート依頼に添付してください。
+Exchange Connector が Exchange サーバーと同期しているかどうかを調べます。 これを行うには、ログで完全同期または差分同期を探します。Exchange Connector のログを確認します。 デバイスの参加以降、完全同期または差分同期が正常に完了している場合は、問題の原因から同期を排除します。 同期が行われていない場合は、同期ログを収集し、サポート依頼に添付してください。
 
 - ユーザーが Intune ライセンスを持っていない場合、Exchange Connector は、それらのユーザーのデバイスを検出しません。
 - ユーザーのプライマリ SMTP アドレスが AAD の UPN と異なる場合、Exchange Connector は、その Intune/AAD ユーザーのデバイスを検出しません。 プライマリ SMTP アドレスを修正してください。

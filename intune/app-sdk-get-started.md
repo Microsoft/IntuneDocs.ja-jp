@@ -2,9 +2,9 @@
 title: "Microsoft Intune アプリ SDK の概要"
 description: "Microsoft Intune でモバイル アプリケーション管理 (MAM) 用のモバイル アプリをすぐに有効にできます。"
 keywords: 
-author: mtillman
+author: mattbriggs
 manager: angrobe
-ms.author: oydang
+ms.author: mabriggs
 ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1d61432eafef67ca997d4e03d305e1c068ac5fd6
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0e55246f8f089a998fa4a04fe07e5e54408d8513
+ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune アプリ SDK の概要
 
@@ -109,7 +109,7 @@ Microsoft Intune はアプリの利用統計データを収集します。
 ## <a name="next-steps-after-integration"></a>統合後の次の手順
 
 ### <a name="test-your-app"></a>アプリのテスト
-iOS または Android アプリを Intune アプリ SDK と統合するために必要な手順を完了した後、すべてのアプリ保護ポリシーが、ユーザーと IT 管理者に対して有効化され、機能していることを確認する必要があります。 統合されたアプリをテストするには、次の手順を実行します。
+iOS または Android アプリを Intune アプリ SDK と統合するために必要な手順を完了した後、すべてのアプリ保護ポリシーが、ユーザーと IT 管理者に対して有効化され、機能していることを確認する必要があります。統合されたアプリをテストするには、次の手順を実行します。
 
 * **Microsoft Intune のテスト アカウント**: Intune アプリ保護機能に対して Intune 対応アプリをテストするには、Microsoft Intune のアカウントが必要です。
 

@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/22/2017
+ms.date: 10/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4cfdf6a8aab1bda15015f85b1fb8f364e6a0edfa
-ms.sourcegitcommit: 29ee35da2864b25f4432d2423b285014c77040af
+ms.openlocfilehash: 6c9cc3a6a84c48da36b0219743012a15b72e6810
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="supported-devices-and-browsers"></a>サポートされるデバイスとブラウザー
 
@@ -38,6 +38,64 @@ Microsoft Intune のセットアップを開始する前に、次の要件を確
 次のデバイスを Intune モバイル デバイス管理を使用して管理できます。
 
 [!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
+
+### <a name="supported-samsung-knox-standard-devices"></a>Samsung KNOX Standard デバイスのサポート
+
+ポータル サイト アプリは、MDM 登録時に、登録対象のデバイスが[サポートされている KNOX デバイスの一覧](https://www.samsungknox.com/knox-supported-devices/knox-workspace)に掲載されている場合のみ、Samsung KNOX ライセンス認証を試みます。 これにより、MDM 登録を妨げる KNOX ライセンス認証エラーの発生を回避できます。 Samsung KNOX ライセンス認証をサポートしていないデバイスは、標準の Android デバイスとして登録されます。 Samsung デバイスには、KNOX をサポートするモデル番号を持つものがある一方で、そうでないものもあります。 Samsung デバイスを購入および展開する前に、デバイスの再販業者に KNOX 対応の有無について確認してください。
+
+以下に一覧表示した Samsung デバイス モデルは、KNOX をサポートしておらず、Android 用ポータル サイト アプリによってネイティブの Android デバイスとして登録されます。
+
+| **デバイス名** | **デバイスのモデル番号** |
+| --- | --- |
+| Galaxy A3 | SM-A300G<br>SM-A310Y<br>SM-A320FL |
+| Galaxy A5 | SM-A500G |
+| Galaxy Alpha | SM-G850M |
+| Galaxy Avant | SM-G386T |
+| Galaxy C9/C9 Pro | SM-C900F |
+| Galaxy Core 2/Core 2 Duos | SM-G355H<br>SM-G355M |
+| Galaxy Core Lite | SM-G3588V |
+| Galaxy Core Prime | SM-G360H |
+| Galaxy Core LTE | SM-G386F<br>SM-G386W |
+| Galaxy Grand | GT-I9082L<br>GT-I9082<br>GT-I9080L |
+| Galaxy Grand 3 | SM-G7200 |
+| Galaxy Grand Neo | GT-I9060I |
+| Galaxy Grand Prime | SM-G530M |
+| Galaxy Grand Prime Value Edition | SM-G531H |
+| Galaxy J Max | SM-T285YD |
+| Galaxy J1 | SM-J100H<br>SM-J100M<br>SM-J100ML |
+| Galaxy J1 Ace | SM-J110F<br>SM-J110H |
+| Galaxy J1 Mini | SM-J105M |
+| Galaxy J2/J2 Pro | SM-J200H<br>SM-J210F |
+| Galaxy J3 | SM-J320F<br>SM-J320FN<br>SM-J320H<br>SM-J320M<br>SM-J320W8 |
+| Galaxy J5 | SM-J500G |
+| Galaxy J7 | SM-J710F |
+| Galaxy J7 Prime | SM-J727T1 |
+| Galaxy K Zoom | SM-C115 |
+| Galaxy Light | SGH-T399N |
+| Galaxy Note 3 | SM-N9002<br>SM-N9009 |
+| Galaxy Note 5 | SM-N920G<br>SM-N920I<br>SM-N920W8 |
+| Galaxy Note 7/Note 7 Duos | SM-N930S<br>SM-N9300<br>SM-N930F<br>SM-N930T<br>SM-N9300<br>SM-N930F<br>SM-N930S<br>SM-N930T |
+| Galaxy Note 10.1 3G | SM-P602 |
+| Galaxy NotePRO 12.2&quot; | SM-P902 |
+| Galaxy On5 | SM-G570MSM-G570Y |
+| Galaxy On7 | SM-G600FY<br>SM-G610M<br>SM-G610Y |
+| Galaxy S2 Plus | GT-I9105P |
+| Galaxy S3 Mini | SM-G730A<br>SM-G730V |
+| Galaxy S3 Neo | GT-I9300<br>GT-I9300I |
+| Galaxy S4 | SM-S975L |
+| Galaxy S4 Active | GT-I9295 |
+| Galaxy S4 Neo | SM-G318ML |
+| Galaxy S5 | SM-G9006W<br>SM-G900M |
+| Galaxy S5 Neo | SM-G903M |
+| Galaxy S6 Edge | 404SCSM-G925I<br>SM-G928G |
+| Galaxy Tab A 7.0&quot; | SM-T280SM-T285 |
+| Galaxy Tab A 9.7&quot; | SM-P555M |
+| Galaxy Tab 3 7&quot;/Tab 3 Lite 7&quot; | SM-T116SM-T210SM-T211 |
+| Galaxy Tab 3 8.0&quot; | SM-T311 |
+| Galaxy Tab 3 10.1&quot; | GT-P5200<br>GT-P5210<br>GT-P5220 |
+| Galaxy Trend 2 Lite | SM-G318H |
+| Galaxy V Plus | SM-G318HZ |
+| Galaxy Young 2 Duos | SM-G130BU |
 
 Intune は Windows Server オペレーティング システムを管理できません。
 
