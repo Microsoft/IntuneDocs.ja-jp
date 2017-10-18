@@ -11,14 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d553f62ed2ee1c9e5a6b9121b766e6e427d06bf7
-ms.sourcegitcommit: 75cea2402a3726c72b12df6111f6d3ee93c852bf
+ms.openlocfilehash: 2ec41724eacc4abca994b1dadff6e6d9df63c74d
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune のデバイス登録に関するトラブルシューティング
 
@@ -393,7 +394,7 @@ iOS 登録エラーの一覧は、デバイスのユーザー ドキュメント
 1. **[証明書]** をダブルクリックし、**[コンピューター アカウント]** > **[次へ]**、**[ローカル コンピューター]** の順に選択します。
 1. **[証明書 (ローカル コンピューター)]** をダブルクリックして、**[個人証明書]** を選択します。
 1. Sc_Online_Issuing によって発行された Intune 証明書を探し、もし見つかった場合は削除します。
-1. レジストリ キー ** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** が存在する場合は削除し、サブ キーもすべて削除します。
+1. レジストリ キー  **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** が存在する場合は削除し、サブ キーもすべて削除します。
 1. 再登録を試行します。
 1. それでも PC を登録できない場合は、キー **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95** を探して、存在する場合は削除してください。
 1. 再登録を試行します。
