@@ -62,6 +62,7 @@
 ### [iOS デバイスを登録する](enroll-your-device-in-intune-ios.md)
 ### [macOS デバイスを登録する](enroll-your-device-in-intune-macos.md)
 ### [ポータル サイトで macOS デバイスを登録する](enroll-your-device-in-intune-macos-cp.md)
+### [このデバイスでの若干の相違点](device-little-different-jamf.md)
 
 ### [デバイスで管理対象アプリを使用する](use-managed-apps-on-your-device-ios.md)
 ### [パスコードを設定または変更する](set-or-change-your-passcode-ios.md)
