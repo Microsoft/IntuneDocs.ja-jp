@@ -536,6 +536,8 @@
       items:
         - name: Power BI でデータ ウェアハウスに接続する
           href: reports-proc-get-a-link-powerbi.md
+        - name: Power BI で OData フィードからレポートを作成する
+          href: reports-proc-create-with-odata.md
 - name: 自動化とカスタマイズ
   items:
     - name: カスタム デバイス設定の構成
