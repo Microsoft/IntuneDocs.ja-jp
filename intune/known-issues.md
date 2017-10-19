@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/14/2017
+ms.date: 10/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bddab9000bfe609856b8e003f9bd4c3802f6e6b
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 534441a7ae337f99a251831b456ea5c295184bec
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune の既知の問題
 
@@ -53,7 +53,7 @@ Intune から Azure Portal に移行すると、**All Users - b0b08746-4dbe-4a37
 - 従来のポータルでは無効になります
 - Azure Portal では有効になります。  
 
-2017 年 9 月 11 日後、これらの機能の移行は、Azure へのプライマリ移行に結合されます。 自分のアカウントが Azure Portal を使用するために既に移行されている場合、このセカンダリ移行は 2017 年の 9 月 11 日から 22 日までに行われます。 アカウントの移行が開始すると、同じ日に完了します。 移行には、Intune クラシック ポータルでこれらの機能が無効になった時刻から最大 6 時間かかります。
+2017 年 9 月 22 日後、これらの機能の移行は、Azure へのプライマリ移行に結合されます。 自分のアカウントが Azure Portal を使用するために既に移行されている場合、このセカンダリ移行は現在までに完了している可能性があります。 完了していない場合、これらの機能は 11 月までに移行されます。 アカウントの移行が開始すると、同じ日に完了します。 移行には、Intune クラシック ポータルでこれらの機能が無効になった時刻から最大 6 時間かかります。
 
 現在 Azure Portal でこれらの Intune 機能を管理している場合は、以下の点にご注意ください。
 
