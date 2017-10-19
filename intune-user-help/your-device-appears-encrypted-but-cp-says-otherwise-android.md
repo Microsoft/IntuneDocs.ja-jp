@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/29/2017
+ms.date: 10/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 208cf6eb2d29ec5458d97d0a4481cec420acc281
-ms.sourcegitcommit: 59811bf1183b3ef9c9e81eded634bd0d3124d0bb
+ms.openlocfilehash: be68e330c2bd2800ea68fd83845b71e3b257e785
+ms.sourcegitcommit: 751587b1c6ed15877152d770772748e042c1e3ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Android デバイスは暗号化されるように見えるが、ポータル サイトではそのように認識されていない
 
@@ -39,6 +39,15 @@ ms.lasthandoff: 10/09/2017
 ### <a name="downgrade-your-version-of-android"></a>Android のバージョンのダウングレード
 
 デバイスで Android 6.0 以降にダウングレードできる場合は、ダウングレードします。 デバイスのダウングレードには、データ損失のリスクがあります。 そのため、会社のサポートに問い合わせて、この問題を解決することをお勧めします。 会社のサポートの連絡先情報は、[ポータル Web サイト](https://portal.manage.microsoft.com)で入手できます。
+
+### <a name="encrypt-the-entire-device"></a>デバイス全体を暗号化する
+
+一部のデバイスでは、デバイス全体と使用済み領域のみのどちらを暗号化するかを選ぶことができます。 "使用済み領域のみ" ではなく、デバイス全体の暗号化を選んでください。 既に使用済み領域のみを暗号化している場合は、次のようにします。
+
+1. [ポータル サイトからこのデバイスを削除します](unenroll-your-device-from-intune-android.md)
+2. 使用済み領域の暗号化を解除します
+3. デバイス全体を暗号化します
+4. デバイスを再度登録します
 
 ## <a name="specific-manufacturer-issues"></a>特定の製造元の問題
 

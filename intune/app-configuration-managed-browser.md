@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 08/02/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f6bdb4e1288e91d78d95ba6e6640111d9af06ed7
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: e9701bbe4f39d310786fb399b3152595744019a1
+ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/14/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune で Managed Browser ポリシーを使ってインターネット アクセスを管理する
 
@@ -64,10 +64,10 @@ Intune Managed Browser では、[Microsoft Intune アプリケーション パ�
 3.  [管理] リストの **[アプリの構成]** ブレードで、**[アプリ構成ポリシー]** を選択します。
 4.  **[アプリ構成ポリシー]** ブレードで **[追加]** を選択します。
 5.  **[アプリの構成を追加する]** ブレードで **[名前]** に入力し、必要に応じてアプリ構成設定の **[説明]** に入力します。
-6.  [**デバイス登録の種類**] で、[**Intune に未登録**] を選択します。
+6.  **[デバイスの登録]** の種類では、**[管理対象デバイス]** または **[管理対象アプリ]** を選択します。
 7.  [**必要なアプリの選択**] を選択して、[**対象アプリ**] ブレードで、iOS、Android、またはその両方に [**Managed Browser**] を選択します。
 8.  **[OK]** を選択し、**[アプリの構成を追加する]** ブレードに戻ります。
-9.  [**構成の設定**] を選択します。 **[構成]** ブレードで、Managed Browser の構成を指定するキーと値のペアを定義します。 定義できる別のキーと値のペアについては、このトピックの後半のセクションで説明します。
+9.  [**構成の設定**] を選択します。 **[構成]** ブレードで、Managed Browser の構成を指定するキーと値のペアを定義します。 定義できる別のキーと値のペアについては、この記事の後半のセクションで説明します。
 10. 終了したら、**[OK]** を選択します。
 11. **[アプリの構成を追加する]** ブレードで、**[作成]** を選択します。
 12. 新しい構成が作成され、**[アプリの構成]** ブレードに表示されます。
@@ -127,6 +127,7 @@ Outlook は、アプリ保護ポリシーの [**Managed Browser に表示する 
 
 - これらのブックマークは、ユーザーが削除または変更することはできません。
 - これらのブックマークは、リストの上部に表示されます。 ユーザーが作成したブックマークは、これらのブックマークの下に表示されます。
+- アプリ プロキシのリダイレクトを有効にした場合は、内部 URL または外部 URL を使用してアプリ プロキシ Web アプリを追加できます。
 
 Managed Browser アプリの構成を作成する手順に従い、以下のキーと値のペアを指定します。
 
@@ -166,15 +167,15 @@ Managed Browser アプリの構成を作成する手順に従い、以下のキ�
 -   URL を指定するときに使用できるパターンの詳細については、次の表を参照してください。
 
 |[URL]|説明|［一致する］|［次の値に一致しない］|
-    |-------|---------------|-----------|------------------|
-    |http://www.contoso.com|単一のページと一致する|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-    |http://contoso.com|単一のページと一致する|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-    |http://www.contoso.com/&#42;|www.contoso.com で始まるすべての URL と一致する|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-    |http://&#42;.contoso.com/&#42;|contoso.com の下のすべてのサブドメインに一致する|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-    |http://www.contoso.com/images|単一のフォルダーと一致する|www.contoso.com/images|www.contoso.com/images/dogs|
-    |http://www.contoso.com:80|ポート番号を使用し、単一のページと一致する|http://www.contoso.com:80|
-    |https://www.contoso.com|セキュリティで保護された単一のページと一致する|https://www.contoso.com|http://www.contoso.com|
-    |http://www.contoso.com/images/&#42;|1 つのフォルダーおよびすべてのサブフォルダーと一致する|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|-------|---------------|-----------|------------------|
+|http://www.contoso.com|単一のページと一致する|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
+|http://contoso.com|単一のページと一致する|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
+|http://www.contoso.com/&#42;|www.contoso.com で始まるすべての URL と一致する|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
+|http://&#42;.contoso.com/&#42;|contoso.com の下のすべてのサブドメインに一致する|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
+|http://www.contoso.com/images|単一のフォルダーと一致する|www.contoso.com/images|www.contoso.com/images/dogs|
+|http://www.contoso.com:80|ポート番号を使用し、単一のページと一致する|http://www.contoso.com:80|
+|https://www.contoso.com|セキュリティで保護された単一のページと一致する|https://www.contoso.com|http://www.contoso.com|
+|http://www.contoso.com/images/&#42;|1 つのフォルダーおよびすべてのサブフォルダーと一致する|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
 
 -   指定することができない入力例を次に示します。
 
@@ -200,8 +201,6 @@ Managed Browser アプリの構成を作成する手順に従い、以下のキ�
 
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Managed Browser のセキュリティとプライバシー
 
--   iOS デバイスでは、証明書の有効期限が切れている Web サイトや証明書が信頼されていない Web サイトにユーザーがアクセスしても、開くことができません。
-
 -   ユーザーが自分のデバイスの組み込みブラウザーに対して構成した設定は、Managed Browser では使用されません。 Managed Browser では、これらの設定にアクセスできません。
 
 -   Managed Browser に関連付けられているアプリ保護ポリシーにオプション [**アクセスの際にシンプルな PIN を要求する**] または [**アクセスの際に会社の資格情報を要求する**] を設定した場合、およびユーザーが認証ページでヘルプのリンクを選択した場合は、ポリシーのブロック リストに追加されているかどうかにかかわらず、インターネット サイトを参照できます。
@@ -214,3 +213,14 @@ Managed Browser アプリの構成を作成する手順に従い、以下のキ�
 Microsoft は、Microsoft の製品やサービスを改善するために、Managed Browser のパフォーマンスおよび使用に関する匿名データを自動的に収集します。 ただし、ユーザーはデバイスの **[使用状況データ]** 設定を使用して、データの収集を無効にすることができます。 このデータの収集方法は制御できません。
 
 
+-   iOS デバイスでは、証明書の有効期限が切れている Web サイトや証明書が信頼されていない Web サイトにユーザーがアクセスしても、開くことができません。
+-   ユーザーが自分のデバイスの組み込みブラウザーに対して構成した設定は、Managed Browser では使用されません。 Managed Browser では、これらの設定にアクセスできません。
+
+-   Managed Browser に関連付けられているアプリ保護ポリシーにオプション [**アクセスの際にシンプルな PIN を要求する**] または [**アクセスの際に会社の資格情報を要求する**] を設定した場合、およびユーザーが認証ページでヘルプのリンクを選択した場合は、ポリシーのブロック リストに追加されているかどうかにかかわらず、インターネット サイトを参照できます。
+
+-   Managed Browser では、サイトへの直接のアクセスのみをブロックできます。 中間サービス (翻訳サービスなど) がサイトへのアクセスに使用される場合、そのアクセスはブロックされません。
+
+-   認証を許可し、Intune ドキュメントにアクセスするために、**&#42;.microsoft.com** は許可またはブロック リスト設定の対象から除外されます。 常に許可されます。
+
+### <a name="turn-off-usage-data"></a>使用状況データをオフにする
+Microsoft は、Microsoft の製品やサービスを改善するために、Managed Browser のパフォーマンスおよび使用に関する匿名データを自動的に収集します。 ただし、ユーザーはデバイスの **[使用状況データ]** 設定を使用して、データの収集を無効にすることができます。 このデータの収集方法は制御できません。
