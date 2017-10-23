@@ -461,6 +461,8 @@
           href: windows-hello.md
     - name: ロールの管理
       href: role-based-access-control.md
+    - name: オペレーティング システムのバージョンの管理
+      href: manage-os-versions.md
     - name: ソフトウェア更新プログラムの管理
       href: windows-update-for-business-configure.md
     - name: ソフトウェア エージェントを使用した PC の管理
