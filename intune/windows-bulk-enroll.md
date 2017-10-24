@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 06/18/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 3e374f383275b1e74e22ac037ecaec282eeaa87c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 372cc50fb4ac36ec875d84a71f3d3437917a2d1a
+ms.sourcegitcommit: 93c8c7e5abe433e35d88cb3b8d3d1e7216d7fe9b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/24/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows デバイスの一括登録
 
@@ -92,6 +92,10 @@ Windows デバイスの一括登録には、以下が必要です。
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>一括登録およびポータル サイトに関する問題
 ユーザーが以前に一括登録したデバイスをポータル サイトで登録しようとすると、デバイスにセットアップまたは登録のどちらかの追加操作が必要なことを警告するメッセージが届きます。 デバイスは登録されていますが、登録がポータル サイト アプリまたは Web サイトで認識されていません。
+
+### <a name="bulk-enrollment-with-wi-fi"></a>Wi-Fi で一括登録 
+
+一括登録されたデバイスは、ユーザー対象の証明書と Wi-Fi 展開に使用することはできません。 これらの接続を管理するために、[デバイス レベルの証明書](certificates-configure.md)を使用する必要があります。 
 
 ### <a name="conditional-access"></a>条件付きアクセス
 条件付きアクセスは、一括登録を使用して登録された Windows デバイスでは使用できません。
