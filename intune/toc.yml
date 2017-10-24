@@ -381,6 +381,8 @@
           href: compliance-policy-create-mac-os.md
         - name: Windows ポリシーの作成
           href: compliance-policy-create-windows.md
+        - name: コンプライアンス非対応に対するアクション
+          href: actions-for-noncompliance.md
         - name: デバイス コンプライアンスを監視する
           href: compliance-policy-monitor.md
     - name: 条件付きアクセスの設定
