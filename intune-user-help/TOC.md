@@ -26,6 +26,7 @@
 
 ### [Android に関する一般的な問題の解決](troubleshoot-your-device-android.md)
 #### [デバイスのコンプライアンスを確認する](check-compliance-on-your-device-android.md)
+#### [バッテリー節約機能モードでの Outlook の電子メールの同期](power-saving-mode-android.md)
 
 #### ログを使用した問題の解決
 ##### [詳細ログ記録を有効にする](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
