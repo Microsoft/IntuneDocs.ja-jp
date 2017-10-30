@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fee635b6c50355a4af8b418c9f8e7fae8e88cff0
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
+ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/19/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Windows 10 以降のデバイスの制限設定
 
@@ -64,7 +64,7 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
     -   **[Prevent reuse of previous passwords]\(前のパスワードを再利用できないようにする\)** - デバイスで記憶される、以前に使用したパスワードの数を指定します。
     -   **[デバイスがアイドル状態から戻るときにパスワードを必須にする (モバイルのみ)]** - ユーザーがデバイスのロックを解除するときにパスワードの入力を必須にします (Windows 10 Mobile のみ)。
     -   **[単純なパスワード]** - 単純なパスワードの使用を許可します (1111、1234 など)。 この設定は、Windows ピクチャ パスワードの使用も許可またはブロックします。
--   **[暗号化]** - 対象デバイスの暗号化を有効にします (Windows 10 Mobile のみ)。
+-   **[暗号化]** - 対象デバイスの暗号化を有効にします。
 
 ## <a name="personalization"></a>個人設定
 

@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9701bbe4f39d310786fb399b3152595744019a1
-ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
+ms.openlocfilehash: e536a31443a7140785a1f30af6fe676451e6f62c
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune で Managed Browser ポリシーを使ってインターネット アクセスを管理する
 
@@ -37,7 +37,11 @@ Managed Browser は、公開アプリ ストアからダウンロードできる
 
 詳細については、「[アプリ保護ポリシーとは](/intune/app-protection-policy)」を参照してください。
 
-これらの設定は、Intune に登録されているデバイスや別のデバイス管理製品に登録されているデバイスに適用できるほか、一切管理されていないデバイスにも適用できます。
+これらの設定は以下のものに適用できます。
+
+- Intune に登録されたデバイス
+- 別の MDM 製品に登録されたデバイス
+- 管理されていないデバイス
 
 ユーザーがアプリ ストアから Managed Browser をインストールし、それを Intune で管理していない場合は、Microsoft MyApps サイトを通したシングル サインオンをサポートする通常の Web ブラウザーとして使用できます。 ユーザーは直接 MyApps サイトにアクセスし、プロビジョニングされた SaaS アプリケーションのすべてを表示できます。
 Managed Browser が Intune で管理されていない場合、Intune で管理されている他のアプリケーションのデータにアクセスすることはできません。 

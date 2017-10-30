@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 10/09/2017
+ms.date: 10/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: abb5612545174e3fd134c38fb763e02d379b50d0
-ms.sourcegitcommit: b330045a4f9a807e6e2772c4ed4e1e1148e1f1f9
+ms.openlocfilehash: a2e6fd2381286aa652a04b5ed34ab21c57ed85f6
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2017"></a>Microsoft Intune の初期エディション - 2017 年 10 月
 
@@ -131,66 +131,6 @@ Windows 10 デバイスのユーザーをキオスク モードに制限する�
 Intune は Symantec クラウド CA をサポートするようになり、Intune Certificate Connector は Symantec クラウド CA から Intune で管理対象デバイスに PKCS 証明書を発行できます。 Microsoft 証明機関 (CA) で Intune Certificate Connector を既に使っている場合は、Intune Certificate Connector の既存の設定を利用して、Symantec CA のサポートを追加できます。
 
 
-### <a name="improvements-to-device-setup-workflow-in-company-portal---1490692--"></a>ポータル サイトでのデバイスのセットアップ ワークフローの機能強化<!--1490692-->  
-Android 用のポータル サイト アプリでデバイスのセットアップ ワークフローを改良しています。 言語がよりわかりやすく、会社固有のものとなり、可能な範囲で画面をまとめるようになります。 
-
-### <a name="block-unsupported-samsung-knox-device-activation------1490695----"></a>サポートされていない Samsung KNOX デバイスのアクティブ化をブロックする <!--- 1490695 --->  
-ポータル サイト アプリは、MDM 登録時に、登録対象のデバイスが[サポートされている KNOX デバイスの一覧](https://www.samsungknox.com/knox-supported-devices/knox-workspace)に掲載されている場合のみ、Samsung KNOX ライセンス認証を試みます。 この制限により、MDM 登録を妨げる KNOX ライセンス認証エラーの発生を回避できます。 Samsung KNOX ライセンス認証をサポートしていないデバイスは、標準の Android デバイスとして登録されます。 Samsung デバイスには、KNOX をサポートするモデル番号を持つものがある一方で、そうでないものもあります。 Samsung デバイスを購入および展開する前に、デバイスの再販業者に KNOX 対応の有無について確認してください。
-
-以下に一覧表示した Samsung デバイス モデルは、KNOX をサポートしておらず、Android 用ポータル サイト アプリによってネイティブの Android デバイスとして登録されます。
-
-| **デバイス名** | **デバイスのモデル番号** |
-| --- | --- |
-| Galaxy A3 | SM-A300G<br>SM-A310Y<br>SM-A320FL |
-| Galaxy A5 | SM-A500G |
-| Galaxy Alpha | SM-G850M |
-| Galaxy Avant | SM-G386T |
-| Galaxy C9/C9 Pro | SM-C900F |
-| Galaxy Core 2/Core 2 Duos | SM-G355H<br>SM-G355M |
-| Galaxy Core Lite | SM-G3588V |
-| Galaxy Core Prime | SM-G360H |
-| Galaxy Core LTE | SM-G386F<br>SM-G386W |
-| Galaxy Grand | GT-I9082L<br>GT-I9082<br>GT-I9080L |
-| Galaxy Grand 3 | SM-G7200 |
-| Galaxy Grand Neo | GT-I9060I |
-| Galaxy Grand Prime | SM-G530M |
-| Galaxy Grand Prime Value Edition | SM-G531H |
-| Galaxy J Max | SM-T285YD |
-| Galaxy J1 | SM-J100H<br>SM-J100M<br>SM-J100ML |
-| Galaxy J1 Ace | SM-J110F<br>SM-J110H |
-| Galaxy J1 Mini | SM-J105M |
-| Galaxy J2/J2 Pro | SM-J200H<br>SM-J210F |
-| Galaxy J3 | SM-J320F<br>SM-J320FN<br>SM-J320H<br>SM-J320M<br>SM-J320W8 |
-| Galaxy J5 | SM-J500G |
-| Galaxy J7 | SM-J710F |
-| Galaxy J7 Prime | SM-J727T1 |
-| Galaxy K Zoom | SM-C115 |
-| Galaxy Light | SGH-T399N |
-| Galaxy Note 3 | SM-N9002<br>SM-N9009 |
-| Galaxy Note 5 | SM-N920G<br>SM-N920I<br>SM-N920W8 |
-| Galaxy Note 7/Note 7 Duos | SM-N930S<br>SM-N9300<br>SM-N930F<br>SM-N930T<br>SM-N9300<br>SM-N930F<br>SM-N930S<br>SM-N930T |
-| Galaxy Note 10.1 3G | SM-P602 |
-| Galaxy NotePRO 12.2&quot; | SM-P902 |
-| Galaxy On5 | SM-G570MSM-G570Y |
-| Galaxy On7 | SM-G600FY<br>SM-G610M<br>SM-G610Y |
-| Galaxy S2 Plus | GT-I9105P |
-| Galaxy S3 Mini | SM-G730A<br>SM-G730V |
-| Galaxy S3 Neo | GT-I9300<br>GT-I9300I |
-| Galaxy S4 | SM-S975L |
-| Galaxy S4 Active | GT-I9295 |
-| Galaxy S4 Neo | SM-G318ML |
-| Galaxy S5 | SM-G9006W<br>SM-G900M |
-| Galaxy S5 Neo | SM-G903M |
-| Galaxy S6 Edge | 404SCSM-G925I<br>SM-G928G |
-| Galaxy Tab A 7.0&quot; | SM-T280SM-T285 |
-| Galaxy Tab A 9.7&quot; | SM-P555M |
-| Galaxy Tab 3 7&quot;/Tab 3 Lite 7&quot; | SM-T116SM-T210SM-T211 |
-| Galaxy Tab 3 8.0&quot; | SM-T311 |
-| Galaxy Tab 3 10.1&quot; | GT-P5200<br>GT-P5210<br>GT-P5220 |
-| Galaxy Trend 2 Lite | SM-G318H |
-| Galaxy V Plus | SM-G318HZ |
-| Galaxy Young 2 Duos | SM-G130BU |
-
 
 ### <a name="citrix-vpn-added-for-windows-10-devices----1512457---"></a>Windows 10 デバイスに追加された Citrix VPN <!-- 1512457 -->  
 ユーザーは、Windows 10 デバイス用に Citrix VPN を構成することができます。 Windows 10 以降用に VPN を構成するときに、**[基本 VPN]** ブレードの *[接続の種類を選びます]* の一覧で、Citrix VPN を選ぶことができます。
@@ -207,64 +147,12 @@ Android 用のポータル サイト アプリでデバイスのセットアッ�
 ### <a name="google-play-protect-support-on-android----908720----"></a>Android の Google Play Protect サポート <!-- 908720  -->  
 Android Oreo のリリースに伴い、セキュリティで保護されたアプリおよび Android イメージをユーザーや組織が実行できる、Google Play Protect という一連のセキュリティ機能が Google より提供されました。 Intune では、SafetyNet リモート構成証明をはじめとした Google Play Protect の各機能をサポートします。  管理者は、Google Play Protect が構成され正常な状態であることが求められるコンプライアンス ポリシー要件を設定できます。 **[SafetyNet デバイスの構成証明]** 設定では、デバイスが正常な状態であり危険にさらされていないことを確認するために、デバイスを Google サービスに接続する必要があります。 管理者は、インストール済みのアプリが Google Play 開発者サービスによって検証されることを必須にする、Android for Work の構成プロファイル設定を設定することもできます。  条件付きアクセスでは、デバイスが Google Play Protect の要件に準拠していない場合に、ユーザーが企業リソースにアクセスできなくなる可能性があります。 
 
-### <a name="prevent-users-of-android-devices-from-changing-their-device-date-and-time-----1333292---"></a>Android デバイス ユーザーによるデバイスの日付と時刻の変更を防止する <!-- 1333292 -->
-[Android カスタム デバイス ポリシー](custom-settings-android.md)を使用して、Android デバイス ユーザーがデバイスの日付や時刻を変更できないように設定できます。
-この設定を行うには、./Vendor/MSFT/PolicyManager/My/System/AllowDateTimeChange の設定 URI を使用して Android カスタム ポリシーを構成し、これを **TRUE** に設定して該当のグループに割り当てます。
-
-### <a name="view-app-protection-policy-assignments-for-troubleshooting-----1475003---"></a>トラブルシューティングのアプリ保護ポリシー割り当てを確認する <!--  1475003 -->
-今後のリリースでは、トラブルシューティング ブレードにある **[割り当て]** ボックスの一覧に、**[App protection policy]\(アプリの保護ポリシー\)** オプションが追加される予定です。 アプリの保護ポリシーを選んで、特定のユーザーに割り当てられているアプリ保護ポリシーを確認できるようになります。
-
-### <a name="create-ios-apps-limited-to-specific-regional-apple-app-stores----1281692---"></a>特定地域の Apple App Store のみを対象とした iOS アプリを作成する <!-- 1281692 -->
-Apple App Store 管理対象アプリの作成時に、国のロケールを指定できるようになります。
-
-> [!NOTE]  
-> 現在、Apple App Store の管理対象アプリは、米国のストアで販売されるものしか作成できません。
-
-### <a name="select-apple-country-store-to-sync-vpp-apps-----1332311---"></a>Apple の国別ストアを選択して VPP アプリを同期する <!-- 1332311 -->  
-Volume Purchase Program (VPP) トークンをアップロードする際に、VPP 国別ストアを構成できるようになります。 指定された VPP 国別ストアにある全ロケールに対応した VPP アプリが、Intune によって同期されます。
-
-> [!NOTE]  
-> 現在、Intune で同期されるのは、Intune テナントが作成された Intune ロケールに一致する VPP 国別ストアの VPP アプリのみです。
-
-###  <a name="update-ios-vpp-user-and-device-licensed-apps-----1305564---"></a>iOS VPP ユーザーとデバイスにライセンスされたアプリを更新する <!-- 1305564 -->  
-Intune サービスを介して特定の iOS VPP トークンに対して購入されたすべてのアプリを更新するように、トークンを構成できるようになります。 アプリ ストア内の VPP アプリ更新プログラムが Intune によって検出され、デバイスのチェックイン時に自動的にデバイスにプッシュされます。
-
-### <a name="new-settings-for-windows-10-team-device-restriction-profile------1308838----"></a>Windows 10 Team デバイス制限プロファイルの新しい設定 <!--- 1308838  -->
-Surface Hub デバイスの制御に役立つように、Windows 10 Team デバイス制限プロファイルに多数の新しい設定が追加されています。
-このプロファイルについて詳しくは、[Windows 10 Team デバイスの制限設定](device-restrictions-windows-10-teams.md)に関するページをご覧ください。
 
 ### <a name="support-for-windows-10-edition-upgrade-policy------903672archived-1119689---"></a>Windows 10 エディション アップグレード ポリシーのサポート <!-- 903672(archived), 1119689 -->  
 Windows 10 デバイスを Windows 10 Education、Windows 10 Education N、Windows 10 Professional、Windows 10 Professional N、Windows 10 Professional Education、Windows 10 Professional Education N にアップグレードする Windows 10 エディション アップグレード ポリシーを作成できます。Windows 10 エディション アップグレードの詳細については、[Windows 10 エディションのアップグレードを構成する方法](edition-upgrade-configure-windows-10.md)に関するページを参照してください。
 
-### <a name="remote-support-for-windows-and-windows-mobile-devices-----1070473---"></a>Windows と Windows Mobile デバイスのリモート サポート <!-- 1070473 -->    
-[TeamViewer](https://www.teamviewer.com) ソフトウェア (別売り) を使用して、Windows と Windows Mobile デバイスを実行するユーザーに Intune で リモート アシスタンスを提供できるようになります。
 
-### <a name="scan-devices-with-windows-defender----1280988--1280990-----"></a>Windows Defender でデバイスをスキャンする <!-- 1280988  1280990   -->
-管理された Windows 10 デバイス上で Windows Defender ウイルス対策を使って **クイック スキャン**、**フル スキャン**、**署名更新**を実行できるようになります。 デバイスの概要ブレードから、デバイス上で実行するアクションを選びます。 コマンドがデバイスに送信される前に、アクションの確認を求められます。 
-
-**クイック スキャン**: クイック スキャンでは、レジストリ キーや既知の Windows スタートアップ フォルダーなど、マルウェアが起動するように登録されている場所が調べられます。 クイック スキャンには、平均 5 分かかります。 クイック スキャンは、ファイルの開閉時やユーザーがフォルダーに移動したときにファイルをスキャンする **[Always-on real-time protection]\(リアルタイム保護を常に有効にする\)** 設定と組み合わせると、システムやカーネル内に存在する可能性があるマルウェアから保護するのに役立ちます。 完了すると、ユーザーのデバイスにスキャン結果が表示されます。 
-
-**フル スキャン**: フル スキャンは、マルウェアの脅威が発生したデバイスで、徹底的なクリーンアップが必要な非アクティブなコンポーネントがあるかどうかを識別するために使用できます。また、オンデマンド スキャンを実行する場合に便利です。 フル スキャンは、実行に 1 時間かかる場合があります。 完了すると、ユーザーのデバイスにスキャン結果が表示されます。 
-
-**署名更新**: 署名更新コマンドを使用すると、Windows Defender ウイルス対策のマルウェア定義と署名が更新されます。 マルウェア検出における Windows Defender ウイルス対策ソフトウェアの効果を確保するために役立ちます。 この機能は Windows 10 デバイス専用であり、デバイスのインターネット接続を一時中断します。 
-
-### <a name="bitlocker-device-configuration----1397398---"></a>BitLocker デバイス構成 <!-- 1397398 -->  
-**[Windows 暗号化] > [Base Settings]\(基本設定\)** に、新たに **[他のディスクの暗号化に対する警告]** 設定が追加されます。この設定では、ユーザーのデバイス上で使われている可能性がある、他のディスクの暗号化についての[警告プロンプト](https://docs.microsoft.com/en-us/windows/client-management/mdm/bitlocker-csp#allowarningforotherdiskencryption)を無効にできます。  警告プロンプトの利用には、デバイス上で BitLocker をセットアップする前にユーザーの同意が必要であり、エンドユーザーによって承諾されるまで BitLocker のセットアップはブロックされます。  この新しい設定では、エンドユーザーに対する警告が無効になります。
-
-### <a name="company-portal-for-windows-81-and-windows-phone-81-moving-to-sustaining-mode---1428681--"></a>Windows 8.1 および Windows Phone 8.1 のポータル サイトの維持モードへの移行 <!--1428681-->
-2017 年 10 月より、Windows 8.1 および Windows Phone 8.1 用ポータル サイト アプリは、維持モードに移行されます。 つまり、当該アプリに加え、登録やコンプライアンスといった既存のシナリオは、これらのプラットフォームで引き続きサポートされます。 当該アプリは、Microsoft Store など、既存のリリース チャネル経由で引き続きダウンロード可能です。 
-
-維持モードになると、当該アプリは、重要なセキュリティ更新プログラムのみを受信するようになります。 当該アプリの更新プログラムや機能が追加でリリースされることはありません。 新機能を使用するには、デバイスを Windows 10 や Windows 10 Mobile に更新することをお勧めします。 
-
-###  <a name="block-copy-and-paste-between-work-and-personal-profiles-in-android-for-work----1098994---"></a>Android for Work で仕事用プロファイルと個人プロファイルの間でのコピーおよび貼り付けを防ぐ <!-- 1098994 -->   
-仕事用アプリと個人用アプリとの間でコピーおよび貼り付けができないように、Android for Work の仕事用プロファイルを構成できるようになります。 この新しい設定は、**[仕事用プロファイルの設定]** の **[Android for Work]** プラットフォームの **[デバイスの制限]** プロファイルにあります。
-
-### <a name="new-behaviors-for-the-company-portal-app-for-android-with-work-profiles----1485783---"></a>仕事用プロファイルを使った Android 用ポータル サイト アプリの新しい動作 <!---1485783--->
-仕事用プロファイルがある Android for Work デバイスを登録すると、仕事用プロファイル内のポータル サイト アプリによって、そのデバイス上での管理タスクが実行されます。 個人プロファイルで MAM 対応アプリを使っている場合を除き、Android 用ポータル サイト アプリを使用する機会がなくなります。 仕事用プロファイルのエクスペリエンスを向上させるために、Intune では仕事用プロファイルの登録が正常に完了した後、個人用ポータル サイト アプリが自動的に非表示になります。
-
-Android 用ポータル サイト アプリは、[Play ストアでポータル サイト](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) を参照して **[Enable]\(有効化\)** をタップすると、個人プロファイルでいつでも有効にできます。
-
-### <a name="intune-mam--outlook-for-android-add-ins-----1450688---"></a>Android 用 Intune MAM および Outlook のアドイン <!-- 1450688 -->
+### <a name="intune-mam-and-outlook-for-android-add-ins-----1450688---"></a>Android 用 Intune MAM および Outlook のアドイン  <!-- 1450688 -->
 数週間以内に、Office チームによって Android 版 Outlook のアドインが発表されます。 このアドインの機能セットは、Windows、iOS、Web、および Mac 版の Outlook で既にリリース済みのものです。 アドインは Exchange を介して管理されるため、Exchange 管理者がアドインへのアクセスを無効にしていない限り、ユーザーは Outlook と管理対象外のアドイン アプリケーションとの間でデータとメッセージをコピーおよび共有できるようになります。 
 
 アドインへのユーザーのアクセス許可を管理するには、Exchange 管理者と協力して、MAM データ保護ポリシーがアドインに必ず適用されるようにしてください。
@@ -277,9 +165,6 @@ Exchange の設定を変更すると、Windows 版、iOS 版、Web 版、Mac 版
 #### <a name="what-do-i-need-to-do"></a>必要な作業
 現在の Exchange ポリシーを確認します。 IT 部門とヘルプ デスクのスタッフに知らせます。 特定の質問や懸念事項をサポート チームに問い合わせます。 
 
-### <a name="user-device-association-entity-collection-added-to-intune-data-warehouse-data-model----1187917---"></a>Intune データ ウェアハウスのデータ モデルに追加されたユーザー デバイス関連付けエンティティ コレクション <!-- 1187917 -->
-ユーザーとデバイスのエンティティ コレクションを関連付けるユーザー デバイス関連付け情報を使って、レポートやデータの視覚エフェクトを作成できるようになります。 このデータ モデルは、OData エンドポイントを使うか、カスタム クライアントを開発すると、[Data Warehouse Intune]\(データ ウェアハウス Intune\) ページから取得した Power BI ファイル (PBIX) を使ってアクセスできます。
-
 
 
 
@@ -288,15 +173,6 @@ Exchange の設定を変更すると、Windows 版、iOS 版、Web 版、Mac 版
 ### <a name="actions-for-non-compliance----730266--846515---"></a>コンプライアンス非対応に対するアクション <!--730266  846515 -->     
 "*コンプライアンス非対応に対するアクション*" は、コンプライアンス非対応のデバイスに対してアクションを実行できるようにするコンプライアンス ポリシーの新しい機能です。 単一または複数のアクションを指定できます。また、実行する必要があるアクションの期間を指定することもできます。 たとえば、デバイスが非対応になった直後に電子メールで、その非対応デバイスのユーザーに通知することができます。あるいは、非対応デバイスに対して、条件付きアクセスで 3 日間の猶予期間後の企業リソースへのアクセスをブロックすることができます。
 
-### <a name="new-report-that-lists-ios-devices-with-older-ios-versions------1352223---"></a>古い iOS バージョンの iOS デバイス一覧が記載された新しいレポート<!-- 1352223 -->
-[**ソフトウェア更新プログラム**] ワークスペースから [**Out-of-date iOS Devices**]\(古い iOS デバイス\) レポートを利用できるようになります。 このレポートには、iOS の更新ポリシーが対象とする監視対象の iOS デバイスの一覧と利用可能な更新が表示されます。 デバイスごとに、デバイスが自動的に更新されない理由のステータスを確認できます。 
-
-### <a name="new-settings-for-windows-10-device-restriction-profile"></a>Windows 10 デバイス制限プロファイルの新しい設定
-<!--- 978575, 1308849, -->
-Windows Defender SmartScreen カテゴリの Windows 10 デバイス制限プロファイルに新しい設定が追加されます。
-
-Windows 10 デバイス制限のプロファイルの詳細については、「[Windows 10 以降のデバイスの制限設定]( device-restrictions-windows-10.md)」を参照してください。
-
 ### <a name="android-for-work-support-for-lookout----1087312---"></a>Lookout の Android for Work サポート <!-- 1087312 -->   
 Lookout を備えた Intune コネクタでは、Lookout for Work アプリの使用時、Android for Work デバイスをサポートします。 コンテナーの内外に Lookout アプリを展開できるようになる予定です。
 
@@ -304,9 +180,6 @@ Lookout を備えた Intune コネクタでは、Lookout for Work アプリの�
 Citrix XenMobile MDX と Microsoft Intune を組み合わせ、デバイスとアプリを管理することができます。 これにより、Citrix の mVPN テクノロジを使用し、Intune アプリの保護ポリシーでアプリを管理できるようになります。
 
 Citrix の MDX mVPN テクノロジとの統合を可能にする iOS および Android 用の Intune アプリ ラッピング ツールと Intune アプリ SDK を含むコード リポジトリを見つけることができるはずです。
-
-### <a name="zimperium---new-mobile-threat-defense-partner------954681---"></a>Zimperium - 新しい Mobile Threat Defense パートナー   <!-- 954681 -->
-Microsoft Intune に統合された Mobile Threat Defense である Zimperium によって実行されるリスク評価に基づき、条件付きアクセスを利用し、モバイル デバイスから会社のリソースへのアクセスを制御できます。
 
 #### <a name="how-integration-with-intune-works"></a>Intune との統合のしくみ
 リスクは、Zimperium を実行するデバイスから収集される製品利用統計情報に基づいて評価されます。 Intune デバイス コンプライアンス ポリシーで有効にした Zimperium リスク評価に基づき、EMS 条件付きアクセスのポリシーを構成できます。Intune デバイス コンプライアンス ポリシーは、検出された脅威に基づき、非準拠デバイスから企業リソースへのアクセスを許可したり、拒否したりするために利用できます。
@@ -318,17 +191,7 @@ Microsoft Intune に統合された Mobile Threat Defense である Zimperium �
 Exchange Connector 用の System Center Operations Manager 管理パックが Exchange Connector のログ解析に利用できるようになります。 問題のトラブルシューティングを行う必要がある場合、この管理パックによって別の方法で Intune を監視できます。
 
 
-### <a name="end-of-support-for-android-43-and-lower----1171127-1326920----"></a>Android 4.3 以前のサポートの終了<!---1171127, 1326920 --->
-Android 用の管理対象アプリとポータル サイト アプリで会社のリソースにアクセスするには、Android 4.4 以降を使用している必要があります。 10 月の初めまでにデバイスを更新しないと、ポータル サイトまたはそれらのアプリにアクセスできなくなります。 12 月には、登録されているすべてのデバイスがインベントリから削除され、会社のリソースにアクセスできなくなります。 MDM を使わずにアプリの保護ポリシーを使用している場合、アプリは更新プログラムを受信できなくなり、時間の経過と共にエクスペリエンスの質が低下していきます。
-
-
 ## <a name="intune-apps"></a>Intune アプリ
-
-### <a name="improved-guidance-around-the-request-for-access-to-contacts-on-android-devices---1484985--"></a>Android デバイスでの連絡先へのアクセス要求に関するガイダンスの改善<!--1484985-->   
-Android 用ポータル サイト アプリは、連絡先アクセス許可を受け入れるようにエンド ユーザーに求めることがよくあります。 エンド ユーザーがこのアクセスを拒否すると、条件付きアクセス用のアクセス許可を付与するように通知するアプリ内通知が表示されるようになります。
-
-### <a name="secure-startup-remediation-for-android---1490712--"></a>Android でのセキュリティで保護された起動の修復<!--1490712-->     
-Android デバイスを持つエンド ユーザーは、ポータル サイト アプリのコンプライアンス非対応の理由をタップできるようになります。 可能であれば、問題を解決するのに適切な、設定アプリ内の場所がエンド ユーザーに直接表示されます。
 
 
 ### <a name="redirecting-macos-users-to-our-new-company-portal-app---1380728--"></a>新しいポータル サイト アプリへの macOS ユーザーのリダイレクト<!--1380728-->   
@@ -339,22 +202,11 @@ iOS 用ポータル サイト アプリでの証明書ベースの認証 (CBA) �
 
 <!-- the following are present prior to 1710 -->
 
-### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>ポータル Web サイトの検索機能強化 <!--1331697-->  
-マイクロソフトはアプリの検索機能を強化しています。その最初が[ポータル Web サイト](https://portal.manage.microsoft.com)です。 名前フィールドや説明フィールドだけでなく、アプリ カテゴリでも検索できるようになりました。 結果は既定で、関連性の降順で並べ替えられます。 
-
-iOS ユーザーもこの変更の影響を受けます。ポータル Web サイトは、iOS のポータル サイト アプリの一部としても利用されるためです。 Android と Windows のポータル サイト アプリも数か月後に同じように更新されます。
-
-マイクロソフトは関連性の追跡方法を微調整しています。ポータル Web サイトの一番下にある "フィードバック" リンクから調整具合をお知らせください。
-
-### <a name="refresh-action-added-to-the-company-portal-app-for-windows-10---1132468--"></a>Windows 10 用ポータル サイト アプリに追加された更新アクション <!--1132468-->  
-Windows 10 用ポータル サイト アプリで、アプリ内のデータを更新するには、下に引いて更新するか、デスクトップでは F5 キーを押します。
 
 
 ### <a name="apps-that-are-available-with-or-without-enrollment-can-now-be-installed-without-being-prompted-for-enrollment----1334712---"></a>登録の有無にかかわらず利用可能なアプリについて、登録を求められずにインストールできるようになりました。 <!-- 1334712 -->
 Android ポータル サイト アプリでの登録の有無にかかわらず利用可能な業務用アプリについて、登録を求められずにインストールできます。
 
-### <a name="ios-company-portal-display-large-icons----1454593---"></a>iOS ポータル サイトでの大きいアイコンの表示 <!-- 1454593 -->
-iOS ポータル サイトのアプリ タイルでのアイコンの表示方法に関する既知の問題は修正中です。 現在は、120 x 120 ピクセル以上のアプリ アイコンをアップロードすると、ポータル Web サイト (https://portal.manage.microsoft.com) 内と iOS ポータル サイトのアプリ ページ内で、アプリ タイルのフル サイズで表示されます。
 
 <!-- the following are present prior to 1709 -->
 
@@ -375,19 +227,8 @@ Intune のモバイル デバイス管理 (MDM) とモバイル アプリケー�
 
 MDM と MAM の変更の詳細については、[Intune サポート チーム ブログ](https://blogs.technet.microsoft.com/intunesupport/2017/09/19/support-tip-setting-up-communication-between-mam-managed-and-mdm-managed-apps/)での案内をご覧ください。
 
-### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple の要求による Application Transport Security 対応のための更新<!--748318-->   
-Apple は、2017 年春より Application Transport Security (ATS) の特定の要件を適用すると発表しました。 ATS では、HTTPS 経由で行われるアプリ通信すべてに、より厳格なセキュリティ保護が適用されます。 この変更により、iOS ポータル サイト アプリを使用している Intune ユーザーが影響を受けます。 詳細については、[Intune サポートのブログ](https://aka.ms/compportalats)をご覧ください。
 
 
-### <a name="new-path-for-managed-devices-in-graph-api----1586728---"></a>Graph API での管理対象デバイスに対する新しいパス <!-- 1586728 -->  
-10 月の Intune のサービス リリースでは、Graph API のベータ版で管理対象デバイスにアクセスするために使用されるパスが変更されています。
-
-| | |
-|--|--|
-| 現在のパス |  https://graph.microsoft.com/beta/managedDevices |
-| 新しいパス | https://graph.microsoft.com/beta/deviceManagement/managedDevices |
-
-10 月中は両方のパスを使うことができます。 10 月のサービス リリース後は、新しいパスのみが機能します。  Graph API を使用して管理対象デバイスにアクセスしている場合は、スクリプトとアプリケーションを新しいパスで更新して確認してください。 追加の変更については、毎月の [Graph API 変更ログ](https://developer.microsoft.com/en-us/graph/docs/concepts/changelog)でご確認ください。
 
 ### <a name="see-also"></a>関連項目
 最近の開発状況について詳しくは、「[Microsoft Intune の新機能](whats-new.md)」をご覧ください。

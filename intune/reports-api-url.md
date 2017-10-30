@@ -14,27 +14,17 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7723bb42eedcd97142f039ca52b60911fa91838b
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: f36327f21fbb2f08906a7621b701a4e6c9deee03
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune データ ウェアハウス API エンドポイント
 
 特定のロールベースのアクセス制御と Azure Active Directory 資格情報を使用するアカウントに、Intune データ ウェアハウス API を使用できます。 次に、OAuth 2.0 を使用して Azure AD に対して REST クライアントを承認します。 最後に、データ ウェアハウス リソースを呼び出すことができる有効な URL を形成します。
 
-## <a name="azure-ad-and-intune-credential-requirements"></a>Azure AD と Intune の資格情報の要件
-
-認証と承認は、Azure AD の資格情報と Intune のロールベースのアクセス制御 (RBAC) に基づいています。 全体管理者とテナントの Intune サービス管理者はいずれも、既定で API に対するアクセス権を持っています。 Intune ロールを使用して、他のユーザーにアクセス権を付与するには、**レポート リソース**へのアクセス権を付与します。
-
-API にアクセスするための要件は次のとおりです。
-
-  -  Intune ライセンスをユーザーに割り当てる必要があります
-  -  ユーザーは次のいずれかである必要があります
-      -  Azure AD 全体管理者
-      -  Intune サービス管理者
-      -  **レポート** リソースに対してロールベースのアクセス権を持つユーザー
+[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
 ## <a name="authorization"></a>承認
 
@@ -64,4 +54,4 @@ API の現在のバージョンは `beta` です。
 
 ## <a name="odata-query-options"></a>OData クエリのオプション
 
-現在のバージョンは、次の OData クエリ パラメーター `$skip, $top, $filter, $orderby` をサポートしています。
+現在のバージョンは、OData クエリ パラメーター `$filter, $orderby, $select, $skip,` と `$top` をサポートしています。

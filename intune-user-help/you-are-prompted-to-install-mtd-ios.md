@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/25/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5b9ee20b-3c4e-4461-86d3-6fd26e7f71a6
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: f3c76f558987cd03a4e6434243b31908cd083807
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: ba3a947060877fe704d4980cb1f25f34f110ff1f
+ms.sourcegitcommit: 2707a5fb68749a51c2a3ff54a1bac631bdaa3b87
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>iOS デバイスに Mobile Threat Defense をインストールする
 
@@ -31,6 +31,17 @@ ms.lasthandoff: 09/28/2017
 * [SandBlast Mobile Protect](you-are-prompted-to-install-sandblast-ios.md)
 * [Zimperium zIPS](you-are-prompted-to-install-zips-ios.md)
 
-**インストールが機能しない場合**
+## <a name="additional-information-your-company-can-see"></a>会社が見ることのできる追加情報
+
+Mobile Threat Defense は、企業の情報を盗もうとするアプリからデバイスを保護する手段です。 この保護を追加するには、デバイスで会社が使っているアプリに関する追加情報を Mobile Threat Defense サービスに報告する必要があります。 会社は、ユーザーの個人用アプリのデータを見ることはできません。 Mobile Threat Defense サービスを使用すると、デバイス上のすべてのアプリが[会社が確認できる情報](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)に追加されます。 会社が確認できるアプリの部分を次に示します。
+
+*   アプリ名
+* アプリ ID: アプリ ストアでアプリを示す一意名
+*   アプリのバージョンと短いバージョン番号: アプリの特定のリリース番号
+* アプリのバンドルと動的なサイズ: デバイスでのアプリの使用領域
+* アプリの有効性: アプリの使用が承認されているかどうか
+*   アプリの管理状態: アプリが会社によって管理されているか、または個人用アプリか
+
+## <a name="if-the-installation-doesnt-work"></a>インストールが機能しない場合
 
 ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。 このようなことが起こる場合、社内サポートにお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。

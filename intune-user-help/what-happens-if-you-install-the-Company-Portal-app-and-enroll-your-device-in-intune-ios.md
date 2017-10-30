@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8867125c9112089bda574f2bd710ddbc3d0b214c
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 8d697a18ca812b9ccd39a5678dce7f7692aa97e5
+ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>ポータル サイト アプリをインストールし、Intune に iOS または macOS デバイスを登録するとどうなるか
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 09/28/2017
 
 -   条項に同意する必要があります。
 
--   会社の機密データの写真が撮影されないように、デバイスのカメラを有効または無効にする。
+-   会社の機密データの写真が撮影されないように、デバイスのカメラを無効にする。
 
 -   デバイスの Web 閲覧を有効または無効にする。
 

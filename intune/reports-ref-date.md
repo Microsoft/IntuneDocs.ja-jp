@@ -14,11 +14,11 @@ ms.assetid: 6B4BC650-62F7-4049-9DE4-CDECB579B58F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 766d7619f2438d4291210ad8adfbc8d3eb9b2381
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 894617cd47e5221be6988c377608c82bad2c7a67
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-date-entity"></a>Date エンティティのリファレンス
 
@@ -30,21 +30,21 @@ ms.lasthandoff: 08/04/2017
 
 | プロパティ  | 説明 | 例 |
 |---------|------------|--------|
-| DateKey |データ ウェアハウス内のこの日付を示す一意識別子 | 20160703 |
-| FullDate |この日付を完全な日時形式で表した日付 | 7/3/2016 12:00:00 AM |
-| DayOfWeek |曜日 |1 |
-| DayOfMonth |月の日付 |3 |
-| DayOfYear |年の通算日 |185 |
-| WeekOfYear |年の通算週 |28 |
-| MonthOfYear |月 |7 |
-| CalendarQuarter |カレンダーの四半期 |3 |
-| CalendarYear |カレンダーの年 |2016 |
-| DateKey |データ ウェアハウス内のこの日付を示す一意識別子 |20160703 |
-| FullDate |この日付を完全な日時形式で表した日付 | 7/3/2016 12:00:00 AM |
-| DayOfWeek |曜日 |1 |
-| DayOfMonth |月の日付 |3 |
-| DayOfYear |年の通算日 |185 |
-| WeekOfYear |年の通算週 |28 |
-| MonthOfYear |月 |7 |
-| CalendarQuarter |カレンダーの四半期 |3 |
-| CalendarYear |カレンダーの年 |2016 |
+| DateKey | データ ウェアハウス内のこの日付を示す一意識別子。 | 20160703 |
+| FullDate | この日付を完全な日時形式で表した日付。 | 7/3/2016 12:00:00 AM |
+| DayOfWeek | 曜日 | 1 |
+| DayOfMonth | 月の日付 | 3 |
+| DayOfYear | 年の通算日 | 185 |
+| WeekOfYear | 年の通算週 | 28 |
+| MonthOfYear | 月 | 7 |
+| CalendarQuarter | カレンダーの四半期 | 3 |
+| CalendarYear | カレンダーの年 | 2016 |
+| DateKey | データ ウェアハウス内のこの日付を示す一意識別子。 | 20160703 |
+| FullDate | この日付を完全な日時形式で表した日付。 | 7/3/2016 12:00:00 AM |
+| DayOfWeek | 曜日 | 1 |
+| DayOfMonth | 月の日付 | 3 |
+| DayOfYear | 年の通算日 | 185 |
+| WeekOfYear | 年の通算週 | 28 |
+| MonthOfYear | 月 | 7 |
+| CalendarQuarter | カレンダーの四半期 | 3 |
+| CalendarYear | カレンダーの年 | 2016 |

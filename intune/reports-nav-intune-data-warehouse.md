@@ -14,11 +14,11 @@ ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 52b498beb024b86282c93be7aa5a248800db6609
-ms.sourcegitcommit: 294de4d4058de2c625abb8143e90880d27da9284
+ms.openlocfilehash: a0d6bcb4ccac3563dd642ec0ad621645b7053dea
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 10/20/2017
 ---
 #  <a name="intune-data-warehouse-api"></a>Intune データ ウェアハウス API
 
@@ -41,9 +41,12 @@ OData (Open Data Protocol) は、RESTful API を構築し、使用する際の�
 
 ## <a name="odata-custom-client"></a>OData カスタム クライアント
 
-RESTful エンドポイント経由で Intune データ ウェアハウスのデータ モデルにアクセスします。 データにアクセスするには、OAuth 2.0 を利用し、Microsoft Azure Active Directory (Azure AD) でクライアントを認証する必要があります。 最初に Azure で Web アプリとクライアント アプリを設定し、クライアントにアクセス許可を与えます。 ローカル クライアントに承認が与えられ、データ ウェアハウスのエンドポイントと通信できるようになります。
+RESTful エンドポイント経由で Intune データ ウェアハウスのデータ モデルにアクセスします。 データにアクセスするには、OAuth 2.0 を利用し、Azure Active Directory (Azure AD) でクライアントを認証する必要があります。 最初に Azure で Web アプリとクライアント アプリを設定し、クライアントにアクセス許可を与えます。 ローカル クライアントに承認が与えられ、データ ウェアハウスのエンドポイントと通信できるようになります。
 
 詳細については、「[REST クライアントを使用してのデータ ウェアハウス API からのデータの取得](reports-proc-data-rest.md)」を参照してください。
+
+> [!Note]  
+> コードのサンプルは、Github の [GitHub Intune データ ウェアハウス リポジトリ](https://github.com/Microsoft/Intune-Data-Warehouse)で入手できます。
 
 ## <a name="interacting-with-the-api"></a>API との対話
 
@@ -58,6 +61,8 @@ OData で抽象データ モデルとプロトコルを定義し、任意のデ�
 
 ## <a name="next-steps"></a>次のステップ
 
-[Azure AD の認証シナリオ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)  
-[odata.org](http://www.odata.org)  
-[OData Version 4.0](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
+「[Azure AD の認証シナリオ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)」を読んで、Azure AD の操作についてさらに詳しく学習します。
+
+[odata.org](http://www.odata.org) で OData のリソースを探します。
+  
+「[OData Version 4.0] (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)」で OData Version 4.0 標準を確認します  

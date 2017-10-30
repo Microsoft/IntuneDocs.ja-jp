@@ -14,11 +14,11 @@ ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6af0ff1f463c153e62f6df63ce811076c5f692f2
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 079cfe097d6cf462f9ccd0a32d2e327b3b605e40
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-policy-entities"></a>ポリシー エンティティのリファレンス
 
@@ -35,14 +35,14 @@ ms.lasthandoff: 08/04/2017
 
 | プロパティ  | 説明 | 例 |
 |---------|------------|--------|
-| PolicyKey |データ ウェアハウス内のポリシーを表す一意のキー |123 |
-| PolicyId |データ ウェアハウス内のポリシーを示す一意識別子 |b66bc706-ffff-7437-0340-032819502773 |
-| PolicyName |ポリシーの名前 |"Windows 10 Baseline" |
+| PolicyKey |データ ウェアハウス内のポリシーを表す一意のキー。 |123 |
+| PolicyId |データ ウェアハウス内のポリシーを示す一意識別子。 |b66bc706-ffff-7437-0340-032819502773 |
+| PolicyName |ポリシーの名前。 |"Windows 10 Baseline" |
 | PolicyVersion |ポリシーのバージョン。 ポリシーを編集または変更すると、新しいバージョンが作成されます。 |1, 2, 3 |
-| IsDeleted |ポリシー レコードが更新されているかどうかを示します。  True - ポリシーには、フィールドが更新された新しいレコードがあります。 False - ポリシーの最新のレコードです。 |真/偽 |
-| StartDateInclusiveUTC |ポリシーがデータ ウェアハウスで作成されたときの UTC 日時 |11/23/2016 12:00:00 AM |
-| DeletedDateUTC |IsDeleted が True に変更されたときの UTC 日時 |11/23/2016 12:00:00 AM |
-| RowLastModifiedDateTimeUTC |ポリシーがデータ ウェアハウスで最後に変更されたときの UTC 日時 |11/23/2016 12:00:00 AM |
+| IsDeleted |ポリシー レコードが更新されているかどうかを示します。  <br>True - ポリシーには、フィールドが更新された新しいレコードがあります。 <br>False - ポリシーの最新のレコードです。 |真/偽 |
+| StartDateInclusiveUTC |ポリシーがデータ ウェアハウスで作成されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
+| DeletedDateUTC |IsDeleted が True に変更されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
+| RowLastModifiedDateTimeUTC |ポリシーがデータ ウェアハウスで最後に変更されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
 
 ## <a name="policytype"></a>PolicyType
 
@@ -50,9 +50,9 @@ ms.lasthandoff: 08/04/2017
 
 | プロパティ  | 説明 | 例 |
 |---------|------------|--------|
-| PolicyTypeId |ソース システムのポリシーを示す一意識別子 |123 |
-| PolicyTypeKey |データ ウェアハウス内のポリシーを示す一意識別子 |1 |
-| PolicyTypeName |ポリシーの種類の名前 |Windows 10 のコンプライアンス ポリシー |
+| PolicyTypeId |ソース システムのポリシーを示す一意識別子。 |123 |
+| PolicyTypeKey |データ ウェアハウス内のポリシーを示す一意識別子。 |1 |
+| PolicyTypeName |ポリシーの種類の名前 |Windows 10 のコンプライアンス ポリシー。 |
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
 
@@ -60,11 +60,11 @@ ms.lasthandoff: 08/04/2017
 
 | プロパティ  | 説明 | 例 |
 |---------|------------|--------|
-| DateKey |デバイス構成プロファイル チェックインがデータ ウェアハウスに記録されたときの日付キー |20160703 |
-| Pending |保留状態の一意のデバイス数 |123 |
-| 成功 |成功状態の一意のデバイス数 |12 |
-| エラー |エラー状態の一意のデバイス数 |10 |
-| Failed |失敗状態の一意のデバイス数 |2 |
+| DateKey |デバイス構成プロファイル チェックインがデータ ウェアハウスに記録されたときの日付キー。 |20160703 |
+| Pending |保留状態の一意のデバイス数。 |123 |
+| 成功 |成功状態の一意のデバイス数。 |12 |
+| エラー |エラー状態の一意のデバイス数。 |10 |
+| Failed |失敗状態の一意のデバイス数。 |2 |
 
 ## <a name="userconfiguration"></a>UserConfiguration
 
@@ -72,11 +72,11 @@ ms.lasthandoff: 08/04/2017
 
 | プロパティ  | 説明 | 例 |
 |---------|------------|--------|
-| DateKey |デバイス構成プロファイル チェックインがデータ ウェアハウスに記録されたときの日付キー |20160703 |
-| Pending |保留状態の一意のユーザー数 |123 |
-| 成功 |成功状態の一意のユーザー数 |12 |
-| エラー |エラー状態の一意のユーザー数 |10 |
-| Failed |失敗状態の一意のユーザー数 |2 |
+| DateKey |デバイス構成プロファイル チェックインがデータ ウェアハウスに記録されたときの日付キー。 |20160703 |
+| Pending |保留状態の一意のユーザー数。 |123 |
+| 成功 |成功状態の一意のユーザー数。 |12 |
+| エラー |エラー状態の一意のユーザー数。 |10 |
+| Failed |失敗状態の一意のユーザー数。 |2 |
 
 ## <a name="policytypeactivity"></a>PolicyTypeActivity
 
@@ -84,10 +84,10 @@ ms.lasthandoff: 08/04/2017
 
 | プロパティ  | 説明 | 例 |
 |---------|------------|--------|
-| DateKey |デバイス構成プロファイル チェックインがデータ ウェアハウスに記録されたときの日付キー |20160703 |
-| PolicyKey |ポリシー キーとポリシーを結合して、policyName を取得できます |Windows 10 baseline |
-| PolicyTypeKey |ポリシー キーの種類とポリシーの種類を結合してポリシーの種類名を取得できます |Windows10Compliance Policy |
-| Pending |保留状態の一意のデバイス数 |123 |
-| 成功 |成功状態の一意のデバイス数 |12 |
-| エラー |エラー状態の一意のデバイス数 |10 |
-| Fail- |失敗状態の一意のデバイス数 |2 |
+| DateKey |デバイス構成プロファイル チェックインがデータ ウェアハウスに記録されたときの日付キー。 |20160703 |
+| PolicyKey |ポリシー キーとポリシーを結合して、policyName を取得できます。 |Windows 10 baseline |
+| PolicyTypeKey |ポリシー キーの種類とポリシーの種類を結合してポリシーの種類名を取得できます。 |Windows10 のコンプライアンス ポリシー |
+| Pending |保留状態の一意のデバイス数。 |123 |
+| 成功 |成功状態の一意のデバイス数。 |12 |
+| エラー |エラー状態の一意のデバイス数。 |10 |
+| Fail- |失敗状態の一意のデバイス数。 |2 |

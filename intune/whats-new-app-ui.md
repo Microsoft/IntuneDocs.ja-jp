@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/05/2017
+ms.date: 10/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,32 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11a3c96046a194e10d952508669b7e8fac0d1ee8
-ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
+ms.openlocfilehash: 4719f31b2ea6144bc8113c596155de70aa22ace1
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune とエンド ユーザー アプリの UI の更新
 このリリースの Microsoft Intune でエンド ユーザーに表示されるアプリの UI に加えられた変更について説明します。 これは、ユーザーとの通信や、展開のサポートのために作成したカスタム ドキュメントの更新に役立ちます。 会社のポータルを使用してヘルプデスクにサポートを求める場合に、直面している問題のトラブルシューティングをより適切に行う方法を理解するのにも役立ちます。
+
+## <a name="week-of-october-16-2017"></a>2017 年 10 月 16 日の週
+
+### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>ポータル Web サイトの検索機能強化 <!--1331697-->
+マイクロソフトはアプリの検索機能を強化しています。その最初が[ポータル Web サイト](https://portal.manage.microsoft.com)です。 名前フィールドや説明フィールドだけでなく、アプリ カテゴリでも検索できるようになりました。 結果は既定で、関連性の降順で並べ替えられます。 
+
+iOS ユーザーもこの変更の影響を受けます。ポータル Web サイトは、iOS のポータル サイト アプリの一部としても利用されるためです。 Android と Windows のポータル サイト アプリも数か月後に同じように更新されます。
+
+マイクロソフトは関連性の追跡方法を微調整しています。ポータル Web サイトの一番下にある "フィードバック" リンクから調整具合をお知らせください。
+
+
+### <a name="ios-company-portal-displays-large-icons----1454593---"></a>iOS ポータル サイトでの大きいアイコンの表示 <!-- 1454593 -->
+このリリースでは、iOS ポータル サイトのアプリ タイルでのアイコンの表示方法に関する既知の問題が修正されました。 現在は、120 x 120 ピクセル以上のアプリ アイコンをアップロードすると、[ポータル Web サイト](https://portal.manage.microsoft.com)内と iOS ポータル サイトのアプリ ページ内で、アプリ タイルのフル サイズで表示されます。
+
+
+
+
+
 
 ## <a name="week-of-october-2-2017"></a>2017 年 10 月 2 日の週
 
@@ -67,7 +85,7 @@ Android 用ポータル サイト アプリについて、エンドユーザー�
 |![05](./media/android_cp_enroll_05_before_1709.png)|![05](./media/android_cp_enroll_05_post_1709.png)|
 
 
-## <a name="week-of-august-28-2017"></a>2017 年 8 月 28 日の週
+## <a name="august-2017"></a>2017 年 8 月
 
 ### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 のメール アプリが OAuth をサポート <!---1196951--->
 
@@ -87,7 +105,7 @@ Intune での条件付きアクセスで、OAuth を使用した iOS デバイ�
 
 ![ユーザーはポータル Web サイトから登録するように求められます。](./media/ios-11-ca-email-after-1708-07.png)
 
-## <a name="week-of-august-21-2017"></a>2017 年 8 月 21 日の週
+
 
 ### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Intune モバイル アプリケーション管理 (MAM) ダイアログ ボックスの現代的インターフェイス <!-- 1199015 -->
 
@@ -102,15 +120,13 @@ Intune モバイル アプリケーション管理 (MAM) ダイアログ ボッ�
 ![現代的なインターフェイス](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
-## <a name="week-of-august-14-2017"></a>2017 年 8 月 14 日の週
-
 ### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Windows 10 のポータル サイト アプリの "デバイスの詳細" ページの更新 <!---1287448--->
 
 Windows 10 のポータル サイト アプリで、__[デバイスの詳細]__ ページで __[カテゴリ]__ タグがタイトルの下からプロパティに移動しました。
 
 ![Windows ポータル サイト アプリの "デバイスの詳細" 画面。"カテゴリ" フィールドが画面のタイトルのすぐ下ではなく、プロパティとして表示されています。](./media/cp_win10_category_tag_move_after_1708.png)
 
-## <a name="week-of-july-31-2017"></a>2017 年 7 月 31 日の週
+## <a name="july-2017"></a>2017 年 7 月
 
 ### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>[アプリの詳細] ページでの Android デバイスの新しい情報の表示 <!--1287476-->
 
@@ -164,7 +180,7 @@ __[別のデバイスからサインインする]__ リンクをタップしま�
 
 ![認証プロセスが終了すると、ポータル サイト アプリはサインインを行い、読み込みバーが表示されます。](./media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-## <a name="week-of-june-12-2017"></a>2017 年 6 月 12 日の週
+## <a name="june-2017"></a>2017 年 6 月
 
 ### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>Android 用ポータル サイト アプリのアプリ保護ポリシーの新しいエンド ユーザー エクスペリエンス <!--1305217-->
 ユーザーのフィードバックに基づいて、Android 用ポータル サイト アプリに **[会社のコンテンツにアクセスする]** ボタンが表示されるようになりました。 このボタンの目的は、Intune モバイル アプリケーション管理の機能であるアプリ保護ポリシーをサポートするアプリにアクセスすることだけが必要なユーザーが、不要な登録プロセスを経なくて済むようにすることです。
@@ -210,8 +226,6 @@ Android 用ポータル サイト アプリでは、ユーザーからのフィ�
 ![右上隅にアクション メニューが開いた Android 用ポータル サイト アプリの画像です。 [マイ プロファイル]、[設定] の下と、[使用条件]、[ヘルプとフィードバック]、[概要] の上に、新しい [ポータル サイトの削除] オプションが 3 つ目のオプションとして表示されます。](./media/android_remove_cp_menu_action_after_1705.png)
 
 ![アクション メニューから新しい [ポータル サイトの削除] オプションを選択した後に表示される確認ダイアログの画像です。 "ポータル サイトの削除により、デバイスは IT 管理者による管理を離れ、会社のデータ、会社のアプリ、会社の電子メールに対するデバイスのアクセス権限が削除される可能性がある" ことを示すダイアログが表示されます。 [はい] を選択すると、ポータル サイト アプリを削除するか確認するメッセージが表示されます。](./media/android_remove_cp_menu_confirmation_after_1705.png)
-
-## <a name="week-of-june-5-2017"></a>2017 年 6 月 5 日の週
 
 ### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>iOS 用ポータル サイト アプリのアプリ タイルを改善 <!--1230777-->
 ポータル サイトに設定したブランド カラーが反映されるよう、ホーム ページのアプリ タイルのデザインを一新しました。

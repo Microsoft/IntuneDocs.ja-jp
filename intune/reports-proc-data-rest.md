@@ -14,11 +14,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1bbb0e8ba84e221df3a434da79c513939267648b
-ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
+ms.openlocfilehash: f1ffc07d87e98666a882415d63e11bd04bbd5461
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST クライアントを使用して Intune データ ウェアハウス API からデータを取得する
 
@@ -58,7 +58,7 @@ Azure でネイティブ アプリを作成します。 このネイティブ �
 
 これでアプリが Azure に定義されました。 ネイティブ アプリから Microsoft Intune API にアクセスするための許可を与えます。
 
-1.  ネイティブ アプリをクリックします。 アプリには Intune Data Warehouse Client などの名前が付けてあります。
+1.  ネイティブ アプリをクリックします。 アプリには **Intune Data Warehouse Client** などの名前が付けてあります。
 2.  **[設定]** ブレードで **[必要なアクセス許可]** をクリックします。
 3.  **[必要なアクセス許可]** ブレードで **[追加]** をクリックします。
 4.  **[API を選択します]** をクリックします。
@@ -152,14 +152,14 @@ Postman のために新しいアクセス トークンを取得するには、Az
 1.  **Microsoft Visual Studio** を起動します。
 2.  **[ファイル]** > **[新しいプロジェクト]** の順に選択します。 **[Visual C#]** を展開し、**[コンソール アプリ (.Net Framework)]** を選択します。 
 3.  プロジェクトに ` IntuneDataWarehouseSamples` という名前を付け、プロジェクトを保存する場所に進み、**[OK]** をクリックします。
-3.  ソリューション エクスプローラーでソリューションの名前を右クリックし、**[ソリューションの NuGet パッケージの管理]** を選択します。 **[参照]** をクリックし、検索ボックスに `Microsoft.IdentityModel.Clients.ActiveDirectory' と入力します。
-4. パッケージを選択し、ソリューションの [Manage Packages for Your Solution]\(ソリューションのパッケージ管理\) で **IntuneDataWarehouseSamples** プロジェクトを選択し、**[インストール]** をクリックします。 
-5. **[同意する]** をクリックし、NuGet パッケージ ライセンスに同意します。
-6. ソリューション エクスプローラーから `Program.cs` を開きます。
+4.  ソリューション エクスプローラーでソリューションの名前を右クリックし、**[ソリューションの NuGet パッケージの管理]** を選択します。 **[参照]** をクリックして、検索ボックスに「`Microsoft.IdentityModel.Clients.ActiveDirectory`」と入力します。
+5. パッケージを選択し、ソリューションの [Manage Packages for Your Solution]\(ソリューションのパッケージ管理\) で **IntuneDataWarehouseSamples** プロジェクトを選択し、**[インストール]** をクリックします。 
+6. **[同意する]** をクリックし、NuGet パッケージ ライセンスに同意します。
+7. ソリューション エクスプローラーから `Program.cs` を開きます。
 
     ![Visual Studio のプロジェクト](media\reports-get_rest_data_in.png)
 
-7.  Program.cs のコードを次のコードに置き換えます。  
+8.  Program.cs のコードを次のコードに置き換えます。  
     ```csharp
 namespace IntuneDataWarehouseSamples
 {
@@ -214,12 +214,12 @@ namespace IntuneDataWarehouseSamples
     }
     ```
 
-8.  コード サンプルの `TODO` を更新します。
-9.  **Ctrl + F5** を押し、デバッグ モードで Intune.DataWarehouseAPIClient クライアントをビルドし、実行します。
+9.  コード サンプルの `TODO` を更新します。
+10.  **Ctrl + F5** を押し、デバッグ モードで Intune.DataWarehouseAPIClient クライアントをビルドし、実行します。
 
     ![JSON 形式で取得された日付エンティティ。](media\reports-get_rest_data_output.png)
 
-10.  コンソールの出力を確認します。 出力には、JSON 形式のデータが含まれています。これは Intune テナントの **dates** エンティティから引き出されたものです。
+11.  コンソールの出力を確認します。 出力には、JSON 形式のデータが含まれています。これは Intune テナントの **dates** エンティティから引き出されたものです。
 
 ## <a name="next-steps"></a>次のステップ
 
