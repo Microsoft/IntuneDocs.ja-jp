@@ -13,11 +13,11 @@ ms.assetid: 6a88573a-aa60-455c-858c-74562798246b
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ae828adff5d159c24e436b35ed480033c54560f
-ms.sourcegitcommit: 29ee35da2864b25f4432d2423b285014c77040af
+ms.openlocfilehash: 85e4712a204032497cb7fd31dbee910d52ac08b7
+ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2017
+ms.lasthandoff: 10/21/2017
 ---
 # <a name="prevent-unauthorized-access-to-company-data"></a>会社のデータへの無許可のアクセスを防止する 
 
@@ -45,4 +45,4 @@ Office 365 のドキュメントと電子メールを分類し、ラベル付け
 次の手順として、会社データの保護機能を上げる他の方法について学習できます。次のようなものがあります。 
 
 * [iOS および Android デバイスで Azure Information Protection] を使用する方法 (https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq)。
-* Windows Phone および Mac コンピューターの場合は、[Microsoft Rights Management SharePoint アプリケーション](https://technet.microsoft.com/dn451248)について詳細を確認してください。
+* Windows Phone および Mac コンピューターの場合は、[Microsoft Rights Management 共有アプリケーション](https://technet.microsoft.com/dn451248)について詳細を確認してください。

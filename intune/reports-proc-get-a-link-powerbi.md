@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0b3436a22543eb07cedb0780984766bcb7faa284
-ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
+ms.openlocfilehash: 56f80e7cede68364d1a98b58acab3e7dd2f51b73
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/14/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Power BI でデータ ウェアハウスに接続する
 
@@ -38,6 +38,8 @@ Microsoft Power BI で使用するファイルをダウンロードし、Intune 
 
 Power BI ファイルをダウンロードする方法と、Power BI で OData リンクを使用する方法については、次の手順を参照してください。
 
+[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
+
 ## <a name="install-power-bi"></a>Power BI をインストールする
 
 最新バージョンの Power BI Desktop をインストールします。 Power BI Desktop は [PowerBI.microsoft.com](https://powerbi.microsoft.com/en-us/desktop) からダウンロードできます。
@@ -54,7 +56,7 @@ Power BI ファイル (pbix) には、テナントの接続情報と、データ
 3.  **[Power BI ファイルのダウンロード]** をクリックします。 拡張子が pbix のファイルが、指定した場所にダウンロードされます。
 4.  Power BI でファイルを開きます。 *Intune データ ウェアハウス レポート*が読み込まれますが、テナント データの取得に少し時間がかかる可能性があります。
 5.  **[更新]** をクリックしてテナント データを読み込み、レポートを確認します。
-6.  Power BI が Azure Active Directory の資格情報で認証されていない場合は、資格情報の入力を求められます。 資格情報を選ぶときに、認証方法として **[仕事用アカウント]** を選びます。
+6.  Power BI が Azure Active Directory の資格情報で認証されていない場合は、資格情報の入力を求められます。 資格情報を選択するときに、認証方法として **[組織アカウント]** を選択します。
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>OData リンクを使用して Power BI でデータを読み込む
 
@@ -68,8 +70,8 @@ Azure AD に対してクライアントが認証されていると、OData URL �
 6. **[基本]** を選択します。
 7. [URL] ボックスに **[OData URL]** を入力するか貼り付けます。
 8. **[OK]**をクリックします。
-9. Power BI Desktop クライアントからテナントの Azure AD に対して認証されていない場合は、資格情報を入力します。  
-    1.  **[仕事用アカウント]** を選びます。  
+9. Power BI Desktop クライアントからテナントの Azure AD に対して認証されていない場合は、資格情報を入力します。 データにアクセスするには、OAuth 2.0 を使って Azure Active Directory (Azure AD) で認証を行う必要があります。  
+    1.  **[組織のアカウント]** を選択します。  
     2.  ユーザー名とパスワードを入力します。  
     3.  **[サインイン]** をクリックします。  
     4.  **[接続]**をクリックします。  

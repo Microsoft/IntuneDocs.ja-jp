@@ -15,18 +15,19 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c749b72949399dbe709b8ac5554cd919e2b09bc
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: b2f91005394d1bb586dcc07f309c89a8a1f1da7a
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Android for Work デバイスの制限設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>仕事用プロファイル設定
-- **[仕事用プロファイルと個人プロファイル間のデータ共有]** - この設定を使用して、仕事用プロファイル内のアプリが個人プロファイル内のアプリと共有できるかどうかを制御します。 この設定は、アプリケーション内の共有アクション (たとえば、Chrome ブラウザー アプリの **[Share...]\(共有...\)** オプション など) を制御し、コピー/貼り付けのクリップボード動作には適用されません。 [アプリ保護ポリシー設定](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)とは異なり、デバイスの制限設定は Azure Portal で管理され、管理対象アプリを分離するための Android for Work の仕事用プロファイル パーティションを使用します。 次の中から選択します。
+-   **[仕事用プロファイルと個人プロファイルの間でのコピー/貼り付け]** - 仕事用アプリと個人用アプリの間でのコピーと貼り付けを制御します。 ブロックを有効にするには、**[ブロック]** を選択します。 ブロックを無効にするには、**[未構成]** を選択します。
+- **[仕事用プロファイルと個人プロファイル間のデータ共有]** - この設定を使用して、仕事用プロファイル内のアプリが個人プロファイル内のアプリと共有できるかどうかを制御します。 この設定は、アプリケーション内の共有アクション (たとえば、Chrome ブラウザー アプリの **[Share...]\(共有...\)** オプション など) を制御し、コピー/貼り付けのクリップボード動作には適用されません。 [アプリ保護ポリシー設定](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)とは異なり、デバイスの制限設定は Intune ポータルで管理され、管理対象アプリを分離するための Android for Work の仕事用プロファイル パーティションを使用します。 次の中から選択します。
     - **[既定の共有制限]** - この設定はデバイスの既定の共有動作ですが、デバイスが実行している Android のバージョンによって異なります。 既定では、個人プロファイルから仕事用プロファイルへの共有が許可されます。 また既定では、仕事用プロファイルから個人プロファイルへの共有はブロックされます。 この設定により、仕事用プロファイルから個人プロファイルへのデータの共有が防止されます。 Google では、6.0 以降のバージョンを実行するデバイスで、個人プロファイルから仕事用プロファイルへのデータの共有をブロックする方法が提供されていません。   
     - **[仕事用プロファイル内のアプリで、個人プロファイルからの共有要求の処理を許可する]** - このオプションを使用して、個人プロファイルから仕事用プロファイルへの共有を許可する Android の組み込み機能を有効にすることができます。 これを有効にすると、個人プロファイル内アプリからの共有要求を仕事用プロファイル内アプリと共有できます。 この設定は、Android 6.0 よりも前のバージョンを実行するデバイスの既定の動作です。
     - **[Allow sharing across boundaries]\(境界を越えて共有できるようにする\)** - 仕事用プロファイルの境界を越えた双方向での共有を有効にします。 この設定を選択すると、仕事用プロファイル内のアプリと、個人プロファイル内の管理対象でないアプリとの間でデータが共有されます。 これにより、仕事用プロファイル内の管理対象アプリがデバイスの管理対象でない側のアプリと共有されるようになるため、この設定は慎重に行ってください。
