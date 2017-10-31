@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a2e6fd2381286aa652a04b5ed34ab21c57ed85f6
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 973408b292261b86f0a49bfaf4c786d6a6dacf28
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2017"></a>Microsoft Intune の初期エディション - 2017 年 10 月
 
@@ -151,19 +151,6 @@ Android Oreo のリリースに伴い、セキュリティで保護されたア�
 ### <a name="support-for-windows-10-edition-upgrade-policy------903672archived-1119689---"></a>Windows 10 エディション アップグレード ポリシーのサポート <!-- 903672(archived), 1119689 -->  
 Windows 10 デバイスを Windows 10 Education、Windows 10 Education N、Windows 10 Professional、Windows 10 Professional N、Windows 10 Professional Education、Windows 10 Professional Education N にアップグレードする Windows 10 エディション アップグレード ポリシーを作成できます。Windows 10 エディション アップグレードの詳細については、[Windows 10 エディションのアップグレードを構成する方法](edition-upgrade-configure-windows-10.md)に関するページを参照してください。
 
-
-### <a name="intune-mam-and-outlook-for-android-add-ins-----1450688---"></a>Android 用 Intune MAM および Outlook のアドイン  <!-- 1450688 -->
-数週間以内に、Office チームによって Android 版 Outlook のアドインが発表されます。 このアドインの機能セットは、Windows、iOS、Web、および Mac 版の Outlook で既にリリース済みのものです。 アドインは Exchange を介して管理されるため、Exchange 管理者がアドインへのアクセスを無効にしていない限り、ユーザーは Outlook と管理対象外のアドイン アプリケーションとの間でデータとメッセージをコピーおよび共有できるようになります。 
-
-アドインへのユーザーのアクセス許可を管理するには、Exchange 管理者と協力して、MAM データ保護ポリシーがアドインに必ず適用されるようにしてください。
-
-#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
-Exchange ポリシーが、既にアドインのサイド ローディングやアドインのインストールを防ぐように設定されている場合は、これ以上読む必要はありません。 MAM ポリシーは、想定どおりに適用されます。 ただし、Android 版 Outlook 内での切り取り、コピー、貼り付け操作を制限するように MAM 内のポリシーを設定してあり、Exchange でアドイン ポリシーを設定していない場合は、既定ではユーザーが Outlook にアドインをインストールできるということを覚えておく必要があります。 これらのアドインでは、メッセージ本文、件名、その他のメッセージ プロパティにアクセスできます。 Exchange 管理者に "自分の Marketplace アプリ" の役割と "自分のカスタム アプリ" の役割を削除してもらうと、ユーザーがアドインをインストールできないようにすることができます。
-
-Exchange の設定を変更すると、Windows 版、iOS 版、Web 版、Mac 版、モバイル版のすべての Outlook に適用されます。 
-
-#### <a name="what-do-i-need-to-do"></a>必要な作業
-現在の Exchange ポリシーを確認します。 IT 部門とヘルプ デスクのスタッフに知らせます。 特定の質問や懸念事項をサポート チームに問い合わせます。 
 
 
 

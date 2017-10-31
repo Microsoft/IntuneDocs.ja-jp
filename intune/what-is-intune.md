@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 nmanager: angrobe
-ms.date: 07/17/2017
+ms.date: 10/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: e3002d08506b68069d617c413a9c3801cf4326f8
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: d83b3d6609e5fd6839e17e46520e4ef3d4551568
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure Portal での Microsoft Intune の概要
 
@@ -44,16 +44,7 @@ Microsoft Intune は Azure Portal に含まれるようになり、これまで�
 - Azure Active Directory (AD) グループによってすべての Azure アプリケーション間での互換性を提供
 - 最新の Web ブラウザーの大部分に対応
 
-> [!IMPORTANT]
-> **新しいポータルがまだ表示されない場合**<br>
-> 既存のテナントは、新しいエクスペリエンスに移行中です。 お使いのテナントが移行される前に、Office メッセージ センターに通知が表示されます。
->
-> 2017 年 1 月より前に作成された Intune アカウントの場合は、Apple Enrollment ワークフローが Azure で利用可能になる前に一度移行する必要があります。 移行のスケジュールはまだ発表されていません。 既存のアカウントで Azure Portal にアクセスできない場合は、試用アカウントを作成することをお勧めします。
->
-> 潜在的な障壁の一覧については次のページをご覧ください: https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
-
-
-## <a name="before-you-start"></a>開始する前に
+## <a name="before-you-start"></a>アップグレードを開始する前に
 
 Azure Portal で Intune を使用するには、Intune の管理者およびテナント アカウントが必要です。 まだお持ちでない場合は、[アカウントにサインアップ](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)してください。
 
