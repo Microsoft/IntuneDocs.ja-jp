@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 66c528ce018b99a7263fb1e8395125f50d5670b3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b3050193c2f36f4092285686935a410fb6baf5b5
+ms.sourcegitcommit: 1416daed6803546445b6f280a86c663e6e00465a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Windows PC のコンピューターとしての管理とモバイル デバイスとしての管理の比較
 
@@ -42,6 +42,7 @@ ms.lasthandoff: 10/10/2017
 |**リモート アシスタンス** |TeamViewer<br>[Windows PC のリモート アシスタンス要求と提供](https://docs.microsoft.com/intune/deploy-use/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune)|利用不可 |
 |**アプリの展開** | ビジネス向け Microsoft ストアでは使用できません。<br>.exe、.appx、マルチファイル .msi のみ<br>[Intune ソフトウェア クライアントを実行している Windows PC にアプリを追加する](https://docs.microsoft.com/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)|Microsoft ストア アプリと基幹業務アプリに使用可能<br>[Windows ストア アプリを追加する方法](https://docs.microsoft.com/intune/store-apps-windows)<br>[Windows の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法](https://docs.microsoft.com/intune/lob-apps-windows)|
 |**アプリ保護**|利用不可|利用可能 <br>[アプリ保護ポリシーとは](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-protection-policy)|
+|**正常性構成証明書**|利用不可|利用可能|
 
 
 ### <a name="advantages-of-mdm-windows-pc-management"></a>MDM Windows PC 管理の利点
