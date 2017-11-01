@@ -5,7 +5,7 @@ keywords:
 author: oydang
 ms.author: oydang
 manager: angrobe
-ms.date: 01/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56d0d3e79e38b20cb00a528fc6b55ca9de6ba871
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 6ba1d1d9d0b1c21c364ef97f8340157a94ae996b
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM とアプリの保護に関してよく寄せられる質問
 
@@ -70,16 +70,16 @@ ms.lasthandoff: 10/11/2017
 
 **[Word、Excel、PowerPoint](https://products.office.com/business/office) のアプリを使用するための追加要件は何ですか。**
 
-  1. エンドユーザーに、Azure Active Directory アカウントにリンクされた [Office 365 Business または Office 365 Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) のライセンスが必要です。 サブスクリプションには、モバイル デバイスの Office アプリと [OneDrive for Business](https://onedrive.live.com/about/business/) のクラウド ストレージ アカウントが含まれている必要があります。 Office 365 のライセンスは、[Office ポータル](http://portal.office.com)でこちらの[手順](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)を実行して割り当てることができます。
+  1. エンドユーザーに、Azure Active Directory アカウントにリンクされた [Office 365 Business または Office 365 Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) のライセンスが必要です。 サブスクリプションには、モバイル デバイスの Office アプリが含まれている必要があります。また、[OneDrive for Business](https://onedrive.live.com/about/business/) のクラウド ストレージ アカウントを含めることも可能です。 Office 365 のライセンスは、[Office ポータル](http://portal.office.com)でこちらの[手順](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)を実行して割り当てることができます。
 
-  2. エンドユーザーは、[OneDrive](https://onedrive.live.com/about/) アプリをデバイスにインストールし、AAD アカウントを使用してサインインする必要があります。
+  2. エンド ユーザーは、[名前を付けて保存することを禁止] アプリケーション保護ポリシー設定の機能として、詳細保存を使用して管理対象の場所を構成しておく必要があります。 たとえば、管理対象の場所が OneDrive の場合、[OneDrive](https://onedrive.live.com/about/) アプリは、エンド ユーザーの Word アプリ、Excel アプリ、または PowerPoint アプリ内で構成される必要があります。
 
-  3. OneDrive アプリは、エンドユーザーに展開されているアプリ保護ポリシーの対象にする必要があります。
+  3. 管理対象の場所が OneDrive の場合、アプリは、エンド ユーザーに展開されているアプリの保護ポリシーの対象となる必要があります。
 
   >[!NOTE]
   > 現段階では、Office モバイル アプリは SharePoint Online のみをサポートし、オンプレミスの SharePoint はサポートされていません。
 
-**Office に OneDrive が必要なのはなぜですか。** Intune は、アプリ内のすべてのデータを "企業" データまたは "個人用" データのいずれかとしてマークします。 勤務地から送信されたデータは "企業" データと見なされます。 Office アプリについては、Intune では電子メール (Exchange) またはクラウド ストレージ (OneDrive for Business アカウントを使用した OneDrive アプリ) が勤務地と見なされます。
+**管理対象の場所 (OneDrive) が Office で必要なのは、なぜですか。** Intune は、アプリ内のすべてのデータを "企業" データまたは "個人用" データのいずれかとしてマークします。 勤務地から送信されたデータは "企業" データと見なされます。 Office アプリについては、Intune では電子メール (Exchange) またはクラウド ストレージ (OneDrive for Business アカウントを使用した OneDrive アプリ) が勤務地と見なされます。
 
 **Skype for Business を使用するための追加要件は何ですか。** [Skype for Business](https://products.office.com/skype-for-business/it-pros) のライセンス要件を参照してください。
   >[!NOTE]
@@ -102,6 +102,18 @@ ms.lasthandoff: 10/11/2017
   2. **PIN は安全ですか。** PIN は、アプリで適切なユーザーのみが組織のデータにアクセスできるようにするためのものです。 そのため、エンドユーザーが Intune アプリの PIN を設定またはリセットするには、職場または学校のアカウントを使用してサインインする必要があります。 この認証は Azure Active Directory によってセキュリティ トークンの交換を通じて処理され、Intune アプリ SDK に対して透過的ではありません。 セキュリティの観点からは、職場または学校のデータを保護する最も効果的な方法は暗号化です。 暗号化はアプリの PIN とは関係しませんが、独自のアプリ保護ポリシーと関係があります。
 
   3. **Intune ではブルート フォース攻撃から PIN はどのように保護されますか。** IT 管理者は、アプリの PIN ポリシーの一環として、アプリがロックされるまでにユーザーが PIN の認証を試みることのできる最大回数を設定できます。 試行回数に達すると、Intune アプリ SDK によってアプリ内の "企業" データがワイプされます。
+  
+**Intune アプリの PIN は、数値型とパスコード型間でどのように機能しますか。**
+MAM では現在、英数字と特殊文字による "パスコード" と呼ばれるアプリケーションレベルの PIN (iOS) が許可されていますが、 iOS 用 Intune APP SDK を統合するには、アプリケーション (WXP、Outlook、Managed Browser、Yammer) の参加が必要です。 これを行わないと、パスコードの設定が対象のアプリケーションに正しく適用されません。 アプリは、ローリング方式でこの統合に従うため、エンド ユーザーに対するパスコードと数値の PIN の間の動作が一時的に変更されており、重要な説明が必要となっています。 2017 年 10 月の Intune のリリースでは、この動作は次のようになっています。
+
+以下を満たすアプリ、つまり
+1. 発行元が同じであり、
+2. コンソールを通して対象となっているパスコード PIN があり、 
+3. この機能が搭載された SDK (バージョン 7.1.12 以降) を採用している場合は、そのパスコードをこれらのアプリ間で共有できます。 
+
+以下を満たすアプリ、つまり
+1. 発行元が同じであり、
+2. コンソールを通して対象となっている数値の PIN がある場合は、この数値の PIN をこれらのアプリ間で共有できます。 
 
 **暗号化についてはどうですか。** IT 管理者は、アプリ データの暗号化を必須にするアプリ保護ポリシーを展開できます。 ポリシーの一環として、IT 管理者はコンテンツがいつ暗号化されるかを指定することもできます。
 
