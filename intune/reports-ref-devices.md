@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6d8c4af1ff091fbb125ec8a06b3c46cc2424a0bd
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 1e3352335a5804575a39bbbf050ccb41b2674f2c
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="reference-for-devices-entities"></a>デバイス エンティティの参照
 
@@ -130,10 +130,23 @@ ms.lasthandoff: 10/20/2017
 
 **MdmStatuses** エンティティは、デバイスのコンプライアンス対応状態を示します。
 
-| プロパティ  | 説明 | 例 |
+| プロパティ  | 説明 |
+|---------|------------|
+| MdmStatusID |コンプライアンスの状態を示す一意識別子 |
+| MdmStatusKey |データ ウェアハウスにおけるコンプライアンス対応状態を示す一意識別子 - 代理キー | 
+| ComplianceStatus |デバイスのコンプライアンスの状態。以下の表のいずれかの値が表示されます | 
+
+
+## <a name="example"></a>例
+
+| MdmStatusID  | ComplianceStatus | 説明 |
 |---------|------------|--------|
-| MdmStatusName |MdmStatus 識別子 |0 - 不明 <br>1 - 準拠 <br>2 - 非準拠 |
-| MdmStatusKey |データ ウェアハウスにおけるコンプライアンス対応状態を示す一意識別子 - 代理キー | |
+| 0 |不明 |デバイスのコンプライアンスの状態は不明です。 |
+| 1 |準拠 |デバイスは準拠しています。 |
+| 2 |非準拠 |デバイスは準拠していません。 |
+| 3 |競合 |デバイスのコンプライアンスで競合が発生しました。 |
+| 4 |エラー |デバイスのコンプライアンスの状態の読み取りでエラーが発生しました。 |
+
 
 ## <a name="managementstates"></a>ManagementStates
 

@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 59b978fa9c9084c5a70c912ca6a9b1e6c364722c
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: 806e355acd84f5c70029f8612c444b077c0631e4
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="plan-communications"></a>通信手段の計画
 
@@ -52,6 +52,8 @@ Intune では、ユーザーのデバイス登録を推進するその他のテ�
 -   モバイル OS プラットフォームごとの登録手順について詳しくは、「[Microsoft Intune に関してエンド ユーザーを教育する方法](end-user-educate.md)」をご覧ください。
 
 -   [IT 管理者向けの Intune エンド ユーザー登録テンプレート](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a)は、Intune で Android、iOS、および Mac デバイスを登録する方法を説明するカスタマイズ可能な Word 文書です。
+
+-   「[FastTrack for EMS how to guides & emails (EMS 用 FastTrack: 方法ガイドとメール)](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c)」は、貴社のロゴでカスタマイズして、組織内での Intune と EMS の採用を促進できます。
 
 ## <a name="next-steps"></a>次のステップ
 

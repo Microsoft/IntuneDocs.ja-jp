@@ -1,11 +1,11 @@
 ---
 title: "ポータル サイト アプリにサインインする方法 | Microsoft Docs"
-description: 
+description: "複数のプラットフォームでポータル サイト アプリにサインインする方法を確認します。"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ca6d811d884b5405bdb4e5f096366c123d8e00d1
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: caea74745dc58a04c60e780727b318ebdb8ff235
+ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>ポータル サイト アプリにサインインするには <!--User Story 1132123-->
 
@@ -50,6 +50,16 @@ ms.lasthandoff: 09/28/2017
 4. ポータル サイトでログインが承認されたら、サインインし、会社のリソースにアクセスできるようになります。   
 
   ![認証プロセスが終了すると、ポータル サイト アプリはサインインを行い、読み込みバーが表示されます。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
+
+## <a name="signing-in-with-certificate-based-authentication"></a>証明書ベースの認証によるサインイン
+
+1.  デバイス上でポータル サイト アプリを開きます。
+
+2.  **職場または学校アカウント**を入力します。
+
+3.  **[Sign in with a certificate]\(証明書を使用してサインイン\)** をタップします。
+
+4.  **[続行]** をタップして証明書を使用します。
 
 ## <a name="signing-in-from-another-device"></a>別のデバイスからサインインする
 

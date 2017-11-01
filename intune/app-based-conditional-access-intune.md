@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9899f08cac650b1fea05370eb52327bc3c204a48
-ms.sourcegitcommit: 3bafbec5822bb5baa2d313f2bd19f35a67438beb
+ms.openlocfilehash: f3a3104c4381028cca69ba3e129f4a30287a8e32
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Intune でのアプリ ベースの条件付きアクセス
 
@@ -43,17 +43,7 @@ Microsoft Outlook アプリのみが Exchange Online にアクセスできるよ
 
 ## <a name="supported-apps"></a>サポートされているアプリ
 
-- **Exchange Online**:
-    - Android 用と iOS 用の Microsoft Outlook
-<br></br>
-- **SharePoint Online**
-    - iOS 用と Android 用の Microsoft Word
-    - iOS 用と Android 用の Microsoft Excel
-    - iOS 用と Android 用の Microsoft PowerPoint
-    - iOS 用と Android 用の Microsoft OneDrive for Business
-    - iOS 用の Microsoft OneNote
-<br></br>
-- **Microsoft Teams**
+アプリ ベースの条件付きアクセスをサポートしているアプリのリストについては、「[Azure Active Directory の条件付きアクセスに関するテクニカル リファレンス」のドキュメント](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference)をご覧ください。
 
 アプリ ベースの条件付きアクセスは[基幹業務 (LOB) アプリもサポート](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication)していますが、LOB アプリが [Office 365 の先進認証](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)を使用している必要があります。
 

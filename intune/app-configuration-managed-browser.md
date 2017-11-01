@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e536a31443a7140785a1f30af6fe676451e6f62c
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 99b8b50dbbb2dc2e3d7e8cd5af2f95fa2bb3b861
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune で Managed Browser ポリシーを使ってインターネット アクセスを管理する
 
@@ -147,7 +147,7 @@ Managed Browser アプリの構成を作成する手順に従い、以下のキ�
 |||
 |-|-|
 |キー|値|
-|次の中から選択します。<br><br>- 許可された URL を指定する場合 (ここで指定した URL のみが許可され、他のサイトにはアクセスできない): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- ブロックされた URL を指定する場合 (その他のすべてのサイトにアクセスできる): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|キーに対応する値は URL のリストです。 パイプ文字 **&#124;** によって区切られた、1 つの値として許可またはブロックする必要がある、すべての URL を入力します。<br><br>例:<br><br>-**URL1&#124;URL2&#124;URL3**<br>-**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
+|次の中から選択します。<br><br>- 許可された URL を指定する場合 (ここで指定した URL のみが許可され、他のサイトにはアクセスできない): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- ブロックされた URL を指定する場合 (その他のすべてのサイトにアクセスできる): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|キーに対応する値は URL のリストです。 パイプ文字 **&#124;** によって区切られた、1 つの値として許可またはブロックする必要がある、すべての URL を入力します。<br><br>例:<br><br>**URL1&#124;URL2&#124;URL3**<br>**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
 
 >[!IMPORTANT]
 >両方のキーを指定しないでください。 両方のキーが同じユーザーを対象とする場合、許可のキーが最も制限の厳しいオプションとして使用されます。
