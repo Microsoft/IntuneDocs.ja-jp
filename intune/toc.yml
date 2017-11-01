@@ -240,10 +240,15 @@
           href: apps-deploy.md
         - name: アプリの監視
           href: apps-monitor.md
-        - name: iOS アプリの構成プロファイル
-          href: app-configuration-policies-use-ios.md
-        - name: Android アプリの構成プロファイル
-          href: app-configuration-policies-use-android.md
+        - name: アプリの構成ポリシー
+          href: app-configuration-policies-overview.md
+          items:
+            - name: iOS 管理対象デバイス
+              href: app-configuration-policies-use-ios.md
+            - name: Android 管理対象デバイス
+              href: app-configuration-policies-use-android.md
+            - name: Managed apps
+              href: app-configuration-policies-managed-app.md
         - name: iOS アプリ プロビジョニング プロファイルを使用する
           href: app-provisioning-profile-ios.md
         - name: 選択的にアプリをワイプする
