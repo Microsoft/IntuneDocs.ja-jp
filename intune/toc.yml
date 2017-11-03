@@ -545,6 +545,8 @@
     - name: Intune データ ウェアハウスを使用する
       href: reports-nav-create-intune-reports.md
       items:
+        - name: データ ウェアハウスの変更ログ
+          href: reports-changelog.md
         - name: Power BI でデータ ウェアハウスに接続する
           href: reports-proc-get-a-link-powerbi.md
         - name: Power BI で OData フィードからレポートを作成する
@@ -602,18 +604,20 @@
         - name: データ ウェアハウス データ モデル
           href: reports-ref-data-model.md
           items:
-            - name: Date エンティティのリファレンス
-              href: reports-ref-date.md
-            - name: User エンティティのリファレンス
-              href: reports-ref-user.md
-            - name: モバイル アプリ管理 (MAM) エンティティのリファレンス
-              href: reports-ref-mobile-app-management.md
-            - name: デバイス エンティティの参照
-              href: reports-ref-devices.md
             - name: アプリケーション エンティティのリファレンス
               href: reports-ref-application.md
-            - name: ユーザー デバイスの関連付けエンティティのリファレンス
-              href: reports-ref-userdeviceassociations.md
+            - name: 日付エンティティのリファレンス
+              href: reports-ref-date.md
+            - name: デバイス エンティティの参照
+              href: reports-ref-devices.md
+            - name: モバイル アプリ管理 (MAM) エンティティのリファレンス
+              href: reports-ref-mobile-app-management.md
+            - name: ポリシー エンティティのリファレンス
+              href: reports-ref-policy.md
+            - name: ユーザーデバイスの関連付けの参照
+              href: reports-ref-user-device.md
+            - name: User エンティティのリファレンス
+              href: reports-ref-user.md
     - name: Windows アプリをサイドロードする
       href: intune-graph-apis.md
       items:
