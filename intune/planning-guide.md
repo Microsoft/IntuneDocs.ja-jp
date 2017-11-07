@@ -2,10 +2,10 @@
 title: "Intune の計画と設計の概要"
 description: "この記事では、Intune の計画、設計および実装に関するすべてのセクションの概要を示します。 目標、ユース ケースのシナリオと要件の決定、ロールアウト計画とコミュニケーション計画、サポート、テスト、検証の計画の作成に役立つツールです。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 06/14/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ceee7a766fa8f60b91d3a84b6577223e1bfd652e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 754c38a33fa6e08a6022c726f6e1eb8088b82e94
+ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Intune の展開計画、設計および実装ガイド
 

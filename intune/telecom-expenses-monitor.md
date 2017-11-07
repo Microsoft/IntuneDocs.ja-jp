@@ -3,10 +3,10 @@ title: "通信費管理サービスをセットアップする"
 titleSuffix: Azure portal
 description: "Saaswedo 通信費管理サービスを Intune と統合するように構成します。\""
 keywords: Saaswedo
-author: nathbarn
-ms.author: nathbarn
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 02/16/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a868ce81e9d67e7c959e32eaf6d8c455a19131be
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: e3f97cebe411b191f2bf0b13fb756c705613c46a
+ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune で通信費管理サービスをセットアップする
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -108,7 +108,7 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
 1. Azure Portal の **[Intune]** ブレードで、**[Mobile Apps]** を選択します。
 
-2. **[Mobile Apps]** ブレードで、**[管理] ** >  **[アプリ]** を選択します。
+2. **[Mobile Apps]** ブレードで、**[管理]**  >  **[アプリ]** を選択します。
 
 3. **[追加]** を選択してアプリを追加します。
 

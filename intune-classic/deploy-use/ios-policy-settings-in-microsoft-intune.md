@@ -5,7 +5,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9a6792de4556cae9d6429efafa9e6a8351f5f5a6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 58be7ad24da7e4eadc1c67016979396114799bd8
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Microsoft Intune の iOS ポリシー設定
 
@@ -216,7 +216,7 @@ Microsoft Intune の **iOS 全般構成ポリシー**を使用して、次の設
 2.  準拠しているアプリ、準拠していないアプリ、またはその両方を確認するデバイス グループを選択して、**[レポートの表示]** を選択します。
 
 #### <a name="how-to-specify-urls-to-app-stores"></a>アプリ ストアの URL を指定する方法
-準拠アプリと非準拠アプリの一覧、または [ **デバイスがキオスク モードのときに実行を許可する管理対象アプリを選択します** ] オプション (iOS のみ) でアプリの URL を指定するには、次の形式を使用します。
+準拠アプリと非準拠アプリの一覧、または **[ デバイスがキオスク モードのときに実行を許可する管理対象アプリを選択します ]** オプション (iOS のみ) でアプリの URL を指定するには、次の形式を使用します。
 
 1. 検索エンジンを使用して、iTunes App Store で使用するアプリを検索し、アプリのページを開きます。
 
@@ -225,7 +225,7 @@ Microsoft Intune の **iOS 全般構成ポリシー**を使用して、次の設
 **例:** **Microsoft Word for iPad** を検索します。 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8** という URL を使用します。
 
 > [!NOTE]
-> iTunes ソフトウェアを使用してアプリを検索し、[ **リンクのコピー** ] コマンドを使用してアプリの URL を入手することもできます。
+> iTunes ソフトウェアを使用してアプリを検索し、**[ リンクのコピー ]** コマンドを使用してアプリの URL を入手することもできます。
 
 ### <a name="enrollment-settings"></a>登録設定
 すべての設定は、iOS 8.0 以降に適用されます。
@@ -340,7 +340,7 @@ iOS 9.3 以降を実行する管理対象デバイスで以下を制御するに
 ,com.apple.mobileslideshow,Photos,Apple
 ,com.apple.podcasts,Podcasts,Apple
 ,com.apple.reminders,Reminders,Apple
-,com.apple.mobilesafariSafari,Apple
+,com.apple.MobileSafari,Safari,Apple
 ,com.apple.Preferences,Settings,Apple
 ,com.apple.stocks,Stocks,Apple
 ,com.apple.tips,Tips,Apple
