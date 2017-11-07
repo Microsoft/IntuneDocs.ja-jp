@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/3/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: df96d525efc49cb1916812a547daababbfeea051
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: 8c07125901709d4d7baf3339e4dd09cb5620e8d1
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Android アプリ保護ポリシー設定
 このトピックで説明するポリシーの設定は、Azure Portal の **[設定]** ブレードでアプリ保護ポリシー用に[構成](app-protection-policies.md)することができます。
@@ -90,4 +90,3 @@ ms.lasthandoff: 10/26/2017
 | **Android オペレーティング システムの最小要件 (警告のみ)** | このアプリを使用するための最小 Android オペレーティング システムを要求するには **[はい]** を選択します。 デバイスの Android バージョンが要件を満たさない場合、通知が表示されます。 この通知は閉じることができます。 | いいえ |
 | **アプリの最小バージョン要件** | アプリを使用するための最小アプリ バージョンを要求するには **[はい]** を選択します。 デバイスのアプリ バージョンが要件を満たさない場合、アクセスがブロックされます。<br><br>対象にするアプリを選択するとき、多くの場合、アプリには別個のバージョン管理方式があることにご注意ください。<br><br> | いいえ | 
 | **アプリの最小バージョン要件 (警告のみ)** | このアプリを使用するための最小アプリ バージョンを推奨するには **[はい]** を選択します。 デバイスのアプリ バージョンが要件を満たさない場合、通知が表示されます。 この通知は閉じることができます。<br><br>対象にするアプリを選択するとき、多くの場合、アプリには別個のバージョン管理方式があることにご注意ください。<br><br> | いいえ | 
-
