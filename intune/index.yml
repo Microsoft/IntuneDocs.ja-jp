@@ -9,7 +9,7 @@ metadata:
   author: arob98
   ms.author: angrobe
   manager: angrobe
-  ms.date: 10/07/2017
+  ms.date: 10/31/2017
   ms.topic: article
   ms.devlang: na
   ms.service: microsoft-intune
@@ -64,16 +64,16 @@ sections:
             title: Intune の高レベルなアーキテクチャを確認する
             image:
               src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-          - href: reports-nav-create-intune-reports.md
-            title: Intune データ ウェアハウスでレポートを作成する (プレビュー)
+          - href: enrollment-autopilot.md
+            title: Microsoft Intune で Windows AutoPilot Deployment プログラムをサポート
             image:
               src: 'https://docs.microsoft.com/media/common/i_generic-database.svg'
-          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/08/22/pfx-certificates-issued-using-the-intune-certificate-connector-fix-your-intune-migration-configuration-issues/'
-            title: '[ブログ] Intune Certificate Connector を使用しての PFX 証明書の発行'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/10/11/upcoming-security-enhancements-in-the-intune-service-your-action-is-required/'
+            title: '[ブログ] Intune サービスでのセキュリティ強化 '
             image:
               src: 'https://docs.microsoft.com/media/common/i_blog.svg'
-          - href: 'https://blogs.technet.microsoft.com/intunesupport/2017/09/19/support-tip-setting-up-communication-between-mam-managed-and-mdm-managed-apps/'
-            title: '[ブログ] MAM で管理されたアプリと MDM で管理されたアプリ間の通信の設定'
+          - href: 'https://cloudblogs.microsoft.com/enterprisemobility/2017/10/26/intunes-new-troubleshooting-portal-makes-diagnosing-and-resolving-end-user-issues-easier/'
+            title: '[ブログ] エンド ユーザーの問題を簡単に診断し、解決するためのトラブルシューティング ポータル'
             image:
               src: 'https://docs.microsoft.com/media/common/i_blog.svg'
   - title: ビデオ
