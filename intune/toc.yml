@@ -610,6 +610,8 @@
               href: reports-ref-date.md
             - name: デバイス エンティティの参照
               href: reports-ref-devices.md
+            - name: Intune の管理拡張のリファレンス
+              href: reports-ref-intunemanagementextension.md
             - name: モバイル アプリ管理 (MAM) エンティティのリファレンス
               href: reports-ref-mobile-app-management.md
             - name: ポリシー エンティティのリファレンス
