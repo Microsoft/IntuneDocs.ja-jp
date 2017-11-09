@@ -8,7 +8,7 @@
 
 ## [ポータル サイトにサインインする方法](sign-in-to-the-company-portal.md)
 
-## [Android デバイスを Intune で使用する](using-your-android-device-with-intune.md)
+## [Android デバイスを使用する](using-your-android-device-with-intune.md)
 ### [Android デバイスの登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 ### [デバイスの登録](enroll-your-device-in-Intune-android.md)
 #### [Android for Work でデバイスを登録する](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
@@ -57,13 +57,10 @@
 ##### [SandBlast Mobile Protect を使用する](you-need-to-resolve-a-threat-found-by-checkpoint-android.md)
 ##### [Zimperium zIPS を使用する](you-need-to-resolve-a-threat-found-by-zips-android.md)
 
-## [iOS デバイスまたは macOS デバイスを Intune で使用する](using-your-iOS-or-macOS-device-with-intune.md)
+## [iOS デバイスを使用する](using-your-iOS-device-with-intune.md)
 ### [iOS デバイスの登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [ポータル サイトをインストールしてサインインする](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [iOS デバイスを登録する](enroll-your-device-in-intune-ios.md)
-### [macOS デバイスを登録する](enroll-your-device-in-intune-macos.md)
-### [ポータル サイトで macOS デバイスを登録する](enroll-your-device-in-intune-macos-cp.md)
-### [このデバイスでの若干の相違点](device-little-different-jamf.md)
 
 ### [デバイスで管理対象アプリを使用する](use-managed-apps-on-your-device-ios.md)
 ### [パスコードを設定または変更する](set-or-change-your-passcode-ios.md)
@@ -96,6 +93,11 @@
 ##### [SandBlast Mobile Protect を使用する](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 ##### [Zimperium zIPS を使用する](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
+## [macOS デバイスを使用する](using-your-macos-device-with-intune.md)
+### [macOS デバイスの登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+### [macOS デバイスを登録する](enroll-your-device-in-intune-macos-cp.md)
+### [レガシ macOS デバイスを登録する](enroll-your-device-in-intune-macos-legacy.md)
+### [このデバイスでの若干の相違点](device-little-different-jamf.md)
 
 ## [Windows デバイスを使用する](using-your-windows-device-with-intune.md)
 ### [Windows 10 デバイスの登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
@@ -123,6 +125,9 @@
 #### [デバイスにはマルウェア対策ソフトウェアが必要](your-device-needs-antimalware-software.md)
 #### [セキュア ブートを有効にする](you-need-to-enable-secure-boot-windows.md)
 #### [コードの整合性を有効にする](you-need-to-enable-code-integrity.md)
-
+#### [ファイアウォールを有効にする](you-need-to-enable-defender-firewall-windows.md)
+#### [UAC を有効にする](you-need-to-enable-uac-windows.md)
+#### [Windows を更新する](you-need-to-update-os-build-version-windows.md)
+#### [Windows Defender を有効にする](turn-on-defender-windows.md) 
 
 ## [Intune ポータル サイト Web サイトの使用](using-the-intune-company-portal-website.md)
