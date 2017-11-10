@@ -1,4 +1,4 @@
-- name: 概要
+- name: はじめに
   href: introduction-intune.md
   expanded: true
   items:
@@ -77,7 +77,7 @@
           href: planning-guide-onboarding.md
         - name: テストと検証
           href: planning-guide-test-validation.md
-        - name: その他のリソース
+        - name: その他の資料
           href: planning-guide-resources.md
     - name: シナリオの実装ガイド
       items:
@@ -114,7 +114,7 @@
               href: migration-guide-drive-adoption.md
             - name: 標準的な移行サイクル
               href: migration-guide-cycle.md
-- name: 方法
+- name: 操作手順
   items:
     - name: Intune をセットアップする
       href: setup-steps.md
@@ -142,7 +142,7 @@
         - name: 登録オプション
           href: enrollment-options.md
           items:
-            - name: Intune の登録および会社アクセスに関する使用条件
+            - name: Terms and conditions
               href: terms-and-conditions-create.md
             - name: 制限
               href: enrollment-restrictions-set.md
@@ -164,6 +164,8 @@
               href: windows-bulk-enroll.md
             - name: Windows AutoPilot Deployment プログラム
               href: enrollment-autopilot.md
+            - name: 登録ステータス画面
+              href: windows-enrollment-status.md
         - name: Android の登録を設定する
           href: android-enroll.md
         - name: iOS の登録の設定
@@ -247,7 +249,7 @@
               href: app-configuration-policies-use-ios.md
             - name: Android 管理対象デバイス
               href: app-configuration-policies-use-android.md
-            - name: Managed apps
+            - name: 管理対象のアプリ
               href: app-configuration-policies-managed-app.md
         - name: iOS アプリ プロビジョニング プロファイルを使用する
           href: app-provisioning-profile-ios.md
@@ -365,6 +367,8 @@
               href: certficates-pfx-configure.md
         - name: Windows Information Protection 設定を構成する
           href: windows-information-protection-configure.md
+        - name: PowerShell スクリプトの管理
+          href: intune-management-extension.md
         - name: 通信費の監視
           href: telecom-expenses-monitor.md
         - name: プロファイルの割り当て
@@ -569,7 +573,7 @@
           href: custom-settings-ios.md
         - name: macOS
           href: custom-settings-macos.md
-        - name: Windows Phone 8。1
+        - name: Windows Phone 8.1
           href: custom-settings-windows-phone-8-1.md
         - name: Windows 10
           href: custom-settings-windows-10.md
