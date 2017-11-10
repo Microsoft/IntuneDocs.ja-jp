@@ -1,12 +1,12 @@
 ---
-title: "iOS 用 Intune アプリ構成ポリシーを使用する方法"
+title: "管理対象の iOS デバイス用アプリ構成ポリシーを追加する | Microsoft Docs"
 titlesuffix: Azure portal
 description: "アプリ構成ポリシーを使用して、実行時に構成データを iOS アプリに提供する方法について説明します。"
 keywords: 
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/26/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,31 +15,17 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc42f3cafa83b5f7ba053d03dbd066b725bb1fee
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: d293ff6001ef937c7da0055e6642aa5a1226bd2e
+ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/01/2017
 ---
-# <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>iOS 用 Microsoft Intune アプリ構成ポリシーを使用する方法
+# <a name="add-app-configuration-policies-for-managed-ios-devices"></a>管理対象の iOS デバイス用アプリ構成ポリシーを追加する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが iOS アプリを実行するときに使用される設定を指定できます。 たとえば、アプリは次の内容を指定することをユーザーに要求することがあります。
-
--   カスタム ポート番号。
-
--   言語設定。
-
--   セキュリティ設定。
-
--   会社のロゴなどのブランドの設定。
-
-ユーザーがこれらの設定を誤って入力すると、ヘルプ デスクの負荷が増加し、新しいアプリの採用が遅くなる可能性もあります。
-
-アプリ構成ポリシーを使用すると、ユーザーがアプリを実行する前にこれらの設定をポリシー内のユーザーに割り当てることができるため、上記の問題を排除するのに役立ちます。 設定が自動的に指定されるため、ユーザーの操作は不要です。 アプリは、アプリ構成の使用をサポートするように作成されている必要があります。 詳細については、アプリのベンダーに問い合わせてください。
-
-これらのポリシーをユーザーとデバイスに直接割り当てないでください。 代わりに、ポリシーをアプリに関連付け、そのアプリを割り当てます。 ポリシー設定は、アプリがポリシーを確認する際に (通常は初めて実行したときに) 必ず使用されます。
+Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが iOS アプリを実行するときに設定を指定できます。 これらのポリシーをユーザーとデバイスに直接割り当てないでください。 代わりに、ポリシーをアプリに関連付け、そのアプリを割り当てます。 ポリシー設定は、アプリがポリシーをチェックするとき (通常はアプリの初回実行時) に使用されます。
 
 > [!TIP]
 > この種類のポリシーは現在、iOS 8.0 以降を実行しているデバイスでのみ有効です。 次の種類のアプリ インストールをサポートします。
@@ -50,67 +36,55 @@ Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが
 > アプリのインストールの種類の詳細については、「[How to add an app to Microsoft Intune (Microsoft Intune にアプリを追加する方法)](apps-add.md)」を参照してください。
 
 ## <a name="create-an-app-configuration-policy"></a>アプリ構成ポリシーを作成する
-1.  Azure ポータルにサインインします。
-2.  **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3.  **[Intune]** ブレードで、**[モバイル アプリ]** を選択します。
-4.  **[モバイル アプリ]** ワークロードで、**[管理]** > **[アプリの構成ポリシー]** の順に選びます。
-5.  ポリシーの一覧ブレードで、**[追加]** を選択します。
-6.  **[構成ポリシーの追加]** ブレードで、アプリ構成ポリシーの **[名前]** と **[説明]** (省略可能) を入力します。
-7.  **[デバイス登録の種類]** には、次のいずれかを選択します。
-    - **[Intune に登録済み]** - Intune によって管理されるアプリの場合。
-    - **[Intune に未登録]** - Intune によって管理されないアプリ、または別のソリューションによって管理されるアプリの場合。
-8.  **[プラットフォーム]** には、**[iOS]** を選択します (Intune に登録されているデバイスのみ)
-9.  **[関連アプリ]** を選択し、**[関連アプリ]** ブレードで、構成を適用する管理対象アプリを選択します。
-10. **[構成ポリシーの追加]** ブレードで、**[構成設定]** を選択します
-11. **[構成設定]** ブレードで、構成プロファイルを構成する XML 値を指定する方法を選択します。
-    - **[XML データを入力する]** (Intune に登録されているデバイスのみ) - 必要なアプリ構成設定を含む XML プロパティの一覧を入力するか貼り付けます。 XML プロパティ リストの形式は、構成するアプリによって異なります。 使用する形式の詳細については、アプリの供給元にお問い合わせください。
-Intune によって、入力した XML が有効な形式であるかどうかがチェックされます。 XML プロパティ リストが関連付けられているアプリで動作するかどうかはチェックされません。
-XML プロパティ リストの詳細については、iOS 開発者ライブラリの [XML プロパティ リスト](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html)に関するページを参照してください。
-    - **[構成デザイナーを使用する]** (デバイスが Intune に登録されているどうかを問わない) - XML キーと値のペアをポータルで直接指定できます。
-11. 完了したら、**[構成ポリシーの追加]** ブレードに戻り、**[作成]** をクリックします。
 
-ポリシーが作成され、ポリシーの一覧ブレードに表示されます。
+1. Azure ポータルにサインインします。
+2. **[その他のサービス]** > **[監視 + 管理]** + **[Intune]** の順に選択します。
+3. **[モバイル アプリ]** ワークロードを選択します。
+4. **[管理]** グループの **[アプリ構成ポリシー]** を選択し、**[追加]** をクリックします。
+5. 次の詳細を設定します。
+    - **名前**  
+      Azure Portal に表示されるプロファイルの名前。
+    - **説明**  
+      Azure Portal に表示されるプロファイルの説明。
+    - **デバイス登録の種類**  
+      **[管理対象デバイス]** を選択します。
+6. **[プラットフォーム]** に **[iOS]** を選択します。
+7.  **[関連アプリ]** を選択し、**[関連アプリ]** ブレードで、構成を適用する管理対象アプリを選択します。
+8.  **[構成ポリシーの追加]** ブレードで、**[構成設定]** を選択します
+9. **[構成設定の形式]** を選択します。 次のいずれかを選択します。
+    - **[[構成デザイナーを使用する]](#Use-the-configuration-designer)**
+    - **[[XML データを入力する]](#enter-xml-data)**
+10. **[OK]** をクリックし、**[追加]** をクリックします。
 
+## <a name="use-configuration-designer"></a>構成デザイナーの使用
 
+Intune に登録されているデバイスかどうかにかかわらず、アプリには構成デザイナーを使用できます。 デザイナーを使用すると、特定の構成キーと値を構成できます。 各値のデータ型も指定する必要があります。 設定は、アプリのインストール時に自動で行われます。
 
->[!Note]
->[Intune App SDK](https://docs.microsoft.com/intune/app-sdk-ios) を使用して、デバイスが Intune に登録されているかを問わず、Intune アプリ保護ポリシーおよびアプリ構成ポリシーで管理される基幹業務アプリを準備することができます。 たとえば、アプリ構成ポリシーを使用して [Intune Managed Browser](app-configuration-managed-browser.md) で許可される URL とブロックされる URL を構成することができます。 このような URL はアプリとポリシーが互換した時点で、ポリシーを使用して構成できるようになります。
+### <a name="add-a-setting"></a>設定を追加する
 
+1. 構成の各キーと値について、以下を設定します。 <ul><li>**構成キー**<br>特定の設定構成を一意に識別するために使用されます。</li><li>**値の型**<br>構成値のデータ型。 整数型、実数型、文字列型、またはブール型があります。</li><li>**構成値**<br>構成の値。</li></ul>
+2. **[OK]** をクリックして構成設定を設定します。
 
-割り当てたアプリをデバイスで実行すると、アプリ構成ポリシーで構成した設定を使用して実行されます。
-1 つまたは複数のアプリ構成ポリシーが競合する場合に発生する事象については、構成しているアプリのドキュメントを参照してください。
+### <a name="delete-a-setting"></a>設定の削除
 
->[!Tip]
->これらのタスクは Graph API でも実行することができます。 詳細については、[Graph API のリファレンスの MAM を対象とした構成](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create)に関するページを参照してください。
-
-
-## <a name="information-about-the-xml-file-format"></a>XML ファイル形式に関する情報
-
-Intune は、プロパティ リストで次のデータ型をサポートします。
-
-- &lt;integer&gt;
-- &lt;real&gt;
-- &lt;string&gt;
-- &lt;array&gt;
-- &lt;dict&gt;
-- &lt;true /&gt; または &lt;false /&gt;
-
-データ型の詳細については、iOS 開発者ライブラリの [プロパティ リスト](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) に関するページを参照してください。
-
-また、Intune は次のトークンの種類をプロパティ リストでサポートしています。
-- \{\{userprincipalname\}\} - (例: **John@contoso.com**)
-- \{\{mail\}\} - (例: **John@contoso.com**)
-- \{\{partialupn\}\} - (例: **John**)
-- \{\{accountid\}\} - (例: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-- \{\{deviceid\}\} - (例: **b9841cd9-9843-405f-be28-b2265c59ef97**)
-- \{\{userid\}\} - (例: **3ec2c00f-b125-4519-acf0-302ac3761822**)
-- \{\{username\}\} - (例: **John Doe**)
-- \{\{serialnumber\}\} - (例: **F4KN99ZUG5V2**) iOS デバイスの場合
-- \{\{serialnumberlast4digits\}\} - (例: **G5V2**) iOS デバイスの場合
+1. 設定の横にある省略記号 ([...]) をクリックします。
+2. **[削除]** を選択します。
 
 \{\{ 文字と \}\} 文字を使用できるのはトークンの種類のみであり、他の目的には使用しないでください。
 
-## <a name="example-format-for-an-app-configuration-xml-file"></a>アプリ構成 XML ファイルの形式の例
+## <a name="enter-xml-data"></a>XML データを入力する
+
+Intune に登録されているデバイスのアプリ構成設定を含む XML プロパティの一覧を入力または貼り付けることができます。 XML プロパティ リストの形式は、構成するアプリによって異なります。 使用する形式の詳細については、アプリの供給元にお問い合わせください。
+
+Intune では XML 形式が検証されます。 ただし、Intune では XML プロパティ リストが対象アプリで動作するかどうかは確認されません。
+XML プロパティ リストの詳細については、[XML プロパティ リスト]に関するページを参照してください。
+
+XML プロパティ リストの詳細情報:
+
+  -  「[Microsoft Intune でのモバイル アプリ構成ポリシーを使用した iOS アプリの構成](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)」を参照してください。
+  -  iOS Developer Library の「[Understand XML Plist](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html)」(XML Plist の概要) を参照してください。
+
+### <a name="example-format-for-an-app-configuration-xml-file"></a>アプリ構成 XML ファイルの形式の例
 
 アプリ構成ファイルを作成する場合、この形式を使用して次の値を 1 つ以上指定できます。
 
@@ -137,8 +111,30 @@ Intune は、プロパティ リストで次のデータ型をサポートしま
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
 </dict>
-
 ```
+### <a name="supported-xml-plist-data-types"></a>サポートされている XML PList データ型
+
+Intune は、プロパティ リストで次のデータ型をサポートします。
+
+- &lt;integer&gt;
+- &lt;real&gt;
+- &lt;string&gt;
+- &lt;array&gt;
+- &lt;dict&gt;
+- &lt;true /&gt; または &lt;false /&gt;
+
+### <a name="tokens-used-in-the-property-list"></a>プロパティ リストで使用されるトークン
+
+また、Intune は次のトークンの種類をプロパティ リストでサポートしています。
+- \{\{userprincipalname\}\} - (例: **John@contoso.com**)
+- \{\{mail\}\} - (例: **John@contoso.com**)
+- \{\{partialupn\}\} - (例: **John**)
+- \{\{accountid\}\} - (例: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
+- \{\{deviceid\}\} - (例: **b9841cd9-9843-405f-be28-b2265c59ef97**)
+- \{\{userid\}\} - (例: **3ec2c00f-b125-4519-acf0-302ac3761822**)
+- \{\{username\}\} - (例: **John Doe**)
+- \{\{serialnumber\}\} - (例: **F4KN99ZUG5V2**) iOS デバイスの場合
+- \{\{serialnumberlast4digits\}\} - (例: **G5V2**) iOS デバイスの場合
 
 ## <a name="next-steps"></a>次のステップ
 
