@@ -1,4 +1,4 @@
-- name: はじめに
+- name: 概要
   href: introduction-intune.md
   expanded: true
   items:
@@ -77,7 +77,7 @@
           href: planning-guide-onboarding.md
         - name: テストと検証
           href: planning-guide-test-validation.md
-        - name: その他の資料
+        - name: その他のリソース
           href: planning-guide-resources.md
     - name: シナリオの実装ガイド
       items:
@@ -114,7 +114,7 @@
               href: migration-guide-drive-adoption.md
             - name: 標準的な移行サイクル
               href: migration-guide-cycle.md
-- name: 操作手順
+- name: 方法
   items:
     - name: Intune をセットアップする
       href: setup-steps.md
@@ -142,7 +142,7 @@
         - name: 登録オプション
           href: enrollment-options.md
           items:
-            - name: Terms and conditions
+            - name: Intune の登録および会社アクセスに関する使用条件
               href: terms-and-conditions-create.md
             - name: 制限
               href: enrollment-restrictions-set.md
@@ -249,7 +249,7 @@
               href: app-configuration-policies-use-ios.md
             - name: Android 管理対象デバイス
               href: app-configuration-policies-use-android.md
-            - name: 管理対象のアプリ
+            - name: Managed apps
               href: app-configuration-policies-managed-app.md
         - name: iOS アプリ プロビジョニング プロファイルを使用する
           href: app-provisioning-profile-ios.md
@@ -560,11 +560,11 @@
     - name: カスタム デバイス設定の構成
       href: custom-settings-configure.md
       items:
+        - name: 事前共有キーを使用する Wi-Fi プロファイル
+          href: wi-fi-profile-shared-key.md
         - name: Android
           href: custom-settings-android.md
           items:
-            - name: 事前共有キーを使用する Wi-Fi プロファイル
-              href: wi-fi-profile-shared-key.md
             - name: アプリごとの VPN プロファイル
               href: android-pulse-secure-per-app-vpn.md
             - name: Samsung KNOX Standard 用アプリの許可/禁止
@@ -573,7 +573,7 @@
           href: custom-settings-ios.md
         - name: macOS
           href: custom-settings-macos.md
-        - name: Windows Phone 8.1
+        - name: Windows Phone 8。1
           href: custom-settings-windows-phone-8-1.md
         - name: Windows 10
           href: custom-settings-windows-10.md
