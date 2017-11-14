@@ -5,7 +5,7 @@ description: "Windows 10 デバイスで実行されている Intune で PowerSh
 keywords: 
 author: dougeby
 manager: angrobe
-ms.date: 10/17/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b621edad5523f3c77191fb2ef8ca2ea67318dec0
-ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
+ms.openlocfilehash: 237d6d090d0aae7f9a0853839b72d55618f4607e
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 デバイスの Intune で PowerShell スクリプトを管理する
 Intune 管理拡張機能を使用すると、Windows 10 デバイスで実行されている Intune で PowerShell スクリプトをアップロードできます。 この管理拡張機能は Windows 10 モバイル デバイス管理 (MDM) 機能を補完するもので、最新の管理に簡単に移行できます。
