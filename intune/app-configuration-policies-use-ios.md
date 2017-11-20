@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d293ff6001ef937c7da0055e6642aa5a1226bd2e
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: 2226477d40f2bb70dd047ed58e8789fd9bee4ecb
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>管理対象の iOS デバイス用アプリ構成ポリシーを追加する
 
@@ -40,49 +40,54 @@ Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** + **[Intune]** の順に選択します。
 3. **[モバイル アプリ]** ワークロードを選択します。
-4. **[管理]** グループの **[アプリ構成ポリシー]** を選択し、**[追加]** をクリックします。
+4. **[管理]** グループの **[アプリ構成ポリシー]** を選択し、**[追加]** を選択します。
 5. 次の詳細を設定します。
-    - **名前**  
+    - **名前**<br>
       Azure Portal に表示されるプロファイルの名前。
-    - **説明**  
+    - **説明**<br>
       Azure Portal に表示されるプロファイルの説明。
-    - **デバイス登録の種類**  
+    - **デバイス登録の種類**<br>
       **[管理対象デバイス]** を選択します。
-6. **[プラットフォーム]** に **[iOS]** を選択します。
-7.  **[関連アプリ]** を選択し、**[関連アプリ]** ブレードで、構成を適用する管理対象アプリを選択します。
-8.  **[構成ポリシーの追加]** ブレードで、**[構成設定]** を選択します
+6. **[プラットフォーム]** で **[iOS]** を選択します。
+7.  **[関連アプリ]** を選択します。 次に、**[関連アプリ]** ブレードで、構成を適用する管理対象アプリを選択します。
+8.  **[構成ポリシーの追加]** ブレードで、**[構成設定]** を選択します。
 9. **[構成設定の形式]** を選択します。 次のいずれかを選択します。
     - **[[構成デザイナーを使用する]](#Use-the-configuration-designer)**
-    - **[[XML データを入力する]](#enter-xml-data)**
-10. **[OK]** をクリックし、**[追加]** をクリックします。
+    - **[XML データを入力する](#enter-xml-data)**
+10. **[OK]** を選択してから、**[追加]** を選択します。
 
 ## <a name="use-configuration-designer"></a>構成デザイナーの使用
 
-Intune に登録されているデバイスかどうかにかかわらず、アプリには構成デザイナーを使用できます。 デザイナーを使用すると、特定の構成キーと値を構成できます。 各値のデータ型も指定する必要があります。 設定は、アプリのインストール時に自動で行われます。
+Intune に登録されているデバイスかどうかにかかわらず、アプリには構成デザイナーを使用できます。 デザイナーでは、特定の構成キーと値を構成できます。 各値のデータ型も指定する必要があります。 設定は、アプリのインストール時に自動で行われます。
 
 ### <a name="add-a-setting"></a>設定を追加する
 
-1. 構成の各キーと値について、以下を設定します。 <ul><li>**構成キー**<br>特定の設定構成を一意に識別するために使用されます。</li><li>**値の型**<br>構成値のデータ型。 整数型、実数型、文字列型、またはブール型があります。</li><li>**構成値**<br>構成の値。</li></ul>
-2. **[OK]** をクリックして構成設定を設定します。
+1. 構成の各キーと値について、以下を設定します。
+   - **構成キー**<br>
+     特定の設定構成を一意に識別するキー。
+   - **値の型**<br>
+     構成値のデータ型。 整数型、実数型、文字列型、またはブール型があります。
+   - **構成値**<br>
+     構成の値。
+2. **[OK]** を選択して構成の設定を行います。
 
 ### <a name="delete-a-setting"></a>設定の削除
 
-1. 設定の横にある省略記号 ([...]) をクリックします。
+1. 設定の横の省略記号 (**[...]**) を選択します。
 2. **[削除]** を選択します。
 
 \{\{ 文字と \}\} 文字を使用できるのはトークンの種類のみであり、他の目的には使用しないでください。
 
 ## <a name="enter-xml-data"></a>XML データを入力する
 
-Intune に登録されているデバイスのアプリ構成設定を含む XML プロパティの一覧を入力または貼り付けることができます。 XML プロパティ リストの形式は、構成するアプリによって異なります。 使用する形式の詳細については、アプリの供給元にお問い合わせください。
+Intune に登録されているデバイスのアプリ構成設定を含む XML プロパティ リストを入力または貼り付けることができます。 XML プロパティ リストの形式は、構成するアプリによって異なります。 使用する正確な形式の詳細については、アプリの供給元にお問い合わせください。
 
-Intune では XML 形式が検証されます。 ただし、Intune では XML プロパティ リストが対象アプリで動作するかどうかは確認されません。
-XML プロパティ リストの詳細については、[XML プロパティ リスト]に関するページを参照してください。
+Intune では XML 形式が検証されます。 ただし、Intune では XML プロパティ リスト (PList) が対象アプリで動作するかどうかは確認されません。
 
 XML プロパティ リストの詳細情報:
 
   -  「[Microsoft Intune でのモバイル アプリ構成ポリシーを使用した iOS アプリの構成](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)」を参照してください。
-  -  iOS Developer Library の「[Understand XML Plist](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html)」(XML Plist の概要) を参照してください。
+  -  iOS Developer Library の「[Understand XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html)」 (XML プロパティ リストの概要) を参照してください。
 
 ### <a name="example-format-for-an-app-configuration-xml-file"></a>アプリ構成 XML ファイルの形式の例
 
@@ -126,15 +131,15 @@ Intune は、プロパティ リストで次のデータ型をサポートしま
 ### <a name="tokens-used-in-the-property-list"></a>プロパティ リストで使用されるトークン
 
 また、Intune は次のトークンの種類をプロパティ リストでサポートしています。
-- \{\{userprincipalname\}\} - (例: **John@contoso.com**)
-- \{\{mail\}\} - (例: **John@contoso.com**)
-- \{\{partialupn\}\} - (例: **John**)
-- \{\{accountid\}\} - (例: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-- \{\{deviceid\}\} - (例: **b9841cd9-9843-405f-be28-b2265c59ef97**)
-- \{\{userid\}\} - (例: **3ec2c00f-b125-4519-acf0-302ac3761822**)
-- \{\{username\}\} - (例: **John Doe**)
-- \{\{serialnumber\}\} - (例: **F4KN99ZUG5V2**) iOS デバイスの場合
-- \{\{serialnumberlast4digits\}\} - (例: **G5V2**) iOS デバイスの場合
+- \{\{userprincipalname\}\} — たとえば、**John@contoso.com**
+- \{\{mail\}\} — たとえば、**John@contoso.com**
+- \{\{partialupn\}\} — たとえば、**John**
+- \{\{accountid\}\} — たとえば、**fc0dc142-71d8-4b12-bbea-bae2a8514c81**
+- \{\{deviceid\}\} — たとえば、**b9841cd9-9843-405f-be28-b2265c59ef97**
+- \{\{userid\}\} — たとえば、**3ec2c00f-b125-4519-acf0-302ac3761822**
+- \{\{username\}\} — たとえば、**John Doe**
+- \{\{serialnumber\}\} — たとえば、**F4KN99ZUG5V2** (iOS デバイスの場合)
+- \{\{serialnumberlast4digits\}\} — たとえば、**G5V2** (iOS デバイスの場合)
 
 ## <a name="next-steps"></a>次のステップ
 

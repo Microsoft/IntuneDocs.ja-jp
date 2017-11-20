@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/19/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,24 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4719f31b2ea6144bc8113c596155de70aa22ace1
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: dff1cb496b85f933d8f462b94f6e15fa7ff69a28
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune とエンド ユーザー アプリの UI の更新
 このリリースの Microsoft Intune でエンド ユーザーに表示されるアプリの UI に加えられた変更について説明します。 これは、ユーザーとの通信や、展開のサポートのために作成したカスタム ドキュメントの更新に役立ちます。 会社のポータルを使用してヘルプデスクにサポートを求める場合に、直面している問題のトラブルシューティングをより適切に行う方法を理解するのにも役立ちます。
+
+
+## <a name="week-of-november-6-2017"></a>2017 年 11 月 6 日の週
+
+### <a name="search-improvements-to-the-company-portal-apps-and-website---1418189--"></a>ポータル サイト アプリおよび Web サイトの検索機能強化 <!--1418189-->
+ポータル サイト アプリでは、アプリのカテゴリ、名前、説明で検索できるようになりました。 結果は関連性の高い順に並べ替えられます。 これらの更新は、[ポータル Web サイト](https://portal.manage.microsoft.com)でも利用可能です。
+
+マイクロソフトは関連性の追跡方法を微調整しています。ポータル Web サイトの一番下にある "フィードバック" リンクから調整具合をお知らせください。
+
+
 
 ## <a name="week-of-october-16-2017"></a>2017 年 10 月 16 日の週
 

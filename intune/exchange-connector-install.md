@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f1b9f6900a5dfded736bd0cc92283fdca2220a5
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: c7947c9d047c6f206f9f93c389d418379fe8267a
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Microsoft Intune Azure で Intune のオンプレミス Exchange Connector をセットアップする
 
@@ -134,13 +134,18 @@ Exchange Connector が接続をセットアップすると、Exchange Connector 
 > [!NOTE]
 > 内部設置型 Exchange Connector をインストールし、いずれかの時点で Exchange 接続を削除した場合、インストールされていたコンピューターから内部設置型 Exchange Connector をアンインストールする必要があります。
 
-## <a name="validate-the-exchange-connection"></a>Exchange 接続を確認する
+## <a name="monitor-the-exchange-connector-activity"></a>Exchange Connector アクティビティを監視する
 
 Exchange Connector を正常に構成したら、接続のステータスと前回の成功した同期の試行を表示できます。 Exchange Connector 接続を確認するには、以下のことを行います。
 
-- Intune ダッシュボードで、**[オンプレミス アクセス]** を選択します。 **[管理]** で、**[Exchange On-Premises のアクセス]** を選択して接続状態を確認します。
+1. Intune ダッシュボードで、**[オンプレミス アクセス]** を選択します。
+2. **[管理]** で、**[Exchange On-Premises のアクセス]** を選択して接続状態を確認します。
 
 また、前回いつ同期が完了したかも確認することができます。
+
+### <a name="system-center-operations-manager-scom-management-pack"></a>System Center Operations Manager (SCOM) 管理パック
+
+Intune 1710 リリース以降では、[Exchange Connector および Intune の SCOM 管理パック](https://www.microsoft.com/en-us/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True)を使用できます。 問題のトラブルシューティングを行う必要がある場合、これにより別の方法で Exchange Connector を監視できます。
 
 ## <a name="next-steps"></a>次のステップ
 [Exchange On-premises の条件付きアクセス ポリシーを作成する](conditional-access-exchange-create.md)

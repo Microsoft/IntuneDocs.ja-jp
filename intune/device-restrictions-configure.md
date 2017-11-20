@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8beabb21df8b122b7a1dd18a698a8075604046b5
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: b61ad1c0a114c8a66c174fa34c4520e2f6c6244a
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune でデバイスの制限設定を構成する方法
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/15/2017
 
 このトピックでは、デバイスの制限プロファイルを構成する基本的な方法について説明します。その後、デバイスごとの詳細については、各プラットフォームのトピックを参照してください。
 
-## <a name="create-a-device-profile-containing-device-restriction-settings"></a>デバイスの制限設定を含むデバイス プロファイルの作成
+デバイスの制限設定を含むデバイス プロファイルを作成するには:
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
@@ -59,9 +59,12 @@ ms.lasthandoff: 09/15/2017
 プロファイルが作成され、プロファイルの一覧ブレードに表示されます。
 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事を参照してください。
 
-## <a name="example-of-device-restriction-settings"></a>デバイスの制限設定の例
+<!--  Removing image as part of design review; retaining source until we known the disposition.
 
-この概要レベルの例では、Android デバイスに組み込まれているカメラ アプリの使用をブロックするデバイスの制限ポリシーを作成します。
+## Example of device restriction settings
 
-![Android デバイスのカメラを無効にする方法](./media/disable-android-camera.png)
+In this high-level example, you'll create a device restriction policy that blocks the use of the built-in camera app on Android devices.
 
+![How to disable the camera on Android devices](./media/disable-android-camera.png)
+
+-->

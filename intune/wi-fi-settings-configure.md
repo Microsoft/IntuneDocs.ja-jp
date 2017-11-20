@@ -15,11 +15,11 @@ ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3333a5addfd0c4ab757121e22e19ac66c0b3e1d
-ms.sourcegitcommit: ec8561b8c63515e0b5f21a858984108dc5dbd5d3
+ms.openlocfilehash: ae5210cb3da5503c4cf1b85be8b8522fa1cfd6ce
+ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/10/2017
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Microsoft Intune で Wi-Fi の設定を構成する方法
 
@@ -58,9 +58,7 @@ Windows 8.1、Windows 10、および Windows 10 Mobile を実行しているデ�
     - **iOS**
     - **macOS**
     - **Windows 8.1 以降 (プロファイルのインポート)**
-6. **[プロファイルの種類]** ドロップダウン リストで、**[Wi-Fi Basic]** または **[Wi-Fi Enterprise]** を選択します。
-    >[!TIP]
-    >**[Wi-Fi Basic]** を使用した場合は、ネットワーク名や SSID などの基本的な機能を指定します。 **[Wi-Fi Enterprise]** を使用すると、詳細情報 (たとえば、Wi-Fi ネットワークで拡張認証プロトコル (EAP) を使用している場合は EPA) を指定できます。 **[Wi-Fi インポート]** (Windows 8.1 および Windows 10) を使用すると、以前に別のデバイスからエクスポートした Wi-Fi 設定を XML ファイルとしてインポートすることができます。
+6. **[プロファイルの種類]** ドロップダウン リストで、**[Wi-Fi Basic]** または **[Wi-Fi Enterprise]** を選択します。 **[Wi-Fi Basic]** を使用し、ネットワーク名や SSID などの基本的な機能を指定できます。 **[Wi-Fi Enterprise]** を使用すると、詳細情報 (たとえば、Wi-Fi ネットワークで拡張認証プロトコル (EAP) を使用している場合は EPA) を指定できます。 **[Wi-Fi インポート]** (Windows 8.1 および Windows 10) を使用すると、以前に別のデバイスからエクスポートした Wi-Fi 設定を XML ファイルとしてインポートすることができます。
 7. 選択したプラットフォームによって構成できる設定が異なります。 各プラットフォームの詳細な設定については、次のいずれかのトピックを参照してください。
     - [Android と Android for Work の設定](wi-fi-settings-android.md)
     - [iOS の設定](wi-fi-settings-ios.md)

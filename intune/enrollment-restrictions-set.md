@@ -3,10 +3,10 @@ title: "Intune で登録制限を設定する"
 titlesuffix: Azure portal
 description: "Intune でプラットフォームごとに登録を制限し、デバイス登録の上限数を設定します。 \""
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 10/31/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0117d3249f7fd2568201762b7dd16af9cc26392c
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 463278e4dc9ad677f654754d4710b110b376cc2d
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="set-enrollment-restrictions"></a>登録制限を設定する
 
@@ -33,7 +33,7 @@ Intune 管理者は、Intune による管理に登録できるデバイスを決
   - iOS
   - macOS
   - Windows
-- プラットフォームのオペレーティング システム バージョン (iOS および Android のみ)
+- iOS、Android、Windows (Windows 10 バージョンのみ使用可能。Windows 8.1 が許可される場合、これは空白のままにする) のプラットフォーム オペレーティング システム バージョン
   - 最小バージョン
   - 最大バージョン
 - 個人所有デバイスの制限 (iOS、Android、macOS のみ)
@@ -55,7 +55,7 @@ Intune 管理者は、Intune による管理に登録できるデバイスを決
 
   **[Save]**(保存) をクリックします。
 6. **[すべてのユーザー]** で **[プラットフォーム構成]** を選び、次の構成を選びます。 許可されているプラットフォームごとに、次のオプションを構成できます。
-  - **[バージョン]** - Android および iOS デバイスの **[最小]** と **[最大]** のプラットフォーム オペレーティング システム バージョンを指定します。 オペレーティング システムのバージョンは、Device Enrollment Program、Apple School Manager、または Apple Configurator アプリを使用して登録するデバイスには適用されません。
+  - **[バージョン]** - Android、iOS、または Windows デバイスの **[最小]** と **[最大]** のプラットフォーム オペレーティング システム バージョンを指定します。 Android では major.minor.rev.build がサポートされます。 iOS では major.minor.rev がサポートされます。Windows では major.minor.rev.build がサポートされます (Windows 10 の場合のみ)。 オペレーティング システムのバージョンは、Device Enrollment Program、Apple School Manager、または Apple Configurator アプリを使用して登録する Apple デバイスには適用されません。 
   - **[個人所有]** - Android、iOS、および macOS デバイスの **[許可]** または **[ブロック]** を指定します。
   ![個人所有設定の構成を示す既定デバイス プラットフォーム構成のデバイス制限ワークスペースのスクリーンショット。](media/device-restrictions-platform-configurations.png)
   **[Save]**(保存) をクリックします。

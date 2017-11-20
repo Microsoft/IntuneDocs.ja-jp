@@ -15,20 +15,20 @@ ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b690f691278d0cc708ed7e586e30aee4ed6e807a
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: 406d0faa1e03a41d20c1b584d2d37f9810ddbf32
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="app-configuration-policies-for-intune"></a>Intune 用アプリ構成ポリシー
 
 ユーザーが Microsoft Intune でアプリ構成ポリシーと共に iOS または Android アプリを実行するときの設定を指定します。 たとえば、アプリは次の内容を指定することをユーザーに要求することがあります。
 
-- カスタム ポート番号
-- 言語の設定
-- セキュリティ設定
-- 会社のロゴなどのブランドの設定
+- カスタム ポート番号。
+- 言語設定。
+- セキュリティ設定。
+- 会社のロゴなどのブランドの設定。
 
 ユーザーがこれらの設定を誤って入力すると、ヘルプ デスクの負荷が増加し、新しいアプリの採用が遅くなる可能性もあります。
 
@@ -38,13 +38,13 @@ ms.lasthandoff: 11/01/2017
 
 Intune でアプリ構成を使用する方法には 2 つの選択肢があります。
  - **管理対象デバイス**  
-   デバイスは、Intune で MDM プロバイダーとして管理されます。
+   デバイスは、Intune で MDM (モバイル デバイス管理) プロバイダーとして管理されます。
  - **管理対象アプリ**  
    アプリはデバイスの登録なしで管理されます。
 
 ## <a name="apps-that-support-app-configuration"></a>アプリ構成をサポートするアプリ
 
-サポートするアプリにアプリ構成ポリシーを使用できます。 アプリが Intune でアプリ構成をサポートするには、アプリ構成の使用をサポートするようにアプリが作成されている必要があります。 詳細については、アプリのベンダーに問い合わせてください。
+サポートするアプリにアプリ構成ポリシーを使用できます。 Intune でアプリ構成をサポートするには、アプリ構成の使用をサポートするようにアプリが記述されている必要があります。 詳細については、アプリのベンダーに問い合わせてください。
 
 Intune App SDK をアプリに組み込むか、アプリの開発後にラップして、基幹業務アプリを準備することができます。 iOS と Android の両方で使用可能な Intune App SDK で、Intune アプリ保護ポリシーに対してご使用のアプリを有効にすることができます。 アプリの開発者が必要なコード変更が最小限に抑えられます。 詳細については、「[Intune App SDK の概要](app-sdk.md)」を参照してください。
 

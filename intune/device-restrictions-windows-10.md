@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
-ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
+ms.openlocfilehash: 903ba99a747689dd8882acedcb24fef2dd00a01d
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/19/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Windows 10 以降のデバイスの制限設定
 
@@ -31,10 +31,10 @@ ms.lasthandoff: 10/19/2017
 -   **[手動での登録解除]** - ユーザーがデバイスから会社アカウントを手動で削除できるようにします。
 -   **[ルート証明書の手動インストール (モバイルのみ)]** - ユーザーがルート証明書と中間 CAP 証明書を手動でインストールしないようにします。
 -   **[診断データの送信]** - 指定できる値は次のとおりです。
-    -       **[なし]** - データは Microsoft に送信されません。
-    -       **[基本]** - 一部の情報のみを Microsoft に送信します。
-    -       **[拡張]** - より詳細な診断データを Microsoft に送信します。
-    -       **[フル]** - [拡張] で送信されるデータに加えて、デバイスの状態に関する追加データを送信します。
+    - **[なし]** - データは Microsoft に送信されません。
+    - **[基本]** - 一部の情報のみを Microsoft に送信します。
+    - **[拡張]** - より詳細な診断データを Microsoft に送信します。
+    - **[フル]** - [拡張] で送信されるデータに加えて、デバイスの状態に関する追加データを送信します。
 -   **[カメラ]** - デバイス上のカメラの使用を許可またはブロックします。
 -   **[OneDrive のファイル同期]** - デバイスによる OneDrive へのファイル同期をブロックします。
 -   **[リムーバブル記憶域]** - SD カードなどの外部記憶装置をデバイスで使用できるようにするかどうかを指定します。
@@ -105,6 +105,7 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 
 
 ## <a name="edge-browser"></a>Microsoft Edge ブラウザー
+
 -   **[Microsoft Edge ブラウザー (モバイルのみ)]** - デバイスで Edge Web ブラウザーを使用できるようにします。
 -   **[アドレス バーのドロップダウン (デスクトップのみ)]** – これを使用すると、Edge でドロップダウン リストの入力候補表示が停止します。 Edge と Microsoft サービスの間のネットワーク帯域幅が最小に抑えられます。
 -   **[Microsoft のブラウザー間でお気に入りを同期する (デスクトップのみ)]** – Internet Explorer と Edge の間でお気に入りを同期することを Windows に許可します。
@@ -180,6 +181,44 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
     -   **[簡単操作]** - 設定アプリの簡単操作の領域へのアクセスをブロックします。
     -   **[プライバシー]** - 設定アプリのプライバシー領域へのアクセスをブロックします。
     -   **[更新とセキュリティ]** - 設定アプリの更新とセキュリティの領域へのアクセスをブロックします。
+
+## <a name="kiosk"></a>キオスク
+
+-   **[キオスク モード]** - ポリシーによってサポートされる[キオスク モード](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc)の種類を識別します。  次のオプションがあります。
+
+      - **[未構成]** (既定) - このポリシーでは、キオスク モードが有効になりません。 
+      - **[シングル アプリ キオスク]** - このプロファイルでは、デバイスがシングル アプリ キオスクとして有効になります。
+      - **[マルチ アプリ キオスク]** - このプロファイルでは、デバイスがマルチ アプリ キオスクとして有効になります。
+
+    シングル アプリ キオスクに必要な設定:
+
+      - **[ユーザー アカウント]** - (デバイスの) ローカル ユーザー アカウントか、キオスク アプリに関連付けられている Azure AD アカウント ログインを指定します。  Azure AD ドメインに参加しているアカウントについては、`domain\\username@tenant.org` の形式でアカウントを指定します。
+
+         公共の場におけるデバイスについては、認可アクティビティを禁止するために最小特権のアカウントを使用します。  
+
+      - **アプリのアプリケーション ユーザー モデル ID (AUMID)** - キオスク アプリの AUMID を指定します。  詳細については、「[Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)」 (インストール済みアプリのアプリケーション ユーザー モデル ID を見つける) を参照してください。
+
+    マルチ アプリ キオスクには、キオスク構成が必要です。  **[追加]** ボタンを使用してキオスク構成を作成するか、既存の構成を選びます。
+
+    マルチ アプリ キオスク構成に含まれる設定:
+
+    - **[キオスク構成名]** - 特定の構成の識別に使用されるフレンドリ名。
+
+    - 1 つまたは複数の**キオスク アプリ**の構成要素:
+
+        - **アプリの種類**。キオスク アプリの種類を指定します。  サポートされる値には次のものが含まれます。   
+
+            - **Win32 アプリ** - 従来のデスクトップ アプリ。  (デバイスに関しては、実行可能ファイルの完全修飾パス名が必要です。)
+
+            - **UWP アプリ** - ユニバーサル Windows アプリ。  [アプリの AUMID](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) が必要です。
+
+        - **アプリ識別子** - 実行可能ファイル (Win32 アプリ) または[アプリの AUMID](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP アプリ) の完全修飾パス名を指定します。
+
+    - **タスク バー**は、タスク バーがキオスクに表示されるか (**[有効]**)、非表示になるか (**[未構成]**) が示されます。
+
+    - **[スタート メニューのレイアウト]** - アプリを [[スタート] メニューに表示する](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)方法を説明する XML ファイルを指定します。
+
+    - **[割り当てられたユーザー]** - キオスク構成に関連付けられている 1 つまたは複数のユーザー アカウントを指定します。  アカウントは、デバイスのローカル アカウントか、キオスク アプリに関連付けられている Azure AD アカウント ログインになります。  ドメイン参加のアカウントを `domain\\username@tenant.org` 形式で指定します。
 
 ## <a name="defender"></a>Defender
 

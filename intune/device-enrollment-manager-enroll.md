@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/25/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5caf60d0512a33c0c88f4305b1a9eb189112ba02
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 0faca372a8bc9a632cf99133b9843b4b219f285c
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>デバイス登録マネージャーを使用してデバイスを登録する
 
@@ -54,6 +54,7 @@ DEM ユーザーができること:
   - ポータル サイト アプリまたは Web サイトには、ローカルのデバイスのみが表示されます。
   - アプリ管理のための Apple ID 要件がユーザー単位になるため、ユーザーは Apple Volume Purchase Program (VPP) アプリを利用できません。
   - (iOS のみ) DEM を利用して iOS デバイスを登録する場合は、Apple Configurator、Apple Device Enrollment Program (DEP)、または Apple School Manager (ASM) を利用してデバイスを登録することはできません。
+  - (Android のみ) 1 つの DEM アカウントに登録できる Android for Work デバイスの数は限られています。 DEM アカウントごとに最大 10 台の Android の仕事用プロファイル デバイスを登録できます。 この制限は、従来の Android の登録には適用されません。
   - 各デバイスには、デバイスのライセンスが必要です。 [ユーザーとデバイスのライセンス](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services)の詳細についてはこちらです。
 
 
