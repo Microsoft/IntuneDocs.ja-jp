@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 manager: angrobe
 ms.author: mabriggs
-ms.date: 09/01/2017
+ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cc4ba554b498e3b41df5fb1051f1d7a0bd4fb89e
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 56bc71124c5a2714746dffcce256f0e604e9f62c
+ms.sourcegitcommit: ca10ab40fe40e5c9f4b6f6f4950b551eecf4aa03
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS 用 Microsoft Intune App SDK 開発者ガイド
 
@@ -159,7 +159,24 @@ Intune App SDK を有効にするには、次の手順を実行します。
 
 11. アプリケの権利でアプリ グループが定義されている場合は、それらのグループを **IntuneMAMSettings** ディクショナリの `AppGroupIdentifiers` キーの下に文字列の配列として追加します。
 
+## <a name="using-the-intune-mam-configurator-tool"></a>Intune MAM 構成ツールを使用する
 
+SDK の手動統合に必要なすべての info.plist 操作が Intune MAM 構成ツールで処理されるようになりました。 Intune App SDK for iOS のリポジトリにあります。 マルチ ID、AAD 設定など、その他のアプリ固有の設定はこのツールでは処理されません。 このツールには 3 つのパラメーターが含まれています。
+ 
+|プロパティ|使用方法|
+|---------------|--------------------------------|
+|- i |  `<Path to the input plist>` |
+|- e | 権利ファイル |
+|- o |  (省略可能) `<Path for the changed input plist>` |
+    
+Intune MAM 構成ツールは次の更新に利用できます。
+* アプリのメイン ストーリーボード ファイルやメイン Nib ファイルを IntuneMAMSettings に更新します。
+* Info.plist ファイルに定義されているアプリの URL スキームを、URL スキームごとに、-intunemam サフィックスで更新します。
+* アプリでその Info.plist ファイルにドキュメント型が定義されている場合は、各アイテムの "ドキュメントのコンテンツ タイプの UTI" 配列の各文字列に "com.microsoft.intune.mam" プレフィックスの重複エントリを 追加します。
+* アプリの権利でアプリ グループが定義されている場合は、それらのグループを IntuneMAMSettings ディクショナリの AppGroupIdentifiers キーの下に文字列の配列として追加します。
+
+    
+>[!NOTE] 手動の info.plist 操作ではなく、このツールを使用する場合は、アプリの info.plist か権利が変更されるたびに再実行することをお勧めします。
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Azure Active Directory Authentication Library (ADAL) の構成
 
