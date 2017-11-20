@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 10/03/2017
+ms.date: 10/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bef73c81d285a6d320cd92b055ff2b5592a55af4
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: caf399650e0a6382d3e03a133cad3aee1eda2d39
+ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="what-is-device-enrollment"></a>デバイス登録とは
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -80,56 +80,12 @@ Intune にデバイスを登録して、それらのデバイスを管理でき�
 デバイス登録マネージャー (DEM) は、複数の会社所有のデバイスを登録して管理するために使用される特別なユーザー アカウントです。 作成後は、マネージャーがポータル サイトをインストールし、多数のユーザーがいないデバイスを登録できます。 DEM の詳細については[ここ](./device-enrollment-manager-enroll.md)を参照してください。
 
 ### <a name="dep"></a>DEP
-Apple Device Enrollment Program (DEP) 管理では、ポリシーを作成し、DEP で購入および管理されている iOS デバイスに "無線で" 展開できます。 ユーザーが初めてデバイスの電源を入れて iOS Setup Assistant を実行した際に、デバイスが登録されます。 この方法は、iOS 監視対象モードをサポートしているため、以下の機能でデバイスを構成することができます。
-
-- アプリ ロック (シングル アプリ モード) 
-- グローバル HTTP プロキシ 
-- アクティベーション ロックのバイパス 
-- 自律的シングル App モード 
-- Web コンテンツ フィルター 
-- 背景およびロック画面の設定 
-- アプリのサイレント プッシュ 
-- 常時接続 VPN 
-- 管理対象アプリのインストールを排他的に許可 
-- iBookstore 
-- iMessages 
-- Game Center 
-- AirDrop 
-- AirPlay 
-- ホスト ペアリング 
-- クラウドの同期 
-- スポットライト検索 
-- ハンドオフ 
-- デバイスの消去 
-- 制限事項 UI 
-- UI による構成プロファイルのインストール 
-- News 
-- キーボード ショートカット 
-- パスコードの変更 
-- デバイス名の変更 
-- 壁紙の変更 
-- アプリの自動ダウンロード 
-- エンタープライズ アプリケーションの信頼に対する変更 
-- Apple Music 
-- メール ドロップ 
-- Apple Watch とのペアリング 
-
-> [!NOTE]
-> Apple は、2018 年に特定の設定を "監視対象モードのみ" に移行することを確定しました。 Apple が特定の設定を "監視対象モードのみ" に移行するのを待つのではなく、該当する設定を使用する際に、その変更が行われることを考慮に入れることをお勧めします。
-> - アプリのインストール
-> - アプリの削除
-> - FaceTime
-> - Safari
-> - iTunes
-> - 明示的なコンテンツ
-> - iCloud のドキュメントおよびデータ
-> - マルチプレイヤー ゲーム
-> - Game Center のフレンドの追加
+Apple Device Enrollment Program (DEP) 管理では、ポリシーを作成し、DEP で購入および管理されている iOS デバイスに "無線で" 展開できます。 ユーザーが初めてデバイスの電源を入れて iOS Setup Assistant を実行した際に、デバイスが登録されます。 この方法は、iOS 監視対象モードをサポートしているため、特定の機能でデバイスを構成することができます。
 
 iOS DEP 登録の詳細については、以下をご覧ください。
 
 - [iOS デバイスの登録方法を選択する](ios-enroll.md)
-- [Device Enrollment Program を使用して iOS デバイスを登録する](device-enrollment-program-enroll-ios.md)
+- [Device Enrollment Program を使用して iOS デバイスを登録する](https://docs.microsoft.com/intune/device-restrictions-ios#device-enrollment-program)
 
 ### <a name="usb-sa"></a>USB-SA
 IT 管理者は、セットアップ アシスタントを使用した登録を行うため、USB 経由で Apple Configurator を使用して、会社が所有するデバイスを手動で準備します。 IT 管理者は登録プロファイルを作成して、Apple Configurator にエクスポートします。 ユーザーは、自分のデバイスを受け取ると、セットアップ アシスタントを実行してデバイスを登録するように求められます。 この方法は、**iOS 監視対象**モードをサポートしているため、以下の機能が有効になります。

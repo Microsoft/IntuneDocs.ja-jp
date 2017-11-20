@@ -14,18 +14,18 @@ ms.technology:
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3defec3624944918d14b9c4527487c368c487dd6
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 0446db40b829e92b681294ecc497a2c475480fac
+ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="reset-the-passcode-on-intune-managed-devices"></a>Intune で管理するデバイスのパスコードをリセットする
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**[パスコードのリセット]** アクションは、デバイスの新しいパスコードを生成します。新しいパスコードは、[<*デバイス名*> **概要**] ブレードに表示されます。
+**[パスコードの削除]** アクションは、デバイスの新しいパスコードを生成します。新しいパスコードは、[<*デバイス名*> **概要**] ブレードに表示されます。
 
 ## <a name="supported-platforms"></a>サポートされているプラットフォーム
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 09/15/2017
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス]** を選択します。
 4. **[デバイスとグループ]** ブレードで、**[すべてのデバイス]** を選択します。
-5. 管理するデバイスの一覧からデバイスを選択し、その後 **[パスコードのリセット]** デバイス リモート アクションを選択します。
+5. 管理するデバイスの一覧からデバイスを選択し、その後 **[パスコードの削除]** デバイス リモート アクションを選択します。
 
 ## <a name="next-steps"></a>次のステップ
 

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4b0891541de125220aa278a4f4ebc0dec0d9a27b
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 651df0e6ba3f8b3b2727d3194c8bf5e1a40cffc3
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 デバイスの登録に関するトラブルシューティング
 「[Intune に Windows 10 Mobile または Windows 10 デスクトップ デバイスを登録する](enroll-your-w10-phone-or-w10-pc-windows.md)」の手順を完了しても職場または学校の電子メールやファイルにアクセスできない場合は、次のトラブルシューティング手順を試してください。
@@ -57,6 +57,6 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>[職場または学校アカウントの設定] が表示される場合のトラブルシューティング手順
 
-"__入力されたユーザー名と一致する管理エンドポイントを自動検出できませんでした。ユーザー名を確認して、やり直してください。管理エンドポイントの URL がわかっている場合は、それを入力してください。__" というメッセージが表示される場合は、ユーザー名とパスワードを再入力する必要があります。 それでもうまくいかない場合は、**[管理エンドポイント]** ボックスに入力する必要のある Web サイトの会社のサポートに確認する必要があります。 これは、**www.yourcompany.onmicrosoft.com** のような Web サイトです。 
+"__入力されたユーザー名と一致する管理エンドポイントを自動検出できませんでした。ユーザー名を確認して、やり直してください。管理エンドポイントの URL がわかっている場合は、それを入力してください。__" というメッセージが表示される場合は、ユーザー名とパスワードを再入力する必要があります。 それでもうまくいかない場合は、**[管理エンドポイント]** ボックスに入力する必要のある Web サイトの会社のサポートに確認する必要があります。 これは、**www.yourcompany.onmicrosoft.com** のような Web サイトです。
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。

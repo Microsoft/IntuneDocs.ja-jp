@@ -14,11 +14,11 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d52e240763263ac4f761a8635ee6694a45168354
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 37af15a36ff20b2c13b5fb1157d04a05c40d3216
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="data-warehouse-data-model"></a>データ ウェアハウス データ モデル
 
@@ -38,14 +38,10 @@ Intune データ ウェアハウス構造では、スタースキーマ モデ�
 
 エンティティ セットは、データ モデル内にあるエンティティの名前付きコレクションです。 これらのセットには、モデルで収集されたデータを定義するエンティティが含まれています。 各エンティティ セットには、データ ウェアハウス データ モデルへのアクセス ポイントがあります。 エンティティの各カテゴリの詳細については、以下の各リンクを参照してください。
 
-  -  [日付](reports-ref-date.md)
-  -  [ユーザー](reports-ref-user.md)
-  -  [モバイル アプリ管理 (MAM)](reports-ref-mobile-app-management.md)
-  -  [デバイス](reports-ref-devices.md)
   -  [アプリケーション](reports-ref-application.md)
+  -  [日付](reports-ref-date.md)
+  -  [デバイス](reports-ref-devices.md)
   -  [ポリシー](reports-ref-policy.md)
-  -  [ユーザー デバイスの関連付け](reports-ref-userdeviceassociations.md)
-
-<!-- ## Data Model relationships
-
-For more information on the relationships in the data model, see [Relationships of Entities](reports-api-entity-relationships.md). -->
+  -  [モバイル アプリ管理 (MAM)](reports-ref-mobile-app-management.md)
+  -  [ユーザー](reports-ref-user.md)
+  -  [ユーザー デバイスの関連付け](reports-ref-user-device.md)

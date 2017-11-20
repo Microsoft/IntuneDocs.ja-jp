@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 05/05/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fbb1d3e11f8ba3e508a261981e461f35c99ca110
-ms.sourcegitcommit: f8672ff73066c2d8bcb78c30f84fda8aa3057a1c
+ms.openlocfilehash: 3736b6d43f5cd3b6c75097a2ceabebffd75f0caa
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune でアプリ情報と割り当てを監視する方法
 
@@ -27,8 +27,22 @@ ms.lasthandoff: 10/11/2017
 
 Intune には、管理しているアプリのプロパティと、割り当ての状態を監視する方法が複数あります。
 
-1. **[モバイル アプリ]** ワークロードで、**[管理]** > **[アプリ]** の順に選択します。
-2. アプリの一覧ブレードで、情報を表示するアプリを選択します。 [*<アプリ名*> **デバイスのインストール状態]** ブレードが表示されます。![[アプリ インストールの状態] ブレード。](./media/monitor-apps.png)
+1. Azure ポータルにサインインします。
+2. **[その他のサービス]** > **[監視 + 管理]** + **[Intune]** の順に選択します。
+3. **[モバイル アプリ]** ワークロードで、**[管理]** グループの **[アプリ]** を選択します。
+     
+    ![[アプリ インストールの状態] ブレード。](./media/monitor-apps.png)
+5. アプリ ブレードの一覧で、アプリを選択します。 [<*アプリ名*> **デバイスのインストール状態]** ブレードが表示されます。
+
+デバイスのインストール状態レポートには、次の列があります。
+
+1.  **デバイス名**: デバイスの種類の名前。
+2.  **ユーザー名**: ユーザーの名前。
+3.   **プラットフォーム**: デバイスにインストールされているオペレーティング システム。
+4.  **バージョン**: アプリケーションのバージョン番号。
+5.   **状態**: アプリの状態として、**[インストール済み]**、**[未インストール]**、**[インストール保留中です]**、**[エラー]** があります。
+6. **状態の詳細**: デバイスのアプリの状態に関する読み取り可能な説明。
+7. **最後のチェックイン**: デバイスが Intune に最後にチェックインした時刻。
 
 次に、以下のいずれかの操作を実行して、アプリとその割り当てに関する情報を取得します。
 

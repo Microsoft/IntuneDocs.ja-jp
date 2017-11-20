@@ -164,6 +164,8 @@
               href: windows-bulk-enroll.md
             - name: Windows AutoPilot Deployment プログラム
               href: enrollment-autopilot.md
+            - name: 登録ステータス画面
+              href: windows-enrollment-status.md
         - name: Android の登録を設定する
           href: android-enroll.md
         - name: iOS の登録の設定
@@ -365,6 +367,8 @@
               href: certficates-pfx-configure.md
         - name: Windows Information Protection 設定を構成する
           href: windows-information-protection-configure.md
+        - name: PowerShell スクリプトの管理
+          href: intune-management-extension.md
         - name: 通信費の監視
           href: telecom-expenses-monitor.md
         - name: プロファイルの割り当て
@@ -556,11 +560,11 @@
     - name: カスタム デバイス設定の構成
       href: custom-settings-configure.md
       items:
+        - name: 事前共有キーを使用する Wi-Fi プロファイル
+          href: wi-fi-profile-shared-key.md
         - name: Android
           href: custom-settings-android.md
           items:
-            - name: 事前共有キーを使用する Wi-Fi プロファイル
-              href: wi-fi-profile-shared-key.md
             - name: アプリごとの VPN プロファイル
               href: android-pulse-secure-per-app-vpn.md
             - name: Samsung KNOX Standard 用アプリの許可/禁止
@@ -604,19 +608,23 @@
         - name: データ ウェアハウス データ モデル
           href: reports-ref-data-model.md
           items:
+            - name: Intune データ ウェアハウスのユーザー有効期間の表記
+              href: reports-ref-user-timeline.md
             - name: アプリケーション エンティティのリファレンス
               href: reports-ref-application.md
+            - name: 現在のユーザー エンティティのリファレンス
+              href: reports-ref-current-user.md
             - name: 日付エンティティのリファレンス
               href: reports-ref-date.md
             - name: デバイス エンティティの参照
               href: reports-ref-devices.md
-            - name: Intune の管理拡張のリファレンス
+            - name: Intune の管理拡張エンティティのリファレンス
               href: reports-ref-intunemanagementextension.md
             - name: モバイル アプリ管理 (MAM) エンティティのリファレンス
               href: reports-ref-mobile-app-management.md
             - name: ポリシー エンティティのリファレンス
               href: reports-ref-policy.md
-            - name: ユーザーデバイスの関連付けの参照
+            - name: ユーザー デバイスの関連付けエンティティのリファレンス
               href: reports-ref-user-device.md
             - name: User エンティティのリファレンス
               href: reports-ref-user.md

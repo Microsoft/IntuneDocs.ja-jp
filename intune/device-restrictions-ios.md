@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 10/27/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 043bc1ecf652802dc569d2df8b287b2246585f15
-ms.sourcegitcommit: 1416daed6803546445b6f280a86c663e6e00465a
+ms.openlocfilehash: 2f35de553259921c76341fe5b4a824e60c71d4a5
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での iOS デバイスの制限設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>全般
-    
+
 -   **[診断データの送信]** - デバイスから Apple への診断データの送信を許可またはブロックします。
 -   **[画面キャプチャ]** - ユーザーが画面のコンテンツを画像としてキャプチャできるようにします。
     - **[Classroom アプリによるリモート画面の監視 (監視のみ)]** - Apple の Classroom アプリが iOS デバイス上の画面を監視することを許可またはブロックします。
@@ -44,6 +44,54 @@ ms.lasthandoff: 10/27/2017
 - **[構成プロファイルの変更]** - ユーザーが構成プロファイルをインストールできるようにします。
 - **[アクティベーション ロック (監視下のみ)]** - 監視されている iOS デバイスでアクティベーション ロックを有効にします。
 
+## <a name="configurations-requiring-supervision"></a>監視を必要とする構成
+
+iOS 監視モードは、Apple の Device Enrollment Program または Apple Configurator を使用し、デバイスの初期セットアップ中にのみ有効にすることができます。 監視モードを有効にすると、Intune では、次の機能でデバイスを構成できます。
+
+- アプリ ロック (シングル アプリ モード) 
+- グローバル HTTP プロキシ 
+- アクティベーション ロックのバイパス 
+- 自律的シングル App モード 
+- Web コンテンツ フィルター 
+- 背景およびロック画面の設定 
+- アプリのサイレント プッシュ 
+- 常時接続 VPN 
+- 管理対象アプリのインストールを排他的に許可 
+- iBookstore 
+- iMessages 
+- Game Center 
+- AirDrop 
+- AirPlay 
+- ホスト ペアリング 
+- クラウドの同期 
+- スポットライト検索 
+- ハンドオフ 
+- デバイスの消去 
+- 制限事項 UI 
+- UI による構成プロファイルのインストール 
+- News 
+- キーボード ショートカット 
+- パスコードの変更 
+- デバイス名の変更 
+- 壁紙の変更 
+- アプリの自動ダウンロード 
+- エンタープライズ アプリケーションの信頼に対する変更 
+- Apple Music 
+- メール ドロップ 
+- Apple Watch とのペアリング 
+
+> [!NOTE]
+> Apple は、2018 年に特定の設定を "監視対象モードのみ" に移行することを確定しました。 Apple が特定の設定を "監視対象モードのみ" に移行するのを待つのではなく、該当する設定を使用する際に、その変更が行われることを考慮に入れることをお勧めします。
+> - エンド ユーザーによるアプリのインストール
+> - アプリの削除
+> - FaceTime
+> - Safari
+> - iTunes
+> - 明示的なコンテンツ
+> - iCloud のドキュメントおよびデータ
+> - マルチプレイヤー ゲーム
+> - Game Center のフレンドの追加
+
 ## <a name="password"></a>パスワード
 -   **[パスワード]** - エンド ユーザーがデバイスにアクセスする際にパスワードの入力を要求します。
     -   **[単純なパスワード]** - 0000 や 1234 などの単純なパスワードを許可します。
@@ -56,7 +104,7 @@ ms.lasthandoff: 10/27/2017
     -   **[パスワードの有効期限 (日数)]** - デバイス パスワードの変更が必要になるまでの日数を指定します。
     -   **[Prevent reuse of previous passwords (前のパスワードを再利用できないようにする)]** - デバイスで記憶される、以前に使用したパスワードの数を指定します。
     -   **[指紋によるロック解除]** - 指紋を使用して互換性のあるデバイスのロックを解除できます。
-- **[パスコードの変更 (監視モードのみ)]** - パスコードの変更、追加、削除を停止します。 
+- **[パスコードの変更 (監視モードのみ)]** - パスコードの変更、追加、削除を停止します。
     - **[指紋の変更 (管理モードのみ)]** - ユーザーによる TouchID 設定の変更、追加、削除を停止します。
 
 <sup>1</sup> **[画面がロックされるまでの非アクティブな最長時間 (分)]** と **[画面ロック後にパスワードが要求されるまでの最長時間 (分)]** の設定を構成した場合、これらの設定は順番に適用されます。 たとえば、両方の設定値を「 **5** 」分に設定すると、5 分後に画面が自動的にオフになり、さらに 5 分後にデバイスがロックされます。 ただし、ユーザーが手動で画面をオフにした場合、2 つ目の設定は即時に適用されます。 同じ例で、ユーザーが画面をオフにした後、デバイスは 5 分後にロックされます。
@@ -89,7 +137,7 @@ ms.lasthandoff: 10/27/2017
 
 ## <a name="built-in-apps"></a>組み込みアプリ
 
--   **[カメラ]** - デバイスのカメラを使用できるようにするかどうかを選択します。 
+-   **[カメラ]** - デバイスのカメラを使用できるようにするかどうかを選択します。
     -   **[FaceTime]** - FaceTime アプリをデバイスで使用できるようにします。
 -   **[Siri]** - デバイスで Siri 音声アシスタントを使用できるようにします。
     -   **[デバイスがロックされている間の Siri]** - デバイスのロック中に Siri 音声アシスタントを使用できるようにします。
@@ -124,9 +172,7 @@ ms.lasthandoff: 10/27/2017
 例: Microsoft Word for iPad を検索します。 https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8 という URL を使用します。
 
 > [!Note]
-> iTunes ソフトウェアを使用してアプリを検索し、[ **リンクのコピー** ] コマンドを使用してアプリの URL を入手することもできます。
-
-
+> iTunes を使用してアプリを検索し、**[リンクのコピー]** コマンドを使用してアプリの URL を入手することもできます。
 
 ### <a name="additional-options"></a>追加オプション
 
@@ -151,7 +197,7 @@ ms.lasthandoff: 10/27/2017
 例: Microsoft Word for iPad を検索します。 https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8 という URL を使用します。
 
 > [!Note]
-> iTunes ソフトウェアを使用してアプリを検索し、[ **リンクのコピー** ] コマンドを使用してアプリの URL を入手することもできます。
+> iTunes ソフトウェアを使用してアプリを検索し、**[ リンクのコピー ]** コマンドを使用してアプリの URL を入手することもできます。
 
 ### <a name="additional-options"></a>追加オプション
 
@@ -247,7 +293,7 @@ ms.lasthandoff: 10/27/2017
 ,com.apple.mobileslideshow,Photos,Apple
 ,com.apple.podcasts,Podcasts,Apple
 ,com.apple.reminders,Reminders,Apple
-,com.apple.mobilesafariSafari,Apple
+,com.apple.MobileSafari,Safari,Apple
 ,com.apple.Preferences,Settings,Apple
 ,com.apple.stocks,Stocks,Apple
 ,com.apple.tips,Tips,Apple
@@ -305,6 +351,6 @@ ms.lasthandoff: 10/27/2017
 **[Web ドメイン URL]** フィールドで、1 つ以上の URL を一覧に追加します。 指定したドメインからダウンロードされたドキュメントは、管理されているものと見なされます。 この設定は、Safari ブラウザーを使用してダウンロードされたドキュメントにのみ適用されます。
 
 
-### <a name="safari-password-auto-fill-domains"></a>Safari パスワードの自動入力ドメイン
+### <a name="safari-password-autofill-domains"></a>Safari パスワードの自動入力ドメイン
 
 **[ドメイン URL]** フィールドで、1 つ以上の URL を一覧に追加します。 ユーザーは、この一覧の URL からの Web パスワードのみを保存できます。 この設定は、Safari ブラウザー、および iOS 9.3 以降の監視モードのデバイスにのみ適用されます。 URL を指定しないと、すべての Web サイトからのパスワードが保存されます。
