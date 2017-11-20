@@ -608,19 +608,23 @@
         - name: データ ウェアハウス データ モデル
           href: reports-ref-data-model.md
           items:
+            - name: Intune データ ウェアハウスのユーザー有効期間の表記
+              href: reports-ref-user-timeline.md
             - name: アプリケーション エンティティのリファレンス
               href: reports-ref-application.md
+            - name: 現在のユーザー エンティティのリファレンス
+              href: reports-ref-current-user.md
             - name: 日付エンティティのリファレンス
               href: reports-ref-date.md
             - name: デバイス エンティティの参照
               href: reports-ref-devices.md
-            - name: Intune の管理拡張のリファレンス
+            - name: Intune の管理拡張エンティティのリファレンス
               href: reports-ref-intunemanagementextension.md
             - name: モバイル アプリ管理 (MAM) エンティティのリファレンス
               href: reports-ref-mobile-app-management.md
             - name: ポリシー エンティティのリファレンス
               href: reports-ref-policy.md
-            - name: ユーザーデバイスの関連付けの参照
+            - name: ユーザー デバイスの関連付けエンティティのリファレンス
               href: reports-ref-user-device.md
             - name: User エンティティのリファレンス
               href: reports-ref-user.md
