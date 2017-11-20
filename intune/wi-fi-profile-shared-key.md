@@ -3,10 +3,10 @@ title: "事前共有キーを使用した Wi-Fi プロファイルの作成"
 titleSuffix: Azure portal
 description: "Intune カスタム プロファイルを使用して、事前共有キーで Wi-Fi プロファイルを作成します。\""
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 05/15/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c524acc403d6a1c041aa0dcea0948c2707202e03
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: bfcce8d38bc403a13aa28cc762370a7cfaa0bc2d
+ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/10/2017
 ---
-# <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Microsoft Intune カスタム デバイス プロファイルを使用して、事前共有キーで Wi-Fi プロファイルを作成する
+# <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>カスタム デバイス プロファイルを使用し、事前共有キーを使用した Wi-Fi プロファイルを作成します。
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune の**カスタム デバイス プロファイル**を使用して、事前共有キーを使用して Wi-Fi プロファイルを作成する方法を次に示します。 このトピックでは、EAP ベースの Wi-Fi プロファイルを作成する方法の例も示します。
@@ -205,3 +205,12 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
     すべての中から正しいプロファイルを探す必要があるため、多数のワイヤレス ネットワークに接続したことのないコンピューターを使用するのが最良です。
 3.     XML ファイルを検索し、正しい名前のファイルを探します。
 4.     正しい XML ファイルを見つけたら、OMA-URI の設定ページの [データ] フィールドに、XML コードをコピーして貼り付けます。
+
+## <a name="best-practices"></a>ヒント集
+PSK で Wi-Fi プロファイルを展開する前に、デバイスがエンドポイントに直接接続できることを確認します。
+
+キー (パスワードまたはパスフレーズ) をローテーションで使用するときは、ダウンタウンを予想し、展開を適宜計画します。 新しい Wi-Fi プロファイルは非稼働時間中にプッシュすることを検討してください。 また、接続に影響が出る可能性をユーザーに知らせます。
+ 
+円滑に移行と、適切なタイミングでのポリシー更新の配信を実現するために、デバイスの通信チャネルを 1 つ以上 Intune に対して常に開いておく必要があります。 これを行うには、セルラー接続を使用するか、Intune エンドポイントにのみユーザーを接続するゲスト Wi-Fi アクセスを提供します。
+
+

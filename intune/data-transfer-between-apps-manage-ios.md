@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 997f4a612c69a7ddd6d56d4d860614c3bc513d3d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 3e4dcd7767620d6d3939686f69ad9d72f6a2d8e2
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>iOS アプリ間のデータ転送を管理する方法
 ## <a name="manage-ios-apps"></a>iOS アプリを管理する
@@ -30,6 +30,7 @@ ms.lasthandoff: 09/09/2017
 -   また、アプリは **MDM チャネル**から展開して管理することもできます。  これには、デバイスが MDM ソリューションに登録されていることが必要です。 これらは**ポリシーで管理されている**アプリであるか、またはその他の管理対象アプリである必要があります。
 
 iOS デバイスの **Open In Management** 機能を使用すると、**MDM チャネル**を使用して展開されているアプリ間でのみファイル転送が行われるよう制限できます。 Open In Management の制限は、構成設定で設定され、MDM ソリューションを使用して展開されます。  展開されているアプリをユーザーがインストールすると、管理者が設定した制限が適用されます。
+
 ##  <a name="using-app-protection-with-ios-apps"></a>iOS アプリでのアプリ保護の使用
 アプリ保護ポリシーは、iOS の **Open in Management** 機能と共に使用して、以下のように会社データを保護できます。
 
@@ -40,30 +41,25 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 -   **サード パーティの MDM ソリューションで管理されているデバイス:** iOS の **Open In Management** 機能を使用して、データ転送が管理対象のアプリに対してのみ行われるよう制限できます。
 サードパーティの MDM ソリューションを使用して展開するアプリを、Intune で構成したアプリ保護ポリシーとも関連付けるには、[ユーザー UPN 設定の構成](#configure-user-upn-setting-for-third-party-emm)チュートリアルに従ってユーザー UPN 設定を構成する必要があります。  アプリがユーザー UPN 設定を使用して展開されている場合、エンド ユーザーが職場アカウントを使用してサインインすると、アプリ保護ポリシーがアプリに適用されます。
 
-> [!IMPORTANT]
-> ユーザー UPN 設定は、サード パーティの MDM によって管理されるデバイスに展開されたアプリに対してのみ必要です。  Intune の管理対象デバイスの場合は、この設定は必要ありません。
-
-
-## <a name="configure-user-upn-setting-for-third-party-emm"></a>サードパーティ EMM のユーザー UPN 設定を構成する
-ユーザー UPN 設定の構成は、サード パーティの EMM ソリューションによって管理されているデバイスに**必要**となります。 以下に示す手順では、UPN 設定の一般的な構成方法と、その結果として得られるエンドユーザー エクスペリエンスを示しています。
-
+## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>Microsoft Intune またはサード パーティ EMM のユーザー UPN 設定を構成する
+ユーザー UPN 設定の構成は、Intune またはサード パーティの EMM ソリューションによって管理されているデバイスに**必要**となります。 以下に示す手順では、UPN 設定の一般的な構成方法と、その結果として得られるエンドユーザー エクスペリエンスを示しています。
 
 1.  [Azure Portal](https://portal.azure.com) で、iOS 用の[アプリ保護ポリシーを作成して割り当て](app-protection-policies.md)ます。 企業の要件に合わせてポリシー設定を構成し、このポリシーを使う iOS アプリを選びます。
 
-2.  次の汎用化された手順を使用して、**サードパーティの MDM ソリューションで**管理するアプリとメール プロファイルをデプロイします。 このエクスペリエンスは例 1 でも取り上げています。
+2.  次の汎用化された手順を使用して、Intune またはサード パーティの MDM ソリューションで管理するアプリとメール プロファイルをデプロイします。 このエクスペリエンスは例 1 でも取り上げています。
 
-  1.  次のアプリ構成設定でアプリをデプロイします。
+3.  次のアプリ構成設定でアプリをデプロイします。
 
       **キー** = IntuneMAMUPN、**値** = <username@company.com>
 
       例: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-  2.  登録済みデバイスに、サードパーティの MDM プロバイダーを使用して Open in management ポリシーをデプロイします。
+4.  登録済みデバイスに、Intune またはサード パーティの MDM プロバイダーを使用して **Open in management** ポリシーをデプロイします。
 
 
-### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>例 1: サードパーティ MDM コンソールの管理エクスペリエンス
+### <a name="example-1-admin-experience-in-intune-or-third-party-mdm-console"></a>例 1: Intune またはサード パーティ MDM コンソールの管理エクスペリエンス
 
-1. サードパーティ MDM プロバイダーの管理コンソールに移動します。 登録済みの iOS デバイスにアプリケーション構成設定をデプロイするコンソールのセクションに移動します。
+1. Intune またはサード パーティ MDM プロバイダーの管理コンソールに移動します。 登録済みの iOS デバイスにアプリケーション構成設定をデプロイするコンソールのセクションに移動します。
 
 2. [アプリケーションの構成] セクションで、次の設定を入力します。
 
@@ -73,6 +69,7 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 
 |サードパーティ MDM プロバイダー| Configuration キー | 値の種類 | 構成値|
 | ------- | ---- | ---- | ---- |
+|Microsoft Intune| IntuneMAMUPN | 文字列型 | {UserPrincipalName}|
 |VMware AirWatch| IntuneMAMUPN | 文字列型 | {UserPrincipalName}|
 |MobileIron | IntuneMAMUPN | 文字列型 | ${userUPN} **または** ${userEmailAddress} |
 

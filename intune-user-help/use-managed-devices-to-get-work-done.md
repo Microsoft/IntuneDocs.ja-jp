@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9317fd747e52524d97cea5d4c79fed49246b5866
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: d8a5989358da932e4e8ce59528602fefb2265528
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>管理デバイスを使用して作業する
 Microsoft Intune は、組織がデバイス (スマートフォン、タブレット、PC など)、アプリ、およびその他の企業リソース (電子メールなど) を管理できるようにするソフトウェアです。 これを利用すると、企業の情報の安全性を確保しつつ、従業員が事実上どこからでも、ほぼすべてのデバイスで業務情報にアクセスできるようになります。
@@ -28,7 +28,7 @@ Microsoft Intune は、組織がデバイス (スマートフォン、タブレ�
 デバイスを Intune による管理対象として登録すると、IT 部門はそのような職場または学校のリソースを管理してより安全な状態に維持できるようになる一方で、従業員は自分好みのデバイスを使用して業務を進めることができるようになります。 主な登録方法は、ポータル サイトを通じてデバイスを管理対象として登録する方法です。
 
 ## <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>デバイスを Intune に登録した場合に会社が確認できる情報
-会社の IT 部門では、作業に関する情報は確認できますが、個人情報は確認できません。 これは、職場で使用される個人のデバイスを登録するかどうかを確認する上で特に重要なことです。 [確認できる内容とできない内容については、ユーザー ヘルプの次の記事](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)で詳しく説明します。
+会社のサポートでは、作業に関する情報は確認できますが、個人情報は確認できません。 これは、職場で使用される個人のデバイスを登録するかどうかを確認する上で特に重要なことです。 [確認できる内容とできない内容については、ユーザー ヘルプの次の記事](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)で詳しく説明します。
 
 ## <a name="how-do-i-get-the-company-portal"></a>ポータル サイトの入手方法
 ポータル サイトは 2 通りの方法で入手できます。
@@ -49,7 +49,8 @@ Microsoft Intune は、組織がデバイス (スマートフォン、タブレ�
 次のリンクで、ポータル サイトとポータル サイト Web サイトで可能な操作を比較できます。
 
 - [Android デバイスを使用する](using-your-android-device-with-intune.md)
-- [iOS または macOS デバイスを使用する](using-your-ios-or-macOS-device-with-intune.md)
+- [iOS デバイスを使用する](using-your-ios-device-with-intune.md)
+- [macOS デバイスを使用する](using-your-macos-device-with-intune.md)
 - [Windows デバイスを使用する](using-your-windows-device-with-intune.md)
 - [ポータル Web サイトを使用する](using-the-intune-company-portal-website.md)
 

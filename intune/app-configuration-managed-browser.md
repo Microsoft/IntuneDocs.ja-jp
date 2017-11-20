@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/10/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99b8b50dbbb2dc2e3d7e8cd5af2f95fa2bb3b861
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: 395b48ab71b093c12c244fab1acd22c0ecca4c51
+ms.sourcegitcommit: 0a2897b5104dc33ca0661c27a373026d7f4cc956
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune で Managed Browser ポリシーを使ってインターネット アクセスを管理する
 
@@ -68,10 +68,10 @@ Intune Managed Browser では、[Microsoft Intune アプリケーション パ�
 3.  [管理] リストの **[アプリの構成]** ブレードで、**[アプリ構成ポリシー]** を選択します。
 4.  **[アプリ構成ポリシー]** ブレードで **[追加]** を選択します。
 5.  **[アプリの構成を追加する]** ブレードで **[名前]** に入力し、必要に応じてアプリ構成設定の **[説明]** に入力します。
-6.  **[デバイスの登録]** の種類では、**[管理対象デバイス]** または **[管理対象アプリ]** を選択します。
-7.  [**必要なアプリの選択**] を選択して、[**対象アプリ**] ブレードで、iOS、Android、またはその両方に [**Managed Browser**] を選択します。
+6.  **[デバイス登録の種類]** には、**[管理対象アプリ]** を選択します。
+7.  **[必要なアプリの選択]** を選択して、**[対象アプリ]** ブレードで、iOS、Android、またはその両方に **[Managed Browser]** を選択します。
 8.  **[OK]** を選択し、**[アプリの構成を追加する]** ブレードに戻ります。
-9.  [**構成の設定**] を選択します。 **[構成]** ブレードで、Managed Browser の構成を指定するキーと値のペアを定義します。 定義できる別のキーと値のペアについては、この記事の後半のセクションで説明します。
+9.  **[構成の設定]** を選択します。 **[構成]** ブレードで、Managed Browser の構成を指定するキーと値のペアを定義します。 定義できる別のキーと値のペアについては、この記事の後半のセクションで説明します。
 10. 終了したら、**[OK]** を選択します。
 11. **[アプリの構成を追加する]** ブレードで、**[作成]** を選択します。
 12. 新しい構成が作成され、**[アプリの構成]** ブレードに表示されます。
@@ -104,7 +104,7 @@ Intune Managed Browser と [Azure AD アプリケーション プロキシ]( htt
     - Managed Browser アプリのユーザーは、[Intune アプリの保護ポリシー]( app-protection-policy.md)をアプリに割り当てています。
 
 #### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>ステップ 1: Outlook から Managed Browser への自動リダイレクトを有効にする
-Outlook は、アプリ保護ポリシーの [**Managed Browser に表示する Web コンテンツを制限する**] 設定を有効にして構成される必要があります。
+Outlook は、アプリ保護ポリシーの **[Managed Browser に表示する Web コンテンツを制限する]** 設定を有効にして構成される必要があります。
 
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-managed-browser"></a>ステップ 2: Managed Browser に割り当てられたアプリ構成ポリシーを割り当てる
 この手順では、アプリ プロキシのリダイレクトを使用するように、Managed Browser アプリを構成します。 Managed Browser アプリの構成を作成する手順に従い、以下のキーと値のペアを指定します。
@@ -203,11 +203,27 @@ Managed Browser アプリの構成を作成する手順に従い、以下のキ�
 
     -   http://www.contoso.com: /&#42;
 
+## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>iOS で Managed Browser を使用し、管理対象アプリ ログにアクセスする方法
+
+iOS デバイスに Managed Browser をインストールしているエンド ユーザーは、Microsoft が公開しているすべてのアプリの管理ステータスを表示できます。 管理対象 iOS アプリの問題を解決するためにログを送信できます。
+
+1. iOS の **[設定]** を開きます。
+2. **Managed Browser** のアプリケーション設定を選択します。
+3. **[Intune 診断の有効化]** を切り替え、ブラウザーをトラブルシューティング モードに設定します。
+4. **Managed Browser** を開きます。 **[Intune アプリの状態を表示]** をクリックし、個々のアプリケーション ポリシー設定を確認します。
+5. **[開始]** と **[ログの共有]** または **[Microsoft にログを送信]** を押し、IT 管理者または Microsoft にトラブルシューティング ログを送信します。
+
+アプリ内からブラウザーをトラブルシューティング モードで開くこともできます。
+
+1. Managed Browser を開きます。
+2. アドレス バー「`about:intunehelp`」と入力します。
+ブラウザーがトラブルシューティング モードで起動します。
+
 ## <a name="security-and-privacy-for-the-managed-browser"></a>Managed Browser のセキュリティとプライバシー
 
 -   ユーザーが自分のデバイスの組み込みブラウザーに対して構成した設定は、Managed Browser では使用されません。 Managed Browser では、これらの設定にアクセスできません。
 
--   Managed Browser に関連付けられているアプリ保護ポリシーにオプション [**アクセスの際にシンプルな PIN を要求する**] または [**アクセスの際に会社の資格情報を要求する**] を設定した場合、およびユーザーが認証ページでヘルプのリンクを選択した場合は、ポリシーのブロック リストに追加されているかどうかにかかわらず、インターネット サイトを参照できます。
+-   Managed Browser に関連付けられているアプリ保護ポリシーにオプション **[アクセスの際にシンプルな PIN を要求する]** または **[アクセスの際に会社の資格情報を要求する]** を設定した場合、およびユーザーが認証ページでヘルプのリンクを選択した場合は、ポリシーのブロック リストに追加されているかどうかにかかわらず、インターネット サイトを参照できます。
 
 -   Managed Browser では、サイトへの直接のアクセスのみをブロックできます。 中間サービス (翻訳サービスなど) がサイトへのアクセスに使用される場合、そのアクセスはブロックされません。
 
@@ -220,7 +236,7 @@ Microsoft は、Microsoft の製品やサービスを改善するために、Man
 -   iOS デバイスでは、証明書の有効期限が切れている Web サイトや証明書が信頼されていない Web サイトにユーザーがアクセスしても、開くことができません。
 -   ユーザーが自分のデバイスの組み込みブラウザーに対して構成した設定は、Managed Browser では使用されません。 Managed Browser では、これらの設定にアクセスできません。
 
--   Managed Browser に関連付けられているアプリ保護ポリシーにオプション [**アクセスの際にシンプルな PIN を要求する**] または [**アクセスの際に会社の資格情報を要求する**] を設定した場合、およびユーザーが認証ページでヘルプのリンクを選択した場合は、ポリシーのブロック リストに追加されているかどうかにかかわらず、インターネット サイトを参照できます。
+-   Managed Browser に関連付けられているアプリ保護ポリシーにオプション **[アクセスの際にシンプルな PIN を要求する]** または **[アクセスの際に会社の資格情報を要求する]** を設定した場合、およびユーザーが認証ページでヘルプのリンクを選択した場合は、ポリシーのブロック リストに追加されているかどうかにかかわらず、インターネット サイトを参照できます。
 
 -   Managed Browser では、サイトへの直接のアクセスのみをブロックできます。 中間サービス (翻訳サービスなど) がサイトへのアクセスに使用される場合、そのアクセスはブロックされません。
 

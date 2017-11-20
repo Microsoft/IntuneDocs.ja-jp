@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 10/05/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8bb3061baf42b011c98cf7b196e939448f91cff4
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 3a4e2b3493467f922b844130829db8e5ba14b246
+ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="provide-remote-assistance-for-intune-managed-devices"></a>Intune で管理されたデバイスにリモート アシスタンスを提供する
 
@@ -29,13 +29,10 @@ Intune では、別売りの [TeamViewer](https://www.teamviewer.com) ソフト�
 
 ### <a name="supported-devices"></a>サポートされるデバイス
 
-次の Intune で管理されたデバイスが、リモート管理をサポートします。
-
-- Intune で管理された Android デバイス
-- Windows 10 および Windows 10 Mobile 以降を搭載する Intune で管理された Windows デバイス
+Intune で管理された Android デバイスと Windows デバイスでは、リモート管理がサポートされます。
 
 >[!NOTE]
->Windows Holographic (HoloLens)、Windows Team (Surface Hub)、Windows 10 S は、TeamViewer ソフトウェアではサポートされません
+>Windows Holographic (HoloLens)、Windows Team (Surface Hub)、Windows 10 S は、TeamViewer ソフトウェアではサポートされません。 
 
 
 
