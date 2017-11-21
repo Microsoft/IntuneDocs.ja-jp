@@ -2,8 +2,8 @@
 title: "Intune へのデバイスの登録での多要素認証"
 description: "デバイス登録で Azure AD の多要素認証を要求する方法。"
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angerobe
 ms.date: 02/17/2017
 ms.topic: article
@@ -11,13 +11,13 @@ ms.prod:
 ms.service: 
 ms.technology: 
 ms.assetid: 47abdabd-dcd6-48d8-aade-3f3eefb92ee1
-ROBOTS: 
+ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 805ca79932788786636d365109e06aee836d8a0e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6d8a13033486256da171847646bd95fe77c978c8
+ms.sourcegitcommit: f9bfdaed6037bd76f8715fa7ca15a3457d26370a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="multi-factor-authentication-for-intune-device-enrollments"></a>Intune へのデバイスの登録での多要素認証
 
@@ -41,7 +41,7 @@ MFA は、iOS、Android、Windows 8.1 以上、または Windows Phone 8.1 以�
 
 1. 管理者資格情報で [Microsoft Azure ポータル](https://manage.windowsazure.com)にサインインします。
 2. テナントを選択します。
-2. **[アプリケーション]** タブを選択します。 Azure AD のセキュリティ機能を構成できるサービスの一覧が表示されます。
+2. **[アプリケーション]** タブを選択します。Azure AD のセキュリティ機能を構成できるサービスの一覧が表示されます。
 3. **[Microsoft Intune enrollment (Microsoft Intune 登録)]** を選択します。
 4. **[構成]** を選択します。 
 5. **[多要素認証と場所ベースのアクセス規則]** では、次の操作をすることができます。
