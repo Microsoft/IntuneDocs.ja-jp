@@ -386,6 +386,8 @@
           href: compliance-policy-create-android.md
         - name: Android for Work ポリシーの作成
           href: compliance-policy-create-android-for-work.md
+        - name: Google Play プロテクトを有効にするためのポリシーの作成
+          href: compliance-policy-create-google-play-protect.md
         - name: iOS ポリシーの作成
           href: compliance-policy-create-ios.md
         - name: macOS ポリシーの作成
