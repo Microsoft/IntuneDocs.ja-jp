@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6184552ce901ffc062f0453f169ec992049ae69b
-ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
+ms.openlocfilehash: dd84812a7e7dcf83f01c8d4d2b613706f7700775
+ms.sourcegitcommit: b2a6678a0e9617f94ee8c65e7981211483b30ee7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Jamf Pro で管理された Mac にコンプライアンスを適用します
 
@@ -64,3 +64,8 @@ Azure Active Directory および Microsoft Intune の条件付きアクセス �
 2. トリガーと実行の頻度を含め、**[条件付きアクセス]** ペイロードを構成します。 優先順位を **[After]\(後続\)** に設定します。
 3. **[スコープ]** タブをクリックし、ポリシーのスコープをすべての対象デバイスにします。
 4. **[セルフ サービス]** タブをクリックし、Jamf セルフ サービスでポリシーを利用可能にします。 ポリシーを **[デバイスのポリシー準拠]** カテゴリに含めます。 **[Save]**(保存) をクリックします。
+
+## <a name="next-steps"></a>次のステップ
+
+- [Azure Active Directory の条件付きアクセス](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
+- [Azure Active Directory の条件付きアクセスの概要](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)

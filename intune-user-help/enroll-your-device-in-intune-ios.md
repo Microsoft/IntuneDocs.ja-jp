@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ee4275ec7b9b455cf6ebf032123127fde97a9a74
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: 790b935b71b641aec3093a9cdd7f7a98ba90babb
+ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>会社のリソースへのアクセスを設定する
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 11/15/2017
 |![Azure AD パスワード プロンプト。](./media/ios-0b-cp-enroll-1711.png)|パスワードを入力し、**[サインイン]** をタップします。|
 |![[Loading company resources]\(会社のリソースを読み込んでいます\) スプラッシュ スクリーン。](./media/ios-1-cp-enroll-1711.png)|読み込まれるのを待ちます。|
 |![使用条件。](./media/ios-2-cp-enroll-1711.png)|使用条件を読み、**すべて同意**します。|
-|![[会社アクセスのセットアップ] 画面。 現在、管理と設定の両方で解決が必要です。](./media/ios-3-cp-enroll-1711.png)|**[Get your device managed]\(デバイスを管理する\)** をタップして、お使いのデバイスから会社のリソースへアクセスできるようにするプロセスを始めます。 これを今すぐ行うことができない場合は、プロセスを **[延期]** できますが、その場合は電子メールやドキュメントなどを取得できません。|
+|![[会社アクセスのセットアップ] 画面。 現在、管理と設定の両方で解決が必要です。](./media/ios-3-cp-enroll-1711.png)|**[開始]** をタップして、お使いのデバイスから会社のリソースへアクセスできるようにするプロセスを始めます。 これを今すぐ行うことができない場合は、プロセスを **[延期]** できますが、その場合は電子メールやドキュメントなどを取得できません。|
 |![[What can my company see]\(会社で表示できるリソース\) 画面。](./media/ios-4-cp-enroll-1711.png)|下部のリンクをタップして、会社で表示できるリソースの **[詳細情報]** を確認できます。 それ以外の場合は、**[続行]** をタップします。|
 |![[次のステップ] 画面。](./media/ios-5-cp-enroll-1711.png)|この画面では、セットアップ時に何が行われるかについて説明します。 このプロセスを完了するには、Safari、設定アプリおよびポータル サイト アプリを使用します。 **[次へ]** をタップします。|
 |![[次のステップ] で [次へ] をタップした後の読み込み画面。](./media/ios-6-cp-enroll-1711.png)||
@@ -66,7 +66,7 @@ ms.lasthandoff: 11/15/2017
 |![[Loading company resources]\(会社のリソースを読み込んでいます\) 画面。](./media/ios-18-cp-enroll-1711.png)|読み込まれるのを待ちます。|
 |![ポータル サイト アプリでデバイス カテゴリを選択します。](./media/ios-19-cp-enroll-1711.png)|お使いのデバイスに最も適したカテゴリを選択します。 これは、通常、デバイスの所有者や、普段使用する場所に関連します。|
 |![カテゴリ選択。](./media/ios-20-cp-enroll-1711.png)||
-|![デバイス管理が正常に行われました。設定を更新する必要があります。](./media/ios-21-cp-enroll-1711.png)|デバイスを管理する処理が正常に行われました。 パスワードの長さなど、会社が更新を必要とする追加の設定がある可能性があります。 **[デバイス設定の更新]** をタップして続行します。|
+|![デバイス管理が正常に行われました。設定を更新する必要があります。](./media/ios-21-cp-enroll-1711.png)|デバイスを管理する処理が正常に行われました。 パスワードの長さなど、会社が更新を必要とする追加の設定がある可能性があります。 **[続行]** をタップして続行します。|
 |![デバイス設定を確認しています。](./media/ios-22-cp-enroll-1711.png)|ポータル サイトは、更新を必要とする設定があるかどうか確認します。|
 |![設定の確認が終了しましたが、OS バージョンが正しくありません](./media/ios-23-cp-enroll-1711.png)|ポータル サイトでは、設定に関する問題を解決する方法の指示が提供されます。 問題の修正が完了したら、**[Check Settings]\(設定の確認\)** をタップします。|
 |![[Confirming device settings]\(デバイス設定を確認しています\) 読み込み画面。](./media/ios-24-cp-enroll-1711.png)|デバイスは、設定が会社のリソースにアクセスするのに十分安全であるかどうかを確認します。|
