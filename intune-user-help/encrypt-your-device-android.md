@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3a2622c7c981e64b3e220424c6661a5ba9e30751
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 895a089a58845da609423ab7fd74fbf26e0b967f
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>暗号化を使用して Android デバイスを保護する方法
 
 デバイスを暗号化するときに、承認されていないユーザーがアクセスできないように保護コード層でデバイスに関する情報をラップします。 ユーザーの情報を確実にセキュリティで保護するために、組織ではまず、企業のファイル、電子メール、またはデータにアクセスする前にユーザーに Android デバイスを暗号化するよう求める必要があります。
 
 > [!Note]
-> 会社のサポートが要求する場合、暗号化の前に PIN またはパスワードを設定するように求められることがあります。
+> Huawei 製や Vivo および OPPO 製の特定の Android デバイスは暗号化できません。 詳細については、[こちら](your-device-appears-encrypted-but-cp-says-otherwise-android.md)を参照してください。
 
 電話の登録を解除しても、暗号化は維持されます。
 
@@ -37,9 +37,6 @@ ms.lasthandoff: 09/28/2017
     (一部の電話では、"暗号化" オプションを表示するために、**[ストレージ]** > **[ストレージの暗号化]** または **[ストレージ]** > **[画面のロックとセキュリティ]** > **[他のセキュリティ設定]** の順に選択する必要があります。)
 
 3.  画面の指示に従います。 暗号化が行われている間、デバイスが何度か再起動する場合があります。
-
-> [!Note]
-> 一部の Android デバイスは暗号化できません。 詳細については、[こちら](your-device-appears-encrypted-but-cp-says-otherwise-android.md)を参照してください。
 
 ### <a name="what-to-do-if-you-have-issues"></a>問題がある場合の対処方法
 **問題**: デバイスに既に暗号化を適用していますが、次のいずれかの状態に遭遇しました。

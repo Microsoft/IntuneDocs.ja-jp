@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/03/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: c03985bd7ca92fe4b4e8ea163b7db421bfae09c2
-ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
+ms.openlocfilehash: 6595382606b9c53083e7beec9ca02a314abb5899
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>デバイスを登録した場合に会社が確認できる情報
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 11/03/2017
 
 **会社が常に確認できる情報**
 
-- デバイス モデル (例: iPhone 7)
+- デバイス モデル (例: Google Pixel)
 - 製造元 (例: Microsoft)
 - オペレーティング システム (例: iOS)
 - アプリ名 (例: Microsoft Word)
@@ -48,4 +48,5 @@ ms.lasthandoff: 11/03/2017
 
 -  電話番号: **会社**が所有するデバイスの場合は、ユーザーの電話番号を確認できます。 **個人**が所有するデバイスの場合は、会社が確認できるのは、ユーザーの電話番号の最後の 4 桁のみです。 個々のデバイスの**所有権の種類**を確認するには、デバイスの **[デバイスの詳細]** ページを開きます。
 -  場所: 監視対象となっている iOS デバイスを紛失した場合を除き、会社はユーザーのデバイスの場所を確認できません。 [確認方法](https://go.microsoft.com/fwlink/?linkid=853816)
-- アプリ インベントリ: Mobile Threat Defense を使っている会社は、デバイス上のアプリに関する詳細を見ることができます。 Mobile Threat Defense の詳細については、[こちら](you-are-prompted-to-install-mtd-ios.md)をご覧ください。
+- アプリ インベントリ: 会社で Mobile Threat Defense を使っている場合、iOS デバイス上のアプリの詳細を見ることができます。 Mobile Threat Defense の詳細については、[こちら](you-are-prompted-to-install-mtd-ios.md)をご覧ください。
+- ネットワーク情報: Android デバイスのネットワーク接続情報の一部は、社内サポートが確認できる場合があります。 たとえば、デバイスを特定の建物内に維持するように会社が定めている場合、デバイスでは接続先のネットワークが識別されます。 

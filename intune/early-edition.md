@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 11/6/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f7cc595655950ef1bf2586e939b6f02e270e7afc
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: f4fd810529732d2b24b948eb0ae741d37e0fb59e
+ms.sourcegitcommit: d64b03bff0566f08d88ecb488dd48f19af74cab3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 11/21/2017
 ---
-# <a name="the-early-edition-for-microsoft-intune---november-2017"></a>Microsoft Intune の初期エディション - 2017 年 11 月
+# <a name="the-early-edition-for-microsoft-intune---december-2017"></a>Microsoft Intune の初期エディション - 2017 年 12 月
 
 **初期エディション**では、Microsoft Intune の今後のリリースで予定されている新機能の一覧を提供しています。 ここに記載されている情報は、限られた範囲について開示されたものであり、また今後変更される可能性があります。 社外ではこの情報を共有しないでください。 ここに挙げられている機能は、発売日に間に合わない可能性があり、その場合は将来のリリースを待たなければなりません。 正式なリリースに向けてパイロット (フライト) テスト中の機能もあります。 ご不明な点や懸念される事項がある場合は、Microsoft 製品グループにお問い合わせください。
 
@@ -39,7 +39,102 @@ ms.lasthandoff: 11/08/2017
 
 ## <a name="intune-in-the-azure-portal"></a>Azure Portal での Intune
 
+### <a name="app-protection-policies-----679615---"></a>アプリ保護ポリシー  <!-- 679615 -->
+Intune App Protection ポリシーは、既定のグローバル ポリシーを作成し、テナント全体のすべてのユーザーに保護をすばやく適用する機能を提供します。
 
+### <a name="revoking-ios-volume-purchase-program-apps-----820863---"></a>iOS Volume-Purchase Program アプリの取り消し  <!-- 820863 -->
+1 つ以上の iOS Volume-Purchase Program (VPP) アプリがインストールされた特定のデバイスでは、そのデバイスで関連付けられているデバイス ベース アプリのライセンスを取り消すことができます。 アプリのライセンスを取り消しても、関連する VPP アプリがデバイスからアンインストールされるわけではありません。 VPP アプリをアンインストールするには、割り当てアクションを **[アンインストール]** に変更する必要があります。 詳細については、「[Volume Purchase Program で購入した iOS アプリを Microsoft Intune で管理する方法](vpp-apps-ios.md)」をご覧ください。
+
+### <a name="revoke-licenses-for-an-ios-volume-purchasing-program-token----820870---"></a>iOS Volume Purchasing Program トークンのライセンスの取り消し <!-- 820870 -->
+特定の VPP トークンのすべての iOS Volume Purchasing Program (VPP) アプリのライセンスを取り消すことができます。
+
+### <a name="delete-an-ios--volume-purchasing-program-token----820879---"></a>iOS Volume Purchasing Program トークンのライセンスの削除 <!-- 820879 -->
+コンソールを使用して、iOS Volume Purchasing Program (VPP) トークンを削除できます。 VPP トークンのインスタンスが重複している場合に、これが必要になることがあります。
+
+### <a name="network-access-control-nac-device-check-in-reporting-----1232250---"></a>ネットワーク アクセス制御 (NAC) デバイス チェックイン レポート <!-- 1232250 -->
+この変更の前には、IT 管理者は NAC で管理されているデバイスが NAC ソリューションと通信しているかどうかを Intune 側から判断することができませんでした。 NAC で管理されているデバイスが NAC ソリューションと通信していない場合、そのデバイスは NAC ソリューションに非準拠のデバイスとみなされます。そのため、NAC で管理されているデバイスは NAC ソリューション自体にブロックされ、その後デバイスの準拠状態に依存する条件付きアクセス ポリシーによってブロックされます。
+
+今回の変更により、IT 管理者はどの NAC で管理されているデバイスが NAC ソリューションと正常に通信したかを確認できるようになります。 この新機能は、Intune 内のデバイス準拠ワークロードに配置された 2 つの新しい監視機能で構成され、次のように統計が表示されます。
+- **過去 1 時間の NAC 呼び出しの平均**
+- **最後の NAC 受信要求 (日付/時刻)**
+
+### <a name="new-ios-device-action------1244701---"></a>新しい iOS デバイス アクション <!-- 1244701 -->
+iOS 10.3 監視下のデバイスをシャット ダウンできます。 このアクションでは、エンド ユーザーへの警告なしにデバイスが即時シャットダウンされます。 **シャット ダウン (監視モードのみ)** アクションは、**デバイス** ワークロードでデバイスを選択した場合に、デバイス プロパティに表示されます。
+
+### <a name="palo-alto-vpn-now-supported----1333680-eeready---"></a>Palo Alto VPN がサポートされるようになりました <!-- 1333680 eeready -->
+ベースの VPN の構成時、**接続の種類**リストに Palo Alto VPN が表示されます。
+
+### <a name="multiple-connector-support-for-scep-and-pfx-certificate-handling----1361755-eeready---"></a>SCEP の複数コネクタ サポートと PFX 証明書処理 <!-- 1361755 eeready -->
+オンプレミス NDES コネクタを使用してデバイスに証明書を配信するお客様は、1 つのテナントに複数のコネクタを構成できます。
+
+この新しい機能では、次のシナリオがサポートされています。
+
+- **高可用性**
+
+    各 NDES コネクタは、Intune から証明書の要求を取得します。  1 つの NDES コネクタがオフラインになっても、その他のコネクタは要求の処理を続行できます。
+
+### <a name="new-automatic-redeployment-setting----1469168---"></a>新しい自動再配置設定 <!-- 1469168 -->
+この設定では、管理権限を持つユーザーが、デバイス ロック画面で **CTRL + Win + R** を使用してすべてのユーザー データとユーザー設定を削除できます。 このデバイスは自動的に再構成され、管理対象に再登録されます。
+
+この設定には、[Windows 10] -> [デバイスの制限] -> [全般] -> [Automatic redeployment]\(自動再デプロイ\) でアクセスできます。
+
+### <a name="install-office-apps-on-macos-devices----1494311---"></a>macOS デバイスでの Office アプリのインストール <!-- 1494311 -->
+macOS デバイスで Office アプリをインストールできるようになります。 この新しい種類のアプリでは、Word、Excel、PowerPoint、Outlook、OneNote をインストールできます。 これらのアプリには Microsoft AutoUpdater (MAU) も付属しており、アプリを安全かつ最新に保つことができます。
+
+### <a name="surface-hub-resource-account-supported----1566442-eeready---"></a>サポートされる Surface Hub リソース アカウント <!-- 1566442 eeready -->
+管理者が Surface Hub に関連付けられたリソース アカウントを定義、更新できる新しいデバイス アクションが追加されます。
+
+このリソース アカウントは、Skype または Exchange でミーティングに参加できるように認証する場合に Surface Hub で使用されます。 Surface Hub がミーティングで会議室として表示されるように、一意のリソース アカウントを作成できます。 たとえば、リソース アカウントは*会議室 B41/6233* と表示されます。 Surface Hub のリソース アカウント (デバイス アカウントと呼ばれる) は通常、会議室の場所や、他のリソース アカウントのパラメーターをいつ変更するかを構成するのに必要となります。
+
+管理者はデバイスでリソース アカウントを更新する場合、デバイスに関連付けられた現在の Active Directory または Azure Active Directory 資格情報を指定する必要があります。 デバイスでパスワードのローテーションがオンに設定されている場合には、管理者は Azure Active Directory に移動してパスワードを検索する必要があります。
+
+> [!NOTE]
+> すべてのフィールドがまとめて送信され、以前に構成されたすべてのフィールドを上書きします。 また、空のフィールドも既存のフィールドを上書きします。
+
+管理者が行える構成は次のとおりです。
+
+- **リソース アカウント**  
+
+   - **Active Directory ユーザー**   
+   Domainname\username、またはユーザー プリンシパル名: user@domainname.com
+   - **パスワード**
+
+
+- **オプションのリソース アカウント パラメーター** (指定されたリソース アカウントを使用して設定する必要があります)
+   - **パスワードのローテーション期間**   
+     アカウントのパスワードは、セキュリティ上の理由から、毎週 Surface Hub によって自動的に更新されます。 これを有効にした後にパラメーターを構成するには、最初に Azure Active Directory のアカウントのパスワードをリセットする必要があります。
+
+   - **SIP (セッション開始プロトコル) アドレス**    
+     自動検出が失敗した場合にのみ使用されます。
+
+   - **電子メール**    
+     デバイス アカウントまたはリソース アカウントの電子メール アドレス。
+
+   - **Exchange サーバー**    
+     自動検出が失敗した場合のみ必要です。
+
+   - **予定表の同期**    
+     予定表の同期と他の Exchange サーバー サービスが有効かどうかを指定します。 たとえば、ミーティングの同期などです。
+
+### <a name="intune-now-provides-the-account-move-operation-----1573558-1579830---"></a>Intune で、アカウントの移動操作が使用できるようになりました。<!-- 1573558, 1579830 -->
+**アカウントの移動**を行うと、Azure スケール ユニット (ASU) 間でテナントが移動します。 お客様が Intune サポート チームに連絡してアカウントの移動をリクエストする、お客様が開始するシナリオと、Microsoft でバックエンドでのサービスの調整が必要な、Microsoft 主導のシナリオの両方で**アカウントの移動**を使用できます。 **アカウントの移動**中は、テナントは読み取り専用モード (ROM) になります。 ROM 期間中は、デバイスの登録や名前変更、コンプライアンス状態の更新などのサービス操作が失敗します。
+
+### <a name="new-windows-defender-security-center-wdsc-device-configuration-profile-settings----1335507---"></a>新しい Windows Defender セキュリティ センター (WDSC) デバイス構成プロファイルの設定 <!-- 1335507 -->
+Intune の **Windows Defender セキュリティ センター**という名前の Endpoint Protection に、デバイス構成プロファイル設定の新しいセクションが追加されます。 IT 管理者は、Windows Defender セキュリティ センター アプリで、エンドユーザーがどの機能にアクセス可能かを構成できます。 IT 管理者が Windows Defender セキュリティ センター アプリで、ある機能を非表示にすると、ユーザーのデバイスで、その機能に関連するすべての通知が非表示になります。
+
+管理者が Windows Defender セキュリティ センター デバイス構成プロファイル設定で非表示にできる機能は、以下のとおりです。
+- ウイルスと脅威の防止
+- デバイスのパフォーマンスと正常性
+- ファイアウォールとネットワーク保護
+- アプリとブラウザー コントロール
+- ファミリー オプション
+
+IT 管理者は、ユーザーが受け取る通知をカスタマイズすることもできます。 たとえば、ユーザーが WDSC に表示される機能で生成されたすべての通知を受け取るか、または重要な通知のみを受け取るかを構成できます。 重要度の低い通知には、Windows Defender Antivirus のアクティビティに関する定期的な概要や、スキャン完了時の通知があります。 その他のすべての通知は重要とみなされます。 さらに、通知の内容自体をカスタマイズすることもできます。たとえば、IT 担当の連絡先情報を、ユーザーのデバイスに表示される通知に組み込むなどです。
+
+
+
+
+<!-- the following are present prior to 1712 -->
 ### <a name="assign-office-365-mobile-apps-to-ios-and-android-devices-using-built-in-app-type----1332318---"></a>組み込み型のアプリを利用し、iOS デバイスまたは Android デバイスに Office 365 モバイル アプリを割り当てる <!-- 1332318 -->
 **組み込み**型のアプリであれば、Office 365 アプリを作成し、管理している iOS または Android デバイスに割り当てることが簡単にできます。 これらのアプリには、Word、Excel、PowerPoint、OneDrive などの 0365 アプリがあります。 アプリの種類に特定のアプリを割り当て、アプリ情報構成を編集できます。
 

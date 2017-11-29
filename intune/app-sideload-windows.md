@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 3567f26053a235c5a5af761829f043e0db2f79b5
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 904041ba4936917dc976fd0a6de869e931927c2d
+ms.sourcegitcommit: f9bfdaed6037bd76f8715fa7ca15a3457d26370a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune を使用して Windows デバイスに展開できるように基幹業務アプリに署名する
 
@@ -192,8 +192,9 @@ Intune がユニバーサル アプリ用に依存関係をどのように処理
 
 |パラメーター | 説明|
 | ------------- | ------------- |
-|InputWin10AppxBundle |ソース appxbundle ファイルが配置されるパス |
-|OutputWin10AppxBundle |署名された appxbundle ファイルの出力パス  Win81Appx Windows 8.1 または Windows Phone 8.1 ポータル サイト (.APPX) ファイルが配置されるパス|
+|InputWin10AppxBundle |ソース appxbundle ファイルが配置されるパス。 |
+|OutputWin10AppxBundle |署名された appxbundle ファイルの出力パス |
+|Win81Appx | Windows 8.1 または Windows Phone 8.1 ポータル サイト (.APPX) ファイルが配置されるパス。|
 |PfxFilePath |Symantec エンタープライズ モバイル コード署名証明書 (.PFX) ファイルへのパス |
 |PfxPassword| Symantec エンタープライズ モバイル コード署名証明書のパスワード |
 |PublisherId |エンタープライズの発行者 ID 指定しない場合、Symantec エンタープライズ モバイル コード署名証明書の 'Subject' フィールドが使用されます。|

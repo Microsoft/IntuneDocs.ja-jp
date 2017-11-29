@@ -1,11 +1,11 @@
 ---
-title: "Intune に iOS デバイスを登録する | Microsoft Docs"
-description: "Intune に iOS デバイスを登録する方法について説明します"
+title: "会社のリソースへのアクセスを設定する | Microsoft Docs"
+description: "iOS デバイスを Intune で管理する方法について説明します"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/01/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,89 +16,63 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 41f39740b62074e06ccc64c6211d642d224efd6c
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: ee4275ec7b9b455cf6ebf032123127fde97a9a74
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="enroll-your-ios-device-in-intune"></a>Intune に iOS デバイスを登録する
+# <a name="set-up-access-to-your-company-resources"></a>会社のリソースへのアクセスを設定する
 
-職場または学校が Microsoft Intune を使用している場合は、お使いの iOS デバイスを登録して、会社の電子メール、ファイル、またその他のリソースにアクセスできます。 デバイスを登録すると、IT 部門が職場や学校のリソースを管理してそれらの安全性を保持する一方で、ユーザーは好みのデバイスを使用して作業を進めることができます。 登録の詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)」を参照してください。
+お客様の会社には、電子メール、ファイル、ネットワークなど、たくさんの機密情報があります。 お客様が iOS デバイスからそれらの情報にアクセスする場合に、会社は Microsoft Intune を使用して、情報を保護できます。 これにより、会社はそれらのリソースを管理してより安全に保つことができ、お客様は作業するのにお好きなデバイスを使用する自由が得られます。
 
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player]
 
 > [!NOTE]
 > メール アプリで会社の電子メールにアクセスしようとしている場合は、セキュリティを保つためにデバイスの管理を求められる可能性があります。 iOS デバイスから電子メールやその他の会社リソースにアクセスするには、以下の手順に従います。
 
-**開始する前に:**
+## <a name="before-you-start"></a>アップグレードを開始する前に
 
-- この手順を開始した後に、登録が完了したことを確認します。 通常、数分以上一時停止するとプロセスが停止し、再起動が必要になります。
-- 何らかの理由で登録に失敗した場合、ポータル サイト アプリに戻って、やり直す必要があります。
-- Wi-Fi が機能していることを確認します。 Wi-Fi が機能していない場合、登録は失敗します。
-- デバイスで Safari をブロックしている場合はブロックを解除します。 デバイス登録プロセスの一部として、Safari が使われます。
+- 開始したら、プロセス全体を完了するようにしてください。 通常、数分以上一時停止すると進行状況が停止し、やり直しが必要になります。
+- このプロセスが失敗した場合は、ポータル サイト アプリに戻り、やり直す必要があります。
+- Wi-Fi が使えており、お使いのデバイス上で Safari が動作していることを確認してください。
+- [Intune ポータル サイト アプリ](install-and-sign-in-to-the-intune-company-portal-app-ios.md)をダウンロードして、インストールします。
 
 
-**iOS デバイスを登録するには:**
+## <a name="using-the-company-portal-app-to-set-up-access-to-company-resources"></a>ポータル サイト アプリを使用して会社のリソースへのアクセスを設定する
 
-1.  「[Intune ポータル サイト アプリをインストールしてサインインする](install-and-sign-in-to-the-intune-company-portal-app-ios.md)」に記載の手順に従います。
-
-2. **[会社アクセスのセットアップ]** ページで、**[開始]** をタップします。
-
-    ![ios-enroll-comp-access-setup-begin](./media/ios-enroll-1a-comp-access-setup.png)
-
-3. **[デバイスを登録する理由]** 画面で、デバイスを登録すると可能になる操作についての説明を確認した後、**[続行]** をタップします。
-
-    ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
-
-  > [!NOTE]
-  > 黄色い三角形は、エラーが既に発生していることを意味するものではありません。 これらのアイコンは、登録プロセスに完了する必要のある手順があることを示します。
-
-4. 会社のサポートがユーザーの登録デバイスに関して確認できる情報と確認できない情報について確認し、**[続行]** をタップします。
-
-    ![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png)
-
-5.  **[次に行うこと]** 画面で、登録中に行う内容を確認し、**[登録]** をタップします。
-
-    ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
-
-6.  **[プロファイルのインストール]** 画面で、**[インストール]** をタップし、入力を求められたらパスコードを入力します。
-
-    ![ios-enroll-install-profile](./media/ios-enroll-2-mgt-profile-install.png)
-
-7.  **[インストール]** をタップします。
-
-    ![ios-enroll-tap-install](./media/ios-enroll-3-mgt-profile-install-2.png)    
-
-8.  **[インストール]** をタップすると、警告を読んだことになります。
-
-    ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
-
-9.  **[信頼]** をタップします。
-
-    ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
-
-10.  プロファイルのインストールが完了したことを示す画面に変わったら、**[完了]** をタップします。
-
-    ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
-
-    “デバイス登録中” というメッセージが画面に表示されます。
-
-11.  ポータル サイトでページを開くことを確認するメッセージが表示されたら、**[開く]** をタップします。
-
-    ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png)
-
-12. **[会社アクセスのセットアップ]** 画面で、**[続行]** をタップします。 この画面では、デバイスを準拠させるために行う必要がある他の要件が示されます (パスワードの設定など)。 すべてのコンプライアンス要件を満たすまで、画面に表示される指示に従います。 完了すると、[会社アクセスのセットアップ] 画面に戻ります。 **[続行]** をタップします。
-
-    ![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png)
-
-13. **[完了]** をタップします。
-
-    ![ios-enroll-tap-done](./media/ios-enroll-9-comp-access-setup-complete.png)
-
-これでデバイスが Intune に登録され、ポータル サイト アプリに戻ります。
+|表示される内容|説明|
+|---|---|
+|![下部に [サインイン] ボタンがある、ポータル サイトのサインイン画面。](./media/ios-0-cp-enroll-1711.png)|ポータル サイト アプリを開いて、**[サインイン]** をタップします。|
+|![Azure AD サインイン プロンプト。](./media/ios-0a-cp-enroll-1711.png)|会社の電子メール アドレスを入力し、**[次へ]** をタップします。|
+|![Azure AD パスワード プロンプト。](./media/ios-0b-cp-enroll-1711.png)|パスワードを入力し、**[サインイン]** をタップします。|
+|![[Loading company resources]\(会社のリソースを読み込んでいます\) スプラッシュ スクリーン。](./media/ios-1-cp-enroll-1711.png)|読み込まれるのを待ちます。|
+|![使用条件。](./media/ios-2-cp-enroll-1711.png)|使用条件を読み、**すべて同意**します。|
+|![[会社アクセスのセットアップ] 画面。 現在、管理と設定の両方で解決が必要です。](./media/ios-3-cp-enroll-1711.png)|**[Get your device managed]\(デバイスを管理する\)** をタップして、お使いのデバイスから会社のリソースへアクセスできるようにするプロセスを始めます。 これを今すぐ行うことができない場合は、プロセスを **[延期]** できますが、その場合は電子メールやドキュメントなどを取得できません。|
+|![[What can my company see]\(会社で表示できるリソース\) 画面。](./media/ios-4-cp-enroll-1711.png)|下部のリンクをタップして、会社で表示できるリソースの **[詳細情報]** を確認できます。 それ以外の場合は、**[続行]** をタップします。|
+|![[次のステップ] 画面。](./media/ios-5-cp-enroll-1711.png)|この画面では、セットアップ時に何が行われるかについて説明します。 このプロセスを完了するには、Safari、設定アプリおよびポータル サイト アプリを使用します。 **[次へ]** をタップします。|
+|![[次のステップ] で [次へ] をタップした後の読み込み画面。](./media/ios-6-cp-enroll-1711.png)||
+|![登録を行うため、Safari に切り替わります。](./media/ios-7-cp-enroll-1711.png)|お使いのデバイスの管理情報を取得するため、Safari に切り替わります。|
+|![設定アプリの起動を要求するシステム プロンプト。](./media/ios-8-cp-enroll-1711.png)|**[許可]** をタップして設定アプリを開き、構成プロファイルをダウンロードします。 これをインストールして、会社が企業の情報をお使いのデバイスで管理できるようにします。|
+|![設定で開いたプロファイル。](./media/ios-9-cp-enroll-1711.png)|**[インストール]** をタップします。|
+|![画面の下部にある [Installing profile]\(プロファイルのインストール\) モーダル ダイアログ。](./media/ios-10-cp-enroll-1711.png)|**[インストール]** をタップします。|
+|![[Profile is installing]\(プロファイルをインストールしています\) 読み込み画面。](./media/ios-11-cp-enroll-1711.png)|読み込まれるのを待ちます。|
+|![[プロファイル管理] 警告画面。](./media/ios-12-cp-enroll-1711.png)|Apple によって書かれたこの警告は、管理下のデバイスで行うことができる操作の種類の詳細を示します。 詳細については、[会社が確認できる情報](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)に関するページをご覧ください。|
+|![リモート管理の信頼について質問するシステム プロンプト。](./media/ios-13-cp-enroll-1711.png)|**[信頼する]** をタップして、お使いのデバイスで会社が企業の情報および設定の管理を行うことを許可します。|
+|![[Profile finishing installing]\(プロファイルのインストールを終了しています\) 読み込み画面。](./media/ios-14-cp-enroll-1711.png)|読み込まれるのを待ちます。|
+|![[Profile installed]\(プロファイルがインストールされました\) 画面。](./media/ios-15-cp-enroll-1711.png)|プロファイルがインストールされ、もうじきデバイスの企業の情報と設定が管理できるようになります。|
+|![登録を行うため、Safari に切り替わります。](./media/ios-16-cp-enroll-1711.png)|お使いのデバイスの管理情報の取得を終了するため、Safari に再び切り替わります。 |
+|![ポータル サイトを開くシステム プロンプト。](./media/ios-17-cp-enroll-1711.png)|**[開く]** をタップします。|
+|![[Loading company resources]\(会社のリソースを読み込んでいます\) 画面。](./media/ios-18-cp-enroll-1711.png)|読み込まれるのを待ちます。|
+|![ポータル サイト アプリでデバイス カテゴリを選択します。](./media/ios-19-cp-enroll-1711.png)|お使いのデバイスに最も適したカテゴリを選択します。 これは、通常、デバイスの所有者や、普段使用する場所に関連します。|
+|![カテゴリ選択。](./media/ios-20-cp-enroll-1711.png)||
+|![デバイス管理が正常に行われました。設定を更新する必要があります。](./media/ios-21-cp-enroll-1711.png)|デバイスを管理する処理が正常に行われました。 パスワードの長さなど、会社が更新を必要とする追加の設定がある可能性があります。 **[デバイス設定の更新]** をタップして続行します。|
+|![デバイス設定を確認しています。](./media/ios-22-cp-enroll-1711.png)|ポータル サイトは、更新を必要とする設定があるかどうか確認します。|
+|![設定の確認が終了しましたが、OS バージョンが正しくありません](./media/ios-23-cp-enroll-1711.png)|ポータル サイトでは、設定に関する問題を解決する方法の指示が提供されます。 問題の修正が完了したら、**[Check Settings]\(設定の確認\)** をタップします。|
+|![[Confirming device settings]\(デバイス設定を確認しています\) 読み込み画面。](./media/ios-24-cp-enroll-1711.png)|デバイスは、設定が会社のリソースにアクセスするのに十分安全であるかどうかを確認します。|
+|![正常に登録され更新された設定](./media/ios-25-cp-enroll-1711.png)|これで終了です。 これでデバイスが Intune に登録されました。|
 
 > [!Note]
-> デバイスを完全に登録する前に、完了する必要のある手順がさらにいくつかあります。 詳しくは、[通信費管理を使ったデバイスの登録](enroll-your-device-with-telecom-expense-management-ios.md)に関する記事をご覧ください。 組織が Apple の Device Enrollment Program を使っている場合は、[こちら](enroll-your-device-dep-ios.md)で詳細をご覧ください。
+> デバイスを完全に管理する前に、完了する必要のある手順がさらにいくつかある場合があります。 詳しくは、[通信費管理を使ったデバイスの登録](enroll-your-device-with-telecom-expense-management-ios.md)に関する記事をご覧ください。 組織が Apple の Device Enrollment Program を使っている場合は、[こちら](enroll-your-device-dep-ios.md)で詳細をご覧ください。
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。

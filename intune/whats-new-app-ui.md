@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,49 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dff1cb496b85f933d8f462b94f6e15fa7ff69a28
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 7ec7f322f0d35d50a7c84d8e40d43a6a04ae1b7d
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune とエンド ユーザー アプリの UI の更新
 このリリースの Microsoft Intune でエンド ユーザーに表示されるアプリの UI に加えられた変更について説明します。 これは、ユーザーとの通信や、展開のサポートのために作成したカスタム ドキュメントの更新に役立ちます。 会社のポータルを使用してヘルプデスクにサポートを求める場合に、直面している問題のトラブルシューティングをより適切に行う方法を理解するのにも役立ちます。
 
+## <a name="week-of-november-13-2017"></a>2017 年 11 月 13 日の週
+
+### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>iOS 用ポータル サイト バージョン 2.9.0 でのデバイスのセットアップ ワークフローの機能強化<!---1417174--->
+
+iOS 用ポータル サイト アプリでのデバイス セットアップ ワークフローを改善しました。 言葉がよりわかりやすくなり、可能な範囲で画面をまとめました。 また、セットアップのテキスト全体でお客様の会社名を使用することで、表現がより会社に合ったものになっています。
+
+> [!NOTE]
+> **[Microsoft Intune]** > **[モバイル アプリ]** > **[ポータル サイトのブランド化]** > **[会社名]** の Azure Portal で設定した会社名が使用されています。 この値を設定していない場合、**[Azure Active Directory]** > **[プロパティ]** > **[名前]** で設定したテナント名が使用されます。 [ポータル サイトのブランド化] で会社名を設定しておらず、テナント名を表示させたくない場合は、[ポータル サイトのブランド化] タブで会社名を設定することをお勧めします。この文字列をポータル サイトのヘッダーに表示させたくない場合は、[Show company name next to logo]\(ロゴの横に会社名を表示する\) チェックボックスをオフにすることができます。
+
+|以前|これらの手順の完了後、|
+|---|---|
+|![01](./media/ios_cp_enroll_01_before_1711.png)|![01](./media/ios_cp_enroll_01_after_1711.png)|
+|![02](./media/ios_cp_enroll_02_before_1711.png)|*前のステップと結合*|
+|![03](./media/ios_cp_enroll_03_before_1711.png)|![03](./media/ios_cp_enroll_03_after_1711.png)|
+|![04](./media/ios_cp_enroll_04_before_1711.png)|![04](./media/ios_cp_enroll_04_after_1711.png)|
+|![05](./media/ios_cp_enroll_05_before_1711.png)|![05](./media/ios_cp_enroll_05_after_1711.png)|
+|![06](./media/ios_cp_enroll_06_before_1711.png)|![06](./media/ios_cp_enroll_06_after_1711.png)|
+|![07](./media/ios_cp_enroll_07_before_1711.png)|![07](./media/ios_cp_enroll_07_after_1711.png)|
+
 
 ## <a name="week-of-november-6-2017"></a>2017 年 11 月 6 日の週
+
+### <a name="updates-to-the-company-portal-app-for-windows-10---1299474--"></a>Windows 10 用ポータル サイト アプリの更新内容 <!--1299474-->
+Windows 10 用ポータル サイト アプリの [設定] ページが更新され、すべての設定で、設定と目的のユーザー アクションの一貫性が高まっています。 また、その他の Windows アプリのレイアウトと一致させる更新も行われています。
+
+|以前|これらの手順の完了後、|
+|---|---|
+|![01](./media/w10-share-logs.png)|![02](./media/w10-share-logs-after-1711.png)|
+
 
 ### <a name="search-improvements-to-the-company-portal-apps-and-website---1418189--"></a>ポータル サイト アプリおよび Web サイトの検索機能強化 <!--1418189-->
 ポータル サイト アプリでは、アプリのカテゴリ、名前、説明で検索できるようになりました。 結果は関連性の高い順に並べ替えられます。 これらの更新は、[ポータル Web サイト](https://portal.manage.microsoft.com)でも利用可能です。
 
 マイクロソフトは関連性の追跡方法を微調整しています。ポータル Web サイトの一番下にある "フィードバック" リンクから調整具合をお知らせください。
-
-
 
 ## <a name="week-of-october-16-2017"></a>2017 年 10 月 16 日の週
 
@@ -45,10 +70,6 @@ iOS ユーザーもこの変更の影響を受けます。ポータル Web サ�
 
 ### <a name="ios-company-portal-displays-large-icons----1454593---"></a>iOS ポータル サイトでの大きいアイコンの表示 <!-- 1454593 -->
 このリリースでは、iOS ポータル サイトのアプリ タイルでのアイコンの表示方法に関する既知の問題が修正されました。 現在は、120 x 120 ピクセル以上のアプリ アイコンをアップロードすると、[ポータル Web サイト](https://portal.manage.microsoft.com)内と iOS ポータル サイトのアプリ ページ内で、アプリ タイルのフル サイズで表示されます。
-
-
-
-
 
 
 ## <a name="week-of-october-2-2017"></a>2017 年 10 月 2 日の週

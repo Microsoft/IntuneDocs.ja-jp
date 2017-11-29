@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7ad33ba7020f418f4894a689d5d66a74e4b8c10e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 78b5d58df44252d1f3916c1d2a2ea02fcb1a10e2
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="allow-only-mobile-apps-that-support-intune-app-protection-policies-to-access-office-365-services"></a>Intune アプリ保護ポリシーをサポートするモバイル アプリのみが Office 365 サービスにアクセスできるようにする
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 10/10/2017
 * **EAS**: Exchange Active Sync
 
 ## <a name="prerequisites"></a>必要条件
-アプリ ベースの条件付きアクセス ポリシーを作成する**前に**、**Enterprise Mobility + Security または Azure Active Directory Premium サブスクリプション**を用意する必要があります。また、ユーザーに EMS または Azure AD のライセンスが付与される必要があります。 詳細については、「[Enterprise Mobility pricing page](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility の価格) ページまたは「[Azure Active Directory の価格](https://azure.microsoft.com/pricing/details/active-directory/)」ページを参照してください。
+アプリ ベースの条件付きアクセス ポリシーを作成する**前に**、**Enterprise Mobility + Security または Azure Active Directory Premium サブスクリプション**を用意する必要があります。また、ユーザーに EMS または Azure AD のライセンスが付与されている必要があります。 詳細については、「[Enterprise Mobility pricing page](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing)」 (Enterprise Mobility の価格) ページまたは「[Azure Active Directory の価格](https://azure.microsoft.com/pricing/details/active-directory/)」ページを参照してください。
 
 
 ## <a name="supported-apps"></a>サポートされているアプリ
@@ -55,7 +55,7 @@ ms.lasthandoff: 10/10/2017
 >[!IMPORTANT]
 >Android デバイスでは、OneDrive アプリまたは Outlook アプリのいずれかにログインして、最初にデバイス登録を実行する必要があります。 Android 用の OneNote アプリは、登録なしでの MAM をまだサポートしていません。
 
-アプリ ベースの条件付きアクセス ポリシーがあるアプリのユーザー エクスペリエンスの詳細については、「[What to expect when using an app with MAM CA](use-apps-with-mam-ca.md)」(アプリと MAM CA を使用する場合の結果) を参照してください。
+アプリ ベースの条件付きアクセス ポリシーが設定されたアプリのユーザー エクスペリエンスの詳細については、[アプリと MAM CA を使用する場合の結果](use-apps-with-mam-ca.md)に関するページをご覧ください。
 
 
 ## <a name="next-steps"></a>次のステップ

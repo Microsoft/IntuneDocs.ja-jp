@@ -15,11 +15,11 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b2f91005394d1bb586dcc07f309c89a8a1f1da7a
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: a6f13e4c741a59eddc352a322d5da68a27a0ba45
+ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/21/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Android for Work デバイスの制限設定
 
@@ -78,6 +78,13 @@ ms.lasthandoff: 10/20/2017
 - **[以前のパスワードを再利用できないようにする]** - 以前のパスワードを再利用できるまでに使用する必要がある、新しいパスワードの数を入力します (**1**-**24**)。
 - **[指紋によるロック解除]** - エンド ユーザーがデバイスの指紋スキャナーを使用してロックを解除できないようにします。
 - **[Smart Lock などの信頼できるエージェント]** - 互換性のあるデバイスで Smart Lock 機能を制御できるようにします。 信頼エージェントとも呼ばれるこの電話機能では、デバイスが信頼できる場所にある場合 (デバイスが特定の Bluetooth デバイスに接続したときや、NFC タグの近くにある場合など)、デバイスのロック画面のパスワードを無効化またはバイパスすることができます。 この設定を使用して、ユーザーが SmartLock を構成することを禁止できます。
+
+## <a name="system-security"></a>システム セキュリティ
+
+ - **アプリの脅威のスキャン** - 作業と個人プロファイルに対し、**[アプリの確認]** 設定をオンにすることを強制します。
+
+   > [!Note]  
+   > この設定は、Android O 以降のデバイスでのみ機能します。 
 
 ## <a name="next-steps"></a>次のステップ
 
