@@ -15,11 +15,11 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff83c5926b04b11c67799e0486249dc339a167c1
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: 18ee7adcdb396c1b7010100803c82dbf0daa767c
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>条件付きアクセス ポリシーを Intune クラシック ポータルから Azure Portal に再割り当てする
 
@@ -201,5 +201,5 @@ Azure Portal で条件付きアクセス ポリシーの再割り当てを行っ
 ## <a name="see-also"></a>関連項目
 
 - [Intune での条件付きアクセスの一般的な使用方法](conditional-access-intune-common-ways-use.md)
-- [Intune を使用したアプリ ベースの条件付きアクセス](app-based-conditional-access-intune.md)
+- [Intune でのアプリ ベースの条件付きアクセス](app-based-conditional-access-intune.md)
 - [Azure Active Directory の条件付きアクセス](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)

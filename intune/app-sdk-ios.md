@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56bc71124c5a2714746dffcce256f0e604e9f62c
-ms.sourcegitcommit: ca10ab40fe40e5c9f4b6f6f4950b551eecf4aa03
+ms.openlocfilehash: 6ccc420b3bf334f15d1036eb83d01a2d228fad19
+ms.sourcegitcommit: b2a6678a0e9617f94ee8c65e7981211483b30ee7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS 用 Microsoft Intune App SDK 開発者ガイド
 
@@ -95,6 +95,10 @@ Intune App SDK を有効にするには、次の手順を実行します。
         > [!NOTE]
         > `PATH_TO_LIB` を検索するには、`libIntuneMAM.a` ファイルを選択し、**[ファイル]** メニューの **[情報の取得]** を選択します。 **[Info]** (情報 ) ウィンドウの **[General]** (全般) セクションから、**[Where]** (場所) 情報 (パス) をコピーして貼り付けます。
 
+    **[ビルド フェーズ]** の **[Copy Bundle Resources]** (バンドル リソースのコピー) にあるリソース バンドルをドラッグして、`IntuneMAMResources.bundle` リソース バンドルをプロジェクトに追加します。
+
+    ![Intune App SDK iOS: バンドル リソースのコピー](./media/intune-app-sdk-ios-copy-bundle-resources.png)
+
 3. 次の iOS フレームワークをプロジェクトに追加します。
     * MessageUI.framework
     * Security.framework
@@ -106,12 +110,7 @@ Intune App SDK を有効にするには、次の手順を実行します。
     * LocalAuthentication.framework
     * AudioToolbox.framework
 
-
-4. **[ビルド フェーズ]** の **[Copy Bundle Resources]** (バンドル リソースのコピー) にあるリソース バンドルをドラッグして、`IntuneMAMResources.bundle` リソース バンドルをプロジェクトに追加します。
-
-    ![Intune App SDK iOS: バンドル リソースのコピー](./media/intune-app-sdk-ios-copy-bundle-resources.png)
-
-5. モバイル アプリの Info.plist ファイルでメイン Nib またはストーリーボード ファイルが定義されている場合、**メイン ストーリーボード**または**メイン Nib** フィールドを切り取ります。 必要に応じて、Info.plist でこれらのフィールドと相当する値を **IntuneMAMSettings** という名前の新しいディクショナリの下に次のキー名で貼り付けます。
+4. モバイル アプリの Info.plist ファイルでメイン Nib またはストーリーボード ファイルが定義されている場合、**メイン ストーリーボード**または**メイン Nib** フィールドを切り取ります。 必要に応じて、Info.plist でこれらのフィールドと相当する値を **IntuneMAMSettings** という名前の新しいディクショナリの下に次のキー名で貼り付けます。
     * MainStoryboardFile
     * MainStoryboardFile~ipad
     * MainNibFile
@@ -121,7 +120,7 @@ Intune App SDK を有効にするには、次の手順を実行します。
 
     (キー名を確認するために) Info.plist を未処理の形式で表示するには、ドキュメント本文の任意の場所を右クリックし、ビューの種類を **[Show Raw Keys/Values]** (生のキー/値の表示) に変更します。
 
-6. 各プロジェクト ターゲットの **[機能]** を選択し、**[Keychain Sharing]** (キーチェーン共有) スイッチを有効にして、キーチェーン共有を有効にします (まだ有効になっていない場合)。 次の手順に進むには、キーチェーン共有が必要です。
+5. 各プロジェクト ターゲットの **[機能]** を選択し、**[Keychain Sharing]** (キーチェーン共有) スイッチを有効にして、キーチェーン共有を有効にします (まだ有効になっていない場合)。 次の手順に進むには、キーチェーン共有が必要です。
 
   > [!NOTE]
     > プロビジョニング プロファイルで新しいキーチェーン共有値がサポートされている必要があります。 キーチェーン アクセス グループは、ワイルドカード文字をサポートする必要があります。 これを確認するには、テキスト エディターで .mobileprovision ファイルを開いて **keychain-access-groups** を検索し、ワイルド カードがあることを確認します。 たとえば、
@@ -132,7 +131,7 @@ Intune App SDK を有効にするには、次の手順を実行します。
     </array>
     ```
 
-7. キーチェーン共有を有効にした後、次の手順に従って、Intune App SDK がデータを格納する個別のアクセス グループを作成します。 キーチェーン アクセス グループを作成するには、UI を使用するか、権利ファイルを使用します。 キーチェーン アクセス グループを作成する UI を使用している場合、次の手順を実行してください。
+6. キーチェーン共有を有効にした後、次の手順に従って、Intune App SDK がデータを格納する個別のアクセス グループを作成します。 キーチェーン アクセス グループを作成するには、UI を使用するか、権利ファイルを使用します。 キーチェーン アクセス グループを作成する UI を使用している場合、次の手順を実行してください。
 
     1. モバイル アプリでキーチェーン アクセス グループが定義されていない場合は、アプリのバンドル ID を最初のグループとして追加します。
 
@@ -140,24 +139,23 @@ Intune App SDK を有効にするには、次の手順を実行します。
 
     3. `com.microsoft.adalcache` を既存のアクセス グループに追加します。
 
-        4. `com.microsoft.workplacejoin` を既存のアクセス グループに追加します。
-            ![Intune App SDK iOS: キーチェーン共有](./media/intune-app-sdk-ios-keychain-sharing.png)
+        ![Intune App SDK iOS: キーチェーン共有](./media/intune-app-sdk-ios-keychain-sharing.png)
 
-    5. 権利ファイルを使用してキーチェーン アクセス グループを作成する場合は、権利ファイルでキーチェーン アクセス グループの先頭に `$(AppIdentifierPrefix)` を追加します。 次に例を示します。
+    4. 前に示したキーチェーン アクセス グループを作成する Xcode UI を使用するのではなく、権利ファイルを直接編集している場合、キーチェーン アクセス グループの先頭に `$(AppIdentifierPrefix)` を追加します (Xcode ではこの処理が自動的に行われます)。 たとえば、
 
             * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
             * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
     > [!NOTE]
-    > 権利ファイルとは、自分のモバイル アプリケーションに固有の XML ファイルです。 iOS アプリで特別なアクセス許可と機能を指定するために使用されます。
+    > 権利ファイルとは、自分のモバイル アプリケーションに固有の XML ファイルです。 iOS アプリで特別なアクセス許可と機能を指定するために使用されます。 お使いのアプリにあらかじめ権利ファイルが無かった場合、キーチェーンの共有 (手順 6) を有効にすると Xcode によってアプリ用に権利ファイルが生成されます。
 
-8. アプリの Info.plist ファイルで URL スキームが定義されている場合は、`-intunemam` サフィックスを指定して別のスキームを各 URL スキームに追加します。
+7. アプリの Info.plist ファイルで URL スキームが定義されている場合は、`-intunemam` サフィックスを指定して別のスキームを各 URL スキームに追加します。
 
-9. アプリで、その Info.plist ファイルにドキュメント型が定義されている場合は、各アイテムの "ドキュメントのコンテンツ タイプの UTI" 配列の各文字列に "com.microsoft.intune.mam" プレフィックスの重複エントリを 追加します。
+8. アプリで、その Info.plist ファイルにドキュメント型が定義されている場合は、各アイテムの "ドキュメントのコンテンツ タイプの UTI" 配列の各文字列に "com.microsoft.intune.mam" プレフィックスの重複エントリを 追加します。
 
-10. iOS 9 以降用に開発されたモバイル アプリの場合は、アプリが `UIApplication canOpenURL` に渡す各プロトコルを、アプリの Info.plist ファイルの `LSApplicationQueriesSchemes` 配列に含めます。 さらに、表示されているプロトコルごとに新しいプロトコルを追加し、それに `-intunemam` を付加します。 `http-intunemam`、`https-intunemam`、および `ms-outlook-intunemam` を配列に含める必要もあります。
+9. iOS 9 以降用に開発されたモバイル アプリの場合は、アプリが `UIApplication canOpenURL` に渡す各プロトコルを、アプリの Info.plist ファイルの `LSApplicationQueriesSchemes` 配列に含めます。 さらに、表示されているプロトコルごとに新しいプロトコルを追加し、それに `-intunemam` を付加します。 `http-intunemam`、`https-intunemam`、および `ms-outlook-intunemam` を配列に含める必要もあります。
 
-11. アプリケの権利でアプリ グループが定義されている場合は、それらのグループを **IntuneMAMSettings** ディクショナリの `AppGroupIdentifiers` キーの下に文字列の配列として追加します。
+10. アプリケの権利でアプリ グループが定義されている場合は、それらのグループを **IntuneMAMSettings** ディクショナリの `AppGroupIdentifiers` キーの下に文字列の配列として追加します。
 
 ## <a name="using-the-intune-mam-configurator-tool"></a>Intune MAM 構成ツールを使用する
 
@@ -592,7 +590,7 @@ SDK は、ローカル ファイル所有者の ID を追跡し、適宜、ポ�
 
 以下の手順を実行し、Xcode でポリシー テストを有効にします。
 
-1. この操作は、デバッグ ビルドで実行してください。 プロジェクトの最上位フォルダーを右クリックして Settings.bundle ファイルを追加します。 メニューから **[追加]**、**[新しいファイル]** を選択します。 **[リソース]** の下で、**[設定バンドル]** テンプレートを選択します。
+1. この操作は、デバッグ ビルドで実行してください。 プロジェクトの最上位フォルダーを右クリックして Settings.bundle ファイルを追加します。 メニューから **[追加]** > **[新しいファイル]** を選択します。 **[リソース]** の下で、**[設定バンドル]** テンプレートを選択します。
 
 2.  次のブロックをデバッグ ビルドの Settings.bundle/**Root.plist** ファイルにコピーします。
     ```xml

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 7272c3d21674e4e0029cf49140638d9a3fd3306f
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 5feec496d0f7952b1ae35ed1d905cbfc526bc387
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="set-or-change-your-passcode"></a>パスコードを設定または変更する
 
@@ -38,7 +38,7 @@ iOS デバイスが会社のサポートのパスコード ポリシーに準拠
 
 1. **[Settings]** (設定)  > **[Touch ID & Passcode]** (Touch ID とパスコード) をタップします。
 2. パスコードを入力します。 **[Touch ID & Passcode]** (Touch ID とパスコード) メニューが開きます。
-2. **[Change Passcode]** (パスコードを変更) をタップし、古いパスワードを入力します。
+2. **[Change Passcode]\(パスコードを変更\)** をタップし、古いパスコードを入力します。
 3. 会社のサポートの要件を満たす新しいパスコードを入力し、それを再入力して確認します。
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。

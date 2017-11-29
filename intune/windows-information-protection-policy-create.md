@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/3/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3cf11c53a5f1ce78dda9c703da32270b0b07874a
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: ab0456b58704f17d3dc5885ab5ae6b902c9ef152
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 
@@ -74,7 +74,7 @@ WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを
 
     d.  **[登録の状態]:** ポリシーの登録状態として、**[未登録]** を選択します。
 
-3.  [**作成**] を選択します。 ポリシーが作成されて、**[アプリに関するポリシー]** ブレードのテーブルに表示されます。
+3.  **[作成]** を選択します。 ポリシーが作成されて、**[アプリに関するポリシー]** ブレードのテーブルに表示されます。
 
 ## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>許可されているアプリの一覧におすすめのアプリを追加するには
 
@@ -125,13 +125,13 @@ WIP で保護するアプリを追加した後は、**[WIP の学習]** を使�
 
 ### <a name="before-you-begin"></a>始める前に
 
-WIP の学習は、WIP にとって不明なアプリを監視できるようにするレポートです。 不明アプリは、組織の IT 部門によって展開されていないアプリです。 "上書きの非表示" モードで WIP を適用する前に、レポートからこのようなアプリをエクスポートして WIP ポリシーに追加することで、生産の中断を回避できます。
+WIP の学習は、WIP にとって不明なアプリを監視できるようにするレポートです。 不明アプリは、組織の IT 部門によって展開されていないアプリです。 "ブロック" モードで WIP を適用する前に、レポートからこのようなアプリをエクスポートして WIP ポリシーに追加することで、生産性の阻害を回避できます。
 
-最初は **[サイレント]** または **[上書きの許可]** を使用し、許可されているアプリの一覧に適切なアプリが含まれる小規模なグループで確認することをお勧めします。 それが済んだ後、最終的な適用ポリシーである **[上書きの非表示]** に変更できます。
+最初は **[サイレント]** または **[上書きの許可]** を使用し、許可されているアプリの一覧に適切なアプリが含まれる小規模なグループで確認することをお勧めします。 それが済んだ後、最終的な適用ポリシーである **[ブロック]** に変更できます。
 
 ### <a name="what-are-the-protection-modes"></a>保護モードの種類
 
-#### <a name="hide-overrides"></a>上書きの非表示
+#### <a name="block"></a>ブロック
 WIP は不適切なデータ共有行為を検索し、ユーザーが操作を完了できないようにします。 これには、会社で保護されていないアプリ間での情報の共有や、組織外の他のユーザーやデバイス間での会社データの共有などが含まれます。
 
 #### <a name="allow-overrides"></a>上書きの許可

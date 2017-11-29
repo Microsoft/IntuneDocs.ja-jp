@@ -1,0 +1,45 @@
+---
+title: "ユーザー - Intune データ ウェアハウス | Microsoft Docs"
+description: "Intune データ ウェアハウス API のエンティティ コレクションのユーザー カテゴリに関するリファレンス トピック。"
+keywords: "Intune データ ウェアハウス"
+author: mattbriggs
+ms.author: mabrigg
+manager: angrobe
+ms.date: 11/14/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
+ms.reviewer: jeffgilb
+ms.suite: ems
+ms.custom: intune-classic
+ms.openlocfilehash: 6f321a3a9ac09c004639a3db15df280fbdb5be3c
+ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/15/2017
+---
+# <a name="reference-for-current-user-entity"></a>現在のユーザー エンティティのリファレンス
+
+**現在のユーザー** カテゴリには、データ モデルのユーザーとエージェントのプロパティが含まれています。 **現在のユーザー** エンティティ コレクションは、現在アクティブなユーザーに限られています。 エンティティには、現在ライセンスが割り当てられているすべての Azure Active Directory ユーザーが含まれています。 ライセンスは、Intune ライセンス、ハイブリッド ライセンス、または Microsoft Office 365 ライセンスです。 ユーザーが削除されると、そのデータ コレクションの期間には表記されません。 ユーザー状態の変更の履歴を含むコレクションについては、「[ユーザー エンティティのリファレンス](reports-ref-user.md)」をご覧ください。
+
+
+## <a name="user"></a>User
+
+**User** エンティティには、社内のすべての Azure Active Directory (Azure AD) ユーザーと割り当てられているライセンスが表示されます。
+
+| プロパティ  | 説明 | 例 |
+|---------|------------|--------|
+| UserKey |データ ウェアハウス内のユーザーを示す一意識別子 - 代理キー。 |123 |
+| UserId |ユーザーを示す一意識別子 - UserKey と似ていますが、ナチュラル キーです。 |b66bc706-ffff-7437-0340-032819502773 |
+| UserEmail |ユーザーの電子メール アドレス。 |John@constoso.com |
+| UPN | ユーザーのユーザー プリンシパル名。 | John@constoso.com |
+| 表示名 |ユーザーの表示名。 |John |
+| IntuneLicensed |ユーザーに Intune のライセンスがあるかどうかを示します。 |真/偽 |
+| StartDateInclusiveUTC |このユーザーがデータ ウェアハウスで作成されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
+| RowLastModifiedDateTimeUTC |このユーザーがデータ ウェアハウスで最後に変更されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
+
+## <a name="next-steps"></a>次のステップ
+ - **ユーザー** エンティティ コレクションを使用して、現在アクティブではないユーザーまでユーザー データを拡張できます。 詳細については、「[ユーザー エンティティのリファレンス](reports-ref-user.md)」をご覧ください。 
+ - データ ウェアハウスが Intune のユーザーの有効期間を追跡する方法の詳細については、「[Intune データ ウェアハウスのユーザー有効期間の表記](reports-ref-user-timeline.md)」をご覧ください。
