@@ -164,8 +164,6 @@
               href: windows-bulk-enroll.md
             - name: Windows AutoPilot Deployment プログラム
               href: enrollment-autopilot.md
-            - name: 登録ステータス画面
-              href: windows-enrollment-status.md
         - name: Android の登録を設定する
           href: android-enroll.md
         - name: iOS の登録の設定
