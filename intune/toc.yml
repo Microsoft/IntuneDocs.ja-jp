@@ -89,8 +89,8 @@
           href: data-outside-protect.md
         - name: 管理されていないデバイスでのデータ漏洩の防止
           href: data-leak-prevention.md
-        - name: BYOD
-          href: byod-enable.md
+        - name: MDM と MAM の比較
+          href: byod-technology-decisions.md
     - name: 移行ガイド
       href: migration-guide.md
       items:
