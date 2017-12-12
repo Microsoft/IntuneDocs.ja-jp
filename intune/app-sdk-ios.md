@@ -2,9 +2,9 @@
 title: "iOS 用 Microsoft Intune App SDK 開発者ガイド"
 description: "iOS 用 Microsoft Intune App SDK を使用すると、モバイル アプリ管理 (MAM) という形式で iOS アプリに Intune アプリ保護ポリシーを組み込むことができます。"
 keywords: 
-author: mattbriggs
+author: erikre
 manager: angrobe
-ms.author: mabriggs
+ms.author: erikre
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6d7b22c871ed1e62bfdc148f30fb832786baf294
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 6ff0e98c710676c257822c14661e6908849ae053
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS 用 Microsoft Intune App SDK 開発者ガイド
 
@@ -590,7 +590,7 @@ SDK は、ローカル ファイル所有者の ID を追跡し、適宜、ポ�
 
 以下の手順を実行し、Xcode でポリシー テストを有効にします。
 
-1. この操作は、デバッグ ビルドで実行してください。 プロジェクトの最上位フォルダーを右クリックして Settings.bundle ファイルを追加します。 メニューから **[追加]**、 > **[新しいファイル]** を選択します。 **[リソース]** の下で、**[設定バンドル]** テンプレートを選択します。
+1. この操作は、デバッグ ビルドで実行してください。 プロジェクトの最上位フォルダーを右クリックして Settings.bundle ファイルを追加します。 メニューから **[追加]**、**[新しいファイル]** を選択します。 **[リソース]** の下で、**[設定バンドル]** テンプレートを選択します。
 
 2.  次のブロックをデバッグ ビルドの Settings.bundle/**Root.plist** ファイルにコピーします。
     ```xml

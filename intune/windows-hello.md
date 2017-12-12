@@ -3,8 +3,8 @@ title: "Windows Hello for Business を使用する方法"
 titleSuffix: Azure portal
 description: "管理されたデバイスで Windows Hello for Business の使用を制御するポリシーを作成する方法について説明します。\""
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97ba45f556acff7074ab4dcce2c0c8e55ccb9be4
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: f14120bc6141853177559d4561ea2da866088fb2
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="use-windows-hello-for-business"></a>Windows Hello for Business を使用する
 

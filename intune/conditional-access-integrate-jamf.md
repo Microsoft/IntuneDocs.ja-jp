@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b37ffd23f8cf8764ba457b0803dfc308cf1c071
-ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
+ms.openlocfilehash: 87ddb1a5f6ca5cc9be2815aacc9c1570a51e792f
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>コンプライアンスのために Jamf Pro を Intune と統合する
 
@@ -54,18 +54,18 @@ Jamf Pro で条件付きアクセスを構成するには、次のものが必�
 
 ## <a name="create-a-new-application-in-azure-active-directory"></a>Azure Active Directory で新しいアプリケーションを作成する
 
-1. **[Azure Active Directory]** > **[App Registration]\(アプリの登録\)**  を開きます。
+1. **[Azure Active Directory]** > **[アプリの登録]** を開きます。
 2. **[新しいアプリケーションの登録]** をクリックします。
 3. 「**Jamf 条件付きアクセス**」など、**表示名**を入力します。
 4. **[Web アプリ/API]** を選択します。
-5. Jamf Pro の**サインオン URL** を指定します。
+5. Jamf Pro インスタンス URL を使用して、**サインオン URL** を指定します。
 6. **[アプリケーションの作成]** をクリックします。
-7. 新しく作成した**アプリケーション ID** を保存し、**[すべての設定]** > **[キー]** を開き、新しいアプリケーション キーを作成します。 アプリケーション キーを保存します。
+7. 新しく作成した**アプリケーション ID** を保存し、**[設定]** を開き、**[API アクセス]** > **[キー]** に移動して、新しいアプリケーション キーを作成します。 **説明** (**期限切れ**になるまでの期間) を入力し、アプリケーション キーを保存します。 
 
-  > [!NOTE]
+  > [!IMPORTANT]
   > アプリケーション キーは、このプロセス中 1 回のみ表示されます。 簡単に取得できる場所に保存してください。
 
-8. **[すべての設定]** > **[API アクセス]** > **[必要なアクセス許可]** に移動し、すべてのアクセス許可を削除します。
+8. **[設定]** を開き、**[API アクセス]** > **[必要なアクセス許可]** に移動し、すべてのアクセス許可を削除します。
 
   > [!NOTE]
   > 新しい必要なアクセス許可を追加します。 アプリケーションは必要なアクセス許可が 1 つの場合にのみ正しく動作します。
@@ -79,16 +79,20 @@ Jamf Pro で条件付きアクセスを構成するには、次のものが必�
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Intune の Jamf Pro との統合を有効にする
 
-1. Microsoft Azure Portal で **[Microsoft Intune]** > **[デバイスのポリシー準拠]** > **[Compliance Connector for Jamf]\(Jamf 用コンプライアンス コネクタ\)** を開きます。
+1. Microsoft Azure Portal で **[Microsoft Intune]** > **[デバイスのポリシー準拠]** > **[Partner device management]\(パートナー デバイス管理\)** を開きます。
 2. アプリケーション ID を **[Jamf Azure Active Directory App ID]** フィールドに貼り付けることによって、Jamf 用コンプライアンス コネクタを有効にします。
 3. **[Save]**(保存) をクリックします。
 
-## <a name="configure-conditional-access-in-jamf-pro"></a>Jamf Pro で条件付きアクセスを構成する
+## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Jamf Pro で Microsoft Intune 統合を構成する
 
-1. Jamf Pro で、**[グローバル管理]** > **[条件付きアクセス]** に移動します。 **[Microsoft]** タブの **[編集]** ボタンをクリックします。
-2. **[Enable Conditional Access with Microsoft]\(Microsoft で条件付きアクセスを有効にする\)** チェックボックスをオンにします。
+1. Jamf Pro で、**[グローバル管理]** > **[条件付きアクセス]** に移動します。 **[Microsoft Intune 統合]** タブの **[編集]** ボタンをクリックします。
+2. **[Microsoft Intune 統合の有効化]** チェック ボックスをオンにします。
 3. 前の手順で保存した、**場所**、**ドメイン名**、**アプリケーション ID**、**アプリケーション キー**を含む、Azure テナントについての必要な情報を入力します。
 4. **[Save]**(保存) をクリックします。 Jamf Pro は設定をテストし、成功を確認します。
+
+## <a name="set-up-compliance-policies-and-register-devices"></a>コンプライアンス ポリシー設定してデバイスを登録する
+
+Intune と Jamf の統合の構成が完了したら、[Jamf で管理されたデバイスにコンプライアンス ポリシーを適用する](conditional-access-assign-jamf.md)必要があります。
 
 ## <a name="information-shared-from-jamf-pro-to-intune"></a>Intune に Jamf Pro から共有する情報
 

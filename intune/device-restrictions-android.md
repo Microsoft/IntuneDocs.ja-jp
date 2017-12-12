@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 094fc13705c1b746a4b753c02127478f10754f46
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 97e125d768ca7b0cf58a2892d78675dfa42ef7ce
+ms.sourcegitcommit: fa0f0402dfd25ec56a0df08c23708c7e2ad41120
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Android および Samsung KNOX Standard デバイスの制限設定
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 09/15/2017
 - **[画面キャプチャ (Samsung KNOX のみ)]** - ユーザーが画面のコンテンツを画像としてキャプチャできるようにします。
 - **[音声アシスタント (Samsung KNOX のみ)]** - デバイスで音声アシスタント ソフトウェアを使用できるようにします。
 - **[YouTube (Samsung KNOX のみ)]** - デバイスで YouTube アプリを使用できるようにします。
-- **[共有デバイス]** - 管理対象の Samsung KNOX Standard デバイスを共有デバイスとして構成します。 このモードでは、エンド ユーザーは Azure AD 資格情報を使用してデバイスにサインインおよびサインアウトできます。 使用中かどうかに関係なく、デバイスは常に管理対象です。<br>サインインしたエンド ユーザーはアプリにアクセスできるのに加え、適用されるポリシーを受け取ります。 ユーザーがサインアウトすると、すべてのアプリ データがクリアされます。
+- **[共有デバイス] (Samsung KNOX のみ)** - 管理対象の Samsung KNOX Standard デバイスを共有デバイスとして構成します。 このモードでは、エンド ユーザーは Azure AD 資格情報を使用してデバイスにサインインおよびサインアウトできます。 使用中かどうかに関係なく、デバイスは常に管理対象です。<br>この機能を SCEP 証明書プロファイルと組み合わせて使用する場合、エンド ユーザーは、すべてのユーザーに対して同じアプリのセットを持つ一方、ユーザー独自の SCEP ユーザー証明書も持つデバイスを共有することができます。ユーザーがサインアウトすると、すべてのアプリ データがクリアされます。  この機能は、LOB アプリのみに限定されています。
 
 ## <a name="password"></a>パスワード
 

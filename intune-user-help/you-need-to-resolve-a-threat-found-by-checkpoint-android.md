@@ -14,11 +14,11 @@ ms.assetid: 449c34ec-2d94-4c7f-8691-a5200efee3cb
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 2bcf23192829b5613b9245699cea47ffb85492f3
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 8a8a2d6669e1360ee033744120af415d7310c346
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>SandBlast Mobile Protect で検出された脅威を解決する
 
@@ -30,7 +30,7 @@ SandBlast Mobile Protect がデバイスで潜在的な脅威を検出したら�
 
 登録済みデバイスにウイルスまたはその他のセキュリティ上の脅威がある場合に、会社のメールかファイルにアクセスしようとすると、アクションを実行するように警告するメッセージが SandBlast Mobile Protect により表示されます。
 
-**デバイスの管理ポータル**のリンクをタップして[ポータル サイト Web サイト](https://portal.manage.microsoft.com)に移動すると、問題を解決する方法の手順が表示されます。
+**デバイスの管理ポータル**のリンクをタップして[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)に移動すると、問題を解決する方法の手順が表示されます。
 
 ## <a name="example-of-an-app-that-sandblast-mobile-protect-sees-as-a-threat"></a>SandBlast Mobile Protect が脅威と見なすアプリの例
 
@@ -38,4 +38,4 @@ SandBlast Mobile Protect が脅威と見なすアプリをインストールし�
 
 この場合、アプリケーションをアンインストールするとすぐに、会社の電子メールやデータへのアクセスが回復します。 アプリをアンインストールしないと、アプリをアンインストールするまで、電子メールやデータにアクセスできなくなります。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。

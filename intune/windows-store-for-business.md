@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 11/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf0fc665ef70950b292241751d56122ebc9b0912
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ecb5a310e8b869deb493bc5554029d641ba419c3
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>ビジネス向け Microsoft ストアから購入したアプリを Microsoft Intune で管理する方法
 
@@ -31,8 +31,9 @@ ms.lasthandoff: 09/15/2017
 * 同期されているアプリは Intune 管理コンソールに表示され、他のアプリと同様に割り当てることができます。
 * 使用可能なライセンス数、および Intune 管理コンソールで使用中のライセンス数を追跡することができます。
 * 使用可能なライセンス数が不足している場合、Intune はアプリの割り当てとインストールをブロックします。
+* ユーザーが企業を退社したとき、または管理者がユーザーとユーザー デバイスを削除したときに、ビジネス向け Windows ストアによって管理されているアプリはライセンスを自動的に取り消します。
 
-## <a name="before-you-start"></a>開始する前に
+## <a name="before-you-start"></a>アップグレードを開始する前に
 
 ビジネス向け Microsoft ストアのアプリを同期して割り当てる前に、以下のことを確認してください。
 

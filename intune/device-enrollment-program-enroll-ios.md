@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 311bb42f2ef9fbf689e32eacca7420c8189251bf
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: a10d158816f17c7fbe07fd14172d1a9abb9ed9b9
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する
 
@@ -76,7 +76,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 3. **[Manage Servers\(サーバーの管理\)]** ページで、**[Add MDM Server\(MDM サーバーの追加\)]** を選びます。
 4. **MDM サーバー名**を入力し、**[Next]** (次へ) をクリックします。 サーバー名は、自分がモバイル デバイス管理 (MDM) サーバーを識別できるようにするための名前です。 Microsoft Intune サーバーの名前または URL ではありません。
 
-   ![DEP の MDM サーバー名を追加して 次へをクリックしたスクリーンショット。](./media/enrollment-program-token-add-server.png)
+   ![DEP の MDM サーバー名を追加して [次へ] をクリックしたスクリーンショット。](./media/enrollment-program-token-add-server.png)
 
 5. **[Add &lt;ServerName&gt;\(<サーバー名> の追加\)]** ダイアログ ボックスが開き、**[Upload Your Public Key\(公開キーをアップロードする\)]** と表示されます。 **[Choose File]** (ファイルを選択) をクリックして .pem ファイルをアップロードし、**[Next]** (次へ) を選択します。
 
@@ -157,11 +157,11 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 ## <a name="sync-managed-devices"></a>管理対象デバイスを同期する
 デバイスを管理するアクセス許可を Intune に割り当てたので、Intune と Apple を同期して、管理対象デバイスを Azure ポータルの Intune に表示できます。
 
-1. Azure ポータルの Intune で、**[デバイスの登録]** >  **[Apple の登録]** > **[Enrollment Program デバイス]** の順に選択します。
-2. **[Enrollment Program デバイス]** で、**[同期]** を選択します。
+1. Azure Portal の Intune で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program デバイス]** > **[同期]** の順に選択します。進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
 
   ![[Enrollment Program デバイス] ノードと [同期] リンクが選ばれているスクリーンショット。](./media/enrollment-program-device-sync.png)
-3. **[同期]** ブレードで、**[同期を要求]** を選択します。進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
+  
+2. **[同期]** ブレードで、**[同期を要求]** を選択します。進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
 
   ![[同期を要求] リンクが選ばれている [同期] ブレードのスクリーンショット。](./media/enrollment-program-device-request-sync.png)
 
@@ -170,7 +170,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
      -  すべての同期要求は、完了までに 15 分与えられます。 この時間中または要求が成功するまで、**[同期]** ボタンは無効にされます。
      - Intune は、24 時間ごとに新規のデバイスと削除されたデバイスを Apple と同期します。
 
-4. [Enrollment Program デバイス] ワークスペースで、**[更新]** を選んでデバイスを表示します。
+3. [Enrollment Program デバイス] ワークスペースで、**[更新]** を選んでデバイスを表示します。
 
 ## <a name="assign-an-enrollment-profile-to-devices"></a>登録プロファイルをデバイスに割り当てる
 登録する前に、Enrollment Program プロファイルをデバイスに割り当てる必要があります。

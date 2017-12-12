@@ -14,11 +14,11 @@ ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: f4f878f6cd46c4ded709d833c799bb2d310adeb9
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: b5e96a1d43334c3f3392c4073e2939fee7504e62
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Lookout for Work が検出した脅威を解決する
 
@@ -34,7 +34,7 @@ Lookout for Work がデバイスで潜在的な脅威を検出したら問題を
 
 ![ポータル サイト Web サイトへのリンク付きの Lookout for Work エラー メッセージ](./media/mtd-go-to-device-management-portal-android.png)
 
-**デバイスの管理ポータル**のリンクをタップして[ポータル サイト Web サイト](https://portal.manage.microsoft.com)に移動すると、問題を解決する方法の手順が表示されます。
+**デバイスの管理ポータル**のリンクをタップして[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)に移動すると、問題を解決する方法の手順が表示されます。
 
 ## <a name="example-of-an-app-that-lookout-for-work-sees-as-a-threat"></a>Lookout for Work によって脅威とみなされるアプリの例
 
@@ -44,4 +44,4 @@ Lookout for Work が脅威と判断するアプリがインストールされて
 
 アプリケーションをアンインストールするとすぐに、会社の電子メールやデータへのアクセスが回復します。 アプリケーションのアンインストール要求を無視すると、アプリをアンインストールするまで、電子メールやデータにアクセスできなくなります。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。

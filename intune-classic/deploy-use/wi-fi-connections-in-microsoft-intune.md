@@ -2,8 +2,8 @@
 title: "Wi-Fi 接続"
 description: "Wi-Fi プロファイルを使用すると、ユーザーはWi-Fi ネットワークに接続できます。"
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5d021abec31a38d7135828fbe06acd4a1a10ee42
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 99ac426d2210aa22a7c0151aea59e14b848bbe1f
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>デバイスを構成すると、会社の Wi-Fi ネットワークに接続できます。
 
@@ -73,7 +73,7 @@ Windows 8.1 または Windows 10 デスクトップまたはモバイル オペ�
  - **SSID (サービス セット識別子)**: ユーザーに SSID ではなく、ネットワーク名を確認させる場合は、このオプションを選択します。
  - **ネットワークが名前 (SSID) をブロードキャストしていない場合に接続する**: ネットワークのリストに表示されていない (非表示になっている場合や名前がブロードキャストされていない場合) ネットワークにデバイスが接続できるようにするには、このオプションを選択します。
 
-5. 選択したプラットフォーム用に [ **セキュリティ設定** ] を構成します。 使用できる設定は、選択するセキュリティの種類によって異なります。 「[セキュリティ設定](#security-settings)」を参照してください。
+5. 選択したプラットフォーム用に **[セキュリティ設定]** を構成します。 使用できる設定は、選択するセキュリティの種類によって異なります。 「[セキュリティ設定](#security-settings)」を参照してください。
 
 6. **プロキシ設定**を構成します (iOS と Mac OS X のみ)。
 
@@ -159,7 +159,7 @@ Windows では、**netsh wlan** ユーティリティを使用して、既存の
 |**EAP の種類**|次の中から、セキュリティで保護されたワイヤレス接続の認証に使用される拡張認証プロトコル (EAP) の種類を選択します。<br /><br />-   **EAP-TLS**<br />-   **PEAP**<br />-   **EAP-TTLS**|セキュリティの種類として **[WPA-エンタープライズ/WPA2-エンタープライズ]** を選択した場合。|
 |**サーバー検証用のルート証明書を選択する**|**[選択]** を選択してから、接続の認証に使用した信頼されたルート証明書プロファイルを選択します。 信頼されたルート証明書プロファイルを使用する方法の詳細については、[証明書プロファイルを使用したリソースへのアクセスの保護](secure-resource-access-with-certificate-profiles.md)に関するページに移動してください。|**EAP の種類**のいずれか選択した場合。|
 |**認証方法**|次の中から、接続に使用される認証方法を選択します。<br /><br />-   **証明書** (クライアント証明書を指定する場合)<br />-   **ユーザー名とパスワード** (認証用の別の方法を指定する場合)|**[EAP の種類]** が **[PEAP]** または **[EAP-TTLS]** である。|
-|**認証に非 EAP メソッドを選択する (内部 ID)**|次の中から接続を認証する方法を選択します。<br /><br />-   **なし**<br />-   **暗号化されていないパスワード (PAP)**<br />-   **チャレンジ ハンドシェイク認証プロトコル (CHAP)**<br />-   **Microsoft CHAP (MS-CHAP)**<br />-   **Microsoft CHAP バージョン 2 (MS-CHAP v2)**<br /><br />使用できるオプションは、選択した EAP の種類によって異なります。|[ **認証方法** ] が [ **ユーザー名とパスワード**] である。|
+|**認証に非 EAP メソッドを選択する (内部 ID)**|次の中から接続を認証する方法を選択します。<br /><br />-   **なし**<br />-   **暗号化されていないパスワード (PAP)**<br />-   **チャレンジ ハンドシェイク認証プロトコル (CHAP)**<br />-   **Microsoft CHAP (MS-CHAP)**<br />-   **Microsoft CHAP バージョン 2 (MS-CHAP v2)**<br /><br />使用できるオプションは、選択した EAP の種類によって異なります。|**[認証方法]** が **[ユーザー名とパスワード]** である。|
 |**ID プライバシーを有効にする (外部 ID)**|EAP ID 要求への応答で送信されるテキストを指定します。 このテキストには任意の値を指定できます。 認証時に、この匿名 ID が最初に送信されます。 次に、実際の ID が保護されたトンネルを介して送信されます。|**[EAP の種類]** が **[PEAP]** または **[EAP-TTLS]** である場合。|
 |**クライアント認証用のクライアント証明書 (ID 証明書) を選択する**|**[選択]** を選択してから、接続の認証に使用される SCEP 証明書プロファイルを選択します。 SCEP 証明書プロファイルの作成の詳細については、[証明書プロファイルを使用したリソースへのアクセスの保護](secure-resource-access-with-certificate-profiles.md)に関するページに移動してください。|セキュリティの種類が **[WPA-エンタープライズ/WPA2-エンタープライズ]** で、**[EAP の種類]** のいずれかが選択されている場合。|
 

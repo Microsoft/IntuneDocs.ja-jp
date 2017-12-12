@@ -14,11 +14,11 @@ ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 9e0ea429a6fd68bf984f814d512f9e5a8b327358
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: c4e0eb3832114c83539025af9d7afebe38e68d81
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-lookout-for-work"></a>Lookout for Work をインストールする
 
@@ -32,27 +32,27 @@ ms.lasthandoff: 09/28/2017
 
   ![Lookout for Work をインストールする必要があります](./media/lookout-required-app-install-android.png)
 
-2.  Play ストアの Lookout for Work のインストール ページが表示されます。 Lookout for Work をインストールしてから、[**同意する**] をタップして Lookout for Work によるデバイスへのアクセスを許可します。
+2.  Play ストアの Lookout for Work のインストール ページが表示されます。 Lookout for Work をインストールしてから、**[同意する]** をタップして Lookout for Work によるデバイスへのアクセスを許可します。
 
   ![[同意する] をタップして Lookout for Work によるデバイスへのアクセスを許可します](./media/lookout-accept-store-permissions-android.png)
 
-3. Lookout for Work を開いて [**有効化する**] をタップします
+3. Lookout for Work を開いて **[有効化する]** をタップします
 
   ![Lookout for Work を開いて [有効化する] をタップします](./media/lookout-activate-button-android.png)
 
-4. [**Azure Active Directory でサインインする**] をタップし、職場または学校の電子メールやファイルへのアクセスに使用しているアカウントを入力します。
+4. **[Azure Active Directory でサインインする]** をタップし、職場または学校の電子メールやファイルへのアクセスに使用しているアカウントを入力します。
 
   ![職場または学校のアカウントでサインインします](./media/lookout-sign-in-azure-android.png)
 
-5. 職場または学校の電子メールやファイルへのアクセスに使用するアカウントを選択してから [**アカウントの追加**] をタップします。
+5. 職場または学校の電子メールやファイルへのアクセスに使用するアカウントを選択してから **[アカウントの追加]** をタップします。
 
   ![職場または学校のアカウントを選択して [アカウントの追加] をタップします](./media/lookout-pick-account-android.png)
 
-6. [**同意する**] をタップして Lookout for Work による自分のアカウントでのサインインと自分のプロフィールの読み取りを許可します。 Lookout for Work が Lookout セキュリティ クラウドに接続していることを示す画面が表示されます。
+6. **[同意する]** をタップして Lookout for Work による自分のアカウントでのサインインと自分のプロフィールの読み取りを許可します。 Lookout for Work が Lookout セキュリティ クラウドに接続していることを示す画面が表示されます。
 
   ![[同意する] をタップして Lookout for Work による自分のプロフィールの読み取りを許可します](./media/lookout-needs-permission-to-view-profile-android.png)
 
-7. Lookout がこのデバイスをどのように保護するかを確認してから [**OK**] をタップします。
+7. Lookout がこのデバイスをどのように保護するかを確認してから **[OK]** をタップします。
 
   ![Lookout for Work がデバイスをどのように保護するかを確認します](./media/lookout-how-it-protects-your-device-android.png)
 
@@ -75,5 +75,5 @@ ms.lasthandoff: 09/28/2017
 ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。 このような場合は、Lookout for Work を [Play ストアから手動で](https://play.google.com/store/apps/details?id=com.lookout.enterprise)インストールします。
 
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
 

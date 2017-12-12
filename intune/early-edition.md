@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1ea734e83cfab3fff22c775764ac9814012d52b6
-ms.sourcegitcommit: 70dc0aaad51b447e173b663d1092d993dc81ffdd
+ms.openlocfilehash: 35bf193563deb34ac59df245c622bbc011d80b76
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2017"></a>Microsoft Intune の初期エディション - 2017 年 12 月
 
@@ -60,9 +60,6 @@ Intune App Protection ポリシーは、既定のグローバル ポリシーを
 
 ### <a name="new-ios-device-action------1244701---"></a>新しい iOS デバイス アクション <!-- 1244701 -->
 iOS 10.3 監視下のデバイスをシャット ダウンできます。 このアクションでは、エンド ユーザーへの警告なしにデバイスが即時シャットダウンされます。 **シャット ダウン (監視モードのみ)** アクションは、**デバイス** ワークロードでデバイスを選択した場合に、デバイス プロパティに表示されます。
-
-### <a name="palo-alto-vpn-now-supported----1333680-eeready---"></a>Palo Alto VPN がサポートされるようになりました <!-- 1333680 eeready -->
-ベースの VPN の構成時、**接続の種類**リストに Palo Alto VPN が表示されます。
 
 ### <a name="multiple-connector-support-for-scep-and-pfx-certificate-handling----1361755-eeready---"></a>SCEP の複数コネクタ サポートと PFX 証明書処理 <!-- 1361755 eeready -->
 オンプレミス NDES コネクタを使用してデバイスに証明書を配信するお客様は、1 つのテナントに複数のコネクタを構成できます。
@@ -166,7 +163,7 @@ iOS ストア アプリの入手可能性に関して、変更の影響をエン
 > リリース後、Intune クラシック コンソールでは、Mobile Device Management (MDM) アプリ割り当てを表示したり、変更したりできなくなります。 ただし、Azure コンソールまたは Intune Graph API を利用してアプリを割り当てることができます。
 
 ### <a name="manage-android-for-work-devices-independently-from-android-devices----1490731---"></a>Android デバイスとは別に Android for Work デバイスを管理する <!-- 1490731 -->
-Intune は、Android プラットフォームに依存することなく、Android for Work デバイスの登録を管理できます。 この設定は、**[デバイスの登録]**、 > **[登録制限]**、 > **[デバイスの種類の制限]** で管理されます。 (以前の場所は **[デバイス登録]**、 > **[Android for Work への登録]**、 > **[Android for Work の登録設定]** でした。)
+Intune は、Android プラットフォームに依存することなく、Android for Work デバイスの登録を管理できます。 この設定は、**[デバイスの登録]**、**[登録制限]**、**[デバイスの種類の制限]** で管理されます。 (以前の場所は **[デバイス登録]**、**[Android for Work への登録]**、**[Android for Work の登録設定]** でした。)
 
 既定では、Android for Work デバイス設定は Android デバイスの設定と同じになります。 ただし、Android for Work 設定を変更した後は、同じではなくなります。
  

@@ -5,7 +5,7 @@ description: "Windows デバイスの Intune モバイル デバイス管理 (MD
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 11/08/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02563b85a6bcac12c60537af4a998b09bca3b6ee
-ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
+ms.openlocfilehash: 0c4c245829a7819c9427a8ebe8ad9e166b58da97
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="enroll-windows-devices"></a>Windows デバイスの登録
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 11/09/2017
 
 このトピックは IT 管理者がユーザーの Windows の登録を簡略化する際に役立ちます。 [Intune が設定](setup-steps.md)されたら、ユーザーは職場または学校のアカウントで[サインイン](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)し、Windows デバイスを登録します。  
 
-Intune 管理者は、次の方法で登録を簡略化できます。
+Intune 管理者は次の方法で登録を簡略化できます。
 - [自動登録を有効にする](#enable-windows-10-automatic-enrollment) (Azure AD Premium が必須)
 - [CNAME の登録](#simplify-windows-enrollment-without-azure-ad-premium)
 - [一括登録を有効にする](windows-bulk-enroll.md) (Azure AD Premium と Windows Configuration Designer が必須)
@@ -78,6 +78,15 @@ DNS レコードの変更が反映されるまでには、最大で 72 時間か
 Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。 [Intune] ブレードで、**[デバイスの登録]**  >  **[Windows Enrollment (Windows 登録)]** を選択します。 **[検証済みドメイン名の指定]** ボックスに会社の Web サイト URL を入力し、**[自動検出のテスト]** を選択します。
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>Windows デバイスの登録方法をユーザーに通知する
-ユーザーに、Windows デバイスを登録する方法とデバイスが管理されるとどうなるかを伝えます。 エンドユーザー用の登録手順については、「[Intune に Windows デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)」を参照してください。 また、ユーザーには、[IT 管理者がユーザーのデバイスに関して確認できる情報](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows)に関するページも案内してください。
+ユーザーに、Windows デバイスを登録する方法とデバイスが管理されるとどうなるかを伝えます。
+
+> [!NOTE]
+> 特定のバージョンの Windows で割り当てられた Windows アプリを表示するためには、エンド ユーザーは Microsoft Edge を介してポータル サイト Web サイトにアクセスする必要があります。 Google Chrome、Mozilla Firefox、Internet Explorer などの他のブラウザーでは、この種のフィルタリングはサポートされていません。
+
+エンドユーザー用の登録手順については、「[Intune に Windows デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)」を参照してください。 また、ユーザーには、[IT 管理者がユーザーのデバイスに関して確認できる情報](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows)に関するページも案内してください。
 
 エンドユーザー タスクの詳細については、「[Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](end-user-educate.md)」を参照してください。
+
+## <a name="next-steps"></a>次のステップ
+
+- [Azure で Intune を使用して Windows デバイスを管理する際の考慮事項](/intune-classic/deploy-use/intune-on-azure.md)

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a52fdb4ae866722191dfbd176c8d2e6eb0747bb4
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: b22af8fca323e722f67e54b3c01493c8ab5f27a4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="unenroll-your-ios-device-from-intune"></a>Intune から iOS デバイスの登録を解除する
 
@@ -52,4 +52,4 @@ Intune からデバイスの登録を解除すると、どのようになるか�
 
 -   電子メール専用に構成されているデバイスは、ポータル サイト アプリまたは Web サイトに表示されなくなります。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
