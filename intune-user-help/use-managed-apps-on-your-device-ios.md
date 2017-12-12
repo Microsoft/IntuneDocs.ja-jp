@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 398b6be25b1d927170571af23a9424a6d7e68c0b
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 8c3d9285408f2cfa394ed31ec36fcaea47306eb5
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>iOS デバイスで管理対象アプリを使用する
 
@@ -62,4 +62,4 @@ ms.lasthandoff: 09/28/2017
 
 -   データの暗号化の要件
 
-デバイスの管理対象アプリの詳細については、会社のサポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+デバイスの管理対象アプリの詳細については、会社のサポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。

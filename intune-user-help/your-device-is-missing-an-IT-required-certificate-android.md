@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 784fec4e29f64db0445c857e5073ddd7e890a795
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 4a771416273ee29d0b44cb74b6b32d9535e43e41
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Android デバイスに、会社のサポートが必要とする証明書がありません
 
@@ -35,9 +35,9 @@ ms.lasthandoff: 09/28/2017
 
 ## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>欠落している証明書を会社または学校の PC で確認し、特定する
 
-1. PC で、Internet Explorer を開きます。 この目的に使用する PC をお持ちでない場合は、会社のサポートに問い合わせてください。 会社のサポートの連絡先情報については、[ポータル Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+1. PC で、Internet Explorer を開きます。 この目的に使用する PC をお持ちでない場合は、会社のサポートに問い合わせてください。 会社のサポートの連絡先情報については、[ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
 
-2. [ポータル サイト Web サイト](https://portal.manage.microsoft.com)に移動して、職場や学校の資格情報を使用してサインインします。
+2. [ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)に移動して、職場や学校の資格情報を使用してサインインします。
 
 3. ブラウザーのアドレス バーの右端で、下のスクリーンショットのような、南京錠のような記号をクリックします。
 
@@ -69,4 +69,4 @@ ms.lasthandoff: 09/28/2017
 
 7. 会社のポータル アプリをもう一度開きます。 これで、会社のポータル アプリにサインインできるようになりました。 サポートが必要な場合は、会社のサポートに問い合わせてください。
 
-上のような "証明書が見つかりません" というメッセージが表示されたが、この手順を既に実行している場合、別の証明書が存在する可能性があります。会社のサポートにそのインストールを依頼する必要があります。 サポートを得る場合は、[ポータル Web サイト](https://portal.manage.microsoft.com)で入手できる連絡先情報を使用して、会社のサポートに問い合わせてください。
+上のような "証明書が見つかりません" というメッセージが表示されたが、この手順を既に実行している場合、別の証明書が存在する可能性があります。会社のサポートにそのインストールを依頼する必要があります。 サポートを得る場合は、[ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)で入手できる連絡先情報を使用して、会社のサポートに問い合わせてください。

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 525e2024246946c9fd9fadefbe42d10dee5c2932
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 13f284c62e1232a560ec9e5186de4055d616ef3a
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-ios-device-in-telecom-expense-management"></a>通信費管理サービスに iOS デバイスを登録する
 
@@ -63,4 +63,4 @@ ms.lasthandoff: 09/28/2017
 
 登録が完了すると、Datalert アプリでデータ使用量が表示されるようになります。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。

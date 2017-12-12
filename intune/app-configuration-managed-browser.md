@@ -3,8 +3,8 @@ title: "Managed Browser アプリで Web アクセスを管理する"
 titlesuffix: Azure portal
 description: "Managed Browser アプリケーションを展開して、Web 閲覧と他のアプリケーションへの Web データ転送を制限します。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/06/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc11ad516b3256d39d4e859eca6c8aa248fb180b
-ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
+ms.openlocfilehash: 7619efc305881f1ad56a7c14e5d92c05fb0c6d77
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune で Managed Browser ポリシーを使ってインターネット アクセスを管理する
 

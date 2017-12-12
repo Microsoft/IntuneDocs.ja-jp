@@ -14,11 +14,11 @@ ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 158bc0e18b427abcd73353cd41c3c57934eb45cb
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: e3177d6cd7684662d26e827aa8640abb0ed1317c
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-turn-off-unknown-sources"></a>不明なソースを無効にする必要がある
 
@@ -28,4 +28,4 @@ Android デバイスは、複数の場所からアプリをインストールで
 
 **[不明なソース]** を無効にしてから、Android デバイスで会社や学校のデータにアクセスできるようになるまでに数分間かかることがあります。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。

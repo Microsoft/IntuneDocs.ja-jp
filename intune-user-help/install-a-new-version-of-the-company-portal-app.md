@@ -14,11 +14,11 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: d9a7ba4e3a4c10919ba933cc59c8093bec3588db
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 7264af5564604608f3ce6811ec72586fa3ce51c9
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-update-the-company-portal-app"></a>ポータル サイト アプリを更新する方法
 
@@ -48,4 +48,4 @@ ms.lasthandoff: 09/28/2017
     > Microsoft ストアにアクセスできない場合は、会社のサポートに問い合わせてください。
 
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2afa9ef5fdd755e7722939288f3c3b1ad4dd722f
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 494222330e06a1efc5a9ac6cb303b5d2c63d421e
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-enable-secure-boot"></a>セキュア ブートを有効にする必要がある
 
@@ -30,4 +30,4 @@ ms.lasthandoff: 09/28/2017
 
 PC を使用している場合は、会社のサポートに問い合わせるか、「[セキュア ブートの無効化](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx)」ページの「セキュア ブートを再有効化するには」セクションを参照して、自分でセキュア ブートを有効にしてみます。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。

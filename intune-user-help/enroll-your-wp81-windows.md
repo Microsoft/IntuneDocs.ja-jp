@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c7ac377cd3bc958440d191bd45ea5062acdb7647
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 30980072cfb1c98ab7755206b24497a356ebfff3
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Intune に Windows Phone 8.1 デバイスを登録する
 
@@ -84,4 +84,4 @@ Intune に Phone 8.1 デバイスを登録するには、自分の職場また�
 
 会社のサポートによって、登録時に Intune ポータル サイトがインストールされるようにセットアップされている場合は、その Intune ポータル サイトがアプリの一覧に表示されることがわかります。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。

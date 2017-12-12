@@ -3,8 +3,8 @@ title: "Android と Android for Work デバイスの Intune 電子メール設�
 titleSuffix: Azure portal
 description: "Android デバイスでの電子メール接続の構成に使用できる Intune 設定について説明します。\""
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 06/15/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 4d3458cc-fcaa-4648-b13f-bf1f0616c1c5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 436db2f645a3f2e787cb27a8c110630a8fbb1f38
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 0c793721cad40ea0f1662ae72ed334b98226c96d
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="email-profile-settings-for-android--devices-in-microsoft-intune"></a>Microsoft Intune での Android デバイス向けの電子メール プロファイル設定
 
@@ -60,7 +60,7 @@ Intune 管理者は、次の Android デバイスに対して電子メール設�
 - **[メール アプリ]** - **[Gmail]** または **[Nine Work]** を選択します。
 - **[電子メール サーバー]** - Exchange サーバーのホスト名。
 - **[AAD からのユーザー名の属性]** - この名前は Active Directory (AD) または Azure AD の属性で、この電子メール プロファイルのユーザー名の生成に使用されます。 **プライマリ SMTP アドレス** (user1@contoso.com など) または**ユーザー プリンシパル名** (user1、user1@contoso.com など) を選択します。
-- **[AAD からのメール アドレス属性]** - 各デバイスでユーザーの電子メール アドレスを生成する方法。 **[ユーザー プリンシパル名] ** を選択して電子メール アドレスとして完全プリンシパル名を使用するか、**[ユーザー名]** を選択します。
+- **[AAD からのメール アドレス属性]** - 各デバイスでユーザーの電子メール アドレスを生成する方法。 **[ユーザー プリンシパル名]**  を選択して電子メール アドレスとして完全プリンシパル名を使用するか、**[ユーザー名]** を選択します。
 - **[認証方法]** - 電子メール プロファイルで使用する認証方法として、**[ユーザー名とパスワード]** または **[証明書]** を選択します。
     - **[証明書]** を選択した場合は、Exchange 接続の認証のために事前に作成しておいたクライアント SCEP または PKCS 証明書プロファイルを選択します。
 - **[SSL]** - 電子メールの送受信および Exchange サーバーとの通信に、SSL (Secure Sockets Layer) 通信を使用します。

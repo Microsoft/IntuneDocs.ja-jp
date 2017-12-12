@@ -14,11 +14,11 @@ ms.assetid: 3c95d821-7862-486a-b9dc-0ed37bc5befb
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 399a910e9aa2ad9fdd4ceefe446c637aa5076c12
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 4cfbcc84e77632ca17387b083f519b8a297e9503
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Mobile Threat Defense アプリが検出した脅威を解決する
 
@@ -38,5 +38,5 @@ Mobile Threat Defense が脅威と判断するアプリがインストールさ�
 
 アプリケーションをアンインストールするとすぐに、会社または学校の電子メールやその他のデータへのアクセスが回復します。 アプリケーションのアンインストール要求を無視すると、アプリをアンインストールするまで、会社のメールやデータにアクセスできなくなります。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
 

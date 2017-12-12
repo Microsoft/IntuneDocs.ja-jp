@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a8364778943171bb1a949f61ad696427ff914c99
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 055bfcf088d46c1010206bd1e77ffbad76611c7c
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>詳細ログ記録を使用して会社のサポートがデバイスの問題を解決できるようにする
 
@@ -28,4 +28,4 @@ Android デバイスが Intune に登録されたら、*[詳細ログ記録]* �
 
 [詳細ログ記録] をオンまたはオフにするには、職場または学校の資格情報を使用して会社のポータル アプリにサインインし、**[設定]** をタップし、**[詳細ログ記録]** の横にあるオン/オフ ボタンをタップします。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。

@@ -3,8 +3,8 @@ title: "Windows Phone 8.1 デバイスの Intune カスタム設定"
 titleSuffix: Azure portal
 description: "Windows Phone 8.1 カスタム プロファイルで使用できる Intune の設定について説明します。\""
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 05/04/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 21c55041-3821-4a62-9f85-855b97dba269
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2fa0a944c70e9749a9ac1c7e2b3341660000072c
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 88de53924e15d1d7934a6c19283f5a1cee053569
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="custom-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Microsoft Intune での Windows Phone 8.1 デバイス向けのカスタム設定
 

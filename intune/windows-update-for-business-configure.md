@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 8abc5e9a1e1d5ec5e0ea632b075209a0ba9456c2
-ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
+ms.openlocfilehash: ca1f1c0572a2a3c1484b9c23bd14e029e506e536
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="manage-software-updates"></a>ソフトウェア更新プログラムの管理
 
@@ -94,8 +94,8 @@ Windows Update for Business を使用することで、デバイスのグルー�
 
     **サービス チャネルが半期チャネルに設定され、遅延期間が 30 日の場合**: 機能更新プログラム X が Windows Update で 1 月に半期チャネル (対象指定) として最初に公開されるとします。 4 か月後の 4 月に、機能更新プログラム X が半期チャネルにリリースされます。 デバイスは、この半期チャネル リリースの 30 日後に機能更新プログラムを受信し、5 月に更新されます。
 
-    - **配信の最適化** - デバイスが Windows 更新プログラムをダウンロードする方法を選択します。 詳細については、「[DeliveryOptimization/DODownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode)」を参照してください。
-8. 完了したら、**[OK]** をクリックして、**[Create Update Ring (更新プログラム リングの作成)]** ブレードで **[作成]** をクリックします。
+    - **配信の最適化** - デバイスが Windows 更新プログラムをダウンロードする方法を選択します。 詳細については、「[DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode)」を参照してください。
+1. 完了したら、**[OK]** をクリックして、**[Create Update Ring (更新プログラム リングの作成)]** ブレードで **[作成]** をクリックします。
 
 新しい更新プログラム リングが、更新プログラム リングの一覧に表示されます。
 

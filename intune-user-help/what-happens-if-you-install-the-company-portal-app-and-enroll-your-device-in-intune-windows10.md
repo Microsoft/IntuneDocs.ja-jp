@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 31b6545b0518e369b95b6e4830617988aa806112
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 7d8dc077c3da1c9bfe302b4808142f8b7a1a60cf
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>ポータル サイト アプリをインストールし、Intune に Windows 10 デバイスを登録するとどうなりますか。
 
@@ -52,4 +52,4 @@ ms.lasthandoff: 09/28/2017
 
 -   会社のサポートは、コンピューターに対してポリシーを適用することがあります。 たとえば、コンピューターにパスワードまたは PIN を設定するように求められる場合があります。 会社のサポートは、パスワードの試行回数の制限、および試行回数を超えた場合のコンピューターのロックまたはコンピューターのハード ドライブからのすべてのデータの削除なども設定できます。
 
-ご不明な点がある場合は、会社のサポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+ご不明な点がある場合は、会社のサポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。

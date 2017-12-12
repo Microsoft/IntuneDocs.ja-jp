@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4fad2b78b8224fc1a90ad8c81d350917b17e3d57
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 1b0d1df8e34a6a942a3fbb16baba4311fc1083d4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-enable-code-integrity"></a>コードの整合性を有効にする必要がある
 
@@ -33,4 +33,4 @@ ms.lasthandoff: 09/28/2017
 
 サポートなしで進める場合は、「[セキュア ブートの無効化](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx)」ページの「セキュア ブートを再有効化するには」セクションを参照して、自分でセキュア ブートを有効にしてみます。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。

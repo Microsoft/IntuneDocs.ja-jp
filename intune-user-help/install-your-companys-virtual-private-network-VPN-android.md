@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: eca9ef81acb4d1535649d4e13e1b5b2e18ed109a
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: e4180a20fdbc3181fe631f1b57ec6758a9e16ee4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>会社の仮想プライベート ネットワーク (VPN) をインストールする方法
 
@@ -33,4 +33,4 @@ ms.lasthandoff: 09/28/2017
 3.  **[企業 VPN プロファイルをインストールしてください]** をタップして、画面に表示される指示に従います。 インストール手順は、会社で使用している VPN のプロバイダーによって多少異なる場合があります。
 
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
