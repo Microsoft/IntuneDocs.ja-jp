@@ -14,11 +14,11 @@ ms.assetid: 754f4ea5-cff4-414d-8cd1-900238f79e84
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: cb5f58232b46eac911c48fd80569ec54644d6745
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 287917669523e257a42b47d0132de7cc0dcf18e0
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>Android デバイスに SandBlast Mobile Protect をインストールする必要があります
 
@@ -34,9 +34,9 @@ ms.lasthandoff: 09/28/2017
 
 3. SandBlast Mobile Protect を開き、**[VERIFY]\(確認)** をタップします。
 
-4. [**Azure Active Directory でサインインする**] をタップし、職場または学校の電子メールやファイルへのアクセスに使用しているアカウントを入力します。
+4. **[Azure Active Directory でサインインする]** をタップし、職場または学校の電子メールやファイルへのアクセスに使用しているアカウントを入力します。
 
-5. 職場または学校の電子メールやファイルへのアクセスに使用するアカウントを選択してから [**アカウントの追加**] をタップします。
+5. 職場または学校の電子メールやファイルへのアクセスに使用するアカウントを選択してから **[アカウントの追加]** をタップします。
 
 6. **[同意する]** をタップして SandBlast Mobile Protect による自分のアカウントでのサインインと自分のプロフィールの読み取りを許可します。
 
@@ -56,4 +56,4 @@ ms.lasthandoff: 09/28/2017
 
 ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。 このような場合は、SandBlast Mobile Protect を [Play ストアから手動で](https://play.google.com/store/apps/details?id=com.lacoon.security.fox)インストールします。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。

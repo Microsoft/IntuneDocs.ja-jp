@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a49df5ee93138bd15052bfd630633b443e026e5d
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 1559692de1a8c9c356a3f5b30e80d1abd31853d2
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>ポータル サイト アプリで Intune に macOS デバイスを登録する
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 11/08/2017
 > [!NOTE]
 > 以前のバージョンの macOS での macOS デバイスの登録手順については、[こちら](enroll-your-device-in-intune-macos-legacy.md)を参照してください。
 
-1. __Dock__ で __Safari__ を起動し、新しいウィンドウを開いてから、[会社のポータル Web サイト](https://portal.manage.microsoft.com)を開きます。
+1. __Dock__ で __Safari__ を起動し、新しいウィンドウを開いてから、[会社のポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)を開きます。
 
 2. 職場や学校のアカウントで会社のポータル Web サイトにログインします。
 
@@ -62,4 +62,4 @@ ms.lasthandoff: 11/08/2017
 
 11. Mac は管理登録を開始します。 この間、コンピューターのログイン情報を求められることがあります。 登録には数分かかる場合があります。 この間、コンピューターで他の作業を行っても構いません。 会社アクセス設定が完了すると、完了を知らせるメッセージが表示されます。
 
-サポートが必要な場合は、 会社のサポートに問い合わせてください。 連絡先の情報は、[会社のポータル Web サイト](https://portal.manage.microsoft.com)でわかります。
+サポートが必要な場合は、 会社のサポートに問い合わせてください。 連絡先の情報は、[会社のポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)でわかります。

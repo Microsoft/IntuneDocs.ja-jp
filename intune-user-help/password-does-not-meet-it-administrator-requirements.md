@@ -14,11 +14,11 @@ ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 88d7ca7a73f32c90f589cd51b299350879914b69
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: d6372efef833268dedf9e18e878fa66f1417a03d
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>パスワードが会社のサポートの要件を満たしていない
 
@@ -46,4 +46,4 @@ PIN またはパスワードの問題についての説明:
 
 - **パスワードが要件を満たすほど複雑ではありません**。 会社のサポートは、パスワードにより複雑な文字を使うように要求しています。 数字、英大文字、および $、%、# などの記号を使ってみてください。 これはデバイス上の他のアカウントにも該当する場合があるため、IT がデバイスに対して設定した要件をパスワードが満たしていることを他の作業アカウントでご確認ください。
 
-パスワードの要件への準拠で問題が発生している場合は、会社のサポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+パスワードの要件への準拠で問題が発生している場合は、会社のサポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 621468db51e7e6172d142501a4637794e4cb57b8
-ms.sourcegitcommit: 53a1f5226d1e1172f013a1b192321dde610b2d6c
+ms.openlocfilehash: 7a90ae7db1141b40934648c951276e3f4d43bc05
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Intune に Android デバイスを登録する
 
@@ -92,7 +92,7 @@ ms.lasthandoff: 10/06/2017
 
     重要なことは、これらのアクションがセキュリティの名の下に行われるということです。 会社のサポートは理由なくプライバシーを侵害したり、情報を削除したりしません。企業のデータが守られていることを確認しようとしているだけです。
 
-    Microsoft はこのメッセージは制御しません。その言葉遣いが少々極端であることは理解しています。 特定の組織に関連する制約やアクセスのみをポータル サイトで表示する方法はありません。 すべて一度にこの画面で与えられます。 個別の組織の利用に関して質問があれば、[ポータル Web サイト](https://portal.manage.microsoft.com)の連絡先情報を利用し、会社のサポートに詳細を問い合わせてください。
+    Microsoft はこのメッセージは制御しません。その言葉遣いが少々極端であることは理解しています。 特定の組織に関連する制約やアクセスのみをポータル サイトで表示する方法はありません。 すべて一度にこの画面で与えられます。 個別の組織の利用に関して質問があれば、[ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)の連絡先情報を利用し、会社のサポートに詳細を問い合わせてください。
 
 12.  画面の指示に従って、PIN またはパスワードを入力します。 このデバイス上で PIN またはパスワードを既に設定している場合は、この画面は表示されず、新しい PIN またはパスワードを入力するように求められます。
 
@@ -129,4 +129,4 @@ ms.lasthandoff: 10/06/2017
 
 Intune にデバイスを登録している最中にエラーが表示された場合は、[会社のサポートに登録に関するエラーを送信](send-enrollment-errors-to-your-it-admin-android.md)できます。
 
-サポートが必要な場合は、 会社のサポートに問い合わせるか (連絡先情報については[ポータル Web サイト](https://portal.manage.microsoft.com)をご確認ください)、または <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android チーム</a>にご連絡ください。
+サポートが必要な場合は、 会社のサポートに問い合わせるか (連絡先情報については[ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください)、または <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android チーム</a>にご連絡ください。

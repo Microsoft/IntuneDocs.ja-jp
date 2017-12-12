@@ -2,9 +2,9 @@
 title: "Microsoft Intune アプリ SDK の概要"
 description: "Microsoft Intune でモバイル アプリケーション管理 (MAM) 用のモバイル アプリをすぐに有効にできます。"
 keywords: 
-author: mattbriggs
+author: erikre
 manager: angrobe
-ms.author: mabriggs
+ms.author: erikre
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a0134f19aea3956a6aff852d97e9d95e1882e056
-ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
+ms.openlocfilehash: d6b981afba73b5308351f9e5501db904b42389c7
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune アプリ SDK の概要
 
@@ -115,7 +115,7 @@ Microsoft Intune はアプリの利用統計データを収集します。
 
 * **Android 用 Intune アプリ SDK**: SDK によって製品利用統計情報データがログに記録されることはありません。
 
- iOS と Android の基幹業務アプリのバージョン番号が表示されます <!-- 1380712 -->
+ iOS と Android の基幹業務アプリのバージョン番号が表示可能 <!-- 1380712 -->
 
 ## <a name="line-of-business-app-version-numbers"></a>基幹業務アプリのバージョン番号
 

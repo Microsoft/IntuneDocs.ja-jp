@@ -16,22 +16,22 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0103eb02cd169a224624d46d93645861f7bbbd47
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 43460cb18681c47e14c89c8dbeb70a4ae006eb7d
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>ポータル サイト Web サイトからデバイスのパスコードをリセットする方法
 
-Intune に登録したデバイスの PIN またはパスワードを紛失した場合は、[ポータル サイト web サイト](https://portal.manage.microsoft.com)からリセットすることができます。 会社のポータル Web サイトを使用すると、Intune に登録したコンピューターとデバイスを管理し、会社のポータル アプリを使用する場合とほぼ同じタスクを実行できます。
+Intune に登録したデバイスの PIN またはパスワードを紛失した場合は、[ポータル サイト web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)からリセットすることができます。 会社のポータル Web サイトを使用すると、Intune に登録したコンピューターとデバイスを管理し、会社のポータル アプリを使用する場合とほぼ同じタスクを実行できます。
 
 > [!NOTE]
 > 会社に登録されたデバイスを使用している場合、ポータル サイト Web サイトに [パスコードのリセット] ボタンが表示されないことがあります。 表示されない場合は、会社のサポートにパスコードのリセットを依頼する必要があります。
 
 パスコードをリセットするには:
 
-1.  [ポータル Web サイト](https://portal.manage.microsoft.com)で、__メニュー__ ボタン ![3 つの横棒が並行に積み上げられている、メニュー ボタンの小さな画像](/intune/media/CP_hamburger_menu.png) をタップしてから、__[デバイス]__ を選択します。
+1.  [ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)で、__メニュー__ ボタン ![3 つの横棒が並行に積み上げられている、メニュー ボタンの小さな画像](/intune/media/CP_hamburger_menu.png) をタップしてから、__[デバイス]__ を選択します。
 
 2. __[デバイス]__ ページで、パスコードをリセットするデバイスの名前を選択します。
 
@@ -68,4 +68,4 @@ Intune に登録したデバイスの PIN またはパスワードを紛失し�
 
 パスコードが正常にリセットされたことを確認する通知を表示するには、ポータル サイト Web サイトの右上にある通知フラグをクリックします。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。

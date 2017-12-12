@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e7375e6670c15fe186f5e77876e7b46f9021ad9d
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: a1289a934f2c6d295f7b59512190afc99d4f381e
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="turn-off-microsoft-usage-data-collection"></a>Microsoft による使用状況データの収集を無効にする
 
@@ -28,4 +28,4 @@ Microsoft は、製品やサービスに関する特定のデータを自動的�
 
 Android デバイスでのこのようなデータの収集は、ポータル サイト アプリの **[使用状況データ]** 設定を使用して無効にすることができます。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。

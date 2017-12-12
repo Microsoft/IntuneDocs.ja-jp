@@ -14,11 +14,11 @@ ms.assetid: b5521762-a80c-4630-ae30-38b471da216b
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 341226bcc5ba3ca0b7f12aedeb137580a49b9f18
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 1fa368ad494ae60a9db5cbe32ce678ce6fd56c0d
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Symantec Endpoint Protection Mobile で検出された脅威を解決する
 
@@ -34,7 +34,7 @@ Symantec Endpoint Protection Mobile がデバイスで潜在的な脅威を検�
 
 ![ポータル サイト Web サイトへのリンク付きの Skycure エラー メッセージ](./media/skycure-list-of-potential-issues-android.png)
 
-**デバイスの管理ポータル**のリンクをタップして[ポータル サイト Web サイト](https://portal.manage.microsoft.com)に移動すると、問題を解決する方法の手順が表示されます。
+**デバイスの管理ポータル**のリンクをタップして[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)に移動すると、問題を解決する方法の手順が表示されます。
 
 ## <a name="example-of-an-app-that-symantec-endpoint-protection-mobile-sees-as-a-threat"></a>Symantec Endpoint Protection Mobile が脅威として見なすアプリの例
 
@@ -44,5 +44,5 @@ Symantec Endpoint Protection Mobile が脅威と判断するアプリがイン�
 
 アプリケーションをアンインストールするとすぐに、会社の電子メールやデータへのアクセスが回復します。 アプリケーションのアンインストール要求を無視すると、アプリをアンインストールするまで、電子メールやデータにアクセスできなくなります。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
 
