@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: cdcad8e7265c72312663ce45056e1d42b7379699
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: a64a8c6f0f616b0e236cf063b396eae3106ca445
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-windows-devices-operating-system-version-isnt-yet-supported"></a>Windows デバイスのオペレーティング システムのバージョンがまだサポートされていない
 
 テクノロジの開発のペースはとても速いため、デバイスに会社のサポートのテストが追いつけない場合があります。 最新バージョンの Windows では会社の一部のツールが動作しないことも考えられます。 
 
-この問題を解決するには、会社のサポートに連絡する必要があります。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+この問題を解決するには、会社のサポートに連絡する必要があります。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。

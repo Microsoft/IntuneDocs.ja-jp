@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 790b935b71b641aec3093a9cdd7f7a98ba90babb
-ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
+ms.openlocfilehash: 206de56ee967f4cd142e5cd7c9d63971b9b727c6
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>会社のリソースへのアクセスを設定する
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 11/21/2017
 - 開始したら、プロセス全体を完了するようにしてください。 通常、数分以上一時停止すると進行状況が停止し、やり直しが必要になります。
 - このプロセスが失敗した場合は、ポータル サイト アプリに戻り、やり直す必要があります。
 - Wi-Fi が使えており、お使いのデバイス上で Safari が動作していることを確認してください。
-- [Intune ポータル サイト アプリ](install-and-sign-in-to-the-intune-company-portal-app-ios.md)をダウンロードして、インストールします。
+- [Intune ポータル サイト アプリ](install-and-sign-in-to-the-intune-company-portal-app-ios.md)をダウンロードしてインストールします。
 
 
 ## <a name="using-the-company-portal-app-to-set-up-access-to-company-resources"></a>ポータル サイト アプリを使用して会社のリソースへのアクセスを設定する

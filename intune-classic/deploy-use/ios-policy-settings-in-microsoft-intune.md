@@ -2,8 +2,8 @@
 title: "iOS ポリシー設定"
 description: "Intune で管理する iOS デバイスの設定と機能を制御するポリシーを作成します。"
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 11/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 58be7ad24da7e4eadc1c67016979396114799bd8
-ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
+ms.openlocfilehash: e9d014eb504098ff4361add7a0f3715f33be9083
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Microsoft Intune の iOS ポリシー設定
 
@@ -216,7 +216,7 @@ Microsoft Intune の **iOS 全般構成ポリシー**を使用して、次の設
 2.  準拠しているアプリ、準拠していないアプリ、またはその両方を確認するデバイス グループを選択して、**[レポートの表示]** を選択します。
 
 #### <a name="how-to-specify-urls-to-app-stores"></a>アプリ ストアの URL を指定する方法
-準拠アプリと非準拠アプリの一覧、または **[ デバイスがキオスク モードのときに実行を許可する管理対象アプリを選択します ]** オプション (iOS のみ) でアプリの URL を指定するには、次の形式を使用します。
+準拠アプリと非準拠アプリの一覧、または **[デバイスがキオスク モードのときに実行を許可する管理対象アプリを選択します]** オプション (iOS のみ) でアプリの URL を指定するには、次の形式を使用します。
 
 1. 検索エンジンを使用して、iTunes App Store で使用するアプリを検索し、アプリのページを開きます。
 
@@ -225,7 +225,7 @@ Microsoft Intune の **iOS 全般構成ポリシー**を使用して、次の設
 **例:** **Microsoft Word for iPad** を検索します。 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8** という URL を使用します。
 
 > [!NOTE]
-> iTunes ソフトウェアを使用してアプリを検索し、**[ リンクのコピー ]** コマンドを使用してアプリの URL を入手することもできます。
+> iTunes ソフトウェアを使用してアプリを検索し、**[リンクのコピー]** コマンドを使用してアプリの URL を入手することもできます。
 
 ### <a name="enrollment-settings"></a>登録設定
 すべての設定は、iOS 8.0 以降に適用されます。

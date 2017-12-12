@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 22cdbc1140c57cb7475689307df5a261774761d5
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: ef555fa550e1c2fcab96d4837e7fcdba1ab4a9e6
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-upgrade-your-device-to-install-the-outlook-app"></a>Outlook アプリをインストールするにはデバイスをアップグレードする必要がある
 
@@ -34,4 +34,4 @@ Outlook を (インストールではなく) ダウンロードしようとす�
 ## <a name="if-you-have-an-ios-device"></a>IOS デバイスを所有している場合
 **[設定]** > **[一般]** > **[ソフトウェアアップデート]** の順にタップします。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。

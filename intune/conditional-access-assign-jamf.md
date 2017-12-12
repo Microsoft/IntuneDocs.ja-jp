@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/21/2017
+ms.date: 11/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dd84812a7e7dcf83f01c8d4d2b613706f7700775
-ms.sourcegitcommit: b2a6678a0e9617f94ee8c65e7981211483b30ee7
+ms.openlocfilehash: 06cc4d70b30ec92946baefbc020aa4cda28b0c88
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Jamf Pro で管理された Mac にコンプライアンスを適用します
 
@@ -40,28 +40,38 @@ Azure Active Directory および Microsoft Intune の条件付きアクセス �
 1. Microsoft Azure を開き、**[Intune]** > **[デバイスのポリシー準拠]** > **[ポリシー]** に移動します。 準拠していないユーザーとグループに対する一連のアクション (警告の電子メールの送信など) の選択を含む、macOS 用のポリシーを作成できます。
 2. 目的のグループを検索し、それらにポリシーを適用します。
 
-## <a name="require-the-company-portal-app-for-macos"></a>macOS 用ポータル サイト アプリが必要です
+## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a>macOS 用ポータル サイト アプリを Jamf Pro に展開する
 
-1. macOS デバイスで、https://aka.ms/macoscompanyportal に移動し、macOS 用のポータル サイト アプリの現在のバージョンをダウンロードします。
+macOS 用ポータル サイト アプリを Jamf Pro に展開する方法には、次の 2 とおりがあります。
+
+- ポータル サイト アプリの展開を Jamf セルフ サービスで利用できるようにする、または、
+- ユーザーが次の手順に従うように、バック グラウンド インストールとして展開する:
+
+1. macOS デバイスで、[macOS 用のポータル サイト アプリ](https://go.microsoft.com/fwlink/?linkid=862280)の現在のバージョンをダウンロードします。
 2. Jamf Pro を開き、**[コンピューターの管理]** > **[パッケージ]** に移動します。
 3. macOS 用のポータル サイト アプリで新しいパッケージを作成し、**[保存]** をクリックします。
 4. **[コンピューター]** > **[ポリシー]** を開き、**[新規]** を選択します。
-5. **[全般]** ペイロードを使用して、トリガーと実行の頻度を含め、ポリシーの設定を構成します。
+5. **[全般]** ペイロードを使用して、ポリシーの設定を構成します。 これらの設定は次のとおりです。 
+   - トリガー: **[登録完了]** と **[Recurring Check-in]\(定期的なチェックイン\)** を選択します。
+   - 実行の頻度: **[Once per computer]\(コンピューターにつき 1 回\)** を選択します。
 6. **[パッケージ]** ペイロードを選択し、**[構成]** をクリックします。
 7. **[追加]** をクリックし、ポータル サイト アプリでパッケージを選択します。
 8. **[アクション]** ポップアップ メニューから **[インストール]** を選択します。
 9. パッケージの設定を構成します。
 10. **[スコープ]** タブをクリックし、ポータル サイト アプリをインストールするコンピューターを指定します。 **[Save]**(保存) をクリックします。 ポリシーは、次回、選択したトリガーがコンピューターで発生し、**[全般]** ペイロードの条件を満たしている場合にスコープのデバイスで実行されます。
 
-## <a name="direct-your-users-to-register-jamf-pro-managed-devices-with-azure-active-directory"></a>Azure Active Directory で Jamf Pro で管理されたデバイスを登録するようにユーザーに指示します。
+## <a name="create-a-policy-in-jamf-pro-to-have-users-register-their-devices-with-azure-active-directory"></a>ユーザーに Azure Active Directory で自分のデバイスを登録させるためのポリシーを Jamf Pro で作成する
 
 > [!NOTE]
 > 次の手順に進む前に、macOS 用の[ポータル サイトの展開](conditional-access-assign-jamf.md#require-the-company-portal-app-for-macos)を行う必要があります。  
 
-エンドユーザーは、デバイスを Jamf Pro によって管理されるデバイスとして Azure AD で登録するために、Jamf セルフ サービスを経由してポータル サイト アプリを起動する必要があります。
+エンドユーザーは、デバイスを Jamf Pro によって管理されるデバイスとして Azure AD で登録するために、Jamf セルフ サービスを経由してポータル サイト アプリを起動する必要があります。 この場合、エンドユーザーは操作を実行する必要があります。 電子メール、Jamf Pro 通知、またはエンドユーザーへの他の通知方法を通して、Jamf セルフ サービスでボタンをクリックするように[エンド ユーザーに連絡する](end-user-educate.md)ことをお勧めします。
+
+> [!WARNING]
+> ポータル サイト アプリを Jamf セルフ サービスから起動してデバイスの登録を開始する必要があります。 <br><br>ポータル サイト アプリを手動で起動した場合 (たとえば、アプリケーション フォルダーまたはダウンロード フォルダーから起動)、デバイスは登録されません。 エンドユーザーがポータル サイトを手動で起動した場合は、"AccountNotOnboarded" という警告が表示されます。
 
 1. Jamf Pro で **[コンピューター]** > **[ポリシー]** に移動し、デバイス登録用の新しいポリシーを作成します。
-2. トリガーと実行の頻度を含め、**[条件付きアクセス]** ペイロードを構成します。 優先順位を **[After]\(後続\)** に設定します。
+2. トリガーや実行の頻度など、**[Microsoft Intune 統合]** ペイロードを構成します。 優先順位を **[After]\(後続\)** に設定します。
 3. **[スコープ]** タブをクリックし、ポリシーのスコープをすべての対象デバイスにします。
 4. **[セルフ サービス]** タブをクリックし、Jamf セルフ サービスでポリシーを利用可能にします。 ポリシーを **[デバイスのポリシー準拠]** カテゴリに含めます。 **[Save]**(保存) をクリックします。
 

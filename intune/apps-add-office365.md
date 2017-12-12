@@ -1,5 +1,5 @@
 ---
-title: "Intune を使用して Windows 10 デバイスに Office 365 ProPlus アプリをインストールする"
+title: "Intune を使用してモバイル デバイスに Office 365 アプリをインストールする"
 titlesuffix: Azure portal
 description: "Intune を使用して、簡単に Windows 10 デバイスに Office 365 アプリをインストールする方法について説明します。"
 keywords: 
@@ -15,18 +15,18 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4e3ad7b68be723e0cab7b541b0ae7e3cc858c99
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 7f1958e4a0fb5aeba3225ee7ea5fae1e7fb39db3
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune で Windows 10 デバイスに Office 365 ProPlus 2016 アプリを割り当てる方法
 
-このアプリの種類を使用すると、Windows 10 を実行している管理対象のデバイスに Office 365 ProPlus 2016 アプリを簡単に割り当てることができます。 また、ライセンスを所有している場合は、Microsoft Project Online デスクトップ クライアントおよび Visio Pro for Office 365 のアプリをインストールすることもできます。 必要なアプリは、Intune コンソールのアプリ一覧に 1 つのアプリとして表示されます。
+このアプリの種類を使用すると、Windows 10 を実行している管理対象のデバイスに Office 365 ProPlus 2016 アプリを簡単に割り当てることができます。 また、ライセンスを所有している場合は、Microsoft Project Online デスクトップ クライアントおよび Visio Pro for Office 365 のアプリをインストールすることもできます。 必要なアプリは、Intune コンソールのアプリ一覧に単一のエントリとして表示されます。
 
 
-## <a name="before-you-start"></a>開始する前に
+## <a name="before-you-start"></a>アップグレードを開始する前に
 
 >[!IMPORTANT]
 >Office をインストールするこの方法は、他のバージョンの Microsoft Office がデバイスにインストールされていない場合にのみサポートされます。
@@ -137,7 +137,3 @@ ms.lasthandoff: 09/15/2017
 ## <a name="next-steps"></a>次のステップ
 
 選択したグループにアプリを割り当てることができます。 詳細については、[アプリをグループに割り当てる方法](/intune-azure/manage-apps/deploy-apps)に関するページを参照してください。
-
-             
-
-

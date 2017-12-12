@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1f0d518edc26c382d6df71b95b84328eb375baf6
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: e9e511cef22fdfc8e2975bd14f7b969067317a44
+ms.sourcegitcommit: 2ad0d88d3ef5b81563c6a54eaf52f09e126abeaf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="how-to-configure-certificates-in-microsoft-intune"></a>Microsoft Intune で証明書を構成する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-VPN、Wi-Fi、または電子メール プロファイル経由でユーザーが企業リソースへアクセスできるようにする場合、証明書を使用してこれらの接続を認証することができます。 これにより、接続の認証にユーザー名とパスワードを入力する必要がなくなります。
+VPN、Wi-Fi、または電子メール プロファイル経由でユーザーが企業リソースへアクセスできるようにする場合、証明書を使用してこれらの接続を認証することができます。 証明書を使用する場合は、接続の認証にユーザー名とパスワードを入力する必要はありません。
 
 Intune を使用して、管理するデバイスに証明書を割り当てることができます。 Intune では、次の種類の証明書の割り当てと管理がサポートされています。
 
@@ -45,27 +45,30 @@ Intune を使用して、管理するデバイスに証明書を割り当てる�
     - Windows 8.1 以降
     - Windows Phone 8.1 以降
     - Windows 10 以降
-3. デバイスが VPN、Wi-Fi、電子メールによるアクセスの認証に使用する証明書を要求するように、証明書プロファイルを作成します。 次のプラットフォームを実行するデバイスに対しては、**PKCS** または **SCEP** 証明書プロファイルを作成し、割り当てることができます。
-    - iOS 8.0 以降
-    - Android 4.0 以降
-    - Android for Work
-    - Windows 10 (Desktop および Mobile) 以降
+3. デバイスが VPN、Wi-Fi、電子メールによるアクセスの認証に使用する証明書を要求するように、証明書プロファイルを作成します。
 
-    次のプラットフォームでは、SCEP 証明書プロファイルのみを使用できます。
+   次のプラットフォームを実行するデバイスに対しては、**PKCS** または **SCEP** 証明書プロファイルを作成し、割り当てることができます。
 
--   macOS 10.9 以降
--   Windows Phone 8.1 以降
+   - iOS 8.0 以降
+   - Android 4.0 以降
+   - Android for Work
+   - Windows 10 (Desktop および Mobile) 以降
+
+   次のプラットフォームを実行するデバイスの場合は、**SCEP** 証明書プロファイルを使用できるだけです。
+
+   - macOS 10.9 以降
+   - Windows Phone 8.1 以降
 
 デバイス プラットフォームごとに別個のプロファイルを作成する必要があります。 プロファイルを作成したら、それを既に作成済みの信頼されたルート証明書プロファイルに関連付けます。
 
 ### <a name="further-considerations"></a>その他の注意事項
 
 - エンタープライズ証明機関がない場合は、作成する必要があります。
-- デバイス プラットフォームに基づいて Simplified Certificate Enrollment Protocol (SCEP) プロファイルを使用することにした場合は、ネットワーク デバイス登録サービス (NDES) サーバーも構成する必要があります。
+- また、SCEP プロファイルを使用する場合は、ネットワーク デバイス登録サービス (NDES) サーバーを構成する必要があります。
 - SCEP プロファイルと PKCS プロファイルのどちらを使用する場合でも、Microsoft Intune 証明書コネクタをダウンロードして構成する必要があります。
 
 
-## <a name="step-1--configure-your-certificate-infrastructure"></a>手順 1- 証明書インフラストラクチャを構成する
+## <a name="step-1-configure-your-certificate-infrastructure"></a>手順 1- 証明書インフラストラクチャを構成する
 
 インフラストラクチャの構成については、証明書プロファイルの種類に応じて次のトピックのいずれかを参照してください。
 
@@ -73,7 +76,7 @@ Intune を使用して、管理するデバイスに証明書を割り当てる�
 - [Intune で PKCS 証明書を構成して管理する](certficates-pfx-configure.md)
 
 
-## <a name="step-2---export-your-trusted-root-ca-certificate"></a>手順 2 - 信頼されたルート CA 証明書をエクスポートする
+## <a name="step-2-export-your-trusted-root-ca-certificate"></a>手順 2 - 信頼されたルート CA 証明書をエクスポートする
 
 発行元 CA または発行元 CA を信頼するデバイスから、信頼されたルート証明機関 (CA) 証明書を **.cer** ファイルとしてエクスポートします。 秘密キーをエクスポートしないでください。
 
