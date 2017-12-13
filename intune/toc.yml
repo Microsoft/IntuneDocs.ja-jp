@@ -44,7 +44,7 @@
   items:
     - name: Azure Portal での操作
       href: get-started-azure.md
-    - name: ユーザーを作成する
+    - name: ユーザーの作成
       href: get-started-users.md
     - name: グループの作成
       href: get-started-groups.md
@@ -73,7 +73,7 @@
           href: planning-guide-support-plan.md
         - name: 設計
           href: planning-guide-design.md
-        - name: 実装
+        - name: 変更の
           href: planning-guide-onboarding.md
         - name: テストと検証
           href: planning-guide-test-validation.md
@@ -142,7 +142,7 @@
         - name: 登録オプション
           href: enrollment-options.md
           items:
-            - name: Intune の登録および会社アクセスに関する使用条件
+            - name: 使用条件
               href: terms-and-conditions-create.md
             - name: 制限
               href: enrollment-restrictions-set.md
@@ -247,7 +247,7 @@
               href: app-configuration-policies-use-ios.md
             - name: Android 管理対象デバイス
               href: app-configuration-policies-use-android.md
-            - name: Managed apps
+            - name: 管理対象のアプリ
               href: app-configuration-policies-managed-app.md
         - name: iOS アプリ プロビジョニング プロファイルを使用する
           href: app-provisioning-profile-ios.md
@@ -552,6 +552,8 @@
   items:
     - name: ユーザーによる問題のトラブルシューティングをサポートする
       href: help-desk-operators.md
+    - name: Intune のアクティビティの監査ログ
+      href: monitor-audit-logs.md
     - name: Intune データ ウェアハウスを使用する
       href: reports-nav-create-intune-reports.md
       items:
@@ -579,7 +581,7 @@
           href: custom-settings-ios.md
         - name: macOS
           href: custom-settings-macos.md
-        - name: Windows Phone 8。1
+        - name: Windows Phone 8.1
           href: custom-settings-windows-phone-8-1.md
         - name: Windows 10
           href: custom-settings-windows-10.md
