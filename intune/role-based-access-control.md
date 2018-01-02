@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9dc65389485d2a77e351b5e781824eed0612054
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 791d93326ed1af173606d28639e92647ed7c1312
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Intune でのロール ベースの管理制御 (RBAC)
 
@@ -36,7 +36,7 @@ RBAC を使用して、組織内で Intune のさまざまなタスクを実行�
 
 - **グローバル管理者:** このロールが割り当てられたユーザーは、Azure AD のすべての管理機能だけでなく、Azure AD にフェデレーションされたサービス (Exchange Online、SharePoint Online、Skype for Business Online など) にアクセスできます。 Azure AD テナントにサインアップするユーザーはグローバル管理者になります。 グローバル管理者のみが Azure AD の他の管理者ロールを割り当てることができます。 組織は複数のグローバル管理者を持つことができます。 グローバル管理者は、すべてのユーザーと他のすべての管理者のパスワードをリセットできます。
 
-- **Intune サービス管理者:** このロールが割り当てられたユーザーは、サービスが存在する場合に Intune 内のグローバル アクセス許可を持ちます。 また、このロールはユーザーとデバイスを管理し、グループを作成および管理することができます。
+- **Intune サービス管理者:** このロールが割り当てられたユーザーは、サービスが存在する場合に Intune 内のグローバル アクセス許可を持ちます。 また、Azure の制限事項の置き換えの他に、このロールはユーザーとデバイスを管理し、Intune グループを作成および管理することができます。
 
 - **条件付きアクセス管理者:** このロールが割り当てられたユーザーは、条件付きアクセス ポリシーを表示、作成、修正、削除するアクセス許可を有するのみとなります。
 

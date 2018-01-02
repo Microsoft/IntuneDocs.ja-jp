@@ -6,7 +6,7 @@ keywords:
 author: MicrosoftGuyJFlo
 ms.author: joflore
 manager: angrobe
-ms.date: 11/16/2017
+ms.date: 12/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 105b5fc73bc537eaca67a0e6943701ba25a53972
-ms.sourcegitcommit: 2b35c99ca7d3dbafe2dfe1e0b9de29573db403b9
+ms.openlocfilehash: b72c4899debb0bbb7cb755327606cad1e239c611
+ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/16/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="configure-and-manage-pkcs-certificates-with-intune"></a>Intune で PKCS 証明書を構成して管理する
 
@@ -101,22 +101,20 @@ VPN、WiFi、およびその他のリソースの認証には、各デバイス�
 
 ![ConnectorDownload][ConnectorDownload]
 
-1. [Azure ポータル](https://portal.azure.com)にサインインします。
-2. **[Intune]**、**[デバイス構成]**、**[証明機関]** と移動して、**[Certificate Connector のダウンロード]** をクリックします。
-   * インストールするサーバー上のアクセスできる場所にダウンロードしたものを保存します。
-3. Microsoft Intune Certificate Connector をインストールするサーバーにログインします。
-4. インストーラーを実行し、既定の場所を受け入れます。 コネクタが C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe としてインストールされます。
+1. Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
+2. **[Intune]** ブレードで、**[デバイス構成]** を選択します。 
+3. **[デバイス構成]** ブレードで **[証明機関]** を選択します。 
+4. **[追加]** をクリックして、**[Download Connector file]\(コネクタ ファイルのダウンロード\)** を選択します。 インストールするサーバーからアクセスできる場所にダウンロードしたものを保存します。 
+5.  Microsoft Intune Certificate Connector をインストールするサーバーにログインします。
+6.  インストーラーを実行し、既定の場所を受け入れます。 コネクタが C:\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe としてインストールされます。
+    1. [インストーラー オプション] ページで、**[PFX 配布]** を選択して **[次へ]** をクリックします。
+    2. **[インストール]** をクリックして、インストールが完了するまで待ちます。
+    3. [完了] ページで、**[Intune コネクタの起動]** のラベルの付いたボックスをオンにして、**[完了]** をクリックします。
+7.  [NDES コネクタ] ウィンドウが開いて、**[登録]** タブが表示されます。Intune への接続を有効にするには、**[サインイン]** をクリックして、管理アクセス許可を持つアカウントを指定します。
+8.  **[詳細設定]** タブで、**[Use this computer's SYSTEM account]\(このコンピューターのシステム アカウントを使用する\)** (既定値) ラジオ ボタンをオンのままにします。
+9.  **[適用]** をクリックしてから、**[閉じる]** をクリックします。
+10. Azure Portal に戻ります。 数分後、**[Intune]** > **[デバイス構成]** > **[証明機関]** の **[接続の状態]** に、緑のチェック マークと **[アクティブ]** という語が表示されます。 これにより、コネクタ サーバーが Intune と通信できることが確認できます。
 
-      a. [インストーラー オプション] ページで、**[PFX 配布]** を選択して **[次へ]** をクリックします。
-
-   b. **[インストール]** をクリックして、インストールが完了するまで待ちます。
-
-   c. [完了] ページで、**[Intune コネクタの起動]** のラベルの付いたボックスをオンにして、**[完了]** をクリックします。
-
-5. [NDES コネクタ] ウィンドウが開いて、**[登録]** タブが表示されます。Intune への接続を有効にするには、**[サイン イン]** をクリックして、管理特権を持つアカウントを指定します。
-6. **[詳細設定]** タブで、**[Use this computer's SYSTEM account]\(このコンピューターのシステム アカウントを使用する\)** (既定値) ラジオ ボタンをオンのままにします。
-7. **[適用]** をクリックしてから、**[閉じる]** をクリックします。
-8. Azure Portal に戻ります。 数分後、**[Intune]**、**[デバイス構成]**、**[証明機関]** の **[接続の状態]** に、緑のチェック マークと**アクティブ**という語が表示されます。 これにより、コネクタ サーバーが Intune と通信できることが確認できます。
 
 ## <a name="create-a-device-configuration-profile"></a>デバイス構成プロファイルを作成する
 
@@ -169,4 +167,4 @@ VPN、WiFi、およびその他のリソースの認証には、各デバイス�
 
 [NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "Azure Portal で Intune に移動して信頼された証明書用の新しいプロファイルを作成する"
 [ProfileSettings]: ./media/certificates-pfx-configure-profile-fill.png "プロファイルを作成して信頼された証明書をアップロードする"
-[ConnectorDownload]: ./media/certificates-pfx-configure-connector-download.png "Azure Portal から Certificate Connector をダウンロードする"
+[ConnectorDownload]: ./media/certificates-download-connector.png "Azure Portal から Certificate Connector をダウンロードする"  

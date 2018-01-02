@@ -4,9 +4,9 @@
 
 ## [企業は Intune でどのような情報を確認できるか](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [デバイスをリセットするときに実行される動作](what-happens-if-you-reset-your-device-cpwebsite.md)
+## [デバイスをリセットする](what-happens-if-you-reset-your-device-cpwebsite.md)
 
-## [ポータル サイトにサインインする方法](sign-in-to-the-company-portal.md)
+## [ポータル サイトにサインインする](sign-in-to-the-company-portal.md)
 
 ## [Android デバイスを使用する](using-your-android-device-with-intune.md)
 ### [Android デバイスの登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
@@ -66,15 +66,15 @@
 ### [パスコードを設定または変更する](set-or-change-your-passcode-ios.md)
 ### [ポータル サイトを使用してデバイスをリセットするとどうなるか](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
 ### [デバイスのリセット](reset-erase-your-device-cpwebsite.md)
-### [Microsoft による使用状況データの収集を無効にする](turn-off-microsoft-usage-data-collection-ios.md)
 ### [デバイスの登録解除](unenroll-your-device-from-intune-ios.md)
 #### [デバイスの登録を解除した場合の動作](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 ### [デバイスを手動で同期する](sync-your-device-manually-ios.md)
 
-### [iOS に関する一般的な問題の解決](troubleshoot-your-device-iOS.md)
+#### [iOS に関する一般的な問題の解決](troubleshoot-your-device-iOS.md)
 #### [セキュリティを侵害された iOS デバイスを再接続する](how-to-reconnect-a-compromised-ios-device.md)
 #### [会社にエラーを送信する](send-errors-to-your-it-admin-ios.md)
 #### [Microsoft にエラーを送信する](send-logs-to-microsoft-ios.md)
+#### [Microsoft による使用状況データの収集を無効にする](turn-off-microsoft-usage-data-collection-ios.md)
 #### [エラーの発生](you-get-an-error-while-using-the-company-portal-app-ios.md)
 #### [デバイスの識別](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 #### [シリアル番号の確認](how-do-i-find-the-serial-number-on-my-device-ios.md)
@@ -97,11 +97,20 @@
 ### [macOS デバイスの登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [macOS デバイスを登録する](enroll-your-device-in-intune-macos-cp.md)
 ### [レガシ macOS デバイスを登録する](enroll-your-device-in-intune-macos-legacy.md)
-### [このデバイスでの若干の相違点](device-little-different-jamf.md)
+### [macOS デバイスの登録解除](unenroll-your-device-from-intune-macos.md)
+
+### [macOS に関する一般的な問題の解決](troubleshoot-your-device-macos.md)
+#### [使用しているバージョンの macOS がまだサポートされていない](your-macos-version-isnt-yet-supported.md)
+#### [macOS デバイスを更新する](you-need-to-update-your-macos-device.md)
+#### [ポータル サイトのエラーを送信する](send-errors-macos.md)
+#### [Microsoft による使用状況データの収集を無効にする](turn-off-microsoft-usage-data-collection-macos.md)
+#### [このデバイスでの若干の相違点](device-little-different-jamf.md)
+#### [シリアル番号の確認](how-do-i-find-the-serial-number-on-my-device-macos.md)
+#### [デバイスの識別](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 
 ## [Windows デバイスを使用する](using-your-windows-device-with-intune.md)
-### [Windows 10 デバイスの登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
-### [Windows デバイスを別のバージョンの Windows で登録した場合の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+### [Windows 10 デバイスの登録](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+### [他のバージョンの Windows の登録](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 
 ### [Windows デバイスを登録する](enroll-your-device-in-intune-windows.md)
 ### [ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
@@ -128,6 +137,6 @@
 #### [ファイアウォールを有効にする](you-need-to-enable-defender-firewall-windows.md)
 #### [UAC を有効にする](you-need-to-enable-uac-windows.md)
 #### [Windows を更新する](you-need-to-update-os-build-version-windows.md)
-#### [Windows Defender を有効にする](turn-on-defender-windows.md) 
+#### [Windows Defender を有効にする](turn-on-defender-windows.md)
 
 ## [Intune ポータル サイト Web サイトの使用](using-the-intune-company-portal-website.md)
