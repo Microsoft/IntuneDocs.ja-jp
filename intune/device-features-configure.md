@@ -3,10 +3,10 @@ title: "Intune デバイス機能設定の構成"
 titleSuffix: Azure portal
 description: "Intune を使用して管理対象デバイスの機能を構成する方法について説明します。\""
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 12/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a2723bfc0adecd9b6265b4af43e6fe185882b5e
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: ea280ac6858485aa4e3d64d11835f002c5bb35ca
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="how-to-configure-device-feature-settings-in-microsoft-intune"></a>Microsoft Intune でデバイスの機能設定を構成する方法
 
@@ -47,9 +47,10 @@ ms.lasthandoff: 09/15/2017
     - [iOS 用ホーム画面のレイアウト設定](home-screen-settings-ios.md)
     - [iOS 用アプリの通知設定](app-notification-settings-ios.md)
     - [iOS 用共有デバイス構成設定](shared-device-settings-ios.md)
+    - [iOS 用 Intune のデバイス シングル サインオンを構成する](sso-ios.md)
     - [iOS 用 Web コンテンツ フィルター設定](web-content-filter-settings-ios.md)
 
-8. 完了したら、**[プロファイルを作成します]** ブレードに戻り、**[作成]** をクリックします。
+8. 完了したら、**[プロファイルの作成]** ブレードに戻り、**[作成]** をクリックします。
 
 プロファイルが作成され、プロファイルの一覧ブレードに表示されます。
 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事を参照してください。
