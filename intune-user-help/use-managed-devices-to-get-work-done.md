@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/07/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d8a5989358da932e4e8ce59528602fefb2265528
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 599da7c664c139eac472c8d9ec2e418c01eeaeb4
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>管理デバイスを使用して作業する
 Microsoft Intune は、組織がデバイス (スマートフォン、タブレット、PC など)、アプリ、およびその他の企業リソース (電子メールなど) を管理できるようにするソフトウェアです。 これを利用すると、企業の情報の安全性を確保しつつ、従業員が事実上どこからでも、ほぼすべてのデバイスで業務情報にアクセスできるようになります。
@@ -34,7 +34,7 @@ Microsoft Intune は、組織がデバイス (スマートフォン、タブレ�
 ポータル サイトは 2 通りの方法で入手できます。
 
 - ポータル サイト アプリをデバイスにインストールします。 一般的に、ポータル サイト アプリはお使いのデバイスのアプリ ストアに移動して入手しますが、会社のサポートが代わりにポータル サイト アプリをインストールすることもできます。
-- 会社のサポートが設定した[ポータル Web サイト](https://portal.manage.microsoft.com)に移動します。
+- 会社のサポートが設定した[ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)に移動します。
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>アプリと Web サイトの違い
 ポータル サイトとポータル サイト Web サイトには微妙な違いがいくつかありますが、ほとんどのタスクは同じように実行できます。 実行できるいくつかのタスクを以下に示します。
@@ -60,8 +60,9 @@ Microsoft Intune は、組織がデバイス (スマートフォン、タブレ�
 会社のサポートがユーザーのデバイスに関して確認できる情報と確認できない情報については、使用しているデバイスの種類に該当するリンクを参照してください。
 
 - [Android 用ポータル サイト アプリのインストール](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [iOS および macOS 用ポータル サイト アプリのインストール](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
-- [Windows 用ポータル サイト アプリのインストール](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+- [iOS 用ポータル サイト アプリのインストール](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [macOS 用ポータル サイト アプリのインストール](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+- [Windows 用ポータル サイト アプリのインストール](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>ポータル サイトにはどのような種類のコンピューターまたはデバイスを追加できますか。
 -   iOS (iPhone や iPad など) および macOS (MacBook や iMac など) を使用する Apple デバイス
@@ -78,7 +79,8 @@ Microsoft Intune は、組織がデバイス (スマートフォン、タブレ�
 ポータル サイトからコンピューターまたはデバイスを*削除*すると、デバイスの登録が Intune で解除されます。 登録が解除されると、そのデバイスからポータル サイトにはアクセスできなくなります。また、一部の会社データがデバイスから削除される場合があります。 ポータル サイトからデバイスを削除する方法については、次のいずれかのリンクを参照してください。
 
 - [Android デバイスの登録解除](unenroll-your-device-from-intune-android.md)
-- [iOS または macOS デバイスの登録解除](unenroll-your-device-from-intune-ios.md)
+- [iOS デバイスの登録解除](unenroll-your-device-from-intune-ios.md)
+- [macOS デバイスの登録解除](unenroll-your-device-from-intune-macos.md)
 - [Windows デバイスの登録解除](unenroll-your-device-from-intune-windows.md)
 
 コンピューターまたはデバイスを*リセット*すると、ポータル サイトは、コンピューターまたはデバイスを製造元の既定の設定にリセットしようとします。 デバイスをリセットすると、デバイスから会社データと個人データがすべて削除されます。 デバイスを紛失した場合、ポータル サイト Web サイトからリモート リセットできます。
@@ -95,6 +97,7 @@ Microsoft Intune は、組織がデバイス (スマートフォン、タブレ�
 
 - [Android デバイスに関する一般的な問題を解決する](troubleshoot-your-device-android.md)
 - [iOS デバイスに関する一般的な問題を解決する](troubleshoot-your-device-ios.md)
+- [macOS デバイスに関する一般的な問題を解決する](troubleshoot-your-device-macos.md)
 - [Windows デバイスに関する一般的な問題を解決する](troubleshoot-your-device-windows.md)
 
-以下のコメントを投稿してサポートを受けることはできますが、組織によって要求は異なるため、必ずしもすべての質問にお答えできるとは限りません。 会社のサポートにサポートを求めることで、最も迅速かつ適切な返答が得られる可能性があります。 連絡先の情報は、[ポータル Web サイト](https://portal.manage.microsoft.com)で確認できます。
+以下のコメントを投稿してサポートを受けることはできますが、組織によって要求は異なるため、必ずしもすべての質問にお答えできるとは限りません。 会社のサポートにサポートを求めることで、最も迅速かつ適切な返答が得られる可能性があります。 連絡先の情報は、[ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)で確認できます。

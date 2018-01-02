@@ -3,10 +3,10 @@ title: "Intune で SCEP 証明書を構成して管理する"
 titlesuffix: Azure portal
 description: "インフラストラクチャを構成してから、Intune SCEP 証明書プロファイルを作成して割り当てる方法について説明します。\""
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 12/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 03c78fde793809713e630f371a02c48393b68810
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 36c495767d41c83c1393d837a808961ed9868bed
+ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Intune で SCEP 証明書を構成して管理する
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -164,7 +164,7 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 
 
 
-   1.  NDES をホストするサーバーに **エンタープライズ管理者**としてログインし、[役割と機能の追加ウィザード](https://technet.microsoft.com/library/hh831809.aspx) を使用して NDES をインストールします。
+   1.  NDES をホストするサーバーに**エンタープライズ管理者**としてログインし、[役割と機能の追加ウィザード](https://technet.microsoft.com/library/hh831809.aspx)を使用して NDES をインストールします。
 
     1.  ウィザードで、**[Active Directory 証明書サービス]** を選択して AD CS 役割サービスにアクセスできるようにします。 **[ネットワーク デバイス登録サービス]** をオンにし、**[証明機関]** をオフにして、ウィザードを完了します。
 
@@ -255,7 +255,7 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 1.  NDES サーバーで、内部 CA またはパブリック CA に **サーバー認証** 証明書を要求してインストールします。 その後、この SSL 証明書を IIS でバインドします。
 
     > [!TIP]
-    > IIS で SSL 証明書をバインドした後、クライアント認証証明書もインストールします。 この証明書は、NDES サーバーによって信頼されている CA によって発行できます。 最善の方法ではありませんが、証明書にサーバーとクライアント両方の EKU (Enhance Key Usage) がある場合は、同じ証明書をサーバー認証とクライアント認証の両方に使用できます。 これらの認証証明書については、次の手順を確認してください。
+    > IIS で SSL 証明書をバインドした後、クライアント認証証明書をインストールします。 この証明書は、NDES サーバーによって信頼されている CA によって発行できます。 最善の方法ではありませんが、証明書にサーバーとクライアント両方の EKU (Enhance Key Usage) がある場合は、同じ証明書をサーバー認証とクライアント認証の両方に使用できます。 これらの認証証明書については、次の手順を確認してください。
 
     1.  サーバー認証証明書を取得した後、 **IIS マネージャー**を開き、**[接続]** ウィンドウで **[既定の Web サイト]** を選択し、**[操作]** ウィンドウの **[バインド]** をクリックします。
 
@@ -300,29 +300,16 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 このタスクでは次のことを行います。
 
 - Intune で NDES のサポートを有効にします。
+- 自分の環境のサーバーで証明書コネクタをダウンロードし、インストールして、構成します。 高可用性をサポートするために、さまざまなサーバーに複数の証明書コネクタをインストールすることができます。
 
-- NDES サーバーで証明書コネクタをダウンロードし、インストールし、構成します。
-
-   > [!NOTE]
-   > 高可用性をサポートするために、複数の証明書コネクタ インスタンスをインストールすることができます。
-
-<!--1528104 we need to flesh out the HA recommendation in the note above -->
-
-##### <a name="to-enable-support-for-the-certificate-connector"></a>Certificate Connector のサポートを有効にするには
-
-1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイスの構成]** を選択します。
+##### <a name="to-download-install-and-configure-the-certificate-connector"></a>証明書コネクタをダウンロードし、インストールして、構成するには
+![ConnectorDownload](./media/certificates-download-connector.png)   
+ 
+1. Azure ポータルにサインインします。 
+2. **[その他のサービス]**  >  **[監視 + 管理]**  >  **[Intune]** の順に選択します。
+3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 4. **[デバイス構成]** ブレードで **[証明機関]** を選択します。
-5.  **[証明書コネクタを有効にする]** を選択します。
-
-##### <a name="to-download-install-and-configure-the-certificate-connector"></a>Certificate Connector をダウンロードし、インストールして、構成するには
-
-1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイスの構成]** を選択します。
-4. **[デバイス構成]** ブレードで **[証明機関]** を選択します。
-5. **[Certificate Connector のダウンロード]** を選択します。
+5. **[追加]** をクリックして、**[コネクタ ファイルのダウンロード]** を選択します。 インストールするサーバーからアクセスできる場所にダウンロードしたものを保存します。 
 6.  ダウンロードが完了したら、ダウンロードしたインストーラー (**ndesconnectorssetup.exe**) を Windows Server 2012 R2 サーバーで実行します。 インストーラーは、NDES のポリシー モジュールと CRP Web サービスもインストールします。 (CRP Web サービス CertificateRegistrationSvc は IIS のアプリケーションとして実行されます)。
 
     > [!NOTE]
@@ -359,7 +346,7 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 
 1. Azure Portal で、**[デバイスの構成]** ワークロードを選択します。
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
-3. [プロファイル] ブレードで、**[プロファイルを作成します]** を選択します。
+3. [プロファイル] ブレードで、**[プロファイルの作成]** を選択します。
 4. **[プロファイルを作成します]** ブレードで、SCEP 証明書プロファイルの**名前**と**説明**を入力します。
 5. **[プラットフォーム]** ドロップダウン リストで、この SCEP 証明書のデバイス プラットフォームを選択します。 現時点では、デバイスの制限設定に対応している次のいずれかのプラットフォームを選択できます。
     - **Android**

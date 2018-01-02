@@ -1,9 +1,9 @@
 ---
-title: "Windows および Windows Phone 用アプリのサイドロード"
+title: "Intune への Windows アプリと Windows Phone アプリのサイドロード"
 description: "Intune を使用して展開できるように、基幹業務アプリに署名する方法について説明します。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 06/07/2017
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 904041ba4936917dc976fd0a6de869e931927c2d
-ms.sourcegitcommit: f9bfdaed6037bd76f8715fa7ca15a3457d26370a
+ms.openlocfilehash: d6b66c44b1c6b5b5977d7a26d279c32eb39ff7ff
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune を使用して Windows デバイスに展開できるように基幹業務アプリに署名する
 
@@ -32,7 +32,7 @@ Intune 管理者は、ポータル サイト アプリを含め、基幹業務 (
 
 
 1. **Microsoft 開発者として登録する**<br>
-   ログイン時に使用した会社のアカウント情報を使用して、[Microsoft 開発者として登録し](http://go.microsoft.com/fwlink/?LinkId=268442)、自身の会社のアカウントを購入します。 コード署名証明書を受け取る前に、会社の担当者からこの要求の承認を受ける必要があります。
+   ログイン時に使用した会社のアカウント情報を使用して、[Microsoft 開発者として登録](http://go.microsoft.com/fwlink/?LinkId=268442)し、自身の会社のアカウントを購入します。 コード署名証明書を受け取る前に、会社の担当者からこの要求の承認を受ける必要があります。
 
 2. **会社の Symantec 証明書を取得する**<br>
   [Symantec の Web サイト](http://go.microsoft.com/fwlink/?LinkId=268441)から Symantec ID を使用して証明書を購入します。 証明書を購入すると、Microsoft 開発者として登録したときに指定した会社の承認者は、証明書要求の承認を求めるメールを受信します。 Symantec 証明書の要件の詳細については、「[Why Windows Phone requires a Symantec certificate? (Windows Phone で Symantec 証明書が必要な理由)](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec)」 (Windows デバイスの登録に関する FAQ) をご覧ください。

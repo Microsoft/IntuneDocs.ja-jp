@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 376236634ba9579e6496fa252c6a3638197fbcb9
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: bdb89d3426bd2dd040b184c8f7c23397bbed576b
+ms.sourcegitcommit: a99a5104400708b47ecee80075264d541b82874f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/09/2017
 ---
 # <a name="set-enrollment-restrictions"></a>登録制限を設定する
 
@@ -28,7 +28,10 @@ ms.lasthandoff: 12/01/2017
 ユーザーは Intune 管理者として、Intune での管理に登録できるデバイスの数と種類を定義した登録の制限を作成し管理することができます。 制限を複数作成して、さまざまなユーザー グループに適用することができます。 さまざまな制限を作成した場合は、[優先度](#change-enrollment-restriction-priority)を設定することができます。
 
 >[!NOTE]
->登録の制限はセキュリティ機能ではありません。 侵害されたデバイスでは特徴が正しく示されない可能性があります。 これらの制限は、悪意のないユーザーにとって最善の防御策となります。 
+>登録の制限はセキュリティ機能ではありません。 侵害されたデバイスでは特徴が正しく示されない可能性があります。 これらの制限は、悪意のないユーザーにとって最善の防御策となります。
+
+>[!NOTE]
+>以下で説明している、グループに割り当てられた登録制限と優先順位の機能は、Intune の顧客ベース全体にロールアウトしている過程にあります。 このロールアウトが完了するまで、グループと優先順位の機能にアクセスできないことがあります。 
 
 具体的に作成できる登録の制限には、次のようなものがあります。
 

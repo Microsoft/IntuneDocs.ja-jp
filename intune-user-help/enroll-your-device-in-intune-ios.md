@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/21/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 206de56ee967f4cd142e5cd7c9d63971b9b727c6
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 7e1ff77fef9e084000938022fb36217b21279c28
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>会社のリソースへのアクセスを設定する
 
@@ -57,7 +57,7 @@ ms.lasthandoff: 12/01/2017
 |![設定で開いたプロファイル。](./media/ios-9-cp-enroll-1711.png)|**[インストール]** をタップします。|
 |![画面の下部にある [Installing profile]\(プロファイルのインストール\) モーダル ダイアログ。](./media/ios-10-cp-enroll-1711.png)|**[インストール]** をタップします。|
 |![[Profile is installing]\(プロファイルをインストールしています\) 読み込み画面。](./media/ios-11-cp-enroll-1711.png)|読み込まれるのを待ちます。|
-|![[プロファイル管理] 警告画面。](./media/ios-12-cp-enroll-1711.png)|Apple によって書かれたこの警告は、管理下のデバイスで行うことができる操作の種類の詳細を示します。 詳細については、[会社が確認できる情報](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)に関するページをご覧ください。|
+|![[プロファイル管理] 警告画面。](./media/ios-12-cp-enroll-1711.png)|Apple によって書かれたこの警告は、管理下のデバイスで行うことができる操作の種類の詳細を示します。 詳しくは、[会社が確認できる情報](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)に関するページをご覧ください。|
 |![リモート管理の信頼について質問するシステム プロンプト。](./media/ios-13-cp-enroll-1711.png)|**[信頼する]** をタップして、お使いのデバイスで会社が企業の情報および設定の管理を行うことを許可します。|
 |![[Profile finishing installing]\(プロファイルのインストールを終了しています\) 読み込み画面。](./media/ios-14-cp-enroll-1711.png)|読み込まれるのを待ちます。|
 |![[Profile installed]\(プロファイルがインストールされました\) 画面。](./media/ios-15-cp-enroll-1711.png)|プロファイルがインストールされ、もうじきデバイスの企業の情報と設定が管理できるようになります。|
@@ -75,4 +75,4 @@ ms.lasthandoff: 12/01/2017
 > [!Note]
 > デバイスを完全に管理する前に、完了する必要のある手順がさらにいくつかある場合があります。 詳しくは、[通信費管理を使ったデバイスの登録](enroll-your-device-with-telecom-expense-management-ios.md)に関する記事をご覧ください。 組織が Apple の Device Enrollment Program を使っている場合は、[こちら](enroll-your-device-dep-ios.md)で詳細をご覧ください。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
