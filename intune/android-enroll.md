@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/08/2017
+ms.date: 12/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 68d93fe98b89f27c947e07d79eca9a0e02dea582
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 1c78c41b9883cac41b4506c1c02790008115e210
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="enroll-android-devices"></a>Android デバイスの登録
 
@@ -69,6 +69,17 @@ Android デバイスをブロックする場合や、個人所有の Android デ
    - **すべてのデバイスを Android として管理する**。 Android for Work をサポートするデバイスを含め、すべての Android デバイスが従来の Android デバイスとして登録されます。
    - **サポートされているデバイスを Android for Work として管理する**。 Android for Work をサポートするすべてのデバイスが Android for Work デバイスとして登録されます。 Android for Work をサポートしないすべての Android デバイスは、従来の Android デバイスとして登録されます。
    - **これらのユーザー グループに所属するユーザーのサポートされているデバイスのみを Android for Work として管理する**。 Android for Work の管理対象を一部のユーザーのみに制限できます。 Android for Work をサポートするデバイスを登録した、選択したグループのメンバーのみが、Android for Work デバイスとして登録されます。 その他すべてのデバイスは Android デバイスとして登録されます。 これは Android for Work のパイロット中に役立ちます。
+
+## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>管理対象の Google Play ストアのポータル サイト アプリを承認する
+アプリの自動更新を確実に受け取るには、管理対象の Google Play ストアの Android 用ポータル サイト アプリを承認する必要があります。 アプリを承認しないと、ポータル サイトはいずれ使われていない状態になってしまい、Microsoft からリリースされた重要なバグ修正プログラムや新しい機能を受け取らなくなることがあります。
+
+Intune ポータル サイトを承認するには、次の手順のようにします。
+
+1.  [管理対象の Google Play ストア](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal)からポータル サイト アプリをダウンロードします。
+2.  Android for Work のバインディングを構成するときに使ったものと同じ Google アカウントで、管理対象の Google Play ストアにサインインします。
+3.  **[承認]** をクリックします。  新しいダイアログが開きます。
+4.  このダイアログでアクセス許可を確認し、**[承認]** をクリックします。 ポータル サイト アプリがデバイスの仕事用プロファイルを管理できるようにするには、これらのアクセス許可を許可する必要があります。
+5.  **[Keep approved when app requests new permissions]\(アプリが新しいアクセス許可を要求したときに承認済みのままにする\)** を選び、**[保存]** をクリックします。
 
 <!--  ## Next steps for Android for Work
 After configuring the Android for Work binding and settings, you can do the following:

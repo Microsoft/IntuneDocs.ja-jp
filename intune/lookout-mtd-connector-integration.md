@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a9925b91b009f43c08533222a5fdfc765ea51c2
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 6d63ddcd8f60ac3491087e3e76949f2a49cf7b9b
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune との Lookout Mobile Threat Defense 統合を設定する
 
@@ -72,7 +72,8 @@ Lookout を Intune に統合するために、Lookout Mobility Endpoint Security
 2.  Lookout コンソールに初めてログインする場合、グローバル管理者の Azure AD ロールを持つユーザー アカウントを使用し、Azure AD テナントを登録する必要があります。 以降のサインインにこのレベルの Azure AD 特権は必要ありません。 同意ページが表示されます。 **[同意]** を選んで登録を完了します。 承諾して同意すると、Lookout コンソールが自動的に表示されます。
 
     ![Lookout コンソールの初回ログイン ページのスクリーンショット](./media/lookout_mtp_initial_login.png)
-    > [注] ログインで問題が発生した場合は、[「Lookout と Intune の統合に関するトラブルシューティング」](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration) を参照してください。
+    > [!NOTE] 
+    > ログインで問題が発生した場合は、「[Lookout と Intune の統合に関するトラブルシューティング](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration)」を参照してください。
 
 3.  [Lookout コンソール](https://aad.lookout.com)で **[System]** (システム) モジュールから **[Connectors]\** (コネクタ) タブを選択し、**[Intune]** を選択します。
 
@@ -85,7 +86,8 @@ Lookout を Intune に統合するために、Lookout Mobility Endpoint Security
 ## <a name="configure-enrollment-groups"></a>登録グループを構成する
 1. ベスト プラクティスとして、Lookout の統合をテストする少数のユーザーを含む Azure AD セキュリティ グループを [Azure AD 管理ポータル](https://manage.windowsazure.com)に作成することをお勧めします。
 
-    > [注] Azure AD の登録グループに属するユーザーが有する、Lookout のサポートを受け Intune に登録されているデバイスのうち、識別されてサポートされているものはすべて、Lookout MTD コンソールでのアクティブ化の対象になります。
+    > [!NOTE] 
+    > Azure AD の登録グループに属するユーザーが有する、Lookout のサポートを受け Intune に登録されているデバイスのうち、識別されてサポートされているものはすべて、Lookout MTD コンソールでのアクティブ化の対象になります。
 
 2. [Lookout コンソール](https://aad.lookout.com)の **[System]**\(システム) モジュールで、**[Connectors]**\(コネクタ) タブを選択し、**[Enrollment Management]**\(登録管理) を選択し、Lookout に登録するデバイスのユーザー セットを定義します。 Azure AD セキュリティ グループの登録の **[表示名]** を追加します。
 

@@ -3,8 +3,8 @@ title: "iOS の Intune デバイス制限設定"
 titleSuffix: Azure portal
 description: "iOS デバイスでデバイスの設定と機能を制御するために使用できる Intune 設定について説明します。\""
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 11/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f35de553259921c76341fe5b4a824e60c71d4a5
-ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
+ms.openlocfilehash: b871726c887916662986008010e0728811f2ba98
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での iOS デバイスの制限設定
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 11/03/2017
 - **[通知設定の変更 (監視モードのみ)]** - ユーザーがデバイスの通知設定を変更することを許可します。
 - **[壁紙の変更 (監視モードのみ)]** - ユーザーがデバイスの壁紙を変更することを許可します。
 - **[エンタープライズ アプリの信頼設定の変更 (監視モードのみ)]** - アプリ ストアからダウンロードされたのではないアプリを信頼するようにユーザーが選択できます。
-- **[構成プロファイルの変更]** - ユーザーが構成プロファイルをインストールできるようにします。
+- **[構成プロファイルの変更 (監視モードのみ)]** - ユーザーが構成プロファイルをインストールできるようにします。
 - **[アクティベーション ロック (監視下のみ)]** - 監視されている iOS デバイスでアクティベーション ロックを有効にします。
 
 ## <a name="configurations-requiring-supervision"></a>監視を必要とする構成
@@ -197,7 +197,7 @@ iOS 監視モードは、Apple の Device Enrollment Program または Apple Con
 例: Microsoft Word for iPad を検索します。 https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8 という URL を使用します。
 
 > [!Note]
-> iTunes ソフトウェアを使用してアプリを検索し、**[ リンクのコピー ]** コマンドを使用してアプリの URL を入手することもできます。
+> iTunes ソフトウェアを使用してアプリを検索し、**[リンクのコピー]** コマンドを使用してアプリの URL を入手することもできます。
 
 ### <a name="additional-options"></a>追加オプション
 
