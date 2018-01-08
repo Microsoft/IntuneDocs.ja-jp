@@ -27,12 +27,14 @@
 ### [Android に関する一般的な問題の解決](troubleshoot-your-device-android.md)
 #### [デバイスのコンプライアンスを確認する](check-compliance-on-your-device-android.md)
 #### [バッテリー節約機能モードでの Outlook の電子メールの同期](power-saving-mode-android.md)
+#### [Samsung KNOX に関する一般的な問題の解決](samsung-knox-errors-android.md)
 
 #### ログを使用した問題の解決
 ##### [詳細ログ記録を有効にする](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [電子メールを使用してログを送信する](send-logs-to-your-it-admin-by-email-android.md)
 ##### [USB ケーブルを使用してログを送信する](send-logs-to-your-it-admin-using-cable-android.md)
 ##### [登録エラーを送信する](send-enrollment-errors-to-your-it-admin-android.md)
+##### [Microsoft にエラーを送信する](send-logs-to-microsoft-android.md)
 
 ### オペレーティング システムの質問
 #### [デバイスの更新](you-need-to-update-your-android-device.md)
@@ -74,6 +76,7 @@
 #### [セキュリティを侵害された iOS デバイスを再接続する](how-to-reconnect-a-compromised-ios-device.md)
 #### [会社にエラーを送信する](send-errors-to-your-it-admin-ios.md)
 #### [Microsoft にエラーを送信する](send-logs-to-microsoft-ios.md)
+#### [既存の会社の電子メール アカウントが検出された](existing-company-email-account-found.md)
 #### [Microsoft による使用状況データの収集を無効にする](turn-off-microsoft-usage-data-collection-ios.md)
 #### [エラーの発生](you-get-an-error-while-using-the-company-portal-app-ios.md)
 #### [デバイスの識別](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
@@ -109,13 +112,13 @@
 #### [デバイスの識別](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 
 ## [Windows デバイスを使用する](using-your-windows-device-with-intune.md)
-### [Windows 10 デバイスの登録](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
-### [他のバージョンの Windows の登録](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-
+### [Windows 10 デバイスの登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+#### [他のバージョンの Windows の登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 ### [Windows デバイスを登録する](enroll-your-device-in-intune-windows.md)
-### [ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+#### [Windows 10 デバイスを登録する](enroll-your-w10-phone-or-w10-pc-windows.md)
+#### [Windows 8.1 または Windows RT 8.1 デバイスを登録する](enroll-your-w81-or-rt81-windows.md)
+#### [Windows Phone 8.1 デバイスを登録する](enroll-your-wp81-windows.md)
 ### [デバイスのリセット](reset-erase-your-device-cpwebsite.md)
-
 ### [デバイスを暗号化する](encrypt-your-device-windows.md)
 ### [パスワードを設定または変更する](set-or-change-your-password-windows.md)
 ### [Intune からデバイスの登録を解除する](unenroll-your-device-from-intune-windows.md)
