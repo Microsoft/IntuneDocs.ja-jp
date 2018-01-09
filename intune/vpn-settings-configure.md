@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 12/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1b4152cfe5442b01f0d81c724dfa5eccb02ae29
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 5bb34d9f180240e2ea03d43f42dc9ea8aee7adcd
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Microsoft Intune で VPN の設定を構成する方法
 
@@ -35,18 +35,18 @@ ms.lasthandoff: 12/12/2017
 
 |接続の種類|Android<br>Android for Work|iOS|macOS|Windows Phone 8。1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|Pulse Secure|○|○|○|○|○|[はい]|
-|Cisco (IPSec)|いいえ|○|[いいえ]|いいえ|いいえ|いいえ|
-|Citrix|Yes|○|[いいえ]|いいえ|[いいえ]|○|
-|F5 Edge Client|○|○|○|○|○|○|
-|Dell SonicWALL Mobile Connect|○|○|○|○|○|[はい]|
-|Check Point Capsule VPN|Yes|○|○|○|○|[はい]|
-|Cisco AnyConnect|○|○|○|[いいえ]|いいえ|いいえ|
-|自動|いいえ|いいえ|いいえ|いいえ|[いいえ]|Yes|
-|IKEv2|いいえ|いいえ|いいえ|いいえ|[いいえ]|○|
-|L2TP|いいえ|いいえ|いいえ|いいえ|[いいえ]|[はい]|
-|PPTP|いいえ|いいえ|いいえ|いいえ|[いいえ]|Yes|
-|カスタム|いいえ|○|○|[いいえ]|いいえ|いいえ|
+|Pulse Secure|はい|はい|はい|はい|はい|はい|
+|Cisco (IPSec)|[いいえ]|はい|[いいえ]|[いいえ]|[いいえ]|[いいえ]|
+|Citrix|はい|はい|[いいえ]|[いいえ]|[いいえ]|はい|
+|F5 Edge Client|はい|はい|はい|はい|はい|はい|
+|Dell SonicWALL Mobile Connect|はい|はい|はい|はい|はい|はい|
+|Check Point Capsule VPN|はい|はい|はい|はい|はい|はい|
+|Cisco AnyConnect|はい|はい|はい|[いいえ]|[いいえ]|[いいえ]|
+|自動|[いいえ]|[いいえ]|[いいえ]|[いいえ]|[いいえ]|はい|
+|IKEv2|[いいえ]|[いいえ]|[いいえ]|[いいえ]|[いいえ]|はい|
+|L2TP|[いいえ]|[いいえ]|[いいえ]|[いいえ]|[いいえ]|はい|
+|PPTP|[いいえ]|[いいえ]|[いいえ]|[いいえ]|[いいえ]|はい|
+|カスタム|[いいえ]|はい|はい|[いいえ]|[いいえ]|[いいえ]|
 
 
 > [!IMPORTANT]
@@ -56,7 +56,7 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>VPN 設定を含むデバイス プロファイルの作成
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。

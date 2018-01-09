@@ -3,8 +3,8 @@ title: "iOS の基幹業務アプリを Intune に追加する方法"
 titlesuffix: Azure portal
 description: "iOS の基幹業務アプリを Intune に追加する方法について説明します。\""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/3/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0e64ca5481b86a63b51b9f0b664569e86f1bfbc9
-ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
+ms.openlocfilehash: 20a044ea6b517279a2546f62d05cc79e09dcdc5f
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>iOS の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法
 
@@ -48,11 +48,11 @@ ms.lasthandoff: 11/20/2017
 
 ## <a name="step-3---configure-app-information"></a>手順 3 - アプリ情報を構成する
 
-1. **[アプリの追加]** ブレードで、**[アプリのパッケージ** ファイル] を選択します。
+1. **[アプリの追加]** ブレードで、**アプリケーション パッケージ** ファイルを選択します。
 2. **[アプリ情報]** ブレードで、アプリの詳細を追加します。 選択したアプリによっては、このブレード内の一部の値が自動的に入力されている場合があります。
     - **[名前]** - ポータル サイトに表示するアプリの名前を入力します。 使用するアプリ名はすべて一意にします。 同じアプリ名が 2 つ存在する場合、会社のポータルではそのいずれかのみがユーザーに表示されます。
     - **説明** - ポータル サイトでユーザーに表示するアプリの説明を入力します。
-    - **発行元** - アプリの発行元の名前を入力します。
+    - **[発行元]** - アプリの発行元の名前を入力します。
     - **[オペレーティング システムの最小要件]** - アプリをインストールできる最小限のオペレーティング システム バージョンを一覧から選択します。 これよりも前のオペレーティング システムがアプリの割り当て先デバイスにインストールされている場合、そのアプリはインストールされません。
     - **[カテゴリ]** - 1 つまたは複数の組み込みアプリ カテゴリ、または作成したカテゴリを選択します。 この操作を行うと、会社のポータルを閲覧するときに、ユーザーがアプリを探しやすくなります。
     - **[会社のポータルでおすすめアプリとして表示します]** - ユーザーがアプリを探す際に、会社のポータルのメイン ページでアプリを目立つように表示します。
@@ -75,7 +75,7 @@ ms.lasthandoff: 11/20/2017
 
 [!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)] 注: Intune サービスで新しい IPA ファイルをデバイスへ正常に展開するには、IPA パッケージの Info.plist ファイルの CFBundleVersion 文字列をインクリメントする必要があります。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 作成したアプリがアプリの一覧に表示されます。 選択したグループにアプリを割り当てることができます。 詳細については、[アプリをグループに割り当てる方法](apps-deploy.md)に関するページを参照してください。
 

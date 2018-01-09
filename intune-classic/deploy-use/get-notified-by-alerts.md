@@ -8,18 +8,18 @@ manager: angrobe
 ms.date: 8/31/2017
 ms.topic: article
 ms.prod: 
-ms.service: microsoft intune
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 287e8f3736082e427481d7a8a363947d4c42cdd6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 1e7ad299b91fe8e258d6769eed6f199bdb7f0537
+ms.sourcegitcommit: 12b2111839e648f85374c1c0db4288f08e0ef85d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/09/2018
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>アラートを使用して Microsoft Intune から通知を受ける
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 10/10/2017
 
 [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[管理]** &gt; **[アラートと通知]** の順に選択し、次のいずれかのタスクを選択します。
 
-|タスク|説明|
+|作業|説明|
 |---|------|
 |**アラートの種類**|構成するアラートの種類を選択し、次のいずれかを実行します。<br /><br />**[構成]** を選択します。 **[アラートの種類の構成]** ダイアログ ボックスで目的の設定を構成し、**[OK]** を選択します。<br /><br />アラートを **[有効]** または **[無効]** にします。<br /><br />**[アラートの種類]** ノードを展開し、カテゴリを選択して、そのカテゴリに含まれるアラートの種類のみを表示します。|
 |**受信者**|**[追加]** を選択して、セットアップした電子メール通知を受信する新しい電子メール アドレスを追加します。<br /><br />既存の受信者を **編集** または **削除** することもできます。<br /><br />また、通知を受信するには、**[通知規則]** でこの電子メール アドレスを受信者として追加する必要があります。|

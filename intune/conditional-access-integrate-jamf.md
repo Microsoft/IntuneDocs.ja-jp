@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87ddb1a5f6ca5cc9be2815aacc9c1570a51e792f
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 8207c77688bcc6e14064322ab2447435c2377b09
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>コンプライアンスのために Jamf Pro を Intune と統合する
 
@@ -28,18 +28,12 @@ ms.lasthandoff: 12/01/2017
 |クラシック ポータルで Intune に関するドキュメントをお探しですか。 [こちらを検索してください](/intune/introduction-intune?toc=/intune-classic/toc.json)。|
 | |
 
-|現在プライベート プレビュー中|
-|--|
-|このトピックで説明する機能は、現在のところ、プライベート プレビューでのみ、お客様に提供されます。 このメッセージはすべてのお客様に配信された後に削除されます。|
-| |
-
 組織で [Jamf Pro](https://www.jamf.com) を使用してエンド ユーザーの Mac を管理している場合、Microsoft Intune コンプライアンス ポリシーと Azure Active Directory の条件付きアクセスを使用して、組織内のデバイスがコンプライアンスに確実に準拠するようにできます。
 
 ## <a name="prerequisites"></a>必要条件
 
 Jamf Pro で条件付きアクセスを構成するには、次のものが必要です。
 
-- macOS 条件付きアクセス用の Intune プライベート プレビューへのアクセス
 - Jamf Pro 10.1.0 以降
 - [macOS 用ポータル サイト アプリ](https://aka.ms/macoscompanyportal)
 - OS X 10.11 Yosemite 以降を使用する macOS デバイス
@@ -60,7 +54,7 @@ Jamf Pro で条件付きアクセスを構成するには、次のものが必�
 4. **[Web アプリ/API]** を選択します。
 5. Jamf Pro インスタンス URL を使用して、**サインオン URL** を指定します。
 6. **[アプリケーションの作成]** をクリックします。
-7. 新しく作成した**アプリケーション ID** を保存し、**[設定]** を開き、**[API アクセス]** > **[キー]** に移動して、新しいアプリケーション キーを作成します。 **説明** (**期限切れ**になるまでの期間) を入力し、アプリケーション キーを保存します。 
+7. 新しく作成した**アプリケーション ID** を保存し、**[設定]** を開き、**[API アクセス]** > **[キー]** に移動して、新しいアプリケーション キーを作成します。 **説明** (**期限切れ**になるまでの期間) を入力し、アプリケーション キーを保存します。
 
   > [!IMPORTANT]
   > アプリケーション キーは、このプロセス中 1 回のみ表示されます。 簡単に取得できる場所に保存してください。
@@ -105,7 +99,7 @@ Jamf Pro は、管理対象の macOS デバイスについてのインベント�
 * 暗号化 (FileVault 2)
 * Gatekeeper ステータス
 * パスワード: 文字セットの最小数
-* パスワードの有効期限 (日数)
+* パスワードの有効期限 (日)
 * パスワードの種類 - 簡易、英数字、または不明
 * 自動ログインの防止
 * 必要なパスコードの長さ
@@ -139,6 +133,6 @@ Jamf Pro は、管理対象の macOS デバイスについてのインベント�
 * UDID
 * ユーザーの電子メール
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [Jamf で管理されたデバイスにコンプライアンス ポリシーを適用する](conditional-access-assign-jamf.md)
