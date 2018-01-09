@@ -2,8 +2,8 @@
 title: "Power BI でデータ ウェアハウスに接続する | Microsoft Docs"
 description: "Microsoft Power BI で使用するファイルをダウンロードし、Intune テナントに合わせて動的に生成されるインタラクティブなレポートを読み込むことができます。"
 keywords: "Intune データ ウェアハウス"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/13/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: aa559d946456f215d4db925c8a2e8a42cfacf209
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: fd3bf087739af11b0d652d6fd4b2b177f2df7426
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Power BI でデータ ウェアハウスに接続する
 
@@ -77,7 +77,7 @@ Azure AD に対してクライアントが認証されていると、OData URL �
     4.  **[接続]** を選択します。  
 10. **[読み込み]** を選択します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 過去 1 週間に登録されたデバイス数/日など、環境について知りたい情報が見つかります。 Azure のブレードから取得した Intune データ ウェアハウス Power BI ファイル (pbix) を使用したレポートで、Intune テナントとクライアント数を分析できます。 また、Intune には、データを拡張または再利用することができる機能が多数あります。 Power BI と Intune データ ウェアハウス API を使用すると、次のようにさまざまな処理を実行できます。
 

@@ -2,8 +2,8 @@
 title: "Intune でのアプリ ベースの条件付きアクセス"
 description: "Intune でのアプリ ベースの条件付きアクセスがどのように機能するのかについて、その概念を説明します。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 05/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a813dbaff7db5bf07e3573fb9bf539f6a4676f0
-ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
+ms.openlocfilehash: 3d89bec626e5e53a15bf46ecb96b244566d96dcb
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Intune でのアプリ ベースの条件付きアクセス
 
@@ -80,7 +80,7 @@ Microsoft Outlook アプリのみが Exchange Online にアクセスできるよ
 
 11.  会社の電子メールは、ユーザーのメールボックスに配信されています。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [アプリベースの条件付きアクセス ポリシーを作成する](app-based-conditional-access-intune-create.md)
 
 [最新の認証を使用していないアプリをブロックする](app-modern-authentication-block.md)

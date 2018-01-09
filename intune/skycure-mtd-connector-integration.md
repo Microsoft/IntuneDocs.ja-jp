@@ -3,10 +3,10 @@ title: "Skycure と Intune の統合をセットアップする"
 titlesuffix: Azure portal
 description: "Skycure と Microsoft Intune の統合をセットアップします。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 06/21/2017
+ms.date: 12/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d495046a990817e73fcee385b3a1482229aac721
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 5662d1add7d5b35f3c2c8cd7a8f9900d197a3548
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="set-up-the-skycure-integration-with-intune"></a>Skycure と Intune の統合をセットアップする
 
@@ -37,7 +37,7 @@ Skycure では、Intune との統合に 2 つのモードがあります。
 
 -   **読み取り専用統合 (基本セットアップ):** Azure Active Directory からのデバイスのみが目録を作成し、それらを Skycure コンソールに入力します。
 <br>
-    -   Skycure 管理コンソールで [**Report the health and risk of devices to Intune (デバイスの健全性とリスクを Intune に報告する)**] ボックスと [**Also report security incidents to Intune (セキュリティ インシデントも Intune に報告する)**] ボックスが選択されていない場合、統合は読み取り専用となり、Intune でデバイスの状態 (準拠または非準拠) が変化することはありません。
+    -   Skycure 管理コンソールで **[Report the health and risk of devices to Intune (デバイスの健全性とリスクを Intune に報告する)]** ボックスと **[Also report security incidents to Intune (セキュリティ インシデントも Intune に報告する)]** ボックスが選択されていない場合、統合は読み取り専用となり、Intune でデバイスの状態 (準拠または非準拠) が変化することはありません。
 <br></br>
 -   **完全統合:** デバイスのリスクとセキュリティ インシデントの詳細を Intune に報告することを Skycure に許可します。Intune は両方のクラウド サービス間で双方向通信を構築します。
 
@@ -97,7 +97,7 @@ Skycure は、Mobile Threat Defense サービスを実行しているデバイ�
 
 4.  次の設定を確認してください。
 
-    a.  デバイスの健全性とリスクを Intune に報告する
+    」を参照します。  デバイスの健全性とリスクを Intune に報告する
 
     b.  セキュリティ インシデントも Intune に報告する
 
@@ -105,6 +105,6 @@ Skycure は、Mobile Threat Defense サービスを実行しているデバイ�
 
     ![Skycure の完全統合の完了](./media/skycure-setup-6.png)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Skycure アプリを設定する](mtd-apps-ios-app-configuration-policy-add-assign.md)

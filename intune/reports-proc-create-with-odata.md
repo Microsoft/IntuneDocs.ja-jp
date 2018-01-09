@@ -2,8 +2,8 @@
 title: "Power BI で OData フィードからレポートを作成する | Microsoft Docs"
 description: "Power BI Desktop と Intune データ ウェアハウス API の対話型フィルターを使って、ツリーマップの視覚化を作成します。"
 keywords: "Intune データ ウェアハウス"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 10/18/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e0ffcaa2ff8bd9e622c1d27f27564bd78df0276
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: 436114837d515d3a03f253c9c8c6e195bff0af41
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Power BI で OData フィードからレポートを作成する
 
@@ -111,7 +111,7 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
 1. 会社所有デバイスの分布を表示するには **Company** を選択します。
 2. 個人所有デバイスを表示するには **Personal** を選択します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
  - Power BI のドキュメントで、Power BI Desktop での[リレーションシップの作成と管理](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/)についてさらに学習してください。
  - [Intune データ ウェアハウス モデル](https://docs.microsoft.com/intune/reports-ref-data-model)を確認してください。

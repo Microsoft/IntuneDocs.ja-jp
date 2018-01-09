@@ -16,17 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 476f1cfa59f562a8c0953236184693e1c5674ee3
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 4095ffc0da85501ec4649940d886b4d9a4719c7a
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>ポータル サイトを使用して Android デバイスをリセットするとどうなりますか。
 
 ポータル サイトを使用して Android デバイスをリセットすると、デバイス上のすべてのアプリ、設定、個人データが削除されます。 これにより、デバイスは出荷時の既定の設定に戻ります。
 
-Samsung KNOX デバイスがある場合は、ポータル サイトから**デバイスの削除**オプションを選択することで、"選択的ワイプ" を実行できます。 選択的ワイプでは、次の内容のみが削除されます。
+Samsung Knox デバイスがある場合は、ポータル サイトから**デバイスの削除**オプションを選択することで、"選択的ワイプ" を実行できます。 選択的ワイプでは、次の内容のみが削除されます。
 
 - 会社のサポートが使用を許可するビジネス アプリ。
 - 電子メール、VPN、および Wi-Fi。

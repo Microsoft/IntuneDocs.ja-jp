@@ -3,8 +3,8 @@ title: "Windows Phone 8.1 ストア アプリを Intune に追加する方法"
 titleSuffix: Azure portal
 description: "Windows Phone 8.1 ストア アプリを Intune に追加する方法について説明します。\""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.assetid: 4a95e575-2c63-4bfc-b9c4-f0a132eef618
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 175c670f78123f7a74fe5e7d87fd24ad165cb2ce
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: b5ee86715338bd7df432e9f7007ad0be211d3130
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-add-windows-phone-81-store-apps-to-microsoft-intune"></a>Windows Phone 8.1 ストア アプリを Microsoft Intune に追加する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[アプリの管理]** を選択します。
 4. **[モバイル アプリ]** ワークロードで、**[管理]** > **[アプリ]** の順に選択します。
@@ -35,7 +35,7 @@ ms.lasthandoff: 09/09/2017
 7. **[アプリの編集]** ブレードで、以下の情報を構成します。 構成が終わったら、**[追加]** をクリックします。 選択したアプリによっては、このブレード内の一部の値が自動的に入力されている場合があります。
     - **[アプリ名]** - アプリの名前を入力します。この名前は会社のポータルに表示されます。 使用するアプリ名はすべて一意にします。 同じアプリ名が 2 つ存在する場合、会社のポータルではそのいずれかのみがユーザーに表示されます。
     - **[アプリの説明]** - アプリの説明を入力します。 これは会社のポータルでユーザーに表示されます。
-    - **発行元** - アプリの発行元の名前を入力します。
+    - **[発行元]** - アプリの発行元の名前を入力します。
     - **[アプリ ストア URL]** - 作成するアプリのアプリ ストア URL を入力します。
     - **[オペレーティング システムの最小要件]** - アプリをインストールできる最小限のオペレーティング システム バージョンを一覧から選択します。 これよりも前のオペレーティング システムがアプリの割り当て先デバイスにインストールされている場合、そのアプリはインストールされません。
     - **[カテゴリ]** (省略可能) - 1 つ以上の組み込みアプリ カテゴリ、または作成したカテゴリを選択します。 会社のポータルを閲覧するとき、ユーザーにとってアプリを探すのが簡単になります。

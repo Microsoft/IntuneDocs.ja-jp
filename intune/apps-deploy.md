@@ -3,8 +3,8 @@ title: "アプリをグループに割り当てる方法"
 titlesuffix: Azure portal
 description: "Intune に追加したアプリは、ユーザーまたはデバイスのグループに割り当てることができます。\""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/24/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 51abb6daad11b9d6036396dcc5a5ce8f2a2c4ac4
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 7121cffaf1deb206aa88373a3aa77ce23bdf030e
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune を使用してアプリをグループに割り当てる方法
 
@@ -32,21 +32,21 @@ ms.lasthandoff: 09/09/2017
 ||||
 |-|-|-|-|
 |&nbsp;|Intune に登録されているデバイス|Intune に登録されていないデバイス|
-|ユーザーへの割り当て|[はい]|[はい]|
-|デバイスへの割り当て|Yes|いいえ|
-|ラップされたアプリ、または Intune SDK が組み込まれたアプリの割り当て (アプリ保護ポリシー用)|Yes|Yes|
-|"使用可能" として割り当て|Yes|[はい]|
-|"必須" として割り当て|Yes|いいえ|
-|アプリのアンインストール|Yes|いいえ|
-|エンドユーザーによるポータル サイト アプリからの使用可能なアプリのインストール|Yes|いいえ|
-|エンドユーザーによる Web ベースのポータル サイトからの使用可能なアプリのインストール|Yes|Yes|
+|ユーザーへの割り当て|はい|はい|
+|デバイスへの割り当て|はい|[いいえ]|
+|ラップされたアプリ、または Intune SDK が組み込まれたアプリの割り当て (アプリ保護ポリシー用)|はい|はい|
+|"使用可能" として割り当て|はい|はい|
+|"必須" として割り当て|はい|[いいえ]|
+|アプリのアンインストール|はい|[いいえ]|
+|エンドユーザーによるポータル サイト アプリからの使用可能なアプリのインストール|はい|[いいえ]|
+|エンドユーザーによる Web ベースのポータル サイトからの使用可能なアプリのインストール|はい|はい|
 
 > [!NOTE]
 > 現時点では、iOS アプリと Android アプリ (基幹業務アプリとストアで購入したアプリの両方) を、Intune に登録されていないデバイスに割り当てることができます。
 
 ## <a name="how-to-assign-an-app"></a>アプリを割り当てる方法
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[モバイル アプリ]** を選びます。
 1. **[モバイル アプリ]** ワークロードで、**[管理]** > **[アプリ]** の順に選択します。
@@ -106,6 +106,6 @@ ms.lasthandoff: 09/09/2017
 >[!NOTE]
 >管理対象の iOS ストア アプリの場合のみ、これらを Intune に追加し、必須として割り当てるとき、必須インテントと利用可能インテントの両方で自動的に作成されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 アプリの割り当てを監視するのに役立つ情報については、[アプリを監視する方法](apps-monitor.md)に関する記事を参照してください。

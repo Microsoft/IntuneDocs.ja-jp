@@ -3,8 +3,8 @@ title: "iOS デバイスのための Apple School Manager プログラム登録�
 titlesuffix: Azure portal
 description: "企業所有の iOS デバイスを Intune で登録するために、Apple School Manager プログラム登録を設定する方法について説明します。\""
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 09/13/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5aaefd6bfbff3394b4c0f79948ac23e32536f1e3
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: f93453bf88c9f70043fe9d0cf548e1dba99100ac
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager での iOS デバイス登録の有効化
 
@@ -31,7 +31,7 @@ Apple School Manager 登録を有効にするには、Intune と Apple School Ma
 
 なお、Apple School Manager 登録を、[Apple の Device Enrollment Program](device-enrollment-program-enroll-ios.md) や[デバイス登録マネージャー](device-enrollment-manager-enroll.md)で使用することはできません。
 
-**必要条件**
+**前提条件**
 - [Apple MDM プッシュ証明書](apple-mdm-push-certificate-get.md)
 - [MDM 機関](mdm-authority-set.md)
 - [Apple MDM プッシュ証明書](apple-mdm-push-certificate-get.md)

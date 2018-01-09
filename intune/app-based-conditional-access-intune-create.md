@@ -2,8 +2,8 @@
 title: "Intune を使用したアプリ ベースの条件付きアクセス ポリシー"
 description: "このトピックでは、Intune を使用したアプリベースの条件付きアクセス ポリシーを構成する方法について説明します。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 06/28/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88db3730be62a9b481d924b4f09b70be775cb067
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: ccbbe448a61d19b18c9f4f02f90aefa4f415d80b
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="set-up-app-based-conditional-access-policies"></a>アプリベースの条件付きアクセス ポリシーの設定
 
@@ -79,7 +79,7 @@ Intune 1708 リリース以降、IT 管理者は Azure AD ワークロードか�
 
 5. **[承認されたクライアント アプリが必要です]** を選択し、**[選択]** を選択し、**[OK]** を選択して新しいポリシーを保存します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [最新の認証を使用していないアプリをブロックする](app-modern-authentication-block.md)
 
 ### <a name="see-also"></a>関連項目

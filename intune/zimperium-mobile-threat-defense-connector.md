@@ -3,10 +3,10 @@ title: "Intune を使用した Zimperium MTD コネクタ"
 titleSuffix: Intune on Azure
 description: "Zimperium コネクタと Intune の統合"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 09/06/2017
+ms.date: 12/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78214293a66784d4bc05e441c2c1cdbf718b0a9a
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 22fbdb95a0fe0c064f07dea2dca50c516b995b8d
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Zimperium Mobile Threat Defense コネクタと Intune
 
@@ -51,7 +51,7 @@ Intune と Zimperium を統合する場合のシナリオのいくつかを、�
 
 ![検出された悪意のあるアプリ](./media/Maliciousapps_blocked_Zimperium.png)
 
-**修復時に付与されるアクセス権:**
+**修復後、アクセスが与えられる:**
 
 ![悪意のあるアプリの検出、アクセス権](./media/maliciousapps_unblocked_Zimperium.png)
 
@@ -63,7 +63,7 @@ Intune と Zimperium を統合する場合のシナリオのいくつかを、�
 
 ![Wi-Fi 経由のネットワーク アクセスをブロックする](./media/network_wifi_blocked_Zimperium.png)
 
-**修復時に付与されるアクセス権:**
+**修復後、アクセスが与えられる:**
 
 ![修復するとアクセス権が付与される](./media/network_wifi_unblocked_Zimperium.png)
 
@@ -75,7 +75,7 @@ Intune と Zimperium を統合する場合のシナリオのいくつかを、�
 
 ![ネットワークの脅威が検出されたときに SharePoint Online をブロック](./media/network_spo_blocked_Zimperium.png)
 
-**修復時に付与されるアクセス権:**
+**修復後、アクセスが与えられる:**
 
 ![SharePoint で修復時にアクセス権を付与する例](./media/network_spo_unblocked_Zimperium.png)
 
@@ -95,7 +95,7 @@ Intune と Zimperium を統合する場合のシナリオのいくつかを、�
 
     -   詳細については、[Zimperium Web サイト](https://www.zimperium.com/zips-mobile-ips)を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [Zimperium を Intune と統合する](zimperium-mtd-connector-integration.md)
 
