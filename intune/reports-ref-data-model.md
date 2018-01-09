@@ -2,8 +2,8 @@
 title: "データ ウェアハウス データ モデル | Microsoft Docs"
 description: "Intune データ ウェアハウスは、データを毎日サンプリングし、常に変化するモバイル環境の履歴ビューを提供します。"
 keywords: "Intune データ ウェアハウス"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/14/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 29825c58febc813c7b11072699d06106725584d3
-ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
+ms.openlocfilehash: bb4248c773e30244beb310a5b5c8b3fb0bb9d5f0
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="data-warehouse-data-model"></a>データ ウェアハウス データ モデル
 
@@ -57,7 +57,7 @@ Intune データ ウェアハウスは、データを毎日サンプリングし
 
 このウェアハウスは、Intune データのダウンストリームです。 Intune では、午前 0 時 (UTC) に毎日のスナップショットを取得し、ウェアハウスにスナップショットを保存します。 スナップショットの保有期間はファクト テーブルによって異なります。 7 日間や 30 日間、またはさらに長い期間のものもあります。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
  - データ ウェアハウスで Intune のユーザーの有効期間を追跡する方法の詳細については、「[Intune データ ウェアハウスのユーザー有効期間の表記](reports-ref-user-timeline.md)」をご覧ください。
  - データ ウェアハウスの操作に関する詳細については、[最初のデータ ウェアハウスの作成](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse)に関するページをご覧ください。

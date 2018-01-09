@@ -2,10 +2,10 @@
 title: "Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める"
 description: "このトピックの情報は、カスタム基幹業務アプリでモバイル アプリ管理ポリシーを使用できるようにするために、アプリ ラッピング ツールとアプリ SDK を使用するタイミングを判断するときに役立ちます。"
 keywords: 
-author: mattbriggs
-ms.author: mabriggs
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 08/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e6c464e16079df0c1188870b234615c811963f08
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 40d0ddf78ed181dfc712bbaeee9499e3c56753ca
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>アプリ保護ポリシーを利用するために基幹業務アプリで準備を行う
 
@@ -49,8 +49,8 @@ Intune に登録されていないデバイスのアプリ保護ポリシー用�
 
 |**アプリ ラッピング ツール** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**iOS** |Yes|Yes|
-|**Android**| いいえ |Yes|
+|**Android** |はい|はい|
+|**Android**| [いいえ] |はい|
 
 ## <a name="intune-app-sdk"></a>Intune App SDK
 App SDK は、主として、Apple App Store または Google Play ストアにあるアプリを Intune で管理できるようにするお客様向けに設計されています。 ただし、どのようなアプリでも (基幹業務アプリでさえ)、SDK の統合を利用できます。
@@ -69,7 +69,7 @@ SDK の詳細については、「[概要](app-sdk.md)」を参照してくだ�
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|はい – [Intune App SDK Xamarin コンポーネント](app-sdk-xamarin.md)を使用します。|はい – [Intune App SDK Cordova プラグイン](app-sdk-cordova.md)を使用します。|
+|**Android**|はい – [Intune App SDK Xamarin コンポーネント](app-sdk-xamarin.md)を使用します。|はい – [Intune App SDK Cordova プラグイン](app-sdk-cordova.md)を使用します。|
 |**Android**| はい – [Intune App SDK Xamarin コンポーネント](app-sdk-xamarin.md)を使用します。|はい – [Intune App SDK Cordova プラグイン](app-sdk-cordova.md)を使用します。|
 
 ## <a name="feature-comparison"></a>機能の比較
@@ -102,7 +102,7 @@ SDK の詳細については、「[概要](app-sdk.md)」を参照してくだ�
 |対象となるアプリケーションの構成 |○||
 |[マルチ ID アプリのサポート]|○||
 |カスタマイズ可能なスタイル |○|||
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 アプリ保護ポリシーと Intune の詳細については、次のトピックをご覧ください。
 

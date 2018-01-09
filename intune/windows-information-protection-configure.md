@@ -3,10 +3,10 @@ title: "Windows 情報保護を構成する - Intune"
 titleSuffix: Azure portal
 description: "Windows 情報保護の管理に使用できるIntune の設定について説明します。\""
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 04/14/2017
+ms.date: 12/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f233672c-7d9b-4554-af1f-92c001a1a3c5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8719e778c7f6b146625b82a63c1ff93c7936d294
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 5817bc56bf25467befb3ca2a430410cbc6a57d36
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="how-to-configure-windows-information-protection-in-microsoft-intune"></a>Microsoft Intune で Windows Information Protection を構成する方法
 
@@ -34,5 +34,5 @@ ms.lasthandoff: 09/14/2017
 >[!NOTE]
 > Windows 10 ポータル サイト アプリを Windows Information Protection とともに使用するには、ポータル サイト アプリを Windows Information Protection モードの**除外対象**に追加する必要があります。 
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 詳細については、「[Protect your enterprise data using Windows Information Protection (Windows 情報保護を使用してエンタープライズ データを保護する)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)」を参照してください。

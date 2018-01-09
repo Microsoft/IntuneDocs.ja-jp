@@ -3,10 +3,10 @@ title: "iOS のボリューム購入アプリの管理 | Microsoft Docs"
 titlesuffix: Azure portal
 description: "iOS ストアからボリューム購入したアプリを Intune に同期し、その使用状況を管理および追跡する方法について説明します。\""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 11/20/2017
+ms.date: 12/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 620957c04d4114d1f12e9b44101704c370663d3b
-ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
+ms.openlocfilehash: f820be41c532384f9f2db57e0e0e497a05307d73
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Volume Purchase Program で購入した iOS アプリを Microsoft Intune で管理する方法
 
@@ -38,9 +38,9 @@ Microsoft Intune では、以下を行うことにより、このプログラム
 
 ### <a name="device-licensing"></a>デバイス ライセンス
 
-デバイスにアプリを割り当てると、1 つのアプリ ライセンスが使用されて、割り当てたデバイスに関連付けられたままになります。 
+デバイスにアプリを割り当てると、1 つのアプリ ライセンスが使用されて、割り当てたデバイスに関連付けられたままになります。
 
-ボリューム購入アプリをデバイスに割り当てた場合、デバイスのエンド ユーザーは、ストアにアクセスするために Apple ID を指定する必要はありません。 
+ボリューム購入アプリをデバイスに割り当てた場合、デバイスのエンド ユーザーは、ストアにアクセスするために Apple ID を指定する必要はありません。
 
 ### <a name="user-licensing"></a>ユーザー ライセンス
 
@@ -60,7 +60,7 @@ iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purc
 
 また、サードパーティの開発者も、iTunes Connect に指定されているビジネス メンバーに、認められたボリューム購入プログラムにプライベートでアプリを配布できます。 VPP for Business のメンバーは、Volume Purchase Program App Store にサインインし、アプリを購入できます。 エンド ユーザーが購入した VPP for Business アプリはそのユーザーの Intune テナントに同期されます。
 
-## <a name="before-you-start"></a>アップグレードを開始する前に
+## <a name="before-you-start"></a>開始する前に
 開始する前に、Apple から VPP トークンを取得し、それを Intune アカウントにアップロードする必要があります。 さらに、次の条件を理解する必要があります。
 
 * 複数の VPP トークンを Intune アカウントに関連付けることができます。
@@ -80,7 +80,7 @@ iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purc
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Apple VPP トークンを取得およびアップロードするには
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 1.  **[Intune]** ブレードで、**[セットアップ]** の **[モバイル アプリ]** > **[iOS VPP トークン]** を選択します。
 2.  VPP トークンの一覧ブレードで、**[作成]** を選択します。
@@ -92,7 +92,8 @@ iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purc
         > 国を変更すると、このトークンで作成されたアプリが Apple サービスと次に同期するときに、アプリのメタデータとストアの URL が更新されます。 新しい国別ストアに存在しない場合、アプリは更新されません。
 
     - **[VPP アカウントの種類]** - **[ビジネス]** または **[教育]** を選択します。
-    - **アプリの自動更新** - **[オン]** か **[オフ]** を選択し、自動更新を有効/無効にします。 有効にすると、Intune は、デバイスのチェックイン時に Intune サービスを介し、指定されたトークンに対象に購入されたすべてのアプリを更新します。 アプリ ストア内の VPP アプリ更新プログラムを検出し、デバイスのチェックイン時に自動的にデバイスにプッシュします。
+    - **アプリの自動更新** - **[オン]** か **[オフ]** を選択し、自動更新を有効/無効にします。 有効にすると、Intune は、デバイスのチェックイン時に Intune サービスを介し、指定されたトークンに対象に購入されたすべてのアプリを更新します。
+アプリ ストア内の VPP アプリ更新プログラムを検出し、デバイスのチェックイン時に自動的にデバイスにプッシュします。
 4. 終了したら、**[アップロード]** を選択します。
 
 トークンがトークンの一覧ブレードに表示されます。
@@ -119,8 +120,8 @@ iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purc
 
 | # | 通信の種類                                | Apple VPP プログラムへの招待                              | アプリ インストールのプロンプト | Apple ID のプロンプト |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD – ユーザー ライセンスあり                             | Y                                                                                               | ○                                           | Y                                 |
-| 2 | Corp – ユーザー ライセンスあり (非監視対象デバイス)     | Y                                                                                               | ○                                           | Y                                 |
+| 1 | BYOD – ユーザー ライセンスあり                             | Y                                                                                               | Y                                           | Y                                 |
+| 2 | Corp – ユーザー ライセンスあり (非監視対象デバイス)     | Y                                                                                               | Y                                           | Y                                 |
 | 3 | Corp – ユーザー ライセンスあり (監視対象デバイス)         | Y                                                                                               | N                                           | Y                                 |
 | 4 | BYOD – デバイス ライセンスあり                           | N                                                                                               | Y                                           | N                                 |
 | 5 | CORP – デバイス ライセンスあり (非監視対象デバイス)                           | N                                                                                               | Y                                           | N                                 |
@@ -135,8 +136,10 @@ iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purc
 
 ライセンスを再利用するには、割り当てアクションを **[アンインストール]** に変更する必要があります。 アプリをアンインストールすると、ライセンスは回収されます。 ユーザーに割り当てられたアプリを削除すると、Intune は、そのユーザーに関連付けられているすべてのアプリ ライセンスの回収を試行します。
 
+<!-- 820879 -->You can delete a iOS Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token. Deleting a token will also delete any associated apps and assignment. However, deleting a token does not revoke app licenses. Intune cannot revoke app licenses after a token has been deleted. 
+
 対象となるデバイスを持つユーザーが初めて VPP アプリをデバイスにインストールしようとすると、Apple Volume Purchase Program に参加するように求められます。 アプリのインストールを実行する前に、このプログラムに参加する必要があります。 Apple Volume Purchase Program への参加招待を行うには、ユーザーが iOS デバイスで iTunes アプリを使用できる必要があります。 iTunes Store アプリを無効にするようにポリシーを設定した場合、VPP アプリのユーザーベース ライセンスは機能しません。 この問題を解決するには、ポリシーを削除して iTunes アプリを許可するか、デバイス ベースのライセンスを使用します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 アプリの割り当てを監視するのに役立つ情報については、[アプリを監視する方法](apps-monitor.md)に関する記事を参照してください。
