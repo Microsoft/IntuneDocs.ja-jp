@@ -3,10 +3,10 @@ title: "Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作�
 titlesuffix: Azure portal
 description: "Intune で WIP アプリ保護ポリシーを作成して展開します"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 11/13/2017
+ms.date: 12/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ab0456b58704f17d3dc5885ab5ae6b902c9ef152
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.openlocfilehash: f56752dc77289333fae69a81e2eb04d8b2e278f7
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 
@@ -66,7 +66,7 @@ WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを
 
 2.  **[アプリに関するポリシー]** ブレードで **[ポリシーの追加]** を選び、次の値を入力します。
 
-    a.  **[名前]:** (必須) 新しいポリシーの名前を入力します。
+    」を参照します。  **[名前]:** (必須) 新しいポリシーの名前を入力します。
 
     b.  **[説明]:** 必要に応じて説明を入力します。
 
