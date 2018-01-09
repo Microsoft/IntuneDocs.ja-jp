@@ -2,8 +2,8 @@
 title: "データ ウェアハウスのユーザー エンティティ タイムライン | Microsoft Docs"
 description: "Intune のデータ ウェアハウスは、タイムライン内のユーザーを表します。"
 keywords: "Intune データ ウェアハウス"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/14/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 363D148E-688F-4830-B6DE-AB4FE3648817
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce43234003da859b81dd499f22f7280db5bda41b
-ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
+ms.openlocfilehash: 3f8f3d835369900eb4d1e0bf1287d0354cc1151c
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="user-lifetime-representation-in-the-intune-data-warehouse"></a>Intune データ ウェアハウスのユーザー有効期間の表記
 
@@ -73,7 +73,7 @@ John Smith は、2017 年 7 月 25 日に自分のライセンスを破棄しま
  
 現在存在するディメンション エンティティのみを確認する場合は、**IsDeleted = FALSE** を使用するフィルターを適用します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
  - **現在のユーザー** エンティティの詳細については、「[現在のユーザー エンティティのリファレンス](reports-ref-current-user.md)」をご覧ください。
  - **ユーザー** エンティティの詳細については、「[ユーザー エンティティのリファレンス](reports-ref-user.md)」をご覧ください。

@@ -3,8 +3,8 @@ title: "Intune で Google Play Protect コンプライアンスを有効にす�
 titleSuffix: Azure portal
 description: "Android デバイス用のコンプライアンス ポリシーを作成して Google Play Protect を有効にする方法について説明します。"
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/20/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: E9810BEB-000A-4DFB-B5C7-A22A92082B22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d610bc338c1bcf81ed3bc71f1357e001914c5877
-ms.sourcegitcommit: 71e6e80b7370024624ce2e5fad1ca5b372975748
+ms.openlocfilehash: 3d9e687ff31d50e30ea4d15a4eb751c0e78dc24e
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>デバイスのコンプライアンス ポリシーを作成して Google Play Protect を有効にする方法
 
@@ -57,6 +57,6 @@ Android プラットフォーム用に新しいコンプライアンス ポリ�
 
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 Intune のデバイス コンプライアンス ポリシーの詳細については、「[Intune のデバイス コンプライアンス ポリシーの概要](device-compliance-get-started.md)」をご覧ください。
