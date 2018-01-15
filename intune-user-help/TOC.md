@@ -79,6 +79,7 @@
 #### [会社にエラーを送信する](send-errors-to-your-it-admin-ios.md)
 #### [Microsoft にエラーを送信する](send-logs-to-microsoft-ios.md)
 #### [既存の会社の電子メール アカウントが検出された](existing-company-email-account-found.md)
+#### [デバイスの制限に達した](device-limit-wpj-ios.md)
 #### [Microsoft による使用状況データの収集を無効にする](turn-off-microsoft-usage-data-collection-ios.md)
 #### [エラーの発生](you-get-an-error-while-using-the-company-portal-app-ios.md)
 #### [デバイスの識別](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
@@ -112,6 +113,7 @@
 #### [このデバイスでの若干の相違点](device-little-different-jamf.md)
 #### [シリアル番号の確認](how-do-i-find-the-serial-number-on-my-device-macos.md)
 #### [デバイスの識別](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
+#### [デバイスの制限に達した](device-limit-wpj-macos.md)
 
 ## [Windows デバイスを使用する](using-your-windows-device-with-intune.md)
 ### [Windows 10 デバイスの登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
