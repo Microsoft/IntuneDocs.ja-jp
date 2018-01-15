@@ -6,6 +6,8 @@
 
 ## [デバイスをリセットする](what-happens-if-you-reset-your-device-cpwebsite.md)
 
+## [パスワードを更新する](password-does-not-meet-it-administrator-requirements.md)
+
 ## [ポータル サイトにサインインする](sign-in-to-the-company-portal.md)
 
 ## [Android デバイスを使用する](using-your-android-device-with-intune.md)
@@ -72,7 +74,7 @@
 #### [デバイスの登録を解除した場合の動作](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 ### [デバイスを手動で同期する](sync-your-device-manually-ios.md)
 
-#### [iOS に関する一般的な問題の解決](troubleshoot-your-device-iOS.md)
+### [iOS に関する一般的な問題の解決](troubleshoot-your-device-iOS.md)
 #### [セキュリティを侵害された iOS デバイスを再接続する](how-to-reconnect-a-compromised-ios-device.md)
 #### [会社にエラーを送信する](send-errors-to-your-it-admin-ios.md)
 #### [Microsoft にエラーを送信する](send-logs-to-microsoft-ios.md)
@@ -116,6 +118,7 @@
 #### [他のバージョンの Windows の登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 ### [Windows デバイスを登録する](enroll-your-device-in-intune-windows.md)
 #### [Windows 10 デバイスを登録する](enroll-your-w10-phone-or-w10-pc-windows.md)
+#### [[職場または学校にアクセスする] から Windows 10 デバイスを登録する](enroll-your-w10-device-access-work-or-school.md)
 #### [Windows 8.1 または Windows RT 8.1 デバイスを登録する](enroll-your-w81-or-rt81-windows.md)
 #### [Windows Phone 8.1 デバイスを登録する](enroll-your-wp81-windows.md)
 ### [デバイスのリセット](reset-erase-your-device-cpwebsite.md)

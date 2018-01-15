@@ -642,7 +642,7 @@
               href: reports-ref-user-device.md
             - name: User エンティティのリファレンス
               href: reports-ref-user.md
-    - name: Windows アプリをサイドロードする
+    - name: Intune の Graph API
       href: intune-graph-apis.md
       items:
         - name: Intune の Graph API のリファレンス
