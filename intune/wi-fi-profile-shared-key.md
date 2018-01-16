@@ -15,11 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bfcce8d38bc403a13aa28cc762370a7cfaa0bc2d
-ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
+ms.openlocfilehash: 7d78ec07a31a54ff16cb6ca7deb2a883da632139
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/10/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>カスタム デバイス プロファイルを使用し、事前共有キーを使用した Wi-Fi プロファイルを作成します。
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -28,9 +28,9 @@ Intune の**カスタム デバイス プロファイル**を使用して、事�
 
 > [!NOTE]
 -   以下のように、そのネットワークに接続しているコンピューターからコードをコピーした方が簡単な場合があります。
-- Android では、Johnathon Biersack 氏が提供しているこの [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) を使用することも可能です。
+- Android では、Johnathon Biersack 氏が提供しているこの [Android PSK Generator](http://intunepskgenerator.johnathonb.com/) を使用することも可能です。
 -   OMA-URI 設定をさらに追加することにより、複数のネットワークとキーを追加できます。
--  iOS でプロファイルを構成するには、Mac ステーションで Apple Configurator を使用します。 また、Johnathon Biersack 氏が提供する [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) を使用します。
+-  iOS でプロファイルを構成するには、Mac ステーションで Apple Configurator を使用します。 また、Johnathon Biersack 氏が提供する [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/) を使用します。
 
 
 1.  Android または Windows 用に事前共有キーを使用した Wi-Fi プロファイル、または EAP ベースの Wi-Fi プロファイルを作成するには、デバイス プロファイルを作成するときに、Wi-Fi プロファイルではなく、そのデバイス プラットフォームの**カスタム**を選択します。
@@ -38,7 +38,7 @@ Intune の**カスタム デバイス プロファイル**を使用して、事�
 2.  名前と説明を入力します。
 3.  新しい OMA-URI 設定を追加します。
 
-   a.   この Wi-Fi ネットワーク設定の名前を入力します。
+   」を参照します。   この Wi-Fi ネットワーク設定の名前を入力します。
 
    b.   OMA-URI 設定の説明を入力するか、空白のままにします。
 

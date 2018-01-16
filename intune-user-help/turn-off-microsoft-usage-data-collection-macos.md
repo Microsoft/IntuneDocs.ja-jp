@@ -16,13 +16,13 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: bb39ff625034c00f70d5e7f28a7982fc1f40d0f2
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 726c3d052b62dbcab82f75cc82ce39b72bcbef94
+ms.sourcegitcommit: 4401890db054657954a8b3947de1f4308f4da170
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/11/2018
 ---
-## <a name="how-to-turn-off-microsoft-data-collection"></a>Microsoft のデータ収集をオフにする方法
+# <a name="how-to-turn-off-microsoft-data-collection"></a>Microsoft のデータ収集をオフにする方法
 
 Microsoft は、製品やサービスに関する特定のデータを自動的に収集します。 ポータル サイト アプリなどの製品の信頼性とパフォーマンスを向上させることが目的です。 このデータは匿名化されていますが、ユーザーによってはこのような収集を不安に感じるかもしれません。 会社のサポートは、このデータの収集を制御することはできません。また、この設定の選択を変更することもできません。
 

@@ -6,18 +6,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 06/16/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: e733d1d59d073dab9fb2b6c18ee92dadbc86adbe
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: cb186004395a4ccf84de6f0bc335cbd44a79583b
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune の用語集
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 10/10/2017
 |アプリのアンインストール アクション|ユーザーのデバイスから[アプリをアンインストール](/intune-classic/deploy-use/deploy-apps)できます。|
 |アプリ ラッピング ツール|基幹業務アプリのラッパーを作成する[コマンド ライン アプリケーション](/intune/apps-prepare-mobile-application-management)です。このラッパーにより、アプリを Intune モバイル アプリケーション管理ポリシーで管理できるようになります。|
 |利用可能なインストール|この操作でアプリを展開すると、アプリがポータル サイトに表示され、ユーザーは[オンデマンドでこれをインストール](/intune-classic/deploy-use/deploy-apps)できます。|
-|Azure ポータル|間もなく導入される Intune の新しいコンソールです。 詳しくは、[新ポータル](/intune/what-is-intune)に関するページを参照してください。|
+|Azure Portal|間もなく導入される Intune の新しいコンソールです。 詳しくは、[新ポータル](/intune/what-is-intune)に関するページを参照してください。|
 
 ## <a name="b"></a>B
 |||

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Intune アプリ SDK の概要"
+title: "Microsoft Intune App SDK の概要"
 description: "Microsoft Intune でモバイル アプリケーション管理 (MAM) 用のモバイル アプリをすぐに有効にできます。"
 keywords: 
 author: erikre
@@ -11,14 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
-ms.reviewer: oydang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d6b981afba73b5308351f9e5501db904b42389c7
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: bd7d48a6511b1ae8ecf5a6f413ae2f682434244c
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune アプリ SDK の概要
 
@@ -66,7 +66,7 @@ Microsoft が、アンケートに入力された電子メール アドレスを
 
 ネイティブ iOS 用および Android 用の Intune アプリ SDK は、Microsoft GitHub アカウントでホストされています。 ネイティブ iOS 用および Android 用の SDK ファイルは、それぞれ以下のパブリック リポジトリにあります。
 
-* [iOS 用 Intune アプリ SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
+* [iOS 用 Intune App SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [Android 用 Intune アプリ SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
 アプリが Xamarin アプリまたは Cordova アプリの場合は、次の SDK バリアントを使用してください。
