@@ -7,18 +7,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 08/09/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5f16bd212c7a23d847da0929933fbd4b497099d0
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 54c298e751f2cb63e8c9fd60aa14ed626ab9a0b1
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="activate-lost-mode-on-ios-devices"></a>iOS デバイスの紛失モードをアクティブ化する
 
@@ -37,13 +37,13 @@ ms.lasthandoff: 09/15/2017
 
 ## <a name="how-to-activate-lost-mode"></a>紛失モードをアクティブにする方法
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス]** を選択します。
 4. **[デバイスとグループ]** ブレードで、**[すべてのデバイス]** を選択します。
 5. 管理するデバイスの一覧から iOS デバイスを選択し、**[紛失モード]** のリモート アクションを選択します。
 6. **[紛失モード]** ブレードで、紛失モードを有効にします。 次に、表示するメッセージを入力し、必要に応じて連絡先の電話番号を入力します。
-7. **[OK]**をクリックします。
+7. **[OK]** をクリックします。
 
 紛失モードを有効にすると、デバイスのすべての利用がブロックされます。 エンド ユーザーは、紛失モードを無効にするまでデバイスにアクセスできなくなります。 紛失モードを有効にした場合、**[デバイスを検索する]** アクションを使って、デバイスの場所を検索できます。
 紛失モードを使用するには、デバイスが監視モードにある企業所有の iOS デバイスである必要があります。
@@ -55,7 +55,7 @@ ms.lasthandoff: 09/15/2017
 - 位置データは、保管中も、転送中も暗号化されます。
 - ロック画面に表示するメッセージの入力時に、デバイスを見つけた人がデバイスを返すのに役立つ情報を含めることをお勧めします。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 実行したアクションの状態を確認するには、**[デバイスとグループ]** ブレードで **[デバイス アクション]** を選択します。
 
