@@ -2,10 +2,10 @@
 title: "アプリケーション | Microsoft Docs"
 description: "Intune データ ウェアハウス API にあるエンティティ コレクションのアプリケーション カテゴリのための参照トピック。"
 keywords: "Intune データ ウェアハウス"
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 07/31/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9fd14c985b4cedcd0575b2b6ea29e7aa4d8bb2d4
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 6698ff8d333d386c1401f942b2bbd4a75d86943c
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="reference-for-application-entities"></a>アプリケーション エンティティのリファレンス
 
@@ -62,7 +62,7 @@ ms.lasthandoff: 10/20/2017
 | AppTypeKey |キーの代理キー |
 | AppTypeName |アプリの種類 |
 
-## <a name="example"></a>例
+### <a name="example"></a>例
 
 | AppTypeID  | 名前 | 説明 |
 |---------|------------|--------|
@@ -91,7 +91,7 @@ ms.lasthandoff: 10/20/2017
 | VppProgramTypeKey | キーの代理キー。 |
 | VppProgramTypeName | VPP プログラムの種類。 |
 
-## <a name="example"></a>例
+### <a name="example"></a>例
 
 | VppProgramID  | 名前 | 説明 |
 |---------|------------|--------|
@@ -112,3 +112,26 @@ ms.lasthandoff: 10/20/2017
 | ApplicationName | アプリケーション名。 |
 | ApplicationVersion | アプリケーションのバージョン。 |
 | BundleSize | アプリのサイズ (バイト単位)。 |
+
+## <a name="mobileappinstallstate"></a>MobileAppInstallState
+
+**MobileAppInstallState** エンティティは、デバイス、ユーザーまたはその両方を含むグループに割り当てられた後のモバイル アプリケーションのインストール状態を表します。
+
+| プロパティ | 説明 |
+|---|---|
+| AppInstallStateKey | アカウントにおけるアプリのインストール状態の一意の ID。 |
+| AppInstallState | アプリのインストール状態の列挙値。 |
+| AppInstallStateName | アプリのインストール状態の名前。 |
+
+## <a name="mobileappdeviceuserinstallstatus"></a>MobileAppDeviceUserInstallStatus
+
+**MobileAppDeviceUserInstallStatus** は、特定のデバイスとユーザーのモバイル アプリのインストール状態を表します。
+
+| プロパティ | 説明 |
+|---|---|
+| DateKey | アプリのインストール状態が記録されたときの日付のキー。 |
+| AppKey | AppRevision のインスタンスの識別に使用する、モバイル アプリのキー。 |
+| DeviceKey | Device のインスタンスの識別に使用する、対象デバイスのキー。 |
+| UserKey | User のインスタンスの識別に使用する、対象ユーザーのキー。 |
+|AppInstallStateKey | MobileAppInstallState のインスタンスの識別に使用する、アプリのインストール状態のキー。 |
+| エラー コード | アプリのインストーラー、モバイル プラットフォーム、またはアプリのインストールと関わりがあるサービスによって返されるエラー コード。 |

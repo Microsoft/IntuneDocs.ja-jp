@@ -5,7 +5,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 1/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54b8a14c01e0a08e76843b02f00124117617540d
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ddf7b2e90b0008e23d550cc347d2c904cc9bc9be
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>SCEP の証明書インフラストラクチャを構成する
 
@@ -339,6 +339,9 @@ NDES サーバーで証明書コネクタをダウンロードし、インスト
 
     **[サインイン]** をクリックし、Intune サービス管理者の資格情報、またはグローバル管理アクセス許可を持つテナント管理者の資格情報を入力します。
 
+    > [!NOTE]
+    > NDESConnectorUI.exe へのサインイン時に **[User name is not recognized]\(ユーザー名は認識されません\)** のエラーが表示された場合、通常は有効な Intune ライセンスのないアカウントを使用したことを意味しています。 アカウントに Intune または EMS ライセンスを割り当てて、操作をやり直してください。
+
     組織でプロキシ サーバーを使用していて、NDES サーバーがインターネットにアクセスするためにプロキシが必要な場合は、**[プロキシ サーバーを使用する]** をクリックし、接続するためのプロキシ サーバーの名前、ポート、およびアカウント資格情報を指定します。
 
     **[詳細設定]** タブを選択し、発行元 CA で **証明書の発行と管理** アクセス許可を持つアカウントの資格情報を指定して、**[適用]** をクリックします。
@@ -351,5 +354,5 @@ NDES サーバーで証明書コネクタをダウンロードし、インスト
 
 **https://&lt;FQDN_of_your_NDES_server&gt;/certsrv/mscep/mscep.dll**
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 これで、「[Configure certificate profiles](Configure-Intune-certificate-profiles.md)」 (証明書プロファイルを構成する) の説明に従って証明書プロファイルを構成する準備が整いました。

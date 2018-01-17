@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7947c9d047c6f206f9f93c389d418379fe8267a
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 9650afefc8ba0ba782e95b28feaaf1aaceea8d7f
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Microsoft Intune Azure で Intune のオンプレミス Exchange Connector をセットアップする
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 11/08/2017
 ## <a name="on-premises-exchange-connector-requirements"></a>内部設置型 Exchange Connector の要件
 以下の表に、内部設置型 Exchange Connector をインストールするコンピューターの要件を示します。
 
-|要件|説明|
+|要件|詳細情報|
 |---------------|--------------------|
 |Operating systems|Intune は、Windows Server 2008 SP2 64 ビット、Windows Server 2008 R2、Windows Server 2012、または Windows Server 2012 R2 の任意のエディションを実行しているコンピューター上の内部設置型 Exchange Connector をサポートします。<br /><br />Server Core インストールでは、Connector はサポートされません。|
 |Microsoft Exchange|内部設置型 Connector には、Microsoft Exchange 2010 SP1 以降または従来の Exchange Online Dedicated が必要です。 Exchange Online Dedicated 環境が**新しい**構成か**従来の**構成かを確認するには、アカウント マネージャーに問い合わせてください。|
@@ -45,7 +45,7 @@ ms.lasthandoff: 11/08/2017
 |ハードウェア|コネクタをインストールするコンピューターには、1.6 GHz の CPU と 2 GB の RAM と 10 GB の空きディスク容量が必要です。|users-add.md
 |Active Directory の同期|Connector を使用して Intune を Exchange Server に接続するには、[Active Directory の同期をセットアップ](users-add.md)して、ローカル ユーザーとセキュリティ グループが Azure Active Directory のインスタンスと同期されるようにする必要があります。|
 |その他のソフトウェア|コネクタをホストするコンピューターに、Microsoft .NET Framework 4.5 および Windows PowerShell 2.0 の完全インストールがインストールされている必要があります。|
-|Network (ネットワーク)|コネクタをインストールするコンピューターは、Exchange Server をホストするドメインと信頼関係があるドメインに参加している必要があります。<br /><br />コンピューターは、ポート 80 と 443 でファイアウォールとプロキシ サーバー経由で Intune サービスにアクセスできるように構成する必要があります。 Intune によって使用されるドメインには、manage.microsoft.com、&#42;manage.microsoft.com、および &#42;.manage.microsoft.com が含まれます。|
+|ネットワーク|コネクタをインストールするコンピューターは、Exchange Server をホストするドメインと信頼関係があるドメインに参加している必要があります。<br /><br />コンピューターは、ポート 80 と 443 でファイアウォールとプロキシ サーバー経由で Intune サービスにアクセスできるように構成する必要があります。 Intune によって使用されるドメインには、manage.microsoft.com、&#42;manage.microsoft.com、および &#42;.manage.microsoft.com が含まれます。|
 
 
 ### <a name="exchange-cmdlet-requirements"></a>Exchange コマンドレットの要件
@@ -134,6 +134,13 @@ Exchange Connector が接続をセットアップすると、Exchange Connector 
 > [!NOTE]
 > 内部設置型 Exchange Connector をインストールし、いずれかの時点で Exchange 接続を削除した場合、インストールされていたコンピューターから内部設置型 Exchange Connector をアンインストールする必要があります。
 
+## <a name="on-premises-exchange-connector-high-availability-support"></a>オンプレミスの Exchange Connector の高可用性のサポート 
+Exchange Connector によって、指定の CAS で Exchange への接続が作成された後、コネクタで別の CAS も検出することができます。 メインの CAS が利用できなくなった場合、再度利用可能になるまで、コネクタが別の CAS (ある場合) にフェールオーバーします。 この機能は、既定で有効になっています。 この機能を無効にするには、次の手順に従います。
+1. Exchange Connector がインストールされているサーバーで、%*ProgramData*%\Microsoft\Windows Intune Exchange Connector にアクセスします。 
+2. テキスト エディターを使用して、**OnPremisesExchangeConnectorServiceConfiguration.xml** を開きます。
+3. &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; を &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; に変更して、機能を無効にします。    
+
+
 ## <a name="monitor-the-exchange-connector-activity"></a>Exchange Connector アクティビティを監視する
 
 Exchange Connector を正常に構成したら、接続のステータスと前回の成功した同期の試行を表示できます。 Exchange Connector 接続を確認するには、以下のことを行います。
@@ -147,5 +154,5 @@ Exchange Connector を正常に構成したら、接続のステータスと前�
 
 Intune 1710 リリース以降では、[Exchange Connector および Intune の SCOM 管理パック](https://www.microsoft.com/en-us/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True)を使用できます。 問題のトラブルシューティングを行う必要がある場合、これにより別の方法で Exchange Connector を監視できます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [Exchange On-premises の条件付きアクセス ポリシーを作成する](conditional-access-exchange-create.md)

@@ -1,12 +1,12 @@
 ---
 title: "Microsoft Intune デバイスの登録とは"
 titlesuffix: Azure portal
-description: "iOS、Android、Windows デバイスの登録について説明します。\""
+description: "iOS、Android、Windows デバイスの登録について説明します。"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 10/23/2017
+ms.date: 12/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: caf399650e0a6382d3e03a133cad3aee1eda2d39
-ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
+ms.openlocfilehash: d9773d9c6c22717abd3590929e499c45fc8bed19
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="what-is-device-enrollment"></a>デバイス登録とは
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -29,7 +29,7 @@ Intune にデバイスを登録して、それらのデバイスを管理でき�
 
 デバイスの登録方法は、デバイスの種類、所有権、必要な管理レベルによって決まります。 "Bring Your Own Device" (BYOD) の登録では、ユーザーは個人で所有するスマートフォン、タブレット、PC を登録できます。 会社が所有しているデバイス (COD) の登録では、自動登録、共有デバイス、事前承認された登録要件などの管理シナリオが有効になります。
 
-オンプレミスの、またはクラウドでホストされている Exchange ActiveSync を使用すると、登録を必要としない簡単な Intune 管理が可能です (詳細は近日公開予定)。 Windows PC はモバイル デバイスとして管理できます (推奨)。この方法については以下で説明します。
+オンプレミスの、またはクラウドでホストされている Exchange ActiveSync を使用すると、登録を必要としない簡単な Intune 管理が可能です。 Windows PC はモバイル デバイスとして管理できます (推奨)。この方法については以下で説明します。
 
 
 ## <a name="overview-of-device-enrollment-methods"></a>デバイスの登録方法の概要
@@ -46,28 +46,28 @@ Intune にデバイスを登録して、それらのデバイスを管理でき�
 
 | **方法** |  **リセットが必要** |    **ユーザー アフィニティ**   |   **ロック済み** | **詳細** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ|    ○ |   いいえ | [詳細情報](./apple-mdm-push-certificate-get.md)|
-|**[DEM](#dem)**|   いいえ |いいえ |いいえ  | [詳細情報](./device-enrollment-program-enroll-ios.md)|
-|**[DEP](#dep)**|   Yes |   省略可能 |  省略可能|[詳細情報](./device-enrollment-program-enroll-ios.md)|
-|**[USB-SA](#usb-sa)**| Yes |   省略可能 |  いいえ| [詳細情報](./apple-configurator-setup-assistant-enroll-ios.md)|
-|**[USB-Direct](#usb-direct)**| いいえ |    いいえ  | いいえ|[詳細情報](./apple-configurator-direct-enroll-ios.md)|
+|**[BYOD](#byod)** | [いいえ]|    はい |   [いいえ] | [詳細情報](./apple-mdm-push-certificate-get.md)|
+|**[DEM](#dem)**|   [いいえ] |[いいえ] |[いいえ]  | [詳細情報](./device-enrollment-program-enroll-ios.md)|
+|**[DEP](#dep)**|   はい |   省略可能 |  省略可能|[詳細情報](./device-enrollment-program-enroll-ios.md)|
+|**[USB-SA](#usb-sa)**| はい |   省略可能 |  [いいえ]| [詳細情報](./apple-configurator-setup-assistant-enroll-ios.md)|
+|**[USB-Direct](#usb-direct)**| [いいえ] |    [いいえ]  | [いいえ]|[詳細情報](./apple-configurator-direct-enroll-ios.md)|
 
 **Windows の登録方法**
 
 | **方法** |  **リセットが必要** |    **ユーザー アフィニティ**   |   **ロック済み** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ |   ○ |   いいえ | [詳細情報](windows-enroll.md)|
-|**[DEM](#dem)**|   いいえ |いいえ |いいえ  |[詳細情報](device-enrollment-manager-enroll.md)|
-|**自動登録** | いいえ |○ |いいえ | [詳細情報](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
-|**一括登録** |いいえ |いいえ |いいえ | [詳細情報](./windows-bulk-enroll.md) |
+|**[BYOD](#byod)** | [いいえ] |   はい |   [いいえ] | [詳細情報](windows-enroll.md)|
+|**[DEM](#dem)**|   [いいえ] |[いいえ] |[いいえ]  |[詳細情報](device-enrollment-manager-enroll.md)|
+|**自動登録** | [いいえ] |はい |[いいえ] | [詳細情報](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
+|**一括登録** |[いいえ] |[いいえ] |[いいえ] | [詳細情報](./windows-bulk-enroll.md) |
 
 **Android の登録方法**
 
 | **方法** |  **リセットが必要** |    **ユーザー アフィニティ**   |   **ロック済み** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | いいえ|    ○ |   いいえ | [詳細情報](./android-enroll.md)|
-|**[DEM](#dem)**|   いいえ |いいえ |いいえ  |[詳細情報](./device-enrollment-program-enroll-ios.md)|
-|**Android for Work**| いいえ | ○ | いいえ| [詳細情報](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
+|**[BYOD](#byod)** | [いいえ]|    はい |   [いいえ] | [詳細情報](./android-enroll.md)|
+|**[DEM](#dem)**|   [いいえ] |[いいえ] |[いいえ]  |[詳細情報](./device-enrollment-manager-enroll.md)|
+|**Android for Work**| [いいえ] | はい | [いいえ]| [詳細情報](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 
 ## <a name="byod"></a>BYOD

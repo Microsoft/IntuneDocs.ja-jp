@@ -15,11 +15,11 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 86f5b505923a709cd8f8ab4e2d91c6a891e2acc6
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 3b1ccb3b0b7b2ce024ff6a09d7f9d8366896fb67
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune での Android デバイス向けのカスタム設定
 
@@ -48,7 +48,7 @@ Microsoft Intune Android **カスタム** プロファイルを使用して、An
     - **[値]** - 入力した OMA-URI に関連付ける値を入力します。
 4. 完了したら **[OK]** をクリックし、必要に応じて引き続き他の設定を追加します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 設定が完了するとプロファイルが作成され、プロファイルの一覧ブレードに表示されます。 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事を参照してください。
 

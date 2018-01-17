@@ -3,10 +3,10 @@ title: "デバイスの登録 - デバイス登録マネージャー"
 titlesuffix: Azure portal
 description: "デバイス登録マネージャー アカウントを使用してデバイスを Intune に登録します。 \""
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 11/08/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0faca372a8bc9a632cf99133b9843b4b219f285c
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 03facdde2ff5652799cc3d2113a48ea5ae772ea9
+ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>デバイス登録マネージャーを使用してデバイスを登録する
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/08/2017
 ユーザーをデバイス登録マネージャーとして追加するには、そのユーザーが Azure Portal に存在する必要があります。 最適なセキュリティのために、DEM ユーザーを Intune 管理にも指定することは避けてください。
 
 >[!NOTE]
->DEM による登録方法は、[Apple Configurator とセットアップ アシスタント](apple-configurator-setup-assistant-enroll-ios.md)、[Apple Configurator と直接登録](apple-configurator-direct-enroll-ios.md)、[Apple School Manager (ASM)](apple-school-manager-set-up-ios.md)、または [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md) という他の登録方法と一緒に使用することはできません。
+>DEM による登録方法は、[Apple Configurator とセットアップ アシスタント](apple-configurator-setup-assistant-enroll-ios.md)、[Apple Configurator と直接登録](apple-configurator-direct-enroll-ios.md)、[Apple School Manager (ASM)](apple-school-manager-set-up-ios.md)、または [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md) という他の登録方法と一緒に使用することはできません。 macOS デバイスの登録に使用することもできません。 
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>デバイス登録マネージャーのシナリオの例
 

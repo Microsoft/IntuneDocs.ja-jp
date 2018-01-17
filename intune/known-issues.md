@@ -7,7 +7,7 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 10/31/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 372e25968005258fd1e00cbab7db542ad0211206
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: c4210d77e52abba07454d8606ba7715c03078ca6
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune の既知の問題
 
@@ -43,31 +43,6 @@ Azure Portal 上の Intune で Windows 10 を管理する機能は、Windows MDM
 
 Intune から Azure Portal に移行すると、**All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** という新しいグループが表示される場合があります。 このグループには、Intune のライセンスを持つユーザーだけでなく、ご利用の Azure Active Directory のすべてのユーザーが含まれます。 このグループを使用すると、一部の既存のユーザーまたは新規ユーザーがどのグループにも属さない場合に、他の Microsoft 製品に関する問題が発生することがあります。
 
-### <a name="secondary-migration-required-for-select-capabilities"></a>特定の機能に必要な二次移行
-
-2017 年 1 月よりも前に作成された Intune アカウントでは、Azure Portal で次の機能を使用する前に、移行が必要です。
-
-- 業務用デバイスの登録プロファイル
-- Apple Device Enrollment Program
-- iOS シリアル番号で企業デバイスを事前宣言する
-- デバイス登録マネージャー アカウント
-- Apple Volume Purchase Program
-
-これらの機能は、Intune (Silverlight) コンソールや Azure Portal では管理できないため、移行すると以下のようになります。
-- 従来のポータルでは無効になります
-- Azure Portal では有効になります。  
-
-2017 年 9 月 22 日後、これらの機能の移行は、Azure へのプライマリ移行に結合されます。 自分のアカウントが Azure Portal を使用するために既に移行されている場合、このセカンダリ移行は現在までに完了している可能性があります。 完了していない場合、これらの機能は 11 月までに移行されます。 アカウントの移行が開始すると、同じ日に完了します。 移行には、Intune クラシック ポータルでこれらの機能が無効になった時刻から最大 6 時間かかります。
-
-現在 Azure Portal でこれらの Intune 機能を管理している場合は、以下の点にご注意ください。
-
-#### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Apple DEP における、既定の業務用デバイスの登録プロファイルの削除
-Azure Portal では、Apple Device Enrollment Program (DEP) デバイスについての、既定の業務用デバイスの登録プロファイルがサポートされません。 この機能は、Intune (Silverlight) コンソールで使うことはできますが、プロファイルが意図せずに割り当てられることを防ぐため、廃止されています。 DEP シリアル番号が Azure Portal で同期されている場合、業務用デバイスの登録プロファイルは割り当てられません。 登録プロファイルは、デバイスを使用する前に割り当てられている必要があります。
-
-#### <a name="apple-dep-token-restored-with-migration"></a>移行により復元された Apple DEP トークン
-
-Intune (Silverlight) ポータルで Apple Device Enrollment Program トークンを削除し、新しいトークンを Azure Portal にアップロードしない場合、移行すると元のトークンが Azure Portal 上に復元されます。 このトークンを削除して DEP 登録をブロックするには、Azure Portal からトークンを削除します。
-
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>移行したポリシーの状態を示すブレードが機能しない
 
 クラシック ポータルから移行したポリシーの状態に関する情報は、Azure Portal では表示できません。 ただし、クラシック ポータルではこれらのポリシーに関するレポートを引き続き表示できます。 移行した構成ポリシーの状態に関する情報を表示するには、Azure Portal でポリシーを再作成します。
@@ -79,6 +54,7 @@ iOS ボリューム購入アプリが表示されても、Intune アカウント
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>同じ iOS ボリューム購入プログラムの複数のコピーがアップロードされる
 同じ VPP トークンで **[アップロード]** ボタンを複数回クリックしないでください。 これにより、重複した VPP トークンがアップロードされ、同じ VPP トークンに対してアプリが複数回同期されます。
+
 
 <!-- ## Groups -->
 

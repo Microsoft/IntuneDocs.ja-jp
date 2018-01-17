@@ -6,7 +6,7 @@ keywords:
 author: dagerrit
 ms.author: dagerrit
 manager: angrobe
-ms.date: 03/31/2017
+ms.date: 1/4/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41b358f48412585ec40e369225b4263012bfd2f8
-ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
+ms.openlocfilehash: d5f4947191ddc7462749bb03f86919fc38196672
+ms.sourcegitcommit: 6e91c1aed7e4d3bb57051b41ce69cc15d70844f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Azure での Intune の機能の移動先
-Intune から Azure Portal に移行する際に、いくつかのタスクがより論理的に整理されました。 しかし、このような改善を行えば、新しい構成を学ばなければなりません。 このリファレンス ガイドは、従来のポータルを使用した Intune の知識があり、Intune で行われていた内容を Azure Portal ではどのように実行されるのかについて関心があるユーザーに向けて作成しました。 この記事でお探しの機能が記載されていない場合は、今後更新できるように記事の最後にコメントを残してください。
+Intune から Azure Portal に移行する際に、いくつかのタスクがより論理的に整理されました。 しかし、このような改善を行えば、新しい構成を学ばなければなりません。 このリファレンス ガイドは、従来のポータルを使用した Intune の知識があり、Intune で行われていた内容を Azure Portal ではどのように実行されるのかについて関心があるユーザーに向けて作成しました。 この記事にお探しの機能が記載されていない場合は、今後更新できるように記事の最後にコメントを残してください。
 ## <a name="quick-reference-guide"></a>クイック リファレンス ガイド
 |機能 |従来のポータルでのパス|Azure Portal の Intune でのパス|
 |------------|---------------|---------------|
@@ -36,6 +36,7 @@ Intune から Azure Portal に移行する際に、いくつかのタスクが�
 | 業務用デバイスの登録プロファイル | [ポリシー] > [業務用デバイスの登録] | [[デバイスの登録] > [Apple の登録] > [AC プロファイル]](#where-did-corporate-pre-enrolled-devices-go) |
 | Android for Work | [管理] > [モバイル デバイス管理] > [Android for Work] | [デバイスの登録] > [Android for Work への登録] |
 | 使用条件 | [ポリシー] > [使用条件] | [デバイスの登録] > [使用条件] |
+ポータル サイトの設定|[管理] > [ポータル サイト]|**[管理]** > [モバイル アプリ]<br> **[セットアップ]** > [ポータル サイトのブランド化]
 
 
 ## <a name="where-do-i-manage-groups"></a>グループを管理する場所
@@ -73,7 +74,7 @@ Azure Portal でも、Intune クラシックと同じ手順で Apple のデバ�
 
 ![Azure の DEP トークンの画像](./media/07-azure-dep-token.png)
 
-ただし、従来のポータルの **[同期]** オプションが、シリアル番号管理のワークフローに移動しています。手動による同期の結果がここに表示されるためです。
+ただし、従来のポータルの **[同期]** オプションは、シリアル番号管理のワークフローに移動しています。手動による同期の結果がここに表示されるためです。
 
 ![Azure の DEP 同期の画像](./media/08-azure-dep-sync.png)
 

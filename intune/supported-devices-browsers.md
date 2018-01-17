@@ -2,10 +2,10 @@
 title: "サポートされるデバイス - Microsoft Intune"
 description: "Intune デバイス管理でサポートされるデバイス プラットフォームとブラウザーの一覧を示します"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 01/03/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b168cbf5282b4e016133d071c56c8abd54c2e23b
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.openlocfilehash: 56516562b9a7510020475d226c74bf719bdd33a3
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="supported-devices-and-browsers"></a>サポートされるデバイスとブラウザー
 
@@ -42,6 +42,9 @@ Microsoft Intune のセットアップを開始する前に、次の要件を確
 ### <a name="supported-samsung-knox-standard-devices"></a>Samsung KNOX Standard デバイスのサポート
 
 ポータル サイト アプリは、MDM 登録時に、登録対象のデバイスが[サポートされている KNOX デバイスの一覧](https://www.samsungknox.com/knox-supported-devices/knox-workspace)に掲載されている場合のみ、Samsung KNOX ライセンス認証を試みます。 これにより、MDM 登録を妨げる KNOX ライセンス認証エラーの発生を回避できます。 Samsung KNOX ライセンス認証をサポートしていないデバイスは、標準の Android デバイスとして登録されます。 Samsung デバイスには、KNOX をサポートするモデル番号を持つものがある一方で、そうでないものもあります。 Samsung デバイスを購入および展開する前に、デバイスの再販業者に KNOX 対応の有無について確認してください。
+
+> [!NOTE]
+> Samsung KNOX デバイスの登録では、[Samsung サーバーへのアクセスを有効にする](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers)必要がある場合があります。 
 
 以下に一覧表示した Samsung デバイス モデルは、KNOX をサポートしておらず、Android 用ポータル サイト アプリによってネイティブの Android デバイスとして登録されます。
 

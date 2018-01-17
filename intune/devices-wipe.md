@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4ee4e9b4abb99e280bf2529f9f60d295096426c0
-ms.sourcegitcommit: 4e0ed4087a1e596831fa215135824ca5d38e33f7
+ms.openlocfilehash: 54def958cb82709f55b3c5f75d85f3b530e3d70b
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>出荷時の設定にリセットまたは会社データの削除を使用してデバイスを削除する
 
@@ -63,7 +63,7 @@ ms.lasthandoff: 12/01/2017
 
 ### <a name="ios"></a>iOS
 
-|データ型|iOS|
+|［データの種類］|iOS|
 |-------------|-------|
 |Intune でインストールされた会社のアプリと関連するデータ。|アプリはアンインストールされます。 会社のアプリ データは削除されます。<br /><br />モバイル アプリ管理を使用する Microsoft アプリからのアプリ データは削除されます。 アプリは削除されません。|
 |Settings|Intune ポリシーで設定した構成は強制されなくなり、ユーザーが設定を変更できるようになります。|
@@ -77,7 +77,7 @@ ms.lasthandoff: 12/01/2017
 
 ### <a name="android"></a>Android
 
-|データ型|Android|Android Samsung KNOX Standard|
+|［データの種類］|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Web リンク|削除されます。|削除されます。|
 |管理対象外の Google Play アプリ|アプリとデータはインストールされたままです。|アプリとデータはインストールされたままです。|
@@ -89,7 +89,7 @@ ms.lasthandoff: 12/01/2017
 |証明書プロファイルの設定|失効済みで、削除されていない証明書。|削除済みおよび失効済みの証明書。|
 |管理エージェント|デバイス管理者特権は無効になります。|デバイス管理者特権は無効になります。|
 |電子メール|該当なし (電子メール プロファイルは、Android デバイスではサポートされません)|Intune を介してプロビジョニングされている電子メール プロファイルは削除され、デバイスにキャッシュされた電子メールは削除されます。|
-|Outlook|Android 用の Microsoft Outlook アプリで受信された電子メールは削除されます。|Android 用の Microsoft Outlook アプリで受信された電子メールは削除されます。|
+|Outlook|Android 用の Microsoft Outlook アプリで受信された電子メールは削除されますが、これは Outlook が MAM ポリシーによって保護されている場合に限ります。 それ以外の場合、登録解除時に Outlook はワイプされません。|Android 用の Microsoft Outlook アプリで受信された電子メールは削除されますが、これは Outlook が MAM ポリシーによって保護されている場合に限ります。 それ以外の場合、登録解除時に Outlook はワイプされません。|
 |Azure Active Directory (AD) の参加解除|Azure AD レコードは削除されます。|Azure AD レコードは削除されます。|
 |連絡先 | アプリケーションからネイティブ アドレス帳に直接同期された連絡先が削除されます。  ネイティブ アドレス帳から別の外部ソースに同期された連絡先は削除できません。 <br /> <br />現時点では、Outlook アプリのみがサポートされています。|アプリケーションからネイティブ アドレス帳に直接同期された連絡先が削除されます。  ネイティブ アドレス帳から別の外部ソースに同期された連絡先は削除できません。 <br /> <br />現時点では、Outlook アプリのみがサポートされています。
 
@@ -99,7 +99,7 @@ ms.lasthandoff: 12/01/2017
 
 ### <a name="windows"></a>Windows
 
-|データ型|Windows 8.1 (MDM) と Windows RT 8.1|Windows RT|Windows Phone 8 および Windows Phone 8.1|Windows 10|
+|［データの種類］|Windows 8.1 (MDM) と Windows RT 8.1|Windows RT|Windows Phone 8 および Windows Phone 8.1|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
 |Intune でインストールされた会社のアプリと関連するデータ。|EFS で保護されているファイルのキーが失効すると、ユーザーはファイルを引けなくなります。|会社のアプリは削除されません。|元々ポータル サイトでインストールされたアプリはアンインストールされません。 会社のアプリ データは削除されます。|アプリケーションがアンインストールされて、サイドローディング キーが削除されます。<br>Windows 10 バージョン 1703 (Creator Update) 以降の場合、Office 365 ProPlus アプリは削除されません。|
 |Settings|Intune ポリシーで設定した構成は強制されなくなり、ユーザーが設定を変更できるようになります。|Intune ポリシーで設定した構成は強制されなくなり、ユーザーが設定を変更できるようになります。|Intune ポリシーで設定した構成は強制されなくなり、ユーザーが設定を変更できるようになります。|Intune ポリシーで設定した構成は強制されなくなり、ユーザーが設定を変更できるようになります。|

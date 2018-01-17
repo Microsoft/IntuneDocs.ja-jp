@@ -14,11 +14,11 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4ef0f754980a9bc2823129c62f7100edbcdc7524
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: ae53ced489542ba7e675e547740f1858d761c7ab
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Microsoft Intune App SDK Xamarin コンポーネント
 
@@ -75,37 +75,22 @@ Intune App SDK Xamarin コンポーネントで開発された Xamarin アプリ
 
 
 ## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>iOS モバイル アプリで Intune アプリ保護ポリシーを有効にする
-1.  Intune App SDK を初期化するには、`AppDelegate.cs` クラスで何らかの API を呼び出す必要があります。 たとえば、
-
+1.  iOS モバイル アプリに Intune App SDK を統合するのに必要な、一般的な手順に従います。 [iOS 用 Intune App SDK 開発者ガイド](app-sdk-ios.md#build-the-sdk-into-your-mobile-app)にある統合の手順 (手順 3) から開始できます。
+    **重要**: Visual Studio と Xcode とでは、アプリのキーチェーンの共有を有効にする方法が少し異なります。 アプリの Entitlements plist を開き、[キーチェーンを有効にする] オプションが有効になっていることと、適切なキーチェーンの共有グループがそのセクションに追加されていることを確認します。 次に、すべての構成およびプラットフォームの適切な組み合わせに対して、プロジェクトの [iOS バンドル署名] オプションの [カスタム エンタイトルメント] フィールドに、その Entitlements plist が指定されていることを確認します。
+2.  コンポーネントが追加され、アプリが正しく構成されると、お使いのアプリで Intune SDK の API を使用できるようになります。 これを行うには、次の名前空間を含める必要があります。
       ```csharp
-      public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
-      {
-            Console.WriteLine ("Is Managed: {0}", IntuneMAMPolicyManager.Instance.PrimaryUser != null);
-            return true;
-      }
-
+      using Microsoft.Intune.MAM;
       ```
-
-2.  コンポーネントが追加され、初期化されたので、App SDK を iOS モバイル アプリに組み込むための一般的な手順を実行できます。 ネイティブ iOS アプリを有効にする方法は、「[iOS 用 Intune アプリ SDK 開発者ガイド](app-sdk-ios.md)」にすべて記載されています。
-3. **重要**: Xamarin 基盤の iOS アプリに固有の変更がいくつかあります。 たとえば、キーチェーン グループを有効にするとき、以下を追加し、コンポーネントに含めた Xamarin サンプル アプリを含めます。 以下は、キーチェーン アクセス グループで利用されるようなグループの例です。
-
-      ```xml
-      <?xml version="1.0" encoding="UTF-8"?>
-      <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-      <plist version="1.0">
-            <dict>
-                  <key>keychain-access-groups</key>
-                  <array>
-                        <string>$(AppIdentifierPrefix)com.xamarin.microsoftintunesample</string>
-                        <string>$(AppIdentifierPrefix)com.xamarin.microsoftintunesample.intunemam</string>
-                        <string>$(AppIdentifierPrefix)com.microsoft.intune.mam</string>
-                        <string>$(AppIdentifierPrefix)com.microsoft.adalcache</string>
-                  </array>
-            </dict>
-      </plist>
+3.    アプリ保護ポリシーを受信するには、Intune MAM サービスにアプリを登録する必要があります。 お使いのアプリで、Azure Active Directory 認証ライブラリ (ADAL) を使用したユーザー認証を既に行っている場合、認証が成功した後に IntuneMAMEnrollmentManager の registerAndEnrollAccount メソッドに対して、ユーザーの UPN を渡す必要があります。
+      ```csharp
+      IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
       ```
-
-Xamarin 基盤の iOS アプリにコンポーネントを組み込むための手順が完了しました。 プロジェクトの開発に Xcode を利用している場合、`Intune App SDK Settings.bundle` を利用できます。 プロジェクトを開発するとき、テストやデバッグのために Intune ポリシー設定のオン/オフを切り替えることができます。 このバンドルを活用するには、「[iOS 用 Intune アプリ SDK 開発者ガイド](app-sdk-ios.md)」の手順に従い、[Xcode デバッグ](app-sdk-ios.md#status-result-and-debug-notifications)に関するセクションをお読みください。
+      **重要**: Intune APP SDK の既定の ADAL 設定を、お使いのアプリの設定で上書きしてください。 これを行うには、[iOS 用 Intune App SDK 開発者ガイド](app-sdk-ios.md#configure-settings-for-the-intune-app-sdk)で説明しているように、アプリの Info.plist 内にある IntuneMAMSettings ディクショナリを利用できます。または IntuneMAMPolicyManager インスタンスで AAD の override プロパティを使用することも可能です。 ADAL 設定が静的なアプリケーションでは Info.plist を使用する方法をお勧めしますが、実行時にその値が決定されるアプリケーションでは override プロパティをお勧めします。 
+      
+      アプリで ADAL を使用せず、Intune SDK で認証を処理する場合は、アプリで IntuneMAMEnrollmentManager の loginAndEnrollAccount メソッドを呼び出す必要があります。
+      ```csharp
+       IntuneMAMEnrollmentManager.Instance.LoginAndEnrollAccount([NullAllowed] string identity);
+      ```
 
 ## <a name="enabling-app-protection-policies-in-your-android-mobile-app"></a>Android モバイル アプリでアプリ保護ポリシーを有効にする
 UI フレームワークを利用しない Xamarin 基盤の Android アプリの場合、「[Android 用 Intune アプリ SDK 開発者ガイド](app-sdk-android.md)」をお読みいただき、それに沿う必要があります。 Xamarin 基盤の Android アプリの場合、ガイドに含まれる[表](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent)に基づき、クラス、メソッド、アクティビティを MAM のそれらと置換する必要があります。 アプリで `android.app.Application` クラスが定義されない場合、それを作成し、`MAMApplication` から継承するように設定する必要があります。
@@ -122,6 +107,6 @@ Xamarin Forms とその他の UI フレームワークの場合、「`MAM.Remapp
 
 3.  追加した `remapping-config.json` ファイルのビルド アクションを **RemappingConfigFile** に設定します。 追加した `remapping-config.json` は、Xamarin.Forms とのみ連動します。 その他の UI フレームワークの場合、Remapper NuGet に付属する Readme を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 コンポーネントをアプリに組み込む基本的な手順を完了しました。 これで、Xamarin Android サンプル アプリに含まれている手順を実行できます。 サンプルは 2 つあります。Xamarin.Forms 用が 1 つ、Android 用が 1 つです。

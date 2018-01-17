@@ -14,11 +14,11 @@ ms.assetid: 4b3c9af9-78da-44d2-8bd2-3f0f8885952d
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 864f99f52e0c8b46307f1ec24d11da51d8f52662
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: c77e2f9f46e61442261f65ddaa90877fc0063906
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>モバイル デバイス管理のユース ケース シナリオを特定する
 
@@ -59,7 +59,7 @@ ms.lasthandoff: 11/01/2017
 
 ## <a name="organizational-groups-for-your-scenarios"></a>シナリオ用の組織のグループ
 
-次に、各ユース ケースとサブ ユース ケース シナリオに関連付けられている組織グループを特定する必要があります。 たとえば、
+次に、各ユース ケースとサブ ユース ケース シナリオに関連付けられている組織グループを特定する必要があります。 次に例を示します。
 
 | **ユース ケース** | **サブ ユース ケース** | **組織グループ** |
 |:---:|:---:|:---:|
@@ -74,7 +74,7 @@ ms.lasthandoff: 11/01/2017
 
 次に、各ユース ケース シナリオに関連付けられているモバイル デバイス プラットフォームを特定します。 候補が複数存在する場合があります。
 
-たとえば、会社のユース ケース シナリオでは、iOS と Android Samsung KNOX デバイスのプラットフォームをサポートする場合があります。 BYOD ポリシーには、Android (Samsung KNOX 以外) と Windows 10 Mobile のようなモバイル デバイス プラットフォームの追加に関するサポートが含まれる場合があります。 前述の例に基づき、モバイル デバイス プラットフォームと各ユース ケース シナリオを関連付けています。
+たとえば、会社のユース ケース シナリオでは、iOS と Android Samsung KNOX デバイスのプラットフォームをサポートする場合があります。 BYOD ポリシーに、Android (Samsung KNOX 以外) と Windows 10 Mobile のようなモバイル デバイス プラットフォームの追加に関するサポートが含まれる場合があります。 前述の例に基づき、モバイル デバイス プラットフォームと各ユース ケース シナリオを関連付けています。
 
 | **ユース ケース** | **サブ ユース ケース** | **グループ** | **デバイス プラットフォーム** |   
 |:---:|:---:|:---:|:---:|
@@ -84,6 +84,6 @@ ms.lasthandoff: 11/01/2017
 | BYOD | インフォメーション ワーカー | マーケティング、営業 | iOS |                                                           
 | BYOD | 役員 | マーケティング、営業 | iOS |
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 次のセクションでは、[各ユース ケース シナリオの Intune 要件を特定する方法](planning-guide-requirements.md)についてのガイダンスを提供します。

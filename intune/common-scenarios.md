@@ -14,11 +14,11 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6cf2d958e5775281cca7878c54b2c9d9f593f509
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 485517f589649bdb805f94503df716b82de17b06
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="common-ways-to-use-intune"></a>Intune の一般的な使用方法
 

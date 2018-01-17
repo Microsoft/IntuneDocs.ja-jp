@@ -5,7 +5,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4ef7c8bb8daa76c5555b5d55d06fc30a9bb6c317
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 05d60bfea2058e3360c350d227b0031b6b620913
+ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために iOS アプリを準備する
 
@@ -198,7 +198,7 @@ macOS ターミナル プログラムを開き、アプリ ラッピング ツ�
 
 |プロパティ|使用方法|
 |---------------|--------------------------------|
-|**-i**|`<Path of the input native iOS application file>` ファイル名は .app または .ipa で終わる必要があります。 |
+|**-i**|`<Path of the input native iOS application file>`。 ファイル名は .app または .ipa で終わる必要があります。 |
 |**-o**|`<Path of the wrapped output application>` |
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
@@ -215,7 +215,7 @@ macOS ターミナル プログラムを開き、アプリ ラッピング ツ�
 
 [IntuneMAMPackager/Contents/MacOS] フォルダーで、`Parameters.plist` (空白の plist テンプレート) をテキスト エディターまたは Xcode で開きます。 次のキーの引数を入力します。
 
-| Plist キー |  既定値| メモ |
+| Plist キー |  既定値| 注 |
 |------------------|--------------|-----|
 | 入力アプリケーション パッケージのパス  |空| -i と同じ|
 | 出力アプリケーション パッケージのパス |空| -o と同じ|
@@ -251,7 +251,7 @@ macOS ターミナル プログラムを開き、アプリ ラッピング ツ�
 ### <a name="error-messages"></a>エラー メッセージ
 アプリ ラッピング ツールが正常に完了できない場合、次のエラー メッセージのいずれかがコンソールに表示されます。
 
-|エラー メッセージ|説明|
+|エラー メッセージ|詳細情報|
 |-----------------|--------------------|
 |有効な iOS プロビジョニング プロファイルを指定する必要があります。|プロビジョニング プロファイルが有効ではない可能性があります。 デバイスのアクセス許可が与えられていることとプロファイルの目標が開発または配布であることを確認します。 プロビジョニング プロファイルが期限切れになっている可能性もあります。|
 |有効な入力アプリケーション名を指定します。|指定した入力アプリケーション名が正しいことを確認します。|
@@ -322,7 +322,7 @@ iOS 用アプリ ラッピング ツールには、すべての機能を保証�
 
 1.  アプリで機能を有効にします。
 
-    a.  Xcode で、アプリのターゲットに移動し、**[Capabilities]** をクリックします。
+    」を参照します。  Xcode で、アプリのターゲットに移動し、**[Capabilities]** をクリックします。
 
     b.  目的の機能を有効にします。 各機能の詳細と正しい値の指定方法については、iOS 開発者ライブラリの「[Adding Capabilities (機能の追加)](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)」を参照してください。
 
@@ -332,7 +332,7 @@ iOS 用アプリ ラッピング ツールには、すべての機能を保証�
 
 2.  プロビジョニング プロファイルで権利を有効にします。
 
-    a.  Apple Developer Member Center にサインインします。
+    」を参照します。  Apple Developer Member Center にサインインします。
 
     b.  アプリのプロビジョニング プロファイルを作成します。 手順については、「[iOS 用 Intune アプリ ラッピング ツールの前提条件を取得する方法](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)」を参照してください。
 
@@ -345,7 +345,7 @@ iOS 用アプリ ラッピング ツールには、すべての機能を保証�
 ### <a name="troubleshoot-common-errors-with-entitlements"></a>権利に関する一般的なエラーのトラブルシューティング
 iOS 用アプリ ラッピング ツールで権利のエラーが表示される場合は、次のトラブルシューティング手順を実行します。
 
-|問題|原因|解決方法|
+|問題|原因|解決策|
 |---------|---------|--------------|
 |入力アプリケーションから生成された権利を解析できませんでした。|アプリ ラッピング ツールは、アプリから抽出された権利ファイルを読み取れません。 権利ファイルは、形式が正しくない可能性があります。|アプリの権利ファイルを調査します。 次の手順でこの方法について説明します。 権利ファイルを調査する場合、形式が正しくない構文がないかを確認します。 権利ファイルは、XML 形式である必要があります。|
 |プロビジョニング プロファイルに足りない権利があります (不足している権利が表示されます)。 不足している権利を含むプロビジョニング プロファイルを使用してアプリを再パッケージします。|プロビジョニング プロファイルで有効な権利と、アプリで有効な機能が一致していません。 この不一致は、一部の機能 (アプリ グループ、キーチェーンのアクセスなど) に関連付けられた ID にも適用されます。|通常、アプリと同じ機能を有効にした新しいプロビジョニング プロファイルを作成できます。 プロファイルとアプリ間で ID が一致しない場合、アプリ ラッピング ツールは可能であれば ID を置き換えます。 新しいプロビジョニング プロファイルを作成した後もこのエラーが発生する場合、–e パラメーターを使用して権利を削除できます (以下の「–e パラメーターを使用してアプリから権利を削除する」セクションを参照してください)。|
@@ -392,6 +392,18 @@ iOS 用アプリ ラッピング ツールで権利のエラーが表示され�
 -   ファイル アップロードのダイアログ ボックスを含む iOS アプリでは、アプリに適用されている切り取り、コピー、貼り付けの制限を回避できます。 たとえば、ファイル アップロードのダイアログ ボックスを利用し、アプリ データのスクリーンショットをアップロードできます。
 
 -   ラッピングされたアプリ内からデバイスのドキュメント フォルダーをユーザーが監視するとき、.msftintuneapplauncher という名前のフォルダーが表示されることがあります。 このファイルを変更または削除すると、制限付きのアプリの正常な動作に影響を与える可能性があります。
+
+## <a name="getting-logs-for-your-wrapped-applications"></a>ラッピングされたアプリケーションのログを取得する
+トラブルシューティング時に、次の手順を使用して、ラッピングされたアプリケーションのログを取得します。
+
+1. デバイスで iOS の設定アプリに移動し、LOB アプリを選択します。
+2. **[診断コンソール]** を **[オン]** に切り替えます。
+3. LOB アプリケーションを起動します。
+4. "開始" リンクをクリックします。
+5. メールまたは OneDrive の保存先にコピーする方法を利用して、ログを共有できるようになりました。
+
+>[!NOTE]
+ログ記録機能は、バージョン 7.1.13 以降の Intune アプリ ラッピング ツールでラッピングされたアプリで使用できます。
 
 ### <a name="see-also"></a>関連項目
 - [Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](apps-prepare-mobile-application-management.md)</br>
