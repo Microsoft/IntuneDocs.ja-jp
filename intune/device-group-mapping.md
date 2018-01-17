@@ -3,8 +3,8 @@ title: "Intune でデバイス カテゴリを使用する方法"
 titleSuffix: Azure portal
 description: "Intune でデバイスを登録するときにユーザーが選択できるデバイス カテゴリを使用する方法について説明します。\""
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
 ms.date: 12/11/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ddcd4639c1f5a0949be46025e16e44d0b6ac6616
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: c100193c7db2be1a5655a1b77e1eec452a189d64
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="map-device-groups"></a>デバイス グループをマップする
 
@@ -27,9 +27,9 @@ ms.lasthandoff: 12/12/2017
 Microsoft Intune のデバイス カテゴリを使用して、ユーザー定義のカテゴリに基づいてデバイスを自動的にグループに追加することで、デバイスの管理が容易になります。
 
 デバイス カテゴリでは、次のワークフローを使用します。
-1. デバイス登録時の選択肢として表示するカテゴリを作成する
-3. iOS デバイスと Android デバイスのエンド ユーザーがデバイスを登録する場合、構成されているカテゴリの一覧からカテゴリを選択する必要があります。 Windows デバイスにカテゴリを割り当てるには、エンド ユーザーはポータル サイトを使用する必要があります (詳細については、このトピックの「**デバイス グループの構成後**」をご覧ください)。
-4. 次に、ポリシーとアプリをグループに展開します。
+1. ユーザーがデバイスを登録する際に選択肢として表示するカテゴリを作成します。
+2. iOS デバイスと Android デバイスのエンド ユーザーがデバイスを登録する場合、構成されているカテゴリの一覧からカテゴリを選択する必要があります。 Windows デバイスにカテゴリを割り当てるには、エンド ユーザーはポータル サイトを使用する必要があります (詳細については、この記事の「**デバイス グループの構成後**」をご覧ください)。
+3. 次に、ポリシーとアプリをグループに展開します。
 
 次のように、任意のデバイス カテゴリを作成できます。
 - 販売時点管理デバイス
@@ -46,14 +46,14 @@ Microsoft Intune のデバイス カテゴリを使用して、ユーザー定�
 3. **[デバイスの登録]** ブレードで、**[デバイス カテゴリ]** を選択します。
 4. **[デバイス カテゴリ]** ページで、**[作成]** を選択して、新しいカテゴリを追加します。
 5. 次のブレードで、新しいカテゴリの**名前**と省略可能な**説明**を入力します。
-6. 完了したら **[作成]** をクリックします。 作成したカテゴリがカテゴリの一覧に表示されます。
+6. 完了したら **[作成]** をクリックします。 カテゴリの一覧に、この新しいカテゴリが表示されます。
 
 デバイス カテゴリ名は、手順 2 で Azure Active Directory セキュリティ グループを作成するときに使用します。
 
 ### <a name="step-2---create-azure-active-directory-security-groups"></a>手順 2 - Azure Active Directory セキュリティ グループを作成する
 この手順では、デバイス カテゴリとデバイス カテゴリ名に基づいて、Azure ポータルで動的グループを作成します。
 
-次に進む前に、Azure Active Directory ドキュメントのトピック「[属性を利用した高度なルールの作成](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects)」を参照してください。
+次に進む前に、Azure Active Directory ドキュメントの記事「[属性を利用した高度なルールの作成](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects)」をご覧ください。
 
 このセクションの情報を参考にして、**deviceCategory** 属性を使用して高度なルールのデバイス グループを作成します。 例: (**device.deviceCategory -eq** "*<the device category name you got from the Azure portal>*")
 
@@ -88,6 +88,6 @@ iOS デバイスと Android デバイスのエンド ユーザーがデバイス
 カテゴリを選択すると、作成済みの対応するグループにデバイスが自動的に追加されます。 カテゴリを構成する前にデバイスが既に登録されている場合は、エンド ユーザーにはデバイスに関する通知がポータル サイトに表示され、次回ユーザーが iOS または Android でポータル サイト アプリにアクセスするときに、カテゴリの選択を求められます。
 
 ## <a name="further-information"></a>詳細情報
-- Azure Portal でデバイス カテゴリを編集できますが、これを行った場合は、そのカテゴリを参照するすべての Azure Active Directory セキュリティ グループを手動で更新する必要があります。
+- Azure Portal でデバイス カテゴリを編集できますが、そのカテゴリを参照するすべての Azure Active Directory セキュリティ グループを手動で更新する必要があります。
 
-- カテゴリを削除すると、そのカテゴリに割り当てられていたすべてのデバイスのカテゴリ名が "**未割り当て**" と表示されます。
+- カテゴリを削除すると、そのカテゴリに割り当てられていたデバイスのカテゴリ名が "**未割り当て**" と表示されます。

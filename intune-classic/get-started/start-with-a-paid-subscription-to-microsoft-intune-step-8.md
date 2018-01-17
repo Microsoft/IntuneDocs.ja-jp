@@ -6,7 +6,7 @@ author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 02/14/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b860e0cb2475542a5b079508f71af096c4285b6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ab0dfd5abc1cf2f1a0d8576e9072509ba51b4e57
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="enable-enrollment-for-mobile-devices"></a>モバイル デバイスの登録を有効にする
 
@@ -62,7 +62,7 @@ Intune では、会社の要件に応じて、さまざまな方法でデバイ�
 - [Apple Configurator の直接登録](/intune-classic/deploy-use/ios-direct-enrollment-in-microsoft-intune)
 - [デバイス登録マネージャー](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 これで終了です。 *Intune のクイック スタート ガイド*の最後の手順が完了しました。 これで初期構成が完了したので、追加の MDM 機能の有効化を検討できます。
 
 >[!div class="step-by-step"]

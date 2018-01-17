@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/06/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 84a430da9484bc32e6dd20799059d72efaef09d8
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 504d732e00e296ad370d364e553989cacbd124d0
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="unenroll-your-macos-device-from-intune"></a>Intune から macOS デバイスの登録を解除する
 
-Intune から iOS デバイスの登録を解除すると、デバイスは会社のリソースにアクセスできなくなり、Intune で管理されなくなります。
+Intune から macOS デバイスの登録を解除した後は、会社のリソースにアクセスできなくなります。
 
 以下の手順に従って、管理から macOS デバイスの登録を解除します。
 
@@ -34,11 +34,11 @@ Intune から iOS デバイスの登録を解除すると、デバイスは会�
 
 Intune からデバイスの登録を解除すると、どのようになるかを次に示します。
 
--   デバイスにポータル サイトは表示されなくなります。
+-   ポータル サイトにお使いのデバイスが表示されなくなります。
 
 -   ポータル サイトからアプリケーションをインストールできなくなります。
 
--   追加時にデバイスで変更した設定がある場合 (カメラを無効にする、特定のパスワードの長さを必須にするなど)、その設定は適用されなくなります。
+-   デバイス追加時にデバイスで変更した設定がある場合 (パスワード長など)、その設定は適用されません。
 
 -   お使いのデバイスで、ファイルの共有または内部 Web サイトなど、一部の会社リソースにアクセスできなくなる可能性があります。
 
@@ -46,8 +46,6 @@ Intune からデバイスの登録を解除すると、どのようになるか�
 
 -   Wi-Fi または仮想プライベート ネットワーク (VPN) を使用して、社内ネットワークに接続できなくなる可能性があります。
 
--   会社の電子メールのプロファイルはデバイスから削除されます。
-
--   電子メール専用に構成されているデバイスは、ポータル サイト アプリまたは Web サイトに表示されなくなります。
+-   会社の電子メールへのアクセスがデバイスから削除されます。
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。

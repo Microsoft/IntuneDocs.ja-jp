@@ -3,8 +3,8 @@ title: "Android for Work デバイスへのアプリの割り当て"
 titlesuffix: Azure portal
 description: "このトピックでは、Google Play for Work ストアから Android for Work デバイスにアプリを同期してから割り当てます。\""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 06/13/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 803f1475a220e52a0f7d8a41d58f0a5337ff6555
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: f873fa6324bab56ce8233a8a550e2d13fe2fb054
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Intune を使用してアプリを Android for Work デバイスに割り当てる方法
 
@@ -32,7 +32,7 @@ Azure Portal の **[ライセンスされたアプリ]** ノードにアプリ�
 - Google Play ストアの非公開領域にアプリを公開できる Google Developer アカウントにサインアップする。
 - そのアプリを Intune と同期する。
 
-## <a name="before-you-start"></a>アップグレードを開始する前に
+## <a name="before-you-start"></a>開始する前に
 
 Intune と Android for Work が Azure Portal の **[デバイスの登録]** ワークロードで連携するように構成されていることを確認します。
 
@@ -62,8 +62,8 @@ Android アプリのアップロードと公開の詳細については、[Googl
 
 ストアのアプリを承認しても、**[モバイル アプリ]** ワークロードの **[ライセンスされたアプリ]** ノードに表示されない場合は、次の手順で強制的に即時に同期します。
 
-1. Azure ポータルにサインインします。
-2. **[Intune]** ブレードで、**[モバイル アプリ]** を選択します。
+1. Azure Portal にサインインします。
+2. **[Intune]** ブレードで、**[モバイル アプリ]** を選びます。
 3. **[モバイル アプリ]** ワークロードで、**[セットアップ]** > **[Android for Work]** の順に選択します。
 4. [Android for Work] ブレードです、**[今すぐ同期]** を選択します。
 5. ページには、前回の同期の時刻と状態も表示されます。

@@ -3,8 +3,8 @@ title: "Windows 10 の一括登録"
 titlesuffix: Azure portal
 description: "Microsoft Intune の一括登録パッケージを作成する"
 keywords: 
-author: NathBarn
-ms.author: NathBarn
+author: Erikje
+ms.author: erikje
 manager: angrobe
 ms.date: 10/23/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 7738935675595bbdd3ba1f6411a78a2646894073
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: f24bf5f8767763c3ca56d51127ab1d3f484e51d8
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows デバイスの一括登録
 
@@ -29,8 +29,6 @@ ms.lasthandoff: 11/09/2017
 Azure AD ユーザーはこれらのデバイス上の標準ユーザーであり、割り当て済みの Intune ポリシーと必須アプリを受け取ります。 この時点では、セルフ サービスとポータル サイトのシナリオはサポートされていません。
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Windows デバイスの一括登録の前提条件
-
-Windows デバイスの一括登録には、以下が必要です。
 
 - Windows 10 Creator Update 以降が動作しているデバイス
 - [Windows 自動登録](windows-enroll.md#enable-windows-10-automatic-enrollment)
@@ -43,15 +41,15 @@ Windows デバイスの一括登録には、以下が必要です。
 2. **Windows Configuration Designer** アプリを開き、**[Provision desktop devices]** (デスクトップ デバイスのプロビジョニング) を選択します。
 ![Windows Configuration Designer アプリでデスクトップ デバイスのプロビジョニングを選択するスクリーン ショット](media/bulk-enroll-select.png)
 
-3. **[New project]\(新しいプロジェクト\)** ウィンドウが開くので、そこで次の項目を指定します。
+3. **[新しいプロジェクト]** ウィンドウが開くので、そこで次の情報を指定します。
   - **名前** - プロジェクトの名前
-  - **プロジェクト フォルダー** - プロジェクトを保存する場所
+  - **プロジェクト フォルダー** - プロジェクトの保存場所
   - **説明**-プロジェクトの説明 (オプション) ![Windows Configuration Designer アプリで、名前、プロジェクト フォルダー、説明を指定するスクリーン ショット](media/bulk-enroll-name.png)
 
 4.  デバイスの一意の名前を入力します。 名前には、シリアル番号 (%%SERIAL%%)、または文字のランダムなセットを含めることができます。 必要に応じて、Windows のエディションをアップグレードする場合にプロダクト キーを入力したり、デバイスを共有使用のために構成したり、事前にインストールされたソフトウェアを削除することもできます。
 ![Windows Configuration Designer アプリで、名前、プロジェクト フォルダー、説明を指定するスクリーン ショット](media/bulk-enroll-device.png)
 
-5.  必要に応じて、初回起動時にデバイスが接続する Wi-fi ネットワークを構成できます。  これが構成されていない場合は、デバイスの初回起動時にワイヤード (有線) ネットワーク接続が必要になります。
+5.  必要に応じて、初回起動時にデバイスが接続する Wi-fi ネットワークを構成できます。  ネットワーク デバイスが構成されていない場合は、デバイスの初回起動時にワイヤード (有線) ネットワーク接続が必要になります。
 ![Windows Configuration Designer アプリで、ネットワーク SSID やネットワークの種類のオプションを含む Wi-fi を有効にするスクリーン ショット](media/bulk-enroll-network.png)
 
 6.  **[Enroll in Azure AD]\(Azure AD に登録\)** を選択し、**[Bulk Token Expiry]\(一括トークンの有効期限\)** の日付を入力して、**[Get Bulk Token]\(一括トークンの取得\)** を選択します。
@@ -88,14 +86,14 @@ Windows デバイスの一括登録には、以下が必要です。
 プロビジョニングは新しい Windows デバイスで使用することが想定されています。 プロビジョニングのエラーが起きると、デバイスを出荷時の設定に戻すか、ブート イメージからのデバイスの回復が必要な場合があります。 プロビジョニングのエラーが起きるいくつかの理由について例を挙げます。
 
 - Active Directory ドメイン、またはローカル アカウントを作成していない Azure Active Directory テナントへの参加を試行するプロビジョニング パッケージでは、ネットワーク接続がないためにドメイン参加処理が失敗した場合、デバイスが到達不能になることがあります。
-- プロビジョニング パッケージによって実行されるスクリプトは、システム コンテキストで実行され、デバイス ファイル システムと構成に任意の変更を加えることができます。 悪意のある、または正しくないスクリプトを使用すると、デバイスは再イメージングまたは工場出荷時に戻すことでのみ回復できる状態になることがあります。
+- プロビジョニング パッケージによって実行されるスクリプトは、システム コンテキストで実行されます。 スクリプトは、デバイスのファイル システムと構成に、任意の変更を加えることができます。 悪意のある、または正しくないスクリプトを使用すると、デバイスは再イメージングまたは工場出荷時に戻すことでのみ回復できる状態になることがあります。
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>一括登録およびポータル サイトに関する問題
 ユーザーが以前に一括登録したデバイスをポータル サイトで登録しようとすると、デバイスにセットアップまたは登録のどちらかの追加操作が必要なことを警告するメッセージが届きます。 デバイスは登録されていますが、登録がポータル サイト アプリまたは Web サイトで認識されていません。
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>Wi-Fi で一括登録 
 
-一括登録されたデバイスは、ユーザー対象の証明書と Wi-Fi 展開に使用することはできません。 これらの接続を管理するために、[デバイス レベルの証明書](certificates-configure.md)を使用する必要があります。 
+一括登録されたデバイスは、ユーザー対象の証明書と Wi-Fi 展開に使用することはできません。 これらの接続を管理するには、[デバイス レベルの証明書](certificates-configure.md)を使用する必要があります。 
 
 ### <a name="conditional-access"></a>条件付きアクセス
 条件付きアクセスは、一括登録を使用して登録された Windows デバイスでは使用できません。

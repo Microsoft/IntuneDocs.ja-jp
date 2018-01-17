@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 10/31/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: 
 ms.custom: intune-azure
-ms.openlocfilehash: b8fb7745cf7d1d874b890210ef9c75c2a11f12ef
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: dfadab1f412752d9857a2f6777481fa761cd1d4c
+ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="multi-factor-authentication-for-intune-device-enrollments"></a>Intune へのデバイスの登録での多要素認証
 
@@ -39,6 +39,9 @@ MFA を有効にするには、エンド ユーザーは 2 種類の資格情報
 ## <a name="configure-intune-to-require-multi-factor-authentication-at-device-enrollment"></a>デバイス登録時に多要素認証を要求するように Intune を構成する
 
 デバイスの登録時に MFA を要求するには、次の手順に従います。
+
+[!Important]
+>このポリシーを実装するには、ユーザーに Azure Active Directory Premium P1 以上が割り当てられている必要があります。
 
 >[!Important]
 >Microsoft Intune 登録には、**デバイス ベースのアクセス規則**を構成しないでください。

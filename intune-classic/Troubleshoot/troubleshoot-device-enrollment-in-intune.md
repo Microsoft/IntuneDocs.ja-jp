@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2ec41724eacc4abca994b1dadff6e6d9df63c74d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 50adfb13c619f81a8429c46e798b7f78acf3217e
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune のデバイス登録に関するトラブルシューティング
 
@@ -37,6 +37,12 @@ ms.lasthandoff: 10/10/2017
 -   [Windows デバイスの管理をセットアップする](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -   [Android デバイスの管理をセットアップする](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune) - 追加の手順は必要ありません
 -   [Android デバイスの管理をセットアップする](/intune-classic/deploy-use/set-up-android-for-work)
+
+ユーザーのデバイス上の時刻と日付が正しく設定されていることも確認できます。
+
+1. デバイスを再起動します。
+2. エンド ユーザーのタイム ゾーンに関して、時刻と日付の設定が GMT の標準に近いこと (+/- 12 時間以内) を確認します。
+3. Intune ポータル サイトをアンインストールして、再インストールしてください (該当する場合)。
 
 管理対象デバイスのユーザーが登録ログと診断ログを収集しておくと、管理者が確認できます。 ユーザーがログを収集する手順については、次のページを参照してください。
 
@@ -157,7 +163,7 @@ ms.lasthandoff: 10/10/2017
 
 次の表は、Intune に Android デバイスを登録しているときに、エンド ユーザーに表示される可能性があるエラーの一覧です。
 
-|エラー メッセージ|問題|解決方法|
+|エラー メッセージ|問題|解決策|
 |---|---|---|
 |**IT 管理者がアクセスするためのライセンスを割り当てる必要があります**<br>IT 管理者は、このアプリを使用するためのアクセス許可を付与していません。 IT 管理者から支援を受けるか、後でやり直してください。|ユーザーのアカウントに必要なライセンスがないため、このデバイスを登録することはできません。|ユーザーは自分のデバイスを登録する前に、必要なライセンスを割り当てられている必要があります。 このメッセージは、指定されたモバイル デバイス管理機関に必要なライセンスの種類をユーザーが持っていないことを示します。 たとえば、モバイル デバイス管理機関として Intune が指定され、ユーザーが System Center 2012 R2 Configuration Manager ライセンスを使用している場合に、このエラーが表示されます。<br><br>[ユーザー アカウントに Intune のライセンスを割り当てる](/intune/licenses-assign.md)方法に関する情報を参照してください。
 |**IT 管理者は、MDM 機関を設定する必要があります**<br>IT 管理者が、MDM 機関を設定していないようです。 IT 管理者から支援を受けるか、後でやり直してください。|モバイル デバイス管理機関が定義されていません。|Intune でモバイル デバイス管理機関が指定されていません。 [モバイル デバイス管理機関を設定する](/intune/mdm-authority-set.md)方法に関する情報を参照してください。|
@@ -229,27 +235,29 @@ Android 6.0 へのアップグレードを試みるようユーザーに通知�
 
 **解決方法 1**:
 
-[[デバイスに必要な証明書がない](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator)] に書かれている指示に従うようユーザーに促します。 ユーザーが指示に従っているにもかかわらずこのエラーが解消されない場合、解決方法 2 をお試しください。
+ユーザーは「[Your device is missing a required certificate (デバイスに必要な証明書がありません)](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator)」の手順に従って、不足している証明書を取得できる場合があります。 引き続きエラーが発生する場合は、解決方法 2 をお試しください。
 
 **解決方法 2**:
 
-企業の資格情報を入力し、フェデレーション ログイン ページにリダイレクトされた後も、「証明書がない」というエラーが表示される場合、Active Directory フェデレーション サービス (AD FS) サーバーで中間証明書が不足している可能性があります。
+企業の資格情報を入力し、フェデレーション ログイン ページにリダイレクトされた後も、証明書がないというエラーが表示される場合、Active Directory フェデレーション サービス (AD FS) サーバーで中間証明書が不足している可能性があります。
 
-Android デバイスでは、[SSL Server hello](https://technet.microsoft.com/library/cc783349.aspx) に中間証明書を含めることが要求されるため、この証明書エラーが発生します。しかしながら、現在のところ、既定の AD FS サーバーまたは AD FS Proxy サーバーのインストールでは、AD FS のサービス SSL 証明書だけを SSL Client hello への SSL Server hello の応答で送信します。
+Android デバイスでは、[SSL のサーバー ハロー](https://technet.microsoft.com/library/cc783349.aspx)に中間証明書が含まれている必要があるため、この証明書エラーが発生します。 現在、AD FS サーバーまたは WAP - AD FS プロキシ サーバーの既定のインストールでは、AD FS サービスの SSL 証明書だけが、SSL のクライアント ハローに対する SSL のサーバー ハロー応答で送信されます。
 
 この問題を解決するには、AD FS サーバーまたはプロキシでコンピューターの個人証明書に証明書を次のようにインポートします。
 
-1.  ADFS サーバーとプロキシ サーバーで、ローカル コンピューターの証明書管理コンソールを起動します。**[スタート]** ボタンを右クリックし、**[ファイル名を指定して実行]** を選択し、「**certlm.msc**」と入力します。
+1.  AD FS かプロキシ サーバー上で右クリックし、**[開始]** > **[実行]** > **[certlm.msc]** の順に選択します。 これにより、ローカル コンピューターの証明書管理コンソールが起動します。
 2.  **[個人用]** を展開し、**[証明書]** を選択します。
 3.  AD FS サービス通信の証明書を見つけ (公的に署名された証明書)、ダブルクリックしてそのプロパティを表示します。
-4.  **[証明のパス]** タブを選択し、証明書の親証明書を確認します。
+4.  **[証明のパス]** タブを選択し、証明書の親証明書を選択します。
 5.  親証明書ごとに、**[証明書の表示]** を選択します。
-6.  **[詳細]** タブを選択し、**[ファイルにコピー]** を選択します。
-7.  ウィザードの指示に従い、証明書の公開鍵をファイル場所にエクスポートします (保存します)。
-8.  手順 3 でエクスポートした親証明書を Local Computer\Personal\Certificates にインポートします。**[証明書]** を右クリックし、**[すべてのタスク]**、**[インポート]** の順に選択し、ウィザードの指示に従って証明書をインポートします。
-9.  AD FS サーバーを再起動します。
-10. すべての AD FS サーバーとプロキシ サーバーで上記の手順を繰り返します。
-これで、Android デバイスでポータル サイトにサインインできるようになります。
+6.  **[詳細]** タブ > **[ファイルへコピー...]** の順に選択します。
+7.  ウィザードの指示に従い、親証明書の公開鍵を任意のファイル保存先にエクスポート (保存) します。
+8.  右クリックして **[証明書]** > **[すべてのタスク]** > **[インポート]** の順に選択します。
+9.  ウィザードの指示に従い、親証明書を **Local Computer\Personal\Certificates** にインポートします。
+10. AD FS サーバーを再起動します。
+11. すべての AD FS サーバーとプロキシ サーバーで上記の手順を繰り返します。
+
+証明書が適切にインストールされたことを確認するには、[https://www.digicert.com/help/](https://www.digicert.com/help/) で診断ツールを使用できます。 **[Server Address]\(サーバー アドレス\)** ボックスに、AD FS サーバーの FQDN (例: sts.contso.com) を入力し、**[Check Server]\(サーバーの確認\)** をクリックします。
 
 **証明書が正しくインストールされていることを確認するには**:
 
@@ -266,7 +274,7 @@ Android デバイスでは、[SSL Server hello](https://technet.microsoft.com/li
 ### <a name="ios-enrollment-errors"></a>iOS の登録エラー
 次の表は、Intune に iOS デバイスを登録している最中にエンド ユーザーに表示される可能性があるエラーの一覧です。
 
-|エラー メッセージ|問題|解決方法|
+|エラー メッセージ|問題|解決策|
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |NoEnrollmentPolicy|登録ポリシーが見つかりません|Apple Push Notification Services (APNs) 証明書などのすべての登録前提条件が構成済みであること、"プラットフォームとしての iOS" が有効であることを確認します。 手順については、「[iOS および Mac のデバイス管理をセットアップする](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)」を参照してください。|
 |DeviceCapReached|登録されているモバイル デバイス数が多すぎます。|別のモバイル デバイスを登録する前に、ユーザーは現在登録されているモバイル デバイスの 1 つをポータル サイトから削除する必要があります。 使用しているデバイスの種類ごとの手順 ([Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android)、[iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios)、[Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows)) を参照してください。|
@@ -306,7 +314,7 @@ Android デバイスでは、[SSL Server hello](https://technet.microsoft.com/li
 ### <a name="verify-ws-trust-13-is-enabled"></a>WS-Trust 1.3 が有効になっていることを確認する
 **問題** Device Enrollment Program (DEP) iOS デバイスを登録できません
 
-ユーザー アフィニティが設定された DEP デバイスでユーザー トークンを要求するには、WS-Trust 1.3 Username/Mixed エンドポイントを有効にする必要があります。 Active Directory は既定でこのエンドポイントを有効にします。 Get-AdfsEndpoint PowerShell コマンドレットを利用し、trust/13/UsernameMixed エンドポイントを探すと、有効なエンドポイントの一覧が見つかります。 たとえば、
+ユーザー アフィニティが設定された DEP デバイスでユーザー トークンを要求するには、WS-Trust 1.3 Username/Mixed エンドポイントを有効にする必要があります。 Active Directory は既定でこのエンドポイントを有効にします。 Get-AdfsEndpoint PowerShell コマンドレットを利用し、trust/13/UsernameMixed エンドポイントを探すと、有効なエンドポイントの一覧が見つかります。 次に例を示します。
 
       Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
 
@@ -374,7 +382,7 @@ iOS 登録エラーの一覧は、デバイスのユーザー ドキュメント
 ## <a name="pc-issues"></a>PC の問題
 
 
-|エラー メッセージ|問題|解決方法|
+|エラー メッセージ|問題|解決策|
 |---|---|---|
 |**IT 管理者がアクセスするためのライセンスを割り当てる必要があります**<br>IT 管理者は、このアプリを使用するためのアクセス許可を付与していません。 IT 管理者から支援を受けるか、後でやり直してください。|ユーザーのアカウントに必要なライセンスがないため、このデバイスを登録することはできません。|ユーザーは自分のデバイスを登録する前に、必要なライセンスを割り当てられている必要があります。 このメッセージは、指定されたモバイル デバイス管理機関に必要なライセンスの種類をユーザーが持っていないことを示します。 たとえば、モバイル デバイス管理機関として Intune が指定され、ユーザーが System Center 2012 R2 Configuration Manager ライセンスを使用している場合に、このエラーが表示されます。<br>[ユーザー アカウントに Intune のライセンスを割り当てる](https://docs.microsoft.com/intune/licenses-assign)方法に関する情報を参照してください。|
 
@@ -427,5 +435,5 @@ iOS 登録エラーの一覧は、デバイスのユーザー ドキュメント
 
 
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/10/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: dd211b9dd8b09f2e3eab570eab48664fab55e3df
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: a83d938abbaefe35d028e50ed13c422b97bc3987
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>Android デバイスに関する一般的な問題を解決する
 
@@ -30,6 +30,7 @@ Android デバイスで発生する問題の一部は、トラブルシューテ
 - [電子メールを使用してログを会社のサポートに送信する](send-logs-to-your-it-admin-by-email-android.md)
 - [USB ケーブルを使用してログを会社のサポートに送信する](send-logs-to-your-it-admin-using-cable-android.md)
 - [会社のサポートに登録に関するエラーを送信する](send-enrollment-errors-to-your-it-admin-android.md)
+- [Microsoft にエラーを送信する](send-logs-to-microsoft-android.md)
 - [Android デバイスを更新する必要がある](you-need-to-update-your-android-device.md)
 - [デバイスが最新のオペレーティング システムのバージョンに準拠していない](your-android-version-isnt-yet-supported.md)
 - [デバイスが root 化され、接続できない](your-device-is-rooted-and-you-cant-connect-android.md)
@@ -41,3 +42,4 @@ Android デバイスで発生する問題の一部は、トラブルシューテ
 - [デバイスはポータル サイト アプリで暗号化されているようだが、他の方法で暗号化されている](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
 - [Android デバイスに Device Threat Protection アプリをインストールするよう求められた](you-are-prompted-to-install-mtd-android.md)
 - [Android デバイスで Device Threat Protection アプリが検出した脅威を解決する必要がある](you-need-to-resolve-a-threat-found-by-mtd-android.md)
+- [Samsung KNOX デバイスのエラーの修正](samsung-knox-errors-android.md)

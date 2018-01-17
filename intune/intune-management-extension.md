@@ -14,11 +14,11 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 237d6d090d0aae7f9a0853839b72d55618f4607e
-ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
+ms.openlocfilehash: 1bdd9002c70ea8d9e8b16b73d4d8416eeec3341b
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 デバイスの Intune で PowerShell スクリプトを管理する
 Intune 管理拡張機能を使用すると、Windows 10 デバイスで実行されている Intune で PowerShell スクリプトをアップロードできます。 この管理拡張機能は Windows 10 モバイル デバイス管理 (MDM) 機能を補完するもので、最新の管理に簡単に移行できます。
@@ -57,7 +57,7 @@ Intune 管理拡張機能には次の前提条件があります。
   ![[PowerShell スクリプトの追加] ブレード](./media/mgmt-extension-assignments.png)
  
 6. **[グループの選択]** を選択して、使用できる Azure AD グループの一覧を表示します。 
-7. グループを選択し、**[選択]** をクリックして、選択したグループにポリシーを割り当てます。
+7. スクリプトを受信するデバイスのユーザーが属しているグループを 1 つ以上選択します。次に、**[選択]** をクリックして選択したグループにポリシーを割り当てます。
 
 Intune 管理拡張機能は、1 時間に 1 回 Intune と同期します。 ポリシーを Azure AD グループに割り当てた後に、PowerShell スクリプトを実行すると、実行結果がレポートされます。 
  

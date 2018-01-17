@@ -1,11 +1,11 @@
 ---
-title: "ユーザー - Intune データ ウェアハウス | Microsoft Docs"
+title: "現在のユーザー - Intune データ ウェアハウス | Microsoft Docs"
 description: "Intune データ ウェアハウス API のエンティティ コレクションのユーザー カテゴリに関するリファレンス トピック。"
 keywords: "Intune データ ウェアハウス"
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,20 @@ ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6f321a3a9ac09c004639a3db15df280fbdb5be3c
-ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
+ms.openlocfilehash: cabf39f603ac93a0716594c44174908e7c999e5c
+ms.sourcegitcommit: b2467a653ffd36c2248a30b69cb88e3dc7cca2ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="reference-for-current-user-entity"></a>現在のユーザー エンティティのリファレンス
 
-**現在のユーザー** カテゴリには、データ モデルのユーザーとエージェントのプロパティが含まれています。 **現在のユーザー** エンティティ コレクションは、現在アクティブなユーザーに限られています。 エンティティには、現在ライセンスが割り当てられているすべての Azure Active Directory ユーザーが含まれています。 ライセンスは、Intune ライセンス、ハイブリッド ライセンス、または Microsoft Office 365 ライセンスです。 ユーザーが削除されると、そのデータ コレクションの期間には表記されません。 ユーザー状態の変更の履歴を含むコレクションについては、「[ユーザー エンティティのリファレンス](reports-ref-user.md)」をご覧ください。
+**現在のユーザー** カテゴリには、データ モデルのユーザー プロパティが含まれています。 **現在のユーザー** エンティティ コレクションは、現在アクティブなユーザーに限られています。 エンティティには、現在ライセンスが割り当てられているすべての Azure Active Directory ユーザーが含まれています。 ライセンスは、Intune ライセンス、ハイブリッド ライセンス、または Microsoft Office 365 ライセンスです。 ユーザーは削除されると、現在のユーザー コレクションに表示されなくなります。 ユーザー状態の変更の履歴を含むコレクションについては、「[ユーザー エンティティのリファレンス](reports-ref-user.md)」をご覧ください。
 
 
-## <a name="user"></a>User
+## <a name="current-user"></a>現在のユーザー
 
-**User** エンティティには、社内のすべての Azure Active Directory (Azure AD) ユーザーと割り当てられているライセンスが表示されます。
+**Current User** エンティティには、社内のすべての Azure Active Directory (Azure AD) ユーザーと、割り当てられているライセンスが表示されます。
 
 | プロパティ  | 説明 | 例 |
 |---------|------------|--------|
@@ -40,6 +40,6 @@ ms.lasthandoff: 11/15/2017
 | StartDateInclusiveUTC |このユーザーがデータ ウェアハウスで作成されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
 | RowLastModifiedDateTimeUTC |このユーザーがデータ ウェアハウスで最後に変更されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
 
-## <a name="next-steps"></a>次のステップ
- - **ユーザー** エンティティ コレクションを使用して、現在アクティブではないユーザーまでユーザー データを拡張できます。 詳細については、「[ユーザー エンティティのリファレンス](reports-ref-user.md)」をご覧ください。 
+## <a name="next-steps"></a>次の手順
+ - **ユーザー** エンティティ コレクションを使用して、ユーザー データを現在アクティブでないユーザーにまで拡張できます。 詳細については、「[ユーザー エンティティのリファレンス](reports-ref-user.md)」をご覧ください。
  - データ ウェアハウスが Intune のユーザーの有効期間を追跡する方法の詳細については、「[Intune データ ウェアハウスのユーザー有効期間の表記](reports-ref-user-timeline.md)」をご覧ください。

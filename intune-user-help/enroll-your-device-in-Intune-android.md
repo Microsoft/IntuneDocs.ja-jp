@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7a90ae7db1141b40934648c951276e3f4d43bc05
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 52364f7c5586f6021ac3bf83e73701d9781c4468
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Intune に Android デバイスを登録する
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 12/12/2017
 
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment/player]
 
-これらの登録手順は、ネイティブ Android デバイスおよび Samsung KNOX Android デバイス用の手順です。 Samsung KNOX は、ネイティブ Android に用意されている以外の追加保護を提供するために特定の Samsung 製のデバイスで使用されるセキュリティの一種です。 Samsung KNOX デバイスかどうかを確認するには、**[Settings]** > **[About device]** を選択します。 "KNOX version" という文字がない場合、デバイスはネイティブ Android デバイスです。
+これらの登録手順は、ネイティブ Android デバイスおよび Samsung KNOX Android デバイス用の手順です。 Samsung KNOX は、ネイティブ Android に用意されている以外の追加保護を提供するために特定の Samsung 製のデバイスで使用されるセキュリティの一種です。 Samsung KNOX デバイスかどうかを確認するには、**[設定]** > **[About device]\(デバイスについて\)** を選択します。 "KNOX version" という文字がない場合、デバイスはネイティブ Android デバイスです。
 
 登録の前後に、デバイスの使用方法に適したカテゴリを選ぶように求められる場合があります。 会社のサポートは、このカテゴリを使用して、ユーザーがアクセスできるアプリの確認に役立てています。
 
@@ -98,7 +98,7 @@ ms.lasthandoff: 12/12/2017
 
     ![PIN またはパスワードを入力する](./media/and-enroll-6-PIN-native.png)
 
-13.  Samsung KNOX デバイスを使用している場合は、**[Confirm]** をタップすると、デバイスが登録中であることを示すメッセージが表示されます。 ネイティブ Android デバイスを使用している場合は、デバイスが登録されていることを示す次の画面にだけ注意してください。
+13.  Samsung Knox デバイスを使用している場合は、**[Confirm]** (確認) をタップすると、デバイスが登録されていることを示すメッセージが表示されます。 ネイティブ Android デバイスを使用している場合は、デバイスが登録されていることを示す次の画面にだけ注意してください。
 
     ![Samsung KNOX プライバシー ポリシー](./media/and-enroll-7-knox-privacy-policy.png)
 

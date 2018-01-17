@@ -15,11 +15,11 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8dc9c67db2a93b6cd0f1db1894b079183ee9c945
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: f697b575a5cdc1fa4009d08a14452508eacb8de1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Microsoft Intune で電子メールの設定を構成する方法
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="create-a-device-profile-containing-email-settings"></a>電子メール設定を含むデバイス プロファイルの作成
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
@@ -50,7 +50,7 @@ ms.lasthandoff: 12/12/2017
 5. **[プラットフォーム]** ドロップダウン リストで、電子メール設定を適用するデバイス プラットフォームを選択します。 現時点では、電子メール デバイス設定に対応している次のいずれかのプラットフォームを選択できます。
     - **Android** (Samsung Android KNOX Standard のみ)
     - **Android for Work**
-    - **iOS**
+    - **Android**
     - **Windows Phone 8.1**
     - **Windows 10 以降**
 6. **[プロファイルの種類]** ドロップダウン リストで、**[電子メール]** を選択します。

@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 09/07/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ffddf9e5fcdf8359c729eb048a6f8052a1b3286f
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: c89d253f28a26a560251b159a3705016b4c7fad3
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Android および Samsung KNOX Standard デバイスの制限設定
 
@@ -28,13 +28,13 @@ ms.lasthandoff: 12/12/2017
 これらの設定を Android デバイス制限ポリシーとともに使用して、組織内のデバイスを構成します。
 
 >[!TIP]
->必要な設定が利用できない場合、[カスタム プロファイル](custom-settings-android.md)を使用して、デバイスを構成できることがあります。 
+>必要な設定が利用できない場合、[カスタム プロファイル](custom-settings-android.md)を使用して、デバイスを構成できることがあります。
 
 ## <a name="general"></a>全般
 
 - **[カメラ]** - デバイスのカメラを使用できるようにします。
 - **[コピー/貼り付け (Samsung KNOX のみ)]** - デバイスでコピー/貼り付け機能を使用できるようにします。
-- **[アプリ間のクリップボードの共有 (Samsung KNOX のみ)]** - クリップボードを使用してアプリ間でコピー/貼り付けを実行できるようにします。
+- **[アプリ間でのクリップボードの共有 (Samsung KNOX のみ)]** - クリップボードを使用してアプリ間でコピー/貼り付けを実行できるようにします。
 - **[診断データの送信 (Samsung KNOX のみ)]** - ユーザーがデバイスから診断データを送信できないようにします。
 - **[工場出荷時の設定へのリセット (Samsung KNOX のみ)]** - ユーザーがデバイスを出荷時の設定に戻せるようにします。
 - **[位置情報 (Samsung KNOX のみ)]** - デバイスで位置情報を使用できるようにします。
@@ -42,7 +42,8 @@ ms.lasthandoff: 12/12/2017
 - **[画面キャプチャ (Samsung KNOX のみ)]** - ユーザーが画面のコンテンツを画像としてキャプチャできるようにします。
 - **[音声アシスタント (Samsung KNOX のみ)]** - デバイスで音声アシスタント ソフトウェアを使用できるようにします。
 - **[YouTube (Samsung KNOX のみ)]** - デバイスで YouTube アプリを使用できるようにします。
-- **[共有デバイス] (Samsung KNOX のみ)** - 管理対象の Samsung KNOX Standard デバイスを共有デバイスとして構成します。 このモードでは、エンド ユーザーは Azure AD 資格情報を使用してデバイスにサインインおよびサインアウトできます。 使用中かどうかに関係なく、デバイスは常に管理対象です。<br>この機能を SCEP 証明書プロファイルと組み合わせて使用する場合、エンド ユーザーは、すべてのユーザーに対して同じアプリのセットを持つ一方、ユーザー独自の SCEP ユーザー証明書も持つデバイスを共有することができます。ユーザーがサインアウトすると、すべてのアプリ データがクリアされます。  この機能は、LOB アプリのみに限定されています。
+- **[共有デバイス (Samsung KNOX のみ)]** - 管理対象の Samsung KNOX Standard デバイスを共有デバイスとして構成します。 このモードでは、エンド ユーザーは Azure AD 資格情報を使用してデバイスにサインインおよびサインアウトできます。 使用中かどうかに関係なく、デバイスは常に管理対象です。<br>この機能を SCEP 証明書プロファイルと組み合わせて使用する場合、エンド ユーザーは、すべてのユーザーに対して同じアプリのセットを持つ一方、ユーザー独自の SCEP ユーザー証明書も持つデバイスを共有することができます。ユーザーがサインアウトすると、すべてのアプリ データがクリアされます。  この機能は、LOB アプリのみに限定されています。
+- **[日付と時刻の変更のブロック (Samsung KNOX)]** - ユーザーがデバイスの日付と時刻の設定を変更できないようにします。 
 
 ## <a name="password"></a>パスワード
 
@@ -101,8 +102,8 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="browser"></a>ブラウザー
 
-- **[Web ブラウザー (Samsung KNOX のみ)]** - デバイスの既定の Web ブラウザーを使用できるようにするかどうかを指定します。
-- **[オートフィル (Samsung KNOX のみ)]** - Web ブラウザーのオートフィル機能を使用できるようにします。
+- **[Web ブラウザー (Samsung KNOX のみ)]** - デバイスの既定の Web ブラウザーを使用できるかどうかを指定します。
+- **[オートコンプリート (Samsung KNOX のみ)]** - Web ブラウザーのオートコンプリート機能を使用できるようにします。
 - **[Cookie (Samsung KNOX のみ)]** - デバイスの Web ブラウザーで Cookie を使用できるようにします。
 - **[JavaScript (Samsung KNOX のみ)]** - デバイスの Web ブラウザーで Java スクリプトを実行できるようにします。
 - **[ポップアップ (Samsung KNOX のみ)]** - Web ブラウザーでポップアップ ブロックを使用できるようにします。
@@ -112,13 +113,13 @@ ms.lasthandoff: 12/12/2017
 これらの設定を使用して、Samsung KNOX Standard のみが動作するデバイス上でインストールまたは起動できるアプリを指定します。
 さらに、デバイスのユーザーに対して非表示にするインストール済みアプリを指定することもできます。 ユーザーは、これらのアプリを実行できません。
 
-- **[インストールの許可されたアプリ (Samsung KNOX Standard のみ)]**
-- **[起動がブロックされたアプリ (Samsung KNOX Standard のみ)]**
-- **[ユーザーに対して非表示のアプリ (Samsung KNOX Standard のみ)]**
+- **インストールの許可されたアプリ (Samsung KNOX Standard のみ)**
+- **起動がブロックされたアプリ (Samsung KNOX Standard のみ)**
+- **ユーザーに対して非表示のアプリ (Samsung KNOX Standard のみ)**
 
 各設定に対して、次のいずれかを使ってアプリの一覧を構成します。
 
-- **[パッケージ名ごとにアプリを追加]** - 主に基幹業務アプリの場合に使用されます。 アプリ名とアプリ パッケージ名を入力します。 
+- **[パッケージ名ごとにアプリを追加]** - 主に基幹業務アプリの場合に使用されます。 アプリ名とアプリ パッケージ名を入力します。
 - **[URL ごとにアプリを追加]** - アプリ名と、Google Play ストアの URL を入力します。
 - **[管理対象アプリを追加]** - Intune で管理するアプリの一覧から、対象のアプリを選びます。
 
@@ -142,7 +143,7 @@ ms.lasthandoff: 12/12/2017
 
 ## <a name="kiosk"></a>キオスク
 
-キオスクの設定は、Samsung KNOX Standard デバイスのみの、Intune を使って管理するアプリにのみ適用されます。
+キオスクの設定は、Samsung KNOX Standard デバイスと、Intune を使って管理するアプリにのみ適用されます。
 
 - **[管理対象アプリを選びます]** - 次のオプションのいずれかを選び、デバイスがキオスク モードのときに実行できる管理対象アプリを 1 つ以上追加します。 他のアプリはデバイスでの実行が許可されません。
     - **パッケージ名ごとにアプリを追加**
@@ -152,6 +153,6 @@ ms.lasthandoff: 12/12/2017
 - **ボリューム ボタン** - デバイスのボリューム ボタンの使用を有効または無効にします。
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 引き続き「[デバイスの制限設定を構成する方法](device-restrictions-configure.md)」の手順を使用して作成し、デバイスの制限プロファイルを割り当てます。

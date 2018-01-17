@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0d1c1d7e4121bfdabf121b62f0ac8e1af2bca20a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 15f549970494174d4f0764472f313f93b11f32a2
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>Microsoft Intune での企業所有の iOS デバイスの登録
 
@@ -73,7 +73,7 @@ DEP では、DEP を通じて購入したデバイスに "無線で" 登録プ�
 
   ユーザーのデバイスがまだ企業登録済みでない場合は、**[新しいデバイス]** を選択して標準の登録フローを行う必要があります。
 
-6. 次の画面で、ユーザーは、新しいデバイスのシリアル番号を確認する必要があります。 シリアル番号は、**[シリアル番号を確認]** リンクをタップして設定アプリを起動すると確認できます。 その後、ポータル サイト アプリにシリアル番号の最後の 4 文字を入力する必要があります。
+6. 次の画面で、ユーザーは、新しいデバイスのシリアル番号を確認する必要があります。 **[シリアル番号を確認]** リンクをタップすると、設定アプリを使用してシリアル番号を確認するための説明が起動します。 その後、ポータル サイト アプリにシリアル番号の最後の 4 文字を入力する必要があります。
 
   この手順では、デバイスが Intune に登録されている会社のデバイスであることが確認されます。 デバイスのシリアル番号が一致しない場合は、間違ったデバイスが選択されています。 その場合は、前の画面に戻って、別のデバイスを選択する必要があります。
 

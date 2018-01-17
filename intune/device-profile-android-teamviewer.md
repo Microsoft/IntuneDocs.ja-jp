@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 12/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,24 +15,24 @@ ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a4e2b3493467f922b844130829db8e5ba14b246
-ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
+ms.openlocfilehash: 46e850cdda27444d18354b972d10b0cd02c036d9
+ms.sourcegitcommit: 000684953cbb3ceae0e2bcaa51186c9221f7aa86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="provide-remote-assistance-for-intune-managed-devices"></a>Intune で管理されたデバイスにリモート アシスタンスを提供する
 
 Intune では、別売りの [TeamViewer](https://www.teamviewer.com) ソフトウェアを使って、管理対象のデバイスのユーザーにリモート アシスタンスを提供できます。 このトピックの情報を活用して作業を開始してください。
 
-## <a name="before-you-start"></a>アップグレードを開始する前に
+## <a name="before-you-start"></a>開始する前に
 
 ### <a name="supported-devices"></a>サポートされるデバイス
 
 Intune で管理された Android デバイスと Windows デバイスでは、リモート管理がサポートされます。
 
 >[!NOTE]
->Windows Holographic (HoloLens)、Windows Team (Surface Hub)、Windows 10 S は、TeamViewer ソフトウェアではサポートされません。 
+>Windows Holographic (HoloLens)、Windows Team (Surface Hub)、Windows 10 S は、TeamViewer ソフトウェアではサポートされません。 引き続き Intune クラシック ポータルの [PC クライアント](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json)を使用して、デバイスを管理する必要があります。
 
 
 
@@ -50,7 +50,7 @@ Azure Portal のユーザーが [Intune ロール](https://docs.microsoft.com/in
 デバイスにリモート アシスタンスを提供する前に、以下の手順で Intune TeamViewer コネクタを構成する必要があります。
 
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス]** を選択します。
 4. **[デバイスとグループ]** ブレードで、**[セットアップ]** > **[TeamViewer Connector]** の順に選択します。
@@ -61,7 +61,7 @@ Azure Portal のユーザーが [Intune ロール](https://docs.microsoft.com/in
 
 ## <a name="how-to-remotely-administer-a-device"></a>デバイスのリモート管理方法
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス]** を選択します。
 4. **[デバイス]** ブレードで、**[管理]** > **[すべてのデバイス]** の順に選択します。
@@ -74,7 +74,6 @@ TeamViewer ウィンドウで、さまざまなデバイスのリモート操作
 
 設定が完了したら、TeamViewer ウィンドウを閉じます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 デバイス上のポータル サイト アプリのアイコンに通知フラグが表示され、エンド ユーザーはアプリを開くと通知を確認できます。 その後、リモート アシスタンス要求を受け入れることができます。
-
