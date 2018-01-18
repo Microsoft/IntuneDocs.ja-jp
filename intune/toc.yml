@@ -654,11 +654,11 @@
               href: reports-ref-user-device.md
             - name: User エンティティのリファレンス
               href: reports-ref-user.md
-    - name: Intune の Graph API
+    - name: Azure AD で Microsoft Graph の Intune API にアクセスする
       href: intune-graph-apis.md
       items:
-        - name: Intune の Graph API のリファレンス
-          href: 'https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview'
+        - name: Intune API リファレンス
+          href: 'https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview'
 - name: リソース
   items:
     - name: 用語集

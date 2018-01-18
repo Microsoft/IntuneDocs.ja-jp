@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/02/2018
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: 8edfc4f55e9265ef6bd2dfbcb5871496d5679a9f
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: 77b3b8f3fff39df94d535b28c060334b3e0a63ce
+ms.sourcegitcommit: a55a7119a15836b6941fdd5b32b9076139093693
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="fix-common-issues-with-your-samsung-knox-device"></a>Samsung KNOX デバイスに関する一般的な問題を解決する
 
-Samsung KNOX デバイスで発生する問題の一部は、トラブルシューティングによって解決できる場合があります。 以下に、まず自分で解決を試みることができる一般的な問題をいくつか挙げます。 さらに複雑な問題については、[ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)の連絡先情報を使用して、会社のサポートに問い合わせることをお勧めします。
+Samsung KNOX デバイスで発生する問題の一部は、トラブルシューティングによって解決できる場合があります。 以下に、まず自分で解決を試みることができる一般的な問題をいくつか挙げます。 より複雑な問題については、[Android ポータル サイト チームへのお問い合わせ](https://github.com/MicrosoftDocs/IntuneDocs/blob/master/intune-user-help/send-logs-to-microsoft-android.md)をお勧めします。
 
 ## <a name="network-activation-error"></a>ネットワーク アクティブ化エラー
 
@@ -31,7 +31,7 @@ Samsung KNOX デバイスで発生する問題の一部は、トラブルシュ�
 
 |エラー メッセージ|手順の内容|
 |---|---|
-|**[Samsung KNOX アクティブ化エラー]** - Samsung KNOX ライセンスをアクティブ化できませんでした。 別のワイヤレス ネットワークまたは携帯ネットワークに切り替えて、もう一度試してください。|現在のネットワークでは、このデバイスはアクティブ化できません。 携帯データネットワークを使用している場合は、Wi-fi ネットワークに切り替えてからもう一度試してください。|
+|**[Samsung KNOX アクティブ化エラー]** - Samsung KNOX ライセンスをアクティブ化できませんでした。 別のワイヤレス ネットワークまたは携帯ネットワークに切り替えて、もう一度試してください。|現在のネットワークでは、このデバイスはアクティブ化できません。 携帯データネットワークを使用している場合は、Wi-Fi ネットワークに切り替えてからもう一度試してください。反対に、Wi-Fi ネットワークを使用している場合は、携帯データネットワークに切り替えてからもう一度試してください。|
 
 ## <a name="license-activation-error"></a>ライセンス アクティブ化エラー
 
