@@ -14,72 +14,58 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d9773d9c6c22717abd3590929e499c45fc8bed19
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: dc0105bb786d8b1e569b11898b0d3757feba406a
+ms.sourcegitcommit: a55a7119a15836b6941fdd5b32b9076139093693
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="what-is-device-enrollment"></a>デバイス登録とは
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-このトピックでは登録について説明します。また、Intune 管理でモバイル デバイスを登録する方法をいくつか紹介します。
+Intune では、従業員のデバイスやアプリ、従業員が会社のデータにアクセスする手段を管理できます。 このモバイル デバイス管理 (MDM) を使用するには、まず Intune サービスにデバイスを登録する必要があります。 デバイスが登録されると、MDM 証明書が発行されます。 この証明書を使用して、Intune サービスと通信します。
 
-Intune にデバイスを登録して、それらのデバイスを管理できるようにします。 この機能は、Intune ドキュメントでは、モバイル デバイス管理 (MDM) と呼ばれます。 デバイスを Intune に登録すると、MDM 証明書が発行されます。デバイスは、この証明書を使用して Intune サービスと通信します。
+次の表に示すように、従業員のデバイスを登録する方法は複数あります。 各方法は、デバイスの所有権 (個人または会社)、デバイスの種類 (iOS、Windows、Android)、および管理要件 (リセット、アフィニティ、ロック) によって異なります。
 
-デバイスの登録方法は、デバイスの種類、所有権、必要な管理レベルによって決まります。 "Bring Your Own Device" (BYOD) の登録では、ユーザーは個人で所有するスマートフォン、タブレット、PC を登録できます。 会社が所有しているデバイス (COD) の登録では、自動登録、共有デバイス、事前承認された登録要件などの管理シナリオが有効になります。
+## <a name="ios-enrollment-methods"></a>iOS の登録方法
 
-オンプレミスの、またはクラウドでホストされている Exchange ActiveSync を使用すると、登録を必要としない簡単な Intune 管理が可能です。 Windows PC はモバイル デバイスとして管理できます (推奨)。この方法については以下で説明します。
-
-
-## <a name="overview-of-device-enrollment-methods"></a>デバイスの登録方法の概要
-
-以下の表では、Intune の登録方法の概要を、機能と要件とともにまとめています。
-
-**凡例**
-
-- **リセットが必要** - デバイスは登録時に工場出荷時の状態にリセットされます。
-- **ユーザー アフィニティ** - デバイスとユーザーを関連付けます。 詳細については、「[ユーザー アフィニティ](device-enrollment-program-enroll-ios.md)」を参照してください。
-- **ロック済み** - ユーザーによるデバイス登録解除を防ぎます。
-
-**iOS の登録方法**
-
-| **方法** |  **リセットが必要** |    **ユーザー アフィニティ**   |   **ロック済み** | **詳細** |
+| **方法** |  **リセットが必要** |    [**ユーザー アフィニティ**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) |   **ロック済み** | **詳細** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | [いいえ]|    はい |   [いいえ] | [詳細情報](./apple-mdm-push-certificate-get.md)|
-|**[DEM](#dem)**|   [いいえ] |[いいえ] |[いいえ]  | [詳細情報](./device-enrollment-program-enroll-ios.md)|
-|**[DEP](#dep)**|   はい |   省略可能 |  省略可能|[詳細情報](./device-enrollment-program-enroll-ios.md)|
+| | 登録時、デバイスは出荷時の設定になっている。 |  各デバイスをユーザーに関連付ける。| ユーザーによる登録解除が可能である。  | |
+|**[BYOD](#bring-your-own-device)** | [いいえ]|   はい |   [いいえ] | [詳細情報](./apple-mdm-push-certificate-get.md)|
+|**[DEM](#device-enrollment-manager)**| [いいえ] |[いいえ] |[いいえ]  | [詳細情報](./device-enrollment-program-enroll-ios.md)|
+|**[DEP](#apple-device-enrollment-program)**|   はい |   省略可能 |  省略可能|[詳細情報](./device-enrollment-program-enroll-ios.md)|
 |**[USB-SA](#usb-sa)**| はい |   省略可能 |  [いいえ]| [詳細情報](./apple-configurator-setup-assistant-enroll-ios.md)|
 |**[USB-Direct](#usb-direct)**| [いいえ] |    [いいえ]  | [いいえ]|[詳細情報](./apple-configurator-direct-enroll-ios.md)|
 
-**Windows の登録方法**
+## <a name="windows-enrollment-methods"></a>Windows の登録方法
 
 | **方法** |  **リセットが必要** |    **ユーザー アフィニティ**   |   **ロック済み** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | [いいえ] |   はい |   [いいえ] | [詳細情報](windows-enroll.md)|
-|**[DEM](#dem)**|   [いいえ] |[いいえ] |[いいえ]  |[詳細情報](device-enrollment-manager-enroll.md)|
+|**[BYOD](#bring-your-own-device)** | [いいえ] |  はい |   [いいえ] | [詳細情報](windows-enroll.md)|
+|**[DEM](#device-enrollment-manager)**| [いいえ] |[いいえ] |[いいえ]  |[詳細情報](device-enrollment-manager-enroll.md)|
 |**自動登録** | [いいえ] |はい |[いいえ] | [詳細情報](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
 |**一括登録** |[いいえ] |[いいえ] |[いいえ] | [詳細情報](./windows-bulk-enroll.md) |
 
-**Android の登録方法**
+## <a name="android-enrollment-methods"></a>Android の登録方法
 
 | **方法** |  **リセットが必要** |    **ユーザー アフィニティ**   |   **ロック済み** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | [いいえ]|    はい |   [いいえ] | [詳細情報](./android-enroll.md)|
-|**[DEM](#dem)**|   [いいえ] |[いいえ] |[いいえ]  |[詳細情報](./device-enrollment-manager-enroll.md)|
+|**[BYOD](#bring-your-own-device)** | [いいえ]|   はい |   [いいえ] | [詳細情報](./android-enroll.md)|
+|**[DEM](#device-enrollment-manager)**| [いいえ] |[いいえ] |[いいえ]  |[詳細情報](./device-enrollment-manager-enroll.md)|
 |**Android for Work**| [いいえ] | はい | [いいえ]| [詳細情報](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
 
 
-## <a name="byod"></a>BYOD
-"Bring your own device" のユーザーは、ポータル サイト アプリをインストールして実行し、自分のデバイスを登録します。 このプログラムによって、ユーザーは電子メールなどの会社のリソースにアクセスできます。
+## <a name="bring-your-own-device"></a>Bring Your Own Device
+BYOD (私物デバイスの業務利用) デバイスには、個人の電話、タブレット、PC があります。 ユーザーは、ポータル サイト アプリをインストール、および実行して、BYOD デバイスを登録します。 このプログラムによって、ユーザーは電子メールなどの会社のリソースにアクセスできます。
 
-## <a name="corporate-owned-devices"></a>会社所有のデバイス
-会社所有のデバイス (COD) の登録シナリオを次に示します。 iOS デバイスは、Apple が提供するツールを利用して直接登録できます。 管理者またはマネージャーは、デバイス登録マネージャーを使用して、すべてのデバイスの種類を登録できます。 IMEI 番号を持つデバイスを識別し、会社所有としてタグ付けして、COD シナリオで使用することもできます。
+## <a name="corporate-owned-device"></a>企業所有のデバイス
+企業所有のデバイス (COD) には、組織が所有し、従業員に配布されている電話、タブレット、PC があります。 COD 登録では、自動登録、共有デバイス、事前承認された登録要件などのシナリオがサポートされます。 管理者やマネージャーによる COD の一般的な登録方法は、デバイス登録マネージャー (DEM) を使用することです。 iOS デバイスは、Apple から提供される Device Enrollment Program (DEP) ツールから直接登録できます。 IMEI 番号を持つデバイスも、会社所有として識別して、タグを付けることができます。
 
-### <a name="dem"></a>DEM
+### <a name="device-enrollment-manager"></a>デバイス登録マネージャー
 デバイス登録マネージャー (DEM) は、複数の会社所有のデバイスを登録して管理するために使用される特別なユーザー アカウントです。 作成後は、マネージャーがポータル サイトをインストールし、多数のユーザーがいないデバイスを登録できます。 DEM の詳細については[ここ](./device-enrollment-manager-enroll.md)を参照してください。
 
-### <a name="dep"></a>DEP
+### <a name="apple-device-enrollment-program"></a>Apple Device Enrollment Program
 Apple Device Enrollment Program (DEP) 管理では、ポリシーを作成し、DEP で購入および管理されている iOS デバイスに "無線で" 展開できます。 ユーザーが初めてデバイスの電源を入れて iOS Setup Assistant を実行した際に、デバイスが登録されます。 この方法は、iOS 監視対象モードをサポートしているため、特定の機能でデバイスを構成することができます。
 
 iOS DEP 登録の詳細については、以下をご覧ください。
