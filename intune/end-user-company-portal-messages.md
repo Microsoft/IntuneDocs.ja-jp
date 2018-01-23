@@ -11,13 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
-ms.openlocfilehash: f1a5c8a15007a38942fe543e6c1062bf957a481c
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 30dafbed7c42895b958ac1b3aa7ebcec63153381
+ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>ポータル サイト アプリで表示されるメッセージに関してエンド ユーザーをサポートする
 
@@ -89,7 +89,7 @@ ms.lasthandoff: 09/15/2017
 ### <a name="what-happens-if-users-deny-access"></a>ユーザーがアクセスを拒否した場合の動作
 ユーザーがアクセスを拒否した場合、ユーザーは引き続きデータ ログを電子メールで送信できますが、ログはデバイスの SD カードにコピーされません。
 
-アクセスを拒否すると、ユーザーがポータル サイト アプリに 2 回目にサインインしたときに、メッセージに **[今後このメッセージを表示しない]** チェック ボックスが表示されます。ユーザーはこれを選ぶことによって、メッセージが再び表示されないようにできます。 ユーザーがアクセスを許可し、その後アクセスを拒否した場合は、次回ユーザーがログを送信しようとすると、メッセージが表示されます。 後でアクセスを許可する場合は、**[設定]** >  **[アプリ]** >  **[ポータル サイト]** > **[アクセス許可]** > **[ストレージ]** に移動して、アクセス許可を有効にします。
+アクセスを拒否すると、ユーザーがポータル サイト アプリに 2 回目にサインインしたときに、メッセージに **[今後このメッセージを表示しない]** チェック ボックスが表示されます。ユーザーはこれを選ぶことによって、メッセージが再び表示されないようにできます。 ユーザーがアクセスを許可し、その後アクセスを拒否した場合は、次回ユーザーがログを送信しようとすると、メッセージが表示されます。 後でアクセスを許可する場合は、**[設定]**  >  **[アプリ]**  >  **[ポータル サイト]**  >  **[アクセス許可]**  >  **[ストレージ]** に移動して、アクセス許可を有効にします。
 
 
 ### <a name="how-to-explain-this-to-your-users"></a>ユーザーへの説明方法
