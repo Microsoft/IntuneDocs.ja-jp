@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a691786ce2ee975086899844b285a91f676aa71f
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 1673fa1e9c580c1554537530341f87b1580e79eb
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために Android アプリを準備する
 
@@ -81,7 +81,7 @@ Android 用 Microsoft Intune アプリ ラッピング ツールを使用して�
 |プロパティ|説明|例|
 |-------------|--------------------|---------|
 |**-InputPath**&lt;String&gt;|ソースの Android アプリ (.apk) のパス。| |
-|**-OutputPath**&lt;String&gt;|出力先の Android のアプリへのパス。 InputPath と同じディレクトリ パスを指定した場合、パッケージ化は失敗します。| |
+ |**-OutputPath**&lt;String&gt;|出力先の Android のアプリへのパス。 InputPath と同じディレクトリ パスを指定した場合、パッケージ化は失敗します。| |
 |**-KeyStorePath**&lt;String&gt;|署名用の公開/秘密キーのペアを含むキーストア ファイルへのパス。|既定では、キーストア ファイルは "C:\Program Files (x86)\Java\jreX.X.X_XX\bin" に格納されます。 |
 |**-KeyStorePassword**&lt;SecureString&gt;|キーストアの暗号化を解除するために使用するパスワード。 Android では、すべてのアプリケーション パッケージ (.apk) に署名する必要があります。 Java キーツールを使用して KeyStorePassword を生成できます。 詳細については、こちらの Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) を参照してください。| |
 |**-KeyAlias**&lt;String&gt;|署名に使用するキーの名前。| |
@@ -115,7 +115,7 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 
 ## <a name="how-often-should-i-rewrap-my-android-application-with-the-intune-app-wrapping-tool"></a>どれくらいの頻度で自分の Android アプリケーションを Intune アプリ ラッピング ツールで再ラップする必要がありますか。
 アプリケーションを再ラップしなければならない主なシナリオは、次のとおりです。
-* アプリケーション自体で、新しいバージョンがリリースされた。
+* アプリケーション自体で、新しいバージョンがリリースされた。 以前のバージョンのアプリがラップされ、Intune コンソールにアップロードされた。
 * Android 用 Intune アプリ ラッピング ツールで新しいバージョンがリリースされ、主要なバグ修正、または新しい具体的な Intune アプリケーション保護ポリシー機能が有効になった。 これは、[Android 用 Microsoft Intune アプリ ラッピング ツール](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android)の GitHub リポジトリで 6 ～ 8 週間おきに発生します。
 
 再ラップの場合、次のようなベスト プラクティスがあります。 
@@ -144,6 +144,32 @@ Android では、Android デバイスにインストールするために、す�
 -   アプリケーションが信頼されたソースからのものであることを確認します。
 
 -   ラップされたアプリが格納されている出力ディレクトリをセキュリティで保護します。 出力にユーザー レベルのディレクトリを使用することを検討します。
+
+## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-wrapped-android-lob-app-and-enabling-adal-sso-optional"></a>自動 APP-WE サービス登録の場合にユーザー ログイン プロンプトを必須にする、ラップされた Android LOB アプリを使用するために Intune のアプリ保護ポリシーを必須にする、ADAL SSO を有効にする (省略可能)
+
+ここでは、自動 APP-WE サービス登録の場合にアプリの起動時にユーザー プロンプトを必須にする (このセクションでは、**既定の登録**と呼びます) 場合と、Intune で保護されたユーザーにのみラップされた Android LOB アプリの使用を許可する Intune アプリ保護ポリシーを必須にする場合のガイダンスを示します。 また、ラップされた Android LOB アプリで SSO を有効にする方法についても説明します。 
+
+> [!NOTE] 
+> **既定の登録**の利点には、デバイス上のアプリの APP-WE サービスからポリシーを取得する方法が簡単なことなどがあります。
+
+### <a name="general-requirements"></a>一般的な要件
+* Intune SDK チームから、アプリのアプリケーション ID が求められます。 アプリケーション ID は、[Azure Portal](https://portal.azure.com/) の **[すべてのアプリ]** の **[アプリケーション ID]** の列にあります。 Intune SDK チームに問い合わせるには、msintuneappsdk@microsoft.com に電子メールを送信することをお勧めします。
+     
+### <a name="working-with-the-intune-sdk"></a>Intune SDK の使用
+これらの手順は、エンド ユーザー デバイスで使用するために Intune アプリ保護ポリシーが必要なすべての Android および Xamarin アプリ向けです。
+
+1. [Android 用 Intune SDK ガイド](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)のセクションで定義されている手順を使用して ADAL を構成します。
+> [!NOTE] 
+> アプリに関連付けられている "クライアント ID" という用語は、アプリに関連付けられている Azure Portal の用語 "アプリケーション ID" と同じです。 
+* SSO を有効にするには、「ADAL の一般的な構成」の 2. が必要です。
+
+2. マニフェストに次の値を入力して、既定の登録を有効にします。```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+> [!NOTE] 
+> これは、アプリ内での唯一の MAM-WE 統合である必要があります。 MAMEnrollmentManager API を呼び出す他の試行がある場合、競合が発生する可能性があります。
+
+3. マニフェストに次の値を入力して、必要な MAM ポリシーを有効にします。```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+> [!NOTE] 
+> その結果、ユーザーの使用前に、デバイスにポータル サイトをダウンロードし、既定の登録フローを完了することを強制します。
 
 ### <a name="see-also"></a>関連項目
 - [Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](apps-prepare-mobile-application-management.md)

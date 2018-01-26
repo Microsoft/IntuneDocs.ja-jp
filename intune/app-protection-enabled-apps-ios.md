@@ -15,11 +15,11 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 44e96ba9fac5b95e6a508b7c2c314a49c04a6d30
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: a85207effabfb1f986ba3901051bd51886c5e7be
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点
 
@@ -41,7 +41,7 @@ ms.lasthandoff: 12/08/2017
 
 アプリ保護ポリシーはアプリがワーク コンテキストで使用されている場合にのみ適用されます。そのため、ワーク コンテキストとパーソナル コンテキストでは、アプリの動作に違いが見られることがあります。  
 
-複数の ID をサポートするアプリに対しては、Intune は、エンドユーザーがアプリをワーク コンテキストで使用している場合にのみアプリ保護ポリシーを適用します。  たとえば、エンドユーザーが職場のデータにアクセスすると、暗証番号 (PIN) を求めるプロンプトが表示されます。  **Outlook アプリ** の場合、エンドユーザーにはアプリの起動時に、暗証番号 (PIN) の入力を求めるプロンプトが表示されます。 **OneDrive アプリ** の場合は、エンドユーザーが作業アカウントを入力すると、同様のプロンプトが表示されます。  Microsoft **Word**、**PowerPoint*、**Excel** の場合は、エンドユーザーが会社の OneDrive for Business 拠点に保存されたドキュメントにアクセスすると、同様のプロンプトが表示されます。
+複数の ID をサポートするアプリに対しては、Intune は、エンドユーザーがアプリをワーク コンテキストで使用している場合にのみアプリ保護ポリシーを適用します。  たとえば、エンドユーザーが職場のデータにアクセスすると、暗証番号 (PIN) を求めるプロンプトが表示されます。  **Outlook アプリ** の場合、エンドユーザーにはアプリの起動時に、暗証番号 (PIN) の入力を求めるプロンプトが表示されます。 **OneDrive アプリ** の場合は、エンドユーザーが作業アカウントを入力すると、同様のプロンプトが表示されます。  Microsoft **Word**、**PowerPoint**、**Excel** の場合は、エンドユーザーが会社の OneDrive for Business 拠点に保存されたドキュメントにアクセスすると、同様のプロンプトが表示されます。
 ##  <a name="managing-user-accounts-on-the-device"></a>デバイスのユーザー アカウントの管理
 
 Intune では、アプリ保護ポリシーをデバイスごとに 1 つのユーザー アカウントのみに展開することがサポートされます。
@@ -63,7 +63,7 @@ iOS デバイスを使用している場合は、同じデバイスに 2 つ目�
 
 ![ブロック メッセージと、[はい] と [いいえ] オプショを表示しているダイアログ ボックスのスクリーンショット](./media/ios-switch-user.PNG)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](app-protection-enabled-apps-android.md)
 ### <a name="see-also"></a>関連項目
 [Microsoft Intune でのアプリ保護ポリシーの作成と展開](app-protection-policies.md)

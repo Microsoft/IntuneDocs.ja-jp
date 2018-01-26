@@ -6,20 +6,19 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 12/09/2017
+ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36c495767d41c83c1393d837a808961ed9868bed
-ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
+ms.openlocfilehash: 3082bd52460bc9bd852edb3b560e96fb718a71c3
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Intune で SCEP 証明書を構成して管理する
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -64,7 +63,7 @@ NDES サーバーは、[Azure AD アプリケーション プロキシ](https://
 |**サーバー認証証明書**|発行元 CA またはパブリック CA から要求されます。この SSL 証明書をインストールし NDES サーバーの IIS にバインドします。|
 |**信頼されたルート CA 証明書**|この証明書をルート CA またはルート CA を信頼するデバイスから **.cer** ファイルとしてエクスポートし、信頼された CA 証明書プロファイルを使用してデバイスに割り当てます。<br /><br />オペレーティング システムのプラットフォームごとに 1 つの信頼されたルート CA 証明書を使用し、作成する各信頼されたルート証明書プロファイルに関連付けます。<br /><br />必要に応じて、信頼されたルート CA 証明書を追加して使用できます。 ルート CA 証明書を追加する局面としては、Wi-Fi アクセス ポイント用のサーバー認証証明書に署名する CA の信頼性を担保する必要がある場合などが考えられます。|
 
-### <a name="accounts"></a>アカウント
+### <a name="accounts"></a>[アカウント]
 
 |名前|説明|
 |--------|-----------|
@@ -305,11 +304,11 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>証明書コネクタをダウンロードし、インストールして、構成するには
 ![ConnectorDownload](./media/certificates-download-connector.png)   
  
-1. Azure ポータルにサインインします。 
+1. Azure Portal にサインインします。 
 2. **[その他のサービス]**  >  **[監視 + 管理]**  >  **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 4. **[デバイス構成]** ブレードで **[証明機関]** を選択します。
-5. **[追加]** をクリックして、**[コネクタ ファイルのダウンロード]** を選択します。 インストールするサーバーからアクセスできる場所にダウンロードしたものを保存します。 
+5. **[追加]** をクリックして、**[Download Connector file]\(コネクタ ファイルのダウンロード\)** を選択します。 インストールするサーバーからアクセスできる場所にダウンロードしたものを保存します。 
 6.  ダウンロードが完了したら、ダウンロードしたインストーラー (**ndesconnectorssetup.exe**) を Windows Server 2012 R2 サーバーで実行します。 インストーラーは、NDES のポリシー モジュールと CRP Web サービスもインストールします。 (CRP Web サービス CertificateRegistrationSvc は IIS のアプリケーションとして実行されます)。
 
     > [!NOTE]
@@ -329,6 +328,9 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 5.  **証明書コネクタ** UI で:
 
     **[サインイン]** をクリックし、Intune サービス管理者の資格情報、またはグローバル管理アクセス許可を持つテナント管理者の資格情報を入力します。
+
+    > [!IMPORTANT]
+    > ユーザー アカウントに有効な Intune ライセンスが割り当てられている必要があります。 ユーザー アカウントに有効な Intune ライセンスがない場合、NDESConnectorUI.exe は失敗します。
 
     組織でプロキシ サーバーを使用していて、NDES サーバーがインターネットにアクセスするためにプロキシが必要な場合は、**[プロキシ サーバーを使用する]** をクリックし、接続するためのプロキシ サーバーの名前、ポート、およびアカウント資格情報を指定します。
 
@@ -350,7 +352,7 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 4. **[プロファイルを作成します]** ブレードで、SCEP 証明書プロファイルの**名前**と**説明**を入力します。
 5. **[プラットフォーム]** ドロップダウン リストで、この SCEP 証明書のデバイス プラットフォームを選択します。 現時点では、デバイスの制限設定に対応している次のいずれかのプラットフォームを選択できます。
     - **Android**
-    - **iOS**
+    - **Android**
     - **macOS**
     - **Windows Phone 8.1**
     - **Windows 8.1 以降**

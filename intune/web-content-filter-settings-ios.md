@@ -6,20 +6,19 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 12/03/2017
+ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 16aa0f3c-8977-4495-9fbe-ca30ad278c9e
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d0d8a6e198a58fc513645db68ae3a3ef84a3653
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 54202baa7871f38581f4828bb80213be0f88ef61
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>iOS デバイス用の Web コンテンツ フィルター設定
 
@@ -47,8 +46,11 @@ URL を指定しない場合、エンド ユーザーは、microsoft.com、micro
 ## <a name="configure-urls"></a>URL の構成
 
 1. **[Web コンテンツ フィルター]** ブレードで、必要に応じて次のいずれかの設定を選びます。
-    - **許可された URL** - **[Permitted URLs]**(許可された URL) ブレードで、許可する URL (Apple Web フィルターをバイパスする) を入力し、それぞれの後に Enter を押します。
-    - **ブロックされた URL** - **[Blocked URLs]**(ブロックされた URL) ブレードで、ブロックする URL を (Apple Web フィルター設定にかかわらず) 入力し、それぞれの後に Enter を押します。
+   - **許可された URL** - **[Permitted URLs]**(許可された URL) ブレードで、許可する URL (Apple Web フィルターをバイパスする) を入力し、それぞれの後に Enter を押します。
+     > [!NOTE]
+     > ここで指定する URL は、Apple Web フィルターの対象にしない URL です。 これらの URL は、許可されている Web サイトのみの一覧ではありません。 そのような Web サイトを指定する場合は、**[特定の Web サイトのみ]** を使用します。
+
+   - **ブロックされた URL** - **[Blocked URLs]**(ブロックされた URL) ブレードで、ブロックする URL を (Apple Web フィルター設定にかかわらず) 入力し、それぞれの後に Enter を押します。
 2. 操作が完了したら、 **[OK]**をクリックします。
 
 
