@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 06/21/2017
+ms.date: 01/17/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99af53b3b22d0ed0196ee3dcd7af91a972f1f0be
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 87a921d02b4564a30d6bab0009b82d29a5252680
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Intune でのロール ベースの管理制御 (RBAC)
 
@@ -61,6 +61,18 @@ Intune には次のロールが組み込まれており、追加の構成なし�
 - **ポリシーおよびプロファイル マネージャー**: コンプライアンス ポリシー、構成プロファイル、Apple の登録、企業デバイスの識別子を管理します。
 - **読み取り専用オペレーター**: ユーザー、デバイス、登録、構成、アプリケーション情報を表示します。 Intune に変更を加えることはできません。
 - **アプリケーション マネージャー**: モバイルと管理対象アプリケーションを管理し、デバイス情報を読み取ることができます。
+- **学校管理者**: [Intune for Education](introduction-intune-education.md) で Windows 10 デバイスを管理し、次の操作を実行できます。 
+
+|アクセス許可|操作|
+|---|---|
+|監査データ|読み取り|
+|DeviceConfigurations|割り当て、作成、削除、読み取り、更新|
+|デバイス登録マネージャー|読み取り、更新|
+|管理されたデバイス|読み取り、更新<!--, Delete [To be added in 1803]-->|
+|モバイル アプリ|割り当て、作成、削除、読み取り、更新|
+|Reports|読み取り|
+|リモート操作|PC のクリーンアップ、再起動、リモート ロック、インベントリからの削除、デバイスの同期、ワイプ|
+|組織|読み取り|
 
 ### <a name="to-assign-a-built-in-role"></a>組み込みロールを割り当てるには
 

@@ -6,20 +6,20 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
-ms.reviewer: 
+ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f14120bc6141853177559d4561ea2da866088fb2
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 64073cb53478b1bf2373426426e0a5d414ca40c4
+ms.sourcegitcommit: 967a7c23b863123398c40b812e2eb02c921a0afe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/18/2018
 ---
 # <a name="use-windows-hello-for-business"></a>Windows Hello for Business を使用する
 
@@ -52,7 +52,7 @@ Intune と Hello for Business の統合には 2 通りの方法があります�
 
 1.  Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 
-2.  [Intune] ブレードで **[デバイスの登録]** を選択してから、**[管理]** > **[Windows Hello for Business]** の順に選択します。
+2.  [Intune] ブレードで **[Endpoint Protection]** を選択してから、**[管理]** > **[Windows Hello for Business]** の順に選択します。
 
 3.  開いたブレードで、**[既定]** 設定を選択します。
 
@@ -76,7 +76,7 @@ Intune と Hello for Business の統合には 2 通りの方法があります�
  - **[PIN での小文字の使用を必要とする]**/**[PIN での大文字の使用を必要とする]**/**[Require special characters in PIN]** (PIN での特殊文字の使用を必要とする)。 大文字、小文字、特殊文字を PIN で使用するように要求することで、PIN をより強力にすることができます。 次の中から選択します。
 
      - **[許可]**。 ユーザーは PIN で文字を使用できますが、使用は必須ではありません。
-    
+
      - **[必須]**。 ユーザーは PIN に文字を 1 文字以上含める必要があります。 たとえば、一般的なのは、少なくとも 1 つの大文字と 1 つの特殊文字の使用を要求する方法です。
 
      - **[許可しない]** (既定)。 ユーザーは、これらの文字を PIN で使用することができません  (これは、この設定を構成していない場合の動作でもあります)。<br>特殊文字には次のものが含まれます。**! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**

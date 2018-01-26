@@ -5,20 +5,20 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 12/12/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
-ms.reviewer: oldang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 05d60bfea2058e3360c350d227b0031b6b620913
-ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
+ms.openlocfilehash: dc031b12ed49766c70a6a4ff373a7c5843ca21ad
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために iOS アプリを準備する
 
@@ -53,7 +53,6 @@ iOS 用 Microsoft Intune アプリ ラッピング ツールを使用すれば�
   * 入力アプリを Intune アプリ ラッピング ツールで処理する前に、権限を設定する必要があります。 [権限](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html)によって、アプリに通常よりも多くのアクセス許可や機能が付与されます。 手順については、「[アプリ権限の設定](#setting-app-entitlements)」を参照してください。
 
 ## <a name="apple-developer-prerequisites-for-the-app-wrapping-tool"></a>アプリ ラッピング ツールの Apple Developer の前提条件
-
 
 ラップされたアプリを組織のユーザーだけに配布するには、[Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/) のアカウントと、自分の Apple Developer アカウントとリンクしたアプリ署名のいくつかのエンティティが必要です。
 
@@ -204,8 +203,8 @@ macOS ターミナル プログラムを開き、アプリ ラッピング ツ�
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|アプリ ラッピング ツールに使用できるコマンド ライン プロパティの詳細な使用情報を表示します。|
 |**-v**|(省略可能) 詳細なメッセージをコンソールに出力します。 このフラグを使用してすべてのエラーをデバッグすることをお勧めします。|
-|**-e**| (省略可能) このフラグを使用すると、アプリ ラッピング ツールが、アプリを処理する際に不足している権利を削除します。 詳しくは、「アプリ権限の設定」を参照してください。|
-|**-xe**| (省略可能) アプリの iOS 拡張機能に関する情報、およびそれを使用するために必要な権利を出力します。 詳しくは、「アプリ権限の設定」を参照してください。 |
+|**-e**| (省略可能) このフラグを使用すると、アプリ ラッピング ツールが、アプリを処理する際に不足している権利を削除します。 詳細については、「[アプリ権利の設定](#setting-app-entitlements)」を参照してください。|
+|**-xe**| (省略可能) アプリの iOS 拡張機能に関する情報、およびそれを使用するために必要な権利を出力します。 詳細については、「[アプリ権利の設定](#setting-app-entitlements)」を参照してください。 |
 |**-x**| (省略可能)`<An array of paths to extension provisioning profiles>`。 これは、アプリが拡張機能のプロビジョニング プロファイルを必要とする場合に使用します。|
 |**-f**|(省略可能) `<Path to a plist file specifying arguments.>` このフラグは plist テンプレートを使用して -i、-o、-p といった残りの IntuneMAMPackager プロパティを指定する場合に、[plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) ファイルの前に使用します。 「plist を使用して引数を入力する」を参照してください。 |
 |**-b**|(省略可能) ラッピングされた出力アプリに入力アプリと同じバンドル バージョンが含まれるようにする場合、-b を引数なしで使用します (推奨しません)。 <br/><br/> ラッピングされたアプリにカスタム CFBundleVersion が含まれるようにするには、`-b <custom bundle version>`を使用します。 カスタム CFBundleVersion を指定する場合、たとえば最下位のコンポーネントから、ネイティブ アプリの CFBundleVersion をインクリメントすることをお勧めします (例: 1.0.0 -> 1.0.1)。 |
@@ -244,6 +243,16 @@ macOS ターミナル プログラムを開き、アプリ ラッピング ツ�
 > 古い (ラッピング済みまたはネイティブ) バージョンが既に Intune に展開されている場合、ラッピングされたアプリをアップロードするときに、古いバージョンのアプリの更新を試行することができます。 エラーが発生した場合は、アプリを新しいアプリとしてアップロードし、古いバージョンを削除します。
 
 これで、アプリをユーザー グループに展開し、そのアプリをアプリ保護ポリシーの対象にすることができます。 アプリは、指定したアプリ保護ポリシーを使用して、デバイスで実行されます。
+
+## <a name="how-often-should-i-rewrap-my-ios-application-with-the-intune-app-wrapping-tool"></a>どれくらいの頻度で自分の iOS アプリケーションを Intune アプリ ラッピング ツールで再ラップする必要がありますか。
+アプリケーションを再ラップしなければならない主なシナリオは、次のとおりです。
+* アプリケーション自体で、新しいバージョンがリリースされた。 以前のバージョンのアプリがラップされ、Intune コンソールにアップロードされた。
+* iOS 用 Intune アプリ ラッピング ツールで新しいバージョンがリリースされ、主要なバグ修正、または新しい具体的な Intune アプリケーション保護ポリシー機能が有効になった。 これは、[iOS 用 Microsoft Intune アプリ ラッピング ツール](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)の GitHub リポジトリで 6 ～ 8 週間後に行われます。
+
+iOS では、アプリへの署名に元々使用されたものとは異なる証明書/プロビジョニング プロファイルでラップすることができますが、アプリで指定された資格が新しいプロビジョニング プロファイルに含まれていないと、ラップは失敗します。 このシナリオで強制的にラッピングが失敗しないように、アプリから不足している資格を削除する "-e" コマンドライン オプションを使用すると、アプリの機能が損なわれる可能性があります。
+
+再ラップの場合、次のようなベスト プラクティスがあります。
+* 別のプロビジョニング プロファイルが、以前のプロビジョニング プロファイルと同じ必須の資格を持っていることを確認します。 
 
 ## <a name="error-messages-and-log-files"></a>エラー メッセージとログ ファイル
 アプリ ラッピング ツールに関する問題を解決するには、次の情報を参照してください。

@@ -5,7 +5,7 @@ keywords: SDK
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/28/2017
+ms.date: 01/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7bb78d05f9225c681c5b8a3bb6f1fcee4581a0de
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: c3c6c82dcec8d85d0748d5966f6898f219b620d7
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android 用 Microsoft Intune アプリ SDK 開発者ガイド
 
 > [!NOTE]
 > まず、[Intune アプリ SDK の概要](app-sdk.md)に目を通すことをお勧めします。このガイドでは、SDK の最新機能と、サポートされる各プラットフォームで統合のための準備をする方法について説明しています。
 
-Android 用 Microsoft Intune アプリ SDK を使用すると、ネイティブ Android アプリに Intune アプリ保護ポリシー (**APP** または MAM ポリシー) を組み込むことができます。 Intune 対応アプリケーションが Intune App SDK に統合されています。 Intune で積極的にアプリを管理している場合、IT 管理者は Intune 対応アプリにアプリ保護ポリシーを簡単に展開できます。
+Android 用 Microsoft Intune アプリ SDK を使用すると、ネイティブ Android アプリに Intune アプリ保護ポリシー (**APP** または MAM ポリシー) を組み込むことができます。 Intune の管理対象アプリケーションは、Intune App SDK に統合されています。 Intune で積極的にアプリを管理している場合、Intune 管理者は Intune の管理対象アプリにアプリ保護ポリシーを簡単に展開できます。
 
 
 ## <a name="whats-in-the-sdk"></a>SDK の機能
@@ -55,7 +55,7 @@ Intune アプリ SDK は、コンパイル済みの Android プロジェクト�
 Android 用の Intune アプリ SDK でアプリ保護ポリシーを有効にするには、デバイスに[ポータル サイト](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) アプリが存在する必要があります。 ポータル サイトは、Intune サービスからアプリ保護ポリシーを取得します。 アプリが初期化されるときに、ポータル サイトからポリシーとコードを読み込み、そのポリシーを適用します。
 
 > [!NOTE]
-> ポータル サイト アプリがデバイス上にない場合は、Intune 対応アプリが Intune アプリ保護ポリシーをサポートしていない通常のアプリケーションと同様に動作します。
+> ポータル サイト アプリがデバイス上にない場合は、Intune の管理対象アプリが Intune アプリ保護ポリシーをサポートしていない通常のアプリと同様に動作します。
 
 デバイス登録が不要なアプリ保護の場合は、ユーザーがポータル サイト アプリを使用してデバイスを登録する必要は_**ありません**_。
 
@@ -875,7 +875,7 @@ ID を設定するために使用されるすべてのメソッドは、`MAMIden
 
 ### <a name="implicit-identity-changes"></a>暗黙的な ID 変更
 
-アプリで ID を設定できるだけでなく、スレッドまたはコンテキストの ID は、アプリ保護ポリシーが適用されている別の Intune 対応アプリからのデータに基づいて変更できます。
+アプリで ID を設定できるだけでなく、スレッドまたはコンテキストの ID は、アプリ保護ポリシーが適用されている別の Intune の管理対象アプリのデータに基づいて変更できます。
 
 #### <a name="examples"></a>例
 
@@ -947,7 +947,7 @@ ID を設定するために使用されるすべてのメソッドは、`MAMIden
 UI スレッドに対する操作は、バック グラウンド タスクを別のスレッドにディスパッチするのが一般的です。 マルチ ID アプリでは、このようなバック グラウンド タスクが適切な ID で動作していることを確認する必要があります。多くの場合は、バック グラウンド タスクをディスパッチしたアクティビティで使用される ID と同じものになります。 MAM SDK では、ID を保持するのに便利な機能として `MAMAsyncTask` と `MAMIdentityExecutors` を提供しています。
 #### <a name="mamasynctask"></a>MAMAsyncTask
 
-`MAMAsyncTask` を使用するには、AsyncTask ではなく MAMAsyncTask を継承し、`doInBackground` の上書きを `doInBackgroundMAM` に、`onPreExecute` の上書きを `onPreExecuteMAM` に置換するだけです。 `MAMAsyncTask` コンストラクターは、アクティビティ コンテキストを取ります。 たとえば、
+`MAMAsyncTask` を使用するには、AsyncTask ではなく MAMAsyncTask を継承し、`doInBackground` の上書きを `doInBackgroundMAM` に、`onPreExecute` の上書きを `onPreExecuteMAM` に置換するだけです。 `MAMAsyncTask` コンストラクターは、アクティビティ コンテキストを取ります。 次に例を示します。
 
 ```java
   AsyncTask<Object, Object, Object> task = new MAMAsyncTask<Object, Object, Object>(thisActivity) {
@@ -1353,6 +1353,32 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
 | アクセント カラー | 強調表示したときの PIN ボックスの枠線 <br> ハイパーリンク |accent_color | 色 |
 | アプリのロゴ | Intune アプリの PIN 画面に表示される大きなアイコン | logo_image | Drawable |
 
+## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-sdk-integrated-android-lob-app-and-enabling-adal-sso-optional"></a>自動 APP-WE サービス登録の場合にユーザー ログイン プロンプトを必須にする、SDK に統合された Android LOB アプリを使用するために Intune のアプリ保護ポリシーを必須にする、ADAL SSO を有効にする (省略可能)
+
+ここでは、自動 APP-WE サービス登録の場合にアプリの起動時にユーザー プロンプトを必須にする (このセクションでは、**既定の登録**と呼びます) 場合と、Intune で保護されたユーザーにのみ SDK に統合された Android LOB アプリの使用を許可する Intune アプリ保護ポリシーを必須にする場合のガイダンスを示します。 また、SDK に統合された Android LOB アプリで SSO を有効にする方法についても説明します。 Intune 以外のユーザーが使用できるストア アプリでは、この方法は**サポートされません**。
+
+> [!NOTE] 
+> **既定の登録**の利点には、デバイス上のアプリの APP-WE サービスからポリシーを取得する方法が簡単なことなどがあります。
+
+### <a name="general-requirements"></a>一般的な要件
+* Intune SDK チームから、アプリのアプリケーション ID が求められます。 アプリケーション ID は、[Azure Portal](https://portal.azure.com/) の **[すべてのアプリ]** の **[アプリケーション ID]** の列にあります。 Intune SDK チームに問い合わせるには、msintuneappsdk@microsoft.com に電子メールを送信することをお勧めします。
+     
+### <a name="working-with-the-intune-sdk"></a>Intune SDK の使用
+これらの手順は、エンド ユーザー デバイスで使用するために Intune アプリ保護ポリシーが必要なすべての Android および Xamarin アプリ向けです。
+
+1. [Android 用 Intune SDK ガイド](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)のセクションで定義されている手順を使用して ADAL を構成します。
+> [!NOTE] 
+> アプリに関連付けられている "クライアント ID" という用語は、Azure Portal の用語 "アプリケーション ID" と同じです。 
+* SSO を有効にするには、「ADAL の一般的な構成」の 2. が必要です。
+
+2. マニフェストに次の値を入力して、既定の登録を有効にします。```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+> [!NOTE] 
+> これは、アプリ内での唯一の MAM-WE 統合である必要があります。 MAMEnrollmentManager API を呼び出す他の試行がある場合、競合が発生する可能性があります。
+
+3. マニフェストに次の値を入力して、必要な MAM ポリシーを有効にします。```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+> [!NOTE] 
+> その結果、ユーザーの使用前に、デバイスにポータル サイトをダウンロードし、既定の登録フローを完了することを強制します。
+
 ## <a name="limitations"></a>制限事項
 
 ### <a name="file-size-limitations"></a>ファイル サイズの制限
@@ -1380,7 +1406,7 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
     
 ### <a name="exported-services"></a>エクスポートされたサービス
 
- Intune アプリ SDK に含まれる AndroidManifest.xml ファイルには **MAMNotificationReceiverService** が含まれます。これは、ポータル サイト アプリから対応のアプリに通知を送信できるようにする、エクスポートされたサービスである必要があります。 このサービスでは、ポータル サイト アプリのみが通知の送信を許可されるように、呼び出し元を確認します。
+ Intune アプリ SDK に含まれる AndroidManifest.xml ファイルには **MAMNotificationReceiverService** が含まれます。これは、ポータル サイト アプリから管理対象アプリに通知を送信できるようにする、エクスポートされたサービスである必要があります。 このサービスでは、ポータル サイト アプリのみが通知の送信を許可されるように、呼び出し元を確認します。
 
 ### <a name="reflection-limitations"></a>リフレクションの制限事項
 MAM の基底クラス (MAMActivity、MAMDocumentsProvider など) の一部には、特定の API レベルより上にあるパラメーターまたは戻り値の型のみを使用するメソッド (Android の元の基底クラスに基づく) が含まれています。 このため、リフレクションを使用して、常にアプリ コンポーネントのすべてのメソッドを列挙できるとは限りません。 この制限は MAM に限定されるものではなく、アプリ自体が、Android 基底クラスからのこのようなメソッドを実装する場合にも同じ制限が適用されます。

@@ -1,6 +1,6 @@
 ---
-title: "Azure AD を使用して Intune Graph API にアクセスする方法"
-description: "アプリで Azure AD を使用して Intune Graph API にアクセスするために必要な手順について説明します"
+title: "Azure AD を使用して Microsoft Graph の Intune API にアクセスする方法"
+description: "アプリで Azure AD を使用して Microsoft Graph の Intune API にアクセスするために必要な手順について説明します。"
 keywords: "intune graphapi c# powershell アクセス許可の役割"
 author: vhorne
 manager: angrobe
@@ -13,20 +13,20 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 351a066c8852125b6fbf26c039dd3718b63f8980
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 6637d7269f7620dc348b80533661afac8f12e0ba
+ms.sourcegitcommit: d6dc1211e9128c2e0608542b72d1caa4d6ba691d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/17/2018
 ---
-# <a name="how-to-use-azure-ad-to-access-the-intune-graph-api"></a>Azure AD を使用して Intune Graph API にアクセスする方法
+# <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD を使用して Microsoft Graph の Intune API にアクセスする方法
 
-[Microsoft Graph API](https://developer.microsoft.com/graph/) が Microsoft Intune に対応し、固有の API とアクセス許可の役割を利用できるようになりました。  Graph API は、認証とアクセスの制御に Azure Active Directory (Azure AD) を使用します。  
-Intune Graph API へのアクセスには以下が必要です。
+[Microsoft Graph API](https://developer.microsoft.com/graph/) が Microsoft Intune に対応し、固有の API とアクセス許可の役割を利用できるようになりました。  Microsoft Graph API は、認証とアクセスの制御に Azure Active Directory (Azure AD) を使用します。  
+Microsoft Graph の Intune API へのアクセスには、以下のものが必要です。
 
 - アプリケーション ID と、
 
-    - Azure AD および Graph API を呼び出すアクセス許可。
+    - Azure AD および Microsoft Graph API を呼び出すアクセス許可。
     - 特定のアプリケーション タスクに関連したアクセス許可スコープ。
 
 - ユーザー資格情報と、
@@ -38,11 +38,11 @@ Intune Graph API へのアクセスには以下が必要です。
 
 この記事の内容:
 
-- Graph API と関連するアクセス許可の役割にアクセスできるアプリケーションを登録する方法について説明します。
+- Microsoft Graph API と関連するアクセス許可の役割にアクセスできるアプリケーションを登録する方法を示します。
 
-- Intune Graph API のアクセス許可の役割について説明します。
+- Intune API のアクセス許可の役割について説明します。
 
-- C# および PowerShell の Intune Graph API 認証例を提供します。
+- C# および PowerShell の Intune API 認証例を提供します。
 
 - 複数のテナントをサポートする方法について説明します。
 
@@ -53,9 +53,9 @@ Intune Graph API へのアクセスには以下が必要です。
 - [Azure Active Directory とアプリケーションの統合](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 - [OAuth 2.0 について知る](https://oauth.net/2/)
 
-## <a name="register-apps-to-use-graph-api"></a>Graph API を使用するアプリを登録する
+## <a name="register-apps-to-use-the-microsoft-graph-api"></a>Microsoft Graph API を使用するアプリを登録する
 
-Graph API を使用するアプリを登録するには、次の作業を行います。
+Microsoft Graph API を使用するアプリを登録するには、次の作業を行います。
 
 1.  管理者資格情報を使って、[Azure Portal](https://portal.azure.com) にサインインします。
 
@@ -127,15 +127,15 @@ Graph API を使用するアプリを登録するには、次の作業を行い�
 
 ## <a name="intune-permission-scopes"></a>Intune のアクセス許可スコープ
 
-Azure AD と Graph API では、アクセス許可スコープを使用して企業リソースへのアクセスを制御します。  
+Azure AD と Microsoft Graph では、アクセス許可スコープを使用して企業リソースへのアクセスを制御します。  
 
-アクセス許可スコープ (_OAuth スコープ_とも呼ばれます) は、特定の Intune エンティティとそのプロパティへのアクセスを制御します。 このセクションでは、Intune Graph API の機能に対するアクセス許可スコープの概要について説明します。
+アクセス許可スコープ (_OAuth スコープ_とも呼ばれます) は、特定の Intune エンティティとそのプロパティへのアクセスを制御します。 このセクションでは、Intune API の機能に対するアクセス許可スコープの概要について説明します。
 
 詳細については、次をご覧ください。
 - [Azure AD 認証](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
 - [アプリケーションのアクセス許可スコープ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
-Graph API へのアクセス許可を付与する場合は、次のスコープを指定して Intune の機能へのアクセスを制御できます。次の表に、Intune Graph API のアクセス許可スコープをまとめています。  1 番目の列には Azure Portal に表示される機能名を示し、2 番目の列にはアクセス許可スコープ名を掲載しています。
+Microsoft Graph へのアクセス許可を付与する場合は、次のスコープを指定して Intune の機能へのアクセスを制御できます。次の表に、Intune API のアクセス許可スコープをまとめています。  1 番目の列には Azure Portal に表示される機能名を示し、2 番目の列にはアクセス許可スコープ名を掲載しています。
 
 _[アクセスを有効にする]_ 設定 | スコープ名
 :--|:--
@@ -153,7 +153,7 @@ __Microsoft Intune の構成の読み取り__ | [DeviceManagementServiceConfig.R
 
 表は、Azure Portal に表示される順序で設定を一覧表示しています。 次のセクションでは、スコープについてアルファベット順に説明します。
 
-この時点では、Intune のすべてのアクセス許可スコープに管理者のアクセス権が必要です。  つまり、Intune Graph API のリソースにアクセスするアプリまたはスクリプトを実行する場合は、対応する資格情報が必要になります。
+この時点では、Intune のすべてのアクセス許可スコープに管理者のアクセス権が必要です。  つまり、Intune API のリソースにアクセスするアプリまたはスクリプトを実行する場合は、対応する資格情報が必要になります。
 
 ### <a name="app-ro"></a>DeviceManagementApps.Read.All
 
@@ -319,7 +319,7 @@ __Microsoft Intune の構成の読み取り__ | [DeviceManagementServiceConfig.R
 
 この場合は、次の点を確認します。
 
-- Graph API とアクセス許可スコープ `DeviceManagementManagedDevices.Read.All` の使用が承認されたアプリケーション ID に更新している。
+- Microsoft Graph API と `DeviceManagementManagedDevices.Read.All` アクセス許可スコープの使用が承認されたアプリケーション ID に更新している。
 
 - テナントの資格情報は、管理機能をサポートしている。
 
@@ -557,7 +557,7 @@ catch {
 
     そのためには、次のいずれかを実行します。
 
-    a. [Microsoft Partner Center](https://partnercenter.microsoft.com/) を使用して、クライアントとそのメール アドレスのリレーションシップを定義します。
+    」を参照します。 [Microsoft Partner Center](https://partnercenter.microsoft.com/) を使用して、クライアントとそのメール アドレスのリレーションシップを定義します。
 
     b. ユーザーを招待して、テナントのゲストにします。
 

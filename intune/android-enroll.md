@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7877d0bb6ba7a9c9d51cd261a7f1fbf555f88961
-ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
+ms.openlocfilehash: 632a5b2a5f6f5188ef034bdcff927af6a7fe1a59
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="enroll-android-devices"></a>Android デバイスの登録
 
@@ -58,7 +58,7 @@ Android デバイスをブロックする場合や、個人所有の Android デ
    ![Android for Work バインディングを構成するためのリンクを示すスクリーンショット](./media/android-work-bind.png)
 
    b. **Google にサインインする**<br>
-   Google のサインイン ページで、このテナントのすべての Android for Work 管理タスクに関連付ける Google アカウントを入力します。 これは、会社の IT 管理者が Play for Work コンソールでアプリを管理および公開するときに共有する Google アカウントです。
+   Google のサインイン ページで、このテナントのすべての Android for Work 管理タスクに関連付ける Google アカウントを入力します。 これは、会社の IT 管理者が Play for Work コンソールでアプリを管理および公開するときに共有する Google アカウントです。 既存の Google アカウントを使用するか、新しい Google アカウントを作成できます。  選択したアカウントを G-Suite ドメインと関連付けることはできません。
 
    c. **組織の詳細を指定する**<br>
    **[組織名]** に会社名を入力します。 **エンタープライズ モビリティ管理 (EMM) プロバイダー**の場合、**Microsoft Intune** と表示されます。 Android for Work の使用条件に同意し、**[確認]** を選択します。 要求が処理されます。
