@@ -4,7 +4,7 @@ description: "この記事では、Intune 移行中にアプリ保護ポリシ�
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 93cda587-bf56-4d41-b123-9fe203fad788
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: c58ce51731b476cfca71851430297aff3edc5cd6
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: d3c176b84a8555de245a1f4014c39885e50ab21d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="configure-app-protection-policies-optional"></a>アプリ保護ポリシーを構成する (省略可能)
 
@@ -51,6 +51,6 @@ Intune では移行中の企業データの保護が提供されるため、デ�
 2. [ポリシーの展開](app-protection-policies.md#deploy-a-policy-to-users)
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [特殊な移行に関する考慮事項](migration-guide-considerations.md)

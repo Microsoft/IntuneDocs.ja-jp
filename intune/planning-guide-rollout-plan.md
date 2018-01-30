@@ -4,7 +4,7 @@ description: "この記事では、Intune にロールアウトするグルー�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 3a63f78f-a7e7-4f44-9288-16b28d5d58ca
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6edb71b7d97ac3c20b4207d2cac42669ac35c4c0
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: cea27825261b05da6ce5157c2738a5be3a256cfe
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="develop-a-rollout-plan"></a>ロールアウト計画を作成する
 
@@ -102,6 +102,6 @@ Intune のユーザー登録のもう 1 つの選択肢は、IT 技術説明会�
 | セルフサービス |  |  |  | 人事、財務 |
 | ホワイト グローブ |  |  |  | 役員 |
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 次のセクションは、[Intune ロールアウトの情報伝達計画を立てる](planning-guide-communication-plan.md)場合のガイダンスです。

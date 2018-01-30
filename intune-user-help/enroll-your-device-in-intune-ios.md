@@ -4,23 +4,24 @@ description: "iOS デバイスを Intune で管理する方法について説明
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7e1ff77fef9e084000938022fb36217b21279c28
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: fa96b26e526e5eca1606dbd2444ee7ebeb2d0d43
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="set-up-access-to-your-company-resources"></a>会社のリソースへのアクセスを設定する
 
@@ -31,7 +32,7 @@ ms.lasthandoff: 12/12/2017
 > [!NOTE]
 > メール アプリで会社の電子メールにアクセスしようとしている場合は、セキュリティを保つためにデバイスの管理を求められる可能性があります。 iOS デバイスから電子メールやその他の会社リソースにアクセスするには、以下の手順に従います。
 
-## <a name="before-you-start"></a>アップグレードを開始する前に
+## <a name="before-you-start"></a>開始する前に
 
 - 開始したら、プロセス全体を完了するようにしてください。 通常、数分以上一時停止すると進行状況が停止し、やり直しが必要になります。
 - このプロセスが失敗した場合は、ポータル サイト アプリに戻り、やり直す必要があります。

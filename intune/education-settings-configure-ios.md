@@ -5,7 +5,7 @@ description: "iOS デバイスの Classroom アプリの設定を制御するた
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f31ad2226052b4a681bc79e366e7d1def01c3cc4
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: f7bbf0ab4196f5e86d7f25aa23f12d89f1bb5ee5
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>iOS Classroom アプリの Intune 設定を構成する方法
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 09/15/2017
 
 Intune iOS **Education** デバイス プロファイルとこのトピックの情報を利用し、Classroom アプリやそれを使用するデバイスを設定できます。
 
-## <a name="before-you-start"></a>アップグレードを開始する前に
+## <a name="before-you-start"></a>開始する前に
 
 以上の設定を構成する前に、次の事項について検討してください。
 
@@ -72,7 +72,7 @@ SDS は SIS の情報を同期し、それを Azure AD に保管します。 Azu
 
 ### <a name="configure-general-settings"></a>全般的な設定を構成する
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3.  **[Intune]** ブレードで、**[デバイスの構成]** を選択します。
 4.  **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
@@ -146,7 +146,7 @@ iOS 教育プロファイルは、PFX 証明書のみをサポートします。
 
 学校データと Azure AD を同期したときに作成された教室グループの生徒用デバイスにプロファイルを割り当てます (「[デバイス プロファイルを割り当てる方法](device-profile-assign.md)」参照)。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 これで、教師が Classroom アプリを使用するとき、生徒のデバイスを完全に操作できます。
 

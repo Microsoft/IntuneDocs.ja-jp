@@ -4,7 +4,7 @@ description: "この記事では、Intune 移行中にデバイスのコンプ�
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: b75368bb8a1172444036b5bd695a4ec36cd9727c
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 96541c503a387e1a2ad3a4158f441266f1202be0
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="configure-device-compliance-and-app-management-policies"></a>デバイス コンプライアンス ポリシーとアプリ管理ポリシーを構成する
 
@@ -90,6 +90,6 @@ Intune MDM を使用する場合は、アプリの自動インストールを要
 
 デバイスを管理するには、デバイスを登録する必要があります。 企業所有およびユーザー個人のデバイスの登録を準備する方法については、[こちら](device-enrollment.md)を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [アプリ保護ポリシーを構成する (省略可能)](migration-guide-app-protection-policies.md)。

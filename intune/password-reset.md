@@ -3,7 +3,7 @@ title: "ヘルプ デスクのコストの削減"
 description: "セルフサービスのパスワード リセットでヘルプ デスクのコストを削減する"
 keywords: "Azure Active Directory SSPR パスワード リセット"
 author: arob98
-manager: angrobe
+manager: dougeby
 ms.date: 08/27/2017
 ms.topic: article
 ms.prod: 
@@ -12,11 +12,11 @@ ms.technology:
 ms.assetid: e018e31d-e524-4b41-8f47-399ab0ead6ca
 ms.reviewer: pchacon
 ms.suite: ems
-ms.openlocfilehash: 87d294fd873c680e950552eae82747bd59c784ec
-ms.sourcegitcommit: 3242b627c83072beaf57878234a16f1a04ddc8b4
+ms.openlocfilehash: 7d204f97f1d6e6aad55e5b7f1b53c8c751190b0f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>セルフサービスのパスワード リセットでヘルプ デスクのコストを削減する
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 08/28/2017
 3. 今後の参照のために、[パスワードのリセット方法や変更方法](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-update-your-own-password)を社員や学生に伝えます。
 4. [セルフサービスのパスワード リセットを有効にします](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 次のトピックについて学習します。
 * [パスワードのベスト プラクティス](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwordsd) 

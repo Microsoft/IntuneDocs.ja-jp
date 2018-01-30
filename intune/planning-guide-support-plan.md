@@ -4,7 +4,7 @@ description: "この記事では、Microsoft Intune 展開の Intune サポー�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: b9428769-4333-4778-b677-f23dea1f74da
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9ff8643e854f96f464a5a393bfd780f07ea74164
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 46172f4b47a5ffeb623cdb068b7e1c6f6c7f1795
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="develop-a-support-plan"></a>サポート計画を作成する
 
@@ -64,7 +64,7 @@ Intune サポート計画を用意すると、Intune 関連の問題をより効
 
 -   全体的なユーザー エクスペリエンスを改善する
 
-## <a name="how-you-plan-to-provide-intune-support-training"></a>Intune のサポート トレーニングの計画方法
+## <a name="how-you-plan-to-provide-intune-support-training"></a>Intune のサポート トレーニングはどのように計画しますか
 
 IT サポート/ヘルプデスク スタッフ向けに、適切なレベルで、各サポート階層とその責任内容に合わせた Intune 技術トレーニングを用意することが重要です。 Intune MDM チームがサポート リーダーに対してこのトレーニングを実施してから (トレーナーのトレーニング)、サポート リーダーがサポート チーム メンバーにトレーニングを実施する方法もあります。 このトレーニングの所要時間は、講義と演習を含めて一般的に 2 ～ 3 時間です。
 

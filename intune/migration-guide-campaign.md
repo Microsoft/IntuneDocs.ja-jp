@@ -4,7 +4,7 @@ description: "この記事では、移行キャンペーンの開始方法に関
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f781b029-50f2-46ee-8ff7-03b4a6719e80
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: a272d9c822a2c17592d7800c20278ce222d615bd
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: ae5e050c5222981ed7608bbf15a87a23c0bf6b04
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="phase-2-migration-campaign"></a>フェーズ 2: 移行のキャンペーン
 
@@ -64,6 +64,6 @@ ms.lasthandoff: 07/12/2017
 > [!IMPORTANT]
 > Exchange や SharePoint Online などのリソースへのアクセス制御を適用するために、Intune と既存のサードパーティ MDM ソリューションの両方を構成しないでください。 また、同時に複数のソリューションにデバイスを登録しないでください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [情報伝達計画](migration-guide-communication-plan.md)を作成します。

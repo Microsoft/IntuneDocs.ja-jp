@@ -5,7 +5,7 @@ description: "macOS デバイス用のコンプライアンス ポリシーの�
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3cf085ff2ee4668ea4c14718719c466bcb982b10
-ms.sourcegitcommit: d4623cbfe296ae370c3d88c3213fffbda255e474
+ms.openlocfilehash: 7eb36cc8de655766afabc60f33a316cb6ef3bfb8
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Intune で macOS デバイス用のデバイス コンプライアンス ポリシーを作成する
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 11/17/2017
 | **電子メールのプロファイル** | 検疫済み |
 |**最小 OS バージョン** | 検疫済み |
 | **最大 OS バージョン** | 検疫済み |  
-| **Windows 正常性構成証明書** | 該当なし |  
+| **Windows 正常性構成証明書** | 適用できません |  
 ----------------------------
 
 
@@ -144,6 +144,6 @@ Intune に準拠したデバイスを作成するときに、選択できるさ�
     > [!TIP]
     > 既定では、デバイスは 8 時間ごとにコンプライアンスを確認しますが、ユーザーは Intune の会社ポータル アプリを使用してこのプロセスを強制できます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Intune デバイスのコンプライアンス対応ポリシーを監視する方法](compliance-policy-monitor.md)

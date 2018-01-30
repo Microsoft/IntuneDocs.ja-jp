@@ -5,7 +5,7 @@ description: "Intune Certificate Connector をインストールし、Intune 管
 keywords: 
 author: MicrosoftGuyJFlo
 ms.author: joflore
-manager: angrobe
+manager: dougeby
 ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 31e48d84ec7044102575a6c49837330c139e993c
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 449eaf2a22ca3a700eda2385af05a56e406f0c15
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Intune Certificate Connector を Symantec PKI Manager Web サービス向けに設定する
 
@@ -54,7 +54,7 @@ Microsoft CA 用および Symantec CA 用に Intune Certificate Connector を使
 
 4. .NET Framework 3.5 をインストールします。
 
-    a. **[コントロール パネル]** > **[プログラムと機能]** > **[Windows の機能の有効化または無効化]** の順に選択します。
+    」を参照します。 **[コントロール パネル]** > **[プログラムと機能]** > **[Windows の機能の有効化または無効化]** の順に選択します。
 
     b. **[.NET Framework 3.5]** を選択してインストールします。
 
@@ -108,7 +108,7 @@ Microsoft CA 用および Symantec CA 用に Intune Certificate Connector を使
 
 4. Symantec CA にログオンし、[Tasks]\(タスク\) から **[Get an RA Cert]\(RA 証明書の取得\)** に移動します。
 
-   a. 表示されたテキスト ボックスにステップ 3 の CSR のコンテンツを入力します。
+   」を参照します。 表示されたテキスト ボックスにステップ 3 の CSR のコンテンツを入力します。
 
    b. 表示されたテキスト ボックスに証明書のフレンドリ名を入力します。
 
@@ -120,7 +120,7 @@ Microsoft CA 用および Symantec CA 用に Intune Certificate Connector を使
 
 5. Windows 証明書ストアに RA 証明書をインポートします。
 
-    a. MMC コンソールを開きます。
+    」を参照します。 MMC コンソールを開きます。
 
     b. **[ファイル]** > **[スナップインの追加と削除]** > **[証明書]** > **[追加]** の順にクリックします。
 
@@ -140,7 +140,7 @@ Microsoft CA 用および Symantec CA 用に Intune Certificate Connector を使
 
 6. 秘密キー証明書をエクスポートしインポートします。
 
-    a. **[証明書 (ローカル コンピューター)]** > **[個人]** > **[証明書]** の順に展開します。
+    」を参照します。 **[証明書 (ローカル コンピューター)]** > **[個人]** > **[証明書]** の順に展開します。
 
     b. 前のステップでインポートした証明書を選択します。
 
@@ -170,7 +170,7 @@ Microsoft CA 用および Symantec CA 用に Intune Certificate Connector を使
 2. **[Microsoft Intune]** > **[デバイス構成]** > **[証明機関]** > **[Certificate Connector のダウンロード]** リンクから NDESConnectorSetup.exe をダウンロードします。
 3. 管理特権で NDESConnectorSetup.exe を実行します。
 
-    a. **[インストール オプション]** 画面で、以下のスクリーン ショットのように **[PFX Distribution]\(PFX の配布\)** を選択します。  残りのセットアップを、既定の選択内容のままで完了します。
+    」を参照します。 **[インストール オプション]** 画面で、以下のスクリーン ショットのように **[PFX Distribution]\(PFX の配布\)** を選択します。  残りのセットアップを、既定の選択内容のままで完了します。
 
    > [!IMPORTANT]
    > Microsoft CA および Symantec CA から証明書を発行するように Intune Certificate Connector を構成する場合は、**[SCEP および PFX プロファイルの配布]** を選択します。 残りのセットアップを、既定の選択内容のままで完了します。
@@ -183,7 +183,7 @@ Microsoft CA 用および Symantec CA 用に Intune Certificate Connector を使
 
 1. メモ帳で %ProgramFiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config ファイルを開きます。
 
-    a. RACertThumbprint キーの値を、前のセクションでコピーした証明書のサムプリントで更新します。  次に例を示します。
+    」を参照します。 RACertThumbprint キーの値を、前のセクションでコピーした証明書のサムプリントで更新します。  次に例を示します。
 
    ```
    <add key="RACertThumbprint"
@@ -194,7 +194,7 @@ Microsoft CA 用および Symantec CA 用に Intune Certificate Connector を使
 
 2. services.msc を開きます。
 
-    a. **[Intune Connector Service]** を選択します。
+    」を参照します。 **[Intune Connector Service]** を選択します。
 
     b. サービスを停止し、その後開始します。
 
@@ -206,7 +206,7 @@ Microsoft CA 用および Symantec CA 用に Intune Certificate Connector を使
 
 1. ` %ProgramFiles%\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe ` で NDES Connector のユーザー インターフェイスを起動します。
 
-    a. **[登録]** タブをクリックし、**[サインイン]** をクリックします。
+    」を参照します。 **[登録]** タブをクリックし、**[サインイン]** をクリックします。
 
     b. 表示されたテキスト ボックスに、Intune のテナント管理者の資格情報を入力します。
 
@@ -221,7 +221,7 @@ Intune 管理対象デバイスに展開する PKCS 証明書は、信頼され�
 
 1. Symantec CA から信頼されたルート証明書を取得します。
 
-    a. Symantec CA 管理ポータルにログオンします。
+    」を参照します。 Symantec CA 管理ポータルにログオンします。
 
     b. [タスク]\(タスク\) の [Manage CAs]\(証明機関の管理\) をクリックします。
 
@@ -231,7 +231,7 @@ Intune 管理対象デバイスに展開する PKCS 証明書は、信頼され�
 
 2. Intune 管理ポータルで、信頼済み証明書プロファイルを作成します。
 
-    a. Intune のテナント管理者の資格情報を使用して [Azure Portal](https://portal.azure.com) にサインインして、Intune リソースを検索します。
+    」を参照します。 Intune のテナント管理者の資格情報を使用して [Azure Portal](https://portal.azure.com) にサインインして、Intune リソースを検索します。
 
     b. **[Microsoft Intune]** > **[デバイス構成]** - **[プロファイル]** > **[プロファイルの作成]** で信頼済み証明書プロファイルを作成します。
 
@@ -266,7 +266,7 @@ Symantec CA の証明書プロファイル テンプレートには、証明書�
 1. Intune のテナント管理者の資格情報を使用して [Azure Portal](https://portal.azure.com) にサインインして、Intune リソースを検索します。
 2. **[Microsoft Intune]** > **[デバイス構成] - [プロファイル]** > **[プロファイルの作成]** > **[PKCS 証明書]** で PKCS 証明書プロファイルを作成します。
 
-    a. **[名前]** フィールドおよび **[説明]** フィールドに必要な情報を入力し、対象のプラットフォームを選択します。
+    」を参照します。 **[名前]** フィールドおよび **[説明]** フィールドに必要な情報を入力し、対象のプラットフォームを選択します。
 
     b. **[プロファイルの種類]** ドロップダウン リストで **[PKCS 証明書プロファイル]** を選択します。  
 
@@ -295,7 +295,7 @@ Symantec CA の証明書プロファイル テンプレートには、証明書�
 |属性 | Intune でサポートされる形式 | Symantec Cloud CA でサポートされる形式 | Result |
 | --- | --- | --- | --- |
 | サブジェクト名 |Intune では、次の 3 つの形式のサブジェクト名のみがサポートされています。 <br><br> 1.共通名 <br> 2.電子メールを含む共通名 <br> 3.電子メールとしての共通名 <br><br> 次に例を示します。 <br><br> `CN = IWUser0 <br><br> E = IWUser0@samplendes.onmicrosoft.com` | Symantec CA では、追加の属性がサポートされます。  追加の属性を選択する場合は、Symantec 証明書プロファイル テンプレートでそれらの属性に固定値を定義する必要があります。| ここでは、PKCS 証明書の要求の共通名または電子メールを使用します。 <br><br> Intune 証明書プロファイルと Symantec 証明書プロファイル テンプレートでの属性の選択内容に不一致がある場合、Symantec CA から証明書が発行されません。|
-| SAN | Intune では、次の SAN フィールド値のみがサポートされています。 <br><br> AltNameTypeEmail <br><br> AltNameTypeUpn <br><br> AltNameTypeOtherName (エンコードされた値) | これらのパラメーターは Symantec Cloud CA でもサポートされています。 追加の属性を選択する場合は、Symantec 証明書プロファイル テンプレートでそれらの属性に固定値を定義する必要があります。 <br><br> AltNameTypeEmail: SAN でこのタイプが見つからない場合、AltNameTypeUpn の値が使用されます。  SAN 内に AltNameTypeUpn も見つからない場合、サブジェクト名が電子メール形式であればその値が使用されます。  電子メール形式のサブジェクト名も存在しない場合、Intune Certificate Connector は証明書に接続できません。 <br><br> 例: `RFC822 Name=IWUser0@ndesvenkatb.onmicrosoft.com`  <br><br> AltNameTypeUpn: SAN でこのタイプが見つからない場合、AltNameTypeEmail の値が使用されます。 SAN 内に AltNameTypeEmail も見つからない場合は、サブジェクト名が電子メール形式であればその値が使用されます。  電子メール形式のサブジェクト名も存在しない場合、Intune Certificate Connector は証明書に接続できません。  <br><br> 例: `Other Name: Principal Name=IWUser0@ndesvenkatb.onmicrosoft.com` <br><br> AltNameTypeOtherName: SAN 内にこのタイプが見つからない場合、Intune Certificate Connector は証明書に接続できません。 <br><br> 例: `Other Name: DS Object Guid=04 12 b8 ba 65 41 f2 d4 07 41 a9 f7 47 08 f3 e4 28 5c ef 2c` <br><br>  **重要:** Symantec CA では、このフィールドの値についてはエンコードされた形式 (16 進値) のみがサポートされます。 このため、このフィールドの値はすべて、証明書の要求の送信前に Intune Certificate Connector により base 64 エンコードに変換されます。 **Intune Certificate Connector では、この値がエンコード済みかどうかの確認は行われません。** | None |
+| SAN | Intune では、次の SAN フィールド値のみがサポートされています。 <br><br> AltNameTypeEmail <br><br> AltNameTypeUpn <br><br> AltNameTypeOtherName (エンコードされた値) | これらのパラメーターは Symantec Cloud CA でもサポートされています。 追加の属性を選択する場合は、Symantec 証明書プロファイル テンプレートでそれらの属性に固定値を定義する必要があります。 <br><br> AltNameTypeEmail: SAN でこのタイプが見つからない場合、AltNameTypeUpn の値が使用されます。  SAN 内に AltNameTypeUpn も見つからない場合、サブジェクト名が電子メール形式であればその値が使用されます。  電子メール形式のサブジェクト名も存在しない場合、Intune Certificate Connector は証明書に接続できません。 <br><br> 例: `RFC822 Name=IWUser0@ndesvenkatb.onmicrosoft.com`  <br><br> AltNameTypeUpn: SAN でこのタイプが見つからない場合、AltNameTypeEmail の値が使用されます。 SAN 内に AltNameTypeEmail も見つからない場合は、サブジェクト名が電子メール形式であればその値が使用されます。  電子メール形式のサブジェクト名も存在しない場合、Intune Certificate Connector は証明書に接続できません。  <br><br> 例: `Other Name: Principal Name=IWUser0@ndesvenkatb.onmicrosoft.com` <br><br> AltNameTypeOtherName: SAN 内にこのタイプが見つからない場合、Intune Certificate Connector は証明書に接続できません。 <br><br> 例: `Other Name: DS Object Guid=04 12 b8 ba 65 41 f2 d4 07 41 a9 f7 47 08 f3 e4 28 5c ef 2c` <br><br>  **重要:** Symantec CA では、このフィールドの値についてはエンコードされた形式 (16 進値) のみがサポートされます。 このため、このフィールドの値はすべて、証明書の要求の送信前に Intune Certificate Connector により base 64 エンコードに変換されます。 **Intune Certificate Connector では、この値がエンコード済みかどうかの確認は行われません。** | なし |
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
@@ -303,7 +303,7 @@ Intune Certificate Connector サービスのログは、NDES Connector コンピ
 
 | 問題/エラー メッセージ | 解消手順 |
 | --- | --- |
-| Intune テナント管理者アカウントを使用して NDES Connector UI にサインインできない | この問題は、Intune 管理ポータルでオンプレミスの Certificate Connector が有効になっていない場合に発生します。 この問題を解決するには、次の手順を使用します。 <br><br> Silverlight UI の場合: <br> 1.[Intune 管理ポータル](https://admin.manage.microsoft.com)にログオンします。 <br> 2.[管理] をクリックします。 <br> 3.[モバイル デバイス管理] > [Certificate Connector] の順にクリックします。 <br> 4.**[On-premises Certificate Connector の構成]** をクリックします。 <br> 5.**[Certificate Connector を有効にする]** チェックボックスをオンにします。 <br> 6.**[OK]**をクリックします。 <br><br>または <br><br> Azure Portal UI の場合: <br> 1.[Azure Portal](https://portal.azure.com) にサインインします。 <br> 2.Microsoft Intune にアクセスします。 <br> 3.**[デバイス構成]** > **[証明機関]** の順に選択します。 <br> 4.**[有効にする]** をクリックします。 <br><br> Silverlight UI または Azure Portal のいずれかで上記の手順を完了してから、同じ Intune テナント管理者アカウントを使用して NDES Connector UI にサインインしてください。 |
+| Intune テナント管理者アカウントを使用して NDES Connector UI にサインインできない | この問題は、Intune 管理ポータルでオンプレミスの Certificate Connector が有効になっていない場合に発生します。 この問題を解決するには、次の手順を使用します。 <br><br> Silverlight UI の場合: <br> 1.[Intune 管理ポータル](https://admin.manage.microsoft.com)にログオンします。 <br> 2.[管理] をクリックします。 <br> 3.[モバイル デバイス管理] > [Certificate Connector] の順にクリックします。 <br> 4.**[On-premises Certificate Connector の構成]** をクリックします。 <br> 5.**[Certificate Connector を有効にする]** チェックボックスをオンにします。 <br> 6.**[OK]** をクリックします。 <br><br>または <br><br> Azure Portal UI の場合: <br> 1.[Azure Portal](https://portal.azure.com) にサインインします。 <br> 2.Microsoft Intune にアクセスします。 <br> 3.**[デバイス構成]** > **[証明機関]** の順に選択します。 <br> 4.**[有効にする]** をクリックします。 <br><br> Silverlight UI または Azure Portal のいずれかで上記の手順を完了してから、同じ Intune テナント管理者アカウントを使用して NDES Connector UI にサインインしてください。 |
 | NDES Connector 証明書が見つかりませんでした。 <br><br> System.ArgumentNullException: 値を null にすることはできません。 | Intune テナント管理者アカウントで NDES Connector UI へサインインしたことがない場合、Intune Certificate Connector にはこのエラーが表示されます。 <br><br> このエラーが引き続き発生する場合は、Intune Service Connector を再起動してください。 <br><br> 1.services.msc を開きます。 <br> 2.**[Intune Connector Service]** を選択します。 <br> 3.右クリックして **[再起動]** を選択します。|
 | NDES Connector - IssuePfx -一般的な例外: <br> System.NullReferenceException: オブジェクト参照がオブジェクトのインスタンスに設定されていません。 | このエラーは一時的なものです。 Intune サービス コネクタを再起動してください。 <br><br> 1.services.msc を開きます。 <br> 2.**[Intune Connector Service]** を選択します。 <br> 3.右クリックして **[再起動]** を選択します。 |
 | Symantec プロバイダー - Symantec ポリシーを取得できません “操作がタイムアウトになりました” | Intune Certificate Connector で、Symantec CA との通信中に操作のタイムアウト エラーが発生しました。 このエラーが続く場合は、接続タイムアウトの値を増やしてからやり直してください。 <br><br> 接続のタイムアウト時間を延ばすには次の手順を実行します。 <br> 1.NDES Connector コンピューターにアクセスします。 <br>2.メモ帳で `%ProgramFiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config` ファイルを開きます。 <br> 3.次のパラメーターのタイムアウト値を増やします。 <br><br> `CloudCAConnTimeoutInMilliseconds` <br><br> 4.Intune コネクタ サービスを再起動します。 <br><br> 問題が解決しない場合は、Symantec カスタマー サポートに問い合わせてください。 |
@@ -314,7 +314,7 @@ Intune Certificate Connector サービスのログは、NDES Connector コンピ
 | 一部のユーザー デバイスで、Symantec CA から PKCS 証明書が受信されません。 | この問題は、ユーザー UPN にアンダースコアなどの特殊文字 (例: `global_admin@intune.onmicrosoft.com`) が含まれている場合に発生します。 <br><br> Symantec CA の mail_firstname および mail_lastname では特殊文字はサポートされません。 <br><br> この問題を解決するには、次の手順を実行します。 <br><br> 1. Symantec CA 管理ポータルにログオンします。 <br> 2.[Manage Certificate Profiles]\(証明書プロファイルの管理\) に移動します。 <br> 3. Intune で使用している証明書プロファイルをクリックします。 <br> 4.[Customize options]\(カスタマイズ オプション\) リンクをクリックします。 <br> 5. [Advanced options]\(詳細オプション\) ボタンをクリックします。 <br> 6.証明書の [Subject DN]\(サブジェクト DN\) フィールドの下に [Common Name (CN)]\(共通名 (CN)\) フィールドを追加し、既存の [Common Name (CN)]\(共通名 (CN)\) フィールドを削除します。 追加と削除は一度に実行する必要があります。 <br> 7.  [Save] をクリックします。 <br><br> 上記の変更により、Symantec 証明書プロファイルでは mail_firstname と mail_lastname の代わりに “CN=<upn>” が要求されるようになります。 |
 | ユーザーが、展開済みの証明書をデバイスから手動で削除しました。 | Intune により、次のチェックイン時またはポリシー適用中に同一の証明書が再展開されます。 この場合、NDES Connector は PKCS 証明書要求を受信しません。 |
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - この記事の情報と「[Microsoft Intune のデバイス プロファイルとは](device-profiles.md)」の情報を合わせて、組織のデバイスとその証明書を管理します。
 
