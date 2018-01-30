@@ -5,7 +5,7 @@ description: "Azure Portal 内の Intune で MTD アプリ、Microsoft Authentic
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98a5b1b705e79b875b83cecb53cd82d7bf5dff30
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 4d84ecc31d266deb196192c8e1b3eeade6eb5ea3
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune で Mobile Threat Defense (MTD) アプリを追加して割り当てる
 
@@ -186,6 +186,6 @@ Lookout for Work iOS アプリに再署名する詳細な手順については�
 
 - [Intune でアプリをグループに割り当てる](apps-deploy.md)手順を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [MTD のデバイス コンプライアンス ポリシーを追加する](mtd-device-compliance-policy-create.md)

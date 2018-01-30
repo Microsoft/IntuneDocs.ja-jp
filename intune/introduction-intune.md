@@ -4,7 +4,7 @@ description: "Intune が Enterprise Mobility + Security ソリューションで
 keywords: "Intune の概要"
 author: Lindavr
 ms.author: lindavr
-manager: angrobe
+manager: dougeby
 ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 527a2a1578fcf9ef8e8f80c68091e582f8f2ebd2
-ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
+ms.openlocfilehash: 64fd5e506d0c2fdfa5d99e6ac96d6e12c886fcbe
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-is-intune"></a>Intune とは何か
 
@@ -47,7 +47,7 @@ Intune は Enterprise Mobility + Security (EMS) に含まれ、モバイル デ�
 
 [ここ](./media/intunearchitecture.svg)をクリックすると、Intune アーキテクチャ ダイアグラムが大きな画像で表示されます。
 
-Intune のデバイス/アプリ管理機能と EMS データ保護の利用方法は、[解決しようとしているビジネス上の問題](#common-business-problems-that-intune-helps-solve)によって異なります。 たとえば、
+Intune のデバイス/アプリ管理機能と EMS データ保護の利用方法は、[解決しようとしているビジネス上の問題](#common-business-problems-that-intune-helps-solve)によって異なります。 次に例を示します。
 * 小売店の交代勤務従業員に共有させる一時使用デバイスのプールを作成する場合、デバイス管理をかなり利用することになります。
 * 個人のデバイスで企業データにアクセスすること (BYOD) を社員に許可する場合、アプリ管理とデータ保護に頼ります。  
 * 情報作業者に会社の電話を与える場合、この技術のすべてに依存します。
@@ -111,7 +111,7 @@ Intune がモバイル アプリ セキュリティを提供する方法の 1 �
 
 
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 * [Intune の一般的な使用方法](common-scenarios.md)を読む
 * [Intune の 30 日間の評価版](free-trial-sign-up.md)を使用して製品の理解を深める
 * Intune の[技術的要件と機能](supported-devices-browsers.md)を調べる

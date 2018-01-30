@@ -5,7 +5,7 @@ description: "ポリシーを持つユーザー数を確認し、詳細を調べ
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d369b311339218edcb3204ce7c575986c7a08528
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: f4dae7edb99dae26c7498e55d5eead3cee2e9a8f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>アプリ保護ポリシーを監視する方法
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -39,9 +39,9 @@ ms.lasthandoff: 12/08/2017
 
 ## <a name="summary-view"></a>概要ビュー
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[モバイル アプリ]** を選択します。
+3. **[Intune]** ブレードで、**[モバイル アプリ]** を選びます。
 4. **[モバイル アプリ]** ワークロードで、**[監視]** > **[アプリ保護ユーザー状態]** の順に選択して、概要ビューを表示します。
 
 ![[Intune モバイル アプリケーション管理] ブレードの [概要] タイル](./media/app-protection-user-status-summary.png)

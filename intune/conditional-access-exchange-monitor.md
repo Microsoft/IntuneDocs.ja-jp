@@ -5,7 +5,7 @@ description: "Intune Azure ポータルを使用して、Exchange On-Premises �
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: be0c1cef0dd6562feb54724edbf8ae22072e3d95
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 2025bbb008be090420ebb3778fc37a0b1790608b
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Intune で Exchange On-Premises および Exchange Online の条件付きアクセス コンプライアンスを監視する
 
@@ -38,7 +38,7 @@ Intune 1704 リリース以降では、管理者は、内部設置型 Exchange C
 
 3.  左側のメニューから **[その他のサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
 
-4.  **[Intune]** を選択すると、**Intune ダッシュボード**が表示されます。
+4.  **[Intune]** を選ぶと、**Intune ダッシュボード**が表示されます。
 
 5.  **[条件付きアクセス]** を選択し、**[概要]** を選択します。
 

@@ -5,7 +5,7 @@ description: "Android デバイスでの電子メール接続の構成に使用�
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 06/15/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 4d3458cc-fcaa-4648-b13f-bf1f0616c1c5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: adc61e3d6a8b413ca5a03a2fdbc3d2353226040b
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: 14f726d330e1cd8e4a0f7bfcfac8fe931c66d23b
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="email-profile-settings-for-android--devices-in-microsoft-intune"></a>Microsoft Intune での Android デバイス向けの電子メール プロファイル設定
 

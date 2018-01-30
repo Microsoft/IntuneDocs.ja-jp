@@ -4,7 +4,7 @@ description: "この記事では、Intune クラウド専用ソリューショ�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: aab3c202272d91f9e1596eae6f740f68f049a657
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 29560058c386c9e8f6d8734e241ea74a8b780eb1
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="implement-your-intune-plan"></a>Intune の計画を実装する
 
@@ -132,7 +132,7 @@ Intune は、iOS、Mac OS、Android、Windows デスクトップ、Windows モ�
 -   デバイスの登録方法については[ここ](device-enrollment.md)をご覧ください。
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 Intune 実装プロセスの詳細については、この [Microsoft Virtual Academy Intune セッション モジュール](https://mva.microsoft.com/en-US/training-courses/deploying-microsoft-enterprise-mobility-suite-16408)をご覧ください。
 

@@ -4,7 +4,7 @@ description: "Intune に移行する前に、ビジネス要件と技術的な�
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 06/12/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 9e935531c785a1c907454d563550f237ebffdb13
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: 93c17ff0343c4475bbc665ff2418e1e7860894d5
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="phase-1-prepare-intune-for-mobile-device-management-mdm"></a>フェーズ 1: モバイル デバイス管理 (MDM) に Intune を準備する
 
@@ -72,7 +72,7 @@ Intune の設定の詳細について説明する前に、組織のモバイル 
 <br/><br/>
 -   ダウンタイムを回避するために、特定の要件に対して一時的な例外を設定できますか。 それともアクセスが許可されたデバイスは、常にすべてのセキュリティ要件を遵守する必要がありますか。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 さまざまな業界セクターの[ケース スタディ](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune)を参照して、モバイル デバイス管理の要件をどのように評価したかを確認してください。
 
 [Intune の基本的なセットアップ](migration-guide-setup.md)を確認してください。

@@ -4,7 +4,7 @@ description: "この記事では、Microsoft Intune のクラウド専用の設�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: bd8f3372f3546b5fba20a253611e382f780b3236
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 38cae4b0726d4ad96c243dd87ea2581a691da306
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-a-design"></a>設計の作成
 
@@ -193,7 +193,7 @@ VPN、Wi-Fi、または Intune での電子メール プロファイルで証明
 
 ### <a name="devices"></a>[デバイス]
 
-Intune は、モバイル デバイスを管理して、企業のデータをセキュリティで保護し、エンド ユーザーがより多くの場所から作業できるようにします。 Intune は多数のデバイス プラットフォームをサポートしているので、組織の設計でサポートされるデバイスおよび OS プラットフォームとバージョンを文書化することをお勧めします。 たとえば、
+Intune は、モバイル デバイスを管理して、企業のデータをセキュリティで保護し、エンド ユーザーがより多くの場所から作業できるようにします。 Intune は多数のデバイス プラットフォームをサポートしているので、組織の設計でサポートされるデバイスおよび OS プラットフォームとバージョンを文書化することをお勧めします。 次に例を示します。
 
 | **デバイスのプラットフォーム** | **OS のバージョン** |
 |:---:|:---:|
@@ -349,7 +349,7 @@ Intune では、複数の方法でユーザーまたはデバイスにアプリ�
 
 -   [ビジネス向け iOS Volume Purchase Program (VPP)](vpp-apps-ios.md)
 
--   [ビジネス向け Windows ストアのアプリ](windows-store-for-business.md)
+-   [ビジネス向け Microsoft ストア アプリ](windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>アプリの種類の要件
 
@@ -412,6 +412,6 @@ Intune では、複数の方法でユーザーまたはデバイスにアプリ�
 
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して、条件付きアクセス ポリシーのニーズを確認することができます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 次のセクションでは、[Intune の実装プロセス](planning-guide-onboarding.md)に関するガイダンスについて説明します。

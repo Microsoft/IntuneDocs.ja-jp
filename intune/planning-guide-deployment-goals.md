@@ -4,7 +4,7 @@ description: "この記事は、Microsoft Intune のクラウド専用実装に�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 47bba6d9f65aa1e2ff8cc0255cd7fccfda417f92
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: fe680fcb617c29678f193aac2d74c12398a2a7f8
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>展開の目標、目的、課題を判別する
 
@@ -88,6 +88,6 @@ ms.lasthandoff: 11/01/2017
 
     -   **対策:** プロジェクトにあわてて取りかからず、目標と目的が明確に定義されていることを確認します。 新機能の認知やトレーニングにはこれらの目標や目的を取り入れ、Intune を組織が選択した理由をユーザーに理解してもらいます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 これで、展開の目標、目的、および潜在的な課題を識別しました。次のセクション「[Intune ユース ケース シナリオの特定](planning-guide-scenarios.md)」に移動しましょう。

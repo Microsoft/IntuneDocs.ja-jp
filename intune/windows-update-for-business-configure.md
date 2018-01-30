@@ -5,7 +5,7 @@ description: "Intune でビジネス向けの Windows Update を構成して、W
 keywords: 
 author: dougeby
 ms.author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: ca1f1c0572a2a3c1484b9c23bd14e029e506e536
-ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
+ms.openlocfilehash: fa9b09f97568b54a68f34a609c91426eb12b71e0
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="manage-software-updates"></a>ソフトウェア更新プログラムの管理
 
@@ -71,7 +71,7 @@ Windows Update for Business を使用することで、デバイスのグルー�
 
 ## <a name="how-to-create-and-assign-update-rings"></a>更新プログラム リングを作成して割り当てる方法
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[ソフトウェア更新プログラム]** を選択します。
 4. **[ソフトウェア更新プログラム]** ブレードで、**[管理]**  >  **[Windows 10 Update Rings (Windows 10 更新プログラム リング)]** を選択します。
@@ -89,7 +89,7 @@ Windows Update for Business を使用することで、デバイスのグルー�
 
     機能更新プログラムは一般的に Windows の新しい機能です。 **サービス チャネル**の設定 (半期チャネル (対象指定) または半期チャネル) を構成したら、Windows Update で Microsoft から入手可能になってから機能更新プログラムの受信を延期するか、またどのくらい延期するかを定義できます。
 
-    たとえば、  
+    次に例を示します。  
     **サービス チャネルが半期チャネル (対象指定) に設定され、遅延期間が 30 日の場合**: 機能更新プログラム X が Windows Update で 1 月に半期チャネル (対象指定) として Windows Update で最初に公開されるとします。 デバイスは 2 月になるまで (30 日後まで) 更新プログラムを受信しません。
 
     **サービス チャネルが半期チャネルに設定され、遅延期間が 30 日の場合**: 機能更新プログラム X が Windows Update で 1 月に半期チャネル (対象指定) として最初に公開されるとします。 4 か月後の 4 月に、機能更新プログラム X が半期チャネルにリリースされます。 デバイスは、この半期チャネル リリースの 30 日後に機能更新プログラムを受信し、5 月に更新されます。
@@ -109,7 +109,7 @@ Windows Update for Business を使用することで、デバイスのグルー�
 ### <a name="review-update-compliance-in-intune"></a>Intune で更新プログラムのコンプライアンス対応を確認する 
 <!-- 1352223 -->
 ポリシー レポートを確認して、構成した Windows 10 更新プログラム リングの展開状態を表示します。 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[ソフトウェア更新プログラム]** を選択します。
 4. **[ソフトウェア更新プログラム]** ブレードで、**[概要]** を選択します。 ここで、割り当てたすべての更新プログラム リングの状態に関する一般的な情報を表示することができます。
@@ -145,7 +145,7 @@ Intune コンソールで、カスタム ポリシーの OMA-URI 設定を使用
 
 ## <a name="how-to-pause-updates"></a>更新プログラムを一時停止する方法
 更新プログラムを一時停止したときから最大 35 日間、機能更新プログラムまたは品質更新プログラムのデバイスでの受け取りを一時停止することができます。 最大日数が経過すると、一時停止機能の有効期限が自動的に切れ、デバイスによる Windows Update の該当する更新プログラムのスキャンが開始されます。 このスキャン後に、もう一度更新プログラムを一時停止することもできます。
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[ソフトウェア更新プログラム]** を選択します。
 4. **[ソフトウェア更新プログラム]** ブレードで、**[管理]**  >  **[Windows 10 Update Rings (Windows 10 更新プログラム リング)]** を選択します。

@@ -5,7 +5,7 @@ description: "Intune の 30 日間無料試用版にサインアップする方�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 4faf888f470806c837058497c49afa24efdfe54d
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 3b4d6528acd42a84c7d87968874d36199b661a90
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Microsoft Intune の無料試用版にサインアップ
 
@@ -66,7 +66,7 @@ Office 365 管理センターから Intune ダッシュボードに移動する�
 
 Intune から Office 365 管理センターに戻るには、ブラウザーのアドレス バーに「https://portal.office.com」と入力します。 既に Intune にログインしている場合は、Office 365 管理センターがそのまま表示されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 ### <a name="intune-in-the-azure-portal"></a>Azure Portal での Intune
 詳細については、[Azure Portal での Intune](what-is-intune.md) に関するページを参照してください。

@@ -4,7 +4,7 @@ description: "環境内のクラウド専用 Intune ソリューションをテ�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: f10b4b0e7c48e921eb92392edf95bfcfaa83db9f
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 8521ae12062ad73dfddb0f03aeac8c07ce65de58
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="intune-testing-and-validation"></a>Intune のテストと検証
 
@@ -73,7 +73,7 @@ IT 管理者の検証テストを実行し、あるデバイスまたはユー�
 
 ![セクション 9 表 3](./media/section-9-image-3-table.PNG)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 Intune の動作とユース ケース シナリオをテストし、確認しました。これで [Intune 運用のロールアウト](planning-guide-rollout-plan.md)に移ることができます。
 

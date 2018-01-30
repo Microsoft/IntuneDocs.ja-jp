@@ -5,7 +5,7 @@ description: "iOS デバイスの Classroom アプリの設定を制御するた
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9b24ee84d339b728addd753cb309b4d8572e5582
-ms.sourcegitcommit: e5501cdf08d3e79bc51dc726697606be02110e57
+ms.openlocfilehash: c183af24e953f87e12e87654f767dd9a30f8509f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>共有 iPad デバイスの Intune 教育設定を構成する方法
 
@@ -29,7 +29,7 @@ Intune は iOS Classroom をサポートしています。このアプリは、�
 
 専用 (1:1) iPad デバイスを構成し、Classroom アプリを使用する方法については、「[iOS Classroom アプリの Intune 設定を構成する方法](education-settings-configure-ios.md)」を参照してください。
 
-## <a name="before-you-start"></a>アップグレードを開始する前に
+## <a name="before-you-start"></a>開始する前に
 
 共有 iPad 機能を使用するための前提条件:
 
@@ -62,7 +62,7 @@ SDS は SIS の情報を同期し、それを Azure AD に保管します。 Azu
 
 ### <a name="configure-general-settings"></a>全般的な設定を構成する
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイスの構成]** を選択します。
 4. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
@@ -133,7 +133,7 @@ iOS 教育プロファイルは、PFX 証明書のみをサポートします。
 
 ## <a name="step-3---create-a-device-category"></a>手順 3 - デバイス カテゴリを作成する
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイスの登録]** を選択します。
 4. **[登録 - 概要]** ブレードで、**[デバイス カテゴリ]** を選択します。
@@ -145,7 +145,7 @@ iOS 教育プロファイルは、PFX 証明書のみをサポートします。
 
 ## <a name="step-4--create-a-dynamic-group"></a>手順 4 – 動的グループを作成する
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[グループ]** を選択します。
 4. **[ユーザーとグループ - すべてのグループ]** ブレードで、**[新しいグループ]** を選択します。
@@ -163,7 +163,7 @@ iOS 教育プロファイルは、PFX 証明書のみをサポートします。
 
 ## <a name="step-5--assign-a-device-to-a-category-carts"></a>手順 5 – デバイスをカテゴリに割り当てる (カート)
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス]** を選択します。
 4. **[デバイス]** ブレードで、**[すべてのデバイス]** を選択します。
@@ -176,7 +176,7 @@ iOS 教育プロファイルは、PFX 証明書のみをサポートします。
 
 ## <a name="step-6--create-classroom-profiles"></a>手順 6 – 教室プロファイルを作成する
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイスの構成]** を選択します。
 4. **[デバイス構成]** ブレードで、**[管理]** > **[カート プロファイル]** の順に選択します。
@@ -192,7 +192,7 @@ iOS 教育プロファイルは、PFX 証明書のみをサポートします。
 
 ## <a name="step-7---assign-the-cart-profile-to-classes"></a>手順 7 - カート プロファイルをクラスに割り当てる
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[その他]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイスの構成]** を選択します。
 4. **[デバイス構成]** ブレードで、**[モニター]** > **[割り当ての状態]** の順に選択します。

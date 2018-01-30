@@ -3,18 +3,18 @@ title: "Intune を使用したオペレーティング システムのバージ�
 description: "Microsoft Intune を使用したプラットフォーム間でのオペレーティング システムのバージョン管理の方法を説明します。"
 keywords: 
 author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 10/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
-ms.openlocfilehash: c1b49619e07c4381f7bc5314ff9e25c063ad3e1d
-ms.sourcegitcommit: 6daa83bdaf9186cb2e5f59ba81add4cf297ee1cd
+ms.openlocfilehash: ede4be83b995bbb415184275c34f0e1b4feb4091
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Intune を使用したオペレーティング システムのバージョン管理
 最近のモバイル プラットフォームおよびデスクトップ プラットフォームでは、主要な更新プログラム、修正プログラム、および新しいバージョンが速いペースでリリースされます。 Windows 上の更新プログラムおよび修正プログラムについては、完全に管理するためのコントロールがありますが、iOS や Android などの他のプラットフォームでは、エンド ユーザーをプロセスに参加させる必要があります。  Microsoft Intune には、異なるプラットフォーム間のオペレーティング システムのバージョン管理を構築するための機能があります。
@@ -79,7 +79,7 @@ Intune アプリの保護ポリシーとモバイル アプリケーション管
 - **手順 3b**: デバイス コンプライアンス ポリシーを使用して、デバイスを準拠させるための最小バージョンとしてオペレーティング システム v2 を要求します。
   - これらのポリシーでは、組織のデータに引き続きアクセスするために、デバイスを更新することが求められます。 デバイスの条件付きアクセスと共に使用すると、保護されたサービスがブロックされます。 アプリの保護ポリシーが有効になっているアプリは、開いたとき、または組織のデータにアクセスするときにブロックされます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 次のリソースを使用して、組織内のオペレーティング システムのバージョンを管理します。 
 
 - [デバイスの種類の制限を設定する](https://docs.microsoft.com/en-us/intune/enrollment-restrictions-set#set-device-type-restrictions)

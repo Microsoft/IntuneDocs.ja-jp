@@ -5,7 +5,7 @@ description: "アプリ構成ポリシーを使用して、実行時に構成デ
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c936c6e0c23afa374c1de73d83e69a4e014d60e5
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 4fbf1466b02da66e5c7d115d60aa43912322ebeb
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>管理対象の Android デバイス用アプリ構成ポリシーを追加する
 
@@ -96,7 +96,7 @@ Android デバイス機能にアクセスするためのアプリのアクセス
 10. 割り当てるユーザー グループを選び、**[選択]** をクリックします。
 11. **[保存]** を選択して、ポリシーを割り当てます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 アプリの[割り当て](apps-deploy.md)と[監視](apps-monitor.md)に進みます。
 

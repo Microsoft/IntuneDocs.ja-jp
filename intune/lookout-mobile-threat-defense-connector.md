@@ -5,7 +5,7 @@ description: "Lookout Mobile Threat Defense コネクタと Intune の設定"
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 06/09/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 3a730a5d-2a90-42b0-aa28-aadfc7a18788
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2c13aa920358526deddcdb912833217c88f27371
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 41270fb217c87880e67c1c5e0adf319576031126
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense コネクターと Intune
 
@@ -63,7 +63,7 @@ Intune で Lookout Mobile Threat Defense を使用する場合の一般的なシ
 
 ![悪意のあるアプリに起因し、デバイスが非準拠として見なされたときにアクセスを禁止する条件付きアクセス ポリシーの図](./media/malicious-apps-blocked.png)
 
-**修復時に付与されるアクセス権:**
+**修復後、アクセスが与えられる:**
 
 ![修復後、デバイスが準拠状態にあると判断された場合にアクセス権を付与する条件付きアクセス ポリシーを示す図](./media/malicious-apps-unblocked.png)
 
@@ -86,11 +86,11 @@ Man-in-the-middle 攻撃など、ネットワークに対する脅威を検出�
 ![検出した脅威に基づいて SharePoint Online へのデバイスのアクセスをブロックする条件付きアクセスを示す図](./media/network-spo-blocked.png)
 
 
-**修復時に付与されるアクセス権:**
+**修復後、アクセスが与えられる:**
 
 ![ネットワークの脅威が修復された後でアクセスを許可する条件付きアクセスを示す図](./media/network-spo-unblocked.png)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 このソリューションを実装するために実行する必要がある主な手順を次に示します。
 1.  [Lookout 統合を設定する](lookout-mtd-connector-integration.md)
 2.  [Intune で Lookout Mobile Threat Defense を有効にする](mtd-connector-enable.md)
