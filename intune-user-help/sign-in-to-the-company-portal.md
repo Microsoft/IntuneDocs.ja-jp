@@ -4,23 +4,24 @@ description: "複数のプラットフォームでポータル サイト アプ�
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cfd214bc-f072-4808-af2e-a3cbf7af9bca
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 622006bf6ac244ddcf5e11f765f4119e6822866f
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: c4ae7373627c914b89629464c53240c8b07a28df
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>ポータル サイト アプリにサインインするには <!--User Story 1132123-->
 

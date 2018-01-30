@@ -5,7 +5,7 @@ description: "デバイス登録なしで管理対象アプリ用アプリ構成
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 12/7/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b4ccc107521ae7f199ad2b37b86b573995e83c4d
-ms.sourcegitcommit: 3285b08f1a290d6f3be3bb1cfdf40508c27c53ed
+ms.openlocfilehash: c2266e460d816dfdd908d6a68944c8c2cc5c0afc
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>デバイス登録なしで管理対象アプリ用アプリ構成ポリシーを追加する
 
@@ -62,6 +62,6 @@ Intune は、構成設定で次のトークンの種類をサポートしてい�
 > [!Note]  
 > \{\{ 文字と \}\} 文字を使用できるのはトークンの種類のみであり、他の目的には使用しないでください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 通常どおり、アプリの[割り当て](apps-deploy.md)と[監視](apps-monitor.md)に進みます。

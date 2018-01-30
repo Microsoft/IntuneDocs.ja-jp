@@ -5,7 +5,7 @@ description: "iOS デバイスの登録手順を最初から最後まで行い�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00d462639e6f85e6d76ea7061588ba976242e21d
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 3818556f300821fb9acaa260300ae683f43b13e3
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="get-started-enrolling-devices"></a>デバイス登録の概要
 
@@ -57,7 +57,7 @@ Microsoft Intune は、会社のデータを保護した状態で、従業員が
 15. “デバイスの登録中” メッセージが画面に表示され、続いてデバイスが正常に登録されたことが表示されます。 ポータル サイトでページを開くように求めるポップアップが表示されます。 **[開く]** をタップします。
 16. **[会社アクセスのセットアップ]** 画面に戻ります。 テスト ポリシーを設定していない場合、デバイスがポリシー準拠として表示されるはずです。 テスト ポリシーがない場合、**[デバイスのポリシー準拠]** をタップすると、デバイスを安全にするために行わなければならないことがあると表示されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [アプリ追加の概要](get-started-apps.md) - 社員が仕事を行えるように、アプリを見つけ、デバイスに追加します。
 

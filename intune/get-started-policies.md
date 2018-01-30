@@ -5,7 +5,7 @@ description: "ユーザーが自分のデバイスで許可のない操作を行
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eaac36810f8df524fa795a0fef2cf9a368984658
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: ea5fe13f7361b968f3158a617275cd08daedac1c
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="get-started-with-policies"></a>ポリシーの概要
 
@@ -55,7 +55,7 @@ __ポリシーの作成方法__
 8. ポリシーが作成されたら、**[割り当て]** を選択し、テスト グループに割り当てます。 テスト グループ (この中にテスト ユーザーが入っています) を選択し、**[保存]** をクリックしてそのグループにポリシーを割り当てます。
 9. 数分待つと、登録したデバイスから、企業ポリシーに準拠するためにパスワードの更新が必要であると伝えられます。 これは **iOS 向けのポータル サイト アプリ**で手動確認できます。デバイス名をタップし、**[同期]** ボタンを押してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [デバイス登録の概要](get-started-enroll.md) - iOS デバイスの登録手順を最初から最後まで行い、登録方法を学習します。
 

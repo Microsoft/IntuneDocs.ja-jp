@@ -4,7 +4,7 @@ description: "このトピックでは、アプリ保護ポリシーを使用し
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 030e17a9f28a9476c82e89d4dd26151a2d3cb953
-ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
+ms.openlocfilehash: 2889a0a32e58a677f825800bfa50dea64839d663
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>アプリ保護ポリシーを使用して Android アプリを管理するときの注意点
 
@@ -80,5 +80,5 @@ Android デバイスで会社の AV、PDF、画像ファイルを表示するに
 |----|----|
 |pfile は、保護するファイル向けの汎用的な "ラッパー" 形式です。暗号化されたコンテンツと Azure Information Protection ライセンスをカプセル化します。 任意のファイルの種類を保護できます。|XML、CSV などのテキスト ファイルは、保護されているときでもアプリで開いて表示できます。 ファイルの種類: .txt、.ptxt、.csv、.pcsv、.log、.plog、.xml、.pxml。|
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](end-user-mam-apps-ios.md)
