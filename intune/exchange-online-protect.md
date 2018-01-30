@@ -4,7 +4,7 @@ description: "社員に仕事用メールへのアクセスを与えます。 �
 keywords: "Office 365 Exchange 電子メール アクセス"
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.assetid: 88a0d3b9-2622-403b-8374-1396afd8066e
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a5db7cd4781e85a0baa971fc989d916ccc9e924
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 53872921bc4c7a52224741ab3b743a1d9ac52f42
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>デバイス管理を要求せずに Office 365 Exchange Online を保護する
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 11/01/2017
 * Microsoft Outlook または Microsoft SharePoint をダウンロードしてインストールするように社員や学生に伝えます。iOS の場合は Apple App Store を、Android の場合は Google Play Store をご利用ください。 
 * 最新の認証方法を利用しないアプリへのアクセスを禁止する場合、社員や学生にこの制限のことを知らせます。 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 アプリベースの条件付きアクセスを利用し、会社データのセキュリティを強化しました。 次の手順として、会社データの保護機能を上げる他の方法について学習できます。次のようなものがあります。 
 

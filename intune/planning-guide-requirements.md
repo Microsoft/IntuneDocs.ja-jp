@@ -4,7 +4,7 @@ description: "この記事は、Microsoft Intune クラウドのみの実装に�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: fd8cb5f7-19f0-4d80-8825-2bafa49624af
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 65a1fb8fb41fa8d9f3e707c73bf752a997a8a1a1
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 7f4f080201d1a089a8ae10a6acf81c0c28fa33c9
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="determine-use-case-scenario-requirements"></a>ユース ケース シナリオの要件の決定
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/01/2017
 
 組織のユース ケースの要件の例を次に示します。ここでは、各ユース ケースとサブ ユース ケースのシナリオ、組織グループ、モバイル デバイス プラットフォームに対する異なる要件セットを示します。 次の表を使用して、組織のユース ケースの要件を入力することもできます。
 
-| **ユース ケース** | **サブ ユース ケース** | **グループ** | **デバイス プラットフォーム** | **Requirements** |
+| **ユース ケース** | **サブ ユース ケース** | **グループ** | **デバイス プラットフォーム** | **要件** |
 |:---:|:---:|:---:|:---:|:---:|
 | 企業 | インフォメーション ワーカー | 人事、財務 | iOS | 電子メールのセキュリティ保護、デバイスの設定、プロファイル、アプリ |                                                          
 | 企業 | 役員 | 人事、財務 | iOS | 電子メールのセキュリティ保護、デバイスの設定、プロファイル、アプリ |                                                         
@@ -62,6 +62,6 @@ ms.lasthandoff: 11/01/2017
     - アプリの保護ポリシー付きの Office 365
     - アプリの保護ポリシー付きの基幹業務 (LOB)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 次のセクションでは、[Intune ロールアウト計画を作成する方法](planning-guide-rollout-plan.md)についてのガイダンスを提供します。

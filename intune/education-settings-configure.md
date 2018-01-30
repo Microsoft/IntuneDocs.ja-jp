@@ -5,7 +5,7 @@ description: "Intune を使用して、管理対象デバイスで Windows 10 �
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 12e36761320557f6af9554d3b671fc133253c13c
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: b50c35dc805d033bd905105c22c4ec287dfaa1b7
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Microsoft Intune で Windows 10 教育設定を構成する方法
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/15/2017
 
 ## <a name="create-a-device-profile-containing-education-profile-settings"></a>教育プロファイル設定を含むデバイス プロファイルの作成
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
@@ -48,7 +48,7 @@ ms.lasthandoff: 09/15/2017
 
 プロファイルが作成され、プロファイルの一覧ブレードに表示されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事を参照してください。
 

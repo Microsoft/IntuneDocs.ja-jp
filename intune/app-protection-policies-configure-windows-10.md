@@ -5,7 +5,7 @@ description: "Azure AD でモバイル アプリケーション管理 (MAM) プ�
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 91e26256d220ba70e5ad6daa3910d34eea8bb5ed
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 3254adc66c5fd5dc991364c3a33aabef8ac2030b
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Windows 10 用のアプリ保護ポリシーを構成する準備をする
 
@@ -54,6 +54,6 @@ Azure AD で MAM プロバイダーを設定して、Windows 10 用モバイル 
 
 5.  **[Save]**(保存) をクリックします。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [WIP アプリ保護ポリシーを作成する](windows-information-protection-policy-create.md)

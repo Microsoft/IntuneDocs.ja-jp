@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ba593c08-1a78-4013-8525-b45a948772ec
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f9c91c85b4a93fb211b5cd278dd82277a58cb08e
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: ab67a6f2fd1f861ba197464a9e369ca0b54e6b5d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Android デバイスは暗号化されるように見えるが、ポータル サイトではそのように認識されていない
 
@@ -36,10 +37,6 @@ ms.lasthandoff: 12/12/2017
 
 いくつかの Android デバイスでは、デバイスがセキュリティ保護されていることを確認するためにスタートアップ PIN を作成する必要があります。 異なる製造元によるさまざまな Android のバージョンが存在します。 このオプションを有効にする設定アプリで場所を見つけることにより、この問題を解決できます。 たとえば、Samsung Galaxy S7 では、**[設定]** > **[ロック画面とセキュリティ]** > **[安全な起動]** と移動して、安全なスタートアップを有効にします。  
 
-### <a name="downgrade-your-version-of-android"></a>Android のバージョンのダウングレード
-
-デバイスで Android 6.0 以降にダウングレードできる場合は、ダウングレードします。 デバイスのダウングレードには、データ損失のリスクがあります。 そのため、会社のサポートに問い合わせて、この問題を解決することをお勧めします。 会社のサポートの連絡先情報は、[ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)で入手できます。
-
 ### <a name="encrypt-the-entire-device"></a>デバイス全体を暗号化します
 
 一部のデバイスでは、デバイス全体と使用済み領域のみのどちらを暗号化するかを選ぶことができます。 "使用済み領域のみ" ではなく、デバイス全体の暗号化を選んでください。 既に使用済み領域のみを暗号化している場合は、次のようにします。
@@ -48,6 +45,10 @@ ms.lasthandoff: 12/12/2017
 2. 使用済み領域の暗号化を解除します
 3. デバイス全体を暗号化します
 4. デバイスを再度登録します
+
+### <a name="downgrade-your-version-of-android"></a>Android のバージョンのダウングレード
+
+デバイスで Android 6.0 以降にダウングレードできる場合は、ダウングレードします。 デバイスのダウングレードには、データ損失のリスクがあります。 そのため、会社のサポートに問い合わせて、この問題を解決することをお勧めします。 会社のサポートの連絡先情報は、[ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)で入手できます。
 
 ## <a name="specific-manufacturer-issues"></a>特定の製造元の問題
 

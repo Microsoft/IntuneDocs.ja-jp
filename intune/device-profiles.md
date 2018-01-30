@@ -5,7 +5,7 @@ description: "Intune デバイス プロファイルについて、またプロ�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 08/23/2017
 ms.topic: get-started-article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 101e19a9de67a3a47f488988957bc1e7ef7626a3
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 0c745f9f745802e0de7a58e3dd7570c0e363ab5d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Microsoft Intune のデバイス プロファイルとは
 
@@ -85,5 +85,5 @@ Windows 情報保護はデータ漏えいの防止に役立ち、それ以外の
 カスタム設定により、Intune に組み込まれていないデバイス設定を割り当てることができます。 たとえば、Android デバイスでは、デバイスを構成する OMA-URI 値を指定できます。 iOS デバイスの場合は、Apple Configurator で作成した構成ファイルをインポートできます。
 詳細については、[カスタム設定の構成方法](custom-settings-configure.md)に関するページを参照してください。サポート対象: Android、iOS、macOS、Windows Phone 8.1。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 一覧からいずれかの種類のプロファイルを選択して、デバイスの構成を開始します。
