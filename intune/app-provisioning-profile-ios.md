@@ -5,7 +5,7 @@ description: "Intune には、有効期限が近づいているアプリを持�
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 05/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b58fb0d9b69e875736b5d2ea884ae9d3453b481
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 96ae009abe8d8351052ede4efca779add01dc335
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="use-ios-mobile-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>iOS モバイル プロビジョニング プロファイルを使用して、アプリが期限切れにならないようにする
 
@@ -39,9 +39,9 @@ iPhone および iPad に割り当てられた Apple iOS 基幹業務アプリ�
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>iOS モバイル アプリ プロビジョニング プロファイルを作成する方法
 
-1. Azure ポータルにサインインします。
+1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[モバイル アプリ]** を選択します。
+3. **[Intune]** ブレードで、**[モバイル アプリ]** を選びます。
 1.  **[Mobile Apps]** ワークロードで、**[管理]**、**[iOS プロビジョニング プロファイル]** の順に選択します。
 2.  プロファイルの一覧ブレードで、**[プロファイルの作成]** を選択します。
 3. **[プロファイルの作成]** ブレードで、次の値を構成します。
@@ -50,6 +50,6 @@ iPhone および iPad に割り当てられた Apple iOS 基幹業務アプリ�
     - **プロファイル ファイルのアップロード** - **[インポート]** を選択し、Apple Developer Web サイトからダウンロードした Apple モバイル構成プロファイル ファイル (拡張子 **.mobileprovision**) を選択します。
 4. 終了したら、**[作成]** を選択します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 必要な iOS デバイスにプロファイルを割り当てます。 詳細については、「[デバイス プロファイルを割り当てる方法](device-profile-assign.md)」の手順をご覧ください。

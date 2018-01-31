@@ -5,7 +5,7 @@ description: "Windows デバイス用のコンプライアンス ポリシーの
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76d1bb091553fbe5a1220c818289f59f4ef4100b
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 59a68bbe3c7030e44e4b1eacb5601dd7a3121673
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune で Windows デバイス用のデバイス コンプライアンス ポリシーを作成する方法
 
@@ -36,8 +36,8 @@ ms.lasthandoff: 09/09/2017
 |----| ----| --- |
 | **PIN またはパスワードの構成** | 修復 | 修復 |   
 | **デバイスの暗号化** | 該当なし | 修復 |   
-| **脱獄またはルート化されたデバイス** | 該当なし | 該当なし |  
-| **電子メールのプロファイル** | 該当なし | 該当なし |   
+| **脱獄またはルート化されたデバイス** | 適用できません | 適用できません |  
+| **電子メールのプロファイル** | 適用できません | 適用できません |   
 | **最小 OS バージョン** | 検疫済み | 検疫済み |   
 | **最大 OS バージョン** | 検疫済み | 検疫済み |   
 | **Windows 正常性構成証明書** | 検疫済み: Windows 10 および Windows 10 Mobile|該当なし: Windows 8.1 |
@@ -142,7 +142,7 @@ Microsoft アカウントでアクセスされるデバイスについては、*
   - 小文字
   - 大文字
   - 記号
-  - [数字]: この設定で大きな数値を設定する場合、ユーザーはより複雑なパスワードを作成する必要があります。
+  - 数字: この設定で大きな数値を設定する場合、ユーザーはより複雑なパスワードを作成する必要があります。
 
 Microsoft アカウントでアクセスされるデバイスについては、**[パスワードの最小文字数]** が 8 文字より長い場合、または **[文字セットの最小数]** が 2 文字よりも大きい場合、コンプライアンス ポリシーは正しく評価を行うことができません。
 
