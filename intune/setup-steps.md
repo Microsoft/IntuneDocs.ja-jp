@@ -4,8 +4,8 @@ description: "Intune サブスクリプションの使用を開始するため�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
-ms.date: 10/31/2017
+manager: dougeby
+ms.date: 01/24/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54f2bdd4a415cb8a4432a8bdcf93c56ba995c201
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: a1203cf22fad93f245508284d93024df40e11b9a
+ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="set-up-intune"></a>Intune をセットアップする
 
@@ -47,3 +47,4 @@ Intune サブスクリプションの設定や MDM 権限の設定など、一�
 | 8 | [デバイスを構成する](device-profiles.md) - デバイス設定を管理するプロファイルを設定します。 デバイス プロファイルでは、電子メール、VPN、Wi-Fi、デバイス機能の設定を事前構成できます。 デバイスを制限し、デバイスとデータの両方を保護することもできます。  |
 | 9 | [ポータル サイトをカスタマイズする](company-portal-app.md) - ユーザーがデバイスの登録とアプリのインストールに使用する Intune ポータル サイトをカスタマイズします。 これらの設定は、ポータル サイト アプリと Intune ポータル サイト Web サイトの両方に表示されます。 |
 | 10 | [デバイス登録を有効にする](mdm-authority-set.md) - MDM 権限を設定し、特定のプラットフォームを有効にすることで、iOS、Windows、Android、Mac デバイスの Intune 管理を有効にします。 |
+| 11 | [アプリ ポリシーを構成する](app-protection-policy.md) - Microsoft Intune でのアプリ保護ポリシーに基づいて特定の設定を指定します。 |

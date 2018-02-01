@@ -5,7 +5,7 @@ description: "Intune カスタム プロファイルを使用して、事前共�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d78ec07a31a54ff16cb6ca7deb2a883da632139
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 395a7136630a9393f44037c65e3c8db760149c38
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>カスタム デバイス プロファイルを使用し、事前共有キーを使用した Wi-Fi プロファイルを作成します。
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -210,7 +210,5 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 PSK で Wi-Fi プロファイルを展開する前に、デバイスがエンドポイントに直接接続できることを確認します。
 
 キー (パスワードまたはパスフレーズ) をローテーションで使用するときは、ダウンタウンを予想し、展開を適宜計画します。 新しい Wi-Fi プロファイルは非稼働時間中にプッシュすることを検討してください。 また、接続に影響が出る可能性をユーザーに知らせます。
- 
-円滑に移行と、適切なタイミングでのポリシー更新の配信を実現するために、デバイスの通信チャネルを 1 つ以上 Intune に対して常に開いておく必要があります。 これを行うには、セルラー接続を使用するか、Intune エンドポイントにのみユーザーを接続するゲスト Wi-Fi アクセスを提供します。
 
-
+切り替え操作がスムーズに行われるように、エンド ユーザーのデバイスにインターネットへの代替接続があることを確認します。 たとえば、エンド ユーザーは、ゲスト WiFi (または他の何らかの WiFi ネットワーク) に戻したり、Intune と通信するために携帯電話接続を使うことができたりする必要があります。 これにより、ユーザーは、企業の WiFi プロファイルがデバイスで更新されたときに、ポリシーの更新を引き続き受信できます。

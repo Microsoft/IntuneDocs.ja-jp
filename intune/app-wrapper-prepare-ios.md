@@ -4,7 +4,7 @@ description: "このトピックの情報を使用して、アプリ自体のコ
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: dc031b12ed49766c70a6a4ff373a7c5843ca21ad
-ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
+ms.openlocfilehash: 4925fc86596437d0560bd7fa2598eaf95126df16
+ms.sourcegitcommit: cede2e15bd62f1073131fbc9af7623cdfc3730cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために iOS アプリを準備する
 
@@ -172,6 +172,9 @@ Intune によってラップされたアプリを配布するには、次が必�
 3. EULA に同意する場合は **[同意する]** をクリックします。コンピューターにパッケージがマウントされます。
 
 4.  **IntuneMAMPackager** フォルダーを開き、その内容を macOS コンピューターに保存します。 これでアプリ ラッピング ツールを実行する準備が整いました。
+
+> [!NOTE]
+> Intune MAM Packager は、macOS コンピューターに個別にマウントでき、結果として、ラッピング コマンドを実行するときに "ファイルが見つかりません" というエラーが発生する可能性があります。 そのため、IntuneMAMPackager フォルダーの内容を移動にすると、Packager へのパスがラッピングの間に見つかります。
 
 ## <a name="run-the-app-wrapping-tool"></a>アプリ ラッピング ツールを実行する
 

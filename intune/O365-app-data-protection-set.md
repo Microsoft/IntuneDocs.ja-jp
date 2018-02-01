@@ -5,7 +5,7 @@ description: "Office 365 アプリの管理ウィザードのサポート ドキ
 keywords: 
 author: lindavr
 ms.author: lindavr
-manager: angrobe
+manager: dougeby
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b818152d2172ccf85a8323ba3ff70a0b270d20df
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 36dc2924602ffa060d01d3ba932c657fd52552c7
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>管理対象の Office 365 アプリの基本的な保護に関するユーザー エクスペリエンス
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 09/09/2017
 
 このウィザードでは、次のポリシーが有効になります。
 
-**iOS**
+**Android**
 * [アプリ データの暗号化]
 
 **Android**
@@ -92,27 +92,27 @@ ms.lasthandoff: 09/09/2017
 | **説明**|Manage Office 365 apps (Office 365 アプリの管理) ウィザードで作成されました| |
 | |  | |
 | **設定の名前** |**iOS ポリシーの値** | **Android ポリシーの値** |
-|[iTunes と iCloud でのバックアップを禁止する]| いいえ | N/A |
-|[Android でのバックアップを禁止する] |N/A | いいえ|
+|[iTunes と iCloud でのバックアップを禁止する]| [いいえ] | N/A |
+|[Android でのバックアップを禁止する] |N/A | [いいえ]|
 |[アプリで他のアプリへのデータ転送を許可する] | すべてのアプリ | すべてのアプリ|
 |[アプリで他のアプリからのデータの受信を許可する]| すべてのアプリ | すべてのアプリ|
-|[名前を付けて保存] を禁止する | いいえ | いいえ|
+|[名前を付けて保存] を禁止する | [いいえ] | [いいえ]|
 |他のアプリとの間で切り取り、コピー、貼り付けを制限する | すべてのアプリ | すべてのアプリ |
-|[Web コンテンツを会社の管理対象ブラウザーで表示するように制限する] | いいえ| いいえ|
-|[アプリ データの暗号化] | デバイスがロックされている場合 | [はい]|
-|連絡先の同期を無効にする | いいえ| いいえ|
-|印刷を無効にする | いいえ | いいえ|
-|アクセスのために PIN を要求する | いいえ | [はい]|
+|[Web コンテンツを会社の管理対象ブラウザーで表示するように制限する] | [いいえ]| [いいえ]|
+|[アプリ データの暗号化] | デバイスがロックされている場合 | はい|
+|連絡先の同期を無効にする | [いいえ]| [いいえ]|
+|印刷を無効にする | [いいえ] | [いいえ]|
+|アクセスのために PIN を要求する | [いいえ] | はい|
 |[暗証番号をリセットするまでの試行数] | N/A |5|
-|単純な PIN を許可する | N/A |Yes|
+|単純な PIN を許可する | N/A |はい|
 |PIN の長さ | N/A | 4|
-|PIN の代わりに指紋を要求する | N/A | [はい] |
-|[アクセスには会社の資格情報が必要] | いいえ | いいえ|
-|[脱獄またはルート化されたデバイスで管理対象アプリが実行されないようにブロックする] | いいえ | いいえ|
+|PIN の代わりに指紋を要求する | N/A | はい |
+|[アクセスには会社の資格情報が必要] | [いいえ] | [いいえ]|
+|[脱獄またはルート化されたデバイスで管理対象アプリが実行されないようにブロックする] | [いいえ] | [いいえ]|
 |(分数) 後に、アクセス要件を再確認する - タイムアウト | 30 | 30|
 |(分数) 後に、アクセス要件を再確認する - オフラインの猶予期間 | 720 |720|
 |アプリのデータがワイプされるまでのオフライン期間 (日数) | 90 | 90|
-|スクリーン キャプチャをブロックする (Android デバイスのみ) | N/A | いいえ |
+|スクリーン キャプチャをブロックする (Android デバイスのみ) | N/A | [いいえ] |
 
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>Android デバイスでのみアプリの PIN ポリシーが構成されるのはなぜですか。
 iOS と Android で暗号化の動作が異なります。
@@ -124,8 +124,8 @@ Android の場合、Intune アプリ保護ポリシーに関連付けられて�
 これらのポリシー設定は、組織の要件に合わせていつでも編集できます。
 
 ### <a name="how-can-i-view-and-edit-the-policies-created-by-the-wizard"></a>ウィザードで作成したポリシーを表示および編集するにはどうすればよいですか。
-これらのポリシーや、Intune Azure Portal で作成したポリシーを表示または更新するには、ダッシュボードで **[アプリの管理] ** > ** [アプリ保護ポリシー]** の順に選択します。 右側にポリシーの一覧が開きます。 設定を表示および編集するポリシーを選択します。 <br/>
+これらのポリシーや、Intune Azure Portal で作成したポリシーを表示または更新するには、ダッシュボードで **[アプリの管理]**  >  **[アプリ保護ポリシー]** の順に選択します。 右側にポリシーの一覧が開きます。 設定を表示および編集するポリシーを選択します。 <br/>
 ![ポリシーを表示するユーザー インターフェイス パスの画像](./media/image-for-faq.png)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 アプリ保護ポリシーの詳細については、[こちら](https://docs.microsoft.comapp-protection-policy.md)を参照してください。

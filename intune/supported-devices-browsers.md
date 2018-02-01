@@ -4,7 +4,7 @@ description: "Intune デバイス管理でサポートされるデバイス プ�
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 01/03/2018
 ms.topic: get-started-article
 ms.prod: 
@@ -14,28 +14,28 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56516562b9a7510020475d226c74bf719bdd33a3
-ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
+ms.openlocfilehash: 1e6b14d5152df8420c5d358ccd9057d7ba427800
+ms.sourcegitcommit: d9de1e92c3913f731d5da3c51a5e1e9b2686894b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/25/2018
 ---
-# <a name="supported-devices-and-browsers"></a>サポートされるデバイスとブラウザー
+# <a name="supported-operating-systems-and-browsers"></a>サポートされるオペレーティング システムとブラウザー
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-この記事は、企業でデバイス管理を担当するシステム管理者を対象としています。 電話への Intune インストールについては、[管理デバイスでの作業](/intune-user-help/company-portal-frequently-asked-questions)に関するページを参照してください。
+この記事は、企業でデバイス管理を担当するシステム管理者を対象としています。 デバイスへの Intune のインストールについては、[管理デバイスでの作業](/intune-user-help/company-portal-frequently-asked-questions)に関するページを参照してください。
 
 Microsoft Intune のセットアップを開始する前に、次の要件を確認してください。
 
-- [サポートされているデバイスとコンピューター](#intune-supported-devices)
+- [サポートされるオペレーティング システム](#intune-supported-operating-systems)
 - [Intune 対応の Web ブラウザーの一覧](#intune-supported-web-browsers)
 
 [Intune のネットワーク帯域幅の使用法](network-bandwidth-use.md) ([クラシック ポータル](/intune-classic/get-started/network-bandwidth-use)) についてもよく理解しておく必要があります。
 
-## <a name="intune-supported-devices"></a>Intune 対応デバイス
+## <a name="intune-supported-operating-systems"></a>Intune でサポートされるオペレーティング システム
 
-次のデバイスを Intune モバイル デバイス管理を使用して管理できます。
+以下のオペレーティング システムを実行しているデバイスを管理できます。
 
 [!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
@@ -85,7 +85,6 @@ Microsoft Intune のセットアップを開始する前に、次の要件を確
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-Intune は Windows Server オペレーティング システムを管理できません。
 
 ### <a name="windows-pc-software-client"></a>Windows PC ソフトウェア クライアント
 
