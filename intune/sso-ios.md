@@ -5,7 +5,7 @@ description: "iOS デバイスのシングル サインオン用に Intune を�
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/7/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff71239a360b09ca831a6e99f5f7a759b08f5d56
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 07ac355232c1e4ac290c87191d3764e3df45327e
+ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="configure-intune-for-ios-device-single-sign-on"></a>iOS 用 Intune のデバイス シングル サインオンを構成する
 
@@ -89,7 +89,7 @@ URL の一致パターンは、`http://` または `https://` で始まってい
 
 エンド ユーザーのデバイス上のアプリで、シングル サインオン ペイロードを使うことができるものを示します。
 
-`AppIdentifierMatches` 配列には、アプリ バンドル ID と一致する文字列が含まれる必要があります。 これらの文字列では、完全に一致する値 (例: `com.contoso.myapp`) を指定するか、ワイルドカード文字 * を使ってバンドル ID のプレフィックス一致を指定することができます。 ワイルドカード文字は、ピリオド文字 (.) の後に指定する必要があり、文字列の最後で 1 回だけ使えます (例: `com.contoso.*`)。 ワイルドカードが含まれる場合は、バンドル ID がプレフィックスで始まるすべてのアプリが、アカウントへのアクセスを許可されます。
+`AppIdentifierMatches` 配列には、アプリ バンドル ID と一致する文字列が含まれる必要があります。 これらの文字列では、完全に一致する値 (例: `com.contoso.myapp`) を指定するか、ワイルドカード文字 *\ を使ってバンドル ID のプレフィックス一致を指定することができます。 ワイルドカード文字は、ピリオド文字 (.) の後に指定する必要があり、文字列の最後で 1 回だけ使えます (例: `com.contoso.*`)。 ワイルドカードが含まれる場合は、バンドル ID がプレフィックスで始まるすべてのアプリが、アカウントへのアクセスを許可されます。
 
 **[アプリ名]** フィールドは、バンドル ID の識別を容易にするわかりやすい名前を追加するために使われます。
 
@@ -97,6 +97,6 @@ URL の一致パターンは、`http://` または `https://` で始まってい
 
 エンド ユーザーを (パスワードではなく) 証明書で認証する場合は、このフィールドを使って、認証証明書としてユーザーに展開される SCEP 証明書または PFX 証明書を選びます。 通常、これは VPN、WiFi、電子メールなどの他のプロファイル用にユーザーに展開されるものと同じ証明書です。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 デバイスの機能の構成について詳しくは、「[Microsoft Intune でデバイスの機能設定を構成する方法](device-features-configure.md)」をご覧ください。

@@ -5,7 +5,7 @@ description: "Managed Browser アプリケーションを展開して、Web 閲�
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7619efc305881f1ad56a7c14e5d92c05fb0c6d77
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 613099d1d30a8be3787bd0004a376302da3dc231
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune で Managed Browser ポリシーを使ってインターネット アクセスを管理する
 
@@ -63,7 +63,7 @@ Intune Managed Browser では、[Microsoft Intune アプリケーション パ�
 
 ## <a name="create-a-managed-browser-app-configuration"></a>Managed Browser アプリの構成を作成する
 
-1.  Azure ポータルにサインインします。
+1.  Azure Portal にサインインします。
 2.  **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3.  [管理] リストの **[アプリの構成]** ブレードで、**[アプリ構成ポリシー]** を選択します。
 4.  **[アプリ構成ポリシー]** ブレードで **[追加]** を選択します。
@@ -167,7 +167,7 @@ Managed Browser アプリの構成を作成する手順に従い、以下のキ�
 
     -   https の場合はポート 443
 
-    ポート番号にワイルドカードを使用することはできません。 たとえば、**http&colon;//www&period;contoso&period;com:*;** や **http&colon;//www&period;contoso&period;com: /*;** はサポートされていません。
+    ポート番号にワイルドカードを使用することはできません。 たとえば、**http&colon;//www&period;contoso&period;com:*;** and **http&colon;//www&period;contoso&period;com: /*;** はサポートされていません。
 
 -   URL を指定するときに使用できるパターンの詳細については、次の表を参照してください。
 

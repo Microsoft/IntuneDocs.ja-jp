@@ -5,8 +5,8 @@ description: "Intune を使用して管理対象デバイスをリモートか�
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
-ms.date: 11/21/2017
+manager: dougeby
+ms.date: 01/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45d27b709ba8d4ff1d8fb4417a217ad008c19c36
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: ecd7fa03b35e91b5a77906858fb251348796704d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="remotely-lock-managed-devices-with-intune"></a>管理されたデバイスを Intune でリモートからロックする
 
@@ -29,14 +29,19 @@ ms.lasthandoff: 01/12/2018
 
 ## <a name="supported-platforms"></a>サポートされているプラットフォーム
 
-- Windows - サポートされていません
-- Windows Phone - Windows Phone 8.1 以降でサポートされています
-- iOS - サポートされています
-- macOS - サポートされています
+リモート ロックは、次のプラットフォームでサポートされます。
 
-    > [!Note]  
-    > 6 桁の回復用 PIN を設定します。 ロックされているとき、別のデバイス アクションが送信されるまで、**デバイス概要**ブレードにその PIN が表示されます。
-- Android - サポートされています
+|プラットフォーム|サポートの状態|
+|---|---|
+|Android|はい|
+|iOS|はい|
+|macOS|はい|
+|Windows 10|はい|
+|Windows 10 Mobile|はい|
+|Windows Phone|はい。Windows Phone 8.1 以降の場合|
+
+> [!NOTE]  
+> macOS デバイスの場合は、6 桁の回復用 PIN を設定します。 ロックされているとき、別のデバイス アクションが送信されるまで、**デバイス概要**ブレードにその PIN が表示されます。
 
 ## <a name="how-to-remote-lock-a-device"></a>デバイスをリモート ロックする方法
 
