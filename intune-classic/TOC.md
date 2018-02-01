@@ -19,7 +19,7 @@
 ### [ポータル サイトをカスタマイズする](/intune/company-portal-customize?toc=/intune-classic/toc.json)
 ### [デバイスの登録](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [構成後のタスク](get-started/post-configuration-tasks.md)
-## 次のステップ
+## 次の手順
 ### [Office 365 モバイル アプリから会社のデータが漏えいすることを防止する](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 ### [データの暗号化により会社のデータを保護する](get-started/protect-data-encryption.md)
 ### [ユーザーにモバイル アプリを発行する](get-started/publish-mobile-apps-to-users.md)
@@ -159,7 +159,7 @@
 #### [デバイス コンプライアンス ポリシーの作成](deploy-use/create-a-device-compliance-policy-in-microsoft-intune.md)
 #### [Android](deploy-use/android-compliance-policy-settings-in-microsoft-intune.md)
 #### [Android for Work](deploy-use/afw-compliance-policy-settings-in-microsoft-intune.md)
-#### [iOS](deploy-use/ios-compliance-policy-settings-in-microsoft-intune.md)
+#### [Android](deploy-use/ios-compliance-policy-settings-in-microsoft-intune.md)
 #### [Windows と Windows Phone](deploy-use/windows-compliance-policy-settings-in-microsoft-intune.md)
 #### [デバイス コンプライアンス ポリシーを展開する](deploy-use/deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 

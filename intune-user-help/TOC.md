@@ -30,6 +30,7 @@
 #### [デバイスのコンプライアンスを確認する](check-compliance-on-your-device-android.md)
 #### [バッテリー節約機能モードでの Outlook の電子メールの同期](power-saving-mode-android.md)
 #### [Samsung KNOX に関する一般的な問題の解決](samsung-knox-errors-android.md)
+#### [Outlook をインストールするデバイスを更新する](update-device-outlook-android.md)
 
 #### ログを使用した問題の解決
 ##### [詳細ログ記録を有効にする](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
@@ -85,6 +86,7 @@
 #### [デバイスの識別](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 #### [シリアル番号の確認](how-do-i-find-the-serial-number-on-my-device-ios.md)
 #### [iOS デバイスの更新](you-need-to-update-your-ios-device.md)
+#### [Outlook をインストールするデバイスを更新する](update-device-outlook-ios.md)
 #### [使用しているバージョンの iOS がまだサポートされていない](your-ios-version-isnt-yet-supported.md)
 
 ### Mobile Threat Defense
