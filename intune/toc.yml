@@ -126,6 +126,10 @@
           items:
             - name: ネットワーク構成
               href: network-bandwidth-use.md
+            - name: Windows Holographic for Business
+              href: windows-holographic-for-business.md
+            - name: Windows Holographic のアップグレード
+              href: holographic-upgrade.md
         - name: Intune にサインインする
           href: account-sign-up.md
         - name: ドメインを構成する
@@ -317,6 +321,8 @@
               href: device-restrictions-windows-10.md
             - name: Windows 10 Team
               href: device-restrictions-windows-10-teams.md
+            - name: Windows Holographic for Business
+              href: device-restrictions-windows-holographic.md
             - name: Android for Work
               href: device-restrictions-android-for-work.md
         - name: 電子メールの設定を構成する
@@ -592,6 +598,8 @@
               href: custom-settings-windows-phone-8-1.md
             - name: Windows 10
               href: custom-settings-windows-10.md
+            - name: Windows Holographic for Business
+              href: custom-settings-windows-holographic.md
             - name: Android for Work
               href: custom-settings-android-for-work.md
         - name: Windows 基幹業務アプリのサイドロード
