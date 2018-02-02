@@ -4,7 +4,7 @@ description: "この記事では、移行における情報伝達計画と戦略
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 806e355acd84f5c70029f8612c444b077c0631e4
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: e36e917c035d4bbadccd629ef4cc21552cc62ec6
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="plan-communications"></a>通信手段の計画
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/31/2017
 -   **電子メール \#1:** 利点、見込み、スケジュールについて説明します。 この機会を利用して、Intune によって管理されるデバイスでアクセスが許可される他の新しいサービスを紹介します。<br/><br/>
 
 
-    -   [電子メール \#1 テンプレートをダウンロードする](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
+    -   [電子メール \# 1 テンプレートをダウンロードする](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
 <br></br>
 
 -   **電子メール \#2:** Intune からサービスにアクセスする準備が整ったことを発表します。 ユーザーに早速登録するよう伝えます。 移行の利点と戦略的な理由を再認識してもらいます。<br/><br/>
@@ -55,6 +55,6 @@ Intune では、ユーザーのデバイス登録を推進するその他のテ�
 
 -   「[FastTrack for EMS how to guides & emails (EMS 用 FastTrack: 方法ガイドとメール)](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c)」は、貴社のロゴでカスタマイズして、組織内での Intune と EMS の採用を促進できます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [条件付きアクセスでエンド ユーザーの導入を推進します](migration-guide-drive-adoption.md)。
