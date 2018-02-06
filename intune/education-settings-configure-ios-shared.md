@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c183af24e953f87e12e87654f767dd9a30f8509f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 044f3aaa81a2bb02662bec3d20ea51a2339b91a6
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>共有 iPad デバイスの Intune 教育設定を構成する方法
 
@@ -34,7 +34,7 @@ Intune は iOS Classroom をサポートしています。このアプリは、�
 共有 iPad 機能を使用するための前提条件:
 
 - [Apple School Manager](apple-school-manager-set-up-ios.md) と [School Data Sync (SDS)](https://support.office.com/article/Apple-School-Manager-integration-with-Intune-for-Education-and-School-Data-Sync-974bd1f9-2c7a-45cb-9447-b58166108617) の設定。
-- Apple School Manager 設定の一環として、生徒の[管理対象 Apple ID](http://help.apple.com/schoolmanager/#/tes78b477c81) を設定します。 管理対象 Apple ID の詳細については、[こちら](https://support.apple.com/en-us/HT205918)をご覧ください。
+- Apple School Manager 設定の一環として、生徒の[管理対象 Apple ID](http://help.apple.com/schoolmanager/#/tes78b477c81) を設定します。 管理対象 Apple ID の詳細については、[こちら](https://support.apple.com/HT205918)をご覧ください。
 - Apple School Manager から同期されたデバイス シリアル番号の登録プロファイルを作成します。
 
 ## <a name="step-1---import-your-school-data-into-azure-active-directory"></a>手順 1 - 学校のデータを Azure Active Directory にインポートする
