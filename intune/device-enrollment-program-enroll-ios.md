@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f472c144e9bcda965486f8e88d38aa9d27df165
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3e0163cc90e644bbae8f12759b473d81c9770bee
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する
 
@@ -79,7 +79,10 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
    ![DEP の MDM サーバー名を追加して [次へ] をクリックしたスクリーンショット。](./media/enrollment-program-token-add-server.png)
 
 5. **[Add &lt;ServerName&gt;\(<サーバー名> の追加\)]** ダイアログ ボックスが開き、**[Upload Your Public Key\(公開キーをアップロードする\)]** と表示されます。 **[Choose File]** (ファイルを選択) をクリックして .pem ファイルをアップロードし、**[Next]** (次へ) を選択します。  
+<<<<<<< 先頭
 
+=======
+>>>>>>> e19b417f8bc134dc5a5a9f60354f017ccc42fd88
 
 7. **[Deployment Programs](展開プログラム)** &gt; **[Device Enrollment Program]** &gt; **[Manage Devices](デバイスの管理)** の順に移動します。
 8. **[Choose Devices By\(デバイスの選択方法\)]** で、デバイスを識別する方法を指定します。
@@ -93,7 +96,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 
    Apple ポータルで、**[Deployment Programs\(配備プログラム\)]** &gt; **[Device Enrollment Program\(Device Enrollment Program\)]** &gt; **[View Assignment History\(割り当て履歴の表示\)]** の順に移動して、デバイスとその MDM サーバーの割り当てのリストを表示します。
 
-**手順 3:Enrollment Program トークンの作成に使った Apple ID を入力します。**<br>Azure ポータルの Intune で、後で参照するための Apple ID を指定します。 すべてのデバイスを再登録しなくて済むように、今後、Enrollment Program トークンを更新するときはこの ID を使用します。
+**手順 3:Enrollment Program トークンの作成に使った Apple ID を入力します。**<br>Azure ポータルの Intune で、後で参照するための Apple ID を指定します。
 
 ![Enrollment Program トークンの作成に使った Apple ID の指定と、Enrollment Program トークンの参照のスクリーンショット。](./media/enrollment-program-token-apple-id.png)
 
@@ -117,27 +120,27 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 4. **[デバイス管理の設定]** を選択し、次のプロファイル設定を構成します。
 
   ![管理モードが選択されているスクリーン ショット。 デバイスには [監督下]、[ロックされた登録]、[ペアリングの許可] ([すべて拒否] に設定されている) の設定があります。 [Apple Configurator の証明書] は、新しい Enrollment Program プロファイルでは淡色表示されています。](./media/enrollment-program-profile-mode.png)
-    - **[監督下]** - より多くの管理オプションが使用可能な管理モードです。既定でアクティベーション ロックは無効になります。 このチェック ボックスをオフのままにすると、管理機能が制限されます。 Microsoft は、多数の iOS デバイスを展開する組織に対して特に、監視モードを有効にするメカニズムとして DPE の利用を推奨しています。
+  - **[監督下]** - より多くの管理オプションが使用可能な管理モードです。既定でアクティベーション ロックは無効になります。 このチェック ボックスをオフのままにすると、管理機能が制限されます。 Microsoft は、多数の iOS デバイスを展開する組織に対して特に、監視モードを有効にするメカニズムとして DPE の利用を推奨しています。
 
  > [!NOTE]
  > デバイスの登録後、Intune を利用してデバイスの監視モードを設定することはできません。 登録後に監視モードを有効にする唯一の方法は、USB ケーブルで iOS デバイスを Mac に接続し、Apple Configurator を使用することです。 デバイスがリセットされ、監視モードで構成されます。 詳細については、[Apple Configurator ドキュメント](http://help.apple.com/configurator/mac/2.3)を参照してください。監視対象となったデバイスのロック画面には、"この iPhone は Contoso が管理しています" と表示されます。 また、"この iPhone は監視されています。 Contoso はインターネット トラフィックを監視し、このデバイスの位置を特定できます。" と、 **[設定]**、**[全般]**、**[情報]** の順に選択すると表示されます。
 
-    - **[ロックされた登録]** - ([管理モード] を [監督下] にする必要があります) 管理プロファイルの削除を許可する iOS 設定を無効にします。 このチェック ボックスをオフのままにすると、[設定] メニューから管理プロファイルを削除できます。 デバイスの登録後は、デバイスを出荷時の設定にリセットしないと、この設定を変更することができません。
+  - **[ロックされた登録]** - ([管理モード] を [監督下] にする必要があります) 管理プロファイルの削除を許可する iOS 設定を無効にします。 このチェック ボックスをオフのままにすると、[設定] メニューから管理プロファイルを削除できます。 デバイスの登録後は、デバイスを出荷時の設定にリセットしないと、この設定を変更することができません。
 
   - **[有効な Shared iPad]** - Apple の Device Enrollment Program は共有の iPad をサポートしていません。
 
-    - **[ペアリングの許可]** - iOS デバイスをコンピューターと同期できるかどうかを指定します。 **[証明書による Apple Configurator の許可]** を選択した場合は、**[Apple Configurator の証明書]** で証明書を選択する必要があります。
+  - **[ペアリングの許可]** - iOS デバイスをコンピューターと同期できるかどうかを指定します。 **[証明書による Apple Configurator の許可]** を選択した場合は、**[Apple Configurator の証明書]** で証明書を選択する必要があります。
 
-    - **[Apple Configurator の証明書]** - **[ペアリングの許可]** で **[証明書による Apple Configurator の許可]** を選択した場合は、インポートする Apple Configurator の証明書を選択します。
+  - **[Apple Configurator の証明書]** - **[ペアリングの許可]** で **[証明書による Apple Configurator の許可]** を選択した場合は、インポートする Apple Configurator の証明書を選択します。
 
   **[保存]** を選びます。
 
 5. **[セットアップ アシスタントの設定]** を選択し、次のプロファイル設定を構成します。
 
   ![新しい Enrollment Program プロファイルで使用可能な設定が選択されている構成設定のスクリーンショット。](./media/enrollment-program-profile-settings.png)
-    - **[部署名]** - アクティブ化中にユーザーが **[About Configuration (構成について)]** をタップすると表示されます。
+  - **[部署名]** - アクティブ化中にユーザーが **[About Configuration (構成について)]** をタップすると表示されます。
 
-    - **[部署の電話番号]** - アクティブ化中にユーザーが **[ヘルプが必要ですか]** ボタンをクリックすると表示されます。
+  - **[部署の電話番号]** - アクティブ化中にユーザーが **[ヘルプが必要ですか]** ボタンをクリックすると表示されます。
     - **セットアップ アシスタントのオプション** - これらの省略可能な設定は、後で iOS の **[設定]** メニューで設定できます。
         - **パスコード**
         - **ロケーション サービス**
@@ -163,9 +166,9 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
   
 2. **[同期]** ブレードで、**[同期を要求]** を選択します。進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
 
-  ![[同期を要求] リンクが選ばれている [同期] ブレードのスクリーンショット。](./media/enrollment-program-device-request-sync.png)
+   ![[同期を要求] リンクが選ばれている [同期] ブレードのスクリーンショット。](./media/enrollment-program-device-request-sync.png)
 
-  許容される Enrollment Program トラフィックについての Apple の規約に準拠するため、Intune では次の制限が課せられます。
+   許容される Enrollment Program トラフィックについての Apple の規約に準拠するため、Intune では次の制限が課せられます。
      -  完全な同期は 7 日に 1 回だけ実行できます。 Intune は、完全な同期中に、Intune に割り当てられているすべての Apple シリアル番号を更新します。 前回の完全同期の 7 日以内に完全同期が試みられると、Intune は Intune にまだ一覧表示されていないシリアル番号のみを更新します。
      -  すべての同期要求は、完了までに 15 分与えられます。 この時間中または要求が成功するまで、**[同期]** ボタンは無効にされます。
      - Intune は、24 時間ごとに新規のデバイスと削除されたデバイスを Apple と同期します。
@@ -195,3 +198,5 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 Apple と Intune の間の同期と管理を有効にし、DEP デバイスを登録できるようにプロファイルを割り当てました。 ユーザーにデバイスを配布できるようになりました。 ユーザー アフィニティがあるデバイスでは、各ユーザーに Intune ライセンスを割り当てる必要があります。 ユーザー アフィニティがないデバイスでは、デバイスのライセンスが必要です。 デバイスが出荷時の設定にリセットされるまで、アクティブ化されたデバイスは登録プロファイルを適用できません。
 
 「[Intune で iOS デバイスを Device Enrollment Program に登録する](/intune-user-help/enroll-your-device-dep-ios)」を参照してください。 
+
+
