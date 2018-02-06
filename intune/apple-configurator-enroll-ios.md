@@ -15,11 +15,11 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3554623db2a153fd7f281a3b8453bedf1de3c77a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3e79ee1ddd2f8a8a9d7a3089e21b8807b9895d2c
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Apple Configurator による iOS デバイスの登録
 
@@ -71,8 +71,8 @@ Apple Configurator の登録方法は、[デバイス登録マネージャー](d
 
 1. ヘッダーなしで 2 列のコンマ区切り値 (.csv) リストを作成します。 シリアル番号を左側の列に、詳細を右側の列に追加します。 リストで許可されている現在の最大行数は 5,000 行です。 この .csv リストをテキスト エディターで表示すると次のようになります。
 
-    F7TLWCLBX196,デバイスの詳細</br>
-    DLXQPCWVGHMJ,デバイスの詳細
+  F7TLWCLBX196,デバイスの詳細</br>
+  DLXQPCWVGHMJ,デバイスの詳細
 
    [iOS デバイスのシリアル番号の見つけ方については、こちらをご覧ください](https://support.apple.com/HT204073)。
 2. Azure Portal の Intune で **[デバイスの登録]** を選択し、**[Apple の登録]** を選択します。
@@ -164,3 +164,5 @@ iOS デバイスを Apple Configurator で直接登録する場合は、デバ�
 7. iOS デバイスで、**[設定]** を開き、**[全般]** > **[デバイス管理]** > **[管理プロファイル]** に移動します。 プロファイルのインストールが一覧に表示されていることを確認し、iOS のポリシー制限とインストールされているアプリを確認します。 ポリシー制限とアプリがデバイスに表示されるまでに、最大 10 分かかることがあります。
 
 8. デバイスを配布します。 これで、iOS デバイスが Intune に登録され、管理対象になりました。
+
+

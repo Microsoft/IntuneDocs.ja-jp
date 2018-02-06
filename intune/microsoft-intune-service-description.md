@@ -14,11 +14,11 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 115a2ac3b4eb35591a2742143fdd29dde09c7de7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f4671f643f9806945043adcb9279c7bc95d8efe2
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune サービスの説明
 
@@ -55,7 +55,7 @@ Microsoft では、Intune オンボーディング特典で、適格なプラン
 
 - [Microsoft Intune の新機能](whats-new.md) このトピックは、月ごとのサービス更新で更新されます。また、ポータル サイト アプリなどのアプリがリリースされた場合には週ごとに更新されます。
 
-- 重要なサービスの更新情報も、[Office 365 管理ポータル](https://portal.office.com/Admin/Default.aspx)のメッセージ センターで告知されます。 コンパニオン [Office 365 Admin Mobile アプリ](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)をインストールしている場合、モバイル デバイスで通知を受け取ることができます。 Office 365 メッセージ センターの利用方法については[こちら](https://support.office.com/en-US/client/results?Shownav=true&lcid=1033&ns=O365ENTADMIN&version=15&omkt=en-US&ver=15&HelpID=O365E_MCManageUpdates)をご覧ください。
+- 重要なサービスの更新情報も、[Office 365 管理ポータル](https://portal.office.com/Admin/Default.aspx)のメッセージ センターで告知されます。 コンパニオン [Office 365 Admin Mobile アプリ](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)をインストールしている場合、モバイル デバイスで通知を受け取ることができます。 Office 365 メッセージ センターの利用方法については[こちら](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates)をご覧ください。
 
     いくつかの役立つヒント:
 

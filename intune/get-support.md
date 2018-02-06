@@ -15,11 +15,11 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 00a7bf5b3f5df58e29c3eb92a516b1ace3eea705
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5a844255451f441f0b64cb020b863b4775fbb768
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune のサポートを受ける方法
 
@@ -47,7 +47,7 @@ IT 管理者は、次の手順を使用して、Azure Portal からサポート 
     - **[サポート プラン]**: **[テクニカル サポート - 含む]** (Intune の技術的な問題については、サポートは無料です。)
 
     >[!IMPORTANT]
-    >Intune のサポートについては、Configuration Manager で使用する場合、無料です。 Premier サポート サービスの詳細を確認するには、「[Description of Services](https://www.microsoft.com/microsoftservices/services-list.aspx)」(サービスの説明) のセクション 5.3.3「Advisory Services」(アドバイザリー サービス) を参照してください。
+    >Intune のサポートについては、Configuration Manager で使用する場合、無料です。 Premier サポート サービスの詳細を確認するには、「[Description of Services](https://www.microsoft.com/en-us/microsoftservices/services-list.aspx)」(サービスの説明) のセクション 5.3.3「Advisory Services」(アドバイザリー サービス) を参照してください。
 
     **[次へ]** をクリックして続行します。
 4. **[問題]** ブレードには、その要求を問題の内容に適した専門家が対処できるように、次のオプションを選択します。
