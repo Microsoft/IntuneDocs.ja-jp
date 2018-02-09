@@ -68,6 +68,8 @@
           href: app-lifecycle.md
     - name: 一般的なシナリオ
       href: common-scenarios.md
+    - name: MAM のよく寄せられる質問
+      href: mam-faq.md
 - name: 展開の計画
   items:
     - name: 計画ガイド
