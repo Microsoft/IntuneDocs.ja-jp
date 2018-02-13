@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36dc2924602ffa060d01d3ba932c657fd52552c7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6d1a4513b8ef6e1f42ad84558de8a57399bb8c1b
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>管理対象の Office 365 アプリの基本的な保護に関するユーザー エクスペリエンス
 
@@ -128,4 +128,4 @@ Android の場合、Intune アプリ保護ポリシーに関連付けられて�
 ![ポリシーを表示するユーザー インターフェイス パスの画像](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>次の手順
-アプリ保護ポリシーの詳細については、[こちら](https://docs.microsoft.comapp-protection-policy.md)を参照してください。
+アプリ保護ポリシーの詳細については、[こちら](app-protection-policy.md)を参照してください。

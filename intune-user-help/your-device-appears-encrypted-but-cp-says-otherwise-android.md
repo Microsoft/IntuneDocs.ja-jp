@@ -17,11 +17,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ab67a6f2fd1f861ba197464a9e369ca0b54e6b5d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 661ddaa2b6b100ccf1b1b890a2c39556723a5cc9
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Android デバイスは暗号化されるように見えるが、ポータル サイトではそのように認識されていない
 
@@ -63,7 +63,7 @@ ms.lasthandoff: 01/25/2018
 
 以下のデバイスのいずれかをお使いの場合は、デバイスを最新バージョンの Android に更新していない場合にこの問題が発生する可能性があります。 **[設定]** > **[更新]** と移動して、これらのデバイスの更新プログラムをインストールできます。 
 
-- [Huawei Honor 8](http://consumer.huawei.com/en/support/mobile-phones/honor8_en-sup.htm)
+- [Huawei Honor 8](https://consumer.huawei.com/us/support/phones/honor-8/)
 - [Huawei P9](http://consumer.huawei.com/en/phones/p9/)
 
 ### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>更新によってこの問題を解決できない既知のデバイス
