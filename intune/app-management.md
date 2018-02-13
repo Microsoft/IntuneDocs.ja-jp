@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1f17b885ffc05808933a955dcb4f8977ffb0f4a0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 00e6b9f05f967da9066639dbf1b25bc76a49541b
+ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/13/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune アプリの管理とは
 
@@ -52,7 +52,7 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
 |デバイスへのアプリのインストールを強制する (必須)<sup>2</sup>|はい|はい|はい|はい|
 |会社のポータルからデバイスへのオプション インストール (利用可能なインストール)|はい|はい|はい|はい|
 |Web 上のアプリへのインストール ショートカット (Web クリップ)|はい|はい|はい|はい|
-|社内 (基幹業務) アプリ|はい|はい|[いいえ]|[いいえ]|
+|社内 (基幹業務) アプリ|はい|はい|[いいえ]|はい|
 |ストアからのアプリ|はい|はい|はい|はい|
 |アプリを更新する|はい|はい|はい|はい|
 
