@@ -36,7 +36,7 @@ ms.lasthandoff: 01/29/2018
 アプリ ストアで無料になっている場合にのみ、この方法でアプリを割り当てることができます。 Intune を利用し、有料のアプリを割り当てる場合、[iOS ボリューム購入プログラム](vpp-apps-ios.md)の利用を検討してください。
 
 >[!NOTE]
->Microsoft Intune を使うときは、Chrome と Edge がお勧めするブラウザーです。
+>Microsoft Intune を使うときは、Chrome と Microsoft Edge がお勧めするブラウザーです。
 
 ## <a name="step-1---search-for-the-app-in-the-store"></a>手順 1 - ストアでアプリを検索する
 
