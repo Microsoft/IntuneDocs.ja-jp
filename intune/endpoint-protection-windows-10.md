@@ -1,7 +1,7 @@
 ---
 title: "Windows 10 用の Intune Endpoint Protection 設定"
 titlesuffix: Azure portal
-description: "Windows 10 デバイスで Endpoint Protection 設定 ( BitLocker など) を制御するのに使用できる Intune 設定について説明します。"
+description: "Windows 10 デバイスで Endpoint Protection 設定 (BitLocker など) を制御するのに使用できる Intune 設定について説明します。"
 keywords: 
 author: arob98
 ms.author: angrobe
@@ -15,11 +15,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f33598abe08ffb958ddac9eb7725ab500f9db981
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 35c33fb189187a678efa04d10706fe752d683e17
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Microsoft Intune での Windows 10 以降用の Endpoint Protection 設定
 
@@ -225,7 +225,9 @@ Office アプリによる次の操作をブロックします。
 
 **[アプリケーション制御コード整合性ポリシー]** を使用して、Windows Defender アプリケーション制御によって監査する必要がある、または実行しても差し支えないという信頼を Windows Defender アプリケーション制御から得られる追加のアプリを選択します。 Windows コンポーネントと Windows ストアのすべてのアプリは、実行しても差し支えないという信頼を自動的に得ます。
 
-"監査のみ" モードで実行している場合、アプリケーションはブロックされません。 "監査のみ" モードでは、すべてのイベントがローカル クライアント ログに記録されます。
+**監査のみ** モードで実行している場合、アプリケーションはブロックされません。 **監査のみ** モードでは、すべてのイベントがローカル クライアント ログに記録されます。
+
+有効にすると、アプリケーション制御を無効にできる唯一の方法は、モードを **[強制]** から **[監査のみ]** に変更することです。 モードを **[強制]** から **[未構成]** に変更すると、アプリケーション制御が引き続き割り当てられたデバイスに強制されます。
 
 ## <a name="windows-defender-security-center"></a>Windows Defender セキュリティ センター
 

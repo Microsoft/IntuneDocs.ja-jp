@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 23dca24c69cca3c7a2851cb3fa7d9959f31df8e7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e5f9eb33ca877fba0d59cfd9ddbc23f5eb2cd05c
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Microsoft Intune でアプリ保護ポリシーを使用してアプリ データを保護する
 
@@ -57,9 +57,7 @@ MDM をアプリ保護ポリシーと共に使用することには付加的な�
 - **アプリ保護ポリシーによりアプリ層の保護を実現できます**。 たとえば、仕事のコンテキストでアプリを開くために PIN を要求したり、アプリ間でのデータの共有を禁止したり、会社のアプリ データを個人の記憶域に保存できないようにしたりするポリシーを作成できます。
 
 ## <a name="devices-that-support-mam"></a>MAM をサポートするデバイス
-現在のところ、アプリ保護ポリシーは次の OS でサポートされています。
--   iOS 8.1 以降
--   Android 4 以降
+Intune アプリの保護ポリシーのプラットフォーム サポートは、Office アプリケーションのプラットフォーム サポートと連携しています。 詳細については、「[Office のシステム要件](https://products.office.com/en-US/office-system-requirements)」を参照してください。
 
 >[!NOTE]
 >Windows デバイスに登録シナリオがなく、MAM でサポートされていません。 ただし、Intune で Windows 10 デバイスを登録すると、同様の機能を提供する Windows 情報保護を使用できます。 詳細については、「[Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)」 (Windows 情報保護 (WIP) を使用してエンタープライズ データを保護する) を参照してください。
@@ -129,7 +127,7 @@ MDM ソリューションに登録されていない BYOD デバイスでは、�
 
 - Intune で [MAM と複数の ID](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) をサポートするアプリについての詳細を参照してください。
 
-##  <a name="next-steps"></a>次のステップ
+##  <a name="next-steps"></a>次の手順
 - [アプリ保護ポリシーを構成する準備をする](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
-- [Microsoft Intune でのアプリ保護ポリシーの作成とデプロイ](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+- [Microsoft Intune でのアプリ保護ポリシーの作成と展開](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

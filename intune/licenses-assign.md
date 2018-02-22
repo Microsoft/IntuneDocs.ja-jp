@@ -2,8 +2,8 @@
 title: "Intune のライセンスを割り当てる"
 description: "Intune サブスクリプションのユーザーにライセンスを割り当てます"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
@@ -14,17 +14,17 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fd407b8b933c7edce449cd25a9fbd53f4299fcc3
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 2ad754ce3d81469bb172081b6b7f43937f45ffd9
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="assign-intune-licenses-to-your-user-accounts"></a>ユーザー アカウントに Intune のライセンスを割り当てる
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-ユーザーを手動で追加する場合も、オンプレミスの Active Directory から同期する場合も、まず各ユーザーに Intune のライセンスを割り当ててから、Intune にデバイスを登録する必要があります。
+ユーザーを手動で追加する場合も、オンプレミスの Active Directory から同期する場合も、まず各ユーザーに Intune のライセンスを割り当ててから、Intune にデバイスを登録する必要があります。 ライセンスのリストについては、「[Licenses that include Intune](licenses.md)」 (Intune が含まれているライセンス) を参照してください。
 
 ## <a name="assign-an-intune-license-in-the-office-365-admin-center"></a>Office 365 管理センターで、Intune のライセンスを割り当てる
 
