@@ -2,10 +2,10 @@
 title: "Microsoft Intune App SDK Cordova プラグイン"
 description: 
 keywords: sdk, Cordova, intune
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,23 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 00c1c805dbbf661bdcd4ad6b153fee8b2bbba9ee
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d42f8418e2f277dca0fbb2f01248f5a815606cb6
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova プラグイン
 
-> [!NOTE]
-> 最初に、[Intune アプリ SDK の概要](app-sdk-get-started.md)に関する記事に目を通すことをお勧めします。このガイドでは、サポートする各プラットフォームで統合のための準備をする方法について説明しています。
+> [!IMPORTANT]
+> Intune による Microsoft Intune App SDK Cordova プラグインのサポートは、2018 年 5 月 1 日で終了します。 代わりに Intune アプリ ラッピング ツールを使うことをお勧めします。 アプリ ラッピング ツールについては、[iOS 用アプリ ラッピング ツール](app-wrapper-prepare-ios.md)および [Android 用アプリ ラッピング ツール](app-wrapper-prepare-android.md)に関する説明をご覧ください。 この変更については、「[Microsoft Intune の新機能](whats-new.md)」の「[通知](whats-new.md#notices)」セクションをご覧ください。
 
 ## <a name="overview"></a>概要
 
 iOS アプリおよび Android アプリの [Intune App SDK Cordova プラグイン](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) は、Cordova を使用してビルドされています。 このプラグインを開発者が利用すると、Intune のアプリとデータの保護機能を Cordova 基盤のアプリに統合できます。
+
+> [!NOTE]
+> 最初に、[Intune アプリ SDK の概要](app-sdk-get-started.md)に関する記事に目を通すことをお勧めします。このガイドでは、サポートする各プラットフォームで統合のための準備をする方法について説明しています。
 
 SDK の機能は、アプリの動作を変更せずに有効にできます。 iOS または Android アプリにプラグインを組み込むと、Microsoft Intune 管理者は Intune アプリの保護ポリシーを展開できるようになります。保護ポリシーは多様なデータ保護機能で構成されます。 このプラグインは、Cordova ビルド プロセスで多くの手順が自動的に実行されるように開発されました。 そのため、アプリの保護をすぐに有効にすることができます。 最初に、対象プラットフォームに基づき、下の手順を実行します。
 
@@ -65,7 +68,7 @@ Intune App SDK Cordova プラグインで開発された Cordova アプリでは
 
 
 
-## <a name="quick-start"></a>クイック スタート
+## <a name="quickstart"></a>クイック スタート
 
 1. ADAL のバージョンを更新する:
 

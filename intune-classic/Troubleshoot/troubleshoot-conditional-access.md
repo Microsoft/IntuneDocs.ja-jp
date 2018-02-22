@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 21053cd7ce930bd11625807f7fdda3ebbdd953f3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5f16e14b32508adf1fc4f3f448f53a7dcad8e137
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>条件付きアクセスに関するトラブルシューティング
 
@@ -90,7 +90,7 @@ ms.lasthandoff: 10/10/2017
 - Exchange Connector のログで sendemail アクティビティにエラーがないかを確認します。 検索するコマンドの例は、「SendEmail from notification account to useremail」です。
 - Exchange Connector はデバイスをブロックする前に、ライセンス認証の電子メールを送信します。 デバイスがオフラインである場合、ライセンス認証の電子メールを受信できない可能性があります。 デバイスの電子メール クライアントがポーリングでなくプッシュを使用して電子メールを取得しているかどうかを確認します。ユーザーが電子メールを受信しない可能性があるためです。 ポーリングに切り替え、デバイスが電子メールを受信することを確認してください。
 
-## <a name="non-compliant-device-not-blocked"></a>非対応のデバイスがブロックされていない
+## <a name="noncompliant-device-not-blocked"></a>非対応のデバイスがブロックされていない
 
 非対応のデバイスで引き続きアクセス可能なデバイスが見つかった場合は、次の手順を実行します。
 
@@ -151,5 +151,5 @@ Exchange Connector ログで **Get next コマンド**の例外を確認し、�
 
 
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。

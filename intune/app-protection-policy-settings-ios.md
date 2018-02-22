@@ -3,10 +3,10 @@ title: "iOS アプリ保護ポリシー設定"
 titlesuffix: Azure portal
 description: "このトピックでは、iOS デバイスのアプリ保護ポリシー設定について説明します。\""
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/05/2018
+ms.date: 01/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 494eda1c9f953a78e13ae7cf0caee84f29c4d7d8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 268cd673ccb21dffcd8424cfc49c55c734312bff
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS アプリ保護ポリシー設定
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -52,11 +52,11 @@ ms.lasthandoff: 01/25/2018
 
 | アプリ/サービス名 | 説明 |
 | ---- | --- |
-|tel、telprompt | ネイティブの電話アプリ |
-| skype | Skype |
-| app-settings | デバイスの設定 |
-| itms、itmss、itms-apps、itms-appss、itms-services | アプリ ストア |
-| calshow | ネイティブのカレンダー |
+|<code>tel; telprompt</code> | ネイティブの電話アプリ |
+| <code>skype</code> | Skype |
+| <code>app-settings</code> | デバイスの設定 |
+| <code>itms; itmss; itms-apps; itms-appss; itms-services</code> | アプリ ストア |
+| <code>calshow</code> | ネイティブのカレンダー |
 
 
 
@@ -65,12 +65,11 @@ ms.lasthandoff: 01/25/2018
 
 | Setting | 使用する方法 | 既定値 |
 |------|------|------|
-| **[アクセスのために PIN を要求する]** | **[はい]** を選択すると、このアプリを使用する際に PIN が要求されます。 ユーザーは、職場または学校のコンテキストでアプリを初めて実行するときに、この PIN のセットアップを求められます。 PIN は、オンラインまたはオフラインで作業しているときに適用されます。 既定値 = **はい**。<br><br> PIN 強度について、次の設定を構成します。 <ul><li>**種類の選択**: アプリ保護ポリシーが適用されているアプリにアクセスする前に、数値またはパスコードのどちらの種類の PIN を入力する必要があるかを設定します。 数値の場合は数字だけですが、パスコードの場合は少なくとも 1 つのアルファベットまたは特殊文字で定義できます。 既定値は **[数値]** です。</li><li>**PIN をリセットするまでの試行回数**: ユーザーが PIN をリセットするまでに許可される入力試行回数を指定します。 既定値は **5** です。 <br><br> このポリシー設定の形式は、正の整数をサポートします。</li><li> **単純な PIN を許可する:** **[はい]** を選ぶと、1234、1111、abcd、aaaa などの単純な PIN シーケンスを使えるようになります。 **[いいえ]** を選択すると、単純なシーケンスは使用できなくなります。 既定値 = **はい**。 </li><li> **PIN の長さ**: PIN シーケンスの最小桁数を指定します。 既定値 = **4**。 </li><li> **PIN の代わりに指紋を許可する (iOS 8 以降):** **[はい]** を選択すると、アプリへのアクセスに、PIN の代わりに [Touch ID](https://support.apple.com/HT201371) を使用できるようになります。 既定値 = **はい**。</li></ul> iOS デバイスでは、ユーザーが PIN の代わりに [Touch ID](https://support.apple.com/HT201371) を使って身元を証明できるようにすることができます。 ユーザーが職場または学校のアカウントでこのアプリを使用しようとすると、PIN を入力する代わりに指紋認証を求められます。 この設定を有効にすると、会社または学校のアカウントの使用中には、使用中のアプリ一覧のプレビュー画像はぼやけます。 </li></ul><!-- <br><br>You can require a PIN expiration for targeted iOS apps. You can configure the PIN requirement and expiration date in days through the Azure portal. When required, a user will be required to set and use a new PIN before getting access to an iOS app. Only iOS apps that have app protection enabled with the Intune App SDK will support this feature.-->| アクセスのために PIN を要求する: はい <br><br> 種類の選択: 数値 <br><br> PIN のリセットの試行回数: 5 <br><br> 単純な PIN を許可する: はい <br><br> PIN の長さ: 4 <br><br> 指紋を許可する: はい |
+| **[アクセスのために PIN を要求する]** | **[はい]** を選択すると、このアプリを使用する際に PIN が要求されます。 ユーザーは、職場または学校のコンテキストでアプリを初めて実行するときに、この PIN のセットアップを求められます。 PIN は、オンラインまたはオフラインで作業しているときに適用されます。 既定値 = **はい**。<br><br> PIN 強度について、次の設定を構成します。 <ul><li>**種類の選択**: アプリ保護ポリシーが適用されているアプリにアクセスする前に、数値またはパスコードのどちらの種類の PIN を入力する必要があるかを設定します。 数値の場合は数字だけですが、パスコードの場合は少なくとも 1 つのアルファベットまたは特殊文字で定義できます。 既定値は **[数値]** です。</li><li>**PIN をリセットするまでの試行回数**: ユーザーが PIN をリセットするまでに許可される入力試行回数を指定します。 既定値は **5** です。 <br> このポリシー設定の形式は、正の整数をサポートします。</li><li> **単純な PIN を許可する:** **[はい]** を選ぶと、1234、1111、abcd、aaaa などの単純な PIN シーケンスを使えるようになります。 **[いいえ]** を選択すると、単純なシーケンスは使用できなくなります。 既定値 = **はい**。 </li><li> **PIN の長さ**: PIN シーケンスの最小桁数を指定します。 既定値 = **4**。 </li><li> **PIN の代わりに指紋を許可する (iOS 8 以降):** **[はい]** を選択すると、アプリへのアクセスに、PIN の代わりに [Touch ID](https://support.apple.com/HT201371) を使用できるようになります。 既定値 = **はい**。</li><li> **PIN の代わりに顔認識を許可する (iOS 11+)**: **[はい]** を選択すると、アプリへのアクセスに、PIN の代わりに [Face ID](https://support.apple.com/HT208109) を使用できるようになります。 既定値 = **はい**。 ユーザーは、職場アカウントを使ってアプリにアクセスするときに、顔の識別情報を提供するように求められます。</li><li> **デバイス PIN が管理されている場合にアプリ PIN を無効にする**: 登録されているデバイスでデバイス ロックが検出された場合にアプリの PIN を無効にするには、**[はい]** を選択します。 <br> **注:** アプリに Intune SDK バージョン 7.0.1 以降が必要です。</li></ul> iOS デバイスでは、ユーザーが PIN の代わりに [Touch ID](https://support.apple.com/HT201371) または [Face ID](https://support.apple.com/HT208109) を使って身元を証明できるようにすることができます。 Intune は、[LocalAuthentication](https://developer.apple.com/documentation/localauthentication/) API を使って、Touch ID と Face ID によりユーザーを認証します。 Touch ID と Face ID については、「[iOS Security Guide](https://www.apple.com/business/docs/iOS_Security_Guide.pdf)」(iOS セキュリティ ガイド) をご覧ください。 ユーザーが職場または学校のアカウントでこのアプリを使用しようとすると、PIN を入力する代わりに指紋識別と顔識別を求められます。 この設定を有効にすると、会社または学校のアカウントの使用中には、使用中のアプリ一覧のプレビュー画像はぼやけます。 </li></ul><!-- <br><br>You can require a PIN expiration for targeted iOS apps. You can configure the PIN requirement and expiration date in days through the Azure portal. When required, a user will be required to set and use a new PIN before getting access to an iOS app. Only iOS apps that have app protection enabled with the Intune App SDK will support this feature.-->| アクセスのために PIN を要求する: はい <br><br> 種類の選択: 数値 <br><br> PIN のリセットの試行回数: 5 <br><br> 単純な PIN を許可する: はい <br><br> PIN の長さ: 4 <br><br> 指紋を許可する: はい <br><br> 顔認識を許可する: はい <br><br> アプリ PIN を無効にする: いいえ |
 | **[アクセスには会社の資格情報が必要]** | **[はい]** を選択すると、ユーザーは、アプリへのアクセスに、PIN を入力する代わりに職場または学校のアカウントでのサインインが求められます。 これを **[はい]** に設定すると、PIN またはタッチ ID の要件が上書きされます。  | [いいえ] |
 | **脱獄されたデバイスまたは root 化されたデバイスで管理対象アプリが実行されることを禁止する** |  このアプリが脱獄または root 化されたデバイスで実行されないようにする場合は、**[はい]** を選択します。 ユーザーは、引き続き個人のタスクにこのアプリを使用できますが、このアプリの職場または学校のデータにアクセスする場合は別のデバイスを使用する必要があります。 | はい |
 | **[(分数) 後に、アクセス要件を再確認する]** | 次の設定を構成します。 <ul><li>**タイムアウト**: これは、(ポリシーで前に定義した) アクセス要件が再確認するまでの分数です。 たとえば、管理者がポリシーの PIN をオンにした場合、ユーザーは Intune の管理対象アプリを開いたときに、PIN を入力する必要があります。 この設定を使用する場合、ユーザーは任意の MAM アプリでその後の **30 分** (既定値) PIN を入力する必要がありません。 <br><br>**注:** iOS では、**同じ公開元**のすべての Intune 管理対象アプリで PIN が共有されます。 デバイスで、アプリがフォアグラウンドを離れると、特定の PIN の PIN タイマーがリセットされます。 設定で定義されているタイムアウトの間、PIN を共有する Intune 管理対象アプリで、PIN を入力する必要はありません。 <br><br> このポリシー設定の形式は、正の整数をサポートします。</li><li>**オフラインの猶予期間**: MAM デバイスをオフラインで実行できる分数です。アプリのアクセス要件を再確認するまでの時間 (分単位) を指定します。 既定値は、**720** 分 (12 時間) です。 これが期限切れになると、アプリを実行し続けることができるよう、ユーザーはアプリにより AAD に対する認証を求められます。<br><br> このポリシー設定の形式は、正の整数をサポートします。</li></ul>| タイムアウト: 30 <br><br> オフライン: 720 |
-| **アプリ データをワイプするまでのオフライン間隔 (日)** | オフラインでの実行期間がこの日数 (管理者が定義) を超えると、アプリはユーザーに対してネットワークへの接続と再認証を要求します。 ユーザーが正常に認証された場合、引き続きデータにアクセスでき、オフライン間隔がリセットされます。  ユーザーの認証が失敗した場合、アプリはユーザーのアカウントとデータの選択的ワイプを実行します。  選択的ワイプで削除されるデータの詳細については、「[Intune で管理されているアプリから会社のデータをワイプする方法](https://docs.microsoft.com/en-us/intune/apps-selective-wipe)」を参照してください。 <br><br> このポリシー設定の形式は、正の整数をサポートします。 | 90 日間 |
-| **Disable app PIN when device PIN is managed (デバイスの PIN が管理されるときはアプリの PIN を無効にする)** | 登録されているデバイスでデバイス ロックが検出された場合にアプリの PIN を無効にするには、**[はい]** を選択します。 <br><br> **注:** アプリに Intune SDK バージョン 7.0.1 以降が必要です。 | [いいえ] |
+| **アプリ データをワイプするまでのオフライン間隔 (日)** | オフラインでの実行期間がこの日数 (管理者が定義) を超えると、アプリはユーザーに対してネットワークへの接続と再認証を要求します。 ユーザーが正常に認証された場合、引き続きデータにアクセスでき、オフライン間隔がリセットされます。  ユーザーの認証が失敗した場合、アプリはユーザーのアカウントとデータの選択的ワイプを実行します。  選択的ワイプで削除されるデータの詳細については、「[Intune で管理されているアプリから会社のデータをワイプする方法](https://docs.microsoft.com/intune/apps-selective-wipe)」を参照してください。 <br><br> このポリシー設定の形式は、正の整数をサポートします。 | 90 日間 |
 | **iOS オペレーティング システムの最小要件** | このアプリを使用するための最小 iOS オペレーティング システムを要求するには **[はい]** を選択します。 デバイスの iOS バージョンが要件を満たさない場合、アクセスがブロックされます。 <br> **注:** アプリに Intune SDK バージョン 7.0.1 以降が必要です。 | [いいえ] |
 | **iOS オペレーティング システムの最小要件 (警告のみ)** | このアプリを使用するための最小 iOS オペレーティング システムを要求するには **[はい]** を選択します。 デバイスの iOS バージョンが要件を満たさない場合、通知が表示されます。 この通知は閉じることができます。 <br> **注:** アプリに Intune SDK バージョン 7.0.1 以降が必要です。 | [いいえ] |
 | **アプリの最小バージョン要件** | アプリを使用するための最小アプリ バージョンを要求するには **[はい]** を選択します。 デバイスのアプリ バージョンが要件を満たさない場合、アクセスがブロックされます。<br><br>多くの場合、アプリには個別のバージョン管理スキームがあるため、1 つのアプリを対象とした、1 つのアプリの最小バージョンでポリシー ("Outlook バージョン ポリシー" など) を作成します。 <br><br> このポリシー設定では、major.minor、major.minor.build、major.minor.build.revision のいずれの形式もサポートされます。 <br><br> **注:** アプリに Intune SDK バージョン 7.0.1 以降が必要です。 | [いいえ] | 

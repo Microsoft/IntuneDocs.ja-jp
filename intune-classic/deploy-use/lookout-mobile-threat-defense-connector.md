@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d1e04113d2f8707be0d06cb0783e6113914b856a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: be7eed7618bca29b821a453c9fbf1e77cf8ce90d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense コネクターと Intune
 
@@ -63,7 +63,7 @@ Intune に登録するとき、Lookout では次のプラットフォームが�
 **悪意のあるアプリが検出されたときのブロック:**
 ![悪意のあるアプリが検出されたことからデバイスが非準拠状態と判断された場合に、アクセスをブロックする条件付きアクセス ポリシーを示す図](../media/mtp/malicious-apps-blocked.png)
 
-**修復時に付与されるアクセス権:**
+**修復後、アクセスが与えられる:**
 
 ![修復後、デバイスが準拠状態にあると判断された場合にアクセス権を付与する条件付きアクセス ポリシーを示す図](../media/mtp/malicious-apps-unblocked.png)
 
@@ -73,7 +73,7 @@ Man-in-the-middle 攻撃など、ネットワークに対する脅威を検出�
 **WiFi 経由でネットワークにアクセスする行為のブロック:**
 ![ネットワークの脅威に基づいて WiFi アクセスをブロックする条件付きアクセスを示す図](../media/mtp/network-wifi-blocked.png)
 
-**修復時に付与されるアクセス権:**
+**修復後、アクセスが与えられる:**
 
 ![脅威の修復時にアクセスを許可する条件付きアクセスを示す図](../media/mtp/network-wifi-unblocked.png)
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいて SharePoint Online へのアクセスを制御する
@@ -85,11 +85,11 @@ Man-in-the-middle 攻撃など、ネットワークに対する脅威を検出�
 ![検出した脅威に基づいて SharePoint Online へのデバイスのアクセスをブロックする条件付きアクセスを示す図](../media/mtp/network-spo-blocked.png)
 
 
-**修復時に付与されるアクセス権:**
+**修復後、アクセスが与えられる:**
 
 ![ネットワークの脅威が修復された後でアクセスを許可する条件付きアクセスを示す図](../media/mtp/network-spo-unblocked.png)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 このソリューションを実装するために実行する必要がある主な手順を次に示します。
 1.  [Lookout サブスクリプションを設定する](setup-your-lookout-mtd-subscription.md)
 2.  [Intune で Lookout Mobile Threat Defense を有効にする](enable-lookout-mtd-connection.md)

@@ -15,17 +15,23 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cd21d6e87dfa142fe9e3ef4d9bbbc0be87eca9b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 93b6a642f26ec6273853f75d063fd368698f3864
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune でデバイスの制限設定を構成する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-デバイスの制限では、セキュリティ、ブラウザー、ハードウェア、データ共有設定を含む広範なカテゴリにわたって、管理対象のさまざまな設定と機能を制御できます。 たとえば、iOS デバイスのユーザーがデバイスのカメラにアクセスできないようにするデバイスの制限プロファイルを作成できます。
+デバイスの制限では、次のような広範なカテゴリにわたって、管理対象のさまざまな設定と機能を制御できます。
+- セキュリティ
+- ブラウザー
+- ハードウェア
+- データ共有の設定
+
+たとえば、iOS デバイスのユーザーがデバイスのカメラにアクセスできないようにするデバイスの制限プロファイルを作成できます。
 
 このトピックでは、デバイスの制限プロファイルを構成する基本的な方法について説明します。その後、デバイスごとの詳細については、各プラットフォームのトピックを参照してください。
 
@@ -53,6 +59,7 @@ ms.lasthandoff: 01/25/2018
     - [Windows 8.1](device-restrictions-windows-8-1.md)
     - [Windows 10 の設定](device-restrictions-windows-10.md)
     - [Windows 10 Team の設定](device-restrictions-windows-10-teams.md)
+    - [Windows Holographic for Business の設定](device-restrictions-windows-holographic.md)
     - [Android for Work の設定](device-restrictions-android-for-work.md)
 8. 完了したら、**[プロファイルを作成します]** ブレードに戻り、**[作成]** をクリックします。
 

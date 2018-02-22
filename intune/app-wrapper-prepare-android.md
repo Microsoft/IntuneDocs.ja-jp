@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac18336efe36a5bed952ab3d89c7ae80e1fbbfc5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dee688b2f6768f55a0a814679bde7b23a0b26a57
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために Android アプリを準備する
 
@@ -50,7 +50,7 @@ Android 用 Microsoft Intune アプリ ラッピング ツールを使用して�
     > [!NOTE]
     > 場合によっては、32 ビット バージョンの Java を使用すると、メモリに関連した問題が発生する可能性があります。 64 ビット バージョンをインストールすることをお勧めします。
 
-- Android では、すべてのアプリ パッケージ (.apk) が署名されている必要があります。 既存の証明書の**再利用**と署名証明書の全体的なガイダンスについては、「[署名証明書とラッピング アプリの再利用](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)」を参照してください。 ラッピングされた出力アプリへの署名に必要な**新しい**資格情報を生成するには、Java の実行可能ファイル keytool.exe を使います。 設定するパスワードはすべて安全である必要がありますが、後でアプリ ラッピング ツールを実行するときに必要になるので記録しておきます。
+- Android では、すべてのアプリ パッケージ (.apk) が署名されている必要があります。 既存の証明書の**再利用**と署名証明書の全体的なガイダンスについては、「[署名証明書とラッピング アプリの再利用](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)」を参照してください。 ラッピングされた出力アプリへの署名に必要な**新しい**資格情報を生成するには、Java の実行可能ファイル keytool.exe を使います。 設定するパスワードはすべて安全である必要がありますが、後でアプリ ラッピング ツールを実行するときに必要になるので記録しておきます。
 
 ## <a name="install-the-app-wrapping-tool"></a>アプリ ラッピング ツールをインストールする
 
@@ -119,7 +119,7 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 * Android 用 Intune アプリ ラッピング ツールで新しいバージョンがリリースされ、主要なバグ修正、または新しい具体的な Intune アプリケーション保護ポリシー機能が有効になった。 これは、[Android 用 Microsoft Intune アプリ ラッピング ツール](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android)の GitHub リポジトリで 6 ～ 8 週間おきに発生します。
 
 再ラップの場合、次のようなベスト プラクティスがあります。 
-* ビルド処理中に使用された署名証明書の保持。「[署名証明書とラッピング アプリの再利用](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)」を参照してください
+* ビルド処理中に使用された署名証明書の保持。「[署名証明書とラッピング アプリの再利用](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)」を参照してください
 
 ## <a name="reusing-signing-certificates-and-wrapping-apps"></a>署名証明書とラッピング アプリの再利用
 Android では、Android デバイスにインストールするために、すべてのアプリを有効な証明書で署名する必要があります。
@@ -158,7 +158,7 @@ Android では、Android デバイスにインストールするために、す�
 ### <a name="working-with-the-intune-sdk"></a>Intune SDK の使用
 これらの手順は、エンド ユーザー デバイスで使用するために Intune アプリ保護ポリシーが必要なすべての Android および Xamarin アプリ向けです。
 
-1. [Android 用 Intune SDK ガイド](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)のセクションで定義されている手順を使用して ADAL を構成します。
+1. [Android 用 Intune SDK ガイド](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)のセクションで定義されている手順を使用して ADAL を構成します。
 > [!NOTE] 
 > アプリに関連付けられている "クライアント ID" という用語は、アプリに関連付けられている Azure Portal の用語 "アプリケーション ID" と同じです。 
 * SSO を有効にするには、「ADAL の一般的な構成」の 2. が必要です。
@@ -174,4 +174,4 @@ Android では、Android デバイスにインストールするために、す�
 ### <a name="see-also"></a>関連項目
 - [Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](apps-prepare-mobile-application-management.md)
 
-- [SDK を使用してモバイル アプリケーション管理に対応する](/intune/classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+- [Android 用 Microsoft Intune アプリ SDK 開発者ガイド](app-sdk-android.md)

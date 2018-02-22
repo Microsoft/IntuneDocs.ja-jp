@@ -287,6 +287,26 @@
           items:
             - name: 選択的にアプリをワイプする
               href: apps-selective-wipe.md
+            - name: アプリ保護ポリシーの使用
+              href: app-protection-policy.md
+              items:
+                - name: アプリ保護ポリシーの作成
+                  href: app-protection-policies.md
+                  items:
+                    - name: Android の設定
+                      href: app-protection-policy-settings-android.md
+                    - name: iOS の設定
+                      href: app-protection-policy-settings-ios.md
+                - name: アプリ保護ポリシーを検証する
+                  href: app-protection-policies-validate.md
+                - name: アプリ保護のユーザーの状態を監視する
+                  href: app-protection-policies-monitor.md
+                - name: WIP アプリ保護ポリシーの準備をする
+                  href: app-protection-policies-configure-windows-10.md
+                - name: WIP アプリ保護ポリシーの作成と割り当て
+                  href: windows-information-protection-policy-create.md
+                - name: iOS アプリ間のデータ転送を管理する
+                  href: data-transfer-between-apps-manage-ios.md
     - name: デバイスの構成
       href: device-profiles.md
       items:
@@ -444,28 +464,8 @@
           href: conditional-access-integrate-jamf.md
         - name: Jamf Pro で管理された Mac にコンプライアンスを適用します
           href: conditional-access-assign-jamf.md
-    - name: アプリとデバイス データの保護
+    - name: デバイス データの保護
       items:
-        - name: アプリ保護ポリシーの使用
-          href: app-protection-policy.md
-          items:
-            - name: アプリ保護ポリシーの作成
-              href: app-protection-policies.md
-              items:
-                - name: Android の設定
-                  href: app-protection-policy-settings-android.md
-                - name: iOS の設定
-                  href: app-protection-policy-settings-ios.md
-            - name: アプリ保護ポリシーを検証する
-              href: app-protection-policies-validate.md
-            - name: アプリ保護のユーザーの状態を監視する
-              href: app-protection-policies-monitor.md
-            - name: WIP アプリ保護ポリシーの準備をする
-              href: app-protection-policies-configure-windows-10.md
-            - name: WIP アプリ保護ポリシーの作成と割り当て
-              href: windows-information-protection-policy-create.md
-            - name: iOS アプリ間のデータ転送を管理する
-              href: data-transfer-between-apps-manage-ios.md
         - name: Mobile Threat Defense
           href: mobile-threat-defense.md
           items:
@@ -651,6 +651,8 @@
           href: reports-proc-data-rest.md
         - name: データ ウェアハウス API エンドポイント
           href: reports-api-url.md
+        - name: データ ウェアハウス アプリケーションのみの認証
+          href: data-warehouse-app-only-auth.md
         - name: データ ウェアハウス データ モデル
           href: reports-ref-data-model.md
           items:

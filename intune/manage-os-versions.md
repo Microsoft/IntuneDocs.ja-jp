@@ -10,11 +10,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
-ms.openlocfilehash: ede4be83b995bbb415184275c34f0e1b4feb4091
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 78abef01e968b59b81a74dcd6b67df31dbf29def
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Intune を使用したオペレーティング システムのバージョン管理
 最近のモバイル プラットフォームおよびデスクトップ プラットフォームでは、主要な更新プログラム、修正プログラム、および新しいバージョンが速いペースでリリースされます。 Windows 上の更新プログラムおよび修正プログラムについては、完全に管理するためのコントロールがありますが、iOS や Android などの他のプラットフォームでは、エンド ユーザーをプロセスに参加させる必要があります。  Microsoft Intune には、異なるプラットフォーム間のオペレーティング システムのバージョン管理を構築するための機能があります。
@@ -35,7 +35,7 @@ Intune MDM の登録制限を使用すると、クライアント デバイス�
 1. オペレーティング システムの最小バージョンを使用して、組織内のエンド ユーザーのプラットフォームを最新かつサポートされた状態に保ちます。 
 2. オペレーティング システムの最大バージョンを指定しない (制限なし) ままにするか、組織内で検証済みの最新バージョンに設定して、オペレーティング システムの新しいリリースを内部テストするための時間を確保します。
 
-詳細については、「[デバイスの種類の制限を設定する](https://docs.microsoft.com/en-us/intune/enrollment-restrictions-set#set-device-type-restrictions)」を参照してください。
+詳細については、「[デバイスの種類の制限を設定する](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions)」を参照してください。
  
 ## <a name="operating-system-version-reporting-and-compliance-with-intune-mdm-device-compliance-policies"></a>オペレーティング システム バージョンのレポートと Intune MDM デバイス コンプライアンス ポリシーの順守
 Intune MDM デバイス コンプライアンス ポリシーでは、次のツールが提供されています。 
@@ -50,7 +50,7 @@ Intune MDM デバイス コンプライアンス ポリシーでは、次のツ�
 ### <a name="in-practice"></a>実際
 組織は、登録制限と同じシナリオにデバイス コンプライアンス ポリシーを使用しています。 これらのポリシーは、組織内のユーザーのオペレーティング システムのバージョンを最新かつ検証済みの状態に維持します。 エンド ユーザーのデバイスが準拠していない状態になった場合に、エンド ユーザーのオペレーティング システムが組織でサポートされる範囲になるまで、条件付きアクセスを使用して組織のリソースへのアクセスをブロックすることができます。 エンド ユーザーには、非対応になっていることが通知され、アクセスを回復する手順が提供されます。   
 
-詳細については、「[Intune でのデバイス コンプライアンスの概要](https://docs.microsoft.com/en-us/intune/device-compliance-get-started)」を参照してください。
+詳細については、「[Intune でのデバイス コンプライアンスの概要](https://docs.microsoft.com/intune/device-compliance-get-started)」を参照してください。
  
 ## <a name="operating-system-version-controls-using-intune-app-protection-policies"></a>Intune アプリの保護ポリシーを使用したオペレーティング システムのバージョン管理    
 Intune アプリの保護ポリシーとモバイル アプリケーション管理 (MAM) のアクセス設定では、アプリ層でのオペレーティング システムの最小バージョンを指定できます。 これにより、オペレーティング システムを指定した最小バージョンに更新するようにエンド ユーザーに通知、推奨、または要求することができます。
@@ -82,6 +82,6 @@ Intune アプリの保護ポリシーとモバイル アプリケーション管
 ## <a name="next-steps"></a>次の手順
 次のリソースを使用して、組織内のオペレーティング システムのバージョンを管理します。 
 
-- [デバイスの種類の制限を設定する](https://docs.microsoft.com/en-us/intune/enrollment-restrictions-set#set-device-type-restrictions)
-- [Intune のデバイス コンプライアンス ポリシーの概要](https://docs.microsoft.com/en-us/intune/device-compliance-get-started)
+- [デバイスの種類の制限を設定する](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions)
+- [Intune のデバイス コンプライアンス ポリシーの概要](https://docs.microsoft.com/intune/device-compliance-get-started)
 - [アプリ保護ポリシーを作成して割り当てる方法](https://docs.microsoft.com/intune/app-protection-policies)

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1a3f5d94d5b9b902c4b07939e822076215c01d7c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 66cca236d2779fb9a7a01ad6aa10a57edf8ab657
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Microsoft Intune でのソフトウェア更新のトラブルシューティング
 
@@ -251,7 +251,7 @@ Microsoft Intune のソフトウェア更新の問題を解決するには、こ
 - CPU 使用率が高くなる。
 - Intune ポータルからアプリケーションをインストールするときに、インストールの処理速度が遅くなる。
 - Microsoft Intune Center で次のエラーが発生する。*"このコンピューターを更新中にエラーが発生しました。エラーが見つかりました: コード 0x800705b4*。
-- Intune 管理コンソールの [グループ] の [すべてのデバイス] の下にあるステータス フィールドに、次のメッセージが表示される。*"このコンピューターにインストールされているエージェントでエラーが発生しました。このコンピューターの情報は、正確でないか最新のものでない可能性があります*。
+- Intune 管理コンソールの [グループ] の [すべてのデバイス] の下にあるステータス フィールドに、次のメッセージが表示される。*"このコンピューターにインストールされているエージェントでエラーが発生しました。このコンピューターの情報は、正確でないか最新のものでない可能性があります。"*
 
 この問題は、別の更新によって置き換えられた更新プログラムが長期間拒否されていない場合に発生することがあります。 Windows がアプリケーションのインストールなどの特定の処理を行う際、置き換えられた更新プログラムと置き換え後の更新プログラムを正しく関連付けるために、置き換えられた更新プログラムを順番にすべてチェックします。 置き換えられた更新プログラムが多くなりすぎると、このチェック処理に負荷と時間がかかるため、CPU 使用率が高くなる場合があります。 Windows 7 では置き換えられた更新プログラムが大量に提供されているため、この問題は主に Windows 7 を実行しているクライアントに影響します。 Windows 8 以降のオペレーティング システムでは置き換えられた更新プログラムがそれほど多く提供されていないため、この問題の影響はあまりありません。
 
@@ -264,5 +264,5 @@ Microsoft Intune のソフトウェア更新の問題を解決するには、こ
 
 さらに、Windows 7 を実行している場合は、次の更新プログラムがインストールされていることを確認します。[3050265 Windows Update Client for Windows 7: June 2015](https://support.microsoft.com/kb/3050265)
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。

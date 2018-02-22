@@ -14,11 +14,11 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 45e1b3747b4c1b74401fc1ce73716abe5e06110d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8ce84f51dcfb61ec16c78a6216135c2a7639657f
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Intune にユーザーを追加して管理権限を付与する
 
@@ -102,7 +102,7 @@ Intune サブスクリプションにユーザーを追加した後で、ごく�
 - **ユーザー管理者** - (Office 365 と Intune) パスワードの再設定、サービスの正常性の監視、ユーザー アカウントの追加と削除、サービス要求の管理を行います。 ユーザー管理の管理者は、グローバル管理者の削除、他の管理者ロールの作成、または他の管理者のパスワードの再設定を行うことはできません。
 - **Intune サービス管理者** - **[ディレクトリ ロール]** オプションで管理者を作成するアクセス許可を除く、すべての Intune グローバル管理者アクセス許可。
 
-Microsoft Intune サブスクリプションの作成に使うアカウントはグローバル管理者です。 ベスト プラクティスとして、グローバル管理者を日常の管理タスクに使用しないでください。 管理者には、Azure Portal にアクセスするための Intune のライセンスは必要ありません。 
+Microsoft Intune サブスクリプションの作成に使うアカウントはグローバル管理者です。 ベスト プラクティスとして、グローバル管理者を日常の管理タスクに使用しないでください。 管理者は、Intune のライセンスがなくても Azure Portal の Intune にアクセスすることはできますが、Exchange サービス コネクタの設定など、特定の管理タスクを行うには、Intune のライセンスが必要です。 
 
 Office 365 ポータルにアクセスするには、アカウントに**サインインが許可されている**必要があります。 Azure Portal の **[プロファイル]** で、**[サインインのブロック]** を **[いいえ]** に設定し、アクセスを許可します。 これは、サブスクリプションのライセンスを与えられていることとは別です。 既定では、すべてのユーザー アカウントは、"**許可済み**" の状態です。 管理者権限を持たないユーザーは、Office 365 ポータルを使って、Intune パスワードをリセットすることができます。
 

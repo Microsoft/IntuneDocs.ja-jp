@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 27f9d3172750d4db5b96d0477ecaeeafa1e59ed2
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5c9ac6ecc75c25f910a8aecd1632c947c95b26d6
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Microsoft Intune でのクライアント セットアップのトラブルシューティング
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 10/10/2017
 
 -   [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)に、コンピューターへのクライアント ソフトウェアの展開に関するアラートが何も表示されていない場合は、まず、クライアント コンピューターがインターネットに接続可能かどうかと、プロキシの構成を確認します。次に、コンピューターがサービスの URL ([ https://manage.microsoft.com](https://manage.microsoft.com/)) と通信できることを確かめてから、クライアント ソフトウェアのインストールを再試行してください。
 
--   "クライアント ソフトウェアの展開エラー" アラートが発生した場合に、特定のユーザーに電子メールが送信されるようにすることができます。このためには、[ **管理** ] ワークスペースで通知規則を構成します。 詳しくは、「[Microsoft Intune のアラートによる通知](/intune-classic/deploy-use/get-notified-by-alerts)」を参照してください。
+-   "クライアント ソフトウェアの展開エラー" アラートが発生した場合に、特定のユーザーに電子メールが送信されるようにすることができます。このためには、**[管理]** ワークスペースで通知規則を構成します。 詳しくは、「[Microsoft Intune のアラートによる通知](/intune-classic/deploy-use/get-notified-by-alerts)」を参照してください。
 
 -   Intune では、クライアント ソフトウェアの展開に失敗すると、重大なアラートとして **"クライアント ソフトウェアの展開エラー"** を表示します。 これは、[Microsoft Intune 管理コンソール](https://manage.microsoft.com/)の **[システムの概要]** ページと **[アラート]** ページで確認できます。 アラートを確認する方法を次に示します。
 
@@ -109,7 +109,7 @@ MDM Windows デバイス以外のデバイスでは、policyplatform.log ファ�
 |**0x80240438**、 **0x80CF0438**、 **0x80CF401B**|Intune サービスに接続できません。 クライアントのプロキシ設定を確認してください。|クライアント コンピューターのプロキシの構成が Intune でサポートされていることと、クライアント コンピューターがインターネットにアクセスできることを確認してください。 サポートされるプロキシ構成について詳しくは、「[Microsoft Intune の Endpoint Protection を使用して Windows PC を保護する](/intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)」を参照してください。|
 |**0x80CF402C**|Intune サービスに接続できません。 ネットワーク接続を確認します。|コンピューターのネットワーク接続を確認します。 ネットワーク ケーブルが接続されていること、またはワイヤレス接続がオンになっていることを確認してください。|
 |**0x80240438、0x80CF0438**|Internet Explorer とローカル システムのプロキシ設定が構成されていません。|クライアントのプロキシ設定をチェックし、クライアント コンピューターのプロキシの構成が Intune でサポートされていることと、クライアント コンピューターがインターネットにアクセス可能であることを確認してください。 サポートされるプロキシ構成について詳しくは、「[Microsoft Intune の Endpoint Protection を使用して Windows PC を保護する](/intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)」を参照してください。|
-|**0x80043001**|登録パッケージが最新ではありません。|[ **管理** ] ワークスペースを使用して、最新のクライアント ソフトウェア パッケージをダウンロードしてインストールしてください。 その方法については、トピック「[Microsoft Intune を使用して Windows PC クライアントをインストールする](/intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune)」をご覧ください。|
+|**0x80043001**|登録パッケージが最新ではありません。|**[管理]** ワークスペースを使用して、最新のクライアント ソフトウェア パッケージをダウンロードしてインストールしてください。 その方法については、トピック「[Microsoft Intune を使用して Windows PC クライアントをインストールする](/intune-classic/deploy-use/install-the-windows-pc-client-with-microsoft-intune)」をご覧ください。|
 |**0x80043004**|サブスクリプションが存在しないか、無効になっています。|Intune のアカウントとサブスクリプションがアクティブであることを確認します。 自分のアカウントの設定を見るには、[Office 365 管理センター](http://go.microsoft.com/fwlink/?LinkId=698854%20)でアカウントにサインインしてください。|
 |**0x80043002**|アカウントがメンテナンス モードです。|アカウントがメンテナンス モードになっている場合は、新しいクライアント コンピューターを登録することはできません。 自分のアカウントの設定を見るには、[Office 365 管理センター](http://go.microsoft.com/fwlink/?LinkId=698854%20)でアカウントにサインインしてください。|
 |**0x80043003**|アカウントが削除されています。|Intune のアカウントとサブスクリプションがアクティブであることを確認します。 自分のアカウントの設定を見るには、アカウントにサインインしてください。|
@@ -136,5 +136,5 @@ MDM Windows デバイス以外のデバイスでは、policyplatform.log ファ�
     ```
 
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。

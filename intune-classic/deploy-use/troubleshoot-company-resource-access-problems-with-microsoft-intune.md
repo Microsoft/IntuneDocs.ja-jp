@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 46a25f60e43b2106446904c36ee6aa10fceff579
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 48c7c0a2da845416bdf6280a0ba9ac29c8fb37ba
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Microsoft Intune での会社のリソースへのアクセスに関する問題のトラブルシューティング
 
@@ -372,5 +372,5 @@ Microsoft Intune の操作でエラー コードが返された場合の問題�
 |-2016345912|0x87D100C8|SyncML コマンドが正常に完了しました。|
 |-2016346011|0x87D10065|指定された SyncML コマンドは実行されていますが、まだ完了していません。|
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](../troubleshoot/how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。

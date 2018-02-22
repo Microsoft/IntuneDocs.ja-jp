@@ -150,3 +150,4 @@
 #### [Windows Defender を有効にする](turn-on-defender-windows.md)
 
 ## [Intune ポータル サイト Web サイトの使用](using-the-intune-company-portal-website.md)
+### [デバイスのリモートからのロック](remote-lock-your-device-cpwebsite.md)

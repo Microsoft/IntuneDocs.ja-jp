@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/13/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,28 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 666ce43e3bd87db5a8245694d22401819c369951
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 87e4c16fbb87ee83a01fe44a46c55c6243c8fc8a
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager での iOS デバイス登録の有効化
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+> [!NOTE]
+> ### <a name="temporary-user-interface-differences"></a>一時的なユーザー インターフェイスの違い
+>
+>このページで説明する機能のユーザー インターフェイスは、現在更新中です。 これらの更新は、4 月の終わりまでにすべてのユーザー アカウントにロールアウトされます。
+>
+>**[デバイス登録]** ページが次の図のようになっている場合、アカウントは新しいユーザー インターフェイスにまだ更新されていません。こちらのヘルプ ページを使用できます。
+>
+>![以前のユーザー インターフェイス](./media/appleenroll-oldui.png)
+>
+>**[デバイス登録]** ページが次の図のようになっている場合、ユーザー インターフェイスは更新済みです。  [こちらのヘルプ ページ](apple-school-manager-set-up-ios-newui.md)に移動してください。
+>
+>![新しいユーザー インターフェイス](./media/appleenroll-newui.png)
 
 このトピックは、[Apple School Manager](https://school.apple.com/) プログラムで購入したデバイスの iOS デバイス登録を有効にする場合に役立ちます。 Apple School Manager と共に Intune を使用して、デバイスに触れることなく、大量の iOS デバイスを登録できます。 学生や教師がデバイスの電源をオンにすると、セットアップ アシスタントが構成済み設定で実行され、デバイスが管理対象として登録されます。
 

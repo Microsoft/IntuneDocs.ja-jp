@@ -15,11 +15,11 @@ ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0db27bb8f83c7183b411705b16bbb9ad4d357e39
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: beaf027334ce4929e4ca824b2b7e199cea22a832
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="set-up-the-skycure-integration-with-intune"></a>Skycure と Intune の統合をセットアップする
 
@@ -37,7 +37,7 @@ Skycure では、Intune との統合に 2 つのモードがあります。
 
 -   **読み取り専用統合 (基本セットアップ):** Azure Active Directory からのデバイスのみが目録を作成し、それらを Skycure コンソールに入力します。
 <br>
-    -   Skycure 管理コンソールで **[Report the health and risk of devices to Intune (デバイスの健全性とリスクを Intune に報告する)]** ボックスと **[Also report security incidents to Intune (セキュリティ インシデントも Intune に報告する)]** ボックスが選択されていない場合、統合は読み取り専用となり、Intune でデバイスの状態 (準拠または非準拠) が変化することはありません。
+    -   Skycure 管理コンソールで **[Report the health and risk of devices to Intune]\(デバイスの健全性とリスクを Intune に報告する\)** ボックスと **[Also report security incidents to Intune]\(セキュリティ インシデントも Intune に報告する\)** ボックスがオンになっていない場合、統合は読み取り専用となり、Intune でデバイスの状態 (準拠または非準拠) が変化することはありません。
 <br></br>
 -   **完全統合:** デバイスのリスクとセキュリティ インシデントの詳細を Intune に報告することを Skycure に許可します。Intune は両方のクラウド サービス間で双方向通信を構築します。
 

@@ -12,11 +12,11 @@ ms.technology:
 ms.assetid: aa0002d9-f5a0-466e-98ac-3970cb77e3a2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 17c066ee7208790a591272ae5e1edc99cf2141a4
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d7939a20e9729487ce5824ba3f67cd84ec970032
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="manage-android-for-work-devices-with-intune"></a>Intune で Android for Work デバイスを管理する
 
@@ -82,7 +82,7 @@ Android 管理で使用できるものと同じ証明書プロファイルの構
 
 デバイスが Intune のインベントリから削除され、仕事用プロファイルが削除されると、Android for Work が管理する Wi-Fi プロファイルが削除されます。 詳細については、「[デバイスを構成すると、会社の Wi-Fi ネットワークに接続できます](wi-fi-connections-in-microsoft-intune.md)」を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [Android for Work の登録を有効にする](/intune-classic/deploy-use/set-up-android-for-work)
 
 [Android for Work 用アプリの展開](/intune-classic/deploy-use/android-for-work-apps)

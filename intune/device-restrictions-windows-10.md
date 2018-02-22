@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc50d6f5c4b0350d0117b5d68a0b9ac3e9ec3ab3
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: b4b576e9b6195f3db8d162e1f880faf9f669f2c1
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Windows 10 以降のデバイスの制限設定
 
@@ -156,8 +156,8 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 ## <a name="edge-browser"></a>Microsoft Edge ブラウザー
 
 -   **[Microsoft Edge ブラウザー (モバイルのみ)]** - デバイスで Edge Web ブラウザーを使用できるようにします。
--   **[アドレス バーのドロップダウン (デスクトップのみ)]** – これを使用すると、Edge でドロップダウン リストの入力候補表示が停止します。 Edge と Microsoft サービスの間のネットワーク帯域幅が最小に抑えられます。
--   **[Microsoft のブラウザー間でお気に入りを同期する (デスクトップのみ)]** – Internet Explorer と Edge の間でお気に入りを同期することを Windows に許可します。
+-   **[アドレス バーのドロップダウン (デスクトップのみ)]** – これを使用すると、Microsoft Edge でドロップダウン リストの入力候補表示が停止します。 Microsoft Edge と Microsoft サービスの間のネットワーク帯域幅が最小に抑えられます。
+-   **[Microsoft のブラウザー間でお気に入りを同期する (デスクトップのみ)]** – Internet Explorer と Microsoft Edge の間でお気に入りを同期することを Windows に許可します。
 -   **[トラッキング拒否ヘッダーを送信する]** - ユーザーがアクセスする Web サイトに Do Not Track ヘッダーを送信するように、Microsoft Edge ブラウザーを構成します。
 -   **[Cookie]** - ブラウザーがインターネット Cookie をデバイスに保存するように設定します。
 -   **[JavaScript]** - JavaScript などのスクリプトを Microsoft Edge ブラウザーで実行できるようにします。
@@ -170,15 +170,15 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 -   **[開発者ツール]** - エンド ユーザーが Microsoft Edge 開発者ツールを開くことを防止します。
 -   **[拡張機能]** - エンド ユーザーがデバイスに Microsoft Edge 拡張機能をインストールすることを許可します。
 -   **[InPrivate 閲覧]** - エンド ユーザーが InPrivate 閲覧セッションを開くことを防止します。
--   **[初回実行ページを表示する]** – Edge の初回実行時に紹介ページの表示を停止します。
-    -   **[初回実行の URL]** – ユーザーが初めて Edge を実行したときに表示されるページの URL を指定します (Windows 10 Mobile のみ)。
--   **[ホームページ]** - Edge ブラウザーのホームページとして使用するサイトの一覧を追加します (デスクトップのみ)。
--   **[スタート ページに対する変更内容]** – Edge を開いたときに表示されるスタート ページの変更をユーザーに許可します。 ホームページ設定を使用し、Edge 起動時に開くページまたはページ リストを作成します。
+-   **[初回実行ページを表示する]** – Microsoft Edge の初回実行時に紹介ページの表示を停止します。
+    -   **[初回実行の URL]** – ユーザーが初めて Microsoft Edge を実行したときに表示されるページの URL を指定します (Windows 10 Mobile のみ)。
+-   **[ホームページ]** - Microsoft Edge ブラウザーのホームページとして使用するサイトの一覧を追加します (デスクトップのみ)。
+-   **[スタート ページに対する変更内容]** – Microsoft Edge を開いたときに表示されるスタート ページの変更をユーザーに許可します。 ホームページ設定を使用し、Microsoft Edge 起動時に開くページまたはページ リストを作成します。
 -   **[About Flags へのアクセスをブロック]** - エンド ユーザーが Edge で開発者向けと実験用の設定を含む about:flags ページにアクセスするのを防止します。
 -   **[WebRtc localhost IP アドレス]** - Web RTC プロトコルを使用して電話するときにユーザーの localhost IP アドレスが表示されないようにします。
 -   **[既定の検索エンジン]** - 使用する既定の検索エンジンを指定します。 エンド ユーザーはこの値をいつでも変更できます。
--   **[終了時に閲覧データをクリアする]** – ユーザーが Edge を終了すると、履歴と閲覧データが消去されます。
--   **[ライブ タイル データの収集]** – ユーザーが Edge からスタート メニューにサイトをピン留めするとき、Windows がライブ タイルから情報を収集する行為を停止します。
+-   **[終了時に閲覧データをクリアする]** – ユーザーが Microsoft Edge を終了すると、履歴と閲覧データが消去されます。
+-   **[ライブ タイル データの収集]** – ユーザーが Microsoft Edge からスタート メニューにサイトをピン留めするとき、Windows がライブ タイルから情報を収集する行為を停止します。
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
@@ -268,7 +268,7 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 
       - **アプリのアプリケーション ユーザー モデル ID (AUMID)** - キオスク アプリの AUMID を指定します。 詳細については、「[Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)」 (インストール済みアプリのアプリケーション ユーザー モデル ID を見つける) を参照してください。
 
-    マルチ アプリ キオスクには、キオスク構成が必要です。 **[追加]** ボタンを使用してキオスク構成を作成するか、既存の構成を選びます。
+    [マルチ アプリ キオスク](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune)には、キオスク構成が必要です。 **[追加]** ボタンを使用してキオスク構成を作成するか、既存の構成を選びます。
 
     マルチ アプリ キオスクの構成には、次の設定が含まれます。
 

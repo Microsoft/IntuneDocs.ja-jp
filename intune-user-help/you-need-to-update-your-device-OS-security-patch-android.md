@@ -15,15 +15,15 @@ searchScope:
 - User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: ef8d10a1bc06234930ae32a2ce0dc8b1503e89d0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3851095689f194a2133aaa1b0ac8712098662226
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Android デバイスのオペレーティング システムを更新する必要がある
 
-"Minimum Android security patch level is not configured" (最低限の Android セキュリティ パッチ レベルが構成されていません) というメッセージが表示された場合は、更新プログラムをインストールしてデバイスの安全性を確保する必要があります。 _パッチ_は、ソフトウェアの円滑な動作と最新の状態を常に保つためにリリースされます。 会社のサポートから、このパッチをインストールして、デバイスで企業データが可能な限り保護されるようにすることが求められます。 必要なセキュリティ パッチの入手先は、特定の Samsung デバイスを使用しているかどうかで異なります。
+"Minimum Android security patch level is not configured" (最低限の Android セキュリティ パッチ レベルが構成されていません) というメッセージが表示された場合は、更新プログラムをインストールしてデバイスの安全性を確保する必要があります。 "_パッチ_" は、ソフトウェアの円滑な動作と最新の状態を常に保つためにリリースされます。 会社のサポートから、このパッチをインストールして、デバイスで企業データが可能な限り保護されるようにすることが求められます。 必要なセキュリティ パッチの入手先は、お使いの Android デバイスのタイプによって異なります。
 
 Samsung デバイスを使用している場合は、**[Settings]** > **[About phone]** に移動し、"Knox" という単語が画面上に表示されるかを確認します。 表示される場合は、以下の Samsung Knox の手順を実行します。
 

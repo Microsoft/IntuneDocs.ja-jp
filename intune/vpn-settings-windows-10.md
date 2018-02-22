@@ -13,17 +13,20 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7bd1d15276f93b50a22c7b47de6bd1eb619264a
-ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
+ms.openlocfilehash: d126853051bb4a6c2f1ea6fbd54195ae06254b51
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune での Windows 10 デバイス向けの VPN 設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 選択した設定によっては、次の一覧に記載されている値の一部を構成できない場合があります。
+
+> [!NOTE]
+> これらの設定は、Windows Holographic for Business を実行しているデバイスにも適用されます。
 
 
 ## <a name="base-vpn-settings"></a>基本 VPN 設定
@@ -78,9 +81,9 @@ ms.lasthandoff: 01/29/2018
     <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
 ```
 
-カスタムの XML コマンドの記述方法については、各製造元の VPN に関するマニュアルを参照してください。
+カスタム XML コマンドの作成方法については、各製造元の VPN ドキュメントをご覧ください。
 
-カスタム EAP XML の作成について詳しくは、「[EAP configuration](https://docs.microsoft.com/en-us/windows/client-management/mdm/eap-configuration)」(EAP の構成) をご覧ください。
+カスタム EAP XML の作成について詳しくは、「[EAP configuration](https://docs.microsoft.com/windows/client-management/mdm/eap-configuration)」(EAP の構成) をご覧ください。
 
 **[分割トンネリング]** - このオプションを **[有効]** または **[無効]** にします。これを有効にすると、使用する接続をトラフィックに応じてデバイスが判断するようになります。 たとえば、ホテルにいるユーザーは、業務ファイルへのアクセスに VPN 接続を使用しますが、通常の Web 閲覧にはホテルの標準ネットワークを使用します。
 - **[この VPN 接続の分割トンネリング ルート]** - サードパーティ VPN プロバイダー用のオプション ルートを追加します。 各ルートの宛先プレフィックスとプレフィックス サイズを指定します。
@@ -117,7 +120,7 @@ ms.lasthandoff: 01/29/2018
 ## <a name="proxy-settings"></a>プロキシの設定
 
 - **[自動的にプロキシ設定を検出する]** - VPN サーバーが接続にプロキシ サーバーを必要とする場合は、デバイスで接続の設定を自動的に検出するかどうかを指定します。 詳細については、Windows Server のマニュアルを参照してください。
-- **[自動構成スクリプト]** - ファイルを使用してプロキシ サーバーを構成します。 構成ファイルが格納されている**プロキシ サーバーの URL** を入力します (たとえば、**http://proxy.contoso.com**)。
+- **[自動構成スクリプト]** - ファイルを使用してプロキシ サーバーを構成します。 構成ファイルが格納されている**プロキシ サーバーの URL** を入力します (例: **http://proxy.contoso.com)。
 - **[プロキシ サーバーを使用する]** - プロキシ サーバーの設定を手動で入力する場合は、このオプションを有効にします。
     - **[アドレス]** - プロキシ サーバーのアドレスを (IP アドレスとして) 入力します。
     - **[ポート番号]** - プロキシ サーバーに関連付けられているポート番号を入力します。

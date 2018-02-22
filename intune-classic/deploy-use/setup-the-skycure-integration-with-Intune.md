@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ba03621015d7bbf9a141e57e0fde71561ef94f72
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: c981d6fb927d29f0d450c5c7571933626897b4f2
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="set-up-the-skycure-integration-with-intune"></a>Skycure と Intune の統合をセットアップする
 
@@ -39,7 +39,7 @@ Skycure では、Intune との統合に 2 つのモードがあります。
 
 -   **読み取り専用統合 (基本セットアップ):** Azure Active Directory からのデバイスのみが目録を作成し、それらを Skycure コンソールに入力します。
 <br>
-    -   Skycure 管理コンソールで [**Report the health and risk of devices to Intune (デバイスの健全性とリスクを Intune に報告する)**] ボックスと [**Also report security incidents to Intune (セキュリティ インシデントも Intune に報告する)**] ボックスが選択されていない場合、統合は読み取り専用となり、Intune でデバイスの状態 (準拠または非準拠) が変化することはありません。
+    -   Skycure 管理コンソールで **[Report the health and risk of devices to Intune]\(デバイスの健全性とリスクを Intune に報告する\)** ボックスと **[Also report security incidents to Intune]\(セキュリティ インシデントも Intune に報告する\)** ボックスがオンになっていない場合、統合は読み取り専用となり、Intune でデバイスの状態 (準拠または非準拠) が変化することはありません。
 <br></br>
 -   **完全統合:** デバイスのリスクとセキュリティ インシデントの詳細を Intune に報告することを Skycure に許可します。Intune は両方のクラウド サービス間で双方向通信を構築します。
 
@@ -99,7 +99,7 @@ Skycure は、Mobile Threat Defense サービスを実行しているデバイ�
 
 4.  次の設定を確認してください。
 
-    a.  デバイスの健全性とリスクを Intune に報告する
+    」を参照します。  デバイスの健全性とリスクを Intune に報告する
 
     b.  セキュリティ インシデントも Intune に報告する
 
@@ -107,6 +107,6 @@ Skycure は、Mobile Threat Defense サービスを実行しているデバイ�
 
     ![Skycure の完全統合の完了](../media/mtp/skycure-setup-6.png)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Intune で Skycure Mobile Threat Defense を有効にする](/intune-classic/deploy-use/enable-skycure-mobile-threat-defense-in-intune)

@@ -15,11 +15,11 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8528b3ec28499657b1eb39e1b981f92be3ab83ca
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f896ebd51f989c0e441043d320247946cdb8997b
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="enroll-macos-devices-in-intune"></a>Intune で macOS デバイスを登録する
 
@@ -51,4 +51,4 @@ macOS デバイスの登録をブロックする場合は、「[Set device type 
 その他のエンドユーザー タスクの詳細については、次の記事を参照してください。
 
 - [Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](end-user-educate.md)
-- [iOS デバイスまたは macOS デバイスを Intune で使用する](https://docs.microsoft.com/intune-user-help/using-your-ios-or-mac-os-x-device-with-intune)
+- [macOS デバイスを Intune で使用する](/intune-user-help/using-your-macos-device-with-intune)

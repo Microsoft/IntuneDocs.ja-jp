@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/03/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,28 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3e79ee1ddd2f8a8a9d7a3089e21b8807b9895d2c
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: c076bc52495d1b74a18e1d655376b6183dc5fe16
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Apple Configurator による iOS デバイスの登録
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+> [!NOTE]
+> ### <a name="temporary-user-interface-differences"></a>一時的なユーザー インターフェイスの違い
+>
+>このページで説明する機能のユーザー インターフェイスは、現在更新中です。 これらの更新は、4 月の終わりまでにすべてのユーザー アカウントにロールアウトされます。
+>
+>**[デバイス登録]** ページが次の図のようになっている場合、アカウントは新しいユーザー インターフェイスにまだ更新されていません。こちらのヘルプ ページを使用できます。
+>
+>![以前のユーザー インターフェイス](./media/appleenroll-oldui.png)
+>
+>**[デバイス登録]** ページが次の図のようになっている場合、ユーザー インターフェイスは更新済みです。  [こちらのヘルプ ページ](apple-configurator-enroll-ios-newui.md)に移動してください。
+>
+>![新しいユーザー インターフェイス](./media/appleenroll-newui.png)
 
 Intune は、Mac コンピューターで実行される [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) を使用した iOS デバイスの登録をサポートします。 Apple Configurator で登録するには、各 iOS デバイスを Mac コンピューターに USB 接続し、会社の登録をセットアップする必要があります。 Apple Configurator では、次の 2 つの方法でデバイスを Intune に登録できます。
 - **セットアップ アシスタントを使用した登録** - デバイスを出荷時の設定にリセットし、セットアップ アシスタント実行時に登録するように準備します。
