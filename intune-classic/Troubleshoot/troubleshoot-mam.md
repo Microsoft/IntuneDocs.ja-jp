@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 645414169dcdf5c2e548bda9d21e017e8a18f76d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 15baae06398d135557439c0e67b50f7e1326b6fe
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-mobile-application-management"></a>モバイル アプリケーション管理に関するトラブルシューティング
 
@@ -32,7 +32,7 @@ Intune モバイル アプリケーション管理に関して問題がある場
 
 以下に示すのは、IT 管理者が Intune のアプリ保護ポリシーを使っているときに発生する可能性がある一般的な問題です。
 
-| 問題 | 説明 | 解決方法 |
+| 問題 | 説明 | 解決策 |
 | -- | -- | -- |
 | ポリシーが Skype for Business に適用されない | Azure Portal でデバイスを登録しないで設定したアプリ保護ポリシーが、iOS デバイスと Android デバイスの Skype for Business アプリに適用されません。 | 先進認証を使うように Skype for Business を設定する必要があります。  「[Enable your tenant for modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)」 (テナントで先進認証を有効にする) の説明に従って、Skype に先進認証を設定してください。 |
 | Office のアプリ ポリシーが適用されない | アプリ保護ポリシーが、すべてのユーザーの、どの[サポートされる Office アプリ](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)にも適用されません。 | ユーザーに Intune のライセンスが与えられていること、および Office アプリが展開されるアプリ保護ポリシーの対象であることを確認します。 新しく展開したアプリ保護ポリシーが適用されるには最大 8 時間かかります。 |

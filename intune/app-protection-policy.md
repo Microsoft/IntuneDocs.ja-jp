@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a6645261e2a90ea3890dc22b42fe65d6af4af6e5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ac997e9543df5d964b6a8fba83677baa49af38e8
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="what-are-app-protection-policies"></a>アプリ保護ポリシーとは
 
@@ -72,6 +72,7 @@ Windows デバイスは現在サポートされていません。 ただし、In
 ![アプリ保護ポリシーが配備されていない場合にデータがアプリ間を自由に移動できることを示す画像](./media/apps-without-protection-policies.png)
 
 アプリが制限なしで使用されている場合、会社データと個人データが混在する可能性があります。  会社データが個人の記憶域に保存されたり、管理範囲外のアプリに転送されたりして、データが損失することがあります。 図の矢印はアプリ (会社と個人) と記憶域の間の制限されたデータ移動を示しています。
+
 
 ### <a name="data-protection-with-app-protection-policies"></a>アプリ保護ポリシーによるデータ保護
 
@@ -134,3 +135,6 @@ MDM ソリューションに登録されていない BYOD デバイスでは、�
 ##  <a name="next-steps"></a>次の手順
 
 [Microsoft Intune でアプリ保護ポリシーを作成および展開する方法](app-protection-policies.md)
+
+## <a name="see-also"></a>関連項目
+Salesforce モバイル アプリなどのサード パーティ製アプリは特定の方法で Intune と連携して企業データを保護します。 Salesforce アプリが特に Intune と連携する方法の詳細 (MDM アプリ構成の設定を含む) については、「[Salesforce App and Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf)」 (Salesforce アプリと Microsoft Intune) を参照してください。

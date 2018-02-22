@@ -14,11 +14,11 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 626f52ecb7c3e90f05cc06a7235ca96499654ce5
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 773e4d551a8ea278c60107a279e29b83f0a1596f
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune ソフトウェア クライアントを使用して Windows PC をコンピューターとして管理する
 
@@ -38,7 +38,7 @@ Intune は、ソフトウェア クライアントを使って、最大 7,000 �
 
 **ハードウェア**: 次に、Intune クライアント ソフトウェアをインストールするハードウェアの最小要件を示します。
 
-|要件|説明|
+|要件|詳細情報|
 |---------------|--------------------|
 |ネットワーク|クライアントでは、PC がインターネット接続できる必要があります。|
 |プロセッサとメモリ|PC のオペレーティング システムに対するプロセッサ要件と RAM 要件を参照してください。|
@@ -46,7 +46,7 @@ Intune は、ソフトウェア クライアントを使って、最大 7,000 �
 
 **ソフトウェア**: 次に、クライアント ソフトウェアをインストールするソフトウェアの要件を示します。
 
-|要件|説明|
+|要件|詳細情報|
 |---------------|--------------------|
 |オペレーティング システム | Windows Vista 以降を実行している Windows デバイスであること。 </br></br>**Home エディションのバージョンはサポートされていません。**|
 |管理者のアクセス許可|クライアント ソフトウェアをインストールするアカウントは、そのデバイスのローカル管理者のアクセス許可を持っている必要があります。|

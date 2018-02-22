@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/13/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 122d5895cbb4e87d2bfb69260079a6595a560e35
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dc5ebd90483b0fa0e25461574085bd4160f012ea
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Volume Purchase Program で購入した iOS アプリを Microsoft Intune で管理する方法
 
@@ -132,11 +132,21 @@ iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purc
 > [!Note]  
 > VPP ユーザー ライセンスを使ってキオスク モード デバイスに VPP アプリを割り当てることは推奨されません。
 
+## <a name="revoking-app-licenses-and-deleting-tokens"></a>アプリ ライセンスの無効化とトークンの削除 
+
+<!-- 820863 -->For a given device that has one or more iOS volume-purchase program (VPP) apps, you revoke all associated device-based app licenses for the device. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app and reclaim a license, you must change the assignment type of the VPP app to **Uninstall**. If you remove an app that was assigned to a user, Intune reclaims the user or device license and uninstallS the app from the device.
+
+>[!NOTE]
+>従業員が退職して AAD グループのメンバーではなくなると、Intune はユーザーにライセンスされていたすべての iOS VPP アプリ ライセンスを取得します。
+
+<!-- 820879 -->You can delete a iOS Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token. Deleting a token will also delete any associated apps and assignment. However, deleting a token does not revoke app licenses or uninstall apps. 
+
+>[!NOTE]
+>トークンが削除された後では、Intune はアプリのライセンスを取り消すことができません。 
+
+<!-- 820870 -->To revoke the license of all VPP apps for a given VPP token, you must first revoke all app licenses associated with the token, then delete the token.
+
 ## <a name="further-information"></a>詳細情報
-
-ライセンスを再利用するには、割り当てアクションを **[アンインストール]** に変更する必要があります。 アプリをアンインストールすると、ライセンスは回収されます。 ユーザーに割り当てられたアプリを削除すると、Intune は、そのユーザーに関連付けられているすべてのアプリ ライセンスの回収を試行します。
-
-<!-- 820879 -->You can delete a iOS Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token. Deleting a token will also delete any associated apps and assignment. However, deleting a token does not revoke app licenses. Intune cannot revoke app licenses after a token has been deleted. 
 
 対象となるデバイスを持つユーザーが初めて VPP アプリをデバイスにインストールしようとすると、Apple Volume Purchase Program に参加するように求められます。 アプリのインストールを実行する前に、このプログラムに参加する必要があります。 Apple Volume Purchase Program への参加招待を行うには、ユーザーが iOS デバイスで iTunes アプリを使用できる必要があります。 iTunes Store アプリを無効にするようにポリシーを設定した場合、VPP アプリのユーザーベース ライセンスは機能しません。 この問題を解決するには、ポリシーを削除して iTunes アプリを許可するか、デバイス ベースのライセンスを使用します。
 

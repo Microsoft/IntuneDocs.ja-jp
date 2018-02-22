@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/29/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3e3f35648784de860eb7e3f2e203488bc77a96d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fab385762efa3ab095553fe21fb045f4f11ff197
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="set-enrollment-restrictions"></a>登録制限を設定する
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 01/25/2018
 >登録の制限はセキュリティ機能ではありません。 侵害されたデバイスでは特徴が正しく示されない可能性があります。 これらの制限は、悪意のないユーザーにとって最善の防御策となります。
 
 >[!NOTE]
->以下で説明している、グループに割り当てられた登録制限と優先順位の機能は、Intune の顧客ベース全体にロールアウトしている過程にあります。 このロールアウトが完了するまで、グループと優先順位の機能にアクセスできないことがあります。 
+>以下で説明している、グループに割り当てられた登録制限と優先順位の機能は、Intune の顧客ベース全体にロールアウトしている過程にあります。 このロールアウトが完了するまで、グループと優先順位の機能にアクセスできないことがあります。
 
 具体的に作成できる登録の制限には、次のようなものがあります。
 
@@ -80,7 +80,7 @@ ms.lasthandoff: 01/25/2018
   - Android および Android for Work は、major.minor.rev.build をサポートします。
   - iOS では major.minor.rev がサポートされます。
   - Windows では major.minor.rev.build がサポートされます (Windows 10 の場合のみ)。
-  オペレーティング システムのバージョンは、Device Enrollment Program、Apple School Manager、または Apple Configurator アプリを使用して登録する Apple デバイスには適用されません。 
+  オペレーティング システムのバージョンは、Device Enrollment Program、Apple School Manager、または Apple Configurator アプリを使用して登録する Apple デバイスには適用されません。
 8. 一覧されているプラットフォームごとに、**個人所有**のデバイスを**許可**するか**ブロック**するかを指定します。
 
     ![個人所有設定の構成を示す既定デバイス プラットフォーム構成のデバイス制限ワークスペースのスクリーンショット。](media/device-restrictions-platform-configurations.png)
@@ -103,15 +103,19 @@ ms.lasthandoff: 01/25/2018
     ![[デバイス数の制限] ブレードのスクリーンショット。](./media/device-restrictions-limit.png)
 6. **[Save]**(保存) をクリックします。
 
+エンド ユーザーがデバイス登録の上限に達すると、そのことを伝える通知が表示されます。 たとえば、iOS では次のように表示されます。
+
+![iOS のデバイス制限通知のスクリーンショット](./media/enrollment-restrictions-ios-set-limit-notification.png)
+
 ## <a name="change-enrollment-restriction-priority"></a>登録制限の優先度を変更する
 
-優先度は、制限が割り当てられた複数のグループにユーザーが存在する場合に使用されます。 ユーザーは、自分が属するグループに割り当てられている最も高い優先度の制限からのみ影響を受けます。 たとえば、Joe が優先度 5 の制限に割り当てられたグループ A と優先度 2 の制限に割り当てられたグループ B に属しているとします。 Joe は優先度 2 の制限からのみ影響を受けます。 
+優先度は、制限が割り当てられた複数のグループにユーザーが存在する場合に使用されます。 ユーザーは、自分が属するグループに割り当てられている最も高い優先度の制限からのみ影響を受けます。 たとえば、Joe が優先度 5 の制限に割り当てられたグループ A と優先度 2 の制限に割り当てられたグループ B に属しているとします。 Joe は優先度 2 の制限からのみ影響を受けます。
 
 制限を作成するとき、作成される制限は、リスト上で既定の制限のすぐ上に追加されます。
 
-デバイスの登録には、デバイスの種類の制限とデバイス数の制限の両方に対する既定の制限が含まれます。 この 2 つの制限は、より高い優先度の制限で上書きされない限り、すべてのユーザーに適用されます。 
+デバイスの登録には、デバイスの種類の制限とデバイス数の制限の両方に対する既定の制限が含まれます。 この 2 つの制限は、より高い優先度の制限で上書きされない限り、すべてのユーザーに適用されます。
 
-既定以外の制限の優先度は、変更することができます。 
+既定以外の制限の優先度は、変更することができます。
 
 **制限の優先度を変更するには**
 
@@ -120,8 +124,3 @@ ms.lasthandoff: 01/25/2018
 3. **[デバイスの登録]** > **[登録の制限]** を選択します。
 4. 優先度リスト内の制限にマウス ポインタを移動させます。
 5. 3 つの縦向きドットを使用して、リスト内の目的の位置に優先度をドラッグします。
-
-
-
-
-

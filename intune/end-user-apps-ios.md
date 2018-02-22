@@ -14,11 +14,11 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 31bb6cf7d118e121a5a8d8a74f92c2b3cf5da7bc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 52d9c05d0bb2ed1c8592ac3b2c5cdeb07114367d
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>iOS ユーザーがアプリを入手する方法
 
@@ -47,7 +47,7 @@ Apple の制限により、基幹業務アプリおよび管理対象アプリ �
 
 ![iOS ポータル サイト アプリの画面](./media/ios-cp-app-main-apps-screen.png)
 
-アプリを追加し、これらのタイルに配置する方法については、「[Intune に登録されたデバイスのアプリを追加する](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)」を参照してください。
+アプリを追加する方法の詳細については、「[アプリを Microsoft Intune に追加する方法](apps-add.md)」を参照してください。
 
 ### <a name="see-also"></a>関連項目
 [Android ユーザーがアプリを入手する方法](end-user-apps-android.md)

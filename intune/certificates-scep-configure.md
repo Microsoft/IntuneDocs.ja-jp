@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5aea88aa8898380c54867090650bd16d8bf60f3c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 61193cc96f0ea22e9a80d24fe8ee0499e80d4202
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Intune で SCEP 証明書を構成して管理する
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -35,7 +35,7 @@ ms.lasthandoff: 01/25/2018
 -  **NDES サーバー**: Windows Server 2012 R2 以降を実行しているサーバーに、ネットワーク デバイス登録サービス (NDES) を設定する必要があります。 エンタープライズ CA も実行しているサーバーで Intune を実行する場合には、ネットワーク デバイス登録サービスは使用できません。 ネットワーク デバイス登録サービスをホストするための Windows Server 2012 R2 の構成方法については、「[ネットワーク デバイス登録サービスのガイダンス](http://technet.microsoft.com/library/hh831498.aspx)」を参照してください。
 NDES サーバーは、CA をホストしているドメインに参加する必要があります。CA と同じサーバーに置くことはできません。 別個のフォレスト、分離ネットワーク、内部ドメインで NDES サーバーを展開する方法については、「[ポリシー モジュールとネットワーク デバイス登録サービスの使用](https://technet.microsoft.com/library/dn473016.aspx)」を参照してください。
 
--  **Microsoft Intune Certificate Connector**: Azure Portal を使用して **Certificate Connector** インストーラー (**ndesconnectorssetup.exe**) をダウンロードします。 これにより、証明書コネクタをインストールするコンピューターで **ndesconnectorssetup.exe** を実行できます。 
+-  **Microsoft Intune Certificate Connector**: Azure Portal を使用して **Certificate Connector** インストーラー (**ndesconnectorssetup.exe**) をダウンロードします。 その後は、Certificate Connector をインストールするネットワーク デバイス登録サービス (NDES) の役割をホストするサーバーで **ndesconnectorssetup.exe** を実行できます。 
 -  **Web アプリケーション プロキシ サーバー** (省略可能): Web アプリケーション プロキシ (WAP) サーバーとして Windows Server 2012 R2 以降を実行しているサーバーを使用します。 この構成は:
     -  デバイスはインターネット接続を使用して証明書を受信できます。
     -  デバイスがインターネット接続経由で証明書を受信して更新する場合のセキュリティ推奨事項です。
@@ -299,7 +299,7 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 このタスクでは次のことを行います。
 
 - Intune で NDES のサポートを有効にします。
-- 自分の環境のサーバーで証明書コネクタをダウンロードし、インストールして、構成します。 高可用性をサポートするために、さまざまなサーバーに複数の証明書コネクタをインストールすることができます。
+- 環境内のネットワーク デバイス登録サービス (NDES) の役割をホストするサーバーで Certificate Connector をダウンロード、インストール、構成します。 組織内の NDES の実装のスケーラビリティを向上させるには、各 NDES サーバー上の Microsoft Intune Certificate Connector で複数の NDES サーバーをインストールできます。
 
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>証明書コネクタをダウンロードし、インストールして、構成するには
 ![ConnectorDownload](./media/certificates-download-connector.png)   
@@ -309,7 +309,7 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 4. **[デバイス構成]** ブレードで **[証明機関]** を選択します。
 5. **[追加]** をクリックして、**[Download Connector file]\(コネクタ ファイルのダウンロード\)** を選択します。 インストールするサーバーからアクセスできる場所にダウンロードしたものを保存します。 
-6.  ダウンロードが完了したら、ダウンロードしたインストーラー (**ndesconnectorssetup.exe**) を Windows Server 2012 R2 サーバーで実行します。 インストーラーは、NDES のポリシー モジュールと CRP Web サービスもインストールします。 (CRP Web サービス CertificateRegistrationSvc は IIS のアプリケーションとして実行されます)。
+6.  ダウンロードが完了した後、ダウンロードしたインストーラー (**ndesconnectorssetup.exe**) を、ネットワーク デバイス登録サービス (NDES) の役割をホストしているサーバーで実行します。 インストーラーは、NDES のポリシー モジュールと CRP Web サービスもインストールします。 (CRP Web サービス CertificateRegistrationSvc は IIS のアプリケーションとして実行されます)。
 
     > [!NOTE]
     > スタンドアロン Intune の NDES をインストールする場合、CRP サービスは証明書コネクタと共に自動的にインストールされます。 構成マネージャーで Intune を使用する場合は、証明書登録ポイントを別のサイト システムの役割としてインストールします。

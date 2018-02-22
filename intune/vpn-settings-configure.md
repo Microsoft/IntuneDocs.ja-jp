@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/03/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3637ad08e097e4edcd527b3603dd00e1eac47f71
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 772b7f025adc7ae80d0f14c5c630209c4c7529b2
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Microsoft Intune で VPN の設定を構成する方法
 
@@ -77,7 +75,7 @@ ms.lasthandoff: 01/25/2018
     - [macOS の設定](vpn-settings-macos.md)
     - [Windows Phone 8.1 の設定](vpn-settings-windows-phone-8-1.md)
     - [Windows 8.1 の設定](vpn-settings-windows-8-1.md)
-    - [Windows 10 の設定](vpn-settings-windows-10.md)
+    - [Windows 10 の設定](vpn-settings-windows-10.md) (Windows Holographic for Business を含む)
 8. 完了したら、**[プロファイルを作成します]** ブレードに戻り、**[作成]** をクリックします。
 
 プロファイルが作成され、プロファイルの一覧ブレードに表示されます。

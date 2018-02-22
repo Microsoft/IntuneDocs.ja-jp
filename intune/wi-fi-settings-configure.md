@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/03/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 161b0de7d697a4ed2d8f80dffdef71296eb6ced2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e03df2525b413ca33f81836292a05dac11bb8349
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Microsoft Intune で Wi-Fi の設定を構成する方法
 
@@ -33,6 +31,8 @@ Microsoft Intune の Wi-Fi プロファイルを使用して、ワイヤレス �
 2. iOS デバイスのすべてのユーザーを含むグループにそのプロファイルを割り当てます。
 3. ユーザーは、自分のデバイスでワイヤレス ネットワークの一覧にある新しい Contoso Wi-Fi ネットワークを見つけ、このネットワークに簡単に接続できるようになります。
 
+## <a name="supported-device-platforms"></a>サポートされるデバイス プラットフォーム
+
 Wi-Fi プロファイルでは次のデバイス プラットフォームをサポートしています。
 
 - Android 4 以降
@@ -40,7 +40,7 @@ Wi-Fi プロファイルでは次のデバイス プラットフォームをサ�
 - iOS 8.0 以降
 - macOS (Mac OS X 10.9 以降)
 
-Windows 8.1、Windows 10、および Windows 10 Mobile を実行しているデバイスの場合は、以前に別のデバイスからエクスポートした Wi-Fi 構成をインポートできます。
+Windows 8.1、Windows 10、Windows 10 Mobile、Windows Holographic for Business を実行しているデバイスの場合は、以前に別のデバイスからエクスポートした Wi-Fi 構成をインポートできます。
 
 このトピックでは、Wi-Fi プロファイルを構成する基本的な方法について説明します。その後、デバイスごとの詳細については、各プラットフォームのトピックを参照してください。
 
@@ -58,13 +58,22 @@ Windows 8.1、Windows 10、および Windows 10 Mobile を実行しているデ�
     - **iOS**
     - **macOS**
     - **Windows 8.1 以降 (プロファイルのインポート)**
-6. **[プロファイルの種類]** ドロップダウン リストで、**[Wi-Fi Basic]** または **[Wi-Fi Enterprise]** を選択します。 **[Wi-Fi Basic]** を使用し、ネットワーク名や SSID などの基本的な機能を指定できます。 **[Wi-Fi Enterprise]** を使用すると、詳細情報 (たとえば、Wi-Fi ネットワークで拡張認証プロトコル (EAP) を使用している場合は EPA) を指定できます。 **[Wi-Fi インポート]** (Windows 8.1 および Windows 10) を使用すると、以前に別のデバイスからエクスポートした Wi-Fi 設定を XML ファイルとしてインポートすることができます。
-7. 選択したプラットフォームによって構成できる設定が異なります。 各プラットフォームの詳細な設定については、次のいずれかのトピックを参照してください。
+
+   > [!IMPORTANT]
+   > Windows 10 を実行するデバイス用のプロファイルを作成する場合は (Windows Holographic for Business など)、**Windows 8.1 以降の**プラットフォームを選ぶ必要があります。 **Windows 10 以降**のプラットフォームには、Wi-Fi プロファイルの種類は含まれません。 
+
+6. Apple デバイスまたは Android デバイスの場合、**[WiFi の種類]** ドロップダウン リストで、**[Basic]** または **[Enterprise]** を選びます。 **[Basic]** を使うと、ネットワーク名や SSID などの基本的な機能を指定できます。 **[Enterprise]** を使うと、詳細情報 (たとえば、Wi-Fi ネットワークで拡張認証プロトコル (EAP) を使っている場合は EPA) を指定できます。 
+
+   **[Wi-Fi インポート]** プロファイル (Windows 8.1 以降の場合) を使うと、以前に別のデバイスからエクスポートした Wi-Fi 設定を XML ファイルとしてインポートすることができます。
+1. 選択したプラットフォームによって構成できる設定が異なります。 各プラットフォームの詳細な設定については、次のいずれかのトピックを参照してください。
     - [Android と Android for Work の設定](wi-fi-settings-android.md)
     - [iOS の設定](wi-fi-settings-ios.md)
     - [macOS の設定](wi-fi-settings-macos.md)
-    - [Windows Phone 8.1 の設定](wi-fi-settings-import-windows-8-1.md)
-8. 完了したら、**[プロファイルを作成します]** ブレードに戻り、**[作成]** をクリックします。
+    - [Windows 8.1 以降の設定](wi-fi-settings-import-windows-8-1.md) (Windows Holographic for Business を含む)
+1. 完了したら、**[プロファイルを作成します]** ブレードに戻り、**[作成]** をクリックします。
 
 プロファイルが作成され、プロファイルの一覧ブレードに表示されます。
+
+## <a name="next-steps"></a>次の手順
+
 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事を参照してください。

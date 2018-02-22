@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2017
+ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a37497dcf015a611e8b770b5a28e519c0e397c87
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e137da3ad4121f4b9cdfbb765ee00f71beca610a
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="enroll-android-devices"></a>Android デバイスの登録
 
@@ -49,6 +49,9 @@ Android デバイスをブロックする場合や、個人所有の Android デ
 
 ## <a name="add-android-for-work-binding-for-intune"></a>Intune 用に Android for Work のバインディングを追加する
 
+> [!NOTE]
+> Google ドメインと Microsoft ドメインの間の相互作用のため、この手順では、正常に完了するためにブラウザー設定の調整が必要な場合があります。  "portal.azure.com" と "play.google.com" がブラウザーの同じセキュリティ ゾーンにあることを確認してください。
+
 1. **Intune MDM をセットアップする**<br>
 **Microsoft Intune** を[モバイル デバイス管理機関](mdm-authority-set.md)に設定し、モバイル デバイス管理の準備をします (この作業をまだ行っていない場合)。
 2. **Android for Work のバインディングを構成する**<br>
@@ -64,11 +67,10 @@ Android デバイスをブロックする場合や、個人所有の Android デ
    **[組織名]** に会社名を入力します。 **エンタープライズ モビリティ管理 (EMM) プロバイダー**の場合、**Microsoft Intune** と表示されます。 Android for Work の使用条件に同意し、**[確認]** を選択します。 要求が処理されます。
 
 ## <a name="specify-android-for-work-enrollment-settings"></a>Android for Work 登録設定を指定する
-   Android for Work は、特定の Android デバイスでのみサポートされています。 Google の [Android for Work の要件](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window")に関するページを参照してください。 Android for Work をサポートするすべてのデバイスでは、従来の Android 管理もサポートされます。 Intune では、Android for Work をサポートするデバイスの管理方法を指定できます。
+Android for Work は、特定の Android デバイスでのみサポートされています。 Google の [Android for Work の要件](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22)に関するページを参照してください。 Android for Work をサポートするすべてのデバイスでは、従来の Android 管理もサポートされます。 Intune では、Android for Work をサポートするデバイスを[登録制限](enrollment-restrictions-set.md)内から管理する方法を指定できます。
 
-   - **すべてのデバイスを Android として管理する**。 Android for Work をサポートするデバイスを含め、すべての Android デバイスが従来の Android デバイスとして登録されます。
-   - **サポートされているデバイスを Android for Work として管理する**。 Android for Work をサポートするすべてのデバイスが Android for Work デバイスとして登録されます。 Android for Work をサポートしないすべての Android デバイスは、従来の Android デバイスとして登録されます。
-   - **これらのユーザー グループに所属するユーザーのサポートされているデバイスのみを Android for Work として管理する**。 Android for Work の管理対象を一部のユーザーのみに制限できます。 Android for Work をサポートするデバイスを登録した、選択したグループのメンバーのみが、Android for Work デバイスとして登録されます。 その他すべてのデバイスは Android デバイスとして登録されます。 これは Android for Work のパイロット中に役立ちます。
+- **ブロック (既定で設定)**: Android for Work をサポートするデバイスを含め、すべての Android デバイスが従来の Android デバイスとして登録されます。
+- **許可**: Android for Work をサポートするすべてのデバイスが Android for Work デバイスとして登録されます。 Android for Work をサポートしないすべての Android デバイスは、従来の Android デバイスとして登録されます。
 
 ## <a name="approve-the-company-portal-app-in-the-managed-google-play-store"></a>管理対象の Google Play ストアのポータル サイト アプリを承認する
 アプリの自動更新を確実に受け取るには、管理対象の Google Play ストアの Android 用ポータル サイト アプリを承認する必要があります。 アプリを承認しないと、ポータル サイトはいずれ使われていない状態になってしまい、Microsoft からリリースされた重要なバグ修正プログラムや新しい機能を受け取らなくなることがあります。

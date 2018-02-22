@@ -6,26 +6,24 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/03/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 2c4e9b19-b268-4f6d-9663-7cdbe4e4a8dd
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a587ef87afd9a8629ac6a274fe87406fb24f79f7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5b4b77f9c9c1c957e3332c20e010a5e8e8ec2b56
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Microsoft Intune で Windows 8.1 以降のデバイス向け Wi-Fi 設定をインポートする方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Windows 8.1 または Windows 10 デスクトップまたはモバイルを実行するデバイスの場合は、以前エクスポートされた Wi-Fi 構成プロファイルをファイルにインポートすることができます。
+Windows 8.1、Windows 10 デスクトップまたはモバイル、または Windows Holographic for Business を実行するデバイスの場合は、以前エクスポートされた Wi-Fi 構成プロファイルをファイルにインポートすることができます。
 
 ## <a name="export-wi-fi-settings-from-a-windows-device"></a>Windows デバイスからの Wi-Fi 設定のエクスポート
 
@@ -43,9 +41,13 @@ Windows で、**netsh wlan** ユーティリティを使用して、既存の Wi
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
 3. [プロファイル] ブレードで、**[プロファイルを作成します]** をクリックします。
 4. **[プロファイルを作成します]** ブレードで、デバイスの制限プロファイルの**名前**と**説明**を入力します。
+
+   > [!WARNING]
+   > 名前は、Wi-Fi プロファイルの xml の名前属性と同じにする**必要があります**。異なると失敗します。
+
 5. **[プラットフォーム]** ドロップダウン リストで、**[Windows 8.1 以降]** を選択します。
 6. **[プロファイルの種類]** ドロップダウン リストで、**[Wi-Fi インポート]** を選択します。
-7. **[Wi-fi Basic]** ブレードで、次を構成します。
+7. **[Wi-fi Basic]\(Wi-Fi 基本\)** ブレードで、以下の設定を構成します。
     - **[接続名]**: Wi-Fi 接続の名前を入力します。 この名前は、使用可能な Wi-Fi ネットワークを参照しているエンド ユーザーに表示されます。
     - **[プロファイル XML]**: 参照ボタンをクリックして、Intune にインポートする Wi-Fi プロファイル設定を含む XML ファイルを選択します。
     - **[ファイルの内容]**: 選択した構成プロファイルの XML コードが表示されます。

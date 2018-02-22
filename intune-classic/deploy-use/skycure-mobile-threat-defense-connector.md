@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51f26d630537901ad39a215062f820a2c243e077
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 096cd7f2f7895531b00d77c5d26413471fb9bbcf
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense コネクター
 
@@ -69,7 +69,7 @@ Intune では、Skycure との統合に 2 つのモードがあります。
 
 ![検出された悪意のあるアプリ](../media/mtp/skycure-arch-1.png)
 
-**修復時に付与されるアクセス権:**
+**修復後、アクセスが与えられる:**
 
 ![悪意のあるアプリの検出、アクセス権](../media/mtp/skycure-arch-2.png)
 
@@ -81,7 +81,7 @@ Intune では、Skycure との統合に 2 つのモードがあります。
 
 ![Wi-Fi 経由のネットワーク アクセスをブロックする](../media/mtp/skycure-arch-3.png)
 
-**修復時に付与されるアクセス権:**
+**修復後、アクセスが与えられる:**
 
 ![修復するとアクセス権が付与される](../media/mtp/skycure-arch-4.png)
 
@@ -93,7 +93,7 @@ Intune では、Skycure との統合に 2 つのモードがあります。
 
 ![ネットワークの脅威が検出されたときに SharePoint Online をブロック](../media/mtp/skycure-arch-5.png)
 
-**修復時に付与されるアクセス権:**
+**修復後、アクセスが与えられる:**
 
 ![SharePoint で修復時にアクセス権を付与する例](../media/mtp/skycure-arch-6.png)
 
@@ -113,7 +113,7 @@ Intune では、Skycure との統合に 2 つのモードがあります。
 
 詳細については、[Skycure Web サイト](https://www.skycure.com/skycure-microsoft-integration/)をご覧ください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 Intune と Skycure の統合は次の手順で行います。
 

@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/28/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
-ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9ce18162391318374729b55aaeb302d850c17939
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3fb7de9fb320b74895b702167750e149eba34e1e
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="use-windows-hello-for-business"></a>Windows Hello for Business を使用する
 
@@ -94,6 +92,18 @@ Intune と Hello for Business の統合には 2 通りの方法があります�
 
  - **[電話によるサインインの使用]**。 このオプションが **[はい]** に設定されている場合、ユーザーはデスクトップ コンピューターの認証にポータブル コンパニオン デバイスとして機能するリモートの Passport を使用することができます。 デスクトップ コンピューターは Azure Active Directory に参加している必要があり、コンパニオン デバイスでは Windows Hello for Business の PIN を設定する必要があります。
 
+## <a name="windows-holographic-for-business-support"></a>Windows Holographic for Business のサポート
+
+Windows Holographic for Business は、Windows Hello for Business の以下の設定をサポートします。
+
+- トラステッド プラットフォーム モジュール (TPM) の使用
+- PIN の最小長
+- PIN の最大長
+- PIN での小文字
+- PIN での大文字
+- PIN での特殊文字
+- PIN の有効期間 (日)
+- PIN の履歴を保存
 
 ## <a name="further-information"></a>詳細情報
 Microsoft Passport について詳しくは、Windows 10 ドキュメントの[こちらのガイド](https://technet.microsoft.com/library/mt589441.aspx)をご覧ください。

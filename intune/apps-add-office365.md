@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 08/14/2017
+ms.date: 01/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ee1657351551ea83c6089c5ac52655b9cd64fc2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3174fc498b5d8cffaade7c52f417409de64c7eb6
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune で Windows 10 デバイスに Office 365 ProPlus 2016 アプリを割り当てる方法
 
@@ -33,9 +33,10 @@ ms.lasthandoff: 01/25/2018
 
 - これらのアプリを展開するデバイスでは、Windows 10 Creators Update 以降を実行している必要があります。
 - Intune は、Office 365 ProPlus 2016 スイートの Office アプリの追加のみをサポートします。
-- Intune でアプリ スイートをインストールするときに、Office アプリが開いている場合は、エンドユーザーは保存されていないファイルのデータを失う可能性があります。
-- このインストール方法は Windows 10S のデバイスではサポートされていません。
+- Intune でアプリ スイートをインストールするときに、Office アプリが開いている場合は、インストールが失敗し、エンド ユーザーは保存されていないファイルのデータを失う可能性があります。
+- このインストール方法は、Windows 10S、Windows Home、Windows Team、Windows Holographic、Windows Holographic for Business の各デバイスではサポートされていません。
 - Intune では、Intune を使用して Office 365 アプリを既に展開しているデバイス上の Microsoft Store から Office 365 デスクトップ アプリ (Office Centennial アプリとして知られる) をインストールすることをサポートしていません。 この構成をインストールすると、データが損失したり壊れたりする可能性があります。
+- 必須または使用可能なアプリを複数割り当てる場合、後の割り当ては前の割り当てに追加されるのではありません。 後のアプリ割り当ては、それより前にインストールされて存在するアプリの割り当てを上書きします。 たとえば、Office アプリの最初のセットに Word が含まれ、後のセットには含まれない場合、Word はアンインストールされます。 これは、Visio または Project アプリケーションには適用されません。
 
 
 ## <a name="get-started"></a>作業開始

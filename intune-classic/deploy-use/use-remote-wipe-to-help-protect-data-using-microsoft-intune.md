@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 71a3b86c628a4fd3210bf00be353c96443897dd5
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 85907167305e822ddf6a29475f032b2eb5f97a74
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Microsoft Intune のフル ワイプまたは選択的ワイプを使用してデータを保護する
 
@@ -91,9 +91,9 @@ Intune 管理対象デバイスが不要になるか、別の目的で再利用�
 
 **選択的ワイプ**は、モバイル アプリ管理 (MAM) データ (該当する場合)、設定、電子メール プロファイルといった会社のデータをデバイスから削除するものです。 選択的ワイプでは、ユーザーの個人データはデバイス上にそのまま保持されます。 デバイスは Intune から削除されません。 次の表では、削除されるデータと、選択的ワイプの実行後にデバイスに残るデータへの影響について説明します (表はプラットフォームごとにまとめられています)。
 
-**iOS**
+**Android**
 
-|データ型|iOS|
+|［データの種類］|iOS|
 |-------------|-------|
 |Intune でインストールされた会社のアプリと関連するデータ。|アプリはアンインストールされます。 会社のアプリ データは削除されます。<br /><br />モバイル アプリ管理を使用する Microsoft アプリからのアプリ データは削除されます。 アプリは削除されません。|
 |Settings|Intune ポリシーで設定した構成は強制されなくなり、ユーザーが設定を変更できるようになります。|
@@ -107,7 +107,7 @@ Intune 管理対象デバイスが不要になるか、別の目的で再利用�
 
 **Android**
 
-|データ型|Android|Android Samsung KNOX Standard|
+|［データの種類］|Android|Android Samsung KNOX Standard|
 |-------------|-----------|------------------------|
 |Web リンク|削除されます。|削除されます。|
 |管理対象外の Google Play アプリ|アプリとデータはインストールされたままです。|アプリとデータはインストールされたままです。|
@@ -129,7 +129,7 @@ Intune 管理対象デバイスが不要になるか、別の目的で再利用�
 
 **Windows**
 
-|データ型|Windows 8.1 (MDM) と Windows RT 8.1|Windows RT|Windows Phone 8 および Windows Phone 8.1|Windows 10|
+|［データの種類］|Windows 8.1 (MDM) と Windows RT 8.1|Windows RT|Windows Phone 8 および Windows Phone 8.1|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
 |Intune でインストールされた会社のアプリと関連するデータ。|EFS で保護されているファイルのキーが失効すると、ユーザーはファイルを引けなくなります。|会社のアプリは削除されません。|元々ポータル サイトでインストールされたアプリはアンインストールされません。 会社のアプリ データは削除されます。|アプリケーションがアンインストールされて、サイドローディング キーが削除されます。|
 |Settings|Intune ポリシーで設定した構成は強制されなくなり、ユーザーが設定を変更できるようになります。|Intune ポリシーで設定した構成は強制されなくなり、ユーザーが設定を変更できるようになります。|Intune ポリシーで設定した構成は強制されなくなり、ユーザーが設定を変更できるようになります。|Intune ポリシーで設定した構成は強制されなくなり、ユーザーが設定を変更できるようになります。|
