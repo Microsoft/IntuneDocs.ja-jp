@@ -16,10 +16,10 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 821234397df511e054e98bc11cd6da21ce8370d7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Microsoft Intune のサポートの電話番号
 
@@ -73,7 +73,7 @@ ms.lasthandoff: 10/10/2017
 |リヒテンシュタイン|24 x 7|月曜日 ～ 金曜日<br /><br />9:00 から 17:00 CET (UTC + 1 時間)|フランス語&#42;、ドイツ語&#42;、イタリア語&#42;、英語|0800000300|0227614114|
 |リトアニア|24 x 7|月曜日 ～ 金曜日<br /><br />09:00 ～ 17:00 EET (UTC + 2 時間)|リトアニア語&#42;、英語|880030960||
 |ルクセンブルク|24 x 7|月曜日 ～ 金曜日<br /><br />9:00 から 17:00 CET (UTC + 1 時間)|フランス語&#42;、ドイツ語&#42;、英語|80021094|24871510|
-|マケドニア共和国|24 x 7|月曜日 ～ 金曜日<br /><br />9:00 から 17:00 CET (UTC + 1 時間)|英語|0800-94288<br /><br />手順 1: 電話番号にかけます<br /><br />手順 2: 001 を入力します<br /><br />手順 3: 877-663-5075 を入力します||
+|マケドニア|24 x 7|月曜日 ～ 金曜日<br /><br />9:00 から 17:00 CET (UTC + 1 時間)|英語|0800-94288<br /><br />手順 1: 電話番号にかけます<br /><br />手順 2: 001 を入力します<br /><br />手順 3: 877-663-5075 を入力します||
 |マレーシア|24 x 7|月曜日 ～ 金曜日<br /><br />09:00 ～ 18:00 MYT (UTC + 8 時間)|バハサ語&#42;、マレー語&#42;、英語|1800 220030|362074606|
 |マルタ|24 x 7|月曜日 ～ 金曜日<br /><br />9:00 から 17:00 CET (UTC + 1 時間)|英語|0 80062231||
 |メキシコ|24 x 7|月曜日 ～ 金曜日<br /><br />09:00 ～ 17:00 CST (UTC - 6 時間)|スペイン語&#42;、英語|01-8005630605|55473856567|
