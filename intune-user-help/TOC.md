@@ -104,7 +104,6 @@
 ## [macOS デバイスを使用する](using-your-macos-device-with-intune.md)
 ### [macOS デバイスの登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [macOS デバイスを登録する](enroll-your-device-in-intune-macos-cp.md)
-### [レガシ macOS デバイスを登録する](enroll-your-device-in-intune-macos-legacy.md)
 ### [macOS デバイスの登録解除](unenroll-your-device-from-intune-macos.md)
 
 ### [macOS に関する一般的な問題の解決](troubleshoot-your-device-macos.md)
@@ -140,6 +139,7 @@
 #### [ポータル サイト アプリからログを送信する](send-logs-to-your-it-admin-cp-windows.md)
 #### [設定アプリからログを送信する](send-logs-to-your-it-admin-settings-windows.md)
 #### [使用している Windows のバージョンがまだサポートされていない](your-windows-version-isnt-yet-supported.md)
+#### [Windows 10 デバイスに Office 365 をインストールする](install-office-windows.md)
 #### [Windows の暗号化を有効にする](you-need-to-enable-windows-encryption.md)
 #### [デバイスにはマルウェア対策ソフトウェアが必要](your-device-needs-antimalware-software.md)
 #### [セキュア ブートを有効にする](you-need-to-enable-secure-boot-windows.md)

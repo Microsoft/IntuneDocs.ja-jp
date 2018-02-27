@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ed427382b94f591559a2264f40455ab5254daadb
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 7d54cb060dc44d29c95203138396f771abbb2325
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2018"></a>Microsoft Intune の初期エディション - 2018 年 2 月
 
@@ -40,6 +40,10 @@ ms.lasthandoff: 02/03/2018
 
 
 <!-- 1802 start -->
+
+### <a name="new-enrollment-failure-trend-chart-and-failure-reasons-table----1471783---"></a>新しい登録エラー傾向グラフと失敗の理由テーブル <!-- 1471783 -->
+
+[Enrollment Overview]\(登録の概要\) ページで、登録エラーの傾向と、上位 5 つのエラーの原因を表示することができます。 グラフやテーブルをクリックすると、トラブルシューティングのアドバイスや改善の提案の詳細にドリル ダウンすることができます。
 
 ### <a name="prevent-end-users-from-adding-or-removing-accounts-in-the-work-profile----1728700---"></a>エンド ユーザーが作業プロファイルのアカウントを追加または削除できないようにする <!-- 1728700 -->    
 Gmail アプリを Android for Work プロファイルに展開するとき、Android for Work デバイス制限プロファイルで **[Add and remove accounts]\(アカウントを追加および削除する\)** 設定を使うことで、エンド ユーザーが作業プロファイルのアカウントを追加または削除できないようにすることができます。
@@ -76,9 +80,6 @@ Intune モバイル アプリケーション管理 (MAM) データ転送ポリ�
 ### <a name="customize-your-company-portal-themes-with-hex-codes---1049561-eeready--"></a>Intune ポータル サイトのテーマを 16 進コードでカスタマイズする <!--1049561 eeready-->
 
 Intune ポータル サイト アプリのテーマの色を、16 進コードを使ってカスタマイズできます。 16 進コードを入力すると、Intune は、[WCAG 2.0 標準](http://www.w3.org/TR/WCAG20)に従って、テキストの色と背景の色の間のコントラストが最高レベルになるようにテキストの色を決定します。 **[Mobile Apps]** > **[ポータル サイト]** で、テキストの色および色に対する会社のロゴの両方をプレビューできます。 
-
-### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963---"></a>[職場または学校にアクセスする] 設定を用いたデバイス カテゴリの選択<!-- 1058963 --> 
-[デバイス グループ マッピング](https://docs.microsoft.com/intune/device-group-mapping)を有効にした場合、**[設定]** > **[アカウント]** > **[職場または学校にアクセスする]** の **[接続]** から登録後、または out-of-box experience の際に、Windows 10 のユーザーはデバイス カテゴリの選択を求められます。
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Endpoint Protection の設定に追加された新しい Windows Defender Credential Guard の設定<!--1102252 --> 
 
@@ -120,7 +121,7 @@ Intune ポータル サイト アプリのテーマの色を、16 進コード�
 
 ユーザーは、macOS ポータル サイトで登録するときに、デバイス登録マネージャーを使うことができます。
 
-#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Microsoft Edge ブラウザーの新しい設定 <!--1469166 -->
+#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Edge ブラウザーの新しい設定 <!--1469166 -->
 
 Microsoft Edge ブラウザーを備えたデバイスで、2 つの新しい設定 **[Path to favorites file]\(お気に入りファイルへのパス\)** と **[Changes to Favorites]\(お気に入りへの変更\)** を利用できるようになります。 
 

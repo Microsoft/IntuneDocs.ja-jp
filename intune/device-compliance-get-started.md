@@ -3,23 +3,21 @@ title: "Intune のデバイス コンプライアンス ポリシー"
 titleSuffix: Azure portal
 description: "このトピックでは、Microsoft Intune でのデバイス コンプライアンスについて説明します\""
 keywords: 
-author: andredm7
-ms.author: andredm
+author: vhorne
+ms.author: victorh
 manager: dougeby
-ms.date: 07/18/2017
+ms.date: 2/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
-ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f4a9f70762c3d30a49a686bcf1cfa9de4851b6c
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 98a9a93efb93697b454cb9bc06d1ac268ebaf9d8
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="get-started-with-intune-device-compliance-policies"></a>Intune のデバイス コンプライアンス ポリシーの概要
 
@@ -99,9 +97,63 @@ Intune でデバイス コンプライアンス ポリシーを使用するに�
 
 ## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Azure AD で Intune のデバイス コンプライアンス ポリシーを操作する方法
 
-デバイスが Intune に登録されると、Azure AD の登録プロセスが発生し、デバイスの属性が Azure AD への詳細な情報で更新されます。 キーのデバイス情報の 1 つは、デバイス コンプライアンスの状態で、電子メールと他の企業リソースへのアクセスをブロックまたは許可するための条件付きアクセス ポリシーによって使用されます。
+デバイスが Intune に登録されると、Azure AD の登録プロセスが発生し、デバイスの属性が Azure AD への詳細な情報で更新されます。 1 つのキーのデバイス情報は、デバイス コンプライアンスの状態で、電子メールと他の企業リソースへのアクセスをブロックまたは許可するための条件付きアクセス ポリシーによって使用されます。
 
-- 詳細については、[Azure Active Directory の登録プロセス](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview)に関するページを参照してください。
+- 詳細については、[Azure Active Directory の登録プロセス](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)に関するページを参照してください。
+
+### <a name="assigning-a-resulting-device-configuration-profile-status"></a>デバイスの構成プロファイルの結果の状態を割り当てる
+
+デバイスに複数の構成プロファイルが割り当てられていて、デバイスの 2 つ以上の割り当て済み構成プロファイルが異なるコンプライアンス状態になっている場合、1 つの結果のコンプライアンス状態を割り当てる必要があります。 この割り当ては、各コンプライアンス状態に割り当てられている概念的な重大度レベルを基にしています。 各コンプライアンス状態には、次の重大度レベルがあります。
+
+
+|状態  |重大度  |
+|---------|---------|
+|Pending     |1|
+|成功     |2|
+|Failed     |3|
+|エラー     |4|
+
+2 つ以上の構成プロファイルの結果の状態は、デバイスに割り当てられているすべてのプロファイルの最大の重大度レベルを選択することで決定されます。
+
+たとえば、デバイスに 3 つのプロファイルが割り当てられていて、1 つが保留中の状態 (重大度 = 1)、1 つが成功状態 (重大度 = 2)、1 つがエラー状態 (重大度 = 4) だとします。 エラー状態が最も重大度が高いので、この 3 つのプロファイルの結果のコンプライアンス状態としてエラー状態が割り当てられます。
+
+### <a name="assigning-an-ingraceperiod-status-for-an-assigned-compliance-policy"></a>割り当て済みコンプライアンス ポリシーの InGracePeriod 状態を割り当てる
+
+コンプライアンス ポリシーの InGracePeriod 状態は、デバイスの猶予期間と割り当てられているコンプライアンス ポリシーのデバイスの実際の状態の組み合わせを考慮して決定される値です。 
+
+具体的には、デバイスに割り当てられているコンプライアンス ポリシーが NonCompliant 状態になっている場合、次のようになります。
+
+- デバイスに猶予期間が割り当てられていない場合、コンプライアンス ポリシーの割り当て済みの値は NonCompliant です。
+- デバイスに割り当てられている猶予期間が期限切れになっている場合、コンプライアンス ポリシーの割り当て済みの値は NonCompliant です。
+- デバイスに将来の猶予期間が割り当てられている場合、コンプライアンス ポリシーの割り当て済みの値は InGracePeriod です。
+
+次の表に、前の事項の概要を示します。
+
+
+|実際のコンプライアンス状態|割り当てられた猶予期間の値|有効なコンプライアンス状態|
+|---------|---------|---------|
+|NonCompliant |猶予期間が割り当てられていない |NonCompliant |
+|NonCompliant |昨日の日付|NonCompliant|
+|NonCompliant |明日の日付|InGracePeriod|
+
+デバイスのコンプライアンス ポリシーの監視の詳細については、「[Intune デバイス コンプライアンス対応ポリシーの監視](compliance-policy-monitor.md)」を参照してください。
+
+### <a name="assigning-a-resulting-compliance-policy-status"></a>コンプライアンス ポリシーの結果の状態を割り当てる
+
+デバイスに複数のコンプライアンス ポリシーが割り当てられていて、デバイスの 2 つ以上の割り当て済みコンプライアンス ポリシーが異なるコンプライアンス状態になっている場合、1 つの結果のコンプライアンス状態を割り当てる必要があります。 この割り当ては、各コンプライアンス状態に割り当てられている概念的な重大度レベルを基にしています。 各コンプライアンス状態には、次の重大度レベルがあります。 
+
+|状態  |重大度  |
+|---------|---------|
+|Unknown     |1|
+|NotApplicable     |2|
+|準拠|3|
+|InGracePeriod|4|
+|NonCompliant|5|
+|エラー|6|
+
+2 つ以上のコンプライアンス ポリシーの結果の状態は、デバイスに割り当てられているすべてのプロファイルの最大の重大度レベルを選択することで決定されます。
+ 
+たとえば、デバイスに 3 つのコンプライアンス ポリシーに割り当てられていて、1 つが不明状態 (重大度 = 1)、1 つが準拠状態 (重大度 = 3)、1 つが InGracePeriod 状態 (重要度 = 4) であるとします。 InGracePeriod 状態が最も重大度が高いので、この 3 つのプロファイルの結果のコンプライアンス状態として InGracePeriod 状態が割り当てられます。  
 
 ##  <a name="ways-to-use-device-compliance-policies"></a>デバイス コンプライアンス ポリシーを使用する方法
 
@@ -112,6 +164,10 @@ Intune でデバイス コンプライアンス ポリシーを使用するに�
 条件付きアクセスと独立してデバイス コンプライアンス ポリシーを使用することもできます。 コンプライアンス ポリシーを単独で使用した場合、対象のデバイスが評価され、コンプライアンス ステータスを含めて報告されます。 たとえば、暗号化されていないデバイスの数や脱獄またはルート化されたデバイスに関するレポートを取得できます。 ただし、コンプライアンス ポリシーを単独で使用した場合、会社のリソースへのアクセス制限が設定されません。
 
 コンプライアンス ポリシーはユーザーに展開して使用します。 コンプライアンス ポリシーがユーザーに展開されると、ユーザーのデバイスのコンプライアンスがチェックされます。 ポリシーの展開後にモバイル デバイスがポリシーを取得できるようになるまでの時間については、「[Microsoft Intune のデバイス プロファイルに関するトラブルシューティング](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned)」を参照してください。
+
+#### <a name="actions-for-non-compliance"></a>コンプライアンス非対応に対するアクション
+
+コンプライアンス非対応に対するアクションでは、コンプライアンス ポリシーの条件を満たしていない、コンプライアンス非対応のデバイスに適用されるアクションを時刻順に構成できます。 詳細については、「[コンプライアンス非対応に対するアクションを自動化する](actions-for-noncompliance.md)」を参照してください。
 
 ##  <a name="using-device-compliance-policies-in-the-intune-classic-portal-vs-azure-portal"></a>Intune のクラシック ポータルとAzure Portal を比較してデバイス コンプライアンス ポリシーを使用する
 
@@ -132,10 +188,12 @@ Azure Portal の新しいデバイス コンプライアンスに関連した機
 
 ##  <a name="next-steps"></a>次の手順
 
-以下のプラットフォームに対してデバイス コンプライアンス ポリシーを作成します。
+- 以下のプラットフォームに対してデバイス コンプライアンス ポリシーを作成します。
 
-- [Android](compliance-policy-create-android.md)
-- [Android for Work](compliance-policy-create-android-for-work.md)
-- [Android](compliance-policy-create-ios.md)
-- [macOS](compliance-policy-create-mac-os.md)
-- [Windows](compliance-policy-create-windows.md)
+   - [Android](compliance-policy-create-android.md)
+   - [Android for Work](compliance-policy-create-android-for-work.md)
+   - [Android](compliance-policy-create-ios.md)
+   - [macOS](compliance-policy-create-mac-os.md)
+   - [Windows](compliance-policy-create-windows.md)
+
+- Intune データ ウェアハウス ポリシー エンティティの詳細については、「[ポリシーのエンティティのリファレンス](reports-ref-policy.md)」を参照してください。

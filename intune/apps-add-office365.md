@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3174fc498b5d8cffaade7c52f417409de64c7eb6
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: f6ef1d1dab39a6939b80bd13ba090424a67c6f53
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
-# <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune で Windows 10 デバイスに Office 365 ProPlus 2016 アプリを割り当てる方法
+# <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune で Windows 10 デバイスに Office 365 ProPlus アプリを割り当てる方法
 
-このアプリの種類を使用すると、Windows 10 を実行している管理対象のデバイスに Office 365 ProPlus 2016 アプリを簡単に割り当てることができます。 また、ライセンスを所有している場合は、Microsoft Project Online デスクトップ クライアントおよび Visio Pro for Office 365 のアプリをインストールすることもできます。 必要なアプリは、Intune コンソールのアプリ一覧に単一のエントリとして表示されます。
+このアプリの種類を使用すると、Windows 10 を実行している管理対象のデバイスに Office 365 ProPlus アプリを簡単に割り当てることができます。 また、ライセンスを所有している場合は、Microsoft Project Online デスクトップ クライアントおよび Visio Pro for Office 365 のアプリをインストールすることもできます。 必要なアプリは、Intune コンソールのアプリ一覧に単一のエントリとして表示されます。
 
 
 ## <a name="before-you-start"></a>開始する前に
@@ -32,7 +32,7 @@ ms.lasthandoff: 02/01/2018
 >Office をインストールするこの方法は、他のバージョンの Microsoft Office がデバイスにインストールされていない場合にのみサポートされます。
 
 - これらのアプリを展開するデバイスでは、Windows 10 Creators Update 以降を実行している必要があります。
-- Intune は、Office 365 ProPlus 2016 スイートの Office アプリの追加のみをサポートします。
+- Intune は、Office 365 ProPlus スイートの Office アプリの追加のみをサポートします。
 - Intune でアプリ スイートをインストールするときに、Office アプリが開いている場合は、インストールが失敗し、エンド ユーザーは保存されていないファイルのデータを失う可能性があります。
 - このインストール方法は、Windows 10S、Windows Home、Windows Team、Windows Holographic、Windows Holographic for Business の各デバイスではサポートされていません。
 - Intune では、Intune を使用して Office 365 アプリを既に展開しているデバイス上の Microsoft Store から Office 365 デスクトップ アプリ (Office Centennial アプリとして知られる) をインストールすることをサポートしていません。 この構成をインストールすると、データが損失したり壊れたりする可能性があります。
