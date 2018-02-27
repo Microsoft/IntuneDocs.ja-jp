@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/17/2018
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4c753ebfc48365d0d586773585552026ad17b6f6
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 9d5fda9cc74ffa3d7be43c90efa65c59451662d3
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>アプリを Microsoft Intune に追加する方法
 
@@ -149,5 +149,5 @@ Intune の追加ストレージは、当初の購入方法を使用して購入�
 - [Windows ストア アプリ](store-apps-windows.md)
 - [Windows LOB アプリ](lob-apps-windows.md)
 - [Windows 10 用の Office 365 アプリ](apps-add-office365.md)
-- [組み込みアプリ](apps-add-bulit-in.md)
+- [組み込みアプリ](apps-add-built-in.md)
 

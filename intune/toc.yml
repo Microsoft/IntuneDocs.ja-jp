@@ -138,6 +138,8 @@
           href: groups-add.md
         - name: ライセンスの割り当て
           href: licenses-assign.md
+        - name: Intune のライセンス
+          href: licenses.md
         - name: MDM 機関を設定する
           href: mdm-authority-set.md
     - name: デバイスの登録
@@ -194,6 +196,8 @@
           href: device-locate.md
         - name: iOS 紛失モードの有効化
           href: device-lost-mode.md
+        - name: iOS の監視モードを有効にする
+          href: device-supervised-mode.md
         - name: デバイスのロック
           href: device-remote-lock.md
         - name: パスコードのリセット
@@ -251,7 +255,7 @@
             - name: Web アプリ
               href: web-app.md
             - name: 組み込みアプリ
-              href: apps-add-bulit-in.md
+              href: apps-add-built-in.md
         - name: アプリの展開
           href: apps-deploy.md
           items:

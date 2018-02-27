@@ -3,10 +3,10 @@ title: "Windows 10 用のアプリ保護ポリシーを構成する準備をす�
 titlesuffix: Azure portal
 description: "Azure AD でモバイル アプリケーション管理 (MAM) プロバイダーをセットアップします"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/25/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4b6a442f83491160f72955d02b8023ee4d949f2
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 5514ea423f67e5bc824b4ee947f630c7f1b43d8f
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Windows 10 用のアプリ保護ポリシーを構成する準備をする
 
@@ -40,17 +40,17 @@ Azure AD で MAM プロバイダーを設定して、Windows 10 用モバイル 
 
 4. **[構成]** ブレードの **[既定の MAM URL を復元する]** グループで設定を構成します。
 
-    **MAM ユーザー スコープ**  
-      MAM の自動登録を使用して、従業員の Windows デバイス上のエンタープライズ データを管理します。 MAM 自動登録は、Bring Your Own Device シナリオ向けに構成されます。<ul><li>**なし**<br>MAM にすべてのユーザーを登録する場合に選択します。</li><li>**一部**<br>MAM に登録するユーザーが含まれる Azure AD グループを選択します。</li><li>**すべて**<br>MAM にすべてのユーザーを登録する場合に選択します。</li></ul>
+   **MAM ユーザー スコープ**  
+   MAM の自動登録を使用して、従業員の Windows デバイス上のエンタープライズ データを管理します。 MAM 自動登録は、Bring Your Own Device シナリオ向けに構成されます。<ul><li>**なし**<br>MAM にすべてのユーザーを登録する場合に選択します。</li><li>**一部**<br>MAM に登録するユーザーが含まれる Azure AD グループを選択します。</li><li>**すべて**<br>MAM にすべてのユーザーを登録する場合に選択します。</li></ul>
 
-    **MAM 使用条件 URL**  
-     MAM サービスの使用条件エンドポイントの URL です。 使用条件エンドポイントを使用して、管理対象のデバイスを登録する前に、エンド ユーザーにサービス利用規約を表示できます。 使用条件のテキストは、モバイル デバイスに適用されるポリシーについてユーザーに案内します。
+   **MAM 使用条件 URL**  
+   MAM 使用条件 URL は、Microsoft Intune ではサポートされていません。 保護ポリシーを適用するには、この入力ボックスを空白のままにする必要があります。
 
-    **MAM 探索 URL**  
-    MAM サービスの登録エンドポイントの URL です。 登録エンドポイントを使用して、MAM サービスによる管理の対象となるデバイスを登録します。
+   **MAM 探索 URL**  
+   MAM サービスの登録エンドポイントの URL です。 登録エンドポイントを使用して、MAM サービスによる管理の対象となるデバイスを登録します。
 
-    **MAM 準拠 URL**  
-      MAM サービスの準拠エンドポイントの URL です。 準拠していないデバイスからユーザーがリソースにアクセスしようとして拒否された場合は、準拠 URL へのリンクがユーザーに表示されます。 ユーザーは MAM サービスによってホストされるこの URL にアクセスすることで、デバイスが準拠していないと見なされる理由を知ることができます。 また、ユーザーはセルフサービス修復を開始してデバイスを準拠した状態にしてから、リソースへのアクセスを続行することもできます。
+   **MAM 準拠 URL**  
+   MAM 準拠 URL は、Microsoft Intune ではサポートされていません。 保護ポリシーを適用するには、この入力ボックスを空白のままにする必要があります。 
 
 5.  **[Save]**(保存) をクリックします。
 
