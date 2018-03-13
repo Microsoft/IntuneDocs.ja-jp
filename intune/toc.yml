@@ -470,30 +470,6 @@
           href: conditional-access-assign-jamf.md
     - name: デバイス データの保護
       items:
-        - name: アプリ保護ポリシーの使用
-          href: app-protection-policy.md
-          items:
-            - name: アプリ保護ポリシーの作成
-              href: app-protection-policies.md
-              items:
-                - name: Android の設定
-                  href: app-protection-policy-settings-android.md
-                - name: iOS の設定
-                  href: app-protection-policy-settings-ios.md
-                - name: データ転送のポリシーの例外
-                  href: app-protection-policies-exception.md
-                - name: Managed Browser 内のアプリの保護ログのレビュー
-                  href: app-protection-policy-settings-log.md
-            - name: アプリ保護ポリシーを検証する
-              href: app-protection-policies-validate.md
-            - name: アプリ保護のユーザーの状態を監視する
-              href: app-protection-policies-monitor.md
-            - name: WIP アプリ保護ポリシーの準備をする
-              href: app-protection-policies-configure-windows-10.md
-            - name: WIP アプリ保護ポリシーの作成と割り当て
-              href: windows-information-protection-policy-create.md
-            - name: iOS アプリ間のデータ転送を管理する
-              href: data-transfer-between-apps-manage-ios.md
         - name: Mobile Threat Defense
           href: mobile-threat-defense.md
           items:

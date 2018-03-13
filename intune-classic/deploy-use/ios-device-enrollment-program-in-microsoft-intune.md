@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8ca8eaede9df070baf1f39023942a8b07c54b814
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 885e3f0608cd367cb23658c342451a4a56e5474d
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>会社所有のデバイス登録プログラムによる iOS デバイスの登録
 
@@ -80,7 +80,7 @@ Microsoft Intune は、"無線" で Device Enrollment Program (DEP) を通じて
    - **ユーザー アフィニティを要求する**: 初回セットアップ時にデバイスをユーザーに関連付ける必要があります。その後、デバイスはそのユーザーとして企業のデータやメールにアクセスすることが許可されます。 ユーザーに属し、ポータル サイトを使用する必要がある (つまりアプリをインストールする必要がある) DEP 管理対象のデバイスの場合、**[ユーザー アフィニティ]** を設定する必要があります。 多要素認証 (MFA) は、ユーザー アフィニティを使用して DEP デバイスに登録しているときに動作しません。 DEP デバイスに登録が完了すると、MFA は期待どおりに動作します。 最初にサインインするときにパスワードを変更する必要がある新しいユーザーには、DEP デバイスの登録時にプロンプトを表示することはできません。 さらに、パスワードの有効期限が切れているユーザーには、DEP 登録時にパスワードのリセットは求められません。このユーザーは別のデバイスからパスワードをリセットする必要があります。
 
     >[!NOTE]
-    >ユーザー アフィニティが設定された DEP でユーザー トークンを要求するには、[WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints)を有効にする必要があります。 WS-Trust 1.3 について詳しくは、[こちら](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)をご覧ください。
+    >ユーザー アフィニティが設定された DEP でユーザー トークンを要求するには、[WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/library/adfs2-help-endpoints)を有効にする必要があります。 WS-Trust 1.3 について詳しくは、[こちら](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)をご覧ください。
 
    - **ユーザー アフィニティがありません**: デバイスは、ユーザーと関連付けられません。 このデバイス関連付け情報を使用すると、ローカルのユーザー データにアクセスしなくてもタスクを実行できます。 基幹業務アプリのインストールに使用されるポータル サイト アプリなど、ユーザー アフィリエーションが必要なアプリは機能しません。
 

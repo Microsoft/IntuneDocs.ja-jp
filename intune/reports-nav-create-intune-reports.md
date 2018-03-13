@@ -1,11 +1,12 @@
 ---
-title: "Intune データ ウェアハウスを使用する | Microsoft Docs"
+title: "Intune データ ウェアハウスを使用する"
+titlesuffix: Microsoft Intune
 description: "Intune データ ウェアハウスを使用して、社内のモバイル環境を分析できるレポートを構築します。"
 keywords: "Intune データ ウェアハウス"
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/18/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +15,11 @@ ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37ad088d722cfa2c543f43e4aa579a879dd4a4dd
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dd90c9d51fe212b0675da4d6039a535be0ff3c89
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="use-the-intune-data-warehouse"></a>Intune データ ウェアハウスを使用する
 
