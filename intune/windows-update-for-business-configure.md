@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 1a7d047de1faa019eb137516ef75d64657e22e5a
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 63d8628c183b3efb924cae6635e2c8038fd42598
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="manage-software-updates"></a>ソフトウェア更新プログラムの管理
 
@@ -130,14 +130,14 @@ Windows 10 更新プログラム ロールアウトを監視するには、更�
 
 Intune コンソールで、カスタム ポリシーの OMA-URI 設定を使用して商用 ID を構成できます。 詳しくは、「[Microsoft Intune での Windows 10 デバイス向けの Intune ポリシー設定](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)」を参照してください。   
 
-商用 ID を構成するための OMA-URI (大文字と小文字を区別する) パスは、./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID です。
+商用 ID を構成するための OMA-URI (大文字と小文字を区別する) パスは次のとおりです。./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
 
 たとえば、**[OMA-URI 設定の追加または編集]** で次の値を使用できます。
 
 - **設定名**: Windows Analytics の商用 ID
 - **設定の説明**: Windows Analytics ソリューションの商用 ID を構成
 - **データ型**: 文字列
-- **OMA-URI** (大文字と小文字を区別): ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
+- **OMA-URI** (大文字と小文字を区別): ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
 - **値**: <*OMS ワークスペースの Windows 利用統計情報に示された GUID を使用*>>
 
 ![診断と使用状況データの Windows 設定](./media/commID.png)
