@@ -236,6 +236,9 @@
                   href: store-apps-windows-phone-8-1.md
                 - name: Microsoft ストア アプリ
                   href: store-apps-windows.md
+                  items:
+                    - name: ポータル サイト アプリを手動で追加する
+                      href: store-apps-company-portal-app.md
                 - name: Android for Work アプリ
                   href: apps-add-android-for-work.md
                 - name: Windows 10 用の Office 365 アプリ
@@ -441,6 +444,8 @@
           href: compliance-policy-create-mac-os.md
         - name: Windows ポリシーの作成
           href: compliance-policy-create-windows.md
+        - name: ポリシーを評価します
+          href: policy-evaluate.md
         - name: コンプライアンス非対応に対するアクション
           href: actions-for-noncompliance.md
         - name: デバイス コンプライアンスを監視する
