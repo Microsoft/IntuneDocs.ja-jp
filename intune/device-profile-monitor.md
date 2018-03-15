@@ -15,11 +15,11 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5b5a6ab74555eefc8c001ec444f803be24e34f3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 864ea278cc30a0f0a5aa26b08f7b13908b46ed03
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="how-to-monitor-device-profiles-in-microsoft-intune"></a>Microsoft Intune でデバイス プロファイルを監視する方法
 
@@ -28,10 +28,10 @@ ms.lasthandoff: 01/25/2018
 Intune デバイス プロファイルの割り当ての進捗状況は、2 つの方法で監視できます。
 
 
-1. Azure Portal にサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
-2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
+2. **[デバイス構成]** ブレードの **[管理]** セクションで、**[プロファイル]** を選択します。
 2. プロファイルの一覧ブレードで、管理するプロファイルを選択し、次のいずれかを実行します。
-    - [<*プロファイル名*> **レポート]** ブレードで、**[概要]** を選択して、プロファイルおよびその割り当てに関する基本的な情報を表示します。
-    - **[<*プロファイル名*> レポート]** ブレードで、**[レポート]** を選択して、プロファイルおよびその割り当てに関する詳細な情報を表示します。
+    - [<*プロファイル名*> **デバイスの構成プロファイル]** ブレードで、**[概要]** を選択して、プロファイルおよびその割り当てに関する基本的な情報を表示します。
+    - [<*プロファイル名*> **デバイスの構成プロファイル]** ブレードで、**[割り当て]** を選択して、プロファイルおよびその割り当てに関する詳細情報を表示します。

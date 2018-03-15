@@ -1,12 +1,12 @@
 ---
-title: "Windows の基幹業務アプリを Intune に追加する方法"
-titlesuffix: Azure portal
-description: "Windows の基幹業務アプリを Intune に追加する方法について説明します。\""
+title: "Windows の基幹業務アプリを Microsoft Intune に追加する方法"
+titlesuffix: 
+description: "Windows の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法について説明します。"
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/3/2017
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,17 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 72e0a9011ba6dda324ace96fb2dbefb42c608641
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: b687b71f9d264364ff758fdd46b0739465c16865
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Windows の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+基幹業務 (LOB) アプリとは、アプリのインストール ファイルから追加するアプリのことです。 この種のアプリは、通常、社内で作成されます。 次に、Microsoft Intune に Windows の LOB アプリを追加するのに役立つ手順を示します。
 
 ## <a name="step-1---specify-the-software-setup-file"></a>手順 1 - ソフトウェアのセットアップ ファイルを指定する
 
@@ -68,6 +69,10 @@ ms.lasthandoff: 01/30/2018
 ## <a name="step-5---update-a-line-of-business-app"></a>手順 5 - 基幹業務アプリの更新
 
 [!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+
+## <a name="configuring-a-self-updating-mobile-msi-app-to-ignore-the-version-check-process"></a>バージョン チェック プロセスを無視する自己更新モバイル MSI アプリの構成
+
+バージョン チェック プロセスを無視するように、既知の自己更新モバイル MSI アプリを構成することができます。 一部の MSI インストーラー ベースのアプリは、アプリケーション開発者によって自動更新されます。 これらの自動更新される MSI アプリには、**[アプリ情報]** ブレードで **[Ignore app version]**\(アプリのバージョンを無視する\) を設定できます。 この設定を **[はい]** に切り替えると、Microsoft Intune で Windows クライアントにインストールされているアプリのバージョンが強制されることはありません。 この機能は、競合状態になるのを防ぐのに役立ちます。 たとえば、この種類の競合状態は、アプリ開発者によって自動更新されているアプリが、Intune によっても更新されると、発生する可能性があります。 両方が Windows クライアント上のアプリのバージョンを強制しようとして、競合が発生することがあります。
 
 ## <a name="next-steps"></a>次の手順
 

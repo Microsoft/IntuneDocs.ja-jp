@@ -1,11 +1,12 @@
 ---
 title: "Intune App SDK の利点"
-description: "Intune App SDK は、iOS プラットフォームと Android プラットフォームの両方で利用でき、Microsoft Intune を使ったモバイル アプリ管理機能が有効になります。"
+titlesuffix: Microsoft Intune
+description: "Intune アプリ SDK は、iOS プラットフォームと Android プラットフォームの両方で利用でき、Microsoft Intune を使ったモバイル アプリ管理機能が有効になります。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/24/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +15,14 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 75965145c38e94516846937e4dd408730d3ce10f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ae22d3e718fd01330b81206921b6e9a23313a30f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="intune-app-sdk-overview"></a>Intune App SDK の概要
-iOS と Android の両方で使用可能な Intune App SDK で、Intune アプリ保護ポリシーに対してご使用のアプリを有効にすることができます。 アプリの開発者が必要なコード変更が最小限に抑えられます。 SDK の機能の大半は、アプリの動作を変更せずに利用できます。 エンド ユーザーと IT 管理者のエクスペリエンスを向上させるために、API を利用してアプリの動作をカスタマイズし、アプリ側の処理が必要な機能を実現できます。
+iOS と Android の両方で使用可能な Intune App SDK で、Intune アプリ保護ポリシーに対してご使用のアプリを有効にすることができます。 アプリの開発者が必要なコード変更が最小限に抑えられます。 SDK の機能の多くは、アプリの動作を変更せずに利用できます。 エンド ユーザーと IT 管理者のエクスペリエンスを向上させるために、API を利用してアプリの動作をカスタマイズし、アプリ側の処理が必要な機能を実現できます。
 
 アプリ保護ポリシーに対してアプリを有効にしたら、IT 管理者はそのポリシーを展開し、アプリ内の会社のデータを保護することができます。
 
@@ -42,7 +43,7 @@ IT 管理者は、アプリによってデバイスに保存されたデータ�
 IT 管理者は、Intune で管理されたアプリから会社のデータをリモートでワイプできます。 これは ID ベースの機能で、エンドユーザーの社内 ID に関連付けられたファイルのみが削除されます。 この機能を実行するには、アプリによる処理が必要です。 アプリは、ワイプする必要のある ID を、ユーザー設定を基に指定できます。 指定されたユーザー設定がアプリにない場合、既定の動作では、アプリケーションのディレクトリがワイプされ、エンド ユーザーにアクセスが削除されたことが通知されます。
 
 ### <a name="enforce-the-use-of-a-managed-browser"></a>管理対象ブラウザーの使用を強制
-IT 管理者は、アプリ内の Web リンクを開くときに、[Intune Managed Browser アプリ](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies)の使用を強制することができます。 これにより、企業環境で表示されるリンクが Intune で管理されたアプリのドメイン内に維持されることが保証されます。
+IT 管理者は、アプリ内の Web リンクを開くときに、[Intune Managed Browser アプリ](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies)の使用を強制することができます。 この機能により、企業環境で表示されるリンクが Intune で管理されたアプリのドメイン内に維持されることが保証されます。
 
 ### <a name="enforce-a-pin-policy"></a>暗証番号 (PIN) ポリシーの適用
 IT 管理者は、エンド ユーザーがアプリ内の企業データにアクセスする前に PIN の入力を求めることができます。 これにより、アプリを使用するユーザーが、職場または学校のアカウントで最初にサインインしたユーザーであることが保証されます。 エンド ユーザーが自分の PIN を構成するときに、Intune App SDK は Azure Active Directory を使用して、エンド ユーザーの資格情報を登録されている Intune アカウントに照らして確認します。

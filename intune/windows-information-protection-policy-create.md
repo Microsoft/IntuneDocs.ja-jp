@@ -3,10 +3,10 @@ title: "Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作�
 titlesuffix: Azure portal
 description: "Intune で WIP アプリ保護ポリシーを作成して展開します"
 keywords: 
-author: arob98
-ms.author: angrobe
-manager: dougeby
-ms.date: 12/29/2017
+author: Erikre
+ms.author: erikre
+manager: doubeby
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 67d8a6eb4f284cf1922f9f79a8b767c124b66b06
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 647e6fd129593156f2ba24299a19e96686206165
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 
@@ -49,7 +49,7 @@ WIP ポリシーを追加するときのいくつかの概念について説明�
 
 WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを構成する必要があります。 [Intune で MAM プロバイダーを構成する方法](app-protection-policies-configure-windows-10.md)を理解します。
 
-さらに、次のものが必要です。
+さらに、次のライセンスと更新プログラムが必要です。
 
 -   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) ライセンス。
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
@@ -60,7 +60,7 @@ WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを
 
 ## <a name="to-add-a-wip-policy"></a>WIP ポリシーを追加するには
 
-組織で Intune を設定した後は、[Azure Portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) を使用して WIP 固有のポリシーを作成できます。 <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure docset?--->
+組織で Intune を設定した後は、[Azure Portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) を使用して WIP 固有のポリシーを作成できます。 <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure doc set?--->
 
 1.  **Intune モバイル アプリケーション管理ダッシュボード**に移動し、**[すべての設定]** > **[アプリに関するポリシー]** を選択します。
 
@@ -80,7 +80,7 @@ WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを
 
 1.  **[アプリに関するポリシー]** ブレードでポリシーの名前を選び、**[ポリシーの追加]** ブレードで **[許可されているアプリ]** を選びます。 **[許可されているアプリ]** ブレードが開き、このアプリ保護ポリシーの一覧に既に含まれているすべてのアプリが表示されます。
 
-2.  **[許可されているアプリ]** ブレードで、**[アプリの追加]** を選択します。 **[アプリの追加]** ブレードが開き、この一覧に含まれるすべてのアプリが表示されます。
+2.  **[許可されているアプリ]** ブレードで、**[アプリの追加]** を選択します。 **[アプリの追加]** 情報には、この一覧に含まれるすべてのアプリが表示されます。
 
 3.  企業データへのアクセスを許可する各アプリを選択し、**[OK]** を選択します。 **[許可されているアプリ]** ブレードが更新され、選択したすべてのアプリが表示されます。
 
@@ -92,7 +92,7 @@ WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを
 
 2.  **[許可されているアプリ]** ブレードで、**[アプリの追加]** を選択します。
 
-3.  **[アプリの追加]** ブレードで、ドロップダウン リストから **[ストア アプリ]** を選択します。 ブレードが変化し、**パブリッシャー**とアプリの**名前**を追加するためのボックスが表示されます。
+3.  **[アプリの追加]** ブレードで、ドロップダウン リストから **[ストア アプリ]** を選択します。 情報が変化し、**パブリッシャー**とアプリの**名前**を追加するためのボックスが表示されます。
 
 4.  アプリの名前とパブリッシャーの名前を入力し、**[OK]** を選択します。
 
@@ -153,7 +153,7 @@ WIP を無効にすると、ローカルに接続されたドライブ上の WIP
 
     ![学習モードのスクリーンショット](./media/learning-mode-sc1.png)
 
-1.  **[保存]** を選びます。
+2.  **[保存]** を選びます。
 
 ### <a name="use-wip-learning"></a>WIP の学習を使用する
 
@@ -165,10 +165,23 @@ WIP を無効にすると、ローカルに接続されたドライブ上の WIP
  
     WIP の学習のログ レポートにアプリが表示されたら、それをアプリ保護ポリシーに追加できます。
 
+## <a name="allow-windows-search-indexer-to-search-encrypted-items"></a>暗号化されたアイテムの検索を Windows Search Indexer に許可する
+アイテムのインデックス作成を許可または禁止します。 これは Windows Search Indexer 用のスイッチです。Windows 情報保護 (WIP) で保護されたファイルなど、暗号化されたアイテムにインデックスを付けるかどうかを制御します。
+
+このアプリの保護ポリシー オプションは、Windows 情報保護ポリシーの **[詳細設定]** にあります。 アプリの保護ポリシーは、*[Windows 10]* プラットフォームに設定し、アプリ ポリシーの **[登録状態]** は **[登録済み]** に設定する必要があります。 
+
+このポリシーが有効な場合、WIP で保護されたアイテムにインデックスが付けられ、それらのメタデータは暗号化されていない場所に保存されます。 メタデータには、ファイル パスや変更日などがあります。
+
+このポリシーが無効な場合、WIP で保護されたアイテムにはインデックスが付けられず、Cortana またはエクスプローラーの結果に表示されません。 また、デバイスに WIP で保護されたメディア ファイルが多数ある場合は、写真や Groove アプリのパフォーマンスにも影響が出る可能性があります。
+
+## <a name="add-encrypted-file-extensions"></a>暗号化されたファイルの拡張子を追加する
+
+**[Allow Windows Search Indexer to search encrypted items]\(暗号化されたアイテムの検索を Windows Search Indexer に許可する\)** オプションの設定に加え、ファイル拡張子の一覧を指定することができます。 これらの拡張子を持つファイルは、ネットワークの場所一覧で定義されている会社の境界内のサーバー メッセージ ブロック (SMB) 共有からコピーするときに暗号化されます。 このポリシーを指定しない場合、既存の自動暗号化動作が適用されます。 このポリシーを構成すると、一覧内の拡張子を持つファイルのみが暗号化されます。
+
 ## <a name="deploy-your-wip-app-protection-policy"></a>WIP アプリ保護ポリシーを展開する
 
 > [!IMPORTANT]
-> これはデバイス登録なしの WIP に適用されます。
+> この情報はデバイス登録なしの WIP に適用されます。
 
 <!---not sure why you need the Important note. Isn't this what the topic is about? app protection w/o enrollment?--->
 
@@ -178,4 +191,8 @@ WIP アプリ保護ポリシーを作成した後、MAM を使ってポリシー
 
     Azure Active Directory 内のすべてのセキュリティ グループで構成されるユーザー グループの一覧が、**[ユーザー グループの追加]** ブレードで開きます。
 
-1.  ポリシーを適用するグループを選び、**[選択]** を選んでポリシーを展開します。
+2.  ポリシーを適用するグループを選び、**[選択]** を選んでポリシーを展開します。
+
+## <a name="next-steps"></a>次の手順
+
+- Windows 情報保護の詳細については、「[Protect your enterprise data using Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)」(Windows 情報保護 (WIP) を使用してエンタープライズ データを保護する) を参照してください。 

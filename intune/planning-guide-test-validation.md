@@ -1,9 +1,10 @@
 ---
 title: "Intune のテストと検証"
-description: "環境内のクラウド専用 Intune ソリューションをテストおよび検証するときに考慮する必要のある詳細について説明します。"
+titlesuffix: Microsoft Intune
+description: "環境内で Intune のクラウド専用のソリューションをテストおよび検証する方法について説明します。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -13,15 +14,15 @@ ms.technology:
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 8521ae12062ad73dfddb0f03aeac8c07ce65de58
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1346c0f5b0e1665e49e09fc566b9ff3da17fc17a
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="intune-testing-and-validation"></a>Intune のテストと検証
 
-テスト フェーズは、実装フェーズの途中と後に発生します。 前に特定したすべての必要な IT (管理者) シナリオとエンド ユーザー (ユース ケース) シナリオをテストするには、テスト用のアカウント、グループ、デバイスが必要です。
+実装されている Microsoft Intune をテストする場合、機能の検証と用途の検証を検討してください。 機能検証では、各要素と構成をテストし、それが適切に動作していることを確認する作業が行われます。 用途の検証では、一連のタスクが関係するシナリオが期待どおり動作することを確認する作業が行われます。 
 
 サポート ドキュメントが作成され、IT サポートやヘルプデスクのスタッフが快適に製品をサポートできるように、IT サポート/ヘルプデスクのスタッフをテスト段階に組み入れることが推奨されます。 部品やシナリオがユース ケースに基づいて機能しない場合、必要な変更を記録し、変更が行われた理由を追加してください。
 

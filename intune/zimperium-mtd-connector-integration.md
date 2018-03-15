@@ -3,8 +3,8 @@ title: "Zimperium を Intune と統合する"
 titleSuffix: Intune on Azure
 description: "Intune を Zimperium と統合する"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 363fd280-1865-4a61-855b-eb75c3c62753
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4759bab0c302f758f3f0a4af5ca333a5f560f3b3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 062a2f0d573bd711dff75c7ab0eb3bef8ac23161
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="integrate-zimperium-with-intune"></a>Zimperium を Intune と統合する
 
@@ -30,7 +30,7 @@ Zimperium Mobile Threat Defense ソリューションを Intune と統合する�
 > [!NOTE]
 > 次の手順はすべて、[Zimperium MTD コンソール](https://staging2-console.zimperium.com)で実行します。
 
-Zimperium と Intune の統合を始める前に、次のものがあることを確認します。
+Zimperium と Intune の統合を始める前に、次のサブスクリプションと資格情報があることを確認します。
 
 -   Microsoft Intune サブスクリプション
 
@@ -52,7 +52,7 @@ Zimperium アプリ承認プロセスは以下で構成されます。
 
 -   Zimperium サービスがデバイスの正常性状態に関する情報を Intune に通知できるようにします。
 
--   Zimperium は、Azure AD 登録グループ メンバーシップと同期してデバイスのデータベースを設定します。
+-   Zimperium は、Azure Active Directory 登録グループ メンバーシップと同期してデバイスのデータベースを設定します。
 
 -   Zimperium 管理者コンソールが Azure AD シングル サインオン (SSO) を使用できるようにします。
 
@@ -75,7 +75,7 @@ Zimperium アプリ承認プロセスは以下で構成されます。
 
 6.  **[Accept\(承認\)]** を選択して、Zimperium アプリが Intune および Azure Active Directory と通信することを承認します。
 
-7.  **[Zimperium zConsole]** および **[zIPS iOS and Android]\(zIPS および Android\)** アプリを Azure AD に追加したら、Zimperium が Azure AD セキュリティ グループとそのサービスを同期できるように Azure AD セキュリティ グループを追加します。
+7.  **[Zimperium zConsole]** および **[zIPS iOS and Android]\(zIPS および Android\)** アプリを Azure AD に追加したら、Azure AD セキュリティ グループを追加します。 これで、Zimperium が Azure AD セキュリティ グループとそのサービスを同期できるようになります。
 
 8.  **[Finish]\(完了\)** を選択して構成を保存し、最初の Azure AD セキュリティ グループの同期を開始します。
 

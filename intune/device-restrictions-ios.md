@@ -1,27 +1,26 @@
 ---
-title: "iOS の Intune デバイス制限設定"
-titleSuffix: Azure portal
-description: "iOS デバイスでデバイスの設定と機能を制御するために使用できる Intune 設定について説明します。\""
+title: "iOS の Microsoft Intune デバイス制限設定"
+titleSuffix: 
+description: "iOS を実行するデバイスでデバイスの設定と機能を制御するために使用できる Intune の設定について説明します。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/03/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b450becb45aea7ba5aa6ac2b6798e2062c08b4f2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での iOS デバイスの制限設定
+# <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune での iOS デバイスの制限設定
+この記事では、iOS を実行するデバイスに構成できるすべての Microsoft Intune デバイスの制限設定について説明します。
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -107,7 +106,7 @@ iOS 監視モードは、Apple の Device Enrollment Program または Apple Con
 - **[パスコードの変更 (監視モードのみ)]** - パスコードの変更、追加、削除を停止します。
     - **[指紋の変更 (管理モードのみ)]** - ユーザーによる TouchID 設定の変更、追加、削除を停止します。
 
-<sup>1</sup> **[画面がロックされるまでの非アクティブな最長時間 (分)]** と **[画面ロック後にパスワードが要求されるまでの最長時間 (分)]** の設定を構成した場合、これらの設定は順番に適用されます。 たとえば、両方の設定値を「 **5** 」分に設定すると、5 分後に画面が自動的にオフになり、さらに 5 分後にデバイスがロックされます。 ただし、ユーザーが手動で画面をオフにした場合、2 つ目の設定は即時に適用されます。 同じ例で、ユーザーが画面をオフにした後、デバイスは 5 分後にロックされます。
+<sup>1</sup> **[画面がロックされるまでの非アクティブな最長時間 (分)]** と **[画面ロック後にパスワードが要求されるまでの最長時間 (分)]** の設定を構成した場合、これらの設定は順番に適用されます。 たとえば、両方の設定値を「**5**」分に設定すると、5 分後に画面が自動的にオフになり、さらに 5 分後にデバイスがロックされます。 ただし、ユーザーが手動で画面をオフにした場合、2 つ目の設定は即時に適用されます。 同じ例で、ユーザーが画面をオフにした後、デバイスは 5 分後にロックされます。
 
 ## <a name="locked-screen-experience"></a>ロック画面
 
@@ -240,7 +239,7 @@ iOS 監視モードは、Apple の Device Enrollment Program または Apple Con
 -   **[iCloud へのドキュメントの同期 (監視下のみ)]** - ドキュメントとキー値を iCloud 記憶域スペースに同期できるようにします。
 -   **[iCloud へのフォト ストリームの同期]** - ユーザーがデバイスの **[My Photo Stream (マイ フォト ストリーム)]** を有効にできるようにします。有効にすると、写真は iCloud と同期され、すべてのユーザー デバイスで使用できるようになります。
 -   **[暗号化されたバックアップ]** - すべてのデバイス バックアップの暗号化を必須にします。
--   **[iCloud フォトライブラリ]** - **[いいえ]** に設定すると、ユーザーがクラウドに写真やビデオを保存できる iCloud フォトライブラリが使用できなくなります。    これを **[いいえ]** に設定すると、iCloud フォト ライブラリからデバイスに完全にダウンロードされていない写真はすべてデバイスから削除されます。
+-   **[iCloud フォトライブラリ]** - **[いいえ]** に設定すると、ユーザーがクラウドに写真やビデオを保存できる iCloud フォトライブラリが使用できなくなります。   これを **[いいえ]** に設定すると、iCloud フォト ライブラリからデバイスに完全にダウンロードされていない写真はすべてデバイスから削除されます。
 -   **[管理対象アプリのクラウドへの同期]** - Intune で管理するアプリがユーザーの iCloud アカウントにデータを同期することを許可します。
 -   **[共有フォト ストリーム]** - デバイスの **[iCloud Photo Sharing (iCloud の写真共有)]** を無効にするには、**[いいえ]** に設定します。
 -   **[アクティビティの継続]** - ユーザーがある iOS デバイスで開始した作業を別の iOS または macOS デバイスで続行できるようにします (Handoff)。

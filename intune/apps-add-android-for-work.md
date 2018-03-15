@@ -1,12 +1,12 @@
 ---
 title: "Android for Work デバイスへのアプリの割り当て"
-titlesuffix: Azure portal
-description: "このトピックでは、Google Play for Work ストアから Android for Work デバイスにアプリを同期してから割り当てます。\""
+titlesuffix: Microsoft Intune
+description: "このトピックでは、Google Play for Work ストアから Android for Work デバイスにアプリを同期してから割り当てる方法を説明します。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/13/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,17 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 248dcc978b5324733d5d640230aba2b6db1a2c62
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6a0b488120ed62031f8af5b8b65d9e90ea6d252b
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Intune を使用してアプリを Android for Work デバイスに割り当てる方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Android for Work デバイスにアプリを割り当てる方法は、標準の Android デバイスに割り当てる場合と異なります。 Android for Work 用にインストールするすべてのアプリは、Google Play for Work ストアから入手します。 ストアにログオンし、目的のアプリを検索し、アプリを承認します。
-Azure Portal の **[ライセンスされたアプリ]** ノードにアプリが表示されます。 ここでアプリの割り当てを管理する方法は、他のアプリを割り当てる方法と同じです。
+Android for Work とは、Android デバイス用のプログラムです。 Android for Work デバイスにインストールするすべてのアプリは、Google Play for Work ストアから入手します。 Android for Work デバイスにアプリを割り当てる方法は、標準の Android デバイスに割り当てる場合と異なります。 ストアにログオンし、目的のアプリを検索し、アプリを承認します。 Azure Portal の **[ライセンスされたアプリ]** ノードにアプリが表示されます。 ここでアプリの割り当てを管理する方法は、他のアプリを割り当てる方法と同じです。
 
 また、独自の基幹業務 (LOB) アプリを作成している場合は、以下の手順でアプリを割り当てることができます。
 - Google Play ストアの非公開領域にアプリを公開できる Google Developer アカウントにサインアップする。

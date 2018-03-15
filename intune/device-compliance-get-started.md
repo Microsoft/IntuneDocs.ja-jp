@@ -1,31 +1,30 @@
 ---
-title: "Intune のデバイス コンプライアンス ポリシー"
-titleSuffix: Azure portal
-description: "このトピックでは、Microsoft Intune でのデバイス コンプライアンスについて説明します\""
+title: "Microsoft Intune のデバイス コンプライアンス ポリシー"
+titleSuffix: 
+description: "Microsoft Intune でのデバイス コンプライアンスについての説明"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/6/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98a9a93efb93697b454cb9bc06d1ac268ebaf9d8
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 9e3a7bdf3ddf6ad77a82ac6dc7075d696fbe6497
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="get-started-with-intune-device-compliance-policies"></a>Intune のデバイス コンプライアンス ポリシーの概要
+# <a name="get-started-with-microsoft-intune-device-compliance-policies"></a>Microsoft Intune のデバイス コンプライアンス ポリシーの概要
+
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="what-is-device-compliance-in-intune"></a>Intune でのデバイス コンプライアンスとは
-
-Intune のデバイス コンプライアンス ポリシーは、デバイスが Intune によって "準拠している" と見なされるために遵守する必要がある規則および設定を定義します。
+Intune のデバイス コンプライアンス ポリシーは、デバイスが Intune によって準拠していると見なされるために遵守する必要がある規則および設定を定義します。
 
 この規則には次のようなものがあります。
 
@@ -43,7 +42,7 @@ Intune のデバイス コンプライアンス ポリシーは、デバイス�
 
 デバイス コンプライアンス ポリシーを使用して、デバイス コンプライアンスの状態を監視することもできます。
 
-### <a name="device-compliance-requirements"></a>デバイス コンプライアンスの要件
+## <a name="device-compliance-requirements"></a>デバイス コンプライアンスの要件
 
 コンプライアンス要件とは、基本的にはデバイスの PIN または暗号化を要求するようなルールであり、コンプライアンス ポリシーに対して必要か不要かを指定できます。
 

@@ -3,10 +3,10 @@ title: "ビジネス向け Microsoft ストア アプリの管理"
 titlesuffix: Azure portal
 description: "ビジネス向け Microsoft ストアから取得したアプリを同期して Intune に取り込み、そのアプリを割り当てて追跡します。\""
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85141fc6f4d71994f575233c255a97e336c92108
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4460924b3e53a9540ff21aa009a0c028de92f26f
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>ビジネス向け Microsoft ストアから購入したアプリを Microsoft Intune で管理する方法
 
@@ -39,12 +39,15 @@ ms.lasthandoff: 01/25/2018
 
 - 組織のモバイル デバイス管理機関として Intune を構成します。
 - ビジネス向け Microsoft ストアのアカウントにサインアップする必要があります。
-- Intune に Windows ビジネス ストア アカウントを関連付けた後で別のアカウントに変更することはできません。
+- Intune に Microsoft ビジネス ストア アカウントを関連付けた後で別のアカウントに変更することはできません。
 - Intune に対して、ストアから購入したアプリを手動で追加したり、削除したりすることはできません。 ビジネス向け Microsoft ストアとの同期のみが可能です。
-- Intune は、ビジネス向け Microsoft ストアから購入したオンラインおよびオフラインのライセンスされたアプリを同期します。
-- Intune には、無料のオフライン アプリのみを同期することができます。
+- ビジネス向け Microsoft ストアから購入したオンラインおよびオフラインのライセンスされたアプリは Intune ポータルと同期されます。 その後、これらのアプリをデバイス グループまたはユーザー グループに展開できます。 
+- オンライン アプリのインストールはストアによって管理されます。
+- 無料のオフライン アプリも Intune と同期することができます。 これらのアプリは、ストアからではなく Intune でインストールします。
 - この機能を使用するには、デバイスが Active Directory Domain Services またはワークプレースに参加している必要があります。
 - 登録デバイスは、1511 リリースの Windows 10 以降を使用している必要があります。
+
+さらに、ビジネス向け Microsoft ストアから同期された関連するセットとオフラインのライセンスされたアプリは、UI の単一のアプリ エントリに統合されるようになります。 個々のパッケージの展開の詳細は、すべて単一のエントリに移行されます。 Azure Portal で関連する設定を表示するには、**[Mobile Apps]** ブレードから **[アプリ ライセンス]** を選びます。
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>Intune にビジネス向け Microsoft ストア アカウントを関連付ける
 Intune コンソールで同期を有効にする前に、以下の手順に従って、Intune を管理ツールとして使用するようにストア アカウントを構成する必要があります。
@@ -62,11 +65,12 @@ Intune コンソールで同期を有効にする前に、以下の手順に従�
 1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[モバイル アプリ]** を選びます。
-1. **[モバイル アプリ]** ブレードで、**[セットアップ]** > **[ビジネス向け Microsoft ストア]** の順に選択します。
-2. **[有効にする]** をクリックします。
-3. ビジネス向け Microsoft ストアにまだサインアップしていない場合は、前に詳しく説明したように、サインアップ用のリンクをクリックしてサインアップし、アカウントを関連付けます。
-5. **[言語]** ドロップダウン リストで、Azure Portal で表示するビジネス向け Microsoft ストアのアプリに使用する言語を選択します。 アプリは、どの言語を使用して表示するかに関係なく、使用可能なエンド ユーザーの言語でインストールされます。
-6. **[同期]** をクリックして、Microsoft ストアから購入したアプリを Intune に取り込みます。
+4. **[モバイル アプリ]** ブレードで、**[セットアップ]** > **[ビジネス向け Microsoft ストア]** の順に選択します。
+5. **[有効にする]** をクリックします。
+6. ビジネス向け Microsoft ストアにまだサインアップしていない場合は、前に詳しく説明したように、サインアップ用のリンクをクリックしてサインアップし、アカウントを関連付けます。
+7. **[言語]** ドロップダウン リストで、Azure Portal で表示するビジネス向け Microsoft ストアのアプリに使用する言語を選択します。 アプリは、どの言語を使用して表示するかに関係なく、使用可能なエンド ユーザーの言語でインストールされます。
+8. **[同期]** をクリックして、Microsoft ストアから購入したアプリを Intune に取り込みます。
+9. **[Save]**(保存) をクリックします。
 
 ## <a name="synchronize-apps"></a>アプリを同期する
 

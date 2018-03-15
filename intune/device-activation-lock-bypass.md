@@ -1,10 +1,10 @@
 ---
 title: "Intune での iOS アクティベーション ロックをバイパスする"
-titlesuffix: Azure portal
-description: "Intune を使用して、iOS アクティベーション ロックをバイパスし、ロックされたデバイスにアクセスする方法を説明します。\""
+titlesuffix: Microsoft Intune
+description: "Intune を使用して、iOS アクティベーション ロックをバイパスし、ロックされたデバイスにアクセスする方法を説明します。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 08/22/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15c288b31ab3fb31080aff72d2461dc1d24ec5ae
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6141b325c5087544a1b78e03209322023f2374e3
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Intune で、監視されている iOS デバイス上のアクティベーション ロックをバイパスする
 
@@ -69,11 +69,11 @@ Intune では、iOS 8.0 以降を実行している監視対象デバイスの�
 
 Intune の **[アクティブ化ロックのバイパス]** のリモート デバイス操作では、ユーザーの Apple ID とパスワードを使用せずに iOS デバイスのアクティベーション ロックを解除します。 アクティブ化ロックをバイパスした後に iPhone を探すアプリを起動すると、デバイスのアクティブ化ロックが再度有効になります。 デバイスに物理的にアクセスできる場合にのみアクティブ化ロックをバイパスしてください。
 
-1. Azure Portal にサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
 3. **[Intune]** ブレードで、**[デバイス]** を選択します。
-4. **[デバイスとグループ]** ブレードで、**[すべてのデバイス]** を選択します。
-5. 管理するデバイスの一覧から監視対象の iOS デバイスを選択し、その後 **[アクティブ化ロックのバイパス]** デバイス リモート操作を選択します。
+4. **[デバイス]** ブレードで、**[すべてのデバイス]** を選択します。
+5. 管理するデバイスの一覧から監視対象の iOS デバイスを選択し、**[詳細]** を選択し、**[アクティブ化ロックのバイパス]** デバイス リモート操作を選択します。
 
 ## <a name="next-steps"></a>次の手順
 
