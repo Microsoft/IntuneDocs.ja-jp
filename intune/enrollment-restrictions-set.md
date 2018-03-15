@@ -1,7 +1,7 @@
 ---
-title: "Intune で登録制限を設定する"
-titlesuffix: Azure portal
-description: "Intune でプラットフォームごとに登録を制限し、デバイス登録の上限数を設定します。 \""
+title: "Microsoft Intune で登録制限を設定する"
+titlesuffix: 
+description: "Intune でプラットフォームごとに登録を制限し、デバイス登録の上限数を設定します。"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,17 +15,17 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fab385762efa3ab095553fe21fb045f4f11ff197
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 396c8881ba0dfae5cfad4eab9bf787b6a9f33d44
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="set-enrollment-restrictions"></a>登録制限を設定する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-ユーザーは Intune 管理者として、Intune での管理に登録できるデバイスの数と種類を定義した登録の制限を作成し管理することができます。 制限を複数作成して、さまざまなユーザー グループに適用することができます。 さまざまな制限を作成した場合は、[優先度](#change-enrollment-restriction-priority)を設定することができます。
+Intune 管理者は、登録制限を作成して管理することができます。 これらの制限は、Intune による管理に登録できるデバイスの種類と数を定義します。 制限を複数作成して、さまざまなユーザー グループに適用することができます。 さまざまな制限を作成した場合は、[優先度](#change-enrollment-restriction-priority)を設定することができます。
 
 >[!NOTE]
 >登録の制限はセキュリティ機能ではありません。 侵害されたデバイスでは特徴が正しく示されない可能性があります。 これらの制限は、悪意のないユーザーにとって最善の防御策となります。
@@ -83,7 +83,7 @@ ms.lasthandoff: 02/01/2018
   オペレーティング システムのバージョンは、Device Enrollment Program、Apple School Manager、または Apple Configurator アプリを使用して登録する Apple デバイスには適用されません。
 8. 一覧されているプラットフォームごとに、**個人所有**のデバイスを**許可**するか**ブロック**するかを指定します。
 
-    ![個人所有設定の構成を示す既定デバイス プラットフォーム構成のデバイス制限ワークスペースのスクリーンショット。](media/device-restrictions-platform-configurations.png)
+    ![個人所有デバイスに構成された既定のデバイス プラットフォームとデバイス制限ワークスペースのスクリーンショット。](media/device-restrictions-platform-configurations.png)
 9. **[Save]**(保存) をクリックします。
 
 >[!NOTE]
@@ -100,7 +100,7 @@ ms.lasthandoff: 02/01/2018
 3. **[デバイスの登録]** > **[登録の制限]** を選択します。
 4. **[デバイス数の制限]** で、設定する制限を選択します。
 5. **[デバイスの上限数]** を選択し、ドロップダウン リストで、ユーザーが登録できるデバイスの最大数を選択します。
-    ![[デバイス数の制限] ブレードのスクリーンショット。](./media/device-restrictions-limit.png)
+    ![[デバイス数の制限] ブレードのスクリーン ショット](./media/device-restrictions-limit.png)
 6. **[Save]**(保存) をクリックします。
 
 エンド ユーザーがデバイス登録の上限に達すると、そのことを伝える通知が表示されます。 たとえば、iOS では次のように表示されます。

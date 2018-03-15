@@ -1,9 +1,9 @@
 ---
 title: "Intune でのアプリ ベースの条件付きアクセス"
-description: "Intune でのアプリ ベースの条件付きアクセスがどのように機能するのかについて、その概念を説明します。"
+description: "Intune でのアプリ ベースの条件付きアクセスのしくみについて説明します。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 43421ac02fc3791e2827d980adcb708619cde9b8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 604eb86e6ae712bac360ecf45dd8f20e611bc52a
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Intune でのアプリ ベースの条件付きアクセス
 
@@ -54,7 +54,7 @@ Microsoft Outlook アプリのみが Exchange Online にアクセスできるよ
 > [!NOTE]
 > 下のフローチャートの構造は、他の管理対象アプリでも使用できます。
 
-![Intune フローチャートを使用したアプリ ベースの条件付きアクセス](./media/ca-intune-common-ways-3.png)
+![フローチャートで説明されているアプリベースの条件付きアクセス](./media/ca-intune-common-ways-3.png)
 
 1.  ユーザーは、Outlook アプリから Azure AD の認証を試みます。
 

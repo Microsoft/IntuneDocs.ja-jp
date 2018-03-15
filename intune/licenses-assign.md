@@ -1,6 +1,6 @@
 ---
-title: "Intune のライセンスを割り当てる"
-description: "Intune サブスクリプションのユーザーにライセンスを割り当てます"
+title: "Microsoft Intune ライセンスを割り当てる"
+description: "Intune に登録できるようにライセンスをユーザーに割り当てる"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -14,13 +14,13 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2ad754ce3d81469bb172081b6b7f43937f45ffd9
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 45baadb24ac646a6456e04c85a701842774c7930
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="assign-intune-licenses-to-your-user-accounts"></a>ユーザー アカウントに Intune のライセンスを割り当てる
+# <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Intune にデバイスを登録できるようにライセンスをユーザーに割り当てる
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/15/2018
 
 3.  **Intune** または **Enterprise Mobility + Security** を **[オン]** に切り替えて、**[保存]** を選択します。
 
-  ![Office 365 ポータルの製品ライセンス割り当ての画像。](./media/office-assign-license.png)
+  ![Office 365 ポータルの [製品ライセンス] セクションのスクリーンショット。](./media/office-assign-license.png)
 
 4. ユーザー アカウントが、サービスを使用してデバイスを管理に登録するために必要なアクセス許可を持つようになります。
 
@@ -46,11 +46,11 @@ ms.lasthandoff: 02/15/2018
 ## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>School Data Sync を使って Intune for Education のユーザーにライセンスを割り当てる
 教育組織の場合、School Data Sync (SDS) を使用して Intune for Education のライセンスを同期されたユーザーに割り当てることができます。 SDS プロファイルを設定するときに、Intune for Education のチェック ボックスをオンにするだけです。  
 
-![SDS プロファイル設定の画像](./media/i4e-sds-profile-setup-setting.png)
+![SDS プロファイル設定のスクリーンショット](./media/i4e-sds-profile-setup-setting.png)
 
 Intune for Education のライセンスを割り当てるときは、Intune A Direct のライセンスも割り当てられることを確認してください。
 
-![製品ライセンス設定の画像](./media/i4e-set-licenses.png)
+![製品ライセンス セットアップのスクリーンショット](./media/i4e-set-licenses.png)
 
 SDS について詳しくは、「[School Data Sync と Classroom の概要](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91)」をご覧ください。
 

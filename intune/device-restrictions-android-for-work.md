@@ -1,30 +1,34 @@
 ---
-title: "Android for Work の Intune デバイス制限設定"
-titlesuffix: Azure portal
-description: "Android for Work デバイスのデバイス設定と機能を制御するために使用できる Intune 設定について説明します。"
+title: "Android for Work の Microsoft Intune デバイス制限設定"
+titlesuffix: 
+description: "Android for Work を実行するデバイスでデバイスの設定と機能を制御するために使用できる Intune の設定について説明します。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/23/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7c69bb3984ae4ffa81aa81ae24cfe17663bc191
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d4d8089d7ae57c4bf95038e5f9dc88f4949f069e
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Android for Work デバイスの制限設定
+# <a name="microsoft-intune-android-for-work-device-restriction-settings"></a>Microsoft Intune の Android for Work デバイス制限設定
+
+この記事では、Android for Work を実行するデバイスに構成できるすべての Microsoft Intune デバイス制限設定について説明します。
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>仕事用プロファイル設定
+
+### <a name="general-settings"></a>全般設定
+
 -   **[仕事用プロファイルと個人プロファイルの間でのコピー/貼り付け]** - 仕事用アプリと個人用アプリの間でのコピーと貼り付けを制御します。 ブロックを有効にするには、**[ブロック]** を選択します。 ブロックを無効にするには、**[未構成]** を選択します。
 - **[仕事用プロファイルと個人プロファイル間のデータ共有]** - この設定を使用して、仕事用プロファイル内のアプリが個人プロファイル内のアプリと共有できるかどうかを制御します。 この設定は、アプリケーション内の共有アクション (たとえば、Chrome ブラウザー アプリの **[Share...]\(共有...\)** オプション など) を制御し、コピー/貼り付けのクリップボード動作には適用されません。 [アプリ保護ポリシー設定](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)とは異なり、デバイスの制限設定は Intune ポータルで管理され、管理対象アプリを分離するための Android for Work の仕事用プロファイル パーティションを使用します。 次の中から選択します。
     - **[既定の共有制限]** - この設定はデバイスの既定の共有動作ですが、デバイスが実行している Android のバージョンによって異なります。 既定では、個人プロファイルから仕事用プロファイルへの共有が許可されます。 また既定では、仕事用プロファイルから個人プロファイルへの共有はブロックされます。 この設定により、仕事用プロファイルから個人プロファイルへのデータの共有が防止されます。 Google では、6.0 以降のバージョンを実行するデバイスで、個人プロファイルから仕事用プロファイルへのデータの共有をブロックする方法が提供されていません。   
@@ -39,6 +43,12 @@ ms.lasthandoff: 01/25/2018
     -   **自動拒否**
 
     (**[モバイル アプリ]** > **[アプリ構成ポリシー]** から) 個別のアプリのアプリ構成ポリシーを定義することで、特定のアプリのアクセス許可の付与の状態をさらに詳細に定義できます。
+
+- **アカウントの追加と削除**
+
+   エンド ユーザーが作業プロファイルのアカウントを手動で追加または削除できないようにします。
+
+   たとえば、Android for Work プロファイルに Gmail アプリを展開する場合、エンド ユーザーがこの作業プロファイルのアカウントを追加または削除できないようにすることができます。
 
 ### <a name="work-profile-password"></a>仕事用プロファイルのパスワード
 - **[作業プロファイルのパスワードが必要です]** - (仕事用プロファイルが有効な Android 7.0 以降) 仕事用プロファイル内のアプリにのみ適用するパスコード ポリシーを定義します。 既定では、エンド ユーザーは個別に定義された 2 つの PIN を利用するか、または 2 つの PIN のうちの強いほうを選択できます。
@@ -87,4 +97,4 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="next-steps"></a>次の手順
 
-「[Microsoft Intune でデバイスの制限設定を構成する方法](device-restrictions-configure.md)」のトピックにある情報を使って、プロファイルを保存し、ユーザーとデバイスに割り当てます。
+「[Microsoft Intune でデバイスの制限設定を構成する方法](device-restrictions-configure.md)」の情報を使用して、プロファイルを保存し、ユーザーとデバイスに割り当てます。

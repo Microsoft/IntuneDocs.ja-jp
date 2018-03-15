@@ -1,31 +1,31 @@
 ---
-title: "iOS デバイス向けの Intune 電子メール設定"
-titleSuffix: Azure portal
-description: "iOS デバイスでの電子メール接続の構成に使用できる Intune 設定について説明します。\""
+title: "iOS デバイス向けの Microsoft Intune 電子メール設定"
+titleSuffix: 
+description: "IOS を実行しているデバイスで電子メール設定の構成に使用できる Microsoft Intune 設定について説明します。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/24/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 9f0fa6af-3669-439a-bd0d-75d8b1a0b135
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7baec2990b9020e8125395b589fba7a965ba86ee
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1634512c85c156046d0324953463d745be06d649
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="email-profile-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune での iOS デバイス向けの電子メール プロファイル設定
+# <a name="email-profile-settings-in-microsoft-intune-for-devices-running-ios"></a>Microsoft Intune での iOS を実行するデバイス向けの電子メール プロファイル設定 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+この記事では、iOS を実行しているデバイス用に構成できる電子メール プロファイル設定を示します。
 
+## <a name="email-settings"></a>電子メールの設定
 
 - **[電子メール サーバー]** - Exchange サーバーのホスト名。
 - **[アカウント名]** - ユーザーのデバイスに表示される電子メール アカウントの表示名。

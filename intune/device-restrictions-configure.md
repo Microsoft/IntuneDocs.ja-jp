@@ -1,25 +1,23 @@
 ---
-title: "Intune デバイス制限設定の構成"
-titleSuffix: Azure portal
-description: "Intune を使用して、管理対象デバイスの設定と機能を構成する方法について説明します。\""
+title: "Microsoft Intune デバイス制限設定の構成"
+titleSuffix: 
+description: "Microsoft Intune を使用して、管理対象デバイスの設定と機能を構成する方法について説明します。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 04/12/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 93b6a642f26ec6273853f75d063fd368698f3864
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 62c12cde5ca128a26b10e0e4516e0bbf7e0f0bbb
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune でデバイスの制限設定を構成する方法
 
@@ -33,16 +31,16 @@ ms.lasthandoff: 02/01/2018
 
 たとえば、iOS デバイスのユーザーがデバイスのカメラにアクセスできないようにするデバイスの制限プロファイルを作成できます。
 
-このトピックでは、デバイスの制限プロファイルを構成する基本的な方法について説明します。その後、デバイスごとの詳細については、各プラットフォームのトピックを参照してください。
+デバイス制限プロファイルの基礎を学習します。その後、デバイスの詳細について、各プラットフォームの記事を参照してください。
 
-デバイスの制限設定を含むデバイス プロファイルを作成するには:
+## <a name="create-a-device-profile-containing-device-restriction-settings"></a>デバイスの制限設定を含むデバイス プロファイルの作成
 
-1. Azure Portal にサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイスの構成]** を選択します。
-2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
-3. [プロファイル] ブレードで、**[プロファイルを作成します]** を選択します。
-4. **[プロファイルを作成します]** ブレードで、デバイスの制限プロファイルの**名前**と**説明**を入力します。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. **[Intune]** ページで、**[デバイス構成]** を選択します。
+2. **[デバイス構成]** ページの **[管理]** セクションで、**[プロファイル]** を選択します。
+3. **[プロファイル]** ページで、**[プロファイルの作成]** を選択します。
+4. **[プロファイルの作成]** ページで、デバイスの制限プロファイルの **[名前]** と **[説明]** を入力します。
 5. **[プラットフォーム]** ドロップダウン リストで、カスタム設定を適用するデバイス プラットフォームを選択します。 現時点では、デバイスの制限設定に対応している次のいずれかのプラットフォームを選択できます。
     - **Android**
     - **Android**
@@ -61,9 +59,9 @@ ms.lasthandoff: 02/01/2018
     - [Windows 10 Team の設定](device-restrictions-windows-10-teams.md)
     - [Windows Holographic for Business の設定](device-restrictions-windows-holographic.md)
     - [Android for Work の設定](device-restrictions-android-for-work.md)
-8. 完了したら、**[プロファイルを作成します]** ブレードに戻り、**[作成]** をクリックします。
+8. 完了したら、**[プロファイルの作成]** ページに戻り、**[作成]** をクリックします。
 
-プロファイルが作成され、プロファイルの一覧ブレードに表示されます。
+プロファイルが作成され、プロファイルの一覧ページに表示されます。
 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事を参照してください。
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.

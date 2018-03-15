@@ -1,7 +1,7 @@
 ---
 title: "アプリ保護ポリシーを監視する方法"
-titleSuffix: Azure portal
-description: "ポリシーを持つユーザー数を確認し、詳細を調べるためにドリルダウンします。\""
+titleSuffix: Microsoft Intune
+description: "Intune でモバイル アプリ管理ポリシーのコンプライアンス対応状態を監視します。"
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4dae7edb99dae26c7498e55d5eead3cee2e9a8f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fb777bb8f04adb708f8c01c6f0bfcd08f7c663f5
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>アプリ保護ポリシーを監視する方法
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -27,7 +27,7 @@ ms.lasthandoff: 01/25/2018
 このトピックでは、**Azure Portal を使用していない場合に**、Intune クラシック ポータルで[アプリ保護ポリシーを作成する方法](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)について説明します。
 
 
-[Azure Portal](https://portal.azure.com) の Intune アプリ保護ブレードでユーザーに適用したモバイル アプリ管理 (MAM) ポリシーのコンプライアンス状態を監視できます。 MAM ポリシーによって影響を受けるユーザー、コンプライアンスの状態、ユーザーに対して発生する可能性がある問題に関する情報を見つけることができます。
+[Azure Portal](https://portal.azure.com) の Intune アプリ保護ウィンドウでユーザーに適用したモバイル アプリ管理 (MAM) ポリシーのコンプライアンス状態を監視します。 MAM ポリシーによって影響を受けるユーザー、コンプライアンスの状態、ユーザーに対して発生する可能性がある問題に関する情報を見つけます。
 
 コンプライアンス状態は 3 つの異なる場所で監視できます。
 
@@ -39,12 +39,12 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="summary-view"></a>概要ビュー
 
-1. Azure Portal にサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[モバイル アプリ]** を選びます。
-4. **[モバイル アプリ]** ワークロードで、**[監視]** > **[アプリ保護ユーザー状態]** の順に選択して、概要ビューを表示します。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. **[Intune]** ウィンドウで、**[モバイル アプリ]** を選びます。
+4. **[モバイル アプリ]** ワークロードで、**[監視]** > **[アプリの保護状態]** の順に選択して、概要ビューを表示します。
 
-![[Intune モバイル アプリケーション管理] ブレードの [概要] タイル](./media/app-protection-user-status-summary.png)
+![[Intune モバイル アプリケーション管理] ウィンドウの [概要] タイル](./media/app-protection-user-status-summary.png)
 
 -   **[ユーザー]**: 作業コンテキストのポリシーに関連付けられているアプリを使っている社内ユーザーの合計数。
 
@@ -61,7 +61,7 @@ ms.lasthandoff: 01/25/2018
 **[ユーザーの状態]** タイル (デバイス OS プラットフォームに基づく) と **[フラグ付きのユーザー]** タイルを選択すると、概要の詳細ビューを表示できます。
 
 ### <a name="user-status"></a>ユーザーの状態
-1 人のユーザーを検索し、そのユーザーのコンプライアンス状態を確認できます。 **[アプリ レポート]** ブレードには、選択したユーザーの次の情報が表示されます。
+1 人のユーザーを検索し、そのユーザーのコンプライアンス状態を確認できます。 **[アプリ レポート]** ウィンドウには、選択したユーザーの次の情報が表示されます。
 - ユーザー アカウントに関連付けられているデバイス
 
 - デバイスのアプリと MAM ポリシー
@@ -79,13 +79,13 @@ ms.lasthandoff: 01/25/2018
 
 1.  ユーザーを選択するには、**[概要]** タイルを選択します。
 
-    ![スクリーンショット 3](./media/MAM-reporting-6.png)
+    ![Intune モバイル アプリケーション管理の [設定] ブレードで [概要]タイルを強調表示したスクリーンショット](./media/MAM-reporting-6.png)
 
-2. 表示される **[アプリ レポート]** ブレードで、**[ユーザーの選択]** を選択して Azure Active Directory ユーザーを検索します。
+2. 表示される **[アプリ レポート]** ウィンドウで、**[ユーザーの選択]** を選択して Azure Active Directory ユーザーを検索します。
 
-    ![[アプリ レポート] ブレードのユーザー選択オプション](./media/MAM-reporting-2.png)
+    ![[アプリ レポート] ウィンドウで [ユーザーの選択] オプションを強調表示したスクリーンショット](./media/MAM-reporting-2.png)
 
-3. リストからユーザーを選択します。 そのユーザーのコンプライアンス状態の詳細が表示されます。
+3. リストからユーザーを選択します。 そのユーザーのコンプライアンス状態の詳細を表示できます。
 
 ### <a name="flagged-users"></a>フラグ付きのユーザー
 詳細ビューには、エラー メッセージ、エラー発生時にアクセスされていたアプリ、影響を受けたデバイス OS プラットフォーム、タイムスタンプが表示されます。
@@ -94,7 +94,7 @@ ms.lasthandoff: 01/25/2018
 
 詳細ビューと同じレポートと追加のレポートがあります。MAM ポリシーのコンプライアンス状態の確認に役立ちます。
 
-![スクリーンショット 4](./media/MAM-reporting-7.png)
+![[設定] ウィンドウで利用できる 2 つのレポートを強調表示したスクリーンショット](./media/MAM-reporting-7.png)
 
 -   **アプリ保護ユーザー レポート:** 上の「詳細ビュー」セクションの**ユーザーの状態**レポートと同じ情報がまとめられています。
 
@@ -110,7 +110,7 @@ ms.lasthandoff: 01/25/2018
 
         -   すべてのアプリがチェックインされているが、MAM ポリシーが与えられていません。
 
-![スクリーンショット 2](./media/MAM-reporting-4.png)
+![ユーザーの [アプリ レポート] ブレードと 3 つの登録されたアプリの詳細の表を示すスクリーンショット](./media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>テーブルのグループ化
 
@@ -125,13 +125,13 @@ ms.lasthandoff: 01/25/2018
 
 アプリ保護レポートを生成するには、次の手順に従います。
 
-1. [Intune モバイル アプリケーション管理] ブレードで [App protection report (アプリ保護レポート)] を選択します。
+1. [Intune モバイル アプリケーション管理] ウィンドウで **[アプリ保護レポート]** を選択します。
 
-    ![スクリーンショット 6](./media/app-protection-report-csv-2.png)
+    ![Intune モバイル アプリケーション管理ウィンドウの [アプリ保護] ダウンロード リンクを強調表示したスクリーンショット](./media/app-protection-report-csv-2.png)
 
 2. [はい] を選択して、レポートを保存します。次に、[名前を付けて保存] を選択し、レポートを保存するフォルダーを選択します。
 
-    ![スクリーンショット 7](./media/app-protection-report-csv-1.png)
+    ![レポートの保存の確認ボックスのスクリーン ショット](./media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>関連項目
 [iOS アプリ間のデータ転送を管理する](data-transfer-between-apps-manage-ios.md)

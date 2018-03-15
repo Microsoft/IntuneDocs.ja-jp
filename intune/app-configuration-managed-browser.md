@@ -1,6 +1,6 @@
 ---
 title: "Managed Browser アプリで Web アクセスを管理する"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "Managed Browser アプリケーションを展開して、Web 閲覧と他のアプリケーションへの Web データ転送を制限します。"
 keywords: 
 author: erikre
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 613099d1d30a8be3787bd0004a376302da3dc231
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3d902ada21c2cf864c3e21ef02b886d16162853c
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune で Managed Browser ポリシーを使ってインターネット アクセスを管理する
 
@@ -63,17 +63,17 @@ Intune Managed Browser では、[Microsoft Intune アプリケーション パ�
 
 ## <a name="create-a-managed-browser-app-configuration"></a>Managed Browser アプリの構成を作成する
 
-1.  Azure Portal にサインインします。
-2.  **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3.  [管理] リストの **[アプリの構成]** ブレードで、**[アプリ構成ポリシー]** を選択します。
-4.  **[アプリ構成ポリシー]** ブレードで **[追加]** を選択します。
-5.  **[アプリの構成を追加する]** ブレードで **[名前]** に入力し、必要に応じてアプリ構成設定の **[説明]** に入力します。
+4.  **[アプリ構成ポリシー]** ブレードで、**[追加]** を選択します。
+5.  **[構成ポリシーの追加]** ブレードで **[名前]** を入力し、必要に応じてアプリ構成設定の **[説明]** を入力します。
 6.  **[デバイス登録の種類]** には、**[管理対象アプリ]** を選択します。
-7.  **[必要なアプリの選択]** を選択して、**[対象アプリ]** ブレードで、iOS、Android、またはその両方に **[Managed Browser]** を選択します。
-8.  **[OK]** を選択し、**[アプリの構成を追加する]** ブレードに戻ります。
-9.  **[構成の設定]** を選択します。 **[構成]** ブレードで、Managed Browser の構成を指定するキーと値のペアを定義します。 定義できる別のキーと値のペアについては、この記事の後半のセクションで説明します。
+7.  **[必要なアプリの選択]** を選択して、**[対象アプリ]** ブレードで、iOS、Android、またはその両方に対して **[Managed Browser]** を選択します。
+8.  **[OK]** を選択して **[構成ポリシーの追加]** ブレードに戻ります。
+9.  **[構成設定]** を選択します。 **[構成]** ブレードで、Managed Browser の構成を指定するキーと値のペアを定義します。 定義できる別のキーと値のペアについては、この記事の後半のセクションで説明します。
 10. 終了したら、**[OK]** を選択します。
-11. **[アプリの構成を追加する]** ブレードで、**[作成]** を選択します。
+11. **[構成ポリシーの追加]** ブレードで、**[追加]** を選択します。
 12. 新しい構成が作成され、**[アプリの構成]** ブレードに表示されます。
 
 >[!IMPORTANT]
@@ -83,10 +83,10 @@ Intune Managed Browser では、[Microsoft Intune アプリケーション パ�
 
 設定をユーザーの Azure AD グループに割り当てます。 ユーザーが Managed Browser アプリをインストールしている場合、そのアプリは指定された設定で管理されます。
 
-1. Intune モバイル アプリケーション管理ダッシュボードの **[設定]** ブレードで、**[アプリの構成]** を選択します。
+1. Intune モバイル アプリケーション管理ダッシュボードの **[Mobile Apps]** ブレードで、**[構成ポリシーの追加]** を選択します。
 2. アプリの構成の一覧から、割り当てる構成を選択します。
-3. 次のブレードで、**[ユーザー グループ]** を選択します。
-4. **[ユーザー グループ]** ブレードで、アプリの構成を割り当てる Azure AD グループを選択し、**[OK]** を選択します。
+3. 次のブレードで、**[割り当て]** を選択します。
+4. **[割り当て]** ブレードで、アプリの構成を割り当てる Azure AD グループを選択し、**[OK]** を選択します。
 
 
 ## <a name="how-to-configure-application-proxy-settings-for-the-managed-browser"></a>Managed Browser のアプリケーション プロキシ設定を構成する方法

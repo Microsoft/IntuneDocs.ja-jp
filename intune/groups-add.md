@@ -1,10 +1,10 @@
 ---
-title: "Intune で登録制限を設定する"
-titlesuffix: Azure portal
-description: "Intune でプラットフォームごとに登録を制限し、デバイス登録の上限数を設定します。 \""
+title: "ユーザーとデバイスを整理するためのグループを追加する"
+titlesuffix: Microsoft Intune
+description: "地理、部門、またはハードウェアの特性ごとにユーザーとデバイスを整理するためのグループを追加します。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,13 +15,13 @@ ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5e55a96ee1bee5b1f25a4ddf3366f3e7dc94122a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 42e7e2c8d239b8150f67a699ba6fef156b3e1a7d
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="add-groups-in-intune"></a>Intune でグループを追加する
+# <a name="add-groups-to-organize-users-and-devices"></a>ユーザーとデバイスを整理するためのグループを追加する
 Intune では、デバイスとユーザーの管理に Azure Active Directory (AD) のグループを使用します。 Intune 管理者は、組織のニーズに合ったグループをセットアップできます。 地理的な場所、部門、ハードウェアの特性ごとにグループを作成して、ユーザーまたはデバイスを整理します。 大規模なタスクを管理するには、グループを使用します。 多数のユーザーにポリシーを設定したり、一連のデバイスにアプリを展開したりする場合などです。
 
 このトピックでは、Intune で使用するグループを追加する方法を説明します。
@@ -34,7 +34,7 @@ Intune では、デバイスとユーザーの管理に Azure Active Directory (
 
 新しいグループを作成するには、次の手順に従います。
 1. Azure Portal で **[グループ]** に進み、**[All groups]/(すべてのグループ)/** ブレードで **[新しいグループ]** を選択します。
-  ![[新しいグループ] が選択された Azure Portal のスクリーンショット](./media/groups-add-new.png)
+  ![[新しいグループ] が選択されている [ユーザーとグループ] 画面のスクリーンショット](./media/groups-add-new.png)
 2. 新しいグループの **[名前]** と **[説明]** を指定します。 これらのプロパティは、管理ポータルのみに表示され、ユーザーには表示されません。
 
 3. **[メンバーシップの種類]** を選択します。
@@ -42,7 +42,7 @@ Intune では、デバイスとユーザーの管理に Azure Active Directory (
   - **[Dynamic query]/(動的クエリ)/** で定義したユーザー グループを作成するには、**[動的なユーザー]** を使用します。
   - **[Dynamic query]/(動的クエリ)/** で定義したデバイス グループを作成するには、**[Dynamic Device]/(動的なデバイス)/** を使用します。
 
-  ![[名前]、[説明]、[メンバーシップの種類]、[Office の機能を有効にしますか?] および [メンバー] がある Intune グループ プロパティのスクリーンショット](./media/groups-add-properties.png)
+  ![Intune の [グループ] プロパティのスクリーンショット](./media/groups-add-properties.png)
 
   Azure AD では、メンバーシップを定義するルールを使用して動的なグループを作成できます。 属性を使用した動的グループを作成する方法については、[こちら](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal)を参照してください。
 

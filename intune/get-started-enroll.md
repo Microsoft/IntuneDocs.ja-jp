@@ -1,10 +1,10 @@
 ---
-title: "デバイス登録の概要"
-titlesuffix: Azure portal
+title: "iOS デバイス登録のエクスペリエンスを理解する"
+titlesuffix: Microsoft Intune
 description: "iOS デバイスの登録手順を最初から最後まで行い、登録方法を学習します。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,13 +15,13 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3818556f300821fb9acaa260300ae683f43b13e3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 18a3225ef81d7f13b8656326540e30cf5ee07f1e
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="get-started-enrolling-devices"></a>デバイス登録の概要
+# <a name="understand-the-users-experience-enrolling-an-ios-device"></a>iOS デバイスを登録するユーザーのエクスペリエンスを理解する
 
 Microsoft Intune は、会社のデータを保護した状態で、従業員がモバイル デバイスを使用できるようにします。 エンド ユーザーは管理コンソールではなく、自分のデバイスで Intune を操作するため、登録に慣れていることが推奨されます。 この方法では、よく練られて作られたコンプライアンス ポリシーと自分の経験を結合し、ユーザーの視点で見ることができます。 これは特に重要なことです。管理者に表示される情報がユーザーに伝えられるためです。
 

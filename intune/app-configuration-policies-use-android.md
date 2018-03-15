@@ -1,7 +1,7 @@
 ---
-title: "管理対象の Android デバイス用アプリ構成ポリシーを追加する | Microsoft Docs"
-titlesuffix: Azure portal
-description: "アプリ構成ポリシーを使用して、実行時に構成データを Android for Work アプリに提供する方法について説明します。"
+title: "管理対象の Android デバイス用アプリ構成ポリシーを追加する"
+titlesuffix: Microsoft Intune
+description: "Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが Android for Work アプリを実行するときに設定を指定します。"
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fbf1466b02da66e5c7d115d60aa43912322ebeb
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 206e229e95633ce553637bcedef708ee5630864c
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>管理対象の Android デバイス用アプリ構成ポリシーを追加する
 
@@ -30,8 +30,8 @@ Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが
 > [!Note]  
 > アプリ構成をサポートしていないアプリもあります。 ビルドされたアプリでアプリ構成ポリシーがサポートされているかどうかについては、アプリの開発者にお問い合わせください。
 
-1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** + **[Intune]** の順に選択します。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[モバイル アプリ]** ワークロードを選択します。
 4. **[管理]** グループの **[アプリ構成ポリシー]** を選択し、**[追加]** を選択します。
 5. 次の詳細を設定します。
@@ -41,7 +41,7 @@ Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが
       Azure Portal に表示されるプロファイルの説明。
     - **デバイス登録の種類**  
       **[管理対象デバイス]** を選択します。
-6. **[プラットフォーム]** に **[Android]** を選択します。
+6. **[プラットフォーム]** に **[Android for Work]** を選択します。
 7. **[関連アプリ]** を選択し、アプリ構成ポリシーを定義するアプリを選択します。 承認して Intune に同期した Android for Work アプリの一覧から選択します。
 8. **[構成設定]** を選択します。 以下を使用して構成を設定できます。
     - [構成デザイナー](#Use-the-configuration-designer)
@@ -77,14 +77,15 @@ Intune に登録されているデバイスかどうかにかかわらず、ア�
 
 Android デバイス機能にアクセスするためのアプリのアクセス許可を事前に構成することもできます。 既定では、場所やデバイス カメラへのアクセスなど、デバイスのアクセス許可を必要とする Android アプリは、アクセス許可の承諾または拒否をユーザーに求めます。 たとえば、アプリでデバイスのマイクが使用される場合、ユーザーは、そのマイクを使用するアクセス許可をアプリに付与するように求められます。
 
-1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** + **[Intune]** の順に選択します。
-3. **[Mobile Apps]** を選択します。 **[管理]** の下で、**[アプリ構成ポリシー]** を選択してから **[追加]** を選択します。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. **[Mobile Apps]** を選択します。
+3. **[管理]** の下で、**[アプリ構成ポリシー]** を選択してから **[追加]** を選択します。
 4. 次の詳細を設定します。
     - **名前**。 Azure Portal に表示されるプロファイルの名前。
     - **説明**。 Azure Portal に表示されるプロファイルの説明。
-    - **プラットフォーム**。 **[Android]** を選択します。
-    - **デバイス登録の種類**。 **[管理対象デバイス]** があらかじめ選択されています。
+    - **デバイス登録の種類**。 **[管理対象デバイス]** を選択します。
+    - **プラットフォーム**。 **[Android for Work]** を選択します。
 5. **[関連アプリ]** を選択し、構成ポリシーを定義するアプリを選択します。 承認して Intune に同期した Android for Work アプリの一覧から選択します。
 6. **[アクセス許可]** を選択し、**[追加]** を選択します。
 7. 使用できるアプリのアクセス許可の一覧から選択し、**[OK]** を選択します。

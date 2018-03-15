@@ -1,11 +1,11 @@
 ---
-title: "Intune で macOS デバイスを登録する"
-titlesuffix: Azure portal
-description: "Intune で macOS デバイスを登録する方法について説明します。\""
+title: "macOS デバイスの登録をセットアップする"
+titlesuffix: Microsoft Intune
+description: "Intune で macOS デバイスの登録をセットアップする方法について説明します。"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-nmanager: dougeby
+manager: dougeby
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f896ebd51f989c0e441043d320247946cdb8997b
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 77a1551321079765f00f0e35d57211ae4c99e5a6
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="enroll-macos-devices-in-intune"></a>Intune で macOS デバイスを登録する
+# <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Intune で macOS デバイスの登録をセットアップする
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -37,6 +37,13 @@ macOS デバイスの登録を設定する前に、以下の前提条件を満�
 - [ポータル サイト アプリを構成する](company-portal-app.md)
 - [Office 365 ポータル](http://go.microsoft.com/fwlink/p/?LinkId=698854)でユーザー ライセンスを割り当てる
 - [Apple MDM プッシュ証明書を取得する](apple-mdm-push-certificate-get.md)
+
+## <a name="user-owned-ios-devices-byod"></a>ユーザー所有の iOS デバイス (BYOD)
+
+Intune 管理のために、ユーザーに個人用デバイスを登録させることができます。これは "Bring Your Own Device" (BYOD) と呼ばれます。 前提条件を満たし、ユーザーのライセンスを割り当てたら、アプリ ストアから macOS ポータル サイト アプリをダウンロードして、アプリの登録手順に従います。
+
+## <a name="company-owned-ios-devices"></a>会社所有の iOS デバイス
+Intune は、ユーザーのデバイスを購入する組織のため、[デバイス登録マネージャー](device-enrollment-manager-enroll.md) アカウントを使用する会社所有の macOS デバイスの登録をサポートします。
 
 ## <a name="set-up-macos-enrollment"></a>macOS の登録を設定する
 

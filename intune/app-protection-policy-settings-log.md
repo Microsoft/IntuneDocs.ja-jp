@@ -1,7 +1,7 @@
 ---
-title: "アプリ保護ポリシー ログ"
-titlesuffix: Azure portal
-description: "このトピックでは、アプリ ログに保存されるアプリ保護ポリシー設定のレコードについて説明します。"
+title: "アプリ保護ポリシー ログのレビュー"
+titlesuffix: Microsoft Intune
+description: "アプリ保護ログで確認できる設定について説明します。"
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,15 +15,15 @@ ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76b7771f974fb1c9a5de8afe52ef79eaa0ed0c2a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f91328561f0dd4dc669844c0398a89f1abf15bf8
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="review-client-app-protection-logs"></a>クライアント アプリの保護ログのレビュー
 
-モバイル クライアント上のアプリケーションの Intune 診断モードを有効にすることで、ログにアクセスできます。 次の表に、ログに記録される設定の名前と説明を示します。
+アプリ保護ログで確認できる設定について説明します。 モバイル クライアント上のアプリケーションの Intune 診断モードを有効にして、ログにアクセスします。 次の表に、ログに記録される設定の名前と説明を示します。
 
 ## <a name="app-protection-policy-settings"></a>アプリ保護ポリシー設定
 
