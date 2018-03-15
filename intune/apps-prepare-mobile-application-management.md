@@ -1,10 +1,11 @@
 ---
-title: "Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める"
-description: "このトピックの情報は、カスタム基幹業務アプリでモバイル アプリ管理ポリシーを使用できるようにするために、アプリ ラッピング ツールとアプリ SDK を使用するタイミングを判断するときに役立ちます。"
+title: "アプリ保護ポリシーを利用するために基幹業務アプリで準備を行う"
+titlesuffix: Microsoft Intune
+description: "アプリ ラッピング ツールとアプリ SDK を使用し、Microsoft Intune でアプリ保護ポリシーを使用するために、カスタム基幹業務アプリを有効にします。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +15,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b2ab30f9bf061e7ea4a34372e7c99e059c6e30f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 76330c926ecac9ae8b071837465d800f48f925fb
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>アプリ保護ポリシーを利用するために基幹業務アプリで準備を行う
 
@@ -102,6 +103,7 @@ SDK の詳細については、「[概要](app-sdk.md)」を参照してくだ�
 |対象となるアプリケーションの構成 |○||
 |[マルチ ID アプリのサポート]|○||
 |カスタマイズ可能なスタイル |○|||
+
 ## <a name="next-steps"></a>次の手順
 
 アプリ保護ポリシーと Intune の詳細については、次のトピックをご覧ください。

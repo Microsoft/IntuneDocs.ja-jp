@@ -1,12 +1,12 @@
 ---
 title: "アプリ情報と割り当てを監視する方法"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "ユーザーまたはデバイスにアプリを割り当てた後は、この情報を参考にして、その状態を監視できます。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/21/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85ecc9729d7c03cb760c14bda0ca4d6321af548e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6bd915093ae45ff0fc3d51a2d7279493bc783d43
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune でアプリ情報と割り当てを監視する方法
 
@@ -27,9 +27,9 @@ ms.lasthandoff: 01/25/2018
 
 Intune には、管理しているアプリのプロパティと、割り当ての状態を監視する方法が複数あります。
 
-1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** + **[Intune]** の順に選択します。
-3. **[モバイル アプリ]** ワークロードで、**[管理]** グループの **[アプリ]** を選択します。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. **[Mobile Apps]** を選択してから、**[管理]** グループの **[アプリ]** を選択します。
 5. アプリ ブレードの一覧で、アプリを選択します。 [<*アプリ名*> **デバイスのインストール状態]** ブレードが表示されます。
 
 ## <a name="app-overview-blade"></a>アプリ概要ブレード

@@ -1,30 +1,28 @@
 ---
-title: "MDM ライフサイクルの概要"
+title: "Microsoft Intune MDM ライフサイクルの概要"
 description: "登録、構成から始まり最終的に使用中止となるデバイスのライフサイクル管理において Intune がどのように役立つか紹介します。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/07/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
-ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 46297080dcb332734b1e175a62e17c6c5666b469
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8755faef07e6ddae2177a2fc2453e15f1ea0fefe
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="overview-of-the-mobile-device-management-mdm-lifecycle"></a>モバイル デバイス管理 (MDM) ライフサイクルの概要
+# <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Microsoft Intune モバイル デバイス管理 (MDM) ライフサイクルの概要
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-管理するすべてのデバイスには、*ライフサイクル*と呼ばれるものがあります。 Intune は、登録から始まり、構成と保護を経て、不要になったデバイスの使用中止まで、ライフサイクルの管理に役立ちます。
+管理するすべてのデバイスには、*ライフサイクル*があります。 Intune は、登録から始まり、構成と保護を経て、不要になったデバイスの使用中止まで、ライフサイクルの管理に役立ちます。
 
 ![デバイスのライフサイクル](./media/device-lifecycle.png "Intune デバイスのライフサイクル")
 
@@ -39,7 +37,7 @@ ms.lasthandoff: 01/25/2018
 - [**Windows PC の管理ポリシー (Intune クライアント ソフトウェアを使用)**](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client)。 Windows PC を Intune に登録するとほとんどのデバイス管理機能を利用できますが、Intune では引き続き Intune クライアント ソフトウェアによる Windows PC の管理をサポートします。 PC で実行できるタスクの一部について情報が必要な場合は、ここから始めてください。
 
 ## <a name="protect"></a>保護
-最新の IT 世界で、不正アクセスからデバイスを保護することは、実施しなければならない最も重要なタスクの 1 つです。 デバイス ライフサイクルの**構成**ステップの項目に加えて、Intune では管理対象のデバイスを不正なアクセスまたは悪意のある攻撃から保護するのに役立つ次の機能も提供されます。
+最新の IT の世界では、不正アクセスからデバイスを保護することは、実施しなければならない最も重要なタスクの 1 つです。 デバイス ライフサイクルの**構成**ステップの項目に加えて、Intune では管理対象のデバイスを不正なアクセスまたは悪意のある攻撃から保護するのに役立つ次の機能も提供されます。
 - [**多要素認証**](/intune-classic/deploy-use/protect-your-devices-with-microsoft-intune)。 追加の認証層をユーザー サインインに追加すると、デバイスの安全性をさらに強化するのに役立ちます。 多くのデバイスで、ユーザーがアクセスできるようになるまでに電話またはテキスト メッセージなどの第 2 レベルの認証が必要となる多要素認証がサポートされています。
 - [**Windows Hello for Business の設定**](windows-hello.md) ([クラシック ポータル](/intune-classic/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune))。 Windows Hello for Business は、ユーザーが*ジェスチャ* (フィンガープリントや Windows Hello など) を使用して、パスワードなしでサインインできるようにするサインインの代替方法です。
 - [**Windows PC を保護するためのポリシー (Intune クライアント ソフトウェアを使用)**](/intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune)。 Intune クライアント ソフトウェアを使用して Windows PC を管理する場合は、更新する PC に対する Endpoint Protection、ソフトウェア更新プログラム、および Windows ファイアウォールの設定を制御するためのポリシーを利用できます。

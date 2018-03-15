@@ -1,32 +1,32 @@
 ---
-title: "Windows Hello for Business を使用する方法"
-titleSuffix: Azure portal
+title: "Windows Hello for Business と Microsoft Intune を統合する方法"
+titleSuffix: 
 description: "管理されたデバイスで Windows Hello for Business の使用を制御するポリシーを作成する方法について説明します。\""
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/12/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 465de83c5bd15cfab67a4307000c0aa9cbfb1730
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 46bb82fd49fa58e87c22c8bf0abb57e1587b8b40
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-windows-hello-for-business"></a>Windows Hello for Business を使用する
+# <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Windows Hello for Business と Microsoft Intune の統合
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Windows Hello for Business （旧称 Microsoft Passport for Work） と Microsoft Intune を統合できます。Windows Hello for Business は Active Directory や Azure Active Directory アカウントを使った代替サインイン方法であり、パスワード、スマート カード、または仮想スマート カードに置き換わるものです。
+Windows Hello for Business (旧称 Microsoft passport for Work) と Microsoft Intune を統合することができます。
 
-Hello for Business を使用すると、パスワードの代わりに*ユーザー ジェスチャ*を使用してサインインできます。 ユーザー ジェスチャには、単純な暗証番号 (PIN)、Windows Hello などの生体認証、または指紋リーダーなどの外部のデバイスがあります。
+ Hello for Business は、Active Directory や Azure Active Directory アカウントを使った代替サインイン方法であり、パスワード、スマート カード、または仮想スマート カードに取って代わります。 これを使用すると、パスワードの代わりに*ユーザー ジェスチャ*を使用してサインインできます。 ユーザー ジェスチャには、単純な暗証番号 (PIN)、Windows Hello などの生体認証、または指紋リーダーなどの外部のデバイスがあります。
 
 Intune と Hello for Business の統合には 2 通りの方法があります。
 
@@ -50,17 +50,17 @@ Intune と Hello for Business の統合には 2 通りの方法があります�
 
 1.  Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 
-2.  [Intune] ブレードで、**[デバイスの登録]** を選択してから、**[Windows の登録]** > **[Windows Hello for Business]** の順に選択します。
+2.  [Intune] ページで、**[デバイスの登録]** を選択してから、**[Windows の登録]** > **[Windows Hello for Business]** の順に選択します。
 
-3.  開いたブレードで、**[既定]** 設定を選択します。
+3.  開いたページで、**[既定]** 設定を選択します。
 
-4.  **[すべてのユーザー]** ブレードで、**[プロパティ]** をクリックし、Windows Hello for Business 設定の**名前**と省略可能な**説明**を入力します。
+4.  **[すべてのユーザー]** ページで、**[プロパティ]** をクリックし、Windows Hello for Business 設定の**名前**と省略可能な**説明**を入力します。
 
-5. **[すべてのユーザー]** ブレードで、**[設定]** をクリックし、**[Windows Hello for Business の構成]** で以下を選択します。
+5. **[すべてのユーザー]** ページで、**[設定]** をクリックし、**[Windows Hello for Business の構成]** で以下を選択します。
 
     - **Disabled**。 Windows Hello for Business を使用しない場合は、この設定を選択します。 画面上の他のすべての設定が使用できなくなります。
     - **Enabled**。 Windows Hello for Business の設定を構成する場合は、この設定を選択します。
-    - **[Not configured]** (未構成)。 Windows Hello for Business の設定の制御に Intune を使用しない場合は、この設定を選択します。 Windows 10 デバイス上の既存の Windows Hello for Business の設定は変更されません。 ブレード上の他のすべての設定が使用できなくなります。
+    - **[Not configured]** (未構成)。 Windows Hello for Business の設定の制御に Intune を使用しない場合は、この設定を選択します。 Windows 10 デバイス上の既存の Windows Hello for Business の設定は変更されません。 ページ上の他のすべての設定が使用できなくなります。
 
 6.  前の手順で **[有効]** を選択した場合は、すべての登録済みの Windows 10 デバイスと Windows 10 モバイル デバイスに適用される必須設定を構成します。
 

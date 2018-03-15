@@ -1,12 +1,12 @@
 ---
-title: "ヘルプ デスクのトラブルシューティング ポータル |Microsoft Docs"
-titlesuffix: Azure portal
-description: "ヘルプ デスクのスタッフが、トラブルシューティング ポータルを使用して、ユーザーの技術的な問題を解決する"
+title: "ヘルプ デスクのトラブルシューティング ポータル"
+titlesuffix: Microsoft Intune
+description: "ヘルプ デスクのスタッフが、トラブルシューティング ポータルを使用して、ユーザーの技術的な問題を解決します。"
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/26/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 2da1a37af1ab0b0b1566738bf1ecdfe990dd760d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7997bf0494ff52ad25b09301173b65f2478dca37
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-the-troubleshooting-portal-to-help-users"></a>トラブルシューティング ポータルを使用してユーザーをサポートする
+# <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>トラブルシューティング ポータルを使用して社内のユーザーをサポートする
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -63,7 +63,7 @@ ms.lasthandoff: 01/25/2018
 | 1.   | アカウントの状態  | 現在の Intune テナントの状態が**アクティブ**または**非アクティブ**として表示されます。       |
 | 2.   | ユーザー選択  | 現在選択されているユーザーの名前。 **[ユーザーの変更]** をクリックして、新しいユーザーを選択します。       |
 | 3.   | ユーザーの状態  | ユーザーの Intune ライセンスの状態、デバイスの数、各デバイスのコンプライアンス状態、アプリの数、およびアプリのコンプライアンス状態が表示されます。       |
-| 4.   | ユーザー情報  | リストを使用して、ブレードで確認する詳細を選択します。 <br>以下を選択できます。 <ul><li>モバイル アプリ<li>アプリ保護ポリシー<li>Compliance ポリシー<li> 構成ポリシー</ul>      |
+| 4.   | ユーザー情報  | リストを使用して、ブレードで確認する詳細を選択します。 <br>以下を選択できます。 <ul><li>モバイル アプリ<li>アプリ保護ポリシー<li>Compliance ポリシー<li> 構成ポリシー<li> 登録制限</ul>      |
 | 5.   | グループのメンバーシップ  | 内容は省略       |
 
 ## <a name="mobile-apps-reference"></a>モバイル アプリ リファレンス

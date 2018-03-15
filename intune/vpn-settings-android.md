@@ -1,36 +1,34 @@
 ---
-title: "Android デバイス向けの Intune VPN 設定"
-titlesuffix: Azure portal
-description: "Android デバイスでの VPN 接続の構成に使用できる Intune 設定について説明します"
+title: "Android を実行するデバイス用の Microsoft Intune の VPN 設定"
+titlesuffix: 
+description: "Android を実行するデバイスでの VPN 接続の構成に使用できる Intune 設定について説明します"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 16c056ca-320e-4107-ad03-a0cf96c28885
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6ec20a5c808df1fa30a4357f973c9544dc6664b5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3fe05b5fdd87e92f5acc35c0a750287f8fd01b92
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="vpn-settings-for-android-devices-in-microsoft-intune"></a>Microsoft Intune での Android デバイス向けの VPN 設定
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-android"></a>Android を実行するデバイス用の Microsoft Intune で VPN 設定を構成する 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune 管理者は、次のプラットフォーム向けの VPN 設定を構成できます。
+次のプラットフォーム用に VPN 設定を構成できます。
 
 - [Android](#android-vpn-settings)
 - [Android for Work](#android-for-work-vpn-settings)
 
-選択する設定によっては、以下の一覧に記載されている値の一部を構成できない場合もあります。
+選択した設定によっては、次の一部の値を構成できない場合があります。
 
 ## <a name="android-vpn-settings"></a>Android の VPN 設定
 **[接続名]** - この接続の名前を入力します。 エンド ユーザーがデバイスで利用可能な VPN 接続の一覧を参照するときに、この名前が表示されます。
@@ -46,7 +44,7 @@ Intune 管理者は、次のプラットフォーム向けの VPN 設定を構�
     - **Pulse Secure**
     - **Citrix**
 
-- **[指紋]** (Check Point Capsule VPN のみ) - 信頼できる VPN サーバーであることを確認するために使用される文字列を指定します (たとえば、"Contoso 指紋コード")。 指紋をクライアントに送信することにより、クライアントは、接続するときに同じ指紋を示すすべてのサーバーを信頼します。 デバイスにまだ指紋がない場合、接続先の VPN サーバーを信頼するように促すメッセージと共にその指紋が表示されます (ユーザーは手動で指紋を検証し、接続先を信頼することを選択する必要があります)。
+- **[指紋]** (Check Point Capsule VPN のみ) - 信頼できる VPN サーバーであることを確認するために使用される文字列 (たとえば、"Contoso 指紋コード") を指定します。 指紋をクライアントに送信することにより、クライアントは、接続するときに同じ指紋を示すすべてのサーバーを信頼します。 デバイスにまだ指紋がない場合、接続先の VPN サーバーを信頼するように促すメッセージと共にその指紋が表示されます (ユーザーは手動で指紋を検証し、接続先を信頼することを選択する必要があります)。
 - **[Citrix VPN 属性に対してキーと値を入力します]** (Citrix のみ) - VPN 接続のプロパティを構成するために、Citrix から提供されたキーと値のペアを入力します。
 
 ## <a name="android-for-work-vpn-settings"></a>Android for Work の VPN 設定

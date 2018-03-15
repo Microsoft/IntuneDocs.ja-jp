@@ -1,10 +1,10 @@
 ---
-title: "グループの概要"
-titleSuffix: Azure portal
+title: "Microsoft Intune でグループを作成する"
+titleSuffix: 
 description: "ユーザーをグループにまとめ、ユーザーがアクセスできるポリシーやアプリの管理を簡単にします。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63a35c04a14ebd79ac55f1dab2680d70008ee0ed
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e052f7c8d5742859d009816473fe97a98c499b17
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="get-started-with-groups"></a>グループの概要
+# <a name="create-a-group-to-manage-your-users-and-data-access"></a>ユーザーとデータ アクセスを管理するためのグループを作成する
 
-グループは、ユーザーを管理し、会社のリソースに社員がアクセスする行為を制御するために使用されます。 リソースはディレクトリに含まれますが、SaaS アプリや SharePoint サイトなど、外部リソースの場合もあります。
+グループは、ユーザーを管理し、会社のリソースへの従業員のアクセスを制御するために使用されます。 リソースはディレクトリに含まれますが、SaaS アプリや SharePoint サイトなど、外部リソースの場合もあります。
 
 Microsoft Intune は Azure Active Directory (Azure AD) を利用し、会社のリソースへのアクセスを管理します。 このアクセスは、ディレクトリのロールを使用して制御されます。 次に Intune でモバイル デバイスに関してこのアクセスが管理されます。該当グループのメンバーであれば、リソースへのアクセスが許可されます。
 

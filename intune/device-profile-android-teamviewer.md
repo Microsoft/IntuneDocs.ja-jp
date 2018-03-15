@@ -1,12 +1,11 @@
 ---
-title: "TeamViewer を使用してデバイスをリモート管理する方法"
-titlesuffix: Azure portal
-description: "TeamViewer を使用してデバイスをリモート管理する方法について説明します。"
+title: "Microsoft Intune - Azure でデバイスをリモートで管理する | Microsoft Docs"
+description: "TeamViewer を使用するために必要なロールの表示、TeamViewer コネクタのインストール方法、Azure Portal で Microsoft Intune を使用してデバイスをリモートで管理する方法の段階的なガイダンス"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 2/14/2018
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,65 +13,52 @@ ms.technology:
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0219993e0322be06dbf9b26707789332039001f1
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 64f6dd6bf787a6f590655f03ac8f04312836e0b5
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="provide-remote-assistance-for-intune-managed-devices"></a>Intune で管理されたデバイスにリモート アシスタンスを提供する
+# <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>TeamViewer を使用して、Intune デバイスをリモートで管理する
 
-Intune では、別売りの [TeamViewer](https://www.teamviewer.com) ソフトウェアを使って、管理対象のデバイスのユーザーにリモート アシスタンスを提供できます。 このトピックの情報を活用して作業を開始してください。
+Intune で管理されているデバイスは、[TeamViewer](https://www.teamviewer.com) を使用してリモートで管理できます。 TeamViewer は、個別に購入するサード パーティ プログラムです。 このトピックでは、Intune 内で TeamViewer を構成して、リモートでデバイスを管理する方法を示します。 
 
-## <a name="before-you-start"></a>開始する前に
+## <a name="prerequisites"></a>必要条件
 
-### <a name="supported-devices"></a>サポートされるデバイス
+- サポートされているデバイスを使用します。 Intune で管理された Android デバイスと Windows デバイスでは、リモート管理がサポートされます。 TeamViewer で Windows Holographic (HoloLens)、Windows Team (Surface Hub)、または Windows 10 S がサポートされない場合があります。サポートについては、[TeamViewer](https://www.teamviewer.com) で更新情報を確認してください。
 
-Intune で管理された Android デバイスと Windows デバイスでは、リモート管理がサポートされます。
+- Azure Portal 内の Intune 管理者には、次の [Intune ロール](role-based-access-control.md)が必要です。  
 
->[!NOTE]
->Windows Holographic (HoloLens)、Windows Team (Surface Hub)、Windows 10 S は、TeamViewer ソフトウェアではサポートされません。
+    - **リモート アシスタンスの更新**: 管理者に TeamViewer コネクタの設定の変更を許可します。
+    - **リモート アシスタンスの要求**: 管理者にすべてのユーザーに対して新しいリモート アシスタンス セッションを開始することを許可します。 このロールを持つユーザーは、スコープ内のどの Intune ロールにも制限されません。 また、スコープ内で Intune ロールが割り当てられたユーザーまたはデバイス グループも、リモート アシスタンスを要求することができます。 
 
+- サインイン資格情報を持つ [TeamViewer](https://www.teamviewer.com) アカウント
 
+TeamViewer を使用すると、Intune コネクタ用 TeamViewer での TeamViewer セッションの作成、Active Directory データの読み取り、TeamViewer アカウント アクセス トークンの保存を許可することになります。
 
-### <a name="required-permissions"></a>必要なアクセス許可
+## <a name="configure-the-teamviewer-connector"></a>TeamViewer コネクタの構成
 
-Azure Portal のユーザーが [Intune ロール](https://docs.microsoft.com/intune-azure/access-control/role-based-access-control)として次のアクセス許可を割り当てられていることを確認します。
-- 管理者が TeamViewer Connector の設定を変更できるようにするには、**リモート アシスタンスの更新**のアクセス許可を付与します。
-- 管理者が新しいリモート アシスタンス要求を開始できるようにするには、**リモート アシスタンスの要求**のアクセス許可を付与します。 **リモート アシスタンスの要求**のアクセス許可を持つユーザーは、どのユーザーに対してもセッションの開始を要求できます。 Intune ロールの割り当てスコープによって制限されることはありません。 Intune のロールの割り当て範囲によって、リモート アシスタンス要求を開始できるデバイスやユーザーが制限されることはありません。
+デバイスにリモート アシスタンスを提供するには、以下の手順で Intune TeamViewer コネクタを構成します。
 
->[!NOTE]
->TeamViewer を有効にすると、Intune コネクタ用 TeamViewer での TeamViewer セッションの作成、Active Directory データの読み取り、TeamViewer アカウント アクセス トークンの保存を許可することになります。
+1. [Azure Portal](https://portal.azure.com) で、**[すべてのサービス]** を選択し、**Microsoft Intune** を検索します。
+2. **Microsoft Intune** で、**[デバイス]**、**[TeamViewer Connector]** の順に選択します。
+3. **[接続]** を選択し、使用許諾契約書に同意します。
+4. **[TeamViewer にログインして承認する]** を選択します。
+5. TeamViewer サイトの Web ページが開きます。 TeamViewer ライセンスの資格情報を入力して、**サインイン**します。
 
-### <a name="configure-the-intune-teamviewer-connector"></a>Intune TeamViewer Connector の構成
+## <a name="remotely-administer-a-device"></a>デバイスをリモートで管理する
 
-デバイスにリモート アシスタンスを提供する前に、以下の手順で Intune TeamViewer コネクタを構成する必要があります。
+コネクタを構成したら、デバイスをリモートで管理する準備ができました。 次の手順を使用します。 
 
+1. [Azure Portal](https://portal.azure.com) で、**[すべてのサービス]** を選択し、**Microsoft Intune** を検索します。
+2. **Microsoft Intune** で、**[デバイス]**、**[すべてのデバイス]** の順に選択します。
+3. リストから、リモートで管理するデバイスを選択します。 デバイスのプロパティで、**[新しいリモート アシスタンス セッション]** を選択します。
+4. Intune を TeamViewer サービスに接続すると、デバイスの情報が表示されます。 **接続**してリモート セッションを開始します。
 
-1. Azure Portal にサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイス]** を選択します。
-4. **[デバイスとグループ]** ブレードで、**[セットアップ]** > **[TeamViewer Connector]** の順に選択します。
-5. **[TeamViewer Connector]** ブレードで、**[有効化]** をクリックし、TeamViewer サービス使用許諾契約書を表示して承認します。
-6. **[TeamViewer にログインして承認する]** を選択します。
-7. TeamViewer サイトの Web ページが開きます。 TeamViewer ライセンスの資格情報を入力し、**[サインイン]** をクリックします。
+![TeamViewer を使用して Android デバイスをリモート管理する - 例](./media/android-teamviewer.png)
 
+リモート セッションを開始すると、エンド ユーザーのデバイスのポータル サイト アプリのアイコンに通知フラグが表示されます。 通知は、アプリを開いたときにも表示されます。 その後、ユーザーはリモート アシスタンス要求を受け入れることができます。
 
-## <a name="how-to-remotely-administer-a-device"></a>デバイスのリモート管理方法
+TeamViewer では、デバイスの制御など、デバイスでさまざまな操作を完了できます。 実行できる操作の詳細については、[TeamViewer ガイダンス](https://www.teamviewer.com/support/documents/)を参照してください。
 
-1. Azure Portal にサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイス]** を選択します。
-4. **[デバイス]** ブレードで、**[管理]** > **[すべてのデバイス]** の順に選択します。
-5. リモート管理するデバイスを選択し、[デバイスのプロパティ] ブレードで **[詳細]** > **[新しいリモート アシスタンス セッション]** の順に選択します。
-6. Intune を TeamViewer サービスに接続すると、デバイスの情報が表示されます。 **[接続]** を選択して、リモート セッションを開始します。
-
-![Android の TeamViewer の例](./media/android-teamviewer.png)
-
-TeamViewer ウィンドウで、さまざまなデバイスのリモート操作 (デバイスのリモート制御など) を行うことができます。 実行できる操作の詳細については、[TeamViewer のドキュメント](https://www.teamviewer.com/support/documents/)をご覧ください。
-
-設定が完了したら、TeamViewer ウィンドウを閉じます。
-
-## <a name="next-steps"></a>次の手順
-
-デバイス上のポータル サイト アプリのアイコンに通知フラグが表示され、エンド ユーザーはアプリを開くと通知を確認できます。 その後、リモート アシスタンス要求を受け入れることができます。
+完了したら、TeamViewer ウィンドウを閉じます。

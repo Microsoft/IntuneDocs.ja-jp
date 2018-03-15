@@ -1,12 +1,12 @@
 ---
 title: "Android アプリ保護ポリシー設定"
-titlesuffix: Azure portal
-description: "このトピックでは、Android デバイスのアプリ保護ポリシーの設定について説明します。\""
+titlesuffix: Microsoft Intune
+description: "このトピックでは、Android デバイスのアプリ保護ポリシーの設定について説明します。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/15/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10c09b4669371fbb61ad4d30f44fcaf5e2db3482
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 330826307e4f3db24532908d42da77a1a857a681
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="android-app-protection-policy-settings"></a>Android アプリ保護ポリシー設定
-このトピックで説明するポリシーの設定は、Azure Portal の **[設定]** ブレードでアプリ保護ポリシー用に[構成](app-protection-policies.md)することができます。
+このトピックでは、Android デバイスのアプリ保護ポリシーの設定について説明します。 説明されているポリシーの設定は、Azure Portal の **[設定]** ブレードでアプリ保護ポリシー用に[構成](app-protection-policies.md)することができます。
 ポリシー設定には、データ再配置設定とアクセス設定の 2 つのカテゴリがあります。 このトピックの "*ポリシーで管理されているアプリ*" という用語は、アプリ保護ポリシーで構成されるアプリを示します。
 
 ##  <a name="data-relocation-settings"></a>データ再配置設定
@@ -30,7 +30,7 @@ ms.lasthandoff: 02/19/2018
 | Setting | 使用方法 | 既定値 |
 |------|------|------|
 | **[Android でのバックアップを禁止する]** | **[はい]** を選択すると、このアプリで職場や学校のデータを [Android バックアップ サービス](https://developer.android.com/google/backup/index.html)にバックアップできなくなります。**[いいえ]** を選択すると、このアプリで職場や学校のデータをバックアップできるようになります。| はい |
-| **[アプリで他のアプリへのデータ転送を許可する]** | このアプリからデータを受け取ることができるアプリを指定します。 <ul><li> **ポリシーで管理されているアプリ**: 他のポリシーで管理されているアプリへの転送のみを許可します。</li> <li>**すべてのアプリ**: すべてのアプリへの転送を許可します。 </li> <li>**なし**: 他のポリシーで管理されているアプリを含め、アプリへのデータ転送を許可しません。</li></ul> <p>Intune でデータ転送先として許可される可能性のある除外対象アプリとサービスがいくつかあります。 アプリとサービスの完全な一覧については、「[データ転送の除外対象](#Data-transfer-exemptions)」を参照してください。<p>**注:** Intune は現在のところ、Android Instant Apps 機能に対応していません。 Intune はこのアプリとのデータ接続をすべてブロックします。  [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html) の詳細については、Android 開発者向けドキュメントをご覧ください。</p>| すべてのアプリ |
+| **[アプリで他のアプリへのデータ転送を許可する]** | このアプリからデータを受け取ることができるアプリを指定します。 <ul><li> **ポリシーで管理されているアプリ**: 他のポリシーで管理されているアプリへの転送のみを許可します。</li> <li>**すべてのアプリ**: すべてのアプリへの転送を許可します。 </li> <li>**なし**: 他のポリシーで管理されているアプリを含め、アプリへのデータ転送を許可しません。</li></ul> <p>Intune でデータ転送先として既定で許可される可能性のある除外対象アプリとサービスがいくつかあります。 さらに、Intune アプリ保護ポリシーをサポートしていないアプリに転送されるデータを許可する必要がある場合は、独自の例外を作成できます。 詳細については、「[データ転送の除外対象](#Data-transfer-exemptions)」を参照してください。<p>**注:** Intune は現在のところ、Android Instant Apps 機能に対応していません。 Intune はこのアプリとのデータ接続をすべてブロックします。  [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html) の詳細については、Android 開発者向けドキュメントをご覧ください。</p>| すべてのアプリ |
 | **[アプリで他のアプリからのデータの受信を許可する]** | このアプリにデータを転送できるアプリを以下のように指定します。 <ul><li>**ポリシーで管理されているアプリ**: 他のポリシーで管理されているアプリからの転送のみを許可します。</li><li>**すべてのアプリ**: すべてのアプリからのデータ転送を許可します。</li><li>**なし**: 他のポリシーで管理されているアプリを含め、アプリからのデータ転送を許可しません。 </li></ul> <p>Intune でデータ転送元として許可される可能性のある除外対象アプリとサービスがいくつかあります。 アプリとサービスの完全な一覧については、「[データ転送の除外対象](#Data-transfer-exemptions)」を参照してください。 | すべてのアプリ |
 | **[名前を付けて保存] を禁止する** | このアプリで [名前を付けて保存] オプションの使用を無効にするには、**[はい]** を選択します。 [名前を付けて保存] の使用を許可する場合は、**[いいえ]** を選択します。 <p><br>**会社のデータを保存できるストレージ サービスの選択** <br>ユーザーは、選択したサービス (OneDrive for Busines、SharePoint、ローカル ストレージ) に保存できます。 他のすべてのサービスはブロックされます。</p> | [いいえ] <br><br> 0 件選択済み |
 | **[切り取り、コピー、および他のアプリでの貼り付けを制限する]** | このアプリで切り取り、コピー、および貼り付け操作をいつ使用できるようにするかを指定します。 次の中から選択します。 <ul><li>**ブロック**: このアプリと他のアプリの間で、切り取り、コピー、および貼り付け操作を許可しません。</li><li>**ポリシーで管理されているアプリ**: このアプリと他のポリシーで管理されているアプリ間で、切り取り、コピー、および貼り付け操作を許可します。</li><li>**貼り付けを使用する、ポリシーで管理されているアプリ**: このアプリと他のポリシーで管理されているアプリ間で切り取りまたはコピーを許可します。 任意のアプリからこのアプリへのデータの貼り付けを許可します。</li><li>**すべてのアプリ**: このアプリに対する切り取り、コピー、貼り付けに制限はありません。 | すべてのアプリ |
@@ -73,7 +73,7 @@ ms.lasthandoff: 02/19/2018
   | com.android.providers.media | Android のメディア コンテンツ プロバイダー | メディア コンテンツ プロバイダーは、着信音の選択アクションでのみ使用できます。 |
   | com.google.android.gms、com.google.android.gsf | Google Play Services パッケージ | これらのパッケージは、プッシュ通知など、Google Cloud Messaging のアクションで使用できます。 |
 
-
+詳細については、「[Data transfer policy exceptions for apps](app-protection-policies-exception.md)」(アプリのデータ転送ポリシーの例外) を参照してください。 
 
 ##  <a name="access-settings"></a>アクセス設定
 

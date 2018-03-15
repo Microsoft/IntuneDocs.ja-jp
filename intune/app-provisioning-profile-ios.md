@@ -1,12 +1,12 @@
 ---
-title: "アプリのプロビジョニング プロファイル"
-titlesuffix: Azure portal
+title: "Microsoft Intune での iOS アプリ プロビジョニング プロファイル"
+titlesuffix: 
 description: "Intune には、有効期限が近づいているアプリを持つデバイスに新しいプロビジョニング プロファイルを事前に割り当てるツールが用意されています。\""
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/03/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6aa1fe56726f320d971f35cc971253707f968442
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 7637dcb3aba4f46a3e97c8de47d974b46af27b47
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-ios-mobile-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>iOS モバイル プロビジョニング プロファイルを使用して、アプリが期限切れにならないようにする
+# <a name="use-ios-mobile-provisioning-profiles-in-intune-to-prevent-your-apps-from-expiring"></a>Intune で iOS モバイル プロビジョニング プロファイルを使用して、アプリが期限切れにならないようにする
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -39,12 +39,12 @@ iPhone および iPad に割り当てられた Apple iOS 基幹業務アプリ�
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>iOS モバイル アプリ プロビジョニング プロファイルを作成する方法
 
-1. Azure Portal にサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[モバイル アプリ]** を選びます。
-1.  **[Mobile Apps]** ワークロードで、**[管理]**、**[iOS プロビジョニング プロファイル]** の順に選択します。
-2.  プロファイルの一覧ブレードで、**[プロファイルの作成]** を選択します。
-3. **[プロファイルの作成]** ブレードで、次の値を構成します。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. **[Intune]** ウィンドウで、**[モバイル アプリ]** を選びます。
+1.  **[モバイル アプリ]** ワークロードで、**[管理]** > **[iOS アプリ プロビジョニング プロファイル]** の順に選択します。
+2.  プロファイルの一覧ウィンドウで、**[プロファイルの作成]** を選択します。
+3. **[プロファイルの作成]** ウィンドウで、次の値を構成します。
     - **名前** - このモバイル プロビジョニング プロファイルの名前を指定します。
     - **説明** - 必要に応じて、ポリシーの説明を指定します。
     - **プロファイル ファイルのアップロード** - **[インポート]** を選択し、Apple Developer Web サイトからダウンロードした Apple モバイル構成プロファイル ファイル (拡張子 **.mobileprovision**) を選択します。

@@ -1,25 +1,25 @@
 ---
-title: "iOS 用 Intune のデバイス シングル サインオンを構成する"
-titlesuffix: Azure portal
-description: "iOS デバイスのシングル サインオン用に Intune を構成します。"
+title: "iOS 用 Microsoft Intune のデバイス シングル サインオンを構成する"
+titlesuffix: 
+description: "iOS 用 Microsoft Intune のデバイス シングル サインオンを構成する方法について説明します。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/7/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 07ac355232c1e4ac290c87191d3764e3df45327e
-ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
+ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="configure-intune-for-ios-device-single-sign-on"></a>iOS 用 Intune のデバイス シングル サインオンを構成する
+# <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>iOS 用 Microsoft Intune のデバイス シングル サインオンを構成する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -35,16 +35,16 @@ iOS デバイスのシングル サインオンを利用するには、次の条
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
-2. **[デバイス構成]** ブレードで、**[プロファイル]** を選びます。
-3. プロファイル ブレードで **[プロファイルの作成]** を選び、名前と説明を指定して、以下の設定を構成します。
+3. **[Intune]** ページで、**[デバイス構成]** を選択します。
+2. **[デバイス構成]** ページで、**[プロファイル]** を選択します。
+3. プロファイル ページで **[プロファイルの作成]** を選択し、名前と説明を指定して、以下の設定を構成します。
    - **[プラットフォーム]**: **[iOS]** を選びます。 
    - **[プロファイルの種類]**: **[デバイス機能]** を選びます。
-4. **[デバイス機能]** ブレードで、**[シングル サインオン]** を選びます。
+4. **[デバイス機能]** ページで、**[シングル サインオン]** を選択します。
 
-   ![[シングル サインオン] ブレード](./media/sso-blade.png)
+   ![[シングル サインオン] ページ](./media/sso-blade.png)
 
-2. 次の表にまとめた情報を参考にして、**[シングル サインオン]** ブレードのフィールドを設定します。 詳しくは、表の後の説明をご覧ください。
+2. 次の表にまとめた情報を参考にして、**[シングル サインオン]** ページのフィールドを設定します。 詳しくは、表の後の説明をご覧ください。
    
    |フィールド  |注|
    |---------|---------|
@@ -82,7 +82,7 @@ iOS デバイスのシングル サインオンを利用するには、次の条
 > [!NOTE]
 > これらの URL は、適切な形式の FQDN である必要があります。 Apple で要求されている形式は `http://<yourURL.domain>` です。
 
-URL の一致パターンは、`http://` または `https://` で始まっている必要があります。 単純な文字列一致が実行されるので、URL プレフィックス `http://www.contoso.com/` は `http://www.contoso.com:80/` とは一致しません。 ただし、iOS 9.0 以降では、単一のワイルドカード * を使って、一致するすべての値を指定できます。 たとえば、`http://*.contoso.com/` は `http://store.contoso.com/` と `http://www.contoso.com` の両方と一致します。
+URL の一致パターンは、`http://` または `https://` で始まっている必要があります。 単純な文字列一致が実行されるので、URL プレフィックス `http://www.contoso.com/` は `http://www.contoso.com:80/` とは一致しません。 ただし、iOS 9.0 以降では、単一のワイルドカード \* を使用して、一致するすべての値を指定できます。 たとえば、`http://*.contoso.com/` は `http://store.contoso.com/` と `http://www.contoso.com` の両方と一致します。
 パターン `http://.com` はすべての HTTP URL と一致し、`https://.com` はすべての HTTPS URL と一致します。
 
 ### <a name="apps-that-will-use-single-sign-on"></a>シングル サインオンを使用するアプリ

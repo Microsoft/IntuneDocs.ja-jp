@@ -1,10 +1,10 @@
 ---
 title: "Microsoft Intune のサポートを受ける方法"
-titlesuffix: Azure portal
-description: "有料サブスクリプションと試用版サブスクリプションについて、オンラインと電話によるサポートを利用できます。\""
+titlesuffix: Microsoft Intune
+description: "Microsoft Intune の有料サブスクリプションと試用版サブスクリプションについて、オンラインと電話によるサポートを受けます。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 00a7bf5b3f5df58e29c3eb92a516b1ace3eea705
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 5cb06625351e67bea8b467f6ab6873d258ee8175
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune のサポートを受ける方法
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/14/2018
 Microsoft サポートは、Microsoft Intune に世界的な技術、購入前、請求、およびサブスクリプションのサポートを提供しています。 有料サブスクリプションと試用版サブスクリプションについて、オンラインと電話によるサポートを利用できます。 オンライン テクニカル サポートは、英語と日本語で提供されています。 電話によるサポートとオンライン課金サポートは、他の言語でも利用できます。
 
 >[!IMPORTANT]
-> Intune と連携し、Microsoft 製ではない製品 (Saaswedo、Cisco、Lookout などの製品) のテクニカル サポートについては、まずその製品の提供元に連絡してください。 Intune サポート要求を開始する前に、その他の製品が正しく構成されていることを確認します。
+> Intune と連携するサードパーティ製品 (Saaswedo、Cisco、Lookout など) のテクニカル サポートについては、まず、その製品の提供元に連絡してください。 Intune サポート要求を開始する前に、その他の製品が正しく構成されていることを確認します。
 
 ## <a name="create-an-online-support-ticket"></a>オンライン サポート チケットの作成
 
@@ -41,31 +41,37 @@ IT 管理者は、次の手順を使用して、Azure Portal からサポート 
 2. Azure のヘルプとサポートのページで、**[新しいサポート要求]** を選択します。
 
     ![[新しいサポート要求] のリンクが強調表示された Azure のヘルプとサポートのページのスクリーンショット](./media/azure-support-ticket-link.png)
+
 3. Intune のほとんどのテクニカル サポートの問題では、**[基本]** ブレードで、次のオプションを選択します。
     - **[問題の種類]**: **[技術]**
     - **[サービス]**: **[Microsoft Intune]**
-    - **[サポート プラン]**: **[テクニカル サポート - 含む]** (Intune の技術的な問題については、サポートは無料です。)
-
+    - **[サポート プラン]**: **[テクニカル サポート - 含む]** (Intune の技術的な問題については、サポートは無料です) または **[Premier]**
+    
     >[!IMPORTANT]
-    >Intune のサポートについては、Configuration Manager で使用する場合、無料です。 Premier サポート サービスの詳細を確認するには、「[Description of Services](https://www.microsoft.com/microsoftservices/services-list.aspx)」(サービスの説明) のセクション 5.3.3「Advisory Services」(アドバイザリー サービス) を参照してください。
+    >- **Premier のお客様**で、**Premier サポート プラン**が表示されない場合は、契約とテナントのリンクについて、テクニカル アカウント マネージャーにお問い合わせください。
+    >- Intune のサポートについては、Configuration Manager で使用する場合、無料です。 Premier サポート サービスの詳細を確認する場合は、「[Description of Services](https://enterprise.microsoft.com/en-us/services/services-list/)」 (サービスの説明) ドキュメントの 5.3.3「Advisory Services」 (アドバイザリー サービス) セクションを参照してください。
 
     **[次へ]** をクリックして続行します。
+
 4. **[問題]** ブレードには、その要求を問題の内容に適した専門家が対処できるように、次のオプションを選択します。
+
     - **[重大度]**
     - **[問題の種類]**
     - **[カテゴリ]**
 
-    これらの詳細を入力することで、**[関連するヘルプ]** が表示されるため、チケットを発行せずに問題が解決できる場合があります。
+    これらの詳細を入力することで、**[関連するヘルプ]** も表示されるため、チケットを発行せずに問題が解決できる場合があります。
 
     ![問題の項目が入力され、問題に応じた解決策が表示されている Azure のヘルプとサポートのページのスクリーンショット](./media/support-need-solutions.png)
 
-    問題の調査と解決に役立てるため、次の情報を入力してください。
-    -   **詳細**
+    サポート チームでの問題の調査と解決に役立てるため、次の情報を入力してください。
+    
+    - **詳細**
     - **日付**
     - **時刻**
-    - 補足データ
+    - **補足データ**
 
     **[次へ]** を選択します。
+
 5. このサポート要求の **[連絡先情報]** を入力します。 Microsoft サポートからの連絡は、この情報を使用します。
 6. **[作成]** を選択して、サポート要求を提出します。
 
@@ -74,6 +80,5 @@ IT 管理者は、次の手順を使用して、Azure Portal からサポート 
 
 ## <a name="additional-resources"></a>その他のリソース
 - [Microsoft Intune のサポートの電話番号](phone-support-contact.md)
-- [ボリューム ライセンス サービス センター](http://go.microsoft.com/fwlink/p/?LinkID=282016)
 - [課金とサブスクリプション管理のサポート](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - [ボリューム ライセンス](http://go.microsoft.com/fwlink/p/?LinkID=282015)
