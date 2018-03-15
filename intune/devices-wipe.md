@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: dougeby
-ms.date: 01/12/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 62404f6ffede7a7f3f7150da1fde289f2ba9e64f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: b56f7d7bcf576a0b2342c7c5394c08661b6a45fd
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>出荷時の設定にリセットまたは会社データの削除を使用してデバイスを削除する
 
@@ -36,7 +36,7 @@ ms.lasthandoff: 03/02/2018
 ### <a name="to-factory-reset-a-device"></a>デバイスを出荷時の設定にリセットするには
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[デバイス]** ブレードで、**[すべてのデバイス]** を選択します。
 4. 出荷時の設定にリセットするデバイスの名前を選択します。
 5. デバイスの名前が表示されているブレードで、**[出荷時の設定へのリセット]** を選択します。
@@ -123,7 +123,7 @@ ms.lasthandoff: 03/02/2018
 ### <a name="to-remove-company-data"></a>会社データを削除するには
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[デバイス]** ブレードで、**[すべてのデバイス]** を選択します。
 4. 会社データを削除するデバイスの名前を選択します。
 5. デバイスの名前が表示されているブレードで、**[会社データを削除する]** を選択し、**[はい]** を選択して確認します。
