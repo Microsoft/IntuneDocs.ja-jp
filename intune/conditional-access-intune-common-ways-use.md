@@ -3,10 +3,10 @@ title: "Intune での条件付きアクセス"
 titlesuffix: Azure portal
 description: "Intune での条件付きアクセスの一般的な使用方法"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 02/22/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,19 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8987f8e6eb7a770a90d187c0787589acfbacdb09
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: d5ec945cdbc4efa791edc51e659a1546876446c5
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>Intune での条件付きアクセスの一般的な使用方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-組織における条件付きアクセスのコンプライアンスを推進するには、Intune モバイル デバイス コンプライアンス ポリシーと Intune モバイル アプリケーション管理 (MAM) の機能を構成する必要があります。 Intune での条件付きアクセスの一般的な使用方法について説明します。
+Intune の条件付きアクセスには、主に 2 つの種類があります。 1 つ目は、デバイスベースの条件付きアクセスです。 2 つ目は、アプリベースの条件付きアクセスです。 組織の条件付きアクセス コンプライアンスを進めるために関連するコンプライアンス ポリシーを構成する必要があります。
+
+ここでは、Intune のモバイル *デバイス*のコンプライアンス機能と Intune のモバイル *アプリケーション*管理 (MAM) 機能の使用方法について説明します。 
 
 ## <a name="device-based-conditional-access"></a>デバイス ベースの条件付きアクセス
 
@@ -32,11 +34,11 @@ Intune と Azure Active Directory が連携することで、管理されたデ�
 
 Intune には、デバイスのコンプライアンス対応状態を評価する、デバイス コンプライアンス ポリシーの機能があります。 コンプライアンス対応状態は Azure Active Directory に報告され、ユーザーが会社のリソースにアクセスしようとしたときに、Azure Active Directory で作成された条件付きアクセスのポリシーを適用するために使用されます。
 
-[新しい Azure Portal](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune)では、Exchange Online や他の Office 365 製品のデバイス ベースの条件付きアクセス ポリシーが Azure Portal で構成されるようになります。
+Exchange Online や他の Office 365 製品のデバイス ベースの条件付きアクセス ポリシーは、[Azure Portal](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune) で構成します。
 
 -   Azure Active Directory の条件付きアクセスについて詳しくは、[こちら](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)をご覧ください。
 
--   Intune のデバイス コンプライアンスについて詳しくは、[こちら](device-compliance.md)をご覧ください。
+-   Intune のデバイス コンプライアンスの詳細については、[こちら](device-compliance.md)を参照してください。
 
 -   Intune で条件付きアクセスを使用した、電子メール、Office 365、およびその他のサービスの保護について詳しくは、[こちら](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)をご覧ください。
 

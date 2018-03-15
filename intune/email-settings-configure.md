@@ -1,25 +1,23 @@
 ---
-title: "Intune 電子メール設定を構成する方法"
-titleSuffix: Azure portal
-description: "管理するデバイスに会社の電子メールへの接続が作成されるように Intune を構成する方法について説明します。\""
+title: "Microsoft Intune で電子メールの設定を構成する方法"
+titleSuffix: 
+description: "管理するデバイスに会社の電子メールへの接続が作成されるように Microsoft Intune を構成する方法について説明します。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/03/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b8558da2460b6443cbd4d42f7dec420d3e7abc7d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d805d10efccb92ca3fe65b771bf7689e22f42088
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Microsoft Intune で電子メールの設定を構成する方法
 
@@ -37,16 +35,16 @@ ms.lasthandoff: 01/25/2018
 - Windows Phone 8.1 以降
 - Windows 10 (デスクトップ) と Windows 10 Mobile
 
-このトピックでは、電子メール プロファイルを構成する基本的な方法について説明します。その後、デバイスごとの詳細については、各プラットフォームのトピックを参照してください。
+この記事では、電子メール プロファイルを構成する基本的な方法について説明します。その後、デバイスごとの詳細については、各プラットフォームのトピックを参照してください。
 
 ## <a name="create-a-device-profile-containing-email-settings"></a>電子メール設定を含むデバイス プロファイルの作成
 
 1. Azure Portal にサインインします。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
-2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
-3. [プロファイル] ブレードで、**[プロファイルを作成します]** を選択します。
-4. **[プロファイルを作成します]** ブレードで、電子メール プロファイルの**名前**と**説明**を入力します。
+3. **[Intune]** ページで、**[デバイス構成]** を選択します。
+2. **[デバイス構成]** ページで、**[管理]** > **[プロファイル]** の順に選択します。
+3. [プロファイル] ページで **[プロファイルの作成]** を選択します。
+4. **[プロファイルの作成]** ページで、電子メール プロファイルの**名前**と**説明**を入力します。
 5. **[プラットフォーム]** ドロップダウン リストで、電子メール設定を適用するデバイス プラットフォームを選択します。 現時点では、電子メール デバイス設定に対応している次のいずれかのプラットフォームを選択できます。
     - **Android** (Samsung Android KNOX Standard のみ)
     - **Android for Work**
@@ -59,16 +57,16 @@ ms.lasthandoff: 01/25/2018
     - [iOS の設定](email-settings-ios.md)
     - [Windows Phone 8.1 の設定](email-settings-windows-phone-8-1.md)
     - [Windows 10 の設定](email-settings-windows-10.md)
-8. 完了したら、**[プロファイルを作成します]** ブレードに戻り、**[作成]** をクリックします。
+8. 完了したら、**[プロファイルの作成]** ページに戻り、**[作成]** をクリックします。
 
-プロファイルが作成され、プロファイルの一覧ブレードに表示されます。
+プロファイルが作成され、プロファイルの一覧ページに表示されます。
 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事を参照してください。
 
 ## <a name="further-information"></a>詳細情報
 
 ### <a name="remove-an-email-profile"></a>電子メール プロファイルの削除
 
-デバイスから電子メール プロファイルを削除する場合、割り当てを編集し、デバイスがメンバーになっているすべてのグループを削除します。 デバイスで唯一の電子メール プロファイルはこの方法で削除できないことに注意してください。
+デバイスから電子メール プロファイルを削除する場合、割り当てを編集し、デバイスがメンバーになっているすべてのグループを削除します。 それがデバイスで唯一の電子メール プロファイルである場合、そのプロファイルはこの方法で削除できないことに注意してください。
 
 ### <a name="securing-email-access"></a>電子メールへのアクセスのセキュリティ保護
 

@@ -1,6 +1,6 @@
 ---
-title: "iOS デバイスの登録 - Device Enrollment Program"
-titlesuffix: Azure portal
+title: "デバイス登録プログラムを使用して iOS デバイスを登録する"
+titlesuffix: Microsoft Intune
 description: "Device Enrollment Program を使用して会社所有の iOS デバイスを登録する方法を説明します。\""
 keywords: 
 author: ErikjeMS
@@ -15,13 +15,13 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b56907217b45ddb2bfe869f23abc34c0508bdbd7
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 8e770c39a22b620bb642b7b15a456369bb4acec2
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する
+# <a name="automatically-enroll-ios-devices-by-using-apples-device-enrollment-program"></a>Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -32,11 +32,11 @@ ms.lasthandoff: 02/09/2018
 >
 >**[デバイス登録]** ページが次の図のようになっている場合、アカウントは新しいユーザー インターフェイスにまだ更新されていません。こちらのヘルプ ページを使用できます。
 >
->![以前のユーザー インターフェイス](./media/appleenroll-oldui.png)
+>![以前の Intune のユーザー インターフェイス](./media/appleenroll-oldui.png)
 >
 >**[デバイス登録]** ページが次の図のようになっている場合、ユーザー インターフェイスは更新済みです。  [こちらのヘルプ ページ](device-enrollment-program-enroll-ios-newui.md)に移動してください。
 >
->![新しいユーザー インターフェイス](./media/appleenroll-newui.png)
+>![新しい Intune のユーザー インターフェイス](./media/appleenroll-newui.png)
 
 このトピックは、Apple の [Device Enrollment Program (DEP)](https://deploy.apple.com) で購入したデバイスの iOS デバイス登録を有効にする場合に役立ちます。 自動で多数のデバイスの DEP 登録を行うことができます。 iPhone や iPad などのデバイスを直接ユーザーに配信できます。 ユーザーがデバイスの電源をオンにすると、セットアップ アシスタントが構成済み設定で実行され、デバイスが管理対象として登録されます。
 
@@ -76,11 +76,11 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 
 1. Azure ポータルの Intune で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]** の順に選択します。
 
-  ![[Apple 証明書] ワークスペースの [Enrollment Program トークン] のスクリーンショット。](./media/enrollment-program-token-add.png)
+  ![[Apple 証明書] ワークスペースの [Enrollment Program トークン] ウィンドウ](./media/enrollment-program-token-add.png)
 
 2. **[公開キーをダウンロードします]** を選択し、暗号化キー (.pem) ファイルをダウンロードしてローカルに保存します。 .pem ファイルは、Apple Device Enrollment Program ポータルから信頼関係証明書を要求するために使用します。
 
-  ![公開キーをダウンロードするための [Apple 証明書] ワークスペースの [Enrollment Program トークン] のスクリーンショット。](./media/enrollment-program-token-download.png)
+  ![公開キーをダウンロードするための [Apple 証明書] ワークスペースの [Enrollment Program トークン] ウィンドウ](./media/enrollment-program-token-download.png)
 
 **手順 2:Apple DEP トークンを作成し、ダウンロードします。**<br>
 1. **[Apple Device Enrollment Program を使用してトークンを作成します]** を選択して Apple の Deployment Program ポータルを開き、会社の Apple ID でサインインします。 この Apple ID を使って、DEP トークンを更新できます。
@@ -89,29 +89,25 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 3. **[Manage Servers\(サーバーの管理\)]** ページで、**[Add MDM Server\(MDM サーバーの追加\)]** を選びます。
 4. **MDM サーバー名**を入力し、**[Next]** (次へ) をクリックします。 サーバー名は、自分がモバイル デバイス管理 (MDM) サーバーを識別できるようにするための名前です。 Microsoft Intune サーバーの名前または URL ではありません。
 
-   ![DEP の MDM サーバー名を追加して [次へ] をクリックしたスクリーンショット。](./media/enrollment-program-token-add-server.png)
+   ![DEP の MDM サーバー名を追加して [次へ] をクリック](./media/enrollment-program-token-add-server.png)
 
 5. **[Add &lt;ServerName&gt;\(<サーバー名> の追加\)]** ダイアログ ボックスが開き、**[Upload Your Public Key\(公開キーをアップロードする\)]** と表示されます。 **[Choose File]** (ファイルを選択) をクリックして .pem ファイルをアップロードし、**[Next]** (次へ) を選択します。  
-<<<<<<< 先頭
 
-=======
->>>>>>> e19b417f8bc134dc5a5a9f60354f017ccc42fd88
-
-7. **[Deployment Programs](展開プログラム)** &gt; **[Device Enrollment Program]** &gt; **[Manage Devices](デバイスの管理)** の順に移動します。
-8. **[Choose Devices By\(デバイスの選択方法\)]** で、デバイスを識別する方法を指定します。
+6. **[Deployment Programs] (展開プログラム)** &gt; **[Device Enrollment Program]** &gt; **[Manage Devices] (デバイスの管理)** の順に移動します。
+7. **[Choose Devices By\(デバイスの選択方法\)]** で、デバイスを識別する方法を指定します。
     - **Serial Number\(シリアル番号\)**
     - **Order Number\(注文番号\)**
     - **Upload CSV File\(CSV ファイルのアップロード\)**
 
-   ![シリアル番号でデバイスを選択するように指定し、アクションの選択でサーバーへの割り当てを設定し、サーバー名を選択したスクリーンショット。](./media/enrollment-program-token-specify-serial.png)
+   ![シリアル番号でデバイスを選択するように指定し、アクションの選択でサーバーへの割り当てを設定し、サーバー名を選択](./media/enrollment-program-token-specify-serial.png)
 
-9. **[アクションの選択]** で **[Assign to Server]\(サーバーに割り当てる\)** を選択し、Microsoft Intune に指定した **ServerName** を選択して、&lt;[OK]&gt; を選択します。 指定したデバイスが管理用に Intune サーバーに割り当てられて、**[Assignment Complete\(割り当て完了\)]** と表示されます。
+8. **[アクションの選択]** で **[Assign to Server]\(サーバーに割り当てる\)** を選択し、Microsoft Intune に指定した **ServerName** を選択して、&lt;[OK]&gt; を選択します。 指定したデバイスが管理用に Intune サーバーに割り当てられて、**[Assignment Complete\(割り当て完了\)]** と表示されます。
 
    Apple ポータルで、**[Deployment Programs\(配備プログラム\)]** &gt; **[Device Enrollment Program\(Device Enrollment Program\)]** &gt; **[View Assignment History\(割り当て履歴の表示\)]** の順に移動して、デバイスとその MDM サーバーの割り当てのリストを表示します。
 
 **手順 3:Enrollment Program トークンの作成に使った Apple ID を入力します。**<br>Azure ポータルの Intune で、後で参照するための Apple ID を指定します。
 
-![Enrollment Program トークンの作成に使った Apple ID の指定と、Enrollment Program トークンの参照のスクリーンショット。](./media/enrollment-program-token-apple-id.png)
+![Enrollment Program トークンの作成に使った Apple ID の指定と、Enrollment Program トークンの参照](./media/enrollment-program-token-apple-id.png)
 
 **手順 4:アップロードする Enrollment Program トークンを参照します。**<br>
 証明書 (.pem) ファイルに移動し、**[開く]** を選択して、**[アップロード]** を選択します。 このプッシュ証明書を使用して、Intune はモバイル デバイスを登録し、登録したモバイル デバイスにポリシーを適用して iOS デバイスを管理できます。 Intune は、Apple と自動的に同期して、Enrollment Program アカウントを表示します。
@@ -132,7 +128,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 
 4. **[デバイス管理の設定]** を選択し、次のプロファイル設定を構成します。
 
-  ![管理モードが選択されているスクリーン ショット。 デバイスには [監督下]、[ロックされた登録]、[ペアリングの許可] ([すべて拒否] に設定されている) の設定があります。 [Apple Configurator の証明書] は、新しい Enrollment Program プロファイルでは淡色表示されています。](./media/enrollment-program-profile-mode.png)
+  ![管理モードの選択](./media/enrollment-program-profile-mode.png)
   - **[監督下]** - より多くの管理オプションが使用可能な管理モードです。既定でアクティベーション ロックは無効になります。 このチェック ボックスをオフのままにすると、管理機能が制限されます。 Microsoft は、多数の iOS デバイスを展開する組織に対して特に、監視モードを有効にするメカニズムとして DPE の利用を推奨しています。
 
  > [!NOTE]
@@ -150,7 +146,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 
 5. **[セットアップ アシスタントの設定]** を選択し、次のプロファイル設定を構成します。
 
-  ![新しい Enrollment Program プロファイルで使用可能な設定が選択されている構成設定のスクリーンショット。](./media/enrollment-program-profile-settings.png)
+  ![新しい Enrollment Program プロファイルで使用可能な設定が選択されている構成設定](./media/enrollment-program-profile-settings.png)
   - **[部署名]** - アクティブ化中にユーザーが **[About Configuration (構成について)]** をタップすると表示されます。
 
   - **[部署の電話番号]** - アクティブ化中にユーザーが **[ヘルプが必要ですか]** ボタンをクリックすると表示されます。
@@ -175,11 +171,11 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 
 1. Azure Portal の Intune で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program デバイス]** > **[同期]** の順に選択します。進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
 
-  ![[Enrollment Program デバイス] ノードと [同期] リンクが選ばれているスクリーンショット。](./media/enrollment-program-device-sync.png)
+  ![[Enrollment Program デバイス] ノードと [同期] リンクの選択](./media/enrollment-program-device-sync.png)
   
 2. **[同期]** ブレードで、**[同期を要求]** を選択します。進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
 
-   ![[同期を要求] リンクが選ばれている [同期] ブレードのスクリーンショット。](./media/enrollment-program-device-request-sync.png)
+   ![[同期を要求] リンクが選ばれている [同期] ブレード](./media/enrollment-program-device-request-sync.png)
 
    許容される Enrollment Program トラフィックについての Apple の規約に準拠するため、Intune では次の制限が課せられます。
      -  完全な同期は 7 日に 1 回だけ実行できます。 Intune は、完全な同期中に、Intune に割り当てられているすべての Apple シリアル番号を更新します。 前回の完全同期の 7 日以内に完全同期が試みられると、Intune は Intune にまだ一覧表示されていないシリアル番号のみを更新します。
@@ -197,7 +193,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 1. Azure ポータルの Intune で **[デバイスの登録]** > **[Apple の登録]** の順に選択し、**[Enrollment Program プロファイル]** を選択します。
 2. **[Enrollment Program プロファイル]** の一覧から、デバイスに割り当てるプロファイルを選択し、**[デバイスの割り当て]** を選択します。
 
- ![[割り当て] が選択されている [デバイスの割り当て] のスクリーンショット。](./media/enrollment-program-device-assign.png)
+ ![[割り当て] が選択された [デバイスの割り当て]](./media/enrollment-program-device-assign.png)
 
 3. **[割り当て]** を選択し、このプロファイルを割り当てるデバイスを選択します。 フィルターを適用して使用可能なデバイスを表示できます。
   - **未割り当て**
@@ -205,7 +201,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
   - **&lt;プロファイル名&gt;**
 4. 割り当てるデバイスを選択します。 列の上のチェック ボックスで最大 1,000 のデバイスを選び、**[割り当て]** をクリックします。 1,000 を超えるデバイスを登録するには、すべてのデバイスに登録プロファイルを割り当てるまで割り当て手順を繰り返します。
 
-  ![Intune で Enrollment Program プロファイルを割り当てるための [割り当て] ボタンのスクリーンショット](media/dep-profile-assignment.png)
+  ![Intune で Enrollment Program プロファイルを割り当てるための [割り当て] ボタン](media/dep-profile-assignment.png)
 
 ## <a name="distribute-devices"></a>デバイスを配布する
 Apple と Intune の間の同期と管理を有効にし、DEP デバイスを登録できるようにプロファイルを割り当てました。 ユーザーにデバイスを配布できるようになりました。 ユーザー アフィニティがあるデバイスでは、各ユーザーに Intune ライセンスを割り当てる必要があります。 ユーザー アフィニティがないデバイスでは、デバイスのライセンスが必要です。 デバイスが出荷時の設定にリセットされるまで、アクティブ化されたデバイスは登録プロファイルを適用できません。

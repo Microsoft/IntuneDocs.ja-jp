@@ -1,12 +1,12 @@
 ---
-title: "アプリ管理とは"
-titlesuffix: Azure portal
-description: "このトピックでは、Microsoft Intune を使用したアプリ管理についての基本を説明します。\""
+title: "Microsoft Intune でのアプリの管理とは"
+titlesuffix: 
+description: "Microsoft Intune でのアプリの管理の基本について説明します。"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/08/2018
+ms.date: 03/01/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00e6b9f05f967da9066639dbf1b25bc76a49541b
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: 9372a77a63f48c8215a02ccd784fb0a812f5a12f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune アプリの管理とは
 
@@ -27,14 +27,14 @@ ms.lasthandoff: 02/13/2018
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-IT 管理者は、エンド ユーザーのために、業務に必要なアプリへのアクセス手段を確保する必要があります。 これは、以下の理由により、困難になる可能性があります。
+Microsoft Intune では、IT 管理者が会社の従業員が使用するモバイル アプリを管理することができます。 この機能は、デバイス管理とデータ保護に加え用意されています。 この機能の一部には、優先事項として、作業で使用するアプリにエンドユーザーがアクセスできるようにすることがあります。 これは、以下の理由により、困難になる可能性があります。
 - さまざまなデバイス プラットフォームとアプリの種類が存在する。
 - 会社のデバイスとユーザー所有のデバイスの両方で、アプリの管理が必要になる場合がある。
 - 社内のネットワークとデータの安全性を確保する必要がある。
 
 また、Intune に登録されていないデバイスでアプリの割り当てと管理が必要になる場合もあります。
 
-Intune では、必要なデバイスで必要なアプリを利用できるように、さまざまな機能を提供しています。
+Intune では、必要なデバイスで必要なアプリを利用できるように、さまざまな機能を提供しています。 次の表に、アプリの管理機能の概要を示します。 表の下には、Azure Portal での Microsoft Intune を理解するための基礎を説明します。 
 
 ## <a name="app-management-capabilities-by-platform"></a>プラットフォーム別のアプリ管理機能
 
@@ -64,8 +64,8 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
 
 アプリに関連するものは、ほとんどが **[Mobile Apps]** ワークロード内にあり、以下の手順でアクセスできます。
 
-1. Azure Portal にサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
 3. **[Intune]** ブレードで、**[モバイル アプリ]** を選びます。
 
     ![[モバイル アプリ] ワークロード](./media/apps-workload.png)
@@ -115,3 +115,7 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
 ### <a name="help-and-support"></a>ヘルプとサポート
 - **[ヘルプとサポート]** - トラブルシューティング、リクエスト サポート、または Intune の状態の表示を行います。
     - [問題のトラブルシューティング](help-desk-operators.md)
+    
+## <a name="next-steps"></a>次の手順
+
+- [アプリを Microsoft Intune に追加する方法](apps-add.md)

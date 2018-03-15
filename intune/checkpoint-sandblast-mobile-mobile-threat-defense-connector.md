@@ -3,8 +3,8 @@ title: "Intune との Check Point SandBlast Mobile コネクタ"
 titlesuffix: Azure portal
 description: "Check Point SandBlast と Intune の統合"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09a8914be00b7af039257fe0759967b7f5a90c5e
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 10bc23b5b5e0d0d278677ed4bf332787fc16b367
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Intune との Check Point SandBlast Mobile Threat Defense コネクタ
 
@@ -33,73 +33,74 @@ Android および iOS 向け Check Point Sandblast Mobile アプリは、ファ�
 
 Intune デバイス コンプライアンス ポリシーには、Check Point SandBlast リスク評価に基づく、Check Point SandBlast Mobile Threat Defense のルールが含まれています。 このルールを有効にすると、Intune は、有効にされたポリシーに基づいてデバイスの準拠状態を評価します。 デバイスが準拠していないことが判明した場合、ユーザーは Exchange Online や SharePoint Online などの会社リソースへのアクセスをブロックされます。 また、ユーザーは、デバイスにインストールされている Check Point SandBlast Mobile アプリから、問題を解決して会社リソースへのアクセスを回復するための案内を受け取ります。
 
-<!-- ## Sample scenarios
+<!-- ## Sample scenarios 
+closing syntax for comment above is missing. Please insert closing syntax at intended location. -->
 
-Here are some common scenarios:
+一般的なシナリオを次に示します。
 
-### Control access based on threats from malicious apps
+### <a name="control-access-based-on-threats-from-malicious-apps"></a>悪意のあるアプリの脅威に基づいてアクセスを制御する
 
-When malicious apps such as malware are detected on devices, you can block devices until the threat is resolved:
+マルウェアなどの悪意のあるアプリがデバイスで検出されると、脅威が解決されるまで、デバイスで次の行為が禁止されます。
 
--   Connecting to corporate e-mail
+-   会社の電子メールに接続する
 
--   Syncing corporate files with the OneDrive for Work app
+-   OneDrive for Work アプリを使用して会社のファイルを同期する
 
--   Accessing company apps
+-   会社のアプリにアクセスする
 
-**Block when malicious apps are detected:**
+**悪意のあるアプリが検出されたときにブロックする:**
 
-![Check Point MTD block when malicious apps are detected](./media/checkpoint-MTD-2.PNG)
+![Check Point MTD - 悪意のあるアプリが検出されたときにブロック](./media/checkpoint-MTD-2.PNG)
 
-**Access granted on remediation:**
+**修復後、アクセスが与えられる:**
 
-![Check Point MTD access granted](./media/checkpoint-MTD-3.PNG)
+![Check Point MTD - アクセスを許可](./media/checkpoint-MTD-3.PNG)
 
-### Control access based on threat to network
+### <a name="control-access-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいてアクセスを制御する
 
-Detect threats like **Man-in-the-middle** in network, and protect access to Wi-Fi networks based on the device risk.
+ネットワークで **Man-in-the-middle** のような脅威を検出し、デバイスのリスクに基づいて Wi-Fi ネットワークへのアクセスを保護します。
 
-**Block network access through Wi-Fi:**
+**Wi-Fi 経由のネットワーク アクセスをブロックする:**
 
-![Check Point MTD block network access through Wi-Fi](./media/checkpoint-MTD-4.PNG)
+![Check Point MTD - Wi-Fi 経由のネットワーク アクセスをブロック](./media/checkpoint-MTD-4.PNG)
 
-**Access granted on remediation:**
+**修復後、アクセスが与えられる:**
 
-![Check Point MTD Wi-Fi access granted](./media/checkpoint-MTD-5.PNG)
+![Check Point MTD - Wi-Fi アクセスを許可](./media/checkpoint-MTD-5.PNG)
 
-### Control access to SharePoint Online based on threat to network
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいて SharePoint Online へのアクセスを制御する
 
-Detect threats like **Man-in-the-middle** in network, and prevent synchronization of corporate files based on the device risk.
+ネットワークで **Man-in-the-middle** のような脅威を検出し、デバイスのリスクに基づいて会社内のファイルの同期を阻止します。
 
-**Block SharePoint Online when network threats are detected:**
+**ネットワークの脅威が検出されたときに SharePoint Online をブロック:**
 
-![Check Point MTD block SharePoint Online access](./media/checkpoint-MTD-6.PNG)
+![Check Point MTD - SharePoint Online アクセスをブロック](./media/checkpoint-MTD-6.PNG)
 
-**Access granted on remediation:**
+**修復後、アクセスが与えられる:**
 
-![Check Point MTD SharePoint Online access granted](./media/checkpoint-MTD-7.PNG)
+![Check Point MTD - SharePoint Online アクセスを許可](./media/checkpoint-MTD-7.PNG)
 
-## Supported platforms
+## <a name="supported-platforms"></a>サポートされているプラットフォーム
 
--   **Android 4.1 and later**
+-   **Android 4.1 以降**
 
--   **iOS 8 and later**
+-   **iOS 8 以降**
 
-## Pre-requisites
+## <a name="pre-requisites"></a>前提条件
 
 -   Azure Active Directory Premium
 
--   Microsoft Intune subscription
+-   Microsoft Intune サブスクリプション
 
--   Check Point SandBlast Mobile Threat Defense subscription
-    -   See [CheckPoint SandBlast website](https://www.checkpoint.com/) for more information.
+-   Check Point SandBlast Mobile Threat Defense サブスクリプション
+    -   詳細については、[Check Point SandBlast の Web サイト](https://www.checkpoint.com/)を参照してください。
 
-## Next steps
+## <a name="next-steps"></a>次の手順
 
-- [Integrate CheckPoint SandBlast with Intune](checkpoint-sandblast-mobile-mtd-connector-integration.md)
+- [Check Point SandBlast Mobile と Intune を統合する](checkpoint-sandblast-mobile-mtd-connector-integration.md)
 
-- [Set up CheckPoint SandBlast Mobile app](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Check Point SandBlast Mobile アプリをセットアップする](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-- [Create CheckPoint SandBlast Mobile device compliance policy](mtd-device-compliance-policy-create.md)
+- [Check Point SandBlast Mobile のデバイス コンプライアンス ポリシーを作成する](mtd-device-compliance-policy-create.md)
 
-- [Enable CheckPoint SandBlast Mobile MTD connector](mtd-connector-enable.md)
+- [Check Point SandBlast Mobile MTD コネクタを有効にする](mtd-connector-enable.md)

@@ -1,7 +1,7 @@
 ---
 title: "Intune Wi-Fi 設定を構成する方法"
-titleSuffix: Azure portal
-description: "Intune を使用して、管理対象デバイスの Wi-Fi 接続を構成する方法について説明します。\""
+titleSuffix: Microsoft Intune
+description: "Microsoft Intune を使用して、管理対象デバイスの Wi-Fi 接続を構成する方法について説明します。"
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e03df2525b413ca33f81836292a05dac11bb8349
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 21bc79d3440e57ec91f7e4482112d77cf233575f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Microsoft Intune で Wi-Fi の設定を構成する方法
 
@@ -46,7 +46,7 @@ Windows 8.1、Windows 10、Windows 10 Mobile、Windows Holographic for Business 
 
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>Wi-Fi 設定を含むデバイス プロファイルの作成
 
-1. Azure Portal にサインインします。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
 2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
@@ -62,7 +62,7 @@ Windows 8.1、Windows 10、Windows 10 Mobile、Windows Holographic for Business 
    > [!IMPORTANT]
    > Windows 10 を実行するデバイス用のプロファイルを作成する場合は (Windows Holographic for Business など)、**Windows 8.1 以降の**プラットフォームを選ぶ必要があります。 **Windows 10 以降**のプラットフォームには、Wi-Fi プロファイルの種類は含まれません。 
 
-6. Apple デバイスまたは Android デバイスの場合、**[WiFi の種類]** ドロップダウン リストで、**[Basic]** または **[Enterprise]** を選びます。 **[Basic]** を使うと、ネットワーク名や SSID などの基本的な機能を指定できます。 **[Enterprise]** を使うと、詳細情報 (たとえば、Wi-Fi ネットワークで拡張認証プロトコル (EAP) を使っている場合は EPA) を指定できます。 
+6. Apple デバイスまたは Android デバイスの場合、**[WiFi の種類]** ドロップダウン リストで、**[Basic]** または **[Enterprise]** を選びます。 **[Basic]** を使うと、ネットワーク名や SSID などの基本的な機能を指定できます。 **[Enterprise]** を使用すると、詳細情報 (たとえば、Wi-Fi ネットワークで拡張認証プロトコル (EAP) を使用している場合は EPA) を指定できます。 
 
    **[Wi-Fi インポート]** プロファイル (Windows 8.1 以降の場合) を使うと、以前に別のデバイスからエクスポートした Wi-Fi 設定を XML ファイルとしてインポートすることができます。
 1. 選択したプラットフォームによって構成できる設定が異なります。 各プラットフォームの詳細な設定については、次のいずれかのトピックを参照してください。

@@ -1,12 +1,12 @@
 ---
-title: "Intune を使用してモバイル デバイスに Office 365 アプリをインストールする"
-titlesuffix: Azure portal
-description: "Intune を使用して、簡単に Windows 10 デバイスに Office 365 アプリをインストールする方法について説明します。"
+title: "Microsoft Intune を使用してデバイスに Office 365 アプリをインストールする"
+titlesuffix: 
+description: "Microsoft Intune を使用して、簡単に Windows 10 デバイスに Office 365 アプリをインストールする方法について説明します。"
 keywords: 
-author: dougeby
-ms.author: dougeby
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 01/29/2018
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f6ef1d1dab39a6939b80bd13ba090424a67c6f53
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 1a8045261f93c6ac0282a03f13ac7bb7a7caac0d
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune で Windows 10 デバイスに Office 365 ProPlus アプリを割り当てる方法
 
@@ -85,11 +85,11 @@ ms.lasthandoff: 02/19/2018
 1.  **[アプリの追加]** ブレードで、**[アプリ スイートの設定]** を選択します。
 2.  **[アプリ スイートの設定]** ブレードで、次の情報を指定します。
     - **[Office バージョン]** - Office の 32 ビットまたは 64 ビット バージョンのどちらを割り当てるかを選択します。 32 ビットと 64 ビットのどちらのデバイスでも 32 ビット バージョンをインストールできますが、64 ビットのデバイスには 64 ビット バージョンしかインストールできません。
-    - **[更新プログラム チャネル]** - デバイスで Office を更新する方法を選択します。 異なる更新プログラム チャネルの詳細については、「Office 365 ProPlus 更新プログラム チャネルの概要」を参照してください。 次の中から選択します。
-        - **現在**
-        - **段階的提供**
-        - **現在の最初のリリース**
-        - **段階的提供の最初のリリース**
+    - **[更新プログラム チャネル]** - デバイスで Office を更新する方法を選択します。 異なる更新プログラム チャネルの詳細については、「[Office 365 ProPlus 更新プログラム チャネルの概要](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)」を参照してください。 次の中から選択します。
+        - **毎月**
+        - **Monthly (Targeted)**\(毎月 (対象指定)\)
+        - **Semi-Annual**\(半期\)
+        - **Semi-Annual (Targeted)**\(半期 (対象指定)\)
     - **[Automatically accept the app end user license agreement \(アプリの使用許諾契約書を自動的に承諾する\)]** - エンドユーザーに使用許諾契約書に同意することを求めない場合は、このオプションを選択します。 その後、Intune で契約書を自動的に承諾します。
     - **[共有コンピューターのライセンス認証を使用する]** - 共有コンピューターのライセンス認証は、複数のユーザーでコンピューターを共有するときに使用します。 詳細については、「Overview of shared computer activation for Office 365 ProPlus」 (Office 365 ProPlus に対する共有コンピューターのライセンス認証の概要) を参照してください。
     - **[言語]** - Office は、エンドユーザーのデバイス上の Windows にインストールされている任意のサポート言語で自動的にインストールされます。 アプリ スイートと共に追加の言語をインストールする場合は、このオプションを選択します。

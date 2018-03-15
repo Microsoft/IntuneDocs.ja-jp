@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Intune で iOS デバイスにアプリごとの VPN を設定する"
-titleSuffix: Intune on Azure
-description: "管理対象のどのアプリが Intune で管理される iOS デバイスで VPN を使用できるかを指定します。"
+titleSuffix: 
+description: "管理対象のどのアプリが Intune で管理される iOS デバイスで仮想プライベート ネットワーク (VPN) を使用できるかを指定することができます。"
 keywords: 
 author: Erikre
 ms.author: erikre
@@ -15,15 +15,15 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f7e53f9a440d945d834c17b9db85ed5f6e42229
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4e01ca43cc42ee7228e42cd3b0176475905ef566
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="set-up-per-app-vpn-in-microsoft-intune-for-ios-devices"></a>Microsoft Intune で iOS デバイスにアプリごとの VPN を設定する
+# <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Intune での iOS デバイス用のアプリごとの Virtual Private Network (VPN) 設定
 
-管理対象のどのアプリが Intune で管理される iOS デバイスで仮想プライベート ネットワーク (VPN) を使用できるかを指定することができます。 Intune でアプリごとの VPN を指定すると、エンド ユーザーが会社のドキュメントにアクセスするときに自動的に VPN を通して接続します。
+管理対象のどのアプリが Intune で管理される iOS デバイスで仮想プライベート ネットワーク (VPN) を使用できるかを指定することができます。 Intune でアプリごとの VPN を作成すると、エンド ユーザーが会社のドキュメントにアクセスするときに自動的に VPN を通して接続します。
 
 ## <a name="prerequisites-for-the-per-app-vpn"></a>アプリごとの VPN の前提条件
 

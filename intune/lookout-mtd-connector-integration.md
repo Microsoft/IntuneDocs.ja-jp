@@ -3,8 +3,8 @@ title: "Intune との Lookout 統合を設定する"
 titlesuffix: Azure portal
 description: "Intune を使用した Lookout サブスクリプションの設定"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 891fbda72d38b829397158a75bdceeb452bc8d3b
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: fa13ee9239dcb1f62f4fb06e876ecc272a8f620c
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune との Lookout Mobile Threat Defense 統合を設定する
 
@@ -94,7 +94,7 @@ Lookout を Intune に統合するために、Lookout Mobility Endpoint Security
     ![Intune コネクタ登録ページのスクリーンショット](./media/lookout-mtp-enrollment.png)
 
     >[!IMPORTANT]
-    > Azure ポータルのセキュリティ グループの **[プロパティ]** に表示される **[表示名]** は大文字と小文字が区別されます。 次の画像のように、セキュリティ グループの **[表示名]** は大文字と小文字が混在していますが、タイトルはすべて小文字です。 Lookout コンソールでは、セキュリティ グループの **[表示名]** の大文字/小文字と一致させます。
+    > Azure Portal のセキュリティ グループの **[プロパティ]** に表示される **[表示名]** は大文字と小文字が区別されます。 次の画像のように、セキュリティ グループの **[表示名]** は大文字と小文字が混在していますが、タイトルはすべて小文字です。 Lookout コンソールでは、セキュリティ グループの **[表示名]** の大文字/小文字と一致させます。
     >![Azure Portal の Azure Active Directory サービスの [プロパティ] ページのスクリーンショット](./media/aad-group-display-name.png)
 
     >[!NOTE] 
@@ -131,7 +131,7 @@ Lookout Mobile Threat Defense によって、さまざまな種類のモバイ�
 > リスク レベルは、Mobile Threat Defense における重要な要素の 1 つです。デバイスのコンプライアンスは、これらのリスク レベルに従って実行時に計算されるためです。 Intune 管理者が設定するポリシーのルールに従って、デバイスはアクティブな脅威の最低レベルが**高**、**中**、または**低**の場合に非準拠と判断されます。 Mobile Threat Defense での脅威分類ポリシーは、Intune でのデバイスのコンプライアンス計算に直接影響を与えます。
 
 ## <a name="watching-enrollment"></a>登録を監視する
-セットアップが完了すると、Mobile Threat Defense は Azure AD のポーリングを開始し、指定された登録グループに対応するデバイスを探します。  登録されたデバイスに関する情報は、「Devices」 (デバイス) モジュールで確認できます。  デバイスの初期状態は保留中と表示されます。  Lookout for Work アプリがデバイスでインストールされたり、オープンになったり、アクティブ化されたりすると、デバイスの状態が変わります。  Lookout for Work アプリをデバイスにプッシュする方法の詳細については、[「Add Lookout for work apps with Intune」](mtd-apps-ios-app-configuration-policy-add-assign.md) (Intune で Lookout for Work アプリを追加する) をご覧ください。
+セットアップが完了すると、Mobile Threat Defense は Azure AD のポーリングを開始し、指定された登録グループに対応するデバイスを探します。  登録されたデバイスに関する情報は、「Devices」 (デバイス) モジュールで確認できます。  デバイスの初期状態は保留中と表示されます。  Lookout for Work アプリがデバイスでインストールされたり、オープンになったり、アクティブ化されたりすると、デバイスの状態が変わります。  Lookout for Work アプリをデバイスにプッシュする方法の詳細については、[Intune で Lookout for Work アプリを追加する方法](mtd-apps-ios-app-configuration-policy-add-assign.md)に関するページを参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

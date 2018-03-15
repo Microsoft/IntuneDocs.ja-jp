@@ -1,6 +1,6 @@
 ---
-title: "デバイスの登録 - デバイス登録マネージャー"
-titlesuffix: Azure portal
+title: "デバイス登録マネージャー アカウントを使用してデバイスを登録する"
+titlesuffix: Microsoft Intune
 description: "デバイス登録マネージャー アカウントを使用してデバイスを Intune に登録します。 \""
 keywords: 
 author: ErikjeMS
@@ -15,28 +15,28 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4ae5060ca2ea884ddbcf0e21d7a6e95c56f973bc
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 01f5791869876ecfb7096c987cbc2828a39a2844
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="enroll-devices-using-device-enrollment-manager"></a>デバイス登録マネージャーを使用してデバイスを登録する
+# <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>デバイス登録マネージャー アカウントを使用してデバイスを登録する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 組織は Intune を使用して、単一のユーザー アカウントで多数のモバイル デバイスを管理することができます。 *デバイス登録マネージャー (DEM)* アカウントは、最大で 1,000 台のデバイスを登録できる特別なユーザー アカウントです。 既存のユーザーを DEM アカウントに追加し、特別な DEM 機能を与えます。 登録される各デバイスは 1 つのライセンスを使用します。 このアカウントで登録したデバイスは、個人用 ("BYOD") デバイスではなく共有デバイスとして使用することをお勧めします。  
 
-ユーザーをデバイス登録マネージャーとして追加するには、そのユーザーが Azure Portal に存在する必要があります。 最適なセキュリティのために、DEM ユーザーを Intune 管理にも指定することは避けてください。
+ユーザーをデバイス登録マネージャーとして追加するには、そのユーザーが [Azure Portal ](https://portal.azure.com)に存在する必要があります。 最適なセキュリティのために、DEM ユーザーを Intune 管理にも指定することは避けてください。
 
 >[!NOTE]
->DEM による登録方法は、[Apple Configurator とセットアップ アシスタント](apple-configurator-setup-assistant-enroll-ios.md)、[Apple Configurator と直接登録](apple-configurator-direct-enroll-ios.md)、[Apple School Manager (ASM)](apple-school-manager-set-up-ios.md)、または [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md) という他の登録方法と一緒に使用することはできません。 macOS デバイスの登録に使用することもできません。
+>DEM による登録方法は、[Apple Configurator とセットアップ アシスタント](apple-configurator-setup-assistant-enroll-ios.md)、[Apple Configurator と直接登録](apple-configurator-direct-enroll-ios.md)、[Apple School Manager (ASM)](apple-school-manager-set-up-ios.md)、または [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md) という他の登録方法と一緒に使用することはできません。
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>デバイス登録マネージャーのシナリオの例
 
 あるレストランで、接客担当スタッフが販売時点管理に使い、調理担当スタッフがオーダーのモニターに使う POS タブレットが 50 台必要になりました。 従業員は、会社のデータにアクセスしたり、ユーザーとしてサインインしたりする必要はありません。 Intune 管理者はデバイス登録マネージャー アカウントを作成し、レストランの監督者を DEM アカウントに追加し、DEM の機能を与えます。 これで監督者は DEM の資格情報を利用し、50 台のタブレット デバイスを登録できます。
 
-Azure Portal 内のユーザーのみがデバイス登録マネージャーになることができます。 デバイス登録マネージャーのユーザーを Intune 管理者にすることはできません。
+[Azure Portal](https://portal.azure.com) 内のユーザーのみがデバイス登録マネージャーになることができます。 デバイス登録マネージャーのユーザーを Intune 管理者にすることはできません。
 
 DEM ユーザーができること:
 
@@ -88,11 +88,11 @@ DEM 登録タスクを実行するには、グローバル管理者または Int
 
 **デバイス登録マネージャーを削除するには**
 
-1. Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
+1. [Azure Portal](https://portal.azure.com) で **[すべてのサービス]** > **[Intune]** の順に選びます。 Intune は、**[監視 + 管理]** セクションにあります。
 2. [Intune] ブレードで **[デバイスの登録]** を選択し、**[デバイス登録マネージャー]** を選択します。
-3. **[デバイス登録マネージャー]** ブレードで、DEM ユーザーを右クリックし、**[削除]** を選択します。
+3. **[デバイス登録マネージャー]** ブレードで、DEM ユーザーを選択し、**[削除]** を選択します。
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>デバイス登録マネージャーのプロパティの表示
 
-1. Azure Portal で **[デバイスの登録]**、**[デバイス登録マネージャー]** の順に選びます。
+1. [Azure Portal](https://portal.azure.com) で、**[デバイスの登録]**、**[デバイス登録マネージャー]** の順に選びます。
 2. **[デバイス登録マネージャー]** ブレードで、DEM ユーザーを右クリックし、**[プロパティ]** を選択します。

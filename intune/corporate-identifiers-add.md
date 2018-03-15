@@ -1,7 +1,7 @@
 ---
 title: "企業 ID を Intune に追加する"
-titlesuffix: Azure portal
-description: "企業 ID (登録方法、IMEI 番号、シリアル番号) を Microsoft Intune に追加する方法について説明します。 \""
+titlesuffix: Microsoft Intune
+description: "企業 ID (登録方法、IMEI 番号、シリアル番号) を Microsoft Intune に追加する方法について説明します。"
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b2be1f71887b7812ff17b69b679d54a920d3261
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 29c3d331cae06b0474fc3a2b31790719d99c678e
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>デバイスの企業所有としての識別
 
@@ -72,7 +72,7 @@ Android デバイスのシリアル番号の検索方法については、[こ�
 
 1. Azure Portal の Intune で **[デバイスの登録]** > **[業務用デバイスの ID]** の順に選択し、**[追加]** をクリックします。
 
- ![[追加] ボタンが強調表示された、[業務用デバイス ID] ワークスペースのスクリーンショット。](./media/add-corp-id.png)
+ ![[追加] ボタンが強調表示された、[業務用デバイス ID] ワークスペース](./media/add-corp-id.png)
 
 2. **[ID の追加]** ブレードで **[IMEI]** または **[シリアル]** の ID の種類を指定します。 以前にインポートした番号が **[既存の ID の詳細を上書きします]** を適用するかどうかを指定できます。
 
@@ -100,4 +100,4 @@ International Mobile Equipment Identifier の詳しい仕様については、�
 3. **[プロパティ]** を選択します。
 4. **[デバイスの所有権]** に **[個人]** または **[企業]** を指定します。
 
-  ![デバイス プロパティのスクリーンショット。デバイスのカテゴリと所有権のオプションを確認できます。](./media/device-properties.png)
+  ![デバイスのカテゴリと所有権のオプションが表示されたデバイス プロパティ](./media/device-properties.png)

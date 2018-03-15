@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f784143535188c6bee2082c5717b752f08c5490
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7d48b81e6df912815d9ef843b4588f8c1076a8a7
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>デバイスを Intune と同期して最新のポリシーとアクションを取得する
 
@@ -37,11 +37,11 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="how-to-sync-a-device"></a>デバイスを同期する方法
 
-1. Azure Portal にサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ブレードで、**[デバイス]** を選択します。
-4. **[デバイスとグループ]** ブレードで、**[すべてのデバイス]** を選択します。
-5. 管理するデバイスの一覧からデバイスを選択し、その後 **[同期]** リモート操作を選択します。
+4. **[デバイス]** ブレードで、**[すべてのデバイス]** を選択します。
+5. 管理するデバイスの一覧からデバイスを選択し、**[詳細]**、**[同期]** リモート操作の順に選択します。
 7. **[はい]** を選んで操作を確定します。
 
 

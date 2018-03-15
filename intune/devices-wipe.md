@@ -1,6 +1,6 @@
 ---
-title: "Intune を使用しているデバイスで、出荷時の設定にリセットまたは会社データの削除を使用する"
-titlesuffix: Azure portal
+title: "Microsoft Intune を使用しているデバイスで、出荷時の設定にリセットまたは会社データの削除を使用する"
+titlesuffix: 
 description: "デバイスの会社データを削除する方法またはデバイスを出荷時の設定にリセットする方法を説明します。"
 keywords: 
 author: nathbarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46cb8510e80db7092de472a769fb5dc78eb5e167
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 62404f6ffede7a7f3f7150da1fde289f2ba9e64f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>出荷時の設定にリセットまたは会社データの削除を使用してデバイスを削除する
 
@@ -35,9 +35,9 @@ ms.lasthandoff: 01/30/2018
 
 ### <a name="to-factory-reset-a-device"></a>デバイスを出荷時の設定にリセットするには
 
-1. [Azure ポータル](https://portal.azure.com)にサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[デバイスとグループ]** ブレードで、**[すべてのデバイス]** を選択します。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
+3. **[デバイス]** ブレードで、**[すべてのデバイス]** を選択します。
 4. 出荷時の設定にリセットするデバイスの名前を選択します。
 5. デバイスの名前が表示されているブレードで、**[出荷時の設定へのリセット]** を選択します。
 6. Windows 10 バージョン 1709 以降の場合、"登録の状態とユーザー アカウントを保持" する追加のオプションがあります。 
@@ -122,9 +122,9 @@ ms.lasthandoff: 01/30/2018
 
 ### <a name="to-remove-company-data"></a>会社データを削除するには
 
-1. [Azure ポータル](https://portal.azure.com)にサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[デバイスとグループ]** ブレードで、**[すべてのデバイス]** を選択します。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
+3. **[デバイス]** ブレードで、**[すべてのデバイス]** を選択します。
 4. 会社データを削除するデバイスの名前を選択します。
 5. デバイスの名前が表示されているブレードで、**[会社データを削除する]** を選択し、**[はい]** を選択して確認します。
 
@@ -134,9 +134,9 @@ ms.lasthandoff: 01/30/2018
 
 通信の問題やデバイスの紛失が原因で、Azure Active Directory (AD) からデバイスを削除することが必要になる場合があります。 削除コマンドではデバイスを管理対象から削除しませんが、**[削除]** を使用して、Azure に到達不能で Azure ともう一度通信する可能性が低いことがわかっているデバイスのレコードを Azure Portal から削除することはできます。
 
-1.  管理者の資格情報を使用して [Azure Portal で Azure Active Directory](http://aka.ms/accessaad) にサインインします。 [Office 365 ポータル](https://portal.office.com)にサインインし、ページ左側のリンクを使用して **[管理者]** &gt; **[Azure AD]** を選択することもできます。
+1.  管理者の資格情報を使用して [Azure Portal で Azure Active Directory](http://aka.ms/accessaad) にサインインします。 [Office 365 ポータル](https://portal.office.com)にサインインし、ページ左側のリンクを使用して **[管理センター]**&gt;**[Azure AD]** を選択することもできます。
 3.  組織 ID がない場合は、Azure サブスクリプションを作成します。 有料アカウントを持っている場合は、作成時にクレジット カードや支払いは必要ありません (**[無料の Azure Active Directory の登録]** サブスクリプション リンクを選択します)。
-4.  **[Active Directory]** を選択し、組織を選択します。
+4.  **[Azure Active Directory]** を選択し、組織を選択します。
 5.  **[ユーザー]** タブを選択します。
 6.  削除するデバイスのユーザーを選択します。
 7.  **[デバイス]** を選択します。
