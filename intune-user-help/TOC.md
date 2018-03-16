@@ -66,6 +66,7 @@
 ### [iOS デバイスの登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [ポータル サイトをインストールしてサインインする](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [iOS デバイスを登録する](enroll-your-device-in-intune-ios.md)
+### [Device Enrollment Program の iOS デバイスを登録する](enroll-your-device-dep-ios.md)
 
 ### [デバイスで管理対象アプリを使用する](use-managed-apps-on-your-device-ios.md)
 ### [パスコードを設定または変更する](set-or-change-your-passcode-ios.md)
