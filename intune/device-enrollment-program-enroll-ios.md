@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8e770c39a22b620bb642b7b15a456369bb4acec2
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 24b1ffb1d89f52a51f21dc6c4a588324f3cd87d3
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="automatically-enroll-ios-devices-by-using-apples-device-enrollment-program"></a>Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する
 
@@ -74,7 +74,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 
 **手順 1: Apple DEP トークンを作成するために必要な Intune 公開キー証明書をダウンロードします。**<br>
 
-1. Azure ポータルの Intune で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]** の順に選択します。
+1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]** の順に選択します。
 
   ![[Apple 証明書] ワークスペースの [Enrollment Program トークン] ウィンドウ](./media/enrollment-program-token-add.png)
 
@@ -116,7 +116,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 
 これでトークンがインストールされました。DEP デバイスの登録プロファイルを作成することができます。 デバイス登録プロファイルで、デバイス グループに対して登録時に適用する設定を定義します。
 
-1. Azure ポータルの Intune で、**[デバイスの登録]** > **[Apple の登録]** の順に選択します。
+1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** の順に選択します。
 2. **[Apple の Enrollment Program]** で、**[Enrollment Program プロファイル]** > **[作成]** の順に選択します。
 3. **[登録プロファイルの作成]** で、管理用にプロファイルの **[名前]** と **[説明]** を入力します。 ユーザーにはこれらの詳細は表示されません。 この **[名前]** フィールドを使用して、Azure Active Directory で動的グループを作成できます。 この登録プロファイルに対応するデバイスを割り当てるために enrollmentProfileName パラメーターを定義する場合はプロファイル名を使用します。 Azure Active Directory の動的グループの詳細については[こちら](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects)を参照してください。
 
@@ -169,7 +169,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 ## <a name="sync-managed-devices"></a>管理対象デバイスを同期する
 デバイスを管理するアクセス許可を Intune に割り当てたので、Intune と Apple を同期して、管理対象デバイスを Azure ポータルの Intune に表示できます。
 
-1. Azure Portal の Intune で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program デバイス]** > **[同期]** の順に選択します。進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
+1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program デバイス]** > **[同期]** の順に選択します。進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
 
   ![[Enrollment Program デバイス] ノードと [同期] リンクの選択](./media/enrollment-program-device-sync.png)
   
@@ -190,7 +190,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 >[!NOTE]
 >**[Apple Serial Numbers\(Apple シリアル番号\)]** ブレードでプロファイルにシリアル番号を割り当てることもできます。
 
-1. Azure ポータルの Intune で **[デバイスの登録]** > **[Apple の登録]** の順に選択し、**[Enrollment Program プロファイル]** を選択します。
+1. [Azure Portal の Intune](https://aka.ms/intuneportal) で **[デバイスの登録]** > **[Apple の登録]** の順に選択し、**[Enrollment Program プロファイル]** を選択します。
 2. **[Enrollment Program プロファイル]** の一覧から、デバイスに割り当てるプロファイルを選択し、**[デバイスの割り当て]** を選択します。
 
  ![[割り当て] が選択された [デバイスの割り当て]](./media/enrollment-program-device-assign.png)

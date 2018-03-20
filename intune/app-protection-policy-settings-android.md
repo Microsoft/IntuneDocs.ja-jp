@@ -15,13 +15,13 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 34334186fbf74507b54d1bf4df347de2c16c39c0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 26f81d8e6ba0fb433d714a5deeaadce9dd619c3f
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="android-app-protection-policy-settings"></a>Android アプリ保護ポリシー設定
+# <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune の Android アプリ保護ポリシー設定
 このトピックでは、Android デバイスのアプリ保護ポリシーの設定について説明します。 説明されているポリシーの設定は、Azure Portal の **[設定]** ブレードでアプリ保護ポリシー用に[構成](app-protection-policies.md)することができます。
 ポリシー設定には、データ再配置設定とアクセス設定の 2 つのカテゴリがあります。 このトピックの "*ポリシーで管理されているアプリ*" という用語は、アプリ保護ポリシーで構成されるアプリを示します。
 

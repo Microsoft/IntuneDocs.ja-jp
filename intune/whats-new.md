@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Intune の新機能"
-titlesuffix: Azure portal
+titlesuffix: 
 description: "Intune Azure Portal の新機能を確認する"
 keywords: 
 author: ErikjeMS
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7490302c7bd928417cdf946cbbf74f8b8b7531ed
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 513164a1f734fddb6ac66fcaffdc2fb885a4659a
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 
@@ -762,11 +762,8 @@ Intune による [Microsoft Intune App SDK Cordova プラグイン](app-sdk-cord
 アプリ ラッピング ツールについては、[iOS 用アプリ ラッピング ツール](app-wrapper-prepare-ios.md)および [Android 用アプリ ラッピング ツール](app-wrapper-prepare-android.md)に関する説明をご覧ください。 問題または質問がある場合は、[msintuneappsdk@microsoft.com](mailto:msintuneappsdk@microsoft.com) にお問い合わせください。 
 
 ### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management----1227338---"></a>変更の計画: MDM 管理に今すぐ Azure で Intune を使用する <!-- 1227338 -->
-1 年以上前、[Azure の Intune のパブリック プレビュー](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/)を発表し、その後、6 か月前に Intune の[新しい管理者エクスペリエンスを一般公開](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/)しました。 Intune スタンドアロンをご利用の場合、2018 年 4 月 2 日以降、従来の Silverlight コンソールではモバイル デバイス管理 (MDM) を使用できなくなります。 MDM が必要な場合は、代わりに [Azure 上の Intune](https://aka.ms/Intune_on_Azure) を使用できます。 まだ MDM に従来のコンソールを使用している場合は、使用を止め、Azure 上の Intune に慣れてください。 この変更によるエンド ユーザーへの影響はない予定です。 従来の PC 管理は Silverlight に残ります。 この変更とその影響については、[こちら](https://aka.ms/Intune_on_Azure_mdm)を参照してください。
+1 年以上前、[Azure の Intune のパブリック プレビュー](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/)を発表し、その後、6 か月前に Intune の[新しい管理者エクスペリエンスを一般公開](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/)しました。 Intune スタンドアロンをご利用の場合、2018 年 8 月 31 日以降、従来の Silverlight コンソールではモバイル デバイス管理 (MDM) を使用できなくなります。 MDM が必要な場合は、代わりに [Azure 上の Intune](https://aka.ms/Intune_on_Azure) を使用できます。 まだ MDM に従来のコンソールを使用している場合は、使用を止め、Azure 上の Intune に慣れてください。 この変更によるエンド ユーザーへの影響はない予定です。 従来の PC 管理は Silverlight に残ります。 この変更とその影響については、[こちら](https://aka.ms/Intune_on_Azure_mdm)を参照してください。
 
-
-### <a name="plan-for-change-easy-assist-end-of-life----1556480---"></a>予定されている変更: Easy Assist のサービス終了<!-- 1556480 -->
-Intune では、PC 管理のリモート アシスタンスに Microsoft Easy Assist を使用しています。 ご存知ないとは思いますが、Microsoft Easy Assist は、2017 年 12 月 31 日にサービスを終了する Office Live Meeting のコンポーネントの 1 つです。 そのため、Intune の Easy Assist サービスも、2017 年 12 月 31 日をもって終了いたします。
 
 ### <a name="manage-android-for-work-devices-independently-from-android-devices----1490731-eeready--"></a>Android デバイスとは別に Android for Work デバイスを管理する <!-- 1490731 EEready-->    
 **注**: 以下の変更は 11 月の更新をもってロールアウトが開始されます。ただし、自分のアカウントでは実行に時間がかかることがあります。 変更が自分のアカウントに適用されると、Office 365 ポータルで確認通知が届きます。 ロールアウト後、管理機能の追加のオプションを使用できるようになります。 ロールアウト中、エンド ユーザーのエクスペリエンスに対する変更はありません。
@@ -795,25 +792,8 @@ Intune は、Android プラットフォームに依存することなく、Andro
 
 いずれの場合でも、意図した規制が維持されます。 自分の環境で Android for Work のグローバル許可またはグループ別許可を維持するための操作は必要ありません。
 
-### <a name="deprecating-support-for-os-x-mavericks-1010-and-previous-versions-of-macos---1489263-plan-for-change-for-1802--"></a>OS X Mavericks 10.10 と以前のバージョンの macOS のサポートは廃止に <!--1489263, plan for change for 1802-->
-2018 年 2 月に OS X Yosemite 10.10 と以前のバージョンの macOS を搭載したデバイスの登録が廃止されます。 Intune は OS X El Capitan 10.11 以降を完全サポートします。
-
-### <a name="new-path-for-managed-devices-in-graph-api----1586728---"></a>Graph API での管理対象デバイスに対する新しいパス <!-- 1586728 -->
-Graph API のベータ版で管理対象デバイスにアクセスするために使用されるパスが変更されています。 
-
-| | |
-|--|--|
-| 現在のパス |  https://graph.microsoft.com/beta/managedDevices |
-| 新しいパス | https://graph.microsoft.com/beta/deviceManagement/managedDevices |
-
-10 月中は両方のパスを使うことができます。 10 月のサービス リリース後は、新しいパスのみが機能します。  Graph API を使用して管理対象デバイスにアクセスしている場合は、スクリプトとアプリケーションを新しいパスで更新して確認してください。 追加の変更については、毎月の [Graph API 変更ログ](https://developer.microsoft.com/graph/docs/concepts/changelog)でご確認ください。
-
-
 ### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Apple 登録シナリオへの直接アクセス <!--951869-->
 Intune では、2017 年 1 月以降に作成された Intune アカウントについて、Azure Portal の Enroll Devices ワークロードを使用して、Apple 登録シナリオに直接アクセスできるようになりました。 これまでは、Apple 登録プレビューは Intune クラシック ポータルのリンクからのみアクセスが可能でした。 2017 年 1 月より前に作成された Intune アカウントの場合は、これらの機能が Azure で利用可能になるまでの間、1 回限りの移行が必要です。 移行スケジュールはまだ発表されていませんが、詳細はできる限り早く発表します。 既存のアカウントで Azure Portal にアクセスできない場合は、試用アカウントを作成して、新しいエクスペリエンスをテストすることを強くお勧めします。
-
-### <a name="administration-roles-being-replaced-in-azure-portal"></a>Azure Portal で置き換えられる管理ロール
-Intune クラシック ポータル (Silverlight) で使用される既存のモバイル アプリケーション管理 (MAM) の管理ロール (共同作成者、所有者、および読み取り専用) は、Intune Azure Portal の新しいロール ベースの管理制御 (RBAC) の完全なセットで置き換えられます。 Azure Portal に移行すると、管理者をこれらの新しい管理ロールに割り当て直す必要があります。 RBAC と新しいロールの詳細については、[Microsoft Intune のロール ベースのアクセス制御](/intune/role-based-access-control)に関する記事を参照してください。
 
 ## <a name="whats-coming"></a>今後の更新情報
 
@@ -822,24 +802,6 @@ Intune クラシック ポータル (Silverlight) で使用される既存のモ
 iOS 用のポータル サイト アプリに対して、主要なユーザー エクスペリエンスの更新プログラムをリリースする予定です。 この更新プログラムは、新しいルック アンド フィール、使いやすさとアクセシビリティの向上を含め、ビジュアル デザインの刷新が特徴です。 現在の iOS ポータル サイト機能はすべて維持されます。
 
 お客様がフィードバックを使用および送信できるように、Apple TestFlight プログラムを使用して iOS 用の更新されたポータル サイト アプリのプレリリース バージョンを提供しています。 TestFlight にアクセスするには、https://aka.ms/intune_ios_cp_testflight にサインアップしてください。
-
-### <a name="conditional-access-policies-for-intune-will-only-be-available-from-the-azure-portal-----1737088---"></a>Intune の条件付きアクセス ポリシーは、Azure Portal からのみ利用できる<!-- 1737088 -->
-Microsoft では、条件付きアクセスを構成および管理する場所を単純化しています。 現在、Intune App Protection (MAM) ブレードと [Microsoft Azure Portal](https://manage.windowsazure.com) のクラシック Azure AD エクスペリエンスから条件付きアクセスを管理できます。 1 月以降は、**[Azure Active Directory]**  >  **[条件付きアクセス]**からのみ [Azure Portal](https://portal.azure.com) のポリシーを構成したり管理したりすることができます。 便宜上、**[Intune]**  >  **[条件付きアクセス]**の、Azure Portal 内にある Intune からこのブレードにアクセスすることもできます。
-
-### <a name="manage-jamf-enrolled-macos-devices-with-intunes-device-compliance-engine---1592747--"></a>Intune のデバイス コンプライアンス エンジンを使用した Jamf に登録された macOS デバイスの管理 <!--1592747-->
-2018 年初めより、Jamf から Intune に macOS デバイスの状態情報が送信されるようになります。その情報はその後、Intune コンソールで定義されたポリシーへの準拠が評価されます。 条件付きアクセスでは、デバイスのコンプライアンス対応状態や、その他の条件 (場所やユーザー リスクなど) に基づいて、Azure AD に接続されたクラウド アプリケーションやオンプレミス アプリケーション (Office 365 など) にアクセスする macOS デバイスにコンプライアンスを適用します。
-
-### <a name="changes-in-support-for-the-intune-ios-company-portal-app-----1164474----"></a>Intune iOS ポータル サイト アプリのサポートの変更  <!-- 1164474  -->
-間もなく、iOS 用 Microsoft Intune ポータル サイト アプリが新しいバージョンになり、iOS 9.0 以降を実行しているデバイスのみがサポートされるようになります。 iOS 8 をサポートするバージョンのポータル サイトは、今後、短い時間だけ使用を続けることができます。 ただし、MAM が有効な iOS アプリも使っている場合は、iOS 9.0 以降しかサポートされないので、エンド ユーザーを最新の OS に更新させる必要があります。 
-
-#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
-具体的な日付は決まっていませんが、計画できるように事前にお知らせします。 ユーザーが iOS 9 以降に更新したことを確認し、ポータル サイト アプリのリリース時にはポータル サイト アプリを更新するようエンドユーザーに要求してください。
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
-新しい Intune の機能を最大限に活用するには iOS 9.0 以降に更新するようユーザーに推奨します。  新しいバージョンのポータル サイトをインストールして新しい機能を活用するようユーザーに推奨します。
-
-Azure Portal の Intune で [デバイス] の [すべてのデバイス] に移動し、iOS のバージョンでフィルター処理して、現在 iOS 9 より前のオペレーティング システムを使っているデバイスを確認します。
-
 
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple の要求による Application Transport Security 対応のための更新<!--748318-->
 Apple は、Application Transport Security (ATS) の特定の要件を適用すると発表しました。 ATS では、HTTPS 経由で行われるアプリ通信すべてに、より厳格なセキュリティ保護が適用されます。 この変更により、iOS ポータル サイト アプリを使用している Intune ユーザーが影響を受けます。

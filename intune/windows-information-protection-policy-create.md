@@ -1,12 +1,12 @@
 ---
-title: "Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する"
-titlesuffix: Azure portal
-description: "Intune で WIP アプリ保護ポリシーを作成して展開します"
+title: "Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する"
+titlesuffix: Microsoft Intune
+description: "Microsoft Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する"
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: doubeby
-ms.date: 02/16/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,119 +15,108 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 647e6fd129593156f2ba24299a19e96686206165
-ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
+ms.openlocfilehash: 4325d77982bcca748a38696fbbbb413a1c304ffb
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune 1704 リリース以降では、Windows 10 でアプリ保護ポリシーを使用して、デバイスを登録せずにアプリを保護できます。
+Windows 10 アプリでアプリ保護ポリシーを使用して、デバイスを登録せずにアプリを保護できます。
 
 ## <a name="before-you-begin"></a>始める前に
 
-WIP ポリシーを追加するときのいくつかの概念について説明します。
+WIP ポリシーを追加するときのいくつかの概念について理解する必要があります。
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>許可されているアプリと適用から除外されるアプリの一覧
 
 -   **[許可されているアプリ]**: このポリシーに準拠する必要があるアプリです。
 
--   **[適用から除外されるアプリ]**: これらのアプリはこのポリシーから除外され、制限なしに企業データにアクセスできます。
+-   **[適用から除外されるアプリ]**: これらのアプリはこのポリシーから除外され、制限なしに会社のデータにアクセスできます。
 
 ### <a name="types-of-apps"></a>アプリの種類
 
--   **おすすめのアプリ:** ポリシーに簡単にインポートできるようにあらかじめ設定されている (ほとんどは Microsoft Office) アプリの一覧です。 <!---I really don't know what you mean by "easily import into policy"--->
-
+-   **おすすめのアプリ:** ポリシーに簡単にインポートできるようにあらかじめ設定されている (ほとんどは Microsoft Office) アプリの一覧です。
 -   **ストア アプリ:** Windows ストアからポリシーに任意のアプリを追加できます。
-
 -   **Windows デスクトップ アプリ:** 従来の Windows デスクトップ アプリをポリシーに追加できます (exe、dll など)。
 
-## <a name="pre-requisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
 WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを構成する必要があります。 [Intune で MAM プロバイダーを構成する方法](app-protection-policies-configure-windows-10.md)を理解します。
 
 さらに、次のライセンスと更新プログラムが必要です。
 
--   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) ライセンス。
+-   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) ライセンス
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
 > [!IMPORTANT]
 > WIP は複数の ID をサポートしていません。存在できる管理対象 ID は一度に 1 つだけです。
-<!---Should you be linking to a topic that explains what multi-identity is?--->
 
-## <a name="to-add-a-wip-policy"></a>WIP ポリシーを追加するには
+## <a name="to-add-a-wip-app-protection-policy"></a>WIP アプリ保護ポリシーを追加するには
 
-組織で Intune を設定した後は、[Azure Portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) を使用して WIP 固有のポリシーを作成できます。 <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure doc set?--->
+組織で Intune を設定した後は、WIP 固有のポリシーを作成できます。
 
-1.  **Intune モバイル アプリケーション管理ダッシュボード**に移動し、**[すべての設定]** > **[アプリに関するポリシー]** を選択します。
-
-2.  **[アプリに関するポリシー]** ブレードで **[ポリシーの追加]** を選び、次の値を入力します。
-
-    」を参照します。  **[名前]:** (必須) 新しいポリシーの名前を入力します。
-
-    b.  **[説明]:** 必要に応じて説明を入力します。
-
-    c.  **[プラットフォーム]:** アプリ保護ポリシーのサポート対象プラットフォームとして **[Windows 10]** を選択します。
-
-    d.  **[登録の状態]:** ポリシーの登録状態として、**[未登録]** を選択します。
-
-3.  **[作成]** を選択します。 ポリシーが作成されて、**[アプリに関するポリシー]** ブレードのテーブルに表示されます。
+1. [Azure Portal](https://portal.azure.com) にサインインします。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。
+3. **[Microsoft Intune]** ブレードで、**[モバイル アプリ]** を選択します。
+4. **[モバイル アプリ]** ブレードで、**[アプリ保護ポリシー]** を選択します。
+5. **[ポリシーの追加]** をクリックして、**[ポリシーの追加]** ブレードを表示します。
+6. 次の値を追加します。
+    - **[名前]:** (必須) 新しいポリシーの名前を入力します。
+    - **[説明]:** (省略可能) 説明を入力します。
+    - **[プラットフォーム]:** アプリ保護ポリシーのサポート対象プラットフォームとして **[Windows 10]** を選択します。
+    - **[登録の状態]:** ポリシーの登録状態として、**[未登録]** を選択します。
+7.  **[作成]** を選択します。 ポリシーが作成されて、**[アプリ保護ポリシー]** ブレードのテーブルに表示されます。
 
 ## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>許可されているアプリの一覧におすすめのアプリを追加するには
 
-1.  **[アプリに関するポリシー]** ブレードでポリシーの名前を選び、**[ポリシーの追加]** ブレードで **[許可されているアプリ]** を選びます。 **[許可されているアプリ]** ブレードが開き、このアプリ保護ポリシーの一覧に既に含まれているすべてのアプリが表示されます。
-
-2.  **[許可されているアプリ]** ブレードで、**[アプリの追加]** を選択します。 **[アプリの追加]** 情報には、この一覧に含まれるすべてのアプリが表示されます。
-
-3.  企業データへのアクセスを許可する各アプリを選択し、**[OK]** を選択します。 **[許可されているアプリ]** ブレードが更新され、選択したすべてのアプリが表示されます。
+1. **[Microsoft Intune]** ブレードで、**[モバイル アプリ]** を選択します。
+2. **[モバイル アプリ]** ブレードで、**[アプリ保護ポリシー]** を選択します。
+3. **[アプリ保護ポリシー]** ブレードで、変更するポリシーを選択します。 **[Intune App Protection]** ブレードが表示されます。
+4. **[Intune App Protection]** ブレードで **[Protected apps]\(保護されたアプリ\)** を選択します。 **[Protected apps]\(保護されたアプリ\)** ブレードが開き、このアプリ保護ポリシーの一覧に既に含まれているすべてのアプリが表示されます。
+5. **[アプリの追加]** を選択します。 **[アプリの追加]** の情報には、フィルターが適用されたアプリの一覧が表示されます。 ブレード上部の一覧では、一覧のフィルターを変更することができます。
+6. 会社のデータへのアクセスを許可する各アプリを選択します。
+7. **[OK]** をクリックします。 **[Protected apps]\(保護されたアプリ\)** ブレードが更新され、選択したすべてのアプリが表示されます。
+8. **[Save]**(保存) をクリックします。
 
 ## <a name="add-a-store-app-to-your-allowed-apps-list"></a>許可されているアプリの一覧にストア アプリを追加する
 
 **ストア アプリを追加するには**
-
-1.  **[アプリに関するポリシー]** ブレードで、ポリシーの名前を選び、このアプリ保護ポリシーの一覧に既に含まれているすべてのアプリが表示されるメニューから **[許可されているアプリ]** を選びます。
-
-2.  **[許可されているアプリ]** ブレードで、**[アプリの追加]** を選択します。
-
-3.  **[アプリの追加]** ブレードで、ドロップダウン リストから **[ストア アプリ]** を選択します。 情報が変化し、**パブリッシャー**とアプリの**名前**を追加するためのボックスが表示されます。
-
-4.  アプリの名前とパブリッシャーの名前を入力し、**[OK]** を選択します。
-
-    > [!TIP]
-    > たとえば、**パブリッシャー**には「*CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US*」と、製品の**名前**には「*Microsoft.MicrosoftAppForWindows*」と入力します。
-
-5.  フィールドに情報を入力した後、**[OK]** を選択して **[許可されているアプリ]** の一覧にアプリを追加します。
-
-> [!NOTE]
-> 同時に複数のストア アプリを追加するには、アプリ行の末尾にあるメニュー **[...]** をクリックし、アプリの追加を続けます。 終了したら、**[OK]** を選択します。
+1. **[Microsoft Intune]** ブレードで、**[モバイル アプリ]** を選択します。
+2. **[モバイル アプリ]** ブレードで、**[アプリ保護ポリシー]** を選択します。
+3. **[アプリ保護ポリシー]** ブレードで、変更するポリシーを選択します。 **[Intune App Protection]** ブレードが表示されます。
+4. **[Intune App Protection]** ブレードで **[Protected apps]\(保護されたアプリ\)** を選択します。 **[Protected apps]\(保護されたアプリ\)** ブレードが開き、このアプリ保護ポリシーの一覧に既に含まれているすべてのアプリが表示されます。
+5. **[アプリの追加]** を選択します。 **[アプリの追加]** の情報には、フィルターが適用されたアプリの一覧が表示されます。 ブレード上部の一覧では、一覧のフィルターを変更することができます。
+6. 一覧から **[ストア アプリ]** を選択します。
+7. **[名前]**、**[公開元]**、**[製品名]**、**[アクション]** に値を入力します。 アプリが会社のデータにアクセスできるように、**[アクション]** の値を **[許可]** に設定してください。
+9. **[OK]** をクリックします。 **[Protected apps]\(保護されたアプリ\)** ブレードが更新され、選択したすべてのアプリが表示されます。
+10. **[Save]**(保存) をクリックします。
 
 ## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>許可されているアプリの一覧にデスクトップ アプリを追加する
 
 **デスクトップ アプリを追加するには**
-
-1.  **[アプリに関するポリシー]** ブレードでポリシーの名前を選び、**[許可されているアプリ]** を選びます。 **[許可されているアプリ]** ブレードが開き、このアプリ保護ポリシーの一覧に既に含まれているすべてのアプリが表示されます。
-
-2.  **[許可されているアプリ]** ブレードで、**[アプリの追加]** を選択します。
-
-3.  **[アプリの追加]** ブレードで、ドロップダウン リストから **[デスクトップ アプリ]** を選択します。
-
-4.  フィールドに情報を入力した後、**[OK]** を選択して **[許可されているアプリ]** の一覧にアプリを追加します。
-
-> [!NOTE]
-> 同時に複数の**デスクトップ アプリ**を追加するには、アプリ行の末尾にあるメニュー **[...]** をクリックし、アプリの追加を続けます。 終了したら、**[OK]** を選択します。
+1. **[Microsoft Intune]** ブレードで、**[モバイル アプリ]** を選択します。
+2. **[モバイル アプリ]** ブレードで、**[アプリ保護ポリシー]** を選択します。
+3. **[アプリ保護ポリシー]** ブレードで、変更するポリシーを選択します。 **[Intune App Protection]** ブレードが表示されます。
+4. **[Intune App Protection]** ブレードで **[Protected apps]\(保護されたアプリ\)** を選択します。 **[Protected apps]\(保護されたアプリ\)** ブレードが開き、このアプリ保護ポリシーの一覧に既に含まれているすべてのアプリが表示されます。
+5. **[アプリの追加]** を選択します。 **[アプリの追加]** の情報には、フィルターが適用されたアプリの一覧が表示されます。 ブレード上部の一覧では、一覧のフィルターを変更することができます。
+6. 一覧から **[デスクトップ アプリ]** を選択します。
+7. **[名前]**、**[公開元]**、**[製品名]**, **[ファイル]**、**[最小バージョン]**、**[最大バージョン]**、**[アクション]** に値を入力します。 アプリが会社のデータにアクセスできるように、**[アクション]** の値を **[許可]** に設定してください。
+9. **[OK]** をクリックします。 **[Protected apps]\(保護されたアプリ\)** ブレードが更新され、選択したすべてのアプリが表示されます。
+10. **[Save]**(保存) をクリックします。
 
 ## <a name="wip-learning"></a>WIP の学習
-<!---You've already defined WIP earlier in the topic. You don't need to keep doing so. --->
 WIP で保護するアプリを追加した後は、**[WIP の学習]** を使って保護モードを適用する必要があります。
 
 ### <a name="before-you-begin"></a>始める前に
 
 WIP の学習は、WIP が有効なアプリおよび WIP にとって不明なアプリを監視できるようにするレポートです。 不明アプリは、組織の IT 部門によって展開されていないアプリです。 "ブロック" モードで WIP を適用する前に、レポートからこのようなアプリをエクスポートして WIP ポリシーに追加することで、生産性の阻害を回避できます。
 
-<!-- 1631908 --> In addition to viewing information about WIP-enabled apps, you can view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies. The summary shows which website URLs are accessed by WIP-enabled apps.
+<!-- 1631908 -->
+WIP が有効になっているアプリの情報を表示できるだけでなく、作業データを Web サイトで共有しているデバイスの概要も表示できます。 この情報を使用して、グループおよびユーザーの WIP ポリシーに追加する Web サイトを判断できます。 概要には、WIP が有効なアプリからアクセスされる Web サイトの URL が示されます。
 
 WIP が有効なアプリおよび WIP にとって不明なアプリを使うとき、最初は **[サイレント]** または **[上書きの許可]** を使用し、許可されているアプリの一覧に適切なアプリが含まれる小規模なグループで確認することをお勧めします。 それが済んだ後、最終的な適用ポリシーである **[ブロック]** に変更できます。
 
@@ -153,22 +142,22 @@ WIP を無効にすると、ローカルに接続されたドライブ上の WIP
 
     ![学習モードのスクリーンショット](./media/learning-mode-sc1.png)
 
-2.  **[保存]** を選びます。
+1.  設定を選択して、**[保存]** を選びます。
 
 ### <a name="use-wip-learning"></a>WIP の学習を使用する
 
-1. Azure ポータルを開きます。 **[その他のサービス]** を選択します。 テキスト ボックス フィルターに「**Intune**」と入力します。
+1. [Azure Portal](https://portal.azure.com) を開きます。 **[すべてのサービス]** を選択します。 テキスト ボックス フィルターに「**Intune**」と入力します。
 
 3. **[Intune]**、**[モバイル アプリ]** の順に選択します。
 
 4. **[アプリの保護状態]** > **[レポート]** > **[Windows 情報保護の学習]** の順に選択します。  
- 
+
     WIP の学習のログ レポートにアプリが表示されたら、それをアプリ保護ポリシーに追加できます。
 
 ## <a name="allow-windows-search-indexer-to-search-encrypted-items"></a>暗号化されたアイテムの検索を Windows Search Indexer に許可する
 アイテムのインデックス作成を許可または禁止します。 これは Windows Search Indexer 用のスイッチです。Windows 情報保護 (WIP) で保護されたファイルなど、暗号化されたアイテムにインデックスを付けるかどうかを制御します。
 
-このアプリの保護ポリシー オプションは、Windows 情報保護ポリシーの **[詳細設定]** にあります。 アプリの保護ポリシーは、*[Windows 10]* プラットフォームに設定し、アプリ ポリシーの **[登録状態]** は **[登録済み]** に設定する必要があります。 
+このアプリの保護ポリシー オプションは、Windows 情報保護ポリシーの **[詳細設定]** にあります。 アプリの保護ポリシーは、*[Windows 10]* プラットフォームに設定し、アプリ ポリシーの **[登録状態]** は **[登録済み]** に設定する必要があります。
 
 このポリシーが有効な場合、WIP で保護されたアイテムにインデックスが付けられ、それらのメタデータは暗号化されていない場所に保存されます。 メタデータには、ファイル パスや変更日などがあります。
 
@@ -195,4 +184,4 @@ WIP アプリ保護ポリシーを作成した後、MAM を使ってポリシー
 
 ## <a name="next-steps"></a>次の手順
 
-- Windows 情報保護の詳細については、「[Protect your enterprise data using Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)」(Windows 情報保護 (WIP) を使用してエンタープライズ データを保護する) を参照してください。 
+Windows 情報保護の詳細については、「[Protect your enterprise data using Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)」(Windows 情報保護 (WIP) を使用してエンタープライズ データを保護する) を参照してください。
