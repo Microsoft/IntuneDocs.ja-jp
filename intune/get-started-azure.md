@@ -6,8 +6,8 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
-ms.topic: get-started-article
+ms.date: 02/26/2018
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd2a5af8c5535fc45083b1386f378604b0b67353
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: f2d0a77c9e9e36db53c23031fd9f06f508fef15d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>Azure Portal での Microsoft Intune の概要
 
@@ -31,7 +31,7 @@ Azure Portal の左側にある__サイドバー__には、利用できるすべ
 
 ![あるユーザーが 'その他のサービス' 一覧で Microsoft Intune を探しています。](./media/azure-add-intune1.png)
 
-1. ページの左側にあるサイドバーの一番下から **[その他のサービス]** を選択します。
+1. ページの左側にあるサイドバーから **[すべてのサービス]** を選択します。
 2. フィルター ボックスで **Intune** を検索します。
 3. **星**マークを選択し、お気に入りサービス一覧の一番下に Intune を追加します。
 4. Intune サービスの上にカーソルを合わせます。 Intune を選択してドラッグします。サービス名の右側にある **3 つの垂直ドット**を利用します。
@@ -52,7 +52,7 @@ Azure Portal の左側にある__サイドバー__には、利用できるすべ
 
 ## <a name="using-services"></a>サービスの使用
 
-Microsoft Intune やその他のサービスを Azure で開くたびに、サービスは**ブレード**に表示されます。 **ユーザー**、**グループ**、**モバイル アプリ**など、Intune で最初に使用するワークロードはすべて、全画面ブレードで表示されます。 ワークロードを選択すると、そのブレードが全画面で開きます。 他のブレードは開くときにブレードの右側から引き出され、メイン ブレードの下で折りたたまれます。
+Intune やその他のサービスを Azure で開くたびに、サービスは**ウィンドウ**に表示されます。 **ユーザー**、**グループ**、**モバイル アプリ**など、Intune で最初に使用するワークロードはすべて、全画面ウィンドウで表示されます。 ワークロードを選択すると、そのウィンドウが全画面で開きます。 他のウィンドウは開くときにウィンドウの右側から引き出され、メイン ウィンドウの下で折りたたまれます。
 
 ## <a name="next-steps"></a>次の手順
 

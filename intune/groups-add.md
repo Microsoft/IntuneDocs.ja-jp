@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42e7e2c8d239b8150f67a699ba6fef156b3e1a7d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: b7d2b551832d8d0e467d079df673954318623e4c
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>ユーザーとデバイスを整理するためのグループを追加する
 Intune では、デバイスとユーザーの管理に Azure Active Directory (AD) のグループを使用します。 Intune 管理者は、組織のニーズに合ったグループをセットアップできます。 地理的な場所、部門、ハードウェアの特性ごとにグループを作成して、ユーザーまたはデバイスを整理します。 大規模なタスクを管理するには、グループを使用します。 多数のユーザーにポリシーを設定したり、一連のデバイスにアプリを展開したりする場合などです。
@@ -33,9 +33,11 @@ Intune では、デバイスとユーザーの管理に Azure Active Directory (
 ## <a name="add-a-new-group"></a>新しいグループを追加する
 
 新しいグループを作成するには、次の手順に従います。
-1. Azure Portal で **[グループ]** に進み、**[All groups]/(すべてのグループ)/** ブレードで **[新しいグループ]** を選択します。
-  ![[新しいグループ] が選択されている [ユーザーとグループ] 画面のスクリーンショット](./media/groups-add-new.png)
-2. 新しいグループの **[名前]** と **[説明]** を指定します。 これらのプロパティは、管理ポータルのみに表示され、ユーザーには表示されません。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. **[Intune]** ウィンドウで **[グループ]** を選択し、**[すべてのグループ]** ウィンドウで **[新しいグループ]** を選択します。
+  ![[新しいグループ] が選択された Azure Portal のスクリーンショット](./media/groups-add-new.png)
+2. 新しいグループの **[グループの種類]**、**[名前]**、**[説明]** を指定します。 これらのプロパティは、管理ポータルのみに表示され、ユーザーには表示されません。
 
 3. **[メンバーシップの種類]** を選択します。
   - 手動で割り当てられたメンバーからグループを作成するには、**[割り当て済み]** を選択します。 詳細については、「[Azure Active Directory でグループを作成し、メンバーを追加する](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal)」を参照してください。

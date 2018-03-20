@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 861c971c98493f6adab78e6bc93d560bbc1d5243
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: eee23afb4e2398358dc2c6b19b7d85be6b4f9edb
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 #<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Microsoft Intune での Windows 10 以降のデバイスの制限設定
 この記事では、Windows 10 を実行するデバイスに構成できるすべての Microsoft Intune デバイスの制限設定について説明します。
@@ -268,7 +268,7 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 
       - **[ユーザー アカウント]** - (デバイスの) ローカル ユーザー アカウントか、キオスク アプリに関連付けられている Azure AD アカウント ログインを指定します。 Azure AD ドメインに参加しているアカウントについては、`domain\\username@tenant.org` の形式でアカウントを指定します。
 
-         公共の場におけるデバイスについては、認可アクティビティを禁止するために最小特権のアカウントを使用します。  
+         公共の場におけるデバイスについては、許可されていないアクティビティを禁止するために最小特権のアカウントを使用します。  
 
       - **アプリのアプリケーション ユーザー モデル ID (AUMID)** - キオスク アプリの AUMID を指定します。 詳細については、「[Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)」 (インストール済みアプリのアプリケーション ユーザー モデル ID を見つける) を参照してください。
 

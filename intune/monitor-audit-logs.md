@@ -4,17 +4,17 @@ description: "Intune のアクティビティを記録する監査ログを確�
 keywords: 
 author: dougeby
 manager: dougeby
-ms.date: 12/12/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: 9f514e6d2dec268efe99f682bc3ef4e63ec53c02
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 55499bc8126958918ac2494fc86059eb3d331c69
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="audit-logs-for-intune-activities"></a>Intune のアクティビティの監査ログ
 監査ログには、Microsoft Intune で変更を行うアクティビティが記録されます。 作成、更新 (編集)、削除、割り当ての操作またはリモート タスクが実行されると、確認可能な監査イベントが生成されます。 Intune ワークロードの監査ログの大半を確認できます。 すべてのユーザーは既定で監査が有効になっています。無効にすることはできません。 監査イベントは、2017 年 12 月の機能リリース日から記録が開始されました。これよりも前の監査イベントは利用できません。
@@ -28,8 +28,8 @@ ms.lasthandoff: 02/23/2018
 ## <a name="audit-logs-for-intune-workloads"></a>Intune ワークロードの監査ログ
 各 Intune ワークロードの監視グループで監査ログを確認できます。  
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、監査ログを確認するワークロードを選択します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. **[Intune]** ウィンドウで、**[デバイス]** などの監査ログを確認するワークロードを選択します。
 4. ワークロードの**監視**グループで、**[監査ログ]** を選択します。
 
 ## <a name="review-audit-events"></a>監査イベントの確認
@@ -39,6 +39,7 @@ ms.lasthandoff: 02/23/2018
 
 - イベントが発生した日時
 - 開始者 (アクター)
+- アプリケーション名
 - アクティビティ
 - ターゲット
 - Category
@@ -55,7 +56,7 @@ ms.lasthandoff: 02/23/2018
 
 
 ## <a name="filter-audit-events"></a>監査イベントのフィルター
-各ワークロードには、そのブレードに関連付けられた監査イベントのカテゴリを事前にフィルターするメニュー項目があります。 別個のフィルター オプションを使用すると、別のカテゴリに変更したり、そのカテゴリ内のイベント アクションの詳細に変更したりできます。 UPN (そのアクションを行ったユーザーなど) で検索することができます。 日付範囲フィルターは、24 時間、7 日間、または 30 日間から選べます。 既定では、過去 30 日の監査イベントが表示されます。
+各ワークロードには、そのウィンドウに関連付けられた監査イベントのカテゴリを事前にフィルターするメニュー項目があります。 別個のフィルター オプションを使用すると、別のカテゴリに変更したり、そのカテゴリ内のイベント アクションの詳細に変更したりできます。 UPN (そのアクションを行ったユーザーなど) で検索することができます。 日付範囲フィルターは、24 時間、7 日間、または 30 日間から選べます。 既定では、過去 30 日の監査イベントが表示されます。
 
 ## <a name="use-graph-api-to-retrieve-audit-events"></a>Graph API を使用した監査イベントの取得
 Graph API を使用して、最長 1 年間の監査イベントを取得する方法の詳細については、「[List auditEvents (auditEvents の一覧)](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_auditing_auditevent_list)」をご覧ください。

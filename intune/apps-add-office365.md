@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a8045261f93c6ac0282a03f13ac7bb7a7caac0d
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 076d228f3b18416e4ecb8fd1b3543a58d037e386
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune で Windows 10 デバイスに Office 365 ProPlus アプリを割り当てる方法
+# <a name="how-to-assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune で Windows 10 デバイスに Office 365 アプリを割り当てる方法
 
-このアプリの種類を使用すると、Windows 10 を実行している管理対象のデバイスに Office 365 ProPlus アプリを簡単に割り当てることができます。 また、ライセンスを所有している場合は、Microsoft Project Online デスクトップ クライアントおよび Visio Pro for Office 365 のアプリをインストールすることもできます。 必要なアプリは、Intune コンソールのアプリ一覧に単一のエントリとして表示されます。
+このアプリの種類を使用すると、Windows 10 を実行している管理対象のデバイスに Office 365 アプリを簡単に割り当てることができます。 また、ライセンスを所有している場合は、Microsoft Project Online デスクトップ クライアントおよび Visio Pro for Office 365 のアプリをインストールすることもできます。 必要なアプリは、Intune コンソールのアプリ一覧に単一のエントリとして表示されます。
 
 
 ## <a name="before-you-start"></a>開始する前に
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/02/2018
 >Office をインストールするこの方法は、他のバージョンの Microsoft Office がデバイスにインストールされていない場合にのみサポートされます。
 
 - これらのアプリを展開するデバイスでは、Windows 10 Creators Update 以降を実行している必要があります。
-- Intune は、Office 365 ProPlus スイートの Office アプリの追加のみをサポートします。
+- Intune は、Office 365 スイートの Office アプリの追加のみをサポートします。
 - Intune でアプリ スイートをインストールするときに、Office アプリが開いている場合は、インストールが失敗し、エンド ユーザーは保存されていないファイルのデータを失う可能性があります。
 - このインストール方法は、Windows 10S、Windows Home、Windows Team、Windows Holographic、Windows Holographic for Business の各デバイスではサポートされていません。
 - Intune では、Intune を使用して Office 365 アプリを既に展開しているデバイス上の Microsoft Store から Office 365 デスクトップ アプリ (Office Centennial アプリとして知られる) をインストールすることをサポートしていません。 この構成をインストールすると、データが損失したり壊れたりする可能性があります。
@@ -41,12 +41,13 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="get-started"></a>作業開始
 
-1.  Azure Portal にサインインします。
-2.  **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
+1.  サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2.  **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3.  **[Intune]** ブレードで、**[モバイル アプリ]** を選びます。
-4.  **[モバイル アプリ]** ワークロードで、**[管理]** > **[アプリ]** の順に選択します。
+4.  **[Mobile Apps]** ワークロードで、**[管理]** セクションから **[アプリ]** を選択します。
 5.  アプリの一覧の上にある **[追加]** を選択します。
-6.  **[アプリの追加]** ブレードで、**[Office 365 ProPlus スイート (Windows 10)]** を選択します。
+6.  **[アプリの追加]** ブレードの **[アプリの種類]** 一覧で、**[Office 365 スイート]** の下の **[Windows 10]** を選択します。
+    これで、アプリ スイートを構成できます。
 
 ## <a name="configure-the-app-suite"></a>アプリ スイートの構成
 
@@ -61,7 +62,7 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="configure-app-information"></a>アプリ情報の構成
 
-この手順では、アプリ スイートに関する情報を指定します。 この情報は、アプリ スイートを Intune で識別したり、ユーザーが会社のポータル サイト アプリで探したりする場合に役立ちます。
+この手順では、アプリ スイートに関する情報を指定する必要があります。 この情報は、Intune でアプリ スイートを識別したり、ユーザーが会社のポータル サイト アプリで探したりする場合に役立ちます。
 
 1.  **[アプリの追加]** ブレードで、**[アプリ スイートの情報]** を選択します。
 2.  **[アプリ スイートの情報]** ブレードで、次の情報を指定します。
@@ -75,7 +76,7 @@ ms.lasthandoff: 03/02/2018
     - **[開発者]** - 必要に応じて、アプリ開発者の名前を入力します。
     - **[所有者]** - 必要に応じて、このアプリの所有者の名前 ("**人事部**" など) を入力します。
     - **[メモ]** - このアプリに関連付けるメモを入力します。
-    - **[アイコンのアップロード]** - ユーザーが会社のポータルを参照するときに、アプリに表示されるアイコンをアップロードします。
+    - **[ロゴ]** - ユーザーが会社のポータルを参照するときに、アプリに表示されるアイコンをアップロードします。
 3.  終了したら、 **[OK]**をクリックします。
 
 ## <a name="configure-app-settings"></a>アプリの設定の構成
@@ -91,7 +92,7 @@ ms.lasthandoff: 03/02/2018
         - **Semi-Annual**\(半期\)
         - **Semi-Annual (Targeted)**\(半期 (対象指定)\)
     - **[Automatically accept the app end user license agreement \(アプリの使用許諾契約書を自動的に承諾する\)]** - エンドユーザーに使用許諾契約書に同意することを求めない場合は、このオプションを選択します。 その後、Intune で契約書を自動的に承諾します。
-    - **[共有コンピューターのライセンス認証を使用する]** - 共有コンピューターのライセンス認証は、複数のユーザーでコンピューターを共有するときに使用します。 詳細については、「Overview of shared computer activation for Office 365 ProPlus」 (Office 365 ProPlus に対する共有コンピューターのライセンス認証の概要) を参照してください。
+    - **[共有コンピューターのライセンス認証を使用する]** - 共有コンピューターのライセンス認証は、複数のユーザーでコンピューターを共有するときに使用します。 詳細については、「Overview of shared computer activation for Office 365」 (Office 365 に対する共有コンピューターのライセンス認証の概要) を参照してください。
     - **[言語]** - Office は、エンドユーザーのデバイス上の Windows にインストールされている任意のサポート言語で自動的にインストールされます。 アプリ スイートと共に追加の言語をインストールする場合は、このオプションを選択します。
 
 >[!IMPORTANT]
@@ -99,7 +100,7 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="finish-up"></a>完了
 
-構成が終了したら、**[アプリの追加]** ブレードで、**[保存]** を選択します。 作成したアプリがアプリの一覧に表示されます。
+完了したら、**[アプリの追加]** ブレードで、**[追加]** を選択します。 作成したアプリがアプリの一覧に表示されます。
 
 ## <a name="error-codes-when-installing-the-app-suite"></a>アプリ スイートのインストール時に発生するエラー コード
 
@@ -137,4 +138,4 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="next-steps"></a>次の手順
 
-選択したグループにアプリを割り当てることができます。 詳細については、[アプリをグループに割り当てる方法](/intune-azure/manage-apps/deploy-apps)に関するページを参照してください。
+- 選択したグループにアプリを割り当てるには、[アプリをグループに割り当てる方法](/intune-azure/manage-apps/deploy-apps)に関するページを参照してください。

@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/11/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 416ce4fb671494efabf805595426f25d027d256e
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d07b025881ea78299d617205ce5ba39bb92a1231
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="categorize-devices-into-groups-for-easier-management"></a>管理を容易にするためのデバイスのグループへの分類
 
@@ -41,17 +41,16 @@ Microsoft Intune のデバイス カテゴリを使用して、ユーザー定�
 ## <a name="how-to-configure-device-categories"></a>デバイス カテゴリを構成する方法
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>手順 1 - Azure Portal の [Intune] ブレードでデバイス カテゴリを作成する
-1. [Azure Portal](https://portal.azure.com) で **[すべてのサービス]** > **[Intune]** の順に選びます。 Intune は、**[監視 + 管理]** セクションにあります。
-3. **[Intune]** ブレードで、**[デバイスの登録]** を選択します。
-3. **[デバイスの登録]** ブレードで、**[デバイス カテゴリ]** を選択します。
-4. **[デバイス カテゴリ]** ページで、**[作成]** を選択して、新しいカテゴリを追加します。
-5. **[デバイス カテゴリの作成]** ブレードで、新しいカテゴリの**名前**と省略可能な**説明**を入力します。
-6. 完了したら **[作成]** をクリックします。 カテゴリの一覧に、この新しいカテゴリが表示されます。
+1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** を選択します。
+2. **[デバイスの登録]** ブレードで、**[デバイス カテゴリ]** を選択します。
+3. **[デバイス カテゴリ]** ページで、**[作成]** を選択して、新しいカテゴリを追加します。
+4. **[デバイス カテゴリの作成]** ブレードで、新しいカテゴリの**名前**と省略可能な**説明**を入力します。
+5. 完了したら **[作成]** をクリックします。 カテゴリの一覧に、この新しいカテゴリが表示されます。
 
 デバイス カテゴリ名は、手順 2 で Azure Active Directory セキュリティ グループを作成するときに使用します。
 
 ### <a name="step-2---create-azure-active-directory-security-groups"></a>手順 2 - Azure Active Directory セキュリティ グループを作成する
-この手順では、デバイス カテゴリとデバイス カテゴリ名に基づいて、Azure ポータルで動的グループを作成します。
+この手順では、デバイス カテゴリとデバイス カテゴリ名に基づいて、Azure Portal で動的グループを作成します。
 
 次に進む前に、Azure Active Directory ドキュメントの記事「[属性を利用した高度なルールの作成](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects)」をご覧ください。
 
@@ -61,23 +60,20 @@ Microsoft Intune のデバイス カテゴリを使用して、ユーザー定�
 
 ### <a name="how-to-view-the-categories-of-devices-you-manage"></a>管理対象デバイスのカテゴリを表示する方法
 
-1.  [Azure Portal](https://portal.azure.com) で **[すべてのサービス]** > **[Intune]** の順に選びます。 Intune は、**[監視 + 管理]** セクションにあります。
+1.  [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイス]** を選択します。
 
-2. Azure Portal の [Intune] ブレードで、**[デバイス]** を選択します。
+2.  **[管理]** の **[すべてのデバイス]** をクリックします。
 
-3.  **[管理]** の **[すべてのデバイス]** をクリックします。
-
-4.  デバイスの一覧の **[デバイス カテゴリ]** 列を確認します。
+3.  デバイスの一覧の **[デバイス カテゴリ]** 列を確認します。
 
 **[デバイス カテゴリ]** 列が表示されていない場合は、**[列]** をクリックし、一覧から**[デバイス カテゴリ]** を選択して、**[適用]** をクリックします。
 
 ### <a name="to-change-the-category-of-a-device"></a>デバイスのカテゴリを変更するには
 
-1. [Azure Portal](https://portal.azure.com) で **[すべてのサービス]** > **[Intune]** の順に選びます。 Intune は、**[監視 + 管理]** セクションにあります。
-3. **[Intune]** ブレードで、**[デバイス]** を選択します。
-4. **[管理]** セクションの下の **[デバイス]** ブレードで **[すべてのデバイス]** を選択します。
-5. デバイスの一覧で目的のデバイスを選択し、**[管理]** セクションの下のデバイス プロパティ ブレードで **[プロパティ]** を選択します。
-6. 次のブレードで、選択したデバイスの **[デバイス カテゴリ]** を、以前に構成したカテゴリ名のいずれかに変更できます。
+1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイス]** を選択します。
+2. **[管理]** セクションの下の **[デバイス]** ブレードで **[すべてのデバイス]** を選択します。
+3. デバイスの一覧で目的のデバイスを選択し、**[管理]** セクションの下のデバイス プロパティ ブレードで **[プロパティ]** を選択します。
+4. 次のブレードで、選択したデバイスの **[デバイス カテゴリ]** を、以前に構成したカテゴリ名のいずれかに変更できます。
 
 ## <a name="after-you-configure-device-groups"></a>デバイス グループの構成後
 

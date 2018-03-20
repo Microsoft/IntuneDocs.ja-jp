@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/11/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 29c3d331cae06b0474fc3a2b31790719d99c678e
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 7d014ae02f3db2ea9175e74f2a867bd12f1d4f22
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>デバイスの企業所有としての識別
 
@@ -70,7 +70,7 @@ Android デバイスのシリアル番号の検索方法については、[こ�
 
 ### <a name="add-a-csv-list-of-corporate-identifiers"></a>企業 ID の .csv リストを追加する
 
-1. Azure Portal の Intune で **[デバイスの登録]** > **[業務用デバイスの ID]** の順に選択し、**[追加]** をクリックします。
+1. [Azure Portal の Intune](https://portal.azure.com) で **[デバイスの登録]** > **[業務用デバイスの ID]** の順に選択し、**[追加]** をクリックします。
 
  ![[追加] ボタンが強調表示された、[業務用デバイス ID] ワークスペース](./media/add-corp-id.png)
 
@@ -82,11 +82,11 @@ Android デバイスのシリアル番号の検索方法については、[こ�
 
 ### <a name="delete-corporate-identifiers"></a>企業 ID を削除する
 
-1. Azure Portal の Intune で **[デバイスの登録]** > **[業務用デバイスの ID]** の順に選択します。
+1. [Azure Portal の Intune](https://portal.azure.com) で **[デバイスの登録]** > **[業務用デバイスの ID]** の順に選択します。
 2. 削除するデバイス識別子を選択し、**[削除]** を選択します。
 3. 削除を確認します。
 
-登録済みデバイスの企業識別子を削除すると、デバイスの所有権が変更されます。 デバイスの所有権を変更するには、**[デバイス]** > **[すべてのデバイス]** の順に進み、デバイスを選択し、**[プロパティ]** を選択し、**[デバイスの所有者]** を変更します。
+登録済みデバイスの企業識別子を削除すると、デバイスの所有権が変更されます。 デバイスの所有権を変更するには、**[デバイス]** に進み、デバイスを選択し、**[プロパティ]** を選択し、**[デバイスの所有者]** を変更します。
 
 ### <a name="imei-specifications"></a>IMEI の仕様
 International Mobile Equipment Identifier の詳しい仕様については、「[3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729)」を参照してください。
@@ -96,7 +96,7 @@ International Mobile Equipment Identifier の詳しい仕様については、�
 デバイスのプロパティには、Intune のデバイス レコード別の**所有権**が表示されます。 管理者はデバイスを**個人用**または**企業所有**として指定できます。
 
 **デバイス所有権を変更するには:**
-1. Azure Portal の Intune で、**[デバイス]**、**[すべてのデバイス]** の順に進み、デバイスを選択します。
+1. [Azure Portal の Intune](https://portal.azure.com) で、**[デバイス]** に進み、デバイスを選択します。
 3. **[プロパティ]** を選択します。
 4. **[デバイスの所有権]** に **[個人]** または **[企業]** を指定します。
 

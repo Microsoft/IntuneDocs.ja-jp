@@ -1,12 +1,11 @@
 ---
-title: "事前共有キーを使用した Wi-Fi プロファイルの作成"
-titleSuffix: Microsoft Intune
-description: "Intune カスタム プロファイルを使用して、事前共有キーで Wi-Fi プロファイルを作成します。"
+title: "事前共有キーを使用して WiFi プロファイルを作成する - Microsoft Intune - Azure | Microsoft Docs"
+description: "カスタム プロファイルを使用して、事前共有キーで Wi-Fi プロファイルを作成し、Microsoft Intune で Android、Windows、EAP ベースの Wi-Fi プロファイル用のサンプルの XML コードを取得します。"
 keywords: 
-author: vhorne
-ms.author: victorh
+author: mandia
+ms.author: MandiOhlinger
 manager: dougeby
-ms.date: 11/09/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,63 +14,64 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8229ac82e6854d75f569b7bbf04dd2f5e14856c7
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 85543d87ca79fa301ee1e9c242c053c1c34e18c3
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>カスタム デバイス プロファイルを使用し、事前共有キーを使用した Wi-Fi プロファイルを作成します。
+# <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>カスタム デバイス プロファイルを使用し、事前共有キーを使用した WiFi プロファイルを作成する - Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune の**カスタム デバイス プロファイル**を使用して、事前共有キーを使用して Wi-Fi プロファイルを作成する方法を次に示します。 このトピックでは、EAP ベースの Wi-Fi プロファイルを作成する方法の例も示します。
+通常、事前共有キー (PSK) は、WiFi ネットワーク、またはワイヤレス LAN のユーザーを認証するために使用されます。 Intune では、事前共有キーを使用して WiFi プロファイルを作成できます。 プロファイルを作成するには、Intune 内で**カスタム デバイス プロファイル**機能を使用します。 この記事には、EAP ベースの Wi-Fi プロファイルを作成する方法の例も含まれています。
 
-> [!NOTE]
--   以下のように、そのネットワークに接続しているコンピューターからコードをコピーした方が簡単な場合があります。
-- Android では、Johnathon Biersack 氏が提供しているこの [Android PSK Generator](http://intunepskgenerator.johnathonb.com/) を使用することも可能です。
--   OMA-URI 設定をさらに追加することにより、複数のネットワークとキーを追加できます。
--  iOS でプロファイルを構成するには、Mac ステーションで Apple Configurator を使用します。 また、Johnathon Biersack 氏が提供する [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/) を使用します。
+## <a name="before-you-begin"></a>始める前に
 
+- この記事の後半に示されているように、そのネットワークに接続されているコンピューターからコードをコピーした方が簡単な場合があります。
+- Android では、[Android PSK Generator](http://intunepskgenerator.johnathonb.com/) を使用することもできます。
+- OMA-URI 設定をさらに追加することにより、複数のネットワークとキーを追加できます。
+- iOS でプロファイルを構成するには、Mac ステーションで Apple Configurator を使用します。 または、[iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/) を使用します。
 
-1.  Android または Windows 用に事前共有キーを使用した Wi-Fi プロファイル、または EAP ベースの Wi-Fi プロファイルを作成するには、デバイス プロファイルを作成するときに、Wi-Fi プロファイルではなく、そのデバイス プラットフォームの**カスタム**を選択します。
+## <a name="create-a-custom-profile"></a>カスタム プロファイルの作成
+Android、Windows、または EAP ベースの Wi-Fi プロファイル用の事前共有キーを使用して、カスタム プロファイルを作成できます。 Azure Portal を使用してプロファイルを作成するには、[カスタム デバイス設定の作成に関するページ](custom-settings-configure.md)を参照してください。 デバイス プロファイルを作成する場合、デバイス プラットフォームに **[カスタム]** を選択します。 Wi-Fi プロファイルは選択しないでください。 カスタムを選択するときに、次の操作を行うようにしてください。 
 
-2.  名前と説明を入力します。
-3.  新しい OMA-URI 設定を追加します。
+1. プロファイルの名前と説明を入力します。
+2. 次のプロパティで新しい OMA-URI 設定を追加します。 
 
-   」を参照します。   この Wi-Fi ネットワーク設定の名前を入力します。
+   a. この Wi-Fi ネットワーク設定の名前を入力します。
 
-   b.   OMA-URI 設定の説明を入力するか、空白のままにします。
+   b. (省略可能) OMA-URI 設定の説明を入力するか、空白のままにします。
 
-   c.   **[データ型]**: **String** に設定します。
+   c. **[データ型]** を **[文字列]** に設定します。
 
-   d.   **OMA-URI**:
+   d. **OMA-URI**:
 
     - **Android の場合**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Windows の場合**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
     > [!NOTE]
-先頭にピリオドを必ず入力してください。
+    > 先頭にピリオドを必ず入力してください。
 
-    SSID は、作成しているポリシーの SSID です。 たとえば、`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings` と記述します。
+    SSID は、作成しているポリシーの SSID です。 たとえば、「`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`」と入力します。
 
-  e. **値フィールド**に、XML コードを貼り付けます。 次に例を示します。 それぞれの値は、ネットワーク設定に適したものにする必要があります。 一部のポインターのコードについては、コメント セクションをご覧ください。
-4. **[OK]** を選択して保存し、ポリシーを割り当てます。
+  e. **値フィールド**に、XML コードを貼り付けます。 この記事内の例を参照してください。 ご利用のネットワーク設定に一致する値にそれぞれ更新します。 コードのコメント セクションには、一部のポインターが含まれます。
+3. **[OK]** を選択して保存し、ポリシーを割り当てます。
 
     > [!NOTE]
     > このポリシーは、ユーザー グループにのみ割り当てることができます。
 
-次回各デバイスがチェックインするときに、ポリシーは適用され、そのデバイスに Wi-Fi プロファイルが作成されます。 デバイスは自動的にネットワークに接続できるようになります。
+次回各デバイスがチェックインするときに、ポリシーが適用され、そのデバイスに Wi-Fi プロファイルが作成されます。 これで、デバイスは自動的にネットワークに接続できるようになります。
 
-## <a name="android-or-windows-wi-fi-profile"></a>Android または Windows の Wi-Fi プロファイル
+## <a name="android-or-windows-wi-fi-profile-example"></a>Android または Windows の Wi-Fi プロファイルの例
 
-次に、Android または Windows の Wi-Fi プロファイルの XML コードの例を示します。
+Android または Windows の Wi-Fi プロファイルの XML コードの例は、次のとおりです。 
 
 > [!IMPORTANT]
 >
-> `<protected>false</protected>` を **false** に設定する必要があります。**true** に設定すると、デバイスはパスワードが暗号化されていると見なし、暗号化の解除を試みます。その結果、接続が失敗する場合があります。
+> `<protected>false</protected>` は **false** に設定する必要があります。 **true** に設定すると、デバイスはパスワードが暗号化されているものと見なし、暗号化の解除を試みます。その結果、接続が失敗する場合があります。
 >
 >  `<hex>53534944</hex>` は、`<name><SSID of wifi profile></name>` の 16 進値に設定する必要があります。
->  Windows 10 デバイスは、"*0x87D1FDE8 修復できませんでした*" という間違ったエラーを返す場合があります。それでも、これまでどおり、プロファイルでプロビジョニングすることができます。
+>  Windows 10 デバイスは、"*0x87D1FDE8 修復できませんでした*" という間違ったエラーを返す場合がありますが、デバイスには引き続きプロファイルが含まれます。
 
 ```
 <!--
@@ -115,8 +115,8 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 </WLANProfile>
 ```
 
-## <a name="eap-based-wi-fi-profile"></a>EAP ベースの Wi-Fi プロファイル
-次に、EAP ベースの Wi-Fi プロファイルの XML コードの例を示します。
+## <a name="eap-based-wi-fi-profile-example"></a>EAP ベースの Wi-Fi プロファイルの例
+EAP ベースの Wi-Fi プロファイルの XML コードの例は、次のとおりです。
 
 ```
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -199,16 +199,18 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 ```
 
 ## <a name="create-the-xml-file-from-an-existing-wi-fi-connection"></a>既存の Wi-Fi 接続からの XML ファイルの作成
-次のように、既存の Wi-Fi 接続から XML ファイルを作成することもできます。
-1. ワイヤレス ネットワークに接続中のコンピューターまたは最近接続されたコンピューターの、C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid} のフォルダーを開きます。
+次の手順を使用して、既存の Wi-Fi 接続から XML ファイルを作成することもできます。 
 
-    すべての中から正しいプロファイルを探す必要があるため、多数のワイヤレス ネットワークに接続したことのないコンピューターを使用するのが最良です。
-3.     XML ファイルを検索し、正しい名前のファイルを探します。
-4.     正しい XML ファイルを見つけたら、OMA-URI の設定ページの [データ] フィールドに、XML コードをコピーして貼り付けます。
+1. 接続されているコンピューター、または最近ワイヤレス ネットワークに接続されたコンピューター上で、`\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}` フォルダーを開きます。
+
+  多くのワイヤレス ネットワークに接続されていないコンピューターを使用することをお勧めします。 そうしないと、正しいプロファイルを見つけるために各プロファイルを検索する必要がある可能性があります。
+
+2. XML ファイルを検索し、正しい名前のファイルを探します。
+3. 正しい XML ファイルを見つけたら、OMA-URI の設定ページの **[データ]** フィールドに、XML コードをコピーして貼り付けます。
 
 ## <a name="best-practices"></a>ヒント集
-PSK で Wi-Fi プロファイルを展開する前に、デバイスがエンドポイントに直接接続できることを確認します。
+- PSK で Wi-Fi プロファイルを展開する前に、デバイスがエンドポイントに直接接続できることを確認します。
 
-キー (パスワードまたはパスフレーズ) をローテーションで使用するときは、ダウンタウンを予想し、展開を適宜計画します。 新しい Wi-Fi プロファイルは非稼働時間中にプッシュすることを検討してください。 また、接続に影響が出る可能性をユーザーに知らせます。
+- キー (パスワードまたはパスフレーズ) をローテーションで使用するときは、ダウンタイムを予想し、展開を適切に計画します。 新しい WiFi プロファイルは非稼働時間中にプッシュすることを検討してください。 また、接続に影響が出る可能性をユーザーに知らせます。
 
-切り替え操作がスムーズに行われるように、エンド ユーザーのデバイスにインターネットへの代替接続があることを確認します。 たとえば、エンド ユーザーは、ゲスト WiFi (または他の何らかの WiFi ネットワーク) に戻したり、Intune と通信するために携帯電話接続を使うことができたりする必要があります。 これにより、ユーザーは、企業の WiFi プロファイルがデバイスで更新されたときに、ポリシーの更新を引き続き受信できます。
+- 切り替えがスムーズに行われるように、エンド ユーザーのデバイスにインターネットへの代替接続があることを確認します。 たとえば、エンド ユーザーは、ゲスト WiFi (または他の何らかの WiFi ネットワーク) に戻したり、Intune と通信するために携帯電話接続を使うことができたりする必要があります。 追加の接続により、ユーザーは、企業の Wi-Fi プロファイルがデバイスで更新されたときに、ポリシーの更新を受信できます。

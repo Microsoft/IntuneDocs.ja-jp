@@ -13,19 +13,21 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune での iOS デバイスの制限設定
-この記事では、iOS を実行するデバイスに構成できるすべての Microsoft Intune デバイスの制限設定について説明します。
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+この記事では、iOS を実行するデバイスに構成できるすべての Microsoft Intune デバイスの制限設定について説明します。
+
 ## <a name="general"></a>全般
 
+-   **使用状況データの共有** - デバイスでの診断の送信および Apple での遠隔測定データの使用を許可またはブロックします。
 -   **[診断データの送信]** - デバイスから Apple への診断データの送信を許可またはブロックします。
 -   **[画面キャプチャ]** - ユーザーが画面のコンテンツを画像としてキャプチャできるようにします。
     - **[Classroom アプリによるリモート画面の監視 (監視のみ)]** - Apple の Classroom アプリが iOS デバイス上の画面を監視することを許可またはブロックします。
@@ -213,8 +215,8 @@ iOS 監視モードは、Apple の Device Enrollment Program または Apple Con
 -   **[必ず構成プロファイルを使用して Wi-Fi ネットワークに参加する (監視モードのみ)]** - デバイスに、Intune の Wi-Fi プロファイルを使用して構成されている Wi-Fi ネットワークへの参加のみを許可します。
 
 - **[携帯ネットワークの使用規則 (管理対象アプリのみ)]** - 管理対象アプリが携帯ネットワークで使用できるデータの種類を定義できます。 次の中から選択します。
-    - **[携帯データ ネットワークの使用をブロックする]**
-    - **[ローミング時に携帯データ ネットワークの使用をブロックする]**
+    - **携帯データ ネットワークの使用をブロックする** - ** すべての管理対象アプリ** または**特定のアプリを選択して**、携帯電話データの使用をブロックすることができます。
+    - **ローミング時に携帯データ ネットワークの使用をブロックする** - ** すべての管理対象アプリ** または**特定のアプリを選択して**、ローミング時に携帯電話データの使用をブロックすることができます。
 
 ## <a name="connected-devices"></a>接続されたデバイス
 

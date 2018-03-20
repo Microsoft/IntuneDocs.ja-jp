@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/31/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a72199c9e38f4f4d9d7317469eea2e6254efee7
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 7e65a32843cec48268c7e205ab4a064038c28415
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="enroll-android-devices"></a>Android デバイスの登録
 
@@ -55,9 +55,9 @@ Android デバイスをブロックする場合や、個人所有の Android デ
 1. **Intune MDM をセットアップする**<br>
 **Microsoft Intune** を[モバイル デバイス管理機関](mdm-authority-set.md)に設定し、モバイル デバイス管理の準備をします (この作業をまだ行っていない場合)。
 2. **Android for Work のバインディングを構成する**<br>
-    Intune 管理者として Azure Portal で **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
+    Intune 管理者として [Azure Portal](https://portal.azure.com) で **[すべてのサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 
-   」を参照します。 **[Intune]** ブレードで、**[デバイスの登録]** > **[Android for Work への登録]** の順に選択し、**[構成]** を選択して Google Play の Android for Work の Web サイトを開きます。 ブラウザーの新しいタブで Web サイトが開きます。
+   」を参照します。 **[Intune]** ウィンドウで、**[デバイスの登録]** > **[Android for Work への登録]** の順に選択し、管理対象の Google Play の **[構成]** を選択して Google Play の Android for Work の Web サイトを開きます。 ブラウザーの新しいタブで Web サイトが開きます。
    ![Android for Work の登録画面](./media/android-work-bind.png)
 
    b. **Google にサインインする**<br>
@@ -106,7 +106,7 @@ Android for Work の登録と管理を無効にすることもできます。 In
 ### <a name="to-unbind-an-android-for-work-account"></a>Android for Work アカウントのバインドを解除するには
 
 1. **Android for Work のバインドを解除する**<br>
-    Intune 管理者として Azure Portal で **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。  **[Intune]** ブレードで、**[デバイスの登録]**、**[Android for Work への登録]** の順に選択してから、**[バインドの解除]** を選択します。
+    Intune 管理者として [Azure Portal](https://portal.azure.com) で **[すべてのサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。  **[Intune]** ウィンドウで、**[デバイスの登録]**、**[Android for Work への登録]** の順に選択してから、**[バインドの解除]** を選択します。
 
 2. **Android for Work のバインドの削除に同意する**<br>
   **[はい]** を選択してバインドを削除し、Intune からすべての Android for Work デバイスの登録を解除します。

@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6a0b488120ed62031f8af5b8b65d9e90ea6d252b
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: e3b5a742fb480cf9c4c77106b849eebb95ad2439
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Intune を使用してアプリを Android for Work デバイスに割り当てる方法
 
@@ -39,35 +39,34 @@ Intune と Android for Work が Azure Portal の **[デバイスの登録]** ワ
 
 1. [Google Play for Work ストア](https://play.google.com/work)にアクセスします。 Intune と Android for Work 間の接続を構成するときに使用したものと同じアカウントでサインインします。
 2. Intune を使用して割り当てるアプリをストアで検索します。
-3. 選択するアプリのページで、**[承認]** を選択します。 この例では、Microsoft Excel アプリを選択しました。<br>
-  ![アプリの承認例](media/approve.png)
-4. 多様な操作を実行するアクセス許可をアプリに付与するように求めるウィンドウが開きます。 続行するには、**[承認]** を選択します。<br>
-  ![アプリのアクセス許可の承認例](media/approve-app-permissions.png)
-5. アプリは承認され、IT 管理者コンソールに表示されます。
+3. アプリが表示されているページで、**[承認]** を選択します。 次では、Microsoft Excel アプリが選択されている例を示します。</br>
 
-## <a name="publish-then-synchronize-a-line-of-business-app-from-the-google-play-for-work-store"></a>Google Play for Work ストアから基幹業務アプリを公開し、同期する
+    ![例 - Google Play for Work ストアでアプリを承認する](media/approve.png)</br>
+    
+  多様な操作を実行するアクセス許可をアプリに付与するように求めるウィンドウが開きます。 
 
-1. Google Play Developer Console で、[play.google.com/apps/publish](https://play.google.com/apps/publish) を開きます。
-2. Intune と Android for Work 間の接続を構成するときに使用したものと同じアカウントでサインインします。 初めてサインインする場合は、Google Developer プログラムに登録し、料金を払ってメンバーになる必要があります。
-3. コンソールで、**[Add new application]** (新しいアプリケーションの追加) を選択します。
-4. アプリをアップロードし、アプリに関する情報を提供する方法は、アプリを Google Play ストアに公開する方法と同じです。 ただし、**[Only make this application available to my organization (<*organization name*>)]\(このアプリケーションを自分の組織 (<組織名>) のみが入手できるようにする\)** の設定を選択する必要があります。<br>
-  ![組織のみがアプリを入手できるようにするためのオプション](media/restrict.png)<br>
-この操作により、自分の組織のみがアプリを入手でき、公開されている Google Play ストアでは入手できないようになります。
-Android アプリのアップロードと公開の詳細については、[Google Developer Console のヘルプ](https://support.google.com/googleplay/android-developer/answer/113469)を参照してください。
-5. アプリを公開したら、[Google Play for Work ストア](https://play.google.com/work)にアクセスします。 Intune と Android for Work 間の接続を構成するときに使用したものと同じアカウントでサインインします。
-6. ストアの **[アプリ]** ノードに、公開したアプリが表示されることを確認します。 アプリは自動的に承認され、Intune と同期されます。
+4. **[承認]** を選択し、アプリのアクセス許可に同意して続行します。</br>
 
-## <a name="assign-an-android-for-work-app"></a>Android for Work アプリを割り当てる
+    ![例 - アプリのアクセス許可を承認する](media/approve-app-permissions.png)
+
+5. 新しいアプリのアクセス許可の要求の処理方法を選択します。 次に、**[保存]** を選択し、新しいアプリのアクセス許可をどのように処理するか保存します。</br>
+
+    ![例 - 新しいアプリのアクセス許可の要求を保存する](media/approve-app-settings.png)</br>
+
+    アプリは承認され、IT 管理者コンソールに表示されます。 これで、[Intune と Android for Work アプリを同期する](apps-add-android-for-work.md#sync-an-android-for-work-app-with-intune)ことができます。 
+
+## <a name="sync-an-android-for-work-app-with-intune"></a>Intune と Android for Work アプリを同期する
 
 ストアのアプリを承認しても、**[モバイル アプリ]** ワークロードの **[ライセンスされたアプリ]** ノードに表示されない場合は、次の手順で強制的に即時に同期します。
 
-1. Azure Portal にサインインします。
-2. **[Intune]** ブレードで、**[モバイル アプリ]** を選びます。
-3. **[モバイル アプリ]** ワークロードで、**[セットアップ]** > **[Android for Work]** の順に選択します。
-4. [Android for Work] ブレードです、**[今すぐ同期]** を選択します。
-5. ページには、前回の同期の時刻と状態も表示されます。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. **[Intune]** ウィンドウで、**[モバイル アプリ]** を選びます。
+4. **[モバイル アプリ]** ワークロードで、**[セットアップ]** セクションから **[Android for Work]** を選択します。
+5. [Android for Work] ウィンドウで、**[同期]** を選択します。ページで、前回の同期の時刻と状態が更新されます。
+6. **[モバイル アプリ]** ワークロードで、**[アプリ]** を選択し、新しく使用可能になった Android for Work アプリを表示します。
 
-アプリが **[モバイル アプリ]** ワークロードの **[ライセンスされたアプリ]** ノードに表示される場合は、[他のアプリの割り当てと同様の方法でアプリを割り当てることができます](/intune-azure/manage-apps/deploy-apps)。 ユーザーのグループに対してのみアプリを割り当てることができます。
+アプリが **[モバイル アプリ]** ワークロードの **[アプリ ライセンス]** ノードに表示される場合は、[他のアプリの割り当てと同様の方法でアプリを割り当てることができます](/intune-azure/manage-apps/deploy-apps)。 ユーザーのグループに対してのみアプリを割り当てることができます。
 
 アプリを割り当てると、アプリは対象のデバイスにインストールされます。 デバイスのユーザーがインストールの承認を求められることはありません。
 
@@ -86,5 +85,21 @@ Android for Work では、Intune にアプリを同期してユーザーに割�
 
 あるいは、Google Play を構成することで、アプリごとにアクセス許可を自動的に再許可できます。 
 
+## <a name="working-with-a-line-of-business-app-from-the-google-play-for-work-store"></a>Google Play for Work ストアの基幹業務アプリを使用する
 
+1. Google Play Developer Console で、[play.google.com/apps/publish](https://play.google.com/apps/publish) を開きます。
+2. Intune と Android for Work 間の接続を構成するときに使用したものと同じアカウントでサインインします。 初めてサインインする場合は、Google Developer プログラムに登録し、料金を払ってメンバーになる必要があります。
+3. コンソールで、**[Add new application]** (新しいアプリケーションの追加) を選択します。
+4. アプリをアップロードし、アプリに関する情報を提供する方法は、アプリを Google Play ストアに公開する方法と同じです。 ただし、**[Only make this application available to my organization (<*organization name*>)]\(このアプリケーションを自分の組織 (<組織名>) のみが入手できるようにする\)** の設定を選択する必要があります。</br>
+
+    ![組織のみがアプリを入手できるようにするためのオプション](media/restrict.png)</br>
+
+この操作により、自分の組織のみがアプリを入手でき、公開されている Google Play ストアでは入手できないようになります。
+Android アプリのアップロードと公開の詳細については、[Google Developer Console のヘルプ](https://support.google.com/googleplay/android-developer/answer/113469)を参照してください。
+5. アプリを公開したら、[Google Play for Work ストア](https://play.google.com/work)にアクセスします。 Intune と Android for Work 間の接続を構成するときに使用したものと同じアカウントでサインインします。
+6. ストアの **[アプリ]** ノードに、公開したアプリが表示されることを確認します。 アプリは自動的に承認され、Intune と同期されます。
+
+## <a name="next-steps"></a>次の手順
+
+- [アプリをグループに割り当てる方法](apps-deploy.md)
 

@@ -6,19 +6,19 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: ayesham
+ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d939d86f6ccd7f9851cfc52f1080fddaeee6a947
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: f938967951045d24ae65315b3b4d40749c1bc20f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Microsoft Intune Android および Samsung KNOX Standard デバイスの制限設定 
 
@@ -144,7 +144,7 @@ ms.lasthandoff: 03/05/2018
 
 キオスクの設定は、Samsung KNOX Standard デバイスと、Intune を使って管理するアプリにのみ適用されます。
 
-- **[管理対象アプリを選びます]** - 次のオプションのいずれかを選び、デバイスがキオスク モードのときに実行できる管理対象アプリを 1 つ以上追加します。 他のアプリはデバイスでの実行が許可されません。
+- **[管理対象アプリを選びます]** - 次のオプションのいずれかを選び、デバイスがキオスク モードのときに実行できる管理対象アプリを 1 つ以上追加します。 他のアプリはデバイスでの実行が許可されません。 プレインストールされているブラウザーは、デバイスがキオスク モードのときに実行できるアプリとして定義することはできません。 ブラウザーが必要な場合は、[Managed Browser](app-configuration-managed-browser.md) の使用を検討してください。
     - **パッケージ名ごとにアプリを追加**
     - **URL ごとにアプリを追加**
     - **管理対象アプリを追加**

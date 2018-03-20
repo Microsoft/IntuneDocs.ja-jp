@@ -1,10 +1,10 @@
 ---
-title: "Intune での条件付きアクセス"
-titlesuffix: Azure portal
-description: "Intune での条件付きアクセスの一般的な使用方法"
+title: "Microsoft Intune での条件付きアクセス"
+titlesuffix: 
+description: "Intune の条件付きアクセスが、デバイス ベースおよびアプリ ベースの条件付きアクセスに一般的にどのように使用されるかについて説明します。"
 keywords: 
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: get-started-article
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5ec945cdbc4efa791edc51e659a1546876446c5
-ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
+ms.openlocfilehash: 9c34e6e2891769d64885d364f05dbedaa1fb7d57
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="common-ways-to-use-conditional-access-with-intune"></a>Intune での条件付きアクセスの一般的な使用方法
+# <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune での条件付きアクセスの一般的な使用方法
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune の条件付きアクセスには、主に 2 つの種類があります。 1 つ目は、デバイスベースの条件付きアクセスです。 2 つ目は、アプリベースの条件付きアクセスです。 組織の条件付きアクセス コンプライアンスを進めるために関連するコンプライアンス ポリシーを構成する必要があります。
+Intune での条件付きアクセスには、デバイス ベースの条件付きアクセスとアプリ ベースの条件付きアクセスの 2 種類があります。 組織の条件付きアクセス コンプライアンスを進めるために関連するコンプライアンス ポリシーを構成する必要があります。 条件付きアクセスは一般的に Exchange オンプレミスへのアクセスの許可または禁止、ネットワークへのアクセスの制御、または Mobile Threat Defense ソリューションとの統合などを行うために使用されます。
 
 ここでは、Intune のモバイル *デバイス*のコンプライアンス機能と Intune のモバイル *アプリケーション*管理 (MAM) 機能の使用方法について説明します。 
 

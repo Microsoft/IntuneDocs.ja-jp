@@ -1,12 +1,11 @@
 ---
-title: "Intune が稼働する Windows 10 デバイスのリセット"
-titlesuffix: Azure portal
-description: "[新たに開始] を使用して、Intune が稼働する Windows 10 PC をリセットする方法について説明します。\""
+title: "Microsoft Intune で Windows 10 デバイスをリセットする - Azure | Microsoft Docs"
+description: "Microsoft Intune を使用して、OEM からプレインストールされたアプリを含む Windows 10 PC 上のアプリを削除またはアンインストールするには、[新たに開始] を使用します。 [個人用ファイルを保持する] 設定を使用する場合、ホーム フォルダーの内容を保つこともできます。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 08/09/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,29 +13,31 @@ ms.technology:
 ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c45d3e47c90ca7739b3aa6eee1bf31d787a82264
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: d17c9dc11791f32f0c2c1e7faa88966c112fc6a5
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>[新たに開始] を使用して Intune が稼働する Windows 10 デバイスをリセットする
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**[新たに開始]** デバイス アクションを実行すると、Creators Update が稼働する Windows 10 PC にインストールされているすべてのアプリが削除され、PC が Windows の最新バージョンに自動的に更新されます。
-この操作は、新しい PC に付属することの多い事前インストール済み (OEM) アプリを削除するのに使うことができます。 このデバイス アクションを発行するときにユーザー データを保持するかどうかを構成できます。 この場合、アプリと設定は削除されますが、ユーザーのホーム フォルダーの内容は保持されます。
+**[新たに開始]** デバイス操作は、Creators Update を実行している Windows 10 PC にインストールされているすべてのアプリを削除します。 次に、最新バージョンの Windows に自動的に PC を更新します。
 
-## <a name="how-to-use-fresh-start"></a>新たに開始の使用方法
+この操作は、一般的に新しい PC にプレインストールされている (OEM) アプリケーションを削除するために役立ちます。 ユーザーのホーム フォルダーの内容を保持し、アプリと設定のみを削除するには、`if user data is retained` 設定を使用します。
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3. **[Intune]** ウィンドウで、**[デバイス]** を選択します。
-4. **[デバイス]** ウィンドウで、**[すべてのデバイス]** を選択します。
-5. 管理するデバイスの一覧から Windows 10 デスクトップ デバイスを選択し、その後 **[新たに開始]** デバイス リモート アクションを選択します。
+> [!IMPORTANT]
+> [新たに開始] は、Intune からデバイスを登録解除しますが、デバイスは Azure Active Directory にまだ参加しています。
+
+## <a name="use-fresh-start"></a>新たに開始
+
+1. [Azure ポータル](https://portal.azure.com)にサインインします。
+2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
+3. **[デバイス]**、**[すべてのデバイス]** の順に選択します。
+4. 管理するデバイスの一覧から Windows 10 デスクトップ デバイスを選択し、その後 **[新たに開始]** を選択します。
 
 ## <a name="next-steps"></a>次の手順
 
-実行したアクションの状態を確認するには、**[デバイス]** ウィンドウで **[デバイス アクション]** を選択します。
-
+このアクションのステータスを表示するには、**[デバイス アクション]** を選択します (**Microsoft Intune** > **デバイス**)。

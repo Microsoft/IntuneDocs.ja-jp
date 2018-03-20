@@ -1,7 +1,7 @@
 ---
-title: "Mobile Threat Defense と Intune"
-titleSuffix: Azure portal
-description: "デバイスのリスクに基づいて、会社のリソースへのアクセスを保護します"
+title: "Mobile Threat Defense と Microsoft Intune"
+titleSuffix: 
+description: "Mobile Threat Defense パートナーで Intune Mobile Threat Defense (MTD) 使用し、デバイスのリスクに基づいて会社のリソースへのアクセスを保護します。"
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,13 +15,13 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da0f21a822608052846200e13ef37ca4606e6079
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 2eaba4f04d6a1daedf40b7b37d2b44ed5aff4533
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="mobile-threat-defense-integration-with-intune"></a>Mobile Threat Defense の Intune との統合
+# <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Mobile Threat Defense の Intune との統合
 
 
 Intune Mobile Threat Defense コネクターを使用すると、選択した Mobile Threat Defense ベンダーをコンプライアンス ポリシーと条件付きアクセス規則の情報ソースとして活用できます。 これにより、IT 管理者が、特に危険にさらされたモバイル デバイスから、Exchange、Sharepoint などの企業リソースに保護レイヤーを追加することができます。
@@ -32,7 +32,7 @@ Intune Mobile Threat Defense コネクターを使用すると、選択した Mo
 
 これまで、企業は PC の防御を積極的に行ってきましたが、モバイル デバイスは監視や保護のない状態が続いています。 モバイル プラットフォームには、アプリの分離や検証済みコンシューマー アプリ ストアなどの防御手法が組み込まれていますが、依然として高度な攻撃を受けやすい状態にあります。 現在、モバイル デバイスを仕事に利用し、機密情報にアクセスする社員が増えています。 増え続ける高度な攻撃からモバイル デバイスを守る必要があります。
 
-## <a name="how-the-intune-mobile-threat-defense-connectors-work"></a>Intune Mobile Threat Defense コネクターのしくみ
+## <a name="how-do-the-intune-mobile-threat-defense-connectors-work"></a>Intune Mobile Threat Defense コネクターのしくみ
 
 このコネクターは、Intune と選択した Mobile Threat Defense ベンダーの間の通信チャネルを作成することで、会社のリソースを保護します。 Intune Mobile Threat Defense パートナーは、直感的で簡単に展開できるモバイル デバイス向けアプリケーションを提供します。これらのアプリケーションは、脅威情報を積極的にスキャンして分析し、レポートや強制を目的として Intune と共有します。 
 
@@ -58,11 +58,11 @@ iOS 11 以降を内蔵した会社所有デバイスと個人所有デバイス�
 
 Mobile Threat Defense ソリューションによってデバイスが感染したと見なされた場合
 
-![Mobile Threat Defense と感染しているデバイス](./media/MTD-image-1.png)
+![Mobile Threat Defense と感染しているデバイスを示す画像](./media/MTD-image-1.png)
 
 デバイスが修復されたときにアクセスが許可されます。
 
-![Mobile Threat Defense とアクセス付与](./media/MTD-image-2.png)
+![Mobile Threat Defense とアクセス付与を示す画像](./media/MTD-image-2.png)
 
 > [!NOTE] 
 > Intune で複数の Mobile Threat Defense ベンダーを使用することは、サポートされていません。 複数の MTD ツールが有効になると、すべての MTD アプリがインストールされ、脅威を検出するためにデバイスにまたがるスキャンが実行されます。

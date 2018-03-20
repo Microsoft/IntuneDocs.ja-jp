@@ -1,12 +1,11 @@
 ---
-title: "Intune でデバイスのパスコードをリセットして削除する"
-titlesuffix: Azure portal
-description: "Intune で管理するデバイスのパスコードをリセットして削除する方法について説明します。"
+title: "Microsoft Intune でデバイス パスコードをリセットする - Azure | Microsoft Docs"
+description: "Intune で管理または監視しているデバイスに [パスコード コードの削除] アクションを使用してパスコードを削除またはリセットします。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 03/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,37 +13,37 @@ ms.technology:
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e1496d24fd9d3bb636a4eab00c254b753210f63
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 8f23a79bbe72d12750ef642226aefd1e11dcac24
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="reset-and-remove-the-passcode-on-intune-managed-devices"></a>Intune で管理するデバイスのパスコードをリセットして削除する
-
+# <a name="reset-or-remove-a-device-passcode-in-intune"></a>Intune でデバイスのパスコードをリセットまたは削除する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-この記事では、*削除*と*リセット*という用語は同じ意味で使用されます。
-
-**[パスコードの削除]** アクションは、デバイスの新しいパスコードを生成します。新しいパスコードは、[<*デバイス名*> **概要**] ブレードに表示されます。
+デバイス用に新しいパスコードを作成するには、**[パスコードの削除]** アクションを使用します。
 
 ## <a name="supported-platforms"></a>サポートされているプラットフォーム
 
-- Windows - サポートされていません
-- Windows Phone - Windows Phone 8.1 から Azure AD に参加していない Windows 10 Creators Update まで、Windows 10 Creators Update 以降でサポートされています
-- iOS - サポートされています
-- macOS - サポートされていません
-- Android - Android 7 より前の Android バージョンでサポートされています。 Android for Work はサポートされていません。
+- Windows Phone 8.1 から Azure AD に参加していない Windows 10 Creators Update まで、および Windows 10 Creators Update 以降
+- iOS
+- Android 7 より前の Android バージョン
 
-## <a name="how-to-reset-a-passcode"></a>パスコードをリセットする方法
+次のシステムについては、この機能はサポート**されません**。
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3. **[Intune]** ブレードで、**[デバイス]** を選択します。
-4. **[デバイス]** ブレードで、**[すべてのデバイス]** を選択します。
-5. 管理するデバイスの一覧からデバイスを選択し、**[詳細]**、**[パスコードの削除]** デバイス リモート アクションの順に選択します。
+- Windows
+- macOS
+- Android for Work
+
+## <a name="reset-a-passcode"></a>パスコードのリセット
+
+1. [Azure ポータル](https://portal.azure.com)にサインインします。
+2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
+3. **[デバイス]**、**[すべてのデバイス]** の順に選択します。
+4. 管理するデバイスの一覧からデバイスを選択し、**[詳細]**、**[パスコードの削除]** デバイス リモート アクションの順に選択します。
 
 ## <a name="next-steps"></a>次の手順
 
-実行したアクションの状態を確認するには、**[デバイス]** ブレードで **[デバイス アクション]** を選択します。
+実行したアクションの状態を確認するには、**[デバイス]** で **[デバイス アクション]** を選択します。

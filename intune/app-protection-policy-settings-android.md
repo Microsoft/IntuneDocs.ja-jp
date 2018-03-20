@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 330826307e4f3db24532908d42da77a1a857a681
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 34334186fbf74507b54d1bf4df347de2c16c39c0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="android-app-protection-policy-settings"></a>Android アプリ保護ポリシー設定
 このトピックでは、Android デバイスのアプリ保護ポリシーの設定について説明します。 説明されているポリシーの設定は、Azure Portal の **[設定]** ブレードでアプリ保護ポリシー用に[構成](app-protection-policies.md)することができます。
@@ -73,7 +73,7 @@ ms.lasthandoff: 03/05/2018
   | com.android.providers.media | Android のメディア コンテンツ プロバイダー | メディア コンテンツ プロバイダーは、着信音の選択アクションでのみ使用できます。 |
   | com.google.android.gms、com.google.android.gsf | Google Play Services パッケージ | これらのパッケージは、プッシュ通知など、Google Cloud Messaging のアクションで使用できます。 |
 
-詳細については、「[Data transfer policy exceptions for apps](app-protection-policies-exception.md)」(アプリのデータ転送ポリシーの例外) を参照してください。 
+詳細については、「[Data transfer policy exceptions for apps](app-protection-policies-exception.md)」(アプリのデータ転送ポリシーの例外) を参照してください。
 
 ##  <a name="access-settings"></a>アクセス設定
 
@@ -88,7 +88,10 @@ ms.lasthandoff: 03/05/2018
 | **Disable app PIN when device PIN is managed (デバイスの PIN が管理されるときはアプリの PIN を無効にする)** | 登録されているデバイスでデバイス ロックが検出された場合にアプリの PIN を無効にするには、**[はい]** を選択します。 | [いいえ] |
 | **Android オペレーティング システムの最小要件** | このアプリを使用するための最小 Android オペレーティング システムを要求するには **[はい]** を選択します。 デバイスの Android バージョンが要件を満たさない場合、アクセスがブロックされます。<br><br> このポリシー設定では、major.minor、major.minor.build、major.minor.build.revision のいずれの形式もサポートされます。| [いいえ] |
 | **Android オペレーティング システムの最小要件 (警告のみ)** | このアプリを使用するための最小 Android オペレーティング システムを要求するには **[はい]** を選択します。 デバイスの Android バージョンが要件を満たさない場合、通知が表示されます。 この通知は閉じることができます。<br><br> このポリシー設定では、major.minor、major.minor.build、major.minor.build.revision のいずれの形式もサポートされます。 | [いいえ] |
-| **アプリの最小バージョン要件** | アプリを使用するための最小アプリ バージョンを要求するには **[はい]** を選択します。 デバイスのアプリ バージョンが要件を満たさない場合、アクセスがブロックされます。<br><br>多くの場合、アプリには個別のバージョン管理スキームがあるため、1 つのアプリを対象とした、1 つのアプリの最小バージョンでポリシー ("Outlook バージョン ポリシー" など) を作成します。 <br><br> このポリシー設定では、major.minor、major.minor.build、major.minor.build.revision のいずれの形式もサポートされます。| [いいえ] | 
-| **アプリの最小バージョン要件 (警告のみ)** | このアプリを使用するための最小アプリ バージョンを推奨するには **[はい]** を選択します。 デバイスのアプリ バージョンが要件を満たさない場合、通知が表示されます。 この通知は閉じることができます。<br><br>多くの場合、アプリには個別のバージョン管理スキームがあるため、1 つのアプリを対象とした、1 つのアプリの最小バージョンでポリシー ("Outlook バージョン ポリシー" など) を作成します。 <br><br> このポリシー設定では、major.minor、major.minor.build、major.minor.build.revision のいずれの形式もサポートされます。| [いいえ] | 
+| **アプリの最小バージョン要件** | アプリを使用するための最小アプリ バージョンを要求するには **[はい]** を選択します。 デバイスのアプリ バージョンが要件を満たさない場合、アクセスがブロックされます。<br><br>多くの場合、アプリには個別のバージョン管理スキームがあるため、1 つのアプリを対象とした、1 つのアプリの最小バージョンでポリシー ("Outlook バージョン ポリシー" など) を作成します。 <br><br> このポリシー設定では、major.minor、major.minor.build、major.minor.build.revision のいずれの形式もサポートされます。| [いいえ] |
+| **アプリの最小バージョン要件 (警告のみ)** | このアプリを使用するための最小アプリ バージョンを推奨するには **[はい]** を選択します。 デバイスのアプリ バージョンが要件を満たさない場合、通知が表示されます。 この通知は閉じることができます。<br><br>多くの場合、アプリには個別のバージョン管理スキームがあるため、1 つのアプリを対象とした、1 つのアプリの最小バージョンでポリシー ("Outlook バージョン ポリシー" など) を作成します。 <br><br> このポリシー設定では、major.minor、major.minor.build、major.minor.build.revision のいずれの形式もサポートされます。| [いいえ] |
 | **Require Minimum Android Patch Version (Android の最小パッチ バージョン要件)** | Google によってリリースされた Android の最小セキュリティ パッチが必要な場合は、**[はい]** を選択します。 デバイスの Android セキュリティ パッチが要件を満たさない場合、アクセスがブロックされます。<br><br> このポリシー設定の形式は、YYYY-MM-DD の日付形式をサポートしています。 | [いいえ] |
 | **Require Minimum Android Patch Version (Warning Only) (Android の最小パッチ バージョン要件 (警告のみ))** | Google によってリリースされた Android の最小セキュリティ パッチが必要な場合は、**[はい]** を選択します。 デバイスの Android セキュリティ パッチが要件を満たさない場合、通知が表示されます。 この通知は閉じることができます。<br><br> このポリシー設定の形式は、YYYY-MM-DD の日付形式をサポートしています。 | [いいえ] |
+
+> [!NOTE]
+> 同じアプリとユーザーの組み合わせに適用される、[アクセス] セクションで構成した複数の Intune アプリ保護設定が Android 上でどのように動作するかについては、[Intune MAM のよく寄せられる質問](mam-faq.md)に関するページを参照してください。
