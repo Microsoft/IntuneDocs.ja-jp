@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f639a61c4d481a891156383c3a23e0e1511a5fbe
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d3a599ff1dff3e27214dfcca694f6b97333f370a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager での iOS デバイス登録の設定
 
@@ -89,7 +89,7 @@ Apple School Manager で企業所有の iOS デバイスを登録するには、
 ## <a name="create-an-apple-enrollment-profile"></a>Apple 登録プロファイルの作成
 デバイス登録プロファイルで、デバイス グループに対して登録時に適用する設定を定義します。
 
-1. Azure Portal の Intune で **[デバイスの登録]** を選択し、**[Apple の登録]** を選択します。
+1. [Azure Portal の Intune](https://aka.ms/intuneportal) で **[デバイスの登録]** を選択し、**[Apple の登録]** を選択します。
 2. **[Enrollment Program]** で、**[Enrollment Program プロファイル]** を選択します。
 3. **[Enrollment Program プロファイル]** ブレードで、**[作成]** を選択します。
 4. **[登録プロファイルの作成]** ブレードで、Intune に表示されるプロファイルの**名前**と**説明**を入力します。
@@ -149,7 +149,7 @@ Apple School Manager で企業所有の iOS デバイスを登録するには、
 ## <a name="sync-managed-devices"></a>管理対象デバイスを同期する
 Intune に Apple School Manager デバイスを管理するアクセス許可を割り当てたので、Intune と Apple サービスを同期し、管理されたデバイスを Intune に表示できます。
 
-1. Azure Portal の Intune で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program デバイス]** > **[同期]** の順に選択します。進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
+1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program デバイス]** > **[同期]** の順に選択します。進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
 
   ![[Enrollment Program デバイス] ノードと [同期] リンクの選択](./media/enrollment-program-device-sync.png)
 2. **[同期]** ブレードで、**[同期を要求]** を選択します。進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
@@ -166,7 +166,7 @@ Intune に Apple School Manager デバイスを管理するアクセス許可を
 ## <a name="assign-a-profile-to-devices"></a>デバイスにプロファイルを割り当てる
 Intune によって管理される Apple School Manager デバイスを登録する前に、デバイスに登録プロファイルを割り当てる必要があります。
 
-1. Azure Portal の Intune で **[デバイスの登録]** > **[Apple の登録]** の順に選択し、**[Enrollment Program プロファイル]** を選択します。
+1. [Azure Portal の Intune](https://aka.ms/intuneportal) で **[デバイスの登録]** > **[Apple の登録]** の順に選択し、**[Enrollment Program プロファイル]** を選択します。
 2. **[Enrollment Program プロファイル]** の一覧から、デバイスに割り当てるプロファイルを選択し、**[デバイスの割り当て]** を選択します。
 
  ![[割り当て] が選択された [デバイスの割り当て]。](./media/enrollment-program-device-assign.png)

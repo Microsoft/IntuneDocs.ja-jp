@@ -1,12 +1,12 @@
 ---
-title: "Intune で Mobile Threat Defense デバイス コンプライアンス ポリシーを作成する"
-titlesuffix: Azure portal
-description: "Intune で Mobile Threat Defense デバイス コンプライアンス ポリシーを作成する"
+title: "Microsoft Intune で MTD デバイスのコンプライアンス ポリシーを作成する"
+titlesuffix: 
+description: "モバイル デバイスが会社のリソースにアクセスできるかどうかを決定するために、MTD パートナー脅威レベルを使用する Intune デバイスのコンプライアンス ポリシーを作成します。"
 keywords: 
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a02f08c347f40821a10f6d9b6df3a6b26178180b
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: b719bb1841cfc1aa98808b9c09db43d9c654d63f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Intune で Mobile Threat Defense (MTD) デバイス コンプライアンス ポリシーを作成する
 
@@ -40,7 +40,7 @@ MTD でのデバイス コンプライアンス ポリシーの前提条件:
 
 1.  [Azure Portal](https://portal.azure.com/) に移動し、Intune 資格情報でサインインします。
 
-2.  **Azure ダッシュボード**で、左側のメニューから **[その他のサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
+2.  **Azure ダッシュボード**で、左側のメニューから **[すべてのサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
 
 3.  **[Intune]** を選択すると、**Intune ダッシュボード**が開きます。
 
@@ -48,9 +48,9 @@ MTD でのデバイス コンプライアンス ポリシーの前提条件:
 
 5.  **[Create policy]\(ポリシーの作成\)** を選択し、デバイス コンプライアンスの **[名前]**、**[説明]** を入力し、 **[プラットフォーム]** を選択してから **[設定]** セクションの **[構成]** を選択します。
 
-6.  **[コンプライアンス ポリシー]** ブレードで、**[Device Health]\(デバイスの正常性\)** を選択します。
+6.  **[コンプライアンス ポリシー]** ウィンドウで、**[デバイスのヘルス]** を選択します。
 
-7.  **[Device Health]\(デバイスの正常性\)** ブレードの、**[Require the device to be at or under the Mobile threat Defense Level]\(デバイスが Mobile Threat Defense レベル以下であることが必要)** の下で Mobile Threat レベルをドロップダウン リストから選択します。
+7.  **[デバイスのヘルス]** ウィンドウの、**[デバイスは、デバイス脅威レベル以下であることが必要]** の下でモバイル脅威レベルをドロップダウン リストから選択します。
 
     」を参照します。  **[セキュリティ保護]**: このレベルはセキュリティ上最も安全です。 デバイスにいかなる脅威も存在できず、デバイスからは引き続き会社のリソースにアクセスできます。 いずれかの脅威が見つかった場合、デバイスは非準拠と評価されます。
 
@@ -67,11 +67,11 @@ MTD でのデバイス コンプライアンス ポリシーの前提条件:
 
 ## <a name="to-assign-a-mtd-device-compliance-policy"></a>MTD デバイス コンプライアンス ポリシーを割り当てるには
 
-デバイス コンプライアンス ポリシーをユーザーに割り当てるには、前に構成したポリシーを選択します。 既存のポリシーは、**[デバイス コンプライアンス ポリシー]** ブレードで確認できます。
+デバイス コンプライアンス ポリシーをユーザーに割り当てるには、前に構成したポリシーを選択します。 既存のポリシーは、**[デバイスのポリシー準拠 - ポリシー]** ウィンドウで確認できます。
 
-1. ユーザーに割り当てるポリシーを選択し、**[割り当て]** を選択します。 この操作でブレードが表示され、**Azure Active Directory セキュリティ グループ**を選択してポリシーに割り当てることができます。
+1. ユーザーに割り当てるポリシーを選択し、**[割り当て]** を選択します。 この操作でウィンドウが表示され、**[Azure Active Directory セキュリティ グループ]** を選択してポリシーに割り当てることができます。
 
-2. **[グループの選択]** を選択すると、ブレードが開き、Azure AD セキュリティ グループが表示されます。  **[選択]** を選択すると、ポリシーがユーザーに展開されます。
+2. **[Select groups to include]\(含めるグループの選択\)** を選択すると、Azure AD セキュリティ グループが表示されたウィンドウが開きます。  **[選択]** を選択すると、ポリシーがユーザーに展開されます。
 
     > [!NOTE] 
     > ポリシーがユーザーに適用されました。 ポリシーの対象となっているユーザーが使用しているデバイスは、コンプライアンスが評価されます。

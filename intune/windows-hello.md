@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46bb82fd49fa58e87c22c8bf0abb57e1587b8b40
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: d415628419bec26c24494b38a13bd3801051c603
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Windows Hello for Business と Microsoft Intune の統合
 
@@ -48,19 +48,19 @@ Intune と Hello for Business の統合には 2 通りの方法があります�
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Windows Hello for Business のポリシーの作成
 
-1.  Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
+1.  [Azure Portal](https://portal.azure.com) で、**[すべてのサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
 
-2.  [Intune] ページで、**[デバイスの登録]** を選択してから、**[Windows の登録]** > **[Windows Hello for Business]** の順に選択します。
+2.  [Intune] ウィンドウで、**[デバイスの登録]** を選択してから、**[Windows の登録]** > **[Windows Hello for Business]** の順に選択します。
 
-3.  開いたページで、**[既定]** 設定を選択します。
+3.  開いたウィンドウで、**[既定]** の設定を選択します。
 
-4.  **[すべてのユーザー]** ページで、**[プロパティ]** をクリックし、Windows Hello for Business 設定の**名前**と省略可能な**説明**を入力します。
+4.  **[すべてのユーザー]** ウィンドウで、**[プロパティ]** をクリックし、Windows Hello for Business 設定の **[名前]** と省略可能な **[説明]** を入力します。
 
-5. **[すべてのユーザー]** ページで、**[設定]** をクリックし、**[Windows Hello for Business の構成]** で以下を選択します。
+5. **[すべてのユーザー]** ウィンドウで、**[設定]** をクリックし、**[Windows Hello for Business の構成]** で以下を選択します。
 
     - **Disabled**。 Windows Hello for Business を使用しない場合は、この設定を選択します。 画面上の他のすべての設定が使用できなくなります。
     - **Enabled**。 Windows Hello for Business の設定を構成する場合は、この設定を選択します。
-    - **[Not configured]** (未構成)。 Windows Hello for Business の設定の制御に Intune を使用しない場合は、この設定を選択します。 Windows 10 デバイス上の既存の Windows Hello for Business の設定は変更されません。 ページ上の他のすべての設定が使用できなくなります。
+    - **[Not configured]** (未構成)。 Windows Hello for Business の設定の制御に Intune を使用しない場合は、この設定を選択します。 Windows 10 デバイス上の既存の Windows Hello for Business の設定は変更されません。 ウィンドウ上の他のすべての設定が使用できなくなります。
 
 6.  前の手順で **[有効]** を選択した場合は、すべての登録済みの Windows 10 デバイスと Windows 10 モバイル デバイスに適用される必須設定を構成します。
 
@@ -69,9 +69,9 @@ Intune と Hello for Business の統合には 2 通りの方法があります�
      - **[必須]** (既定)。 アクセス可能な TPM を装備したデバイスのみが Windows Hello for Business をプロビジョニングできます。
      - **[優先]**。 デバイスは最初に TPM を使用しようとします。 これが使用できない場合、ソフトウェアの暗号化を使用できます。
 
- - **[最小 PIN サイズを必要とする]**/**[最大 PIN サイズを必要とする]**。 サインインをセキュリティで保護するために指定する PIN の最小長と最大長を使用するようにデバイスを構成します。 既定の PIN の長さは 6 文字ですが、最小長を 4 文字にすることができます。 PIN の最大長は 127 文字です。
+ - **[PIN の長さの最小値]**/**[PIN の長さの最大値]**。 サインインをセキュリティで保護するために指定する PIN の最小長と最大長を使用するようにデバイスを構成します。 既定の PIN の長さは 6 文字ですが、最小長を 4 文字にすることができます。 PIN の最大長は 127 文字です。
 
- - **[PIN での小文字の使用を必要とする]**/**[PIN での大文字の使用を必要とする]**/**[Require special characters in PIN]** (PIN での特殊文字の使用を必要とする)。 大文字、小文字、特殊文字を PIN で使用するように要求することで、PIN をより強力にすることができます。 次の中から選択します。
+ - **[PIN での小文字の使用を必要とする]**/**[PIN での大文字の使用を必要とする]**/**[Special characters in PIN]\(PIN での特殊文字の使用を必要とする\)**。 大文字、小文字、特殊文字を PIN で使用するように要求することで、PIN をより強力にすることができます。 次の中から選択します。
 
      - **[許可]**。 ユーザーは PIN で文字を使用できますが、使用は必須ではありません。
 
@@ -90,7 +90,7 @@ Intune と Hello for Business の統合には 2 通りの方法があります�
 
  - **[拡張スプーフィング対策が使用可能な場合は使用する]**。 Windows Hello のスプーフィング対策機能 (例: 実際の顔の代わりに写真の顔を検出する) をサポートしているデバイスで、その機能を使用するかどうかを構成します。<br>**[はい]** に設定されている場合、Windows のすべてのユーザーは、サポートされている場合に顔の特徴のスプーフィング対策を使用する必要があります。
 
- - **[電話によるサインインの使用]**。 このオプションが **[はい]** に設定されている場合、ユーザーはデスクトップ コンピューターの認証にポータブル コンパニオン デバイスとして機能するリモートの Passport を使用することができます。 デスクトップ コンピューターは Azure Active Directory に参加している必要があり、コンパニオン デバイスでは Windows Hello for Business の PIN を設定する必要があります。
+ - **[Allow phone sign-in]\(電話によるサインインを許可する\)**。 このオプションが **[はい]** に設定されている場合、ユーザーはデスクトップ コンピューターの認証にポータブル コンパニオン デバイスとして機能するリモートの Passport を使用することができます。 デスクトップ コンピューターは Azure Active Directory に参加している必要があり、コンパニオン デバイスでは Windows Hello for Business の PIN を設定する必要があります。
 
 ## <a name="windows-holographic-for-business-support"></a>Windows Holographic for Business のサポート
 

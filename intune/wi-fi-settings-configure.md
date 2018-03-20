@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 21bc79d3440e57ec91f7e4482112d77cf233575f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 90d2df028d5a61bb134b6a2b76efa570eed80f20
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Microsoft Intune で Wi-Fi の設定を構成する方法
 
@@ -47,17 +47,19 @@ Windows 8.1、Windows 10、Windows 10 Mobile、Windows Holographic for Business 
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>Wi-Fi 設定を含むデバイス プロファイルの作成
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
-2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
-3. [プロファイル] ブレードで、**[プロファイルを作成します]** を選択します。
-4. **[プロファイルを作成します]** ブレードで、Wi-Fi プロファイルの**名前**と**説明**を入力します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
+2. **[デバイス構成]** ウィンドウの **[管理]** セクションで、**[プロファイル]** を選択します。
+3. [プロファイル] ウィンドウで **[プロファイルの作成]** を選択します。
+4. **[プロファイルの作成]** ウィンドウで、Wi-Fi プロファイルの **[名前]** と **[説明]** を入力します。
 5. **[プラットフォーム]** ドロップダウン リストで、Wi-Fi 設定を適用するデバイス プラットフォームを選択します。 現時点では、Wi-Fi 設定に対応している次のいずれかのプラットフォームを選択できます。
     - **Android**
     - **Android for Work**
     - **iOS**
     - **macOS**
-    - **Windows 8.1 以降 (プロファイルのインポート)**
+    - **Windows Phone 8.1**
+    - **Windows 8.1 以降**
+    - **Windows 10 以降**
 
    > [!IMPORTANT]
    > Windows 10 を実行するデバイス用のプロファイルを作成する場合は (Windows Holographic for Business など)、**Windows 8.1 以降の**プラットフォームを選ぶ必要があります。 **Windows 10 以降**のプラットフォームには、Wi-Fi プロファイルの種類は含まれません。 
@@ -70,9 +72,9 @@ Windows 8.1、Windows 10、Windows 10 Mobile、Windows Holographic for Business 
     - [iOS の設定](wi-fi-settings-ios.md)
     - [macOS の設定](wi-fi-settings-macos.md)
     - [Windows 8.1 以降の設定](wi-fi-settings-import-windows-8-1.md) (Windows Holographic for Business を含む)
-1. 完了したら、**[プロファイルを作成します]** ブレードに戻り、**[作成]** をクリックします。
+1. 完了したら、**[プロファイルの作成]** ウィンドウに戻り、**[作成]** をクリックします。
 
-プロファイルが作成され、プロファイルの一覧ブレードに表示されます。
+プロファイルが作成され、プロファイルの一覧ウィンドウに表示されます。
 
 ## <a name="next-steps"></a>次の手順
 

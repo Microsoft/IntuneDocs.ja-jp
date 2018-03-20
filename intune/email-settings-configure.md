@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d805d10efccb92ca3fe65b771bf7689e22f42088
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 83d508f0ce33becb9abcef7434845836d8dd2bca
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Microsoft Intune で電子メールの設定を構成する方法
 
@@ -39,17 +39,19 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="create-a-device-profile-containing-email-settings"></a>電子メール設定を含むデバイス プロファイルの作成
 
-1. Azure Portal にサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ページで、**[デバイス構成]** を選択します。
-2. **[デバイス構成]** ページで、**[管理]** > **[プロファイル]** の順に選択します。
-3. [プロファイル] ページで **[プロファイルの作成]** を選択します。
-4. **[プロファイルの作成]** ページで、電子メール プロファイルの**名前**と**説明**を入力します。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
+2. **[デバイス構成]** ウィンドウの **[管理]** セクションで、**[プロファイル]** を選択します。
+3. [プロファイル] ウィンドウで **[プロファイルの作成]** を選択します。
+4. **[プロファイルの作成]** ウィンドウで、電子メール プロファイルの**名前**と**説明**を入力します。
 5. **[プラットフォーム]** ドロップダウン リストで、電子メール設定を適用するデバイス プラットフォームを選択します。 現時点では、電子メール デバイス設定に対応している次のいずれかのプラットフォームを選択できます。
     - **Android** (Samsung Android KNOX Standard のみ)
     - **Android for Work**
-    - **Android**
+    - **iOS**
+    - **macOS**
     - **Windows Phone 8.1**
+    - **Windows 8.1 以降**
     - **Windows 10 以降**
 6. **[プロファイルの種類]** ドロップダウン リストで、**[電子メール]** を選択します。
 7. 選択したプラットフォームによって構成できる設定が異なります。 各プラットフォームの詳細な設定については、次のいずれかのトピックを参照してください。
@@ -57,9 +59,9 @@ ms.lasthandoff: 03/02/2018
     - [iOS の設定](email-settings-ios.md)
     - [Windows Phone 8.1 の設定](email-settings-windows-phone-8-1.md)
     - [Windows 10 の設定](email-settings-windows-10.md)
-8. 完了したら、**[プロファイルの作成]** ページに戻り、**[作成]** をクリックします。
+8. 完了したら、**[プロファイルの作成]** ウィンドウに戻り、**[作成]** をクリックします。
 
-プロファイルが作成され、プロファイルの一覧ページに表示されます。
+プロファイルが作成され、プロファイルの一覧ウィンドウに表示されます。
 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事を参照してください。
 
 ## <a name="further-information"></a>詳細情報

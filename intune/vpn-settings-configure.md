@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: feba7e7dc3e88d7d9beefc548c20bf19fbba662d
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 9480f19a8cd71e001d196674d3e285c8f2a8bb09
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Microsoft Intune で VPN の設定を構成する方法
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 03/02/2018
 |Cisco (IPSec)|[いいえ]|はい|[いいえ]|[いいえ]|[いいえ]|[いいえ]|
 |Citrix|はい|はい|[いいえ]|[いいえ]|[いいえ]|はい|
 |F5 Edge Client|はい|はい|はい|はい|はい|はい|
-|Dell SonicWALL Mobile Connect|はい|はい|はい|はい|はい|はい|
+|SonicWall Mobile Connect|はい|はい|はい|はい|はい|はい|
 |Check Point Capsule VPN|はい|はい|はい|はい|はい|はい|
 |Cisco AnyConnect|はい|はい|はい|[いいえ]|[いいえ]|[いいえ]|
 |自動|[いいえ]|[いいえ]|[いいえ]|[いいえ]|[いいえ]|はい|
@@ -54,12 +54,12 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>VPN 設定を含むデバイス プロファイルの作成
 
-1. Azure Portal にサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
-2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
-3. [プロファイル] ブレードで、**[プロファイルを作成します]** を選択します。
-4. **[プロファイルを作成します]** ブレードで、VPN プロファイルの**名前**と**説明**を入力します。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
+2. **[デバイス構成]** ウィンドウで、**[管理]** > **[プロファイル]** の順に選択します。
+3. [プロファイル] ウィンドウで **[プロファイルの作成]** を選択します。
+4. **[プロファイルを作成します]** ウィンドウで、VPN プロファイルの**名前**と**説明**を入力します。
 5. **[プラットフォーム]** ドロップダウン リストで、VPN 設定を適用するデバイス プラットフォームを選択します。 現時点では、VPN デバイス設定に対応している次のいずれかのプラットフォームを選択できます。
     - **Android**
     - **Android for Work**
@@ -76,9 +76,9 @@ ms.lasthandoff: 03/02/2018
     - [Windows Phone 8.1 の設定](vpn-settings-windows-phone-8-1.md)
     - [Windows 8.1 の設定](vpn-settings-windows-8-1.md)
     - [Windows 10 の設定](vpn-settings-windows-10.md) (Windows Holographic for Business を含む)
-8. 完了したら、**[プロファイルを作成します]** ブレードに戻り、**[作成]** をクリックします。
+8. 完了したら、**[プロファイルの作成]** ウィンドウに戻り、**[作成]** を選択します。
 
-プロファイルが作成され、プロファイルの一覧ブレードに表示されます。
+プロファイルが作成され、プロファイルの一覧ウィンドウに表示されます。
 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事を参照してください。
 
 

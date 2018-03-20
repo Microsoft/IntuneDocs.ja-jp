@@ -1,7 +1,7 @@
 ---
-title: "Intune との Lookout 統合を設定する"
-titlesuffix: Azure portal
-description: "Intune を使用した Lookout サブスクリプションの設定"
+title: "Microsoft Intune との Lookout 統合を設定する"
+titlesuffix: 
+description: "モバイル デバイスから会社のリソースへのアクセスを制御するための Intune と Lookout Mobile Threat Defense の統合について説明します。"
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fa13ee9239dcb1f62f4fb06e876ecc272a8f620c
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 7ffd55a82af4f7fdc8d8df7cab818c59def74109
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune との Lookout Mobile Threat Defense 統合を設定する
 

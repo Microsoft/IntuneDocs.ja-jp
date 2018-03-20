@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/03/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01f5791869876ecfb7096c987cbc2828a39a2844
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 0f5d723c86c120bb8dee1f4e109b70d9ea4e6091
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>デバイス登録マネージャー アカウントを使用してデバイスを登録する
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 03/02/2018
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>デバイス登録マネージャーのシナリオの例
 
-あるレストランで、接客担当スタッフが販売時点管理に使い、調理担当スタッフがオーダーのモニターに使う POS タブレットが 50 台必要になりました。 従業員は、会社のデータにアクセスしたり、ユーザーとしてサインインしたりする必要はありません。 Intune 管理者はデバイス登録マネージャー アカウントを作成し、レストランの監督者を DEM アカウントに追加し、DEM の機能を与えます。 これで監督者は DEM の資格情報を利用し、50 台のタブレット デバイスを登録できます。
+あるレストランで、接客担当スタッフが販売時点管理に使い、調理担当スタッフがオーダーのモニターに使う POS タブレットが 50 台必要になりました。 従業員は、会社のデータにアクセスしたり、ユーザーとしてサインインしたりする必要はありません。 Intune 管理者はデバイス登録マネージャー アカウントを作成し、レストランの監督者を DEM アカウントに追加します。 監督者は DEM の機能を使用できます。 これで監督者は DEM の資格情報を利用し、50 台のタブレット デバイスを登録できます。
 
 [Azure Portal](https://portal.azure.com) 内のユーザーのみがデバイス登録マネージャーになることができます。 デバイス登録マネージャーのユーザーを Intune 管理者にすることはできません。
 
@@ -50,7 +50,7 @@ DEM ユーザーができること:
 
   - ユーザーごとのアクセスはできません。 デバイスには割り当てられたユーザーがないため、電子メールや会社のデータ アクセスがありません。 VPN 構成などを使用すれば、デバイス アプリがデータにアクセスすることはできます。
   - これらのシナリオはユーザーごとであるため、条件付きのアクセスはできません。
-  - DEM ユーザーは、会社ポータルを使用して、デバイス自体で DEM 登録のデバイスを登録解除することはできません。 Intune 管理者はこれができますが、DEM ユーザーはできません。
+  - DEM ユーザーは、会社ポータルを使用して、デバイス自体で DEM 登録のデバイスを登録解除することはできません。 Intune 管理者は登録を解除できます。
   - ポータル サイト アプリまたは Web サイトには、ローカルのデバイスのみが表示されます。
   - アプリ管理のための Apple ID 要件がユーザー単位になるため、ユーザーは Apple Volume Purchase Program (VPP) アプリを利用できません。
   - (iOS のみ) DEM を利用して iOS デバイスを登録する場合は、Apple Configurator、Apple Device Enrollment Program (DEP)、または Apple School Manager (ASM) を利用してデバイスを登録することはできません。
@@ -59,7 +59,7 @@ DEM ユーザーができること:
 
 
 > [!NOTE]
-> デバイス登録マネージャーで管理されているデバイスに会社のアプリを展開するには、ポータル サイト アプリを**必須のインストール**としてデバイス登録マネージャーのユーザー アカウントに展開します。
+> デバイス登録マネージャーによって管理されているデバイスに会社のアプリを展開できます。 **必須のインストール**としてポータル サイト アプリをデバイス登録マネージャーのユーザー アカウントに展開します。
 > パフォーマンスを改善するために、DEM デバイスでポータル サイト アプリを表示すると、ローカル デバイスのみが表示されます。 その他の DEM デバイスのリモート管理は、Intune 管理コンソールからのみ実行できます。
 
 
@@ -88,9 +88,8 @@ DEM 登録タスクを実行するには、グローバル管理者または Int
 
 **デバイス登録マネージャーを削除するには**
 
-1. [Azure Portal](https://portal.azure.com) で **[すべてのサービス]** > **[Intune]** の順に選びます。 Intune は、**[監視 + 管理]** セクションにあります。
-2. [Intune] ブレードで **[デバイスの登録]** を選択し、**[デバイス登録マネージャー]** を選択します。
-3. **[デバイス登録マネージャー]** ブレードで、DEM ユーザーを選択し、**[削除]** を選択します。
+1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]**、**[デバイス登録マネージャー]** の順に選びます。
+2. **[デバイス登録マネージャー]** ブレードで、DEM ユーザーを選択し、**[削除]** を選択します。
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>デバイス登録マネージャーのプロパティの表示
 
