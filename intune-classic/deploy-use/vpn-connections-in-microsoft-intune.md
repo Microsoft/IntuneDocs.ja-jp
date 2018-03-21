@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 08e1126e05d101669c5796e4bd7fcaf08339fa43
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 7c63c817ccddd0abc6c5c6b0ae2f2a7d1cb2d9bf
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="vpn-connections-in-microsoft-intune"></a>VPN connections in Microsoft Intune (Microsoft Intune での VPN 接続)
 
@@ -48,18 +48,18 @@ Intune では、次の接続の種類を使用する VPN プロファイルを�
 
 接続の種類 |iOS および Mac OS X  |Android と Android for Work|Windows 8.1|Windows RT 8.1|Windows Phone 8。1|Windows 10 デスクトップおよび Windows 10 Mobile |
 ----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
-Cisco AnyConnect|○ |○   |[いいえ]    |いいえ  |いいえ    | ○ (OMA-URI、Windows 10 Mobile のみ)|     
-Cisco (IPsec)|Yes |○   |[いいえ]  |いいえ  |いいえ | いいえ|
-Citrix|Yes |○ (Android のみ)   |いいえ  |いいえ  |いいえ | いいえ|
-Pulse Secure|○  |○ |○   |○  |○| ○|        
-F5 Edge Client|○ |○ |○ |○  |   ○ |  ○|   
-Dell SonicWALL Mobile Connect|○ |○ |○ |○ |○ |○|         
-CheckPoVPNt Mobile VPN|○ |○ |○ |○|○|○|
-Microsoft SSL (SSTP)|[いいえ] |いいえ |いいえ |いいえ|いいえ|VPNv1 OMA-URI*|
-Microsoft 自動|いいえ |いいえ |いいえ |いいえ|○ (OMA-URI)|○|
-IKEv2|iOS カスタム プロファイル|いいえ |いいえ |いいえ|○ (OMA-URI)|○|
-PPTP|iOS カスタム プロファイル|いいえ |いいえ |いいえ|[いいえ]|○|
-L2TP|iOS カスタム プロファイル|いいえ |いいえ |いいえ|○ (OMA-URI)|Yes|
+Cisco AnyConnect|はい |はい   |[いいえ]    |[いいえ]  |[いいえ]    | ○ (OMA-URI、Windows 10 Mobile のみ)|     
+Cisco (IPsec)|はい |はい   |[いいえ]  |[いいえ]  |[いいえ] | [いいえ]|
+Citrix|はい |○ (Android のみ)   |[いいえ]  |[いいえ]  |[いいえ] | [いいえ]|
+Pulse Secure|はい  |はい |はい   |はい  |はい| はい|        
+F5 Edge Client|はい |はい |はい |はい  |   はい |  はい|   
+SonicWall Mobile Connect|はい |はい |はい |はい |はい |はい|         
+CheckPoint Mobile VPN|はい |はい |はい |はい|はい|はい|
+Microsoft SSL (SSTP)|[いいえ] |[いいえ] |[いいえ] |[いいえ]|[いいえ]|VPNv1 OMA-URI*|
+Microsoft 自動|[いいえ] |[いいえ] |[いいえ] |[いいえ]|○ (OMA-URI)|はい|
+IKEv2|iOS カスタム プロファイル|[いいえ] |[いいえ] |[いいえ]|○ (OMA-URI)|はい|
+PPTP|iOS カスタム プロファイル|[いいえ] |[いいえ] |[いいえ]|[いいえ]|はい|
+L2TP|iOS カスタム プロファイル|[いいえ] |[いいえ] |[いいえ]|○ (OMA-URI)|はい|
 
 \* Windows 10 用に使用できるその他の設定を使用しない場合。
 
@@ -108,7 +108,7 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
 **名前**     |Intune コンソールで VPN プロファイルを識別するための一意の名前を入力します。         
 **説明**     |VPN プロファイルの概要を示す簡単な説明と、VPN プロファイルを見つけるのに役立つその他の関連情報を入力します。         
 **(ユーザーに表示する) VPN 接続名**     |VPN プロファイルの名前を指定します。 これは、ユーザーのデバイスで利用可能な VPN 接続の一覧に表示される名前です。         
-**接続の種類**     |  VPN プロファイルで使用する接続の種類を **[Cisco AnyConnect]** (Windows 8.1 または Windows Phone 8.1 では使用できません)、**[Pulse Secure]**、**[Citrix]**、**[F5 Edge Client]**、**[Dell SonicWALL Mobile Connect]**、**[CheckPoint Mobile VPN]** の中から選択します。
+**接続の種類**     |  VPN プロファイルで使用する接続の種類を **[Cisco AnyConnect]** (Windows 8.1 や Windows Phone 8.1 では使用不可)、**[Pulse Secure]**、**[Citrix]**、**[F5 Edge Client]**、**[SonicWall Mobile Connect]**、**[CheckPoint Mobile VPN]** の中から選択します。
 **VPN サーバーの説明**     | デバイスが接続する VPN サーバーの説明を指定します。 例: **Contoso VPN サーバー**。 接続の種類が **[F5 Edge Client]** の場合、**[サーバーの一覧]** フィールドを使用して、サーバーの説明と IP アドレスの一覧を指定します。
 **サーバーの IP アドレスまたは FQDN**    |デバイスが接続する VPN サーバーの IP アドレスまたは完全修飾ドメイン名を指定します。 例: **192.168.1.1**、**vpn.contoso.com**。接続の種類が **[F5 Edge Client]** の場合、**[サーバーの一覧]** フィールドを使用して、サーバーの説明と IP アドレスの一覧を指定します。         |         
 **サーバーの一覧**     |**[追加]** を選択して、VPN 接続に使用する新しい VPN サーバーを追加します。 また、接続の既定のサーバーを指定することもできます。 このオプションは、接続の種類が **[F5 Edge Client]** の場合にのみ表示されます。         
@@ -118,7 +118,7 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
 **クライアント認証用のクライアント証明書 (ID 証明書) を選択する**|事前に作成した、VPN 接続の認証に使用するクライアント SCEP 証明書を選択します。 Intune で証明書プロファイルを使用する方法の詳細については、[証明書プロファイルを使用したリソースへのアクセスのセキュリティ保護](secure-resource-access-with-certificate-profiles.md)に関する記事を参照してください。 このオプションは、認証方法が **[証明書]** の場合にのみ表示されます。
 **ロール**| この接続に対するアクセス権を持つユーザー ロールの名前を指定します。 ユーザー ロールを使用して、個人の設定とオプションを定義し、特定のアクセス機能を有効または無効にします。 このオプションは、接続の種類が **[Pulse Secure]** または **[Citrix]** の場合にのみ表示されます。
 **領域**|使用する認証領域の名前を指定します。 認証領域とは、接続の種類が [Pulse Secure] または [Citrix] の場合に使用される認証リソースのグループを表します。 このオプションは、接続の種類が **[Pulse Secure]** または **[Citrix]** の場合にのみ表示されます。
-**ログイン グループまたはドメイン**|接続するログイン グループまたはドメインの名前を指定します。 このオプションは、接続の種類が **[Dell SonicWALL Mobile Connect]** の場合にのみ表示されます。
+**ログイン グループまたはドメイン**|接続するログイン グループまたはドメインの名前を指定します。 このオプションは、接続の種類が **[SonicWall Mobile Connect]** の場合にのみ表示されます。
 **指紋**|VPN サーバーが信頼できることを確認するために使用する文字列を指定します (たとえば、"Contoso 指紋コード")。 指紋をクライアントに送信することにより、クライアントは、接続するときに同じ指紋を示すすべてのサーバーを信頼します。 デバイスにまだ指紋が設定されていない場合、デバイスは指紋を表示すると共に、接続先の VPN サーバーを信頼するようにユーザーを促します (ユーザーは手動で指紋を検証し、**[信頼する]** を選択して接続します)。このオプションは、接続の種類が **[CheckPoint Mobile VPN]** の場合にのみ表示されます。
 **アプリ VPN ごと**|VPN 接続を iOS または Mac OS X アプリに関連付けて、アプリを実行すると接続が開かれるようにする場合は、このオプションを選びます。 ソフトウェアを展開するときに VPN プロファイルをアプリに関連付けることができます。 詳細については、「[Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md)」 (Microsoft Intune でアプリを展開する) を参照してください。
 **オンデマンド VPN**|iOS 8.0 以降のデバイスではオンデマンド VPN を設定することができます。 この設定手順は、「[iOS デバイス向けのオンデマンド VPN](#on-demand-vpn-for-ios-devices)」に記載されています。
@@ -126,7 +126,7 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
 **自動構成スクリプトを使用する** (iOS、Mac OS X、Windows 8.1、Windows Phone 8.1 のみ)|VPN サーバーが接続にプロキシ サーバーを必要とする場合は、自動構成スクリプトを使用して設定を定義し、設定が含まれているファイルへの URL を指定するかどうかを指定します。 詳細については、Windows Server のマニュアルを参照してください。
 **プロキシ サーバーを使用する** (iOS、Mac OS X、Windows 8.1、Windows Phone 8.1 のみ)|VPN サーバーが接続にプロキシ サーバーを必要とする場合は、このオプションを選択し、プロキシ サーバーのアドレスとポート番号を指定します。 詳細については、Windows Server のマニュアルを参照してください。
 **ローカル アドレスのプロキシ設定をバイパスする** (iOS、Mac OS X、Windows 8.1、Windows Phone 8.1 のみ)|VPN サーバーが接続にプロキシ サーバーを必要とする場合、指定したローカル アドレスに対してプロキシ サーバーを使用しないようにするには、このオプションを選択します。 詳細については、Windows Server のマニュアルを参照してください。
-**カスタム XML** (Windows 8.1 以降および Windows Phone 8.1 以降)|VPN 接続を構成するカスタムの XML コマンドを指定します。 **[Pulse Secure]** の例: &lt;pulse-schema&gt;&lt;isSingleSignOnCredential&gt;true&lt;/isSingleSignOnCredential&gt;&lt;/pulse-schema&gt;。 **[CheckPoint Mobile VPN]** の例: &lt;CheckPointVPN port="443" name="CheckPointSelfhost" sso="true"  debug="3" /&gt;。 **[Dell SonicWALL Mobile Connect]** の例: &lt;MobileConnect&gt;&lt;Compression&gt;false&lt;/Compression&gt;&lt;debugLogging&gt;True&lt;/debugLogging&gt;&lt;packetCapture&gt;False&lt;/packetCapture&gt;&lt;/MobileConnect&gt;。 **[F5 Edge Client]** の例: &lt;f5-vpn-conf&gt;&lt;single-sign-on-credential/&gt;&lt;/f5-vpn-conf&gt;。 カスタムの XML コマンドの記述方法については、各製造元の VPN に関するマニュアルを参照してください。
+**カスタム XML** (Windows 8.1 以降および Windows Phone 8.1 以降)|VPN 接続を構成するカスタムの XML コマンドを指定します。 **[Pulse Secure]** の例: &lt;pulse-schema&gt;&lt;isSingleSignOnCredential&gt;true&lt;/isSingleSignOnCredential&gt;&lt;/pulse-schema&gt;。 **[CheckPoint Mobile VPN]** の例: &lt;CheckPointVPN port="443" name="CheckPointSelfhost" sso="true"  debug="3" /&gt;。 **[SonicWall Mobile Connect]** の例: &lt;MobileConnect&gt;&lt;Compression&gt;false&lt;/Compression&gt;&lt;debugLogging&gt;True&lt;/debugLogging&gt;&lt;packetCapture&gt;False&lt;/packetCapture&gt;&lt;/MobileConnect&gt;。 **[F5 Edge Client]** の例: &lt;f5-vpn-conf&gt;&lt;single-sign-on-credential/&gt;&lt;/f5-vpn-conf&gt;。 カスタムの XML コマンドの記述方法については、各製造元の VPN に関するマニュアルを参照してください。
 **DNS サフィックス検索一覧** (Windows Phone 8.1 のみ)|各行に 1 つずつ DNS サフィックスを指定します。 短い名前を使用して Web サイトに接続するときに、指定した各 DNS サフィックスが検索されます。 たとえば、**domain1.contoso.com** と **domain2.contoso.com** の DNS サフィックスを指定して URL **http://mywebsite** にアクセスすると、URL **http://mywebsite.domain1.contoso.com** と **http://mywebsite.domain2.contoso.com** が検索されます。
 **企業の Wi-Fi ネットワークに接続しているときは VPN をバイパスする** (Windows Phone 8.1 のみ)|デバイスが企業の Wi-Fi ネットワークに接続しているときは VPN 接続を使用しないことを指定するには、このオプションを選択します。
 **家庭の Wi-Fi ネットワークに接続しているときは VPN をバイパスする** (Windows Phone 8.1 のみ)|デバイスが家庭の Wi-Fi ネットワークに接続しているときは VPN 接続を使用しないことを指定するには、このオプションを選択します。

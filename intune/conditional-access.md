@@ -1,12 +1,12 @@
 ---
-title: "Intune での条件付きアクセス"
-titlesuffix: Azure portal
-description: "会社のリソースにアクセスするためにユーザーとデバイスが満たす必要のある条件を Microsoft Intune で定義する方法について説明します。\""
+title: "Microsoft Intune での条件付きアクセス"
+titlesuffix: 
+description: "会社のリソースにアクセスするためにユーザー、デバイス、アプリが満たす必要のある条件を Microsoft Intune で定義する方法について説明します。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 05/23/2017
+ms.date: 03/06/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4d3d84f8010b72b9595f3ff54924d6c3fe245702
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 08589f3d9186699ce5241579cc1879be2d442e3d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="whats-conditional-access"></a>条件付きアクセスとは
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-このトピックでは、Enterprise Mobility + Security (EMS) に適用される条件付きアクセスについて説明し、さらに Intune での条件付きアクセスの一般的なシナリオについても取り上げます。
+条件付きアクセスとは、自分のメールや会社のリソースに接続することが許可されたデバイスやアプリを制御する手段です。 このトピックでは、デバイスベースやアプリベースの条件付きアクセスと、Intune で条件付きアクセスを利用する一般的なシナリオについて説明します。
 
 Enterprise Mobility + Security (EMS) 条件付きアクセスはスタンドアロン製品ではありませんが、EMS の一部であるすべてのサービスと製品にかかわるソリューションです。 細かいアクセス制御を提供することで会社のデータをセキュリティで保護し、任意の場所と任意のデバイスで最適な仕事ができるエクスペリエンスをユーザーに提供します。
 

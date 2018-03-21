@@ -1,29 +1,29 @@
 ---
-title: "macOS の Intune デバイス制限設定"
-titlesuffix: Azure portal
-description: "macOS デバイスでデバイスの設定と機能を制御するために使用できる Intune 設定について説明します。\""
+title: "macOS の Microsoft Intune デバイス制限設定"
+titlesuffix: 
+description: "macOS を実行するデバイスでデバイスの設定と機能を制御するために使用できる Intune の設定について説明します。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/31/2018
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a88cf11209726a622863339c3a6c117f7b83be1e
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 72c9036bd6062e719d55876d77f44123fe2af392
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での macOS デバイスの制限設定
+# <a name="microsoft-intune-macos-device-restriction-settings"></a>Microsoft Intune での macOS デバイスの制限設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-この設定を使用して、デバイスの制限プロファイルの macOS デバイスを管理します。
+この記事では、macOS を実行するデバイスに構成できるすべての Microsoft Intune デバイスの制限設定について説明します。
 
 ## <a name="password"></a>パスワード
 -   **[パスワード]** - エンド ユーザーがデバイスにアクセスする際にパスワードの入力を要求します。
@@ -49,5 +49,5 @@ ms.lasthandoff: 02/01/2018
 
 ### <a name="unmarked-email-domains"></a>マークされていないメール ドメイン
 
-**[メール ドメイン URL]** フィールドで、1 つ以上の URL を一覧に追加します。 構成したドメイン以外のドメインからのメールをエンド ユーザーが受信すると、そのメールは iOS のメール アプリで信頼されていないメールとしてマークされます。
+**[メール ドメイン URL]** フィールドで、1 つ以上の URL を一覧に追加します。 構成したドメイン以外のドメインからのメールをユーザーが受信すると、そのメールは iOS のメール アプリで信頼されていないメールとしてマークされます。
 

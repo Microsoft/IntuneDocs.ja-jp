@@ -1,30 +1,30 @@
 ---
-title: "Windows 用のコンプライアンス ポリシーの作成方法"
-titleSuffix: Azure portal
-description: "Windows デバイス用のコンプライアンス ポリシーの作成方法について説明します。\""
+title: "Microsoft Intune で Windows デバイスのコンプライアンス ポリシーを作成する"
+titleSuffix: 
+description: "デバイスが準拠するために満たす必要のある要件を指定できるように、Windows デバイスの Microsoft Intune デバイス コンプライアンス ポリシーを作成します。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 2/13/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fe5a66ca91181d0cebdaea846f0ee08f9252d76b
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 32af54e3e753e7ded3c86d9d44b793da7fe2e9c0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune で Windows デバイス用のデバイス コンプライアンス ポリシーを作成する方法
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-コンプライアンス ポリシーは、プラットフォームごとに作成されます。 また、Azure Portal でコンプライアンス ポリシーを作成できます。 コンプライアンス ポリシーの詳細については、[デバイスのコンプライアンス](device-compliance.md)に関するトピックを参照してください。 コンプライアンス ポリシーを作成する前に対応する必要がある前提条件については、[デバイス コンプライアンスの概要](device-compliance-get-started.md)に関するトピックを参照してください。
+Windows の Intune デバイス コンプライアンス ポリシーでは、準拠しているものと見なされるために Windows デバイスが満たす必要のあるルールと設定を指定します。 条件付きアクセスでこれらのポリシーを使って、会社のリソースへのアクセスを許可またはブロックすることができ、デバイスのレポートを取得したり、コンプライアンスへの非対応に対処したりすることができます。 デバイス コンプライアンス ポリシーは、Intune Azure Portal でプラットフォームごとに作成します。 コンプライアンス ポリシーと、コンプライアンス ポリシーを作成する前に対応する必要がある前提条件について詳しくは、[デバイス コンプライアンスの概要](device-compliance-get-started.md)に関するページをご覧ください。
 
 次の表では、条件付きアクセス ポリシーとコンプライアンス ポリシーを使用する場合に非準拠設定をどのように管理するかについて説明しています。
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 02/14/2018
 
 -------------------------------
 
-**修復** = デバイス オペレーティング システムによって準拠が強制されます  (たとえば、ユーザーは PIN を設定するように強制されます)。+
+**修復** = デバイス オペレーティング システムによって準拠が強制されます  (たとえば、ユーザーは PIN を設定するように強制されます)。
 
 **検疫済み** = デバイス オペレーティング システムによって準拠が強制されません  (たとえば、Android デバイスでは、ユーザーはデバイスの暗号化を強制されません)。デバイスが準拠していない場合、次のアクションが行われます。
 
@@ -51,12 +51,14 @@ ms.lasthandoff: 02/14/2018
 
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Azure Portal でコンプライアンス ポリシーを作成する
 
-1. **[Intune]** ブレードで、**[デバイス コンプライアンスの設定]** を選択します。 **[管理]** で **[All device compliance policies (すべてのデバイス コンプライアンス ポリシー)]**、**[作成]** の順に選択します。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. **[Intune]** ウィンドウで、**[デバイスのポリシー準拠]** を選択します。 **[管理]** で **[ポリシー]** を選択し、**[ポリシーの作成]** を選択します。
 2. 名前と説明を入力し、このポリシーを適用するプラットフォームを選択します。
-3. **[コンプライアンス要件]** を選択して、[コンプライアンス要件] ブレードを開きます。  ここで **[セキュリティ]**、**[デバイスの正常性]**、**[デバイスのプロパティ]** の設定を指定します。終了したら、**[OK]** を選択します。
+3. **[Settings Configure]\(設定の構成\)** を選択して、**[システム セキュリティ]**、**[デバイスの正常性]**、**[デバイスのプロパティ]** の設定を指定します。 終了したら、**[OK]** を選択します。
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
-5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
 6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
 7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
 8. Choose **Add** to finish creating the action.
@@ -64,10 +66,10 @@ ms.lasthandoff: 02/14/2018
 
 ## <a name="assign-user-groups"></a>ユーザー グループを割り当てる
 
-コンプライアンス ポリシーをユーザーに割り当てるには、構成したポリシーを選択します。 既存のポリシーは、**[コンプライアンス ポリシー]** ブレードで確認できます。
+コンプライアンス ポリシーをユーザーに割り当てるには、構成したポリシーを選択します。 既存のポリシーは、**[デバイスのポリシー準拠 – ポリシー]** ウィンドウで確認できます。
 
-1. ユーザーに割り当てるポリシーを選択し、**[割り当て]** を選択します。 これにより表示されたブレードで、**[Azure Active Directory セキュリティ グループ]** を選択し、ポリシーに割り当てることができます。
-2. **[グループの選択]** を選択すると、ブレードが開き、Azure AD セキュリティ グループが表示されます。  **[選択]** を選択すると、ポリシーがユーザーに展開されます。
+1. ユーザーに割り当てるポリシーを選択し、**[割り当て]** を選択します。 これにより表示されたウィンドウで、**Azure Active Directory セキュリティ グループ**を選択してポリシーに割り当てることができます。
+2. **[選択したグループ]** を選択すると、ウィンドウが開いて Azure AD セキュリティ グループが表示されます。  **[保存]** を選択すると、ポリシーがユーザーに展開されます。
 
 ポリシーがユーザーに適用されました。 ポリシーの対象となっているユーザーが使用しているデバイスは、コンプライアンスについて評価されます。
 
@@ -183,10 +185,10 @@ HAS サービスのしくみについては、「[HealthAttestation CSP](https:/
 
 ルールに指定された OS バージョンより新しいバージョンの OS がデバイスで使用されている場合、会社のリソースへのアクセスがブロックされ、IT 管理者に問い合わせることをユーザーに促すメッセージが表示されます。対象の OS バージョンを許可するようにルールが変更されるまで、このデバイスを使用して会社のリソースへのアクセスすることはできません。
 
-**[Minimum OS required]** (必要な最小 OS バージョン) と **[Maximum OS version allowed]** (許可される最大 OS バージョン) の設定に使用する OS バージョンは、コマンド プロンプトから **winver** コマンドを実行して確認してください。 winver コマンドから返されるのは、内部的な OS バージョンです。+
+**[Minimum OS required]** (必要な最小 OS バージョン) と **[Maximum OS version allowed]** (許可される最大 OS バージョン) の設定に使用する OS バージョンは、コマンド プロンプトから **winver** コマンドを実行して確認してください。 winver コマンドから返されるのは、内部的な OS バージョンです。
 
 - Windows 8.1 PC の場合、バージョン **3** が返されます。 Windows に関して OS バージョンのルールを Windows 8.1 に設定した場合、デバイスに Windows 8.1 がインストールされていても、そのデバイスは非準拠として報告されます。
-- Windows 10 を実行する PC の場合は、&quot;10.0&quot;+ に続けて、winver コマンドから返される OS ビルド番号を指定する必要があります。
+- Windows 10 を実行する PC の場合は、"10.0" に続けて、winver コマンドから返される OS ビルド番号を指定する必要があります。
 
 ## <a name="windows-holographic-for-business-support"></a>Windows Holographic for Business のサポート
 

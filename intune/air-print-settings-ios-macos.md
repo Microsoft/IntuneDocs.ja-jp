@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5f55d05dd39fca02e72535cbbff9afb8d575ed9f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7a8ef24a9e6946145bf69d279566f3b736e6efa1
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="airprint-settings-for-ios-and-macos-devices"></a>iOS および macOS デバイス向けの AirPrint 設定
 
@@ -40,8 +40,9 @@ iOS デバイス ユーザーが既知の AirPrint プリンターに印刷で�
 
 ## <a name="configure-an-airprint-profile"></a>AirPrint プロファイルを構成する
 
-1. **[デバイス機能]** ブレードで **[AirPrint]** を選択します。
-2. **[AirPrint]** ブレードで、AirPrint の出力先を追加するには、**IP アドレス**と**リソース パス**を入力して、**[追加]** をクリックします。
+1. [Azure Portal の Intune](https://portal.azure.com) から[デバイス構成領域の **[デバイス機能]**](device-features-configure.md) に移動します。 
+1. **[デバイス機能]** ウィンドウで **[AirPrint]** を選択します。
+2. **[AirPrint]** ウィンドウで、AirPrint の出力先を追加するには、**IP アドレス**と**リソース パス**を入力して、**[追加]** をクリックします。
 3. 必要な数の出力先を追加します。 終了したら **[OK]** を選択します。
 
 コンマ区切り値 (.csv) ファイルからプリンターの一覧をインポートしたり、一覧をエクスポートすることもできます。

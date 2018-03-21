@@ -1,32 +1,32 @@
 ---
-title: "Windows Phone 8.1 デバイス向けの Intune 電子メール設定"
-titleSuffix: Azure portal
-description: "Windows Phone 8.1 デバイスでの電子メール接続の構成に使用できる Intune 設定について説明します。\""
+title: "Windows Phone 8.1 デバイス向けの Microsoft Intune 電子メール設定"
+titleSuffix: 
+description: "Windows Phone 8.1 を実行するデバイスでの電子メール接続の構成に使用できる Intune 設定について説明します。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/15/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 352d6bd9-ec8c-439e-be3a-ad3daf307df2
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 14b39932bb6bf2ee32fea8e51603fc055436dbe9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 06815ac6ed6e24bc1efb4ea612b867fc78e7fb5e
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="email-profile-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Microsoft Intune での Windows Phone 8.1 デバイス向けの電子メール プロファイル設定
+# <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Windows Phone 8.1 を実行するデバイス向けの Microsoft Intune 電子メール プロファイル設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+この記事では、Windows Phone 8.1 を実行しているデバイス用に構成できる電子メール プロファイル設定を示します。
 
-- **[Apply all settings to Windows Phone 8.1 only (すべての設定を Windows Phone 8.1 のみに適用する)]** - これは、Intune クラシック ポータルで構成できる設定です。 Azure Portal では、この設定は変更できません。 これを **[構成済み]** に設定すると、すべての設定が Windows Phone 8.1 デバイスのみに適用されるようになります。 **[未構成]** に設定されている場合、これらの設定は Windows 10 Mobile デバイスにも適用されます。
+
+- **[Apply all settings to Windows Phone 8.1 only (すべての設定を Windows Phone 8.1 のみに適用する)]** - これは、Intune クラシック ポータルで構成できる設定です。 Azure Portal では、この設定は変更できません。 これが **[構成済み]** に設定されている場合は、すべての設定が Windows Phone 8.1 デバイスのみに適用されます。 **[未構成]** に設定されている場合、これらの設定は Windows 10 Mobile デバイスにも適用されます。
 - **[電子メール サーバー]** - Exchange サーバーのホスト名。
 - **[アカウント名]** - ユーザーのデバイスに表示される電子メール アカウントの表示名。
 - **[AAD からのユーザー名の属性]** - この電子メール プロファイルのユーザー名を生成するために使用される Active Directory (AD) または Azure AD の属性です。 **プライマリ SMTP アドレス** (**user1@contoso.com** など) または**ユーザー プリンシパル名** (**user1**、**user1@contoso.com** など) を選択します。

@@ -1,12 +1,12 @@
 ---
-title: "Windows 10 用の Intune Endpoint Protection 設定"
-titlesuffix: Azure portal
-description: "Windows 10 デバイスで Endpoint Protection 設定 (BitLocker など) を制御するのに使用できる Intune 設定について説明します。"
+title: "Windows 10 用の Microsoft Intune Endpoint Protection の設定"
+titlesuffix: 
+description: "Windows 10 デバイスで Endpoint Protection 設定 ( BitLocker など) を制御するのに使用できる Intune 設定について説明します。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 01/16/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,34 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 35c33fb189187a678efa04d10706fe752d683e17
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 02a32f678b40b2b40535984e17b41e0a864d8fdf
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Microsoft Intune での Windows 10 以降用の Endpoint Protection 設定
+# <a name="create-endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Microsoft Intune で Windows 10 以降用の Endpoint Protection の設定を作成する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Endpoint Protection プロファイルを使用すると、Windows 10 デバイス上で BitLocker や Windows Defender のようなセキュリティ機能を制御することができます。
 
-このトピックでは、Endpoint Protection プロファイルを作成する方法について説明します。
+この記事では、Endpoint Protection プロファイルを作成する方法について説明します。
 
 > [!Note]
 > これらの設定は、Windows 10 の Home および Professional Edition ではサポートされていません。
 
 ## <a name="create-an-endpoint-protection-profile"></a>Endpoint Protection プロファイルを作成する
 
-1. Azure Portal にサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
-2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
+2. **[デバイス構成]** ブレードの **[管理]** セクションで、**[プロファイル]** を選択します。
 3. [プロファイル] ブレードで、**[プロファイルを作成します]** を選択します。
 4. **[プロファイルを作成します]** ブレードで、デバイスの機能プロファイルの**名前**と**説明**を入力します。
 5. **[プラットフォーム]** ドロップダウン リストで、**[Windows 10 以降]** を選択します。
 6. **[プロファイルの種類]** ドロップダウン リストで、**[Endpoint Protection]** を選択します。
-7. 必要な設定を構成します。 各設定の機能については、このトピックで詳細を説明します。 終了したら **[OK]** を選択します。
+7. 必要な設定を構成します。 各設定の機能については、この記事で詳細を説明します。 終了したら **[OK]** を選択します。
 8. **[プロファイルの作成]** ブレードに戻り、**[作成]** を選択します。
 
 プロファイルが作成され、プロファイルの一覧ブレードに表示されます。
@@ -57,6 +57,7 @@ Application Guard は Windows 10 (64 ビット) デバイスでのみ使用可�
 - **仮想ブラウザーから印刷** - PDF、XPS、ローカル、および/またはネットワーク プリンターでの仮想ブラウザーからのコンテンツの印刷を許可します。
 - **ログの収集** - Application Guard ブラウズ セッション内で発生するイベントのログを収集します。
 - **ユーザーが生成したブラウザー データを保持する** - Application Guard 仮想ブラウズ セッション中に作成されるユーザー データ (パスワード、お気に入り、cookie など) の保存を許可します。
+- **グラフィックス アクセラレータ** - 仮想グラフィックス処理ユニットにアクセスできるようにすることで、Application Guard 仮想閲覧セッション内で作業するときに、グラフィックを多用する Web サイトの読み込みを高速化します。
 
 
 ## <a name="windows-defender-firewall"></a>Windows Defender ファイアウォール

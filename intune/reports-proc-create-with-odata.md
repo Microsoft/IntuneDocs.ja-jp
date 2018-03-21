@@ -1,11 +1,12 @@
 ---
-title: "Power BI で OData フィードからレポートを作成する | Microsoft Docs"
+title: "Power BI で OData フィードからレポートを作成する"
+titlesuffix: Microsoft Intune
 description: "Power BI Desktop と Intune データ ウェアハウス API の対話型フィルターを使って、ツリーマップの視覚化を作成します。"
 keywords: "Intune データ ウェアハウス"
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/18/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +15,19 @@ ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a81a3b0648c77e3adb7a57bdcecddea1e0412eb2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 850218c33a37738c591be36c778dfe5941bea51b
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Power BI で OData フィードからレポートを作成する
 
-このチュートリアルでは、Power BI Desktop と対話型フィルターを使って、ツリーマップの視覚化を作成します。 たとえば、CFO がデバイスの全体的な分布を会社所有デバイスと個人デバイスで比較したいような場合です。 ツリーマップを使用すると、デバイスの種類の合計数に関する洞察が得られます。 会社所有または個人所有の iOS、Android、Windows デバイスの数がわかります。
+この記事では、Power BI Desktop と対話型フィルターを使って、ツリーマップの視覚化を作成する方法を説明します。 たとえば、CFO がデバイスの全体的な分布を会社所有デバイスと個人デバイスで比較したいような場合です。 ツリーマップを使用すると、デバイスの種類の合計数に関する洞察が得られます。 会社所有または個人所有の iOS、Android、Windows デバイスの数がわかります。
 
 ### <a name="overview-of-creating-the-chart"></a>グラフ作成の概要
 
-このグラフを作成するには、次のようにします。
+このグラフを作成するには、次のことを行う必要があります。
 1. まだの場合は Power BI Desktop をインストールします。
 2. Intune データ ウェアハウス データ モデルに接続し、モデルの現在のデータを取得します。
 3. データ モデル間のリレーションシップを作成または管理します。
@@ -49,9 +50,9 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
 > [!Note]  
 > Intune の**レポート**に対するアクセス許可が必要です。 詳細については、「[承認](reports-api-url.md)」を参照してください。
 
-1. Azure ポータルにサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** + **[Intune]** の順に選択します。
-3. **[Intune データ ウェアハウス]** ブレードを開きます。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. **[Intune データ ウェアハウス]** ウィンドウを開きます。
 4. カスタム フィードの URL をコピーします。 例: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 5. Power BI Desktop を開きます。
 6. **[データの取得]** > **[Odata フィード]** を選びます。
@@ -61,24 +62,25 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
     ![OData フィード](media/reports-create-01-odatafeed.png)
 
 9. **[OK]** を選択します。
-10. **[組織のアカウント]** を選択し、Intune の資格情報でサインインします。 
+10. **[組織のアカウント]** を選択し、Intune の資格情報でサインインします。
 
     ![組織のアカウントの資格情報](media/reports-create-02-org-account.png)
 
-11. **[接続]** を選択します。 ナビゲーターが開き、Intune データ ウェアハウスのテーブルの一覧が表示されます。 
+11. **[接続]** を選択します。 ナビゲーターが開き、Intune データ ウェアハウスのテーブルの一覧が表示されます。
 
     ![ナビゲーター](media/reports-create-02-loadentities.png)
 
 12. **devices** テーブルと **ownerTypes** テーブルを選択します。  **[読み込み]** を選択します。 Power BI がモデルにデータを読み込みます。
 
-## <a name="create-a-relationship"></a>リレーションシップを作成する 
+## <a name="create-a-relationship"></a>リレーションシップを作成する
 
 複数のテーブルをインポートして、1 つのテーブル内のデータだけでなく、複数のテーブルの関連するデータを分析することができます。  PowerBI には**自動検出**と呼ばれる機能があり、リレーションシップの自動的な検索と作成を試みます。 データ ウェアハウスのテーブルは、PowerBI の自動検出が機能するように作成されています。 ただし、PowerBI がリレーションシップを自動的に検索しない場合でも、リレーションシップを管理することは可能です。
 
 ![リレーションシップを管理する](media/reports-create-03-managerelationships.png)
 
 1. **[リレーションシップの管理]** を選択します。
-2. PowerBI でリレーションシップがまだ検出されていない場合は、**[自動検出]** を選択します。  
+2. PowerBI でリレーションシップがまだ検出されていない場合は、**[自動検出]** を選択します。
+
 リレーションシップの追加元と宛先の列が表示されます。 この例では、**devices** テーブルのデータ フィールド **ownerTypeKey** が、**ownerTypes** テーブルのデータ フィールド **ownerTypeKey** にリンクしています。 リレーションシップを使って、**devices** テーブルのデバイス種類コードの一般的な名前を調べます。
 
 ## <a name="create-a-treemap-visualization"></a>ツリーマップ視覚化を作成する
@@ -92,21 +94,24 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
 3. **devices テーブル**を展開し、**[フィールド]** パネルで **manufacturer** データ フィールドを選択します。
 4. **manufacturer** データ フィールドをレポート キャンバスのツリーマップ グラフにドラッグします。
 5. **devices** テーブルの **deviceKey** データ フィールドを、**[視覚化]** ウィンドウの **[値]** セクションにドラッグして、**[データ フィールドをここにドラッグ]** ボックスにドロップします。  
+
 組織内のデバイスの製造元の分布を示すビジュアルが作成されます。
 
 ![ツリーマップとデータ](media/reports-create-06-treemapwdata.png)
 
 ## <a name="add-a-filter"></a>フィルターを追加する
 
-アプリを使った追加の質問に回答できるように、ツリーマップにフィルターを追加できます。 
+アプリを使った追加の質問に回答できるように、ツリーマップにフィルターを追加できます。
 
-1. レポート キャンバスを選択し、**[視覚化]** の**スライサー アイコン** (![ツリーマップとデータ](media/reports-create-slicer.png)) を選択してフィルターを追加します。
+
+1. フィルターを追加するには、レポート キャンバスを選択し、**[視覚化]** の**スライサー アイコン** (![ツリーマップとデータ](media/reports-create-slicer.png)) を選択します。
 2. **ownerTypes** テーブルを探し、**ownerTypeName** データ フィールドを **[視覚化]** パネルの **[フィルター]** セクションにドラッグします。  
-   devices テーブルに、デバイスが会社所有か個人所有かを示すコードを含む **OwnerTypeKey** データ フィールドがあります。 このフィルターにはフレンドリー名を表示したいので、**ownerTypes** テーブルを探し、**ownerTypeName** をドラッグします。 これは、データ モデルがテーブル間のリレーションシップをサポートする方法の例です。
+
+   devices テーブルに、デバイスが会社所有か個人所有かを示すコードを含む **OwnerTypeKey** データ フィールドがあります。 このフィルターにはフレンドリー名を表示したいので、**ownerTypes** テーブルを探し、**ownerTypeName** をドラッグします。 この例では、データ モデルがテーブル間のリレーションシップをサポートする方法を示します。
 
 ![ツリーマップとフィルター](media/reports-create-08_ownertype.png)
 
-会社所有デバイスと個人所有デバイスを切り替えて分布の違いを見ることができる対話型フィルターができました。
+会社所有デバイスと個人所有デバイスを切り替えることができる対話型フィルターができました。 このフィルターを使って、分布の違いを見ることができます。
 
 1. 会社所有デバイスの分布を表示するには **Company** を選択します。
 2. 個人所有デバイスを表示するには **Personal** を選択します。

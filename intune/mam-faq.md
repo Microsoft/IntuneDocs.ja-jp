@@ -1,25 +1,19 @@
----
-title: "MAM とアプリの保護に関してよく寄せられる質問"
-description: "この記事では、Intune モバイル アプリケーション管理 (MAM) と Intune アプリ保護に関してよく寄せられる質問に対する回答を示します。"
-keywords: 
-author: Erikre
-ms.author: erikre
-manager: angrobe
-ms.date: 02/06/2018
-ms.topic: article
-ms.prod: 
-ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
-ms.reviewer: erikre
-ms.suite: ems
+--
+# <a name="required-metadata"></a>必須のメタデータ
+
+title: MAM とアプリの保護に関してよく寄せられる質問 description: この記事では、Intune モバイル アプリケーション管理 (MAM) と Intune アプリ保護に関してよく寄せられるいくつかの質問に対する回答を示します。
+keywords: author: Erikre ms.author: erikre manager: angrobe ms.date: 02/28/2018 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
+
+# <a name="optional-metadata"></a>任意のメタデータ
+
+#<a name="audience"></a>対象ユーザー:
+#<a name="msdevlang"></a>ms.devlang:
+ms.reviewer: erikre ms.suite: ems
+#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
 ms.custom: intune-azure
-ms.openlocfilehash: 23ab21e21ff2ffd471523f8132acffd7545358f0
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+
 ---
+
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM とアプリの保護に関してよく寄せられる質問
 
 この記事では、Intune モバイル アプリケーション管理 (MAM) と Intune アプリ保護に関してよく寄せられる質問に対する回答を示します。
@@ -135,14 +129,21 @@ ms.lasthandoff: 02/09/2018
 
 **管理対象アプリから Web リンクを開く安全な方法はありますか。** はい、ご利用いただけます。 IT 管理者は、Microsoft Intune によって開発された、Intune で簡単に管理可能な Web ブラウザーである [Intune Managed Browser アプリ](app-configuration-managed-browser.md)のアプリ保護ポリシーを展開および設定することができます。 IT 管理者は、Intune 管理対象アプリ内のすべての Web リンクが Managed Browser アプリで開かれるように指定することができます。
 
-
 ## <a name="app-experience-on-android"></a>Android でのアプリのエクスペリエンス
 
 **Intune アプリ保護を Android デバイスで使用するのにポータル サイト アプリが必要なのはなぜですか。** アプリ保護機能の多くはポータル サイト アプリに組み込まれています。 デバイスの登録が_不要_な場合でも、ポータル サイト アプリは常に必要です。 MAM-WE では、エンドユーザーはデバイスにポータル サイト アプリをインストールするだけで済みます。
 
+**アプリとユーザーの同じセットに対して構成されている複数の Intune アプリ保護アクセス設定は Android ではどのように動作しますか?** エンド ユーザー デバイスが会社のアカウントから対象のアプリにアクセスしようとすると、アクセスに関する Intune アプリ保護ポリシーが特定の順序で適用されます。 通常、優先順位は、ブロック、無視できる警告となります。 たとえば、特定のユーザー/アプリに適用可能な場合、ユーザーのアクセスをブロックする最小の Android パッチ バージョン設定の後、パッチ アップグレードを実行するようユーザーに警告する最小の Android パッチ バージョン設定が適用されます。 したがって、IT 管理者が最小の Android パッチ バージョンを 2018-03-01 に構成し、最小の Android パッチ バージョン (警告のみ) を 2018-02-01 に構成した状態で、アプリにアクセスしようとしているデバイスがパッチ バージョン 2018-01-01 にあった場合、エンド ユーザーは最小の Android パッチ バージョンに対するより制限の厳しい設定に基づいてブロックされ、その結果、アクセスがブロックされます。 
+
+さまざまな種類の設定を扱う場合、優先順位は、アプリのバージョン要件、Android オペレーティング システムのバージョン要件、Android パッチのバージョン要件となります。 その後、同じ順序ですべての種類の設定の警告が確認されます。
+
 ## <a name="app-experience-on-ios"></a>iOS でのアプリのエクスペリエンス
 
 **データ転送ポリシーが "管理対象アプリのみ" または "アプリなし" に設定されている場合でも、iOS 共有拡張機能を使って、管理対象ではないアプリの職場または学校のデータを開くことができます。これはデータのリークではないのですか。** Intune アプリ保護ポリシーでは、デバイスを管理せずに iOS 共有拡張機能を制御することはできません。 したがって、Intune は _**"企業" データがアプリの外部で共有される前に、データを暗号化します**_。 これは、管理対象アプリの外部で "企業" ファイルを開いてみることによって確認できます。 ファイルは暗号化されていて、管理対象アプリの外部では開くことができないはずです。
+
+**アプリとユーザーの同じセットに対して構成されている複数の Intune アプリ保護アクセス設定は iOS ではどのように動作しますか?** エンド ユーザー デバイスが会社のアカウントから対象のアプリにアクセスしようとすると、アクセスに関する Intune アプリ保護ポリシーが特定の順序で適用されます。 通常、優先順位は、ワイプ、ブロック、無視できる警告となります。 たとえば、特定のユーザー/アプリに適用可能な場合、ユーザーのアクセスをブロックする最小の iOS オペレーティング システム設定の後、iOS バージョンを更新するようユーザーに警告する最小の iOS オペレーティング システム設定が適用されます。 したがって、IT 管理者が最小の iOS オペレーティング システムを 11.0.0.0 に構成し、最小の iOS オペレーティング システム (警告のみ) を 11.1.0.0 に構成した状態で、アプリにアクセスしようとしているデバイスが iOS 10 にあった場合、エンド ユーザーは最小の iOS オペレーティング システム バージョンに対するより制限の厳しい設定に基づいてブロックされ、その結果、アクセスがブロックされます。
+
+さまざまな種類の設定を扱う場合、優先順位は、Intune App SDK のバージョン要件、アプリのバージョン要件、iOS オペレーティング システムのバージョン要件となります。 その後、同じ順序ですべての種類の設定の警告が確認されます。 ブロックが重要である場合は、Intune 製品チームのガイダンスのみに従って、Intune App SDK のバージョン要件を構成することをお勧めします。
 
 ## <a name="see-also"></a>関連項目
 - [Intune の計画を実装する](planning-guide-onboarding.md)

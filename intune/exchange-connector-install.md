@@ -1,12 +1,12 @@
 ---
-title: "オンプレミス EAS を Intune と接続する Exchange Connector のセットアップ"
-titleSuffix: Azure portal
-description: "コネクタ ツールを使って Intune とオンプレミス Exchange Server との通信を有効にする"
+title: "Microsoft Intune のオンプレミス Exchange Connector をセットアップする"
+titleSuffix: 
+description: "Intune の登録と Exchange Active Sync (EAS) に基づいて、Exchange メールボックスへのデバイス アクセスを管理するには、オンプレミスの Exchange Connector を使います。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cb82b1a9af0cc8dd2f394747ce7ed8b695260bb9
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 0caea2e8b7704fe2dfcbec937b59000ac2a12ae5
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Microsoft Intune Azure で Intune のオンプレミス Exchange Connector をセットアップする
 
@@ -70,11 +70,11 @@ Intune Exchange Connector が使用する Active Directory ユーザー アカ�
 
 1. オンプレミス Exchange Connector のサポートされている Windows Server オペレーティング システムで、Exchange Server を使用するライセンスを持つオンプレミス Exchange Server 内の管理者であるユーザー アカウントを使用して、[Azure Portal](http://portal.azure.com) を開きサインインします。
 
-2. 左側のメニューから **[その他のサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
+2. 左側のメニューから **[すべてのサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
 
 3. **[Intune]** を選択して Intune ダッシュボードを開き、**[オンプレミス アクセス]** を選択します。
 
-4. **[オンプレミス アクセス - Exchange ActiveSync のコネクタ]** ブレードで、**[セットアップ]** セクションから **[オンプレミス コネクタをダウンロードします]** を選択します。
+4. **[Exchange ActiveSync のコネクタ]** を選択し、**[オンプレミス コネクタをダウンロードします]** を選択します。
 
 5.  内部設置型 Exchange Connector は、開いたり保存したりできる圧縮 (.zip) フォルダーに含まれています。 **[ファイルのダウンロード]** ダイアログ ボックスで **[保存]** を選んで、圧縮フォルダーを安全な場所に保存します。
 
@@ -93,7 +93,7 @@ Intune Exchange Connector が使用する Active Directory ユーザー アカ�
 
 3.  **[Microsoft Intune Exchange Connector]** ダイアログ ボックスで、**[内部設置型 Microsoft Exchange Server]** または **[ホストされた Microsoft Exchange Server]** を選択します。
 
-  ![Exchange サーバーの種類の選択](./media/intune-sa-exchange-connector-config.png)
+  ![Exchange Server の種類を選択する場所を示す画像](./media/intune-sa-exchange-connector-config.png)
 
   内部設置型 Exchange Server の場合、**クライアント アクセス サーバー** ロールをホストする Exchange サーバーのサーバー名または完全修飾ドメイン名を指定します。
 
@@ -116,7 +116,7 @@ Intune Exchange Connector が使用する Active Directory ユーザー アカ�
 
     5. **[ユーザー (ドメイン\ユーザー)]** フィールドと **[パスワード]** フィールドに、Exchange Server への接続に必要な資格情報を入力します。
 
-    6.  ユーザーの Exchange Server メールボックスに通知を送信するために必要な管理資格情報を指定します。 これらの通知は、Intune で条件付きアクセス ポリシーにより構成できます。
+    6.  ユーザーの Exchange Server メールボックスに通知を送信するために必要な資格情報を指定します。 このユーザーは通知専用でもかまいません。 通知ユーザーには、メールで通知を送信できるように Exchange メールボックスが必要です。 これらの通知は、Intune で条件付きアクセス ポリシーにより構成できます。  
 
         自動検出サービスと Exchange Web Services が Exchange クライアント アクセス サーバーで構成されていることを確認します。 詳細については、「[クライアント アクセス サーバー](https://technet.microsoft.com/library/dd298114.aspx)」を参照してください。
 

@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc1a30a86ae924777b435c67e67f926819753d67
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9de6f0e2f7c74e7aec45c27f0fa20189b26c5e22
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="intune-airplay-settings-for-ios-devices"></a>Intune を使用した iOS デバイス向けの AirPlay 設定
 
@@ -33,19 +33,20 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="get-started"></a>作業開始
 
-1. **[デバイス機能]** ブレードで **[AirPlay]** を選択します。
-2. **[AirPlay]** ブレードで、次の操作の一方または両方を選択します。
+1. [Azure Portal の Intune](https://portal.azure.com) から[デバイス構成領域の **[デバイス機能]**](device-features-configure.md) に移動します。 
+1. **[デバイス機能]** ウィンドウで **[AirPlay]** を選択します。
+2. **[AirPlay]** ウィンドウで、次の操作の一方または両方を選択します。
 
 ## <a name="configure-a-device-and-password-list"></a>デバイスとパスワードの一覧を構成する
 
-1. **[パスワード]** ブレードで、Airplay デバイス (例: **Contoso Apple TV**) の**デバイス名**と**パスワード**を入力します。
+1. **[パスワード]** ウィンドウで、Airplay デバイス (例: **Contoso Apple TV**) の**デバイス名**と**パスワード**を入力します。
 2. デバイスの詳細を入力したら、**[追加]** をクリックします。 **[デバイス名]** の一覧にデバイスが表示されます。
 3. デバイスの追加を続けます。 終了したら **[OK]** を選択します。
 
 
 ## <a name="configure-allowed-destinations"></a>許可された出力先を構成する
 
-1. **[Allowed destinations (supervised only)]\(許可された出力先 (監視のみ)\)** ブレードで、AirPlay デバイスの**デバイス ID** を入力します (例: 52:46:CD:51:83:4C)。
+1. **[Allowed destinations (supervised only)]\(許可された出力先 (監視のみ)\)** ウィンドウで、AirPlay デバイスの**デバイス ID** を入力します (例: 52:46:CD:51:83:4C)。
 2. デバイス ID を入力したら、**[追加]** をクリックします。 **[デバイス ID]** 一覧に ID が表示されます。
 3. デバイスの追加を続けます。 終了したら **[OK]** を選択します。
 
