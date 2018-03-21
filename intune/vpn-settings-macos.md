@@ -1,33 +1,33 @@
 ---
-title: "macOS デバイス向けの Intune VPN 設定"
-titlesuffix: Azure portal
-description: "macOS デバイスでの VPN 接続の構成に使用できる Intune 設定について説明します。\""
+title: "macOS デバイス用の Microsoft Intune VPN 設定"
+titlesuffix: 
+description: "macOS デバイスでの VPN 接続の構成に使用できる Intune 設定について説明します。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/04/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: d203a70d-37df-4195-85f7-ad5ef14ac2a1
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ec712abe220ca6b020c5d015dc55f0d956cd860
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b7df56b0f15b9fd346dc786ab265d772135795a8
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="vpn-settings-for-macos-devices-in-microsoft-intune"></a>Microsoft Intune での macOS デバイス向けの VPN 設定
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-macos"></a>macOS を実行するデバイス用に Microsoft Intune で VPN 設定を構成する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-選択する設定によっては、以下の一覧に記載されている値の一部を構成できない場合もあります。
+この記事では、macOS を実行するデバイスでの VPN 接続の構成に使用できる Intune 設定を示します。
 
-## <a name="base-vpn-settings"></a>**基本 VPN 設定**
+選択した設定によっては、次の一覧に記載されている値の一部を構成できない場合があります。
+
+## <a name="base-vpn-settings"></a>基本 VPN 設定
 
 **[接続名]** - この接続の名前を入力します。 エンド ユーザーがデバイスで利用可能な VPN 接続の一覧を参照するときに、この名前が表示されます。
 - **[IP アドレスまたは FQDN]** - デバイスが接続する VPN サーバーの IP アドレスまたは完全修飾ドメイン名を指定します。 例: **192.168.1.1**、**vpn.contoso.com**。
@@ -37,11 +37,11 @@ ms.lasthandoff: 01/25/2018
 - **[接続の種類]** - 以下のベンダーの一覧から VPN 接続の種類を選択します。
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
-    - **Dell SonicWALL Mobile Connect**
+    - **SonicWall Mobile Connect**
     - **F5 Edge Client**
     - **Pulse Secure**
     - **Custom VPN**
-- **[分割トンネリング]** - このオプションを **[有効]** または **[無効]** にします。これを有効にすると、使用する接続をトラフィックに応じてデバイスが判断するようになります。 たとえば、ホテルにいるユーザーは、業務ファイルへのアクセスに VPN 接続を使用しますが、通常の Web 閲覧にはホテルの標準ネットワークを使用します。
+- **[分割トンネリング]** -  このオプションを **[有効]** または **[無効]** にします。これにより、トラフィックに応じて使用する接続をデバイスが判断できます。 たとえば、ホテルにいるユーザーは、業務ファイルへのアクセスに VPN 接続を使用しますが、通常の Web 閲覧にはホテルの標準ネットワークを使用します。
 
 <!--- **Per-app VPN** - Select this option if you want to associate this VPN connection with an iOS or macOS app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you assign the software. For more information, see [How to assign and monitor apps](apps-deploy.md). --->
 

@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/17/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01c90818cf789bdb79b3b4efe5a1db8a2cf1cdfe
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6053eba7bcda74eaf3b2d7de8eecd81487ea3a8d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Volume Purchase Program で購入した iOS 電子ブックを Microsoft Intune で管理する方法
 
@@ -52,28 +52,29 @@ iOS ブックの複数のライセンスを購入するには、[ビジネス向
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Apple VPP トークンを取得およびアップロードするには
 
-1. Azure Portal にサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[モバイル アプリ]** を選びます。
-1.  **[Mobile Apps]** ワークロードで、**[セットアップ]** > **[iOS VPP トークン]** の順に選択します。
-2.  VPP トークンの一覧ブレードで、**[追加]** をクリックします。
-3.  **[新しい VPP トークン]** ブレードで、次の情報を指定します。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
+3. **[Intune]** ウィンドウで、**[モバイル アプリ]** を選択します。
+1.  **[モバイル アプリ]** ワークロードで、**[セットアップ]** > **[iOS VPP トークン]** の順に選択します。
+2.  VPP トークンの一覧ウィンドウで、**[作成]** をクリックします。
+3.  **[新しい VPP トークン]** ウィンドウで、次の情報を指定します。
     - **[VPP トークン ファイル]** - Volume Purchase Program for Business または Volume Purchase Program for Education にサインインしていることを確認します。 次に、アカウントの Apple VPP トークンをダウンロードし、ここでそのトークンを選択します。
     - **[Apple ID]** - Volume Purchase Program に関連付けられているアカウントの Apple ID を入力します。
     - **[VPP アカウントの種類]** - **[ビジネス]** または **[教育]** を選択します。
-4. 終了したら、**[保存]** をクリックします。
+4. 完了したら **[作成]** をクリックします。
 
-トークンがトークンの一覧ブレードに表示されます。
+トークンがトークンの一覧ウィンドウに表示されます。
 
 
 **[今すぐ同期]** を選択すると、いつでも、Apple が保持しているデータと Intune を同期することができます。
 
 ## <a name="to-assign-a-volume-purchased-app"></a>ボリューム購入アプリを割り当てるには
 
+3. **[Intune]** ウィンドウで、**[電子ブック]** を選択します。
 1. **[電子ブック]** ワークロードで、**[管理]** > **[すべての電子ブック]** を選択します。
-2. ブックの一覧ブレードで、割り当てるブックを選択し、**[...]**、**[グループの割り当て]** の順に選択します。
-3. **[<*ブック名*> - 割り当てられたグループ]** ブレードで、**[管理]** > **[割り当てられたグループ]** の順に選択します。
-4. **[グループの割り当て]** を選択し、**[グループの選択]** ブレードで、ブックを割り当てる Azure AD ユーザー グループを選択します。 現時点では、デバイス グループはサポートされていません。
+2. ブックの一覧ウィンドウで、割り当てるブックを選択し、**[...]**、**[グループの割り当て]** の順に選択します。
+3. **[<*ブック名*> - 割り当てられたグループ]** ウィンドウで、**[管理]** > **[割り当てられたグループ]** の順に選択します。
+4. **[グループの割り当て]** を選択し、**[グループの選択]** ウィンドウで、ブックを割り当てる Azure AD ユーザー グループを選択します。 現時点では、デバイス グループはサポートされていません。
 割り当て操作として **[利用可能]** または **[必須]** を選択します。 
 5. 完了したら、**[保存]** を選択します。
 

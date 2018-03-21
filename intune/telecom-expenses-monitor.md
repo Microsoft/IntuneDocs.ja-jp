@@ -1,12 +1,12 @@
 ---
 title: "通信費管理サービスをセットアップする"
-titleSuffix: Azure portal
-description: "Saaswedo 通信費管理サービスを Intune と統合するように構成します。\""
+titleSuffix: Microsoft Intune
+description: "Intune を Saaswedo 通信費管理サービスと統合します。"
 keywords: Saaswedo
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9b0b22dc3831cbb14ab876b5f4e58f82cf53abc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ef755a1fd5f94342f551ac168136217dbc82b244
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune で通信費管理サービスをセットアップする
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune を使用して、企業所有のモバイル デバイスでのデータの使用から発生する通信費を管理することができます。 この機能を有効にするために、Intune は、サードパーティのソフトウェア開発企業である Saaswedo の Datalert 通信費管理ソリューションと統合されています。 Datalert とは、Intune で管理されているデバイスの通信データ使用量を管理し、コストのかかる予想外のデータ超過やローミング超過を防止することができる、リアルタイム通信費管理ソフトウェアです。
+Intune を使用して、企業所有のモバイル デバイスでのデータの使用から発生する通信費を管理することができます。 この機能を有効にするために、Intune は、サードパーティのソフトウェア開発企業である Saaswedo の Datalert 通信費管理ソリューションと統合されています。 Datalert は、通信データの使用状況を管理できるリアルタイム通信費管理ソフトウェアです。 お使いの Intune で管理されているデバイスのコストのかかるデータや予期しないデータおよびローミングの超過を回避できます。
 
-Intune と Datalert の統合により、定義済みのしきい値を超えた場合に警告する自動化されたアラートを使用することで、ローミングおよび国内のデータ使用料の上限を一元的に設定、監視、適用できるようになります。 ユーザーがしきい値を超過した場合に、ローミングの無効化を含むさまざまなアクションを個々のエンド ユーザーやそのグループに適用するように、サービスを構成できます。 Datalert 管理コンソールでは、データ使用量と監視情報を示すレポートが利用できます。
+Intune と Datalert の統合により、ローミングや国内のデータ使用料の上限を一元的に設定、監視、適用できるようになります。 定義済みのしきい値を超えると、自動的にアラートがトリガーされます。 さまざまなアクション (ローミングの無効化やしきい値の超過など) を個々のエンド ユーザーやそのグループに適用するように、サービスを構成できます。 Datalert 管理コンソールでは、データ使用量と監視情報を示すレポートが利用できます。
 
 次の図は、Intune が Datalert とどのように統合されているかを示しています。
 
@@ -68,47 +68,49 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
     **[Connection (接続)]** を選択すると、Datalert と Intune の間に既存の接続がないことを確認するために、Datalert サービスによって Intune へのチェックインが行われます。 数秒後に Microsoft ログイン ページが表示され、その後に Datalert Azure 認証が行われます。
 
-6. Microsoft 認証ページで、**[Accept (同意する)]** を選択します。 Datalert の "Thank you" ページにリダイレクトされ、数秒後にそのページが閉じます。 Datalert によって接続が検証され、検証済みの項目一覧の横に緑色のチェック マークが表示されます。 検証に失敗した場合は、赤色のメッセージが表示されます。 その場合は、Datalert サポートに問い合わせてください。
+6. Microsoft 認証ページで、**[Accept (同意する)]** を選択します。 Datalert の "Thank you" ページにリダイレクトされ、数秒後にそのページが閉じます。 Datalert によって接続が検証され、検証済みの項目一覧の横に緑色のチェック マークが表示されます。 検証が失敗した場合、赤色でメッセージが表示され、対処について Datalert サポートに問い合わせる必要があります。
 
     次のスクリーン ショットは、接続に成功した場合に表示されることが期待できる緑色のチェック マークを示しています。
 
-  ![接続が成功したことを示している Datalert ページ](./media/tem-mdm-configuration-mdm-server-page.png)
+  ![接続が成功したことを示す Datalert ページ](./media/tem-mdm-configuration-mdm-server-page.png)
 
 ### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>手順 2: 通信費管理機能が Intune でアクティブであることを確認する
 
 上記の手順 1 を完了すると、接続が自動的に有効になり、接続状態 **[アクティブ]** が Azure Portal に表示されます。 次の手順は、**[アクティブ]** 状態を確認する方法を示しています。
 
-1. Azure ポータルにサインインします。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
 
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 
-3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
+3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
 
-4. **[デバイス構成]** ブレードで、**[セットアップ]** > **[通信費管理]** を選択します。
+4. **[デバイス構成]** ウィンドウで、**[セットアップ]** > **[通信費管理]** を選択します。
 
    ページの上部に表示されている接続状態が**[アクティブ]** になっていることを確認します。
 
-  ![Datalert との接続状態がアクティブであることを示している Azure Portal](./media/tem-azure-portal-enable-service.png)
+  ![Datalert との接続状態がアクティブであることを示している Intune ページ](./media/tem-azure-portal-enable-service.png)
 
 ### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>手順 3: Datalert アプリを企業登録デバイスにデプロイする
 
-企業所有のデバイスからのデータ使用量のみを確実に収集するには、Intune でデバイスのカテゴリを作成した後、Datalert アプリの対象を企業の電話だけにする必要があります。 次のサブセクションの手順を完了します。
+企業が所有する回線だけからデータ使用量が収集されるようにするには、2 つの設定を行う必要があります。
+- Intune でデバイス カテゴリを作成します
+- Datalert アプリの対象を会社の電話だけに設定します
 
 #### <a name="define-device-categories-and-device-groups-mapped-to-the-categories"></a>デバイスのカテゴリと各カテゴリにマップされるデバイス グループを定義する
 
-組織のニーズに従って、少なくとも 2 つのデバイス カテゴリ (たとえば、企業と個人) を作成し、各カテゴリの動的なデバイス グループを作成する必要があります。 必要に応じて、組織用のその他のカテゴリを作成できます。
+組織のニーズに従って、少なくとも 2 つのデバイス カテゴリ (たとえば、企業と個人) を作成します。 次に、各カテゴリの動的なデバイス グループを作成します。 必要に応じて、組織用のその他のカテゴリを作成できます。
 
 これらのカテゴリは、登録時にユーザーに表示されます。 ユーザーが選択したカテゴリに応じて、登録デバイスは該当するデバイス グループに移動されます。 デバイスのカテゴリを作成する方法の手順については、「[Map devices to groups](device-group-mapping.md)」(デバイスをグループにマップする) を参照してください。
 
-  ![[ポリシーの追加] ブレードのスクリーンショット](./media/tem-dynamic-membership-rules.png)
+  ![[ポリシーの追加] ウィンドウのスクリーンショット](./media/tem-dynamic-membership-rules.png)
 
 #### <a name="create-the-datalert-app-in-intune"></a>Intune で Datalert アプリを作成する
 
 次の手順に従って、プラットフォームごとに、Intune で Datalert アプリを作成します。 次の手順では、例として iOS を使用します。
 
-1. Azure Portal の **[Intune]** ブレードで、**[Mobile Apps]** を選択します。
+1. [Azure Portal](https://portal.azure.com) の **[Intune]** ウィンドウで、**[Mobile Apps]** を選択します。
 
-2. **[Mobile Apps]** ブレードで、**[管理]**  >  **[アプリ]** を選択します。
+2. **[Mobile Apps]** ウィンドウで、**[管理]** > **[アプリ]** を選択します。
 
 3. **[追加]** を選択してアプリを追加します。
 
@@ -116,33 +118,33 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
 5. **[アプリ ストアを検索します]** で、検索ウィンドウに「**Datalert**」と入力して、Datalert アプリを検索します。
 
-6. **Datalert** アプリを選択し、**[OK]**を選択します。
+6. **Datalert** アプリを選択し、**[選択]** を選択します。
 
-  ![[ポリシーの追加] ブレードのスクリーンショット](./media/tem-select-app-from-apple-app-store.png)
+   ![[ポリシーの追加] ウィンドウのスクリーンショット](./media/tem-select-app-from-apple-app-store.png)
 
 7. 残りの手順を完了して、IOS 用アプリを作成します。
 
-  ![[ポリシーの追加] ブレードのスクリーンショット](./media/tem-steps-to-create-the-app.png)
+   ![[ポリシーの追加] ウィンドウのスクリーンショット](./media/tem-steps-to-create-the-app.png)
 
 #### <a name="assign-the-datalert-app-to-the-corporate-device-group"></a>Datalert アプリを企業のデバイス グループに割り当てる
 
-1. 前の手順で作成した iOS Datalert アプリを選択します。
+1. **[Mobile apps] - [アプリ]** ウィンドウで、前の手順で作成した iOS Datalert アプリを選択します。
 
-2. **[アプリ]** ブレードで、**[管理]** > **[割り当て]** に移動します。
+2. **[アプリ]** ウィンドウで、**[管理]** > **[割り当て]** を選択します。
 
-3. **[グループの選択]** を選択し、企業のデバイス グループを選択する手順に従います。
+3. **[グループの追加]** を選択し、企業のデバイス グループを選択する手順に従います。
 
 4. グループにとってアプリのインストールが必須であるか省略可能であるかを選択します。 次の例のスクリーンショットは、インストールが必須であることを示しています。つまり、ユーザーは、自分のデバイスを登録した後、Datalert アプリをインストールする必要があります。
 
-  ![[ポリシーの追加] ブレードのスクリーンショット](./media/tem-assign-datalert-app-to-device-group.png)
+  ![[ポリシーの追加] ウィンドウのスクリーンショット](./media/tem-assign-datalert-app-to-device-group.png)
 
 ### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>手順 4: 企業が料金を支払う電話回線をDatalert コンソールに追加する
 
-これで、Intune サービスと Datalert サービスが互いに通信するように構成されました。 次に、企業が料金を支払う電話回線を Datalert コンソールに追加し、携帯データまたはローミング データの使用量違反に対するしきい値と動作を定義する必要があります。 企業が料金を支払う電話回線は、手動で Datalert コンソールに追加するか、あるいはデバイスが Intune に登録されたら自動的に追加されます。
+これで、Intune サービスと Datalert サービスが互いに通信するように構成されました。 次に、企業が料金を支払う電話回線を Datalert コンソールに追加し、携帯データまたはローミング データの使用量違反に対するしきい値と動作を定義する必要があります。 企業が料金を支払う電話回線を手動で Datalert コンソールに追加するか、またはデバイスが Intune に登録されたら自動的に追加することができます。
 
 これらの項目を設定するには、[[Datalert setup for Microsoft Intune (Microsoft Intune 用のDatalert のセットアップ)]](http://www.datalert.fr/microsoft-intune/intune-setup) ページ (http://www.datalert.fr/microsoft-intune/intune-setup) に移動し、**[Settings (設定)]** タブでセットアップ ウィザードの手順に従います。
 
-  ![[ポリシーの追加] ブレードのスクリーンショット](./media/tem-add-phone-lines-to-datalert-console.png)
+  ![[ポリシーの追加] ウィンドウのスクリーンショット](./media/tem-add-phone-lines-to-datalert-console.png)
 
 
 これで Datalert サービスがアクティブになってデータ使用量の監視が開始され、デバイスでの構成済み使用量制限を超える携帯データおよびローミング データが無効化されるようになります。
@@ -162,7 +164,7 @@ Azure Portal で Datalert サービスを無効にすると、以下のような
 
 **サービスを無効にするには**
 
-1. Azure Portal の **[通信費管理]** ブレードで、**[無効]** を選択します。
+1. Azure Portal の **[通信費管理]** ウィンドウで、**[無効]** を選択します。
 
 2. **[保存]** を選択します。
 

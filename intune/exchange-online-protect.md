@@ -1,9 +1,10 @@
 ---
-title: "デバイス管理を要求せずに Office 365 Exchange Online を保護する"
-description: "社員に仕事用メールへのアクセスを与えます。 デバイス管理は必要ありません。"
+title: "デバイス管理なしの Exchange"
+titleSuffix: Microsoft Intune
+description: "Microsoft Intune を使用し、デバイス管理システムを構築せずに、Office 365 Exchange Online 電子メールへのアクセスを社員に与えます。"
 keywords: "Office 365 Exchange 電子メール アクセス"
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 10/31/2017
 ms.prod: 
@@ -13,11 +14,11 @@ ms.assetid: 88a0d3b9-2622-403b-8374-1396afd8066e
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 53872921bc4c7a52224741ab3b743a1d9ac52f42
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e677a8418aba9aca4db753695444140ea9f6f941
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>デバイス管理を要求せずに Office 365 Exchange Online を保護する
 

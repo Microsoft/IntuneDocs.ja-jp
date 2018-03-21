@@ -1,5 +1,6 @@
 ---
-title: "サポートされるデバイス - Microsoft Intune"
+title: "Microsoft Intune でサポートされているオペレーティング システムとブラウザー"
+titleSuffix: 
 description: "Intune デバイス管理でサポートされるデバイス プラットフォームとブラウザーの一覧を示します"
 keywords: 
 author: ErikjeMS
@@ -14,24 +15,19 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 11c4336979ee9089b218ea79ac826176d99492d9
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 1e58201620612118f0984a1c477b3fa3bc7e923a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="supported-operating-systems-and-browsers"></a>サポートされるオペレーティング システムとブラウザー
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-この記事は、企業でデバイス管理を担当するシステム管理者を対象としています。 デバイスへの Intune のインストールについては、[管理デバイスでの作業](/intune-user-help/company-portal-frequently-asked-questions)に関するページを参照してください。
+Microsoft Intune をセットアップする前に、サポートされているオペレーティング システムとブラウザーを確認してください。
 
-Microsoft Intune のセットアップを開始する前に、次の要件を確認してください。
-
-- [サポートされるオペレーティング システム](#intune-supported-operating-systems)
-- [Intune 対応の Web ブラウザーの一覧](#intune-supported-web-browsers)
-
-[Intune のネットワーク帯域幅の使用法](network-bandwidth-use.md) ([クラシック ポータル](/intune-classic/get-started/network-bandwidth-use)) についてもよく理解しておく必要があります。
+デバイスへの Intune のインストールについては、[管理デバイスでの作業](/intune-user-help/company-portal-frequently-asked-questions)に関するページを参照してください。 [Intune のネットワーク帯域幅の使用法](network-bandwidth-use.md) ([クラシック ポータル](/intune-classic/get-started/network-bandwidth-use)) についてもよく理解しておく必要があります。
 
 ## <a name="intune-supported-operating-systems"></a>Intune でサポートされるオペレーティング システム
 

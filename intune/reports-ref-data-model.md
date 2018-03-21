@@ -1,11 +1,12 @@
 ---
-title: "データ ウェアハウス データ モデル | Microsoft Docs"
-description: "Intune データ ウェアハウスは、データを毎日サンプリングし、常に変化するモバイル環境の履歴ビューを提供します。"
+title: "データ ウェアハウス データ モデル"
+titlesuffix: Microsoft Intune
+description: "Microsoft Intune データ ウェアハウスは、データを毎日サンプリングし、常に変化するモバイル環境の履歴ビューを提供します。"
 keywords: "Intune データ ウェアハウス"
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +15,17 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f52531f854c57551613b1e94f0cfd0925c6d3d12
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7bf893acd5a3d162b767744001fe2257824d86a4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="data-warehouse-data-model"></a>データ ウェアハウス データ モデル
 
-Intune データ ウェアハウスは、データを毎日サンプリングし、常に変化するモバイル デバイス環境の履歴ビューを提供します。 ビューは時間に関連のあるデータで構成されます。
+Intune データ ウェアハウスは、データを毎日サンプリングし、常に変化するモバイル デバイス環境の履歴ビューを提供します。 ビューは時間に関連のあるエンティティで構成されます。
 
-## <a name="things-entity-sets"></a>データ: エンティティ セット
+## <a name="entities-entity-sets"></a>エンティティ: エンティティ セット
 
 このウェアハウスは、次の上位領域のデータを公開します。
 
@@ -33,7 +34,7 @@ Intune データ ウェアハウスは、データを毎日サンプリングし
   -  アプリとソフトウェアのインベントリ
   -  デバイスの構成とコンプライアンス ポリシー
 
-これらの領域には、エンティティ、つまり Intune 環境にとって重要なデータが含まれます。 エンティティ セットの詳細については、次の各トピックをご覧ください。
+これらの領域には、お使いの Intune 環境にとって重要なエンティティが含まれます。 エンティティ セットの詳細については、次の各トピックをご覧ください。
 
   -  [アプリケーション](reports-ref-application.md)
   -  [日付](reports-ref-date.md)

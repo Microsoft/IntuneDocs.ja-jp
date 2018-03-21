@@ -5,7 +5,7 @@ keywords: "intune graphapi c# powershell アクセス許可の役割"
 author: vhorne
 manager: dougeby
 ms.author: victorh
-ms.date: 06/20/2017
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1c97c32f5f6c81f1112c99b486898c271cc5ff2
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 7b59d4bc689daf462ac01a106457c3835a78b98b
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD を使用して Microsoft Graph の Intune API にアクセスする方法
 
@@ -97,7 +97,7 @@ Microsoft Graph API を使用するアプリを登録するには、次の作業
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
-    関連する名前の左側にチェックを入れ、アプリに必要な役割を選択します。  Intune に固有のアクセス許可スコープの詳細については、「[Intune permission scopes (Intune のアクセス許可スコープ)](#user-content-intune-permission-scopes)」をご覧ください。  Graph API の他のアクセス許可スコープの詳細については、「[Microsoft Graph のアクセス許可のリファレンス](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)」をご覧ください。
+    関連する名前の左側にチェックを入れ、アプリに必要な役割を選択します。  Intune に固有のアクセス許可スコープの詳細については、「[Intune permission scopes (Intune のアクセス許可スコープ)](#intune-permission-scopes)」をご覧ください。  Graph API の他のアクセス許可スコープの詳細については、「[Microsoft Graph のアクセス許可のリファレンス](https://developer.microsoft.com/graph/docs/concepts/permissions_reference)」をご覧ください。
 
     最善の結果を得るには、アプリケーションの実装に必要な最小限の役割を選択します。
 
@@ -139,7 +139,7 @@ Microsoft Graph へのアクセス許可を付与する場合は、次のスコ�
 
 _[アクセスを有効にする]_ 設定 | スコープ名
 :--|:--
-__Microsoft Intune デバイスでユーザーに影響を与えるリモート操作を実行する__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#user-content-mgd-po)
+__Microsoft Intune デバイスでユーザーに影響を与えるリモート操作を実行する__ | [DeviceManagementManagedDevices.PrivilegedOperations.All](#mgd-po)
 __Microsoft Intune デバイスの読み取りおよび書き込み__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
 __Microsoft Intune デバイスの読み取り__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __Microsoft Intune RBAC の設定の読み取りおよび書き込み__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
@@ -585,7 +585,7 @@ catch {
 
 また、
 
-- http://portal.office.com を使用して、ユーザー アカウントに Intune のライセンスを割り当てます。
+- https://portal.office.com を使用して、ユーザー アカウントに Intune のライセンスを割り当てます。
 
 - 自身ではなく、クライアントの Azure AD テナントのドメインに対する認証のためにアプリケーション コードを更新します。
 

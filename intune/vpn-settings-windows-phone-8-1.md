@@ -1,36 +1,37 @@
 ---
-title: "Windows Phone 8.1 デバイス向けの Intune VPN 設定"
-titleSuffix: Azure portal
-description: "Windows Phone 8.1 デバイスの VPN 接続の構成に使用できる Intune 設定について説明します。\""
+title: "Windows Phone 8.1 デバイス用の Microsoft Intune の VPN 設定"
+titleSuffix: 
+description: "Windows Phone 8.1 を実行するデバイスでの VPN 接続の構成に使用できる Intune 設定について説明します。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: c1a9053f-02a7-4735-bc0d-fe4573b31ed4
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1ac6fca3217725c34a7db8d46d40278625b93a10
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 786a817fbbd821d74f4f1a03fdec5a6893ed890b
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="vpn-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Microsoft Intune での Windows Phone 8.1 デバイス向けの VPN 設定
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Windows Phone 8.1 を実行するデバイス用に Microsoft Intune で VPN 設定を構成する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-選択する設定によっては、以下の一覧に記載されている値の一部を構成できない場合もあります。
+この記事では、Windows Phone 8.1 を実行するデバイスでの VPN 接続の構成に使用できる Intune 設定を示します。
+
+
+選択した設定によっては、次の一覧に記載されている値の一部を構成できない場合があります。
 
 ## <a name="base-vpn-settings"></a>基本 VPN 設定
 
-- **[Apply all settings to Windows Phone 8.1 only (すべての設定を Windows Phone 8.1 のみに適用する)]** - これは、Intune クラシック ポータルで構成できる設定です。 Azure Portal では、この設定は変更できません。 これを **[構成済み]** に設定すると、すべての設定が Windows Phone 8.1 デバイスのみに適用されるようになります。 **[未構成]** に設定されている場合、これらの設定は Windows 10 Mobile デバイスにも適用されます。
-- **[接続名]** - この接続の名前を入力します。 エンド ユーザーがデバイスで利用可能な VPN 接続の一覧を参照するときに、この名前が表示されます。
+- **[Apply all settings to Windows Phone 8.1 only (すべての設定を Windows Phone 8.1 のみに適用する)]** - これは、Intune クラシック ポータルで構成できる設定です。 Azure Portal では、この設定は変更できません。 これが **[構成済み]** に設定されている場合は、すべての設定が Windows Phone 8.1 デバイスのみに適用されます。 **[未構成]** に設定されている場合、これらの設定は Windows 10 Mobile デバイスにも適用されます。
+- **[接続名]** - この接続の名前を入力します。 ユーザーがデバイスで使用可能な VPN 接続の一覧を参照するときに、この名前が表示されます。
 - **[認証方法]** - VPN サーバーに対するデバイスの認証方法として、以下のいずれかを選択します。
     - **[証明書]** - **[認証証明書]** で、接続を認証するために事前に作成した SCEP または PKCS 証明書プロファイルを選択します。 証明書プロファイルの詳細については、[証明書の構成方法](certificates-configure.md)に関するページを参照してください。
     - **[ユーザー名とパスワード]** - エンド ユーザーは VPN サーバーにログインするためにユーザー名とパスワードを入力する必要があります。
@@ -47,11 +48,11 @@ ms.lasthandoff: 01/25/2018
 
 - **[接続の種類]** - 以下のベンダーの一覧から VPN 接続の種類を選択します。
     - **Check Point Capsule VPN**
-    - **Dell SonicWALL Mobile Connect**
+    - **SonicWall Mobile Connect**
     - **F5 Edge Client**
     - **Pulse Secure**
 
-- **[ログイン グループまたはドメイン]** (Dell SonicWALL Mobile Connect のみ) - 接続先のログイン グループまたはドメインの名前を指定します。
+- **[ログイン グループまたはドメイン]** (SonicWall Mobile Connect のみ) - 接続先のログイン グループまたはドメインの名前を指定します。
 - **[ロール]** (Pulse Secure のみ) - この接続に対するアクセス権を持つユーザー ロールの名前を指定します。 ユーザー ロールを使用して、個人の設定とオプションを定義し、特定のアクセス機能を有効または無効にします。
 - **[領域]** (Pulse Secure のみ) - 使用する認証領域の名前を指定します。 認証領域とは、接続の種類が [Pulse Secure] の場合に使用される認証リソースのグループを表します。
 
@@ -72,7 +73,7 @@ ms.lasthandoff: 01/25/2018
     <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
 ```
 
-**Dell SonicWALL Mobile Connect の例:**
+**SonicWall Mobile Connect の例:**
 ```
 <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
 
@@ -86,7 +87,7 @@ ms.lasthandoff: 01/25/2018
 
 カスタムの XML コマンドの記述方法については、各製造元の VPN に関するマニュアルを参照してください。
 
-- **[分割トンネリング]** - このオプションを **[有効]** または **[無効]** にします。これを有効にすると、使用する接続をトラフィックに応じてデバイスが判断するようになります。 たとえば、ホテルにいるユーザーは、業務ファイルへのアクセスに VPN 接続を使用しますが、通常の Web 閲覧にはホテルの標準ネットワークを使用します。
+- **[分割トンネリング]** -  このオプションを **[有効]** または **[無効]** にします。これにより、トラフィックに応じて使用する接続をデバイスが判断できます。 たとえば、ホテルにいるユーザーは、業務ファイルへのアクセスに VPN 接続を使用しますが、通常の Web 閲覧にはホテルの標準ネットワークを使用します。
 
 
 

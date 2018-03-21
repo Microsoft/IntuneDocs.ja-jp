@@ -1,12 +1,12 @@
 ---
-title: "Intune を使用してモバイル デバイスに組み込みアプリを追加する"
-titlesuffix: Azure portal
+title: "Microsoft Intune を使用してモバイル デバイスに組み込みアプリを追加する"
+titlesuffix: 
 description: "Intune を使用して、組み込みアプリをモバイル デバイスに簡単にインストールする方法について説明します。"
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/13/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d622f2cb8c6b3e8c9aace4e805108ccfa71eb4d2
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 7d90f86babc2f73acd5ccd1b454c636c6d4f79b2
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-add-built-in-apps-to-microsoft-intune"></a>組み込みアプリを Microsoft Intune に追加する方法
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 02/14/2018
 ## <a name="configure-app-information"></a>アプリ情報の構成
 
 組み込みアプリに関する情報を変更できます。 この情報は、アプリを Intune で識別したり、ユーザーが会社のポータル サイト アプリでアプリを探したりする場合に役立ちます。
-1.  **[Mobile Apps - アプリ]** ブレードで、変更する組み込みアプリを選びます。 組み込みアプリのブレードが表示されます。
+1.  **[Mobile Apps -アプリ]** ブレードで、変更する組み込みアプリを選びます。 組み込みアプリのブレードが表示されます。
 2.  **[管理]** グループの **[プロパティ]** オプションを選びます。
 3.  **[構成]** オプションを選んで、組み込みアプリの情報を変更します。
 4.  **[アプリ情報]** ブレードでは、以下の情報を変更できます。
@@ -67,4 +67,4 @@ ms.lasthandoff: 02/14/2018
 
 ## <a name="next-steps"></a>次の手順
 
-選択したグループにアプリを割り当てることができます。 詳細については、[アプリをグループに割り当てる方法](apps-deploy.md)に関するページを参照してください。
+- 選択したグループにアプリを割り当てることができます。 詳細については、[アプリをグループに割り当てる方法](apps-deploy.md)に関するページを参照してください。

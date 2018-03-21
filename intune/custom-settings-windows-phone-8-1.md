@@ -1,27 +1,25 @@
 ---
-title: "Windows Phone 8.1 デバイスの Intune カスタム設定"
-titleSuffix: Azure portal
-description: "Windows Phone 8.1 カスタム プロファイルで使用できる Intune の設定について説明します。\""
+title: "Windows Phone 8.1 を実行するデバイス向けの Microsoft Intune のカスタム設定"
+titleSuffix: 
+description: "Windows Phone 8.1 カスタム プロファイルで使用できる Intune の設定について説明します。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 21c55041-3821-4a62-9f85-855b97dba269
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bbe76f454575d9f09617b12e3811b0c7d5a75ca1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f45b2dd9cab0ccfd912d1f1348d90264bf8906b8
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="custom-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Microsoft Intune での Windows Phone 8.1 デバイス向けのカスタム設定
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-phone-81"></a>Windows Phone 8.1 を実行するデバイス向けの Microsoft Intune のカスタム デバイス設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -32,12 +30,12 @@ Microsoft Intune Windows Phone 8.1 **カスタム** プロファイルを使用�
 ## <a name="custom-policy-settings-for-windows-phone-81-devices"></a>Windows Phone 8.1 デバイス向けのカスタム ポリシー設定
 
 1. 「[How to configure custom device settings in Microsoft Intune (Microsoft Intune でカスタム デバイス設定を構成する方法)](custom-settings-configure.md)」の手順に従って開始します。
-2. **[プロファイルを作成します]** ブレードで **[設定]** を選択し、1 つまたは複数の OMA-URI 設定を追加します。
-3. **[行の追加]** ブレードで、設定ごとに次の値を構成します。
+2. **[OMA-URI のカスタム設定]** ウィンドウで **[追加]** を選択し、1 つまたは複数の OMA-URI を追加します。
+3. **[行の追加]** ウィンドウで、設定ごとに次の値を構成します。
     - **[名前]** - OMA-URI 設定の一意の名前を入力すると、設定リスト内で容易に識別できます。
     - **[説明]** - 設定の概要と、それを特定するために役立つその他の関連情報についての説明を入力します。
     - **[OMA-URI]** - 設定対象の OMA-URI を指定します。
-    - **[データ型]** - この OMA-URI 設定を指定するデータ型を選択します。 **[文字列]**、**[日付と時刻]**、**[整数]**、**[浮動小数点]**、または **[ブール値]** から選択します。
-    - **[値]** - 入力した OMA-URI に関連付ける値を入力します。
+    - **[データ型]** - この OMA-URI 設定を指定するデータ型を選択します。 **[文字列]**、**[文字列 (XML)]**、**[日付と時刻]**、**[整数]**、**[浮動小数点]**、**[ブール値]**、または **[Base64]** から選択します。
+    - **[値]** - 入力した OMA-URI に関連付ける値またはファイルを入力します。
 
 4. 完了したら **[OK]** をクリックし、必要に応じて引き続き他の設定を追加します。

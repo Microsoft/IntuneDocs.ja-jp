@@ -1,7 +1,7 @@
 ---
-title: "Check Point SandBlast と Intune の統合をセットアップする"
-titlesuffix: Azure portal
-description: "Check Point SandBlast と Intune の統合をセットアップします"
+title: "Microsoft Intune で Point SandBlast MTD を確認する"
+titlesuffix: 
+description: "Intune で CheckPoint SandBlast Mobile Threat Defense (MTD) をセットアップし、モバイル デバイスから会社のリソースへのアクセスを制御する方法。"
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,11 +15,11 @@ ms.assetid: 1e9b1576-b239-48cc-a672-da6b5fb7be0a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b1ea4804005abb1e2fcbc5dc3b5ef1382edd4db
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: b864d78fd7bfd7fb4e177b568b3587bc1e28b209
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>Check Point SandBlast Mobile と Intune を統合します
 
@@ -68,7 +68,7 @@ Check Point SandBlast アプリ承認プロセスは以下で構成されます�
 
 5.  Microsoft Intune を MDM サービスとして設定するとポップアップする **[Microsoft Intune Configuration\(Microsoft Intune の構成\)]** ウィンドウで、各デバイス プラットフォーム (iOS、Android、Windows) の **[Add to my organization\(組織に追加する\)]** を選択して、Check Point SandBlast Mobile が Intune および Azure AD と通信することを承認します。
 
-    ![Check Point MTD Intune の構成](./media/checkpoint-MTD-1.PNG)
+    ![Check Point MTD Intune の構成を示す画像](./media/checkpoint-MTD-1.PNG)
 
     > [!IMPORTANT]
     > 次の手順に進むには、すべてのデバイス プラットフォームを追加する必要があります。

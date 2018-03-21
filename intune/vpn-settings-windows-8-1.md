@@ -1,39 +1,39 @@
 ---
-title: "Windows 8.1 デバイス向けの Intune の VPN 設定"
-titleSuffix: Azure portal
-description: "Windows 8.1 デバイスで VPN 接続の構成に使用できる Intune 設定について説明します。\""
+title: "Windows 8.1 デバイス用の Microsoft Intune の VPN 設定"
+titleSuffix: 
+description: "Windows 8.1 を実行するデバイスでの VPN 接続の構成に使用できる Intune 設定について説明します。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0126c483ec905d4c073e19b35498c27069ecd285
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8ced3e03fa337034076af75c7984a30cd75105bb
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="vpn-settings-for-windows-81-devices-in-microsoft-intune"></a>Microsoft Intune での Windows 8.1 デバイス向けの VPN 設定
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>Windows 8.1 を実行するデバイス用に Microsoft Intune で VPN 設定を構成する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-選択する設定によっては、以下の一覧に記載されている値の一部を構成できない場合もあります。
+この記事では、Windows 8.1 を実行するデバイスでの VPN 接続の構成に使用できる Intune 設定を示します。
+
+選択した設定によっては、次の一覧に記載されている値の一部を構成できない場合があります。
 
 ## <a name="base-vpn-settings"></a>基本 VPN 設定
 
 
-- **[Apply all settings to Windows 8.1 only (すべての設定を Windows 8.1 のみに適用する)]** - これは、Intune クラシック ポータルで構成できる設定です。 Azure Portal では、この設定は変更できません。 これを **[構成済み]** に設定すると、すべての設定が Windows 8.1 デバイスのみに適用されるようになります。 **[未構成]** に設定されている場合、これらの設定は Windows 10 デバイスにも適用されます。
-- **[接続名]** - この接続の名前を入力します。 エンド ユーザーがデバイスで利用可能な VPN 接続の一覧を参照するときに、この名前が表示されます。
+- **[Apply all settings to Windows 8.1 only (すべての設定を Windows 8.1 のみに適用する)]** - これは、Intune クラシック ポータルで構成できる設定です。 Azure Portal では、この設定は変更できません。 これが **[構成済み]** に設定されている場合は、すべての設定が Windows 8.1 デバイスのみに適用されます。 **[未構成]** に設定されている場合、これらの設定は Windows 10 デバイスにも適用されます。
+- **[接続名]** - この接続の名前を入力します。 ユーザーがデバイスで使用可能な VPN 接続の一覧を参照するときに、この名前が表示されます。
 - **[サーバー]** - デバイスの接続先とする 1 台以上の VPN サーバーを追加します。
-    - **[追加]** - **[行の追加]** ブレードが開き、以下の情報を指定できます。
+    - **[追加]** - **[行の追加]** ページが開き、以下の情報を指定できます。
         - **[説明]** - **Contoso VPN サーバー**のような、サーバーを表す名前を指定します。
         - **[IP アドレスまたは FQDN]** - デバイスが接続する VPN サーバーの IP アドレスまたは完全修飾ドメイン名を指定します。 例: **192.168.1.1**、**vpn.contoso.com**。
         - **[既定のサーバー]** - このサーバーを、デバイスで接続を確立するために使用する既定のサーバーとして有効にします。 既定のサーバーとして設定するサーバーの数は 1 台のみにしてください。
@@ -42,13 +42,13 @@ ms.lasthandoff: 01/25/2018
 
 - **[接続の種類]** - 以下のベンダーの一覧から VPN 接続の種類を選択します。
 - **Check Point Capsule VPN**
-- **Dell SonicWALL Mobile Connect**
+- **SonicWall Mobile Connect**
 - **F5 Edge Client**
 - **Pulse Secure**
 
 <!--- **Fingerprint** (Check Point Capsule VPN only) - Specify a string (for example, "Contoso Fingerprint Code") that will be used to verify that the VPN server can be trusted. A fingerprint can be sent to the client so it knows to trust any server that presents the same fingerprint when connecting. If the device doesn’t already have the fingerprint, it will prompt the user to trust the VPN server that they are connecting to while showing the fingerprint. (The user manually verifies the fingerprint and chooses **trust** to connect.) --->
 
-- **[ログイン グループまたはドメイン]** (Dell SonicWALL Mobile Connect のみ) - 接続先のログイン グループまたはドメインの名前を指定します。
+- **[ログイン グループまたはドメイン]** (SonicWall Mobile Connect のみ) - 接続先のログイン グループまたはドメインの名前を指定します。
 
 - **[ロール]** (Pulse Secure のみ) - この接続に対するアクセス権を持つユーザー ロールの名前を指定します。 ユーザー ロールを使用して、個人の設定とオプションを定義し、特定のアクセス機能を有効または無効にします。
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 01/25/2018
 
 ```
 
-**Dell SonicWALL Mobile Connect の例:**
+**SonicWall Mobile Connect の例:**
 ```
     <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
 
@@ -83,7 +83,7 @@ ms.lasthandoff: 01/25/2018
 
 ```
 
-カスタムの XML コマンドの記述方法については、各製造元の VPN に関するマニュアルを参照してください。
+詳細については、カスタムの XML コマンドの記述方法に関する各製造元の VPN のドキュメントを参照してください。
 
 
 ## <a name="proxy-settings"></a>プロキシの設定

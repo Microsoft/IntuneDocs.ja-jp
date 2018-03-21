@@ -1,6 +1,6 @@
 ---
 title: "Windows 10 の一括登録"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "Microsoft Intune の一括登録パッケージを作成する"
 keywords: 
 author: Erikje
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 8b4c9f5685c12bb6c15d15d85c73d573dfcd66e8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 851be6ad98383937a3457a33e47115933f309cea
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows デバイスの一括登録
 
@@ -36,7 +36,7 @@ Azure AD ユーザーはこれらのデバイス上の標準ユーザーであ�
 ## <a name="create-a-provisioning-package"></a>プロビジョニング パッケージの作成
 
 1. Microsoft ストアから [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) をダウンロードします。
-![Windows Configuration Designer アプリ ストアのスクリーン ショットと説明のスクリーン ショット](media/bulk-enroll-store.png)
+![Windows Configuration Designer アプリ ストアのスクリーンショット](media/bulk-enroll-store.png)
 
 2. **Windows Configuration Designer** アプリを開き、**[Provision desktop devices]** (デスクトップ デバイスのプロビジョニング) を選択します。
 ![Windows Configuration Designer アプリでデスクトップ デバイスのプロビジョニングを選択するスクリーン ショット](media/bulk-enroll-select.png)
@@ -47,23 +47,24 @@ Azure AD ユーザーはこれらのデバイス上の標準ユーザーであ�
   - **説明**-プロジェクトの説明 (オプション) ![Windows Configuration Designer アプリで、名前、プロジェクト フォルダー、説明を指定するスクリーン ショット](media/bulk-enroll-name.png)
 
 4.  デバイスの一意の名前を入力します。 名前には、シリアル番号 (%%SERIAL%%)、または文字のランダムなセットを含めることができます。 必要に応じて、Windows のエディションをアップグレードする場合にプロダクト キーを入力したり、デバイスを共有使用のために構成したり、事前にインストールされたソフトウェアを削除することもできます。
-![Windows Configuration Designer アプリで、名前、プロジェクト フォルダー、説明を指定するスクリーン ショット](media/bulk-enroll-device.png)
+
+    ![Windows Configuration Designer アプリで名前とプロダクト キーを指定するスクリーンショット](media/bulk-enroll-device.png)
 
 5.  必要に応じて、初回起動時にデバイスが接続する Wi-fi ネットワークを構成できます。  ネットワーク デバイスが構成されていない場合は、デバイスの初回起動時にワイヤード (有線) ネットワーク接続が必要になります。
 ![Windows Configuration Designer アプリで、ネットワーク SSID やネットワークの種類のオプションを含む Wi-fi を有効にするスクリーン ショット](media/bulk-enroll-network.png)
 
 6.  **[Enroll in Azure AD]\(Azure AD に登録\)** を選択し、**[Bulk Token Expiry]\(一括トークンの有効期限\)** の日付を入力して、**[Get Bulk Token]\(一括トークンの取得\)** を選択します。
-![Windows Configuration Designer アプリで、名前、プロジェクト フォルダー、説明を指定するスクリーン ショット](media/bulk-enroll-account.png)
+![Windows Configuration Designer アプリでのアカウント管理のスクリーンショット](media/bulk-enroll-account.png)
 
 7. 一括トークンを取得するための Azure AD の資格情報を入力します。
-![Windows Configuration Designer アプリで、名前、プロジェクト フォルダー、説明を指定するスクリーン ショット](media/bulk-enroll-cred.png)
+![Windows Configuration Designer アプリへのサインインのスクリーンショット](media/bulk-enroll-cred.png)
 
 8.  **一括トークン**が正常にフェッチされたら、**[次へ]** をクリックします。
 
 9. 必要に応じて **[アプリケーションの追加]** や **[証明書の追加]** ができます。 これらのアプリと証明書がデバイスでプロビジョニングされます。
 
 10. 必要に応じて、プロビジョニング パッケージをパスワードで保護できます。  **[作成]** をクリックします。
-![Windows Configuration Designer アプリで、名前、プロジェクト フォルダー、説明を指定するスクリーン ショット](media/bulk-enroll-create.png)
+![Windows Configuration Designer アプリでのパッケージ保護のスクリーンショット](media/bulk-enroll-create.png)
 
 ## <a name="provision-devices"></a>デバイスのプロビジョニング
 

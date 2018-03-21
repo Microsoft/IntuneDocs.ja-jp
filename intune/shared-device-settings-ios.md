@@ -1,29 +1,29 @@
 ---
-title: "iOS 用 Intune 共有デバイス構成設定"
-titlesuffix: Azure portal
-description: "iOS デバイスのロック画面に情報を表示するために使用できる Intune 設定について説明します。\""
+title: "iOS 用 Microsoft Intune 共有デバイス構成設定"
+titlesuffix: 
+description: "iOS デバイスのロック画面に情報を表示するために使用できる Microsoft Intune 設定について説明します。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: f122e4ee-90e7-4b42-b801-8c1c7c0a5bf7
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5473a280551ab74f781a2de682d7e5922491e98
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9147eaff2bd366dbfd86c6422e0f7a29f685db62
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="shared-device-configuration-settings-to-display-messages-on-the-ios-device-lock-screen"></a>iOS デバイスのロック画面にメッセージを表示するための共有デバイス構成設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+この記事では、iOS デバイスのロック画面に情報を表示するために使用できる Microsoft Intune 設定について説明します。
 
 共有デバイス構成設定では、ログイン ウィンドウやロック画面に表示する任意のテキストを指定できます。 たとえば、"忘れ物として見つけた場合の返却先" メッセージや資産タグなどを入力できます。 
 
@@ -32,11 +32,12 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="create-shared-device-settings"></a>共有デバイス設定を作成する
 
-1. **[デバイス機能]** ブレードで、**[共有デバイスの構成 (監視のみ)]** を選びます。
-2. **[共有デバイスの構成 (監視のみ)]** ブレードで、以下の設定を構成します。
+1. [Azure Portal の Intune](https://portal.azure.com) から[デバイス構成領域の **[デバイス機能]**](device-features-configure.md) に移動します。 
+1. **[デバイス機能]** ウィンドウで、**[共有デバイスの構成 (監視のみ)]** を選びます。
+2. **[共有デバイスの構成 (監視のみ)]** ウィンドウで、以下の設定を構成します。
     - **[資産タグ情報]** - デバイスの資産タグに関する情報を入力します。 例: **Contoso Corp によって所有されている**。入力した情報は、このプロファイルを割り当てるすべてのデバイスに適用されます。
     - **[ロック画面の脚注]** - デバイスの紛失または盗難時に、返却に役立つようなメモを入力します。 例: **拾った方はこの番号 (xxx-xxx-xxx) にご連絡ください**。
-3. 完了したら、**[プロファイルの作成]** ブレードに戻るまで **[OK]** を選択し、ブレードに戻ったら **[作成]** を選択します。 
+3. 完了したら、**[プロファイルの作成]** ウィンドウに戻るまで **[OK]** を選択し、戻ったら **[作成]** を選択します。 
 
 
 ## <a name="next-steps"></a>次の手順

@@ -1,10 +1,10 @@
 ---
-title: "条件付きアクセス ポリシーを Intune クラシック ポータルから Azure Portal に移行する"
-titlesuffix: Azure portal
-description: "条件付きアクセス ポリシーを Intune クラシック ポータルから Azure Portal に移行します。"
+title: "Azure Portal に条件付きアクセスを移行する"
+titlesuffix: Microsoft Intune
+description: "Intune クラシック ポータルで以前に作成した条件付きアクセス ポリシーを Azure Portal に再割り当てします。"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bdb64d4cc668bf382c39a235111547c2f4e21c9c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 80c8c994486dd340c9037817854eb35b32ab3a9e
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>条件付きアクセス ポリシーを Intune クラシック ポータルから Azure Portal に再割り当てする
 
-新しい Azure Portal 以降の条件付きアクセスは、アプリケーションごとの複数のポリシーと詳細なカスタマイズ機能のサポートを提供します。
+新しい Azure Portal 以降の条件付きアクセスは、アプリケーションごとの複数のポリシーと詳細なカスタマイズ機能のサポートを提供します。 Intune クラシック ポータルで以前に条件付きアクセス ポリシー作成した場合、それを Azure Portal に移行することができます。 
 
 ## <a name="before-you-begin"></a>始める前に
 
@@ -79,7 +79,7 @@ Azure Portal の **[Intune アプリ保護]** ブレードで、管理者は、I
 
 4. **[割り当て]** セクションで、新しい条件付きアクセス ポリシーの対象として **[ユーザーとグループ]** を選びます。
     
-    ![Intune ポータルと Azure Portal のユーザー グループ UI の比較](./media/reassign-ca-1.png)
+    ![Intune ポータルと Azure Portal のユーザー グループ UI の比較を示すイメージ](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
     > Azure Portal で行う選択は、クラシック ポータルに対して行った選択と対応している必要があります。 たとえば、Intune クラシック ポータルですべてのユーザーを選んだ場合は、Azure Portal でも **[すべてのユーザー]** を選びます。 さらに、Intune クラシック ポータルで **[除外グループ]** オプションを選んだ場合は、Azure Portal でもそのグループを除外する必要があります。
@@ -94,7 +94,7 @@ Azure Portal の **[Intune アプリ保護]** ブレードで、管理者は、I
 
 9. **[完了]** をクリックします。
 
-    ![Intune ポータルと Azure Portal のクラウド アプリ UI の比較](./media/reassign-ca-3.png)
+    ![Intune ポータルと Azure Portal のクラウド アプリ UI の比較を示すイメージ](./media/reassign-ca-3.png)
 
     > [!TIP] 
     > 同じポリシーを複数のアプリに適用してある場合は、Azure Portal では 1 つのポリシーに統合することを検討します。
@@ -105,7 +105,7 @@ Azure Portal の **[Intune アプリ保護]** ブレードで、管理者は、I
 
 12. デバイス プラットフォームの選択が終わったら、**[完了]** を 2 回クリックします。
 
-    ![Intune ポータルと Azure Portal のデバイス プラットフォーム UI の比較](./media/reassign-ca-4.png)
+    ![Intune ポータルと Azure Portal のデバイス プラットフォーム UI の比較を示すイメージ](./media/reassign-ca-4.png)
 
     > [!TIP] 
     > Intune クラシック ポータルで個別のプラットフォームを選択してあった場合は、Azure Portal でも個別のプラットフォームを選びます。
@@ -119,7 +119,7 @@ Azure Portal の **[Intune アプリ保護]** ブレードで、管理者は、I
 
 15. クライアント アプリの選択が終わったら、**[完了]** を 2 回クリックします。
 
-    ![Intune ポータルと Azure Portal のクライアント アプリ UI の比較](./media/reassign-ca-6.png)
+    ![Intune ポータルと Azure Portal のクライアント アプリ UI の比較を示すイメージ](./media/reassign-ca-6.png)
 
 16. Intune クラシック ポータルでブラウザーの設定を選択していた場合は、Azure Portal で **[ブラウザー]** と **[モバイル アプリとデスクトップ クライアント]** の両方を選びます。 Intune クラシック ポータルでブラウザーの設定を選択していなかった場合は、**[モバイル アプリとデスクトップ クライアント]** だけを選びます。 
 
@@ -133,7 +133,7 @@ Azure Portal の **[Intune アプリ保護]** ブレードで、管理者は、I
 
 21. **[新規]** 条件付きアクセス ポリシー ブレードで、**[ポリシーを有効にする]** をオンにして、**[作成]** をクリックします。
 
-    ![Intune ポータルと Azure Portal の条件付きアクセス ポリシー有効化 UI の比較](./media/reassign-ca-11.png)
+    ![Intune ポータルと Azure Portal の条件付きアクセス ポリシー有効化 UI の比較を示すイメージ](./media/reassign-ca-11.png)
 
 ## <a name="reassign-intune-device-based-conditional-access-policies-for-eas-clients"></a>EAS クライアントに対する Intune のデバイス ベースの条件付きアクセス ポリシーの再割り当てを行う
 
@@ -147,7 +147,7 @@ Intune クラシック ポータルで Exchange Online のポリシーの一部�
 
 4. **[割り当て]** セクションで、新しい条件付きアクセス ポリシーの対象として **[ユーザーとグループ]** を選びます。
 
-    ![Intune ポータルと Azure Portal のユーザー グループ UI の比較](./media/reassign-ca-12.png)
+    ![Intune ポータルと Azure Portal のユーザー グループ UI の比較を示すイメージ](./media/reassign-ca-12.png)
 
     > [!IMPORTANT] 
     > Azure Portal で行う選択は、Azure Portal に対して行った選択と対応している必要があります。 たとえば、Intune クラシック ポータルですべてのユーザーを選んだ場合は、Azure Portal でも **[すべてのユーザー]** を選びます。 さらに、Intune クラシック ポータルで **[除外グループ]** オプションを選んだ場合は、Azure Portal でもそのグループを除外する必要があります。
@@ -158,14 +158,14 @@ Intune クラシック ポータルで Exchange Online のポリシーの一部�
 
 7. **[クラウド アプリ]** ブレードで、**[アプリの選択]** をクリックし、**[Exchange Online]** を選びます。 その後、**[選択]**、**[完了]** の順にクリックします。
 
-    ![Intune ポータルと Azure Portal のクラウド アプリ UI の比較](./media/reassign-ca-14.png)
+    ![Intune ポータルと Azure Portal のクラウド アプリ UI の比較を示すイメージ](./media/reassign-ca-14.png)
 
     > [!IMPORTANT] 
     > EAS クライアントの条件付きアクセス ポリシーに他のクラウド アプリを含めることはできません。
 
 8. **[条件]** ブレードで **[クライアント アプリ]** を選び、該当するクライアント アプリを選びます。 Intune でサポートされていないクライアントのブロックを選択してあった場合は、**[サポートされているプラットフォームのみにポリシーを適用する]** オプションを使います。
 
-    ![Intune ポータルと Azure Portal のクライアント アプリ UI の比較](./media/reassign-ca-15.png)
+    ![Intune ポータルと Azure Portal のクライアント アプリ UI の比較を示すイメージ](./media/reassign-ca-15.png)
 
 9. クライアント アプリの選択が終わったら、**[完了]** を 2 回クリックします。
 
@@ -173,11 +173,11 @@ Intune クラシック ポータルで Exchange Online のポリシーの一部�
 
 11. **[Grant Access Controls]\(アクセス制御の許可\)** で **[デバイスは準拠としてマーク済みである必要があります]** をオンにし、**[選択]** をクリックします。
 
-    ![Intune ポータルと Azure Portal のアクセス許可 UI の比較](./media/reassign-ca-16.png)
+    ![Intune ポータルと Azure Portal のアクセス許可 UI の比較を示すイメージ](./media/reassign-ca-16.png)
 
 12. **[新規]** 条件付きアクセス ポリシー ブレードで、**[ポリシーを有効にする]** をオンにして、**[作成]** をクリックします。
 
-    ![Intune ポータルと Azure Portal の条件付きアクセス ポリシー有効化 UI の比較](./media/reassign-ca-17.png)
+    ![Intune ポータルと Azure Portal の条件付きアクセス ポリシー有効化 UI の比較を示すイメージ](./media/reassign-ca-17.png)
 
 ## <a name="disable-conditional-access-policies-in-the-intune-classic-portal"></a>Intune クラシック ポータルで条件付きアクセス ポリシーを無効にする
 
@@ -196,7 +196,7 @@ Azure Portal で条件付きアクセス ポリシーの再割り当てを行っ
 
 4.  **[条件付きアクセス ポリシーを有効にする]** オプションをオフにした後、**[保存]** をクリックします。
 
-    ![Intune クラシック ポータルで条件付きアクセス ポリシーを無効にする](./media/reassign-ca-18.png)
+    ![Intune クラシック ポータルでの条件付きアクセス ポリシーの無効化を示すイメージ](./media/reassign-ca-18.png)
 
 ## <a name="see-also"></a>関連項目
 

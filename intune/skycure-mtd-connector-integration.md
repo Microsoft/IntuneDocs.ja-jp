@@ -1,7 +1,7 @@
 ---
-title: "Skycure と Intune の統合をセットアップする"
-titlesuffix: Azure portal
-description: "Skycure と Microsoft Intune の統合をセットアップします。"
+title: "Skycure と Microsoft Intune の統合をセットアップする"
+titlesuffix: 
+description: "Microsoft Intune で Skycure Mobile Threat Defense (MTD) ソリューションをセットアップし、モバイル デバイスから会社のリソースへのアクセスを制御する方法。"
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,15 +15,15 @@ ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7a1cea01960512ca484caa643862d90cbb867963
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 3a09806afae72f60961a94ab27707b4851006cf0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-the-skycure-integration-with-intune"></a>Skycure と Intune の統合をセットアップする
 
-シングル サインオン機能を与えるには、Skycure アプリを Azure AD に追加する必要があります。
+Skycure Mobile Threat Defense ソリューションを Intune と統合するには、次の手順をすべて実行します。 シングル サインオン機能を与えるには、Skycure アプリを Azure AD に追加する必要があります。
 
 ## <a name="before-you-begin"></a>始める前に
 
@@ -62,15 +62,15 @@ Skycure では、Intune との統合に 2 つのモードがあります。
 
 4.  **[iOS アプリ]** ラベルで、**[Add to Active Directory (Active Directory に追加)]** をクリックします。
 
-    ![Skycure 管理コンソールの iOS アプリ](./media/skycure-setup-1.png)
+    ![Skycure 管理コンソールの iOS アプリの画像](./media/skycure-setup-1.png)
 
 5.  ログイン ページが開いたら、Intune 資格情報を入力し、**[同意する]** をクリックします。
 
-    ![iOS アプリの Intune ログイン プロンプト](./media/skycure-setup-2.png)
+    ![iOS アプリの Intune ログイン プロンプトの画像](./media/skycure-setup-2.png)
 
 6.  アプリが Azure AD に追加されると、Skycure 管理コンソールでアプリが Azure AD に追加されたというメッセージが表示されます。
 
-    ![iOS アプリの完了画面](./media/skycure-setup-3.png)
+    ![iOS アプリの完了画面の画像](./media/skycure-setup-3.png)
 
 > [!NOTE]
 > **Skycure Android** アプリと**管理**アプリで同じプロセスを繰り返します。
@@ -79,13 +79,13 @@ Skycure では、Intune との統合に 2 つのモードがあります。
 
 Skycure を実行しているすべてのデバイスを含む Azure AD セキュリティ グループを追加する必要があります。
 
-1.  Skycure を実行しているデバイスのセキュリティ グループをすべて入力し、選択し、**[変更の適用]** をクリックします。
+-  Skycure を実行しているデバイスのセキュリティ グループをすべて入力し、選択し、**[変更の適用]** をクリックします。
 
-    ![セキュリティ グループ Skycure 管理コンソールを構成する](./media/skycure-setup-4.png)
+    ![セキュリティ グループ Skycure 管理コンソールを構成する場所がわかる画像](./media/skycure-setup-4.png)
 
 Skycure は、Mobile Threat Defense サービスを実行しているデバイスと Azure AD セキュリティ グループを同期します。
 
-![Skycure 管理コンソールで完了したセキュリティ グループの構成](./media/skycure-setup-5.png)
+![Skycure 管理コンソールで完了したセキュリティ グループの構成を示す画像](./media/skycure-setup-5.png)
 
 ## <a name="set-up-the-full-integration-between-intune-and-skycure"></a>Intune と Skycure の間に完全統合を設定する
 
@@ -103,7 +103,7 @@ Skycure は、Mobile Threat Defense サービスを実行しているデバイ�
 
 5.  **[変更の適用]** をクリックします。
 
-    ![Skycure の完全統合の完了](./media/skycure-setup-6.png)
+    ![Skycure の完全統合の完了を示す画像](./media/skycure-setup-6.png)
 
 ## <a name="next-steps"></a>次の手順
 

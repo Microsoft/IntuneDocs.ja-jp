@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7bbf0ab4196f5e86d7f25aa23f12d89f1bb5ee5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d9b2e6df6c40ec142554db22a64d362e02884c1d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>iOS Classroom アプリの Intune 設定を構成する方法
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 01/25/2018
 - iPad 画面をロックし、ロックを解除する
 - 生徒の iPad の画面を表示する
 - 生徒の iPad を操作し、本の中のブックマークや章に移動する
-- 生徒の iPad を画面を Apple TV に映す
+- 生徒の iPad の画面を Apple TV に映す
 
 Intune iOS **Education** デバイス プロファイルとこのトピックの情報を利用し、Classroom アプリやそれを使用するデバイスを設定できます。
 
@@ -72,12 +72,12 @@ SDS は SIS の情報を同期し、それを Azure AD に保管します。 Azu
 
 ### <a name="configure-general-settings"></a>全般的な設定を構成する
 
-1. Azure Portal にサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3.  **[Intune]** ブレードで、**[デバイスの構成]** を選択します。
-4.  **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
-5.  [プロファイル] ブレードで、**[プロファイルを作成します]** を選択します。
-6.  **[プロファイルを作成します]** ブレードで、iOS Education プロファイルの**名前**と**説明**を入力します。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
+2. **[デバイス構成]** ウィンドウの **[管理]** セクションで、**[プロファイル]** を選択します。
+5.  [プロファイル] ウィンドウで **[プロファイルの作成]** を選択します。
+6.  **[プロファイルの作成]** ウィンドウで、iOS Education プロファイルの **[名前]** と **[説明]** を入力します。
 7.  **[プラットフォーム]** ドロップダウン リストで、**[iOS]** を選択します。
 8.  **[プロファイルの種類]** ドロップダウン リストで、**[教育]** を選択します。
 9.  **[設定]** > **[構成]** の順に選択します。
@@ -94,7 +94,7 @@ iOS 教育プロファイルは、PFX 証明書のみをサポートします。
 
 ### <a name="configure-teacher-certificates"></a>教師の証明書を構成する
 
-**[教育]** ブレードで **[教師の証明書]** を選択します。
+**[教育]** ウィンドウで **[教師の証明書]** を選択します。
 
 #### <a name="configure-teacher-root-certificate"></a>教師のルート証明書を構成する
 
@@ -116,8 +116,8 @@ iOS 教育プロファイルは、PFX 証明書のみをサポートします。
 
 ### <a name="configure-student-certificates"></a>生徒の証明書を構成する
 
-1.  **[教育]** ブレードで **[学生の証明書]** を選択します。
-2.  **[学生の証明書]** ブレードで、**[Student device certificates (学生デバイス証明書)]** の種類の一覧から **[1:1]** を選択します。
+1.  **[教育]** ウィンドウで **[学生の証明書]** を選択します。
+2.  **[学生の証明書]** ウィンドウで、**[学生用デバイス証明書の種類]** の一覧から **[1:1]** を選択します。
 
 #### <a name="configure-student-root-certificate"></a>生徒のルート証明書を構成する
 
@@ -139,10 +139,10 @@ iOS 教育プロファイルは、PFX 証明書のみをサポートします。
 
 ## <a name="finish-up"></a>完了
 
-1.  **[教育]** ブレードで [OK] を選択します。
-2.  **[プロファイルの作成]** ブレードで、**[作成]** を選択します。
+1.  **[教育]** ウィンドウで [OK] を選択します。
+2.  **[プロファイルの作成]** ウィンドウで、**[作成]** を選択します。
     
-プロファイルが作成され、プロファイルの一覧ブレードに表示されます。
+プロファイルが作成され、プロファイルの一覧ウィンドウに表示されます。
 
 学校データと Azure AD を同期したときに作成された教室グループの生徒用デバイスにプロファイルを割り当てます (「[デバイス プロファイルを割り当てる方法](device-profile-assign.md)」参照)。
 

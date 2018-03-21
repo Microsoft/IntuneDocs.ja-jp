@@ -1,29 +1,29 @@
 ---
-title: "iOS デバイス向けの Intune VPN 設定"
-titlesuffix: Azure portal
-description: "iOS デバイスでの VPN 接続の構成に使用できる Intune 設定について説明します。\""
+title: "iOS を実行するデバイス用の Microsoft Intune の VPN 設定"
+titlesuffix: 
+description: "iOS を実行するデバイスでの VPN 接続の構成に使用できる Intune 設定について説明します。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3db57b851c405758c9cccdc3e70c96ca9e76000
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 70721d1d2f360527af0e269a93d6243b6a42431b
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune での iOS デバイス向けの VPN 設定
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>iOS を実行するデバイス用に Microsoft Intune で VPN 設定を構成する
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+この記事では、iOS を実行するデバイスでの VPN 接続の構成に使用できる Intune 設定を示します。
 
 選択した設定によっては、次の一覧に記載されている値の一部を構成できない場合があります。
 
@@ -38,7 +38,7 @@ ms.lasthandoff: 01/25/2018
 - **[接続の種類]** - 以下のベンダーの一覧から VPN 接続の種類を選択します。
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
-    - **Dell SonicWALL Mobile Connect**
+    - **SonicWall Mobile Connect**
     - **F5 Edge Client**
     - **Pulse Secure**
     - **Cisco (IPSec)**
@@ -75,6 +75,6 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="proxy-settings"></a>プロキシの設定
 
-- **[自動構成スクリプト]** - ファイルを使用してプロキシ サーバーを構成します。 構成ファイルが格納されている**プロキシ サーバーの URL** を入力します (たとえば、**http://proxy.contoso.com**)。
+- **[自動構成スクリプト]** - ファイルを使用してプロキシ サーバーを構成します。 構成ファイルが格納されている**プロキシ サーバーの URL** を入力します (例: **http://proxy.contoso.com**)。
 - **[アドレス]** - プロキシ サーバーのアドレスを (IP アドレスとして) 入力します。
 - **[ポート番号]** - プロキシ サーバーに関連付けられているポート番号を入力します。

@@ -1,36 +1,36 @@
 ---
-title: "Android デバイス向けの Intune Wi-Fi 設定"
-titleSuffix: Azure portal
-description: "Intune での Android デバイスと Android for Work デバイスの Wi-fi 接続設定の構成について説明します。\""
+title: "Android を実行するデバイス用に Microsoft Intune の Wi-Fi 設定を構成する"
+titleSuffix: 
+description: "Android か Android for Work を実行するデバイスの Intune Wi-fi 構成設定について説明します。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 103e17a4-2993-4359-b340-73e2acf4cf7d
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a20ebf026850f28888cd63eb43396a12430bb3cd
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d327c2d3cadf441f74e35af86b19438159225771
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="wi-fi-settings-for-android-and-android-for-work-devices-in-microsoft-intune"></a>Microsoft Intune での Android デバイスと Android for Work デバイスの Wi-fi 設定
+# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Android か Android for Work を実行しているデバイスの Microsoft Intune Wi-Fi 設定を構成する  
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+この記事では、Android か Android for Work を実行するデバイス用に Microsoft Intune で構成できる Wi-Fi 設定を示します。
 
 ## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>基本プロファイルとエンタープライズ プロファイル向けの Wi-Fi 設定
 
 次の Wi-fi 設定は、Android デバイスと Android for Work デバイスの両方で利用できます。
 
-- **[ネットワーク名]** - この Wi-Fi 接続の名前を入力します。 これは、ユーザーがデバイスで利用可能な接続の一覧を参照しているときに表示される名前です。
-- **[SSID]** - サービス セット識別子の短縮形です。 これは、デバイスの接続先となるワイヤレス ネットワークの実際の名前です。 ただし、ユーザーが接続を選択したときにユーザーに表示されるのは、作成した上記のネットワーク名のみです。
+- **[ネットワーク名]** - この Wi-Fi 接続の名前を入力します。 これは、ユーザーがデバイスで使用可能な接続の一覧を参照しているときに表示される名前です。
+- **[SSID]** - サービス セット識別子の短縮形です。 これは、デバイスの接続先のワイヤレス ネットワークの実際の名前です。 ただし、ユーザーが接続を選択したときにユーザーに表示されるのは、構成されたネットワーク名のみです。
 - **[自動的に接続する]** - デバイスがこのネットワークの範囲内にある場合に必ず、デバイス接続を確立します。
 - **[非公開のネットワーク]** - デバイス上の使用可能なネットワークの一覧にこのネットワークが表示されないようにします。
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 01/25/2018
 
 |設定の名前|詳細情報|次の場合に使用|
 |-------------|---------------|-----------|
-|**証明書のサーバー名**|信頼された証明機関 (CA) によって発行された証明書で使用される 1 つ以上の共通名を指定します。 この情報を指定すると、この Wi-Fi ネットワークに接続したときに、エンド ユーザーのデバイスに表示される動的な信頼ダイアログをバイパスできます。|EAP の種類が **EAP-TLS** または **EAP-TTLS**|
+|**証明書のサーバー名**|信頼された証明機関 (CA) によって発行された証明書で使用される 1 つ以上の共通名を指定します。 この情報を指定すると、この Wi-Fi ネットワークに接続したときに、ユーザーのデバイスに表示される動的な信頼ダイアログをバイパスできます。|EAP の種類が **EAP-TLS** または **EAP-TTLS**|
 |**サーバー検証のためのルート証明書**|接続の認証に使用される信頼されたルート証明書プロファイルを選択します。 |EAP の種類が **EAP-TLS**、**EAP-TTLS**、または **PEAP**|
 |**ID プライバシー (外部 ID)**|EAP ID 要求への応答で送信されるテキストを指定します。 このテキストには任意の値を指定できます。 認証時に、この匿名の ID が最初に送信され、その後、セキュリティで保護されたトンネルで実際の ID が送信されます。|EAP の種類が **PEAP**|
 
