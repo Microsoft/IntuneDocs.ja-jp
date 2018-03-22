@@ -1,7 +1,7 @@
 ---
 title: "macOS を実行するデバイス向けの Microsoft Intune のカスタム設定"
 titleSuffix: 
-description: "macOS カスタム プロファイルで使用できる設定について説明します。"
+description: "Microsoft Intune の macOS カスタム プロファイルで使用できる設定について説明します。"
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5ccc9d48eb16ce155bbed2bbdf38793b8f3bdfda
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: e8dc2042d7f88cf626d7420d4760255e1e9a3469
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-macos"></a>macOS を実行するデバイス向けの Microsoft Intune のカスタム デバイス設定
 

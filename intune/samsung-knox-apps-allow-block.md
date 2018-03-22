@@ -1,31 +1,29 @@
 ---
-title: "Intune ポリシーによる Samsung KNOX 用アプリの許可/禁止"
-titlesuffix: Azure portal
-description: "カスタム プロファイルを作成して、Samsung KNOX Standard デバイス用のアプリを許可またはブロックします。\""
+title: "Microsoft Intune ポリシーによる Samsung KNOX 用アプリの許可/禁止"
+titlesuffix: 
+description: "カスタム プロファイルを作成して、Samsung KNOX Standard デバイス用のアプリを許可またはブロックします。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/03/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
-ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 606f3dbb4d68592f6920ee900d36be1befe56568
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 95f35cfd869975a43fd54a1e6a9ff6ae35ffa6af
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Microsoft Intune でカスタム ポリシーを使用して Samsung KNOX Standard デバイス用のアプリを許可またはブロックする
+# <a name="use-custom-policies-in-microsoft-intune-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Microsoft Intune でカスタム ポリシーを使用して Samsung KNOX Standard デバイス用のアプリを許可またはブロックする 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-次のいずれかを作成する Microsoft Intune のカスタム ポリシーを作成するには、このトピックの手順を使用します。
+次のいずれかを作成する Microsoft Intune のカスタム ポリシーを作成するには、この記事の手順を使用します。
 
 - デバイスでの実行をブロックするアプリの一覧。 この一覧のアプリは、ポリシー適用時に既にインストールされていた場合でも、実行をブロックされます。
 - デバイスのユーザーが Google Play ストアからインストールできるアプリの一覧。 一覧のアプリのみをインストールできます。 他のアプリはストアからインストールできません。
@@ -34,33 +32,33 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="create-an-allowed-or-blocked-app-list"></a>許可されているアプリまたはブロックされているアプリの一覧の作成
 
-1. Azure Portal にサインインします。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
-2. **[デバイス構成]** ブレードで、**[管理]** > **[プロファイル]** の順に選択します。
-2. プロファイルの一覧ブレードで、**[プロファイルを作成します]** を選択します。
-3. **[プロファイルを作成します]** ブレードで、デバイス プロファイルの**名前**と省略可能な**説明**を入力します。
-2. **[プラットフォームの種類]** では **[Android]** を、[プロファイルの種類] では **[カスタム]** を選択します。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
+3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
+2. **[デバイス構成]** ウィンドウで、**[管理]**、**[プロファイル]** の順に選択します。
+2. プロファイルの一覧ウィンドウで、**[プロファイルの作成]** を選択します。
+3. **[プロファイルを作成します]** ウィンドウで、デバイス プロファイルの**名前**と省略可能な**説明**を入力します。
+2. **[プラットフォーム]** には **[Android]** を、**[プロファイルの種類]** には **[カスタム]** を選択します。
 3. **[設定]** をクリックします。
-3. **[OMA-URI のカスタム設定]** ブレードで、**[追加]** を選択します。
-4. **[OMA-URI 設定の追加または編集]** ダイアログ ボックスで、以下を指定します。
+3. **[OMA-URI のカスタム設定]** ウィンドウで、**[追加]** を選択します。
+4. **[OMA-URI 設定の追加または編集]** ダイアログ ボックスで、次の設定を指定します。
 
-### <a name="for-a-list-of-apps-that-are-blocked-from-running-on-the-device"></a>デバイスでの実行がブロックされているアプリの一覧の場合:
+   デバイスでの実行がブロックされているアプリの一覧の場合:
 
-- **[名前]** - 「**PreventStartPackages**」と入力します。
-- **[説明]** - "実行されないようにブロックされているアプリの一覧" のような説明 (省略可能) を入力します。
--   **[データ型]** - ドロップダウン リストで **[文字列]** を選択します。
--   **[OMA-URI]** - 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**」と入力します
--   **[値]** - ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,** **|** を使用できます。 (例: package1;package2;)
+   - **[名前]** - 「**PreventStartPackages**」と入力します。
+   - **[説明]** - "実行されないようにブロックされているアプリの一覧" のような説明 (省略可能) を入力します。
+   -    **[データ型]** - ドロップダウン リストで **[文字列]** を選択します。
+   -    **[OMA-URI]** - 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**」と入力します
+   -    **[値]** - ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,** **|** を使用できます。 (例: package1;package2;)
 
-### <a name="for-a-list-of-apps-that-users-are-allowed-to-install-from-the-google-play-store-while-excluding-all-other-apps"></a>他のすべてのアプリの実行中にユーザーが Google Play ストアからインストールできるアプリの一覧の場合:
-- **[名前]** - 「**AllowInstallPackages**」と入力します。
-- **[説明]**: "ユーザーが Google Play からインストールできるアプリの一覧" のような説明 (省略可能) を入力します。
-- **[データ型]** - ドロップダウン リストで **[文字列]** を選択します。
-- **[OMA-URI]** - 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**」と入力します
-- **[値]** - 許可するアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,** **|** を使用できます。 (例: package1;package2;)
+   他のすべてのアプリの実行中にユーザーが Google Play ストアからインストールできるアプリの一覧の場合:
+   - **[名前]** - 「**AllowInstallPackages**」と入力します。
+   - **[説明]**: "ユーザーが Google Play からインストールできるアプリの一覧" のような説明 (省略可能) を入力します。
+   - **[データ型]** - ドロップダウン リストで **[文字列]** を選択します。
+   - **[OMA-URI]** - 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**」と入力します
+   - **[値]** - 許可するアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,** **|** を使用できます。 (例: package1;package2;)
 
-4. **[OK]** をクリックし、**[プロファイルを作成します]** ブレードで **[作成]** を選択します。
+4. **[OK]** をクリックし、**[プロファイルを作成します]** ウィンドウで **[作成]** を選択します。
 
 >[!TIP]
 > Google Play ストアでアプリを参照して、アプリのパッケージ ID を確認できます。 パッケージ ID は、アプリのページの URL に含まれます。 たとえば、Microsoft Word アプリのパッケージ ID は **com.microsoft.office.word** です。

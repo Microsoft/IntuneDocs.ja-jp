@@ -5,7 +5,7 @@ description: "Windows 10 デバイスで実行されている Intune で PowerSh
 keywords: 
 author: dougeby
 manager: dougeby
-ms.date: 11/08/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e8c959ca3df62cbda17e5a659d0703cbc37f3249
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a52f2affa235a37b6d99a8452bc83a794cb04ce5
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 デバイスの Intune で PowerShell スクリプトを管理する
 Intune 管理拡張機能を使用すると、Windows 10 デバイスで実行されている Intune で PowerShell スクリプトをアップロードできます。 この管理拡張機能は Windows 10 モバイル デバイス管理 (MDM) 機能を補完するもので、最新の管理に簡単に移行できます。
@@ -37,24 +37,24 @@ Intune 管理拡張機能には次の前提条件があります。
 
 ## <a name="create-a-powershell-script-policy"></a>PowerShell スクリプト ポリシーを作成する 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
-4. **[デバイス構成]** ブレードで、**[管理]** > **[PowerShell スクリプト]** の順に選択します。
-5. **[PowerShell スクリプト]** ブレードで **[スクリプトの追加]** を選択します。
-6. **[PowerShell スクリプトの追加]** ブレードで、PowerShell スクリプトの **[名前]** と **[説明]** を入力します。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
+4. **[デバイス構成]** ウィンドウで、**[管理]**、**[PowerShell スクリプト]** の順に選択します。
+5. **[PowerShell スクリプト]** ウィンドウで **[追加]** を選択します。
+6. **[PowerShell スクリプトの追加]** ウィンドウで、PowerShell スクリプトの **[名前]** と **[説明]** を入力します。
 7. **[スクリプトの場所]** で、PowerShell スクリプトを参照します。 スクリプトは 10 KB (ASCII) または 5 KB (Unicode) 未満である必要があります。
 8. **[構成]** を選択し、デバイスでのスクリプトの実行にユーザーの資格情報を使用するか (**[はい]**) またはシステム コンテキストを使用するか (**[いいえ]**) を選択します。 既定で、スクリプトはシステム コンテキストで実行されます。 システム コンテキストでスクリプトを実行する必要がある場合以外は、**[はい]** を選択してください。 
-  ![[PowerShell スクリプトの追加] ブレード](./media/mgmt-extension-add-script.png)
+  ![[PowerShell スクリプトの追加] ウィンドウ](./media/mgmt-extension-add-script.png)
 9. 信頼された発行者がスクリプトに署名する必要がある (**[はい]**) かどうかを選択します。 既定で、スクリプトに署名する要件はありません。 
 10. **[OK]** をクリックし、**[作成]** をクリックしてスクリプトを保存します。
 
 ## <a name="assign-a-powershell-script-policy"></a>PowerShell スクリプト ポリシーを割り当てる
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
-4. **[デバイス構成]** ブレードで、**[管理]** > **[PowerShell スクリプト]** の順に選択します。
-5. **[PowerShell スクリプト]** ブレードで、割り当てるスクリプトを選択し、**[管理]** > **[割り当て]** を選択します。
-  ![[PowerShell スクリプトの追加] ブレード](./media/mgmt-extension-assignments.png)
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
+4. **[デバイス構成]** ウィンドウで、**[管理]**、**[PowerShell スクリプト]** の順に選択します。
+5. **[PowerShell スクリプト]** ウィンドウで、割り当てるスクリプトを選択し、**[管理]**、**[割り当て]** を選択します。
+  ![[PowerShell スクリプトの追加] ウィンドウ](./media/mgmt-extension-assignments.png)
  
 6. **[グループの選択]** を選択して、使用できる Azure AD グループの一覧を表示します。 
 7. スクリプトを受信するデバイスのユーザーが属しているグループを 1 つ以上選択します。次に、**[選択]** をクリックして選択したグループにポリシーを割り当てます。
@@ -64,9 +64,9 @@ Intune 管理拡張機能は、1 時間に 1 回 Intune と同期します。 �
 ## <a name="monitor-run-status-for-powershell-scripts"></a>PowerShell スクリプトの実行ステータスを監視する
 Azure Portal でユーザーとデバイスの PowerShell スクリプトの実行状態を監視できます。
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ブレードで、**[デバイス構成]** を選択します。
-4. **[デバイス構成]** ブレードで、**[管理]** > **[PowerShell スクリプト]** の順に選択します。
-5. **[PowerShell スクリプト]** ブレードで、監視するスクリプトを選択し、**[監視]** を選択し、次のいずれかのレポートを選択します。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
+4. **[デバイス構成]** ウィンドウで、**[管理]**、**[PowerShell スクリプト]** の順に選択します。
+5. **[PowerShell スクリプト]** ウィンドウで、監視するスクリプトを選択し、**[監視]** を選択し、次のいずれかのレポートを選択します。
    - **デバイスの状態**
    - **ユーザーの状態**

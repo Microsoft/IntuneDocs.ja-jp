@@ -1,29 +1,30 @@
 ---
-title: "Windows Phone 8.1 の Intune デバイス制限設定"
-titleSuffix: Azure portal
-description: "Windows Phone 8.1 デバイスでデバイスの設定と機能を制御するために使用できる Intune 設定について説明します。\""
+title: "Windows Phone 8.1 の Microsoft Intune デバイス制限設定"
+titleSuffix: 
+description: "Windows Phone 8.1 を実行するデバイスでデバイスの設定と機能を制御するために使用できる Intune の設定について説明します。"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98734b51cf72a097c6b4a9e425e80457b0b39afa
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 808c8e9ac1ef944b69ae8e548c62d4c6366820d0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune での Windows Phone 8.1 デバイスの制限設定
+# <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Microsoft Intune の Windows Phone 8.1 デバイス制限設定
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+この記事では、Windows Phone 8.1 を実行するデバイスに構成できる Microsoft Intune デバイス制限設定について説明します。
+
 
 ## <a name="general"></a>全般
 
@@ -75,7 +76,7 @@ ms.lasthandoff: 01/25/2018
 
 ### <a name="additional-options"></a>追加オプション
 
-**[インポート]** をクリックして "<*アプリ URL*>, <*アプリ名*>, <*アプリの発行元*>" 形式の csv ファイルから一覧に値を設定したり、**[エクスポート]** をクリックして、制限付きアプリの一覧の内容を含む csv ファイルを同じ形式で作成したりすることもできます。
+**[インポート]** をクリックして "<*アプリ URL*>, <*アプリ名*>, <アプリ公開者>" 形式の csv ファイルから一覧に値を設定したり、**[エクスポート]** をクリックして、制限付きアプリの一覧の内容を含む csv ファイルを同じ形式で作成したりすることもできます。
 
 
 ## <a name="browser"></a>ブラウザー
