@@ -1,26 +1,25 @@
 ---
-title: "Intune で SCEP 証明書を構成して管理する"
-titlesuffix: Azure portal
-description: "インフラストラクチャを構成してから、Intune SCEP 証明書プロファイルを作成して割り当てる方法について説明します。\""
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Microsoft Intune で SCEP 証明書を構成して管理する
+description: インフラストラクチャを構成してから、Microsoft Intune で Intune SCEP (Simple Certificate Enrollment Protocol) 証明書プロファイルを作成して割り当てる方法について説明します。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d723bc4d5032a7a5c330367fe83eabd4763917a2
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 88109f1dc4543a5c71f36378fddb110c03afa08f
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="configure-and-manage-scep-certificates-with-intune"></a>Intune で SCEP 証明書を構成して管理する
+# <a name="configure-and-manage-scep-certificates-with-microsoft-intune"></a>Microsoft Intune で SCEP 証明書を構成して管理する
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 このトピックでは、インフラストラクチャを構成してから、Intune で SCEP (Simple Certificate Enrollment Protocol) 証明書プロファイルを作成して割り当てる方法について説明します。
@@ -305,10 +304,10 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 ![ConnectorDownload](./media/certificates-download-connector.png)   
  
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
 4. **[デバイス構成]** ウィンドウで **[証明機関]** を選択します。
-5. **[追加]** をクリックして、**[コネクタ ファイルをダウンロードします]** を選択します。 インストールするサーバーからアクセスできる場所にダウンロードしたものを保存します。 
+5. **[追加]** をクリックして、**[Download the Connector file]\(コネクタ ファイルをダウンロードします\)** を選択します。 インストールするサーバーからアクセスできる場所にダウンロードしたものを保存します。 
 6.  ダウンロードが完了した後、ダウンロードしたインストーラー (**ndesconnectorssetup.exe**) を、ネットワーク デバイス登録サービス (NDES) の役割をホストしているサーバーで実行します。 インストーラーは、NDES のポリシー モジュールと CRP Web サービスもインストールします。 (CRP Web サービス CertificateRegistrationSvc は IIS のアプリケーションとして実行されます)。
 
     > [!NOTE]

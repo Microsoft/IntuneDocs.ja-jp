@@ -1,25 +1,25 @@
 ---
-title: "iOS Classroom アプリの Intune 共有デバイス設定"
-titlesuffix: Azure portal
-description: "iOS デバイスの Classroom アプリの設定を制御するために使用できる Intune 設定について説明します。\""
-keywords: 
+title: iOS Classroom アプリの Intune 共有デバイス設定
+titleSuffix: Microsoft Intune
+description: iOS デバイスの Classroom アプリの設定を制御するために使用できる Intune 設定について説明します。
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
 ms.date: 02/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f6dc373f831b574abf7d63e97935a379e731422
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 4924d01c6f5d423b7c553d11eea065534179fe5f
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>共有 iPad デバイスの Intune 教育設定を構成する方法
 
@@ -48,7 +48,6 @@ SDS は SIS の情報を同期し、それを Azure AD に保管します。 Azu
 
 - [CSV ファイル](https://support.office.com/article/Follow-these-steps-71d5fe4a-aa51-4f35-9b53-348898a390a1) - コンマ区切り値 (.csv) ファイルを手動でエクスポートし、コンパイルします
 - [PowerSchool API](https://support.office.com/article/Follow-these-steps-851b5edc-558f-43a9-9122-b2d63458cb8f) - Azure AD との同期を簡単にする SIS プロバイダー
-- [Clever API](https://support.office.com/article/Follow-these-steps-f3d92fde-3ad0-48f3-80a1-1ad0ac4a3fae) - Azure AD と直接同期する ID 管理ソリューション
 - [OneRoster](https://support.office.com/article/Follow-these-steps-f43cbb2a-b502-497d-a8b1-783dc05a57ab) - Azure AD と同期するためにエクスポートし、変換できる CSV 形式
 
 ### <a name="find-out-more"></a>詳細は以下のページをご覧ください
@@ -63,7 +62,7 @@ SDS は SIS の情報を同期し、それを Azure AD に保管します。 Azu
 ### <a name="configure-general-settings"></a>全般的な設定を構成する
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ウィンドウの **[管理]** セクションで、**[プロファイル]** を選択します。
 5. [プロファイル] ウィンドウで **[プロファイルの作成]** を選択します。
@@ -134,7 +133,7 @@ iOS 教育プロファイルは、PFX 証明書のみをサポートします。
 ## <a name="step-3---create-a-device-category"></a>手順 3 - デバイス カテゴリを作成する
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[デバイスの登録]** を選択します。
 4. **[デバイスの登録 - 概要]** ウィンドウで、**[デバイス カテゴリ]** を選択します。
 5. **[デバイスの登録 - デバイス カテゴリ]** ウィンドウで、**[作成]** を選択します。
@@ -146,7 +145,7 @@ iOS 教育プロファイルは、PFX 証明書のみをサポートします。
 ## <a name="step-4--create-a-dynamic-group"></a>手順 4 – 動的グループを作成する
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[グループ]** を選択します。
 4. **[ユーザーとグループ - すべてのグループ]** ウィンドウで、**[新しいグループ]** を選択します。
 5. **[グループ]** ウィンドウで、**[グループの種類]** を選択し、グループの **[名前]** と **[説明]** を入力します。
@@ -164,7 +163,7 @@ iOS 教育プロファイルは、PFX 証明書のみをサポートします。
 ## <a name="step-5--assign-a-device-to-a-category-carts"></a>手順 5 – デバイスをカテゴリに割り当てる (カート)
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[デバイス]** を選択します。
 4. **[デバイス]** ウィンドウで、**[すべてのデバイス]** を選択します。
 5. **[デバイス - すべてのデバイス]** ウィンドウで、デバイスを選択します。
@@ -177,7 +176,7 @@ iOS 教育プロファイルは、PFX 証明書のみをサポートします。
 ## <a name="step-6--create-classroom-profiles"></a>手順 6 – 教室プロファイルを作成する
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
 4. **[デバイス構成]** ウィンドウで、**[管理]** > **[カート プロファイル]** の順に選択します。
 5. [プロファイル] ウィンドウで **[プロファイルの作成]** を選択します。
@@ -193,7 +192,7 @@ iOS 教育プロファイルは、PFX 証明書のみをサポートします。
 ## <a name="step-7---assign-the-cart-profile-to-classes"></a>手順 7 - カート プロファイルをクラスに割り当てる
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
 4. **[デバイス構成]** ウィンドウで、**[モニター]** > **[割り当ての状態]** の順に選択します。
 5. **[割り当ての状態]** ウィンドウで、作成した**カート プロファイル**を選択します。
