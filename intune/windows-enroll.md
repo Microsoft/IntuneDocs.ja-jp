@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/29/2017
+ms.date: 03/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 21849cd4bb1c77334fdc3e9e347365a25ab4df2d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 896c984cb5831dc84a041d4ad39e4cdf6819f0f8
+ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows デバイスの登録をセットアップする
 
@@ -85,6 +85,9 @@ Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[I
 > 特定のバージョンの Windows で割り当てられた Windows アプリを表示するためには、エンド ユーザーは Microsoft Edge を介してポータル サイト Web サイトにアクセスする必要があります。 Google Chrome、Mozilla Firefox、Internet Explorer などの他のブラウザーでは、この種のフィルタリングはサポートされていません。
 
 エンドユーザー用の登録手順については、「[Intune に Windows デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)」を参照してください。 また、ユーザーには、[IT 管理者がユーザーのデバイスに関して確認できる情報](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows)に関するページも案内してください。
+
+>[!IMPORTANT]
+> MDM 自動登録を有効にしていなくても、Azure AD に参加している Windows 10 デバイスを持っている場合は、登録後に Intune コンソールに 2 つのレコードが表示されます。 これを停止するには、Azure AD に参加しているデバイスを持っているユーザーが、**[アカウント]** > **[職場または学校にアクセスする]** に移動し、同じアカウントを使用して**接続**するようにします。 
 
 エンドユーザー タスクの詳細については、「[Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](end-user-educate.md)」を参照してください。
 

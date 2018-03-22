@@ -1,11 +1,12 @@
 ---
 title: "ユーザーを追加してアクセス許可を付与する"
-description: "オンプレミス ユーザーと Azure AD を同期し、Intune サブスクリプションに対する管理者権限を付与します"
+titlesuffix: Microsoft Intune
+description: "オンプレミス ユーザーと Azure AD を同期し、Intune サブスクリプションに対する管理者アクセス許可を付与します。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/28/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +15,15 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8ce84f51dcfb61ec16c78a6216135c2a7639657f
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: f8fe6d668885345f4bd710e4b96b8d7855f12632
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="add-users-and-give-administrative-permission-to-intune"></a>Intune にユーザーを追加して管理権限を付与する
+# <a name="add-users-and-grant-administrative-permission-to-intune"></a>Intune にユーザーを追加して管理アクセス許可を付与する
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
-
-このトピックでは、管理者が Intune にユーザーを追加する方法と、Intune サービスで使用できる管理アクセス許可について説明します。
 
 管理者は、ユーザーを直接追加することも、オンプレミスの Active Directory からユーザーを同期することもできます。 追加されたユーザーは、デバイスを登録し、会社のリソースにアクセスできます。 また、*グローバル管理者*や*サービス管理者*など、追加のアクセス許可をユーザーに与えることができます。
 
@@ -36,7 +35,7 @@ ms.lasthandoff: 02/01/2018
 2. Office 365 メニューで、**[管理者]** を選択します。
 3. 管理センターで、**[ユーザーの追加]** を選択します。
 
-  ![Office 365 管理のスクリーンショット](media/office-add-user.png)
+  ![[ユーザーの追加] セクションのスクリーンショット](media/office-add-user.png)
 
 4. 次のユーザー詳細を指定します。
   - **名**
@@ -47,19 +46,19 @@ ms.lasthandoff: 02/01/2018
   - **連絡先の情報** (任意)
   - **パスワード** - 自動生成または指定
 
-     ![Office 365 管理のスクリーンショット](media/office-add-user-details.png)
+     ![[新規ユーザー] セクションのスクリーンショット](media/office-add-user-details.png)
 
 5. Intune ライセンスを割り当てます。 **[製品ライセンス]** を選択し、製品ライセンスを選択します。 Intune を含むライセンスが必要です。
 6. **[追加]** を選択して新しいユーザーを作成します。
 
 ### <a name="add-intune-users-in-the-azure-portal"></a>Azure Portal で Intune ユーザーを追加する
-1. [Azure Portal](https://portal.azure.com) にサインインし、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に移動します。 **Intune** の "*リソースを検索する*" こともできます。
-2. **[ユーザー]** を選択します。
+1. [Azure Portal](https://portal.azure.com) にサインインし、**[すべてのサービス]**、**[監視 + 管理]**、**[Intune]** の順に移動します。 **Intune** の "*リソースを検索する*" こともできます。
+2. **[ユーザー]**、**[すべてのユーザー]** の順に選択します。
 3. 管理センターで、**[新しいユーザー]** を選びます。
-  ![Office 365 管理のスクリーンショット](media/intune-add-user.png)
+  ![新しいユーザーの追加のスクリーンショット](media/intune-add-user.png)
 4. 次のユーザー詳細を指定します。
   - **名前**
-  - **ユーザー名** - Azure Active Directory ポータルの新しい名前 ![Office 365 管理のスクリーンショット](media/intune-add-user-info.png) **[OK]** を選択して続行します。
+  - **ユーザー名** - Azure Active Directory ポータルの新しい名前 ![名前とユーザー名の追加のスクリーンショット](media/intune-add-user-info.png) **[OK]** を選択して続行します。
 5. 必要に応じて、次のユーザー プロパティを指定できます。
   - **プロファイル** - **役職**や**部署**などの仕事情報
   -  **グループ** - ユーザーに追加するグループを選択します
@@ -67,7 +66,7 @@ ms.lasthandoff: 02/01/2018
 
   **[作成]** を選択し、新しいユーザーを Intune に追加します。
 6. **[プロファイル]** を選択し、新しいユーザーの **[利用場所]** を選択します。 新しいユーザーに Intune ライセンスを割り当てるには利用場所が必要です。 **[保存]** を選択して続行します。
-    ![Office 365 管理のスクリーンショット](media/intune-add-user-loc.png)
+    ![使用場所のスクリーンショット](media/intune-add-user-loc.png)
 7. **[ライセンス]** を選択し、**[割り当て]** を選択してこのユーザーの Intune ライセンスを割り当てます。 デバイスを登録したり、会社のリソースにアクセスしたりするには、Intune ライセンスが必要です。 **[製品]** を選択し、ライセンスの種類を選択し、**[選択]** を選択し、**[割り当て]** を選択します。
 
 ## <a name="grant-admin-permissions"></a>管理者アクセス許可を与える
@@ -78,17 +77,20 @@ Intune サブスクリプションにユーザーを追加した後で、ごく�
 1. グローバル管理者アカウントで [Office 365 ポータル](https://www.office.com/signin)にサインインします。
 2. Office 365 メニューで、**[管理者]** を選択します。
 3. 管理センターで、**[アクティブなユーザー]** を選び、管理者アクセス許可を付与するユーザーを選びます。
+
 4. **[ロール]** 列で **[編集]** を選びます。
-  ![Office 365 のロール割り当て画面のスクリーンショット](./media/office-assign-roles-open.png)
+
+    ![管理者ユーザーのスクリーンショット](./media/office-assign-roles-open.png)
+
 5. 利用可能なロールの一覧から付与する管理者アクセス許可を選びます。
-![Office 365 ポータルのロール割り当ての画像。](./media/office-assign-roles.png)
+![ロール割り当てのスクリーンショット](./media/office-assign-roles.png)
 6. **[保存]** を選びます。
 
 ### <a name="give-admin-permissions-in-the-azure-portal"></a>Azure Portal で管理者アクセス許可を付与する
 1. グローバル管理者アカウントで [Azure Portal](https://www.office.com/signin) にサインインします。
 2. Azure Portal で **[ユーザー]** を選び、管理者アクセス許可を付与するユーザーを選びます。
 3. **[ディレクトリ ロール]** を選び、アクセス許可を選びます。
-  ![スクリーンショット](./media/add-intune-directory-role.png)
+  ![ディレクトリ ロールのスクリーンショット](./media/add-intune-directory-role.png)
 4. **[保存]** を選びます。
 
 ### <a name="types-of-administrators"></a>管理者の種類
@@ -102,7 +104,7 @@ Intune サブスクリプションにユーザーを追加した後で、ごく�
 - **ユーザー管理者** - (Office 365 と Intune) パスワードの再設定、サービスの正常性の監視、ユーザー アカウントの追加と削除、サービス要求の管理を行います。 ユーザー管理の管理者は、グローバル管理者の削除、他の管理者ロールの作成、または他の管理者のパスワードの再設定を行うことはできません。
 - **Intune サービス管理者** - **[ディレクトリ ロール]** オプションで管理者を作成するアクセス許可を除く、すべての Intune グローバル管理者アクセス許可。
 
-Microsoft Intune サブスクリプションの作成に使うアカウントはグローバル管理者です。 ベスト プラクティスとして、グローバル管理者を日常の管理タスクに使用しないでください。 管理者は、Intune のライセンスがなくても Azure Portal の Intune にアクセスすることはできますが、Exchange サービス コネクタの設定など、特定の管理タスクを行うには、Intune のライセンスが必要です。 
+Microsoft Intune サブスクリプションの作成に使うアカウントはグローバル管理者です。 ベスト プラクティスとして、グローバル管理者を日常の管理タスクに使用しないでください。 管理者は、Intune のライセンスがなくても Azure Portal の Intune にアクセスすることはできますが、Exchange サービス コネクタの設定など、特定の管理タスクを行うには、Intune のライセンスが必要です。
 
 Office 365 ポータルにアクセスするには、アカウントに**サインインが許可されている**必要があります。 Azure Portal の **[プロファイル]** で、**[サインインのブロック]** を **[いいえ]** に設定し、アクセスを許可します。 これは、サブスクリプションのライセンスを与えられていることとは別です。 既定では、すべてのユーザー アカウントは、"**許可済み**" の状態です。 管理者権限を持たないユーザーは、Office 365 ポータルを使って、Intune パスワードをリセットすることができます。
 

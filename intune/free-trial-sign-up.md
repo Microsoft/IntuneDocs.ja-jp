@@ -1,10 +1,10 @@
 ---
 title: "Microsoft Intune の 30 日間無料試用版にサインアップする"
-titleSuffix: Azure portal
-description: "Intune の 30 日間無料試用版にサインアップする方法"
+titleSuffix: Microsoft Intune
+description: "Microsoft Intune の 30 日間無料試用版にサインアップする方法について説明します。"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 03/04/2018
 ms.topic: get-started-article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 08fa759515d437e40a751ce39b3ef617dd92e83f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 389981fc207371d64064872235fc9babde6b3f6a
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Microsoft Intune の無料試用版にサインアップ
 
@@ -30,11 +30,15 @@ ms.lasthandoff: 03/08/2018
 
 * IT 運用チームやユーザーの大半が自分と異なるロケールに属している場合は、そのロケールを **[Where's your company located? (会社の所在地はどこですか?)]** で選択することをお勧めします。
 
-2. サインアップ プロセスの最後に、新しいアカウントの情報を含むメッセージが表示されます。 <br/> ![アカウント情報の画像](./media/2-end-of-sign-up-process.png) <br/>この時点で **[You're ready to go]\(準備完了\)** をクリックすると、Office 365 管理センターが表示されるので、そこでテスト環境にユーザーを追加できます。 <br/><br/>ただし、Intune Azure Portal に直接アクセスしたい場合は、新しいブラウザー ウィンドウを開き、アドレス バーに「**https://portal.azure.com**」と入力します。 Azure サインイン ページが表示されるので、提供されている資格情報を使用してサインインします。 Intune 試用版にサインインする際は常にこのアドレスを使用してください。 <br/> ![Azure Portal のサインイン ページの画像](./media/azure-portal-signin.png)
+2. サインアップ プロセスの最後に、新しいアカウントの情報を含むメッセージが表示されます。 <br/> 
+
+![アカウント情報の画像](./media/2-end-of-sign-up-process.png) <br/>
+
+この時点で **[You're ready to go]\(準備完了\)** をクリックすると、Office 365 管理センターが表示されるので、そこでテスト環境にユーザーを追加できます。 <br/><br/>ただし、Intune Azure Portal に直接アクセスしたい場合は、新しいブラウザー ウィンドウを開き、アドレス バーに「**https://portal.azure.com**」と入力します。 Azure サインイン ページが表示されるので、提供されている資格情報を使用してサインインします。 Intune 試用版にサインインする際は常にこのアドレスを使用してください。 <br/> ![Azure Portal のサインイン ページの画像](./media/azure-portal-signin.png)
 
 Intune [Azure Portal](https://portal.azure.com) に初めてサインオンすると、Azure ダッシュボードに Intune が表示されないことがあります。 Intune サービスを Azure ダッシュボードに追加するには:
 1. ダッシュボードの左にある Azure サービスの一覧で **[すべてのサービス >]** を選択し、検索ボックスに「**Intune**」と入力します。
-2. 一覧から **[Intune]** を選択し、星を選択してサービスの一覧にサービスを追加します。<br/> ![サービス一覧から Intune を選択する画像](./media/azure-add-intune1.png)
+2. 一覧から **[Intune]** を選択し、星を選択してサービスの一覧にサービスを追加します。<br/> ![Azure Portal で Microsoft Intune を選択する画像](./media/azure-add-intune1.png)
 3. サービス一覧から **[Intune]** を選択し、Intune ダッシュボードを開きます。
 
 試用版にサインアップすると、アカウント情報の記載された電子メール メッセージが、サインアップ プロセス中に指定した電子メール アドレスに送信されます。 このメールで、試用版がアクティブになったことが確認されます。
