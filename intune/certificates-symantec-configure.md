@@ -1,25 +1,25 @@
 ---
-title: "Intune を使用して Symantec PKCS 証明書を発行する"
-titlesuffix: Azure portal
-description: "Intune Certificate Connector をインストールし、Intune 管理対象デバイスに、Symantec PKI Manager Web サービスから PKCS 証明書を発行するように構成する"
-keywords: 
-author: MicrosoftGuyJFlo
-ms.author: joflore
+title: Microsoft Intune を使用して Symantec PKCS 証明書を発行する
+titlesuffix: ''
+description: Intune Certificate Connector をインストールし、Intune 管理対象デバイスに、Symantec PKI Manager Web サービスから PKCS 証明書を発行するように構成します。
+keywords: ''
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
-ms.reviewer: 
+ms.technology: ''
+ms.assetid: ''
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f2d37a9033464381de5c23a558d0205f85fe56a
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1fbb0ccd21ff15cf86656d7badf08002f1e42bb3
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Intune Certificate Connector を Symantec PKI Manager Web サービス向けに設定する
 
@@ -167,7 +167,7 @@ Microsoft CA 用および Symantec CA 用に Intune Certificate Connector を使
 既存の Microsoft CA 用に最新の Intune Certificate Connector を既に使用しており Symantec CA サポートを追加する場合、この手順はスキップします。 それ以外の場合は、Intune の管理ポータルから最新の Intune Certificate Connector をインストールし、次の手順に実行します。
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
 4. **[デバイス構成]** ウィンドウで **[証明機関]** を選択します。
 5. **[追加]** をクリックして、**[Download the Connector file]\(コネクタ ファイルをダウンロードします\)** を選択します。 インストールするサーバーからアクセスできる場所にダウンロードしたものを保存します。 

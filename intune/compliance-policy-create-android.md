@@ -1,25 +1,25 @@
 ---
-title: "Microsoft Intune で Android デバイスのコンプライアンス ポリシーを作成する"
-titleSuffix: 
-description: "デバイスが準拠するために満たす必要のある要件を指定できるように、Android デバイスの Microsoft Intune デバイス コンプライアンス ポリシーを作成します。"
-keywords: 
+title: Microsoft Intune で Android デバイスのコンプライアンス ポリシーを作成する
+titleSuffix: ''
+description: デバイスが準拠するために満たす必要のある要件を指定できるように、Android デバイスの Microsoft Intune デバイス コンプライアンス ポリシーを作成します。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 283685629ac1e268a66d82250273a17f9baa5d17
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 2539ff1703809f5f89183a9d0cfd448f2e57fd64
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Intune で Android デバイス用のデバイス コンプライアンス ポリシーを作成する方法
 
@@ -31,7 +31,7 @@ Android の Intune デバイス コンプライアンス ポリシーでは、�
 ## <a name="to-create-a-device-compliance-policy"></a>デバイス コンプライアンス ポリシーを作成するには
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 1. **[Intune]** ウィンドウで、**[デバイスのポリシー準拠]** を選択します。 **[管理]** で **[ポリシー]** を選択し、**[ポリシーの作成]** を選択します。
 3. **[Settings Configure]\(設定の構成\)** を選択して、**[システム セキュリティ]**、**[デバイスの正常性]**、**[デバイスのプロパティ]** の設定を指定します。 終了したら、**[OK]** を選択します。
 
@@ -70,8 +70,6 @@ Android の Intune デバイス コンプライアンス ポリシーでは、�
   - **[低]**: 存在する脅威が低レベルの場合のみ、デバイスは準拠として評価されます。 低レベルより高い脅威が存在する場合、デバイスは非準拠状態になります。
   - **[中]**: デバイスに存在する脅威が低レベルまたは中レベルの場合、デバイスは準拠として評価されます。 デバイスで高レベルの脅威が検出された場合は、非準拠と判定されます。
   - **[High]** (高): 最も安全性の低い状態です。 基本的に、すべての脅威レベルが許容されます。 レポート目的でこのソリューションを利用する場合であれば、便利かもしれません。
-
-詳細については、「[コンプライアンス ポリシーでデバイスの脅威防御ルールを有効にする](https://docs.microsoft.com/intune-classic/deploy-use/enable-device-threat-protection-rule-in-compliance-policy)」を参照してください。
 
 ## <a name="system-security-settings"></a>システム セキュリティ設定
 
