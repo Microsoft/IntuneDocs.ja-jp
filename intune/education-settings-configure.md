@@ -1,25 +1,25 @@
 ---
-title: "Windows 10 用に Intune 教育設定を構成する"
-titleSuffix: Azure portal
-description: "Intune を使用して、管理対象デバイスで Windows 10 の教育設定を構成する方法について説明します。\""
-keywords: 
+title: Windows 10 用に Intune 教育設定を構成する
+titleSuffix: Microsoft Intune
+description: Intune を使用して、管理対象デバイスで Windows 10 の教育設定を構成する方法について説明します。
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
 ms.date: 02/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18987c65c7ad0443c8bf3dc268284306cf64080d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6fa631cfb799fe02aee935f524a4012f381973d8
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Microsoft Intune で Windows 10 教育設定を構成する方法
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 03/08/2018
 ## <a name="create-a-device-profile-containing-education-profile-settings"></a>教育プロファイル設定を含むデバイス プロファイルの作成
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ウィンドウの **[管理]** セクションで、**[プロファイル]** を選択します。
 3. [プロファイル] ウィンドウで **[プロファイルの作成]** を選択します。

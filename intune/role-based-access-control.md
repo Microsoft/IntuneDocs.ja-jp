@@ -1,27 +1,26 @@
 ---
-title: "Intune での RBAC"
-titleSuffix: Azure portal
-description: "Intune Azure プレビュー: RBAC を使用して、アクションを実行できるユーザーや変更できるユーザーを制御する方法について説明します。"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Microsoft Intune での RBAC
+description: ロールベースのアクセス制御 (RBAC) を使用して、アクションを実行したり変更を加えたりできるユーザーを Microsoft Intune で制御する方法について説明します。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c19a3b8a6df82780d54f277d5477b947f050b1cc
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: edf17d98bb733f7567a615eec856fb7122ba251b
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="role-based-administration-control-rbac-with-intune"></a>Intune でのロール ベースの管理制御 (RBAC)
+# <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Microsoft Intune でのロール ベースの管理制御 (RBAC)
 
 RBAC を使用して、組織内で Intune のさまざまなタスクを実行できるユーザーと、それらのタスクが適用されるユーザーを制御できます。 一般的な Intune シナリオを対象とする組み込みロールを使用するか、独自のロールを作成することができます。 ロールは、次によって定義されます。
 
