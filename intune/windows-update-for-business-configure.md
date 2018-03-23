@@ -1,23 +1,23 @@
 ---
-title: "Intune でのビジネス設定向けの Windows Update の構成"
-titleSuffix: Azure portal
-description: "Intune でビジネス向けの Windows Update を構成して、Windows 10 デバイスの更新を制御します。\""
-keywords: 
+title: Microsoft Intune でのビジネス設定に向けた Windows Update の構成
+titleSuffix: ''
+description: Microsoft Intune でビジネス向けの Windows Update を構成して、Windows 10 デバイスの更新を制御します。
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: d6ccda2aba0b1383de6c38b7a2fdcfdc742d0e15
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ac26d0ac1855aa32ef0f00de6a4056bd57c07528
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="manage-software-updates"></a>ソフトウェア更新プログラムの管理
 
@@ -72,7 +72,7 @@ Windows Update for Business を使用することで、デバイスのグルー�
 ## <a name="how-to-create-and-assign-update-rings"></a>更新プログラム リングを作成して割り当てる方法
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[ソフトウェア更新プログラム]** を選択します。
 4. **[ソフトウェア更新プログラム]** ウィンドウで、**[管理]** > **[Windows 10 更新プログラムのリング]** の順に選択します。
 5. 更新プログラム リングの一覧が表示されたウィンドウで、**[作成]** を選択します。
@@ -110,7 +110,7 @@ Windows Update for Business を使用することで、デバイスのグルー�
 <!-- 1352223 -->
 ポリシー レポートを確認して、構成した Windows 10 更新プログラム リングの展開状態を表示します。 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[ソフトウェア更新プログラム]** を選択します。
 4. **[ソフトウェア更新プログラム]** ウィンドウで、**[概要]** を選択します。 ここで、割り当てたすべての更新プログラム リングの状態に関する一般的な情報を表示することができます。
 5. 次のレポートのいずれかを開きます。 
@@ -130,7 +130,7 @@ Windows 10 更新プログラム ロールアウトを監視するには、更�
 
 Intune コンソールで、カスタム ポリシーの OMA-URI 設定を使用して商用 ID を構成できます。 詳しくは、「[Microsoft Intune での Windows 10 デバイス向けの Intune ポリシー設定](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)」を参照してください。   
 
-商用 ID を構成するための OMA-URI (大文字と小文字を区別する) パスは次のとおりです。./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
+商用 ID を構成するための OMA-URI (大文字と小文字を区別する) パスは次のとおりです。 ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
 
 たとえば、**[OMA-URI 設定の追加または編集]** で次の値を使用できます。
 
@@ -140,12 +140,12 @@ Intune コンソールで、カスタム ポリシーの OMA-URI 設定を使用
 - **データ型**: 文字列
 - **値**: <*OMS ワークスペースの Windows 利用統計情報に示された GUID を使用*>>
 
-![診断と使用状況データの Windows 設定](./media/commID.png)
+![OMA-URI 設定 - 行の追加](./media/commID.png)
 
 ## <a name="how-to-pause-updates"></a>更新プログラムを一時停止する方法
 更新プログラムを一時停止したときから最大 35 日間、機能更新プログラムまたは品質更新プログラムのデバイスでの受け取りを一時停止することができます。 最大日数が経過すると、一時停止機能の有効期限が自動的に切れ、デバイスによる Windows Update の該当する更新プログラムのスキャンが開始されます。 このスキャン後に、もう一度更新プログラムを一時停止することもできます。
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[ソフトウェア更新プログラム]** を選択します。
 4. **[ソフトウェア更新プログラム]** ウィンドウで、**[管理]** > **[Windows 10 更新プログラムのリング]** の順に選択します。
 5. 更新プログラム リングの一覧が表示されたウィンドウで、一時停止するリングを選択し、一時停止する更新プログラムの種類に応じて、**[...]** > **[品質更新プログラムの一時停止]** または **[機能更新プログラムの一時停止]** を選択します。
