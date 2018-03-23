@@ -1,25 +1,25 @@
 ---
-title: "初期エディション"
-description: 
-keywords: 
+title: 初期エディション
+description: ''
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9a2c104200518af31fd05e6b8abe853377767aa9
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: e91745abb7c3409b31724101b3071157407acec9
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---march-2018"></a>Microsoft Intune の初期エディション - 2018 年 3 月
 
@@ -147,6 +147,33 @@ Android アプリのベスト プラクティスに合うように、Android 用
 
 Android 用 Intune ポータル サイト アプリを、Android の[マテリアル デザイン](https://material.io/) ガイドラインに合わせて更新しています。 アプリのリリース時には、[アプリ UI の最新情報](whats-new-app-ui.md)に関するページに新しいアイコンの画像が公開されます。 
 
+### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Edge モバイルでの Intune アプリ保護ポリシーのサポート <!-- 1817882 -->
+
+モバイル デバイス向けの Microsoft Edge ブラウザーで、Intune で定義されるアプリ保護ポリシーがサポートされます。
+
+### <a name="use-fully-distinguished-name-as-subject-for-scep-certificate---2221763-eeready--"></a>SCEP 証明書のサブジェクトとして完全な識別名を使用する <!--2221763 eeready-->
+SCEP 証明書プロファイルを作成するときには、サブジェクト名を入力します。 サブジェクト名として、完全な識別名を使用できるようになります。 **サブジェクト名**に対して **[カスタム]** を選択し、`CN={{OnPrem_Distinguished_Name}}` と入力します。 `{{OnPrem_Distinguished_Name}}` 変数を使用するには、[Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) を使用して、`onpremisesdistingishedname` ユーザー属性を Azure AD と同期させます。 
+
+### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837-eeready--"></a>iOS デバイスで 15 分ごとに PIN の入力を求める <!--1550837 eeready-->
+iOS デバイスにコンプライアンスまたは構成ポリシーが適用されると、ユーザーは 15 分ごとに PIN を設定するように求められます。 PIN を設定するまで継続してユーザーは入力を求められます。
+
+### <a name="enable-bluetooth-contact-sharing---android-for-work---1098983-eeready--"></a>Bluetooth での連絡先の共有の有効化 - Android for Work <!--1098983 eeready-->
+Android の既定では、仕事用プロファイルの連絡先が Bluetooth デバイスと同期することはできません。 その結果、Bluetooth デバイスに対して、仕事用プロファイルの連絡先が発信者 ID に表示されません。
+
+**[Android for Work]** > **[デバイスの制限]** > **[仕事用プロファイルの設定]** に、次の新しい設定が表示されます。
+- Bluetooth 経由での連絡先の共有
+
+Intune の管理者は、これらの設定を構成して共有を有効にできます。 これは、デバイスを、ハンズフリー使用のために発信者 ID を表示する、車を拠点とする Bluetooth デバイスとペアリングする場合に便利です。 有効にすると、仕事用プロファイルの連絡先が表示されます。 無効にすると、仕事用プロファイルの連絡先は表示されません。
+
+適用対象: Android OS v6.0 以降の Android 仕事用プロファイル デバイス。
+
+### <a name="schedule-your-automatic-updates---1805514---"></a>自動更新スケジュールの設定 <!--1805514 -->
+
+Intune では、[Windows Update リングの設定](windows-update-for-business-configure.md)を使用して、自動更新のインストールを制御することができます。 週、日、時刻などを指定して、繰り返し更新が発生するようスケジュールすることができます。 
+
+### <a name="disable-checks-on-device-restart---1805490---"></a>デバイス再起動時のチェックの無効化 <!--1805490 -->
+
+Intune によって[ソフトウェア更新プログラムの管理](windows-update-for-business-configure.md)を制御することができます。 **再起動チェック** プロパティが追加され、既定で有効になります。 デバイスを再起動する際に発生する一般的なチェック (アクティブなユーザー、バッテリのレベルなど) をスキップするには、**[スキップ]** を選択します。 
 
 <!-- 1802 start -->
 
@@ -160,7 +187,7 @@ Intune ポータル サイト アプリのテーマの色を、16 進コード�
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Endpoint Protection の設定に追加された新しい Windows Defender Credential Guard の設定<!--1102252 --> 
 
-新しい [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard) の設定が、**[デバイス構成]** > **[プロファイル]** > **[Endpoint Protection]** に追加されます。 次の設定が追加されます。 
+新しい [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] 設定が、**[デバイス構成]** > **[プロファイル]** > **[Endpoint Protection]** に追加されます。 次の設定が追加されます。 
 
 - プラットフォームのセキュリティ レベル: 次の再起動時にプラットフォームのセキュリティ レベルを有効にするかどうかを指定します。 仮想化ベースのセキュリティには、セキュア ブートが必要です。 仮想化ベースのセキュリティは、ダイレクト メモリ アクセス (DMA) 保護を使って、必要に応じて有効にすることができます。 DMA 保護は、ハードウェアのサポートを必要とし、正しく構成されたデバイスでのみ有効にされます。
 - 仮想化ベースのセキュリティ: 次の再起動時に仮想化ベースのセキュリティを有効にするかどうかを指定します。 
@@ -185,29 +212,6 @@ Intune ポータル サイト アプリのテーマの色を、16 進コード�
 
 ### <a name="ios-app-provisioning-configuration----1581650---"></a>iOS アプリのプロビジョニングの構成 <!-- 1581650 -->
 iOS アプリにプロビジョニング プロファイルを割り当てて、セキュリティ グループを包含または除外することで、アプリが期限切れにならないようにすることができます。
-
-### <a name="new-windows-defender-exploit-guard-settings----631893---"></a>Windows Defender Exploit Guard の新しい設定 <!-- 631893 -->
-
-**[攻撃の回避]** の 6 つの新しい設定と、拡張された **[フォルダー アクセスの制御: フォルダーの保護]** 機能を利用できます。 これらの設定は、[デバイス構成] > [プロファイル] > 
-[プロファイルの作成] > [Endpoint Protection] > [Windows Defender Exploit Guard] にあります。
-
-#### <a name="attack-surface-reduction"></a>攻撃の回避
-
-|設定の名前  |設定オプション  |説明  |
-|---------|---------|---------|
-|Advanced ransomware protection (高度なランサムウェア防止)|有効、監査、未構成|積極的なランサムウェア防止を使います。|
-|Flag credential stealing from the Windows local security authority subsystem (Windows ローカル セキュリティ機関サブシステムからの資格情報の盗難にフラグを設定する)|有効、監査、未構成|Windows ローカル セキュリティ機関サブシステム (lsass.exe) からの資格情報の盗難にフラグを設定します。|
-|Process creation from PSExec and WMI commands (PSExec および WMI コマンドからのプロセス作成)|ブロック、監査、未構成|PSExec および WMI コマンドから開始されるプロセス作成をブロックします。|
-|Untrusted and unsigned processes that run from USB (USB から実行された信頼されていない署名なしのプロセス)|ブロック、監査、未構成|USB から実行された信頼されていない署名なしのプロセスをブロックします。|
-|Executables that don’t meet a prevalence, age, or trusted list criteria (普及、経過時間、または信頼されたリストの条件を満たしていない実行可能ファイル)|ブロック、監査、未構成|普及、経過時間、または信頼されたリストの条件を満たしていない実行可能ファイルの実行をブロックします。|
-
-#### <a name="controlled-folder-access"></a>フォルダー アクセスの制御
-
-|設定の名前  |設定オプション  |説明  |
-|---------|---------|---------|
-|フォルダーの保護 (実装済み)|未構成、有効、監査のみ (実装済み)<br><br> **新規**<br>Block disk modification (ディスクの変更をブロックする)、Audit disk modification (ディスクの変更を監査する)|
-ファイルおよびフォルダーを、悪意のあるアプリによる未承認の変更から保護します。<br><br>**有効**: 信頼されていないアプリによる、保護されたフォルダー内のファイルの変更または削除、およびディスク セクターへの書き込みを、禁止します。<br><br>
-**Block disk modification only (ディスクの変更のみをブロック)**:<br>信頼されていないアプリによるディスク セクターへの書き込みをブロックします。 信頼されていないアプリは、保護されたフォルダー内のファイルを変更または削除することはできます。
 
 ### <a name="new-windows-defender-application-guard-settings----1631890---"></a>Windows Defender Application Guard の新しい設定 <!-- 1631890 -->
 
