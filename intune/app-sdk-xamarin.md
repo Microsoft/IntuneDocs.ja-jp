@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune App SDK Xamarin コンポーネント"
-description: "Intune App SDK Xamarin コンポーネントを利用すると、Xamarin でビルドされた iOS アプリと Android アプリで Intune アプリ保護ポリシーが有効になります。"
+title: Microsoft Intune App SDK Xamarin コンポーネント
+description: Intune App SDK Xamarin コンポーネントを利用すると、Xamarin でビルドされた iOS アプリと Android アプリで Intune アプリ保護ポリシーが有効になります。
 keywords: sdk, Xamarin, intune
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 03/02/2018
+ms.date: 03/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9fa0d471f91eeeebd0058417aa437e5469f48e09
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: b69cccca8c8be859de94ca8bdb50d6030439233a
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Microsoft Intune App SDK Xamarin コンポーネント
 
@@ -58,29 +58,20 @@ Intune App SDK Xamarin コンポーネントで開発された Xamarin アプリ
 
 ## <a name="get-started"></a>作業開始
 
-1.  **Xamarin-component.exe** を[ここ](https://components.xamarin.com/submit/xpkg)からダウンロードし、抽出します。
+1. Microsoft Intune MAM Xamarin コンポーネントの[ライセンス条項](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf)を読みます。
 
-2. Microsoft Intune MAM Xamarin コンポーネントの[ライセンス条項](https://components.xamarin.com/license/microsoft.intune.mam)を読みます。
-
-3.  [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) または [Nuget.org](https://www.nuget.org/profiles/msintuneappsdk) から Intune App SDK Xamarin コンポーネント フォルダーをダウンロードし、抽出します。 手順 1 と手順 3 でダウンロードしたファイルを両方とも同じディレクトリ レベルに配置する必要があります。
-
-4.  監理者として起動したコマンド ラインで、`mono Xamarin.Component.exe install <.xam> file` を実行します。
-
-5.  Visual Studio で、前に作成した Xamarin プロジェクトの**コンポーネント**を右クリックします。
-
-6.  **[コンポーネントの編集]** を選択し、コンピューターにローカル ダウンロードした Intune App SDK コンポーネントを追加します。
-
-
+2.  [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) から、Intune App SDK Xamarin Component NuGet パッケージをダウンロードします。 これらのパッケージは、間もなく Nuget.org で入手できるようになる予定です。  
 
 ## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>iOS モバイル アプリで Intune アプリ保護ポリシーを有効にする
-1.  iOS モバイル アプリに Intune App SDK を統合するのに必要な、一般的な手順に従います。 [iOS 用 Intune App SDK 開発者ガイド](app-sdk-ios.md#build-the-sdk-into-your-mobile-app)にある統合の手順 (手順 3) から開始できます。
+1. 自分の Xamarin.iOS プロジェクトに `Microsoft.Intune.MAM.Xamarin.iOS` NuGet パッケージを追加します。
+2.  iOS モバイル アプリに Intune App SDK を統合するのに必要な、一般的な手順に従います。 [iOS 用 Intune App SDK 開発者ガイド](app-sdk-ios.md#build-the-sdk-into-your-mobile-app)にある統合の手順 (手順 3) から開始できます。 IntuneMAMConfigurator を実行するセクションの最後の手順は、省略できます。このツールは Microsoft.Intune.MAM.Xamarin.iOS パッケージに含まれており、ビルド時に自動的に実行されるからです。
     **重要**: Visual Studio と Xcode とでは、アプリのキーチェーンの共有を有効にする方法が少し異なります。 アプリの Entitlements plist を開き、[キーチェーンを有効にする] オプションが有効になっていることと、適切なキーチェーンの共有グループがそのセクションに追加されていることを確認します。 次に、すべての構成およびプラットフォームの適切な組み合わせに対して、プロジェクトの [iOS バンドル署名] オプションの [カスタム エンタイトルメント] フィールドに、その Entitlements plist が指定されていることを確認します。
-2.  コンポーネントが追加され、アプリが正しく構成されると、お使いのアプリで Intune SDK の API を使用できるようになります。 これを行うには、次の名前空間を含める必要があります。
+3.  コンポーネントが追加され、アプリが正しく構成されると、お使いのアプリで Intune SDK の API を使用できるようになります。 これを行うには、次の名前空間を含める必要があります。
 
       ```csharp
       using Microsoft.Intune.MAM;
       ```
-3.    アプリ保護ポリシーを受信するには、Intune MAM サービスにアプリを登録する必要があります。 お使いのアプリで、Azure Active Directory 認証ライブラリ (ADAL) を使用したユーザー認証を既に行っている場合、認証が成功した後に IntuneMAMEnrollmentManager の registerAndEnrollAccount メソッドに対して、ユーザーの UPN を渡す必要があります。
+4. アプリ保護ポリシーを受信するには、Intune MAM サービスにアプリを登録する必要があります。 お使いのアプリで、Azure Active Directory 認証ライブラリ (ADAL) を使用したユーザー認証を既に行っている場合、認証が成功した後に IntuneMAMEnrollmentManager の registerAndEnrollAccount メソッドに対して、ユーザーの UPN を渡す必要があります。
       ```csharp
       IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
       ```
@@ -92,16 +83,17 @@ Intune App SDK Xamarin コンポーネントで開発された Xamarin アプリ
       ```
 
 ## <a name="enabling-app-protection-policies-in-your-android-mobile-app"></a>Android モバイル アプリでアプリ保護ポリシーを有効にする
+自分の Xamarin.Android プロジェクトに `Microsoft.Intune.MAM.Xamarin.Android` NuGet パッケージを追加します。
+
 UI フレームワークを利用しない Xamarin 基盤の Android アプリの場合、「[Android 用 Intune アプリ SDK 開発者ガイド](app-sdk-android.md)」をお読みいただき、それに沿う必要があります。 Xamarin 基盤の Android アプリの場合、ガイドに含まれる[表](app-sdk-android.md#replace-classes-methods-and-activities-with-their-mam-equivalent)に基づき、クラス、メソッド、アクティビティを MAM のそれらと置換する必要があります。 アプリで `android.app.Application` クラスが定義されない場合、それを作成し、`MAMApplication` から継承するように設定する必要があります。
 
 Xamarin Forms とその他の UI フレームワークの場合、「`MAM.Remapper`」と呼ばれているツールがあります。 このツールは、ユーザーに代わってクラス置換を実行します。 ただし、次の手順を実行する必要があります。
 
-1.  `Microsoft.Intune.MAM.Remapper.Tasks` NuGet パッケージ バージョン 0.1.0.0 以降の参照を追加します。
+1.  `Microsoft.Intune.MAM.Remapper.Tasks` NuGet パッケージを追加します。
 
-2.  Android csproj に次の行を追加します。
+2.  Android csproj に次の行を追加します ("x.x.x.x" は実際のパッケージのバージョンに置き換えます)。
   ```xml
-  <Import
-  Project="$(NugetPack)\\Microsoft.Intune.MAM.Remapper.Tasks.0.1.X.X\\build\\MonoAndroid10\\Microsoft.Intune.MAM.Remapper.targets" />
+ <Import Project="$(NugetPack)\\Microsoft.Intune.MAM.Remapper.Tasks.x.x.x.x\\build\\MonoAndroid10\\Microsoft.Intune.MAM.Remapper.targets" />
   ```
 
 3.  追加した `remapping-config.json` ファイルのビルド アクションを **RemappingConfigFile** に設定します。 追加した `remapping-config.json` は、Xamarin.Forms とのみ連動します。 その他の UI フレームワークの場合、Remapper NuGet に付属する Readme を参照してください。

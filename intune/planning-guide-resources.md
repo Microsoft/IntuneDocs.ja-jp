@@ -1,23 +1,24 @@
 ---
-title: "Intune 展開の計画と設計のためのテンプレートとリソース"
-description: "Intune の展開計画と実装プロセス時に役立つ可能性がある、計画テンプレートと Intune に関する追加情報へのリンク。"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Intune 展開の計画と設計のためのテンプレートとリソース
+titlesuffix: Microsoft Intune
+description: テンプレートの計画と、Microsoft Intune の展開の計画および実装の処理中に役立つと思われる Intune のその他の情報へのリンク。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 8a5a819fc8d081330be60e8b83944e326baaba2b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67476afbd00cf54162b316e6c38967bccbed34ad
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Intune の展開計画に関するその他のリソース
 
@@ -50,7 +51,7 @@ ms.lasthandoff: 01/25/2018
 
 -   [Intune のブログ](https://blogs.technet.microsoft.com/enterprisemobility/) - Intune が大規模な Enterprise Mobility に適合する仕組みを理解するのに役立つ投稿です。
 
--   [Microsoft Trust Center](http://www.microsoft.com/TrustCenter/default.aspx) - すべての Microsoft クラウド製品とサービスにおける、セキュリティ、プライバシー、コンプライアンス、透明度についての Microsoft のアプローチを理解できます。
+-   [Microsoft Trust Center](http://www.microsoft.com/TrustCenter) - すべての Microsoft クラウド製品とサービスにおける、セキュリティ、プライバシー、コンプライアンス、透明度についての Microsoft のアプローチを理解できます。
 
 -   [Intune User Voice](http://microsoftintune.uservoice.com/) - 機能をリクエストしたり、他のお客様とともに機能に投票したりすることにご興味をお持ちですか? User Voice で Intune に関するフィードバックをご提供ください。 ご意見をお待ちしています。
 

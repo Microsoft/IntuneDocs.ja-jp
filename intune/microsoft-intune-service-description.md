@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune サービスの説明"
-description: "Intune は、クラウドベースのサービスであり、Windows、iOS、Mac OS X、Android、および Windows Mobile デバイスを管理するのに便利です。"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Microsoft Intune サービスの説明
+description: Microsoft Intune は、クラウドベースのサービスであり、Windows、iOS、Mac OS X、Android、および Windows Mobile デバイスを管理するのに便利です。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f4671f643f9806945043adcb9279c7bc95d8efe2
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 7b9c3965d99e0058ae0236e1efc3daa840aebc6c
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune サービスの説明
 
@@ -33,7 +33,7 @@ Intune は ID とアクセス制御のために Azure Active Directory (Azure AD
 Intune でデバイス、アプリ、企業データを管理し、保護する方法については、[Intune 文書](https://docs.microsoft.com/intune/)をご覧ください。
 
 ## <a name="30-day-free-trial"></a>30 日間の無料評価版
-Intune は、100 ユーザー ライセンスを含む 30 日間の無料試用版で使用することができます。 無料試用版を開始する場合は、[Intune のサインアップ ページ](https://www.microsoft.com/server-cloud/products/microsoft-intune/)にアクセスしてください。 お客様の組織が Enterprise Agreement または同等のボリューム ライセンス契約を結んでいる場合は、Microsoft 担当者に連絡して無料試用版の設定を依頼してください。
+Intune は、100 ユーザー ライセンスを含む 30 日間の無料試用版で使用することができます。 無料試用版を開始する場合は、[Intune のサインアップ ページ](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)にアクセスしてください。 お客様の組織が Enterprise Agreement または同等のボリューム ライセンス契約を結んでいる場合は、Microsoft 担当者に連絡して無料試用版の設定を依頼してください。
 
 > [!NOTE]
 > お客様の組織が Microsoft Online Services の職場や学校用アカウントをお持ちで、試用期間の終了後に Intune サブスクリプションを本番環境で継続して使用する場合、ページで **[サインイン]** オプションを選択し、組織のグローバル管理者アカウントを使用して認証を受けてください。 こうすることで、Intune 試用版が既存の職場や学校用アカウントと関連付けられます。

@@ -1,25 +1,25 @@
 ---
-title: "Intune データ ウェアハウスを使用する"
+title: Intune データ ウェアハウスを使用する
 titlesuffix: Microsoft Intune
-description: "Intune データ ウェアハウスを使用して、社内のモバイル環境を分析できるレポートを構築します。"
-keywords: "Intune データ ウェアハウス"
+description: Intune データ ウェアハウスを使用して、社内のモバイル環境を分析できるレポートを構築します。
+keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: dd90c9d51fe212b0675da4d6039a535be0ff3c89
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 328d8b3787bcef20a1d4949eba427cd8737edafe
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="use-the-intune-data-warehouse"></a>Intune データ ウェアハウスを使用する
 
@@ -37,7 +37,7 @@ Intune データ ウェアハウスを使用して、社内のモバイル環境
   -  OData 標準を使用するデータ モデル
 
 > [!Note]
-> System Center Configuration Manager と Microsoft Intune でハイブリッド モバイル デバイス管理 (MDM) を使用している場合は、SCCM からデータを取得することができます。 Intune データが含まれるのは Intune データ ウェアハウスのみです。 カスタム レポートには SCCM Power BI ダッシュボードを使用できます。 詳細については、「[Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)」(System Center Configuration Manager 用 Power BI ソリューション テンプレートの発表) と 「[Create a Power BI report and dashboard](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/create-powerbi-report-dashboard)」(Power BI レポートとダッシュボードの作成) を参照してください。
+> System Center Configuration Manager と Microsoft Intune でハイブリッド モバイル デバイス管理 (MDM) を使用している場合は、SCCM からデータを取得することができます。 Intune データが含まれるのは Intune データ ウェアハウスのみです。 カスタム レポートには SCCM Power BI ダッシュボードを使用できます。 詳細については、「[Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)」(System Center Configuration Manager 用 Power BI ソリューション テンプレートの発表) と [Dynamics 365 の Power BI コンテンツ](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)に関するページを参照してください。
 
 
 > [!Important]  

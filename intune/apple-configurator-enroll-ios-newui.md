@@ -1,25 +1,25 @@
 ---
-title: "iOS デバイスの登録 - Apple Configurator - セットアップ アシスタント"
-titlesuffix: Azure portal
-description: "Apple Configurator を使用して、セットアップ アシスタント (新しい UI)で会社所有の iOS デバイスを登録する方法について説明します。"
-keywords: 
+title: iOS デバイスの登録 - Apple Configurator - セットアップ アシスタント
+titleSuffix: Microsoft Intune
+description: Apple Configurator を使用して、セットアップ アシスタント (新しい UI) で会社所有の iOS デバイスを登録する方法について説明します。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 186b021079224260e9ffe0f5c2c5a38f513c9f33
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 96889cfeb3b66fa988a14143cb560eb714d749c9
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Apple Configurator による iOS デバイスの登録
 

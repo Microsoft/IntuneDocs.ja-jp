@@ -1,24 +1,25 @@
 ---
-title: "Intune データ ウェアハウス API エンドポイント | Microsoft Docs"
-description: "リファレンス トピックでは API URL 構造について説明します。"
-keywords: "Intune データ ウェアハウス"
+title: Intune データ ウェアハウス API エンドポイント
+titlesuffix: Microsoft Intune
+description: リファレンス トピックでは Intune データ ウェアハウス API URL 構造について説明します。
+keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f6aec4741e5be788f4c1fbab929afd38e2fe07e7
-ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
+ms.openlocfilehash: b09622db88288ccc5b4866cb71ba902d969c0487
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune データ ウェアハウス API エンドポイント
 

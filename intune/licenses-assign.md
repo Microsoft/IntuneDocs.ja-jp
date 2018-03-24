@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune ライセンスを割り当てる"
-description: "Intune に登録できるようにライセンスをユーザーに割り当てる"
-keywords: 
+title: Microsoft Intune ライセンスを割り当てる
+description: Intune に登録できるようにライセンスをユーザーに割り当てる
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 45baadb24ac646a6456e04c85a701842774c7930
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 67d12c748c5f4daabcb64eff7a154455b39a57d0
+ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Intune にデバイスを登録できるようにライセンスをユーザーに割り当てる
 
@@ -58,6 +58,17 @@ SDS について詳しくは、「[School Data Sync と Classroom の概要](htt
 * ユーザー ソフトウェア ライセンスが割り当てられた各**ユーザー**は、オンライン サービスと関連するソフトウェア (System Center ソフトウェアを含む) にアクセスしてそれらを使用し、複数のアプリケーションと最大 15 台のデバイスを管理できます。
 * デバイス ソフトウェア ライセンスが割り当てられた各**デバイス**は、オンライン サービスと関連するソフトウェア (System Center ソフトウェアを含む) にアクセスしてそれらを使用することができます。使用するユーザー数に制限はありません。
 * デバイスが 2 人以上のユーザーによって使用される場合は、各デバイスにデバイス ソフトウェア ライセンス、またはすべてのユーザーにユーザー ソフトウェア ライセンスが必要です。
+
+## <a name="understanding-the-type-of-licenses-you-have-purchased"></a>購入したライセンスの種類について
+
+Intune の購入方法により、サブスクリプション情報が決まります。
+
+- Enterprise Agreement を通じて Intune を購入された場合は、ボリューム ライセンス ポータルの **[サブスクリプション]** で、ご自分のサブスクリプション情報を見つけることができます。
+- クラウド ソリューション プロバイダーを通じて Intune を購入された場合は、販売店に確認してください。
+- CC # または請求書で Intune を購入された場合、ライセンスはユーザー ベースになります。
+
+
+
 
 ## <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>PowerShell を使用して、EMS ユーザー ライセンスを選択的に管理する
 Microsoft Enterprise Mobility + Security (旧 Enterprise Mobility Suite) を使用している組織には、EMS パッケージの Azure Active Directory Premium または Intune サービスのみを必要とするユーザーがいる可能性があります。 [Azure Active Directory PowerShell コマンドレット](https://msdn.microsoft.com/library/jj151815.aspx)を使用して、いずれかのサービスまたはサービスのサブセットを割り当てることができます。

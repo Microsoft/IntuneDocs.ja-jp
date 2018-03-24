@@ -1,23 +1,23 @@
 ---
-title: "Microsoft Intune を使用して Windows Holographic を管理する"
-titleSuffix: Azure portal
-description: "Windows Holographic for Business を実行するデバイスを Microsoft Intune がサポートする方法を説明します"
-keywords: 
+title: Microsoft Intune を使用して Windows Holographic を管理する
+titleSuffix: ''
+description: Windows Holographic for Business を実行するデバイスを Microsoft Intune がサポートする方法を説明します。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 2/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: af54655c73967d15ad67d308cb6447c36af58fd8
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 6fd39b0a9a03d77a54ac71c47c5df67e9beacd9d
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="manage-devices-running-windows-holographic-with-microsoft-intune"></a>Microsoft Intune を使用して Windows Holographic を実行するデバイスを管理する
 

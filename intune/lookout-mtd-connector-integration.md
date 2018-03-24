@@ -1,25 +1,25 @@
 ---
-title: "Microsoft Intune との Lookout 統合を設定する"
-titlesuffix: 
-description: "モバイル デバイスから会社のリソースへのアクセスを制御するための Intune と Lookout Mobile Threat Defense の統合について説明します。"
-keywords: 
+title: Microsoft Intune との Lookout 統合を設定する
+titlesuffix: ''
+description: モバイル デバイスから会社のリソースへのアクセスを制御するための Intune と Lookout Mobile Threat Defense の統合について説明します。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ffd55a82af4f7fdc8d8df7cab818c59def74109
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8b1b7d9ef1a7dce0b5a139f3b8acb85ab7d11d4c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune との Lookout Mobile Threat Defense 統合を設定する
 
@@ -72,8 +72,6 @@ Lookout を Intune に統合するために、Lookout Mobility Endpoint Security
 2.  Lookout コンソールに初めてログインする場合、グローバル管理者の Azure AD ロールを持つユーザー アカウントを使用し、Azure AD テナントを登録する必要があります。 以降のサインインにこのレベルの Azure AD 特権は必要ありません。 同意ページが表示されます。 **[同意]** を選んで登録を完了します。 承諾して同意すると、Lookout コンソールが自動的に表示されます。
 
     ![Lookout コンソールの初回ログイン ページのスクリーンショット](./media/lookout_mtp_initial_login.png)
-    > [!NOTE] 
-    > ログインで問題が発生した場合は、「[Lookout と Intune の統合に関するトラブルシューティング](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration)」を参照してください。
 
 3.  [Lookout コンソール](https://aad.lookout.com)で **[System]** (システム) モジュールから **[Connectors]\** (コネクタ) タブを選択し、**[Intune]** を選択します。
 

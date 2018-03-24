@@ -1,25 +1,26 @@
 ---
-title: "Intune 移行中にデバイス コンプライアンス ポリシーとアプリ管理ポリシーを構成する"
-description: "この記事では、Intune 移行中にデバイスのコンプライアンス ポリシーとアプリ管理ポリシーを構成するために必要な手順について説明します。"
-keywords: 
-author: andredm7
-ms.author: andredm
+title: Intune 移行中にデバイス コンプライアンス ポリシーとアプリ管理ポリシーを構成する
+titlesuffix: Microsoft Intune
+description: この記事では、Microsoft Intune 移行中にデバイスのコンプライアンス ポリシーとアプリ管理ポリシーを構成するために必要な手順について説明します。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/11/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 96541c503a387e1a2ad3a4158f441266f1202be0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 13a9c0a036eb6ce6ea7e984419c9598194b35b68
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="configure-device-compliance-and-app-management-policies"></a>デバイス コンプライアンス ポリシーとアプリ管理ポリシーを構成する
+# <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Microsoft Intune への移行時にデバイス コンプライアンス ポリシーとアプリ管理ポリシーを構成する
 
 Intune 移行時の主な目標は、すべてのデバイスが Intune に登録されてポリシーに準拠することです。 デバイス ポリシーは企業が所有する単一ユーザーのデバイスの管理だけでなく、個人用 (BYOD) デバイスや共有デバイス (キオスク、店頭端末機器、教室で複数の学生が共有するタブレットなど)、またユーザーレス デバイス (iOS のみ) の管理に役立ちます。
 

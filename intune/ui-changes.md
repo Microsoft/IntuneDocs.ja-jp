@@ -1,25 +1,25 @@
 ---
-title: "Azure での Intune の機能の移動先"
-titlesuffix: Azure portal
-description: "Azure Portal で Intune の機能がどこにあるかを確認できます。"
-keywords: 
-author: dagerrit
-ms.author: dagerrit
+title: Azure での Intune の機能の移動先
+titleSuffix: Microsoft Intune
+description: Azure Portal で Microsoft Intune の機能がどこにあるかを確認できます。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 1/4/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
+ms.technology: ''
+ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d15659e78c3b47753e9ef87a99d16ef1687ecf22
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 00f45d9a126e76c45712c6483b458f935e6d0021
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Azure での Intune の機能の移動先
 Intune から Azure Portal に移行する際に、いくつかのタスクがより論理的に整理されました。 しかし、このような改善を行えば、新しい構成を学ばなければなりません。 このリファレンス ガイドは、従来のポータルを使用した Intune の知識があり、Intune で行われていた内容を Azure Portal ではどのように実行されるのかについて関心があるユーザーに向けて作成しました。 この記事にお探しの機能が記載されていない場合は、今後更新できるように記事の最後にコメントを残してください。

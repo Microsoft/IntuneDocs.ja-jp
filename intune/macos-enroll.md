@@ -1,25 +1,25 @@
 ---
-title: "macOS デバイスの登録をセットアップする"
+title: macOS デバイスの登録をセットアップする
 titlesuffix: Microsoft Intune
-description: "Intune で macOS デバイスの登録をセットアップする方法について説明します。"
-keywords: 
+description: Intune で macOS デバイスの登録をセットアップする方法について説明します。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/30/2017
+ms.date: 03/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 77a1551321079765f00f0e35d57211ae4c99e5a6
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c1fb846dc65ee14315edf7b9ba15e0e24998a3a2
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Intune で macOS デバイスの登録をセットアップする
 
@@ -53,9 +53,20 @@ macOS デバイスの登録をブロックする場合は、「[Set device type 
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>デバイスを登録して会社のリソースにアクセスする方法をユーザーに知らせる
 
-エンド ユーザーに対して、[ポータル Web サイト](http://portal.manage.microsoft.com)に移動し、画面の指示に従ってデバイスを登録するように指示してください。 オンライン登録の手順 (「[Intune に macOS デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)」) へのリンクを送信することもできます。
+エンド ユーザーに対して、[ポータル Web サイト](https://portal.manage.microsoft.com)に移動し、画面の指示に従ってデバイスを登録するように指示してください。 オンライン登録の手順 (「[Intune に macOS デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)」) へのリンクを送信することもできます。
 
 その他のエンドユーザー タスクの詳細については、次の記事を参照してください。
 
 - [Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](end-user-educate.md)
 - [macOS デバイスを Intune で使用する](/intune-user-help/using-your-macos-device-with-intune)
+
+## <a name="enroll-virtual-macos-machines-for-testing"></a>テスト用に仮想 macOS マシンを登録する
+
+> [!NOTE]
+> macOS 仮想マシンは、テスト目的でのみサポートされます。 macOS 仮想マシンをエンドユーザーの実稼働デバイスとして使用しないでください。 
+
+テスト目的の macOS 仮想マシンは、Parallels Desktop または VMware Fusion のいずれかを使用して登録することができます。 
+
+Parallels Desktop の場合、Intune が認識できるように、ハードウェアの種類と仮想マシンのシリアル番号を設定する必要があります。 [ハードウェアの種類の設定](http://kb.parallels.com/123594)と[シリアル番号](http://kb.parallels.com/123455)に関する Parallels の指示に従って、テストに必要な設定を設定します。 仮想マシンを実行しているデバイスのハードウェアの種類と、作成している仮想マシンのハードウェアの種類とを一致させることをお勧めします。 このハードウェアの種類は、**[アップル メニュー]** > **[この Mac について]** > **[システム レポート]** > **[機種 ID]** で調べることができます。 
+
+VMware Fusion の場合、[.vmx ファイルを編集して](https://kb.vmware.com/s/article/1014782)、仮想マシンのハードウェア モデルとシリアル番号を設定する必要があります。 仮想マシンを実行しているデバイスのハードウェアの種類と、作成している仮想マシンのハードウェアの種類とを一致させることをお勧めします。 このハードウェアの種類は、**[アップル メニュー]** > **[この Mac について]** > **[システム レポート]** > **[機種 ID]** で調べることができます。 

@@ -1,29 +1,30 @@
 ---
-title: "Intune モバイル デバイス管理の移行ガイド"
-description: "このガイドは、サードパーティの MDM プロバイダーからの Microsoft Intune への移行に関連したさまざまな詳細情報を説明します。"
-keywords: 
-author: andredm7
-ms.author: andredm
+title: Intune モバイル デバイス管理の移行ガイド
+titlesuffix: Microsoft Intune
+description: このガイドは、サードパーティの MDM プロバイダーからの Microsoft Intune への移行に関連したさまざまな詳細情報を説明します。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/11/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 888624530fe77f22ea9391b688fa9f9b92f0ac75
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9bfefff2ef5960b6e52a8a37c2fd31466d16cbff
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intune-migration-guide"></a>Intune 移行ガイド
 
-![Intune MDM 移行ガイド図](./media/MDM-migration-guide-art.PNG)
+![Microsoft Intune MDM 移行ガイド図](./media/MDM-migration-guide-art.PNG)
 
-Intune への移行を成功させるには、まず現在のモバイル デバイス管理 (MDM) 環境、ビジネスの目標、および技術面の要件を考慮した、しっかりした計画を立てる必要があります。 また、移行計画を支援し協力する関係者を確保することも重要です。
+Microsoft Intune への移行を成功させるには、まず現在のモバイル デバイス管理 (MDM) 環境、ビジネスの目標、および技術面の要件を考慮した、しっかりした計画を立てる必要があります。 また、移行計画を支援し協力する関係者を含めることも重要です。
 
 このガイドは、サードパーティの MDM プロバイダーからの Intune への移行に関連したさまざまな詳細情報を説明します。
 

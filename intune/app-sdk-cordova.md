@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune App SDK Cordova プラグイン"
-description: 
+title: Microsoft Intune App SDK Cordova プラグイン
+description: 開発者が Intune App SDK Cordova プラグインを利用すると、Intune のアプリとデータの保護機能を Cordova 基盤のアプリに統合できます。
 keywords: sdk, Cordova, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/02/2018
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d42f8418e2f277dca0fbb2f01248f5a815606cb6
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 84ff217361108ac3518567f31af8943d0b3032fe
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova プラグイン
 
@@ -32,7 +32,7 @@ iOS アプリおよび Android アプリの [Intune App SDK Cordova プラグイ
 > [!NOTE]
 > 最初に、[Intune アプリ SDK の概要](app-sdk-get-started.md)に関する記事に目を通すことをお勧めします。このガイドでは、サポートする各プラットフォームで統合のための準備をする方法について説明しています。
 
-SDK の機能は、アプリの動作を変更せずに有効にできます。 iOS または Android アプリにプラグインを組み込むと、Microsoft Intune 管理者は Intune アプリの保護ポリシーを展開できるようになります。保護ポリシーは多様なデータ保護機能で構成されます。 このプラグインは、Cordova ビルド プロセスで多くの手順が自動的に実行されるように開発されました。 そのため、アプリの保護をすぐに有効にすることができます。 最初に、対象プラットフォームに基づき、下の手順を実行します。
+SDK の機能は、アプリの動作を変更せずに有効にできます。 iOS または Android アプリにプラグインを組み込むと、Microsoft Intune 管理者は Intune アプリの保護ポリシーを展開できるようになります。保護ポリシーは多様なデータ保護機能で構成されます。 このプラグインは、Cordova ビルド プロセスで多くの手順が自動的に実行されるように開発されました。 そのため、アプリの保護をすぐに有効にすることができます。 最初に、お使いのターゲット プラットフォームに基づき、次の手順を実行します。
 
 ## <a name="supported-platforms"></a>サポートされるプラットフォーム
 
@@ -118,7 +118,7 @@ $ cordova run --nobuild
 
 使用できる書式については、「[Cordova gradle signing information](https://cordova.apache.org/docs/en/latest/guide/platforms/android/#using-gradle)」(Cordova gradle の署名情報) を参照してください。
 
-現在、Cordova ビルドへのパラメーターを使用して、`build.json` で署名情報または任意の場所情報を提供する機能をサポートしていません。
+Intune では現在、Cordova ビルドへのパラメーターを使用して、`build.json` で署名情報または任意の場所情報を提供する機能をサポートしていません。
 
 ## <a name="debugging-from-visual-studio"></a>Visual Studio からデバッグする
 
@@ -129,8 +129,8 @@ $ cordova run --nobuild
 ### <a name="android"></a>Android
 
 * MultiDex のサポートが不完全です。
-* アプリには 14 以上の `minSdkVersion`、および 24 以下の `targetSdkVersion` が必要です。 現在、API 25 をターゲットとするアプリはサポートしてません。
-* V2 署名方式で署名されたアプリに再署名することはできません。 V2 で署名されたアプリをプラグインでラップすると、ラップされた出力の .apk は署名なしになります。
+* アプリには 14 以上の `minSdkVersion`、および 24 以下の `targetSdkVersion` が必要です。 Intune では現在、API 25 をターゲットとするアプリはサポートしていません。
+* Intune では、V2 署名方式で署名されたアプリに再署名することはできません。 V2 で署名されたアプリをプラグインでラップすると、ラップされた出力の .apk は署名なしになります。
 *
   * Cordova の既定の V2 署名を無効にするには、以下を `build-extras.gradle` ファイルに追加します。
 
@@ -157,6 +157,6 @@ $ cordova run --nobuild
 
 ### <a name="ios"></a>iOS
 
-* **Info.plist** ファイルの **CFBundleDocumentTypes** ノードの下で UTI の一覧を変更した場合、再構築する前に、同じ plist ファイル (**UTImportedTypeDeclarations** node) のインポートされた UTI セクションで Intune UTI を消去する必要があります。 Intune UTI はすべてプレフィックス `com.microsoft.intune.mam` で始める必要があります。
+* **Info.plist** ファイルの **CFBundleDocumentTypes** ノードの下で UTI の一覧を変更した場合、再構築する前に、同じ plist ファイル (**UTImportedTypeDeclarations** ノード) のインポートされた UTI セクションで Intune UTI を消去する必要があります。 Intune UTI はすべてプレフィックス `com.microsoft.intune.mam` で始める必要があります。
 
 * Cordova プロジェクトから Cordova 用 Intune App SDK プラグインを削除する場合、iOS プラットフォームも削除し、もう一度追加し、.xcodeproj ファイルと .plist ファイルで一部の Intune 設定を元に戻す必要があります。

@@ -1,30 +1,31 @@
 ---
-title: "Intune の計画と設計の概要"
-description: "この記事では、Intune の計画、設計および実装に関するすべてのセクションの概要を示します。 目標、ユース ケースのシナリオと要件の決定、ロールアウト計画とコミュニケーション計画、サポート、テスト、検証の計画の作成に役立つツールです。"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Intune の計画と設計の概要
+titlesuffix: Microsoft Intune
+description: この記事では、Microsoft Intune の計画、設計および実装に関するすべてのセクションの概要を示します。 目標、ユース ケースのシナリオと要件の決定、ロールアウト計画とコミュニケーション計画、サポート、テスト、検証の計画の作成に役立つツールです。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 962ec376b7f2e30ad857ce69e24124c5d482cda0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 074490428b52effbc4a555a63d997a47da55546e
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Intune の展開計画、設計および実装ガイド
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
-Intune を正常に展開するには、まず、適切に計画し、設計する必要があります。 このガイドの目的は、展開計画の作成、設計の作成、Intune のオンボーディング、および運用環境へのロールアウトの実施プロセスを段階的に説明することです。
+Microsoft Intune を正常に展開するには、まず、適切に計画し、設計する必要があります。 このガイドの目的は、展開計画の作成、設計の作成、Intune のオンボーディング、および運用環境へのロールアウトの実施プロセスを段階的に説明することです。
 
 ## <a name="whats-included-in-this-guide"></a>このガイドに含まれるもの
 
