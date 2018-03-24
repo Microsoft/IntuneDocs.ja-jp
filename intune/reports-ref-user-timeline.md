@@ -1,34 +1,35 @@
 ---
-title: "データ ウェアハウスのユーザー エンティティ タイムライン | Microsoft Docs"
-description: "Intune のデータ ウェアハウスは、タイムライン内のユーザーを表します。"
-keywords: "Intune データ ウェアハウス"
+title: データ ウェアハウスのユーザー エンティティ タイムライン
+titlesuffix: Microsoft Intune
+description: Intune データ ウェアハウスがタイムライン内のユーザーを表す方法について説明します。
+keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 363D148E-688F-4830-B6DE-AB4FE3648817
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e72f60b9ad604f756f74b1ba7cbbde7e5c2ab9f8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7448954fce2b81c5783845c9fbdaaebf43fdf326
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="user-lifetime-representation-in-the-intune-data-warehouse"></a>Intune データ ウェアハウスのユーザー有効期間の表記
+# <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Microsoft Intune データ ウェアハウスのユーザー有効期間の表記
 
 時間ベースの傾向に関する疑問の答えを知るには、Intune データ ウェアハウスに格納されたデータ スナップショットの月を使用することができます。 たとえば、1 か月の間に追加されるユーザーの数を確認できます。 システムから削除されたユーザーの数を知ることもできます。
 
-この情報を提供するために、データ ウェアハウスには履歴情報が格納されています。 すなわち、エンティティの有効期間を追跡することができます。 ウェアハウスでは、エンティティが作成された時、エンティティの状態が変更された時、エンティティが削除された時が記録されます。 毎日の定量的測定のスナップショットでキャプチャされた履歴を使用して、ある 1 日をその前日と比較したりできます。
+この種類の情報を提供するために、データ ウェアハウスには履歴情報が格納されています。 データ ウェアハウスは、エンティティの有効期間を追跡できます。 ウェアハウスでは、エンティティが作成された時、エンティティの状態が変更された時、エンティティが削除された時が記録されます。 毎日の定量的測定のスナップショットでキャプチャされた履歴を使用して、ある 1 日をその前日と比較したりできます。
 
 エンティティの状態は変わっていくため、エンティティの有効期間の取り扱いは複雑になる場合があります。 つまり、30 日目のスナップショットを参照する場合、ユーザー レコードがデータ内でアクティブな状態で存在していない可能性があります。 28 日目と 29 日目には、エンティティ レコードはアクティブで存在している可能性があります。 そして 28 日目より前には、ユーザーはまったく存在していませんでした。
 
-エンティティの有効期間の説明では、このことがわかりやすくなります。
+エンティティの有効期間をウォーク スルーすると、このシナリオがわかりやすくなります。
 
 2017 年 6 月 1 日にライセンスを割り当てられる **John Smith** というユーザーがいるとすると、**ユーザー** テーブルには次のエントリが表示されます。 
  

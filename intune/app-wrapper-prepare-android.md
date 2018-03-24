@@ -1,24 +1,24 @@
 ---
-title: "Intune アプリ ラッピング ツールで Android アプリをラップする"
-description: "アプリ自体のコードを変更することなく、Android アプリをラップする方法について説明します。 モバイル アプリ管理ポリシーを適用できるように、アプリを準備します。"
-keywords: 
+title: Intune アプリ ラッピング ツールで Android アプリをラップする
+description: アプリ自体のコードを変更することなく、Android アプリをラップする方法について説明します。 モバイル アプリ管理ポリシーを適用できるように、アプリを準備します。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/05/2018
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 33774f1326f961e6072197d46e9eb64f121739c9
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: de63fe9476e4fa0f3f85343659538856f2f841d8
+ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために Android アプリを準備する
 
@@ -30,8 +30,6 @@ Android 用 Microsoft Intune アプリ ラッピング ツールを使用して�
 
 
 このツールを実行する前に、「[アプリ ラッピング ツールを実行するうえでのセキュリティ上の考慮事項](#security-considerations-for-running-the-app-wrapping-tool)」を確認してください。 このツールをダウンロードするには、GitHub の「[Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android)」 (Android 用 Microsoft Intune アプリ ラッピング ツール) にアクセスしてください。
-
-
 
 ## <a name="fulfill-the-prerequisites-for-using-the-app-wrapping-tool"></a>ラッピング ツールを使用するための前提条件を満たす
 
@@ -51,6 +49,8 @@ Android 用 Microsoft Intune アプリ ラッピング ツールを使用して�
     > 場合によっては、32 ビット バージョンの Java を使用すると、メモリに関連した問題が発生する可能性があります。 64 ビット バージョンをインストールすることをお勧めします。
 
 - Android では、すべてのアプリ パッケージ (.apk) が署名されている必要があります。 既存の証明書の**再利用**と署名証明書の全体的なガイダンスについては、「[署名証明書とラッピング アプリの再利用](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)」を参照してください。 ラッピングされた出力アプリへの署名に必要な**新しい**資格情報を生成するには、Java の実行可能ファイル keytool.exe を使います。 設定するパスワードはすべて安全である必要がありますが、後でアプリ ラッピング ツールを実行するときに必要になるので記録しておきます。
+
+- (省略可能) 入力アプリ内で Multidex を有効にします。 ラッピング中に追加される Intune MAM SDK クラスにより、アプリが Dalvik Executable (DEX) サイズの上限に達する場合があります。 DEX ファイルは、Android アプリのコンパイルの一部です。 このシナリオでは、アプリの内部で Multidex を有効にするのがベスト プラクティスです。 特定の組織では、アプリをコンパイルするユーザー (例: アプリのビルド チーム) と共同作業する必要がある場合があります。 
 
 ## <a name="install-the-app-wrapping-tool"></a>アプリ ラッピング ツールをインストールする
 
@@ -159,6 +159,7 @@ Android では、Android デバイスにインストールするために、す�
 これらの手順は、エンド ユーザー デバイスで使用するために Intune アプリ保護ポリシーが必要なすべての Android および Xamarin アプリ向けです。
 
 1. [Android 用 Intune SDK ガイド](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)のセクションで定義されている手順を使用して ADAL を構成します。
+
 > [!NOTE] 
 > アプリに関連付けられている "クライアント ID" という用語は、アプリに関連付けられている Azure Portal の用語 "アプリケーション ID" と同じです。 
 * SSO を有効にするには、「ADAL の一般的な構成」の 2. が必要です。

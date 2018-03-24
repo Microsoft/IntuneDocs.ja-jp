@@ -1,25 +1,26 @@
 ---
-title: "条件付きアクセスを利用してエンド ユーザーの導入を推進する"
-description: "この記事では、条件付きアクセスを利用して Intune 登録を推進する方法を詳しく説明します。"
-keywords: 
-author: andredm7
-ms.author: andredm
+title: 条件付きアクセスを利用してエンド ユーザーの導入を推進する
+titlesuffix: Microsoft Intune
+description: Microsoft Intune でドライブ登録への条件付きアクセスを使用する方法について説明します。
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 06/12/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 180cecde31627192363bb00f58fb13f7ec123744
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 31e2a79e5506666cc5ebe655536600b57a429802
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="drive-end-user-adoption-with-conditional-access"></a>条件付きアクセスを利用してエンド ユーザーの導入を推進する
+# <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Microsoft Intune で条件付きアクセスでエンド ユーザーの導入を推進する
 
 Intune で条件付きアクセス機能を有効にする (未登録のデバイスの電子メールをブロックするなど) ことにより、登録とコンプライアンスを推進できますが、移行の成功において必須ではありません。 移行の成功は、移行導入の目標とセキュリティ要件によって決まります。
 

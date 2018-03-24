@@ -1,35 +1,30 @@
 ---
-title: "Intune とエンド ユーザー アプリの UI の更新"
-description: "Intune を使用したエンド ユーザー デバイスで動作するアプリの UI の変更点について説明します。"
-keywords: 
+title: Intune とエンド ユーザー アプリの UI の更新
+titlesuffix: Microsoft Intune
+description: Microsoft Intune を使用したエンド ユーザー デバイスで動作するアプリの UI の変更点について説明します。
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 01/18/2018
+ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9f39c908e6de55c0668f507c3d7eed9545deba82
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 753b3a345dc84bee80921fd0c7994dfac79a3df6
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune とエンド ユーザー アプリの UI の更新
-このリリースの Microsoft Intune でエンド ユーザーに表示されるアプリの UI に加えられた変更について説明します。 これは、ユーザーとの通信や、展開のサポートのために作成したカスタム ドキュメントの更新に役立ちます。 会社のポータルを使用してヘルプデスクにサポートを求める場合に、直面している問題のトラブルシューティングをより適切に行う方法を理解するのにも役立ちます。
+このリリースの Microsoft Intune でエンド ユーザーに表示されるアプリの UI に加えられた変更について説明します。 これらの更新を理解すると、ユーザーとの通信や、展開のサポートのために作成したカスタム ドキュメントの更新に役立ちます。 会社のポータルを使用してヘルプデスクにサポートを求める場合に、直面している問題のトラブルシューティングをより適切に行う方法を理解するのにも役立ちます。
 
-## <a name="week-of-december-11-2017"></a>2017 年 12 月 11 日の週
-
-### <a name="end-user-messaging-for-accounts---1573558-1712-changes-to-be-made-for-other-platforms-for-1801--"></a>アカウントに関するエンド ユーザーへのメッセージング<!--1573558, 1712; changes to be made for other platforms for 1801-->
-
-ポータル サイトの Web サイト ユーザーによる、テナントへの書き込みアクセスを必要とする操作はブロックされます。 対象ユーザーには、使用アカウントがメンテナンス中であることを示すエラー メッセージが表示されます。 Android、iOS、macOS、Windows 向けのポータル サイト アプリにも、同様の変更がまもなく適用されます。
-
-![アカウントの移動時に発生するエラー メッセージ](./media/account-move-rom-iwp-user-1712.png)
+<!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
 ## <a name="week-of-november-27-2017"></a>2017 年 11 月 27 日の週
 
@@ -183,13 +178,13 @@ Android 用のポータル サイト アプリのアプリの詳細ページに�
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>すべてのプラットフォームでのポータル サイト アプリのサインイン操作の改善<!--User Story 1132123-->
 
-Android、iOS、Windows での Intune ポータル サイト アプリのサインイン エクスペリエンス向上のために、今後数か月間に予定されている変更についてお知らせします。 Azure AD でこの変更が行われ次第、自動的にすべてのプラットフォームでポータル サイト アプリのユーザー エクスペリエンスが一新される予定です。 また、自動生成される一時使用コードを使用して、別のデバイスからポータル サイトにサインインできるようになりました。 この機能は、資格情報を使用せずにサインインする必要がある場合には特に便利です。  
+Android、iOS、Windows 用の Intune ポータル サイト アプリのサインイン エクスペリエンス向上のために、今後数か月間に予定されている変更についてお知らせします。 Azure AD でこの変更が行われ次第、自動的にすべてのプラットフォームでポータル サイト アプリのユーザー エクスペリエンスが一新される予定です。 また、自動生成される一時使用コードを使用して、別のデバイスからポータル サイトにサインインできるようになりました。 これは、資格情報を使用せずにサインインする必要がある場合には特に便利です。  
 
 以下に、従来のサインイン、資格情報を使用した新たなサインイン、別のデバイスからのサインインをそれぞれ以下に示します。
 
 __従来のサインイン エクスペリエンス__
 
-![Web サイトのイメージ図の前にユーザーのアイコンが表示されたポータル サイトのサインイン ページ。 アイコンの下に [サインイン] ボタンが表示されています。 下部にあるリンクから Microsoft のプライバシーと Cookie に関する情報にアクセスできます。](./media/cp_ios_aad_signin_before_1704_001.png)
+![Web サイトのイメージ図の前にユーザーのアイコンが表示されたポータル サイトのサインイン ページ。 その下に [サインイン] ボタンが表示されています。 下部にあるリンクから Microsoft のプライバシーと Cookie に関する情報にアクセスできます。](./media/cp_ios_aad_signin_before_1704_001.png)
 
 ![[サインイン] をタップした後に、このページで資格情報を入力します。電子メールとパスワードが要求され、パスワードのエラーを解決する方法も提供されます。](./media/cp_ios_aad_signin_before_1704_002.png)
 
@@ -213,7 +208,7 @@ __[別のデバイスからサインインする]__ リンクをタップしま�
 
 ![会社のコンピューターから固有のパスワードで aka.ms/devicelogin ページにアクセスし、コードを使用してサインインするように指示されます。](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
-ブラウザーを起動して、[https://aka.ms/devicelogin](https://aka.ms/devicelogin) にアクセスします。
+ブラウザーを起動し、[https://aka.ms/devicelogin](https://aka.ms/devicelogin) に移動します。
 
 ![ポータル サイト アプリの画像ではなく会社のコンピューターのブラウザーの画像です。 [デバイス ログイン] ページが表示され、ポータル サイト アプリで取得したコードを入力するように要求されます。](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
@@ -229,7 +224,7 @@ __[別のデバイスからサインインする]__ リンクをタップしま�
 
 ## <a name="june-2017"></a>2017 年 6 月
 
-### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>Android 用ポータル サイト アプリのアプリ保護ポリシーの新しいエンド ユーザー エクスペリエンス <!--1305217-->
+### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies"></a>Android 用ポータル サイト アプリのアプリ保護ポリシーの新しいエンド ユーザー エクスペリエンス
 ユーザーのフィードバックに基づいて、Android 用ポータル サイト アプリに **[会社のコンテンツにアクセスする]** ボタンが表示されるようになりました。 このボタンの目的は、Intune モバイル アプリケーション管理の機能であるアプリ保護ポリシーをサポートするアプリにアクセスすることだけが必要なユーザーが、不要な登録プロセスを経なくて済むようにすることです。
 
 ユーザーはデバイスの登録を始める代わりに **[会社のコンテンツにアクセスする]** ボタンをタップします。
@@ -322,13 +317,13 @@ Android 用ポータル サイト アプリが更新されて、起動または�
    <table id="wrapper">
       <tr>
          <td>
-            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
+            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
           </td>
           <td>
-             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
+             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
            </td>
            <td>
-              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
+              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
            </td>
       </tr>
    </table>
@@ -382,11 +377,28 @@ __変更後__ ![変更後のバージョンの読み込み画面の画像。イ�
 > [!Note]
 > 次のイメージはプレビューであり、発表される製品は示されているバージョンとは異なる場合があることに注意してください。
 
+### <a name="ui-iwp"></a>ポータル Web サイトの新しいユーザー エクスペリエンスの更新<!--2000968-->
+
+UI を更新し、ワークフローの簡素化とユーザー補助機能を改善した、新しいポータル Web サイトのエクスペリエンスを 4 月に導入します。 これには、アプリ共有などのお客様の要望に基づいた機能拡張や、よりユーザー フレンドリなエクスペリエンスを提供するための全体的なパフォーマンスの向上などが含まれます。
+
+お客様からのフィードバックに基づいて、既存の機能と使いやすさを大幅に向上させる新しい機能もいくつか追加されています。
+
+-   Web サイト全体の UI の機能強化
+-   アプリへの直接リンクを共有する機能
+- 大規模なアプリケーション カタログのパフォーマンスの向上
+
+この変更の準備のために何かを行う必要はありません。 更新されたポータル Web サイトが利用可能になったら、お知らせいたします。 ただし、最終的には、更新されたスクリーンショットを使用して、エンド ユーザーのドキュメントを更新する必要があります。 また、Web サイトは iOS アプリの **[アプリ]** セクションに影響するため、iOS のポータル サイト アプリのドキュメントも更新する必要があることに注意してください。
+
+|更新済み|前へ|
+|---|---|
+|![更新済みのデバイス ページでは、デバイスが完全なリストの上にポップアップ表示されるのではなく、デバイス情報の上にきれいに配置されて表示されます。](./media/iwp-device-after-1803.png)|![以前のバージョンのデバイス ページ。](./media/iwp-device-before-1803.png)|
+|![更新されたアプリのインストール ページには、説明とさまざまなインストール情報 (発行日、バージョン、およびアプリの種類など) の上に、そのアプリがわかりやすく表示されます。](./media/iwp-app-install-after-1803.png)|![以前のバージョンのアプリのインストール ページ。](./media/iwp-app-install-before-1803.png)|
+
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>iOS 用ポータル サイト アプリに関するユーザー エクスペリエンスの更新プログラム <!--1412866-->
 
 iOS 用のポータル サイト アプリに対して、主要なユーザー エクスペリエンスの更新プログラムをリリースする予定です。 この更新プログラムは、新しいルック アンド フィール、使いやすさとアクセシビリティの向上を含め、ビジュアル デザインの刷新が特徴です。 現在の iOS ポータル サイト機能はすべて維持されます。
 
-お客様がフィードバックを使用および送信できるように、Apple TestFlight プログラムを使用して iOS 用の更新されたポータル サイト アプリのプレリリース バージョンを提供しています。 TestFlight にアクセスするには、https://aka.ms/intune_ios_cp_testflight にサインアップしてください。
+お客様がフィードバックを使用および送信できるように、Apple TestFlight プログラムを使用して iOS 用の更新されたポータル サイト アプリのプレリリース バージョンを提供しています。 https://aka.ms/intune_ios_cp_testflight にサインアップして、TestFlight にアクセスします。 この更新プログラムに関する最新情報については、https://aka.ms/iOS_companyportal_update を参照してください。
 
 ![新しい iOS ポータル サイト アプリのティーザー画像](./media/ios-cp-app-redesign-1801-teaser.png)
 
@@ -400,5 +412,5 @@ __おすすめアプリの更新__ サイトにおすすめとして選択した
 
 ### <a name="see-also"></a>関連項目
 * [Microsoft Intune のブログ](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [クラウド プラットフォームのロードマップ](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [クラウド プラットフォームのロードマップ](https://www.microsoft.com/cloud-platform/roadmap)
 * [Intune の新機能](https://docs.microsoft.com/intune/whats-new)

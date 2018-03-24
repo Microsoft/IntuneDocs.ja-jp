@@ -1,28 +1,28 @@
 ---
-title: "Intune で Office 365 アプリの基本的なデータ管理を設定する"
-titlesuffix: Azure portal
-description: "Office 365 アプリの管理ウィザードのサポート ドキュメント。\""
-keywords: 
+title: Microsoft Intune での Office 365 アプリのデータ管理
+titlesuffix: ''
+description: Microsoft Intune での Office 365 アプリのデータ管理について説明します。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 852612ac-f146-4372-a900-3f6fdebd05ad
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e12f5becc1f3c03af0ee6d1fab9cd7ee16f2a547
-ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
+ms.openlocfilehash: fa784d0b446e3de180ce47ec51d3440522966fad
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>管理対象の Office 365 アプリの基本的な保護に関するユーザー エクスペリエンス
+# <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Microsoft Intune での管理対象の Office 365 アプリの基本的な保護に関するユーザー エクスペリエンス
 
 **Manage Office 365 apps (Office 365 アプリの管理)** ウィザードでは、各デバイス プラットフォームのアプリ保護ポリシーを作成します。
 
@@ -46,30 +46,30 @@ ms.lasthandoff: 02/27/2018
 
 ## <a name="user-experience-on-an-ios-device"></a>iOS デバイスでのユーザー エクスペリエンス
 
-1. OneDrive for Business アプリを起動し、サインイン ページを開きます。  <br/> ![iOS の OneDrive サインイン画面の画像](./media/onedrive-ios-sign-in.png)
-2. 自分の作業アカウントのユーザー名を入力します。 Office 365 認証ページにリダイレクトされたら、作業用の資格情報を入力します。 <br/> ![Office 365 サインイン ページの画像](./media/o365-sign-in-ios.png)
-3. Azure Active Directory によって資格情報が正常に認証されると、アプリ保護ポリシーが適用され、OneDrive for Business アプリを再起動するように求められます。  <br/>![iOS の再起動を求めるメッセージの画像](./media/ios-restart-prompt.png)    
+1. OneDrive for Business アプリを起動し、サインイン ページを開きます。  
+2. 自分の作業アカウントのユーザー名を入力します。 Office 365 認証ページにリダイレクトされたら、作業用の資格情報を入力します。 
+3. Azure Active Directory によって資格情報が正常に認証されると、アプリ保護ポリシーが適用され、OneDrive for Business アプリを再起動するように求められます。 
+
   > [!NOTE]
   > 再起動を求めるメッセージは、Intune に登録されていないデバイスにのみ表示されます。
 
+4. OneDrive for Business アプリを再起動します。 アプリ保護ポリシーが有効になっている状態でアプリが起動すると、デバイスの PIN を設定するように求められます (デバイスで PIN をまだ構成していない場合)。  
 
-4. OneDrive for Business アプリを再起動します。 アプリ保護ポリシーが有効になっている状態でアプリが起動すると、デバイスの PIN を設定するように求められます (デバイスで PIN をまだ構成していない場合)。 <br/> ![PIN を作成するように求めるメッセージの画像](./media/pin-prompt-ios.png)    
   > [!NOTE]
   > ほとんどのユーザーには、このメッセージが表示されません。 iOS デバイスで PIN を有効にしていないユーザーにのみこのメッセージが表示されます。
 
-
-5. PIN を設定して確認すると、OneDrive for Business アプリに戻ります。 IT 管理者が OneDrive の仕事のデータを保護していることを伝える 1 回限りの通知が表示されます。 <br/> ![IT 管理者からの 1 回限りの通知の画像](./media/one-time-notice.png)
-6. この通知をクリックして、OneDrive for Business のファイルにアクセスします。 <br/> ![iOS デバイスでの OneDrive ファイルの画像](./media/onedrive-files-ios.png) <br/>
+5. PIN を設定して確認すると、OneDrive for Business アプリに戻ります。 IT 管理者が OneDrive の仕事のデータを保護していることを伝える 1 回限りの通知が表示されます。 
+6. この通知をクリックして、OneDrive for Business のファイルにアクセスします。 
 
 >[!NOTE]
 >展開済みのポリシーを変更すると、次回アプリを開いたときにその変更が適用されます。
-
 
 ## <a name="user-experience-on-an-android-device"></a>Android デバイスでのユーザー エクスペリエンス
 
 1. OneDrive for Business アプリを起動し、サインイン ページを開きます。  <br/> ![OneDrive アプリのようこそ画面の画像](./media/onedrive-android-welcome.png)
 2. 自分の作業アカウントのユーザー名を入力します。 Office 365 認証ページにリダイレクトされたら、作業用の資格情報を入力します。 <br/> ![Android での O365 サインインの画像](./media/o365-sign-in-android.png)
-3. Azure Active Directory によって資格情報が正常に認証されると、まだポータル サイト アプリがデバイスにインストールされていない場合はインストールするよう指示するメッセージが表示されます。 **[ストアにアクセス]** をタップして、続行します。 <br/> ![ポータル サイト アプリを入手する際のメッセージの画像](./media/get-company-portal-android.png) <br/>ポータル サイト アプリが電話に既にインストールされている場合は、OneDrive for Business アプリが自動的に起動し、文末脚注にスキップできます。    
+3. Azure Active Directory によって資格情報が正常に認証されると、まだポータル サイト アプリがデバイスにインストールされていない場合はインストールするよう指示するメッセージが表示されます。 **[ストアにアクセス]** をタップして、続行します。 <br/> ![ポータル サイト アプリを入手する際のメッセージの画像](./media/get-company-portal-android.png) <br/>ポータル サイト アプリが電話に既にインストールされている場合は、OneDrive for Business アプリが自動的に起動し、文末脚注にスキップできます。   
+
   > [!IMPORTANT]
   > Office アプリをアプリ保護ポリシーで管理するように設定すると、Android では、エンド ユーザーが電子メールやドキュメントを実際に読むのにポータル サイト アプリを開いたり、ポータル サイト アプリにサインインしたりする必要がない場合でも、デバイスのユーザーは会社のメールやドキュメントにアクセスするためにポータル サイト アプリをインストールする**必要があります**。
 
@@ -128,4 +128,4 @@ Android の場合、Intune アプリ保護ポリシーに関連付けられて�
 ![ポリシーを表示するユーザー インターフェイス パスの画像](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>次の手順
-アプリ保護ポリシーの詳細については、[こちら](app-protection-policy.md)を参照してください。
+- アプリ保護ポリシーの詳細については、[こちら](app-protection-policy.md)を参照してください。

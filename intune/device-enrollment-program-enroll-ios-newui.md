@@ -1,25 +1,25 @@
 ---
-title: "iOS デバイスの登録 - Device Enrollment Program"
-titlesuffix: Azure portal
-description: "Device Enrollment Program を使用して会社所有の iOS デバイスを登録する方法を説明します (新しい UI)。"
-keywords: 
+title: iOS デバイスの登録 - Device Enrollment Program
+titleSuffix: Microsoft Intune
+description: Device Enrollment Program を使用して会社所有の iOS デバイスを登録する方法を説明します (新しい UI)。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 48b74b81c9f3f8b9c936ae22a343ccfb565b4ec1
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 833f37808d7315de9d7e3782bae26bab67a2cde7
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する
 
@@ -87,7 +87,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 
 5. **[Add &lt;ServerName&gt;\(<サーバー名> の追加\)]** ダイアログ ボックスが開き、**[Upload Your Public Key\(公開キーをアップロードする\)]** と表示されます。 **[Choose File]** (ファイルを選択) をクリックして .pem ファイルをアップロードし、**[Next]** (次へ) を選択します。
 
-6. **[Deployment Programs](展開プログラム)** &gt; **[Device Enrollment Program]** &gt; **[Manage Devices](デバイスの管理)** の順に移動します。
+6. **[Deployment Programs] (展開プログラム)** &gt; **[Device Enrollment Program]** &gt; **[Manage Devices] (デバイスの管理)** の順に移動します。
 7. **[Choose Devices By\(デバイスの選択方法\)]** で、デバイスを識別する方法を指定します。
     - **Serial Number\(シリアル番号\)**
     - **Order Number\(注文番号\)**

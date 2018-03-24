@@ -1,25 +1,25 @@
 ---
-title: "モバイル デバイス管理機関の設定"
+title: モバイル デバイス管理機関の設定
 titlesuffix: Microsoft Intune
-description: "Intune でモバイル デバイス管理機関を設定します。"
-keywords: 
+description: Intune でモバイル デバイス管理機関を設定します。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d48a2cea096c1639cd3661521cd636454f3e0ba
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ce6464cc6aa67636743479e69ad2b55c9b102ed9
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="set-the-mobile-device-management-authority"></a>モバイル デバイス管理機関の設定
 
@@ -60,7 +60,7 @@ Intune が MDM 機関として設定されると、ユーザーは個人所有�
 - **iOS** - (必須) [Apple MDM プッシュ証明書を取得し](apple-mdm-push-certificate-get.md)、[会社所有 iOS デバイスの登録を有効にします](ios-enroll.md) (任意)。
 - **Android** - (任意) [Android の仕事用プロファイルを有効にします](android-enroll.md)。
 - **Windows** - (任意) [自動登録](windows-enroll.md)または[一括登録](windows-bulk-enroll.md)を有効にします。
-- **macOS** - 要件はありません。
+- **macOS** - (必須) [Apple MDM プッシュ証明書を取得します](apple-mdm-push-certificate-get.md)。
 
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 証明書の有効期限が切れた後のモバイル デバイスのクリーンアップ
