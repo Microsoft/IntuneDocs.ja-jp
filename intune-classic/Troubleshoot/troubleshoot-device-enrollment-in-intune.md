@@ -1,25 +1,25 @@
 ---
-title: "デバイス登録に関するトラブルシューティング"
-description: "デバイス登録で問題が発生した場合の解決方法の推奨事項。"
-keywords: 
+title: デバイス登録に関するトラブルシューティング
+description: デバイス登録で問題が発生した場合の解決方法の推奨事項。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 09/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 50adfb13c619f81a8429c46e798b7f78acf3217e
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: 0293614e2654c16b6fd5fd43d40331453b332e3c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune のデバイス登録に関するトラブルシューティング
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 01/05/2018
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Azure Active Directory ポータルでデバイスを削除するには
 
-1.  [http://aka.ms/accessaad](http://aka.ms/accessaad) にアクセスするか、[https://portal.office.com](https://portal.office.com) から **[管理]** &gt; **[Azure AD]** の順にクリックします。
+1.  [http://aka.ms/accessaad](http://aka.ms/accessaad) にアクセスするか、[https://portal.office.com](https://portal.office.com) から **[管理者]** &gt; **[Azure AD]** の順に選択します。
 
 2.  ページの左側にあるリンクを使用して、組織 ID でログインします。
 
@@ -99,7 +99,7 @@ ms.lasthandoff: 01/05/2018
 
 1.  デバイスから Intune ポータル サイト アプリを削除します。
 
-2.  デバイスでブラウザーを開き、 [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)にアクセスして、ユーザー ログインを実行します。
+2.  デバイスでブラウザーを開き、[https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) にアクセスして、ユーザー ログインを実行します。
 
 3.  ユーザーがログインに失敗する場合は、別のネットワークを試すように指示します。
 
@@ -165,8 +165,8 @@ ms.lasthandoff: 01/05/2018
 
 |エラー メッセージ|問題|解決策|
 |---|---|---|
-|**IT 管理者がアクセスするためのライセンスを割り当てる必要があります**<br>IT 管理者は、このアプリを使用するためのアクセス許可を付与していません。 IT 管理者から支援を受けるか、後でやり直してください。|ユーザーのアカウントに必要なライセンスがないため、このデバイスを登録することはできません。|ユーザーは自分のデバイスを登録する前に、必要なライセンスを割り当てられている必要があります。 このメッセージは、指定されたモバイル デバイス管理機関に必要なライセンスの種類をユーザーが持っていないことを示します。 たとえば、モバイル デバイス管理機関として Intune が指定され、ユーザーが System Center 2012 R2 Configuration Manager ライセンスを使用している場合に、このエラーが表示されます。<br><br>[ユーザー アカウントに Intune のライセンスを割り当てる](/intune/licenses-assign.md)方法に関する情報を参照してください。
-|**IT 管理者は、MDM 機関を設定する必要があります**<br>IT 管理者が、MDM 機関を設定していないようです。 IT 管理者から支援を受けるか、後でやり直してください。|モバイル デバイス管理機関が定義されていません。|Intune でモバイル デバイス管理機関が指定されていません。 [モバイル デバイス管理機関を設定する](/intune/mdm-authority-set.md)方法に関する情報を参照してください。|
+|**IT 管理者がアクセスするためのライセンスを割り当てる必要があります**<br>IT 管理者は、このアプリを使用するためのアクセス許可を付与していません。 IT 管理者から支援を受けるか、後でやり直してください。|ユーザーのアカウントに必要なライセンスがないため、このデバイスを登録することはできません。|ユーザーは自分のデバイスを登録する前に、必要なライセンスを割り当てられている必要があります。 このメッセージは、指定されたモバイル デバイス管理機関に必要なライセンスの種類をユーザーが持っていないことを示します。 たとえば、モバイル デバイス管理機関として Intune が指定され、ユーザーが System Center 2012 R2 Configuration Manager ライセンスを使用している場合に、このエラーが表示されます。<br><br>[ユーザー アカウントに Intune のライセンスを割り当てる](/intune/licenses-assign)方法に関する情報を参照してください。
+|**IT 管理者は、MDM 機関を設定する必要があります**<br>IT 管理者が、MDM 機関を設定していないようです。 IT 管理者から支援を受けるか、後でやり直してください。|モバイル デバイス管理機関が定義されていません。|Intune でモバイル デバイス管理機関が指定されていません。 [モバイル デバイス管理機関を設定する](/intune/mdm-authority-set)方法に関する情報を参照してください。|
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>デバイスが Intune サービスでチェックインできず、Intune 管理コンソールに "異常" と表示される
@@ -332,7 +332,7 @@ Android デバイスでは、[SSL のサーバー ハロー](https://technet.mic
 
 2.  デバイスが別の MDM プロバイダーに登録されていないこと、また管理プロファイルがインストールされていないことを確認します。
 
-3.  [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) にアクセスし、メッセージに従ってプロファイルをインストールしてください。
+3.  [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) に移動して、プロンプトが表示されたら、プロファイルのインストールを試みます。
 
 4.  iOS 用の Safari が既定のブラウザーであり、Cookie が有効であることを確認します。
 
@@ -377,7 +377,7 @@ Android デバイスでは、[SSL のサーバー ハロー](https://technet.mic
 
 
 ### <a name="other-ios-enrollment-errors"></a>iOS のその他の登録エラー
-iOS 登録エラーの一覧は、デバイスのユーザー ドキュメントの「[Intune にデバイスを登録している最中にエラーが表示される](/intune-user-help/using-your-iOS-or-macOS-device-with-intune)」に記載されています。
+iOS 登録エラーの一覧は、「[Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune)」 (Microsoft Intune での iOS デバイス登録に関する問題のトラブルシューティング) のドキュメントにあります。
 
 ## <a name="pc-issues"></a>PC の問題
 
