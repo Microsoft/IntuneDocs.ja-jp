@@ -1,31 +1,31 @@
 ---
-title: "セットアップ アシスタントを使用した iOS デバイスの登録"
-description: "Apple Configurator ツールを使用して企業所有の iOS デバイスを登録し、デバイスを工場出荷時の設定にリセットして、セットアップ アシスタントを実行する準備をします。"
-keywords: 
+title: セットアップ アシスタントを使用した iOS デバイスの登録
+description: Apple Configurator ツールを使用して企業所有の iOS デバイスを登録し、デバイスを工場出荷時の設定にリセットして、セットアップ アシスタントを実行する準備をします。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8a97ccdb8f557c4c2bfd542fb1c96d84d768eae5
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: a33c383cb65d0edfa94117278e3f473699588aa3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>Apple Configurator でセットアップ アシスタントを使用して iOS デバイスを登録する
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Intune は、Mac コンピューターで実行される [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) を使用した、企業所有の iOS デバイスの登録をサポートします。 このプロセスではデバイスを工場出荷時の設定にリセットし、セットアップ アシスタントを実行してデバイスの新しいユーザー用に会社のポリシーをインストールするための準備を行います。
+Intune は、Mac コンピューターで実行される [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) を使用した、会社所有の iOS デバイスの登録をサポートします。 このプロセスではデバイスを工場出荷時の設定にリセットし、セットアップ アシスタントを実行してデバイスの新しいユーザー用に会社のポリシーをインストールするための準備を行います。
 
 >[!NOTE]
 >この登録方法は、[デバイス登録マネージャー](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)の方法と同時に使用することはできません。

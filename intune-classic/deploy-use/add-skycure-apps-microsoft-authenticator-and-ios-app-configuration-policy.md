@@ -1,25 +1,25 @@
 ---
-title: "Skycure アプリ、Microsoft Authenticator アプリ、iOS 構成ポリシーの追加"
-description: "Skycure アプリ、Microsoft Authenticator アプリ、iOS 構成ポリシーを Intune クラシック ポータルに追加します。"
-keywords: 
+title: Skycure アプリ、Microsoft Authenticator アプリ、iOS 構成ポリシーの追加
+description: Skycure アプリ、Microsoft Authenticator アプリ、iOS 構成ポリシーを Intune クラシック ポータルに追加します。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 018d26f4-4a75-4e27-bb04-54f54106cb2f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3e2dd0675042e63e056254d1b85955f66d5dc3f2
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 45412855db4afd9dd03b2139a3720d1619d293e2
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-skycure-apps-microsoft-authenticator-app-and-ios-configuration-policy"></a>Skycure アプリ、Microsoft Authenticator アプリ、iOS 構成ポリシーの追加
 
@@ -99,10 +99,10 @@ ms.lasthandoff: 10/10/2017
 
 3.  **[ポリシーの作成]** ページの **[全般]** セクションで、iOS アプリ構成ポリシーの名前と説明を指定します。説明は省略可能です。
 
-    a.  メモ帳のようなテキスト エディターで **skycure\_configuration.plist** ファイルを開き、その内容をコピーして**モバイル アプリ構成ポリシー**の本文に貼り付け、**[検証]**、**[ポリシーの保存]** の順に選択します。
+    」を参照します。  メモ帳のようなテキスト エディターで **skycure\_configuration.plist** ファイルを開き、その内容をコピーして**モバイル アプリ構成ポリシー**の本文に貼り付け、**[検証]**、**[ポリシーの保存]** の順に選択します。
 
        ![iOS アプリ構成ポリシー 2](../media/mtp/skycure-add-apps-8.png)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Skycure アプリ、Microsoft Authenticator アプリ、iOS アプリ構成ポリシーの展開](/intune-classic/deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy)

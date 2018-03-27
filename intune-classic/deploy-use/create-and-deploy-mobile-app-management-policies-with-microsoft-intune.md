@@ -1,25 +1,25 @@
 ---
-title: "MAM ポリシーを作成および展開する"
-description: "モバイル アプリ管理ポリシーを作成して展開するには、このトピックのステップ バイ ステップの指示に従ってください。"
-keywords: 
+title: MAM ポリシーを作成および展開する
+description: モバイル アプリ管理ポリシーを作成して展開するには、このトピックのステップ バイ ステップの指示に従ってください。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 93ec41c756c802986b85a45f53329ef6daba6c08
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e751934549490885c1ebf2445ec8f112f640f5bd
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Microsoft Intune でのアプリ保護ポリシーの作成とデプロイ
 
@@ -96,7 +96,7 @@ Android および iOS プラットフォームでサポートされているポ�
 前の手順の説明に従ってポリシーの作成が完了した時点では、ポリシーはユーザーに展開されません。 ポリシーを展開するには、次のセクションの「ユーザーへのポリシーの展開」を参照してください。
 
 > [!IMPORTANT]
-> Intune 管理コンソールでアプリのアプリ保護ポリシーを作成し、Azure ポータルでアプリ保護ポリシーを作成した場合は、Azure ポータルで作成したポリシーが優先されます。 ただし、Intune または Configuration Manager のコンソールのレポート機能では、Intune 管理コンソールから作成されたポリシー設定がレポート対象となります。 たとえば、
+> Intune 管理コンソールでアプリのアプリ保護ポリシーを作成し、Azure ポータルでアプリ保護ポリシーを作成した場合は、Azure ポータルで作成したポリシーが優先されます。 ただし、Intune または Configuration Manager のコンソールのレポート機能では、Intune 管理コンソールから作成されたポリシー設定がレポート対象となります。 次に例を示します。
 >
 > -   アプリからのコピーがブロックされている Intune 管理コンソールでアプリ保護ポリシーを作成しました。
 > -   アプリからのコピーが許可されている Azure コンソールでアプリ保護ポリシーを作成しました。
@@ -138,7 +138,7 @@ Intune 1703 バージョン以降では、新しいアプリ保護ポリシー�
 <br></br>
 2. 許可するアプリまたは除外するアプリのブレードで、**[アプリの追加]** をクリックします。 推奨される Microsoft アプリ、ストア アプリ、またはデスクトップ アプリを追加できます。
 
-    a.  **[おすすめのアプリ]:** 管理者がポリシーに簡単にインポートできるようにあらかじめ設定されている (ほとんどは Office) アプリの一覧です。
+    」を参照します。  **[おすすめのアプリ]:** 管理者がポリシーに簡単にインポートできるようにあらかじめ設定されている (ほとんどは Office) アプリの一覧です。
 
     b.  **[ストア アプリ]:** 管理者は、Windows ストアからポリシーに任意のアプリを追加できます。
 
@@ -213,7 +213,7 @@ iOS と Android 用のポリシー設定の完全な一覧を表示するには�
 - [iOS ポリシー](ios-mam-policy-settings.md)
 - [Android ポリシー](android-mam-policy-settings.md)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [コンプライアンスとユーザーの状態を監視する](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>関連項目

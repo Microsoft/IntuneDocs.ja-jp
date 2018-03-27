@@ -1,24 +1,24 @@
 ---
-title: "Intune ソフトウェア クライアントを実行する PC のソフトウェア ライセンス契約を管理する"
-description: "Intune では、Microsoft ボリューム ライセンス契約で購入したソフトウェアと、他の方法で購入したソフトウェアのライセンス契約情報を追加および管理できます。"
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: Intune ソフトウェア クライアントを実行する PC のソフトウェア ライセンス契約を管理する
+description: Intune では、Microsoft ボリューム ライセンス契約で購入したソフトウェアと、他の方法で購入したソフトウェアのライセンス契約情報を追加および管理できます。
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cb60588f793ae430d5e40de6a42db3610e3a1cb6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 73fa5866efe10006a8a3d7de38ec4c552d0df06e
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Microsoft Intune で Windows PC ソフトウェアのライセンス契約を管理する
 
@@ -176,7 +176,7 @@ Intune には、Microsoft ボリューム ライセンス契約に加えて、�
 
 |||
 |-|-|
-|タスク|説明|
+|作業|説明|
 |ライセンス グループの作成|**[ライセンス]** ワークスペースの **[概要]** ページで、**[タスク]** メニューの **[ライセンス グループの作成]** を選択します。 **注:** 合計 500 個までのライセンス グループを作成できます。|
 |ライセンス グループの名前変更|**[ライセンス]** ワークスペースで、ライセンス グループを選択し、**[タスク]** メニューの **[ライセンス グループの編集]** を選択します。|
 |ライセンス グループの削除|**[ライセンス]** ワークスペースで、ライセンス グループを選択し、**[タスク]** メニューの **[ライセンス グループの削除]** を選択します。 **ヒント:** 削除されたグループに含まれていたライセンスはいずれも **[割り当てられていない契約]** ライセンス グループに移されます。|

@@ -1,24 +1,24 @@
 ---
-title: "Azure で Intune を使用して Windows デバイスを管理する際の考慮事項"
-description: "Azure で Intune を使用して、組織の Windows デバイスを管理する際の考慮事項です。"
-keywords: 
+title: Azure で Intune を使用して Windows デバイスを管理する際の考慮事項
+description: Azure で Intune を使用して、組織の Windows デバイスを管理する際の考慮事項です。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
+ms.technology: ''
+ms.assetid: ''
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f4018f505626b05dc84be509ca1e42cefff94b90
-ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
+ms.openlocfilehash: 71effb587bfb82ecae18afda67b05fffd2127052
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Azure コンソールと従来の Intune PC クライアントでの Intune
 
@@ -60,7 +60,7 @@ Intune PC クライアントでの Windows 10 デバイス管理から MDM で�
   ![](media/intune_on_azure/image02.png)
 2. [MDM (および/または Azure AD Join)](https://docs.microsoft.com/intune/windows-enroll) を使用してデバイスを再登録します。 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [Windows デバイスの登録](https://docs.microsoft.com/intune/windows-enroll)
 
  

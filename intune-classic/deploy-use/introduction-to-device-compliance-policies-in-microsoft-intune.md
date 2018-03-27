@@ -1,25 +1,25 @@
 ---
-title: "デバイス コンプライアンス ポリシー"
-description: "このトピックでは、デバイス コンプライアンス ポリシーの内容とそのしくみについて説明します。"
-keywords: 
+title: デバイス コンプライアンス ポリシー
+description: このトピックでは、デバイス コンプライアンス ポリシーの内容とそのしくみについて説明します。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bcdad361dba7ee006bf2e2cffac7f1024c5e6dc6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ce8375a1b946a7ba5286637b1958539fd5015d8a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="device-compliance-policies-in-microsoft-intune"></a>Microsoft Intune のデバイス コンプライアンス ポリシー
 
@@ -44,11 +44,11 @@ ms.lasthandoff: 10/10/2017
 |-----|----|----|----|----|
 |**PIN またはパスワードの構成** |修復|修復|修復|検疫済み|
 |**デバイスの暗号化**|該当なし|修復|修復 (PIN の設定による)|検疫済み|
-|**脱獄またはルート化されたデバイス**|該当なし|該当なし|検疫済み (設定ではありません)|検疫済み (設定ではありません)|
-|**電子メールのプロファイル**|該当なし|該当なし|検疫済み|該当なし|
+|**脱獄またはルート化されたデバイス**|適用できません|適用できません|検疫済み (設定ではありません)|検疫済み (設定ではありません)|
+|**電子メールのプロファイル**|適用できません|適用できません|検疫済み|適用できません|
 |**最小 OS バージョン**|検疫済み|検疫済み|検疫済み|検疫済み|
 |**最大 OS バージョン**|検疫済み|検疫済み|検疫済み|検疫済み|
-|**Windows 正常性構成証明書**|検疫済み: Windows 10 および Windows 10 Mobile<br /><br />該当なし: Windows 8.1|該当なし|該当なし|該当なし|
+|**Windows 正常性構成証明書**|検疫済み: Windows 10 および Windows 10 Mobile<br /><br />該当なし: Windows 8.1|適用できません|適用できません|適用できません|
 
 ------------------------------
 
@@ -60,7 +60,7 @@ ms.lasthandoff: 10/10/2017
 
 -   ポータル サイトは、コンプライアンスの問題をユーザーに通知します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [デバイス コンプライアンス ポリシーの作成](create-a-device-compliance-policy-in-microsoft-intune.md)
 
 [デバイス コンプライアンス ポリシーの展開と監視](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)

@@ -1,25 +1,25 @@
 ---
-title: "iOS モバイル アプリ構成ポリシーを使用する"
-description: "Intune のモバイル アプリ構成ポリシーを使用して、ユーザーが iOS アプリを実行するときに必要となる可能性がある設定を指定できます。"
-keywords: 
+title: iOS モバイル アプリ構成ポリシーを使用する
+description: Intune のモバイル アプリ構成ポリシーを使用して、ユーザーが iOS アプリを実行するときに必要となる可能性がある設定を指定できます。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 31acadce1af55b2ce751b4c6b5bfead27fce3c8c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e0fa9f66ee0338b21e12a27ef60fb0df22d23030
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Microsoft Intune でのモバイル アプリ構成ポリシーを使用した iOS アプリの構成
 

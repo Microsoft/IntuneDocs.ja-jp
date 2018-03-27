@@ -1,25 +1,25 @@
 ---
-title: "Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する"
-description: "Intune で WIP アプリ保護ポリシーを作成して展開します"
-keywords: 
+title: Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
+description: Intune で WIP アプリ保護ポリシーを作成して展開します
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 9/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 51e53e28-5c34-4d0f-a4b1-6390a337514c
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b2049fa20b79ffb21e70b037aa9ddab863f66108
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 34e3112141e8bc0125ae320fa7ab8093d3b4ffc5
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 
@@ -67,7 +67,7 @@ WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを
 
 2.  **[アプリに関するポリシー]** ブレードで **[ポリシーの追加]** を選び、次の値を入力します。
 
-    a.  **[名前]:** (必須) 新しいポリシーの名前を入力します。
+    」を参照します。  **[名前]:** (必須) 新しいポリシーの名前を入力します。
 
     b.  **[説明]:** 必要に応じて説明を入力します。
 
@@ -75,7 +75,7 @@ WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを
 
     d.  **[登録の状態]:** ポリシーの登録状態として、**[未登録]** を選択します。
 
-3.  [**作成**] を選択します。 ポリシーが作成されて、**[アプリに関するポリシー]** ブレードのテーブルに表示されます。
+3.  **[作成]** を選択します。 ポリシーが作成されて、**[アプリに関するポリシー]** ブレードのテーブルに表示されます。
 
 ## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>おすすめのアプリを許可されているアプリの一覧に追加するには
 

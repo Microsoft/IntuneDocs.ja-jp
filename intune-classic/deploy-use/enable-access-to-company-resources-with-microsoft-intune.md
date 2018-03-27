@@ -1,25 +1,25 @@
 ---
-title: "会社のリソースへのアクセスを有効にする"
-description: "Wi-Fi、VPN、電子メール プロファイルを使用すると、ユーザーは必要なファイルとリソースにアクセスできます。"
-keywords: 
+title: 会社のリソースへのアクセスを有効にする
+description: Wi-Fi、VPN、電子メール プロファイルを使用すると、ユーザーは必要なファイルとリソースにアクセスできます。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/02/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e3d1b8cff396f6a78d635d96b936a1bb155ca198
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 170163a6edd372a92e04762d1ba7a1a9a420160c
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>Microsoft Intune を使用して、会社のリソースへのアクセスを有効にする
 
@@ -34,21 +34,21 @@ Microsoft Intune Wi-Fi、VPN、電子メール プロファイルを使用する
 
 |Windows 8.1 以降|Windows Phone 8.1 以降|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
-|○ (Windows Wi-Fi プロファイルをインポートできます)|○ (OMA-URI を構成できます) |Yes|○|Yes|
+|○ (Windows Wi-Fi プロファイルをインポートできます)|○ (OMA-URI を構成できます) |はい|はい|はい|
 
 ## <a name="vpn-profilesvpn-connections-in-microsoft-intunemd-and-supported-platforms"></a>[VPN プロファイル](vpn-connections-in-microsoft-intune.md)とサポートされているプラットフォーム
 仮想プライベート ネットワーク (VPN) の設定をユーザーに展開します。 これらの設定により、ユーザーは企業ネットワーク上のリソースに簡単に接続できるようになります。
 
 |Windows 8.1 以降|Windows Phone 8.1 以降|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
-|Yes|○|○|○|Yes|
+|はい|はい|はい|はい|はい|
 
 ## <a name="email-profilesconfigure-access-to-corporate-email-using-email-profiles-with-microsoft-intunemd-and-supported-platforms"></a>[電子メール プロファイル](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)とサポートされているプラットフォーム
 組織のデバイスに対するネイティブ電子メール クライアント設定を作成、展開、監視します。
 
 |Windows 8.1 以降|Windows Phone 8.1 以降|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
-|いいえ|○|○|いいえ|Yes|
+|[いいえ]|はい|はい|[いいえ]|はい|
 > [!NOTE]
 > OMA-URI を使用する Windows Phone 8.1 Wi-Fi プロファイルを構成する方法については、[この Intune チームのブログの投稿](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/19/using-oma-uri-to-create-custom-wi-fi-profiles-for-windows-phone-8-1/)を参照してください。
 
@@ -57,4 +57,4 @@ Microsoft Intune Wi-Fi、VPN、電子メール プロファイルを使用する
 
 |Windows 8.1 以降|Windows Phone 8.1 以降|iOS|Android|Samsung KNOX Standard|
 |---------------------|---------------------------|---|-------|------------|
-|Yes|○|○|○|Yes|
+|はい|はい|はい|はい|はい|

@@ -1,25 +1,25 @@
 ---
-title: "KNOX が許可するアプリとブロックするアプリ"
-description: "KNOX が許可するアプリとブロックするアプリの一覧を作成するためのカスタム プロファイル。"
-keywords: 
+title: KNOX が許可するアプリとブロックするアプリ
+description: KNOX が許可するアプリとブロックするアプリの一覧を作成するためのカスタム プロファイル。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/02/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ee5279c91eeaa2d75044a156ebe9c4b100bd8047
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a47e1388f640f96c2650e284ae0a5311fd816ba7
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>カスタム ポリシーを使用して、Samsung KNOX Standard デバイス用のアプリを許可またはブロックする
 

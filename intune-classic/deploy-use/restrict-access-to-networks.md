@@ -1,25 +1,25 @@
 ---
-title: "Cisco ISE でネットワークへのアクセスを保護する"
-description: "Cisco ISE で制御されている Wi-Fi および VPN にアクセスする前に、デバイスが登録されポリシーに準拠するように、Intune で Cisco ISE を使用します。"
-keywords: 
-author: arob98
+title: Cisco ISE でネットワークへのアクセスを保護する
+description: Cisco ISE で制御されている Wi-Fi および VPN にアクセスする前に、デバイスが登録されポリシーに準拠するように、Intune で Cisco ISE を使用します。
+keywords: ''
+author: dougeby
 ms.author: angrobe
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51b3763faa95adcbfe76580e32f5a42bb615c9d9
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e455f291d9bfdb655f6c66cad7bf859a864e756d
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Microsoft Intune で Cisco ISE を使用する
 
@@ -37,7 +37,7 @@ Azure Active Directory (Azure AD) のコンソールから証明書をエクス�
 #### <a name="internet-explorer-11"></a>Internet Explorer 11
 
 
-   a. 管理者として Internet Explorer を実行して、Azure AD コンソールにサインインします。
+   」を参照します。 管理者として Internet Explorer を実行して、Azure AD コンソールにサインインします。
 
    b. アドレス バーでロック アイコンを選択して、**[証明書の表示]** を選択します。
 
@@ -53,7 +53,7 @@ Azure Active Directory (Azure AD) のコンソールから証明書をエクス�
 
 #### <a name="safari"></a>Safari
 
- a. Azure AD コンソールにサインインします。
+ 」を参照します。 Azure AD コンソールにサインインします。
 
 b. ロック アイコン &gt; **[詳細]** をクリックします。
 
@@ -88,7 +88,7 @@ b. ロック アイコン &gt; **[詳細]** をクリックします。
 5. 名前を変更しないで、ファイルを保存します。
 6. Microsoft Graph と Microsoft Intune API へのアクセス許可を持つアプリを指定します。
 
- a. Microsoft Graph の場合は、次のように選択します。
+ 」を参照します。 Microsoft Graph の場合は、次のように選択します。
     - **アプリケーションのアクセス許可**: ディレクトリ データの読み取り
     - **委任されたアクセス許可**:
         - ユーザーのデータへの常時アクセス
@@ -120,7 +120,7 @@ b. ロック アイコン &gt; **[詳細]** をクリックします。
     “keyCredentials“: [ { “customKeyIdentifier“: “$base64Thumbprint_from_above”, “keyId“: “$keyid_from_above“, “type”: “AsymmetricX509Cert”, “usage”: “Verify”, “value”:  “$base64Value_from_above” }2. 
      ], 
  
-たとえば、
+次に例を示します。
  
     “keyCredentials“: [
     {

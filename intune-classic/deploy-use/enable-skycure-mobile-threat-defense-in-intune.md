@@ -1,31 +1,31 @@
 ---
-title: "Intune で Skycure Mobile Threat Defense を有効にする"
-description: "Intune クラシック ポータルで Skycure Mobile Threat Defense を有効にします。"
-keywords: 
+title: Intune で Skycure Mobile Threat Defense を有効にする
+description: Intune クラシック ポータルで Skycure Mobile Threat Defense を有効にします。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0cc4e59d-819a-47a2-a26f-4f8d0f8df7bf
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce0e61a27f44f0c6cb00d79442d346db679a55ea
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 971600d59a6afe019f5f3bd51459964c168afa82
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enable-skycure-mobile-threat-defense-in-intune"></a>Intune で Skycure Mobile Threat Defense を有効にする
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Skycure Mobile Threat Defense を有効にするには、[Intune Connector in the Skycure console] (/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune) (Skycure コンソールの Intune コネクタ\) が構成済みである必要があります 。
+Skycure Mobile Threat Defense を有効にするには、[Intune Connector in the Skycure console]\(Skycure コンソールの Intune コネクタ\) が構成済みである必要があります (/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune)。
 
 ## <a name="to-enable-the-skycure-mtd-connection-in-intune"></a>Intune で Skycure MTD の接続を有効にする
 
@@ -40,6 +40,6 @@ Skycure Mobile Threat Defense を有効にするには、[Intune Connector in th
 
 以上で、Intune 管理者コンソールでの Skycure と Intune の統合のセットアップは完了です。 このソリューションを実装するこの後の手順では、Skycure for Work アプリを展開し、コンプライアンス ポリシーを設定します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Skycure Mobile Threat Defense コンプライアンス ポリシーを作成する](/intune-classic/deploy-use/create-skycure-mobile-threat-defense-compliance-policy)

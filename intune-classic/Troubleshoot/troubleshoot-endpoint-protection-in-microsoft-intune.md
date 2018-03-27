@@ -1,25 +1,25 @@
 ---
-title: "Endpoint Protection に関するトラブルシューティング"
-description: "Microsoft Intune Endpoint Protection の使用中に生じた問題を解決します。"
-keywords: 
+title: Endpoint Protection に関するトラブルシューティング
+description: Microsoft Intune Endpoint Protection の使用中に生じた問題を解決します。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 01/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d1effa7c421448889280926acbb9369f220211b9
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: edfc9e4995610aaadfd12e8370a42bfcc15032e6
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-endpoint-protection-in-microsoft-intune"></a>Troubleshoot Endpoint Protection in Microsoft Intune
 
@@ -47,5 +47,5 @@ Microsoft Intune エンドポイント保護の使用中に生じた問題を解
 |**クイック スキャンの期限が過ぎています**|クイック スキャンが 14 日間実行されていません。 クイック スキャン中にコンピューターが再起動された可能性があります。|クイック スキャンの期限が過ぎている場合は、[Intune 管理コンソール](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client)で 1 回限りのクイック スキャンを実行するか、定期的なクイック スキャンのスケジュールを設定することができます。|
 |**別のエンドポイント保護アプリケーションが実行されています**|別のエンドポイント保護アプリケーションが実行されており、コンピューターの状態は正常です。|既定では、別のエンドポイント保護アプリケーションがインストールされていることが検出された場合、Endpoint Protection が自動的に無効になります。 別のエンドポイント保護アプリケーションが検出されなかった場合、Endpoint Protection は引き続き有効です。 詳細については、「[Microsoft Intune の Endpoint Protection を使用して Windows PC を保護する](/intune-classic/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)」を参照してください。|
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。

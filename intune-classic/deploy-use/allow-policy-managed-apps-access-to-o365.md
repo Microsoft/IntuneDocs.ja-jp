@@ -1,25 +1,25 @@
 ---
-title: "アプリ ベースの O365 に対する条件付きアクセス"
-description: "MAM CA を利用して、O365 サービスに対してアクセス権を持つアプリを制御する方法の概念について説明します。"
-keywords: 
+title: アプリ ベースの O365 に対する条件付きアクセス
+description: MAM CA を利用して、O365 サービスに対してアクセス権を持つアプリを制御する方法の概念について説明します。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/05/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bd6bee60-5e39-42c8-a2e9-f5865ac3573f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 78b5d58df44252d1f3916c1d2a2ea02fcb1a10e2
-ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
+ms.openlocfilehash: b0b0fbfce086729551b211dd4bc4b83348aa4787
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="allow-only-mobile-apps-that-support-intune-app-protection-policies-to-access-office-365-services"></a>Intune アプリ保護ポリシーをサポートするモバイル アプリのみが Office 365 サービスにアクセスできるようにする
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 11/15/2017
 アプリ ベースの条件付きアクセス ポリシーが設定されたアプリのユーザー エクスペリエンスの詳細については、[アプリと MAM CA を使用する場合の結果](use-apps-with-mam-ca.md)に関するページをご覧ください。
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [MAM アプリ用の Exchange Online ポリシーを作成する](mam-ca-for-exchange-online.md)
 
 [MAM アプリ用の SharePoint Online ポリシーを作成する](mam-ca-for-sharepoint-online.md)

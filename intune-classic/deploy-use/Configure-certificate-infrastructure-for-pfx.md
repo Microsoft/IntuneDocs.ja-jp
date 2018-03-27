@@ -1,25 +1,25 @@
 ---
-title: "PFX の証明書インフラストラクチャを構成する"
-description: ".PFX 証明書プロファイルを作成および展開します。"
-keywords: 
+title: PFX の証明書インフラストラクチャを構成する
+description: .PFX 証明書プロファイルを作成および展開します。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/17/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b415e84f488d3bcdd14d6c3bca1aad76831fc499
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a19dbd6ad2b65e7d2d090b543f3e2200180c660a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-certificate-infrastructure"></a>証明書インフラストラクチャを構成する
 
@@ -94,7 +94,7 @@ ms.lasthandoff: 12/12/2017
 
     要求元が有効期間を指定できるように CA を構成するには、CA で次のコマンドを実行します。
 
-    a.  **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
+    」を参照します。  **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
 
     b.  **net stop certsvc**
 
@@ -102,7 +102,7 @@ ms.lasthandoff: 12/12/2017
 
 3.  発行元 CA で、証明機関スナップインを使用して証明書テンプレートを発行します。
 
-    a.  **[証明書テンプレート]** ノードを選択し、**[アクション]** -&gt; **[新規]** &gt; **[発行する証明書テンプレート]** の順にクリックして、手順 2. で作成したテンプレートを選択します。
+    」を参照します。  **[証明書テンプレート]** ノードを選択し、**[アクション]** -&gt; **[新規]** &gt; **[発行する証明書テンプレート]** の順にクリックして、手順 2. で作成したテンプレートを選択します。
 
     b.  **[証明書テンプレート]** フォルダーに表示されることで、テンプレートが発行されたことを確認します。
 
@@ -144,7 +144,7 @@ ms.lasthandoff: 12/12/2017
 
 5.  **証明書コネクタ** UI で:
 
-    a. **[サインイン]** を選択し、Intune サービス管理者の資格情報、またはグローバル管理アクセス許可を持つテナント管理者の資格情報を入力します。
+    」を参照します。 **[サインイン]** を選択し、Intune サービス管理者の資格情報、またはグローバル管理アクセス許可を持つテナント管理者の資格情報を入力します。
 
     b. **[詳細設定]** タブを選択し、発行元 CA で**証明書の発行と管理**アクセス許可を持つアカウントの資格情報を指定します。
 
@@ -155,5 +155,5 @@ ms.lasthandoff: 12/12/2017
 6.  コマンド プロンプトを開き、**services.msc** を入力します。 **[Enter]** キーを押し、**[Intune コネクタ サービス]** を右クリックして、**[再起動]** を選択します。
 
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 これで、「[Configure certificate profiles (証明書プロファイルを構成する)](Configure-Intune-certificate-profiles.md)」の説明に従って証明書プロファイルを構成する準備が整いました。

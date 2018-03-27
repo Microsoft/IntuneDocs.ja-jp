@@ -1,25 +1,25 @@
 ---
-title: "電子メール プロファイルを使用して会社の電子メールにアクセスする"
-description: "電子メール プロファイル設定は、モバイル デバイスの特定の電子メール クライアント用の電子メール アクセス設定を構成するために使用できます。"
-keywords: 
+title: 電子メール プロファイルを使用して会社の電子メールにアクセスする
+description: 電子メール プロファイル設定は、モバイル デバイスの特定の電子メール クライアント用の電子メール アクセス設定を構成するために使用できます。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 844e4a3c0006381eae156c74a680a5ec5a392c99
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: c55d8965d566074bddd23ea3973d22333fcc0980
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Microsoft Intune で電子メール プロファイルを使用して会社の電子メールへのアクセスを構成にする
 
@@ -44,7 +44,7 @@ IT 管理者やユーザーは、代替電子メール クライアント (Andro
 
 Intune によるプロファイルのセットアップの前にユーザーが電子メール プロファイルをインストールしてある場合、Intune による電子メール プロファイルの展開の結果はデバイスのプラットフォームに依存します。
 
-**iOS**<br>ホスト名と電子メール アドレスに基づいて、既存の重複する電子メール プロファイルが検出されます。 ユーザーによって作成された重複する電子メール プロファイルは、Intune の管理者が作成したプロファイルの展開をブロックします。 これは一般的な問題です。iOS ユーザーは通常、電子メール プロファイルを作成し、それから登録するためです。 ポータル サイトはユーザーに、手動で構成された電子メール プロファイルが原因で準拠していないことを通知し、そのプロファイルを削除するようユーザーに求めます。 Intune プロファイルをセットアップできるように、ユーザーは電子メール プロファイルを削除する必要があります。 この問題を防ぐには、電子メール プロファイルをインストールする前に登録し、Intune によるプロファイルのセットアップを許可するようにユーザーに指示します。
+**Android**<br>ホスト名と電子メール アドレスに基づいて、既存の重複する電子メール プロファイルが検出されます。 ユーザーによって作成された重複する電子メール プロファイルは、Intune の管理者が作成したプロファイルの展開をブロックします。 これは一般的な問題です。iOS ユーザーは通常、電子メール プロファイルを作成し、それから登録するためです。 ポータル サイトはユーザーに、手動で構成された電子メール プロファイルが原因で準拠していないことを通知し、そのプロファイルを削除するようユーザーに求めます。 Intune プロファイルをセットアップできるように、ユーザーは電子メール プロファイルを削除する必要があります。 この問題を防ぐには、電子メール プロファイルをインストールする前に登録し、Intune によるプロファイルのセットアップを許可するようにユーザーに指示します。
 
 **Windows**<br>ホスト名と電子メール アドレスに基づいて、既存の重複する電子メール プロファイルが検出されます。 Intune は、ユーザーによって作成された既存の電子メール プロファイルを上書きします。
 
