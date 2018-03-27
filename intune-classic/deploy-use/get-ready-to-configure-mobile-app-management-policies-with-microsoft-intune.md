@@ -1,25 +1,25 @@
 ---
-title: "MAM ポリシーの前提条件"
-description: "このトピックでは、モバイル アプリ管理ポリシーを作成する前にユーザーを設定するための前提条件について説明します。"
-keywords: 
+title: MAM ポリシーの前提条件
+description: このトピックでは、モバイル アプリ管理ポリシーを作成する前にユーザーを設定するための前提条件について説明します。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/29/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9dbaaf5b540d79a51cef3b7f98a16a5a1f200648
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b5d2ec278d182f3d9dbe03fbdf86791b59debf79
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-in-the-azure-portal"></a>Azure ポータルでアプリ保護ポリシーを構成する準備をする
 
@@ -105,5 +105,5 @@ Intune 管理コンソールでアプリ ポリシーを作成する方法につ
 
 全体管理者には [Azure ポータル](https://portal.azure.com)へのアクセス権があります。  グローバル管理者ではないユーザーもポリシーを構成して他のモバイル アプリ管理タスクを実行できるようにする場合は、「[Azure サブスクリプション リソースへのアクセスをロールの割り当てによって管理する](https://azure.microsoft.com/documentation/articles/role-based-access-control-configure/)」の記事をご確認ください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [Microsoft Intune でのアプリ保護ポリシーの作成とデプロイ](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

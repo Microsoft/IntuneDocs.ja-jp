@@ -1,25 +1,25 @@
 ---
-title: "一般的なトラブルシューティングのヒント"
-description: "Intune の問題を解決するための一般的なリソース。"
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: 一般的なトラブルシューティングのヒント
+description: Intune の問題を解決するための一般的なリソース。
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 12/08/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7085429b8e3e9e7dff3b56e681fb425c6551d722
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 944c5771e00d8e256944fe5767217f138797bde2
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Microsoft Intune の一般的なトラブルシューティングのヒント
 
@@ -79,7 +79,7 @@ Microsoft Intune を展開した後、構成やクライアントのデバイス
 
 -   [Intune フォーラム](https://social.technet.microsoft.com/Forums/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 以下のトピックには、特定の問題に関するトラブルシューティングのヘルプが含まれています。 この情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
 
 [Microsoft Intune におけるエンドポイント保護のトラブルシューティング](troubleshoot-endpoint-protection-in-microsoft-intune.md)

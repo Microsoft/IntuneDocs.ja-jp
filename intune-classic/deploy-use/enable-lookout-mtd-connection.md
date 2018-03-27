@@ -1,25 +1,25 @@
 ---
-title: "Intune で Lookout MTP を有効にする"
-description: "Intune 管理者コンソールで Lookout Mobile Threat Protection を有効にします。"
-keywords: 
+title: Intune で Lookout MTP を有効にする
+description: Intune 管理者コンソールで Lookout Mobile Threat Protection を有効にします。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2f835fd0-4e62-42f3-b7ca-ce8b7ddd40e4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f34697140a287d41203d1bad5df59250f07d08ce
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 99c9952b8df3e9b4b1992cbc45366a5ceed458aa
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enable-lookout-mtd-connection-in-the-intune-classic-portal"></a>Intune クラシック ポータルで Lookout MTD 接続を有効にする
 
@@ -37,5 +37,5 @@ Intune で Lookout MTP 接続を有効にするには、[Microsoft Intune 管理
 以上で、Intune 管理者コンソールでの Lookout と Intune の統合のセットアップは完了です。  このソリューションを実装するこの後の手順では、[Lookout for Work アプリ](/intune-classic/deploy-use/device-threat-protection-policy)ポリシーを展開する必要があります。
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [Lookout for Work アプリを構成する](/intune-classic/deploy-use/device-threat-protection-apps)

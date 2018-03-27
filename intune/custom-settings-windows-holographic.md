@@ -1,23 +1,23 @@
 ---
-title: "Windows Holographic for Business デバイス用の Microsoft Intune のカスタム設定"
-titlesuffix: 
-description: "Windows Holographic for Business カスタム プロファイルで使用できる Intune の設定について説明します。"
-keywords: 
+title: Windows Holographic for Business デバイス用の Microsoft Intune のカスタム設定
+titlesuffix: ''
+description: Windows Holographic for Business カスタム プロファイルで使用できる Intune の設定について説明します。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 3/6/2018
 ms.article: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b95d891d1dfaecbce182fde4a2221255a7e1eb06
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d5cdba24c10b90756d9a2b9f08fd7d4dcd727303
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-holographic-for-business"></a>Windows Holographic for Business を実行しているデバイスに対する Microsoft Intune のカスタム デバイス設定
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 03/08/2018
 |[UpdateServiceURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)|./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|文字列型<br>URL: デバイスは、指定された URL にある WSUS サーバーから更新プログラムを確認します。<br>未構成: デバイスは、Microsoft Update から更新プログラムを確認します。|
 |[RequireUpdatesApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)|./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|整数<br>0: 構成されていません デバイスは、適用可能なすべての更新プログラムをインストールします。<br>1: デバイスは、適用可能で、[承認された更新プログラム] リストに表示される更新プログラムのみをインストールします。 展開前にテストが必要な場合など、IT 部門がデバイス上の更新プログラムの展開を制御する場合は、このポリシーを 1 に設定します。|
 |[ApprovedUpdates](https://docs.microsoft.com/windows/client-management/mdm/update-csp)|./Vendor/MSFT/Update/ApprovedUpdates<br><br>**重要**<br>管理者は、エンド ユーザーの代わりに更新プログラムの EULA を読み、同意する必要があります。 この手順を怠ると、法律または契約上の義務に違反することになります。|エンド ユーザーの代理で行う更新プログラムの承認および EULA 同意のためのノード。|
-[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br><br>**重要**<br>AppLocker CSP の記事では、エスケープされた XML の例を使用しています。 Intune カスタム プロファイルを含む設定を構成するには、プレーン XML を使用する必要があります。|文字列型<br>詳細については、[AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp) に関する記事を参照してください。 
+[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br><br>**重要**<br>AppLocker CSP の記事では、エスケープされた XML の例を使用しています。 Intune カスタム プロファイルを含む設定を構成するには、プレーン XML を使用する必要があります。|文字列型<br>詳細については、[AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp) に関する記事を参照してください。
 
 ## <a name="how-to-find-the-policies-you-can-configure"></a>構成できるポリシーを見つける方法
 

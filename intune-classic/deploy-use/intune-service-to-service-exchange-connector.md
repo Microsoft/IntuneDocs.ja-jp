@@ -1,25 +1,25 @@
 ---
-title: "Exchange Online 用の Exchange Connector"
-description: "Exchange ActiveSync モバイル デバイス管理 (MDM) をサポートするために、Intune を Office 365 Exchange サービスに接続する。"
-keywords: 
+title: Exchange Online 用の Exchange Connector
+description: Exchange ActiveSync モバイル デバイス管理 (MDM) をサポートするために、Intune を Office 365 Exchange サービスに接続する。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b475e4b1e82feb7449bd0c591f70e806d5b8c9a4
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 78b4e91fd61bb79c2a3a6d86d5a79c39b320cc5e
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-the-intune-service-to-service-connector-for-exchange-online"></a>Exchange Online 用の Intune Service to Service Connector の構成
 
@@ -30,7 +30,7 @@ Microsoft Intune と Exchange Online サービスまたは新しい Exchange Onl
 ## <a name="service-to-service-connector-requirements"></a>Service to Service Connector の要件
 **Service to Service Connector** は、Exchange Online または Exchange Online Dedicated のみをサポートします。また、オンプレミス インフラストラクチャの要件はありません。
 
-|要件|説明|
+|要件|詳細情報|
 |---------------|--------------------|
 |Exchange Online が構成済みで実行中である|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
 |モバイル デバイス管理機関| [モバイル デバイスの管理機関を Microsoft Intune に設定します。](prerequisites-for-enrollment.md#step-2-set-mdm-authority)|
@@ -62,6 +62,6 @@ Service to Service Connector は自動的に構成され、Exchange Online 環�
 
 ## <a name="validate-your-exchange-connection"></a>Exchange 接続の確認
 
-Exchange Connector を正常に構成した後で、[Microsoft Intune 管理コンソール](https://manage.microsoft.com)に進みます。 [**管理**] > [**モバイル デバイス管理**] > [**Microsoft Exchange**] の順に選択します。 入力した詳細が [**Exchange の接続情報**] の下に表示されることを確認します。
+Exchange Connector を正常に構成した後で、[Microsoft Intune 管理コンソール](https://manage.microsoft.com)に進みます。 **[管理]** > **[モバイル デバイス管理]** > **[Microsoft Exchange]** の順に選択します。 入力した詳細が **[Exchange の接続情報]** の下に表示されることを確認します。
 
 また、前回いつ同期が完了したかも確認することができます。

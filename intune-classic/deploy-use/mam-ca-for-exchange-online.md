@@ -1,25 +1,25 @@
 ---
-title: "Exchange Online のアプリのアクセス権"
-description: "このトピックでは、MAM アプリの条件付きアクセス ポリシーを構成する方法について説明します。"
-keywords: 
+title: Exchange Online のアプリのアクセス権
+description: このトピックでは、MAM アプリの条件付きアクセス ポリシーを構成する方法について説明します。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f2cd1a1f-fd29-4081-8dfa-c40993a107d5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 67a687af9396236af9685fd2bb423226a7e83797
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d582421ed842f1e5b87419e25c5d03ad7a138e99
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-an-exchange-online-conditional-access-to-only-allow-apps-supported-by-mam"></a>MAM でサポートされているアプリのみを許可する Exchange Online の条件付きアクセスを作成する
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 10/10/2017
 **[制限対象のユーザー グループ]** 一覧から**ユーザー グループを削除**するには、**[制限対象のユーザー グループ]** ブレードを開き、削除するユーザー グループを選択し、**省略記号 (...)** をクリックします。**[削除]** が表示されます。 **[削除]** を選択すると、一覧からユーザー グループが削除されます。 手順は、**[制限対象のユーザー グループ]** 一覧からユーザー グループを削除する手順と同じです。
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [最新の認証を使用していないアプリをブロックする](block-apps-with-no-modern-authentication.md)
 ### <a name="see-also"></a>関連項目
 [アプリ保護ポリシーを使用したアプリ データの保護](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

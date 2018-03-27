@@ -1,23 +1,23 @@
 ---
-title: "Windows Holographic for Business の Microsoft Intune デバイス制限設定"
-titlesuffix: Azure portal
-description: "Windows Holographic for Business を実行するデバイスでデバイスの設定と機能を制御するために使用できる Intune 設定について説明します。"
-keywords: 
+title: Windows Holographic for Business の Microsoft Intune デバイス制限設定
+titleSuffix: ''
+description: Windows Holographic for Business を実行するデバイスでデバイスの設定と機能を制御するために使用できる Intune 設定について説明します。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10bb5a2eac9e72ba5b09a9a6f02932e872328c75
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 694b81434a95f48abc98f5012460523420df58cc
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="microsoft-intune-windows-holographic-for-business-device-restriction-settings"></a>Microsoft Intune Windows Holographic for Business デバイス制限設定
 

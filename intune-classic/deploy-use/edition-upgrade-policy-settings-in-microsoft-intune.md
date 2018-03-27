@@ -1,25 +1,25 @@
 ---
-title: "Windows エディションのアップグレード ポリシー設定"
-description: "Intune を使用して Windows 10 デバイスを別のバージョンに自動的にアップグレードする方法について説明します。"
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: Windows エディションのアップグレード ポリシー設定
+description: Intune を使用して Windows 10 デバイスを別のバージョンに自動的にアップグレードする方法について説明します。
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 04/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 690fe1f1b2555996b2ef124cde6e3fba53e82ec7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 005f8cf2e769b1b007424e55867160a0f5828f7a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="windows-edition-upgrade-policy-settings-in-microsoft-intune"></a>Microsoft Intune のエディションのアップグレード ポリシー設定
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 10/10/2017
 Microsoft Intune の**エディションのアップグレード ポリシー**を使用して、次に挙げる Windows 10 のバージョンのいずれかを実行するデバイスを自動的に別のエディションにアップグレードできます。
 * [Windows] 10 Desktop
 * Windows 10 Holographic
-* [Windows] 10 Mobile
+* Windows 10 Mobile
 
 次のアップグレード パスがサポートされます。
 - Windows 10 Pro から Windows 10 Enterprise へのアップグレード パス
@@ -36,7 +36,7 @@ Microsoft Intune の**エディションのアップグレード ポリシー**�
 - Windows 10 Mobile から Windows 10 Mobile Enterprise へのアップグレード パス
 - Windows 10 Holographic Pro から Windows 10 Holographic Enterprise へのアップグレード パス
 
-## <a name="before-you-start"></a>アップグレードを開始する前に
+## <a name="before-you-start"></a>開始する前に
 デバイスを最新バージョンにアップグレードし始める前に、次のいずれかを用意する必要があります。
 * ポリシーで対象とするすべてのデバイスに新しいバージョンの Windows をインストールするための有効なプロダクト キー (Windows 10 Desktop エディションの場合)。 マルチ ライセンス認証キー (MAK) またはキー マネジメント サーバー (KMS) キーのどちらかを使用できます。
 **または、**ポリシーで対象とするすべてのデバイスに新しいバージョンの Windows をインストールするためのライセンス情報を含む、Microsoft からのライセンス ファイル (Windows 10 Mobile エディションと Windows 10 Holographic エディションの場合)。

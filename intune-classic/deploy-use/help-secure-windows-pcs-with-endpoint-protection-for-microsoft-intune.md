@@ -1,24 +1,24 @@
 ---
-title: "Windows PC 用の Endpoint Protection"
-description: "マルウェアの脅威からリアルタイムで保護する Endpoint Protection で、管理対象コンピューターを保護します。"
-keywords: 
+title: Windows PC 用の Endpoint Protection
+description: マルウェアの脅威からリアルタイムで保護する Endpoint Protection で、管理対象コンピューターを保護します。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: arob98
+manager: dougeby
 ms.date: 03/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8b903d5b1ae66b7ce022480864fb08e7107ff4b0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: fd201cbe7b91791f7db014e0176b0873a1e270c0
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Microsoft Intune の Endpoint Protection を使用して Windows PC を保護する
 
@@ -33,7 +33,7 @@ Endpoint Protection を構成、展開、監視するときに、次のセクシ
 ## <a name="choose-when-to-use-endpoint-protection"></a>Endpoint Protection を使用するタイミングの選択
 IT 管理者として最も優先度が高い事項の 1 つは、管理するコンピューターをマルウェアやウイルスのない状態に保つことです。 Intune を Windows PC に展開する前に、次のオプションのいずれかを選択し、関連するポリシー設定を構成して、コンピューターを保護する方法を決定する必要があります。
 
-|目的|Endpoint Protection のポリシー設定|説明|
+|目的|Endpoint Protection のポリシー設定|詳細情報|
 |--------------|---------------------------------------|--------------------|
 |サード パーティ製エンドポイント保護アプリケーションがインストールされていない場合のみ Microsoft Intune Endpoint Protection を使用します。<br /><br />サード パーティ製エンドポイント保護アプリケーションがインストールされていないすべてのコンピューターで Microsoft Intune Endpoint Protection を使用できます。|[Endpoint Protection のインストール] = **はい**<br /><br />[Endpoint Protection を有効にする] = **はい**<br /><br />[サード パーティ製エンドポイント保護アプリケーションがインストールされている場合でも Endpoint Protection をインストールする] = **いいえ**|サード パーティ製エンドポイント保護アプリケーションが検出された場合、Microsoft Intune Endpoint Protection はインストールされません。既にインストール済みの場合はアンインストールされます。|
 |サード パーティ製エンドポイント保護アプリケーションがインストールされている場合でも Microsoft Intune Endpoint Protection を使用します。<br /><br />この方法では、Microsoft Intune Endpoint Protection とサード パーティ製エンドポイント保護アプリケーションを同時に実行します。 この構成は、パフォーマンスの問題が発生する可能性があるため、推奨されません。 |[Endpoint Protection のインストール] = **はい**<br /><br />[Endpoint Protection を有効にする] = **はい**<br /><br />[サード パーティ製エンドポイント保護アプリケーションがインストールされている場合でも Endpoint Protection をインストールする] = **はい**|次の場合に使用します。<br /><br />- Microsoft Intune Endpoint Protection を使用するように切り替える必要がある場合<br />- Microsoft Intune Endpoint Protection を使用する新しいクライアントを展開する場合<br />- Microsoft Intune Endpoint Protection を使用するクライアントをアップグレードする場合|
@@ -109,7 +109,7 @@ Microsoft Intune の Endpoint Protection を構成するには、次の手順に
 |------------------|--------------------|
 |**Endpoint Protection をインストール後にフル スキャンを実行する**|Endpoint Protection をコンピューターにインストールした後で、自動的にフル システム スキャンを実行するには、**[はい]** に設定します。 このスキャンは、ユーザーの生産性への影響を最小限に抑えるためにコンピューターがアイドル状態のときにのみ実行されます。<br /><br />推奨値: **○**|
 |**マルウェア除去後に必要に応じてフル スキャンを自動的に実行する**|**[はい]** に設定すると、マルウェアの削除後に、その他のファイルが影響を受けていないことを確認するため、Endpoint Protection で自動的にコンピューターでフル システム スキャンを実行します。<br /><br />推奨値: **○**|
-|**コンピューターがアイドル状態のときだけスケジュールされたスキャンを開始する**|[ **はい** ] に設定すると、コンピューターが使用中のときは、スケジュール済みのスキャンが実行されないようにして、ユーザーの操作が邪魔されないようにできます。<br /><br />推奨値: **○**|
+|**コンピューターがアイドル状態のときだけスケジュールされたスキャンを開始する**|**[はい]** に設定すると、コンピューターが使用中のときは、スケジュール済みのスキャンが実行されないようにして、ユーザーの操作が邪魔されないようにできます。<br /><br />推奨値: **○**|
 |**スキャンを開始する前に、最新のマルウェア定義があるかどうかを確認する**|**[はい]** に設定すると、コンピューターのスキャンを開始する前に、Endpoint Protection で最新のマルウェア定義を自動的に確認します。<br /><br />推奨値: **○**|
 |**アーカイブ ファイルをスキャンする**|**[はい]** に設定すると、Endpoint Protection が、コンピューターのアーカイブ ファイル (.zip ファイル、.cab ファイルなど) に対するマルウェアをスキャンするように構成されます。<br /><br />推奨値: **[いいえ]**|
 |**電子メール メッセージをスキャンする**|**[はい]** に設定すると、コンピューターが電子メール メッセージを受信したときにそのメッセージをスキャンするように Endpoint Protection を構成します。<br /><br />推奨値: **○**|
@@ -190,5 +190,5 @@ Intune では、Intune クライアントがインストールされているリ
 ## <a name="need-more-help"></a>さらにヘルプが必要な場合
 さらにヘルプやサポートが必要な場合は、「[Microsoft Intune におけるエンドポイント保護のトラブルシューティング](/intune-classic/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune)」を参照してください。
 
-### <a name="see-also"></a>関連項目
+### <a name="see-also"></a>参照
 [Windows PC を保護するためのポリシー](policies-to-protect-windows-pcs-in-microsoft-intune.md)

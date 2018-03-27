@@ -1,25 +1,25 @@
 ---
-title: "Office 365 モバイル アプリから会社のデータが漏えいすることを防止する"
-description: "Intune を使用して、Office 365 モバイル アプリやその他の基幹業務 (LOB) アプリから会社のデータが漏洩することを防止するために役立つモバイル アプリ管理 (MAM) ポリシーを使用して、組織のデータをセキュリティで保護できます。"
-keywords: 
+title: Office 365 モバイル アプリから会社のデータが漏えいすることを防止する
+description: Intune を使用して、Office 365 モバイル アプリやその他の基幹業務 (LOB) アプリから会社のデータが漏洩することを防止するために役立つモバイル アプリ管理 (MAM) ポリシーを使用して、組織のデータをセキュリティで保護できます。
+keywords: ''
 author: jeffgilb
 ms.author: jeffgilb
-manager: angrobe
+manager: dougeby
 ms.date: 11/22/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 19be3de7-539c-49f5-8c46-5363b987fef9
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3556c130402292450efc26f13f624861322e5ae7
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: b0117ef734a8549593992108105192ce1c4de5b0
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="quick-start-guide-prevent-company-data-leaks-from-office-365-mobile-apps"></a>クイック スタート ガイド: Office 365 モバイル アプリから会社のデータが漏洩することを防止する
 

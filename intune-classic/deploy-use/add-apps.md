@@ -1,25 +1,25 @@
 ---
-title: "アプリを追加する"
-description: "Intune でアプリの展開を開始する前に、このトピックで説明している概念について理解を深めてください。"
-keywords: 
+title: アプリを追加する
+description: Intune でアプリの展開を開始する前に、このトピックで説明している概念について理解を深めてください。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 07/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 788e8a7f15566c4b15fec09f3e861d9380278e3f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 69c3f671fdf1ac0d281e484f9090356a3ce246a8
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-apps-with-microsoft-intune"></a>Microsoft Intune でアプリを追加する
 
@@ -91,6 +91,6 @@ Intune に Windows 10 ユニバーサル appxbundle パッケージを追加す�
 ![Windows 10 UWP appxbundle の依存関係を選択する方法](./media/w10-dependencies.png)
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 アプリを展開する前に、Intune コンソールでアプリを追加します。 [登録されたデバイス](add-apps-for-mobile-devices-in-microsoft-intune.md)と [Intune クライアント ソフトウェアで管理する Windows PC](add-apps-for-windows-pcs-in-microsoft-intune.md) にアプリを追加できます。

@@ -1,25 +1,25 @@
 ---
-title: "アプリの展開"
-description: "このトピックでは、Intune を使用してアプリの展開を開始する前に理解する必要がある概念について説明します。"
-keywords: 
+title: アプリの展開
+description: このトピックでは、Intune を使用してアプリの展開を開始する前に理解する必要がある概念について説明します。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6e3761ad892ff17abdfb8b61516ef56b1fb8318d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9762c20abb9e4eedded50c92fb10ffb6119be63e
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="deploy-apps-with-microsoft-intune"></a>Microsoft Intune を使用してアプリを展開する
 
@@ -46,18 +46,18 @@ ms.lasthandoff: 10/10/2017
 
 #### <a name="understand-which-deployment-actions-are-available-for-each-installer-type"></a>各インストーラーの種類で利用できる展開アクションを理解する
 
-|インストーラーの種類|必須のインストール|利用可能なインストール|[アンインストール]|該当なし|
+|インストーラーの種類|必須のインストール|利用可能なインストール|[アンインストール]|適用できません|
 |------------------|--------------------|---------------------|-------------|------------------|
-|Windows アプリケーション パッケージ (ユーザー グループに展開)|[はい]|○|○|Yes|
-|Windows アプリ パッケージ (デバイス グループに展開)|[はい]|いいえ|○|Yes|
-|モバイル デバイス用アプリケーション パッケージ (ユーザー グループに展開)|Yes|○|○|Yes|
-|モバイル デバイス用アプリケーション パッケージ (デバイス グループに展開)|Yes|いいえ|○|Yes|
-|Windows インストーラー (ユーザー グループに展開)|いいえ|○|いいえ|Yes|
-|Windows インストーラー (デバイス グループに展開)|[はい]|いいえ|○|Yes|
-|外部のリンク (ユーザー グループに展開)|いいえ|○|いいえ|Yes|
-|外部のリンク (デバイス グループに展開)|いいえ|いいえ|いいえ|いいえ|
-|App Store の管理対象 iOS アプリケーション (ユーザー グループに展開)|[はい]|○|○|Yes|
-|App Store の管理対象 iOS アプリケーション (デバイス グループに展開)|[はい]|いいえ|○|[はい]|
+|Windows アプリケーション パッケージ (ユーザー グループに展開)|はい|はい|はい|はい|
+|Windows アプリ パッケージ (デバイス グループに展開)|はい|[いいえ]|はい|はい|
+|モバイル デバイス用アプリケーション パッケージ (ユーザー グループに展開)|はい|はい|はい|はい|
+|モバイル デバイス用アプリケーション パッケージ (デバイス グループに展開)|はい|[いいえ]|はい|はい|
+|Windows インストーラー (ユーザー グループに展開)|[いいえ]|はい|[いいえ]|はい|
+|Windows インストーラー (デバイス グループに展開)|はい|[いいえ]|はい|はい|
+|外部のリンク (ユーザー グループに展開)|[いいえ]|はい|[いいえ]|はい|
+|外部のリンク (デバイス グループに展開)|[いいえ]|[いいえ]|[いいえ]|[いいえ]|
+|App Store の管理対象 iOS アプリケーション (ユーザー グループに展開)|はい|はい|はい|はい|
+|App Store の管理対象 iOS アプリケーション (デバイス グループに展開)|はい|[いいえ]|はい|はい|
 > [!TIP]
 > アプリを展開するときに、ユーザーとデバイス グループの両方を選択した場合、アプリは **[利用可能なインストール]** としてのみ展開できます。
 
@@ -71,6 +71,6 @@ ms.lasthandoff: 10/10/2017
 -   1 つのデバイスで、必須のインストールと利用可能なインストールを受信した場合は、この 2 つの操作が組み合わされます。 別の言い方をすると、ユーザーは利用可能なアプリを必須のインストールが開始する前にポータル サイトからインストールできます。
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Microsoft Intune でアプリを展開する](deploy-apps-in-microsoft-intune.md)方法を知る

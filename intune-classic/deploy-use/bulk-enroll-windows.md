@@ -1,24 +1,24 @@
 ---
-title: "Windows 10 の一括登録"
-description: "Microsoft Intune の一括登録パッケージを作成する"
-keywords: 
+title: Windows 10 の一括登録
+description: Microsoft Intune の一括登録パッケージを作成する
+keywords: ''
 author: NathBarn
 ms.author: NathBarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0053e37a-f26e-452f-9524-5039a635b52e
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.custom: intune-classic
-ms.openlocfilehash: 5c7a51721850f539a1a3c2648054f2d3604231e0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 3660255503c0dc7faa8d41b698f3d5fd9e4c330f
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows デバイスの一括登録
 
@@ -49,7 +49,7 @@ Windows デバイスの一括登録には、以下が必要です。
   - **[説明]** - プロジェクトの説明 (オプション) ![Windows 構成デザイナー アプリで、名前、プロジェクト フォルダー、説明を指定するスクリーンショット](../media/bulk-enroll-name.png)
 
 4.  デバイスの一意の名前を入力します。 名前には、シリアル番号 (%%SERIAL%%)、または文字のランダムなセットを含めることができます。 必要に応じて、Windows のエディションをアップグレードする場合にプロダクト キーを入力したり、デバイスを共有使用のために構成したり、事前にインストールされたソフトウェアを削除することもできます。<BR>
-![Windows 構成デザイナー アプリで、名前、プロジェクト フォルダー、説明を指定するスクリーンショット](../media/bulk-enroll-device.png)
+![Windows Configuration Designer アプリで、名前、プロジェクト フォルダー、説明を指定するスクリーン ショット](../media/bulk-enroll-device.png)
 
 5.  必要に応じて、初回起動時にデバイスが接続する Wi-fi ネットワークを構成できます。  これが構成されていない場合は、デバイスの初回起動時にワイヤード (有線) ネットワーク接続が必要になります。
 ![Windows Configuration Designer アプリで、ネットワーク SSID やネットワークの種類のオプションを含む Wi-fi を有効にするスクリーン ショット](../media/bulk-enroll-network.png)

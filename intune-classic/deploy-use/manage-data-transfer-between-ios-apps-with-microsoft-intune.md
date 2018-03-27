@@ -1,25 +1,25 @@
 ---
-title: "iOS アプリ間のデータ転送を管理する"
-description: "このトピックを使用すると、iOS の開く機能とモバイル アプリ管理ポリシーを使用してアプリ間のデータ転送を管理する方法を把握できます。"
-keywords: 
+title: iOS アプリ間のデータ転送を管理する
+description: このトピックを使用すると、iOS の開く機能とモバイル アプリ管理ポリシーを使用してアプリ間のデータ転送を管理する方法を把握できます。
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c460e48360bb31076e2054297b037d08545ea1ae
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6b83e5fa37f9a9844e3011cded3c3cd58f268521
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Microsoft Intune を使用して iOS アプリ間のデータ転送を管理する
 
@@ -77,7 +77,7 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 |サードパーティ MDM プロバイダー| Configuration キー | 値の種類 | 構成値|
 | ------- | ---- | ---- | ---- |
 | VMware AirWatch | IntuneMAMUPN | 文字列型 | {UserPrincipalName}|
-| MobileIron Core | IntuneMAMUPN | 文字列型 | $EMAIL$  **または**  $USER_UPN$ |
+| MobileIron Core | IntuneMAMUPN | 文字列型 | $EMAIL$ **または** $USER_UPN$ |
 | MobileIron Cloud | IntuneMAMUPN | 文字列型 | ${userUPN} **または** ${userEmailAddress} |
 | ManageEngine Mobile Device Manager | IntuneMAMUPN | 文字列型 | %upn% |
 

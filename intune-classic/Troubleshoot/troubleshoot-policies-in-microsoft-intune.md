@@ -1,25 +1,25 @@
 ---
-title: "ポリシーに関するトラブルシューティング"
-description: "ポリシー構成に関する問題のトラブルシューティングを行います。"
-keywords: 
+title: ポリシーに関するトラブルシューティング
+description: ポリシー構成に関する問題のトラブルシューティングを行います。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 01/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2e97c47dc2d1744f539f569de4c20ee994d05ffd
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 7f9632a8b769fae5c3ae0fdf7041b968a9707d24
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-policies-in-microsoft-intune"></a>Microsoft Intune のポリシーのトラブルシューティング
 
@@ -97,5 +97,5 @@ Intune ソフトウェア クライアントで管理されている Windows PC 
 
 
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」の説明に従って Microsoft サポートにお問い合わせください。
