@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune を使用してデバイスを管理する"
-titleSuffix: 
-description: "Intune で管理するデバイスを確認し、それらに対して各種操作を実行します。"
-keywords: 
+title: Microsoft Intune を使用してデバイスを管理する
+titleSuffix: ''
+description: Intune で管理するデバイスを確認し、それらに対して各種操作を実行します。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e69f47e841cb44ab646431d5bd81b9c1d874c64
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 436eeb306bf4ba343ae4d88a824aeed2077a3426
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune デバイスの管理とは
 
@@ -30,7 +30,7 @@ IT 管理者はデータをリスクから保護しながら、エンド ユー�
 **[デバイス]** ワークロードでは、管理対象のデバイスについての情報が得られ、そのデバイスでリモート タスクを実行できます。 このワークロードにアクセスするには、以下の手順に従います。
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** で、**[デバイス]** を選択します。
 4. 次のデバイスに関する情報を確認して、リモート デバイスの操作を実行することができます。
     - **[概要]** - 管理可能な登録済みデバイスのスナップショット。

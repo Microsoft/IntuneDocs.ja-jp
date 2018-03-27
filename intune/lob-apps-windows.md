@@ -1,25 +1,25 @@
 ---
-title: "Windows の基幹業務アプリを Microsoft Intune に追加する方法"
-titlesuffix: 
-description: "Windows の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法について説明します。"
-keywords: 
+title: Windows の基幹業務アプリを Microsoft Intune に追加する方法
+titlesuffix: ''
+description: Windows の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法について説明します。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 03/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e23ddb70bb2c12e1278f4167ec074972eeba3003
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: f975f2018d2ce1d7affded3c3386c479e6877388
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Windows の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法
 
@@ -30,8 +30,8 @@ ms.lasthandoff: 03/12/2018
 ## <a name="step-1---specify-the-software-setup-file"></a>手順 1 - ソフトウェアのセットアップ ファイルを指定する
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3. **[Intune]** ウィンドウで、**[モバイル アプリ]** を選びます。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. **[Intune]** ウィンドウで、**[モバイル アプリ]** を選択します。
 4. **[モバイル アプリ]** ワークロードで、**[管理]** > **[アプリ]** の順に選択します。
 5. アプリの一覧の上にある **[追加]** を選択します。
 6. **[アプリの追加]** ウィンドウで、**[基幹業務アプリ]** を選択します。

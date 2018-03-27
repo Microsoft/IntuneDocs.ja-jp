@@ -1,25 +1,25 @@
 ---
-title: "Windows 10 用のアプリ保護ポリシーを構成する準備をする"
-description: "Azure AD でモバイル アプリケーション管理 (MAM) プロバイダーをセットアップします"
-keywords: 
+title: Windows 10 用のアプリ保護ポリシーを構成する準備をする
+description: Azure AD でモバイル アプリケーション管理 (MAM) プロバイダーをセットアップします
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 04/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ebc7cfc8-40b9-47c2-8357-d392ebbb27c8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6fc748f060d131364be39899fcb5ac35f1228801
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: a18136a6b7aa26391a38aa071699dc60dc024c21
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Windows 10 用のアプリ保護ポリシーを構成する準備をする
 
@@ -44,7 +44,7 @@ Windows 10 のアプリ保護ポリシーを作成する前に、Azure AD でモ
 
 4.  構成ブレードが開くので、**[既定の MAM URL を復元する]** を最初に選んでから、以下を構成します。
 
-    a.  [MAM ユーザー スコープ]: MAM を使って、Windows 10 デバイスを使う特定のユーザー グループまたはすべてのユーザーの企業データを保護できます。
+    」を参照します。  [MAM ユーザー スコープ]: MAM を使って、Windows 10 デバイスを使う特定のユーザー グループまたはすべてのユーザーの企業データを保護できます。
 
     b.  [MAM 使用条件 URL]: MAM サービスの使用条件エンドポイントの URL です。 これは、MAM サービスの使用条件をエンドユーザーに表示するために使います。
 
@@ -54,6 +54,6 @@ Windows 10 のアプリ保護ポリシーを作成する前に、Azure AD でモ
 
 5.  これらの設定を構成した後、**[保存]** を選びます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [WIP アプリ保護ポリシーを作成する](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune)
