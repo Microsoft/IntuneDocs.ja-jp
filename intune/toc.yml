@@ -357,6 +357,13 @@
               href: device-restrictions-windows-holographic.md
             - name: Android for Work
               href: device-restrictions-android-for-work.md
+        - name: エンドポイント保護の構成
+          href: endpoint-protection-configure.md
+          items:
+            - name: macOS
+              href: endpoint-protection-macos.md
+            - name: Windows 10
+              href: endpoint-protection-windows-10.md
         - name: 電子メールの設定を構成する
           href: email-settings-configure.md
           items:
@@ -398,8 +405,6 @@
               href: wi-fi-settings-import-windows-8-1.md
         - name: Windows 10 エディションのアップグレード設定を構成する
           href: edition-upgrade-configure-windows-10.md
-        - name: Windows 10 の Endpoint Protection
-          href: endpoint-protection-windows-10.md
         - name: Windows 10 の教育設定を構成する
           href: education-settings-configure.md
         - name: iOS の教育設定を構成する
