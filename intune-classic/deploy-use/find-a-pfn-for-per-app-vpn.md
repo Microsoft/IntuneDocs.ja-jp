@@ -1,25 +1,25 @@
 ---
-title: "アプリごとの VPN のパッケージ ファミリ名 (PFN) の検索"
-description: "アプリごとの VPN を構成できるように PFN を検索する。"
-keywords: 
+title: アプリごとの VPN のパッケージ ファミリ名 (PFN) の検索
+description: アプリごとの VPN を構成できるように PFN を検索する。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 10/25/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tycast
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f4b5d71e46fbc78ebadf52e96bb75eedecc291ee
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: de1a5beafae900a21f685cf1daeb2302cbf245b3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="find-a-package-family-name-pfn-for-per-app-vpn-configuration"></a>アプリごとの VPN 構成のパッケージ ファミリー名 (PFN) を検索する
 
@@ -72,10 +72,10 @@ OneNote について取得される情報の例を次に示します。
 
 ## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>アプリがコンピューターにインストールされていない場合に PFN を検索する
 
-1.  https://www.microsoft.com/ja-jp/store/apps に移動します。
+1.  「https://www.microsoft.com/store/apps」を参照してください。
 2.  検索バーにアプリ名を入力します。 この例では、OneNote を検索します。
 3.  アプリのリンクを選びます。 URL の末尾に一連の文字があることに注意してください。 この例では、URL は `https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl` のようになります。
-4.  別のタブに URL "`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`" を貼り付けます。 `<app id>` の部分を、https://www.microsoft.com/ja-jp/store/apps から取得したアプリ ID (手順 3 の URL の末尾にある一連の文字) で置き換えます。 この OneNote の例の場合、`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata` を貼り付けます。
+4.  別のタブに URL "`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`" を貼り付けます。 `<app id>` を、https://www.microsoft.com/store/apps から取得したアプリ ID (手順 3 の URL の末尾にある一連の文字) で置き換えます。 この OneNote の例の場合、`https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata` を貼り付けます。
 
 Microsoft Edge に目的の情報が表示されます。Internet Explorer で **[開く]** を選んで情報を確認します。 PFN 値は最初の行に表示されます。 この例の結果は次のようになります。
 

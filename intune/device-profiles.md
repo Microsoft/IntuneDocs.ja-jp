@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune - Azure のデバイス プロファイル | Microsoft Docs"
-description: "機能、制限事項、電子メール、WiFi、VPN、教育、証明書、Windows 10 のアップグレード、BitLocker と Windows Defender、Windows 情報保護、Azure Portal でのデバイスのカスタム構成設定を含む、さまざまな Microsoft Intune デバイス プロファイルの概要。 これらのプロファイルを使用して、社内のデータとデバイスを管理および保護します。"
-keywords: 
+title: Microsoft Intune - Azure のデバイス プロファイル | Microsoft Docs
+description: 機能、制限事項、電子メール、WiFi、VPN、教育、証明書、Windows 10 のアップグレード、BitLocker と Windows Defender、Windows 情報保護、Azure Portal でのデバイスのカスタム構成設定を含む、さまざまな Microsoft Intune デバイス プロファイルの概要。 これらのプロファイルを使用して、社内のデータとデバイスを管理および保護します。
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 03/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
-ms.reviewer: 
+ms.technology: ''
+ms.assetid: ''
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 79ca6eaf22233dd6d024a28e456e57a8a74d02aa
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e92a10f51fb403c802c1c6d3ea79ccf49a1e93fb
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Microsoft Intune のデバイス プロファイルとは
 
@@ -120,6 +120,8 @@ Microsoft Intune には、組織内のさまざまなデバイスで有効また
 ## <a name="endpoint-protection-profile"></a>Endpoint Protection プロファイル
 [Windows 10 用の Endpoint Protection 設定](endpoint-protection-windows-10.md)は、Windows 10 デバイス用の BitLocker および Windows Defender の設定を構成します。
 
+Windows Defender Advanced Threat Protection (WDATP) と Microsoft Intune をオンボードするには、「[Configure endpoints using Mobile Device Management (MDM) tools](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection)」 (モバイル デバイス管理 (MDM) ツールを使用してエンドポイントを構成する) を参照してください。
+
 この機能がサポートしているのは、Windows 10 のみです。
 
 ## <a name="windows-information-protection-profile"></a>Windows 情報保護プロファイル
@@ -130,7 +132,7 @@ Microsoft Intune には、組織内のさまざまなデバイスで有効また
 ## <a name="custom-profile"></a>カスタム プロファイル
 [カスタム設定](custom-settings-configure.md)には、Intune に組み込まれていないデバイス設定を割り当てる機能が含まれています。 たとえば、Android デバイスでは、OMA-URI 値を入力できます。 iOS デバイスの場合は、Apple Configurator で作成した構成ファイルをインポートできます。 
 
-この機能では以下をサポートします。 
+この機能では以下をサポートします。
 
 - Android
 - iOS

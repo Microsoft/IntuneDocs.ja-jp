@@ -1,25 +1,25 @@
 ---
-title: "Intune コンソールで MAM ポリシーを構成する"
-description: "Microsoft Intune のモバイル アプリケーション管理ポリシーでは、会社のコンプライアンスとセキュリティ ポリシーに合わせて展開するアプリの機能を変更できます。"
-keywords: 
+title: Intune コンソールで MAM ポリシーを構成する
+description: Microsoft Intune のモバイル アプリケーション管理ポリシーでは、会社のコンプライアンスとセキュリティ ポリシーに合わせて展開するアプリの機能を変更できます。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 03/17/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 881180fec0fe4fca8b49106bcae6ea1ecd52c2eb
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 94c6a46d2213ba3d1389b52f7684ec531e40228a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Microsoft Intune コンソールでモバイル アプリケーション管理ポリシーを構成して展開する
 
@@ -76,7 +76,7 @@ Outlook アプリの使用例を次に示します。
 
 ## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mam-enabled-app"></a>手順 1: ポリシー管理型アプリへのリンクを取得して、ラップされたアプリを作成するか、Intune アプリ SDK を使用して MAM 対応アプリを作成する
 
-アプリ ストアから、展開するポリシー管理型アプリの URL を見つけてメモします。 たとえば、Microsoft Word for iPad アプリの URL は、**https://itunes.apple.com/jp/app/microsoft-word-for-ipad/id586447913?mt=8** です。
+アプリ ストアから、展開するポリシー管理型アプリの URL を見つけてメモします。 たとえば、Microsoft Word for iPad アプリの URL は **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8** です。
 
 
 ## <a name="step-2-publish-the-app-to-your-cloud-storage-space"></a>手順 2: クラウド ストレージにアプリを公開する

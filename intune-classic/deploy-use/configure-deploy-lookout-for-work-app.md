@@ -1,24 +1,24 @@
 ---
-title: "Lookout for Work アプリを展開する"
-description: "Android 用の Lookout for Work アプリを構成して展開します。"
+title: Lookout for Work アプリを展開する
+description: Android 用の Lookout for Work アプリを構成して展開します。
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/21/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fd0ad36f40463ab56f1a5ab0a11fa9eeb0c35db4
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5d56dcf54c4f087dbea0dfcd95a2eebbdf384c00
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-and-deploy-lookout-for-work-app"></a>Lookout for Work アプリを構成して展開する
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 10/10/2017
 ## <a name="android-google-play-store-app"></a>Android (Google Play ストア アプリ)
 
 1.  [Microsoft Intune 管理者コンソール](https://manage.microsoft.com)で、**[アプリ]** に移動し、**[アプリの追加]** を選択します。
-2.  発行元の **[ソフトウェア セットアップ]** ページで、**[外部リンク]** を選択し、URL "https://play.google.com/store/apps/details?id=com.lookout.enterprise" を指定します。
+2.  発行元の **[ソフトウェア セットアップ]** ページで、**[外部リンク]** を選択して、https://play.google.com/store/apps/details?id=com.lookout.enterprise という URL を指定します。
   >[!NOTE]
   >Managed Browser を要求するボックスをオンにしないでください。
 
@@ -60,11 +60,11 @@ ms.lasthandoff: 10/10/2017
 
 3. 次の手順を実行して、iOS ユーザーの Azure Active Directory 認証を有効にします。
   1.  [Azure Active Directory 管理ポータル](https://manage.windowsazure.com)にログインし、アプリケーション ページに移動します。
-  2.  **ネイティブ クライアント アプリケーション**として **Lookout for Work iOS アプリ**を追加します。
+  2.  **Lookout for Work iOS アプリ**を**ネイティブ クライアント アプリケーション**として追加します。
   ![ネイティブ クライアント アプリ オプションが表示されたアプリの追加ダイアログのスクリーンショット](../media/mtp/aad-add-app.png)
   3. **com.lookout.enterprise.yourcompanyname** は、IPA に署名したときに選択したカスタマー バンドル ID で置き換えます。
   4.  リダイレクト URI を追加します。**&lt;companyportal://code/>** の後に、元のリダイレクト URI を URL エンコードしたバージョンを続けます。
-  5.  アプリに**デリゲートされたアクセス許可**を追加します。
+  5.  アプリに**委任されたアクセス許可**を追加します。
 
   詳細については、「[ネイティブ クライアント アプリケーションの構成](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application)」を参照してください。
 
@@ -86,11 +86,11 @@ ms.lasthandoff: 10/10/2017
   **[必須のインストール]** オプションを選択し、Lookout アプリがユーザーのデバイスに必ずインストールされるようにします。
 
 ## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>展開したアプリがデバイスで開かれている場合はどうなりますか
-https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md ユーザーがデバイスで Lookout for Work を開くと、アプリをアクティブ化し、[Sign in with Azure Active Directory (Azure Active Directory でサインインする)] オプションを選択するように求められます。 エンド ユーザーの詳細な手順については、次のトピックをご覧ください。
+https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md ユーザーがデバイスで Lookout for Work を開くと、アプリをアクティブ化し、[Azure Active Directory でサインインする] オプションを選択するように求められます。 エンド ユーザーの詳細な手順については、次のトピックをご覧ください。
 
 * [Android デバイスで Lookout for Work のインストールを求められる](https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
 
-* [Android デバイスで Lookout for Work が検出した脅威を解決する必要がある](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+* [Lookout for Work が Android デバイスで検出した脅威を解決する必要がある](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 * [Intune での Lookout デバイス コンプライアンス ポリシーの作成](https://docs.microsoft.com/sccm/protect/deploy-use/enable-device-threat-protection-rule-compliance-policy)

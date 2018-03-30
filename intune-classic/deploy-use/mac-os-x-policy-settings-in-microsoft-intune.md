@@ -1,25 +1,25 @@
 ---
-title: "Mac OS X ポリシー設定"
-description: "Intune には、Mac OS X デバイスで構成できるさまざまな全般設定が組み込まれています。 また、Apple Configurator ツールを使用し、Intune にはないユーザー設定を作成できます。"
-keywords: 
+title: Mac OS X ポリシー設定
+description: Intune には、Mac OS X デバイスで構成できるさまざまな全般設定が組み込まれています。 また、Apple Configurator ツールを使用し、Intune にはないユーザー設定を作成できます。
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 18f05219d002f0998e25671e39f1e71449b7b6c7
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 873b1041ec7f5a993195e4a988580fd88100b282
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>Microsoft Intune の Mac OS X 構成ポリシー設定
 
@@ -63,7 +63,7 @@ Mac OS X の **[準拠アプリ&amp;非準拠アプリ]** 一覧で、**[デバ�
 |----------------|---------------|
 |**ユーザーが一覧に表示されているアプリをインストールした場合はコンプライアンス違反としてレポートする**|ユーザーにインストールを許可していない Mac OS X アプリを一覧表示します。 このようなアプリのいずれかをユーザーがインストールした場合は、該当するものが**非準拠アプリのレポート**で報告されます。|
 |**ユーザーが一覧表示されていないアプリをインストールした場合はコンプライアンス違反としてレポートする**|ユーザーにインストールを許可している Mac OS X アプリを表示します。 一覧表示されていないアプリをユーザーがインストールした場合は、該当するものが**非準拠アプリのレポート**で報告されます。|
-|**[追加]**|選択した一覧にアプリを追加します。 追加するアプリの名前と、必要に応じて、アプリの発行者、アプリのバンドル ID を指定します。 **ヒント:** アプリのバンドル ID を検索するには、アプリがインストールされている Mac コンピューターで次の手順を使用します。<ol><li>アプリがインストールされているフォルダーを開きます (たとえば、**/Applications**)。</li><li>*&lt;App Name&gt;***.app** バンドルを選択し、**[パッケージの内容を表示]** を選択します。</li><li>**Info.plist** ファイルを開きます。</li><li>キー **CFBundleIdentifier** に関連付けられた値を確認します。</li></ol>バンドル ID の形式は、**com.contoso.appname**です。|
+|**[追加]**|選択した一覧にアプリを追加します。 追加するアプリの名前と、必要に応じて、アプリの発行者、アプリのバンドル ID を指定します。 **ヒント:** アプリのバンドル ID を検索するには、アプリがインストールされている Mac コンピューターで次の手順を使用します。<ol><li>アプリがインストールされているフォルダーを開きます (たとえば、**/Applications**)。</li><li>*&lt;アプリ名&gt;***.app** バンドルを選択し、**[パッケージの内容を表示]** を選択します。</li><li>**Info.plist** ファイルを開きます。</li><li>キー **CFBundleIdentifier** に関連付けられた値を確認します。</li></ol>バンドル ID の形式は、**com.contoso.appname**です。|
 |**アプリをインポートする**|コンマ区切り値ファイルで指定したアプリの一覧をインポートします。 ファイルで使用する形式: アプリ名、発行者、アプリのバンドル ID。|
 |**編集**|選択したアプリの名前、発行者、およびアプリのバンドル ID を編集します。|
 |**削除**|選択したアプリを一覧から削除します。|
@@ -112,7 +112,7 @@ Microsoft Intune の **Mac OS X カスタム構成ポリシー**を使用して�
 
 
 ### <a name="how-to-create-a-configuration-profile-file"></a>構成プロファイル ファイルを作成する方法
-カスタム ポリシーで使用される構成プロファイル ファイルは、次の 2 つの方法で作成することができます。
+カスタム ポリシーで使用される構成プロファイル ファイルは、次の 2 つの方法で作成できます。
 
 -   Apple Configurator ツールからファイル (拡張子が **.mobileconfig**) をエクスポートします。
 
