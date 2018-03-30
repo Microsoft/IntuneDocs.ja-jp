@@ -1,25 +1,25 @@
 ---
-title: "デバイスを Microsoft Intune と同期する - Azure | Microsoft Docs"
-description: "登録または管理されているデバイスを Intune と同期して最新のポリシーとアクションを取得します。 Azure Portal を使用して同期するための手順を示し、再試行できるエラー コードを一覧表示します。"
-keywords: 
+title: デバイスを Microsoft Intune と同期する - Azure | Microsoft Docs
+description: 登録または管理されているデバイスを Microsoft Intune と同期して最新のポリシーとアクションを取得します。 Azure Portal を使用して同期するための手順を示し、再試行できるエラー コードを一覧表示します。
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d2d13ce2ed06549a6cd09fd766a0072b15fcd067
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 7af71a2d5c3ad871e69424cf6afbf7c364bb888d
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="sync-devices-to-get-the-latest-policies-and-actions---intune"></a>デバイスを同期して最新のポリシーとアクションを取得する - Intune
+# <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>デバイスを Intune と同期して最新のポリシーとアクションを取得する
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,16 +36,16 @@ ms.lasthandoff: 03/08/2018
 
 ## <a name="sync-a-device"></a>デバイスを同期する
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+1. [Azure ポータル](https://portal.azure.com)にサインインします。
 2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。 
-3. **Intune** で、**[デバイス]**、**[すべてのデバイス]** の順に選択します。
-4. 管理するデバイスの一覧からデバイスを選択し、**[詳細]**、**[同期]** 操作の順に選択します。
+3. **Intune** で、**[デバイス]** > **[すべてのデバイス]** の順に選択します。
+4. 管理するデバイスの一覧で、デバイスを選択して、**[詳細]**、**[同期]** の順に選択します。
 5. **[はい]** をクリックして操作を確定します。
 
 
 ## <a name="retryable-error-codes"></a>再試行可能なエラー コード
 
-管理者がデバイスの**[同期]** 操作を行ったときに、失敗したものの再試行可能なエラー コードが生成された iOS アプリおよび Android アプリは、引き続きデバイスで使用できます。 ただし、再試行不可能なエラー コードが生成されたアプリは、デバイスで使用できるようになるまでに 7 日間待機する必要があります。
+管理者が **[同期]** デバイス アクションを実行したときに、失敗したものの再試行可能なエラー コードが生成された iOS アプリおよび Android アプリは、引き続きデバイスで使用できます。 ただし、再試行不可能なエラー コードが生成されたアプリは、デバイスで使用できるようになるまでに 7 日間待機する必要があります。
 
 
 | エラー コード  | 提案された説明 | 再試行可能 |
@@ -62,6 +62,6 @@ ms.lasthandoff: 03/08/2018
 | 2016330889 | セキュリティで保護された接続に失敗しました。 接続をリセットします。 | はい|
 | 2016330888 | サーバーの信頼評価に失敗しました。 | [いいえ]|
 
-## <a name="next-step"></a>次の手順
+## <a name="next-steps"></a>次の手順
 
-**[デバイス アクション]** を選択して同期操作の状態を表示します。 
+- 同期操作の状態を表示するには、**[デバイス アクション]** を選択します。 

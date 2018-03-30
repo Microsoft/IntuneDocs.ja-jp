@@ -1,25 +1,25 @@
 ---
-title: "iOS デバイスの Apple DEP 管理"
-description: "Apple デバイスを管理するために、iOS Device Enrollment Program (DEP) を通じて購入した iOS デバイスを登録する登録プロファイルを無線で展開します。"
-keywords: 
+title: iOS デバイスの Apple DEP 管理
+description: Apple デバイスを管理するために、iOS Device Enrollment Program (DEP) を通じて購入した iOS デバイスを登録する登録プロファイルを無線で展開します。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 885e3f0608cd367cb23658c342451a4a56e5474d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: bf47c802291d802ac890aa4ba00cf79d9d2d10f0
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>会社所有のデバイス登録プログラムによる iOS デバイスの登録
 
@@ -29,13 +29,14 @@ Microsoft Intune は、"無線" で Device Enrollment Program (DEP) を通じて
 
 >[!NOTE]
 >DEP 登録は、[デバイス登録マネージャー](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)の方法と同時に使用することはできません。
->また、ユーザーがポータル サイト アプリなどを使用して iOS デバイスを登録し、デバイスのシリアル番号がインポートされて DEP プロファイルが割り当てられると、このデバイスは Intune から登録が解除されます。
+>さらに、ユーザーが iOS デバイスを登録し (つまり、ポータル サイト アプリを使用して)、デバイスのシリアル番号がインポートされて DEP プロファイルが割り当てられると、このデバイスは Intune から登録解除されます。
+> また、macOS では現在、DEP はサポートされていません。
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>Apple DEP 管理を使用して iOS デバイスを登録する場合の前提条件
 
 - [APNs 証明書のインストール](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
-- 組織は Apple DEP に参加し、そのプログラムでデバイスを取得する必要があります。 そのプロセスの詳細については、  [https://deploy.apple.com](https://deploy.apple.com)を参照してください。このプログラムの利点には、各デバイスをコンピューターに USB ケーブルを使用して接続することなく、デバイスを楽に設定できる点があります。
+- 組織は Apple DEP に参加し、そのプログラムでデバイスを取得する必要があります。 そのプロセスの詳細については、[https://deploy.apple.com](https://deploy.apple.com) を参照してください。このプログラムの利点には、各デバイスをコンピューターに USB ケーブルを使用して接続することなく、デバイスを楽に設定できる点があります。
 
 - DEP に企業所有の iOS デバイスを登録するには、Apple の DEP トークンが必要です。 このトークンにより、Intune は企業所有の DEP 参加デバイスに関する情報を同期できるようになります。 また、Intune は Apple への登録プロファイルのアップロードを実行して、デバイスをそれらのプロファイルに割り当てられるようになります。
 
@@ -53,7 +54,7 @@ Microsoft Intune は、"無線" で Device Enrollment Program (DEP) を通じて
 
 ### <a name="get-a-device-enrollment-program-token"></a>Device Enrollment Program のトークンを取得する
 
-1. [Device Enrollment Program ポータル](https://deploy.apple.com) (https://deploy.apple.com) に移動し、会社の Apple ID でサインインします。 この Apple ID は、将来 DEP トークンを更新するために使用する必要があります。
+1. [Device Enrollment Program ポータル](https://deploy.apple.com) (https://deploy.apple.com)) に移動し、会社の Apple ID でサインインします。 この Apple ID は、将来 DEP トークンを更新するために使用する必要があります。
 
 2.  デバイス登録プログラム ポータルで、**[デバイス登録プログラム]** &gt; **[サーバーの管理]** の順に移動して、**[MDM サーバーの追加]** を選択します。
 
@@ -130,7 +131,7 @@ Microsoft Intune は、"無線" で Device Enrollment Program (DEP) を通じて
 
 ### <a name="assign-dep-devices-for-management"></a>管理対象の DEP デバイスを割り当てる
 
-1. [Device Enrollment Program ポータル](https://deploy.apple.com) (https://deploy.apple.com) に移動し、会社の Apple ID でサインインします。
+1. [Device Enrollment Program ポータル](https://deploy.apple.com) (https://deploy.apple.com)) に移動し、会社の Apple ID でサインインします。
 
 2. **[Deployment Program]** (展開プログラム) &gt; **[Device Enrollment Program]** (デバイス登録プログラム) &gt; **[Manage Devices]** (デバイスの管理) の順に移動します。
 

@@ -1,23 +1,23 @@
 ---
-title: "iOS の Microsoft Intune デバイス制限設定"
-titleSuffix: 
-description: "iOS を実行するデバイスでデバイスの設定と機能を制御するために使用できる Intune の設定について説明します。"
-keywords: 
+title: iOS の Microsoft Intune デバイス制限設定
+titleSuffix: ''
+description: iOS を実行するデバイスでデバイスの設定と機能を制御するために使用できる Intune の設定について説明します。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 436be436991ea4f2f295291fb95122cddf4e7ac5
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune での iOS デバイスの制限設定
 
@@ -40,7 +40,6 @@ ms.lasthandoff: 03/12/2018
 - **[デバイスでの [すべてのコンテンツと設定を消去] オプションの使用 (監視モードのみ)]** - ユーザーがデバイスのすべてのコンテンツと設定を消去するオプションを使用できるようにします。
 - **[デバイス名の変更 (監視モードのみ)]** - ユーザーがデバイスの名前を変更することを許可します。
 - **[通知設定の変更 (監視モードのみ)]** - ユーザーがデバイスの通知設定を変更することを許可します。
-- **[壁紙の変更 (監視モードのみ)]** - ユーザーがデバイスの壁紙を変更することを許可します。
 - **[エンタープライズ アプリの信頼設定の変更 (監視モードのみ)]** - アプリ ストアからダウンロードされたのではないアプリを信頼するようにユーザーが選択できます。
 - **[構成プロファイルの変更 (監視モードのみ)]** - ユーザーが構成プロファイルをインストールできるようにします。
 - **[アクティベーション ロック (監視下のみ)]** - 監視されている iOS デバイスでアクティベーション ロックを有効にします。
@@ -74,7 +73,6 @@ iOS 監視モードは、Apple の Device Enrollment Program または Apple Con
 - キーボード ショートカット 
 - パスコードの変更 
 - デバイス名の変更 
-- 壁紙の変更 
 - アプリの自動ダウンロード 
 - エンタープライズ アプリケーションの信頼に対する変更 
 - Apple Music 
@@ -170,7 +168,7 @@ iOS 監視モードは、Apple の Device Enrollment Program または Apple Con
 ページの URL をコピーして、許可されているアプリまたは禁止されているアプリの一覧、またはキオスク モードで実行するアプリを構成する URL として使用します。
 制限付きアプリの設定を含むデバイス プロファイルは、ユーザーのグループに割り当てる必要があります。
 
-例: Microsoft Word for iPad を検索します。 https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8 という URL を使用します。
+例: Microsoft Word for iPad を検索します。 使用する URL は https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8 になります。
 
 > [!Note]
 > iTunes を使用してアプリを検索し、**[リンクのコピー]** コマンドを使用してアプリの URL を入手することもできます。
@@ -195,7 +193,7 @@ iOS 監視モードは、Apple の Device Enrollment Program または Apple Con
 検索エンジンを使用して、iTunes App Store で使用するアプリを検索し、アプリのページを開きます。
 ページの URL をコピーして、許可されているアプリまたは禁止されているアプリの一覧、またはキオスク モードで実行するアプリを構成する URL として使用します。
 
-例: Microsoft Word for iPad を検索します。 https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8 という URL を使用します。
+例: Microsoft Word for iPad を検索します。 使用する URL は https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8 になります。
 
 > [!Note]
 > iTunes ソフトウェアを使用してアプリを検索し、**[リンクのコピー]** コマンドを使用してアプリの URL を入手することもできます。

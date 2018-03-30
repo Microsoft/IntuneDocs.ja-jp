@@ -1,25 +1,25 @@
 ---
-title: "ポータル サイト アプリを構成する方法"
+title: ポータル サイト アプリを構成する方法
 titleSuffix: Microsoft Intune
-description: "会社固有のブランドを Intune ポータル サイト アプリに適用する方法について説明します。"
-keywords: 
+description: 会社固有のブランドを Intune ポータル サイト アプリに適用する方法について説明します。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd876739fb0f3ad6d2e0fea705825a26ebc9fe03
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 186f6c1749d94a995ad145ca535bb59c6f02875c
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune ポータル サイト アプリを構成する方法
 
@@ -41,9 +41,9 @@ ms.lasthandoff: 03/02/2018
 |**会社名**|40|ポータル サイトのタイトルとして表示される名前です。|        
 |**IT 部門の担当者名**|40|**[IT に連絡]** ページに表示される名前です。|      
 |**IT 部門の電話番号**|20|**[IT に連絡]** ページに表示される連絡先の電話番号です。|        
-|IT 部門の電子メール アドレス|40|**[IT に連絡]** ページに表示される連絡先の電子メール アドレスです。 **alias@domainname.com** の形式で有効な電子メール アドレスを入力する必要があります。|     
+|**IT 部門の電子メール アドレス**|40|**[IT に連絡]** ページに表示される連絡先の電子メール アドレスです。 **alias@domainname.com** の形式で有効な電子メール アドレスを入力する必要があります。|     
 |**追加情報**|120|**[IT に連絡]** ページに表示されます。|      
-|**会社のプライバシーに関する声明の URL**|79|ポータル サイトでユーザーがプライバシー リンクをクリックすると表示される、各社のプライバシーに関する声明を指定できます。 **https://www.contoso.com** の形式で有効な URL を入力します。|        
+|**会社のプライバシーに関する声明の URL**|79|ポータル サイトでユーザーがプライバシー リンクをクリックすると表示される、各社のプライバシーに関する声明を指定できます。 **https://www.contoso.com** の形式で有効な URL を入力する必要があります。|        
 
 ## <a name="support-contacts"></a>サポートの連絡先     
 サポート Web サイトは、ポータル サイトに表示されます。ユーザーは、サポート サイトからオンライン サポートを利用できます。        
@@ -52,7 +52,7 @@ ms.lasthandoff: 03/02/2018
 
 |フィールド名|最大長|詳細情報|        
 |-|-|-|     
-|**サポート Web サイトの URL**|150|ユーザーが使用するサポート Web サイトがある場合、その URL を指定します。 URL は、**https://www.contoso.com** という形式にする必要があります。URL を指定しない場合、ポータル サイトの **[IT に連絡]** ページのサポート Web サイトには何も表示されません。|        
+|**サポート Web サイトの URL**|150|ユーザーが使用するサポート Web サイトがある場合、その URL を指定します。 URL は、**https://www.contoso.com** の形式である必要があります。URL を指定しない場合、ポータル サイトの **[IT に連絡]** ページのサポート Web サイトには何も表示されません。|        
 |**サポート Web サイトの名前**|40|サポート Web サイトの URL に表示されるフレンドリ名です。 サポート Web サイトの URL を指定し、フレンドリ名を指定しない場合、ポータル サイトの **[IT に連絡]** ページに [IT Web サイトに移動する] が表示されます。       
 
 ## <a name="company-branding-customization"></a>会社のブランドのカスタマイズ       

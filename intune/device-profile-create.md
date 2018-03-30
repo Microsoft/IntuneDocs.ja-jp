@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune - Azure でのデバイス プロファイルの作成 | Microsoft Docs"
-description: "Microsoft Intune でデバイス プロファイルを追加または構成するには、プラットフォームの種類を選択し、Azure Portal で設定を構成することが伴います"
-keywords: 
+title: Microsoft Intune - Azure でのデバイス プロファイルの作成 | Microsoft Docs
+description: Microsoft Intune でデバイス プロファイルを追加または構成する場合、プラットフォームの種類の選択および Azure Portal 内での設定の構成も行います。
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e4e1febb5f12de038d2ddd543be883f71ef79005
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: e5070052c0d4cce3cfd81a7bae259bc7dfb22e7f
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune でのデバイス プロファイルの作成
 
@@ -27,12 +27,12 @@ ms.lasthandoff: 03/08/2018
 ## <a name="create-the-profile"></a>プロファイルの作成
 1. [Azure Portal](https://portal.azure.com) で、**[すべてのサービス]** を選択し、**Microsoft Intune** を検索します。
 
-2. **Microsoft Intune** で、**[デバイス構成]**、**[プロファイル]**、**[プロファイルの作成]** の順に選択します。
+2. **Microsoft Intune** で、**[デバイス構成]** を選択し、**[プロファイル]** を選択します。 次に、**[プロファイルの作成]** を選択します。
 
 3. 次のプロパティを入力します。
 
-    - **[名前]**: 新しいプロファイルのわかりやすい名前を入力します。
-    - **[説明]**: 省略可能ですが、入力することをお勧めします。 プロファイルの説明を入力します。
+    - **名前**: 新しいプロファイルのわかりやすい名前を入力します。
+    - **説明**: プロファイルの説明を入力します  (これは省略可能ですが、入力することをお勧めします)。
     - **[プラットフォーム]**: プラットフォームの種類を選択します。  
 
         - **Android**
@@ -57,11 +57,11 @@ ms.lasthandoff: 03/08/2018
         -  [教育設定](education-settings-configure.md)
         -  [カスタム設定](custom-settings-configure.md)
 
-    ![デバイス プロファイルを作成するための設定を入力](./media/create-device-profile.png)
+    ![[プロファイルの作成] のスクリーンショット](./media/create-device-profile.png)
 
 4. 完了したら、**[作成]** を選択します。
 
-プロファイルが作成され、リストに表示されます。 このプロファイルをグループに割り当てるには、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関するページを参照してください。
+プロファイルが作成され、リストに表示されます。
 
 
 ## <a name="next-steps"></a>次の手順

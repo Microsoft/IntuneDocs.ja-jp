@@ -1,40 +1,40 @@
 ---
-title: "Microsoft Intune - Azure でのデバイス プロファイルの割り当て | Microsoft Docs"
-description: "Azure Portal を使用して、デバイス プロファイルとポリシーをユーザーとデバイスに割り当て、Microsoft Intune でプロファイル割り当てからグループを除外する方法"
-keywords: 
+title: Microsoft Intune - Azure でのデバイス プロファイルの割り当て | Microsoft Docs
+description: Azure Portal を使用して、デバイスのプロファイルとポリシーをユーザーとデバイスに割り当てます。 Microsoft InTune でプロファイル割り当てからグループを除外する方法を説明します。
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b09650bc99b1bdf892b60828f0b524467d7b60ac
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 9840298df981bee6c33d3cb36ec5e4ada46d11bd
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Microsoft Intune でユーザーおよびデバイス プロファイルを割り当てる
 
-プロファイルを作成したら、そのプロファイルを Azure Active Directory グループに割り当てることができます。
+プロファイルを作成したら、そのプロファイルを Azure Active Directory (Azure AD) グループに割り当てることができます。
 
 ## <a name="assign-a-device-profile"></a>デバイス プロファイルを割り当てる
 
 1. [Azure Portal](https://portal.azure.com) で、**[すべてのサービス]** を選択し、**Microsoft Intune** を検索します。
 2. **Microsoft Intune** で、**[デバイス構成]** を選択し、**[プロファイル]** を選択します。
 3. プロファイルの一覧で、割り当てるプロファイルを選択し、**[割り当て]** を選択します。
-4. 次のように、グループを**含める**か**除外する**かを選択してから、**グループを選択** します。  
+4. グループを**含める**か**除外する**かを選択してから、グループを選択します。  
 
-    ![プロファイル割り当てにグループを含める、またはグループを除外する](./media/group-include-exclude.png)
+    ![プロファイル割り当てにグループを含める、またはグループを除外するオプションのスクリーンショット](./media/group-include-exclude.png)
 
-5. グループを選択するときに、Azure Activity Directory グループを選択します。 複数のグループを選択する場合は、**Ctrl** キーを押したままにします。
-6. 完了したら、変更内容を**保存**します。
+5. グループを選択するときに、Azure AD グループを選択します。 複数のグループを選択する場合は、**Ctrl** キーを押したままにします。
+6. 終了したら、**[保存]** を選択します。
 
 ## <a name="exclude-groups-from-a-profile-assignment"></a>プロファイル割り当てからグループを除外する
 
@@ -42,9 +42,7 @@ Intune のデバイス構成プロファイルでは、ポリシーの割り当�
 
 割り当てからグループを除外するか、ユーザーのみを除外するか、あるいはデバイス グループ (グループの組み合わせではない) のみを除外する場合、Intune はユーザーとデバイスの関係を考慮しません。 ユーザー グループを含めてデバイス グループを除外すると、予期した結果にならない可能性があります。 グループが混在する場合、またはその他の競合がある場合、包含が除外より優先されます。
 
-たとえば、キオスク デバイスを除く組織内のすべてのデバイスにデバイス プロファイルを割り当てるものとします。 **すべてのユーザー** グループを含めて、**すべてのデバイス** グループを除外します。
-
-この場合、すべてのユーザーとそのデバイスにポリシーが割り当てられ、ユーザーのデバイスが**すべてのデバイス** グループに含まれる場合であっても除外されません。
+たとえば、キオスク デバイスを除く組織内のすべてのデバイスにデバイス プロファイルを割り当てるものとします。 **すべてのユーザー** グループを含めて、**すべてのデバイス** グループを除外します。 この場合、すべてのユーザーとそのデバイスにポリシーが割り当てられ、ユーザーのデバイスが**すべてのデバイス** グループに含まれる場合であっても除外されません。
 
 除外ではグループの直接のメンバーのみが確認され、ユーザーに関連付けられているデバイスは含まれません。 ただし、ユーザーのいないデバイスではポリシーは取得されません。 これは、このようなデバイスには**すべてのユーザー** グループとの関係がないためです。
 

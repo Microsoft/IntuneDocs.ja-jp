@@ -1,25 +1,25 @@
 ---
-title: "Managed Browser で Web アクセスを管理する"
-description: "Managed Browser アプリケーションを展開して、Web 閲覧と他のアプリへの Web データ転送を制限します。"
-keywords: 
+title: Managed Browser で Web アクセスを管理する
+description: Managed Browser アプリケーションを展開して、Web 閲覧と他のアプリへの Web データ転送を制限します。
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 05/10/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a8b928de0bc9dddc35da188ad619b35541027364
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 559866fff63b0ad77a43ce337adede5cd8b27302
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune と Managed Browser のポリシーを使用したインターネット アクセスの管理
 
@@ -109,7 +109,7 @@ Microsoft は、Microsoft の製品やサービスを改善するために、Man
 
     -   https の場合はポート 443
 
-    ポート番号にワイルドカードを使用することはできません。 たとえば、**http&colon;//www&period;contoso&period;com:*;** や **http&colon;//www&period;contoso&period;com: /*;** はサポートされていません。
+    ポート番号にワイルドカードを使用することはできません。 たとえば、**http&colon;//www&period;contoso&period;com:*;** and **http&colon;//www&period;contoso&period;com: /*;** はサポートされていません。
 
 -   URL を指定するときに使用できるパターンの詳細については、次の表を参照してください。
 

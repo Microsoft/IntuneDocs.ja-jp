@@ -1,24 +1,24 @@
 ---
-title: "MDM 機関を Configuration Manager (ハイブリッド MDM) に変更する"
-description: "MDM 機関を Intune スタンドアロンから Configuration Manager (ハイブリッド MDM) に変更する方法について説明します。"
-keywords: 
+title: MDM 機関を Configuration Manager (ハイブリッド MDM) に変更する
+description: MDM 機関を Intune スタンドアロンから Configuration Manager (ハイブリッド MDM) に変更する方法について説明します。
+keywords: ''
 author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 10/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f1b4bce3-7932-4a0d-aa92-6dacc7060f42
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 64e79da53aec646fc65285e41f86541ecdf6d804
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b5494e4b2b6a7983d05ac83d9bc495677ee1a1ab
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="change-the-mdm-authority"></a>MDM 機関を変更する
 Configuration Manager バージョン 1610 以降では、Microsoft サポートに連絡しなくても、また、既存の管理対象デバイスの登録を解除してから再登録しなくても、MDM 機関を変更できます。 このトピックでは、既存の管理対象デバイスの登録解除と再登録を行わずに、Intune から構成し、MDM 機関を **Microsoft Intune** (スタンドアロン) に設定した既存の Microsoft Intune テナントを、**Configuration Manager** (ハイブリッド MDM) に変更する方法について説明します。
@@ -51,7 +51,7 @@ MDM 機関の変更に備えて、次の情報を確認します。
 - Intune スタンドアロンを使用して iOS デバイスを管理していて、MDM 機関を変更する予定の場合は、Intune で使用されていたものと同じ Apple Push Notification サービス (APNs) 証明書を更新し、Configuration Manager (ハイブリッド) でテナントのセットアップに使用する必要があります。    
 
     > [!IMPORTANT]  
-    > ハイブリッドに別の APNs 証明書を使用する場合、以前に登録されていた iOS デバイスはすべて未登録になるため、デバイスを再登録するプロセスを実行する必要があります。 MDM 機関を変更する前に、Intune で iOS デバイスの管理に使用されていた APNs 証明書を正確に把握しておく必要があります。 Apple Push 証明書ポータル (https://identity.apple.com) に記載されているものと同じ証明書を検索し、元の APNs 証明書の作成に使用された Apple ID を持つユーザーを特定し、新しい MDM 機関を変更する際に同じ APNs 証明書を更新できることを確認します。  
+    > ハイブリッドに別の APNs 証明書を使用する場合、以前に登録されていた iOS デバイスはすべて未登録になるため、デバイスを再登録するプロセスを実行する必要があります。 MDM 機関を変更する前に、Intune で iOS デバイスの管理に使用されていた APNs 証明書を正確に把握しておく必要があります。 Apple Push 証明書ポータル (https://identity.apple.com)) に記載されているものと同じ証明書を検索し、元の APNs 証明書の作成に使用された Apple ID を持つユーザーを特定し、新しい MDM 機関を変更する際に同じ APNs 証明書を更新できることを確認します。  
 
 ## <a name="change-the-mdm-authority-to-configuration-manager"></a>MDM 機関を Configuration Manager に変更する
 MDM 機関を Configuration Manager (ハイブリッド) に変更するプロセスには、概要として次のような手順が含まれます。  
@@ -120,7 +120,7 @@ iOS デバイスがある場合は、Configuration Manager で APNs 証明書を
 2. 有効にするプラットフォームを選択し、**[OK]** をクリックします。
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 MDM 機関の変更が完了したら、次の手順を実行します。
 - テナントの MDM 機関が変更されたことを Intune サービスが検出すると、登録されているすべてのデバイスに、サービスにチェックインして同期するように促す通知メッセージを送信します (これは定期的にスケジュールされているチェックインとは別になります)。 そのため、テナントの MDM 機関が Intune スタンドアロンからハイブリッドに変更された後は、電源を入れてオンラインになったすべてのデバイスはサービスに接続し、新しい MDM 機関を受信し、ハイブリッドに管理されるようになります。 これらのデバイスの管理と保護は中断されません。
 - MDM 機関の変更中 (または変更直後) にデバイスの電源が入り、オンラインだった場合でも、デバイスが新しい MDM 機関のサービスに登録されるまでに最大 8 時間の遅れがあります (次の定期的なチェックインのタイミングによって異なります)。    

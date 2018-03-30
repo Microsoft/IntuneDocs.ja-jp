@@ -1,19 +1,25 @@
---
-# <a name="required-metadata"></a>必須のメタデータ
-
-title: MAM とアプリの保護に関してよく寄せられる質問 description: この記事では、Intune モバイル アプリケーション管理 (MAM) と Intune アプリ保護に関してよく寄せられるいくつかの質問に対する回答を示します。
-keywords: author: Erikre ms.author: erikre manager: angrobe ms.date: 02/28/2018 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
-
-# <a name="optional-metadata"></a>任意のメタデータ
-
-#<a name="audience"></a>対象ユーザー:
-#<a name="msdevlang"></a>ms.devlang:
-ms.reviewer: erikre ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
-ms.custom: intune-azure
-
 ---
-
+title: MAM とアプリの保護に関してよく寄せられる質問
+description: この記事では、Intune モバイル アプリケーション管理 (MAM) と Intune アプリ保護に関してよく寄せられる質問に対する回答を示します。
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 02/28/2018
+ms.topic: article
+ms.prod: ''
+ms.service: microsoft-intune
+ms.technology: ''
+ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
+ms.reviewer: erikre
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 0ab616c373482109ccd402199f7b0de69fe27348
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/22/2018
+---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM とアプリの保護に関してよく寄せられる質問
 
 この記事では、Intune モバイル アプリケーション管理 (MAM) と Intune アプリ保護に関してよく寄せられる質問に対する回答を示します。
@@ -26,9 +32,9 @@ ms.custom: intune-azure
 **MAM のアプリ保護の利点は何ですか。** MAM は、アプリケーション内の組織のデータを保護します。 登録を必要としない MAM (MAM-WE) を使用すれば、機密データが含まれる職場または学校関連のアプリを、Bring Your Own Device (BYOD) シナリオにおける個人所有デバイスを含むほぼすべてのデバイスで管理できます。 Microsoft Office アプリなどの多くの仕事効率化アプリを、Intune MAM で管理することができます。 一般使用が可能な [Intune 管理対象アプリ](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)の公式の一覧を参照してください。
 
 **MAM でサポートされるのはどのようなデバイス構成ですか。** Intune MAM では次の 2 つの構成をサポートしています。
-- **Intune MDM + MAM**: IT 管理者は、Intune モバイル デバイス管理 (MDM) に登録されているデバイスで MAM とアプリ保護ポリシーを使用したアプリの管理のみを行うことができます。 MDM + MAM でアプリを管理するには、Azure Portal (https://portal.azure.com) の Intune コンソールを使用する必要があります。
+- **Intune MDM + MAM**: IT 管理者は、Intune モバイル デバイス管理 (MDM) に登録されているデバイスで MAM とアプリ保護ポリシーを使用したアプリの管理のみを行うことができます。 MDM と MAM を使用してアプリを管理するには、Azure Portal (https://portal.azure.com) の Intune コンソールを使用する必要があります。
 
-- **デバイス登録なしの MAM**: デバイス登録なしの MAM (MAM-WE) では、IT 管理者は Intune MDM に登録されていないデバイスで MAM とアプリ保護ポリシーを使ってアプリを管理できます。 つまり、サードパーティ EMM プロバイダーに登録されているデバイスで Intune によりアプリを管理できます。 MAM-WE でアプリを管理するには、Azure Portal (http://portal.azure.com) の Intune コンソールを使用する必要があります。また、Intune では、サードパーティ製エンタープライズ モビリティ管理 (EMM) プロバイダーに登録されているデバイス上でも、MDM に全く登録されていないデバイス上でもアプリを管理することができます。
+- **デバイス登録なしの MAM**: デバイス登録なしの MAM (MAM-WE) では、IT 管理者は Intune MDM に登録されていないデバイスで MAM とアプリ保護ポリシーを使ってアプリを管理できます。 つまり、サードパーティ EMM プロバイダーに登録されているデバイスで Intune によりアプリを管理できます。 MAM-WE を使用してアプリを管理するには、Azure Portal (http://portal.azure.com) の Intune コンソールを使用する必要があります。また、Intune では、サードパーティ製エンタープライズ モビリティ管理 (EMM) プロバイダーに登録されているデバイス上でも、MDM に全く登録されていないデバイス上でもアプリを管理することができます。
 
 
 ## <a name="app-protection-policies"></a>アプリ保護ポリシー

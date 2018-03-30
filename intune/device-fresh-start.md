@@ -1,30 +1,30 @@
 ---
-title: "Microsoft Intune で Windows 10 デバイスをリセットする - Azure | Microsoft Docs"
-description: "Microsoft Intune を使用して、OEM からプレインストールされたアプリを含む Windows 10 PC 上のアプリを削除またはアンインストールするには、[新たに開始] を使用します。 [個人用ファイルを保持する] 設定を使用する場合、ホーム フォルダーの内容を保つこともできます。"
-keywords: 
+title: Microsoft Intune で Windows 10 デバイスをリセットする - Azure | Microsoft Docs
+description: Microsoft Intune を使用して、Windows 10 PC 上のアプリを削除またはアンインストールするには、[新たに開始] を使用します。
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d17c9dc11791f32f0c2c1e7faa88966c112fc6a5
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: 902ffbcd8f12ba6deb215a54ce378fae94d20426
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>[新たに開始] を使用して Intune が稼働する Windows 10 デバイスをリセットする
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**[新たに開始]** デバイス操作は、Creators Update を実行している Windows 10 PC にインストールされているすべてのアプリを削除します。 次に、最新バージョンの Windows に自動的に PC を更新します。
+**[新たに開始]** デバイス アクションは、Creators Update を実行している Windows 10 PC にインストールされているすべてのアプリを削除します。 次に、最新バージョンの Windows に自動的に PC を更新します。
 
 この操作は、一般的に新しい PC にプレインストールされている (OEM) アプリケーションを削除するために役立ちます。 ユーザーのホーム フォルダーの内容を保持し、アプリと設定のみを削除するには、`if user data is retained` 設定を使用します。
 
