@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/16/2018
+ms.date: 03/21/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f171779a2606790dd1e59caf5e261e6d22faaf7f
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: be4d02419879a765c3d84a99b65a1184f7e8353e
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 
@@ -47,6 +47,10 @@ ms.lasthandoff: 03/20/2018
 
 
 ## <a name="week-of-march-12-2018"></a>2018 年 3 月 12 日の週
+
+#### <a name="company-portal-app-for-android-visual-updates---976944---"></a>Android 用ポータル サイト アプリのビジュアルの更新 <!--976944 -->
+
+Android 用 Intune ポータル サイト アプリを、Android の[マテリアル デザイン](https://material.io/) ガイドラインに合わせて更新しています。 「[アプリ UI の新機能](whats-new-app-ui.md)」の記事で、新しいアイコンの画像を確認することができます。
 
 ### <a name="new-windows-defender-exploit-guard-settings----1631893---"></a>Windows Defender Exploit Guard の新しい設定 <!-- 1631893 -->
 

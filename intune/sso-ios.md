@@ -1,23 +1,23 @@
 ---
-title: "iOS 用 Microsoft Intune のデバイス シングル サインオンを構成する"
-titlesuffix: 
-description: "iOS 用 Microsoft Intune のデバイス シングル サインオンを構成する方法について説明します。"
-keywords: 
+title: iOS 用 Microsoft Intune のデバイス シングル サインオンを構成する
+titlesuffix: ''
+description: iOS 用 Microsoft Intune のデバイス シングル サインオンを構成する方法について説明します。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8f19320df9a9728cdd77e608fc0ad219272a731f
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>iOS 用 Microsoft Intune のデバイス シングル サインオンを構成する
 
@@ -34,7 +34,7 @@ iOS デバイスのシングル サインオンを利用するには、次の条
 
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
 4. **[デバイス構成]** ウィンドウの **[管理]** セクションで、**[プロファイル]** を選択します。
 5. [プロファイル] ウィンドウで **[プロファイルの作成]** を選択します。
@@ -90,7 +90,7 @@ URL の一致パターンは、`http://` または `https://` で始まってい
 
 エンド ユーザーのデバイス上のアプリで、シングル サインオン ペイロードを使うことができるものを示します。
 
-`AppIdentifierMatches` 配列には、アプリ バンドル ID と一致する文字列が含まれる必要があります。 これらの文字列では、完全に一致する値 (例: `com.contoso.myapp`) を指定するか、ワイルドカード文字 *\ を使ってバンドル ID のプレフィックス一致を指定することができます。 ワイルドカード文字は、ピリオド文字 (.) の後に指定する必要があり、文字列の最後で 1 回だけ使えます (例: `com.contoso.*`)。 ワイルドカードが含まれる場合は、バンドル ID がプレフィックスで始まるすべてのアプリが、アカウントへのアクセスを許可されます。
+`AppIdentifierMatches` 配列には、アプリ バンドル ID と一致する文字列が含まれる必要があります。 これらの文字列では、完全に一致する値 (例: `com.contoso.myapp`) を指定するか、\* ワイルドカード文字を使用してバンドル ID のプレフィックス一致を指定することができます。 ワイルドカード文字は、ピリオド文字 (.) の後に指定する必要があり、文字列の最後で 1 回だけ使えます (例: `com.contoso.*`)。 ワイルドカードが含まれる場合は、バンドル ID がプレフィックスで始まるすべてのアプリが、アカウントへのアクセスを許可されます。
 
 **[アプリ名]** フィールドは、バンドル ID の識別を容易にするわかりやすい名前を追加するために使われます。
 
