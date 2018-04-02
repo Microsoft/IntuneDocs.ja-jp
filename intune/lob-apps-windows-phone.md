@@ -1,25 +1,25 @@
 ---
-title: "Windows Phone の基幹業務アプリを Microsoft Intune に追加する方法"
-titlesuffix: 
-description: "Intune への Windows Phone の基幹業務 (LOB) アプリの追加について説明します。"
-keywords: 
+title: Windows Phone の基幹業務アプリを Microsoft Intune に追加する方法
+titlesuffix: ''
+description: Intune への Windows Phone の基幹業務 (LOB) アプリの追加について説明します。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 03/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8466a77929620ef9ef7c1559dae62990730d0acd
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 4053c2f932f6101397deb6bf0c3a142fa713aec4
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-add-windows-phone-line-of-business-lob-apps-to-microsoft-intune"></a>Windows Phone の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/12/2018
 ## <a name="step-1---specify-the-software-setup-file"></a>手順 1 - ソフトウェアのセットアップ ファイルを指定する
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[モバイル アプリ]** を選択します。
 4. **[モバイル アプリ]** ワークロードで、**[管理]** > **[アプリ]** の順に選択します。
 5. アプリの一覧の上にある **[追加]** を選択します。
