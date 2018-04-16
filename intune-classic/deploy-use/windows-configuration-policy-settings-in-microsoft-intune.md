@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9fa8d8454e9d22b2d3c36cd6449805d709c34ffa
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ccd5bd201de59537dbf99ea9e19d84dbf80c1a20
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="windows-policy-settings-in-microsoft-intune"></a>Microsoft Intune の Windows ポリシー設定
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune の **Windows 全般構成ポリシー (Windows 8.1 以降)** を使用して、登録済みの Windows 8、Windows 8.1、および Windows RT 8.1 デバイスの以下の設定を構成します。
 
@@ -49,9 +49,10 @@ Microsoft Intune の **Windows 全般構成ポリシー (Windows 8.1 以降)** �
 
 ## <a name="encryption-settings"></a>暗号化の設定
 
-|設定の名前|説明|
-|----------------|-----|
-|**モバイル デバイスの暗号化を要求する**<sup>1</sup>|デバイス上のファイルを必ず暗号化するようにします。|
+|                           設定の名前                           |                     説明                      |
+|------------------------------------------------------------------|--------------------------------------------------|
+| <strong>モバイル デバイスの暗号化を要求する</strong><sup>1</sup> | デバイス上のファイルを必ず暗号化するようにします。 |
+
 <sup>1</sup> Windows 8.1 が実行されているデバイスの追加情報
 
 -   Windows 8.1 が実行されているデバイスで暗号化を適用するには、 [Windows の 2014 年 12 月付け MDM クライアント更新プログラム](http://support.microsoft.com/kb/3013816) を各デバイスにインストールする必要があります。

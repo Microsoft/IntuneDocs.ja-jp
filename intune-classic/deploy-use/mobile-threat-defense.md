@@ -15,19 +15,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ff4595a96d34d30fee05c64fd7f88f564610902c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 97711301422dd86ed0a76375add54987809c07b7
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="intune-mobile-threat-defense-connectors"></a>Intune Mobile Threat Defense コネクター
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune Mobile Threat Defense コネクターを使用すると、選択した Mobile Threat Defense ベンダーをコンプライアンス ポリシーと条件付きアクセス規則の情報ソースとして活用できます。 これにより、IT 管理者が、具体的に危険にさらさモバイル デバイスから、Exchange、Sharepoint などの企業リソースに保護レイヤーを追加することができます。
 
-## <a name="what-problem-does-this-solve"></a>どのような問題がこれにより解決されますか?
+## <a name="what-problem-does-this-solve"></a>これはどのような問題を解決しますか。
 
 会社は物理的な脅威、アプリ ベースの脅威、ネットワーク ベースの脅威などの新種の脅威やオペレーティング システムの脆弱性から機密データを守る必要があります。
 これまで、企業は PC の防御を積極的に行ってきましたが、モバイル デバイスは監視や保護のない状態が続いています。 モバイル プラットフォームには、アプリの分離や検証済みコンシューマー アプリ ストアなどの防御手法が組み込まれていますが、依然として高度な攻撃を受けやすい状態にあります。 現在、モバイル デバイスを仕事に利用し、機密情報にアクセスする社員が増えています。 増え続ける高度な攻撃からモバイル デバイスを守る必要があります。

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 59168615548d3c7da8dc284476227ed0f01ceffe
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2a05444c757b8e99ca0b897acfcd6238d960aeb2
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>Microsoft Intune でアプリとデータを保護する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune は、複数のテクノロジ層を介して会社のデータを保護します。 ID 層では、条件付きアクセスによりサービスへのアクセスを保護します。管理対象のデバイスが条件を満たした場合にのみアクセスが許可されます。 クライアント アプリケーション層では、モバイル アプリ管理 (MAM) がデータ紛失を防止します。保護されていないアプリや記憶域にデータを移動する行為を禁止し、デバイスをなくしたり、盗難に遭ったりした場合、データを消去します。 これらの 2 つの保護層は合わせて使用し、データをセキュリティで保護し、モバイルの生産性を維持することが推奨されます。
 

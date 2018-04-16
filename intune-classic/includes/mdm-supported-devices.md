@@ -5,12 +5,12 @@
   - Mac OS X 10.9 以降
 
 ### <a name="windows"></a>Windows
-  - Windows 10 (Home、Pro、Education、および Enterprise バージョン) を実行している PC
-  - [Windows] 10 Mobile
-  - Windows 10 IoT Enterprise (x86、x64) を実行しているデバイス
-  - Windows 10 IoT Mobile Enterprise を実行しているデバイス
-  - Windows Holographic と Windows Holographic Enterprise
-  - Windows Phone 8.1、Windows 8.1 RT、Windows 8.1 (維持モード) が稼働している PC
+- Windows 10 (Home、Pro、Education、および Enterprise バージョン) を実行している PC
+- Windows 10 Mobile
+- Windows 10 IoT Enterprise (x86、x64) を実行しているデバイス
+- Windows 10 IoT Mobile Enterprise を実行しているデバイス
+- Windows Holographic と Windows Holographic Enterprise
+- Windows Phone 8.1、Windows 8.1 RT、Windows 8.1 (維持モード) が稼働している PC
 
   Enterprise Management + Security (EMS) を使用している場合は、[Azure Active Directory (AAD) を使用して Windows 10 デバイスを登録する](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment)こともできます。
 

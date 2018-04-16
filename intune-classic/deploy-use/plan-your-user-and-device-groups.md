@@ -14,15 +14,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5c1f06cc59ff81483d9e54b23435af720d919155
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 679399f306f3837a010cc01799c7567c1e5b5b39
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="plan-your-user-and-device-groups"></a>ユーザーとデバイス グループを計画する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune の [グループ] を使用すると、デバイスとユーザーを柔軟に管理できます。 次の条件に従って、組織のニーズに適合するグループをセットアップすることができます。
 
@@ -84,7 +84,7 @@ Intune の [グループ] を使用すると、デバイスとユーザーを柔
 
     ただし、メンバーが親グループから除外された場合は、そのメンバーを子グループに追加することはできません。
 
-- グループ メンバーシップは再帰的です。 たとえば、
+- グループ メンバーシップは再帰的です。 次に例を示します。
 
     * **佐藤** さんは、 **Laptop Users** セキュリティ グループというグループにのみ属するメンバーです。
 
@@ -214,5 +214,5 @@ Android、iOS、Windows などの特定のオペレーティング システム�
 
 ![Intune ポリシー一覧](../media/Intune_planning_policy_view_small.png)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [グループの作成](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)

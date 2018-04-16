@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 02d6220a4c780eafb7afb01208e18e7df7684b68
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: f5e9bd3dd2026096c323858fc7faa915895ed55d
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="exchange-activesync-mobile-device-management-with-microsoft-intune"></a>Microsoft Intune を使用した Exchange ActiveSync モバイル デバイスの管理
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune でモバイル デバイスを直接管理するには、デバイスが [Intune に登録](prerequisites-for-enrollment.md)されている必要があります。 別の方法として、管理者は Exchange Connector と Exchange ActiveSync (EAS) 管理を組み合わせて使用する、より限定的な管理ソリューションを有効にすることもできます。 オンプレミスの Exchange サーバーで、または Office 365 を使用した Exchange Onlineで、デバイスを管理することができます。 Intune は、サブスクリプションごとに任意の種類の Exchange Connector 接続を 1 つだけサポートします。
 

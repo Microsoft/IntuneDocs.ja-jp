@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d02a822dc9a403806657f36ae0ac4bfad8246d0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 57dfc1bf2765de6c2e02352caca58f3859742fd6
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Intune でのモバイル デバイス管理の前提条件
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 従業員が自分のモバイル デバイスを Intune に登録できるようにするには、以下の手順に従う必要があります。 会社所有のデバイスを管理する場合も同じ手順が必要です。
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 10/10/2017
 
 Configuration Manager で Intune を管理するには
 > [!div class="button"]
-[SCCM のドキュメントを見る >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
+> [SCCM のドキュメントを見る >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
 ## <a name="step-1-enable-connections"></a>手順 1: 接続を有効にする
 
@@ -80,14 +80,15 @@ MDM 機関では、一連のデバイスを管理するためのアクセス許�
 
 会社名は、ポータル サイトのタイトルとして表示されます。 連絡先情報と詳細は、ポータル サイトの [IT に連絡] 画面でユーザーに対して表示されます。 プライバシーに関する声明は、ユーザーがプライバシー リンクをクリックすると表示されます。
 
-|フィールド名|最大長|詳細情報|
-    |----------|------------------------|----------------|
-    |会社名|40|ポータル サイトのタイトルとして表示される名前です。 **注**: 英数字のみです。 このフィールドでは特殊文字を使用できません。|
-    |IT 部門の担当者名|40|**[IT に連絡]** ページに表示される名前です。|
-    |IT 部門の電話番号|20|**[IT に連絡]** ページに表示される連絡先の電話番号です。|
-    |IT 部門の電子メール アドレス|40|**[IT に連絡]** ページに表示される連絡先の電子メール アドレスです。 **alias@domainname.com** の形式で有効な電子メール アドレスを入力する必要があります。|
-    |追加情報|120|**[IT に連絡]** ページに表示される情報です。|
-    |会社のプライバシーに関する声明の URL|79|ポータル サイトでユーザーがプライバシー リンクをクリックすると表示される、各社のプライバシーに関する声明を指定できます。 https://www.contoso.com の形式で URL を入力します。|
+
+|          フィールド名           | 最大長 |                                                                                       詳細情報                                                                                        |
+|-------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         会社名          |     40     |                ポータル サイトのタイトルとして表示される名前です。 <strong>注</strong>: 英数字のみです。 このフィールドでは特殊文字を使用できません。                |
+|  IT 部門の担当者名   |     40     |                                                                <strong>[IT に連絡]</strong> ページに表示される名前です。                                                                |
+|  IT 部門の電話番号   |     20     |                                                           <strong>[IT に連絡]</strong> ページに表示される連絡先の電話番号です。                                                           |
+|  IT 部門の電子メール アドレス  |     40     |             <strong>[IT に連絡]</strong> ページに表示される連絡先の電子メール アドレスです。 <strong>alias@domainname.com</strong> の形式で有効な電子メール アドレスを入力する必要があります。              |
+|    追加情報     |    120     |                                                            <strong>[IT に連絡]</strong> ページに表示される情報です。                                                             |
+| 会社のプライバシーに関する声明の URL |     79     | ポータル サイトでユーザーがプライバシー リンクをクリックすると表示される、各社のプライバシーに関する声明を指定できます。 https://www.contoso.com の形式で URL を入力します。 |
 
 ### <a name="support-contacts"></a>サポートの連絡先
 サポート Web サイトは、ポータル サイトに表示されます。ユーザーは、サポート サイトからオンライン サポートを利用できます。

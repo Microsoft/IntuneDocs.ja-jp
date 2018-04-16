@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f86508d9b187e0026a74c4e82e94cdd5a4d29c3a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2b7285c272efac8eab406393b0b896795fa5d8ed
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>Microsoft Intune で SharePoint Online へのアクセスを保護する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune の条件付きアクセスを使って、SharePoint Online 上にあるファイルへのアクセスを制御します。
 条件付きアクセスには、2 つのコンポーネントがあります。
@@ -81,16 +81,16 @@ SharePoint Online の条件付きアクセス ポリシーを構成する**前�
 次のものがサポートされています。
 - Windows 8.1 以降 (PC が Intune に登録されている場合)
 - Windows 7.0、Windows 8.1、または Windows 10 (PC がドメインに参加している場合)
-> [!NOTE]
->Windows 10 を搭載した PC で条件付きアクセスを使用するには、Windows 10 Anniversary Update で PC を更新する必要があります。
+  > [!NOTE]
+  >Windows 10 を搭載した PC で条件付きアクセスを使用するには、Windows 10 Anniversary Update で PC を更新する必要があります。
 
   - ドメインに参加している PC の場合、Azure Active Directory に[自動的に登録](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/)するように設定する必要があります。 Azure AD Device Registration サービスは、Intune や Office 365 のお客様に対して自動的にアクティブ化されます。 ADFS Device Registration Service をデプロイ済みのお客様には、オンプレミスの Active Directory で登録されたデバイスは表示されません。
 
   - ドメインへの参加を要求するようにポリシーを設定していて、PC がドメインに参加していない場合は、IT 管理者に連絡するようにメッセージが表示されます。
 
   - ドメインへの参加または準拠を要求するようにポリシーを設定していて、PC がいずれかの要件を満たしていない場合は、ポータル サイト アプリをインストールして登録する方法についての手順が示されたメッセージが表示されます。
-  >[!NOTE]
-  >Intune コンピューター クライアントを実行する PC では、条件付きアクセスはサポートされていません。
+    >[!NOTE]
+    >Intune コンピューター クライアントを実行する PC では、条件付きアクセスはサポートされていません。
 
 [Office 365 の先進認証が有効化](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a)されていて、最新の Office 更新プログラムがすべて適用されていること。
 
@@ -132,24 +132,24 @@ SharePoint Online ポリシーには、次の 2 つのグループの種類を�
 > Azure AD 管理コンソールで、Intune デバイスの条件付きアクセス ポリシーを作成することもできます (このようなポリシーは、Azure AD の**デバイス ベースの条件付きアクセス ポリシー**と呼ばれます)。 さらに、多要素認証のような他の条件付きアクセス ポリシーを作成することもできます。 Azure AD がサポートするサード パーティ製の Enterprise アプリ (Salesforce や Box など) に条件付きアクセス ポリシーを設定することもできます。 詳細については、「[Azure Active Directory に接続されたアプリケーションのアクセスを制御する Azure Active Directory デバイス ベースの条件付きアクセス ポリシーを設定する方法](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/)」を参照してください。
 
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** > **[条件付きアクセス]** > **[SharePoint Online ポリシー]** の順に選択します。
-![SharePoint Online ポリシー ページのスクリーンショット](../media/mdm-ca-spo-policy-configuration.png)
+1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** > **[条件付きアクセス]** > **[SharePoint Online ポリシー]** の順に選択します。
+   ![SharePoint Online ポリシー ページのスクリーンショット](../media/mdm-ca-spo-policy-configuration.png)
 
-2.  **[SharePoint Online の条件付きアクセス ポリシーを有効にする]** をオンにします。
+2. **[SharePoint Online の条件付きアクセス ポリシーを有効にする]** をオンにします。
 
-3.  **[アプリケーション アクセス]** で、条件付きアクセス ポリシーを適用する対象を次のように選ぶことができます。
+3. **[アプリケーション アクセス]** で、条件付きアクセス ポリシーを適用する対象を次のように選ぶことができます。
 
-    -   **すべてのプラットフォーム**
+   - **すべてのプラットフォーム**
 
-        **SharePoint Online** にアクセスするために使用するデバイスはすべて、Intune に登録され、またポリシーに準拠している必要があります。 **先進認証**を使っているすべてのクライアント アプリケーションに、条件付きアクセス ポリシーが適用されます。 プラットフォームが現在 Intune でサポートされていない場合、**SharePoint Online** へのアクセスはブロックされます。
+     **SharePoint Online** にアクセスするために使用するデバイスはすべて、Intune に登録され、またポリシーに準拠している必要があります。 **先進認証**を使っているすべてのクライアント アプリケーションに、条件付きアクセス ポリシーが適用されます。 プラットフォームが現在 Intune でサポートされていない場合、**SharePoint Online** へのアクセスはブロックされます。
 
-        **[すべてのプラットフォーム]** オプションを選択することは、クライアント アプリケーションから報告されたプラットフォームでない限り、Azure Active Directory がすべての認証要求にこのポリシーを適用することを意味します。 次の場合を除いて、すべてのプラットフォームが登録されて準拠している必要があります。
-        *   Windows デバイスが登録されて準拠している必要があるか、またはオンプレミスの Active Directory でドメインに参加している (一方または両方)
-        * Mac などのサポートされていないプラットフォーム ただし、これらのプラットフォームからの最新の認証を使用しているアプリは、それでもブロックされます。
+     **[すべてのプラットフォーム]** オプションを選択することは、クライアント アプリケーションから報告されたプラットフォームでない限り、Azure Active Directory がすべての認証要求にこのポリシーを適用することを意味します。 次の場合を除いて、すべてのプラットフォームが登録されて準拠している必要があります。
+     *   Windows デバイスが登録されて準拠している必要があるか、またはオンプレミスの Active Directory でドメインに参加している (一方または両方)
+     * Mac などのサポートされていないプラットフォーム ただし、これらのプラットフォームからの最新の認証を使用しているアプリは、それでもブロックされます。
 
-    -   **特定のプラットフォーム**
+   - **特定のプラットフォーム**
 
-         指定したプラットフォームで先進認証を使用しているすべてのクライアント アプリに条件付きアクセス ポリシーが適用されます。
+      指定したプラットフォームで先進認証を使用しているすべてのクライアント アプリに条件付きアクセス ポリシーが適用されます。
 
      Windows PC の場合は、ドメインに参加しているか、または Intune に登録されてポリシーに準拠している必要があります。 以下の要件を設定できます。
 
@@ -157,28 +157,28 @@ SharePoint Online ポリシーには、次の 2 つのグループの種類を�
 
      -   **デバイスは準拠デバイスである必要があります** このオプションを選択した場合、PC は Intune に登録され、ポリシーに準拠している必要があります。 PC を登録していない場合は、登録する方法についての手順を示したメッセージが表示されます。
 
-4.   SharePoint Online と OneDrive for Business への **[ブラウザー アクセス]** では、サポートされているブラウザー (Safari (iOS)、Chrome (Android)) を通じてのみ、Exchange Online へのアクセスを許可することを選択できます。 その他のブラウザーからのアクセスはブロックされます。 OneDrive のアプリケーションのアクセス用に選択した同じプラットフォームの制限が、ここにも適用されます。
+4. SharePoint Online と OneDrive for Business への **[ブラウザー アクセス]** では、サポートされているブラウザー (Safari (iOS)、Chrome (Android)) を通じてのみ、Exchange Online へのアクセスを許可することを選択できます。 その他のブラウザーからのアクセスはブロックされます。 OneDrive のアプリケーションのアクセス用に選択した同じプラットフォームの制限が、ここにも適用されます。
 
-  **Android** デバイスで、ユーザーはブラウザー アクセスを有効にする必要があります。 この操作を行うには、次のようにユーザーが、登録されるデバイスで **[ブラウザー アクセスを有効にする]** オプションを選択する必要があります。
-  1.    **ポータル サイト** アプリを開きます。
-  2.    省略記号 [...] またはハードウェアのメニュー ボタンから、**[設定]** ページに移動します。
-  3.    **[ブラウザー アクセスを有効にする]** ボタンを押します。
-  4.    Chrome ブラウザーで Office 365 からサインアウトして、Chrome を再起動します。
+   **Android** デバイスで、ユーザーはブラウザー アクセスを有効にする必要があります。 この操作を行うには、次のようにユーザーが、登録されるデバイスで **[ブラウザー アクセスを有効にする]** オプションを選択する必要があります。
+   1.    **ポータル サイト** アプリを開きます。
+   2.    省略記号 [...] またはハードウェアのメニュー ボタンから、**[設定]** ページに移動します。
+   3.    **[ブラウザー アクセスを有効にする]** ボタンを押します。
+   4.    Chrome ブラウザーで Office 365 からサインアウトして、Chrome を再起動します。
 
-  **iOS** および **Android** プラットフォームでは、サービスにアクセスするために使用するデバイスを識別するために、Azure Active Directory はデバイスにトランスポート層セキュリティ (TLS) 証明書を発行します。 デバイスには、次のスクリーン ショットに示すように、証明書を選択するユーザーに対してプロンプトで証明書が表示されます。 ユーザーは、ブラウザーを使用するには、まずこの証明書を選択する必要があります。
+   **iOS** および **Android** プラットフォームでは、サービスにアクセスするために使用するデバイスを識別するために、Azure Active Directory はデバイスにトランスポート層セキュリティ (TLS) 証明書を発行します。 デバイスには、次のスクリーン ショットに示すように、証明書を選択するユーザーに対してプロンプトで証明書が表示されます。 ユーザーは、ブラウザーを使用するには、まずこの証明書を選択する必要があります。
 
-  **iOS**
+   **Android**
 
-  ![iPad での証明書プロンプトのスクリーンショット](../media/mdm-browser-ca-ios-cert-prompt.png)
+   ![iPad での証明書プロンプトのスクリーンショット](../media/mdm-browser-ca-ios-cert-prompt.png)
 
-  **Android**
+   **Android**
 
-  ![Android デバイス上の証明書プロンプトのスクリーンショット](../media/mdm-browser-ca-android-cert-prompt.png)
-5.  **[対象グループ]**で、**[変更]** を選択して、ポリシーを適用する Azure Active Directory セキュリティ グループを選択します。 すべてのユーザーを対象にすることも、選んだユーザーのグループのみを対象にすることもできます。
+   ![Android デバイス上の証明書プロンプトのスクリーンショット](../media/mdm-browser-ca-android-cert-prompt.png)
+5. **[対象グループ]**で、**[変更]** を選択して、ポリシーを適用する Azure Active Directory セキュリティ グループを選択します。 すべてのユーザーを対象にすることも、選んだユーザーのグループのみを対象にすることもできます。
 
-6.  **[例外グループ]**で、必要に応じて **[変更]** を選択して、このポリシーから除外する Azure Active Directory セキュリティ グループを選択します。
+6. **[例外グループ]**で、必要に応じて **[変更]** を選択して、このポリシーから除外する Azure Active Directory セキュリティ グループを選択します。
 
-7.  終了したら、**[保存]** を選択します。
+7. 終了したら、**[保存]** を選択します。
 
 条件付きアクセス ポリシーを展開する必要はありません。直ちに有効になります。
 

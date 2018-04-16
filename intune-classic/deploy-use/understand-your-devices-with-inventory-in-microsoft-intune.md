@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c72e216201ac019f2cdffaf6e185bd6ff4436737
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e50a7329512e6b57eb5486792669b7cd102eebdb
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>Microsoft Intune でインベントリを使用してデバイスを把握する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune では、Intune クライアント ソフトウェアを実行している、登録済みデバイスと Windows PC のインベントリを表示できます。
 Intune は通常、7 日ごとに管理対象デバイスからインベントリを収集します。 このため、デバイス名の変更など、デバイスに対する最近の変更結果や記憶域の空き容量をレポートが表示する際に、遅延が発生する可能性があります。
