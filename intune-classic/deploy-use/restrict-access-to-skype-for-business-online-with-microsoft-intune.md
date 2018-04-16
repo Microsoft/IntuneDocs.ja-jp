@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 30d1abb3e7411cae73a98be51489cffdfc738e7f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d9d912cc0a2d8f815e046d888fc8878a8703c514
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>Microsoft Intune で Skype for Business Online へのアクセスを保護する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 **Skype for Business Online** の条件付きアクセス ポリシーを使って、Skype for Business Online へのアクセスを制御できます。
 条件付きアクセスには、2 つのコンポーネントがあります。
@@ -87,23 +87,23 @@ Skype for Business ポリシーに対して使用する 2 つのグループの�
 ### <a name="step-3-configure-the-skype-for-business-online-policy"></a>手順 3. Skype for Business Online ポリシーを構成する
 次に、管理デバイスおよび準拠デバイスのみが Skype for Business Online にアクセスできるように要求するポリシーを構成します。 このポリシーは、Azure Active Directory に格納されます。
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** > **[条件付きアクセス]** > **[Skype for Business Online ポリシー]** の順に選択します。
+1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** > **[条件付きアクセス]** > **[Skype for Business Online ポリシー]** の順に選択します。
 
-  ![Skype for Business Online の条件付きアクセス ポリシー ページのスクリーンショット](./media/conditional_access_SFBPolicy.png)
+   ![Skype for Business Online の条件付きアクセス ポリシー ページのスクリーンショット](./media/conditional_access_SFBPolicy.png)
 
-2.  **[条件付きアクセス ポリシーを有効にする]** をオンにします。
+2. **[条件付きアクセス ポリシーを有効にする]** をオンにします。
 
-3.  **[アプリケーション アクセス]** で、条件付きアクセス ポリシーを適用する対象を次のように選ぶことができます。
+3. **[アプリケーション アクセス]** で、条件付きアクセス ポリシーを適用する対象を次のように選ぶことができます。
 
-    -   **iOS**
+   -   **Android**
 
-    -   **Android**
+   -   **Android**
 
-4.  **[対象グループ]**で、**[変更]** を選択して、ポリシーを適用する Azure Active Directory セキュリティ グループを選択します。 すべてのユーザーを対象にすることも、選んだユーザーのグループのみを対象にすることもできます。
+4. **[対象グループ]**で、**[変更]** を選択して、ポリシーを適用する Azure Active Directory セキュリティ グループを選択します。 すべてのユーザーを対象にすることも、選んだユーザーのグループのみを対象にすることもできます。
 
-5.  **[例外グループ]**で、必要に応じて **[変更]** を選択して、このポリシーから除外する Azure Active Directory セキュリティ グループを選択します。
+5. **[例外グループ]**で、必要に応じて **[変更]** を選択して、このポリシーから除外する Azure Active Directory セキュリティ グループを選択します。
 
-6.  終了したら、**[保存]** を選択します。
+6. 終了したら、**[保存]** を選択します。
 
 これで、Skype for Business Online の条件付きアクセスの構成が完了しました。 条件付きアクセス ポリシーを展開する必要はありません。直ちに有効になります。
 

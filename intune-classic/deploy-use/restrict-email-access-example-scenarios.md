@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1ca486ca9eab1ebb8a446b560ff5e265eb4d2712
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 3116cfdb6b1ea153d914630a23e0db82a8c31d85
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="protect-access-to-email-with-microsoft-intune-example-scenarios"></a>Microsoft Intune で電子メールへのアクセスを保護する: シナリオ例
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="scenario-1-block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>シナリオ 1: 非準拠のデバイスを使用して Exchange Online にアクセスするユーザーをブロックする
 ### <a name="scenario-requirements"></a>シナリオの要件
@@ -53,9 +53,9 @@ ms.lasthandoff: 10/10/2017
 
 これらを実現するためには、次の設定で Exchange On-premises の条件付きアクセス ポリシーを構成します。
 
--   **[デバイスが Microsoft Intune に準拠していない場合や、登録されていない場合に、電子メール アプリから Exchange On-premises へのアクセスをブロックします]** をオンにします。 このオプションを選択すると、条件付きアクセス ポリシーが有効になり、Exchange にアクセスするすべてのデバイスは、Microsoft Intune に登録され、コンプライアンス ポリシーのルールに準拠していることが必要になります。
+- **[デバイスが Microsoft Intune に準拠していない場合や、登録されていない場合に、電子メール アプリから Exchange On-premises へのアクセスをブロックします]** をオンにします。 このオプションを選択すると、条件付きアクセス ポリシーが有効になり、Exchange にアクセスするすべてのデバイスは、Microsoft Intune に登録され、コンプライアンス ポリシーのルールに準拠していることが必要になります。
 
--   Exchange Active Sync の詳細設定で、以下を作成します。
+- Exchange Active Sync の詳細設定で、以下を作成します。
 
   -   iOS を実行するデバイスで Exchange にアクセスできるプラットフォームの例外。   
 

@@ -14,15 +14,15 @@ ms.assetid: 5c916182-d99c-44c5-a779-3f596f261c40
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f842c983dd06c00574ec660a11bdaef6f41c5aa8
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 99dc86bf20a50710cf1661702d46a3124861a619
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="retire-a-windows-pc"></a>Windows PC をインベントリから削除する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune ソフトウェア クライアントを実行して PC として管理しているデスクトップは、次の手順でインベントリから削除します。 PC をインベントリから削除すると、Intune 管理から除外されます。 Intune から PC をリセットし、工場出荷時の設定に戻すことはできません。
 
