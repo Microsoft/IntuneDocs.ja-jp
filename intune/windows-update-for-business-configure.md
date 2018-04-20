@@ -39,7 +39,7 @@ Windows Update for Business を使用することで、デバイスのグルー�
 
 ## <a name="before-you-start"></a>開始する前に
 
-- Windows 10 PC の更新を管理するには、Windows Anniversary Update 以降の Windows 10 Pro 以上のエディションを実行している必要があります。
+- Windows 10 PC を更新するには、その PC で Windows Anniversary Update を含む Windows 10 Pro 以降が実行されている必要があります。
 
 - Windows Update では、次の Windows 10 バージョンがサポートされています。
     - Windows 10
@@ -84,7 +84,7 @@ Windows Update for Business を使用することで、デバイスのグルー�
     - **自動更新の動作**: 自動更新の動作をどのように管理して更新プログラムをスキャン、ダウンロード、およびインストールするかを選択します。 詳しくは、「[Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate)」をご覧ください。
     - **品質更新プログラムの遅延期間 (日数)** - 品質更新プログラムを遅延させる日数を指定します。 これらの品質更新プログラムの受信を、リリースから最大 30 日間延期できます。  
 
-    品質更新プログラムは通常、既存の Windows 機能の修正プログラムや機能強化で、(マイクロソフトでは随時リリースしますが) 月の最初の火曜日に公開されるのが一般的です。 入手可能になってから品質更新プログラムの受信を延期するか、またどのくらい延期するかを定義できます。
+    品質更新プログラムは通常、既存の Windows 機能の修正プログラムや機能強化で、月の最初の火曜日に公開されるのが一般的です。マイクロソフトから随時リリースされることもあります。入手可能になってから品質更新プログラムの受信を延期するか、またどのくらい延期するかを定義できます。
 
     - **機能更新プログラムの遅延期間 (日数)** - 機能更新プログラムを遅延させる日数を指定します。 これらの機能更新プログラムの受信を、リリースから最大 180 日間延期できます。
 
