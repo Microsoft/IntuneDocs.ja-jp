@@ -1,25 +1,25 @@
 ---
-title: "Microsoft Intune で MAM ポリシーを監視する"
-description: "ポリシーを持つユーザー数を確認し、詳細を調べるためにドリルダウンします。"
-keywords: 
+title: Microsoft Intune で MAM ポリシーを監視する
+description: ポリシーを持つユーザー数を確認し、詳細を調べるためにドリルダウンします。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 02/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: de26b7614578b275802ca048ed17bfa5969f0387
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Microsoft Intune でアプリ保護ポリシーを監視する
 ユーザーに適用したアプリ保護ポリシーのコンプライアンス状態を監視できます。 アプリ保護ポリシーによって影響を受けるユーザー、コンプライアンスの状態、ユーザーに対して発生する可能性がある問題に関する情報を見つけることができます。

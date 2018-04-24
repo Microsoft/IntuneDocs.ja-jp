@@ -1,25 +1,25 @@
 ---
-title: "iOS デバイスで SandBlast Mobile Protect をインストールする必要がある | Microsoft Docs"
-description: "iOS デバイスに SandBlast Mobile Protect をインストールする方法について説明します。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: iOS デバイスで SandBlast Mobile Protect をインストールする必要がある | Microsoft Docs
+description: iOS デバイスに SandBlast Mobile Protect をインストールする方法について説明します。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 474fe9c8-558a-4348-ac9d-f87c79f150c4
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 4bf5aeea3aa17acf36b1993079763d3807dab347
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 94440987583651925e2aa3c1cceb7ba1206ed8bc
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-ios-device"></a>iOS デバイスに SandBlast Mobile Protect をインストールする必要がある
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 01/25/2018
 
 1.  次のプロンプトが表示された場合は、**[インストール]** をタップし、デバイスへの SandBlast Mobile Protect のインストールを許可します。
 
-2. 次のメッセージが表示されたら**[設定]** をタップし、**[ロケーション サービス]** をオンにし、**[続行]** をタップします。
+2. 次のメッセージが表示されたら **[設定]** をタップし、**[ロケーション サービス]** をオンにし、**[続行]** をタップします。
 
 3. SandBlast Mobile Protect に必要なアクセス許可を確認し、**[続行]** をタップします。
 

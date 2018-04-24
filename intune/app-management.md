@@ -1,31 +1,30 @@
 ---
-title: "Microsoft Intune でのアプリの管理とは"
-titlesuffix: 
-description: "Microsoft Intune でのアプリの管理の基本について説明します。"
-keywords: 
+title: Microsoft Intune でのアプリの管理とは
+titlesuffix: ''
+description: Microsoft Intune でのアプリの管理の基本について説明します。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/09/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 737c2900b2cdd57cb4dfc8373d06111a52e772b2
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 86cb0dfb67e81a7abbdc8f38dcbf5539b9855adb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune アプリの管理とは
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune では、IT 管理者が会社の従業員が使用するモバイル アプリを管理することができます。 この機能は、デバイス管理とデータ保護に加え用意されています。 この機能の一部には、優先事項として、作業で使用するアプリにエンドユーザーがアクセスできるようにすることがあります。 これは、以下の理由により、困難になる可能性があります。
 - さまざまなデバイス プラットフォームとアプリの種類が存在する。
@@ -65,7 +64,7 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
 アプリに関連するものは、ほとんどが **[Mobile Apps]** ワークロード内にあり、以下の手順でアクセスできます。
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ブレードで、**[モバイル アプリ]** を選びます。
 
     ![[モバイル アプリ] ワークロード](./media/apps-workload.png)
@@ -73,11 +72,11 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
 以下の情報は、**モバイル アプリ** ブレードで使用可能なオプションに対応します。
 
 ### <a name="manage"></a>コンピューターの
-- **アプリ** - 従業員が使用するアプリの追加、表示、割り当て、監視を行うには、このオプションを選択します。 詳細については、次の各資料を参照してください。
+- **アプリ** - 従業員が使用するアプリの追加、表示、割り当て、監視を行うには、このオプションを選択します。 詳細については、以下の記事を参照してください。
     - [アプリを追加する](apps-add.md)
     - [アプリを割り当てる](apps-deploy.md)
     - [アプリの監視](apps-monitor.md)
-- **[アプリの構成ポリシー]** - ユーザーがアプリを実行するときに必要となる可能性がある設定を指定できます。 詳細については、次の各資料を参照してください。
+- **[アプリの構成ポリシー]** - ユーザーがアプリを実行するときに必要となる可能性がある設定を指定できます。 詳細については、以下の記事を参照してください。
     - [Intune 用アプリ構成ポリシー](app-configuration-policies-overview.md)
         - [iOS アプリ構成ポリシー](app-configuration-policies-use-ios.md)
         - [Android アプリ構成ポリシー](app-configuration-policies-use-android.md)
@@ -91,7 +90,7 @@ Intune では、必要なデバイスで必要なアプリを利用できるよ�
 詳細については、[アプリの管理](app-management.md)に関するページをご覧ください。
 
 ### <a name="monitor"></a>モニター
-- **[アプリ ライセンス]** - アプリ ストアのボリューム購入アプリを表示、割り当て、監視します。 詳細については、次の各資料を参照してください。
+- **[アプリ ライセンス]** - アプリ ストアのボリューム購入アプリを表示、割り当て、監視します。 詳細については、以下の記事を参照してください。
     - [iOS ボリューム購入プログラム (VPP) アプリ](vpp-apps-ios.md)
     - [ビジネス向け Microsoft ストアのボリューム購入アプリ](windows-store-for-business.md)
 - **[検出されたアプリ]** - Intune によって割り当てられ、デバイスにインストールされたすべてのアプリを表示します。

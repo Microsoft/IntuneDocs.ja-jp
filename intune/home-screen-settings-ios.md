@@ -13,15 +13,15 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 56527da7ac8c2ed00a4b33049c8ba4ad03299976
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: ab5ee886cbc324b0fe3383e7e585e8d0b6482326
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>iOS を実行するデバイスの Microsoft Intune ホーム画面のレイアウト設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 これらの設定を使用すると、iOS を実行するデバイスの Dock とホーム画面で、アプリのレイアウトとフォルダーを構成できます。
 
@@ -77,7 +77,7 @@ iPhone にポリシーを割り当てると、結果は次のスクリーンシ�
 1. **[アプリ名]** を入力します。 この名前は Azure Portal での参照用に使われ、iOS デバイスでは*表示されません*。
 2. 表示するアプリの **[アプリ バンドル ID]** を入力します。 詳細については、このトピックで後述する「**組み込み iOS アプリのバンドル ID リファレンス**」をご覧ください。
 3. **[OK]** をクリックして、アイテムを引き続き追加します。デバイスの Dock には最大 **6** 個、デバイスのページには最大 **60** 個までアイテムを追加できます。
-4. 操作が完了したら、 **[OK]**をクリックします。
+4. 操作が完了したら、 **[OK]** をクリックします。
 
 ## <a name="how-to-add-a-folder-to-the-list"></a>フォルダーを一覧に追加する方法
 
@@ -89,7 +89,7 @@ iPhone にポリシーを割り当てると、結果は次のスクリーンシ�
 3. **[アプリ名]** を入力します。 この名前は Azure Portal での参照用に使われ、iOS デバイスでは*表示されません*。
 2. 表示するアプリの **[アプリ バンドル ID]** を入力します。 詳細については、「**アプリを一覧に追加する方法**」をご覧ください。
 3. **[追加]** を選びます。 最大 60 アイテムまで追加できます。
-4. 操作が完了したら、 **[OK]**をクリックします。
+4. 操作が完了したら、 **[OK]** をクリックします。
 
 
 ## <a name="bundle-id-reference-for-built-in-ios-apps"></a>組み込み iOS アプリのバンドル ID リファレンス

@@ -128,7 +128,7 @@
 ### [デバイスのリセット](reset-erase-your-device-cpwebsite.md)
 ### [デバイスを暗号化する](encrypt-your-device-windows.md)
 ### [パスワードを設定または変更する](set-or-change-your-password-windows.md)
-### [Intune からデバイスの登録を解除する](unenroll-your-device-from-intune-windows.md)
+### [Intune からのデバイスの削除](unenroll-your-device-from-intune-windows.md)
 ### [デバイスの登録を解除した場合の動作](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 ### [デバイスをリセットした場合の動作](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Microsoft による使用状況データの収集を無効にする](turn-off-microsoft-usage-data-collection-windows.md)

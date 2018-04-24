@@ -1,37 +1,37 @@
 ---
-title: "会社のサポートに Windows 10 デバイスのログを送信する | Microsoft Docs"
-description: "Intune に Windows 10 1511 以降のデバイスを登録する"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 会社のサポートに Windows 10 デバイスのログを送信する | Microsoft Docs
+description: Intune に Windows 10 1511 以降のデバイスを登録する
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bd428c14-7d75-42de-9322-b57323a01f06
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4840ffc6217d757062b4cd610af6b1263070963f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f3948ca1dd68e34997a21444f271ae31407d6508
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>会社のサポートに、ポータル サイト アプリから Windows 10 のログを送信する
 
 Windows 10 デバイスでポータル サイト アプリを使用している間にエラーが発生した場合は、会社のサポートが問題のトラブルシューティングを行う際に役立つようにエラーに関する情報を電子メールで送信することができます。 この情報は、デバイスの _diagnostic log_ という名前の特殊なドキュメントに保存されています。
 
-1.  **ポータル サイト** アプリを開きます。
-2.  **[設定]** ギアを選択し、**[ログの送信]** を選択します。
-3.  **[共有]** が開きます。 **[メール]** を選択します。 これで、ポータル サイト ログが添付された電子メール メッセージが作成され、会社のサポートに送信できます。
+1. **ポータル サイト** アプリを開きます。
+2. **[設定]** ギアを選択し、**[ログの送信]** を選択します。
+3. **[共有]** が開きます。 **[メール]** を選択します。 これで、ポータル サイト ログが添付された電子メール メッセージが作成され、会社のサポートに送信できます。
 
-  ![ポータル サイト アプリの [設定] ページからの [ログの送信] ダイアログ。 クリックするリンク "ログの送信" の下に "ポータル サイトの問題の解決に役立つ診断ログを会社のサポートに送信します。" と示されている](./media/w10-share-logs-after-1711.png)
+   ![ポータル サイト アプリの [設定] ページからの [ログの送信] ダイアログ。 クリックするリンク "ログの送信" の下に "ポータル サイトの問題の解決に役立つ診断ログを会社のサポートに送信します。" と示されている](./media/w10-share-logs-after-1711.png)
 
 また、[設定アプリからのログ](send-logs-to-your-it-admin-settings-windows.md)を送信して、問題が見つかったときに会社のサポートがトラブルシューティングしやすくする必要がある場合もあります。
 

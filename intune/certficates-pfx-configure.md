@@ -1,28 +1,28 @@
 ---
-title: "Microsoft Intune で PKCS 証明書を使用する - Azure | Micrososft Docs"
-description: "Microsoft Intune で PKCS (Public Key Cryptography Standards/公開鍵暗号標準) 証明書を追加または作成します。これには、ルート証明書をエクスポートする、証明書テンプレートを構成する、Microsoft Intune Certificate Connector をダウンロードしてインストールする、デバイス構成プロファイルを作成す。Azure とご利用の証明機関で PKCS 証明書プロファイルを作成するという手順が含まれます。"
-keywords: 
+title: Microsoft Intune で PKCS 証明書を使用する - Azure | Micrososft Docs
+description: Microsoft Intune で PKCS (Public Key Cryptography Standards/公開鍵暗号標準) 証明書を追加または作成します。これには、ルート証明書をエクスポートする、証明書テンプレートを構成する、Microsoft Intune Certificate Connector をダウンロードしてインストールする、デバイス構成プロファイルを作成す。Azure とご利用の証明機関で PKCS 証明書プロファイルを作成するという手順が含まれます。
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
-ms.reviewer: 
+ms.technology: ''
+ms.assetid: ''
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c0668921f03b24b319c2c37837dbd2cc053370ca
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 0dfcaa2e37fecc4c5a075931489c106b78c17b7e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune で PKCS 証明書を構成して使用する
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 証明書は、VPN や WiFi ネットワークなど、企業リソースにアクセスするとき、認証やセキュリティ目的で利用されます。 この記事では、PKCS 証明書をエクスポートし、Intune プロファイルに追加する方法について説明します。 
 
@@ -56,7 +56,7 @@ VPN、WiFi、その他のリソースで認証するには、ルートまたは�
 
    次に例を示します。
 
-4.  ウィザードが完了した後、ウィザードを閉じる前に、**[証明書コネクタの UI を起動]** をクリックします。
+4. ウィザードが完了した後、ウィザードを閉じる前に、**[証明書コネクタの UI を起動]** をクリックします。
 
    `certutil -ca.cert certnew.cer`
 
@@ -68,8 +68,8 @@ VPN、WiFi、その他のリソースで認証するには、ルートまたは�
 2. **[証明機関]** コンソールで **[証明書テンプレート]** を右クリックして **[管理]** を選択します。
 3. **[ユーザー証明書テンプレート]** に移動して右クリックし、**[テンプレートの複製]** を選択します。 **[新しいテンプレートのプロパティ]** が開きます。
 4. **[互換性]** タブで: 
-   * **[証明機関]** に**[Windows Server 2008 R2]** を設定します。
-   * **[証明書の受信者]** に**[Windows 7 / Server 2008 R2]** を設定します。
+   * **[証明機関]** に **[Windows Server 2008 R2]** を設定します。
+   * **[証明書の受信者]** に **[Windows 7 / Server 2008 R2]** を設定します。
 5. **[全般]** タブで次のように設定します。
    * **[テンプレート表示名]** にわかりやすい名前を設定します。
 
@@ -127,7 +127,7 @@ VPN、WiFi、その他のリソースで認証するには、ルートまたは�
    * プロファイルの**名前**
    * オプションで説明を設定
    * プロファイルをデプロイする**プラットフォーム**
-   * **[プロファイルの種類]** に**[信頼済み証明書]** を設定
+   * **[プロファイルの種類]** に **[信頼済み証明書]** を設定
 
 4. **[設定]** に移動し、以前エクスポートした .cer ファイルのルート CA 証明書を入力します。
 

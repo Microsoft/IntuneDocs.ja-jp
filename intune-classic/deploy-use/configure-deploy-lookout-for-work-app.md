@@ -14,41 +14,41 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5d56dcf54c4f087dbea0dfcd95a2eebbdf384c00
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 1b08ac6049bc7bbbf5c2203f156a6c03b6fc7a51
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-and-deploy-lookout-for-work-app"></a>Lookout for Work アプリを構成して展開する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 この記事では、Android デバイスと iOS デバイス用に Lookout for Work アプリを構成し、展開する方法について説明します。
 
 ## <a name="android-google-play-store-app"></a>Android (Google Play ストア アプリ)
 
-1.  [Microsoft Intune 管理者コンソール](https://manage.microsoft.com)で、**[アプリ]** に移動し、**[アプリの追加]** を選択します。
-2.  発行元の **[ソフトウェア セットアップ]** ページで、**[外部リンク]** を選択して、https://play.google.com/store/apps/details?id=com.lookout.enterprise という URL を指定します。
-  >[!NOTE]
-  >Managed Browser を要求するボックスをオンにしないでください。
+1. [Microsoft Intune 管理者コンソール](https://manage.microsoft.com)で、**[アプリ]** に移動し、**[アプリの追加]** を選択します。
+2. 発行元の **[ソフトウェア セットアップ]** ページで、**[外部リンク]** を選択して、https://play.google.com/store/apps/details?id=com.lookout.enterprise という URL を指定します。
+   >[!NOTE]
+   >Managed Browser を要求するボックスをオンにしないでください。
 
-3.  **[ソフトウェアの説明]** ページで、次の情報を入力します。
-  * **[発行元]:** Lookout Mobile Security
-  * **[名前]:**   Lookout for Work
-  * **[説明]:**  Lookout はモバイルの脅威に対する最適な保護を提供し、モバイル デバイスの安全を保ちます。 デバイスにインストールされた Lookout アプリは、デバイスを脅威から保護し、検出された脅威を管理者に通知します。
-  * **[カテゴリ]:** コンピューターの管理
+3. **[ソフトウェアの説明]** ページで、次の情報を入力します。
+   * **[発行元]:** Lookout Mobile Security
+   * **[名前]:**   Lookout for Work
+   * **[説明]:**  Lookout はモバイルの脅威に対する最適な保護を提供し、モバイル デバイスの安全を保ちます。 デバイスにインストールされた Lookout アプリは、デバイスを脅威から保護し、検出された脅威を管理者に通知します。
+   * **[カテゴリ]:** コンピューターの管理
 
 4. 正常に完了すると、**[Microsoft Intune にデータが正常にアップロードされました]** というメッセージが表示されます。
 
-  Intune コンソールで **[アプリ]** をクリックすると、**Lookout for Work** アプリが一覧に表示されます。![Intune 管理者コンソールのアプリ ページの一覧に表示された Lookout for Work アプリのスクリーンショット](../media/mtp/lookout-app-listed-intune-console.png)
+   Intune コンソールで **[アプリ]** をクリックすると、**Lookout for Work** アプリが一覧に表示されます。![Intune 管理者コンソールのアプリ ページの一覧に表示された Lookout for Work アプリのスクリーンショット](../media/mtp/lookout-app-listed-intune-console.png)
 
 5. アプリをユーザーに展開するには、Lookout for Work アプリを選択し、**[展開の管理]** を選択します。
 
-  Lookout MTP コンソールの 「Enrollment Management」 (登録管理) オプションで追加したものと同じユーザーを選択する必要があります。  Lookout MTP へのユーザー グループの追加の詳細については、「[Lookout MTP でサブスクリプションを構成する](configure-deploy-lookout-for-work-app.md)」セクションの手順 3 をご覧ください。
+   Lookout MTP コンソールの 「Enrollment Management」 (登録管理) オプションで追加したものと同じユーザーを選択する必要があります。  Lookout MTP へのユーザー グループの追加の詳細については、「[Lookout MTP でサブスクリプションを構成する](configure-deploy-lookout-for-work-app.md)」セクションの手順 3 をご覧ください。
 
-  >[!IMPORTANT]
-  > Intune アプリ展開ウィザードは Azure AD のユーザー グループを認識せず、代わりに Intune のユーザー グループを使用します。 したがって、Lookout MTP コンソールで登録されている Azure AD のユーザー グループに基づいて Intune のユーザー グループを作成する必要があります ([こちら](plan-your-user-and-device-groups.md)のトピックを参照)。
+   >[!IMPORTANT]
+   > Intune アプリ展開ウィザードは Azure AD のユーザー グループを認識せず、代わりに Intune のユーザー グループを使用します。 したがって、Lookout MTP コンソールで登録されている Azure AD のユーザー グループに基づいて Intune のユーザー グループを作成する必要があります ([こちら](plan-your-user-and-device-groups.md)のトピックを参照)。
 
 6. **[必須のインストール]** オプションを選択し、Lookout アプリがユーザーのデバイスに必ずインストールされるようにします。
 
@@ -59,31 +59,31 @@ ms.lasthandoff: 03/22/2018
 2. Lookout for Work iOS アプリに**再署名**します。 Lookout は、iOS App Store 以外の場所で Lookout for Work iOS アプリを配布しています。 **アプリを配布する前に**、iOS Enterprise Developer Certificate でアプリに再署名する必要があります。 Lookout for Work アプリに再署名する詳細な手順については、Lookout サイトの「[Lookout for Work iOS app re-signing process](https://personal.support.lookout.com/hc/articles/114094038714)」(Lookout for Work iOS アプリの再署名プロセス) を参照してください。
 
 3. 次の手順を実行して、iOS ユーザーの Azure Active Directory 認証を有効にします。
-  1.  [Azure Active Directory 管理ポータル](https://manage.windowsazure.com)にログインし、アプリケーション ページに移動します。
-  2.  **Lookout for Work iOS アプリ**を**ネイティブ クライアント アプリケーション**として追加します。
-  ![ネイティブ クライアント アプリ オプションが表示されたアプリの追加ダイアログのスクリーンショット](../media/mtp/aad-add-app.png)
-  3. **com.lookout.enterprise.yourcompanyname** は、IPA に署名したときに選択したカスタマー バンドル ID で置き換えます。
-  4.  リダイレクト URI を追加します。**&lt;companyportal://code/>** の後に、元のリダイレクト URI を URL エンコードしたバージョンを続けます。
-  5.  アプリに**委任されたアクセス許可**を追加します。
+   1.  [Azure Active Directory 管理ポータル](https://manage.windowsazure.com)にログインし、アプリケーション ページに移動します。
+   2.  **Lookout for Work iOS アプリ**を**ネイティブ クライアント アプリケーション**として追加します。
+   ![ネイティブ クライアント アプリ オプションが表示されたアプリの追加ダイアログのスクリーンショット](../media/mtp/aad-add-app.png)
+   3. **com.lookout.enterprise.yourcompanyname** は、IPA に署名したときに選択したカスタマー バンドル ID で置き換えます。
+   4.  リダイレクト URI を追加します。**&lt;companyportal://code/>** の後に、元のリダイレクト URI を URL エンコードしたバージョンを続けます。
+   5.  アプリに**委任されたアクセス許可**を追加します。
 
-  詳細については、「[ネイティブ クライアント アプリケーションの構成](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application)」を参照してください。
+   詳細については、「[ネイティブ クライアント アプリケーションの構成](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application)」を参照してください。
 
 4. [Microsoft Intune でのモバイル デバイスのアプリの追加](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)に関するトピックの説明に従って、再署名した .ipa ファイルをアップロードします。 最小 OS バージョンを iOS 8.0 以降に設定します。
 
-  ![アプリの一覧に Lookout for Work アプリが表示された Intune 管理コンソールのアプリ ページのスクリーンショット](../media/mtp/ios-app-uploaded-intune.png)
+   ![アプリの一覧に Lookout for Work アプリが表示された Intune 管理コンソールのアプリ ページのスクリーンショット](../media/mtp/ios-app-uploaded-intune.png)
 
 5. 「[Configure iOS apps with mobile app configuration policies in Microsoft Intune](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)」 (Microsoft Intune でのモバイル アプリ構成ポリシーを使用した iOS アプリの構成) の説明に従って、管理対象アプリの構成ポリシーを作成します。
 
-  ![iOS 8.0 以降のアプリ構成ポリシーが強調表示された新しいポリシーの作成ウィザードのスクリーンショット](../media/mtp/ios-app-config.png)
+   ![iOS 8.0 以降のアプリ構成ポリシーが強調表示された新しいポリシーの作成ウィザードのスクリーンショット](../media/mtp/ios-app-config.png)
 
 6. **アプリをユーザーに展開する**には、Lookout for Work アプリを選択し、**[展開の管理]** を選択します。
 
-  Lookout コンソールの 「Enrollment Management」 (登録管理) オプションで追加したのと同じユーザーを選択する必要があります。  Lookout MTP へのユーザー グループの追加の詳細については、「[Lookout サブスクリプションを構成する](https://docs.microsoft.com/sccm/protect/deploy-use/configure-and-deploy-lookout-for-work-apps)」セクションの手順 3 をご覧ください。
+   Lookout コンソールの 「Enrollment Management」 (登録管理) オプションで追加したのと同じユーザーを選択する必要があります。  Lookout MTP へのユーザー グループの追加の詳細については、「[Lookout サブスクリプションを構成する](https://docs.microsoft.com/sccm/protect/deploy-use/configure-and-deploy-lookout-for-work-apps)」セクションの手順 3 をご覧ください。
 
-  >[!IMPORTANT]
-  > Intune アプリ展開ウィザードでは、Azure AD ユーザー グループは認識されず、代わりに Intune ユーザー グループが使用されます。このため、[こちら](plan-your-user-and-device-groups.md)のトピックの説明に従って Lookout コンソールで登録した Azure AD ユーザー グループに基づいて Intune ユーザー グループを作成する必要があります。
+   >[!IMPORTANT]
+   > Intune アプリ展開ウィザードでは、Azure AD ユーザー グループは認識されず、代わりに Intune ユーザー グループが使用されます。このため、[こちら](plan-your-user-and-device-groups.md)のトピックの説明に従って Lookout コンソールで登録した Azure AD ユーザー グループに基づいて Intune ユーザー グループを作成する必要があります。
 
-  **[必須のインストール]** オプションを選択し、Lookout アプリがユーザーのデバイスに必ずインストールされるようにします。
+   **[必須のインストール]** オプションを選択し、Lookout アプリがユーザーのデバイスに必ずインストールされるようにします。
 
 ## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>展開したアプリがデバイスで開かれている場合はどうなりますか
 https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md ユーザーがデバイスで Lookout for Work を開くと、アプリをアクティブ化し、[Azure Active Directory でサインインする] オプションを選択するように求められます。 エンド ユーザーの詳細な手順については、次のトピックをご覧ください。

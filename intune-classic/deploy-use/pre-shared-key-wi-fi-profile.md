@@ -1,45 +1,45 @@
 ---
-title: "PSK を使用する Wi-Fi"
-description: "カスタム構成を使用して、事前共有キーを使用した Wi-Fi プロファイルを作成します。"
-keywords: 
+title: PSK を使用する Wi-Fi
+description: カスタム構成を使用して、事前共有キーを使用した Wi-Fi プロファイルを作成します。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0e2dff26e6dcbe1db6a9cef58af10901178e432b
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a023b6829b33c3b3bff94021ecd3c90d8b41f30f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>カスタム ポリシーを使用して、事前共有キーを使用した Wi-Fi プロファイルを作成する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune の**カスタム構成**を使用して、事前共有キーを使用した Wi-Fi プロファイルを作成する方法を次に示します。 このトピックでは、EAP ベースの Wi-Fi プロファイルを作成する方法の例も示します。
 
 > [!NOTE]
--   以下のように、そのネットワークに接続しているコンピューターからコードをコピーした方が簡単な場合があります。
-- Android では、Johnathon Biersack 氏が提供しているこの [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) を使用することも可能です。
--   OMA-URI 設定をさらに追加することにより、複数のネットワークとキーを追加できます。
--  iOS でプロファイルを構成するには、Mac ステーションで Apple Configurator を使用します。 また、Johnathon Biersack 氏が提供する [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) を使用します。
+> -   以下のように、そのネットワークに接続しているコンピューターからコードをコピーした方が簡単な場合があります。
+> - Android では、Johnathon Biersack 氏が提供しているこの [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) を使用することも可能です。
+> -   OMA-URI 設定をさらに追加することにより、複数のネットワークとキーを追加できます。
+> -  iOS でプロファイルを構成するには、Mac ステーションで Apple Configurator を使用します。 また、Johnathon Biersack 氏が提供する [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) を使用します。
 
 
-1.  Android または Windows 用に事前共有キーを使用した Wi-Fi プロファイル、または EAP ベースの Wi-Fi プロファイルを作成する場合、ポリシーを作成するときに、Wi-Fi プロファイルではなく、そのデバイスのプラットフォーム用の**カスタム構成**を選択します。
+1. Android または Windows 用に事前共有キーを使用した Wi-Fi プロファイル、または EAP ベースの Wi-Fi プロファイルを作成する場合、ポリシーを作成するときに、Wi-Fi プロファイルではなく、そのデバイスのプラットフォーム用の**カスタム構成**を選択します。
 
-2.  名前と説明を入力します。
-3.  新しい OMA-URI 設定を追加します。
+2. 名前と説明を入力します。
+3. 新しい OMA-URI 設定を追加します。
 
-   a.   この Wi-Fi ネットワーク設定の名前を入力します。
+   」を参照します。   この Wi-Fi ネットワーク設定の名前を入力します。
 
    b.   OMA-URI 設定の説明を入力するか、空白のままにします。
 
@@ -47,15 +47,15 @@ Intune の**カスタム構成**を使用して、事前共有キーを使用し
 
    d.   **OMA-URI**:
 
-    - **Android の場合**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-    - **Windows の場合**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **Android の場合**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+   - **Windows の場合**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-    > [!NOTE]
-先頭にピリオドを必ず入力してください。
+   > [!NOTE]
+   > 先頭にピリオドを必ず入力してください。
 
-    SSID は、作成しているポリシーの SSID です。 たとえば、`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings` と記述します。
+   SSID は、作成しているポリシーの SSID です。 たとえば、`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings` と記述します。
 
-  e. **値フィールド**に、XML コードを貼り付けます。 次に例を示します。 それぞれの値は、ネットワーク設定に適したものにする必要があります。 一部のポインターのコードについては、コメント セクションをご覧ください。
+   e. **値フィールド**に、XML コードを貼り付けます。 次に例を示します。 それぞれの値は、ネットワーク設定に適したものにする必要があります。 一部のポインターのコードについては、コメント セクションをご覧ください。
 4. **[OK]** を選択して、保存し、ポリシーをデプロイします。
 
     > [!NOTE]
@@ -202,8 +202,8 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 1. ワイヤレス ネットワークに接続中のコンピューターまたは最近接続されたコンピューターの、C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid} のフォルダーを開きます。
 
     すべての中から正しいプロファイルを探す必要があるため、多数のワイヤレス ネットワークに接続したことのないコンピューターを使用するのが最良です。
-3.     XML ファイルを検索し、正しい名前のファイルを探します。
-4.     正しい XML ファイルを見つけたら、OMA-URI の設定ページの [データ] フィールドに、XML コードをコピーして貼り付けます。
+2. XML ファイルを検索し、正しい名前のファイルを探します。
+3. 正しい XML ファイルを見つけたら、OMA-URI の設定ページの [データ] フィールドに、XML コードをコピーして貼り付けます。
 
 ## <a name="deploy-the-policy"></a>ポリシーの展開
 

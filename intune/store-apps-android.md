@@ -1,35 +1,35 @@
 ---
-title: "Android ストア アプリを Microsoft Intune に追加する方法"
-titleSuffix: 
-description: "Android ストア アプリを Microsoft Intune に追加する方法について説明します。"
-keywords: 
+title: Android ストア アプリを Microsoft Intune に追加する方法
+titleSuffix: ''
+description: Android ストア アプリを Microsoft Intune に追加する方法について説明します。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87fea551dea1f80ee071fe6b477b84729e000874
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ece6edee891b147ad2124b987239da6af8e1bc8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>Android ストア アプリを Microsoft Intune に追加する方法
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 アプリをデバイスまたはユーザーのグループに割り当てる前に、最初にアプリを Microsoft Intune に追加する必要があります。 次の手順を使用すると、Azure Portal から Intune に Android ストア アプリを追加できます。
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3. **[Intune]** ウィンドウで、**[モバイル アプリ]** を選びます。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. **[Intune]** ウィンドウで、**[モバイル アプリ]** を選択します。
 4. **[モバイル アプリ]** ワークロードで、**[管理]** セクションの下の **[アプリ]** を選択します。
 5. アプリの一覧の上にある **[追加]** を選択します。
 6. **[アプリの追加]** ウィンドウで、使用可能な **[ストア アプリ]** の種類で **[Android]** を選択します。
@@ -52,6 +52,6 @@ ms.lasthandoff: 03/08/2018
 
 作成したアプリはアプリの一覧に表示され、選択したグループに割り当てることができるようになります。 
 
-##<a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次の手順
 
 - [アプリをグループに割り当てる方法](apps-deploy.md)

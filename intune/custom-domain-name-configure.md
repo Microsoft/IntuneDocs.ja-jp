@@ -1,29 +1,29 @@
 ---
-title: "カスタムのドメイン名を構成する"
+title: カスタムのドメイン名を構成する
 titlesuffix: Microsoft Intune
-description: "Microsoft Intune サブスクリプションのカスタム ドメイン名を追加します"
-keywords: 
+description: Microsoft Intune サブスクリプションのカスタム ドメイン名を追加します
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 913334a9fee8ab584cb11f8124ef2a491e01661f
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 9b9f81049e7bdfdfe2861d617dceb6036a55cecf
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-a-custom-domain-name"></a>カスタムのドメイン名を構成する
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 このトピックでは、管理者が Microsoft Intune を使用して、DNS CNAME を作成し、ログオン エクスペリエンスの簡略化とカスタマイズを行う方法について説明します。
 

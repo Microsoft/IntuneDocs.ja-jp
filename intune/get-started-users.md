@@ -1,25 +1,25 @@
 ---
-title: "ユーザー管理の概要"
+title: ユーザー管理の概要
 titlesuffix: Microsoft Intune
-description: "Intune にユーザーを追加し、ライセンスを割り当てて、モバイル デバイスで会社のリソースにアクセスできるようにします。"
-keywords: 
+description: Intune にユーザーを追加し、ライセンスを割り当てて、モバイル デバイスで会社のリソースにアクセスできるようにします。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 53b5be6e5cdf8f60304126e133a727123bfef58d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6ed6b95a11eddfeb748b21d6df55f3a5668d9e1d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-managing-users"></a>ユーザー管理の概要
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 ## <a name="how-do-i-create-a-user"></a>ユーザーの作成方法
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Microsoft Intune]** ウィンドウを開いたら、**[ユーザー]** を選択します。 **[すべてのユーザー]** ページで、**[+ 新しいユーザー]** を選択します。
 4. **名前**や**ユーザー名**など、ユーザーの詳細を入力します。 ユーザー名のドメイン名の部分は初回の既定ドメイン名である “contoso.onmicrosoft.com” か、“contoso.com” など、検証済みの非フェデレーション ドメイン名にする必要があります。
 5. **[グループ]** の下で、ユーザーを追加するテスト グループを選択します。
@@ -44,8 +44,8 @@ ms.lasthandoff: 03/08/2018
 3. すべてのユーザーの情報が読み込まれるまでしばらくの間待つ必要があります。 読み込まれたら、ユーザーの **[製品ライセンス]** の **[編集]** を選択します。
 4. ユーザーに **[場所]** を割り当て、Intune を **[オン]** に切り替えます。
 
- > [!NOTE]
- > このとき、このユーザーのライセンスの 1 つが使用されます。 ライブ環境を利用している場合、後でこのライセンスの使用をオフにし、実際のユーザーに再度割り当てることができます。
+   > [!NOTE]
+   > このとき、このユーザーのライセンスの 1 つが使用されます。 ライブ環境を利用している場合、後でこのライセンスの使用をオフにし、実際のユーザーに再度割り当てることができます。
 
 5. **[保存]** を選択します。
 

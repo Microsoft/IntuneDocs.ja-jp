@@ -1,29 +1,29 @@
 ---
-title: "Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する"
+title: Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 titlesuffix: Microsoft Intune
-description: "Microsoft Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する"
-keywords: 
+description: Microsoft Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: doubeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4325d77982bcca748a38696fbbbb413a1c304ffb
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 821ce2c9992d32195b95e766f96bea7322ec2e7e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Windows 10 アプリでアプリ保護ポリシーを使用して、デバイスを登録せずにアプリを保護できます。
 
@@ -35,7 +35,7 @@ WIP ポリシーを追加するときのいくつかの概念について理解�
 
 -   **[許可されているアプリ]**: このポリシーに準拠する必要があるアプリです。
 
--   **[適用から除外されるアプリ]**: これらのアプリはこのポリシーから除外され、制限なしに会社のデータにアクセスできます。
+-   **[適用から除外されるアプリ]**: これらのアプリはこのポリシーから除外され、制限なしに企業データにアクセスできます。
 
 ### <a name="types-of-apps"></a>アプリの種類
 
@@ -59,7 +59,7 @@ WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを
 
 組織で Intune を設定した後は、WIP 固有のポリシーを作成できます。
 
-1. [Azure Portal](https://portal.azure.com) にサインインします。
+1. [Azure ポータル](https://portal.azure.com)にサインインします。
 2. **[すべてのサービス]** > **[Intune]** の順に選択します。
 3. **[Microsoft Intune]** ブレードで、**[モバイル アプリ]** を選択します。
 4. **[モバイル アプリ]** ブレードで、**[アプリ保護ポリシー]** を選択します。

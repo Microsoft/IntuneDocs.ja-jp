@@ -1,27 +1,27 @@
 ---
-title: "詳細ログ記録を使用して会社のサポートがデバイスの問題を解決できるようにする | Microsoft Docs"
-description: "詳細ログ記録を使用して会社のサポートがデバイスの問題を解決できるようにする"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 詳細ログ記録を使用して会社のサポートがデバイスの問題を解決できるようにする | Microsoft Docs
+description: 詳細ログ記録を使用して会社のサポートがデバイスの問題を解決できるようにする
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 37272f31597b907f19834368747743c1f70d7d07
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 390a236cf8eebae209c81b53d629cbd3f83899f8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>詳細ログ記録を使用して会社のサポートがデバイスの問題を解決できるようにする
 

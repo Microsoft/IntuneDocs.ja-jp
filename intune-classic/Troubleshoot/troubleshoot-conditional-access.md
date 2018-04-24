@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 67a2891e4c7a6adcd7bd132c5663c9a78426ea07
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: eb27605108feb3a2db3072d4a8b7a296f0f74cfc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>条件付きアクセスに関するトラブルシューティング
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 通常、ユーザーは電子メールまたは SharePoint にアクセスしようとし、登録を要求されます。 そのプロンプトからユーザーはポータル サイトに移動します。
 
@@ -49,20 +49,20 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="compliance-issues"></a>ポリシー準拠の問題
 
- -  デバイスが Intune ポリシーに準拠していません。 一般的な問題は暗号化とパスワードの要件です。 ユーザーはポータル サイトにリダイレクトされます。ポータル サイトでデバイスがポリシーに準拠するように設定できます。
- -  デバイスのコンプライアンス情報が登録されるまで時間がかかることがあります。 しばらく待ってからもう一度お試しください。
- -  iOS デバイスの場合:
-     -   ユーザーによって作成された既存の電子メール プロファイルは、Intune の管理者が作成したプロファイルの展開をブロックします。 これは一般的な問題です。iOS ユーザーは通常、電子メール プロファイルを作成し、それから登録するためです。 ポータル サイトは、手動で設定した電子メール プロファイルに起因してポリシーに準拠していないことをユーザーに通知し、そのプロファイルを取り除くようにユーザーに要求します。Intune プロファイルを展開できるように、ユーザーは電子メール プロファイルを取り除く必要があります。 この問題を防ぐには、電子メール プロファイルを設定せずに登録し、Intune によるプロファイルの展開を許可するようにユーザーに指示します。
-     -   iOS デバイスがポリシー準拠状況の確認中の状態でスタックし、ユーザーが別のチェックインを開始できません。 ポータル サイトの再起動で解決することがあり、ポリシー準拠の状態が Intune のデバイスの状態を反映します。 デバイスの同期からすべてのデータが収集された後、ポリシー準拠の確認は平均して 0.5 秒で完了します。
+- デバイスが Intune ポリシーに準拠していません。 一般的な問題は暗号化とパスワードの要件です。 ユーザーはポータル サイトにリダイレクトされます。ポータル サイトでデバイスがポリシーに準拠するように設定できます。
+- デバイスのコンプライアンス情報が登録されるまで時間がかかることがあります。 しばらく待ってからもう一度お試しください。
+- iOS デバイスの場合:
+  - ユーザーによって作成された既存の電子メール プロファイルは、Intune の管理者が作成したプロファイルの展開をブロックします。 これは一般的な問題です。iOS ユーザーは通常、電子メール プロファイルを作成し、それから登録するためです。 ポータル サイトは、手動で設定した電子メール プロファイルに起因してポリシーに準拠していないことをユーザーに通知し、そのプロファイルを取り除くようにユーザーに要求します。Intune プロファイルを展開できるように、ユーザーは電子メール プロファイルを取り除く必要があります。 この問題を防ぐには、電子メール プロファイルを設定せずに登録し、Intune によるプロファイルの展開を許可するようにユーザーに指示します。
+  - iOS デバイスがポリシー準拠状況の確認中の状態でスタックし、ユーザーが別のチェックインを開始できません。 ポータル サイトの再起動で解決することがあり、ポリシー準拠の状態が Intune のデバイスの状態を反映します。 デバイスの同期からすべてのデータが収集された後、ポリシー準拠の確認は平均して 0.5 秒で完了します。
 
-        通常、デバイスがこの状態にあるのは、サービスの接続に問題があるか、同期に時間がかかっていることが原因です。  別のネットワーク構成 (携帯電話、Wi-Fi、VPN) を使用、デバイスを再起動、およびデバイスの SSP が最新であることを確認しても問題が解決しない場合は、「[Microsoft Intune のサポート受ける方法](how-to-get-support-for-microsoft-intune.md)」に従って Microsoft サポートにお問い合わせください。
+    通常、デバイスがこの状態にあるのは、サービスの接続に問題があるか、同期に時間がかかっていることが原因です。  別のネットワーク構成 (携帯電話、Wi-Fi、VPN) を使用、デバイスを再起動、およびデバイスの SSP が最新であることを確認しても問題が解決しない場合は、「[Microsoft Intune のサポート受ける方法](how-to-get-support-for-microsoft-intune.md)」に従って Microsoft サポートにお問い合わせください。
 
- - Android デバイスの場合:
-    - 一部の Android デバイスは暗号化されているように見えることがありますが、ポータル サイト アプリでは、このようなデバイスを暗号化されていないデバイスと認識します。 
+- Android デバイスの場合:
+   - 一部の Android デバイスは暗号化されているように見えることがありますが、ポータル サイト アプリでは、このようなデバイスを暗号化されていないデバイスと認識します。 
     
-        -   この状態のデバイスでは、ユーザーが安全なスタートアップ パスコードを設定する必要があります。 ユーザーには、ポータル サイト アプリから、デバイスのスタートアップ パスコードを設定するように求めるデバイス通知が表示されます。 デバイス通知をタップし、既存の PIN またはパスワードを確認した後に、**[Secure start-up]** (安全な起動) 画面で **[Require PIN to start device]** (デバイスの起動に PIN が必要) を選択します。 ポータル サイト アプリからデバイスの **[ポリシー準拠状況の確認]** ボタンをタップします。 デバイスは暗号化済みとして検出されるようになります。
+       -   この状態のデバイスでは、ユーザーが安全なスタートアップ パスコードを設定する必要があります。 ユーザーには、ポータル サイト アプリから、デバイスのスタートアップ パスコードを設定するように求めるデバイス通知が表示されます。 デバイス通知をタップし、既存の PIN またはパスワードを確認した後に、**[Secure start-up]** (安全な起動) 画面で **[Require PIN to start device]** (デバイスの起動に PIN が必要) を選択します。 ポータル サイト アプリからデバイスの **[ポリシー準拠状況の確認]** ボタンをタップします。 デバイスは暗号化済みとして検出されるようになります。
     
-        -   デバイスの製造元によっては、ユーザーが設定したシークレット PIN ではなく既定の PIN を使用してデバイスを暗号化する場合があります。 Intune は、既定の PIN を使用した暗号化を安全ではないと認識します。この方法の暗号化では、悪意のあるユーザーがデバイスに物理的にアクセスできる場合、デバイス上のデータが危険な状態になるためです。 この問題が生じた場合は、[アプリの保護ポリシー](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies)を使用することを検討してください。
+       -   デバイスの製造元によっては、ユーザーが設定したシークレット PIN ではなく既定の PIN を使用してデバイスを暗号化する場合があります。 Intune は、既定の PIN を使用した暗号化を安全ではないと認識します。この方法の暗号化では、悪意のあるユーザーがデバイスに物理的にアクセスできる場合、デバイス上のデータが危険な状態になるためです。 この問題が生じた場合は、[アプリの保護ポリシー](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies)を使用することを検討してください。
 
 ## <a name="policy-issues"></a>ポリシーの問題
 
@@ -118,22 +118,22 @@ ms.lasthandoff: 03/22/2018
 ### <a name="exchange-connector-logs"></a>Exchange Connector のログ
 
 #### <a name="general-log-information"></a>一般的なログ情報
-Exchange Connector のログを表示するには、[サーバー トレース ビューアー ツール] (サーバー トレース ビューアー ツール (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx) を使用します。 このツールを使用するには、Windows Server SDK をダウンロードする必要があります。
+Exchange Connector のログを表示するには、[サーバー トレース ビューアー ツール] (サーバー トレース ビューアー ツール (<https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx>) を使用します。 このツールを使用するには、Windows Server SDK をダウンロードする必要があります。
 
 >[!NOTE]
 >ログは C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs に置かれます。 ログは *Connector0.log* から *Connector29.log* までの 30 個の一連のログ ファイルで格納されます。 10MB のデータが蓄積されると次のログにロールオーバーします。 ログが Connector29 に達すると、Connector0 から再開され、以前のログが上書きされます。
 
 #### <a name="locating-sync-logs"></a>同期ログを特定する
 
--    ログ内で **full sync** を検索して完全同期を探します。完全同期の開始は、次のテキストでマークされます。
+- ログ内で **full sync** を検索して完全同期を探します。完全同期の開始は、次のテキストでマークされます。
 
-    'Handling command: Getting the mobile device list without a time filter (full sync) for <number> users`
+  'Handling command: Getting the mobile device list without a time filter (full sync) for <number> users`
 
-    完全同期のログの末尾は、次のようになります。
+  完全同期のログの末尾は、次のようになります。
 
-    Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
+  Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
 
--   ログ内で **quick sync** を検索してクイック (デルタ) 同期を探します。
+- ログ内で **quick sync** を検索してクイック (デルタ) 同期を探します。
 
 ##### <a name="exceptions-in-get-next-command"></a>Get next コマンドの例外
 Exchange Connector ログで **Get next コマンド**の例外を確認し、それらを Microsoft サポートに提供します。

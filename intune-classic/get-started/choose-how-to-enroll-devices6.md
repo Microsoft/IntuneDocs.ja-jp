@@ -14,26 +14,26 @@ ms.assetid: 40262e47-1ab4-437d-8ca5-c89b5022f91f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
-ms.openlocfilehash: fd09126b8226828ccb60f30e0daa6135643303e2
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b730aae4e3e8f576824ac61811018293cc07e080
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>モバイル デバイスの登録方法の選択
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 次の一連の質問に答えることで、管理するデバイスの最適な登録方法が決まります。
 
 ## <a name="how-will-you-manage-dedicated-corporate-owned-devices"></a>**企業所有の専用デバイスはどのような方法で管理しますか。**
 
-  > [!div class="button"]
-[iOS DEP >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
 > [!div class="button"]
-[iOS のセットアップ アシスタント >](/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+> [iOS DEP >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
 > [!div class="button"]
-[IMEI によるタグ付け >](/intune-classic/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+> [iOS のセットアップ アシスタント >](/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+> [!div class="button"]
+> [IMEI によるタグ付け >](/intune-classic/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   次のようにして、会社が所有するデバイスを専用ユーザーに登録できます。
 
@@ -44,4 +44,4 @@ ms.lasthandoff: 03/22/2018
   - **IMEI 番号でのタグ付け** - 会社所有デバイスの IMEI (携帯機器の国際的な識別番号) をインポートすることで、Intune でデバイスに会社所有のタグを付けることができます。 これは、専用の ("シングル ユーザー" の) Windows および Android デバイスを会社所有として識別する唯一の方法です。 Apple のデバイス登録プログラムまたは Apple Configurator に登録されない iOS デバイスを、IMEI 番号でタグ付けすることもできます。 デバイスを事前宣言することで "会社" としてタグ付けした後で、ユーザーに配布できます。 その後、ユーザーがポータル サイトをインストールすることで自分のデバイスを専用デバイスとして登録し、電子メール、アプリ、データなど、会社のリソースにアクセスできます。
 
 > [!div class="button"]
-[< 戻る](choose-how-to-enroll-devices3.md)
+> [< 戻る](choose-how-to-enroll-devices3.md)

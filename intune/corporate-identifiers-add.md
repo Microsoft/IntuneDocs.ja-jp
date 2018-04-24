@@ -1,29 +1,29 @@
 ---
-title: "企業 ID を Intune に追加する"
+title: 企業 ID を Intune に追加する
 titlesuffix: Microsoft Intune
-description: "企業 ID (登録方法、IMEI 番号、シリアル番号) を Microsoft Intune に追加する方法について説明します。"
-keywords: 
+description: 企業 ID (登録方法、IMEI 番号、シリアル番号) を Microsoft Intune に追加する方法について説明します。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d014ae02f3db2ea9175e74f2a867bd12f1d4f22
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d9557c5f962390a9893109bc6f5175b1e709f7cd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>デバイスの企業所有としての識別
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune 管理者は、会社所有のデバイスを特定することで、管理と識別の対象を絞り込むことができます。 Intune は追加の管理タスクを実行して、会社所有のデバイスの完全な電話番号やアプリのインベントリなどの追加情報を収集できます。 また、デバイス制限を設定し、会社所有ではないデバイスによる登録を防止できます。
 
@@ -72,13 +72,13 @@ Android デバイスのシリアル番号の検索方法については、[こ�
 
 1. [Azure Portal の Intune](https://portal.azure.com) で **[デバイスの登録]** > **[業務用デバイスの ID]** の順に選択し、**[追加]** をクリックします。
 
- ![[追加] ボタンが強調表示された、[業務用デバイス ID] ワークスペース](./media/add-corp-id.png)
+   ![[追加] ボタンが強調表示された、[業務用デバイス ID] ワークスペース](./media/add-corp-id.png)
 
 2. **[ID の追加]** ブレードで **[IMEI]** または **[シリアル]** の ID の種類を指定します。 以前にインポートした番号が **[既存の ID の詳細を上書きします]** を適用するかどうかを指定できます。
 
 3. フォルダー アイコンをクリックし、インポートするリストのパスを指定します。 .csv ファイルに移動して、**[追加]** を選択します。 **[更新]** をクリックすると、新しいデバイス ID が表示されます。
 
-インポートされたデバイスが必ずしも登録されているとは限りません。 デバイスは **[登録済み]** または**[未接続]** のどちらかの状態になります。 **未接続** の場合、デバイスは Intune サービスで通信に使われていません。
+インポートされたデバイスが必ずしも登録されているとは限りません。 デバイスは **[登録済み]** または **[未接続]** のどちらかの状態になります。 **未接続** の場合、デバイスは Intune サービスで通信に使われていません。
 
 ### <a name="delete-corporate-identifiers"></a>企業 ID を削除する
 
@@ -97,7 +97,7 @@ International Mobile Equipment Identifier の詳しい仕様については、�
 
 **デバイス所有権を変更するには:**
 1. [Azure Portal の Intune](https://portal.azure.com) で、**[デバイス]** に進み、デバイスを選択します。
-3. **[プロパティ]** を選択します。
-4. **[デバイスの所有権]** に **[個人]** または **[企業]** を指定します。
+2. **[プロパティ]** を選択します。
+3. **[デバイスの所有権]** に **[個人]** または **[企業]** を指定します。
 
-  ![デバイスのカテゴリと所有権のオプションが表示されたデバイス プロパティ](./media/device-properties.png)
+   ![デバイスのカテゴリと所有権のオプションが表示されたデバイス プロパティ](./media/device-properties.png)

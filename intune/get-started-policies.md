@@ -1,25 +1,25 @@
 ---
-title: "Microsoft Intune のポリシーの概要"
-titlesuffix: 
-description: "会社のデータの保護と、エンド ユーザーが会社のリソースにアクセスするときに使用するデバイスの管理に役立つポリシーを作成します。"
-keywords: 
+title: Microsoft Intune のポリシーの概要
+titlesuffix: ''
+description: 会社のデータの保護と、エンド ユーザーが会社のリソースにアクセスするときに使用するデバイスの管理に役立つポリシーを作成します。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8af61eb207a8f9b2dc74650627fcab0e4d858904
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 661ef25085892e299e45156f27b3d9db959577d4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-creating-policies"></a>ポリシーの作成開始
 
@@ -46,7 +46,7 @@ Intune を始める主な目的の 1 つは、企業ポリシーに準拠させ�
 __ポリシーの作成方法__
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[デバイスのポリシー準拠]** を選択します。
 4. **[デバイスのポリシー準拠]** ウィンドウで、**[ポリシー]** を選択します。
 5. **[ポリシーの作成]** を選択し、**[名前]** や **[説明]** など、詳細を入力します。 

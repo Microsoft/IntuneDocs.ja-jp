@@ -1,31 +1,31 @@
 ---
-title: "アプリ保護ポリシーのある iOS アプリ"
+title: アプリ保護ポリシーのある iOS アプリ
 titlesuffix: Microsoft Intune
-description: "保護ポリシー付きの iOS アプリでできることについて説明します。"
-keywords: 
+description: 保護ポリシー付きの iOS アプリでできることについて説明します。
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 13833d41603e24e4471f0bb5fdda40d000f29a34
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 2804003a0f1acac56ecaae5e24dcf34b4eb0c256
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-アプリ保護ポリシーを使用する場合の iOS アプリのユーザー エクスペリエンスについて説明します。 アプリ保護ポリシーは、アプリが作業コンテキストで使用されている場合にのみ適用されます。 たとえば、仕事用アカウントを使用してアプリにアクセスするときや、会社の OneDrive の場所に格納されているファイルにアクセスするときです。
+アプリ保護ポリシーを使用する場合の iOS アプリのユーザー エクスペリエンスについて説明します。 アプリ保護ポリシーは、アプリが作業コンテキストで使用されている場合にのみ適用されます。 たとえば、仕事用アカウントを使用してアプリにアクセスするときや、会社の OneDrive の保存先に格納されているファイルにアクセスするときです。
 ##  <a name="accessing-apps"></a>アプリへのアクセス
 
 デバイスが **Intune に登録されていない**場合、ユーザーはアプリを初めて使用すると、アプリの再起動を求められます。  再起動すると、アプリ保護ポリシーをアプリに適用することができます。 次のスクリーンショットは、Skype アプリを使用した場合の例を示しています。

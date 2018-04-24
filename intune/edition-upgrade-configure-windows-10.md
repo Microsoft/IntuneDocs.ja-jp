@@ -1,27 +1,27 @@
 ---
-title: "Upgrade Windows 10 デバイスと Microsoft Intune - Azure | Microsoft Docs"
-description: "Microsoft Intune でデバイス プロファイルを作成し、Windows 10 デバイスを新しいバージョンにアップグレードします。 Windows 10 Pro、N Edition、Education、Cloud、Enterprise、Core、Holographic、Mobile でサポートされるアップグレード パスについても説明します。"
-keywords: 
+title: Upgrade Windows 10 デバイスと Microsoft Intune - Azure | Microsoft Docs
+description: Microsoft Intune でデバイス プロファイルを作成し、Windows 10 デバイスを新しいバージョンにアップグレードします。 Windows 10 Pro、N Edition、Education、Cloud、Enterprise、Core、Holographic、Mobile でサポートされるアップグレード パスについても説明します。
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8084f1b2fbd513de596bd97f4ffec995b6f7aac4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 994ab8e7d955d18b293e4d9e9661e0c44baaaa1f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-windows-10-edition-upgrade-profile-in-intune"></a>Intune で Windows 10 エディション アップグレード プロファイルを構成する
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune でアップグレード プロファイルを構成し、Windows 10 エディションを実行するデバイスを自動的に別のエディションにアップグレードします。 サポートされるアップグレード パスについても紹介します。
 
@@ -128,17 +128,17 @@ The following lists provide the supported upgrade paths for the Windows 10 editi
 5. **[プラットフォーム]** ドロップダウン リストで、**[Windows 10 以降]** を選択します。
 6. **[プロファイルの種類]** ドロップダウン リストで、**[エディションのアップグレード]** を選択します。
 7. **[エディションのアップグレード]** プロパティで、次の設定を入力します。
-  - **[アップグレードのターゲット エディション]** - 対象のデバイスをアップグレードする Windows 10 Desktop、Windows 10 Holographic、または Windows 10 Mobile のバージョンをドロップダウン リストから選択します。
-  - **[プロダクト キー]** - Microsoft から受け取った、対象とするすべての Windows 10 デスクトップ デバイスをアップグレードするためのプロダクト キーを入力します。 
+   - **[アップグレードのターゲット エディション]** - 対象のデバイスをアップグレードする Windows 10 Desktop、Windows 10 Holographic、または Windows 10 Mobile のバージョンをドロップダウン リストから選択します。
+   - **[プロダクト キー]** - Microsoft から受け取った、対象とするすべての Windows 10 デスクトップ デバイスをアップグレードするためのプロダクト キーを入力します。 
     プロダクト キーを含むポリシーの作成後は、キーは更新できなくなります。セキュリティ上の理由から非表示になります。 プロダクト キーを変更するには、キー全体を再入力します。
-  - **ライセンス ファイル** - **[参照]** を選択し、Microsoft から受け取ったライセンス ファイルを選択します。 このライセンス ファイルには、デバイスのアップグレード後のバージョンとなる Windows Holographic または Windows 10 Mobile エディションのライセンス情報が含まれています。
+   - **ライセンス ファイル** - **[参照]** を選択し、Microsoft から受け取ったライセンス ファイルを選択します。 このライセンス ファイルには、デバイスのアップグレード後のバージョンとなる Windows Holographic または Windows 10 Mobile エディションのライセンス情報が含まれています。
 8. 完了したら、**[作成]** を選択し、変更内容を保存します。
 
 プロファイルが作成され、プロファイルの一覧に表示されます。
 
 ## <a name="next-steps"></a>次の手順
 
-このプロファイルをグループに割り当てるには、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事を参照してください。
+このプロファイルをグループに割り当てるには、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関するページを参照してください。
 
 >[!NOTE]
 >後でポリシーの割り当てを削除する場合、デバイス上の Windows のバージョンは元に戻されず、正常に機能を続けます。

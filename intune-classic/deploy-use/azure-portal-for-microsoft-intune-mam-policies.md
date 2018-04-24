@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae0acf53a4987dac21e576826477d32da1f56155
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 2e3e71f52979f6285a14c5cc4fe26ea912cb3a42
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="azure-portal-for-intune-app-protection-policies"></a>Intune アプリ保護ポリシーの Azure ポータル
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Azure ポータルを使用して、次のようなアプリに対してアプリ保護ポリシー作成して管理できます。
 
@@ -32,9 +32,9 @@ Azure ポータルを使用して、次のようなアプリに対してアプ�
 - どの MDM ソリューションにも**登録していない**デバイスで実行中のアプリ
 - **サード パーティの MDM ソリューションに登録済み**のデバイスで実行中のアプリ
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Azure ポータルはアプリ保護ポリシーを作成するための新しい管理コンソールです。ただし、MDM シナリオの [Intune 管理コンソール](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)を利用し、Intune に登録したデバイスのアプリをサポートするアプリ保護ポリシーを作成することもできます。
-
+> 
 > Intune 管理コンソールでは、アプリ保護ポリシー設定の一部が利用できない可能性があります。 また、Intune 管理コンソールと Azure ポータルの両方でアプリ保護ポリシーを作成した場合、Azure ポータルで作成されたポリシーは、Intune 管理コンソールで作成されたポリシーに優先します。 このシナリオでは、Azure ポータルアプリ保護ポリシーはアプリに適用され、ユーザーにデプロイされます。
 
 
@@ -56,7 +56,7 @@ Azure ポータルを使用して、次のようなアプリに対してアプ�
 
     ![[Intune モバイル アプリケーション管理] ブレードのスクリーンショット](../media/AppManagement/MAM-Azure-Portal-2.png)
 
-5. (任意): ブレードを **[開始]** ページにピン留めするには、ブレードの **[ピン留め]** オプションを使用できます。 **[Intune モバイル アプリケーション管理ブレード]**のピン アイコンをクリックして、そのブレードを **[開始]** ページにピン留めします。
+5. (任意): ブレードを **[開始]** ページにピン留めするには、ブレードの **[ピン留め]** オプションを使用できます。 **[Intune モバイル アプリケーション管理ブレード]** のピン アイコンをクリックして、そのブレードを **[開始]** ページにピン留めします。
 
     ![ピン アイコンが強調表示されている [Intune モバイル アプリケーション管理] ブレードのスクリーンショット](../media/AppManagement/AzurePortal_MAM_PinBladeAction.png)
 

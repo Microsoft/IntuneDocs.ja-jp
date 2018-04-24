@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 170163a6edd372a92e04762d1ba7a1a9a420160c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5bfc02f5f10ce88b992d0ea250d7b36fdf3f66dc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>Microsoft Intune を使用して、会社のリソースへのアクセスを有効にする
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune Wi-Fi、VPN、電子メール プロファイルを使用すると、ユーザーはどこにいても仕事を遂行するために必要なファイルとリソースにアクセスできます。 証明書プロファイルは、そのようなアクセスをセキュリティで保護するために役立ちます。
 
@@ -46,15 +46,19 @@ Microsoft Intune Wi-Fi、VPN、電子メール プロファイルを使用する
 ## <a name="email-profilesconfigure-access-to-corporate-email-using-email-profiles-with-microsoft-intunemd-and-supported-platforms"></a>[電子メール プロファイル](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)とサポートされているプラットフォーム
 組織のデバイスに対するネイティブ電子メール クライアント設定を作成、展開、監視します。
 
-|Windows 8.1 以降|Windows Phone 8.1 以降|iOS|Android|Samsung KNOX Standard|
-|---------------------|---------------------------|---|-------|------------|
-|[いいえ]|はい|はい|[いいえ]|はい|
+
+| Windows 8.1 以降 | Windows Phone 8.1 以降 | iOS | Android | Samsung KNOX Standard |
+|-----------------------|-----------------------------|-----|---------|-----------------------|
+|          [いいえ]           |             はい             | はい |   [いいえ]    |          はい          |
+
 > [!NOTE]
 > OMA-URI を使用する Windows Phone 8.1 Wi-Fi プロファイルを構成する方法については、[この Intune チームのブログの投稿](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/19/using-oma-uri-to-create-custom-wi-fi-profiles-for-windows-phone-8-1/)を参照してください。
 
 ## <a name="certificate-profilessecure-resource-access-with-certificate-profilesmd-and-supported-platforms"></a>[証明書プロファイル](secure-resource-access-with-certificate-profiles.md)とサポートされているプラットフォーム
 ワイヤレス ネットワークや VPN 接続など、会社のリソースに対するアクセスをセキュリティで保護します。
 
-|Windows 8.1 以降|Windows Phone 8.1 以降|iOS|Android|Samsung KNOX Standard|
-|---------------------|---------------------------|---|-------|------------|
-|はい|はい|はい|はい|はい|
+
+| Windows 8.1 以降 | Windows Phone 8.1 以降 | iOS | Android | Samsung KNOX Standard |
+|-----------------------|-----------------------------|-----|---------|-----------------------|
+|          はい          |             はい             | はい |   はい   |          はい          |
+

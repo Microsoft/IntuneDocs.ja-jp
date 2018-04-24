@@ -1,25 +1,25 @@
 ---
-title: "インベントリでデバイスを把握する"
-description: "Intune を使用して、管理するデバイスのハードウェアに関する情報を表示します。"
-keywords: 
+title: インベントリでデバイスを把握する
+description: Intune を使用して、管理するデバイスのハードウェアに関する情報を表示します。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 09/05/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: e50a7329512e6b57eb5486792669b7cd102eebdb
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>Microsoft Intune でインベントリを使用してデバイスを把握する
 

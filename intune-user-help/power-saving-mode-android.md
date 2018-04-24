@@ -1,27 +1,27 @@
 ---
-title: "電力の最適化が電子メール アクセスを妨げる |Microsoft ドキュメント"
-description: "Android で電子メールを受け取るために電力の最適化をオフにする方法について説明します。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: 電力の最適化が電子メール アクセスを妨げる |Microsoft ドキュメント
+description: Android で電子メールを受け取るために電力の最適化をオフにする方法について説明します。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 07/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ad713f18-40a9-421f-aa2b-f8c21028d57c
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d0e39bfc475909ba2f6b8d361ba31c734cace523
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 663da92e11befeae1f65467e887870a52640cbeb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="outlook-wont-sync-managed-email-when-battery-optimization-for-android-is-turned-on"></a>Android のバッテリー最適化が有効になっていると Outlook が管理対象電子メールを同期しない
 
@@ -38,7 +38,7 @@ Microsoft Intune チームはこの問題の解決に取り組んでいます。
 
 多くの製造元は、Android デバイスに変更を加えています。 これにより、テーマや通知など、デバイスと対話する特定の方法が変更される場合があります。 Google は、通常、この種の変更を携帯電話に対して行うことはありません。 たとえば、Android 7.0 以降を搭載した Google Pixel デバイスでは、以下の手順でバッテリー最適化からこれらのアプリを削除します。
 
-1. **[設定]**を開きます。
+1. **[設定]** を開きます。
 2. **[Battery\(バッテリー\)]** > **[More\(詳細\)]** > **[Battery optimization\(バッテリーの最適化\)]** の順にタップします。
 3. 下向きの矢印をタップし、**[Not optimized\(最適化しない\)]** をタップします。
 4. ポータル サイト アプリと Outlook アプリを選び、バッテリーの最適化をオフにします。
@@ -47,14 +47,14 @@ Microsoft Intune チームはこの問題の解決に取り組んでいます。
 
 Android 7.0 以降を搭載した Samsung デバイスなどの他のタイプの Android デバイスでは、Outlook アプリとポータル サイト アプリをバッテリー最適化から削除する手順が異なる場合があります。
 
-1. **[設定]**を開きます。
+1. **[設定]** を開きます。
 2. **[Menu (…)\(メニュー (...)\)]** > **[Special access\(特殊なアクセス\)]** > **[Optimize battery usage\(バッテリー使用の最適化\)]** の順にタップします。
 3. ドロップダウンから **[All apps\(すべてのアプリ\)]** を選びます。
 4. ポータル サイト アプリと Outlook アプリの隣のトグルを **[オフ]** にして、バッテリーの最適化をオフにします。
 
 さらに、古いバージョンの Android を搭載した Samsung デバイスを使っている場合は、以下の手順で省電力モードからこれらのアプリを削除する必要があります。
 
-1. **[設定]**を開きます。
+1. **[設定]** を開きます。
 2. **[Device maintenance\(デバイスの保守\)]** > **[Battery\(バッテリー\)]** > **[Unmonitored apps\(監視しないアプリ\)]** の順にタップします。
 3. **[Add apps\(アプリの追加\)]** をタップします。
 4. ポータル サイト アプリと Outlook アプリを選び、**[Done\(完了\)]** をタップします。

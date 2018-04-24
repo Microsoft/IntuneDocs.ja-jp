@@ -15,27 +15,28 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 78b4e91fd61bb79c2a3a6d86d5a79c39b320cc5e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 8af8d79d6f8ea9037c6bef532ad45185830c358d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-the-intune-service-to-service-connector-for-exchange-online"></a>Exchange Online 用の Intune Service to Service Connector の構成
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune と Exchange Online サービスまたは新しい Exchange Online Dedicated サービスを接続するには、この情報を使用します。 Exchange Online Dedicated 環境が**新しい**バージョンか**従来の**バージョンかを確認するには、アカウント マネージャーに問い合わせてください。 Intune は、サブスクリプションごとに任意の種類の Exchange Connector 接続を 1 つだけサポートします。
 
 ## <a name="service-to-service-connector-requirements"></a>Service to Service Connector の要件
 **Service to Service Connector** は、Exchange Online または Exchange Online Dedicated のみをサポートします。また、オンプレミス インフラストラクチャの要件はありません。
 
-|要件|詳細情報|
-|---------------|--------------------|
-|Exchange Online が構成済みで実行中である|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
-|モバイル デバイス管理機関| [モバイル デバイスの管理機関を Microsoft Intune に設定します。](prerequisites-for-enrollment.md#step-2-set-mdm-authority)|
-|Microsoft Exchange のバージョン|Exchange Online サービスまたは新しい Exchange Online Dedicated サービス|/intune/users-permissions-add
-|Active Directory の同期|Intune Connector を使用できるようにするには、[Active Directory の同期をセットアップ](/intune/users-permissions-add)して、ローカル ユーザーとセキュリティ グループが Azure Active Directory のインスタンスと同期されるようにする必要があります。|
+
+|              要件               |                                                                                                            詳細情報                                                                                                            |
+|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Exchange Online が構成済みで実行中である |                                                                                 [Exchange Online](https://technet.microsoft.com/library/jj200580.aspx)                                                                                 |
+|   モバイル デバイス管理機関   |                                                       [モバイル デバイスの管理機関を Microsoft Intune に設定します。](prerequisites-for-enrollment.md#step-2-set-mdm-authority)                                                       |
+|       Microsoft Exchange のバージョン       |                                                                                      Exchange Online サービスまたは新しい Exchange Online Dedicated サービス                                                                                      |
+|    Active Directory の同期    | Intune Connector を使用できるようにするには、[Active Directory の同期をセットアップ](/intune/users-permissions-add)して、ローカル ユーザーとセキュリティ グループが Azure Active Directory のインスタンスと同期されるようにする必要があります。 |
 
 ### <a name="exchange-cmdlet-requirements"></a>Exchange コマンドレットの要件
 
@@ -55,7 +56,7 @@ Intune Exchange Connector が使用する Exchange Online ユーザー アカウ
 2.  ワークスペースのショートカット ウィンドウで **[管理]** > **[モバイル デバイス管理]** > **[Microsoft Exchange]** > **[Exchange 接続のセットアップ]** の順に進みます。
 ![Service To Service Connector のセットアップページ](../media/intunesa5cservicetoserviceconnector.png)
 
-3.  **[Exchange 接続のセットアップ]** ページで **[Service To Service Connector のセットアップ]**を選びます。
+3.  **[Exchange 接続のセットアップ]** ページで **[Service To Service Connector のセットアップ]** を選びます。
 
 
 Service to Service Connector は自動的に構成され、Exchange Online 環境または新しい Exchange Online Dedicated 環境と同期されます。

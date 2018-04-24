@@ -1,29 +1,29 @@
 ---
-title: "アプリから会社のデータのみをワイプする方法"
+title: アプリから会社のデータのみをワイプする方法
 titleSuffix: Microsoft Intune
-description: "Microsoft Intune でアプリを選択的にワイプする方法について説明します。"
-keywords: 
+description: Microsoft Intune でアプリを選択的にワイプする方法について説明します。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 913ff1c0ae7ab968ae1195425c7cbe4044591c6b
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6284786213661b737cb912c2b7e0dd1a1f433d8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Intune で管理されているアプリから会社のデータをワイプする方法
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 デバイスが紛失や盗難にあった場合、または従業員が離職した場合、会社のアプリのデータがデバイスから削除されたことを確認する必要があります。 ただし、個人のデータをデバイスから削除するのは好ましくありません。デバイスが従業員所有のデバイスである場合はなおさらです。
 
@@ -61,7 +61,7 @@ ms.lasthandoff: 03/08/2018
 
 ワイプ要求の全体的状態、保留中の要求の数、失敗の数がまとめてある概要レポートを設定できます。 さらに詳しい情報が必要な場合、次の手順を実行します。
 
-1.  **[Mobile Apps] - [アプリの選択的ワイプ]** ウィンドウでは、要求をユーザー別にグループ化して一覧表示できます。 ワイプ要求はデバイスで実行されている保護アプリごとに作成されるため、1 ユーザーに対する要求が複数ある場合があります。 状態は、ワイプ要求が **[保留中]**、**[失敗]**、または **[成功]**のいずれかであることを示します。
+1.  **[Mobile Apps] - [アプリの選択的ワイプ]** ウィンドウでは、要求をユーザー別にグループ化して一覧表示できます。 ワイプ要求はデバイスで実行されている保護アプリごとに作成されるため、1 ユーザーに対する要求が複数ある場合があります。 状態は、ワイプ要求が **[保留中]**、**[失敗]**、または **[成功]** のいずれかであることを示します。
 
     ![[アプリの選択的ワイプ] ウィンドウでのワイプ要求の状態のスクリーンショット](./media/wipe-request-status-1.png)
 

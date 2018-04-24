@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 50fc27efc34ab6c13fad714e41be0d87c5ab0df9
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b32f9c6be910156c26b446b7bf70a7975b4afaff
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>ビジネス向け Microsoft ストアから購入したアプリを Microsoft Intune で管理する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 [ビジネス向け Microsoft ストア](https://www.microsoft.com/business-store)では、組織用のアプリを見つけて、個別または大量に購入することができます。 Microsoft Intune にストアを接続することで、Intune コンソールから大量購入アプリを管理することができます。 次に例を示します。
 * ストアから購入したアプリの一覧を Intune に同期することができます。
@@ -57,8 +57,8 @@ Intune コンソールで同期を有効にする前に、以下の手順に従�
 1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[管理者]** を選択します。
 2. **[管理]** ワークスペースで、**[モバイル デバイス管理]** > **[Windows]** の順に展開し、**[ビジネス向けストア]** を選択します。
 3. **[ビジネス向け Microsoft ストア]** ページで、以下の操作を行います。
- * ビジネス向け Microsoft ストアにまだサインアップしていない場合は、サインアップ用のリンクをクリックしてサインアップを行います。
- * サインアップしたら、**[同期の構成]** を選択します。
+   * ビジネス向け Microsoft ストアにまだサインアップしていない場合は、サインアップ用のリンクをクリックしてサインアップを行います。
+   * サインアップしたら、**[同期の構成]** を選択します。
 4. **[ビジネス向け Microsoft ストア アプリの同期の構成]** ダイアログ ボックスで、**[ビジネス向け Microsoft ストアの同期を有効にする]** を選択します。
 5. **[言語]** ドロップダウン リストで、Intune コンソールで表示するビジネス向け Microsoft ストアのアプリに使用する言語を選択します。 アプリは、どの言語を使用して表示するかに関係なく、使用可能なエンド ユーザーの言語でインストールされます。
 6. **[OK]** をクリックします。

@@ -1,25 +1,25 @@
 ---
-title: "Dynamics CRM Online を保護する"
-description: "条件付きアクセスで Dynamics CRM Online へのアクセスを保護および制御します。"
-keywords: 
+title: Dynamics CRM Online を保護する
+description: 条件付きアクセスで Dynamics CRM Online へのアクセスを保護および制御します。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: e2f720c8a6613884397111c2a421fa1cfdc0eb53
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-dynamics-crm-online-with-intune"></a>Intune で Dynamics CRM Online へのアクセスを保護する
 
@@ -81,16 +81,16 @@ Dynamics CRM ポリシーに使用する 2 つのグループの種類を指定�
 3. **[アプリケーション アクセス]** で、条件付きアクセス ポリシーを適用する対象を次のように選ぶことができます。
    * **Android**
    * **Android**
-4. **[対象グループ]**で、**[変更]** を選択して、ポリシーを適用する Azure Active Directory セキュリティ グループを選択します。 すべてのユーザーを対象にすることも、選んだユーザーのグループのみを対象にすることもできます。
-5. **[例外グループ]**で、必要に応じて **[変更]** を選択して、このポリシーから除外する Azure Active Directory セキュリティ グループを選択します。
-6. 終了したら、 **[保存]**をクリックします。
+4. **[対象グループ]** で、**[変更]** を選択して、ポリシーを適用する Azure Active Directory セキュリティ グループを選択します。 すべてのユーザーを対象にすることも、選んだユーザーのグループのみを対象にすることもできます。
+5. **[例外グループ]** で、必要に応じて **[変更]** を選択して、このポリシーから除外する Azure Active Directory セキュリティ グループを選択します。
+6. 終了したら、 **[保存]** をクリックします。
 
 これで、Dynamics CRM の条件付きアクセスの構成が完了しました。 条件付きアクセス ポリシーを展開する必要はありません。直ちに有効になります。
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>コンプライアンスと条件付きアクセス ポリシーを監視する
 
 **[グループ]** ワークスペースで、デバイスの条件付きアクセスの状態を表示できます。
 
-モバイル デバイス グループを選択し、**[デバイス]** タブで、次の **[フィルター]**のいずれかを選択します。
+モバイル デバイス グループを選択し、**[デバイス]** タブで、次の **[フィルター]** のいずれかを選択します。
 * **AAD に登録されていないデバイス**。 これらのデバイスは Dynamics CRM からブロックされます。
 * **準拠していないデバイス**。 これらのデバイスは Dynamics CRM からブロックされます。
 * **AAD に登録され、準拠しているデバイス**。 これらのデバイスで Dynamics CRM にアクセスできます。

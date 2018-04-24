@@ -1,26 +1,26 @@
 ---
-title: "Microsoft Intune でカスタム デバイス設定を使用する - Azure | Microsoft Docs"
-description: "Microsoft Intune を使用し、Windows、Android、iOS デバイスのカスタム設定を使用するプロファイルを追加または作成する"
-keywords: 
+title: Microsoft Intune でカスタム デバイス設定を使用する - Azure | Microsoft Docs
+description: Microsoft Intune を使用し、Windows、Android、iOS デバイスのカスタム設定を使用するプロファイルを追加または作成する
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: adecb332c91f17cf92362295b6b0c81445f5acaf
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ce7c263435f92a041b93dc5d34ffa912c6fa87fb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Intune でカスタム設定を持つプロファイルを作成する
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune には、必要な設定が用意されていない場合があります。 あるいは、他のデバイス プロファイルで利用できる設定が使用できれば便利な場合があります。 そのような設定を追加するには、デバイス プロファイルを作成し、カスタム デバイス設定でそのプロファイルを構成します。
 

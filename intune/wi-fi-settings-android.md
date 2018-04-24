@@ -1,27 +1,27 @@
 ---
-title: "Android を実行するデバイス用に Microsoft Intune の Wi-Fi 設定を構成する"
-titleSuffix: 
-description: "Android か Android for Work を実行するデバイスの Intune Wi-fi 構成設定について説明します。"
-keywords: 
+title: Android を実行するデバイス用に Microsoft Intune の Wi-Fi 設定を構成する
+titleSuffix: ''
+description: Android か Android for Work を実行するデバイスの Intune Wi-fi 構成設定について説明します。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d327c2d3cadf441f74e35af86b19438159225771
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c110121ceb3d7ff871078c39f73b17606e2e7f13
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Android か Android for Work を実行しているデバイスの Microsoft Intune Wi-Fi 設定を構成する  
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 この記事では、Android か Android for Work を実行するデバイス用に Microsoft Intune で構成できる Wi-Fi 設定を示します。
 
@@ -58,7 +58,8 @@ ms.lasthandoff: 03/08/2018
 #### <a name="client-authentication"></a>クライアント認証
 
 
-|設定の名前|詳細情報|次の場合に使用|
-|----------|--------------|----------|
-|**クライアント認証に使用するクライアント証明書 (ID 証明書)**|接続の認証に使用される SCEP または PKCS 証明書プロファイルを選択します。|EAP の種類が **EAP-TLS**|
-|**認証方法**|次の中から、接続の認証方法を選択します。<br>- **証明書**: ID 証明書であるクライアント証明書がサーバーに提供した、SCEP または PKCS を選択します。<br><br>- **ユーザー名とパスワード**: 認証用の別の方法を指定します。 <br><br>**[ユーザー名とパスワード]** を選択した場合は、次を構成します。<br><br>-  **EAP 以外の方法 (内部 ID)**: 次の中から接続を認証する方法を選択します。<br>- **なし**<br>- **暗号化されていないパスワード (PAP)**<br>- **チャレンジ ハンドシェイク認証プロトコル (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP バージョン 2 (MS-CHAP v2)**<br>使用できるオプションは、選択した EAP の種類によって異なります。<br><br>**および**<br><br>- **[ID プライバシー (外部 ID)]** - EAP ID 要求への応答で送信されるテキストを指定します。 このテキストには任意の値を指定できます。 認証時に、この匿名の ID が最初に送信され、その後、セキュリティで保護されたトンネルで実際の ID が送信されます。|EAP の種類が **EAP-TTLS** または **PEAP**|
+|                                     設定の名前                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       詳細情報                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                            次の場合に使用                            |
+|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
+| <strong>クライアント認証に使用するクライアント証明書 (ID 証明書)</strong> |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       接続の認証に使用される SCEP または PKCS 証明書プロファイルを選択します。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |              EAP の種類が <strong>EAP-TLS</strong>              |
+|                        <strong>認証方法</strong>                        | 次の中から、接続の認証方法を選択します。<br>- <strong>証明書</strong>: ID 証明書であるクライアント証明書がサーバーに提供した、SCEP または PKCS を選択します。<br><br>- <strong>ユーザー名とパスワード</strong>: 認証用の別の方法を指定します。 <br><br><strong>[ユーザー名とパスワード]</strong> を選択した場合は、次を構成します。<br><br>-  <strong>EAP 以外の方法 (内部 ID)</strong>: 次の中から接続を認証する方法を選択します。<br>- <strong>なし</strong><br>- <strong>暗号化されていないパスワード (PAP)</strong><br>- <strong>チャレンジ ハンドシェイク認証プロトコル (CHAP)</strong><br>- <strong>Microsoft CHAP (MS-CHAP)</strong><br>- <strong>Microsoft CHAP バージョン 2 (MS-CHAP v2)</strong><br>使用できるオプションは、選択した EAP の種類によって異なります。<br><br><strong>および</strong><br><br>- <strong>[ID プライバシー (外部 ID)]</strong> - EAP ID 要求への応答で送信されるテキストを指定します。 このテキストには任意の値を指定できます。 認証時に、この匿名の ID が最初に送信され、その後、セキュリティで保護されたトンネルで実際の ID が送信されます。 | EAP の種類が <strong>EAP-TTLS</strong> または <strong>PEAP</strong> |
+

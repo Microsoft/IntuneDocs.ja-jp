@@ -1,30 +1,29 @@
 ---
-title: "iOS ストア アプリを Microsoft Intune に追加する方法"
-titlesuffix: 
-description: "iOS ストア アプリを Microsoft Intune に追加する方法について説明します。"
+title: iOS ストア アプリを Microsoft Intune に追加する方法
+titlesuffix: ''
+description: iOS ストア アプリを Microsoft Intune に追加する方法について説明します。
 keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4bd10c4f05204d0e911a7538f5d5133e4a336320
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 4eaa4b279ab98c6fe41482628937e0f2b0dc70a5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>iOS ストア アプリを Microsoft Intune に追加する方法
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 この記事の情報を使って、Microsoft Intune に iOS ストア アプリを追加できます。 iOS ストア アプリとは、Intune がユーザー デバイスにインストールするアプリです。 このユーザーとは、あなたの会社の従業員の一員です。 iOS ストア アプリは自動的に更新されます。
 
@@ -39,13 +38,13 @@ ms.lasthandoff: 03/12/2018
 >Microsoft Intune を使うときは、Chrome と Microsoft Edge がお勧めするブラウザーです。
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ブレードで、**[モバイル アプリ]** を選びます。
 4. **[モバイル アプリ]** ワークロードで、**[管理]** セクションの下の **[アプリ]** を選択します。
 5. **[アプリ]** ウィンドウの右側で **[追加]** を選択します。
 6. **[アプリの種類]** 一覧で、使用可能な **[ストア アプリ]** の種類から **[iOS]** を選択します。
-7. **[Search the App Store]**\(App Store を検索\) を選択します。
-8. **[Search the App Store]**\(App Store を検索\) ブレードで、アプリ ストアの国のロケールを選択します。
+7. **[Search the App Store]** \(App Store を検索\) を選択します。
+8. **[Search the App Store]** \(App Store を検索\) ブレードで、アプリ ストアの国のロケールを選択します。
 9. 検索ボックスに名前 (または名前の一部) を入力します。 Intune がストアを検索し、関連する結果の一覧を返します。
 10. 一覧から目的のアプリを選択し、**[選択]** をクリックします。
 11. **[アプリの追加]** ブレードで、**[アプリ情報]** を選択し、アプリを構成します。

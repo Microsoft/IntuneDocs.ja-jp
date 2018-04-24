@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 12363a677bc7d1ffefe224ff0bb10067903132ae
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 37593e8c554cad73182873b01f6388bdb9cb0035
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune"></a>Microsoft Intune でアクティブ化ロックのバイパスを使用して iOS デバイスを保護する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune では、iOS 8.0 以降向けの iPhone を探すアプリの機能である iOS のアクティブ化ロックを管理できます。 iPhone を探すアプリをユーザーがデバイスで開くと、アクティブ化ロックが自動的に有効になります。 有効になると、ユーザーの Apple ID とパスワードを入力しない限り、以下の操作を実行できなくなります。 
 
@@ -81,7 +81,7 @@ Intune では、iOS 8.0 以降を実行している監視対象デバイスの�
 ## <a name="how-to-see-which-devices-are-using-activation-lock"></a>アクティブ化ロックを使用しているデバイスを確認する方法
 アクティブ化ロックを使用しているデバイスは、次の 2 つの方法で確認できます。
 
--   **モバイル デバイスのインベントリ レポート**を実行する。 このレポートには、**[アクティブ化ロックの状態]** と **[監督下]** という、デバイスの状態を示す列が表示されます。 **[監督下]** の値には、**[はい]** または **[いいえ]**があります。**[アクティブ化ロックの状態]** の値には、以下があります。
+-   **モバイル デバイスのインベントリ レポート**を実行する。 このレポートには、**[アクティブ化ロックの状態]** と **[監督下]** という、デバイスの状態を示す列が表示されます。 **[監督下]** の値には、**[はい]** または **[いいえ]** があります。**[アクティブ化ロックの状態]** の値には、以下があります。
 
     -   バイパス コードありで有効
 

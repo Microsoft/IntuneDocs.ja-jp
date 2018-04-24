@@ -1,27 +1,27 @@
 ---
-title: "Intune に Windows 10 デバイスを登録する | Microsoft Docs"
-description: "Intune に Windows 10 のモバイル デバイスまたはデスクトップ デバイスを登録する方法について説明します"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Intune に Windows 10 デバイスを登録する | Microsoft Docs
+description: Intune に Windows 10 のモバイル デバイスまたはデスクトップ デバイスを登録する方法について説明します
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f3debd0177df0aa0bdf5cb3cea8bf18054407b87
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 22d23751aaa3416fb13c7b08451ea91c3ee308e2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-windows-10-devices-in-intune"></a>Intune に Windows 10 デバイスを登録する
 
@@ -35,13 +35,13 @@ ms.lasthandoff: 01/25/2018
 
 2. __検索バー__に「PC 情報」と入力し、__[PC 情報]__ を選択します。
 
- ![PC 情報の検索設定](media/searching_for_about_your_pc.png)
+   ![PC 情報の検索設定](media/searching_for_about_your_pc.png)
 
-3.  __[設定]__ には、PC にインストールされている Windows 10 のバージョンに関する情報の一覧が表示されます。 一覧の __[バージョン]__ を確認します。
+3. __[設定]__ には、PC にインストールされている Windows 10 のバージョンに関する情報の一覧が表示されます。 一覧の __[バージョン]__ を確認します。
 
- ![Windows 10 Desktop の PC 情報](media/settings_about_pc.png)
+   ![Windows 10 Desktop の PC 情報](media/settings_about_pc.png)
 
-4.  バージョンが __1607 以降__の場合、[こちらの手順](enroll-your-w10-device-access-work-or-school.md)に進みます。 バージョンが __1511 以前__の場合、[こちらの手順](enroll-your-w10-device-your-account.md)に進みます。
+4. バージョンが __1607 以降__の場合、[こちらの手順](enroll-your-w10-device-access-work-or-school.md)に進みます。 バージョンが __1511 以前__の場合、[こちらの手順](enroll-your-w10-device-your-account.md)に進みます。
 
 ## <a name="windows-10-mobile-devices"></a>Windows 10 Mobile デバイス        
 

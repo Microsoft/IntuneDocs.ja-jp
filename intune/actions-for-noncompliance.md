@@ -1,22 +1,22 @@
 ---
-title: "Microsoft Intune でのコンプライアンス違反メッセージとアクション - Azure | Microsoft Docs"
-description: "コンプライアンス違反デバイスに送信するメール通知を作成します。 準拠するまでの猶予期間の追加や、デバイスが準拠するまでアクセスをブロックするスケジュールの作成など、デバイスがコンプライアンス違反としてマークされた後のアクションを追加します。 これらの作業は、Azure で Microsoft Intune を使って行います。"
-keywords: 
+title: Microsoft Intune でのコンプライアンス違反メッセージとアクション - Azure | Microsoft Docs
+description: コンプライアンス違反デバイスに送信するメール通知を作成します。 準拠するまでの猶予期間の追加や、デバイスが準拠するまでアクセスをブロックするスケジュールの作成など、デバイスがコンプライアンス違反としてマークされた後のアクションを追加します。 これらの作業は、Azure で Microsoft Intune を使って行います。
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 37a8deca147bbad1e706b814f366a2c3f1247869
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: a4b5e55b404da907d8f17a658483b4802af8226d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>コンプライアンス違反デバイスに対する自動メール送信とアクションの追加 - Intune
 
@@ -54,14 +54,14 @@ ms.lasthandoff: 03/09/2018
 3. **[デバイスのポリシー準拠]** を選択してから、**[通知]** を選択します。 
 4. **[通知の作成]** を選択し、次の情報を入力します。
 
-  - 名前
-  - サブジェクト
-  - メッセージ
-  - 電子メール ヘッダー – 会社のロゴを含める
-  - 電子メール フッター – 会社名を含める
-  - 電子メール フッター – 連絡先情報を含める
+   - 名前
+   - サブジェクト
+   - メッセージ
+   - 電子メール ヘッダー – 会社のロゴを含める
+   - 電子メール フッター – 会社名を含める
+   - 電子メール フッター – 連絡先情報を含める
 
-  ![Intune でのコンプライアンス準拠通知メッセージの例](./media/actionsfornoncompliance-1.PNG)
+   ![Intune でのコンプライアンス準拠通知メッセージの例](./media/actionsfornoncompliance-1.PNG)
 
 情報の追加が完了したら、**[作成]** を選択します。 通知メッセージ テンプレートが使用できるようになります。
 
@@ -77,7 +77,7 @@ ms.lasthandoff: 03/09/2018
 1. [Azure Portal](https://portal.azure.com) で **[Microsoft Intune]** を開き、**[デバイスのポリシー準拠]** を選択します。
 2. **[ポリシー]** を選択し、ポリシーのいずれかを選択して、**[プロパティ]** を選択します。 
 
-  ポリシーがまだない場合は、 [Android](compliance-policy-create-android.md)、[iOS](compliance-policy-create-ios.md)、[Windows](compliance-policy-create-windows.md)、または他のプラットフォーム用のポリシーを作成します。
+   ポリシーがまだない場合は、 [Android](compliance-policy-create-android.md)、[iOS](compliance-policy-create-ios.md)、[Windows](compliance-policy-create-windows.md)、または他のプラットフォーム用のポリシーを作成します。
 
 3. **[コンプライアンス非対応に対するアクション]** を選択し、**[追加]** を選択してアクションのパラメーターを入力します。 以前に作成したメッセージ テンプレートの選択、新しい受信者の追加、猶予期間のスケジュールの更新を行うことができます。 スケジュールで日数 (0 - 365) を入力して、条件付きアクセス ポリシーを強制的に適用することができます。 日数を **0** にすると、条件付きアクセスは**すぐに**企業リソースへのアクセスをブロックします。
 

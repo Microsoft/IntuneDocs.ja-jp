@@ -1,25 +1,25 @@
 ---
-title: "Windows 10 デバイス向けのコンプライアンス ポリシー設定"
-description: "このトピックでは、Windows デバイスのコンプライアンス ポリシーにおいて構成できるルールと設定を説明しました。"
-keywords: 
+title: Windows 10 デバイス向けのコンプライアンス ポリシー設定
+description: このトピックでは、Windows デバイスのコンプライアンス ポリシーにおいて構成できるルールと設定を説明しました。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 6a54943873a6af158badb92cef4610e54fc8889b
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Microsoft Intune での Windows デバイス向けのコンプライアンス ポリシー設定
 
