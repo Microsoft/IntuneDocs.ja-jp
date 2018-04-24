@@ -1,4 +1,4 @@
----
+﻿---
 title: Microsoft Intune での Office 365 アプリのデータ管理
 titlesuffix: ''
 description: Microsoft Intune での Office 365 アプリのデータ管理について説明します。
@@ -28,7 +28,7 @@ ms.lasthandoff: 04/16/2018
 
 このウィザードでは、次のポリシーが有効になります。
 
-**Android**
+**iOS**
 * [アプリ データの暗号化]
 
 **Android**
