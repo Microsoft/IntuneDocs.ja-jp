@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 03719051179a30b0cc543098861f1b480c66082a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: ed6f66747364debd89661d78bcf3b002b1c8a9b6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Microsoft Intune でデバイスのコンプライアンス ポリシーを作成する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 このトピックでは、デバイスが準拠しているとみなされるために従う必要があるコンプライアンス ポリシーを作成するために使用できる手順について説明します。
 
@@ -56,6 +56,7 @@ ms.lasthandoff: 03/22/2018
 次の表は、コンプライアンス ポリシー設定と、それらがサポートされるプラットフォームの一覧を示しています。
 
 -------------
+
 |Setting|iOS|Android|Windows|
 |-----|----|-----|-----|
 |モバイル デバイスのロックを解除するパスワードを要求する|iOS 6 以降|Android 4.0 以降 <br>Samsung KNOX Standard 4.0 以降|Windows Phone 8.1 以降|
@@ -79,9 +80,9 @@ ms.lasthandoff: 03/22/2018
 
 各プラットフォームでサポートされるコンプライアンス設定の詳細については、次のいずれかを選択してください。
 > [!div class="op_single_selector"]
-- [iOS デバイス向けのコンプライアンス ポリシー設定](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Android デバイス向けのコンプライアンス ポリシー設定](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Windows と Windows Phones 向けのコンプライアンス ポリシー設定](windows-compliance-policy-settings-in-microsoft-intune.md)
+> - [iOS デバイス向けのコンプライアンス ポリシー設定](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Android デバイス向けのコンプライアンス ポリシー設定](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [Windows と Windows Phones 向けのコンプライアンス ポリシー設定](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 
 ## <a name="next-steps"></a>次の手順

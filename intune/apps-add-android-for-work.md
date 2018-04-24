@@ -1,29 +1,29 @@
 ---
-title: "Android for Work デバイスへのアプリの割り当て"
+title: Android for Work デバイスへのアプリの割り当て
 titlesuffix: Microsoft Intune
-description: "このトピックでは、Google Play for Work ストアから Android for Work デバイスにアプリを同期してから割り当てる方法を説明します。"
-keywords: 
+description: このトピックでは、Google Play for Work ストアから Android for Work デバイスにアプリを同期してから割り当てる方法を説明します。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e3b5a742fb480cf9c4c77106b849eebb95ad2439
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 4168f78bff8937ca403cdb75b1028954cbbebd6f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Intune を使用してアプリを Android for Work デバイスに割り当てる方法
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Android for Work とは、Android デバイス用のプログラムです。 Android for Work デバイスにインストールするすべてのアプリは、Google Play for Work ストアから入手します。 Android for Work デバイスにアプリを割り当てる方法は、標準の Android デバイスに割り当てる場合と異なります。 ストアにログオンし、目的のアプリを検索し、アプリを承認します。 Azure Portal の **[ライセンスされたアプリ]** ノードにアプリが表示されます。 ここでアプリの割り当てを管理する方法は、他のアプリを割り当てる方法と同じです。
 
@@ -43,7 +43,7 @@ Intune と Android for Work が Azure Portal の **[デバイスの登録]** ワ
 
     ![例 - Google Play for Work ストアでアプリを承認する](media/approve.png)</br>
     
-  多様な操作を実行するアクセス許可をアプリに付与するように求めるウィンドウが開きます。 
+   多様な操作を実行するアクセス許可をアプリに付与するように求めるウィンドウが開きます。 
 
 4. **[承認]** を選択し、アプリのアクセス許可に同意して続行します。</br>
 
@@ -60,8 +60,8 @@ Intune と Android for Work が Azure Portal の **[デバイスの登録]** ワ
 ストアのアプリを承認しても、**[モバイル アプリ]** ワークロードの **[ライセンスされたアプリ]** ノードに表示されない場合は、次の手順で強制的に即時に同期します。
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3. **[Intune]** ウィンドウで、**[モバイル アプリ]** を選びます。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. **[Intune]** ウィンドウで、**[モバイル アプリ]** を選択します。
 4. **[モバイル アプリ]** ワークロードで、**[セットアップ]** セクションから **[Android for Work]** を選択します。
 5. [Android for Work] ウィンドウで、**[同期]** を選択します。ページで、前回の同期の時刻と状態が更新されます。
 6. **[モバイル アプリ]** ワークロードで、**[アプリ]** を選択し、新しく使用可能になった Android for Work アプリを表示します。

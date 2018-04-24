@@ -1,25 +1,25 @@
 ---
-title: "Azure Portal に条件付きアクセスを移行する"
+title: Azure Portal に条件付きアクセスを移行する
 titlesuffix: Microsoft Intune
-description: "Intune クラシック ポータルで以前に作成した条件付きアクセス ポリシーを Azure Portal に再割り当てします。"
-keywords: 
+description: Intune クラシック ポータルで以前に作成した条件付きアクセス ポリシーを Azure Portal に再割り当てします。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 80c8c994486dd340c9037817854eb35b32ab3a9e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d295ade29522a5593993b5541311eadd9e4c9528
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>条件付きアクセス ポリシーを Intune クラシック ポータルから Azure Portal に再割り当てする
 
@@ -183,8 +183,8 @@ Intune クラシック ポータルで Exchange Online のポリシーの一部�
 
 Azure Portal で条件付きアクセス ポリシーの再割り当てを行った後は、Intune クラシック ポータルで以前に作成した条件付きアクセス ポリシーを段階的に無効にすることが重要です。 さらに、同じセキュリティ グループを使って、Azure Portal で作成した条件付きアクセス ポリシーを適用することが必要な場合があります。
 
-> [!NOTE] 
-    > Intune クラシック ポータルで条件付きアクセス ポリシーを無効にする前に、このトピックの「[始める前に](#before-you-begin)」セクションを参照してください。
+> [!NOTE]
+> Intune クラシック ポータルで条件付きアクセス ポリシーを無効にする前に、このトピックの「[始める前に](#before-you-begin)」セクションを参照してください。
 
 ### <a name="to-disable-the-conditional-access-policies"></a>条件付きアクセス ポリシーを無効にするには
 

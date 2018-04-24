@@ -1,29 +1,29 @@
 ---
-title: "管理対象の iOS デバイス用アプリ構成ポリシーを追加する"
+title: 管理対象の iOS デバイス用アプリ構成ポリシーを追加する
 titlesuffix: Microsoft Intune
-description: "アプリ構成ポリシーを使用して、実行時に構成データを iOS アプリに提供する方法について説明します。"
-keywords: 
+description: アプリ構成ポリシーを使用して、実行時に構成データを iOS アプリに提供する方法について説明します。
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ee17ceae0af131f683341f2346f92ad5ef03ed16
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 0b71b52ffa58f847fc0efcd2924fd04a7a16a099
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>管理対象の iOS デバイス用アプリ構成ポリシーを追加する
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが iOS アプリを実行するときに設定を指定できます。 これらのポリシーをユーザーとデバイスに直接割り当てないでください。 代わりに、ポリシーをアプリに関連付け、そのアプリを割り当てます。 ポリシー設定は、アプリがポリシーをチェックするとき (通常はアプリの初回実行時) に使用されます。
 
@@ -45,7 +45,7 @@ Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが
 ## <a name="create-an-app-configuration-policy"></a>アプリ構成ポリシーを作成する
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[モバイル アプリ]** ワークロードを選択します。
 4. **[管理]** グループの **[アプリ構成ポリシー]** を選択し、**[追加]** を選択します。
 5. 次の詳細を設定します。

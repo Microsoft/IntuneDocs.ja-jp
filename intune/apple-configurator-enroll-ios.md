@@ -1,29 +1,29 @@
 ---
-title: "Apple Configurator を使用した iOS デバイスの登録"
+title: Apple Configurator を使用した iOS デバイスの登録
 titlesuffix: Microsoft Intune
-description: "Apple Configurator を使用して、セットアップ アシスタントで会社所有の iOS デバイスを登録する方法について説明します。"
-keywords: 
+description: Apple Configurator を使用して、セットアップ アシスタントで会社所有の iOS デバイスを登録する方法について説明します。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 35c254d91a104b08a1bdda3f3496369607af30f2
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5ecdd79a029bc3d434ebb0d8ba62ea0e65215f9e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Apple Configurator による iOS デバイスの登録
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>一時的なユーザー インターフェイスの違い
@@ -58,7 +58,7 @@ Apple Configurator の登録方法は、[デバイス登録マネージャー](d
 デバイス登録プロファイルで、登録時に適用する設定を定義します。 これらの設定は、1 回だけ適用されます。 Apple Configurator を使用して iOS デバイスを登録するための登録プロファイルを作成するには、以下の手順に従います。
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[デバイスの登録]** > **[Apple の登録]** を選択します。
 4. **[Apple Configurator 登録設定の管理]** で **[AC プロファイル]** を選択します。
 5. **[Apple Configurator の登録プロファイル]** で、**[作成]** を選択します。
@@ -85,14 +85,14 @@ Apple Configurator の登録方法は、[デバイス登録マネージャー](d
 
 1. ヘッダーなしで 2 列のコンマ区切り値 (.csv) リストを作成します。 シリアル番号を左側の列に、詳細を右側の列に追加します。 リストで許可されている現在の最大行数は 5,000 行です。 この .csv リストをテキスト エディターで表示すると次のようになります。
 
-  F7TLWCLBX196,デバイスの詳細</br>
-  DLXQPCWVGHMJ,デバイスの詳細
+   F7TLWCLBX196,デバイスの詳細</br>
+   DLXQPCWVGHMJ,デバイスの詳細
 
    [iOS デバイスのシリアル番号の見つけ方については、こちらをご覧ください](https://support.apple.com/HT204073)。
 2. [Azure Portal](https://portal.azure.com) の Intune で **[デバイスの登録]** を選択し、**[Apple の登録]** を選択します。
 3. **[Apple Configurator 登録設定の管理]** で **[Apple Configurator デバイス]** を選択します。
 4. **[追加]** を選択します。
-5. インポートするシリアル番号に適用する**登録プロファイル**を選択します。 既存の詳細を上書きする新しい詳細を含むファイルをインポートする場合は、**[既存の ID の詳細を上書きします]**を選択します。
+5. インポートするシリアル番号に適用する**登録プロファイル**を選択します。 既存の詳細を上書きする新しい詳細を含むファイルをインポートする場合は、**[既存の ID の詳細を上書きします]** を選択します。
 6. シリアル番号の csv ファイルに移動して、**[追加]** を選択します。
 
 ### <a name="reassign-a-profile-to-device-serial-numbers"></a>デバイス シリアル番号へのプロファイルの再割り当て
@@ -111,7 +111,7 @@ Apple Configurator 登録用の iOS シリアル番号をインポートする�
 1. [Azure Portal](https://portal.azure.com) の Intune で **[デバイスの登録]** を選択し、**[Apple の登録]** を選択します。
 2. **[AC プロファイル]** を選択し、シリアル番号に割り当てるプロファイルを選択します。
 3. プロファイルで **[割り当てられたデバイス]** を選択し、次に **[割り当て]** を選択します。
-4. フィルターを使って、プロファイルに割り当てるシリアル番号を見つけ、デバイスを選択して、**[割り当て]**を選択します。
+4. フィルターを使って、プロファイルに割り当てるシリアル番号を見つけ、デバイスを選択して、**[割り当て]** を選択します。
 
 ### <a name="export-the-profile"></a>プロファイルのエクスポート
 プロファイルを作成してシリアル番号を割り当てた後、Intune からプロファイルを URL としてエクスポートする必要があります。 エクスポートしたプロファイルは、Mac の Apple Configurator にインポートしてデバイスに展開します。
@@ -119,23 +119,23 @@ Apple Configurator 登録用の iOS シリアル番号をインポートする�
 1. [Azure Portal](https://portal.azure.com) の Intune で **[デバイスの登録]** > **[Apple の登録]** > **[AC プロファイル]** を選択し、エクスポートするプロファイルを選択します。
 2. プロファイルで、**[プロファイルのエクスポート]** を選択します。
 
-  ![[プロファイル URL] が強調表示された、[プロファイルのエクスポート] の [セットアップ アシスタントの登録]](./media/ios-apple-configurator-expor-sat.png)
+   ![[プロファイル URL] が強調表示された、[プロファイルのエクスポート] の [セットアップ アシスタントの登録]](./media/ios-apple-configurator-expor-sat.png)
 3. プロファイルの URL をコピーします。 Apple Configurator を使用してこれを後で追加して、iOS デバイスで使用する Intune プロファイルを定義できます。
 
-  次に、以下の手順に従ってこのプロファイルを Apple Configurator にインポートし、iOS デバイスで使用する Intune プロファイルを定義します。
+   次に、以下の手順に従ってこのプロファイルを Apple Configurator にインポートし、iOS デバイスで使用する Intune プロファイルを定義します。
 
 ### <a name="enroll-devices-with-setup-assistant"></a>セットアップ アシスタントを使用したデバイスの登録
 
-1.  Mac コンピューターで **Apple Configurator 2** を開きます。 メニュー バーで、**[Apple Configurator 2]** を選択し、**[基本設定]** を選択します。
-  > [!WARNING]
-  > デバイスは、登録プロセス中に、出荷時の構成にリセットされます。 ベスト プラクティスとして、デバイスをリセットし、オンにします。 デバイスを接続するときはデバイスの **[こんにちは]** 画面を表示する必要があります。
+1. Mac コンピューターで **Apple Configurator 2** を開きます。 メニュー バーで、**[Apple Configurator 2]** を選択し、**[基本設定]** を選択します。
+   > [!WARNING]
+   > デバイスは、登録プロセス中に、出荷時の構成にリセットされます。 ベスト プラクティスとして、デバイスをリセットし、オンにします。 デバイスを接続するときはデバイスの **[こんにちは]** 画面を表示する必要があります。
 
 2. **基本設定**ウィンドウで **[サーバー]** を選択し、プラス記号 (+) を選択して MDM サーバー ウィザードを起動します。 **[次へ]** を選択します。
 3. 「Microsoft Intune での iOS デバイスのセットアップ アシスタントを使用した登録」の MDM サーバーの**ホスト名または URL** と**登録 URL** を入力します。 登録 URL には、Intune からエクスポートされた登録プロファイル URL を入力します。 **[次へ]** を選択します。  
 
-  "サーバー URL が検証されていない" ことを示す警告は、無視して構いません。 操作を続行するには、ウィザードが完了するまで **[次へ]** を選択します。
-4.  USB アダプターを使用して iOS モバイル デバイスを Mac コンピューターに接続します。
-5.  管理する iOS デバイスを選択し、**[準備]** を選択します。 **[iOS デバイスを準備]** ウィンドウで、**[手動]** を選択してから **[次へ]** を選択します。
+   "サーバー URL が検証されていない" ことを示す警告は、無視して構いません。 操作を続行するには、ウィザードが完了するまで **[次へ]** を選択します。
+4. USB アダプターを使用して iOS モバイル デバイスを Mac コンピューターに接続します。
+5. 管理する iOS デバイスを選択し、**[準備]** を選択します。 **[iOS デバイスを準備]** ウィンドウで、**[手動]** を選択してから **[次へ]** を選択します。
 6. **[MDM サーバーに登録]** ウィンドウで、作成したサーバーの名前を選択してから **[次へ]** を選択します。
 7. **[デバイスを監視]** ウィンドウで、監視レベルを選択してから **[次へ]** を選択します。
 8. **[組織を作成]** ウィンドウで、**[組織]** を選択するか、新しい組織を作成して **[次へ]** を選択します。
@@ -154,7 +154,7 @@ iOS デバイスを Apple Configurator で直接登録する場合は、デバ�
 
 ### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>プロファイルを .mobileconfig として iOS デバイスにエクスポートする
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[プロファイルのエクスポート]** で、**[プロファイルのダウンロード]** を選択して登録プロファイルをダウンロードします。
 
 
@@ -162,13 +162,14 @@ iOS デバイスを Apple Configurator で直接登録する場合は、デバ�
 
 2. [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) を実行している Mac コンピューターにファイルを転送し、管理プロファイルとして iOS デバイスに直接プッシュします。
 3. 次の手順に従って、Apple Configurator を使用してデバイスを準備します。
-  1. Mac コンピューターで Apple Configurator 2.0 を開きます。
-  2. iOS デバイスを USB ケーブルで Mac コンピューターに接続します。 デバイスの検出時にそのデバイス用に開かれた写真、iTunes、その他のアプリを閉じます。
-  3. Apple Configurator で、接続された iOS デバイスを選択し、**[追加]** ボタンを選択します。 デバイスに追加できるオプションがドロップダウン リストに表示されます。 **[プロファイル]** を選択します。
+   1. Mac コンピューターで Apple Configurator 2.0 を開きます。
+   2. iOS デバイスを USB ケーブルで Mac コンピューターに接続します。 デバイスの検出時にそのデバイス用に開かれた写真、iTunes、その他のアプリを閉じます。
+   3. Apple Configurator で、接続された iOS デバイスを選択し、**[追加]** ボタンを選択します。 デバイスに追加できるオプションがドロップダウン リストに表示されます。 **[プロファイル]** を選択します。
 
-    ![[プロファイル URL] が強調表示された、[プロファイルのエクスポート] の [セットアップ アシスタントの登録]](./media/ios-apple-configurator-add-profile.png)
+      ![[プロファイル URL] が強調表示された、[プロファイルのエクスポート] の [セットアップ アシスタントの登録]](./media/ios-apple-configurator-add-profile.png)
 
-  4. ファイル ピッカーを使用して、Intune からエクスポートした .mobileconfig ファイルを選択し、**[追加]** を選択します。 プロファイルがデバイスに追加されます。 デバイスが "監視対象外" の場合は、インストール時にデバイスの承認が必要です。
+   4. ファイル ピッカーを使用して、Intune からエクスポートした .mobileconfig ファイルを選択し、**[追加]** を選択します。 プロファイルがデバイスに追加されます。 デバイスが "監視対象外" の場合は、インストール時にデバイスの承認が必要です。
+
 4. 次の手順を使用して、iOS デバイスにプロファイルをインストールします。 デバイスでセットアップ アシスタントが既に完了し、使用する準備ができている必要があります。 登録のためにアプリの展開が必要な場合は、アプリの展開時に Apple ID で App Store にサインインする必要があるため、デバイスに Apple ID が設定されている必要があります。
    1. iOS デバイスのロックを解除します。
    2. **[管理プロファイル]** の **[プロファイルのインストール]** ダイアログ ボックスで、**[インストール]** を選択します。

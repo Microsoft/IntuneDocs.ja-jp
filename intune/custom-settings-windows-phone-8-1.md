@@ -1,27 +1,27 @@
 ---
-title: "Windows Phone 8.1 を実行するデバイス向けの Microsoft Intune のカスタム設定"
-titleSuffix: 
-description: "Windows Phone 8.1 カスタム プロファイルで使用できる Intune の設定について説明します。"
-keywords: 
+title: Windows Phone 8.1 を実行するデバイス向けの Microsoft Intune のカスタム設定
+titleSuffix: ''
+description: Windows Phone 8.1 カスタム プロファイルで使用できる Intune の設定について説明します。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f45b2dd9cab0ccfd912d1f1348d90264bf8906b8
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 83c123f3752680dbc7faca76aa525a0f035831d7
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-phone-81"></a>Windows Phone 8.1 を実行するデバイス向けの Microsoft Intune のカスタム デバイス設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune Windows Phone 8.1 **カスタム** プロファイルを使用して、Windows Phone 8.1 デバイスで各機能の制御に使用できる OMA-URI 設定を割り当てます。 これらの設定は、多くのデバイス製造元がデバイスの機能を制御するために使用する標準の設定です。
 

@@ -15,15 +15,15 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4054eb3804c159e6256b07bf89b8ccd93f7b2e8e
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 7d9a51cb4e76f5aa0f89f9160af6f5fe62f0bbbd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager での iOS デバイス登録の有効化
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>一時的なユーザー インターフェイスの違い
@@ -59,7 +59,7 @@ Apple School Manager で企業所有の iOS デバイスを登録するには、
 
 1. [Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]** > **[追加]** の順に選択します。
 
-  ![Enrollment Program トークンを取得します。](./media/device-enrollment-program-enroll-ios/image01.png)
+   ![Enrollment Program トークンを取得します。](./media/device-enrollment-program-enroll-ios/image01.png)
 
 2. **[Enrollment Program トークン]** ブレードで、**[公開キーをダウンロードします]** を選択して、暗号化キー (.pem) ファイルをダウンロードし、ローカルに保存します。 .pem ファイルは、Apple School Manager ポータルから信頼関係証明書を要求するために使用します。
      ![[Enrollment Program トークン] ブレード](./media/device-enrollment-program-enroll-ios/image02.png)
@@ -94,7 +94,7 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
 2. トークンを選択し、**[プロファイル]** を選択し、**[プロファイルの作成]** を選択します。
 3. **[プロファイルの作成]** で、管理用にプロファイルの **[名前]** と **[説明]** を入力します。 ユーザーにはこれらの詳細は表示されません。 この **[名前]** フィールドを使用して、Azure Active Directory で動的グループを作成できます。 この登録プロファイルに対応するデバイスを割り当てるために enrollmentProfileName パラメーターを定義する場合はプロファイル名を使用します。 Azure Active Directory の動的グループの詳細については[こちら](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects)を参照してください。
     ![プロファイル名と説明。](./media/device-enrollment-program-enroll-ios/image05.png)
-    
+
 4. **[ユーザー アフィニティ]** で、このプロファイルに対応するデバイスを割り当て済みユーザーとともに登録する必要があるかどうかを選択します。
     - **[ユーザー アフィニティとともに登録する]** - このオプションは、ユーザーに属しているデバイスであって、かつアプリのインストールなどのサービスにポータル サイトを使用する必要があるデバイスの場合に選択します。 このオプションにより、ユーザーは会社ポータルを使用して自分のデバイスを認証することもできます。 ユーザー アフィニティには [WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/library/adfs2-help-endpoints)が必要です。 [詳細については、ここをクリック](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)してください。   Apple School Manager の [共有 iPad] モードでは、ユーザーはユーザー アフィニティなしで登録する必要があります。
 
@@ -112,8 +112,8 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
 
     デバイスが監視対象であることは次の 2 つの方法でユーザーに通知されます。
 
-    - ロック画面に "この iPhone は Contoso によって管理されています" という内容のメッセージが表示されます。
-    - **[設定]** > **[全般]** > **[情報]** 画面に、"この iPhone は監視されています" という内容のメッセージが表示されます。 Contoso はインターネット トラフィックを監視し、このデバイスの位置を特定できます。" と、
+   - ロック画面に "この iPhone は Contoso によって管理されています" という内容のメッセージが表示されます。
+   - **[設定]** > **[全般]** > **[情報]** 画面に、"この iPhone は監視されています" という内容のメッセージが表示されます。 Contoso はインターネット トラフィックを監視し、このデバイスの位置を特定できます。" と、
 
      > [!NOTE]
      > 監視なしで登録されているデバイスは、Apple Configurator でのみ監視対象にリセットすることができます。 この方法でデバイスをリセットするには、USB ケーブルを使用して iOS デバイスを Mac に接続する必要があります。 詳細については、[Apple Configurator ドキュメント](http://help.apple.com/configurator/mac/2.3)を参照してください。
@@ -124,31 +124,33 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
 
 9. このプロファイルを使用したデバイスを**コンピューターと同期**できるようにするかどうかを選択します。 **[証明書による Apple Configurator の許可]** を選択した場合は、**[Apple Configurator の証明書]** で証明書を選択する必要があります。
 
-9. 前の手順で **[証明書による Apple Configurator の許可]** を選択した場合は、インポートする Apple Configurator の証明書を選択します。
+10. 前の手順で **[証明書による Apple Configurator の許可]** を選択した場合は、インポートする Apple Configurator の証明書を選択します。
 
-10. **[OK]** を選びます。
+11. **[OK]** を選びます。
 
-11. **[セットアップ アシスタントの設定]** を選択し、![[セットアップ アシスタントのカスタマイズ]](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png) プロファイル設定を構成します。
+12. **[セットアップ アシスタントの設定]** を選択し、![[セットアップ アシスタントのカスタマイズ]](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png) プロファイル設定を構成します。
 
-    | Setting | 説明 |
-    | --- | --- |
-    | **部門名** | アクティブ化中にユーザーが **[構成について]** をタップすると表示されます。 |
-    | **部署の電話番号** | アクティブ化中にユーザーが **[ヘルプが必要ですか]** ボタンをクリックすると表示されます。 |
-    | **セットアップ アシスタントのオプション** | 次の省略可能な設定は、後で iOS の **[設定]** メニューで設定できます。 |
-    | **パスコード** | アクティブ化時にパスコードの入力を求めます。 デバイスがセキュリティで保護される場合や、他の何らかの方法 (デバイスを 1 つのアプリに制限するキオスク モードなど) でアクセスが制御されている場合を除き、パスコードは常に必須にしてください。 |
-    | **ロケーション サービス** | 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます。 |
-    | **復元** | 有効にすると、アクティブ化時に、セットアップ アシスタントによって iCloud バックアップがプロンプトされます。 |
-    | **iCloud と Apple ID** | 有効にすると、セットアップ アシスタントによって Apple ID でサインインするように求められ、[アプリとデータ] 画面で iCloud バックアップからデバイスを復元できるようになります。 |
-    | **使用条件** | 有効にすると、アクティブ化時に、セットアップ アシスタントによって Apple の使用条件に同意するように求められます。 |
-    | **Touch ID** | 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます。 |
-    | **Apple Pay** | 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます。 |
-    | **Zoom** | 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます。 |
-    | **Siri** | 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます。 |
-    | **診断データ** | 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます。 |
 
-12. **[OK]** を選びます。
+    |                 Setting                  |                                                                                               説明                                                                                               |
+    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |     <strong>部門名</strong>     |                                                             アクティブ化中にユーザーが <strong>[構成について]</strong> をタップすると表示されます。                                                              |
+    |    <strong>部署の電話番号</strong>     |                                                          アクティブ化中にユーザーが <strong>[ヘルプが必要ですか]</strong> ボタンをクリックすると表示されます。                                                          |
+    | <strong>セットアップ アシスタントのオプション</strong> |                                                     次の省略可能な設定は、後で iOS の <strong>[設定]</strong> メニューで設定できます。                                                      |
+    |        <strong>パスコード</strong>         | アクティブ化時にパスコードの入力を求めます。 デバイスがセキュリティで保護される場合や、他の何らかの方法 (デバイスを 1 つのアプリに制限するキオスク モードなど) でアクセスが制御されている場合を除き、パスコードは常に必須にしてください。 |
+    |    <strong>ロケーション サービス</strong>    |                                                                 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます。                                                                  |
+    |         <strong>復元</strong>         |                                                                有効にすると、アクティブ化時に、セットアップ アシスタントによって iCloud バックアップがプロンプトされます。                                                                 |
+    |   <strong>iCloud と Apple ID</strong>   |                         有効にすると、セットアップ アシスタントによって Apple ID でサインインするように求められ、[アプリとデータ] 画面で iCloud バックアップからデバイスを復元できるようになります。                         |
+    |  <strong>使用条件</strong>   |                                                   有効にすると、アクティブ化時に、セットアップ アシスタントによって Apple の使用条件に同意するように求められます。                                                   |
+    |        <strong>Touch ID</strong>         |                                                                 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます。                                                                 |
+    |        <strong>Apple Pay</strong>        |                                                                 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます。                                                                 |
+    |          <strong>Zoom</strong>           |                                                                 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます。                                                                 |
+    |          <strong>Siri</strong>           |                                                                 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます。                                                                 |
+    |     <strong>診断データ</strong>     |                                                                 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます。                                                                 |
 
-13. プロファイルを保存するには、**[作成]** を選択します。
+
+13. **[OK]** を選びます。
+
+14. プロファイルを保存するには、**[作成]** を選択します。
 
 ## <a name="connect-school-data-sync"></a>School Data Sync の接続
 (省略可能) Apple School Manager では、Microsoft School Data Sync (SDS) を使用した Azure Active Directory (AD) へのクラス リスト データの同期がサポートされています。 SDS と同期できるのは 1 つのトークンのみです。 School Data Sync で別のトークンを設定した場合、SDS を含んでいる以前のトークンから SDS が削除されます。 新しい接続によって現在のトークンが置き換えられます。 SDS を使用して学校のデータを同期するには、次の手順を完了します。
@@ -164,7 +166,7 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
 Intune に Apple School Manager デバイスを管理するアクセス許可を割り当てたので、Intune と Apple サービスを同期し、管理されたデバイスを Intune に表示できます。
 
 [Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]** の順に選択し、リスト内でトークンを選択し、**[デバイス]** > **[同期]** の順に選択します。![[Enrollment Program デバイス] ノードと [同期] リンクが選ばれているスクリーンショット。](./media/device-enrollment-program-enroll-ios/image06.png)
-  
+
   許容される Enrollment Program トラフィックについての Apple の規約に準拠するため、Intune では次の制限が課せられます。
   - 完全な同期は 7 日に 1 回だけ実行できます。 Intune は、完全な同期中に、Intune に割り当てられているすべての Apple シリアル番号を更新します。 前回の完全同期の 7 日以内に完全同期が試みられると、Intune は Intune にまだ一覧表示されていないシリアル番号のみを更新します。
   - すべての同期要求は、完了までに 15 分与えられます。 この時間中または要求が成功するまで、**[同期]** ボタンは無効にされます。

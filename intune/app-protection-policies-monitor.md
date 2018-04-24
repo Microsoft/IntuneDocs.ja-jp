@@ -1,28 +1,28 @@
 ---
-title: "アプリ保護ポリシーを監視する方法"
+title: アプリ保護ポリシーを監視する方法
 titleSuffix: Microsoft Intune
-description: "Intune でモバイル アプリ管理ポリシーのコンプライアンス対応状態を監視します。"
-keywords: 
+description: Intune でモバイル アプリ管理ポリシーのコンプライアンス対応状態を監視します。
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 100114552b05e131ff1d0d3e9e61ef08bcc2eea4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 7db5a9dfe7a7da21a9b59dafb4f95cdb54a59735
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>アプリ保護ポリシーを監視する方法
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 このトピックでは、**Azure Portal を使用していない場合に**、Intune クラシック ポータルで[アプリ保護ポリシーを作成する方法](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)について説明します。
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 03/08/2018
 ## <a name="summary-view"></a>概要ビュー
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[モバイル アプリ]** を選びます。
 4. **[モバイル アプリ]** ワークロードで、**[監視]** > **[アプリの保護状態]** の順に選択して、概要ビューを表示します。
 

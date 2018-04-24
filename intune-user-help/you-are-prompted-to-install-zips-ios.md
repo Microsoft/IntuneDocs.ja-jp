@@ -1,25 +1,25 @@
 ---
-title: "iOS デバイスで Zimperium zIPS をインストールする必要がある | Microsoft Docs"
-description: "iOS デバイスに Zimperium zIPS をインストールする方法を説明します。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: iOS デバイスで Zimperium zIPS をインストールする必要がある | Microsoft Docs
+description: iOS デバイスに Zimperium zIPS をインストールする方法を説明します。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3fcbd09f-9b96-40fb-96fe-9e5173dc6179
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 060a50adaf9d79df1191dbe7f704c8d4a6590966
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 47cb816f0a032d8e01fcdd7ff025d36ba1354f3d
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="install-zimperium-zips-on-your-ios-device"></a>iOS デバイスに Zimperium zIPS をインストールする
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 01/25/2018
 
 1.  次のプロンプトが表示された場合は、**[インストール]** をタップし、デバイスへの Zimperium zIPS のインストールを許可します。
 
-2. 次のメッセージが表示されたら**[設定]** をタップし、**[ロケーション サービス]** をオンにし、**[続行]** をタップします。
+2. 次のメッセージが表示されたら **[設定]** をタップし、**[ロケーション サービス]** をオンにし、**[続行]** をタップします。
 
 3. Zimperium zIPS に必要なアクセス許可を確認し、**[続行]** をタップします。
 

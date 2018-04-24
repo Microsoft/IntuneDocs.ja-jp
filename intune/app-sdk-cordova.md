@@ -14,11 +14,11 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 84ff217361108ac3518567f31af8943d0b3032fe
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: d32c024d6cd526062c373b56dd18bca9480c32fa
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK Cordova プラグイン
 
@@ -72,16 +72,16 @@ Intune App SDK Cordova プラグインで開発された Cordova アプリでは
 
 1. ADAL のバージョンを更新する:
 
-  ```shell
-  cordova plugin remove cordova-plugin-ms-adal
-  cordova plugin add cordova-plugin-ms-adal@0.8.x
-  ```
+   ```shell
+   cordova plugin remove cordova-plugin-ms-adal
+   cordova plugin add cordova-plugin-ms-adal@0.8.x
+   ```
 
 2. Cordova 向け Intune App SDK プラグインを追加する:
 
-  ```shell
-  cordova plugin add cordova-plugin-ms-intune-mam
-  ```
+   ```shell
+   cordova plugin add cordova-plugin-ms-intune-mam
+   ```
 
 ## <a name="build-the-plugin-into-your-ios-app"></a>iOS アプリにプラグインを組み込む
 
@@ -131,7 +131,7 @@ Intune では現在、Cordova ビルドへのパラメーターを使用して�
 * MultiDex のサポートが不完全です。
 * アプリには 14 以上の `minSdkVersion`、および 24 以下の `targetSdkVersion` が必要です。 Intune では現在、API 25 をターゲットとするアプリはサポートしていません。
 * Intune では、V2 署名方式で署名されたアプリに再署名することはできません。 V2 で署名されたアプリをプラグインでラップすると、ラップされた出力の .apk は署名なしになります。
-*
+  *
   * Cordova の既定の V2 署名を無効にするには、以下を `build-extras.gradle` ファイルに追加します。
 
   ```gradle

@@ -1,29 +1,29 @@
 ---
-title: "Microsoft Intune で macOS デバイスのコンプライアンス ポリシーを作成する"
-titleSuffix: 
-description: "デバイスが準拠するために満たす必要のある要件を指定できるように、macOS デバイスの Microsoft Intune デバイス コンプライアンス ポリシーを作成します。"
-keywords: 
+title: Microsoft Intune で macOS デバイスのコンプライアンス ポリシーを作成する
+titleSuffix: ''
+description: デバイスが準拠するために満たす必要のある要件を指定できるように、macOS デバイスの Microsoft Intune デバイス コンプライアンス ポリシーを作成します。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7703b8ea26d6ce53b82e806a78c788d14ae05b4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d6252680e64067e6d12530e0226632a1c5db7d28
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Intune で macOS デバイス用のデバイス コンプライアンス ポリシーを作成する
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 macOS の Intune デバイス コンプライアンス ポリシーでは、準拠しているものと見なされるために macOS デバイスが満たす必要のあるルールと設定を指定します。 条件付きアクセスでこれらのポリシーを使用し、会社のリソースへのアクセスを許可またはブロックできます。デバイスのレポートを取得したり、コンプライアンスへの非対応に対処したりできます。 デバイス コンプライアンス ポリシーは、Intune Azure Portal でプラットフォームごとに作成します。
 

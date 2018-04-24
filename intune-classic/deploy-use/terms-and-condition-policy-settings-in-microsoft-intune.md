@@ -1,29 +1,29 @@
 ---
-title: "使用条件ポリシー設定"
-description: "Intune の使用条件をユーザー グループに展開すると、登録、会社のリソースへのアクセス、ポータル サイト アプリの使用によるデバイスとユーザーへの影響を説明できます。"
-keywords: 
+title: 使用条件ポリシー設定
+description: Intune の使用条件をユーザー グループに展開すると、登録、会社のリソースへのアクセス、ポータル サイト アプリの使用によるデバイスとユーザーへの影響を説明できます。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 07/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 75e68a49fb8437bb7742cfa1e458edab5c0b1836
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e639b603e52df621cddaaf9490773336229fc6a4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Microsoft Intune の使用条件ポリシー設定
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune の使用条件をユーザー グループに展開すると、登録、会社のリソースへのアクセス、ポータル サイト アプリによるデバイスとユーザーへの影響を説明できます。 ユーザーは、会社のポータルを使用して登録したり作業にアクセスしたりする前に、使用条件に同意する必要があります。
 
@@ -49,7 +49,7 @@ Intune の使用条件をユーザー グループに展開すると、登録、
 
     -   **[ユーザーによる同意の意味を説明するテキスト]**&mdash;ユーザーに表示される同意に関するラベル。 例: "使用条件に同意します。"
 
-4.  操作が完了したら、**[保存]** をクリックします。 新しいポリシーが**[ポリシー]** ワークスペースの **[使用条件]** ノードに表示されます。
+4.  操作が完了したら、**[保存]** をクリックします。 新しいポリシーが **[ポリシー]** ワークスペースの **[使用条件]** ノードに表示されます。
 
 ## <a name="deploy-a-terms-and-conditions-policy"></a>使用条件ポリシーの展開
 

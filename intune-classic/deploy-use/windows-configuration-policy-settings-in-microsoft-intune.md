@@ -1,25 +1,25 @@
 ---
-title: "Windows ポリシー設定"
-description: "Intune の Windows 全般構成ポリシー (Windows 8.1 以降) を使用して、登録済みの Windows 8 および Windows 8.1 デバイスの設定を構成します。"
-keywords: 
+title: Windows ポリシー設定
+description: Intune の Windows 全般構成ポリシー (Windows 8.1 以降) を使用して、登録済みの Windows 8 および Windows 8.1 デバイスの設定を構成します。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: ccd5bd201de59537dbf99ea9e19d84dbf80c1a20
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-policy-settings-in-microsoft-intune"></a>Microsoft Intune の Windows ポリシー設定
 

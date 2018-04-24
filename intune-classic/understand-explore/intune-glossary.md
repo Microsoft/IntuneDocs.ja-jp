@@ -13,15 +13,15 @@ ms.technology: ''
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: b4415b7b4b1cd48accae3f0d0d39caedd9cf6b3c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9ddf972795d9ced6aff6dd01da4469d49f11c951
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune の用語集
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="a"></a>A
 
@@ -40,11 +40,13 @@ ms.lasthandoff: 03/22/2018
 |Azure Portal|間もなく導入される Intune の新しいコンソールです。 詳しくは、[新ポータル](/intune/what-is-intune)に関するページを参照してください。|
 
 ## <a name="b"></a>B
+
 |||
 |-|-|
 |BYOD|[Bring Your Own Device](/intune-classic/get-started/choose-how-to-enroll-devices1)。 ユーザーは自分のデバイスに Intune ポータル サイト アプリをインストールし、登録できます。電子メール、会社のアプリ、会社のデータ、サポートなど、会社のリソースにアクセスできます。|
 
 ## <a name="c"></a>C
+
 |||
 |-|-|
 |証明書プロファイル|Wi-Fi、電子メール、または VPN プロファイルを使用するときに証明書で[企業リソースへのアクセスを保護する](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles)ためのポリシーの種類です。|
@@ -57,6 +59,7 @@ ms.lasthandoff: 03/22/2018
 |カスタム ポリシー|全般構成ポリシーに含まれる組み込み設定ではニーズを満たすことができない場合は、[カスタム ポリシーを使用](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)します。 カスタム ポリシーを使用すると、Apple Configurator や OMA-URI などの他の方法で設定を作成できる場合があります。|
 
 ## <a name="d"></a>D
+
 |||
 |-|-|
 |展開|管理対象のデバイスまたはユーザーにアプリまたはポリシーを送信することです。|
@@ -65,6 +68,7 @@ ms.lasthandoff: 03/22/2018
 |デバイス グループ マッピング|管理者またはエンド ユーザーがデバイスに割り当てることができるデバイスのカテゴリ ("個人用" や "営業用" など) に基づいて、[自動的にデバイスをグループに追加](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune)できます。|
 
 ## <a name="e"></a>E
+
 |||
 |-|-|
 |電子メールのプロファイル|このポリシーを使用すると、モバイル デバイス上の特定の電子メール クライアントに[電子メール アクセス設定](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune)をセットアップし、エンド ユーザーが行う必要のある設定の量を最小限に抑えることができます。|
@@ -73,21 +77,25 @@ ms.lasthandoff: 03/22/2018
 |登録|Microsoft Intune は、[登録](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)を使用して、デバイスを管理対象にし、リソースへのアクセスを許可します。|
 
 ## <a name="f"></a>F
+
 |||
 |-|-|
 |FastTrack|対象となるプランで 150 のライセンスを持つ Intune ユーザー向けの [Microsoft サービス](https://technet.microsoft.com/library/mt228265.aspx)です。 このサービスを利用すると、Microsoft スペシャリストが Intune の使用開始をお手伝いします。|
 
 ## <a name="g"></a>G
+
 |||
 |-|-|
 |[グループ]|グループを使用すると、[ユーザーまたはデバイスを論理的にまとめる](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune)ことができます。 たとえば、すべての Windows PC のグループを作成できます。 その後は、これらのグループにアプリとポリシーを展開できます。|
 
 ## <a name="h"></a>H
+
 |||
 |-|-|
 |ハイブリッド|[System Center Configuration Manager コンソールから](/intune-classic/get-started/integration-with-cloud-services) Intune に登録されたデバイスを管理できる構成です。|
 
 ## <a name="i"></a>I
+
 |||
 |-|-|
 |Intune 管理コンソール|ほとんどの Intune 管理操作に使用できる現在のコンソールです。|
@@ -96,11 +104,13 @@ ms.lasthandoff: 03/22/2018
 |インベントリ|管理対象デバイスの[ハードウェアとインストールされているソフトウェア](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)を表示するために使用します。|
 
 ## <a name="k"></a>K
+
 |||
 |-|-|
 |キオスク モード|[全般構成ポリシー](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)の一部として構成されます。このモードを使用すると、デバイスをロックダウンできます。 たとえば、1 つのアプリだけを実行できるようにリテール デバイスを構成できます。|
 
 ## <a name="m"></a>M
+
 |||
 |-|-|
 |Managed Browser|Microsoft Intune を使用して組織で展開できる、[Web を参照するためのアプリケーション](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies)です。 Managed Browser ポリシーは、Managed Browser のユーザーがアクセスできる Web サイトを制限する許可リストまたはブロック リストを構成するものです。|
@@ -111,18 +121,21 @@ ms.lasthandoff: 03/22/2018
 |モバイル アプリ構成ポリシー|実行時に[互換性のある iOS アプリに設定を提供する](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)ために使用される iOS ポリシー (会社名やサーバー アドレスなど)。|
 
 ## <a name="o"></a>O
+
 |||
 |-|-|
 |OMA-DM|Open Mobile Alliance Device Management。 モバイル デバイスと PC の機能を制御できるようにするために多くのハードウェア メーカーによって使用される業界標準のデバイス管理プロトコルです。|
 |OMA-URI|Open Mobile Alliance Uniform Resource Identifier。 OMA-DM 標準に準拠する個々のデバイス設定を識別します。 ニーズを満たす組み込み設定がない場合、これらの番号を [Intune カスタム ポリシー](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)で使用できます。|
 
 ## <a name="p"></a>P
+
 |||
 |-|-|
 |ポリシー|Intune からデバイスに送信される[情報のパッケージ](/intune-classic/deploy-use/microsoft-intune-policy-reference)です。 たとえば、セキュリティ設定やデバイスのコンプライアンス情報をデバイスに展開できます。|
 |パスコードのリセット|サポートされているデバイスでエンド ユーザーに[パスコードのリセット](/intune-classic/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune)を強制できる Intune の機能です。|
 
 ## <a name="r"></a>R
+
 |||
 |-|-|
 |リモート ロック|デバイスを所有していない場合でも[サポートされているデバイスをロック](/intune-classic/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune)できる Intune の機能です。|
@@ -131,12 +144,14 @@ ms.lasthandoff: 03/22/2018
 |要件|アプリをインストールする前にデバイスが満たす必要のある要件を選択できる[アプリ展開操作](/intune-classic/deploy-use/add-apps)です。 たとえば、アプリをインストールする前にインストールされている必要がある iOS の OS バージョンを指定できます。|
 
 ## <a name="s"></a>S
+
 |||
 |-|-|
 |選択的ワイプ|[選択的ワイプ](/intune-classic/deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune)は、モバイル アプリ管理 (MAM) データ (該当する場合)、設定、電子メール プロファイルといった会社のデータだけをデバイスから削除します。 選択的ワイプでは、ユーザーの個人データはデバイス上にそのまま保持されます。|
 |Subscription|Intune テナントへのアクセスを許可することを示す同意。|
 
 ## <a name="t"></a>T
+
 |||
 |-|-|
 |TeamViewer|Intune ソフトウェア クライアントで管理される Windows PC の[リモート アシスタンス機能](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-for-windows-pcs)を提供するために Intune と連携するサード パーティ製アプリケーションです。|
@@ -144,12 +159,15 @@ ms.lasthandoff: 03/22/2018
 |Intune の登録および会社アクセスに関する使用条件|ポータル サイトを使用して作業を登録およびアクセスするためにユーザーが[読んで同意](/intune-classic/deploy-use/terms-and-condition-policy-settings-in-microsoft-intune)する必要のある情報を含む、ユーザーに展開されるポリシーの種類です。|
 
 ## <a name="v"></a>V
+
 |||
 |-|-|
 |ボリューム購入アプリ|一部のアプリ ストアでは、社内で実行するアプリの複数のライセンスを購入できます。 Intune では、[このようなプログラムを通じて購入](/intune-classic/deploy-use/manage-volume-purchased-apps-in-microsoft-intune)したアプリを管理するために、アプリ ストアからライセンス情報をインポートし、使用したライセンスの数を追跡し、所有しているより多くのアプリをインストールできないようにします。|
 |VPN プロファイル|エンド ユーザーが必要なセットアップを最小限に抑えるために [VPN 設定](/intune-classic/deploy-use/vpn-connections-in-microsoft-intune)を管理対象デバイスに展開するポリシーです。|
 
 ## <a name="w"></a>W
-|||
-|-|-|
-|Wi-Fi プロファイル|ユーザーが設定を知らなくても、または構成しなくても、会社のネットワークに接続できるようにする[ワイヤレス ネットワーク設定](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune)をデバイスに展開するポリシーです。
+
+|               |                                                                                                                                                                                                                                 |
+|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Wi-Fi プロファイル | ユーザーが設定を知らなくても、または構成しなくても、会社のネットワークに接続できるようにする[ワイヤレス ネットワーク設定](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune)をデバイスに展開するポリシーです。 |
+

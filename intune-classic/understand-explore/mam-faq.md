@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7654e5235fc30f46f67d35544a92c4bd25ac5c86
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 816a235136d91f2691e6be442036515544c004b2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM とアプリの保護に関してよく寄せられる質問
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 この記事では、Intune モバイル アプリケーション管理 (MAM) と Intune アプリ保護に関してよく寄せられる質問に対する回答を示します。
 
@@ -61,23 +61,23 @@ ms.lasthandoff: 03/22/2018
 
 **[Outlook モバイル アプリ](https://www.microsoft.com/outlook-com/mobile/)を使用するための追加要件は何ですか。**
 
-  1. エンドユーザーが、Outlook モバイル アプリをデバイスにインストールしている必要があります。
+1. エンドユーザーが、Outlook モバイル アプリをデバイスにインストールしている必要があります。
 
-  2. エンド ユーザーに、[Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) メールボックスと Azure Active Directory アカウントにリンクされたライセンスが必要です。
+2. エンド ユーザーに、[Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) メールボックスと Azure Active Directory アカウントにリンクされたライセンスが必要です。
 
-  >[!NOTE]
-  > 現段階では、Outlook モバイル アプリは Microsoft Exchange Online のみをサポートし、Exchange On-Premises と Office 365 専用の Exchange はサポートされていません。
+   >[!NOTE]
+   > 現段階では、Outlook モバイル アプリは Microsoft Exchange Online のみをサポートし、Exchange On-Premises と Office 365 専用の Exchange はサポートされていません。
 
 **[Word、Excel、PowerPoint](https://products.office.com/business/office) のアプリを使用するための追加要件は何ですか。**
 
-  1. エンドユーザーに、Azure Active Directory アカウントにリンクされた [Office 365 Business または Office 365 Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) のライセンスが必要です。 サブスクリプションには、モバイル デバイスの Office アプリが含まれている必要があります。また、[OneDrive for Business](https://onedrive.live.com/about/business/) のクラウド ストレージ アカウントを含めることも可能です。 Office 365 のライセンスは、[Office ポータル](http://portal.office.com)でこちらの[手順](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)を実行して割り当てることができます。
+1. エンドユーザーに、Azure Active Directory アカウントにリンクされた [Office 365 Business または Office 365 Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) のライセンスが必要です。 サブスクリプションには、モバイル デバイスの Office アプリが含まれている必要があります。また、[OneDrive for Business](https://onedrive.live.com/about/business/) のクラウド ストレージ アカウントを含めることも可能です。 Office 365 のライセンスは、[Office ポータル](http://portal.office.com)でこちらの[手順](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)を実行して割り当てることができます。
 
-  2. エンド ユーザーは、[名前を付けて保存することを禁止] アプリケーション保護ポリシー設定の機能として、詳細保存を使用して管理対象の場所を構成しておく必要があります。 たとえば、管理対象の場所が OneDrive の場合、[OneDrive](https://onedrive.live.com/about/) アプリは、エンド ユーザーの Word アプリ、Excel アプリ、または PowerPoint アプリ内で構成される必要があります。
+2. エンド ユーザーは、[名前を付けて保存することを禁止] アプリケーション保護ポリシー設定の機能として、詳細保存を使用して管理対象の場所を構成しておく必要があります。 たとえば、管理対象の場所が OneDrive の場合、[OneDrive](https://onedrive.live.com/about/) アプリは、エンド ユーザーの Word アプリ、Excel アプリ、または PowerPoint アプリ内で構成される必要があります。
 
-  3. 管理対象の場所が OneDrive の場合、アプリは、エンド ユーザーに展開されているアプリの保護ポリシーの対象となる必要があります。
+3. 管理対象の場所が OneDrive の場合、アプリは、エンド ユーザーに展開されているアプリの保護ポリシーの対象となる必要があります。
 
-  >[!NOTE]
-  > 現段階では、Office モバイル アプリは SharePoint Online のみをサポートし、オンプレミスの SharePoint はサポートされていません。
+   >[!NOTE]
+   > 現段階では、Office モバイル アプリは SharePoint Online のみをサポートし、オンプレミスの SharePoint はサポートされていません。
 
 **管理対象の場所 (OneDrive) が Office で必要なのは、なぜですか。** Intune は、アプリ内のすべてのデータを "企業" データまたは "個人用" データのいずれかとしてマークします。 勤務地から送信されたデータは "企業" データと見なされます。 Office アプリについては、Intune では電子メール (Exchange) またはクラウド ストレージ (OneDrive for Business アカウントを使用した OneDrive アプリ) が勤務地と見なされます。
 
@@ -124,15 +124,15 @@ MAM (iOS) では現在、英数字と特殊文字による "パスコード" と
 
 **Intune でのデータのリモート ワイプはどのように行われますか。** Intune は、フル デバイス ワイプ、MDM の選択的ワイプ、および MAM の選択的ワイプという 3 つの異なる方法でアプリのデータをワイプできます。 MDM のリモート ワイプの詳細については、「[Microsoft Intune のフル ワイプまたは選択的ワイプを使用してデータを保護する](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)」を参照してください。 MAM を使用する選択的ワイプの詳細については、「[管理対象の業務用アプリのデータを Microsoft Intune でワイプする](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)」を参照してください。
 
-  1. **フル ワイプとは何ですか。** [フル ワイプ](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe)では、デバイスを出荷時の既定の設定に戻すことにより、すべてのユーザー データと設定が**デバイス**から削除されます。 デバイスは Intune から削除されません。
-  >[!NOTE]
-  > フル ワイプは、Intune モバイル デバイス管理 (MDM) に登録済みのデバイスでのみ行うことができます。
+1. **フル ワイプとは何ですか。** [フル ワイプ](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe)では、デバイスを出荷時の既定の設定に戻すことにより、すべてのユーザー データと設定が**デバイス**から削除されます。 デバイスは Intune から削除されません。
+   >[!NOTE]
+   > フル ワイプは、Intune モバイル デバイス管理 (MDM) に登録済みのデバイスでのみ行うことができます。
 
-  2. **MDM の選択的ワイプとは何ですか。** 選択的ワイプの詳細については、「[Microsoft Intune のフル ワイプまたは選択的ワイプを使用してデータを保護する](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe)」を参照してください。
+2. **MDM の選択的ワイプとは何ですか。** 選択的ワイプの詳細については、「[Microsoft Intune のフル ワイプまたは選択的ワイプを使用してデータを保護する](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe)」を参照してください。
 
-  3. **MAM の選択的ワイプとは何ですか。** MAM の選択的ワイプは、単にアプリから業務用アプリのデータを削除します。 要求は、Intune Azure Portal を使用して開始されます。 ワイプの要求を開始する方法については、「[管理対象の業務用アプリのデータを Microsoft Intune でワイプする](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)」を参照してください。
+3. **MAM の選択的ワイプとは何ですか。** MAM の選択的ワイプは、単にアプリから業務用アプリのデータを削除します。 要求は、Intune Azure Portal を使用して開始されます。 ワイプの要求を開始する方法については、「[管理対象の業務用アプリのデータを Microsoft Intune でワイプする](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)」を参照してください。
 
-  4. **MAM の選択的ワイプはどれくらいの間隔で行われますか。** 選択的ワイプの開始時にユーザーがアプリを使用している場合は、Intune アプリ SDK によって Intune MAM サービスからの選択的ワイプの要求が 30 分ごとにチェックされます。 ユーザーがアプリを初めて起動し職場または学校のアカウントを使ってサインインした場合も、選択的ワイプがチェックされます。
+4. **MAM の選択的ワイプはどれくらいの間隔で行われますか。** 選択的ワイプの開始時にユーザーがアプリを使用している場合は、Intune アプリ SDK によって Intune MAM サービスからの選択的ワイプの要求が 30 分ごとにチェックされます。 ユーザーがアプリを初めて起動し職場または学校のアカウントを使ってサインインした場合も、選択的ワイプがチェックされます。
 
 **オンプレミス サービスが Intune の保護対象アプリと連携しないのはなぜですか。** Intune アプリ保護は、アプリケーションと Intune アプリ SDK の間で一貫性を保つためにユーザーの ID に依存しています。 これを保証する唯一の方法は、最新の認証を使用することです。 アプリをオンプレミス構成と連携させるシナリオはありますが、一貫性がなく保証されていません。
 

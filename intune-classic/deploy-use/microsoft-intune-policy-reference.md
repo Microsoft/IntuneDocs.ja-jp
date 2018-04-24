@@ -1,29 +1,29 @@
 ---
-title: "構成ポリシー リファレンス"
-description: "このトピックの情報は、デバイスの管理に使用する必要がある Microsoft Intune ポリシーを判断するのに役立ちます。"
-keywords: 
+title: 構成ポリシー リファレンス
+description: このトピックの情報は、デバイスの管理に使用する必要がある Microsoft Intune ポリシーを判断するのに役立ちます。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bf92e34c5bb94fe0cb3c0cc9dabd687a0f2710b9
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 46bc3408f861bcd249ca5071abf1ee80733af10d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-configuration-policy-reference"></a>Microsoft Intune の構成ポリシー リファレンス
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 このトピックの情報は、デバイスの管理に使用する必要がある Microsoft Intune 構成ポリシーを判断するのに役立ちます。
 
@@ -102,12 +102,13 @@ Windows Phone と登録されている Windows デバイスのみに適用され
 
 ## <a name="common-mobile-device-settings"></a>一般的なモバイル デバイスの設定
 
-|ポリシー名|使用するタイミング|
-|---------------|------------------------|
-|**Exchange ActiveSync ポリシー**|Exchange ActiveSync で管理されているデバイスのモバイル デバイスのセキュリティと機能の設定を構成します。<br /><br />詳細については、「[Microsoft Intune の Exchange ActiveSync ポリシー設定](exchange-activesync-policy-settings-in-microsoft-intune.md)」を参照してください。|
-|**モバイル デバイスのセキュリティ ポリシー**|<ul><li>モバイル デバイス (すべてのプラットフォーム) の設定を構成します。次の項目が含まれます。<br /><br /><ul><li>セキュリティ</li><li>暗号化</li><li>システム</li><li>電子メール</li><li>アプリケーション</li></ul></li></ul>
+|                  ポリシー名                   |                                                                                                                       使用するタイミング                                                                                                                       |
+|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Exchange ActiveSync ポリシー</strong>   | Exchange ActiveSync で管理されているデバイスのモバイル デバイスのセキュリティと機能の設定を構成します。<br /><br />詳細については、「[Microsoft Intune の Exchange ActiveSync ポリシー設定](exchange-activesync-policy-settings-in-microsoft-intune.md)」を参照してください。 |
+| <strong>モバイル デバイスのセキュリティ ポリシー</strong> |                                  <ul><li>モバイル デバイス (すべてのプラットフォーム) の設定を構成します。次の項目が含まれます。<br /><br /><ul><li>セキュリティ</li><li>暗号化</li><li>システム</li><li>電子メール</li><li>アプリケーション</li></ul></li></ul>                                  |
+
 > [!IMPORTANT]
-Microsoft Intune では、デバイス プラットフォームごとに**構成ポリシー**が分割されました。それらのポリシーには、使用可能な最新の設定が含まれています。 引き続きモバイル デバイスのセキュリティ ポリシーを使用でき、既存の展開も機能します。ただし、できるだけ早く新しい構成ポリシーに移行することを計画してください。<br />詳細については、「[Microsoft Intune のモバイル デバイス セキュリティ ポリシー設定](mobile-device-security-policy-settings-in-microsoft-intune.md)」を参照してください。
+> Microsoft Intune では、デバイス プラットフォームごとに**構成ポリシー**が分割されました。それらのポリシーには、使用可能な最新の設定が含まれています。 引き続きモバイル デバイスのセキュリティ ポリシーを使用でき、既存の展開も機能します。ただし、できるだけ早く新しい構成ポリシーに移行することを計画してください。<br />詳細については、「[Microsoft Intune のモバイル デバイス セキュリティ ポリシー設定](mobile-device-security-policy-settings-in-microsoft-intune.md)」を参照してください。
 
 ## <a name="policies-for-windows-pcs-managed-by-the-intune-software-client"></a>Intune ソフトウェア クライアントによって管理されている Windows PC のポリシー
 

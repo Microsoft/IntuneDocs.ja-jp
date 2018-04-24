@@ -1,28 +1,28 @@
 ---
-title: "デバイスでユーザーに表示される可能性のあるポータル サイト メッセージ"
+title: デバイスでユーザーに表示される可能性のあるポータル サイト メッセージ
 titlesuffix: Microsoft Intune
-description: "エンドユーザーに対し、ポータル サイトで表示される可能性のあるさまざまなメッセージを説明します。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: エンドユーザーに対し、ポータル サイトで表示される可能性のあるさまざまなメッセージを説明します。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 03/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
-ms.openlocfilehash: e78d43cf1cb96575ebc8d8143b7b4fc1103a9bd1
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 3ed729e437fcdbc4352bf5fa8ceada4ddf336708
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>ポータル サイト アプリで表示されるメッセージに関してエンド ユーザーをサポートする
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 > [!NOTE]
 > 次の情報は、Android 6.0 以上のデバイスにのみ適用されます。
@@ -106,7 +106,7 @@ ms.lasthandoff: 03/02/2018
 
 ### <a name="what-it-means"></a>意味
 
-ポータル サイトを Windows 情報保護 (WIP) のアプリ保護ポリシーの **[許可されたアプリ]** または**[適用から除外されるアプリ]** 一覧に追加します。 詳細については、「[Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune)」を参照してください。
+ポータル サイトを Windows 情報保護 (WIP) のアプリ保護ポリシーの **[許可されたアプリ]** または **[適用から除外されるアプリ]** 一覧に追加します。 詳細については、「[Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune)」を参照してください。
 
 ### <a name="see-also"></a>関連項目
 [Intune の使用に関するエンドユーザーへの通知内容](end-user-educate.md)

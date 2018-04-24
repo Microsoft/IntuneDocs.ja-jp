@@ -1,28 +1,28 @@
 ---
-title: "Microsoft Intune クラシック ポータルの新機能アーカイブ"
-description: "Microsoft Intune の新機能に関するお知らせの公開履歴"
-keywords: 
+title: Microsoft Intune クラシック ポータルの新機能アーカイブ
+description: Microsoft Intune の新機能に関するお知らせの公開履歴
+keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 06/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f259620f64d70bfce4ed60c2a96194028a12c38
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5ba8d7940f9c02a1f01a115e16be331bb4fc2fcd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune クラシック ポータルの新機能 (過去数か月)
 
-[!INCLUDE[classic-portal](./includes/classic-portal.md)]
+[!INCLUDE [classic-portal](./includes/classic-portal.md)]
 
 このページには、Intune クラシック ポータルの[新機能](whats-new.md)に関するページで以前にお知らせした機能と通知が表示されます。
 
@@ -281,7 +281,7 @@ Intune アプリ ラッピング ツールまたは Intune アプリ SDK を使�
 
 * [Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](apps-prepare-mobile-application-management.md)
 * [Intune アプリ ラッピング ツールでモバイル アプリケーションを管理するために iOS アプリを準備する](app-wrapper-prepare-ios.md)
-* [Microsoft Intune アプリ SDK の概要](/app-sdk-get-started.md)
+* [Microsoft Intune アプリ SDK の概要](app-sdk-get-started.md)
 * [iOS 用 Intune アプリ SDK 開発者ガイド](app-sdk-ios.md)
 
 次の記事がドキュメント ライブラリに新たに追加されました。
@@ -359,7 +359,7 @@ __Intune アプリ SDK Xamarin コンポーネントで登録なしの MAM の�
 
 __Symantec 署名証明書のアップロードで署名済みの Windows Phone 8 ポータル サイトが不要に__ Symantec 署名証明書のアップロード時に、署名済みの Windows Phone 8 ポータル サイト アプリが不要になりました。 証明書は単独でアップロードできます。
 
-###<a name="deprecations"></a>廃止予定
+### <a name="deprecations"></a>廃止予定
 
 __Windows Phone 8 ポータル サイトのサポート__ Windows Phone 8 ポータル サイトのサポートは廃止されます。 2016 年 10 月に Windows Phone 8 プラットフォームおよび Windows RT プラットフォームのサポートが廃止されました。 また、2016 年 10 月に Windows Phone 8 ポータル サイトのサポートも廃止されました。
 

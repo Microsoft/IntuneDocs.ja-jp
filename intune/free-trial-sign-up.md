@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune の 30 日間無料試用版にサインアップする"
+title: Microsoft Intune の 30 日間無料試用版にサインアップする
 titleSuffix: Microsoft Intune
-description: "Microsoft Intune の 30 日間無料試用版にサインアップする方法について説明します。"
-keywords: 
+description: Microsoft Intune の 30 日間無料試用版にサインアップする方法について説明します。
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 03/04/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: 389981fc207371d64064872235fc9babde6b3f6a
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.custom: ''
+ms.openlocfilehash: b68c2d93071d545bf25f7810a6908099988fb902
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Microsoft Intune の無料試用版にサインアップ
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/17/2018
 この記事では、Azure Portal の Intune スタンドアロンの試用版にサインアップする方法について説明します。
 
 1. [Intune サインアップ](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) ページにアクセスしてフォームに入力し、試用版サブスクリプションにサインアップします。
-* 職場や学校のアカウントを Intune 試用版に使用する場合、代わりに[このリンクにあるサインイン方法](/intune/account-sign-up)に従ってください。
+2. 職場や学校のアカウントを Intune 試用版に使用する場合、代わりに[このリンクにあるサインイン方法](/intune/account-sign-up)に従ってください。
 
 * IT 運用チームやユーザーの大半が自分と異なるロケールに属している場合は、そのロケールを **[Where's your company located? (会社の所在地はどこですか?)]** で選択することをお勧めします。
 

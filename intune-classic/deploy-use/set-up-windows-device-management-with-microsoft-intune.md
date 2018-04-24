@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune を使用して Windows デバイスの管理をセットアップする"
-description: "Microsoft Intune で Windows デバイスのモバイル デバイス管理 (MDM) を有効にします。"
-keywords: 
+title: Microsoft Intune を使用して Windows デバイスの管理をセットアップする
+description: Microsoft Intune で Windows デバイスのモバイル デバイス管理 (MDM) を有効にします。
+keywords: ''
 author: NathBarn
 manager: angrobe
 ms.date: 03/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: fb2d724cc87ffdc506eda8d5ea2330ab9aacd3e9
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-windows-device-management"></a>Windows デバイスの管理をセットアップする
 

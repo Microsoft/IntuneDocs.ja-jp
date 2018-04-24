@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tycast
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: de1a5beafae900a21f685cf1daeb2302cbf245b3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c6bbc1bd477cde7eecb78b78c8efa4bfde46976f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="find-a-package-family-name-pfn-for-per-app-vpn-configuration"></a>アプリごとの VPN 構成のパッケージ ファミリー名 (PFN) を検索する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 アプリごとの VPN をセットアップできるように PFN を検索する方法は 2 つあります。
 
@@ -37,7 +37,7 @@ Get-AppxPackage の構文:
 ` Get-AppxPackage [[-Name] <String> ] [[-Publisher] <String> ] [-AllUsers] [-User <String> ] [ <CommonParameters>]`
 
 > [!NOTE]
-PFN を取得するには、状況に応じて管理者として PowerShell を実行する必要があります。
+> PFN を取得するには、状況に応じて管理者として PowerShell を実行する必要があります。
 
 たとえば、コンピューターにインストールされているすべてのユニバーサル アプリに関する情報を取得するには、`Get-AppxPackage` を使用します。
 

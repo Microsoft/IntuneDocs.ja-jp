@@ -1,29 +1,29 @@
 ---
-title: "Microsoft Intune のネットワーク要件と帯域幅の詳細"
-titlesuffix: 
-description: "Intune のネットワーク構成の要件と帯域幅の詳細を確認します。"
-keywords: 
+title: Microsoft Intune のネットワーク要件と帯域幅の詳細
+titlesuffix: ''
+description: Intune のネットワーク構成の要件と帯域幅の詳細を確認します。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b21c4421914294e84bae637e489065c5e4410839
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c161d1ca120d5a0210cffca01e781f1ae9206fe4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune のネットワーク構成の要件と帯域幅
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 このガイダンスは、Intune 管理者が Intune サービスのネットワーク要件を理解するのに役立ちます。 帯域幅の要件およびプロキシの設定に必要な IP アドレスとポートの設定を理解できます。
 
@@ -58,11 +58,13 @@ ms.lasthandoff: 03/05/2018
 
 Intune クライアント用にコンテンツをキャッシュするプロキシ サーバーの一般的な設定を以下に示します。
 
-|Setting|推奨される値|説明|
-|-----------|---------------------|-----------|
-|キャッシュ サイズ|5 ～ 30 GB|この値は、ネットワークにあるクライアント コンピューターの台数と、使用する構成によって異なります。 ファイルが短時間で削除されないようにするには、環境のキャッシュのサイズを調整します。|
-|キャッシュする個々のファイルのサイズ|950 MB|キャッシュ機能付きサーバーによっては、この設定がないものがあります。|
-|キャッシュするオブジェクトの種類|HTTP<br /><br />HTTPS<br /><br />BITS|Intune パッケージは、HTTP 経由でバックグラウンド インテリジェント転送サービス (BITS) のダウンロードで取得される CAB ファイルです。|
+
+|          Setting           |           推奨される値           |                                                                                                  説明                                                                                                  |
+|----------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         キャッシュ サイズ         |             5 ～ 30 GB             | この値は、ネットワークにあるクライアント コンピューターの台数と、使用する構成によって異なります。 ファイルが短時間で削除されないようにするには、環境のキャッシュのサイズを調整します。 |
+| キャッシュする個々のファイルのサイズ |                950 MB                 |                                                                     キャッシュ機能付きサーバーによっては、この設定がないものがあります。                                                                     |
+|   キャッシュするオブジェクトの種類    | HTTP<br /><br />HTTPS<br /><br />BITS |                                               Intune パッケージは、HTTP 経由でバックグラウンド インテリジェント転送サービス (BITS) のダウンロードで取得される CAB ファイルです。                                               |
+
 コンテンツをキャッシュするプロキシ サーバーの仕様に関する詳細については、使用するプロキシ サーバー ソリューションのドキュメントを参照してください。
 
 ### <a name="use-background-intelligent-transfer-service-on-computers"></a>コンピューターで、バック グラウンド インテリジェント転送サービスを使用する
@@ -159,14 +161,16 @@ Intune は、Intune ソフトウェアを実行するサーバーのようなオ
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
 
 ### <a name="apple-device-network-information"></a>Apple デバイス ネットワークの情報
-| ホスト名  | URL (IP アドレス/サブネット) | プロトコル | ポート | デバイス |
-| --- | --- | --- | --- | --- |
-|  管理コンソール  | gateway.push.apple.com (17.0.0.0/8) | TCP | 2195 | Apple iOS と macOS |
-| 管理コンソール  | feedback.push.apple.com(17.0.0.0/8) | TCP | 2196 | Apple iOS と macOS |
-| 管理コンソール  | Apple iTunesitunes.apple.com、\*.mzstatic.com、\*.phobos.apple.com、\*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple iOS と macOS  |
-| PI サーバー  | gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8) | TCP | 2195、2196 | Apple iOS および macOS クラウド メッセージング用。 |
-| デバイス サービス  | gateway.push.apple.com | TCP | 2195 | Apple  |
-| デバイス サービス  | feedback.push.apple.com | TCP | 2196 | Apple  |
-| デバイス サービス  | Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple  |
-| デバイス (インターネット/Wi-Fi) | #-courier.push.apple.com(17.0.0.0/8) | TCP | 5223 および 443 | Apple のみ。 &#39;#&#39; は、0 から 200 の乱数です。 |
-| デバイス (インターネット/Wi-Fi) | phobos.apple.comocsp.apple.comax.itunes.apple.com | HTTP/HTTPS | 80 または 443 | Apple のみ |
+
+|         ホスト名         |                                        URL (IP アドレス/サブネット)                                        |  プロトコル  |     ポート     |                          デバイス                           |
+|--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
+|      管理コンソール       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS と macOS                    |
+|      管理コンソール       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS と macOS                    |
+|      管理コンソール       | Apple iTunesitunes.apple.com、\*.mzstatic.com、\*.phobos.apple.com、\*.phobos.apple.com.edgesuite.net |    HTTP    |      80      |                    Apple iOS と macOS                    |
+|        PI サーバー         |                gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8)                 |    TCP     |  2195、2196  |         Apple iOS および macOS クラウド メッセージング用。          |
+|     デバイス サービス      |                                        gateway.push.apple.com                                         |    TCP     |     2195     |                           Apple                           |
+|     デバイス サービス      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |
+|     デバイス サービス      |   Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net   |    HTTP    |      80      |                           Apple                           |
+| デバイス (インターネット/Wi-Fi) |                                 #-courier.push.apple.com(17.0.0.0/8)                                  |    TCP     | 5223 および 443 | Apple のみ。 &#39;#&#39; は、0 から 200 の乱数です。 |
+| デバイス (インターネット/Wi-Fi) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP/HTTPS |  80 または 443   |                        Apple のみ                         |
+

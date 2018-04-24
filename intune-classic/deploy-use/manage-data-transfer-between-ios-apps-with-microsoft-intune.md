@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b83e5fa37f9a9844e3011cded3c3cd58f268521
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c27b191f8a0f9fbd298b820114f27acb4c31f966
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Microsoft Intune を使用して iOS アプリ間のデータ転送を管理する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="manage-ios-apps"></a>iOS アプリを管理する
 会社データの保護には、ファイル転送を管理対象のアプリに限定する処理も含まれます。  iOS アプリは次の方法で管理できます。
@@ -51,17 +51,17 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 ユーザー UPN 設定の構成は、サード パーティの EMM ソリューションによって管理されているデバイスに**必要**となります。 以下に示す手順では、UPN 設定の一般的な構成方法と、その結果として得られるエンドユーザー エクスペリエンスを示しています。
 
 
-1.  Azure ポータルで、iOS プラットフォームの[アプリ保護ポリシーを構成します](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)。 企業の要件に合わせてポリシー設定を構成し、このポリシーを使用するアプリを選択します。
+1. Azure ポータルで、iOS プラットフォームの[アプリ保護ポリシーを構成します](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)。 企業の要件に合わせてポリシー設定を構成し、このポリシーを使用するアプリを選択します。
 
-2.  次の汎用化された手順を使用して、**サードパーティの MDM ソリューションで**管理するアプリとメール プロファイルをデプロイします。 このエクスペリエンスは例 1 でも取り上げています。
+2. 次の汎用化された手順を使用して、**サードパーティの MDM ソリューションで**管理するアプリとメール プロファイルをデプロイします。 このエクスペリエンスは例 1 でも取り上げています。
 
-  1.  次のアプリ構成設定でアプリをデプロイします。
+   1. 次のアプリ構成設定でアプリをデプロイします。
 
       **キー** = IntuneMAMUPN、**値** = <username@company.com>
 
       例: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-  2.  登録済みデバイスに、サードパーティの MDM プロバイダーを使用して Open in management ポリシーをデプロイします。
+   2. 登録済みデバイスに、サードパーティの MDM プロバイダーを使用して Open in management ポリシーをデプロイします。
 
 
 ### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>例 1: サードパーティ MDM コンソールの管理エクスペリエンス
@@ -70,9 +70,9 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 
 2. [アプリケーションの構成] セクションで、次の設定を入力します。
 
-  **キー** = IntuneMAMUPN、**値** = <username@company.com>
+   **キー** = IntuneMAMUPN、**値** = <username@company.com>
 
-  キー/値ペアの正確な構文は、サード パーティ MDM プロバイダーによって異なります。 次の表は、サードパーティ MDM プロバイダーの例と、キー/値ペアに入力する必要のある正確な値を示します。
+   キー/値ペアの正確な構文は、サード パーティ MDM プロバイダーによって異なります。 次の表は、サードパーティ MDM プロバイダーの例と、キー/値ペアに入力する必要のある正確な値を示します。
 
 |サードパーティ MDM プロバイダー| Configuration キー | 値の種類 | 構成値|
 | ------- | ---- | ---- | ---- |

@@ -1,30 +1,29 @@
 ---
-title: "アプリ保護ポリシーのセットアップを検証する"
+title: アプリ保護ポリシーのセットアップを検証する
 titleSuffix: Microsoft Intune
-description: "アプリ保護ポリシーが正しくセットアップされ、動作していることをテストする方法について説明します。"
-keywords: 
+description: アプリ保護ポリシーが正しくセットアップされ、動作していることをテストする方法について説明します。
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 980773eb59553c492ac338808476cfb55f2ddfb8
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: ddafe6037cce73c1eca82f2bc78c6197aff9acad
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-validate-your-app-protection-policy-setup"></a>アプリ保護ポリシーのセットアップを検証する方法
+# <a name="how-to-validate-your-app-protection-policy-setup"></a>アプリ保護ポリシーの設定を検証する方法
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 アプリ保護ポリシーが正しくセットアップされ、動作していることを検証します。 このガイドは、Azure Portal のアプリ保護ポリシーに適用されます。
 
@@ -42,7 +41,7 @@ ms.lasthandoff: 03/05/2018
 
 #### <a name="user-app-protection-status"></a>ユーザーのアプリ保護の状態
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 1. **[アプリの管理]** > **[監視]** >  **[アプリの保護状態]** > **[割り当て済みユーザー]** の順に選択します。
 
 2. 一覧からユーザーを選択するか、検索してユーザーを選択し、**[ユーザーの選択]** を選択します。 **[アプリ レポート]** 列の最上部で、ユーザーがアプリ保護のライセンスを取得しているかどうかを確認できます。 また、ユーザーが O365 のライセンスを取得しているかどうかと、すべてのユーザーのデバイスのアプリの状態を確認できます。

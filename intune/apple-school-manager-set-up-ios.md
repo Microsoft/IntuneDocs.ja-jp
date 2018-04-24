@@ -1,29 +1,29 @@
 ---
-title: "iOS デバイスのための Apple School Manager プログラム登録の設定"
+title: iOS デバイスのための Apple School Manager プログラム登録の設定
 titlesuffix: Microsoft Intune
-description: "企業所有の iOS デバイスを Intune で登録するために、Apple School Manager プログラム登録を設定する方法について説明します。"
-keywords: 
+description: 企業所有の iOS デバイスを Intune で登録するために、Apple School Manager プログラム登録を設定する方法について説明します。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3a599ff1dff3e27214dfcca694f6b97333f370a
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: afcca0cc1f7786f468856f2aacefc0b8168b4934
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager での iOS デバイス登録の設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>一時的なユーザー インターフェイスの違い
@@ -61,7 +61,7 @@ Apple School Manager で企業所有の iOS デバイスを登録するには、
 **手順 1: Apple トークンを作成するために必要な Intune 公開キー証明書をダウンロードします。**<br>
 1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** を選択し、**[Enrollment Program トークン]** を選択します。
 
-  ![公開キーをダウンロードするための [Apple 証明書] ワークスペースの [Enrollment Program トークン] ウィンドウ](./media/enrollment-program-token-download.png)
+   ![公開キーをダウンロードするための [Apple 証明書] ワークスペースの [Enrollment Program トークン] ウィンドウ](./media/enrollment-program-token-download.png)
 
 2. **[Enrollment Program トークン]** ブレードで、**[公開キーをダウンロードします]** を選択して、暗号化キー (.pem) ファイルをダウンロードし、ローカルに保存します。 .pem ファイルは、Apple School Manager ポータルから信頼関係証明書を要求するために使用します。
 
@@ -95,20 +95,20 @@ Apple School Manager で企業所有の iOS デバイスを登録するには、
 4. **[登録プロファイルの作成]** ブレードで、Intune に表示されるプロファイルの**名前**と**説明**を入力します。
 5. **[ユーザー アフィニティ]** で、このプロファイルに対応するデバイスをユーザー アフィニティとともに登録するかどうかを選択します。
 
- - **ユーザー アフィニティとともに登録する** - セットアップ中にデバイスとユーザーを関連付けます。
+   - **ユーザー アフィニティとともに登録する** - セットアップ中にデバイスとユーザーを関連付けます。
 
-  Apple School Manager の [共有 iPad] モードでは、ユーザーはユーザー アフィニティなしで登録する必要があります。
+   Apple School Manager の [共有 iPad] モードでは、ユーザーはユーザー アフィニティなしで登録する必要があります。
 
- - **[ユーザー アフィニティなしで登録する]** - 共有デバイスなど、1 人のユーザーに関連付けられていないデバイスの場合に選択します。 ローカルのユーザー データにアクセスせずにタスクを実行するデバイスで使用します。 ポータル サイト アプリなどのアプリは動作しません。
+   - **[ユーザー アフィニティなしで登録する]** - 共有デバイスなど、1 人のユーザーに関連付けられていないデバイスの場合に選択します。 ローカルのユーザー データにアクセスせずにタスクを実行するデバイスで使用します。 ポータル サイト アプリなどのアプリは動作しません。
 
 6. **[デバイス管理の設定]** を選択します。 これらの項目はアクティブ化のときに設定され、項目を変更するには出荷時の設定に戻す必要があります。 次のプロファイル設定を構成して、**[保存]** を選択します。
 
-  ![管理モードの選択](./media/enrollment-program-profile-mode.png)
+   ![管理モードの選択](./media/enrollment-program-profile-mode.png)
 
-    - **[監督下]** - より多くの管理オプションが使用可能な管理モードです。既定でアクティベーション ロックは無効になります。 このチェック ボックスをオフのままにすると、管理機能が制限されます。
+   - **[監督下]** - より多くの管理オプションが使用可能な管理モードです。既定でアクティベーション ロックは無効になります。 このチェック ボックスをオフのままにすると、管理機能が制限されます。
 
      - **[ロックされた登録]** - ([管理モード] を [監督下] にする必要があります) 管理プロファイルの削除を許可する iOS 設定を無効にします。 このチェック ボックスをオフのままにすると、[設定] メニューから管理プロファイルを削除できます。
-   - **[共有 iPad]** - (**[ユーザー アフィニティなしで登録する]** と [監視下] モードが必要です。)管理された Apple ID を使用して、複数のユーザーが登録済みの iPad にログオンすることを許可します。 管理された Apple ID は、Apple School Manager ポータルで作成されます。 共有 iPad の詳細については[こちら](education-settings-configure-ios-shared.md)を参照してください。 [Apple の Shared iPad に関する要件](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56)も参照してください。
+     - **[共有 iPad]** - (**[ユーザー アフィニティなしで登録する]** と [監視下] モードが必要です。)管理された Apple ID を使用して、複数のユーザーが登録済みの iPad にログオンすることを許可します。 管理された Apple ID は、Apple School Manager ポータルで作成されます。 共有 iPad の詳細については[こちら](education-settings-configure-ios-shared.md)を参照してください。 [Apple の Shared iPad に関する要件](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56)も参照してください。
 
    >[!NOTE]
    >**[ユーザー アフィニティ]** を **[With user affinity]\(ユーザー アフィニティあり\)** に設定するか、**[監視下]** モードを **[オフ]** に設定すると、登録プロファイルの [共有 iPad] モードは無効になります。
@@ -151,12 +151,12 @@ Intune に Apple School Manager デバイスを管理するアクセス許可を
 
 1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program デバイス]** > **[同期]** の順に選択します。進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
 
-  ![[Enrollment Program デバイス] ノードと [同期] リンクの選択](./media/enrollment-program-device-sync.png)
+   ![[Enrollment Program デバイス] ノードと [同期] リンクの選択](./media/enrollment-program-device-sync.png)
 2. **[同期]** ブレードで、**[同期を要求]** を選択します。進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
 
-  ![[同期を要求] リンクが選ばれている [同期] ブレード](./media/enrollment-program-device-request-sync.png)
+   ![[同期を要求] リンクが選ばれている [同期] ブレード](./media/enrollment-program-device-request-sync.png)
 
-  許容されるトラフィックについての Apple の規約に準拠するため、Intune では次の制限が課せられます。
+   許容されるトラフィックについての Apple の規約に準拠するため、Intune では次の制限が課せられます。
    -    完全な同期は 7 日に 1 回だけ実行できます。 完全同期時に、Intune は Apple が Intune に割り当てたすべてのシリアル番号を、シリアルが以前に同期されているかどうかに関係なく更新します。 前回の完全同期の 7 日以内に完全同期が試みられると、Intune は Intune にまだ一覧表示されていないシリアル番号のみを更新します。
    -    すべての同期要求は、完了までに 15 分与えられます。 この時間中または要求が成功するまで、**[同期]** ボタンは無効にされます。
 
@@ -169,15 +169,15 @@ Intune によって管理される Apple School Manager デバイスを登録す
 1. [Azure Portal の Intune](https://aka.ms/intuneportal) で **[デバイスの登録]** > **[Apple の登録]** の順に選択し、**[Enrollment Program プロファイル]** を選択します。
 2. **[Enrollment Program プロファイル]** の一覧から、デバイスに割り当てるプロファイルを選択し、**[デバイスの割り当て]** を選択します。
 
- ![[割り当て] が選択された [デバイスの割り当て]。](./media/enrollment-program-device-assign.png)
+   ![[割り当て] が選択された [デバイスの割り当て]。](./media/enrollment-program-device-assign.png)
 
 3. **[割り当て]** を選択し、このプロファイルを割り当てる Apple School Manager デバイスを選択します。 フィルターを適用して使用可能なデバイスを表示できます。
-  - **未割り当て**
-  - **任意**
-  - **&lt;プロファイル名&gt;**
+   - **未割り当て**
+   - **任意**
+   - **&lt;プロファイル名&gt;**
 4. 割り当てるデバイスを選択します。 列の上のチェック ボックスで、一覧表示されたデバイスを最大 1,000 まで選択します。 **[割り当て]** をクリックします。 1,000 を超えるデバイスを登録するには、すべてのデバイスに登録プロファイルを割り当てるまで割り当て手順を繰り返します。
 
-  ![Intune で Enrollment Program プロファイルを割り当てるための [割り当て] ボタン](media/dep-profile-assignment.png)
+   ![Intune で Enrollment Program プロファイルを割り当てるための [割り当て] ボタン](media/dep-profile-assignment.png)
 
 ## <a name="distribute-devices-to-users"></a>デバイスをユーザーに配布する
 

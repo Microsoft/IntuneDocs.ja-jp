@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0f9ecb8cf16d8c344ea595c53ab91c9b1f00c90e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4973e896109589a91891545bbf6db6ca6df45aad
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Microsoft Intune のデバイス登録マネージャーを使用した企業所有デバイスの登録
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 組織は Intune を使用して、単一のユーザー アカウントで多数のモバイル デバイスを管理することができます。 *デバイス登録マネージャー (DEM)* アカウントは、最大で 1,000 台のデバイスを登録できる特別なユーザー アカウントです。 既存のユーザーを DEM アカウントに追加し、特別な DEM 機能を与えます。 登録される各デバイスは 1 つのライセンスを使用します。 このアカウントで登録したデバイスは、個人用 ("BYOD") デバイスではなく共有デバイス (つまり、ユーザー アフィニティなし) として使用することをお勧めします。  
 
@@ -67,22 +67,22 @@ DEM ユーザーができること:
 
 ## <a name="add-a-device-enrollment-manager"></a>デバイス登録マネージャーの追加
 
-1.  DEM アカウントに追加するユーザーが既に存在することを確認します。 ユーザーを追加する必要がある場合、[Office 365 ポータル](https://go.microsoft.com/fwlink/p/?LinkId=698854)にサインインし、「[Office 365 にユーザーを個別に、またはまとめて追加する - 管理者向けヘルプ](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)」の手順を実行します。
+1. DEM アカウントに追加するユーザーが既に存在することを確認します。 ユーザーを追加する必要がある場合、[Office 365 ポータル](https://go.microsoft.com/fwlink/p/?LinkId=698854)にサインインし、「[Office 365 にユーザーを個別に、またはまとめて追加する - 管理者向けヘルプ](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)」の手順を実行します。
 
-2.  管理者の資格情報を使用して、[Microsoft Intune 管理コンソール](https://manage.microsoft.com) にサインインします。
+2. 管理者の資格情報を使用して、[Microsoft Intune 管理コンソール](https://manage.microsoft.com) にサインインします。
 
-3.  ナビゲーション ウィンドウで、**[管理]**、**[管理者の管理]** の順に選択し、**[デバイス登録マネージャー]** を選択します。 **[デバイス登録マネージャー]** ページが表示されます。
+3. ナビゲーション ウィンドウで、**[管理]**、**[管理者の管理]** の順に選択し、**[デバイス登録マネージャー]** を選択します。 **[デバイス登録マネージャー]** ページが表示されます。
 
-4.  **[追加]** を選択します。 **[デバイス登録マネージャーの追加]** ダイアログ ボックスが表示されます。
+4. **[追加]** を選択します。 **[デバイス登録マネージャーの追加]** ダイアログ ボックスが表示されます。
 
-5.  Intune アカウントを **[ユーザー ID]** に入力し、**[OK]** を選択します。
+5. Intune アカウントを **[ユーザー ID]** に入力し、**[OK]** を選択します。
 
-    これで、DEM ユーザーが、BYOD シナリオの場合にエンド ユーザーがポータル サイトで実行する際と同じ手順で、モバイル デバイスを登録できるようになりました。 マネージャーであるエンド ユーザーは、ポータル サイト アプリをインストールし、DEM の資格情報を使用して最大 1,000 台のデバイスを登録することができます。 プラットフォーム別のエンドユーザー登録手順については、次を参照してください。
+   これで、DEM ユーザーが、BYOD シナリオの場合にエンド ユーザーがポータル サイトで実行する際と同じ手順で、モバイル デバイスを登録できるようになりました。 マネージャーであるエンド ユーザーは、ポータル サイト アプリをインストールし、DEM の資格情報を使用して最大 1,000 台のデバイスを登録することができます。 プラットフォーム別のエンドユーザー登録手順については、次を参照してください。
 
-  - [Intune に iOS デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
-  - [Intune に macOS デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
-  - [Intune に Android デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
-  - [Intune に Windows デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
+   - [Intune に iOS デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
+   - [Intune に macOS デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
+   - [Intune に Android デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
+   - [Intune に Windows デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>Intune からのデバイス登録マネージャーの削除
 

@@ -1,25 +1,25 @@
 ---
-title: "モバイル デバイス セキュリティ ポリシー設定"
-description: "Intune を使用すると、組織内の管理対象デバイスに展開できるさまざまな設定を構成できます。"
-keywords: 
+title: モバイル デバイス セキュリティ ポリシー設定
+description: Intune を使用すると、組織内の管理対象デバイスに展開できるさまざまな設定を構成できます。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 11/02/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 83536a4d9858454505a84a2e394ace1119255049
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Microsoft Intune のモバイル デバイス セキュリティ ポリシー設定
 

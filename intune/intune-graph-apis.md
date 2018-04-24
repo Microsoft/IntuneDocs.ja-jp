@@ -1,24 +1,24 @@
 ---
-title: "Azure AD を使用して Microsoft Graph の Intune API にアクセスする方法"
+title: Azure AD を使用して Microsoft Graph の Intune API にアクセスする方法
 titlesuffix: Microsoft Intune
-description: "アプリで Azure AD を使用して Microsoft Graph の Intune API にアクセスするために必要な手順について説明します。"
-keywords: "intune graphapi c# powershell アクセス許可の役割"
+description: アプリで Azure AD を使用して Microsoft Graph の Intune API にアクセスするために必要な手順について説明します。
+keywords: intune graphapi c# powershell アクセス許可の役割
 author: vhorne
 manager: dougeby
 ms.author: victorh
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 273919a7f5a62ab6b7b625756da29d3b58339578
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: f6e5955b690eedf06872171fcc22eb86a0f7764e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD を使用して Microsoft Graph の Intune API にアクセスする方法
 
@@ -72,7 +72,7 @@ Microsoft Graph API を使用するアプリを登録するには、次の作業
 
 4.  **[作成]** ブレードで、次を指定します。
 
-    1.  アプリケーションの **[名前]**\(ユーザーがサインインするときに表示されます\)。
+    1.  アプリケーションの **[名前]** \(ユーザーがサインインするときに表示されます\)。
 
     2.  **[アプリケーションの種類]** と **[リダイレクト URI]** の値。
 
@@ -118,13 +118,13 @@ Microsoft Graph API を使用するアプリを登録するには、次の作業
 
     これを実行するには、次のようにします。
 
-    1. [アプリケーション] ブレードで **[マニフェスト]** を選択すると、**[マニフェストの編集]** ブレードが開きます。
+  1. [アプリケーション] ブレードで **[マニフェスト]** を選択すると、**[マニフェストの編集]** ブレードが開きます。
 
-    <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
+     <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
 
-    2. `availableToOtherTenants` 設定の値を `true` に変更します。
+  2. `availableToOtherTenants` 設定の値を `true` に変更します。
 
-    3. 変更を保存します。
+  3. 変更を保存します。
 
 ## <a name="intune-permission-scopes"></a>Intune のアクセス許可スコープ
 

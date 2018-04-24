@@ -1,29 +1,29 @@
 ---
-title: "Pulse Secure を使用した Android のアプリごとの VPN"
-description: "Intune で管理する、アプリごとの VPN プロファイルを Android デバイスに作成できます。"
-keywords: 
+title: Pulse Secure を使用した Android のアプリごとの VPN
+description: Intune で管理する、アプリごとの VPN プロファイルを Android デバイスに作成できます。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 06/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 65bd7e15a49d5b563b6a095593ca5d8d5316a1fa
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: fb4b6ad21b83d6ed2844238091f2e24e0d15cea5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-custom-policy-to-create-a-per-app-vpn-profile-for-android-devices"></a>カスタム ポリシーを使用して、Android デバイスにアプリごとの VPN プロファイルを作成する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune で管理する、アプリごとの VPN プロファイルを Android 5.0 以降のデバイスに作成できます。 最初に、Pulse Secure または Citrix 接続の種類を使用する VPN プロファイルを作成します。 次に、特定のアプリと VPN プロファイルを関連付けるカスタム構成ポリシーを作成します。 
 
@@ -49,10 +49,10 @@ Android デバイスまたはユーザー グループにポリシーをデプ�
 
    1. Intune 管理コンソールで、**[ポリシー]** > **[ポリシーの追加]** > **[Android]** > **[カスタム構成]** > **[ポリシーの作成]** の順に選択します。
    2. ポリシーの名前を入力します。
-   3. **[OMA-URI 設定]**で **[追加]** を選択します。
+   3. **[OMA-URI 設定]** で **[追加]** を選択します。
    4. 設定の名前を入力します。
    5. **[データ型]** に **[文字列]** を指定します。
-   6. **[OMA-URI]** には、**./Vendor/MSFT/VPN/Profile/*Name*/PackageList** の文字列を指定します。ここの *Name* は手順 1 でメモした VPN プロファイル名です。 この例では、文字列は **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList** になります。
+   6. **OMA-URI** には、**./Vendor/MSFT/VPN/Profile/*Name*/PackageList** の文字列を指定します。ここの *Name* は手順 1 でメモした VPN プロファイル名です。 この例では、文字列は **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList** になります。
    7.   **[値]** には、プロファイルと関連付けるセミコロンで区切られたパッケージの一覧を入力します。 たとえば、Excel と Google Chrome ブラウザーで VPN 接続を使用するには、「**com.microsoft.office.excel;com.android.chrome**」と入力します。
 
 ![Android のアプリごとの VPN カスタム ポリシーの例](./media/android_per_app_vpn_oma_uri.png)
@@ -60,10 +60,10 @@ Android デバイスまたはユーザー グループにポリシーをデプ�
 #### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>アプリの一覧をブラックリストまたはホワイトリストとして設定する (省略可能)
   **BLACKLIST** 値を使用すると、VPN 接続を使用*できない*アプリの一覧を指定できます。 他のすべてのアプリは、VPN を使用して接続されます。
 または、**WHITELIST** 値を使用して、VPN 接続を使用*できる*アプリの一覧を指定することもできます。 一覧に含まれないアプリは、VPN 経由で接続しません。
-  1.    **[OMA-URI 設定]**で **[追加]** を選択します。
+  1.    **[OMA-URI 設定]** で **[追加]** を選択します。
   2.    設定の名前を入力します。
   3.    **[データ型]** に **[文字列]** を指定します。
-  4.    **[OMA-URI]** には、**./Vendor/MSFT/VPN/Profile/*Name*/Mode** の文字列を使用します。ここの *Name* は手順 1 でメモした VPN プロファイル名です。 この例では、文字列は **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode** になります。
+  4.    **OMA-URI** には、**./Vendor/MSFT/VPN/Profile/*Name*/Mode** の文字列を使用します。ここの *Name* は手順 1 でメモした VPN プロファイル名です。 この例では、文字列は **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode** になります。
   5.    **[値]** には、「**BLACKLIST**」または「**WHITELIST**」と入力します。
 
 

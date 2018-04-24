@@ -1,28 +1,28 @@
 ---
-title: "Microsoft Intune での Windows Information Protection 設定"
-titleSuffix: 
-description: "Windows 情報保護の管理に使用できる Microsoft Intune の設定について説明します。"
-keywords: 
+title: Microsoft Intune での Windows Information Protection 設定
+titleSuffix: ''
+description: Windows 情報保護の管理に使用できる Microsoft Intune の設定について説明します。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 1/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f2e5090eada373b83c3f8c390b7df6b31f6d1723
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1ec649134d4c3d28c99863aa3f04d2a89d4e029f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-windows-information-protection-in-microsoft-intune"></a>Microsoft Intune で Windows Information Protection を構成する方法
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 企業内に従業員所有デバイスが増加するのに従い、企業のコントロールが届かない電子メール、ソーシャル メディア、パブリック クラウドなどのアプリやサービスを介して偶発的にデータが漏えいするリスクも増大しています。 たとえば、従業員が個人用の電子メール アカウントから最新のエンジニアリング画像を送信したり、製品情報をコピーしてツイートに貼り付けたり、作成中の営業レポートをパブリック クラウドの記憶域に保存したりするときなどです。
 

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f53796e08ee962a23ab02929c4451478480e281
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4c69dec5903f25b9e7f09f6a20fc35068f3329d4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune のデバイス登録に関するトラブルシューティング
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 このトピックでは、デバイス登録で問題が発生した場合の解決方法を提案します。 この情報で問題が解決しない場合、さらに役立つ方法を探すには、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」を参照してください。
 
@@ -87,9 +87,9 @@ ms.lasthandoff: 03/22/2018
 8.  使用されなくなったデバイスや、定義が不正確なデバイスなど、目的のデバイスを削除します。
 
 > [!NOTE]
-
+> 
 > デバイスの登録上限を超えないように、デバイス登録マネージャー アカウントを使用します (「[Microsoft Intune のデバイス登録マネージャーを使用した企業所有のデバイスの登録](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)」をご覧ください)。
->
+> 
 > デバイス登録マネージャー アカウントに追加されているユーザー アカウントのユーザー ログインについて条件付きアクセス ポリシーが適用されている場合、そのアカウントは登録を完了できません。
 
 ### <a name="company-portal-temporarily-unavailable"></a>"ポータル サイトは一時的に使用できません"
@@ -154,7 +154,7 @@ ms.lasthandoff: 03/22/2018
 **問題:** ADFS に 2 番目の確認済みドメインを追加すると、2 番目のドメインのユーザー プリンシパル名 (UPN) サフィックスを持つユーザーがポータルにログインできなくなる場合や、デバイスを登録できなくなる場合があります。
 
 
-**解決方法:** AD FS 2.0 によるシングル サインオン (SSO) を利用している Microsoft Office 365 ユーザーが、組織内にユーザーの UPN サフィックス用のトップ レベル ドメイン (@contoso.com、@fabrikam.com など) を複数持っている場合、各サフィックスに対して別々の AD FS 2.0 フェデレーション サービス インスタンスを展開する必要があります。 現在は [AD FS 2.0 用ロールアップ](http://support.microsoft.com/kb/2607496)が用意されており、これを **SupportMultipleDomain** スイッチと組み合わせて使用することで、AD FS 2.0 サーバーを追加しなくても、このような状況に対応することができます。 詳細については、[このブログ](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)を参照してください。
+<strong>解決方法:</strong> AD FS 2.0 によるシングル サインオン (SSO) を利用している Microsoft Office 365 ユーザーが、組織内にユーザーの UPN サフィックス用のトップ レベル ドメイン (@contoso.com、@fabrikam.com など) を複数持っている場合、各サフィックスに対して別々の AD FS 2.0 フェデレーション サービス インスタンスを展開する必要があります。 現在は [AD FS 2.0 用ロールアップ](http://support.microsoft.com/kb/2607496)が用意されており、これを <strong>SupportMultipleDomain</strong> スイッチと組み合わせて使用することで、AD FS 2.0 サーバーを追加しなくても、このような状況に対応することができます。 詳細については、[このブログ](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)を参照してください。
 
 
 ## <a name="android-issues"></a>Android の問題
@@ -195,27 +195,27 @@ Android 6.0 へのアップグレードを試みるようユーザーに通知�
 
 1. デバイスで Smart Manager アプリを起動します。
 
-  ![デバイスの Smart Manager アイコンを選択する](./media/smart-manager-app-icon.png)
+   ![デバイスの Smart Manager アイコンを選択する](./media/smart-manager-app-icon.png)
 
 2. **[バッテリ]** タイルを選択します。
 
-  ![[バッテリ] タイルを選択する](./media/smart-manager-battery-tile.png)
+   ![[バッテリ] タイルを選択する](./media/smart-manager-battery-tile.png)
 
 3. **[App power saving]** (アプリの省電力) または **[App optimization]** (アプリの最適化) で、**[詳細]** を選択します。
 
-  ![[App power saving] (アプリの省電力) または [App optimization] (アプリの最適化) で [詳細] を選択する](./media/smart-manager-app-power-saving-detail.png)
+   ![[App power saving] (アプリの省電力) または [App optimization] (アプリの最適化) で [詳細] を選択する](./media/smart-manager-app-power-saving-detail.png)
 
 4. アプリのリストから **[ポータル サイト]** を選択します。
 
-  ![アプリ リストから [ポータル サイト] を選択する](./media/smart-manager-company-portal.png)
+   ![アプリ リストから [ポータル サイト] を選択する](./media/smart-manager-company-portal.png)
 
 5. **[オフ]** を選択します。
 
-  ![[App optimization] (アプリの最適化) ダイアログから [オフ] を選択する](./media/smart-manager-app-optimization-turned-off.png)
+   ![[App optimization] (アプリの最適化) ダイアログから [オフ] を選択する](./media/smart-manager-app-optimization-turned-off.png)
 
 6. **[App power saving]** (アプリの省電力) または **[App optimization]** (アプリの最適化) で、ポータル サイトがオフになっていることを確認します。
 
-  ![ポータル サイトがオフになっていることを確認する](./media/smart-manager-verify-comp-portal-turned-off.png)
+   ![ポータル サイトがオフになっていることを確認する](./media/smart-manager-verify-comp-portal-turned-off.png)
 
 
 ### <a name="profile-installation-failed"></a>プロファイルのインストールに失敗しました

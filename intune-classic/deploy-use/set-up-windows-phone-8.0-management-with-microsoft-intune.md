@@ -1,24 +1,24 @@
 ---
-title: "使用されていない Windows 8.0 ポータル サイト アプリ"
-description: "Microsoft Intune を使用して Windows Phone 8.0 デバイスのモバイル デバイス管理 (MDM) を有効にします。"
-keywords: 
+title: 使用されていない Windows 8.0 ポータル サイト アプリ
+description: Microsoft Intune を使用して Windows Phone 8.0 デバイスのモバイル デバイス管理 (MDM) を有効にします。
+keywords: ''
 author: NathBarn
 manager: angrobe
 ms.date: 02/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 08b16418181f809cc39fc13e767858543223978f
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 #  <a name="windows-phone-80-company-portal-app-deprecated"></a>使用されていない Windows Phone 8.0 ポータル サイト アプリ
 

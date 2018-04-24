@@ -1,29 +1,29 @@
 ---
-title: "管理対象の業務用アプリのデータをワイプする"
-description: "リモートでデバイスから会社のデータを選択的に削除する方法について説明します。"
-keywords: 
+title: 管理対象の業務用アプリのデータをワイプする
+description: リモートでデバイスから会社のデータを選択的に削除する方法について説明します。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d7f89d79edcc52892e2988e4b2f152cb68d80070
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 8d946b551118441b737335f6bd8c4603a49e0dd2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="wipe-company-app-data-with-intune-mam"></a>業務用アプリのデータを Intune MAM でワイプする
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 デバイスが紛失や盗難にあった場合、または従業員が離職した場合、会社のアプリのデータがデバイスから削除されたことを確認する必要があります。 ただし、個人のデータをデバイスから削除するのは好ましくありません。そのデバイスの所有者が従業員である場合はなおさらです。
 
@@ -65,7 +65,7 @@ ms.lasthandoff: 10/10/2017
 
 2.  **[ワイプ要求]** ブレードで、**[ワイプ要求]** タイルを選択し、**[ワイプ要求]** ブレードを開きます。
 
-3.  **[ワイプ要求]** ブレードでは、要求をユーザー別にグループ化して一覧表示できます。 ワイプ要求はデバイスで実行されている保護アプリごとに作成されるため、1 ユーザーに対する要求が複数ある場合があります。 状態は、ワイプ要求が **[保留中]**、**[失敗]**、または **[成功]**のいずれかであることを示します。
+3.  **[ワイプ要求]** ブレードでは、要求をユーザー別にグループ化して一覧表示できます。 ワイプ要求はデバイスで実行されている保護アプリごとに作成されるため、1 ユーザーに対する要求が複数ある場合があります。 状態は、ワイプ要求が **[保留中]**、**[失敗]**、または **[成功]** のいずれかであることを示します。
 
     ![[新しいワイプ要求] ブレードのスクリーンショット](../media/AppManagement/wipe-request-status-1.png)
 

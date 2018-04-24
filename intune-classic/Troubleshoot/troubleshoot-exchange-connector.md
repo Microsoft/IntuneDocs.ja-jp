@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a70b2707b38534826577bfe47bcd8e575c09a71f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 0eef4e2ae3792c601bd4a32cd041d7d041091cca
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-the-exchange-connector"></a>Exchange Connector のトラブルシューティングを行う
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 このトピックでは、Intune Exchange Connector に関連する可能性のある問題のトラブルシューティングを行う方法について説明します。
 
@@ -36,8 +36,8 @@ Exchange Connector の構成を調べて、問題を解決できるかどうか�
 - Exchange Connector を構成するときに、Exchange Connector をホストするサーバーに近接するクライアント アクセス サーバー (CAS) を指定します。 特に O365 Dedicated を使用している場合は、CAS と Exchange Connector 間の通信の遅延によってデバイスの検出が遅くなる可能性があります。
 - Exchange Connector と Exchange CAS の同期にはタイム ラグがあることに注意してください。 完全同期は 1 日に 1 回実行され、差分 (クイック) 同期は 2 時間間隔で実行されます。 新しく登録されたデバイスを持つユーザーは、アクセスの取得が遅れる可能性があります。
 - 
-## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>Exchange ActiveSync device not discovered from Exchange (Exchange ActiveSync デバイスが Exchange から検出されない)
-Exchange Connector が Exchange サーバーと同期しているかどうかを調べます。 これを行うには、ログで完全同期または差分同期を探します。Exchange Connector のログを確認します。 デバイスの参加以降、完全同期または差分同期が正常に完了している場合は、問題の原因から同期を排除します。 同期が行われていない場合は、同期ログを収集し、サポート依頼に添付してください。
+  ## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>Exchange ActiveSync device not discovered from Exchange (Exchange ActiveSync デバイスが Exchange から検出されない)
+  Exchange Connector が Exchange サーバーと同期しているかどうかを調べます。 これを行うには、ログで完全同期または差分同期を探します。Exchange Connector のログを確認します。 デバイスの参加以降、完全同期または差分同期が正常に完了している場合は、問題の原因から同期を排除します。 同期が行われていない場合は、同期ログを収集し、サポート依頼に添付してください。
 
 - ユーザーが Intune ライセンスを持っていない場合、Exchange Connector は、それらのユーザーのデバイスを検出しません。
 - ユーザーのプライマリ SMTP アドレスが AAD の UPN と異なる場合、Exchange Connector は、その Intune/AAD ユーザーのデバイスを検出しません。 プライマリ SMTP アドレスを修正してください。

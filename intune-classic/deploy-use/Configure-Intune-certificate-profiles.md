@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d6230fbc50ae79702cfd938f158d2961b5d720c9
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 51da197b9b805fbac22b6a46453617b7703a37e8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-intune-certificate-profiles"></a>Intune 証明書プロファイルを構成する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 「[SCEP の証明書インフラストラクチャを構成する](configure-certificate-infrastructure-for-scep.md)」または「[PFX の証明書インフラストラクチャを構成する](configure-certificate-infrastructure-for-pfx.md)」の説明に従ってインフラストラクチャおよび証明書を構成した後、証明書プロファイルを作成できます。 その手順は次のとおりです。
 
@@ -92,39 +92,39 @@ Simple Certificate Enrollment Protocol (SCEP) または PKCS #12 (.PFX) 証明�
 
 -  Windows Phone 8.1 以降
 
-2.  **SCEP 証明書プロファイル** ポリシーを追加します
+2. **SCEP 証明書プロファイル** ポリシーを追加します
 
-    詳しくは、「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」をご覧ください。
+   詳しくは、「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」をご覧ください。
 
-3.  プロファイル構成ページの指示に従って、SCEP 証明書プロファイル設定を構成します。
-    > [!NOTE]
-    >
-    > **[サブジェクト名の形式]** で、**[カスタム]** を選択してサブジェクト名のカスタム形式を入力します (iOS のプロファイルのみ)。
-    >
-    > カスタム形式で現在サポートされている 2 つの変数は、`Common Name (CN)` と `Email (E)` です。 これらの変数と静的文字列の組み合わせを使用することで、このようなサブジェクト名のカスタム形式を作成できます。
+3. プロファイル構成ページの指示に従って、SCEP 証明書プロファイル設定を構成します。
+   > [!NOTE]
+   > 
+   > **[サブジェクト名の形式]** で、**[カスタム]** を選択してサブジェクト名のカスタム形式を入力します (iOS のプロファイルのみ)。
+   > 
+   > カスタム形式で現在サポートされている 2 つの変数は、`Common Name (CN)` と `Email (E)` です。 これらの変数と静的文字列の組み合わせを使用することで、このようなサブジェクト名のカスタム形式を作成できます。
+   > 
+   >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+   > 
+   > この例では、管理者は `CN` と `E` の変数に加えて、組織単位、組織、市区町村、州、および国の値の文字列を使用してサブジェクト名形式を作成しています。 「[CertStrToName 関数](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)」で、サポートされる文字列を一覧にしています。
 
-    >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
-
-    > この例では、管理者は `CN` と `E` の変数に加えて、組織単位、組織、市区町村、州、および国の値の文字列を使用してサブジェクト名形式を作成しています。 「[CertStrToName 関数](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)」で、サポートされる文字列を一覧にしています。
-
-4.  **[ポリシーの保存]** を選択します。
+4. **[ポリシーの保存]** を選択します。
 
 新しいポリシーが **[ポリシー]** ワークスペースに表示されます。 これでデプロイが可能になりました。
 
 ### <a name="to-create-a-pfx-certificate-profile"></a>.PFX 証明書プロファイルを作成するには
 
-1.  [Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[ポリシーの追加]** を選択し、デバイスのプラットフォームを選択します。 次のデバイスについては、.PFX 証明書がサポートされています。
-  - Android 4 以降
-  - Android for Work
-  - Windows 10 以降
-  - Windows Phone 10 以降
-  - iOS 8.0 以降)    
+1. [Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** &gt; **[ポリシーの追加]** を選択し、デバイスのプラットフォームを選択します。 次のデバイスについては、.PFX 証明書がサポートされています。
+   - Android 4 以降
+   - Android for Work
+   - Windows 10 以降
+   - Windows Phone 10 以降
+   - iOS 8.0 以降)    
 
 
-2.  **.PFX 証明書プロファイル** ポリシーを追加します。
-      詳しくは、「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」をご覧ください。
-3.  ポリシー フォームで要求されている情報を入力します。
-4.  **[ポリシーの保存]** を選択します。
+2. **.PFX 証明書プロファイル** ポリシーを追加します。
+     詳しくは、「[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)」をご覧ください。
+3. ポリシー フォームで要求されている情報を入力します。
+4. **[ポリシーの保存]** を選択します。
 
 新しいポリシーが **[ポリシー]** ワークスペースに表示されます。 これでデプロイが可能になりました。
 

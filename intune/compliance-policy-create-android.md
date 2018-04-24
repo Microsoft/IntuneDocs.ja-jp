@@ -15,16 +15,16 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2539ff1703809f5f89183a9d0cfd448f2e57fd64
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 586672bf84be6e7bcd8d3b8618aab09088620eb1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Intune で Android デバイス用のデバイス コンプライアンス ポリシーを作成する方法
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Android の Intune デバイス コンプライアンス ポリシーでは、準拠しているものと見なされるために Android デバイスが満たす必要のあるルールと設定を指定します。 条件付きアクセスでこれらのポリシーを使用し、会社のリソースへのアクセスを許可またはブロックできます。デバイスのレポートを取得したり、コンプライアンスへの非対応に対処したりできます。 デバイス コンプライアンス ポリシーは、Intune Azure Portal でプラットフォームごとに作成します。 コンプライアンス ポリシーと、コンプライアンス ポリシーを作成する前に対応する必要がある前提条件については、「[Intune のデバイス コンプライアンス ポリシーの概要](device-compliance-get-started.md)」をご覧ください。
 

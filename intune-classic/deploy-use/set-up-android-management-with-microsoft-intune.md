@@ -1,25 +1,25 @@
 ---
-title: "Android の管理をセットアップする"
-description: "Microsoft Intune を使用して Android および KNOX Standard デバイスのモバイル デバイス管理 (MDM) を有効にします。"
-keywords: 
+title: Android の管理をセットアップする
+description: Microsoft Intune を使用して Android および KNOX Standard デバイスのモバイル デバイス管理 (MDM) を有効にします。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 03/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lacranda
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: d1245f5644b24d258f8542252f8910789b63ba02
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-android-device-management"></a>Android デバイスの管理をセットアップする
 

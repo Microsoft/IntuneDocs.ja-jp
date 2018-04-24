@@ -1,29 +1,29 @@
 ---
-title: "Windows 10 ポリシー設定"
-description: "このトピックのポリシー設定の一覧を、登録済みの Windows 10 デスクトップおよび Windows 10 Mobile デバイスの組み込み設定およびユーザー設定構成に役立ててください。"
-keywords: 
+title: Windows 10 ポリシー設定
+description: このトピックのポリシー設定の一覧を、登録済みの Windows 10 デスクトップおよび Windows 10 Mobile デバイスの組み込み設定およびユーザー設定構成に役立ててください。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 09/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fff34b145660e1d0e78e05de467629f9421fcf7a
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 202f15766aa740755669ab246739a5331ea328a4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Microsoft Intune での Windows 10 デバイス向けの Intune ポリシー設定
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 このトピックには、Windows 10 デバイスの管理に使用できる Intune ポリシー設定を理解するのに役立つ情報が含まれています。 このトピックと一緒に「[Manage settings and features on your-devices with Microsoft Intune policies](/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune)」(Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する) の手順も読んでください。
 
@@ -121,7 +121,7 @@ Windows 10 用の Microsoft Intune **全般構成ポリシー**を使用して�
 |**Internet Explorer へのイントラネット トラフィックの送信を許可する**|ユーザーが Internet Explorer でイントラネット Web サイトを開けるようになります。<br>(Windows 10 デスクトップのみ)|
 |**追跡禁止を許可する**|ユーザーがアクセスする Web サイトへトラッキング拒否ヘッダーを送信できるように、Edge ブラウザーを構成します。|
 |**SmartScreen を有効にする**||
-|**アクティブ スクリプティングを使用する**|JavaScript などのスクリプトを Microsoft Edge ブラウザーで実行できるようにします。|
+|**アクティブ スクリプティングを使用する**|JavaScript などのスクリプトを Edge ブラウザーで実行できるようにします。|
 |**ポップアップを許可する**|Windows 10 デスクトップのみに適用|
 |**Cookie を使用する**||
 |**オートコンプリートを使用する**|ユーザーがブラウザーのオートコンプリートの設定を変更できるようにします。<br>(Windows 10 デスクトップのみ)|
@@ -192,7 +192,7 @@ Windows 10 用の Microsoft Intune **全般構成ポリシー**を使用して�
 |**アーカイブ ファイルをスキャンする**|Zip ファイルや Cab ファイルなどのアーカイブ済みのファイルを Defender がスキャンできるようにします。|
 |**電子メール メッセージをスキャンする**|デバイスに届いた電子メール メッセージを Defender が直ちにスキャンできるようにします。|
 |**リムーバブル ドライブをスキャンする**|USB スティックなどのリムーバブル ドライブを Defender がスキャンできるようにします。|
-|**マップされたネットワーク ドライブをスキャンする**|マップ済みネットワーク ドライブ上のファイルを Defender がスキャンできるようにします。<br>ドライブ上のファイルが読み取り専用である場合、Defender は検出したマルウェアを一切削除できません。|
+|**マップされたネットワーク ドライブをスキャンする**|マップ済みネットワーク ドライブ上のファイルを Defender がスキャンできるようにします。<br>ドライブ上のファイルが読み取り専用の場合は、ファイル内で検出されたマルウェアを Defender が削除することはできません。|
 |**ネットワークの共有フォルダーから開いたファイルをスキャンする**|共有ネットワーク ドライブ上のファイルを Defender がスキャンできるようにします (UNC パスからアクセスされたファイルなど)。<br>ドライブ上のファイルが読み取り専用である場合、Defender は検出したマルウェアを一切削除できません。|
 |**署名更新間隔**|Defender が新しいシグネチャ ファイルをチェックする間隔を指定します。|
 |**クラウド保護を許可する**|管理対象のデバイスからマルウェアのアクティビティに関する情報が Microsoft Active Protection Service に送信されるのを許可またはブロックします。 この情報は、将来的に本サービスの品質向上を目的として使用されます。|
@@ -203,7 +203,7 @@ Windows 10 用の Microsoft Intune **全般構成ポリシー**を使用して�
 |**スキャンの実行中、またはリアルタイム保護の使用時に除外するプロセス**|**.exe**、**.com**、**.scr** などの種類のプロセスを、除外リストに 1 つ以上追加します。 これらのプロセスは、リアルタイムまたはスケジュールされたスキャンの対象外となります。|
 
 
-### <a name="updates"></a>Updates
+### <a name="updates"></a>更新プログラム
 
 |設定の名前|追加情報 (必要な場合)|
 |----------------|---------------|

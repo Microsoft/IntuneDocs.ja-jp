@@ -1,30 +1,30 @@
 ---
-title: "Android for Work コンプライアンス ポリシーを作成する"
+title: Android for Work コンプライアンス ポリシーを作成する
 titleSuffix: Microsoft Intune
-description: "デバイスが準拠するために満たす必要のある要件を指定できるように、Android for Work デバイスの Intune デバイス コンプライアンス ポリシーを作成します。"
-keywords: 
+description: デバイスが準拠するために満たす必要のある要件を指定できるように、Android for Work デバイスの Intune デバイス コンプライアンス ポリシーを作成します。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ca31d4c83ccc6b786933080b96f66953cf1a108
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 00fa4508cdd4e74a20205ce46025b414cc0bb4cf
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Intune で Android for Work デバイス用のデバイス コンプライアンス ポリシーを作成する方法
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Android for Work の Intune デバイス コンプライアンス ポリシーでは、準拠しているものと見なされるために Android for Work デバイスが満たす必要のあるルールと設定を指定します。 条件付きアクセスでこれらのポリシーを使って、会社のリソースへのアクセスを許可またはブロックすることができ、デバイスのレポートを取得したり、コンプライアンスへの非対応に対処したりすることができます。 デバイス コンプライアンス ポリシーは、Intune Azure Portal でプラットフォームごとに作成します。 コンプライアンス ポリシーと、コンプライアンス ポリシーを作成する前に対応する必要がある前提条件について詳しくは、[デバイス コンプライアンスの概要](device-compliance-get-started.md)に関するページをご覧ください。
 
@@ -52,7 +52,7 @@ Android for Work の Intune デバイス コンプライアンス ポリシー�
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Azure Portal でコンプライアンス ポリシーを作成する
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 1. **[Intune]** ウィンドウで、**[デバイスのポリシー準拠]** を選択します。 **[管理]** で **[ポリシー]** を選択し、**[ポリシーの作成]** を選択します。
 2. 名前と説明を入力し、このポリシーを適用するプラットフォームを選択します。
 3. **[Settings Configure]\(設定の構成\)** を選択して、**[システム セキュリティ]**、**[デバイスの正常性]**、**[デバイスのプロパティ]** の設定を指定します。 終了したら、**[OK]** を選択します。
@@ -66,7 +66,7 @@ Android for Work の Intune デバイス コンプライアンス ポリシー�
 
 ## <a name="assign-user-groups"></a>ユーザー グループを割り当てる
 
-コンプライアンス ポリシーをユーザーに割り当てるには、構成したポリシーを選択します。 既存のポリシーは、**[デバイスのポリシー準拠 – ポリシー]** ウィンドウで確認できます。
+コンプライアンス ポリシーをユーザーに割り当てるには、構成したポリシーを選択します。 既存のポリシーは、**[デバイスのポリシー準拠 - ポリシー]** ウィンドウで確認できます。
 
 1. ユーザーに割り当てるポリシーを選択し、**[割り当て]** を選択します。 これにより表示されたウィンドウで、**Azure Active Directory セキュリティ グループ**を選択してポリシーに割り当てることができます。
 2. **[選択したグループ]** を選択すると、ウィンドウが開いて Azure AD セキュリティ グループが表示されます。  **[保存]** を選択すると、ポリシーがユーザーに展開されます。
@@ -92,7 +92,7 @@ Android for Work の Intune デバイス コンプライアンス ポリシー�
 - **パスワードの有効期限 (日数):** 新しいパスワードの作成が必要となるまでのユーザーのパスワードの有効日数を選択します。
 - **パスワードの履歴を記憶する**: この設定を **[前のパスワードの再利用を防止]** と組み合わせて使用することで、以前使用されていたパスワードをユーザーが作成することを制限します。
 - **前のパスワードの再利用を防止:** **[パスワードの履歴を保存する]** が選択されている場合は、再利用できない、以前に使用されていたパスワードの数を指定します。
-- **デバイスがアイドル状態から戻るときにパスワードを必須とする:**この設定は、**[デバイスの画面がロックされるまでの非アクティブな時間 (分)]** 設定と共に使用する必要があります。 エンドユーザーは、**[デバイスの画面がロックされるまでの非アクティブな時間 (分)]** 設定で指定された時間非アクティブの状態が続いたデバイスにアクセスしようとすると、パスワードを入力するように求められます。
+- **デバイスがアイドル状態から戻るときにパスワードを必須とする:** この設定は、**[デバイスの画面がロックされるまでの非アクティブな時間 (分)]** 設定と共に使用する必要があります。 エンドユーザーは、**[デバイスの画面がロックされるまでの非アクティブな時間 (分)]** 設定で指定された時間非アクティブの状態が続いたデバイスにアクセスしようとすると、パスワードを入力するように求められます。
 
 
 ### <a name="encryption"></a>暗号化

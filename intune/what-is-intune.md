@@ -1,36 +1,36 @@
 ---
-title: "Azure Portal での Intune の概要"
-titlesuffix: 
-description: "Microsoft Intune は、Azure Portal で使用できます。 Azure Portal での Intune の概要について説明します。"
-keywords: 
+title: Azure Portal での Intune の概要
+titlesuffix: ''
+description: Microsoft Intune は、Azure Portal で使用できます。 Azure Portal での Intune の概要について説明します。
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: c9c8485a3ab68be745c8903659df0fd35af2a644
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.custom: ''
+ms.openlocfilehash: 4dee2c2204b90a35f0b03e2cd78a6662f67f680d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Azure Portal での Microsoft Intune の概要
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 他の Azure サービスと同様に、Microsoft Intune は Azure Portal で使用できます。 Azure Portal で **[Intune]** を選択すると、組織のモバイル デバイス、PC、およびアプリを管理することができます。
 
->[!NOTE] 
+> [!NOTE]
 > 以前のバージョンの Microsoft Intune を使用している場合は、次の情報が役立ちます。
-    * [Azure での Intune の機能の移動先](ui-changes.md)は、Azure への移行で変更された特定のワークフローと UI を示すリファレンスです。
-    * [Azure Portal での Intune クラシック グループ](groups-get-started.md)は、グループを管理するための Azure Active Directory セキュリティ グループへの切り替えの影響について説明します。
+>     * [Azure での Intune の機能の移動先](ui-changes.md)は、Azure への移行で変更された特定のワークフローと UI を示すリファレンスです。
+>     * [Azure Portal での Intune クラシック グループ](groups-get-started.md)は、グループを管理するための Azure Active Directory セキュリティ グループへの切り替えの影響について説明します。
 
 Azure Portal での Microsoft Intune のエクスペリエンスの概要を以下に示します。
 

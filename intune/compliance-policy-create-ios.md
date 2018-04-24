@@ -14,15 +14,15 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b05eb725adb61ae47a24ca884d0e73ffe0dd269f
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 887f45cdc79aa5e45de3e8a1df5d12665d2ed8ab
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Intune で iOS デバイス用のデバイス コンプライアンス ポリシーの追加
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune iOS デバイス コンプライアンス ポリシーでは、iOS デバイスが準拠する必要のあるルールと設定を定義します。 デバイスのコンプライアンス ポリシーと共に条件付きアクセスを使用すると、会社のリソースへのアクセスを許可したり、ブロックしたりできます。 コンプライアンス違反に対して、デバイス レポートを取得したり、是正措置を取ったりすることもできます。 デバイス コンプライアンス ポリシーは、Intune Azure Portal でプラットフォームごとに作成できます。 コンプライアンス ポリシーと、コンプライアンス ポリシーを作成する前に必要な前提条件については、「[Intune のデバイス コンプライアンス ポリシーの概要](device-compliance-get-started.md)」をご覧ください。
 

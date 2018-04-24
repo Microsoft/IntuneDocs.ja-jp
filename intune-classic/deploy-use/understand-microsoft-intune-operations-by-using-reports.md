@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 919178b20094cb210b3d0b05c42b9b7d97759637
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b49f9d94e800a068015a357aaf105a92bb5882cc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>Understand Microsoft Intune operations by using reports
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 このトピックの情報を使用して、組織内のソフトウェア、ハードウェア、およびソフトウェア ライセンスに関する情報が記載された Microsoft Intune レポートを作成および管理することができます。
 
@@ -67,7 +67,7 @@ Intune レポートには、組織内のソフトウェア、ハードウェア�
 |----------|--------------------|
 |**印刷**|開いているレポートの印刷アイコンを選択し、指示に従います。|
 |**エクスポート**|開いているレポートのエクスポート アイコンを選択し、指示に従います。 コンマ区切り値 (.csv) または HTML 形式にレポートをエクスポートできます。|
-|**保存**|**[新しいレポートの作成]** ページで、各ユーザーは最大 100 レポートを保存できます。 要件に応じたレポート パラメーターを構成し、**[保存]**を選択するか、別の名前を使用する場合は **[名前を付けて保存]** を選択します。|
+|**保存**|**[新しいレポートの作成]** ページで、各ユーザーは最大 100 レポートを保存できます。 要件に応じたレポート パラメーターを構成し、**[保存]** を選択するか、別の名前を使用する場合は **[名前を付けて保存]** を選択します。|
 |**読み込み**|以前に保存したレポート パラメーターを取得する場合は、**[新しいレポートの作成]** ページで **[読み込み]** を選択します。|
 |**削除**|**[レポート]** ワークスペースで、目的のレポートの種類を選択して **[読み込み]** を選択します。 次に、レポートの一覧で、レポートの横にある削除 (x) アイコンを選択します。|
 

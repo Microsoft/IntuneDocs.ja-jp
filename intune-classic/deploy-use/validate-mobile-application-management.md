@@ -1,28 +1,28 @@
 ---
-title: "MAM 設定を確認する"
-description: "このトピックでは、MAM ポリシーが正しく設定され、想定通りに動作するかをテストし、確認する方法を説明します。"
-keywords: 
+title: MAM 設定を確認する
+description: このトピックでは、MAM ポリシーが正しく設定され、想定通りに動作するかをテストし、確認する方法を説明します。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angerobe
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.custom: intune-classic
-ms.openlocfilehash: e0cb44177f830236865dce0ab68bb1084fcebc2d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6f11c2f2af53813040417a8f40e983b5c88d5189
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="validating-your-mobile-application-management-setup"></a>モバイル アプリケーション管理のセットアップの検証
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 このトピックでは、モバイル アプリケーション管理 (MAM) を設定した後の問題の確認について説明します。 このガイドは、Azure Portal の MAM ポリシーに適用されます。
 
@@ -39,11 +39,11 @@ MAM はデータ保護ツールであるため、ユーザーが問題を報告�
 - 各ユーザーの MAM アプリの状態。 アプリの状態は、**[確認済み]** か **[未確認]** のはずです。
 
 #### <a name="user-mam-status"></a>ユーザーの MAM の状態
-1. Azure Portal で、**[Intune mobile application management (Intune モバイル アプリケーション管理)]** > **[設定]** > **[アプリ管理]** > **[すべての設定]** > **[App reporting by user (ユーザーによるアプリ レポート)]** > **[ユーザー]**を選択します。
+1. Azure Portal で、**[Intune mobile application management (Intune モバイル アプリケーション管理)]** > **[設定]** > **[アプリ管理]** > **[すべての設定]** > **[App reporting by user (ユーザーによるアプリ レポート)]** > **[ユーザー]** を選択します。
 
 2. 一覧からユーザーを選択または検索し、ユーザーを選択して、**[ユーザーの選択]** を選択します。 **アプリ レポート**列の最上部で、ユーザーが MAM のライセンスを取得しているかどうかを確認します。 その下に、ユーザーが O365 のライセンスを取得しているかどうか、またすべてのユーザーのデバイスのアプリの状態が表示されます。
 
-![MAM のアプリの状態](..\media\ts-mam-user-apps.png)
+![MAM のアプリの状態](../media/ts-mam-user-apps.png)
 
 ### <a name="what-to-do"></a>対処
 ユーザーの状態に基づいて実行するアクションを次に示します。
@@ -54,6 +54,6 @@ MAM はデータ保護ツールであるため、ユーザーが問題を報告�
 - MAM ポリシーを適用するすべてのユーザーに、これらの条件が適用されていることを確認します。
 
 ### <a name="see-also"></a>関連項目
-[Microsoft Intune でのモバイル アプリ管理ポリシーの作成および展開](..\deploy-use\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+[Microsoft Intune でのモバイル アプリ管理ポリシーの作成および展開](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
-[Microsoft Intune でモバイル アプリケーション管理ポリシーを使用してデータを保護する](..\deploy-use\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+[Microsoft Intune でモバイル アプリケーション管理ポリシーを使用してデータを保護する](../deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

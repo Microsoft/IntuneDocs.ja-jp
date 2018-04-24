@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8e023035dabea653b289b767ff08801b13068a9e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: f8590fc524e770536a66c604add2ce82d0c28afc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-groups-to-organize-users-and-devices"></a>ユーザーとデバイスを編成するグループを作成する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 このトピックでは、管理者が Intune でユーザーのグループを作成する方法を説明します。
 
@@ -73,7 +73,7 @@ Intune の [グループ] を使用すると、デバイスとユーザーを柔
 
 2.  **[グループ名]** に「Intune Users」と入力し、親グループ一覧から、**[すべてのユーザー]** を選択して、**[次へ]** を選択します。
 
-3.  **[メンバーシップの基準の定義]** ページで、 **[グループのメンバーシップ]** を **[親グループのすべてのユーザー]**に設定します。
+3.  **[メンバーシップの基準の定義]** ページで、 **[グループのメンバーシップ]** を **[親グループのすべてのユーザー]** に設定します。
 
 4.  **[メンバーを除外するセキュリティ グループ]** の横の **[参照]** を選択し、**[Company Administrator]** を選択します。 この除外設定により、Company Administrator アカウント (またはテナント管理者) に影響することなく、Intune Users グループを管理できます。
 
@@ -83,5 +83,5 @@ Intune の [グループ] を使用すると、デバイスとユーザーを柔
 
 新しく作成したグループは、**[グループ]** 一覧の **[グループ]** ワークスペースにある **[すべてのユーザー]** の下に表示されます。 ここから、グループを編集または削除することもできます。
 
->[!div class="step-by-step"]
-/intune/licenses-assign [&larr; **Intune のライセンスを管理する**](/intune/licenses-assign) [**ポリシーとアプリを作成する** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
+> [!div class="step-by-step"]
+> /intune/licenses-assign [&larr; **Intune のライセンスを管理する**](/intune/licenses-assign) [**ポリシーとアプリを作成する** &rarr;](./start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  

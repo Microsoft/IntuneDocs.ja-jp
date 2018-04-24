@@ -1,25 +1,25 @@
 ---
-title: "SharePoint Online を保護する"
-description: "条件付きアクセスを使って、SharePoint Online の会社データへのアクセスを保護および制御します。"
-keywords: 
+title: SharePoint Online を保護する
+description: 条件付きアクセスを使って、SharePoint Online の会社データへのアクセスを保護および制御します。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 2b7285c272efac8eab406393b0b896795fa5d8ed
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>Microsoft Intune で SharePoint Online へのアクセスを保護する
 
@@ -174,9 +174,9 @@ SharePoint Online ポリシーには、次の 2 つのグループの種類を�
    **Android**
 
    ![Android デバイス上の証明書プロンプトのスクリーンショット](../media/mdm-browser-ca-android-cert-prompt.png)
-5. **[対象グループ]**で、**[変更]** を選択して、ポリシーを適用する Azure Active Directory セキュリティ グループを選択します。 すべてのユーザーを対象にすることも、選んだユーザーのグループのみを対象にすることもできます。
+5. **[対象グループ]** で、**[変更]** を選択して、ポリシーを適用する Azure Active Directory セキュリティ グループを選択します。 すべてのユーザーを対象にすることも、選んだユーザーのグループのみを対象にすることもできます。
 
-6. **[例外グループ]**で、必要に応じて **[変更]** を選択して、このポリシーから除外する Azure Active Directory セキュリティ グループを選択します。
+6. **[例外グループ]** で、必要に応じて **[変更]** を選択して、このポリシーから除外する Azure Active Directory セキュリティ グループを選択します。
 
 7. 終了したら、**[保存]** を選択します。
 

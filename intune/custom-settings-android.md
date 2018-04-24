@@ -1,28 +1,28 @@
 ---
-title: "Microsoft Intune で Android デバイス向けのカスタム設定を追加する - Azure | Microsoft Docs"
-description: "事前共有キーを使った WiFi プロファイルの作成、アプリごとの VPN プロファイルの作成、Samsung Knox Standard デバイスのアプリの許可/拒否などを Microsoft Intune で行うには、Android デバイス用のカスタム プロファイルを追加または作成します"
-keywords: 
+title: Microsoft Intune で Android デバイス向けのカスタム設定を追加する - Azure | Microsoft Docs
+description: 事前共有キーを使った WiFi プロファイルの作成、アプリごとの VPN プロファイルの作成、Samsung Knox Standard デバイスのアプリの許可/拒否などを Microsoft Intune で行うには、Android デバイス用のカスタム プロファイルを追加または作成します
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa105cc96cd0fa7d8c6beb32cdb80b7782d9828c
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: 0195e138b59fae019fa2bc02aadf211257a65cac
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-settings-for-android-devices---intune"></a>Android デバイス向けのカスタム設定 - Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 カスタム プロファイルでは、Open Mobile Alliance Uniform Resource Identifier (OMA-URI) 設定を使って、Android デバイスのさまざまな機能を構成します。 通常、これらの設定は、デバイスの機能を制御するためにモバイル デバイスの製造元によって使われます。
 
@@ -43,11 +43,11 @@ ms.lasthandoff: 03/09/2018
 4. **[OMA-URI のカスタム設定]** で **[追加]** を選択し、**[行の追加]** を選択します。
 5. 次のプロパティを入力します。
 
-  - **[名前]** - 簡単に見つけられるように、OMA-URI 設定の一意の名前を入力します。
-  - **[説明]** - 設定の概要および他の重要な詳細がわかる説明を入力します。
-  - **[データ型]** - この OMA-URI 設定に使うデータ型を入力します。 **[文字列]**、**[文字列 (XML)]**、**[日付と時刻]**、**[整数]**、**[浮動小数点]**、または **[ブール値]** から選択します。
-  - **[OMA-URI]** - 必要な OMA-URI を入力します。
-  - **[値]** - 入力した OMA-URI に関連付ける値を入力します。
+   - **[名前]** - 簡単に見つけられるように、OMA-URI 設定の一意の名前を入力します。
+   - **[説明]** - 設定の概要および他の重要な詳細がわかる説明を入力します。
+   - **[データ型]** - この OMA-URI 設定に使うデータ型を入力します。 **[文字列]**、**[文字列 (XML)]**、**[日付と時刻]**、**[整数]**、**[浮動小数点]**、または **[ブール値]** から選択します。
+   - **[OMA-URI]** - 必要な OMA-URI を入力します。
+   - **[値]** - 入力した OMA-URI に関連付ける値を入力します。
 
 6. **[OK]** を選択して変更を保存します。 必要に応じて他の設定の追加を続けます。
 
