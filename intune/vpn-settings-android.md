@@ -1,27 +1,27 @@
 ---
-title: "Android を実行するデバイス用の Microsoft Intune の VPN 設定"
-titlesuffix: 
-description: "Android を実行するデバイスでの VPN 接続の構成に使用できる Intune 設定について説明します"
-keywords: 
+title: Android を実行するデバイス用の Microsoft Intune の VPN 設定
+titlesuffix: ''
+description: Android を実行するデバイスでの VPN 接続の構成に使用できる Intune 設定について説明します
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 909c014e1d68c26c1440c2b924e05dbaabbde5e5
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 7c3b4964baec0ae957cfb392843ce527bf13934e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-android"></a>Android を実行するデバイス用の Microsoft Intune で VPN 設定を構成する 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 この記事では、Android を実行するデバイスでの VPN 接続の構成に使用できる Intune 設定を示します。
 

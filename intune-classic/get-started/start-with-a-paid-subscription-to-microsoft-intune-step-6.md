@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3da91a23a3aaa7da4f914bb04eda9a2f640db733
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5283d040c7b4c39c495a13a71643b6569eed09bd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-policies-and-publish-apps"></a>ポリシーを作成してアプリを発行する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 このトピックでは、Intune 管理者がポリシーを作成し、アプリを発行した後、管理対象デバイスにデプロイする方法を説明します。
 
@@ -63,12 +63,12 @@ Intune にアプリを追加した後で、次の 2 つの方法で管理対象�
 これで、アプリが Intune で使用できるようになりました。管理対象デバイスに展開できます。
 - [デバイスにアプリを展開する](/intune-classic/deploy-use/deploy-use/deploy-apps-in-microsoft-intune)
 - 以下のボリューム購入アプリを展開します。
-    - [iOS - ボリューム購入プログラム](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
-    - [ビジネス向け Microsoft ストア](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
-    - [Android for Work](/intune-classic/deploy-use/android-for-work-apps)
+  - [iOS - ボリューム購入プログラム](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
+  - [ビジネス向け Microsoft ストア](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+  - [Android for Work](/intune-classic/deploy-use/android-for-work-apps)
 
     展開用にアプリを構成したら、[アプリを構成](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune)できます。
 
->[!div class="step-by-step"]
-
->[&larr;**ユーザーとデバイスを整理する**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**ポータル サイトをカスタマイズする** &rarr;](/intune/company-portal-customize)  
+> [!div class="step-by-step"]
+> 
+> [&larr;**ユーザーとデバイスを整理する**](./start-with-a-paid-subscription-to-microsoft-intune-step-5.md)       [**ポータル サイトをカスタマイズする** &rarr;](/intune/company-portal-customize)  

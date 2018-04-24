@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b5d2ec278d182f3d9dbe03fbdf86791b59debf79
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 52cba4de7d19744e1a011071ac6c9bbb168ffb30
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-in-the-azure-portal"></a>Azure ポータルでアプリ保護ポリシーを構成する準備をする
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 このトピックでは、Azure ポータルでアプリ保護ポリシーを作成する**前に**完了しておく必要がある前提条件と手順について説明します。
 
@@ -74,18 +74,18 @@ Intune 管理コンソールでアプリ ポリシーを作成する方法につ
 
 ## <a name="prerequisites"></a>必要条件
 
--   **Microsoft Intune サブスクリプション**。 アプリ保護ポリシーが適用されているアプリを入手するには、Intune ライセンスが必要です。
-デバイスを管理するために現在 Intune を使用している場合、既に Intune サブスクリプションを所有していることになります。 Enterprise Mobility Suite (EMS) ライセンスを購入している場合も、Intune サブスクリプションを所有しています。 MAM 機能を調べるために Intune を試してみる場合は、試用アカウントを [Microsoft Intune Web ページ](https://www.microsoft.com/server-cloud/products/microsoft-intune/)から取得できます。
+- **Microsoft Intune サブスクリプション**。 アプリ保護ポリシーが適用されているアプリを入手するには、Intune ライセンスが必要です。
+  デバイスを管理するために現在 Intune を使用している場合、既に Intune サブスクリプションを所有していることになります。 Enterprise Mobility Suite (EMS) ライセンスを購入している場合も、Intune サブスクリプションを所有しています。 MAM 機能を調べるために Intune を試してみる場合は、試用アカウントを [Microsoft Intune Web ページ](https://www.microsoft.com/server-cloud/products/microsoft-intune/)から取得できます。
 
-    自分が Intune サブスクリプションを所有しているかどうかを確認するには、Office ポータルの**課金情報**のページをご覧ください。  サブスクリプションを所有している場合は、Intune が **Active** になっているはずです。
+  自分が Intune サブスクリプションを所有しているかどうかを確認するには、Office ポータルの**課金情報**のページをご覧ください。  サブスクリプションを所有している場合は、Intune が **Active** になっているはずです。
 
--   **Office 365 サブスクリプション**。これは、以下で必要となります。
+- **Office 365 サブスクリプション**。これは、以下で必要となります。
 
   - 複数の ID をサポートするアプリにアプリ保護ポリシーを適用する。
 
   - SharePoint Online および Exchange Online 作業アカウントを作成する。 Exchange On-Premises と SharePoint On-Premises はサポートされていません。
 
--   **Skype for Business Online の先進認証の設定**。 詳細については、「[Enable modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)」 (先進認証の有効化) をご覧ください。
+- **Skype for Business Online の先進認証の設定**。 詳細については、「[Enable modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)」 (先進認証の有効化) をご覧ください。
 
 
 - ユーザーを作成するための Azure Active Directory (Azure AD)。 Azure AD では、ユーザーがアプリを開いて作業用の資格情報を入力するときに、ユーザーを認証します。

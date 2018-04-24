@@ -15,11 +15,11 @@ ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: eb9f63199063db34361c7d463b8cef37bb8bfa1f
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 317e884cd54b57f4892c4e101e206089ef335f0c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>モバイル アプリ管理 (MAM) エンティティのリファレンス
 
@@ -51,23 +51,24 @@ ms.lasthandoff: 03/16/2018
 
 **MamApplicationInstance** エンティティは、デバイス別ユーザー別の単一インスタンスとして、管理されているモバイル アプリケーション管理 (MAM) アプリを一覧表示します。 エンティティ内に一覧表示されているユーザーとデバイスはすべて、少なくとも 1 つの MAM ポリシーが割り当てられ、保護されます。
 
-| プロパティ | 説明 | 例 |
-|---------|------------|--------|
-| ApplicationInstanceKey |データ ウェアハウスにおける MAM アプリ インスタンスを示す一意識別子 - 代理キー。 |123 |
-| UserId |この MAM アプリをインストールしたユーザーのユーザー ID。 |b66bc706-ffff-7437-0340-032819502773 |
-| ApplicationInstanceId |MAM アプリ インスタンスを示す一意識別子 - ApplicationInstanceKey に似ていますが、識別子はナチュラル キーです。 |b66bc706-ffff-7437-0340-032819502773 |
-| ApplicationId |この MAM アプリのアプリケーション ID |com.microsoft.groupies-daily.<IOS> |
-| ApplicationVersion |この MAM アプリのアプリケーション バージョン。 |2 |
-| CreatedDate |MAM アプリ インスタンスのこのレコードが作成された日付 値は null を取ることができます。 |11/23/2016 12:00:00 AM |
-| プラットフォーム |この MAM アプリがインストールされているデバイスのプラットフォーム。 |2 |
-| PlatformVersion |この MAM アプリがインストールされているデバイスのプラットフォーム バージョン。 |2.2 |
-| SdkVersion |この MAM アプリをラップした MAM SDK バージョン。 |3.2 |
-| DeviceId |この MAM アプリがインストールされているデバイスのデバイス ID。 |b66bc706-ffff-7437-0340-032819502773 |
-| DeviceName |この MAM アプリがインストールされているデバイスのデバイス名。 |"MyDevice" |
-| IsDeleted |この MAM アプリ インスタンス レコードが更新されているかどうかを示します。 <br>True - この MAM アプリ インスタンスには新しいレコードがあり、そのフィールドはこのテーブルで更新されています。 <br>False - この MAM アプリ インスタンスの最新のレコード。 |真/偽 |
-| StartDateInclusiveUtc |この MAM アプリ インスタンスがデータ ウェアハウスで作成されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
-| DeletedDateUtc |IsDeleted が True に変更されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
-| RowLastModifiedDateTimeUtc |この MAM アプリ インスタンスがデータ ウェアハウスで最後に変更されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
+
+|          プロパティ          |                                                                                                  説明                                                                                                  |               例                |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|   ApplicationInstanceKey   |                                                               データ ウェアハウスにおける MAM アプリ インスタンスを示す一意識別子 - 代理キー。                                                                |                 123                  |
+|           UserId           |                                                                              この MAM アプリをインストールしたユーザーのユーザー ID。                                                                              | b66bc706-ffff-7437-0340-032819502773 |
+|   ApplicationInstanceId    |                                              MAM アプリ インスタンスを示す一意識別子 - ApplicationInstanceKey に似ていますが、識別子はナチュラル キーです。                                              | b66bc706-ffff-7437-0340-032819502773 |
+|       ApplicationId        |                                                                                        この MAM アプリのアプリケーション ID                                                                                         |  com.microsoft.groupies-daily.<IOS>  |
+|     ApplicationVersion     |                                                                                     この MAM アプリのアプリケーション バージョン。                                                                                      |                  2                   |
+|        CreatedDate         |                                                                 MAM アプリ インスタンスのこのレコードが作成された日付 値は null を取ることができます。                                                                 |        11/23/2016 12:00:00 AM        |
+|          プラットフォーム          |                                                                          この MAM アプリがインストールされているデバイスのプラットフォーム。                                                                           |                  2                   |
+|      PlatformVersion       |                                                                      この MAM アプリがインストールされているデバイスのプラットフォーム バージョン。                                                                       |                 2.2                  |
+|         SdkVersion         |                                                                            この MAM アプリをラップした MAM SDK バージョン。                                                                            |                 3.2                  |
+|          DeviceId          |                                                                          この MAM アプリがインストールされているデバイスのデバイス ID。                                                                          | b66bc706-ffff-7437-0340-032819502773 |
+|         DeviceName         |                                                                         この MAM アプリがインストールされているデバイスのデバイス名。                                                                         |              "MyDevice"              |
+|         IsDeleted          | この MAM アプリ インスタンス レコードが更新されているかどうかを示します。 <br>True - この MAM アプリ インスタンスには新しいレコードがあり、そのフィールドはこのテーブルで更新されています。 <br>False - この MAM アプリ インスタンスの最新のレコード。 |              真/偽              |
+|   StartDateInclusiveUtc    |                                                              この MAM アプリ インスタンスがデータ ウェアハウスで作成されたときの UTC 日時。                                                               |        11/23/2016 12:00:00 AM        |
+|       DeletedDateUtc       |                                                                             IsDeleted が True に変更されたときの UTC 日時。                                                                              |        11/23/2016 12:00:00 AM        |
+| RowLastModifiedDateTimeUtc |                                                           この MAM アプリ インスタンスがデータ ウェアハウスで最後に変更されたときの UTC 日時。                                                            |        11/23/2016 12:00:00 AM        |
 
 ## <a name="mamcheckin"></a>MamCheckin
 
@@ -112,20 +113,23 @@ ms.lasthandoff: 03/16/2018
 
 **MamGlobalApplication** エンティティは、企業内登録なしで、モバイル アプリケーション管理 (MAM) 経由で管理されるストア アプリを一覧表示します。
 
-| プロパティ | 説明 | 例 |
-|---------|------------|--------|
-| ApplicationKey |データ ウェアハウスにおけるストア アプリを示す一意識別子で代理キー。 |123 |
-| ApplicationId |ストア アプリを示す一意識別子。 この識別子は ApplicationKey に似ていますが、ナチュラル キーです。 |com.microsoft.skydrive.<ios> |
-| ApplicationName |MAM グローバル アプリケーション名。 |Skydrive |
-| RowLastModifiedDateTimeUtc |この特定の MAM グローバル アプリケーションがデータ ウェアハウスで最後に変更されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
+
+|          プロパティ          |                                               説明                                               |           例            |
+|----------------------------|---------------------------------------------------------------------------------------------------------|------------------------------|
+|       ApplicationKey       |          データ ウェアハウスにおけるストア アプリを示す一意識別子で代理キー。          |             123              |
+|       ApplicationId        | ストア アプリを示す一意識別子。 この識別子は ApplicationKey に似ていますが、ナチュラル キーです。  | com.microsoft.skydrive.<ios> |
+|      ApplicationName       |                                      MAM グローバル アプリケーション名。                                       |           Skydrive           |
+| RowLastModifiedDateTimeUtc | この特定の MAM グローバル アプリケーションがデータ ウェアハウスで最後に変更されたときの UTC 日時。 |    11/23/2016 12:00:00 AM    |
 
 ## <a name="mamplatform"></a>MamPlatform
 
 **MamPlatform** エンティティは、モバイル アプリケーション管理 (MAM) アプリがインストールされたプラットフォームの名前と種類を一覧表示します。
 
-| プロパティ | 説明 | 例 |
-|---------|------------|--------|
-| PlatformKey |データ ウェアハウスにおけるプラットフォームを示す一意識別子 - 代理キー。 |123 |
-| プラットフォーム |プラットフォームを示す一意識別子 - PlatformKey に似ていますが、ナチュラル キーです。 |123 |
-| PlatformName |プラットフォームの名前 |利用不可 <br>なし <br>Windows <br>iOS <br>Android。 |
-| RowLastModifiedDateTimeUtc |このプラットフォームがデータ ウェアハウスで最後に変更されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
+
+|          プロパティ          |                                    説明                                    |                         例                         |
+|----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
+|        PlatformKey         |     データ ウェアハウスにおけるプラットフォームを示す一意識別子 - 代理キー。      |                           123                           |
+|          プラットフォーム          | プラットフォームを示す一意識別子 - PlatformKey に似ていますが、ナチュラル キーです。 |                           123                           |
+|        PlatformName        |                                   プラットフォームの名前                                   | 利用不可 <br>なし <br>Windows <br>iOS <br>Android。 |
+| RowLastModifiedDateTimeUtc | このプラットフォームがデータ ウェアハウスで最後に変更されたときの UTC 日時。  |                 11/23/2016 12:00:00 AM                  |
+

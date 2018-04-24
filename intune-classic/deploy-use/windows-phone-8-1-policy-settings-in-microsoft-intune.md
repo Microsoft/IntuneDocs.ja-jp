@@ -1,25 +1,25 @@
 ---
-title: "Windows Phone 8.1 ポリシー設定"
-description: "Intune には、Windows Phone 8.1 デバイスで構成できるさまざまな全般設定が組み込まれています。 また、OMA-URI 値を指定して、Intune にはないユーザー設定を作成できます。"
-keywords: 
+title: Windows Phone 8.1 ポリシー設定
+description: Intune には、Windows Phone 8.1 デバイスで構成できるさまざまな全般設定が組み込まれています。 また、OMA-URI 値を指定して、Intune にはないユーザー設定を作成できます。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: b44215e301bb712cc4d27722515d2e51b124101b
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-phone-81-policy-settings-in-microsoft-intune"></a>Microsoft Intune の Windows Phone 8.1 ポリシー設定
 
@@ -141,7 +141,7 @@ Microsoft Intune の **Windows Phone 全般構成ポリシー (Windows Phone 8.1
 
 アプリのページを開き、URL をクリップボードにコピーします。 許可されているアプリまたはブロックされているアプリの一覧で、これを URL として使用できます。
 
-**例:** Skype アプリのストアを検索します。 **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51** という URL を使用します。
+**例:** Skype アプリのストアを検索します。 使用する URL は **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51** になります。
 
 ## <a name="custom-policy-settings"></a>カスタム ポリシー設定
 Microsoft Intune **Windows Phone カスタム構成ポリシー**を使用して、**Windows Phone 8.1 デバイス**で各機能の制御に使用できる OMA-URI 設定を展開します。 これらの設定は、多くのデバイス製造元がデバイスの機能を制御するために使用する標準の設定です。

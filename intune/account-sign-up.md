@@ -14,15 +14,15 @@ ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8858768586398d3dbb341c9963727df5faf9da15
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 14a295828a332b45e1cb0bc6d9b3b97bef5a3a59
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>Microsoft Intune にサインアップまたはサインインする
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 このトピックでは、システム管理者が Intune アカウントにサインアップする方法を説明します。
 
@@ -35,11 +35,11 @@ Intune にサインアップする前に、Microsoft Online Services アカウ�
 
 ## <a name="how-to-sign-up-or-sign-in-to-intune"></a>Intune にサインアップまたはサインインする方法
 
-1.  [Intune のサインアップ ページ](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)にアクセスします。
+1. [Intune のサインアップ ページ](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)にアクセスします。
 
-  ![Microsoft Intune 試用版アカウントのサインアップ Web ページのスクリーンショット](./media/account-sign-up-site.png)
+   ![Microsoft Intune 試用版アカウントのサインアップ Web ページのスクリーンショット](./media/account-sign-up-site.png)
 
-2.  サインアップ ページで、Intune の新しいサブスクリプションを管理するために、サインアップまたはサインインします。
+2. サインアップ ページで、Intune の新しいサブスクリプションを管理するために、サインアップまたはサインインします。
 
 ## <a name="post-sign-up-considerations"></a>サインアップ後の考慮事項
 新しいサブスクリプションにサインアップした後、アカウント情報の記載されたメール メッセージが、サインアップ過程で登録したメール アドレスに送信されます。 このメールで、サブスクリプションがアクティブになったことが確認されます。

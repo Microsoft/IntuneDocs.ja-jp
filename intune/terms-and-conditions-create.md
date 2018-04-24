@@ -1,29 +1,29 @@
 ---
-title: "Microsoft Intune の使用条件の設定"
-titlesuffix: 
-description: "Intune 用ポータル サイトでユーザーに表示する使用条件を設定します。"
-keywords: 
+title: Microsoft Intune の使用条件の設定
+titlesuffix: ''
+description: Intune 用ポータル サイトでユーザーに表示する使用条件を設定します。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8fb386948d14fcbd26cffcd1b531b6ae61e9d669
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 550d9c457335f212f0b60c16249e45f22f5baaf5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-your-companys-terms-and-conditions-for-user-access"></a>ユーザー アクセスに関する会社の使用条件を管理する
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune 管理者は、ユーザーが会社の使用条件に同意しないと、ポータル サイトで自分のデバイスの登録や会社のアプリや電子メールなどのリソースへのアクセスができないという要件を設定できます。 使用条件の構成は任意です。
 

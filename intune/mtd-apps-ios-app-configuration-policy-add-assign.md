@@ -1,25 +1,25 @@
 ---
-title: "MTD アプリを追加し、Microsoft Intune に割り当てる"
-titleSuffix: 
-description: "Intune を使用し、Mobile Threat Defense (MTD) アプリ、Microsoft Authenticator アプリ、iOS 構成ポリシーを Azure Portal で追加します。"
-keywords: 
+title: MTD アプリを追加し、Microsoft Intune に割り当てる
+titleSuffix: ''
+description: Intune を使用し、Mobile Threat Defense (MTD) アプリ、Microsoft Authenticator アプリ、iOS 構成ポリシーを Azure Portal で追加します。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3fc71620fee1b1df907a4027c1c57cd91b53032e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 08cebf84443e65ded5f7884218fbe17d722bddf2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune で Mobile Threat Defense (MTD) アプリを追加して割り当てる
 
@@ -75,7 +75,7 @@ Lookout for Work iOS アプリに再署名する詳細な手順については�
 次の手順を実行して、iOS ユーザーの Azure Active Directory 認証を有効にします。
 
 1. [Azure Portal](https://portal.azure.com) に移動し、資格情報でサインインして、アプリケーションのページに移動します。
-  
+
 2. **ネイティブ クライアント アプリケーション**として **Lookout for Work iOS アプリ**を追加します。
 
 3. **com.lookout.enterprise.yourcompanyname** は、IPA に署名したときに選択したカスタマー バンドル ID で置き換えます。
@@ -133,13 +133,13 @@ Lookout for Work iOS アプリに再署名する詳細な手順については�
 
 -   iOS アプリ構成ポリシーのファイルは次のようにして**ダウンロードする**必要があります。 
     -   [Skycure Management コンソール](https://aad.skycure.com)に移動して、管理者資格情報でサインインします。
-    
+
     -   **[設定]** &gt; **[Device Management Integrations (デバイス管理統合)]** &gt; **[EMM Integration Selection (EMM 統合選択)]** の順に進み、**[Microsoft Intune]** を選択し、選択を保存します。
-    
+
     -   **[Integration setup files (統合セットアップ ファイル)]** リンクをクリックし、生成された \*.zip ファイルを保存します。 この .zip ファイルには **skycure\_configuration.plist** ファイルが含まれます。このファイルを利用し、Intune で iOS アプリ構成ポリシーが作成されます。
-    
+
     -   [iOS 用 Microsoft Intune アプリ構成ポリシーを使用する](app-configuration-policies-use-ios.md)手順に従って、Skycure iOS アプリ構成ポリシーを追加します。
-    
+
     - **手順 8** で、**[XML データを入力する]** オプションを使用して内容を **skycure_configuration.plist** ファイルからコピーして、構成ポリシーの本文に貼り付けます。
 
 **skycure_configuration.plist** の内容は以下からコピーすることもできます。
@@ -151,7 +151,6 @@ Lookout for Work iOS アプリに再署名する詳細な手順については�
     <key>UserEmail</key>
     <string>{{userprincipalname}}</string>
 </dict>
-
 ```
 ### <a name="for-check-point-sandblast-mobile"></a>Check Point SandBlast Mobile の場合
 
@@ -160,7 +159,6 @@ Lookout for Work iOS アプリに再署名する詳細な手順については�
 
 ```
 <dict><key>MDM</key><string>INTUNE</string></dict>
-
 ```
 
 ### <a name="for-zimperium"></a>Zimperium の場合
@@ -179,7 +177,6 @@ Lookout for Work iOS アプリに再署名する詳細な手順については�
 <key>udidlast4digits</key>
 <string>{{udidlast4digits}}</string>
 </dict>
-
 ```
 
 ## <a name="to-assign-apps-all-mtd-partners"></a>アプリを割り当てるには (すべての MTD パートナー)

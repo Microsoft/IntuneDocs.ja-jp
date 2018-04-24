@@ -1,28 +1,28 @@
 ---
-title: "Intune を使用してアプリベースの条件付きアクセス ポリシーをセットアップする"
-description: "Intune を使用してアプリベースの条件付きアクセス ポリシーを作成する方法について説明します。"
-keywords: 
+title: Intune を使用してアプリベースの条件付きアクセス ポリシーをセットアップする
+description: Intune を使用してアプリベースの条件付きアクセス ポリシーを作成する方法について説明します。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5ab442f49e0eabc4162bd2f56865ed42d96ae5db
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: b7e3654021935495189b62da5257793383586137
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Intune を使用してアプリ ベースの条件付きアクセス ポリシーをセットアップする
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 この記事では、承認済みアプリの一覧に含まれるアプリにアプリベースの条件付きアクセス ポリシーをセットアップする方法について説明します。 承認済みのアプリの一覧は、Microsoft によってテストされたアプリで構成されます。
 

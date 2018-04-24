@@ -1,29 +1,29 @@
 ---
-title: "Microsoft Intune を使用して Windows デバイスの登録をセットアップする"
-titlesuffix: 
-description: "Windows デバイスの登録をセットアップします。"
-keywords: 
+title: Microsoft Intune を使用して Windows デバイスの登録をセットアップする
+titlesuffix: ''
+description: Windows デバイスの登録をセットアップします。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 896c984cb5831dc84a041d4ad39e4cdf6819f0f8
-ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
+ms.openlocfilehash: e2759146634f16e5d92ca8c497aa2856f071a679
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows デバイスの登録をセットアップする
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 このトピックは IT 管理者がユーザーの Windows の登録を簡略化する際に役立ちます。 [Intune が設定](setup-steps.md)されたら、ユーザーは職場または学校のアカウントで[サインイン](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)し、Windows デバイスを登録します。  
 
@@ -48,7 +48,7 @@ Windows デバイスの登録を簡略化する方法は、次の 2 つの要素
 **マルチユーザー サポート**<br>
 Windows 10 Creators Update を実行し Azure Active Directory ドメインに参加するデバイスが、Intune のマルチユーザー管理でサポートされるようになりました。 標準ユーザーが自分の Azure AD 資格情報でログオンするとき、自分のユーザー名に割り当てられているアプリとポリシーが与えられます。 現時点では、アプリのインストールのようなセルフサービスのシナリオにポータル サイトは使用できません。
 
-[!INCLUDE[AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
+[!INCLUDE [AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>Azure AD Premium なしで Windows 登録を簡略化する
 ドメイン ネーム サーバー (DNS) エイリアス (CNAME レコード タイプ) を作成することで、ユーザーのために登録を簡略化できます。DNS エイリアスは自動的に Intune サーバーに要求をリダイレクトします。 DNS CNAME リソース レコードを作成しない場合、Intune に接続するユーザーは、登録時、Intune サーバー名を入力する必要があります。

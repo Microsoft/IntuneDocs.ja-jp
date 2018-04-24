@@ -1,31 +1,29 @@
 ---
-title: "iOS 用 Symantec Endpoint Protection Mobile が検出した脅威を解決する | Microsoft ドキュメント"
-description: "iOS デバイスで検出された脅威を解決する方法について説明します。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: iOS 用 Symantec Endpoint Protection Mobile が検出した脅威を解決する | Microsoft ドキュメント
+description: iOS デバイスで検出された脅威を解決する方法について説明します。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 04/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b40595f0-a399-4aa1-aa6f-344c2a1cb883
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: d85fd82d4af0c35c6bd6cd9bf329c5d981b6693b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e8efab6aea68802da0df9b24a75812918e255a57
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Symantec Endpoint Protection Mobile で検出された脅威を解決する
 
-Symantec Endpoint Protection Mobile がデバイスで潜在的な脅威を検出したら、問題を解決して会社または学校のメール、アプリ、ファイルに再びアクセスできるようにする必要があります。 表示されるメッセージは、次のようになります。
-
-![Symantec Endpoint Protection Mobile のコンプライアンス違反メッセージ](./media/ios-skycure-noncompliant-in-ssp.png)
+Symantec Endpoint Protection Mobile がデバイスで潜在的な脅威を検出したら、問題を解決して会社または学校のメール、アプリ、ファイルに再びアクセスできるようにする必要があります。 
 
 この問題を解決するには、Symantec Endpoint Protection Mobile アプリを開き、アプリの指示に従います。
 

@@ -1,25 +1,25 @@
 ---
-title: "Microsoft Intune で iOS デバイスにアプリごとの VPN を設定する"
-titleSuffix: 
-description: "管理対象のどのアプリが Intune で管理される iOS デバイスで仮想プライベート ネットワーク (VPN) を使用できるかを指定することができます。"
-keywords: 
+title: Microsoft Intune で iOS デバイスにアプリごとの VPN を設定する
+titleSuffix: ''
+description: 管理対象のどのアプリが Intune で管理される iOS デバイスで仮想プライベート ネットワーク (VPN) を使用できるかを指定することができます。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d2839a11f95614add0691813a9fdf89dba0a2d5d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1b28f809c924ec2699647a3cc377b3bdde86afe5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Intune での iOS デバイス用のアプリごとの Virtual Private Network (VPN) 設定
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 03/08/2018
 アプリごとの VPN にアクセスできるメンバーが含まれるように、Azure Active Directory (Azure AD) でグループを作成するか既存のグループを選択します。
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 2. **[グループ]** を選択し、**[新しいグループ]** をクリックします。
 3. このグループの **[グループの種類]** を選択します。 
 3. グループの **[グループ名]** を入力します。 
@@ -57,7 +57,7 @@ ms.lasthandoff: 03/08/2018
 CA によって発行された VPN サーバーのルート証明書を、Intune で作成されたプロファイルにインポートします。 信頼済み証明書プロファイルから iOS デバイスに、VPN サーバーが提示する CA を自動的に信頼するように指示します。
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 2. **[デバイス構成]** を選択して、**[プロファイル]** をクリックします。
 3. **[プロファイルの作成]** をクリックします。 **[プロファイルの作成]** で、次の操作を実行します。
     1. **[名前]** を入力します。
@@ -67,14 +67,14 @@ CA によって発行された VPN サーバーのルート証明書を、Intune
 4. フォルダー アイコンをクリックし、VPN 管理コンソールからエクスポートした VPN 証明書 (.cer ファイル) を参照します。 **[OK]** をクリックします。
 5. **[作成]** をクリックします。
 
-    ![信頼済み証明書プロファイルを作成する](media\vpn-per-app-create-trusted-cert.png)
+    ![信頼済み証明書プロファイルを作成する](./media/vpn-per-app-create-trusted-cert.png)
 
 ## <a name="create-a-scep-certificate-profile"></a>SCEP 証明書プロファイルを作成する
 
 信頼済みルート証明書プロファイルにより、iOS が VPN サーバーを自動的に信頼できるようになります。 SCEP 証明書は、iOS の VPN クライアントから VPN サーバーに資格情報を提供します。 この証明書により、iOS デバイスのユーザーにユーザー名とパスワードを求めることなく自動的にデバイスが認証できるようになります。 
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 2. **[デバイス構成]** を選択して、**[プロファイル]** をクリックします。
 3. **[プロファイルの作成]** をクリックします。 **[プロファイルの作成]** で、次の操作を実行します。
     1. **[名前]** を入力します。
@@ -89,19 +89,19 @@ CA によって発行された VPN サーバーのルート証明書を、Intune
 9. ルート証明書をクリックし、SCEP 証明書を選択します。 **[OK]** をクリックします。
 10. **[拡張キー使用法]** の **[名前]** に `Client Authentication` を入力します。
 11. **[オブジェクト識別子]** に `1.3.6.1.5.5.7.3.2`を入力します。
-12. **[追加]**をクリックします。
+12. **[追加]** をクリックします。
 13. ***サーバーの URL*** を入力して、**[追加]** をクリックします。
 14. **[OK]** をクリックします。
 15. **[作成]** をクリックします。
 
-    ![SCEP 証明書プロファイルを作成する](media\vpn-per-app-create-scep-cert.png)
+    ![SCEP 証明書プロファイルを作成する](./media/vpn-per-app-create-scep-cert.png)
 
 ## <a name="create-a-per-app-vpn-profile"></a>アプリごとの VPN プロファイルを作成する
 
 VPN プロファイルには、クライアントの資格情報を含む SCEP 証明書、VPN への接続情報、iOS アプリケーションがアプリごとの VPN 機能を使用できるようにする、アプリごとの VPN フラグが含まれています。
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 2. **[デバイス構成]** を選択して、**[プロファイル]** をクリックします。
 3. **[プロファイルの作成]** をクリックします。 **[プロファイルの作成]** で、次の操作を実行します。
     1. **[名前]** を入力します。
@@ -123,7 +123,7 @@ VPN プロファイルには、クライアントの資格情報を含む SCEP �
 6. **[OK]** をクリックします。
 7. **[作成]** をクリックします。
 
-    ![アプリごとの VPN プロファイルを作成する](media\vpn-per-app-create-vpn-profile.png)
+    ![アプリごとの VPN プロファイルを作成する](./media/vpn-per-app-create-vpn-profile.png)
 
 
 ## <a name="associate-an-app-with-the-vpn-profile"></a>アプリと VPN プロファイルを関連付ける
@@ -131,7 +131,7 @@ VPN プロファイルには、クライアントの資格情報を含む SCEP �
 VPN プロファイルを追加した後、アプリと Azure AD グループをプロファイルに関連付けます。
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 2. **[Mobile Apps]** を選択します。
 3. **[アプリ]** をクリックします。
 4. アプリの一覧からアプリを選択します。
@@ -146,7 +146,7 @@ VPN プロファイルを追加した後、アプリと Azure AD グループを
 
 9. **[OK]** をクリックし、**[保存]** をクリックします。
 
-    ![アプリと VPN を関連付ける](media\vpn-per-app-app-to-vpn.png)
+    ![アプリと VPN を関連付ける](./media/vpn-per-app-app-to-vpn.png)
 
 ## <a name="verify-the-connection-on-the-ios-device"></a>iOS デバイスでの接続を確認する
 

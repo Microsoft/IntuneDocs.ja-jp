@@ -15,15 +15,15 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f975f2018d2ce1d7affded3c3386c479e6877388
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: aa11c29a50006053b6e9b52516a595683d6f4cfd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Windows の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 基幹業務 (LOB) アプリとは、アプリのインストール ファイルから追加するアプリのことです。 この種のアプリは、通常、社内で作成されます。 次に、Microsoft Intune に Windows の LOB アプリを追加するのに役立つ手順を示します。
 
@@ -69,11 +69,11 @@ ms.lasthandoff: 03/22/2018
 
 ## <a name="step-5---update-a-line-of-business-app"></a>手順 5 - 基幹業務アプリの更新
 
-[!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+[!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
 ## <a name="configuring-a-self-updating-mobile-msi-app-to-ignore-the-version-check-process"></a>バージョン チェック プロセスを無視する自己更新モバイル MSI アプリの構成
 
-バージョン チェック プロセスを無視するように、既知の自己更新モバイル MSI アプリを構成することができます。 一部の MSI インストーラー ベースのアプリは、アプリケーション開発者によって自動更新されます。 これらの自動更新される MSI アプリには、**[アプリ情報]** ブレードで **[Ignore app version]**\(アプリのバージョンを無視する\) を設定できます。 この設定を **[はい]** に切り替えると、Microsoft Intune で Windows クライアントにインストールされているアプリのバージョンが強制されることはありません。 この機能は、競合状態になるのを防ぐのに役立ちます。 たとえば、この種類の競合状態は、アプリ開発者によって自動更新されているアプリが、Intune によっても更新されると、発生する可能性があります。 両方が Windows クライアント上のアプリのバージョンを強制しようとして、競合が発生することがあります。
+バージョン チェック プロセスを無視するように、既知の自己更新モバイル MSI アプリを構成することができます。 一部の MSI インストーラー ベースのアプリは、アプリケーション開発者によって自動更新されます。 これらの自動更新される MSI アプリには、**[アプリ情報]** ブレードで **[Ignore app version]** \(アプリのバージョンを無視する\) を設定できます。 この設定を **[はい]** に切り替えると、Microsoft Intune で Windows クライアントにインストールされているアプリのバージョンが強制されることはありません。 この機能は、競合状態になるのを防ぐのに役立ちます。 たとえば、この種類の競合状態は、アプリ開発者によって自動更新されているアプリが、Intune によっても更新されると、発生する可能性があります。 両方が Windows クライアント上のアプリのバージョンを強制しようとして、競合が発生することがあります。
 
 ## <a name="next-steps"></a>次の手順
 

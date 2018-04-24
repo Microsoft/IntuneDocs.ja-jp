@@ -1,24 +1,24 @@
 ---
-title: "ポリシー"
+title: ポリシー
 titlesuffix: Microsoft Intune
-description: "Intune データ ウェアハウス API のエンティティ コレクションのポリシー カテゴリに関するリファレンス トピック。"
-keywords: "Intune データ ウェアハウス"
+description: Intune データ ウェアハウス API のエンティティ コレクションのポリシー カテゴリに関するリファレンス トピック。
+keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c5546c686a51170c8c854252cddb048685c6b2d2
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 0cfeffd4cb466d8bcfc2da072e7e6c028a4e0c8a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-policy-entities"></a>ポリシー エンティティのリファレンス
 
@@ -157,10 +157,12 @@ PolicyKey|ポリシー キーとポリシーを結合して、policyName を取�
 
 次の表に、成功、保留中、失敗、またはエラー状態のユーザー数/日の一覧を示します。 数は、ポリシーの種類のプロファイルごとのデータを反映しています。 たとえば、割り当てられているすべてのポリシーでユーザーが成功状態の場合、その日の成功カウンターが 1 つ増えます。 ユーザーに、成功状態のプロファイルとエラー状態のプロファイルの 2 つのプロファイルが割り当てられている場合、エラー状態のユーザーがカウントされます。 PolicyUserActivity エンティティには、過去 30 日間の各状態のユーザー数/日が表示されます。
 
-|プロパティ  |説明  |例  |
-|---------|---------|---------|
-|DateKey|デバイス構成プロファイル チェックインがデータ ウェアハウスに記録されたときの日付キー。|20160703|
-|Pending|保留状態の一意のデバイス数。|123|
-|成功|成功状態の一意のデバイス数。|12|
-PolicyKey|ポリシー キーとポリシーを結合して、policyName を取得できます。|Windows 10 baseline|
-|エラー|エラー状態の一意のデバイス数。|10|
+
+| プロパティ  |                                         説明                                         |       例       |
+|-----------|---------------------------------------------------------------------------------------------|---------------------|
+|  DateKey  | デバイス構成プロファイル チェックインがデータ ウェアハウスに記録されたときの日付キー。 |      20160703       |
+|  Pending  |                         保留状態の一意のデバイス数。                          |         123         |
+| 成功 |                         成功状態の一意のデバイス数。                          |         12          |
+| PolicyKey |                ポリシー キーとポリシーを結合して、policyName を取得できます。                 | Windows 10 baseline |
+|   エラー   |                          エラー状態の一意のデバイス数。                           |         10          |
+

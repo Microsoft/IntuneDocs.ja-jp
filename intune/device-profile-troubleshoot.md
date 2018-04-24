@@ -1,28 +1,28 @@
 ---
-title: "Microsoft Intune - Azure でのデバイス プロファイルのトラブルシューティング | Microsoft Docs"
-description: "プロファイルの変更が一部のユーザーまたはデバイスに適用されない、新しいポリシーがデバイスにプッシュされる場合にかかる時間、複数のデバイスがあるときに適用される設定、プロファイルが消去または削除された場合に起こること、そのほか Azure Portal 上の Microsoft Intune でのデバイス プロファイルに関する一般的な問題"
-keywords: 
+title: Microsoft Intune - Azure でのデバイス プロファイルのトラブルシューティング | Microsoft Docs
+description: プロファイルの変更が一部のユーザーまたはデバイスに適用されない、新しいポリシーがデバイスにプッシュされる場合にかかる時間、複数のデバイスがあるときに適用される設定、プロファイルが消去または削除された場合に起こること、そのほか Azure Portal 上の Microsoft Intune でのデバイス プロファイルに関する一般的な問題
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 1/17/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
+ms.technology: ''
+ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 73bac7c139a0dd42734ce6528172aeba2cb7b40c
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 8ceebe8b306893f9e6362a1aeb6ec119a650b90b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Microsoft Intune でのデバイス プロファイルの一般的な問題と解決策
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune のデバイス プロファイルを使用して一般的な問題のトラブルシューティングを行います。
 

@@ -1,25 +1,25 @@
 ---
-title: "REST クライアントを使用してデータ ウェアハウス API からデータを取得する"
+title: REST クライアントを使用してデータ ウェアハウス API からデータを取得する
 titlesuffix: Microsoft Intune
-description: "RESTful API を使用し、Intune データ ウェアハウスからデータを取得します。"
-keywords: 
+description: RESTful API を使用し、Intune データ ウェアハウスからデータを取得します。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 22bfcc4e2947cba54509409132da3687d51a472d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5ba065b53560a4e1d3f1fffbe6cea56e85da0f06
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST クライアントを使用して Intune データ ウェアハウス API からデータを取得する
 
@@ -45,7 +45,7 @@ Azure でネイティブ アプリを作成します。 このネイティブ �
     3.  **[サインオン URL]** に URL を入力します。 サインオン URL は特定のシナリオによって代わります。ただし、Postman を利用する予定の場合、「`https://www.getpostman.com/oauth2/callback`」と入力してください。 Azure AD に認証するとき、クライアント認証手順のコールバックを利用します。
 4.  **[作成]** を選択します。
 
-     ![Intune データ ウェアハウス API](media\reports-get_rest_data_client_overview.png)
+     ![Intune データ ウェアハウス API](./media/reports-get_rest_data_client_overview.png)
 
 5. このアプリの **[アプリケーション ID]** をメモします。 この ID は次のセクションで使用します。
 
@@ -62,7 +62,7 @@ Azure でネイティブ アプリを作成します。 このネイティブ �
 7.  **[選択]** を選びます。
 8.  **[委任されたアクセス許可]** ボックスにチェックマークを入れ、**[Get data warehouse information from Microsoft Intune]\(Microsoft Intune からデータ ウェアハウス情報を取得する\)** を追加します。
 
-    ![アクセスの有効化 - Microsot Intune API](media\reports-get_rest_data_client_access.png)
+    ![アクセスの有効化 - Microsot Intune API](./media/reports-get_rest_data_client_access.png)
 
 9.  **[選択]** を選びます。
 10.  **[完了]** を選びます。
@@ -132,7 +132,7 @@ Postman のために新しいアクセス トークンを取得するには、Az
 
 12. **[Request Token]\(トークンの要求\)** を選択します。
 
-    ![トークンの情報](media\reports-postman_getnewtoken.png)
+    ![トークンの情報](./media/reports-postman_getnewtoken.png)
 
 13. アクティブな AD 認証ページで資格情報を入力します。 これで、Postman のトークン一覧に `Bearer` という名前のトークンが含まれます。
 14. **[Use Token]\(トークンの使用\)** を選択します。 ヘッダーの一覧には、認証の新しいキー値と値 `Bearer <your-authorization-token>` が含まれます。
@@ -142,7 +142,7 @@ Postman のために新しいアクセス トークンを取得するには、Az
 1.  **[送信]** を選択します。
 2.  返されるデータは Postman の応答本文に表示されます。
 
-    ![Postman 200OK](media\reports-postman_200OK.png)
+    ![Postman 200OK](./media/reports-postman_200OK.png)
 
 ## <a name="create-a-rest-client-c-to-get-data-from-the-intune-data-warehouse"></a>Intune データ ウェアハウスからデータを取得する REST クライアント (C#) を作成する
 
@@ -151,45 +151,45 @@ Postman のために新しいアクセス トークンを取得するには、Az
 > [!Note]  
 > 次のコード [サンプルは GitHub](https://github.com/Microsoft/Intune-Data-Warehouse/blob/master/Samples/CSharp/Program.cs) にあります。 サンプルの最新の変更と更新については、GitHub リポジトリを参照してください。
 
-1.  **Microsoft Visual Studio** を起動します。
-2.  **[ファイル]** > **[新しいプロジェクト]** の順に選択します。 **[Visual C#]** を展開し、**[コンソール アプリ (.Net Framework)]** を選択します。
-3.  プロジェクトに ` IntuneDataWarehouseSamples` という名前を付け、プロジェクトを保存する場所に進み、**[OK]** を選択します。
-4.  ソリューション エクスプローラーでソリューションの名前を右クリックし、**[ソリューションの NuGet パッケージの管理]** を選択します。 **[参照]** を選択して、検索ボックスに「`Microsoft.IdentityModel.Clients.ActiveDirectory`」と入力します。
+1. **Microsoft Visual Studio** を起動します。
+2. **[ファイル]** > **[新しいプロジェクト]** の順に選択します。 **[Visual C#]** を展開し、**[コンソール アプリ (.Net Framework)]** を選択します。
+3. プロジェクトに ` IntuneDataWarehouseSamples` という名前を付け、プロジェクトを保存する場所に進み、**[OK]** を選択します。
+4. ソリューション エクスプローラーでソリューションの名前を右クリックし、**[ソリューションの NuGet パッケージの管理]** を選択します。 **[参照]** を選択して、検索ボックスに「`Microsoft.IdentityModel.Clients.ActiveDirectory`」と入力します。
 5. パッケージを選択し、[Manage Packages for Your Solution]\(ソリューションのパッケージ管理\) で **IntuneDataWarehouseSamples** プロジェクトを選択して、**[インストール]** を選択します。
 6. **[同意する]** を選択し、NuGet パッケージ ライセンスに同意します。
 7. ソリューション エクスプローラーから `Program.cs` を開きます。
 
-    ![Visual Studio のプロジェクト](media\reports-get_rest_data_in.png)
+    ![Visual Studio のプロジェクト](./media/reports-get_rest_data_in.png)
 
-8.  Program.cs のコードを次のコードに置き換えます。  
-    ```csharp
-namespace IntuneDataWarehouseSamples
-{
-    using System;
-    using System.Net.Http;
-    using System.Net.Http.Headers;
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+8. Program.cs のコードを次のコードに置き換えます。  
+   ```csharp
+   namespace IntuneDataWarehouseSamples
+   {
+   using System;
+   using System.Net.Http;
+   using System.Net.Http.Headers;
+   using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
-    class Program
-    {
-     static void Main(string[] args)
-  {
+   class Program
+   {
+    static void Main(string[] args)
+   {
    /**
-    * TODO: Replace the below values with your own.
-    * emailAddress - The email address of the user that you will authenticate as.
-    *
-    * password  - The password for the above email address.
-    *    This is inline only for simplicity in this sample. We do not
-    *    recommend storing passwords in plaintext.
-    *
-    * applicationId - The application ID of the native app that was created in AAD.
-    *
-    * warehouseUrl   - The data warehouse URL for your tenant. This can be found in
-    *      the Azure portal.
-    *
-    * collectionName - The name of the warehouse entity collection you would like to
-    *      access.
-    */
+   * TODO: Replace the below values with your own.
+   * emailAddress - The email address of the user that you will authenticate as.
+   *
+   * password  - The password for the above email address.
+   *    This is inline only for simplicity in this sample. We do not
+   *    recommend storing passwords in plaintext.
+   *
+   * applicationId - The application ID of the native app that was created in AAD.
+   *
+   * warehouseUrl   - The data warehouse URL for your tenant. This can be found in
+   *      the Azure portal.
+   *
+   * collectionName - The name of the warehouse entity collection you would like to
+   *      access.
+   */
    var emailAddress = "intuneadmin@yourcompany.com";
    var password = "password_of(intuneadmin@yourcompany.com)";
    var applicationId = "<Application ID>";
@@ -198,9 +198,9 @@ namespace IntuneDataWarehouseSamples
 
    var adalContext = new AuthenticationContext("https://login.windows.net/common/oauth2/token");
    AuthenticationResult authResult = adalContext.AcquireTokenAsync(
-    resource: "https://api.manage.microsoft.com/",
-    clientId: applicationId,
-    userCredential: new UserPasswordCredential(emailAddress, password)).Result;
+   resource: "https://api.manage.microsoft.com/",
+   clientId: applicationId,
+   userCredential: new UserPasswordCredential(emailAddress, password)).Result;
 
    var httpClient = new HttpClient();
    httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authResult.AccessToken);
@@ -212,16 +212,16 @@ namespace IntuneDataWarehouseSamples
 
    Console.Write(response.Content.ReadAsStringAsync().Result);
    Console.ReadKey();
-  }
-    }
-    ```
+   }
+   }
+   ```
 
-9.  コード サンプルの `TODO` を更新します。
-10.  **Ctrl + F5** を押し、デバッグ モードで Intune.DataWarehouseAPIClient クライアントをビルドし、実行します。
+9. コード サンプルの `TODO` を更新します。
+10. **Ctrl + F5** を押し、デバッグ モードで Intune.DataWarehouseAPIClient クライアントをビルドし、実行します。
 
-    ![JSON 形式で取得された日付エンティティ。](media\reports-get_rest_data_output.png)
+    ![JSON 形式で取得された日付エンティティ。](./media/reports-get_rest_data_output.png)
 
-11.  コンソールの出力を確認します。 出力には、JSON 形式のデータが含まれています。これは Intune テナントの **dates** エンティティから引き出されたものです。
+11. コンソールの出力を確認します。 出力には、JSON 形式のデータが含まれています。これは Intune テナントの **dates** エンティティから引き出されたものです。
 
 ## <a name="next-steps"></a>次の手順
 

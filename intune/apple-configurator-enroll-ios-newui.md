@@ -15,15 +15,15 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 96889cfeb3b66fa988a14143cb560eb714d749c9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 605bfb94d720336da94e62a2629576cf178eea2f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Apple Configurator による iOS デバイスの登録
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>一時的なユーザー インターフェイスの違い
@@ -106,7 +106,7 @@ Apple Configurator 登録用の iOS シリアル番号をインポートする�
 #### <a name="assign-from-profiles"></a>プロファイルからの割り当て
 1. [Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Apple Configurator]** > **[プロファイル]** の順に選択し、プロファイルを選択します。
 2. プロファイルで **[割り当てられたデバイス]** を選択し、次に **[割り当て]** を選択します。
-3. フィルターを使って、プロファイルに割り当てるシリアル番号を見つけ、デバイスを選択して、**[割り当て]**を選択します。
+3. フィルターを使って、プロファイルに割り当てるシリアル番号を見つけ、デバイスを選択して、**[割り当て]** を選択します。
 
 ### <a name="export-the-profile"></a>プロファイルのエクスポート
 プロファイルを作成してシリアル番号を割り当てた後、Intune からプロファイルを URL としてエクスポートする必要があります。 エクスポートしたプロファイルは、Mac の Apple Configurator にインポートしてデバイスに展開します。
@@ -115,7 +115,7 @@ Apple Configurator 登録用の iOS シリアル番号をインポートする�
 2. プロファイルで、**[プロファイルのエクスポート]** を選択します。
 3. **プロファイルの URL** をコピーします。 Apple Configurator にこれを追加すれば、iOS デバイスで使用する Intune プロファイルを定義できます。
 
-  次に、以下の手順に従ってこのプロファイルを Apple Configurator にインポートし、iOS デバイスで使用する Intune プロファイルを定義します。
+   次に、以下の手順に従ってこのプロファイルを Apple Configurator にインポートし、iOS デバイスで使用する Intune プロファイルを定義します。
 
 ### <a name="enroll-devices-with-setup-assistant"></a>セットアップ アシスタントを使用したデバイスの登録
 

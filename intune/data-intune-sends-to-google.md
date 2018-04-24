@@ -1,29 +1,29 @@
 ---
-title: "Intune から Google に送られるデータ"
+title: Intune から Google に送られるデータ
 titleSuffix: Microsoft Intune
-description: "Intune から Google に送られるデータの一覧。"
-keywords: 
+description: Intune から Google に送られるデータの一覧。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a5c3bec4-18ed-11e8-accf-0ed5f89f718b
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63f1b07d13daad7512dff8e53f9acbafa7bffdd3
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 78fef57849b8742bb10ece1717234af5cce3f4ba
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="data-intune-sends-to-google"></a>Intune から Google に送られるデータ
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 デバイスで Android デバイスの管理が有効になっている場合、Microsoft Intune は Google との接続を確立し、ユーザーとデバイスの情報を Google と共有します。 Microsoft Intune が接続を確立する前に、Google アカウントを作成する必要があります。
 

@@ -1,29 +1,29 @@
 ---
-title: "リモート ワイプを使用したデータ保護"
-description: "Intune には会社の重要なデータを削除し、数多くの会社リソースへのアクセスを削除する、選択的なワイプ機能とフル ワイプ機能が備わっています。"
-keywords: 
+title: リモート ワイプを使用したデータ保護
+description: Intune には会社の重要なデータを削除し、数多くの会社リソースへのアクセスを削除する、選択的なワイプ機能とフル ワイプ機能が備わっています。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 07/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85907167305e822ddf6a29475f032b2eb5f97a74
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 82c50be9a8def23fadd8d24fc7654312d5c7ca5c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Microsoft Intune のフル ワイプまたは選択的ワイプを使用してデータを保護する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune 管理対象デバイスが不要になるか、別の目的で再利用するか、または紛失した場合、そのデバイスからアプリとデータをワイプできます。 そのための手段として Intune には、選択的ワイプ機能とフル ワイプ機能が備わっています。 ユーザーは、Intune に登録済みの個人所有デバイスの Intune ポータル サイト アプリからリモート デバイス ワイプ コマンドを発行することもできます。
 
@@ -40,37 +40,37 @@ Intune 管理対象デバイスが不要になるか、別の目的で再利用�
 
 ### <a name="remotely-wipe-a-device-from-the-intune-administrator-console"></a>Intune 管理コンソールからデバイスをリモートでワイプする
 
-1.  ワイプするデバイスを選択します。 デバイスはユーザー単位、またはデバイス単位のいずれかで検索できます。
+1. ワイプするデバイスを選択します。 デバイスはユーザー単位、またはデバイス単位のいずれかで検索できます。
 
-    -   **ユーザー単位:**
+   - **ユーザー単位:**
 
-        1.  [Intune 管理コンソール](https://manage.microsoft.com/)で、**[グループ]** &gt; **[すべてのユーザー]** の順にクリックします。
+     1.  [Intune 管理コンソール](https://manage.microsoft.com/)で、**[グループ]** &gt; **[すべてのユーザー]** の順にクリックします。
 
-        2.  ワイプするモバイル デバイスのユーザー名を選択します。 **[プロパティの表示]** を選択します。
+     2.  ワイプするモバイル デバイスのユーザー名を選択します。 **[プロパティの表示]** を選択します。
 
-        3.  ユーザーの **[プロパティ]** ページで、**[デバイス]** を選択して、ワイプするモバイル デバイスの名前を選択します。 複数のデバイスを選択するには、Ctrl キーを押しながらデバイスをクリックします。
+     3.  ユーザーの **[プロパティ]** ページで、**[デバイス]** を選択して、ワイプするモバイル デバイスの名前を選択します。 複数のデバイスを選択するには、Ctrl キーを押しながらデバイスをクリックします。
 
-    -   **デバイス単位:**
+   - **デバイス単位:**
 
-        1.  [Intune 管理者コンソール](https://manage.microsoft.com/)で、**[グループ]** &gt; **[すべてのモバイル デバイス]** の順に選択します。
+     1. [Intune 管理者コンソール](https://manage.microsoft.com/)で、**[グループ]** &gt; **[すべてのモバイル デバイス]** の順に選択します。
 
-         ![インベントリからの削除 (ワイプ) 操作の開始](../media/dev-sa-wipe.png)
+        ![インベントリからの削除 (ワイプ) 操作の開始](../media/dev-sa-wipe.png)
 
-        2.  **[デバイス]** を選択し、ワイプするモバイル デバイスの名前を選択します。 複数のデバイスを選択するには、Ctrl キーを押しながらデバイスをクリックします。
+     2. **[デバイス]** を選択し、ワイプするモバイル デバイスの名前を選択します。 複数のデバイスを選択するには、Ctrl キーを押しながらデバイスをクリックします。
 
-2.  **[インベントリからの削除/ワイプ]** を選択します。
+2. **[インベントリからの削除/ワイプ]** を選択します。
 
-3.  インベントリからデバイスを削除するかどうかを確認するメッセージが表示されます。
+3. インベントリからデバイスを削除するかどうかを確認するメッセージが表示されます。
 
-    -   会社のアプリとデータのみを削除する**選択的ワイプ**を実行する場合は、**[はい]** を選択します。
+   -   会社のアプリとデータのみを削除する**選択的ワイプ**を実行する場合は、**[はい]** を選択します。
 
-    -   アプリとデータをすべて消去し、デバイスを出荷時の既定設定に戻す**フル ワイプ**を実行する場合は、**[デバイスをインベントリから削除する前にワイプする]** を選択します。 この処理は、Windows 8.1 を除くすべてのプラットフォームに適用されます。 **フル ワイプで削除されたデータを回復することはできません**。
+   -   アプリとデータをすべて消去し、デバイスを出荷時の既定設定に戻す**フル ワイプ**を実行する場合は、**[デバイスをインベントリから削除する前にワイプする]** を選択します。 この処理は、Windows 8.1 を除くすべてのプラットフォームに適用されます。 **フル ワイプで削除されたデータを回復することはできません**。
 
 デバイスに電源が入り、接続されている場合、ワイプ コマンドは 15 分以内にすべてのデバイス タイプに伝達されます。
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Azure Active Directory ポータルでデバイスを削除するには
 
-1.  [http://aka.ms/accessaad](http://aka.ms/accessaad) にアクセスするか、[https://portal.office.com](https://portal.office.com) から **[管理]** &gt; **[Azure AD]** の順にクリックします。
+1.  [http://aka.ms/accessaad](http://aka.ms/accessaad) にアクセスするか、[https://portal.office.com](https://portal.office.com) から **[管理者]** &gt; **[Azure AD]** の順に選択します。
 
 2.  ページの左側にあるリンクを使用して、組織 ID でログインします。
 

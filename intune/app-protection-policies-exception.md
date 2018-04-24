@@ -1,29 +1,29 @@
 ---
-title: "アプリのデータ転送ポリシーの例外"
+title: アプリのデータ転送ポリシーの例外
 titleSuffix: Microsoft Intune
-description: "Intune モバイル アプリケーション管理 (MAM) データ転送ポリシーの例外を作成します。"
-keywords: 
+description: Intune モバイル アプリケーション管理 (MAM) データ転送ポリシーの例外を作成します。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2018
+ms.date: 03/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1e37e78f7272b0f53f974eccb20c7e02574a9a9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 1910334093a416933912c9cdeedac85e36d66e92
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Intune モバイル アプリケーション管理 (MAM) データ転送ポリシーの例外を作成する方法
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 管理者の場合、Intune モバイル アプリケーション管理 (MAM) データ転送ポリシーの例外を作成することができます。 例外を使用すると、管理対象アプリとの間でデータをやりとりできる管理対象ではないアプリを指定できます。 管理者が例外一覧に追加した管理対象ではないアプリは、IT 部門に信頼されている必要があります。 
 
@@ -39,6 +39,10 @@ iOS をターゲットとするポリシーの場合、URL プロトコルでデ
 
 ## <a name="android-data-transfer-exceptions"></a>Android のデータ転送の例外
 Android をターゲットとするポリシーの場合、アプリ パッケージ名でデータ転送の例外を構成できます。 例外を追加するアプリの **Google Play** ストア ページで、アプリのパッケージ名を検索することができます。 Android のデータ転送の例外の詳細については、[「Android アプリ保護ポリシー設定」の「データ転送の除外対象」](app-protection-policy-settings-android.md#data-transfer-exemptions)を参照してください。
+
+
+>[!TIP]
+> Google Play ストアでアプリを参照して、アプリのパッケージ ID を確認できます。 パッケージ ID は、アプリのページの URL に含まれます。 たとえば、Microsoft Word アプリのパッケージ ID は **com.microsoft.office.word** です。
 
 ### <a name="example"></a>例
 **Webex** パッケージを MAM データ転送ポリシーの例外として追加すると、管理対象の Outlook 電子メール メッセージ内の Webex リンクを Webex アプリケーションで直接開くことができるようになります。 他の管理対象ではないアプリではデータ転送が制限されます。

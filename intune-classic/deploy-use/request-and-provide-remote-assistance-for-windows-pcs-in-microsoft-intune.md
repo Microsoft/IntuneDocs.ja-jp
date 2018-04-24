@@ -1,24 +1,24 @@
 ---
-title: "Windows PC のリモート アシスタンス要求と提供"
-description: "PC として管理されている Windows デスクトップにリモート アシスタントを提供し、PC をリモートで起動するためにエンドユーザーまたは IT 監理者が行う手順について説明します。"
-keywords: 
+title: Windows PC のリモート アシスタンス要求と提供
+description: PC として管理されている Windows デスクトップにリモート アシスタントを提供し、PC をリモートで起動するためにエンドユーザーまたは IT 監理者が行う手順について説明します。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c2654491-5144-408a-a45a-644eb91ac1bb
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 245d18b89be9b9884df6c7ee41436e747c0557fe
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Windows PC のリモート アシスタンス要求と提供
 

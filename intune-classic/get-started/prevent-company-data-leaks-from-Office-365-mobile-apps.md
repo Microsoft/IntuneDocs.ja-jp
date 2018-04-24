@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b0117ef734a8549593992108105192ce1c4de5b0
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 85233c06d9cbbc697aecabc75ba538612c0fa5fa
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quick-start-guide-prevent-company-data-leaks-from-office-365-mobile-apps"></a>クイック スタート ガイド: Office 365 モバイル アプリから会社のデータが漏洩することを防止する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune では、Office 365 モバイル アプリやその他の基幹業務 (LOB) アプリから会社のデータが漏洩することを防止するために役立つモバイル アプリケーション管理 (MAM) ポリシーを使用して、組織のデータをセキュリティで保護できます。 Intune MAM ポリシーは、エンドユーザーによる Intune モバイル デバイス管理 (MDM) へのデバイスの登録なしで使用できます。 したがって、Microsoft MDM ソリューション (Intune、Configuration Manager、または EAS) に BYOD iOS または Android モバイル デバイスを登録しないユーザーがいる場合でも、エンド ユーザーのデバイスの管理なしで会社のデータを保護することができます。また、Microsoft 以外の MDM ソリューションを既に使用している場合は、Intune で会社のデータ セキュリティを強化できます。   
 

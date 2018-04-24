@@ -1,27 +1,27 @@
 ---
-title: "PC クライアント ソフトウェアをインストールする"
-description: "このガイドは、Microsoft Intune クライアント ソフトウェアによって、Windows PC を管理させる場合に役立ちます。"
-keywords: 
+title: PC クライアント ソフトウェアをインストールする
+description: このガイドは、Microsoft Intune クライアント ソフトウェアによって、Windows PC を管理させる場合に役立ちます。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 ms.date: 07/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9316f78155b38f74765a353186a29dc90afce547
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 56ae374f5b930c55fbe12305f4246c52e6213a20
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Windows PC に Intune ソフトウェア クライアントをインストールする
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune クライアント ソフトウェアをインストールして Windows PC を登録します。 Intune クライアント ソフトウェアは、次の方法を使用してインストールできます。
 
@@ -39,13 +39,13 @@ Intune クライアント ソフトウェアには、Intune 管理で PC を登�
 
 ユーザー自身が Intune クライアント ソフトウェアをインストールする場合を除き、すべての方法で、IT 管理者が初めにソフトウェアをダウンロードし、その後エンド ユーザーに展開する必要があります。
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[管理]** &gt; **[クライアント ソフトウェアのダウンロード]** をクリックします。
+1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[管理]** &gt; **[クライアント ソフトウェアのダウンロード]** をクリックします。
 
-  ![Intune PC クライアントのダウンロード](../media/pc-sa-client-download.png)
+   ![Intune PC クライアントのダウンロード](../media/pc-sa-client-download.png)
 
-2. [**クライアント ソフトウェアのダウンロード**] ページで、[**クライアント ソフトウェアのダウンロード**] をクリックします。 ソフトウェアが含まれている **Microsoft_Intune_Setup.zip** パッケージをネットワーク上のセキュリティで保護された場所に保存します。
+2. **[クライアント ソフトウェアのダウンロード]** ページで、**[クライアント ソフトウェアのダウンロード]** をクリックします。 ソフトウェアが含まれている **Microsoft_Intune_Setup.zip** パッケージをネットワーク上のセキュリティで保護された場所に保存します。
 
-  Intune クライアント ソフトウェアのインストール パッケージにはお客様のアカウントに固有の情報が含まれており、これらの情報は埋め込み証明書に記載されています。 許可されていないユーザーがインストール パッケージにアクセスした場合は、埋め込み証明書に示されているアカウントに PC を登録できることになり、会社のリソースへのアクセスが行われる可能性があります。
+   Intune クライアント ソフトウェアのインストール パッケージにはお客様のアカウントに固有の情報が含まれており、これらの情報は埋め込み証明書に記載されています。 許可されていないユーザーがインストール パッケージにアクセスした場合は、埋め込み証明書に示されているアカウントに PC を登録できることになり、会社のリソースへのアクセスが行われる可能性があります。
 
 3. インストール パッケージの内容をネットワーク上の安全な場所に抽出します。
 
@@ -174,7 +174,7 @@ Intune PC クライアント ソフトウェアを使用して既に登録され
 
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[レポート]** &gt; **[コンピューター インベントリ レポート]** をクリックします。
 
-2.  **[新しいレポートの作成]** ページで、(フィルターを適用しない場合は) すべてのフィールドを既定値のままにして、**[レポートの表示]**をクリックします。
+2.  **[新しいレポートの作成]** ページで、(フィルターを適用しない場合は) すべてのフィールドを既定値のままにして、**[レポートの表示]** をクリックします。
 
 3.  新しいウィンドウで **[コンピューター インベントリ レポート]** ページが開き、Intune に登録されているすべてのコンピューターが表示されます。
 
@@ -244,7 +244,7 @@ Intune 管理コンソールを使用してソフトウェア クライアント
 
 - AgentInstaller
 - ログ
-- Updates
+- 更新プログラム
 - 共通
 
 ### <a name="remove-the-onlinemanagement-folder"></a>OnlineManagement フォルダーを削除する
@@ -253,6 +253,6 @@ Intune 管理コンソールを使用してソフトウェア クライアント
 
     "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
-### <a name="next-steps"></a>次のステップ
+### <a name="next-steps"></a>次の手順
 [Microsoft Intune を使用して Windows PC を管理する](manage-windows-pcs-with-microsoft-intune.md)
 [Microsoft Intune でのクライアント セットアップのトラブルシューティング](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)

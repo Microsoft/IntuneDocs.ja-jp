@@ -1,29 +1,29 @@
 ---
-title: "デバイスとアプリのライフサイクルの概要"
+title: デバイスとアプリのライフサイクルの概要
 titleSuffix: Microsoft Intune
-description: "Microsoft Intune でのデバイスとアプリのライフサイクルの概要。"
-keywords: 
+description: Microsoft Intune でのデバイスとアプリのライフサイクルの概要。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d262d5679ceb802320bd5aa496d91f549ec12952
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c358fff91744335080a10d45c7753293911430ae
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-device-and-app-lifecycles"></a>デバイスとアプリのライフサイクルの概要
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 ニーズは組織ごとに異なることがありますが、モバイル デバイスとモバイル アプリを管理するためにすべての組織が継続的に実行する必要がある特定の一般的な手順があります。 これは 2 つの主なカテゴリにグループ化でき、**ライフサイクル**と呼ばれます。 展開ライフサイクルは、有効にしようとしているシナリオによって異なります。 たとえば、デバイス ライフサイクルとアプリ ライフサイクルのどちらか一方だけが必要なこともあれば、両方とも必要になる場合もあります。
 

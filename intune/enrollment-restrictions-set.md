@@ -15,15 +15,15 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99c69d08bb11ed097e2262938d254074169492c3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9b17cb50ead094962196bb030c3a18e4119c6904
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-enrollment-restrictions"></a>登録制限を設定する
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ユーザーは Intune 管理者として、Intune での管理に登録できるデバイスの数と種類を定義した登録の制限を作成して管理することができます。 制限を複数作成して、さまざまなユーザー グループに適用することができます。 さまざまな制限を作成した場合は、[優先度](#change-enrollment-restriction-priority)を設定することができます。
 
@@ -74,7 +74,7 @@ ms.lasthandoff: 03/22/2018
 2. **[その他のサービス]** を選択し、**Intune** を検索して **[Intune]** を選択します。
 3. **[デバイスの登録]** > **[登録の制限]** を選択します。
 4. **[デバイスの種類の制限]** で、設定する制限を選択します。
-5. 制限の名前 (既定の制限の場合は**[すべてのユーザー]**) で、**[プラットフォーム]** を選択します。 一覧されたプラットフォームごとに、**[許可]** または **[ブロック]** を選択します。
+5. 制限の名前 (既定の制限の場合は **[すべてのユーザー]**) で、**[プラットフォーム]** を選択します。 一覧されたプラットフォームごとに、**[許可]** または **[ブロック]** を選択します。
 6. **[保存]** を選択します。
 7. 制限の名前 (既定の制限の場合は **[すべてのユーザー]**) で、**[プラットフォーム構成]** を選択します。 次に、リストされているプラットフォームの最小および最大の **[バージョン]** を選択します。 サポートされているバージョンは次のとおりです。
     - Android および Android for Work は、major.minor.rev.build をサポートします。

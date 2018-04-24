@@ -1,29 +1,29 @@
 ---
-title: "Exchange On-premises への電子メールを保護する"
-description: "条件付きアクセスで Exchange On-premises の会社電子メールへのアクセスを保護および制御します。"
-keywords: 
+title: Exchange On-premises への電子メールを保護する
+description: 条件付きアクセスで Exchange On-premises の会社電子メールへのアクセスを保護および制御します。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6bdb5fbf7bb382c9ad503f584b499f5275885ef1
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 73535e35605bbc9ca7123935e1816e90b5e60e1d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-email-access-to-exchange-on-premises-and-legacy-exchange-online-dedicated-with-intune"></a>Intune で Exchange On-premises と従来の Exchange Online Dedicated への電子メール アクセスを保護する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune を使用して、Exchange On-premises または従来の Exchange Online Dedicated への電子メール アクセスを制御するように条件付きアクセスを構成することができます。
 条件付きアクセスの動作の詳細については、「[電子メールと O365 サービスへのアクセスを保護する](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)」をご覧ください。
@@ -53,13 +53,13 @@ Microsoft Intune を使用して、Exchange On-premises または従来の Excha
 
 条件付きアクセス ポリシーを構成してユーザーに適用すると、ユーザーが電子メールに接続するには、使用する**デバイス**が以下の条件を満たさなくてはならなくなります。
 
--  ドメインに参加している PC であるか、Intune に**登録**されている。
+- ドメインに参加している PC であるか、Intune に**登録**されている。
 
--  **Azure Active Directory に登録されている**。 また、クライアントの Exchange ActiveSync ID を Azure Active Directory に登録する必要があります。
+- **Azure Active Directory に登録されている**。 また、クライアントの Exchange ActiveSync ID を Azure Active Directory に登録する必要があります。
 
   Azure Active Directory Device Registration サービスは、Intune や Office 365 のお客様に対して自動的にアクティブ化されます。 ADFS Device Registration Service をデプロイ済みのお客様には、オンプレミスの Active Directory で登録されたデバイスは表示されません。 **これは、Windows PC と Windows Phone デバイスには適用されません。**
 
--   そのデバイスに展開されているすべての Intune コンプライアンス ポリシーに**準拠**している。
+- そのデバイスに展開されているすべての Intune コンプライアンス ポリシーに**準拠**している。
 
 ### <a name="how-conditional-access-works-with-exchange-on-premises"></a>Exchange On-Premises での条件付きアクセスのしくみ
 
@@ -91,35 +91,35 @@ Microsoft Intune を使用して、Exchange On-premises または従来の Excha
 
 ##  <a name="configure-a-conditional-access-policy"></a>条件付きアクセス ポリシーの構成
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** > **[条件付きアクセス]** > **[Exchange On-premises ポリシー]** の順にクリックします。
-![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
+1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[ポリシー]** > **[条件付きアクセス]** > **[Exchange On-premises ポリシー]** の順にクリックします。
+   ![IntuneSA5aSelectExchOnPremPolicy](../media/IntuneSA5aSelectExchOnPremPolicy.png)
 
-2.  必要な設定でポリシーを構成します。![Exchange On-premises ポリシー ページのスクリーンショット](../media/IntuneSA5bExchangeOnPremPolicy.png)
+2. 必要な設定でポリシーを構成します。![Exchange On-premises ポリシー ページのスクリーンショット](../media/IntuneSA5bExchangeOnPremPolicy.png)
 
-  - **[デバイスが Microsoft Intune に準拠していない場合や、登録されていない場合に、電子メール アプリから Exchange Online へのアクセスをブロックします]:** このオプションを選択すると、Intune で管理されていないデバイスまたはコンプライアンス ポリシーに準拠していないデバイスは、Exchange サービスへのアクセスがブロックされます。
+   - **[デバイスが Microsoft Intune に準拠していない場合や、登録されていない場合に、電子メール アプリから Exchange Online へのアクセスをブロックします]:** このオプションを選択すると、Intune で管理されていないデバイスまたはコンプライアンス ポリシーに準拠していないデバイスは、Exchange サービスへのアクセスがブロックされます。
 
-  - **[既定のルールを無視 - 登録された準拠デバイスが常に Exchange にアクセスできるようにする]:** このオプションをオンにすると、Intune に登録され、コンプライアンス ポリシーに準拠しているデバイスは Exchange へのアクセスが許可されます。
-  このルールは**既定のルール**に優先します。つまり、アクセスを検疫またはブロックする**既定のルール**を設定した場合でも、登録された準拠デバイスは引き続き Exchange にアクセスできます。
+   - **[既定のルールを無視 - 登録された準拠デバイスが常に Exchange にアクセスできるようにする]:** このオプションをオンにすると、Intune に登録され、コンプライアンス ポリシーに準拠しているデバイスは Exchange へのアクセスが許可されます。
+     このルールは**既定のルール**に優先します。つまり、アクセスを検疫またはブロックする**既定のルール**を設定した場合でも、登録された準拠デバイスは引き続き Exchange にアクセスできます。
 
-  - **[対象グループ]:** Exchange にアクセスするにはデバイスを Intune に登録する必要がある Intune ユーザー グループを選択します。
+   - **[対象グループ]:** Exchange にアクセスするにはデバイスを Intune に登録する必要がある Intune ユーザー グループを選択します。
 
-  - **[例外グループ]:** 条件付きアクセス ポリシーから除外される Intune ユーザー グループを選択します。 この一覧に指定されたユーザーは、同時に **[対象グループ]** の一覧に指定されている場合でも除外されます。
+   - **[例外グループ]:** 条件付きアクセス ポリシーから除外される Intune ユーザー グループを選択します。 この一覧に指定されたユーザーは、同時に **[対象グループ]** の一覧に指定されている場合でも除外されます。
 
-  - **[プラットフォーム例外]:** **[ルールの追加]** を選択して、指定したモバイル デバイスのファミリとモデルのアクセス レベルを定義するルールを構成します。 任意の種類のデバイスを使用できるので、Intune でサポートされていないデバイスの種類を構成することもできます。
+   - **[プラットフォーム例外]:** **[ルールの追加]** を選択して、指定したモバイル デバイスのファミリとモデルのアクセス レベルを定義するルールを構成します。 任意の種類のデバイスを使用できるので、Intune でサポートされていないデバイスの種類を構成することもできます。
 
-  - **[既定のルール]:** 他のどのルールにも含まれていないデバイスの場合、Exchange へのアクセスの許可、Exchange へのアクセスのブロック、検疫のいずれかを選択できます。 登録された準拠デバイスに対してアクセスを許可するルールを設定すると、iOS、Windows、および Samsung KNOX のデバイスには電子メールへのアクセス権が自動的に付与されます。 ユーザーは自分の電子メールを取得するために何もプロセスを実行する必要はありません。
-      - Samsung KNOX を実行していない Android デバイスの場合、ユーザーには、電子メールにアクセスする前に、登録とコンプライアンスの確認方法に関するチュートリアルを含む検疫電子メールが送信されます。 アクセスをブロックするか、デバイスを検疫するルールを設定すると、Intune に登録済みであるかどうかに関係なく、すべてのデバイスが Exchange にアクセスできなくなります。 登録および準拠デバイスがこのルールに影響されるのを防ぐためには、**[既定ルールの上書き]** ボックスをオンにします。
->[!TIP]
->電子メールへのアクセスを許可する前にすべてのデバイスをブロックする場合は、アクセスのブロック ルールまたは検疫ルールを選択します。 既定のルールはすべてのデバイスの種類に適用されるので、プラットフォームの例外として構成されているデバイスの種類や Intune でサポートされていないデバイスの種類も影響を受けます。
+   - **[既定のルール]:** 他のどのルールにも含まれていないデバイスの場合、Exchange へのアクセスの許可、Exchange へのアクセスのブロック、検疫のいずれかを選択できます。 登録された準拠デバイスに対してアクセスを許可するルールを設定すると、iOS、Windows、および Samsung KNOX のデバイスには電子メールへのアクセス権が自動的に付与されます。 ユーザーは自分の電子メールを取得するために何もプロセスを実行する必要はありません。
+     - Samsung KNOX を実行していない Android デバイスの場合、ユーザーには、電子メールにアクセスする前に、登録とコンプライアンスの確認方法に関するチュートリアルを含む検疫電子メールが送信されます。 アクセスをブロックするか、デバイスを検疫するルールを設定すると、Intune に登録済みであるかどうかに関係なく、すべてのデバイスが Exchange にアクセスできなくなります。 登録および準拠デバイスがこのルールに影響されるのを防ぐためには、**[既定ルールの上書き]** ボックスをオンにします。
+       >[!TIP]
+       >電子メールへのアクセスを許可する前にすべてのデバイスをブロックする場合は、アクセスのブロック ルールまたは検疫ルールを選択します。 既定のルールはすべてのデバイスの種類に適用されるので、プラットフォームの例外として構成されているデバイスの種類や Intune でサポートされていないデバイスの種類も影響を受けます。
 
-  - **[ユーザー通知]:** Exchange から送信される通知電子メールの他に、デバイスのブロック解除の手順が記載された電子メールが Intune によって送信されます。 この既定のメッセージは、ニーズに合わせてカスタマイズすることができます。 修復手順が記載されている Intune 通知電子メールが届く前にユーザーのデバイスがブロックされた場合 (このメールはユーザーの Exchange 受信トレイに送信されます)、ブロックされていないデバイスや、Exchange にアクセスする別の方法を使用して、メッセージを表示できます。
-      - これは特に**既定のルール**がブロックまたは検疫に設定されている場合に当てはまります。 この場合、ユーザーはアプリ ストアに移動し、Microsoft ポータル サイト アプリをダウンロードして、デバイスを登録する必要があります。 これは iOS、Windows、および Samsung KNOX デバイスに適用されます。 Samsung KNOX を実行していないデバイスの場合は、代替の電子メール アカウントに検疫電子メールを送信する必要があります。 ユーザーはブロックされたデバイスにこの電子メールをコピーして、登録とコンプライアンス プロセスを完了する必要があります。
-  > [!NOTE]
-  > Exchange が通知電子メールを送信できるようにするには、通知電子メールの送信に使用されるアカウントを指定する必要があります。
-  >
-  > 詳細については、[オンプレミスまたはホスト型 Exchange に対する Exchange On-Premises Connector の構成](intune-on-premises-exchange-connector.md)に関するページをご覧ください。
+   - **[ユーザー通知]:** Exchange から送信される通知電子メールの他に、デバイスのブロック解除の手順が記載された電子メールが Intune によって送信されます。 この既定のメッセージは、ニーズに合わせてカスタマイズすることができます。 修復手順が記載されている Intune 通知電子メールが届く前にユーザーのデバイスがブロックされた場合 (このメールはユーザーの Exchange 受信トレイに送信されます)、ブロックされていないデバイスや、Exchange にアクセスする別の方法を使用して、メッセージを表示できます。
+     - これは特に**既定のルール**がブロックまたは検疫に設定されている場合に当てはまります。 この場合、ユーザーはアプリ ストアに移動し、Microsoft ポータル サイト アプリをダウンロードして、デバイスを登録する必要があります。 これは iOS、Windows、および Samsung KNOX デバイスに適用されます。 Samsung KNOX を実行していないデバイスの場合は、代替の電子メール アカウントに検疫電子メールを送信する必要があります。 ユーザーはブロックされたデバイスにこの電子メールをコピーして、登録とコンプライアンス プロセスを完了する必要があります。
+       > [!NOTE]
+       > Exchange が通知電子メールを送信できるようにするには、通知電子メールの送信に使用されるアカウントを指定する必要があります。
+       >
+       > 詳細については、[オンプレミスまたはホスト型 Exchange に対する Exchange On-Premises Connector の構成](intune-on-premises-exchange-connector.md)に関するページをご覧ください。
 
-3.  終了したら、**[保存]** を選択します。
+3. 終了したら、**[保存]** を選択します。
 
 -   条件付きアクセス ポリシーを展開する必要はありません。直ちに有効になります。
 
@@ -131,7 +131,7 @@ Microsoft Intune を使用して、Exchange On-premises または従来の Excha
 
 **デバイスのアクセスを保護する条件付きアクセス ポリシーの構成方法を示したシナリオの例[を見るには、](restrict-email-access-example-scenarios.md)電子メール アクセスの保護のシナリオ例**をご覧ください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 -   [SharePoint Online へのアクセスを保護する](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 -   [Skype for Business Online へのアクセスを保護する](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
