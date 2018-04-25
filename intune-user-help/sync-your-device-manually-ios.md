@@ -1,42 +1,43 @@
 ---
-title: "iOS デバイスを手動で同期する | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: iOS デバイスを手動で同期する | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 01/11/2017
+ms.date: 04/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2780101b-f703-4b78-9d33-f68490b9382d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9c9144fbb20842a9ac8148827b85ac49d23a3d6d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a896e4a86cbeaacc07bdb4a32606a67b0049e3e1
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="sync-your-ios-device-manually"></a>iOS デバイスを手動で同期する
 
-ポータル サイトからアプリをダウンロードするとき、時間がかかりすぎることがあります。 その場合は、手動でデバイスの同期を試みることができます。 つまり、ダウンロードできないでいる情報をもう一度取得してみるようにデバイスに通知します。
+ポータル サイトからアプリをダウンロードするとき、時間がかかりすぎることがあります。 その場合、デバイスの手動同期を試してください。 お使いのデバイスでダウンロードできなかった情報の取得が試行されます。
 
 1. ポータル サイト アプリを開きます。
 
-2. **[デバイス]** セクションで、現在使用しているデバイスを選択します。 これは一番左にあるデバイス タイルです。チェックマークが付いています。
+2. **[デバイス]** をタップします。 複数のデバイスをご利用の場合、デバイスの一覧が表示されます。 現在使用しているデバイスを選択します。 お持ちのデバイスが 1 台のみの場合、デバイス詳細画面に直接移動します。
 
-    ![[デバイス] セクションが表示された [デバイス] 画面](./media/ios-sync-1-comp-portal-apps.png)
+    ![デバイス画面のスクリーンショット。2 つのデバイスが表示されています。 一番上のデバイスから、"This is the iPhone 6 Plus that you're currently using" (現在ご利用のデバイスは iPhone 6 Plus です) というテキストを確認できます。](/intune-user-help/media/ios_sync_1_CP_after_1804.png)
 
-3. 画面の右下にある **[同期]** ボタンをタップします。
+3. **[設定の確認]** をタップし、お使いのデバイスを同期します。 進捗状況バーが画面に表示され、同期が完了するまで同期が続きます。
 
-    ![[同期] ボタンが表示されたデバイスの詳細](./media/ios-sync-2-sync-button.png)
+    ![デバイス詳細のスクリーンショット。デバイスの最後のチェックイン時刻と [設定の確認] リンクが表示されています。](/intune-user-help/media/ios_sync_2_CP_after_1804.png)  
 
-ダウンロード進捗状況バーが画面に表示され、同期が完了するまでダウンロードが続きます。
+   ![デバイス詳細のスクリーンショット。ユーザーが [設定の確認] をクリックすると、読み込みの進捗状況バーが表示されます。](/intune-user-help/media/ios_sync_3_CP-after_1804.png)
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+

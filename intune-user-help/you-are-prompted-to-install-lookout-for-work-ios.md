@@ -1,25 +1,25 @@
 ---
-title: "iOS デバイスで Lookout for Work をインストールする必要がある | Microsoft Docs"
-description: "iOS 用の Lookout for Work をインストールする方法について説明します。"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: iOS デバイスで Lookout for Work をインストールする必要がある | Microsoft Docs
+description: iOS 用の Lookout for Work をインストールする方法について説明します。
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 04/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7adab655-8317-4512-ba7d-beeaa25bbf6c
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: ae05df1478baa8b965cdcd11a47ffc0d694734ab
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fda95e461fe8412b26289bc601d8282588cd211c
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="install-lookout-for-work-on-your-ios-device"></a>iOS デバイスで Lookout for Work をインストールする
 
@@ -31,15 +31,15 @@ ms.lasthandoff: 01/25/2018
 
 1.  次のプロンプトが表示された場合は、**[インストール]** をタップし、デバイスへの Lookout for Work のインストールを許可します。
 
-  ![Lookout for Work をインストールするために [インストール] をタップする](./media/ios-mtd-install-app-request.png)
+      ![アプリのインストールを促す画面のスクリーンショット。[キャンセル] ボタンと [インストール] ボタンが表示されています。](/intune-user-help/media/ios-mts-install-app-request-after-1804.png)
 
-2. 次のメッセージが表示されたら**[設定]** をタップし、**[ロケーション サービス]** をオンにし、**[続行]** をタップします。
+2. 次のメッセージが表示されたら **[設定]** をタップし、**[ロケーション サービス]** をオンにし、**[続行]** をタップします。
 
-  ![[設定]、[ロケーション サービス] の順にタップする](./media/ios-lfw-allow-location-services.png)
+      ![[設定]、[ロケーション サービス] の順にタップする](./media/ios-lfw-allow-location-services.png)
 
 3. Lookout for Work に必要なアクセス許可を確認し、**[続行]** をタップします。
 
-  ![Lookout for Work に接続している状態になりました](./media/ios-lfw-permissions-lookout-needs.png)
+      ![Lookout for Work に接続している状態になりました](./media/ios-lfw-permissions-lookout-needs.png)
 
 4. Lookout for Work に通知の送信の許可を求めるプロンプトで **[許可]** をタップします。
 

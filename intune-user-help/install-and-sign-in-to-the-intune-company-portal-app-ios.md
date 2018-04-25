@@ -1,37 +1,37 @@
 ---
-title: "ポータル サイト アプリをインストールしてサインインする | Microsoft Docs"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: ポータル サイト アプリをインストールしてサインインする | Microsoft Docs
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 04/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8dfe66b4-f585-4862-87fa-7dbb4487549c
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d42c694bf4e7e960ba713760e8d8a5409dd0c0c0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 071ed6ca2889788c607625478f4f9d3d20e19662
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>ポータル サイト アプリをインストールしてサインインする
 
-ポータル サイトはアプリの一種であり、iOS デバイスにインストールすることで、会社または学校のアプリ、電子メール、およびネットワークにアクセスできるようになります。  アクセスを可能にするには、事前に、ポータル サイト アプリをインストールし、このアプリを使用して、Microsoft Intune にデバイスを登録しておく必要があります。 詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなりますか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)」を参照してください。
+ポータル サイトはアプリの一種であり、iOS デバイスにインストールすることで、会社または学校のアプリ、電子メール、およびネットワークにアクセスできるようになります。 アクセス許可を得るには、事前に、ポータル サイト アプリをインストールし、このアプリを使用して、Microsoft Intune にデバイスを登録しておく必要があります。 詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなりますか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)」を参照してください。
 
 1.  **App Store** を開いて、**Intune ポータル サイト**を探します。
 
-2.  **Microsoft Intune ポータル サイト アプリ**をダウンロードします。
+2.  **Intune ポータル サイト** アプリをダウンロードします。
 
-    ![Intune ポータル サイト アプリをダウンロードする](./media/ios-cpinstall-1-cpinstore.png)
+    ![App Store に表示された Intune ポータル サイト アプリのスクリーン ショット。](./media/cp_iosredesign_after_1803_04.png)
 
 3.  ポータル サイト アプリを開き、職場または学校の電子メール アドレスとパスワードを入力して、**[サインイン]** をタップします。
 
