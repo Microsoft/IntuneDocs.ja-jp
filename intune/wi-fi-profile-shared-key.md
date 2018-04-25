@@ -1,29 +1,33 @@
 ---
-title: "事前共有キーを使用して WiFi プロファイルを作成する - Microsoft Intune - Azure | Microsoft Docs"
-description: "カスタム プロファイルを使用して、事前共有キーで Wi-Fi プロファイルを作成し、Microsoft Intune で Android、Windows、EAP ベースの Wi-Fi プロファイル用のサンプルの XML コードを取得します。"
-keywords: 
+title: 事前共有キーを使用して WiFi プロファイルを作成する - Microsoft Intune - Azure | Microsoft Docs
+description: カスタム プロファイルを使用して、事前共有キーで Wi-Fi プロファイルを作成し、Microsoft Intune で Android、Windows、EAP ベースの Wi-Fi プロファイル用のサンプルの XML コードを取得します。
+keywords: ''
 author: mandia
 ms.author: MandiOhlinger
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85543d87ca79fa301ee1e9c242c053c1c34e18c3
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 27ced5debc7eb063be03f4e6a1932425717318af
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>カスタム デバイス プロファイルを使用し、事前共有キーを使用した WiFi プロファイルを作成する - Intune
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 通常、事前共有キー (PSK) は、WiFi ネットワーク、またはワイヤレス LAN のユーザーを認証するために使用されます。 Intune では、事前共有キーを使用して WiFi プロファイルを作成できます。 プロファイルを作成するには、Intune 内で**カスタム デバイス プロファイル**機能を使用します。 この記事には、EAP ベースの Wi-Fi プロファイルを作成する方法の例も含まれています。
+
+> [!IMPORTANT]
+>- Windows 10 で事前共有キーを使用すると、Intune に修復エラーが表示されます。 この場合は、Wi-Fi プロファイルがデバイスに正常に割り当てられ、プロファイルは想定どおりに動作します。
+>- 事前共有キーが含まれている Wi-Fi プロファイルをエクスポートする場合は、ファイルが保護されていることを確認します。 キーはプレーン テキスト形式であるため、ユーザーはキーを保護する必要があります。
 
 ## <a name="before-you-begin"></a>始める前に
 
@@ -38,7 +42,7 @@ Android、Windows、または EAP ベースの Wi-Fi プロファイル用の事
 1. プロファイルの名前と説明を入力します。
 2. 次のプロパティで新しい OMA-URI 設定を追加します。 
 
-   a. この Wi-Fi ネットワーク設定の名前を入力します。
+   」を参照します。 この Wi-Fi ネットワーク設定の名前を入力します。
 
    b. (省略可能) OMA-URI 設定の説明を入力するか、空白のままにします。
 
@@ -46,15 +50,15 @@ Android、Windows、または EAP ベースの Wi-Fi プロファイル用の事
 
    d. **OMA-URI**:
 
-    - **Android の場合**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-    - **Windows の場合**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **Android の場合**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+   - **Windows の場合**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-    > [!NOTE]
-    > 先頭にピリオドを必ず入力してください。
+     > [!NOTE]
+     > 先頭にピリオドを必ず入力してください。
 
-    SSID は、作成しているポリシーの SSID です。 たとえば、「`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`」と入力します。
+     SSID は、作成しているポリシーの SSID です。 たとえば、「`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`」と入力します。
 
-  e. **値フィールド**に、XML コードを貼り付けます。 この記事内の例を参照してください。 ご利用のネットワーク設定に一致する値にそれぞれ更新します。 コードのコメント セクションには、一部のポインターが含まれます。
+   e. **値フィールド**に、XML コードを貼り付けます。 この記事内の例を参照してください。 ご利用のネットワーク設定に一致する値にそれぞれ更新します。 コードのコメント セクションには、一部のポインターが含まれます。
 3. **[OK]** を選択して保存し、ポリシーを割り当てます。
 
     > [!NOTE]
@@ -203,7 +207,7 @@ EAP ベースの Wi-Fi プロファイルの XML コードの例は、次のと�
 
 1. 接続されているコンピューター、または最近ワイヤレス ネットワークに接続されたコンピューター上で、`\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}` フォルダーを開きます。
 
-  多くのワイヤレス ネットワークに接続されていないコンピューターを使用することをお勧めします。 そうしないと、正しいプロファイルを見つけるために各プロファイルを検索する必要がある可能性があります。
+   多くのワイヤレス ネットワークに接続されていないコンピューターを使用することをお勧めします。 そうしないと、正しいプロファイルを見つけるために各プロファイルを検索する必要がある可能性があります。
 
 2. XML ファイルを検索し、正しい名前のファイルを探します。
 3. 正しい XML ファイルを見つけたら、OMA-URI の設定ページの **[データ]** フィールドに、XML コードをコピーして貼り付けます。
@@ -211,6 +215,6 @@ EAP ベースの Wi-Fi プロファイルの XML コードの例は、次のと�
 ## <a name="best-practices"></a>ヒント集
 - PSK で Wi-Fi プロファイルを展開する前に、デバイスがエンドポイントに直接接続できることを確認します。
 
-- キー (パスワードまたはパスフレーズ) をローテーションで使用するときは、ダウンタイムを予想し、展開を適切に計画します。 新しい WiFi プロファイルは非稼働時間中にプッシュすることを検討してください。 また、接続に影響が出る可能性をユーザーに知らせます。
+- キー (パスワードまたはパスフレーズ) をローテーションで使用するときは、ダウンタイムを予想し、展開を適切に計画します。 新しい Wi-Fi プロファイルは非稼働時間中にプッシュすることを検討してください。 また、接続に影響が出る可能性をユーザーに知らせます。
 
 - 切り替えがスムーズに行われるように、エンド ユーザーのデバイスにインターネットへの代替接続があることを確認します。 たとえば、エンド ユーザーは、ゲスト WiFi (または他の何らかの WiFi ネットワーク) に戻したり、Intune と通信するために携帯電話接続を使うことができたりする必要があります。 追加の接続により、ユーザーは、企業の Wi-Fi プロファイルがデバイスで更新されたときに、ポリシーの更新を受信できます。

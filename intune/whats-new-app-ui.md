@@ -3,10 +3,10 @@ title: Intune とエンド ユーザー アプリの UI の更新
 titlesuffix: Microsoft Intune
 description: Microsoft Intune を使用したエンド ユーザー デバイスで動作するアプリの UI の変更点について説明します。
 keywords: ''
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/21/2018
+ms.date: 03/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,41 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7e553391bb2a98c5e57edf0a4388359703b9d550
-ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
+ms.openlocfilehash: 8da396e41844c854cd18a9384fe97ac0bee59355
+ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune とエンド ユーザー アプリの UI の更新
 このリリースの Microsoft Intune でエンド ユーザーに表示されるアプリの UI に加えられた変更について説明します。 これらの更新を理解すると、ユーザーとの通信や、展開のサポートのために作成したカスタム ドキュメントの更新に役立ちます。 会社のポータルを使用してヘルプデスクにサポートを求める場合に、直面している問題のトラブルシューティングをより適切に行う方法を理解するのにも役立ちます。
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-april-2-2018"></a>2018 年 4 月 2 日の週
+
+#### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866---"></a>iOS 用ポータル サイト アプリに関するユーザー エクスペリエンスの更新プログラム <!--1412866 -->
+iOS 用のポータル サイト アプリに対して、主要なユーザー エクスペリエンスの更新プログラムをリリースする予定です。 この更新プログラムでは、最新のルック アンド フィールを含む完全なビジュアル再設計が行われています。 アプリの機能を維持した上で、操作性とアクセシビリティが向上しています。  
+
+また、次のような更新が行われています。
+- iPhone X のサポート。
+- アプリの起動および読み込み応答を速くして、ユーザー時間を節約。
+- 最新の状態情報をユーザーに提供するための進行状況バーを追加。
+- ログのアップロード方法を向上。これにより、問題が生じた場合に、その内容を簡単にレポートできる。  
+
+|以前|これらの手順の完了後、|
+|---|---|
+|![01](/intune/media/cp_iosRedesign_before_1803_01.png)|![01](/intune/media/cp_iosRedesign_after_1803_01.png)|
+|*前のステップと結合*|![02](/intune/media/cp_iosRedesign_after_1803_02.png)|
+|![03](/intune/media/cp_iosRedesign_before_1803_02.png)|![03](/intune/media/cp_iosRedesign_after_1803_03.png)|
+
+#### <a name="improvements-to-the-language-in-the-company-portal-app-for-windows----1683758---"></a>Windows 用ポータル サイト アプリの言語を改善 <!---1683758--->
+ユーザーにわかりやすく、組織に特有の言語となるように、Windows 10 用ポータル サイトの言語に改善を加えました。
+
+|以前|これらの手順の完了後、|
+|---|---|
+|![01](./media/windows_enroll_before_1803.png)|![01](./media/windows_enroll_after_1803.png)|
+|![02](./media/windows_view_policy_issues_before_1803.png)|![02](./media/windows_view_policy_issues_after_1803.png)
 
 ## <a name="week-of-march-12-2018"></a>2018 年 3 月 12 日の週
 
@@ -34,12 +59,13 @@ Android 用 Intune ポータル サイト アプリを、Android の[マテリ�
 
 |以前|これらの手順の完了後、|
 |---|---|
-|![01](./media/android_about_before_1803.png)|![01](./media/android_contact_it_after_1803.png)|
+|![01](./media/android_about_before_1803.png)|![01](./media/androidCP_about_after_1803.png)|
 |![02](./media/android_contact_it_before_1803.png)|![02](./media/android_contact_it_after_1803.png)|
-|![03](./media/android_device_details_before_1803.png)|![03](./media/android_device_details_after_1803.png)|
-|![04](./media/android_device_details_update_settings_before_1803.png)|![04](./media/android_device_details_update_settings_after_1803.png)|
-|![05](./media/android_devices_before_1803.png)|![05](./media/android_devices_before_1803.png)|
+|![03](./media/android_devices_before_1803.png)|![03](./media/androidCP_devicelist_after_1803.png)|
+|![04](./media/android_device_details_before_1803.png)|![05](./media/androidCP_devicedetails_1_after1803.png)|
+|![05](./media/android_device_details_update_settings_before_1803.png)|![05](./media/androidCP_devicedetails_red_box_2_after1803.png)|
 |![06](./media/android_profile_before_1803.png)|![06](./media/android_profile_after_1803.png)|
+|![07](./media/androidCP_Setup01_before_1803.png)|![07](./media/androidCP_Setup01_after_1803.png)|
 
 
 ## <a name="week-of-november-27-2017"></a>2017 年 11 月 27 日の週
@@ -409,14 +435,6 @@ UI を更新し、ワークフローの簡素化とユーザー補助機能を�
 |---|---|
 |![更新済みのデバイス ページでは、デバイスが完全なリストの上にポップアップ表示されるのではなく、デバイス情報の上にきれいに配置されて表示されます。](./media/iwp-device-after-1803.png)|![以前のバージョンのデバイス ページ。](./media/iwp-device-before-1803.png)|
 |![更新されたアプリのインストール ページには、説明とさまざまなインストール情報 (発行日、バージョン、およびアプリの種類など) の上に、そのアプリがわかりやすく表示されます。](./media/iwp-app-install-after-1803.png)|![以前のバージョンのアプリのインストール ページ。](./media/iwp-app-install-before-1803.png)|
-
-### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>iOS 用ポータル サイト アプリに関するユーザー エクスペリエンスの更新プログラム <!--1412866-->
-
-iOS 用のポータル サイト アプリに対して、主要なユーザー エクスペリエンスの更新プログラムをリリースする予定です。 この更新プログラムは、新しいルック アンド フィール、使いやすさとアクセシビリティの向上を含め、ビジュアル デザインの刷新が特徴です。 現在の iOS ポータル サイト機能はすべて維持されます。
-
-お客様がフィードバックを使用および送信できるように、Apple TestFlight プログラムを使用して iOS 用の更新されたポータル サイト アプリのプレリリース バージョンを提供しています。 https://aka.ms/intune_ios_cp_testflight にサインアップして、TestFlight にアクセスします。 この更新プログラムに関する最新情報については、https://aka.ms/iOS_companyportal_update を参照してください。
-
-![新しい iOS ポータル サイト アプリのティーザー画像](./media/ios-cp-app-redesign-1801-teaser.png)
 
 ### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>ポータル Web サイトの UI の更新 <!--1313244 part 2-->
 

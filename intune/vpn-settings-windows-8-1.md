@@ -1,27 +1,27 @@
 ---
-title: "Windows 8.1 デバイス用の Microsoft Intune の VPN 設定"
-titleSuffix: 
-description: "Windows 8.1 を実行するデバイスでの VPN 接続の構成に使用できる Intune 設定について説明します。"
-keywords: 
+title: Windows 8.1 デバイス用の Microsoft Intune の VPN 設定
+titleSuffix: ''
+description: Windows 8.1 を実行するデバイスでの VPN 接続の構成に使用できる Intune 設定について説明します。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ced3e03fa337034076af75c7984a30cd75105bb
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: cbcc3be31a6d9de7ce87ea5b25b8c1a2c42b47cd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>Windows 8.1 を実行するデバイス用に Microsoft Intune で VPN 設定を構成する
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 この記事では、Windows 8.1 を実行するデバイスでの VPN 接続の構成に使用できる Intune 設定を示します。
 
@@ -61,26 +61,22 @@ ms.lasthandoff: 03/12/2018
 
 ```
     <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
-
 ```
 
 **CheckPoint Mobile VPN の例:**
 ```
     <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
-
 ```
 
 **SonicWall Mobile Connect の例:**
 ```
     <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
-
 ```
 
 **F5 Edge Client の例:**
 
 ```
     <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
-
 ```
 
 詳細については、カスタムの XML コマンドの記述方法に関する各製造元の VPN のドキュメントを参照してください。
@@ -89,7 +85,7 @@ ms.lasthandoff: 03/12/2018
 ## <a name="proxy-settings"></a>プロキシの設定
 
 - **[自動的にプロキシ設定を検出する]** - VPN サーバーが接続にプロキシ サーバーを必要とする場合は、デバイスで接続の設定を自動的に検出するかどうかを指定します。 詳細については、Windows Server のマニュアルを参照してください。
-- **[自動構成スクリプト]** - ファイルを使用してプロキシ サーバーを構成します。 構成ファイルが格納されている**プロキシ サーバーの URL** を入力します (たとえば、**http://proxy.contoso.com**)。
+- **[自動構成スクリプト]** - ファイルを使用してプロキシ サーバーを構成します。 構成ファイルが格納されている**プロキシ サーバーの URL** を入力します (例: **http://proxy.contoso.com**)。
 - **[プロキシ サーバーを使用する]** - プロキシ サーバーの設定を手動で入力する場合は、このオプションを有効にします。
     - **[アドレス]** - プロキシ サーバーのアドレスを (IP アドレスとして) 入力します。
     - **[ポート番号]** - プロキシ サーバーに関連付けられているポート番号を入力します。

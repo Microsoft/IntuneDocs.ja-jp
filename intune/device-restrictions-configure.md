@@ -1,27 +1,26 @@
 ---
-title: "Microsoft Intune デバイス制限設定の構成"
-titleSuffix: 
-description: "Microsoft Intune を使用して、管理対象デバイスの設定と機能を構成する方法について説明します。"
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Microsoft Intune - Azure でデバイスの制限設定を構成する | Microsoft Docs
+description: デバイス プロファイルを追加して、Microsoft Intune で Android、macOS、iOS、Windows Phone、Windows 10 の各デバイスの機能を制限します
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 3/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5ccb928b8ff3f9cebbd6f51d99cddd1f36fb074
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 13f93f9fcf813c2e86809d2cc20991d2fd635187
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune でデバイスの制限設定を構成する方法
+# <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune でデバイスの制限設定を構成する
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 デバイスの制限では、次のような広範なカテゴリにわたって、管理対象のさまざまな設定と機能を制御できます。
 - セキュリティ
@@ -35,12 +34,10 @@ ms.lasthandoff: 03/08/2018
 
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>デバイスの制限設定を含むデバイス プロファイルの作成
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3. **[Intune]** ページで、**[デバイス構成]** を選択します。
-2. **[デバイス構成]** ページの **[管理]** セクションで、**[プロファイル]** を選択します。
-3. **[プロファイル]** ページで、**[プロファイルの作成]** を選択します。
-4. **[プロファイルの作成]** ページで、デバイスの制限プロファイルの **[名前]** と **[説明]** を入力します。
+1. [Azure ポータル](https://portal.azure.com)にサインインします。
+2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
+3. **[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
+4. デバイス制限プロファイルの **[名前]** と **[説明]** を入力します。
 5. **[プラットフォーム]** ドロップダウン リストで、カスタム設定を適用するデバイス プラットフォームを選択します。 現時点では、デバイスの制限設定に対応している次のいずれかのプラットフォームを選択できます。
     - **Android**
     - **Android**

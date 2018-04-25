@@ -1,12 +1,11 @@
 ---
-title: Microsoft Intune を使用してデバイスを管理する
-titleSuffix: ''
-description: Intune で管理するデバイスを確認し、それらに対して各種操作を実行します。
+title: Microsoft Intune でデバイスを管理する - Azure | Microsoft Docs
+description: デバイス一覧の csv 形式へのエクスポートなど、Microsoft Intune で管理するデバイスを確認します。また、Azure Active Directory に参加しているデバイスを表示したり、TeamViewer Connector を使用して IT 管理者がリモートで Android デバイスのトラブルシューティングを行えるようにしたり、デバイスで実行できるすべての操作を表示します。
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/21/2018
+ms.date: 04/02/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,36 +13,42 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 436eeb306bf4ba343ae4d88a824aeed2077a3426
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9a003b9ec4208bc3449dfb1b3b2ee889a29b742b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune デバイスの管理とは
 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+IT 管理者はデータをリスクから保護しながら、ユーザーが自分の作業に必要なリソースが管理されたデバイスから提供されるようにする必要があります。
 
-IT 管理者はデータをリスクから保護しながら、エンド ユーザーが自分の作業に必要なリソースが管理されたデバイスから提供されるようにする必要があります。
+**[デバイス]** ワークロードでは、管理対象のデバイスについての情報が得られ、そのデバイスでリモート タスクを実行できます。
 
-**[デバイス]** ワークロードでは、管理対象のデバイスについての情報が得られ、そのデバイスでリモート タスクを実行できます。 このワークロードにアクセスするには、以下の手順に従います。
+## <a name="get-to-your-devices"></a>デバイスにアクセスする
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3. **[Intune]** で、**[デバイス]** を選択します。
-4. 次のデバイスに関する情報を確認して、リモート デバイスの操作を実行することができます。
-    - **[概要]** - 管理可能な登録済みデバイスのスナップショット。
-    - **[すべてのデバイス]** - 管理する登録済みデバイスの一覧。 表示する情報を絞り込むには、**[フィルター]** または **[列]** を選択します。 [デバイス インベントリを表示する](device-inventory.md)には、デバイスを選択します。
-    - **[Azure AD デバイス]** - Azure Active Directory (AD) に登録されている、または参加しているデバイスの一覧。 Azure AD のデバイス管理の概要については、[こちら](https://docs.microsoft.com/azure/active-directory/device-management-introduction)を参照してください。
-    - **[デバイス アクション]** - アクション、その状態、アクションを開始したユーザー、時刻などの、デバイスに実行されたリモート アクションの履歴。
+1. [Azure ポータル](https://portal.azure.com)にサインインします。
+2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
+3. **[デバイス]** を選択します。 このビューには、次のような、個々のデバイスの詳細情報と、デバイスでできることが示されます。
 
-        ![デバイス アクションの監視のスクリーンショット](./media/monitor-device-actions.png)
+   - **[概要]** には登録済みデバイスのビジュアル スナップショットが表示されます。また、Android、iOS などのさまざまなプラットフォームを使用しているデバイスの数が表示されます。
+   - **[すべてのデバイス]** には、管理する登録済みデバイスの一覧が示されます。
 
-    - **監査ログ** - Microsoft Intune で変更を行うアクティビティが記録されます。 詳細については、「[監査ログ](monitor-audit-logs.md)」を参照してください。
-    - **[TeamViewer Connector]** - TeamViewer サービスを使用すると、Intune で管理されている Android デバイスのユーザーが、IT 管理者からリモート アシスタンスを受けられるようになります。 TeamViewer については、[こちら](device-profile-android-teamviewer.md)を参照してください。
-    - **[ヘルプとサポート]** - トラブルシューティング、リクエスト サポート、または Intune の状態の表示を行います。  
-    
+     **エクスポート**機能を使用して、10,000 単位 (Internet Explorer) または 30,000 単位 (Edge、Chrome) ですべてのデバイスの .csv 一覧を作成します。
+
+     任意のデバイスを選択し、ハードウェアの詳細、インストールされているアプリ、そのコンプライアンス ポリシーの状態など、[デバイスに関する追加の詳細情報を表示](device-inventory.md)します。
+
+   - **[Azure AD デバイス]** には、Azure Active Directory (Azure AD) に登録されている、または参加しているデバイスの一覧が示されます。 Azure AD のデバイス管理の概要については、[こちら](https://docs.microsoft.com/azure/active-directory/device-management-introduction)を参照してください。
+   - **[デバイス アクション]** には、アクション、その状態、アクションを開始したユーザー、時刻など、さまざまなデバイスで実行されたリモート アクションの履歴が含まれます。
+
+     ![デバイス アクションの監視のスクリーンショット](./media/monitor-device-actions.png)
+
+   - **[監査ログ]** は、Intune で変更を行うアクティビティのレコードです。 [[監査ログ]](monitor-audit-logs.md) には詳細が示されます。
+   - **[TeamViewer Connector]** は、Intune で管理されている Android デバイスのユーザーが、IT 管理者からリモート アシスタンスを受けられるようにするサービスです。 TeamViewer については、[こちら](device-profile-android-teamviewer.md)を参照してください。
+   - **[ヘルプとサポート]** では、トラブルシューティングのヒント、サポートの依頼、Intune の状態の確認に関するショートカットが提供されます。
+
 ## <a name="available-device-actions"></a>行えるデバイス アクション
 表示されるアクションは、デバイス プラットフォームやデバイスの構成によって異なります。
 
@@ -62,7 +67,7 @@ IT 管理者はデータをリスクから保護しながら、エンド ユー�
     - [Android のリモート コントロール](device-profile-android-teamviewer.md)
     - [同期デバイス](device-sync.md)
 
-
 ## <a name="next-steps"></a>次の手順
 
+- **[すべてのデバイス]** で、デバイスを選択し、その特定のデバイスに関する詳細情報を表示します。
 - 管理しているデバイスで実行されているアクションの状態を確認するには、**[デバイス アクション]** を選びます。

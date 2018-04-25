@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 559866fff63b0ad77a43ce337adede5cd8b27302
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9781af943dbfb782cf367257127021473e35c168
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune と Managed Browser のポリシーを使用したインターネット アクセスの管理
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Managed Browser は、Microsoft Intune を使用して組織で展開できる、Web を参照するためのアプリケーションです。 Managed Browser ポリシーは、Managed Browser のユーザーがアクセスできる Web サイトを制限する許可リストまたはブロック リストを構成するものです。
 
@@ -99,52 +99,52 @@ Microsoft は、Microsoft の製品やサービスを改善するために、Man
 ### <a name="url-format-for-allowed-and-blocked-urls"></a>許可される URL とブロックされる URL の形式
 許可リストとブロック リストで URL を指定するときに使用できる形式とワイルドカードについて説明します。
 
--   ワイルドカード記号 (**&#42;**) は、以下の許可されているパターン リストの規則に従って使用できます。
+- ワイルドカード記号 (**&#42;**) は、以下の許可されているパターン リストの規則に従って使用できます。
 
--   リストに入力するときは、すべての URL の先頭に必ず **http** または **https** を付けてください。
+- リストに入力するときは、すべての URL の先頭に必ず **http** または **https** を付けてください。
 
--   アドレスにはポート番号を指定できます。 ポート番号を指定しない場合は、次の値が使用されます。
+- アドレスにはポート番号を指定できます。 ポート番号を指定しない場合は、次の値が使用されます。
 
-    -   http の場合はポート 80
+  -   http の場合はポート 80
 
-    -   https の場合はポート 443
+  -   https の場合はポート 443
 
-    ポート番号にワイルドカードを使用することはできません。 たとえば、**http&colon;//www&period;contoso&period;com:*;** and **http&colon;//www&period;contoso&period;com: /*;** はサポートされていません。
+  ポート番号にワイルドカードを使用することはできません。 たとえば、<strong>http&colon;//www&period;contoso&period;com:*;</strong> や <strong>http&colon;//www&period;contoso&period;com: /*;</strong> はサポートされていません。
 
--   URL を指定するときに使用できるパターンの詳細については、次の表を参照してください。
+- URL を指定するときに使用できるパターンの詳細については、次の表を参照してください。
 
-|[URL]|説明|［一致する］|［次の値に一致しない］|
-    |-------|---------------|-----------|------------------|
-    |http://www.contoso.com|単一のページと一致する|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-    |http://contoso.com|単一のページと一致する|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-    |http://www.contoso.com/&#42;|www.contoso.com で始まるすべての URL と一致する|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-    |http://&#42;.contoso.com/&#42;|contoso.com の下のすべてのサブドメインに一致する|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-    |http://www.contoso.com/images|単一のフォルダーと一致する|www.contoso.com/images|www.contoso.com/images/dogs|
-    |http://www.contoso.com:80|ポート番号を使用し、単一のページと一致する|http://www.contoso.com:80||
-    |https://www.contoso.com|セキュリティで保護された単一のページと一致する|https://www.contoso.com|http://www.contoso.com|
-    |http://www.contoso.com/images/&#42;|1 つのフォルダーおよびすべてのサブフォルダーと一致する|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|                  [URL]                  |                     説明                      |                                                ［一致する］                                                |                                ［次の値に一致しない］                                 |
+|---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+|        http://www.contoso.com         |              単一のページと一致する               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
+|          http://contoso.com           |              単一のページと一致する               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
+|    <http://www.contoso.com/&#42>;     | www.contoso.com で始まるすべての URL と一致する |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
+|    http://&#42;.contoso.com/&#42;     |     contoso.com の下のすべてのサブドメインに一致する     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
+|     http://www.contoso.com/images     |             単一のフォルダーと一致する              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
+|       http://www.contoso.com:80       |  ポート番号を使用し、単一のページと一致する   |                                       http://www.contoso.com:80                                       |                                                                               |
+|        https://www.contoso.com        |          セキュリティで保護された単一のページと一致する           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
+| <http://www.contoso.com/images/&#42>; |    1 つのフォルダーおよびすべてのサブフォルダーと一致する    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
 
--   指定することができない入力例を次に示します。
+- 指定することができない入力例を次に示します。
 
-    -   &#42;.com
+  - &#42;.com
 
-    -   &#42;.contoso/&#42;
+  - &#42;.contoso/&#42;
 
-    -   www.contoso.com/&#42;images
+  - www.contoso.com/&#42;images
 
-    -   www.contoso.com/&#42;images&#42;pigs
+  - www.contoso.com/&#42;images&#42;pigs
 
-    -   www.contoso.com/page&#42;
+  - www.contoso.com/page&#42;
 
-    -   IP アドレス
+  - IP アドレス
 
-    -   https://&#42;
+  - https://&#42;
 
-    -   http://&#42;
+  - http://&#42;
 
-    -   http://www.contoso.com:&#42;
+  - http://www.contoso.com:&#42;
 
-    -   http://www.contoso.com: /&#42;
+  - http://www.contoso.com: /&#42;
 
 ### <a name="how-conflicts-between-the-allow-and-block-list-are-resolved"></a>許可リストとブロック リストの競合を解決する方法
 複数の Managed Browser ポリシーがデバイスに展開され、設定が競合する場合、モード (許可またはブロック) と URL の一覧の両方が競合していると判断されます。 競合が発生した場合は、次の動作が適用されます。

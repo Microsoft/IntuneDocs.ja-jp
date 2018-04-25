@@ -1,28 +1,28 @@
 ---
-title: "Android の Microsoft Intune デバイス制限設定"
-titlesuffix: 
-description: "Android を実行するデバイスでデバイスの設定と機能を制御するために使用できる Intune の設定について説明します。"
-keywords: 
+title: Android の Microsoft Intune デバイス制限設定
+titlesuffix: ''
+description: Android を実行するデバイスでデバイスの設定と機能を制御するために使用できる Intune の設定について説明します。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f938967951045d24ae65315b3b4d40749c1bc20f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 77942ef6a5f25708ce43910cde94133e174b4731
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Microsoft Intune Android および Samsung KNOX Standard デバイスの制限設定 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 この記事では、Android を実行するデバイスに構成できるすべての Microsoft Intune デバイスの制限設定について説明します。
 

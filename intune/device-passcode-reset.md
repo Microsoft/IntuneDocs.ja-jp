@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/06/2018
+ms.date: 03/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,30 +13,30 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cca5922f036711093469e71489e267af53f05a9
-ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
+ms.openlocfilehash: 19b30315fa26dd53b5e383bc9e4bef5c65b89962
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Intune でデバイスのパスコードをリセットまたは削除する
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 デバイス用に新しいパスコードを作成するには、**[パスコードの削除]** アクションを使用します。
 
 ## <a name="supported-platforms"></a>サポートされているプラットフォーム
 
-- Windows 10 Creators Update までのリリースを含む、Windows Phone 8.1 (Azure Active Directory に参加していない)
-- Windows 10 Creators Update 以降
-- iOS
-- Android 7 より前の Android バージョン
+- 仕事用プロファイルと共に登録されている Android デバイス、バージョン 7.0 以降
+- Android デバイス、バージョン 6.0 以前
+- iOS 
+     
+## <a name="unsupported-platforms"></a>サポートされていないプラットフォーム
 
-次のシステムについては、この機能はサポートされません。
-
-- Windows
+- 仕事用プロファイルと共に登録されている Android デバイス、バージョン 6.0 以前
+- Android デバイス、バージョン 7.0 以降
 - macOS
-- Android for Work
+- Windows
 
 ## <a name="reset-a-passcode"></a>パスコードのリセット
 
@@ -44,6 +44,14 @@ ms.lasthandoff: 03/20/2018
 2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
 3. **[デバイス]**、**[すべてのデバイス]** の順に選択します。
 4. 管理対象のデバイスのリストから、デバイスを選択して **[...詳細を表示]** を選択します。 次に、**[パスコードの削除]** デバイス リモート アクションを選択します。
+
+## <a name="resetting-android-for-work-passcodes"></a>Android for Work パスコードのリセット
+
+サポートされている Android for Work デバイスでは、エンド ユーザーの新しいデバイス ロック解除パスワードまたはマネージド プロファイル チャレンジを受け取ります。 Android 7.0 以降と仕事用プロファイルのデバイスの場合、エンド ユーザーは、登録完了の直後、リセット パスコード トークンを有効にする旨が記載された通知を受け取ります。 仕事用プロファイル パスワードが要求され、設定されている場合、通知が表示されます。 パスコードが入力されると、通知が閉じられます。
+
+## <a name="resetting-ios-passcodes"></a>iOS パスコードのリセット
+
+パスコードは iOS デバイスから削除されます。 パスコード コンプライアンス ポリシーが設定されている場合、[設定] で新しいパスコードを設定するようにユーザーはデバイスから要求されます。 
 
 ## <a name="next-steps"></a>次の手順
 

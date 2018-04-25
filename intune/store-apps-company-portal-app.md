@@ -1,29 +1,29 @@
 ---
-title: "Windows 10 ポータル サイト アプリを手動で追加する"
+title: Windows 10 ポータル サイト アプリを手動で追加する
 titleSuffix: Microsoft Intune
-description: "Windows 10 ポータル サイト アプリを手動で追加する方法について説明します。"
-keywords: 
+description: Windows 10 ポータル サイト アプリを手動で追加する方法について説明します。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bfe1a2d3-f611-4dbb-adef-c0dff4d7b810
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 06ed9395d06e2d64edcedcaadfe819ad03f1d495
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: f2c7e449e9931bccd5e736bd09c33e0b42c623e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-using-microsoft-intune"></a>Microsoft Intune を使用して Windows 10 ポータル サイト アプリを手動で追加する
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 エンド ユーザーは Microsoft ストアからポータル サイト アプリをインストールすることで、デバイスを管理し、アプリをインストールすることができます。 ただし、ビジネスでポータル サイト アプリを割り当てる必要がある場合は、Intune をビジネス向け Microsoft ストアと統合していない場合でも、Intune から直接 Windows 10 ポータル サイト アプリを手動で割り当てることができます。
 
@@ -48,11 +48,11 @@ ms.lasthandoff: 03/12/2018
 
 7. [必要なフレームワーク] の下のすべてのパッケージをダウンロードします。 これは x86、x64、ARM アーキテクチャ用に実行する必要があります (パッケージは合計で 12 個になります)。
 8. ポータル サイト アプリを Intune にアップロードする前に、パッケージを次のように構成してフォルダー (C:&#92;ポータル サイトなど) を作成します。
-  - C:\ポータル サイトにポータル サイト パッケージを配置します。 また、この場所に依存関係サブフォルダーも作成します。  
+   - C:\ポータル サイトにポータル サイト パッケージを配置します。 また、この場所に依存関係サブフォルダーも作成します。  
 
-    ![APPXBUN ファイルと共に保存された依存関係フォルダーのイメージ](./media/Win10CP-Dependencies-save.png)
+     ![APPXBUN ファイルと共に保存された依存関係フォルダーのイメージ](./media/Win10CP-Dependencies-save.png)
 
-  - *依存関係*フォルダーに依存関係パッケージを配置します。 
+   - *依存関係*フォルダーに依存関係パッケージを配置します。 
 
      > [!NOTE]
      > 依存関係が正しい形式で配置されていない場合、Intune はパッケージのアップロード時にファイルを認識してアップロードできなくなり、アップロードは失敗し、エラーが表示されます。
@@ -81,18 +81,19 @@ Intune がユニバーサル アプリ用に依存関係をどのように処理
 
 この場合のアプリへの署名および割り当て方法は、次のとおりです。
 
-1. Microsoft Intune Windows 10 ポータル サイト アプリの署名スクリプトを [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) からダウンロードします。  このスクリプトでは、Windows SDK for Windows 10 をホスト コンピューターにインストールする必要があります。 Windows SDK for Windows 10 をダウンロードするには、[https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) にアクセスします。
+1. Microsoft Intune Windows 10 ポータル サイト アプリの署名スクリプトを [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) からダウンロードします。  このスクリプトでは、Windows SDK for Windows 10 をホスト コンピューターにインストールする必要があります。 Windows 10 用 Windows SDK をダウンロードするには、[https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) にアクセスします。
 2. 上記の説明のように、ビジネス向け Microsoft ストアから Windows 10 ポータル サイト アプリをダウンロードします。  
 3. スクリプト ヘッダーに記載された入力パラメーターを使用してスクリプトを実行し、Windows 10 ポータル サイト アプリに署名します (以下に抜粋)。 スクリプトに依存関係を渡す必要はありません。 依存関係は、アプリが Intune 管理コンソールにアップロードされる場合にのみ必要です。
 
-|パラメーター | 説明|
-| ------------- | ------------- |
-|InputWin10AppxBundle |ソース appxbundle ファイルが配置されるパス |
-|OutputWin10AppxBundle |署名された appxbundle ファイルの出力パス  Win81Appx Windows 8.1 または Windows Phone 8.1 ポータル サイト (.APPX) ファイルが配置されるパス|
-|PfxFilePath |Symantec エンタープライズ モバイル コード署名証明書 (.PFX) ファイルへのパス |
-|PfxPassword| Symantec エンタープライズ モバイル コード署名証明書のパスワード |
-|PublisherId |エンタープライズの発行者 ID 指定しない場合、Symantec エンタープライズ モバイル コード署名証明書の 'Subject' フィールドが使用されます。|
-|SdkPath | Windows SDK for Windows 10 のルート フォルダーへのパス この引数は省略可能で、既定値は ${env:ProgramFiles(x86)}\Windows Kits\10 です。|
+|       パラメーター       |                                                                        説明                                                                        |
+|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| InputWin10AppxBundle  |                                                  ソース appxbundle ファイルが配置されるパス                                                  |
+| OutputWin10AppxBundle | 署名された appxbundle ファイルの出力パス  Win81Appx Windows 8.1 または Windows Phone 8.1 ポータル サイト (.APPX) ファイルが配置されるパス |
+|      PfxFilePath      |                                       Symantec エンタープライズ モバイル コード署名証明書 (.PFX) ファイルへのパス                                        |
+|      PfxPassword      |                                         Symantec エンタープライズ モバイル コード署名証明書のパスワード                                          |
+|      PublisherId      |          エンタープライズの発行者 ID 指定しない場合、Symantec エンタープライズ モバイル コード署名証明書の 'Subject' フィールドが使用されます。           |
+|        SdkPath        |     Windows SDK for Windows 10 のルート フォルダーへのパス この引数は省略可能で、既定値は ${env:ProgramFiles(x86)}\Windows Kits\10 です。     |
+
 実行が終了したら、スクリプトにより Windows 10 ポータル サイト アプリの署名されたバージョンが出力されます。 その後、アプリの署名されたバージョンを Intune 経由で LOB アプリとして割り当てることができます。これにより、現在割り当てられているバージョンがこの新しいアプリにアップグレードされます。  
 
 ## <a name="next-steps"></a>次の手順

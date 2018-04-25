@@ -9,7 +9,7 @@
 
 ### <a name="configure-automatic-mdm-enrollment"></a>自動 MDM 登録の構成
 
-1. [Azure 管理ポータル](https://portal.azure.com) (https://manage.windowsazure.com) にサインインして、**[Azure Active Directory]** をクリックします。
+1. [Azure の管理ポータル](https://portal.azure.com) (https://manage.windowsazure.com)) にサインインして、**[Azure Active Directory]** を選択します。
 
    ![Azure Portal のスクリーンショット](../media/auto-enroll-azure-main.png)
 

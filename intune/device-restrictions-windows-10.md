@@ -1,28 +1,27 @@
 ---
-title: "Windows 10 の Microsoft Intune デバイス制限設定"
-titlesuffix: 
-description: "Windows 10 を実行するデバイスでデバイスの設定と機能を制御するために使用できる Microsoft Intune の設定について説明します。"
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Microsoft Intune での Windows 10 用のデバイスの制限設定 - Azure | Microsoft Docs
+description: Windows 10 を実行するデバイスでデバイスの設定と機能を制御するために使用できる Microsoft Intune の設定について説明します。
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 4/9/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eee23afb4e2398358dc2c6b19b7d85be6b4f9edb
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 83027a95edca04f4461cecab341deb3ec10680fb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
-#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Microsoft Intune での Windows 10 以降のデバイスの制限設定
+# <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune での Windows 10 (以降) の設定に対するデバイスの制限
 この記事では、Windows 10 を実行するデバイスに構成できるすべての Microsoft Intune デバイスの制限設定について説明します。
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>全般
 - **[画面キャプチャ (モバイルのみ)]** - ユーザーがデバイスの画面を画像としてキャプチャできるようにします。
@@ -48,9 +47,8 @@ ms.lasthandoff: 03/12/2018
 - **[デバイスの検出]** - 他のデバイスからのデバイスの検出をブロックします。
 - **[タスク スイッチャー (モバイルのみ)]** - デバイス上のタスク スイッチャーをブロックします。
 - **[SIM カードのエラー ダイアログ (モバイルのみ)]** - SIM カードが検出されない場合のデバイスでのエラー メッセージ表示をブロックします。
-- **[Ink Workspace]**\(Ink ワークスペース\) - ユーザーが Ink ワークスペースを使用するのを禁止します。 この設定が構成されていない場合、Ink ワークスペースは有効となり (機能がオン)、ユーザーはロック画面上でこれを使用できるようになります。
+- **[Ink Workspace]** \(Ink ワークスペース\) - ユーザーが Ink ワークスペースを使用するのを禁止します。 この設定が構成されていない場合、Ink ワークスペースは有効となり (機能がオン)、ユーザーはロック画面上でこれを使用できるようになります。
 - **自動再展開** - 管理権限を持つユーザーが、デバイス ロック画面で **CTRL + Win + R** を使用してすべてのユーザー データとユーザー設定を削除できます。 このデバイスは自動的に再構成され、管理対象に再登録されます。
-
 
 ## <a name="password"></a>パスワード
 -   **[パスワード]** - エンド ユーザーがデバイスにアクセスする際にパスワードの入力を要求します。
@@ -75,7 +73,6 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 -   **[ペアリングとプライバシーに関するユーザーの同意プロンプトの自動受け入れ]** – アプリの実行時にペアリングとプライバシーに関する同意メッセージを自動的に受け入れることを Windows に許可します。
 - **ユーザー アクティビティの公開**: これを **[ブロック]** に設定すると、タスク スイッチャーでの共有エクスペリエンスおよび最近使われたリソースの検出が行われなくなります。
 - **ローカル アクティビティの場合のみ**: これを **[ブロック]** に設定すると、ローカル アクティビティのみに基づいて、タスク スイッチャーでの共有エクスペリエンスおよび最近使われたリソースの検出が行われなくなります。
-
 
 デバイス上のすべてのアプリがアクセス可能な情報を定義できます。 **アプリごとのプライバシー例外**を使用して、アプリごとに例外を定義できます。
 
@@ -137,8 +134,6 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 -   **[ロック画面でのトースト通知]** – デバイス ロック画面でアラート メッセージの表示をブロックします。
 -   **[スクリーン タイムアウト (モバイルのみ)]** - 画面ロック後、画面がオフになるまでの時間を秒単位で指定します。
 
-
-
 ## <a name="app-store"></a>アプリ ストア
 
 -   **[App store (モバイルのみ)]** - Windows 10 Mobile デバイスでのアプリ ストアの使用を許可またはブロックします。
@@ -152,8 +147,6 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 -   **[システム ドライブ上でアプリをインストールします]** - アプリがデバイスのシステム ドライブ上にデータを格納しないようにします。
 -   **[ゲーム録画 (デスクトップのみ)]** - ゲームの録画とブロードキャストを許可するかどうか設定します。
 -   **[Apps from store only]\(ストアからのアプリのみ\)** - ユーザーがアプリ ストア以外の場所からアプリをインストールできるかどうかを構成します。
-
-
 
 ## <a name="edge-browser"></a>Microsoft Edge ブラウザー
 
@@ -181,8 +174,8 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 -   **[既定の検索エンジン]** - 使用する既定の検索エンジンを指定します。 エンド ユーザーはこの値をいつでも変更できます。
 -   **[終了時に閲覧データをクリアする]** – ユーザーが Edge を終了すると、履歴と閲覧データが消去されます。
 -   **[ライブ タイル データの収集]** – ユーザーが Microsoft Edge からスタート メニューにサイトをピン留めするとき、Windows がライブ タイルから情報を収集する行為を停止します。
--  **[お気に入り一覧]** - お気に入りのファイルへのパスを定義します。 たとえば、http://contoso.com/favorites.html です。
--  **[Restrict changes to Favorites]**\(お気に入りへの変更の制限\) - これを **[ブロック]** に設定すると、ユーザーはお気に入り一覧を追加、インポート、並べ替え、または編集できなくなります。 
+-  **[お気に入り一覧]** - お気に入りのファイルへのパスを定義します。 たとえば、http://contoso.com/favorites.html のように指定します。
+-  **[Restrict changes to Favorites]** \(お気に入りへの変更の制限\) - これを **[ブロック]** に設定すると、ユーザーはお気に入り一覧を追加、インポート、並べ替え、または編集できなくなります。 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
@@ -192,6 +185,7 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 
 ## <a name="search"></a>検索
 - **[セーフ サーチ (モバイルのみ)]** - Cortana が検索結果でアダルト コンテンツをフィルター処理する方法を制御します。 **[高]**、**[中程度]** を選択するか、エンド ユーザーが独自の設定を選択するのを許可します。
+- **[Search で Web 結果を表示する]** - デバイスで行われた検索での Web 結果の表示をブロックまたは許可します。
 
 ## <a name="cloud-and-storage"></a>クラウドとストレージ
 -   **[Microsoft アカウント]** - ユーザーがデバイスに Microsoft アカウントを関連付けられるようにします。
@@ -215,7 +209,6 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 -   **[Wi-Fi の手動設定]** - ユーザーが独自に Wi-Fi 接続を構成できるようにするか、Wi-Fi プロファイルで構成された接続のみを使用できるようにするかを制御します (Windows 10 Mobile のみ)。
 -   **[Wi-Fi スキャンの間隔]** - デバイスが Wi-Fi ネットワークをスキャンする頻度を指定します。 1 (頻度が最も多い) から 500 (頻度が最も少ない) までの値を指定できます。
 -   **[Bluetooth を使用できるサービス]** – 許可される Bluetooth のサービスとプロファイルの一覧を 16 進数文字列で指定します。
-
 
 ## <a name="control-panel-and-settings"></a>コントロール パネルと設定
 
@@ -258,41 +251,48 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 
 ## <a name="kiosk-preview"></a>キオスク (プレビュー)
 
--   **[キオスク モード]** - ポリシーによってサポートされる[キオスク モード](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc)の種類を識別します。 次のオプションがあります。
+キオスク デバイスは通常、1 つのアプリまたは特定のアプリのセットを実行します。 ユーザーは、キオスク アプリ以外のデバイスの機能にアクセスすることはできません。
 
-      - **[未構成]** (既定) - このポリシーでは、キオスク モードが有効になりません。 
-      - **[シングル アプリ キオスク]** - このプロファイルでは、デバイスがシングル アプリ キオスクとして有効になります。
-      - **[マルチ アプリ キオスク]** - このプロファイルでは、デバイスがマルチ アプリ キオスクとして有効になります。
+- **[キオスク モード]** - ポリシーによってサポートされるキオスク モードの種類を識別します。 次のオプションがあります。
 
-    シングル アプリ キオスクに必要な設定:
+  - **[未構成]** (既定) - このポリシーでは、キオスク モードが有効になりません。 
+  - **[シングル アプリ キオスク]** - このプロファイルの場合、デバイスで 1 つのアプリのみを実行できます。 ユーザーがサインインすると、特定のアプリが起動します。 また、このモードでは、ユーザーによる新しいアプリを開く操作や、実行中のアプリを変更する操作が制限されます。
+  - **[マルチ アプリ キオスク]** - このプロファイルでは、デバイスは複数のアプリを実行できます。 ユーザーはプロファイルに追加されているアプリだけを利用できます。 マルチ アプリ キオスク (または固定目的デバイス) の利点は、ユーザーがアクセスできるのは必要なアプリだけであり、必要のないアプリはビューから削除されているので、わかりやすいエクスペリエンスがユーザーに提供されることです。
 
-      - **[ユーザー アカウント]** - (デバイスの) ローカル ユーザー アカウントか、キオスク アプリに関連付けられている Azure AD アカウント ログインを指定します。 Azure AD ドメインに参加しているアカウントについては、`domain\\username@tenant.org` の形式でアカウントを指定します。
+#### <a name="single-app-kiosks"></a>シングル アプリ キオスク
+次の設定を入力します。
 
-         公共の場におけるデバイスについては、許可されていないアクティビティを禁止するために最小特権のアカウントを使用します。  
+- **[ユーザー アカウント]** - (デバイスの) ローカル ユーザー アカウントか、キオスク アプリに関連付けられている Azure AD アカウント ログインを入力します。 Azure AD ドメインに参加しているアカウントについては、`domain\username@tenant.org` 形式を使用してアカウントを入力します。 
 
-      - **アプリのアプリケーション ユーザー モデル ID (AUMID)** - キオスク アプリの AUMID を指定します。 詳細については、「[Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)」 (インストール済みアプリのアプリケーション ユーザー モデル ID を見つける) を参照してください。
+    自動ログオンが有効になっている公開環境のキオスクの場合、最小特権 (ローカルの標準ユーザー アカウントなど) を持つユーザーの種類を使用する必要があります。 キオスク モードの Azure Active Directory (AD) アカウントを構成するには、`AzureAD\user@contoso.com` 形式を使用します。
 
-    [マルチ アプリ キオスク](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune)には、キオスク構成が必要です。 **[追加]** ボタンを使用してキオスク構成を作成するか、既存の構成を選びます。
+- **[アプリのアプリケーション ユーザー モデル ID (AUMID)]** - キオスク アプリの AUMID を入力します。 詳細については、「[Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)」 (インストール済みアプリのアプリケーション ユーザー モデル ID を見つける) を参照してください。
 
-    マルチ アプリ キオスクの構成には、次の設定が含まれます。
+#### <a name="multi-app-kiosks"></a>マルチ アプリ キオスク
+[マルチ アプリ キオスク](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune)は、許可されているアプリがリストされているキオスク構成と、その他の設定を使います。 
 
-    - **[キオスク構成名]** - 特定の構成の識別に使用されるフレンドリ名。
+**[追加]** ボタンを使って、キオスク構成を作成 (または既存の構成を選択) します。 次に、以下の設定を入力します。
 
-    - 1 つまたは複数の**キオスク アプリ**の構成要素:
+- **[キオスク構成名]** - 構成の識別に使われるフレンドリ名を入力します。
 
-        - **アプリの種類**。キオスク アプリの種類を指定します。  サポートされる値には次のものが含まれます。   
+- **[キオスク アプリ]** - [スタート] メニューで利用できるアプリを入力します。 追加したアプリだけを、ユーザーは開くことができます。
 
-            - **Win32 アプリ** - 従来のデスクトップ アプリ。 (デバイスに関しては、実行可能ファイルの完全修飾パス名が必要です。)
+  - **[アプリの種類]** - キオスク アプリの種類を選びます。
+    - **Win32 アプリ** - 従来のデスクトップ アプリ。 デバイスに関しては、実行可能ファイルの完全修飾パス名が必要です。
+    - **UWP アプリ** - ユニバーサル Windows アプリ。 [アプリの AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) が必要です。
 
-            - **UWP アプリ** - ユニバーサル Windows アプリ。 [アプリの AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) が必要です。
+  - **[識別子]** - 実行可能ファイル (Win32 アプリ) または[アプリの AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP アプリ) の完全修飾パス名を入力します。
 
-        - **アプリ識別子** - 実行可能ファイル (Win32 アプリ) または[アプリの AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP アプリ) の完全修飾パス名を指定します。
+- **[タスク バー]**: キオスクでのタスク バーを **[有効]** (表示) にするか、**[未構成]** (非表示) のままにします。
 
-    - **タスク バー**は、タスク バーがキオスクに表示されるか (**[有効]**)、非表示になるか (**[未構成]**) が示されます。
+- **[スタート メニューのレイアウト]** - アプリを [スタート] メニューに表示する法を説明する XML ファイルを入力します。 ガイダンスおよび XML のサンプルについては、「[スタート画面のレイアウトのカスタマイズとエクスポート](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout)」をご覧ください。
 
-    - **[スタート メニューのレイアウト]** - アプリを [[スタート] メニューに表示する](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)方法を説明する XML ファイルを指定します。
 
-    - **[割り当てられたユーザー]** - キオスク構成に関連付けられている 1 つまたは複数のユーザー アカウントを指定します。 アカウントは、デバイスのローカル アカウントか、キオスク アプリに関連付けられている Azure AD アカウント ログインになります。 ドメイン参加のアカウントを `domain\\username@tenant.org` 形式で指定します。
+  XML ファイルの使用と作成については、「[複数のアプリを実行する Windows 10 キオスクを作成する](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)」をご覧ください。
+
+- **[割り当てられたユーザー]** - 追加したアプリを使用できるユーザー アカウントを追加します。 サインインしたアカウントは、構成で定義されているアプリのみを利用できます。 アカウントは、デバイスのローカル アカウントか、キオスク アプリに関連付けられている Azure AD アカウント ログインになります。
+
+    自動ログオンが有効になっている公開環境のキオスクの場合、最小特権 (ローカルの標準ユーザー アカウントなど) を持つユーザーの種類を使用する必要があります。 キオスク モードの Azure Active Directory (AD) アカウントを構成するには、`domain\user@tenant.com` 形式を使用します。
 
 ## <a name="windows-defender-antivirus"></a>Windows Defender ウイルス対策
 
@@ -328,14 +328,11 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
     -   **ユーザー定義**
     -   **ブロック**
 
-
-
 ### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender ウイルス対策の除外
 
 -   **[スキャンおよびリアルタイム保護から除外するファイルとフォルダー]** - **C:\Path** や **%ProgramFiles%\Path\filename.exe** などのファイルやフォルダーを、除外リストに 1 つ以上追加します。 これらのファイルとフォルダーは、リアルタイムまたはスケジュールされたスキャンの対象外となります。
 -   **[スキャンおよびリアルタイム保護から除外するファイル拡張子]** - **jpg** や **txt** などのファイル拡張子を除外リストに 1 つ以上追加します。 これらの拡張子が付いたファイルは、リアルタイムまたはスケジュールされたスキャンの対象外となります。
 -   **[スキャンとリアルタイム保護から除外するプロセス]** - **.exe**、**.com**、**.scr** などの種類のプロセスを除外リストに 1 つ以上追加します。 これらのプロセスはリアルタイム スキャンや定期スキャンには含まれません。
-
 
 ## <a name="network-proxy"></a>ネットワーク プロキシ
 
@@ -348,9 +345,7 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
     -   **[プロキシの例外]** - プロキシ サーバーを使用してはいけない URL を入力します。 各項目の区切りにはセミコロンを使用します。
     -   **[ローカル アドレスにはプロキシ サーバーを使わない]** - イントラネットでローカル アドレスのプロキシ サーバーを使用しない場合、このオプションを有効にします。
 
-
 ## <a name="windows-spotlight"></a>Windows スポットライト
-
 
 - **Windows スポットライト** - この設定を使用し、Windows 10 デバイスですべての Windows スポットライト機能をブロックします。 この設定をブロックすると、次の設定は利用できません。
     - **[ロック画面の Windows スポットライト]** – Windows スポットライトで、デバイス ロック画面の情報表示を停止します。
@@ -360,7 +355,6 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
     - **[アクション センターの Windows スポットライト]** – 新しいアプリやセキュリティ コンテンツなど、Windows アクション センターの Windows スポットライト提案表示を停止します。
     - **[Windows スポットライトのパーソナル化]** – Windows スポットライトで、デバイスの使用状況に基づいて結果をパーソナル化することを停止します。
     - **[Windows へようこそのエクスペリエンス]** – 新機能や更新機能に関する情報をユーザーに表示する [Windows へようこそ] をブロックします。
-
 
 ## <a name="projection"></a>プロジェクション
 
@@ -394,15 +388,3 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 - **[メッセージ同期 (モバイルのみ)]** - Messaging Everywhere とテキスト メッセージのバックアップと復元を無効にします。
 - **[MMS (モバイルのみ)]** - デバイスの MMS 送受信機能を無効にします。
 - **[RCS (モバイルのみ)]** - デバイスの Rich Communication Services 送受信機能を無効にします。
-
-
-
-
-
-
-
-
-
-
-
-
