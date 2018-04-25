@@ -1,25 +1,25 @@
 ---
-title: "モバイル デバイス登録の前提条件"
-description: "モバイル デバイス管理 (MDM) の前提条件の設定、およびさまざまなオペレーティング システムに登録する準備。"
-keywords: 
+title: モバイル デバイス登録の前提条件
+description: モバイル デバイス管理 (MDM) の前提条件の設定、およびさまざまなオペレーティング システムに登録する準備。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 05/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 57dfc1bf2765de6c2e02352caca58f3859742fd6
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Intune でのモバイル デバイス管理の前提条件
 
@@ -55,7 +55,7 @@ MDM 機関では、一連のデバイスを管理するためのアクセス許�
 
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[管理]** &gt; **[モバイル デバイス管理]** の順に選択します。
 
-2.  **[タスク]** リストで **[モバイル デバイス管理機関の設定]**をクリックします。 **[MDM 機関の設定]** ダイアログ ボックスが開きます。
+2.  **[タスク]** リストで **[モバイル デバイス管理機関の設定]** をクリックします。 **[MDM 機関の設定]** ダイアログ ボックスが開きます。
 
     ![[MDM 機関の設定] ダイアログ ボックス](../media/intune-mdm-authority.png)
 
@@ -88,14 +88,14 @@ MDM 機関では、一連のデバイスを管理するためのアクセス許�
 |  IT 部門の電話番号   |     20     |                                                           <strong>[IT に連絡]</strong> ページに表示される連絡先の電話番号です。                                                           |
 |  IT 部門の電子メール アドレス  |     40     |             <strong>[IT に連絡]</strong> ページに表示される連絡先の電子メール アドレスです。 <strong>alias@domainname.com</strong> の形式で有効な電子メール アドレスを入力する必要があります。              |
 |    追加情報     |    120     |                                                            <strong>[IT に連絡]</strong> ページに表示される情報です。                                                             |
-| 会社のプライバシーに関する声明の URL |     79     | ポータル サイトでユーザーがプライバシー リンクをクリックすると表示される、各社のプライバシーに関する声明を指定できます。 https://www.contoso.com の形式で URL を入力します。 |
+| 会社のプライバシーに関する声明の URL |     79     | ポータル サイトでユーザーがプライバシー リンクをクリックすると表示される、各社のプライバシーに関する声明を指定できます。 https://www.contoso.com の形式で有効な URL を入力する必要があります。 |
 
 ### <a name="support-contacts"></a>サポートの連絡先
 サポート Web サイトは、ポータル サイトに表示されます。ユーザーは、サポート サイトからオンライン サポートを利用できます。
 
 |フィールド名|最大長|詳細情報|
     |----------|------------------------|----------------|
-    |サポート Web サイトの URL|150|ユーザーが使用するサポート Web サイトがある場合、その URL を指定します。 URL は、https://www.contoso.com という形式にする必要があります。URL を指定しない場合、ポータル サイトの **[IT に連絡]** ページのサポート Web サイトには何も表示されません。|
+    |サポート Web サイトの URL|150|ユーザーが使用するサポート Web サイトがある場合、その URL を指定します。 URL は、https://www.contoso.com の形式である必要があります。URL を指定しない場合、ポータル サイトの **[IT に連絡]** ページのサポート Web サイトには何も表示されません。|
     |Web サイト名|40|サポート Web サイトの URL に表示されるフレンドリ名です。 サポート Web サイトの URL を指定し、フレンドリ名を指定しない場合、ポータル サイトの **[IT に連絡]** ページに **[IT Web サイトに移動する]** が表示されます。|
 
 

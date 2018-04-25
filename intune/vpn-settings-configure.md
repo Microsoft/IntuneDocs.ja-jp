@@ -1,31 +1,39 @@
 ---
-title: "Microsoft Intune で VPN の設定を構成する方法"
-titleSuffix: 
-description: "Microsoft Intune を使用して、管理対象デバイスに仮想プライベート ネットワーク (VPN) 接続を構成する方法について説明します。"
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Microsoft Intune で VPN デバイス プロファイルを作成する - Azure | Microsoft Docs
+description: iOS デバイスについて、仮想プライベート ネットワーク (VPN) 接続の種類を表示し、Azure Portal で VPN デバイス プロファイルを作成し、Microsoft Intune で証明書またはユーザー名とパスワードを使って VPN プロファイルをセキュリティで保護するオプションを確認します。
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 04/5/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9480f19a8cd71e001d196674d3e285c8f2a8bb09
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 792e2ae45e6331b91b1727af113604186c9bb72a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Microsoft Intune で VPN の設定を構成する方法
+# <a name="create-vpn-profiles-in-intune"></a>Intune で VPN プロファイルを作成する
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 仮想プライベート ネットワーク (VPN) を使用すると、会社のユーザーが社内ネットワークにリモート アクセスする際にセキュリティで保護することができます。 デバイスは、VPN 接続プロファイルを使用して、VPN サーバーとの接続を開始します。 Microsoft Intune の **VPN プロファイル**を使用して、VPN 設定を組織内のユーザーとデバイスに割り当て、社内ネットワークに簡単かつ安全に接続できるようにします。
 
-たとえば、すべての iOS デバイスに対して、企業ネットワーク上のファイル共有に接続するために必要な設定をプロビジョニングするとします。 企業ネットワークに接続するために必要な設定を含む VPN プロファイルを作成し、そのプロファイルを iOS デバイスを使用しているすべてのユーザーに割り当てます。 使用できるネットワークの一覧に VPN 接続が表示されるので、ユーザーは最小限の労力で接続できます。
+たとえば、すべての iOS デバイスに対して、企業ネットワーク上のファイル共有に接続するために必要な設定をプロビジョニングするとします。 会社のネットワークに接続するための設定が含まれる VPN プロファイルを作成します。 その後、iOS デバイスを持っているすべてのユーザーにこのプロファイルを割り当てます。 使用できるネットワークの一覧に VPN 接続が表示されるので、ユーザーは最小限の労力で接続できます。
+
+Intune のカスタム構成ポリシーを使用して、次のプラットフォームの VPN プロファイルを作成できます。
+
+* Android 4 以降
+* Windows 8.1 以降を実行する登録済みのデバイス
+* Windows Phone 8.1 以降
+* Windows 10 デスクトップを実行する登録済みのデバイス
+* Windows 10 Mobile
+* Windows Holographic for Business
 
 ## <a name="vpn-connection-types"></a>VPN 接続の種類
 
@@ -46,41 +54,36 @@ ms.lasthandoff: 03/12/2018
 |PPTP|[いいえ]|[いいえ]|[いいえ]|[いいえ]|[いいえ]|はい|
 |カスタム|[いいえ]|はい|はい|[いいえ]|[いいえ]|[いいえ]|
 
-
 > [!IMPORTANT]
 > デバイスに割り当てられた VPN プロファイルを使用する前に、プロファイル用の該当する VPN アプリをインストールする必要があります。 [Microsoft Intune でのアプリ管理の概要](app-management.md)に関する記事の情報を参考にして、Intune を使ってアプリを割り当ててください。  
 
-[カスタム VPN プロファイルの作成](custom-vpn-profiles-create.md)に関する記事では、URI 設定を使用してカスタム VPN プロファイルを作成する方法について説明しています。     
+URI の設定を使ってカスタム VPN プロファイルを作成する方法については、[カスタム VPN プロファイルの作成](custom-settings-configure.md)に関するページをご覧ください。
 
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>VPN 設定を含むデバイス プロファイルの作成
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
-2. **[デバイス構成]** ウィンドウで、**[管理]** > **[プロファイル]** の順に選択します。
-3. [プロファイル] ウィンドウで **[プロファイルの作成]** を選択します。
-4. **[プロファイルを作成します]** ウィンドウで、VPN プロファイルの**名前**と**説明**を入力します。
+1. [Azure ポータル](https://portal.azure.com)にサインインします。
+2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
+3. **[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
+4. VPN プロファイルの **[名前]** と **[説明]** を入力します。
 5. **[プラットフォーム]** ドロップダウン リストで、VPN 設定を適用するデバイス プラットフォームを選択します。 現時点では、VPN デバイス設定に対応している次のいずれかのプラットフォームを選択できます。
-    - **Android**
-    - **Android for Work**
-    - **iOS**
-    - **macOS**
-    - **Windows Phone 8.1**
-    - **Windows 8.1 以降**
-    - **Windows 10 以降**
+  - **Android**
+  - **Android for Work**
+  - **iOS**
+  - **macOS**
+  - **Windows Phone 8.1**
+  - **Windows 8.1 以降**
+  - **Windows 10 以降**
 6. **[プロファイルの種類]** ドロップダウン リストで、**[VPN]** を選択します。
 7. 選択したプラットフォームによって構成できる設定が異なります。 各プラットフォームの詳細な設定については、次のいずれかのトピックを参照してください。
-    - [Android と Android for Work の設定](vpn-settings-android.md)
-    - [iOS の設定](vpn-settings-ios.md)
-    - [macOS の設定](vpn-settings-macos.md)
-    - [Windows Phone 8.1 の設定](vpn-settings-windows-phone-8-1.md)
-    - [Windows 8.1 の設定](vpn-settings-windows-8-1.md)
-    - [Windows 10 の設定](vpn-settings-windows-10.md) (Windows Holographic for Business を含む)
-8. 完了したら、**[プロファイルの作成]** ウィンドウに戻り、**[作成]** を選択します。
+  - [Android と Android for Work の設定](vpn-settings-android.md)
+  - [iOS の設定](vpn-settings-ios.md)
+  - [macOS の設定](vpn-settings-macos.md)
+  - [Windows Phone 8.1 の設定](vpn-settings-windows-phone-8-1.md)
+  - [Windows 8.1 の設定](vpn-settings-windows-8-1.md)
+  - [Windows 10 の設定](vpn-settings-windows-10.md) (Windows Holographic for Business を含む)
+8. 完了したら、プロファイルを **[作成]** します
 
-プロファイルが作成され、プロファイルの一覧ウィンドウに表示されます。
-このプロファイルをグループに割り当てる場合は、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事を参照してください。
-
+プロファイルが作成され、プロファイル一覧に表示されます。 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルの割り当て](device-profile-assign.md)に関するページを参照してください。
 
 ## <a name="methods-of-securing-vpn-profiles"></a>VPN プロファイルをセキュリティで保護する方法
 
@@ -88,7 +91,7 @@ VPN プロファイルは、さまざまな製造元から提供される多く�
 
 ### <a name="certificates"></a>証明書
 
-VPN プロファイルを作成するときに、Intune で事前に作成した SCEP または PKCS の証明書プロファイルを選択します。 このプロファイルは ID 証明書と呼ばれます。 ユーザーのデバイスが接続を許可されていることを示すために作成した信頼済み証明書プロファイル (または、*ルート証明書*) に対して認証を行うために使用されます。 信頼できる証明書は、VPN 接続を認証するコンピューター (通常は VPN サーバー) に割り当てられます。
+VPN プロファイルを作成するときに、Intune で事前に作成した SCEP または PKCS の証明書プロファイルを選択します。 このプロファイルは ID 証明書と呼ばれます。 ユーザーのデバイスの接続を許可するために作成した信頼済み証明書プロファイル (または、"*ルート証明書*") に対して認証を行うために使用されます。 信頼できる証明書は、VPN 接続を認証するコンピューター (通常は VPN サーバー) に割り当てられます。
 
 Intune で証明書プロファイルを作成および使用する方法の詳細については、[Microsoft Intune で証明書を構成する方法](certificates-configure.md)に関する記事を参照してください。
 

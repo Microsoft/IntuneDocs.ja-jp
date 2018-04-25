@@ -1,29 +1,29 @@
 ---
-title: "デバイスをインベントリから削除する"
-description: "Intune では、デバイスのポリシーとポータル サイトを削除することによって Intune の管理対象からデバイスを削除する選択的ワイプとフル ワイプの両方をサポートします。"
-keywords: 
+title: デバイスをインベントリから削除する
+description: Intune では、デバイスのポリシーとポータル サイトを削除することによって Intune の管理対象からデバイスを削除する選択的ワイプとフル ワイプの両方をサポートします。
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 02/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d304e0d27b6aa1ee568bc71272781f44efdce121
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d9dc8fdd7437c9de49df9ea9a4c9641ac9d590de
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="retire-devices-from-intune-management"></a>Intune の管理からデバイスを削除する
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 会社所有のデバイスであっても個人所有のデバイスであっても、デバイスを Intune の管理対象から削除することが必要となる場合があります。
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 10/10/2017
 
 ## <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Azure Active Directory ポータルでデバイスを削除するには
 
-1.  組織の資格情報で [http://aka.ms/accessaad](http://aka.ms/accessaad) または [https://portal.office.com](https://portal.office.com) にサインインし、**[管理センター]** &gt; **[Azure AD]** の順に選択します。
+1.  組織の資格情報で [http://aka.ms/accessaad](http://aka.ms/accessaad) または [https://portal.office.com](https://portal.office.com) にサインインし、**[管理センター]**、**[Azure AD]** の順に選択します。
 
 2.  組織 ID がない場合は、Azure サブスクリプションを作成します。 有料アカウントがある場合、クレジット カードや支払いは不要です。 **[Register your free Azure Active Directory]** (無料 Azure Active Directory に登録) サブスクリプション リンクを選択します。
 

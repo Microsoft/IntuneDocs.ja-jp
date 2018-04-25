@@ -1,24 +1,24 @@
 ---
-title: "Microsoft Intune App SDK の概要"
-description: "Microsoft Intune でモバイル アプリケーション管理 (MAM) 用のモバイル アプリをすぐに有効にできます。"
-keywords: 
+title: Microsoft Intune App SDK の概要
+description: Microsoft Intune でモバイル アプリケーション管理 (MAM) 用のモバイル アプリをすぐに有効にできます。
+keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
 ms.date: 01/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5827c82d84be45020aa2bdec16c92e0296431cf8
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e4437e3dbf7e942f084a0c441af7946b53c6d54d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune アプリ SDK の概要
 
@@ -69,7 +69,7 @@ Microsoft が、アンケートに入力された電子メール アドレスを
 
 アプリが Xamarin アプリまたは Cordova アプリの場合は、次の SDK バリアントを使用してください。
 
-* [Intune App SDK Xamarin コンポーネント](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
+* [Intune App SDK Xamarin Bindings](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
 * [Intune App SDK Cordova プラグイン](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
 
 リポジトリのフォークとプルに使用できる GitHub アカウントにサインアップすることをお勧めします。 GitHub では、Microsoft 製品チームとのやり取り、問題の提出と迅速な応答、リリース ノートの表示、Microsoft へのフィードバックの提供が可能です。 Intune アプリ SDK GitHub についてご不明な点がある場合は、msintuneappsdk@microsoft.com にお問い合わせください。
@@ -84,7 +84,7 @@ Microsoft が、アンケートに入力された電子メール アドレスを
 
 * **[Intune App SDK Cordova プラグイン ガイド](app-sdk-cordova.md)**: このドキュメントは、iOS アプリと Android アプリを Cordova を使用してビルドし、Intune アプリ保護ポリシーを適用するのに役立ちます。
 
-* **[Intune App SDK Xamarin コンポーネント ガイド](app-sdk-xamarin.md)**: このドキュメントは、iOS アプリと Android アプリを Cordova を使用してビルドし、Intune アプリ保護ポリシーを適用するのに役立ちます。
+* **[Intune App SDK Xamarin Bindings ガイド](app-sdk-xamarin.md)**: このドキュメントは、iOS アプリと Android アプリを Xamarin を使用してビルドし、Intune アプリ保護ポリシーを適用するのに役立ちます。
 
 
 
@@ -142,7 +142,7 @@ Intune|iOS|Android|説明|
 
 - **CFBundleShortVersionString**  
     バンドルのリリース バージョン番号を指定します。 この番号でアプリのリリース バージョンが識別されます。 この番号はエンド ユーザーがアプリを参照するために使用されます。
- - **CFBundleVersion**  
+  - **CFBundleVersion**  
     バンドルのビルド バージョン。バンドルのイテレーションが識別されます。 この番号でリリース バンドルまたは未リリース バンドルが識別されます。 この番号はアプリの検出に利用されます。
 
 #### <a name="android"></a>Android
