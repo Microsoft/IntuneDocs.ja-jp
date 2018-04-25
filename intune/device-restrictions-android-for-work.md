@@ -2,8 +2,8 @@
 title: Microsoft Intune - Azure で Android for Work のデバイス制限 | Microsoft Docs
 description: Android for Work を実行しているデバイスでは、デバイス上で一部の設定を制限することができます。これには、コピーと貼り付け、通知の表示、アプリのアクセス許可、データの共有、パスワード長、サインイン エラー、指紋によるロック解除、パスワードの再利用、勤務先の連絡先の Bluetooth 共有の有効化が含まれます。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/19/2018
 ms.topic: article
@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c155817e0bc9df00087908a86fcfcb675fa0ad97
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 11ce7fa7fa4d48d9cc292b7b6565b6b4f2be2dc4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune での Work デバイスの制限設定
 
 この記事では、Android for Work を実行するデバイスに構成できるすべての Microsoft Intune デバイス制限設定を一覧表示します。
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>仕事用プロファイル設定
 
@@ -48,6 +48,8 @@ ms.lasthandoff: 03/23/2018
    エンド ユーザーが作業プロファイルのアカウントを手動で追加または削除できないようにします。
 
    たとえば、Android for Work プロファイルに Gmail アプリを展開する場合、エンド ユーザーがこの作業プロファイルのアカウントを追加または削除できないようにすることができます。
+
+- **[Bluetooth 経由での連絡先の共有]**: Bluetooth を使用してペアリングされる、自動車などの別のデバイスから勤務先の連絡先にアクセスできるようにします。 既定では、この設定は構成されておらず、仕事用プロファイルの連絡先は表示されません。 **[有効にする]** を選択して、この共有を許可し、仕事用プロファイルの連絡先を表示します。 この設定は、Android OS v6.0 以降の Android 仕事用プロファイル デバイスに適用されます。
 
 ### <a name="work-profile-password"></a>仕事用プロファイルのパスワード
 

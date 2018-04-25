@@ -13,15 +13,15 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e4581b59de68c2877b122887fa1ffe86eaa2b92c
-ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
+ms.openlocfilehash: bb191f33133b85613f491220c970947b9e55b79f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>出荷時の設定にリセットまたは会社データの削除を使用してデバイスを削除する
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 不要になったデバイス、別の目的で再利用するデバイス、または紛失したデバイスを Intune から削除することができます。 この操作は、**[会社データを削除する]** または **[出荷時の設定にリセット]** アクションを使用して行うことができます。 ユーザーは、Intune に登録済みの個人所有デバイスに Intune ポータル サイトからリモート コマンドを発行することもできます。
 
@@ -60,7 +60,7 @@ ms.lasthandoff: 03/22/2018
 
 **[会社データを削除する]** アクションでは、管理対象のアプリ データ (該当する場合)、設定、Intune を使用して割り当てられた電子メール プロファイルを削除します。 **[会社データを削除する]** では、ユーザーの個人データはデバイス上にそのまま保持されます。 デバイスは Intune の管理から削除されます。 
 
-次の表では、削除されるデータと、会社データの削除の実行後にデバイスに残るデータへの**[会社データを削除する]** アクションの影響について説明します。
+次の表では、削除されるデータと、会社データの削除の実行後にデバイスに残るデータへの **[会社データを削除する]** アクションの影響について説明します。
 
 ### <a name="ios"></a>iOS
 
@@ -72,7 +72,7 @@ ms.lasthandoff: 03/22/2018
 |証明書プロファイルの設定|証明書は削除され、失効されます。|
 |管理エージェント|管理プロファイルは削除されます。|
 |電子メール|Intune を介してプロビジョニングされている電子メール プロファイルは削除されます。 デバイスにキャッシュされた電子メールは削除されます。|
-|Outlook|iOS 用の Microsoft Outlook アプリで受信された電子メールは削除されます。|
+|Outlook|iOS 用の Microsoft Outlook アプリで受信された電子メールは削除されます。 まず、Outlook モバイル アプリを必要なアプリとして iOS ユーザーに展開する必要があります。|
 |Azure AD の参加解除|Azure AD レコードは削除されます。|
 |連絡先 |アプリからネイティブ アドレス帳に直接同期された連絡先は削除されます。 ネイティブ アドレス帳から別の外部ソースに同期された連絡先は削除できません。 <br /> <br />現時点では、Outlook アプリのみがサポートされています。
 

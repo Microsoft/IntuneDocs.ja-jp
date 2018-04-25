@@ -1,33 +1,31 @@
 ---
-title: "Microsoft Intune の既知の問題"
-titlesuffix: Microsoft Intune
-description: "Microsoft Intune の既知の問題について説明します。"
-keywords: 
+title: Microsoft Intune - Azure の既知の問題 | Microsoft Docs
+description: Microsoft Intune の既知の問題について説明します。
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 03/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02efc7e2369c590e2d21ac8c27db54ffbaae38c1
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: d0a8a189e708ed140c3cda987a20cebb562fdb34
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune の既知の問題
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-
-このトピックでは、Microsoft Intune の既知の問題について説明します。
+この記事では、Microsoft Intune の既知の問題について説明します。
 
 ここに記載されていないバグを報告する場合は、[サポートを依頼](get-support.md)してください。
 
@@ -45,7 +43,7 @@ Intune から Azure Portal に移行すると、**All Users - b0b08746-4dbe-4a37
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>移行したポリシーの状態を示すブレードが機能しない
 
-クラシック ポータルから移行したポリシーの状態に関する情報は、Azure Portal では表示できません。 ただし、クラシック ポータルではこれらのポリシーに関するレポートを引き続き表示できます。 移行した構成ポリシーの状態に関する情報を表示するには、Azure Portal でポリシーを再作成します。
+Azure クラシック ポータルから移行したポリシーの状態に関する情報は、Azure Portal では表示できません。 ただし、クラシック ポータルではこれらのポリシーに関するレポートを引き続き表示できます。 移行した構成ポリシーの状態に関する情報を表示するには、Azure Portal でポリシーを再作成します。
 
 ## <a name="apps"></a>アプリ
 
@@ -66,9 +64,8 @@ Intune に登録されていないデバイスでは、Windows 情報保護ポ�
 (**[詳細設定]** > **[ネットワーク境界]** > **[Add a protected domain]\(保護されているドメインの追加\)** で追加ドメインを追加する場合に、ポリシーを保存できません。 表示されるエラー メッセージは間もなく変更され、より正確な内容となる予定です。
 
 ### <a name="cisco-anyconnect-vpn-client-support"></a>Cisco AnyConnect VPN クライアントのサポート
+Cisco AnyConnect VPN クライアント (4.0.07072) の最新のリリースは、現在 Intune との互換性がありません。 Intune の今後の更新には、この VPN クライアントのバージョンとの互換性が含まれる予定です。 それまでは、Cisco AnyConnect VPN クライアントを更新せず、既存のバージョンを使い続けることをお勧めします。
 
-Cisco AnyConnect VPN クライアント (4.0.07072) の最新のリリースは、現在 Intune との互換性がありません。
-Intune の今後の更新には、この VPN クライアントのバージョンとの互換性が含まれる予定です。 それまでは、Cisco AnyConnect VPN クライアントを更新せず、既存のバージョンを使い続けることをお勧めします。
 
 ### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>macOS Sierra デバイスで数字のパスワードを使用する
 

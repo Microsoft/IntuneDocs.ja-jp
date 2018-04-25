@@ -1,28 +1,28 @@
 ---
-title: "iOS デバイス用の Microsoft Intune Web コンテンツ フィルター設定"
-titlesuffix: 
-description: "iOS を実行するデバイスからの Web サイトへのアクセスの許可とブロックに使用できる Microsoft Intune 設定について説明します。"
-keywords: 
+title: iOS デバイス用の Microsoft Intune Web コンテンツ フィルター設定
+titlesuffix: ''
+description: iOS を実行するデバイスからの Web サイトへのアクセスの許可とブロックに使用できる Microsoft Intune 設定について説明します。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a401a3a04d10587606b8ec4862a62e551e7aadf0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c5e3dbdc339fd25289e1aed526bc03e4691c3812
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>iOS デバイス用の Web コンテンツ フィルター設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 この記事では、iOS を実行するデバイスからのブラウザーの URL アクセスの制御に使用できる Microsoft Intune 設定を示します。
 
@@ -51,7 +51,7 @@ URL を指定しない場合、エンド ユーザーは、microsoft.com、micro
      > ここで指定する URL は、Apple Web フィルターの対象にしない URL です。 これらの URL は、許可されている Web サイトのみの一覧ではありません。 そのような Web サイトを指定する場合は、**[特定の Web サイトのみ]** を使用します。
 
    - **[ブロックする URL]** - **[ブロックする URL]** ページで、ブロックする URL (Apple Web フィルター設定にかかわらず) を入力し、それぞれの後に Enter を押します。
-2. 操作が完了したら、 **[OK]**をクリックします。
+2. 操作が完了したら、 **[OK]** をクリックします。
 
 
 ## <a name="specific-websites-only"></a>特定の Web サイトのみ
@@ -61,9 +61,9 @@ URL を指定しない場合、エンド ユーザーは、microsoft.com、micro
     - **[Bookmark Path]**(ブックマークのパス) - ブックマークを保存するパス (たとえば **/Contoso/Business Apps**) を入力します。 パスを追加しないと、デバイス上の既定のブックマーク フォルダーにブックマークが追加されます。
     - **[タイトル]** - ブックマークのわかりやすいタイトルを入力します。
 2. 各 Web サイトの情報を入力したら、**[追加]** をクリックします。
-3. 操作が完了したら、 **[OK]**をクリックします。
+3. 操作が完了したら、 **[OK]** をクリックします。
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > 次の URL は、Intune によって自動的に許可されます。
 > - www.microsoft.com
 > - www.microsoft.net

@@ -1,50 +1,62 @@
 ---
-title: "Apple MDM プッシュ証明書を取得する"
+title: Apple MDM プッシュ証明書を取得する
 titlesuffix: Microsoft Intune
-description: "Intune で iOS デバイスを管理するために Apple MDM プッシュ証明書を取得する手順について説明します。"
-keywords: 
+description: Intune で iOS デバイスを管理するために Apple MDM プッシュ証明書を取得する手順について説明します。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 504f2431754aa88ddf79bef4a201cbf7aa032834
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 28eb86a1924dc72df4c77cc3f8a05aacd61e0fbd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Apple MDM プッシュ証明書を取得する
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
- Intune では、iPad、iPhone、および Mac コンピューターのモバイル デバイス管理 (MDM) が有効になり、会社の電子メールおよびアプリへのアクセス権がユーザーに付与されます。 Intune で iOS および Mac デバイスを管理するには、MDM プッシュ証明書が必要です。 証明書を Intune に追加すると、ユーザーがポータル サイト アプリをインストールして自分のデバイスを登録できます。 管理者が、Apple の Device Enrollment Program を使用して企業所有の iOS デバイス管理をセットアップしたり、Apple Configurator を使用してデバイスを登録したりすることもできます。 登録オプションについて詳しくは、「[iOS デバイスの登録方法を選択する](enrollment-method-choose-ios.md)」をご覧ください。
+Intune では、iPad、iPhone、および Mac コンピューターのモバイル デバイス管理 (MDM) が有効になり、会社の電子メールおよびアプリへのアクセス権がユーザーに付与されます。 Intune で iOS および macOS デバイスを管理するには、Apple MDM プッシュ証明書が必要です。 証明書を Intune に追加すると、ユーザーは以下を使用して、自分のデバイスを登録できます。
+
+- ポータル サイト アプリ。
+
+- Apple の一括登録方法 (Device Enrollment Program、Apple School Manager、Apple Configurator)。
+
+登録オプションについて詳しくは、「[iOS デバイスの登録方法を選択する](enrollment-method-choose-ios.md)」をご覧ください。
+
+プッシュ証明書の有効期限が切れた場合は、更新する必要があります。 更新する際には、必ず、最初にプッシュ証明書を作成したときに使用したのと同じ Apple ID を使用してください。
+
 
 ## <a name="steps-to-get-your-certificate"></a>証明書を取得する手順
 [Azure Portal](https://portal.azure.com) で、**[デバイスの登録]** > **[Apple の登録]** > **[Apple MDM プッシュ通知証明書]** を選択し、[Azure Portal](https://portal.azure.com) で以下の手順を実行します。
 
-**手順 1: Apple MDM プッシュ証明書の作成に必要な Intune 証明書署名要求をダウンロードします。**<br>
+### <a name="step-1-grant-microsoft-permission-to-send-user-and-device-information-to-apple"></a>手順 1. Microsoft がユーザーとデバイスの情報を Apple に送信できるようにする
+**[同意する。]** を選択し、 Microsoft がデータを Apple に送信できるようにします。
+
+![MDM プッシュが設定されていない MDM プッシュ証明書構成画面](./media/create-mdm-push-certificate.png)
+
+### <a name="step-2-download-the-intune-certificate-signing-request-required-to-create-an-apple-mdm-push-certificate"></a>手順 2. Apple MDM プッシュ証明書の作成に必要な Intune 証明書署名要求をダウンロードする
 **[CSR のダウンロード]** を選び、要求ファイルをダウンロードしてローカルに保存します。 このファイルは、Apple Push Certificates Portal からの信頼関係証明書を要求するために使用します。
 
-  ![MDM プッシュが設定されていない MDM プッシュ証明書構成画面](./media/create-mdm-push-certificate.png)
-
-**手順 2:Apple MDM プッシュ証明書を取得します。**<br>
+  ### <a name="step-3-create-an-apple-mdm-push-certificate"></a>手順 3. Apple MDM プッシュ証明書を作成する
 **[MDM プッシュ証明書を作成する]** を選択して、Apple Push Certificates Portal に移動します。 会社の Apple ID でサインインし、**[証明書の作成]** をクリックします。 **[ファイルの選択]**  を選択し、証明書署名要求ファイルを参照して、**[アップロード]** を選択します。 [確認] ページで **[ダウンロード]** を選択して証明書 (.pem) ファイルをダウンロードし、ファイルをローカルに保存します。
 
 > [!NOTE]
 > 証明書は、証明書の作成に使用した Apple ID と関連付けられています。 ベスト プラクティスとしては、管理タスクのため会社の Apple ID を使用し、配布リストのように複数のユーザーがメールボックスを監視するようにします。 個人の Apple ID は使用しないでください。
 
-**手順 3:Apple MDM プッシュ証明書の作成に使用する Apple ID を入力します。**<br>
+### <a name="step-4-enter-the-apple-id-used-to-create-your-apple-mdm-push-certificate"></a>手順 4. Apple MDM プッシュ証明書の作成に使用した Apple ID を入力する
 この証明書を更新する場合に備え、この ID をヒントとして記録します。
 
-**手順 4:アップロードする Apple MDM プッシュ証明書を参照します。**<br>
+### <a name="step-5-browse-to-your-apple-mdm-push-certificate-to-upload"></a>手順 5. アップロードする Apple MDM プッシュ証明書を参照する
 証明書 (.pem) ファイルに移動し、**[開く]** を選択して、**[アップロード]** を選択します。 プッシュ証明書を使用すると、Intune で Apple デバイスを登録して管理することができます。
 
 ## <a name="renew-apple-mdm-push-certificate"></a>Apple MDM プッシュ証明書を更新する

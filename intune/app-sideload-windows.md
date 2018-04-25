@@ -1,26 +1,26 @@
 ---
-title: "Intune への Windows アプリと Windows Phone アプリのサイドロード"
-description: "Intune を使用して展開できるように、基幹業務アプリに署名する方法について説明します。"
-keywords: 
+title: Intune への Windows アプリと Windows Phone アプリのサイドロード
+description: Intune を使用して展開できるように、基幹業務アプリに署名する方法について説明します。
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 06/07/2017
 ms.topic: article
-ms.prod: 
-ms.service: 
-ms.technology: 
+ms.prod: ''
+ms.service: ''
+ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 06922f76643a6b95e994bf4e219ee3a4a85953c5
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 9f629fce727df9f15b6357c7c624165e4443ea91
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune を使用して Windows デバイスに展開できるように基幹業務アプリに署名する
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Intune 管理者は、ポータル サイト アプリを含め、基幹業務 (LOB) アプリを Windows および Windows 10 Mobile デバイスに展開することができます。 Windows 10 および Windows 10 Mobile デバイスに .appx または .xap アプリを展開する場合や、Windows 8.1 または Windows Phone 8.1 デバイスに LOB アプリを展開する場合は、**Symantec エンタープライズ モバイル コード署名証明書**を取得する必要があります。 これらの各 Windows デバイスのアプリで信頼されているのは Symantec 証明書のみです。 Windows 10 アプリと "ユニバーサル" アプリの場合は独自の証明機関を使用できます。 この証明書は、以下の操作を行うために必要です。
 
@@ -41,7 +41,7 @@ Intune 管理者は、ポータル サイト アプリを含め、基幹業務 (
     要求が承認されると、証明書をインポートするための手順を含む電子メールが届きます。 メールの指示に従って証明書をインポートします。
 
 4.  **インポートされた証明書を確認する**<br>
-    証明書が正しくインポートされたことを確認するには、**[証明書]** スナップインに進み、**[証明書]** を右クリックして **[証明書の検索]** を選択します。 **[含む]** フィールドに「Symantec」と入力し、 **[今すぐ検索]**をクリックします。 インポートした証明書が検索結果に表示されます。
+    証明書が正しくインポートされたことを確認するには、**[証明書]** スナップインに進み、**[証明書]** を右クリックして **[証明書の検索]** を選択します。 **[含む]** フィールドに「Symantec」と入力し、 **[今すぐ検索]** をクリックします。 インポートした証明書が検索結果に表示されます。
 
     ![Symantec 証明書の検索](./media/wit.gif)
 
@@ -50,7 +50,7 @@ Intune 管理者は、ポータル サイト アプリを含め、基幹業務 (
 
     ![署名証明書のエクスポート](./media/wit-walk-cert2.gif)
 
-    **[証明書のエクスポート ウィザード]**が起動したら、 **[はい、秘密キーをエクスポートします]** を選択して **[次へ]**をクリックします。 **[Personal Information Exchange - PKCS #12 (.PFX)]** を選択し、**[証明のパスにある証明書を可能であればすべて含む]** チェック ボックスをオンにします。 ウィザードを完了します。 詳細については、「 [証明書を秘密キーと共にエクスポートする](http://go.microsoft.com/fwlink/?LinkID=203031)」をご覧ください。
+    **[証明書のエクスポート ウィザード]** が起動したら、 **[はい、秘密キーをエクスポートします]** を選択して **[次へ]** をクリックします。 **[Personal Information Exchange - PKCS #12 (.PFX)]** を選択し、**[証明のパスにある証明書を可能であればすべて含む]** チェック ボックスをオンにします。 ウィザードを完了します。 詳細については、「 [証明書を秘密キーと共にエクスポートする](http://go.microsoft.com/fwlink/?LinkID=203031)」をご覧ください。
 
 6.  **Intune にアプリをアップロードする**<br>
     署名付きのアプリ ファイルと、コード署名証明書をアップロードして、アプリをエンド ユーザーが使用できるようにします。
@@ -128,7 +128,7 @@ Windows および Windows Phone モバイル アプリを展開するのに使�
 
     Symantec 証明書の詳細については、[www.symantec.com](http://www.symantec.com) にアクセスするか、1-877-438-8776 または 1-650-426-3400 に電話をかけてください。
 
-2.  Web サイト (例: [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)) に移動し、証明書に関連付けられている Symantec 発行者 ID と電子メール アドレスを使用してログインします。 更新を開始するコンピューターは、証明書のダウンロードに使用するのと同じコンピューターである必要があります。
+2.  Web サイト (例: [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)) に移動し、証明書に関連付けられている Symantec Publisher ID と電子メール アドレスを使用してログインします。 更新を開始するコンピューターは、証明書のダウンロードに使用するのと同じコンピューターである必要があります。
 
 3.  更新が承認され支払いが済んだら、証明書をダウンロードします。
 
@@ -158,11 +158,11 @@ Intune をビジネス向け Microsoft ストアと統合していない場合�
 
 ![ダウンロードする依存関係ファイルのイメージ ](./media/Win10CP-dependent-files.png)
 5. ポータル サイト アプリを Intune にアップロードする前に、パッケージを次のように構成してフォルダー (C:&#92;ポータル サイトなど) を作成します。
-  1. C:\ポータル サイトにポータル サイト パッケージを配置します。 また、この場所に依存関係サブフォルダーも作成します。  
-  ![APPXBUN ファイルと共に保存された依存関係フォルダーのイメージ](./media/Win10CP-Dependencies-save.png)
-  2. 依存関係フォルダーに 9 つの依存関係パッケージを配置します。  
-  依存関係がこの形式で配置されていないと、Intune はパッケージのアップロード時にこれらを認識、アップロードすることができます、次のエラーでアップロードが失敗します。  
-  ![このソフトウェア インストーラーに関する Windows アプリの依存関係がアプリケーション フォルダー内で見つかりませんでした。 このアプリケーションの作成と展開を続行できますが、不明な Windows アプリの依存関係が提供されるまでは実行されません。](./media/Win10CP-error-message.png)
+   1. C:\ポータル サイトにポータル サイト パッケージを配置します。 また、この場所に依存関係サブフォルダーも作成します。  
+   ![APPXBUN ファイルと共に保存された依存関係フォルダーのイメージ](./media/Win10CP-Dependencies-save.png)
+   2. 依存関係フォルダーに 9 つの依存関係パッケージを配置します。  
+   依存関係がこの形式で配置されていないと、Intune はパッケージのアップロード時にこれらを認識、アップロードすることができます、次のエラーでアップロードが失敗します。  
+   ![このソフトウェア インストーラーに関する Windows アプリの依存関係がアプリケーション フォルダー内で見つかりませんでした。 このアプリケーションの作成と展開を続行できますが、不明な Windows アプリの依存関係が提供されるまでは実行されません。](./media/Win10CP-error-message.png)
 6. Intune に戻り、ポータル サイト アプリを新しいアプリとしてアップロードします。 これを必要なアプリとして対象の一連のターゲット ユーザーに展開します。  
 
 Intune がユニバーサル アプリ用に依存関係をどのように処理するかについて詳しくは、「[Deploying an appxbundle with dependencies via Microsoft Intune MDM (Microsoft Intune MDM 経由で依存関係を使用して appxbundle を展開する)](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)」ご覧ください。  
@@ -186,17 +186,18 @@ Intune がユニバーサル アプリ用に依存関係をどのように処理
 
 この場合のアプリへの署名および展開方法は、次のとおりです。
 
-1. Microsoft Intune Windows 10 ポータル サイト アプリの署名スクリプトを [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) からダウンロードします。  このスクリプトでは、Windows SDK for Windows 10 をホスト コンピューターにインストールする必要があります。 Windows SDK for Windows 10 をダウンロードするには、[https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) にアクセスします。
+1. Microsoft Intune Windows 10 ポータル サイト アプリの署名スクリプトを [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) からダウンロードします。  このスクリプトでは、Windows SDK for Windows 10 をホスト コンピューターにインストールする必要があります。 Windows 10 用 Windows SDK をダウンロードするには、[https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) にアクセスします。
 2. 上記の説明のように、ビジネス向け Microsoft ストアから Windows 10 ポータル サイト アプリをダウンロードします。  
 3. スクリプト ヘッダーに記載された入力パラメーターを使用してスクリプトを実行し、Windows 10 ポータル サイト アプリに署名します (以下に抜粋)。 スクリプトに依存関係を渡す必要はありません。 依存関係は、アプリが Intune 管理コンソールにアップロードされる場合にのみ必要です。
 
-|パラメーター | 説明|
-| ------------- | ------------- |
-|InputWin10AppxBundle |ソース appxbundle ファイルが配置されるパス。 |
-|OutputWin10AppxBundle |署名された appxbundle ファイルの出力パス |
-|Win81Appx | Windows 8.1 または Windows Phone 8.1 ポータル サイト (.APPX) ファイルが配置されるパス。|
-|PfxFilePath |Symantec エンタープライズ モバイル コード署名証明書 (.PFX) ファイルへのパス |
-|PfxPassword| Symantec エンタープライズ モバイル コード署名証明書のパスワード |
-|PublisherId |エンタープライズの発行者 ID 指定しない場合、Symantec エンタープライズ モバイル コード署名証明書の 'Subject' フィールドが使用されます。|
-|SdkPath | Windows SDK for Windows 10 のルート フォルダーへのパス この引数は省略可能で、既定値は ${env:ProgramFiles(x86)}\Windows Kits\10 です。|
+|       パラメーター       |                                                                    説明                                                                    |
+|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| InputWin10AppxBundle  |                                             ソース appxbundle ファイルが配置されるパス。                                              |
+| OutputWin10AppxBundle |                                                  署名された appxbundle ファイルの出力パス                                                  |
+|       Win81Appx       |                          Windows 8.1 または Windows Phone 8.1 ポータル サイト (.APPX) ファイルが配置されるパス。                           |
+|      PfxFilePath      |                                   Symantec エンタープライズ モバイル コード署名証明書 (.PFX) ファイルへのパス                                    |
+|      PfxPassword      |                                     Symantec エンタープライズ モバイル コード署名証明書のパスワード                                      |
+|      PublisherId      |      エンタープライズの発行者 ID 指定しない場合、Symantec エンタープライズ モバイル コード署名証明書の 'Subject' フィールドが使用されます。       |
+|        SdkPath        | Windows SDK for Windows 10 のルート フォルダーへのパス この引数は省略可能で、既定値は ${env:ProgramFiles(x86)}\Windows Kits\10 です。 |
+
 実行が終了したら、スクリプトにより Windows 10 ポータル サイト アプリの署名されたバージョンが出力されます。 その後、アプリの署名されたバージョンを Intune 経由で LOB アプリとして展開できます。これにより、現在展開されているバージョンがこの新しいアプリにアップグレードされます。  

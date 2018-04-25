@@ -1,29 +1,29 @@
 ---
-title: "MAM CA を利用してアプリを使用する"
-description: "MAM CA を利用して、O365 サービスに対してアクセス権を持つアプリを制御する方法の概念について説明します。"
-keywords: 
+title: MAM CA を利用してアプリを使用する
+description: MAM CA を利用して、O365 サービスに対してアクセス権を持つアプリを制御する方法の概念について説明します。
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 725783751c13b2301e7fbef4dea1a47bc339c8b7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2f313fcbfa26c8f82708f8f830404da97a3eca25
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>アプリとアプリ ベースの CA を使用する場合の結果
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 アプリ ベースの CA は、デバイス上に必ずあるブローカー アプリを利用して、承認されたアプリケーションの ID を確認します。
 *  **iOS** の場合、**Azure Authenticator アプリ**がブローカー アプリです。
@@ -40,8 +40,8 @@ OneDrive や Outlook など、アプリ ベースの CA でサポートされて
 
 > [!NOTE]
 > Android デバイスの場合、
-  * デバイスにポータル サイト アプリがインストールされている必要がありますが、エンド ユーザーがアプリにログインする必要はありません。
-  * OneDrive または Outlook アプリを使用して、デバイスの登録を行う必要があります。
+>   * デバイスにポータル サイト アプリがインストールされている必要がありますが、エンド ユーザーがアプリにログインする必要はありません。
+>   * OneDrive または Outlook アプリを使用して、デバイスの登録を行う必要があります。
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>Azure AD の登録からデバイスを削除するには
 デバイスの登録は、Azure AD 管理コンソールで削除することができます。通常、IT 管理者が削除を実行します。また、エンドユーザーが自分のデバイスで削除することもできます。
@@ -52,14 +52,14 @@ OneDrive や Outlook など、アプリ ベースの CA でサポートされて
 
 ## <a name="app-based-ca-with-device-based-ca"></a>アプリ ベースの CA とデバイス ベースの CA  
 
-[Intune 管理コンソール](https://manage.microsoft.com)または [Azure AD Premium 管理コンソール] (https://manage.windowsazure.com) で[デバイスのコンプライアンスに基づいて条件付きアクセス](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**デバイス CA**) を構成できます。 デバイス CA を使用する場合、ユーザーが Exchange Online に接続するには、Intune デバイス コンプライアンス ポリシーに準拠している Intune の管理対象デバイス、またはドメインに参加しているコンピューターを使用する必要があります。  ユーザーが、アプリ ベースの CA とデバイス CA ポリシー両方の対象である 1 つまたは複数のセキュリティ グループに属している場合、ユーザーは次の 2 つの要件のうち 1 つを満たす必要があります。
+[Intune 管理コンソール](https://manage.microsoft.com)または [[Azure AD Premium 管理コンソール]](https://manage.windowsazure.com) で[デバイスのコンプライアンスに基づいて条件付きアクセス](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (<strong>デバイス CA</strong>) を構成できます。 デバイス CA を使用する場合、ユーザーが Exchange Online に接続するには、Intune デバイス コンプライアンス ポリシーに準拠している Intune の管理対象デバイス、またはドメインに参加しているコンピューターを使用する必要があります。  ユーザーが、アプリ ベースの CA とデバイス CA ポリシー両方の対象である 1 つまたは複数のセキュリティ グループに属している場合、ユーザーは次の 2 つの要件のうち 1 つを満たす必要があります。
 * サービスへのアクセスに使用されるアプリは、サポートされているモバイル アプリである。 
 * アプリを実行するデバイスには、**iOS Authenticator (iOS デバイスの場合)** または**ポータル サイト アプリ (Android デバイスの場合)** がインストールされている。
 * サービスへのアクセスに使用されるデバイスは、**Intune の管理対象で Intune のデバイス コンプライアンス ポリシーに準拠している**か、**ドメインに参加しているコンピューター**である。  わかりやすい例を示します。
   * ユーザーが**ネイティブ iOS 電子メール アプリ**から接続する場合、ネイティブ電子メール アプリは アプリ ベースの CA でサポートされていないため、**管理対象で準拠しているデバイス**を使用して接続する必要があります。
   * ユーザーが **Windows Home コンピューター**から接続する場合、**デバイス CA ポリシー**が適用されるので、ドメインに参加しているコンピューターを使用する必要があります。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [MAM アプリ用の Exchange Online ポリシーを作成する](mam-ca-for-exchange-online.md)
 
 [最新の認証を使用していないアプリをブロックする](block-apps-with-no-modern-authentication.md)
