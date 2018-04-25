@@ -1,24 +1,24 @@
 ---
-title: "教育用の Intune とは"
-description: "Intune for Education と完全 Intune 管理の違いについて説明します。"
-keywords: "Intune の概要"
-author: barlanmsft
-ms.author: barlan
+title: 教育用の Intune とは
+description: Intune for Education と完全 Intune 管理の違いについて説明します。
+keywords: Intune の概要
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 12/21/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: travisj
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f98e9cd82508f4b41d62a61baf06c9add2c3626e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 30195ee56e99754f5ed385291823adef08d6ce01
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Intune for Education と Intune でのフル デバイス管理エクスペリエンスはどのように異なりますか。
 
@@ -39,6 +39,6 @@ Intune と Intune for Education の両方で、次のことができます。
 * デバイスやアプリをセキュリティ要件に準拠させます。
 
 ### <a name="next-steps"></a>次の手順
-* [Intune の 90 日間の評価版](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1)を使用して製品の理解を深める。 既にアクセス権限がある場合には、https://intuneeducation.portal.azure.com にアクセスして開始できます。
+* [Intune の 90 日間の評価版](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1)を使用して製品の理解を深める。 既に利用できる場合、https://intuneeducation.portal.azure.com) にアクセスして開始してください。
 * Intune for Education のクイック スタート ガイドは[こちら](/intune-education/what-is-express-configuration)をご覧ください。
 * Intune の[技術的要件と機能](/intune/supported-devices-browsers)を調べる

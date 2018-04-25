@@ -1,25 +1,25 @@
 ---
-title: "Intune App SDK の利点"
+title: Intune App SDK の利点
 titlesuffix: Microsoft Intune
-description: "Intune アプリ SDK は、iOS プラットフォームと Android プラットフォームの両方で利用でき、Microsoft Intune を使ったモバイル アプリ管理機能が有効になります。"
-keywords: 
+description: Intune アプリ SDK は、iOS プラットフォームと Android プラットフォームの両方で利用でき、Microsoft Intune を使ったモバイル アプリ管理機能が有効になります。
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae22d3e718fd01330b81206921b6e9a23313a30f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: b34963761e9700d6cb742cb90979be30d5ae6b3e
+ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/06/2018
 ---
 # <a name="intune-app-sdk-overview"></a>Intune App SDK の概要
 iOS と Android の両方で使用可能な Intune App SDK で、Intune アプリ保護ポリシーに対してご使用のアプリを有効にすることができます。 アプリの開発者が必要なコード変更が最小限に抑えられます。 SDK の機能の多くは、アプリの動作を変更せずに利用できます。 エンド ユーザーと IT 管理者のエクスペリエンスを向上させるために、API を利用してアプリの動作をカスタマイズし、アプリ側の処理が必要な機能を実現できます。
@@ -64,7 +64,7 @@ IT 管理者は、アプリへのアクセスに、職場または学校のア�
 ### <a name="app-protection-without-device-enrollment"></a>デバイス登録が不要なアプリの保護
 
 >[!IMPORTANT]
->デバイス登録のない Intune アプリ保護は、Intune App ラッピング ツール、Intune App SDK for Android、Intune App SDK for iOS、SDK Xamarin コンポーネント、SDK Cordova プラグインで利用できます。
+>デバイス登録のない Intune アプリ保護は、Intune App ラッピング ツール、Intune App SDK for Android、Intune App SDK for iOS、Intune App SDK Xamarin バインディング、SDK Cordova プラグインで利用できます。
 
 個人用デバイスを使用するユーザーの多くは、モバイル デバイス管理 (MDM) プロバイダーを使用して自分の個人用デバイスを登録せずに、会社のデータにアクセスしたいと考えます。 MDM 登録にはデバイスのグローバル制御が必要になるため、多くの場合、ユーザーは自分の個人用デバイスの制御を会社に任せることをためらいます。
 
