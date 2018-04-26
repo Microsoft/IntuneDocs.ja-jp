@@ -1,4 +1,4 @@
----
+﻿---
 title: Microsoft Intune で Windows Update for Business を構成する - Azure | Microsoft Docs
 description: Windows 10 デバイス上で Microsoft Intune を使用することにより、プロファイル内のソフトウェア更新プログラムの設定を更新プログラム リングの作成に更新し、コンプライアンスを検証し、Windows Update for Business の設定で更新プログラムを一時停止します。
 keywords: ''
