@@ -1,23 +1,23 @@
 ---
-title: "Microsoft Intune で Windows のパスコードをリセットする - Azure | Microsoft Docs"
-description: "Windows デバイスのパスコードをリセットするには、Microsoft PIN Reset Service と Microsoft PIN Reset Client をインストールし、Azure Active Directory ディレクトリ ID を使ってデバイス ポリシーを作成してから Azure Portal で Microsoft Intune を使ってパスコードをリセットします。"
-keywords: 
-author: MandiOhlinger
-ms.author: mandia
+title: Microsoft Intune で Windows のパスコードをリセットする - Azure | Microsoft Docs
+description: Windows デバイスのパスコードをリセットするには、Microsoft PIN Reset Service と Microsoft PIN Reset Client をインストールし、Azure Active Directory ディレクトリ ID を使ってデバイス ポリシーを作成してから Azure Portal で Microsoft Intune を使ってパスコードをリセットします。
+keywords: ''
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 14a5654e72352b9dc8ebd51e6c926ea963e7432d
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: d3ceaaa1cce79483c446342b12d9918bb6beac42
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Intune を使って Windows デバイスのパスコードをリセットする
 

@@ -13,11 +13,11 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 9464b73acc43b9625560156617359c374d7100fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 787501892d0955e3396bc8f37e5da8ba0d312c74
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="read-about-the-vpn-settings-in-intune"></a>Intune の VPN 設定について
 
@@ -93,6 +93,7 @@ Intune を使用して VPN 接続を構成することができます。 この�
 ## <a name="apps-and-traffic-rules"></a>アプリとトラフィックの規則
 
 **[これらのアプリへの VPN 接続を制限する]**: 一部のアプリでのみ VPN 接続を使用する場合は、この設定を有効にします。
+
 **[関連付けられているアプリ]**: 自動的に VPN 接続を使用するアプリのリストを入力します。 アプリ ID は、アプリの種類によって決まります。 ユニバーサル アプリの場合は、パッケージのファミリ名を入力します。 デスクトップ アプリの場合は、アプリのファイル パスを入力します。
 
 >[!IMPORTANT]

@@ -2,8 +2,8 @@
 title: Microsoft Intune MDM ライフサイクルの概要
 description: 登録、構成から始まり最終的に使用中止となるデバイスのライフサイクル管理において Intune がどのように役立つか紹介します。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f1ac48340c09c57ed398b7fe6cb75fa68899c63
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c2e4cf0e77a63f0a8a3049e66ec16e563e410873
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Microsoft Intune モバイル デバイス管理 (MDM) ライフサイクルの概要
 

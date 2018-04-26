@@ -3,8 +3,8 @@ title: Windows Phone 8.1 デバイス用の Microsoft Intune の VPN 設定
 titleSuffix: ''
 description: Windows Phone 8.1 を実行するデバイスでの VPN 接続の構成に使用できる Intune 設定について説明します。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 458586a2d507e913eb702c0ee2e3c0531350f1b4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3572022b491439d2cf624b2ed3f1d53ffaf54d7d
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Windows Phone 8.1 を実行するデバイス用に Microsoft Intune で VPN 設定を構成する
 

@@ -3,7 +3,7 @@ title: EMS での BYOD に関する技術の決定事項
 description: BYOD を有効にし、Microsoft Enterprise Mobility + Security で企業のデータを保護するための、技術に関する重要な決定事項です。
 keywords: ''
 author: dougeby
-ms.author: pfetty
+ms.author: dougeby
 manager: dougeby
 ms.date: 12/8/2017
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
-ms.openlocfilehash: 7d04abfe7886e4ef42cf168dbb495e987fdba425
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 7fb86ae8d3163e14581ee495004b74f684d30cec
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Microsoft Enterprise Mobility + Security (EMS) で BYOD を有効にするための技術の決定事項
 
@@ -78,6 +78,6 @@ MDM を行わない MAM は、BYOD をサポートする組織で非常によく
 |セキュリティで保護されていない場所への偶発的なデータの共有または保存 | 印刷を無効にする | 該当なし|
 
 ## <a name="next-steps"></a>次の手順
-デバイス管理、アプリ管理、またはこれらの組み合わせに注目し、組織で BYOD を有効にするかどうかを決定します。 実装を選択するのはユーザーですが、Azure AD の ID およびセキュリティ機能を利用できるのでいずれにしても安心です。
+デバイス管理、アプリ管理、またはこれらの組み合わせに注目し、組織で BYOD を有効にするかどうかを決定します。 実装を選択するのはユーザーですが、Azure AD の ID およびセキュリティ機能を利用できるのでいずれにしても安心です。  
 
 次のレベルの計画について詳しくは、Intune の[計画ガイド](planning-guide.md)をご覧ください。
