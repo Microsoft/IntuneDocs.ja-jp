@@ -1,27 +1,27 @@
 ---
-title: "Windows Phone 8.1 の Microsoft Intune デバイス制限設定"
-titleSuffix: 
-description: "Windows Phone 8.1 を実行するデバイスでデバイスの設定と機能を制御するために使用できる Intune の設定について説明します。"
-keywords: 
+title: Windows Phone 8.1 の Microsoft Intune デバイス制限設定
+titleSuffix: ''
+description: Windows Phone 8.1 を実行するデバイスでデバイスの設定と機能を制御するために使用できる Intune の設定について説明します。
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 808c8e9ac1ef944b69ae8e548c62d4c6366820d0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1bebb5915a7adeb13fd95b73587bca0171bebd83
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Microsoft Intune の Windows Phone 8.1 デバイス制限設定
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 この記事では、Windows Phone 8.1 を実行するデバイスに構成できる Microsoft Intune デバイス制限設定について説明します。
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 03/08/2018
 
 アプリのページを開き、URL をクリップボードにコピーします。 許可されているアプリまたはブロックされているアプリの一覧で、これを URL として使用できます。
 
-例: ストアで Skype アプリを検索します。 **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51** という URL を使用します。
+例: ストアで Skype アプリを検索します。 使用する URL は **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51** です。
 
 
 

@@ -1,37 +1,37 @@
 ---
-title: "管理対象の Android デバイス用アプリ構成ポリシーを追加する"
+title: 管理対象の Android デバイス用アプリ構成ポリシーを追加する
 titlesuffix: Microsoft Intune
-description: "Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが Android for Work アプリを実行するときに設定を指定します。"
-keywords: 
+description: Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが Android for Work アプリを実行するときに設定を指定します。
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a448c33e8324492c68d509a12d5901f41ed4873a
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6fbf70630124614aa1ed302a41d6e3f33c10c63d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>管理対象の Android デバイス用アプリ構成ポリシーを追加する
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが Android for Work アプリを実行するときに設定を指定します。 これらのポリシーをユーザーとデバイスに直接割り当てないでください。 代わりに、ポリシーをアプリに関連付け、そのアプリを割り当てます。 ポリシー設定は、アプリがポリシーをチェックするとき (通常はアプリの初回実行時) に使用されます。
+Microsoft Intune のアプリ構成ポリシーを使用して、Android for Work アプリを実行するための設定を指定します。 アプリ開発者は、アプリの構成設定を指定する場合、Android 管理対象アプリの構成設定を公開する必要があります。 設定を適用するユーザー グループにアプリ構成ポリシーを割り当てます。  ポリシー設定は、アプリがポリシーをチェックするとき (通常はアプリの初回実行時) に使用されます。
 
 > [!Note]  
 > アプリ構成をサポートしていないアプリもあります。 ビルドされたアプリでアプリ構成ポリシーがサポートされているかどうかについては、アプリの開発者にお問い合わせください。
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[モバイル アプリ]** ワークロードを選択します。
 4. **[管理]** グループの **[アプリ構成ポリシー]** を選択し、**[追加]** を選択します。
 5. 次の詳細を設定します。
@@ -50,16 +50,27 @@ Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが
 
 ## <a name="use-the-configuration-designer"></a>構成デザイナーを使用する
 
-Intune に登録されているデバイスかどうかにかかわらず、アプリには構成デザイナーを使用できます。 デザイナーでは、特定の構成キーと値を構成できます。 各値のデータ型も指定する必要があります。
+構成をサポートする Android アプリの構成デザイナーを使用できます。 構成は、Intune に登録されているデバイスに適用されます。 デザイナーでは、アプリで公開されるもの以外の設定に対して特定の構成値を構成できます。
 
+**[追加]** を選択して、アプリに指定する構成設定の一覧を選びます。  
 構成の各キーと値について、以下を設定します。
 
-  - **構成キー**  
-     特定の設定構成を一意に識別するキー。
   - **値の型**  
-    構成値のデータ型。 整数型、実数型、文字列型、またはブール型があります。
+    構成値のデータ型。 文字列値の型については、必要に応じて、値の型として変数または証明書プロファイルを選択できます。
   - **構成値**  
-    構成の値。 
+    構成の値。 値の型に対して変数または証明書を選択する場合は、構成値ドロップダウンの変数または証明書プロファイルの一覧から選ぶことができます。  証明書を選択する場合は、デバイスに展開された証明書の別名が実行時に設定されます。
+    
+### <a name="supported-variables-for-configuration-values"></a>構成値でサポートされる変数
+
+値の型として変数を選択する場合は、次のオプションを選ぶことができます。
+- ユーザー プリンシパル名 — **John@contoso.com** など
+- メール — **John@contoso.com** など
+- UPN の一部 — **John** など
+- アカウント ID — **fc0dc142-71d8-4b12-bbea-bae2a8514c81** など
+- デバイス ID — **b9841cd9-9843-405f-be28-b2265c59ef97** など
+- ユーザー ID — **3ec2c00f-b125-4519-acf0-302ac3761822** など
+- ユーザー名 — **John Doe** など
+
 
 ## <a name="enter-the-json-editor"></a>JSON エディターの入力
 
@@ -78,7 +89,7 @@ Intune に登録されているデバイスかどうかにかかわらず、ア�
 Android デバイス機能にアクセスするためのアプリのアクセス許可を事前に構成することもできます。 既定では、場所やデバイス カメラへのアクセスなど、デバイスのアクセス許可を必要とする Android アプリは、アクセス許可の承諾または拒否をユーザーに求めます。 たとえば、アプリでデバイスのマイクが使用される場合、ユーザーは、そのマイクを使用するアクセス許可をアプリに付与するように求められます。
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Mobile Apps]** を選択します。
 3. **[管理]** の下で、**[アプリ構成ポリシー]** を選択してから **[追加]** を選択します。
 4. 次の詳細を設定します。
