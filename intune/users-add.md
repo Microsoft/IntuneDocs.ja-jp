@@ -15,15 +15,15 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6bbfa42b8ec03cfbe97efdae21f493b68c53d769
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 0d38d7671218bfcecd3d2aa4671a565e0cabe37f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Intune にユーザーを追加して管理アクセス許可を付与する
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 管理者は、ユーザーを直接追加することも、オンプレミスの Active Directory からユーザーを同期することもできます。 追加されたユーザーは、デバイスを登録し、会社のリソースにアクセスできます。 また、*グローバル管理者*や*サービス管理者*など、追加のアクセス許可をユーザーに与えることができます。
 
@@ -35,16 +35,16 @@ ms.lasthandoff: 03/22/2018
 2. Office 365 メニューで、**[管理者]** を選択します。
 3. 管理センターで、**[ユーザーの追加]** を選択します。
 
-  ![[ユーザーの追加] セクションのスクリーンショット](media/office-add-user.png)
+   ![[ユーザーの追加] セクションのスクリーンショット](media/office-add-user.png)
 
 4. 次のユーザー詳細を指定します。
-  - **名**
-  - **姓**
-  - **表示名**
-  - **ユーザー名** - Azure Active Directory に格納されている、サービスへのアクセスに使われるユニバーサル プリンシパル名 (UPN)
-  - **場所**
-  - **連絡先の情報** (任意)
-  - **パスワード** - 自動生成または指定
+   - **名**
+   - **姓**
+   - **表示名**
+   - **ユーザー名** - Azure Active Directory に格納されている、サービスへのアクセスに使われるユニバーサル プリンシパル名 (UPN)
+   - **場所**
+   - **連絡先の情報** (任意)
+   - **パスワード** - 自動生成または指定
 
      ![[新規ユーザー] セクションのスクリーンショット](media/office-add-user-details.png)
 
@@ -55,16 +55,16 @@ ms.lasthandoff: 03/22/2018
 1. [Azure Portal](https://portal.azure.com) にサインインし、**[すべてのサービス]**、**[監視 + 管理]**、**[Intune]** の順に移動します。 **Intune** の "*リソースを検索する*" こともできます。
 2. **[ユーザー]**、**[すべてのユーザー]** の順に選択します。
 3. 管理センターで、**[新しいユーザー]** を選びます。
-  ![新しいユーザーの追加のスクリーンショット](media/intune-add-user.png)
+   ![新しいユーザーの追加のスクリーンショット](media/intune-add-user.png)
 4. 次のユーザー詳細を指定します。
-  - **名前**
-  - **ユーザー名** - Azure Active Directory ポータルの新しい名前 ![名前とユーザー名の追加のスクリーンショット](media/intune-add-user-info.png) **[OK]** を選択して続行します。
+   - **名前**
+   - **ユーザー名** - Azure Active Directory ポータルの新しい名前 ![名前とユーザー名の追加のスクリーンショット](media/intune-add-user-info.png) **[OK]** を選択して続行します。
 5. 必要に応じて、次のユーザー プロパティを指定できます。
-  - **プロファイル** - **役職**や**部署**などの仕事情報
-  -  **グループ** - ユーザーに追加するグループを選択します
-  - **ディレクトリ ロール** - Intune サービス管理者ロールを含む管理者アクセス許可をユーザーに与えます。
+   - **プロファイル** - **役職**や**部署**などの仕事情報
+   -  **グループ** - ユーザーに追加するグループを選択します
+   - **ディレクトリ ロール** - Intune サービス管理者ロールを含む管理者アクセス許可をユーザーに与えます。
 
-  **[作成]** を選択し、新しいユーザーを Intune に追加します。
+   **[作成]** を選択し、新しいユーザーを Intune に追加します。
 6. **[プロファイル]** を選択し、新しいユーザーの **[利用場所]** を選択します。 新しいユーザーに Intune ライセンスを割り当てるには利用場所が必要です。 **[保存]** を選択して続行します。
     ![使用場所のスクリーンショット](media/intune-add-user-loc.png)
 7. **[ライセンス]** を選択し、**[割り当て]** を選択してこのユーザーの Intune ライセンスを割り当てます。 デバイスを登録したり、会社のリソースにアクセスしたりするには、Intune ライセンスが必要です。 **[製品]** を選択し、ライセンスの種類を選択し、**[選択]** を選択し、**[割り当て]** を選択します。
@@ -112,7 +112,7 @@ Office 365 ポータルにアクセスするには、アカウントに**サイ�
 ディレクトリの同期化によって、オンプレミスの Active Directory から Intune ユーザーを含む Microsoft Azure Active Directory (Azure AD) に、ユーザー アカウントをインポートできます。 オンプレミスの Active Directory サービスが Azure Active Directory ベースの全サービスに反映され、ユーザー ID の管理が大幅に単純化されます。 また、シングル サインオン機能を構成することによってユーザー認証の利便性を高めることもできます。 同じ [Azure AD テナント](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)を複数のサービスとリンクすることにより、前に同期したユーザー アカウントをすべてのクラウド ベース サービスで使用できるようになります。
 
 ### <a name="how-to-sync-on-premises-users-with-azure-ad"></a>オンプレミスのユーザーを Azure AD と同期する方法
-ユーザー アカウントを Azure AD と同期するために必要なツールは、[Azure AD Connect ウィザード](https://www.microsoft.com/download/details.aspx?id=47594)のみです。 Azure AD Connect ウィザードでは、簡単な画面の指示に従って、オンプレミスの ID インフラストラクチャをクラウドに接続できます。  トポロジと要件 (単一ディレクトリまたは複数ディレクトリ、パスワードの同期またはフェデレーション) を選択します。 ウィザードにより、接続を稼働させるために必要なすべてのコンポーネントがデプロイされて構成されます。 接続した機能が稼働するために必要なすべてのコンポーネントが自動的に展開されて構成されます。
+ユーザー アカウントを Azure AD と同期するために必要なツールは、[Azure AD Connect ウィザード](https://www.microsoft.com/download/details.aspx?id=47594)のみです。 Azure AD Connect ウィザードでは、簡単な画面の指示に従って、オンプレミスの ID インフラストラクチャをクラウドに接続できます。 トポロジと要件 (単一ディレクトリまたは複数ディレクトリ、パスワード ハッシュ同期、パススルー認証、またはフェデレーション) を選択します。 ウィザードにより、接続を稼働させるために必要なすべてのコンポーネントがデプロイされて構成されます。 接続した機能が稼働するために必要なすべてのコンポーネントが自動的に展開されて構成されます。
 
 > [!TIP]
 > Azure AD Connect には、過去に Dirsync や Azure AD Sync としてリリースされた機能がすべて備わっています。[ディレクトリ統合](http://technet.microsoft.com/library/jj573653.aspx)の詳細を確認してください。 ローカル ディレクトリから Azure AD へのユーザー アカウントの同期について詳しくは、「[Active Directory と Azure AD の類似点](http://technet.microsoft.com/library/dn518177.aspx)」をご覧ください。

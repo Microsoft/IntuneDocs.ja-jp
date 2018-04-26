@@ -1,49 +1,43 @@
 ---
-title: "Intune から Windows デバイスを登録解除する | Microsoft Docs"
-description: "Intune から Windows デバイスの登録を解除する方法について説明します"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Intune から Windows デバイスを削除する | Microsoft Docs
+description: Intune から Windows デバイスを削除する方法について説明します
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 03/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 searchScope:
 - User help
-ROBOTS: 
-ms.reviewer: priyar
+ROBOTS: ''
+ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 898501d2cf87f73243a97b8c1e99633d30bab982
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9f9051fb393c82031d581f7fec731a3b148cbf2e
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
-# <a name="unenroll-your-windows-device-from-intune"></a>Intune から Windows デバイスを登録解除する
+# <a name="remove-your-windows-device-from-intune"></a>Intune から Windows デバイスを削除する
 
-現在 Intune に登録されている Windows デバイスを職場や学校で使用する必要がなくなった場合、または職場や学校の電子メール、アプリ、その他のリソースにアクセスする必要がなくなった場合には、デバイスの登録を解除する必要があります。 Intune からデバイスの登録を解除した後は、これらのリソースにアクセスできなくなります。 デバイスを登録解除した場合の詳細については、「[Intune からデバイスの登録を解除するとどうなるか](what-happens-if-you-unenroll-your-device-from-intune-windows.md)」を参照してください。
+お使いの Windows デバイスを Intune に登録しているが、そのデバイスで職場や学校のメール、アプリ、その他のリソースにアクセスする必要がなくなった場合、そのデバイスを管理から削除する必要があります。 Intune からお使いのデバイスを削除すると、その後はリソースにアクセスできなくなります。 管理からデバイスを削除した場合の詳細については、「[Intune からデバイスの登録を解除するとどうなりますか。](what-happens-if-you-unenroll-your-device-from-intune-windows.md)」を参照してください。
 
-デバイスの登録解除方法については、お使いのデバイスの種類に対応する、上記「この記事の内容」セクションに示されているリンクを使用してください。
-
--   [Windows 10 デバイスの登録解除](#unenroll-your-windows-10-device)
--   [Windows 8.1 コンピューターの登録解除](#unenroll-your-windows-81-computer)
--   [Windows Phone 8.1 デバイスの登録解除](#unenroll-your-windows-phone-81-device)
-
-## <a name="unenroll-your-windows-10-device"></a>Windows 10 デバイスの登録解除
+## <a name="remove-your-windows-10-device"></a>Windows 10 デバイスを削除する
 
 1.  アプリの一覧で、 **ポータル サイト** アプリをタップします。
 
 2.  職場または学校の資格情報でサインインします。
 
-3.  **[デバイス]**で、登録を解除するデバイスを選択します。
+3.  **[デバイス]** で、登録を解除するデバイスを選択します。
 
 4.  **[削除]** &gt; **[削除]** の順にタップします。
 
-## <a name="unenroll-your-windows-81-computer"></a>Windows 8.1 コンピューターの登録解除
+## <a name="remove-your-windows-81-computer"></a>Windows 8.1 コンピューターを削除する
 
 1.  **[PC 設定]** &gt; **[ネットワーク]** &gt; **[ワークプレース]** の順に移動します。
 
@@ -53,7 +47,7 @@ ms.lasthandoff: 01/25/2018
 
 4.  開いたポップアップ ウィンドウで、**[オフにする]** を選択します。
 
-## <a name="unenroll-your-windows-phone-81-device"></a>Windows Phone 8.1 デバイスの登録解除
+## <a name="remove-your-windows-phone-81-mobile-device"></a>Windows Phone 8.1 モバイル デバイスを削除する
 
 1.  **[設定]** &gt; **[社内]** の順にタップします。
 
@@ -62,5 +56,22 @@ ms.lasthandoff: 01/25/2018
 3.  画面の下部にある **[削除]** をタップします。
 
 4.  **[アカウントの削除]** ダイアログで、**[削除]** をタップします。
+
+## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>ポータル サイトの削除後に個人情報を削除する
+
+お使いの Windows デバイスでは、ポータル サイトによって 2 種類のデータが格納されます。
+
+-   **診断ログ**: アプリを起動していた時間やクラッシュの発生など、Microsoft によって回収された標準的なアプリ アクティビティ データは、デバイスをポータル サイトから削除したときに自動的に消去されます。
+-   **アプリケーション キャッシュ**: アプリが動作するには、アイコンや設定など、特定のサポート ファイルを格納する必要があります。
+
+この情報を完全に削除するには、いくつかの手順を踏む必要があります。
+
+### <a name="uninstall-the-company-portal"></a>ポータル サイトをアンインストールする  
+
+[ポータル サイト アプリをアンインストールする](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs)と、お使いのデバイスに格納されているアプリ データの一部が削除されます。  
+
+### <a name="reset-the-company-portal"></a>ポータル サイトをリセットする
+
+[設定] でアプリをリセットすることで、ポータル サイトのアプリ データの残りをリセットできます。 **[設定]**、**[アプリと機能]**、**[ポータル サイト]**、**[詳細オプション]**、**[リセット]** の順に開きます。
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。

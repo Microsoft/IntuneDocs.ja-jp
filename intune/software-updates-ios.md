@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 39432d09bea822c25ca9e11181a11a1e2298dfef
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 58727a501d6a8ec14e964094eac9fcd6eb3868da
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configure-ios-update-policies-in-microsoft-intune"></a>Microsoft Intune での iOS 更新ポリシーの構成
 
@@ -55,3 +55,4 @@ iOS 更新ポリシーをユーザーに割り当てるには、構成したポ�
 ## <a name="monitor-ios-device-installation-failures"></a>iOS デバイスのインストール エラーを監視する
 <!-- 1352223 -->
 **[ソフトウェア更新プログラム]** ウィンドウから **[Installation failures for iOS devices]\(iOS デバイスのインストール エラー\)** レポートを利用できます。 このレポートには、iOS 更新ポリシーの対象になっており、更新を試みたが更新できなかった監視対象の iOS デバイスのリストを表示できます。 デバイスごとに、デバイスが自動的に更新されない理由のステータスを確認できます。 リストには、正常な最新デバイスは表示されません。 ここでは、デバイス自体でサポートできる最新の更新プログラムとして最新を定義しています。
+

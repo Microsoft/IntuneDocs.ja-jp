@@ -15,16 +15,16 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd9915f3120e2fee2b487fbfff0d775a9d50ef8a
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 848f76f61ebf85201af18ab019d0546e48fcaa41
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Volume Purchase Program で購入した iOS アプリを Microsoft Intune で管理する方法
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 iOS アプリ ストアでは、社内で実行するアプリの複数のライセンスを購入できます。 複数のコピーを購入すると、会社でのアプリ管理を効率的に行うことができます。
 
@@ -81,7 +81,7 @@ iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purc
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Apple VPP トークンを取得およびアップロードするには
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 1.  **[Intune]** ウィンドウで、**[セットアップ]** の **[モバイル アプリ]** > **[iOS VPP トークン]** を選択します。
 2.  VPP トークンの一覧ウィンドウで、**[作成]** を選択します。
 4. **[VPP トークンの作成]** ウィンドウで、次の情報を指定します。
@@ -152,6 +152,17 @@ iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purc
 ## <a name="further-information"></a>詳細情報
 
 対象となるデバイスを持つユーザーが初めて VPP アプリをデバイスにインストールしようとすると、Apple Volume Purchase Program に参加するように求められます。 アプリのインストールを実行する前に、このプログラムに参加する必要があります。 Apple Volume Purchase Program への参加招待を行うには、ユーザーが iOS デバイスで iTunes アプリを使用できる必要があります。 iTunes Store アプリを無効にするようにポリシーを設定した場合、VPP アプリのユーザーベース ライセンスは機能しません。 この問題を解決するには、ポリシーを削除して iTunes アプリを許可するか、デバイス ベースのライセンスを使用します。
+
+## <a name="frequently-asked-questions"></a>よく寄せられる質問
+
+#### <a name="how-long-does-the-portal-take-to-update-the-license-count-once-an-app-is-installed-or-removed-from-the-device"></a>デバイスのアプリをインストールまたは削除した後、ポータルがライセンスの数を更新するまでにどれくらいかかりますか。
+アプリをインストールまたはアンインストールしてから数時間以内にライセンスが更新されるはずです。 エンド ユーザーがデバイスからアプリを削除しても、ライセンスはまだそのユーザーまたはデバイスに割り当てられていることに注意してください。
+
+#### <a name="is-it-possible-to-oversubscribe-an-app-and-if-so-in-what-circumstance"></a>アプリをオーバーサブスクライブできますか、できるとしたら、どのような状況においてですか。
+はい。 Intune 管理者は、アプリをオーバーサブスクライブできます。 たとえば、管理者は、アプリ XYZ のライセンスを 100 個購入し、500 人のメンバーがいるグループをアプリの対象にします。 最初の 100 メンバー (ユーザーまたはデバイス) にはライセンスが割り当てられ、残りのメンバーに対するライセンスの割り当ては失敗します。
+
+#### <a name="i-understand-intune-automatically-syncs-app-licenses-each-day-with-apple-is-that-correct"></a>Intune は毎日自動的にアプリのライセンスを Apple と同期すると理解していますが、これは正しいですか。
+Intune は、15 時間ごとに Apple とアプリのライセンスを同期します。
 
 ## <a name="next-steps"></a>次の手順
 

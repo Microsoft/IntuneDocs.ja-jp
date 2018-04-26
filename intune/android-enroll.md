@@ -1,29 +1,29 @@
 ---
-title: "Intune で Android デバイスを登録する"
+title: Intune で Android デバイスを登録する
 titlesuffix: Microsoft Intune
-description: "Intune で Android デバイスを登録する方法について説明します。"
-keywords: 
+description: Intune で Android デバイスを登録する方法について説明します。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7e65a32843cec48268c7e205ab4a064038c28415
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d74f59f1df0a4a4e1285b58d7ac5b3677d3c5e48
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-android-devices"></a>Android デバイスの登録
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune 管理者は、Samsung Knox Standard デバイスを含む、Android デバイスを管理できます。 [Android for Work デバイス](#enable-enrollment-of-android-for-work-devices)で仕事用プロファイルを管理することもできます。
 
@@ -47,6 +47,8 @@ Android デバイスをブロックする場合や、個人所有の Android デ
 
 [デバイス登録マネージャー](device-enrollment-manager-enroll.md) アカウントを使用して Android for Work デバイスを登録する場合、アカウントあたりの登録可能なデバイスは 10 台に制限されます。
 
+詳細については、「[Intune から Google に送られるデータ](data-intune-sends-to-google.md)」を参照してください。
+
 ## <a name="add-android-for-work-binding-for-intune"></a>Intune 用に Android for Work のバインディングを追加する
 
 > [!NOTE]
@@ -55,15 +57,18 @@ Android デバイスをブロックする場合や、個人所有の Android デ
 1. **Intune MDM をセットアップする**<br>
 **Microsoft Intune** を[モバイル デバイス管理機関](mdm-authority-set.md)に設定し、モバイル デバイス管理の準備をします (この作業をまだ行っていない場合)。
 2. **Android for Work のバインディングを構成する**<br>
-    Intune 管理者として [Azure Portal](https://portal.azure.com) で **[すべてのサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-
-   」を参照します。 **[Intune]** ウィンドウで、**[デバイスの登録]** > **[Android for Work への登録]** の順に選択し、管理対象の Google Play の **[構成]** を選択して Google Play の Android for Work の Web サイトを開きます。 ブラウザーの新しいタブで Web サイトが開きます。
+    
+   」を参照します。 [Azure Portal の Intune](https://aka.ms/intuneportal) にサインインして、**[デバイスの登録]** > **[Android の登録]** > **[managed Google Play]** を選択します。
    ![Android for Work の登録画面](./media/android-work-bind.png)
 
-   b. **Google にサインインする**<br>
+   b. **[同意する]** を選択して、Microsoft が[ユーザーとデバイスの情報を Google に送信](data-intune-sends-to-google.md)できるようにします。 
+   
+   c. **[Launch Google to connect now]\(Google を起動して今すぐ接続)** 選択して、Google Play の Android for Work Web サイトを開きます。 ブラウザーの新しいタブで Web サイトが開きます。
+  
+   d. **Google にサインインする**<br>
    Google のサインイン ページで、このテナントのすべての Android for Work 管理タスクに関連付ける Google アカウントを入力します。 これは、会社の IT 管理者が Play for Work コンソールでアプリを管理および公開するときに共有する Google アカウントです。 既存の Google アカウントを使用するか、新しい Google アカウントを作成できます。  選択したアカウントを G-Suite ドメインと関連付けることはできません。
 
-   c. **組織の詳細を指定する**<br>
+   e. **組織の詳細を指定する**<br>
    **[組織名]** に会社名を入力します。 **エンタープライズ モビリティ管理 (EMM) プロバイダー**の場合、**Microsoft Intune** と表示されます。 Android for Work の使用条件に同意し、**[確認]** を選択します。 要求が処理されます。
 
 ## <a name="specify-android-for-work-enrollment-settings"></a>Android for Work 登録設定を指定する
@@ -110,3 +115,14 @@ Android for Work の登録と管理を無効にすることもできます。 In
 
 2. **Android for Work のバインドの削除に同意する**<br>
   **[はい]** を選択してバインドを削除し、Intune からすべての Android for Work デバイスの登録を解除します。
+
+## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>Samsung KNOX デバイス登録時のエンドユーザー エクスペリエンス
+Samsung Knox デバイスを登録する場合、次のいくつかの考慮事項があります。
+-   ポリシーで PIN が要求されない場合でも、デバイスを登録するには少なくとも 4 桁の PIN が必要です。 デバイスに PIN がない場合、ユーザーに作成を求めるメッセージが表示されます。
+-   Workplace Join Certificates (WPJ) に関するユーザーの操作はありません。
+-   ユーザーにサービス登録情報とアプリで実行できる内容を示すメッセージが表示されます。
+-   ユーザーに Knox 登録情報と Knox で実行できる内容を示すメッセージが表示されます。
+-   暗号化ポリシーが適用されている場合、ユーザーはデバイス パスコードの 6 文字の複雑なパスワードを設定する必要があります。
+-   会社のリソースへのアクセスのサービスでプッシュされる証明書のインストールをユーザーに求める追加のメッセージは表示されません。
+- 一部の古い Knox デバイスでは、会社のリソースへのアクセスで使用される追加の証明書を求めるメッセージがユーザーに表示されます。
+- Samsung Mini デバイスで WPJ のインストールに失敗し、"**証明書が見つかりません**" または "**デバイスを登録できません**" などのエラーが表示された場合は、最新の Samsung Firmware Updates をインストールします。

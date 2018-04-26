@@ -14,11 +14,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: edf17d98bb733f7567a615eec856fb7122ba251b
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 11b0e1d80740366a638059162d10e3ebcfe9e8a8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Microsoft Intune でのロール ベースの管理制御 (RBAC)
 
@@ -26,7 +26,7 @@ RBAC を使用して、組織内で Intune のさまざまなタスクを実行�
 
 - **ロールの定義**: ロールの名前、ロールが管理するリソース、各リソースに関して付与されるアクセス許可。
 - **メンバー**: アクセス許可が付与されるユーザー グループ。
-- **スコープ**: メンバーが管理できるユーザーまたはデバイスのグループ。
+- **スコープ**: メンバーがアプリまたはポリシーの展開対象にできる、またはリモート タスクを実行できるユーザーまたはデバイス グループ。
 - **割り当て**: 定義、メンバー、スコープが構成されている場合に、ロールが割り当てられます。
 
 ![Intune での RBAC の例](./media/intune-rbac-1.PNG)
@@ -91,7 +91,7 @@ Intune には次のロールが組み込まれており、追加の構成なし�
     - **[メンバー]** - アクセス許可を付与するユーザーを含むグループを選択します。
     - **[スコープ]** - 上記のメンバーが管理できるユーザーを含むグループを選択します。
 <br></br>
-5. 終了したら、 **[OK]**をクリックします。 新しい割り当てが割り当ての一覧に表示されます。
+5. 終了したら、 **[OK]** をクリックします。 新しい割り当てが割り当ての一覧に表示されます。
 
 ### <a name="intune-rbac-table"></a>Intune RBAC テーブル
 
@@ -136,7 +136,7 @@ Intune には次のロールが組み込まれており、追加の構成なし�
     - **[メンバー]** - アクセス許可を付与するユーザーを含むグループを選択します。
     - **[スコープ]** - 上記のメンバーが管理できるユーザーを含むグループを選択します。
 <br></br>
-5. 終了したら、 **[OK]**をクリックします。 新しい割り当てが割り当ての一覧に表示されます。
+5. 終了したら、 **[OK]** をクリックします。 新しい割り当てが割り当ての一覧に表示されます。
 
 ## <a name="next-steps"></a>次の手順
 
