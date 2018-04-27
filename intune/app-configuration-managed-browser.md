@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10278dd48552e280ebe7399a61033dfb04fbbd74
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4d0c63c5e926c3f8893762a9be3b6bed2d6844c4
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune で Managed Browser ポリシーを使ってインターネット アクセスを管理する
 
@@ -155,10 +155,9 @@ Outlook は、アプリ保護ポリシーの **[Managed Browser に表示する 
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-managed-browser"></a>ステップ 2: Managed Browser に割り当てられたアプリ構成ポリシーを割り当てる
 この手順では、アプリ プロキシのリダイレクトを使用するように、Managed Browser アプリを構成します。 Managed Browser アプリの構成を作成する手順に従い、以下のキーと値のペアを指定します。
 
-|||
-|-|-|
-|キー|値|
-|**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**true**|
+| キー                                                             | 値    |
+|-----------------------------------------------------------------|----------|
+| **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
 オンプレミスの Web アプリへのシームレスな (保護された) アクセスのため、Managed Browser と Azure AD アプリケーション プロキシを並行使用する方法に関する詳細は、Enterprise Mobility + Security のブログ記事「[Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access)」 (最適な組み合わせ: ユーザーのアクセスを向上するための Intune と Azure Active Directory の連携) を参照してください。
 
@@ -166,10 +165,8 @@ Outlook は、アプリ保護ポリシーの **[Managed Browser に表示する 
 
 この設定では、ユーザーが Managed Browser を開始するか、新しいタブを作成したときに表示するホームページを構成することができます。Managed Browser アプリの構成を作成する手順に従い、以下のキーと値のペアを指定します。
 
-
-|                                                                   |                                                                                                                            |
-|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 |                                キー                                |                                                           値                                                            |
+|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | 有効な URL を指定します。 セキュリティ対策のため、誤った URL はブロックされます。<br>例: <strong><https://www.bing.com></strong> |
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>Managed Browser のブックマークを構成する方法
@@ -182,21 +179,17 @@ Outlook は、アプリ保護ポリシーの **[Managed Browser に表示する 
 
 Managed Browser アプリの構成を作成する手順に従い、以下のキーと値のペアを指定します。
 
-
-|                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                キー                                 |                                                                                                                                                                                                                                                         値                                                                                                                                                                                                                                                          |
+|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | この構成の値は、ブックマークのリストです。 各ブックマークは、ブックマークのタイトルとブックマークの URL で構成されます。 タイトルおよび URL は、<strong>& #124;</strong> の文字で区切ります。<br><br>例: <strong>Microsoft Bing&#124;<https://www.bing.com></strong><br><br>複数のブックマークを構成するには、二重の文字 <strong>&#124;&#124;</strong> で各ペアを区切ります。<br><br>例: <strong>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;<https://www.contoso.com></strong> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Managed Browser で許可する URL とブロックする URL を指定する方法
 
 Managed Browser アプリの構成を作成する手順に従い、以下のキーと値のペアを指定します。
 
-
-|                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                             |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                                                                                                                               キー                                                                                                                                                                |                                                                                                                                                                                    値                                                                                                                                                                                    |
-| 次の中から選択します。<br><br>- 許可された URL を指定する場合 (ここで指定した URL のみが許可され、他のサイトにはアクセスできない): <strong>com.microsoft.intune.mam.managedbrowser.AllowListURLs</strong><br><br>- ブロックされた URL を指定する場合 (その他のすべてのサイトにアクセスできる): <br><br><strong>com.microsoft.intune.mam.managedbrowser.BlockListURLs</strong> | キーに対応する値は URL のリストです。 パイプ文字 <strong>&#124;</strong> によって区切られた、1 つの値として許可またはブロックする必要がある、すべての URL を入力します。<br><br>例:<br><br><strong>URL1&#124;URL2&#124;URL3</strong><br><strong>http://<em>.contoso.com/</em>&#124;https://<em>.bing.com/</em>&#124;<https://expenses.contoso.com></strong> |
+|キー|値|
+|-|-|
+|次の中から選択します。<br><br>- 許可された URL を指定する場合 (ここで指定した URL のみが許可され、他のサイトにはアクセスできない): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- ブロックされた URL を指定する場合 (その他のすべてのサイトにアクセスできる): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|キーに対応する値は URL のリストです。 パイプ文字 **&#124;** によって区切られた、1 つの値として許可またはブロックする必要がある、すべての URL を入力します。<br><br>例:<br><br>`URL1\|URL2\|URL3`</code><br>`http://*.contoso.com/*\|https://*.bing.com/*\|https://expenses.contoso.com`|
 
 >[!IMPORTANT]
 >両方のキーを指定しないでください。 両方のキーが同じユーザーを対象とする場合、許可のキーが最も制限の厳しいオプションとして使用されます。

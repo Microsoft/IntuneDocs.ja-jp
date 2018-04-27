@@ -3,8 +3,8 @@ title: Windows Phone 8.1 の Microsoft Intune デバイス制限設定
 titleSuffix: ''
 description: Windows Phone 8.1 を実行するデバイスでデバイスの設定と機能を制御するために使用できる Intune の設定について説明します。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1bebb5915a7adeb13fd95b73587bca0171bebd83
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: eee162425d80a443976d00f9594673a35ce08be1
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Microsoft Intune の Windows Phone 8.1 デバイス制限設定
 
@@ -76,7 +76,7 @@ ms.lasthandoff: 04/16/2018
 
 ### <a name="additional-options"></a>追加オプション
 
-**[インポート]** をクリックして "<*アプリ URL*>, <*アプリ名*>, <アプリ公開者>" 形式の csv ファイルから一覧に値を設定したり、**[エクスポート]** をクリックして、制限付きアプリの一覧の内容を含む csv ファイルを同じ形式で作成したりすることもできます。
+**[インポート]** をクリックして "<*アプリ URL*>, <*アプリ名*>,<app publisher>, <アプリ公開者>" 形式の csv ファイルから一覧に値を設定したり、**[エクスポート]** をクリックして、制限付きアプリの一覧の内容を含む csv ファイルを同じ形式で作成したりすることもできます。
 
 
 ## <a name="browser"></a>ブラウザー

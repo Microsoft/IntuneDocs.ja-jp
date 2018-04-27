@@ -3,8 +3,8 @@ title: 通信費管理サービスをセットアップする
 titleSuffix: Microsoft Intune
 description: Intune を Saaswedo 通信費管理サービスと統合します。
 keywords: Saaswedo
-author: ErikjeMS
-ms.author: erikje
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: af81b4cca369cae69cff6ea52bb5df9ce369cd7f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ca0c0151bd90051d287c76f5d264030112b85cfd
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune で通信費管理サービスをセットアップする
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
