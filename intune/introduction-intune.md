@@ -14,11 +14,11 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 23d669bfd535fb08bb52d194a1852aa774b5a186
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 6f92cb350a69aeb600f1d48e9bdb0b22a623cb52
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="what-is-intune"></a>Intune とは何か
 
@@ -81,7 +81,7 @@ Intune は Azure AD と連携し、さまざまなアクセス制御シナリオ
 EMS の他のサービスと共に Intune を使用すると、モバイルオペレーティング システムとモバイル アプリ自体がアプリ構成を介して提供するセキュリティに加え、組織のモバイル アプリ セキュリティを提供できます。 EMS で管理されるアプリには、次のようなさまざまなモバイル アプリへのアクセスとデータ保護が与えられます。
 
 * [シングル サインオン](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
-*   [多要素認証](https://docs.microsoft.com/multi-factor-authentication/multi-factor-authentication)
+*   [多要素認証](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
 * [アプリの条件付きアクセス (モバイル アプリに企業データが含まれる場合、アクセスを許可する)](app-based-conditional-access-intune.md)
 * [同じアプリ内で企業データと個人データを分離する](app-protection-policy.md)
 * [アプリの保護ポリシー (PIN、暗号化、名前を付けて保存、クリップボードなど)](app-protection-policies.md)
