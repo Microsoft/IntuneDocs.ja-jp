@@ -407,8 +407,6 @@
           href: edition-upgrade-configure-windows-10.md
         - name: Windows 10 の教育設定を構成する
           href: education-settings-configure.md
-        - name: iOS の教育設定を構成する
-          href: education-settings-configure-ios.md
         - name: iOS の教育共有デバイスの構成
           href: education-settings-configure-ios-shared.md
         - name: iOS 更新ポリシーの構成
@@ -511,6 +509,8 @@
                   href: mtd-device-compliance-policy-create.md
                 - name: Intune で MTD を有効にする
                   href: mtd-connector-enable.md
+        - name: 高度な脅威の防止
+          href: advanced-threat-protection.md
         - name: ネットワーク アクセス制御
           href: network-access-control-integrate.md
         - name: Windows Hello の設定
@@ -596,6 +596,10 @@
           href: data-intune-sends-to-apple.md
         - name: Intune から Google に送られるデータ
           href: data-intune-sends-to-google.md
+        - name: Apple から Intune に送られるデータ
+          href: data-apple-sends-to-intune.md
+        - name: Google から Intune に送られるデータ
+          href: data-google-sends-to-intune.md
     - name: 監視とトラブルシューティング
       items:
         - name: ユーザーによる問題のトラブルシューティングをサポートする
@@ -694,6 +698,8 @@
               href: reports-ref-user-device.md
             - name: User エンティティのリファレンス
               href: reports-ref-user.md
+        - name: Intune データ ウェアハウスの アカウント データを移動する
+          href: data-warehouse-account-move.md
     - name: Azure AD で Microsoft Graph の Intune API にアクセスする
       href: intune-graph-apis.md
       items:
