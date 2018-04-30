@@ -29,7 +29,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="android-google-play-store-app"></a>Android (Google Play ストア アプリ)
 
 1. [Microsoft Intune 管理者コンソール](https://manage.microsoft.com)で、**[アプリ]** に移動し、**[アプリの追加]** を選択します。
-2. 発行元の **[ソフトウェア セットアップ]** ページで、**[外部リンク]** を選択して、https://play.google.com/store/apps/details?id=com.lookout.enterprise という URL を指定します。
+2. 発行元の **[ソフトウェア セットアップ]** ページで、**[外部リンク]** を選択して、 https://play.google.com/store/apps/details?id=com.lookout.enterprise という URL を指定します。
    >[!NOTE]
    >Managed Browser を要求するボックスをオンにしないでください。
 
