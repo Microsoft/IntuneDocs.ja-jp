@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a4b5e55b404da907d8f17a658483b4802af8226d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8e8603ca59b46937b1529e710a8bc83aec5dd4d6
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>コンプライアンス違反デバイスに対する自動メール送信とアクションの追加 - Intune
 
@@ -77,7 +77,10 @@ ms.lasthandoff: 04/16/2018
 1. [Azure Portal](https://portal.azure.com) で **[Microsoft Intune]** を開き、**[デバイスのポリシー準拠]** を選択します。
 2. **[ポリシー]** を選択し、ポリシーのいずれかを選択して、**[プロパティ]** を選択します。 
 
-   ポリシーがまだない場合は、 [Android](compliance-policy-create-android.md)、[iOS](compliance-policy-create-ios.md)、[Windows](compliance-policy-create-windows.md)、または他のプラットフォーム用のポリシーを作成します。
+  ポリシーがまだない場合は、 [Android](compliance-policy-create-android.md)、[iOS](compliance-policy-create-ios.md)、[Windows](compliance-policy-create-windows.md)、または他のプラットフォーム用のポリシーを作成します。
+  
+  > [!NOTE]
+  > JAMF デバイスと、デバイス グループを対象とするデバイスは、現時点ではコンプライアンス アクションを受け取ることができません。
 
 3. **[コンプライアンス非対応に対するアクション]** を選択し、**[追加]** を選択してアクションのパラメーターを入力します。 以前に作成したメッセージ テンプレートの選択、新しい受信者の追加、猶予期間のスケジュールの更新を行うことができます。 スケジュールで日数 (0 - 365) を入力して、条件付きアクセス ポリシーを強制的に適用することができます。 日数を **0** にすると、条件付きアクセスは**すぐに**企業リソースへのアクセスをブロックします。
 

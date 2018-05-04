@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3326ecccd0d20602d6a9445b62c39f582354f238
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2f599f168c1b4ae9aa94324b69ed11e6d426c86d
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune のデバイス コンプライアンス ポリシーの概要
 
@@ -80,6 +80,8 @@ Remember that you need to implement conditional access policies in addition to c
   - Windows 10
 
 - コンプライアンスの状態をレポートするには、Intune にデバイスを登録する必要があります。
+
+- 1 人のユーザーに登録されたデバイスまたはプライマリ ユーザーのないデバイスがサポートされています。 複数のユーザー コンテキストはサポートされていません。
 
 ## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Azure AD で Intune のデバイス コンプライアンス ポリシーを操作する方法
 
@@ -148,9 +150,9 @@ Remember that you need to implement conditional access policies in addition to c
 条件付きアクセスなしのデバイス コンプライアンス ポリシーを使用することもできます。 コンプライアンス ポリシーを単独で使用した場合、対象のデバイスが評価され、コンプライアンス ステータスを含めて報告されます。 たとえば、暗号化されていないデバイスの数や脱獄またはルート化されたデバイスに関するレポートを取得できます。 条件付きアクセスなしのコンプライアンス ポリシーを使用する場合、会社のリソースへのアクセス制限はありません。
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>デバイス コンプライアンス ポリシーを展開する方法
-ユーザー グループ内のユーザー、またはデバイス グループ内のデバイスにコンプライアンス ポリシーを展開することができます。 コンプライアンス ポリシーがユーザーに展開されると、ユーザーのデバイスのコンプライアンスがチェックされます。
+ユーザー グループ内のユーザー、またはデバイス グループ内のデバイスにコンプライアンス ポリシーを展開することができます。 コンプライアンス ポリシーがユーザーに展開されると、すべてのユーザーのデバイスのコンプライアンスがチェックされます。
 
-デバイス グループ内のデバイスの場合、**[コンプライアンス ポリシー設定]** ([Azure Portal] > [デバイスのポリシー準拠]) には以下が含まれます。
+**[コンプライアンス ポリシー設定]** ([Azure Portal] > [デバイスのポリシー準拠]) には以下が含まれます。
 
 - **[Mark devices with no compliance policy assigned as]\(コンプライアンス ポリシーが割り当てられていないデバイスにマークを付ける\)**: このプロパティには次の 2 つの値があります。
 
@@ -177,7 +179,7 @@ Remember that you need to implement conditional access policies in addition to c
 ### <a name="actions-for-noncompliance"></a>コンプライアンス非対応に対するアクション
 コンプライアンス ポリシーの条件を満たしていないデバイスに適用されるアクションを時刻順に構成することができます。 コンプライアンス非対応に対するこれらのアクションを自動化することができます (「[コンプライアンス非対応に対するアクションを自動化する](actions-for-noncompliance.md)」を参照)。
 
-## <a name="azure-classic-portal-vs-azure-portal"></a>Azure クラシック ポータルと Azure Portal
+## <a name="azure-classic-portal-vs-azure-portal"></a>Azure クラシック ポータルと Azure ポータル
 
 Azure ポータルでデバイス コンプライアンス ポリシーを使用する場合の主な違い:
 
@@ -200,7 +202,7 @@ Azure Portal でデバイス コンプライアンスに関連した機能を使
 
   - [Android](compliance-policy-create-android.md)
   - [Android for Work](compliance-policy-create-android-for-work.md)
-  - [Android](compliance-policy-create-ios.md)
+  - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)
 
