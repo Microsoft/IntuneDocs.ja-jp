@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d1825d99243654c9fecac7729153a95234d435ff
-ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
+ms.openlocfilehash: d15e464ed77499c28bbcaf94289607ced48c140f
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="custom-device-settings-for-devices-running-windows-holographic-for-business-in-intune"></a>Intune での Windows Holographic for Business を実行しているデバイスに対するカスタム デバイス設定
 
@@ -31,19 +31,18 @@ ms.lasthandoff: 04/27/2018
 2. **[プロファイルの作成]** で **[設定]** を選択し、1 つまたは複数の OMA-URI 設定を追加します。
 3. **[OMA-URI のカスタム設定]** で **[追加]** をクリックして、新しい値を追加します。 **[エクスポート]** をクリックして、コンマ区切り値 (.csv) ファイルで構成した値の一覧を作成することもできます。
 4. 各 OMA-URI 設定を追加するには、次の情報を入力します。
-    - **設定名** - OMA-URI 設定の一意の名前を入力すると、設定リスト内で容易に識別できます。
-    - **設定の説明** - 必要に応じて、設定の説明を入力します。
-    - **データ型** - 以下から選択します。
-        - **文字列**
-        - **文字列型 (XML)**
-        - **日付と時刻**
-        - **整数型**
-        - **浮動小数点**
-        - **ブール型**
-    - **OMA-URI (大文字と小文字を区別)** - 設定対象の OMA-URI を指定します。
-    - **値** - 入力した OMA-URI に関連付ける値を指定します。
-1. 完了したら、**[プロファイルの作成]** に戻り、**[作成]** をクリックします。
-プロファイルが作成され、プロファイル一覧に表示されます。
+  - **設定名**: OMA-URI 設定の一意の名前を入力すると、設定リスト内で容易に識別できます。
+  - **設定の説明**: 必要に応じて、設定の説明を入力します。
+  - **データ型**: 以下から選択します。
+    - **文字列**
+    - **文字列型 (XML)**
+    - **日付と時刻**
+    - **整数型**
+    - **浮動小数点**
+    - **ブール型**
+  - **OMA-URI (大文字と小文字を区別)**: 設定対象の OMA-URI を入力します。
+  - **値**:入力した OMA-URI に関連付ける値を入力します。
+5. 完了したら、**[プロファイルの作成]** に戻り、**[作成]** をクリックします。 プロファイルが作成され、プロファイル一覧に表示されます。
 
 ## <a name="recommended-custom-settings"></a>推奨されるカスタム設定
 
@@ -52,51 +51,51 @@ ms.lasthandoff: 04/27/2018
 ### <a name="allowfastreconnecthttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-authenticationauthentication-allowfastreconnect"></a>[AllowFastReconnect](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowfastreconnect)
 
 ---
-|OMA-URI|［データの種類］  |
-|---------|---------|
-|./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|整数<br>0: 許可しません<br>1: 許可します (既定)|
+|OMA-URI|［データの種類］|
+|---|---|
+|./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|整数<br/>0: 許可しません<br/>1: 許可します (既定)|
 
 ### <a name="allowvpnhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-settingssettings-allowvpn"></a>[AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)
 
 ---
-|OMA-URI|［データの種類］  |
-|---------|---------|
-|./Vendor/MSFT/Policy/Config/Settings/AllowVPN|整数<br>0: 許可しません<br>1: 許可します (既定)|
+|OMA-URI|［データの種類］|
+|---|---|
+|./Vendor/MSFT/Policy/Config/Settings/AllowVPN|整数<br/>0: 許可しません<br/>1: 許可します (既定)|
 
 ### <a name="allowupdateservicehttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-allowupdateservice"></a>[AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 
 ---
-|OMA-URI|［データの種類］  |
-|---------|---------|
-|./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|整数<br>0: 更新サービスは許可されません <br>1: 更新サービスは許可されます (既定)。|
+|OMA-URI|［データの種類］|
+|---|---|
+|./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|整数<br/>0: 更新サービスは許可されません <br/>1: 更新サービスは許可されます (既定)。|
 
 ### <a name="updateserviceurlhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-updateserviceurl"></a>[UpdateServiceURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
 
 ---
-|OMA-URI|［データの種類］  |
-|---------|---------|
-|./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|文字列型<br>URL: デバイスは、指定された URL にある WSUS サーバーから更新プログラムを確認します。<br>未構成: デバイスは、Microsoft Update から更新プログラムを確認します。|
+|OMA-URI|［データの種類］|
+|---|---|
+|./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|文字列型<br/>URL: デバイスは、指定された URL にある WSUS サーバーから更新プログラムを確認します。<br/>未構成: デバイスは、Microsoft Update から更新プログラムを確認します。|
 
 ### <a name="requireupdatesapprovalhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-requireupdateapproval"></a>[RequireUpdatesApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
 
 ---
-|OMA-URI|［データの種類］  |
-|---------|---------|
-|./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|整数<br>0: 構成されていません デバイスは、適用可能なすべての更新プログラムをインストールします。<br>1: デバイスは、適用可能で、[承認された更新プログラム] リストに表示される更新プログラムのみをインストールします。 展開前にテストが必要な場合など、IT 部門がデバイス上の更新プログラムの展開を制御する場合は、このポリシーを 1 に設定します。|
+|OMA-URI|［データの種類］|
+|---|---|
+|./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|整数<br/>0: 構成されていません デバイスは、適用可能なすべての更新プログラムをインストールします。<br/>1: デバイスは、適用可能で、[承認された更新プログラム] リストに表示される更新プログラムのみをインストールします。 展開前にテストが必要な場合など、IT 部門がデバイス上の更新プログラムの展開を制御する場合は、このポリシーを 1 に設定します。|
 
 ### <a name="approvedupdateshttpsdocsmicrosoftcomwindowsclient-managementmdmupdate-csp"></a>[ApprovedUpdates](https://docs.microsoft.com/windows/client-management/mdm/update-csp)
 
 ---
-|OMA-URI|［データの種類］  |
-|---------|---------|
-|./Vendor/MSFT/Update/ApprovedUpdates/*GUID*<br><br>**重要**<br>管理者は、エンド ユーザーの代わりに更新プログラムの EULA を読み、同意する必要があります。 この手順を怠ると、法律または契約上の義務に違反することになります。|エンド ユーザーの代理で行う更新プログラムの承認および EULA 同意のためのノード。<br/><br/>詳細については、「[Update CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp)」(CSP の更新) を参照してください。|
+|OMA-URI|［データの種類］|
+|---|---|
+|./Vendor/MSFT/Update/ApprovedUpdates/*GUID*<br/><br/>**重要**<br/>管理者は、エンド ユーザーの代わりに更新プログラムの EULA を読み、同意する必要があります。 この手順を怠ると、法律または契約上の義務に違反することになります。|エンド ユーザーの代理で行う更新プログラムの承認および EULA 同意のためのノード。<br/><br/>詳細については、「[Update CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp)」(CSP の更新) を参照してください。|
 
 ### <a name="applicationlaunchrestrictionshttpsdocsmicrosoftcomwindowsclient-managementmdmapplocker-csp"></a>[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)
 
 ---
-|OMA-URI|［データの種類］  |
-|---------|---------|
-|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br><br>**重要**<br>AppLocker CSP の記事では、エスケープされた XML の例を使用しています。 Intune カスタム プロファイルを含む設定を構成するには、プレーン XML を使用する必要があります。|文字列型<br>詳細については、「[AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)」を参照してください。|
+|OMA-URI|［データの種類］|
+|----|---|
+|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br/><br/>**重要**<br/>AppLocker CSP の記事では、エスケープされた XML の例を使用しています。 Intune カスタム プロファイルを含む設定を構成するには、プレーン XML を使用する必要があります。|文字列型<br/>詳細については、「[AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)」を参照してください。|
 
 ## <a name="find-the-policies-you-can-configure"></a>構成できるポリシーを見つける
 
