@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/07/2017
+ms.date: 4/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: bbb51300867f273da033b38d05d857034012a24e
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 02ccde8299e4ad5d6aacb2abd120c094f752c5e6
+ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="using-your-macos-device-with-intune"></a>macOS デバイスを Intune で使用する
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 04/04/2018
 
 ## <a name="supported-versions"></a>サポートされているバージョン
 
-現在、Intune では macOS 10.9 Mavericks 以降がサポートされています。
+現在、Intune は macOS デバイス用の OS X El Capitan 10.11 以降をサポートしています。
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Intune に登録して、ポータル サイトをインストールする
 

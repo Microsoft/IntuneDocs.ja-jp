@@ -3,10 +3,10 @@ title: アプリのデータ転送ポリシーの例外
 titleSuffix: Microsoft Intune
 description: Intune モバイル アプリケーション管理 (MAM) データ転送ポリシーの例外を作成します。
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 03/26/2018
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1910334093a416933912c9cdeedac85e36d66e92
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d33768206c53550ec1cb34d5c1ad5e2f33e4f8c8
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Intune モバイル アプリケーション管理 (MAM) データ転送ポリシーの例外を作成する方法
 
@@ -48,8 +48,17 @@ Android をターゲットとするポリシーの場合、アプリ パッケ�
 **Webex** パッケージを MAM データ転送ポリシーの例外として追加すると、管理対象の Outlook 電子メール メッセージ内の Webex リンクを Webex アプリケーションで直接開くことができるようになります。 他の管理対象ではないアプリではデータ転送が制限されます。
 
 - iOS の **Webex** の例: **Webex** アプリを除外対象にして、Intune の管理対象アプリから呼び出すことができるようにするには、<code>wbx</code> という文字列についてデータ転送の例外を追加する必要があります。
+    
+ - iOS の **Maps** の例: ネイティブ **Maps** アプリを除外対象にして、Intune の管理対象アプリから呼び出すことができるようにするには、<code>maps</code> という文字列についてデータ転送の例外を追加する必要があります。
 
-- Android の **Webex** の例: **Webex** アプリを除外対象にして、Intune の管理対象アプリから呼び出すことができるようにするには、<code>com.cisco.webex.meetings</code> という文字列についてデータ転送の例外を追加する必要があります。 
+- Android の **Webex** の例: **Webex** アプリを除外対象にして、Intune の管理対象アプリから呼び出すことができるようにするには、<code>com.cisco.webex.meetings</code> という文字列についてデータ転送の例外を追加する必要があります。
+    
+- Android **SMS** の例: ネイティブ **SMS** アプリを除外対象にして、異なるメッセージング アプリと Android デバイス全体で Intune の管理対象アプリから呼び出すことができるようにするには、次の文字列についてデータ転送の例外を追加する必要があります。 
+    <code>com.google.android.apps.messaging</code>
+    
+    <code>com.android.mms</code>
+    
+    <code>com.samsung.android.messaging</code>
 
 ## <a name="next-steps"></a>次の手順
 

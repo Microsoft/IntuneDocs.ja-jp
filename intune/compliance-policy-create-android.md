@@ -1,12 +1,11 @@
 ---
-title: Microsoft Intune で Android デバイスのコンプライアンス ポリシーを作成する
-titleSuffix: ''
-description: デバイスが準拠するために満たす必要のある要件を指定できるように、Android デバイスの Microsoft Intune デバイス コンプライアンス ポリシーを作成します。
+title: Microsoft Intune - Azure で Android デバイスのコンプライアンス ポリシーを作成する | Microsoft Docs
+description: Android デバイス用の Microsoft Intune デバイス コンプライアンス ポリシーを作成または構成します。 脱獄されたデバイスを許可し、許容可能な脅威レベルを設定し、Google Play を確認し、オペレーティング システムの最小および最大バージョンを入力し、パスワードの要件を選択し、サイドローディング アプリケーションを許可します。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,91 +14,17 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 586672bf84be6e7bcd8d3b8618aab09088620eb1
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: afc8edb38b667d744bb586d1ed5c82df8ab10f49
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Intune で Android デバイス用のデバイス コンプライアンス ポリシーを作成する方法
-
+# <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Intune で Android デバイス用のデバイス コンプライアンス ポリシーを追加する
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android の Intune デバイス コンプライアンス ポリシーでは、準拠しているものと見なされるために Android デバイスが満たす必要のあるルールと設定を指定します。 条件付きアクセスでこれらのポリシーを使用し、会社のリソースへのアクセスを許可またはブロックできます。デバイスのレポートを取得したり、コンプライアンスへの非対応に対処したりできます。 デバイス コンプライアンス ポリシーは、Intune Azure Portal でプラットフォームごとに作成します。 コンプライアンス ポリシーと、コンプライアンス ポリシーを作成する前に対応する必要がある前提条件については、「[Intune のデバイス コンプライアンス ポリシーの概要](device-compliance-get-started.md)」をご覧ください。
-
-## <a name="to-create-a-device-compliance-policy"></a>デバイス コンプライアンス ポリシーを作成するには
-
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-1. **[Intune]** ウィンドウで、**[デバイスのポリシー準拠]** を選択します。 **[管理]** で **[ポリシー]** を選択し、**[ポリシーの作成]** を選択します。
-3. **[Settings Configure]\(設定の構成\)** を選択して、**[システム セキュリティ]**、**[デバイスの正常性]**、**[デバイスのプロパティ]** の設定を指定します。 終了したら、**[OK]** を選択します。
-
-<!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant based on the configured settings in this policy.
-5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
-6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
-7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
-8. Choose **Add** to finish creating the action.
-9. You can create multiple actions and the sequence in which they should occur. Choose **OK** when you are finished creating all the actions.--->
-
-## <a name="to-assign-user-groups"></a>ユーザー グループを割り当てるには
-
-コンプライアンス ポリシーをユーザーに割り当てるには、構成したポリシーを選択します。 既存のポリシーは、**[デバイスのポリシー準拠 - ポリシー]** ウィンドウで確認できます。
-
-1. ポリシーを選択し、**[割り当て]** を選択します。 これにより表示されたウィンドウで、**Azure Active Directory セキュリティ グループ**を選択してポリシーに割り当てることができます。
-2. **[選択したグループ]** を選択すると、ウィンドウが開いて Azure AD セキュリティ グループが表示されます。 ここで、Azure Active Directory 内にあるセキュリティ グループを確認できます。  このポリシーを適用するユーザー グループを選択し、**[保存]** を選択してユーザーにポリシーを展開できます。
-
-ポリシーがユーザーに適用されました。  ポリシーの対象となっているユーザーが使用しているデバイスは、コンプライアンスについて評価されます。
-
-<!---##  Compliance policy settings--->
-
-## <a name="device-health-and-security-settings"></a>デバイスの正常性とセキュリティ設定
-
-- **デバイスの脱獄または root 化を認めない**: この設定を有効にした場合、脱獄デバイスは非準拠として評価されます。
-- **デバイスが提供元不明のアプリのインストールを禁止する必要がある (Android 4.0 以降)**: **[セキュリティ]** > **[提供元不明のアプリ]** が有効になっているデバイスをブロックするには、この設定を有効にして **[はい]** に設定します。
-
-### <a name="important"></a>重要
-
-サイドローディング アプリケーションでは **[提供元不明のアプリ]** の設定を有効にする必要があります。 デバイスで Android アプリをサイドローディングしていない場合のみ、このコンプライアンス ポリシーを適用します。
-
-- **USB のデバッグが無効になっている必要がある (Android 4.2 以降)**: この設定は、デバイス上の USB のデバッグ オプションの検出が有効になっているかどうかを指定します。
-- **デバイスがセキュリティ上の脅威を検出するためにデバイスのスキャンを有効にしている必要がある (Android 4.2 ～ 4.4)**: この設定は、デバイスで **[アプリの確認]** 機能を有効にすることを指定します。
-- **Android のセキュリティ修正プログラムの最小レベル (Android 6.0 以降)**: この設定を使用して、Android の修正プログラムの最小レベルを指定します。 修正プログラムがこのレベルに達していないデバイスは非対応になります。 日付は YYYY-MM-DD の形式で指定する必要があります。
-- **デバイス脅威保護を有効にすることを必須とする**: この設定は、Lookout MTP ソリューションからのリスク評価をコンプライアンスの条件とする場合に使用します。 最大許容脅威レベルとして次のいずれかを選択します。
-  - **[None (secured)]** (なし (セキュリティ保護あり)): これはセキュリティ上最も安全です。 デバイスにはいかなる脅威も存在できないことを意味します。 デバイスで何らかのレベルの脅威が検出された場合、非準拠と評価されます。
-  - **[低]**: 存在する脅威が低レベルの場合のみ、デバイスは準拠として評価されます。 低レベルより高い脅威が存在する場合、デバイスは非準拠状態になります。
-  - **[中]**: デバイスに存在する脅威が低レベルまたは中レベルの場合、デバイスは準拠として評価されます。 デバイスで高レベルの脅威が検出された場合は、非準拠と判定されます。
-  - **[High]** (高): 最も安全性の低い状態です。 基本的に、すべての脅威レベルが許容されます。 レポート目的でこのソリューションを利用する場合であれば、便利かもしれません。
-
-## <a name="system-security-settings"></a>システム セキュリティ設定
-
-### <a name="password"></a>パスワード
-
-- **モバイル デバイスのロック解除にパスワードを必要とする**: デバイスにアクセスするユーザーにパスワードを入力するよう求める場合は、**[はい]** に設定します。
-- **パスワードの最小文字数**: ユーザーのパスワードに必要な数字または文字の最小数を指定します。
-- **パスワードの品質**: 指定したパスワード要件が、デバイスに構成されているかどうかをこの設定で検出します。 この設定を有効にすると、Android デバイスで特定のパスワード要件を満たすことが必須になります。 次の中から選択します。
-  - **低レベルのバイオメトリック セキュリティ**
-  - **必須**
-  - **最小数の数字**
-  - **最小数の英字**
-  - **最小数の英数字**
-  - **英数字と記号**
-- **デバイスの画面がロックされるまでの非アクティブな時間 (分)**: ユーザーがパスワードを再入力しなければならなくなるまでのアイドル時間を指定します。
-- **[パスワードの有効期限 (日数)]**: 新しいパスワードの作成が必要となるまでのパスワードの有効日数を選択します。
-- **パスワードの履歴を記憶する**: この設定を **[前のパスワードの再利用を防止]** と共に使用することで、以前使用されていたパスワードをユーザーが作成することを制限します。
-- **前のパスワードの再利用を防止**: **[パスワードの履歴を保存する]** が選択されている場合は、再利用できない、以前に使用されていたパスワードの数を指定します。
-- **デバイスがアイドル状態から戻るときにパスワードを必須とする**: この設定は、**[デバイスの画面がロックされるまでの非アクティブな時間 (分)]** 設定と組み合わせて使用する必要があります。 ユーザーは、**[デバイスの画面がロックされるまでの非アクティブな時間 (分)]** 設定で指定された時間非アクティブの状態が続いたデバイスにアクセスしようとすると、パスワードを入力するように求められます。
-
-### <a name="encryption"></a>暗号化
-
-- **モバイル デバイスで暗号化を必要とする**: リソースに接続するためにデバイスの暗号化を必要とする場合は、**[はい]** に設定します。 **[モバイル デバイスのロック解除にパスワードを必要とする]** 設定を選択すると、デバイスは暗号化されます。
-
-## <a name="device-property-settings"></a>デバイスのプロパティの設定
-
-- **必要な最小 OS バージョン**: デバイスが最小 OS バージョンの要件を満たしていない場合、非準拠として報告されます。 アップグレード方法に関する情報のリンクが表示されます。 ユーザーは、デバイスのアップグレードを行うことを選択できます。アップグレード後は、会社のリソースにアクセスできます。
-- **許可される最大 OS バージョン**: ルールに指定された OS バージョンより新しいバージョンの OS がデバイスで使用されている場合、会社のリソースへのアクセスがブロックされ、IT 管理者に問い合わせることをユーザーに促すメッセージが表示されます。対象の OS バージョンを許可するようにルールが変更されるまで、このデバイスを使用して会社のリソースへのアクセスすることはできません。
-
-## <a name="how-noncompliant-settings-work-with-conditional-access-policies"></a>条件付きアクセス ポリシーを使用したコンプライアンス非対応設定の機能
+Android の Intune デバイス コンプライアンス ポリシーでは、準拠しているものと見なされるために Android デバイスが満たす必要のあるルールと設定を指定します。 このようなポリシーを条件付きアクセスと一緒に使用することにより、会社のリソースへのアクセスを許可または阻止することができます。 コンプライアンス違反に対して、デバイス レポートを取得したり、是正措置を取ったりすることもできます。 デバイス コンプライアンス ポリシーは、Intune Azure Portal でプラットフォームごとに作成します。 コンプライアンス ポリシーの詳細については、[デバイス コンプライアンスの概要](device-compliance-get-started.md)に関するページを参照してください。
 
 次の表では、条件付きアクセス ポリシーとコンプライアンス ポリシーを使用する場合に非準拠設定をどのように管理するかについて説明しています。
 
@@ -124,6 +49,88 @@ Android の Intune デバイス コンプライアンス ポリシーでは、�
 - ユーザーに条件付きアクセス ポリシーを適用すると、デバイスがブロックされます。
 - ポータル サイトは、コンプライアンスの問題をユーザーに通知します。
 
-<!--- ## Next steps
+## <a name="create-a-device-compliance-policy"></a>デバイス コンプライアンス ポリシーの作成
 
-[How to monitor device compliance](device-compliance-monitor.md)--->
+[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
+5. **[プラットフォーム]** で、**[Android]** を選択します。 **[設定]** を選択し、**[デバイスのヘルス]**、**[デバイス プロパティ]**、および **[システム セキュリティ]** の設定を入力します。 終了したら、**[OK]**、**[作成]** の順に選択します。
+
+<!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant based on the configured settings in this policy.
+5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
+7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
+8. Choose **Add** to finish creating the action.
+9. You can create multiple actions and the sequence in which they should occur. Choose **OK** when you are finished creating all the actions.--->
+
+<!---##  Compliance policy settings--->
+
+## <a name="device-health"></a>Device health
+
+- **[ルート化されたデバイス]**: この設定を有効にすると、脱獄されたデバイスは非準拠として評価されます。
+- **[デバイスは、デバイス脅威レベル以下であることが必要]**: この設定は、Lookout MTP ソリューションからのリスク評価をコンプライアンスの条件とする場合に使用します。 許容される脅威の最大レベルを選択します。
+  - **[セキュリティ保護]**: デバイスにはいかなる脅威も存在してはならないので、これはセキュリティ上最も安全なオプションです。 デバイスで何らかのレベルの脅威が検出された場合、非準拠と評価されます。
+  - **[低]**: 存在する脅威が低レベルの場合のみ、デバイスは準拠として評価されます。 低レベルより高い脅威が存在する場合、デバイスは非準拠状態になります。
+  - **[中]**: デバイスに存在する脅威が低レベルまたは中レベルの場合、デバイスは準拠として評価されます。 デバイスで高レベルの脅威が検出された場合は、非準拠と判定されます。
+  - **[高]**: 最も安全性の低いオプションであり、すべての脅威レベルが許容されます。 このソリューションをレポート目的のみで使用した場合、役立つ場合があります。
+- **[Google Play サービスが構成されています]**: Google Play 開発者サービス アプリがインストールされ、有効になっている必要があります。 Google Play 開発者サービスはセキュリティ更新プログラムを許可し、Google の認定デバイスの多くのセキュリティ機能に対してベースレベルの依存関係となっています。
+- **[最新のセキュリティ プロバイダー]**: 最新のセキュリティ プロバイダーが既知の脆弱性からデバイスを保護できるようになっている必要があります。
+- **[アプリの脅威のスキャン]**: Android の **[アプリの確認]** 機能が有効になっている必要があります。
+
+  > [!NOTE]
+  > 従来の Android プラットフォームでは、この機能はコンプライアンス設定です。 Intune では、デバイス レベルでこの設定が有効になっているかどうかのみを確認できます。 作業プロファイルがあるデバイス (Android for Work) では、この設定は構成ポリシー設定として存在しています。 これにより、管理者はデバイスの設定を有効にできます。
+
+  企業で、Android 作業プロファイルを使用する場合は、登録されているデバイスに対して **[アプリの脅威のスキャン]** を有効にできます。 デバイス プロファイルを作成し、システム セキュリティ設定を要求します。 詳細については、「[Intune での Work デバイスの制限設定](device-restrictions-android-for-work.md)」をご覧ください。
+
+- **[SafetyNet デバイス構成証明]**: 満たす必要がある [SafetyNet デバイス構成証明](https://developer.android.com/training/safetynet/attestation.html)のレベルを入力します。 次のようなオプションがあります。
+  - **未構成**
+  - **基本的な整合性のチェック**
+  - **基本的な整合性と認定デバイスのチェック**
+
+## <a name="device-property-settings"></a>デバイスのプロパティの設定
+
+- **[最小 OS バージョン]**: デバイスが最小 OS バージョンの要件を満たしていない場合、非準拠として報告されます。 アップグレード方法に関する情報のリンクが表示されます。 エンド ユーザーは、デバイスのアップグレードを行うことを選択できます。アップグレード後は、会社のリソースにアクセスできます。
+- **[最大 OS バージョン]**: ルールに指定された OS バージョンより新しいバージョンの OS がデバイスで使用されている場合、会社のリソースへのアクセスがブロックされます。 IT 管理者に問い合わせることをユーザーに促すメッセージが表示されます。対象の OS バージョンを許可するようにルールが変更されるまで、このデバイスを使用して会社のリソースにアクセスすることはできません。
+
+## <a name="system-security-settings"></a>システム セキュリティ設定
+
+### <a name="password"></a>パスワード
+
+- **[モバイル デバイスのロック解除にパスワードを必要とする]**: デバイスにアクセスするユーザーにパスワードを入力するよう**求めます**。
+- **パスワードの最小文字数**: ユーザーのパスワードに必要な数字または文字の最小数を入力します。
+- **[必要なパスワードの種類]**: パスワードの内容を数字のみにするかどうか、または数字とその他の文字との組み合わせにするかどうかを選択します。 次の中から選択します。
+  - **デバイスの既定値**
+  - **低レベルのバイオメトリック セキュリティ**
+  - **最小数の数字**
+  - **数値複素数**
+  - **最小数の英字**
+  - **最小数の英数字**
+  - **英数字と記号を使用する**
+- **[デバイスの画面がロックされるまでの非アクティブな最大分数]**: ユーザーがパスワードを再入力しなければならなくなるまでのアイドル時間を入力します。
+- **[パスワードの有効期限 (日数)]**: 新しいパスワードの作成が必要となるまでのパスワードの有効日数を選択します。
+- **[再使用を禁止するパスワード世代数]**: 再使用できないパスワードの世代数を入力します。 この設定を使用して、以前に使用されたことのあるパスワードの作成を制限するかどうかを指定します。
+
+### <a name="encryption"></a>暗号化
+
+- **[Encryption of data storage on a device]\(デバイス上のデータ ストレージの暗号化\)** (Android 4.0 以降、または KNOX 4.0 以降): **[必要]** を選択すると、デバイス上のデータ ストレージが暗号化されます。 **[モバイル デバイスのロック解除にパスワードを必要とする]** 設定を選択すると、デバイスは暗号化されます。
+
+### <a name="device-security"></a>［デバイス セキュリティ］
+
+- **[提供元不明のアプリをブロックする]**: 選択すると、[セキュリティ] > [提供元不明のアプリ] が有効になっているソースに対してデバイスがブロックされます (Android 4.0 から Android 7.x まで。 Android 8.0 以降ではサポートされていません)。 アプリをサイドローディングするには、提供元不明のアプリを許容する必要があります。 Android アプリをサイドローディングしていない場合は、このコンプライアンス ポリシーを有効にします。
+
+  > [!IMPORTANT]
+  > サイドローディング アプリケーションでは **[提供元不明のアプリをブロックする]** の設定を有効にする必要があります。 デバイスで Android アプリをサイドローディングしていない場合のみ、このコンプライアンス ポリシーを適用します。
+
+- **[ポータル サイト アプリのランタイム整合性]**: ポータル サイト アプリの既定のランタイム環境がインストールされているかどうか、ポータル サイト アプリが適切に署名されているかどうか、デバッグ モードになっていないかどうか、既知の提供元からインストールされているかどうかを確認します。
+- **[デバイスでの USB デバッグをブロックする]** (Android 4.2 以降): 選択すると、デバイスで USB デバッグ機能を使用できなくなります。
+- **[最低限のセキュリティ パッチ レベル]** (Android 6.0 以降): デバイスに含めることができる最も古いセキュリティ パッチ レベルを選択します。 修正プログラムがこのレベルに達していないデバイスは非準拠になります。 日付は `YYYY-MM-DD` 形式で入力する必要があります。
+
+## <a name="assign-user-groups"></a>ユーザー グループを割り当てる
+
+1. 構成済みのポリシーを選択します。 既存のポリシーは、**[デバイスのポリシー準拠]** > **[ポリシー]** で確認できます。
+2. ポリシーを選択し、**[割り当て]** を選択します。 Azure Active Directory (AD) のセキュリティ グループは、含めることも除外することもできます。
+3. **[選択したグループ]** を選択すると、Azure AD セキュリティ グループが表示されます。 このポリシーで適用するユーザー グループを選択し、**[保存]** を選択してユーザーにポリシーを展開します。
+
+ポリシーがユーザーに適用されました。 ポリシーの対象となっているユーザーが使用しているデバイスは、コンプライアンスが評価されます。
+
+## <a name="next-steps"></a>次の手順
+[非準拠デバイスに対する自動メール送信とアクションの追加](actions-for-noncompliance.md)  
+[Intune デバイスのコンプライアンス対応ポリシーの監視](compliance-policy-monitor.md)

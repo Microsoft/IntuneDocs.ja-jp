@@ -5,7 +5,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/27/2018
+ms.date: 04/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d0a8a189e708ed140c3cda987a20cebb562fdb34
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 388c9f69b6cbee1353b0e21121a47576b58b3ba6
+ms.sourcegitcommit: 407191a92ef356a3d196b6f9959b9b033190ca2c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune の既知の問題
 
@@ -63,9 +63,11 @@ iOS ボリューム購入アプリが表示されても、Intune アカウント
 Intune に登録されていないデバイスでは、Windows 情報保護ポリシー設定の **[Corporate Identify]\(業務用の特定\)** フィールドにプライマリ ドメインのみを指定できます。
 (**[詳細設定]** > **[ネットワーク境界]** > **[Add a protected domain]\(保護されているドメインの追加\)** で追加ドメインを追加する場合に、ポリシーを保存できません。 表示されるエラー メッセージは間もなく変更され、より正確な内容となる予定です。
 
-### <a name="cisco-anyconnect-vpn-client-support"></a>Cisco AnyConnect VPN クライアントのサポート
-Cisco AnyConnect VPN クライアント (4.0.07072) の最新のリリースは、現在 Intune との互換性がありません。 Intune の今後の更新には、この VPN クライアントのバージョンとの互換性が含まれる予定です。 それまでは、Cisco AnyConnect VPN クライアントを更新せず、既存のバージョンを使い続けることをお勧めします。
+### <a name="cisco-anyconnect-and-cisco-legacy-anyconnect-vpn-client-support---ios"></a>Cisco AnyConnect と Cisco Legacy AnyConnect VPN クライアントのサポート - iOS
 
+iOS デバイスでは、ネットワーク アクセス制御 (NAC) 統合は新しい Cisco AnyConnect クライアントに対応していません。 NAC 統合を提供できるように、Cisco と協力しています。
+
+[Intune での VPN プロファイルの作成](vpn-settings-ios.md)に関するページでは、Cisco AnyConnect クライアントと Cisco Legacy AnyConnect クライアントの詳細について説明しています。
 
 ### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>macOS Sierra デバイスで数字のパスワードを使用する
 

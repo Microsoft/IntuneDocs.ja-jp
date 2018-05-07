@@ -2,7 +2,7 @@
 
 ### <a name="apple"></a>Apple
 - Apple iOS 9.0 以降
-- Mac OS X 10.9 以降
+- Mac OS X 10.11 以降
 
 ### <a name="google"></a>Google
 - Android 4.4 以降 (Samsung KNOX Standard 4.4 以降を含む)
@@ -14,6 +14,7 @@
 
 ### <a name="microsoft"></a>Microsoft
 
+- Surface Hub
 - Windows 10 (Home、S、Pro、Education、および Enterprise バージョン)
 - Windows 10 Mobile
 - Windows 10 IoT Enterprise (x86、x64)

@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11ce7fa7fa4d48d9cc292b7b6565b6b4f2be2dc4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 5715cca4a2f3deff925c5ba2575771c548261e53
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune での Work デバイスの制限設定
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 04/16/2018
 
    たとえば、Android for Work プロファイルに Gmail アプリを展開する場合、エンド ユーザーがこの作業プロファイルのアカウントを追加または削除できないようにすることができます。
 
-- **[Bluetooth 経由での連絡先の共有]**: Bluetooth を使用してペアリングされる、自動車などの別のデバイスから勤務先の連絡先にアクセスできるようにします。 既定では、この設定は構成されておらず、仕事用プロファイルの連絡先は表示されません。 **[有効にする]** を選択して、この共有を許可し、仕事用プロファイルの連絡先を表示します。 この設定は、Android OS v6.0 以降の Android 仕事用プロファイル デバイスに適用されます。
+- **[Bluetooth 経由での連絡先の共有]**: Bluetooth を使用してペアリングされる、自動車などの別のデバイスから勤務先の連絡先にアクセスできるようにします。 既定では、この設定は構成されておらず、仕事用プロファイルの連絡先は表示されません。 **[有効にする]** を選択して、この共有を許可し、仕事用プロファイルの連絡先を表示します。 この設定は、Android OS v6.0 以降の Android 仕事用プロファイル デバイスに適用されます。 この設定を有効にすると、最初の接続時に特定の Bluetooth デバイスで勤務先の連絡先をキャッシュすることができます。 最初のペアリング/同期後にこのポリシーを無効にしても、Bluetooth デバイスから勤務先の連絡先が削除されないことがあります。
 
 ### <a name="work-profile-password"></a>仕事用プロファイルのパスワード
 

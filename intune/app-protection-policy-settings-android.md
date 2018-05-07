@@ -1,25 +1,25 @@
 ---
-title: "Android アプリ保護ポリシー設定"
+title: Android アプリ保護ポリシー設定
 titlesuffix: Microsoft Intune
-description: "このトピックでは、Android デバイスのアプリ保護ポリシーの設定について説明します。"
-keywords: 
-author: Erikre
-ms.author: erikre
+description: このトピックでは、Android デバイスのアプリ保護ポリシーの設定について説明します。
+keywords: ''
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 02/20/2018
+ms.date: 04/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 26f81d8e6ba0fb433d714a5deeaadce9dd619c3f
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: c9c14363d9d00a9beecb5eac41966734687f8a93
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune の Android アプリ保護ポリシー設定
 このトピックでは、Android デバイスのアプリ保護ポリシーの設定について説明します。 説明されているポリシーの設定は、Azure Portal の **[設定]** ブレードでアプリ保護ポリシー用に[構成](app-protection-policies.md)することができます。
@@ -79,7 +79,7 @@ ms.lasthandoff: 03/16/2018
 
 | Setting | 使用方法 | 既定値 |
 |------|------|------|
-| **[アクセスのために PIN を要求する]** | **[はい]** を選択すると、このアプリを使用する際に PIN が要求されます。 ユーザーは、職場または学校のコンテキストでアプリを初めて実行するときに、この PIN のセットアップを求められます。 既定値 = **はい**。<br><br> PIN 強度について、次の設定を構成します。 <ul><li>**PIN をリセットするまでの試行回数**: ユーザーが PIN をリセットするまでに許可される入力試行回数を指定します。 既定値は **5** です。</li><li> **単純な PIN を許可する:** **[はい]** を選択すると、1234 や 1111 などの単純な PIN シーケンスを使用できるようになります。 **[いいえ]** を選択すると、単純なシーケンスは使用できなくなります。 既定値 = **はい**。 </li><li> **PIN の長さ**: PIN シーケンスの最小桁数を指定します。 既定値 = **4**。 <br><br> このポリシー設定の形式は、正の整数をサポートします。</li><li> **PIN の代わりに指紋を許可する (Android 6.0 以降):** **[はい]** を選択すると、アプリへのアクセスに、PIN の代わりに[指紋認証](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)を使用できるようになります。 既定値 = **はい**。</li></ul> Android デバイスでは、PIN の代わりに [Android の指紋認証](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)を使用して、ユーザーの身元を確かめることができます。 ユーザーが職場または学校のアカウントでこのアプリを使用しようとすると、PIN を入力する代わりに指紋認証を求められます。 </li></ul>| PIN が必要: はい <br><br> PIN のリセットの試行回数: 5 <br><br> 単純な PIN を許可する: はい <br><br> PIN の長さ: 4 <br><br> 指紋を許可する: はい |
+| **[アクセスのために PIN を要求する]** | **[はい]** を選択すると、このアプリを使用する際に PIN が要求されます。 ユーザーは、職場または学校のコンテキストでアプリを初めて実行するときに、この PIN のセットアップを求められます。 既定値 = **はい**。<br><br> PIN 強度について、次の設定を構成します。 <ul><li>**種類の選択**: アプリ保護ポリシーが適用されているアプリにアクセスする前に、数値またはパスコードのどちらの種類の PIN を入力する必要があるかを設定します。 数値の場合は数字だけですが、パスコードの場合は少なくとも 1 つのアルファベット**または**少なくとも 1 つの特殊文字で定義できます。 <br><br> **注:** 許可されている特殊文字には、Android 英語キーボードの特殊文字と記号が含まれます。 既定値は **[数値]** です。</li><br><li>**PIN をリセットするまでの試行回数**: ユーザーが PIN をリセットするまでに許可される入力試行回数を指定します。 既定値は **5** です。</li><li> **単純な PIN を許可する:** **[はい]** を選ぶと、1234、1111、abcd、aaaa などの単純な PIN シーケンスを使えるようになります。 **[いいえ]** を選択すると、単純なシーケンスは使用できなくなります。 <br><br>**注**: パスコードの種類として PIN が構成され、[単純な PIN を許可する] が [はい] に設定されている場合、少なくとも 1 つの文字**または**少なくとも 1 つの特殊文字を PIN に使用する必要があります。 パスコードの種類として PIN が構成され、[単純な PIN を許可する] が [いいえ] に設定されている場合、少なくとも 1 つの数字**および** 1 つの文字、**さらに**少なくとも 1 つの特殊文字を PIN に使用する必要があります。 既定値 = **はい**。 </li><br><li> **PIN の長さ**: PIN シーケンスの最小桁数を指定します。 既定値 = **4**。</li><li> **PIN の代わりに指紋を許可する (Android 6.0 以降):** **[はい]** を選択すると、アプリへのアクセスに、PIN の代わりに[指紋認証](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)を使用できるようになります。 既定値 = **はい**。 <br><br>**注**: Android For Work では、**[PIN の代わりに指紋を許可する]** ポリシーを適用するために別の指紋を登録する必要があります。 このポリシーは、Android For Work プロフィールにインストールされているポリシー管理アプリの場合にのみ有効です。 会社のポータルに登録して Android For Work の管理プロファイルを作成した後に、別の指紋をデバイスに登録する必要があります。 Android For Work を使用する仕事用プロファイルの指紋の詳細については、「[仕事用プロファイルのロック](https://support.google.com/work/android/answer/7029958)」を参照してください。</li></ul> Android デバイスでは、PIN の代わりに [Android の指紋認証](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication)を使用して、ユーザーの身元を確かめることができます。 ユーザーが職場または学校のアカウントでこのアプリを使用しようとすると、PIN を入力する代わりに指紋認証を求められます。 </li></ul>| PIN が必要: はい <br><br> PIN のリセットの試行回数: 5 <br><br> 単純な PIN を許可する: はい <br><br> PIN の長さ: 4 <br><br> 指紋を許可する: はい |
 | **[アクセスには会社の資格情報が必要]** | **[はい]** を選択すると、ユーザーは、アプリへのアクセスに、PIN を入力する代わりに職場または学校のアカウントでのサインインが求められます。 これを **[はい]** に設定すると、PIN またはタッチ ID の要件が上書きされます。  | [いいえ] |
 | **脱獄されたデバイスまたは root 化されたデバイスで管理対象アプリが実行されることを禁止する** |このアプリが脱獄または root 化されたデバイスで実行されないようにする場合は、**[はい]** を選択します。 ユーザーは、引き続き個人のタスクにこのアプリを使用できますが、このアプリの職場または学校のデータにアクセスする場合は別のデバイスを使用する必要があります。 | はい |
 | **[(分数) 後に、アクセス要件を再確認する]** | 次の設定を構成します。 <ul><li>**タイムアウト**: これは、(ポリシーで前に定義した) アクセス要件が再確認するまでの分数です。 たとえば、管理者がポリシーで PIN をオンにしてルート化されたデバイスをブロックする、ユーザーが Intune で管理されているアプリを開く、PIN を入力しなければならない、およびルート化されていないデバイスでアプリを使用していなければならないなどです。 この設定を使用する場合、ユーザーはすべての Intune 管理対象アプリでその後の **30 分** (既定値) PIN を入力したり、別のルート検出チェックを行う必要はありません。 <br><br> **注:** Android では、Intune 管理対象のすべてのアプリで PIN が共有されます。 デバイスで、アプリがフォアグラウンドを離れると、PIN のタイマーがリセットされます。 設定で定義されているタイムアウトの間、PIN を共有する Intune 管理対象アプリで、PIN を入力する必要はありません。 <br><br> このポリシー設定の形式は、正の整数をサポートします。<br></li><li>**オフラインの猶予期間**: MAM デバイスをオフラインで実行できる分数です。アプリのアクセス要件を再確認するまでの時間 (分単位) を指定します。 既定値は、**720** 分 (12 時間) です。 これが期限切れになると、アプリを実行し続けることができるよう、ユーザーはアプリにより AAD に対する認証を求められます。<br><br> このポリシー設定の形式は、正の整数をサポートします。</li></ul>| タイムアウト: 30 <br><br> オフライン: 720 |

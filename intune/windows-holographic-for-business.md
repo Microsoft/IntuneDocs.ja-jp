@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41c1ea3bf12b83a0f09c8535275ffb58e5f46931
-ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
+ms.openlocfilehash: 45d8f5051d9663273c6515717b7930145ff8a964
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="customize-devices-running-windows-holographic-with-intune"></a>Intune を使用して Windows Holographic を実行するデバイスをカスタマイズする
 
@@ -38,7 +38,7 @@ Intune には、ポータル サイトが含まれています。このサイト
 
 **[コンプライアンス ポリシーの概要](device-compliance-get-started.md)** に関するページも参照してください。
 
-## <a name="deploy-apps"></a>アプリの展開
+## <a name="deploy-and-manage-apps"></a>アプリの展開と管理
 **[Intune にアプリを追加する](apps-add.md)**
 
 Intune を使用し、Windows Holographic for Business を実行しているデバイスにアプリを追加できます。 アプリは次のようなさまざまな方法でデプロイできます。
@@ -46,6 +46,16 @@ Intune を使用し、Windows Holographic for Business を実行しているデ�
 - [Microsoft Store のアプリを追加する](store-apps-windows.md)
 - [自分で開発したアプリを追加する](lob-apps-windows.md)
 - [アプリをグループに割り当てる](apps-deploy.md)
+
+Microsoft Intune では、Windows Holographic for Business を実行している Microsoft HoloLens デバイスにユニバーサル Windows アプリを展開することができます。 アプリ パッケージは、Intune Azure Portal で直接アップロードするか、またはビジネス向け Microsoft ストアから展開することができます。 関連する領域の詳細については、次を参照してください。
+- Intune Azure Portal を使用して基幹業務 (LOB) アプリを展開するには、[Windows の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法](lob-apps-windows.md)に関するページを参照してください。
+- ビジネス向け Microsoft ストアを使用してアプリを展開するには、「[ビジネス向け Microsoft ストアから購入したアプリを Microsoft Intune で管理する方法](windows-store-for-business.md)」を参照してください。 
+- Microsoft Intune でのアプリの管理については、[Microsoft Intune アプリの管理](app-management.md)に関するページを参照してください。
+- Microsoft HoloLens 用アプリの開発の詳細については、「[Microsoft HoloLens のための複合現実アプリ](https://www.microsoft.com/hololens/apps)」を参照してください。 
+
+> [!NOTE]
+> Windows 10 Holographic for Business 1607 を実行している HoloLens デバイスでは、ビジネス向け Microsoft ストアからのオンライン ライセンス アプリをサポートしていません。 詳細については、「[HoloLens へのアプリのインストール](https://docs.microsoft.com/en-us/hololens/hololens-install-apps)」を参照してください。
+
 
 ## <a name="device-categories-and-groups"></a>デバイスのカテゴリとグループ
 **[デバイスをグループに分類する](device-group-mapping.md)**

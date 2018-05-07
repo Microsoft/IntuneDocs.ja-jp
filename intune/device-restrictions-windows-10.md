@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83027a95edca04f4461cecab341deb3ec10680fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 611ec516b87f42b41a80de605d0d511ed2c58309
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune での Windows 10 (以降) の設定に対するデバイスの制限
 この記事では、Windows 10 を実行するデバイスに構成できるすべての Microsoft Intune デバイスの制限設定について説明します。
@@ -370,6 +370,11 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 - **[印刷サービスのリソース URI]** - Azure Portal で構成された印刷サービスの OAuth リソース URI。
 - **[照会するプリンターの最大数 (モバイルのみ)]** - 検出エンドポイントから照会されるプリンターの最大数。
 - **[プリンター検出サービスのリソース URI]** - Azure Portal で構成されたプリンター検出サービスの OAuth リソース URI。
+
+## <a name="local-printer"></a>ローカル プリンター
+- **[プリンター]** - 追加されたローカル プリンターの一覧。
+- **[既定のプリンター]** - 既定のプリンターを設定します。
+- **[新しいプリンターの追加] のユーザー アクセス権** - ローカル プリンターの使用を許可またはブロックします。
 
 ## <a name="reporting-and-telemetry"></a>レポートとテレメトリ
 
