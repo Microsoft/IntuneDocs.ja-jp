@@ -3,8 +3,8 @@ title: Intune Wi-Fi 設定を構成する方法
 titleSuffix: Microsoft Intune
 description: Microsoft Intune を使用して、管理対象デバイスの Wi-Fi 接続を構成する方法について説明します。
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9a550e2963fa60a91db3ef63f7771bc4ca352d98
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: fb4d9fc6f0f0609062c408fd85921c1f86bd7303
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Microsoft Intune で Wi-Fi の設定を構成する方法
 
@@ -38,7 +38,7 @@ Wi-Fi プロファイルでは次のデバイス プラットフォームをサ�
 - Android 4 以降
 - Android for Work
 - iOS 8.0 以降
-- macOS (Mac OS X 10.9 以降)
+- macOS (Mac OS X 10.11 以降)
 
 Windows 8.1、Windows 10、Windows 10 Mobile、Windows Holographic for Business を実行しているデバイスの場合は、以前に別のデバイスからエクスポートした Wi-Fi 構成をインポートできます。
 

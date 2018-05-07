@@ -15,18 +15,18 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63284a1dd5c1d5a6c588775f1c282bfcfef5de67
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c5820d058479bbf37c5dffdb930792f4f84afa69
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>iOS Classroom アプリの Intune 設定を構成する方法
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>概要
-[Classroom](https://itunes.apple.com/app/id1085319084) は、教師が教室で学習を指導し、生徒のデバイスを操作するのを支援するアプリです。 たとえば、教師はこのアプリを利用して次のことができます。
+[Classroom](https://itunes.apple.com/app/id1085319084) は、教師が教室で学習を指導し、生徒のデバイスを操作するのを支援するアプリです。 たとえば、教師はこのアプリを使用して次のことができます。
 
 - 生徒のデバイスでアプリを起動する
 - iPad 画面をロックし、ロックを解除する
@@ -34,18 +34,18 @@ ms.lasthandoff: 04/16/2018
 - 生徒の iPad を操作し、本の中のブックマークや章に移動する
 - 生徒の iPad を画面を Apple TV に映す
 
-Intune iOS **Education** デバイス プロファイルとこのトピックの情報を利用し、Classroom アプリやそれを使用するデバイスを設定できます。
+デバイスで Classroom を設定するには、Intune iOS 教育デバイス プロファイルを作成して設定する必要があります。
 
 ## <a name="before-you-start"></a>開始する前に
 
 以上の設定を構成する前に、次の事項について検討してください。
 
-- 教師と生徒の両方の iPad を Intune に登録する必要があります
+- 教師と生徒の両方の iPad を Intune に登録する必要があります。
 - 教師のデバイスに [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) アプリがインストールされていることを確認してください。 アプリは手動でインストールすることも、[Intune アプリ管理](app-management.md)を利用してインストールすることもできます。
-- 教師のデバイスと生徒のデバイスの間の接続を認証するために証明書を構成する必要があります (手順 2 参照)
-- 教師と生徒の iPad を同じ Wi-Fi ネットワークに置き、Bluetooth を有効にする必要があります
-- iOS 9.3 以降が内蔵され、監視付きの iPad で Classroom アプリを実行します
-- 今回のリリースでは、Intune は 1:1 シナリオを管理できます。各生徒に専用の iPad が与えられます
+- 教師のデバイスと生徒のデバイスの間の接続を認証するために証明書を構成する必要があります (手順 2「Intune で iOS Education プロファイルを作成し、割り当てる」を参照してください)。
+- 教師と生徒の iPad を同じ Wi-Fi ネットワークに置き、Bluetooth を有効にする必要があります。
+- iOS 9.3 以降が内蔵され、監視付きの iPad で Classroom アプリを実行します。
+- 今回のリリースでは、Intune は 1:1 シナリオを管理できます。各生徒に専用の iPad が与えられます。
 
 
 ## <a name="step-1---import-your-school-data-into-azure-active-directory"></a>手順 1 - 学校のデータを Azure Active Directory にインポートする
@@ -82,14 +82,14 @@ SDS は SIS の情報を同期し、それを Azure AD に保管します。 Azu
 9.  **[設定]** > **[構成]** の順に選択します。
 
 
-次に、教師の iPad と生徒の iPad の間の信頼関係を確立するための証明書が必要になります。 証明書は、ユーザー名とパスワードを入力することなく、デバイス間の接続を速やかに認証するために利用されます。
+次のセクションでは、教師の iPad と生徒の iPad の間の信頼関係を確立するための証明書を作成します。 証明書は、ユーザー名とパスワードを入力することなく、デバイス間の接続を速やかに認証するために利用されます。
 
 >[!IMPORTANT]
 >教師の証明書と生徒の証明書は、異なる証明書機関 (CA) が発行する必要があります。 既存の証明書インフラストラクチャに接続する下位 CA を新しく 2 つ作成する必要があります。1 つは教師用で、もう 1 つは生徒用です。
 
 iOS 教育プロファイルは、PFX 証明書のみをサポートします。 SCEP 証明書はサポートされていません。
 
-作成する証明書は、ユーザー認証に加え、サーバー認証に対応している必要があります。
+作成する証明書は、サーバー認証とユーザー認証をサポートする必要があります。
 
 ### <a name="configure-teacher-certificates"></a>教師の証明書を構成する
 
@@ -97,13 +97,15 @@ iOS 教育プロファイルは、PFX 証明書のみをサポートします。
 
 #### <a name="configure-teacher-root-certificate"></a>教師のルート証明書を構成する
 
-**[教師のルート証明書]** で、閲覧ボタンを選択し、拡張子が .cer (DER または Base64 エンコード) または .P7B (完全なチェーンあり/なし) の教師のルート証明書を選択します。
+**[教師のルート証明書]** で参照ボタンを選択します。 以下のいずれかのルート証明書を選択します。
+- 拡張子 .cer (DER、または Base64 エンコード) 
+- 拡張子 .P7B (完全なチェーンあり、またはなし)
 
 #### <a name="configure-teacher-pkcs12-certificate"></a>教師の PKCS#12 証明書を構成する
 
 **[教師の PKCS #12 証明書]** で、次の値を構成します。
 
-- **サブジェクト名の形式** - Intune は証明書の共通名に自動的に接頭辞を追加します。教師の証明書の場合は **leader** で、生徒の証明書の場合は **member** です。
+- **サブジェクト名の形式** - Intune では、教師の証明書の場合、共通名の先頭に自動的に "**leader**" と付けられます。 学生の証明書の場合、共通名の先頭に "**member**" と付けられます。
 - **証明機関**Windows Server 2008 R2 以降の Enterprise エディションで実行するエンタープライズ証明機関 (CA) が必要です。 スタンドアロン CA はサポートされません。 
 - **証明機関名** - 証明機関の名前を入力します。
 - **証明書テンプレート名** - 発行元 CA に追加されている証明書テンプレートの名前を入力します。 
@@ -120,13 +122,15 @@ iOS 教育プロファイルは、PFX 証明書のみをサポートします。
 
 #### <a name="configure-student-root-certificate"></a>生徒のルート証明書を構成する
 
-**[学生のルート証明書]** で、閲覧ボタンを選択し、拡張子が .cer (DER または Base64 エンコード) または .P7B (完全なチェーンあり/なし) の学生のルート証明書を選択します。
+**[学生のルート証明書]** で参照ボタンを選択します。 以下のいずれかのルート証明書を選択します。
+- 拡張子 .cer (DER、または Base64 エンコード) 
+- 拡張子 .P7B (完全なチェーンあり、またはなし)
 
 #### <a name="configure-student-pkcs12-certificate"></a>生徒の PKCS #12 証明書を構成する
 
 **[学生の PKCS #12 証明書]** で、次の値を構成します。
 
-- **サブジェクト名の形式** - Intune は証明書の共通名に自動的に接頭辞を追加します。教師の証明書の場合は **leader** で、生徒の証明書の場合は **member** です。
+- **サブジェクト名の形式** - Intune では、教師の証明書の場合、共通名の先頭に自動的に "**leader**" と付けられます。 学生の証明書の場合、共通名の先頭に "**member**" と付けられます。
 - **証明機関**Windows Server 2008 R2 以降の Enterprise エディションで実行するエンタープライズ証明機関 (CA) が必要です。 スタンドアロン CA はサポートされません。 
 - **証明機関名** - 証明機関の名前を入力します。
 - **証明書テンプレート名** - 発行元 CA に追加されている証明書テンプレートの名前を入力します。 

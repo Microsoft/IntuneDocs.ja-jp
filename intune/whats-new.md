@@ -1,12 +1,12 @@
 ---
-title: Microsoft Intune の新機能
+title: Microsoft Intune の新機能 - Azure | Microsoft Docs
 titlesuffix: ''
 description: Intune Azure Portal の新機能を確認する
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/12/2018
+ms.date: 04/24/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: a2692163977a352e7a26dfc656d601d70ef401b4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9be6e0a3364f6ee0a077c1435d66498aba898430
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -40,6 +40,30 @@ ms.lasthandoff: 04/16/2018
   ### Role-based access control
 
 -->   
+
+## <a name="week-of-april-23-2018"></a>2018 年 4 月 23 日の週
+
+#### <a name="advanced-threat-protection-atp-and-intune-are-fully-integrated----eeready-1629303---"></a>Advanced Threat Protection (ATP) と Intune は完全に統合されています <!-- EEready 1629303 -->
+
+Windows Defender Security Center (ATP Portal) では、Microsoft Intune への接続を作成できます。 作成後、許容できる脅威レベルの決定に Intune コンプライアンス ポリシーが使用されます。 その脅威レベルを超えた場合、Azure Active Directory (AD) の条件付きアクセス ポリシーによって、組織内のさまざまなアプリへのアクセスを阻止できます。
+
+この機能によって ATP はファイルをスキャンし、脅威を検出し、Windows 10 デバイス上のあらゆるリスクを報告できます。
+
+[Intune で条件付きアクセスによる ATP を有効にする](advanced-threat-protection.md)方法に関するページを参照してください。
+
+## <a name="week-of-april-16-2018"></a>2018 年 4 月 16 日の週
+
+#### <a name="use-cisco-anyconnect-client-for-ios----eeready-1333708---"></a>iOS 向け Cisco AnyConnect クライアントを使用する <!-- EEready 1333708 -->
+
+iOS 用に新しい VPN プロファイルを作成するとき、**[Cisco AnyConnect]** と **[Cisco Legacy AnyConnect]** の 2 つの選択肢から選択できるようになりました。 Cisco AnyConnect プロファイルは、4.0.7x 以降のバージョンに対応しています。 既存の iOS Cisco AnyConnect VPN プロファイルは **[Cisco Legacy AnyConnect]** と表示されるようになり、現在と同じように Cisco AnyConnect 4.0.5x 以前のバージョンで引き続き動作します。
+
+> [!NOTE]
+> この変更は iOS にのみ適用されます。 Android、Android for Work、macOS プラットフォームの Cisco AnyConnect オプションは、これまでどおり 1 つだけです。
+
+#### <a name="jamf-enrolled-macos-devices-can-now-register-with-intune----2370684---"></a>Jamf 登録 macOS デバイスを Intune に登録できるようになりました <!-- 2370684 -->
+
+macOS ポータル サイトのバージョン 1.3 と 1.4 では、Jamf デバイスが Intune に正常に登録されませんでした。 macOS ポータル サイトのバージョン 1.4.2 でこの問題が解決されました。
+
 
 ## <a name="week-of-april-9-2018"></a>2018 年 4 月 9 日の週
 
@@ -99,7 +123,7 @@ Intune ポータル サイト アプリのテーマの色を、16 進コード�
 
 ### <a name="including-and-excluding-app-assignment-based-on-groups-for-android-enterprise----1813081---"></a>Android Enterprise に対するグループに基づくアプリ割り当ての追加と除外 <!-- 1813081 -->
 
-Android エンタープライズ (旧称 Android for Work) では、グループの追加と除外をサポートしていますが、事前に作成された**すべてのユーザー**および**すべてのデバイス**の組み込みグループはサポートしていません。 詳細については、「[Microsoft Intune でのアプリ割り当ての組み込みと除外](apps-inc-exl-assignments.md)」を参照してください。
+Android エンタープライズ (旧称 Android for Work) では、グループの追加と除外をサポートしていますが、事前に作成された**すべてのユーザー**と**すべてのデバイス**の組み込みグループはサポートしていません。 詳細については、「[Microsoft Intune でのアプリ割り当ての組み込みと除外](apps-inc-exl-assignments.md)」を参照してください。
 
 
 ### <a name="device-management"></a>デバイス管理
@@ -140,8 +164,6 @@ Intune サービスの 3 月の更新プログラムにより、既定のトグ�
 #### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837---"></a>iOS デバイスで 15 分ごとに PIN の入力を求める <!--1550837 -->
 iOS デバイスにコンプライアンスまたは構成ポリシーが適用されると、ユーザーは 15 分ごとに PIN を設定するように求められます。 PIN を設定するまで継続してユーザーは入力を求められます。
 
-
-
 #### <a name="schedule-your-automatic-updates---1805514---"></a>自動更新スケジュールの設定 <!--1805514 -->
 Intune では、[Windows Update リングの設定](windows-update-for-business-configure.md)を使用して、自動更新のインストールを制御することができます。 この更新プログラムでは、週、日、時刻などを指定して、繰り返し更新が発生するようスケジュールすることができます。
 
@@ -179,6 +201,10 @@ Mac アプリケーションのファイアウォールを構成できます。 
 - 特定のアプリを許可またはブロックする
 
    特定のアプリからの着信接続の受信を許可またはブロックできます。 ステルス モードを有効にして、プローブ要求への応答を防ぐこともできます。
+
+####  <a name="detailed-error-codes-and-messages----1376342---"></a>詳しいエラー コードとメッセージ <!-- 1376342 -->
+
+デバイス構成で、詳しいエラー コードとエラー メッセージを確認できます。 この改善された報告機能には、設定、設定の状態、トラブルシューティングの詳細が表示されます。
 
 ##### <a name="more-information"></a>詳細情報
 
@@ -935,12 +961,6 @@ Intune データ ウェアハウス データ モデルの最初のバージョ�
 
 
 ## <a name="notices"></a>通知
-
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
-
-これらはワークフロー UI に対するマイナーな更新のため、ユーザー側ではこの変更に対し何も準備する必要はありません。
-Microsoft の GDPR のコンプライアンスの詳細については、追加情報のリンクからセキュリティ センターにアクセスしてください。
 
 ### <a name="plan-for-change-new-windows-10-setting-for-kiosk-configuration-in-intune----1560072---"></a>変更の計画: Intune でのキオスク構成のための新しい Windows 10 設定 <!-- 1560072 -->
 Intune Azure Portal で Windows 10 1709 以降 (RS3 以降) のデスクトップを構成する方法および場所を変更中です。

@@ -3,8 +3,8 @@ title: Microsoft Intune で iOS デバイスにアプリごとの VPN を設定�
 titleSuffix: ''
 description: 管理対象のどのアプリが Intune で管理される iOS デバイスで仮想プライベート ネットワーク (VPN) を使用できるかを指定することができます。
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
@@ -15,15 +15,23 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b28f809c924ec2699647a3cc377b3bdde86afe5
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 67e2630fc2a7ccd75ac86c797e36c389757d908a
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Intune での iOS デバイス用のアプリごとの Virtual Private Network (VPN) 設定
 
 管理対象のどのアプリが Intune で管理される iOS デバイスで仮想プライベート ネットワーク (VPN) を使用できるかを指定することができます。 Intune でアプリごとの VPN を作成すると、エンド ユーザーが会社のドキュメントにアクセスするときに自動的に VPN を通して接続します。
+
+現在のところ、アプリごとの VPN は次のプロバイダーで利用できます。 
+
+ - Pulse Connect Secure
+ - Checkpoint Remote Access VPN
+ - F5
+ - SonicWall
+
 
 ## <a name="prerequisites-for-the-per-app-vpn"></a>アプリごとの VPN の前提条件
 
@@ -37,7 +45,7 @@ ms.lasthandoff: 04/16/2018
 4. VPN サーバーへの認証用に証明書を発行した CA の名前を追加します。
     デバイスによって提示される CA が VPN サーバーの信頼された証明機関リストのいずれかの CA と一致する場合、VPN サーバーによるデバイスの認証が成功します。
 
-## <a name="create-a--group-for-your-vpn-users"></a>VPN ユーザーのグループを作成する
+## <a name="create-a-group-for-your-vpn-users"></a>VPN ユーザーのグループを作成する
 
 アプリごとの VPN にアクセスできるメンバーが含まれるように、Azure Active Directory (Azure AD) でグループを作成するか既存のグループを選択します。
 

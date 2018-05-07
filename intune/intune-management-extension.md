@@ -3,8 +3,8 @@ title: Windows 10 デバイスに向けて Microsoft Intune で PowerShell ス�
 titlesuffix: ''
 description: Microsoft Intune で PowerShell スクリプトをアップロードして、Windows 10 デバイスで実行させる方法について説明します。
 keywords: ''
-ms.author: dougeby
-author: dougeby
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c501292126200baa88e06e30b6226e5c5021b8ec
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 3de7af01ffa64293e420913258919eff118b4abc
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 デバイスの Intune で PowerShell スクリプトを管理する
 Intune 管理拡張機能を使用すると、Windows 10 デバイスで実行されている Intune で PowerShell スクリプトをアップロードできます。 この管理拡張機能は Windows 10 モバイル デバイス管理 (MDM) 機能を補完するもので、最新の管理に簡単に移行できます。
@@ -33,8 +33,8 @@ Intune 管理拡張機能は、インボックス Windows 10 MDM 機能を補完
 
 ## <a name="prerequisites"></a>必要条件
 Intune 管理拡張機能には次の前提条件があります。
-- デバイスを Azure AD に参加させる必要があります
-- デバイスは Windows 10 バージョン 1607 以降を実行している必要があります
+- デバイスを Azure AD に参加させる必要があります。 これには、ハイブリッド AD 参加済みデバイスは含まれません。
+- デバイスは Windows 10 バージョン 1607 以降を実行している必要があります。
 
 ## <a name="create-a-powershell-script-policy"></a>PowerShell スクリプト ポリシーを作成する 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
@@ -43,7 +43,7 @@ Intune 管理拡張機能には次の前提条件があります。
 4. **[デバイス構成]** ウィンドウで、**[管理]**、**[PowerShell スクリプト]** の順に選択します。
 5. **[PowerShell スクリプト]** ウィンドウで **[追加]** を選択します。
 6. **[PowerShell スクリプトの追加]** ウィンドウで、PowerShell スクリプトの **[名前]** と **[説明]** を入力します。
-7. **[スクリプトの場所]** で、PowerShell スクリプトを参照します。 スクリプトは 10 KB (ASCII) または 5 KB (Unicode) 未満である必要があります。
+7. **[スクリプトの場所]** で、PowerShell スクリプトを参照します。 スクリプトのサイズの上限は 200 KB 未満です。
 8. **[構成]** を選択し、デバイスでのスクリプトの実行にユーザーの資格情報を使用するか (**[はい]**) またはシステム コンテキストを使用するか (**[いいえ]**) を選択します。 既定で、スクリプトはシステム コンテキストで実行されます。 システム コンテキストでスクリプトを実行する必要がある場合以外は、**[はい]** を選択してください。 
   ![[PowerShell スクリプトの追加] ウィンドウ](./media/mgmt-extension-add-script.png)
 9. 信頼された発行者がスクリプトに署名する必要がある (**[はい]**) かどうかを選択します。 既定で、スクリプトに署名する要件はありません。 
