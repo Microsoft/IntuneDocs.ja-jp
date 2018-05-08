@@ -1,48 +1,35 @@
 ---
 title: iOS デバイスのための Apple School Manager プログラム登録の設定
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 企業所有の iOS デバイスを Intune で登録するために、Apple School Manager プログラム登録を設定する方法について説明します。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/08/2018
+ms.date: 05/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
+ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: afcca0cc1f7786f468856f2aacefc0b8168b4934
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 853b602781b221ba681d802ae0119fc184ab8d6b
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager での iOS デバイス登録の設定
+# <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager での iOS デバイス登録の有効化
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-> [!NOTE]
-> ### <a name="temporary-user-interface-differences"></a>一時的なユーザー インターフェイスの違い
->
->このページで説明する機能のユーザー インターフェイスは、現在更新中です。 これらの更新は、4 月の終わりまでにすべてのユーザー アカウントにロールアウトされます。
->
->**[デバイス登録]** ページが次の図のようになっている場合、アカウントは新しいユーザー インターフェイスにまだ更新されていません。こちらのヘルプ ページを使用できます。
->
->![以前の Intune のユーザー インターフェイス](./media/appleenroll-oldui.png)
->
->**[デバイス登録]** ページが次の図のようになっている場合、ユーザー インターフェイスは更新済みです。  [こちらのヘルプ ページ](apple-school-manager-set-up-ios-newui.md)に移動してください。
->
->![新しい Intune のユーザー インターフェイス](./media/appleenroll-newui.png)
-
-このトピックは、[Apple School Manager](https://school.apple.com/) プログラムで購入したデバイスの iOS デバイス登録を設定にする場合に役立ちます。 Apple School Manager と共に Intune を使用して、デバイスに触れることなく、大量の iOS デバイスを登録できます。 学生や教師がデバイスの電源をオンにすると、セットアップ アシスタントが構成済み設定で実行され、デバイスが管理対象として登録されます。
+このトピックは、[Apple School Manager](https://school.apple.com/) プログラムで購入したデバイスの iOS デバイス登録を有効にする場合に役立ちます。 Apple School Manager と共に Intune を使用して、デバイスに触れることなく、大量の iOS デバイスを登録できます。 学生や教師がデバイスの電源をオンにすると、セットアップ アシスタントが構成済み設定で実行され、デバイスが管理対象として登録されます。
 
 Apple School Manager 登録を有効にするには、Intune と Apple School Manager ポータルの両方を使用します。 管理するために Intune にデバイスを割り当てられるように、シリアル番号のリストまたは注文番号が必要になります。 登録時にデバイスに適用された設定を含む DEP 登録プロファイルを作成します。
 
-なお、Apple School Manager 登録を、[Apple の Device Enrollment Program](device-enrollment-program-enroll-ios.md) や[デバイス登録マネージャー](device-enrollment-manager-enroll.md)で使用することはできません。
+Apple School Manager 登録を、[Apple の Device Enrollment Program](device-enrollment-program-enroll-ios.md) や[デバイス登録マネージャー](device-enrollment-manager-enroll.md)で使用することはできません。
 
 **前提条件**
 - [Apple MDM プッシュ証明書](apple-mdm-push-certificate-get.md)
@@ -51,114 +38,126 @@ Apple School Manager 登録を有効にするには、Intune と Apple School Ma
 - ユーザー アフィニティには [WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/library/adfs2-help-endpoints)が必要です。 [詳細については、ここをクリック](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)してください。
 - [Apple School Management](http://school.apple.com) プログラムで購入されたデバイス
 
->[!NOTE]
->多要素認証 (MFA) は、ユーザー アフィニティを使用して Apple School Manager デバイスに登録している間は動作しません。 DEP デバイスに登録が完了すると、MFA は期待どおりに動作します。 登録後、MFA はデバイスで期待どおりに動作します。 デバイスでは、最初のサインイン時にパスワードの変更が必要なユーザーにプロンプトを表示することができません。 さらに、パスワードの有効期限が切れているユーザーには、登録時にパスワードのリセットは求められません。 ユーザーは別のデバイスを使用してパスワードをリセットする必要があります。
-
-## <a name="get-the-apple-token-and-assign-devices"></a>Apple トークンを取得し、デバイスを割り当てる
+## <a name="get-an-apple-token-and-assign-devices"></a>Apple トークンを取得し、デバイスを割り当てる
 
 Apple School Manager で企業所有の iOS デバイスを登録するには、Apple のトークン (.p7m) ファイルが必要です。 このトークンにより、Intune は Apple School Manager 参加デバイスに関する情報を同期できるようになります。 また、Intune は Apple への登録プロファイルのアップロードを実行して、デバイスをそれらのプロファイルに割り当てられるようになります。 Apple ポータルでは、管理するデバイスのシリアル番号も割り当てることができます。
 
-**手順 1: Apple トークンを作成するために必要な Intune 公開キー証明書をダウンロードします。**<br>
-1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** を選択し、**[Enrollment Program トークン]** を選択します。
+### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-an-apple-token"></a>手順 1. Apple トークンを作成するために必要な Intune 公開キー証明書をダウンロードする
 
-   ![公開キーをダウンロードするための [Apple 証明書] ワークスペースの [Enrollment Program トークン] ウィンドウ](./media/enrollment-program-token-download.png)
+1. [Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]** > **[追加]** の順に選択します。
+
+   ![Enrollment Program トークンを取得します。](./media/device-enrollment-program-enroll-ios/image01.png)
 
 2. **[Enrollment Program トークン]** ブレードで、**[公開キーをダウンロードします]** を選択して、暗号化キー (.pem) ファイルをダウンロードし、ローカルに保存します。 .pem ファイルは、Apple School Manager ポータルから信頼関係証明書を要求するために使用します。
+     ![[Enrollment Program トークン] ブレード](./media/device-enrollment-program-enroll-ios/image02.png)
 
-**手順 2:トークンをダウンロードしてデバイスを割り当てます。**<br>
-1. **[Apple School Manager を使用してトークンを作成します]** を選択し、会社の Apple ID でサインインします。 この Apple ID を使用して、Apple School Manager トークンを更新することができます。
+### <a name="step-2-download-a-token-and-assign-devices"></a>手順 2. トークンをダウンロードしてデバイスを割り当てる
+1. **[Apple School Manager を使用してトークンを作成します]** を選択し、会社の Apple ID で Apple School にサインインします。 この Apple ID を使用して、Apple School Manager トークンを更新することができます。
 2.  [Apple School Manager ポータル](https://school.apple.com)で、**[MDM Servers]\(MDM サーバー\)** に移動し、**[Add MDM Server]\(MDM サーバーの追加\)** (右上) を選択します。
 3.  **MDM サーバー名**を入力します。 サーバー名は、自分がモバイル デバイス管理 (MDM) サーバーを識別できるようにするための名前です。 Microsoft Intune サーバーの名前または URL ではありません。
-   ![シリアル番号オプションが選択された Apple School Manager ポータル](./media/asm-server-assignment.png)
+   ![シリアル番号オプションが選択された Apple School Manager ポータルのスクリーンショット](./media/asm-server-assignment.png)
 
 4.  Apple ポータルで **[ファイルのアップロード...]** を選択し、.pem ファイルを参照して、**[Save MDM Server]\(MDM サーバーの保存\)** (右下) を選択します。
 5.  **[トークンの取得]** を選択し、サーバー トークン (.p7m) ファイルをコンピューターにダウンロードします。
 6. **[デバイスの割り当て]** に移動し、**シリアル番号**、**注文番号** を手動で入力するか、**CSV ファイルのアップロード**で **[デバイスの選択]** を行います。
-     ![シリアル番号オプションが選択された Apple School Manager ポータル](./media/asm-device-assignment.png)
+     ![シリアル番号オプションが選択された Apple School Manager ポータルのスクリーンショット](./media/asm-device-assignment.png)
 7.  **[Assign to Server]\(サーバーに割り当てる\)** を選択し、作成した **MDM サーバー**を選択します。
 8. **デバイスの選択**方法を指定してから、デバイス情報と詳細を提供します。
 9. **[Assign to Server]** (サーバーに割り当てる) を選択し、Microsoft Intune に指定した &lt;ServerName&gt; を選択して、**[OK]** を選択します。
 
-**手順 3:Apple School Manager トークンの作成に使用した Apple ID を入力します。**<br>この ID は Apple School Manager トークンの更新に使用する必要があるため、今後の参照用に保存されます。
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>手順 3. このトークンの作成に使用した Apple ID を保存する
 
-![Enrollment Program トークンの作成に使った Apple ID の指定と、Enrollment Program トークンの参照](./media/enrollment-program-token-apple-id.png)
+Azure ポータルの Intune で、後で参照するための Apple ID を指定します。
 
-**手順 4:トークンを検索してアップロードします。**<br>
-証明書 (.p7m) ファイルに移動し、**[開く]** を選択して、**[アップロード]** を選択します。 Intune は、Apple の Apple School Manager デバイスを自動的に同期します。
+![Enrollment Program トークンの作成に使った Apple ID の指定と、Enrollment Program トークンの参照のスクリーンショット。](./media/device-enrollment-program-enroll-ios/image03.png)
+
+### <a name="step-4-upload-your-token"></a>手順 4. トークンをアップロードする
+**[Apple トークン]** ボックスで、証明書 (.pem) ファイルを参照し、**[開く]** を選択して、**[作成]** を選択します。 このプッシュ証明書を使用して、Intune はモバイル デバイスを登録し、登録したモバイル デバイスにポリシーを適用して iOS デバイスを管理できます。 Intune は、Apple の Apple School Manager デバイスを自動的に同期します。
 
 ## <a name="create-an-apple-enrollment-profile"></a>Apple 登録プロファイルの作成
-デバイス登録プロファイルで、デバイス グループに対して登録時に適用する設定を定義します。
+これでトークンがインストールされました。Apple School デバイスの登録プロファイルを作成することができます。 デバイス登録プロファイルで、デバイス グループに対して登録時に適用する設定を定義します。
 
-1. [Azure Portal の Intune](https://aka.ms/intuneportal) で **[デバイスの登録]** を選択し、**[Apple の登録]** を選択します。
-2. **[Enrollment Program]** で、**[Enrollment Program プロファイル]** を選択します。
-3. **[Enrollment Program プロファイル]** ブレードで、**[作成]** を選択します。
-4. **[登録プロファイルの作成]** ブレードで、Intune に表示されるプロファイルの**名前**と**説明**を入力します。
-5. **[ユーザー アフィニティ]** で、このプロファイルに対応するデバイスをユーザー アフィニティとともに登録するかどうかを選択します。
+1. [Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]** の順に選択します。
+2. トークンを選択し、**[プロファイル]** を選択し、**[プロファイルの作成]** を選択します。
+3. **[プロファイルの作成]** で、管理用にプロファイルの **[名前]** と **[説明]** を入力します。 ユーザーにはこれらの詳細は表示されません。 この **[名前]** フィールドを使用して、Azure Active Directory で動的グループを作成できます。 この登録プロファイルに対応するデバイスを割り当てるために enrollmentProfileName パラメーターを定義する場合はプロファイル名を使用します。 Azure Active Directory の動的グループの詳細については[こちら](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects)を参照してください。
+    ![プロファイル名と説明。](./media/device-enrollment-program-enroll-ios/image05.png)
 
-   - **ユーザー アフィニティとともに登録する** - セットアップ中にデバイスとユーザーを関連付けます。
+4. **[ユーザー アフィニティ]** で、このプロファイルに対応するデバイスを割り当て済みユーザーとともに登録する必要があるかどうかを選択します。
+    - **[ユーザー アフィニティとともに登録する]** - このオプションは、ユーザーに属しているデバイスであって、かつアプリのインストールなどのサービスにポータル サイトを使用する必要があるデバイスの場合に選択します。 このオプションにより、ユーザーは会社ポータルを使用して自分のデバイスを認証することもできます。 ユーザー アフィニティには [WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/library/adfs2-help-endpoints)が必要です。 [詳細については、ここをクリック](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)してください。   Apple School Manager の [共有 iPad] モードでは、ユーザーはユーザー アフィニティなしで登録する必要があります。
 
-   Apple School Manager の [共有 iPad] モードでは、ユーザーはユーザー アフィニティなしで登録する必要があります。
+    - **[ユーザー アフィニティなしで登録する]** - このオプションは、共有デバイスなど、1 人のユーザーに関連付けられていないデバイスの場合に選択します。 ローカルのユーザー データにアクセスせずにタスクを実行するデバイスで使用します。 ポータル サイト アプリなどのアプリは動作しません。
 
-   - **[ユーザー アフィニティなしで登録する]** - 共有デバイスなど、1 人のユーザーに関連付けられていないデバイスの場合に選択します。 ローカルのユーザー データにアクセスせずにタスクを実行するデバイスで使用します。 ポータル サイト アプリなどのアプリは動作しません。
+5. **[ユーザー アフィニティとともに登録する]** を選択した場合は、Apple セットアップ アシスタントではなく、ポータル サイトでユーザーに認証を行わせるオプションがあります。
 
-6. **[デバイス管理の設定]** を選択します。 これらの項目はアクティブ化のときに設定され、項目を変更するには出荷時の設定に戻す必要があります。 次のプロファイル設定を構成して、**[保存]** を選択します。
+    ![ポータル サイトで認証します。](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
 
-   ![管理モードの選択](./media/enrollment-program-profile-mode.png)
+    >[!NOTE]
+    >プロファイルのプロパティが **[Use with User Affinity]\(ユーザー アフィニティとともに使用する\)** に設定されている場合、Apple School Manager デバイス上での登録中に Multi-Factor Authentication (MFA) は機能しません。 DEP デバイスに登録が完了すると、MFA は期待どおりに動作します。 デバイスでは、最初のサインイン時にパスワードの変更が必要なユーザーにプロンプトを表示することができません。 さらに、パスワードの有効期限が切れているユーザーには、登録時にパスワードのリセットは求められません。 ユーザーは別のデバイスを使用してパスワードをリセットする必要があります。
 
-   - **[監督下]** - より多くの管理オプションが使用可能な管理モードです。既定でアクティベーション ロックは無効になります。 このチェック ボックスをオフのままにすると、管理機能が制限されます。
+6. **[デバイス管理の設定]** を選択し、このプロファイルを使用するデバイスを監視するかどうかを選択します。
+    **[監視下]** デバイスでは、より多くの管理オプションを使用できるようになり、既定で [アクティベーション ロック] は無効になります。 Microsoft は、多数の iOS デバイスを展開する組織に対して特に、監視モードを有効にするメカニズムとして DPE の利用を推奨しています。
 
-     - **[ロックされた登録]** - ([管理モード] を [監督下] にする必要があります) 管理プロファイルの削除を許可する iOS 設定を無効にします。 このチェック ボックスをオフのままにすると、[設定] メニューから管理プロファイルを削除できます。
-     - **[共有 iPad]** - (**[ユーザー アフィニティなしで登録する]** と [監視下] モードが必要です。)管理された Apple ID を使用して、複数のユーザーが登録済みの iPad にログオンすることを許可します。 管理された Apple ID は、Apple School Manager ポータルで作成されます。 共有 iPad の詳細については[こちら](education-settings-configure-ios-shared.md)を参照してください。 [Apple の Shared iPad に関する要件](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56)も参照してください。
+    デバイスが監視対象であることは次の 2 つの方法でユーザーに通知されます。
 
-   >[!NOTE]
-   >**[ユーザー アフィニティ]** を **[With user affinity]\(ユーザー アフィニティあり\)** に設定するか、**[監視下]** モードを **[オフ]** に設定すると、登録プロファイルの [共有 iPad] モードは無効になります。
+   - ロック画面に "この iPhone は Contoso によって管理されています" という内容のメッセージが表示されます。
+   - **[設定]** > **[全般]** > **[情報]** 画面に、"この iPhone は監視されています" という内容のメッセージが表示されます。 Contoso はインターネット トラフィックを監視し、このデバイスの位置を特定できます。" と、
 
-        - **Maximum Cached Users** - (Requires **Shared iPad** = **Yes**) Creates a partition on the device for each user. The recommended value is the number of students likely to use the device over a period of time. For example, if six students use the device regularly during the week, set this number to six.  
+     > [!NOTE]
+     > 監視なしで登録されているデバイスは、Apple Configurator でのみ監視対象にリセットすることができます。 この方法でデバイスをリセットするには、USB ケーブルを使用して iOS デバイスを Mac に接続する必要があります。 詳細については、[Apple Configurator ドキュメント](http://help.apple.com/configurator/mac/2.3)を参照してください。
 
-    - **[ペアリングの許可]** - iOS デバイスをコンピューターと同期できるかどうかを指定します。 **[証明書による Apple Configurator の許可]** を選択した場合は、**[Apple Configurator の証明書]** で証明書を選択する必要があります。
+7. このプロファイルを使用するデバイスの登録をロックする必要があるかどうかを選択します。 **[ロックされた登録]** を選択すると、**[設定]** メニューから管理プロファイルを削除する操作を許可する iOS 設定が無効になります。 デバイスの登録後は、デバイスを出荷時の設定にリセットしないと、この設定を変更することができません。 そのようなデバイスについては、**[監視下]** 管理モードを *[はい]* に設定する必要があります。 
 
-      - **[Apple Configurator の証明書]** - **[ペアリングの許可]** で **[証明書による Apple Configurator の許可]** を選択した場合は、インポートする Apple Configurator の証明書を選択します。
+8. 管理されている Apple ID を使用して複数のユーザーが登録済みの iPads にサインオンするようにしたい場合は、**[共有 iPad]** で **[はい]** を選択します。 この場合は、**[ユーザー アフィニティなしで登録する]** と **[監視下]** モードを **[はい]** に設定する必要があります。管理された Apple ID は、Apple School Manager ポータルで作成されます。 共有 iPad の詳細については[こちら](education-settings-configure-ios-shared.md)を参照してください。 [Apple の Shared iPad に関する要件](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56)も参照してください。
 
-7. **[セットアップ アシスタントの設定]** を選択し、次のプロファイル設定を構成して、**[保存]** を選択します。
+9. このプロファイルを使用したデバイスを**コンピューターと同期**できるようにするかどうかを選択します。 **[証明書による Apple Configurator の許可]** を選択した場合は、**[Apple Configurator の証明書]** で証明書を選択する必要があります。
 
-    - **[部署名]** - アクティブ化中にユーザーが **[About Configuration (構成について)]** をタップすると表示されます。
+10. 前の手順で **[証明書による Apple Configurator の許可]** を選択した場合は、インポートする Apple Configurator の証明書を選択します。
 
-    - **[部署の電話番号]** - アクティブ化中にユーザーが [ヘルプが必要ですか] ボタンをクリックすると表示されます。
-    - **[Setup Assistant Options]\(セットアップ アシスタントのオプション\)** - セットアップ アシスタントのオプションから除外した場合、これらの設定は後で iOS の **[設定]** メニューで設定できます。
-        - **パスコード** - アクティブ化時にパスコードの入力を求めます。 デバイスがセキュリティで保護される場合や、他の何らかの方法 (デバイスを 1 つのアプリに制限するキオスク モードなど) でアクセスが制御されている場合を除き、パスコードは常に必須にしてください。
-        - **位置情報サービス** - 有効にすると、アクティブ化時に、セットアップ アシスタントによってサービスがプロンプトされます
-        - **復元** - 有効にすると、アクティブ化時に、セットアップ アシスタントによって iCloud バックアップがプロンプトされます
-        - **[Apple ID]** - 有効にすると、Intune で ID を指定せずにアプリをインストールしようとするときに iOS によって Apple ID の入力を求められます。 Intune でインストールされるアプリを含め、iOS App Store アプリをダウンロードする際に Apple ID が必須になります。
-        - **使用条件** - 有効にすると、アクティブ化時に、セットアップ アシスタントによって Apple の使用条件に同意するように求められます
-        - **タッチ ID** - 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます
-        - **Apple Pay** - 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます
-        - **ズーム** - 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます
-        - **Siri** - 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます
-        - **[診断データ]** - 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます
+11. **[OK]** を選びます。
 
-8. プロファイルの設定を保存するには、**[登録プロファイルの作成]** ブレードで **[作成]** を選択します。
+12. **[セットアップ アシスタントの設定]** を選択し、![[セットアップ アシスタントのカスタマイズ]](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png) プロファイル設定を構成します。
+
+
+    |                 Setting                  |                                                                                               説明                                                                                               |
+    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |     <strong>部門名</strong>     |                                                             アクティブ化中にユーザーが <strong>[構成について]</strong> をタップすると表示されます。                                                              |
+    |    <strong>部署の電話番号</strong>     |                                                          アクティブ化中にユーザーが <strong>[ヘルプが必要ですか]</strong> ボタンをクリックすると表示されます。                                                          |
+    | <strong>セットアップ アシスタントのオプション</strong> |                                                     次の省略可能な設定は、後で iOS の <strong>[設定]</strong> メニューで設定できます。                                                      |
+    |        <strong>パスコード</strong>         | アクティブ化時にパスコードの入力を求めます。 デバイスがセキュリティで保護される場合や、他の何らかの方法 (デバイスを 1 つのアプリに制限するキオスク モードなど) でアクセスが制御されている場合を除き、パスコードは常に必須にしてください。 |
+    |    <strong>ロケーション サービス</strong>    |                                                                 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます。                                                                  |
+    |         <strong>復元</strong>         |                                                                有効にすると、アクティブ化時に、セットアップ アシスタントによって iCloud バックアップがプロンプトされます。                                                                 |
+    |   <strong>iCloud と Apple ID</strong>   |                         有効にすると、セットアップ アシスタントによって Apple ID でサインインするように求められ、[アプリとデータ] 画面で iCloud バックアップからデバイスを復元できるようになります。                         |
+    |  <strong>使用条件</strong>   |                                                   有効にすると、アクティブ化時に、セットアップ アシスタントによって Apple の使用条件に同意するように求められます。                                                   |
+    |        <strong>Touch ID</strong>         |                                                                 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます。                                                                 |
+    |        <strong>Apple Pay</strong>        |                                                                 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます。                                                                 |
+    |          <strong>Zoom</strong>           |                                                                 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます。                                                                 |
+    |          <strong>Siri</strong>           |                                                                 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます。                                                                 |
+    |     <strong>診断データ</strong>     |                                                                 有効にすると、アクティブ化時に、セットアップ アシスタントによってこのサービスがプロンプトされます。                                                                 |
+
+
+13. **[OK]** を選びます。
+
+14. プロファイルを保存するには、**[作成]** を選択します。
 
 ## <a name="connect-school-data-sync"></a>School Data Sync の接続
-(省略可能) Apple School Manager では、Microsoft School Data Sync (SDS) を使用した Azure Active Directory (AD) へのクラス リスト データの同期がサポートされています。 SDS を使用して学校のデータを同期するには、次の手順を完了します。
+(省略可能) Apple School Manager では、Microsoft School Data Sync (SDS) を使用した Azure Active Directory (AD) へのクラス リスト データの同期がサポートされています。 SDS と同期できるのは 1 つのトークンのみです。 School Data Sync で別のトークンを設定した場合、SDS を含んでいる以前のトークンから SDS が削除されます。 新しい接続によって現在のトークンが置き換えられます。 SDS を使用して学校のデータを同期するには、次の手順を完了します。
 
-1. **[Enrollment Program トークン]** ブレードで、青色の情報バナーまたは **[SDS の接続]** のいずれかを選択します。
-2. **[Microsoft School Data Sync でこのトークンを使用できるようにする]** を選択し、**[許可]** に設定します。 この設定により、Intune は Office 365 で SDS に接続できます。
-3. Apple School Manager と Azure AD の間の接続を有効にするには、**[Microsoft School Data Sync の設定]** を選択します。[School Data Sync の設定方法](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1)について詳しく学びます。
-4. **[OK]** をクリックし、設定を保存して続行します。
+1. [Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]** の順に選択します。
+2. Apple School Manager トークンを選択し、**[School Data Sync]** を選択します。
+3. **[School Data Sync]** で、**[許可]** を選択します。 この設定により、Intune は Office 365 で SDS に接続できます。
+4. Apple School Manager と Azure AD の間の接続を有効にするには、**[Microsoft School Data Sync の設定]** を選択します。[School Data Sync の設定方法](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1)について詳しく学びます。
+5. **[保存]** > **[OK]** をクリックします。
 
 ## <a name="sync-managed-devices"></a>管理対象デバイスを同期する
+
 Intune に Apple School Manager デバイスを管理するアクセス許可を割り当てたので、Intune と Apple サービスを同期し、管理されたデバイスを Intune に表示できます。
 
-1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program デバイス]** > **[同期]** の順に選択します。進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
+[Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]** の順に選択し、リスト内でトークンを選択し、**[デバイス]** > **[同期]** の順に選択します。![[Enrollment Program デバイス] ノードと [同期] リンクが選ばれているスクリーンショット。](./media/device-enrollment-program-enroll-ios/image06.png)
 
-   ![[Enrollment Program デバイス] ノードと [同期] リンクの選択](./media/enrollment-program-device-sync.png)
-2. **[同期]** ブレードで、**[同期を要求]** を選択します。進行状況バーには、もう一度同期が要求されるまでの待ち時間が表示されます。
-
-   ![[同期を要求] リンクが選ばれている [同期] ブレード](./media/enrollment-program-device-request-sync.png)
-
-   許容されるトラフィックについての Apple の規約に準拠するため、Intune では次の制限が課せられます。
-   -    完全な同期は 7 日に 1 回だけ実行できます。 完全同期時に、Intune は Apple が Intune に割り当てたすべてのシリアル番号を、シリアルが以前に同期されているかどうかに関係なく更新します。 前回の完全同期の 7 日以内に完全同期が試みられると、Intune は Intune にまだ一覧表示されていないシリアル番号のみを更新します。
-   -    すべての同期要求は、完了までに 15 分与えられます。 この時間中または要求が成功するまで、**[同期]** ボタンは無効にされます。
+  許容される Enrollment Program トラフィックについての Apple の規約に準拠するため、Intune では次の制限が課せられます。
+  - 完全な同期は 7 日に 1 回だけ実行できます。 Intune は、完全な同期中に、Intune に割り当てられているすべての Apple シリアル番号を更新します。 前回の完全同期の 7 日以内に完全同期が試みられると、Intune は Intune にまだ一覧表示されていないシリアル番号のみを更新します。
+  - すべての同期要求は、完了までに 15 分与えられます。 この時間中または要求が成功するまで、**[同期]** ボタンは無効にされます。
+  - Intune は、24 時間ごとに新規のデバイスと削除されたデバイスを Apple と同期します。
 
 >[!NOTE]
 >**[Enrollment Program デバイス]** ブレードで、Apple School Manager のシリアル番号をプロファイルに割り当てることもできます。
@@ -166,19 +165,10 @@ Intune に Apple School Manager デバイスを管理するアクセス許可を
 ## <a name="assign-a-profile-to-devices"></a>デバイスにプロファイルを割り当てる
 Intune によって管理される Apple School Manager デバイスを登録する前に、デバイスに登録プロファイルを割り当てる必要があります。
 
-1. [Azure Portal の Intune](https://aka.ms/intuneportal) で **[デバイスの登録]** > **[Apple の登録]** の順に選択し、**[Enrollment Program プロファイル]** を選択します。
-2. **[Enrollment Program プロファイル]** の一覧から、デバイスに割り当てるプロファイルを選択し、**[デバイスの割り当て]** を選択します。
-
-   ![[割り当て] が選択された [デバイスの割り当て]。](./media/enrollment-program-device-assign.png)
-
-3. **[割り当て]** を選択し、このプロファイルを割り当てる Apple School Manager デバイスを選択します。 フィルターを適用して使用可能なデバイスを表示できます。
-   - **未割り当て**
-   - **任意**
-   - **&lt;プロファイル名&gt;**
-4. 割り当てるデバイスを選択します。 列の上のチェック ボックスで、一覧表示されたデバイスを最大 1,000 まで選択します。 **[割り当て]** をクリックします。 1,000 を超えるデバイスを登録するには、すべてのデバイスに登録プロファイルを割り当てるまで割り当て手順を繰り返します。
-
-   ![Intune で Enrollment Program プロファイルを割り当てるための [割り当て] ボタン](media/dep-profile-assignment.png)
+1. [Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]** の順に選択し、リスト内でトークンを選択します。
+2. **[デバイス]** を選択し、リスト内でデバイスを選択し、**[プロファイルの割り当て]** を選択します。
+3. **[プロファイルの割り当て]** で、デバイス用のプロファイルを選択し、**[割り当て]** を選択します。
 
 ## <a name="distribute-devices-to-users"></a>デバイスをユーザーに配布する
 
-これで、会社が所有するデバイスをユーザーに配布できるようになりました。 iOS Apple School Manager デバイスの電源をオンにすると、それが Intune の管理対象として登録されます。 デバイスがアクティブ化されて使用中の場合、デバイスを工場出荷時の状態にリセットするまで、プロファイルを適用できません。
+Apple と Intune の間の同期と管理を有効にし、Apple School デバイスを登録できるようにプロファイルを割り当てました。 ユーザーにデバイスを配布できるようになりました。 iOS Apple School Manager デバイスの電源をオンにすると、それが Intune の管理対象として登録されます。 デバイスがアクティブ化されて使用中の場合、デバイスを工場出荷時の状態にリセットするまで、プロファイルを適用できません。
