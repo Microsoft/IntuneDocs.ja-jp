@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 04/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bb79a6c18ff8b6eec20f4ce8813d8dea188215e7
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2a4bd083027905d00dc317a0103754748bf0236e
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune で Windows デバイス用のデバイス コンプライアンス ポリシーを追加する
 
@@ -121,23 +121,23 @@ HAS サービスのしくみの詳細については、「[HealthAttestation CSP
 
 ### <a name="device-properties"></a>デバイスのプロパティ
 
-- **[必要な最小 OS バージョン]**: major.minor.build.CU 番号を入力します。 build.CU 番号は、`ver` コマンドまたは `winver` コマンドによって返されるバージョンと対応する必要があります。
+- **最小 OS バージョン**: 許容される最小バージョンを major.minor.build.CU の番号形式で入力します。 build.CU 番号は、`ver` コマンドまたは `winver` コマンドによって返されるバージョンと対応する必要があります。
 
   指定された OS バージョンよりデバイスのバージョンが低い場合、非準拠としてレポートされます。 アップグレード方法に関する情報のリンクが表示されます。 エンド ユーザーは、デバイスのアップグレードを行うことを選択できます。アップグレード後は、会社のリソースにアクセスできます。
 
-- **[許可される最大 OS バージョン]**: major.minor.build.CU 番号を入力します。 build.CU 番号は、`ver` コマンドまたは `winver` コマンドによって返されるバージョンと対応する必要があります。
+- **最大 OS バージョン**: 許容される最大バージョンを major.minor.build.CU の番号形式で入力します。 build.CU 番号は、`ver` コマンドまたは `winver` コマンドによって返されるバージョンと対応する必要があります。
 
   ルールに指定された OS バージョンより新しいバージョンの OS がデバイスで使用されている場合、会社のリソースへのアクセスがブロックされ、IT 管理者に問い合わせることをユーザーに促すメッセージが表示されます。対象の OS バージョンを許可するようにルールが変更されるまで、このデバイスを使用して会社のリソースへのアクセスすることはできません。
 
-- **[Minimum OS required for mobile devices](\モバイル デバイスに必要な最小 OS\)**: major.minor.build 番号を入力します。
+- **[Minimum OS required for mobile devices]\(モバイル デバイスに必要な最小 OS\)**: 許容される最小バージョンを major.minor.build の番号形式で入力します。
 
   指定された OS バージョンよりデバイスのバージョンが低い場合、非準拠としてレポートされます。 アップグレード方法に関する情報のリンクが表示されます。 エンド ユーザーは、デバイスのアップグレードを行うことを選択できます。アップグレード後は、会社のリソースにアクセスできます。
 
-- **[Minimum OS required for mobile devices](\モバイル デバイスに必要な最大 OS\)**: major.minor.build 番号を入力します。
+- **[Maximum OS required for mobile devices]\(モバイル デバイスに必要な最大 OS\)**: 許容される最大バージョンを major.minor.build の番号で入力します。
 
   ルールに指定された OS バージョンより新しいバージョンの OS がデバイスで使用されている場合、会社のリソースへのアクセスがブロックされ、IT 管理者に問い合わせることをユーザーに促すメッセージが表示されます。対象の OS バージョンを許可するようにルールが変更されるまで、このデバイスを使用して会社のリソースへのアクセスすることはできません。
 
-- **[有効なオペレーティング システムのビルド]**: 最小バージョンと最大バージョンを含む、許容可能なオペレーティング システムのバージョンの範囲を入力します。
+- **[有効なオペレーティング システムのビルド]**: 最小バージョンと最大バージョンを含む、許容可能なオペレーティング システムのバージョンの範囲を入力します。 この許容可能な OS ビルド番号のコンマ区切り値 (CSV) ファイル リストを**エクスポート**することもできます。
 
 ### <a name="system-security-settings"></a>システム セキュリティ設定
 
