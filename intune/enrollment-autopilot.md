@@ -29,7 +29,7 @@ Windows AutoPilot Deployment プログラムにより、デバイスのプロビ
 ## <a name="synchronize-devices"></a>デバイスを同期する
 登録済みデバイスを Intune と同期して、構成できるようにします。
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
 2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** の **[デバイスの登録]** を選択します。
 4. **[Windows の登録]** を選択し、**[Windows AutoPilot Deployment プログラム]** セクションで、**[デバイス]** を選択します。
@@ -38,7 +38,7 @@ Windows AutoPilot Deployment プログラムにより、デバイスのプロビ
 
 ## <a name="create-an-autopilot-deployment-profile"></a>AutoPilot Deployment プロファイルを作成する
 AutoPilot Deployment プロファイルは、AutoPilot デバイスを構成する場合に使用されます。
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
 2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** の **[デバイスの登録]** を選択します。
 4. **[Windows の登録]** を選択し、**[Windows AutoPilot Deployment プログラム]** セクションで、**[デプロイ プロファイル]** を選択します。
