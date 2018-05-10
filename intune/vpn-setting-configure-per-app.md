@@ -15,11 +15,11 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 67e2630fc2a7ccd75ac86c797e36c389757d908a
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 46857dcf24befb0cf552769d48b99020c36e3e5b
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Intune での iOS デバイス用のアプリごとの Virtual Private Network (VPN) 設定
 
@@ -27,13 +27,13 @@ ms.lasthandoff: 04/26/2018
 
 現在のところ、アプリごとの VPN は次のプロバイダーで利用できます。 
 
- - Pulse Connect Secure
  - Checkpoint Remote Access VPN
  - F5
+ - Pulse Connect Secure
  - SonicWall
 
 
-## <a name="prerequisites-for-the-per-app-vpn"></a>アプリごとの VPN の前提条件
+## <a name="prerequisites-for-per-app-vpn"></a>アプリごとの VPN の前提条件
 
 身元を証明するため、VPN サーバーはデバイスによってプロンプトなしに受け入れられる必要がある証明書を提示します。 証明書の自動承認を確実に行うため、証明機関 (CA) によって発行された VPN サーバーのルート証明書を含む、信頼済み証明書プロファイルを作成します。 
 

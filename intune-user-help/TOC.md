@@ -149,6 +149,6 @@
 #### [UAC を有効にする](you-need-to-enable-uac-windows.md)
 #### [Windows を更新する](you-need-to-update-os-build-version-windows.md)
 #### [Windows Defender を有効にする](turn-on-defender-windows.md)
-
+## [Windows 用ポータル サイト アプリからリモートでデバイスをロックする](remote-lock-your-device-cp-app.md) 
 ## [Intune ポータル サイト Web サイトの使用](using-the-intune-company-portal-website.md)
 ### [デバイスのリモートからのロック](remote-lock-your-device-cpwebsite.md)
