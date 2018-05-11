@@ -125,6 +125,7 @@
 #### [[職場または学校にアクセスする] から Windows 10 デバイスを登録する](enroll-your-w10-device-access-work-or-school.md)
 #### [Windows 8.1 または Windows RT 8.1 デバイスを登録する](enroll-your-w81-or-rt81-windows.md)
 #### [Windows Phone 8.1 デバイスを登録する](enroll-your-wp81-windows.md)
+### [Windows 用ポータル サイト アプリからアプリをインストールする](install-apps-cpapp-windows.md)
 ### [デバイスのリセット](reset-erase-your-device-cpwebsite.md)
 ### [デバイスを暗号化する](encrypt-your-device-windows.md)
 ### [パスワードを設定または変更する](set-or-change-your-password-windows.md)
