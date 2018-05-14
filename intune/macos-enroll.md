@@ -15,11 +15,11 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1e522708879818f644780904c42fe9e6fb19a402
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4f8cddb69ac85e45acde8a846df3b5413c3b75bf
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Intune で macOS デバイスの登録をセットアップする
 
@@ -70,3 +70,11 @@ macOS デバイスの登録をブロックする場合は、「[Set device type 
 Parallels Desktop の場合、Intune が認識できるように、ハードウェアの種類と仮想マシンのシリアル番号を設定する必要があります。 [ハードウェアの種類の設定](http://kb.parallels.com/123594)と[シリアル番号](http://kb.parallels.com/123455)に関する Parallels の指示に従って、テストに必要な設定を設定します。 仮想マシンを実行しているデバイスのハードウェアの種類と、作成している仮想マシンのハードウェアの種類とを一致させることをお勧めします。 このハードウェアの種類は、**[アップル メニュー]** > **[この Mac について]** > **[システム レポート]** > **[機種 ID]** で調べることができます。 
 
 VMware Fusion の場合、[.vmx ファイルを編集して](https://kb.vmware.com/s/article/1014782)、仮想マシンのハードウェア モデルとシリアル番号を設定する必要があります。 仮想マシンを実行しているデバイスのハードウェアの種類と、作成している仮想マシンのハードウェアの種類とを一致させることをお勧めします。 このハードウェアの種類は、**[アップル メニュー]** > **[この Mac について]** > **[システム レポート]** > **[機種 ID]** で調べることができます。 
+
+## <a name="user-approved-enrollment"></a>ユーザー承認済みの登録
+
+ユーザー承認済みの MDM 登録は、セキュリティ上重要な特定の設定を管理するために使用できる macOS の登録の種類です。 詳しくは、[Apple のサポート ドキュメント](https://support.apple.com/HT208019)をご覧ください。
+
+ユーザー承認済みにするには、エンド ユーザーが、macOS ポータル サイトを使って登録した後、[システム環境設定] を使って手動で承認する必要があります。 macOS ポータル サイトでは、macOS 10.13.2 以降のユーザー向けに、これを行う方法の説明が提供されています。
+
+デバイスがユーザー承認済みかどうかを確認するには、Intune ポータルに移動し、**[デバイス]** > **[すべてのデバイス]** の順に選び、デバイスを選んで、**[ハードウェア]** を選びます。 **[User Approved]\(ユーザー承認済み\)** フィールドを確認します。

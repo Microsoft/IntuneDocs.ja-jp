@@ -1,29 +1,29 @@
 ---
-title: "Microsoft Intune を使用した Skycure コネクタ"
-titlesuffix: 
-description: "モバイル デバイスから会社のリソースへのアクセスを制御するための Intune と Skycure Mobile Threat Defense の統合について説明します。"
-keywords: 
+title: Microsoft Intune を使用した Symantec コネクタ
+titlesuffix: ''
+description: モバイル デバイスから会社のリソースへのアクセスを制御するための Intune と Symantec Endpoint Protection Mobile の統合について説明します。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 12/09/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b3148a24b077dfd491ce06fcf708a81de7d12dc1
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 577eff3a5f3965065a4066973ea8c61160ab4563
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense コネクター
+# <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile コネクタ
 
-Microsoft Intune に統合されたモバイル脅威保護ソリューションである Skycure によって実行されるリスク評価に基づき、条件付きアクセスを利用し、モバイル デバイスから会社のリソースへのアクセスを制御できます。 リスクは、Skycure を実行するデバイスから収集される製品利用統計情報に基づいて以下のとおり評価されます。
+Microsoft Intune に統合された Mobile Threat Defense ソリューションである Symantec Endpoint Protection Mobile (SEP Mobile) によって実行されるリスク評価に基づき、条件付きアクセスを利用し、モバイル デバイスから会社のリソースへのアクセスを制御できます。 リスクは、SEP Mobile を実行するデバイスから収集される次のような製品利用統計情報に基づいて評価されます。
 
 -   物理的防御
 
@@ -33,21 +33,21 @@ Microsoft Intune に統合されたモバイル脅威保護ソリューション
 
 -   脆弱性防御
 
-Intune デバイス コンプライアンス ポリシーで有効にした Skycure リスク評価に基づき、条件付きアクセスのポリシーを構成できます。Intune デバイス コンプライアンス ポリシーは、検出された脅威に基づき、非準拠デバイスから企業リソースへのアクセスを許可したり、拒否したりするために利用できます。
+Intune デバイス コンプライアンス ポリシーで SEP Mobile のリスク評価を有効にした後、条件付きアクセスのポリシーを使って、検出された脅威に基づき、非準拠デバイスから企業リソースへのアクセスを許可または拒否できます。
 
-## <a name="how-do-intune-and-skycure-help-protect-your-company-resources"></a>Intune と Skycure を利用し、会社のリソースをどのように保護しますか?
+## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Intune と SEP Mobile が会社のリソースを保護する方法
 
-Android または iOS 向け Skycure モバイル アプリは、ファイル システム、ネットワーク スタック、デバイスとアプリケーションの製品利用統計情報を可能な限り記録し、Skycure クラウド サービスに送信し、モバイル デバイスの脅威に対するリスクを評価します。
+Android または iOS 向け SEP Mobile モバイル アプリは、ファイル システム、ネットワーク スタック、デバイスとアプリケーションの製品利用統計情報を可能な限り記録し、SEP Mobile クラウド サービスに送信し、モバイル デバイスの脅威に対するリスクを評価します。
 
-Intune デバイス コンプライアンス ポリシーには、Skycure リスク評価に基づく、Skycure Mobile Threat Defense のルールが含まれています。 このルールを有効にすると、Intune は、有効にされたポリシーに基づいてデバイスの準拠状態を評価します。
+Intune デバイス コンプライアンス ポリシーには、SEP Mobile のリスク評価に基づく、SEP Mobile に関するルールが含まれています。 このルールを有効にすると、Intune は、有効にされたポリシーに基づいてデバイスの準拠状態を評価します。
 
-デバイスが準拠していないことが判明した場合、Exchange Online や SharePoint Online などのリソースに対するアクセスがブロックされます。 デバイスがブロックされたユーザーには Skycure モバイル アプリから手引きが届きます。それを見て問題を解決し、企業リソースへのアクセスを回復できます。
+デバイスが準拠していないことが判明した場合、Exchange Online や SharePoint Online などのリソースに対するアクセスがブロックされます。 デバイスがブロックされたユーザーには SEP Mobile アプリから手引きが届きます。それを見て問題を解決し、企業リソースへのアクセスを回復できます。
 
-Intune では、Skycure との統合に 2 つのモードがあります。
+Intune では、SEP Mobile との統合に 2 つのモードがあります。
 
--   **基本セットアップ**は読み取り専用モードであり、Skycure は Intune のデバイスを表示できます。
+-   **基本セットアップ**は読み取り専用モードであり、SEP Mobile は Intune のデバイスを表示できます。
 
--   **完全統合**の場合、Skycure から、デバイスのリスクとセキュリティ インシデントの詳細を Intune に報告できます。
+-   **完全統合**の場合、SEP Mobile から、デバイスのリスクとセキュリティ インシデントの詳細を Intune に報告できます。
 
 ## <a name="sample-scenarios"></a>サンプル事例
 
@@ -65,11 +65,11 @@ Intune では、Skycure との統合に 2 つのモードがあります。
 
 **悪意のあるアプリが検出されたときにブロックする:**
 
-![検出された悪意のあるアプリ](./media/skycure-arch-1.png)
+![検出された悪意のあるアプリ](./media/symantec-arch-1.png)
 
 **修復後、アクセスが与えられる:**
 
-![悪意のあるアプリが検出された後、修復するとアクセス権が付与される](./media/skycure-arch-2.png)
+![悪意のあるアプリが検出された後、修復するとアクセス権が付与される](./media/symantec-arch-2.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいてアクセスを制御する
 
@@ -77,11 +77,11 @@ Intune では、Skycure との統合に 2 つのモードがあります。
 
 **Wi-Fi 経由のネットワーク アクセスをブロックする:**
 
-![Wi-Fi 経由のネットワーク アクセスをブロックする](./media/skycure-arch-3.png)
+![Wi-Fi 経由のネットワーク アクセスをブロックする](./media/symantec-arch-3.png)
 
 **修復後、アクセスが与えられる:**
 
-![修復するとアクセス権が付与される](./media/skycure-arch-4.png)
+![修復するとアクセス権が付与される](./media/symantec-arch-4.png)
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいて SharePoint Online へのアクセスを制御する
 
@@ -89,11 +89,11 @@ Intune では、Skycure との統合に 2 つのモードがあります。
 
 **ネットワークの脅威が検出されたときに SharePoint Online をブロック:**
 
-![ネットワークの脅威が検出されたときに SharePoint Online をブロック](./media/skycure-arch-5.png)
+![ネットワークの脅威が検出されたときに SharePoint Online をブロック](./media/symantec-arch-5.png)
 
 **修復後、アクセスが与えられる:**
 
-![SharePoint で修復時にアクセス権を付与する例](./media/skycure-arch-6.png)
+![SharePoint で修復時にアクセス権を付与する例](./media/symantec-arch-6.png)
 
 ## <a name="supported-platforms"></a>サポートされているプラットフォーム
 
@@ -107,18 +107,18 @@ Intune では、Skycure との統合に 2 つのモードがあります。
 
 -   Microsoft Intune サブスクリプション
 
--   Skycure Mobile Threat Defense サブスクリプション
+-   Symantec Endpoint Protection Mobile のサブスクリプション
 
-詳細については、[Skycure Web サイト](https://www.skycure.com/skycure-microsoft-integration/)をご覧ください。
+詳しくは、[Symantec の Web サイト](https://www.skycure.com/skycure-microsoft-integration/)をご覧ください。
 
 ## <a name="next-steps"></a>次の手順
 
-Intune と Skycure の統合は次の手順で行います。
+Intune と SEP Mobile の統合は次の手順で行います。
 
-- [Skycure と Intune の統合をセットアップする](skycure-mtd-connector-integration.md)
+- [SEP Mobile と Intune の統合をセットアップする](skycure-mtd-connector-integration.md)
 
-- [Skycure アプリ、Microsoft Authenticator、iOS アプリ構成ポリシーを追加して割り当てる](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [SEP Mobile アプリ、Microsoft Authenticator、iOS アプリ構成ポリシーを追加して割り当てる](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
-- [Intune で Skycure デバイスのコンプライアンス ポリシーを作成する](mtd-device-compliance-policy-create.md)
+- [Intune で SEP Mobile デバイスのコンプライアンス ポリシーを作成する](mtd-device-compliance-policy-create.md)
 
-- [Intune で Skycure MTD コネクタを有効にする](mtd-connector-enable.md)
+- [Intune で SEP Mobile MTD コネクタを有効にする](mtd-connector-enable.md)

@@ -15,11 +15,11 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 08cebf84443e65ded5f7884218fbe17d722bddf2
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 10502f82d94246f7a70af6b88c0704a4daa0372b
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune で Mobile Threat Defense (MTD) アプリを追加して割り当てる
 
@@ -53,7 +53,7 @@ iOS デバイスでは、Azure AD によってチェックされた ID がユー
 
 #### <a name="microsoft-authenticator-app-for-ios"></a>iOS 向け Microsoft Authenticator アプリ
 
-- iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 5** には、この [Microsoft Authenticator アプリ ストア URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) を使用してください。
+- iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 12** では、この [Microsoft Authenticator アプリ ストア URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) を使います。
 
 ### <a name="lookout"></a>Lookout
 
@@ -62,7 +62,7 @@ iOS デバイスでは、Azure AD によってチェックされた ID がユー
 
 #### <a name="ios"></a>iOS
 
-- iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 5** には、この [Lookout for Work iOS アプリ ストア URL](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8) を使用してください。
+- iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 12** では、この [Lookout for Work iOS アプリ ストア URL](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8) を使います。
 
 #### <a name="lookout-for-work-app-outside-the-apple-store"></a>Apple ストア以外の Lookout for Work アプリ
 
@@ -91,15 +91,15 @@ Lookout for Work iOS アプリに再署名する詳細な手順については�
 
 - [Intune での iOS LOB アプリの追加](lob-apps-ios.md)に関するトピックの説明に従って、再署名した .ipa ファイルをアップロードします。 また、最小 OS バージョンを iOS 8.0 以降に設定する必要があります。
 
-### <a name="skycure"></a>Skycure
+### <a name="symantec-endpoint-protection-mobile-sep-mobile"></a>Symantec Endpoint Protection Mobile (SEP Mobile)
 
 #### <a name="android"></a>Android
 
-- Android ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-android.md)をご覧ください。 **手順 7**には、この [Skycure アプリ ストア URL](https://play.google.com/store/apps/details?id=com.skycure.skycure) を使用してください。
+- Android ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-android.md)をご覧ください。 **手順 7** では、この [SEP Mobile アプリ ストア URL](https://play.google.com/store/apps/details?id=com.skycure.skycure) を使います。  **[Minimum operating system]\(最小オペレーティング システム\)** では、**Android 4.0 (Ice Cream Sandwich)** を選びます。
 
 #### <a name="ios"></a>iOS
 
-- iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 5** には、この [Skycure アプリ ストア URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) を使用してください。
+- iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 12** では、この [SEP Mobile アプリ ストア URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) を使います。
 
 ### <a name="check-point-sandblast-mobile"></a>Check Point SandBlast Mobile
 
@@ -109,7 +109,7 @@ Lookout for Work iOS アプリに再署名する詳細な手順については�
 
 #### <a name="ios"></a>iOS
 
-- [Check Point SandBlast Mobile](https://www.checkpoint.com/products/sandblast-mobile/) に連絡して iOS アプリを取得してください。 [iOS ストア アプリを Microsoft Intune に追加する](store-apps-ios.md)手順を確認し、「**アプリ情報を構成する**」セクションの**手順 5** で、Apple ストアの URL を使用してください。
+- [Check Point SandBlast Mobile](https://www.checkpoint.com/products/sandblast-mobile/) に連絡して iOS アプリを取得してください。 [iOS ストア アプリを Microsoft Intune に追加する](store-apps-ios.md)手順を確認し、「**アプリ情報を構成する**」セクションの**手順 12** では、Apple ストアの URL を使います。
 
 ### <a name="zimperium"></a>Zimperium
 
@@ -119,7 +119,7 @@ Lookout for Work iOS アプリに再署名する詳細な手順については�
 
 #### <a name="ios"></a>iOS
 
-- iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 5** には、この [Zimperium アプリ ストア URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8) を使用してください。
+- iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 12** では、この [Zimperium アプリ ストア URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8) を使います。
 
 ## <a name="to-associate-the-mtd-app-with-an-ios-app-configuration-policy"></a>MTD アプリを iOS アプリ構成ポリシーと関連付けるには
 
@@ -127,31 +127,24 @@ Lookout for Work iOS アプリに再署名する詳細な手順については�
 
 - [iOS アプリ構成ポリシーの使用](app-configuration-policies-use-ios.md)に関するトピックの説明に従って、iOS アプリ構成ポリシーを作成します。
 
-### <a name="for-skycure"></a>Skycure の場合
+### <a name="for-sep-mobile"></a>SEP Mobile の場合
 
--   [Skycure 管理コンソール](https://aad.skycure.com)で以前に構成したものと同じ Azure AD アカウントを使います。これは、Intune クラシック ポータルにログインするためのものと同じアカウントにする必要があります。
+-   [Symantec Endpoint Protection Management コンソール](https://aad.skycure.com)で以前に構成したものと同じ Azure AD アカウントを使います。これは、Intune クラシック ポータルにログインするためのものと同じアカウントにする必要があります。
 
 -   iOS アプリ構成ポリシーのファイルは次のようにして**ダウンロードする**必要があります。 
-    -   [Skycure Management コンソール](https://aad.skycure.com)に移動して、管理者資格情報でサインインします。
+    -   [Symantec Endpoint Protection Management コンソール](https://aad.skycure.com)に移動し、管理者資格情報でサインインします。
 
-    -   **[設定]** &gt; **[Device Management Integrations (デバイス管理統合)]** &gt; **[EMM Integration Selection (EMM 統合選択)]** の順に進み、**[Microsoft Intune]** を選択し、選択を保存します。
+    -   **[Settings]\(設定\)** に移動し、**[Integrations]\(統合\)** で **[Intune]** を選びます。 **[EMM Integration Selection]\(EMM 統合の選択\)** を選びます。 **[Microsoft]** を選び、選択内容を保存します。
 
-    -   **[Integration setup files (統合セットアップ ファイル)]** リンクをクリックし、生成された \*.zip ファイルを保存します。 この .zip ファイルには **skycure\_configuration.plist** ファイルが含まれます。このファイルを利用し、Intune で iOS アプリ構成ポリシーが作成されます。
+    -   **[Integration setup files]\(統合セットアップ ファイル\)** リンクをクリックし、生成された \*.zip ファイルを保存します。 この .zip ファイルには ***.plist** ファイルが含まれます。このファイルを利用し、Intune で iOS アプリ構成ポリシーが作成されます。
 
-    -   [iOS 用 Microsoft Intune アプリ構成ポリシーを使用する](app-configuration-policies-use-ios.md)手順に従って、Skycure iOS アプリ構成ポリシーを追加します。
+    -   [iOS 用 Microsoft Intune アプリ構成ポリシーを使用する](app-configuration-policies-use-ios.md)手順に従って、SEP Mobile iOS アプリ構成ポリシーを追加します。
 
-    - **手順 8** で、**[XML データを入力する]** オプションを使用して内容を **skycure_configuration.plist** ファイルからコピーして、構成ポリシーの本文に貼り付けます。
+    - **手順 8** で、**[XML データを入力する]** オプションを使用して内容を ***.plist** ファイルからコピーして、構成ポリシーの本文に貼り付けます。
 
-**skycure_configuration.plist** の内容は以下からコピーすることもできます。
+> [!NOTE]
+> ファイルを取得できない場合は、[Symantec Endpoint Protection Mobile エンタープライズ サポート](https://support.symantec.com/en_US/contact-support.html)にお問い合わせください。
 
-```
-<dict>
-    <key>MdmType</key>
-    <string>Intune</string>
-    <key>UserEmail</key>
-    <string>{{userprincipalname}}</string>
-</dict>
-```
 ### <a name="for-check-point-sandblast-mobile"></a>Check Point SandBlast Mobile の場合
 
 - [iOS 用 Microsoft Intune アプリ構成ポリシーを使用する](app-configuration-policies-use-ios.md)手順に従って、Check Point SandBlast Mobile iOS アプリ構成ポリシーを追加します。

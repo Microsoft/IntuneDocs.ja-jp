@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da8bb19db8c2da2d5854c3f991ccce4d124d594c
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 735b3323527487e231d190ffd45e9083c4f524a2
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>紛失したまたは盗まれた iOS デバイスを Intune で検索する
 
@@ -46,6 +46,15 @@ ms.lasthandoff: 04/26/2018
 
 >[!NOTE]
 >プライバシー上の理由から、マップでズームインできる距離は制限されています。
+
+## <a name="activate-lost-mode-sound-alert-on-an-ios-device"></a>iOS デバイスで紛失モード サウンド アラートをアクティブにする
+
+ユーザーが iOS 9.3 以降のデバイスを紛失した場合、ユーザーがデバイスを見つけられるように、遠隔操作でデバイスのアラート サウンドの再生をトリガーすることができます。 デバイスが[紛失モード](device-lost-mode.md)になっている必要があります。
+
+[Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイス]** > **[すべてのデバイス]** の順に選び、iOS デバイスを選んでから、**[概要]** > **[詳細]** > **[Play Lost mode sound (supervise only)]\(紛失モードのサウンドを再生する (監視のみ)\)** を選びます。
+
+サウンドの再生は、ユーザーがデバイスでサウンドを無効にするまで、またはデバイスの紛失モードが解除されるまで続きます。
+
 
 ## <a name="security-and-privacy-information-for-lost-mode-and-locate-device-actions"></a>紛失モードとデバイスを探索するアクションのセキュリティおよびプライバシー情報
 - このアクションを有効にするまで、デバイスの位置情報は Intune に送信されません。

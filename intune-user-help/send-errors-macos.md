@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/07/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,30 +17,34 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa294e5df63106f949da94aec766c04839e0171f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 52431d900ee9abe71458b8b22d8a0946f22ce583
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>管理対象の macOS デバイスの適切なユーザーにエラーを送信する
 
-ポータル サイト アプリの使用中に macOS デバイスでエラーが発生した場合は、会社のサポートが問題のトラブルシューティングを行う際に役立つように情報を送信することができます。
+Intune ポータル サイト アプリでは、不明なエラーが発生する場合があります。 エラーが発生したときは、会社のサポート担当者にエラーに関する詳細をメールで送信できます。 この詳細によって、問題を解決するために必要な背景を伝えることができます。
 
 ## <a name="send-errors-to-your-company-support"></a>会社のサポート部門にエラーを送信する
 
- さまざまな方法では、会社のサポート部門にエラー情報を送信できます。
+Intune ポータル サイト アプリでエラーに関する詳細を送信するには:
 
--   エラー アラート メッセージで、**[レポート]** をクリックします。
+-   受け取ったエラー メッセージで、**[レポート]** をクリックします。
 
--   ポータル サイト アプリの **[ヘルプ]** メニューで、**[診断レポートの保存]** をクリックします。 ファイルを保存する場所を選びます。 会社に応じて、会社のサポート部門にこのファイルをメールで送信するか、アップロードすることができます。
+-   **[ヘルプ]** メニューの **[診断レポートの保存]** をクリックします。 ファイルを保存する場所を選びます。 次に、このファイルを会社のサポート担当者にメールまたはアップロードします。
 
-- メール アプリが構成済みの場合は、**[ヘルプ]** > **[診断レポートの送信]** で診断レポートを送信することもできます。
+-   メール アプリが構成されている場合は、**[ヘルプ]** > **[診断レポートの送信]** で診断レポートを送信できます。 ログをアップロードした後、**[電子メールの詳細]** をクリックします。
 
 ## <a name="send-errors-to-the-company-portal-developers-for-macos-devices"></a>macOS デバイスのポータル サイト開発者にエラーを送信する
 
-ポータル サイト アプリが、意図しない動作をすることがあります。 これは、マイクロソフトがお客様の操作性を向上させ、おかしな動作が今後発生しないようにするために、アプリの開発者がお客様からのご意見を待ち望んでいる問題です。 この情報は、デバイスの _diagnostic report_ という名前の特殊なドキュメントに保存されています。
+Intune ポータル サイト アプリが、予期せず終了することがあります。 アプリの開発者は、予期しない動作についての情報をユーザーから収集する必要があります。 エラーの詳細情報を使って、根本原因を特定し、二度と発生しないようにします。 エラーの詳細は、デバイスの _diagnostic log_ という名前の特殊なドキュメントに保存されています。 ポータル サイト チームは、問題を診断するために、ポータル サイト専用のログを必要とします。
 
-ポータル サイト アプリを開発している Microsoft チームに診断レポートを送る必要がある場合は、根本原因を調べて診断できるようにいくつかの情報を提供する必要があります。 会社のサポート チームに送る代わりに、<a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">このメール テンプレート</a>を使って Microsoft に送信してください。
+Microsoft にログを送信するには、次の手順に従います。
+
+1.  ポータル サイト アプリを開きます。
+2.  **[ヘルプ]** メニューの **[診断レポートの送信]** をクリックします。  ログがアップロードされた後、インシデント ID を受け取ります。 その ID をコピーして保存します。
+3.  <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">こちらのテンプレート</a>を使って、Microsoft にメールを送ります。
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。

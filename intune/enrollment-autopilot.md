@@ -1,36 +1,49 @@
 ---
-title: "Windows AutoPilot Deployment プログラムを使用してデバイスを登録する"
+title: Windows AutoPilot Deployment プログラムを使用してデバイスを登録する
 titleSuffix: Microsoft Intune
-description: "Windows AutoPilot Deployment プログラムを使用して、Windows 10 デバイスを登録する方法について説明します。"
-keywords: 
+description: Windows AutoPilot Deployment プログラムを使用して、Windows 10 デバイスを登録する方法について説明します。
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 04/25/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 4522be0b636a72844fa6177fbb35d3350cfbd00e
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 934b80d1c174c25d37e30695f46afc88c8d8bfc3
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot-deployment-program"></a>Windows AutoPilot Deployment プログラムを使用して Windows デバイスを登録する
 Windows AutoPilot Deployment プログラムにより、デバイスのプロビジョニングが簡略化されます。 カスタマイズされたオペレーティング システム イメージのビルドおよび維持は、時間のかかるプロセスです。 また、これらのカスタム オペレーティング システム イメージを新しいデバイスに適用し、エンド ユーザーに提供する前に使用の準備を行う場合にも、時間がかかることがあります。 Microsoft Intune と AutoPilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および新しいデバイスへの適用を行わなくてもデバイスをエンド ユーザーに提供することができます。 Intune を使用して AutoPilot デバイスを管理する場合、デバイスの登録後にポリシー、プロファイル、アプリなどを管理することができます。 利点、シナリオ、および前提条件の概要については、「[Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)」 (Windows AutoPilot の概要) を参照してください。
 
 ## <a name="prerequisites"></a>必要条件
-- [組織へのデバイスの登録が必要](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot#device-registration-and-oobe-customization)
 - [Windows の自動登録が有効である](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium サブスクリプション](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+
+## <a name="add-devices"></a>デバイスを追加する
+
+CSV ファイルの情報をインポートすることにより、Windows AutoPilot デバイスを追加できます。
+
+1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Windows の登録]** > **[デバイス]** > **[インポート]** の順に選びます。
+
+    ![Windows AutoPilot デバイスのスクリーンショット](media/enrollment-autopilot/autopilot-import-device.png)
+
+2. **[Windows AutoPilot デバイスの追加]** で、追加するデバイスのシリアル番号、Windows 製品 ID、およびハードウェア ハッシュを含む CSV ファイルを見つけます。
+
+    ![Windows AutoPilot デバイスの追加のスクリーンショット](media/enrollment-autopilot/autopilot-import-device2.png)
+
+3. **[インポート]** を選んでデバイス情報のインポートを開始します。 これには、数分かかる場合があります。
 
 ## <a name="synchronize-devices"></a>デバイスを同期する
 登録済みデバイスを Intune と同期して、構成できるようにします。
 
-1. [Azure ポータル](https://portal.azure.com) にサインインします。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** の **[デバイスの登録]** を選択します。
 4. **[Windows の登録]** を選択し、**[Windows AutoPilot Deployment プログラム]** セクションで、**[デバイス]** を選択します。
 5. **[同期]** をクリックして、登録済みデバイスをインポートします。 同期が進行中であることを示すメッセージが表示されます。
@@ -38,8 +51,8 @@ Windows AutoPilot Deployment プログラムにより、デバイスのプロビ
 
 ## <a name="create-an-autopilot-deployment-profile"></a>AutoPilot Deployment プロファイルを作成する
 AutoPilot Deployment プロファイルは、AutoPilot デバイスを構成する場合に使用されます。
-1. [Azure ポータル](https://portal.azure.com) にサインインします。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** の **[デバイスの登録]** を選択します。
 4. **[Windows の登録]** を選択し、**[Windows AutoPilot Deployment プログラム]** セクションで、**[デプロイ プロファイル]** を選択します。
 5. **[プロファイルの作成]** を選択して、名前と説明 (オプション) を選択します。
@@ -66,7 +79,7 @@ AutoPilot Deployment プロファイルは、AutoPilot デバイスを構成す�
 AutoPilot Deployment プロファイルを作成したら、それを選択したデバイスに割り当てることができます。
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** の **[デバイスの登録]** を選択します。
 4. **[Windows の登録]** を選択し、**[Windows AutoPilot Deployment プログラム]** セクションで、**[デバイス]** を選択します。
 5. デプロイ プロファイルを割り当てるデバイスを選択します。 **[プロファイルの状態]** 列をフィルターすることで、割り当てられているプロファイルのないデバイスを簡単に見つけることができます。
@@ -83,7 +96,7 @@ AutoPilot Deployment プロファイルをデバイスに割り当てた後で�
 AutoPilot Deployment プロファイルを作成したら、デプロイ プロファイルの特定の部分を編集することができます。   
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** の **[デバイスの登録]** を選択します。
 4. **[Windows の登録]** の **[Windows AutoPilot Deployment プログラム]** セクションで、**[デプロイ プロファイル]** を選択します。
 5. 編集するプロファイルを選択します。
@@ -105,9 +118,19 @@ AutoPilot Deployment プロファイルを作成したら、デプロイ プロ�
 Windows AutoPilot の未割り当てデバイスのアラートを表示し、AutoPilot プログラムからのデバイスで、AutoPilot 展開プロファイルが割り当てられていないデバイスの数を確認できます。 アラート内の情報を利用してプロファイルを作成し、未割り当てデバイスに割り当てます。 アラートをクリックすると、Windows AutoPilot の完全一覧とそれらに関する詳細が表示されます。
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** の **[デバイスの登録]** を選択します。
 4. アラートを表示するには、**[概要]** を選択します。 アラートをクリックすると、AutoPilot デバイスの一覧が表示されます。  
+
+## <a name="delete-autopilot-devices"></a>AutoPilot デバイスを削除する
+
+登録されていない Windows AutoPilot デバイスを削除することができます。 デバイスの登録を解除してから削除することができます。
+
+1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Windows の登録]** > **[デバイス]** の順に選びます。
+
+2. **[Windows AutoPilot デバイス]** で、削除するデバイスを選んでから、**[削除]** を選びます。
+
+3. **[はい]** を選んで削除を確認します。 削除には数分かかることがあります。
 
 
 ## <a name="next-steps"></a>次の手順

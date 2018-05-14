@@ -1,25 +1,25 @@
 ---
-title: "Microsoft Intune で MTD デバイスのコンプライアンス ポリシーを作成する"
-titlesuffix: 
-description: "モバイル デバイスが会社のリソースにアクセスできるかどうかを決定するために、MTD パートナー脅威レベルを使用する Intune デバイスのコンプライアンス ポリシーを作成します。"
-keywords: 
+title: Microsoft Intune で MTD デバイスのコンプライアンス ポリシーを作成する
+titlesuffix: ''
+description: モバイル デバイスが会社のリソースにアクセスできるかどうかを決定するために、MTD パートナー脅威レベルを使用する Intune デバイスのコンプライアンス ポリシーを作成します。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b719bb1841cfc1aa98808b9c09db43d9c654d63f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1152473206826aa2e3f63c7196a3d0538101a948
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Intune で Mobile Threat Defense (MTD) デバイス コンプライアンス ポリシーを作成する
 
@@ -36,7 +36,7 @@ MTD でのデバイス コンプライアンス ポリシーの前提条件:
 
 -   MTD と Intune の統合をセットアップする
 
-## <a name="to-create-a-mtd-device-compliance-policy"></a>MTD デバイス コンプライアンス ポリシーを作成するには
+## <a name="to-create-an-mtd-device-compliance-policy"></a>MTD デバイス コンプライアンス ポリシーを作成するには
 
 1.  [Azure Portal](https://portal.azure.com/) に移動し、Intune 資格情報でサインインします。
 
@@ -65,7 +65,7 @@ MTD でのデバイス コンプライアンス ポリシーの前提条件:
 > [!IMPORTANT]
 > Office 365 またはその他のサービスに対する条件付きアクセス ポリシーを作成すると、デバイス コンプライアンス評価が適用され、非準拠デバイスはデバイスで脅威が解決されるまで会社のリソースへのアクセスは禁止されます。
 
-## <a name="to-assign-a-mtd-device-compliance-policy"></a>MTD デバイス コンプライアンス ポリシーを割り当てるには
+## <a name="to-assign-an-mtd-device-compliance-policy"></a>MTD デバイス コンプライアンス ポリシーを割り当てるには
 
 デバイス コンプライアンス ポリシーをユーザーに割り当てるには、前に構成したポリシーを選択します。 既存のポリシーは、**[デバイスのポリシー準拠 - ポリシー]** ウィンドウで確認できます。
 

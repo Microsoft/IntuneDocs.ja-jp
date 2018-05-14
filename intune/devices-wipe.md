@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 228198276643f1eb8dfcb0392e4902a7f56875c9
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f7d3e768e740866d69d675a962dfca6d98c85568
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>出荷時の設定にリセットまたは会社データの削除を使用してデバイスを削除する
 
@@ -58,7 +58,9 @@ ms.lasthandoff: 04/26/2018
 
 ## <a name="remove-company-data"></a>会社データの削除
 
-**[会社データを削除する]** アクションでは、管理対象のアプリ データ (該当する場合)、設定、Intune を使用して割り当てられた電子メール プロファイルを削除します。 **[会社データを削除する]** では、ユーザーの個人データはデバイス上にそのまま保持されます。 デバイスは Intune の管理から削除されます。 
+**[会社データを削除する]** アクションでは、管理対象のアプリ データ (該当する場合)、設定、Intune を使用して割り当てられた電子メール プロファイルを削除します。 デバイスは Intune の管理から削除されます。 これは、次にデバイスがチェックインし、リモートの**会社のデータ削除**アクションを受け取ったときに行われます。
+
+**[会社データを削除する]** では、ユーザーの個人データはデバイス上にそのまま保持されます。  
 
 次の表では、削除されるデータと、会社データの削除の実行後にデバイスに残るデータへの **[会社データを削除する]** アクションの影響について説明します。
 
@@ -123,13 +125,19 @@ ms.lasthandoff: 04/26/2018
 
 ### <a name="remove-company-data"></a>会社データの削除
 
-1. [Azure ポータル](https://portal.azure.com)にサインインします。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3. **[デバイス]** ウィンドウで、**[すべてのデバイス]** を選択します。
-4. 会社データを削除するデバイスの名前を選択します。
-5. デバイス名が表示されるウィンドウで、**[会社データを削除する]** を選択します。 確定するには、**[はい]** を選択します。
+1. [Azure Portal で Intune](https://aka.ms/intuneportal) にサインインします。
+2. **[デバイス]** ウィンドウで、**[すべてのデバイス]** を選択します。
+3. 会社データを削除するデバイスの名前を選択します。
+4. デバイス名が表示されるウィンドウで、**[会社データを削除する]** を選択します。 確定するには、**[はい]** を選択します。
 
 デバイスに電源が入っていて、接続されている場合、**[会社データを削除する]** アクションは 15 分以内にすべてのデバイスの種類に伝達されます。
+
+## <a name="delete-devices-from-the-intune-portal"></a>Intune ポータルからデバイスを削除する
+
+Intune ポータルからデバイスを削除する必要がある場合は、特定のデバイス ウィンドウから削除することができます。 次にデバイスがチェックインしたときに、デバイス上の会社データはすべて削除されます。
+
+1. [Azure Portal で Intune](https://aka.ms/intuneportal) にサインインします。
+2. **[デバイス]** > **[すべてのデバイス]** を選択し、削除するデバイスを選んで、**[削除]** を選択します。
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Azure Active Directory ポータルからデバイスを削除する
 

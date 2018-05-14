@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/26/2018
+ms.date: 04/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dabf8d67b4d0bd7252f306d6b21949cf501eca8d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 834eb66e21820880f644c33d7e5d6aedad6bd502
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune で SCEP 証明書を構成して使用する
 
@@ -40,13 +40,11 @@ NDES サーバーは、CA をホストしているドメインに参加する必
   -  デバイスはインターネット接続を使用して証明書を受信できます。
   -  デバイスがインターネット接続経由で証明書を受信して更新する場合のセキュリティ推奨事項です。
 
-> [!NOTE]
-> - WAP をホストするサーバーは、ネットワーク デバイス登録サービスで使用される長い URL のサポートを有効にする [更新プログラムをインストールする](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) 必要があります。 この更新プログラムは、 [2014 年 12 月の更新プログラムのロールアップ](http://support.microsoft.com/kb/3013769)に含まれます。または、 [KB3011135](http://support.microsoft.com/kb/3011135)から個別に入手できます。
-> - WAP サーバーは、外部クライアントに公開される名前と一致する SSL 証明書を持ち、NDES サーバーで使用される SSL 証明書を信頼する必要があります。 これらの証明書を使用すると、WAP サーバーはクライアントからの SSL 接続を終了し、NDES サーバーへの新しい SSL 接続を作成できます。
-> 
->   WAP の証明書については、「[Plan certificates](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn383650(v=ws.11)#plan-certificates)」(証明書を計画する) をご覧ください。
-> 
->   WAP サーバーの一般的な情報については、「[Working with Web Application Proxy](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn584113(v=ws.11))」(Web アプリケーション プロキシの使用) をご覧ください。
+#### <a name="additional"></a>Additional
+- WAP をホストするサーバーは、ネットワーク デバイス登録サービスで使用される長い URL のサポートを有効にする [更新プログラムをインストールする](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) 必要があります。 この更新プログラムは、 [2014 年 12 月の更新プログラムのロールアップ](http://support.microsoft.com/kb/3013769)に含まれます。または、 [KB3011135](http://support.microsoft.com/kb/3011135)から個別に入手できます。
+- WAP サーバーは、外部クライアントに公開される名前と一致する SSL 証明書を持ち、NDES サーバーで使用される SSL 証明書を信頼する必要があります。 これらの証明書を使用すると、WAP サーバーはクライアントからの SSL 接続を終了し、NDES サーバーへの新しい SSL 接続を作成できます。
+
+詳しくは、[Plan certificates for WAP](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn383650(v=ws.11)#plan-certificates) (WAP の証明書の計画) に関するページおよび [general information about WAP servers](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn584113(v=ws.11)) (WAP サーバーについての一般情報) に関するページをご覧ください。
 
 ### <a name="network-requirements"></a>ネットワークの要件
 
@@ -369,13 +367,13 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
        - **CN={{IMEINumber}}**: 携帯電話の識別に使用される IMEI (International Mobile Equipment Identity) の一意の番号
        - **CN={{OnPrem_Distinguished_Name}}**: コンマで区切られた相対識別名のシーケンス、`CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com` など
 
-       > [!TIP]
-       > `{{OnPrem_Distinguished_Name}}` 変数を使用するには、[Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) を使用して、`onpremisesdistingishedname` ユーザー属性を Azure AD と同期させます。
+          `{{OnPrem_Distinguished_Name}}` 変数を使用するには、[Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) を使用して、`onpremisesdistingishedname` ユーザー属性を Azure AD と同期させます。
+
+       - **CN={{onPremisesSamAccountName}}**: 管理者は、Azure AD Connect を使って、Active Directory の samAccountName 属性を、Azure AD の `onPremisesSamAccountName` という属性に同期できます。 Intune は、SCEP 証明書のサブジェクト内の証明書発行要求の一部として、その変数を置き換えることができます。  samAccountName 属性は、以前のバージョンの Windows (windows 2000 より前) のクライアントとサーバーをサポートするために使われるユーザー ログオン名です。 ユーザー ログオン名の形式は、`DomainName\testUser` または単に `testUser` です。
+
+          `{{onPremisesSamAccountName}}` 変数を使用するには、[Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) を使用して、`onPremisesSamAccountName` ユーザー属性を Azure AD と同期させます。
 
        これらの変数の 1 つ以上と静的な文字列の組み合わせを使うことで、カスタム サブジェクト名の形式を作成できます (例: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**)。 <br/> この例では、CN 変数と E 変数に加えて、組織単位、組織、場所、州、および国の値の文字列を使ってサブジェクト名形式を作成しています。 [CertStrToName 関数](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)の記事では、この関数とそのサポートされる文字列について説明されています。
-
-
-
 
 - **[サブジェクトの別名]**: Intune が証明書要求のサブジェクトの別名 (SAN) をどのように自動生成するかを入力します。 たとえば、ユーザー証明書の種類を選択した場合は、サブジェクトの別名にユーザー プリンシパル名 (UPN) を含めることができます。 クライアント証明書を Windows ポリシー サーバーでの認証に使用する場合は、サブジェクトの別名を UPN に設定する必要があります。
 - **[キー使用法]**: 証明書のキー使用法のオプションを入力します。 次のようなオプションがあります。

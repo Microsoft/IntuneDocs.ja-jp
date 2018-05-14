@@ -15,27 +15,34 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8da396e41844c854cd18a9384fe97ac0bee59355
-ms.sourcegitcommit: b727b6bd6f138c5def7ac7bf1658068db30a0ec3
+ms.openlocfilehash: da85b0087709a719cafaaf893c3188a3bf3148d8
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune とエンド ユーザー アプリの UI の更新
 このリリースの Microsoft Intune でエンド ユーザーに表示されるアプリの UI に加えられた変更について説明します。 これらの更新を理解すると、ユーザーとの通信や、展開のサポートのために作成したカスタム ドキュメントの更新に役立ちます。 会社のポータルを使用してヘルプデスクにサポートを求める場合に、直面している問題のトラブルシューティングをより適切に行う方法を理解するのにも役立ちます。
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
+## <a name="week-of-april-23-2018"></a>2018 年 4 月 23 日の週
+#### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>Windows 10 用の Intune ポータル サイト アプリでのナビゲーション ビューの更新 <!-- 1195010 -->
+Windows 10 の Intune ポータル サイト アプリが [Fluent Design System のナビゲーション ビュー](https://docs.microsoft.com/en-us/windows/uwp/design/basics/navigation-basics)に合わせて更新されました。 アプリの側面だけでなく、すべてのトップ レベルのページに静的な縦方向リストが表示されます。 リンクをクリックすると、ページをすばやく表示したり、ページを切り替えたりできます。 これは現在作成中の更新の一部であり、今後さらにアダプティブで馴染みがあり、使いやすい Intune の機能を提供していきます。 
+
+![Fluent デザイン ナビゲーション ビューが示されている Intune ポータル サイト アプリのダッシュボードのスクリーンショット](./media/1804_WindowsCP_Fluent_01.png)
+
+
 ## <a name="week-of-april-2-2018"></a>2018 年 4 月 2 日の週
 
-#### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866---"></a>iOS 用ポータル サイト アプリに関するユーザー エクスペリエンスの更新プログラム <!--1412866 -->
+#### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>iOS 用ポータル サイト アプリに関するユーザー エクスペリエンスの更新プログラム <!-- 1412866 -->
 iOS 用のポータル サイト アプリに対して、主要なユーザー エクスペリエンスの更新プログラムをリリースする予定です。 この更新プログラムでは、最新のルック アンド フィールを含む完全なビジュアル再設計が行われています。 アプリの機能を維持した上で、操作性とアクセシビリティが向上しています。  
 
 また、次のような更新が行われています。
 - iPhone X のサポート。
 - アプリの起動および読み込み応答を速くして、ユーザー時間を節約。
 - 最新の状態情報をユーザーに提供するための進行状況バーを追加。
-- ログのアップロード方法を向上。これにより、問題が生じた場合に、その内容を簡単にレポートできる。  
+- ログのアップロード方法を改善。これにより、問題が生じた場合に、その内容を簡単にレポートできる。  
 
 |以前|これらの手順の完了後、|
 |---|---|
