@@ -1,12 +1,11 @@
 ---
-title: Microsoft Intune で iOS デバイスにアプリごとの VPN を設定する
-titleSuffix: ''
-description: 管理対象のどのアプリが Intune で管理される iOS デバイスで仮想プライベート ネットワーク (VPN) を使用できるかを指定することができます。
+title: Microsoft Intune での iOS デバイスに対するアプリごとの VPN の設定 - Azure | Microsoft Docs
+description: 前提条件を参照し、仮想プライベート ネットワーク (VPN) ユーザーのグループを作成し、SCEP 証明書プロファイルを追加し、アプリごとの VPN プロファイルを構成し、iOS デバイスの Microsoft Intune でいくつかのアプリを VPN プロファイルに割り当てます。 デバイスの VPN 接続を確認する手順も一覧表示します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +14,11 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46857dcf24befb0cf552769d48b99020c36e3e5b
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 3a467983b0d6ce94c32080f4d5cd78683471fb58
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Intune での iOS デバイス用のアプリごとの Virtual Private Network (VPN) 設定
 
@@ -28,6 +27,7 @@ ms.lasthandoff: 04/28/2018
 現在のところ、アプリごとの VPN は次のプロバイダーで利用できます。 
 
  - Checkpoint Remote Access VPN
+ - Cisco AnyConnect
  - F5
  - Pulse Connect Secure
  - SonicWall
@@ -49,8 +49,8 @@ ms.lasthandoff: 04/28/2018
 
 アプリごとの VPN にアクセスできるメンバーが含まれるように、Azure Active Directory (Azure AD) でグループを作成するか既存のグループを選択します。
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com)にサインインします。
+2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
 2. **[グループ]** を選択し、**[新しいグループ]** をクリックします。
 3. このグループの **[グループの種類]** を選択します。 
 3. グループの **[グループ名]** を入力します。 
@@ -64,8 +64,8 @@ ms.lasthandoff: 04/28/2018
 
 CA によって発行された VPN サーバーのルート証明書を、Intune で作成されたプロファイルにインポートします。 信頼済み証明書プロファイルから iOS デバイスに、VPN サーバーが提示する CA を自動的に信頼するように指示します。
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com)にサインインします。
+2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
 2. **[デバイス構成]** を選択して、**[プロファイル]** をクリックします。
 3. **[プロファイルの作成]** をクリックします。 **[プロファイルの作成]** で、次の操作を実行します。
     1. **[名前]** を入力します。
@@ -81,8 +81,8 @@ CA によって発行された VPN サーバーのルート証明書を、Intune
 
 信頼済みルート証明書プロファイルにより、iOS が VPN サーバーを自動的に信頼できるようになります。 SCEP 証明書は、iOS の VPN クライアントから VPN サーバーに資格情報を提供します。 この証明書により、iOS デバイスのユーザーにユーザー名とパスワードを求めることなく自動的にデバイスが認証できるようになります。 
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com)にサインインします。
+2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
 2. **[デバイス構成]** を選択して、**[プロファイル]** をクリックします。
 3. **[プロファイルの作成]** をクリックします。 **[プロファイルの作成]** で、次の操作を実行します。
     1. **[名前]** を入力します。
@@ -108,8 +108,8 @@ CA によって発行された VPN サーバーのルート証明書を、Intune
 
 VPN プロファイルには、クライアントの資格情報を含む SCEP 証明書、VPN への接続情報、iOS アプリケーションがアプリごとの VPN 機能を使用できるようにする、アプリごとの VPN フラグが含まれています。
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com)にサインインします。
+2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
 2. **[デバイス構成]** を選択して、**[プロファイル]** をクリックします。
 3. **[プロファイルの作成]** をクリックします。 **[プロファイルの作成]** で、次の操作を実行します。
     1. **[名前]** を入力します。
@@ -139,7 +139,7 @@ VPN プロファイルには、クライアントの資格情報を含む SCEP �
 VPN プロファイルを追加した後、アプリと Azure AD グループをプロファイルに関連付けます。
 
 1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
 2. **[Mobile Apps]** を選択します。
 3. **[アプリ]** をクリックします。
 4. アプリの一覧からアプリを選択します。
@@ -167,6 +167,7 @@ VPN プロファイルを追加した後、アプリと Azure AD グループを
  - サポートされているサード パーティ製 VPN アプリがインストールされていることを確認します。 次の VPN アプリがサポートされています。
     - Pulse Secure
     - Checkpoint
+    - Cisco AnyConnect
     - F5
     - SonicWall
 

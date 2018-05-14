@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2a4bd083027905d00dc317a0103754748bf0236e
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 64df804bf2f882991cccd3f77014369cd86b69a8
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune で Windows デバイス用のデバイス コンプライアンス ポリシーを追加する
 
@@ -121,11 +121,11 @@ HAS サービスのしくみの詳細については、「[HealthAttestation CSP
 
 ### <a name="device-properties"></a>デバイスのプロパティ
 
-- **最小 OS バージョン**: 許容される最小バージョンを major.minor.build.CU の番号形式で入力します。 build.CU 番号は、`ver` コマンドまたは `winver` コマンドによって返されるバージョンと対応する必要があります。
+- **最小 OS バージョン**: 許容される最小バージョンを major.minor.build.revision の番号形式で入力します。 build.revision 番号は、`ver` コマンドまたは `winver` コマンドによって返されるバージョンと対応する必要があります。
 
   指定された OS バージョンよりデバイスのバージョンが低い場合、非準拠としてレポートされます。 アップグレード方法に関する情報のリンクが表示されます。 エンド ユーザーは、デバイスのアップグレードを行うことを選択できます。アップグレード後は、会社のリソースにアクセスできます。
 
-- **最大 OS バージョン**: 許容される最大バージョンを major.minor.build.CU の番号形式で入力します。 build.CU 番号は、`ver` コマンドまたは `winver` コマンドによって返されるバージョンと対応する必要があります。
+- **最大 OS バージョン**: 許容される最大バージョンを major.minor.build.revision の番号形式で入力します。 build.revision 番号は、`ver` コマンドまたは `winver` コマンドによって返されるバージョンと対応する必要があります。
 
   ルールに指定された OS バージョンより新しいバージョンの OS がデバイスで使用されている場合、会社のリソースへのアクセスがブロックされ、IT 管理者に問い合わせることをユーザーに促すメッセージが表示されます。対象の OS バージョンを許可するようにルールが変更されるまで、このデバイスを使用して会社のリソースへのアクセスすることはできません。
 
