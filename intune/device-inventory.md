@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a40b855d1dbaeece1dc91648866285c0a01fb338
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f66c0695c7e3d1f4bb7a5ca3abceeb13f6af41f2
+ms.sourcegitcommit: 3c4ea8d6809a63042705b5ed4f25ba80f522070e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="see-device-details-in-intune"></a>Intune でデバイスの詳細を確認する
 
@@ -46,6 +46,16 @@ ms.lasthandoff: 04/26/2018
    - **[デバイス構成]** には、デバイスに割り当てられているデバイス構成ポリシーがすべて表示され、ポリシーが成功したか失敗したかが示されます。
 
 Intune は会社所有のデバイスでのみアプリの一覧を収集します。 個人用のデバイス上のアプリは確認されません。 Windows 10 の PC の場合、会社所有のデバイスの最新のアプリのみが収集されます。 Intune では、デバイス上の Win32 アプリに関する情報を収集しません。 デバイスで使用される通信事業者によっては、一部のアプリが収集されない場合があります。
+
+|プラットフォーム|個人所有のデバイス|会社所有のデバイス|  
+|--------------|---------------------------------|--------------------------------|  
+|Windows 10 (Configuration Manager クライアントを使用しない)|管理対象アプリのみ|管理対象アプリのみ|
+|Windows 8.1 (Configuration Manager クライアントを使用しない)|管理対象アプリのみ|管理対象アプリのみ|  
+|Windows Phone 8|管理対象アプリのみ|管理対象アプリのみ|  
+|Windows RT|管理対象アプリのみ|管理対象アプリのみ|  
+|iOS|管理対象アプリのみ|デバイスにインストールされているすべてのアプリ|
+|macOS|デバイスにインストールされているすべてのアプリ|デバイスにインストールされているすべてのアプリ|  
+|Android|管理対象アプリのみ|デバイスにインストールされているすべてのアプリ|  
 
 ## <a name="next-steps"></a>次の手順
 Intune で[デバイスを管理](device-management.md)するために他に行えることを確認します。

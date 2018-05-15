@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51da197b9b805fbac22b6a46453617b7703a37e8
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9c2b17e1acff965a08245094c57df81c58f44fda
+ms.sourcegitcommit: 7e80388b6223c9a632c5729bf9b157f848fe52cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="configure-intune-certificate-profiles"></a>Intune 証明書プロファイルを構成する
 
@@ -103,7 +103,7 @@ Simple Certificate Enrollment Protocol (SCEP) または PKCS #12 (.PFX) 証明�
    > 
    > カスタム形式で現在サポートされている 2 つの変数は、`Common Name (CN)` と `Email (E)` です。 これらの変数と静的文字列の組み合わせを使用することで、このようなサブジェクト名のカスタム形式を作成できます。
    > 
-   >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+   >     `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`
    > 
    > この例では、管理者は `CN` と `E` の変数に加えて、組織単位、組織、市区町村、州、および国の値の文字列を使用してサブジェクト名形式を作成しています。 「[CertStrToName 関数](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)」で、サポートされる文字列を一覧にしています。
 
