@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d15e464ed77499c28bbcaf94289607ced48c140f
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 7272e8e088ae2c2ecad1756233281c42a80a279b
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="custom-device-settings-for-devices-running-windows-holographic-for-business-in-intune"></a>Intune での Windows Holographic for Business を実行しているデバイスに対するカスタム デバイス設定
 
@@ -27,6 +27,7 @@ ms.lasthandoff: 04/28/2018
 特定の設定を探している場合、[Windows Holographic for Business デバイス制限プロファイル](device-restrictions-windows-holographic.md)には多くの組み込み設定が含まれ、カスタム値を指定する必要がないことに留意してください。
 
 ## <a name="create-the-custom-oma-uri-profile"></a>カスタム OMA-URI プロファイルを作成する
+
 1. [Microsoft Intune でのカスタム デバイス設定の構成](custom-settings-configure.md)に関するページの手順に従って開始します。
 2. **[プロファイルの作成]** で **[設定]** を選択し、1 つまたは複数の OMA-URI 設定を追加します。
 3. **[OMA-URI のカスタム設定]** で **[追加]** をクリックして、新しい値を追加します。 **[エクスポート]** をクリックして、コンマ区切り値 (.csv) ファイルで構成した値の一覧を作成することもできます。
@@ -50,52 +51,95 @@ ms.lasthandoff: 04/28/2018
 
 ### <a name="allowfastreconnecthttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-authenticationauthentication-allowfastreconnect"></a>[AllowFastReconnect](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowfastreconnect)
 
----
-|OMA-URI|［データの種類］|
-|---|---|
-|./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|整数<br/>0: 許可しません<br/>1: 許可します (既定)|
-
-### <a name="allowvpnhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-settingssettings-allowvpn"></a>[AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)
-
----
-|OMA-URI|［データの種類］|
-|---|---|
-|./Vendor/MSFT/Policy/Config/Settings/AllowVPN|整数<br/>0: 許可しません<br/>1: 許可します (既定)|
+> [!div class="mx-tableFixed"]
+> |OMA-URI|［データの種類］|
+> |---|---|
+> |./Vendor/MSFT/Policy/Config/Authentication/AllowFastReconnect|整数<br/>0: 許可しません<br/>1: 許可します (既定)|
 
 ### <a name="allowupdateservicehttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-allowupdateservice"></a>[AllowUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 
----
-|OMA-URI|［データの種類］|
-|---|---|
-|./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|整数<br/>0: 更新サービスは許可されません <br/>1: 更新サービスは許可されます (既定)。|
+> [!div class="mx-tableFixed"]
+> |OMA-URI|［データの種類］|
+> |---|---|
+> |./Vendor/MSFT/Policy/Config/Update/AllowUpdateService|整数<br/>0: 更新サービスは許可されません <br/>1: 更新サービスは許可されます (既定)。|
 
-### <a name="updateserviceurlhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-updateserviceurl"></a>[UpdateServiceURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
+### <a name="allowvpnhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-settingssettings-allowvpn"></a>[AllowVPN](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-allowvpn)
 
----
-|OMA-URI|［データの種類］|
-|---|---|
-|./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|文字列型<br/>URL: デバイスは、指定された URL にある WSUS サーバーから更新プログラムを確認します。<br/>未構成: デバイスは、Microsoft Update から更新プログラムを確認します。|
+> [!div class="mx-tableFixed"]
+> |OMA-URI|［データの種類］|
+> |---|---|
+> |./Vendor/MSFT/Policy/Config/Settings/AllowVPN|整数<br/>0: 許可しません<br/>1: 許可します (既定)|
 
 ### <a name="requireupdatesapprovalhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-requireupdateapproval"></a>[RequireUpdatesApproval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
 
----
-|OMA-URI|［データの種類］|
-|---|---|
-|./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|整数<br/>0: 構成されていません デバイスは、適用可能なすべての更新プログラムをインストールします。<br/>1: デバイスは、適用可能で、[承認された更新プログラム] リストに表示される更新プログラムのみをインストールします。 展開前にテストが必要な場合など、IT 部門がデバイス上の更新プログラムの展開を制御する場合は、このポリシーを 1 に設定します。|
+> [!div class="mx-tableFixed"]
+> |OMA-URI|［データの種類］|
+> |---|---|
+> |./Vendor/MSFT/Policy/Config/Update/RequireUpdateApproval|整数<br/>0: 構成されていません デバイスは、適用可能なすべての更新プログラムをインストールします。<br/>1: デバイスは、適用可能で、[承認された更新プログラム] リストに表示される更新プログラムのみをインストールします。 展開前にテストが必要な場合など、IT 部門がデバイス上の更新プログラムの展開を制御する場合は、このポリシーを 1 に設定します。|
+
+### <a name="scheduledinstalltimehttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-scheduledinstalltime"></a>[ScheduledInstallTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduledinstalltime)
+
+> [!div class="mx-tableFixed"]
+> |OMA-URI|［データの種類］|
+> |---|---|
+> |./Vendor/MSFT/Policy/Config/Update/ScheduledInstallTime|Integer 0-23、ここで 0=12AM および 23=11PM<br/>既定値は 3 です。|
+
+### <a name="updateserviceurlhttpsdocsmicrosoftcomwindowsclient-managementmdmpolicy-csp-updateupdate-updateserviceurl"></a>[UpdateServiceURL](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
+
+> [!div class="mx-tableFixed"]
+> |OMA-URI|［データの種類］|
+> |---|---|
+> |./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|文字列型<br/>URL: デバイスは、指定された URL にある WSUS サーバーから更新プログラムを確認します。<br/>未構成: デバイスは、Microsoft Update から更新プログラムを確認します。|
 
 ### <a name="approvedupdateshttpsdocsmicrosoftcomwindowsclient-managementmdmupdate-csp"></a>[ApprovedUpdates](https://docs.microsoft.com/windows/client-management/mdm/update-csp)
 
----
-|OMA-URI|［データの種類］|
-|---|---|
-|./Vendor/MSFT/Update/ApprovedUpdates/*GUID*<br/><br/>**重要**<br/>管理者は、エンド ユーザーの代わりに更新プログラムの EULA を読み、同意する必要があります。 この手順を怠ると、法律または契約上の義務に違反することになります。|エンド ユーザーの代理で行う更新プログラムの承認および EULA 同意のためのノード。<br/><br/>詳細については、「[Update CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp)」(CSP の更新) を参照してください。|
+> [!div class="mx-tableFixed"]
+> |OMA-URI|［データの種類］|
+> |---|---|
+> |./Vendor/MSFT/Update/ApprovedUpdates/*GUID*<br/><br/>**重要**<br/>管理者は、エンド ユーザーの代わりに更新プログラムの EULA を読み、同意する必要があります。 この手順を怠ると、法律または契約上の義務に違反することになります。|エンド ユーザーの代理で行う更新プログラムの承認および EULA 同意のためのノード。<br/><br/>詳細については、「[Update CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp)」(CSP の更新) を参照してください。|
 
 ### <a name="applicationlaunchrestrictionshttpsdocsmicrosoftcomwindowsclient-managementmdmapplocker-csp"></a>[ApplicationLaunchRestrictions](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)
 
----
-|OMA-URI|［データの種類］|
-|----|---|
-|./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br/><br/>**重要**<br/>AppLocker CSP の記事では、エスケープされた XML の例を使用しています。 Intune カスタム プロファイルを含む設定を構成するには、プレーン XML を使用する必要があります。|文字列型<br/>詳細については、「[AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)」を参照してください。|
+> [!div class="mx-tableFixed"]
+> |OMA-URI|［データの種類］|
+> |----|---|
+> |./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br/><br/>**重要**<br/>AppLocker CSP の記事では、エスケープされた XML の例を使用しています。 Intune カスタム プロファイルを含む設定を構成するには、プレーン XML を使用する必要があります。|文字列型<br/>詳細については、「[AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)」を参照してください。|
+
+### <a name="deletionpolicyhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[DeletionPolicy](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
+
+> [!div class="mx-tableFixed"]
+> |OMA-URI|［データの種類］|
+> |----|---|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/DeletionPolicy|整数<br/>0 - デバイスが現在アクティブなユーザーがいない状態に戻るとすぐに削除します<br/>1 - ストレージ容量のしきい値に達したときに削除します (既定)<br/>2 - ストレージ容量のしきい値とプロファイルの非アクティブな時間のしきい値の両方に達したときに削除します|
+
+### <a name="enableprofilemanagerhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[EnableProfileManager](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
+
+> [!div class="mx-tableFixed"]
+> |OMA-URI|［データの種類］|
+> |----|---|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/EnableProfileManager|ブール型<br/>True - 有効<br/>False - 無効 (既定)|
+
+### <a name="profileinactivitythresholdhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[ProfileInactivityThreshold](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
+
+> [!div class="mx-tableFixed"]
+> |OMA-URI|［データの種類］|
+> |----|---|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/ProfileInactivityThreshold|整数<br/>既定値は 30 です。|
+
+
+### <a name="storagecapacitystartdeletionhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[StorageCapacityStartDeletion](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
+
+> [!div class="mx-tableFixed"]
+> |OMA-URI|［データの種類］|
+> |----|---|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/StorageCapacityStartDeletion|整数<br/>既定値は 25 です。|
+
+### <a name="storagecapacitystopdeletionhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[StorageCapacityStopDeletion](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
+
+> [!div class="mx-tableFixed"]
+> |OMA-URI|［データの種類］|
+> |----|---|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/StorageCapacityStopDeletion|整数<br/>既定値は 50 です。|
 
 ## <a name="find-the-policies-you-can-configure"></a>構成できるポリシーを見つける
 

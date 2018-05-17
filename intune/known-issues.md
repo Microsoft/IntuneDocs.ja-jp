@@ -14,11 +14,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 388c9f69b6cbee1353b0e21121a47576b58b3ba6
-ms.sourcegitcommit: 407191a92ef356a3d196b6f9959b9b033190ca2c
+ms.openlocfilehash: b8ef4688a5d1a98a27a2fcb6fc5b6ce456b5fd25
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune の既知の問題
 
@@ -46,6 +46,14 @@ Intune から Azure Portal に移行すると、**All Users - b0b08746-4dbe-4a37
 Azure クラシック ポータルから移行したポリシーの状態に関する情報は、Azure Portal では表示できません。 ただし、クラシック ポータルではこれらのポリシーに関するレポートを引き続き表示できます。 移行した構成ポリシーの状態に関する情報を表示するには、Azure Portal でポリシーを再作成します。
 
 ## <a name="apps"></a>アプリ
+
+
+### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>特定の VPP アプリについてアプリのインストール プロンプトが複数回表示される
+エンド ユーザー デバイスに既にインストールされている特定の VPP アプリについて、アプリのインストール プロンプトが複数回表示されることがあります。 この問題は、Intune Azure Portal にアップロードした VPP トークンの **[アプリの自動更新]** オプションが **[オン]** に設定されている場合に発生します。    
+
+この問題を回避するには、VPP トークンの **[アプリの自動更新]** オプションを無効にします。 この操作を行うには、Azure Portal で Microsoft Intune を開きます。 Intune から **[モバイル アプリ]** > **[iOS VPP トークン]** の順に選択します。 次に、影響を受けるアプリを展開した VPP トークンを選択し、**[編集]** > **[アプリの自動更新]** > **[オフ]** > **[保存]** の順に選択します。 また、影響を受けるアプリケーションの VPP アプリケーションとしての展開を停止する方法もあります。この操作でプロンプトは表示されなくなります。    
+
+これは、現在のリリースで既知の問題です。 今後、この問題を解決する修正プログラムがリリースされる予定です。 修正が実装された場合、アプリのインストール プロンプトが複数回表示されることはなくなります。
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>iOS ボリューム購入アプリが Intune テナントの既定の言語でしか利用できない
 iOS ボリューム購入アプリが表示されても、Intune アカウントと同じ国コードに対してしか割り当てることができません。 Intune は、Intune テナント アカウントの国コードと同じ iTunes ロケールのアプリのみを同期します。 たとえば、米国のストアでのみ利用可能なアプリを購入したが、自分の Intune アカウントがドイツ語である場合、Intune ではそのアプリが表示されません。

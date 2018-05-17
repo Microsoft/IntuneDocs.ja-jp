@@ -15,11 +15,11 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 889fb53fc215763b061f5165425df7b0b9960702
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: e453cf1af0d065a367d636c3e6cc8e8ddd79cfda
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>Android デバイスに SandBlast Mobile Protect をインストールする必要があります
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 04/04/2018
 
 **必要な操作**
 
-1. 画面の一番上から下にドラッグして通知バーを開き、**[Required application – Install Skycure from Play Store]\(必要なアプリケーション – Skycure を Play ストアからインストール)** をタップします。 ポータル サイト アプリの __[Compliance Details]\(ポリシー準拠状況の詳細)__ でも確認することができます。
+1. 画面の一番上から下にドラッグして通知バーを開き、**[Required application – Install SandBlast Mobile Protect from Play Store]\(必要なアプリケーション – Play ストアから SandBlast Mobile Protect をインストール\)** をタップします。 ポータル サイト アプリの __[Compliance Details]\(ポリシー準拠状況の詳細)__ でも確認することができます。
 
 2. Play ストアの SandBlast Mobile Protect のインストール ページが表示されます。 SandBlast Mobile Protect をインストールし、**[同意する]** をタップし、SandBlast Mobile Protect がお使いのデバイスにアクセスすることを許可します。
 

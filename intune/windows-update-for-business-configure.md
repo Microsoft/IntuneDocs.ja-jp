@@ -1,22 +1,22 @@
-﻿---
+---
 title: Microsoft Intune で Windows Update for Business を構成する - Azure | Microsoft Docs
 description: Windows 10 デバイス上で Microsoft Intune を使用することにより、プロファイル内のソフトウェア更新プログラムの設定を更新プログラム リングの作成に更新し、コンプライアンスを検証し、Windows Update for Business の設定で更新プログラムを一時停止します。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/20/2018
+ms.date: 5/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 58a55c9162076af1e2e763a9799c7c1f756d80ce
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c8751572ec2c072504b2442cb7e76496e969e0a2
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-software-updates-in-intune"></a>Intune でのソフトウェア更新プログラムの管理
 
@@ -45,7 +45,7 @@ Windows Update for Business を使用して、更新管理エクスペリエン�
 
 ## <a name="before-you-start"></a>開始する前に
 
-- Windows 10 PC を更新するには、その PC で Windows Anniversary Update を含む Windows 10 Pro 以降が実行されている必要があります。
+- Windows 10 PC を更新するには、Windows Anniversary Update 付き Windows 10 Pro 以降を実行している必要があります。
 
 - Windows Update では、次の Windows 10 バージョンがサポートされています。
   - Windows 10
@@ -173,4 +173,4 @@ Windows Holographic for Business は、以下の設定をサポートします�
 
 - **自動更新動作**
 - **Microsoft 製品の更新**
-- **サービス チャネル**
+- **サービス チャネル**: **半期チャネル** オプションと**半期チャネル (対象指定)** オプションをサポートします

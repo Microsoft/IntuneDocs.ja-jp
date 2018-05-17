@@ -173,7 +173,11 @@
             - name: 登録ステータス画面
               href: windows-enrollment-status.md
         - name: Android の登録を設定する
-          href: android-enroll.md
+          items:
+            - name: Android の登録を設定する
+              href: android-enroll.md
+            - name: Samsung Knox Mobile Enrollment
+              href: android-samsung-knox-mobile-enroll.md
         - name: iOS の登録の設定
           href: ios-enroll.md
           items:
@@ -462,6 +466,8 @@
           href: conditional-access-intune-common-ways-use.md
         - name: Exchange On-premises コネクタをインストールする
           href: exchange-connector-install.md
+        - name: Exchange サービス コネクタをインストールする
+          href: exchange-service-connector-configure.md
         - name: 条件付きアクセス ポリシーの作成と割り当て
           href: conditional-access-exchange-create.md
         - name: 条件付きアクセス ポリシーを 従来の Intune ポータルから再割り当てする
@@ -511,7 +517,7 @@
                   href: mtd-device-compliance-policy-create.md
                 - name: Intune で MTD を有効にする
                   href: mtd-connector-enable.md
-        - name: 高度な脅威の防止
+        - name: Windows Defender ATP
           href: advanced-threat-protection.md
         - name: ネットワーク アクセス制御
           href: network-access-control-integrate.md
@@ -655,8 +661,6 @@
           href: app-wrapper-prepare-android.md
         - name: Android 用 Intune アプリ SDK
           href: app-sdk-android.md
-        - name: Intune App SDK Cordova プラグイン
-          href: app-sdk-cordova.md
         - name: Intune App SDK Xamarin コンポーネント
           href: app-sdk-xamarin.md
     - name: Intune データ ウェアハウスを使用する
@@ -700,7 +704,7 @@
               href: reports-ref-user-device.md
             - name: User エンティティのリファレンス
               href: reports-ref-user.md
-        - name: Intune データ ウェアハウスの アカウント データを移動する
+        - name: Intune データ ウェアハウスのアカウント データを移動する
           href: data-warehouse-account-move.md
     - name: Azure AD で Microsoft Graph の Intune API にアクセスする
       href: intune-graph-apis.md

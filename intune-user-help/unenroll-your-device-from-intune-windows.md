@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9f9051fb393c82031d581f7fec731a3b148cbf2e
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 89a69f7d5cda31658cc9faf068a2a37698fdd93c
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="remove-your-windows-device-from-intune"></a>Intune から Windows デバイスを削除する
 
@@ -61,7 +61,7 @@ ms.lasthandoff: 04/04/2018
 
 お使いの Windows デバイスでは、ポータル サイトによって 2 種類のデータが格納されます。
 
--   **診断ログ**: アプリを起動していた時間やクラッシュの発生など、Microsoft によって回収された標準的なアプリ アクティビティ データは、デバイスをポータル サイトから削除したときに自動的に消去されます。
+-   **診断ログ**: アプリを起動していた時間やクラッシュの発生など、Microsoft によって回収された標準的なアプリ アクティビティ データは、ポータル サイト アプリがアンインストールされたときに自動的に消去されます。
 -   **アプリケーション キャッシュ**: アプリが動作するには、アイコンや設定など、特定のサポート ファイルを格納する必要があります。
 
 この情報を完全に削除するには、いくつかの手順を踏む必要があります。
