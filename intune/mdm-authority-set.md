@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e15e1678fa93269eb650f8a5684091b430ebf1cd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8f903e9dfe5fb30f45806aac5694171814492f2e
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="set-the-mobile-device-management-authority"></a>モバイル デバイス管理機関の設定
 
@@ -62,6 +62,19 @@ Intune が MDM 機関として設定されると、ユーザーは個人所有�
 - **Windows** - (任意) [自動登録](windows-enroll.md)または[一括登録](windows-bulk-enroll.md)を有効にします。
 - **macOS** - (必須) [Apple MDM プッシュ証明書を取得します](apple-mdm-push-certificate-get.md)。
 
+### <a name="workflow-of-intune-administration-ui"></a>Intune 管理 UI のワークフロー
+Android または Apple デバイスの管理が有効になっていると、Intune では、それぞれのデバイスを管理するために、デバイスとユーザー情報を送信し、これらのサード パーティ サービスと統合できるようにします。
+
+データを共有することに同意するシナリオは、次の場合に含まれます。
+- Android for Work を有効にする
+- Apple MDM プッシュ通知証明書を有効にしてアップロードする
+- Device Enrollment Program、School Manager および Volume Purchasing Program など、Apple の任意のサービスを有効にする
+
+いずれの場合も、IT 管理者が Google デバイスまたは Apple デバイスを登録することを承認していることが確認されているなど、モバイル デバイス管理サービスを実行することと同意は厳密に関連しています。 新しいワークフローが公開されたとき、どの情報が共有されるかを示すドキュメントは、次の場所から入手することができます。
+- [Intune から Google に送られるデータ](https://aka.ms/Data-intune-sends-to-google)
+- [Intune から Apple に送られるデータ](https://aka.ms/data-intune-sends-to-apple)
+
+Microsoft の GDPR コンプライアンスの詳細については、「[Trust Center - GDPR コンプライアンス ソリューションを見つける](https://aka.ms/trust_center_info)」を参照してください。
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>MDM 証明書の有効期限が切れた後のモバイル デバイスのクリーンアップ
 

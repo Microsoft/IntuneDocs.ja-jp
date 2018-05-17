@@ -5,7 +5,7 @@ description: Microsoft Intune で Windows 情報保護 (WIP) アプリ保護ポ�
 keywords: ''
 author: msmimart
 ms.author: mimart
-manager: doubeby
+manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
 ms.prod: ''
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7273a29eea9cd9b55e998302de2bc57d26d34e04
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f08dde25de5962eaaa11487a367b2895c6c047d4
+ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 
@@ -33,7 +33,7 @@ WIP ポリシーを追加するときのいくつかの概念について理解�
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>許可されているアプリと適用から除外されるアプリの一覧
 
--   **[許可されているアプリ]**: このポリシーに準拠する必要があるアプリです。
+-   **[Protected apps]\(保護されたアプリ\)**: このポリシーに準拠する必要があるアプリです。
 
 -   **[適用から除外されるアプリ]**: これらのアプリはこのポリシーから除外され、制限なしに企業データにアクセスできます。
 
@@ -63,7 +63,7 @@ WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを
 2. **[すべてのサービス]** > **[Intune]** の順に選択します。
 3. **[Microsoft Intune]** ブレードで、**[モバイル アプリ]** を選択します。
 4. **[モバイル アプリ]** ブレードで、**[アプリ保護ポリシー]** を選択します。
-5. **[ポリシーの追加]** をクリックして、**[ポリシーの追加]** ブレードを表示します。
+5. **[ポリシーの追加]** を選択して、**[ポリシーの追加]** ブレードを表示します。
 6. 次の値を追加します。
     - **[名前]:** (必須) 新しいポリシーの名前を入力します。
     - **[説明]:** (省略可能) 説明を入力します。
@@ -71,7 +71,7 @@ WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを
     - **[登録の状態]:** ポリシーの登録状態として、**[未登録]** を選択します。
 7.  **[作成]** を選択します。 ポリシーが作成されて、**[アプリ保護ポリシー]** ブレードのテーブルに表示されます。
 
-## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>許可されているアプリの一覧におすすめのアプリを追加するには
+## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>おすすめのアプリを保護されたアプリの一覧に追加するには
 
 1. **[Microsoft Intune]** ブレードで、**[モバイル アプリ]** を選択します。
 2. **[モバイル アプリ]** ブレードで、**[アプリ保護ポリシー]** を選択します。
@@ -82,7 +82,7 @@ WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを
 7. **[OK]** をクリックします。 **[Protected apps]\(保護されたアプリ\)** ブレードが更新され、選択したすべてのアプリが表示されます。
 8. **[Save]**(保存) をクリックします。
 
-## <a name="add-a-store-app-to-your-allowed-apps-list"></a>許可されているアプリの一覧にストア アプリを追加する
+## <a name="add-a-store-app-to-your-protected-apps-list"></a>ストア アプリを保護されたアプリの一覧に追加する
 
 **ストア アプリを追加するには**
 1. **[Microsoft Intune]** ブレードで、**[モバイル アプリ]** を選択します。
@@ -95,7 +95,7 @@ WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを
 9. **[OK]** をクリックします。 **[Protected apps]\(保護されたアプリ\)** ブレードが更新され、選択したすべてのアプリが表示されます。
 10. **[Save]**(保存) をクリックします。
 
-## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>許可されているアプリの一覧にデスクトップ アプリを追加する
+## <a name="add-a-desktop-app-to-your-protected-apps-list"></a>デスクトップ アプリを保護されたアプリの一覧に追加する
 
 **デスクトップ アプリを追加するには**
 1. **[Microsoft Intune]** ブレードで、**[モバイル アプリ]** を選択します。
@@ -118,7 +118,7 @@ WIP の学習は、WIP が有効なアプリおよび WIP にとって不明な�
 <!-- 1631908 -->
 WIP が有効になっているアプリの情報を表示できるだけでなく、作業データを Web サイトで共有しているデバイスの概要も表示できます。 この情報を使用して、グループおよびユーザーの WIP ポリシーに追加する Web サイトを判断できます。 概要には、WIP が有効なアプリからアクセスされる Web サイトの URL が示されます。
 
-WIP が有効なアプリおよび WIP にとって不明なアプリを使うとき、最初は **[サイレント]** または **[上書きの許可]** を使用し、許可されているアプリの一覧に適切なアプリが含まれる小規模なグループで確認することをお勧めします。 それが済んだ後、最終的な適用ポリシーである **[ブロック]** に変更できます。
+WIP が有効なアプリおよび WIP にとって不明なアプリを使用する場合は、まず、**[サイレント]** または **[上書きの許可]** を使用し、保護されたアプリの一覧に適切なアプリが含まれる小規模なグループで確認することをお勧めします。 それが済んだ後、最終的な適用ポリシーである **[ブロック]** に変更できます。
 
 ### <a name="what-are-the-protection-modes"></a>保護モードの種類
 

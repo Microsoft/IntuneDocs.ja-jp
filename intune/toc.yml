@@ -170,8 +170,6 @@
               href: windows-bulk-enroll.md
             - name: Windows AutoPilot Deployment プログラム
               href: enrollment-autopilot.md
-            - name: 登録ステータス画面
-              href: windows-enrollment-status.md
         - name: Android の登録を設定する
           items:
             - name: Android の登録を設定する
@@ -310,6 +308,8 @@
                       href: app-protection-policy-settings-android.md
                     - name: iOS の設定
                       href: app-protection-policy-settings-ios.md
+                    - name: データ転送の例外
+                      href: app-protection-policies-exception.md
                 - name: アプリ保護ポリシーを検証する
                   href: app-protection-policies-validate.md
                 - name: アプリ保護のユーザーの状態を監視する
