@@ -17,15 +17,18 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f3948ca1dd68e34997a21444f271ae31407d6508
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ea17263ebd6e836cad154ff2b67229c1c3ae0ed6
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>会社のサポートに、ポータル サイト アプリから Windows 10 のログを送信する
 
 Windows 10 デバイスでポータル サイト アプリを使用している間にエラーが発生した場合は、会社のサポートが問題のトラブルシューティングを行う際に役立つようにエラーに関する情報を電子メールで送信することができます。 この情報は、デバイスの _diagnostic log_ という名前の特殊なドキュメントに保存されています。
+
+> [!Note]       
+> ユーザーが問題に関するヘルプを入手するワークフローを開始すると、Windows 10 用 Intune ポータル サイトは Microsoft に直接アプリのログを送信するようになります。 これにより、Microsoft に問題を送ってすばやくトラブルシューティングして解決できます。
 
 1. **ポータル サイト** アプリを開きます。
 2. **[設定]** ギアを選択し、**[ログの送信]** を選択します。

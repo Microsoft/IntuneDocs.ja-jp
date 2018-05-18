@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 834eb66e21820880f644c33d7e5d6aedad6bd502
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: f67ccf1c2fb3b708916ef4ed4209bd3be07d9a5e
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune で SCEP 証明書を構成して使用する
 
@@ -304,6 +304,9 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 6. 証明書コネクタのクライアント証明書の入力を求められたら、**[選択]** を選択し、タスク 3 で NDES サーバーにインストールした**クライアント認証**証明書を選択します。
 
     クライアント認証証明書を選択した後、**[Microsoft Intune 証明書コネクタのクライアント証明書]** 画面に戻ります。 選択した証明書は表示されませんが、**[次へ]** を選択してその証明書のプロパティを表示します。 **[次へ]** を選択して、**[インストール]** を選択します。
+    
+    > [!IMPORTANT]
+    > Intune 証明書コネクタは、Internet Explorer セキュリティ強化の構成が有効になっているデバイスでは登録できません。 Intune 証明書コネクタを使うには、[IE セキュリティ強化の構成を無効にします](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx)。
 
 7. ウィザードが完了した後、ウィザードを閉じる前に、**証明書コネクタの UI を起動**します。
 

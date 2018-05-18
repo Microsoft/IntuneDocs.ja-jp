@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 374c3937d04fd546c17d6f147609f448875dddba
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: eb87d75512d9f04abac9db256d0d968bb85116ef
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>iOS を実行するデバイス用に Microsoft Intune で VPN 設定を構成する
 
@@ -31,8 +31,12 @@ ms.lasthandoff: 04/18/2018
 - **[接続名]**: この接続の名前を入力します。 エンド ユーザーがデバイスで利用可能な VPN 接続の一覧を参照するときに、この名前が表示されます。
 - **[IP アドレスまたは FQDN]**: デバイスが接続する VPN サーバーの IP アドレスまたは完全修飾ドメイン名 (FQDN) を入力します。 たとえば、「**192.168.1.1**」や「**vpn.contoso.com**」などと入力します。
 - **[認証方法]**: VPN サーバーに対するデバイスの認証方法として、以下のいずれかを選択します。
-  - **[証明書]**: **[認証証明書]** で、接続を認証するための既存の SCEP または PKCS 証明書プロファイルを選択します。 [証明書の構成](certificates-configure.md)に関するページでは、証明書プロファイルについてのガイダンスが提供されています。
+  - **[証明書]**: **[認証証明書]** で、接続を認証するための既存の SCEP または PKCS 証明書プロファイルを選択します。 「[証明書の構成](certificates-configure.md)」では、証明書プロファイルについてのガイダンスが提供されています。
   - **[ユーザー名とパスワード]**: エンド ユーザーは VPN サーバーにサインインするためにユーザー名とパスワードを入力する必要があります。
+
+    > [!NOTE]
+    > Cisco IPsec VPN の認証方法としてユーザー名とパスワードが使われている場合は、カスタム Apple Configurator プロファイルで SharedSecret を配布する必要があります。
+  
 - **[接続の種類]**: 以下のベンダーのリストから VPN 接続の種類を選択します。
   - **Check Point Capsule VPN**
   - **Cisco AnyConnect**

@@ -5,129 +5,138 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/19/2017
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
+ms.assetid: ''
 searchScope:
 - User help
 ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e8b8b1e4ffd4e58b5f3cc1b9acfc004f4b97b40b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: aa556b2939986759aa92e63750fd161c05afbc38
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="sync-your-windows-device-manually"></a>Windows デバイスを手動で同期する
 
-Windows デバイスにアプリをインストールしようとしたとき、予想より長くかかることがあります。 その場合は、手動で Windows デバイスの同期を試みることができます。 同期すると、インストールが速くなる可能性があります。
+アプリのインストールの速度が理想より遅いときは、手動によるデバイスの同期を開始します。手動同期を行うと、最新の更新プログラムと通信のためにデバイスが Intune と強制的に接続されます。 デバイスの同期が完了した後、インストールの速度が向上する可能性があります。
 
-> [!Note]
-> 低速のネットワークを使っている場合、または同時に多数のデバイスにコンテンツをダウンロードする場合は、アプリのインストールに少し時間がかかることがあります。
+Intune は、Intune ポータル サイト アプリとデバイス設定アプリからの手動同期をサポートします。 
 
-次のバージョンの Windows は手動で同期できます。 残念ながら、他のバージョンの Windows をデバイスが使っている場合は、手動同期を開始できません。
+Intune ポータル サイト アプリの機能は、Creators Update (1703) 以降を実行する Windows 10 デバイスでサポートされます。 
+* [Intune ポータル サイト アプリからの同期](#Sync-from-Company-Portal-app-for-Windows)  
 
-* [Windows 10 Desktop を同期する](#windows-10-desktop)
-* [Windows 10 Mobile を同期する](#windows-10-mobile)
-* [Windows Phone 8.1 を同期する](#windows-phone-81)
+次のようなすべての Windows デバイスをデバイス設定アプリから同期できます。
 
-## <a name="windows-10-desktop"></a>Windows 10 Desktop
-Windows 10 には複数のバージョンがあるため、2 つの手順があります。 スクリーンショットを確認し、お使いのデバイスの表示画面に近い方の手順に従ってください。
+* [Windows 10 デスクトップ](#windows-10-desktop)  
+* [Microsoft HoloLens](#microsoft-hololens)   
+* [Windows 10 Mobile](#windows-10-mobile)  
+* [Windows Phone 8.1](#windows-phone-81)    
 
-1. **[スタート]** ボタンを選択し、**[設定]** を選択します。
+## <a name="sync-from-company-portal-app-for-windows"></a>Windows 用 Intune ポータル サイト アプリから同期する
+Creators Update (バージョン 1703) 以降を実行する Windows 10 デバイスを手動で同期するには、次の手順のようにします。
 
-    ![[スタート] ボタン](./media/win10pc-sync-1-start-button.png)
+1.  デバイス上でポータル サイト アプリを開きます。
 
-2. **[設定]** ページで、**[アカウント]** をクリックします。
+2.  **[設定]** > **[同期]** を選びます。
 
-    ![[設定] ページの [アカウント] の選択](./media/win10pc-sync-2-settings-accounts.png)
+    ![[設定] が強調表示された Intune ポータル サイト アプリのホーム ページのスクリーンショット](./media/RS1_homePage_settings_04.png)  
+    
+    ![[同期] ボタンが強調表示された Intune ポータル サイト アプリの設定ページのスクリーンショット](./media/RS1_settingspage_sync05.png)    
 
-3. 次の 2 つの画面を見て、お使いのデバイスの表示画面に似ている方をご確認ください。 お使いのデバイスの表示画面に対応する手順に従います。
+## <a name="sync-from-settings-app"></a>設定アプリから同期する 
+Microsoft HoloLens、Windows 10 Desktop、Windows 10 Mobile、または Windows Phone 8.1 のデバイスを設定アプリから手動で同期するには、次の手順のようにします。
 
-    [職場または学校にアクセスする] の画面が表示されている場合は、「[[職場または学校にアクセスする] が表示されている場合の手順](#steps-to-follow-if-you-see-access-work-or-school)」にある指示に従います。
+### <a name="windows-10-desktop"></a>Windows 10 Desktop
+1. お使いのデバイスで、**[スタート]** > **[設定]** を選びます。
 
-    ![[職場または学校にアクセスする] が表示されている場合の同期手順](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+2. **[アカウント]** を選択します。
 
-    [職場のアクセス] の画面が表示されている場合は、「[[職場のアクセス] が表示されている場合の手順](#steps-to-follow-if-you-see-work-access)」にある指示に従います。
+    ![[設定] ページの [アカウント] の選択](./media/win10pc-sync-2-settings-accounts.png)  
+
+3. デスクトップ用 Windows 10 には複数のバージョンが存在します。 実際の画面を以下のスクリーンショットと比較し、使用する手順を決定してください。 
+
+    * 画面に **[職場または学校にアクセスする]** と表示される場合は、「[[職場または学校にアクセスする] の手順](#access-work-or-school)」に進みます。
+
+    ![設定アプリの [職場または学校にアクセスする] オプション](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
+
+    * 画面に **[職場のアクセス]** と表示される場合は、「[[職場のアクセス] の手順](#work-access)」に進みます。  
 
     ![アカウントの種類として職場のアクセスを選択する](./media/win10pc-sync-3-work-access.png)
 
-### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>[職場または学校にアクセスする] が表示されている場合の手順
+#### <a name="access-work-or-school-steps"></a>[職場または学校にアクセスする] の手順
 
-1. **[アカウント]** ページで、**[職場または学校にアクセスする]** を選択します。
+1. **[職場または学校にアクセスする]** をクリックします。
 
-    ![[職場または学校にアクセスする] を選択する](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+    ![[職場または学校にアクセスする] オプションを示すスクリーンショット](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-2. 職場または学校のアカウントを選択します。 会社のサポートが行った設定に応じて、以下に示す例のような 2 種類のアカウントが表示されます。 1 つのアカウントの横にはブリーフケースがあり、もう 1 つのアカウントの横には Microsoft のロゴがあります。
-
-   - ブリーフケースが表示されているアカウントがある場合はそれを選択し、その下に **[情報]** ボタンが表示されていることを確認します。
-   - Microsoft のロゴが表示されているアカウントしかない場合はそのアカウントを選択して、その下に **[情報]** ボタンが表示されていることを確認します。
+2. 横にブリーフケース アイコンが表示されたアカウントを選びます。 このアカウントがまったく表示されない場合は、会社での設定の構成方法が異なる可能性があります。 代わりに、横に Microsoft ロゴが表示されたアカウントをクリックします。
 
      ![ブリーフケースまたは Microsoft のロゴの横にあるアカウント名を選択する](./media/win10pc-rs1-sync-info-button.png)
 
-3. **[情報]** ボタンを選択します。 次の例のようなダイアログ ボックスが開きます。
+3. **[情報]** をクリックします。 
 
-    ![ブリーフケースまたは Microsoft のロゴの横にあるアカウント名を選択する](./media/win10pc-rs1-sync-button.png)
+4. **[同期]** をクリックします。 
 
-4. **[同期]** ボタンを選択します。 デバイスと Intune が同期されます。
+#### <a name="work-access-steps"></a>[職場のアクセス] の手順
 
-### <a name="steps-to-follow-if-you-see-work-access"></a>[職場のアクセス] が表示されている場合の手順
-
-1. **[アカウント]** ページで、**[職場のアクセス]** を選択します。
+1.  **[職場のアクセス]** をクリックします。
 
     ![アカウントの種類として職場のアクセスを選択する](./media/win10pc-sync-3-work-access.png)
 
-2. **[Enroll in to device management]** (デバイス管理に登録する) セクションで、会社名を選択します。
+2. **[デバイス管理に登録する]** で、会社の名前を選びます。
 
     ![デバイス管理の会社名の選択](./media/win10pc-sync-4-tap-com-name.png)
 
-3. **[同期]** ボタンを選択します。
+3. **[同期]** をクリックします。同期が完了するまで、ボタンは無効のままです。
 
-    ![[同期] ボタンの選択](./media/win10pc-sync-5-tap-sync.png)
+    ![[同期] ボタンの選択](./media/win10pc-sync-5-tap-sync.png)  
 
-   同期が完了するまで、このボタンは灰色表示になります。
 
 ### <a name="windows-10-mobile"></a>Windows 10 Mobile
-アプリのインストールを高速化するために Windows 10 Mobile デバイスを手動で同期するには:
 
-   1. **[すべてのアプリ]** > **[設定]** > **[アカウント]** の順にタップします。
+   1. お使いのデバイスで、**[すべてのアプリ]** > **[設定]** > **[アカウント]** の順に移動します。
 
        ![[設定] 画面の [アカウント] の選択](./media/win10m-sync-1-settings-accounts.png)
 
-   2. **[職場のアクセス]** を選択します。
+   2. **[職場のアクセス]** を選びます。
 
        ![アカウントの種類として職場のアクセスを選択する](./media/win10m-sync-2-work-access.png)
 
-   3. **[デバイス管理に登録する]** で、会社名を選択します。
+   3. **[デバイス管理に登録する]** で、会社名を選びます。
 
        ![デバイス管理の会社名の選択](./media/win10m-sync-3-tap-comp-name.png)
 
-   4. **[同期]** アイコンを選択します。
+   4. **[同期]** アイコンを選びます。 同期が完了するまで、ボタンは無効のままです。
 
-       ![[同期] アイコンの選択](./media/win10m-sync-4-tap-sync.png)
+       ![[同期] アイコンの選択](./media/win10m-sync-4-tap-sync.png)  
+### <a name="microsoft-hololens"></a>Microsoft HoloLens  
+以下の手順は、Windows 10 Anniversary Update (RS1 とも呼ばれます) を実行する HoloLens デバイスに適用されます。 
+1.  デバイスで設定アプリを開きます。  
 
-       画面の上部に、"アカウントを同期中" というメッセージが表示されます。 同期が完了するまで、**[同期]** ボタンは灰色表示になります。
+2.  **[アカウント]** > **[職場のアクセス]** を選びます。  
+    ![アカウント リンクが強調表示された HoloLens 設定アプリのスクリーンショット](./media/RS1_holoLens_SettingsRS1_Accounts_06.png)  
 
-## <a name="windows-phone-81"></a>Windows Phone 8。1
-アプリのインストールを高速化するために Windows Phone 8.1 デバイスを手動で同期するには:
+3.  接続されたアカウントの **[同期]** を選びます。![[同期] ボタンが強調表示された HoloLens 設定アプリのスクリーンショット](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
+
+### <a name="windows-phone-81"></a>Windows Phone 8。1
 
 1. **[すべてのアプリ]** > **[設定]** > **[会社アカウント]** の順にタップします。
 
     ![設定の一覧](./media/wp81-1-sync-settings-workplace.png)
 
-2. 会社名を選択します。
+2. 会社の名前を選びます。
 
     ![職場のアカウントの会社名の選択](./media/wp81-2-sync-tap-compname.png)
 
-3. **[同期]** アイコンを選択します。
+3. **[同期]** アイコンを選びます。
 
     ![[同期] アイコンの選択](./media/wp81-3-sync-tap-sync-button.png)
-
-   デバイスで同期が完了するまでの間、画面の上部に、"アカウントを同期中" というメッセージが表示されます。
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
