@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/02/2018
+ms.date: 05/08/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 9004441a41c5e7458447b5c5f7e1d91e630bd412
-ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
+ms.openlocfilehash: e677e15d1e4ee688a826683ecd1d8d68620d2796
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -40,6 +40,18 @@ ms.lasthandoff: 05/07/2018
   ### Role-based access control
 
 -->   
+
+## <a name="week-of-may-7-2018"></a>2018 年 5 月 7 日の週
+
+### <a name="app-management"></a>アプリ管理
+
+#### <a name="samsung-knox-mobile-enrollment-support---1112863--"></a>Samsung Knox Mobile Enrollment のサポート <!--1112863-->
+
+Knox Mobile Enrollment (KME) で Intune を使用すると、企業が所有する多数の Android デバイスを登録できます。 WiFi または移動体通信ネットワークのユーザーは、初めてデバイスをオンにしたときに、ほんの数タップで登録できます。 Knox Deployment App を使うと、Bluetooth または NFC を使ってデバイスを登録することもできます。 詳しくは、「[Samsung の Knox Mobile Enrollment を使用して Android デバイスを自動的に登録する](android-samsung-knox-mobile-enroll.md)」をご覧ください。
+
+#### <a name="requesting-help-in-the-company-portal-for-windows-10----1874137---"></a>Windows 10 用 Intune ポータル サイトでのヘルプの要求 <!-- 1874137 -->
+
+ユーザーが問題に関するヘルプを入手するワークフローを開始すると、Windows 10 用 Intune ポータル サイトは Microsoft に直接アプリのログを送信するようになります。 これにより、Microsoft に問題を送ってすばやくトラブルシューティングして解決できます。
 
 ## <a name="week-of-april-23-2018"></a>2018 年 4 月 23 日の週
 
@@ -369,12 +381,21 @@ Intune での展開チャネルの作成の詳細については、「[ソフト
 
 #### <a name="company-portal-enrollment-improved----1874230-eeready--"></a>会社ポータルの登録の機能強化 <!-- 1874230 eeready-->
 Windows 10 ビルド 1703 以降の Intune ポータル サイトを使ってデバイスを登録するユーザーは、アプリを離れることなく登録の最初の手順を完了できるようになりました。
-
 #### <a name="hololens-and-surface-hub-now-appear-in-device-lists---1725868---"></a>HoloLens と Surface Hub がデバイス リストに表示されるようになった <!--1725868 -->
 Intune に登録された HoloLens および Surface Hub のデバイスを Android 用ポータル サイト アプリに表示するためのサポートが追加されました。
 
 #### <a name="custom-book-categories-for-volume-purchase-progream-vpp-ebooks----1488911---"></a>ボリューム購入プログラム (VPP) 電子ブックのカスタム ブック カテゴリ <!-- 1488911 -->
-電子ブックのカスタム カテゴリを作成し、VPP の電子ブックをカスタム電子ブック カテゴリに割り当てることができます。 エンド ユーザーは、新しく作成された電子ブック カテゴリとそのカテゴリに割り当てられているブックを見ることができます。 詳細については、「[Microsoft Intune によるボリューム購入アプリとブックの管理](vpp-apps.md)」を参照してください。
+電子ブックのカスタム カテゴリを作成し、VPP の電子ブックをカスタム電子ブック カテゴリに割り当てることができます。 エンド ユーザーは、新しく作成された電子ブック カテゴリとそのカテゴリに割り当てられているブックを見ることができます。 詳細については、「[Microsoft Intune によるボリューム購入アプリとブックの管理](vpp-apps.md)」を参照してください。  
+
+#### <a name="support-changes-for-company-portal-app-for-windows-send-feedback-option----2070166---"></a>Windows 用 Intune ポータル サイト アプリのフィードバック送信オプションのサポートの変更 <!-- 2070166 -->
+2018 年 4 月 30 日以降、Windows 用 Intune ポータル サイト アプリの **[フィードバックの送信]** オプションは、Windows 10 Anniversary Update (1607) 以降を実行するデバイスでのみ動作します。 次の Windows で Intune ポータル サイト アプリを使用している場合、フィードバック送信オプションはサポートされません。  
+- Windows 10、1507 リリース  
+- Windows 10、1511 リリース  
+- Windows Phone 8。1 
+
+お使いのデバイスが Windows 10 RS1 以降を実行している場合は、Store から最新バージョンの Windows 用 Intune ポータル サイト アプリをダウンロードしてください。 サポートされないバージョンを実行している場合は、引き続き次のチャネルでフィードバックを送信してください。 
+- Windows 10 のフィードバック ハブ アプリ
+- WinCPfeedback@microsoft.com へのメール  
 
 #### <a name="new-windows-defender-application-guard-settings----1631890---"></a>Windows Defender Application Guard の新しい設定 <!-- 1631890 -->
 
@@ -1110,23 +1131,6 @@ Intune Azure Portal で Windows 10 1709 以降 (RS3 以降) のデスクトッ�
 Intune アプリ保護サービス ブレードの代わりにお気に入りとして登録し、Intune のモバイル アプリ ブレードのアプリ保護ポリシーのワークフローを習熟してください。 リダイレクトを短期間行い、その後アプリ保護ブレードを削除します。 ただし、すべてのアプリ保護ポリシーが既に Intune にあり、[https://aka.ms/azuread_ca](https://aka.ms/azuread_ca) にあるドキュメントに従って、任意の条件付きアクセス ポリシーを変更できます。
 
 **追加情報**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
-
-### <a name="plan-for-change-windows-company-portal-send-feedback-option-may-no-longer-work"></a>変更の計画: Windows ポータル サイトの [フィードバックの送信] オプションは今後機能しない場合がある  
-Windows ポータル サイト アプリには、アプリに関するフィードバックを Microsoft に送信できるように **[フィードバックの送信]** オプションがあります。 2018 年 4 月 30 日から、Windows 10 1607 (Anniversary Update) 以降を実行している Windows 10 ポータル サイト アプリでのみ、このオプションが引き続きサポートされます。  
-
-#### <a name="how-does-this-affect-me"></a>ユーザーへの影響  
-エンド ユーザーに Windows ポータル サイト アプリをインストールしていない場合、このメッセージは無視してください。 エンド ユーザーの中にポータル サイト アプリをインストールしている人がいる場合、次のシナリオにおいて、4 月 30 日から **[フィードバックの送信]** ボタンが機能しなくなることに注意してください。  
-- Windows 10 のリリース 1507 および 1511 リリースで使用する場合の Windows 10 ポータル サイト アプリ  
-- Windows Phone Windows 8.1 ポータル サイト アプリ  
-
-影響を受けるデバイスの場合、**[フィードバックの送信]** オプションは機能せず、再試行でも動作しません。 影響を受けるデバイスで発生した現象について Microsoft にフィードバックを送信するには、以下に一覧した代替フィードバック チャネルをご利用ください。  
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備  
-ユーザーにこの変更を通知し、必要に応じてユーザー ガイダンスを更新してください。 Windows Phone 8.1、Windows 10 1507、Windows 10 1511 でポータル サイトを利用しているエンド ユーザーに 2 つの代替フィードバック チャネルを利用できることをお知らせください。 代替フィードバック方法:  
-- Windows 10 でフィードバック ハブ アプリを使用する
-- WinCPfeedback@microsoft.com に電子メールを送信する  
-
-Windows 10 RS1 以降を利用しているエンド ユーザーに Microsoft Store で入手できる Windows ポータル サイトの最新版に更新するように要請します。
 
 ### <a name="plan-for-change-change-in-support-for-the-microsoft-intune-app-sdk-for-cordova-plugin"></a>変更計画: Microsoft Intune App SDK for Cordova プラグインのサポートでの変更
 Intune による [Microsoft Intune App SDK Cordova プラグイン](app-sdk-cordova.md)のサポートは、2018 年 5 月 1 日で終了します。 代わりに Intune アプリ ラッピング ツールを使って、Cordova ベースのアプリの Intune での管理性と可用性の準備をすることをお勧めします。 この変更が有効になると、Microsoft Intune APP SDK for Cordova プラグインは保守されたり更新プログラムを受け取ったりしなくなります。 アプリ開発者はこのプラグインを使えなくなります。 Intune は、Cordova でのアプリ構築のサポートを続ける予定です。 ただし、Microsoft Intune APP SDK for Cordova プラグインを使って作成されたアプリは、Intune での機能が制限されるようになります。 Intune アプリ ラッピング ツールでラップした後は、通常どおりにアプリをエンド ユーザーに展開できます。 Google Play Store にリリースされた Cordova ベースの Android アプリの場合:

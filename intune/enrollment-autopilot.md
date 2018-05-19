@@ -42,8 +42,8 @@ CSV ファイルの情報をインポートすることにより、Windows AutoP
 ## <a name="synchronize-devices"></a>デバイスを同期する
 登録済みデバイスを Intune と同期して、構成できるようにします。
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
+2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** の **[デバイスの登録]** を選択します。
 4. **[Windows の登録]** を選択し、**[Windows AutoPilot Deployment プログラム]** セクションで、**[デバイス]** を選択します。
 5. **[同期]** をクリックして、登録済みデバイスをインポートします。 同期が進行中であることを示すメッセージが表示されます。
@@ -51,8 +51,8 @@ CSV ファイルの情報をインポートすることにより、Windows AutoP
 
 ## <a name="create-an-autopilot-deployment-profile"></a>AutoPilot Deployment プロファイルを作成する
 AutoPilot Deployment プロファイルは、AutoPilot デバイスを構成する場合に使用されます。
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
+2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** の **[デバイスの登録]** を選択します。
 4. **[Windows の登録]** を選択し、**[Windows AutoPilot Deployment プログラム]** セクションで、**[デプロイ プロファイル]** を選択します。
 5. **[プロファイルの作成]** を選択して、名前と説明 (オプション) を選択します。
@@ -78,8 +78,8 @@ AutoPilot Deployment プロファイルは、AutoPilot デバイスを構成す�
 ## <a name="assign-an-autopilot-deployment-profile"></a>AutoPilot Deployment プロファイルを割り当てる
 AutoPilot Deployment プロファイルを作成したら、それを選択したデバイスに割り当てることができます。
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
+2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** の **[デバイスの登録]** を選択します。
 4. **[Windows の登録]** を選択し、**[Windows AutoPilot Deployment プログラム]** セクションで、**[デバイス]** を選択します。
 5. デプロイ プロファイルを割り当てるデバイスを選択します。 **[プロファイルの状態]** 列をフィルターすることで、割り当てられているプロファイルのないデバイスを簡単に見つけることができます。
@@ -95,8 +95,8 @@ AutoPilot Deployment プロファイルをデバイスに割り当てた後で�
 ## <a name="edit-an-autopilot-deployment-profile"></a>AutoPilot Deployment プロファイルを編集する
 AutoPilot Deployment プロファイルを作成したら、デプロイ プロファイルの特定の部分を編集することができます。   
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
+2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** の **[デバイスの登録]** を選択します。
 4. **[Windows の登録]** の **[Windows AutoPilot Deployment プログラム]** セクションで、**[デプロイ プロファイル]** を選択します。
 5. 編集するプロファイルを選択します。
@@ -117,8 +117,8 @@ AutoPilot Deployment プロファイルを作成したら、デプロイ プロ�
 ## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Windows AutoPilot の未割り当てデバイスのアラート <!-- 163236 -->
 Windows AutoPilot の未割り当てデバイスのアラートを表示し、AutoPilot プログラムからのデバイスで、AutoPilot 展開プロファイルが割り当てられていないデバイスの数を確認できます。 アラート内の情報を利用してプロファイルを作成し、未割り当てデバイスに割り当てます。 アラートをクリックすると、Windows AutoPilot の完全一覧とそれらに関する詳細が表示されます。
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
+2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** の **[デバイスの登録]** を選択します。
 4. アラートを表示するには、**[概要]** を選択します。 アラートをクリックすると、AutoPilot デバイスの一覧が表示されます。  
 
