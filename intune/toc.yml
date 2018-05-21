@@ -168,6 +168,8 @@
               href: windows-enroll.md
             - name: 一括登録
               href: windows-bulk-enroll.md
+            - name: 登録状態ページ
+              href: windows-enrollment-status.md
             - name: Windows AutoPilot Deployment プログラム
               href: enrollment-autopilot.md
         - name: Android の登録を設定する
