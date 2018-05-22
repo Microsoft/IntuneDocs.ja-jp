@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/19/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dbd4be551365c1dd65aea8e9270df5f6b6263f89
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 0304d90384bb2f6a5a78dd14bcf289fc8eb03bd1
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>macOS の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法
 
@@ -56,8 +56,8 @@ Mac 用の Intune アプリ ラッピング ツールを使って、Mac アプ�
 
 ## <a name="step-2---specify-the-software-setup-file"></a>ステップ 2 - ソフトウェア設定ファイルを指定する
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
+2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[モバイル アプリ]** を選択します。
 4. **[モバイル アプリ]** ワークロードで、**[管理]** > **[アプリ]** の順に選択します。
 5. アプリの一覧の上にある **[追加]** を選択します。

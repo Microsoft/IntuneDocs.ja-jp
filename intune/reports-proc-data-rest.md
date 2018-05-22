@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5ba065b53560a4e1d3f1fffbe6cea56e85da0f06
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0187555a087f6ca8ab391b839f2c905181c33cb6
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST クライアントを使用して Intune データ ウェアハウス API からデータを取得する
 
@@ -37,7 +37,7 @@ RESTful エンドポイント経由で Intune データ ウェアハウスのデ
 
 Azure でネイティブ アプリを作成します。 このネイティブ アプリはクライアント アプリです。 ローカル コンピューターで実行されるクライアントは、ローカル クライアントが資格情報を要求するとき、Intune データ ウェアハウス API を参照します。
 
-1. テナントの Azure Portal にサインインします。 **[Azure Active Directory]**、**[アプリの登録]** の順に選択し、**[アプリの登録]** ウィンドウを開きます。
+1. テナントの Azure Portal にサインインします。 **[Azure Active Directory]**、 > **[アプリの登録]** の順に選択し、**[アプリの登録]** ウィンドウを開きます。
 2. **[New app registration]\(新しいアプリの登録\)** を選択します。
 3. アプリの詳細を入力します。
     1.  「Intune データ ウェアハウス クライアント」など、わかりやすい名前を **[名前]** に入力します。
@@ -91,8 +91,8 @@ Postman を使用して REST 呼び出しを行うには、次の情報が必要
 
 エンドポイントも必要です。 データ ウェアハウス エンドポイントを取得するには、カスタム フィード URL が必要です。 OData エンドポイントはデータ ウェアハウス ウィンドウから取得できます。
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
+2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[その他のタスク]** の **[Intune データ ウェアハウスの設定]** を選択します。
 4. **[サード パーティのレポート サービスを使用する]** のカスタム フィード URL をコピーします。 これは次のようになります。`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 

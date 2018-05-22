@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/12/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d7166563-6bb5-4624-b8c8-6b300a997c3a
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e926d3d9e9dfbf6025fb36fd54e64f28b662fc89
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 85632ffe74b3973f4e87c77933b17f522c991caf
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Intune データ ウェアハウス アプリケーションのみの認証
 
@@ -73,7 +73,7 @@ Azure Active Directory (Azure AD) では、OAuth 2.0 を使用して Azure AD �
 このセクションでは、アプリケーションにアクセス許可を付与します。
 
 1.  **[設定]** ブレードで **[必要なアクセス許可]** を選択します。
-2.  **[追加]**をクリックします。
+2.  **[追加]** をクリックします。
 3.  **[API の追加]** を選択して **[API の選択]** ブレードを表示します。
 4.  **[Microsoft Intune API (MicrosoftIntuneAPI)]** を選択し、**[API の選択]** ブレードで **[選択]** をクリックします。 **[アクセス許可の選択]** 手順が選択され、**[アクセスの有効化]** ブレードが表示されます。
 5.  **[アプリケーションのアクセス許可]** セクションで、**[Get data warehouse information from Microsoft Intune]\(Microsoft Intune からデータ ウェアハウスの情報を取得する\)** オプションを選択します。

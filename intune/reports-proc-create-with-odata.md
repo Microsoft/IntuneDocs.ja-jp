@@ -1,25 +1,25 @@
 ---
-title: "Power BI で OData フィードからレポートを作成する"
+title: Power BI で OData フィードからレポートを作成する
 titlesuffix: Microsoft Intune
-description: "Power BI Desktop と Intune データ ウェアハウス API の対話型フィルターを使って、ツリーマップの視覚化を作成します。"
-keywords: "Intune データ ウェアハウス"
+description: Power BI Desktop と Intune データ ウェアハウス API の対話型フィルターを使って、ツリーマップの視覚化を作成します。
+keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 05/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 850218c33a37738c591be36c778dfe5941bea51b
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 12725f567cf84d1d7e9110da747470984bc28c01
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Power BI で OData フィードからレポートを作成する
 
@@ -50,8 +50,8 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
 > [!Note]  
 > Intune の**レポート**に対するアクセス許可が必要です。 詳細については、「[承認](reports-api-url.md)」を参照してください。
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
+2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune データ ウェアハウス]** ウィンドウを開きます。
 4. カスタム フィードの URL をコピーします。 例: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 5. Power BI Desktop を開きます。

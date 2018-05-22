@@ -15,11 +15,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2759146634f16e5d92ca8c497aa2856f071a679
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 02cc111f8991a855db4f05360e54598af511f28f
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows デバイスの登録をセットアップする
 
@@ -31,7 +31,6 @@ Intune 管理者は次の方法で登録を簡略化できます。
 - [自動登録を有効にする](#enable-windows-10-automatic-enrollment) (Azure AD Premium が必須)
 - [CNAME の登録](#simplify-windows-enrollment-without-azure-ad-premium)
 - [一括登録を有効にする](windows-bulk-enroll.md) (Azure AD Premium と Windows Configuration Designer が必須)
-- [カスタム メッセージを追加し](windows-enrollment-status.md)、ユーザーが登録したり、適用したポリシー設定の進捗状況を表示したりするとき、ユーザーにあいさつをします。
 
 Windows デバイスの登録を簡略化する方法は、次の 2 つの要素によって決まります。
 

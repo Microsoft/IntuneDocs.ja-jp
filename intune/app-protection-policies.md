@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d973ca86a9adcbe3c7c18b2018c29006ba54ae9e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 9132000f5fcf43251bcc1e9b903ea03551e0b85e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>アプリ保護ポリシーを作成して割り当てる方法
 
@@ -127,7 +127,7 @@ Intune アプリ保護ポリシーの対象はユーザーの ID であるため
 これらのポリシーを作成するには、Intune コンソールで **[モバイル アプリ]** > **[アプリ保護ポリシー]** を参照し、**[ポリシーの追加]** をクリックします。 既存のアプリ保護ポリシーを編集することもできます。 管理対象デバイスと管理対象外デバイスの両方にアプリ保護ポリシーを適用する場合は、**[Target to all app types]\(すべてのアプリの種類を対象とする\)** が **[はい]** (既定値) に設定されていることを確認してください。 管理状態に基づいて細かく割り当てる場合は、**[Target to all app types]\(すべてのアプリの種類を対象とする\)** オプションを **[いいえ]** に設定します。 
 
 > [!NOTE]
-> デバイス管理状態に基づくアプリ保護ポリシーに関する特定の iOS サポート情報については、[管理の状態に基づいて対象とされる MAM 保護ポリシー](whats-new.md#mam-protection-policies-targeted-based-on-management-state----1665993---)に関するページを参照してください。
+> デバイス管理状態に基づくアプリ保護ポリシーに関する特定の iOS サポート情報については、[管理の状態に基づいて対象とされる MAM 保護ポリシー](whats-new.md#mam-protection-policies-targeted-based-on-management-state-)に関するページを参照してください。
 
 ## <a name="policy-settings"></a>ポリシー設定
 iOS と Android 用のポリシー設定の完全な一覧を表示するには、次のいずれかのリンクを選択します。
