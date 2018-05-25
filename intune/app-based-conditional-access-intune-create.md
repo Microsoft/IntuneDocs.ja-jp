@@ -5,7 +5,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da6f351f4ce5cf6b0aeae977ffbef56dab5bd2df
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: c505e881fe06d6f4da217533d0507731ac22a29f
+ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Intune を使用してアプリ ベースの条件付きアクセス ポリシーをセットアップする
 
@@ -27,39 +27,11 @@ ms.lasthandoff: 04/26/2018
 この記事では、承認済みアプリの一覧に含まれるアプリにアプリベースの条件付きアクセス ポリシーをセットアップする方法について説明します。 承認済みのアプリの一覧は、Microsoft によってテストされたアプリで構成されます。
 
 > [!IMPORTANT]
-> この記事では、Exchange Online を利用し、アプリベースの条件付きアクセス ポリシーを追加する手順について段階的に説明しますが、SharePoint Online や Microsoft Teams など、他のアプリを承認済みアプリの一覧から追加するときでも同じ手順を利用できます。
-
-## <a name="to-create-an-app-based-conditional-access-policy"></a>アプリベースの条件付きアクセス ポリシーを作成するには
-1.  [Azure Portal](https://portal.azure.com) に移動し、自分の資格情報でサインインします。
-
-2.  **[すべてのサービス]** を選択し、「Intune」と入力します。
-
-3.  **[Intune アプリ保護]** を選択します。
-
-4.  **[条件付きアクセス]** セクションの **[Intune App Protection]** で、**[Exchange Online]** を選択します。
-
-    ![[条件付きアクセス] セクションの [Exchange Online] オプションが強調表示された設定ウィンドウのスクリーンショット](./media/MAM-conditional-access-1.png)
-
-6. **[許可されているアプリ]** ウィンドウで **[Allow apps that support Intune app policies]** (Intune アプリ ポリシーをサポートするアプリを許可する) オプションを選択して、Exchange Online へのアクセスを Intune アプリ保護ポリシーでサポートされているアプリにのみ許可します。 このオプションを選択すると、サポートされるアプリの一覧が表示されます。
-
-    > [!NOTE]
-    > iOS と Android の組み込みのメール クライアントを含め、Exchange Online に接続するすべての Exchange Active Sync メール クライアントは、電子メールを送受信できなくなります。 ユーザーには、Outlook メール アプリを使用する必要があることを知らせる 1 通の電子メールが送信されます。
-
-7. このポリシーをユーザーに適用するには、**[制限対象のユーザー グループ]** ウィンドウを開き、**[ユーザー グループの追加]** を選択します。 このポリシーを適用する 1 つまたは複数のユーザー グループを選択します。
-
-    ![[ユーザー グループの追加] オプションが強調表示されている [制限対象のユーザー グループ] ウィンドウのスクリーンショット](./media/mam-ca-add-user-group.png)
-
-8. 前の手順で選択したユーザー グループのうち、このポリシーの影響を受けないようにするユーザーがいるとします。 このような場合、ユーザーのグループを除外ユーザー グループ一覧に追加します。 **[Exchange Online]** ウィンドウで、**[Exempted user groups]** (除外するユーザー グループ) を選択します。 **[ユーザー グループの追加]** を選択してユーザー グループの一覧を開きます。 このポリシーから除外するグループを選択します。
-
-## <a name="to-modify-or-delete-user-groups-from-an-existing-app-based-ca-policy"></a>既存のアプリベースの CA ポリシーからユーザー グループを変更または削除するには
-
-1. **[制限対象のユーザー グループ]** ウィンドウを開き、削除するユーザー グループを選択します。
-2. 省略記号をクリックすると、削除のオプションが表示されます。
-3. **[削除]** を選択すると、一覧からユーザー グループが削除されます。
+> この記事では、アプリベースの条件付きアクセス ポリシーを追加する手順について説明します。 承認済みアプリのリストから SharePoint Online、Microsoft Teams、Microsoft Exchange Online などのアプリを追加するときと同じ手順を使用できることに注意してください。
 
 ## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>Azure AD ワークロードでアプリベースの条件付きアクセス ポリシーを作成する
 
-Intune 1708 リリース以降、IT 管理者は Azure AD ワークロードからアプリベースの条件付きアクセス ポリシーを作成できます。 Azure と Intune のワークロードを切り替える必要がなくなり、便利です。
+IT 管理者は、Azure AD ワークロードからアプリベースの条件付きアクセス ポリシーを作成することができます。 Azure と Intune のワークロードを切り替える必要がなくなり、便利です。
 
 > [!IMPORTANT]
 > Intune Azure Portal から Azure AD の条件付きアクセス ポリシーを作成するには、Azure AD Premium ライセンスが必要です。

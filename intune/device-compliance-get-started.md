@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f599f168c1b4ae9aa94324b69ed11e6d426c86d
-ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
+ms.openlocfilehash: 777cfa7d387c2bd19d529dbfc6d1aeab5dbad67e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune のデバイス コンプライアンス ポリシーの概要
 
@@ -159,7 +159,7 @@ Remember that you need to implement conditional access policies in addition to c
   - **[準拠]**: セキュリティ機能が無効
   - **[非準拠]** (既定値): セキュリティ機能が有効
 
-  デバイスにコンプライアンス ポリシーが割り当てられていない場合、そのデバイスは非準拠と見なされます。 既定では、デバイスは **[非準拠]** としてマークされます。 条件付きアクセスを使用する場合は、既定の設定の **[非準拠]** のままにしておくことをお勧めします。 ポリシーが割り当てられていないためにエンド ユーザーが非準拠である場合、ポータル サイトには `No compliance policies have been assigned` とリストされます。
+  デバイスにコンプライアンス ポリシーが割り当てられていない場合、そのデバイスは非準拠と見なされます。 既定では、デバイスは **[準拠]** としてマークされます。 条件付きアクセスを使用する場合は、設定を **[非準拠]** に変更することをお勧めします。 ポリシーが割り当てられていないためにエンド ユーザーが非準拠である場合、ポータル サイトには `No compliance policies have been assigned` とリストされます。
 
 - **[脱獄の高度な検出]**: この設定が有効な場合、iOS デバイスは Intune によって、より頻繁にチェックインされます。 このプロパティを有効にすると、デバイスの位置情報サービスが使用され、バッテリの使用量に影響します。 ユーザーの場所データは Intune では保存されません。
 
@@ -202,7 +202,7 @@ Azure Portal でデバイス コンプライアンスに関連した機能を使
 
   - [Android](compliance-policy-create-android.md)
   - [Android for Work](compliance-policy-create-android-for-work.md)
-  - [iOS](compliance-policy-create-ios.md)
+  - [Android](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)
 

@@ -14,11 +14,11 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 619d9e86bd130a617155d262f3e09882ce26ec1e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 100742b378b30eab84b28c01728b2b382dd5155c
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Microsoft Intune Android および Samsung KNOX Standard デバイスの制限設定 
 
@@ -47,6 +47,10 @@ ms.lasthandoff: 04/26/2018
 ## <a name="password"></a>パスワード
 
 - **[パスワード]** - エンド ユーザーがデバイスにアクセスする際にパスワードの入力を要求します。|はい|はい|
+
+    > [!NOTE]
+    > Samsung Knox デバイスでは、MDM 登録時に自動的に 4 桁の PIN が要求されます。 ネイティブ Android デバイスでは、条件付きアクセスに準拠するために自動的に PIN が要求される場合があります。
+
 - **[パスワードの最小文字数]** - ユーザーが構成する必要があるパスワードの最小文字数 (4 ～ 16 文字) を入力します。
 - **[画面がロックされるまでの非アクティブな最長時間 (分)]** - デバイスの非アクティブ状態が許容される時間 (分) を指定します。この時間を超えると、デバイスは自動的にロックされます。
 - **[デバイスがワイプされるまでのサインイン失敗回数]** - デバイスをワイプするまでのサインイン エラーの数を指定します。
@@ -55,7 +59,7 @@ ms.lasthandoff: 04/26/2018
     - **デバイスの既定**
     - **低レベルのバイオメトリック セキュリティ**
     - **最小数の数字**
-    - **[数値複素数]** - "1111" のような繰り返しの番号や、"1234" のような連続した番号は許可されません<sup>1</sup>。
+    - **数値複素数** - 繰り返しの番号や連続した番号 ("1111" や "1234" など) は許可されません。<sup>1</sup>
     - **最小数の英字**
     - **最小数の英数字**
     - **英数字と記号を使用する**
@@ -63,6 +67,9 @@ ms.lasthandoff: 04/26/2018
 - **[指紋によるロック解除 (Samsung KNOX のみ)]** - 指紋を使用して、サポートされているデバイスのロックを解除できるようにします。
 - **[Smart Lock などの信頼できるエージェント]** - 互換性のある Android デバイス (Samsung KNOX Standard 5.0 以降) で Smart Lock 機能を制御できるようにします。 信頼エージェントとも呼ばれるこの電話機能では、信頼できる場所にある場合、デバイスのロック画面のパスワードを無効化またはバイパスすることができます。 たとえば、デバイスが特定の Bluetooth デバイスに接続されているときや、NFC タグの近くにある場合にこれを使用できます。 この設定を使用して、ユーザーが SmartLock を構成することを禁止できます。
 - **[暗号化]** - デバイス上のファイルを暗号化することを要求します。
+
+    > [!NOTE]
+    > 暗号化ポリシーが適用されている場合、Samsung Knox デバイスでは、ユーザーはデバイス パスコードとして 6 文字の複雑なパスワードを設定する必要があります。
 
 <sup>1</sup> デバイス上のポータル サイト アプリを最新バージョンに更新してから、デバイスにこの設定を割り当てるようにしてください。
 

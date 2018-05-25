@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 04/06/2018
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 486ff2d22cb201abc926efc96a83455be98e7536
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.custom: ''
+ms.openlocfilehash: f8f81b4ff3bf5d17832d2f943fffb905eba52b6e
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS 用 Microsoft Intune App SDK 開発者ガイド
 
 > [!NOTE]
-> 最初に、[Intune アプリ SDK ガイドの概要](app-sdk-get-started.md)に関する記事に目を通すことをお勧めします。このガイドでは、サポートする各プラットフォームで統合のための準備をする方法について説明しています。
+> [Intune App SDK ガイドの概要](app-sdk-get-started.md)に関する記事を読むことを検討してください。このガイドでは、サポートされる各プラットフォームで統合のための準備をする方法について説明しています。
 
 iOS 用 Microsoft Intune App SDK を使用すると、ネイティブ iOS アプリに Intune アプリ保護ポリシー (**APP** ポリシーまたは **MAM** ポリシーともいう) を組み込むことができます。 MAM 対応のアプリケーションが Intune アプリ SDK に統合されています。 Intune で積極的にアプリを管理している場合、IT 管理者はモバイル アプリにアプリ保護ポリシーを展開できます。
 
@@ -81,8 +81,8 @@ Intune アプリ SDK を有効にするには、次の手順を実行します�
 
 1. **オプション 1 (推奨)**: `IntuneMAM.framework` をプロジェクトにリンクします。 プロジェクトのターゲットの **[Embedded Binaries]** (埋め込みバイナリ) の一覧に `IntuneMAM.framework` をドラッグします。
 
-    > [!NOTE]
-    > フレームワークを使用する場合は、アプリ ストアにアプリを送信する前に、ユニバーサル フレームワークからシミュレーター アーキテクチャを手動で除去する必要があります。 詳細については、「[iOS 用 Microsoft Intune App SDK 開発者ガイド](#Submit-your-app-to-the-App-Store)」を参照してください。
+   > [!NOTE]
+   > フレームワークを使用する場合は、アプリ ストアにアプリを送信する前に、ユニバーサル フレームワークからシミュレーター アーキテクチャを手動で除去する必要があります。 詳細については、「[iOS 用 Microsoft Intune App SDK 開発者ガイド](#Submit-your-app-to-the-App-Store)」を参照してください。
 
 2. **オプション 2**: `libIntuneMAM.a` ライブラリにリンクします。 `libIntuneMAM.a` ライブラリをプロジェクト ターゲットの **[Linked Frameworks and Libraries]** (リンク先フレームワークおよびライブラリ) ボックスの一覧にドラッグします。
 
@@ -179,7 +179,7 @@ Intune App SDK は、認証と条件に基づく起動シナリオに [Azure Act
 
 
 
-### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>同じプロビジョニング プロファイルを使用して署名されている他のアプリと ADAL トークン キャッシュを共有する**
+### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>同じプロビジョニング プロファイルを使用して署名されている他のアプリと ADAL トークン キャッシュを共有しますか?
 
 同じプロビジョニング プロファイルで署名されたアプリ間で ADAL トークンを共有する場合、以下の手順を実行します。
 
@@ -523,7 +523,8 @@ SUBQUERY (
 ).@count > 0 
  ```
 
->[!Note] IntuneMAMConfigurator ツールを使用し、Intune タイプをアクティブ化ルールに追加できます。 既存のアクティブ化ルールで事前定義された文字列定数が使用されている場合 (NSExtensionActivationSupportsFileWithMaxCount や NSExtensionActivationSupportsText など)、述語の構文がかなり複雑になることがあります。 IntuneMAMConfigurator ツールを使用すれば、Intune タイプを追加するとき、アクティブ化ルールを文字列定数から述語文字列に変更することもできます。 IntuneMAMConfigurator は GitHub リポジトリにあります。 
+> [!NOTE]
+> IntuneMAMConfigurator ツールを使用し、Intune タイプをアクティブ化ルールに追加できます。 既存のアクティブ化ルールで事前定義された文字列定数が使用されている場合 (NSExtensionActivationSupportsFileWithMaxCount や NSExtensionActivationSupportsText など)、述語の構文がかなり複雑になることがあります。 IntuneMAMConfigurator ツールを使用すれば、Intune タイプを追加するとき、アクティブ化ルールを文字列定数から述語文字列に変更することもできます。 IntuneMAMConfigurator は GitHub リポジトリにあります。 
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>iOS アプリケーションの MAM 対象の構成を有効にする

@@ -15,11 +15,11 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 812f73cb0857298f01967cebbb36f0b8220fb9c6
-ms.sourcegitcommit: 179bea63fe52a8cce236b6ca8d82a6bd51bf17a5
+ms.openlocfilehash: b860b68bbf8940a89533159885f471f5337ca0e8
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Intune モバイル アプリケーション管理 (MAM) データ転送ポリシーの例外を作成する方法
 
@@ -31,6 +31,9 @@ ms.lasthandoff: 05/15/2018
 > 管理者は、データ転送の例外ポリシーを変更する責任があります。 管理対象ではないアプリ (Intune によって管理されていないアプリケーション) は、このポリシーに追加すると、管理対象アプリによって保護されているデータにアクセスできるようになります。 このような保護されたデータのアクセスで、データ セキュリティの漏えいが発生する可能性があります。 組織で使用する必要があり、Intune APP (アプリケーション保護ポリシー) をサポートしていないアプリについてのみ、データ転送の例外を追加してください。 また、データ漏えいのリスクとは見なされないアプリについてのみ、例外を追加してください。
 
 Intune アプリケーション保護ポリシーで、**[このアプリから他のアプリにデータを転送できるようにする]** を **[ポリシーで管理されているアプリ]** に設定すると、アプリは Intune で管理されているアプリにのみデータを転送できることを意味します。 Intune アプリをサポートしていない特定のアプリへのデータ転送を許可する必要がある場合は、**[除外するアプリを選択します]** を使用してこのポリシーの例外を作成できます。 除外すると、Intune で管理されるアプリケーションは、URL プロトコル (iOS) またはパッケージ名 (Android) に基づいて、管理されていないアプリケーションを起動できます。 既定では、Intune の例外一覧には、重要なネイティブ アプリケーションが追加されています。 
+
+> [!NOTE]
+> データ転送ポリシーの例外を変更または追加しても、切り取り、コピー、貼り付けの制限など、他のアプリ保護ポリシーには影響しません。 
 
 ## <a name="ios-data-transfer-exceptions"></a>iOS データ転送の例外
 iOS をターゲットとするポリシーの場合、URL プロトコルでデータ転送の例外を構成できます。 例外を追加するには、アプリの開発者が提供するドキュメントを参照して、サポートされている URL プロトコルに関する情報を確認してください。 iOS のデータ転送の例外の詳細については、[「iOS アプリ保護ポリシー設定」の「データ転送の除外対象」](app-protection-policy-settings-ios.md#data-transfer-exemptions)を参照してください。

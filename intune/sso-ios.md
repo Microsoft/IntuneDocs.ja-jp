@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1aaffb2da1f4ec081b59ff6ca1922d983008f77
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 010ed8511b042d6f764ba947f616d76521588f42
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>iOS 用 Microsoft Intune のデバイス シングル サインオンを構成する
 
@@ -33,8 +33,8 @@ iOS デバイスのシングル サインオンを利用するには、次の条
 ## <a name="to-configure-intune-for-ios-device-single-sign-on"></a>iOS デバイスのシングル サインオン用に Intune を構成するには
 
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
+2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
 4. **[デバイス構成]** ウィンドウの **[管理]** セクションで、**[プロファイル]** を選択します。
 5. [プロファイル] ウィンドウで **[プロファイルの作成]** を選択します。
@@ -59,13 +59,13 @@ iOS デバイスのシングル サインオンを利用するには、次の条
 
 ### <a name="username-attribute-from-aad-and-realm"></a>AAD からのユーザー名の属性と領域
 
-- このフィールドに対して **[ユーザー原則名]** を選ぶと、次のような方法で解析されます。
+- このフィールドに対して **[ユーザー プリンシパル名]** を選ぶと、次のような方法で解析されます。
 
    ![ユーザー名属性](media/User-name-attribute.png)
 
    また、**[領域]** テキスト ボックスに入力したテキストで領域を上書きすることもできます。
 
-   たとえば、Contoso にはヨーロッパ、アジア、北米などのサブ領域があり、 アジアのユーザーは SSO ペイロードを使って、アプリは *username@asia.contoso.com* の形式の UPN を要求するものとします。この場合、**[ユーザー原則名]** を選ぶと、既定で各ユーザーの領域は AAD から取得されますが、それは単に *contoso.com* のようなものかもしれません。そのため、アジアのユーザーについては、このペイロードを作成し、領域を値 *asia.contoso.com* で上書きすることができます。結果として、エンド ユーザーの UPN は、*username@contoso.com* ではなく *username@asia.contoso.com* になります。
+   たとえば、Contoso にはヨーロッパ、アジア、北米などのサブ領域があり、 アジアのユーザーは SSO ペイロードを使って、アプリは *username@asia.contoso.com* の形式の UPN を要求するものとします。この場合、**[ユーザー プリンシパル名]** を選ぶと、既定で各ユーザーの領域は AAD から取得されますが、それは単に *contoso.com* のようなものかもしれません。そのため、アジアのユーザーについては、このペイロードを作成し、領域を値 *asia.contoso.com* で上書きすることができます。結果として、エンド ユーザーの UPN は、*username@contoso.com* ではなく *username@asia.contoso.com* になります。
 
 - **[デバイス ID]** を選ぶと、Intune は自動的に Intune デバイス ID を選びます。
 

@@ -1,12 +1,11 @@
 ---
-title: アプリ保護ポリシーを利用するために基幹業務アプリで準備を行う
-titlesuffix: Microsoft Intune
-description: アプリ ラッピング ツールとアプリ SDK を使用し、Microsoft Intune でアプリ保護ポリシーを使用するために、カスタム基幹業務アプリを有効にします。
+title: Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める
+description: このトピックの情報は、カスタム基幹業務アプリでモバイル アプリ管理ポリシーを使用できるようにするために、アプリ ラッピング ツールとアプリ SDK を使用するタイミングを判断するときに役立ちます。
 keywords: ''
-author: Erikre
+author: erikre
 ms.author: erikre
-manager: dougeby
-ms.date: 05/07/2018
+manager: angrobe
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,15 +14,15 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5ae3b19cfe57c48ac262a376c778d7d593456991
-ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
+ms.openlocfilehash: 89a8f29e2e31cf59ed237cbfae5c557f60bd8dfa
+ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>アプリ保護ポリシーを利用するために基幹業務アプリで準備を行う
 
-[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 Intune アプリ ラッピング ツールまたは Intune アプリ SDK のどちらかを使って、アプリでアプリ保護ポリシーを使えるようにできます。 ここでは、これら 2 つの方法の内容と用途について説明します。
 
@@ -34,7 +33,6 @@ Intune アプリ ラッピング ツールまたは Intune アプリ SDK のど�
 
 アプリ ラッピング ツールは、Apple App Store または Google Play ストアのアプリを**サポートしていません**。 また、開発ツールの統合が必要な一部の機能もサポートしていません (次の機能比較表を参照してください)。
 
-
 Intune に登録されていないデバイスのアプリ保護ポリシー用アプリ ラッピング ツールの詳細については、「[Microsoft Intune に登録されていないデバイスの基幹業務アプリとデータを保護する](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune)」を参照してください。
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>アプリ ラッピング ツールを使用する理由
@@ -44,7 +42,6 @@ Intune に登録されていないデバイスのアプリ保護ポリシー用�
 * アプリのソース コードにアクセスできない。
 * 自分で開発したアプリではない。
 * アプリのユーザー認証エクスペリエンスが最小限である。
-
 
 ### <a name="supported-app-development-platforms"></a>サポートされるアプリ開発プラットフォーム
 
@@ -79,35 +76,43 @@ SDK の詳細については、「[概要](app-sdk.md)」を参照してくだ�
 > [!NOTE]
 > アプリ ラッピング ツールは、スタンドアロンの Intune または Configuration Manager と統合した Intune で使用できます。
 
-|                                                         機能                                                          | アプリ SDK | アプリ ラッピング ツール |
-|--------------------------------------------------------------------------------------------------------------------------|---------|-------------------|
-|                              [Web コンテンツを会社の管理対象ブラウザーで表示するように制限する]                              |    ○    |         ○         |
-|                                        [Android、iTunes、iCloud のバックアップを禁止する]                                        |    ○    |         ○         |
-|                                         [アプリで他のアプリへのデータ転送を許可する]                                         |    ○    |         ○         |
-|                                        [アプリで他のアプリからのデータの受信を許可する]                                         |    ○    |         ○         |
-|                                      他のアプリとの間で切り取り、コピー、貼り付けを制限する                                       |    ○    |         ○         |
-|                                              [アクセスには簡易暗証番号が必要]                                               |    ○    |         ○         |
-|                                         [組み込みアプリ PIN を Intune PIN で置き換える]                                         |    ○    |                   |
-|                                     [PIN をリセットするまでの試行数を指定する]                                      |    ○    |         ○         |
-|                                             PIN の代わりに指紋を要求する                                             |    ○    |         ○         |
-|                                         [アクセスには会社の資格情報が必要]                                         |    ○    |         ○         |
-|                             [脱獄またはルート化されたデバイスで管理対象アプリが実行されないようにブロックする]                              |    ○    |         ○         |
-|                                                     [アプリ データの暗号化]                                                     |    ○    |         ○         |
-|                           [指定した時間 (分) 後にアクセス要件を再確認する]                            |    ○    |         ○         |
-|                                             [オフラインの猶予期間を指定する]                                             |    ○    |         ○         |
-|                                           [画面キャプチャをブロック (Android のみ)]                                            |    ○    |         ○         |
-|                                        デバイスの登録なしで MAM をサポート                                         |    ○    |         ○         |
-|                                                        完全なワイプ                                                         |    ○    |         ○         |
-| 選択的なワイプ <br></br><strong>注:</strong> iOS では、管理プロファイルを削除するとアプリも削除されます。 |    ○    |                   |
-|                                                    [[名前を付けて保存] を禁止する]                                                     |    ○    |                   |
-|                                            対象となるアプリケーションの構成                                            |    ○    |                   |
-|                                                [マルチ ID アプリのサポート]                                                |    ○    |                   |
-|                                                    カスタマイズ可能なスタイル                                                    |    ○    |                   |
+|機能|アプリ SDK|アプリ ラッピング ツール|
+|-----------|---------------------|-----------|
+|[Web コンテンツを会社の管理対象ブラウザーで表示するように制限する]|○|○|
+|[Android、iTunes、iCloud のバックアップを禁止する]|○|○|
+|[アプリで他のアプリへのデータ転送を許可する]|○|○|
+|[アプリで他のアプリからのデータの受信を許可する]|○|○|
+|他のアプリとの間で切り取り、コピー、貼り付けを制限する|○|○|
+|[アクセスには簡易暗証番号が必要]|○|○|
+|[組み込みアプリ PIN を Intune PIN で置き換える]|○||
+|[PIN をリセットするまでの試行数を指定する]|○|○|
+|PIN の代わりに指紋を要求する|○|○|
+|PIN の代わりに顔認識を許可する (iOS のみ)|○|○|
+|[アクセスには会社の資格情報が必要]|○|○|
+|[脱獄またはルート化されたデバイスで管理対象アプリが実行されないようにブロックする]|○|○|
+|[アプリ データの暗号化]|○|○|
+|[指定した時間 (分) 後にアクセス要件を再確認する]|○|○|
+|[オフラインの猶予期間を指定する]|○|○|
+|[画面キャプチャをブロック (Android のみ)]|○|○|
+|デバイスの登録なしで MAM をサポート|○|○|
+|完全なワイプ|○|○|
+|選択的なワイプ <br></br>**注:** iOS では、管理プロファイルを削除するとアプリも削除されます。|○||
+|[[名前を付けて保存] を禁止する]|○||
+|対象となるアプリケーションの構成|○||
+|[マルチ ID アプリのサポート]|○||
+|カスタマイズ可能なスタイル |○|||
+|Citrix mVPN でのオンデマンドのアプリケーション VPN 接続|○|○| 
+|連絡先の同期を無効にする|○|○|
+|印刷を無効にする|○|○|
+|アプリの最小バージョン要件|○|○|
+|オペレーティング システムの最小要件 (iOS および Android のみ)|○|○|
+|Android の最小セキュリティ パッチ バージョン要件 (Android のみ)|○|○|
+|iOS 用 Intune SDK の最小要件 (iOS のみ)|○|○|
 
 ## <a name="next-steps"></a>次の手順
 
 アプリ保護ポリシーと Intune の詳細については、次のトピックをご覧ください。
 
-  -  [Android アプリ ラッピング ツール](app-wrapper-prepare-android.md)</br>
+  - [Android アプリ ラッピング ツール](app-wrapper-prepare-android.md)</br>
   - [iOS アプリ ラッピング ツール](app-wrapper-prepare-ios.md)</br>
   - [SDK を使用してモバイル アプリケーション管理に対応する](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)

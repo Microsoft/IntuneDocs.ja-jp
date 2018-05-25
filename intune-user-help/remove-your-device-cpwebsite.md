@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2017
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c7cd6380cbb596779a3094b18eef4e91b6161871
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f22509d780ec4d877e7e780109b34776b269c8b3
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>ポータル サイトからのデバイスの削除
 
-今後デバイスを会社または組織で管理しない場合は、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)から、デバイスを削除することができます。 ポータル サイト Web サイトは、IT 部署で管理するために登録したコンピューターとデバイスの管理に使用できる Web ページです。 デバイスを削除すると、そのデバイスはポータル サイトに表示されなくなり、会社または学校のデータ、アプリ、電子メールにもアクセスできなくなる場合があります。
+今後デバイスを会社または組織で管理しない場合は、[ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)を使用して、ポータル サイトからデバイスを削除することができます。 デバイスを削除すると、ポータル サイトにリストされなくなります。 組織のデータ、アプリ、メールにアクセスできなくなる可能性もあります。
 
 デバイスを削除するには:
 

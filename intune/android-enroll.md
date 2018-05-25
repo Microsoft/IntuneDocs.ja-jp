@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d74f59f1df0a4a4e1285b58d7ac5b3677d3c5e48
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3212d1a3d3454542dd9d34409fc788558f2d7eed
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="enroll-android-devices"></a>Android デバイスの登録
 
@@ -58,7 +58,8 @@ Android デバイスをブロックする場合や、個人所有の Android デ
 **Microsoft Intune** を[モバイル デバイス管理機関](mdm-authority-set.md)に設定し、モバイル デバイス管理の準備をします (この作業をまだ行っていない場合)。
 2. **Android for Work のバインディングを構成する**<br>
     
-   」を参照します。 [Azure Portal の Intune](https://aka.ms/intuneportal) にサインインして、**[デバイスの登録]** > **[Android の登録]** > **[managed Google Play]** を選択します。
+   」を参照します。 [Azure Portal の Intune](https://aka.ms/intuneportal) にサインインして、**[デバイスの登録]** > **[Android の登録]** > **[managed Google Play]** を選択します。  カスタム Intune 管理者ロールを使用している場合、このアクセスには組織の読み取りと更新のアクセス許可が必要です。
+   
    ![Android for Work の登録画面](./media/android-work-bind.png)
 
    b. **[同意する]** を選択して、Microsoft が[ユーザーとデバイスの情報を Google に送信](data-intune-sends-to-google.md)できるようにします。 

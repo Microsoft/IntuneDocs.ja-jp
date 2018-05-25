@@ -488,6 +488,30 @@
           href: conditional-access-assign-jamf.md
     - name: デバイス データの保護
       items:
+        - name: プライバシーおよび個人データ
+          href: privacy-personal-data.md
+          items:
+            - name: データ コレクション
+              href: privacy-data-collect.md
+            - name: データ ストレージと処理
+              href: privacy-data-store-process.md
+            - name: データのセキュリティと共有
+              href: privacy-data-secure-share.md
+              items:
+                - name: Apple から Intune に送られるデータ
+                  href: data-apple-sends-to-intune.md
+                - name: Google から Intune に送られるデータ
+                  href: data-google-sends-to-intune.md
+                - name: Intune から Apple に送られるデータ
+                  href: data-intune-sends-to-apple.md
+                - name: Intune から Google に送られるデータ
+                  href: data-intune-sends-to-google.md
+                - name: Intune に Jamf Pro から共有する情報
+                  href: conditional-access-integrate-jamf.md
+            - name: 個人データの表示と修正
+              href: privacy-data-view-correct.md
+            - name: 監査、エクスポート、削除
+              href: privacy-data-audit-export-delete.md
         - name: Mobile Threat Defense
           href: mobile-threat-defense.md
           items:

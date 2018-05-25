@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8c54dd0180788a83ee01607e0e6d895fdb9a85ab
-ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
+ms.openlocfilehash: 8dbfff0fadec567bf0d9bd86d71a26174db40c09
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune にアプリを追加する
 
@@ -48,8 +48,8 @@ Intune では、広範囲に及ぶさまざまな種類のアプリをサポー�
 | --- | --- | --- |
 | Android ストア アプリ  | ストア アプリ  | **[アプリの種類]** として **[Android]** を選択し、Google Play ストアのアプリの URL を入力します。 |
 | iOS ストア アプリ  | ストア アプリ  | **[アプリの種類]** として **[iOS]** を選択し、アプリを検索し、Intune でアプリを選択します。 |
-| Windows Phone 8.1 ストア アプリ  | ストア アプリ  | **[アプリの種類]** として **[Windows Phone 8.1]** を選択し、Microsoft Store のアプリの URL を入力します。 |
-| Microsoft Store アプリ  | ストア アプリ  | **[アプリの種類]** として **[Windows]** を選択し、Microsoft Store のアプリの URL を入力します。 |
+| Windows Phone 8.1 ストア アプリ  | ストア アプリ  | **[アプリの種類]** として **[Windows Phone 8.1]** を選択し、Microsoft ストアのアプリの URL を入力します。 |
+| Microsoft ストア アプリ  | ストア アプリ  | **[アプリの種類]** として **[Windows]** を選択し、Microsoft ストアのアプリの URL を入力します。 |
 | Android for Work アプリ | ストア アプリ  | Google Play for Work ストアで、Android for Work アプリを検索して承認します。  |
 | Windows 10 用の Office 365 アプリ  | ストア アプリ (Office 365) | **[アプリの種類]** として **[Office 365 スイート]** の下から **[Windows 10]** を選択し、インストールする Office 365 アプリを選択します。  |
 | macOS 用の Office 365 アプリ | ストア アプリ (Office 365) | **[アプリの種類]** として **[Office 365 スイート]** の下から **[macOS]** を選択し、Office 365 アプリ スイートを選択します。 |
@@ -96,7 +96,7 @@ Intune を使用して、デバイスの管理は行わずに MDM でアプリ�
 ### <a name="determine-the-type-of-app-for-your-solution"></a>ソリューションに合わせてアプリの種類を決定する
 
 次のアプリの種類から選択できます。
-- **ストアからのアプリ**: Microsoft Store、iOS ストア、Android ストアのいずれかにアップロードされているアプリがストア アプリです。 ストア アプリのプロバイダーは、更新プログラムを維持すると共にアプリに提供します。 ストアの一覧からアプリを選択し、Intune を使用して、そのアプリをユーザーが入手できるアプリとして追加します。
+- **ストアからのアプリ**: Microsoft ストア、iOS ストア、Android ストアのいずれかにアップロードされているアプリがストア アプリです。 ストア アプリのプロバイダーは、更新プログラムを維持すると共にアプリに提供します。 ストアの一覧からアプリを選択し、Intune を使用して、そのアプリをユーザーが入手できるアプリとして追加します。
 - **社内で作成された (基幹業務) アプリ**: 社内で作成されたアプリが基幹業務 (LOB) アプリです。 この種のアプリの機能は、Windows、iOS、Android など、Intune でサポートされているプラットフォームのいずれか 1 つに向けて作成されています。 組織は更新プログラムを作成し、管理者に個別のファイルとして提供します。 管理者は、アプリの更新プログラムをユーザーに提供するために、Intune を使用して更新プログラムを追加および展開します。
 - **Web 上のアプリ**: Web アプリはクライアント/サーバー アプリケーションです。 サーバーから Web アプリが提供されます。これには UI、コンテンツ、および機能が含まれます。 さらに、最新の Web ホスティング プラットフォームでは一般的にセキュリティや負荷分散などの利点が提供されます。 この種のアプリは Web 上で個別に維持されます。 Intune を使用して、このアプリの種類をポイントします。 このアプリにアクセスできるユーザー グループも割り当てます。 Android では Web アプリがサポートされていないので注意してください。
 
@@ -126,9 +126,7 @@ Web アプリ、ストア アプリ、LOB アプリに加えて、Volume Purchas
 - 割り当てるアプリまたは項目は、組み込みの iOS アプリに依存する場合があります。 たとえば、iOS ストアでブックを割り当てる場合、デバイス上に iBooks アプリが存在する必要があります。 iBooks の組み込みアプリを削除した場合は、Intune を使用してそれを元に戻すことはできません。
 
 ## <a name="cloud-storage-space"></a>クラウドの記憶域の容量
-ソフトウェア インストーラーのインストールの種類を使用して作成したすべてのアプリ (たとえば、基幹業務アプリ) は、パッケージ化され、Intune クラウドの記憶域にアップロードされます。 Intune の試用版サブスクリプションでは、管理対象のアプリと更新プログラムの保管用として、2 ギガバイト (GB) 分のクラウドの記憶域を使用できます。 完全版のサブスクリプションには、20 GB の記憶領域が含まれています。
-
-Intune の追加ストレージは、当初の購入方法を使用して購入できます。 請求書やクレジット カードでお支払いの場合は、[サブスクリプション管理ポータル](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions)をご覧ください。 それ以外の場合は、パートナーまたは営業担当者にお問い合わせください。
+ソフトウェア インストーラーのインストールの種類を使用して作成したすべてのアプリ (たとえば、基幹業務アプリ) は、パッケージ化され、Intune クラウドの記憶域にアップロードされます。 Intune の試用版サブスクリプションでは、管理対象のアプリと更新プログラムの保管用として、2 ギガバイト (GB) 分のクラウドの記憶域を使用できます。 完全版のサブスクリプションでは、記憶域の合計容量に制限はありません。
 
 クラウドの記憶域の容量の要件は次のとおりです。
 
@@ -177,7 +175,7 @@ Intune では、次の条件に基づいて必要なアプリを自動的に再�
 - [Web アプリ (すべてのプラットフォーム)](web-app.md)
 - [Windows Phone 8.1 ストア アプリ](store-apps-windows-phone-8-1.md)
 - [Windows Phone LOB アプリ](lob-apps-windows-phone.md)
-- [Microsoft Store アプリ](store-apps-windows.md)
+- [Microsoft ストア アプリ](store-apps-windows.md)
 - [Windows LOB アプリ](lob-apps-windows.md)
 - [Windows 10 用の Office 365 アプリ](apps-add-office365.md)
 - [macOS 用の Office 365 アプリ](apps-add-office365-macos.md)

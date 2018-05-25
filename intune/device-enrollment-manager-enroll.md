@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 870d61cce47132b19b4c3d8b7357f84a21a443e4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0a32eb1d65710bf09d61c0846a8d949d5cd99ed2
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>デバイス登録マネージャー アカウントを使用してデバイスを登録する
 
@@ -73,9 +73,9 @@ DEM ユーザーができること:
 
 ## <a name="permissions-for-dem"></a>DEM のアクセス許可
 
-DEM 登録タスクを実行するには、グローバル管理者または Intune サービス管理者の Azure AD ロールが必要です。 また、これらのロールは、カスタムのユーザー ロールに一覧表示され使用可能である RBAC のアクセス許可に関係なく、すべての DEM ユーザーを表示するのに必要です。 グローバル管理者または Intune サービス管理者のロールが割り当てられていないユーザーで、デバイス登録マネージャー ロールの読み取りアクセス許可を持つユーザーは、自分が作成した DEM ユーザーのみ表示できます。 これらの機能の RBAC ロールのサポートについては、今後発表される予定です。
+管理ポータルでの DEM 登録に関連するタスクを実行するには、グローバル管理者または Intune サービス管理者の Azure AD ロールが必要です。 また、これらのロールは、カスタムのユーザー ロールに一覧表示され使用可能である RBAC のアクセス許可に関係なく、すべての DEM ユーザーを表示するのに必要です。 グローバル管理者または Intune サービス管理者のロールが割り当てられていないユーザーで、デバイス登録マネージャー ロールの読み取りアクセス許可を持つユーザーは、自分が作成した DEM ユーザーのみを表示できます。 これらの機能の RBAC ロールのサポートについては、今後発表される予定です。
 
-ユーザーにグローバル管理者または Intune サービス管理者のロールが割り当てられていないが、デバイス登録マネージャー ロールが割り当てられていてその読み取りアクセス許可を持っているという場合は、そのユーザー自身が作成した DEM ユーザーのみ表示できます。
+ユーザーにグローバル管理者または Intune サービス管理者のロールが割り当てられていないが、デバイス登録マネージャー ロールが割り当てられていてその読み取りアクセス許可を持っているという場合は、そのユーザー自身が作成した DEM ユーザーのみを表示できます。
 
 ## <a name="remove-a-device-enrollment-manager"></a>デバイス登録マネージャーの削除
 
