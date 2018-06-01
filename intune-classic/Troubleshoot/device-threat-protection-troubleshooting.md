@@ -15,11 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 643ac4c96297ffc24d9460546fe183d2a1316654
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6262fee0051827794c49ebe10361b1a3b280b140
+ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/31/2018
+ms.locfileid: "34470799"
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Lookout と Intune の統合に関するトラブルシューティング
 
@@ -36,7 +37,7 @@ Lookout MTP は、構成されている Azure AD グループのユーザーの�
 
 * 電子メール: enterprisesupport@lookout.com
 * [MTP コンソール](http://aad.lookout.com)にログインして、**[Support]** (サポート) モジュールに移動します。
-* https://enterprise.support.lookout.com/hc/requests に移動して、サポートを要求します。
+* <https://enterprise.support.lookout.com/hc/requests> に移動して、サポートを要求します。
 
 ## <a name="unable-to-sign-in"></a>サインインできない
 Azure AD グローバル管理者ユーザーが初期 Lookout セットアップを受け入れていない場合、次のエラーが表示されます。
@@ -81,7 +82,7 @@ Lookout MTP コンソールの **[Devices]** (デバイス) モジュールで�
 新しいユーザーが Lookout MTP 登録グループのメンバーである場合、Azure AD がデバイスを新しいユーザーに関連付けるとデバイスが表示されます。
 
 ## <a name="compliance-remediation-workflows"></a>コンプライアンス修復のワークフロー
-- [Android デバイスで Lookout for Work のインストールを求められる]( http://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
+- [Android デバイスで Lookout for Work のインストールを求められる](http://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
 - [Android デバイスで Lookout for Work が検出した脅威を解決する必要がある](http://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 - [iOS デバイスで Lookout for Work が検出した脅威を解決する必要がある](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
