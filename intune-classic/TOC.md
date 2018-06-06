@@ -17,7 +17,6 @@
 ### [ユーザーとデバイスを整理する](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [ポリシーとアプリを展開する](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [ポータル サイトをカスタマイズする](/intune/company-portal-customize?toc=/intune-classic/toc.json)
-### [デバイスの登録](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [構成後のタスク](get-started/post-configuration-tasks.md)
 ## 次の手順
 ### [Office 365 モバイル アプリから会社のデータが漏えいすることを防止する](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
@@ -102,7 +101,6 @@
 #### [管理されている iOS デバイスを復元する](deploy-use/restore-managed-ios-devices-from-backup.md)
 #### [Android と Samsung KNOX の設定](deploy-use/android-policy-settings-in-microsoft-intune.md)
 ##### [カスタム ポリシーを使用して、事前共有キーを使用した Wi-Fi プロファイルを作成する](deploy-use/pre-shared-key-wi-fi-profile.md)
-##### [カスタム ポリシーを使用して、Android デバイスにアプリごとの VPN プロファイルを作成する](deploy-use/per-app-vpn-for-android-pulse-secure.md)
 ##### [カスタム ポリシーを使用して、Samsung KNOX デバイス用のアプリを許可またはブロックする](deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps.md)
 #### [Android for Work の設定](deploy-use/android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Windows 8 と Windows 8.1 の設定](deploy-use/windows-configuration-policy-settings-in-microsoft-intune.md)
@@ -137,15 +135,8 @@
 ## [デバイスをインベントリから削除する](deploy-use/retire-devices-from-microsoft-intune-management.md)
 
 ## [アプリを追加する](deploy-use/add-apps.md)
-### [登録デバイスのアプリを追加する](deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)
 ### [Windows アプリをサイドローディングする](/intune/app-sideload-windows?toc=/intune-classic/toc.json)
 ## [アプリの展開](deploy-use/deploy-apps.md)
-### [デバイスと PC にアプリを展開する](deploy-use/deploy-apps-in-microsoft-intune.md)
-### [アプリを Android for Work デバイスに展開する](deploy-use/android-for-work-apps.md)
-### [アプリの監視](deploy-use/monitor-apps-in-microsoft-intune.md)
-### [ボリューム購入アプリを管理する](deploy-use/manage-volume-purchased-apps-in-microsoft-intune.md)
-#### [ボリューム購入した iOS アプリを管理する](deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-#### [ボリューム購入した Windows アプリを管理する](deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
 
 ## アプリの構成
 ### [アプリを更新する](deploy-use/update-apps-using-microsoft-intune.md)
@@ -175,7 +166,6 @@
 #### [アプリベース CA でアプリを使用する](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [SharePoint Online](deploy-use/mam-ca-for-sharepoint-online.md)
-#### [ADAL がないアプリをブロックする](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [ネットワークへのアクセスを保護する (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
 ### [デバイス、ネットワーク、アプリケーションのリスクに基づいてアクセスを保護する](deploy-use/mobile-threat-defense.md)
 #### [Lookout Mobile Threat Defense コネクター](deploy-use/lookout-mobile-threat-defense-connector.md)
@@ -203,8 +193,6 @@
 #### [アプリ保護ポリシーを確認する](deploy-use/validate-mobile-application-management.md)
 #### [アプリの保護ポリシーのコンプライアンスを監視する](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
-#### [iOS アプリ間のデータ転送を管理する](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
-
 #### [MAM ポリシー向けの Intune 管理コンソール](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [基幹業務アプリを MAM 向けに準備する](/intune/apps-prepare-mobile-application-management?toc=/intune-classic/toc.json)
@@ -216,7 +204,6 @@
 
 ## アプリとデータをインベントリから削除する
 ### [フル ワイプまたは選択的ワイプを使用する](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-### [アプリをインベントリから削除する](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [管理対象の業務用アプリのデータをワイプする](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [MDM 機関を変更する](deploy-use/change-mdm-authority.md)

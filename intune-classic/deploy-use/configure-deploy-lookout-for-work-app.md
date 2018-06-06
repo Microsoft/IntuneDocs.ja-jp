@@ -14,11 +14,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1b08ac6049bc7bbbf5c2203f156a6c03b6fc7a51
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d997e9db7aa2af4e598d47ab3c9a678e889632e8
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34569393"
 ---
 # <a name="configure-and-deploy-lookout-for-work-app"></a>Lookout for Work アプリを構成して展開する
 
@@ -29,7 +30,7 @@ ms.lasthandoff: 04/16/2018
 ## <a name="android-google-play-store-app"></a>Android (Google Play ストア アプリ)
 
 1. [Microsoft Intune 管理者コンソール](https://manage.microsoft.com)で、**[アプリ]** に移動し、**[アプリの追加]** を選択します。
-2. 発行元の **[ソフトウェア セットアップ]** ページで、**[外部リンク]** を選択して、 https://play.google.com/store/apps/details?id=com.lookout.enterprise という URL を指定します。
+2. 発行元の **[ソフトウェア セットアップ]** ページで、**[外部リンク]** を選択して、https://play.google.com/store/apps/details?id=com.lookout.enterprise という URL を指定します。
    >[!NOTE]
    >Managed Browser を要求するボックスをオンにしないでください。
 
@@ -85,11 +86,11 @@ ms.lasthandoff: 04/16/2018
 
    **[必須のインストール]** オプションを選択し、Lookout アプリがユーザーのデバイスに必ずインストールされるようにします。
 
-## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>展開したアプリがデバイスで開かれている場合はどうなりますか
-https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md ユーザーがデバイスで Lookout for Work を開くと、アプリをアクティブ化し、[Azure Active Directory でサインインする] オプションを選択するように求められます。 エンド ユーザーの詳細な手順については、次のトピックをご覧ください。
+## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>展開したアプリをデバイスで開いたときの動作 
+デバイスで Lookout for Work を開くと、アプリをアクティベートし、[Azure Active Directory でサインインする] オプションを選択するように求められます。 次のトピックに、エンドユーザー フローの詳細なチュートリアルがあります。
 
 * [Android デバイスで Lookout for Work のインストールを求められる](https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
-
+    
 * [Lookout for Work が Android デバイスで検出した脅威を解決する必要がある](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>次の手順
