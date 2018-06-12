@@ -87,4 +87,4 @@ ms.locfileid: "34745150"
 2. **[OK]** を選択して変更を保存します。
 
 ## <a name="next-steps"></a>次の手順
-[プロファイルを割り当てて](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
+[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
