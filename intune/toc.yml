@@ -372,6 +372,8 @@
               href: endpoint-protection-macos.md
             - name: Windows 10
               href: endpoint-protection-windows-10.md
+        - name: キオスクの設定を構成する
+          href: kiosk-settings.md
         - name: 電子メールの設定を構成する
           href: email-settings-configure.md
           items:
@@ -411,12 +413,14 @@
               href: wi-fi-settings-macos.md
             - name: Windows 8.1 および Windows 10
               href: wi-fi-settings-import-windows-8-1.md
+        - name: 教育
+          items:
+            - name: iOS 共有デバイス
+              href: education-settings-configure-ios-shared.md
+            - name: Windows 10
+              href: education-settings-configure.md
         - name: Windows 10 エディションのアップグレード設定を構成する
           href: edition-upgrade-configure-windows-10.md
-        - name: Windows 10 の教育設定を構成する
-          href: education-settings-configure.md
-        - name: iOS の教育共有デバイスの構成
-          href: education-settings-configure-ios-shared.md
         - name: iOS 更新ポリシーの構成
           href: software-updates-ios.md
         - name: 証明書の構成
@@ -455,6 +459,8 @@
           href: compliance-policy-create-mac-os.md
         - name: Windows ポリシーの作成
           href: compliance-policy-create-windows.md
+        - name: 場所ベースのポリシー
+          href: use-network-locations.md
         - name: ポリシーを評価します
           href: policy-evaluate.md
         - name: コンプライアンス非対応に対するアクション

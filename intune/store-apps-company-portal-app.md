@@ -15,11 +15,12 @@ ms.assetid: bfe1a2d3-f611-4dbb-adef-c0dff4d7b810
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 169d0a32fdc86b5cd3f36421e6057cdeae1a078f
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: edd0ec0d717d4303ad2a452c5d60009ac09aa05f
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703317"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Microsoft Intune を使用して Windows 10 ポータル サイト アプリを手動で追加する
 
@@ -73,7 +74,7 @@ Intune がユニバーサル アプリ用に依存関係をどのように処理
 
 アプリをサイドロードする必要があり、Symantec 証明書で署名せずに Windows 8.1 ポータル サイトを割り当てた場合は、この記事の前のセクションの手順を実行してアップグレードを完了します。
 
-アプリをサイドロードする必要があり、Symantec コード署名証明書で Windows 8.1 ポータル サイトに署名し割り当てた場合は、次のセクションの手順に従ってください。  
+アプリをサイドロードする必要があり、Symantec コード署名証明書で Windows 8.1 ポータル サイト アプリに署名し割り当てた場合は、次のセクションの手順に従ってください。
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>署名およびサイドロードした Windows Phone 8.1 ポータル サイト アプリまたは Windows 8.1 ポータル サイト アプリを Windows 10 ポータル サイト アプリにアップグレードする方法
 推奨される移行パスとして、割り当てアクションを **[アンインストール]** に設定して、Windows Phone 8.1 ポータル サイト アプリまたは Windows 8.1 ポータル サイト アプリの既存の割り当てを削除します。 この設定を選択したら、通常、Windows 10 ポータル サイト アプリを割り当てることができます。  

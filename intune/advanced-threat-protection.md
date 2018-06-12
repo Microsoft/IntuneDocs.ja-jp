@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/24/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e99ed0bd1eb5bae90913aedba5973e5e1282f70
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 99d848fb1efea2ea2d557ab8d4f19881705ec991
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/02/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744671"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Intune で条件付きアクセスによる Windows Defender ATP を有効にする
 
@@ -51,19 +52,19 @@ Intune で ATP を使用する場合は、以下が構成済みであり、使�
 
 1. [Azure ポータル](https://portal.azure.com)にサインインします。
 2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
-3. **[デバイスのポリシー準拠]** > **[Windows Defender ATP]** > **[Open the Windows Defender Advanced Threat Protection admin console]\(Windows Defender Advanced Threat 管理コンソールを開く\)** の順に選択します。
+3. **[デバイスのポリシー準拠]**、**[Windows Defender ATP]** > **[Windows Defender セキュリティ センターを開く]** の順に選択します。
 
-    ![代替テキスト](./media/atp-device-compliance-open-windows-defender.png)
+    ![Windows Defender セキュリティ センターを選択して開く](./media/atp-device-compliance-open-windows-defender.png)
 
 4. **Windows Defender セキュリティ センター**で、以下の操作を行います。
     1. **[設定]** > **[高度な機能]** の順に選択します。
     2. **Microsoft Intune の接続**については、次のように **[オン]** を選択します。
 
-        ![代替テキスト](./media/atp-security-center-intune-toggle.png)
+        ![Intune への接続を有効にする](./media/atp-security-center-intune-toggle.png)
 
     3. **[環境設定の保存]** を選択します。
 
-5. Intune に戻り、**[デバイスのポリシー準拠]** > **[Windows Defender ATP]** の順に選択します。 **[Connect Windows 10.0.15063+ devices to Windows Defender Advanced Threat Protection]\(Windows 10.0.15063+ デバイスを Windows Defender Advanced Threat Protection に接続する\)** を **[オン]** に設定します。
+5. Intune に戻り、**[デバイスのポリシー準拠]** > **[Windows Defender ATP]** の順に選択します。 **[Connect Windows devices version 10.0.15063 and above to Windows Defender ATP]\(Windows デバイス バージョン 10.0.15063 以上を Windows Defender ATP に接続する\)** を **[オン]** に設定します。
 6. **[保存]** を選択します。
 
 通常、このタスクは 1 回実行します。 したがって、Intune リソースで既に ATP が有効になっている場合は、再度実行する必要はありません。
@@ -115,9 +116,9 @@ Windows Defender には、デバイスにインストールされるオンボー
 2. **[デバイスのポリシー準拠]** > **[ポリシー]** > **[ポリシーの作成]** の順に選択します。
 3. **名前**と**説明**を入力します。
 4. **[プラットフォーム]** で、**[Windows 10 以降]** を選択します。
-5. **[デバイスの正常性]** 設定で、**[デバイスは、デバイス脅威レベル以下であることが必要]** を次の任意のレベルに設定します。
+5. **[Windows Defender ATP]** 設定で、**[Require the device to be at or under the machine risk score]\(デバイスは、コンピューターのリスク スコア以下であることが必要\)** を次の任意のレベルに設定します。
 
-  - **[セキュリティ保護]**: このレベルはセキュリティ上最も安全です。 デバイスに既存のいかなる脅威も存在できず、デバイスからは引き続き会社のリソースにアクセスできます。 いずれかの脅威が見つかった場合、デバイスは非準拠と評価されます。
+  - **[クリア]**: このレベルはセキュリティ上最も安全です。 デバイスに既存のいかなる脅威も存在できず、デバイスからは引き続き会社のリソースにアクセスできます。 いずれかの脅威が見つかった場合、デバイスは非準拠と評価されます。
   - **[低]**: 低レベルの脅威が存在する場合にのみ、デバイスは準拠しています。 脅威レベルが中または高のデバイスは非準拠になります。
   - **[中]**: デバイスに存在する脅威が低または中の場合、デバイスは準拠しています。 高レベルの脅威が検出された場合は、デバイスは非準拠と判定されます。
   - **[高]**: 最も安全性の低いレベルであり、すべての脅威レベルが許容されます。 したがって、脅威レベルが高、中または低のデバイスは準拠していると見なされます。

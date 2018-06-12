@@ -15,11 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d5d55f6c3efabdde51b5627d5ddd409c2b282f6c
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: bbcfa2de4b2d6ef7bff481817a289f56e746ee7f
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34718031"
 ---
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Microsoft Intune の一般的なトラブルシューティングのヒント
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/16/2018
 Microsoft Intune を展開した後、構成やクライアントのデバイスに問題が発生する可能性があります。 次のリソースを使用すると、問題解決のための原因を発見しやすくなります。
 
 > [!NOTE]
-> サポート リクエストを作成したり、既存のリクエストを確認したりするには、[Office 365 管理センターにアクセスしてしてください](https://portal.office.com/admin/default.aspx)。 サポート オプションの詳細については、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」を参照してください。
+> サポート リクエストを作成したり、既存のリクエストを確認したりするには、[Azure のヘルプとサポート](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)に関するページを参照してください。 サポート オプションの詳細については、「[Microsoft Intune のサポートを受ける方法](how-to-get-support-for-microsoft-intune.md)」を参照してください。
 
 ## <a name="define-the-problem"></a>問題の定義
 

@@ -15,11 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8dbfff0fadec567bf0d9bd86d71a26174db40c09
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 75e36456c03cd0a769e9741606a2b70fa7e49c35
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744994"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune にアプリを追加する
 
@@ -153,6 +154,9 @@ Web アプリ、ストア アプリ、LOB アプリに加えて、Volume Purchas
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Intune によって自動的に追加されるアプリ
 
 以前は、Intune に簡単に割り当てができる組み込みのアプリが多数含まれていました。 Intune のお客様のフィードバックに基づき、この一覧を削除しました。組み込みアプリの表示がなくなりました。 ただし、組み込みのすべてのアプリが既に割り当てられている場合、そのアプリはアプリの一覧に引き続き表示されます。 これらのアプリは、必要に応じて引き続き割り当てすることができます。
+
+> [!NOTE]
+> 基幹業務以外で必要なアプリのインストールの場合は、アプリが検出されず、アプリのインストール状態が "*インストール保留中*" ではないなら、デバイスがチェックインするたびに、Intune はインストール コマンドを送信することによってアプリのインストールを試みます。
 
 ## <a name="installing-updating-or-removing-required-apps"></a>必要なアプリのインストール、更新、削除
 

@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/5/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 792e2ae45e6331b91b1727af113604186c9bb72a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744603"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Intune で VPN プロファイルを作成する
 
@@ -41,18 +42,19 @@ Intune のカスタム構成ポリシーを使用して、次のプラットフ�
 
 |接続の種類|Android<br>Android for Work|iOS|macOS|Windows Phone 8。1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|Pulse Secure|はい|はい|はい|はい|はい|はい|
-|Cisco (IPSec)|[いいえ]|はい|[いいえ]|[いいえ]|[いいえ]|[いいえ]|
-|Citrix|はい|はい|[いいえ]|[いいえ]|[いいえ]|はい|
-|F5 Edge Client|はい|はい|はい|はい|はい|はい|
-|SonicWall Mobile Connect|はい|はい|はい|はい|はい|はい|
-|Check Point Capsule VPN|はい|はい|はい|はい|はい|はい|
-|Cisco AnyConnect|はい|はい|はい|[いいえ]|[いいえ]|[いいえ]|
 |自動|[いいえ]|[いいえ]|[いいえ]|[いいえ]|[いいえ]|はい|
+|Check Point Capsule VPN|はい|はい|はい|はい|はい|はい|
+|Cisco AnyConnect|はい|はい|はい|いいえ|[いいえ]|[いいえ]|
+|SonicWall Mobile Connect|はい|はい|はい|はい|はい|はい|
+|F5 Edge Client|はい|はい|はい|はい|はい|はい|
+|Palo Alto Networks GlobalProtect|[いいえ]|はい|いいえ|[いいえ]|[いいえ]|はい|
+|Pulse Secure|はい|はい|はい|はい|はい|はい|
+|Cisco (IPSec)|[いいえ]|はい|いいえ|[いいえ]|[いいえ]|[いいえ]|
+|Citrix|○ (Android のみ)|はい|いいえ|[いいえ]|[いいえ]|はい|
 |IKEv2|[いいえ]|[いいえ]|[いいえ]|[いいえ]|[いいえ]|はい|
 |L2TP|[いいえ]|[いいえ]|[いいえ]|[いいえ]|[いいえ]|はい|
 |PPTP|[いいえ]|[いいえ]|[いいえ]|[いいえ]|[いいえ]|はい|
-|カスタム|[いいえ]|はい|はい|[いいえ]|[いいえ]|[いいえ]|
+|カスタム VPN|[いいえ]|はい|はい|いいえ|[いいえ]|[いいえ]|
 
 > [!IMPORTANT]
 > デバイスに割り当てられた VPN プロファイルを使用する前に、プロファイル用の該当する VPN アプリをインストールする必要があります。 [Microsoft Intune でのアプリ管理の概要](app-management.md)に関する記事の情報を参考にして、Intune を使ってアプリを割り当ててください。  

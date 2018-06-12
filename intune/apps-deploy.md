@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 06/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,18 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b31c9d2028bcde6926f1bf1169de85d2f09efd82
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bc7f827f121ad93498d22f6b9b246abf15dc76e3
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34717980"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune を使用してアプリをグループに割り当てる
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-アプリを Microsoft Intune に追加した後は、そのアプリをユーザーとデバイスに割り当てることができます。
-
-デバイスが Intune で管理されているかどうかに関係なく、デバイスにアプリを割り当てることができます。 
+[アプリを Microsoft Intune に追加](apps-add.md)した後は、そのアプリをユーザーとデバイスに割り当てることができます。 デバイスが Intune で管理されているかどうかに関係なく、デバイスにアプリを割り当てることができることに注意してください。 
 
 次の表は、ユーザーおよびデバイスへのアプリの割り当てに関するさまざまなオプションの一覧です。
 
@@ -117,7 +116,8 @@ ms.lasthandoff: 05/17/2018
 |ユーザー登録なしで利用可能|デバイス アンインストール|アンインストールおよび登録なしで利用可能。<br><br>ユーザーがポータル サイトからアプリをインストールしなかった場合は、アンインストールが受け入れられる。<br><br>ユーザーがポータル サイトからアプリをインストールした場合、インストールはアンインストールよりも優先される。|
 
 > [!NOTE]
-> 管理対象の iOS ストア アプリの場合のみ、これらのアプリを Microsoft Intune に追加し、**必須**として割り当てるとき、**必須**インテントと**利用可能**インテントの両方で自動的に作成されます。
+> 管理対象の iOS ストア アプリの場合のみ、これらのアプリを Microsoft Intune に追加し、**必須**として割り当てるとき、**必須**インテントと**利用可能**インテントの両方で自動的に作成されます。<br><br>
+> 必要なインテントで対象となる iOS ストア アプリ (iOS VPP アプリではなく) は、デバイスのチェックイン時にデバイスに適用され、ポータル サイト アプリにも表示されます。
 
 ## <a name="next-steps"></a>次の手順
 

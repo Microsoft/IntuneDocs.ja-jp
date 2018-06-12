@@ -14,11 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 183eb3f121e1b5c53673d10a04d0710baeb5a703
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a1476ad4237b6355d0cb87fcc643bf0234e7f457
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744773"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange On-Premises と従来の Exchange Online Dedicated の条件付きアクセス ポリシーを作成する
 
@@ -37,9 +38,9 @@ Exchange Online Dedicated 環境を使用していて、それが新しい構成
 - [Exchange Active Sync On-Premises Exchange Connector](exchange-connector-install.md) を使用する必要があります。これは、Intune を Exchange On-Premises に接続します。
 
     >[!IMPORTANT]
-    >On-Premises Exchange Connector は、Intune テナントに固有であり、他のテナントでは使用できません。 また、テナントの Exchange Connector は **1 台のコンピューターにのみ**インストールされるようにしてください。
+    >On-Premises Exchange Connector は、Intune テナントに固有であり、他のテナントでは使用できません。 Intune は、サブスクリプションあたり複数のオンプレミス Exchange コネクタに対応できるようになりました。 オンプレミス Exchange 組織が複数ある場合、Exchange 組織別にコネクタを設定できます。
 
-- このコネクタは、Exchange サーバーと通信できる任意のコンピューターにインストールできます。
+- オンプレミス Exchange 組織のコネクタは、Exchange サーバーと通信できる任意のコンピューターにインストールできます。
 
 - このコネクタは、**Exchange CAS 環境**をサポートします。 必要であれば、このコネクタを Exchange CAS サーバーに直接インストールすることは技術的に可能ですが、サーバーの負荷が増加するため、お勧めしません。 コネクタを構成するときには、Exchange CAS サーバーのいずれかと通信するように設定する必要があります。
 
@@ -49,7 +50,7 @@ Exchange Online Dedicated 環境を使用していて、それが新しい構成
     - Intune に**登録**されているか、ドメインに参加している PC である。
     - **Azure Active Directory に登録されている**。 また、クライアントの Exchange ActiveSync ID を Azure Active Directory に登録する必要があります。
 <br></br>
-- AAD DRS は、Intune や Office 365 のお客様に対して自動的にアクティブ化されます。 ADFS Device Registration Service を展開済みのお客様には、オンプレミスの Active Directory で登録されたデバイスは表示されません。 **これは、Windows PC と Windows Phone デバイスには適用されません。**
+- Azure AD Device Registration サービス (DRS) は、Intune や Office 365 のお客様に対して自動的にアクティブ化されます。 ADFS Device Registration Service を展開済みのお客様には、オンプレミスの Active Directory で登録されたデバイスは表示されません。 **これは、Windows PC と Windows Phone デバイスには適用されません。**
 
 - そのデバイスに展開されているデバイス コンプライアンス ポリシーに**準拠**している。
 
@@ -89,7 +90,7 @@ Windows 8.1 以降用のネイティブ **メール** アプリケーション (
 1. **[Exchange On-premises のアクセス]** ウィンドウで **[はい]** を選択し、Exchange On-premises アクセス制御を有効にします。
 
     > [!NOTE]
-    > Exchange Active Sync On-Premises Connector を構成していない場合、このオプションは無効です。  Exchange On-premises の条件付きアクセスを有効にするには、このコネクタをインストールして構成しておく必要があります。 詳細については、[Intune On-premises Exchange Connector のインストール](exchange-connector-install.md)に関するページを参照してください
+    > Exchange Active Sync オンプレミス コネクタを構成していない場合、このオプションは無効です。  Exchange オンプレミスの条件付きアクセスを有効にするには、コネクタを少なくとも 1 つインストールして構成しておく必要があります。 詳細については、[Intune On-premises Exchange Connector のインストール](exchange-connector-install.md)に関するページを参照してください
 
 1. **[割り当て]** で、**[組み込まれたグループ]** を選択します。  条件付きアクセスが適用されているセキュリティ ユーザー グループを使用します。 この操作では、ユーザーは自分のデバイスを Intune に登録し、コンプライアンス プロファイルに準拠する必要があります。
 

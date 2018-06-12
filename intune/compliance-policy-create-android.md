@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 559fd83d83c7312e0efe0d2c3f6bb7e5ec596a1b
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: 2277da45ad1404269571f36dec0c16443409b39f
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744705"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Intune で Android デバイス用のデバイス コンプライアンス ポリシーを追加する
 
@@ -122,6 +123,17 @@ Android の Intune デバイス コンプライアンス ポリシーでは、�
 - **[ポータル サイト アプリのランタイム整合性]**: ポータル サイト アプリの既定のランタイム環境がインストールされているかどうか、ポータル サイト アプリが適切に署名されているかどうか、デバッグ モードになっていないかどうか、既知の提供元からインストールされているかどうかを確認します。
 - **[デバイスでの USB デバッグをブロックする]** (Android 4.2 以降): 選択すると、デバイスで USB デバッグ機能を使用できなくなります。
 - **[最低限のセキュリティ パッチ レベル]** (Android 6.0 以降): デバイスに含めることができる最も古いセキュリティ パッチ レベルを選択します。 修正プログラムがこのレベルに達していないデバイスは非準拠になります。 日付は `YYYY-MM-DD` 形式で入力する必要があります。
+
+## <a name="locations"></a>場所
+
+ご利用のポリシーで、既存の場所から選択します。 場所をまだ用意していませんか。 「[Use Locations (network fence) in Intune](use-network-locations.md)」 (Intune で場所 (ネットワーク フェンス) を使用する) で方法が紹介されています。
+
+1. **[場所の選択]** を選択します。
+2. 一覧で場所にチェックマークを入れ、**[選択]** をクリックします。
+3. ポリシーを**保存**します。
+4. **[コンプライアンス非対応に対するアクション]** を選択します。 既定のアクションでは、デバイスがすぐに非対応としてマークされます。 このアクションは、場所を少なくとも 1 つ選択しているとき、選択されている場所にデバイスが接続されていない場合、適用されます。
+
+  デバイスを非対応としてマークするスケジュールを更新するように (たとえば、1 日後) このアクションを変更できます。 ご利用の場所でデバイスが非対応になったとき、ユーザーにメールを送信する 2 つ目のアクションを構成することもできます。
 
 ## <a name="assign-user-groups"></a>ユーザー グループを割り当てる
 

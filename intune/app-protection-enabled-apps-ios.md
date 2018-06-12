@@ -15,11 +15,12 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 172e99a38e3aef500fca8563079e3656e372089b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e1b2789c8f3b57bbc97e06e8793a96656f74a54d
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703283"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点
 
@@ -39,7 +40,7 @@ ms.lasthandoff: 04/26/2018
 
 ##  <a name="using-apps-with-multi-identity-support"></a>複数の ID を使用するアプリのサポート
 
-アプリ保護ポリシーは、ユーザーが作業に関連するデータにアクセスしようとした場合にのみ有効になります。  ユーザーが個人的に使用するためにアプリにアクセスする場合には、異なる動作になる場合があります。 
+アプリ保護ポリシーは、ユーザーが作業に関連するデータにアクセスしようとした場合にのみ有効になります。 ユーザーが個人的に使用するためにアプリへのアクセスを試みた場合には、異なる動作になる場合があります。 まだ保存されていない新しいコンテンツにもポリシーは適用されません。 新しいコンテンツは、SharePoint や OneDrive for Business などの企業内の場所に保存された後でのみ、会社の情報と見なされます。
 
 複数の ID をサポートするアプリの場合、Intune は、ユーザーが作業データにアクセスする場合のみアプリ保護ポリシーを適用します。  たとえば、ユーザーに PIN プロンプトが表示されるとします。  **Outlook アプリ**では、ユーザーがアプリを起動したときにプロンプトが表示されます。 **OneDrive アプリ** では、ユーザーが作業アカウントを入力するときに、プロンプトが表示されます。  Microsoft **Word**、**PowerPoint**、**Excel** では、ユーザーが会社の OneDrive のドキュメントにアクセスしたときに、プロンプトが表示されます。
 ##  <a name="managing-user-accounts-on-the-device"></a>デバイスのユーザー アカウントの管理
@@ -61,7 +62,7 @@ Intune が複数のユーザー アカウントを処理する方法について
 
 iOS デバイスを使用している場合は、同じデバイスに 2 つ目の作業アカウントを追加しようとすると、ブロック メッセージが表示されることがあります。  アカウントが表示され、削除するアカウントを選択できるようになります。
 
-![ブロック メッセージと、[はい] と [いいえ] オプショを表示しているダイアログ ボックスのスクリーンショット](./media/ios-switch-user.PNG)
+![ブロック メッセージと、[はい] と [いいえ] オプションを表示しているダイアログ ボックスのスクリーンショット](./media/ios-switch-user.PNG)
 
 ## <a name="next-steps"></a>次の手順
 [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](app-protection-enabled-apps-android.md)

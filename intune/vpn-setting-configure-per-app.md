@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/30/2018
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,26 +14,31 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a467983b0d6ce94c32080f4d5cd78683471fb58
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: ed58a6af9b2b4742582c92729e7324841014f31c
+ms.sourcegitcommit: 2bc3b9655517ae874c524c3a270f4fc40c448faa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34753894"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Intune での iOS デバイス用のアプリごとの Virtual Private Network (VPN) 設定
 
 管理対象のどのアプリが Intune で管理される iOS デバイスで仮想プライベート ネットワーク (VPN) を使用できるかを指定することができます。 Intune でアプリごとの VPN を作成すると、エンド ユーザーが会社のドキュメントにアクセスするときに自動的に VPN を通して接続します。
 
-現在のところ、アプリごとの VPN は次のプロバイダーで利用できます。 
+現在のところ、アプリごとの VPN は次のプロバイダーで利用できます。
 
- - Checkpoint Remote Access VPN
+ - Check Point Remote Access VPN
  - Cisco AnyConnect
+ - Citrix
  - F5
  - Pulse Connect Secure
  - SonicWall
-
+ - Palo Alto Networks GlobalProtect
 
 ## <a name="prerequisites-for-per-app-vpn"></a>アプリごとの VPN の前提条件
+
+> [!IMPORTANT]
+> VPN ベンダーには、特定のハードウェアやライセンスなど、アプリごとの VPN に関する他の特定の要件がある場合があります。 必ず、そのドキュメントを参照し、Intune でアプリごとの VPN を設定する前に前提条件を満たすようにしてください。
 
 身元を証明するため、VPN サーバーはデバイスによってプロンプトなしに受け入れられる必要がある証明書を提示します。 証明書の自動承認を確実に行うため、証明機関 (CA) によって発行された VPN サーバーのルート証明書を含む、信頼済み証明書プロファイルを作成します。 
 
@@ -138,7 +143,7 @@ VPN プロファイルには、クライアントの資格情報を含む SCEP �
 
 VPN プロファイルを追加した後、アプリと Azure AD グループをプロファイルに関連付けます。
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
 2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
 2. **[Mobile Apps]** を選択します。
 3. **[アプリ]** をクリックします。
@@ -162,14 +167,15 @@ VPN プロファイルを追加した後、アプリと Azure AD グループを
 
 ### <a name="before-you-attempt-to-connect"></a>接続を試行する前に
 
- - iOS 7 以降を実行していることを確認します。
+ - iOS 9 以降を実行していることを確認します。
  - 同じユーザーのグループに、前述の*すべての*ポリシーを展開しておきます。 展開されていないと、アプリごとの VPN がほぼ確実に中断します。  
  - サポートされているサード パーティ製 VPN アプリがインストールされていることを確認します。 次の VPN アプリがサポートされています。
-    - Pulse Secure
-    - Checkpoint
+    - Check Point Capsule Connect
     - Cisco AnyConnect
-    - F5
-    - SonicWall
+    - Citrix VPN
+    - F5 Access
+    - Pulse Secure
+    - SonicWall Mobile Connect
 
 ### <a name="connect-using-the-per-app-vpn"></a>アプリごとの VPN を使用して接続する
 

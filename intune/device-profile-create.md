@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3d46960e6ea7e2ae9bed6c0016ddc309bd15f572
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3f62e306574606ffa1eb1e6f242c3cb30b1a9c1b
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744654"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune でのデバイス プロファイルの作成
 
@@ -46,16 +47,19 @@ ms.lasthandoff: 04/16/2018
    - **[プロファイルの種類]**: 作成する種類を選択します。 リストは、選択したプラットフォームによって異なります。
    - **[設定]**: プロファイルの種類ごとの設定に関する説明については、次のトピックを参照してください。
 
-       -  [デバイス機能設定](device-features-configure.md)
-       -  [デバイスの制限設定](device-restrictions-configure.md)
-       -  [電子メールの設定](email-settings-configure.md)
-       -  [VPN 設定](vpn-settings-configure.md)
-       -  [Wi-Fi 設定](wi-fi-settings-configure.md)
-       -  [Windows 10 エディションのアップグレード設定](edition-upgrade-configure-windows-10.md)
-       -  [証明書の設定](certificates-configure.md)
-       -  [Windows 情報保護の設定](windows-information-protection-configure.md)
-       -  [教育設定](education-settings-configure.md)
-       -  [カスタム設定](custom-settings-configure.md)
+       -  [デバイスの機能](device-features-configure.md)
+       -  [デバイスの制限](device-restrictions-configure.md)
+       -  [Endpoint Protection](endpoint-protection-configure.md)
+       -  [キオスク](kiosk-settings.md)
+       -  [電子メール](email-settings-configure.md)
+       -  [VPN](vpn-settings-configure.md)
+       -  [Wi-Fi](wi-fi-settings-configure.md)
+       -  [Windows 10](education-settings-configure.md) と [iOS](wi-fi-settings-ios.md) 向けの教育
+       -  [Windows 10 エディションのアップグレード](edition-upgrade-configure-windows-10.md)
+       -  [iOS 更新ポリシー](software-updates-ios.md)
+       -  [証明書](certificates-configure.md)
+       -  [Windows 情報保護](windows-information-protection-configure.md)
+       -  [カスタム](custom-settings-configure.md)
 
      ![[プロファイルの作成] のスクリーンショット](./media/create-device-profile.png)
 
@@ -63,6 +67,5 @@ ms.lasthandoff: 04/16/2018
 
 プロファイルが作成され、リストに表示されます。
 
-
 ## <a name="next-steps"></a>次の手順
-デバイス プロファイルを割り当てるには、[Microsoft Intune でデバイス プロファイルを割り当てる方法](device-profile-assign.md)に関するページを参照してください。
+[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。

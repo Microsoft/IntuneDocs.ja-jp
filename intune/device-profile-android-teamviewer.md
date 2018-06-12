@@ -1,23 +1,24 @@
 ---
-title: "Microsoft Intune - Azure でデバイスをリモートで管理する | Microsoft Docs"
-description: "TeamViewer を使用するために必要なロールの表示、TeamViewer コネクタのインストール方法、Azure Portal で Microsoft Intune を使用してデバイスをリモートで管理する方法の段階的なガイダンス"
-keywords: 
+title: Microsoft Intune - Azure でデバイスをリモートで管理する | Microsoft Docs
+description: TeamViewer を使用するために必要なロールの表示、TeamViewer コネクタのインストール方法、Azure Portal で Microsoft Intune を使用してデバイスをリモートで管理する方法の段階的なガイダンス
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 64f6dd6bf787a6f590655f03ac8f04312836e0b5
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 60d9398b80a30adee194470ac4e5c6c1efc0bd4c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744637"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>TeamViewer を使用して、Intune デバイスをリモートで管理する
 
@@ -25,7 +26,7 @@ Intune で管理されているデバイスは、[TeamViewer](https://www.teamvi
 
 ## <a name="prerequisites"></a>必要条件
 
-- サポートされているデバイスを使用します。 Intune で管理された Android デバイスと Windows デバイスでは、リモート管理がサポートされます。 TeamViewer で Windows Holographic (HoloLens)、Windows Team (Surface Hub)、または Windows 10 S がサポートされない場合があります。サポートについては、[TeamViewer](https://www.teamviewer.com) で更新情報を確認してください。
+- サポートされているデバイスを使用します。 Intune で管理された Android デバイス、Windows デバイス、iOS デバイス、macOS デバイスでは、リモート管理がサポートされます。 TeamViewer で Windows Holographic (HoloLens)、Windows Team (Surface Hub)、または Windows 10 S がサポートされない場合があります。サポートについては、[TeamViewer](https://www.teamviewer.com) で更新情報を確認してください。
 
 - Azure Portal 内の Intune 管理者には、次の [Intune ロール](role-based-access-control.md)が必要です。  
 
