@@ -137,6 +137,7 @@
 ### [デバイスを手動で同期する](sync-your-device-manually-windows.md)
 
 ### [Windows に関する一般的な問題の解決](troubleshoot-your-device-windows.md)
+### [アクセス ポイント制限を解決する](resolve-access-point-restrictions.md)
 #### [Windows 10 デバイスが登録されない](troubleshoot-your-windows-10-device-windows.md)
 #### [Windows デバイスの更新](you-need-to-update-your-windows-device.md)
 #### [ポータル サイト アプリからログを送信する](send-logs-to-your-it-admin-cp-windows.md)
@@ -158,4 +159,3 @@
 ### [デバイスの削除](remove-your-device-cpwebsite.md)
 ### [デバイスのパスコードのリセット](reset-your-passcode-cpwebsite.md)
 ### [デバイスをリセットし、消去する](reset-erase-your-device-cpwebsite.md)
-### [デバイスを手動で同期する](sync-your-device-manually-cpwebsite.md)
