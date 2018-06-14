@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31836929"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune デバイスの管理とは
 
@@ -36,7 +37,7 @@ IT 管理者はデータをリスクから保護しながら、ユーザーが�
    - **[概要]** には登録済みデバイスのビジュアル スナップショットが表示されます。また、Android、iOS などのさまざまなプラットフォームを使用しているデバイスの数が表示されます。
    - **[すべてのデバイス]** には、管理する登録済みデバイスの一覧が示されます。
 
-     **エクスポート**機能を使用して、10,000 単位 (Internet Explorer) または 30,000 単位 (Edge、Chrome) ですべてのデバイスの .csv 一覧を作成します。
+     **エクスポート**機能を使用して、10,000 単位 (Internet Explorer) または 30,000 単位 (Microsoft Edge、Chrome) ですべてのデバイスの .csv 一覧を作成します。
 
      任意のデバイスを選択し、ハードウェアの詳細、インストールされているアプリ、そのコンプライアンス ポリシーの状態など、[デバイスに関する追加の詳細情報を表示](device-inventory.md)します。
 

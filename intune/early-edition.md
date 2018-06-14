@@ -191,7 +191,7 @@ Windows デバイスの場合は、**[ハードウェア]** タブ (**[グルー
 CSP でこのデータを取得する方法については、「[DeviceStatus CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/devicestatus-csp)」で DeviceStatus のエントリをご覧ください。
 
 ### <a name="intune-and-the-microsoft-edge-browser----1818969---"></a>Intune と Microsoft Edge ブラウザー <!-- 1818969 -->
-モバイル デバイス (iOS および Android) 向けの Microsoft Edge ブラウザーが、Intune アプリ保護ポリシーをサポートするようになります。 企業の Azure AD アカウントで Edge ブラウザー アプリケーションにサインインしたユーザーは、Intune によって保護されます。 
+モバイル デバイス (iOS および Android) 向けの Microsoft Edge ブラウザーが、Intune アプリ保護ポリシーをサポートするようになります。 企業の Azure AD アカウントで Microsoft Edge ブラウザー アプリケーションにサインインしたユーザーは、Intune によって保護されます。 
 
 ### <a name="new-languageregion-setting-when-configuring-oobe-for-autopilot----1821766---"></a>Autopilot の OOBE を構成するときの新しい言語/リージョンの設定 <!-- 1821766 -->
 Out of Box Experience (OOBE) の間に、Autopilot プロファイルの言語とリージョンを設定する、新しい構成設定を使用できます。

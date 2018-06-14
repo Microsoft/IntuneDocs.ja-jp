@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune - Azure での Windows Holographic for Business のデバイス制限 | Microsoft Docs
-description: 登録解除、位置情報、パスワード、アプリ ストアからのアプリのインストール、Edge の Cookie とポップアップ、Windows Defender、検索、クラウドと記憶域、Bluetooth の接続、システム時刻、Azure の使用状況データなど、Windows Holographic for Business の Microsoft Intune でのデバイス制限設定について説明し、これらの設定を構成します。
+description: 登録解除、位置情報、パスワード、アプリ ストアからのアプリのインストール、Microsoft Edge の Cookie とポップアップ、Windows Defender、検索、クラウドと記憶域、Bluetooth の接続、システム時刻、Azure の使用状況データなど、Windows Holographic for Business の Microsoft Intune でのデバイス制限設定について説明し、これらの設定を構成します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32327876"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Intune での Windows Holographic for Business のデバイス制限設定
 
