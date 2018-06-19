@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30755404"
 ---
 # <a name="fix-common-issues-with-your-macos-device"></a>macOS デバイスに関する一般的な問題を解決する
 

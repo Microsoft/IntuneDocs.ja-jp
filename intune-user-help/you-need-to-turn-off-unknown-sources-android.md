@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016137"
 ---
 # <a name="you-need-to-turn-off-unknown-sources"></a>不明なソースを無効にする必要がある
 

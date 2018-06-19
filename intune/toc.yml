@@ -11,6 +11,8 @@
       items:
         - name: グループへの変更
           href: groups-get-started.md
+        - name: レガシ Intune PC クライアント
+          href: intune-legacy-pc-client.md
     - name: 無料評価版にサインアップ
       href: free-trial-sign-up.md
     - name: 新機能
@@ -70,6 +72,8 @@
       href: common-scenarios.md
     - name: MAM のよく寄せられる質問
       href: mam-faq.md
+    - name: ポリシーとプロファイルのよく寄せられる質問
+      href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: 展開の計画
   items:
     - name: 計画ガイド
@@ -176,6 +180,8 @@
           items:
             - name: Android の登録を設定する
               href: android-enroll.md
+            - name: Android for Work デバイスを登録する
+              href: android-enterprise-overview.md
             - name: Samsung Knox Mobile Enrollment
               href: android-samsung-knox-mobile-enroll.md
         - name: iOS の登録の設定
@@ -196,6 +202,8 @@
     - name: デバイスの管理
       href: device-management.md
       items:
+        - name: デバイス管理機能
+          href: device-management-capabilities.md
         - name: アクティベーション ロックのバイパス
           href: device-activation-lock-bypass.md
         - name: Windows の新たに開始機能の管理
@@ -658,6 +666,14 @@
           href: monitor-audit-logs.md
         - name: アプリの保護ログのレビュー
           href: app-protection-policy-settings-log.md
+        - name: 電子メール プロファイルに関するトラブルシューティング
+          href: troubleshoot-email-profiles-in-microsoft-intune.md
+        - name: ソフトウェアの更新に関するトラブルシューティング
+          href: troubleshoot-software-updates-in-microsoft-intune.md
+        - name: Endpoint Protection に関するトラブルシューティング
+          href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+        - name: ポリシーに関するトラブルシューティング
+          href: troubleshoot-policies-in-microsoft-intune.md
     - name: 自動化とカスタマイズ
       items:
         - name: カスタム デバイス設定の構成

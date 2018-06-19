@@ -22,6 +22,7 @@ ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32327689"
 ---
 # <a name="email-logs-to-your-company-support"></a>電子メールでログを会社のサポートに送信する
 

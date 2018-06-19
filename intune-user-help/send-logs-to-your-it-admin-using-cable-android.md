@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015610"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>USB ケーブルを使用してログを会社のサポートに送信する
 

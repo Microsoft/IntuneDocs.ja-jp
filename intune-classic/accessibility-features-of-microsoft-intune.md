@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31013060"
 ---
 # <a name="accessibility-features-of-microsoft-intune"></a>Microsoft Intune のユーザー補助機能
 Microsoft Windows のアクセシビリティ機能と各種ツールに加え、Microsoft Intune には、障碍のある方に快適にご利用いただけるように、次のような機能が組み込まれています。ショートカット キーの使用

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32327706"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>iOS デバイスでの問題に関するエラーを会社のサポートに送信する
 iOS デバイスでポータル サイト アプリを利用しているとき、エラーが発生することがあります。 そのとき、会社のサポート担当者にエラーに関する詳細を電子メールで送信できます。 この詳細によって、問題を解決するために必要な背景を伝えることができます。

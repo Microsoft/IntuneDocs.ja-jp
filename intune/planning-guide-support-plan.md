@@ -1,16 +1,16 @@
 ---
-title: "サポート計画を作成する"
+title: サポート計画を作成する
 titlesuffix: Microsoft Intune
-description: "この記事では、Microsoft Intune 展開の Intune サポート計画の作成を支援します。"
-keywords: 
+description: この記事では、Microsoft Intune 展開の Intune サポート計画の作成を支援します。
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b9428769-4333-4778-b677-f23dea1f74da
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
@@ -20,6 +20,7 @@ ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/17/2018
+ms.locfileid: "29961428"
 ---
 # <a name="develop-a-support-plan"></a>サポート計画を作成する
 

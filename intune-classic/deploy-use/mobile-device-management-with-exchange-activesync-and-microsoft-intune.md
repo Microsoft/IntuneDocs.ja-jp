@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016749"
 ---
 # <a name="exchange-activesync-mobile-device-management-with-microsoft-intune"></a>Microsoft Intune を使用した Exchange ActiveSync モバイル デバイスの管理
 

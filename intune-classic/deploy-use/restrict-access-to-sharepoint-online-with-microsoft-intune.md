@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31027978"
 ---
 # <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>Microsoft Intune で SharePoint Online へのアクセスを保護する
 

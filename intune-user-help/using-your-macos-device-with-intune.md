@@ -22,6 +22,7 @@ ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/23/2018
+ms.locfileid: "31771858"
 ---
 # <a name="using-your-macos-device-with-intune"></a>macOS デバイスを Intune で使用する
 

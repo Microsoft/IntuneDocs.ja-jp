@@ -1,25 +1,26 @@
 ---
-title: "設計の作成"
+title: 設計の作成
 titlesuffix: Microsoft Intune
-description: "この記事では、Microsoft Intune のクラウド専用の設計と実装の設計を作成する方法について説明します。"
-keywords: 
+description: この記事では、Microsoft Intune のクラウド専用の設計と実装の設計を作成する方法について説明します。
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.custom: 
+ms.custom: ''
 ms.openlocfilehash: fd6c80c022f13b892d396768439e2c503d5425d9
 ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/17/2018
+ms.locfileid: "29962532"
 ---
 # <a name="create-a-design"></a>設計の作成
 

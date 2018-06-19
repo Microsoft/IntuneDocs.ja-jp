@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018483"
 ---
 # <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>アプリとアプリ ベースの CA を使用する場合の結果
 

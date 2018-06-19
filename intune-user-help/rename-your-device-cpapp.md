@@ -22,6 +22,7 @@ ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/09/2018
+ms.locfileid: "33915830"
 ---
 # <a name="rename-device-from-the-company-portal-app-for-windows"></a>Windows 用 Intune ポータル サイト アプリからデバイスの名前を変更する
 他のデバイスから認識しやすいようにデバイスの名前を変更します。 Windows 用 Intune ポータル サイト アプリでは、接続されている Windows、iOS、および Android デバイスの名前を変更できます。 

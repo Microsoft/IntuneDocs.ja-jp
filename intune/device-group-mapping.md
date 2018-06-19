@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31024415"
 ---
 # <a name="categorize-devices-into-groups-for-easier-management"></a>管理を容易にするためのデバイスのグループへの分類
 

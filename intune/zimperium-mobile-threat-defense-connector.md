@@ -1,16 +1,16 @@
 ---
-title: "Intune を使用した Zimperium MTD コネクタ"
+title: Intune を使用した Zimperium MTD コネクタ
 titleSuffix: Intune on Azure
-description: "モバイル デバイスから会社のリソースへのアクセスを制御するための Intune と Zimperium Mobile Threat Defense の統合について説明します。"
-keywords: 
+description: モバイル デバイスから会社のリソースへのアクセスを制御するための Intune と Zimperium Mobile Threat Defense の統合について説明します。
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 ms.reviewer: heenamac
 ms.suite: ems
@@ -20,6 +20,7 @@ ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/08/2018
+ms.locfileid: "29780069"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Zimperium Mobile Threat Defense コネクタと Intune
 

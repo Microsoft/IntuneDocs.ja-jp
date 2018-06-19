@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016409"
 ---
 # <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a>Intune で iOS デバイスを Device Enrollment Program に登録する
 

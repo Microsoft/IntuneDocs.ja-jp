@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021521"
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Microsoft Intune でアプリ保護ポリシーを監視する
 ユーザーに適用したアプリ保護ポリシーのコンプライアンス状態を監視できます。 アプリ保護ポリシーによって影響を受けるユーザー、コンプライアンスの状態、ユーザーに対して発生する可能性がある問題に関する情報を見つけることができます。

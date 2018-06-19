@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015423"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>既存の会社の電子メール アカウントが検出された
 

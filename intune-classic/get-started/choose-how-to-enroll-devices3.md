@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31025605"
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>モバイル デバイスの登録方法の選択
 

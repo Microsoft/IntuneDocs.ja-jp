@@ -17,6 +17,7 @@ ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/28/2018
+ms.locfileid: "32046317"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune での Work デバイスの制限設定
 

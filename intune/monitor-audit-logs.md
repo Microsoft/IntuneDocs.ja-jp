@@ -16,6 +16,7 @@ ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/17/2018
+ms.locfileid: "29962448"
 ---
 # <a name="audit-logs-for-intune-activities"></a>Intune のアクティビティの監査ログ
 監査ログには、Microsoft Intune で変更を行うアクティビティが記録されます。 作成、更新 (編集)、削除、割り当ての操作またはリモート タスクが実行されると、確認可能な監査イベントが生成されます。 Intune ワークロードの監査ログの大半を確認できます。 すべてのユーザーは既定で監査が有効になっています。無効にすることはできません。 監査イベントは、2017 年 12 月の機能リリース日から記録が開始されました。これよりも前の監査イベントは利用できません。

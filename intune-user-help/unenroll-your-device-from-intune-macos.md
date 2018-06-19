@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30752956"
 ---
 # <a name="unenroll-your-macos-device-from-intune"></a>Intune から macOS デバイスの登録を解除する
 

@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31022681"
 ---
 # <a name="restore-intune-managed-ios-devices-from-backup"></a>Intune の管理対象 iOS デバイスをバックアップから復元する
 

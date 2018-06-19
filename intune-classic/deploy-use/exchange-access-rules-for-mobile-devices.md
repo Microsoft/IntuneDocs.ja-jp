@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018738"
 ---
 # <a name="exchange-access-rules-for-mobile-devices"></a>モバイル デバイスの Exchange アクセス ルール
 

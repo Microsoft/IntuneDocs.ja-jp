@@ -18,6 +18,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31026654"
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune の用語集
 Microsoft Intune で使用される一般的な用語の定義を説明します。
