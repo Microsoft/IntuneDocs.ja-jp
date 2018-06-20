@@ -135,6 +135,7 @@
 ### [デバイスをリセットした場合の動作](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Microsoft による使用状況データの収集を無効にする](turn-off-microsoft-usage-data-collection-windows.md)
 ### [デバイスを手動で同期する](sync-your-device-manually-windows.md)
+### [Windows 10 デバイスからデバイスをリモートでロックする](remote-lock-your-device-cp-app.md) 
 
 ### [Windows に関する一般的な問題の解決](troubleshoot-your-device-windows.md)
 ### [アクセス ポイント制限を解決する](resolve-access-point-restrictions.md)
@@ -152,7 +153,7 @@
 #### [UAC を有効にする](you-need-to-enable-uac-windows.md)
 #### [Windows を更新する](you-need-to-update-os-build-version-windows.md)
 #### [Windows Defender を有効にする](turn-on-defender-windows.md)
-## [Windows 用ポータル サイト アプリからリモートでデバイスをロックする](remote-lock-your-device-cp-app.md) 
+
 ## [Intune ポータル サイト Web サイトの使用](using-the-intune-company-portal-website.md)
 ### [デバイスのリモートからのロック](remote-lock-your-device-cpwebsite.md)
 ### [デバイスの名前の変更](rename-your-device-cpwebsite.md)
