@@ -1,4 +1,4 @@
-﻿---
+---
 title: Microsoft Intune での Office 365 アプリのデータ管理
 titlesuffix: ''
 description: Microsoft Intune での Office 365 アプリのデータ管理について説明します。
@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 05/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,11 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 242ee454ec42c54bb9437fbdf0a7efeca926d193
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e6a89f7eb8520d43e38cba34c9ac7a01fd653a85
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34562128"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Microsoft Intune での管理対象の Office 365 アプリの基本的な保護に関するユーザー エクスペリエンス
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/16/2018
 
 このウィザードでは、次のポリシーが有効になります。
 
-**iOS**
+**Android**
 * [アプリ データの暗号化]
 
 **Android**
