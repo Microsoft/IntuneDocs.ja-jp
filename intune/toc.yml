@@ -291,9 +291,9 @@
         - name: アプリの構成
           href: app-configuration-policies-overview.md
           items:
-            - name: iOS 管理対象デバイス
+            - name: iOS マネージド デバイス
               href: app-configuration-policies-use-ios.md
-            - name: Android 管理対象デバイス
+            - name: Android マネージド デバイス
               href: app-configuration-policies-use-android.md
             - name: Managed apps
               href: app-configuration-policies-managed-app.md
@@ -557,6 +557,11 @@
               items:
                 - name: Zimperium と Intune の統合
                   href: zimperium-mtd-connector-integration.md
+            - name: Pradeo の設定
+              href: pradeo-mobile-threat-defense-connector.md
+              items:
+                - name: Pradeo と Intune の統合
+                  href: pradeo-mtd-connector-integration.md
             - name: MTD 用 Intune のセットアップ
               items:
                 - name: MTD アプリの追加
