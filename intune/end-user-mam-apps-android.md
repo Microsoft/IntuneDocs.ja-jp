@@ -14,12 +14,12 @@ ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: tisilver
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 88fa0d58bc982148b44233e7486a4ce0a2e8598a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3e479ae9e3cd2caf6b893cb75f9af8fde2340f0c
+ms.sourcegitcommit: d786eb18147a12fbc8cb97a157467f88591f1bc5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31023038"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37133988"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>アプリ保護ポリシーを使用して Android アプリを管理するときの注意点
 
@@ -72,9 +72,10 @@ Android デバイスで会社の AV、PDF、画像ファイルを表示するに
 * **ドキュメント:** PDF、PPDF
 
 
-|**pfile**|**テキスト**|
-|----|----|
-|pfile は、保護するファイル向けの汎用的な "ラッパー" 形式です。暗号化されたコンテンツと Azure Information Protection ライセンスをカプセル化します。 任意のファイルの種類を保護できます。|XML、CSV などのテキスト ファイルは、保護されているときでもアプリで開いて表示できます。 ファイルの種類: .txt、.ptxt、.csv、.pcsv、.log、.plog、.xml、.pxml。|
+|**pfile**|
+|----|
+|pfile は、保護するファイル向けの汎用的な "ラッパー" 形式です。暗号化されたコンテンツと Azure Information Protection ライセンスをカプセル化します。 任意のファイルの種類を保護できます。|
 
 ## <a name="next-steps"></a>次の手順
-[アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](end-user-mam-apps-ios.md)
+
+  [アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](end-user-mam-apps-ios.md)

@@ -14,11 +14,12 @@ ms.technology: ''
 ms.assetid: 8190814-07f0-42d8-9b3a-87c67dd2b7ed
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09b94ad2109c41ad02e8da7267690c31ba296bae
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 183acfc36e77aab85fa086452e00561c521dd830
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34475610"
 ---
 # <a name="turn-on-ios-supervised-mode"></a>iOS の監視モードを有効にする
 
@@ -33,7 +34,7 @@ Intune は Apple [Device Enrollment Program (DEP)](device-enrollment-program-enr
 
 ## <a name="turn-on-supervised-mode-during-enrollment"></a>登録時に監視モードで有効にする
 
-Intune では、[DEP で Apple 登録プロファイルを作成](https://docs.microsoft.com/en-us/intune/device-enrollment-program-enroll-ios#create-an-apple-enrollment-profile)するときに、デバイスの監視モードを有効にすることができます。 **[デバイス管理の設定]** で、**[監督下]** チェック ボックスをオンにします。
+Intune では、[DEP で Apple 登録プロファイルを作成](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios#create-an-apple-enrollment-profile)するときに、デバイスの監視モードを有効にすることができます。 **[デバイス管理の設定]** で、**[監督下]** チェック ボックスをオンにします。
 
 ## <a name="turn-on-supervised-mode-after-enrollment"></a>登録後に監視モードで有効にする
 

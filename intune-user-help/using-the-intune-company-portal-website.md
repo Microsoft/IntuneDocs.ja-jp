@@ -17,11 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: eca19c189a48e8173232cfe6fde9e33eb6fb1090
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 83dd6265d4d34ea46a7299e3a6bdf8a06baa30c1
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34762231"
 ---
 # <a name="using-the-intune-company-portal-website"></a>Intune ポータル サイト Web サイトの使用
 [ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)は、Intune で登録したコンピューターとデバイスの管理にエンド ユーザーが使用できる Web ページです。
@@ -37,8 +38,6 @@ ms.lasthandoff: 04/16/2018
 -   [デバイスのパスコードのリセット](reset-your-passcode-cpwebsite.md)
 
 -   [デバイスのリモート ロック](remote-lock-your-device-cpwebsite.md)
-
--   [デバイスを手動で同期してアプリのインストールにかかる時間を短縮](sync-your-device-manually-cpwebsite.md)
 
 -   会社のサポートの連絡先情報の検索 (構成している場合)
 
