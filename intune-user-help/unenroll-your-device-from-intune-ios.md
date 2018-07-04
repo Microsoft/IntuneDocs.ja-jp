@@ -17,11 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2df474e8b0a5af2ac294715135804ef0713a3015
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 0a90cace32edb33293ba0b0b89d272465ea32418
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34547490"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>Intune から iOS デバイスを削除する
 
@@ -59,6 +60,8 @@ Intune からデバイスを削除するには、これらの手順を使用す�
   -   会社の電子メールのプロファイルはデバイスから削除されます。
 
   -   電子メール専用に構成されているデバイスは、ポータル サイト アプリまたは Web サイトに表示されなくなります。
+  
+  -   アプリはアンインストールされます。 会社のアプリ データは削除されます。
 
 ## <a name="removing-data-collected-by-the-company-portal-app"></a>ポータル サイト アプリによって収集されたデータを削除する
 

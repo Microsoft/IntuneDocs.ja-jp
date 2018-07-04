@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 05/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,12 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f08dde25de5962eaaa11487a367b2895c6c047d4
-ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
+ms.openlocfilehash: 61df998dae611eb7350fa144260780b5589afc61
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34762248"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 
@@ -118,18 +119,18 @@ WIP の学習は、WIP が有効なアプリおよび WIP にとって不明な�
 <!-- 1631908 -->
 WIP が有効になっているアプリの情報を表示できるだけでなく、作業データを Web サイトで共有しているデバイスの概要も表示できます。 この情報を使用して、グループおよびユーザーの WIP ポリシーに追加する Web サイトを判断できます。 概要には、WIP が有効なアプリからアクセスされる Web サイトの URL が示されます。
 
-WIP が有効なアプリおよび WIP にとって不明なアプリを使用する場合は、まず、**[サイレント]** または **[上書きの許可]** を使用し、保護されたアプリの一覧に適切なアプリが含まれる小規模なグループで確認することをお勧めします。 それが済んだ後、最終的な適用ポリシーである **[ブロック]** に変更できます。
+WIP が有効なアプリおよび WIP にとって不明なアプリを使用する場合は、まず、**[サイレント]** または **[オーバーライドの許可]** を使用し、保護されたアプリの一覧に適切なアプリが含まれる小規模なグループで確認することをお勧めします。 それが済んだ後、最終的な適用ポリシーである **[ブロック]** に変更できます。
 
 ### <a name="what-are-the-protection-modes"></a>保護モードの種類
 
 #### <a name="block"></a>ブロック
 WIP は不適切なデータ共有行為を検索し、ユーザーが操作を完了できないようにします。 これには、会社で保護されていないアプリ間での情報の共有や、組織外の他のユーザーやデバイス間での会社データの共有などが含まれます。
 
-#### <a name="allow-overrides"></a>上書きの許可
-WIP は不適切なデータ共有を検索し、ユーザーが危険なことを行うと警告します。 ただし、このモードでは、ユーザーはポリシーを上書きしてデータを共有することができ、その操作は監査ログに記録されます。
+#### <a name="allow-overrides"></a>オーバーライドの許可
+WIP は不適切なデータ共有を検索し、ユーザーが危険なことを行うと警告します。 ただし、このモードでは、ユーザーはポリシーをオーバーライドしてデータを共有することができ、その操作は監査ログに記録されます。
 
 #### <a name="silent"></a>サイレント
-WIP はサイレントで実行し、不適切なデータ共有をログに記録します。"上書きの許可" モードで従業員にメッセージが表示される行為もブロックしません。 ネットワーク リソースや WIP で保護されたデータへのアプリによる不適切なアクセスの試みなど、許可されていない操作は停止されます。
+WIP はサイレントで実行し、不適切なデータ共有をログに記録します。"オーバーライドの許可" モードで従業員にメッセージが表示される行為もブロックしません。 ネットワーク リソースや WIP で保護されたデータへのアプリによる不適切なアクセスの試みなど、許可されていない操作は停止されます。
 
 #### <a name="off-not-recommended"></a>オフ (非推奨)
 WIP は無効になり、データの保護または監査には役立ちません。
