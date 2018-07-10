@@ -14,11 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 93ecf7b66be25f0f93456d5419ef1f57b8ca7efe
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: ac85478abed049487c028c58637e7937876d2198
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34449872"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android 用 Microsoft Intune アプリ SDK 開発者ガイド
 
@@ -462,7 +463,7 @@ ADAL を使用してアプリを構成する一般的な方法を次に示しま
 
 必要に応じて、Authority と NonBrokerRedirectURI を指定できます。
 
-Intune SDK チームから、アプリのアプリケーション ID (クライアント ID) が求められます。 これは、[Azure portal](https://portal.azure.com/) の **[すべてのアプリ]** の **[アプリケーション ID]** の列にあります。 AAD へのアプリケーションの登録については、[こちら](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications)を参照してください。 Intune SDK チームには msintuneappsdk@microsoft.com でアクセスできます。
+Intune SDK チームから、アプリのアプリケーション ID (クライアント ID) が求められます。 これは、[Azure portal](https://portal.azure.com/) の **[すべてのアプリ]** の **[アプリケーション ID]** の列にあります。 Azure AD へのアプリケーションの登録については、[こちら](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications)を参照してください。 Intune SDK チームには msintuneappsdk@microsoft.com でアクセスできます。
 
 以下の「[条件付きアクセス](#conditional-access)」の要件も参照してください。
 
@@ -472,22 +473,31 @@ Intune SDK チームから、アプリのアプリケーション ID (クライ�
     |--|--|
     | ClientID | アプリの ClientID (アプリが登録されるときに Azure AD によって生成される) |
     | SkipBroker | **True** |
+    
+    必要に応じて、Authority と NonBrokerRedirectURI を指定できます。
 
-必要に応じて、Authority と NonBrokerRedirectURI を指定できます。
 
 ### <a name="conditional-access"></a>条件付きアクセス
-条件付きアクセス (CA) は Azure Active Directory の[機能](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer)です。これを使用して、AAD リソースへのアクセスを制御できます。  [Intune 管理者は、CA ルールを定義できます](https://docs.microsoft.com/en-us/intune/conditional-access)。このルールで、Intune によって管理されるデバイスまたはアプリのみからのリソース アクセスを許可します。 必要に応じてアプリが確実にリソースにアクセスできるようにするには、以下の手順に従う必要があります。 アプリで AAD アクセス トークンを取得しないか、CA で保護できないリソースのみにアクセスする場合は、これらの手順をスキップしてもかまいません。
+
+条件付きアクセス (CA) は Azure Active Directory の[機能](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)です。これを使用して、AAD リソースへのアクセスを制御できます。 
+  [Intune 管理者は、CA ルールを定義できます](https://docs.microsoft.com/intune/conditional-access)。このルールで、Intune によって管理されるデバイスまたはアプリのみからのリソース アクセスを許可します。 必要に応じてアプリが確実にリソースにアクセスできるようにするには、以下の手順に従う必要があります。 アプリで AAD アクセス トークンを取得しないか、CA で保護できないリソースのみにアクセスする場合は、これらの手順をスキップしてもかまいません。
 
 1. [ADAL の統合に関するガイドライン](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library)に従ってください。 
-   特にブローカーの使用に関する手順 11 を参照してください
-2. [Azure Active Directory にアプリケーションを登録します] (https://docs.microsoft.com/en-us/azure/active-directory/active-directory-app-registration)。 
-   リダイレクト URI は、上記の ADAL の統合に関するガイドラインで確認できます。
+   特にブローカーの使用に関する手順 11 を参照してください。
+
+2. [Azure Active Directory にアプリケーションを登録します](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration)。 リダイレクト URI は、上記の ADAL の統合に関するガイドラインで確認できます。
+
 3. 上記の項目 2 の [ADAL の一般的な構成](#common-adal-configurations)ごとにマニフェスト メタデータ パラメーターを設定します。
-4. すべて正しく構成されていることをテストします。その場合、[Azure portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) から[デバイス ベースの CA](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use) を有効にして、以下を確認します。
-    - アプリへのサインイン時に Intune ポータル サイトのインストールと登録が求められる
-    - 登録後、アプリへのサインインが正常に完了する。
-5. アプリで Intune APP SDK の統合が提供されたら、msintuneappsdk@microsoft.com に連絡して、[アプリベース条件付きアクセス](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)の承認済みアプリ リストへの追加を依頼します
-6. アプリが承認済みリストに追加されたら、[アプリベースの CA を構成](https://docs.microsoft.com/en-us/intune/app-based-conditional-access-intune-create)し、アプリへのサインインが正常に完了したことを確認して検証します。
+
+4. すべて正しく構成されていることをテストします。その場合、[Azure portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) から[デバイス ベースの CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use) を有効にして、以下を確認します。
+* アプリへのサインイン時に Intune ポータル サイトのインストールと登録が求められる
+* 登録後、アプリへのサインインが正常に完了する。
+
+5. アプリで Intune APP SDK の統合が提供されたら、msintuneappsdk@microsoft.com に連絡して、[アプリベース条件付きアクセス](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)の承認済みアプリ リストへの追加を依頼します。
+
+6. アプリが承認済みリストに追加されたら、[アプリベースの CA を構成](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create)し、アプリへのサインインが正常に完了したことを確認して検証します。
+
+
 ## <a name="app-protection-policy-without-device-enrollment"></a>デバイス登録が不要なアプリの保護ポリシー
 
 ### <a name="overview"></a>概要
@@ -683,7 +693,7 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 | COMPANY_PORTAL_REQUIRED | Intune でユーザーがライセンスされていますが、ポータル サイト アプリがデバイスにインストールされるまで、アプリを登録することはできません。 Intune アプリ SDK は、特定のユーザーのアプリへのアクセスをブロックし、ポータル サイト アプリ (詳細については以下を参照してください) をインストールすることをユーザーに指示します。 |
 
 
-### <a name="company-portal-requirement-prompt-override-optional"></a>ポータル サイトの要件のプロンプトの上書き (省略可能)
+### <a name="company-portal-requirement-prompt-override-optional"></a>ポータル サイトの要件のプロンプトのオーバーライド (省略可能)
 
 `COMPANY_PORTAL_REQUIRED` の結果が受信された場合、SDK は登録が要求された対象の ID を使用したアクティビティの使用をブロックします。 代わりに、SDK は、それらアクティビティでポータル サイトをダウンロードするためのプロンプトを表示させます。 アプリでこの動作を回避する場合は、アクティビティで `MAMActivity.onMAMCompanyPortalRequired` を実装できます。
 
@@ -905,7 +915,7 @@ ID を設定するために使用されるすべてのメソッドは、`MAMIden
      public final void switchMAMIdentity(final String newIdentity);
 ```
 
-アプリでアクティビティの ID 変更の試行結果通知を受ける必要がある場合は、`MAMActivity` のメソッドを上書きすることもできます。
+アプリでアクティビティの ID 変更の試行結果通知を受ける必要がある場合は、`MAMActivity` のメソッドをオーバーライドすることもできます。
 
 ``` java
     public void onSwitchMAMIdentityComplete(final MAMIdentitySwitchResult result);
@@ -932,7 +942,8 @@ ID を設定するために使用されるすべてのメソッドは、`MAMIden
 
   **例:** ユーザーが `Resume` 中に認証プロンプトを取り消した場合、空の ID に暗黙的に切り替えられます。
 
-  アプリはこれらの変更を認識し、必要に応じて禁止することができます。 `MAMService` および `MAMContentProvider` は、サブクラスで上書きできる以下のメソッドを公開します。
+  アプリはこれらの変更を認識し、必要に応じて禁止することができます。 
+  `MAMService` および `MAMContentProvider` は、サブクラスでオーバーライドできる以下のメソッドを公開します。
 
   ```java
   public void onMAMIdentitySwitchRequired(final String identity,
@@ -989,7 +1000,7 @@ ID を設定するために使用されるすべてのメソッドは、`MAMIden
 UI スレッドに対する操作は、バック グラウンド タスクを別のスレッドにディスパッチするのが一般的です。 マルチ ID アプリでは、このようなバック グラウンド タスクが適切な ID で動作していることを確認する必要があります。多くの場合は、バック グラウンド タスクをディスパッチしたアクティビティで使用される ID と同じものになります。 MAM SDK では、ID を保持するのに便利な機能として `MAMAsyncTask` と `MAMIdentityExecutors` を提供しています。
 #### <a name="mamasynctask"></a>MAMAsyncTask
 
-`MAMAsyncTask` を使用するには、AsyncTask ではなく MAMAsyncTask を継承し、`doInBackground` の上書きを `doInBackgroundMAM` に、`onPreExecute` の上書きを `onPreExecuteMAM` に置換するだけです。 `MAMAsyncTask` コンストラクターは、アクティビティ コンテキストを取ります。 次に例を示します。
+`MAMAsyncTask` を使用するには、AsyncTask ではなく MAMAsyncTask を継承し、`doInBackground` のオーバーライドを `doInBackgroundMAM` に、`onPreExecute` のオーバーライドを `onPreExecuteMAM` に置換するだけです。 `MAMAsyncTask` コンストラクターは、アクティビティ コンテキストを取ります。 次に例を示します。
 
 ```java
   AsyncTask<Object, Object, Object> task = new MAMAsyncTask<Object, Object, Object>(thisActivity) {
@@ -1371,8 +1382,7 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
 
 
 ### <a name="how-to-customize"></a>カスタマイズする方法
-スタイルの変更を Intune MAM のビューに適用するには、まず、スタイルの上書きの XML ファイルを作成する必要があります。 このファイルは、アプリの "res/xml" ディレクトリに配置する必要があり、自由に名前を付けることができます。 このファイルが従う必要がある形式の例を以下に示します。
-
+スタイルの変更を Intune MAM のビューに適用するには、まず、スタイルのオーバーライドの XML ファイルを作成する必要があります。 このファイルは、アプリの "res/xml" ディレクトリに配置する必要があり、自由に名前を付けることができます。 このファイルが従う必要がある形式の例を以下に示します。
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <styleOverrides>
@@ -1402,7 +1412,7 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
 | アクセント カラー | 強調表示したときの PIN ボックスの枠線 <br> ハイパーリンク |accent_color | 色 |
 | アプリのロゴ | Intune アプリの PIN 画面に表示される大きなアイコン | logo_image | Drawable |
 
-## <a name="working-with-app-we-service-enrollment-sdk-integrated-android-lob-app-and-adal-sso-optional"></a>APP-WE サービス登録、SDK に統合された Android LOB アプリ、ADAL SSO の使用 (省略可能)
+## <a name="default-enrollment-optional"></a>既定の登録 (オプション)
 <!-- Requiring user login prompt for an automatic APP-WE service enrollment, requiring Intune app protection policies in order to use your SDK-integrated Android LOB app, and enabling ADAL SSO (optional) -->
 
 ここでは、自動 APP-WE サービス登録の場合にアプリの起動時にユーザー プロンプトを必須にする (このセクションでは、**既定の登録**と呼びます) 場合と、Intune で保護されたユーザーにのみ SDK に統合された Android LOB アプリの使用を許可する Intune アプリ保護ポリシーを必須にする場合のガイダンスを示します。 また、SDK に統合された Android LOB アプリで SSO を有効にする方法についても説明します。 Intune 以外のユーザーが使用できるストア アプリでは、この方法は**サポートされません**。
@@ -1414,7 +1424,7 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
 * Intune SDK チームから、アプリのアプリケーション ID が求められます。 アプリケーション ID は、[Azure Portal](https://portal.azure.com/) の **[すべてのアプリ]** の **[アプリケーション ID]** の列にあります。 Intune SDK チームに問い合わせるには、msintuneappsdk@microsoft.com に電子メールを送信することをお勧めします。
 
 ### <a name="working-with-the-intune-sdk"></a>Intune SDK の使用
-これらの手順は、エンド ユーザー デバイスで使用するために Intune アプリ保護ポリシーが必要なすべての Android および Xamarin アプリ向けです。
+これらの手順は、エンド ユーザー デバイスで使用するアプリのために Intune アプリ保護ポリシーが必要なすべての Android および Xamarin アプリの開発者向けです。
 
 1. [Android 用 Intune SDK ガイド](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)のセクションで定義されている手順を使用して ADAL を構成します。
    > [!NOTE] 

@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c63e632036d38fb1fde2e4b26313b4447b9db25e
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 4535bdfa9b801c605c70c0a9dad900d76044eab4
+ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744586"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37844982"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune ポータル サイト アプリを構成する方法
 
@@ -56,7 +56,7 @@ ms.locfileid: "34744586"
 |**電話番号** | 20 | この連絡先の電話番号は、従業員がサポートを必要とする場合に連絡できるように、**[IT に連絡]** ページに表示されます。 |
 |**電子メール アドレス**| 40 | **[IT に連絡]** ページに表示される連絡先の電子メール アドレスです。 `alias@domainname.com` の形式で有効な電子メール アドレスを入力する必要があります。 |
 |**Web サイト名**| 40 | サポート Web サイトの URL に表示されるフレンドリ名です。 サポート Web サイトの URL を指定し、フレンドリ名を指定しない場合、ポータル サイトの **[IT に連絡]** ページに [IT Web サイトに移動する] が表示されます。 |
-|**Web サイトの URL**| 150 | ユーザーが使用するサポート Web サイトがある場合、その URL を指定します。 URL は、**https://www.contoso.com** の形式である必要があります。 URL を指定しない場合、ポータル サイトの **[IT に連絡]** ページのサポート Web サイトには何も表示されません。 |
+|**Web サイトの URL**| 150 | ユーザーが使用するサポート Web サイトがある場合、その URL を指定します。 URL は、 `https://www.contoso.com` の形式である必要があります。 URL を指定しない場合、ポータル サイトの **[IT に連絡]** ページのサポート Web サイトには何も表示されません。 |
 | **追加情報**| 120 | **[IT に連絡]** ページに表示されます。 |
 
 
