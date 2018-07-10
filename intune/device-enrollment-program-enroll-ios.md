@@ -15,11 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f6f16bfd148e3c386aaf0ced78381e1eed8ae47
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: 8c0eda06c0c781f0a789034abbf5ef8799a9b45c
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34474448"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する
 
@@ -171,8 +172,8 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
 
 13. プロファイルを保存するには、**[作成]** を選択します。
 
-## <a name="sync-managed-devices"></a>管理対象デバイスを同期する
-デバイスを管理するアクセス許可を Intune に割り当てたので、Intune と Apple を同期して、管理対象デバイスを Azure ポータルの Intune に表示できます。
+## <a name="sync-managed-devices"></a>マネージド デバイスを同期する
+デバイスを管理するアクセス許可を Intune に割り当てたので、Intune と Apple を同期して、マネージド デバイスを Azure ポータルの Intune に表示できます。
 
 1. Azure ポータルの Intune で、**[デバイスの登録]**>**[Apple の登録]**>**[Enrollment Program トークン]** の順に選択し、リスト内でトークンを選択し、**[デバイス]**>**[同期]** の順に選択します。![[Enrollment Program デバイス] ノードと [同期] リンクが選ばれているスクリーンショット。](./media/device-enrollment-program-enroll-ios/image06.png)
 
@@ -206,13 +207,17 @@ Apple と Intune の間の同期と管理を有効にし、DEP デバイスを�
 ## <a name="renew-a-dep-token"></a>DEP トークンを更新する  
 1. deploy.apple.com に移動します。  
 2. **[サーバーの管理]** で、更新するトークン ファイルに関連付けられた MDM サーバーを選択します。
-3. **[新しいトークンの生成]** を選択します。  
+3. **[新しいトークンの生成]** を選択します。
+
+    ![生成された新しいトークンのスクリーンショット。](./media/device-enrollment-program-enroll-ios/generatenewtoken.png)
+
 4. **[Your Server Token]\(サーバー トークン\)** を選択します。  
-5. [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]** の順に選択します。  
-6. トークンを選択し、**[トークンを更新する]** を選択します。  
-7. 元のトークンの作成に使用した Apple ID を入力します。  
+5. [Azure portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]**、トークンの順に選択します。
+    ![Enrollment Program トークンのスクリーンショット。](./media/device-enrollment-program-enroll-ios/enrollmentprogramtokens.png)
+
+6. **[トークンを更新する]** を選択し、元のトークンの作成に使用した Apple ID を入力します。  
+    ![生成された新しいトークンのスクリーンショット。](./media/device-enrollment-program-enroll-ios/renewtoken.png)
+
 8. 新しくダウンロードしたトークンをアップロードします。  
 9. **[トークンを更新する]** を選択します。 トークンが更新されたことの確認が表示されます。   
-
-
-
+    ![確認のスクリーンショット。](./media/device-enrollment-program-enroll-ios/confirmation.png)

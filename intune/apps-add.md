@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/16/2018
+ms.date: 06/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 75e36456c03cd0a769e9741606a2b70fa7e49c35
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: caed42642a87d38076f755cd356cc7ab7c6a3d8a
+ms.sourcegitcommit: 95ffcd5ddd3e5df7d68ae75218c5ff2ea076133e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744994"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36263406"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune にアプリを追加する
 
@@ -56,8 +56,8 @@ Intune では、広範囲に及ぶさまざまな種類のアプリをサポー�
 | macOS 用の Office 365 アプリ | ストア アプリ (Office 365) | **[アプリの種類]** として **[Office 365 スイート]** の下から **[macOS]** を選択し、Office 365 アプリ スイートを選択します。 |
 | Android 基幹業務 (LOB) アプリ | LOB アプリ | **[アプリの種類]** として **[基幹業務]** を選択し、**[アプリのパッケージ ファイル]** を選択し、拡張子が **.apk** の Android のインストール ファイルを入力します。  |
 | iOS LOB アプリ | LOB アプリ | **[アプリの種類]** として **[基幹業務]** を選択し、**[アプリのパッケージ ファイル]** を選択し、拡張子が **.ipa** の iOS のインストール ファイルを入力します。  |
-| Windows Phone LOB アプリ | LOB アプリ | **[アプリの種類]** として **[基幹業務]** を選択し、**[アプリのパッケージ ファイル]** を選択し、拡張子が **.xap** の iOS のインストール ファイルを入力します。  |
-| Windows LOB アプリ | LOB アプリ | [アプリの種類] として **[基幹業務]** を選択し、**[アプリのパッケージ ファイル]** を選択し、拡張子が **.msi**、**.appx**、または **.appxbundle** の iOS のインストール ファイルを入力します。 |
+| Windows Phone LOB アプリ | LOB アプリ | **[アプリの種類]** として **[基幹業務]** を選択し、**[アプリのパッケージ ファイル]** を選択し、拡張子が **.xap** の Windows Phone のインストール ファイルを入力します。  |
+| Windows LOB アプリ | LOB アプリ | アプリの種類として **[基幹業務]** を選択し、**[アプリのパッケージ ファイル]** を選択し、拡張子が **.msi**、**.appx**、または **.appxbundle** の Windows のインストール ファイルを入力します。 |
 | 組み込みの iOS アプリ  | 組み込みアプリ | **[アプリの種類]** として **[組み込みアプリ]** を選択し、提供されているアプリの一覧から、組み込みアプリを選択します。  |
 | 組み込みの Android アプリ  | 組み込みアプリ | **[アプリの種類]** として **[組み込みアプリ]** を選択し、提供されているアプリの一覧から、組み込みアプリを選択します。  |
 | Web アプリ  | Web アプリ  | **[アプリの種類]** として **[Web リンク]** を選択し、Web アプリを指す有効な URL を入力します。  |

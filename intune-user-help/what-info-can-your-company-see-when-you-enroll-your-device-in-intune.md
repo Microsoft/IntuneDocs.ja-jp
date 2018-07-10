@@ -16,18 +16,18 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 7e722195ce1b1b34a65cd8e936ad8a702f145691
-ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
+ms.openlocfilehash: ad949cc9d20e0e46ab986b4646059af733018255
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34308876"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232808"
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>デバイスを登録した場合に会社が確認できる情報
 
-デバイスを管理対象として登録すると、デバイス上の特定の情報を表示する権限を会社に与えることになります。これは、デバイス上の会社のデータを保護するのに役立ちます。
+Microsoft Intune にデバイスを登録しても、会社はユーザーの個人情報を閲覧できません。 デバイスを登録すると、デバイスのモデルやシリアル番号など、デバイスに関する特定の情報を閲覧するアクセス許可が会社に付与されます。 会社はこの情報を使用して、デバイス上の会社データを保護します。
 
-**会社が確認できない情報**
+**会社が確認できない情報:**
 
 - 通話と Web 閲覧の履歴
 - 電子メールとテキスト メッセージ
@@ -36,7 +36,7 @@ ms.locfileid: "34308876"
 -   パスワード
 - フォト アプリやカメラ ロールの内容を含む、画像
 
-**会社が常に確認できる情報**
+**会社が常に確認できる情報:**
 
 - デバイス モデル (例: Google Pixel)
 - 製造元 (例: Microsoft)
@@ -46,7 +46,7 @@ ms.locfileid: "34308876"
 - デバイス名
 - シリアル番号
 
-**会社が確認できる場合がある情報**
+**会社が確認できる場合がある情報:**
 
 -  電話番号: **会社**が所有するデバイスの場合は、ユーザーの電話番号を確認できます。 **個人**が所有するデバイスの場合は、会社が確認できるのは、ユーザーの電話番号の最後の 4 桁のみです。 個々のデバイスの**所有権の種類**を確認するには、デバイスの **[デバイスの詳細]** ページを開きます。
 -  場所: 監視対象となっている iOS デバイスを紛失した場合を除き、会社はユーザーのデバイスの場所を確認できません。 [確認方法](https://go.microsoft.com/fwlink/?linkid=853816)

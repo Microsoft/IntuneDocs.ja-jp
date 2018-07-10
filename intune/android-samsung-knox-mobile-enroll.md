@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88cb733c688019b2fc5455a0184e968d91e77806
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: d5ac976e07c98fae0941168cc94b5afc5ca09616
+ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2018
-ms.locfileid: "33915813"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36964710"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Samsung の Knox Mobile Enrollment を使用して Android デバイスを自動的に登録する
 
@@ -120,6 +120,8 @@ MDM プロファイルを作成して割り当て、ユーザー名を関連付�
 - **Google デバイス所有者モード:** KME を使用して Google デバイス所有者モードでの登録は、このプレビューではサポートされません。 このシナリオは現在調査中です。
 
 - **"パスワード" フィールドが無視される:** Knox ポータルの **[Device details]\(デバイスの詳細\)** で **[Password]\(パスワード\)** フィールドを設定した場合、Intune ポータル サイト アプリでは無視されます。 エンド ユーザーは、デバイス登録を完了するにはデバイスでパスワードを入力する必要があります。
+
+- **"Android エンタープライズ登録"** KME では、Android エンタープライズ登録をサポートしていません。
 
 ## <a name="getting-support"></a>サポートの入手
 詳細については、[Samsung KME のサポートを取得する方法](https://docs.samsungknox.com/KME-Getting-Started/Content/to-get-kme-support.htm)をご覧ください。

@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eee162425d80a443976d00f9594673a35ce08be1
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2456970c4be7beab7523137df36aba23e49f2852
+ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35291599"
 ---
 # <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Microsoft Intune の Windows Phone 8.1 デバイス制限設定
 
@@ -57,7 +58,8 @@ ms.lasthandoff: 04/26/2018
 
 制限付きアプリの一覧では、次の一覧のいずれかを構成できます。
 
-**[ブロックされたアプリケーション]** の一覧 - ユーザーによるインストールと実行が許可されていないアプリ (Intune で管理されていない) アプリを一覧表示します。
+
+  **[ブロックされたアプリケーション]** の一覧 - ユーザーによるインストールと実行が許可されていないアプリ (Intune で管理されていない) アプリを一覧表示します。
 **[許可されたアプリ]** の一覧 - ユーザーによるインストールが許可されているアプリを一覧表示します。 管理対象アプリは Intune で自動的に許可されます。
 
 この一覧を構成するには、**[追加]** をクリックし、任意の名前、アプリの発行元 (省略可能)、アプリ ストアでのアプリの URL を指定します。
@@ -70,7 +72,7 @@ ms.lasthandoff: 04/26/2018
 
 アプリのページを開き、URL をクリップボードにコピーします。 許可されているアプリまたはブロックされているアプリの一覧で、これを URL として使用できます。
 
-例: ストアで Skype アプリを検索します。 使用する URL は **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51** です。
+例: ストアで Skype アプリを検索します。 使用する URL は `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51` です。
 
 
 

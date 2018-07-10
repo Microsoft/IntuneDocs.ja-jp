@@ -15,15 +15,15 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9c89098b9cb775e287cbe4c4ae4c56b9566b9fd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 861be39feab15c453fd102593b0501202faa3684
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31032593"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232938"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Azure での Intune の機能の移動先
-Intune から Azure Portal に移行する際に、いくつかのタスクがより論理的に整理されました。 しかし、このような改善を行えば、新しい構成を学ばなければなりません。 このリファレンス ガイドは、従来のポータルを使用した Intune の知識があり、Intune で行われていた内容を Azure Portal ではどのように実行されるのかについて関心があるユーザーに向けて作成しました。 この記事にお探しの機能が記載されていない場合は、今後更新できるように記事の最後にコメントを残してください。
+Intune から Azure Portal に移行する際に、いくつかのタスクがより論理的に整理されました。 しかし、このような改善を行えば、新しい構成を学ばなければなりません。 このリファレンス ガイドは、従来のポータルを使用した Intune の知識があり、Intune で行われていた内容を Azure portal ではどのように実行されるのかについて関心があるユーザーを対象にしています。 この記事にお探しの機能が記載されていない場合は、今後更新できるように記事の最後にコメントを残してください。
 ## <a name="quick-reference-guide"></a>クイック リファレンス ガイド
 
 |機能 |従来のポータルでのパス|Azure Portal の Intune でのパス|
@@ -49,7 +49,7 @@ Azure Portal の Intune では、[Azure Active Directory (AD)](https://docs.micr
 
 ![従来のモバイル デバイスの登録ルールの画像](./media/01-classic-rules.png)
 
-これらのルールは例外なくすべてのユーザーの Intune アカウントに適用されました。 Azure Portal では、これらのルールは [デバイスの種類の制限] と [デバイス数の制限] という 2 つのポリシーの種類に表示されます。
+これらのルールは例外なくすべてのユーザーの Intune アカウントに適用されました。 Azure portal では、これらのルールは [デバイスの種類の制限] と [デバイス数の制限] という 2 つのポリシーの種類に表示されます。
 
 ![Azure のモバイル デバイス登録制限の画像](./media/02-azure-enroll-restrictions.png)
 
@@ -66,6 +66,16 @@ Azure Portal の Intune では、[Azure Active Directory (AD)](https://docs.micr
 ![Azure の個人用デバイスのブロック設定の画像](./media/05-azure-personal-block.png)
 
 新しい制限の機能は、Azure Portal のみに追加されます。
+
+## <a name="where-did-my-conditional-access-policies-go"></a>条件付きアクセス ポリシーの移動先
+テナントが Azure portal に移行された後も、テナントの条件付きアクセス ポリシーは引き続き適用されます。 ただし、Azure portal で Intune からそれらを表示または変更することはできません。
+
+Azure portal から条件付きアクセス ポリシーを表示および変更したい場合は、クラシック ポータルから古いポリシーを削除することが必要になります。 次に、Azure portal でそれらを再度作成します。 条件付きアクセス ポリシーの移行の詳細については、[Azure portal でのクラシック ポリシーの移行](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-migration)に関するページを参照してください。 
+
+## <a name="where-did-my-compliance-policies-go"></a>コンプライアンス ポリシーの移動先
+テナントが Azure portal に移行された後も、テナントのコンプライアンス ポリシーは引き続き適用されます。 ただし、Azure portal で Intune からそれらを表示または変更することはできません。
+
+Azure portal からコンプライアンス ポリシーを表示および変更したい場合は、クラシック ポータルから古いポリシーを削除することが必要になります。 次に、Azure portal でそれらを再度作成します。 デバイス コンプライアンス ポリシーの詳細については、[Intune でのデバイス コンプライアンス ポリシーの概要](https://docs.microsoft.com/en-us/intune/known-issues#compliance)に関するページを参照してください。 
 
 ## <a name="where-did-apple-dep-go"></a>Apple DEP の移動先
 従来のポータルでは、Intune が Apple のデバイス登録プログラムと統合されるように設定し、Apple サービスとの同期を手動で要求できました。

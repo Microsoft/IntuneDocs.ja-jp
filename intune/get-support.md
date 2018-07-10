@@ -15,11 +15,12 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5a823cfb602b4847e702d54e0d8775700b01c8e9
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 08d5e94155586140ac087b9ad9d24bdbd078f59b
+ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843142"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune のサポートを受ける方法
 
@@ -33,7 +34,8 @@ Microsoft サポートは、Microsoft Intune に世界的な技術、購入前�
 ## <a name="create-an-online-support-ticket"></a>オンライン サポート チケットの作成
 
 IT 管理者は、次の手順を使用して、Azure Portal からサポート チケットを提出できます。
-
+>[!NOTE]
+>オンライン サポート チケットを作成するには、Intune サービス管理者またはグローバル管理者である必要があります。 詳細については、[管理者ロールの割り当て](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)に関するページを参照してください。
 1. Intune の管理者資格情報で Azure Portal (<https://portal.azure.com>) にログオンし、ポータルの右上隅にある <strong>[?]</strong> の アイコンを選択し、<strong>[ヘルプとサポート]</strong> を選択して、[Azure のヘルプとサポート](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)のページに移動します。
 
     ![Azure Portal のヘルプとサポートで [ヘルプとサポート] のリンクが強調表示された [?] マーク リンクのスクリーンショット](./media/azure-get-support.png)

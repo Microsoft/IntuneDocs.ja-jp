@@ -15,12 +15,12 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d840bf62682621e4ec3848538a96066c0fd228fe
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 8c8fa146f01caae08f35ae824563ceb328c9d7f4
+ms.sourcegitcommit: 7daa778b3a5adb41acfe23495cb63754afda1c58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046266"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37123403"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Mobile Threat Defense の Intune との統合
 
@@ -41,10 +41,12 @@ Intune Mobile Threat Defense コネクターを使用すると、選択した Mo
 
 ## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Intune は Mobile Threat Defense のためにどのようなデータを収集しますか?
 
-Intune は個人のデバイスと会社所有のデバイスの両方からアプリ インベントリ情報を収集し、Lookout for Work など、MTD (Mobile Thread Defense) プロバイダーが取得できるようにします。 iOS 11 以降のデバイスを所有するユーザーからアプリ インベントリを収集できます。
+有効になっている場合、Intune は個人のデバイスと会社所有のデバイスの両方からアプリ インベントリ情報を収集し、Lookout for Work など、MTD (Mobile Thread Defense) プロバイダーが取得できるようにします。 iOS デバイスを所有するユーザーからアプリ インベントリを収集できます。
+
+これは、オプトインのサービスです。既定で共有されるインベントリ情報はありません。 アプリのインベントリ情報を共有する前に、Intune 管理者は、サービス設定で iOS デバイスのアプリの同期を有効にする必要があります。
 
 **アプリ インベントリ**  
-iOS 11 以降を内蔵した会社所有デバイスと個人所有デバイスの両方からのインベントリが MTD サービス プロバイダーに送信されます。 アプリ インベントリのデータ:
+iOS デバイスのアプリの同期を有効にした場合、iOS を内蔵した会社所有デバイスと個人所有デバイスの両方からのインベントリが MTD サービス プロバイダーに送信されます。 アプリ インベントリのデータ:
 
  - アプリ ID
  - アプリ バージョン
@@ -76,3 +78,4 @@ Mobile Threat Defense ソリューションによってデバイスが感染し�
 - [Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md)
 - [Check Point SandBlast Mobile](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)
+- [Pradeo](pradeo-mobile-threat-defense-connector.md)

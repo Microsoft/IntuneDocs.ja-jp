@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3572022b491439d2cf624b2ed3f1d53ffaf54d7d
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 3397c10ae572a248507f15e5145fef68898d30c4
+ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35291446"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Windows Phone 8.1 を実行するデバイス用に Microsoft Intune で VPN 設定を構成する
 
@@ -56,7 +57,7 @@ ms.lasthandoff: 04/26/2018
 - **[ロール]** (Pulse Secure のみ) - この接続に対するアクセス権を持つユーザー ロールの名前を指定します。 ユーザー ロールを使用して、個人の設定とオプションを定義し、特定のアクセス機能を有効または無効にします。
 - **[領域]** (Pulse Secure のみ) - 使用する認証領域の名前を指定します。 認証領域とは、接続の種類が [Pulse Secure] の場合に使用される認証リソースのグループを表します。
 
-- **[DNS サフィックス検索一覧]** - 1 つ以上の DNS サフィックスを**追加**します。 短い名前を使用して Web サイトに接続するときに、指定した各 DNS サフィックスが検索されます。 たとえば、**domain1.contoso.com** と **domain2.contoso.com** の DNS サフィックスを指定して、URL **http://mywebsite** にアクセスします。この場合、URL **http://mywebsite.domain1.contoso.com** および **http://mywebsite.domain2.contoso.com が検索されます**。
+- **[DNS サフィックス検索一覧]** - 1 つ以上の DNS サフィックスを**追加**します。 短い名前を使用して Web サイトに接続するときに、指定した各 DNS サフィックスが検索されます。 たとえば、**domain1.contoso.com** と **domain2.contoso.com** の DNS サフィックスを指定して、URL `http://mywebsite` にアクセスします。この場合、URL `http://mywebsite.domain1.contoso.com` および `http://mywebsite.domain2.contoso.com` が検索されます。
 
 - **[カスタム XML]** - VPN 接続を構成する任意のカスタム XML コマンドを指定します。
 

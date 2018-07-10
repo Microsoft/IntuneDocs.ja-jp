@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9132000f5fcf43251bcc1e9b903ea03551e0b85e
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 606c173c1723d526436b9ae75d9a4085883f071b
+ms.sourcegitcommit: 29eaf27323763a5a200ec64b8679397c4b988f33
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34178164"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36305435"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>アプリ保護ポリシーを作成して割り当てる方法
 
@@ -85,8 +85,10 @@ Microsoft Intune ライセンスが割り当てられているユーザーのみ
 > Intune を使用し、Configuration Manager によってデバイスを管理する場合、このポリシーは、選択したグループ直下のユーザーにのみ適用されます。 選択したグループ内で入れ子になっている子グループのメンバーは、影響を受けません。
 
 エンド ユーザーは App Store または Google Play からアプリをダウンロードできます。 詳細については、次をご覧ください。
-* [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](app-protection-enabled-apps-android.md)
-* [アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](app-protection-enabled-apps-ios.md)
+* 
+  [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](app-protection-enabled-apps-android.md)
+* 
+  [アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](app-protection-enabled-apps-ios.md)
 
 ##  <a name="change-existing-policies"></a>既存のポリシーの変更
 既存のポリシーを編集して、対象ユーザーに適用できます。 ただし、既存のポリシーを変更する場合、アプリに既にサインインしているユーザーには、8 時間にわたって変更が表示されません。
@@ -121,11 +123,13 @@ Microsoft Intune ライセンスが割り当てられているユーザーのみ
 3.  設定を変更し、**[保存]** アイコンを選択して変更内容を保存します。
 
 ## <a name="target-app-protection-policies-based-on-device-management-state"></a>デバイス管理状態に基づくアプリ保護ポリシーの対象指定
-多くの組織では、企業所有デバイスなどの Intune モバイル デバイス管理 (MDM) 管理対象デバイスと、BYO デバイスなどの Intune アプリ保護ポリシーでのみ保護される管理対象外デバイスの両方をエンド ユーザーが使用できるようにするのが一般的です。
+多くの組織では、企業所有デバイスなどの Intune モバイル デバイス管理 (MDM) マネージド デバイスと、BYO デバイスなどの Intune アプリ保護ポリシーでのみ保護されるアンマネージド デバイスの両方をエンド ユーザーが使用できるようにするのが一般的です。
 
-Intune アプリ保護ポリシーの対象はユーザーの ID であるため、ユーザーの保護設定は従来、登録されている (MDM 管理対象) デバイスと登録されていないデバイス (MDM なし) の両方に適用されます。 したがって、Intune に登録されている、または登録されていない iOS および Android デバイスを Intune アプリ保護ポリシーの対象にすることができます。 厳格なデータ損失防止 (DLP) 制御が行われている、管理対象外デバイスに対して 1 つの保護ポリシーを適用し、MDM 管理対象デバイスに対して別の保護ポリシーを適用することができます。この場合、DLP 制御が少し緩和される可能性があります。 
+Intune アプリ保護ポリシーの対象はユーザーの ID であるため、ユーザーの保護設定は従来、登録されている (MDM 管理対象) デバイスと登録されていないデバイス (MDM なし) の両方に適用されます。 したがって、Intune に登録されている、または登録されていない iOS および Android デバイスを Intune アプリ保護ポリシーの対象にすることができます。 厳格なデータ損失防止 (DLP) 制御が行われている、アンマネージド デバイスに対して 1 つの保護ポリシーを適用し、MDM マネージド デバイスに対して別の保護ポリシーを適用することができます。この場合、DLP 制御が少し緩和される可能性があります。 
 
-これらのポリシーを作成するには、Intune コンソールで **[モバイル アプリ]** > **[アプリ保護ポリシー]** を参照し、**[ポリシーの追加]** をクリックします。 既存のアプリ保護ポリシーを編集することもできます。 管理対象デバイスと管理対象外デバイスの両方にアプリ保護ポリシーを適用する場合は、**[Target to all app types]\(すべてのアプリの種類を対象とする\)** が **[はい]** (既定値) に設定されていることを確認してください。 管理状態に基づいて細かく割り当てる場合は、**[Target to all app types]\(すべてのアプリの種類を対象とする\)** オプションを **[いいえ]** に設定します。 
+これらのポリシーを作成するには、Intune コンソールで **[モバイル アプリ]** > **[アプリ保護ポリシー]** を参照し、**[ポリシーの追加]** をクリックします。 既存のアプリ保護ポリシーを編集することもできます。 マネージド デバイスとアンマネージド デバイスの両方にアプリ保護ポリシーを適用する場合は、**[Target to all app types]\(すべてのアプリの種類を対象とする\)** が **[はい]** (既定値) に設定されていることを確認してください。 管理状態に基づいて細かく割り当てる場合は、**[Target to all app types]\(すべてのアプリの種類を対象とする\)** オプションを **[いいえ]** に設定します。 
+
+iOS アプリケーションが "マネージド" と見なされる場合、各アプリの **IntuneMAMUPN** 厚生ポリシーの設定を展開する必要があります。 詳細については、「[Microsoft Intune で iOS アプリ間のデータ転送を管理する方法](https://docs.microsoft.com/en-us/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)」を参照してください。
 
 > [!NOTE]
 > デバイス管理状態に基づくアプリ保護ポリシーに関する特定の iOS サポート情報については、[管理の状態に基づいて対象とされる MAM 保護ポリシー](whats-new.md#mam-protection-policies-targeted-based-on-management-state-)に関するページを参照してください。
@@ -140,5 +144,7 @@ iOS と Android 用のポリシー設定の完全な一覧を表示するには�
 [コンプライアンスとユーザーの状態を監視する](app-protection-policies-monitor.md)
 
 ### <a name="see-also"></a>関連項目
-* [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](app-protection-enabled-apps-android.md)
-* [アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](app-protection-enabled-apps-ios.md)
+* 
+  [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](app-protection-enabled-apps-android.md)
+* 
+  [アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](app-protection-enabled-apps-ios.md)

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 735b3323527487e231d190ffd45e9083c4f524a2
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 259cc7653f97cbb9e07ba681e142c62e42c5a124
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34444916"
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>紛失したまたは盗まれた iOS デバイスを Intune で検索する
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 04/28/2018
     ![Azure で Intune を使用しているときの [デバイスを検索する] のスクリーンショット](./media/locate-device.png)
 
 >[!NOTE]
->プライバシー上の理由から、マップでズームインできる距離は制限されています。
+>プライバシー上の理由から、マップでズームインできる距離は、半径 300 メートルに制限されています。
 
 ## <a name="activate-lost-mode-sound-alert-on-an-ios-device"></a>iOS デバイスで紛失モード サウンド アラートをアクティブにする
 
@@ -58,7 +59,7 @@ ms.lasthandoff: 04/28/2018
 
 ## <a name="security-and-privacy-information-for-lost-mode-and-locate-device-actions"></a>紛失モードとデバイスを探索するアクションのセキュリティおよびプライバシー情報
 - このアクションを有効にするまで、デバイスの位置情報は Intune に送信されません。
-- デバイスの検索アクションを使用した場合、デバイスの緯度と経度の座標が Intune に送信され、Azure Portal に表示されます。
+- デバイスの検索アクションを使用した場合、Graph API を使用することでデバイスの緯度と経度の座標を取得できます。
 - データは 24 時間保管されてから、削除されます。 位置データを手動で削除することはできません。
 - 位置データは、保管中であっても転送中であっても暗号化されます。
 - 紛失モードを構成するときは、ロック画面に表示されるメッセージをカスタマイズできます。 このメッセージには、ユーザーがデバイスを容易に検索できるように、紛失したデバイスが戻ってくるようにするための特定の詳細情報を必ず含めます。

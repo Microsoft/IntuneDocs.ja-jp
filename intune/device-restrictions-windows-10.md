@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/9/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 611ec516b87f42b41a80de605d0d511ed2c58309
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: a4bbc89f66b49fe6a5c4ff8595c5913583288e0f
+ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834423"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34803841"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune での Windows 10 (以降) の設定に対するデバイスの制限
 この記事では、Windows 10 を実行するデバイスに構成できるすべての Microsoft Intune デバイスの制限設定について説明します。
@@ -152,8 +152,8 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 ## <a name="edge-browser"></a>Microsoft Edge ブラウザー
 
 -   **[Microsoft Edge ブラウザー (モバイルのみ)]** - デバイスで Edge Web ブラウザーを使用できるようにします。
--   **[アドレス バーのドロップダウン (デスクトップのみ)]** – これを使用すると、Microsoft Edge でドロップダウン リストの入力候補表示が停止します。 Microsoft Edge と Microsoft サービスの間のネットワーク帯域幅が最小に抑えられます。
--   **[Microsoft のブラウザー間でお気に入りを同期する (デスクトップのみ)]** – Internet Explorer と Microsoft Edge の間でお気に入りを同期することを Windows に許可します。
+-   **[アドレス バーのドロップダウン (デスクトップのみ)]** – これを使用すると、Edge でドロップダウン リストの入力候補表示が停止します。 Microsoft Edge と Microsoft サービスの間のネットワーク帯域幅が最小に抑えられます。
+-   **[Microsoft のブラウザー間でお気に入りを同期する (デスクトップのみ)]** – Internet Explorer と Edge の間でお気に入りを同期することを Windows に許可します。
 -   **[トラッキング拒否ヘッダーを送信する]** - ユーザーがアクセスする Web サイトに Do Not Track ヘッダーを送信するように、Microsoft Edge ブラウザーを構成します。
 -   **[Cookie]** - ブラウザーがインターネット Cookie をデバイスに保存するように設定します。
 -   **[JavaScript]** - JavaScript などのスクリプトを Microsoft Edge ブラウザーで実行できるようにします。
@@ -166,14 +166,14 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 -   **[開発者ツール]** - エンド ユーザーが Microsoft Edge 開発者ツールを開くことを防止します。
 -   **[拡張機能]** - エンド ユーザーがデバイスに Microsoft Edge 拡張機能をインストールすることを許可します。
 -   **[InPrivate 閲覧]** - エンド ユーザーが InPrivate 閲覧セッションを開くことを防止します。
--   **[初回実行ページを表示する]** – Microsoft Edge の初回実行時に紹介ページの表示を停止します。
+-   **[初回実行ページを表示する]** – Edge の初回実行時に紹介ページの表示を停止します。
     -   **[初回実行の URL]** – ユーザーが初めて Microsoft Edge を実行したときに表示されるページの URL を指定します (Windows 10 Mobile のみ)。
 -   **[ホームページ]** - Microsoft Edge ブラウザーのホームページとして使用するサイトの一覧を追加します (デスクトップのみ)。
 -   **[スタート ページに対する変更内容]** – Microsoft Edge を開いたときに表示されるスタート ページの変更をユーザーに許可します。 ホームページ設定を使用し、Microsoft Edge 起動時に開くページまたはページ リストを作成します。
 -   **[About Flags へのアクセスをブロック]** - エンド ユーザーが Microsoft Edge で開発者向けと実験用の設定を含む about:flags ページにアクセスするのを防止します。
 -   **[WebRtc localhost IP アドレス]** - Web RTC プロトコルを使用して電話するときにユーザーの localhost IP アドレスが表示されないようにします。
 -   **[既定の検索エンジン]** - 使用する既定の検索エンジンを指定します。 エンド ユーザーはこの値をいつでも変更できます。
--   **[終了時に閲覧データをクリアする]** – ユーザーが Microsoft Edge を終了すると、履歴と閲覧データが消去されます。
+-   **[終了時に閲覧データをクリアする]** – ユーザーが Edge を終了すると、履歴と閲覧データが消去されます。
 -   **[ライブ タイル データの収集]** – ユーザーが Microsoft Edge からスタート メニューにサイトをピン留めするとき、Windows がライブ タイルから情報を収集する行為を停止します。
 -  **[お気に入り一覧]** - お気に入りのファイルへのパスを定義します。 たとえば、http://contoso.com/favorites.html のように指定します。
 -  **[Restrict changes to Favorites]** \(お気に入りへの変更の制限\) - これを **[ブロック]** に設定すると、ユーザーはお気に入り一覧を追加、インポート、並べ替え、または編集できなくなります。 
@@ -250,7 +250,9 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 
   GDI DPI スケールでは、DPI 対応でないアプリは、モニターごとの DPI 対応となります。 GDI DPI スケールがオンのレガシ アプリを指定します。 アプリで GDI DPI スケールのオンとオフを両方とも設定すると、そのアプリでは GDI DPI スケールはオフになります。
 
-## <a name="kiosk-preview"></a>キオスク (プレビュー)
+## <a name="kiosk-preview---obsolete"></a>キオスク (プレビュー) - 廃止
+
+これらの設定は移動され、今後のリリースで削除されます。 新しい設定を使用するには、「[Intune での Windows 10 (以降) 用のキオスクの設定](kiosk-settings.md)」を参照してください。
 
 キオスク デバイスは通常、1 つのアプリまたは特定のアプリのセットを実行します。 ユーザーは、キオスク アプリ以外のデバイスの機能にアクセスすることはできません。
 
@@ -263,9 +265,12 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 #### <a name="single-app-kiosks"></a>シングル アプリ キオスク
 次の設定を入力します。
 
-- **[ユーザー アカウント]** - (デバイスの) ローカル ユーザー アカウントか、キオスク アプリに関連付けられている Azure AD アカウント ログインを入力します。 Azure AD ドメインに参加しているアカウントについては、`domain\username@tenant.org` 形式を使用してアカウントを入力します。 
+- **[ユーザー アカウント]** - (デバイスの) ローカル ユーザー アカウント、AD ドメイン アカウント、またはキオスク アプリに関連付けられている Azure AD アカウント ログインを入力します。
+  - ローカル アカウント: `devicename\accountname`、`.\accountname`、または `accountname` として入力
+  - ドメイン アカウント: `domain\accountname` として入力
+  - Azure AD アカウント: `AzureAD\emailaddress` として入力。 "AzureAD" は固定のドメイン名であるため、必ず入力します。 その後に Azure AD 電子メール アドレスを入力します。 たとえば、「`AzureAD\user@contoso.onmicrosoft.com`」と入力します。
 
-    自動ログオンが有効になっている公開環境のキオスクの場合、最小特権 (ローカルの標準ユーザー アカウントなど) を持つユーザーの種類を使用する必要があります。 キオスク モードの Azure Active Directory (AD) アカウントを構成するには、`AzureAD\user@contoso.com` 形式を使用します。
+    自動ログオンが有効になっている公開環境のキオスクの場合、最小特権 (ローカルの標準ユーザー アカウントなど) を持つユーザーの種類を使用する必要があります。 キオスク モードの Azure AD アカウントを使用している場合は、必ず `AzureAD\user@yourorganization.com` を入力します。
 
 - **[アプリのアプリケーション ユーザー モデル ID (AUMID)]** - キオスク アプリの AUMID を入力します。 詳細については、「[Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)」 (インストール済みアプリのアプリケーション ユーザー モデル ID を見つける) を参照してください。
 

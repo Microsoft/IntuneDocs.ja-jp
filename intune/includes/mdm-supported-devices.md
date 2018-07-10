@@ -10,7 +10,7 @@
   検証済みの Samsung KNOX Standard デバイスの完全な一覧については、「[Android and Samsung KNOX Standard policy settings (Android および Samsung KNOX Standard のポリシー設定)](/intune/supported-devices-browsers#supported-samsung-knox-standard-devices)」をご覧ください。
 
 
-- Android for Work [(要件)](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window")
+- Android for Work の[要件](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012)。
 
 ### <a name="microsoft"></a>Microsoft
 

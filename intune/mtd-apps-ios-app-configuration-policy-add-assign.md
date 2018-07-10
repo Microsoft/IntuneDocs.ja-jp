@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 06/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10502f82d94246f7a70af6b88c0704a4daa0372b
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 6c7f3229c2cb4c5f3f57d84d348053f25eeeb9c9
+ms.sourcegitcommit: f70d6aaea59b52cd0d7bd3008afd243868967fd6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046385"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37066217"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune で Mobile Threat Defense (MTD) アプリを追加して割り当てる
 
@@ -29,106 +29,113 @@ ms.locfileid: "32046385"
 
 脅威がモバイル デバイスで特定されたときにエンドユーザーが通知を受け取れるように、また、脅威を除去するための手引きが受けられるように、Intune を利用して MTD アプリを追加して展開することができます。
 
-iOS デバイスでは、Azure AD によってチェックされた ID がユーザーに与えられるように、[Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) が必要です。 さらに、Intune で使用するには MTD の iOS アプリが通知される iOS アプリ構成ポリシーも必要です。
+
+## <a name="before-you-begin"></a>始める前に
+
+[Azure Portal](https://portal.azure.com/) で以下の手順を完了しておく必要があります。 次のプロセスをよく理解している必要があります。
+
+  -   [Intune にアプリを追加する](apps-add.md)。
+  -   [iOS アプリ構成ポリシーを Intune に追加する](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
+  -   [Intune でアプリを割り当てる](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune)。
+  -   [iOS アプリ構成ポリシーを追加する](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
 
 > [!TIP]
 > Intune ポータル サイトは Android デバイスでブローカーとして機能するため、ユーザーに Azure AD によってチェックされた ID が与えられます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="configure-microsoft-authenticator-for-ios"></a>iOS 向け Microsoft Authenticator を構成する
+iOS デバイスでは、Azure AD によってチェックされた ID がユーザーに与えられるように、[Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) が必要です。 さらに、Intune で使用するには MTD の iOS アプリが通知される iOS アプリ構成ポリシーも必要です。
 
--   [Azure Portal](https://portal.azure.com/) で以下の手順を完了しておく必要があります。
+iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 12** では、この [Microsoft Authenticator アプリ ストア URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) を使います。
 
--   次のプロセスをよく理解している必要があります。
+## <a name="configure-mtd-applications"></a>MTD アプリケーションの構成
 
-    -   [Intune にアプリを追加する](apps-add.md)。
+MTD プロバイダーに対応するセクションを選択します。
 
-    -   [iOS アプリ構成ポリシーを Intune に追加する](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
+  - [Lookout for Work](#configure-lookout-for-work-apps)
+  - [Symantec Endpoint Protection Mobile (SEP Mobile)](#configure-symantec-endpoint-protection-mobile-apps)
+  - [Check Point SandBlast Mobile](#configure-check-point-sandblast-mobile-apps)
+  - [Zimperium](#configure-zimperium-apps)
+  - [Pradeo](#configure-pradeo-apps)
 
-    -   [Intune でアプリを割り当てる](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune)。
+### <a name="configure-lookout-for-work-apps"></a>Lookout for Work アプリを構成する
 
-    -   [iOS アプリ構成ポリシーを追加する](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
+- **Android**
+  - Android ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-android.md)をご覧ください。 **手順 7** には、この [Lookout for work の Google アプリ ストア URL](https://play.google.com/store/apps/details?id=com.lookout.enterprise) を使用してください。
 
-## <a name="to-add-apps"></a>アプリを追加するには
+- **Android**
 
-### <a name="all-mtd-partners"></a>すべての MTD パートナー
+  - iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 12** では、この [Lookout for Work iOS アプリ ストア URL](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8) を使います。
 
-#### <a name="microsoft-authenticator-app-for-ios"></a>iOS 向け Microsoft Authenticator アプリ
+-   **Apple ストア以外の Lookout for Work アプリ**
+    - Lookout for Work iOS アプリに再署名する必要があります。 Lookout は、iOS App Store 以外の場所で Lookout for Work iOS アプリを配布しています。 アプリを配布する前に、iOS Enterprise Developer Certificate でアプリに再署名する必要があります。
+    - Lookout for Work iOS アプリに再署名する詳細な手順については、Lookout の Web サイトの「[Lookout for Work iOS app re-signing process](https://personal.support.lookout.com/hc/articles/114094038714)」(Lookout for Work iOS アプリの再署名プロセス) を参照してください。
 
-- iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 12** では、この [Microsoft Authenticator アプリ ストア URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) を使います。
+    - **Lookout for Work iOS アプリ ユーザーに対して Azure AD Authentication を有効にします。**
 
-### <a name="lookout"></a>Lookout
+        1. [Azure Portal](https://portal.azure.com) に移動し、資格情報でサインインして、アプリケーションのページに移動します。
 
-#### <a name="android"></a>Android
-- Android ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-android.md)をご覧ください。 **手順 7** には、この [Lookout for work の Google アプリ ストア URL](https://play.google.com/store/apps/details?id=com.lookout.enterprise) を使用してください。
+        2. **ネイティブ クライアント アプリケーション**として **Lookout for Work iOS アプリ**を追加します。
 
-#### <a name="ios"></a>iOS
+        3. **com.lookout.enterprise.yourcompanyname** は、IPA に署名したときに選択したカスタマー バンドル ID で置き換えます。
 
-- iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 12** では、この [Lookout for Work iOS アプリ ストア URL](https://itunes.apple.com/us/app/lookout-for-work/id997193468?mt=8) を使います。
+        4.  リダイレクト URI を追加します。**&lt;companyportal://code/>** の後に、元のリダイレクト URI を URL エンコードしたバージョンを続けます。
 
-#### <a name="lookout-for-work-app-outside-the-apple-store"></a>Apple ストア以外の Lookout for Work アプリ
+        5.  アプリに**デリゲートされたアクセス許可**を追加します。
 
-Lookout for Work iOS アプリに再署名する必要があります。 Lookout は、iOS App Store 以外の場所で Lookout for Work iOS アプリを配布しています。 アプリを配布する前に、iOS Enterprise Developer Certificate でアプリに再署名する必要があります。
+        > [!NOTE] 
+        > 詳細については、「[ネイティブ クライアント アプリケーションの構成](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application)」を参照してください。
 
-Lookout for Work iOS アプリに再署名する詳細な手順については、Lookout の Web サイトの「[Lookout for Work iOS app re-signing process](https://personal.support.lookout.com/hc/articles/114094038714)」(Lookout for Work iOS アプリの再署名プロセス) を参照してください。
+     - **Lookout for Work の ipa ファイルを追加します。**
 
-##### <a name="enable-azure-ad-authentication-for-lookout-for-work-ios-app"></a>Lookout for Work iOS アプリで Azure AD 認証を有効にする
+        - [Intune での iOS LOB アプリの追加](lob-apps-ios.md)に関するトピックの説明に従って、再署名した .ipa ファイルをアップロードします。 また、最小 OS バージョンを iOS 8.0 以降に設定する必要があります。
 
-次の手順を実行して、iOS ユーザーの Azure Active Directory 認証を有効にします。
+### <a name="configure-symantec-endpoint-protection-mobile-apps"></a>Symantec Endpoint Protection Mobile アプリを構成する
 
-1. [Azure Portal](https://portal.azure.com) に移動し、資格情報でサインインして、アプリケーションのページに移動します。
+ - **Android**
 
-2. **ネイティブ クライアント アプリケーション**として **Lookout for Work iOS アプリ**を追加します。
+    - Android ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-android.md)をご覧ください。 **手順 7** では、この [SEP Mobile アプリ ストア URL](https://play.google.com/store/apps/details?id=com.skycure.skycure) を使います。  **[Minimum operating system]\(最小オペレーティング システム\)** では、**Android 4.0 (Ice Cream Sandwich)** を選びます。
 
-3. **com.lookout.enterprise.yourcompanyname** は、IPA に署名したときに選択したカスタマー バンドル ID で置き換えます。
+ - **Android**
 
-4.  リダイレクト URI を追加します。**&lt;companyportal://code/>** の後に、元のリダイレクト URI を URL エンコードしたバージョンを続けます。
+    - iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 12** では、この [SEP Mobile アプリ ストア URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) を使います。
 
-5.  アプリに**デリゲートされたアクセス許可**を追加します。
+### <a name="configure-check-point-sandblast-mobile-apps"></a>Check Point SandBlast Mobile アプリを構成する
 
-    > [!NOTE] 
-    > 詳細については、「[ネイティブ クライアント アプリケーションの構成](https://azure.microsoft.com/documentation/articles/app-service-mobile-how-to-configure-active-directory-authentication/#optional-configure-a-native-client-application)」を参照してください。
+ - **Android**
 
-##### <a name="add-the-lookout-for-work-ipa-file"></a>Lookout for Work の ipa ファイルを追加する
+    - Android ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-android.md)をご覧ください。 **手順 7** には、この [Check Point SandBlast Mobile のアプリ ストア URL](https://play.google.com/store/apps/details?id=com.lacoon.security.fox) を使用してください。
 
-- [Intune での iOS LOB アプリの追加](lob-apps-ios.md)に関するトピックの説明に従って、再署名した .ipa ファイルをアップロードします。 また、最小 OS バージョンを iOS 8.0 以降に設定する必要があります。
+ - **Android**
 
-### <a name="symantec-endpoint-protection-mobile-sep-mobile"></a>Symantec Endpoint Protection Mobile (SEP Mobile)
+    - [Check Point SandBlast Mobile](https://www.checkpoint.com/products/sandblast-mobile/) に連絡して iOS アプリを取得してください。 [iOS ストア アプリを Microsoft Intune に追加する](store-apps-ios.md)手順を確認し、「**アプリ情報を構成する**」セクションの**手順 12** では、Apple ストアの URL を使います。
 
-#### <a name="android"></a>Android
+### <a name="configure-zimperium-apps"></a>Zimperium アプリを構成する
 
-- Android ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-android.md)をご覧ください。 **手順 7** では、この [SEP Mobile アプリ ストア URL](https://play.google.com/store/apps/details?id=com.skycure.skycure) を使います。  **[Minimum operating system]\(最小オペレーティング システム\)** では、**Android 4.0 (Ice Cream Sandwich)** を選びます。
+ - **Android**
 
-#### <a name="ios"></a>iOS
+    - Android ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-android.md)をご覧ください。 **手順 7** には、この [Zimperium アプリ ストア URL](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en) を使用してください。
 
-- iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 12** では、この [SEP Mobile アプリ ストア URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) を使います。
+ - **Android**
 
-### <a name="check-point-sandblast-mobile"></a>Check Point SandBlast Mobile
+    - iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 12** では、この [Zimperium アプリ ストア URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8) を使います。
 
-#### <a name="android"></a>Android
+### <a name="configure-pradeo-apps"></a>Pradeo アプリを構成する
 
-- Android ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-android.md)をご覧ください。 **手順 7** には、この [Check Point SandBlast Mobile のアプリ ストア URL](https://play.google.com/store/apps/details?id=com.lacoon.security.fox) を使用してください。
+ - **Android**
 
-#### <a name="ios"></a>iOS
+    - Android ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-android.md)をご覧ください。 **手順 7** の [Pradeo アプリ ストア URL](https://play.google.com/store/apps/details?id=net.pradeo.service&hl=en_US) を使用してください。
 
-- [Check Point SandBlast Mobile](https://www.checkpoint.com/products/sandblast-mobile/) に連絡して iOS アプリを取得してください。 [iOS ストア アプリを Microsoft Intune に追加する](store-apps-ios.md)手順を確認し、「**アプリ情報を構成する**」セクションの**手順 12** では、Apple ストアの URL を使います。
+ - **Android**
 
-### <a name="zimperium"></a>Zimperium
+    - iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 12** の [Pradeo アプリ ストア URL](https://itunes.apple.com/us/app/pradeo-agent/id547979360?mt=8) を使用してください。
 
-#### <a name="android"></a>Android
+## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>MTD アプリに iOS アプリ構成ポリシーを構成する
 
-- Android ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-android.md)をご覧ください。 **手順 7** には、この [Zimperium アプリ ストア URL](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en) を使用してください。
-
-#### <a name="ios"></a>iOS
-
-- iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 12** では、この [Zimperium アプリ ストア URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8) を使います。
-
-## <a name="to-associate-the-mtd-app-with-an-ios-app-configuration-policy"></a>MTD アプリを iOS アプリ構成ポリシーと関連付けるには
-
-### <a name="for-lookout"></a>Lookout の場合
+### <a name="lookout-for-work-app-configuration-policy"></a>Lookout for Work アプリ構成ポリシー
 
 - [iOS アプリ構成ポリシーの使用](app-configuration-policies-use-ios.md)に関するトピックの説明に従って、iOS アプリ構成ポリシーを作成します。
 
-### <a name="for-sep-mobile"></a>SEP Mobile の場合
+### <a name="sep-mobile-app-configuration-policy"></a>SEP モバイル アプリ構成ポリシー
 
 -   [Symantec Endpoint Protection Management コンソール](https://aad.skycure.com)で以前に構成したものと同じ Azure AD アカウントを使います。これは、Intune クラシック ポータルにログインするためのものと同じアカウントにする必要があります。
 
@@ -146,7 +153,7 @@ Lookout for Work iOS アプリに再署名する詳細な手順については�
 > [!NOTE]
 > ファイルを取得できない場合は、[Symantec Endpoint Protection Mobile エンタープライズ サポート](https://support.symantec.com/en_US/contact-support.html)にお問い合わせください。
 
-### <a name="for-check-point-sandblast-mobile"></a>Check Point SandBlast Mobile の場合
+### <a name="check-point-sandblast-mobile-app-configuration-policy"></a>Check Point SandBlast Mobile アプリ構成ポリシー
 
 - [iOS 用 Microsoft Intune アプリ構成ポリシーを使用する](app-configuration-policies-use-ios.md)手順に従って、Check Point SandBlast Mobile iOS アプリ構成ポリシーを追加します。
     - **手順 8** で、**[XML データを入力する]** オプションを使用して以下の内容をコピーし、構成ポリシーの本文に貼り付けます。
@@ -155,7 +162,7 @@ Lookout for Work iOS アプリに再署名する詳細な手順については�
 <dict><key>MDM</key><string>INTUNE</string></dict>
 ```
 
-### <a name="for-zimperium"></a>Zimperium の場合
+### <a name="zimperium-app-configuration-policy"></a>Zimperium アプリ構成ポリシー
 
 - [iOS 用 Microsoft Intune アプリ構成ポリシーを使用する](app-configuration-policies-use-ios.md)手順に従って、Zimperium iOS アプリ構成ポリシーを追加します。
     - **手順 8** で、**[XML データを入力する]** オプションを使用して以下の内容をコピーし、構成ポリシーの本文に貼り付けます。
@@ -173,10 +180,10 @@ Lookout for Work iOS アプリに再署名する詳細な手順については�
 </dict>
 ```
 
-## <a name="to-assign-apps-all-mtd-partners"></a>アプリを割り当てるには (すべての MTD パートナー)
+## <a name="assign-apps-to-groups"></a>アプリをグループに割り当てる
 
-- [Intune でアプリをグループに割り当てる](apps-deploy.md)手順を参照してください。
+- この手順は、すべての MTD パートナーに該当します。 [Intune でアプリをグループに割り当てる](apps-deploy.md)手順を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 
-- [MTD のデバイス コンプライアンス ポリシーを追加する](mtd-device-compliance-policy-create.md)
+- [MTD のデバイス コンプライアンス ポリシーを構成する](mtd-device-compliance-policy-create.md)

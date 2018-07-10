@@ -15,11 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 122f0b70392df65076622354722b6d546f4fe7b7
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 3afe1ed48a21c26927b3686ae9a455ed8484e282
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34547405"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Volume Purchase Program で購入した iOS アプリを Microsoft Intune で管理する方法
 
@@ -162,7 +163,7 @@ iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purc
 はい。 Intune 管理者は、アプリをオーバーサブスクライブできます。 たとえば、管理者は、アプリ XYZ のライセンスを 100 個購入し、500 人のメンバーがいるグループをアプリの対象にします。 最初の 100 メンバー (ユーザーまたはデバイス) にはライセンスが割り当てられ、残りのメンバーに対するライセンスの割り当ては失敗します。
 
 #### <a name="i-understand-intune-automatically-syncs-app-licenses-each-day-with-apple-is-that-correct"></a>Intune は毎日自動的にアプリのライセンスを Apple と同期すると理解していますが、これは正しいですか。
-Intune は、15 時間ごとに Apple とアプリのライセンスを同期します。
+Intune は、1 日に 2 回、Apple とアプリのライセンスを同期します。
 
 ## <a name="next-steps"></a>次の手順
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/04/2018
+ms.date: 06/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f5441bb15d6906257432afbfe51fffc6c11a6324
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 0d42500b9476e0b6c7bc9aaaba1ea4333fd136c6
+ms.sourcegitcommit: 29914cc467e69711483b9e2ccef887196e1314ef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745028"
+ms.lasthandoff: 06/21/2018
+ms.locfileid: "36297907"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune で SCEP 証明書を構成して使用する
 
@@ -36,12 +36,16 @@ ms.locfileid: "34745028"
 - **NDES サーバー**: Windows Server 2012 R2 以降を実行しているサーバーに、ネットワーク デバイス登録サービス (NDES) を設定する必要があります。 エンタープライズ CA も実行しているサーバーで Intune を実行する場合には、ネットワーク デバイス登録サービスは使用できません。 ネットワーク デバイス登録サービスをホストするための Windows Server 2012 R2 の構成方法については、「[ネットワーク デバイス登録サービスのガイダンス](http://technet.microsoft.com/library/hh831498.aspx)」を参照してください。
 NDES サーバーは、CA をホストしているドメインに参加する必要があります。CA と同じサーバーに置くことはできません。 別個のフォレスト、分離ネットワーク、内部ドメインで NDES サーバーを展開する方法については、「[ポリシー モジュールとネットワーク デバイス登録サービスの使用](https://technet.microsoft.com/library/dn473016.aspx)」を参照してください。
 
-- **Microsoft Intune Certificate Connector**: Azure Portal を使用して **Certificate Connector** インストーラー (**ndesconnectorssetup.exe**) をダウンロードします。 その後は、Certificate Connector をインストールするネットワーク デバイス登録サービス (NDES) の役割をホストするサーバーで **ndesconnectorssetup.exe** を実行できます。 
+- **Microsoft Intune Certificate Connector**: Azure Portal を使用して **証明書コネクタ** インストーラー (**NDESConnectorSetup.exe**) をダウンロードします。 その後は、Certificate Connector をインストールするネットワーク デバイス登録サービス (NDES) の役割をホストするサーバーで **NDESConnectorSetup.exe** を実行できます。
+
+  - NDES 証明書コネクタは、Federal Information Processing Standard (FIPS) モードもサポートしています。 FIPS は必須ではありませんが、有効になっている場合は、証明書の発行および失効を行うことができます。
+
 - **Web アプリケーション プロキシ サーバー** (省略可能): Web アプリケーション プロキシ (WAP) サーバーとして Windows Server 2012 R2 以降を実行しているサーバーを使用します。 この構成は:
-  -  デバイスはインターネット接続を使用して証明書を受信できます。
-  -  デバイスがインターネット接続経由で証明書を受信して更新する場合のセキュリティ推奨事項です。
+  - デバイスはインターネット接続を使用して証明書を受信できます。
+  - デバイスがインターネット接続経由で証明書を受信して更新する場合のセキュリティ推奨事項です。
 
 #### <a name="additional"></a>Additional
+
 - WAP をホストするサーバーは、ネットワーク デバイス登録サービスで使用される長い URL のサポートを有効にする [更新プログラムをインストールする](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) 必要があります。 この更新プログラムは、 [2014 年 12 月の更新プログラムのロールアップ](http://support.microsoft.com/kb/3013769)に含まれます。または、 [KB3011135](http://support.microsoft.com/kb/3011135)から個別に入手できます。
 - WAP サーバーは、外部クライアントに公開される名前と一致する SSL 証明書を持ち、NDES サーバーで使用される SSL 証明書を信頼する必要があります。 これらの証明書を使用すると、WAP サーバーはクライアントからの SSL 接続を終了し、NDES サーバーへの新しい SSL 接続を作成できます。
 
@@ -71,17 +75,7 @@ NDES サーバーは、[Azure AD アプリケーション プロキシ](https://
 |**NDES サービス アカウント**|NDES サービス アカウントとして使うドメイン ユーザー アカウントを入力します。|
 
 ## <a name="configure-your-infrastructure"></a>インフラストラクチャを構成する
-証明書プロファイルを構成するには、次のタスクを実行します。 以下のタスクには、Windows Server 2012 R2 と Active Directory 証明書サービス (ADCS) についての知識が必要となります。
-
-**手順 1**: NDES サービス アカウントを作成する
-
-**手順 2**: 証明機関で証明書テンプレートを構成する
-
-**手順 3**: NDES サーバーで前提条件を構成する
-
-**手順 4**: Intune で使用するための NDES を構成する
-
-**手順 5**: Intune Certificate Connector を有効にし、インストールし、構成する
+証明書プロファイルを構成するには、事前に次の手順を実行します。 以下の手順には、Windows Server 2012 R2 以降と Active Directory 証明書サービス (ADCS) についての知識が必要となります。
 
 #### <a name="step-1---create-an-ndes-service-account"></a>手順 1 - NDES サービス アカウントを作成する
 
@@ -226,7 +220,6 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (10 進数) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (10 進数) |
 
-
 4. IIS マネージャーで、**[既定の Web サイト]** > **[要求のフィルタリング]** > **[機能設定の編集]** の順に選びます。 次のように、**[URL の最大長]** と **[クエリ文字列の最大長]** を *65534* に変更します。
 
     ![IIS の URL とクエリの最大長](./media/SCEP_IIS_max_URL.png)
@@ -291,13 +284,17 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 - 環境内のネットワーク デバイス登録サービス (NDES) の役割をホストするサーバーで Certificate Connector をダウンロード、インストール、構成します。 組織内の NDES の実装のスケールを大きくするには、各 NDES サーバー上の Microsoft Intune Certificate Connector で複数の NDES サーバーをインストールできます。
 
 ##### <a name="download-install-and-configure-the-certificate-connector"></a>証明書コネクタをダウンロードし、インストールして、構成する
+
 ![ConnectorDownload](./media/certificates-download-connector.png)
 
 1. [Azure ポータル](https://portal.azure.com)にサインインします。
 2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
 3. **[デバイス構成]** を選択し、**[証明機関]** を選択します。
 4. **[追加]** を選択し、**[Download the Connector file]\(コネクタ ファイルをダウンロードします\)** を選択します。 インストールするサーバーからアクセスできる場所にダウンロードしたものを保存します。
-5. ダウンロードが完了した後、ダウンロードしたインストーラー (**ndesconnectorssetup.exe**) を、ネットワーク デバイス登録サービス (NDES) の役割をホストしているサーバーで実行します。 インストーラーは、NDES のポリシー モジュールと CRP Web サービスもインストールします。 (CRP Web サービス CertificateRegistrationSvc は IIS のアプリケーションとして実行されます)。
+5. ダウンロードが完了した後、ネットワーク デバイス登録サービス (NDES) の役割をホストしているサーバーに移動します。 次のことを行います。
+
+    1. .NET Framework 4.5 がインストールされていることを確認します。NDES 証明書コネクタで必要となるからです。 .NET Framework 4.5 は、Windows Server 2012 R2 およびそれ以降の新しいバージョンには自動的に含められます。
+    2. インストーラーを実行します (**NDESConnectorSetup.exe**)。 インストーラーは、NDES のポリシー モジュールと CRP Web サービスもインストールします。 CRP Web サービス CertificateRegistrationSvc は IIS のアプリケーションとして実行されます。
 
     > [!NOTE]
     > スタンドアロン Intune の NDES をインストールする場合、CRP サービスは証明書コネクタと共に自動的にインストールされます。 構成マネージャーで Intune を使用する場合は、証明書登録ポイントを別のサイト システムの役割としてインストールします。
@@ -305,7 +302,7 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 6. 証明書コネクタのクライアント証明書の入力を求められたら、**[選択]** を選択し、タスク 3 で NDES サーバーにインストールした**クライアント認証**証明書を選択します。
 
     クライアント認証証明書を選択した後、**[Microsoft Intune 証明書コネクタのクライアント証明書]** 画面に戻ります。 選択した証明書は表示されませんが、**[次へ]** を選択してその証明書のプロパティを表示します。 **[次へ]** を選択して、**[インストール]** を選択します。
-    
+
     > [!IMPORTANT]
     > Intune 証明書コネクタは、Internet Explorer セキュリティ強化の構成が有効になっているデバイスでは登録できません。 Intune 証明書コネクタを使うには、[IE セキュリティ強化の構成を無効にします](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx)。
 
@@ -335,10 +332,13 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 
 `http://<FQDN_of_your_NDES_server>/certsrv/mscep/mscep.dll`
 
+> [!NOTE]
+> NDES 証明書コネクタには、TLS 1.2 のサポートが含まれています。 したがって、NDES 証明書コネクタがインストールされているサーバーが TLS 1.2 をサポートする場合、TLS 1.2 が使用されます。 サーバーが TLS 1.2 をサポートしない場合、TLS 1.1 が使用されます。 現在、デバイスとサーバー間の認証には、TLS 1.1 が使用されています。
+
 ## <a name="create-a-scep-certificate-profile"></a>SCEP 証明書プロファイルを作成する
 
 1. Azure Portal で Microsoft Intune を開きます。
-2. **[デバイス構成]**、**[プロファイル]**、**[プロファイルの作成]** の順に選択します。
+2. **[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
 3. SCEP 証明書プロファイルの **[名前]** と **[説明]** を入力します。
 4. **[プラットフォーム]** ドロップダウン リストで、この SCEP 証明書のデバイス プラットフォームを選択します。 現時点では、デバイスの制限設定に対応している次のいずれかのプラットフォームを選択できます。
    - **Android**
@@ -406,12 +406,16 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 
     > [!NOTE]
     > iOS では、同じ証明書プロファイルを使う複数のリソース プロファイルを展開した場合は、管理プロファイルに証明書の複数のコピーが表示されます。
-    
-プロファイルを割り当てる方法については、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関する記事をご覧ください。
+
+プロファイルを割り当てる方法については、[デバイス プロファイルの割り当て](device-profile-assign.md)に関する記事をご覧ください。
+
+## <a name="intune-connector-setup-verification-and-troubleshooting"></a>Intune Connector の設定の検証とトラブルシューティング
+
+問題のトラブルシューティングを行い、Intune Connector の設定を確認するには、[証明機関のスクリプトのサンプル](https://aka.ms/intuneconnectorverificationscript)に関するページを参照してください。
 
 ## <a name="intune-connector-events-and-diagnostic-codes"></a>Intune コネクタのイベントと診断コード
 
-バージョン 6.1803.x.x 以降の Intune コネクタ サービスは、**イベント ビューアー** (**[アプリケーションとサービス ログ]** > **[Microsoft Intune コネクタ]**) にイベントを記録します。 これらのイベントを使うと、Intune コネクタの構成の潜在的な問題のトラブルシューティングに役立ちます。 これらのイベントには、操作の成功と失敗が記録され、IT 管理者によるトラブルシューティングに役立つ診断コードとメッセージも含まれます。
+バージョン 6.1806.x.x 以降の Intune コネクタ サービスは、**イベント ビューアー** (**[アプリケーションとサービス ログ]** > **[Microsoft Intune コネクタ]**) にイベントを記録します。 これらのイベントを使うと、Intune コネクタの構成の潜在的な問題のトラブルシューティングに役立ちます。 これらのイベントには、操作の成功と失敗が記録され、IT 管理者によるトラブルシューティングに役立つ診断コードとメッセージも含まれます。
 
 ### <a name="event-ids-and-descriptions"></a>イベント ID と説明
 
@@ -430,10 +434,10 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 | 20102 | PkcsCertIssue_Failure  | PKCS 証明書を発行できませんでした このイベントに関連するデバイス ID、ユーザー ID、CA 名、証明書テンプレート名、および証明書のサムプリントについては、イベントの詳細を確認してください。 | 0x00000000、0x00000400、0x00000401、0x0FFFFFFF |
 | 20200 | RevokeCert_Success  | 証明書が正常に取り消されました。 このイベントに関連するデバイス ID、ユーザー ID、CA 名、および証明書シリアル番号については、イベントの詳細を確認してください。 | 0x00000000、0x0FFFFFFF |
 | 20202 | RevokeCert_Failure | 証明書を取り消すことができませんでした。 このイベントに関連するデバイス ID、ユーザー ID、CA 名、および証明書シリアル番号については、イベントの詳細を確認してください。 詳細については、NDES SVC のログを参照してください。   | 0x00000000、0x00000402、0x0FFFFFFF |
-| 20300 | Download_Success | 証明書の署名、クライアント証明書のダウンロード、または証明書の取り消しの要求が、正常にダウンロードされました。 ダウンロードの詳細については、イベントの詳細を確認してください。  | 0x00000000、0x0FFFFFFF |
-| 20302 | Download_Failure | 証明書の署名、クライアント証明書のダウンロード、または証明書の取り消しの要求を、ダウンロードできませんでした。 ダウンロードの詳細については、イベントの詳細を確認してください。 | 0x00000000、0x0FFFFFFF |
-| 20400 | Upload_Success | 証明書の要求または取り消しのデータが、正常にアップロードされました。 アップロードの詳細については、イベントの詳細を確認してください。 | 0x00000000、0x0FFFFFFF |
-| 20402 | Upload_Failure | 証明書の要求または取り消しのデータをアップロードできませんでした。 障害発生時点を特定するには、イベントの詳細のアップロード状態を確認してください。| 0x00000000、0x0FFFFFFF |
+| 20300 | Upload_Success | 証明書の要求または取り消しのデータが、正常にアップロードされました。 アップロードの詳細については、イベントの詳細を確認してください。 | 0x00000000、0x0FFFFFFF |
+| 20302 | Upload_Failure | 証明書の要求または取り消しのデータをアップロードできませんでした。 障害発生時点を特定するには、イベントの詳細のアップロード状態を確認してください。| 0x00000000、0x0FFFFFFF |
+| 20400 | Download_Success | 証明書の署名、クライアント証明書のダウンロード、または証明書の取り消しの要求が、正常にダウンロードされました。 ダウンロードの詳細については、イベントの詳細を確認してください。  | 0x00000000、0x0FFFFFFF |
+| 20402 | Download_Failure | 証明書の署名、クライアント証明書のダウンロード、または証明書の取り消しの要求を、ダウンロードできませんでした。 ダウンロードの詳細については、イベントの詳細を確認してください。 | 0x00000000、0x0FFFFFFF |
 | 20500 | CRPVerifyMetric_Success  | 証明書登録ポイントがクライアントのチャレンジを正常に検証しました | 0x00000000、0x0FFFFFFF |
 | 20501 | CRPVerifyMetric_Warning  | 証明書登録ポイントは完了しましたが、要求を拒否しました。 詳細については、診断コードとメッセージを参照してください。 | 0x00000000、0x00000411、0x0FFFFFFF |
 | 20502 | CRPVerifyMetric_Failure  | 証明書登録ポイントがクライアントのチャレンジを検証できませんでした。 詳細については、診断コードとメッセージを参照してください。 チャレンジに対応するデバイス ID については、イベント メッセージの詳細を参照してください。 | 0x00000000、0x00000408、0x00000409、0x00000410、0x0FFFFFFF |

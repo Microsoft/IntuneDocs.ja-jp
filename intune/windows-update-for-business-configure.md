@@ -5,19 +5,19 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 5/20/2018
+ms.date: 6/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: fd63fb2023b4712a3ad49838f87f5b7cc8320954
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 216c83d4158fe65b7aeb52f5477362eb57ec4242
+ms.sourcegitcommit: a52e81ab4fe24ae6410d1a1e63b4b073abc416a4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744892"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34822723"
 ---
 # <a name="manage-software-updates-in-intune"></a>Intune でのソフトウェア更新プログラムの管理
 
@@ -169,10 +169,13 @@ Intune コンソールで、カスタム ポリシーの OMA-URI 設定を使用
 > また、一時停止コマンドを発行したときに対象のデバイスが無効になっていると、有効にしたときに、デバイスは Intune でチェックインする前に、スケジュールされた更新プログラムをダウンロードしインストールする場合があります。
 
 ### <a name="uninstall-the-latest-from-windows-10-software-updates"></a>Windows 10 ソフトウェア更新プログラムの最新のものをアンインストールする 
-Windows 10 コンピューターで重大な問題が見つかった場合は、最新の機能更新プログラムまたは最新の品質更新プログラムをアンインストール (ロールバック) できます。 機能更新プログラムまたは品質更新プログラムをアンインストールできるのは、デバイスが存在するサービス チャネルの場合のみです。 アンインストールすると、Windows 10 コンピューター上の以前の更新プログラムを復元するためのポリシーがトリガーされます。 機能更新プログラムの場合、最新バージョンのアンインストールを適用できる期間を 2 日から 60 日間で制限できます。 ソフトウェア更新プログラムのアンインストール オプションを設定するには、Azure Portal 内の **[Microsoft Intune]** ブレードで **[ソフトウェア更新プログラム]** を選択します。 次に、**[ソフトウェア更新プログラム]** ブレードで、**[Windows 10 更新プログラムのリング]** を選択します。 これで、**[概要]** セクションから **[アンインストール]** オプションを選択できます。
+Windows 10 コンピューターで重大な問題が見つかった場合は、最新の機能更新プログラムまたは最新の品質更新プログラムをアンインストール (ロールバック) できます。 機能更新プログラムまたは品質更新プログラムをアンインストールできるのは、デバイスが存在するサービス チャネルの場合のみです。 アンインストールすると、Windows 10 コンピューター上の以前の更新プログラムを復元するためのポリシーがトリガーされます。 機能更新プログラムの場合、最新バージョンのアンインストールを適用できる期間を 2 日から 60 日間で制限できます。 ソフトウェア更新プログラムのアンインストール オプションを設定するには:
+
+1. Intune で、**[ソフトウェア更新プログラム]** を選択します。
+2. **[Windows 10 更新リング]**、既存の更新リング、**[アンインストール]** の順に選択します。
 
 > [!NOTE]
-> Windows 10 コンピューターでは、品質更新プログラムが正常にロールバックされた後、エンドユーザーは **[Windows の設定]** > **[更新プログラム]** > **[更新の履歴]** の順に選択することで、正常にロールバックされた更新プログラムを確認できます。
+> Windows 10 マシンで品質更新プログラムが正常にロールバックされた後も、エンドユーザーは **[Windows の設定]** > **[更新プログラム]** > **[更新履歴]** の順に選択して更新プログラムを確認できます。
 
 ## <a name="windows-holographic-for-business-support"></a>Windows Holographic for Business のサポート
 
