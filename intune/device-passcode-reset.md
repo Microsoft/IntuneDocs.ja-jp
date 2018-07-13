@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 81330083830eb2e3e1fe3e36217d403a77094a65
-ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
+ms.openlocfilehash: dd743bdb0eaf2e00c50aab85c497dd00aac773ed
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964727"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905157"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Intune でデバイスのパスコードをリセットまたは削除する
 
@@ -30,6 +30,7 @@ ms.locfileid: "36964727"
 
 - 仕事用プロファイルと共に登録されている Android デバイス、バージョン 8.0 以降
 - Android デバイス、バージョン 6.0 以前
+- Android エンタープライズ キオスク デバイス
 - iOS 
      
 ## <a name="unsupported-platforms"></a>サポートされていないプラットフォーム
@@ -46,9 +47,9 @@ ms.locfileid: "36964727"
 3. **[デバイス]**、**[すべてのデバイス]** の順に選択します。
 4. 管理対象のデバイスのリストから、デバイスを選択して **[...詳細を表示]** を選択します。 次に、**[パスコードの削除]** デバイス リモート アクションを選択します。
 
-## <a name="resetting-android-for-work-passcodes"></a>Android for Work パスコードのリセット
+## <a name="resetting-android-work-profile-passcodes"></a>Android 仕事用プロファイル パスコードをリセットする
 
-サポートされている Android for Work デバイスでは、エンド ユーザーの新しいマネージド プロファイル ロック解除パスワードまたはマネージド プロファイル チャレンジを受け取ります。 Android 8.0 以降と仕事用プロファイルのデバイスの場合、エンド ユーザーは、登録完了の直後、リセット パスコード トークンを有効にする旨が記載された通知を受け取ります。 仕事用プロファイル パスワードが要求され、設定されている場合、通知が表示されます。 パスコードが入力されると、通知が閉じられます。
+サポートされている Android 仕事用プロファイル デバイスは、エンド ユーザー用の新しいマネージド プロファイル ロック解除パスワードまたはマネージド プロファイル チャレンジを受け取ります。 Android 8.0 仕事用プロファイル デバイスの場合、登録が完了した直後に、エンド ユーザーはリセット パスコードをアクティブにするように通知されます。 仕事用プロファイル パスワードが要求され、設定されている場合、通知が表示されます。 パスコードが入力されると、通知が閉じられます。
 
 ## <a name="resetting-ios-passcodes"></a>iOS パスコードのリセット
 

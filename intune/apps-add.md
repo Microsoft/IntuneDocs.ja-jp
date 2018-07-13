@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: caed42642a87d38076f755cd356cc7ab7c6a3d8a
-ms.sourcegitcommit: 95ffcd5ddd3e5df7d68ae75218c5ff2ea076133e
+ms.openlocfilehash: 6a5abf774b6cb46b37d42ea1b73f653a02057528
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36263406"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905990"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune にアプリを追加する
 
@@ -51,7 +51,7 @@ Intune では、広範囲に及ぶさまざまな種類のアプリをサポー�
 | iOS ストア アプリ  | ストア アプリ  | **[アプリの種類]** として **[iOS]** を選択し、アプリを検索し、Intune でアプリを選択します。 |
 | Windows Phone 8.1 ストア アプリ  | ストア アプリ  | **[アプリの種類]** として **[Windows Phone 8.1]** を選択し、Microsoft ストアのアプリの URL を入力します。 |
 | Microsoft ストア アプリ  | ストア アプリ  | **[アプリの種類]** として **[Windows]** を選択し、Microsoft ストアのアプリの URL を入力します。 |
-| Android for Work アプリ | ストア アプリ  | Google Play for Work ストアで、Android for Work アプリを検索して承認します。  |
+| Android 仕事用アプリ | ストア アプリ  | Managed Google Play ストアから Android 仕事用プロファイル アプリを検索および承認します。  |
 | Windows 10 用の Office 365 アプリ  | ストア アプリ (Office 365) | **[アプリの種類]** として **[Office 365 スイート]** の下から **[Windows 10]** を選択し、インストールする Office 365 アプリを選択します。  |
 | macOS 用の Office 365 アプリ | ストア アプリ (Office 365) | **[アプリの種類]** として **[Office 365 スイート]** の下から **[macOS]** を選択し、Office 365 アプリ スイートを選択します。 |
 | Android 基幹業務 (LOB) アプリ | LOB アプリ | **[アプリの種類]** として **[基幹業務]** を選択し、**[アプリのパッケージ ファイル]** を選択し、拡張子が **.apk** の Android のインストール ファイルを入力します。  |
@@ -117,7 +117,7 @@ Intune を使用すると、展開するアプリの機能を変更すること�
 ### <a name="understanding-licensed-apps"></a>ライセンスされたアプリを把握する
 Web アプリ、ストア アプリ、LOB アプリに加えて、Volume Purchase Program アプリとライセンス アプリの宛先も認識する必要があります。 
 - **一般法人向けの Apple Volume Purchasing Program (iOS と MacOS)**: iOS アプリ ストアでは、社内で実行するアプリの複数のライセンスを購入できます。 複数のコピーを購入すると、会社でのアプリ管理を効率的に行うことができます。 詳細については、「[Volume Purchase Program で購入した iOS アプリを Microsoft Intune で管理する方法](vpp-apps-ios.md)」を参照してください。
-- **Android for Work (Android)**: Android for Work デバイスにアプリを割り当てる方法は、標準の Android デバイスに割り当てる場合と異なります。 Android for Work 用にインストールするすべてのアプリは、Google Play for Work ストアから入手します。 ストアにサインインし、目的のアプリを検索し、アプリを承認します。 承認後、アプリが Azure Portal の **[ライセンスされたアプリ]** ノードに表示されます。他のアプリと同様にアプリの割り当てを管理できます。
+- **Android 仕事用プロファイル**: Android 仕事用プロファイル デバイスにアプリを割り当てる方法は、標準の Android デバイスに割り当てる場合と異なります。 Android 仕事用プロファイルに対してインストールするアプリはすべて、Managed Google Play ストアから入手します。 ストアにサインインし、目的のアプリを検索し、アプリを承認します。 承認後、アプリが Azure Portal の **[ライセンスされたアプリ]** ノードに表示されます。他のアプリと同様にアプリの割り当てを管理できます。
 - **Microsoft Store for Business (Windows 10)**: ビジネス向け Microsoft Store では、組織用のアプリを見つけて、個別または大量に購入することができます。 Microsoft Intune にストアを接続することで、Azure Portal でボリューム購入アプリを管理することができます。 詳細については、「[ビジネス向け Microsoft Store からのアプリの管理](windows-store-for-business.md)」を参照してください。
 
 ## <a name="before-you-add-apps"></a>アプリを追加する前に

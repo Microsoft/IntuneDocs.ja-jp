@@ -15,12 +15,12 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f8517e9a9dd698e875214fe363d8e1246129b96a
-ms.sourcegitcommit: 81721ad672096298bf281dcbf21e8ce9c44cafaa
+ms.openlocfilehash: 6bf9eaef010879835abb7cec57c2fbdce6aa1e0a
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042713"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905871"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>デバイスの企業所有としての識別
 
@@ -47,7 +47,7 @@ Intune 管理者は、IMEI 番号またはシリアル番号を記載してい�
 Apple デバイスのシリアル番号の検索方法については、[こちら](https://support.apple.com/HT204308)をご覧ください。<br>
 Android デバイスのシリアル番号の検索方法については、[こちら](https://support.google.com/store/answer/3333000)をご覧ください。
 
-## <a name="add-corporate-identifiers"></a>企業 ID を追加する
+## <a name="add-corporate-identifiers-by-using-a-csv-file"></a>.csv ファイルを使用して企業 ID を追加する
 リストを作成するには、ヘッダーなしの 2 列のコンマ区切り値 (.csv) リストを作成します。 IMEI またはシリアル番号を左側の列に、詳細を右側の列に追加します。 1 つの .csv ファイルにインポートできるのは、1 種類の ID、IMEI、またはシリアル番号のみです。 詳細の上限は 128 文字です。また、管理者のみが使用できます。 詳細はデバイスに表示されません。 現在の上限は .csv ファイルあたり 5,000 行です。
 
 **シリアル番号が含まれている .csv ファイルをアップロード** – csv ファイル 1 つあたりデバイス 5,000 個または 5 MB を上限とする、2 つの列を持つヘッダーなしのコンマ区切り値のリスト (.csv) を作成します。
@@ -70,19 +70,33 @@ Android デバイスのシリアル番号の検索方法については、[こ�
 >デバイスから Intune に報告されたシリアル番号は、Android デバイスの [設定]/[バージョン情報] メニューに表示される ID と一致しない場合があります。 デバイスの製造元から報告されたシリアル番号の種類をご確認ください。
 >ドット (.) が含まれるシリアル番号のファイルをアップロードしようとすると、アップロードが失敗します。 ドット (.) が含まれるシリアル番号はサポートされていません。
 
-### <a name="add-a-csv-list-of-corporate-identifiers"></a>企業 ID の .csv リストを追加する
+### <a name="upload-a-csv-list-of-corporate-identifiers"></a>企業 ID の .csv リストをアップロードする
 
-1. [Azure Portal の Intune](https://portal.azure.com) で **[デバイスの登録]** > **[業務用デバイスの ID]** の順に選択し、**[追加]** をクリックします。
+1. [Azure portal の Intune](https://portal.azure.com) で **[デバイスの登録]** > **[業務用デバイスの ID]** > **[追加]** > **[CSV ファイルのアップロード]** の順に選択します。
 
    ![[追加] ボタンが強調表示された、[業務用デバイス ID] ワークスペース](./media/add-corp-id.png)
 
-2. **[ID の追加]** ブレードで **[IMEI]** または **[シリアル]** の ID の種類を指定します。 以前にインポートした番号が **[既存の ID の詳細を上書きします]** を適用するかどうかを指定できます。
+2. **[ID の追加]** ブレードで **[IMEI]** または **[シリアル]** の ID の種類を指定します。
 
-3. フォルダー アイコンをクリックし、インポートするリストのパスを指定します。 .csv ファイルに移動して、**[追加]** を選択します。 **[更新]** をクリックすると、新しいデバイス ID が表示されます。
+3. フォルダー アイコンをクリックし、インポートするリストのパスを指定します。 .csv ファイルに移動して、**[追加]** を選択します。 
+
+4. .csv ファイルに含まれる企業 ID が既に Intune 内に存在しているが、その詳細は異なる場合、**[重複した ID を確認する]** ポップアップが表示されます。 Intune に上書きする ID を選択し、**[OK]** を選択して、ID を追加します。 各識別子について、最初の重複のみが比較されます。
+
+## <a name="manually-enter-corporate-identifiers"></a>企業 ID を手動で入力する
+
+1. [Azure portal の Intune](https://portal.azure.com) で **[デバイスの登録]** > **[業務用デバイスの ID]** > **[追加]** > **[手動で入力]** の順に選択します。
+
+2. **[ID の追加]** ブレードで **[IMEI]** または **[シリアル]** の ID の種類を指定します。
+
+3. 追加する ID ごとに、**[ID]** と **[詳細]** を入力します。 ID の入力を完了したら、**[追加]** を選択します。
+
+5. 入力した企業 ID は Intune 内に既に存在しているが、その詳細が異なる場合は、**[重複した ID を確認する]** ポップアップが表示されます。 Intune に上書きする ID を選択し、**[OK]** を選択して、ID を追加します。 各識別子について、最初の重複のみが比較されます。
+
+**[更新]** をクリックすると、新しいデバイス ID が表示されます。
 
 インポートされたデバイスが必ずしも登録されているとは限りません。 デバイスは **[登録済み]** または **[未接続]** のどちらかの状態になります。 **未接続** の場合、デバイスは Intune サービスで通信に使われていません。
 
-### <a name="delete-corporate-identifiers"></a>企業 ID を削除する
+## <a name="delete-corporate-identifiers"></a>企業 ID を削除する
 
 1. [Azure Portal の Intune](https://portal.azure.com) で **[デバイスの登録]** > **[業務用デバイスの ID]** の順に選択します。
 2. 削除するデバイス識別子を選択し、**[削除]** を選択します。
@@ -90,7 +104,7 @@ Android デバイスのシリアル番号の検索方法については、[こ�
 
 登録済みデバイスの企業識別子を削除すると、デバイスの所有権が変更されます。 デバイスの所有権を変更するには、**[デバイス]** に進み、デバイスを選択し、**[プロパティ]** を選択し、**[デバイスの所有者]** を変更します。
 
-### <a name="imei-specifications"></a>IMEI の仕様
+## <a name="imei-specifications"></a>IMEI の仕様
 International Mobile Equipment Identifier の詳しい仕様については、「[3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729)」を参照してください。
 
 ## <a name="change-device-ownership"></a>デバイス所有権を変更する

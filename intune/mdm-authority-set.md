@@ -15,12 +15,12 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4c1902e319a862c9ffcda5068753f917bf8f4c3f
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 0f4687b3a2b1064fbfe3a9c8aa9da6cc7d336d78
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232920"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906041"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>モバイル デバイス管理機関の設定
 
@@ -41,9 +41,11 @@ ms.locfileid: "36232920"
 
 ## <a name="set-mdm-authority-to-intune"></a>MDM 機関を Intune に設定する
 
+MDM 機関をまだ設定していない場合は、次の手順に従います。 MDM 機関を別の MDM 機関に変更するには、後述する[MDM 機関の変更](#prepare-to-change-the-mdm-authority-to-configuration-manager)に関するセクションを参照してください。
+
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
 2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3. オレンジのバナーを選択し、**[モバイル デバイス管理機関]** 設定を開きます。
+3. オレンジのバナーを選択し、**[モバイル デバイス管理機関]** 設定を開きます。 オレンジのバナーは、MDM 機関をまだ設定していない場合にのみ表示されます。
 4. **[モバイル デバイス管理機関]** で、次の選択肢から MDM 機関を選択します。
    - **Intune MDM 機関**
    - **Configuration Manager MDM 機関**
@@ -57,7 +59,7 @@ ms.locfileid: "36232920"
 Android または Apple デバイスの管理が有効になっていると、Intune では、それぞれのデバイスを管理するために、デバイスとユーザー情報を送信し、これらのサード パーティ サービスと統合できるようにします。
 
 データを共有することに同意するシナリオは、次の場合に含まれます。
-- Android for Work を有効にする
+- Android 仕事用プロファイルを有効にする。
 - Apple MDM プッシュ通知証明書を有効にしてアップロードする
 - Device Enrollment Program、School Manager および Volume Purchasing Program など、Apple の任意のサービスを有効にする
 

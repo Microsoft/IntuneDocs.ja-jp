@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune - Azure を使用してデバイス上の会社データを削除する | Microsoft Docs
-description: Microsoft Intune を使用して Android、Android for Work、iOS、macOS、または Windows デバイスで会社データを削除するか、出荷時の設定にリセットします。 また、Azure Active Directory からデバイスを削除します。
+description: Microsoft Intune を使用して Android、Android の仕事用プロファイル、iOS、macOS、または Windows デバイスで会社データを削除するか、出荷時の設定にリセットします。 また、Azure Active Directory からデバイスを削除します。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b5eadc4ee23a89624cde9f1246f64aafce0b06c
-ms.sourcegitcommit: 3284586d9260a66ce99029b7808e4807f8780d20
+ms.openlocfilehash: 326622c324f75e216db69bd850b707e0fc1c0679
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37091729"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906058"
 ---
 # <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>工場出荷時のリセットを使用してデバイスを削除する、企業データを削除する、またはデバイスを手動で登録する
 
@@ -31,7 +31,7 @@ ms.locfileid: "37091729"
 
 ## <a name="factory-reset"></a>工場出荷時のリセット
 
-**[出荷時の設定にリセット]** アクションでは、デバイスを出荷時の既定の設定に復元します。 ユーザー データは、**[登録状態とユーザー アカウントを保持します]** チェック ボックスがオンかどうかに応じて、保持またはワイプされます。
+**[出荷時の設定にリセット]** アクションでは、デバイスを出荷時の既定の設定に復元します。 **[登録状態とユーザー アカウントを保持します]** チェック ボックスをオンにすると、ユーザー データが保持されます。 それ以外の場合は、ドライブは安全に消去されます。
 
 |[出荷時の設定にリセット] のアクション|**登録状態とユーザー アカウントを保持します**|Intune の管理から削除される|説明|
 |:-------------:|:------------:|:------------:|------------|
@@ -109,9 +109,13 @@ MDM ポリシーは、デバイスが次に Intune に接続再したときに�
 |Azure AD の参加解除|Azure AD レコードは削除されます。|Azure AD レコードは削除されます。|
 |連絡先 |アプリからネイティブ アドレス帳に直接同期された連絡先は削除されます。 ネイティブ アドレス帳から別の外部ソースに同期された連絡先は削除できません。 <br /> <br />現時点では、Outlook アプリのみがサポートされています。|アプリからネイティブ アドレス帳に直接同期された連絡先は削除されます。 ネイティブ アドレス帳から別の外部ソースに同期された連絡先は削除できません。 <br /> <br />現時点では、Outlook アプリのみがサポートされています。
 
-### <a name="android-for-work"></a>Android for Work
+### <a name="android-work-profile"></a>Android の仕事用プロファイル
 
-会社の Android デバイスから会社データを削除すると、そのデバイスの仕事用のプロファイルのすべてのデータ、アプリケーション、および設定が削除されます。 デバイスは Intune の管理対象ではなくなります。 Android for Work では出荷時の設定のリセットはサポートされていません。
+Android の仕事用プロファイルのデバイスから会社データを削除すると、そのデバイスの仕事用プロファイルのすべてのデータ、アプリケーション、および設定が削除されます。 デバイスは Intune の管理対象ではなくなります。 Android の仕事用プロフィルについては、出荷時の設定にリセットはサポートされていません。
+
+### <a name="android-enterprise-kiosk-devices"></a>Android エンタープライズ キオスク デバイス
+
+Android のキオスク デバイスは、出荷時の設定にリセットできるだけです。 Android のキオスク デバイスから会社のデータを削除することはできません。
 
 
 ### <a name="macos"></a>macOS
@@ -151,6 +155,15 @@ Intune ポータルからデバイスを削除する必要がある場合は、�
 
 1. [Azure portal で Intune](https://aka.ms/intuneportal) にサインインします。
 2. **[デバイス]** > **[すべてのデバイス]** を選択し、削除するデバイスを選んで、**[削除]** を選択します。
+
+### <a name="automatically-delete-devices-with-cleanup-rules"></a>クリーンアップ ルールを使用してデバイスを自動的に削除する
+非アクティブ、古い、または応答不能であると表示されたデバイスが自動的に削除されるように Intune を構成することができます。 これらのクリーンアップ ルールでは、デバイス レコードが最新の状態に維持されるように、デバイスのインベントリを継続的に監視します。 この方法で削除されたデバイスは Intune 管理から削除されます。
+1. [Azure Portal で Intune](https://aka.ms/intuneportal) にサインインします。
+2. **[デバイス]** > **[デバイスのクリーンアップ ルール]** > **[はい]** の順に選択します。
+3. **[Delete devices that haven’t checked in for this many days]\(指定日数の間チェックインされなったデバイスを削除する\)** ボックスで、90 から 270 の範囲の数値を入力します。
+4. **[保存]** を選びます。
+
+
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Azure Active Directory ポータルからデバイスを削除する
 

@@ -1,7 +1,7 @@
 ---
 title: 管理対象の Android デバイス用アプリ構成ポリシーを追加する
 titlesuffix: Microsoft Intune
-description: Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが Android for Work アプリを実行するときに設定を指定します。
+description: Microsoft Intune のアプリ構成ポリシーを使用して、ユーザーが Android 仕事用プロファイル アプリを実行するときに設定を指定します。
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -15,18 +15,18 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3011d98b73ef95d1c5a527798ab004f788c9eee9
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: c837f9a5a2cb1a6f267f85f888453725da6acb66
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34470867"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905752"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>管理対象の Android デバイス用アプリ構成ポリシーを追加する
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune のアプリ構成ポリシーを使用して、Android for Work アプリを実行するための設定を指定します。 アプリ開発者は、アプリの構成設定を指定する場合、Android 管理対象アプリの構成設定を公開する必要があります。 設定を適用するユーザー グループにアプリ構成ポリシーを割り当てます。  ポリシー設定は、アプリがポリシーをチェックするとき (通常はアプリの初回実行時) に使用されます。
+Microsoft Intune のアプリ構成ポリシーを使用して、Android 仕事用プロファイル アプリを実行するための設定を指定します。 アプリ開発者は、アプリの構成設定を指定する場合、Android 管理対象アプリの構成設定を公開する必要があります。 設定を適用するユーザー グループにアプリ構成ポリシーを割り当てます。  ポリシー設定は、アプリがポリシーをチェックするとき (通常はアプリの初回実行時) に使用されます。
 
 > [!Note]  
 > アプリ構成をサポートしていないアプリもあります。 ビルドされたアプリでアプリ構成ポリシーがサポートされているかどうかについては、アプリの開発者にお問い合わせください。
@@ -39,8 +39,8 @@ Microsoft Intune のアプリ構成ポリシーを使用して、Android for Wor
     - **名前** - Azure portal に表示されるプロファイルの名前。
     - **説明** - Azure portal に表示されるプロファイルの説明。
     - **デバイス登録の種類** - **[マネージド デバイス]** を選択します。
-6. **[プラットフォーム]** に **[Android for Work]** を選択します。
-7. **[関連アプリ]** を選択し、アプリ構成ポリシーを定義するアプリを選択します。 承認して Intune に同期した Android for Work アプリの一覧から選択します。
+6. **[プラットフォーム]** に **[Android]** を選択します。
+7. **[関連アプリ]** を選択し、アプリ構成ポリシーを定義するアプリを選択します。 承認して Intune に同期した Android 仕事用プロファイル アプリの一覧から選択します。
 8. **[アクセス許可]** を選択します。 以下を使用して構成を設定できます。
     - [構成デザイナー](#Use-the-configuration-designer)
     - [JSON エディター](#Enter-the-JSON-editor)
@@ -95,8 +95,8 @@ Android デバイス機能にアクセスするためのアプリのアクセス
     - **説明**。 Azure Portal に表示されるプロファイルの説明。
     - **デバイス登録の種類**。 
   **[マネージド デバイス]** を選択します。
-    - **プラットフォーム**。 **[Android for Work]** を選択します。
-5. **[関連アプリ]** を選択し、構成ポリシーを定義するアプリを選択します。 承認して Intune に同期した Android for Work アプリの一覧から選択します。
+    - **プラットフォーム**。 **[Android]** を選択します。
+5. **[関連アプリ]** を選択し、構成ポリシーを定義するアプリを選択します。 承認して Intune に同期した Android 仕事用プロファイル アプリの一覧から選択します。
 6. **[アクセス許可]** を選択し、**[追加]** を選択します。
 7. 使用できるアプリのアクセス許可の一覧から選択し、**[OK]** を選択します。
 8. このポリシーに付与するアクセス許可ごとにオプションを選択します。

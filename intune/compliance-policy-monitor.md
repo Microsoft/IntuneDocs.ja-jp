@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/18/2018
+ms.date: 6/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 33e42c821881a5cc7eb9e4be65f6f7e56263480e
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 5e9de6f1ac8bca1d65a94294d3b049dfccbe44c7
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232972"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905361"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune デバイスのコンプライアンス対応ポリシーの監視
 
@@ -158,9 +158,27 @@ Intune に登録されたすべてのデバイスの集約されたコンプラ�
 
 [コンプライアンスの設定] タイルをクリックし、いずれかのデバイス コンプライアンス ポリシー設定をクリックすると、そのデバイス コンプライアンス ポリシー設定の対象にした各デバイスの**準拠状態**、**ユーザーの電子メール エイリアス**、**デバイス モデル**、および**場所**の詳細な情報を表示できます。
 
+## <a name="view-status-of-device-policies"></a>デバイス ポリシーの状態を表示する
+
+プラットフォームごとに、ご使用のポリシーのさまざまな状態を確認することができます。 たとえば、macOS コンプライアンス ポリシーがあるとします。 このポリシーによって影響を受けるデバイスを確認し、競合やエラーが発生していないか把握する必要があります。
+
+この機能はデバイス状態レポートに含まれています。
+
+1. **[デバイスのポリシー準拠]** > **[ポリシー]** の順に選択します。 ポリシーの一覧が表示されます。これにはプラットフォーム、ポリシーが割り当てられているかどうか、およびその他の詳細が含まれます。
+2. ポリシーを選択し、**[概要]** を選択します。 このビューでは、ポリシー割り当てに次の状態が含まれています。
+
+  - 成功
+  - エラー
+  - 競合
+  - Pending
+  - 適用できません
+
+3. このポリシーを使用してデバイスの詳細を表示するには、状態のいずれかを選択します。 たとえば、**[成功]** を選択します。 次のウィンドウでは、デバイス名や展開状態など、特定のデバイスの詳細が一覧表示されます。
+
 ## <a name="how-intune-resolves-policy-conflicts"></a>Intune のポリシー競合の解決方法
 複数の Intune ポリシーを 1 つのデバイスに適用すると、ポリシーの競合が発生する可能性があります。 ポリシーの設定が重複した場合、Intune では次のルールを使用して競合を解決します。
 
 - Intune の構成ポリシーと準拠ポリシーの設定が競合している場合は、構成ポリシーの設定よりも準拠ポリシーの設定が優先されます。 構成ポリシーの設定の方が安全性が高い場合でも同様です。
 
 - 複数の準拠ポリシーを展開した場合、Intune ではその中で最も安全なポリシーが使用されます。
+
