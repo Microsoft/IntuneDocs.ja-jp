@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb81e070542248f585717564f0a609a512389ae2
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 30f2bea4589e31f3012df1bd06e6327b923ec5d1
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905072"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225444"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune のデバイス コンプライアンス ポリシーの概要
 
@@ -88,7 +88,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 デバイスが Intune に登録されると、Azure AD の登録プロセスが開始され、デバイス属性が Azure AD に更新されます。 重要な情報の 1 つとして、デバイスのコンプライアンス状態があります。 このコンプライアンス状態は、電子メールと他の企業リソースへのアクセスをブロックまたは許可するための条件付きアクセス ポリシーによって使用されます。
 
-[Azure AD の登録プロセス](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction)に関するページで詳しく説明します。
+[Azure AD の登録プロセス](https://docs.microsoft.com/azure/active-directory/device-management-introduction)に関するページで詳しく説明します。
 
 ### <a name="assign-a-resulting-device-configuration-profile-status"></a>デバイスの構成プロファイルの結果の状態を割り当てる
 

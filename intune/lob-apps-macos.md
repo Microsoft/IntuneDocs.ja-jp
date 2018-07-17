@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/02/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 89f2d06c879343a0f9701a8531c5543b961d792f
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: c871d32fbcdfa089de88ae649c2926d2c839cce2
+ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906007"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38993719"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>macOS の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法
 
@@ -32,8 +32,6 @@ ms.locfileid: "37906007"
 >macOS デバイスのユーザーは Stocks や Maps などの一部の macOS 組み込みアプリを削除できますが、Intune を使ってこれらのアプリを再展開することはできません。 エンド ユーザーがこれらのアプリを削除した場合は、アプリ ストアから手動で再インストールする必要があります。
 >
 >Microsoft Intune への macOS LOB アプリのアップロードに使うことができるのは、*.pkg* ファイルだけです。 *.dmg* から *.pkg* など、他の形式への変換はサポートされていません。
-
-Microsoft Intune では、macOS LOB アプリを **[必須]** として、または **[Available with enrollment]\(登録で利用可能\)** として展開することができます。 エンド ユーザーは、macOS 用のポータル サイトまたは[ポータル サイト Web サイト](https://portal.manage.microsoft.com)を使用して、アプリを **[利用可能]** として展開してもらうことができます。
 
 ## <a name="step-1---pre-process-your-software-setup-file"></a>ステップ 1 - ソフトウェア設定ファイルを前処理する
 
