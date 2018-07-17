@@ -15,11 +15,11 @@ ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 5b322b9d2b6a7f0689df521ef1809c3616c02f3f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021457"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225325"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Windows ユーザーがアプリを入手する方法
 
@@ -31,9 +31,11 @@ Microsoft Intune を通して配布したアプリをユーザーがどこでど
 
 **使用可能なアプリ**は、ポータル サイト アプリの一覧に表示され、ユーザーがインストールを選択できるアプリです。
 
-**管理対象のアプリ**は、ポリシーによって管理でき、Intune によって "ラップ" されているか、Intune アプリ ソフトウェア開発キット (SDK) で構築されています。 これらのアプリは Intune によって管理することができます。また、これらのアプリにはアプリ保護ポリシーを適用することができます。
 
-**管理対象外のアプリ**は、ポリシーによって管理でき、Intune によってラップされていないアプリまたは Intune アプリ SDK を組み込んでいないアプリです。 アプリ保護にアプリケーション ポリシーを適用することはできません。
+  **管理対象のアプリ**は、ポリシーによって管理でき、Intune によって "ラップ" されているか、Intune アプリ ソフトウェア開発キット (SDK) で構築されています。 これらのアプリは Intune によって管理することができます。また、これらのアプリにはアプリ保護ポリシーを適用することができます。
+
+
+  **管理対象外のアプリ**は、ポリシーによって管理でき、Intune によってラップされていないアプリまたは Intune アプリ SDK を組み込んでいないアプリです。 アプリ保護にアプリケーション ポリシーを適用することはできません。
 
 ### <a name="see-also"></a>関連項目
 [Android ユーザーがアプリを入手する方法](end-user-apps-android.md)

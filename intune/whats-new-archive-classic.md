@@ -15,11 +15,11 @@ ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 34b219b48e5bc9e3ee688895c071b230886183eb
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834440"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225427"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune クラシック ポータルの新機能 (過去数か月)
 
@@ -37,13 +37,13 @@ Managed Browser での Microsoft MyApps のサポートが向上します。 管
 
 #### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431-971473--"></a>Managed Browser とポータル サイトの新しいアイコン <!--918433, 918431, 971473-->
 
-Managed Browser の Android バージョンと iOS バージョンのアイコンが更新されます。 新しいアイコンには、Enterprise Mobility + Security (EM+S) での他のアプリとの一貫性が向上した新しい Intune バッジが含まれます。 Managed Browser 用の新しいアイコンは、[Intune アプリ UI の新機能に関するページ](whats-new-app-ui.md)でご覧いただけます。
+Managed Browser の Android バージョンと iOS バージョンのアイコンが更新されます。 新しいアイコンには更新された Intune バッジが含まれ、Enterprise Mobility + Security (EM+S) の他のアプリとの一貫性が向上します。 管理対象ブラウザーの新しいアイコンは、[Intune アプリ UI の新機能に関するページ](whats-new-app-ui.md)で確認できます。
 
-ポータル サイトは、Android 版アプリ、iOS 版アプリ、Windows 版アプリの更新されたアイコンを受け取り、EM+S の他のアプリとの一貫性を向上させます。 これらのアイコンは、4 月から 5 月末にかけて段階的にプラットフォーム全体にリリースされます。
+ポータル サイトは、Android 版アプリ、iOS 版アプリ、Windows 版アプリの更新されたアイコンを受け取り、EM+S の他のアプリとの一貫性を向上させます。 アイコンは 4 月から 5 月後半にかけてすべてのプラットフォームに徐々に提供されます。
 
 #### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 用ポータル サイトでのサインイン進行状況インジケーター<!--953374-->
 
-Android 用ポータル サイト アプリが更新されて、起動または再開時にサインイン進行状況インジケーターが表示されるようになります。 ユーザーがアプリへのアクセスを許可されるまでにインジケーターに順番に表示される新しいステータスは、[接続中...]、[サインイン中...]、[Checking for security requirements... (セキュリティ要件確認中...)] です。 Android 用ポータル サイト アプリの新しい画面は、[Intune アプリ UI の新機能](whats-new-app-ui.md)に関するページでご覧いただけます。
+Android 用ポータル サイト アプリが更新されて、起動または再開時にサインイン進行状況インジケーターが表示されるようになります。 このインジケーターには新しい状態が次々と表示されます。"接続しています..." から始まり、"サインインしています..." に進み、さらに "セキュリティ要件を確認しています..." に進み、その後、ユーザーはアプリにアクセスできます。 Android 用ポータル サイト アプリの新しい画面は、[Intune アプリ UI の新機能](whats-new-app-ui.md)に関するページでご覧いただけます。
 
 #### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>アプリの SharePoint Online へのアクセスをブロック<!-- 679339 -->
 
@@ -146,11 +146,11 @@ Intune のデバイス コンプライアンス ポリシーにより有効に�
 
 Android 用ポータル サイト アプリでは、ユーザー インターフェイスが最新の外観となり、ユーザー エクスペリエンスが向上しました。 主な更新内容は次のとおりです。
 
-- 色: ポータル サイトのタブ ヘッダーの色が、IT が定義するブランド色になります。
+- 色: ポータル サイトのタブ ヘッダーに IT が設定したブランディングの色が付きます。
 - アプリ: **[アプリ]** タブの **[おすすめアプリ]** ボタンと **[すべてのアプリ]** ボタンが更新されました。
-- 検索: **[アプリ]** タブの **[検索]** ボタンが浮動アクション ボタンになりました。
-- ナビゲーション アプリ: **[すべてのアプリ]** ビューで **[おすすめ]**、**[すべて]** および **[カテゴリ]** のタブ付きビューが表示され、移動がより簡単になります。
-- サポート: **[デバイス]** タブと **[IT に連絡]** タブが更新されて、読みやすくなりました。
+- 検索: **[アプリ]** タブの **[検索]** ボタンはフローティング アクション ボタンです。
+- アプリ ナビゲーション: **[すべてのアプリ]** ビューで **[おすすめ]**、**[すべて]**、**[カテゴリ]** のタブ付きビューが表示され、移動がより簡単になりました。
+- サポート: **[マイ デバイス]** タブと **[IT に連絡]** タブが更新され、読みやすくなりました。
 
 これらの変更について詳しくは、「[Intune とエンド ユーザー アプリの UI の更新](whats-new-app-ui.md)」をご覧ください。
 
@@ -160,7 +160,7 @@ Android 用ポータル サイト アプリでは、ユーザー インターフ
 
 #### <a name="signing-script-for-windows-10-company-portal---941642--"></a>Windows 10 ポータル サイトの署名スクリプト<!--941642-->
 
-Windows 10 ポータル サイト アプリのダウンロードおよびサイドロードの必要がある場合に、スクリプトを使用して、組織のアプリ署名プロセスを簡素化および合理化できるようになりました。   スクリプトとこれを使用するための手順をダウンロードするには、TechNet ギャラリーの [Windows 10 ポータル サイトの Microsoft Intune 署名スクリプト](https://aka.ms/win10cpscript)に関する記事をご覧ください。 この発表に関して詳しくは、Intune サポート チームのブログの「[Updating your Windows 10 Company Portal app (Windows 10 ポータル サイト アプリの更新)](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/)」をご覧ください。
+Windows 10 ポータル サイト アプリのダウンロードおよびサイドロードの必要がある場合に、スクリプトを使用して、組織のアプリ署名プロセスを簡素化および合理化できるようになりました。   スクリプトとその使用方法に関する手順をダウンロードする方法については、TechNet ギャラリーの「[Microsoft Intune Signing Script for Windows 10 Company Portal](https://aka.ms/win10cpscript)」 (Windows 10 ポータル サイトの Microsoft Intune の署名スクリプト) を参照してください。 この発表に関して詳しくは、Intune サポート チームのブログの「[Updating your Windows 10 Company Portal app (Windows 10 ポータル サイト アプリの更新)](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/)」をご覧ください。
 
 
 ### <a name="notices"></a>通知
@@ -173,7 +173,7 @@ Windows 10 ポータル サイト アプリのダウンロードおよびサイ�
 
 #### <a name="improved-support-for-android-users-based-in-china---720444--"></a>中国の Android ユーザー向けのサポートが向上しました <!--720444-->
 
-中国では Google Play ストアを利用できないため、Android デバイスの場合は中国のマーケットプレースからアプリを入手する必要があります。 ポータル サイトでは、中国の Android ユーザーをリダイレクトして、ローカルのアプリ ストアからポータル サイトおよび Outlook のアプリをダウンロードできるようにし、このワークフローをサポートします。 これにより、モバイル デバイス管理およびモバイル アプリケーション管理の両方について、条件アクセス ポリシーが有効な場合に、ユーザー エクスペリエンスが向上します。 Android 用ポータル サイト アプリおよび Outlook アプリは、次の中国のアプリ ストアで入手できます。
+中国では Google Play ストアを利用できないため、Android デバイスの場合は中国のマーケットプレースからアプリを入手する必要があります。 ポータル サイトはこのワークフローをサポートします。中国の Android ユーザーをリダイレクトし、現地のアプリ ストアからポータル サイト アプリや Outlook アプリをダウンロードできるようにします。 これにより、モバイル デバイス管理とモバイル アプリケーション管理の両方で、条件付きアクセス ポリシーを有効にしたときのユーザー エクスペリエンスが向上します。 Android 用ポータル サイト アプリおよび Outlook アプリは、次の中国のアプリ ストアで入手できます。
 
 - [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
 - [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
@@ -200,7 +200,7 @@ Windows 10 ポータル サイト アプリのダウンロードおよびサイ�
 ### <a name="new-capabilities"></a>新しい機能
 
 ### <a name="modernizing-the-company-portal-website---753980--"></a>ポータル Web サイトの進化 <!--753980-->
-ポータル Web サイトで管理対象のデバイスを持っていないユーザーを対象とするアプリをサポートします。 この Web サイトは、新しいコントラストの配色パターン、動的な図、および "ハンバーガー メニュー"  ![(ヘルプデスクの連絡先詳細や既存の管理対象デバイスに関する情報を含む、](./media/CP_hamburger_menu.png)。
+ポータル Web サイトでマネージド デバイスを持っていないユーザーを対象とするアプリをサポートします。 この Web サイトは、新しいコントラストの配色パターン、動的な図、および "ハンバーガー メニュー"  ![(ヘルプデスクの連絡先詳細や既存の管理対象デバイスに関する情報を含む、](./media/CP_hamburger_menu.png)。
 
 ### <a name="notices"></a>通知
 
@@ -221,7 +221,7 @@ Windows 10 デスクトップを登録するための既定の動作が変わり
 iOS 用ポータル サイト内のリンク (ドキュメントとアプリへのリンクを含む) は、Safari のアプリ内ビューを使用して、ポータル サイト アプリに直接開きます。 この更新プログラムは、1 月にサービス更新プログラムとは別に提供されます。
 
 #### <a name="new-mdm-server-address-for-windows-devices---893007--"></a>Windows デバイス用の新しい MDM サーバー アドレス <!--893007-->
-Windows および Windows Phone のユーザーがデバイスを登録しようとして、MDM サーバー アドレスとして (入力を求められた場合に) __manage.microsoft.com__ を入力した場合、登録は失敗します。 MDM サーバー アドレスは、__manage.microsoft.com__ から __enrollment.manage.microsoft.com__ に変更されています。Windows や Windows Phone デバイスの登録時に、MDM サーバー アドレスの入力を求められた場合は、__enrollment.manage.microsoft.com__ を使用するようにユーザーに通知してください。 CNAME 設定に変更は必要ありません。 この変更の詳細については、[aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange) を参照してください。
+Windows および Windows Phone のユーザーがデバイスを登録しようとして、MDM サーバー アドレスとして (入力を求められた場合に) __manage.microsoft.com__ を入力した場合、登録は失敗します。 MDM サーバー アドレスは、__manage.microsoft.com__ から __enrollment.manage.microsoft.com__ に変更されています。 Windows や Windows Phone デバイスの登録時に、MDM サーバー アドレスの入力を求められた場合は、__enrollment.manage.microsoft.com__ を使用するようにユーザーに通知してください。 CNAME 設定に変更は必要ありません。 この変更の詳細については、[aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange) を参照してください。
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android 用ポータル サイト アプリに関する新しいユーザー エクスペリエンス <!--621622-->
 3 月以降、Android 用ポータル サイト アプリでは[材料設計ガイドライン](https://material.io/guidelines/material-design/introduction.html)に従って、最新の外観が作成されます。 この改善されたユーザー エクスペリエンスには、次のものが含まれます。
@@ -234,7 +234,7 @@ Windows および Windows Phone のユーザーがデバイスを登録しよう
 [UI の更新ページ](whats-new-app-ui.md)で、更新前と後のイメージを確認できます。
 
 ### <a name="associate-multiple-management-tools-with-the-microsoft-store-for-business---926135--"></a>複数の管理ツールとビジネス向け Microsoft ストアの関連付け <!--926135-->
-ビジネス向け Microsoft ストアのアプリを展開するために複数の管理ツールを使用する場合、これまでは、ビジネス向け Microsoft ストアにはそのうちの 1 つしか関連付けることができませんでした。 これからは、複数のツール (Intune や Configuration Manager など) をストアに関連付けることができます。 詳細については、「[ビジネス向け Microsoft ストアから購入したアプリを Microsoft Intune で管理する](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune)」を参照してください。
+ビジネス向け Microsoft ストアのアプリを展開するために複数の管理ツールを使用する場合、これまでは、ビジネス向け Microsoft ストアにはそのうちの 1 つしか関連付けることができませんでした。 今では Intune や Configuration Manager など、複数の管理ツールをストアと関連付けることができます。 詳細については、「[ビジネス向け Microsoft ストアから購入したアプリを Microsoft Intune で管理する](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune)」を参照してください。
 
 ## <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal---736542--"></a>Azure Portal での Intune のパブリック プレビューの新機能 <!--736542-->
 
@@ -254,10 +254,10 @@ Azure の Intune プレビューの新機能は[ここ](whats-new.md)で確認�
 登録されているデバイスと登録されていないデバイスの両方に対して、新しいアプリ保護レポートが追加されました。 詳細については、「[Microsoft Intune でのモバイル アプリ管理ポリシーの監視](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune)」を参照してください。
 
 #### <a name="android-711-support---694397--"></a>Android 7.1.1 のサポート <!--694397-->
-Intune では Android 7.1.1 が完全にサポートされ、管理されるようになりました。
+Intune では、Android 7.1.1 を完全にサポートし管理できるようになりました。
 
 #### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them---unknown--"></a>iOS デバイスが無効か、管理コンソールと通信できない問題を解決 <!--unknown-->
-ユーザーのデバイスと Intune の接続が失われるとき、新しいトラブルシューティング手順を指示できます。会社リソースへのアクセスを回復するのに役立ちます。 「[デバイスが無効か、管理コンソールとデバイスが通信できない](/intune-classic/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them)」を参照してください。
+ユーザーのデバイスと Intune の接続が失われるとき、新しいトラブルシューティング手順を指示できます。会社リソースへのアクセスを回復するのに役立ちます。 「[Devices are inactive, or the admin console cannot communicate with them](/intune-classic/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them)」 (デバイスがアクティブでないか、管理コンソールと通信できない) を参照してください。
 
 ### <a name="notices"></a>通知
 
@@ -273,7 +273,7 @@ Windows 10 デスクトップを登録するための既定の動作が変わり
 iOS 用ポータル サイト内のリンク (ドキュメントとアプリへのリンクを含む) は、Safari のアプリ内ビューを使用して、ポータル サイト アプリに直接開きます。 この更新プログラムは、1 月にサービス更新プログラムとは別に提供されます。
 
 #### <a name="modernizing-the-company-portal-website---753980--"></a>ポータル Web サイトの進化 <!--753980-->
-2 月から、ポータル Web サイトで管理対象のデバイスを持っていないユーザーを対象とするアプリをサポートします。 この Web サイトは、新しいコントラストの配色パターン、動的な図、および "ハンバーガー メニュー"  ![ポータル サイトのハンバーガー メニュー](./media/CP_hamburger_menu.png)。
+2 月から、ポータル Web サイトでマネージド デバイスを持っていないユーザーを対象とするアプリをサポートします。 この Web サイトは、新しいコントラストの配色パターン、動的な図、および "ハンバーガー メニュー"  ![ポータル サイトのハンバーガー メニュー](./media/CP_hamburger_menu.png)。
 
 #### <a name="new-documentation-for-app-protection-policies---583398--"></a>アプリの保護ポリシーに関する新しいドキュメント <!--583398-->
 Intune アプリ ラッピング ツールまたは Intune アプリ SDK を使用して、iOS および Android アプリでアプリ保護ポリシー (MAM ポリシーとして知られる) を有効にする必要がある管理者やアプリ開発者用のドキュメントを更新しました。
@@ -323,7 +323,7 @@ __Android 用ポータル サイト アプリが中国で利用可能になる__
 * [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
 * [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
 
-Android 用ポータル サイト アプリは、Google Play 開発者サービスを使って Microsoft Intune サービスと通信します。 中国では Google Play 開発者サービスをまだ利用できないので、次のタスクには最大 8 時間かかることがあります。 
+Android 用ポータル サイト アプリは、Google Play サービスを使って Microsoft Intune サービスと通信します。 中国では Google Play 開発者サービスをまだ利用できないので、次のタスクには最大 8 時間かかることがあります。 
 
 |Intune 管理コンソール| Android 用 Intune ポータル サイト アプリ |Intune ポータル サイト Web サイト|   
 |---|---|---|

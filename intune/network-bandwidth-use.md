@@ -16,11 +16,11 @@ ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: c161d1ca120d5a0210cffca01e781f1ae9206fe4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31029405"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225359"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune のネットワーク構成の要件と帯域幅
 
@@ -43,11 +43,11 @@ ms.locfileid: "31029405"
 |ポリシー エージェント|3 MB|**1 回限り**<br /><br />追加のダウンロードは、このコンテンツの種類の更新プログラムが存在する場合に発生することがあります。|
 |Microsoft Easy Assist によるリモート アシスタンス|6 MB|**1 回限り**<br /><br />追加のダウンロードは、このコンテンツの種類の更新プログラムが存在する場合に発生することがあります。|
 |日常のクライアントの操作|6 MB|**毎日**<br /><br />Intune クライアントは、更新プログラムやポリシーを確認したり、クライアントの状態をサービスに報告したりするために、定期的に Intune サービスと通信します。|
-|Endpoint Protection のマルウェア定義の更新|不定<br /><br />通常 40 KB ～ 2 MB|**毎日**<br /><br />最大で 1 日に 3 回。|
+|Endpoint Protection のマルウェア定義の更新|異なる<br /><br />通常 40 KB ～ 2 MB|**毎日**<br /><br />最大で 1 日に 3 回。|
 |Endpoint Protection エンジンの更新プログラム|5 MB|**毎月**|
-|ソフトウェア更新プログラム|不定<br /><br />サイズは、展開する更新プログラムによって異なります。|**毎月**<br /><br />通常、ソフトウェアの更新プログラムのリリースは、毎月の第 2 火曜日です。<br /><br />新しく登録された、または、展開されたコンピューターは、以前にリリースされた更新プログラムのフル セットをダウンロードする間、多くのネットワーク帯域幅を使用することがあります。|
+|ソフトウェア更新プログラム|異なる<br /><br />サイズは、展開する更新プログラムによって異なります。|**毎月**<br /><br />通常、ソフトウェアの更新プログラムのリリースは、毎月の第 2 火曜日です。<br /><br />新しく登録された、または、展開されたコンピューターは、以前にリリースされた更新プログラムのフル セットをダウンロードする間、多くのネットワーク帯域幅を使用することがあります。|
 |Service Pack|不定<br /><br />サイズは、展開する各サービス パックによって異なります。|**随時**<br /><br />サービス パックを展開する時間に依存します。|
-|ソフトウェアの配布|不定<br /><br />サイズは、展開するソフトウェアによって異なります。|**随時**<br /><br />ソフトウェアを展開する時間に依存します。|
+|ソフトウェアの配布|異なる<br /><br />サイズは、展開するソフトウェアによって異なります。|**随時**<br /><br />ソフトウェアを展開する時間に依存します。|
 
 ## <a name="ways-to-reduce-network-bandwidth-use"></a>ネットワーク帯域幅の使用量を削減する方法
 次の方法を使用して、Intune クライアントのネットワーク帯域幅の使用量を削減できます。
@@ -60,7 +60,7 @@ ms.locfileid: "31029405"
 Intune クライアント用にコンテンツをキャッシュするプロキシ サーバーの一般的な設定を以下に示します。
 
 
-|          Setting           |           推奨される値           |                                                                                                  説明                                                                                                  |
+|          設定           |           推奨される値           |                                                                                                  詳細                                                                                                  |
 |----------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         キャッシュ サイズ         |             5 ～ 30 GB             | この値は、ネットワークにあるクライアント コンピューターの台数と、使用する構成によって異なります。 ファイルが短時間で削除されないようにするには、環境のキャッシュのサイズを調整します。 |
 | キャッシュする個々のファイルのサイズ |                950 MB                 |                                                                     キャッシュ機能付きサーバーによっては、この設定がないものがあります。                                                                     |
@@ -83,7 +83,7 @@ Intune クライアントは、BranchCache を使用してワイド エリア �
 
 BranchCache を使用するには、クライアント コンピューターで BranchCache を有効にして、**分散キャッシュモード**に構成する必要があります。
 
-Intune クライアントをインストールすると、既定で、コンピューターの BranchCache と分散キャッシュ モードは有効です。 ただし、グループ ポリシーで BranchCache が無効になっている場合、Intune でそのポリシーが上書きされることはなく、BranchCache は無効のままになります。
+Intune クライアントをインストールすると、既定で、コンピューターの BranchCache と分散キャッシュ モードは有効です。 ただし、グループ ポリシーで BranchCache が無効になっている場合、Intune でそのポリシーがオーバーライドされることはなく、BranchCache は無効のままになります。
 
 BranchCache を使用する場合、グループ ポリシーと Intune ファイアウォール ポリシーを管理する組織内の他の管理者と共同作業を行います。 他の管理者が、BranchCache を無効にするポリシーやファイアウォールの例外を展開しないようにしてください。 BranchCache の詳細については、「[BranchCache の概要](http://technet.microsoft.com/library/hh831696.aspx)」を参照してください。
 
@@ -104,7 +104,7 @@ Intune は、Intune ソフトウェアを実行するサーバーのようなオ
 <!--
 > [!NOTE] If Windows 8.1 devices haven't cached proxy server credentials, enrollment might fail because the request doesn't prompt for credentials. Enrollment fails without warning as the request wait for a connection. If users might experience this issue, instruct them to open their browser settings and save proxy server settings to enable a connection.   -->
 
-管理対象デバイスは、**[すべてのユーザー]** がファイアウォール経由でサービスにアクセスできるように構成する必要があります。
+マネージド デバイスは、**[すべてのユーザー]** がファイアウォール経由でサービスにアクセスできるように構成する必要があります。
 
 次の表は、Intune クライアントがアクセスするポートとサービスの一覧です。
 

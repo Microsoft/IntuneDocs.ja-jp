@@ -14,12 +14,12 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8f37c45945df460dabac60e5b06286c940728ba3
-ms.sourcegitcommit: 3c4ea8d6809a63042705b5ed4f25ba80f522070e
+ms.openlocfilehash: a6a5bbdd5c8cd155dad99b3a8fcceabb2ff1f6f8
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34051642"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225410"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Intune にデバイスを登録できるようにライセンスをユーザーに割り当てる
 
@@ -46,7 +46,7 @@ ms.locfileid: "34051642"
 
 ## <a name="assign-an-intune-license-by-using-azure-active-directory"></a>Azure Active Directory を使用して Intune のライセンスを割り当てる
 
-Azure Active Directory を使用してユーザーに Intune ライセンスを割り当てることもできます。 詳しくは、[Azure Active Directory でのユーザーへのライセンスの割り当て](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-licensing-group-assignment-azure-portal)に関するページをご覧ください。 
+Azure Active Directory を使用してユーザーに Intune ライセンスを割り当てることもできます。 詳しくは、[Azure Active Directory でのユーザーへのライセンスの割り当て](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal)に関するページをご覧ください。 
 
 ## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>School Data Sync を使って Intune for Education のユーザーにライセンスを割り当てる
 教育組織の場合、School Data Sync (SDS) を使用して Intune for Education のライセンスを同期されたユーザーに割り当てることができます。 SDS プロファイルを設定するときに、Intune for Education のチェック ボックスをオンにするだけです。  

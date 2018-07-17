@@ -15,11 +15,11 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: apps
 ms.openlocfilehash: 69bf4b1dc85a8a17312fe78b6a17564a8a6ff642
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223817"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225393"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Microsoft Intune のアプリ ライフサイクルの概要
 
@@ -33,7 +33,7 @@ Microsoft Intune のアプリ ライフサイクルは、アプリが追加さ�
 
 アプリ展開の最初のステップは、管理と割り当てを行うアプリを Intune に追加することです。 使用できるアプリの種類はさまざまですが、基本的な手順は同じです。 Intune では、社内で開発されたアプリ (基幹業務)、ストアから入手したアプリ、組み込みアプリ、Web 上のアプリなど、さまざま種類のアプリを追加できます。 アプリの種類については、「[アプリを Microsoft Intune に追加する方法](apps-add.md)」を参照してください。 
 
-## <a name="deploy"></a>デプロイ
+## <a name="deploy"></a>[展開]
 
 Intune にアプリを追加したら、[それを管理対象のユーザーとデバイスに割り当てる](apps-deploy.md)ことができます。 Intune でこのプロセスが簡単になります。アプリの展開後、Azure Portal 内の Intune から展開が[成功したことを監視](apps-monitor.md)できます。 さらに、[Apple](vpp-apps-ios.md) や [Windows](windows-store-for-business.md) アプリ ストアなどの一部のアプリ ストアでは、会社用にアプリのライセンスを一括購入できます。 Intune では、これらのストアとデータを同期して、Intune 管理コンソールからこの種のアプリのライセンスを展開して使用状況を追跡できます。
 
@@ -41,7 +41,8 @@ Intune にアプリを追加したら、[それを管理対象のユーザーと
 
 アプリのライフサイクルの一環として、アプリの新しいバージョンが定期的にリリースされます。 Intune には、展開した[アプリを新しいバージョンに簡単に更新](apps-add.md)できるツールがあります。 さらに、一部のアプリでは次のような追加機能を構成できます。
 - [iOS アプリ構成ポリシー](app-configuration-policies-use-ios.md)では、アプリの実行時に使用される互換性のある iOS アプリの設定を指定できます。 たとえば、アプリには特定のブランド設定や、接続するサーバーの名前が必要な場合があります。
-- [管理対象ブラウザー ポリシー](app-configuration-managed-browser.md)では、デバイスの既定ブラウザーを置き換えて、ユーザーがアクセスできる Web サイトを制限できる、Intune 管理ブラウザーの設定を構成できます。
+- 
+  [管理対象ブラウザー ポリシー](app-configuration-managed-browser.md)では、デバイスの既定ブラウザーを置き換えて、ユーザーがアクセスできる Web サイトを制限できる、Intune 管理ブラウザーの設定を構成できます。
 
 ## <a name="protect"></a>保護
 

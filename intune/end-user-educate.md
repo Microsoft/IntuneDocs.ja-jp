@@ -14,11 +14,11 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
 ms.openlocfilehash: dfe17cd582682126c889662dd942117c3c68dd10
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34717997"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225274"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Microsoft Intune に関してエンド ユーザーを教育する方法
 
@@ -59,11 +59,11 @@ __ユーザーにとって Intune が不便な点__  ユーザーによるアプ
 
 * __意識する。__ Intune ユーザーの経験は生産性にも影響します。 ユーザーの経験を理解することで、デバイスおよびユーザーの問題のトラブルシューティングをより簡単に行うことができます。 たとえば、ユーザーがアプリを取得する方法を学習し理解することができます。 この情報を前もって把握しておくことにより、問題の診断および解決をより簡単かつ迅速に行うことができます。
 
-* **Android**
+* **Outlook Web Access (OWA)**
   * [Android デバイスを Intune で使用する](/intune-user-help/using-your-android-device-with-intune)
   * [Android ユーザーがアプリを入手する方法](end-user-apps-android.md)
 
-* **Android**
+* **iOS**
   * [iOS デバイスを Intune で使用する](/intune-user-help/using-your-ios-device-with-intune)
   * [iOS ユーザーがアプリを入手する方法](end-user-apps-ios.md)
 
