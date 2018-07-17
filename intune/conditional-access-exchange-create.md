@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a1476ad4237b6355d0cb87fcc643bf0234e7f457
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: fbe55be15df9755c109ec7e8e8e23db3c27931b0
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744773"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905531"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange On-Premises と従来の Exchange Online Dedicated の条件付きアクセス ポリシーを作成する
 
@@ -54,7 +54,7 @@ Exchange Online Dedicated 環境を使用していて、それが新しい構成
 
 - そのデバイスに展開されているデバイス コンプライアンス ポリシーに**準拠**している。
 
-- デバイスが条件付きアクセス設定を満たしていない場合、ユーザーのログイン時に、次のいずれかのメッセージが表示されます。
+- デバイスが条件付きアクセス設定を満たしていない場合、ユーザーのサインイン時に、次のいずれかのメッセージが表示されます。
     - デバイスが Intune に登録されていない、または Azure Active Directory に登録されていない場合は、ポータル サイト アプリのインストール、デバイスの登録、電子メールのアクティブ化の手順が示されたメッセージが表示されます。 また、このプロセスによって、デバイスの Exchange ActiveSync ID が Azure Active Directory のデバイス レコードに関連付けられます。
     - デバイスが準拠していない場合は、Intune のポータル サイト Web サイトまたはポータル サイト アプリにユーザーを誘導するメッセージが表示されます。このポータルで、ユーザーは問題とその解決方法に関する情報を確認できます。
 
@@ -63,7 +63,7 @@ Exchange Online Dedicated 環境を使用していて、それが新しい構成
 - Windows Phone 8.1 以降
 - iOS のネイティブ電子メール アプリ。
 - Android 4 以降での EAS メール クライアント (Gmail など)。
-- EAS メール クライアント **Android for Work デバイス:** Android for Work デバイスでは、**仕事用プロファイル**の **Gmail** アプリと **Nine Work** アプリのみがサポートされています。 条件付きアクセスが Android for Work で動作するには、Gmail アプリまたは Nine Work アプリ用の電子メール プロファイルを展開する必要があります。また、必要なインストールとしてそのアプリを展開する必要があります。
+- EAS メール クライアント **Android 仕事用プロファイル デバイス:** Android 仕事用プロファイル デバイスでは、**仕事用プロファイル**の **Gmail** アプリと **Nine Work** アプリのみがサポートされています。 条件付きアクセスが Android 仕事用プロファイルで動作するには、Gmail アプリまたは Nine Work アプリ用の電子メール プロファイルを展開する必要があります。また、必要なインストールとしてそのアプリを展開する必要があります。
 
 > [!NOTE]
 > Android と iOS の Microsoft Outlook アプリはサポートされていません。 

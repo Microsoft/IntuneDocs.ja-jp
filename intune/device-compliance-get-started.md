@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 777cfa7d387c2bd19d529dbfc6d1aeab5dbad67e
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: fb81e070542248f585717564f0a609a512389ae2
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190760"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905072"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune のデバイス コンプライアンス ポリシーの概要
 
@@ -140,7 +140,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 デバイスに複数のコンプライアンス ポリシーがある場合、すべてのポリシーの最も高い重大度がそのデバイスに割り当てられます。
 
-たとえば、デバイスに 3 つのコンプライアンス ポリシーに割り当てられていて、1 つが不明状態 (重大度 = 1)、1 つが準拠状態 (重大度 = 3)、1 つが InGracePeriod 状態 (重要度 = 4) であるとします。 InGracePeriod 状態の重大度レベルが最も高いので、3 つすべてのポリシーのコンプライアンス状態は InGracePeriod になります。
+たとえば、デバイスに 3 つのコンプライアンス ポリシーが割り当てられていて、1 つが不明状態 (重大度 = 1)、1 つが準拠状態 (重大度 = 3)、1 つが InGracePeriod 状態 (重要度 = 4) であるとします。 InGracePeriod 状態の重大度レベルが最も高いので、3 つすべてのポリシーのコンプライアンス状態は InGracePeriod になります。
 
 ## <a name="ways-to-use-device-compliance-policies"></a>デバイス コンプライアンス ポリシーを使用する方法
 
@@ -202,7 +202,7 @@ Azure Portal でデバイス コンプライアンスに関連した機能を使
 - 以下のプラットフォームに対してデバイス コンプライアンス ポリシーを作成します。
 
   - [Android](compliance-policy-create-android.md)
-  - [Android for Work](compliance-policy-create-android-for-work.md)
+  - [Android 仕事用プロファイル](compliance-policy-create-android-for-work.md)
   - [Android](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)

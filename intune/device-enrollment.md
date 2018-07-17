@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/29/2017
+ms.date: 06/13/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c4be5c1897c4358d2eee83fa97e710136dd0379d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7aabb010baa4a5e53ad5e4264edc43e3ca111c70
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37909203"
 ---
 # <a name="what-is-device-enrollment"></a>デバイス登録とは
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -26,6 +27,8 @@ ms.lasthandoff: 04/16/2018
 Intune では、従業員のデバイスやアプリ、従業員が会社のデータにアクセスする手段を管理できます。 このモバイル デバイス管理 (MDM) を使用するには、まず Intune サービスにデバイスを登録する必要があります。 デバイスが登録されると、MDM 証明書が発行されます。 この証明書を使用して、Intune サービスと通信します。
 
 次の表に示すように、従業員のデバイスを登録する方法は複数あります。 各方法は、デバイスの所有権 (個人または会社)、デバイスの種類 (iOS、Windows、Android)、および管理要件 (リセット、アフィニティ、ロック) によって異なります。
+
+既定では、すべてのプラットフォーム用のデバイスを Intune に登録することができます。 ただし、[プラットフォームによってデバイスを制限する](enrollment-restrictions-set.md#set-device-type-restrictions)ことができます。
 
 ## <a name="ios-enrollment-methods"></a>iOS の登録方法
 
@@ -61,17 +64,17 @@ Intune では、従業員のデバイスやアプリ、従業員が会社のデ�
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#bring-your-own-device)** | [いいえ]|   はい |   [いいえ] | [詳細情報](./android-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| [いいえ] |[いいえ] |[いいえ]  |[詳細情報](./device-enrollment-manager-enroll.md)|
-|**Android for Work**| [いいえ] | はい | [いいえ]| [詳細情報](./android-enroll.md#enable-enrollment-of-android-for-work-devices) |
+|**Android 仕事用プロファイル**| [いいえ] | はい | [いいえ]| [詳細情報](./android-work-profile-enroll.md) |
 
 
 ## <a name="bring-your-own-device"></a>Bring Your Own Device
 BYOD (私物デバイスの業務利用) デバイスには、個人の電話、タブレット、PC があります。 ユーザーは、ポータル サイト アプリをインストール、および実行して、BYOD デバイスを登録します。 このプログラムによって、ユーザーは電子メールなどの会社のリソースにアクセスできます。
 
 ## <a name="corporate-owned-device"></a>企業所有のデバイス
-企業所有のデバイス (COD) には、組織が所有し、従業員に配布されている電話、タブレット、PC があります。 COD 登録では、自動登録、共有デバイス、事前承認された登録要件などのシナリオがサポートされます。 管理者やマネージャーによる COD の一般的な登録方法は、デバイス登録マネージャー (DEM) を使用することです。 iOS デバイスは、Apple から提供される Device Enrollment Program (DEP) ツールから直接登録できます。 IMEI 番号を持つデバイスも、会社所有として識別して、タグを付けることができます。
+[企業所有のデバイス (COD) ](corporate-identifiers-add.md)には、組織が所有し、従業員に配布されている電話、タブレット、PC があります。 COD 登録では、自動登録、共有デバイス、事前承認された登録要件などのシナリオがサポートされます。 管理者やマネージャーによる COD の一般的な登録方法は、デバイス登録マネージャー (DEM) を使用することです。 iOS デバイスは、Apple から提供される Device Enrollment Program (DEP) ツールから直接登録できます。 IMEI 番号を持つデバイスも、会社所有として識別して、タグを付けることができます。
 
 ### <a name="device-enrollment-manager"></a>デバイス登録マネージャー
-デバイス登録マネージャー (DEM) は、複数の会社所有のデバイスを登録して管理するために使用される特別なユーザー アカウントです。 作成後は、マネージャーがポータル サイトをインストールし、多数のユーザーがいないデバイスを登録できます。 DEM の詳細については[ここ](./device-enrollment-manager-enroll.md)を参照してください。
+デバイス登録マネージャー (DEM) は、複数の会社所有のデバイスを登録して管理するために使用される特別なユーザー アカウントです。 作成後は、マネージャーがポータル サイトをインストールし、多数のユーザーがいないデバイスを登録できます。 この種のデバイスは、POS アプリやユーティリティ アプリなどには適していますが、電子メールや会社のリソースにアクセスする必要があるユーザーには適していません。 DEM の詳細については[ここ](./device-enrollment-manager-enroll.md)を参照してください。 
 
 ### <a name="apple-device-enrollment-program"></a>Apple Device Enrollment Program
 Apple Device Enrollment Program (DEP) 管理では、ポリシーを作成し、DEP で購入および管理されている iOS デバイスに "無線で" 展開できます。 ユーザーが初めてデバイスの電源を入れて iOS Setup Assistant を実行した際に、デバイスが登録されます。 この方法は、iOS 監視対象モードをサポートしているため、特定の機能でデバイスを構成することができます。

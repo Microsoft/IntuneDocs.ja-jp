@@ -1,23 +1,23 @@
 ---
 title: Microsoft Intune - Azure で Windows デバイスのコンプライアンス ポリシーを作成する | Microsoft Docs
-description: Windows Phone 8.1 のデバイス、Windows 8.1 以降のデバイス、および Windows 10 以降のデバイス用の Microsoft Intune デバイス コンプライアンス ポリシーを作成または構成します。 最小および最大のオペレーティング システムでのコンプライアンスを確認し、パスワードの制限と長さを設定し、Bitlocker を要求し、許容可能な脅威レベルを設定し、データ ストレージでの暗号化を有効にします (Surface Hub や Windows Holographic for Business を含む)。
+description: Windows Phone 8.1 のデバイス、Windows 8.1 以降のデバイス、および Windows 10 以降のデバイス用の Microsoft Intune デバイス コンプライアンス ポリシーを作成または構成します。 最小および最大のオペレーティング システムでのコンプライアンスを確認し、パスワードの制限と長さを設定し、Bitlocker を要求し、サードパーティ AV ソリューションを確認し、許容可能な脅威レベルを設定し、データ ストレージでの暗号化を有効にします (Surface Hub や Windows Holographic for Business を含む)。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6e5fb28e001dbe69f392d1ea730e415515fe4c5c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 8d06b5120bc3ff3e3e14d1c5b089bbebc7b53558
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744909"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37909339"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune で Windows デバイス用のデバイス コンプライアンス ポリシーを追加する
 
@@ -115,6 +115,8 @@ Windows 8.1 PC の場合、バージョン **3** が返されます。 Windows �
 
 HAS サービスのしくみの詳細については、「[HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp)」をご覧ください。
 
+脅威対策サービスとしての Windows Defender ATP (Advanced Threat Protection) を設定するには、「[Intune で条件付きアクセスによる Windows Defender ATP を有効にする](advanced-threat-protection.md)」を参照してください。
+
 ### <a name="device-properties"></a>デバイスのプロパティ
 
 - **最小 OS バージョン**: 許容される最小バージョンを **major.minor.build.CU の番号**形式で入力します。 正しい値を得るには、コマンド プロンプトを開き、「`ver`」と入力します。 `ver` コマンドは次の形式でバージョンを返します。
@@ -164,6 +166,11 @@ HAS サービスのしくみの詳細については、「[HealthAttestation CSP
 #### <a name="encryption"></a>暗号化
 
 - **[Encryption of data storage on a device]\(デバイス上のデータ ストレージの暗号化\)**: **[必要]** を選択すると、デバイス上のデータ ストレージが暗号化されます。
+
+#### <a name="device-security"></a>［デバイス セキュリティ］
+
+- **[ウイルス対策]**: **[必要]** に設定すると、Windows Security Center に登録されている Symantec や Windows Defender などのウイルス対策ソリューションを使って、コンプライアンスを確認できます。 **未構成**のときには、Intune は、デバイスにインストールされている AV ソリューションを確認しません。
+- **[スパイウェア対策]**: **[必要]** に設定すると、Windows Security Center に登録されている Symantec や Windows Defender などのスパイウェア対策ソリューションを使って、コンプライアンスを確認できます。 **[未構成]** のときには、Intune は、デバイスにインストールされているスパイウェア対策ソリューションを確認しません。
 
 ### <a name="windows-defender-atp"></a>Windows Defender ATP
 

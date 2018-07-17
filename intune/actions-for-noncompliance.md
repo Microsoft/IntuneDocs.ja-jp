@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8e8603ca59b46937b1529e710a8bc83aec5dd4d6
-ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
+ms.openlocfilehash: 3c8bc523f2796f8af7cb4801cdb13a60b7e2eb5d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2018
-ms.locfileid: "32017959"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905735"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>コンプライアンス違反デバイスに対する自動メール送信とアクションの追加 - Intune
 
@@ -39,8 +39,8 @@ ms.locfileid: "32017959"
 - コンプライアンス違反に対するアクションを設定するには、少なくとも 1 つのデバイス コンプライアンス ポリシーが必要です。 デバイス コンプライアンス ポリシーの作成については、以下のプラットフォームをご覧ください。
 
   - [Android](compliance-policy-create-android.md)
-  - [Android for Work](compliance-policy-create-android-for-work.md)
-  - [iOS](compliance-policy-create-ios.md)
+  - [Android 仕事用プロファイル](compliance-policy-create-android-for-work.md)
+  - [Android](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)
 

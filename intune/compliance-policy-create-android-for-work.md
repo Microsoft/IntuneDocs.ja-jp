@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune - Azure で Android for Work コンプライアンス ポリシーを作成する | Microsoft Docs
-description: Android for Work デバイス用の Microsoft Intune デバイス コンプライアンス ポリシーを作成または構成します。 脱獄されたデバイスを許可し、許容可能な脅威レベルを設定し、Google Play を確認し、オペレーティング システムの最小および最大バージョンを入力し、パスワードの要件を選択し、サイドローディング アプリケーションを許可します。
+title: Microsoft Intune で Android 仕事用プロファイルのコンプライアンス ポリシーを作成する - Azure | Microsoft Docs
+description: Android 仕事用プロファイル デバイス用の Microsoft Intune デバイス コンプライアンス ポリシーを作成または構成します。 脱獄されたデバイスを許可し、許容可能な脅威レベルを設定し、Google Play を確認し、オペレーティング システムの最小および最大バージョンを入力し、パスワードの要件を選択し、サイドローディング アプリケーションを許可します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -14,24 +14,24 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1d438aa7416b1629af7ab2b899afa06720e2b49
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34047987"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905089"
 ---
-# <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Intune で Android for Work デバイス用のデバイス コンプライアンス ポリシーを追加する
+# <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>Intune で Android 仕事用プロファイル デバイス用のデバイス コンプライアンス ポリシーを追加する
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android for Work 用の Intune デバイス コンプライアンス ポリシーでは、準拠していると見なされるためにこれらのデバイスが満たす必要のあるルールと設定が指定されます。 このようなポリシーを条件付きアクセスと一緒に使用することにより、会社のリソースへのアクセスを許可または阻止することができます。 コンプライアンス違反に対して、デバイス レポートを取得したり、是正措置を取ったりすることもできます。 デバイス コンプライアンス ポリシーは、Intune Azure Portal で各種のプラットフォームに対して作成します。 コンプライアンス ポリシーの詳細については、[デバイス コンプライアンスの概要](device-compliance-get-started.md)に関するページを参照してください。
+Android 仕事用プロファイル デバイスの Intune デバイス コンプライアンス ポリシーでは、準拠していると見なされるためにこれらのデバイスが満たす必要のあるルールと設定が指定されます。 このようなポリシーを条件付きアクセスと一緒に使用することにより、会社のリソースへのアクセスを許可または阻止することができます。 コンプライアンス違反に対して、デバイス レポートを取得したり、是正措置を取ったりすることもできます。 デバイス コンプライアンス ポリシーは、Intune Azure Portal で各種のプラットフォームに対して作成します。 コンプライアンス ポリシーの詳細については、[デバイス コンプライアンスの概要](device-compliance-get-started.md)に関するページを参照してください。
 
 次の表では、条件付きアクセス ポリシーとコンプライアンス ポリシーを使用する場合に非準拠設定をどのように管理するかについて説明しています。
 
 --------------------------
 
-|**ポリシー設定**| **Android for Work** |
+|**ポリシー設定**| **Android 仕事用プロファイル** |
 | --- | --- |
 | **PIN またはパスワードの構成** |  検疫済み |
 | **デバイスの暗号化** |  検疫済み |
@@ -51,7 +51,7 @@ Android for Work 用の Intune デバイス コンプライアンス ポリシ�
 ## <a name="create-a-device-compliance-policy"></a>デバイス コンプライアンス ポリシーの作成
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. **[プラットフォーム]** で、**[Android for Work]** を選択します。 **[設定]** を選択し、**[デバイスのヘルス]**、**[デバイス プロパティ]**、および **[システム セキュリティ]** の設定を入力します。 終了したら、**[OK]**、**[作成]** の順に選択します。
+5. **[プラットフォーム]** で、**[Android エンタープライズ]** を選択します。 **[設定]** を選択し、**[デバイスのヘルス]**、**[デバイス プロパティ]**、および **[システム セキュリティ]** の設定を入力します。 終了したら、**[OK]**、**[作成]** の順に選択します。
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -77,7 +77,7 @@ Android for Work 用の Intune デバイス コンプライアンス ポリシ�
 
 #### <a name="threat-scan-on-apps"></a>アプリの脅威のスキャン
 
-作業プロファイルがあるデバイス (Android for Work) では、**[アプリの脅威のスキャン]** 設定は構成ポリシー設定として存在しています。 管理者はデバイスの設定を有効にすることができます。
+Android 仕事用プロファイルがあるデバイスでは、**[アプリの脅威のスキャン]** 設定は構成ポリシー設定として存在しています。 管理者はデバイスの設定を有効にすることができます。
 
 企業で、Android 作業プロファイルを使用する場合は、登録されているデバイスに対して **[アプリの脅威のスキャン]** を有効にできます。 デバイス プロファイルを作成し、システム セキュリティ設定を要求します。 詳細については、「[Intune での Work デバイスの制限設定](device-restrictions-android-for-work.md)」をご覧ください。
 
@@ -106,13 +106,13 @@ Android for Work 用の Intune デバイス コンプライアンス ポリシ�
 
 ### <a name="encryption"></a>暗号化
 
-- **モバイル デバイスで暗号化を必要とする:** Android for Work デバイスは暗号化が適用されるので、この設定を構成する必要はありません。
+- **モバイル デバイスで暗号化を必要とする:** Android 仕事用プロファイル デバイスは暗号化が適用されるので、この設定を構成する必要はありません。
 
 ### <a name="device-security"></a>［デバイス セキュリティ］
 
-- **[提供元不明のアプリをブロックする]**: Android for Work デバイスでは、提供元不明のアプリのインストールは常に制限されるため、この設定を構成する必要はありません。
+- **[提供元不明のアプリをブロックする]**: Android 仕事用プロファイル デバイスでは、提供元不明のアプリのインストールは常に制限されるため、この設定を構成する必要はありません。
 - **[ポータル サイト アプリのランタイム整合性]**: ポータル サイト アプリの既定のランタイム環境がインストールされているかどうか、ポータル サイト アプリが適切に署名されているかどうか、デバッグ モードになっていないかどうか、既知の提供元からインストールされているかどうかを確認します。
-- **[デバイスでの USB デバッグをブロックする]**: USB デバッグは Android for Work デバイスでは既に無効になっているため、この設定を構成する必要はありません。
+- **[デバイスでの USB デバッグをブロックする]**: USB デバッグは Android 仕事用プロファイル デバイスでは既に無効になっているため、この設定を構成する必要はありません。
 - **[最低限のセキュリティ パッチ レベル]**: デバイスに含めることができる最も古いセキュリティ パッチ レベルを選択します。 修正プログラムがこのレベルに達していないデバイスは非準拠になります。 日付は `YYYY-MM-DD` 形式で入力する必要があります。
 
 ## <a name="assign-user-groups"></a>ユーザー グループを割り当てる

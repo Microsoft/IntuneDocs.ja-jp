@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d62341e35bf851bb429b15a582183bec62a9d4a
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: ff55b013d863d1676b9b83ec93e38defe222e2d7
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223392"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905242"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Web アプリを Microsoft Intune に追加する
 
@@ -31,7 +31,7 @@ Intune では、Web アプリなど、さまざまなアプリの種類がサポ
 ユーザー用アプリを管理して割り当てるには、そのアプリを Intune に追加します。 Intune によって、ユーザーのデバイスのホーム画面に Web アプリへのショートカットが作成されます。
 
 > [!Note]
-> Web アプリは、Android for Work デバイスと macOS ではサポートされていません。
+> Web アプリは、Android 仕事用プロファイル デバイスと macOS ではサポートされていません。
 
 ## <a name="add-a-web-app-to-intune"></a>Web アプリを Intune に追加する
 Web 上のアプリへのショートカットとしてアプリを Intune に追加するには、次の操作を行います。
@@ -51,7 +51,8 @@ Web 上のアプリへのショートカットとしてアプリを Intune に�
     - **[アプリ URL]**: 割り当てるアプリをホストする Web サイトの URL を入力します。
     - **[カテゴリ]**: 必要に応じて、1 つ以上の組み込みアプリ カテゴリ、または作成したカテゴリを選択します。 そうすると、会社のポータルを閲覧するときに、ユーザーがアプリを探しやすくなります。
     - **[会社のポータルでおすすめアプリとして表示します]**: この設定では、ユーザーがアプリを探すときに、会社のポータルのメイン ページでアプリ スイートが目立つように表示されます。
-    - **[このリンクを開くには Managed Browser が必要です]**: Web サイトまたは Web アプリへのリンクをユーザーに割り当てて、ユーザーが Intune Managed Browser で開けるようにするには、このオプションを選択します。 このブラウザーをデバイスにインストールする必要があります。
+    - 
+  **[このリンクを開くには Managed Browser が必要です]**: Web サイトまたは Web アプリへのリンクをユーザーに割り当てて、ユーザーが Intune Managed Browser で開けるようにするには、このオプションを選択します。 このブラウザーをデバイスにインストールする必要があります。
     - **[ロゴ]**: アプリに関連付けるアイコンをアップロードします。 ユーザーが会社のポータルを参照するとき、アプリにこのアイコンが表示されます。
 9. **[OK]** を選択します。
 10. **[アプリの追加]** ウィンドウで **[追加]** を選択します。

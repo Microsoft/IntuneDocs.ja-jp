@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6753e0232548d862b46a273f1be0105ad7f16d63
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 7f52c43f8918589c1b66034ad68908f4d5ddba6d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831947"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905123"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-android"></a>Android を実行するデバイス用の Microsoft Intune で VPN 設定を構成する 
 
@@ -30,7 +30,7 @@ ms.locfileid: "31831947"
 次のプラットフォーム用に VPN 設定を構成できます。
 
 - [Android](#android-vpn-settings)
-- [Android for Work](#android-for-work-vpn-settings)
+- [Android 仕事用プロファイルのデバイス](#android-for-work-vpn-settings)
 
 選択した設定によっては、次の一部の値を構成できない場合があります。
 
@@ -51,7 +51,7 @@ ms.locfileid: "31831947"
 - **[指紋]** (Check Point Capsule VPN のみ) - 信頼できる VPN サーバーであることを確認するために使用される文字列 (たとえば、"Contoso 指紋コード") を指定します。 指紋をクライアントに送信することにより、クライアントは、接続するときに同じ指紋を示すすべてのサーバーを信頼します。 デバイスにまだ指紋がない場合、接続先の VPN サーバーを信頼するように促すメッセージと共にその指紋が表示されます (ユーザーは手動で指紋を検証し、接続先を信頼することを選択する必要があります)。
 - **[Citrix VPN 属性に対してキーと値を入力します]** (Citrix のみ) - VPN 接続のプロパティを構成するために、Citrix から提供されたキーと値のペアを入力します。
 
-## <a name="android-for-work-vpn-settings"></a>Android for Work の VPN 設定
+## <a name="android-work-profile-device-vpn-settings"></a>Android 仕事用プロファイル デバイスの VPN 設定
 
 **[接続名]** - この接続の名前を入力します。 エンド ユーザーがデバイスで利用可能な VPN 接続の一覧を参照するときに、この名前が表示されます。
 - **[IP アドレスまたは FQDN]** - デバイスが接続する VPN サーバーの IP アドレスまたは完全修飾ドメイン名を指定します。 例: **192.168.1.1**、**vpn.contoso.com**。

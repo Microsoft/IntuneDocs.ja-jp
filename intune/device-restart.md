@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b09a4d528a95d682bf12e6610480b1aa1bcbdb83
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 6b68d7eda57d50c3a1cb55979590e8b07d9daf50
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31829327"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37904950"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Intune でデバイスをリモートで再起動する
 
@@ -31,12 +31,13 @@ ms.locfileid: "31829327"
 
 - Windows - Windows 8.1 以降でサポートされています
 - Windows Phone - Windows Phone 8.1 以降でサポートされています
+- Android キオスク デバイス - サポートされています
 - iOS - サポートされています
 
     > [!Note]  
     > このコマンドは、監視されているデバイスと**デバイス ロック** アクセス権を要求します。 デバイスがすぐに再起動します。 パスコードがロックされている iOS デバイスは、再起動後に Wi-Fi ネットワークに再度参加しません。 再起動後に、デバイスがサーバーと通信できない場合があります。
 - macOS - サポートされていません
-- Android - サポートされていません
+- Android および Android 仕事用プロファイル デバイス - サポートされていません
 
 ## <a name="restart-a-device"></a>デバイスを再起動する
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78158afeb9c12e8056f42066be78c37f962b4462
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bffd53030c23f38f0548cb5bccf82f6dd5e85779
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223613"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869502"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Microsoft Intune を使用して macOS デバイスに Office 365 を割り当てる
 
-*ストア アプリ*という種類では、Office 365 アプリを macOS デバイスに簡単に割り当てることできます。 このアプリの種類を使用すると、Word、Excel、PowerPoint、Outlook、OneNote をインストールできます。 アプリケーションのセキュリティを強化し、最新の状態に保つために、これらのアプリには Microsoft AutoUpdate (MAU) が付属しています。 必要なアプリは、Intune コンソールのアプリ一覧に 1 つのアプリとして表示されます。
+このアプリの種類では、Office 365 2016 アプリを macOS デバイスに簡単に割り当てることができます。 このアプリの種類を使用すると、Word、Excel、PowerPoint、Outlook、OneNote をインストールできます。 アプリケーションのセキュリティを強化し、最新の状態に保つために、これらのアプリには Microsoft AutoUpdate (MAU) が付属しています。 必要なアプリは、Intune コンソールのアプリ一覧に 1 つのアプリとして表示されます。
 
 
 ## <a name="before-you-start"></a>開始する前に
@@ -70,7 +70,7 @@ macOS に Office 365 を追加し始める前に、次の詳細を理解して�
 2. **[Office 365]** ウィンドウで **[割り当て]** を選択します。
 3. アプリ スイートを使用するグループを追加するには、**[グループの追加]** を選択します。  
     **[グループの追加]** ウィンドウが表示されます。
-4. **[割り当ての種類]** を **[必須]** に設定します。
+4. **[割り当ての種類]** を **[必須]** または **[使用可能]** に設定します。
 5. 選択したグループにスイートを割り当てます。 詳細については、「[Microsoft Intune を使用してアプリをグループに割り当てる方法](apps-deploy.md)」を参照してください。
 
     >[!Note]

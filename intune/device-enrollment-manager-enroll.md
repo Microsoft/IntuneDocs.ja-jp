@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a32eb1d65710bf09d61c0846a8d949d5cd99ed2
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: b18a55d7bd37ab32f6b2f64eee00489389ea323d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216328"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905225"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>デバイス登録マネージャー アカウントを使用してデバイスを登録する
 
@@ -35,7 +35,7 @@ ms.locfileid: "34216328"
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>デバイス登録マネージャーのシナリオの例
 
-あるレストランで、接客担当スタッフが販売時点管理に使い、調理担当スタッフがオーダーのモニターに使う POS タブレットが 50 台必要になりました。 従業員は、会社のデータにアクセスしたり、ユーザーとしてサインインしたりする必要はありません。 Intune 管理者はデバイス登録マネージャー アカウントを作成し、レストランの監督者を DEM アカウントに追加します。 監督者は DEM の機能を使用できます。 これで監督者は DEM の資格情報を利用し、50 台のタブレット デバイスを登録できます。
+あるレストランで、接客担当スタッフが販売時点管理に使い、調理担当スタッフがオーダーのモニターに使う POS タブレットが 50 台必要になりました。 従業員は、会社のデータにアクセスしたり、ユーザーとしてサインインしたりする必要はありません。 Intune 管理者は、レストランの監督者用にデバイス登録マネージャー アカウントを作成します。  このアカウントは監督者のプライマリ アカウントとは別であり、Intune で共有デバイスを登録する目的にのみ使用されます。 これで監督者は DEM の資格情報を利用し、50 台のタブレット デバイスを登録できます。
 
 [Azure Portal](https://portal.azure.com) 内のユーザーのみがデバイス登録マネージャーになることができます。 デバイス登録マネージャーのユーザーを Intune 管理者にすることはできません。
 
@@ -54,7 +54,7 @@ DEM ユーザーができること:
   - ポータル サイト アプリまたは Web サイトには、ローカルのデバイスのみが表示されます。
   - アプリ管理のための Apple ID 要件がユーザー単位になるため、ユーザーはユーザー ライセンスで Apple Volume Purchase Program (VPP) アプリを利用することはできません。
   - (iOS のみ) DEM を利用して iOS デバイスを登録する場合は、Apple Configurator、Apple Device Enrollment Program (DEP)、または Apple School Manager (ASM) を利用してデバイスを登録することはできません。
-  - (Android のみ) 1 つの DEM アカウントに登録できる Android for Work デバイスの数は限られています。 DEM アカウントごとに最大 10 台の Android の仕事用プロファイル デバイスを登録できます。 この制限は、従来の Android の登録には適用されません。
+  - (Android のみ) 1 つの DEM アカウントに登録できる Android 仕事用プロファイル デバイスの数は限られています。 DEM アカウントごとに最大 10 台の Android の仕事用プロファイル デバイスを登録できます。 この制限は、従来の Android の登録には適用されません。
   - デバイスでは、デバイス ライセンスがある場合に VPP アプリをインストールすることができます。
   - 各デバイスには、デバイスのライセンスが必要です。 [ユーザーとデバイスのライセンス](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services)の詳細についてはこちらです。
 
@@ -82,7 +82,7 @@ DEM ユーザーができること:
 
 デバイス登録マネージャーを削除しても、登録済みのデバイスに影響はありません。 デバイス登録マネージャーを削除した場合は次のようになります。
 
--   登録済みデバイスは影響を受けず、引き続き完全に管理されます。
+-   登録済みデバイスは影響を受けず、引き続きフル マネージドです。
 -   削除されたデバイス登録マネージャー アカウントの資格情報は有効なままです。
 -   削除されたデバイス登録マネージャーでは、デバイスのワイプとインベントリからの削除を実行できません。
 -   削除されたデバイス登録マネージャーは、Intune 管理者によって構成されたデバイスを、ユーザーあたりの上限数まで登録することのみできます。

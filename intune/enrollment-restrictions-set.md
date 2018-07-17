@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9b17cb50ead094962196bb030c3a18e4119c6904
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7eee5baebb8373488999a5e75db5288e483379e5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31026331"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905820"
 ---
 # <a name="set-enrollment-restrictions"></a>登録制限を設定する
 
@@ -39,18 +39,18 @@ ms.locfileid: "31026331"
 - 登録されるデバイスの最大数。
 - 登録できるデバイスのプラットフォーム:
   - Android。
-  - Android for Work。
+  - Android 仕事用プロファイル。
   - iOS。
   - macOS。
   - 使用できるようになります。
-- iOS、Android、Android for Work、および Windows のプラットフォームのオペレーティング システム バージョン  (使用できる Windows のバージョンは 10 のみです。 Windows 8.1 が許可される場合は、空白のままにしておきます)。
+- iOS、Android、Android 仕事用プロファイル、および Windows のプラットフォームのオペレーティング システム バージョン。 (使用できる Windows のバージョンは 10 のみです。 Windows 8.1 が許可される場合は、空白のままにしておきます)。
   - 最小バージョン。
   - 最大バージョン。
-- 個人所有デバイスを制限します (iOS、Android、Android for Work、macOS のみ)。
+- 個人所有デバイスを制限します (iOS、Android、Android 仕事用プロファイル、macOS のみ)。
 
 ## <a name="default-restrictions"></a>既定の制限
 
-デバイスの種類とデバイス数の両方の登録制限には、既定の制限が提供されています。 既定の制限のオプションは変更することができます。 既定の制限は、すべてのユーザー登録とユーザーなし登録に適用されます。 このような既定の制限を上書きするには、優先度の高い新しい制限を作成します。
+デバイスの種類とデバイス数の両方の登録制限には、既定の制限が提供されています。 既定の制限のオプションは変更することができます。 既定の制限は、すべてのユーザー登録とユーザーなし登録に適用されます。 このような既定の制限をオーバーライドするには、優先度の高い新しい制限を作成します。
 
 ## <a name="create-a-restriction"></a>制限を作成する
 
@@ -78,7 +78,7 @@ ms.locfileid: "31026331"
 5. 制限の名前 (既定の制限の場合は **[すべてのユーザー]**) で、**[プラットフォーム]** を選択します。 一覧されたプラットフォームごとに、**[許可]** または **[ブロック]** を選択します。
 6. **[保存]** を選択します。
 7. 制限の名前 (既定の制限の場合は **[すべてのユーザー]**) で、**[プラットフォーム構成]** を選択します。 次に、リストされているプラットフォームの最小および最大の **[バージョン]** を選択します。 サポートされているバージョンは次のとおりです。
-    - Android および Android for Work は、major.minor.rev.build をサポートします。
+    - Android 仕事用プロファイルは major.minor.rev.build をサポートしています。
     - iOS では major.minor.rev がサポートされます。
     - Windows では major.minor.rev.build がサポートされます (Windows 10 の場合のみ)。
   オペレーティング システムのバージョンは、Device Enrollment Program、Apple School Manager、または Apple Configurator アプリを使用して登録する Apple デバイスには適用されません。
@@ -88,9 +88,9 @@ ms.locfileid: "31026331"
 
 
 >[!NOTE]
->- 個人所有の Android デバイスの登録をブロックした場合でも、個人所有の Android for Work デバイスは登録できます。
->- 既定では、Android for Work デバイス設定は Android デバイスの設定と同じになります。 Android for Work 設定の変更後は、同じではなくなります。
->- 個人の Android for Work 登録をブロックした場合、会社の Android デバイスのみを Android for Work として登録できます。
+>- 個人所有の Android デバイスの登録をブロックした場合でも、個人所有の Android 仕事用プロファイル デバイスは登録できます。
+>- 既定では、Android 仕事用プロファイル デバイス設定は Android デバイスの設定と同じになります。 Android 仕事用プロファイル設定の変更後は、同じではなくなります。
+>- 個人の Android 仕事用プロファイルの登録をブロックした場合、会社の Android デバイスのみを Android 仕事用プロファイルとして登録できます。
 
 ## <a name="set-device-limit-restrictions"></a>デバイス数の制限を設定する
 
@@ -115,7 +115,7 @@ ms.locfileid: "31026331"
 
 制限を作成すると、リストの既定の制限のすぐ上に追加されます。
 
-デバイスの登録には、デバイスの種類の制限とデバイス数の制限の両方に対する既定の制限が含まれます。 これら 2 つの制限は、より高い優先度の制限で上書きされない限り、すべてのユーザーに適用されます。
+デバイスの登録には、デバイスの種類の制限とデバイス数の制限の両方に対する既定の制限が含まれます。 これら 2 つの制限は、より高い優先度の制限でオーバーライドされない限り、すべてのユーザーに適用されます。
 
 既定以外の制限の優先度は、変更することができます。
 

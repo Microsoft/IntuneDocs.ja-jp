@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 13f93f9fcf813c2e86809d2cc20991d2fd635187
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 56ddf28bb9e81417b4b91bb18baaba14f07fbdd9
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024619"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905055"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune でデバイスの制限設定を構成する
 
@@ -56,7 +56,7 @@ ms.locfileid: "31024619"
     - [Windows 10 の設定](device-restrictions-windows-10.md)
     - [Windows 10 Team の設定](device-restrictions-windows-10-teams.md)
     - [Windows Holographic for Business の設定](device-restrictions-windows-holographic.md)
-    - [Android for Work の設定](device-restrictions-android-for-work.md)
+    - [Android 仕事用プロファイルの設定](device-restrictions-android-for-work.md)
 8. 完了したら、**[プロファイルの作成]** ページに戻り、**[作成]** をクリックします。
 
 プロファイルが作成され、プロファイルの一覧ページに表示されます。

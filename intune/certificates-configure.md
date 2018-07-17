@@ -14,12 +14,12 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 89f8ddc105787bc7ff4f7cfc1e226d28589ecbbf
-ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
+ms.openlocfilehash: 9329a57ee7d47cb99a7c87326bb043c0a04c6313
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "31771807"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905208"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Microsoft Intune でデバイスの証明書プロファイルを構成する
 
@@ -43,7 +43,7 @@ Intune を使用して、管理するデバイスに証明書を割り当てる�
     - iOS 8.0 以降
     - macOS 10.11 以降
     - Android 4.0 以降
-    - Android for Work
+    - Android の仕事用プロファイル
     - Windows 8.1 以降
     - Windows Phone 8.1 以降
     - Windows 10 以降
@@ -52,7 +52,7 @@ Intune を使用して、管理するデバイスに証明書を割り当てる�
 
    - iOS 8.0 以降
    - Android 4.0 以降
-   - Android for Work
+   - Android の仕事用プロファイル
    - Windows 10 (Desktop および Mobile) 以降
 
    次のプラットフォームを実行するデバイスの場合は、**SCEP** 証明書プロファイルのみを使用できます。
@@ -84,10 +84,10 @@ Intune を使用して、管理するデバイスに証明書を割り当てる�
 信頼された証明書プロファイルを構成するときにこの証明書をインポートします。
 
 ## <a name="step-3-create-trusted-certificate-profiles"></a>手順 3 - 信頼された証明書プロファイルを作成する
-SCEP または PKCS 証明書プロファイルを作成する前に、信頼された証明書プロファイルを作成します。 デバイス プラットフォームごとに、信頼された証明書プロファイルと SCEP または PKCS プロファイルが必要です。 信頼された証明書を作成する手順は、各デバイス プラットフォームで同様です。
+SCEP または PKCS 証明書プロファイルを作成する前に、信頼された証明書プロファイルを作成します。 デバイス プラットフォームごとに、信頼された証明書プロファイルと SCEP または PKCS プロファイルが必要です。 信頼された証明書を作成する手順は、どのデバイス プラットフォームでも同様です。
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
+2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ウィンドウで、**[管理]** > **[プロファイル]** の順に選択します。
 3. [プロファイル] ウィンドウで **[プロファイルの作成]** を選択します。
@@ -95,8 +95,8 @@ SCEP または PKCS 証明書プロファイルを作成する前に、信頼さ
 5. **[プラットフォーム]** ドロップダウン リストで、この信頼された証明書のデバイス プラットフォームを選択します。 現時点では、証明書設定に対応している次のいずれかのプラットフォームを選択できます。
 
     - **Android**
-    - **Android for Work**
-    - **iOS**
+    - **Android エンタープライズ**
+    - **Android**
     - **macOS**
     - **Windows Phone 8.1**
     - **Windows 8.1 以降**

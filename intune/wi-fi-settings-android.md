@@ -1,42 +1,47 @@
 ---
 title: Android を実行するデバイス用に Microsoft Intune の Wi-Fi 設定を構成する
 titleSuffix: ''
-description: Android か Android for Work を実行するデバイスの Intune Wi-fi 構成設定について説明します。
+description: Android を実行するデバイスでの Intune の Wi-Fi 構成設定について説明します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/5/2018
+ms.date: 7/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ee82da997a794bb2f65929a6fd9e0de0cc776a6e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 0157815322488525a4ce7a3d6d2c90cbb8d3ff2a
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831063"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905667"
 ---
-# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Android か Android for Work を実行しているデバイスの Microsoft Intune Wi-Fi 設定を構成する  
+# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-android-work-profiles-and-android-kiosk-devices"></a>Microsoft Intune で Android デバイス、Android 仕事用プロファイル デバイス、Android キオスク デバイス用の Wi-Fi 設定を構成する
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-この記事では、Android か Android for Work を実行するデバイス用に Microsoft Intune で構成できる Wi-Fi 設定を示します。
+この記事では、Microsoft Intune で Android か Android 仕事用プロファイルを実行するデバイス用に構成できる Wi-Fi 設定について説明します。
 
 ## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>基本プロファイルとエンタープライズ プロファイル向けの Wi-Fi 設定
 
-次の Wi-fi 設定は、Android デバイスと Android for Work デバイスの両方で利用できます。
+次の Wi-Fi 設定は、Android デバイスと Android 仕事用プロファイル デバイスの両方で利用できます。
 
 - **[ネットワーク名]** - この Wi-Fi 接続の名前を入力します。 これは、ユーザーがデバイスで使用可能な接続の一覧を参照しているときに表示される名前です。
 - **[SSID]** - サービス セット識別子の短縮形です。 これは、デバイスの接続先のワイヤレス ネットワークの実際の名前です。 ただし、ユーザーが接続を選択したときにユーザーに表示されるのは、構成されたネットワーク名のみです。
 - **[自動的に接続する]** - デバイスがこのネットワークの範囲内にある場合に必ず、デバイス接続を確立します。
 - **[非公開のネットワーク]** - デバイス上の使用可能なネットワークの一覧にこのネットワークが表示されないようにします。
 
+## <a name="wi-fi-settings-available-for-enterprise-kiosk-profiles"></a>エンタープライズ キオスク プロファイルに使用できる Wi-Fi 設定
+- **[Wi-Fi の種類]**: これらの Wi-Fi の種類の設定は、**[プロファイルの種類]** > **[Device Owner Only]\(デバイスの所有者のみ\)** > **[Wi -Fi]** を選択した場合にのみ使用できます。
+    - **開く (認証しない)**
+    - **[WEP 事前共有キー]**: **[事前共有キー]** ボックスにパスワードを入力する必要があります。
+    - **[WPA 事前共有キー]**: **[事前共有キー]** ボックスにパスワードを入力する必要があります。
 
-## <a name="wi-fi-settings-for-enterprise-profiles-only"></a>エンタープライズ プロファイルのみを対象とした Wi-Fi 設定
+## <a name="wi-fi-settings-for-android-legacy-and-android-work-profiles-only"></a>Android レガシと Android 仕事用プロファイルのみの場合の Wi-Fi 設定
 
 - **[EAP の種類]** - 次の中から、セキュリティで保護されたワイヤレス接続の認証に使用される拡張認証プロトコル (EAP) の種類を選択します。
     - **EAP-TLS**

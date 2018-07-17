@@ -15,12 +15,12 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 22470356c921eea17e4d2b3d57f796fe51568ee1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: baf7ee4f1178b555a0fe311f0e3977941e1491fe
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224485"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905038"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Android の基幹業務アプリを Microsoft Intune に追加する
 
@@ -29,7 +29,7 @@ ms.locfileid: "34224485"
 基幹業務 (LOB) アプリとは、アプリのインストール ファイルから Intune に追加するアプリのことです。 通常、この種類のアプリは社内で作成されます。 Intune によって、ユーザーのデバイス上に LOB アプリがインストールされます。 
 
 > [!Note]
-> Google Play for Work ストアの LOB アプリの詳細については、「[Google Play for Work ストアの基幹業務アプリを使用する](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-google-play-for-work-store)」を参照してください。 
+> マネージド Google Play ストアの LOB アプリの詳細については、「[Working with a line-of-business app from the Managed Google Play store](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-managed-google-play-store)」 (マネージド Google Play ストアの基幹業務アプリを使用する) を参照してください。 
 
 ## <a name="step-1-specify-the-software-setup-file"></a>手順 1: ソフトウェアのセットアップ ファイルを指定する
 

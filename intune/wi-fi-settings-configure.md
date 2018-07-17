@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb4d9fc6f0f0609062c408fd85921c1f86bd7303
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e2dba6e0d1c50790c8c2c2bf287695ab67fdb972
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31832310"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905333"
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Microsoft Intune で Wi-Fi の設定を構成する方法
 
@@ -37,7 +37,7 @@ Microsoft Intune の Wi-Fi プロファイルを使用して、ワイヤレス �
 Wi-Fi プロファイルでは次のデバイス プラットフォームをサポートしています。
 
 - Android 4 以降
-- Android for Work
+- Android 仕事用プロファイル
 - iOS 8.0 以降
 - macOS (Mac OS X 10.11 以降)
 
@@ -47,16 +47,16 @@ Windows 8.1、Windows 10、Windows 10 Mobile、Windows Holographic for Business 
 
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>Wi-Fi 設定を含むデバイス プロファイルの作成
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
+2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ウィンドウの **[管理]** セクションで、**[プロファイル]** を選択します。
 3. [プロファイル] ウィンドウで **[プロファイルの作成]** を選択します。
 4. **[プロファイルの作成]** ウィンドウで、Wi-Fi プロファイルの **[名前]** と **[説明]** を入力します。
 5. **[プラットフォーム]** ドロップダウン リストで、Wi-Fi 設定を適用するデバイス プラットフォームを選択します。 現時点では、Wi-Fi 設定に対応している次のいずれかのプラットフォームを選択できます。
     - **Android**
-    - **Android for Work**
-    - **iOS**
+    - **Android エンタープライズ**
+    - **Android**
     - **macOS**
     - **Windows Phone 8.1**
     - **Windows 8.1 以降**
@@ -69,7 +69,7 @@ Windows 8.1、Windows 10、Windows 10 Mobile、Windows Holographic for Business 
 
    **[Wi-Fi インポート]** プロファイル (Windows 8.1 以降の場合) を使うと、以前に別のデバイスからエクスポートした Wi-Fi 設定を XML ファイルとしてインポートすることができます。
 1. 選択したプラットフォームによって構成できる設定が異なります。 各プラットフォームの詳細な設定については、次のいずれかのトピックを参照してください。
-    - [Android と Android for Work の設定](wi-fi-settings-android.md)
+    - [Android と Android 仕事用プロファイルの設定](wi-fi-settings-android.md)
     - [iOS の設定](wi-fi-settings-ios.md)
     - [macOS の設定](wi-fi-settings-macos.md)
     - [Windows 8.1 以降の設定](wi-fi-settings-import-windows-8-1.md) (Windows Holographic for Business を含む)

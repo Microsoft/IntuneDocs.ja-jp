@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 78f50bc49f9d7a1261759ec5fb9a1cd7628c998c
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744603"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905106"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Intune で VPN プロファイルを作成する
 
@@ -40,7 +40,7 @@ Intune のカスタム構成ポリシーを使用して、次のプラットフ�
 
 次の接続の種類を使用して、VPN プロファイルを作成できます。
 
-|接続の種類|Android<br>Android for Work|iOS|macOS|Windows Phone 8。1|Windows 8.1|Windows 10|
+|接続の種類|Android<br>Android 仕事用プロファイル|iOS|macOS|Windows Phone 8。1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
 |自動|[いいえ]|[いいえ]|[いいえ]|[いいえ]|[いいえ]|はい|
 |Check Point Capsule VPN|はい|はい|はい|はい|はい|はい|
@@ -68,21 +68,21 @@ URI の設定を使ってカスタム VPN プロファイルを作成する方�
 3. **[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
 4. VPN プロファイルの **[名前]** と **[説明]** を入力します。
 5. **[プラットフォーム]** ドロップダウン リストで、VPN 設定を適用するデバイス プラットフォームを選択します。 現時点では、VPN デバイス設定に対応している次のいずれかのプラットフォームを選択できます。
-  - **Android**
-  - **Android for Work**
-  - **iOS**
-  - **macOS**
-  - **Windows Phone 8.1**
-  - **Windows 8.1 以降**
-  - **Windows 10 以降**
+   - **Android**
+   - **Android エンタープライズ**
+   - **Android**
+   - **macOS**
+   - **Windows Phone 8.1**
+   - **Windows 8.1 以降**
+   - **Windows 10 以降**
 6. **[プロファイルの種類]** ドロップダウン リストで、**[VPN]** を選択します。
 7. 選択したプラットフォームによって構成できる設定が異なります。 各プラットフォームの詳細な設定については、次のいずれかのトピックを参照してください。
-  - [Android と Android for Work の設定](vpn-settings-android.md)
-  - [iOS の設定](vpn-settings-ios.md)
-  - [macOS の設定](vpn-settings-macos.md)
-  - [Windows Phone 8.1 の設定](vpn-settings-windows-phone-8-1.md)
-  - [Windows 8.1 の設定](vpn-settings-windows-8-1.md)
-  - [Windows 10 の設定](vpn-settings-windows-10.md) (Windows Holographic for Business を含む)
+   - [Android および Android 仕事用プロファイルの設定](vpn-settings-android.md)
+   - [iOS の設定](vpn-settings-ios.md)
+   - [macOS の設定](vpn-settings-macos.md)
+   - [Windows Phone 8.1 の設定](vpn-settings-windows-phone-8-1.md)
+   - [Windows 8.1 の設定](vpn-settings-windows-8-1.md)
+   - [Windows 10 の設定](vpn-settings-windows-10.md) (Windows Holographic for Business を含む)
 8. 完了したら、プロファイルを **[作成]** します
 
 プロファイルが作成され、プロファイル一覧に表示されます。 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルの割り当て](device-profile-assign.md)に関するページを参照してください。

@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6d11de1e20f46fb6e13d6d3ef5c9f4a9ee0f98c1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 5aa03cad0785e0d9b3d64df97a3ba6d344f0c7b5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223783"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906109"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune アプリの管理とは
 
@@ -58,7 +58,8 @@ Intune では、アプリを実行するデバイス上で必要なアプリを�
 
 <sup>1</sup> Windows 10 を実行しているデバイスでアプリを保護するには、[Windows 情報保護](windows-information-protection-configure.md)の使用を検討してください。
 
-<sup>2</sup> Intune のみで管理されているデバイスに適用されます。
+
+  <sup>2</sup> Intune のみで管理されているデバイスに適用されます。
 
 ## <a name="get-started"></a>作業開始
 
@@ -105,7 +106,8 @@ Intune では、アプリを実行するデバイス上で必要なアプリを�
 ### <a name="set-up"></a>セットアップ
 - **[iOS VPP トークン]**: iOS Volume Purchase Program (VPP) のライセンスを適用し、表示します。 詳細については、次をご覧ください。
     - [iOS 大量購入アプリ](vpp-apps-ios.md)
-- **[Windows Enterprise 証明書]**: 基幹業務アプリを管理対象 Windows デバイスに配信するのに使用する、コード署名証明書の状態を適用または表示します。
+- 
+  **[Windows Enterprise 証明書]**: 基幹業務アプリを管理対象 Windows デバイスに配信するのに使用する、コード署名証明書の状態を適用または表示します。
 - **[Windows Symantec 証明書]** - XAP および WP8.x appx ファイルを Windows 10 Mobile デバイスに配布するのに必要な、Symantec コード署名証明書の状態を適用または表示します。
 - **[ビジネス向け Microsoft ストア]**: ビジネス向け Microsoft ストアとの統合を設定します。 その後、購入済みのアプリケーションを Intune に同期して割り当て、ライセンスの使用状況を追跡できるようになります。 詳細については、次をご覧ください。
     - [ビジネス向け Microsoft ストアのボリューム購入アプリ](windows-store-for-business.md)。
@@ -114,8 +116,8 @@ Intune では、アプリを実行するデバイス上で必要なアプリを�
 - **[ポータル サイトのブランド化]**: 会社のポータルをカスタマイズして会社のブランドを付与します。 詳細については、次をご覧ください。
     - [会社のポータルの構成](company-portal-app.md)
 - **[アプリのカテゴリ]**: アプリのカテゴリ名を追加、ピン留め、削除します。
-- **[Android for Work]**: 企業で承認されたアプリを承認して同期します。 詳細については、次をご覧ください。
-    - [Android for Work アプリ](apps-add-android-for-work.md)。
+- **Android 仕事用プロファイル**: 企業で承認されたアプリを承認して同期します。 詳細については、次をご覧ください。
+    - [Android 仕事用プロファイルのアプリ](apps-add-android-for-work.md)
 
 ### <a name="help-and-support"></a>ヘルプとサポート
 - **[ヘルプとサポート]**: トラブルシューティング、リクエスト サポート、または Intune の状態の表示を行います。 詳細については、次をご覧ください。

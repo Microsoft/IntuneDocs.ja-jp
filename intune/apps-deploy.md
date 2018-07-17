@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/01/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc7f827f121ad93498d22f6b9b246abf15dc76e3
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: 581d3c9762145a4681b421ededaaf9099e8ceb80
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34717980"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905888"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune を使用してアプリをグループに割り当てる
 
@@ -59,7 +59,7 @@ ms.locfileid: "34717980"
 7. **[グループの追加]** を選んで、アプリに関連する **[グループの追加]** ウィンドウを開きます。
 8. 特定のアプリについて、**[割り当ての種類]** を選びます。
    - **[登録済みデバイスで使用可能]**: ユーザーはアプリをポータル サイト アプリまたは Web サイトからインストールできます。
-   - **[登録の有無にかかわらず使用可能]**: このアプリを、デバイスが Intune に登録されていないユーザーのグループに割り当てます。 **[Android for Work アプリ]** の種類では、このオプションはサポートされていません。 
+   - **[登録の有無にかかわらず使用可能]**: このアプリを、デバイスが Intune に登録されていないユーザーのグループに割り当てます。 managed Google Play アプリと macOS LOB アプリは、このオプションをサポートしていません。 
    - **[必須]**: アプリは選択したグループのデバイスにインストールされます。
    - **[アンインストール]**: アプリは選択したグループのデバイスからアンインストールされます。
 

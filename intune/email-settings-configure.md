@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b71c004a165bd6d38cd1907eadc05ac20f27bd1a
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 15710f6115bb23dfe9ba899dfa01b38f315d00f0
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834212"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905310"
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Microsoft Intune で電子メールの設定を構成する方法
 
@@ -31,7 +31,7 @@ ms.locfileid: "31834212"
 電子メール プロファイルを使用して、次のデバイスの種類でネイティブ電子メール クライアントを構成できます。
 
 - Android Samsung KNOX Standard 4.0 以降
-- Android for Work
+- Android 仕事用プロファイル デバイス
 - iOS 8.0 以降
 - Windows Phone 8.1 以降
 - Windows 10 (デスクトップ) と Windows 10 Mobile
@@ -40,23 +40,23 @@ ms.locfileid: "31834212"
 
 ## <a name="create-a-device-profile-containing-email-settings"></a>電子メール設定を含むデバイス プロファイルの作成
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
+2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ウィンドウの **[管理]** セクションで、**[プロファイル]** を選択します。
 3. [プロファイル] ウィンドウで **[プロファイルの作成]** を選択します。
 4. **[プロファイルの作成]** ウィンドウで、電子メール プロファイルの**名前**と**説明**を入力します。
 5. **[プラットフォーム]** ドロップダウン リストで、電子メール設定を適用するデバイス プラットフォームを選択します。 現時点では、電子メール デバイス設定に対応している次のいずれかのプラットフォームを選択できます。
     - **Android** (Samsung Android KNOX Standard のみ)
-    - **Android for Work**
-    - **iOS**
+    - **Android エンタープライズ**
+    - **Android**
     - **macOS**
     - **Windows Phone 8.1**
     - **Windows 8.1 以降**
     - **Windows 10 以降**
 6. **[プロファイルの種類]** ドロップダウン リストで、**[電子メール]** を選択します。
 7. 選択したプラットフォームによって構成できる設定が異なります。 各プラットフォームの詳細な設定については、次のいずれかのトピックを参照してください。
-    - [Android for Work および Samsung KNOX Standard の設定](email-settings-android.md)
+    - [Android 仕事用プロファイルおよび Samsung KNOX Standard の設定](email-settings-android.md)
     - [iOS の設定](email-settings-ios.md)
     - [Windows Phone 8.1 の設定](email-settings-windows-phone-8-1.md)
     - [Windows 10 の設定](email-settings-windows-10.md)
@@ -89,7 +89,7 @@ Intune で証明書プロファイルを作成および使用する方法の詳�
 - **Windows:** ホスト名と電子メール アドレスに基づいて、既存の重複する電子メール プロファイルが検出されます。 Intune は、ユーザーによって作成された既存の電子メール プロファイルを上書きします。
 - **Android Samsung KNOX Standard** 電子メール アドレスに基づいて既存の重複する電子メール プロファイルが検出され、Intune プロファイルで上書きされます。
 Android はプロファイルを識別するためにホスト名を使用しないため、複数の電子メール プロファイルを作成して異なるホスト上の同じ電子メール アドレスで使用することはお勧めしません。プロファイルが相互に上書きされます。
-- **Android for Work** Intune には Android for Work 電子メール プロファイルが 2 つあります。Gmail 用と Nine Work 電子メール アプリ用です。 これらのアプリは Google Play ストアで入手でき、デバイスの仕事用プロファイルにインストールされるため、プロファイルが重複することはありません。 いずれのアプリでも Exchange への接続がサポートされています。 電子メール接続を有効にするには、いずれかの電子メール アプリをユーザーのデバイスに展開し、適切な電子メール プロファイルを作成して展開します。 Nine Work などの電子メール アプリは無料とは限りません。 アプリケーションのライセンスの詳細を確認するか、アプリの会社に問い合わせてください。
+- **Android 仕事用プロファイル** Intune には Android 仕事用プロファイルの電子メール プロファイルが 2 つあります。Gmail 用と Nine Work 電子メール アプリ用です。 これらのアプリは Google Play ストアで入手でき、デバイスの仕事用プロファイルにインストールされるため、プロファイルが重複することはありません。 いずれのアプリでも Exchange への接続がサポートされています。 電子メール接続を有効にするには、いずれかの電子メール アプリをユーザーのデバイスに展開し、適切な電子メール プロファイルを作成して展開します。 Nine Work などの電子メール アプリは無料とは限りません。 アプリケーションのライセンスの詳細を確認するか、アプリの会社に問い合わせてください。
 
 ### <a name="update-an-email-profile"></a>電子メール プロファイルの更新
 
