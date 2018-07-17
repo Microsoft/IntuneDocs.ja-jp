@@ -15,11 +15,11 @@ ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: edbd802b5f0482fc5dbaa801308447e2f8061189
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224349"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38224937"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために iOS アプリを準備する
 
@@ -227,7 +227,7 @@ macOS ターミナル プログラムを開き、アプリ ラッピング ツ�
 | 詳細が有効です |false| -v と同じ|
 | 不足している権利を削除します | false| -c と同じ|
 | 既定のビルドを防ぎます |false | 引数なしで -b を使用したのと同じ|
-|ビルド文字列の上書き | 空| ラッピングされた出力アプリのカスタム CFBundleVersion |
+|ビルド文字列のオーバーライド | 空| ラッピングされた出力アプリのカスタム CFBundleVersion |
 |拡張機能のプロビジョニング プロファイルのパス | 空| アプリの拡張機能のプロビジョニング プロファイルの配列。
 
 

@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a5abf774b6cb46b37d42ea1b73f653a02057528
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2db9d991c476d89399058137adb972c06029befc
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905990"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028730"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune にアプリを追加する
 
@@ -51,7 +51,7 @@ Intune では、広範囲に及ぶさまざまな種類のアプリをサポー�
 | iOS ストア アプリ  | ストア アプリ  | **[アプリの種類]** として **[iOS]** を選択し、アプリを検索し、Intune でアプリを選択します。 |
 | Windows Phone 8.1 ストア アプリ  | ストア アプリ  | **[アプリの種類]** として **[Windows Phone 8.1]** を選択し、Microsoft ストアのアプリの URL を入力します。 |
 | Microsoft ストア アプリ  | ストア アプリ  | **[アプリの種類]** として **[Windows]** を選択し、Microsoft ストアのアプリの URL を入力します。 |
-| Android 仕事用アプリ | ストア アプリ  | Managed Google Play ストアから Android 仕事用プロファイル アプリを検索および承認します。  |
+| Android の仕事用プロファイルのアプリ | ストア アプリ  | Managed Google Play ストアから Android 仕事用プロファイル アプリを検索および承認します。  |
 | Windows 10 用の Office 365 アプリ  | ストア アプリ (Office 365) | **[アプリの種類]** として **[Office 365 スイート]** の下から **[Windows 10]** を選択し、インストールする Office 365 アプリを選択します。  |
 | macOS 用の Office 365 アプリ | ストア アプリ (Office 365) | **[アプリの種類]** として **[Office 365 スイート]** の下から **[macOS]** を選択し、Office 365 アプリ スイートを選択します。 |
 | Android 基幹業務 (LOB) アプリ | LOB アプリ | **[アプリの種類]** として **[基幹業務]** を選択し、**[アプリのパッケージ ファイル]** を選択し、拡張子が **.apk** の Android のインストール ファイルを入力します。  |

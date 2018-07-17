@@ -16,11 +16,11 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 853b602781b221ba681d802ae0119fc184ab8d6b
-ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840179"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225154"
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager での iOS デバイス登録の有効化
 
@@ -149,9 +149,9 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
 4. Apple School Manager と Azure AD の間の接続を有効にするには、**[Microsoft School Data Sync の設定]** を選択します。[School Data Sync の設定方法](https://support.office.com/article/Install-the-School-Data-Sync-Toolkit-8e27426c-8c46-416e-b0df-c29b5f3f62e1)について詳しく学びます。
 5. **[保存]** > **[OK]** をクリックします。
 
-## <a name="sync-managed-devices"></a>管理対象デバイスを同期する
+## <a name="sync-managed-devices"></a>マネージド デバイスを同期する
 
-Intune に Apple School Manager デバイスを管理するアクセス許可を割り当てたので、Intune と Apple サービスを同期し、管理されたデバイスを Intune に表示できます。
+Intune に Apple School Manager デバイスを管理するアクセス許可を割り当てたので、Intune と Apple サービスを同期し、マネージド デバイスを Intune に表示できます。
 
 [Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]** の順に選択し、リスト内でトークンを選択し、**[デバイス]** > **[同期]** の順に選択します。![[Enrollment Program デバイス] ノードと [同期] リンクが選ばれているスクリーンショット。](./media/device-enrollment-program-enroll-ios/image06.png)
 

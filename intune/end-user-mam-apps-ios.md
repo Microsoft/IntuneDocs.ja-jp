@@ -15,11 +15,11 @@ ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 955120228289da3bac7cf013955effeee0cd7579
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31023429"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225308"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点
 
@@ -36,7 +36,8 @@ ms.locfileid: "31023429"
 
 <!---  ![Screenshot of the iOS device showing PIN prompt](../media/appmanagement/iOS_AppPINPrompt.png) --->
 
-**Intune の管理対象として登録された**デバイスの場合、ユーザーにはアプリが管理された状態にあることを示すメッセージが表示されます。
+
+  **Intune の管理対象として登録された**デバイスの場合、ユーザーにはアプリが管理された状態にあることを示すメッセージが表示されます。
 
 ##  <a name="use-apps-with-multi-identity-support"></a>複数の ID に対応しているアプリを使用する
 
@@ -65,4 +66,5 @@ ms.locfileid: "31023429"
 iOS デバイスを使用している場合は、そのデバイスに 2 つ目の作業アカウントを追加しようとすると、ブロック メッセージが表示されることがあります。 アカウントが表示され、削除するアカウントを選択できるようになります。
 
 ## <a name="next-steps"></a>次の手順
-[アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](end-user-mam-apps-android.md)
+
+  [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](end-user-mam-apps-android.md)

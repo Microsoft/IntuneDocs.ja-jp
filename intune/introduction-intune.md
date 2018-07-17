@@ -15,11 +15,11 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: ''
 ms.openlocfilehash: 6f92cb350a69aeb600f1d48e9bdb0b22a623cb52
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046402"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38224808"
 ---
 # <a name="what-is-intune"></a>Intune とは何か
 
@@ -36,7 +36,8 @@ Intune はエンタープライズ モビリティ管理 (EMM) スペースの�
 * [モバイル デバイスでアクセスできるようにオンプレミスの電子メールとデータを保護する](common-scenarios.md#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
 * [モバイル デバイスで安全にアクセスできるように Office 365 の電子メールとデータを保護する](common-scenarios.md#protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
 * [社員向けに企業所有の携帯電話を用意する](common-scenarios.md#issue-corporate-owned-phones-to-your-employees)
-* [すべての従業員に "Bring your own device" (BYOD) プログラムという個人デバイス プログラムを提供する](common-scenarios.md#offer-a-bring-your-own-device-program-to-all-employees)
+* 
+  [すべての従業員に "Bring your own device" (BYOD) プログラムという個人デバイス プログラムを提供する](common-scenarios.md#offer-a-bring-your-own-device-program-to-all-employees)
 * [公共の場所から Office 365 に安全にアクセスできるようにする](common-scenarios.md#enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk)
 * [タスク ワーカー向けに制限付きの共有タブレットを用意する](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
@@ -59,7 +60,7 @@ Intune デバイス管理は、モバイル オペレーティング システ�
 * 会社のセキュリティ/健全性基準を満たすようにデバイスを構成する
 * 企業サービスにアクセスするための証明書と Wi-Fi/VPN プロファイルを提供する
 * 企業基準に対するデバイスの準拠状況を測定し、報告する
-* 管理対象のデバイスから会社のデータを削除する  
+* マネージド デバイスから会社のデータを削除する  
 
 **企業データのアクセス制御**はデバイス管理機能であると考える人がいます。 Microsoft の考え方は違います。それはモバイル オペレーティング システムが提供する機能ではないからです。 それはむしろ、ID プロバイダーが提供するサービスです。 この場合、ID プロバイダーは、Microsoft の ID/アクセス管理システムである、Azure Active Directory (Azure AD) です。  
 

@@ -13,11 +13,11 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: c2e4cf0e77a63f0a8a3049e66ec16e563e410873
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833293"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225207"
 ---
 # <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Microsoft Intune モバイル デバイス管理 (MDM) ライフサイクルの概要
 
@@ -31,7 +31,7 @@ ms.locfileid: "31833293"
 今日のモバイル デバイス管理 (MDM) 戦略では、さまざまな携帯電話、タブレット、PC (iOS、Android、Windows、Mac OS X) を扱っています。 デバイスを管理できる必要がある場合 (一般には企業所有デバイス)、最初の手順として、[デバイスの登録をセットアップ](device-enrollment.md) ([クラシック ポータル](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)) します。 Windows PC については、Intune (MDM) を使用して登録するか、または [Intune クライアント ソフトウェアをインストールする](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)ことで、管理することもできます。
 
 ## <a name="configure"></a>構成
-デバイスを登録することは、最初の手順にすぎません。 Intune で用意されているあらゆるサービスを利用し、デバイスがセキュリティで保護され企業の標準に準拠するように保証するには、さまざまなポリシーから選択することができます。 これにより、管理対象のデバイスの動作のほぼすべての側面を構成できます。 たとえば、会社のデータが格納されているデバイスに対してユーザーはパスワードを使用する必要がありますか? パスワードを設定できます。 企業 Wi-Fi を備えていますか? 自動的に構成することができます。 使用できる構成オプションの種類を次に示します。
+デバイスを登録することは、最初の手順にすぎません。 Intune で用意されているあらゆるサービスを利用し、デバイスがセキュリティで保護され企業の標準に準拠するように保証するには、さまざまなポリシーから選択することができます。 これにより、マネージド デバイスの動作のほぼすべての側面を構成できます。 たとえば、会社のデータが格納されているデバイスに対してユーザーはパスワードを使用する必要がありますか? パスワードを設定できます。 企業 Wi-Fi を備えていますか? 自動的に構成することができます。 使用できる構成オプションの種類を次に示します。
 
 - [**デバイス構成**](device-profiles.md) ([クラシック ポータル](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies))。 このポリシーでは、管理するデバイスの機能を構成できます。 たとえば、Windows Phone でパスワードの使用を求めたり、iPhone でカメラの使用を無効にしたりすることが可能です。
 - [**会社のリソースへのアクセス**](device-profiles.md) ([クラシック ポータル](/intune-classic/deploy-use/enable-access-to-company-resources-with-microsoft-intune))。 ユーザーが自分の個人用デバイスから自分の作業にアクセスできるようにする場合、これには課題が伴う場合があります。 たとえば、会社の電子メールへのアクセスを必要とするすべてのデバイスが正しく構成されていることを確認するにはどうしますか。 ユーザーが複雑な設定を知らなくても VPN 接続を使用して社内ネットワークにアクセスできるかどうかはどのように確認できますか? Intune では、共通の企業リソースにアクセスするように管理対象デバイスを自動的に構成することにより、この作業負荷を軽減することができます。

@@ -16,11 +16,11 @@ ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 9b9f81049e7bdfdfe2861d617dceb6036a55cecf
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31023531"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225257"
 ---
 # <a name="configure-a-custom-domain-name"></a>カスタムのドメイン名を構成する
 
@@ -28,7 +28,7 @@ ms.locfileid: "31023531"
 
 このトピックでは、管理者が Microsoft Intune を使用して、DNS CNAME を作成し、ログオン エクスペリエンスの簡略化とカスタマイズを行う方法について説明します。
 
-組織が Intune などの Microsoft クラウド ベース サービスにサインアップすると、**your-domain.onmicrosoft.com** のように Azure Active Directory (AD) でホストされる最初のドメイン名が付与されます。この例では、**your-domain** はサインアップ時に選択したドメイン名です。 **onmicrosoft.com** はサブスクリプションに追加するアカウントに割り当てられるサフィックスです。 サブスクリプションで提供されるドメイン名ではなく、組織のカスタム ドメインを構成して Intune にアクセスできます。
+組織が Intune などの Microsoft クラウド ベース サービスにサインアップすると、**your-domain.onmicrosoft.com** のように Azure Active Directory (AD) でホストされる最初のドメイン名が付与されます。 この例では、**your-domain** はサインアップ時に選択したドメイン名です。 **onmicrosoft.com** はサブスクリプションに追加するアカウントに割り当てられるサフィックスです。 サブスクリプションで提供されるドメイン名ではなく、組織のカスタム ドメインを構成して Intune にアクセスできます。
 
 ユーザー アカウントを作成する、またはオンプレミスの Active Directory を同期する前に、.onmicrosoft.com ドメインのみを使用するか、1 つ以上のカスタム ドメイン名を追加するかを決定することを強くお勧めします。 ユーザー管理を簡単にするために、ユーザーを追加する前にカスタム ドメインを設定します。 これにより、ユーザーは他のドメイン リソースへのアクセスに使う資格情報でサインインできます。
 

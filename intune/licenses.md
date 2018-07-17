@@ -14,12 +14,12 @@ ms.assetid: 4a94440c-11cb-11e8-b642-0ed5f89f718b
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: de71b0b542836be6c7d1e4a0c4483bb65a9cb9a3
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: 6e2da4fb0f32a5753e886f18987d6c2c299c9e65
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216277"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38224791"
 ---
 # <a name="licenses-that-include-intune"></a>Intune を含むライセンス
 
@@ -41,7 +41,7 @@ ms.locfileid: "34216277"
 | Office 365 F1 | なし | [詳細情報](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |
 | Microsoft 365 Business | Intune | [詳細情報](https://www.microsoft.com/en-us/microsoft-365/business) |
 | Office 365 Business Premium | なし | [詳細情報](https://www.microsoft.com/en-us/microsoft-365/business) |
-| Azure Active Directory Free、Basic、Premium P1、Premium P2 | なし | [詳細情報](https://azure.microsoft.com/en-us/pricing/details/active-directory/) |
+| Azure Active Directory Free、Basic、Premium P1、Premium P2 | なし | [詳細情報](https://azure.microsoft.com/pricing/details/active-directory/) |
 
 ユーザーがライセンスでカバーされる任意の機能から直接的または間接的にメリットを得ている場合は、適切なライセンスが必要です。
 
