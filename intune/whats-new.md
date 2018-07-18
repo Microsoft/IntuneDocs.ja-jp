@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/05/2018
+ms.date: 07/13/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: e6d3640d63f16b80588860c3c36aba1a81ffbe09
-ms.sourcegitcommit: 8ea2ff0941219e72477d7ceaab40a0068e53d508
+ms.openlocfilehash: f2018b5a1ca2a6981b04951bcf8ecd8819eb47e2
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37927031"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039422"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,6 +41,22 @@ ms.locfileid: "37927031"
 ### Role-based access control
 
 -->   
+## <a name="week-of-july-9-2018"></a>2018 年 7 月 9 日の週
+
+### <a name="app-management"></a>アプリ管理
+
+### <a name="block-app-access-based-on-unapproved-device-vendors-and-models-----1425689----"></a>未承認のデバイス ベンダーとモデルに基づくアプリのアクセスのブロック <!-- 1425689 ! -->
+Intune の IT 管理者は、Intune App Protection ポリシーによって、Android 製造元や iOS モデルの指定された一覧を適用できます。 IT 管理者は、Android ポリシーの製造元と iOS ポリシーのデバイス モデルのセミコロン区切り一覧を提供できます。 Intune App Protection ポリシーは、Android および iOS 専用です。 この指定されたリストでは 2 つの個別操作を実行できます。
+- 指定されていないデバイスでのアプリ アクセスからブロック。
+- または、指定されていないデバイスでの企業データの選択的ワイプ。 
+
+ユーザーは、ポリシーによる要件が満たされない場合、対象となるアプリケーションにアクセスすることができません。 設定に基づいて、ユーザーは、ブロックされるか、アプリ内の企業データを選択的にワイプされます。 iOS デバイス上でこの機能を利用するには、対象のアプリケーションに適用するこの機能の Intune アプリ SDK を統合するアプリケーション (WXP、Outlook、Managed Browser、Yammer など) の参加が必要となります。 この統合は、ローリング方式で行われ、特定のアプリケーション チームによって異なります。 Android でこの機能を利用するには、最新の Intune ポータル サイトが必要です。 
+
+エンド ユーザー デバイスの Intune クライアントは、アプリケーション保護ポリシーに対して Intune ブレードで指定されている文字列の単純一致に基づいてアクションを実行します。 これは、デバイスを報告する値に完全に依存します。 そのため、IT 管理者には、意図した動作が正確であることを確認することをお勧めします。 これは、小さなユーザー グループを対象に、さまざまなデバイス製造元とモデルに基づいてこの設定をテストすることによって実現できます。 Microsoft Intune でアプリ保護ポリシーを表示および追加するには、**[Mobile Apps]** > **[アプリ保護ポリシー]** を選びます。 アプリ保護ポリシーの詳細については、「[アプリ保護ポリシーとは](app-protection-policy.md)」および「[Intune でアプリ保護ポリシーのアクセス アクションを利用し、データを選択的にワイプする](app-protection-policies-access-actions.md)」を参照してください。
+
+### <a name="access-to-macos-company-portal-pre-release-build----1734766---"></a>macOS ポータル サイトのプレリリース ビルドへのアクセス <!-- 1734766 -->
+Microsoft AutoUpdate を使用すれば、Insider Program に参加することにより、早期にビルドを受け取るためにサインアップできます。 サインアップすると、エンド ユーザーが使用できるようになる前に更新されたポータル サイトを使用できます。 詳細については、[Microsoft Intune に関するブログ](https://blogs.technet.microsoft.com/intunesupport/2018/07/13/use-microsoft-autoupdate-for-early-access-to-the-macos-company-portal-app/) を参照してください。
+
 ## <a name="week-of-july-2-2018"></a>2018 年 7 月 2 日の週
 
 ### <a name="app-management"></a>アプリ管理
@@ -68,9 +84,6 @@ Microsoft Intune 管理者は、ボリューム購入プログラム (VPP) で�
 
 #### <a name="revoke-ios-vpp-app-license----1863797---"></a>iOS VPP アプリのライセンスを取り消す <!-- 1863797 -->
 管理者は、ユーザーまたはデバイスに割り当てられている iOS VPP アプリのライセンスを回収することができます。 iOS VPP アプリをアンインストールしても、アプリのライセンスを回収できます。 アプリをアンインストールする前に、アプリの対象となっているグループからユーザーまたはデバイスを削除する必要があります。 グループからユーザーまたはデバイスを削除することで、アプリの再インストールが回避されます。 これらの手順が完了したら、別のユーザーまたはデバイスにアプリ ライセンスを割り当てることができます。 iOS VPP アプリのライセンスの詳細については、「[Microsoft Intune での iOS のボリューム購入アプリの管理](vpp-apps-ios.md)」をご覧ください。
-
-#### <a name="line-of-business-lob-app-support-for-macos----1895847---"></a>macOS の基幹業務 (LOB) アプリのサポート <!-- 1895847 -->
-Microsoft Intune では、macOS LOB アプリを **[必須]** として、または **[Available with enrollment]\(登録して利用可能\)** として展開することができます。 エンド ユーザーは、macOS 用のポータル サイトまたは[ポータル サイト Web サイト](https://portal.manage.microsoft.com)を使用して、アプリを **[利用可能]** として展開してもらうことができます。
 
 ### <a name="device-configuration"></a>デバイス構成
 
@@ -647,7 +660,7 @@ Intune に登録された HoloLens および Surface Hub のデバイスを Andr
 
 ## <a name="week-of-march-19-2018"></a>2018 年 3 月 19 日の週
 
-### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>IE、Microsoft Edge、または Chrome ですべてのデバイスを CSV ファイルにエクスポートする <!-- 2258071 -->
+### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>IE、Edge、または Chrome ですべてのデバイスを CSV ファイルにエクスポートする <!-- 2258071 -->
 **[デバイス]** > **[すべてのデバイス]** で、デバイスを CSV 形式の一覧に**エクスポート**することができます。 10,000 を超えるデバイスを持つ Internet Explorer (IE) ユーザーは、デバイスを複数のファイルに正常にエクスポートできます。 各ファイルには、最大 10,000 のデバイスが含まれます。
 
 30,000 を超えるデバイスを持つユーザーは、デバイスを複数のファイルに正常にエクスポートできます。 各ファイルには、最大 30,000 のデバイスが含まれます。
@@ -1088,7 +1101,7 @@ Intune では、2017 年 1 月以降に作成された Intune アカウントに
 
 ### <a name="new-user-experience-update-for-the-company-portal-website---2000968--"></a>ポータル Web サイトの新しいユーザー エクスペリエンスの更新<!--2000968-->
 
-UI を更新し、ワークフローの簡素化とユーザー補助機能を改善した、新しいポータル Web サイトのエクスペリエンスを 4 月に導入します。 これには、アプリ共有などのお客様の要望に基づいた機能拡張や、よりユーザー フレンドリなエクスペリエンスを提供するための全体的なパフォーマンスの向上などが含まれます。
+UI を更新し、ワークフローの簡素化とユーザー補助機能を改善した、新しいポータル Web サイトのエクスペリエンスを 8 月から導入します。 これには、アプリ共有などのお客様の要望に基づいた機能拡張や、よりユーザー フレンドリなエクスペリエンスを提供するための全体的なパフォーマンスの向上などが含まれます。
 お客様からのフィードバックに基づいて、既存の機能と使いやすさを大幅に向上させる新しい機能もいくつか追加されています。
 
 * Web サイト全体の UI の機能強化

@@ -15,12 +15,12 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6ed6b95a11eddfeb748b21d6df55f3a5668d9e1d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 292df171b613ada7a5f8e2cf666ba358ef26df9b
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021563"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949477"
 ---
 # <a name="get-started-managing-users"></a>ユーザー管理の概要
 
@@ -28,12 +28,14 @@ ms.locfileid: "31021563"
 
 ## <a name="how-do-i-create-a-user"></a>ユーザーの作成方法
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
+2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Microsoft Intune]** ウィンドウを開いたら、**[ユーザー]** を選択します。 **[すべてのユーザー]** ページで、**[+ 新しいユーザー]** を選択します。
-4. **名前**や**ユーザー名**など、ユーザーの詳細を入力します。 ユーザー名のドメイン名の部分は初回の既定ドメイン名である “contoso.onmicrosoft.com” か、“contoso.com” など、検証済みの非フェデレーション ドメイン名にする必要があります。
-5. **[グループ]** の下で、ユーザーを追加するテスト グループを選択します。
-6. テスト デバイスにログオンするときに利用できるように、自動生成されたユーザー パスワードを保存します。 このパスワードをユーザーに与える必要があります。パスワードを与えられたユーザーは、自分が覚えられるように普通のパスワードに変更できます。
+4. **名前**や**ユーザー名**など、ユーザーの詳細を入力します。 ユーザー名のドメイン名の部分は、次のいずれかのドメインである必要があります。
+    - 既定の初期ドメイン名である ”contoso.onmicrosoft.com” ドメイン名、または
+    - 検証済み非フェデレーション ドメイン名 (”contoso.com” など)。
+5. **[グループ]** の下で、ユーザーを追加する[グループ](get-started-groups.md)を選択します。
+6. テスト デバイスにサインインするときに利用できるように、自動生成されたユーザー パスワードを保存します。 このパスワードをユーザーに与える必要があります。パスワードを与えられたユーザーは、自分が覚えられるように普通のパスワードに変更できます。
 7. **[ユーザー]** ウィンドウで、**[作成]** を選択します。
 
 ## <a name="assigning-licenses-to-users"></a>ユーザーにライセンスを割り当てる

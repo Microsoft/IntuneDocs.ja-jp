@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/14/2018
+ms.date: 07/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4d0c63c5e926c3f8893762a9be3b6bed2d6844c4
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 8b647e7b2a4d252041e60792b6fc49df8b961066
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37967240"
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Microsoft Intune で Managed Browser ポリシーを使ってインターネット アクセスを管理する
 
@@ -35,7 +36,7 @@ Managed Browser は、公開アプリ ストアからダウンロードできる
 - 画面の取り込みを禁止する
 - ユーザーが選択したコンテンツへのリンクのみを他の管理対象アプリで開けるようにする
 
-詳細については、「[アプリ保護ポリシーとは](/intune/app-protection-policy.md)」を参照してください。
+詳細については、「[アプリ保護ポリシーとは](app-protection-policy.md)」を参照してください。
 
 これらの設定は以下のものに適用できます。
 
@@ -105,15 +106,18 @@ Intune Managed Browser での SSO では、iOS の Microsoft Authenticator ア�
 
 ## <a name="create-a-managed-browser-app-configuration"></a>Managed Browser アプリの構成を作成する
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
+2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3.  [管理] リストの **[アプリの構成]** ブレードで、**[アプリ構成ポリシー]** を選択します。
 4.  **[アプリ構成ポリシー]** ブレードで、**[追加]** を選択します。
 5.  **[構成ポリシーの追加]** ブレードで **[名前]** を入力し、必要に応じてアプリ構成設定の **[説明]** を入力します。
-6.  **[デバイス登録の種類]** には、**[管理対象アプリ]** を選択します。
-7.  **[必要なアプリの選択]** を選択して、**[対象アプリ]** ブレードで、iOS、Android、またはその両方に対して **[Managed Browser]** を選択します。
+6.  
+  **[デバイス登録の種類]** には、**[管理対象アプリ]** を選択します。
+7.  
+  **[必要なアプリの選択]** を選択して、**[対象アプリ]** ブレードで、iOS、Android、またはその両方に対して **[Managed Browser]** を選択します。
 8.  **[OK]** を選択して **[構成ポリシーの追加]** ブレードに戻ります。
-9.  **[構成設定]** を選択します。 **[構成]** ブレードで、Managed Browser の構成を指定するキーと値のペアを定義します。 定義できる別のキーと値のペアについては、この記事の後半のセクションで説明します。
+9.  **[構成設定]** を選択します。 
+  **[構成]** ブレードで、Managed Browser の構成を指定するキーと値のペアを定義します。 定義できる別のキーと値のペアについては、この記事の後半のセクションで説明します。
 10. 終了したら、**[OK]** を選択します。
 11. **[構成ポリシーの追加]** ブレードで、**[追加]** を選択します。
 12. 新しい構成が作成され、**[アプリの構成]** ブレードに表示されます。
@@ -141,7 +145,7 @@ Intune Managed Browser と [Azure AD アプリケーション プロキシ]( htt
 ### <a name="before-you-start"></a>開始する前に
 
 - Azure AD アプリケーション プロキシ経由の内部アプリケーションをセットアップします。
-    - アプリケーション プロキシを構成し、アプリケーションを公開するには、[セットアップに関するドキュメント]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)を参照してください。 
+    - アプリケーション プロキシを構成し、アプリケーションを公開するには、[セットアップに関するドキュメント](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)を参照してください。 
 - Managed Browser アプリの最小バージョン 1.2.0 を使用する必要があります。
 - Managed Browser アプリのユーザーは、[Intune アプリの保護ポリシー]( app-protection-policy.md)をアプリに割り当てています。
 
@@ -167,7 +171,7 @@ Outlook は、アプリ保護ポリシーの **[Managed Browser に表示する 
 
 |                                キー                                |                                                           値                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | 有効な URL を指定します。 セキュリティ対策のため、誤った URL はブロックされます。<br>例: <strong><https://www.bing.com></strong> |
+| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | 有効な URL を指定します。 セキュリティ対策のため、誤った URL はブロックされます。<br>例: `<https://www.bing.com>` |
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>Managed Browser のブックマークを構成する方法
 
@@ -181,7 +185,7 @@ Managed Browser アプリの構成を作成する手順に従い、以下のキ�
 
 |                                キー                                 |                                                                                                                                                                                                                                                         値                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | この構成の値は、ブックマークのリストです。 各ブックマークは、ブックマークのタイトルとブックマークの URL で構成されます。 タイトルおよび URL は、<strong>& #124;</strong> の文字で区切ります。<br><br>例: <strong>Microsoft Bing&#124;<https://www.bing.com></strong><br><br>複数のブックマークを構成するには、二重の文字 <strong>&#124;&#124;</strong> で各ペアを区切ります。<br><br>例: <strong>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;<https://www.contoso.com></strong> |
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | この構成の値は、ブックマークのリストです。 各ブックマークは、ブックマークのタイトルとブックマークの URL で構成されます。 タイトルおよび URL は、<strong>& #124;</strong> の文字で区切ります。<br><br>例:<br> `Microsoft Bing|https://www.bing.com`<br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example:<br> `Bing|https://www.bing.com||Contoso|https://www.contoso.com` |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Managed Browser で許可する URL とブロックする URL を指定する方法
 
@@ -189,7 +193,7 @@ Managed Browser アプリの構成を作成する手順に従い、以下のキ�
 
 |キー|値|
 |-|-|
-|次の中から選択します。<br><br>- 許可された URL を指定する場合 (ここで指定した URL のみが許可され、他のサイトにはアクセスできない): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- ブロックされた URL を指定する場合 (その他のすべてのサイトにアクセスできる): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|キーに対応する値は URL のリストです。 パイプ文字 **&#124;** によって区切られた、1 つの値として許可またはブロックする必要がある、すべての URL を入力します。<br><br>例:<br><br>`URL1\|URL2\|URL3`</code><br>`http://*.contoso.com/*\|https://*.bing.com/*\|https://expenses.contoso.com`|
+|次の中から選択します。<br><ul><li>許可された URL を指定する場合 (これらの URL のみが許可され、その他のサイトにはアクセスできない):<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>ブロックされた URL を指定する場合 (その他のすべてのサイトにアクセスできる):<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|キーに対応する値は URL のリストです。 パイプ文字 **&#124;** によって区切られた、1 つの値として許可またはブロックする必要がある、すべての URL を入力します。<br><br>例:<br><br>`URL1|URL2|URL3`<br>`http://*.contoso.com/*|https://*.bing.com/*|https://expenses.contoso.com`|
 
 >[!IMPORTANT]
 >両方のキーを指定しないでください。 両方のキーが同じユーザーを対象とする場合、許可のキーが最も制限の厳しいオプションとして使用されます。
@@ -208,51 +212,53 @@ Managed Browser アプリの構成を作成する手順に従い、以下のキ�
 
   -   https の場合はポート 443
 
-  ポート番号にワイルドカードを使用することはできません。 たとえば、<strong>http&colon;//www&period;contoso&period;com:*;</strong> や <strong>http&colon;//www&period;contoso&period;com: /*;</strong> はサポートされていません。
+  ポート番号にワイルドカードを使用することはできません。 たとえば、 `http://www.contoso.com:;` と `http://www.contoso.com: /;` はサポートされていません。
 
 - URL を指定するときに使用できるパターンの詳細については、次の表を参照してください。
 
 |                  [URL]                  |                     説明                      |                                                ［一致する］                                                |                                ［次の値に一致しない］                                 |
 |---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-|        http://www.contoso.com         |              単一のページと一致する               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
-|          http://contoso.com           |              単一のページと一致する               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
-|    <http://www.contoso.com/&#42>;     | www.contoso.com で始まるすべての URL と一致する |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
-|    http://&#42;.contoso.com/&#42;     |     contoso.com の下のすべてのサブドメインに一致する     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
-|     http://www.contoso.com/images     |             単一のフォルダーと一致する              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
-|       http://www.contoso.com:80       |  ポート番号を使用し、単一のページと一致する   |                                       http://www.contoso.com:80                                       |                                                                               |
-|        https://www.contoso.com        |          セキュリティで保護された単一のページと一致する           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
-| <http://www.contoso.com/images/&#42>; |    1 つのフォルダーおよびすべてのサブフォルダーと一致する    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
+|        `http://www.contoso.com`         |              単一のページと一致する               |                                            `www.contoso.com`                                            |  `host.contoso.com`<br /><br />`www.contoso.com/images`<br /><br />`contoso.com`/   |
+|          `http://contoso.com`           |              単一のページと一致する               |                                             `contoso.com/`                                              | `host.contoso.com`<br /><br />`www.contoso.com/images`<br /><br />`www.contoso.com` |
+|    `http://www.contoso.com/&#42;`     | `www.contoso.com` で始まるすべての URL と一致する |      `www.contoso.com`<br /><br />`www.contoso.com/images`<br /><br />`www.contoso.com/videos/tvshows`      |              `host.contoso.com`<br /><br />`host.contoso.com/images`              |
+|    `http://*.contoso.com/*`     |     contoso.com の下のすべてのサブドメインに一致する     | `developer.contoso.com/resources`<br /><br />`news.contoso.com/images`<br /><br />`news.contoso.com/videos` |                               `contoso.host.com`                                |
+|     `http://www.contoso.com/images`     |             単一のフォルダーと一致する              |                                        `www.contoso.com/images`                                         |                          `www.contoso.com/images/dogs`                          |
+|       `http://www.contoso.com:80`       |  ポート番号を使用し、単一のページと一致する   |                                       `http://www.contoso.com:80`                                       |                                                                               |
+|        `https://www.contoso.com`        |          セキュリティで保護された単一のページと一致する           |                                        `https://www.contoso.com`                                        |                            `http://www.contoso.com`                             |
+| `http://www.contoso.com/images/&#42;` |    1 つのフォルダーおよびすべてのサブフォルダーと一致する    |                  `www.contoso.com/images/dogs`<br /><br />`www.contoso.com/images/cats`                   |                            `www.contoso.com/videos`                             |
 
 - 指定することができない入力例を次に示します。
 
-  - &#42;.com
+  - `*.com`
 
-  - &#42;.contoso/&#42;
+  - `*.contoso/*`
 
-  - www.contoso.com/&#42;images
+  - `www.contoso.com/*images`
 
-  - www.contoso.com/&#42;images&#42;pigs
+  - `www.contoso.com/*images*pigs`
 
-  - www.contoso.com/page&#42;
+  - `www.contoso.com/page*`
 
   - IP アドレス
 
-  - https://&#42;
+  - `https://*`
 
-  - http://&#42;
+  - `http://*`
 
-  - http://www.contoso.com:&#42;
+  - `http://www.contoso.com:*`
 
-  - http://www.contoso.com: /&#42;
+  - `http://www.contoso.com: /*`
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>iOS で Managed Browser を使用し、管理対象アプリ ログにアクセスする方法
 
 iOS デバイスに Managed Browser をインストールしているエンド ユーザーは、Microsoft が公開しているすべてのアプリの管理ステータスを表示できます。 管理対象 iOS アプリの問題を解決するためにログを送信できます。
 
 1. iOS の **[設定]** を開きます。
-2. **Managed Browser** のアプリケーション設定を選択します。
+2. 
+  **Managed Browser** のアプリケーション設定を選択します。
 3. **[Intune 診断の有効化]** を切り替え、ブラウザーをトラブルシューティング モードに設定します。
-4. **Managed Browser** を開きます。 **[Intune アプリの状態を表示]** をクリックし、個々のアプリケーション ポリシー設定を確認します。
+4. 
+  **Managed Browser** を開きます。 **[Intune アプリの状態を表示]** をクリックし、個々のアプリケーション ポリシー設定を確認します。
 5. **[開始]** と **[ログの共有]** または **[Microsoft にログを送信]** を押し、IT 管理者または Microsoft にトラブルシューティング ログを送信します。
 
 アプリ内からブラウザーをトラブルシューティング モードで開くこともできます。
@@ -291,4 +297,4 @@ Microsoft は、Microsoft の製品やサービスを改善するために、Man
 
 ## <a name="next-steps"></a>次の手順
 
-- [アプリ保護ポリシーとは](app-protection-policy.md)
+- [アプリ保護ポリシーとは](app-protection-policy.md) 

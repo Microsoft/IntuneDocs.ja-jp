@@ -15,12 +15,12 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d0afd1f1944101b2162d9115e84ea5aaac0abf2
-ms.sourcegitcommit: 3dbd73631dd0042dd013a380f4c15dfe284576c0
+ms.openlocfilehash: 65827fe280535aa48d1d44eda9fd8482002c2c3b
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36882530"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028764"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS アプリ保護ポリシー設定
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -83,7 +83,7 @@ ms.locfileid: "36882530"
 | **Intune アプリ保護ポリシー SDK バージョンの最小要件** | 使用するアプリで Intune アプリ保護ポリシー SDK バージョンの最小要件を要求するには **[はい]** を選択します。 アプリの Intune アプリ保護ポリシー SDK バージョンが要件を満たさない場合、アクセスがブロックされます。 <br> <br> Intune アプリ保護ポリシー SDK に関する詳細については、「[Intune App SDK の概要](app-sdk.md)」をご覧ください。 <br><br> このポリシー設定では、major.minor、major.minor.build、major.minor.build.revision のいずれの形式もサポートされます。 <br><br> **注:** アプリに Intune SDK バージョン 7.0.1 以降が必要です。 | [いいえ] |
 
 > [!NOTE]
-> [アクセス] セクションで同じアプリとユーザーの組み合わせに対して構成された複数の Intune アプリ保護設定が iOS 上でどのように動作するかについては、[Intune MAM についてよく寄せられる質問](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios)に関するページを参照してください。
+> [アクセス] セクションで同じアプリとユーザーの組み合わせに対して構成された複数の Intune アプリ保護設定が iOS 上でどのように動作するかについては、[Intune MAM についてよく寄せられる質問](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios)に関するページおよび「[Intune でアプリ保護ポリシーのアクセス アクションを利用し、データを選択的にワイプする](app-protection-policies-access-actions.md)」を参照してください。
 
 ##  <a name="add-ins-for-outlook-app"></a>Outlook アプリ用のアドイン
 

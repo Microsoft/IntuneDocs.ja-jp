@@ -16,11 +16,11 @@ ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 0d38d7671218bfcecd3d2aa4671a565e0cabe37f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31032457"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38219925"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Intune にユーザーを追加して管理アクセス許可を付与する
 
@@ -53,8 +53,8 @@ ms.locfileid: "31032457"
 6. **[追加]** を選択して新しいユーザーを作成します。
 
 ### <a name="add-intune-users-in-the-azure-portal"></a>Azure Portal で Intune ユーザーを追加する
-1. [Azure Portal](https://portal.azure.com) にサインインし、**[すべてのサービス]**、**[監視 + 管理]**、**[Intune]** の順に移動します。 **Intune** の "*リソースを検索する*" こともできます。
-2. **[ユーザー]**、**[すべてのユーザー]** の順に選択します。
+1. [Azure Portal](https://portal.azure.com) にサインインし、**[すべてのサービス]** > **[監視 + 管理]** > **[Intune]** の順に移動します。 **Intune** の "*リソースを検索する*" こともできます。
+2. **[ユーザー]** > **[すべてのユーザー]** の順に選択します。
 3. 管理センターで、**[新しいユーザー]** を選びます。
    ![新しいユーザーの追加のスクリーンショット](media/intune-add-user.png)
 4. 次のユーザー詳細を指定します。

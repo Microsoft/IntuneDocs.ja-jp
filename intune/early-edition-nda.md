@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 609e142551344a1ce39761280031463c8e34f1f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: e97d7639a73fb2d5fd13d4b893ace8eebf597e05
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906024"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949494"
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2018"></a>Microsoft Intune の初期エディション - 2018 年 7 月
 
@@ -40,6 +40,9 @@ ms.locfileid: "37906024"
 ## <a name="intune-in-the-azure-portal"></a>Azure Portal での Intune
 
 <!-- 1807 start -->
+
+### <a name="more-sync-opportunities-in-the-company-portal-app-for-windows----2683177---"></a>Windows 用ポータル サイト アプリ内の同期の機会の増加 <!-- 2683177 -->
+Windows 用ポータル サイト アプリでは、Windows タスク バーと [スタート] メニューのジャンプ リストにデバイスの同期アクションを追加しています。 いずれの場所からクリックしても、デバイスをすばやく同期して企業リソースにアクセスすることができます。  
 
 ### <a name="reset-device-passcodes-from-company-portal-app-for-windows-10----2101282---"></a>Windows 10 用ポータル サイト アプリからデバイスのパスコードをリセットする <!-- 2101282 --> 
 従業員の方々は、すぐに Windows 10 用ポータル サイト アプリから直接デバイスの PIN またはパスコードをリセットできるようになります。 この機能は、パスコードのリセットをサポートする、リモートとローカルの Intune で管理されている両方のデバイスで使用できます。 デバイスの種類に応じて、リモート デバイスに対して行われた要求では、デバイスの現在のパスコードが削除されるか、一時的なパスコードが作成されます。 ローカル デバイスのリセットを要求するユーザーは、デバイスの設定アプリにリダイレクトされます。  

@@ -2,8 +2,8 @@
 title: Microsoft Intune - Azure での Android キオスクの設定 | Microsoft Docs
 description: Android エンタープライズ キオスク デバイスを構成します。
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 7/5/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 28eca6fa3738519602ee5b2a778bc75bde487156
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 15ac6adbcf262fd14edf11107b032aeda106a15b
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909101"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039337"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Intune での Android エンタープライズ キオスクの設定
 
@@ -51,7 +51,7 @@ Android キオスク プロファイルは、次の構成設定をサポート�
 
 ## <a name="kiosk-settings"></a>キオスクの設定
 
-- **[キオスク モード]**: デバイスが 1 つのアプリのみを実行するか、複数のアプリを実行するかを定義します。 詳細については、「[Kiosk settigns for Android devices](android-kiosk-settings.md)」(Android デバイスのキオスク設定) を参照してください。
+- **[キオスク モード]**: デバイスが 1 つのアプリのみを実行するか、複数のアプリを実行するかを定義します。 詳細については、[Android デバイス向けのキオスク設定](android-kiosk-settings.md)に関するページをご覧ください。
     - **[シングル アプリ キオスク]**: ユーザーは、1 つのアプリにのみアクセスできます。
     - **[マルチ アプリ キオスク]**: ユーザーは、限られた一連のアプリにアクセスできます。
 
