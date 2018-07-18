@@ -663,6 +663,8 @@
           href: help-desk-operators.md
         - name: 会社のリソースへのアクセスに関する問題のトラブルシューティング
           href: troubleshoot-company-resource-access-problems.md
+        - name: アプリのインストールに関する問題のトラブルシューティング
+          href: troubleshoot-app-install.md
         - name: Intune のアクティビティの監査ログ
           href: monitor-audit-logs.md
         - name: アプリの保護ログのレビュー
