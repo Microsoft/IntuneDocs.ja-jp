@@ -35,9 +35,9 @@
   items:
     - name: Azure Portal での操作
       href: get-started-azure.md
-    - name: ユーザーを作成する
+    - name: ユーザーの作成
       href: get-started-users.md
-    - name: グループの作成
+    - name: グループを作成する
       href: get-started-groups.md
     - name: ポリシーの割り当て
       href: get-started-policies.md
@@ -93,7 +93,7 @@
           href: planning-guide-support-plan.md
         - name: 設計
           href: planning-guide-design.md
-        - name: 実装
+        - name: 変更の
           href: planning-guide-onboarding.md
         - name: テストと検証
           href: planning-guide-test-validation.md
@@ -130,7 +130,7 @@
         - name: サポートされている構成
           href: supported-devices-browsers.md
           items:
-            - name: ネットワーク構成
+            - name: ネットワークの構成
               href: network-bandwidth-use.md
         - name: Intune にサインインする
           href: account-sign-up.md
@@ -152,9 +152,9 @@
         - name: 登録オプション
           href: enrollment-options.md
           items:
-            - name: Intune の登録および会社アクセスに関する使用条件
+            - name: Terms and conditions
               href: terms-and-conditions-create.md
-            - name: 制限
+            - name: 制限事項
               href: enrollment-restrictions-set.md
             - name: Apple MDM プッシュ通知証明書
               href: apple-mdm-push-certificate-get.md
@@ -301,7 +301,7 @@
               href: app-configuration-policies-use-ios.md
             - name: Android マネージド デバイス
               href: app-configuration-policies-use-android.md
-            - name: Managed apps
+            - name: 管理対象のアプリ
               href: app-configuration-policies-managed-app.md
             - name: iOS アプリ プロビジョニング プロファイルを使用する
               href: app-provisioning-profile-ios.md
@@ -379,7 +379,7 @@
               href: device-restrictions-macos.md
             - name: Windows 8.1
               href: device-restrictions-windows-8-1.md
-            - name: Windows Phone 8。1
+            - name: Windows Phone 8.1
               href: device-restrictions-windows-phone-8-1.md
             - name: Windows 10
               href: device-restrictions-windows-10.md
@@ -409,7 +409,7 @@
               href: email-settings-android.md
             - name: iOS
               href: email-settings-ios.md
-            - name: Windows Phone 8。1
+            - name: Windows Phone 8.1
               href: email-settings-windows-phone-8-1.md
             - name: Windows 10
               href: email-settings-windows-10.md
@@ -426,7 +426,7 @@
               href: vpn-settings-macos.md
             - name: Windows 8.1
               href: vpn-settings-windows-8-1.md
-            - name: Windows Phone 8。1
+            - name: Windows Phone 8.1
               href: vpn-settings-windows-phone-8-1.md
             - name: Windows 10
               href: vpn-settings-windows-10.md
@@ -521,6 +521,7 @@
         - name: Jamf Pro で管理された Mac にコンプライアンスを適用します
           href: conditional-access-assign-jamf.md
     - name: デバイス データの保護
+      href: device-protect.md
       items:
         - name: プライバシーおよび個人データ
           href: privacy-personal-data.md
@@ -699,7 +700,7 @@
               href: custom-settings-ios.md
             - name: macOS
               href: custom-settings-macos.md
-            - name: Windows Phone 8。1
+            - name: Windows Phone 8.1
               href: custom-settings-windows-phone-8-1.md
             - name: Windows 10
               href: custom-settings-windows-10.md
