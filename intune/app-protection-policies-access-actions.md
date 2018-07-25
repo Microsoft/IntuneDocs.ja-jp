@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/10/2018
+ms.date: 07/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 084200f5773e5f92288d64e0fea23f022d93f3a0
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: 00f422b5619115b44b8d39c2d735f2163c22167f
+ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993736"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39138698"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Intune でアプリ保護ポリシーのアクセス アクションを利用し、データを選択的にワイプする
 
@@ -91,7 +91,7 @@ Android の場合、**[設定]** ドロップダウンを利用して次の設�
 - 指定されたものを許可 (未指定でワイプ)
 
 **IT 管理者が、同じ Intune ユーザーの同じアプリを対象とするポリシー間で、異なる Android 製造元の一覧を入力した場合、どうなりますか。**<br>
-構成値に対して 2 つのアプリ保護ポリシーの間に競合が発生した場合、Intune では通常、最も制限の厳しいアプローチが取られます。 したがって、対象の Intune ユーザーが開いている対象のアプリに対して送信されるポリシーの結果は、同じアプリ/ユーザーの組み合わせを対象とする、"*ポリシー A*" と "*ポリシー B*" の Android 製造元のリストの積集合となります。 たとえば、"*ポリシー A*" が "Google, Samsung" を指定し、"*ポリシー B*" が "Google" を指定している場合、"*ポリシー A*" と "*ポリシー B*" 両方の対象である Intune ユーザーのポリシーの結果は "Google" となります。 
+構成値に対して 2 つのアプリ保護ポリシーの間に競合が発生した場合、Intune では通常、最も制限の厳しいアプローチが取られます。 したがって、対象の Intune ユーザーが開いている対象のアプリに対して送信されるポリシーの結果は、同じアプリ/ユーザーの組み合わせを対象とする、"*ポリシー A*" と "*ポリシー B*" の Android 製造元のリストの積集合となります。 たとえば、"*ポリシー A*" が "Google; Samsung" を指定し、"*ポリシー B*" が "Google" を指定している場合、"*ポリシー A*" と "*ポリシー B*" 両方の対象である Intune ユーザーのポリシーの結果は "Google" となります。 
 
 ### <a name="additional-settings-and-actions"></a>追加の設定とアクション 
 
