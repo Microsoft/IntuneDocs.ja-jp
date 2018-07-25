@@ -77,5 +77,4 @@ Android デバイスで会社の AV、PDF、画像ファイルを表示するに
 |pfile は、保護するファイル向けの汎用的な "ラッパー" 形式です。暗号化されたコンテンツと Azure Information Protection ライセンスをカプセル化します。 任意のファイルの種類を保護できます。|
 
 ## <a name="next-steps"></a>次の手順
-
-  [アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](end-user-mam-apps-ios.md)
+[アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](end-user-mam-apps-ios.md)
