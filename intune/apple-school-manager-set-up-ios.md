@@ -15,18 +15,18 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 853b602781b221ba681d802ae0119fc184ab8d6b
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 31d09c8c97da823ec40785a6db42df64056277fb
+ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225154"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39164554"
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager での iOS デバイス登録の有効化
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-このトピックは、[Apple School Manager](https://school.apple.com/) プログラムで購入したデバイスの iOS デバイス登録を有効にする場合に役立ちます。 Apple School Manager と共に Intune を使用して、デバイスに触れることなく、大量の iOS デバイスを登録できます。 学生や教師がデバイスの電源をオンにすると、セットアップ アシスタントが構成済み設定で実行され、デバイスが管理対象として登録されます。
+この記事は、[Apple School Manager](https://school.apple.com/) プログラムで購入したデバイスの iOS デバイス登録を有効にする場合に役立ちます。 Apple School Manager と共に Intune を使用して、デバイスに触れることなく、大量の iOS デバイスを登録できます。 学生や教師がデバイスの電源をオンにすると、セットアップ アシスタントが構成済み設定で実行され、デバイスが管理対象として登録されます。
 
 Apple School Manager 登録を有効にするには、Intune と Apple School Manager ポータルの両方を使用します。 管理するために Intune にデバイスを割り当てられるように、シリアル番号のリストまたは注文番号が必要になります。 登録時にデバイスに適用された設定を含む DEP 登録プロファイルを作成します。
 
@@ -36,7 +36,7 @@ Apple School Manager 登録を、[Apple の Device Enrollment Program](device-en
 - [Apple MDM プッシュ証明書](apple-mdm-push-certificate-get.md)
 - [MDM 機関](mdm-authority-set.md)
 - [Apple MDM プッシュ証明書](apple-mdm-push-certificate-get.md)
-- ユーザー アフィニティには [WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/library/adfs2-help-endpoints)が必要です。 [詳細については、ここをクリック](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)してください。
+- ADFS を使用している場合、ユーザー アフィニティには [WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/library/adfs2-help-endpoints)が必要です。 [詳細については、ここをクリック](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)してください。
 - [Apple School Management](http://school.apple.com) プログラムで購入されたデバイス
 
 ## <a name="get-an-apple-token-and-assign-devices"></a>Apple トークンを取得し、デバイスを割り当てる
@@ -80,13 +80,15 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
 
 1. [Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]** の順に選択します。
 2. トークンを選択し、**[プロファイル]** を選択し、**[プロファイルの作成]** を選択します。
+
 3. **[プロファイルの作成]** で、管理用にプロファイルの **[名前]** と **[説明]** を入力します。 ユーザーにはこれらの詳細は表示されません。 この **[名前]** フィールドを使用して、Azure Active Directory で動的グループを作成できます。 この登録プロファイルに対応するデバイスを割り当てるために enrollmentProfileName パラメーターを定義する場合はプロファイル名を使用します。 Azure Active Directory の動的グループの詳細については[こちら](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects)を参照してください。
+
     ![プロファイル名と説明。](./media/device-enrollment-program-enroll-ios/image05.png)
 
 4. **[ユーザー アフィニティ]** で、このプロファイルに対応するデバイスを割り当て済みユーザーとともに登録する必要があるかどうかを選択します。
-    - **[ユーザー アフィニティとともに登録する]** - このオプションは、ユーザーに属しているデバイスであって、かつアプリのインストールなどのサービスにポータル サイトを使用する必要があるデバイスの場合に選択します。 このオプションにより、ユーザーは会社ポータルを使用して自分のデバイスを認証することもできます。 ユーザー アフィニティには [WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/library/adfs2-help-endpoints)が必要です。 [詳細については、ここをクリック](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)してください。   Apple School Manager の [共有 iPad] モードでは、ユーザーはユーザー アフィニティなしで登録する必要があります。
+    - **[ユーザー アフィニティとともに登録する]** - このオプションは、ユーザーに属しているデバイスであって、かつアプリのインストールなどのサービスにポータル サイトを使用する必要があるデバイスの場合に選択します。 このオプションにより、ユーザーは会社ポータルを使用して自分のデバイスを認証することもできます。 ADFS を使用している場合、ユーザー アフィニティには [WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/library/adfs2-help-endpoints)が必要です。 [詳細については、ここをクリック](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)してください。   Apple School Manager の [共有 iPad] モードでは、ユーザーはユーザー アフィニティなしで登録する必要があります。
 
-    - **[ユーザー アフィニティなしで登録する]** - このオプションは、共有デバイスなど、1 人のユーザーに関連付けられていないデバイスの場合に選択します。 ローカルのユーザー データにアクセスせずにタスクを実行するデバイスで使用します。 ポータル サイト アプリなどのアプリは動作しません。
+    - **[ユーザー アフィニティなしで登録する]** - このオプションは、共有デバイスなど、1 人のユーザーに関連付けられていないデバイスの場合に選択します。 このオプションは、ローカルのユーザー データにアクセスせずにタスクを実行するデバイスで使用します。 ポータル サイト アプリなどのアプリは動作しません。
 
 5. **[ユーザー アフィニティとともに登録する]** を選択した場合は、Apple セットアップ アシスタントではなく、ポータル サイトでユーザーに認証を行わせるオプションがあります。
 
@@ -108,7 +110,7 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
 
 7. このプロファイルを使用するデバイスの登録をロックする必要があるかどうかを選択します。 **[ロックされた登録]** を選択すると、**[設定]** メニューから管理プロファイルを削除する操作を許可する iOS 設定が無効になります。 デバイスの登録後は、デバイスを出荷時の設定にリセットしないと、この設定を変更することができません。 そのようなデバイスについては、**[監視下]** 管理モードを *[はい]* に設定する必要があります。 
 
-8. 管理されている Apple ID を使用して複数のユーザーが登録済みの iPads にサインオンするようにしたい場合は、**[共有 iPad]** で **[はい]** を選択します。 この場合は、**[ユーザー アフィニティなしで登録する]** と **[監視下]** モードを **[はい]** に設定する必要があります。管理された Apple ID は、Apple School Manager ポータルで作成されます。 共有 iPad の詳細については[こちら](education-settings-configure-ios-shared.md)を参照してください。 [Apple の Shared iPad に関する要件](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56)も参照してください。
+8. 管理された Apple ID を使用して、複数のユーザーが登録済みの iPad にサインオンできるようにする場合は、**[共有 iPad]** の下の **[はい]** を選択します (このオプションでは、**[ユーザー アフィニティなしで登録する]** と **[監視下]** モードを **[はい]** に設定することが必要になります)。管理された Apple ID は、Apple School Manager ポータルで作成されます。 [共有 iPad](education-settings-configure-ios-shared.md) と [Apple の共有 iPad の要件](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56)についての詳細をご覧ください。
 
 9. このプロファイルを使用したデバイスを**コンピューターと同期**できるようにするかどうかを選択します。 **[証明書による Apple Configurator の許可]** を選択した場合は、**[Apple Configurator の証明書]** で証明書を選択する必要があります。
 
@@ -151,7 +153,7 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
 
 ## <a name="sync-managed-devices"></a>マネージド デバイスを同期する
 
-Intune に Apple School Manager デバイスを管理するアクセス許可を割り当てたので、Intune と Apple サービスを同期し、マネージド デバイスを Intune に表示できます。
+Intune に Apple School Manager デバイスを管理するためのアクセス許可を割り当てたら、Intune と Apple サービスを同期して、Intune でマネージド デバイスを表示させます。
 
 [Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]** の順に選択し、リスト内でトークンを選択し、**[デバイス]** > **[同期]** の順に選択します。![[Enrollment Program デバイス] ノードと [同期] リンクが選ばれているスクリーンショット。](./media/device-enrollment-program-enroll-ios/image06.png)
 
@@ -168,7 +170,7 @@ Intune によって管理される Apple School Manager デバイスを登録す
 
 1. [Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]** の順に選択し、リスト内でトークンを選択します。
 2. **[デバイス]** を選択し、リスト内でデバイスを選択し、**[プロファイルの割り当て]** を選択します。
-3. **[プロファイルの割り当て]** で、デバイス用のプロファイルを選択し、**[割り当て]** を選択します。
+3. **[プロファイルの割り当て]** の下でデバイス用のプロファイルを選択し、**[割り当て]** を選択します。
 
 ## <a name="distribute-devices-to-users"></a>デバイスをユーザーに配布する
 
