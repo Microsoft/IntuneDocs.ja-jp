@@ -153,9 +153,8 @@ Intune は、フル デバイス ワイプ、MDM の選択的ワイプ、およ�
 **オンプレミス サービスが Intune の保護対象アプリと連携しないのはなぜですか。**<br></br>
 Intune アプリ保護は、アプリケーションと Intune アプリ SDK の間で一貫性を保つためにユーザーの ID に依存しています。 これを保証する唯一の方法は、最新の認証を使用することです。 アプリをオンプレミス構成と連携させるシナリオはありますが、一貫性がなく保証されていません。
 
-
-  **管理対象アプリから Web リンクを開く安全な方法はありますか。**<br></br>
-はい、ご利用いただけます。 IT 管理者は、Microsoft Intune によって開発された、Intune で簡単に管理可能な Web ブラウザーである [Intune Managed Browser アプリ](app-configuration-managed-browser.md)のアプリ保護ポリシーを展開および設定することができます。 IT 管理者は、Intune 管理対象アプリ内のすべての Web リンクが Managed Browser アプリで開かれるように指定することができます。
+**管理対象アプリから Web リンクを開く安全な方法はありますか。**<br></br>
+はい、ご利用いただけます。 IT 管理者は、Microsoft Intune によって開発された、Intune で簡単に管理可能な Web ブラウザーである [Intune Managed Browser アプリ](app-configuration-managed-browser.md) のアプリ保護ポリシーを展開および設定することができます。 IT 管理者は、Intune 管理対象アプリ内のすべての Web リンクが Managed Browser アプリで開かれるように指定することができます。
 
 **Intune APP SDK は、Microsoft 認証ライブラリ (MSAL) またはソーシャル アカウントをサポートしますか**
 Intune APP SDK は、ファーストパーティとサードパーティの両方のバージョンの SDK でいくつかの高度な ADAL 機能を使用します。 そのため、MSAL は、Intune アプリ保護サービスへの認証や条件付き起動などの主要なシナリオの多くで正常に機能しません。 現在サポートする計画はありません。
