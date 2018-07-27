@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: f2018b5a1ca2a6981b04951bcf8ecd8819eb47e2
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 1d56312fdf0e81406587caf352feafd745bd4353
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039422"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212071"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -133,7 +133,7 @@ Intune では、Google ブランドの変更を反映するように "Android fo
 #### <a name="rules-for-removing-devices----1609459---"></a>デバイス削除のルール <!-- 1609459 -->
 設定した日数の間チェックインしていないデバイスを自動的に削除する新しいルールを使用できます。 新しいルールを表示するには、**[Intune]** ウィンドウ、**[デバイス]**、**[デバイスのクリーンアップ ルール]** の順に選択します。
 
-#### <a name="corporate-owned-single-cosu-use-support-for-android-devices----1630973---"></a>Android デバイスの会社所有、単一使用 (COSU) のサポート <!-- 1630973 -->
+#### <a name="corporate-owned-single-use-support-for-android-devices----1630973---"></a>Android デバイスの会社所有、単一使用のサポート <!-- 1630973 -->
 
 Intune は、高度に管理されてロック ダウンされた、キオスク スタイルの Android デバイスをサポートするようになりました。 これにより、管理者は、デバイスの使用を 1 つのアプリまたはアプリの小さなセットにさらにロックダウンし、ユーザーが他のアプリを有効にしたり、デバイスで他の操作を実行したりすることを禁止できます。 Android キオスクを設定するには、Intune > **[デバイスの登録]** > **[Android の登録]** > **[Kiosk and task device enrollments]\(キオスクおよびタスク デバイス登録\)** の順に進みます。 詳細については、[Android エンタープライズ キオスク デバイスの登録の設定](android-kiosk-enroll.md)に関するページを参照してください。
 
@@ -1101,7 +1101,7 @@ Intune では、2017 年 1 月以降に作成された Intune アカウントに
 
 ### <a name="new-user-experience-update-for-the-company-portal-website---2000968--"></a>ポータル Web サイトの新しいユーザー エクスペリエンスの更新<!--2000968-->
 
-UI を更新し、ワークフローの簡素化とユーザー補助機能を改善した、新しいポータル Web サイトのエクスペリエンスを 8 月から導入します。 これには、アプリ共有などのお客様の要望に基づいた機能拡張や、よりユーザー フレンドリなエクスペリエンスを提供するための全体的なパフォーマンスの向上などが含まれます。
+UI の更新、ワークフローの簡素化、ユーザー補助機能の改善を備えた新しいポータル Web サイトのエクスペリエンスを、8 月から導入します。 これには、アプリ共有などのお客様の要望に基づいた機能拡張や、よりユーザー フレンドリなエクスペリエンスを提供するための全体的なパフォーマンスの向上などが含まれます。
 お客様からのフィードバックに基づいて、既存の機能と使いやすさを大幅に向上させる新しい機能もいくつか追加されています。
 
 * Web サイト全体の UI の機能強化
