@@ -15,12 +15,12 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 180988f296894c285b078f6906c4e77b832006f9
-ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
+ms.openlocfilehash: 2b3965c651bb6fcc38d61a55208fc8b199223891
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840276"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212122"
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Apple Configurator による iOS デバイスの登録
 
@@ -135,7 +135,7 @@ iOS デバイスを Apple Configurator で直接登録する場合は、デバ�
 ### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>プロファイルを .mobileconfig として iOS デバイスにエクスポートする
 
 1. [Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Apple Configurator]** > **[プロファイル]** の順に選択し、エクスポートするプロファイルを選択し、**[プロファイルのエクスポート]** を選択します。
-2. **[直接登録]** で、**[プロファイルのダウンロード]** を選択して、ファイルを保存します。
+2. **[直接登録]** で、**[プロファイルのダウンロード]** を選択して、ファイルを保存します。 登録プロファイルのファイルは 2 週間のみ有効で、これを過ぎると再作成が必要です。
 3. [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) を実行している Mac コンピューターにファイルを転送し、管理プロファイルとして iOS デバイスに直接プッシュします。
 4. 次の手順に従って、Apple Configurator を使用してデバイスを準備します。
     1. Mac コンピューターで Apple Configurator 2.0 を開きます。

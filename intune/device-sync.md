@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb609f0d99378e2e30b3c3a4f769781448aea1b5
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 30b4cf585edd7153ee01710ce8c572593056454f
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833367"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117873"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>デバイスを Intune と同期して最新のポリシーとアクションを取得する
 
@@ -43,6 +43,7 @@ ms.locfileid: "31833367"
 4. 管理するデバイスの一覧で、デバイスを選択して、**[詳細]**、**[同期]** の順に選択します。
 5. 確定するには、**[はい]** を選択します。
 
+同期操作の状態を表示するには、**[デバイス]** > **[デバイス アクション]** の順に選択します。
 
 ## <a name="retryable-error-codes"></a>再試行可能なエラー コード
 
@@ -65,4 +66,5 @@ ms.locfileid: "31833367"
 
 ## <a name="next-steps"></a>次の手順
 
-- 同期操作の状態を表示するには、**[デバイス アクション]** を選択します。 
+デバイスの[詳細を確認する](device-inventory.md)ことができます。
+ 

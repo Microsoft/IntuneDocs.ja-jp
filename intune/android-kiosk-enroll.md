@@ -15,18 +15,18 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd6aee30a88906c3f6ae078e338732589d88a5f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: d5a223834eed1b0174c56b5e33ad2140203073d0
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909135"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212037"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Android エンタープライズ キオスク デバイスの登録の設定
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android は、COSU (企業所有、単一用途) ソリューションが設定されたキオスク スタイルのデバイスに対応しています。 そのようなデバイスは、デジタル サイネージ、チケット印刷、在庫管理など、1 つの目的のために使用されます。 管理者はデバイスの使用を厳しく管理し、限られたアプリと Web リンクのみ許可します。 また、ユーザーがデバイスに他のアプリを追加したり、他の操作を行ったりできないようになっています。
+Android は、企業所有、単一用途のソリューションが設定されたキオスク スタイルのデバイスに対応しています。 そのようなデバイスは、デジタル サイネージ、チケット印刷、在庫管理など、1 つの目的のために使用されます。 管理者はデバイスの使用を厳しく管理し、限られたアプリと Web リンクのみ許可します。 また、ユーザーがデバイスに他のアプリを追加したり、他の操作を行ったりできないようになっています。
 
 Intune では、Android キオスク デバイスにアプリや設定を展開できます。 Android エンタープライズに関する特定の詳細については、「[Android enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012)」 (Android エンタープライズの要件) を参照してください。
 

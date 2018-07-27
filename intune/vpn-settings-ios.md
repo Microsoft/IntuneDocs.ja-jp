@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/16/2018
+ms.date: 7/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 05d93f1518427201d9d96dbc22c772967fe4fa0f
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: d35c9e32b7a0720d5d84a93a7edde6f2bd51911f
+ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744569"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39146630"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>iOS を実行するデバイス用に Microsoft Intune で VPN 設定を構成する
 
@@ -63,10 +63,10 @@ ms.locfileid: "34744569"
 - **[VPN 識別子]**: これは使用している VPN アプリの識別子であり、VPN プロバイダーから提供されます。
 - **[カスタム VPN 属性に対してキーと値を入力します]**: VPN 接続をカスタマイズする**キー**と**値**を追加またはインポートします。 これらの値も、通常は VPN プロバイダーから提供されます。
 
-## <a name="apps-per-app-vpn-settings"></a>アプリ (アプリごとの VPN) 設定
+## <a name="automatic-vpn-settings"></a>自動 VPN 設定
 
-- **[アプリごとの VPN]**: Safari ブラウザーからのアクセス時に VPN 接続を有効にする URL を使用するには、このオプションを有効にします。 アプリごとの VPN を構成するには、基本 VPN 設定の認証方法として **[証明書]** を選択する必要があります。
-  - **[この VPN をトリガーする Safari URL]**: Web サイトの URL を追加する場合に選択します。 これらの URL にアクセスすると、VPN 接続が有効になります。
+- **[アプリごとの VPN]**: このオプションを選択すると、アプリごとの VPN が有効になり、特定のアプリが開いたときに自動的に VPN 接続がトリガされるようにできます。 このオプションを選択するだけでなく、アプリをこの VPN プロファイルに関連付ける必要があります。 詳細については、[iOS のアプリごとの VPN の設定手順](vpn-setting-configure-per-app.md)に関するページを参照してください。 
+  - **[この VPN をトリガーする Safari URL]**: Web サイトの URL を追加する場合に選択します。 これらの URL にデバイスの Safari ブラウザーを使用してアクセスすると、VPN 接続が自動的に確立されます。
 
 - **[オンデマンド VPN]**- VPN 接続が開始されるタイミングを制御する条件付き規則を構成します。 たとえば、デバイスが会社の Wi-Fi ネットワークに接続されていない場合にのみ VPN 接続を使用するというような条件を作成します。 または、指定した DNS 検索ドメインにデバイスがアクセスできない場合には VPN 接続を開始しないといった条件を作成します。
 

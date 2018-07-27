@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a12e0103f9eae08003d8cca6a5eb4699ced27a27
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2a2c5c60f22aca6a9c989281ef2c5cc9e0c66911
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015610"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117856"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>USB ケーブルを使用してログを会社のサポートに送信する
 
@@ -35,7 +35,7 @@ Android デバイスでポータル サイト アプリを使用している間�
 
 2. USB ケーブルを使って、デバイスをコンピューターに接続します。 通常、このケーブルは、コンセントでデバイスを充電するために使用するのと同じものです。
 
-3. コンピューター上で、デバイスの名前が付けられたディレクトリを探します。 そのディレクトリ内で、<strong>Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\</strong> を探します。
+3. コンピューター上で、デバイスの名前が付けられたディレクトリを探します。 そのディレクトリ内で、<strong>Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\\</strong> を探します。
 
 4. ファイルを選択して電子メールに添付します。 この電子メールを会社のサポートに送信します。
 
