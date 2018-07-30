@@ -35,9 +35,9 @@
   items:
     - name: Azure Portal での操作
       href: get-started-azure.md
-    - name: ユーザーの作成
+    - name: ユーザーを作成する
       href: get-started-users.md
-    - name: グループを作成する
+    - name: グループの作成
       href: get-started-groups.md
     - name: ポリシーの割り当て
       href: get-started-policies.md
@@ -93,7 +93,7 @@
           href: planning-guide-support-plan.md
         - name: 設計
           href: planning-guide-design.md
-        - name: 変更の
+        - name: 実装
           href: planning-guide-onboarding.md
         - name: テストと検証
           href: planning-guide-test-validation.md
@@ -130,7 +130,7 @@
         - name: サポートされている構成
           href: supported-devices-browsers.md
           items:
-            - name: ネットワークの構成
+            - name: ネットワーク構成
               href: network-bandwidth-use.md
         - name: Intune にサインインする
           href: account-sign-up.md
@@ -152,9 +152,9 @@
         - name: 登録オプション
           href: enrollment-options.md
           items:
-            - name: Terms and conditions
+            - name: Intune の登録および会社アクセスに関する使用条件
               href: terms-and-conditions-create.md
-            - name: 制限事項
+            - name: 制限
               href: enrollment-restrictions-set.md
             - name: Apple MDM プッシュ通知証明書
               href: apple-mdm-push-certificate-get.md
@@ -301,7 +301,7 @@
               href: app-configuration-policies-use-ios.md
             - name: Android マネージド デバイス
               href: app-configuration-policies-use-android.md
-            - name: 管理対象のアプリ
+            - name: Managed apps
               href: app-configuration-policies-managed-app.md
             - name: iOS アプリ プロビジョニング プロファイルを使用する
               href: app-provisioning-profile-ios.md
@@ -379,7 +379,7 @@
               href: device-restrictions-macos.md
             - name: Windows 8.1
               href: device-restrictions-windows-8-1.md
-            - name: Windows Phone 8.1
+            - name: Windows Phone 8。1
               href: device-restrictions-windows-phone-8-1.md
             - name: Windows 10
               href: device-restrictions-windows-10.md
@@ -396,12 +396,12 @@
               href: endpoint-protection-macos.md
             - name: Windows 10
               href: endpoint-protection-windows-10.md
-        - name: キオスクの設定を構成する
-          href: kiosk-settings.md
-        - name: Android のキオスクの設定を構成する
+        - name: Android キオスクの設定
           href: android-kiosk-settings.md
         - name: Android エンタープライズ キオスクの設定
           href: android-enterprise-settings.md
+        - name: Windows 10 キオスクの設定
+          href: kiosk-settings.md
         - name: 電子メールの設定を構成する
           href: email-settings-configure.md
           items:
@@ -409,7 +409,7 @@
               href: email-settings-android.md
             - name: iOS
               href: email-settings-ios.md
-            - name: Windows Phone 8.1
+            - name: Windows Phone 8。1
               href: email-settings-windows-phone-8-1.md
             - name: Windows 10
               href: email-settings-windows-10.md
@@ -426,7 +426,7 @@
               href: vpn-settings-macos.md
             - name: Windows 8.1
               href: vpn-settings-windows-8-1.md
-            - name: Windows Phone 8.1
+            - name: Windows Phone 8。1
               href: vpn-settings-windows-phone-8-1.md
             - name: Windows 10
               href: vpn-settings-windows-10.md
@@ -439,7 +439,9 @@
               href: wi-fi-settings-ios.md
             - name: macOS
               href: wi-fi-settings-macos.md
-            - name: Windows 8.1 および Windows 10
+            - name: Windows 10
+              href: wi-fi-settings-windows.md
+            - name: Windows 8.1
               href: wi-fi-settings-import-windows-8-1.md
         - name: 教育
           items:
@@ -458,6 +460,10 @@
               href: certificates-scep-configure.md
             - name: PKCS
               href: certficates-pfx-configure.md
+            - name: S/MIME を使用して電子メールを暗号化する
+              href: certificates-s-mime-encryption-sign.md
+            - name: SCEP でサード パーティの証明機関を使用する
+              href: certificate-authority-add-scep-overview.md
             - name: Symantec PKI Manager Web サービス
               href: certificates-symantec-configure.md
         - name: Windows Information Protection 設定を構成する
@@ -700,7 +706,7 @@
               href: custom-settings-ios.md
             - name: macOS
               href: custom-settings-macos.md
-            - name: Windows Phone 8.1
+            - name: Windows Phone 8。1
               href: custom-settings-windows-phone-8-1.md
             - name: Windows 10
               href: custom-settings-windows-10.md
@@ -710,6 +716,8 @@
               href: custom-settings-android-for-work.md
 - name: 開発者ガイド
   items:
+    - name: サード パーティの証明機関を追加するための API
+      href: scep-libraries-apis.md
     - name: Intune App SDK によるアプリの保護
       href: app-sdk.md
       items:
