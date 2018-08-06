@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 30f2bea4589e31f3012df1bd06e6327b923ec5d1
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 3da8a3f13e592483513daf81bc5ff1ad8af0f7e6
+ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225444"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39268908"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune のデバイス コンプライアンス ポリシーの概要
 
@@ -167,7 +167,7 @@ Remember that you need to implement conditional access policies in addition to c
   この設定を有効にするには、デバイスで以下の操作が必要です。
   - OS レベルで位置情報サービスを有効にする
   - ポータル サイトで位置情報サービスを使用できるようにする
-  - 72 時間ごとに 1 回以上、脱獄状態を評価して Intune にレポートする それ以外の場合、デバイスは非準拠とマークされます。
+  - 72 時間ごとに 1 回以上、脱獄状態を評価して Intune にレポートする それ以外の場合、デバイスは非準拠とマークされます。 ポータル サイト アプリを開くか、デバイスを 500 メートル以上物理的に移動すると、評価がトリガーされます。
 
 - **[コンプライアンス状態の有効期間 (日)]**: デバイスが受け取ったすべてのコンプライアンス ポリシーの状態をレポートする期間を入力します。 この期間内に状態を返さないデバイスは非準拠として扱われます。 既定値は 30 日です。
 

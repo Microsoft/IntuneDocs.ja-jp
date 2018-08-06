@@ -15,12 +15,12 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f907272f74886612eba9b5b28118f298caa2f36d
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 644d5966f653e4b98e6a5e8c507dd5e7399ff9cd
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223907"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321120"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Windows の基幹業務アプリを Microsoft Intune に追加する
 
@@ -40,7 +40,11 @@ ms.locfileid: "34223907"
 ## <a name="step-2-configure-the-app-package-file"></a>手順 2: アプリのパッケージ ファイルを構成する
 
 1. **[アプリの追加]** ウィンドウで、**[アプリのパッケージ ファイル]** を選択します。
-2. **[アプリのパッケージ ファイル]** ウィンドウで、参照ボタンを選択します。 次に、拡張子が **.msi**、**.appx**、または **.appxbundle** の Windows インストール ファイルを選択します。
+2. **[アプリのパッケージ ファイル]** ウィンドウで、参照ボタンを選択します。 次に、拡張子が **.msi**、**.appx**、**.appxbundle**、**.msix**、または **.msixbundle** の Windows インストール ファイルを選択します。
+
+    > [!NOTE]
+    > Windows アプリのファイル拡張子には、**.msi**、**.appx**、**.appxbundle**、**.msix**、**.msixbundle** が含まれます。  
+
 3. 完了したら **[OK]** を選択します。
 
 

@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/23/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a4bbc89f66b49fe6a5c4ff8595c5913583288e0f
-ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
+ms.openlocfilehash: 42e0798b0c2941d9ea45e75b367b69bc7dab548f
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34803841"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321222"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune での Windows 10 (以降) の設定に対するデバイスの制限
 この記事では、Windows 10 を実行するデバイスに構成できるすべての Microsoft Intune デバイスの制限設定について説明します。
@@ -252,7 +252,7 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 
 ## <a name="kiosk-preview---obsolete"></a>キオスク (プレビュー) - 廃止
 
-これらの設定は移動され、今後のリリースで削除されます。 新しい設定を使用するには、「[Intune での Windows 10 (以降) 用のキオスクの設定](kiosk-settings.md)」を参照してください。
+これらの設定は読み取り専用であり、変更することはできません。 キオスク モードを構成する場合は、[Windows 10 以降用のキオスクの設定](kiosk-settings.md)に関するページを参照してください。
 
 キオスク デバイスは通常、1 つのアプリまたは特定のアプリのセットを実行します。 ユーザーは、キオスク アプリ以外のデバイスの機能にアクセスすることはできません。
 

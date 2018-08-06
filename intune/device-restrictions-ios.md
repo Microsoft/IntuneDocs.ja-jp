@@ -6,19 +6,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 7/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2987ca7ce3a9b99249fc62fc7de5c9cca22b0b26
-ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
+ms.openlocfilehash: cee92ff36e2a199cd6cb8cf3cd5e0e839bc81584
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34803824"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321494"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune での iOS デバイスの制限設定
 
@@ -185,8 +185,8 @@ iOS 監視モードは、Apple の Device Enrollment Program または Apple Con
 
 "アプリの表示/非表示" の一覧では、次のいずれかの一覧を構成できます (iOS 9.3 以降を実行している監視対象のデバイスが必要です)。
 
-**[非表示のアプリ]** の一覧 - ユーザーに表示されないアプリの一覧を指定します。 ユーザーはこのようなアプリを表示または起動できません。
-**[表示するアプリ]** の一覧 - ユーザーが表示および起動できるアプリの一覧を指定します。 他のアプリは表示または起動できません。
+- **[非表示のアプリ]** の一覧 - ユーザーに表示されないアプリの一覧を指定します。 ユーザーはこのようなアプリを表示または起動できません。
+- **[表示するアプリ]** の一覧 - ユーザーが表示および起動できるアプリの一覧を指定します。 他のアプリは表示または起動できません。
 
 この一覧を構成するには、**[追加]** をクリックし、任意の名前、アプリの発行元 (省略可能)、アプリ ストアでのアプリの URL を指定します。
 
@@ -266,55 +266,8 @@ iOS 監視モードは、Apple の Device Enrollment Program または Apple Con
 - **[インポート]** - アプリ名とそれに関連付けられているバンドル ID の一覧を含むコンマ区切り値 (.csv) ファイルをインポートします。
 - **[エクスポート]** - 構成したアプリ名とそれに関連付けられているバンドル ID を、コンマ区切り値 (.csv) ファイルにエクスポートします。
 
-### <a name="bundle-id-reference-for-built-in-ios-apps"></a>組み込み iOS アプリのバンドル ID リファレンス
-
-この一覧は、一般的な組み込み iOS アプリのバンドル ID を示しています。 他のアプリのバンドル ID を調べるには、ソフトウェア ベンダーにお問い合わせください。
-
-```
-,com.apple.AppStore,App Store,Apple
-,com.apple.calculator,Calculator,Apple
-,com.apple.mobilecal,Calendar,Apple
-,com.apple.camera,Camera,Apple
-,com.apple.mobiletimer,Clock,Apple
-,com.apple.compass,Compass,Apple
-,com.apple.MobileAddressBook,Contacts,Apple
-,com.apple.facetime,FaceTime,Apple
-,com.apple.mobileme.fmf1,Find Friends,Apple
-,com.apple.mobileme.fmip1,Find iPhone,Apple
-,com.apple.gamecenter,Game Center,Apple
-,com.apple.mobilegarageband,GarageBand,Apple
-,com.apple.Health,Health,Apple
-,com.apple.iBooks,iBooks,Apple
-,com.apple.MobileStore,iTunes Store,Apple
-,com.apple.itunesu,iTunes U,Apple
-,com.apple.Keynote,Keynote,Apple
-,com.apple.mobilemail,Mail,Apple
-,com.apple.MapsMaps,Apple
-,com.apple.MobileSMS,Messages,Apple
-,com.apple.Music,Music,Apple
-,com.apple.news,News,Apple
-,com.apple.mobilenotes,Notes,Apple
-,com.apple.Numbers,Numbers,Apple
-,com.apple.Pages,Pages,Apple
-,com.apple.Photo-Booth,Photo Booth,Apple
-,com.apple.mobileslideshow,Photos,Apple
-,com.apple.podcasts,Podcasts,Apple
-,com.apple.reminders,Reminders,Apple
-,com.apple.MobileSafari,Safari,Apple
-,com.apple.Preferences,Settings,Apple
-,com.apple.stocks,Stocks,Apple
-,com.apple.tips,Tips,Apple
-,com.apple.videos,Videos,Apple
-,com.apple.VoiceMemos,VoiceMemos,Apple
-,com.apple.Passbook,Wallet,Apple
-,com.apple.Bridge,Watch,Apple
-,com.apple.weather,Weather,Apple
-```
-
-
 ## <a name="kiosk-supervised-only"></a>キオスク (監視モードのみ)
--   
-  **[キオスク モードで実行されるアプリ]** - **[管理対象アプリ]** を選択して Intune に追加したアプリケーションを選択するか、**[ストア アプリ]** を選択してストア内のアプリの URL を指定します。 他のアプリはデバイスでの実行が許可されません。 詳細については、このトピックで後述する「アプリ ストアの URL を指定する方法」を参照してください。
+-   **[キオスク モードで実行されるアプリ]** - **[管理対象アプリ]** を選択して Intune に追加したアプリケーションを選択するか、**[ストア アプリ]** を選択してストア内のアプリの URL を指定するか、**[組み込みアプリ]** を選択して組み込みアプリのバンドル ID を指定します。 詳細については、「[組み込み iOS アプリのバンドル ID リファレンス](device-restrictions-ios.md#bundle-id-reference-for-built-in-ios-apps)」と「[How to specify the URL to an app in the store](device-restrictions-ios.md#how-to-specify-the-url-to-an-app-in-the-store-1)」(ストアでアプリの URL を指定する方法) を参照してください。
     -   **[Assistive touch]** - ユーザー補助の設定の **[Assistive Touch]** を有効または無効にします。Assistive Touch は、ユーザーが実行しにくい可能性のある画面の操作を実行します。
     -   **[色の反転]** - 視覚障碍を持つユーザーを支援するためにディスプレイを調整するユーザー補助の設定 [色の反転] を有効または無効にします。
     -   **[モノ オーディオ]** - ユーザー補助の設定の [モノ オーディオ] を有効または無効にします。
@@ -335,6 +288,51 @@ iOS 監視モードは、Apple の Device Enrollment Program または Apple Con
 >[!NOTE]
 > iOS デバイスをキオスク モードに構成する前に、Apple Configurator ツールまたは Apple デバイス登録プログラムを使用して、デバイスを監視下モードにする必要があります。 Apple Configurator ツールの詳細については、Apple のドキュメントを参照してください。
 >プロファイルの割り当て後に、指定した iOS のアプリがインストールされる場合、デバイスは再起動後にキオスク モードになります。
+
+## <a name="bundle-id-reference-for-built-in-ios-apps"></a>組み込み iOS アプリのバンドル ID リファレンス
+
+この一覧は、一般的な組み込み iOS アプリのバンドル ID を示しています。 他のアプリのバンドル ID を調べるには、ソフトウェア ベンダーにお問い合わせください。
+
+| バンドル ID                   | アプリ名     | 発行者 |
+|-----------------------------|--------------|-----------|
+| com.apple.AppStore          | アプリ ストア    | Apple     |
+| com.apple.calculator        | 計算機   | Apple     |
+| com.apple.mobilecal         | 予定表     | Apple     |
+| com.apple.camera            | カメラ       | Apple     |
+| com.apple.mobiletimer       | 時計        | Apple     |
+| com.apple.compass           | コンパス      | Apple     |
+| com.apple.MobileAddressBook | 連絡先     | Apple     |
+| com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.mobileme.fmf1     | 友達を探す | Apple     |
+| com.apple.mobileme.fmip1    | Find iPhone  | Apple     |
+| com.apple.gamecenter        | Game Center  | Apple     |
+| com.apple.mobilegarageband  | GarageBand   | Apple     |
+| com.apple.Health            | 正常性       | Apple     |
+| com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.MobileStore       | iTunes Store | Apple     |
+| com.apple.itunesu           | iTunes U     | Apple     |
+| com.apple.Keynote           | Keynote      | Apple     |
+| com.apple.mobilemail        | メール         | Apple     |
+| com.apple.MapsMaps          |              | Apple     |
+| com.apple.MobileSMS         | メッセージ     | Apple     |
+| com.apple.Music             | ミュージック        | Apple     |
+| com.apple.news              | News         | Apple     |
+| com.apple.mobilenotes       | 注        | Apple     |
+| com.apple.Numbers           | 数字      | Apple     |
+| com.apple.Pages             | ページ        | Apple     |
+| com.apple.Photo-Booth       | Photo Booth  | Apple     |
+| com.apple.mobileslideshow   | 写真       | Apple     |
+| com.apple.podcasts          | Podcast     | Apple     |
+| com.apple.reminders         | リマインダー    | Apple     |
+| com.apple.MobileSafari      | Safari       | Apple     |
+| com.apple.Preferences       | Settings     | Apple     |
+| com.apple.stocks            | 株価       | Apple     |
+| com.apple.tips              | ヒント         | Apple     |
+| com.apple.videos            | ビデオ       | Apple     |
+| com.apple.VoiceMemos        | VoiceMemos   | Apple     |
+| com.apple.Passbook          | Wallet       | Apple     |
+| com.apple.Bridge            | 視聴する        | Apple     |
+| com.apple.weather           | 天気      | Apple     |
 
 ## <a name="safari"></a>Safari
 -   **[Safari (監視下のみ)]** - Safari ブラウザーをデバイスで使用できるかどうかを指定します。

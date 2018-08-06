@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69ea07e8d0a5d4a54abe7d1e592b3930d4e82354
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 26d5af15086e422685c7c58c5b8a7d351f9eb854
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31830218"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321392"
 ---
 # <a name="microsoft-intune-macos-device-restriction-settings"></a>Microsoft Intune での macOS デバイスの制限設定
 
@@ -41,7 +41,8 @@ ms.locfileid: "31830218"
 
 制限付きアプリの一覧では、次の一覧のいずれかを構成できます。
 
-- **[禁止されているアプリ]** の一覧 - ユーザーによるインストールと実行が許可されていないアプリ (Intune で管理されていない) アプリを一覧表示します。 ユーザーは禁止されたアプリもインストールできますが、インストールした場合、そのことが報告されます。
+- 
+  **[禁止されているアプリ]** の一覧 - ユーザーによるインストールと実行が許可されていないアプリ (Intune で管理されていない) アプリを一覧表示します。 ユーザーは禁止されたアプリもインストールできますが、インストールした場合、そのことが報告されます。
 - **[承認済みアプリ]** の一覧 - ユーザーによるインストールが許可されているアプリを一覧表示します。 ユーザーは一覧表示されていないアプリをインストールできません。 管理対象アプリは Intune で自動的に許可されます。 ユーザーは承認済みリストにないアプリもインストールできますが、インストールした場合、そのことが報告されます。
 
 一覧を構成するには、**[追加]** をクリックし、任意の名前、アプリの発行元 (省略可能)、アプリのバンドル ID (例: *com.apple.calculator*) を指定します。
@@ -50,5 +51,5 @@ ms.locfileid: "31830218"
 
 ### <a name="unmarked-email-domains"></a>マークされていないメール ドメイン
 
-**[メール ドメイン URL]** フィールドで、1 つ以上の URL を一覧に追加します。 構成したドメイン以外のドメインからのメールをユーザーが受信すると、そのメールは iOS のメール アプリで信頼されていないメールとしてマークされます。
+**[メール ドメイン URL]** フィールドで、1 つ以上の URL を一覧に追加します。 構成したドメイン以外のドメインからのメールをユーザーが受信すると、そのメールは macOS のメール アプリで信頼されていないメールとしてマークされます。
 

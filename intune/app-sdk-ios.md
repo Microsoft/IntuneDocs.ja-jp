@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 2effa1d63be57c938a4e5763090bce8f20f48192
-ms.sourcegitcommit: 81721ad672096298bf281dcbf21e8ce9c44cafaa
+ms.openlocfilehash: f0c35caf841729aae8ce6ccdbf1c9709258a8f5b
+ms.sourcegitcommit: 2e08887c07d29979300e80e6a40372aec6287103
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042805"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39249728"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS 用 Microsoft Intune App SDK 開発者ガイド
 
@@ -40,7 +40,7 @@ iOS 用 Microsoft Intune App SDK を使用すると、ネイティブ iOS アプ
 
 ## <a name="whats-in-the-sdk"></a>SDK の機能
 
-iOS 用 Intune App SDK には、スタティック ライブラリ、リソース ファイル、API ヘッダー、デバッグ設定 plist ファイルおよび構成ツールが含まれています。 ほとんどのポリシー適用では、モバイル アプリに単にリソース ファイルを含め、ライブラリに静的にリンクできます。 高度な Intune MAM 機能は、API を介して適用されます。
+iOS 用 Intune App SDK には、スタティック ライブラリ、リソース ファイル、API ヘッダー、デバッグ設定 plist ファイルおよび構成ツールが含まれています。 ほとんどのポリシー適用では、モバイル アプリに単にリソース ファイルを含め、ライブラリに静的にリンクできます。 高度な Intune APP 機能は、API を介して適用されます。
 
 このガイドでは、iOS 用 Intune App SDK の次のコンポーネントの使用方法について説明します。
 
@@ -140,7 +140,7 @@ Intune アプリ SDK を有効にするには、次の手順を実行します�
            * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
       > [!NOTE]
-      > 権利ファイルとは、モバイル アプリケーションに固有の XML ファイルです。 iOS アプリで特別なアクセス許可と機能を指定するために使用されます。 お使いのアプリにあらかじめ権利ファイルが無かった場合、キーチェーンの共有 (手順 3) を有効にすると Xcode によってアプリ用に権利ファイルが生成されます。
+      > 権利ファイルとは、自分のモバイル アプリケーションに固有の XML ファイルです。 iOS アプリで特別なアクセス許可と機能を指定するために使用されます。 お使いのアプリにあらかじめ権利ファイルが無かった場合、キーチェーンの共有 (手順 3) を有効にすると Xcode によってアプリ用に権利ファイルが生成されます。
 
 5. アプリが `UIApplication canOpenURL` に渡す各プロトコルを、アプリの Info.plist ファイルの `LSApplicationQueriesSchemes` 配列に含めます。 次の手順に進む前に、変更内容を必ず保存してください。
 
@@ -163,9 +163,7 @@ Intune App SDK は、認証と条件に基づく起動シナリオに [Azure Act
 
 通常、ADAL では、アプリに付与されるトークンのセキュリティを保証するために、アプリを Azure Active Directory (AAD) に登録し、一意の ID (クライアント ID) と他の識別子を取得する必要があります。 Intune App SDK では、指定していない限り、Azure AD に接続するときに既定の登録値が使用されます。  
 
-アプリでユーザーの認証に ADAL が使用している場合、アプリではその既存登録値を利用し、Intune App SDK 既定値をオーバーライドする必要があります。 これにより、ユーザーに認証が 2 回 (Intune アプリ SDK で 1 回、アプリで 1 回) 求められることがなくなります。
-
-### <a name="recommendations"></a>推奨事項
+アプリでユーザーの認証に ADAL が使用している場合、アプリではその既存登録値を利用し、Intune App SDK 既定値をオーバーライドする必要があります。 これにより、ユーザーに認証が 2 回 (Intune App SDK で 1 回、アプリで 1 回) 求められることがなくなります。
 
 アプリからは、マスター ブランチ上の[最新バージョンの ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases) にリンクすることをお勧めします。 現在、Intune App SDK は、条件付きアクセスを必要とするアプリをサポートするために、ADAL のブローカー ブランチを使用しています。 (したがって、このようなアプリは Microsoft Authenticator アプリに依存します。)ただし、SDK には ADAL のマスター ブランチとの互換性もまだあります。 アプリに適合するブランチを使用してください。
 
@@ -177,21 +175,11 @@ Intune App SDK は、認証と条件に基づく起動シナリオに [Azure Act
 
 2. ADAL フレームワーク (オプション 1)、またはスタティック ライブラリ (オプション 2) をプロジェクトに追加します。
 
-    **オプション 1 (推奨)**: プロジェクト ターゲットの **[Embedded Binaries]\(埋め込みバイナリ\)** の一覧に、`ADAL.framework` をドラッグします。
+3. アプリでキーチェーン アクセス グループが定義されていない場合は、アプリのバンドル ID を最初のグループとして追加します。
 
-    **オプション 2**: プロジェクト ターゲットの **[Linked Frameworks and Libraries]\(リンク先フレームワークおよびライブラリ\)** の一覧に、`libADALiOS.a` ライブラリをドラッグします。 `-force_load {PATH_TO_LIB}/libADALiOS.a` をプロジェクトの `OTHER_LDFLAGS` ビルド構成設定、または Xcode UI の **[Other Linker Flags]\(その他のリンカー フラグ\)** に追加します。 `PATH_TO_LIB` は、ADAL バイナリの場所に置き換える必要があります。
+4. `com.microsoft.adalcache` と `com.microsoft.workplacejoin` をキーチェーン アクセス グループに追加することによって、ADAL シングル サインオン (SSO) を有効にします。
 
-
-
-### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>同じプロビジョニング プロファイルを使用して署名されている他のアプリと ADAL トークン キャッシュを共有しますか?
-
-同じプロビジョニング プロファイルで署名されたアプリ間で ADAL トークンを共有する場合、以下の手順を実行します。
-
-1. アプリでキーチェーン アクセス グループが定義されていない場合は、アプリのバンドル ID を最初のグループとして追加します。
-
-2. `com.microsoft.adalcache` をキーチェーン アクセス グループに追加することによって、ADAL シングル サインオン (SSO) を有効にします。
-
-3. カスタム キーチェーン グループを指定して `com.microsoft.adalcache` を置き換える場合は、Info.plist ファイルの IntuneMAMSettings でキー `ADALCacheKeychainGroupOverride` を使用して指定します。
+5. ADAL 共有キャッシュ キーチェーン グループを明示的に設定している場合は、`<appidprefix>.com.microsoft.adalcache` に設定されていることを確認します。 オーバーライドしない限り ADAL はこれを自動的に設定します。 カスタム キーチェーン グループを指定して `com.microsoft.adalcache` を置き換える場合は、Info.plist ファイルの IntuneMAMSettings でキー `ADALCacheKeychainGroupOverride` を使用して指定します。
 
 ### <a name="configure-adal-settings-for-the-intune-app-sdk"></a>Intune App SDK の ADAL 設定を構成する
 
@@ -221,9 +209,45 @@ Intune App SDK は、認証と条件に基づく起動シナリオに [Azure Act
 
 アプリで ADAL を使用していない場合、Intune アプリ SDK が ADAL パラメーターの既定値を提供し、Azure AD に対する認証を処理します。 上記の ADAL 設定の値は指定する必要がありません。
 
-## <a name="receiving-app-protection-policy"></a>アプリ保護ポリシーの受信
+## <a name="configure-settings-for-the-intune-app-sdk"></a>Intune App SDK の設定を構成する
+
+アプリケーションの Info.plist ファイルの **IntuneMAMSettings** ディクショナリを使用し、Intune App SDK をセットアップして構成することができます。 IntuneMAMSettings ディクショナリが Info.plist ファイルに表示されない場合は、作成する必要があります。
+
+IntuneMAMSettings ディクショナリの下に、次のサポートされる設定を使用して Intune App SDK を構成することができます。
+
+これらの設定の一部は前のセクションで説明しています。一部の設定はすべてのアプリには適用されません。
+
+Setting  | Type  | 定義 | 必須
+--       |  --   |   --       |  --
+ADALClientId  | 文字列型  | アプリの Azure AD クライアント識別子。 | アプリが ADAL を使用する場合に必要です。 |
+ADALAuthority | 文字列型 | 使用されているアプリの Azure AD 機関。 AAD アカウントが構成されている独自の環境を使用する必要があります。 | アプリが ADAL を使用する場合に必要です。 この値が存在しない場合は、Intune の既定値が使用されます。|
+ADALRedirectUri  | 文字列型  | アプリの Azure AD リダイレクト URI。 | アプリが ADAL を使用する場合は、ADALRedirectUri または ADALRedirectScheme が必要です。  |
+ADALRedirectScheme  | 文字列型  | アプリの Azure AD リダイレクト スキーム。 アプリケーションのリダイレクト URI が `scheme://bundle_id` 形式の場合は、ADALRedirectUri の代わりにこれを使用できます。 | アプリが ADAL を使用する場合は、ADALRedirectUri または ADALRedirectScheme が必要です。 |
+ADALLogOverrideDisabled | ブール型  | SDK がすべての ADAL ログ (アプリからの ADAL 呼び出しがある場合はこれを含む) をログ ファイルにルーティングするかどうかを指定します。 既定は [いいえ] です。 アプリで独自の ADAL ログ コールバックを設定する場合は [はい] に設定します。 | 任意。 |
+ADALCacheKeychainGroupOverride | 文字列型  | "com.microsoft.adalcache" の代わりに ADAL キャッシュに使用するキーチェーン グループを指定します。 これにはアプリ ID プレフィックスは含まれないことに注意してください。 実行時に指定された文字列の前に付加されます。 | 任意。 |
+AppGroupIdentifiers | 文字列配列  | アプリの権利 com.apple.security.application-groups セクションのアプリケーション グループの配列。 | アプリでアプリケーション グループを使用する場合は必須です。 |
+ContainingAppBundleId | 文字列型 | アプリケーションを含む拡張機能のバンドル ID を指定します。 | iOS の拡張機能に必要です。 |
+DebugSettingsEnabled| ブール型 | YES に設定すると、Settings バンドル内のテスト ポリシーを適用できます。 この設定を有効にしたままアプリケーションを出荷しては*なりません*。 | 任意。 既定値は [いいえ] です。|
+MainNibFile <br> MainNibFile~ipad  | 文字列型  | この設定には、アプリケーションのメイン nib ファイル名を含める必要があります。  | アプリケーションの Info.plist で MainNibFile が定義されている場合は必須です。 |
+MainStoryboardFile <br> MainStoryboardFile~ipad  | 文字列型  | この設定には、アプリケーションのメインのストーリーボードのファイル名を含める必要があります。 | アプリケーションの Info.plist で UIMainStoryboardFile が定義されている場合は必須です。 |
+MAMPolicyRequired| ブール型| アプリに Intune APP ポリシーがない場合、アプリの起動をブロックするかどうかを指定します。 既定は [いいえ] です。 <br><br> 注: MAMPolicyRequired を YES に設定した状態でアプリを App Store に送信することはできません。 | 任意。 既定値は [いいえ] です。|
+MAMPolicyWarnAbsent | ブール型| アプリに Intune APP ポリシーがない場合、アプリの起動時にユーザーに警告するかどうかを指定します。 <br><br> 注: ユーザーは警告を無視しても、ポリシーなしでアプリの使用が許可されます。 | 任意。 既定値は [いいえ] です。 |
+MultiIdentity | ブール型| アプリが複数 ID 対応かどうかを指定します。 | 任意。 既定値は [いいえ] です。 |
+SplashIconFile <br> SplashIconFile~ipad | 文字列型  | Intune スプラッシュ (起動) アイコン ファイルを指定します。 | 任意。 |
+SplashDuration | 数値 | アプリケーションの起動時に Intune 起動画面が表示される最短時間 (秒)。 既定値は 1.5 です。 | 任意。 |
+BackgroundColor| 文字列型| 起動画面と PIN 画面の背景色を指定します。 #XXXXXX の形式の 16 進 RGB 文字列を受け付けます。X には 0 ～ 9 または A ～ F を使用できます。 シャープ記号は省略してもかまいません。   | 任意。 既定値は明るい灰色です。 |
+ForegroundColor| 文字列型| テキストの色など、起動画面と PIN 画面の前景色を指定します。 #XXXXXX の形式の 16 進 RGB 文字列を受け付けます。X には 0 ～ 9 または A ～ F を使用できます。 シャープ記号は省略してもかまいません。  | 任意。 既定値は黒です。 |
+AccentColor | 文字列型| PIN 画面のアクセント カラーを指定します。ボタン テキストの色やボックスの強調表示色などです。 #XXXXXX の形式の 16 進 RGB 文字列を受け付けます。X には 0 ～ 9 または A ～ F を使用できます。 シャープ記号は省略してもかまいません。| 任意。 既定値はシステムの青です。 |
+MAMTelemetryDisabled| ブール型| SDK に製品利用統計情報データをバックエンドに送信させないかどうかを指定します。| 任意。 既定値は [いいえ] です。 |
+MAMTelemetryUsePPE | ブール型 | MAM SDK にデータを PPE テレメトリ バックエンドに送信させるかどうかを指定します。 テスト用テレメトリ データが顧客データと混ざらないように Intune ポリシーでアプリをテストするときに使用します。 | 任意。 既定値は [いいえ] です。 |
+MaxFileProtectionLevel | 文字列型 | 任意。 アプリがサポートできる `NSFileProtectionType` の最大値を指定できるようにします。 レベルがアプリケーションによりサポートされるレベルよりも高い場合、この値がサービスによって送信されたポリシーをオーバーライドします。 有効値は、`NSFileProtectionComplete`、`NSFileProtectionCompleteUnlessOpen`、`NSFileProtectionCompleteUntilFirstUserAuthentication`、`NSFileProtectionNone` です。|
+OpenInActionExtension | ブール型 | Open-In Action Extension を YES に設定します。 詳細については、「Sharing Data via UIActivityViewController」 (UIActivityViewController によるデータの共有) セクションを参照してください。 |
+WebViewHandledURLSchemes | 文字列の配列 | アプリの WebView で処理する URL スキームを指定します。 | リンクや JavaScript で URL を処理する WebView をアプリが使用する場合は、必須です。 |
+
+## <a name="receive-app-protection-policy"></a>アプリの保護ポリシーを受信する
 
 ### <a name="overview"></a>概要
+
 Intune アプリの保護ポリシーを受信するには、アプリで Intune MAM サービスの登録要求を開始する必要があります。 アプリは、デバイス登録の有無を問わず、アプリの保護ポリシーを受信するように Intune コンソールで構成できます。 登録のないアプリ保護ポリシー (**APP-WE** または MAM-WE とも呼ばれる) では、デバイスが Intune モバイル デバイス管理 (MDM) に登録されていなくても Intune でアプリを管理できます。 いずれの場合も、ポリシーを受信するには、Intune MAM サービスへの登録が必須となります。
 
 ### <a name="apps-that-use-adal"></a>ADAL を使用するアプリ
@@ -250,7 +274,7 @@ Intune アプリの保護ポリシーを受信するには、アプリで Intune
 
 ### <a name="apps-that-do-not-use-adal"></a>ADAL を使用していないアプリ
 
-ADAL を使用してユーザーをサインインしないアプリでも、API を呼び出して SDK にその認証を処理させることにより、Intune MAM サービスからアプリ保護ポリシーを受け取ることができます。 Azure AD でユーザーを認証していないが、データを保護するためにアプリ保護ポリシーを受け取る必要がある場合は、アプリでこの手法を利用してください。 たとえば、別の認証サービスがアプリのサインインに使用されている場合やアプリがサインインにまったく対応していない場合です。 これを行うには、アプリケーションは `IntuneMAMEnrollmentManager` インスタンスの `loginAndEnrollAccount` メソッドを呼び出す必要があります。
+ADAL を使用してユーザーをサインインしないアプリでも、API を呼び出して SDK にその認証を処理させることにより、Intune MAM サービスからアプリ保護ポリシーを受け取ることができます。 Azure AD でユーザーを認証していないが、データを保護するためにアプリ保護ポリシーを受け取る必要がある場合は、アプリでこの手法を利用してください。 たとえば、別の認証サービスがアプリのサインインに使用されている場合やアプリがサインインにまったく対応していない場合です。 これを行うには、アプリケーションは `IntuneMAMEnrollmentManager` インスタンスの `loginAndEnrollAccount` メソッドを呼び出すことができます。
 
 ```objc
 /**
@@ -273,6 +297,17 @@ ADAL を使用してユーザーをサインインしないアプリでも、API
 [[IntuneMAMEnrollmentManager instance] loginAndEnrollAccount:@”user@foo.com”];
 ```
 
+### <a name="let-intune-handle-authentication-and-enrollment-at-launch"></a>Intune で起動時に認証と登録を処理できるようにする
+
+Intune SDK でアプリの起動が完了する前に ADAL を使用するすべての認証と登録を処理する必要があり、アプリで常に APP ポリシーが必要な場合、`loginAndEnrollAccount` API を使用する必要はありません。 アプリの Info.plist の IntuneMAMSettings ディクショナリで以下の 2 つの設定を YES に設定するだけです。
+
+Setting  | Type  | 定義 |
+--       |  --   |   --       |  
+AutoEnrollOnLaunch| ブール型| 既存の管理対象の ID が検出され、それがまだ登録されていない場合、起動時に自動登録を試みるかどうかを指定します。 既定は [いいえ] です。 <br><br> 注意: マネージド ID が検出されない場合、またはその ID に対する有効なトークンが ADAL キャッシュ内に存在しない場合、アプリで MAMPolicyRequired も YES に設定されていなければ、資格情報を求めることなく登録の試みは失敗します。 |
+MAMPolicyRequired| ブール型| アプリに Intune アプリ保護ポリシーがない場合に、アプリの起動をブロックするかどうかを指定します。 既定は [いいえ] です。 <br><br> 注: MAMPolicyRequired を YES に設定した状態でアプリを App Store に送信することはできません。 MAMPolicyRequired を YES に設定した場合は、AutoEnrollOnLaunch も YES に設定する必要があります。 |
+
+自分のアプリにこのオプションを選択する場合、登録した後にアプリを再起動する必要はありません。
+
 ### <a name="deregister-user-accounts"></a>ユーザー アカウントの登録を解除する
 
 ユーザーがアプリからサインアウトする前に、アプリは SDK からユーザーを登録解除する必要があります。 これにより次のことが保証されます。
@@ -291,7 +326,7 @@ ADAL を使用してユーザーをサインインしないアプリでも、API
  *  registered accounts.  Once removed, if the account has enrolled
  *  the application, the account will be un-enrolled.
  *  @note In the case where an un-enroll is required, this method will block
- *  until the Intune MAM AAD token is acquired, then return.  This method must be called before  
+ *  until the Intune APP AAD token is acquired, then return.  This method must be called before  
  *  the user is removed from the application (so that required AAD tokens are not purged
  *  before this method is called).
  *  @param identity The UPN of the account to be removed.
@@ -313,11 +348,11 @@ ADAL を使用してユーザーをサインインしないアプリでも、API
 
 アプリは、Intune MAM サービスに対する次の要求についての状態、結果、およびデバッグ通知を受け取ることができます。
 
- - 登録要求
- - ポリシー更新要求
- - 登録解除要求
+* 登録要求
+* ポリシー更新要求
+* 登録解除要求
 
-通知は、`Headers/IntuneMAMEnrollmentDelegate.h` にあるデリゲート メソッドを使用して取得できます。
+通知は、`IntuneMAMEnrollmentDelegate.h` にあるデリゲート メソッドを使用して取得できます。
 
 ```objc
 /**
@@ -344,211 +379,202 @@ ADAL を使用してユーザーをサインインしないアプリでも、API
 
 これらのデリゲート メソッドは、次の情報を含む `IntuneMAMEnrollmentStatus` オブジェクトを返します。
 
-- 要求に関連付けられているアカウントの ID
-- 要求の結果を示す状態コード
-- エラー文字列とステータス コードの説明
-- `NSError` オブジェクト
+* 要求に関連付けられているアカウントの ID
+* 要求の結果を示す状態コード
+* エラー文字列とステータス コードの説明
+* `NSError` オブジェクトです。 このオブジェクトは、返される可能性のある特定のステータス コードと共に `IntuneMAMEnrollmentStatus.h` で定義されています。
 
-このオブジェクトは、返される可能性のある特定のステータス コードと共に `IntuneMAMEnrollmentStatus.h` で定義されています。
-
+> [!NOTE]
+> この情報はデバッグ目的にのみ使用できます。 アプリのビジネス ロジックは、これらの通知に基づく必要はありません。 この情報は、デバッグまたは監視を目的としてテレメトリ サービスに送信できます。
 
 ### <a name="sample-code"></a>サンプル コード
 
 デリゲート メソッドの実装例を次に示します。
 
 ```objc
-- (void)enrollmentRequestWithStatus:(IntuneMAMEnrollmentStatus *)status
+- (void)enrollmentRequestWithStatus:(IntuneMAMEnrollmentStatus*)status
 {
     NSLog(@"enrollment result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
     NSLog(@"Debug Message: %@", status.errorString);
 }
 
-
-- (void)policyRequestWithStatus:(IntuneMAMEnrollmentStatus *)status
+- (void)policyRequestWithStatus:(IntuneMAMEnrollmentStatus*)status
 {
     NSLog(@"policy check-in result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
     NSLog(@"Debug Message: %@", status.errorString);
 }
 
-- (void)unenrollRequestWithStatus:(IntuneMAMEnrollmentStatus *)status
+- (void)unenrollRequestWithStatus:(IntuneMAMEnrollmentStatus*)status
 {
     NSLog(@"un-enroll result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
     NSLog(@"Debug Message: %@", status.errorString);
 }
 ```
 
-## <a name="app-restart"></a>アプリの再起動
+## <a name="application-restart"></a>アプリケーションの再起動
 
-アプリはアプリ保護ポリシーを初めて受け取ったときに、必要なフックを適用するために再起動する必要があります。 再起動が必要になった場合に、これをアプリに通知するメソッドは、Headers/IntuneMAMPolicyDelegate.h で SDK によりデリゲート メソッドが提供されます。
+アプリは、MAM ポリシーを初めて受け取ったときに、必要なフックを適用するために再起動する必要があります。 再起動が必要になった場合に、これをアプリに通知するメソッドは、`IntuneMAMPolicyDelegate.h` で SDK によりデリゲート メソッドが提供されます。
 
 ```objc
  - (BOOL) restartApplication
 ```
-このメソッドの戻り値は SDK に、アプリケーションが必要な再起動を処理する必要があるかどうかを通知します。   
 
- - true が返された場合は、アプリケーションは再起動を処理する必要があります。   
+このメソッドの戻り値は SDK に、アプリケーションが必要な再起動を処理する必要があるかどうかを通知します。
 
- - false が返された場合は、SDK はこのメソッドから返った後でアプリケーションを再起動します。 SDK はすぐにダイアログ ボックスを表示し、アプリケーションを再起動するようにユーザーに通知します。
+* true が返された場合は、アプリケーションは再起動を処理する必要があります。
 
-## <a name="customize-your-apps-behavior"></a>アプリの動作をカスタマイズする
+* false が返された場合は、SDK はこのメソッドから返った後でアプリケーションを再起動します。 SDK はすぐにダイアログ ボックスを表示し、アプリケーションを再起動するようにユーザーに通知します。
 
-Intune App SDK にはいくつかの API が用意されています。これらを呼び出すことで、アプリに展開されている Intune アプリ保護ポリシーに関する情報を得ることができます。 このデータを使用して、アプリの動作をカスタマイズすることができます。 アプリ保護ポリシーのほとんどの設定は、アプリケーションではなく、SDK で自動的に適用されます。 アプリで実装する必要がある設定は、名前を付けて保存のコントロールのみです。
+## <a name="customize-your-apps-behavior-with-apis"></a>API でアプリの動作をカスタマイズする
 
-### <a name="get-app-protection-policy"></a>アプリ保護ポリシーを取得する
+Intune App SDK にはいくつかの API が用意されています。これらを呼び出すことで、アプリに展開されている Intune APP ポリシーに関する情報を得ることができます。 このデータを使用して、アプリの動作をカスタマイズすることができます。 次の表では、使用するいくつかの重要な Intune クラスに関する情報を示しています。
 
-#### <a name="intunemampolicymanagerh"></a>IntuneMAMPolicyManager.h
-IntuneMAMPolicyManager クラスでは、アプリケーションに展開された Intune アプリ保護ポリシーを公開します。 特に、[複数 ID を有効にする](#-enable-multi-identity-optional)のに役立つ API を公開します。
+クラス | 説明
+----- | -----------
+IntuneMAMPolicyManager.h | IntuneMAMPolicyManager クラスでは、アプリケーションに展開された Intune APP ポリシーを公開します。 特に、[複数 ID を有効にする](#-enable-multi-identity-optional)のに役立つ API を公開します。 |
+IntuneMAMPolicy.h | IntuneMAMPolicy クラスでは、アプリに適用される MAM ポリシー設定を公開します。 これらのポリシー設定は公開されるため、アプリでその UI をカスタマイズできます。 ポリシー設定のほとんどは、アプリではなく、SDK によって適用されます。 アプリで実装する必要があるのは、名前を付けて保存のコントロールのみです。 このクラスでは、名前を付けて保存を実装する必要がある API を公開します。 |
+IntuneMAMFileProtectionManager.h | IntuneMAMFileProtectionManager クラスでは、指定した ID に基づいてファイルとディレクトリを明示的にセキュリティで保護するために、アプリで使用できる API を公開します。 ID は Intune によって管理される場合と、管理されない場合があり、SDK で適切な MAM ポリシーが適用されます。 このクラスの使用は省略可能です。 |
+IntuneMAMDataProtectionManager.h | IntuneMAMDataProtectionManager クラスでは、指定された ID を指定するデータ バッファーをセキュリティで保護するために、アプリで使用できる API を公開します。 ID は Intune によって管理される場合と、管理されない場合があり、SDK で暗号化が適切に適用されます。 |
 
-#### <a name="intunemampolicyh"></a>IntuneMAMPolicy.h
-IntuneMAMPolicy クラスでは、アプリケーションに展開された Intune アプリ保護ポリシーを公開します。 このクラスで公開されるほとんどのポリシー設定は SDK で適用されますが、ポリシー設定の適用方法に基づいて、アプリの動作をいつでもカスタマイズすることができます。
+## <a name="implement-save-as-controls"></a>名前を付けて保存コントロールの実装
 
-このクラスでは、名前を付けて保存コントロールの実装に必要ないくつかの API を公開します。これについては、次のセクションで詳しく説明します。
+IT 管理者は Intune を使用して、管理対象アプリでのデータの保存先として利用可能な記憶域の場所を選択できます。 アプリでは、`IntuneMAMPolicy.h` で定義されている `isSaveToAllowedForLocation` API を使用して、許可された記憶域の場所を Intune App SDK に照会することができます。
 
-### <a name="implement-save-as-controls"></a>名前を付けて保存コントロールの実装
+アプリでマネージド データをクラウドの記憶域またはローカルの場所に保存するには、`isSaveToAllowedForLocation` API を使用し、IT 管理者がその場所にデータを保存できるかどうかを確認する必要があります。
 
-IT 管理者は Intune を使用して、管理対象アプリでのデータの保存先として利用可能な記憶域の場所を選択できます。 アプリでは **isSaveToAllowedForLocation** API を使用して、**IntuneMAMPolicy.h** で定義されている、許可された記憶域の場所を Intune App SDK に照会することができます。
+アプリで `isSaveToAllowedForLocation` API を使用する場合、記憶域の場所の UPN を渡す必要があります (使用可能な場合)。
 
-アプリでマネージド データをクラウドの記憶域またはローカルの場所に保存するには、**isSaveToAllowedForLocation** API を使用し、IT 管理者がその場所にデータを保存できるかどうかを確認する必要があります。
+### <a name="supported-save-locations"></a>サポートされている保存場所
 
-アプリで **isSaveToAllowedForLocation** API を使用する場合、記憶域の場所の UPN を渡す必要があります (使用可能な場合)。
-
-#### <a name="supported-save-locations"></a>サポートされている保存場所
-
-**isSaveToAllowedForLocation** API は、IntuneMAMPolicy.h で定義されている次の場所にデータを保存することを IT 監理者が許可しているかどうかを確認するための定数を提供します。
+`isSaveToAllowedForLocation` API は、`IntuneMAMPolicy.h` で定義されている次の場所にデータを保存することを IT 監理者が許可しているかどうかを確認するための定数を提供します。
 
 * IntuneMAMSaveLocationOther
 * IntuneMAMSaveLocationOneDriveForBusiness
 * IntuneMAMSaveLocationSharePoint
 * IntuneMAMSaveLocationLocalDrive
 
-アプリでは、**isSaveToAllowedForLocation** API で定数を使用して、OneDrive for Business などの "管理対象" の場所、または "個人用" の場所にデータを保存できるかどうかを確認する必要があります。 さらに、アプリが場所について "管理対象" か "個人用" かを確認できない場合は、API を使用する必要があります。
+アプリでは、`isSaveToAllowedForLocation` で定数を使用して、OneDrive for Business などの "マネージド" の場所、または "個人用" の場所にデータを保存できるかどうかを確認する必要があります。 さらに、アプリが場所について "管理対象" か "個人用" かを確認できない場合は、API を使用する必要があります。
 
 "個人用" と認識される場所は、`IntuneMAMSaveLocationOther` 定数で表されます。
 
 アプリでデータをローカル デバイス上の任意の場所に保存する場合は、`IntuneMAMSaveLocationLocalDrive` 定数を使用する必要があります。
 
-## <a name="configure-settings-for-the-intune-app-sdk"></a>Intune App SDK の設定を構成する
+## <a name="share-data-via-uiactivityviewcontroller"></a>UIActivityViewController によるデータの共有
 
-アプリケーションの Info.plist ファイルの **IntuneMAMSettings** ディクショナリを使用し、Intune App SDK をセットアップして構成することができます。 IntuneMAMSettings ディクショナリが Info.plist file に表示されない場合は、アプリの Info.plist に "IntuneMAMSettings" の名前でディクショナリを作成する必要があります。
+リリース 8.0.2 以降、Intune App SDK では、Intune 管理対象の共有場所のみを選択できるように、`UIActivityViewController` アクションをフィルター処理できます。 この動作は、アプリケーション データ転送ポリシーによって制御されます。
 
-IntuneMAMSettings ディクショナリの下に、構成設定のキー列/値列を追加して SDK を構成することができます。 サポートされているすべての設定の一覧を次の表に示します。
+### <a name="copy-to-actions"></a>‘コピー先’ アクション
 
-これらの設定の一部は前のセクションで説明しています。一部の設定はすべてのアプリには適用されません。
+`UIActivityViewController` と `UIDocumentInteractionController` で文書を共有するとき、iOS では、共有されている文書を開くことができるアプリケーションごとの ‘コピー先’ アクションが表示されます。 アプリケーションでは、その Info.plist の `CFBundleDocumentTypes` 設定を介してサポートされる文書の種類が宣言されます。 管理されていないアプリケーションとの共有がポリシーで禁止されている場合、この種類の共有は今後、利用できなくなります。 代わりに、非 UI の Action Extension をアプリケーションに追加し、Intune App SDK にリンクする必要があります。 Action Extension は単なるスタブです。 SDK では、ファイル共有動作が実装されます。 次の手順に従います。
 
-Setting  | Type  | 定義 | 必須
---       |  --   |   --       |  --
-ADALClientId  | 文字列型  | アプリの Azure AD クライアント識別子。 | アプリが ADAL を使用する場合に必要です。 |
-ADALAuthority | 文字列型 | 使用されているアプリの Azure AD 機関。 AAD アカウントが構成されている独自の環境を使用する必要があります。 | アプリが ADAL を使用する場合に必要です。 この値が存在しない場合は、Intune の既定値が使用されます。|
-ADALRedirectUri  | 文字列型  | アプリの Azure AD リダイレクト URI。 | アプリが ADAL を使用する場合は、ADALRedirectUri または ADALRedirectScheme が必要です。  |
-ADALRedirectScheme  | 文字列型  | アプリの Azure AD リダイレクト スキーム。 アプリケーションのリダイレクト URI が `scheme://bundle_id` 形式の場合は、ADALRedirectUri の代わりにこれを使用できます。 | アプリが ADAL を使用する場合は、ADALRedirectUri または ADALRedirectScheme が必要です。 |
-ADALLogOverrideDisabled | ブール型  | SDK がすべての ADAL ログ (アプリからの ADAL 呼び出しがある場合はこれを含む) をログ ファイルにルーティングするかどうかを指定します。 既定は [いいえ] です。 アプリで独自の ADAL ログ コールバックを設定する場合は [はい] に設定します。 | 任意。 |
-ADALCacheKeychainGroupOverride | 文字列型  | "com.microsoft.adalcache" の代わりに ADAL キャッシュに使用するキーチェーン グループを指定します。 これにはアプリ ID プレフィックスは含まれないことに注意してください。 実行時に指定された文字列の前に付加されます。 | 任意。 |
-AppGroupIdentifiers | 文字列の配列  | アプリの権利 com.apple.security.application-groups セクションのアプリケーション グループの配列。 | アプリでアプリケーション グループを使用する場合は必須です。 |
-ContainingAppBundleId | 文字列型 | アプリケーションを含む拡張機能のバンドル ID を指定します。 | iOS の拡張機能に必要です。 |
-DebugSettingsEnabled| ブール型 | YES に設定すると、Settings バンドル内のテスト ポリシーを適用できます。 この設定を有効にしたままアプリケーションを出荷しては*なりません*。 | 任意。 |
-MainNibFile<br>MainNibFile~ipad  | 文字列型  | この設定には、アプリケーションのメイン nib ファイル名を含める必要があります。  | アプリケーションの Info.plist で MainNibFile が定義されている場合は必須です。 |
-MainStoryboardFile<br>MainStoryboardFile~ipad  | 文字列型  | この設定には、アプリケーションのメインのストーリーボードのファイル名を含める必要があります。 | アプリケーションの Info.plist で UIMainStoryboardFile が定義されている場合は必須です。 |
-AutoEnrollOnLaunch| ブール型| 既存の管理対象の ID が検出され、それがまだ登録されていない場合、起動時に自動登録を試みるかどうかを指定します。 既定は [いいえ] です。 <br><br> 注意: 管理対象の ID が検出されない場合、またはその ID に対する有効なトークンが ADAL キャッシュ内に存在しない場合、アプリで MAMPolicyRequired も YES に設定されていなければ、資格情報を求めることなく登録の試みは失敗します。 | 任意。 |
-MAMPolicyRequired| ブール型| アプリに Intune アプリ保護ポリシーがない場合に、アプリの起動をブロックするかどうかを指定します。 既定は [いいえ] です。 <br><br> 注: MAMPolicyRequired を YES にした状態でアプリを App Store に送信することはできません。 MAMPolicyRequired を YES に設定した場合は、AutoEnrollOnLaunch も YES に設定する必要があります。 | 任意。 |
-MAMPolicyWarnAbsent | ブール型| アプリに Intune アプリ保護ポリシーがない場合に、アプリの起動時にユーザーに警告するかどうかを指定します。 <br><br> 注: ユーザーは警告を無視しても、ポリシーなしでアプリの使用が許可されます。 | 任意。 |
-MultiIdentity | ブール型| アプリが複数 ID 対応かどうかを指定します。 | 任意。 |
-SplashIconFile <br>SplashIconFile~ipad | 文字列型  | Intune スプラッシュ (起動) アイコン ファイルを指定します。 | 任意。 |
-SplashDuration | 数値 | アプリケーションの起動時に Intune 起動画面が表示される最短時間 (秒)。 既定値は 1.5 です。 | 任意。 |
-BackgroundColor| 文字列型| 起動画面と PIN 画面の背景色を指定します。 #XXXXXX の形式の 16 進 RGB 文字列を受け付けます。X には 0 ～ 9 または A ～ F を使用できます。 シャープ記号は省略してもかまいません。   | 任意。 既定値は明るい灰色です。 |
-ForegroundColor| 文字列型| テキストの色など、起動画面と PIN 画面の前景色を指定します。 #XXXXXX の形式の 16 進 RGB 文字列を受け付けます。X には 0 ～ 9 または A ～ F を使用できます。 シャープ記号は省略してもかまいません。  | 任意。 既定値は黒です。 |
-AccentColor | 文字列型| PIN 画面のアクセント カラーを指定します。ボタン テキストの色やボックスの強調表示色などです。 #XXXXXX の形式の 16 進 RGB 文字列を受け付けます。X には 0 ～ 9 または A ～ F を使用できます。 シャープ記号は省略してもかまいません。| 任意。 既定値はシステムの青です。 |
-MAMTelemetryDisabled| ブール型| SDK に製品利用統計情報データをバックエンドに送信させないかどうかを指定します。| 任意。 |
-WebViewHandledURLSchemes | 文字列の配列 | アプリの WebView で処理する URL スキームを指定します。 | リンクや JavaScript で URL を処理する WebView をアプリが使用する場合は、必須です。 |  
+1. アプリケーションの Info.plist `CFBundleURLTypes` に schemeURL が少なくとも 1 つ定義されている必要があります。
 
-> [!NOTE]
-> アプリが App Store にリリースされる場合は、App Store の標準に従って、`MAMPolicyRequired` を "NO" に設定する必要があります。
+2. アプリケーションと Action Extension では少なくとも 1 つの App Group を共有する必要があります。App Group は、アプリと拡張 IntuneMAMSettings ディクショナリの下にある `AppGroupIdentifiers` 配列に一覧表示する必要があります。
 
-## <a name="sharing-data-via-uiactivityviewcontroller"></a>UIActivityViewController によるデータの共有 
-バージョン  8.0.2 以降、Intune APP SDK では、UIActivityViewController アクションにフィルターを適用できるようになります。Intune 以外の共有場所を選択できるようになります。 この動作は、アプリケーション データ転送と今後予定されている APP 機能によって制御されます。 今後予定されている機能は、Microsoft ファースト パーティ アプリケーション (すなわち、 Word、Excel、Powerpoint) の多くで UIActivityViewController 経由のデータ共有に対応するために必要な変更が行われた後に有効になります。 
- 
-### <a name="copy-to-actions"></a>‘コピー先’ アクション 
-UIActivityViewController と UIDocumentInteractionController で文書を共有するとき、iOS では、共有されている文書を開くことができるアプリケーションごとの ‘コピー先’ アクションが表示されます。 アプリケーションでは、その Info.plist の CFBundleDocumentTypes 設定を介してサポートされる文書の種類が宣言されます。 管理されていないアプリケーションとの共有がポリシーで禁止されている場合、この種類の共有は今後、利用できなくなります。 代わりに、非 UI の Action Extension をアプリケーションに追加し、iOS 向け Intune APP SDK にリンクする必要があります。 Action Extension はスタブのように動作します。 SDK では、ファイル共有動作がすべて実装されます。 以上の SDK 手順に加え、次を実行してください。 
- 
-1. アプリケーションの Info.plist CFBundleURLTypes に schemeURL が少なくとも 1 つ定義されている必要があります。 
-2. アプリケーションと Action Extension では少なくとも 1 つの App Group を共有する必要があります。App Group は、アプリと拡張 IntuneMAMSettings ディクショナリの下にある AppGroupIdentifiers 配列に一覧表示する必要があります。 
-3. Action Extension に “Open in” という名前を付け、名前の後ろにアプリケーション名を追加します。 必要に応じて、Info.plist をローカライズします。 
-4. [Apple の開発者向け文書](https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/)の説明に基づいて拡張のテンプレート アイコンを設計します。 あるいは、IntuneMAMConfigurator ツールを使用し、アプリケーションの .app ディレクトリからこれらの画像を生成できます。 ‘IntuneMAMConfigurator -generateOpenInIcons /path/to/app.app -o /path/to/output/directory’ を実行します。 
-5. 拡張の Info.plist の IntuneMAMSettings で、OpenInActionExtension という名前のブール値設定を追加し、値を YES に設定します。 
-6. 単一ファイルと、アプリケーションの CFBundleDocumentTypes でプレフィックスが ‘com.microsoft.intune.mam’ になっているすべての種類をサポートするように NSExtensionActivationRule を構成します。 たとえば、アプリケーションで public.text と public.image がサポートされている場合、アクティブ化ルールは次のようになります。 
+3. Action Extension に “Open in” という名前を付け、名前の後ろにアプリケーション名を追加します。 必要に応じて、Info.plist をローカライズします。
 
-```
-SUBQUERY ( 
-    extensionItems, 
-    $extensionItem, 
-    SUBQUERY ( 
-        $extensionItem.attachments, 
-        $attachment, 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.text” || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image”).@count == 1 
-).@count == 1 
-```
+4. [Apple の開発者向け文書](https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/)の説明に基づいて拡張のテンプレート アイコンを提供します。 あるいは、IntuneMAMConfigurator ツールを使用し、アプリケーションの .app ディレクトリからこれらの画像を生成できます。 これを行うには、次を実行します。
 
-### <a name="update-existing-share-and-action-extensions"></a>既存の Share Extension と Action Extension の更新 
-アプリケーションに Share Extension または Action Extension が既に含まれている場合、Intune タイプを許可するように NSExtensionActivationRule を修正する必要があります。 拡張でサポートされている種類ごとに、‘com.microsoft.intune.mam.’ というプレフィックスの付いた種類が加わります。 たとえば、既存のアクティブ化ルールが次の場合、  
+    ```bash
+    IntuneMAMConfigurator -generateOpenInIcons /path/to/app.app -o /path/to/output/directory
+    ```
 
-```
-SUBQUERY ( 
-    extensionItems, 
-    $extensionItem, 
-    SUBQUERY ( 
-        $extensionItem.attachments, 
-        $attachment, 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" 
-    ).@count > 0 
-).@count > 0 
- ```
+5. 拡張の Info.plist の IntuneMAMSettings で、`OpenInActionExtension` という名前のブール値設定を追加し、値を YES に設定します。
 
-次のように変更します。 
+6. `com.microsoft.intune.mam` というプレフィックスの付いたアプリケーションの `CFBundleDocumentTypes` から単一ファイルとすべてのタイプをサポートするように、`NSExtensionActivationRule` を構成します。 たとえば、アプリケーションで public.text と public.image がサポートされている場合、アクティブ化ルールは次のようになります。
 
-```
-SUBQUERY ( 
-    extensionItems, 
-    $extensionItem, 
-    SUBQUERY ( 
-        $extensionItem.attachments, 
-        $attachment, 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" || 
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data 
-    ).@count > 0 
-).@count > 0 
- ```
+    ```
+    SUBQUERY (
+        extensionItems,
+        $extensionItem,
+        SUBQUERY (
+            $extensionItem.attachments,
+            $attachment,
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.text” ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image”).@count == 1
+    ).@count == 1
+    ```
+
+### <a name="update-existing-share-and-action-extensions"></a>既存の Share Extension と Action Extension の更新
+
+アプリに Share Extension または Action Extension が既に含まれている場合、Intune タイプを許可するように `NSExtensionActivationRule` を修正する必要があります。 拡張でサポートされている種類ごとに、`com.microsoft.intune.mam` というプレフィックスの付いた種類を追加します。 たとえば、既存のアクティブ化ルールが次の場合、  
+
+    ```
+    SUBQUERY (
+        extensionItems,
+        $extensionItem,
+        SUBQUERY (
+            $extensionItem.attachments,
+            $attachment,
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data"
+        ).@count > 0
+    ).@count > 0
+    ```
+
+次のように変更します。
+
+    ```
+    SUBQUERY (
+        extensionItems,
+        $extensionItem,
+        SUBQUERY (
+            $extensionItem.attachments,
+            $attachment,
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" ||
+            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data
+        ).@count > 0
+    ).@count > 0
+    ```
 
 > [!NOTE]
-> IntuneMAMConfigurator ツールを使用し、Intune タイプをアクティブ化ルールに追加できます。 既存のアクティブ化ルールで事前定義された文字列定数が使用されている場合 (NSExtensionActivationSupportsFileWithMaxCount や NSExtensionActivationSupportsText など)、述語の構文がかなり複雑になることがあります。 IntuneMAMConfigurator ツールを使用すれば、Intune タイプを追加するとき、アクティブ化ルールを文字列定数から述語文字列に変更することもできます。 IntuneMAMConfigurator は GitHub リポジトリにあります。 
+> IntuneMAMConfigurator ツールを使用し、Intune タイプをアクティブ化ルールに追加できます。 既存のアクティブ化ルールで事前定義された文字列定数が使用されている場合 (NSExtensionActivationSupportsFileWithMaxCount や NSExtensionActivationSupportsText など)、述語の構文がかなり複雑になることがあります。 IntuneMAMConfigurator ツールを使用すれば、Intune タイプを追加するとき、アクティブ化ルールを文字列定数から述語文字列に変更することもできます。
 
+### <a name="what-the-ui-should-look-like"></a>UI の外観
 
-## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>iOS アプリケーションの MAM 対象の構成を有効にする
-MAM 対象の構成により、アプリは Intune App SDK から構成データを受け取ることができます。 このデータの形式とバリエーションは、アプリケーションの所有者/開発者が定義して Intune のユーザーに通知する必要があります。 Intune の管理者は、Intune Azure Portal を使って、構成データの対象設定と展開を行うことができます。 Intune App SDK for iOS の バージョン 7.0.1 以降では、MAM 対象構成に入っているアプリに MAM サービス経由で MAM 対象構成データを与えることができます。 アプリケーション構成データは、MDM チャネルではなく MAM サービスを通して直接アプリにプッシュされます。 Intune App SDK は、これらのコンソールから取得されたデータにアクセスするためのクラスを提供します。 次を前提条件として考慮してください。 <br>
-* MAM 対象構成 UI にアクセスする前に、アプリを Intune MAM サービスに登録する必要があります。 詳細については、「[アプリ保護ポリシーの受信](#receiving-app-protection-policy)」をご覧ください。
-* アプリのソース ファイルに ```IntuneMAMAppConfigManager.h``` を追加します。
-* ```[[IntuneMAMAppConfigManager instance] appConfigForIdentity:]``` を呼び出し、アプリ構成オブジェクトを取得します。
-* ```IntuneMAMAppConfig``` オブジェクトで適切なセレクターを呼び出します。 たとえば、アプリケーションのキーが文字列の場合、```stringValueForKey``` や ```allStringsForKey``` を使用します。 ```IntuneMAMAppConfig.h header``` ファイルには、戻り値/エラー条件が記載されています。
+従来の UI:
 
-Graph API の機能に関する詳細については、[Graph API のリファレンス](https://developer.microsoft.com/graph/docs/concepts/overview) ページを参照してください。 <br>
+![従来の共有 UI](./media/sharing-UI-old.png)
+
+新しい UI:
+
+![新しい共有 UI](./media/sharing-UI-new.png)
+
+## <a name="enable-targeted-configuration-appmam-app-config-for-your-ios-applications"></a>iOS アプリケーションに対して対象の構成 (APP/MAM アプリ構成) を有効にする
+
+MAM 対象の構成 (MAM アプリ構成とも呼ばれる) により、アプリは Intune SDK から構成データを受け取ることができます。 このデータの形式とバリエーションは、アプリの所有者/開発者が定義して Intune のユーザーに通知する必要があります。
+
+Intune の管理者は、Intune Azure portal と Intune Graph API を使って、構成データの対象設定と展開を行うことができます。 Intune App SDK for iOS の バージョン 7.0.1 以降では、MAM 対象構成に入っているアプリに MAM サービス経由で MAM 対象構成データを与えることができます。 アプリケーション構成データは、MDM チャネルではなく MAM サービスを通して直接アプリにプッシュされます。 Intune App SDK は、これらのコンソールから取得されたデータにアクセスするためのクラスを提供します。 次の項目が前提条件です。
+
+* MAM 対象構成 UI にアクセスする前に、アプリを Intune MAM サービスに登録する必要があります。 詳細については、「[アプリの保護ポリシーを受信する](#receive-app-protection-policy)」を参照してください。
+
+* アプリのソース ファイルに `IntuneMAMAppConfigManager.h` を追加します。
+
+* `[[IntuneMAMAppConfigManager instance] appConfigForIdentity:]` を呼び出し、アプリ構成オブジェクトを取得します。
+
+* `IntuneMAMAppConfig` オブジェクトで適切なセレクターを呼び出します。 たとえば、アプリケーションのキーが文字列の場合、`stringValueForKey` や `allStringsForKey` を使用します。 戻り値とエラー条件の詳細については、`IntuneMAMAppConfig.h` を参照してください。
+
+Graph API の機能に関する詳細については、[Graph API のリファレンス](https://developer.microsoft.com/graph/docs/concepts/overview) ページを参照してください。
 
 iOS で MAM 対象アプリ構成ポリシーを作成する方法については、「[iOS 用 Microsoft Intune アプリ構成ポリシーを使用する方法](https://docs.microsoft.com/intune/app-configuration-policies-use-ios)」の MAM 対象アプリ構成セクションを参照してください。
 
 ## <a name="telemetry"></a>製品利用統計情報
 
-iOS 用 Intune App SDK では、既定で、次の使用状況イベントに関する製品利用統計情報がログに記録されます。 このデータは、Microsoft Intune に送信されます。
+iOS 用 Intune App SDK では、既定で、次のイベントのタイプに関する製品利用統計情報が収集されます。
 
 * **アプリの起動:** Microsoft Intune が MAM 対応アプリの使用状況を管理タイプ別に確認するために役立ちます (MDM を使用した MAM、MDM 登録を使用しない MAM など)。
 
 * **登録呼び出し:** Microsoft Intune がクライアント側から開始された登録呼び出しの成功率と他のパフォーマンス指標を確認するのに役立ちます。
+
+* **Intune の操作**: 問題の診断に役立て、Intune の機能を確認するために、Microsoft では Intune SDK の操作に関する情報を収集します。
 
 > [!NOTE]
 > モバイル アプリケーションから Intune App SDK の製品利用統計情報を Microsoft Intune に送信しない場合は、Intune App SDK 製品利用統計情報のキャプチャを無効にする必要があります。 IntuneMAMSettings ディクショナリで、プロパティ `MAMTelemetryDisabled` を [はい] に設定します。
@@ -600,14 +626,14 @@ SDK は、ローカル ファイル所有者の ID を追跡し、適宜、ポ�
 
 アプリに共有拡張機能が含まれている場合、`IntuneMAMDataProtectionManager` の `protectionInfoForItemProvider` メソッドを使用して共有対象アイテムの所有者を取得できます。 共有対象アイテムがファイルの場合は、SDK がファイル所有者の設定を処理します。 共有対象アイテムがデータの場合、そのデータがファイルに保持される場合にファイル所有者を設定することとそのデータを UI に表示する前に `setUIPolicyIdentity` API を呼び出すことがアプリの役目になります。
 
-### <a name="turning-on-multi-identity"></a>複数の ID を有効にする
+### <a name="turn-on-multi-identity"></a>複数の ID を有効にする
 
 既定では、アプリは単一 ID として見なされます。 SDK は、登録ユーザーにプロセス ID を設定します。 複数 ID のサポートを有効にするには、アプリの Info.plist ファイルの IntuneMAMSettings ディクショナリに名前が `MultiIdentity`、値が YES のブール型設定を追加します。
 
 > [!NOTE]
 > 複数 ID を有効にすると、プロセス ID、UI ID、スレッド ID は nil に設定されます。 これらを適切に設定する役目をアプリが担います。
 
-### <a name="switching-identities"></a>ID の切り替え
+### <a name="switch-identities"></a>ID を切り替える
 
 * **アプリで開始する ID の切り替え**:
 
@@ -641,46 +667,46 @@ iOS 向けの開発に推奨されるベスト プラクティスを次に示し
 
 ## <a name="faqs"></a>よく寄せられる質問
 
-
-**すべての API は、ネイティブ Swift または Objective-C と Swift の相互運用で指定可能ですか?**
+### <a name="are-all-of-the-apis-addressable-through-native-swift-or-the-objective-c-and-swift-interoperability"></a>すべての API は、ネイティブ Swift または Objective-C と Swift の相互運用でアドレス可能ですか
 
 Intune App SDK の API は、Objective-C でのみ使用でき、**ネイティブ** Swift はサポートしていません。 Objective-C との相互運用性が必要です。
 
+### <a name="do-all-users-of-my-application-need-to-be-registered-with-the-app-we-service"></a>アプリケーションのすべてのユーザーを APP-WE サービスに登録する必要がありますか
 
-**アプリケーションのすべてのユーザーを APP-WE サービスに登録する必要がありますか。**
+いいえ。 実際には、Intune アプリ SDK に登録する必要があるのは職場または学校アカウントのみです。 アプリでは、職場または学校のコンテキストでアカウントが使用されるかどうかを判断する必要があります。
 
-いいえ。 実際には、Intune アプリ SDK に登録する必要があるのは職場または学校アカウントのみです。 アプリでは、職場または学校のコンテキストでアカウントが使用されるかどうかを判断する必要があります。   
+### <a name="what-about-users-that-have-already-signed-in-to-the-application-do-they-need-to-be-enrolled"></a>アプリケーションに既にサインインしているユーザーはどうなりますか 登録する必要がありますか
 
-**アプリケーションに既にサインインしているユーザーはどうなりますか?登録する必要がありますか。**
-
-ユーザーが正常に認証されると、アプリによりユーザーが登録されます。 アプリケーションが MDM のない MAM 機能を使用する前に存在していた可能性がある既存のアカウントの登録もアプリケーションが行います。   
+ユーザーが正常に認証されると、アプリによりユーザーが登録されます。 アプリケーションが MDM のない MAM 機能を使用する前に存在していた可能性がある既存のアカウントの登録もアプリケーションが行います。
 
 これを行うには、アプリケーションは `registeredAccounts:` メソッドを使用する必要があります。 このメソッドは、Intune MAM サービスに登録されているすべてのアカウントを含む NSDictionary を返します。 アプリケーションの既存のアカウントがこの一覧に存在しない場合、アプリケーションは `registerAndEnrollAccount:` を使用してそれらのアカウントを登録する必要があります。
 
-**SDK はどのような頻度で登録を再試行しますか。**
+### <a name="how-often-does-the-sdk-retry-enrollments"></a>SDK はどのような頻度で登録を再試行しますか
 
 SDK は、以前に失敗したすべての登録を 24 時間ごとに自動的に再試行します。 SDK はこれにより、ユーザーがアプリケーションにサインインした後でユーザーの組織が MAM を有効にしてあり、ユーザーが正常に登録してポリシーを受け取れるかどうかを確認します。
 
 ユーザーがアプリケーションを正常に登録したことを検出した場合、SDK は再試行を停止します。 これは、アプリケーションを登録できるのは一度に 1 人のユーザーだけであるためです。 ユーザーが登録解除された場合、同じ 24 時間間隔で再試行が開始されます。
 
-**ユーザーを登録解除する必要があるのはなぜですか?**
+### <a name="why-does-the-user-need-to-be-deregistered"></a>ユーザーを登録解除する必要があるのはなぜですか
 
 SDK は、次の操作をバックグラウンドで定期的に実行します。
 
- - アプリケーションがまだ登録されていない場合、SDK は 24 時間ごとにリストにあるすべてのアカウントの登録を試みます。
- - アプリケーションが登録されている場合、SDK は 8 時間ごとにアプリ保護ポリシーの更新を確認します。
+* アプリケーションがまだ登録されていない場合、SDK は 24 時間ごとにリストにあるすべてのアカウントの登録を試みます。
+* アプリケーションが登録されている場合は、SDK は 8 時間ごとに MAM ポリシーの更新を確認します。
 
 ユーザーを登録解除すると、ユーザーがアプリケーションを使用しなくなり、そのユーザー アカウントに対する定期的イベントを SDK は停止できることが SDK に通知されます。 また、必要に応じて、アプリの登録解除と選択的ワイプもトリガーします。
 
-**登録解除メソッドでは doWipe フラグを true に設定する必要がありますか?**
+### <a name="should-i-set-the-dowipe-flag-to-true-in-the-deregister-method"></a>登録解除メソッドでは doWipe フラグを true に設定する必要がありますか
 
 このメソッドは、ユーザーがアプリケーションからサインアウトする前に呼び出す必要があります。  サインアウトの一環としてユーザーのデータがアプリケーションから削除される場合は、`doWipe` を false に設定できます。 ただし、アプリケーションがユーザーのデータを削除しない場合は、SDK がデータを削除できるように、`doWipe` を true に設定する必要があります。
 
-**アプリケーションを登録解除できる他の方法はありますか。**
+### <a name="are-there-any-other-ways-that-an-application-can-be-un-enrolled"></a>アプリケーションを登録解除できる他の方法はありますか
 
 はい。IT 管理者は選択的ワイプ コマンドをアプリケーションに送信できます。 このコマンドを送信すると、ユーザーは登録を解除されて、ユーザーのデータはワイプされます。 SDK は自動的にこのシナリオを処理し、登録解除デリゲート メソッドで通知を送信します。
 
+### <a name="is-there-a-sample-app-that-demonstrates-how-to-integrate-the-sdk"></a>SDK を統合する方法を示すサンプル アプリはありますか
 
+はい、ご利用いただけます。 最近、オープンソースのサンプル アプリ [Wagr for iOS](https://github.com/Microsoft/Wagr-Sample-Intune-iOS-App) を改良したばかりです。 Wagr は Intune App SDK を使用してアプリ保護ポリシーで使用できるようになりました。
 
 ## <a name="submit-your-app-to-the-app-store"></a>App Store にアプリを送信する
 

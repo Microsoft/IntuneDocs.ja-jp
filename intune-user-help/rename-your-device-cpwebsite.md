@@ -1,11 +1,11 @@
 ---
-title: ポータル サイト Web サイトからデバイスの名前を変更する | Microsoft Docs
-description: ''
+title: ポータル サイト Web サイトからデバイスの名前を変更する
+description: ポータル サイト Web サイトからデバイスの名前を変更する方法について説明します。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2017
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,29 +17,28 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: bf111b6c95a61e0c244b8d3254abc08c1d85c598
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e31451abd79c17618377598d29c455c4c0637348
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017140"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321375"
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>ポータル サイト Web サイトからデバイスの名前を変更する
 
-デバイスの名前を変更すると、識別が簡単になり、便利です。 変更は[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)から可能です。 ポータル サイト Web サイトは、IT 部署で管理するために登録したコンピューターとデバイスの管理に使用できる Web ページです。
+ポータル サイト Web サイトから登録済みのマネージド デバイスの名前を変更する方法について説明します。 デバイスを一般的な、または既定のモデル名から、簡単に識別できる名前に変更します。  
 
-デバイスの名前を変更するには:
+1. [ポータル サイト Web サイト](https://portal.manage.microsoft.com/HelpDeskDialog)で、__[メニュー]__ ボタン、__[デバイス]__ の順に選択します。
 
-1. [ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)で、__メニュー__ ボタン ![3 つの横棒が並行に積み上げられている、メニュー ボタンの小さな画像](/Intune/whats-new/media/CP_hamburger_menu.png) をタップしてから、__[デバイス]__ を選択します。
+2. 名前を変更するデバイスを選択します。
 
-2. __[デバイス]__ ページで、名前を変更するデバイスの名前を選択します。
+![リスト表示されていないデバイスの登録または不明なデバイスの識別を求めるバナーの上に 2 つの不明なデバイスが示された、[デバイス] ページのスクリーンショット。](./media/macOS_enroll_002_tap_here_banner.png)  
 
-   ![リスト表示されていないデバイスの登録または不明なデバイスの識別を求めるバナーの上に 2 つの不明なデバイスが示された、[デバイス] ページのスクリーンショット。](./media/macOS_enroll_002_tap_here_banner.png)
+3. **[名前の変更]** を選択します。  
 
-3. デバイスがポップアップ ウィンドウに開きます。 **[名前の変更]** ボタンをタップします。
+   ![[名前の変更]、[削除]、[デバイスのリセット]、[パスコードのリセット]、[リモート ロック] を含む、ポータル Web サイト上の選択されたデバイスに対するすべてのオプション。 ](./media/iwp-screen-with-all-options.png)  
+    
 
-   ![[名前の変更]、[削除]、[デバイスのリセット]、[パスコードのリセット]、[リモート ロック] を含む、ポータル Web サイト上の選択されたデバイスに対するすべてのオプション。 ](./media/iwp-screen-with-all-options.png)
+4. デバイス名が表示されているボックスにデバイスの新しい名前を入力します。 次に **[名前の変更]** ボタンをタップします。 これで、デバイスが新しい名前で表示されます。
 
-4. デバイス名が表示されているボックスにデバイスの新しい名前を入力し、**[名前の変更]** ボタンをタップします。 これで、デバイスが新しい名前で表示されます。
-
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com/HelpDeskDialog)をご確認ください。

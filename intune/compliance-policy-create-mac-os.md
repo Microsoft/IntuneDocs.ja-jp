@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 06/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a797c68ca43a6173a4bac70e914d3f763ce5e6d0
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 6bbb09944db602b4b5a70c89e8089b1692c45223
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442578"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321443"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Intune で macOS デバイス用のデバイス コンプライアンス ポリシーを追加する
 
@@ -83,6 +83,13 @@ Intune macOS デバイス コンプライアンス ポリシーでは、macOS �
 ### <a name="encryption"></a>暗号化
 
 - **[Encryption of data storage on a device]\(デバイス上のデータ ストレージの暗号化\)**: **[必要]** を選択すると、デバイス上のデータ ストレージが暗号化されます。
+
+### <a name="device-security"></a>［デバイス セキュリティ］
+ファイアウォールは、承認されていないネットワーク アクセスからデバイスを保護します。 ファイアウォールを使用すると、アプリケーションごとに接続を制御できます。 
+
+- **[ファイアウォール]**: **[有効]** を選択すると、承認されていないアクセスからデバイスを保護できます。 この機能を有効にすると、着信インターネット接続を処理し、ステルス モードを使用できます。 **[未構成]** (既定) を選択すると、ファイアウォールは無効なままで、ネットワーク トラフィックは許可されます (ブロックされません)。
+- **[着信接続]**: DHCP、Bonjour、IPSec など、基本的なインターネット サービスに必要な接続を除き、すべての着信ネットワーク接続を **[ブロック]** します。 この設定を使用すると、画面共有、リモート アクセス、iTunes のミュージック共有など、すべての共有サービスがブロックされます。 **[未構成]** (既定) を選択すると、着信接続と共有サービスは許可されます。 
+- **[ステルス モード]**: ステルス モードを **[有効]** にすると、デバイスがプローブ要求に応答しなくなります。プローブ要求は、悪意のあるユーザーが行う可能性があります。 有効にすると、デバイスは引き続き、許可されているアプリに関する着信要求に応答します。 **[未構成]** (既定) を選択すると、ステルス モードは無効なままです。
 
 ## <a name="assign-user-groups"></a>ユーザー グループを割り当てる
 

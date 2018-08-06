@@ -1,23 +1,23 @@
 ---
 title: Microsoft Intune - Azure での Windows Holographic for Business のデバイス制限 | Microsoft Docs
-description: 登録解除、位置情報、パスワード、アプリ ストアからのアプリのインストール、Microsoft Edge の Cookie とポップアップ、Windows Defender、検索、クラウドと記憶域、Bluetooth の接続、システム時刻、Azure の使用状況データなど、Windows Holographic for Business の Microsoft Intune でのデバイス制限設定について説明し、これらの設定を構成します。
+description: 登録解除、位置情報、パスワード、アプリ ストアからのアプリのインストール、Edge の Cookie とポップアップ、Windows Defender、検索、クラウドと記憶域、Bluetooth の接続、システム時刻、Azure の使用状況データなど、Windows Holographic for Business の Microsoft Intune でのデバイス制限設定について説明し、これらの設定を構成します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/1/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e8a1abb4229b3e6b4c91cfd49b4f66dbe739ea7d
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 9d7f54ce0e288025a4a7f0f45bf5b10de5323021
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327876"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321756"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Intune での Windows Holographic for Business のデバイス制限設定
 
@@ -69,7 +69,9 @@ Microsoft Hololens など、Windows Holographic for Business を実行してい�
 
 - **[システム時刻の変更]** - エンド ユーザーがデバイスの日付と時刻を変更することを防止します。
 
-## <a name="kiosk"></a>キオスク
+## <a name="kiosk---obsolete"></a>キオスク - 現在不使用
+
+これらの設定は読み取り専用であり、変更することはできません。 キオスク モードを構成する場合は、「[キオスクの設定](kiosk-settings.md#windows-holographic-for-business)」を参照してください。
 
 通常、キオスク デバイスでは特定のアプリが実行されます。 ユーザーは、キオスク アプリ以外のデバイスの機能にアクセスすることはできません。
 

@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 05/16/2018
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac85478abed049487c028c58637e7937876d2198
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 87333610380ef34e1d832694a30bfe97388bcb62
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34449872"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254401"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android 用 Microsoft Intune アプリ SDK 開発者ガイド
 
@@ -463,7 +463,20 @@ ADAL を使用してアプリを構成する一般的な方法を次に示しま
 
 必要に応じて、Authority と NonBrokerRedirectURI を指定できます。
 
-Intune SDK チームから、アプリのアプリケーション ID (クライアント ID) が求められます。 これは、[Azure portal](https://portal.azure.com/) の **[すべてのアプリ]** の **[アプリケーション ID]** の列にあります。 Azure AD へのアプリケーションの登録については、[こちら](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications)を参照してください。 Intune SDK チームには msintuneappsdk@microsoft.com でアクセスできます。
+次の手順を使用して Azure AD でアプリを登録します。
+
+Azure portal で次の操作を行います。
+1.  **[Azure Active Directory]** ブレードに移動します。
+2.  **[アプリの登録]** を選択してアプリケーションを設定します。
+3.  **[API アクセス]** 見出しの下の **[設定]** で、**必要なアクセス許可**を選択します。 
+4.  **[+ 追加]** をクリックします。
+5.  **[API を選択します]** をクリックします。 
+6.  検索ボックスに「**Microsoft Mobile Application Management**」と入力します。
+7.  API の一覧で **[Microsoft Mobile Application Management]** を選択し、[選択] をクリックします。
+8.  **[Read and Write the User’s App Management Data]\(ユーザーのアプリ管理データの読み取りと書き込み\)** を選択します。
+9.  **[完了]** をクリックします。
+
+Azure AD へのアプリケーションの登録については、[こちら](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications)を参照してください。 
 
 以下の「[条件付きアクセス](#conditional-access)」の要件も参照してください。
 
@@ -1421,7 +1434,7 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
 > **既定の登録**の利点には、デバイス上のアプリの APP-WE サービスからポリシーを取得する方法が簡単なことなどがあります。
 
 ### <a name="general-requirements"></a>一般的な要件
-* Intune SDK チームから、アプリのアプリケーション ID が求められます。 アプリケーション ID は、[Azure Portal](https://portal.azure.com/) の **[すべてのアプリ]** の **[アプリケーション ID]** の列にあります。 Intune SDK チームに問い合わせるには、msintuneappsdk@microsoft.com に電子メールを送信することをお勧めします。
+* 「[ADAL の一般的な構成](https://docs.microsoft.com/en-us/intune/app-sdk-android#common-adal-configurations)」の 2. の手順に従って、自分のアプリが Intune モバイル アプリケーション管理サービスで登録されていることを確認します。
 
 ### <a name="working-with-the-intune-sdk"></a>Intune SDK の使用
 これらの手順は、エンド ユーザー デバイスで使用するアプリのために Intune アプリ保護ポリシーが必要なすべての Android および Xamarin アプリの開発者向けです。

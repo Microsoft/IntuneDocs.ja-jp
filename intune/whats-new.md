@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/13/2018
+ms.date: 07/23/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 1d56312fdf0e81406587caf352feafd745bd4353
-ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
+ms.openlocfilehash: 53be8456b09c7775a4de827eb09680f47e8d62d7
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39212071"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321562"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -33,14 +33,111 @@ ms.locfileid: "39212071"
 
 <!-- Common categories:  
 ### App management
+### Device configuration
 ### Device enrollment
 ### Device management
-### Device configuration
 ### Intune apps
 ### Monitor and troubleshoot
 ### Role-based access control
 
 -->   
+
+## <a name="week-of-july-23-2018"></a>2018 年 7 月 23 日の週
+
+### <a name="app-management"></a>アプリ管理
+
+####  <a name="windows-apps-file-extensions----1884873---"></a>Windows アプリのファイル拡張子<!-- 1884873 -->
+Windows アプリのファイル拡張子に、*.msi*、*.appx*、*.appxbundle*、*.msix* および *.msixbundle* が含まれるようになりました。 Microsoft Intune にアプリを追加するには、**[モバイル アプリ]** > **[アプリ]** > **[追加]** の順に選択します。 **[アプリの追加]** ウィンドウが表示され、そこで **[アプリの種類]** を選択できます。 アプリ パッケージ ファイルをアップロードすることができるアプリの種類を選択し、**[アプリのパッケージ ファイル]** を選択して、適切な拡張子を持つインストール ファイルを入力します。
+
+#### <a name="line-of-business-lob-app-support-for-macos----1895847---"></a>macOS の基幹業務 (LOB) アプリのサポート <!-- 1895847 -->
+Microsoft Intune では、macOS LOB アプリを **[必須]** として、または **[Available with enrollment]\(登録して利用可能\)** として展開することができます。 エンド ユーザーは、macOS 用のポータル サイトまたは[ポータル サイト Web サイト](https://portal.manage.microsoft.com)を使用して、アプリを **[利用可能]** として展開してもらうことができます。
+
+#### <a name="ios-built-in-app-support-for-kiosk-mode----2051098---"></a>キオスク モードに対応する iOS 組み込みアプリのサポート <!-- 2051098 -->
+ストア アプリおよび管理対象アプリに加えて、iOS デバイス上でキオスク モードで実行される組み込みアプリ (Safari など) を選択できるようになりました。
+
+#### <a name="edit-your-office-365-pro-plus-app-deployments----2150145---"></a>Office 365 Pro Plus アプリの展開を編集する <!-- 2150145 -->
+Microsoft Intune 管理者は、Office 365 Pro Plus アプリのデプロイを編集するための強化された機能を使用できます。 さらに、スイートのいずれかのプロパティを変更するのに、デプロイを削除しなくてもよくなりました。 Azure Portal で、**[Microsoft Intune]** > **[モバイル アプリ]** > **[アプリ]** の順に選びます。 アプリの一覧から、Office 365 Pro Plus スイートを選択します。  
+
+
+### <a name="device-configuration"></a>デバイス構成
+
+#### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642---"></a>S/MIME を使用して暗号化し、ユーザーの複数のデバイスに署名する <!-- 1333642 -->
+この更新プログラムには、新しくインポートされる証明書プロファイル (**[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]**、該当するプラットフォーム、**[PKCS のインポートされた証明書]** プロファイルの種類の順に選択) を使用する S/MIME メールの暗号化が含まれます。 Intune では、PFX 形式で証明書をインポートできます。 その後、Intune はその同じ証明書を、単一ユーザーによって登録された複数のデバイスに配信できます。 これには、次のものも含まれます。
+
+- ネイティブ iOS メール プロファイルでは、PFX 形式でインポートされた証明書を使用する S/MIME 暗号化を有効にすることができます。
+- Windows Phone 10 デバイス上のネイティブ メール アプリでは、自動的に S/MIME 証明書が使用されます。
+- プライベート証明書は複数のプラットフォームに配信できます。 しかし、すべてのメール アプリで S/MIME がサポートされるわけではありません。
+- 他のプラットフォームでは、S/MIME を有効にするようにメール アプリを手動で構成する必要がある場合があります。  
+- S/MIME 暗号化をサポートするメール アプリでは、発行元の証明書ストアからの読み取りなど、MDM ではサポートできない方法で S/MIME メール暗号化のための証明書の検索を処理する場合があります。
+
+サポート対象: Windows、Windows Phone 10、macOS、iOS、Android
+
+#### <a name="create-device-compliance-policy-using-firewall-settings-on-macos-devices----1497640---"></a>macOS デバイスでファイアウォール設定を使ってデバイスのコンプライアンス ポリシーを作成する <!-- 1497640 -->
+macOS の新しいコンプライアンス ポリシーを作成するとき (**[デバイスのポリシー準拠]** > **[ポリシー]** > **[ポリシーの作成]** > **[プラットフォーム: macOS]** > **[システム セキュリティ]**)、**ファイアウォール**に関するいくつかの新しい設定を使用できます。 
+
+- **[ファイアウォール]**: ご利用の環境における着信接続の処理方法を構成します。
+- **[着信接続]**: DHCP、Bonjour、IPSec など、基本的なインターネット サービスに必要な接続を除き、すべての着信接続を **[ブロック]** します。 この設定は、すべての共有サービスもブロックします。
+- **[ステルス モード]**: ステルス モードを **[有効]** にして、デバイスがプローブ要求に応答するのを防ぎます。 デバイスは引き続き、許可されているアプリに関する着信要求に応答します。
+
+適用対象: macOS 10.12 以降
+
+#### <a name="new-wi-fi-device-configuration-profile-for-windows-10-and-later----1879077---"></a>Windows 10 以降用の新しい Wi-Fi デバイス構成プロファイル <!-- 1879077 -->
+現時点では、XML ファイルを使用して、Wi-Fi プロファイルをインポートおよびエクスポートすることができます。 この更新プログラムを使用すると、他のプラットフォームの場合と同じように、Intune で直接 Wi-Fi デバイス構成プロファイルを作成できるようになります。
+
+プロファイルを作成するには、**[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** > **[Windows 10 以降]** > **[Wi-Fi]** の順に開きます。 
+
+Windows 10 以降に適用されます。
+
+#### <a name="kiosk---obsolete-is-grayed-out-and-cant-be-changed----2149998-eeready---"></a>[Kiosk - obsolete]\(キオスク - 古い) が灰色で表示され、変更できない <!-- 2149998 eeready -->
+[キオスクの機能](device-restrictions-windows-10.md#kiosk-preview---obsolete) (**[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** > **[Windows 10 以降]** > **[デバイスの制限]**) は使用されなくなり、[Windows 10 以降用のキオスク設定](kiosk-settings.md)に置き換えられます。 この更新プログラムを使用すると、**[Kiosk - Obsolete]\(キオスク - 古い)** 機能は灰色で表示され、ユーザー インターフェイスの変更や更新はできません。 
+
+キオスク モードを有効にする場合は、[Windows 10 以降用のキオスクの設定](kiosk-settings.md)に関するページを参照してください。
+
+Windows 10 以降、Windows Holographic for Business に適用されます
+
+#### <a name="apis-to-use-3rd-party-certification-authorities----2184013---"></a>サード パーティ証明機関を使用する API <!-- 2184013 -->
+この更新プログラムでは、Java API でサード パーティ証明機関を使用して、Intune と SCEP を統合できるようになります。 その後、ユーザーは SCEP 証明書をプロファイルに追加し、MDM を使用してデバイスに適用できます。
+
+現時点では、Intune で [Active Directory 証明書サービスを使用する SCEP 要求](certificates-scep-configure.md)がサポートされています。
+
+#### <a name="toggle-to-show-or-not-show-the-end-session-button-on-a-kiosk-browser----2455253---"></a>キオスク ブラウザーで [セッションの終了] ボタンの表示と非表示を切り替える <!-- 2455253 -->
+キオスク ブラウザーに [セッションの終了] ボタンを表示するかどうかを構成できるようになりました。 コントロールは **[デバイス構成]** > **[キオスク (プレビュー)]** > **[キオスク Web ブラウザー]** で表示できます。 有効にした場合、ユーザーがボタンをクリックしたときに、アプリでセッションを終了するための構成が求められます。 確認すると、ブラウザーで閲覧データがすべてクリアされ、既定の URL に戻ります。
+
+#### <a name="create-an-esim-cellular-configuration-profile----2564077---"></a>eSIM 携帯電話の構成プロファイルの作成 <!-- 2564077 -->
+**[デバイス構成]** では、eSIM 携帯電話のプロファイルを作成することができます。 携帯電話会社によって提供される携帯電話のアクティブ化コードを含むファイルをインポートできます。 その後、これらのプロファイルを、Surface Pro LTE やその他の eSIM 対応デバイスなど、eSIM LTE を有効にした Windows 10 デバイスに展開することができます。
+
+ご利用の[デバイスで eSIM プロファイルがサポートされている](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data)かどうかを確認してください。
+
+Windows 10 以降に適用されます。 
+
+
+
+
+### <a name="device-enrollment"></a>デバイスの登録
+
+#### <a name="automatically-mark-android-devices-enrolled-by-using-samsung-knox-mobile-enrollment-as-corporate----2404851---"></a>Samsung Knox Mobile Enrollment を使用して登録された Android デバイスを自動的に "企業" としてマークする。 <!-- 2404851 -->
+既定で、Samsung Knox Mobile Enrollment を使用して登録された Android デバイスは、**[デバイスの所有権]** に**企業**としてマークされるようになりました。 Knox Mobile Enrollment を使用して登録する前に、IMEI やシリアル番号を使って企業のデバイスを手動で特定する必要はありません。
+
+### <a name="device-management"></a>デバイス管理
+
+#### <a name="bulk-delete-devices-on-devices-blade----1793693---"></a>デバイス ブレードでのデバイスの一括削除 <!-- 1793693 -->
+
+[デバイス] ブレードでは、一度に複数のデバイスを削除できるようになりました。 **[デバイス]** > **[すべてのデバイス]**、削除するデバイス、**[削除]** の順に選択します。 削除できないデバイスについては、アラートが表示されます。
+
+## <a name="week-of-july-16-2018"></a>2018 年 7 月 16 日の週  
+
+### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Windows 用ポータル サイト アプリ内での同期の機会の増加  
+Windows 用ポータル サイト アプリでは、Windows タスク バーと [スタート] メニューから直接同期を開始できるようになりました。 この機能は、唯一のタスクがデバイスを同期して、企業リソースへのアクセスを取得することで場合に特に便利です。 この新しい機能にアクセスするには、ご利用のタスク バーまたは [スタート] メニューに固定されているポータル サイト アイコンを右クリックします。 メニュー オプション (ジャンプ リストとも呼ばれる) で、**[Sync this device]\(このデバイスを同期\)** を選択します。 ポータル サイトが開いて、**[設定]** ページが表示され、同期が開始されます。新しい機能については、[UI の新機能](whats-new-app-ui.md)に関するページを参照してください。   
+
+### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Windows 用ポータル サイト アプリでの新しい参照エクスペリエンス  
+
+Windows 用ポータル サイト アプリでアプリを参照または検索するときに、既存の **[タイル]** ビューと新しく追加された **[詳細]** ビューを切り替えることができるようになりました。 新しいビューには、名前、発行元、発行日、インストール状態などのアプリケーションの詳細が一覧表示されます。  
+
+**[アプリ]** ページの **[インストール済み]** ビューでは、完了済みと進行中のアプリのインストールに関する詳細を確認できます。 新しいビューの外観を確認するには、[UI の新機能](whats-new-app-ui.md)を参照してください。  
+### <a name="improved-company-portal-app-experience-for-device-enrollment-managers"></a>デバイス登録マネージャー向けのポータル サイト アプリの操作性の改善  
+デバイス登録マネージャー (DEM) が Windows 用ポータル サイト アプリにサインインすると、アプリには DEM の現在 (実行中のデバイス) のみが一覧表示されるようになります。 この改善により、DEM に登録されたデバイスをすべて表示しようとしたときに以前に発生していたタイムアウトが削減されます。  
+
+
 ## <a name="week-of-july-9-2018"></a>2018 年 7 月 9 日の週
 
 ### <a name="app-management"></a>アプリ管理
@@ -60,9 +157,6 @@ Microsoft AutoUpdate を使用すれば、Insider Program に参加すること�
 ## <a name="week-of-july-2-2018"></a>2018 年 7 月 2 日の週
 
 ### <a name="app-management"></a>アプリ管理
-
-#### <a name="additional-security-settings-for-windows-installer----2282430---"></a>Windows インストーラーの追加のセキュリティ設定 <!-- 2282430 -->
-ユーザーがアプリのインストールを制御することを許可できます。 有効にすると、セキュリティ違反が原因で本来は停止される可能性があるインストールを続行することが許可されます。 Windows インストーラーによってシステムに任意のプログラムをインストールする場合、管理者特権のアクセス許可を使用するよう Windows インストーラーに指示することができます。 さらに、Windows 情報保護 (WIP) アイテムのインデックス付け、および暗号化されていない場所に格納されたそれらのアイテムに関するメタデータを有効にすることができます。 このポリシーが無効な場合、WIP で保護されたアイテムにはインデックスが付けられず、Cortana またはエクスプローラーの結果に表示されません。 既定では、これらのオプションの機能は無効になっています。 
 
 #### <a name="monitor-ios--app-configuration-status-per-device----880037---"></a>デバイスごとに iOS アプリ構成の状態を監視する <!-- 880037 -->
 Microsoft Intune 管理者は、各マネージド デバイスの iOS アプリ構成状態を監視できます。 Azure Portal の **[Microsoft Intune]** から、**[デバイス]** > **[すべてのデバイス]** の順に選びます。 管理対象デバイスの一覧から、デバイスのブレードを表示する特定のデバイスを選びます。 デバイスのブレードで、**[アプリの構成]** を選びます。
@@ -580,7 +674,7 @@ Mac アプリケーションのファイアウォールを構成できます。 
 
 ####  <a name="detailed-error-codes-and-messages----1376342---"></a>詳しいエラー コードとメッセージ <!-- 1376342 -->
 
-デバイス構成で、詳しいエラー コードとエラー メッセージを確認できます。 この改善された報告機能には、設定、設定の状態、トラブルシューティングの詳細が表示されます。
+デバイス構成で、より詳しいエラー コードとエラー メッセージを確認できます。 この改善された報告機能には、設定、設定の状態、トラブルシューティングの詳細が表示されます。
 
 ##### <a name="more-information"></a>詳細情報
 
@@ -616,7 +710,7 @@ Windows 10 ビルド 1703 以降の Intune ポータル サイトを使ってデ
 #### <a name="hololens-and-surface-hub-now-appear-in-device-lists---1725868---"></a>HoloLens と Surface Hub がデバイス リストに表示されるようになった <!--1725868 -->
 Intune に登録された HoloLens および Surface Hub のデバイスを Android 用ポータル サイト アプリに表示するためのサポートが追加されました。
 
-#### <a name="custom-book-categories-for-volume-purchase-progream-vpp-ebooks----1488911---"></a>ボリューム購入プログラム (VPP) 電子ブックのカスタム ブック カテゴリ <!-- 1488911 -->
+#### <a name="custom-book-categories-for-volume-purchase-program-vpp-ebooks----1488911---"></a>ボリューム購入プログラム (VPP) 電子ブックのカスタム ブック カテゴリ <!-- 1488911 -->
 電子ブックのカスタム カテゴリを作成し、VPP の電子ブックをカスタム電子ブック カテゴリに割り当てることができます。 エンド ユーザーは、新しく作成された電子ブック カテゴリとそのカテゴリに割り当てられているブックを見ることができます。 詳細については、「[Microsoft Intune によるボリューム購入アプリとブックの管理](vpp-apps.md)」を参照してください。  
 
 #### <a name="support-changes-for-company-portal-app-for-windows-send-feedback-option----2070166---"></a>Windows 用 Intune ポータル サイト アプリのフィードバック送信オプションのサポートの変更 <!-- 2070166 -->
@@ -717,7 +811,7 @@ Android 用 Intune ポータル サイト アプリを、Android の[マテリ�
 ### <a name="device-management"></a>デバイス管理
 #### <a name="windows-defender-health-status-and-threat-status-reports---854704---"></a>Windows Defender の正常性状態レポートと脅威状態レポート<!--854704 -->
 
-Windows Defender の正常性と状態を理解することは、Windows PC の管理において重要なことです。  この更新では、Intune に、Windows Defender エージェントの状態と正常性の新しいレポートやアクションが追加されています。 [デバイスのポリシー準拠ワークロード](compliance-policy-monitor.md)の状態ロールアップ レポートを使うと、次のことが必要なデバイスを発見できます。
+Windows Defender の正常性と状態を理解することは、Windows PC の管理において重要なことです。  この更新では、Intune に、Windows Defender エージェントの状態と正常性の新しいレポートやアクションが追加されています。 [デバイスのポリシー準拠ワークロード](compliance-policy-monitor.md)の状態ロールアップ レポートを使用すると、次のことが必要なデバイスを確認できます。
 - 署名の更新
 - 再起動
 - 手動介入

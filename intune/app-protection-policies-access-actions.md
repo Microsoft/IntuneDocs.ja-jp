@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/17/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00f422b5619115b44b8d39c2d735f2163c22167f
-ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
+ms.openlocfilehash: cdd3484f002a3719410d4f801073914e7f58fc4c
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39138698"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254486"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Intune でアプリ保護ポリシーのアクセス アクションを利用し、データを選択的にワイプする
 
@@ -44,7 +44,7 @@ Intune のアプリ保護ポリシーを利用することで、エンド ユー
 8. ユーザーが要件を満たさない場合に講じる**アクション**を選択します。 場合によっては、1 つの設定で複数のアクションを設定できます。 詳細については、「[アプリ保護ポリシーを作成して割り当てる方法](app-protection-policies.md)」を参照してください。
 
 >[!NOTE]
-> **デバイス モデル**設定を使用するには、モデル識別子の一覧をセミコロンで区切って入力します。 
+> **デバイス モデルまたはデバイス製造元**の設定を使用するには、モデル識別子の一覧をセミコロンで区切って入力します。 複数の値を含む一覧でのスペースの使用は避けてください。 これらの値では大文字と小文字が区別されません。 
 
 ## <a name="policy-settings"></a>ポリシー設定 
 
@@ -83,7 +83,10 @@ Android の場合、**[設定]** ドロップダウンを利用して次の設�
 -  [デバイスの製造元]
 
 **[デバイスの製造元]** 設定を使用するには、Android の製造元の一覧をセミコロンで区切って入力します。 デバイスの Android の製造元は、デバイスの設定で確認できます。<br>
-入力例:*Manufacturer A; Manufacturer B; Google* 
+入力例: *Manufacturer A; Manufacturer B* 
+
+>[!NOTE]
+> これらは、Intune を使用してデバイスから報告される一般的な製造元であり、次のような入力を使用できます: Asus; Blackberry; Bq; Gionee; Google; Hmd global; Htc; Huawei; Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola; Oneplus; Oppo; Samsung; Sharp; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk
 
 エンド ユーザー デバイスの Intune クライアントは、アプリケーション保護ポリシーに対して Intune で指定されている、デバイス モデルの文字列の単純一致に基づいてアクションを実行します。 一致は、デバイスの報告に完全に依存します。 ユーザー (IT 管理者) は、動作が意図したものであるか確認することを推奨されます。それには、さまざまなデバイスの製造元とモデルをベースとし、小規模なユーザー グループを対象として、この設定をテストします。 既定値は **[未構成]** です。<br>
 次の操作のいずれかを選択します。 

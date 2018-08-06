@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/08/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: aa556b2939986759aa92e63750fd161c05afbc38
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: a7c61ae0d60b2baf8bf9760297a5e35cbb5188de
+ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34048021"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39236057"
 ---
 # <a name="sync-your-windows-device-manually"></a>Windows デバイスを手動で同期する
 
@@ -40,7 +40,7 @@ Intune ポータル サイト アプリの機能は、Creators Update (1703) 以
 * [Windows 10 Mobile](#windows-10-mobile)  
 * [Windows Phone 8.1](#windows-phone-81)    
 
-## <a name="sync-from-company-portal-app-for-windows"></a>Windows 用 Intune ポータル サイト アプリから同期する
+## <a name="sync-directly-from-company-portal-app-for-windows"></a>Windows 用 Intune ポータル サイト アプリから直接同期する
 Creators Update (バージョン 1703) 以降を実行する Windows 10 デバイスを手動で同期するには、次の手順のようにします。
 
 1.  デバイス上でポータル サイト アプリを開きます。
@@ -49,7 +49,7 @@ Creators Update (バージョン 1703) 以降を実行する Windows 10 デバ�
 
     ![[設定] が強調表示された Intune ポータル サイト アプリのホーム ページのスクリーンショット](./media/RS1_homePage_settings_04.png)  
     
-    ![[同期] ボタンが強調表示された Intune ポータル サイト アプリの設定ページのスクリーンショット](./media/RS1_settingspage_sync05.png)    
+    ![[同期] ボタンが強調表示された Intune ポータル サイト アプリの設定ページのスクリーンショット](./media/RS1_settingspage_sync05.png)  
 
 ## <a name="sync-from-settings-app"></a>設定アプリから同期する 
 Microsoft HoloLens、Windows 10 Desktop、Windows 10 Mobile、または Windows Phone 8.1 のデバイスを設定アプリから手動で同期するには、次の手順のようにします。

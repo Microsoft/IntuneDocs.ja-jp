@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fbe55be15df9755c109ec7e8e8e23db3c27931b0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 4fd82cf211360e77b17f8ea915c13719b8ab3408
+ms.sourcegitcommit: cd97505d6f5dc54db7f35a691376bcbf6f36ac9d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905531"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39323244"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange On-Premises と従来の Exchange Online Dedicated の条件付きアクセス ポリシーを作成する
 
@@ -63,7 +63,7 @@ Exchange Online Dedicated 環境を使用していて、それが新しい構成
 - Windows Phone 8.1 以降
 - iOS のネイティブ電子メール アプリ。
 - Android 4 以降での EAS メール クライアント (Gmail など)。
-- EAS メール クライアント **Android 仕事用プロファイル デバイス:** Android 仕事用プロファイル デバイスでは、**仕事用プロファイル**の **Gmail** アプリと **Nine Work** アプリのみがサポートされています。 条件付きアクセスが Android 仕事用プロファイルで動作するには、Gmail アプリまたは Nine Work アプリ用の電子メール プロファイルを展開する必要があります。また、必要なインストールとしてそのアプリを展開する必要があります。
+- EAS メール クライアント **Android 仕事用プロファイル デバイス:** Android 仕事用プロファイル デバイスでは、**仕事用プロファイル**の **Gmail** と **Nine Work for Android Enterprise** のみがサポートされています。 条件付きアクセスが Android 仕事用プロファイルで動作するには、Gmail アプリまたは Nine Work for Android Enterprise アプリ用の電子メール プロファイルを展開する必要があります。また、必要なインストールとしてそのアプリを展開する必要があります。
 
 > [!NOTE]
 > Android と iOS の Microsoft Outlook アプリはサポートされていません。 

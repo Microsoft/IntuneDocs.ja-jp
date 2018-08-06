@@ -1,41 +1,46 @@
 ---
-title: Windows 8.1 以降の Wi-Fi 設定のインポート
-titleSuffix: Microsoft Intune
-description: Wi-Fi 設定を Windows から Intune Wi-Fi プロファイルにインポートする方法。
+title: Microsoft Intune で Windows デバイス向けの Wi-Fi 設定をインポートする - Azure | Microsoft Docs
+description: netsh wlan を使用して、Windows デバイスから Wi-Fi 設定を XML ファイル形式でエクスポートします。 次に、Intune でこのファイルをインポートして、Windows 8.1、Windows 10、Windows Holographic for Business を実行するデバイス用の Wi-Fi プロファイルを作成します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 157416738e4607d5022f1c3c7ed8251a8e32fe3e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 6ce5cdd9509ed3407491714ccfa853613eb43973
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834018"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321137"
 ---
-# <a name="import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Microsoft Intune で Windows 8.1 以降のデバイス向け Wi-Fi 設定をインポートする
+# <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>Intune で Windows デバイス用の Wi-Fi 設定をインポートする
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Windows 8.1、Windows 10 デスクトップまたはモバイル、または Windows Holographic for Business を実行するデバイスの場合は、以前エクスポートされた Wi-Fi 構成プロファイルをファイルにインポートすることができます。
+Windows を実行するデバイスの場合は、以前エクスポートされた Wi-Fi 構成プロファイルをファイルにインポートすることができます。 **Windows 10 以降のデバイスでは、[Wi-Fi プロファイル](wi-fi-settings-windows.md)を Intune で直接作成できます**。
+
+適用先:  
+- Windows 8.1 以降
+- Windows 10 以降
+- Windows 10 デスクトップまたは Windows 10 Mobile
+- Windows Holographic for Business
 
 ## <a name="export-wi-fi-settings-from-a-windows-device"></a>Windows デバイスからの Wi-Fi 設定のエクスポート
 
-Windows で、**netsh wlan** ユーティリティを使用して、既存の Wi-Fi プロファイルを Intune で読み取れる XML ファイルにエクスポートします。 プロファイルを正常に使用するには、キーをプレーン テキストでエクスポートする必要があります。
+Windows で、**netsh wlan** を使用して、既存の Wi-Fi プロファイルを Intune で読み取れる XML ファイルにエクスポートします。 プロファイルを正常に使用するには、キーをプレーン テキストでエクスポートする必要があります。
 
 必要な Wi-Fi プロファイルが既にインストールされている Windows コンピューターでは、次の手順のようにします。
 
 1. エクスポートされた Wi-Fi プロファイル用のローカル フォルダー (**c:\WiFi** など) を作成します。
 2. コマンド プロンプトを管理者として開きます。
 3. `netsh wlan show profiles` コマンドを実行し、エクスポートするプロファイルの名前をメモします。 この例では、プロファイル名は **WiFiName** です。
-4. `netsh wlan export profile name="ProfileName" folder=c:\Wifi` コマンドを実行します。これにより、**Wi-Fi-WiFiName.xml** という名前の Wi-Fi プロファイル ファイルがターゲット フォルダーに作成されます。
+4. `netsh wlan export profile name="ProfileName" folder=c:\Wifi` コマンドを実行します。 これにより、**Wi-Fi-WiFiName.xml** という名前の Wi-Fi プロファイル ファイルがターゲット フォルダーに作成されます。
 
 ## <a name="import-the-wi-fi-settings-into-intune"></a>Intune への Wi-Fi 設定のインポート
 

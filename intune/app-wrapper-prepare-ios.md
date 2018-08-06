@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: edbd802b5f0482fc5dbaa801308447e2f8061189
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 050660b4da609d8e6c0dbf969eb71aa79945262a
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224937"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254537"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために iOS アプリを準備する
 
@@ -339,7 +339,7 @@ iOS 用アプリ ラッピング ツールには、すべての機能を保証�
 
     b.  目的の機能を有効にします。 各機能の詳細と正しい値の指定方法については、iOS 開発者ライブラリの「[Adding Capabilities (機能の追加)](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)」を参照してください。
 
-    c.  処理中に作成した ID をメモします。
+    c.  処理中に作成した ID をメモします。 また、これらは `AppIdentifierPrefix` 値として参照されることもあります。
 
     d.  ラップするアプリをビルドして署名します。
 
@@ -349,7 +349,7 @@ iOS 用アプリ ラッピング ツールには、すべての機能を保証�
 
     b.  アプリのプロビジョニング プロファイルを作成します。 手順については、「[iOS 用 Intune アプリ ラッピング ツールの前提条件を取得する方法](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)」を参照してください。
 
-    c.  プロビジョニング プロファイルで、アプリ内と同じ権利を有効にします。 アプリの開発時に指定したものと同じ ID を指定する必要があります。
+    c.  プロビジョニング プロファイルで、アプリ内と同じ権利を有効にします。 アプリの開発時に指定したものと同じ ID (`AppIdentifierPrefix` 値) を指定する必要があります。 
 
     d.  プロビジョニング プロファイル ウィザードを完了し、ファイルをダウンロードします。
 

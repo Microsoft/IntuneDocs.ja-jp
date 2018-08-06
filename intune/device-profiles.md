@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2018
+ms.date: 07/25/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f241c5bece72b44a6bd3c9047b5997bcd8879ec5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 8bb03becae1f28a3f5490a53576d5183c0b3ffaa
+ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905191"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39335828"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Microsoft Intune のデバイス プロファイルとは
 
@@ -113,6 +113,13 @@ Windows Defender Advanced Threat Protection (WDATP) と Microsoft Intune をオ�
 - iOS
 - macOS
 - Windows 8.1 (インポートのみ)
+
+## <a name="esim-cellular---public-preview"></a>eSIM 携帯電話 - パブリック プレビュー
+
+[eSIM 携帯電話プロファイル](esim-device-configuration.md)では、インターネットおよびデータ アクセス用にマネージド デバイスで携帯データ通信プランを構成することができます。  携帯電話会社からアクティブ化コードを取得した後、Intune を使用して、このアクティブ化コードをインポートし、eSIM 対応デバイスに割り当てることができます。
+
+この機能では以下をサポートします。
+- Windows 10 Fall Creators Update 以降
 
 ## <a name="education"></a>教育
 [教育設定 - Windows 10](education-settings-configure.md) では、[Windows テスト アプリ](https://education.microsoft.com/gettrained/win10takeatest)のオプションを構成します。 これらのオプションを構成するとき、テストが完了するまで他のアプリをデバイスで実行できません。

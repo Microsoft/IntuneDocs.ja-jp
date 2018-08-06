@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5ac976e07c98fae0941168cc94b5afc5ca09616
-ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
+ms.openlocfilehash: 0ada3be91c3b2c15e33e51449678212286362dbf
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964710"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321188"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Samsung の Knox Mobile Enrollment を使用して Android デバイスを自動的に登録する
 
@@ -32,9 +32,8 @@ Samsung KME を使って Intune の登録を有効にするには、Intune と S
     1. [MDM プロファイルを作成します](#create-mdm-profile)
     2. [デバイスを追加します](#add-devices)
     3. [MDM プロファイルをデバイスに割り当てます](#assign-an-mdm-profile-to-devices)
-2. Azure portal で、[デバイスを企業所有として識別します](#identify-devices-as-corporate-owned).
-3. Knox ポータルで、[エンド ユーザーのサインインを構成します](#configure-how-end-users-sign-in)。
-4. [デバイスを配布します](#distribute-devices)。
+2. Knox ポータルで、[エンド ユーザーのサインインを構成します](#configure-how-end-users-sign-in)。
+3. [デバイスを配布します](#distribute-devices)。
 
 
 Knox Deployment Program に参加している承認されたリセラーからデバイスを購入すると、デバイス識別子 (シリアル番号と IMEI) の一覧が Knox ポータルに自動的に追加されます。
@@ -79,22 +78,6 @@ Associate a Knox license with this profile (このプロファイルと Knox ラ
 ## <a name="assign-an-mdm-profile-to-devices"></a>デバイスに MDM プロファイルを割り当てる
 登録する前に、Knox ポータルで追加するデバイスに MDM プロファイルを割り当てる必要があります。 [デバイス構成については、Samsung Knox 登録ユーザー ガイドをご覧ください](https://docs.samsungknox.com/KME-Getting-Started/Content/configure-devices.htm)。
 
-## <a name="identify-devices-as-corporate-owned"></a>デバイスの企業所有としての識別
-KME を使って登録するデバイスを企業所有として識別できます。 これは、デバイスを登録する前に行う必要があります。 これにより、追加の管理タスクを実行して、完全な電話番号やアプリのインベントリなどの追加情報を収集できます。
-
-企業所有としてデバイスを識別するには、次の手順に従います。
-
-1. Knox ポータルから CSV ファイルとしてデバイス一覧をエクスポートします。
-
-2. [ここ](https://docs.microsoft.com/en-us/intune/corporate-identifiers-add#identify-corporate-owned-devices-with-imei-or-serial-number)で示されている IMEI またはシリアル番号を使用して CSV ファイルを書式設定します。
-
-3. Azure portal で、CSV ファイルを **[デバイスの登録]** > **[業務用デバイスの ID]** > **[追加]** にアップロードします。
-
-登録する識別されたデバイスが企業所有としてマークされます。
-
-> [!NOTE]
->Intune は、[デバイス登録マネージャー](https://docs.microsoft.com/en-us/intune/device-enrollment-manager-enroll) アカウントで登録されたデバイスに企業所有状態を自動的に割り当てます。
-
 ## <a name="configure-how-end-users-sign-in"></a>エンドユーザーのサインイン方法を構成する
 
 KME を使用して Intune に登録されたデバイスの場合、エンド ユーザーがサインインする方法を次のように構成できます。
@@ -121,7 +104,7 @@ MDM プロファイルを作成して割り当て、ユーザー名を関連付�
 
 - **"パスワード" フィールドが無視される:** Knox ポータルの **[Device details]\(デバイスの詳細\)** で **[Password]\(パスワード\)** フィールドを設定した場合、Intune ポータル サイト アプリでは無視されます。 エンド ユーザーは、デバイス登録を完了するにはデバイスでパスワードを入力する必要があります。
 
-- **"Android エンタープライズ登録"** KME では、Android エンタープライズ登録をサポートしていません。
+- **Android エンタープライズ登録**: KME では、Android エンタープライズ登録をサポートしていません。
 
 ## <a name="getting-support"></a>サポートの入手
 詳細については、[Samsung KME のサポートを取得する方法](https://docs.samsungknox.com/KME-Getting-Started/Content/to-get-kme-support.htm)をご覧ください。
