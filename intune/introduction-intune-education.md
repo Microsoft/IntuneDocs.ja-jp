@@ -40,6 +40,6 @@ Intune と Intune for Education の両方で、次のことができます。
 * デバイスやアプリをセキュリティ要件に準拠させます。
 
 ### <a name="next-steps"></a>次の手順
-* [Intune の 90 日間の評価版](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1)を使用して製品の理解を深める。 既に利用できる場合、https://intuneeducation.portal.azure.com) にアクセスして開始してください。
+* [Intune の 90 日間の評価版](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1)を使用して製品の理解を深める。 既に利用できる場合、 (https://intuneeducation.portal.azure.com) にアクセスして開始してください。
 * Intune for Education のクイック スタート ガイドは[こちら](/intune-education/what-is-express-configuration)をご覧ください。
 * Intune の[技術的要件と機能](/intune/supported-devices-browsers)を調べる

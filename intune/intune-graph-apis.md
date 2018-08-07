@@ -587,7 +587,7 @@ catch {
 
 また、
 
-- https://portal.office.com を使用して、ユーザー アカウントに Intune のライセンスを割り当てます。
+- を使用して、ユーザー アカウントに Intune のライセンスを割り当てます https://portal.office.com 。
 
 - 自身ではなく、クライアントの Azure AD テナントのドメインに対する認証のためにアプリケーション コードを更新します。
 
