@@ -106,8 +106,7 @@ Intune では、アプリを実行するデバイス上で必要なアプリを�
 ### <a name="set-up"></a>セットアップ
 - **[iOS VPP トークン]**: iOS Volume Purchase Program (VPP) のライセンスを適用し、表示します。 詳細については、次をご覧ください。
     - [iOS 大量購入アプリ](vpp-apps-ios.md)
-- 
-  **[Windows Enterprise 証明書]**: 基幹業務アプリを管理対象 Windows デバイスに配信するのに使用する、コード署名証明書の状態を適用または表示します。
+- **[Windows Enterprise 証明書]**: 基幹業務アプリを管理対象 Windows デバイスに配信するのに使用する、コード署名証明書の状態を適用または表示します。
 - **[Windows Symantec 証明書]** - XAP および WP8.x appx ファイルを Windows 10 Mobile デバイスに配布するのに必要な、Symantec コード署名証明書の状態を適用または表示します。
 - **[ビジネス向け Microsoft ストア]**: ビジネス向け Microsoft ストアとの統合を設定します。 その後、購入済みのアプリケーションを Intune に同期して割り当て、ライセンスの使用状況を追跡できるようになります。 詳細については、次をご覧ください。
     - [ビジネス向け Microsoft ストアのボリューム購入アプリ](windows-store-for-business.md)。
