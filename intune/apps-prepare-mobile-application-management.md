@@ -4,8 +4,8 @@ description: このトピックの情報は、カスタム基幹業務アプリ�
 keywords: ''
 author: erikre
 ms.author: erikre
-manager: angrobe
-ms.date: 05/17/2018
+manager: dougeby
+ms.date: 07/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 89a8f29e2e31cf59ed237cbfae5c557f60bd8dfa
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 351282634d6c6e087456e61e9fd967b70f9cf515
+ms.sourcegitcommit: c109ea6e9b7104630cd767aa27c5f7789286a906
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225190"
+ms.lasthandoff: 08/02/2018
+ms.locfileid: "39450792"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>アプリ保護ポリシーを利用するために基幹業務アプリで準備を行う
 
@@ -48,8 +48,8 @@ Intune に登録されていないデバイスのアプリ保護ポリシー用�
 
 |**アプリ ラッピング ツール** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**Android** |はい|はい|
-|**Android**| プレビュー |はい|
+|**Android** |いいえ - [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md) を使用します。|はい|
+|**Android**|いいえ - [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md) を使用します。|はい|
 
 ## <a name="intune-app-sdk"></a>Intune App SDK
 App SDK は、主として、Apple App Store または Google Play ストアにあるアプリを Intune で管理できるようにするお客様向けに設計されています。 ただし、どのようなアプリでも (基幹業務アプリでさえ)、SDK の統合を利用できます。

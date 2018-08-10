@@ -15,12 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9271ec1297298f70ce84a9f16a146302bc10070f
-ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
+ms.openlocfilehash: 5de27c745b1fb58a04b22361c3594b6ef430f4b2
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39254520"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362094"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する
 
@@ -124,7 +124,7 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
     ![ポータル サイトで認証します。](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
 
     > [!NOTE]
-    > プロファイルのプロパティが **[Enroll with User Affinity]\(ユーザー アフィニティを登録する\)** に設定されている場合、DEP 登録中に多要素認証 (MFA) は機能しません。 登録後、MFA はデバイスで期待どおりに動作します。 デバイスでは、最初のサインイン時にパスワードの変更が必要なユーザーにプロンプトを表示することができません。 さらに、パスワードの有効期限が切れているユーザーには、登録時にパスワードのリセットは求められません。 ユーザーは別のデバイスを使用してパスワードをリセットする必要があります。
+    > プロファイル プロパティを **[ユーザー アフィニティとともに登録する]** に、**[Apple セットアップ アシスタントの代わりにポータル サイトで認証します]** を **[いいえ]** に設定している場合、DEP 登録中、Multi-Factor Authentication (多要素認証/MFA) は機能しません。 登録後、MFA はデバイスで期待どおりに動作します。 デバイスでは、最初のサインイン時にパスワードの変更が必要なユーザーにプロンプトを表示することができません。 さらに、パスワードの有効期限が切れているユーザーには、登録時にパスワードのリセットは求められません。 ユーザーは別のデバイスを使用してパスワードをリセットする必要があります。
 
 6. **[デバイス管理の設定]** を選択し、このプロファイルを使用するデバイスを監視するかどうかを選択します。
 

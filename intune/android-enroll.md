@@ -15,12 +15,12 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f03c60c12bfd759c738de50d320787bf4b85f99d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 3b7652c8c4f471a0a0c32da23d8ac1859e84eb13
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909186"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400353"
 ---
 # <a name="enroll-android-devices"></a>Android デバイスの登録
 
@@ -38,7 +38,7 @@ Samsung Knox Standard を実行するデバイスが、Intune によるマルチ
 
 ## <a name="set-up-android-enrollment"></a>Android の登録を設定する
 
-Intune では、既定で Android および Samsung Knox Standard デバイスの登録が許可されています。 前提条件を満たした後に、管理者は、[デバイスを登録する方法をユーザーに通知](/intune-user-help/enroll-your-device-in-intune-android.md)する必要があります。
+Intune では、既定で Android および Samsung Knox Standard デバイスの登録が許可されています。 前提条件を満たした後に、管理者は、[デバイスを登録する方法をユーザーに通知](/intune-user-help/enroll-your-device-in-intune-android)する必要があります。
 
 ユーザーが登録した後に、[コンプライアンス ポリシーの割り当て](compliance-policy-create-android.md)、[アプリの管理](app-management.md)など、Intune でのデバイスの管理を開始することができます。
 

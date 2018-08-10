@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7eee5baebb8373488999a5e75db5288e483379e5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2900f7c211a675a20300a2e212b0d57bad3a597a
+ms.sourcegitcommit: 32a4b1eb6bf20da7262f27276f8e94e435803386
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905820"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39501151"
 ---
 # <a name="set-enrollment-restrictions"></a>登録制限を設定する
 
@@ -77,7 +77,7 @@ ms.locfileid: "37905820"
 4. **[デバイスの種類の制限]** で、設定する制限を選択します。
 5. 制限の名前 (既定の制限の場合は **[すべてのユーザー]**) で、**[プラットフォーム]** を選択します。 一覧されたプラットフォームごとに、**[許可]** または **[ブロック]** を選択します。
 6. **[保存]** を選択します。
-7. 制限の名前 (既定の制限の場合は **[すべてのユーザー]**) で、**[プラットフォーム構成]** を選択します。 次に、リストされているプラットフォームの最小および最大の **[バージョン]** を選択します。 サポートされているバージョンは次のとおりです。
+7. 制限の名前 (既定の制限の場合は **[すべてのユーザー]**) で、**[プラットフォーム構成]** を選択します。 次に、リストされているプラットフォームの最小および最大の **[バージョン]** を選択します。 サポートされるバージョン形式:
     - Android 仕事用プロファイルは major.minor.rev.build をサポートしています。
     - iOS では major.minor.rev がサポートされます。
     - Windows では major.minor.rev.build がサポートされます (Windows 10 の場合のみ)。

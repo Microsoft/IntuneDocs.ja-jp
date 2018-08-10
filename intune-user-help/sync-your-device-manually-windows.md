@@ -17,18 +17,18 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7c61ae0d60b2baf8bf9760297a5e35cbb5188de
-ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
+ms.openlocfilehash: 04737d1e800094f21a8bdaf42047f8bce7f48e6a
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39236057"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362026"
 ---
 # <a name="sync-your-windows-device-manually"></a>Windows デバイスを手動で同期する
 
 アプリのインストールの速度が理想より遅いときは、手動によるデバイスの同期を開始します。手動同期を行うと、最新の更新プログラムと通信のためにデバイスが Intune と強制的に接続されます。 デバイスの同期が完了した後、インストールの速度が向上する可能性があります。
 
-Intune は、Intune ポータル サイト アプリとデバイス設定アプリからの手動同期をサポートします。 
+Intune では、ポータル サイト アプリから、デスクトップ タスク バーまたはスタート メニューから、あるいはデバイス設定アプリから手動同期できます。 
 
 Intune ポータル サイト アプリの機能は、Creators Update (1703) 以降を実行する Windows 10 デバイスでサポートされます。 
 * [Intune ポータル サイト アプリからの同期](#Sync-from-Company-Portal-app-for-Windows)  
@@ -51,8 +51,19 @@ Creators Update (バージョン 1703) 以降を実行する Windows 10 デバ�
     
     ![[同期] ボタンが強調表示された Intune ポータル サイト アプリの設定ページのスクリーンショット](./media/RS1_settingspage_sync05.png)  
 
+## <a name="sync-from-device-taskbar-or-start-menu"></a>デバイス タスク バーまたはスタート メニューから同期する   
+
+デバイスのデスクトップから、アプリの外部にある同期コントロールにアクセスすることもできます。 タスク バーまたはスタート メニューにアプリが直接ピン留めされているとき、簡単に同期する場合、この方法が便利です。  
+
+1. タスク バーまたはスタート メニューでポータル サイトのアプリ アイコンを見つけます。  
+2. アプリ アイコンを右クリックし、メニュー (ジャンプ リストとも呼ばれています) を表示します。  
+
+    ![デバイスのデスクトップ上の Windows タスク バーのスクリーンショット。 ポータル サイトのアプリ アイコンをクリックすると、メニューにオプションの [タスク バーにピン留め]、[ウィンドウを閉じる]、[このデバイスを同期] アクションが表示されます。](./media/sync-device-from-start-menu-1807.png)  
+
+3. **[このデバイスを同期]** を選択します。 ポータル サイト アプリが開き、**[設定]** ページが表示され、同期が開始されます。  
+
 ## <a name="sync-from-settings-app"></a>設定アプリから同期する 
-Microsoft HoloLens、Windows 10 Desktop、Windows 10 Mobile、または Windows Phone 8.1 のデバイスを設定アプリから手動で同期するには、次の手順のようにします。
+Microsoft HoloLens、Windows 10 Desktop、Windows 10 Mobile、または Windows Phone 8.1 のデバイスを設定アプリから手動で同期するには、次の手順のようにします。  
 
 ### <a name="windows-10-desktop"></a>Windows 10 Desktop
 1. お使いのデバイスで、**[スタート]** > **[設定]** を選びます。

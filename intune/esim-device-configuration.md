@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 7/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ac3bbb4a32e86d756835d136cd3923676f022a7b
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: 45d41f02fdfff7179dbd43f4d2afdac3337f8b7f
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336052"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400285"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Intune で eSIM 携帯電話プロファイルを構成する - パブリック プレビュー
 
@@ -26,7 +26,7 @@ ms.locfileid: "39336052"
 
 ## <a name="introduction"></a>概要
 
-eSIM は埋め込み SIM チップであり、[Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro) などの eSIM 対応デバイス上で携帯データネットワーク接続を介してインターネットに接続することができます。 eSIM があれば、携帯電話会社から SIM カードを取得する必要はなく、携帯電話会社とデータ通信プランをすばやく切り替えることができます。
+eSIM は埋め込み SIM チップであり、[Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro) などの eSIM 対応デバイス上で携帯データネットワーク接続を介してインターネットに接続することができます。 eSIM を利用する場合、携帯電話会社から SIM カードを入手する必要はありません。 世界中を旅行する場合でも、携帯電話会社やデータ プランを切り替え、常に回線接続を維持できます。
 
 たとえば、仕事用には携帯データ通信プランを、個人用には異なる携帯電話会社による別のデータ通信プランを利用できます。 旅行時には、現地で通信プランを提供している携帯電話会社を見つけて、インターネットにアクセスすることができます。
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5278b631d581c892f68e8ba08c2bc7893cd3782a
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 423bfc02edb9260adadf0a6dc67e6299639c7fbb
+ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321742"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575051"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>SCEP 用のサード パーティ CA を Intune に追加するための API の使用
 
@@ -41,11 +41,18 @@ Microsoft が GitHub.com に公開しているオープンソース ライブラ
 - 証明機関の信頼されたルート証明書
 - 証明書の属性など
 
-Intune を使用してチェックインするデバイスには、SCEP プロファイルが割り当てられ、これらのパラメーターで構成されます。 Intune によって動的に生成された SCEP パスワードが作成され、デバイスに割り当てられます。
+Intune を使用してチェックインするデバイスには、SCEP プロファイルが割り当てられ、これらのパラメーターで構成されます。 動的生成の SCEP チャレンジ パスワードが Intune によって作成され、デバイスに割り当てられます。
 
-このパスワードには、デバイスが SCEP サーバーに発行する証明書署名要求 (CSR) に期待されているパラメーターの詳細が含まれます。 このパスワードには、チャレンジの有効期限も含まれます。 Intune は情報をこの暗号化し、暗号化された blob に署名し、これらの詳細を SCEP パスワードにパッケージ化します。
+このチャレンジの内容:
 
-デバイスは、証明書を要求するために SCEP サーバーに接続し、この SCEP パスワードを提供します。 このパスワードは、デバイスに証明書を発行するために、SCEP サーバーの検証に合格する必要があります。 SCEP パスワードが検証されると、以下のチェックが実行されます。
+- 動的に生成されたチャレンジ パスワード
+- デバイスによって SCEP サーバーに発行される証明書署名要求 (CSR) に求められるパラメーターの詳細
+- チャレンジの有効期限
+
+Intune によってこの情報が暗号化され、暗号化された blob に署名が与えられ、これらの詳細が SCEP パスワードにパッケージ化されます。
+
+証明書を要求する目的でデバイスから SCEP サーバーにコンタクトが取られ、この SCEP チャレンジ パスワードが与えられます。 SCEP サーバーから Intune に検証目的で CSR と暗号化された SCEP チャレンジ パスワードが送信されます。  このチャレンジ パスワードと CSR は、デバイスに証明書を発行するために、SCEP サーバーの検証に合格する必要があります。 SCEP チャレンジが検証されるとき、以下のチェックが実行されます。
+
 
 - 暗号化された blob の署名の検証
 - チャレンジの有効期限が切れていないことの検証
