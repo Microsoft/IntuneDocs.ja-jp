@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 07/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 53be8456b09c7775a4de827eb09680f47e8d62d7
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 2a3c4484eb80fd753d00c851d3e5dc6b5f48347a
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321562"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362060"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -1125,6 +1125,16 @@ macOS デバイスで Office アプリをインストールできるようにな
 
 
 ## <a name="notices"></a>通知
+
+### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>変更の計画: [次回の認証でパスワードを変更する] 設定を Intune に追加する <!-- 1873216 -->
+9 月のサービス リリースで、Intune では、macOS バージョン 10.13 以降を実行しているデバイスについて、Apple が新しく公開した **[次回の認証でパスワードを変更する]** 設定を統合する予定です。 この設定の導入前は、MDM プロバイダーは、デバイスのパスコードがポリシーに準拠するように変更されたことを確認できませんでした。 Intune の構成とコンプライアンスのポリシーでは、次回デバイスのパスワードが変更されること、それがポリシー準拠として見なされることのみを検証されます。 Apple のこの新しい機能が追加されると、macOS ユーザーには、パスワードがポリシーに準拠していても更新するように要求が届きます。
+
+#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
+Intune またはハイブリッド MDM を使用している macOS デバイス ポリシーの環境に影響が出ます。 今回、Apple が **[次回の認証でパスワードを変更する]** 設定を備えたことで、Intune では、パスワード ポリシーがプッシュされたときにパスワードを更新するようにユーザーに強制できます。 デバイスがポリシー準拠であると見なされるまで会社のリソースをブロックすると、エンド ユーザーは自分のパスワードをリセットするまで、電子メールや SharePoint サイトなど、会社のリソースにアクセスできなくなる可能性があります。 今後、構成とコンプライアンスのパスワード ポリシーが更新されるたびに、対象となるユーザーには自分のパスワードの更新が強制されます。
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
+ヘルプデスクにお知らせください。 この macOS デバイス ポリシーを強制しない場合、既存の macOS ポリシーの割り当てを解除すること、あるいは削除さすることをお勧めします。 顧客調査により、ほとんどの顧客がこの変更の影響を受けないことが示されています。 ほとんどのエンド ユーザーはパスワードの登録要求またはリセット要求が届くと自分のパスワードを更新し、ポリシー準拠の状態を維持します。
+
 
 ### <a name="plan-for-change-intune-moving-to-support-ios-10-and-later-in-september----2454656---"></a>変更の計画: Intune は 9 月に iOS 10 以降をサポートするようになります<!-- 2454656 -->
 9 月に Apple は iOS 12 をリリースする予定です。 このリリース直後に、Microsoft では iOS 10 以降をサポートするように Intune の登録、ポータル サイト、および Managed Browser を移行します。  
