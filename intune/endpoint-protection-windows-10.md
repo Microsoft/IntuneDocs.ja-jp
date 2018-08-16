@@ -98,7 +98,7 @@ Application Guard は Windows 10 (64 ビット) デバイスでのみ使用可�
 
 ## <a name="windows-defender-smartscreen-settings"></a>Windows Defender SmartScreen 設定
 
-Edge をインストールした、次のエディションの Windows 10 でサポートされます。
+Microsoft Edge をインストールした、次のエディションの Windows 10 でサポートされます。
 - ホーム
 - プロフェッショナル
 - Business

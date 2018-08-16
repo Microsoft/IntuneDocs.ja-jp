@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab6c808fc860491ddece5751983071d40864c8dd
-ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
+ms.openlocfilehash: 2f9849b2c327397c0b8945ee42d9fca7f9f46250
+ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575085"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40001912"
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2018"></a>Microsoft Intune の初期エディション - 2018 年 8 月
 
@@ -75,7 +75,7 @@ Intune リソースへのアクセスを制限する目的で、スコープ タ
 スコープ タグをロールの割り当てに追加するには、**[Intune ロール]**、**[すべてのロール]**、**[ポリシーおよびプロファイル マネージャー]**、**[割り当て]**、**[スコープ (タグ)]** の順に選択します。
 スコープ タグを構成プロファイルに追加するには、**[デバイス構成]**、**[プロファイル]** の順に選択し、プロファイルを選択して **[プロパティ]**、**[スコープ (タグ)]** の順に選択します。
 
-### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>AutoPilot デバイスにユーザーとわかりやすい名前を割り当てる <!--1346521 -->
+### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>Autopilot デバイスにユーザーとわかりやすい名前を割り当てる <!--1346521 -->
 今後のパブリック プレビューでは、管理者は 1 つの AutoPilot デバイスにユーザーを割り当てることができるようになります。  管理者はまた、AutoPilot でデバイスを設定するユーザーにとってわかりやすい名前を与えることができます。
 
 適用対象: Windows Insider 1809 以降のビルド (プレビューの間)。
@@ -99,30 +99,29 @@ Intune の[モバイル デバイス管理](windows-enroll.md)で Windows 個人
 この制限をオンにしても、既に登録されているデバイスには影響がありません。
 制限をオンにすると、Intune では、新しい Windows 登録要求がすべて会社の登録として認証されていることが確認されます。 次の方法は、会社の登録として認証されたものと見なされます。
 - 登録ユーザーは[デバイス登録マネージャー アカウント]( device-enrollment-manager-enroll.md)を使用しています。
-
-- デバイスは [Windows AutoPilot](enrollment-autopilot.md) 経由で登録されます。
+- デバイスは [Windows Autopilot](enrollment-autopilot.md) 経由で登録されます。
 - デバイスの IMEI 番号が **[デバイスの登録]** の **[[業務用デバイスの ID]]( corporate-identifiers-add.md)** に記載されています。
 - デバイスが[一括プロビジョニング パッケージ](windows-bulk-enroll.md)経由で登録されます。
 - デバイスが[共同管理用の SCCM からの自動登録](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management)経由で登録されます。
-無許可の登録はブロックされます。
-次の登録は Intune で会社として見なされますが、Intune 管理者のデバイスごとのコントロールがないため、ブロックされます。
+
+無許可の登録はブロックされます。 次の登録は Intune で会社として見なされますが、Intune 管理者のデバイスごとのコントロールがないため、ブロックされます。
 - [自動 MDM 登録](windows-enroll.md#enable-windows-10-automatic-enrollment)と [Windows セットアップ中の Azure Active Directory 参加](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)。
 - [自動 MDM 登録](windows-enroll.md#enable-windows-10-automatic-enrollment)と [Windows セットアップからの Azure Active Directory 参加](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)。
+
 次の個人登録方法もブロックされます。
 - [自動 MDM 登録](windows-enroll.md#enable-windows-10-automatic-enrollment)と [Windows 設定からの職場アカウントの追加](https://docs.microsoft.com/azure/active-directory/user-help/device-management-azuread-registered-devices-windows10-setup)。
-
 - Windows 設定からの [MDM 登録のみ]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device)オプション。
 
-### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>AutoPilot プロファイルにコンピューター名パターンを指定する <!--1849855-->
-AutoPilot 登録中、生成するコンピューター名テンプレートを指定したり、[コンピューター名](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)を設定したりできるようになります。 これは、**[デバイスの登録]**、 > **[Windows の登録]**、 > **[Windows Autopilot Deployment service]\(Windows AutoPilot デプロイ サービス\)**、 > **[プロファイル]** にある AutoPilot プロファイルに指定する必要があります。 英数字とハイフンのみ使用できます。
+### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>Autopilot プロファイルにコンピューター名パターンを指定する <!--1849855-->
+Autopilot 登録中、生成するコンピューター名テンプレートを指定したり、[コンピューター名](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)を設定したりできるようになります。 これは、**[デバイスの登録]** > **[Windows の登録]** > **[Windows Autopilot Deployment service]\(Windows AutoPilot デプロイ サービス\)** > **[プロファイル]** にある Autopilot プロファイルに指定する必要があります。 英数字とハイフンのみ使用できます。
 適用対象: Windows Insider 1809 以降のビルド (プレビューの間)。
 
 ### <a name="ios-version-number-and-build-number-are-shown----1892471---"></a>iOS のバージョン番号とビルド番号が表示される <!-- 1892471 -->
 **[デバイスのポリシー準拠]** の **[デバイスのポリシー準拠]** に iOS のオペレーティング システム バージョンが表示されます。 今後の更新で、ビルド番号も表示されるようになります。
 セキュリティ更新がリリースされるとき、Apple は通常、バージョン番号を現状のまま残しますが、ビルド番号を更新します。 ビルド番号を表示することで、脆弱性更新がインストールされているかどうかを簡単に確認できます。
 
-### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>Windows AutoPilot プロファイルの場合、会社のサインイン ページとドメイン エラー ページでアカウント変更オプションを非表示にする <!--1901669 -->
-パブリック プレビューに、会社のサインイン ページとドメイン エラー ページでアカウント変更オプションを管理者が非表示にするための新しい Windows AutoPilot プロファイル オプションが含まれます。 これらのオプションを非表示にするには、Azure Active Directory で会社のブランドを構成する必要があります。 適用対象: Windows Insider 1809 以降のビルド (プレビューの間)。
+### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>Windows Autopilot プロファイルの場合、会社のサインイン ページとドメイン エラー ページでアカウント変更オプションを非表示にする <!--1901669 -->
+パブリック プレビューに、会社のサインイン ページとドメイン エラー ページでアカウント変更オプションを管理者が非表示にするための新しい Windows Autopilot プロファイル オプションが含まれます。 これらのオプションを非表示にするには、Azure Active Directory で会社のブランドを構成する必要があります。 適用対象: Windows Insider 1809 以降のビルド (プレビューの間)。
 
 ### <a name="delay-when-ios-software-updates-are-shown-on-the-device----1949583---"></a>iOS ソフトウェア更新がデバイスに表示されるときの遅延 <!-- 1949583 -->
 Intune の **[ソフトウェアの更新]** の **[iOS のポリシーを更新する]** で、デバイスにあらゆる更新プログラムをインストールしない日時を構成できます。 今後の更新では、1 日から 90 日までの間で、ソフトウェア更新が表示されるタイミングを遅らせることができるようになります。 
@@ -167,6 +166,13 @@ Windows 10 VPN 設定に関する[こちら](vpn-settings-windows-10.md)のペ�
 Azure クラシック ポータルで作成されたコンプライアンス ポリシーは非推奨になる予定です。  非推奨になったとき、既存のポリシーは確認したり、削除したりできますが、更新することはできません。 コンマ区切りファイル (.csv ファイル) としてポリシーをエクスポートできます。 エクスポート後、ファイルに含まれる詳細を利用し、Intune Azure portal でこれらのポリシーを再作成してください。
 > [!IMPORTANT]
 > Azure クラシック ポータルが廃止されると、ポリシーにアクセスできません。ポリシーを表示することもできません。 そのため、必ずポリシーをエクスポートし、Azure クラシック ポータルが廃止になる前に Azure portal で再作成してください。
+
+### <a name="change-terminology-to-retire-and-wipe----2175759---"></a>"削除" と "ワイプ" への用語変更 <!-- 2175759 -->
+Graph API との一貫性を保つために、Intune のユーザー インターフェイスとドキュメントにおいて次の用語が変更されます。
+- **[会社データの削除]** は **[削除]** に変更されます
+- **[出荷時の設定にリセット]** は **[ワイプ]** に変更されます
+
+
 
 <!-- 1807 start -->
 
