@@ -49,8 +49,7 @@ Android 仕事用プロファイル管理を設定するには、次の手順を
 
 Intune ポータル サイトを承認するには、次の手順のようにします。
 
-1.  
-  [管理対象の Google Play ストア](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal)のポータル サイト アプリを参照します。
+1.  [管理対象の Google Play ストア](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal)のポータル サイト アプリを参照します。
 2.  Android エンタープライズのバインディングを構成するときに使ったものと同じ Google アカウントで、managed Google Play ストアにサインインします。
 3.  **[承認]** をクリックすると、新しいダイアログが開きます。
 4.  このダイアログでアクセス許可を確認し、**[承認]** をクリックします。 ポータル サイト アプリがデバイスの仕事用プロファイルを管理できるようにするには、これらのアクセス許可を許可する必要があります。
