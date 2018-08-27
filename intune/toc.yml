@@ -1,791 +1,806 @@
+items:
 - name: 概要
   href: introduction-intune.md
-  expanded: true
   items:
-    - name: Azure ポータルとは?
-      href: what-is-intune.md
-    - name: 教育用の Intune とは
-      href: introduction-intune-education.md
-    - name: Azure での Intune の機能
-      href: ui-changes.md
-      items:
-        - name: グループへの変更
-          href: groups-get-started.md
-        - name: レガシ Intune PC クライアント
-          href: intune-legacy-pc-client.md
-    - name: 無料評価版にサインアップ
-      href: free-trial-sign-up.md
-    - name: 新機能
-      href: whats-new.md
-      items:
-        - name: アプリの UI の新機能
-          href: whats-new-app-ui.md
-        - name: 新しいアーカイブとは (Azure Portal)
-          href: whats-new-archive.md
-        - name: 新しいアーカイブとは (従来のポータル)
-          href: whats-new-archive-classic.md
-    - name: サービスの説明
-      href: microsoft-intune-service-description.md
-    - name: 既知の問題
-      href: known-issues.md
-    - name: サポートを受ける
-      href: get-support.md
+  - name: Azure ポータルとは?
+    href: what-is-intune.md
+  - name: 教育用の Intune とは
+    href: introduction-intune-education.md
+  - name: Azure での Intune の機能
+    href: ui-changes.md
+    items:
+    - name: グループへの変更
+      href: groups-get-started.md
+    - name: レガシ Intune PC クライアント
+      href: intune-legacy-pc-client.md
+  - name: 無料評価版にサインアップ
+    href: free-trial-sign-up.md
+  - name: 新機能
+    href: whats-new.md
+    items:
+    - name: アプリの UI の新機能
+      href: whats-new-app-ui.md
+    - name: 新しいアーカイブとは (Azure Portal)
+      href: whats-new-archive.md
+    - name: 新しいアーカイブとは (従来のポータル)
+      href: whats-new-archive-classic.md
+  - name: サービスの説明
+    href: microsoft-intune-service-description.md
+  - name: 既知の問題
+    href: known-issues.md
+  - name: サポートを受ける
+    href: get-support.md
+  expanded: true
 - name: クイックスタート
   href: get-started-evaluation.md
   items:
-    - name: Azure Portal での操作
-      href: get-started-azure.md
-    - name: ユーザーを作成する
-      href: get-started-users.md
-    - name: グループの作成
-      href: get-started-groups.md
-    - name: ポリシーの割り当て
-      href: get-started-policies.md
-    - name: デバイスの登録
-      href: get-started-enroll.md
-    - name: アプリを割り当てる
-      href: get-started-apps.md
+  - name: Azure Portal での操作
+    href: get-started-azure.md
+  - name: ユーザーを作成する
+    href: get-started-users.md
+  - name: グループの作成
+    href: get-started-groups.md
+  - name: ポリシーの割り当て
+    href: get-started-policies.md
+  - name: デバイスの登録
+    href: get-started-enroll.md
+  - name: アプリを割り当てる
+    href: get-started-apps.md
 - name: シナリオの実装ガイド
   items:
-    - name: Exchange Online の保護
-      href: exchange-online-protect.md
-    - name: ヘルプ デスクのコストの削減
-      href: password-reset.md
-    - name: 無許可のアクセスの防止
-      href: data-outside-protect.md
-    - name: 管理されていないデバイスでのデータ漏洩の防止
-      href: data-leak-prevention.md
-    - name: MDM と MAM の比較
-      href: byod-technology-decisions.md
+  - name: Exchange Online の保護
+    href: exchange-online-protect.md
+  - name: ヘルプ デスクのコストの削減
+    href: password-reset.md
+  - name: 無許可のアクセスの防止
+    href: data-outside-protect.md
+  - name: 管理されていないデバイスでのデータ漏洩の防止
+    href: data-leak-prevention.md
+  - name: MDM と MAM の比較
+    href: byod-technology-decisions.md
 - name: 概念
   items:
-    - name: 高レベル アーキテクチャ
-      href: high-level-architecture.md
-    - name: デバイスとアプリのライフサイクル
-      href: introduction-device-app-lifecycles.md
-      items:
-        - name: デバイスのライフサイクル
-          href: device-lifecycle.md
-        - name: アプリのライフサイクル
-          href: app-lifecycle.md
-    - name: 一般的なシナリオ
-      href: common-scenarios.md
-    - name: MAM のよく寄せられる質問
-      href: mam-faq.md
-    - name: ポリシーとプロファイルのよく寄せられる質問
-      href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
+  - name: 高レベル アーキテクチャ
+    href: high-level-architecture.md
+  - name: デバイスとアプリのライフサイクル
+    href: introduction-device-app-lifecycles.md
+    items:
+    - name: デバイスのライフサイクル
+      href: device-lifecycle.md
+    - name: アプリのライフサイクル
+      href: app-lifecycle.md
+  - name: 一般的なシナリオ
+    href: common-scenarios.md
+  - name: MAM のよく寄せられる質問
+    href: mam-faq.md
+  - name: ポリシーとプロファイルのよく寄せられる質問
+    href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: 展開の計画
   items:
-    - name: 計画ガイド
-      href: planning-guide.md
+  - name: 計画ガイド
+    href: planning-guide.md
+    items:
+    - name: 目標と目的の決定
+      href: planning-guide-deployment-goals.md
+    - name: シナリオの識別
+      href: planning-guide-scenarios.md
+    - name: 要件の決定
+      href: planning-guide-requirements.md
+    - name: ロールアウト計画を作成する
+      href: planning-guide-rollout-plan.md
+    - name: コミュニケーション計画の作成
+      href: planning-guide-communication-plan.md
+    - name: サポート計画を作成する
+      href: planning-guide-support-plan.md
+    - name: 設計
+      href: planning-guide-design.md
+    - name: 実装
+      href: planning-guide-onboarding.md
+    - name: テストと検証
+      href: planning-guide-test-validation.md
+    - name: その他のリソース
+      href: planning-guide-resources.md
+  - name: 移行ガイド
+    href: migration-guide.md
+    items:
+    - name: Intune の準備
+      href: migration-guide-prepare.md
       items:
-        - name: 目標と目的の決定
-          href: planning-guide-deployment-goals.md
-        - name: シナリオの識別
-          href: planning-guide-scenarios.md
-        - name: 要件の決定
-          href: planning-guide-requirements.md
-        - name: ロールアウト計画を作成する
-          href: planning-guide-rollout-plan.md
-        - name: コミュニケーション計画の作成
-          href: planning-guide-communication-plan.md
-        - name: サポート計画を作成する
-          href: planning-guide-support-plan.md
-        - name: 設計
-          href: planning-guide-design.md
-        - name: 実装
-          href: planning-guide-onboarding.md
-        - name: テストと検証
-          href: planning-guide-test-validation.md
-        - name: その他のリソース
-          href: planning-guide-resources.md
-    - name: 移行ガイド
-      href: migration-guide.md
+      - name: 基本的なセットアップ
+        href: migration-guide-setup.md
+      - name: デバイスおよびアプリの管理ポリシーの構成
+        href: migration-guide-configure-policies.md
+      - name: アプリの保護ポリシーの構成
+        href: migration-guide-app-protection-policies.md
+      - name: 移行に関する考慮事項
+        href: migration-guide-considerations.md
+    - name: 移行のキャンペーン
+      href: migration-guide-campaign.md
       items:
-        - name: Intune の準備
-          href: migration-guide-prepare.md
-          items:
-            - name: 基本的なセットアップ
-              href: migration-guide-setup.md
-            - name: デバイスおよびアプリの管理ポリシーの構成
-              href: migration-guide-configure-policies.md
-            - name: アプリの保護ポリシーの構成
-              href: migration-guide-app-protection-policies.md
-            - name: 移行に関する考慮事項
-              href: migration-guide-considerations.md
-        - name: 移行のキャンペーン
-          href: migration-guide-campaign.md
-          items:
-            - name: 通信手段の計画
-              href: migration-guide-communication-plan.md
-            - name: 採用の推進
-              href: migration-guide-drive-adoption.md
-            - name: 標準的な移行サイクル
-              href: migration-guide-cycle.md
+      - name: 通信手段の計画
+        href: migration-guide-communication-plan.md
+      - name: 採用の推進
+        href: migration-guide-drive-adoption.md
+      - name: 標準的な移行サイクル
+        href: migration-guide-cycle.md
 - name: 操作方法のガイド
   items:
-    - name: Intune をセットアップする
-      href: setup-steps.md
+  - name: Intune をセットアップする
+    href: setup-steps.md
+    items:
+    - name: サポートされている構成
+      href: supported-devices-browsers.md
       items:
-        - name: サポートされている構成
-          href: supported-devices-browsers.md
-          items:
-            - name: ネットワーク構成
-              href: network-bandwidth-use.md
-        - name: Intune にサインインする
-          href: account-sign-up.md
-        - name: ドメインを構成する
-          href: custom-domain-name-configure.md
-        - name: ユーザーの追加
-          href: users-add.md
-        - name: グループの追加
-          href: groups-add.md
-        - name: ライセンスの割り当て
-          href: licenses-assign.md
-        - name: Intune のライセンス
-          href: licenses.md
-        - name: MDM 機関を設定する
-          href: mdm-authority-set.md
-    - name: デバイスの登録
-      href: device-enrollment.md
+      - name: ネットワーク構成
+        href: network-bandwidth-use.md
+    - name: Intune にサインインする
+      href: account-sign-up.md
+    - name: ドメインを構成する
+      href: custom-domain-name-configure.md
+    - name: ユーザーの追加
+      href: users-add.md
+    - name: グループの追加
+      href: groups-add.md
+    - name: ライセンスの割り当て
+      href: licenses-assign.md
+    - name: Intune のライセンス
+      href: licenses.md
+    - name: MDM 機関を設定する
+      href: mdm-authority-set.md
+  - name: デバイスの登録
+    href: device-enrollment.md
+    items:
+    - name: 登録オプション
+      href: enrollment-options.md
       items:
-        - name: 登録オプション
-          href: enrollment-options.md
-          items:
-            - name: Intune の登録および会社アクセスに関する使用条件
-              href: terms-and-conditions-create.md
-            - name: 制限
-              href: enrollment-restrictions-set.md
-            - name: Apple MDM プッシュ通知証明書
-              href: apple-mdm-push-certificate-get.md
-            - name: 企業 ID
-              href: corporate-identifiers-add.md
-            - name: Multi-Factor Authentication
-              href: multi-factor-authentication.md
-            - name: デバイス登録マネージャー
-              href: device-enrollment-manager-enroll.md
-            - name: デバイスをグループにマッピングする
-              href: device-group-mapping.md
-        - name: Windows の登録の設定
-          items:
-            - name: Windows の登録
-              href: windows-enroll.md
-            - name: 一括登録
-              href: windows-bulk-enroll.md
-            - name: 登録状態ページ
-              href: windows-enrollment-status.md
-            - name: Windows AutoPilot Deployment プログラム
-              href: enrollment-autopilot.md
-        - name: Android の登録を設定する
-          items:
-            - name: Android の登録を設定する
-              href: android-enroll.md
-            - name: Intune を Android エンタープライズに接続する
-              href: connect-intune-android-enterprise.md
-            - name: Android の仕事用プロファイルの登録を設定する
-              href: android-work-profile-enroll.md
-            - name: Android のキオスクの登録を設定する
-              href: android-kiosk-enroll.md
-            - name: Android の仕事用プロファイルのデバイスを管理する
-              href: android-enterprise-overview.md
-            - name: Samsung Knox Mobile Enrollment
-              href: android-samsung-knox-mobile-enroll.md
-        - name: iOS の登録の設定
-          href: ios-enroll.md
-          items:
-            - name: デバイス登録プログラム
-              href: device-enrollment-program-enroll-ios.md
-            - name: Apple School Manager
-              href: apple-school-manager-set-up-ios.md
-            - name: Apple Configurator
-              href: apple-configurator-enroll-ios.md
-        - name: macOS の登録を設定する
-          href: macos-enroll.md
-        - name: Windows PC に Intune ソフトウェア クライアントをインストールする
-          href: install-the-windows-pc-client-with-microsoft-intune.md
-        - name: デバイス登録に関するトラブルシューティング
-          href: troubleshoot-device-enrollment-in-intune.md
-    - name: デバイスの管理
-      href: device-management.md
+      - name: Intune の登録および会社アクセスに関する使用条件
+        href: terms-and-conditions-create.md
+      - name: 制限
+        href: enrollment-restrictions-set.md
+      - name: Apple MDM プッシュ通知証明書
+        href: apple-mdm-push-certificate-get.md
+      - name: 企業 ID
+        href: corporate-identifiers-add.md
+      - name: Multi-Factor Authentication
+        href: multi-factor-authentication.md
+      - name: デバイス登録マネージャー
+        href: device-enrollment-manager-enroll.md
+      - name: デバイスをグループにマッピングする
+        href: device-group-mapping.md
+    - name: Windows の登録の設定
       items:
-        - name: デバイス管理機能
-          href: device-management-capabilities.md
-        - name: アクティベーション ロックのバイパス
-          href: device-activation-lock-bypass.md
-        - name: Windows の新たに開始機能の管理
-          href: device-fresh-start.md
-        - name: 紛失した iOS デバイスを探す
-          href: device-locate.md
-        - name: iOS 紛失モードの有効化
-          href: device-lost-mode.md
-        - name: iOS の監視モードを有効にする
-          href: device-supervised-mode.md
-        - name: デバイスのロック
-          href: device-remote-lock.md
-        - name: パスコードのリセット
-          href: device-passcode-reset.md
-        - name: デバイスの再起動
-          href: device-restart.md
-        - name: 現在のユーザーのログアウト
-          href: device-logout-user.md
-        - name: ユーザーの削除
-          href: device-remove-user.md
-        - name: デバイスの消去
-          href: device-erase.md
-        - name: モバイル デバイスのリモート制御
-          href: device-profile-android-teamviewer.md
-        - name: Windows 10 の PIN のリセット
-          href: device-windows-pin-reset.md
-        - name: デバイスの同期
-          href: device-sync.md
-        - name: デバイス インベントリの確認
-          href: device-inventory.md
-        - name: デバイスの削除
-          href: devices-wipe.md
-    - name: アプリを管理する
-      href: app-management.md
+      - name: Windows の登録
+        href: windows-enroll.md
+      - name: 一括登録
+        href: windows-bulk-enroll.md
+      - name: 登録状態ページ
+        href: windows-enrollment-status.md
+      - name: Windows AutoPilot Deployment プログラム
+        href: enrollment-autopilot.md
+    - name: Android の登録を設定する
       items:
-        - name: アプリを追加する
-          href: apps-add.md
-          items:
-            - name: ストア アプリ
-              items:
-                - name: Android ストア アプリ
-                  href: store-apps-android.md
-                - name: iOS ストア アプリ
-                  href: store-apps-ios.md
-                - name: Windows Phone 8.1 ストア アプリ
-                  href: store-apps-windows-phone-8-1.md
-                - name: Microsoft ストア アプリ
-                  href: store-apps-windows.md
-                  items:
-                    - name: ポータル サイト アプリを手動で追加する
-                      href: store-apps-company-portal-app.md
-                - name: Android の仕事用プロファイルのアプリ
-                  href: apps-add-android-for-work.md
-                - name: Windows 10 用の Office 365 アプリ
-                  href: apps-add-office365.md
-                - name: macOS 用の Office 365 アプリ
-                  href: apps-add-office365-macos.md
-            - name: アプリ (LOB) のビルド
-              items:
-                - name: Android LOB アプリ
-                  href: lob-apps-android.md
-                - name: iOS LOB アプリ
-                  href: lob-apps-ios.md
-                - name: Windows Phone LOB アプリ
-                  href: lob-apps-windows-phone.md
-                - name: Windows LOB アプリ
-                  href: lob-apps-windows.md
-                - name: Windows LOB アプリをサイドロードする
-                  href: app-sideload-windows.md
-                - name: macOS LOB アプリ
-                  href: lob-apps-macos.md
-            - name: Web アプリ
-              href: web-app.md
-            - name: 組み込みアプリ
-              href: apps-add-built-in.md
-        - name: アプリの展開
-          href: apps-deploy.md
-          items:
-            - name: アプリの組み込みおよび除外
-              href: apps-inc-exl-assignments.md
-            - name: Windows 10アプリデプロイ
-              href: apps-windows-10-app-deploy.md
-        - name: アプリの監視
-          href: apps-monitor.md
-        - name: アプリの構成
-          href: app-configuration-policies-overview.md
-          items:
-            - name: iOS マネージド デバイス
-              href: app-configuration-policies-use-ios.md
-            - name: Android マネージド デバイス
-              href: app-configuration-policies-use-android.md
-            - name: Managed apps
-              href: app-configuration-policies-managed-app.md
-            - name: iOS アプリ プロビジョニング プロファイルを使用する
-              href: app-provisioning-profile-ios.md
-            - name: ボリューム購入アプリと書籍の操作
-              href: vpp-apps.md
-              items:
-                - name: iOS VPP アプリ
-                  href: vpp-apps-ios.md
-                - name: ビジネス向け Microsoft ストア アプリ
-                  href: windows-store-for-business.md
-                - name: iOS 電子ブック
-                  href: vpp-ebooks-ios.md
-            - name: ポータル サイト アプリを構成する
-              href: company-portal-app.md
-            - name: Managed Browser の構成
-              href: app-configuration-managed-browser.md
-        - name: アプリの保護
-          items:
-            - name: 選択的にアプリをワイプする
-              href: apps-selective-wipe.md
-            - name: アプリ保護ポリシーの使用
-              href: app-protection-policy.md
-              items:
-                - name: アプリ保護ポリシーの作成
-                  href: app-protection-policies.md
-                  items:
-                    - name: Android の設定
-                      href: app-protection-policy-settings-android.md
-                    - name: iOS の設定
-                      href: app-protection-policy-settings-ios.md
-                    - name: アクセス アクション
-                      href: app-protection-policies-access-actions.md
-                    - name: データ転送の例外
-                      href: app-protection-policies-exception.md
-                - name: アプリ保護ポリシーを検証する
-                  href: app-protection-policies-validate.md
-                - name: アプリ保護のユーザーの状態を監視する
-                  href: app-protection-policies-monitor.md
-                - name: WIP アプリ保護ポリシーの準備をする
-                  href: app-protection-policies-configure-windows-10.md
-                - name: WIP アプリ保護ポリシーの作成と割り当て
-                  href: windows-information-protection-policy-create.md
-                - name: iOS アプリ間のデータ転送を管理する
-                  href: data-transfer-between-apps-manage-ios.md
-    - name: デバイスの構成
-      href: device-profiles.md
+      - name: Android の登録を設定する
+        href: android-enroll.md
+      - name: Intune を Android エンタープライズに接続する
+        href: connect-intune-android-enterprise.md
+      - name: Android の仕事用プロファイルの登録を設定する
+        href: android-work-profile-enroll.md
+      - name: Android のキオスクの登録を設定する
+        href: android-kiosk-enroll.md
+      - name: Android の仕事用プロファイルのデバイスを管理する
+        href: android-enterprise-overview.md
+      - name: Samsung Knox Mobile Enrollment
+        href: android-samsung-knox-mobile-enroll.md
+    - name: iOS の登録の設定
+      href: ios-enroll.md
       items:
-        - name: デバイス プロファイルを構成する
-          href: device-profile-create.md
-        - name: デバイス機能を構成する
-          href: device-features-configure.md
-          items:
-            - name: iOS および macOS 用 AirPrint
-              href: air-print-settings-ios-macos.md
-            - name: iOS 用 AirPlay
-              href: airplay-settings-ios.md
-            - name: iOS 用ホーム画面のレイアウト
-              href: home-screen-settings-ios.md
-            - name: iOS 用アプリの通知
-              href: app-notification-settings-ios.md
-            - name: iOS 用共有デバイス
-              href: shared-device-settings-ios.md
-            - name: iOS 用 Intune のデバイス シングル サインオンを構成する
-              href: sso-ios.md
-            - name: iOS 用 Web フィルター設定
-              href: web-content-filter-settings-ios.md
-        - name: デバイス制限を構成する
-          href: device-restrictions-configure.md
-          items:
-            - name: Android
-              href: device-restrictions-android.md
-            - name: iOS
-              href: device-restrictions-ios.md
-            - name: macOS
-              href: device-restrictions-macos.md
-            - name: Windows 8.1
-              href: device-restrictions-windows-8-1.md
-            - name: Windows Phone 8。1
-              href: device-restrictions-windows-phone-8-1.md
-            - name: Windows 10
-              href: device-restrictions-windows-10.md
-            - name: Windows 10 Team
-              href: device-restrictions-windows-10-teams.md
-            - name: Windows Holographic for Business
-              href: device-restrictions-windows-holographic.md
-            - name: Android の仕事用プロファイル
-              href: device-restrictions-android-for-work.md
-        - name: エンドポイント保護の構成
-          href: endpoint-protection-configure.md
-          items:
-            - name: macOS
-              href: endpoint-protection-macos.md
-            - name: Windows 10
-              href: endpoint-protection-windows-10.md
-        - name: Android キオスクの設定
-          href: android-kiosk-settings.md
-        - name: Android エンタープライズ キオスクの設定
-          href: android-enterprise-settings.md
-        - name: Windows 10 キオスクの設定
-          href: kiosk-settings.md
-        - name: 電子メールの設定を構成する
-          href: email-settings-configure.md
-          items:
-            - name: Android
-              href: email-settings-android.md
-            - name: iOS
-              href: email-settings-ios.md
-            - name: Windows Phone 8。1
-              href: email-settings-windows-phone-8-1.md
-            - name: Windows 10
-              href: email-settings-windows-10.md
-        - name: VPN の設定を構成する
-          href: vpn-settings-configure.md
-          items:
-            - name: Android
-              href: vpn-settings-android.md
-            - name: iOS
-              href: vpn-settings-ios.md
-            - name: iOS デバイスにアプリごとの VPN を構成する
-              href: vpn-setting-configure-per-app.md
-            - name: macOS
-              href: vpn-settings-macos.md
-            - name: Windows 8.1
-              href: vpn-settings-windows-8-1.md
-            - name: Windows Phone 8。1
-              href: vpn-settings-windows-phone-8-1.md
-            - name: Windows 10
-              href: vpn-settings-windows-10.md
-        - name: Wi-Fi の設定を構成する
-          href: wi-fi-settings-configure.md
-          items:
-            - name: Android
-              href: wi-fi-settings-android.md
-            - name: iOS
-              href: wi-fi-settings-ios.md
-            - name: macOS
-              href: wi-fi-settings-macos.md
-            - name: Windows 10
-              href: wi-fi-settings-windows.md
-            - name: Windows 8.1
-              href: wi-fi-settings-import-windows-8-1.md
-        - name: eSIM 携帯電話のプロファイルを構成する
-          href: esim-device-configuration.md
-        - name: 教育
-          items:
-            - name: iOS 共有デバイス
-              href: education-settings-configure-ios-shared.md
-            - name: Windows 10
-              href: education-settings-configure.md
-        - name: Windows 10 エディションのアップグレード設定を構成する
-          href: edition-upgrade-configure-windows-10.md
-        - name: iOS 更新ポリシーの構成
-          href: software-updates-ios.md
-        - name: 証明書の構成
-          href: certificates-configure.md
-          items:
-            - name: SCEP
-              href: certificates-scep-configure.md
-            - name: PKCS
-              href: certficates-pfx-configure.md
-            - name: S/MIME を使用して電子メールを暗号化する
-              href: certificates-s-mime-encryption-sign.md
-            - name: SCEP でサード パーティの証明機関を使用する
-              href: certificate-authority-add-scep-overview.md
-            - name: Symantec PKI Manager Web サービス
-              href: certificates-symantec-configure.md
-        - name: Windows Information Protection 設定を構成する
-          href: windows-information-protection-configure.md
-        - name: PowerShell スクリプトの管理
-          href: intune-management-extension.md
-        - name: 通信費の監視
-          href: telecom-expenses-monitor.md
-        - name: プロファイルの割り当て
-          href: device-profile-assign.md
-        - name: プロファイルの監視
-          href: device-profile-monitor.md
-        - name: プロファイルのトラブルシューティング
-          href: device-profile-troubleshoot.md
-    - name: デバイス コンプライアンスの設定
-      href: device-compliance-get-started.md
+      - name: デバイス登録プログラム
+        href: device-enrollment-program-enroll-ios.md
+      - name: Apple School Manager
+        href: apple-school-manager-set-up-ios.md
+      - name: Apple Configurator
+        href: apple-configurator-enroll-ios.md
+    - name: macOS の登録を設定する
+      href: macos-enroll.md
       items:
-        - name: Android ポリシーの作成
-          href: compliance-policy-create-android.md
-        - name: Android の仕事用プロファイルのポリシーの作成
-          href: compliance-policy-create-android-for-work.md
-        - name: Google Play プロテクトを有効にするためのポリシーの作成
-          href: compliance-policy-create-google-play-protect.md
-        - name: iOS ポリシーの作成
-          href: compliance-policy-create-ios.md
-        - name: macOS ポリシーの作成
-          href: compliance-policy-create-mac-os.md
-        - name: Windows ポリシーの作成
-          href: compliance-policy-create-windows.md
-        - name: 場所ベースのポリシー
-          href: use-network-locations.md
-        - name: ポリシーを評価します
-          href: policy-evaluate.md
-        - name: コンプライアンス非対応に対するアクション
-          href: actions-for-noncompliance.md
-        - name: デバイス コンプライアンスを監視する
-          href: compliance-policy-monitor.md
-    - name: 条件付きアクセスの設定
-      href: conditional-access.md
+      - name: デバイス登録プログラム
+        href: device-enrollment-program-enroll-macos.md
+    - name: Windows PC に Intune ソフトウェア クライアントをインストールする
+      href: install-the-windows-pc-client-with-microsoft-intune.md
+    - name: デバイス登録に関するトラブルシューティング
+      href: troubleshoot-device-enrollment-in-intune.md
+  - name: デバイスの管理
+    href: device-management.md
+    items:
+    - name: デバイス管理機能
+      href: device-management-capabilities.md
+    - name: アクティベーション ロックのバイパス
+      href: device-activation-lock-bypass.md
+    - name: Windows の新たに開始機能の管理
+      href: device-fresh-start.md
+    - name: 紛失した iOS デバイスを探す
+      href: device-locate.md
+    - name: iOS 紛失モードの有効化
+      href: device-lost-mode.md
+    - name: iOS の監視モードを有効にする
+      href: device-supervised-mode.md
+    - name: デバイスのロック
+      href: device-remote-lock.md
+    - name: パスコードのリセット
+      href: device-passcode-reset.md
+    - name: デバイスの再起動
+      href: device-restart.md
+    - name: 現在のユーザーのログアウト
+      href: device-logout-user.md
+    - name: ユーザーの削除
+      href: device-remove-user.md
+    - name: デバイスの消去
+      href: device-erase.md
+    - name: モバイル デバイスのリモート制御
+      href: device-profile-android-teamviewer.md
+    - name: Windows 10 の PIN のリセット
+      href: device-windows-pin-reset.md
+    - name: デバイスの同期
+      href: device-sync.md
+    - name: デバイス インベントリの確認
+      href: device-inventory.md
+    - name: デバイスの削除
+      href: devices-wipe.md
+  - name: アプリを管理する
+    href: app-management.md
+    items:
+    - name: アプリを追加する
+      href: apps-add.md
       items:
-        - name: 条件付きアクセスの一般的な使用方法
-          href: conditional-access-intune-common-ways-use.md
-        - name: Exchange On-premises コネクタをインストールする
-          href: exchange-connector-install.md
-        - name: Exchange サービス コネクタをインストールする
-          href: exchange-service-connector-configure.md
-        - name: 条件付きアクセス ポリシーの作成と割り当て
-          href: conditional-access-exchange-create.md
-        - name: 条件付きアクセス ポリシーを 従来の Intune ポータルから再割り当てする
-          href: conditional-access-intune-reassign.md
-        - name: アプリベースの条件付きアクセス
-          href: app-based-conditional-access-intune.md
-        - name: アプリベースの条件付きアクセスの設定
-          href: app-based-conditional-access-intune-create.md
-        - name: ADAL と Intune
-          href: app-modern-authentication-block.md
-        - name: 条件付きアクセスのコンプライアンスを監視する
-          href: conditional-access-exchange-monitor.md
-        - name: コンプライアンスのために Jamf Pro を Intune と統合する
-          href: conditional-access-integrate-jamf.md
-        - name: Jamf Pro で管理された Mac にコンプライアンスを適用します
-          href: conditional-access-assign-jamf.md
-    - name: デバイス データの保護
-      href: device-protect.md
-      items:
-        - name: プライバシーおよび個人データ
-          href: privacy-personal-data.md
+      - name: ストア アプリ
+        items:
+        - name: Android ストア アプリ
+          href: store-apps-android.md
+        - name: iOS ストア アプリ
+          href: store-apps-ios.md
+        - name: Windows Phone 8.1 ストア アプリ
+          href: store-apps-windows-phone-8-1.md
+        - name: Microsoft ストア アプリ
+          href: store-apps-windows.md
           items:
-            - name: データ コレクション
-              href: privacy-data-collect.md
-            - name: データ ストレージと処理
-              href: privacy-data-store-process.md
-            - name: データのセキュリティと共有
-              href: privacy-data-secure-share.md
-              items:
-                - name: Apple から Intune に送られるデータ
-                  href: data-apple-sends-to-intune.md
-                - name: Google から Intune に送られるデータ
-                  href: data-google-sends-to-intune.md
-                - name: Intune から Apple に送られるデータ
-                  href: data-intune-sends-to-apple.md
-                - name: Intune から Google に送られるデータ
-                  href: data-intune-sends-to-google.md
-                - name: Intune に Jamf Pro から共有する情報
-                  href: conditional-access-integrate-jamf.md
-            - name: 個人データの表示と修正
-              href: privacy-data-view-correct.md
-            - name: 監査、エクスポート、削除
-              href: privacy-data-audit-export-delete.md
-        - name: Mobile Threat Defense
-          href: mobile-threat-defense.md
-          items:
-            - name: Lookout の設定
-              href: lookout-mobile-threat-defense-connector.md
-              items:
-                - name: Lookout と Intune の統合
-                  href: lookout-mtd-connector-integration.md
-            - name: Symantec の設定
-              href: skycure-mobile-threat-defense-connector.md
-              items:
-                - name: Symantec と Intune の統合
-                  href: skycure-mtd-connector-integration.md
-            - name: Check Point の設定
-              href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
-              items:
-                - name: Check Point と Intune の統合
-                  href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-            - name: Zimperium の設定
-              href: zimperium-mobile-threat-defense-connector.md
-              items:
-                - name: Zimperium と Intune の統合
-                  href: zimperium-mtd-connector-integration.md
-            - name: Pradeo の設定
-              href: pradeo-mobile-threat-defense-connector.md
-              items:
-                - name: Pradeo と Intune の統合
-                  href: pradeo-mtd-connector-integration.md
-            - name: MTD 用 Intune のセットアップ
-              items:
-                - name: MTD アプリの追加
-                  href: mtd-apps-ios-app-configuration-policy-add-assign.md
-                - name: MTD デバイス コンプライアンス ポリシーの作成
-                  href: mtd-device-compliance-policy-create.md
-                - name: Intune で MTD を有効にする
-                  href: mtd-connector-enable.md
-        - name: Windows Defender ATP
-          href: advanced-threat-protection.md
-        - name: ネットワーク アクセス制御
-          href: network-access-control-integrate.md
-        - name: Windows Hello の設定
-          href: windows-hello.md
-    - name: ロールの管理
-      href: role-based-access-control.md
-    - name: オペレーティング システムのバージョンの管理
-      href: manage-os-versions.md
-    - name: ソフトウェア更新プログラムの管理
-      href: windows-update-for-business-configure.md
-    - name: ソフトウェア エージェントを使用した PC の管理
-      href: manage-windows-pcs-with-microsoft-intune.md
+          - name: ポータル サイト アプリを手動で追加する
+            href: store-apps-company-portal-app.md
+        - name: Android の仕事用プロファイルのアプリ
+          href: apps-add-android-for-work.md
+        - name: Windows 10 用の Office 365 アプリ
+          href: apps-add-office365.md
+        - name: macOS 用の Office 365 アプリ
+          href: apps-add-office365-macos.md
+      - name: アプリ (LOB) のビルド
+        items:
+        - name: Android LOB アプリ
+          href: lob-apps-android.md
+        - name: iOS LOB アプリ
+          href: lob-apps-ios.md
+        - name: Windows Phone LOB アプリ
+          href: lob-apps-windows-phone.md
+        - name: Windows LOB アプリ
+          href: lob-apps-windows.md
+        - name: Windows LOB アプリをサイドロードする
+          href: app-sideload-windows.md
+        - name: macOS LOB アプリ
+          href: lob-apps-macos.md
+      - name: Web アプリ
+        href: web-app.md
+      - name: 組み込みアプリ
+        href: apps-add-built-in.md
+    - name: アプリの展開
+      href: apps-deploy.md
       items:
-        - name: PC 管理の比較
-          href: pc-management-comparison.md
-        - name: PC クライアントのインストール
-          href: install-the-windows-pc-client-with-microsoft-intune.md
-        - name: 一般的な PC 管理タスク
-          href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
-          items:
-            - name: PC ポリシー
-              href: use-policies-to-simplify-windows-pc-management.md
-            - name: インベントリの表示
-              href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
-            - name: PC の削除
-              href: retire-a-windows-pc-with-microsoft-intune.md
-            - name: PC とユーザーを関連付ける
-              href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
-            - name: リモート アシスタンス
-              href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
-        - name: Windows PC を保護するためのポリシー
-          href: policies-to-protect-windows-pcs-in-microsoft-intune.md
-          items:
-            - name: ソフトウェア更新プログラム
-              href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
-            - name: Windows ファイアウォール
-              href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
-            - name: Endpoint Protection
-              href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
-        - name: Intune のクライアント PC のアプリを追加する
-          href: add-apps-for-windows-pcs-in-microsoft-intune.md
-        - name: ライセンス契約の管理
-          href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
-        - name: ポリシーの競合を解決する
-          href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
-    - name: Windows Holographic の管理
-      href: windows-holographic-for-business.md
+      - name: アプリの組み込みおよび除外
+        href: apps-inc-exl-assignments.md
+      - name: Windows 10アプリデプロイ
+        href: apps-windows-10-app-deploy.md
+    - name: アプリの監視
+      href: apps-monitor.md
+    - name: アプリの構成
+      href: app-configuration-policies-overview.md
       items:
-        - name: Windows Holographic のアップグレード
-          href: holographic-upgrade.md
-    - name: ユーザーの教育
-      href: end-user-educate.md
+      - name: iOS マネージド デバイス
+        href: app-configuration-policies-use-ios.md
+      - name: Android マネージド デバイス
+        href: app-configuration-policies-use-android.md
+      - name: Managed apps
+        href: app-configuration-policies-managed-app.md
+      - name: iOS アプリ プロビジョニング プロファイルを使用する
+        href: app-provisioning-profile-ios.md
+      - name: ボリューム購入アプリと書籍の操作
+        href: vpp-apps.md
+        items:
+        - name: iOS VPP アプリ
+          href: vpp-apps-ios.md
+        - name: ビジネス向け Microsoft ストア アプリ
+          href: windows-store-for-business.md
+        - name: iOS 電子ブック
+          href: vpp-ebooks-ios.md
+      - name: ポータル サイト アプリを構成する
+        href: company-portal-app.md
+      - name: Managed Browser の構成
+        href: app-configuration-managed-browser.md
+    - name: アプリの保護
       items:
-        - name: ポータル サイトのメッセージ
-          href: end-user-company-portal-messages.md
-        - name: Android でのアプリの保護
-          href: end-user-mam-apps-android.md
-        - name: iOS でのアプリの保護
-          href: end-user-mam-apps-ios.md
-        - name: Android アプリを入手する方法
-          href: end-user-apps-android.md
-        - name: iOS アプリを入手する方法
-          href: end-user-apps-ios.md
-        - name: Windows アプリを入手する方法
-          href: end-user-apps-windows.md
-        - name: Intune から Apple に送られるデータ
-          href: data-intune-sends-to-apple.md
-        - name: Intune から Google に送られるデータ
-          href: data-intune-sends-to-google.md
+      - name: 選択的にアプリをワイプする
+        href: apps-selective-wipe.md
+      - name: アプリ保護ポリシーの使用
+        href: app-protection-policy.md
+        items:
+        - name: アプリ保護ポリシーの作成
+          href: app-protection-policies.md
+          items:
+          - name: Android の設定
+            href: app-protection-policy-settings-android.md
+          - name: iOS の設定
+            href: app-protection-policy-settings-ios.md
+          - name: アクセス アクション
+            href: app-protection-policies-access-actions.md
+          - name: データ転送の例外
+            href: app-protection-policies-exception.md
+        - name: アプリ保護ポリシーを検証する
+          href: app-protection-policies-validate.md
+        - name: アプリ保護のユーザーの状態を監視する
+          href: app-protection-policies-monitor.md
+        - name: WIP アプリ保護ポリシーの準備をする
+          href: app-protection-policies-configure-windows-10.md
+        - name: WIP アプリ保護ポリシーの作成と割り当て
+          href: windows-information-protection-policy-create.md
+        - name: iOS アプリ間のデータ転送を管理する
+          href: data-transfer-between-apps-manage-ios.md
+  - name: デバイスの構成
+    href: device-profiles.md
+    items:
+    - name: デバイス プロファイルを構成する
+      href: device-profile-create.md
+    - name: デバイス機能を構成する
+      href: device-features-configure.md
+      items:
+      - name: iOS および macOS 用 AirPrint
+        href: air-print-settings-ios-macos.md
+      - name: iOS 用 AirPlay
+        href: airplay-settings-ios.md
+      - name: iOS 用ホーム画面のレイアウト
+        href: home-screen-settings-ios.md
+      - name: iOS 用アプリの通知
+        href: app-notification-settings-ios.md
+      - name: iOS 用共有デバイス
+        href: shared-device-settings-ios.md
+      - name: iOS 用 Intune のデバイス シングル サインオンを構成する
+        href: sso-ios.md
+      - name: iOS 用 Web フィルター設定
+        href: web-content-filter-settings-ios.md
+    - name: デバイス制限を構成する
+      href: device-restrictions-configure.md
+      items:
+      - name: Android
+        href: device-restrictions-android.md
+      - name: iOS
+        href: device-restrictions-ios.md
+      - name: macOS
+        href: device-restrictions-macos.md
+      - name: Windows 8.1
+        href: device-restrictions-windows-8-1.md
+      - name: Windows Phone 8。1
+        href: device-restrictions-windows-phone-8-1.md
+      - name: Windows 10
+        href: device-restrictions-windows-10.md
+      - name: Windows 10 Team
+        href: device-restrictions-windows-10-teams.md
+      - name: Windows Holographic for Business
+        href: device-restrictions-windows-holographic.md
+      - name: Android の仕事用プロファイル
+        href: device-restrictions-android-for-work.md
+    - name: エンドポイント保護の構成
+      href: endpoint-protection-configure.md
+      items:
+      - name: macOS
+        href: endpoint-protection-macos.md
+      - name: Windows 10
+        href: endpoint-protection-windows-10.md
+    - name: Android キオスクの設定
+      href: android-kiosk-settings.md
+    - name: Android エンタープライズ キオスクの設定
+      href: android-enterprise-settings.md
+    - name: Windows 10 キオスクの設定
+      href: kiosk-settings.md
+    - name: 電子メールの設定を構成する
+      href: email-settings-configure.md
+      items:
+      - name: Android
+        href: email-settings-android.md
+      - name: iOS
+        href: email-settings-ios.md
+      - name: Windows Phone 8。1
+        href: email-settings-windows-phone-8-1.md
+      - name: Windows 10
+        href: email-settings-windows-10.md
+    - name: VPN の設定を構成する
+      href: vpn-settings-configure.md
+      items:
+      - name: Android
+        href: vpn-settings-android.md
+      - name: iOS
+        href: vpn-settings-ios.md
+      - name: iOS デバイスにアプリごとの VPN を構成する
+        href: vpn-setting-configure-per-app.md
+      - name: macOS
+        href: vpn-settings-macos.md
+      - name: Windows 8.1
+        href: vpn-settings-windows-8-1.md
+      - name: Windows Phone 8。1
+        href: vpn-settings-windows-phone-8-1.md
+      - name: Windows 10
+        href: vpn-settings-windows-10.md
+    - name: Wi-Fi の設定を構成する
+      href: wi-fi-settings-configure.md
+      items:
+      - name: Android
+        href: wi-fi-settings-android.md
+      - name: iOS
+        href: wi-fi-settings-ios.md
+      - name: macOS
+        href: wi-fi-settings-macos.md
+      - name: Windows 10
+        href: wi-fi-settings-windows.md
+      - name: Windows 8.1
+        href: wi-fi-settings-import-windows-8-1.md
+    - name: eSIM 携帯電話のプロファイルを構成する
+      href: esim-device-configuration.md
+    - name: 教育
+      items:
+      - name: iOS 共有デバイス
+        href: education-settings-configure-ios-shared.md
+      - name: Windows 10
+        href: education-settings-configure.md
+    - name: Windows 10 エディションのアップグレード設定を構成する
+      href: edition-upgrade-configure-windows-10.md
+    - name: iOS 更新ポリシーの構成
+      href: software-updates-ios.md
+    - name: 証明書の構成
+      href: certificates-configure.md
+      items:
+      - name: SCEP
+        href: certificates-scep-configure.md
+      - name: PKCS
+        href: certficates-pfx-configure.md
+      - name: S/MIME を使用して電子メールを暗号化する
+        href: certificates-s-mime-encryption-sign.md
+      - name: SCEP でサード パーティの証明機関を使用する
+        href: certificate-authority-add-scep-overview.md
+      - name: Symantec PKI Manager Web サービス
+        href: certificates-symantec-configure.md
+    - name: Windows Information Protection 設定を構成する
+      href: windows-information-protection-configure.md
+    - name: PowerShell スクリプトの管理
+      href: intune-management-extension.md
+    - name: 通信費の監視
+      href: telecom-expenses-monitor.md
+    - name: プロファイルの割り当て
+      href: device-profile-assign.md
+    - name: プロファイルの監視
+      href: device-profile-monitor.md
+    - name: プロファイルのトラブルシューティング
+      href: device-profile-troubleshoot.md
+  - name: デバイス コンプライアンスの設定
+    href: device-compliance-get-started.md
+    items:
+    - name: Android ポリシーの作成
+      href: compliance-policy-create-android.md
+    - name: Android の仕事用プロファイルのポリシーの作成
+      href: compliance-policy-create-android-for-work.md
+    - name: Google Play プロテクトを有効にするためのポリシーの作成
+      href: compliance-policy-create-google-play-protect.md
+    - name: iOS ポリシーの作成
+      href: compliance-policy-create-ios.md
+    - name: macOS ポリシーの作成
+      href: compliance-policy-create-mac-os.md
+    - name: Windows ポリシーの作成
+      href: compliance-policy-create-windows.md
+    - name: 場所ベースのポリシー
+      href: use-network-locations.md
+    - name: ポリシーを評価します
+      href: policy-evaluate.md
+    - name: コンプライアンス非対応に対するアクション
+      href: actions-for-noncompliance.md
+    - name: デバイス コンプライアンスを監視する
+      href: compliance-policy-monitor.md
+  - name: 条件付きアクセスの設定
+    href: conditional-access.md
+    items:
+    - name: 条件付きアクセスの一般的な使用方法
+      href: conditional-access-intune-common-ways-use.md
+    - name: Exchange On-premises コネクタをインストールする
+      href: exchange-connector-install.md
+    - name: Exchange サービス コネクタをインストールする
+      href: exchange-service-connector-configure.md
+    - name: 条件付きアクセス ポリシーの作成と割り当て
+      href: conditional-access-exchange-create.md
+    - name: 条件付きアクセス ポリシーを 従来の Intune ポータルから再割り当てする
+      href: conditional-access-intune-reassign.md
+    - name: アプリベースの条件付きアクセス
+      href: app-based-conditional-access-intune.md
+    - name: アプリベースの条件付きアクセスの設定
+      href: app-based-conditional-access-intune-create.md
+    - name: ADAL と Intune
+      href: app-modern-authentication-block.md
+    - name: 条件付きアクセスのコンプライアンスを監視する
+      href: conditional-access-exchange-monitor.md
+    - name: コンプライアンスのために Jamf Pro を Intune と統合する
+      href: conditional-access-integrate-jamf.md
+    - name: Jamf Pro で管理された Mac にコンプライアンスを適用します
+      href: conditional-access-assign-jamf.md
+  - name: デバイス データの保護
+    href: device-protect.md
+    items:
+    - name: プライバシーおよび個人データ
+      href: privacy-personal-data.md
+      items:
+      - name: データ コレクション
+        href: privacy-data-collect.md
+      - name: データ ストレージと処理
+        href: privacy-data-store-process.md
+      - name: データのセキュリティと共有
+        href: privacy-data-secure-share.md
+        items:
         - name: Apple から Intune に送られるデータ
           href: data-apple-sends-to-intune.md
         - name: Google から Intune に送られるデータ
           href: data-google-sends-to-intune.md
-    - name: 監視とトラブルシューティング
+        - name: Intune から Apple に送られるデータ
+          href: data-intune-sends-to-apple.md
+        - name: Intune から Google に送られるデータ
+          href: data-intune-sends-to-google.md
+        - name: Intune に Jamf Pro から共有する情報
+          href: conditional-access-integrate-jamf.md
+      - name: 個人データの表示と修正
+        href: privacy-data-view-correct.md
+      - name: 監査、エクスポート、削除
+        href: privacy-data-audit-export-delete.md
+    - name: Mobile Threat Defense
+      href: mobile-threat-defense.md
       items:
-        - name: ユーザーによる問題のトラブルシューティングをサポートする
-          href: help-desk-operators.md
-        - name: 会社のリソースへのアクセスに関する問題のトラブルシューティング
-          href: troubleshoot-company-resource-access-problems.md
-        - name: アプリのインストールに関する問題のトラブルシューティング
-          href: troubleshoot-app-install.md
-        - name: Intune のアクティビティの監査ログ
-          href: monitor-audit-logs.md
-        - name: アプリの保護ログのレビュー
-          href: app-protection-policy-settings-log.md
-        - name: 電子メール プロファイルに関するトラブルシューティング
-          href: troubleshoot-email-profiles-in-microsoft-intune.md
-        - name: ソフトウェアの更新に関するトラブルシューティング
-          href: troubleshoot-software-updates-in-microsoft-intune.md
-        - name: Endpoint Protection に関するトラブルシューティング
-          href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-        - name: ポリシーに関するトラブルシューティング
-          href: troubleshoot-policies-in-microsoft-intune.md
-        - name: 条件付きアクセスに関するトラブルシューティング
-          href: troubleshoot-conditional-access.md
-        - name: Exchange Connector に関するトラブルシューティング
-          href: troubleshoot-exchange-connector.md
-    - name: 自動化とカスタマイズ
+      - name: Lookout の設定
+        href: lookout-mobile-threat-defense-connector.md
+        items:
+        - name: Lookout と Intune の統合
+          href: lookout-mtd-connector-integration.md
+      - name: Symantec の設定
+        href: skycure-mobile-threat-defense-connector.md
+        items:
+        - name: Symantec と Intune の統合
+          href: skycure-mtd-connector-integration.md
+      - name: Check Point の設定
+        href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
+        items:
+        - name: Check Point と Intune の統合
+          href: checkpoint-sandblast-mobile-mtd-connector-integration.md
+      - name: Zimperium の設定
+        href: zimperium-mobile-threat-defense-connector.md
+        items:
+        - name: Zimperium と Intune の統合
+          href: zimperium-mtd-connector-integration.md
+      - name: Pradeo の設定
+        href: pradeo-mobile-threat-defense-connector.md
+        items:
+        - name: Pradeo と Intune の統合
+          href: pradeo-mtd-connector-integration.md
+      - name: Better Mobile の設定
+        href: better-mobile-threat-defense-connector.md
+        items:
+        - name: Better Mobile と Intune の統合
+          href: better-mobile-mtd-connector-integration.md
+      - name: MTD 用 Intune のセットアップ
+        items:
+        - name: MTD アプリの追加
+          href: mtd-apps-ios-app-configuration-policy-add-assign.md
+        - name: MTD デバイス コンプライアンス ポリシーの作成
+          href: mtd-device-compliance-policy-create.md
+        - name: Intune で MTD を有効にする
+          href: mtd-connector-enable.md
+    - name: Windows Defender ATP
+      href: advanced-threat-protection.md
+    - name: ネットワーク アクセス制御
+      href: network-access-control-integrate.md
+    - name: Windows Hello の設定
+      href: windows-hello.md
+  - name: ロールの管理
+    href: role-based-access-control.md
+  - name: オペレーティング システムのバージョンの管理
+    href: manage-os-versions.md
+  - name: ソフトウェア更新プログラムの管理
+    href: windows-update-for-business-configure.md
+  - name: ソフトウェア エージェントを使用した PC の管理
+    href: manage-windows-pcs-with-microsoft-intune.md
+    items:
+    - name: PC 管理の比較
+      href: pc-management-comparison.md
+    - name: PC クライアントのインストール
+      href: install-the-windows-pc-client-with-microsoft-intune.md
+    - name: 一般的な PC 管理タスク
+      href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
       items:
-        - name: カスタム デバイス設定の構成
-          href: custom-settings-configure.md
-          items:
-            - name: 事前共有キーを使用する Wi-Fi プロファイル
-              href: wi-fi-profile-shared-key.md
-            - name: Android
-              href: custom-settings-android.md
-              items:
-                - name: アプリごとの VPN プロファイル
-                  href: android-pulse-secure-per-app-vpn.md
-                - name: Samsung KNOX Standard 用アプリの許可/禁止
-                  href: samsung-knox-apps-allow-block.md
-            - name: iOS
-              href: custom-settings-ios.md
-            - name: macOS
-              href: custom-settings-macos.md
-            - name: Windows Phone 8。1
-              href: custom-settings-windows-phone-8-1.md
-            - name: Windows 10
-              href: custom-settings-windows-10.md
-            - name: Windows Holographic for Business
-              href: custom-settings-windows-holographic.md
-            - name: Android の仕事用プロファイル
-              href: custom-settings-android-for-work.md
+      - name: PC ポリシー
+        href: use-policies-to-simplify-windows-pc-management.md
+      - name: インベントリの表示
+        href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
+      - name: PC の削除
+        href: retire-a-windows-pc-with-microsoft-intune.md
+      - name: PC とユーザーを関連付ける
+        href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
+      - name: リモート アシスタンス
+        href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
+    - name: Windows PC を保護するためのポリシー
+      href: policies-to-protect-windows-pcs-in-microsoft-intune.md
+      items:
+      - name: ソフトウェア更新プログラム
+        href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
+      - name: Windows ファイアウォール
+        href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
+      - name: Endpoint Protection
+        href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
+    - name: Intune のクライアント PC のアプリを追加する
+      href: add-apps-for-windows-pcs-in-microsoft-intune.md
+    - name: ライセンス契約の管理
+      href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
+    - name: ポリシーの競合を解決する
+      href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
+  - name: Windows Holographic の管理
+    href: windows-holographic-for-business.md
+    items:
+    - name: Windows Holographic のアップグレード
+      href: holographic-upgrade.md
+  - name: ユーザーの教育
+    href: end-user-educate.md
+    items:
+    - name: ポータル サイトのメッセージ
+      href: end-user-company-portal-messages.md
+    - name: Android でのアプリの保護
+      href: end-user-mam-apps-android.md
+    - name: iOS でのアプリの保護
+      href: end-user-mam-apps-ios.md
+    - name: Android アプリを入手する方法
+      href: end-user-apps-android.md
+    - name: iOS アプリを入手する方法
+      href: end-user-apps-ios.md
+    - name: Windows アプリを入手する方法
+      href: end-user-apps-windows.md
+    - name: Intune から Apple に送られるデータ
+      href: data-intune-sends-to-apple.md
+    - name: Intune から Google に送られるデータ
+      href: data-intune-sends-to-google.md
+    - name: Apple から Intune に送られるデータ
+      href: data-apple-sends-to-intune.md
+    - name: Google から Intune に送られるデータ
+      href: data-google-sends-to-intune.md
+  - name: 監視とトラブルシューティング
+    items:
+    - name: ユーザーによる問題のトラブルシューティングをサポートする
+      href: help-desk-operators.md
+    - name: 会社のリソースへのアクセスに関する問題のトラブルシューティング
+      href: troubleshoot-company-resource-access-problems.md
+    - name: アプリのインストールに関する問題のトラブルシューティング
+      href: troubleshoot-app-install.md
+    - name: Intune のアクティビティの監査ログ
+      href: monitor-audit-logs.md
+    - name: アプリの保護ログのレビュー
+      href: app-protection-policy-settings-log.md
+    - name: 電子メール プロファイルに関するトラブルシューティング
+      href: troubleshoot-email-profiles-in-microsoft-intune.md
+    - name: ソフトウェアの更新に関するトラブルシューティング
+      href: troubleshoot-software-updates-in-microsoft-intune.md
+    - name: Endpoint Protection に関するトラブルシューティング
+      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+    - name: ポリシーに関するトラブルシューティング
+      href: troubleshoot-policies-in-microsoft-intune.md
+    - name: 条件付きアクセスに関するトラブルシューティング
+      href: troubleshoot-conditional-access.md
+    - name: Exchange Connector に関するトラブルシューティング
+      href: troubleshoot-exchange-connector.md
+  - name: 自動化とカスタマイズ
+    items:
+    - name: カスタム デバイス設定の構成
+      href: custom-settings-configure.md
+      items:
+      - name: 事前共有キーを使用する Wi-Fi プロファイル
+        href: wi-fi-profile-shared-key.md
+      - name: Android
+        href: custom-settings-android.md
+        items:
+        - name: アプリごとの VPN プロファイル
+          href: android-pulse-secure-per-app-vpn.md
+        - name: Samsung KNOX Standard 用アプリの許可/禁止
+          href: samsung-knox-apps-allow-block.md
+      - name: iOS
+        href: custom-settings-ios.md
+      - name: macOS
+        href: custom-settings-macos.md
+      - name: Windows Phone 8。1
+        href: custom-settings-windows-phone-8-1.md
+      - name: Windows 10
+        href: custom-settings-windows-10.md
+      - name: Windows Holographic for Business
+        href: custom-settings-windows-holographic.md
+      - name: Android の仕事用プロファイル
+        href: custom-settings-android-for-work.md
 - name: 開発者ガイド
   items:
-    - name: サード パーティの証明機関を追加するための API
-      href: scep-libraries-apis.md
-    - name: Intune App SDK によるアプリの保護
-      href: app-sdk.md
+  - name: サード パーティの証明機関を追加するための API
+    href: scep-libraries-apis.md
+  - name: Intune App SDK によるアプリの保護
+    href: app-sdk.md
+    items:
+    - name: Intune App SDK の使用を開始する
+      href: app-sdk-get-started.md
+    - name: アプリを保護できるように LOB アプリを準備する
+      href: apps-prepare-mobile-application-management.md
+    - name: iOS 用アプリ ラッピング ツール
+      href: app-wrapper-prepare-ios.md
+    - name: iOS 用 Intune アプリ SDK
+      href: app-sdk-ios.md
+    - name: Android 用アプリ ラッピング ツール
+      href: app-wrapper-prepare-android.md
+    - name: Android 用 Intune アプリ SDK
+      href: app-sdk-android.md
+    - name: Intune App SDK Xamarin Bindings
+      href: app-sdk-xamarin.md
+  - name: Intune データ ウェアハウスを使用する
+    href: reports-nav-create-intune-reports.md
+    items:
+    - name: データ ウェアハウスの変更ログ
+      href: reports-changelog.md
+    - name: Power BI でデータ ウェアハウスに接続する
+      href: reports-proc-get-a-link-powerbi.md
+    - name: Power BI で OData フィードからレポートを作成する
+      href: reports-proc-create-with-odata.md
+  - name: Intune データ ウェアハウス API を用いたレポート
+    href: reports-nav-intune-data-warehouse.md
+    items:
+    - name: REST クライアントを使用してデータ ウェアハウス API からデータを取得する
+      href: reports-proc-data-rest.md
+    - name: データ ウェアハウス API エンドポイント
+      href: reports-api-url.md
+    - name: データ ウェアハウス アプリケーションのみの認証
+      href: data-warehouse-app-only-auth.md
+    - name: データ ウェアハウス データ モデル
+      href: reports-ref-data-model.md
       items:
-        - name: Intune App SDK の使用を開始する
-          href: app-sdk-get-started.md
-        - name: アプリを保護できるように LOB アプリを準備する
-          href: apps-prepare-mobile-application-management.md
-        - name: iOS 用アプリ ラッピング ツール
-          href: app-wrapper-prepare-ios.md
-        - name: iOS 用 Intune アプリ SDK
-          href: app-sdk-ios.md
-        - name: Android 用アプリ ラッピング ツール
-          href: app-wrapper-prepare-android.md
-        - name: Android 用 Intune アプリ SDK
-          href: app-sdk-android.md
-        - name: Intune App SDK Xamarin Bindings
-          href: app-sdk-xamarin.md
-    - name: Intune データ ウェアハウスを使用する
-      href: reports-nav-create-intune-reports.md
-      items:
-        - name: データ ウェアハウスの変更ログ
-          href: reports-changelog.md
-        - name: Power BI でデータ ウェアハウスに接続する
-          href: reports-proc-get-a-link-powerbi.md
-        - name: Power BI で OData フィードからレポートを作成する
-          href: reports-proc-create-with-odata.md
-    - name: Intune データ ウェアハウス API を用いたレポート
-      href: reports-nav-intune-data-warehouse.md
-      items:
-        - name: REST クライアントを使用してデータ ウェアハウス API からデータを取得する
-          href: reports-proc-data-rest.md
-        - name: データ ウェアハウス API エンドポイント
-          href: reports-api-url.md
-        - name: データ ウェアハウス アプリケーションのみの認証
-          href: data-warehouse-app-only-auth.md
-        - name: データ ウェアハウス データ モデル
-          href: reports-ref-data-model.md
-          items:
-            - name: Intune データ ウェアハウスのユーザー有効期間の表記
-              href: reports-ref-user-timeline.md
-            - name: アプリケーション エンティティのリファレンス
-              href: reports-ref-application.md
-            - name: 現在のユーザー エンティティのリファレンス
-              href: reports-ref-current-user.md
-            - name: 日付エンティティのリファレンス
-              href: reports-ref-date.md
-            - name: デバイス エンティティの参照
-              href: reports-ref-devices.md
-            - name: Intune の管理拡張エンティティのリファレンス
-              href: reports-ref-intunemanagementextension.md
-            - name: モバイル アプリ管理 (MAM) エンティティのリファレンス
-              href: reports-ref-mobile-app-management.md
-            - name: ポリシー エンティティのリファレンス
-              href: reports-ref-policy.md
-            - name: ユーザー デバイスの関連付けエンティティのリファレンス
-              href: reports-ref-user-device.md
-            - name: User エンティティのリファレンス
-              href: reports-ref-user.md
-        - name: Intune データ ウェアハウスのアカウント データを移動する
-          href: data-warehouse-account-move.md
-    - name: Azure AD で Microsoft Graph の Intune API にアクセスする
-      href: intune-graph-apis.md
-      items:
-        - name: Intune API リファレンス
-          href: 'https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview'
+      - name: Intune データ ウェアハウスのユーザー有効期間の表記
+        href: reports-ref-user-timeline.md
+      - name: アプリケーション エンティティのリファレンス
+        href: reports-ref-application.md
+      - name: 現在のユーザー エンティティのリファレンス
+        href: reports-ref-current-user.md
+      - name: 日付エンティティのリファレンス
+        href: reports-ref-date.md
+      - name: デバイス エンティティの参照
+        href: reports-ref-devices.md
+      - name: Intune の管理拡張エンティティのリファレンス
+        href: reports-ref-intunemanagementextension.md
+      - name: モバイル アプリ管理 (MAM) エンティティのリファレンス
+        href: reports-ref-mobile-app-management.md
+      - name: ポリシー エンティティのリファレンス
+        href: reports-ref-policy.md
+      - name: ユーザー デバイスの関連付けエンティティのリファレンス
+        href: reports-ref-user-device.md
+      - name: User エンティティのリファレンス
+        href: reports-ref-user.md
+    - name: Intune データ ウェアハウスのアカウント データを移動する
+      href: data-warehouse-account-move.md
+  - name: Azure AD で Microsoft Graph の Intune API にアクセスする
+    href: intune-graph-apis.md
+    items:
+    - name: Intune API リファレンス
+      href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: リソース
   items:
-    - name: 用語集
-      href: intune-glossary.md
+  - name: 用語集
+    href: intune-glossary.md
+ms.openlocfilehash: ab5b79b56ff430575cf3c9021ce33b573b4d0f22
+ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42822952"
