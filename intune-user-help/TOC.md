@@ -1,10 +1,8 @@
 # Intune のユーザー ヘルプ
 
-## [管理デバイスを使用して作業する](use-managed-devices-to-get-work-done.md)
+## [マネージド デバイスを使用して作業する](use-managed-devices-to-get-work-done.md)
 
 ## [企業は Intune でどのような情報を確認できるか](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
-
-## [デバイスをリセットする](what-happens-if-you-reset-your-device-cpwebsite.md)
 
 ## [パスワードを更新する](password-does-not-meet-it-administrator-requirements.md)
 
@@ -105,8 +103,8 @@
 ## [macOS デバイスを使用する](using-your-macos-device-with-intune.md)
 ### [macOS デバイスの登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [macOS デバイスを登録する](enroll-your-device-in-intune-macos-cp.md)
-### [macOS デバイスの登録解除](unenroll-your-device-from-intune-macos.md)
-
+### [会社の macOS デバイスを登録する](enroll-company-device-macos.md)  
+### [macOS デバイスの登録解除](unenroll-your-device-from-intune-macos.md)  
 ### [macOS に関する一般的な問題の解決](troubleshoot-your-device-macos.md)
 #### [使用しているバージョンの macOS がまだサポートされていない](your-macos-version-isnt-yet-supported.md)
 #### [macOS デバイスを更新する](you-need-to-update-your-macos-device.md)
