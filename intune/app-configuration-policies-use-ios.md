@@ -38,8 +38,7 @@ Microsoft Intune のアプリ構成ポリシーを使用して、iOS アプリ�
 > [!TIP]
 > この種類のポリシーは現在、iOS 8.0 以降を実行しているデバイスでのみ有効です。 次の種類のアプリ インストールをサポートします。
 >
-> -   
-  **App Store の管理対象 iOS アプリ**
+> -   **App Store の管理対象 iOS アプリ**
 > -   **iOS 用アプリ パッケージ**
 >
 > アプリのインストールの種類の詳細については、「[How to add an app to Microsoft Intune (Microsoft Intune にアプリを追加する方法)](apps-add.md)」を参照してください。
