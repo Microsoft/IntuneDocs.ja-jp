@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: c96f211f18168c8ae55f0ca2391c6c140caef649
-ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
+ms.openlocfilehash: b3c374e4ce6baeab8cc6fde3f6c45c63c48e34dd
+ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39138722"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903077"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Windows AutoPilot を使用して Windows デバイスを登録する
 Windows AutoPilot により、デバイスのプロビジョニングが簡略化されます。 カスタマイズされたオペレーティング システム イメージのビルドおよび維持は、時間のかかるプロセスです。 また、これらのカスタム オペレーティング システム イメージを新しいデバイスに適用し、エンド ユーザーに提供する前に使用の準備を行う場合にも、時間がかかることがあります。 Microsoft Intune と AutoPilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および新しいデバイスへの適用を行わなくてもデバイスをエンド ユーザーに提供することができます。 Intune を使用して AutoPilot デバイスを管理する場合、デバイスの登録後にポリシー、プロファイル、アプリなどを管理することができます。 利点、シナリオ、および前提条件の概要については、「[Overview of Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)」 (Windows AutoPilot の概要) を参照してください。
@@ -72,8 +72,8 @@ AutoPilot Deployment プロファイルは、AutoPilot デバイスを構成す�
     - **[自己展開 (プレビュー)]**: (Windows 10 Insider Preview ビルド 17672 またはそれ以降) このプロファイルのデバイスは、デバイスを登録しているユーザーに関連付けられません。 デバイスのプロビジョニングに、ユーザーの資格情報は不要です。
 4. **[Join to Azure AD as]\(Azure AD への参加状況\)** ボックスに、**[Azure AD 参加済み]** を選択します。
 5. **[Out-of-box experience (OOBE)]** を選択し、次のオプションを構成して **[保存]** を選択します。
-    - **言語 (リージョン)***: デバイスで使用する言語を選択します。 このオプションは、**[配置モード]** に **[自己展開]** を選択した場合のみ使用できます。
-    - **キーボードを自動的に構成する***: **[言語 (リージョン)]** を選択している場合は、キーボード選択のページをスキップしてください。 このオプションは、**[配置モード]** に **[自己展開]** を選択した場合のみ使用できます。
+    - **言語 (リージョン)**\*: デバイスで使用する言語を選択します。 このオプションは、**[配置モード]** に **[自己展開]** を選択した場合のみ使用できます。
+    - **キーボードを自動的に構成する**\*: **[言語 (リージョン)]** を選択している場合は、キーボード選択のページをスキップしてください。 このオプションは、**[配置モード]** に **[自己展開]** を選択した場合のみ使用できます。
     - **[使用許諾契約書 (EULA)]**: (Windows 10、バージョン 1709 またはそれ以降) EULA をユーザーに表示するかどうかを選択します。
     - **[プライバシーの設定]**: プライバシーの設定をユーザーに表示するかどうかを選択します。
     - **[ユーザー アカウントの種類]**: ユーザーのアカウントの種類を**管理者**ユーザーと**標準**ユーザーのどちらにするかを選択します。 

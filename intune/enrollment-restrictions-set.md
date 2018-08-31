@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2900f7c211a675a20300a2e212b0d57bad3a597a
-ms.sourcegitcommit: 32a4b1eb6bf20da7262f27276f8e94e435803386
+ms.openlocfilehash: aa91e0c0adcd1182f82c4a09746f154302fae326
+ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39501151"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "40251524"
 ---
 # <a name="set-enrollment-restrictions"></a>登録制限を設定する
 
@@ -30,9 +30,6 @@ ms.locfileid: "39501151"
 
 >[!NOTE]
 >登録の制限はセキュリティ機能ではありません。 侵害されたデバイスでは特徴が正しく示されない可能性があります。 これらの制限は、悪意のないユーザーにとって最善の防御策となります。
-
->[!NOTE]
->この記事で説明している、グループに割り当てられた登録制限と優先順位の機能は、Intune の顧客ベース全体にロールアウトしている過程にあります。 このロールアウトが完了するまで、グループと優先順位の機能にアクセスできないことがあります。
 
 具体的に作成できる登録の制限には、次のようなものがあります。
 

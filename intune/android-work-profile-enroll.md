@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 095985bad8f7e35a953383fcce8296716723b8bc
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: fc1943781dcf95209b575cdb6e36d5065275626f
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909067"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255075"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>Android 仕事用プロファイル デバイスの登録を設定する
 
@@ -34,7 +34,7 @@ Android 仕事用プロファイル管理を設定するには、次の手順を
 2. Android 仕事用プロファイルの登録設定を指定します。 Android 仕事用プロファイルは、[特定の Android デバイスでのみサポートされています](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22)。 Android 仕事用プロファイルをサポートするすべてのデバイスでは、従来の Android 管理もサポートされます。 Intune では、Android 仕事用プロファイルをサポートするデバイスを[登録制限](enrollment-restrictions-set.md)内から管理する方法を指定できます。
     - **ブロック (既定で設定)**: Android 仕事用プロファイルをサポートするデバイスを含め、すべての Android デバイスが従来の Android デバイスとして登録されます。
     - **許可**: Android 仕事用プロファイルをサポートするすべてのデバイスが Android 仕事用プロファイル デバイスとして登録されます。 Android 仕事用プロファイルをサポートしないすべての Android デバイスは、従来の Android デバイスとして登録されます。
-3. [デバイスを登録する方法をユーザーに知らせます](/intune-user-help/enroll-your-device-in-intune-android.md)。
+3. [デバイスを登録する方法をユーザーに知らせます](/intune-user-help/enroll-your-device-in-intune-android)。
 
 
 以前は通常の Android デバイスとして登録されていたデバイスを Android 仕事用プロファイルに登録するには、まずデバイスの登録を解除してから再登録する必要があります。
