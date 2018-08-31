@@ -64,7 +64,7 @@
 ### [iOS デバイスの登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [ポータル サイトをインストールしてサインインする](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [iOS デバイスを登録する](enroll-your-device-in-intune-ios.md)
-### [Device Enrollment Program の iOS デバイスを登録する](enroll-your-device-dep-ios.md)
+### [組織で提供される iOS デバイスを登録する](enroll-your-device-dep-ios.md)
 
 ### [デバイスで管理対象アプリを使用する](use-managed-apps-on-your-device-ios.md)
 ### [パスコードを設定または変更する](set-or-change-your-passcode-ios.md)
@@ -103,7 +103,7 @@
 ## [macOS デバイスを使用する](using-your-macos-device-with-intune.md)
 ### [macOS デバイスの登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [macOS デバイスを登録する](enroll-your-device-in-intune-macos-cp.md)
-### [会社の macOS デバイスを登録する](enroll-company-device-macos.md)  
+### [組織で提供される macOS デバイスを登録する](enroll-company-device-macos.md)  
 ### [macOS デバイスの登録解除](unenroll-your-device-from-intune-macos.md)  
 ### [macOS に関する一般的な問題の解決](troubleshoot-your-device-macos.md)
 #### [使用しているバージョンの macOS がまだサポートされていない](your-macos-version-isnt-yet-supported.md)

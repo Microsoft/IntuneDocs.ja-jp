@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5a223834eed1b0174c56b5e33ad2140203073d0
-ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
+ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
+ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39212037"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903145"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Android エンタープライズ キオスク デバイスの登録の設定
 
@@ -56,7 +56,7 @@ Android キオスクの管理を設定するには、次の手順に従います
 1. [Intune ポータル](https://portal.azure.com)に移動し、**[デバイスの登録]** > **[Android の登録]** > **[キオスクおよびタスク デバイス登録]** の順に進みます。
 2. **[作成]** を選択し、必須フィールドに入力します。
     - **[名前]**: 動的デバイス グループにプロファイルを割り当てるときに使用する名前を入力します。
-    - **[トークンの有効期限]**: トークンの有効期限が切れる日付。 Google は最大 30 日間を強制します。
+    - **[トークンの有効期限]**: トークンの有効期限が切れる日付。 Google は最大 90 日間を強制します。
 3. **[作成]** を選択してプロファイルを保存します。
 
 ### <a name="create-a-device-group"></a>デバイス グループを作成する
@@ -110,7 +110,7 @@ NFC 対応の Android 5.1 以降のデバイスについては、特殊な形式
 
 ### <a name="enroll-by-using-a-token"></a>トークンを利用して登録する
 
-Android 6 以降のデバイスについては、トークンを利用してデバイスを登録できます。
+Android 6 以降のデバイスについては、トークンを利用してデバイスを登録できます。 Android 6.1 以降のバージョンでは、**aft#setup** の登録方法を使用して QR コードのスキャンを活用することもできます。
 
 1. 出荷時の設定に戻したデバイスの電源を入れます。
 2. **[ようこそ]** 画面で、言語を選択します。
@@ -125,6 +125,9 @@ Android 6 以降のデバイスについては、トークンを利用してデ�
 ### <a name="enroll-by-using-a-qr-code"></a>QR コードを利用して登録する
 
 Android 7 以降のデバイスでは、登録プロファイルから QR コードをスキャンすることでデバイスを登録できます。
+
+> [!Note]
+> ブラウザーをズームすると、デバイスが QR コードをスキャンできない可能性があります。 ブラウザーをさらにズームすると、問題が解決します。
 
 1. Android デバイスで QR 読み取りを起動するには、出荷時の設定に戻した後、最初に表示される画面を複数回タップします。
 2. Android 7 デバイスと Android 8 デバイスの場合、QR リーダーをインストールするように求められます。 Android 9 以降のデバイスの場合、QR リーダーが既にインストールされています。
