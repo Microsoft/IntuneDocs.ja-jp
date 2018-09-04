@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 061a372c38090d74adddbfbce34505be987448e9
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 773b78b32e919b120ac8908b0b69c5514cbdadb2
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755336"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148763"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>iOS デバイスに Mobile Threat Defense をインストールする
 
@@ -46,4 +46,4 @@ Mobile Threat Defense は、企業の情報を盗もうとするアプリから�
 
 ## <a name="if-the-installation-doesnt-work"></a>インストールが機能しない場合
 
-ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。 このようなことが起こる場合、社内サポートにお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。 このようなことが起こる場合、社内サポートにお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

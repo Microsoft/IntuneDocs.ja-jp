@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ff51405ee48851b5a48c4d6142c33bc16ed6218e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0a17196ce30b014f0fd5e615918398c4436dba4f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031806"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149370"
 ---
 # <a name="enroll-your-ios-device-in-telecom-expense-management"></a>通信費管理サービスに iOS デバイスを登録する
 
@@ -41,7 +41,7 @@ ms.locfileid: "31031806"
 
 1. __[Enroll with Microsoft account]\(Microsoft アカウントでの登録)__ を選択します。
 
-   ![Datalert アプリの [設定] 画面の画像。画面の上半分ではデバイスを登録するための[電話番号] フィールドが提供され、Microsoft Office 365 アカウントと Intune サブスクリプションがある場合は、画面下部で "Microsoft アカウントでの登録" が提供されます。](./media/ios-enroll-11a-tem-datalert-enroll-msft-account.png)
+   ![Datalert アプリの [設定] 画面の画像。画面の上半分ではデバイスを登録するための [電話番号] フィールドがオファーされ、Microsoft Office 365 アカウントと Intune サブスクリプションがある場合は、画面下部で "Microsoft アカウントでの登録" がオファーされます。](./media/ios-enroll-11a-tem-datalert-enroll-msft-account.png)
 
 2. __"Datalert" が "Authenticator" を開こうとしている__、という通知を受け取ります。 __[開く]__ を選択します。
 
@@ -65,4 +65,4 @@ ms.locfileid: "31031806"
 
 登録が完了すると、Datalert アプリでデータ使用量が表示されるようになります。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

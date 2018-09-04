@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7f10e178e88f871c297ed8bbac7ccbe9a802d0b
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: e569b69f319cb3cf2868d86db2032b93d9bd8ab8
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755489"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149125"
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>ポータル サイトを使用して Windows デバイスをリセットするとどうなりますか。
 
@@ -34,4 +34,4 @@ ms.locfileid: "30755489"
 |デバイスは会社の電子メールのみにアクセスできる|**Windows Phone 8.1**<br />デバイスはポータル サイトに表示されなくなります。また、会社のメール アカウントと保存されていないメールは削除されます。<br /><br />**Windows 7 または Windows Vista**<br />電子メール専用で Windows 7 以前を実行しているコンピューターはリセットできません。<br /><br />**Windows 8.1 および Windows 8**<br />デバイスはポータル サイトに表示されなくなります。また、会社のメール アカウントと保存されていないメールは削除されます。|
 |PC およびラップトップ|**Windows 8.1 および Windows 8**<br />電子メール専用で Windows 8 または Windows 8.1 を実行しているコンピューターはリセットできません。<br /><br />**Windows 7 または Windows Vista**<br />Windows 7 以前を実行しているコンピューターはリセットできません。|
 
-ご不明な点がある場合は、会社のサポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+ご不明な点がある場合は、会社のサポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。
