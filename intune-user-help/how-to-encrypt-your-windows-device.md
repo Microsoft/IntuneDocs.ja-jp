@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a93c53a061e41d288846f8b5a16ea4a9b4679607
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: bf6610b3f72913bc496c1e24a136543314d42937
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31013893"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149171"
 ---
 # <a name="how-to-encrypt-your-windows-device"></a>Windows デバイスを暗号化する方法
 
@@ -34,4 +34,4 @@ ms.locfileid: "31013893"
 
 2.  **[BitLocker をオンにする]** をクリックし、表示される指示に従って、各ドライブを暗号化します。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

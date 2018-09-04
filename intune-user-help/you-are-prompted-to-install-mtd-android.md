@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: e1671c919c530108f8ff4e951f7e13c5d75a623b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 06442f7ab943ed5f96990496b00060e67c122675
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017888"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146465"
 ---
 # <a name="install-mobile-threat-defense-on-your-android-device"></a>Android デバイスに Mobile Threat Defense をインストールする
 
@@ -33,4 +33,4 @@ ms.locfileid: "31017888"
 
 **インストールが機能しない場合**
 
-ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。 このようなことが起こる場合、社内サポートにお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。 このようなことが起こる場合、社内サポートにお問い合わせください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

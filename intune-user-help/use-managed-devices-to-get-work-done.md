@@ -1,5 +1,5 @@
 ---
-title: 管理デバイスを使用して作業する | Microsoft Docs
+title: マネージド デバイスを使用して作業する | Microsoft Docs
 description: デバイスを Intune による管理対象として登録することの意味を理解します。
 keywords: ''
 author: lenewsad
@@ -17,14 +17,14 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ecb0729a2c6911fa15dd99ad4abe990859c912ad
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 2a5f383eef6f380711578cb79dfd8006ca6f96e1
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755234"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150668"
 ---
-# <a name="use-managed-devices-to-get-work-done"></a>管理デバイスを使用して作業する
+# <a name="use-managed-devices-to-get-work-done"></a>マネージド デバイスを使用して作業する
 Microsoft Intune は、組織がデバイス (スマートフォン、タブレット、PC など)、アプリ、およびその他の企業リソース (電子メールなど) を管理できるようにするソフトウェアです。 これを利用すると、企業の情報の安全性を確保しつつ、従業員が事実上どこからでも、ほぼすべてのデバイスで業務情報にアクセスできるようになります。
 
 デバイスを Intune による管理対象として登録すると、IT 部門はそのような職場または学校のリソースを管理してより安全な状態に維持できるようになる一方で、従業員は自分好みのデバイスを使用して業務を進めることができるようになります。 主な登録方法は、ポータル サイトを通じてデバイスを管理対象として登録する方法です。
@@ -36,7 +36,7 @@ Microsoft Intune は、組織がデバイス (スマートフォン、タブレ�
 ポータル サイトは 2 通りの方法で入手できます。
 
 - ポータル サイト アプリをデバイスにインストールします。 一般的に、ポータル サイト アプリはお使いのデバイスのアプリ ストアに移動して入手しますが、会社のサポートが代わりにポータル サイト アプリをインストールすることもできます。
-- 会社のサポートが設定した[ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)に移動します。
+- 会社のサポートが設定した[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)に移動します。
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>アプリと Web サイトの違い
 ポータル サイトとポータル サイト Web サイトには微妙な違いがいくつかありますが、ほとんどのタスクは同じように実行できます。 実行できるいくつかのタスクを以下に示します。
@@ -102,4 +102,4 @@ Microsoft Intune は、組織がデバイス (スマートフォン、タブレ�
 - [macOS デバイスに関する一般的な問題を解決する](troubleshoot-your-device-macos.md)
 - [Windows デバイスに関する一般的な問題を解決する](troubleshoot-your-device-windows.md)
 
-以下のコメントを投稿してサポートを受けることはできますが、組織によって要求は異なるため、必ずしもすべての質問にお答えできるとは限りません。 会社のサポートにサポートを求めることで、最も迅速かつ適切な返答が得られる可能性があります。 連絡先の情報は、[ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)で確認できます。
+以下のコメントを投稿してサポートを受けることはできますが、組織によって要求は異なるため、必ずしもすべての質問にお答えできるとは限りません。 会社のサポートにサポートを求めることで、最も迅速かつ適切な返答が得られる可能性があります。 連絡先の情報は、[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)で確認できます。

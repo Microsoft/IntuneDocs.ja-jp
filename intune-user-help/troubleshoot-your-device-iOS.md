@@ -17,16 +17,16 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b0edd35aa1b202b9494c31d91a0ca5584f1cc251
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: db65c33fe90497ccb511f18c8668a876c0d352fc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755268"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146401"
 ---
 # <a name="fix-common-issues-with-your-ios-device"></a>iOS デバイスに関する一般的な問題を解決する
 
-iOS デバイスで発生する問題の一部は、トラブルシューティングによって解決できる場合があります。 以下に、まず自分で解決を試みることができる一般的な問題をいくつか挙げます。 さらに複雑な問題については、[ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)の連絡先情報を使用して、会社のサポートに問い合わせることをお勧めします。
+iOS デバイスで発生する問題の一部は、トラブルシューティングによって解決できる場合があります。 以下に、まず自分で解決を試みることができる一般的な問題をいくつか挙げます。 さらに複雑な問題については、[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)の連絡先情報を使用して、会社のサポートに問い合わせることをお勧めします。
 
 - [セキュリティを侵害された iOS デバイスを再接続する必要がある](how-to-reconnect-a-compromised-ios-device.md)
 - [会社のサポートにエラーを送信する必要がある](send-errors-to-your-it-admin-ios.md)

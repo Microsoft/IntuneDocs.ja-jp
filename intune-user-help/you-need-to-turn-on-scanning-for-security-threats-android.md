@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: cf2413ee879cf4a6cb2742d34f452105057ccf59
-ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
+ms.openlocfilehash: c98980cca305bef01dd91e69d00a471b10e741a8
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2018
-ms.locfileid: "34073820"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147487"
 ---
 # <a name="enable-security-threat-scans-on-your-device"></a>デバイスでセキュリティ上の脅威のスキャンを有効にする 
 知らずに危険なアプリをインストールした場合、デバイスのデータが危険にさらされる可能性があります。 デバイス上のデータを保護するため、次のことをお勧めします。 
@@ -32,4 +32,4 @@ ms.locfileid: "34073820"
 
 一部の Samsung デバイスでは、設定が **[設定]** > **[Google]** > **[セキュリティ]** > **[Google Play プロテクト]** にある場合があります。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。 
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。 

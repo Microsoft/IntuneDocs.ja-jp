@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 22d23751aaa3416fb13c7b08451ea91c3ee308e2
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6395dc0d14b8947093d53865eb1d97f6ef56db25
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017293"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147114"
 ---
 # <a name="enroll-your-windows-10-devices-in-intune"></a>Intune に Windows 10 デバイスを登録する
 
@@ -51,4 +51,4 @@ ms.locfileid: "31017293"
 3.  __[デバイス情報]__ の __[詳細情報]__ をタップします。 デバイスに関する情報の一覧が表示されます。 一覧の __[バージョン]__ を確認します。        
 4.  バージョンが __1607 以降__の場合、[こちらの手順](enroll-your-w10-device-access-work-or-school.md)に進みます。 バージョンが __1511 以前__の場合、[こちらの手順](enroll-your-w10-device-your-account.md)に進みます。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f4a8ddb904d1007680777b9358feec08ae2cd0eb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f340df3463bc94afbe83efb8873f3f5a31326c8e
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015406"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147337"
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>ポータル サイトを使用して Android デバイスをリセットするとどうなりますか。
 
@@ -34,4 +34,4 @@ Samsung Knox デバイスがある場合は、ポータル サイトから**デ�
 - 電子メール、VPN、および Wi-Fi。
 - 特定の設定を適用するための会社のサポートの権限。
 
-ご不明な点がある場合は、会社のサポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+ご不明な点がある場合は、会社のサポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

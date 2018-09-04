@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 6f81cab429f531f6839dc952d6ea6fb2977130ab
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0a7f961036eab3b1bf72cc68a44e62f07bdbff6e
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019194"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147903"
 ---
 # <a name="set-or-change-your-passcode"></a>パスコードを設定または変更する
 
@@ -43,4 +43,4 @@ iOS デバイスが会社のサポートのパスコード ポリシーに準拠
 2. **[Change Passcode]\(パスコードを変更\)** をタップし、古いパスコードを入力します。
 3. 会社のサポートの要件を満たす新しいパスコードを入力し、それを再入力して確認します。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

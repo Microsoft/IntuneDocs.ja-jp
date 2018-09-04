@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6c4e89524047b99b9c9eb3f0e65fe482a8ae85a2
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: fb7bf238fab91495a8c9dd498be4918669aa2579
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016647"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150520"
 ---
 # <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>登録試行時にデバイスを識別する必要がある
 
@@ -32,4 +32,4 @@ Intune に iOS デバイスを登録している最中に、デバイスを識�
 2. **[続行]** をタップします。
 3. デバイスが登録されていることを Intune が確認できるようにするため、デバイスのシリアル番号の最後の 4 文字を入力します。 シリアル番号を検索するには、「[How do I find the serial number on my device?](how-do-i-find-the-serial-number-on-my-device-ios.md)」 (デバイスのシリアル番号を検索する方法) を参照してください。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

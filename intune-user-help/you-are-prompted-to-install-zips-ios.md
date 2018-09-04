@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 47cb816f0a032d8e01fcdd7ff025d36ba1354f3d
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: cab09c0a127c8d3bab2a135e1bf46f6beb478d22
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30754979"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150771"
 ---
 # <a name="install-zimperium-zips-on-your-ios-device"></a>iOS デバイスに Zimperium zIPS をインストールする
 
@@ -46,4 +46,4 @@ Zimperium zIPS によってこのデバイスでセキュリティ上の脅威�
 
 ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。 このような場合は、Zimperium zIPS を[アプリ ストアから手動で](https://itunes.apple.com/app/zimperium-zips/id1030924459)インストールしてみてください。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

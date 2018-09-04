@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 2f1b71513ad5e22f62c783ac8d305acb9eac4cca
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c377c2a4e9640443eb38a85b2e1806c9d9e64a82
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021782"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147195"
 ---
 # <a name="you-need-to-turn-off-usb-debugging"></a>USB デバッグを無効にする必要がある
 
@@ -30,4 +30,4 @@ USB デバッグを無効にするには、**[設定]** > **[開発者オプシ�
 
 **[USB デバッグ]** を無効にしてから数分間待機すると、Android デバイスで会社や学校のデータにアクセスできるようになります。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

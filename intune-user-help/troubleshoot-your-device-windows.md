@@ -16,16 +16,16 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
-ms.openlocfilehash: 727889a2e3946372414151593e8433315e82e76b
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 269ee4f0d3a82fffb75b507240950af73e149847
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751681"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149648"
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>Windows デバイスに関する一般的な問題を解決する
 
-Windows デバイスで発生する問題の一部は、トラブルシューティングによって解決できる場合があります。 以下に、まず自分で解決を試みることができる一般的な問題をいくつか挙げます。 さらに複雑な問題については、[ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)の連絡先情報を使用して、会社のサポートに問い合わせることをお勧めします。
+Windows デバイスで発生する問題の一部は、トラブルシューティングによって解決できる場合があります。 以下に、まず自分で解決を試みることができる一般的な問題をいくつか挙げます。 さらに複雑な問題については、[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)の連絡先情報を使用して、会社のサポートに問い合わせることをお勧めします。
 
 - [Windows 10 デバイスが登録されない](troubleshoot-your-windows-10-device-windows.md)
 - [Windows デバイスを更新する必要がある](you-need-to-update-your-windows-device.md)

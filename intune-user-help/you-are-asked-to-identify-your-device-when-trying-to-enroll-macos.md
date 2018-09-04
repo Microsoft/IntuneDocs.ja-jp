@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ec853bce004c70b1a833218f2ef9f4c14d6bb2b7
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1cf4b5eb051775a289e727ec6bc03c5af8734b6f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31032082"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147250"
 ---
 # <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>登録試行時にデバイスを識別する必要がある
 
@@ -32,4 +32,4 @@ Intune に macOS デバイスを登録している最中に、デバイスを識
 2. **[続行]** をクリックします。
 3. デバイスが登録されていることを Intune が確認できるようにするため、デバイスのシリアル番号の最後の 4 文字を入力します。 シリアル番号を検索するには、「[How do I find the serial number on my device?](how-do-i-find-the-serial-number-on-my-device-macos.md)」 (デバイスのシリアル番号を検索する方法) を参照してください。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

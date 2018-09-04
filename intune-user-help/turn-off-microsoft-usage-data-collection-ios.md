@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2c806edbf3855bd23a470eefb6c7be1af65d3211
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4682269cf419fb3be19921e78e2aa7e762f0303d
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015797"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146579"
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>Microsoft のデータ収集をオフにする方法
 
@@ -30,4 +30,4 @@ Microsoft は、製品やサービスに関する特定のデータを自動的�
 
 iOS デバイスで使用状況に関するデータの収集をオフにするには、**[設定]** を開き、**[ポータル サイト]** をタップして **[使用状況データ]** をオフにします。 MacOS デバイスでは、**[ポータル サイト]** メニューの **[基本設定]** を開き、**[使用状況データの収集を Microsoft に許可します]** のチェックを外します。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

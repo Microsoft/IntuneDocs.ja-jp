@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9e24f9aca0c06f69c61af6a7fab4f69afe381b6d
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e2e81bdb3431ac8a2e0fdae6a7f3099512319aee
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836929"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313260"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune デバイスの管理とは
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-IT 管理者はデータをリスクから保護しながら、ユーザーが自分の作業に必要なリソースが管理されたデバイスから提供されるようにする必要があります。
+IT 管理者はデータをリスクから保護しながら、ユーザーが自分の作業に必要なリソースがマネージド デバイスから提供されるようにする必要があります。
 
 **[デバイス]** ワークロードでは、管理対象のデバイスについての情報が得られ、そのデバイスでリモート タスクを実行できます。
 
@@ -37,7 +37,7 @@ IT 管理者はデータをリスクから保護しながら、ユーザーが�
    - **[概要]** には登録済みデバイスのビジュアル スナップショットが表示されます。また、Android、iOS などのさまざまなプラットフォームを使用しているデバイスの数が表示されます。
    - **[すべてのデバイス]** には、管理する登録済みデバイスの一覧が示されます。
 
-     **エクスポート**機能を使用して、10,000 単位 (Internet Explorer) または 30,000 単位 (Microsoft Edge、Chrome) ですべてのデバイスの .csv 一覧を作成します。
+     **エクスポート**機能を使用して、10,000 単位 (Internet Explorer) または 30,000 単位 (Edge、Chrome) ですべてのデバイスの .csv 一覧を作成します。
 
      任意のデバイスを選択し、ハードウェアの詳細、インストールされているアプリ、そのコンプライアンス ポリシーの状態など、[デバイスに関する追加の詳細情報を表示](device-inventory.md)します。
 
@@ -55,8 +55,8 @@ IT 管理者はデータをリスクから保護しながら、ユーザーが�
 
 - [デバイス インベントリを表示する](device-inventory.md)
 - 以下のリモート デバイス アクションを実行します。
-    - [会社データの削除](devices-wipe.md#remove-company-data)
-    - [出荷時の設定に戻す](devices-wipe.md#factory-reset)
+    - [削除](devices-wipe.md#retire)
+    - [ワイプ](devices-wipe.md#wipe)
     - [リモート ロック](device-remote-lock.md)
     - [パスコードのリセット](device-passcode-reset.md)
     - [アクティブ化ロックをバイパスする](device-activation-lock-bypass.md) (iOS のみ)

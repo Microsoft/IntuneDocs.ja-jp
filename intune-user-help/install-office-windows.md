@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 738cc313eca4c98e7cdee3dfe40f705630244a9f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 443234bea9623ccbf5ac916d179a8fe202a392dd
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015746"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147780"
 ---
 # <a name="installing-office-365-on-your-windows-10-device"></a>Windows 10 デバイスに Office 365 をインストールする
 
@@ -32,4 +32,4 @@ Windows 10 デバイスに Office スイートをインストールするには�
 
 会社が Office を使用可能にしている場合は、1 つのバージョンの Office のみをインストールしてください。 両方をインストールしようとすると、最初にインストールした方を削除することになります。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

@@ -18,12 +18,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4c8d6ba4f6f8a9885b0000e0d7c60ba0594504b5
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: ffdf1d524dafa280a698ff25b5118394116cd72a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30750865"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148833"
 ---
 # <a name="the-limit-of-devices-you-can-register-has-been-reached"></a>登録できるデバイスの制限に達した
 
@@ -33,4 +33,4 @@ ms.locfileid: "30750865"
 2. [自分のアプリのポータル](https://myapps.microsoft.com)からデバイスの 1 つを削除し、ページの右上隅にある **[プロファイル]** を選択します。 
 3. 登録できるデバイスの数を増やすことができるかどうか、会社のサポートにご確認ください。 
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

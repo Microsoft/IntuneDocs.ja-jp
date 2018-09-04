@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 05d7f1956e4537a3a51871ac3670bfaea5a9696f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 066b412fe1f52e5e7497512d744a35cd5c77f08a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017922"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147591"
 ---
 # <a name="install-the-company-portal-app-for-android"></a>Android 用ポータル サイト アプリをインストールする
 
@@ -46,4 +46,4 @@ ms.locfileid: "31017922"
 
 ポータル サイト アプリをダウンロードしたら、職場の情報へのフル アクセスを取得するために [Intune にデバイスを登録](enroll-your-device-in-Intune-android.md)することをお勧めします。 [別のデバイスを使用してサインインする](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device)こともできます。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

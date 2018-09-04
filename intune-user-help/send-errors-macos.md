@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9805dfdba67299a5a1cd9433bbc061f8bd96bc9e
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 8bc441dd07191ec3eb1280330be380ca425f53cc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190521"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150848"
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>管理対象の macOS デバイスの適切なユーザーにエラーを送信する
 
@@ -48,4 +48,4 @@ Microsoft にログを送信するには、次の手順に従います。
 2.  **[ヘルプ]** メニューの **[診断レポートの送信]** をクリックします。  ログがアップロードされた後、インシデント ID を受け取ります。 その ID をコピーして保存します。
 3.  <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">こちらのテンプレート</a>を使って、Microsoft にメールを送ります。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

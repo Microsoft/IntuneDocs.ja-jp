@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 7194f63a3d9b34be00753a66b9929c033bd10b86
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 40e022fceecff0c12be9e7112af77b5d830ff94a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019655"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148186"
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Android デバイスに Symantec Endpoint Protection Mobile をインストールする
 
@@ -58,4 +58,4 @@ ms.locfileid: "31019655"
 
 ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。 このような場合は、SEP Mobile を [Play ストアから手動で](https://play.google.com/store/apps/details?id=com.skycure.skycure)インストールします。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

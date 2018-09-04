@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 980b7d9f221fd1a1ae12f27743757d5b3bd53492
-ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
+ms.openlocfilehash: 6090ea3509c1f355c21e02ae155bdb9035f6c508
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39481191"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148780"
 ---
 # <a name="remove-your-windows-device-from-intune-management"></a>Intune 管理から Windows デバイスを削除する
 
@@ -82,4 +82,4 @@ Windows 8.1 モバイル デバイスを Intune から削除するには、次�
 
 * ポータル サイト アプリをリセットします。 **[設定]** アプリを開き、**[アプリ]** > **[ポータル サイト]** > **[詳細設定オプション]** > **[リセット]** の順に選びます。 
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

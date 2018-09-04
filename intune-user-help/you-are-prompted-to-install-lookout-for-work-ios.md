@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: fda95e461fe8412b26289bc601d8282588cd211c
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 94a6dff4a6dac357fcbdf475ada9894f4bc039bd
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755438"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149300"
 ---
 # <a name="install-lookout-for-work-on-your-ios-device"></a>iOS デバイスで Lookout for Work をインストールする
 
@@ -56,5 +56,5 @@ ms.locfileid: "30755438"
 
 ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。 このような場合は、Lookout for Work を[アプリ ストアから手動で](https://itunes.apple.com/app/lookout-for-work/id997193468)インストールしてみてください。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。
 

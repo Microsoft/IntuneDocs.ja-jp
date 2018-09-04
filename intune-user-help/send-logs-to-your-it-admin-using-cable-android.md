@@ -17,19 +17,19 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2a2c5c60f22aca6a9c989281ef2c5cc9e0c66911
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: 89be04405f76c290c252c382fbee207176e7180d
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117856"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150309"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>USB ケーブルを使用してログを会社のサポートに送信する
 
 Android デバイスでポータル サイト アプリを使用している間にエラーが発生した場合は、会社のサポートが問題のトラブルシューティングを行う際に役立つようにエラーに関する情報を電子メールで送信することができます。 この情報は、デバイスの _diagnostic log_ という名前の特殊なドキュメントに保存されています。
 
 > [!Note]
-> 開始する前に、会社のサポートの電子メール アドレスを用意してください。 アドレスは、[ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)またはポータル サイト アプリで見つけることができます。
+> 開始する前に、会社のサポートの電子メール アドレスを用意してください。 アドレスは、[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)またはポータル サイト アプリで見つけることができます。
 
 1. エラー画面で、**[情報の送信]** をタップします。 ログを送信する方法を確認するメッセージが表示されたら、デバイスにファイルを保存するオプションを選択します。
 
@@ -39,4 +39,4 @@ Android デバイスでポータル サイト アプリを使用している間�
 
 4. ファイルを選択して電子メールに添付します。 この電子メールを会社のサポートに送信します。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

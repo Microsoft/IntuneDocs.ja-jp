@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ed5acd3e5af2c26a8b13872d4663352886f4bc1f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 202a7cc118a4eb8a2e15c1b0de32c27450d064db
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015984"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149431"
 ---
 # <a name="your-macos-devices-operating-system-version-isnt-yet-supported"></a>使用している macOS デバイスのオペレーティング システムのバージョンがまだサポートされていない
 
 テクノロジの開発のペースはとても速いため、デバイスに会社のサポートのテストが追いつけない場合があります。 最新バージョンの macOS では会社の一部のツールが動作しないことも考えられます。
 
-この問題を解決するには、会社のサポートに連絡する必要があります。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+この問題を解決するには、会社のサポートに連絡する必要があります。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

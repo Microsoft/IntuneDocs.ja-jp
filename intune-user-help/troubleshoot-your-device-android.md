@@ -16,16 +16,16 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: eb20e5c4099d51fd5afb0fbb6700fc33da53557a
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: de0afc8babe692663af9528da313cb31a9d3ff57
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30752157"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148451"
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>Android デバイスに関する一般的な問題を解決する
 
-Android デバイスで発生する問題の一部は、トラブルシューティングによって解決できる場合があります。 以下に、まず自分で解決を試みることができる一般的な問題をいくつか挙げます。 さらに複雑な問題については、[ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)の連絡先情報を使用して、会社のサポートに問い合わせることをお勧めします。
+Android デバイスで発生する問題の一部は、トラブルシューティングによって解決できる場合があります。 以下に、まず自分で解決を試みることができる一般的な問題をいくつか挙げます。 さらに複雑な問題については、[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)の連絡先情報を使用して、会社のサポートに問い合わせることをお勧めします。
 
 - [Android デバイスでコンプライアンス対応を確認する](check-compliance-on-your-device-android.md)
 - [詳細ログ記録を使用して、デバイスの問題解決に役立つ情報を会社のサポートに提供する](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c26a3bbb168904fe39c6c0ff7dd0698eece56596
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: de8fb99a201590c9ea68e5a2ec6714de9ae0d0f4
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30754928"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146879"
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Android デバイスは暗号化されるように見えるが、ポータル サイトではそのように認識されていない
 
@@ -49,7 +49,7 @@ ms.locfileid: "30754928"
 
 ### <a name="downgrade-your-version-of-android"></a>Android のバージョンのダウングレード
 
-デバイスで Android 6.0 以降にダウングレードできる場合は、ダウングレードします。 デバイスのダウングレードには、データ損失のリスクがあります。 そのため、会社のサポートに問い合わせて、この問題を解決することをお勧めします。 会社のサポートの連絡先情報は、[ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)で入手できます。
+デバイスで Android 6.0 以降にダウングレードできる場合は、ダウングレードします。 デバイスのダウングレードには、データ損失のリスクがあります。 そのため、会社のサポートに問い合わせて、この問題を解決することをお勧めします。 会社のサポートの連絡先情報は、[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)で入手できます。
 
 ## <a name="specific-manufacturer-issues"></a>特定の製造元の問題
 

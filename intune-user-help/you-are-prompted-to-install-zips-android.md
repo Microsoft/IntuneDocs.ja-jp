@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: bf6b674750eeaf857fdb7595963d399662893c4d
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: be4b91eaaa2187678fb4325a93dc561df08225b7
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30753959"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150397"
 ---
 # <a name="install-zimperium-zips-on-your-android-device"></a>Android デバイスに Zimperium zIPS をインストールする
 
@@ -58,4 +58,4 @@ ms.locfileid: "30753959"
 
 ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。 このような場合は、Zimperium zIPS を [Play ストアから手動で](https://play.google.com/store/apps/details?id=com.zimperium.zips)インストールしてみてください。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

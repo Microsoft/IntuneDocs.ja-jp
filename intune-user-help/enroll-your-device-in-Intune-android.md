@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a48e43a024358b35c88014d2b4a05f2245f13a3f
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 5eb00734c8095202b5b633f1db105a42d40e4567
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34449838"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149037"
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Intune に Android デバイスを登録する
 
@@ -94,7 +94,7 @@ ms.locfileid: "34449838"
 
     重要なことは、これらのアクションがセキュリティの名の下に行われるということです。 会社のサポートは理由なくプライバシーを侵害したり、情報を削除したりしません。企業のデータが守られていることを確認しようとしているだけです。
 
-    Microsoft はこのメッセージは制御しません。その言葉遣いが少々極端であることは理解しています。 特定の組織に関連する制約やアクセスのみをポータル サイトで表示する方法はありません。 すべて一度にこの画面で与えられます。 個別の組織の利用に関して質問があれば、[ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)の連絡先情報を利用し、会社のサポートに詳細を問い合わせてください。
+    Microsoft はこのメッセージは制御しません。その言葉遣いが少々極端であることは理解しています。 特定の組織に関連する制約やアクセスのみをポータル サイトで表示する方法はありません。 すべて一度にこの画面で与えられます。 個別の組織の利用に関して質問があれば、[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)の連絡先情報を利用し、会社のサポートに詳細を問い合わせてください。
 
 11. 画面の指示に従って、PIN またはパスワードを入力します。 このデバイス上で PIN またはパスワードを既に設定している場合は、この画面は表示されず、新しい PIN またはパスワードを入力するように求められます。
 
@@ -131,4 +131,4 @@ ms.locfileid: "34449838"
 
 Intune にデバイスを登録している最中にエラーが表示された場合は、[会社のサポートに登録に関するエラーを送信](send-enrollment-errors-to-your-it-admin-android.md)できます。
 
-サポートが必要な場合は、 会社のサポートに問い合わせるか (連絡先情報については[ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください)、または <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android チーム</a>にご連絡ください。
+サポートが必要な場合は、 会社のサポートに問い合わせるか (連絡先情報については[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください)、または <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android チーム</a>にご連絡ください。

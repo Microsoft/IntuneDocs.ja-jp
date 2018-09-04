@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: dced939de37ca9fe7172ac0a8bec3fa391a24ed1
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 56682656ce9b935bbde595663e4feb0cdc725cb3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017378"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147886"
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>通信費管理サービスに Android デバイスを登録する
 
@@ -40,7 +40,7 @@ ms.locfileid: "31017378"
 
 1. __[Enroll with Microsoft account]\(Microsoft アカウントでの登録)__ を選択します。
 
-   ![Datalert アプリの [設定] 画面の画像。Microsoft Office 365 アカウントと Intune サブスクリプションがある場合は、画面の上半分でデバイスを登録するための [電話番号] フィールドが提供され、画面の下半分で "Microsoft アカウントでの登録" が提供されます。](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
+   ![Datalert アプリの [設定] 画面の画像。画面の上半分ではデバイスを登録するための [電話番号] フィールドがオファーされ、Microsoft Office 365 アカウントと Intune サブスクリプションがある場合は、画面下部で "Microsoft アカウントでの登録" がオファーされます。](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
 
 2. 利用可能なアカウントから職場または学校のアカウントを選択します。 自分のアカウントが一覧にない場合は、**[アカウントの追加]** ボタンを使用してアカウントにサインインできます。
 
@@ -64,4 +64,4 @@ ms.locfileid: "31017378"
 
 登録が完了すると、Datalert アプリでデータ使用量が表示されるようになります。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

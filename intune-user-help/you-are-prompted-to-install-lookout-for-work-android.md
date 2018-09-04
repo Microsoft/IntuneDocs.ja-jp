@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 6b55faeae5b68da04f1f9e75c984ebb0af2b9deb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 04811c4ced1734b4cb10ea624b71cf659857bdd7
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020828"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150224"
 ---
 # <a name="install-lookout-for-work"></a>Lookout for Work をインストールする
 
@@ -77,5 +77,5 @@ ms.locfileid: "31020828"
 ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。 このような場合は、Lookout for Work を [Play ストアから手動で](https://play.google.com/store/apps/details?id=com.lookout.enterprise)インストールします。
 
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。
 

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 51ef4e1e89c54587535f3ede7e8f406f54763bc9
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 88caf56a2483690f9130818191b04f412a7ed641
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015066"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146839"
 ---
 # <a name="check-compliance-on-your-android-device"></a>Android デバイスでコンプライアンス対応を確認する
 
@@ -32,4 +32,4 @@ ms.locfileid: "31015066"
 
 2. **[ポリシー準拠状況の確認]** をタップします。
 
-紛失したまたは盗難にあったデバイスを自分でリセットできない場合は、会社のサポートに依頼してください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+紛失したまたは盗難にあったデバイスを自分でリセットできない場合は、会社のサポートに依頼してください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

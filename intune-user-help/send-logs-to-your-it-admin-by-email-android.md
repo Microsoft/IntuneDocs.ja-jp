@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f924ece24fe38346c1abab8964270e4abe5abf76
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: efe251a9a347a179e56d496d761b0ea7f28ab66f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327689"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149602"
 ---
 # <a name="email-logs-to-your-company-support"></a>電子メールでログを会社のサポートに送信する
 
@@ -45,4 +45,4 @@ Android デバイスでポータル サイト アプリを利用していると�
 3.  **[Send Email & Upload Logs]\(メールの送信 & ログのアップロード\)** をタップします。
 4.  アップロードが完了したら、電子メール アプリをタップします。 電子メール メッセージが開きます。サブジェクト フィールドにインシデント ID が既に入力されています。 電子メールの本文で、発生した問題について説明します。  
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

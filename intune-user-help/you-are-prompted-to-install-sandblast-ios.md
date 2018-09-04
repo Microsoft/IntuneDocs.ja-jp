@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 94440987583651925e2aa3c1cceb7ba1206ed8bc
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: a52c72c82e54643f5a348a17d3f7b1e0cc8b9d71
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30753994"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146326"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-ios-device"></a>iOS デバイスに SandBlast Mobile Protect をインストールする必要がある
 
@@ -46,4 +46,4 @@ SandBlast Mobile Protect によってこのデバイスでセキュリティ上�
 
 ユーザーが制御できない技術的な問題によりインストールが失敗する場合があります。 このような場合は、SandBlast Mobile Protect を[アプリ ストアから手動で](https://itunes.apple.com/app/sandblast-mobile-protect/id1006390797)インストールします。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

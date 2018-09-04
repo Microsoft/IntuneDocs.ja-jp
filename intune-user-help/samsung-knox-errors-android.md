@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: 1ce260b010658ade6c78361b980ca928a992d113
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 235356e88dc2ba25b789ebe262c1ae9b32840793
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751443"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150887"
 ---
 # <a name="fix-common-issues-with-your-samsung-knox-device"></a>Samsung KNOX デバイスに関する一般的な問題を解決する
 
@@ -51,4 +51,4 @@ Samsung KNOX デバイスで発生する問題の一部は、トラブルシュ�
 |---|---|
 |**[Samsung KNOX アクティブ化エラー]** - Samsung KNOX ライセンスをアクティブ化できませんでした。 省電力がオンになっている可能性があります。 デバイス設定で省電力モードをオフにして、もう一度試してください。 |このデバイスには、会社のリソースを使用するための適切な電源設定が設定されていません。 [省電力モードの設定](power-saving-mode-android.md)に関する詳細をご覧ください。|
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。
