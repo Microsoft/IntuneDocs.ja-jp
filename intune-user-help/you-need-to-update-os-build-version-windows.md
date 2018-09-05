@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 69a7855dc2df9f74fb529c405cbf02a32cfdea1e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4006f5784115a063eee80c817dc9b99c99dec827
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017956"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149689"
 ---
 # <a name="update-your-windows-10-device"></a>Windows 10 デバイスを更新する
 
@@ -34,4 +34,4 @@ ms.locfileid: "31017956"
 
 お使いの Windows のバージョンが、会社が対応しているバージョンより新しい場合は、[別の手順で問題の解決をお試しください](your-windows-version-isnt-yet-supported.md)。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9190282edb8d356d7d43a634d10991a4b4c19c16
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3e305848ca77aef49050df382151db75c5b03e2a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018500"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147983"
 ---
 # <a name="turn-on-windows-defender-to-access-company-resources"></a>Windows Defender をオンにし、会社のリソースにアクセスする
 
@@ -50,4 +50,4 @@ ms.locfileid: "31018500"
 
 ウイルス対策定義が最新の状態になっていることを確認します。**[スタート]** に移動し、**[Windows Defender セキュリティ センター]** を検索します。 **[保護の更新]** と **[更新プログラムの確認]** を選択し、現行のウイルス対策保護がデバイスに適用されていることを確認します。 このオプションが表示されない場合、「[リアルタイム保護を有効にする](turn-on-defender-windows.md#turn-on-real-time-protection)」の手順を実行します。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

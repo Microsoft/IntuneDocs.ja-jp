@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8b433a20aaa2ca25f54d051e3bed58989ef9dec7
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9c9532cc58b392aecb821ae38e8e4d284d971b7d
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017038"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146301"
 ---
 # <a name="how-to-enable-user-access-control"></a>ユーザー アクセス制御を有効にする方法
 
@@ -34,4 +34,4 @@ ms.locfileid: "31017038"
 2. **[セキュリティとメンテナンス]**、**[ユーザー アカウント制御設定の変更]** の順に開きます。
 3. **[コンピューターに対する変更の通知を受け取るタイミングの選択]** ページで、**[常に通知する]** に最も近い上位 2 つのメモリのいずれかまでスライダーを動かします。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

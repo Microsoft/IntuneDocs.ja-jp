@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0a90cace32edb33293ba0b0b89d272465ea32418
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: ba0f2675bfd65f60f6f16d6be738cdc1baa3e7e5
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34547490"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148799"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>Intune から iOS デバイスを削除する
 
@@ -74,4 +74,4 @@ Intune からデバイスを削除するには、これらの手順を使用す�
 -   **キーチェーン**: サインインに使用されるパスワードとその他の情報がデバイスによってキーチェーンに格納されます。 Microsoft Outlook や Microsoft Authenticator など、Microsoft アプリは、お使いのデバイスにインストールされている Microsoft 製のあらゆるアプリの間でサインイン情報を共有します。 Apple 分析と同様に、この情報はお使いのデバイスを出荷時の設定に戻すことでのみ削除されます。 お使いのデバイスに入っている個人情報がすべて消去されます。 これを行うには、**[設定]**、**[全般]**、**[リセット]**、**[すべてのコンテンツと設定を消去]** の順に開きます。
 
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。
