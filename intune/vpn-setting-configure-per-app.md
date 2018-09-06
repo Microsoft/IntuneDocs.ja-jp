@@ -14,12 +14,12 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ed58a6af9b2b4742582c92729e7324841014f31c
-ms.sourcegitcommit: 2bc3b9655517ae874c524c3a270f4fc40c448faa
+ms.openlocfilehash: f4746e2f20926c102717214304711cc9883597b8
+ms.sourcegitcommit: 1e349bcfd562f34866108e566e5b5062717e0112
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34753894"
+ms.lasthandoff: 08/15/2018
+ms.locfileid: "40251765"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Intune での iOS デバイス用のアプリごとの Virtual Private Network (VPN) 設定
 
@@ -145,21 +145,32 @@ VPN プロファイルを追加した後、アプリと Azure AD グループを
 
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
 2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
-2. **[Mobile Apps]** を選択します。
-3. **[アプリ]** をクリックします。
-4. アプリの一覧からアプリを選択します。
-5. **[割り当て]** をクリックします。
-6. **[グループの追加]** をクリックします。
-7. **[グループの追加]** ウィンドウの **[割り当ての種類]** に **[必須]** を選択します。
-6. 前に定義したグループを選択して、**[Make this app required]\(このアプリを必須にします\)** を選択します。
-8. **[VPN]** に VPN 定義を選択します。
+3. **[Mobile Apps]** を選択します。
+4. **[アプリ]** をクリックします。
+5. アプリの一覧からアプリを選択します。
+6. **[割り当て]** をクリックします。
+7. **[グループの追加]** をクリックします。
+8. **[グループの追加]** ウィンドウの **[割り当ての種類]** に **[必須]** を選択します。
+9. 前に定義したグループを選択して、**[Make this app required]\(このアプリを必須にします\)** を選択します。
+10. **[VPN]** に VPN 定義を選択します。
  
     > [!NOTE]  
     > VPN 定義が値を取得するまで、1 分程度かかる場合があります。 3 - 5 分間待ってから、**[保存]** をクリックします。
 
-9. **[OK]** をクリックし、**[保存]** をクリックします。
+11. **[OK]** をクリックし、**[保存]** をクリックします。
 
     ![アプリと VPN を関連付ける](./media/vpn-per-app-app-to-vpn.png)
+
+アプリとプロファイルの関連付けは、次の条件が存在する場合、次回のデバイス チェックインの際に解除されます。
+- アプリが必須インストール インテントのターゲットになった場合
+- プロファイルとアプリの両方が同じグループをターゲットにしている場合
+- アプリごとの VPN 構成をアプリ割り当てから削除する場合
+
+次の条件がある場合、アプリとプロファイルの関連付けは、エンドユーザーが会社のポータルからの再インストールを要求するまで存在します。
+- アプリが利用可能インストール インテントのターゲットになった場合
+- プロファイルとアプリの両方が同じグループをターゲットにしている場合
+- エンド ユーザーが会社のポータルでアプリのインストールを要求したため、アプリとプロファイルがデバイスにインストールされる場合
+- アプリごとの VPN 構成をアプリ割り当てから削除する場合
 
 ## <a name="verify-the-connection-on-the-ios-device"></a>iOS デバイスでの接続を確認する
 
@@ -191,7 +202,7 @@ iOS デバイスで接続を確認します。
 2. **[接続]** をタップします。  
 VPN は、余分なプロンプトを表示せずに正常に接続します。
 
-<!-- ## Troubleshooting the Per-App VPN
+<!-- ## Troubleshooting the per-app VPN
 
 The user experiences the feature by silently connecting to the VPN. This experience, however, can provide little information for troubleshooting. You can review the event logs crated by the iOS device.
 

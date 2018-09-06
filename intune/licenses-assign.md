@@ -14,12 +14,12 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a6a5bbdd5c8cd155dad99b3a8fcceabb2ff1f6f8
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 8b132c0853bf9d591f16610f1e7a714b6288491b
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225410"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751652"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Intune にデバイスを登録できるようにライセンスをユーザーに割り当てる
 
@@ -61,7 +61,7 @@ SDS について詳しくは、「[School Data Sync と Classroom の概要](htt
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>ユーザー ライセンスとデバイス ライセンスがサービスへのアクセスに与える影響
 * ユーザー ソフトウェア ライセンスが割り当てられた各**ユーザー**は、オンライン サービスと関連するソフトウェア (System Center ソフトウェアを含む) にアクセスしてそれらを使用し、複数のアプリケーションと最大 15 台のデバイスを管理できます。
-* デバイス ソフトウェア ライセンスが割り当てられた各**デバイス**は、オンライン サービスと関連するソフトウェア (System Center ソフトウェアを含む) にアクセスしてそれらを使用することができます。使用するユーザー数に制限はありません。
+* ユーザー ライセンスとは別にあらゆるデバイス用のライセンスを購入できます。 デバイス ライセンスはデバイスに割り当てる必要はありません。 オンライン サービスと関連ソフトウェア (System Center ソフトウェアを含む) にアクセスして使用する各デバイスに、デバイス ライセンスが必要です。
 * デバイスが 2 人以上のユーザーによって使用される場合は、各デバイスにデバイス ソフトウェア ライセンス、またはすべてのユーザーにユーザー ソフトウェア ライセンスが必要です。
 
 ## <a name="understanding-the-type-of-licenses-you-have-purchased"></a>購入したライセンスの種類について

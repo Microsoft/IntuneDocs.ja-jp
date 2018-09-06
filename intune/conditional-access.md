@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a62166792570c5bb81391d05d1cbc3f8486543a4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7faba9a0bfb6f07a80c4c0af947efbca9b33ae03
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31022341"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251621"
 ---
 # <a name="whats-conditional-access"></a>条件付きアクセスとは
 
@@ -38,7 +38,7 @@ Enterprise Mobility + Security (EMS) 条件付きアクセスはスタンドア�
 
 ## <a name="conditional-access-with-intune"></a>Intune での条件付きアクセス
 
-Intune では、モバイル デバイスのコンプライアンスとアプリ管理ポリシーを追加し、EMS 条件付きアクセスのソリューションをサポートします。
+条件付きアクセスは、Azure Active Directory Premium ライセンスに含まれる Azure Active Directory の機能です。 Intune は、モバイル デバイス コンプライアンスとモバイル アプリ管理をソリューションに加えて、この機能を強化します。 
 
 ![EMS 使用時の Intune と条件付きアクセス](./media/intune-with-ca-1.png)
 

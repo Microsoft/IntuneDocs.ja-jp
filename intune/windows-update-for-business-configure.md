@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 216c83d4158fe65b7aeb52f5477362eb57ec4242
-ms.sourcegitcommit: a52e81ab4fe24ae6410d1a1e63b4b073abc416a4
+ms.openlocfilehash: df7e14b485fae0a70b8f0f487229b9e31ace4077
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34822723"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255230"
 ---
 # <a name="manage-software-updates-in-intune"></a>Intune でのソフトウェア更新プログラムの管理
 
@@ -115,11 +115,10 @@ Windows Update for Business を使用して、更新管理エクスペリエン�
 3. 選択が完了したら、**[選択]** を選んで割り当てを完了します。
 
 ## <a name="update-compliance-reporting"></a>更新プログラムのコンプライアンス対応レポート
-更新プログラムのコンプライアンス対応は、Intune で、または Update Compliance という Operations Management Suite (OMS) の無料のソリューションを使用して表示することができます。
+更新プログラムのコンプライアンス対応は、Intune で、または Update Compliance という無料ソリューションを使用して表示することができます。
 
 ### <a name="review-update-compliance-in-intune"></a>Intune で更新プログラムのコンプライアンス対応を確認する 
-<!-- 1352223 -->
-ポリシー レポートを確認して、構成した Windows 10 更新プログラム リングの展開状態を表示します。
+<!-- 1352223 -->ポリシー レポートを確認して、構成した Windows 10 更新プログラム リングの展開状態を表示します。
 
 1. [Azure ポータル](https://portal.azure.com)にサインインします。
 2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
@@ -137,7 +136,7 @@ Windows Update for Business を使用して、更新管理エクスペリエン�
       - **ユーザーの状態**
 
 ### <a name="review-update-compliance-using-oms"></a>OMS を使用して更新プログラムのコンプライアンス対応を確認する
-Windows 10 更新プログラム ロールアウトを監視するには、更新プログラムのコンプライアンス対応と呼ばれる Operations Management Suite (OMS) の無料のソリューションを使用します。 詳しくは、「[Monitor Windows Updates with Update Compliance (更新プログラムのコンプライアンス対応を使用した Windows Update の監視)](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor)」をご覧ください。 このソリューションを使用すると、更新プログラムのコンプライアンス対応を報告する Intune の対象管理の任意の Windows 10 デバイスに商用 ID を展開できます。
+Windows 10 更新プログラム ロールアウトを監視するには、Update Compliance と呼ばれる無料のソリューションを使用します。 詳しくは、「[Monitor Windows Updates with Update Compliance (更新プログラムのコンプライアンス対応を使用した Windows Update の監視)](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor)」をご覧ください。 このソリューションを使用すると、更新プログラムのコンプライアンス対応を報告する Intune の対象管理の任意の Windows 10 デバイスに商用 ID を展開できます。
 
 Intune コンソールで、カスタム ポリシーの OMA-URI 設定を使用して商用 ID を構成できます。 詳しくは、「[Microsoft Intune での Windows 10 デバイス向けの Intune ポリシー設定](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune)」を参照してください。   
 

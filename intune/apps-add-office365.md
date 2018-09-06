@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 08/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4455a3c26296faba8bf01cf43d8555aebc13afc6
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 9db79e9d0dc82cd823663274aa02dbe097db74d4
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321477"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251772"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune で Windows 10 デバイスに Office 365 アプリを割り当てる
 
@@ -29,8 +29,8 @@ ms.locfileid: "39321477"
 
 ## <a name="before-you-start"></a>開始する前に
 
->[!IMPORTANT]
->Office をインストールするこの方法は、他のバージョンの Microsoft Office がデバイスにインストールされていない場合にのみサポートされます。
+> [!IMPORTANT]
+> .msi Office アプリがエンド ユーザー デバイスにある場合、それらのアプリを安全にアンインストールするには **MSI 削除**機能を使用する必要があります。 そうしないと、Intune 配信の Office 365 アプリをインストールできません。
 
 - これらのアプリを展開するデバイスでは、Windows 10 Creators Update 以降を実行している必要があります。
 - Intune は、Office 365 スイートの Office アプリの追加のみをサポートします。
@@ -91,6 +91,7 @@ ms.locfileid: "39321477"
         - **Monthly (Targeted)** \(毎月 (対象指定)\)
         - **Semi-Annual**\(半期\)
         - **Semi-Annual (Targeted)** \(半期 (対象指定)\)
+    - **[Remove other versions of Office (MSI) from ened user devices]\(エンド ユーザー デバイスから他のバージョンの Office (MSI) を削除する\)**: この機能を使用すると、既存のすべての Office (MSI) をエンド ユーザー マシンから削除できます。 これは、**[アプリ スイートの構成]** でインストール対象として選択されたアプリに限りません。すべての Office (MSI) アプリがエンド ユーザー デバイスから削除されます。
     - **[アプリのソフトウェア ライセンス条項を自動的に受け入れる]**: エンドユーザーに使用許諾契約書に同意することを求めない場合は、このオプションを選択します。 その後、Intune で契約書を自動的に承諾します。
     - **[共有コンピューターのライセンス認証を使用]**: 複数のユーザーでコンピューターを共有するときは、このオプションを選びます。 詳細については、[Office 365 に対する共有コンピューターのライセンス認証の概要](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)に関するページを参照してください。
     - **[言語]**: Office は、エンドユーザーのデバイス上の Windows にインストールされている任意のサポート言語で自動的にインストールされます。 アプリ スイートと共に追加の言語をインストールする場合は、このオプションを選択します。

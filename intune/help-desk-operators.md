@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 4150a513e909ccfd44db23eee9b5990d97d8d670
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: 108382a04095330745ca82dc1d70ab48e70362e5
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2018
-ms.locfileid: "36329877"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251763"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>トラブルシューティング ポータルを使用して社内のユーザーをサポートする
 
@@ -65,7 +65,7 @@ ms.locfileid: "36329877"
 | 2.   | ユーザー選択  | 現在選択されているユーザーの名前。 **[ユーザーの変更]** をクリックして、新しいユーザーを選択します。       |
 | 3.   | ユーザーの状態  | ユーザーの Intune ライセンスの状態、デバイスの数、各デバイスのコンプライアンス状態、アプリの数、およびアプリのコンプライアンス状態が表示されます。       |
 | 4.   | ユーザー情報  | 一覧を使用して、ウィンドウで確認する詳細を選択します。 <br>以下を選択できます。 <ul><li>モバイル アプリ<li>アプリ保護ポリシー<li>Compliance ポリシー<li> 構成ポリシー</ul>      |
-| 5.   | グループのメンバーシップ  | 内容は省略       |
+| 5.   | グループのメンバーシップ  | 選択したユーザーがメンバーになっている現在のグループが表示されます。       |
 
 ## <a name="mobile-apps-reference"></a>モバイル アプリ リファレンス
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 08/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69887fb0a9b2e447d6c6101b26ce50f733053337
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 5964ebdbac251468e3bc35c2c35f0bd2e7fddbff
+ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321290"
+ms.lasthandoff: 08/18/2018
+ms.locfileid: "40253155"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune にアプリを追加する
 
@@ -129,6 +129,9 @@ Web アプリ、ストア アプリ、LOB アプリに加えて、Volume Purchas
 - ストアからアプリを追加して割り当てる場合、ユーザーがそのアプリをインストールするには、そのストアのアカウントをエンド ユーザーが用意する必要があります。
 - 割り当てるアプリまたは項目は、組み込みの iOS アプリに依存する場合があります。 たとえば、iOS ストアでブックを割り当てる場合、デバイス上に iBooks アプリが存在する必要があります。 iBooks の組み込みアプリを削除した場合は、Intune を使用してそれを元に戻すことはできません。
 
+> [!IMPORTANT]
+> アプリをデプロイしてインストールした後で、Intune Azure Portal からアプリの名前を変更すると、そのアプリを対象としてコマンドを使用できなくなります。
+
 ## <a name="cloud-storage-space"></a>クラウドの記憶域の容量
 ソフトウェア インストーラーのインストールの種類を使用して作成したすべてのアプリ (たとえば、基幹業務アプリ) は、パッケージ化され、Intune クラウドの記憶域にアップロードされます。 Intune の試用版サブスクリプションでは、管理対象のアプリと更新プログラムの保管用として、2 ギガバイト (GB) 分のクラウドの記憶域を使用できます。 完全版のサブスクリプションでは、記憶域の合計容量に制限はありません。
 
@@ -170,6 +173,10 @@ Intune では、次の条件に基づいて必要なアプリを自動的に再�
 - 必要なアプリのインストールに失敗した場合、または何らかの理由でアプリがデバイス上に存在しない場合、このスケジュールを経過したときに、Intune でコンプライアンスが評価され、アプリを再インストールします。  
 - 管理者はユーザー グループが利用できるアプリを対象とし、エンド ユーザーがデバイス上のポータル サイトからアプリをインストールします。 後で、管理者はアプリを v1 から v2 に更新します。 前のバージョンのアプリがデバイスに引き続き存在している場合は、このスケジュールを経過したときに Intune によってアプリが更新されます。
 - 管理者がアンインストールの意図を展開し、アプリがデバイス上に存在し、アンインストールできなかった場合、このスケジュールを経過したときに、Intune でコンプライアンスが評価され、アプリをアンインストールします。   
+
+## <a name="app-installation-errors"></a>アプリのインストール エラー
+
+Intune アプリのインストール エラーについて詳しくは、[アプリのインストール エラー](troubleshoot-app-install.md#app-installation-errors)に関するページをご覧ください。
 
 ## <a name="next-steps"></a>次の手順
 

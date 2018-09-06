@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 01/19/2018
+ms.date: 08/16/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f59bd4e0f795b73d830e41d47262c10c24d9398b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 4e9dbda4c768bf9963a4ec168d6a613dca197995
+ms.sourcegitcommit: c5cba0f4bf01eb9a9492e4e3fb6cd756f0737057
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834280"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "40251973"
 ---
 # <a name="what-are-app-protection-policies"></a>アプリ保護ポリシーとは
 
@@ -46,11 +46,11 @@ Intune のアプリ保護ポリシーを使用すれば、会社のデータを�
 - **いずれのモバイル デバイス管理ソリューションにも登録されていないデバイス:** このカテゴリに属するデバイスは、通常、Intune またはその他の MDM ソリューションで管理も登録もされていない社員所有のデバイスです。
 
 > [!IMPORTANT]
-> Office 365 サービスに接続する Office モバイル アプリ向けのモバイル アプリ管理ポリシーを作成することができます。 アプリ保護ポリシーは、オンプレミス Exchange サービスや SharePoint サービスに接続するアプリではサポートされていません。
+> Office 365 サービスに接続する Office モバイル アプリ向けのモバイル アプリ管理ポリシーを作成することができます。 ハイブリッドの最新認証に対応する iOS および Android 用の Outlook のために Intune アプリ保護ポリシーを作成することで、Exchange オンプレミス メールボックスへのアクセスも保護できます。 この機能を使用する前に、[iOS および Android 用 Outlook の要件](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx)を満たしていることを確認します。 アプリ保護ポリシーは、オンプレミス Exchange サービスや SharePoint サービスに接続する他のアプリではサポートされていません。
 
 **アプリ保護ポリシーを利用した場合の主なメリットとしては、以下のようなものがあります。**
 
--   アプリ レベルで、会社データを保護します。  モバイル アプリ管理にはデバイス管理が必要ないため、管理対象のデバイスと管理対象ではないデバイスの両方で会社データを保護することができます。 管理の中心がユーザー ID になり、デバイスを管理する必要がなくなります。
+-   アプリ レベルで、会社データを保護します。  モバイル アプリ管理にはデバイス管理が必要ないため、マネージド デバイスとアンマネージド デバイスの両方で会社データを保護することができます。 管理の中心がユーザー ID になり、デバイスを管理する必要がなくなります。
 
 -   エンド ユーザーの生産性に影響を与えることがなく、個人のコンテキストでアプリが使用される場合にはポリシーは適用されません。  ポリシーは仕事のコンテキストでのみ適用されるため、個人データに影響を与えることなく会社データを保護することが可能になります。
 
@@ -110,7 +110,7 @@ MDM ソリューション:
 
 ### <a name="data-protection-with-app-protection-policies-for-devices-without-enrollment"></a>未登録デバイスでのアプリ保護ポリシーによるデータ保護
 
-![管理対象デバイスでアプリ保護ポリシーが機能するしくみを示す画像](./media/app-protection-policies-without-mdm.png)
+![マネージド デバイスでアプリ保護ポリシーが機能するしくみを示す画像](./media/app-protection-policies-without-mdm.png)
 
 上の図は、MDM がない場合にアプリ レベルでデータ保護ポリシーが機能するしくみを示しています。
 

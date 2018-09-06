@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99d848fb1efea2ea2d557ab8d4f19881705ec991
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: d43e95b2f236dc4c03bb3f63670b2b1400243531
+ms.sourcegitcommit: 0303e3b8c510f56e191e6079e3dcdccfc841f530
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744671"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40251766"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Intune で条件付きアクセスによる Windows Defender ATP を有効にする
 
@@ -44,7 +44,7 @@ Intune を使用することで、リスクの許容レベルを決定するコ�
 
 Intune で ATP を使用する場合は、以下が構成済みであり、使用できる状態であることを確認してください。
 
-- Enterprise Mobility + Security E5 および Windows E5 (または Microsoft 365 Enterprise E5) のライセンス済みテナント
+- Enterprise Mobility + Security E3 および Windows E5 (または Microsoft 365 Enterprise E5) のライセンス済みテナント
 - [Intune で管理されている](windows-enroll.md) Windows 10 デバイス (Azure AD にも参加している) を含む Microsoft Intune 環境
 - [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) および Windows Defender セキュリティ センター (ATP ポータル) へのアクセス
 

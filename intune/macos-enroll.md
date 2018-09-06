@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/15/2018
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,20 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4f8cddb69ac85e45acde8a846df3b5413c3b75bf
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 0d58cb3199405a8a32d169e74e4f0009841f5d09
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046249"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251647"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Intune で macOS デバイスの登録をセットアップする
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune では、macOS デバイスを管理することができます。 デバイスの管理を有効にするには、[ポータル Web サイト](http://portal.manage.microsoft.com)に移動し、画面の指示に従ってデバイスを登録する必要があります。 macOS デバイスを管理下に置いたら、[macOS デバイスのカスタム設定を作成](custom-settings-macos.md)できます。 その他の機能は近日公開予定です。
+Intune を使用すると、macOS デバイスを管理して、会社の電子メールやアプリへのアクセスをユーザーに提供できます。
+
+Intune 管理者は、会社所有の macOS デバイスと個人所有の macOS デバイス ("bring your own device" すなわち BYOD) の登録を設定できます。 
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -39,27 +41,25 @@ macOS デバイスの登録を設定する前に、以下の前提条件を満�
 - [Office 365 ポータル](http://go.microsoft.com/fwlink/p/?LinkId=698854)でユーザー ライセンスを割り当てる
 - [Apple MDM プッシュ証明書を取得する](apple-mdm-push-certificate-get.md)
 
-## <a name="user-owned-ios-devices-byod"></a>ユーザー所有の iOS デバイス (BYOD)
+## <a name="user-owned-macos-devices-byod"></a>ユーザー所有の macOS デバイス (BYOD)
 
-Intune 管理のために、ユーザーに個人用デバイスを登録させることができます。これは "Bring Your Own Device" (BYOD) と呼ばれます。 前提条件を満たし、ユーザーのライセンスを割り当てたら、アプリ ストアから macOS ポータル サイト アプリをダウンロードして、アプリの登録手順に従います。
-
-## <a name="company-owned-ios-devices"></a>会社所有の iOS デバイス
-Intune は、ユーザーのデバイスを購入する組織のため、[デバイス登録マネージャー](device-enrollment-manager-enroll.md) アカウントを使用する会社所有の macOS デバイスの登録をサポートします。
-
-## <a name="set-up-macos-enrollment"></a>macOS の登録を設定する
-
-Intune では、既定で macOS デバイスの登録が既に許可されています。
-
-macOS デバイスの登録をブロックする場合は、「[Set device type restrictions](enrollment-restrictions-set.md)」 (デバイスの種類の制限を設定する) を参照してください。
-
-## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>デバイスを登録して会社のリソースにアクセスする方法をユーザーに知らせる
-
-エンド ユーザーに対して、[ポータル Web サイト](https://portal.manage.microsoft.com)に移動し、画面の指示に従ってデバイスを登録するように指示してください。 オンライン登録の手順 (「[Intune に macOS デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)」) へのリンクを送信することもできます。
+Intune 管理のために、ユーザーに個人用デバイスを登録させることができます。これは "Bring Your Own Device" (BYOD) と呼ばれます。 前提条件を満たした上で、ユーザーにライセンスを割り当てた後、ユーザーは次の方法で各自のデバイスを登録できます。
+- [会社のポータル Web サイト](https://portal.manage.microsoft.com)にアクセスします。(または)
+- ポータル サイト アプリをダウンロードします。
+オンライン登録の手順 (「[Intune に macOS デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)」) へのリンクを送信することもできます。
 
 その他のエンドユーザー タスクの詳細については、次の記事を参照してください。
 
 - [Microsoft Intune を使用したエンドユーザー エクスペリエンスに関するリソース](end-user-educate.md)
 - [macOS デバイスを Intune で使用する](/intune-user-help/using-your-macos-device-with-intune)
+
+## <a name="company-owned-macos-devices"></a>会社所有の macOS デバイス
+Intune は、ユーザーのデバイスを購入する組織のため、次の会社所有の macOS デバイスの登録方法をサポートします。
+- [Apple の Device Enrollment Program (DEP)](device-enrollment-program-enroll-macos.md): 組織は、Apple の Device Enrollment Program (DEP) を通して macOS デバイスを購入できます。 DEP では、登録プロファイルを “無線で” 展開して、デバイスを管理対象として登録できます。
+- [デバイス登録マネージャー (DEM)](device-enrollment-manager-enroll.md): DEM アカウントを使用して、最大で 1,000 台のデバイスを登録できます。
+
+## <a name="block-macos-enrollment"></a>macOS の登録をブロックする
+既定では、Intune で macOS デバイスを登録できます。 macOS デバイスの登録をブロックする場合は、「[Set device type restrictions](enrollment-restrictions-set.md)」 (デバイスの種類の制限を設定する) を参照してください。
 
 ## <a name="enroll-virtual-macos-machines-for-testing"></a>テスト用に仮想 macOS マシンを登録する
 
@@ -79,3 +79,7 @@ VMware Fusion の場合、[.vmx ファイルを編集して](https://kb.vmware.c
 ユーザー承認済みにするには、エンド ユーザーが、macOS ポータル サイトを使って登録した後、[システム環境設定] を使って手動で承認する必要があります。 macOS ポータル サイトでは、macOS 10.13.2 以降のユーザー向けに、これを行う方法の説明が提供されています。
 
 デバイスがユーザー承認済みかどうかを確認するには、Intune ポータルに移動し、**[デバイス]** > **[すべてのデバイス]** の順に選び、デバイスを選んで、**[ハードウェア]** を選びます。 **[User Approved]\(ユーザー承認済み\)** フィールドを確認します。
+
+## <a name="next-steps"></a>次の手順
+
+macOS デバイスを登録したら、[macOS デバイスのカスタム設定を作成](custom-settings-macos.md)できます。

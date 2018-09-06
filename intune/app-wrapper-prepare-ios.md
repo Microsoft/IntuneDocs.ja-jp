@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 050660b4da609d8e6c0dbf969eb71aa79945262a
-ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
+ms.openlocfilehash: daaed6ded0c20551567a63890d324abcbaaf41d7
+ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39254537"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40251942"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために iOS アプリを準備する
 
@@ -172,19 +172,14 @@ Intune によってラップされたアプリを配布するには、次が必�
 
 3. EULA に同意する場合は **[同意する]** をクリックします。コンピューターにパッケージがマウントされます。
 
-4.  **IntuneMAMPackager** フォルダーを開き、その内容を macOS コンピューターに保存します。 これでアプリ ラッピング ツールを実行する準備が整いました。
-
-> [!NOTE]
-> Intune MAM Packager は、macOS コンピューターに個別にマウントでき、結果として、ラッピング コマンドを実行するときに "ファイルが見つかりません" というエラーが発生する可能性があります。 そのため、IntuneMAMPackager フォルダーの内容を移動にすると、Packager へのパスがラッピングの間に見つかります。
-
 ## <a name="run-the-app-wrapping-tool"></a>アプリ ラッピング ツールを実行する
 
 ### <a name="use-terminal"></a>ターミナルを使用する
 
-macOS ターミナル プログラムを開き、アプリ ラッピング ツールのファイルを保存したフォルダーに移動します。 実行可能ツールの名前は IntuneMAMPackager で、IntuneMAMPackager/Contents/MacOS にあります。 次のようにコマンドを実行します。
+macOS ターミナルを開き、次のコマンドを実行します。
 
 ```
-./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
+/Volumes/IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
 ```
 
 > [!NOTE]
@@ -405,6 +400,29 @@ iOS 用アプリ ラッピング ツールで権利のエラーが表示され�
 -   ファイル アップロードのダイアログ ボックスを含む iOS アプリでは、アプリに適用されている切り取り、コピー、貼り付けの制限を回避できます。 たとえば、ファイル アップロードのダイアログ ボックスを利用し、アプリ データのスクリーンショットをアップロードできます。
 
 -   ラッピングされたアプリ内からデバイスのドキュメント フォルダーをユーザーが監視するとき、.msftintuneapplauncher という名前のフォルダーが表示されることがあります。 このファイルを変更または削除すると、制限付きのアプリの正常な動作に影響を与える可能性があります。
+
+## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>Citrix MDX mVPN のための iOS 用 Intune アプリ ラッピング ツール
+この機能は iOS 用の Citrix MDX アプリ ラッパーとの統合です。 この統合は、コマンドライン フラグ `-citrix` を指定するだけで、通常の Intune アプリ ラッピング ツールに追加されます。
+
+### <a name="requirements"></a>要件
+
+`-citrix` フラグを使用するには、同じ macOS マシンに [iOS 用 Citrix MDX アプリ ラッパー](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html)をインストールする必要もあります。 ダウンロードは [Citrix XenMobile Downloads](https://www.citrix.com/downloads/xenmobile/) にあり、Citrix 顧客のみがサインインして利用できます。 これを既定の場所 `/Applications/Citrix/MDXToolkit` にインストールしてください。 
+
+> [!NOTE] 
+> Intune と Citrix の統合は iOS 10 以降のデバイスのみでサポートされます。
+
+### <a name="use-the--citrix-flag"></a>`-citrix` フラグを使用する
+通常のアプリ ラッピング コマンドを実行するときに、`-citrix` フラグを追加するだけです。 現在、`-citrix` フラグの引数はありません。
+
+**使用形式**:
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
+```
+
+**コマンド例**:
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
+```
 
 ## <a name="getting-logs-for-your-wrapped-applications"></a>ラッピングされたアプリケーションのログを取得する
 トラブルシューティング時に、次の手順を使用して、ラッピングされたアプリケーションのログを取得します。

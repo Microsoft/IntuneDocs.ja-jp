@@ -5,21 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/19/2018
+ms.date: 08/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e0eac3c1d6739ca70e485b0327e3257ba8d32d2b
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 3a31a43cfe45060891c30a7f159123a30b43173d
+ms.sourcegitcommit: 488be75cbee88455b33c68a3ec2acb864d461bf8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321725"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41910668"
 ---
 # <a name="smime-email-signing-and-encryption-in-intune"></a>Intune での S/MIME メールの署名と暗号化
+
+> [!IMPORTANT]
+> この記事で説明する S/MIME 機能を改善しています。 そのため、S/MIME 機能は一時的に Intune から除去されています。 この機能がリリースされたときに、この記述を削除します。
 
 S/MIME は、暗号化と解読を使用することにより、メール通信のセキュリティを強化します。 Microsoft Intune は、S/MIME を使用して、iOS、Windows、Windows Phone、Android、macOS を実行しているモバイル デバイスに送信される電子メールの署名および暗号化を行うことができます。
 

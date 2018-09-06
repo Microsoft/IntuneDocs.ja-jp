@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d147bc5ee22718ecce102cc549b29faa17a617e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 49fd06d4f0f75f1aeff434ce3b271284ec1a0340
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31025914"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40252599"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune での条件付きアクセスの一般的な使用方法
 
@@ -28,6 +28,9 @@ ms.locfileid: "31025914"
 Intune での条件付きアクセスには、デバイス ベースの条件付きアクセスとアプリ ベースの条件付きアクセスの 2 種類があります。 組織の条件付きアクセス コンプライアンスを進めるために関連するコンプライアンス ポリシーを構成する必要があります。 条件付きアクセスは一般的に Exchange オンプレミスへのアクセスの許可または禁止、ネットワークへのアクセスの制御、または Mobile Threat Defense ソリューションとの統合などを行うために使用されます。
 
 ここでは、Intune のモバイル *デバイス*のコンプライアンス機能と Intune のモバイル *アプリケーション*管理 (MAM) 機能の使用方法について説明します。 
+
+> [!NOTE]
+> 条件付きアクセスは、Azure Active Directory Premium ライセンスに含まれる Azure Active Directory の機能です。 Intune は、モバイル デバイス コンプライアンスとモバイル アプリ管理をソリューションに加えて、この機能を強化します。
 
 ## <a name="device-based-conditional-access"></a>デバイス ベースの条件付きアクセス
 
@@ -122,7 +125,7 @@ PC の条件付きアクセスでは、モバイル デバイスで利用でき�
 
 #### <a name="corporate-owned"></a>企業所有
 
--   **オンプレミス AD ドメインへの参加:** AD のグループ ポリシーや System Center Configuration Manager を使用して PC をすでに管理しているという事実に満足している組織にとって、これはもっとも一般的な条件付きアクセスの展開オプションです。
+-   **オンプレミス AD ドメインへの参加:** この方法は、AD のグループ ポリシーや System Center Configuration Manager を使用して PC を管理している現在のやり方に満足している組織でよく使用されます。
 
 -   **Azure AD ドメインへの参加と Intune の管理:** このシナリオは、Choose Your Own Device (CYOD) と、ローミング ラップトップを会社のネットワークにほとんど接続しないシナリオを対象にしています。 デバイスは Azure AD に参加し、Intune に登録されます。これにより、オンプレミス AD とドメイン コントローラーへの依存が排除されます。 会社のリソースにアクセスする場合は、これを条件付きアクセスの基準として使用できます。
 
