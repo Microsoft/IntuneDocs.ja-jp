@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/23/2018
+ms.date: 8/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d43e95b2f236dc4c03bb3f63670b2b1400243531
-ms.sourcegitcommit: 0303e3b8c510f56e191e6079e3dcdccfc841f530
+ms.openlocfilehash: b89ca2c4320db733f39ce9b67d275169f4cba5c6
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "40251766"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313793"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Intune で条件付きアクセスによる Windows Defender ATP を有効にする
 
@@ -71,27 +71,15 @@ Intune で ATP を使用する場合は、以下が構成済みであり、使�
 
 ## <a name="onboard-devices-using-a-configuration-profile"></a>構成プロファイルを使用してデバイスをオンボードする
 
-Windows Defender には、デバイスにインストールされるオンボード構成パッケージが含まれます。 インストール時に、パッケージは [Windows Defender ATP サービス](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)と通信してファイルをスキャンし、脅威を検出して、Windows Defender ATP にリスクを報告します。 Intune を使って、この構成パッケージを使用する構成プロファイルを作成できます。 その後、初めてオンボードするデバイスに、このプロファイルを割り当てます。
+エンドユーザーが Intune に登録すると、構成プロファイルを使用してデバイスにさまざまな設定をプッシュできます。 これは、Windows Defender ATP の場合もそうです。
 
-構成パッケージを使用してデバイスをオンボードすれば、再度オンボードする必要はありません。 通常、これは 1 回限りのタスクです。
+Windows Defender には、[Windows Defender ATP サービス](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)と通信してファイルをスキャンし、脅威を検出して、Windows Defender ATP にリスクを報告する、オンボード構成パッケージが含まれています。
 
-[グループ ポリシーまたは System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection) を使用して、デバイスをオンボードすることもできます。
+オンボードされると、Intune は、Windows Defender ATP から自動生成された構成パッケージを取得します。 プロファイルがデバイスにプッシュされるか、展開されると、この構成パッケージもデバイスに自動的にプッシュされます。 これにより、Windows Defender ATP はデバイスへの脅威を監視するようになります。
 
-次の手順では、Intune を使用してオンボードする方法を示します。
+構成パッケージを使用してデバイスをオンボードすれば、再度オンボードする必要はありません。 [グループ ポリシーまたは System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection) を使用して、デバイスをオンボードすることもできます。
 
-#### <a name="download-configuration-package"></a>構成パッケージをダウンロードする
-
-1. [Windows Defender セキュリティ センター](https://securitycenter.windows.com)で、**[設定]** > **[オンボード]** の順に選択します。
-2. 次の設定を入力します。
-  - **[オペレーティング システム]**: Windows 10
-  - **[Onboard a machine]\(コンピューターのオンボード\)** > **[展開方法]**: モバイル デバイス管理 / Microsoft Intune
-3. **[パッケージのダウンロード]** を選択し、**WindowsDefenderATPOnboardingPackage.zip** ファイルを保存します。 ファイルを抽出します。
-
-この zip ファイルには **WindowsDefenderATP.onboarding** が含まれています。これは次の手順で必要になります。
-
-#### <a name="create-the-atp-configuration-profile"></a>ATP 構成プロファイルを作成する
-
-このプロファイルでは、前の手順でダウンロードしたオンボード パッケージを使用します。
+### <a name="create-the-configuration-profile"></a>構成プロファイルを作成する
 
 1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、**[Intune]** をフィルターとして適用して、**[Microsoft Intune]** を選びます。
 2. **[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
@@ -100,10 +88,9 @@ Windows Defender には、デバイスにインストールされるオンボー
 5. **[プロファイルの種類]** では、**[Windows Defender ATP (Windows 10 デスクトップ)]** を選択します。
 6. 次のように設定を構成します。
 
-  - **オンボード構成パッケージ**: ダウンロードした **WindowsDefenderATP.onboarding** ファイルを参照して選択します。 このファイルにより、デバイスから Windows Defender ATP サービスに報告できるようにする設定が有効になります。
-  - **すべてのファイルのサンプル共有**: サンプルを収集し、Windows Defender ATP と共有できるようにします。 たとえば、疑わしいファイルがある場合、Windows Defender ATP に送信して詳しく分析できます。
-  - **テレメトリの報告頻度を早める**: 高リスクのデバイスがある場合は、この設定を有効にして、Windows Defender ATP サービスにより頻繁にテレメトリを報告することができます。
-  - **オフボード構成パッケージ**: Windows Defender ATP の監視を削除、または "オフボード" する場合は、[Windows Defender セキュリティ センター](https://securitycenter.windows.com)でオフボード パッケージをダウンロードして追加できます。 それ以外の場合、このプロパティは省略します。
+  - **[Windows Defender ATP client configuration package type]**(Windows Defender ATP クライアント構成パッケージの種類): **[Onboard]** \(オンボード\) を選択し、プロファイルに構成パッケージを追加します。 **[Offboard]** \(オフボード\) を選択し、プロファイルから構成パッケージを削除します。
+  - **[すべてのファイルのサンプル共有]**: **[有効にする]** では、サンプルを収集し、Windows Defender ATP と共有できるようにします。 たとえば、疑わしいファイルがある場合、Windows Defender ATP に送信して詳しく分析できます。 **[構成されていません]** では、いかなるサンプルも Windows Defender ATP と共有されません。
+  - **[テレメトリの報告頻度を早める]**: 高リスクのデバイスがある場合は、この設定を**有効**にして、Windows Defender ATP サービスにより頻繁にテレメトリを報告することができます。
 
     これらの Windows Defender ATP の設定の詳細については、[System Center Configuration Manager を使用する Windows 10 コンピューターのオンボード](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-sccm-windows-defender-advanced-threat-protection)に関するページを参照してください。
 
