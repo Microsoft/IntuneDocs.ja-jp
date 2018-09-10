@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a66ed41442e89ed40850f5b9cd56cbc004a43d0
-ms.sourcegitcommit: 8b4f5685dc7f41f5e967a8f9d0627707a36dbe93
+ms.openlocfilehash: 83320c78d461981f1bfff52d2fddf4f121a88b8c
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251611"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329667"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>アプリ保護ポリシーを作成して割り当てる方法
 
@@ -37,7 +37,7 @@ MAM でサポートされるアプリの一覧については、[MAM アプリ�
 組織の基幹業務 (LOB) アプリを Microsoft Intune に追加してアプリ保護ポリシーを準備する方法について詳しくは、「[Microsoft Intune にアプリを追加する](apps-add.md)」をご覧ください。
 
 ##  <a name="create-an-app-protection-policy"></a>アプリ保護ポリシーを作成する
-1. **モバイル アプリ** ワークロードで、**[管理]** セクションから **[アプリ保護ポリシー]** を選択します。 この選択により、**[アプリ保護ポリシー]** の詳細が開き、ここで新しいポリシーを作成したり、既存のポリシーを編集したりできます。
+1. **クライアント アプリ** ワークロードで、**[管理]** セクションから **[アプリ保護ポリシー]** を選択します。 この選択により、**[アプリ保護ポリシー]** の詳細が開き、ここで新しいポリシーを作成したり、既存のポリシーを編集したりできます。
 2. **[ポリシーの追加]** を選択します。
 
    ![[ポリシーの追加] ブレードのスクリーンショット](./media/app-protection-add-policy.png)
@@ -125,7 +125,7 @@ Microsoft Intune ライセンスが割り当てられているユーザーのみ
 
 Intune アプリ保護ポリシーの対象はユーザーの ID であるため、ユーザーの保護設定は従来、登録されている (MDM 管理対象) デバイスと登録されていないデバイス (MDM なし) の両方に適用されます。 したがって、Intune に登録されている、または登録されていない iOS および Android デバイスを Intune アプリ保護ポリシーの対象にすることができます。 厳格なデータ損失防止 (DLP) 制御が行われている、アンマネージド デバイスに対して 1 つの保護ポリシーを適用し、MDM マネージド デバイスに対して別の保護ポリシーを適用することができます。この場合、DLP 制御が少し緩和される可能性があります。 
 
-これらのポリシーを作成するには、Intune コンソールで **[モバイル アプリ]** > **[アプリ保護ポリシー]** を参照し、**[ポリシーの追加]** をクリックします。 既存のアプリ保護ポリシーを編集することもできます。 マネージド デバイスとアンマネージド デバイスの両方にアプリ保護ポリシーを適用する場合は、**[Target to all app types]\(すべてのアプリの種類を対象とする\)** が **[はい]** (既定値) に設定されていることを確認してください。 管理状態に基づいて細かく割り当てる場合は、**[Target to all app types]\(すべてのアプリの種類を対象とする\)** オプションを **[いいえ]** に設定します。 
+これらのポリシーを作成するには、Intune コンソールで **[クライアント アプリ]** > **[アプリ保護ポリシー]** を参照し、**[ポリシーの追加]** をクリックします。 既存のアプリ保護ポリシーを編集することもできます。 マネージド デバイスとアンマネージド デバイスの両方にアプリ保護ポリシーを適用する場合は、**[Target to all app types]\(すべてのアプリの種類を対象とする\)** が **[はい]** (既定値) に設定されていることを確認してください。 管理状態に基づいて細かく割り当てる場合は、**[Target to all app types]\(すべてのアプリの種類を対象とする\)** オプションを **[いいえ]** に設定します。 
 
 iOS アプリケーションが "マネージド" と見なされる場合、各アプリの **IntuneMAMUPN** 厚生ポリシーの設定を展開する必要があります。 詳細については、「[Microsoft Intune で iOS アプリ間のデータ転送を管理する方法](https://docs.microsoft.com/en-us/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)」を参照してください。
 

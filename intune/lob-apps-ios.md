@@ -15,12 +15,12 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9ee132a1b1c79e9829e5d28dc33b5cac2e52c8ac
-ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
+ms.openlocfilehash: 1461089beafd6501d6ebc87ab1a89963fa4aac57
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40251916"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347775"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>iOS の基幹業務アプリを Microsoft Intune に追加する
 
@@ -35,8 +35,8 @@ ms.locfileid: "40251916"
 
 1. [Azure ポータル](https://portal.azure.com)にサインインします。
 2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
-3. **[Intune]** ウィンドウで、**[モバイル アプリ]** を選択します。
-4. **[モバイル アプリ]** ワークロードで、**[管理]** > **[アプリ]** の順に選択します。
+3. **[Intune]** ウィンドウで、**[クライアント アプリ]** を選択します。
+4. **[クライアント アプリ]** ワークロードで、**[管理]** > **[アプリ]** の順に選択します。
 5. アプリの一覧の上にある **[追加]** を選択します。
 6. **[アプリの追加]** ウィンドウで、**[基幹業務アプリ]** を選択します。
 

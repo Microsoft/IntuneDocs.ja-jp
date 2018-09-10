@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/20/2018
+ms.date: 08/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9db79e9d0dc82cd823663274aa02dbe097db74d4
-ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
+ms.openlocfilehash: c8c87b5a76a69809e46fe3f4c5d74019546a819d
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40251772"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330230"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune で Windows 10 デバイスに Office 365 アプリを割り当てる
 
@@ -38,14 +38,15 @@ ms.locfileid: "40251772"
 - このインストール方法は、Windows 10S、Windows Home、Windows Team、Windows Holographic、Windows Holographic for Business の各デバイスではサポートされていません。
 - Intune では、Intune を使用して Office 365 アプリを既に展開しているデバイス上の Microsoft Store から Office 365 デスクトップ アプリ (Office Centennial アプリとして知られる) をインストールすることをサポートしていません。 この構成をインストールすると、データが損失したり壊れたりする可能性があります。
 - 必須または使用可能なアプリを複数割り当てる場合、後の割り当ては前の割り当てに追加されるのではありません。 後のアプリ割り当ては、それより前にインストールされて存在するアプリの割り当てを上書きします。 たとえば、Office アプリの最初のセットに Word が含まれ、後のセットには含まれない場合、Word はアンインストールされます。 この条件は、Visio または Project アプリケーションには適用されません。
-
+- **[Office バージョン]**: Office の 32 ビットまたは 64 ビット バージョンのどちらを割り当てるかを選択します。 32 ビットと 64 ビットのどちらのデバイスでも 32 ビット バージョンをインストールできますが、64 ビットのデバイスには 64 ビット バージョンしかインストールできません。
+- **[Remove MSI from end-user devices]** \(エンドユーザーのデバイスから MSI を削除する\): エンドユーザーのデバイスから、既にある Office .MSI アプリを削除するかどうか選択します。 エンドユーザーのデバイスに、既に .MSI アプリがある場合、インストールは成功しません。 インストールされるアプリは、**[アプリ スイートの構成]** でインストール対象として選択されたアプリに限りません。すべての Office (MSI) アプリがエンド ユーザー デバイスから削除されます。 詳細については、「[Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/upgrade-from-msi-version)」 (Office 365 ProPlus へのアップグレード時に Office の既存の MSI バージョンを削除する) を参照してください。 
 
 ## <a name="get-started"></a>作業開始
 
 1. [Azure ポータル](https://portal.azure.com)にサインインします。
 2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3. **[Intune]** ウィンドウで、**[モバイル アプリ]** を選択します。
-4. **[モバイル アプリ]** ワークロード ウィンドウで、**[管理]** の **[アプリ]** を選択します。
+3. **[Intune]** ウィンドウで、**[クライアント アプリ]** を選択します。
+4. **[クライアント アプリ]** ワークロード ウィンドウで、**[管理]** の **[アプリ]** を選択します。
 5. **[追加]** を選択します。
 6. **[アプリの追加]** ウィンドウの **[アプリの種類]** の一覧で、**[Office 365 スイート]** の **[Windows 10]** を選びます。
 
@@ -91,7 +92,16 @@ ms.locfileid: "40251772"
         - **Monthly (Targeted)** \(毎月 (対象指定)\)
         - **Semi-Annual**\(半期\)
         - **Semi-Annual (Targeted)** \(半期 (対象指定)\)
-    - **[Remove other versions of Office (MSI) from ened user devices]\(エンド ユーザー デバイスから他のバージョンの Office (MSI) を削除する\)**: この機能を使用すると、既存のすべての Office (MSI) をエンド ユーザー マシンから削除できます。 これは、**[アプリ スイートの構成]** でインストール対象として選択されたアプリに限りません。すべての Office (MSI) アプリがエンド ユーザー デバイスから削除されます。
+
+        チャネルの選択後、オプションで **[特定]** を選択すると、選択されているチャネルで特定のバージョンの Office がエンド ユーザー デバイスにインストールされます。 次いで、使用する Office の **[特定バージョン]** を選択します。
+        
+        使用できるバージョンは随時変更されます。 そのため、新しいデプロイを作成するとき、利用できるバージョンが新しく、特定の古いバージョンを利用できないことがあります。 現在のデプロイでは引き続き古いバージョンをデプロイできますが、バージョンの一覧はチャネル単位で継続的に更新されます。
+        
+        デバイスのピン設定されているバージョンが更新される場合 (または他の任意のプロパティが更新される場合)、それが利用可能としてデプロイされる場合、デバイスのチェックインが発生するまでに前のバージョンがインストールされた場合は、インストール済みであるという状態が報告されます。 デバイスのチェックインが起こった場合、状態は一時的に不明に変わりますが、これはユーザーには表示されません。 ユーザーがより新しいバージョンのインストールを開始した場合、ユーザーには状態が [インストール済み] と変更され表示されます。
+        
+        詳細については、「[Office 365 ProPlus 更新プログラム チャネルの概要](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)」をご覧ください。
+
+    - **[Remove MSI from end-user devices]** \(エンドユーザーのデバイスから MSI を削除する\): エンドユーザーのデバイスから、既にある Office .MSI アプリを削除するかどうか選択します。 エンドユーザーのデバイスに、既に .MSI アプリがある場合、インストールは成功しません。 インストールされるアプリは、**[アプリ スイートの構成]** でインストール対象として選択されたアプリに限りません。すべての Office (MSI) アプリがエンド ユーザー デバイスから削除されます。 詳細については、「[Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/upgrade-from-msi-version)」 (Office 365 ProPlus へのアップグレード時に Office の既存の MSI バージョンを削除する) を参照してください。 
     - **[アプリのソフトウェア ライセンス条項を自動的に受け入れる]**: エンドユーザーに使用許諾契約書に同意することを求めない場合は、このオプションを選択します。 その後、Intune で契約書を自動的に承諾します。
     - **[共有コンピューターのライセンス認証を使用]**: 複数のユーザーでコンピューターを共有するときは、このオプションを選びます。 詳細については、[Office 365 に対する共有コンピューターのライセンス認証の概要](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)に関するページを参照してください。
     - **[言語]**: Office は、エンドユーザーのデバイス上の Windows にインストールされている任意のサポート言語で自動的にインストールされます。 アプリ スイートと共に追加の言語をインストールする場合は、このオプションを選択します。

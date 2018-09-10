@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2c5203256a17065331f9d75c9315471e41508454
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: aebfea2f52540b4193811121334e3cebf916175b
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255392"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330145"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune アプリの管理とは
 
@@ -61,16 +61,16 @@ Intune では、アプリを実行するデバイス上で必要なアプリを�
 
 ## <a name="get-started"></a>作業開始
 
-アプリに関連する情報は、ほとんどが **[モバイル アプリ]** ワークロード内にあり、以下の手順でアクセスできます。
+アプリに関連する情報は、ほとんどが **[クライアント アプリ]** ワークロード内にあり、以下の手順でアクセスできます。
 
 1. [Azure ポータル](https://portal.azure.com)にサインインします。
 2. **[すべてのサービス]** > **[Intune]** の順に選択します。  
     Intune は **[監視 + 管理]** セクションにあります。
-3. **[Microsoft Intune]** ウィンドウで、**[モバイル アプリ]** を選択します。
+3. **[Microsoft Intune]** ウィンドウで、**[クライアント アプリ]** を選択します。
 
     ![[モバイル アプリ] ワークロード ウィンドウ](./media/apps-workload.png)
 
-次の 4 つのセクションでは、**[モバイル アプリ]** ウィンドウで使用可能なオプションについて説明します。
+次の 4 つのセクションでは、**[クライアント アプリ]** ウィンドウで使用可能なオプションについて説明します。
 
 ### <a name="manage"></a>コンピューターの
 - **[アプリ]**: 従業員が使用するアプリの追加、表示、割り当て、監視を行うには、このオプションを選択します。 詳細については、次をご覧ください。

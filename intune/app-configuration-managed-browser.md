@@ -15,12 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d39dca2a464886ae6752450636fe25a5f5701858
-ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
+ms.openlocfilehash: 25d4bdc51f2dc12cddbfb30c82baa22aa8c4540b
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40251721"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329754"
 ---
 # <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Microsoft Intune で保護ブラウザー ポリシーを使ってインターネット アクセスを管理する
 
@@ -108,7 +108,7 @@ Intune Managed Browser での SSO では、iOS の Microsoft Authenticator ア�
 
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
 2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3.  [管理] リストの **[アプリの構成]** ブレードで、**[アプリ構成ポリシー]** を選択します。
+3.  [管理] リストの **[クライアント アプリ]** ブレードで、**[アプリ構成ポリシー]** を選択します。
 4.  **[アプリ構成ポリシー]** ブレードで、**[追加]** を選択します。
 5.  **[構成ポリシーの追加]** ブレードで **[名前]** を入力し、必要に応じてアプリ構成設定の **[説明]** を入力します。
 6.  **[デバイス登録の種類]** には、**[管理対象アプリ]** を選択します。
@@ -126,7 +126,7 @@ Intune Managed Browser での SSO では、iOS の Microsoft Authenticator ア�
 
 設定をユーザーの Azure AD グループに割り当てます。 ユーザーが対象の保護ブラウザー アプリをインストールしている場合、そのアプリは指定された設定で管理されます。
 
-1. Intune モバイル アプリケーション管理ダッシュボードの **[Mobile Apps]** ブレードで、**[構成ポリシーの追加]** を選択します。
+1. Intune モバイル アプリケーション管理ダッシュボードの **[クライアント アプリ]** ブレードで、**[アプリ構成ポリシー]** を選択します。
 2. アプリの構成の一覧から、割り当てる構成を選択します。
 3. 次のブレードで、**[割り当て]** を選択します。
 4. **[割り当て]** ブレードで、アプリの構成を割り当てる Azure AD グループを選択し、**[OK]** を選択します。

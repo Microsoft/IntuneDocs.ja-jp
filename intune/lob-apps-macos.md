@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d527b36876adf29c12d3577f7dcd09416b4d5a37
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: f907ddb631c974a9c7626483446600eae149a12c
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255493"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347398"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>macOS の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法
 
@@ -60,8 +60,8 @@ ms.locfileid: "40255493"
 
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
 2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3. **[Intune]** ウィンドウで、**[モバイル アプリ]** を選択します。
-4. **[モバイル アプリ]** ワークロードで、**[管理]** > **[アプリ]** の順に選択します。
+3. **[Intune]** ウィンドウで、**[クライアント アプリ]** を選択します。
+4. **[クライアント アプリ]** ワークロードで、**[管理]** > **[アプリ]** の順に選択します。
 5. アプリの一覧の上にある **[追加]** を選択します。
 6. **[アプリの追加]** ウィンドウで、**[基幹業務アプリ]** を選択します。
 
