@@ -15,12 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 25d4bdc51f2dc12cddbfb30c82baa22aa8c4540b
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: d11356c16965e3ba7631275368c9723a2db0ecc9
+ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329754"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43675017"
 ---
 # <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Microsoft Intune で保護ブラウザー ポリシーを使ってインターネット アクセスを管理する
 
@@ -185,7 +185,7 @@ Edge または Managed Browser アプリの構成を作成する手順に従い�
 
 |                                キー                                 |                                                                                                                                                                                                                                                         値                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | この構成の値は、ブックマークのリストです。 各ブックマークは、ブックマークのタイトルとブックマークの URL で構成されます。 タイトルおよび URL は、<strong>&#124;</strong> の文字で区切ります。<br><br>例:<br> `Microsoft Bing|https://www.bing.com`<br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example:<br> `Bing|https://www.bing.com||Contoso|https://www.contoso.com` |
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | この構成の値は、ブックマークのリストです。 各ブックマークは、ブックマークのタイトルとブックマークの URL で構成されます。 タイトルおよび URL は、<strong>&#124;</strong> の文字で区切ります。<br><br>例:<br> <code>Microsoft Bing&#124;https://www.bing.com</code><br><br>複数のブックマークを構成するには、二重の文字 <strong>&#124;&#124;</strong> で各ペアを区切ります。<br><br>例:<br> <code>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com</code> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-a-protected-browser"></a>保護ブラウザーで許可する URL とブロックする URL を指定する方法
 
@@ -193,7 +193,7 @@ Edge または Managed Browser アプリの構成を作成する手順に従い�
 
 |キー|値|
 |-|-|
-|次の中から選択します。<br><ul><li>許可された URL を指定する場合 (これらの URL のみが許可され、その他のサイトにはアクセスできない):<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>ブロックされた URL を指定する場合 (その他のすべてのサイトにアクセスできる):<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|キーに対応する値は URL のリストです。 パイプ文字 **&#124;** によって区切られた、1 つの値として許可またはブロックする必要がある、すべての URL を入力します。<br><br>例:<br><br>`URL1|URL2|URL3`<br>`http://*.contoso.com/*|https://*.bing.com/*|https://expenses.contoso.com`|
+|次の中から選択します。<br><ul><li>許可された URL を指定する場合 (これらの URL のみが許可され、その他のサイトにはアクセスできない):<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>ブロックされた URL を指定する場合 (その他のすべてのサイトにアクセスできる):<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|キーに対応する値は URL のリストです。 パイプ文字 **&#124;** によって区切られた、1 つの値として許可またはブロックする必要がある、すべての URL を入力します。<br><br>例:<br><br><code>URL1&#124;URL2&#124;URL3</code><br><code>http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com</code>|
 
 >[!IMPORTANT]
 >両方のキーを指定しないでください。 両方のキーが同じユーザーを対象とする場合、許可のキーが最も制限の厳しいオプションとして使用されます。
