@@ -6,19 +6,20 @@ author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 06/01/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
-ms.reviewer: robstack
+ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: dfe17cd582682126c889662dd942117c3c68dd10
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.custom: get-started
+ms.openlocfilehash: 2d95a238b3d582a9b03e9629504230349eef0638
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225274"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44254056"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Microsoft Intune に関してエンド ユーザーを教育する方法
 
@@ -59,11 +60,11 @@ __ユーザーにとって Intune が不便な点__  ユーザーによるアプ
 
 * __意識する。__ Intune ユーザーの経験は生産性にも影響します。 ユーザーの経験を理解することで、デバイスおよびユーザーの問題のトラブルシューティングをより簡単に行うことができます。 たとえば、ユーザーがアプリを取得する方法を学習し理解することができます。 この情報を前もって把握しておくことにより、問題の診断および解決をより簡単かつ迅速に行うことができます。
 
-* **Outlook Web Access (OWA)**
+* **Android**
   * [Android デバイスを Intune で使用する](/intune-user-help/using-your-android-device-with-intune)
   * [Android ユーザーがアプリを入手する方法](end-user-apps-android.md)
 
-* **iOS**
+* **Android**
   * [iOS デバイスを Intune で使用する](/intune-user-help/using-your-ios-device-with-intune)
   * [iOS ユーザーがアプリを入手する方法](end-user-apps-ios.md)
 

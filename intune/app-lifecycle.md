@@ -5,21 +5,21 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
-ms.topic: get-started-article
+ms.date: 09/06/2018
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 ms.reviewer: mghadial
 ms.suite: ems
-ms.custom: apps
-ms.openlocfilehash: 69bf4b1dc85a8a17312fe78b6a17564a8a6ff642
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.custom: apps; get-started
+ms.openlocfilehash: ad9eea41d0d40eed9aee07bcf5a77118c0efdab8
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225393"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44253753"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Microsoft Intune のアプリ ライフサイクルの概要
 
@@ -33,7 +33,7 @@ Microsoft Intune のアプリ ライフサイクルは、アプリが追加さ�
 
 アプリ展開の最初のステップは、管理と割り当てを行うアプリを Intune に追加することです。 使用できるアプリの種類はさまざまですが、基本的な手順は同じです。 Intune では、社内で開発されたアプリ (基幹業務)、ストアから入手したアプリ、組み込みアプリ、Web 上のアプリなど、さまざま種類のアプリを追加できます。 アプリの種類については、「[アプリを Microsoft Intune に追加する方法](apps-add.md)」を参照してください。 
 
-## <a name="deploy"></a>[展開]
+## <a name="deploy"></a>デプロイ
 
 Intune にアプリを追加したら、[それを管理対象のユーザーとデバイスに割り当てる](apps-deploy.md)ことができます。 Intune でこのプロセスが簡単になります。アプリの展開後、Azure Portal 内の Intune から展開が[成功したことを監視](apps-monitor.md)できます。 さらに、[Apple](vpp-apps-ios.md) や [Windows](windows-store-for-business.md) アプリ ストアなどの一部のアプリ ストアでは、会社用にアプリのライセンスを一括購入できます。 Intune では、これらのストアとデータを同期して、Intune 管理コンソールからこの種のアプリのライセンスを展開して使用状況を追跡できます。
 
