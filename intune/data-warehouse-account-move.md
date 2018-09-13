@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ee3ccbf9-82fc-4fbf-9d3d-8f05e431d090
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 7b13cfdcaa29edfc780126f3d1d76f5a9e46360f
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: b34bb7c3f3db9ebb3cdd89b429aaeb530d7ad796
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330298"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141631"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Intune データ ウェアハウスのアカウント データを移動する 
 
@@ -63,8 +63,6 @@ Azure Portal のビュー内の一部のトレンド グラフがリセットさ
 ## <a name="device-enrollment-charts"></a>デバイス登録のグラフ
 1. Azure Portal で、**[Microsoft Intune]** -> **[DeviceEnrollment]** の順に移動します。
 2. Microsoft [グラフ エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)を使用して、グラフの背後にあるデータをダウンロードします。
-    - 登録ステータスについては、以下を参照してください。 
-    - 今週の上位の登録エラーについては、以下を参照してください。 
     - 登録ステータスの場合は、この[登録ステータス クエリ](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentFailureTrends()/content)をコピーして、[グラフ エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)に貼り付けます。
     - 今週の上位の登録エラーの場合は、この[登録エラー クエリ](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentTopFailures(period=null)/content)をコピーして、[グラフ エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)に貼り付けます。
 

@@ -3,8 +3,8 @@ title: iOS 用 Microsoft Intune App SDK 開発者ガイド
 description: iOS 用 Microsoft Intune App SDK を使用すると、ネイティブ iOS アプリに Intune アプリ保護ポリシー (APP ポリシーまたは MAM ポリシーともいう) を組み込むことができます。
 keywords: ''
 author: Erikre
-manager: dougeby
 ms.author: erikre
+manager: dougeby
 ms.date: 06/22/2018
 ms.topic: article
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: ab88c99694df95eeaf4b5529faec73dacd1a208c
-ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
+ms.openlocfilehash: daf4063f7713dafa938398cdc95344ffe25ae8f0
+ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43241883"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "44031322"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS 用 Microsoft Intune App SDK 開発者ガイド
 
