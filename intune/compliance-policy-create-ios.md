@@ -14,12 +14,12 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f711a6bec9be0ac1fd94183931070f9988d49e3
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 1ee08c77fe085ad0f238d63481dd682ea15aa5ce
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442646"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313087"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Intune で iOS デバイス用のデバイス コンプライアンス ポリシーの追加
 
@@ -62,7 +62,7 @@ Intune iOS デバイス コンプライアンス ポリシーでは、iOS デバ
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
 
-## <a name="email"></a>電子メール
+## <a name="email"></a>Email
 
 - **[モバイル デバイスは管理されているメール プロファイルを持つことが必要]**: これを [必須] に設定すると、電子メール プロファイルが Intune で管理されていないデバイスは非準拠と見なされます。 デバイスが誤って対象とされている場合、またはユーザーがデバイス上で電子メール アカウントを手動で設定した場合、デバイスには管理されたメール プロファイルが存在しない場合があります。
 
@@ -106,6 +106,11 @@ Intune iOS デバイス コンプライアンス ポリシーでは、iOS デバ
 - **[デバイスの画面がロックされるまでの非アクティブな最大分数]**: ユーザーがパスワードを再入力しなければならなくなるまでのアイドル時間を入力します。
 - **[パスワードの有効期限 (日数)]**: 新しいパスワードの作成が必要となるまでのパスワードの有効日数を選択します。
 - **[再利用できないようにする前のパスワードの数]**: 何回前までのパスワードを使用できないようにするかを入力します。
+
+### <a name="restricted-applications"></a>制限付きのアプリケーション 
+バンドル ID をポリシーに追加することでアプリを制限できます。 その後、あるデバイスにそのアプリがインストールされた場合、そのデバイスは非準拠となります。 
+- **[アプリ名]**: バンドル ID の識別を容易にするわかりやすい名前を入力します。 
+- **[アプリ バンドル ID]**: アプリ プロバイダーによって割り当てられた一意のバンドル ID を入力します。 バンドル ID を検索するには、「[How to find the bundle ID for an iOS app](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app)」 (iOS アプリのバンドル ID を検索する方法) を参照してください。  
 
 ## <a name="assign-user-groups"></a>ユーザー グループを割り当てる
 

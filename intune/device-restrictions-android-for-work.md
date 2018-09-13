@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 34c66aabe8c094b67805bcf0eeae38dbbbbff627
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 51e52e26357143d214c4bcf7856dfdb75a68653c
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905939"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329771"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune での Work デバイスの制限設定
 
@@ -42,7 +42,7 @@ ms.locfileid: "37905939"
   - **自動許可**
   - **自動拒否**
 
-    (**[モバイル アプリ]** > **[アプリ構成ポリシー]** から) 個別のアプリのアプリ構成ポリシーを使用することで、特定のアプリのアクセス許可の付与の状態をさらに詳細に定義できます。
+    (**[クライアント アプリ]** > **[アプリ構成ポリシー]** から) 個別のアプリのアプリ構成ポリシーを使用することで、特定のアプリのアクセス許可の付与の状態をさらに詳細に定義できます。
 
 - **アカウントの追加と削除**
 

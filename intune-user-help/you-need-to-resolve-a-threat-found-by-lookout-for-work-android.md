@@ -1,11 +1,11 @@
 ---
 title: Android で Lookout for Work が検出した脅威を解決する | Microsoft Docs
-description: Android で Lookout for Wor が検出した脅威を解決する方法について説明します。
+description: Android デバイスで Lookout for Work によって検出された脅威を解決する方法について説明します。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/17/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,35 +15,43 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: df7055f031fb7661cc0fa3bf2d00b16fc0a082dc
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0e8f10bac2c7ffc75f81572da60249842c8f4cc1
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015474"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148523"
 ---
-# <a name="resolve-a-threat-found-by-lookout-for-work"></a>Lookout for Work が検出した脅威を解決する
+# <a name="resolve-a-threat-found-by-lookout-for-work"></a>Lookout for Work が検出した脅威を解決する  
 
-Lookout for Work がデバイスで潜在的な脅威を検出したら問題を解決し、会社または学校のメール、アプリ、ファイルに再びアクセスできるようにする必要があります。 表示されるメッセージは、次のようになります。
+Lookout for Work アプリは Mobile Threat Defender サービスであり、Android デバイスの潜在的な脅威を識別します。 これらの脅威はポータル サイト アプリに報告され、そこで非準拠に関する未解決の問題として示されます。 これらの脅威が存在する限り、次のことが行えなくなる可能性があります。
 
-![Lookout for Work によるデバイス上の脅威の検出](./media/lookout-threat-found-android.png)
+* 会社の電子メールに接続する
+* 会社の Wi-Fi に接続する
+* SharePoint Online に接続する
+* 企業ファイルを OneDrive に同期させる
+* 会社のアプリにアクセスする
 
-この問題を解決するには、Lookout for Work アプリを開き、アプリの指示に従います。
+この記事では、Lookout for Work の脅威アラートを認識する方法と、解決するために行うことについて説明します。 
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>登録済みデバイスから電子メールまたはファイルへのアクセスがブロックされた場合に表示されるメッセージ
+## <a name="troubleshoot-virus-or-security-threat"></a>ウイルスやセキュリティ上の脅威をトラブルシューティングする  
+Lookout for Work アプリでセキュリティ上の脅威やウイルスが検出された場合は、会社のリソースへのアクセスを回復します。  
 
-登録済みデバイスにウイルスまたはその他のセキュリティ上の脅威がある場合に、会社のメールかファイルにアクセスしようとすると、次のようなメッセージが表示される可能性があります。
+1. ウイルスやセキュリティ上の脅威が検出された場合は、次のスクリーンショットに示すようなメッセージが表示されます。 **デバイスの管理ポータル** リンクをタップして、[ポータル サイト Web サイト](https://portal.manage.microsoft.com/devices)を開きます。  
 
-![ポータル サイト Web サイトへのリンク付きの Lookout for Work エラー メッセージ](./media/mtd-go-to-device-management-portal-android.png)
+    ![ポータル サイト Web サイトへのリンクと青色の [OK] ボタンを含む、Lookout for Work エラー メッセージのスクリーンショット例。](./media/mtd-go-to-device-management-portal-android.png)
 
-**デバイスの管理ポータル**のリンクをタップして[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)に移動すると、問題を解決する方法の手順が表示されます。
+2. デバイスを選択します。  
+3. デバイスの下に表示される警告を確認します。 Lookout for Work を開いてウイルスやセキュリティ上の脅威を解決するように指示されます。 
 
-## <a name="example-of-an-app-that-lookout-for-work-sees-as-a-threat"></a>Lookout for Work によって脅威とみなされるアプリの例
+    ![Lookout for Work の警告を表示する、ポータル サイト デバイス ページのスクリーンショット例。](./media/CP-lookout-virus-banner-1808.png)  
 
-Lookout for Work が脅威と判断するアプリがインストールされている場合は、次のような画面が表示されます。
+## <a name="troubleshoot-an-app-threat"></a>アプリの脅威をトラブルシューティングする  
 
-![Lookout for Work のウイルス アラート メッセージの例](./media/lookout-virus-alert-android.png)
+Lookout for Work で脅威として識別されたアプリをインストールする場合、以下のスクリーンショットに示すようなメッセージが表示されます。  
 
-アプリケーションをアンインストールするとすぐに、会社の電子メールやデータへのアクセスが回復します。 アプリケーションのアンインストール要求を無視すると、アプリをアンインストールするまで、電子メールやデータにアクセスできなくなります。
+![Lookout for Work アプリ インターフェイスに Lookout for Work のアラート メッセージが表示されているスクリーンショット例。 [閉じる]、[詳細情報]、[アンインストール] という 3 つのボタンが表示されます。](./media/lookout-virus-alert-android.png)  
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+会社の電子メールやデータに対する、失ったアクセスを回復するには、問題のあるアプリをアンインストールします。 そのアプリがデバイス上にある限り、会社のリソースにはアクセスできません。    
+
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。  

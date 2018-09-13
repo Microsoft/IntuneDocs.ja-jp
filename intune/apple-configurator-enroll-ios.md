@@ -15,20 +15,20 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7cff6c777de4a35aa6825d1d37fdd0c2f2d0b72
-ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
+ms.openlocfilehash: 5653e5fda04295041ebc549977007e7060b5508b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42751719"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312682"
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Apple Configurator による iOS デバイスの登録
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune は、Mac コンピューターで実行される [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) を使用した iOS デバイスの登録をサポートします。 Apple Configurator で登録するには、各 iOS デバイスを Mac コンピューターに USB 接続し、会社の登録をセットアップする必要があります。 Apple Configurator では、次の 2 つの方法でデバイスを Intune に登録できます。
-- **セットアップ アシスタントを使用した登録** - デバイスを出荷時の設定にリセットし、セットアップ アシスタント実行時に登録するように準備します。
-- **直接登録** - デバイスを出荷時の設定にリセットせず、iOS 設定を通してデバイスを登録します。 この方法は、**ユーザー アフィニティなし**のデバイスのみに使用できます。
+- **セットアップ アシスタントを使用した登録** - デバイスをワイプし、セットアップ アシスタント実行時に登録するように準備します。
+- **直接登録** - デバイスをワイプせず、iOS 設定を通してデバイスを登録します。 この方法は、**ユーザー アフィニティなし**のデバイスのみに使用できます。
 
 Apple Configurator の登録方法は、[デバイス登録マネージャー](device-enrollment-manager-enroll.md)と同時に使用することはできません。
 
@@ -134,7 +134,7 @@ Apple Configurator 登録用の iOS シリアル番号をインポートする�
 ユーザーは、デバイスを受け取った後、セットアップ アシスタントを完了する必要があります。 ユーザー アフィニティが構成されているデバイスは、会社のポータル アプリをインストールして実行することにより、アプリをダウンロードしてデバイスを管理できるようになります。
 
 ## <a name="direct-enrollment"></a>直接登録
-iOS デバイスを Apple Configurator で直接登録する場合は、デバイスのシリアル番号を取得しなくてもデバイスを登録できます。 登録時に Intune がデバイス名をキャプチャする前に、デバイスを識別するための名前を指定することもできます。 会社のポータル アプリは、直接登録されているデバイスではサポートされていません。 この方法では、デバイスの工場出荷時の設定へのリセットは行われません。
+iOS デバイスを Apple Configurator で直接登録する場合は、デバイスのシリアル番号を取得しなくてもデバイスを登録できます。 登録時に Intune がデバイス名をキャプチャする前に、デバイスを識別するための名前を指定することもできます。 会社のポータル アプリは、直接登録されているデバイスではサポートされていません。 この方法では、デバイスはワイプされません。
 
 ユーザー アフィリエーションが必要なアプリ (基幹業務アプリのインストールに使用されるポータル サイト アプリを含む) はインストールできません。
 

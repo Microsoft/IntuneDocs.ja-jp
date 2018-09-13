@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 644d5966f653e4b98e6a5e8c507dd5e7399ff9cd
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 5c64b915f240cab2faac84a6a78b213a5fffa0a6
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321120"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347900"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Windows の基幹業務アプリを Microsoft Intune に追加する
 
@@ -32,19 +32,15 @@ ms.locfileid: "39321120"
 
 1. [Azure ポータル](https://portal.azure.com)にサインインします。
 2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
-3. **[Intune]** ウィンドウで、**[モバイル アプリ]** を選択します。
-4. **[モバイル アプリ]** ワークロードで、**[管理]** > **[アプリ]** の順に選択します。
+3. **[Intune]** ウィンドウで、**[クライアント アプリ]** を選択します。
+4. **[クライアント アプリ]** ワークロードで、**[管理]** > **[アプリ]** の順に選択します。
 5. アプリの一覧の上にある **[追加]** を選択します。
 6. **[アプリの追加]** ウィンドウで、**[基幹業務アプリ]** を選択します。
 
 ## <a name="step-2-configure-the-app-package-file"></a>手順 2: アプリのパッケージ ファイルを構成する
 
 1. **[アプリの追加]** ウィンドウで、**[アプリのパッケージ ファイル]** を選択します。
-2. **[アプリのパッケージ ファイル]** ウィンドウで、参照ボタンを選択します。 次に、拡張子が **.msi**、**.appx**、**.appxbundle**、**.msix**、または **.msixbundle** の Windows インストール ファイルを選択します。
-
-    > [!NOTE]
-    > Windows アプリのファイル拡張子には、**.msi**、**.appx**、**.appxbundle**、**.msix**、**.msixbundle** が含まれます。  
-
+2. **[アプリのパッケージ ファイル]** ウィンドウで、参照ボタンを選択します。 次に、拡張子が **.msi**、**.appx**、または **.appxbundle** の Windows インストール ファイルを選択します。
 3. 完了したら **[OK]** を選択します。
 
 

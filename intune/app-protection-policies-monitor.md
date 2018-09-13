@@ -15,12 +15,12 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 282666de444e9da0dd5e406cb45cdf1b9e66c1b2
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: b7dea97ef74489e3caae7433e8ebbe2b9ed39aa3
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833156"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330043"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>アプリ保護ポリシーを監視する方法
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -40,10 +40,10 @@ ms.locfileid: "31833156"
 
 ## <a name="summary-view"></a>概要ビュー
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3. **[Intune]** ウィンドウで、**[モバイル アプリ]** を選びます。
-4. **[モバイル アプリ]** ワークロードで、**[監視]** > **[アプリの保護状態]** の順に選択して、概要ビューを表示します。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
+2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. **[Intune]** ウィンドウで、**[クライアント アプリ]** を選択します。
+4. **[クライアント アプリ]** ワークロードで、**[監視]** > **[アプリの保護状態]** の順に選択して、概要ビューを表示します。
 
 ![[Intune モバイル アプリケーション管理] ウィンドウの [概要] タイル](./media/app-protection-user-status-summary.png)
 

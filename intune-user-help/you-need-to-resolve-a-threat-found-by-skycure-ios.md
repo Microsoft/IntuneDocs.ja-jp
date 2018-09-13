@@ -1,11 +1,11 @@
 ---
 title: iOS 用 Symantec Endpoint Protection Mobile が検出した脅威を解決する | Microsoft ドキュメント
-description: iOS デバイスで検出された脅威を解決する方法について説明します。
+description: iOS デバイスで検出された、セキュリティ上の脅威、ウイルス、アプリの脅威を解決する方法について説明します。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/03/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,34 +15,39 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: e8efab6aea68802da0df9b24a75812918e255a57
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: a4bdb394407155be8716cf8039f997f3905f3998
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755064"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148434"
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Symantec Endpoint Protection Mobile で検出された脅威を解決する
 
-Symantec Endpoint Protection Mobile がデバイスで潜在的な脅威を検出したら、問題を解決して会社または学校のメール、アプリ、ファイルに再びアクセスできるようにする必要があります。 
+Symantec Endpoint Protection (SEP) Mobile は Mobile Threat Defender サービスであり、Android デバイスの潜在的な脅威を識別します。 これらの脅威はポータル サイト アプリに報告され、非準拠に関する未解決の問題として示されます。 デバイスが非準拠であると識別された場合、以下を実行できない可能性があります。
 
-この問題を解決するには、Symantec Endpoint Protection Mobile アプリを開き、アプリの指示に従います。
+* 会社の電子メールに接続する
+* 会社の Wi-Fi に接続する
+* SharePoint Online に接続する
+* 企業ファイルを OneDrive に同期させる
+* 会社のアプリにアクセスする
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>登録済みデバイスから電子メールまたはファイルへのアクセスがブロックされた場合に表示されるメッセージ
+この記事では、SEP Mobile の脅威アラートを認識する方法と、解決するために行うことについて説明します。 
 
-登録済みデバイスにウイルスまたはその他のセキュリティ上の脅威がある場合に、会社のメールかファイルにアクセスしようとすると、次のようなメッセージが表示される可能性があります。
+## <a name="resolve-virus-or-security-threat"></a>ウイルスやセキュリティ上の脅威を解決する  
 
-![ポータル サイト Web サイトへのリンク付きの Skycure エラー メッセージ](./media/mtd-go-to-device-management-portal-android.png)
+1. 会社の電子メールまたは Web サイトにアクセスしようとすると、次のスクリーンショットで示すようなメッセージが表示されます。 **デバイスの管理ポータル** リンクをタップして、[ポータル サイト Web サイト](https://portal.manage.microsoft.com/devices)を開きます。
 
-**デバイスの管理ポータル**のリンクをタップして[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)に移動すると、問題を解決する方法の手順が表示されます。
+    ![ポータル サイト Web サイトへのリンクと青色の [OK] ボタンを含む、Lookout for Work エラー メッセージのスクリーンショット例。](./media/mtd-go-to-device-management-portal-android.png)  
 
-## <a name="example-of-an-app-that-symantec-endpoint-protection-mobile-sees-as-a-threat"></a>Symantec Endpoint Protection Mobile が脅威として見なすアプリの例
+2. デバイスを選択します。  
+3. デバイスの下に表示される警告を確認します。 SEP Mobile を開いてウイルスやセキュリティ上の脅威を解決するように指示されます。    
 
-インストールしているアプリを Symantec Endpoint Protection Mobile が脅威であると見なすと、Symantec Endpoint Protection Mobile はそのアプリで通知を出します。
+## <a name="resolve-an-app-threat"></a>アプリの脅威を解決する  
 
-画面の上部に表示されているアプリ名をタップし、指示に従い、脅威を取り除きます。
+デバイスに対する脅威と考えられるアプリをインストールする場合、SEP Mobile アプリ内に通知が示されます。 影響を受けるアプリがデバイス上に残っている場合、会社のリソースにアクセスできなくなります。  
 
-アプリケーションをアンインストールするとすぐに、会社または学校の電子メールやその他のデータへのアクセスが回復します。 アプリケーションのアンインストール要求を無視すると、アプリをアンインストールするまで、会社のメールやデータにアクセスできなくなります。
+解決するには、SEP Mobile の脅威リストからアプリを選択します。 次に、画面上の指示に従って、アプリを削除してアンインストールします。  
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。 
 

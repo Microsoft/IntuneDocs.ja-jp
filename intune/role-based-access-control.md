@@ -14,12 +14,12 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 287e644e50b1f6b41f404cfd2102a8efc0fbaad9
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 2a0c230e89944b4330582fe4c6933ca1fe717aec
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34474566"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329992"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Microsoft Intune でのロール ベースの管理制御 (RBAC)
 
@@ -78,8 +78,8 @@ Intune には次のロールが組み込まれており、追加の構成なし�
 ### <a name="to-assign-a-built-in-role"></a>組み込みロールを割り当てるには
 
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
-2. **すべてのサービス** > **Intune** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
-3. **[Intune]** ウィンドウで、**[Intune の役割]** を選択し、**[すべてのロール]** を選択します。
+2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. **[Intune]** ウィンドウで、**[ロール]** > **[すべてのロール]** の順に選択します。
 1. **[Intune の役割 - すべてのロール]** ウィンドウで、割り当てる組み込みロールを選択します。
 
 2. **[<*ロール名*> - 概要]** ウィンドウで、**[管理]**、**[割り当て]** の順に選択します。
@@ -114,17 +114,15 @@ Intune には次のロールが組み込まれており、追加の構成なし�
 
 2. 左側のメニューから **[すべてのサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
 
-3. **[Intune]** を選択して Intune ダッシュボードを開き、**[Intune の役割]** を選択します。
+3. **[Intune]** > **[ロール]** > **[すべてのロール]** > **[カスタムの追加]** の順に選択します。
 
-4. **[Intune の役割]** ウィンドウで、**[すべてのロール]** を選択し、**[カスタムの追加]** を選択します。
+4. **[カスタム ロールの追加]** ウィンドウで、新しいロールの名前と説明を入力し、**[アクセス許可]** をクリックします。
 
-5. **[カスタム ロールの追加]** ウィンドウで、新しいロールの名前と説明を入力し、**[アクセス許可]** をクリックします。
+5. **[アクセス許可]** ウィンドウで、このロールで使用するアクセス許可を選択します。 [Intune RBAC テーブル](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)を使用すると、適用するアクセス許可を決めるのに役立ちます。
 
-3. **[アクセス許可]** ウィンドウで、このロールで使用するアクセス許可を選択します。 [Intune RBAC テーブル](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)を使用すると、適用するアクセス許可を決めるのに役立ちます。
+6. 終了したら、**[OK]** を選択します。
 
-4. 終了したら、**[OK]** を選択します。
-
-5. **[カスタム ロールの追加]** ウィンドウで、**[作成]** をクリックします。 新しいロールが **[Intune の役割 - すべてのロール]** ウィンドウの一覧に表示されます。
+7. **[カスタム ロールの追加]** ウィンドウで、**[作成]** をクリックします。 新しいロールが **[Intune の役割 - すべてのロール]** ウィンドウの一覧に表示されます。
 
 ### <a name="to-assign-a-custom-role"></a>カスタム ロールを割り当てるには
 

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f973bd36faef14232d6449c8ce9d1dc92bf32170
-ms.sourcegitcommit: 0bddd8a76201746e8835c4b792f34377b45fad60
+ms.openlocfilehash: b37c210425fd5abf8fd0b0501966fef8196b451b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39356575"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312623"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Intune で、監視されている iOS デバイス上のアクティベーション ロックをバイパスする
 
@@ -78,9 +78,9 @@ Intune の **[アクティベーション ロックのバイパス]** のリモ�
 6. デバイスの [ハードウェア] セクションに移動し、**[条件付きアクセス]** の下の **[アクティベーション ロックのバイパス コード]** の値をコピーします。
 
     >[!NOTE]
-    >バイパス コードをコピーしてから、デバイス上で出荷時設定へのリセットを行います。 コードをコピーする前にデバイスの設定をリセットすると、Azure からコードが削除されます。
+    >デバイスをワイプする前にバイパス コードをコピーします。 コードをコピーする前にデバイスの設定をリセットすると、Azure からコードが削除されます。
 
-7.  デバイスの **[概要]** ブレードに移動し、**[出荷時の設定にリセット]** を選択します。
+7.  デバイスの **[概要]** ブレードに移動し、**[ワイプ]** を選択します。
 8.  デバイスをリセットすると、*Apple ID* と *パスワード*を入力するように求められます。 *[ID]* フィールドは空白のままとし、"*パスワード*" の**バイパス コード**を入力します。 これにより、デバイスからアカウントが削除されます。 
 
 

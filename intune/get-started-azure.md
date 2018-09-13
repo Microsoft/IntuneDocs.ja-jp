@@ -15,12 +15,12 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 859194b364a64854922993d2d798f318b260fc80
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 4e070e80bb9575154aded12f0992d04bd7a4718f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836338"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329956"
 ---
 # <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>Azure Portal での Microsoft Intune の概要
 
@@ -53,7 +53,7 @@ Azure Portal の左側にある__サイドバー__には、利用できるすべ
 
 ## <a name="using-services"></a>サービスの使用
 
-Intune やその他のサービスを Azure で開くたびに、サービスは**ウィンドウ**に表示されます。 **ユーザー**、**グループ**、**モバイル アプリ**など、Intune で最初に使用するワークロードはすべて、全画面ウィンドウで表示されます。 ワークロードを選択すると、そのウィンドウが全画面で開きます。 他のウィンドウは開くときにウィンドウの右側から引き出され、メイン ウィンドウの下で折りたたまれます。
+Intune やその他のサービスを Azure で開くたびに、サービスは**ウィンドウ**に表示されます。 **ユーザー**、**グループ**、**クライアント アプリ**など、Intune で最初に使用するワークロードはすべて、全画面ウィンドウで表示されます。 ワークロードを選択すると、そのウィンドウが全画面で開きます。 他のウィンドウは開くときにウィンドウの右側から引き出され、メイン ウィンドウの下で折りたたまれます。
 
 ## <a name="next-steps"></a>次の手順
 

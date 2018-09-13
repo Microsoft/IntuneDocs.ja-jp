@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 041b31373e774c86373762a6365b913de9708b51
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: df8b6effea08bcb03022511158cde2d4da4ca2e6
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310506"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241914"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Intune ソフトウェア クライアントを実行している Windows PC にアプリを追加する
 
@@ -33,6 +33,8 @@ ms.locfileid: "36310506"
 
 PC にアプリをインストールするには、ユーザー操作なしで自動的にインストールできる必要があります。 そうでない場合、インストールは失敗します。
 
+## <a name="additional-security-settings-for-windows-installer"></a>Windows インストーラーの追加のセキュリティ設定
+ユーザーがアプリのインストールを制御することを許可できます。 有効にすると、セキュリティ違反が原因で本来は停止される可能性があるインストールを続行することが許可されます。 Windows インストーラーによってシステムに任意のプログラムをインストールする場合、管理者特権のアクセス許可を使用するよう Windows インストーラーに指示することができます。 さらに、Windows 情報保護 (WIP) アイテムのインデックス付け、および暗号化されていない場所に格納されたそれらのアイテムに関するメタデータを有効にすることができます。 このポリシーが無効な場合、WIP で保護されたアイテムにはインデックスが付けられず、Cortana またはエクスプローラーの結果に表示されません。 既定では、これらのオプションの機能は無効になっています。 
 
 ## <a name="add-the-app"></a>アプリを追加する
 次の手順に従って、Intune ソフトウェア パブリッシャーでアプリのプロパティを構成し、クラウド ストレージ領域にアップロードします。
@@ -85,8 +87,7 @@ PC にアプリをインストールするには、ユーザー操作なしで�
    - .msi ファイルの場合、**/quiet** が追加されます。
    これらのオプションは、アプリ パッケージの作成者がこの機能を有効にした場合のみ機能することにご注意ください。
 
-7. 
-  **Windows インストーラー** ファイルの種類のみ (exe のみ): **[リターン コード]** ページで、アプリが管理対象 Windows PC にインストールされるときに Intune で解釈される新しいエラー コードを追加できます。
+7. **Windows インストーラー** ファイルの種類のみ (exe のみ): **[リターン コード]** ページで、アプリが管理対象 Windows PC にインストールされるときに Intune で解釈される新しいエラー コードを追加できます。
 
    既定では、Intune は業界標準のリターン コードを使用して、アプリ パッケージが正常にインストールされたかどうかを示します (**0** - 成功。**3010** - 成功 (再起動が必要))。 この一覧に独自のリターン コードを追加することもできます。 リターン コードの一覧を指定し、アプリ インストールで一覧にないコードが返された場合、それはエラーとして解釈されます。
 

@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ee53dd02fa008a2e885b789439e88c766205d13
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 3596d539319a5a91a1647555a89004683874aa06
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268874"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329463"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>管理対象の Android デバイス用アプリ構成ポリシーを追加する
 
@@ -33,7 +33,7 @@ Microsoft Intune のアプリ構成ポリシーを使用して、Android 仕事�
 
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
 2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3. **[モバイル アプリ]** ワークロードを選択します。
+3. **[クライアント アプリ]** ワークロードを選択します。
 4. **[管理]** グループの **[アプリ構成ポリシー]** を選択し、**[追加]** を選択します。
 5. 次の詳細を設定します。
     - **名前** - Azure portal に表示されるプロファイルの名前。
@@ -88,13 +88,12 @@ Android デバイス機能にアクセスするためのアプリのアクセス
 
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
 2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3. **[Mobile Apps]** を選択します。
+3. **[クライアント アプリ]** を選択します。
 3. **[管理]** の下で、**[アプリ構成ポリシー]** を選択してから **[追加]** を選択します。
 4. 次の詳細を設定します。
     - **名前**。 Azure Portal に表示されるプロファイルの名前。
     - **説明**。 Azure Portal に表示されるプロファイルの説明。
-    - **デバイス登録の種類**。 
-  **[マネージド デバイス]** を選択します。
+    - **デバイス登録の種類**。 **[マネージド デバイス]** を選択します。
     - **プラットフォーム**。 **[Android]** を選択します。
 5. **[関連アプリ]** を選択し、構成ポリシーを定義するアプリを選択します。 承認して Intune に同期した Android 仕事用プロファイル アプリの一覧から選択します。
 6. **[アクセス許可]** を選択し、**[追加]** を選択します。

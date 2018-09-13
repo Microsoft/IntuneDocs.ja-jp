@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/1/2018
+ms.date: 6/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18f86580fc4c80fade7aeaa9678e9d8edac9a53e
-ms.sourcegitcommit: b57be56524ddb5026fab94f7638dc516ed118325
+ms.openlocfilehash: 825ceb1eee8f6fdd38f8a203324ce3cad7291918
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43317905"
 ---
 # <a name="customize-devices-running-windows-holographic-with-intune"></a>Intune を使用して Windows Holographic を実行するデバイスをカスタマイズする
 
@@ -39,12 +40,20 @@ Azure Active Directory (AD) は、Windows Holographic for Business を実行す�
 ## <a name="company-portal"></a>[ポータル サイト]
 **[ポータル サイト アプリを構成する](company-portal-app.md)**
 
-Intune には、ポータル サイトが含まれています。このサイトでユーザーは会社のデータにアクセスしたり、デバイスを登録したり、アプリをインストールしたり、IT 部署に連絡したりします。 Windows Holographic for Business を実行しているデバイスに合わせてポータル サイト アプリをカスタマイズできます。
+Intune には、ポータル サイト アプリが含まれています。このアプリでユーザーは会社のデータにアクセスしたり、デバイスを登録したり、アプリをインストールしたり、IT 部署に連絡したりします。 Windows Holographic for Business を実行しているデバイスに合わせてポータル サイト アプリをカスタマイズできます。
+
+ポータル サイト アプリを使用し、次の操作も実行できます。
+
+- 設定アプリまたはポータル サイト アプリを使用して [Intune からデバイスを削除する](/intune-user-help/unenroll-your-device-from-intune-windows)
+- [デバイスの名前を変更する](/intune-user-help/rename-your-device-cpapp)
+- デバイスに[アプリをインストールする](/intune-user-help/install-apps-cpapp-windows)
+- 設定アプリまたはポータル サイト アプリから[手動でデバイスを同期する](/intune-user-help/sync-your-device-manually-windows)
+
 
 ## <a name="compliance-policy"></a>コンプライアンス ポリシー
 **[デバイス コンプライアンス ポリシーの作成](compliance-policy-create-windows.md)**
 
-コンプライアンス ポリシーは、デバイスで準拠する必要があるルールや設定です。 このようなポリシーと条件付きアクセスを利用し、非準拠のデバイスが会社のリソースにアクセスするのを阻止できます。 Intune では、Windows Holographic for Business を実行しているデバイスのアクセスを許可したり、禁止したりするためのコンプライアンス ポリシーを作成できます。 たとえば、Bitlocker を有効にすることを要求するポリシーを作成できます。
+コンプライアンス ポリシーは、デバイスで準拠する必要があるルールや設定です。 このようなポリシーと条件付きアクセスを利用し、非準拠のデバイスが会社のリソースにアクセスするのを阻止します。 Intune では、Windows Holographic for Business を実行しているデバイスのアクセスを許可したり、禁止したりするためのコンプライアンス ポリシーを作成します。 たとえば、Bitlocker を有効にすることを要求するポリシーを作成できます。
 
 **[コンプライアンス ポリシーの概要](device-compliance-get-started.md)** に関するページも参照してください。
 
@@ -57,7 +66,7 @@ Intune を使用し、Windows Holographic for Business を実行しているデ�
 - [自分で開発したアプリを追加する](lob-apps-windows.md)
 - [アプリをグループに割り当てる](apps-deploy.md)
 
-Microsoft Intune では、Windows Holographic for Business を実行している Microsoft HoloLens デバイスにユニバーサル Windows アプリを展開することができます。 アプリ パッケージは、Intune Azure Portal で直接アップロードするか、またはビジネス向け Microsoft ストアから展開することができます。 関連する領域の詳細については、次を参照してください。
+Microsoft Intune では、Windows Holographic for Business を実行している Microsoft HoloLens デバイスにユニバーサル Windows アプリを展開することができます。 アプリ パッケージは、Intune Azure Portal で直接アップロードするか、ビジネス向け Microsoft ストアから展開することができます。 関連する領域の詳細については、次の記事を参照してください。
 - Intune Azure Portal を使用して基幹業務 (LOB) アプリを展開するには、[Windows の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法](lob-apps-windows.md)に関するページを参照してください。
 - ビジネス向け Microsoft ストアを使用してアプリを展開するには、「[ビジネス向け Microsoft ストアから購入したアプリを Microsoft Intune で管理する方法](windows-store-for-business.md)」を参照してください。 
 - Microsoft Intune でのアプリの管理については、[Microsoft Intune アプリの管理](app-management.md)に関するページを参照してください。
@@ -71,9 +80,9 @@ Intune にはいくつかの組み込みアクションがあります。これ�
 
 Windows Holographic for Business を実行するデバイスを使用する場合、次のアクションを使用できます。 
 
-- **[出荷時の設定にリセット](devices-wipe.md#factory-reset)**: **[出荷時の設定にリセット]** アクションでは、Intune からデバイスを削除し、デバイスを出荷時の既定設定に復元します。 デバイスを新しいユーザーに割り当てる前に、あるいはデバイスの紛失時や盗難時に、このアクションを使用します。
+- **[ワイプ](devices-wipe.md#wipe)**: **[ワイプ]** アクションでは、Intune からデバイスを削除し、デバイスを出荷時の既定設定に復元します。 デバイスを新しいユーザーに割り当てる前に、あるいはデバイスの紛失時や盗難時に、このアクションを使用します。
 
-- **[会社データを削除する](devices-wipe.md#remove-company-data)**: **[会社データを削除する]** アクションでは、Intune からデバイスを削除し、管理対象のアプリ データ、設定、Intune で割り当てられている電子メール プロファイルを削除します。 ユーザーの個人データはデバイスに保持されます。
+- **[インベントリから削除](devices-wipe.md#retire)**: **[リタイヤ]** アクションでは、Intune からデバイスが削除されます。 管理対象アプリのデータ、設定、Intune によって割り当てられた電子メール プロファイルも削除されます。 ユーザーの個人データはデバイスに保持されます。
 
 - **[デバイスを同期して最新のポリシーと操作を取得する](device-sync.md)**: **[同期]** アクションでは、デバイスが Intune ですぐにチェックインするよう強制します。 デバイスは、チェックインするとすぐに、割り当てられているポリシーまたは保留中のアクションを受け取ります。 この機能は、次のスケジュールされたチェックインを待つことなく、割り当てられたポリシーの検証およびトラブルシューティングに役立ちます。
 
@@ -95,6 +104,10 @@ Intune には、組織内のさまざまなデバイスで有効または無効�
 
 OMA-URI (Open Mobile Alliance Uniform Resource Identifier) 設定を構成するために、Intune でカスタム プロファイルを作成できます。 OMA-URI 設定を利用し、Windows Holographic for Business のさまざまな機能を制御できます。たとえば、VPN を有効にしたり、Microsoft Update の更新プログラムを確認したりできます。
 
+#### <a name="configure-kiosk-modekiosk-settingsmdwindows-holographic-for-business"></a>[キオスク モードを構成する](kiosk-settings.md#windows-holographic-for-business)
+
+Intune で利用できる共有またはゲスト PC 機能を利用し、キオスクとして実行されるように Windows Holographic for Business デバイスを構成できます。 キオスクとして構成したデバイスでは、1 つのアプリを実行するか (シングルアプリ キオスク モード)、複数のアプリを実行できます (マルチアプリ キオスク モード)。
+
 #### <a name="device-restrictionsdevice-restrictions-windows-holographicmd"></a>[デバイスの制限](device-restrictions-windows-holographic.md)
 
 デバイスの制限では、デバイスのさまざまな設定や機能を制御できます。たとえば、パスワードを要求したり、[Microsoft Store](https://www.microsoft.com/store/apps/windows?icid=CNavAppsWindowsApps) からアプリをインストールしたり、Bluetooth を有効にしたりできます。 このような制限は Intune プロファイルで作成されます。 このプロファイルは、Windows Holographic for Business を実行している複数のデバイスに適用できます。
@@ -115,7 +128,7 @@ Intune には、Windows 10 デバイス用に、更新プログラム リング�
 ## <a name="terms-and-conditions"></a>Intune の登録および会社アクセスに関する使用条件
 **[ユーザー アクセスに関する会社の使用条件を設定する](terms-and-conditions-create.md)**
 
-ユーザーがデバイスを登録したり、会社のアプリにアクセスしたりする前に、会社の使用条件に同意するように要求できます。 Intune では、ポータル サイトに使用条件を表示する方法を定義できます。また、Windows Holographic for Business を実行しているデバイスに使用条件を割り当てることができます。
+ユーザーがデバイスを登録したり、電子メールなど、会社のアプリにアクセスしたりする前に、会社の使用条件に同意するように要求できます。 Intune で、ポータル サイトに使用条件を表示する方法を定義します。また、Windows Holographic for Business を実行しているデバイスに使用条件を割り当てます。
 
 ## <a name="windows-hello-for-business"></a>Windows Hello for Business
 **[Windows Hello for Business を使用する](windows-hello.md)**

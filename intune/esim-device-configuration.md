@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45d41f02fdfff7179dbd43f4d2afdac3337f8b7f
-ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
+ms.openlocfilehash: 7b03c46a9095c0f300869ebd14d1a81698e294f7
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39400285"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43314025"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Intune で eSIM 携帯電話プロファイルを構成する - パブリック プレビュー
 
@@ -179,7 +179,7 @@ Azure AD グループからデバイスを削除すると、eSIM プロファイ
 2. Azure AD グループに移動して、グループからデバイスを削除します。
 3. 削除されたデバイスが Intune に接続したときに、更新済みポリシーが評価され、eSIM プロファイルが削除されます。
 
-デバイスがユーザーによって登録解除されたときや、[会社データの削除](devices-wipe.md#remove-company-data)または[リセット デバイス リモート アクション](devices-wipe.md#factory-reset)がデバイス上で実行されたときにも、eSIM プロファイルが削除されます。
+デバイスが[インベントリから削除](devices-wipe.md#retire)されたとき、ユーザーによって登録解除されたとき、[リセット デバイス リモート アクション](devices-wipe.md#wipe)がデバイス上で実行されたときにも、eSIM プロファイルが削除されます。
 
 > [!NOTE]
 > プロファイルを削除しても、課金が停止されない場合があります。 携帯電話会社に問い合わせて、ご利用のデバイスでの課金状態を確認してください。

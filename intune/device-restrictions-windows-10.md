@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42e0798b0c2941d9ea45e75b367b69bc7dab548f
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6aa2ade550a01a9e4758024213a67e6a7ddd8f03
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321222"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313855"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune での Windows 10 (以降) の設定に対するデバイスの制限
 この記事では、Windows 10 を実行するデバイスに構成できるすべての Microsoft Intune デバイスの制限設定について説明します。
@@ -37,7 +37,7 @@ ms.locfileid: "39321222"
 - **[リムーバブル記憶域]** - SD カードなどの外部記憶装置をデバイスで使用できるようにするかどうかを指定します。
 - **[位置情報]** - デバイスが位置情報サービスの情報を使用できるかどうかを指定します。
 - **[インターネット共有]** - デバイスでインターネット接続の共有を使用できるようにします。
-- **[電話のリセット]** - ユーザーがデバイスを工場出荷時設定にリセットできるかどうかを制御します。
+- **[電話のリセット]** - ユーザーがデバイスでワイプを実行できるかどうかを制御します。
 - **[USB 接続 (モバイルのみ)]** - デバイスが USB 接続を介して外部記憶装置にアクセスできるかどうかを制御します。
 - **[盗難防止モード (モバイルのみ)]** - Windows の盗難防止モードを有効にするかどうかを構成します。
 - **[Cortana]** - Cortana による音声アシスタントを有効または無効にします。
@@ -50,6 +50,7 @@ ms.locfileid: "39321222"
 - **[SIM カードのエラー ダイアログ (モバイルのみ)]** - SIM カードが検出されない場合のデバイスでのエラー メッセージ表示をブロックします。
 - **[Ink Workspace]** \(Ink ワークスペース\) - ユーザーが Ink ワークスペースを使用するのを禁止します。 この設定が構成されていない場合、Ink ワークスペースは有効となり (機能がオン)、ユーザーはロック画面上でこれを使用できるようになります。
 - **自動再展開** - 管理権限を持つユーザーが、デバイス ロック画面で **CTRL + Win + R** を使用してすべてのユーザー データとユーザー設定を削除できます。 このデバイスは自動的に再構成され、管理対象に再登録されます。
+- **[Require users to connect to network during device setup (Windows Insider only)]** \(デバイスのセットアップ中、ネットワークに接続することをユーザーに要求する (Windows Insider のみ)\) - **[必須]** を選択すると、Windows 10 のセットアップ中、[ネットワーク] ページから先に進む前にデバイスをネットワークに接続することが要求されます。 この機能はプレビュー中ですが、Windows Insider ビルド 1809 以降ではこの設定を使用する必要があります。
 
 ## <a name="password"></a>パスワード
 -   **[パスワード]** - エンド ユーザーがデバイスにアクセスする際にパスワードの入力を要求します。
@@ -152,8 +153,8 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 ## <a name="edge-browser"></a>Microsoft Edge ブラウザー
 
 -   **[Microsoft Edge ブラウザー (モバイルのみ)]** - デバイスで Edge Web ブラウザーを使用できるようにします。
--   **[アドレス バーのドロップダウン (デスクトップのみ)]** – これを使用すると、Microsoft Edge でドロップダウン リストの入力候補表示が停止します。 Microsoft Edge と Microsoft サービスの間のネットワーク帯域幅が最小に抑えられます。
--   **[Microsoft のブラウザー間でお気に入りを同期する (デスクトップのみ)]** – Internet Explorer と Microsoft Edge の間でお気に入りを同期することを Windows に許可します。
+-   **[アドレス バーのドロップダウン (デスクトップのみ)]** – これを使用すると、Edge でドロップダウン リストの入力候補表示が停止します。 Microsoft Edge と Microsoft サービスの間のネットワーク帯域幅が最小に抑えられます。
+-   **[Microsoft のブラウザー間でお気に入りを同期する (デスクトップのみ)]** – Internet Explorer と Edge の間でお気に入りを同期することを Windows に許可します。
 -   **[トラッキング拒否ヘッダーを送信する]** - ユーザーがアクセスする Web サイトに Do Not Track ヘッダーを送信するように、Microsoft Edge ブラウザーを構成します。
 -   **[Cookie]** - ブラウザーがインターネット Cookie をデバイスに保存するように設定します。
 -   **[JavaScript]** - JavaScript などのスクリプトを Microsoft Edge ブラウザーで実行できるようにします。
@@ -166,16 +167,16 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 -   **[開発者ツール]** - エンド ユーザーが Microsoft Edge 開発者ツールを開くことを防止します。
 -   **[拡張機能]** - エンド ユーザーがデバイスに Microsoft Edge 拡張機能をインストールすることを許可します。
 -   **[InPrivate 閲覧]** - エンド ユーザーが InPrivate 閲覧セッションを開くことを防止します。
--   **[初回実行ページを表示する]** – Microsoft Edge の初回実行時に紹介ページの表示を停止します。
+-   **[初回実行ページを表示する]** – Edge の初回実行時に紹介ページの表示を停止します。
     -   **[初回実行の URL]** – ユーザーが初めて Microsoft Edge を実行したときに表示されるページの URL を指定します (Windows 10 Mobile のみ)。
 -   **[ホームページ]** - Microsoft Edge ブラウザーのホームページとして使用するサイトの一覧を追加します (デスクトップのみ)。
 -   **[スタート ページに対する変更内容]** – Microsoft Edge を開いたときに表示されるスタート ページの変更をユーザーに許可します。 ホームページ設定を使用し、Microsoft Edge 起動時に開くページまたはページ リストを作成します。
 -   **[About Flags へのアクセスをブロック]** - エンド ユーザーが Microsoft Edge で開発者向けと実験用の設定を含む about:flags ページにアクセスするのを防止します。
 -   **[WebRtc localhost IP アドレス]** - Web RTC プロトコルを使用して電話するときにユーザーの localhost IP アドレスが表示されないようにします。
 -   **[既定の検索エンジン]** - 使用する既定の検索エンジンを指定します。 エンド ユーザーはこの値をいつでも変更できます。
--   **[終了時に閲覧データをクリアする]** – ユーザーが Microsoft Edge を終了すると、履歴と閲覧データが消去されます。
+-   **[終了時に閲覧データをクリアする]** – ユーザーが Edge を終了すると、履歴と閲覧データが消去されます。
 -   **[ライブ タイル データの収集]** – ユーザーが Microsoft Edge からスタート メニューにサイトをピン留めするとき、Windows がライブ タイルから情報を収集する行為を停止します。
--  **[お気に入り一覧]** - お気に入りのファイルへのパスを定義します。 たとえば、http://contoso.com/favorites.html のように指定します。
+-  **[お気に入り一覧]** - お気に入りのファイルへのパスを定義します。 たとえば、 http://contoso.com/favorites.html のように指定します。
 -  **[Restrict changes to Favorites]** \(お気に入りへの変更の制限\) - これを **[ブロック]** に設定すると、ユーザーはお気に入り一覧を追加、インポート、並べ替え、または編集できなくなります。 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen

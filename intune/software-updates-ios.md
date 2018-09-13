@@ -5,17 +5,17 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: b9cc34b2fa45ae447a015f1b3105081041bd0afe
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 1fe0258d3b6d9092c032184fca5fc0f8dc3f12df
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268840"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313498"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>Intune での iOS 更新プログラム ポリシーの構成
 
@@ -32,7 +32,7 @@ ms.locfileid: "39268840"
 4. ポリシーの名前と説明を入力します。
 5. **[設定]** を選択します。 
 
-    iOS デバイスに最新の更新プログラムを強制的にインストールしないときの詳細を入力します。 これらの設定では、制限付き時間枠を作成します。 曜日、タイム ゾーン、開始時刻、および終了時刻を構成することができます。
+    iOS デバイスに最新の更新プログラムを強制的にインストールしないときの詳細を入力します。 これらの設定では、制限付き時間枠を作成します。 週の**曜日**、**タイム ゾーン**、**開始時刻**、**終了時刻**、**ソフトウェア更新の表示を遅らせるかどうか (日数)** を構成し、ユーザーを入力できます。 ソフトウェア更新の遅延範囲として 1 から 90 日間を選択できます。 ソフトウェア更新遅延の設定を選択しない場合、0 を入力します。 このような更新設定は、監督対象の iOS デバイスにのみ適用されます。
 
 6. **[OK]** を選択して変更を保存します。 **[作成]** を選択して、ポリシーを作成します。
 

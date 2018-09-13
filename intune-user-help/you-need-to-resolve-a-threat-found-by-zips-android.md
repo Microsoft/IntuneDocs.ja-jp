@@ -1,11 +1,11 @@
 ---
-title: Android で Zimperium zIPS が検出した脅威を解決する | Microsoft Docs
-description: Android デバイスで検出された脅威を解決する方法について説明します。
+title: Android で Zimperium zIPS によって検出された脅威の解決
+description: Android デバイスで検出されたセキュリティ上の脅威やアプリの脅威を解決する方法について説明します。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,29 +15,40 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 081554df0deca0935c32ddef0b26004c4fd2d82f
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 6c6e31ce5c3f5f988a6c4b4ff4be71bfd5e0dd80
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755319"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148060"
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-zimperium-zips"></a>Zimperium zIPS が検出した脅威を解決する必要がある
+# <a name="resolve-a-threat-found-by-zimperium-zips"></a>Zimperium zIPS によって検出された脅威を解決する
 
-Zimperium zIPS がデバイスで潜在的な脅威を検出したら、問題を解決して会社または学校のメール、アプリ、ファイルに再びアクセスできるようにする必要があります。 表示されるメッセージは、Zimperium zIPS がデバイスで検出した問題によって変わります。
+Zimperium zIPS は Mobile Threat Defender サービスであり、Android デバイスの潜在的な脅威を識別します。 これらの脅威はポータル サイト アプリに報告され、非準拠に関する未解決の問題として示されます。 デバイスが非準拠であると識別された場合、以下を実行できない可能性があります。
 
-この問題を解決するには、Zimperium zIPS アプリを開き、アプリの指示に従います。
+* 会社の電子メールに接続する
+* 会社の Wi-Fi に接続する
+* SharePoint Online に接続する
+* 企業ファイルを OneDrive に同期させる
+* 会社のアプリにアクセスする
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>登録済みデバイスから電子メールまたはファイルへのアクセスがブロックされた場合に表示されるメッセージ
+この記事では、Zimperium zIPS の脅威アラートを認識する方法と、解決するために行うことについて説明します。 
 
-登録済みデバイスにウイルスまたはその他のセキュリティ上の脅威がある場合に、会社のメールかファイルにアクセスしようとすると、アクションを実行するように警告するメッセージが Zimperium zIPS により表示されます。
+## <a name="troubleshoot-virus-or-security-threat"></a>ウイルスやセキュリティ上の脅威をトラブルシューティングする  
+ウイルスやセキュリティ上の脅威が検出された場合は、Zimperium zIPS により、組織のアクセス ポリシーに従って制限事項が適用されます。 会社のアクセス ポリシーにより、お使いのデバイスから職場のネットワーク、アプリ、電子メールにアクセスできなくなる可能性があります。  
 
-**デバイスの管理ポータル**のリンクをタップして[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)に移動すると、問題を解決する方法の手順が表示されます。
+Zimperium zIPS には、失ったアクセスを回復するためのアクションの実行を求めるメッセージが表示されます。 脅威を選択し、アプリ内の指示に従って解決してください。
 
-## <a name="example-of-an-app-that-zimperium-zips-sees-as-a-threat"></a>Zimperium zIPS によって脅威と見なされるアプリの例
+アプリが会社の MDM プロバイダーと統合されているため、ポータル サイト アプリには制限付きアクセスに関する警告も表示されます。 警告により、ウイルスやセキュリティ上の脅威を解決するために Zimperium zIPS を開くように指示されます。  
 
-Zimperium zIPS が脅威と見なすアプリをインストールした場合、信頼できないアプリがデバイスにインストールされているというアラートが表示されます。
+  ![Zimperium zIPS の警告を表示する、ポータル サイトのデバイス ページのスクリーンショット例。](./media/CP-lookout-virus-banner-1808.png)  
 
-この場合、アプリケーションをアンインストールするとすぐに、会社の電子メールやデータへのアクセスが回復します。 アプリをアンインストールしないと、アプリをアンインストールするまで、電子メールやデータにアクセスできなくなります。
+影響を受けるデバイスの下に表示される警告バナーを選択します。 Zimperium zIPS が開き、脅威を排除する方法が示されます。  
 
-サポートが必要な場合は、 IT 管理者にお問い合わせください。連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+## <a name="resolve-an-app-threat"></a>アプリの脅威を解決する
+
+デバイスに対する脅威と考えられるアプリをインストールする場合、Zimperium zIPS 内に通知が示されます。 影響を受けるアプリがデバイス上に残っている場合、会社のリソースにアクセスできなくなります。  
+
+解決するには、Zimperium zIPS の脅威リストからアプリを選択します。 次に、画面上の指示に従って、アプリを削除してアンインストールします。    
+
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。 

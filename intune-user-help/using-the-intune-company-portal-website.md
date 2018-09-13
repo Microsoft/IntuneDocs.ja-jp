@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/27/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,23 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 83dd6265d4d34ea46a7299e3a6bdf8a06baa30c1
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 8275a1f542badaadc5248826c5d1d3a8f24d56c3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34762231"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149497"
 ---
 # <a name="using-the-intune-company-portal-website"></a>Intune ポータル サイト Web サイトの使用
-[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)は、Intune で登録したコンピューターとデバイスの管理にエンド ユーザーが使用できる Web ページです。
+[ポータル サイト Web サイト](https://portal.manage.microsoft.com)を使用して、マネージド デバイスを表示、編集、追加、削除します。
 
-ユーザーがポータル サイト Web サイトから実行できるタスクを次に示します。
+ポータル サイト Web サイトからは、次のアクションを実行できます。
 
 -   [デバイスの名前の変更](rename-your-device-cpwebsite.md)
 
 -   [デバイスの削除](remove-your-device-cpwebsite.md)
 
--   [デバイスをリセット (消去) する](reset-erase-your-device-cpwebsite.md)
+-   [デバイスのリセット](reset-erase-your-device-cpwebsite.md)
 
 -   [デバイスのパスコードのリセット](reset-your-passcode-cpwebsite.md)
 
@@ -41,8 +41,8 @@ ms.locfileid: "34762231"
 
 -   会社のサポートの連絡先情報の検索 (構成している場合)
 
--   会社または学校のポリシーに準拠しているかどうかを含む、デバイスの詳細の表示
+-   コンプライアンス状態の確認
 
--   PC のリモート管理 (PC に対してのみ機能します)
+-   PC のリモート管理
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

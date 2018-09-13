@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/16/2018
+ms.date: 8/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 61310f5baa64c43d2e818df6c61a36d232922c1c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 0b064c6f0eaa67157c5c50ddad3a8fd863295b8b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744739"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312852"
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>Intune での Windows 10 VPN の設定
 
@@ -42,6 +42,8 @@ Intune を使用して VPN 接続を構成することができます。 この�
   - **[既定のサーバー]**: このサーバーを、デバイスで接続を確立するために使用する既定のサーバーとして有効にします。 1 台のサーバーのみを既定のサーバーとして設定してください。
   - **[インポート]**: 説明、IP アドレスまたは FQDN、既定のサーバーという形式の、サーバーのリストを含む、コンマ区切りのファイルを参照します。 **[OK]** を選んで、これらのサーバーを **[サーバー]** 一覧にインポートします。
   - **[エクスポート]**: サーバーのリストをコンマ区切り値 (csv) ファイルにエクスポートします。
+
+- **内部 DNS を持つ IP アドレスを登録します**: **[有効にする]** を選択すると、内部 DNS で VPN インターフェイスに割り当てられた IP アドレスを動的に登録するように Windows 10 VPN プロファイルが構成されます。あるいは、**[無効にする]** を選択すると、IP アドレスは動的に登録されません。
 
 - **[接続の種類]**: 以下のベンダーのリストから VPN 接続の種類を選択します。
 

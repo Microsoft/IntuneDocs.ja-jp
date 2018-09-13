@@ -1,24 +1,24 @@
 ---
 title: Windows Hello for Business と Microsoft Intune を統合する方法
 titleSuffix: ''
-description: 管理されたデバイスで Windows Hello for Business の使用を制御するポリシーを作成する方法について説明します。"
+description: マネージド デバイスで Windows Hello for Business の使用を制御するポリシーを作成する方法について説明します。"
 keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5220d9c2e1ba98873658631798240af9e7587758
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: ff3b482f974641dd7255dc98d3af62542d802de9
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834772"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313736"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Windows Hello for Business と Microsoft Intune の統合
 
@@ -31,7 +31,10 @@ Windows Hello for Business (旧称 Microsoft passport for Work) と Microsoft In
 
 Intune と Hello for Business の統合には 2 通りの方法があります。
 
--   Intune ポリシーを使って、ユーザーがサインインに使用できるジェスチャと使用できないジェスチャを制御できます。
+-   Intune ポリシーは **[デバイスの登録]** で作成できます。 このポリシーの対象は組織全体 (テナント全体) となります。 Windows AutoPilot out-of-box-experience (OOBE) をサポートしており、デバイスが登録されたときに適用されます。 
+-  ID 保護プロファイルは **[デバイス構成]** で作成できます。 このプロファイルの対象は割り当てられたユーザーとデバイスであり、チェックイン時に適用されます。 
+
+この記事を利用し、組織全体を対象とする既定の Windows Hello for Business ポリシーを作成します。 一部のユーザー グループとデバイス グループに適用される ID 保護プロファイルを作成するには、[ID 保護プロファイルを構成する](identity-protection-configure.md)方法に関するページを参照してください。  
 
 <!--- -   You can store authentication certificates in the Windows Hello for Business key storage provider (KSP). For more information, see [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md). --->
 
@@ -57,7 +60,7 @@ Intune と Hello for Business の統合には 2 通りの方法があります�
 
 4. **[すべてのユーザー]** ウィンドウで、**[プロパティ]** をクリックし、Windows Hello for Business 設定の **[名前]** と省略可能な **[説明]** を入力します。
 
-5. **[すべてのユーザー]** ウィンドウで、**[設定]** をクリックし、**[Windows Hello for Business の構成]** で以下を選択します。
+5. **[すべてのユーザー]** ウィンドウで、**[設定]** をクリックし、**[Windows Hello for Business の構成]** で以下のオプションから選択します。
 
     - **Disabled**。 Windows Hello for Business を使用しない場合は、この設定を選択します。 画面上の他のすべての設定が使用できなくなります。
     - **Enabled**。 Windows Hello for Business の設定を構成する場合は、この設定を選択します。

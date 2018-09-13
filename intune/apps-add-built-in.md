@@ -15,12 +15,12 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b67b50a5bd372541cf0842696e5012ca991d8b8
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: b9520343f3b631fdc2732690b462c6d8fd010c82
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224162"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329497"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>組み込みアプリを Microsoft Intune に追加する
 
@@ -36,8 +36,8 @@ ms.locfileid: "34224162"
 Microsoft Intune の使用可能なアプリに組み込みアプリを追加するには、次の手順を実行します。
 1. Azure ポータルにサインインします。
 2. Microsoft Intune ウィンドウを表示するには、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。
-3. **[Intune]** ウィンドウで、**[モバイル アプリ]** を選択します。
-4. **[モバイル アプリ]** ウィンドウで、**[管理]** の **[アプリ]** を選択します。
+3. **[Intune]** ウィンドウで、**[クライアント アプリ]** を選択します。
+4. **[クライアント アプリ]** ウィンドウで、**[管理]** の **[アプリ]** を選択します。
 5. **[追加]** を選択します。
 6. **[追加]** アプリ ウィンドウの **[アプリの種類]** 一覧で **[組み込みアプリ]** を選択します。
 7. **[アプリの選択]** を選択します。

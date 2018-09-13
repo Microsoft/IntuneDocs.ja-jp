@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/29/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,17 +15,37 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9180bf70c114a9bb1f034b51ee3a3d96bef253fa
-ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
+ms.openlocfilehash: 9f0140d532356a1ddb3f8acf19ea1dfaf6e85eb8
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39279493"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347696"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune とエンド ユーザー アプリの UI の更新
 このリリースの Microsoft Intune でエンド ユーザーに表示されるアプリの UI に加えられた変更について説明します。 これらの更新を理解すると、ユーザーとの通信や、展開のサポートのために作成したカスタム ドキュメントの更新に役立ちます。 会社のポータルを使用してヘルプデスクにサポートを求める場合に、直面している問題のトラブルシューティングをより適切に行う方法を理解するのにも役立ちます。
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-august-27-2018"></a>2018 年 8 月 27 日の週  
+
+### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>ポータル Web サイトの新しいユーザー エクスペリエンスの更新<!--2000968 -->  
+顧客からのフィードバックに基づいて、Intune ポータル サイト Web サイトに新機能を追加しています。 ご利用のデバイスから、既存の機能と使いやすさの大幅な向上を体験できます。 &ndash;デバイス詳細、フィードバックとサポート、デバイス概要など&ndash;のサイトの領域には、最新の応答性の高いデザインが採用されています。 [Intune ポータル サイト Web サイトのドキュメント](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website)は、これらの変更を反映するように更新されています。   
+
+更新プログラムでは、次のような内容を確認できます。  
+
+- すべてのデバイス プラットフォームでの簡素化されたワークフロー
+- 強化されたデバイスの識別と登録のフロー
+- 役に立つエラー メッセージ
+- わかりやすい言語、少ない技術用語
+- アプリへの直接リンクを共有する機能
+- 大規模なアプリケーション カタログのパフォーマンスの向上
+- すべてのユーザーに対するアクセシビリティの向上  
+
+|更新済み|前へ|
+|---|---|
+|![更新済みのデバイス ページでは、デバイスが完全なリストの上にポップアップ表示されるのではなく、デバイス情報の上にきれいに配置されて表示されます。](./media/iwp-device-after-1803.png)|![以前のバージョンのデバイス ページ。](./media/iwp-device-before-1803.png)|
+|![更新されたアプリのインストール ページには、説明とさまざまなインストール情報 (発行日、バージョン、およびアプリの種類など) の上に、そのアプリがわかりやすく表示されます。](./media/iwp-app-install-after-1803.png)|![以前のバージョンのアプリのインストール ページ。](./media/iwp-app-install-before-1803.png)|  
 
 ## <a name="week-of-july-16-2018"></a>2018 年 7 月 16 日の週  
 
@@ -112,7 +132,7 @@ Android 用 Intune ポータル サイト アプリを、Android の[マテリ�
 iOS 用ポータル サイト アプリでのデバイス セットアップ ワークフローを改善しました。 言葉がよりわかりやすくなり、可能な範囲で画面をまとめました。 また、セットアップのテキスト全体でお客様の会社名を使用することで、表現がより会社に合ったものになっています。
 
 > [!NOTE]
-> **[Microsoft Intune]** > **[モバイル アプリ]** > **[ポータル サイトのブランド化]** > **[会社名]** の Azure Portal で設定した会社名が使用されています。 この値を設定していない場合、**[Azure Active Directory]** > **[プロパティ]** > **[名前]** で設定したテナント名が使用されます。 [ポータル サイトのブランド化] で会社名を設定しておらず、テナント名を表示させたくない場合は、[ポータル サイトのブランド化] タブで会社名を設定することをお勧めします。この文字列をポータル サイトのヘッダーに表示させたくない場合は、[Show company name next to logo]\(ロゴの横に会社名を表示する\) チェックボックスをオフにすることができます。
+> Azure portal で設定した会社名が、**[Microsoft Intune]** > **[クライアント アプリ]** > **[ポータル サイトのブランド化]** > **[会社名]** で使用されます。 この値を設定していない場合、**[Azure Active Directory]** > **[プロパティ]** > **[名前]** で設定したテナント名が使用されます。 [ポータル サイトのブランド化] で会社名を設定しておらず、テナント名を表示させたくない場合は、[ポータル サイトのブランド化] タブで会社名を設定することをお勧めします。この文字列をポータル サイトのヘッダーに表示させたくない場合は、[Show company name next to logo]\(ロゴの横に会社名を表示する\) チェックボックスをオフにすることができます。
 
 |以前|これらの手順の完了後、|
 |---|---|
@@ -458,12 +478,7 @@ UI の更新、ワークフローの簡素化、ユーザー補助機能の改�
 -   アプリへの直接リンクを共有する機能
 - 大規模なアプリケーション カタログのパフォーマンスの向上
 
-この変更の準備のために何かを行う必要はありません。 更新されたポータル Web サイトが利用可能になったら、お知らせいたします。 ただし、最終的には、更新されたスクリーンショットを使用して、エンド ユーザーのドキュメントを更新する必要があります。 また、Web サイトは iOS アプリの **[アプリ]** セクションに影響するため、iOS のポータル サイト アプリのドキュメントも更新する必要があることに注意してください。
-
-|更新済み|前へ|
-|---|---|
-|![更新済みのデバイス ページでは、デバイスが完全なリストの上にポップアップ表示されるのではなく、デバイス情報の上にきれいに配置されて表示されます。](./media/iwp-device-after-1803.png)|![以前のバージョンのデバイス ページ。](./media/iwp-device-before-1803.png)|
-|![更新されたアプリのインストール ページには、説明とさまざまなインストール情報 (発行日、バージョン、およびアプリの種類など) の上に、そのアプリがわかりやすく表示されます。](./media/iwp-app-install-after-1803.png)|![以前のバージョンのアプリのインストール ページ。](./media/iwp-app-install-before-1803.png)|
+この変更の準備のために何かを行う必要はありません。 更新されたポータル Web サイトが利用可能になったら、お知らせいたします。 ただし、最終的には、更新されたスクリーンショットを使用して、エンド ユーザーのドキュメントを更新する必要があります。 また、Web サイトは iOS アプリの **[アプリ]** セクションに影響するため、iOS のポータル サイト アプリのドキュメントも更新する必要があることに注意してください。  
 
 ### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>ポータル Web サイトの UI の更新 <!--1313244 part 2-->
 

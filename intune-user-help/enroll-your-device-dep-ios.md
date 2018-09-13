@@ -1,11 +1,11 @@
 ---
-title: iOS デバイスを Device Enrollment Program に登録する | Microsoft Docs
-description: Intune で DEP に iOS デバイスを登録する方法について説明します
+title: 組織から提供された iOS デバイスを管理登録します。 | Microsoft Docs
+description: 組織が購入して提供している iOS デバイスを Intune に登録する方法について説明します
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/12/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,26 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9d1154d942069ad69294d4235c894f88513dd848
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: b93f02011b0900b1a64ae6cb10a84a52cd40187a
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016409"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241798"
 ---
-# <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a>Intune で iOS デバイスを Device Enrollment Program に登録する
+# <a name="enroll-your-organization-provided-ios-device-in-management"></a>組織から提供された iOS デバイスを管理登録する
 
-Device Enrollment Program は、大量の iOS デバイスを企業が容易に管理できるようにするため、Apple により提供されています。 個人所有のデバイスが許可されている会社のユーザーは、このページの手順ではなく、[標準的な iOS 登録手順](enroll-your-device-in-intune-ios.md)に従います。 会社から Device Enrollment Program の対象になっている iOS デバイスを支給されているユーザーは、以下を読んでください。
+新しい iOS デバイスを Intune で管理する方法について説明します。  
+
+職場または学校から支給される iOS デバイスは多くの場合、受け取る前に事前構成されています。 初めてデバイスの電源を入れてサインインすると、事前構成済みの設定が組織からデバイスに送信されます。 デバイスのセットアップが完了すると、職場または学校のリソースにアクセスできるようになります。  
+
+セットアップを始めるには、デバイスの電源を入れ、職場または学校の資格情報でサインインします。 以下では、セットアップ アシスタントを使用する手順と表示される画面について説明します。 
+
+## <a name="what-is-apple-dep"></a>Apple DEP とは
+組織は、*Apple Device Enrollment Program* (DEP) を利用してデバイスを購入することがあります。 Apple DEP を利用することで、組織は iOS または macOS デバイスを大量に購入できます。 その後、組織は Intune などの適切なモバイル デバイス管理プロバイダーでデバイスを構成して管理できます。 Apple DEP についての情報がさらに必要な管理者は、「[Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios)」をご覧ください。  
+
+## <a name="set-up-your-ios-device"></a>iOS デバイスを設定する  
+会社支給のデバイスではなく個人所有の iOS デバイスを使用している場合は、[個人デバイスと Bring Your Own デバイス](enroll-your-device-in-intune-ios.md)に関するページをご覧ください。  
 
 1. iOS デバイスをオンにします。 
 2. **[Language\(言語\)]** を選択した後、デバイスを Wi-Fi に接続します。
@@ -46,4 +56,4 @@ Device Enrollment Program は、大量の iOS デバイスを企業が容易に�
 6. **使用条件**に同意し、診断情報を Apple に送信するかどうかを決定します。
 7. 登録が完了すると、他の操作の実行を要求される場合があります。 これらの手順には、電子メールにアクセスするためのパスワードの入力や、パスコードの設定が含まれる場合があります。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

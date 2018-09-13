@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/28/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8bb03becae1f28a3f5490a53576d5183c0b3ffaa
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: da220e1f82c59f3181d64dc01d071867d62df397
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39335828"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313974"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Microsoft Intune のデバイス プロファイルとは
 
@@ -54,6 +54,7 @@ Microsoft Intune には、組織内のさまざまなデバイスで有効また
 - iOS 
 - macOS
 
+
 ## <a name="device-restrictions"></a>デバイスの制限
 [デバイスの制限](device-restrictions-configure.md)は、セキュリティ、ハードウェア、データの共有など、デバイス上の設定を制御します。 たとえば、iOS デバイス ユーザーにデバイスのカメラの使用を禁じるデバイスの制限プロファイルを作成できます。 
 
@@ -72,6 +73,13 @@ Windows Defender Advanced Threat Protection (WDATP) と Microsoft Intune をオ�
 
 この機能では以下をサポートします。
 - Windows 10 以降
+
+## <a name="identity-protection"></a>ID 保護
+[ID 保護](identity-protection-configure.md)により、Windows 10 デバイスと Windows 10 Mobile デバイスにおける Windows Hello for Business の操作が制御されます。 この設定を構成し、Windows Hello for Business をユーザーやデバイスが利用できるようにし、デバイスの PIN とジェスチャの要件を指定します。  
+
+この機能では以下をサポートします。  
+- Windows 10 以降
+- Windows Holographic for Business  
 
 ## <a name="kiosk"></a>キオスク
 

@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
-ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
+ms.openlocfilehash: 515853864236638bc2732f6539d087bd125e3c56
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42903145"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313463"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Android エンタープライズ キオスク デバイスの登録の設定
 
@@ -112,7 +112,7 @@ NFC 対応の Android 5.1 以降のデバイスについては、特殊な形式
 
 Android 6 以降のデバイスについては、トークンを利用してデバイスを登録できます。 Android 6.1 以降のバージョンでは、**aft#setup** の登録方法を使用して QR コードのスキャンを活用することもできます。
 
-1. 出荷時の設定に戻したデバイスの電源を入れます。
+1. ワイプされたデバイスをオンにします。
 2. **[ようこそ]** 画面で、言語を選択します。
 3. お使いの **Wifi** に接続し、**[次へ]** を選択します。
 4. Google の利用規約に同意し、**[次へ]** を選択します。
@@ -129,7 +129,7 @@ Android 7 以降のデバイスでは、登録プロファイルから QR コー
 > [!Note]
 > ブラウザーをズームすると、デバイスが QR コードをスキャンできない可能性があります。 ブラウザーをさらにズームすると、問題が解決します。
 
-1. Android デバイスで QR 読み取りを起動するには、出荷時の設定に戻した後、最初に表示される画面を複数回タップします。
+1. Android デバイスで QR 読み取りを起動するには、ワイプした後、最初に表示される画面を複数回タップします。
 2. Android 7 デバイスと Android 8 デバイスの場合、QR リーダーをインストールするように求められます。 Android 9 以降のデバイスの場合、QR リーダーが既にインストールされています。
 3. QR リーダーを使用して登録プロファイルの QR コードをスキャンし、画面の指示に従って登録します。
 

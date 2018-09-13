@@ -1,11 +1,11 @@
 ---
-title: 会社所有または会社提供の macOS デバイスを管理対象に登録する | Microsoft Docs
+title: 組織提供の macOS デバイスを管理対象に登録する | Microsoft Docs
 description: 組織が購入して提供している macOS デバイスを Intune に登録する方法について説明します。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/24/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,26 +17,26 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 272a82f7d3d62d117fa5506ccf446b3169ff514f
-ms.sourcegitcommit: bb56ada81e6d4950f130415918c4acc455bb52dd
+ms.openlocfilehash: a5808a0ac80390b76058827d2ca0870249b043b9
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43016229"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241832"
 ---
-# <a name="get-your-company-owned-macos-device-managed"></a>会社所有の macOS デバイスを管理対象にする
+# <a name="enroll-your-organization-provided-macos-device-in-management"></a>組織から提供された macOS デバイスを管理登録する
 
-新しい macOS デバイスを Intune で自動的に管理されるようにする方法について説明します。
+新しい macOS デバイスを Intune で管理する方法について説明します。  
 
-職場または学校が所有するデバイスは、ユーザーに提供される前に既に構成されていることがよくあります。 ユーザーが初めてデバイスの電源を入れてサインインすると、組織から事前構成済みの設定がデバイスに送信されます。 デバイスのセットアップが完了すると、職場または学校のリソースにアクセスできるようになります。 
+職場または学校から支給されるデバイスは多くの場合、受け取る前に事前構成されています。 初めてデバイスの電源を入れてサインインすると、事前構成済みの設定が組織からデバイスに送信されます。 デバイスのセットアップが完了すると、職場または学校のリソースにアクセスできるようになります。 
 
 管理のセットアップを始めるには、デバイスの電源を入れて、職場または学校の資格情報でサインインします。 以下では、セットアップ アシスタントを使用する手順と表示される画面について説明します。   
 
 ## <a name="what-is-apple-dep"></a>Apple DEP とは
-会社所有のデバイスを使用している場合、Apple Device Enrollment Program (DEP) から購入されている可能性があります。 組織によっては、Apple DEP を通じて iOS デバイスまたは macOS デバイスを大量に購入することがあります。 その後、組織は Intune などの適切なモバイル デバイス管理プロバイダーでデバイスを構成して管理できます。 Apple DEP についての情報がさらに必要な管理者は、「[Apple の Device Enrollment Program を使用して macOS デバイスを自動登録する](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos)」をご覧ください。  
+組織は、*Apple Device Enrollment Program* (DEP) を利用してデバイスを購入することがあります。 Apple DEP を利用することで、組織は iOS または macOS デバイスを大量に購入できます。 その後、組織は Intune などの適切なモバイル デバイス管理プロバイダーでデバイスを構成して管理できます。 Apple DEP についての情報がさらに必要な管理者は、「[Apple の Device Enrollment Program を使用して macOS デバイスを自動登録する](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos)」をご覧ください。  
 
 ## <a name="set-up-your-macos-device"></a>macOS デバイスを設定する  
-macOS デバイスを管理対象に登録するには、次の手順のようにします。 会社所有のデバイスではなく個人所有のデバイスを使用している場合は、[個人デバイスと Bring Your Own デバイス](enroll-your-device-in-intune-macos-cp.md)に関するページをご覧ください。  
+macOS デバイスを管理対象に登録するには、次の手順のようにします。 会社支給のデバイスではなく個人所有のデバイスを使用している場合は、[個人デバイスと Bring Your Own デバイス](enroll-your-device-in-intune-macos-cp.md)に関するページをご覧ください。  
 
 1. macOS デバイスの電源を入れます。 
 2. **[Language]\(言語\)** を選択して **[Continue]\(続行\)** をクリックします。  
@@ -64,4 +64,4 @@ macOS デバイスを管理対象に登録するには、次の手順のよう�
 ## <a name="get-the-company-portal-app"></a>Intune ポータル サイト アプリを取得する      
 デバイスでアプリ ストアに移動して Intune ポータル サイト アプリを入手します。 このアプリでは、デバイスの監視、同期、追加、管理からのデバイスの削除、アプリのインストールを行うことができます。
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

@@ -15,12 +15,12 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0fb7d432edf62de48e81f65b1ac2f67c6dbad70a
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 143b4f3390d3058177f4bfde4cbfe0d210f57e86
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224955"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347918"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>ビジネス向け Microsoft ストアから購入したアプリを Microsoft Intune で管理する方法
 
@@ -47,7 +47,7 @@ ms.locfileid: "34224955"
 - この機能を使用するには、デバイスが Active Directory Domain Services またはワークプレースに参加している必要があります。
 - 登録デバイスは、1511 リリースの Windows 10 以降を使用している必要があります。
 
-さらに、ビジネス向け Microsoft ストアから同期された関連するセットとオフラインのライセンスされたアプリは、UI の単一のアプリ エントリに統合されるようになります。 個々のパッケージの展開の詳細は、すべて単一のエントリに移行されます。 Azure Portal で関連する設定を表示するには、**[Mobile Apps]** ブレードから **[アプリ ライセンス]** を選びます。
+さらに、ビジネス向け Microsoft ストアから同期された関連するセットとオフラインのライセンスされたアプリは、UI の単一のアプリ エントリに統合されるようになります。 個々のパッケージの展開の詳細は、すべて単一のエントリに移行されます。 Azure portal で関連するセットを表示するには、**[クライアント アプリ]** ブレードから **[アプリ ライセンス]** を選びます。
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>Intune にビジネス向け Microsoft ストア アカウントを関連付ける
 Intune コンソールで同期を有効にする前に、以下の手順に従って、Intune を管理ツールとして使用するようにストア アカウントを構成する必要があります。
@@ -64,8 +64,8 @@ Intune コンソールで同期を有効にする前に、以下の手順に従�
 
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
 2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3. **[Intune]** ウィンドウで、**[モバイル アプリ]** を選択します。
-1. **[モバイル アプリ]** ウィンドウで、**[セットアップ]** > **[ビジネス向け Microsoft ストア]** の順に選択します。
+3. **[Intune]** ウィンドウで、**[クライアント アプリ]** を選択します。
+1. **[クライアント アプリ]** ウィンドウで、**[セットアップ]** > **[ビジネス向け Microsoft Store]** の順に選択します。
 2. **[有効にする]** をクリックします。
 3. ビジネス向け Microsoft ストアにまだサインアップしていない場合は、前に詳しく説明したように、サインアップ用のリンクをクリックしてサインアップし、アカウントを関連付けます。
 5. **[言語]** ドロップダウン リストで、Azure Portal で表示するビジネス向け Microsoft ストアのアプリに使用する言語を選択します。 アプリは、どの言語を使用して表示するかに関係なく、使用可能なエンド ユーザーの言語でインストールされます。
@@ -73,7 +73,7 @@ Intune コンソールで同期を有効にする前に、以下の手順に従�
 
 ## <a name="synchronize-apps"></a>アプリを同期する
 
-1. **[モバイル アプリ]** ワークロードで、**[セットアップ]** > **[ビジネス向け Microsoft ストア]** の順に選択します。
+1. **[クライアント アプリ]** ワークロードで、**[セットアップ]** > **[ビジネス向け Microsoft Store]** の順に選択します。
 2. **[同期]** をクリックして、Microsoft ストアから購入したアプリを Intune に取り込みます。
 
 ## <a name="assign-apps"></a>アプリを割り当てる

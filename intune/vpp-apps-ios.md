@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 115486f02a86616fdf2c340fa7e0e2ff6e505afa
-ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
+ms.openlocfilehash: cbe9f28b66031f6eddef4804c157f01ca79ad81d
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42823071"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347520"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Volume Purchase Program で購入した iOS アプリを Microsoft Intune で管理する方法
 
@@ -83,9 +83,9 @@ iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purc
 
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
 2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-1.  **[Intune]** ウィンドウで、**[セットアップ]** の **[モバイル アプリ]** > **[iOS VPP トークン]** を選択します。
-2.  VPP トークンの一覧ウィンドウで、**[作成]** を選択します。
-4. **[VPP トークンの作成]** ウィンドウで、次の情報を指定します。
+3.  **[Intune]** ウィンドウで、**[セットアップ]** の **[クライアント アプリ]** > **[iOS VPP トークン]** の順に選択します。
+4.  VPP トークンの一覧ウィンドウで、**[作成]** を選択します。
+5. **[VPP トークンの作成]** ウィンドウで、次の情報を指定します。
     - **[VPP トークン ファイル]** - サインアップしていない場合は、ビジネス向け Volume Purchase Program または教育向けプログラムにサインアップします。 サインアップした後、アカウントの Apple VPP トークンをダウンロードし、ここで選択します。
     - **[Apple ID]** - Volume Purchase Program に関連付けられているアカウントの Apple ID を入力します。
     - **[Country/Region]\(国/地域\)** - VPP 国別ストアを選びます。  指定された VPP 国別ストアにある全ロケールに対応した VPP アプリが、Intune によって同期されます。
@@ -93,9 +93,10 @@ iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purc
         > 国を変更すると、このトークンで作成されたアプリが Apple サービスと次に同期するときに、アプリのメタデータとストアの URL が更新されます。 新しい国別ストアに存在しない場合、アプリは更新されません。
 
     - **[VPP アカウントの種類]** - **[ビジネス]** または **[教育]** を選択します。
-    - **アプリの自動更新** - **[オン]** か **[オフ]** を選択し、自動更新を有効/無効にします。 有効にすると、Intune は、デバイスのチェックイン時に Intune サービスを介し、指定されたトークンに対象に購入されたすべてのアプリを更新します。
-アプリ ストア内の VPP アプリ更新プログラムを検出し、デバイスのチェックイン時に自動的にデバイスにプッシュします。
-4. 完了したら、**[作成]** を選択します。
+    - **アプリの自動更新** - **[オン]** か **[オフ]** を選択し、自動更新を有効/無効にします。 有効にすると、アプリ ストア内の VPP アプリ更新プログラムが Intune によって検出され、デバイスのチェックイン時に自動的にデバイスにプッシュされます。
+        > [!NOTE]
+        > アプリの自動更新は、iOS バージョン 11.0 以上のデバイスとユーザー ライセンスされたアプリの両方で機能します。
+6. 完了したら、**[作成]** を選択します。
 
 トークンがトークンの一覧ウィンドウに表示されます。
 
@@ -103,7 +104,7 @@ iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purc
 
 ## <a name="to-assign-a-volume-purchased-app"></a>ボリューム購入アプリを割り当てるには
 
-1.  **[Intune]** ウィンドウの **[管理]** で、**[モバイル アプリ]** > **[アプリ]** の順に選択します。
+1.  **[Intune]** ウィンドウの **[管理]** で、**[クライアント アプリ]** > **[アプリ]** の順に選択します。
 2.  アプリの一覧ウィンドウで、割り当てるアプリを選択し、**[割り当て]** を選択します。
 3.  ***[アプリ名*** - **割り当て]** ウィンドウで **[グループの追加]** を選択し、**[グループの追加]** ウィンドウで **[割り当ての種類]** を選択して、アプリを割り当てる Azure AD ユーザーまたはデバイス グループを選択します。
 5.  選択したグループごとに、次の設定を選択します。
@@ -153,9 +154,17 @@ iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purc
 
 Apple Volume Purchase Program ポータルから新しいトークンをダウンロードし、Intune で既存のトークンを更新すると、Apple VPP トークンを更新できます。
 
-## <a name="further-information"></a>詳細情報
+## <a name="deleting-an-ios-vpp-app"></a>iOS VPP アプリの削除
+
+現在、Microsoft Intune から iOS VPP アプリを削除することはできません。
+
+## <a name="additional-information"></a>追加情報
 
 対象となるデバイスを持つユーザーが初めて VPP アプリをデバイスにインストールしようとすると、Apple Volume Purchase Program に参加するように求められます。 アプリのインストールを実行する前に、このプログラムに参加する必要があります。 Apple Volume Purchase Program への参加招待を行うには、ユーザーが iOS デバイスで iTunes アプリを使用できる必要があります。 iTunes Store アプリを無効にするようにポリシーを設定した場合、VPP アプリのユーザーベース ライセンスは機能しません。 この問題を解決するには、ポリシーを削除して iTunes アプリを許可するか、デバイス ベースのライセンスを使用します。
+
+Apple では、VPP トークンを作成および更新するために直接サポートが提供されます。 詳細については、Applr のドキュメントの一部である「[Volume Purchase Program (VPP) でユーザにコンテンツを配布する](https://go.microsoft.com/fwlink/?linkid=2014661)」を参照してください。 
+
+**[外部 MDM に割り当てられています]** が Intune ポータルで指定されている場合は、お客様 (管理者) は Intune で VPP トークンを使用する前に、サード パーティの MDM から VPP トークンを削除する必要があります。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

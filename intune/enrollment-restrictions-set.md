@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 08/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa91e0c0adcd1182f82c4a09746f154302fae326
-ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
+ms.openlocfilehash: 76c0b96a1759caad4a1052a7233c7dcc8cecfa3b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "40251524"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313719"
 ---
 # <a name="set-enrollment-restrictions"></a>登録制限を設定する
 
@@ -35,15 +35,15 @@ ms.locfileid: "40251524"
 
 - 登録されるデバイスの最大数。
 - 登録できるデバイスのプラットフォーム:
-  - Android。
-  - Android 仕事用プロファイル。
-  - iOS。
-  - macOS。
-  - 使用できるようになります。
+  - Android
+  - Android の仕事用プロファイル
+  - iOS
+  - macOS
+  - Windows
 - iOS、Android、Android 仕事用プロファイル、および Windows のプラットフォームのオペレーティング システム バージョン。 (使用できる Windows のバージョンは 10 のみです。 Windows 8.1 が許可される場合は、空白のままにしておきます)。
   - 最小バージョン。
   - 最大バージョン。
-- 個人所有デバイスを制限します (iOS、Android、Android 仕事用プロファイル、macOS のみ)。
+- 個人所有デバイスを制限します (iOS、Android、Android 仕事用プロファイル、macOS、Windows のみ)。
 
 ## <a name="default-restrictions"></a>既定の制限
 
@@ -66,28 +66,46 @@ ms.locfileid: "40251524"
 
 ## <a name="set-device-type-restrictions"></a>デバイスの種類の制限を設定する
 
-デバイスの種類の制限に対する設定は、次の手順で変更することができます。
+デバイスの種類の制限に対する設定は以下の手順で変更できます。 この制限は、既に登録されているデバイスには適用されません。 [Intune PC エージェント](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune.md)で登録されているデバイスはこの機能でブロックできません。
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** を選択し、**Intune** を検索して **[Intune]** を選択します。
 3. **[デバイスの登録]** > **[登録の制限]** を選択します。
-4. **[デバイスの種類の制限]** で、設定する制限を選択します。
-5. 制限の名前 (既定の制限の場合は **[すべてのユーザー]**) で、**[プラットフォーム]** を選択します。 一覧されたプラットフォームごとに、**[許可]** または **[ブロック]** を選択します。
-6. **[保存]** を選択します。
-7. 制限の名前 (既定の制限の場合は **[すべてのユーザー]**) で、**[プラットフォーム構成]** を選択します。 次に、リストされているプラットフォームの最小および最大の **[バージョン]** を選択します。 サポートされるバージョン形式:
+4. **[デバイスの種類の制限]** で、設定する制限を選択し、**[プロパティ]** > **[プラットフォームの選択]** の順に選択します。 一覧されたプラットフォームごとに、**[許可]** または **[ブロック]** を選択します。
+    ![スクリーンショット。プラットフォームを許可またはブロックします。](media/enrollment-restrictions-set/platform-allow-block.png)
+5. **[OK]** を選びます。
+6. **[プラットフォームの構成]** を選択します。
+    ![スクリーンショット。プラットフォームを構成します。](media/enrollment-restrictions-set/configure-platforms.png)
+7. リストされているプラットフォームの最小および最大の **[バージョン]** を選択します。 サポートされるバージョン形式:
     - Android 仕事用プロファイルは major.minor.rev.build をサポートしています。
-    - iOS では major.minor.rev がサポートされます。
+    - iOS では major.minor.rev がサポートされます。オペレーティング システムのバージョンは、Device Enrollment Program、Apple School Manager、または Apple Configurator アプリを使用して登録する Apple デバイスには適用されません。
     - Windows では major.minor.rev.build がサポートされます (Windows 10 の場合のみ)。
-  オペレーティング システムのバージョンは、Device Enrollment Program、Apple School Manager、または Apple Configurator アプリを使用して登録する Apple デバイスには適用されません。
-8. 一覧されているプラットフォームごとに、**個人所有**のデバイスを**許可**するか**ブロック**するかを指定します。
-    ![個人所有設定の構成を示す既定デバイス プラットフォーム構成のデバイス制限ワークスペース](media/device-restrictions-platform-configurations.png)
-9. **[保存]** を選択します。
+8. 一覧にあるプラットフォームごとに、**個人所有**のデバイスを**許可**するか**ブロック**するかを選択します。
+9. **[OK]** を選びます。
 
+### <a name="android-device-type-restrictions"></a>Android デバイスの種類の制限
+- 個人所有の Android デバイスの登録をブロックした場合でも、個人所有の Android 仕事用プロファイル デバイスは登録できます。
+- 既定では、Android 仕事用プロファイル デバイス設定は Android デバイスの設定と同じになります。 Android 仕事用プロファイル設定の変更後は、同じではなくなります。
+- 個人の Android 仕事用プロファイルの登録をブロックした場合、会社の Android デバイスのみを Android 仕事用プロファイルとして登録できます。
 
->[!NOTE]
->- 個人所有の Android デバイスの登録をブロックした場合でも、個人所有の Android 仕事用プロファイル デバイスは登録できます。
->- 既定では、Android 仕事用プロファイル デバイス設定は Android デバイスの設定と同じになります。 Android 仕事用プロファイル設定の変更後は、同じではなくなります。
->- 個人の Android 仕事用プロファイルの登録をブロックした場合、会社の Android デバイスのみを Android 仕事用プロファイルとして登録できます。
+### <a name="windows-device-type-restrictions"></a>Windows デバイスの種類の制限
+Windows プラットフォーム デバイスの種類の制限を **[ブロック]** に設定すると、Intune では、新しい Windows 登録要求がすべて会社の登録として認証されていることが確認されます。 無許可の登録はブロックされます。
+
+次の方法は、Windows の会社登録として認証されたものと見なされます。
+ - 登録ユーザーは[デバイス登録マネージャー アカウント]( device-enrollment-manager-enroll.md)を使用しています。
+- デバイスは [Windows AutoPilot](enrollment-autopilot.md) 経由で登録されます。
+- デバイスの IMEI 番号が **[デバイスの登録]** > **[[業務用デバイスの ID]](corporate-identifiers-add.md)** に記載されています。 (Windows Phone 8.1 ではサポートされていません。)
+- デバイスが[一括プロビジョニング パッケージ](windows-bulk-enroll.md)経由で登録されます。
+- デバイスが[共同管理用の SCCM からの自動登録](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md)経由で登録されます。
+ 
+次の登録は Intune で会社として見なされますが、Intune 管理者のデバイスごとのコントロールがないため、ブロックされます。
+ - [自動 MDM 登録](windows-enroll.md#enable-windows-10-automatic-enrollment)と [Windows セットアップ中の Azure Active Directory 参加](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)。
+- [自動 MDM 登録](windows-enroll.md#enable-windows-10-automatic-enrollment)と [Windows 設定からの Azure Active Directory 参加](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md)。
+ 
+次の個人登録方法もブロックされます。
+- [自動 MDM 登録](windows-enroll.md#enable-windows-10-automatic-enrollment)と [Windows 設定からの職場アカウントの追加](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)。
+- Windows 設定からの [MDM 登録のみ]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device)オプション。
+
 
 ## <a name="set-device-limit-restrictions"></a>デバイス数の制限を設定する
 

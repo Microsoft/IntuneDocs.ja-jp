@@ -15,12 +15,12 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b65daa6e098954d88c502114fc7a33ad4cf5efcd
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: faa8918441bd705875fcdc72d3717af001ab2b85
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909288"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329872"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Intune で Android 仕事用プロファイルのデバイスにアプリを割り当てる
 
@@ -59,18 +59,18 @@ Intune と Android 仕事用プロファイルが Azure Portal の **[デバイ�
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>Intune で Managed Google Play のアプリを同期する
 
-ストアのアプリを承認しても、**[モバイル アプリ]** ワークロードの **[ライセンスされたアプリ]** ノードに表示されない場合は、次の手順で強制的に即時に同期します。
+ストアのアプリを承認しても、**[クライアント アプリ]** ワークロードの **[ライセンスされたアプリ]** ノードに表示されない場合は、次の手順で強制的に即時に同期します。
 
 1. [Azure ポータル](https://portal.azure.com)にサインインします。
 2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3. **[Intune]** ウィンドウで、**[モバイル アプリ]** を選択します。
-4. **[モバイル アプリ]** ワークロード ウィンドウの **[設定]** で **[Managed Google Play]** を選択します。
+3. **[Intune]** ウィンドウで、**[クライアント アプリ]** を選択します。
+4. **[クライアント アプリ]** ワークロード ウィンドウの **[セットアップ]** で **[Managed Google Play]** を選択します。
 5. **[Managed Google Play]** ウィンドウで、**[更新]** を選択します。  
     ページで、前回の同期の時刻と状態が更新されます。
-6. **[モバイル アプリ]** ワークロード ウィンドウで、**[アプリ]** を選択します。  
+6. **[クライアント アプリ]** ワークロード ウィンドウで、**[アプリ]** を選択します。  
     新しく使用可能になった Managed Google Play アプリが表示されます。
 
-アプリが **[モバイル アプリ]** ワークロード ウィンドウの **[アプリ ライセンス]** ノードに表示される場合は、[他のアプリの割り当てと同様の方法でアプリを割り当てることができます](/intune-azure/manage-apps/deploy-apps)。 ユーザーのグループに対してのみアプリを割り当てることができます。
+アプリが **[クライアント アプリ]** ワークロード ウィンドウの **[アプリ ライセンス]** ノードに表示される場合は、[他のアプリの割り当てと同様の方法でアプリを割り当てることができます](/intune-azure/manage-apps/deploy-apps)。 ユーザーのグループに対してのみアプリを割り当てることができます。
 
 アプリを割り当てると、アプリは対象のデバイスにインストールされます。 デバイスのユーザーがインストールの承認を求められることはありません。
 

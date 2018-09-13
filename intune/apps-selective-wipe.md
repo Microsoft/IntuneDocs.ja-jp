@@ -15,12 +15,12 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76c394be6130a874e7ce2fb1b6e3c244cad98f80
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 66f26811f5021b71c62a2e994c73e2144409d199
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905276"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329547"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Intune で管理されているアプリから会社のデータをワイプする方法
 
@@ -40,7 +40,7 @@ ms.locfileid: "37905276"
 
 1.  [Azure ポータル](https://portal.azure.com)にサインインします。
 
-2.  **[すべてのサービス]** を選択し、フィルター ボックスに「**Intune**」と入力して、**[Intune]** を選択します。 Intune ウィンドウが開いたら、**[モバイル アプリ]** ウィンドウを選びます。
+2.  **[すべてのサービス]** を選択し、フィルター ボックスに「**Intune**」と入力して、**[Intune]** を選択します。 Intune ウィンドウが開いたら、**[クライアント アプリ]** ウィンドウを選びます。
 
     ![Microsoft Intune ウィンドウのスクリーンショット](./media/apps-selective-wipe01.png)
 

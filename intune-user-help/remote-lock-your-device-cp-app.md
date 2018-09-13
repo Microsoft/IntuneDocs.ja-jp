@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/02/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4774cdc54a526f25b006c0c3d1a745ab96005c3a
-ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
+ms.openlocfilehash: 5b3fbd677eea9143bf5cb297253303330129ef25
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33676632"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148580"
 ---
-# <a name="lock-your-device-from-company-portal-app-for-windows-10"></a>Windows 10 用ポータル サイト アプリからデバイスをロックする
+# <a name="lock-your-device-from-the-company-portal-app-for-windows-10"></a>Windows 10 用ポータル サイト アプリからデバイスをロックする
 
-Windows 10 用ポータル サイト アプリから紛失または盗難にあったデバイスをリモートでロックします。 ポータル サイト アプリがデバイスでサポートされている場合は、デバイスがどこにあっても、ポータル サイト アプリによってデバイスの画面がロックされます。 ロックを解除するには、パスコードが必要になります。
+Windows 10 用ポータル サイト アプリから紛失または盗難にあったデバイスをリモートでロックします。 デバイスでサポートされている場合は、デバイスがどこにあっても、この設定によってデバイスの画面がロックされます。 デバイスのロックを解除してもう一度使用するには、正しいパスコードを入力する必要があります。
 
 次を実行しているデバイス上でリモート ロックがサポートされます。
 
@@ -43,4 +43,4 @@ Windows 10 用ポータル サイト アプリから紛失または盗難にあ�
    ![ポータル サイト アプリ、[デバイスの詳細] ページ、リモート ロックの確認プロンプトのスクリーンショット。](./media/1804_remote_lock_Windows_CPapp_06.png)  
 4. デバイスを検索する場合は、パスコードを入力してロックを解除します。  
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://portal.manage.microsoft.com#HelpDeskDialog)をご確認ください。
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

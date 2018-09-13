@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16b8067610e21652a40cb87302d8f1f3d05de342
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: a658182800f480f27097e078f28adc95c35aa3ea
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117924"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313180"
 ---
 # <a name="see-device-details-in-intune"></a>Intune でデバイスの詳細を確認する
 
@@ -34,11 +34,14 @@ ms.locfileid: "39117924"
 2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
 3. **[デバイス]** > **[すべてのデバイス]** を選択します。次に、一覧表示されているデバイスのいずれかを選択して、その詳細を開きます。
 
-   - **[概要]** にはデバイス名が表示され、デバイスが BYOD (Bring-Your-Own-Device ) であるかどうかや、いつチェックインされたかなど、デバイスの主なプロパティがいくつか一覧表示されます。 **[詳細]** を選択して、次の操作を行います。
-     - 会社データの削除
-     - デバイスの削除
-     - デバイスのリモート ロック
-     - 消去
+   - **[概要]** にはデバイス名が表示され、デバイスが BYOD (Bring-Your-Own-Device ) であるかどうかや、いつチェックインされたかなど、デバイスの主なプロパティがいくつか一覧表示されます。 デバイスに対して以下の操作を実行できます。
+      - [削除](devices-wipe.md#retire)
+        - [ワイプ](devices-wipe.md#wipe)
+        - [リモート ロック](device-remote-lock.md)
+        - [同期デバイス](device-sync.md)
+        - [パスコードのリセット](device-passcode-reset.md)
+        - [再起動](device-restart.md) (Windows のみ)
+        - [新たに開始](device-fresh-start.md) (Windows のみ)
      - リモート アシスタンス セッションの開始
    - **[プロパティ]** を使用して、[作成するデバイス カテゴリ](device-group-mapping.md)を割り当て、デバイスの所有権を個人のデバイス、または会社のデバイスに変更します。
    - **[ハードウェア]** にはデバイスに関する多くの詳細が含まれます。たとえば、デバイス ID、オペレーティング システムとバージョン、記憶域スペース、モデルと製造元、条件付きアクセスの設定などの詳細です。
