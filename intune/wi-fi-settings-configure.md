@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2dba6e0d1c50790c8c2c2bf287695ab67fdb972
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: df2e2f81008c6dedf5660a8a9eff4bf2cfe2ec6b
+ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905333"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46505735"
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Microsoft Intune で Wi-Fi の設定を構成する方法
 
@@ -62,14 +62,12 @@ Windows 8.1、Windows 10、Windows 10 Mobile、Windows Holographic for Business 
     - **Windows 8.1 以降**
     - **Windows 10 以降**
 
-   > [!IMPORTANT]
-   > Windows 10 を実行するデバイス用のプロファイルを作成する場合は (Windows Holographic for Business など)、**Windows 8.1 以降の**プラットフォームを選ぶ必要があります。 **Windows 10 以降**のプラットフォームには、Wi-Fi プロファイルの種類は含まれません。 
 
 6. Apple デバイスまたは Android デバイスの場合、**[WiFi の種類]** ドロップダウン リストで、**[Basic]** または **[Enterprise]** を選びます。 **[Basic]** を使うと、ネットワーク名や SSID などの基本的な機能を指定できます。 **[Enterprise]** を使用すると、詳細情報 (たとえば、Wi-Fi ネットワークで拡張認証プロトコル (EAP) を使用している場合は EPA) を指定できます。 
 
    **[Wi-Fi インポート]** プロファイル (Windows 8.1 以降の場合) を使うと、以前に別のデバイスからエクスポートした Wi-Fi 設定を XML ファイルとしてインポートすることができます。
 1. 選択したプラットフォームによって構成できる設定が異なります。 各プラットフォームの詳細な設定については、次のいずれかのトピックを参照してください。
-    - [Android と Android 仕事用プロファイルの設定](wi-fi-settings-android.md)
+    - [Android および Android 仕事用プロファイルの設定](wi-fi-settings-android.md)
     - [iOS の設定](wi-fi-settings-ios.md)
     - [macOS の設定](wi-fi-settings-macos.md)
     - [Windows 8.1 以降の設定](wi-fi-settings-import-windows-8-1.md) (Windows Holographic for Business を含む)

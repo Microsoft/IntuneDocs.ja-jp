@@ -14,12 +14,12 @@ ms.assetid: 1ba77bc7-505e-4eca-a49e-dcdaa75d0043
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9bead87f80cf8d1f102f396bdd6c9573786c1b9e
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: b9efb60d169ba6f88b4765d3fc651f3a0596b230
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34474634"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028581"
 ---
 # <a name="view-and-correct-personal-data"></a>個人データの表示と修正
 
@@ -33,7 +33,7 @@ Intune 管理者は、自身のアクセス許可に基づいていくつかの�
 管理者は Intune UI のさまざまなブレードでエンド ユーザーの個人情報を見ることができます。 次の記事では、管理者がアクセスできる情報とできない情報について説明しています。
 - 「[Intune でデバイスの詳細を確認する](device-inventory.md)」では、エンド ユーザーのデバイスに関する詳細を確認する方法について説明しています。
 - 「[Microsoft Intune でアプリの情報と割り当てを監視する](apps-monitor.md)」では、エンド ユーザーのデバイスにインストールされているアプリに関する詳細を表示する方法について説明しています。
-- 「[デバイスを登録した場合に会社が確認できる情報](https://docs.microsoft.com/en-us/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)」の記事では、エンド ユーザーに自社で表示できるデータまたは表示できないデータのリストを提供します。 収集するデータの種類とその理由をユーザーに明確に伝えることをお勧めします。 この記事は、その透明性のための第一歩となります。
+- 「[デバイスを登録した場合に会社が確認できる情報](https://docs.microsoft.com/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)」の記事では、エンド ユーザーに自社で表示できるデータまたは表示できないデータのリストを提供します。 収集するデータの種類とその理由をユーザーに明確に伝えることをお勧めします。 この記事は、その透明性のための第一歩となります。
 
 ### <a name="who-can-view-the-data"></a>データを表示できる人
 

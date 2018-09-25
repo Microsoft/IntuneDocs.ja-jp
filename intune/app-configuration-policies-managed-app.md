@@ -15,12 +15,12 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cad4e1d6bcb47981dfb40a1146a3f5148724e08a
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 084b7bead6b294cfbfa94c9b18f539dd0e5db2a8
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330094"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028598"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>デバイス登録なしで管理対象アプリ用アプリ構成ポリシーを追加する
 
@@ -43,7 +43,7 @@ ms.locfileid: "43330094"
 7. アプリでサポートする構成設定ごとに、**[名前]** と **[値]** を入力し、省略記号 (**[...]**) を選択します。  
     構成を削除するには、省略記号 (**[...]**) を選択し、**[削除]** を選択します。  
     
-Intune App SDK 対応のアプリでは、キー/値のペアの構成がサポートされます。 サポートされるキーと値の構成の詳細については、各アプリのドキュメントを参照してください。 さらに、アプリケーションから生成されるデータが動的に設定されるトークンを使用できます。 Outlook for iOS アプリ構成ポリシー設定の詳細については、「[Microsoft Intune で Outlook for iOS のアプリ構成を管理する](https://technet.microsoft.com/en-us/library/mt813789(v=exchg.150).aspx)」を参照してください。
+Intune App SDK 対応のアプリでは、キー/値のペアの構成がサポートされます。 サポートされるキーと値の構成の詳細については、各アプリのドキュメントを参照してください。 さらに、アプリケーションから生成されるデータが動的に設定されるトークンを使用できます。 Outlook for iOS アプリ構成ポリシー設定の詳細については、「[Microsoft Intune で Outlook for iOS のアプリ構成を管理する](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx)」を参照してください。
 
 ## <a name="configuration-values-for-using-tokens"></a>トークンを使用する場合の構成値
 
