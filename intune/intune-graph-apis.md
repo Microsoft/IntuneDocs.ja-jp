@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3ca5b09d415466d2ab6ce2f70a53f7fd8444d28f
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 07c07caa7d64e18aae8b44810a4fdcb2b645b9fa
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31835552"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562937"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD を使用して Microsoft Graph の Intune API にアクセスする方法
 
@@ -162,7 +162,7 @@ __Microsoft Intune の構成の読み取り__ | [DeviceManagementServiceConfig.R
 - **[アクセスを有効にする]** 設定: __Microsoft Intune アプリの読み取り__
 
 - 次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。
-    - モバイル アプリ
+    - クライアント アプリ
     - モバイル アプリ カテゴリ
     - アプリ保護ポリシー
     - アプリの構成
@@ -175,7 +175,7 @@ __Microsoft Intune の構成の読み取り__ | [DeviceManagementServiceConfig.R
 
 - また、次のエンティティに対する変更を許可します。
 
-    - モバイル アプリ
+    - クライアント アプリ
     - モバイル アプリ カテゴリ
     - アプリ保護ポリシー
     - アプリの構成
@@ -204,7 +204,7 @@ __Microsoft Intune の構成の読み取り__ | [DeviceManagementServiceConfig.R
 
 - **[アクセスを有効にする]** 設定: __Microsoft Intune デバイスでユーザーに影響を与えるリモート操作を実行する__
 
-- 管理されたデバイスへの次のリモート操作を許可します。
+- マネージド デバイスへの次のリモート操作を許可します。
     - インベントリから削除
     - ワイプ
     - パスコードのリセット/復旧
@@ -219,7 +219,7 @@ __Microsoft Intune の構成の読み取り__ | [DeviceManagementServiceConfig.R
 - **[アクセスを有効にする]** 設定: __Microsoft Intune デバイスの読み取り__
 
 - 次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。
-    - 管理されたデバイス
+    - マネージド デバイス
     - デバイスのカテゴリ
     - 検出されたアプリ
     - リモート操作
@@ -232,7 +232,7 @@ __Microsoft Intune の構成の読み取り__ | [DeviceManagementServiceConfig.R
 - __DeviceManagementManagedDevices.Read.All__ と同じ操作を許可します。
 
 - また、アプリでは次のエンティティを作成、削除、変更できます。
-    - 管理されたデバイス
+    - マネージド デバイス
     - デバイスのカテゴリ
 
 - 次のリモート操作も実行できます。

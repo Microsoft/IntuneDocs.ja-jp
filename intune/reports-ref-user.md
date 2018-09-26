@@ -6,7 +6,7 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: efeaacffe996701f560af4cf077ee9fd23041545
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: b6161540b4b05ebab35942a1657adc30bce6afdb
+ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223630"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727477"
 ---
 # <a name="reference-for-user-entity"></a>User エンティティのリファレンス
 
@@ -38,7 +38,7 @@ ms.locfileid: "34223630"
 | UserId |ユーザーを示す一意識別子 - UserKey と似ていますが、ナチュラル キーです。 |b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail |ユーザーの電子メール アドレス。 |John@constoso.com |
 | UPN | ユーザーのユーザー プリンシパル名。 | John@constoso.com |
-| 表示名 |ユーザーの表示名。 |John |
+| DisplayName  |ユーザーの表示名。 |John |
 | IntuneLicensed |ユーザーに Intune のライセンスがあるかどうかを示します。 |真/偽 |
 | IsDeleted | そのユーザーのすべてのライセンスの期限が切れているかどうか、および、そのユーザーがそのため Intune から削除されたかどうかを示します。 1 つのレコードでは、このフラグは変更されません。 代わりに、新しいユーザー状態用の新しいレコードが作成されます。 |真/偽 |
 | StartDateInclusiveUTC |IsDeleted = FALSE の場合、ユーザーがライセンスを割り当てられ、Intune で存在し始めたときの UTC 日時。 IsDeleted = TRUE の場合、ユーザーのライセンスの期限が切れ、Intune から削除されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
