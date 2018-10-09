@@ -3,8 +3,8 @@ title: Microsoft Intune で Point SandBlast MTD を確認する
 titlesuffix: ''
 description: モバイル デバイスから会社のリソースへのアクセスを制御するための Intune と Check Point SandBlast Mobile Threat Defense の統合について説明します。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a0dad532511b87b7856bb2e293707ac5311eb773
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5766c4ebe7b261356248b00d0ca2d8937d3db79a
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "29776007"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231526"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Intune との Check Point SandBlast Mobile Threat Defense コネクタ
 

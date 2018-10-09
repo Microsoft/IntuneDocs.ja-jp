@@ -3,8 +3,8 @@ title: Microsoft Intune との Lookout 統合を設定する
 titlesuffix: ''
 description: モバイル デバイスから会社のリソースへのアクセスを制御するための Intune と Lookout Mobile Threat Defense の統合について説明します。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b34bde9ef7817310c25b9a699fa4e18d3151d944
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: fe8a55153ccc2b28c23ec2f32a4285d20afaaf6a
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31029867"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48232184"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune との Lookout Mobile Threat Defense 統合を設定する
 
@@ -88,12 +88,12 @@ Lookout を Intune に統合するために、Lookout Mobility Endpoint Security
     > [!NOTE] 
     > Azure AD の登録グループに属するユーザーが有する、Lookout のサポートを受け Intune に登録されているデバイスのうち、識別されてサポートされているものはすべて、Lookout MTD コンソールでのアクティブ化の対象になります。
 
-2. [Lookout コンソール](https://aad.lookout.com)の **[System]** \(システム) モジュールで、**[Connectors]** \(コネクタ) タブを選択し、**[Enrollment Management]** \(登録管理) を選択し、Lookout に登録するデバイスのユーザー セットを定義します。 Azure AD セキュリティ グループの登録の **[表示名]** を追加します。
+2. [Lookout コンソール](https://aad.lookout.com)の **[System]\(システム\)** モジュールで、**[Connectors]\(コネクタ)** タブを選択し、**[Enrollment Management]\(登録管理\)** を選択し、Lookout に登録するデバイスのユーザー セットを定義します。 Azure AD セキュリティ グループの登録の **[表示名]** を追加します。
 
     ![Intune コネクタ登録ページのスクリーンショット](./media/lookout-mtp-enrollment.png)
 
     >[!IMPORTANT]
-    > Azure Portal のセキュリティ グループの **[プロパティ]** に表示される **[表示名]** は大文字と小文字が区別されます。 次の画像のように、セキュリティ グループの **[表示名]** は大文字と小文字が混在していますが、タイトルはすべて小文字です。 Lookout コンソールでは、セキュリティ グループの **[表示名]** の大文字/小文字と一致させます。
+    > Azure Portal のセキュリティ グループの **[プロパティ]** に表示される **[表示名]** は大文字と小文字が区別されます。 次の画像のように、セキュリティ グループの **[Display Name]\(表示名\)** は大文字と小文字が混在していますが、タイトルはすべて小文字です。 Lookout コンソールでは、セキュリティ グループの **[表示名]** の大文字/小文字と一致させます。
     >![Azure Portal の Azure Active Directory サービスの [プロパティ] ページのスクリーンショット](./media/aad-group-display-name.png)
 
     >[!NOTE] 

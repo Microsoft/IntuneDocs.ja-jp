@@ -3,8 +3,8 @@ title: Exchange の条件付きアクセス ポリシーを作成する
 titlesuffix: Microsoft Intune
 description: Intune で Exchange On-Premises と従来の Exchange Online Dedicated の条件付きアクセスを構成します。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fd82cf211360e77b17f8ea915c13719b8ab3408
-ms.sourcegitcommit: cd97505d6f5dc54db7f35a691376bcbf6f36ac9d
+ms.openlocfilehash: d44b7483d65eeb7b2a39783fb113c444184db4f3
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39323244"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48232224"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange On-Premises と従来の Exchange Online Dedicated の条件付きアクセス ポリシーを作成する
 

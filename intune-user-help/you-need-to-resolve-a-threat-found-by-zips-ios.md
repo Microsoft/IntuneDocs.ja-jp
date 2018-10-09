@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 9cb87541e45591ae8c4d1e8151fdb781ebd0b364
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 8b77eeb57bb3887e28242ca845ec6e83d4e9a817
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148142"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863075"
 ---
 # <a name="resolve-a-threat-found-by-zimperium-zips"></a>Zimperium zIPS によって検出された脅威を解決する
 
@@ -37,12 +37,16 @@ Zimperium zIPS は Mobile Threat Defender サービスであり、iOS デバイ�
 ## <a name="troubleshoot-virus-or-security-threat"></a>ウイルスやセキュリティ上の脅威をトラブルシューティングする  
 ウイルスやセキュリティ上の脅威が検出された場合は、Zimperium zIPS により、組織のアクセス ポリシーに従って制限事項が適用されます。 会社のアクセス ポリシーにより、お使いのデバイスから職場のネットワーク、アプリ、電子メールにアクセスできなくなる可能性があります。  
 
-Zimperium zIPS には、失ったアクセスを回復するためのアクションの実行を求めるメッセージが表示されます。 脅威を選択し、アプリ内の指示に従って解決してください。  
+Zimperium zIPS には、失ったアクセスを回復するためのアクションの実行を求めるメッセージが表示されます。 脅威を選択し、アプリ内の指示に従って解決してください。
 
-## <a name="resolve-an-app-threat"></a>アプリの脅威を解決する
+アプリが会社の MDM プロバイダーと統合されているため、ポータル サイト アプリには制限付きアクセスに関する警告も表示されます。 警告により、ウイルスやセキュリティ上の脅威を解決するために Zimperium zIPS を開くように指示されます。  
+
+  ![Zimperium zIPS の警告を表示する、ポータル サイトのデバイス ページのスクリーンショット例。](./media/CP-lookout-virus-banner-1808.png)  
+  
+## <a name="troubleshoot-an-app-threat"></a>アプリの脅威をトラブルシューティングする
 
 デバイスに対する脅威と考えられるアプリをインストールする場合、Zimperium zIPS 内に通知が示されます。 影響を受けるアプリがデバイス上に残っている場合、会社のリソースにアクセスできなくなります。  
 
 解決するには、Zimperium zIPS の脅威リストからアプリを選択します。 次に、画面上の指示に従って、アプリを削除してアンインストールします。  
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。 
+サポートが必要な場合は、 会社のサポートに問い合わせてください。 連絡先の情報は、[会社のポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)でわかります。   

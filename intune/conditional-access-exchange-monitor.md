@@ -3,8 +3,8 @@ title: Microsoft Intune で Exchange の条件付きアクセスを監視する
 titlesuffix: ''
 description: Intune Azure ポータルを使用し、Exchange On-Premises と Exchange Online の条件付きアクセス コンプライアンスを監視します。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 932dfe32c6df5741615d9db9f303aaee7785d3a3
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 2ff5686e2d83831259bd21bee164b3c187e1c0ee
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "29775360"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231357"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Intune で Exchange On-Premises および Exchange Online の条件付きアクセス コンプライアンスを監視する
 
