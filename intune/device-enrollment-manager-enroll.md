@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce785ad7898f9e792feeadcd1623bd0989f0d6d0
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: 8e0d8d6aba74a37d1c07fa8445aa98adf5943be2
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255557"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141611"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>デバイス登録マネージャー アカウントを使用してデバイスを登録する
 
@@ -53,7 +53,7 @@ DEM ユーザーができること:
   - DEM ユーザーは、会社ポータルを使用して、デバイス自体で DEM 登録のデバイスを登録解除することはできません。 Intune 管理者は登録を解除できます。
   - ポータル サイト アプリまたは Web サイトには、ローカルのデバイスのみが表示されます。
   - アプリ管理のための Apple ID 要件がユーザー単位になるため、ユーザーはユーザー ライセンスで Apple Volume Purchase Program (VPP) アプリを利用することはできません。
-  - (iOS のみ) DEM を利用して iOS デバイスを登録する場合は、Apple Configurator、Apple Device Enrollment Program (DEP)、または Apple School Manager (ASM) を利用してデバイスを登録することはできません。
+  - (iOS のみ) DEM を利用して iOS デバイスを登録する場合は、Apple Configurator、Apple Device Enrollment Program (DEP)、または Apple School Manager (ASM) を利用してデバイスを登録することはできません。 つまり、デバイスを監視モードにすることができず、そのため、一部の構成オプションにアクセスできません。
   - (Android のみ) 1 つの DEM アカウントに登録できる Android 仕事用プロファイル デバイスの数は限られています。 DEM アカウントごとに最大 10 台の Android の仕事用プロファイル デバイスを登録できます。 この制限は、従来の Android の登録には適用されません。
   - デバイスでは、デバイス ライセンスがある場合に VPP アプリをインストールすることができます。
   - DEM の使用に Intune デバイスのライセンスは必要ありません。 [ユーザーとデバイスのライセンス](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services)の詳細についてはこちらです。

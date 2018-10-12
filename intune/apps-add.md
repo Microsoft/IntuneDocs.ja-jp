@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf6e7098462931000ce4cd5546390d27d68677f1
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 5b5395ed4095280230c9cf678395df03bbce41ea
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330162"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141679"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune にアプリを追加する
 
@@ -116,7 +116,7 @@ Intune を使用すると、展開するアプリの機能を変更すること�
 
 ### <a name="understanding-licensed-apps"></a>ライセンスされたアプリを把握する
 Web アプリ、ストア アプリ、LOB アプリに加えて、Volume Purchase Program アプリとライセンス アプリの宛先も認識する必要があります。 
-- **一般法人向けの Apple Volume Purchasing Program (iOS と MacOS)**: iOS アプリ ストアでは、社内で実行するアプリの複数のライセンスを購入できます。 複数のコピーを購入すると、会社でのアプリ管理を効率的に行うことができます。 詳細については、「[Volume Purchase Program で購入した iOS アプリを Microsoft Intune で管理する方法](vpp-apps-ios.md)」を参照してください。
+- **一般法人向けの Apple Volume Purchasing Program (iOS)**: iOS アプリ ストアでは、社内で実行するアプリの複数のライセンスを購入できます。 複数のコピーを購入すると、会社でのアプリ管理を効率的に行うことができます。 詳細については、「[Volume Purchase Program で購入した iOS アプリを Microsoft Intune で管理する方法](vpp-apps-ios.md)」を参照してください。
 - **Android 仕事用プロファイル**: Android 仕事用プロファイル デバイスにアプリを割り当てる方法は、標準の Android デバイスに割り当てる場合と異なります。 Android 仕事用プロファイルに対してインストールするアプリはすべて、Managed Google Play ストアから入手します。 ストアにサインインし、目的のアプリを検索し、アプリを承認します。 承認後、アプリが Azure Portal の **[ライセンスされたアプリ]** ノードに表示されます。他のアプリと同様にアプリの割り当てを管理できます。
 - **Microsoft Store for Business (Windows 10)**: ビジネス向け Microsoft Store では、組織用のアプリを見つけて、個別または大量に購入することができます。 Microsoft Intune にストアを接続することで、Azure Portal でボリューム購入アプリを管理することができます。 詳細については、「[ビジネス向け Microsoft Store からのアプリの管理](windows-store-for-business.md)」を参照してください。
 

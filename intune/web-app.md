@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ec483218cb86426b237c40c8831a2f0880847ade
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 7e974a17506be36c725dddfa21329269c8fcebc8
+ms.sourcegitcommit: 572287c3bb0020b6b75e4e2ac27019c20c699159
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347459"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44340271"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Web アプリを Microsoft Intune に追加する
 
@@ -62,6 +62,8 @@ Web 上のアプリへのショートカットとしてアプリを Intune に�
 
 > [!Note]
 > ユーザーは、Android デバイスに割り当てられた Web アプリを表示するには、ホーム画面に Intune ウィジェットを追加する必要があります。
+>
+> 現在、iOS デバイスへの Intune Web アプリの展開は管理プロファイルに関連付けられ、手動で削除することはできません。 Intune ポータルで展開の種類を**アンインストール**に変更することができ、そうすると Web アプリを自動的に削除することができます。 ただし、アプリ割り当て意図を**アンインストール**に変更する前に展開を削除すると、デバイスが Intune から登録解除されるまで、Web アプリは永続的にデバイス上に残っています。
 
 ## <a name="next-steps"></a>次の手順
 
