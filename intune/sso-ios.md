@@ -6,19 +6,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 010ed8511b042d6f764ba947f616d76521588f42
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: bdc7f4f8f796d04f5c709298cd654bc2cdc32d0e
+ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216260"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864610"
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>iOS 用 Microsoft Intune のデバイス シングル サインオンを構成する
 
@@ -66,7 +66,7 @@ iOS デバイスのシングル サインオンを利用するには、次の条
 
    また、**[領域]** テキスト ボックスに入力したテキストで領域を上書きすることもできます。
 
-   たとえば、Contoso にはヨーロッパ、アジア、北米などのサブ領域があり、 アジアのユーザーは SSO ペイロードを使って、アプリは *username@asia.contoso.com* の形式の UPN を要求するものとします。この場合、**[ユーザー プリンシパル名]** を選ぶと、既定で各ユーザーの領域は AAD から取得されますが、それは単に *contoso.com* のようなものかもしれません。そのため、アジアのユーザーについては、このペイロードを作成し、領域を値 *asia.contoso.com* で上書きすることができます。結果として、エンド ユーザーの UPN は、*username@contoso.com* ではなく *username@asia.contoso.com* になります。
+   たとえば、Contoso にはヨーロッパ、アジア、北米などのサブ領域があり、 アジアのユーザーは SSO ペイロードを使って、アプリは *username@asia.contoso.com* の形式の UPN を要求するものとします。 この場合、**[ユーザー プリンシパル名]** を選ぶと、既定で各ユーザーの領域は AAD から取得されますが、それは単に *contoso.com* のようなものかもしれません。 そのため、アジアのユーザーについては、このペイロードを作成し、領域を値 *asia.contoso.com* で上書きすることができます。 結果として、エンド ユーザーの UPN は、*username@contoso.com* ではなく *username@asia.contoso.com* になります。
 
 - **[デバイス ID]** を選ぶと、Intune は自動的に Intune デバイス ID を選びます。
 
@@ -84,7 +84,7 @@ iOS デバイスのシングル サインオンを利用するには、次の条
 > [!NOTE]
 > これらの URL は、適切な形式の FQDN である必要があります。 Apple で要求されている形式は `http://<yourURL.domain>` です。
 
-URL の一致パターンは、`http://` または `https://` で始まっている必要があります。 単純な文字列一致が実行されるので、URL プレフィックス `http://www.contoso.com/` は `http://www.contoso.com:80/` とは一致しません。 ただし、iOS 9.0 以降では、単一のワイルドカード \* を使用して、一致するすべての値を指定できます。 たとえば、`http://*.contoso.com/` は `http://store.contoso.com/` と `http://www.contoso.com` の両方と一致します。
+URL の一致パターンは、`http://` または `https://` で始まっている必要があります。 単純な文字列一致が実行されるので、URL プレフィックス `http://www.contoso.com/` は `http://www.contoso.com:80/` とは一致しません。 ただし、iOS 10.0 以降では、単一のワイルドカード \* を使用して、一致するすべての値を指定できます。 たとえば、`http://*.contoso.com/` は `http://store.contoso.com/` と `http://www.contoso.com` の両方と一致します。
 パターン `http://.com` はすべての HTTP URL と一致し、`https://.com` はすべての HTTPS URL と一致します。
 
 ### <a name="apps-that-will-use-single-sign-on"></a>シングル サインオンを使用するアプリ

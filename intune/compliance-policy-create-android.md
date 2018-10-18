@@ -14,12 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85f11e3a9bfd43affde35806d9aeaf40dcbfe03d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: ed2dcda510c455be1ad532228bfbcbeb898d971a
+ms.sourcegitcommit: b7789fd2f34528275c13a717699cf53a289ed04e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906194"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48891031"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Intune で Android デバイス用のデバイス コンプライアンス ポリシーを追加する
 
@@ -79,7 +79,7 @@ Android の Intune デバイス コンプライアンス ポリシーでは、�
   > [!NOTE]
   > 従来の Android プラットフォームでは、この機能はコンプライアンス設定です。 Intune では、デバイス レベルでこの設定が有効になっているかどうかのみを確認できます。 Android 仕事用プロファイルを含むデバイスでは、この設定は構成ポリシー設定として表示されます。 これにより、管理者はデバイスの設定を有効にできます。
 
-  企業で、Android の仕事用プロファイルを使用する場合は、登録されているデバイスに対して **[アプリの脅威のスキャン]** を有効にできます。 デバイス プロファイルを作成し、システム セキュリティ設定を要求します。 詳細については、[Intune での Android 仕事用プロファイル デバイスの制限設定](device-restrictions-android-for-work.md)に関するページを参照してください。
+  企業で、Android 作業プロファイルを使用する場合は、登録されているデバイスに対して **[アプリの脅威のスキャン]** を有効にできます。 デバイス プロファイルを作成し、システム セキュリティ設定を要求します。 詳細については、[Intune での Android 仕事用プロファイル デバイスの制限設定](device-restrictions-android-for-work.md)に関するページを参照してください。
 
 - **[SafetyNet デバイス構成証明]**: 満たす必要がある [SafetyNet デバイス構成証明](https://developer.android.com/training/safetynet/attestation.html)のレベルを入力します。 次のようなオプションがあります。
   - **未構成**
