@@ -6,13 +6,6 @@ items:
     href: what-is-intune.md
   - name: 教育用の Intune とは
     href: introduction-intune-education.md
-  - name: Azure での Intune の機能
-    href: ui-changes.md
-    items:
-    - name: グループへの変更
-      href: groups-get-started.md
-    - name: レガシ Intune PC クライアント
-      href: intune-legacy-pc-client.md
   - name: 無料評価版にサインアップ
     href: free-trial-sign-up.md
   - name: 新機能
@@ -20,10 +13,6 @@ items:
     items:
     - name: アプリの UI の新機能
       href: whats-new-app-ui.md
-    - name: 新しいアーカイブとは (Azure Portal)
-      href: whats-new-archive.md
-    - name: 新しいアーカイブとは (従来のポータル)
-      href: whats-new-archive-classic.md
   - name: サービスの説明
     href: microsoft-intune-service-description.md
   - name: 既知の問題
@@ -34,18 +23,22 @@ items:
 - name: クイックスタート
   href: get-started-evaluation.md
   items:
-  - name: Azure Portal での操作
-    href: get-started-azure.md
+  - name: Intune を無料で試す
+    href: free-trial-sign-up.md
   - name: ユーザーを作成する
-    href: get-started-users.md
+    href: quickstart-create-user.md
   - name: グループの作成
-    href: get-started-groups.md
-  - name: ポリシーの割り当て
-    href: get-started-policies.md
-  - name: デバイスの登録
-    href: get-started-enroll.md
-  - name: アプリを割り当てる
-    href: get-started-apps.md
+    href: quickstart-create-group.md
+  - name: ポリシーの作成
+    href: quickstart-create-policy.md
+  - name: デバイスのパスワードの長さを設定する
+    href: quickstart-set-password-length-android.md
+  - name: 自動登録を設定する
+    href: quickstart-setup-auto-enrollment.md
+  - name: カスタム ロールを作成して割り当てる
+    href: quickstart-create-custom-role.md
+  - name: 電子メール デバイス プロファイルを作成する
+    href: quickstart-email-profile.md
 - name: シナリオの実装ガイド
   items:
   - name: Exchange Online の保護
@@ -60,6 +53,10 @@ items:
     href: byod-technology-decisions.md
 - name: 概念
   items:
+  - name: デバイス管理とは
+    href: what-is-device-management.md
+  - name: Azure Portal での操作
+    href: get-started-azure.md
   - name: 高レベル アーキテクチャ
     href: high-level-architecture.md
   - name: デバイスとアプリのライフサイクル
@@ -169,6 +166,8 @@ items:
         href: device-group-mapping.md
     - name: Windows の登録の設定
       items:
+      - name: 登録方法の機能
+        href: enrollment-method-capab.md
       - name: Windows の登録
         href: windows-enroll.md
       - name: 一括登録
@@ -273,6 +272,8 @@ items:
           href: apps-add-office365-macos.md
       - name: アプリ (LOB) のビルド
         items:
+        - name: Win32 アプリの管理
+          href: apps-win32-app-management.md
         - name: Android LOB アプリ
           href: lob-apps-android.md
         - name: iOS LOB アプリ
@@ -322,6 +323,8 @@ items:
         href: company-portal-app.md
       - name: Managed Browser の構成
         href: app-configuration-managed-browser.md
+      - name: Outlook の構成
+        href: app-configuration-policies-outlook.md
     - name: アプリの保護
       items:
       - name: 選択的にアプリをワイプする
@@ -377,6 +380,8 @@ items:
       items:
       - name: Android
         href: device-restrictions-android.md
+      - name: Android エンタープライズ
+        href: device-restrictions-android-for-work.md
       - name: iOS
         href: device-restrictions-ios.md
       - name: macOS
@@ -391,8 +396,6 @@ items:
         href: device-restrictions-windows-10-teams.md
       - name: Windows Holographic for Business
         href: device-restrictions-windows-holographic.md
-      - name: Android の仕事用プロファイル
-        href: device-restrictions-android-for-work.md
     - name: エンドポイント保護の構成
       href: endpoint-protection-configure.md
       items:
@@ -491,7 +494,7 @@ items:
     items:
     - name: Android ポリシーの作成
       href: compliance-policy-create-android.md
-    - name: Android の仕事用プロファイルのポリシーの作成
+    - name: Android エンタープライズのプロファイルのポリシーの作成
       href: compliance-policy-create-android-for-work.md
     - name: Google Play プロテクトを有効にするためのポリシーの作成
       href: compliance-policy-create-google-play-protect.md
@@ -703,7 +706,7 @@ items:
         href: custom-settings-windows-10.md
       - name: Windows Holographic for Business
         href: custom-settings-windows-holographic.md
-      - name: Android の仕事用プロファイル
+      - name: Android エンタープライズ
         href: custom-settings-android-for-work.md
 - name: 開発者ガイド
   items:
@@ -780,6 +783,8 @@ items:
       href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: リソース
   items:
+  - name: Microsoft Intune のドキュメント ガイド
+    href: intune-documentation.md
   - name: トラブルシューティング
     items:
     - name: ユーザーによる問題のトラブルシューティングをサポートする
@@ -804,11 +809,25 @@ items:
       href: troubleshoot-conditional-access.md
     - name: Exchange Connector に関するトラブルシューティング
       href: troubleshoot-exchange-connector.md
+  - name: アーカイブ
+    items:
+    - name: 新機能の公開履歴
+      items:
+      - name: 新しいアーカイブとは (Azure Portal)
+        href: whats-new-archive.md
+      - name: 新しいアーカイブとは (従来のポータル)
+        href: whats-new-archive-classic.md
+    - name: Azure での Intune クラシック機能
+      href: ui-changes.md
+    - name: Intune クラシック グループ
+      href: groups-get-started.md
+    - name: レガシ Intune PC クライアント
+      href: intune-legacy-pc-client.md
   - name: 用語集
     href: intune-glossary.md
-ms.openlocfilehash: 8926b2cb409f59bab9b4af8398dac146abeec3d2
-ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
+ms.openlocfilehash: 5a466a242abd54ccbacbffc0e49fd5aa2acd6cef
+ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43821118"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49391673"
