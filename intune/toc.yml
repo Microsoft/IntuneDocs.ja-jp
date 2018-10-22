@@ -39,6 +39,10 @@ items:
     href: quickstart-create-custom-role.md
   - name: 電子メール デバイス プロファイルを作成する
     href: quickstart-email-profile.md
+- name: チュートリアル
+  items:
+  - name: Autopilot を使用して Windows デバイスを登録する
+    href: tutorial-use-autopilot-enroll-devices.md
 - name: シナリオの実装ガイド
   items:
   - name: Exchange Online の保護
@@ -444,6 +448,8 @@ items:
       items:
       - name: Android
         href: wi-fi-settings-android.md
+      - name: Android エンタープライズ & キオスク
+        href: wi-fi-settings-android-enterprise.md
       - name: iOS
         href: wi-fi-settings-ios.md
       - name: macOS
@@ -825,9 +831,9 @@ items:
       href: intune-legacy-pc-client.md
   - name: 用語集
     href: intune-glossary.md
-ms.openlocfilehash: 5a466a242abd54ccbacbffc0e49fd5aa2acd6cef
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
+ms.openlocfilehash: 9fe4a3b303dbf7bc0c51607eae9aa0817be3b617
+ms.sourcegitcommit: d9503d4b9c3f6fb78c9e550936f4f55705e64260
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49391673"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "49455182"
