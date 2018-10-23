@@ -13,12 +13,12 @@ ms.assetid: ''
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: ce977e295df3b5fa48c38b3c2e0d23035cc2f2d1
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.openlocfilehash: 322a60101132d5ef435752079bb5c52a7a4b3a78
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863129"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425021"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Windows PC に Intune ソフトウェア クライアントをインストールする
 
@@ -46,7 +46,7 @@ Intune クライアント ソフトウェアには、Intune 管理で PC を登�
 
 1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[管理]** &gt; **[クライアント ソフトウェアのダウンロード]** をクリックします。
 
-   ![Intune PC クライアントのダウンロード](./media/https://docs.microsoft.com/en-us/intune/media/install-the-windows-pc-client/pc-sa-client-download.png)
+   ![Intune PC クライアントのダウンロード](./media/https://docs.microsoft.com/intune/media/install-the-windows-pc-client/pc-sa-client-download.png)
 
 2. **[クライアント ソフトウェアのダウンロード]** ページで、**[クライアント ソフトウェアのダウンロード]** をクリックします。 ソフトウェアが含まれている **Microsoft_Intune_Setup.zip** パッケージをネットワーク上のセキュリティで保護された場所に保存します。
 
@@ -195,7 +195,7 @@ Windows クライアント ソフトウェアは 2 通りの方法で登録解�
 
 ### <a name="unenroll-by-using-the-intune-admin-console"></a>Intune 管理コンソールを使用して登録解除する
 
-Intune 管理コンソールを使用してソフトウェア クライアントの登録を解除するには、**[グループ]** > **[すべてのコンピューター]** > **[デバイス]** の順に進みます。 クライアントを右クリックし、**[インベントリからの削除/ワイプ]** を選択します。
+Intune 管理コンソールを使用してソフトウェア クライアントの登録を解除するには、**[グループ]**、**[すべてのコンピューター]**、**[デバイス]** の順に進みます。 クライアントを右クリックし、**[インベントリからの削除/ワイプ]** を選択します。
 
 ### <a name="unenroll-by-using-a-command-prompt-on-the-client"></a>クライアントでコマンド プロンプトを使用して登録解除する
 
