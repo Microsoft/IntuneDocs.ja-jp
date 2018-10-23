@@ -15,12 +15,12 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9f0140d532356a1ddb3f8acf19ea1dfaf6e85eb8
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: eb1599085687c258c6853eacf269e2d1b11cbaf1
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347696"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425089"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune とエンド ユーザー アプリの UI の更新
 このリリースの Microsoft Intune でエンド ユーザーに表示されるアプリの UI に加えられた変更について説明します。 これらの更新を理解すると、ユーザーとの通信や、展開のサポートのために作成したカスタム ドキュメントの更新に役立ちます。 会社のポータルを使用してヘルプデスクにサポートを求める場合に、直面している問題のトラブルシューティングをより適切に行う方法を理解するのにも役立ちます。
@@ -30,14 +30,14 @@ ms.locfileid: "43347696"
 ## <a name="week-of-august-27-2018"></a>2018 年 8 月 27 日の週  
 
 ### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>ポータル Web サイトの新しいユーザー エクスペリエンスの更新<!--2000968 -->  
-顧客からのフィードバックに基づいて、Intune ポータル サイト Web サイトに新機能を追加しています。 ご利用のデバイスから、既存の機能と使いやすさの大幅な向上を体験できます。 &ndash;デバイス詳細、フィードバックとサポート、デバイス概要など&ndash;のサイトの領域には、最新の応答性の高いデザインが採用されています。 [Intune ポータル サイト Web サイトのドキュメント](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website)は、これらの変更を反映するように更新されています。   
+顧客からのフィードバックに基づいて、Intune ポータル サイト Web サイトに新機能を追加しています。 ご利用のデバイスから、既存の機能と使いやすさの大幅な向上を体験できます。 &ndash;デバイス詳細、フィードバックとサポート、デバイス概要など&ndash;のサイトの領域には、最新の応答性の高いデザインが採用されています。 [Intune ポータル サイト Web サイトのドキュメント](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website)は、これらの変更を反映するように更新されています。   
 
 更新プログラムでは、次のような内容を確認できます。  
 
 - すべてのデバイス プラットフォームでの簡素化されたワークフロー
 - 強化されたデバイスの識別と登録のフロー
 - 役に立つエラー メッセージ
-- わかりやすい言語、少ない技術用語
+- 技術的な専門用語を減らした、わかりやすい言語
 - アプリへの直接リンクを共有する機能
 - 大規模なアプリケーション カタログのパフォーマンスの向上
 - すべてのユーザーに対するアクセシビリティの向上  

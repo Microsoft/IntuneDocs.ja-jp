@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: df7e14b485fae0a70b8f0f487229b9e31ace4077
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: d709681519f2e68d38958d6ec2082b762e22cf60
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255230"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425157"
 ---
 # <a name="manage-software-updates-in-intune"></a>Intune でのソフトウェア更新プログラムの管理
 
@@ -34,7 +34,7 @@ Windows Update for Business を使用して、更新管理エクスペリエン�
   - Windows Insider - 低速
   - Windows Insider のリリース 
       
-  利用可能なサービス チャネルの詳細については、「[サービスとしての Windows の概要](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels)」を参照してください。
+  利用可能なサービス チャネルの詳細については、「[サービスとしての Windows の概要](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)」を参照してください。
 - **遅延設定**: デバイスのグループに対して更新プログラムのインストールを遅らせるように更新遅延設定を構成します。 これらの設定を使用して、更新プログラムを段階的にロールアウトし、その過程を確認できるようにします。
 - **一時停止**: 更新プログラムのロールアウト中に問題を検出した場合に、更新プログラムのインストールを延期します。
 - **メンテナンス期間**: 更新プログラムをインストールできる時間を構成します。

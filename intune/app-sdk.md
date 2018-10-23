@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 55df1b152ee32456d577afacedd034583e591e3e
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: fc49d7ba7cdc5b986c06f8a84ececc8339a812a2
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058721"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425106"
 ---
 # <a name="intune-app-sdk-overview"></a>Intune App SDK の概要
 iOS と Android の両方で使用可能な Intune App SDK で、Intune アプリ保護ポリシーに対してご使用のアプリを有効にすることができます。 アプリの開発者が必要なコード変更が最小限に抑えられます。 SDK の機能の多くは、アプリの動作を変更せずに利用できます。 エンド ユーザーと IT 管理者のエクスペリエンスを向上させるために、API を利用してアプリの動作をカスタマイズし、アプリ側の処理が必要な機能を実現できます。
@@ -44,7 +44,7 @@ IT 管理者は、アプリによってデバイスに保存されたデータ�
 IT 管理者は、Intune で管理されたアプリから会社のデータをリモートでワイプできます。 これは ID ベースの機能で、エンドユーザーの社内 ID に関連付けられたファイルのみが削除されます。 この機能を実行するには、アプリによる処理が必要です。 アプリは、ワイプする必要のある ID を、ユーザー設定を基に指定できます。 指定されたユーザー設定がアプリにない場合、既定の動作では、アプリケーションのディレクトリがワイプされ、エンド ユーザーにアクセスが削除されたことが通知されます。
 
 ### <a name="enforce-the-use-of-a-managed-browser"></a>管理対象ブラウザーの使用を強制
-IT 管理者は、アプリ内の Web リンクを開くときに、[Intune Managed Browser アプリ](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies)の使用を強制することができます。 この機能により、企業環境で表示されるリンクが Intune で管理されたアプリのドメイン内に維持されることが保証されます。
+IT 管理者は、アプリ内の Web リンクを開くときに、[Intune Managed Browser アプリ](app-configuration-managed-browser.md)の使用を強制することができます。 この機能により、企業環境で表示されるリンクが Intune で管理されたアプリのドメイン内に維持されることが保証されます。
 
 ### <a name="enforce-a-pin-policy"></a>暗証番号 (PIN) ポリシーの適用
 IT 管理者は、エンド ユーザーがアプリ内の企業データにアクセスする前に PIN の入力を求めることができます。 これにより、アプリを使用するユーザーが、職場または学校のアカウントで最初にサインインしたユーザーであることが保証されます。 エンド ユーザーが自分の PIN を構成するときに、Intune App SDK は Azure Active Directory を使用して、エンド ユーザーの資格情報を登録されている Intune アカウントに照らして確認します。

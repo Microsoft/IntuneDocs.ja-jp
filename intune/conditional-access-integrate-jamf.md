@@ -15,19 +15,16 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 516e2f935225b7142c75b01967977fe97297c8e2
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 0b4af0a638d86d32b244c3a34f8039e466394736
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48232181"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424936"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>コンプライアンスのために Jamf Pro を Intune と統合する
 
-|適用先: Azure Portal での Intune |
-|--|
-|クラシック ポータルで Intune に関するドキュメントをお探しですか。 [こちらを検索してください](/intune/introduction-intune?toc=/intune-classic/toc.json)。|
-| |
+適用先: Azure Portal での Intune
 
 組織で [Jamf Pro](https://www.jamf.com) を使用してエンド ユーザーの Mac を管理している場合、Microsoft Intune コンプライアンス ポリシーと Azure Active Directory の条件付きアクセスを使用して、組織内のデバイスがコンプライアンスに確実に準拠するようにできます。
 
