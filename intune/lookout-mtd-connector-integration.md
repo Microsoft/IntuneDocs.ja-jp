@@ -74,7 +74,7 @@ Lookout を Intune に統合するために、Lookout Mobility Endpoint Security
 
    ![Lookout コンソールの初回ログイン ページのスクリーンショット](./media/lookout_mtp_initial_login.png)
 
-3. [Lookout コンソール](https://aad.lookout.com)で **[System]** (システム) モジュールから **[Connectors]\** (コネクタ) タブを選択し、**[Intune]** を選択します。
+3. [Lookout コンソール](https://aad.lookout.com)で **[System]** (システム) モジュールから **[Connectors]** (コネクタ) タブを選択し、**[Intune]** を選択します。
 
    ![Lookout コンソールの 「Connectors」\ (コネクタ) タブが開き [Intune] オプションが強調されている状態のスクリーンショット](./media/lookout_mtp_setup-intune-connector.png)
 
