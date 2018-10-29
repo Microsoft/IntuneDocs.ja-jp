@@ -15,12 +15,12 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f4687b3a2b1064fbfe3a9c8aa9da6cc7d336d78
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 41296e2c5fd1bddfc65bb343d86f4891fff9452d
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906041"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425191"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>モバイル デバイス管理機関の設定
 
@@ -32,7 +32,10 @@ ms.locfileid: "37906041"
 
 - **Intune スタンドアロン** - Azure Portal を利用して構成する、クラウドのみの管理。 Intune で提供される機能がすべて含まれます。 [Intune コンソールで MDM 機関を設定](#set-mdm-authority-to-intune)します。
 
-- **Intune ハイブリッド** - Intune クラウド ソリューションと System Center Configuration Manager の統合。 Configuration Manager コンソールを使用して Intune を構成します。 [Configuration Manager で MDM 機関を設定](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription)します。
+- **Intune ハイブリッド** - Intune クラウド ソリューションと System Center Configuration Manager の統合。 Configuration Manager コンソールを使用して Intune を構成します。 [Configuration Manager で MDM 機関を設定](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription)します。 
+
+    > [!Important]
+    >ハイブリッド MDM への新規顧客のオンボードは、次のリリースから行われなくなります。 詳しくは、「[MC146431 Plan for Change blog](https://blogs.technet.microsoft.com/intunesupport/2018/08/14/move-from-hybrid-mobile-device-management-to-intune-on-azure/)」(MC146431 - 変更計画) に関するブログをご覧ください。
 
 - **Office 365 のモバイル デバイス管理** - Office 365 と Intune クラウド ソリューションの統合。 Office 365 管理センターから Intune を構成します。 Intune スタンドアロンで利用できる機能の一部が含まれます。 Office 365 管理センターで MDM 機関を設定します。
 
@@ -63,7 +66,7 @@ Android または Apple デバイスの管理が有効になっていると、In
 - Apple MDM プッシュ通知証明書を有効にしてアップロードする
 - Device Enrollment Program、School Manager および Volume Purchasing Program など、Apple の任意のサービスを有効にする
 
-いずれの場合も、IT 管理者が Google デバイスまたは Apple デバイスを登録することを承認していることが確認されているなど、モバイル デバイス管理サービスを実行することと同意は厳密に関連しています。 新しいワークフローが公開されたとき、どの情報が共有されるかを示すドキュメントは、次の場所から入手することができます。
+いずれの場合も、同意はモバイル デバイス管理サービスの実行に厳密に関連します。 たとえば、IT 管理者が Google または Apple デバイスの登録を許可されていることを確認します。 新しいワークフローが公開されたとき、どの情報が共有されるかを示すドキュメントは、次の場所から入手することができます。
 - [Intune から Google に送られるデータ](https://aka.ms/Data-intune-sends-to-google)
 - [Intune から Apple に送られるデータ](https://aka.ms/data-intune-sends-to-apple)
 
@@ -79,7 +82,7 @@ Android または Apple デバイスの管理が有効になっていると、In
 MDM 機関の変更に備えて、次の情報を確認します。
 - MDM 機関を変更するオプションを使用するには、Configuration Manager バージョン 1610 以降が必要です。
 - 新しい MDM 機関に変更した後に、デバイスがサービスに接続できるようになるまでに最大 8 時間かかります。
-- Intune スタンドアロンで現在管理されているすべてのユーザーを含む Configuration Manager ユーザー コレクションを作成します。このユーザー コレクションは、Configuration Manager コンソールで Intune サブスクリプションをセットアップするときに使用します。 こうすることで、MDM 機関の変更互換モード、ユーザーとそのデバイスには Configuration Manager ライセンスが割り当てられ、ハイブリッド環境で管理されるようになります。
+- Intune スタンドアロンで現在管理されているすべてのユーザーを含む Configuration Manager ユーザー コレクションを作成します。このユーザー コレクションは、Configuration Manager コンソールで Intune サブスクリプションをセットアップするときに使用します。 このコレクションにより、MDM 機関の変更互換モード、ユーザーとそのデバイスには Configuration Manager ライセンスが割り当てられ、ハイブリッド環境で管理されるようになります。
 - このユーザー コレクションには、IT 管理者ユーザーも必ず含めます。  
 - 変更前は、MDM 機関は Intune 管理コンソールで **[Microsoft Intune に設定]** \(スタンドアロン\) と表示されます。
 - Microsoft Intune 管理コンソールで、MDM 機関に **[Microsoft Intune に設定]** \(スタンドアロン テナント\) と表示されることを確認してから、MDM 機関を変更します。
@@ -88,7 +91,7 @@ MDM 機関の変更に備えて、次の情報を確認します。
 
 - [Microsoft Intune 管理コンソール](http://manage.microsoft.com)で、デバイス登録マネージャー ロールを削除します。 詳細については、「[Intune からのデバイス登録マネージャーの削除](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune#delete-a-device-enrollment-manager-from-intune)」を参照してください。
 - 構成するデバイス グループ マッピングをオフにします。 詳細については、「[Microsoft Intune でデバイス グループのマッピングを使用してデバイスを分類する](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune)」を参照してください。
-- MDM 機関の変更中に、エンドユーザーへの影響はあまりありません。 ただし、変更後すぐに、ユーザーがデバイスの電源を入れてサービスに接続するように、この変更について通知することをお勧めします。 こうすることで、多数のデバイスが迅速に新しい機関経由でサービスに接続し、登録できるようになります。
+- MDM 機関の変更中に、エンドユーザーへの影響はあまりありません。 ただし、変更後すぐに、ユーザーがデバイスの電源を入れてサービスに接続するように、この変更について通知することをお勧めします。 この注意により、多数のデバイスが迅速に新しい機関経由でサービスに接続し、登録できるようになります。
 - Intune スタンドアロンを使用して iOS デバイスを管理していて、MDM 機関を変更する予定の場合は、Intune で使用されていたものと同じ Apple Push Notification サービス (APNs) 証明書を更新し、Configuration Manager (ハイブリッド) でテナントのセットアップに使用する必要があります。    
 
     > [!IMPORTANT]  
@@ -101,8 +104,8 @@ MDM 機関の変更に備えて、次の情報を確認します。
 3. **[MDM 機関を Configuration Manager に変更]** を選択し、**[次へ]** をクリックします。
 4. 新しいハイブリッド MDM 機関で継続して管理するすべてのユーザーを含むユーザー コレクションを選択します。
 5. **[次へ]** をクリックして、ウィザードを完了します。 これで MDM 機関は **Configuration Manager** に変更されました。
-6. 同じ Intune テナントを使用して [Microsoft Intune 管理コンソール](http://manage.microsoft.com)にログインし、MDM 機関が **[Configuration Manager に設定]** に変更されたことを確認します。
-7. MDM 機関を Configuration Manager に変更したら、[iOS の登録](https://docs.microsoft.com/en-us/sccm/mdm/deploy-use/enroll-hybrid-ios-mac)と[Android の登録](https://docs.microsoft.com/en-us/sccm/mdm/deploy-use/enroll-hybrid-android)を設定することができます。
+6. 同じ Intune テナントを使用して [Microsoft Intune 管理コンソール](http://manage.microsoft.com)にサインインし、MDM 機関が **[Configuration Manager に設定]** に変更されたことを確認します。
+7. MDM 機関を Configuration Manager に変更したら、[iOS の登録](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac)と[Android の登録](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-android)を設定することができます。
 8. Configuration Manager コンソールで、新しい MDM 機関 (ハイブリッド) から新しい設定とアプリを構成し、展開します。
 
 次にデバイスをサービスに接続すると、新しい MDM 機関と同期し、新しい設定を受信します。
@@ -125,13 +128,13 @@ MDM 機関を [不明] に戻すことはできません。 Microsoft サーバ�
 
 ## <a name="what-to-expect-after-changing-the-mdm-authority"></a>MDM 機関を変更した後の注意点
 
-- テナントの MDM 機関が変更されたことを Intune サービスが検出すると、登録されているすべてのデバイスに、サービスにチェックインして同期するように促す通知メッセージを送信します (これは定期的にスケジュールされているチェックインとは別になります)。 そのため、テナントの MDM 機関が Intune スタンドアロンからハイブリッドに変更された後は、電源を入れてオンラインになったすべてのデバイスはサービスに接続し、新しい MDM 機関を受信し、ハイブリッドに管理されるようになります。 これらのデバイスの管理と保護は中断されません。
+- テナントの MDM 機関が変更されたことを Intune サービスが検出すると、登録されているすべてのデバイスに、サービスにチェックインして同期するように促す通知メッセージを送信します (この通知は定期的にスケジュールされているチェックインとは別になります)。 そのため、テナントの MDM 機関が Intune スタンドアロンからハイブリッドに変更された後は、電源を入れてオンラインになったすべてのデバイスはサービスに接続し、新しい MDM 機関を受信し、ハイブリッドに管理されるようになります。 これらのデバイスの管理と保護は中断されません。
 - MDM 機関の変更中 (または変更直後) にデバイスの電源が入り、オンラインだった場合でも、デバイスが新しい MDM 機関のサービスに登録されるまでに最大 8 時間の遅れがあります (次の定期的なチェックインのタイミングによって異なります)。    
 
   > [!IMPORTANT]    
   > MDM 機関を変更してから、更新された APNs 証明書が新しい機関にアップロードされるまで、iOS デバイスの新しいデバイスの登録とデバイスのチェックインは失敗します。 そのため、MDM 機関を変更した後は、できるだけ早く APNs 証明書を確認し、新しい機関にアップロードすることが重要です。
 
-- ユーザーが新しい MDM 機関にすぐに変更するには、デバイスからサービスへのチェックインを手動で開始します。 ポータル サイト アプリを使用して、デバイス コンプライアンス チェックを開始することで、簡単にチェックインを開始できます。
+- ユーザーが新しい MDM 機関にすぐに変更するには、デバイスからサービスへのチェックインを手動で開始します。 ポータル サイト アプリを使用して、デバイス コンプライアンス チェックを開始することで、ユーザーはこの変更を簡単に実行できます。
 - MDM 機関の変更後に、デバイスがサービスにチェックインして同期した後に、正常に動作していることを確認するには、Configuration Manager コンソールでそのデバイスを探します。 Intune で管理されていたデバイスが、Configuration Manager でマネージド デバイスとして表示されるようになります。    
 - MDM 機関の変更中にデバイスがオフラインだったときから、デバイスがサービスにチェックインするまでは中間期間があります。 この中間期間にも確実にデバイスを保護し、利用できるように、最大 7 日間 (またはデバイスが新しい MDM 機関に接続し、新しい設定を受信して既存の設定が上書きされるまで)、次のプロファイルがデバイスに残ります。
     - 電子メール プロファイル

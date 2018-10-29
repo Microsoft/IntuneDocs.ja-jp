@@ -15,12 +15,12 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3ba8caa74b673127a17a431d5b821d52f9767c49
-ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
+ms.openlocfilehash: 5680e0c53a9decfa5b172e08c04fbfe4025f2d7c
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727460"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642881"
 ---
 # <a name="data-warehouse-data-model"></a>データ ウェアハウス データ モデル
 
@@ -61,6 +61,6 @@ Intune データ ウェアハウスは、データを毎日サンプリングし
 
 ## <a name="next-steps"></a>次の手順
 
- - データ ウェアハウスで Intune のユーザーの有効期間を追跡する方法の詳細については、「[Intune データ ウェアハウスのユーザー有効期間の表記](reports-ref-user-timeline.md)」をご覧ください。
+ - データ ウェアハウスが Intune のユーザーの有効期間を追跡する方法の詳細については、「[Intune データ ウェアハウスのユーザー有効期間の表記](reports-ref-user-timeline.md)」をご覧ください。
  - データ ウェアハウスの操作に関する詳細については、[最初のデータ ウェアハウスの作成](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse)に関するページをご覧ください。
  - Power BI とデータ ウェアハウスの操作の詳細については、[データセットをインポートして新しい Power BI レポートを作成する](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/)に関するページをご覧ください。 

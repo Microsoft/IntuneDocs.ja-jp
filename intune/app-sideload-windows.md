@@ -5,19 +5,19 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 1c0c197536cb6d6b452ff5e3607ad1af2d5a4ca8
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: 0c1daa93ff38d1f76ab8c203bf2d989318ecdf62
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058899"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425225"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune を使用して Windows デバイスに展開できるように基幹業務アプリに署名する
 
@@ -77,7 +77,7 @@ Microsoft ストアからインストールしなくても、Intune を使用し
 
     -   WinPhoneCompanyPortal.ps1 – ポータル サイト アプリ ファイルへの署名に使用する PowerShell スクリプト。これにより、ポータル サイト アプリを Windows Phone 8.1 デバイスに展開できます。
 
-    また、[ビジネス向け Microsoft ストア](http://businessstore.microsoft.com/)から Windows Phone 8.1 ポータル サイト (オフライン ライセンス パッケージ) または Windows 10 ポータル サイト (オフライン ライセンス パッケージ) をダウンロードすることもできます。 ポータル サイト アプリは、オフライン ライセンスと、オフラインで使用するためにダウンロードした適切なパッケージを使用して取得する必要があります。 選択項目の Windows 8 および Windows Phone 8 プラットフォーム リストでは、対応する 8.1 が参照されます。 Intune でそれを行う方法については、「[ビジネス向け Microsoft ストアから購入したアプリを管理する](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)」を参照してください。
+    また、[ビジネス向け Microsoft ストア](http://businessstore.microsoft.com/)から Windows Phone 8.1 ポータル サイト (オフライン ライセンス パッケージ) または Windows 10 ポータル サイト (オフライン ライセンス パッケージ) をダウンロードすることもできます。 ポータル サイト アプリは、オフライン ライセンスと、オフラインで使用するためにダウンロードした適切なパッケージを使用して取得する必要があります。 選択項目の Windows 8 および Windows Phone 8 プラットフォーム リストでは、対応する 8.1 が参照されます。 Intune でそれを行う方法については、「[ビジネス向け Microsoft ストアから購入したアプリを管理する](windows-store-for-business.md)」を参照してください。
 
 2.  **Windows Phone SDK をダウンロードする** Windows Phone SDK 8.0 (http://go.microsoft.com/fwlink/?LinkId=615570) をダウンロードし、SDK をコンピューターにインストールします。 この SDK は、アプリケーション登録トークンを生成するために必要です。
 
@@ -119,7 +119,7 @@ Microsoft ストアからインストールしなくても、Intune を使用し
 
     -   `-EnterpriseId` - エンタープライズ ID。 この引数と 'AetxPath' のいずれかを指定する必要があります。 この引数が指定されていない場合、AETX ファイルからエンタープライズ ID が読み取られます。 たとえば、1000000001。
 
-6.  Windows Phone 8.1 ポータル サイト (SSP.appx) アプリを展開する ガイダンスについては、[Windows Phone の基幹業務 (LOB) アプリを追加する方法](lob-apps-windows-phone.md) ([クラシック ポータル](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)) に関する内容をご覧ください。
+6.  Windows Phone 8.1 ポータル サイト (SSP.appx) アプリを展開する ガイダンスについては、[Windows Phone の基幹業務 (LOB) アプリを追加する方法](lob-apps-windows-phone.md)に関する記事をご覧ください。
 
 ## <a name="how-to-renew-the-symantec-enterprise-code-signing-certificate"></a>Symantec エンタープライズ コード署名証明書を更新する方法
 

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/01/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,20 @@ ms.assetid: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a6be3694a18cd0df09b52b535a0fcd2050bf7a98
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 46d28ba8d9d8c6ec2adf2b41adbb9e7336676811
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231246"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642990"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Intune および Exchange Online 用に Exchange サービス コネクタを構成する
-
 この記事では、Microsoft Intune サービスを Exchange Online サービスまたは新しい Exchange Online Dedicated サービスに接続する方法を説明します。 Exchange Online Dedicated 環境が**新しい**バージョンか**従来の**バージョンかを確認するには、アカウント マネージャーに問い合わせてください。
 
+**Service to Service Connector** を使用すると、Exchange ActiveSync (EAS) デバイスと Intune で管理されたデバイスの両方を、1 つの管理コンソールから管理できます。  Exchange Online の条件付きアクセスを有効にするために、コネクタは必要はありません。
+
 ## <a name="service-to-service-connector-requirements"></a>Service to Service Connector の要件
-**Service to Service Connector** は、Exchange Online または Exchange Online Dedicated のみをサポートします。また、オンプレミス インフラストラクチャの要件はありません。
+**Service to Service Connector** は、Exchange Online または Exchange Online Dedicated のみをサポートします。また、オンプレミス インフラストラクチャの要件はありません。 
 
 
 |              要件               |                                                                                                            詳細情報                                                                                                            |
@@ -68,5 +69,4 @@ Exchange Service to Service Connector を正常に構成した後、**[条件付
 
 **[接続の状態]** と、前回いつ同期が完了したかを確認することもできます。
 
-## <a name="next-steps"></a>次の手順
-[Microsoft Intune で Exchange の条件付きアクセスを監視する](conditional-access-exchange-monitor.md)
+ 

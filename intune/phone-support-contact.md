@@ -15,12 +15,12 @@ ms.assetid: 1326e65e-56cc-4987-9006-3a788597ca19
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: efecd454c2e6ba8454cfd68291a96c6d4c8a2703
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a7af46f0f9db0d849e3c75da36c5fe9354554107
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31030261"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49643112"
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Microsoft Intune のサポートの電話番号
 
@@ -116,7 +116,7 @@ ms.locfileid: "31030261"
 |       トルコ        |                        24 x 7                         |  月曜日 ～ 金曜日<br /><br />9:00 から 18:00 EET (UTC + 3 時間)   |              トルコ語&#42;、英語              |                                                                    00800 448824556                                                                     |                                                                                                                                                               |
 |         アラブ首長国連邦         |                        24 x 7                         |  月曜日 ～ 金曜日<br /><br />9:00 から 17:00 AST (UTC + 4 時間)   |                     英語                     |                                                                      8000 4441578                                                                      |                                                                                                                                                               |
 |       ウクライナ       |                        24 x 7                         |  月曜日 ～ 金曜日<br /><br />09:00 ～ 17:00 EET (UTC + 2 時間)   |              ロシア語&#42;、英語              |                                                       0 800 308 800<br /><br />手順 1: 5 を選択します                                                        |                                                                                                                                                               |
-|   英国    |                        24 x 7                         |    月曜日 ～ 金曜日<br /><br />09:00 ～ 17:00 GMT (UTC)    |                     英語                     |                                                                     0800 032 6417                                                                      |                                                                          02034506455                                                                          |
+|   イギリス    |                        24 x 7                         |    月曜日 ～ 金曜日<br /><br />09:00 ～ 17:00 GMT (UTC)    |                     英語                     |                                                                     0800 032 6417                                                                      |                                                                          02034506455                                                                          |
 |    米国    |                        24 x 7                         |  月曜日 ～ 金曜日<br /><br />09:00 ～ 17:00 PST (UTC - 8 時間)   |                     英語                     |                                                                      800-865-9408                                                                      |                                                                                                                                                               |
 |       ウルグアイ       |                        24 x 7                         |  月曜日 ～ 金曜日<br /><br />09:00 ～ 17:00 UYST (UTC - 2 時間)  |              スペイン語&#42;、英語              |                                                                    000-411-002-7131                                                                    |                                                                                                                                                               |
 |      ベネズエラ      |                        24 x 7                         | 月曜日 ～ 金曜日<br /><br />09:00 ～ 17:00 VET (UTC - 4 時間 30 分) |              スペイン語&#42;、英語              |                                                                     0-800-100-8763                                                                     |                                                                                                                                                               |

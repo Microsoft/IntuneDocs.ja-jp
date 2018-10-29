@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/30/2018
+ms.date: 10/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0af5fb071c6abb01a2819a5d9c73f4e01bf7cb7a
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 3c103049d22c9834ecb01065686e8678144c9cae
+ms.sourcegitcommit: 8a22afcc8c7479c437c8c66da9cb2117890f0ab0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312834"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49410365"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune デバイスのコンプライアンス対応ポリシーの監視
 
@@ -140,6 +140,9 @@ ms.locfileid: "43312834"
 ![さまざまなポリシーのすべての設定が一覧表示されます](./media/compliance-policy-monitor/idc-10.png)
 
 特定の設定を選択すると、**コンプライアンス状態**、**ユーザーの電子メール エイリアス**、**デバイス モデル**、**場所**がその設定の対象になっているデバイス別に表示されます。
+
+> [!NOTE]
+> Azure AD 参加済みの Windows 10 デバイスでは、非準拠ユーザーとしてシステム アカウントが表示される場合があります。 これは想定される動作であり、デバイスの全体的なコンプライアンスには影響しません。 
 
 ## <a name="view-status-of-device-policies"></a>デバイス ポリシーの状態を表示する
 

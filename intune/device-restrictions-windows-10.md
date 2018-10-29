@@ -12,17 +12,20 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6aa2ade550a01a9e4758024213a67e6a7ddd8f03
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 3a3fd4c57edba6f4d9abfdd4188c94627543cb43
+ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313855"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49652157"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune での Windows 10 (以降) の設定に対するデバイスの制限
 この記事では、Windows 10 を実行するデバイスに構成できるすべての Microsoft Intune デバイスの制限設定について説明します。
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
+
+> [!Note]
+> Windows のすべてのエディションですべてのオプションを利用できるわけではありません
 
 ## <a name="general"></a>全般
 - **[画面キャプチャ (モバイルのみ)]** - ユーザーがデバイスの画面を画像としてキャプチャできるようにします。
@@ -400,3 +403,6 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 - **[メッセージ同期 (モバイルのみ)]** - Messaging Everywhere とテキスト メッセージのバックアップと復元を無効にします。
 - **[MMS (モバイルのみ)]** - デバイスの MMS 送受信機能を無効にします。
 - **[RCS (モバイルのみ)]** - デバイスの Rich Communication Services 送受信機能を無効にします。
+
+## <a name="more-information"></a>詳細情報
+各設定に関する技術的な詳細と、サポートされている Windows のエディションについては、[Windows 10 のポリシー CSP のリファレンス](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider)に関する記事をご覧ください

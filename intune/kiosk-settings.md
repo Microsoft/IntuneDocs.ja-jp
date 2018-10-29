@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6db58b1b1f19f789a2163f497c1f0da4c7c034a5
-ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
+ms.openlocfilehash: 9dd7608981da1454c1f3be29eb6ff40a5d7f3394
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39481123"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562869"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Intune での Windows 10 (以降) 用のキオスクの設定
 
@@ -45,7 +45,7 @@ ms.locfileid: "39481123"
 #### <a name="single-full-screen-app-kiosks"></a>シングル全画面表示アプリ キオスク
 次の設定を入力します。
 
-- **[Universal Windows Platform (UWP) app identifier]\(ユニバーサル Windows プラットフォーム (UWP) アプリ識別子\)**: キオスク アプリの**アプリケーション ユーザー モデル ID (AUMID)** を入力します。 または、[Mobile Apps](apps-add.md) を使用して追加した既存の管理対象アプリを選択します。
+- **[Universal Windows Platform (UWP) app identifier]\(ユニバーサル Windows プラットフォーム (UWP) アプリ識別子\)**: キオスク アプリの**アプリケーション ユーザー モデル ID (AUMID)** を入力します。 または、[クライアント アプリ](apps-add.md)を使用して追加した既存の管理対象アプリを選択します。
 
     「[Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)」 (インストール済みアプリのアプリケーション ユーザー モデル ID を見つける) を参照してください。
 
@@ -62,7 +62,7 @@ ms.locfileid: "39481123"
 次の設定を入力します。
 
 - **[Add Win32 App]\(Win32 アプリを追加\)**: Win32 アプリは従来のデスクトップ アプリです。 **[アプリ名]**、および **[識別子]** を入力します。 **[識別子]** は、デバイスに関する、実行可能ファイルの完全修飾パス名です。
-- **[管理対象アプリを追加]**: [Intune の Mobile Apps](apps-add.md) を使用して追加した既存の管理対象アプリを選択します。
+- **[管理対象アプリを追加]**: [Intune のクライアント アプリ](apps-add.md)を使用して追加した既存の管理対象アプリを選択します。
 - **[Add app by AUMID]\(AUMID でアプリを追加\)**: [アプリの AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) を入力します (UWP アプリ)。
 - **[タスク バー]**: キオスクでのタスク バーを **[有効]** (表示) にするか、**[未構成]** (非表示) のままにします。
 - **[スタート メニューのレイアウト]**: アプリの順序を含む、アプリをスタート メニューに表示する方法を説明する XML ファイルを入力します。 ガイダンスおよび XML のサンプルについては、「[スタート画面のレイアウトのカスタマイズとエクスポート](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout)」をご覧ください。
@@ -75,7 +75,7 @@ ms.locfileid: "39481123"
 
 ## <a name="kiosk-web-browser-settings"></a>キオスク Web ブラウザー設定
 
-これらの設定で、キオスクの Web ブラウザー アプリを制御します。 [Mobile Apps](apps-add.md) を使用してキオスク デバイスに Web ブラウザー アプリを展開したことを確認してください。
+これらの設定で、キオスクの Web ブラウザー アプリを制御します。 [クライアント アプリ](apps-add.md)を使用してキオスク デバイスに Web ブラウザー アプリを展開したことを確認してください。
 
 1. 次の設定を入力します。
 
@@ -115,7 +115,7 @@ Windows Holographic for Business デバイスでは、シングル アプリ キ
 
 次の設定を入力します。
 
-- **[管理対象アプリを追加]**: [Intune の Mobile Apps](apps-add.md) を使用して追加した既存の管理対象アプリを選択します。
+- **[管理対象アプリを追加]**: [Intune のクライアント アプリ](apps-add.md)を使用して追加した既存の管理対象アプリを選択します。
 - **[Add app by AUMID]\(AUMID でアプリを追加\)**: [アプリの AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) を入力します (UWP アプリ)。
 - **[スタート メニューのレイアウト]**: アプリの順序を含む、アプリをスタート メニューに表示する方法を説明する XML ファイルを入力します。 [[スタート画面のレイアウトのカスタマイズとエクスポート]](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) ではいくつかのガイダンスが提供され、Windows Holographic for Business デバイス用の特定の XML ファイルが含まれます。
 - **[ユーザー アカウントの種類]**: 追加したアプリを使用できる 1 つ以上のユーザー アカウントを追加します。 サポートされているオプションは次のとおりです。 

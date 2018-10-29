@@ -14,12 +14,12 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3025c673f695282611fdd0ded6f466036847c4a7
-ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
+ms.openlocfilehash: b4b10d3dfa83e3fcfda6ba34bebc1257b19d83ac
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44031152"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642985"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために Android アプリを準備する
 
@@ -139,7 +139,7 @@ Android では、Android デバイスにインストールするために、す�
 
 -   入力基幹業務 (LOB) アプリケーション、出力アプリケーション、Java KeyStore が、アプリ ラッピング ツールを実行している Windows コンピューター上に存在することを確認します。
 
--   このツールを実行しているコンピューター上の Intune に出力アプリケーションをインポートします。 Java キーツールについて詳しくは、[キーツール](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html)に関するページをご覧ください。
+-   このツールを実行しているコンピューター上の Intune に出力アプリケーションをインポートします。 Java keytool について詳しくは、[keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) に関するページをご覧ください。
 
 -   出力アプリケーションとツールが汎用名前付け規則 (UNC) パスにあり、ツールと入力ファイルを同じコンピューター上で実行していない場合、[インターネット プロトコル セキュリティ (IPsec)](http://wikipedia.org/wiki/IPsec) または[サーバー メッセージ ブロック (SMB) 署名](https://support.microsoft.com/kb/887429)を使用して環境をセキュリティで保護します。
 

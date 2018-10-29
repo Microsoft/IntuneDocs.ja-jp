@@ -15,18 +15,15 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9486bb6d0d9747101535cef9f45931fa1b2cefe6
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 2f3b28a7a5c1f97871a40f108a5fae6cc6b93424
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231444"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424885"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>アプリ保護ポリシーを監視する方法
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-このトピックでは、**Azure Portal を使用していない場合に**、Intune クラシック ポータルで[アプリ保護ポリシーを作成する方法](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)について説明します。
-
 
 [Azure Portal](https://portal.azure.com) の Intune アプリ保護ウィンドウでユーザーに適用したモバイル アプリ管理 (MAM) ポリシーのコンプライアンス状態を監視します。 MAM ポリシーによって影響を受けるユーザー、コンプライアンスの状態、ユーザーに対して発生する可能性がある問題に関する情報を見つけます。
 
@@ -37,6 +34,9 @@ ms.locfileid: "48231444"
 -   詳細ビュー
 
 -   レポート ビュー
+
+> [!NOTE]
+> アプリ保護ポリシーの作成については、「[アプリ保護ポリシーを作成して割り当てる方法](app-protection-policies.md)」をご覧ください。
 
 ## <a name="summary-view"></a>概要ビュー
 
