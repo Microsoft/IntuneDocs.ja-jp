@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3da8a3f13e592483513daf81bc5ff1ad8af0f7e6
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 151a445bf7c5c17f8ff1b5ee403df8744f2d8ba6
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268908"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102057"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune のデバイス コンプライアンス ポリシーの概要
 
@@ -153,7 +153,7 @@ Remember that you need to implement conditional access policies in addition to c
 ## <a name="ways-to-deploy-device-compliance-policies"></a>デバイス コンプライアンス ポリシーを展開する方法
 ユーザー グループ内のユーザー、またはデバイス グループ内のデバイスにコンプライアンス ポリシーを展開することができます。 コンプライアンス ポリシーがユーザーに展開されると、すべてのユーザーのデバイスのコンプライアンスがチェックされます。
 
-**[コンプライアンス ポリシー設定]** ([Azure Portal] > [デバイスのポリシー準拠]) には以下が含まれます。
+既定の **[コンプライアンス ポリシー設定]** ([Azure portal] > [デバイスのポリシー準拠]) には以下が含まれます。
 
 - **[Mark devices with no compliance policy assigned as]\(コンプライアンス ポリシーが割り当てられていないデバイスにマークを付ける\)**: このプロパティには次の 2 つの値があります。
 
@@ -180,7 +180,7 @@ Remember that you need to implement conditional access policies in addition to c
 ### <a name="actions-for-noncompliance"></a>コンプライアンス非対応に対するアクション
 コンプライアンス ポリシーの条件を満たしていないデバイスに適用されるアクションを時刻順に構成することができます。 コンプライアンス非対応に対するこれらのアクションを自動化することができます (「[コンプライアンス非対応に対するアクションを自動化する](actions-for-noncompliance.md)」を参照)。
 
-## <a name="azure-classic-portal-vs-azure-portal"></a>Azure クラシック ポータルと Azure ポータル
+## <a name="azure-classic-portal-vs-azure-portal"></a>Azure クラシック ポータルと Azure Portal
 
 Azure ポータルでデバイス コンプライアンス ポリシーを使用する場合の主な違い:
 

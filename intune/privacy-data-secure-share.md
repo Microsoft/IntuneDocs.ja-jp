@@ -14,12 +14,12 @@ ms.assetid: 68921fd6-5f50-456c-a3af-83d7bc4b134b
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 085b6a3a68964a200a5d6c462b3710b9744ac99f
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 5613c1284110e85a910db8f156ff4f62a54af4ad
+ms.sourcegitcommit: dc6979f2b14d522530577cc7f212cc822356acc9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34474617"
+ms.lasthandoff: 09/29/2018
+ms.locfileid: "47453546"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Intune でのデータのセキュリティと共有
 
@@ -66,7 +66,7 @@ Microsoft のエージェントとして活動しているすべてのサード�
 
 ### <a name="system-center-configuration-manager-data-sharing"></a>System Center Configuration Manager のデータ共有
 
-Microsoft Intune では、データが System Center Configuration Manager と共有されることはありません。 Microsoft Intune は、顧客が直接デプロイ、管理、および操作するオンプレミス製品です。 Configuration Manager で収集される診断データおよび使用状況データは、今後のリリースでインストールのエクスペリエンス、品質、セキュリティを向上させるためだけに使用されます。
+Microsoft Intune では、データが System Center Configuration Manager と共有されることはありません。 System Center Configuration Manager は、お客様が直接デプロイ、管理、操作するオンプレミス製品です。 Configuration Manager で収集される診断データおよび使用状況データは、今後のリリースでインストールのエクスペリエンス、品質、セキュリティを向上させるためだけに使用されます。
 
 詳細については、「[System Center Configuration Manager の診断結果と使用状況データ](https://docs.microsoft.com/en-us/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data.md)」を参照してください。 
 

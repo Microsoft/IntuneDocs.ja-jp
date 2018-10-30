@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bdf927eff77b6a97e4c763ec0d75c7e44e4c6840
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: e7e740d03453a437572f8f960ed21927f4fcbace
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799582"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102040"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>管理対象の Android デバイス用アプリ構成ポリシーを追加する
 
@@ -29,7 +29,9 @@ ms.locfileid: "48799582"
 Microsoft Intune のアプリ構成ポリシーを使用して、Android 仕事用プロファイル アプリを実行するための設定を指定します。 アプリ開発者は、アプリの構成設定を指定する場合、Android 管理対象アプリの構成設定を公開する必要があります。 設定を適用するユーザー グループにアプリ構成ポリシーを割り当てます。  ポリシー設定は、アプリがポリシーをチェックするとき (通常はアプリの初回実行時) に使用されます。
 
 > [!Note]  
-> アプリ構成をサポートしていないアプリもあります。 ビルドされたアプリでアプリ構成ポリシーがサポートされているかどうかについては、アプリの開発者にお問い合わせください。
+> アプリ構成をサポートしていないアプリもあります。 ビルドされたアプリでアプリ構成ポリシーがサポートされているかどうかについては、アプリの開発者にお問い合わせください。<p></p>
+> Microsoft Intune 管理者は、マネージド デバイス上の Microsoft Office アプリケーションにどのユーザー アカウントを追加するかを制御することができます。 許可されている組織ユーザー アカウントのみにアクセスを制限したり、登録済みデバイス上の個人アカウントをブロックしたりできます。 サポートされているアプリケーションがアプリの構成を処理し、未承認のアカウントを削除してブロックします。<p></p>
+> Microsoft Word、Microsoft Excel、Microsoft PowerPoint では、Android 16.0.9327.1000 以降を使用する必要があります。
 
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
 2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
@@ -69,6 +71,16 @@ Microsoft Intune のアプリ構成ポリシーを使用して、Android 仕事�
 - ユーザー ID — **3ec2c00f-b125-4519-acf0-302ac3761822** など
 - ユーザー名 — **John Doe** など
 
+### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>複数 ID アプリで構成済みの組織アカウントのみを許可する 
+
+Android デバイスでは、次のキー/値ペアを使用します。
+
+| **Key** | com.microsoft.intune.mam.AllowedAccountUPNs |
+|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **値** | <ul><li>1 つまたは複数の<code>;</code> で区切られた UPN。</li><li>このキーで定義された管理対象のユーザー アカウントのみが許可されます。</li><li> Intune に登録されているデバイスでは、<code>{{userprincipalname}}</code> のトークンを使用して登録済みのユーザー アカウントを表すことができます。</li></ul> |
+
+   > [!NOTE]
+   > 複数 ID で構成された組織アカウントのみを許可する場合は、Outlook for Android 2.2.222 以降を使用する必要があります。 
 
 ## <a name="enter-the-json-editor"></a>JSON エディターの入力
 

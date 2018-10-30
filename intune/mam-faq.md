@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/22/2018
+ms.date: 10/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d7207b84dacc47b567c0fc86c3215605965fda6d
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 635853cb744395e6ae519985eaed62b53e88578e
+ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312800"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307425"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM とアプリの保護に関してよく寄せられる質問
 
@@ -88,9 +88,7 @@ Intune アプリ保護ポリシーでは、[Intune アプリ SDK](/intune/app-sd
 Intune は、アプリ内のすべてのデータを "企業" データまたは "個人用" データのいずれかとしてマークします。 勤務地から送信されたデータは "企業" データと見なされます。 Office アプリについては、Intune では電子メール (Exchange) またはクラウド ストレージ (OneDrive for Business アカウントを使用した OneDrive アプリ) が勤務地と見なされます。
 
 **Skype for Business を使用するための追加要件は何ですか。**<br></br>
-[Skype for Business](https://products.office.com/skype-for-business/it-pros) のライセンス要件を参照してください。
-  >[!NOTE]
-  > 現在、Skype for Business モバイル アプリは、Skype for Business Online のみをサポートしています。
+[Skype for Business](https://products.office.com/skype-for-business/it-pros) のライセンス要件を参照してください。 Skype for Business (SfB) のハイブリッド構成とオンプレミス構成の場合は、「[Hybrid Modern Auth for SfB and Exchange goes GA](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Hybrid-Modern-Auth-for-SfB-and-Exchange-goes-GA/ba-p/134756)」(SfB と Exchange のハイブリッドな最新認証が一般公開) と「[Modern Auth for SfB OnPrem with AAD](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Modern-Auth-for-SfB-OnPrem-with-AAD/ba-p/180910)」(AAD による SfB オンプレミスの最新認証) をそれぞれ参照してください。
 
 ## <a name="app-protection-features"></a>アプリ保護機能
 
@@ -116,11 +114,11 @@ Outlook では個人用電子メールと "企業" 電子メールの両方が�
 
 iOS デバイスの場合、発行元が異なるアプリ間で PIN を共有する場合でも、メイン入力フォーカスではないアプリに対して再度、**[(分数) 後にアクセス要件を再確認する]** 値が満たされると、プロンプトが再表示されます。 そこで、たとえば、ユーザーに発行元 _X_ からのアプリ _A_ と発行元 _Y_ からのアプリ _B_ があるとき、それら 2 つのアプリで同じ PIN が共有されているとします。 ユーザーのフォーカスがアプリ _A_ (前景) にあり、アプリ _B_ は最小化されています。 **[(分数) 後にアクセス要件を再確認する]** 値が満たされ、ユーザーがアプリ _B_ に切り替えると、PIN が必要になります。
 
-      >[!NOTE] 
-      > In order to verify the user's access requirements more often (i.e. PIN prompt), especially for a frequently used app, it is recommended to reduce the value of the 'Recheck the access requirements after (minutes)' setting. 
+  >[!NOTE] 
+  > ユーザーのアクセス要件の確認頻度をあげるために (PIN のプロンプト)、特に頻繁に使用するアプリにおいて、"(分数) 後にアクセス要件を再確認する" の設定値を下げることをお勧めします。 
       
 - **Intune PIN が、Outlook および OneDrive の組み込みのアプリ PIN と連携する方法**<br></br>
-Intune PIN は、非アクティビティ ベースのタイマー (以前の [(分数) 後に、アクセス要件を再確認する] の値) を基にして機能します。 そのため、Intune PIN プロンプトは、既定でアプリの起動に関連付けられていることが多い Outlook および OneDrive 用の組み込みのアプリ PIN プロンプトとは独立して表示されます。 ユーザーに両方の PIN プロンプトが同時に表示される場合、Intune PIN が優先される動作が予想されます。 
+Intune PIN は、非アクティブ状態ベースのタイマー (以前の [(分数) 後に、アクセス要件を再確認する] の値) を基にして機能します。 そのため、Intune PIN プロンプトは、既定でアプリの起動に関連付けられていることが多い Outlook および OneDrive 用の組み込みのアプリ PIN プロンプトとは独立して表示されます。 ユーザーに両方の PIN プロンプトが同時に表示される場合、Intune PIN が優先される動作が予想されます。 
 
 - **PIN は安全ですか。**<br></br> PIN は、アプリで適切なユーザーのみが組織のデータにアクセスできるようにするためのものです。 そのため、エンドユーザーが Intune アプリの PIN を設定またはリセットするには、職場または学校のアカウントを使用してサインインする必要があります。 この認証は Azure Active Directory によってセキュリティ トークンの交換を通じて処理され、Intune アプリ SDK に対して透過的ではありません。 セキュリティの観点からは、職場または学校のデータを保護する最も効果的な方法は暗号化です。 暗号化はアプリの PIN とは関係しませんが、独自のアプリ保護ポリシーと関係があります。
 

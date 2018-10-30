@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/02/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8abaef622fcf633eecde3a2bb2ee261cb7c8fc9e
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: b39afeaf6daf8b08c58becd0b4af07299bd79e7a
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330264"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101995"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>管理対象の iOS デバイス用アプリ構成ポリシーを追加する
 
@@ -31,7 +31,8 @@ Microsoft Intune のアプリ構成ポリシーを使用して、iOS アプリ�
 アプリ構成ポリシーを追加すると、アプリ構成ポリシーの割り当てを設定できます。 ポリシーの割り当てを設定するときに、ポリシーを適用するユーザーのグループを含めたり、除外したりできます。 含めるグループを選ぶとき、含める特定のグループを選ぶか、組み込みグループを選ぶことができます。 組み込みグループには、**すべてのユーザー**、**すべてのデバイス**、**すべてのユーザーとすべてのデバイス**が含まれます。 
 
 >[!NOTE]
->Intune では、便利なように、最適化が組み込まれた **[すべてのユーザー]** グループと **[すべてのデバイス]** グループがコンソールで提供されています。 "すべてのユーザー" または "すべてのデバイス" グループを自分で作るのではなく、これらのグループを使ってすべてのユーザーおよびすべてのデバイスを対象にすることを強くお勧めします。
+>Intune では、便利なように、最適化が組み込まれた **[すべてのユーザー]** グループと **[すべてのデバイス]** グループがコンソールで提供されています。 "すべてのユーザー" または "すべてのデバイス" グループを自分で作るのではなく、これらのグループを使ってすべてのユーザーおよびすべてのデバイスを対象にすることを強くお勧めします。<p></p>
+>Microsoft Intune 管理者は、マネージド デバイス上の Microsoft Office アプリケーションにどのユーザー アカウントを追加するかを制御することができます。 許可されている組織ユーザー アカウントのみにアクセスを制限したり、登録済みデバイス上の個人アカウントをブロックしたりできます。 サポートされているアプリケーションがアプリの構成を処理し、未承認のアカウントを削除してブロックします。
 
 アプリケーション構成ポリシーの含まれるグループを選ぶと、除外される特定のグループも選べます。 詳細については、「[Microsoft Intune でのアプリ割り当ての組み込みと除外](apps-inc-exl-assignments.md)」を参照してください。
 
@@ -58,7 +59,7 @@ Microsoft Intune のアプリ構成ポリシーを使用して、iOS アプリ�
 8.  **[構成ポリシーの追加]** ウィンドウで、**[構成設定]** を選択します。
 9. **[構成設定の形式]** を選択します。 XML 情報を追加するには、次のいずれかを選択します。
     - **構成デザイナーを使用する**
-    - **XML データを入力する**<br></br>
+    - **XML データを入力する**<br><br>
     構成デザイナーの使用の詳細については、「[構成デザイナーの使用](#use-configuration-designer)」を参照してください。 XML データの入力の詳細については、「[XML データを入力する](#enter-xml-data)」を参照してください。 
 10. XML 情報を追加したら、**[OK]** を選び、**[追加]** を選んで構成ポリシーを追加します。 構成ポリシーの概要ウィンドウが表示されます。
 11. **[割り当て]** を選んで、含めるオプションと除外するオプションを表示します。 
@@ -95,6 +96,17 @@ Microsoft Intune には、アプリに固有の構成設定が用意されてい
 2. **[削除]** を選択します。
 
 \{\{ 文字と \}\} 文字を使用できるのはトークンの種類のみであり、他の目的には使用しないでください。
+
+### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>複数 ID アプリで構成済みの組織アカウントのみを許可する 
+
+Android デバイスでは、次のキー/値ペアを使用します。
+
+| **Key** | IntuneMAMAllowedAccountsOnly |
+|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **値** | <ul><li>**[有効]**: [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) キーによって定義された管理対象のユーザー アカウントのみが許可されます。</li><li>**[無効]** (**[有効]** と大文字小文字を問わず一致しないすべての値): すべてのアカウントが許可されます。</li></ul> |
+
+   > [!NOTE]
+   > 複数 ID で構成された組織アカウントのみを許可する場合は、OneDrive for iOS 10.34 以降、および Outlook for iOS 2.99.0 以降を使用する必要があります。
 
 ## <a name="enter-xml-data"></a>XML データを入力する
 

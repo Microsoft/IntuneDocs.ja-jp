@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/22/2018
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: daf4063f7713dafa938398cdc95344ffe25ae8f0
-ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
+ms.openlocfilehash: 06ede788575c3995f7e9fd0b0dd92a32aa8e7809
+ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44031322"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169534"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS 用 Microsoft Intune App SDK 開発者ガイド
 
@@ -32,7 +32,7 @@ iOS 用 Microsoft Intune App SDK を使用すると、ネイティブ iOS アプ
 
 * OS X 10.8.5 以降を実行し、Xcode 9 以降がインストールされている Mac OS コンピューターが必要になります。
 
-* アプリは iOS 9.3.5 以降を対象としている必要があります。
+* アプリは iOS 10 以降を対象としている必要があります。
 
 * [iOS 用の Intune アプリ SDK のライセンス条項](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf)を読みます。 記録としてライセンス条項を印刷し、保管します。 iOS 用の Intune App SDK をダウンロードし、使用すると、このライセンス条項に同意したことになります。  本ライセンス条項に同意されない場合、本ソフトウェアを使用することはできません。
 
@@ -40,13 +40,13 @@ iOS 用 Microsoft Intune App SDK を使用すると、ネイティブ iOS アプ
 
 ## <a name="whats-in-the-sdk"></a>SDK の機能
 
-iOS 用 Intune App SDK には、スタティック ライブラリ、リソース ファイル、API ヘッダー、デバッグ設定 plist ファイルおよび構成ツールが含まれています。 ほとんどのポリシー適用では、モバイル アプリに単にリソース ファイルを含め、ライブラリに静的にリンクできます。 高度な Intune APP 機能は、API を介して適用されます。
+iOS 用 Intune App SDK には、スタティック ライブラリ、リソース ファイル、API ヘッダー、デバッグ設定 plist ファイルおよび構成ツールが含まれています。 ほとんどのポリシー適用では、クライアント アプリに単にリソース ファイルを含め、ライブラリに静的にリンクできます。 高度な Intune APP 機能は、API を介して適用されます。
 
 このガイドでは、iOS 用 Intune App SDK の次のコンポーネントの使用方法について説明します。
 
-* **libIntuneMAM.a**: Intune アプリ SDK の静的ライブラリ。 アプリで拡張機能を使用しない場合は、このライブラリをプロジェクトにリンクして、アプリで Intune モバイル アプリケーション管理を行えるようにします。
+* **libIntuneMAM.a**: Intune アプリ SDK の静的ライブラリ。 アプリで拡張機能を使用しない場合は、このライブラリをプロジェクトにリンクして、アプリで Intune クライアント アプリケーション管理を行えるようにします。
 
-* **IntuneMAM.framework**: Intune アプリ SDK フレームワーク。 アプリで Intune モバイル アプリケーション管理を行えるようにするには、このフレームワークをプロジェクトにリンクします。 アプリで拡張機能を使用する場合は、スタティック ライブラリではなくフレームワークを使用して、プロジェクトがスタティック ライブラリの複数のコピーを作成しないようにします。
+* **IntuneMAM.framework**: Intune アプリ SDK フレームワーク。 アプリで Intune クライアント アプリケーション管理を行えるようにするには、このフレームワークをプロジェクトにリンクします。 アプリで拡張機能を使用する場合は、静的ライブラリではなくフレームワークを使用して、プロジェクトが静的ライブラリの複数のコピーを作成しないようにします。
 
 * **IntuneMAMResources.bundle**: SDK が依存するリソースが含まれているリソース バンドル。
 
@@ -144,7 +144,9 @@ Intune アプリ SDK を有効にするには、次の手順を実行します�
 
 5. アプリが `UIApplication canOpenURL` に渡す各プロトコルを、アプリの Info.plist ファイルの `LSApplicationQueriesSchemes` 配列に含めます。 次の手順に進む前に、変更内容を必ず保存してください。
 
-6. [SDK のリポジトリ](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)に含まれる IntuneMAMConfigurator ツールを使用して、アプリの Info.plist の構成を終了します。 このツールには 3 つのパラメーターが含まれています。
+6. アプリでまだ FaceID が使用されていない場合、既定のメッセージと共に [NSFaceIDUsageDescription Info.plist キー](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75)が確実に構成されているようにします。 これは、iOS がアプリでの FaceID の用途をユーザーに通知するために必要です。 Intune アプリ保護ポリシー設定では、IT 管理者が構成している場合、アプリにアクセスするための手段として FaceID を使用することが許可されています。
+
+7. [SDK のリポジトリ](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)に含まれる IntuneMAMConfigurator ツールを使用して、アプリの Info.plist の構成を終了します。 このツールには、次の 3 つのパラメーターがあります。
 
    |プロパティ|使用方法|
    |---------------|--------------------------------|
@@ -153,9 +155,6 @@ Intune アプリ SDK を有効にするには、次の手順を実行します�
    |- o |  (省略可能) `<Path to the output plist>` |
 
 "-o" パラメーターが指定されていない場合、入力ファイルはインプレースで変更されます。 このツールにはべき等性があるため、アプリの Info.plist や権利に変更が入った場合は再実行してください。 また、Intune SDK を更新する際は、ツールの最新バージョンをダウンロードして実行してください。これは、Info.plist の構成要件が、最新のリリースで変更されている場合があるためです。
-
-> [!NOTE]
-> アプリでまだ FaceID が使用されていない場合、既定のメッセージと共に `NSFaceIDUsageDescription` info.plist キーが構成されていることを確認します。 これは、iOS がアプリでの FaceID の用途をユーザーに通知するために必要です。 Intune アプリ保護ポリシー設定では、IT 管理者が構成している場合、アプリにアクセスするための手段として FaceID を使用することが許可されています。
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Azure Active Directory Authentication Library (ADAL) の構成
 
@@ -207,7 +206,7 @@ Intune App SDK は、認証と条件に基づく起動シナリオに [Azure Act
 
 ### <a name="if-your-app-does-not-use-adal"></a>アプリが ADAL を使用していない場合
 
-アプリで ADAL を使用していない場合、Intune アプリ SDK が ADAL パラメーターの既定値を提供し、Azure AD に対する認証を処理します。 上記の ADAL 設定の値は指定する必要がありません。
+先に述べたように、Intune App SDK は、認証と条件に基づく起動シナリオに [Azure Active Directory 認証ライブラリ](https://github.com/AzureAD/azure-activedirectory-library-for-objc)を使用しています。 また、デバイスを登録しないで管理するために MAM サービスにユーザー ID を登録する場合も、ADAL を利用します。 **アプリがその認証メカニズムに ADAL を使用していない場合**、Intune App SDK が ADAL パラメーターの既定値を提供し、Azure AD に対する認証を処理します。 上記の ADAL 設定の値は指定する必要がありません。 アプリで使用されている認証メカニズムが存在する場合、それが ADAL のプロンプトの一番上に表示されます。 
 
 ## <a name="configure-settings-for-the-intune-app-sdk"></a>Intune App SDK の設定を構成する
 
@@ -382,7 +381,7 @@ MAMPolicyRequired| ブール型| アプリに Intune アプリ保護ポリシー
 * 要求に関連付けられているアカウントの ID
 * 要求の結果を示す状態コード
 * エラー文字列とステータス コードの説明
-* `NSError` オブジェクトです。 このオブジェクトは、返される可能性のある特定のステータス コードと共に `IntuneMAMEnrollmentStatus.h` で定義されています。
+* `NSError` オブジェクト。 このオブジェクトは、返される可能性のある特定のステータス コードと共に `IntuneMAMEnrollmentStatus.h` で定義されています。
 
 > [!NOTE]
 > この情報はデバッグ目的にのみ使用できます。 アプリのビジネス ロジックは、これらの通知に基づく必要はありません。 この情報は、デバッグまたは監視を目的としてテレメトリ サービスに送信できます。

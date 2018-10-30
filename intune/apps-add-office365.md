@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,17 +15,19 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c8c87b5a76a69809e46fe3f4c5d74019546a819d
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 95c9e2282336e565ddd5bd3cc4484776aa45a6eb
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330230"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828399"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune で Windows 10 デバイスに Office 365 アプリを割り当てる
 
 このアプリの種類を使用すると、Windows 10 を実行している管理対象のデバイスに Office 365 アプリを簡単に割り当てることができます。 また、ライセンスを所有している場合は、Microsoft Project Online デスクトップ クライアントおよび Visio Pro for Office 365 のアプリをインストールすることもできます。 必要なアプリは、Intune コンソールのアプリ一覧に単一のエントリとして表示されます。
 
+> [!NOTE]
+> Microsoft Intune で展開された Office 365 ProPlus アプリをアクティブ化するには、Office 365 ProPlus ライセンスを使用する必要があります。 現時点では、Office 365 Business Edition は Intune ではサポートされていません。
 
 ## <a name="before-you-start"></a>開始する前に
 
@@ -104,7 +106,8 @@ ms.locfileid: "43330230"
     - **[Remove MSI from end-user devices]** \(エンドユーザーのデバイスから MSI を削除する\): エンドユーザーのデバイスから、既にある Office .MSI アプリを削除するかどうか選択します。 エンドユーザーのデバイスに、既に .MSI アプリがある場合、インストールは成功しません。 インストールされるアプリは、**[アプリ スイートの構成]** でインストール対象として選択されたアプリに限りません。すべての Office (MSI) アプリがエンド ユーザー デバイスから削除されます。 詳細については、「[Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](https://docs.microsoft.com/en-us/deployoffice/upgrade-from-msi-version)」 (Office 365 ProPlus へのアップグレード時に Office の既存の MSI バージョンを削除する) を参照してください。 
     - **[アプリのソフトウェア ライセンス条項を自動的に受け入れる]**: エンドユーザーに使用許諾契約書に同意することを求めない場合は、このオプションを選択します。 その後、Intune で契約書を自動的に承諾します。
     - **[共有コンピューターのライセンス認証を使用]**: 複数のユーザーでコンピューターを共有するときは、このオプションを選びます。 詳細については、[Office 365 に対する共有コンピューターのライセンス認証の概要](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)に関するページを参照してください。
-    - **[言語]**: Office は、エンドユーザーのデバイス上の Windows にインストールされている任意のサポート言語で自動的にインストールされます。 アプリ スイートと共に追加の言語をインストールする場合は、このオプションを選択します。
+    - **[言語]**: Office は、エンドユーザーのデバイス上の Windows にインストールされている任意のサポート言語で自動的にインストールされます。 アプリ スイートと共に追加の言語をインストールする場合は、このオプションを選択します。 <p></p>
+    Intune によって管理されている Office 365 Pro Plus アプリに追加の言語を展開することができます。 使用可能な言語のリストには、言語パックの **種類** (コア、部分、校正) が含まれます。 Azure Portal で、**[Microsoft Intune]** > **[クライアント アプリ]** > **[アプリ]** > **[追加]** の順に選びます。 **[アプリの追加]** ブレードの **[アプリの種類]** 一覧で、**[Office 365 スイート]** の **[Windows 10]** を選びます。 **[アプリ スイートの設定]** ブレードで **[言語]** を選びます。 詳細については、「[Office 365 ProPlus での言語の展開の概要](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus)」を参照してください。
 
 ## <a name="finish-up"></a>完了
 
