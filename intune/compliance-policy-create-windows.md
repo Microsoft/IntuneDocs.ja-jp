@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11ccace4ca8e43e09b8aebeb92530629cf50a472
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: e38e6f615220135e9c4c9c786ab260f5921890ea
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602318"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642908"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune で Windows デバイス用のデバイス コンプライアンス ポリシーを追加する
 
@@ -119,8 +119,6 @@ Windows 8.1 PC の場合、バージョン **3** が返されます。 Windows �
 
 HAS サービスのしくみの詳細については、「[HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp)」をご覧ください。
 
-脅威対策サービスとしての Windows Defender ATP (Advanced Threat Protection) を設定するには、「[Intune で条件付きアクセスによる Windows Defender ATP を有効にする](advanced-threat-protection.md)」を参照してください。
-
 ### <a name="device-properties"></a>デバイスのプロパティ
 
 - **最小 OS バージョン**: 許容される最小バージョンを **major.minor.build.CU の番号**形式で入力します。 正しい値を得るには、コマンド プロンプトを開き、「`ver`」と入力します。 `ver` コマンドは次の形式でバージョンを返します。
@@ -183,6 +181,8 @@ HAS サービスのしくみの詳細については、「[HealthAttestation CSP
   - **[低]**: 存在する脅威が低レベルの場合のみ、デバイスは準拠として評価されます。 低レベルより高い脅威が存在する場合、デバイスは非準拠状態になります。
   - **[中]**: デバイスに存在する脅威が低レベルまたは中レベルの場合、デバイスは準拠として評価されます。 デバイスで高レベルの脅威が検出された場合は、非準拠と判定されます。
   - **[高]**: 最も安全性の低いオプションであり、すべての脅威レベルが許容されます。 このソリューションをレポート目的のみで使用した場合、役立つ場合があります。
+  
+  脅威対策サービスとしての Windows Defender ATP (Advanced Threat Protection) を設定するには、「[Intune で条件付きアクセスによる Windows Defender ATP を有効にする](advanced-threat-protection.md)」を参照してください。
 
 ## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
 
