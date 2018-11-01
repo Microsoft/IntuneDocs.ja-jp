@@ -15,12 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b0b35ed6e32feb29748e023371ed1b2628f2da0d
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: c3edbf3663d3226f806bf36af97b97cdf4d169c1
+ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075811"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49357089"
 ---
 # <a name="manage-internet-access-using-an-microsoft-intune-policy-protected-browser"></a>Microsoft Intune のポリシーで保護されたブラウザーを使用してインターネット アクセスを管理する
 
@@ -287,18 +287,7 @@ iOS デバイスに Managed Browser をインストールしているエンド �
 ### <a name="turn-off-usage-data"></a>使用状況データをオフにする
 Microsoft は、Microsoft の製品やサービスを改善するために、Managed Browser のパフォーマンスおよび使用に関する匿名データを自動的に収集します。 ただし、ユーザーはデバイスの **[使用状況データ]** 設定を使用して、データの収集を無効にすることができます。 このデータの収集方法は制御できません。
 
-
 -   iOS デバイスでは、証明書の有効期限が切れている Web サイトや証明書が信頼されていない Web サイトにユーザーがアクセスしても、開くことができません。
--   ユーザーが自分のデバイスの組み込みブラウザーに対して構成した設定は、Managed Browser では使用されません。 Managed Browser では、これらの設定にアクセスできません。
-
--   Managed Browser に関連付けられているアプリ保護ポリシーにオプション **[アクセスの際にシンプルな PIN を要求する]** または **[アクセスの際に会社の資格情報を要求する]** を設定した場合、およびユーザーが認証ページでヘルプのリンクを選択した場合は、ポリシーのブロック リストに追加されているかどうかにかかわらず、インターネット サイトを参照できます。
-
--   Managed Browser では、サイトへの直接のアクセスのみをブロックできます。 中間サービス (翻訳サービスなど) がサイトへのアクセスに使用される場合、そのアクセスはブロックされません。
-
--   認証を許可し、Intune ドキュメントにアクセスするために、**&#42;.microsoft.com** は許可またはブロック リスト設定の対象から除外されます。 常に許可されます。
-
-### <a name="turn-off-usage-data"></a>使用状況データをオフにする
-Microsoft は、Microsoft の製品やサービスを改善するために、Managed Browser のパフォーマンスおよび使用に関する匿名データを自動的に収集します。 ただし、ユーザーはデバイスの **[使用状況データ]** 設定を使用して、データの収集を無効にすることができます。 このデータの収集方法は制御できません。
 
 ## <a name="next-steps"></a>次の手順
 
