@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/20/2018
+ms.date: 10/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 20e9d4799b9ea4329c8286f0b75ea2a7d555e07b
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 99d217c2d1960a1ca163bf697bfbd28e5406b58f
+ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253767"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075848"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune アプリの管理とは
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune を使用すれば、IT 管理者として、会社の従業員が使用するモバイル アプリを管理することができます。 この機能は、デバイス管理とデータ保護に加え用意されています。 管理者の優先事項の 1 つは、エンド ユーザーが仕事を行う上で必要なアプリに確実にアクセスできるようにすることです。 この目標を達成するには以下の理由により、課題があります。
+Microsoft Intune を使用すれば、IT 管理者として、会社の従業員が使用するクライアント アプリを管理することができます。 この機能は、デバイス管理とデータ保護に加え用意されています。 管理者の優先事項の 1 つは、エンド ユーザーが仕事を行う上で必要なアプリに確実にアクセスできるようにすることです。 この目標を達成するには以下の理由により、課題があります。
 - さまざまなデバイス プラットフォームとアプリの種類が存在する。
 - 会社のデバイスとユーザーの個人デバイスの両方で、アプリの管理が必要になる場合がある。
 - 社内のネットワークとデータの安全性を確保する必要がある。
@@ -68,7 +68,7 @@ Intune では、アプリを実行するデバイス上で必要なアプリを�
     Intune は **[監視 + 管理]** セクションにあります。
 3. **[Microsoft Intune]** ウィンドウで、**[クライアント アプリ]** を選択します。
 
-    ![[モバイル アプリ] ワークロード ウィンドウ](./media/apps-workload.png)
+    ![[クライアント アプリ] ワークロード ウィンドウ](./media/apps-workload.png)
 
 次の 4 つのセクションでは、**[クライアント アプリ]** ウィンドウで使用可能なオプションについて説明します。
 

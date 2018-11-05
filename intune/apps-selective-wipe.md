@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/02/2018
+ms.date: 10/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 66f26811f5021b71c62a2e994c73e2144409d199
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 7881e117893ec01098c13f79e00a2b5388652155
+ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329547"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48903558"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Intune で管理されているアプリから会社のデータをワイプする方法
 
@@ -44,7 +44,7 @@ ms.locfileid: "43329547"
 
     ![Microsoft Intune ウィンドウのスクリーンショット](./media/apps-selective-wipe01.png)
 
-3.  **[Mobile Apps]** ウィンドウで、**[アプリの選択的ワイプ]** を選びます。
+3.  **[クライアント アプリ]** ウィンドウで、**[アプリの選択的ワイプ]** を選択します。
 
 4.  **[新しいワイプ要求]** を選択します。 **[新しいワイプ要求]** ウィンドウが開きます。
 
@@ -62,7 +62,7 @@ ms.locfileid: "43329547"
 
 ワイプ要求の全体的状態、保留中の要求の数、失敗の数がまとめてある概要レポートを設定できます。 さらに詳しい情報が必要な場合、次の手順を実行します。
 
-1.  **[Mobile Apps] - [アプリの選択的ワイプ]** ウィンドウでは、要求をユーザー別にグループ化して一覧表示できます。 ワイプ要求はデバイスで実行されている保護アプリごとに作成されるため、1 ユーザーに対する要求が複数ある場合があります。 状態は、ワイプ要求が **[保留中]**、**[失敗]**、または **[成功]** のいずれかであることを示します。
+1.  **[クライアント アプリ] - [アプリの選択的ワイプ]** ウィンドウでは、要求をユーザー別にグループ化して一覧表示できます。 ワイプ要求はデバイスで実行されている保護アプリごとに作成されるため、1 ユーザーに対する要求が複数ある場合があります。 状態は、ワイプ要求が **[保留中]**、**[失敗]**、または **[成功]** のいずれかであることを示します。
 
     ![[アプリの選択的ワイプ] ウィンドウでのワイプ要求の状態のスクリーンショット](./media/wipe-request-status-1.png)
 
@@ -75,7 +75,7 @@ ms.locfileid: "43329547"
 
 [保留中] 状態のワイプは、手動で削除するまで表示されます。 ワイプ要求を手動で削除するには、次の手順を実行します。
 
-1.  **[Mobile Apps] - [アプリの選択的ワイプ]** ウィンドウを開きます。
+1.  **[クライアント アプリ] - [アプリの選択的ワイプ]** ウィンドウを開きます。
 
 2.  一覧で削除するワイプ要求を右クリックし、**[ワイプ要求の削除]** を選びます。
 

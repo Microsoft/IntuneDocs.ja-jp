@@ -3,10 +3,10 @@ title: Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展�
 titlesuffix: Microsoft Intune
 description: Microsoft Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/04/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 425dce514d9cf0288a5e84ef5fa89790e6cee8be
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: c1d530059d7c5b5f759516e86d4ee3dbf8512aa5
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347309"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799627"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 
@@ -46,19 +46,27 @@ WIP ポリシーを追加するときのいくつかの概念について理解�
 
 ## <a name="prerequisites"></a>必要条件
 
-WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを構成する必要があります。 [Intune で MAM プロバイダーを構成する方法](app-protection-policies-configure-windows-10.md)を理解します。
+WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを構成する必要があります。 [Intune で MAM プロバイダーを構成する方法](app-protection-policies-configure-windows-10.md)を理解します。  
+
+> [!IMPORTANT]
+> WIP は複数の ID をサポートしていません。存在できる管理対象 ID は一度に 1 つだけです。
 
 さらに、次のライセンスと更新プログラムが必要です。
 
 -   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) ライセンス
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
-> [!IMPORTANT]
-> WIP は複数の ID をサポートしていません。存在できる管理対象 ID は一度に 1 つだけです。
+
+
+
 
 ## <a name="to-add-a-wip-app-protection-policy"></a>WIP アプリ保護ポリシーを追加するには
 
 組織で Intune を設定した後は、WIP 固有のポリシーを作成できます。
+
+> [!TIP]  
+> 利用可能な設定とその構成方法を含む、Intune の WIP ポリシーの作成に関する情報については、Windows セキュリティ ドキュメント ライブラリの「[Azure Portal での Microsoft Intune を使用して MAM で Windows 情報保護 (WIP) ポリシーを作成する](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure)」を参照してください。 
+
 
 1. [Azure ポータル](https://portal.azure.com)にサインインします。
 2. **[すべてのサービス]** > **[Intune]** の順に選択します。
@@ -123,7 +131,7 @@ WIP が有効なアプリおよび WIP にとって不明なアプリを使用�
 ### <a name="what-are-the-protection-modes"></a>保護モードの種類
 
 #### <a name="block"></a>ブロック
-WIP は不適切なデータ共有行為を検索し、ユーザーが操作を完了できないようにします。 これには、会社で保護されていないアプリ間での情報の共有や、組織外の他のユーザーやデバイス間での会社データの共有などが含まれます。
+WIP は不適切なデータ共有行為を検索し、ユーザーが操作を完了できないようにします。 ブロック対象のアクションには、会社で保護されていないアプリ間での情報の共有や、組織外の他のユーザーやデバイス間での企業データの共有などが含まれます。
 
 #### <a name="allow-overrides"></a>オーバーライドの許可
 WIP は不適切なデータ共有を検索し、ユーザーが危険なことを行うと警告します。 ただし、このモードでは、ユーザーはポリシーをオーバーライドしてデータを共有することができ、その操作は監査ログに記録されます。

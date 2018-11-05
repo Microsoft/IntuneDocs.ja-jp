@@ -6,21 +6,21 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 10/3/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
-ms.reviewer: mghadial
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7822e9e5a0e2bc5b054ccc3e93b9aa51bca5b79
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: f96ca3075bab5c8bacaea62bb4fc04bd957cf01e
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329412"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863180"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Intune でアプリ保護ポリシーのアクセス アクションを利用し、データを選択的にワイプする
 
@@ -61,7 +61,7 @@ iOS の場合、**[設定]** ドロップダウンを利用して次の設定の
 -  [デバイス モデル]
 
 **デバイス モデル**設定を使用するには、iOS のモデル識別子の一覧をセミコロンで区切って入力します。 iOS のモデル識別子は、[HockeyApp のサポート ドキュメント](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types)の Device Type 列の下で確認できます。<br>
-入力例: *iPhone5,2; iPhone5,3*
+入力例: *iPhone5,2;iPhone5,3*
 
 エンド ユーザー デバイスの Intune クライアントは、アプリケーション保護ポリシーに対して Intune で指定されている、デバイス モデルの文字列の単純一致に基づいてアクションを実行します。 一致は、デバイスの報告に完全に依存します。 ユーザー (IT 管理者) は、動作が意図したものであるか確認することを推奨されます。それには、さまざまなデバイスの製造元とモデルをベースとし、小規模なユーザー グループを対象として、この設定をテストします。 既定値は **[未構成]** です。<br>
 次の操作のいずれかを選択します。 
@@ -69,7 +69,7 @@ iOS の場合、**[設定]** ドロップダウンを利用して次の設定の
 - 指定されたものを許可 (未指定でワイプ)
 
 **IT 管理者が、同じ Intune ユーザーの同じアプリを対象とするポリシー間で、異なる iOS モデル識別子の一覧を入力した場合、どうなりますか。**<br>
-構成値に対して 2 つのアプリ保護ポリシーの間に競合が発生した場合、Intune では通常、最も制限の厳しいアプローチが取られます。 したがって、対象の Intune ユーザーが開いている対象のアプリに対して送信されるポリシーの結果は、同じアプリ/ユーザーの組み合わせを対象とする、"*ポリシー A*" と "*ポリシー B*" の iOS モデル識別子のリストの積集合となります。 たとえば、"*ポリシー A*" が "iPhone5,2; iPhone5,3" を指定し、"*ポリシー B*" が "iPhone5,3" を指定している場合、"*ポリシー A*" と "*ポリシー B*" 両方の対象である Intune ユーザーのポリシーの結果は "iPhone5,3" となります。 
+構成値に対して 2 つのアプリ保護ポリシーの間に競合が発生した場合、Intune では通常、最も制限の厳しいアプローチが取られます。 したがって、対象の Intune ユーザーが開いている対象のアプリに対して送信されるポリシーの結果は、同じアプリ/ユーザーの組み合わせを対象とする、"*ポリシー A*" と "*ポリシー B*" の iOS モデル識別子のリストの積集合となります。 たとえば、"*ポリシー A*" が "iPhone5,2;iPhone5,3" を指定し、"*ポリシー B*" が "iPhone5,3" を指定している場合、"*ポリシー A*" と "*ポリシー B*" 両方の対象である Intune ユーザーのポリシーの結果は "iPhone5,3" となります。 
 
 ### <a name="android-policy-settings"></a>Android のポリシーの設定
 
@@ -83,10 +83,10 @@ Android の場合、**[設定]** ドロップダウンを利用して次の設�
 -  [デバイスの製造元]
 
 **[デバイスの製造元]** 設定を使用するには、Android の製造元の一覧をセミコロンで区切って入力します。 デバイスの Android の製造元は、デバイスの設定で確認できます。<br>
-入力例: *Manufacturer A; Manufacturer B* 
+入力例: *Manufacturer A;Manufacturer B* 
 
 >[!NOTE]
-> これらは、Intune を使用してデバイスから報告される一般的な製造元であり、次のような入力を使用できます: Asus; Blackberry; Bq; Gionee; Google; Hmd global; Htc; Huawei; Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola; Oneplus; Oppo; Samsung; Sharp; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk
+> これらは、Intune を使用してデバイスから報告される一般的な製造元であり、次のような入力を使用できます: Asus;Blackberry;Bq;Gionee;Google;Hmd global;Htc;Huawei;Infinix;Kyocera;Lemobile;Lenovo;Lge;Motorola;Oneplus;Oppo;Samsung;Sharp;Sony;Tecno;Vivo;Vodafone;Xiaomi;Zte;Zuk
 
 エンド ユーザー デバイスの Intune クライアントは、アプリケーション保護ポリシーに対して Intune で指定されている、デバイス モデルの文字列の単純一致に基づいてアクションを実行します。 一致は、デバイスの報告に完全に依存します。 ユーザー (IT 管理者) は、動作が意図したものであるか確認することを推奨されます。それには、さまざまなデバイスの製造元とモデルをベースとし、小規模なユーザー グループを対象として、この設定をテストします。 既定値は **[未構成]** です。<br>
 次の操作のいずれかを選択します。 
@@ -94,7 +94,7 @@ Android の場合、**[設定]** ドロップダウンを利用して次の設�
 - 指定されたものを許可 (未指定でワイプ)
 
 **IT 管理者が、同じ Intune ユーザーの同じアプリを対象とするポリシー間で、異なる Android 製造元の一覧を入力した場合、どうなりますか。**<br>
-構成値に対して 2 つのアプリ保護ポリシーの間に競合が発生した場合、Intune では通常、最も制限の厳しいアプローチが取られます。 したがって、対象の Intune ユーザーが開いている対象のアプリに対して送信されるポリシーの結果は、同じアプリ/ユーザーの組み合わせを対象とする、"*ポリシー A*" と "*ポリシー B*" の Android 製造元のリストの積集合となります。 たとえば、"*ポリシー A*" が "Google; Samsung" を指定し、"*ポリシー B*" が "Google" を指定している場合、"*ポリシー A*" と "*ポリシー B*" 両方の対象である Intune ユーザーのポリシーの結果は "Google" となります。 
+構成値に対して 2 つのアプリ保護ポリシーの間に競合が発生した場合、Intune では通常、最も制限の厳しいアプローチが取られます。 したがって、対象の Intune ユーザーが開いている対象のアプリに対して送信されるポリシーの結果は、同じアプリ/ユーザーの組み合わせを対象とする、"*ポリシー A*" と "*ポリシー B*" の Android 製造元のリストの積集合となります。 たとえば、"*ポリシー A*" が "Google;Samsung" を指定し、"*ポリシー B*" が "Google" を指定している場合、"*ポリシー A*" と "*ポリシー B*" 両方の対象である Intune ユーザーのポリシーの結果は "Google" となります。 
 
 ### <a name="additional-settings-and-actions"></a>追加の設定とアクション 
 
@@ -119,5 +119,3 @@ Intune アプリ保護ポリシーの詳細については、次を参照して�
 - [アプリ保護ポリシーを作成して割り当てる方法](app-protection-policies.md)
 - [iOS アプリ保護ポリシー設定](app-protection-policy-settings-ios.md)
 - [Microsoft Intune の Android アプリ保護ポリシー設定](app-protection-policy-settings-android.md) 
-
-

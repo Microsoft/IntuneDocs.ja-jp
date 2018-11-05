@@ -1,11 +1,11 @@
 ---
-title: ポータル サイト アプリをインストールしてサインインする | Microsoft Docs
+title: iOS に Intune ポータル サイト アプリをインストールしてサインインする | Microsoft Docs
 description: ''
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,16 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 984c9212a4aa3221a4de5e02d96f912d800e9490
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: f8ca89168e46e038b57fba9cc2e159416795e112
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146377"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260200"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>ポータル サイト アプリをインストールしてサインインする
 
-ポータル サイトはアプリの一種であり、iOS デバイスにインストールすることで、会社または学校のアプリ、電子メール、およびネットワークにアクセスできるようになります。 アクセス許可を得るには、事前に、ポータル サイト アプリをインストールし、このアプリを使用して、Microsoft Intune にデバイスを登録しておく必要があります。 詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなりますか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)」を参照してください。
+iOS デバイスに Intune ポータル サイト アプリをインストールして、職場や学校のアプリ、電子メールおよびネットワークにアクセスすることができます。 このアプリを使用すると、ご使用のデバイスを Microsoft Intune に登録し、職場や学校のリソースへのそれを使用してのアクセスをセキュリティで保護することができます。 詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなりますか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)」を参照してください。
 
 1.  **App Store** を開いて、**Intune ポータル サイト**を探します。
 

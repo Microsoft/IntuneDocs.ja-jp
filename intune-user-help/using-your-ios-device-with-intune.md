@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,19 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 51bca0c2aa10f15511e1644eda9ca6dd11c36f8b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 99570a30130d35a651701749628cd918acf858e0
+ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031585"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864560"
 ---
-# <a name="using-your-ios-device-with-intune"></a>iOS デバイスを Intune で使用する
-
-仕事を効率化するために Intune でできることは数多くあります。 会社から求められる可能性のある最も一般的な仕事内容のリストを以下に示します。
+# <a name="using-your-ios-device-with-intune-company-portal"></a>iOS デバイスを Intune ポータル サイトで使用する
+この記事では、iOS 用ポータル サイトに固有のタスクおよび情報を示します。 これらを使用して、iOS デバイスのトラブルシューティングや管理を行うことができます。 任意のリンクをクリックすると、詳細情報、手順、およびスクリーンショットが表示されます。
 
 ## <a name="supported-versions"></a>サポートされているバージョン
 
-現在、Intune は iOS 9.0 以降をサポートしています。
+現在、iOS 用ポータル サイトでは iOS 10.0 以降がサポートされています。
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Intune に登録して、ポータル サイトをインストールする
 

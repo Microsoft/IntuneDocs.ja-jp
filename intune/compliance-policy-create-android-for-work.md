@@ -2,10 +2,10 @@
 title: Microsoft Intune で Android 仕事用プロファイルのコンプライアンス ポリシーを作成する - Azure | Microsoft Docs
 description: Android 仕事用プロファイル デバイス用の Microsoft Intune デバイス コンプライアンス ポリシーを作成または構成します。 脱獄されたデバイスを許可し、許容可能な脅威レベルを設定し、Google Play を確認し、オペレーティング システムの最小および最大バージョンを入力し、パスワードの要件を選択し、サイドローディング アプリケーションを許可します。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 0c7f1c7c47f2fa4c950cbffeaf8fe274fe239a63
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905089"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828161"
 ---
 # <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>Intune で Android 仕事用プロファイル デバイス用のデバイス コンプライアンス ポリシーを追加する
 
@@ -113,7 +113,11 @@ Android 仕事用プロファイルがあるデバイスでは、**[アプリの
 - **[提供元不明のアプリをブロックする]**: Android 仕事用プロファイル デバイスでは、提供元不明のアプリのインストールは常に制限されるため、この設定を構成する必要はありません。
 - **[ポータル サイト アプリのランタイム整合性]**: ポータル サイト アプリの既定のランタイム環境がインストールされているかどうか、ポータル サイト アプリが適切に署名されているかどうか、デバッグ モードになっていないかどうか、既知の提供元からインストールされているかどうかを確認します。
 - **[デバイスでの USB デバッグをブロックする]**: USB デバッグは Android 仕事用プロファイル デバイスでは既に無効になっているため、この設定を構成する必要はありません。
-- **[最低限のセキュリティ パッチ レベル]**: デバイスに含めることができる最も古いセキュリティ パッチ レベルを選択します。 修正プログラムがこのレベルに達していないデバイスは非準拠になります。 日付は `YYYY-MM-DD` 形式で入力する必要があります。
+- **[最低限のセキュリティ パッチ レベル]**: デバイスに含めることができる最も古いセキュリティ パッチ レベルを選択します。 修正プログラムがこのレベルに達していないデバイスは非準拠になります。 日付は *YYYY-MM-DD* 形式で入力する必要があります。
+- **[制限付きアプリ]**: バンドル ID をポリシーに追加することでアプリを制限できます。 その後、あるデバイスにそのアプリがインストールされた場合、そのデバイスは非準拠となります。 
+   - **[アプリ名]**: バンドル ID の識別を容易にするわかりやすい名前を入力します。 
+   - **[アプリ バンドル ID]**: アプリ プロバイダーの一意のバンドル ID を入力します。 Android の場合、アプリ バンドル ID は、アプリのストア URL から取得されます。 たとえば、ストアでのアプリの URL が *https://play.google.com/store/apps/details?id=com.Slack* の場合、アプリ バンドル ID は *com.Slack* になります。
+
 
 ## <a name="assign-user-groups"></a>ユーザー グループを割り当てる
 

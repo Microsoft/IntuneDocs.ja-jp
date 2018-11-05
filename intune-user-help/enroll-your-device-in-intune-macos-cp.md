@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/08/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: af5c7492563c8df0168eff3250ae1bbad2cc323e
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147719"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260251"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>ポータル サイト アプリで Intune に macOS デバイスを登録する
 
@@ -80,8 +80,17 @@ ms.locfileid: "43147719"
 
 9. ポータル サイト アプリに表示される最初の画面で**サインイン**が求められます。 ポータル サイト Web サイトにサインインしたときに使用したものと同じ職場や学校のアカウントを使用します。
 
-10. ポータル サイトではアカウント情報が確認され、**デバイス登録**の状況と**デバイス コンプライアンス**の状況が表示されます。 学校や職場の macOS デバイスをセキュリティで保護するために行う必要があるアクションが黄色の三角形で強調表示されます。 **[開始]** をクリックして登録を開始します。 デバイスを登録する場合は、[組織で確認できる情報](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)に関するページを参照してください。
+10. Intune ポータル サイトではアカウント情報が確認され、**デバイス登録**の状況と**デバイス コンプライアンス**の状況が表示されます。 学校や職場の macOS デバイスをセキュリティで保護するために行う必要があるアクションが黄色の三角形で強調表示されます。 **[開始]** をクリックして登録を開始します。 
 
-11. コンピューターのログイン情報を求められることがあります。 デバイスを管理対象に登録するまで数分かかる場合があります。 この間、デバイスで他の作業を行ってもかまいません。 会社アクセス設定が完了した後、完了を知らせるメッセージが表示されます。  
+11. 求められたら、コンピューターのサインイン情報を入力します。  
+
+デバイスを管理対象に登録するまで数分かかる場合があります。 この間、デバイスで他の作業を行ってもかまいません。 会社アクセス設定が完了した後、完了を知らせるメッセージが表示されます。  
+
+## <a name="unverified-profiles"></a>未確認のプロファイル
+macOS デバイスにインストールされているモバイル デバイス管理 (MDM) のプロファイルを確認した場合に、一部のプロファイルの状態が **[未確認]** と表示される場合があります。 **管理プロファイル**の状態が、**[確認済み]** と表示される場合は、心配する必要はありません。  
+
+管理プロファイルでは、MDM のチャネル接続が定義されます。 管理プロファイルが確認済みである場合、そのチャネルを介して送信されるその他のすべてのプロファイルは、その管理プロファイルのセキュリティ特性を継承します。
+
+また、それらの他のプロファイルは個別に検証される必要がないため、より迅速に生成され、デバイスに送信されます。 
 
 サポートが必要な場合は、 会社のサポートに問い合わせてください。 連絡先の情報は、[会社のポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)でわかります。  

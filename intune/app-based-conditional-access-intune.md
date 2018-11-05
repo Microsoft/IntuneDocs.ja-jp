@@ -2,8 +2,8 @@
 title: Intune でのアプリ ベースの条件付きアクセス
 description: Intune でのアプリ ベースの条件付きアクセスのしくみについて説明します。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5c467d20a3bf4f2cfb94db5cecfae78b1717993d
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 95458642f60dfb8c7ba18078ef4bd238c53502aa
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34561975"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231306"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Intune でのアプリ ベースの条件付きアクセス
 
@@ -27,7 +27,7 @@ ms.locfileid: "34561975"
 
 [Intune アプリ保護ポリシー](app-protection-policy.md)を使用すると、Intune に登録されているデバイス上の会社のデータを保護できます。 Intune での管理対象に登録されていない従業員所有のデバイスでも、アプリ保護ポリシーを使用できます。 この場合、会社はデバイスを管理しなくても、会社のデータとリソースが保護されるようにする必要はあります。
 
-アプリ ベースの条件付きアクセスとモバイル アプリ管理は、Intune アプリ保護ポリシーをサポートするモバイル アプリのみが Exchange Online やその他の Office 365 サービスにアクセスできるようにすることで、セキュリティ層を追加します。
+アプリ ベースの条件付きアクセスとクライアント アプリ管理は、Intune アプリ保護ポリシーをサポートするクライアント アプリのみが Exchange Online やその他の Office 365 サービスにアクセスできるようにすることで、セキュリティ層を追加します。
 
 > [!NOTE]
 > 管理対象アプリは、アプリ保護ポリシーが適用されたアプリであり、Intune で管理できます。

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/31/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,21 +15,23 @@ ms.assetid: abebfb5e-054b-435a-903d-d1c31767bcf2
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7508f2c2eca06ceacf203103ab2cad53abc39a65
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 61bb874fd914c69669197110ee5901ccfbc3f594
+ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347434"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075612"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune を使用する Windows 10 アプリの展開 
 
 現在、Microsoft Intune では、Windows 10 デバイスでのさまざまなアプリの種類と展開のシナリオがサポートされています。 アプリを Intune に追加した後、そのアプリをユーザーとデバイスに割り当てることができます。 ここでは、サポートされている Windows 10 シナリオに関連する詳細情報を示します。 さらに、Windows へのアプリの展開時に注意する必要がある主な詳細情報を示します。 
 
-基幹業務 (LOB) アプリとビジネス向け Microsoft Store アプリは、Windows 10 デバイスでサポートされているアプリの種類です。
+基幹業務 (LOB) アプリとビジネス向け Microsoft Store アプリは、Windows 10 デバイスでサポートされているアプリの種類です。 Windows アプリのファイル拡張子には、**.msi**、**.appx**、**.appxbundle** があります。  
 
 > [!Note]
-> デバイス コンテキストでアプリを展開するために最小限必要な Windows 10 更新プログラムは、[2018 年 5 月 23 日 — KB4100403 (OS ビルド 17134.81)](https://support.microsoft.com/en-us/help/4100403/windows-10-update-kb4100403) です。
+> 最新のアプリを展開するのに必要な最小の Windows 10 の更新プログラムは、次のとおりです。
+> - Windows 10 1803 の場合、[2018 年 5 月 23 日 —KB4100403 (OS ビルド 17134.81)](https://support.microsoft.com/help/4100403/windows-10-update-kb4100403)。
+> - Windows 10 1709 の場合、[2018 年 6 月 21 日—KB4284822 (OS ビルド 16299.522)](https://support.microsoft.com/help/4284822).
 
 ## <a name="windows-10-line-of-business-apps"></a>Windows 10 の基幹業務アプリ
 
@@ -44,11 +46,13 @@ Windows 10 の基幹業務アプリは署名され、Intune 管理コンソー�
 
 - **ユーザー コンテキスト**: アプリがユーザー コンテキストで展開されている場合、ユーザーがデバイスにサインインしたときにデバイス上でそのユーザーに対してマネージド アプリがインストールされます。 ユーザーがデバイスにサインインするまでは、アプリのインストールが正常に行われないことに注意してください。 
     - 最新の基幹業務アプリとビジネス向け Microsoft Store アプリ (オンラインとオフラインの両方) はユーザー コンテキストで展開することができ、必須インテントと利用可能インテントの両方をサポートします。
+    - **ユーザー モード**または**デュアル モード**で構築されている Win32 アプリは、ユーザー コンテキストでデプロイでき、**必須**と**利用可能**インテントの両方をサポートします。 
 - **デバイス コンテキスト**: アプリがデバイス コンテキストで展開されている場合、マネージド アプリは Intune によってデバイスに直接インストールされます。
     - 最新の基幹業務アプリと、オンライン ライセンス付きのビジネス向け Microsoft Store アプリのみがデバイス コンテキストで展開でき、必須インテントのみをサポートします。
+    - **マシン モード**または**デュアル モード**で構築されている Win32 アプリは、ユーザー コンテキストでデプロイでき、**必須**インテントのみサポートします。
 
-> [!Note]
-> デバイス コンテキストでの MDM 経由の MSI の展開は、Windows 10 デバイスではまだサポートされていません。
+> [!NOTE]
+> **デュアル モード** アプリとして構築された Win32 アプリは、そのインスタンスに関連付けられているすべての割り当てで、アプリが**ユーザー モード**または**マシン モード** アプリとして機能するかどうかを、管理者が選択する必要があります。 開発コンテキストは、割り当てごとに変更することはできません。  
 
 アプリがデバイス コンテキストで展開されている場合、デバイス コンテキストがサポートされているデバイスをターゲットとするときにのみ、正常にインストールされます。 さらに、デバイス コンテキストでの展開では、次の条件がサポートされます。
 - アプリがデバイス コンテキストで展開されており、ユーザーをターゲットとする場合、管理コンソールに次の状態とエラーが表示され、インストールは失敗します。

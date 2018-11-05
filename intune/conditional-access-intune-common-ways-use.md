@@ -3,10 +3,10 @@ title: Microsoft Intune での条件付きアクセス
 titlesuffix: ''
 description: Intune の条件付きアクセスが、デバイス ベースおよびアプリ ベースの条件付きアクセスに一般的にどのように使用されるかについて説明します。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 09/25/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 59cba4ead614fe0b5deac535efb9bcb303d5810d
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: db63d79a81de03a459a910a23fb9f999f33f0251
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253611"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231666"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune での条件付きアクセスの一般的な使用方法
 
@@ -45,6 +45,13 @@ Exchange Online や他の Office 365 製品のデバイス ベースの条件付
 -   Intune のデバイス コンプライアンスの詳細については、[こちら](device-compliance.md)を参照してください。
 
 -   Intune で条件付きアクセスを使用した、電子メール、Office 365、およびその他のサービスの保護について詳しくは、[こちら](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)をご覧ください。
+
+> [!NOTE]
+> Android デバイスの場合、Sharepoint Online に対するデバイス ベースのアクセスを有効にすると、ユーザーは登録されたデバイスで次のように **[ブラウザー アクセスを有効にする]** オプションを有効にする必要があります。
+> 1. **ポータル サイト アプリ**を起動します。
+> 2. トリプル ドット (...) またはハードウェアのメニュー ボタンから、 **[設定]** ページに移動します。
+> 3. **[ブラウザー アクセスを有効にする]** ボタンを押します。 
+> 4. Chrome ブラウザーで Office 365 からサインアウトして、Chrome を再起動します。
 
 ### <a name="conditional-access-for-exchange-on-premises"></a>Exchange On-Premises の条件付きアクセス
 

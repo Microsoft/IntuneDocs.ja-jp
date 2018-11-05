@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: daaed6ded0c20551567a63890d324abcbaaf41d7
-ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
+ms.openlocfilehash: 652157f41f0fbefa14e9f22fea01c918cb7704a1
+ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40251942"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169500"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために iOS アプリを準備する
 
@@ -39,13 +39,13 @@ iOS 用 Microsoft Intune アプリ ラッピング ツールを使用すれば�
 
 * GitHub から [iOS 用 Microsoft Intune アプリ ラッピング ツール](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)をダウンロードします。
 
-* OS X 10.8.5 以降を実行し、Xcode ツールセットのバージョン 5 以降がインストールされている mac OS コンピューター。
+* OS X 10.8.5 以降を実行し、Xcode ツールセットのバージョン 9 以降がインストールされている macOS コンピューター。
 
 * 入力 iOS アプリはあなたの会社または独立系ソフトウェア ベンダー (ISV) が開発し、署名したものでなければなりません。
 
   * 入力アプリのファイルの拡張子は、**.ipa** または **.app** でなければなりません。
 
-  * 入力アプリは、iOS 8.0 以降 用にコンパイルする必要があります。
+  * 入力アプリは、iOS 10 以降用にコンパイルする必要があります。
 
   * 入力アプリは暗号化できません。
 

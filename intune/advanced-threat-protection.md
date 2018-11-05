@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/27/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b89ca2c4320db733f39ce9b67d275169f4cba5c6
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 58b157cfe639651aa65e8dfb510b857d0128589a
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313793"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102125"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Intune で条件付きアクセスによる Windows Defender ATP を有効にする
 
@@ -89,6 +89,10 @@ Windows Defender には、[Windows Defender ATP サービス](https://docs.micro
 6. 次のように設定を構成します。
 
   - **[Windows Defender ATP client configuration package type]**(Windows Defender ATP クライアント構成パッケージの種類): **[Onboard]** \(オンボード\) を選択し、プロファイルに構成パッケージを追加します。 **[Offboard]** \(オフボード\) を選択し、プロファイルから構成パッケージを削除します。
+  
+    > [!NOTE] 
+    > Windows Defender ATP との接続を適切に確立している場合、Intune によって構成プロファイルが自動的に**オンボーディング**されます。
+  
   - **[すべてのファイルのサンプル共有]**: **[有効にする]** では、サンプルを収集し、Windows Defender ATP と共有できるようにします。 たとえば、疑わしいファイルがある場合、Windows Defender ATP に送信して詳しく分析できます。 **[構成されていません]** では、いかなるサンプルも Windows Defender ATP と共有されません。
   - **[テレメトリの報告頻度を早める]**: 高リスクのデバイスがある場合は、この設定を**有効**にして、Windows Defender ATP サービスにより頻繁にテレメトリを報告することができます。
 

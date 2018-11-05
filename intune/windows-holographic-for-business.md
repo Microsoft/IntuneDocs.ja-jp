@@ -1,31 +1,31 @@
 ---
-title: Microsoft Intune - Azure で Windows Holographic デバイスを管理する | Microsoft Docs
-description: Windows Holographic for Business を実行しているデバイスで、Microsoft Intune を使用してさまざまな作業を完了できます。たとえば、ポータル サイトを構成したり、コンプライアンス ポリシーを作成したり、OMA-URI 設定をカスタマイズしたり、アプリをデプロイしたり、デバイスをグループに分類したり、デバイスを制限したり、ソフトウェア更新を有効にしたり、条件を設定したり、VPN 設定と Wi-F 設定を構成したり、Hello for Business を使用したりできます。
+title: Microsoft Intune で Windows Holographic デバイスを使用する - Azure | Microsoft Docs
+description: Windows Holographic for Business と HoloLens を実行しているデバイスで、Microsoft Intune を使用してさまざまな作業を管理して完了できます。たとえば、ポータル サイトを構成したり、コンプライアンス ポリシーを作成したり、OMA-URI 設定をカスタマイズしたり、アプリをデプロイしたり、デバイスをグループに分類したり、プロファイルを作成したり、デバイスを制限したり、ソフトウェア更新を有効にしたり、条件を設定したり、VPN 設定と Wi-F 設定を構成したり、Hello for Business を使用したりできます。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/11/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 825ceb1eee8f6fdd38f8a203324ce3cad7291918
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 87ae986e1f7a2b00c1a29208a163ee449e114f17
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43317905"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425293"
 ---
-# <a name="customize-devices-running-windows-holographic-with-intune"></a>Intune を使用して Windows Holographic を実行するデバイスをカスタマイズする
+# <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Intune で Windows Holographic および HoloLens デバイスを管理および使用する
 
-Microsoft Intune は、Windows Holographic for Business 実行する [Microsoft HoloLens](https://docs.microsoft.com/en-us/hololens/) などのデバイスをサポートします。
+Microsoft Intune には、[Microsoft HoloLens](https://docs.microsoft.com/hololens/) など、Windows Holographic for Business を実行するデバイスを管理するのに役立つ機能が多数含まれています。 Intune では、デバイスが組織のルールと対応していることを確認したり、VPN または WiFi プロファイルを追加してデバイスをカスタマイズできます。 別の主な機能には、デバイスをキオスクとして使用したり、特定のアプリまたは特定のアプリのセットを実行できるというのがあります。
 
-Windows Holographic を実行しているデバイスを Microsoft Intune で管理するには、エディションのアップグレード プロファイルを作成する必要があります。 このアップグレード プロファイルによって、Windows Holographic から Windows Holographic for Business にデバイスがアップグレードされます。 Microsoft HoloLens の場合、Commercial Suite を購入してアップグレードに必要なライセンスを入手できます。 詳細については、「[Windows Holographic を実行するデバイスを Windows Holographic for Business にアップグレードする](holographic-upgrade.md)」を参照してください。
+この記事のタスクは、ソフトウェアの更新プログラムや Windows Hello for Business を使用することを含む、Windows Holographic for Business を実行するデバイスの管理、カスタマイズおよびセキュリティ保護で役立ちます。
 
-Windows Holographic for Business を実行しているデバイスを管理したり、カスタマイズしたりする際、この記事で紹介している操作が役に立ちます。 たとえば、ソフトウェア更新を管理したり、VPN 設定を構成したりできます。
+Intune で Windows Holographic デバイスを使用する場合、エディションのアップグレード プロファイルを作成します。 このアップグレード プロファイルによって、Windows Holographic から Windows Holographic for Business にデバイスがアップグレードされます。 Microsoft HoloLens の場合、Commercial Suite を購入してアップグレードに必要なライセンスを入手できます。 詳細については、「[Windows Holographic を実行するデバイスを Windows Holographic for Business にアップグレードする](holographic-upgrade.md)」を参照してください。
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
 
@@ -73,7 +73,7 @@ Microsoft Intune では、Windows Holographic for Business を実行している
 - Microsoft HoloLens 用アプリの開発の詳細については、「[Microsoft HoloLens のための複合現実アプリ](https://www.microsoft.com/hololens/apps)」を参照してください。 
 
 > [!NOTE]
-> Windows 10 Holographic for Business 1607 を実行している HoloLens デバイスでは、ビジネス向け Microsoft ストアからのオンライン ライセンス アプリをサポートしていません。 詳細については、「[HoloLens へのアプリのインストール](https://docs.microsoft.com/en-us/hololens/hololens-install-apps)」を参照してください。
+> Windows 10 Holographic for Business 1607 を実行している HoloLens デバイスでは、ビジネス向け Microsoft ストアからのオンライン ライセンス アプリをサポートしていません。 詳細については、「[HoloLens へのアプリのインストール](https://docs.microsoft.com/hololens/hololens-install-apps)」を参照してください。
 
 ## <a name="device-actions"></a>デバイス アクション
 Intune にはいくつかの組み込みアクションがあります。これにより、IT 管理者は、デバイス上でローカルに、あるいは Azure Portal の Intune を使用してリモートで、さまざまなタスクを実行できます。 ユーザーは、Intune に登録済みの個人所有デバイスに Intune ポータル サイトからリモート コマンドを発行することもできます。

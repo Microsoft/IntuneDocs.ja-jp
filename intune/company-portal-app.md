@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd388131445715a4037cc0480c194d338212dbb0
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 01de402a48362f04680c569c40a812b6a4b83cc6
+ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329975"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307408"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune ポータル サイト アプリを構成する方法
 
@@ -34,7 +34,7 @@ ms.locfileid: "43329975"
 ポータル サイトをカスタマイズすることで、エンド ユーザーの利便性を向上させることができます。 そのためには、**[クライアント アプリ]** ワークロードから **[セットアップ]** > **[ポータル サイトのブランド化]** の順に選び、必要な設定を構成します。  
 
 > [!Note]       
-> ユーザーが問題に関するヘルプを入手するワークフローを開始すると、Windows 10 用 Intune ポータル サイトは Microsoft に直接アプリのログを送信するようになります。 これにより、Microsoft に問題を送ってすばやくトラブルシューティングして解決できます。  
+> Azure Government を使用している場合、エンド ユーザーが問題に関するヘルプを入手するプロセスを開始すると、共有する方法を決定するためにアプリ ログが提供されます。 ただし、Azure Government を使用していない場合、ユーザーが問題に関するヘルプを入手するプロセスを開始すると、Windows 10 用ポータル サイトでは Microsoft に直接アプリのログを送信するようになります。 Microsoft にアプリ ログを送信すると、トラブルシューティングと問題の解決がより簡単になります。 
 
 ## <a name="company-information-and-privacy-statement"></a>会社の情報とプライバシーに関する声明        
 会社名は、ポータル サイトのタイトルとして表示されます。 プライバシーに関する声明は、ユーザーがプライバシー リンクをクリックすると表示されます。
@@ -61,7 +61,7 @@ ms.locfileid: "43329975"
 
 
 ## <a name="company-branding-customization"></a>会社のブランドのカスタマイズ       
-ポータル サイトのロゴや会社名、テーマの色や背景をカスタマイズできます。     
+ポータル サイトのロゴや会社名、テーマの色や背景をカスタマイズできます。 テスト デバイスを使用せずにブランド構成をすばやく確認するために、[portal.manage.microsoft.com](https://portal.manage.microsoft.com) に移動することができます。 アップロードしたロゴは、電子メール テンプレートに使用されることに注意してください。      
 
 ### <a name="theme-color"></a>テーマの色
 ポータル サイトにテーマの色を適用します。 標準の色を選択するか、カスタム色に対応する 6 桁の 16 進コードを入力します。
@@ -82,3 +82,30 @@ ms.locfileid: "43329975"
 |**ロゴの横に会社名を表示する**| このオプションを選択すると、入力した会社名が、アップロードしたロゴの横に表示されます。 |
 
 変更の保存後、ブレードの上部にある **[Intune Web ポータルで設定をプレビューします]** を選択して、構成がどのように表示されるかを確認できます。
+
+## <a name="windows-company-portal-keyboard-shortcuts"></a>Windows ポータル サイトのキーボード ショートカット
+
+エンドユーザーは、Windows ポータル サイトでキーボード ショートカット (アクセラレータ) を使用して、ナビゲーション、アプリおよびデバイスのアクションをトリガーできます。
+
+Windows ポータル サイト アプリで使用できるキーボード ショートカットを次に示します。
+
+| 領域 | 説明 | ショートカット キー |
+|:------------------:|:--------------:|:-----------------:|
+| [ナビゲーション] メニュー | ［ナビゲーション］ | Alt + M |
+|  | ホーム | Alt + H |
+|  | すべてのアプリ | Alt + A |
+|  | インストール済みのアプリ | Alt + I |
+|  | フィードバックを送信 | Alt + F |
+|  | 個人用プロファイル | Alt + U |
+|  | Settings | Alt + T |
+| [ホーム] - [デバイス] タイル | 名前の変更 | F2 |
+|  | 削除 | Ctrl + D または Delete |
+|  | アクセスの確認 | Ctrl + M または F9 |
+| デバイスの詳細 | 名前の変更 | F2 |
+|  | 削除 | Ctrl + D または Delete |
+|  | アクセスの確認 | Ctrl + M または F9 |
+| アプリの詳細 | インストール | Ctrl + I |
+
+## <a name="next-steps"></a>次の手順
+
+- [Microsoft Intune を使用して Windows 10 ポータル サイト アプリを手動で追加する](store-apps-company-portal-app.md)

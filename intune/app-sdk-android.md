@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/18/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4c26d9914173c07096caad428afcbd9174625ef7
-ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
+ms.openlocfilehash: 4a588af375ef690d45e067dfc4261fbeb551755c
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44031305"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863214"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android 用 Microsoft Intune アプリ SDK 開発者ガイド
 
@@ -31,18 +31,21 @@ Android 用 Microsoft Intune アプリ SDK を使用すると、ネイティブ 
 
 ## <a name="whats-in-the-sdk"></a>SDK の機能
 
-Intune App SDK は、次のファイルで構成されます。  
+Intune App SDK は、次のファイルで構成されます。
 
-* **Microsoft.Intune.MAM.SDK.aar**: Support.V4 と Support.V7 JAR ファイルを除く SDK コンポーネントです。
-* **Microsoft.Intune.MAM.SDK.Support.v4.jar**: Android v4 サポート ライブラリを使用するアプリで MAM を有効にするために必要なインターフェイスです。 このサポートを必要とするアプリは、JAR ファイルを直接参照する必要があります。
-* **Microsoft.Intune.MAM.SDK.Support.v7.jar**: Android v7 サポート ライブラリを使用するアプリで MAM を有効にするために必要なインターフェイスです。 このサポートを必要とするアプリは、JAR ファイルを直接参照する必要があります。
+* **Microsoft.Intune.MAM.SDK.aar**: サポート ライブラリ JAR ファイルを除く、SDK コンポーネントです。
+* **Microsoft.Intune.MAM.SDK.Support.v4.jar**: Android v4 サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。
+* **Microsoft.Intune.MAM.SDK.Support.v7.jar**: Android v7 サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。
+* **Microsoft.Intune.MAM.SDK.Support.v17.jar**: Android v17 サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。 
+* **Microsoft.Intune.MAM.SDK.Support.Text.jar**: `android.support.text` パッケージで Android サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。
 * **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**: この jar には、新しいデバイス上にのみ存在し、MAMActivity 内のメソッドによって参照される Android システム クラスのためのスタブが含まれています。 新しいデバイスでは、これらのスタブ クラスを無視します。 この jar が必要になるのは、MAMActivity から派生したクラスに対してリフレクションを実行する場合のみであり、ほとんどのアプリにはこの jar を含める必要がありません。 この jar を使用している場合、そのすべてのクラスを ProGuard から除外する操作は慎重に行う必要があります。 それはすべて "android" ルート パッケージの下にあります。
+* **com.microsoft.intune.mam.build.jar**: [SDK の統合を補助する](#build-tooling) Gradle のプラグインです。
 * **CHANGELOG.txt**: 各 SDK バージョンに加えた変更の記録を提供します。
 * **THIRDPARTYNOTICES.TXT**:  アプリにコンパイルされるサード パーティや OSS のコードを確認する属性通知です。
 
 ## <a name="requirements"></a>要件
 
-Intune アプリ SDK は、コンパイル済みの Android プロジェクトです。 その結果、最小またはターゲットの API バージョンに関して、アプリが使用する Android のバージョンにはほとんど影響を受けません。 この SDK は Android API 19 (Android 4.4 以降) から Android API 26 (Android 8.0) までをサポートしています。
+この SDK は Android API 19 (Android 4.4 以降) から Android API 28 (Android 8.0) までをサポートしています。
 
 
 ### <a name="company-portal-app"></a>ポータル サイト アプリ
@@ -55,32 +58,168 @@ Android 用の Intune アプリ SDK でアプリ保護ポリシーを有効に�
 
 ## <a name="sdk-integration"></a>SDK 統合
 
-### <a name="build-integration"></a>ビルドの統合
+### <a name="referencing-intune-app-libraries"></a>Intune アプリのライブラリを参照する
 
 Intune アプリ SDK は、外部依存関係のない標準の Android ライブラリです。 **Microsoft.Intune.MAM.SDK.aar** には、アプリ保護ポリシーの有効化に必要なインターフェイスと Microsoft Intune ポータル サイト アプリとの対話操作に必要なコードの両方が含まれています。
 
-**Microsoft.Intune.MAM.SDK.aar** は、Android ライブラリの参照として指定する必要があります。 **Microsoft.Intune.MAM.SDK.aar** を Android ライブラリ参照として指定するには、Android Studio でアプリ プロジェクトを開き、**[File]\(ファイル\) > [New]\(新規\) > [New module]\(新しいモジュール\)** に移動し、**[Import .JAR/.AAR Package]\(.JAR/.AAR パッケージのインポート\)** を選択します。 次に、Android アーカイブ パッケージ **Microsoft.Intune.MAM.SDK.aar** を選択して、*.AAR* のモジュールを作成します。 アプリ コードを含むモジュールを右クリックし、**[Module Settings]\(モジュール設定\)** > **[Dependencies]\(依存関係\) タブ** > **[+] アイコン** > **[Module dependency]\(モジュールの依存関係\)** の順に移動して、作成した MAM SDK AAR モジュール、**[OK]** の順に選択します。 これで、プロジェクトのビルド時にモジュールが MAM SDK でコンパイルされるようになります。
+**Microsoft.Intune.MAM.SDK.aar** は、Android ライブラリの参照として指定する必要があります。 これを行うには、Android Studio でアプリ プロジェクトを開き、**[File]**、New、New module の順に選択し、**[Import .JAR/.AAR Package]** を選択します。 次に、Android アーカイブ パッケージ Microsoft.Intune.MAM.SDK.aar を選択して、.AAR のモジュールを作成します。 アプリ コードを含むモジュールを右クリックし、**[モジュール設定]** > **[依存関係] タブ** > **[+] アイコン** > **[モジュールの依存関係]** の順に移動して、作成した MAM SDK AAR モジュール、**[OK]** の順に選択します。 これで、プロジェクトのビルド時にモジュールが MAM SDK でコンパイルされるようになります。
 
-さらに、**Microsoft.Intune.MAM.SDK.Support.v4** と **Microsoft.Intune.MAM.SDK.Support.v7** に Intune バリエーション `android.support.v4` と `android.support.v7` がそれぞれ含まれています。 それらは、アプリがサポート ライブラリをインクルードしたくない場合に備えて、Microsoft.Intune.MAM.SDK.aar には組み込まれていません。 それらは、Android ライブラリ プロジェクトではなく標準の JAR ファイルです。
+さらに、**Microsoft.Intune.MAM.SDK.Support.XXX.jar** ライブラリには、対応する `android.support.XXX` ライブラリの Intune バリアントが含まれます。 これらは、アプリがサポート ライブラリに依存する必要がない場合に備えて、Microsoft.Intune.MAM.SDK.aar には組み込まれていません。
 
 #### <a name="proguard"></a>ProGuard
 
-[ProGuard](http://proguard.sourceforge.net/) (またはその他の圧縮/難読化メカニズム) をビルドのステップとして使用している場合、Intune SDK クラスを除外する必要があります。 ビルドに *.AAR* を含めると、ルールが自動的に ProGuard ステップに統合され、必要なクラス ファイルが保持されます。 
+[ProGuard](http://proguard.sourceforge.net/) (または任意のその他の圧縮/難読化メカニズム) がビルド ステップとして使用される場合、SDK には追加の構成ルールを含める必要があります。 .aar をご自分のビルドに含めると、ルールが自動的に ProGuard ステップに統合され、必要なクラス ファイルが保持されます。
 
 Azure Active Directory 認証ライブラリ (ADAL) には、独自の ProGuard の制限がある場合があります。 アプリが ADAL を統合する場合、これらの制限について ADAL のドキュメントに従う必要があります。
 
-### <a name="entry-points"></a>エントリ ポイント
+### <a name="build-tooling"></a>ビルド ツール
+Intune App SDK は Android ライブラリで、これにより、ご自分のアプリで Intune ポリシーの強制のサポートと参加を行うことができます。 一部のポリシーには、[強制するためにアプリからの明示的な参加](#enable-features-that-require-app-participation)が必要ですが、ほとんどが半自動的に強制されます。 この自動強制には、アプリでいくつかの Android の基底クラスからの継承を同等の MAM からの継承に置き換え、同様に特定の Android システム サービス クラスへの呼び出しを同等の MAM への呼び出しに置き換える必要があります。 必要な特定の置換の詳細は、[以下](#class-and-method-replacements)のとおりです。
 
-Intune アプリ SDK では、Intune アプリ保護ポリシーを有効にするために、アプリのソース コードを変更する必要があります。 このことは、Android の基底クラスを同等の Intune の基底クラス (名前にプレフィックス **MAM** が付いている) に置き換えることで行われます。 SDK クラスは、Android の基底クラスと、アプリ独自のそのクラスの派生バージョンの間に位置します。 例としてアクティビティを使用すると、最終的な継承階層は、`Activity` > `MAMActivity` > `AppSpecificActivity` のようになります。
+これらの置換を手動で実行することは、面倒なプロセスになる場合があります。 代わりに、SDK ではビルドツールが提供されます (Gradle ビルド用のプラグインと Gradle 以外のビルド用のコマンド ライン ツール)。これにより、自動的に置換が実行されます。 これらのツールによって、Java のコンパイルによって生成されたクラス ファイルが変換され、元のソース コードへの変更は行われません。
 
-たとえば、`AppSpecificActivity` がその親と対話する場合 (たとえば、`super.onCreate()` を呼び出して)、`MAMActivity` がスーパー クラスとなります。
+このツールでは[直接の置換](#class-and-method-replacements)のみが実行されます。 これにより、[ポリシーとして保存](#enable-features-that-require-app-participation)、[複数 ID](#multi-identity-optional)、[App-WE の登録](#app-protection-policy-without-device-enrollment)、[Android のマニフェストの変更](#manifest-replacements)または[ADAL の構成](#configure-azure-active-directory-authentication-library-adal)など、さらに複雑な SDK の統合が実行されることはないため、これらはご利用のアプリで完全に Intune を有効にする前に完了する必要があります。 ご利用のアプリに関連する統合ポイントのために、このドキュメントの残りの部分を慎重に確認してください。
 
-標準的な Android アプリはモードが 1 つで、[**コンテキスト**](https://developer.android.com/reference/android/content/Context.html) オブジェクトを使用してシステムにアクセスできます。 一方、Intune アプリ SDK が統合されたアプリはデュアル モードになります。 これらのアプリは引き続き `Context` オブジェクトを通じてシステムにアクセスします。 使用する基本 `Activity` に応じて、`Context` オブジェクトが Android によって提供されるか、システムの制限付きビューと Android から提供される `Context` の間でインテリジェントに多重化されます。 MAM のエントリ ポイントのいずれかから派生させた後、通常どおり `Context` を使用できます (たとえば、`Activity` クラスを開始して `PackageManager` を使用する場合など)。
+> [!NOTE]
+> 既に部分的に実行されている、または手動の置換によって MAM SDK のソースの統合を完了するプロジェクトに対してツールを実行しても構いません。 ご自分のプロジェクトでは、依存関係として MAM SDK を引き続き一覧する必要があります。
+
+### <a name="gradle-build-plugin"></a>Gradle のビルド プラグイン
+Gradle でアプリをビルドしていない場合は、[コマンド ライン ツールでの統合](#command-line-build-tool)に関する記事にスキップしてください。 
+
+App SDK プラグインは、SDK の一部として **GradlePlugin/com.microsoft.intune.mam.build.jar** で配布されます。 Gradle でプラグインを見つけることができるようにするには、これをビルドスクリプトのクラスパスに追加する必要があります。 プラグインは [Javassist](http://jboss-javassist.github.io/javassist/) に依存し、これも追加する必要があります。 これらをクラスパスに追加するには、ご自分のルート `build.gradle` に以下を追加します。
+
+```groovy
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "org.javassist:javassist:3.22.0-GA"
+        classpath files("$PATH_TO_MAM_SDK/GradlePlugin/com.microsoft.intune.mam.build.jar")
+    }
+}
+```
+
+次に、ご自分の APK プロジェクトに対する `build.gradle` ファイルで、次のようにプラグインを適用するだけです。
+```groovy
+apply plugin: 'com.microsoft.intune.mam'
+```
+
+既定では、プラグインは `project` 依存関係で**のみ**動作します。
+テストのコンパイルは影響を受けません。 構成は一覧するために提供される場合があります。
+*  除外するプロジェクト
+*  [含める外部依存関係](#usage-of-includeexternallibraries) 
+*  処理から除外する特定のクラス
+*  処理から除外するバリアント これらは完全なバリアント名または単一のフレーバーのいずれかを参照できます。 例
+     * ご利用のアプリにフレーバー {`savory`, `sweet`} と {`vanilla`, `chocolate`} を含むビルドの種類 `debug` と `release` がある場合は、指定できます。
+     * savory フレーバーを含むバリアントをすべて除外するには `savory`、正確なバリアントのみを除外するには `savoryVanillaRelease`。
+
+#### <a name="example-partial-buildgradle"></a>部分的な build.gradle の例
+
+```groovy
+
+apply plugin: 'com.microsoft.intune.mam'
+
+dependencies {
+    implementation project(':product:FooLib')
+    implementation project(':product:foo-project')
+    implementation fileTree(dir: "libs", include: ["bar.jar"])
+    implementation fileTree(dir: "libs", include: ["zap.jar"])
+    implementation "com.contoso.foo:zap-artifact:1.0.0"
+    implementation "com.microsoft.bar:baz:1.0.0"
+
+    // Include the MAM SDK
+    implementation files("$PATH_TO_MAM_SDK/Microsoft.Intune.MAM.SDK.aar")
+}
+intunemam {
+    excludeProjects = [':product:FooLib']
+    includeExternalLibraries = ['bar.jar', "com.contoso.foo:zap-artifact", "com.microsoft.*"]
+    excludeClasses = ['com.contoso.SplashActivity']
+    excludeVariants=['savory']
+}
+
+```
+これにより、次の効果があります。
+* `:product:FooLib` は `excludeProjects` に含まれるため、上書きされません。
+* `excludeClasses` に含まれるためにスキップされる `com.contoso.SplashActivity` を除き、`:product:foo-project` は上書きされます。
+* `bar.jar` は `includeExternalLibraries` に含まれるため、上書きされます。
+* `zap.jar` はプロジェクトではなく、`includeExternalLibraries` に含まれないため、上書きされ**ません**。
+* `com.contoso.foo:zap-artifact:1.0.0` は `includeExternalLibraries` に含まれるため、上書きされます。
+* `com.microsoft.bar:baz:1.0.0` はワイルドカード (`com.microsoft.*`) によって `includeExternalLibraries` に含まれるため、上書きされます。
+
+#### <a name="usage-of-includeexternallibraries"></a>includeExternalLibraries の使い方
+
+既定でプラグインはプロジェクトの依存関係でのみ動作するため (通常、`project()` 関数で指定される)、`fileTree(...)` によって指定された、または Maven やその他のパッケージ ソース (例: "`com.contoso.bar:baz:1.2.0`") から取得した任意の依存関係は、その MAM 処理が以下で説明される条件に基づいて必要な場合は、`includeExternalLibraries` プロパティに提供される必要があります。 ワイルドカード ("*") がサポートされます。
+
+成果物で外部の依存関係を指定している場合、`includeExternalLibraries` 値のバージョン コンポーネントを省略することをお勧めします。 バージョンを含める場合は、正確なバージョンである必要があります。 ダイナミック バージョンの定義 (例: `1.+`) はサポートされません。
+
+`includeExternalLibraries` にライブラリを含める必要があるかどうかを判断するために使用する必要がある一般的なルールは、次の 2 つの質問に基づいています。
+1. ライブラリにはクラスが含まれ、それに対して同等の MAM がありますか?  例: `Activity`、`Fragment`、`ContentProvider`、`Service` など。
+2. はいの場合、ご利用のアプリでそれらのクラスを活用しますか? 
+
+これらの質問の答えが両方 "はい" の場合は、そのライブラリを `includeExternalLibraries` に含める必要があります。 
+
+| 通信の種類 | 含める必要があるか? |
+|--|--|
+| ユーザーが PDF を表示しようとしたときに、ご利用のアプリに PDF ビューアー ライブラリを含めて、ご利用のアプリケーションでビューアー `Activity` を使用します | はい |
+| Web パフォーマンスを強化するために、ご利用のアプリに HTTP ライブラリを含めます | [いいえ] |
+| `Activity`、`Application` および `Fragment` から派生したクラスを含む React Native などのライブラリを含めて、ご利用のアプリでそれらのクラスを使用したり、さらに派生させたりします | はい |
+| `Activity`、`Application` および `Fragment` から派生したクラスを含む React Native などのライブラリを含めますが、静的なヘルパーまたはユーティリティ クラスのみを使用します | [いいえ] |
+| `TextView` から派生したビュー クラスを含むライブラリを含めて、ご利用のアプリでそれらのクラスを使用したり、さらに派生させたりします | はい |
 
 
-## <a name="replace-classes-methods-and-activities-with-their-mam-equivalent"></a>クラス、メソッド、およびアクティビティを、同等の MAM に置き換えます。
+#### <a name="dependencies"></a>依存関係
 
-Android の基底クラスを、それぞれ対応する同等の MAM に置き換える必要があります。 これを行うには、次の表にリスト表示されているクラスのすべてのインスタンスを見つけて同等の Intune アプリ SDK に置き換えます。 これらの大部分は、アプリ クラスが継承するクラスとなりますが、一部にはアプリが継承なしで使用するクラス (MediaPlayer など) もあります。
+Gradle のプラグインには、(上述のとおり) Gradle の依存関係の解決に利用できる必要がある [Javassist](http://jboss-javassist.github.io/javassist/) に依存関係があります。 Javassist は、プラグインを実行しているときのビルド時に単独で使用されます。 Javassist コードはご自分のアプリには追加されません。
+
+> [!NOTE]
+> Android Gradle プラグインのバージョン 3.0 以降および Gradle 4.1 以降を使用している必要があります。
+
+### <a name="command-line-build-tool"></a>コマンド ラインのビルド ツール
+ビルドに Gradle を使用する場合は、[次のセクション](#class-and-method-replacements)にスキップしてください。
+
+コマンド ラインのビルド ツールは、SDK ドロップの `BuildTool` フォルダーで入手できます。 これにより、上述の Gradle プラグインと同じ関数が実行されますが、カスタムまたは Gradle 以外のビルド システムに統合できます。 これはより汎用的で、呼び出しがより複雑になるため、可能な場合は Gradle プラグインを使用する必要があります。
+
+#### <a name="using-the-command-line-tool"></a>コマンド ライン ツールを使用する
+
+コマンド ライン ツールは、`BuildTool\bin` ディレクトリに配置された指定のヘルパー スクリプトを使用して呼び出すことができます。
+
+このツールには、次のパラメーターが必要です。
+| パラメーター | 説明 |
+| -- | -- |
+| `--input` | jar ファイルと変更するクラス ファイルのディレクトリのセミコロン区切りの一覧。 これは上書きしようとするすべての jars/ディレクトリを含む必要があります。 |
+| `--output` | jar ファイルと変更されたクラスを格納するディレクトリのセミコロン区切りの一覧。 入力エントリごとに 1 つの出力エントリがあり、順番に一覧される必要があります。 |
+| `--classpath` | ビルドのクラスパス。 ここには jar とクラス ディレクトリの両方を含めることができます。 |
+| `--excludeClasses`| 上書きから除外される必要があるクラスの名前を含むセミコロン区切りの一覧。 |
+
+省略可能な `--excludeClasses` を除く、すべてのパラメーターが必須です。
+
+#### <a name="example-command-line-tool-invocation"></a>コマンド ライン ツールの呼び出しの例
+
+``` batch
+> BuildTool\bin\BuildTool.bat --input build\product-foo-project;libs\bar.jar --output mam-build\product-foo-project;mam-build\libs\bar.jar --classpath build\zap.jar;libs\Microsoft.Intune.MAM.SDK\classes.jar;%ANDROID_SDK_ROOT%\platforms\android-27\android.jar --excludeClasses com.contoso.SplashActivity
+```
+
+これにより、次の効果があります。
+
+* `product-foo-project` ディレクトリは `mam-build\product-foo-project` に上書きされます
+* `bar.jar` は `mam-build\libs\bar.jar` に上書きされます
+* `zap.jar` は `--classpath` にのみ一覧されるため、上書きされ**ません**
+* `com.contoso.SplashActivity` クラスは `--input` 内にあっても、上書きされ**ません**
+
+> [!NOTE] 
+> 現在、ビルド ツールでは aar ファイルをサポートしていません。 aar ファイルを取り扱っているときに、ご利用のビルド システムでまだ `classes.jar` を抽出していない場合は、ビルド ツールを呼び出す前に抽出する必要があります。
+
+
+## <a name="class-and-method-replacements"></a>クラスとメソッドの置換
+
+Intune 管理を有効にするために、Android の基底クラスを、それぞれ対応する同等の MAM に置き換える必要があります。 SDK クラスは、Android の基底クラスと、アプリ独自のそのクラスの派生バージョンの間に位置します。 たとえば、アプリ アクティビティを使用すると、最終的な継承階層は、`Activity` > `MAMActivity` >
+`AppSpecificActivity` のようになります。 世界中のマネージド ビューでアプリをシームレスに提供するために、MAM レイヤーではシステム操作への呼び出しをフィルター処理します。
+
+基底クラスに加えて、ご自分のアプリで派生することなく使用する可能性がある一部のクラス (例: `MediaPlayer`) には、同等の MAM も必要で、[一部のメソッドも置き換える必要があります](#wrapped-system-services)。 以下に正確な詳細を示します。
+
+このセクションで詳述されている置換はすべて、SDK [ビルド ツール](#build-tooling)によって自動的に実行される場合がります。 
+
+
 
 | Android の基底クラス | Intune アプリ SDK の代替物 |
 |--|--|
@@ -112,6 +251,12 @@ Android の基底クラスを、それぞれ対応する同等の MAM に置き�
 | とroid.provider.DocumentsProvider | MAMDocumentsProvider |
 | とroid.preference.PreferenceActivity | MAMPreferenceActivity |
 | android.support.multidex.MultiDexApplication | MAMMultiDexApplication |
+| android.widget.TextView | MAMTextView |
+| android.widget.AutoCompleteTextView | MAMAutoCompleteTextView |
+| android.widget.CheckedTextView | MAMCheckedTextView |
+| android.widget.EditText | MAMEditText |
+| android.inputmethodservice.ExtractEditText | MAMExtractEditText |
+| android.widget.MultiAutoCompleteTextView | MAMMultiAutoCompleteTextView |
 
 > [!NOTE]
 > アプリケーションが独自に派生した `Application` クラスを必要としていなくても、下記の「[`MAMApplication`](#mamapplication)」を参照してください。
@@ -133,6 +278,24 @@ Android の基底クラスを、それぞれ対応する同等の MAM に置き�
 |Android クラス | Intune アプリ SDK の代替物 |
 |--|--|
 |android.support.v7.app.AppCompatActivity | MAMAppCompatActivity |
+| android.support.v7.widget.AppCompatAutoCompleteTextView | MAMAppCompatAutoCompleteTextView |
+| android.support.v7.widget.AppCompatCheckedTextView | MAMAppCompatCheckedTextView |
+| android.support.v7.widget.AppCompatEditText | MAMAppCompatEditText |
+| android.support.v7.widget.AppCompatMultiAutoCompleteTextView | MAMAppCompatMultiAutoCompleteTextView |
+| android.support.v7.widget.AppCompatTextView | MAMAppCompatTextView |
+
+### <a name="microsoftintunemamsdksupportv17jar"></a>Microsoft.Intune.MAM.SDK.Support.v17.jar:
+|Android クラス | Intune アプリ SDK の代替物 |
+|--|--|
+| android.support.v17.leanback.widget.SearchEditText | MAMSearchEditText |
+
+### <a name="microsoftintunemamsdksupporttextjar"></a>Microsoft.Intune.MAM.SDK.Support.Text.jar:
+|Android クラス | Intune アプリ SDK の代替物 |
+|--|--|
+| android.support.text.emoji.widget.EmojiAppCompatEditText | MAMEmojiAppCompatEditText |
+| android.support.text.emoji.widget.EmojiAppCompatTextView | MAMEmojiAppCompatTextView |
+| android.support.text.emoji.widget.EmojiEditText | MAMEmojiEditText |
+| android.support.text.emoji.widget.EmojiTextView | MAMEmojiTextView |
 
 ### <a name="renamed-methods"></a>名前が変更されたメソッド
 多くの場合、Android のクラスで使用できるメソッドが、MAM の置換クラスで最終版としてマークされています。 この場合、MAM 置換クラスによって、似た名前のメソッド (`MAM` というサフィックスが付いている) が提供され、これをオーバーライドする必要があります。 たとえば、`MAMActivity` から派生する場合は、`onCreate()` をオーバーライドして `super.onCreate()` を呼び出すのではなく、`Activity` で `onMAMCreate()` をオーバーライドし、`super.onMAMCreate()` を呼び出す必要があります。 同等の MAM でなく、元のメソッドが偶発的にオーバーライドされることを防ぐために、Java コンパイラによって、最終的な制限が強制されます。
@@ -142,10 +305,22 @@ Android の基底クラスを、それぞれ対応する同等の MAM に置き�
 ### <a name="pendingintent"></a>PendingIntent
 `PendingIntent.get*` の代わりに `MAMPendingIntent.get*` メソッドを使用する必要があります。 その後、通常どおり、結果の `PendingIntent` を使用できます。
 
+### <a name="wrapped-system-services"></a>ラップされたシステム サービス
+一部のシステム サービス クラスでは、サービス インスタンスで目的のメソッドを直接呼び出す代わりに、MAM ラッパー クラスで静的メソッドを呼び出す必要がります。 たとえば、`getSystemService(ClipboardManager.class).getPrimaryClip()` への呼び出しは、`MAMClipboardManager.getPrimaryClip(getSystemService(ClipboardManager.class)` への呼び出しになる必要があります。 手動でこれらの置換を行うことはお勧めできません。 代わりに、BuildPlugin でこの操作を行います。
+
+| Android クラス | Intune アプリ SDK の代替物 |
+|--|--|
+| android.content.ClipboardManager | MAMClipboard |
+| android.content.pm.PackageManager | MAMPackageManagement |
+| android.app.DownloadManager | MAMDownloadManagement |
 ### <a name="manifest-replacements"></a>マニフェストの置換
 場合によっては、マニフェストと共に Java コードでも上記の一部のクラスの置換を実行する必要があります。 注意: 
 * `android.support.v4.content.FileProvider` を参照するマニフェストは、`com.microsoft.intune.mam.client.support.v4.content.MAMFileProvider` に置き換える必要があります。
 
+## <a name="androidx-libraries"></a>AndroidX ライブラリ
+Android P と共に、Google は AndroidX と呼ばれるサポート ライブラリの新しい (名前が変更された) セットを発表しており、バージョン 28 が既存の android.support ライブラリの最新のメジャー リリースです。
+
+Android サポート ライブラリとは異なり、Microsoft が AndroidX ライブラリの MAM バリアントを提供することはありません。 代わりに、AndroidX は任意のその他の外部ライブラリとしてテストする必要があり、ビルド プラグイン/ツールによって上書きされるように構成する必要があります。 Gradle のビルドでは、プラグイン構成の `includeExternalLibraries` フィールドに `androidx.*` を含めることによってこれを行うことができます。コマンド ライン ツールの呼び出しは、jar ファイルがすべて明示的に一覧表示されている必要があります。
 ## <a name="sdk-permissions"></a>SDK のアクセス許可
 
 Intune アプリ SDK では、統合するアプリに対する次の 3 つの [Android システムのアクセス許可](https://developer.android.com/guide/topics/security/permissions.html)が必要になります。
@@ -206,7 +381,7 @@ public interface AppPolicy {
 
 /**
  * Restrict where an app can save personal data.
- * This function is now deprecated. Use getIsSaveToLocationAllowed(SaveLocation, String) instead
+ * This function is now deprecated. Please use getIsSaveToLocationAllowed(SaveLocation, String) instead
  * @return True if the app is allowed to save to personal data stores; false otherwise.
  */
 @Deprecated
@@ -410,7 +585,7 @@ public interface MAMNotificationReceiver {
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Azure Active Directory Authentication Library (ADAL) の構成
 
-最初に、[ADAL GitHub のリポジトリ](https://github.com/AzureAD/azure-activedirectory-library-for-android)にある ADAL の統合のガイドラインを参照してください。
+まず、[GitHub の ADAL リポジトリ](https://github.com/AzureAD/azure-activedirectory-library-for-android)にある ADAL の統合ガイドラインを参照してください。
 
 SDK では[認証](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/)と条件付き起動シナリオを [ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) に依存するため、アプリを [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) を使用して構成する必要があります。 構成値は、AndroidManifest メタデータを使用して SDK に伝達されます。
 
@@ -448,7 +623,7 @@ SDK では[認証](https://azure.microsoft.com/documentation/articles/active-dir
 
 ### <a name="common-adal-configurations"></a>ADAL の一般的な構成
 
-ADAL を使用してアプリを構成する一般的な方法を次に示します。 アプリの構成を検索し、ADAL メタデータ パラメーター (上述) を必要な値に設定したことを確認します。 いずれの場合も、既定以外の環境では必要でも、不要である場合、Authority を指定できます。
+ADAL を使用してアプリを構成する一般的な方法を次に示します。 アプリの構成を検索し、ADAL メタデータ パラメーター (上述) を必要な値に設定したことを確認します。 いずれの場合も、既定以外の環境では必要でも、一般的には不要である場合、Authority を指定できます。
 
 1. **アプリに ADAL が統合されない場合:**
 
@@ -475,8 +650,9 @@ Azure portal で次の操作を行います。
 7.  API の一覧で **[Microsoft Mobile Application Management]** を選択し、[選択] をクリックします。
 8.  **[Read and Write the User’s App Management Data]\(ユーザーのアプリ管理データの読み取りと書き込み\)** を選択します。
 9.  **[完了]** をクリックします。
+10. **[アクセス許可の付与]** をクリックして、**[はい]** をクリックします。 
 
-Azure AD へのアプリケーションの登録については、[こちら](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications)を参照してください。 
+Azure AD へのアプリケーションの登録については、[こちら](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)を参照してください。 
 
 以下の「[条件付きアクセス](#conditional-access)」の要件も参照してください。
 
@@ -491,9 +667,7 @@ Azure AD へのアプリケーションの登録については、[こちら](ht
 
 
 ### <a name="conditional-access"></a>条件付きアクセス
-
-条件付きアクセス (CA) は Azure Active Directory の[機能](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)です。これを使用して、AAD リソースへのアクセスを制御できます。 [Intune 管理者は、CA ルールを定義できます](https://docs.microsoft.com/intune/conditional-access)。このルールで、Intune によって管理されるデバイスまたはアプリのみからのリソース アクセスを許可します。 必要に応じてアプリが確実にリソースにアクセスできるようにするには、以下の手順に従う必要があります。 アプリで AAD アクセス トークンを取得しないか、CA で保護できないリソースのみにアクセスする場合は、これらの手順をスキップしてもかまいません。
-
+条件付きアクセス (CA) は Azure Active Directory の[機能](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)です。これを使用して、AAD リソースへのアクセスを制御できます。  [Intune 管理者は、CA ルールを定義できます](https://docs.microsoft.com/intune/conditional-access)。このルールで、Intune によって管理されるデバイスまたはアプリのみからのリソース アクセスを許可します。 必要に応じてアプリが確実にリソースにアクセスできるようにするには、以下の手順に従う必要があります。 アプリで AAD アクセス トークンを取得しないか、CA で保護できないリソースのみにアクセスする場合は、これらの手順をスキップしてもかまいません。
 1. [ADAL の統合に関するガイドライン](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library)に従ってください。 
    特にブローカーの使用に関する手順 11 を参照してください。
 
@@ -537,7 +711,7 @@ APP-WE 統合を実装するには、アプリが MAM SDK にユーザー アカ
 
 2. ユーザー アカウントが作成され、ユーザーが正常に ADAL にサインインしたときに、アプリは、`registerAccountForMAM()` を呼び出す_必要があります_。
 
-3. ユーザー アカウントが削除されたときには、アプリは、`unregisterAccountForMAM()` を呼び出して Intune 管理からアカウントを削除する必要があります。
+3. ユーザー アカウントが完全に削除されたときには、アプリは、`unregisterAccountForMAM()` を呼び出して Intune 管理からアカウントを削除する必要があります。
 
     > [!NOTE]
     > ユーザーがアプリから一時的にサインアウトする場合、アプリは `unregisterAccountForMAM()` を呼び出す必要はありません。 呼び出しでは、ユーザーの会社のデータを完全に削除するワイプを開始できます。
@@ -584,7 +758,7 @@ public interface MAMEnrollmentManager {
 
     //Registration methods
     void registerAccountForMAM(String upn, String aadId, String tenantId);
-  void registerAccountForMAM(String upn, String aadId, String tenantId, String authority);
+    void registerAccountForMAM(String upn, String aadId, String tenantId, String authority);
     void unregisterAccountForMAM(String upn);
     Result getRegisteredAccountStatus(String upn);
 }
@@ -708,7 +882,9 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 
 `COMPANY_PORTAL_REQUIRED` の結果が受信された場合、SDK は登録が要求された対象の ID を使用したアクティビティの使用をブロックします。 代わりに、SDK は、それらアクティビティでポータル サイトをダウンロードするためのプロンプトを表示させます。 アプリでこの動作を回避する場合は、アクティビティで `MAMActivity.onMAMCompanyPortalRequired` を実装できます。
 
-このメソッドは、SDK が既定の UI のブロックを表示する前に呼び出されます。 アプリが、アクティビティ ID を変更するか、登録しようとしたユーザーの登録を解除した場合、SDK は、アクティビティはブロックしません。 この場合、会社のデータのリークを防ぐことはアプリの責任です。 アクティビティ ID を変更できるのは、(後述の) 複数 ID アプリのみです。
+このメソッドは、SDK が既定の UI のブロックを表示する前に呼び出されます。 アプリが、アクティビティ ID を変更するか、登録しようとしたユーザーの登録を解除した場合、SDK は、アクティビティはブロックしません。 この場合、会社のデータのリークを防ぐことはアプリの責任です。 アクティビティ ID を変更できるのは、(後述の) 複数 ID アプリのみであることに注意してください。
+
+(ビルド ツールによってその変更が行われるため) 明示的に `MAMActivity` を継承しませんが、引き続きこの通知を処理する必要がある場合、代わりに `MAMActivityBlockingListener` を実装できます。
 
 ### <a name="notifications"></a>通知
 
@@ -822,15 +998,12 @@ BackupAgent を使用すると、バックアップの対象とするデータ�
 
 3. 自動的に記述するエンティティが失われるので、`while(data.readNextHeader())`* 構造体内のバックアップのエンティティを消費しているときに返されないようにします。
 
-* ここで `data` は、復元時にアプリに渡す **BackupDataInput** のローカル変数の名前です。
+* ここで `data` は、復元時にご利用のアプリに渡す **MAMBackupDataInput** のローカル変数の名前です。
 
 ## <a name="multi-identity-optional"></a>複数 ID (省略可能)
 
 ### <a name="overview"></a>概要
-既定では、Intune アプリ SDK はポリシーをアプリ全体に適用します。 複数 ID は、ID 単位のレベルでポリシーを適用できるようにするオプションの Intune アプリ保護機能です。 これには、他のアプリ保護機能より多くのアプリの参加が必要です。
-
-アプリは、アクティブな ID を変更しようとするときに、SDK に通知する*必要があります*。 また、場合によっては、SDK は ID の変更が必要なときにもアプリに通知します。 ただし、ほとんどの場合、MAM は UI で表示されているデータまたは指定された時刻のスレッドに使用されるデータを把握することはできません。データのリークを避けるために、適切な ID の設定はアプリに依存します。 後続のセクションでは、アプリのアクションを必要とするいくつかの特定のシナリオが呼び出されます。
-
+既定では、Intune アプリ SDK はポリシーをアプリ全体に適用します。 複数 ID は、ID 単位のレベルでポリシーを適用できるようにするオプションの Intune アプリ保護機能です。 これには、他のアプリ保護機能よりはるかに多くのアプリの参加が必要です。
 > [!NOTE]
 >  適切なアプリの参加が不足していると、データのリークや他のセキュリティの問題が発生する場合があります。
 
@@ -839,8 +1012,9 @@ BackupAgent を使用すると、バックアップの対象とするデータ�
 > [!NOTE]
 > 現時点では、サポートされる Intune 管理対象 ID はデバイスあたり 1 つだけです。
 
-ID は文字列として定義されます。 ID は**大文字と小文字を区別されず**、SDK に ID を要求すると返される ID は、大文字と小文字の使い分けが ID 設定時の本来のものと異なる可能性があります。
+ID は文字列として簡単に定義されます。 ID は**大文字と小文字を区別されず**、SDK に ID を要求すると返される ID は、大文字と小文字の使い分けが ID 設定時の本来のものと異なる可能性があります。
 
+アプリは、アクティブな ID を変更しようとするときに、SDK に通知する*必要があります*。 また、場合によっては、SDK は ID の変更が必要なときにもアプリに通知します。 ただし、ほとんどの場合、MAM は UI で表示されているデータまたは指定された時刻のスレッドに使用されるデータを把握することはできません。データのリークを避けるために、適切な ID の設定はアプリに依存します。 後続のセクションでは、アプリのアクションを必要とするいくつかの特定のシナリオが呼び出されます。
 ### <a name="enabling-multi-identity"></a>複数 ID を有効にする
 
 既定では、すべてのアプリが単一 ID アプリと見なされます。 AndroidManifest.xml に次のメタデータを配置することでアプリが複数 ID に対応していることを宣言できます。
@@ -1005,6 +1179,11 @@ ID を設定するために使用されるすべてのメソッドは、`MAMIden
     > 複数 ID のアプリは常に、管理対象と管理対象外の両方のアプリからデータを受信します。 アプリは、管理された方法で管理対象 ID からのデータを処理する必要があります。
 
   要求された ID が管理対象 (`MAMPolicyManager.getIsIdentityManaged` を使用して確認します) であるが、アプリでそのアカウントを使用できない場合 (電子メール アカウントなどのアカウントはアプリで最初にセットアップする必要があるなどの理由で)、ID 切り替えを拒否する必要があります。
+#### <a name="build-plugin--tool-considerations"></a>ビルド プラグイン / ビルド ツールの考慮事項
+(ビルド ツールでその変更を行うようにできるため) 明示的に `MAMActivity`、`MAMService`、または `MAMContentProvider` から継承しませんが、引き続き ID の切り替えを処理する必要がある場合、代わりに `MAMActivityIdentityRequirementListener` (アクティビティ用) または `MAMIdentityRequirementListener` (サービスと ContentProvider 用) を実装できます。 `MAMActivity.onMAMIdentitySwitchRequired` に対する既定の動作には、静的メソッド `MAMActivity.defaultOnMAMIdentitySwitchRequired(activity, identity,
+reason, callback)` を呼び出すことによってアクセスできます。
+
+同様に、`MAMActivity.onSwitchMAMIdentityComplete` をオーバーライドする必要がある場合は、明示的に `MAMActivity` から継承することなく、`MAMActivityIdentitySwitchListener` を実装できます。
 
 ### <a name="preserving-identity-in-async-operations"></a>非同期操作での ID の保持
 UI スレッドに対する操作は、バック グラウンド タスクを別のスレッドにディスパッチするのが一般的です。 マルチ ID アプリでは、このようなバック グラウンド タスクが適切な ID で動作していることを確認する必要があります。多くの場合は、バック グラウンド タスクをディスパッチしたアクティビティで使用される ID と同じものになります。 MAM SDK では、ID を保持するのに便利な機能として `MAMAsyncTask` と `MAMIdentityExecutors` を提供しています。
@@ -1242,7 +1421,7 @@ public final class MAMDataProtectionManager {
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Android アプリケーションの MAM 対象の構成を有効にする (省略可能)
-アプリケーション固有のキーと値のペアは、Intune コンソールで構成することはできません。 これらのキーと値のペアが、Intune で解釈されることはありませんが、アプリに渡されます。 このような構成を受信する必要があるアプリケーションは、この操作を行うために `MAMAppConfigManager` と `MAMAppConfig` クラスを使用できます。 複数のポリシーが同じアプリで対象となっている場合は、同じキーに使用できる複数の値が競合している可能性があります。
+アプリケーション固有のキーと値のペアは、Intune コンソールで構成することはできません。 これらのキーと値のペアが、Intune で解釈されることはありませんが、単にアプリに渡されます。 このような構成を受信する必要があるアプリケーションは、この操作を行うために `MAMAppConfigManager` と `MAMAppConfig` クラスを使用できます。 複数のポリシーが同じアプリで対象となっている場合は、同じキーに使用できる複数の値が競合している可能性があります。
 
 ### <a name="example"></a>例
 ```
@@ -1431,7 +1610,7 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
 > **既定の登録**の利点には、デバイス上のアプリの APP-WE サービスからポリシーを取得する方法が簡単なことなどがあります。
 
 ### <a name="general-requirements"></a>一般的な要件
-* 「[ADAL の一般的な構成](https://docs.microsoft.com/en-us/intune/app-sdk-android#common-adal-configurations)」の 2. の手順に従って、自分のアプリが Intune モバイル アプリケーション管理サービスで登録されていることを確認します。
+* 「[ADAL の一般的な構成](https://docs.microsoft.com/intune/app-sdk-android#common-adal-configurations)」の 2. の手順に従って、自分のアプリが Intune モバイル アプリケーション管理サービスで登録されていることを確認します。
 
 ### <a name="working-with-the-intune-sdk"></a>Intune SDK の使用
 これらの手順は、エンド ユーザー デバイスで使用するアプリのために Intune アプリ保護ポリシーが必要なすべての Android および Xamarin アプリの開発者向けです。
@@ -1448,6 +1627,17 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
 4. マニフェストに次の値を入力して、必要な MAM ポリシーを有効にします。```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
    > [!NOTE] 
    > その結果、ユーザーの使用前に、デバイスにポータル サイトをダウンロードし、既定の登録フローを完了することを強制します。
+
+> [!NOTE]
+    > これは、アプリ内での唯一の MAM-WE 統合である必要があります。 MAMEnrollmentManager API を呼び出す他の試行がある場合、競合が発生します。
+
+3. マニフェストに次の値を入力して、必要な MAM ポリシーを有効にします。
+```xml
+<meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
+```
+
+> [!NOTE] 
+> その結果、ユーザーの使用前に、デバイスにポータル サイトをダウンロードし、既定の登録フローを完了することを強制します。
 
 ## <a name="limitations"></a>制限事項
 
@@ -1480,8 +1670,9 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
 
 ### <a name="reflection-limitations"></a>リフレクションの制限事項
 MAM の基底クラス (MAMActivity、MAMDocumentsProvider など) の一部には、特定の API レベルより上にあるパラメーターまたは戻り値の型のみを使用するメソッド (Android の元の基底クラスに基づく) が含まれています。 このため、リフレクションを使用して、常にアプリ コンポーネントのすべてのメソッドを列挙できるとは限りません。 この制限は MAM に限定されるものではなく、アプリ自体が、Android 基底クラスからのこのようなメソッドを実装する場合にも同じ制限が適用されます。
-### <a name="roboelectric"></a>Roboelectric
-Roboelectric での MAM SDK 動作のテストはサポートされていません。 実際のデバイスやエミュレーターでは正確に模倣されない Roboelectric に存在する動作による、Roboelectric での MAM SDK の実行に関する既知の問題があります。
+
+### <a name="robolectric"></a>Robolectric
+Robolectric での MAM SDK 動作のテストはサポートされていません。 実際のデバイスやエミュレーターでは正確に模倣されない Roboelectric に存在する動作による、Roboelectric での MAM SDK の実行に関する既知の問題があります。
 
 Roboelectric でアプリケーションをテストする必要がある場合に推奨される回避策は、アプリケーション クラスのロジックをヘルパーに移動し、MAMApplication から継承しないアプリケーション クラスで単体テスト apk を生成することです。
 ## <a name="expectations-of-the-sdk-consumer"></a>SDK コンシューマーの要望

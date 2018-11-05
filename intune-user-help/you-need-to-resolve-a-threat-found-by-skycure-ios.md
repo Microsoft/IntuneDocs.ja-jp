@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: a4bdb394407155be8716cf8039f997f3905f3998
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 86cd3f37215ec42cc89c865136e6ecd5dc3b9c11
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148434"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863010"
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Symantec Endpoint Protection Mobile で検出された脅威を解決する
 
@@ -32,9 +32,9 @@ Symantec Endpoint Protection (SEP) Mobile は Mobile Threat Defender サービ�
 * 企業ファイルを OneDrive に同期させる
 * 会社のアプリにアクセスする
 
-この記事では、SEP Mobile の脅威アラートを認識する方法と、解決するために行うことについて説明します。 
+この記事では、SEP Mobile でセキュリティまたはアプリの脅威が検出された場合に、会社のリソースへのアクセスを回復する方法を説明します。  
 
-## <a name="resolve-virus-or-security-threat"></a>ウイルスやセキュリティ上の脅威を解決する  
+## <a name="troubleshoot-a-virus-or-security-threat"></a>ウイルスやセキュリティ上の脅威をトラブルシューティングする
 
 1. 会社の電子メールまたは Web サイトにアクセスしようとすると、次のスクリーンショットで示すようなメッセージが表示されます。 **デバイスの管理ポータル** リンクをタップして、[ポータル サイト Web サイト](https://portal.manage.microsoft.com/devices)を開きます。
 
@@ -43,11 +43,13 @@ Symantec Endpoint Protection (SEP) Mobile は Mobile Threat Defender サービ�
 2. デバイスを選択します。  
 3. デバイスの下に表示される警告を確認します。 SEP Mobile を開いてウイルスやセキュリティ上の脅威を解決するように指示されます。    
 
-## <a name="resolve-an-app-threat"></a>アプリの脅威を解決する  
+    ![SEP Mobile の警告を表示する、ポータル サイト デバイス ページのスクリーンショット例。](./media/CP-lookout-virus-banner-1808.png)
+
+## <a name="troubleshoot-an-app-threat"></a>アプリの脅威をトラブルシューティングする
 
 デバイスに対する脅威と考えられるアプリをインストールする場合、SEP Mobile アプリ内に通知が示されます。 影響を受けるアプリがデバイス上に残っている場合、会社のリソースにアクセスできなくなります。  
 
 解決するには、SEP Mobile の脅威リストからアプリを選択します。 次に、画面上の指示に従って、アプリを削除してアンインストールします。  
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。 
+サポートが必要な場合は、 会社のサポートに問い合わせてください。 連絡先の情報は、[会社のポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)でわかります。   
 

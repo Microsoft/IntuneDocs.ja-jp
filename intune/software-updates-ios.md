@@ -5,17 +5,17 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/24/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 1fe0258d3b6d9092c032184fca5fc0f8dc3f12df
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: fdd33ea0b5d8189712c6390861131c684cfaa67d
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313498"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101955"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>Intune での iOS 更新プログラム ポリシーの構成
 
@@ -23,7 +23,7 @@ ms.locfileid: "43313498"
 
 デバイスは約 8 時間ごとに Intune でチェックインされます。 更新プログラムを利用できて、制限時間中ではない場合、デバイスで最新の OS 更新プログラムをダウンロードしてインストールします。 デバイスを更新するために必要なユーザーの操作はありません。 ポリシーにより、ユーザーが手動で OS を更新できなくなることはありません。
 
-この機能により、iOS 10.3 以降を実行しているデバイスがサポートされます。
+この機能は、iOS バージョン 10.3 以降を実行しているデバイスで使用できます。 遅延設定は、iOS バージョン 11.3 以降で利用できます。
 
 ## <a name="configure-the-policy"></a>ポリシーの構成
 1. [Azure ポータル](https://portal.azure.com)にサインインします。

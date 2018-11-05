@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/12/2018
+ms.date: 09/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02cc111f8991a855db4f05360e54598af511f28f
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 31c3e7b6d255cd99efee134f0276fd4d15dab6b9
+ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223494"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403563"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows デバイスの登録をセットアップする
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-このトピックは IT 管理者がユーザーの Windows の登録を簡略化する際に役立ちます。 [Intune が設定](setup-steps.md)されたら、ユーザーは職場または学校のアカウントで[サインイン](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)し、Windows デバイスを登録します。  
+この記事は、IT 管理者がそのユーザーの Windows の登録を簡略化する場合に役立ちます。 [Intune が設定](setup-steps.md)されたら、ユーザーは職場または学校のアカウントで[サインイン](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)し、Windows デバイスを登録します。  
 
 Intune 管理者は次の方法で登録を簡略化できます。
 - [自動登録を有効にする](#enable-windows-10-automatic-enrollment) (Azure AD Premium が必須)
@@ -45,27 +45,34 @@ Windows デバイスの登録を簡略化する方法は、次の 2 つの要素
 
 自動登録を利用できる組織は、Windows 構成デザイナー アプリを利用し、[デバイスの一括登録](windows-bulk-enroll.md)を構成することもできます。
 
-**マルチユーザー サポート**<br>
-Windows 10 Creators Update を実行し Azure Active Directory ドメインに参加するデバイスが、Intune のマルチユーザー管理でサポートされるようになりました。 標準ユーザーが自分の Azure AD 資格情報でログオンするとき、自分のユーザー名に割り当てられているアプリとポリシーが与えられます。 現時点では、アプリのインストールのようなセルフサービスのシナリオにポータル サイトは使用できません。
+## <a name="multi-user-support"></a>マルチ ユーザー サポート
+
+Intune では、Windows 10 Creators Update を実行する、Azure Active Directory ドメインに参加しているデバイスのマルチユーザー管理をサポートしています。 標準ユーザーが自分の Azure AD 資格情報でサインインするとき、自分のユーザー名に割り当てられているアプリとポリシーが与えられます。 現時点では、アプリのインストールのようなセルフサービスのシナリオにポータル サイトは使用できません。
 
 [!INCLUDE [AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
 ## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>Azure AD Premium なしで Windows 登録を簡略化する
-ドメイン ネーム サーバー (DNS) エイリアス (CNAME レコード タイプ) を作成することで、ユーザーのために登録を簡略化できます。DNS エイリアスは自動的に Intune サーバーに要求をリダイレクトします。 DNS CNAME リソース レコードを作成しない場合、Intune に接続するユーザーは、登録時、Intune サーバー名を入力する必要があります。
+Intune サーバーに登録要求をリダイレクトする、ドメイン ネーム サーバー (DNS) エイリアス (CNAME レコード タイプ) を作成することで、登録を簡略化できます。 それ以外の場合、Intune に接続を試行するユーザーは、登録時に Intune のサーバー名を入力する必要があります。
 
 **手順 1: CNAME を作成する** (省略可能)<br>
 会社のドメインの CNAME DNS リソース レコードを作成します。 たとえば、会社の Web サイトが contoso.com の場合、EnterpriseEnrollment.contoso.com を enterpriseenrollment-s.manage.microsoft.com にリダイレクトする CNAME を DNS に作成します。
 
 CNAME DNS エントリの作成は省略可能ですが、CNAME レコードにより登録が簡単になります。 CNAME レコードの登録が見つからない場合、ユーザーは手動で MDM サーバー名 enrollment.manage.microsoft.com を入力するように求められます。
 
-|型|ホスト名|指定先|TTL|
+|Type|ホスト名|指定先|TTL|
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 時間|
 |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 時間|
 
-複数の UPN サフィックスがある場合は、各ドメイン名について 1 つの CNAME レコードを作成し、それぞれで EnterpriseEnrollment s.manage.microsoft.com をポイントする必要があります。Contoso 社でユーザーが name@contoso.com を使用しており、電子メール/UPN として name@us.contoso.com と name@eu.constoso.com も使用している場合、Contoso の DNS 管理者は次の CNAME を作成する必要があります。
+企業に複数の UPN サフィックスがある場合は、ドメイン名ごとに 1 つ CNAME を作成し、それぞれで EnterpriseEnrollment-s.manage.microsoft.com をポイントする必要があります。 たとえば、Contoso のユーザーは電子メール/UPN として、次の形式を使用します。
 
-|型|ホスト名|指定先|TTL|  
+- name@contoso.com
+- name@us.contoso.com
+- name@eu.constoso.com\
+
+Contoso DNS の管理者は、次の CNAME を作成する必要があります。
+
+|Type|ホスト名|指定先|TTL|  
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 時間|
 |CNAME|EnterpriseEnrollment.us.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 時間|
@@ -76,7 +83,8 @@ CNAME DNS エントリの作成は省略可能ですが、CNAME レコードに�
 DNS レコードの変更が反映されるまでには、最大で 72 時間かかります。 DNS レコードの変更が反映されるまで、Intune で DNS の変更を確認することはできません。
 
 **手順 2: CNAME を確認する** (省略可能)<br>
-Azure Portal で、**[その他のサービス]** > **[監視 + 管理]** > **[Intune]** の順に選択します。 [Intune] ブレードで、**[デバイスの登録]**  >  **[Windows Enrollment (Windows 登録)]** を選択します。 **[検証済みドメイン名の指定]** ボックスに会社の Web サイト URL を入力し、**[自動検出のテスト]** を選択します。
+1. [Azure portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Windows の登録]** > **[CNAME 検証]** の順に選択します。
+2. **[ドメイン]** ボックスに、企業の Web サイトを入力し、**[テスト]** を選択します。
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>Windows デバイスの登録方法をユーザーに通知する
 ユーザーに、Windows デバイスを登録する方法とデバイスが管理されるとどうなるかを伝えます。

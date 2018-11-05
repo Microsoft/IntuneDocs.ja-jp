@@ -3,10 +3,10 @@ title: Azure Portal に条件付きアクセスを移行する
 titlesuffix: Microsoft Intune
 description: Intune クラシック ポータルで以前に作成した条件付きアクセス ポリシーを Azure Portal に再割り当てします。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 09/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d295ade29522a5593993b5541311eadd9e4c9528
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 00c657700cd8c27e4758b9cc94292ba83b2db3cd
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31027470"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231714"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>条件付きアクセス ポリシーを Intune クラシック ポータルから Azure Portal に再割り当てする
 
@@ -179,6 +179,9 @@ Intune クラシック ポータルで Exchange Online のポリシーの一部�
 12. **[新規]** 条件付きアクセス ポリシー ブレードで、**[ポリシーを有効にする]** をオンにして、**[作成]** をクリックします。
 
     ![Intune ポータルと Azure Portal の条件付きアクセス ポリシー有効化 UI の比較を示すイメージ](./media/reassign-ca-17.png)
+
+> [!NOTE]
+> **デバイス プラットフォーム**を構成する場合、ポリシーを保存しようとすると、ポリシーの構成がサポートされていないというエラーが発生して失敗します。 Exchange ActiveSync は、接続デバイスで使用されているプラットフォームを識別できません。 そのため、Exchange ActiveSync デバイスのポリシーを作成する際に、特定のデバイス プラットフォームの構成がサポートされません。
 
 ## <a name="disable-conditional-access-policies-in-the-intune-classic-portal"></a>Intune クラシック ポータルで条件付きアクセス ポリシーを無効にする
 

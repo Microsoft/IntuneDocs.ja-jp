@@ -2,11 +2,11 @@
 title: 条件付きアクセスに関するトラブルシューティング
 description: ユーザーが Intune の条件付きアクセスでリソースにアクセスできない場合の対処方法。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 10/24/2016
-ms.topic: article
+ms.date: 09/25/2018
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -14,140 +14,66 @@ ms.assetid: 5fa59501-5f33-46b7-a5f5-75eeae9f1209
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3ef3b442c5d2cdb731fc906bb865d280729b163a
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: f7f8e9d4fb6c6ce551d30623db864eb1784b7a54
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238175"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231629"
 ---
 # <a name="troubleshoot-conditional-access"></a>条件付きアクセスに関するトラブルシューティング
 
-通常、ユーザーは電子メールまたは SharePoint にアクセスしようとし、登録を要求されます。 そのプロンプトからユーザーはポータル サイトに移動します。
+Intune と条件付きアクセスを使用して、Exchange Online、SharePoint Online、Skype for Business Online、Exchange On-Premises などの Office 365 サービスへのアクセスを保護できます。 この機能では、会社のリソースへのアクセスを、Intune 管理コンソールまたは Azure Active Directory で設定した条件付きアクセス ルールに準拠する、Intune に登録されたデバイスに限定することができます。 この記事では、条件付きアクセスで保護されているリソースにユーザーがアクセスできなかった場合、または保護されているリソースにユーザーがアクセスできるがブロックする必要がある場合の対処方法について説明します。
 
-この記事では、ユーザーが Intune の条件付きアクセスでリソースにアクセスできない場合の対処方法について説明します。
-
-
-## <a name="the-basics-for-success-in-conditional-access"></a>条件付きアクセスが機能するための基礎
+## <a name="requirements-for-conditional-access"></a>条件付きアクセスの要件
 
 条件付きアクセスが機能するには、次の要件を満たす必要があります。
 
--   デバイスを Intune で管理する必要がある
--   デバイスを Azure Active Directory (AAD) に登録する必要がある。 通常の状況下では、この登録は Intune の登録時に自動的に行われます
--   デバイスはデバイスおよびそのデバイスのユーザーの Intune コンプライアンス ポリシーに準拠している必要がある。  コンプライアンス ポリシーが存在しない場合は、Intune の登録で十分です。
--   ユーザーが Outlook ではなくデバイスのネイティブ メール クライアントを利用してメールを取得する場合、Exchange ActiveSync をデバイスで有効にする必要がある。 これは、iOS、Windows Phone、および Android/KNOX 標準デバイスで自動的に発生します。
+- デバイスを Intune で登録および管理する必要がある。
+- ユーザーとデバイスの両方が、割り当てられた Intune コンプライアンス ポリシーに準拠する必要がある。
+- 既定で、ユーザーにデバイス コンプライアンス ポリシーを割り当てる必要がある。 これは、Intune 管理ポータルの **[デバイスのポリシー準拠]** > **[コンプライアンス ポリシー設定]** で **[コンプライアンス ポリシーが割り当てられていないデバイスをマークする]** という設定がどのように構成されているかに既存する可能性があります。
+-   ユーザーが Outlook ではなくデバイスのネイティブ メール クライアントを使用する場合、デバイスで Exchange ActiveSync を有効にする必要がある。 これは、iOS、Windows Phone、および Android デバイスで自動的に発生します。
 -   Intune Exchange Connector を適切に構成する必要がある。 詳細については、[Microsoft Intune での Exchange Connector のトラブルシューティング](troubleshoot-exchange-connector.md)に関するページを参照してください。
 
 各デバイスのこれらの状態は、Azure portal およびデバイスのインベントリ レポートで確認できます。
 
-## <a name="enrollment-issues"></a>登録に関する問題
+## <a name="devices-appear-compliant-but-users-are-still-blocked"></a>デバイスが準拠しているように見えるが、ユーザーがまだブロックされている
 
- -  デバイスが登録されていません。登録することで問題が解消されます。
- -  ユーザーがデバイスを登録しましたが、社内参加できませんでした。 ユーザーはポータル サイトから登録を更新する必要があります。
+- ユーザーが受信する検疫電子メール内で **[今すぐ開始]** リンクをクリックするまで、非 Knox Android デバイスにはアクセス許可が付与されません。 これは、ユーザーが既に Intune に登録されている場合でも適用されます。 ユーザーがこのリンクが含まれる電子メールをスマート フォンで受信できない場合は、PC を使用して電子メールにアクセスし、自分のデバイスの電子メール アカウントに転送することができます。
+- デバイスを初めて登録する際には、デバイスに関するコンプライアンス情報が登録されるまで時間がかかることがあります。 しばらく待ってからもう一度お試しください。
+- iOS デバイスでは、既存の電子メール プロファイルによって、そのユーザーに割り当てられている、Intune 管理者が作成した電子メール プロファイルのデプロイが妨げられ、デバイスが非準拠になる可能性があります。 このシナリオでは、ポータル サイト アプリがユーザーに対して、手動で構成された電子メール プロファイルが原因でデバイスが非準拠になっていることを通知し、そのプロファイルを削除するようユーザーに求めます。 ユーザーが既存の電子メール プロファイルを削除すると、Intune 電子メール プロファイルは正常にデプロイされます。 この問題を防ぐには、登録の前に、デバイス上のすべての既存の電子メール プロファイルを削除するようにユーザーに指示します。
+- デバイスがポリシー準拠状況の確認中の状態でスタックし、ユーザーが別のチェックインを開始できない場合があります。 デバイスがこの状態にある場合は、次の処理を実行してみてください。
+  - デバイスがポータル サイト アプリの最新バージョンを使用していることを確認します。
+  - デバイスを再起動します。
+  - 別のネットワーク (たとえば、携帯電話や Wi-Fi) で問題が解決されないかどうかを確認します。
 
-## <a name="compliance-issues"></a>ポリシー準拠の問題
+  問題が解決されない場合は、「[Microsoft Intune のサポートを受ける方法](get-support.md)」の説明に従って、Microsoft サポートにお問い合わせください。
+- 一部の Android デバイスは暗号化されているように見えることがありますが、ポータル サイト アプリでは、このようなデバイスは暗号化されていないデバイスとして認識されるので、非準拠となります。 このシナリオでは、ポータル サイト アプリで、デバイスのスタートアップ パスコードを設定するように求める通知がユーザーに表示されます。 通知をタップし、既存の PIN またはパスワードを確認した後に、**[Secure start-up]/(安全な起動/)** 画面で **[Require PIN to start device]/(デバイスの起動に PIN が必要/)** を選択します。次に、ポータル サイト アプリから、デバイスに対して **[ポリシー準拠状況の確認]** ボタンをタップします。 デバイスは暗号化済みとして検出されるようになります。 
+  > [!NOTE]
+  > デバイスの製造元によっては、ユーザーが設定した PIN ではなく既定の PIN を使用してデバイスを暗号化します。 Intune では、既定の PIN を使用した暗号化を安全でないと見なし、ユーザーが既定以外の新しい PIN を作成するまで、それらのデバイスを非準拠としてマークします。
+- 登録され、ポリシーに準拠している Android デバイスでも、企業のリソースに初めてアクセスしようとした際に、ブロックされて検疫通知を受け取る場合があります。 この場合は、ポータル サイト アプリが実行されていないことを確認し、検疫電子メール内で **[今すぐ開始]** リンクをクリックして、評価をトリガーします。 この処理は、条件付きアクセスを初めて有効にする場合にのみ実行する必要があります。
 
-- デバイスが Intune ポリシーに準拠していません。 一般的な問題は暗号化とパスワードの要件です。 ユーザーはポータル サイトにリダイレクトされます。ポータル サイトでデバイスがポリシーに準拠するように設定できます。
-- デバイスのコンプライアンス情報が登録されるまで時間がかかることがあります。 しばらく待ってからもう一度お試しください。
-- iOS デバイスの場合:
-  - ユーザーによって作成された既存の電子メール プロファイルは、Intune の管理者が作成したプロファイルの展開をブロックします。 この問題は一般的です。iOS ユーザーは通常、電子メール プロファイルを作成し、それから登録するからです。 ポータル サイトはユーザーに、手動で構成された電子メール プロファイルが原因で準拠していないことを通知し、そのプロファイルを削除するようユーザーに求めます。 Intune プロファイルを展開できるように、ユーザーは電子メール プロファイルを削除する必要があります。 この問題を防ぐには、電子メール プロファイルを設定せずに登録し、Intune によるプロファイルの展開を許可するようにユーザーに指示します。
-  - iOS デバイスがポリシー準拠状況の確認中の状態でスタックし、ユーザーが別のチェックインを開始できません。 ポータル サイトの再起動で解決することがあり、ポリシー準拠の状態が Intune のデバイスの状態を反映します。 デバイスの同期からすべてのデータが収集された後、ポリシー準拠の確認は平均して 0.5 秒で完了します。
+## <a name="devices-are-blocked-and-no-quarantine-email-is-received"></a>デバイスがブロックされ、検疫電子メールが受信されない
 
-    通常、デバイスがこの状態にあるのは、サービスの接続に問題があるか、同期に時間がかかっていることが原因です。  別のネットワーク構成 (携帯電話、Wi-Fi、VPN) を使用、デバイスを再起動、およびデバイスの SSP が最新であることを確認しても問題が解決しない場合は、[Microsoft Intune のサポート受ける方法](get-support.md)に関するページの説明に従って Microsoft サポートにお問い合わせください。
+- デバイスが Intune 管理コンソールに Exchange ActiveSync デバイスとして存在することを確認します。 存在しない場合、Exchange Connector の問題でデバイスの検出が失敗している可能性があります。 詳細については、「[Intune のオンプレミス Exchange Connector のトラブルシューティング](troubleshoot-exchange-connector.md)」を参照してください。
+- Exchange Connector はデバイスをブロックする前に、ライセンス認証 (検疫) の電子メールを送信します。 デバイスがオフラインである場合、ライセンス認証の電子メールを受信できない可能性があります。 
+- デバイス上の電子メール クライアントが、**ポーリング**ではなく**プッシュ**を使用して電子メールを取得するように構成されているかどうかを確認します。 そのように構成されている場合は、ユーザーが電子メールを受け取れない可能性があります。 **ポーリング**に切り替え、デバイスが電子メールを受信することを確認してください。
 
-- Android デバイスの場合:
-   - 一部の Android デバイスは暗号化されているように見えることがありますが、ポータル サイト アプリでは、このようなデバイスを暗号化されていないデバイスと認識します。 
-    
-       -   この状態のデバイスでは、ユーザーが安全なスタートアップ パスコードを設定する必要があります。 ユーザーには、ポータル サイト アプリから、デバイスのスタートアップ パスコードを設定するように求めるデバイス通知が表示されます。 デバイス通知をタップし、既存の PIN またはパスワードを確認した後に、**[Secure start-up]** (安全な起動) 画面で **[Require PIN to start device]** (デバイスの起動に PIN が必要) を選択します。 ポータル サイト アプリからデバイスの **[ポリシー準拠状況の確認]** ボタンをタップします。 デバイスは暗号化済みとして検出されるようになります。
-    
-       -   デバイスの製造元によっては、ユーザーが設定したシークレット PIN ではなく既定の PIN を使用してデバイスを暗号化する場合があります。 Intune は、既定の PIN を使用した暗号化を安全ではないと認識します。この方法の暗号化では、悪意のあるユーザーがデバイスに物理的にアクセスできる場合、デバイス上のデータが危険な状態になるためです。 この問題が生じた場合は、[アプリの保護ポリシー](app-protection-policies.md)を使用することを検討してください。
+## <a name="devices-are-noncompliant-but-users-are-not-blocked"></a>デバイスが準拠していないが、ユーザーがブロックされていない
 
-## <a name="policy-issues"></a>ポリシーの問題
+- Windows PC では、条件付きアクセスによって、ネイティブ電子メール アプリ、先進認証を使用する Office 2013、または Office 2016 のみがブロックされます。 以前のバージョンの Outlook、または Windows PC 上のすべてのメール アプリをブロックするには、「[SharePoint Online と Exchange Online に Azure Active Directory の条件付きアクセスを設定する](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication)」の説明に従って、AAD Device Registration および Active Directory フェデレーション サービス (AD FS) を構成する必要があります。 
+- デバイスが選択的にワイプされるか、Intune から削除された場合、削除後に数時間にわたってアクセス許可を持ち続ける可能性があります。 これは Exchange がアクセス権を 6 時間キャッシュするためです。 このシナリオでは、使用中止となったデバイスのデータの保護には別の手段を検討してください。
+- Surface Hub デバイスでは条件付きアクセスがサポートされていますが、適切な評価を行うには、デバイス グループ (ユーザー グループではなく) にコンプライアンス ポリシーをデプロイする必要があります。
+- コンプライアンス ポリシーと条件付きアクセス ポリシーの割り当てを確認します。 ポリシーが割り当てられているグループにユーザーが属さないか、または除外するグループにユーザーが属する場合、ユーザーはブロックされません。 割り当てられているグループ内のユーザーのデバイスのみが、コンプライアンスをチェックされます。
 
-コンプライアンス ポリシーを作成し、それを電子メール ポリシーにリンクするとき、両方のポリシーを同じユーザーに展開する必要があります。そのため、どのポリシーをどのグループに展開するか計画するときは注意が必要です。 ユーザーにポリシーが 1 つだけ適用されている場合、そのユーザーのデバイスはおそらくポリシー非準拠となります。
-
-
-## <a name="exchange-activesync-issues"></a>Exchange ActiveSync の問題
-
-### <a name="compliant-android-device-gets-quarantine-notice"></a>対応する Android デバイスが検疫通知を受け取る
-- 登録され、ポリシーに準拠している Android デバイスでも、企業のリソースにアクセスしようとしたとき、検疫通知を受け取ることができます。 **[開始]** と記載されたリンクを選択する前に、リソースにアクセスしようとしたとき、ポータル サイトが開いていなかったことをユーザーは確認する必要があります。 ユーザーはポータル サイトを閉じ、リソースへのアクセスをもう一度試し、それから **[開始]** リンクを選択します。
-
-### <a name="retired-device-continues-to-have-access"></a>使用中止となったデバイスで引き続きアクセスできる
-- Exchange Online を使用すると、使用中止となったデバイスでも使用中止後の数時間はアクセスできることがあります。 これは Exchange がアクセス権を 6 時間キャッシュするためです。 このシナリオでは、使用中止となったデバイスのデータの保護には別の手段を検討してください。
-
-### <a name="device-is-compliant-and-registered-with-aad-but-still-blocked"></a>デバイスが AAD に準拠し登録されているがまだブロックされている
-- Exchange ActiveSync ID (EASID) から AAD へのプロビジョニングが遅延することがあります。 この問題の一般的な原因は調整です。しばらく待ってからもう一度お試しください。
-
-### <a name="device-blocked"></a>デバイスがブロックされている
-
-デバイスは、ライセンス認証の電子メールを受信することなく条件付きアクセスからブロックされることがあります。
-
-- デバイスを検疫またはブロックする既定の Exchange ルールはありますか。 既定のルールがデバイスをブロックまたは検疫する場合、デバイスは Exchange Connector からライセンス認証の電子メールを受信できません。 これは仕様です。
-- 通知アカウントは基本構成で説明されているとおりに適切に構成されていますか。
-- デバイスは Intune 管理コンソールに Exchange ActiveSync デバイスとして存在しますか。 存在しない場合、Exchange Connector の同期の問題でデバイスの検出が失敗している可能性があります。 「Exchange ActiveSync device not discovered from Exchange」 (Exchange ActiveSync デバイスが Exchange から検出されない問題) を参照してください。
-- Exchange Connector のログで sendemail アクティビティにエラーがないかを確認します。 検索するコマンドの例は、「SendEmail from notification account to useremail」です。
-- Exchange Connector はデバイスをブロックする前に、ライセンス認証の電子メールを送信します。 デバイスがオフラインである場合、ライセンス認証の電子メールを受信できない可能性があります。 デバイスの電子メール クライアントがポーリングでなくプッシュを使用して電子メールを取得しているかどうかを確認します。ユーザーが電子メールを受信しない可能性があるためです。 ポーリングに切り替え、デバイスが電子メールを受信することを確認してください。
-
-## <a name="noncompliant-device-not-blocked"></a>非対応のデバイスがブロックされていない
+## <a name="noncompliant-device-is-not-blocked"></a>非準拠のデバイスがブロックされていない
 
 非対応のデバイスで引き続きアクセス可能なデバイスが見つかった場合は、次の手順を実行します。
-
 - ターゲット グループと除外グループを確認します。 ユーザーが正しいターゲット グループにいない、または除外グループにいる場合、ユーザーはブロックされません。 ターゲット グループ内のユーザーのデバイスのみが対応しているかどうかチェックされます。
 - デバイスが検出されていることを確認します。 ユーザーが Exchange 2013 Server を使用しているにもかかわらず、Exchange Connector が Exchange 2010 CAS を指していませんか。 このケースでは、ユーザーがターゲット グループに存在する場合でも、既定の Exchange 規則が [許可] であれば、Intune は Exchange へのデバイスの接続を認識しません。
 - Exchange で次のようにデバイスの存在とアクセスの状態を確認します。
-    - PowerShell コマンドレット "Get-ActiveSyncDeviceStatistics -mailbox mbx" を使用してメールボックスのすべてのモバイル デバイスの一覧を取得します。 デバイスが一覧に表示されない場合、デバイスは Exchange にアクセスしていません。
-    - デバイスが一覧に表示されている場合は、Get-CASmailbox -identity:’upn’ | fl コマンドレットを使用してアクセスの状態に関する詳細情報を取得し、その情報を Microsoft サポートに提供します。
+  - PowerShell コマンドレット "Get-ActiveSyncDeviceStatistics -mailbox mbx" を使用してメールボックスのすべてのモバイル デバイスの一覧を取得します。 デバイスが一覧に表示されない場合、デバイスは Exchange にアクセスしていません。
+  - デバイスが一覧に表示されている場合は、Get-CASmailbox -identity:’upn’ | fl コマンドレットを使用してアクセスの状態に関する詳細情報を取得し、その情報を Microsoft サポートに提供します。
 
-## <a name="before-you-open-a-support-ticket"></a>サポート チケットを開く前に
-これらのトラブルシューティング手順で問題が解決しない場合、OWA メールボックスのログや Exchange Connector のログなどの情報の提供を Microsoft サポートに求められることがあります。
-
-### <a name="collecting-owa-mailbox-logs"></a>OWA メールボックス ログオンの回収
-
-1. OWA 経由でログオンし、右上隅の自分の名前の隣にある設定 (歯車) のアイコンを選択します。
-2. **[オプション]** を選択します。
-3. 左側の列の **[電話]** (**[モバイル デバイス]** と表記されている場合もあります) を選択します。
-4. 上部のメニューから **[モバイル デバイス]** を選択します。
-5. 一覧からデバイスを選択し、**[ログの開始]** を選択します。
-6. プロンプトされたら、ポップアップ ダイアログで **[はい]** を選択します。
-7. 問題を引き起こした操作を実行し、再現します。
-8. 1、2 分待ち、OWA の電話番号の一覧に戻ります。 一覧で電話が選択し、上部のメニューから **[ログの取得]** を選択します。
-9. これで自身から添付ファイル付きの電子メールが届きます。 サポート チケットを開くとき、Microsoft サポートに電子メールの内容を提供します。
-
-### <a name="exchange-connector-logs"></a>Exchange Connector のログ
-
-#### <a name="general-log-information"></a>一般的なログ情報
-Exchange Connector のログを表示するには、[サービス トレース ビューアー ツール](https://docs.microsoft.com/en-us/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe)を使用します。 このツールを使用するには、Windows Server SDK をダウンロードする必要があります。
-
->[!NOTE]
->ログは C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs に置かれます。 ログは *Connector0.log* から *Connector29.log* までの 30 個の一連のログ ファイルで格納されます。 10MB のデータが蓄積されると次のログにロールオーバーします。 ログが Connector29 に達すると、Connector0 から再開され、以前のログが上書きされます。
-
-#### <a name="locating-sync-logs"></a>同期ログを特定する
-
-- ログ内で **full sync** を検索して完全同期を探します。完全同期の開始は、次のテキストでマークされます。
-
-  'Handling command: Getting the mobile device list without a time filter (full sync) for <number> users`
-
-  完全同期のログの末尾は、次のようになります。
-
-  Getting the mobile device list without a time filter (full sync) for 4 users completed successfully. Details: Inventory command result - Devices synced: 0 Command ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
-
-- ログ内で **quick sync** を検索してクイック (デルタ) 同期を探します。
-
-##### <a name="exceptions-in-get-next-command"></a>Get next コマンドの例外
-Exchange Connector ログで **Get next コマンド**の例外を確認し、それらを Microsoft サポートに提供します。
-
-#### <a name="verbose-logging"></a>詳細ログ記録
-
-詳細ログ記録を有効にするには:
-
-1.  Exchange Connector のトレース構成ファイルを開きます。 ファイルは、%ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml に置かれます。
-2.  キー OnPremisesExchangeConnectorService を使用して、TraceSourceLine を探します。
-3.  **SourceLevel** ノードの値を、以下のように **Warning ActivityTracing** (既定値) から **Verbose ActivityTracing** に変更します。
-
-    <TraceSourceLine> <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key> <Value xsi:type="TraceSource"> <SourceLevel>All</SourceLevel> <Listeners> <Listener> <ListenerType>CircularTraceListener</ListenerType> <SourceLevel>Verbose ActivityTracing</SourceLevel> <FileSizeQuotaInBytes>10000000</FileSizeQuotaInBytes> <FileName>Microsoft\Windows Intune Exchange Connector\Logs\Connector.svclog</FileName> <FileQuota>30</FileQuota> </Listener> </Listeners> </Value>
-    </TraceSourceLine>
-
-
-
-### <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次の手順
 この情報を使っても問題が解決しない場合は、[Microsoft Intune のサポートを受ける](get-support.md)こともできます。

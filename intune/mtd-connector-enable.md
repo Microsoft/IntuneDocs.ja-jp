@@ -3,8 +3,8 @@ title: Microsoft Intune で Mobile Threat Defense コネクタを有効にする
 titleSuffix: ''
 description: Mobile Threat Defense (MTD) パートナーと Microsoft Intune の間のコネクタを有効にします。
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6fccfcbceecc9aa0667aa9fd6656c2fcc524d363
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: e2172c1cd066e99f3634dd856538671207cf1ed0
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34569359"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48232241"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Intune で Mobile Threat Defense コネクタを有効にする
 
@@ -31,13 +31,13 @@ Mobile Threat Defense (MTD) のセットアップ中、MTD パートナー コ�
 
 ## <a name="to-enable-the-mtd-connector"></a>MTD コネクタを有効にするには
 
-1. [Azure Portal](https://portal.azure.com) に移動し、Intune 資格情報でサインインします。 正常にサインインすると、**Azure ダッシュボード**が開きます。
+1. [Azure Portal](https://portal.azure.com) に移動し、Intune 資格情報でサインインします。 正常にサインインできたら、**Azure ダッシュボード**が表示されます。
 
-2. **Azure ダッシュボード**で、左側のメニューから **[すべてのサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
+2. **Azure ダッシュボード**の左のメニューから **[すべてのサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
 
-3. **[Intune]** を選択すると、**Intune ダッシュボード**が開きます。
+3. **[Intune]** を選択します。**Intune ダッシュボード**が開きます。
 
-4. **Intune ダッシュ ボード**で、**[デバイスのポリシー準拠]** を選択し、**[セットアップ]** セクションで **[Mobile Threat Defense]** を選択します。
+4. **Intune ダッシュボード**で、**[デバイスのポリシー準拠]** を選択し、**[設定]** セクションで **[Mobile Threat Defense]** を選択します。
 
 5. **[Mobile Threat Defense]** ウィンドウで、**[追加]** を選択します。
 
@@ -45,11 +45,11 @@ Mobile Threat Defense (MTD) のセットアップ中、MTD パートナー コ�
 
     ![Intune Azure Portal での MTD のセットアップ](./media/enable-mtd-connector-1.png)
 
-7. 組織の要件に応じてトグルのオプションを有効にします。
+7. 組織の要件に応じてトグルのオプションを有効にします。 表示される切り替えオプションは、MTD パートナーによって異なります。
 
 ## <a name="mtd-toggle-options"></a>MTD トグル オプション
 
-組織の要件に従って、有効にすべき MTD トグル オプションを決定できます。 詳細を次に示します。
+組織の要件に基づき、有効にする MTD 切り替えオプションを決定できます。 詳細を次に示します。
 
 - **[Connect Android 4.1+ devices to [MTD partner name] for Work MTD]\(Android 4.1+ デバイスを [MTD パートナー名] for Work MTD に接続する\)**: このオプションを有効にすると、Android 4.1+ デバイスはセキュリティ上のリスクを Intune に報告します。
     - **[データが受信されない場合、非準拠としてマークする]**: Intune がこのプラットフォーム上のデバイスに関するデータを MTD パートナーから受信しない場合は、そのデバイスを非準拠とみなします。

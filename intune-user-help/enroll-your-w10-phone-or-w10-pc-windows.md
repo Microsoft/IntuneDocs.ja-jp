@@ -1,11 +1,11 @@
 ---
-title: Intune に Windows 10 デバイスを登録する | Microsoft Docs
-description: Intune に Windows 10 のモバイル デバイスまたはデスクトップ デバイスを登録する方法について説明します
+title: Intune の管理に Windows 10 デバイスを登録する | Microsoft Docs
+description: Intune で Windows 10 のモバイル デバイスまたはデスクトップ デバイスを管理する方法について説明します
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/10/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6395dc0d14b8947093d53865eb1d97f6ef56db25
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 35a345cd70c9c7e8e0e6d482d933d91f9a6f5f18
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147114"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828229"
 ---
 # <a name="enroll-your-windows-10-devices-in-intune"></a>Intune に Windows 10 デバイスを登録する
 

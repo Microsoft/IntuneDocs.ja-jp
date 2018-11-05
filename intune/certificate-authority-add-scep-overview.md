@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ee5a39ee8a146fbc6a85a9f4438b8e14a408a735
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: e088dbf4080cb6092ff506519b81438a0d5ce64c
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321728"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102108"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>SCEP を使用して Intune でパートナーの証明機関を追加する
 
@@ -123,6 +123,8 @@ URL と名前に関するヒントなど、アプリ作成のガイダンスに�
 次のサード パーティ証明機関が Intune をサポートしています。
 
 - [Entrust Datacard](http://www.entrustdatacard.com/resource-center/documents/documentation)
+- [EJBCA GitHub オープンソース バージョン](https://github.com/agerbergt/intune-ejbca-connector)
+- [EverTrust](https://evertrust.fr/en/products/)
 
 自社の製品と Intune の統合に関心をお持ちのサード パーティ CA は、API のガイダンスを確認してください。
 

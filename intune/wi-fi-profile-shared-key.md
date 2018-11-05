@@ -14,12 +14,12 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb88bf64db8eaa82a68f56f8c3235030539f1959
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 72aa45d154cc3913f5b2e3895486a8296bb7f1cf
+ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190641"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169449"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>カスタム デバイス プロファイルを使用し、事前共有キーを使用した WiFi プロファイルを作成する - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -70,7 +70,7 @@ Android、Windows、または EAP ベースの Wi-Fi プロファイル用の事
 
 ## <a name="android-or-windows-wi-fi-profile-example"></a>Android または Windows の Wi-Fi プロファイルの例
 
-Android または Windows の Wi-Fi プロファイルの XML コードの例は、次のとおりです。 
+Android または Windows の Wi-Fi プロファイルの XML コードの例は、次のとおりです。 この例は、適切な形式を表示し、詳細情報を提供するために用意されています。 これは単なる例であり、ご使用の環境に推奨される構成として意図されたものではありません。
 
 > [!IMPORTANT]
 >
@@ -122,7 +122,8 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 ```
 
 ## <a name="eap-based-wi-fi-profile-example"></a>EAP ベースの Wi-Fi プロファイルの例
-EAP ベースの Wi-Fi プロファイルの XML コードの例は、次のとおりです。
+次の例には、EAP ベースの Wi-Fi プロファイルの XML コードが含まれています。この例は、適切な形式を表示し、詳細情報を提供するために用意されています。 これは単なる例であり、ご使用の環境に推奨される構成として意図されたものではありません。
+
 
 ```
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">

@@ -1,11 +1,11 @@
 ---
 title: Windows 用 Intune ポータル サイト アプリからアプリをインストールする
-description: ''
+description: Windows 用 Intune ポータル サイト アプリからアプリをインストールして共有する方法について説明します
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/07/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,28 +17,50 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5d77a4c2b5d55a3cd6086af61de0804afc3e5245
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: e2bf5ffd5c913b4e2c51c9efd0aa40ba3d3f0fa7
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149620"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863095"
 ---
-# <a name="install-apps-on-your-device"></a>デバイスにアプリをインストールする
+# <a name="install-and-share-apps-on-your-device"></a>デバイスにアプリをインストールして共有する
 Windows 用 Intune ポータル サイト アプリからデバイスにアプリをインストールします。
 
-1. Intune ポータル サイト アプリを開き、職場または学校アカウントでサインインします。
-![Windows 10 用 Intune ポータル サイト アプリのホーム ページ。](./media/RS1_AppDetailsPage_Installed_03.png)
-2. Intune ポータル サイト アプリの次のいずれかのセクションでアプリを検索してインストールします。
-    * **[アプリ]**: 組織のおすすめアプリの一覧から選びます。 
-    * **[すべて表示]**: **[アプリ]** セクションの **[すべて表示]** をクリックして、使用可能なすべてのアプリを表示します。
-    * **[アプリを検索]**: アプリ左側のナビゲーション メニューには、固定の検索バーがあります。 アプリの名前を入力して、使用できるかどうか調べます。
-    * **[すべてのアプリ]**: 使用可能なすべてのアプリを表示、並べ替え、フィルター処理します。
-3. アプリを選んでインストールします。
-4. [アプリの詳細] ページで、**[インストール]** をクリックします。 インストールが完了すると、ページには **[インストール済み]** 状態が表示されます。
-![Windows 10 用 Intune ポータル サイト アプリの [アプリの詳細] ページ。](./media/RS1_AppDetailsPage_Installed_02.png)  
-![Windows 10 用 Intune ポータル サイト アプリの、完了済み状態が表示された [アプリの詳細] ページ。](./media/RS1_AppDetailsPage_Installed_01.png)    
+## <a name="install-apps"></a>アプリのインストール
 
- 会社の規模によっては、複数のバージョンの Office が会社のポータルからダウンロードできる場合があります。 Windows デバイス用 Office スイートに関する具体的な情報については、「[Windows 10 デバイスに Office 365 をインストールする](./install-office-windows.md)」をご覧ください。
+1. Intune ポータル サイト アプリを開き、職場または学校アカウントでサインインします。  
+
+    ![Windows 10 用 Intune ポータル サイト アプリのホーム ページ。](./media/RS1_AppDetailsPage_Installed_03.png)    
+2. Intune ポータル サイト アプリの次のいずれかのセクションでアプリを検索してインストールします。  
+
+    * **[ホーム]**: 組織のおすすめアプリの一覧から選びます。  
+    * **[すべて表示]**: **[ホーム] ページ** > **[アプリ]** セクションで、**[すべて表示]** をクリックして、使用可能なすべてのアプリを表示します。  
+    * **[すべてのアプリ]**: インストール済みおよびおすすめのアプリを含む使用可能なすべてのアプリを表示するには、ナビゲーション ウィンドウでこのページを選択します。  
+    * **[アプリを検索]**: アプリのナビゲーション ウィンドウには、固定の検索バーがあります。  使用可能なアプリを検索するには、アプリ名または発行者で検索します。  
+    * **[すべてのアプリ]**: 使用可能なすべてのアプリを表示、並べ替え、フィルター処理します。 検索結果は関連性で自動的に並べ替えられます。  
+
+3. アプリを選択します。   
+4. [アプリの詳細] ページで、**[インストール]** をクリックします。 インストールが完了すると、**[インストール済み]** 状態が表示されます。  
+
+    ![Windows 10 用ポータル サイト アプリ、アプリの選択、[アプリの詳細] ページ。](./media/RS1_AppDetailsPage_Installed_02.png)  
+    
+    ![アプリのインストール後の [インストール済み] 状態が表示された Windows 10 用 Intune ポータル サイト アプリの [アプリの詳細] ページ。 [インストール] ボタンが [再インストール] に変更されています。](./media/RS1_AppDetailsPage_Installed_01.png)    
+
+ 会社の規模によっては、Intune ポータル サイトからダウンロードできる Office のバージョンが複数表示される場合があります。 Windows デバイス用 Office スイートに関する具体的な情報については、「[Windows 10 デバイスに Office 365 をインストールする](./install-office-windows.md)」をご覧ください。
+
+## <a name="share-apps-with-others"></a>他のユーザーとのアプリの共有  
+職場や学校の連絡先にアプリを共有したりお勧めしたりします。 次の手順は、Intune ポータル サイトから直接リンクを共有する方法を示しています。
+
+1. Intune ポータル サイトで任意のアプリを右クリックするか、長押しして、その[コンテキスト メニュー](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus)を開きます。  
+
+    ![アプリとデバイスの一覧が表示されている、Windows 10 用 Intune ポータル サイト アプリのフロント ページ。 クリック可能な [共有] コンテキスト メニューが、サンプル アプリのアイコンの上部に表示されます。 ](./media/1808_ShareContext_CP_Windows.png)  
+
+2. **[共有]** を選択します。
+3. 個別の連絡先から選択するか、OneNote などの別のプログラムを選択して、グループに送信します。 使用するアプリが表示されない場合は、**[Get apps in Store]\(ストアでアプリを入手\)** を選択して、その他の使用可能なアプリを参照します。  
+
+    ![Windows 10 用 Intune ポータル サイト アプリの [共有] ポップアップ ページのサンプル スクリーンショット。 ページには、[Learn about <example app name> in the Company Portal app]\(Intune ポータル サイト アプリの <サンプル アプリ名> の詳細\) と表示されています。 これには、リンクを送信するために選択できる、1 人の連絡先と 2 つのアプリと、[Get apps in Store]\(ストアでアプリを入手\) リンクが表示されています。 ](./media/1808_ShareApps_CP_Windows.png) 
+
+共有すると、受信者はアプリの詳細を表示するためのリンクとメッセージを受け取ります。 このリンクにより、ポータル サイトの **[アプリの詳細]** ページが開きます。 
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

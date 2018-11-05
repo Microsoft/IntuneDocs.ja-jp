@@ -1,8 +1,8 @@
 
 
 ### <a name="apple"></a>Apple
-- Apple iOS 9.0 以降
-- Mac OS X 10.11 以降
+- Apple iOS 10.0 以降
+- Mac OS X 10.11 以降 (2018 年 12 月に、サポートされるバージョンは 10.12 以降に変更されます)
 
 ### <a name="google"></a>Google
 - Android 4.4 以降 (Samsung KNOX Standard 4.4 以降を含む)

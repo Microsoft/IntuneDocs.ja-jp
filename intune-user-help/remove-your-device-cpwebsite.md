@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0ea421c63cbb6c2228ea94bf82d795ece01f46ac
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: fd58fae2f48791e8c63b9391a825838040b1202f
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150326"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863112"
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>ポータル サイトからのデバイスの削除
 
@@ -30,18 +30,19 @@ ms.locfileid: "43150326"
 
 デバイスを削除するには:
 
-1. [ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)で、__メニュー__ ボタン ![3 つの横棒が並行に積み上げられている、メニュー ボタンの小さな画像](/Intune/whats-new/media/CP_hamburger_menu.png) をタップしてから、__[デバイス]__ を選択します。
+1. [ポータル サイト Web サイト](https://portal.manage.microsoft.com)で、__[メニュー]__ ボタン、__[デバイス]__ の順に選択します。  
 
-   ![[ホーム]、[すべてのアプリ]、[デバイス]、[ヘルプデスク]、[サインアウト] の各ボタンが示され、画面の左側にサイド メニューが展開されたポータル Web サイトのイメージ。](/media/iwp-expanded-sidebar.png)
+2. 削除するデバイスを選択します。  
 
-2. __[デバイス]__ ページで、削除するデバイスの名前を選択します。
+    ![汎用的な名前が付いた不明なデバイスが表示されている 2 つのタイルを含む [デバイス] ページのスクリーンショット。 デバイスのすぐ下に灰色のバナーが配置され、ユーザーは使用中のデバイスまたは新たに追加するデバイスを識別するように求められています。](./media/rename-reset-device-step2-1808.png) 
 
-    ![リスト表示されていないデバイスの登録または不明なデバイスの識別を求めるバナーの上に 2 つの不明なデバイスが示された、[デバイス] ページのスクリーンショット。](./media/macOS_enroll_002_tap_here_banner.png)
+3. **[削除]** を選びます。 ページの上部に削除オプションが表示されない場合は、**[詳細 (...)]** > **[削除]** の順に選択します。  
 
-3. デバイスがポップアップ ウィンドウに開きます。 **[削除]** ボタンをタップします。
+   ![[名前の変更]、[削除]、[デバイスのリセット]、[パスコードのリセット]、[リモート ロック] を示す上部のリンク リストを含む、ポータル サイト Web サイト上の選択されたデバイスに対するデバイスの詳細ページ。 ](./media/rename-reset-device-1808.png)  
+  
 
-   ![[名前の変更]、[削除]、[デバイスのリセット]、[パスコードのリセット]、[リモート ロック] を含む、ポータル Web サイト上の選択されたデバイスに対するすべてのオプション。 ](./media/iwp-screen-with-all-options.png)
+    ![赤い矢印で強調され、拡大表示された [詳細] アイコン。](./media/rename-reset-device-step3-more-1808.png)   
 
-4. ポータル サイトからデバイスを削除するには、警告メッセージを確認し、**[削除]** をタップします。
+4. デバイスを削除しようとしていることを警告するメッセージが表示されます。 **[削除]** を選択して確認します。  
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

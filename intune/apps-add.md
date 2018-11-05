@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/14/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b5395ed4095280230c9cf678395df03bbce41ea
-ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
+ms.openlocfilehash: 5bcaabd66a2a9a24c3ee3f7c49cf7689d1f60eed
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44141679"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863146"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Microsoft Intune にアプリを追加する
 
@@ -57,10 +57,11 @@ Intune では、広範囲に及ぶさまざまな種類のアプリをサポー�
 | Android 基幹業務 (LOB) アプリ | LOB アプリ | **[アプリの種類]** として **[基幹業務]** を選択し、**[アプリのパッケージ ファイル]** を選択し、拡張子が **.apk** の Android のインストール ファイルを入力します。  |
 | iOS LOB アプリ | LOB アプリ | **[アプリの種類]** として **[基幹業務]** を選択し、**[アプリのパッケージ ファイル]** を選択し、拡張子が **.ipa** の iOS のインストール ファイルを入力します。  |
 | Windows Phone LOB アプリ | LOB アプリ | **[アプリの種類]** として **[基幹業務]** を選択し、**[アプリのパッケージ ファイル]** を選択し、拡張子が **.xap** の Windows Phone のインストール ファイルを入力します。  |
-| Windows LOB アプリ | LOB アプリ | アプリの種類として **[基幹業務]** を選択し、**[アプリのパッケージ ファイル]** を選択し、拡張子が **.msi**、**.appx**、**.appxbundle**、**.msix**、**.msixbundle** の Windows のインストール ファイルを入力します。 |
+| Windows LOB アプリ | LOB アプリ | アプリの種類として **[基幹業務]** アプリを選択し、**[アプリのパッケージ ファイル]** を選択し、拡張子が **.msi**、**.appx**、**.appxbundle**、**.msix**、**.msixbundle** の Windows のインストール ファイルを入力します。 |
 | 組み込みの iOS アプリ  | 組み込みアプリ | **[アプリの種類]** として **[組み込みアプリ]** を選択し、提供されているアプリの一覧から、組み込みアプリを選択します。  |
 | 組み込みの Android アプリ  | 組み込みアプリ | **[アプリの種類]** として **[組み込みアプリ]** を選択し、提供されているアプリの一覧から、組み込みアプリを選択します。  |
 | Web アプリ  | Web アプリ  | **[アプリの種類]** として **[Web リンク]** を選択し、Web アプリを指す有効な URL を入力します。  |
+| Windows アプリ (Win32)  | LOB アプリ  | **[アプリの種類]** として **[Windows app (Win32)]\(Windows アプリ (Win32)\)** を選択し、**[アプリのパッケージ ファイル]** を選択して、拡張子が **.intunewin** のインストール ファイルを選択します。  |
 
 Microsoft Intune にアプリを追加するには、**[クライアント アプリ]** > **[アプリ]** > **[追加]** の順に選択します。 **[アプリの追加]** ウィンドウが表示され、**[アプリの種類]** の選択が可能になります。 
 
@@ -90,7 +91,7 @@ Intune を使用して、デバイスの管理は行わずに MDM でアプリ�
 
 まず、アプリに含まれるデータの機密性に基づいて、アプリのアクセス権を与えるグループを決定する必要があります。 組織内で、特定の種類のロールを含めるか、除外することが必要な場合があります。 たとえば、LOB アプリの場合、営業グループが必要としても、エンジニアリング、財務、人事、法務で働く人には必要ないことが考えられます。 さらに、営業グループは、利用しているモバイル デバイスに対して追加のデータ保護と企業内サービスへのアクセス許可を必要とします。 このグループがアプリを使用してリソースに接続する方法を決定する必要があります。 アプリによってアクセスされるデータをクラウドに置くか、オンプレミスにするかを決定する必要があります。 ユーザーがアプリを使用し、リソースに接続する方法も決定する必要があります。 
 
-また、基幹業務アプリケーション サーバーのような、オンプレミス データへの安全なアクセスを必要とするモバイル アプリへのアクセスを有効にすることもできます。 通常、この種のアクセスを行うには、[Intune で管理されたアクセス制御のための証明書](certificates-configure.md)と、境界内の標準の VPN ゲートウェイまたはプロキシ (Azure Active Directory アプリケーション プロキシなど) を組み合わせて使用します。 Intune の[アプリ ラッピング ツールと App SDK](apps-prepare-mobile-application-management.md) は、アクセスされるデータを基幹業務アプリケーション内に保持することで、コンシューマー向けのアプリケーションやサービスに会社のデータを渡せないようにします。
+また、Intune では、基幹業務アプリ サーバーのような、オンプレミス データへの安全なアクセスを必要とするクライアント アプリへのアクセスを有効にすることもできます。 通常、この種のアクセスを行うには、[Intune で管理されたアクセス制御のための証明書](certificates-configure.md)と、境界内の標準の VPN ゲートウェイまたはプロキシ (Azure Active Directory アプリケーション プロキシなど) を組み合わせて使用します。 Intune の[アプリ ラッピング ツールと App SDK](apps-prepare-mobile-application-management.md) は、アクセスされるデータを基幹業務アプリケーション内に保持することで、コンシューマー向けのアプリケーションやサービスに会社のデータを渡せないようにします。
 
 各ユースケースおよびサブユースケースのアプリ シナリオに関連付けられている組織のグループを識別する方法を決定するのに、「[Intune の展開計画、設計および実装ガイド](planning-guide.md)」が役立ちます。 グループへのアプリの割り当てに関する詳細については、「[Microsoft Intune を使用してアプリをグループに割り当てる方法](apps-deploy.md)」を参照してください。
 
@@ -194,3 +195,4 @@ Intune アプリのインストール エラーについて詳しくは、[ア�
 - [Windows 10 用の Office 365 アプリ](apps-add-office365.md)
 - [macOS 用の Office 365 アプリ](apps-add-office365-macos.md)
 - [組み込みアプリ](apps-add-built-in.md)
+- [Win32 アプリ](apps-win32-app-management.md) 
