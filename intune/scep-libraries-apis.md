@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/31/2018
+ms.date: 09/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 423bfc02edb9260adadf0a6dc67e6299639c7fbb
-ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
+ms.openlocfilehash: 31c083dcd2087de99830317d892750a42cc5ae6d
+ms.sourcegitcommit: ae62a269778cdbf1d207cd017de522f934b030e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575051"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44700984"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>SCEP 用のサード パーティ CA を Intune に追加するための API の使用
 
@@ -125,6 +125,13 @@ IntuneScepServiceClient(
     - AAD_APP_KEY="オンボード処理時に取得した Azure アプリケーション キー"
     - TENANT="オンボード処理時に取得したテナント ID"
     - PROVIDER_NAME_AND_VERSION="製品とそのバージョンを識別するために使用する情報"
+    
+ソリューションで認証を使用するかまたは使用しないプロキシが必要な場合は、次のプロパティを追加できます。
+
+    - PROXY_HOST="プロキシがホストされているホスト。"
+    - PROXY_PORT="プロキシがリッスンしているポート。"
+    - PROXY_USER ="プロキシで基本認証が使用されている場合に使用するユーザー名。"
+    - PROXY_PASS ="プロキシで基本認証が使用されている場合に使用するパスワード。"
 
 スロー:
 

@@ -14,12 +14,12 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7cf005b225dd11ca6b95dbed0a82330544575f92
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 87c3313fd7b5fc0705460e539164ac70779bebeb
+ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347476"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46505769"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Intune での iOS デバイス用のアプリごとの Virtual Private Network (VPN) 設定
 
@@ -171,7 +171,7 @@ VPN プロファイルを追加した後、アプリと Azure AD グループを
 - アプリが利用可能インストール インテントのターゲットになった場合
 - プロファイルとアプリの両方が同じグループをターゲットにしている場合
 - エンド ユーザーが会社のポータルでアプリのインストールを要求したため、アプリとプロファイルがデバイスにインストールされる場合
-- アプリごとの VPN 構成をアプリ割り当てから削除する場合
+- アプリごとの VPN 構成をアプリ割り当てから削除または変更する場合
 
 ## <a name="verify-the-connection-on-the-ios-device"></a>iOS デバイスでの接続を確認する
 

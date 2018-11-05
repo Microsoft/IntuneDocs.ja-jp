@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18b4ab35627e1ccb694104f3f5800e5fb07dd1c7
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: e71f49c6a336efa5c15d8f10e664ddbf9b0579d0
+ms.sourcegitcommit: 5bfc7a1375fdb2992b9b5d4f6d1b34eec12457ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313428"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45533661"
 ---
 # <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>Apple の Device Enrollment Program を使用して macOS デバイスを自動登録する
 
@@ -30,7 +30,7 @@ ms.locfileid: "43313428"
 
 DEP 登録を設定するには、Intune ポータルと Apple DEP ポータルの両方を使います。 登録時にデバイスに適用された設定を含む DEP 登録プロファイルを作成します。
 
-なお、DEP 登録は[デバイス登録マネージャー](device-enrollment-manager-enroll.md)では動作しません。
+DEP 登録は[デバイス登録マネージャー](device-enrollment-manager-enroll.md)または [Apple School Manager](apple-school-manager-set-up-ios.md) では動作しません。
 
 <!--
 **Steps to enable enrollment programs from Apple**

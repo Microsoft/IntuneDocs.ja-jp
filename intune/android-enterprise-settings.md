@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/5/2018
+ms.date: 9/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e43ab0d088edc87e814ad2c4317d7b7336d34d5
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: f49e0bc496f176434577d42d3a372fc4e8bc22d3
+ms.sourcegitcommit: 7063072c94e43aefc6be0072780622a1da8485d5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312898"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46119105"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Intune での Android エンタープライズ キオスクの設定
 
@@ -45,9 +45,9 @@ Android キオスク プロファイルは、次の構成設定をサポート�
 - **[Allow installation from unknown sources]\(不明なソースからのインストールを許可する\)**: **[許可]** を選択すると、ユーザーが不明なソースからインストールできるようになります。
 - **[システムの更新プログラム]**: デバイスによる無線更新プログラムの処理方法を定義するオプションを選択します。
     - **[Device Default]\(デバイスの既定\)**: デバイスの既定の設定を使用します。
-    - **[自動]**: 更新プログラムが自動的にインストールされます。
-    - **[延期]**: 更新が後日に延期されます。
-    - **[メンテナンス期間]**: ユーザーは、メンテナンス期間ごとに更新プログラムを承認するように求められます。
+    - **[自動]**: ユーザー操作を必要とせずに、更新プログラムが自動的にインストールされます。 このポリシーを設定すると、任意の保留中の更新プログラムがすぐにインストールされます。
+    - **[延期]**: 更新は 30 日間延期されます。 30 日の終わりに、ユーザーに Android から更新プログラムをインストールするように確認メッセージが表示されます。 デバイスの製造元または通信事業者は、重要なセキュリティ更新プログラムが延期されることを回避 (除外) することができます。 除外された更新プログラムは、デバイス上でユーザーにシステム通知が表示されます。 
+    - **メンテナンス ウィンドウ**: Intune で設定する毎日のメンテナンス ウィンドウで自動的に更新プログラムがインストールされます。 30 日間、毎日インストールが試行されますが、スペースまたはバッテリー レベルの不足のために失敗する可能性があります。 30 日後、ユーザーに Android からインストールの確認メッセージが表示されます。 このウィンドウは、Play アプリの更新プログラムをインストールするためにも使用されます。 1 つのアプリのキオスク フォアグラウンド アプリが更新される可能性があるキオスクなど、専用デバイスにはこのオプションをお勧めします。 
 
 ## <a name="kiosk-settings"></a>キオスクの設定
 

@@ -2,8 +2,8 @@
 title: Microsoft Intune での RBAC
 description: ロールベースのアクセス制御 (RBAC) を使用して、アクションを実行したり変更を加えたりできるユーザーを Microsoft Intune で制御する方法について説明します。
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: ad5bf36eeb81c5deabc2c3efd73cddcc3db8a70c
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 5c75bd80e848bbd309051a9c6f3e149abd7a46ed
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253699"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028700"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Microsoft Intune でのロール ベースの管理制御 (RBAC)
 
@@ -42,6 +42,7 @@ RBAC を使用して、組織内で Intune のさまざまなタスクを実行�
 
     > [!IMPORTANT]
     > Intune サービス管理者のロールでは、Azure AD の条件付きアクセスの設定を管理できません。
+    > Intune ロールのメンバーは、Intune のライセンスが必要です。
 
     > [!TIP]
     > また Intune では、Azure AD の 3 つの拡張機能 (**ユーザー**、**グループ**、Azure AD RBAC を使用して制御される**条件付きアクセス**) が表示されます。 また、**ユーザーアカウント管理者**は AAD ユーザー/グループのアクティビティのみを実行します。Intune のすべてのアクティビティを実行する完全なアクセス許可はありません。 詳細については、[Azure AD での RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) に関するページをご覧ください。

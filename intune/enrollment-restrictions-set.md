@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76c0b96a1759caad4a1052a7233c7dcc8cecfa3b
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: de77ad92eac4aa869aec504f1762ad6f216c74d2
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313719"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602148"
 ---
 # <a name="set-enrollment-restrictions"></a>登録制限を設定する
 
@@ -83,29 +83,31 @@ ms.locfileid: "43313719"
 8. 一覧にあるプラットフォームごとに、**個人所有**のデバイスを**許可**するか**ブロック**するかを選択します。
 9. **[OK]** を選びます。
 
-### <a name="android-device-type-restrictions"></a>Android デバイスの種類の制限
+### <a name="blocking-personal-android-devices"></a>個人用 Android デバイスのブロック
 - 個人所有の Android デバイスの登録をブロックした場合でも、個人所有の Android 仕事用プロファイル デバイスは登録できます。
 - 既定では、Android 仕事用プロファイル デバイス設定は Android デバイスの設定と同じになります。 Android 仕事用プロファイル設定の変更後は、同じではなくなります。
 - 個人の Android 仕事用プロファイルの登録をブロックした場合、会社の Android デバイスのみを Android 仕事用プロファイルとして登録できます。
 
-### <a name="windows-device-type-restrictions"></a>Windows デバイスの種類の制限
-Windows プラットフォーム デバイスの種類の制限を **[ブロック]** に設定すると、Intune では、新しい Windows 登録要求がすべて会社の登録として認証されていることが確認されます。 無許可の登録はブロックされます。
+### <a name="blocking-personal-windows-devices"></a>個人用 Windows デバイスのブロック
+個人所有の Windows デバイスの登録をブロックした場合、Intune では、新しい Windows 登録要求がすべて会社の登録として承認されていることが確認されます。 無許可の登録はブロックされます。
 
 次の方法は、Windows の会社登録として認証されたものと見なされます。
  - 登録ユーザーは[デバイス登録マネージャー アカウント]( device-enrollment-manager-enroll.md)を使用しています。
 - デバイスは [Windows AutoPilot](enrollment-autopilot.md) 経由で登録されます。
+- デバイスは、Windows Autopilot に登録されますが、Windows 設定からの MDM 登録のみオプションではありません。
 - デバイスの IMEI 番号が **[デバイスの登録]** > **[[業務用デバイスの ID]](corporate-identifiers-add.md)** に記載されています。 (Windows Phone 8.1 ではサポートされていません。)
 - デバイスが[一括プロビジョニング パッケージ](windows-bulk-enroll.md)経由で登録されます。
 - デバイスが[共同管理用の SCCM からの自動登録](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md)経由で登録されます。
  
 次の登録は Intune で会社として見なされますが、Intune 管理者のデバイスごとのコントロールがないため、ブロックされます。
- - [自動 MDM 登録](windows-enroll.md#enable-windows-10-automatic-enrollment)と [Windows セットアップ中の Azure Active Directory 参加](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)。
+ - [自動 MDM 登録](windows-enroll.md#enable-windows-10-automatic-enrollment)と [Windows セットアップ中の Azure Active Directory 参加](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)\*。
 - [自動 MDM 登録](windows-enroll.md#enable-windows-10-automatic-enrollment)と [Windows 設定からの Azure Active Directory 参加](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md)。
  
 次の個人登録方法もブロックされます。
-- [自動 MDM 登録](windows-enroll.md#enable-windows-10-automatic-enrollment)と [Windows 設定からの職場アカウントの追加](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)。
+- [自動 MDM 登録](windows-enroll.md#enable-windows-10-automatic-enrollment)と [Windows 設定からの職場アカウントの追加](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)\*。
 - Windows 設定からの [MDM 登録のみ]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device)オプション。
 
+\* これらは、Autopilot に登録されている場合、ブロックされません。
 
 ## <a name="set-device-limit-restrictions"></a>デバイス数の制限を設定する
 

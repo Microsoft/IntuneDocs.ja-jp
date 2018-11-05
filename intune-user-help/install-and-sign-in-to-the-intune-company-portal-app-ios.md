@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f8ca89168e46e038b57fba9cc2e159416795e112
-ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
+ms.openlocfilehash: 870590df70474db02dc4b3e4ba5a8251aeeb2f26
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48260200"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959470"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>ポータル サイト アプリをインストールしてサインインする
 
@@ -32,7 +32,7 @@ iOS デバイスに Intune ポータル サイト アプリをインストール
 
 2.  **Intune ポータル サイト** アプリをダウンロードします。
 
-    ![App Store に表示された Intune ポータル サイト アプリのスクリーン ショット。](./media/cp_iosredesign_after_1803_04.png)
+    ![App Store に表示された Intune ポータル サイト アプリのスクリーン ショット。](./media/CP_iosRedesign_after_1803_04.PNG)
 
 3.  ポータル サイト アプリを開き、職場または学校の電子メール アドレスとパスワードを入力して、**[サインイン]** をタップします。
 

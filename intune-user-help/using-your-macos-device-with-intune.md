@@ -1,11 +1,11 @@
 ---
-title: iOS デバイスまたは macOS デバイスを Intune で使用する | Microsoft Docs
-description: iOS や macOS モバイル デバイスが Intune で登録されている場合に、デバイスで実行できるタスクへのリンクの一覧
+title: macOS デバイスを Intune で使用する | Microsoft Docs
+description: ポータル サイト アプリから macOS モバイル デバイスのトラブルシューティングまたは管理を行うためのリンクを見つけます
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 4/20/2018
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 02ccde8299e4ad5d6aacb2abd120c094f752c5e6
-ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
+ms.openlocfilehash: 887b9355bc68edca314a49743b8d11728ca2361a
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "31771858"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168915"
 ---
-# <a name="using-your-macos-device-with-intune"></a>macOS デバイスを Intune で使用する
+# <a name="using-your-macos-device-with-intune-company-portal"></a>macOS デバイスを Intune ポータル サイトで使用する
 
-仕事を効率化するために Intune でできることは数多くあります。 会社から求められる可能性のある最も一般的な仕事内容のリストを以下に示します。
+この記事では、macOS 用ポータル サイトに固有のタスクおよび情報を示します。 これを使用することで、macOS デバイスのトラブルシューティングや管理が楽になります。 任意のリンクをクリックすると、詳細情報、手順、およびスクリーンショットが表示されます。 
 
 ## <a name="supported-versions"></a>サポートされているバージョン
 
-現在、Intune は macOS デバイス用の OS X El Capitan 10.11 以降をサポートしています。
+現在、macOS 用ポータル サイトでは macOS デバイス用の OS X El Capitan 10.11 以降がサポートされています。
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Intune に登録して、ポータル サイトをインストールする
 

@@ -15,12 +15,12 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6bf9eaef010879835abb7cec57c2fbdce6aa1e0a
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: e46951be5048e0bcf2af5b2d4320744f6d6e47e8
+ms.sourcegitcommit: 3785e506ef5fbc474b3e09e87412d4b673bbdbb8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905871"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46541957"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>デバイスの企業所有としての識別
 
@@ -33,7 +33,7 @@ Intune は登録時に、次のようなデバイスに会社所有の状態を�
 - [デバイス登録マネージャー](device-enrollment-manager-enroll.md) アカウントで登録されている (すべてのプラットフォーム)
 - Apple [Device Enrollment Program](device-enrollment-program-enroll-ios.md)、[Apple School Manager](apple-school-manager-set-up-ios.md)、[Apple Configurator](apple-configurator-enroll-ios.md) (iOS のみ) で登録されている
 - IMEI (International Mobile Equipment Identifier/国際携帯機器識別) 番号 (IMEI 番号を持つすべてのプラットフォーム) またはシリアル番号 (iOS と Android) で、[登録前に会社所有として識別されている](#identify-corporate-owned-devices-with-imei-or-serial-number)
-- Azure Active Directory または Enterprise Mobility + Security に Windows 10 Enterprise デバイスとして登録されている
+- Windows 10 Enterprise デバイスとして Azure Active Directory に参加する
 - [デバイスのプロパティ一覧](#change-device-ownership)で、会社として設定されている
 
 登録後、**[個人]** と **[企業]** のどちらかで[所有権の設定を変更する](#change-device-ownership)ことができます。

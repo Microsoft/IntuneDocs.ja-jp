@@ -14,12 +14,12 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 421eea460ee7c00b79a63a014291a8abb88ddaea
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 4e523e4fb6505b2faaa0aa776b89454524130ba8
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347799"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187854"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune の既知の問題
 
@@ -106,6 +106,15 @@ iOS デバイスでは、ネットワーク アクセス制御 (NAC) 統合は�
 
 <!-- ## Enrollment -->
 
+## <a name="conditional-access"></a>条件付きアクセス
+
+### <a name="conditional-access-settings-from-intune-do-not-show-up-in-new-console"></a>Intune の条件付きアクセスの設定が新しいコンソールに表示されない
+
+ご利用のテナントが Azure portal に移行された後、その条件付きアクセスの設定は引き続き適用されます。ただし、それらの設定は Azure Intune ポータルに表示されません。 
+
+条件付きアクセスの設定を Azure portal で表示して管理したい場合は、クラシック ポータルから以前の設定を削除し、それらを Azure portal で再作成する必要があります。 
+
+詳細については、「[Azure Active Directory の条件付きアクセスのベスト プラクティス](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices)」を参照してください。
 
 ## <a name="data-protection"></a>データの保護
 

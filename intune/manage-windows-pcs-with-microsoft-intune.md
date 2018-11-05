@@ -1,12 +1,11 @@
 ---
-title: クライアント ソフトウェアを使用して PC を管理する
-titlesuffix: Microsoft Intune
+title: Microsoft Intune でクライアント ソフトウェアを使用して PC を管理する - Azure | Microsoft Docs
 description: Intune クライアント ソフトウェアをインストールして Windows PC を管理します。
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +14,12 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 5a248345a40cd7cfcff3883643562923f9535d3b
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: ef21f22a4808518ce8557b761e4181f8f6a655c3
+ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "41910653"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45978248"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune ソフトウェア クライアントを使用して Windows PC をコンピューターとして管理する
 
@@ -57,6 +56,9 @@ Intune は、ソフトウェア クライアントを使って、最大 7,000 �
 |管理者のアクセス許可|クライアント ソフトウェアをインストールするアカウントは、そのデバイスのローカル管理者のアクセス許可を持っている必要があります。|
 |Windows インストーラー 3.1|PC には Windows インストーラー 3.1 以降がインストールされている必要があります。<br /><br />PC で Windows インストーラーのバージョンを確認するには<br /><br />  PC で、**%windir%\System32\msiexec.exe** を右クリックし、**[プロパティ]** をクリックします。<br /><br />最新バージョンの Windows インストーラーは、Microsoft Developer Network Web サイトの「 [Windows Installer Redistributables (Windows インストーラー再頒布可能パッケージ)](http://go.microsoft.com/fwlink/?LinkID=234258) 」からダウンロードできます。|
 |互換性のないクライアント ソフトウェアを削除する|Intune クライアント ソフトウェアをインストールする前に、その PC から Configuration Manager、Operations Manager、および Service Manager のクライアント ソフトウェアをアンインストールします。|
+
+> [!WARNING]
+> Microsoft は、[2020 年 1 月 14 日に Windows 7 のサポートが終了する](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)ことを発表しました。 この日に、Intune でも Windows 7 を実行しているデバイスに対するサポートが廃止されます。 Microsoft は、任意のサービスやサポートの中断を回避するために、Windows 10 に移行することを強くお勧めします。 
 
 ## <a name="deploying-the-intune-software-client"></a>Intune ソフトウェア クライアントの展開
 Intune 管理者は、さまざまな方法でユーザーが Intune ソフトウェア クライアントを利用できるようにすることができます。 方法については、「[Windows PC に Intune ソフトウェア クライアントをインストールする](install-the-windows-pc-client-with-microsoft-intune.md)」をご覧ください。

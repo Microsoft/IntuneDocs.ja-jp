@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a658182800f480f27097e078f28adc95c35aa3ea
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: a01bbf8e65c72b303d1474a92b93796051bfc02e
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313180"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187803"
 ---
 # <a name="see-device-details-in-intune"></a>Intune でデバイスの詳細を確認する
 
@@ -63,44 +63,38 @@ Intune は会社所有のデバイスでのみアプリの一覧を収集しま�
 
 ## <a name="hardware-device-details"></a>ハードウェア デバイスの詳細
 
-### <a name="windows-and-ios-device-details"></a>Windows および iOS デバイスの詳細:
-|項目|説明|  
-|--------------|----------------------|  
-|名前|デバイスの名前。|
-|管理名|コンソールでのみ使用されるデバイス名。 この名前を変更しても、デバイス上の名前は変更されません。|
-|UDID|デバイスの一意のデバイス識別子。|
-|Intune デバイス ID|デバイスを一意に識別する GUID。|
-|シリアル番号|製造元のデバイスのシリアル番号。|
-|共有デバイス|**[はい]** の場合、デバイスが複数のユーザーで共有されます。|
-|ユーザー承認済みの登録|**[はい]** の場合、管理者がデバイスの特定のセキュリティ設定を管理できるようにする、ユーザー承認済みの登録がデバイスに含まれています。|
-|オペレーティング システム|デバイスで使用されるオペレーティング システム。|
-|オペレーティング システムのバージョン|デバイスのオペレーティング システムのバージョンです。|
-|オペレーティング システムの言語|デバイス上のオペレーティング システムに設定された言語。|
-|記憶域の合計容量|デバイスの記憶域の合計容量 (ギガバイト)。|
-|記憶域の空き容量|デバイスの記憶域で未使用の容量 (ギガバイト)。|
-
-
-### <a name="windows-ios-and-macos-device-details"></a>Windows、iOS、および macOS デバイスの詳細
-|項目|説明|  
-|--------------|----------------------|  
-|IMEI|このデバイスの International Mobile Equipment Identity。|
-|MEID|デバイスの Mobile Equipment Identifier。|
-|製造元|デバイスの製造元。|
-|モデル|デバイスのモデル。|
-|電話番号|このデバイスに割り当てられている電話番号。|
-|通信事業者|デバイスの無線通信事業者。|
-|通信方式|デバイスで使用される無線システム。|
-|Wi-Fi MAC|デバイスの MAC アドレス。|
-|ICCID|SIM カードの一意の識別番号である IC カードの識別子。|
-|登録日|デバイスが Intune に登録された日時。|
-|最終接続日時|デバイスが最後に Intune に接続された日時。|
-|アクティベーション ロックのバイパス コード|アクティベーション ロックのバイパスに使用できるコード。|
-|Azure AD に登録済み|**[はい]** の場合、デバイスが Azure Active Directory に登録されています。|
-|コンプライアンス|デバイスのコンプライアンスの状態。|
-|EAS アクティブ化|**[はい]** の場合、デバイスが Exchange のメールボックスと同期されています。|
-|EAS アクティブ化 ID|デバイスの Exchange ActiveSync の識別子。|
-|監督下|**[はい]** の場合、管理者がデバイスの制御を強化しています。|
-|暗号化|**[はい]** の場合、デバイスに格納されているデータが暗号化されます。|
+|項目|説明|プラットフォーム| 
+|--------------|----------------------|----|  
+|名前|デバイスの名前。|Windows、iOS|
+|管理名|コンソールでのみ使用されるデバイス名。 この名前を変更しても、デバイス上の名前は変更されません。|Windows、iOS|
+|UDID|デバイスの一意のデバイス識別子。|Windows、iOS|
+|Intune デバイス ID|デバイスを一意に識別する GUID。|Windows、iOS|
+|シリアル番号|製造元のデバイスのシリアル番号。|Windows、iOS|
+|共有デバイス|**[はい]** の場合、デバイスが複数のユーザーで共有されます。|Windows、iOS|
+|ユーザー承認済みの登録|**[はい]** の場合、管理者がデバイスの特定のセキュリティ設定を管理できるようにする、ユーザー承認済みの登録がデバイスに含まれています。|Windows、iOS|
+|オペレーティング システム|デバイスで使用されるオペレーティング システム。|Windows、iOS|
+|オペレーティング システムのバージョン|デバイスのオペレーティング システムのバージョンです。|Windows、iOS|
+|オペレーティング システムの言語|デバイス上のオペレーティング システムに設定された言語。|Windows、iOS|
+|記憶域の合計容量|デバイスの記憶域の合計容量 (ギガバイト)。|Windows、iOS|
+|記憶域の空き容量|デバイスの記憶域で未使用の容量 (ギガバイト)。|Windows、iOS|
+|IMEI|このデバイスの International Mobile Equipment Identity。|Windows、iOS、Android|
+|MEID|デバイスの Mobile Equipment Identifier。|Windows、iOS、Android|
+|製造元|デバイスの製造元。|Windows、iOS、Android|
+|モデル|デバイスのモデル。|Windows、iOS、Android|
+|電話番号|このデバイスに割り当てられている電話番号。|Windows、iOS、Android|
+|通信事業者|デバイスの無線通信事業者。|Windows、iOS、Android|
+|通信方式|デバイスで使用される無線システム。|Windows、iOS、Android|
+|Wi-Fi MAC|デバイスの MAC アドレス。|Windows、iOS、Android|
+|ICCID|SIM カードの一意の識別番号である IC カードの識別子。|Windows、iOS、Android|
+|登録日|デバイスが Intune に登録された日時。|Windows、iOS、Android|
+|最終接続日時|デバイスが最後に Intune に接続された日時。|Windows、iOS、Android|
+|アクティベーション ロックのバイパス コード|アクティベーション ロックのバイパスに使用できるコード。|Windows、iOS、Android|
+|Azure AD に登録済み|**[はい]** の場合、デバイスが Azure Active Directory に登録されています。|Windows、iOS、Android|
+|コンプライアンス|デバイスのコンプライアンスの状態。|Windows、iOS、Android|
+|EAS アクティブ化|**[はい]** の場合、デバイスが Exchange のメールボックスと同期されています。|Windows、iOS、Android|
+|EAS アクティブ化 ID|デバイスの Exchange ActiveSync の識別子。|Windows、iOS、Android|
+|監督下|**[はい]** の場合、管理者がデバイスの制御を強化しています。|Windows、iOS、Android|
+|暗号化|**[はい]** の場合、デバイスに格納されているデータが暗号化されます。|Windows、iOS、Android|
 
 
 
