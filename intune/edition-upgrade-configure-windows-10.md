@@ -1,35 +1,35 @@
 ---
-title: Upgrade Windows 10 デバイスと Microsoft Intune - Azure | Microsoft Docs
-description: Microsoft Intune でデバイス プロファイルを作成し、Windows 10 デバイスを新しいバージョンにアップグレードします。 Windows 10 Pro、N Edition、Education、Cloud、Enterprise、Core、Holographic、Mobile でサポートされるアップグレード パスについても説明します。
+title: Microsoft Intune で Windows 10 デバイスをアップグレードするか、S モードを使用する - Azure | Microsoft Docs
+description: Microsoft Intune でデバイス プロファイルを作成し、Windows 10 デバイスを別のエディションにアップグレードします。 たとえば、Windows 10 Professional から Windows 10 Enterprise にアップグレードできます。 構成プロファイルを利用し、デバイス上で S モードを有効にしたり、S モードから抜けたりすることもできます。 Windows 10 Pro、N Edition、Education、Cloud、Enterprise、Core、Holographic、Mobile でサポートされるアップグレード パスについても説明します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 09/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
-ms.reviewer: coryfe
+ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 994ab8e7d955d18b293e4d9e9661e0c44baaaa1f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f0e4ba42559a068ebefb453aba18060803dc36e0
+ms.sourcegitcommit: f3974c810e172f345853dacd7f2ca0abc11b1a5b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31025435"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44389627"
 ---
-# <a name="configure-windows-10-edition-upgrade-profile-in-intune"></a>Intune で Windows 10 エディション アップグレード プロファイルを構成する
+# <a name="use-a-configuration-profile-to-upgrade-windows-10-or-switch-from-s-mode-in-intune"></a>Intune で構成プロファイルを使用して Windows 10 をアップグレードするか、S モードから切り替える
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune でアップグレード プロファイルを構成し、Windows 10 エディションを実行するデバイスを自動的に別のエディションにアップグレードします。 サポートされるアップグレード パスについても紹介します。
 
 ## <a name="before-you-begin"></a>始める前に
-デバイスを最新バージョンにアップグレードする前に、次のいずれかを用意する必要があります。
+デバイスを最新版にアップグレードするには、次の前提条件が必要です。
 
-- ポリシーで対象とするすべてのデバイスにアップデートされたバージョンの Windows をインストールするための有効なプロダクト キー (Windows 10 Desktop エディションの場合)。 マルティプル アクティベーション キー (MAK)、キー マネジメント サーバー (KMS) キー、ポリシーで対象とするすべてのデバイスにアップデートされたバージョンの Windows をインストールするためのライセンス情報を含む Microsoft ライセンス ファイル (Windows 10 Mobile エディションと Windows 10 Holographic エディションの場合) のいずれかを使用できます。
+- ポリシーで対象とするすべてのデバイスにアップデートされたバージョンの Windows をインストールするための有効なプロダクト キー (Windows 10 Desktop エディションの場合)。 マルチ ライセンス認証キー (MAK) またはキー マネジメント サーバー (KMS) キーのどちらかを使用できます。 Windows 10 Mobile エディションと Windows 10 Holographic エディションの場合、ポリシーで対象とするべてのデバイスに更新版の Windows をインストールするためのライセンス情報を含む Microsoft ライセンス ファイルを使用できます。
 - ポリシーを割り当てる Windows 10 デバイスが Microsoft Intune に登録されます。 エディションのアップグレード ポリシーは、Intune PC クライアント ソフトウェアを実行する PC で使用できません。
 
 ## <a name="supported-upgrade-paths"></a>サポートされるアップグレード パス
@@ -121,25 +121,45 @@ The following lists provide the supported upgrade paths for the Windows 10 editi
 |Mobile|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|
 |Holographic|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png) -->
 
-## <a name="create-a-device-profile-containing-device-restriction-settings"></a>デバイスの制限設定を含むデバイス プロファイルの作成
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
-3. **[デバイス構成]**、**[プロファイル]**、**[プロファイルの作成]** の順に選択します。
-4. エディションのアップグレード プロファイルの**名前**と**説明**を入力します。
-5. **[プラットフォーム]** ドロップダウン リストで、**[Windows 10 以降]** を選択します。
-6. **[プロファイルの種類]** ドロップダウン リストで、**[エディションのアップグレード]** を選択します。
-7. **[エディションのアップグレード]** プロパティで、次の設定を入力します。
-   - **[アップグレードのターゲット エディション]** - 対象のデバイスをアップグレードする Windows 10 Desktop、Windows 10 Holographic、または Windows 10 Mobile のバージョンをドロップダウン リストから選択します。
-   - **[プロダクト キー]** - Microsoft から受け取った、対象とするすべての Windows 10 デスクトップ デバイスをアップグレードするためのプロダクト キーを入力します。 
-    プロダクト キーを含むポリシーの作成後は、キーは更新できなくなります。セキュリティ上の理由から非表示になります。 プロダクト キーを変更するには、キー全体を再入力します。
-   - **ライセンス ファイル** - **[参照]** を選択し、Microsoft から受け取ったライセンス ファイルを選択します。 このライセンス ファイルには、デバイスのアップグレード後のバージョンとなる Windows Holographic または Windows 10 Mobile エディションのライセンス情報が含まれています。
-8. 完了したら、**[作成]** を選択し、変更内容を保存します。
+## <a name="upgrade-the-edition"></a>エディションをアップグレードする
+
+1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、**[Intune]** をフィルターとして適用して、**[Microsoft Intune]** を選びます。
+2. **[デバイス構成]**、**[プロファイル]**、**[プロファイルの作成]** の順に選択します。
+3. プロファイルの **[名前]** と **[説明]** を入力します。 たとえば、`Windows 10 edition upgrade` のようなものを入力します。
+4. **[プラットフォーム]** には、**[Windows 10 以降]** を選択します。
+5. **[プロファイルの種類]** には、**[エディションのアップグレード]** を選択します。
+6. **[エディションのアップグレード]** プロパティで、次の設定を入力します。
+
+   - **アップグレード後のエディション**: アップグレード後の Windows 10 エディションを選択します。 このポリシーで対象となるデバイスが選択したエディションにアップグレードされます。
+   - **プロダクト キー**: Microsoft から受け取ったプロダクト キーを入力します。 プロダクト キーを含むポリシーの作成後、キーは更新できなくなり、セキュリティ上の理由から非表示になります。 プロダクト キーを変更するには、キー全体を再入力します。
+   - **ライセンス ファイル**: **[Windows 10 Holographic for Business]** または **[Windows 10 Mobile エディション]** については、**[参照]** を選択し、Microsoft から受け取ったライセンス ファイルを選択します。 このライセンス ファイルには、対象のデバイスをアップグレードするエディションのライセンス情報が含まれています。
+
+7. **[OK]** を選択して変更を保存します。 **[作成]** を選択して、プロファイルを作成します。
+
+## <a name="switch-out-of-s-mode"></a>S モードから抜ける
+
+[Windows 10 S モード](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode)はセキュリティとパフォーマンスのために設計されています。 Microsoft Store からのアプリのみをデバイスで実行する場合、S モードを利用し、デバイスをセキュリティで保護できます。 Microsoft Store で利用できないアプリがデバイスで必要な場合、S モードから抜けます。 S モードから抜けるという行為は一方向です。 Windows 10 S モードから一度抜けると、戻ることができません。
+
+次の手順は、Windows 10 (1809 以降) デバイスで S モードを制御するプロファイルを作成する方法です。
+
+1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、**[Intune]** をフィルターとして適用して、**[Microsoft Intune]** を選びます。
+2. **[デバイス構成]**、**[プロファイル]**、**[プロファイルの作成]** の順に選択します。
+3. プロファイルの **[名前]** と **[説明]** を入力します。 たとえば、`Windows 10 switch off S mode` のようなものを入力します。
+4. **[プラットフォーム]** には、**[Windows 10 以降]** を選択します。
+5. **[プロファイルの種類]** には、**[エディションのアップグレード]** を選択します。
+6. **[モードの切り替え (Windows Insider のみ)]** を選択し、**[S モードから切り替える]** プロパティを設定します。 次のようなオプションがあります。
+
+    - **構成しない**: S モード デバイスは S モードのままになります。 エンドユーザーはデバイスを S モードから抜けさせることができます。
+    - **S モードを維持する**: エンド ユーザーはデバイスを S モードから抜けさせることができなくなります。
+    - **切り替える**: デバイスを S モードから抜けさせます。
+
+7. **[OK]** を選択して変更を保存します。 **[作成]** を選択して、プロファイルを作成します。
 
 プロファイルが作成され、プロファイルの一覧に表示されます。
 
 ## <a name="next-steps"></a>次の手順
 
-このプロファイルをグループに割り当てるには、[デバイス プロファイルを割り当てる方法](device-profile-assign.md)に関するページを参照してください。
+グループに[このプロファイルを割り当てます](device-profile-assign.md)。
 
 >[!NOTE]
 >後でポリシーの割り当てを削除する場合、デバイス上の Windows のバージョンは元に戻されず、正常に機能を続けます。
