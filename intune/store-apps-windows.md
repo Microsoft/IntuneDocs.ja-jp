@@ -15,12 +15,12 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d8784d560d37068fd4559a2e67ecf35044ee498e
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
+ms.openlocfilehash: da10455cd6dc3cfbda23726832c539c206aea18c
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494049"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025153"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>Microsoft Store アプリを Microsoft Intune に追加する
 
@@ -54,7 +54,7 @@ ms.locfileid: "46494049"
 8. **[OK]** を選択します。
 9. **[追加]** を選択します。
 
-作成したアプリはアプリの一覧に表示され、選択したグループに割り当てることができるようになります。 
+作成したアプリはアプリの一覧に表示され、選択したグループに割り当てることができるようになります。 Microsoft Store アプリは、割り当ての種類が **[登録済みデバイスで使用可能]** であるグループにのみ割り当てることができます (ユーザーは、Intune ポータル サイトまたは Web サイトからアプリをインストールします)。
 
 ## <a name="next-steps"></a>次の手順
 - [アプリをグループに割り当てる](apps-deploy.md)

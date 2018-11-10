@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 731f6f5baaa150210765313ffc60133623e52923
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 2e3b356cc7c09b00916c24340dbbe1923540889b
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313701"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915735"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Android および Samsung KNOX Standard デバイスの制限設定 - Intune
 
@@ -39,9 +39,9 @@ ms.locfileid: "43313701"
 - **[位置情報 (Samsung KNOX のみ)]** - デバイスで位置情報を使用できるようにします。
 - **[電源オフ (Samsung KNOX のみ)]** - ユーザーがデバイスの電源を切ることを許可します。<br>無効にすると、**デバイスがワイプされるまでのサインイン失敗回数**を設定できません。
 - **[画面キャプチャ (Samsung KNOX のみ)]** - ユーザーが画面のコンテンツを画像としてキャプチャできるようにします。
-- **[音声アシスタント (Samsung KNOX のみ)]** - デバイスで音声アシスタント ソフトウェアを使用できるようにします。
+- **[音声アシスタント (Samsung Knox のみ)]** - デバイスで音声サービスとアプリを使用できるようにします。 これは、Bixby または画面の内容を読み上げるアクセシビリティ用音声アシスタントには適用されません。
 - **[YouTube (Samsung KNOX のみ)]** - デバイスで YouTube アプリを使用できるようにします。
-- **[共有デバイス (Samsung KNOX のみ)]** - 管理対象の Samsung KNOX Standard デバイスを共有デバイスとして構成します。 このモードでは、エンド ユーザーは Azure AD 資格情報を使用してデバイスにサインインおよびサインアウトできます。 使用中かどうかに関係なく、デバイスは常に管理対象です。<br>この機能を SCEP 証明書プロファイルと組み合わせて使用する場合、エンド ユーザーは、すべてのユーザーに対して同じアプリのセットを持つ一方、ユーザー独自の SCEP ユーザー証明書も持つデバイスを共有することができます。ユーザーがサインアウトすると、すべてのアプリ データがクリアされます。  この機能は、LOB アプリのみに限定されています。
+- **[共有デバイス (Samsung Knox のみ)]** - 管理対象の Samsung Knox Standard デバイスを共有デバイスとして構成します。 このモードでは、エンド ユーザーは Azure AD 資格情報を使用してデバイスにサインインおよびサインアウトできます。 使用中かどうかに関係なく、デバイスは常に管理対象です。<br>この機能を SCEP 証明書プロファイルと組み合わせて使用する場合、エンド ユーザーは、すべてのユーザーに対して同じアプリのセットを持つ一方、ユーザー独自の SCEP ユーザー証明書も持つデバイスを共有することができます。ユーザーがサインアウトすると、すべてのアプリ データがクリアされます。  この機能は、LOB アプリのみに限定されています。
 - **[日付と時刻の変更のブロック (Samsung KNOX)]** - ユーザーがデバイスの日付と時刻の設定を変更できないようにします。 
 
 ## <a name="password"></a>パスワード

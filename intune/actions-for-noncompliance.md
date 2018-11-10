@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fae8faf54c7b41bb547912853285cf09ec9c46d5
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 953b468337d3317027344573d147b65d765e3db3
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828110"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236443"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>コンプライアンス違反デバイスに対する自動メール送信とアクションの追加 - Intune
 
@@ -42,7 +42,7 @@ ms.locfileid: "48828110"
 - メールの送信やデバイスのリモート ロックなど、コンプライアンス違反に対するアクションを作成する
 
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>開始する前に
 
 - コンプライアンス違反に対するアクションを設定するには、少なくとも 1 つのデバイス コンプライアンス ポリシーが必要です。 デバイス コンプライアンス ポリシーの作成については、以下のプラットフォームをご覧ください。
 
@@ -71,7 +71,7 @@ ms.locfileid: "48828110"
 
    ![Intune でのコンプライアンス準拠通知メッセージの例](./media/actionsfornoncompliance-1.PNG)
 
-4. 情報の追加が完了したら、**[作成]** を選択します。 通知メッセージ テンプレートが使用できるようになります。
+4. 情報の追加が完了したら、**[作成]** を選択します。 通知メッセージ テンプレートが使用できるようになります。 ポータル サイトのブランド化の一環でアップロードしたロゴは、メール テンプレートに使用されます。 ポータル サイトのブランド化の詳細については、[会社 ID のブランドのカスタマイズ](company-portal-app.md#company-identity-branding-customization)に関するセクションを参照してください。  
 
 > [!NOTE]
 > また、以前に作成した通知テンプレートを編集することもできます。

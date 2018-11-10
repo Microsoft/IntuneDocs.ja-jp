@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 11/01/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 37445cb2536e02937cf3002dc1cb56ab4b78f12f
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 2f150db2e1d5fbc8e08bb7f7fcee50f0eda23ca7
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581395"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915684"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>クイック スタート: Microsoft Intune を無料で試す 
 
@@ -28,7 +28,7 @@ Microsoft Intune でデバイスやアプリケーションを管理すると、
 
 Intune には、モバイル デバイス管理 (MDM) 機能とモバイル アプリケーション管理 (MAM) 機能があります。これらの機能は、Microsoft Azure portal を使用して管理されているセキュリティで保護されたクラウドベースのサービスで利用できます。 Intune を使用すると、企業のコンプライアンス ポリシーや要件を満たしながら、従業員の会社リソース (データ、デバイス、アプリ) の構成、アクセス、更新を適切に行うことができるようになります。 
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 Microsoft Intune を設定する前に、次の要件を確認してください。
 
    - [サポートされるオペレーティング システムとブラウザー](supported-devices-browsers.md) 
@@ -70,20 +70,27 @@ Intune は 30 日間無料で試用できます。 既に職場または学校�
 
 試用版にサインアップすると、アカウント情報の記載された電子メール メッセージが、サインアップ プロセス中に指定した電子メール アドレスに送信されます。 このメールで、試用版がアクティブになったことが確認されます。
 
+> [!TIP]
+> Azure portal を使用するときは、プライベート モードではなく標準モードでブラウザーを使用した方が結果がよくなる場合があります。
+
 ## <a name="set-the-mdm-authority-to-intune"></a>MDM 機関を Intune に設定する
 
-モバイル デバイス管理 (MDM) 機関の設定によって、デバイスの管理方法が決まります。 IT 管理者が MDM 機関を設定してからでないと、ユーザーは管理対象のデバイスを登録できません。
+Azure portal にサインインして、Intune を選択した後、MDM 機関をまだ設定していないことを示すオレンジのバナーが表示されることがあります。 モバイル デバイス管理 (MDM) 機関の設定によって、デバイスの管理方法が決まります。 MDM 機関を設定してからでないと、ユーザーは管理対象のデバイスを登録できません。
 
 MDM 機関を Intune に設定するには、次の手順を実行します。
 
 1. 新しいブラウザー ウィンドウを開き、アドレスバーに「**https://portal.azure.com**」と入力します。 
 2. **[すべてのサービス]** > **[Microsoft Intune]** を選択します。
-3. オレンジのバナーを選択し、**[モバイル デバイス管理機関]** 設定を開きます。 
+3. デバイスの管理を有効にしていないことを示すバナーを選択するか、すぐにバナーが表示されない場合は **[デバイスの登録]** を選択します。 デバイス管理をまだ有効にしていない場合、**[MDM 機関の選択]** ブレードが表示されます。
 
     > [!NOTE]
     > オレンジのバナーは、MDM 機関をまだ設定していない場合にのみ表示されます。
 
-4. **[モバイル デバイス管理機関]** で MDM 機関を **[Intune MDM 機関]** に設定します。
+    ![[MDM 機関の選択] ブレードの画像](./media/choose-mdm-authority.png) 
+
+4. **[MDM 機関の選択]** で、MDM 機関を **[Intune MDM 機関]** に設定します。
+
+MDM 機関について詳しくは、「[モバイル デバイス管理機関の設定](mdm-authority-set.md)」をご覧ください。
 
 ## <a name="configure-your-custom-domain-name-optional"></a>カスタム ドメイン名を構成する (省略可能)
 
@@ -120,4 +127,4 @@ MDM 機関を Intune に設定するには、次の手順を実行します。
 このクイック スタートでは、テスト環境で Intune を試用するために無料のサブスクリプションを作成し、カスタム ドメイン名を構成 (省略可能) しました。 Microsoft Intune の詳細については、次のクイック スタートに進んでユーザーを追加し、ライセンスを割り当ててください。
 
 > [!div class="nextstepaction"]
-> [ユーザーの作成](get-started-users.md)
+> [ユーザーの作成](quickstart-create-user.md)

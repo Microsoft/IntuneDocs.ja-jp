@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/17/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 73e1e0a27d128d567a924e6f2b343026b11f1a44
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 9d9169ab353da30e0f7b292cea4f5b9c93e316aa
+ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581653"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49391554"
 ---
 # <a name="quickstart-add-a-device-compliance-policy-for-a-windows-10-device"></a>クイック スタート: Windows 10 デバイスのデバイス コンプライアンス ポリシーを追加する
 Windows の Intune デバイス コンプライアンス ポリシーでは、準拠しているものと見なされるために Windows デバイスが満たす必要のあるルールと設定を指定します。 このようなポリシーを[条件付きアクセス](https://docs.microsoft.com/intune/conditional-access)と一緒に使用することにより、会社のリソースへのアクセスを許可または阻止することができます。 コンプライアンス違反に対して、デバイス レポートを取得したり、是正措置を取ったりすることもできます。
@@ -53,4 +53,4 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 このクイック スタートでは、単純なデバイス コンプライアンス ポリシーを作成して割り当てました。 このポリシーを適用する Windows 10 デバイスを登録するには、自動登録を設定するクイック スタートに進んでください。 
  
 > [!div class="nextstepaction"]
-> [自動登録を設定する](quickstart-setup-auto-enrollment.md)
+> [デバイスのパスワードの長さを設定する](quickstart-set-password-length-android.md)

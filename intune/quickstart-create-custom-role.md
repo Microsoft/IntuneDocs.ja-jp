@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
-ms.openlocfilehash: 66426e9e22c2624b9828440906e3b1b947f4b60a
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 33c0d4f3ee3b29be47540c92425f76a3f1dcc044
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581667"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410771"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>クイック スタート - カスタム ロールを作成して割り当てる
 
@@ -20,7 +20,7 @@ ms.locfileid: "46581667"
 
 Intune サブスクリプションがない場合は、[無料試用版アカウントにサインアップ](free-trial-sign-up.md)します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 
 - このクイック スタートを完了するには、[グループを作成する](quickstart-create-group.md)必要があります。
 
@@ -47,7 +47,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
 セキュリティ オペレーターが、新しいアクセス許可を使用できるようになるには、事前にそのロールをセキュリティ ユーザーを含むグループに割り当てる必要があります。
 
-1. Intune で、**[ロール]** > **[すべてのロール]** > **[リモート デバイスのヘルプデスク]** の順に選択します。
+1. Intune で、**[ロール]** > **[すべてのロール]** > **[Security operations]** \(セキュリティ操作\) の順に選択します。
 2. **[Intune ロール]** の下で、**[割り当て]** > **[割り当てる]** の順に選択します。
 3. **[割り当て名]** ボックスに、「*Sec ops*」と入力します。
 4. **[メンバー (グループ)]** > **[追加]** の順に選択します。

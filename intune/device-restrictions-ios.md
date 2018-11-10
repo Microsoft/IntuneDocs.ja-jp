@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 677b3853d1923a52572d8088c885f794175c4d52
-ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
+ms.openlocfilehash: 67a1eba8208140306c697b7fe7dddb987e4b75c9
+ms.sourcegitcommit: 7c80833b74a7203edc23c550d0d0b63229cda452
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46329999"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50001611"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Microsoft Intune での iOS デバイスの制限設定
 
@@ -215,8 +215,8 @@ iOS 監視モードは、Apple の Device Enrollment Program または Apple Con
 -   **[必ず構成プロファイルを使用して Wi-Fi ネットワークに参加する (監視モードのみ)]** - デバイスに、Intune の Wi-Fi プロファイルを使用して構成されている Wi-Fi ネットワークへの参加のみを許可します。
 
 - **[携帯ネットワークの使用規則 (管理対象アプリのみ)]** - 管理対象アプリが携帯ネットワークで使用できるデータの種類を定義できます。 次の中から選択します。
-    - **携帯データ ネットワークの使用をブロックする** - ** すべての管理対象アプリ** または**特定のアプリを選択して**、携帯電話データの使用をブロックすることができます。
-    - **ローミング時に携帯データ ネットワークの使用をブロックする** - ** すべての管理対象アプリ** または**特定のアプリを選択して**、ローミング時に携帯電話データの使用をブロックすることができます。
+    - **携帯データ ネットワークの使用をブロックする** - **[すべての管理対象アプリ]** または **[特定のアプリを選択する]** の場合に、携帯電話データの使用をブロックすることができます。
+    - **ローミング時に携帯データ ネットワークの使用をブロックする** - **[すべての管理対象アプリ]** または **[特定のアプリを選択する]** の場合に、ローミング時に携帯電話データの使用をブロックすることができます。
 
 ## <a name="connected-devices"></a>接続されたデバイス
 

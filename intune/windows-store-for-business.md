@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,25 +15,25 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d1fe40b1cb5a496b3111b2630718a3dd17486ab
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
+ms.openlocfilehash: c30d20592a95f7894bb040f9e8fe5a2e3ddd0166
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494015"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915752"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>ビジネス向け Microsoft ストアから購入したアプリを Microsoft Intune で管理する方法
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-[ビジネス向け Microsoft ストア](https://www.microsoft.com/business-store)では、組織用のアプリを見つけて、個別または大量に購入することができます。 Microsoft Intune にストアを接続することで、Azure Portal からボリューム購入アプリを管理することができます。 次に例を示します。
+[ビジネス向け Microsoft ストア](https://www.microsoft.com/business-store)では、組織用のアプリを見つけて、個別または大量に購入することができます。 Microsoft Intune にストアを接続することで、Azure Portal からボリューム購入アプリを管理することができます。 例:
 * ストアから購入したアプリの一覧を Intune に同期することができます。
 * 同期されているアプリは Intune 管理コンソールに表示され、他のアプリと同様に割り当てることができます。
 * 使用可能なライセンス数、および Intune 管理コンソールで使用中のライセンス数を追跡することができます。
 * 使用可能なライセンス数が不足している場合、Intune はアプリの割り当てとインストールをブロックします。
 * ユーザーが企業を退社したとき、または管理者がユーザーとユーザー デバイスを削除したときに、ビジネス向け Microsoft ストアによって管理されているアプリはライセンスを自動的に取り消します。
 
-## <a name="before-you-start"></a>開始する前に
+## <a name="before-you-start"></a>開始前の準備
 
 ビジネス向け Microsoft ストアのアプリを同期して割り当てる前に、以下のことを確認してください。
 
@@ -62,7 +62,7 @@ Intune コンソールで同期を有効にする前に、以下の手順に従�
 
 ## <a name="configure-synchronization"></a>同期を構成する
 
-1. [Azure ポータル](https://portal.azure.com) にサインインします。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
 2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[クライアント アプリ]** を選択します。
 1. **[クライアント アプリ]** ウィンドウで、**[セットアップ]** > **[ビジネス向け Microsoft Store]** の順に選択します。
@@ -89,4 +89,15 @@ Intune コンソールで同期を有効にする前に、以下の手順に従�
 * 現在の割り当ての範囲を絞り、十分なライセンスがあるユーザーのみを対象にする。
 * ビジネス向け Microsoft ストアからアプリのコピーをさらに購入する。
 
+## <a name="remove-apps"></a>アプリを削除する
 
+Microsoft Store から同期されているビジネス用アプリを削除するには、Microsoft Store for Business にログインし、アプリに返金する必要があります。
+
+![アプリ削除詳細のスクリーンショット](./media/microsoft-store-for-business-01.png)
+
+> [!NOTE]
+> プライベート ストアでアプリの表示を削除すると、Intune はアプリを同期できなくなります。 アプリに返金する必要があります。
+
+## <a name="next-steps"></a>次の手順
+
+- [Microsoft Intune によるボリューム購入アプリとブックの管理](vpp-apps.md)

@@ -5,36 +5,39 @@ services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
 ms.topic: quickstart
-ms.date: 09/21/2018
+ms.date: 10/30/2018
 ms.author: erikje
-ms.openlocfilehash: 6a1d591e635dccd99551d9b8d40e099724a85d77
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: fb88f703048eaa122bb406d8adb1fc9face764c4
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581676"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410754"
 ---
 # <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>クイック スタート: ユーザーを作成してライセンスを割り当てる
 
-このクイック スタートでは、ユーザーを作成してライセンスを割り当てます。 Intune を使用する場合、会社のデータへのアクセス権を付与する各ユーザーには、ユーザー アカウントが必要です。 Intune 管理者は、このようなユーザーを構成してアクセス制御を管理できます。
+このクイック スタートでは、ユーザーを作成し、そのユーザーにライセンスを割り当てます。 Intune を使用する場合、会社のデータへのアクセス権を付与する各ユーザーには、ユーザー アカウントが必要です。 このようなユーザーは、Intune 管理者がアクセス制御を管理するために、後から構成できます。
 
 Intune サブスクリプションがない場合は、[無料試用版アカウントにサインアップ](free-trial-sign-up.md)します。
 
 ## <a name="sign-in-to-intune"></a>Intune にサインインする
 
-グローバル管理者または Intune サービス管理者として [Intune](https://aka.ms/intuneportal) にサインインします。
+[グローバル管理者または Intune サービス管理者](users-add.md#types-of-administrators)として [Intune](https://aka.ms/intuneportal) にサインインします。 Intune の試用版サブスクリプションを作成した場合、サブスクリプションを作成したアカウントがグローバル管理者になります。
 
-## <a name="create-a-user"></a>ユーザーを作成する
+## <a name="create-a-user"></a>ユーザーの作成
 
 Intune デバイス管理に登録するユーザーには、ユーザー アカウントが必要です。
 
 1. Intune で、**[ユーザー]** > **[すべてのユーザー]** > **[新しいユーザー]** の順に選択します。
 ![ブラウザー](media/quickstart-create-user/create-user.png)
-2. **[名前]** ボックスに、「*Dewey Kellum*」と入力します。
-3. **[ユーザー名]** ボックスに、「*Dewey@contoso.onmicrosoft.com*」を入力します。
-4. **[グループ]** > **[Everyone]** > **[選択]** の順に選択します。
-5. **[パスワードの表示]** を選択し、テスト デバイスにサインインできるように、自動生成されたパスワードをメモしてをおきます。
-6. **[作成]** を選択します。
+2. **[名前]** ボックスに、「*Dewey Kellum*」のように名前を入力します。
+3. **[ユーザー名]** ボックスに Dewey@contoso.onmicrosoft.com などのユーザー ID を入力します。
+
+    > [!NOTE]
+    > カスタム ドメイン名を構成していない場合、Intune のサブスクリプション (または[無料試用版](free-trial-sign-up.md#sign-up-for-a-microsoft-intune-free-trial)) を作成するために使用した確認済みのドメイン名を使用します。 
+
+4. **[パスワードの表示]** を選択し、テスト デバイスにサインインできるように、自動生成されたパスワードをメモしてをおきます。
+5. **[作成]** を選択します。
 
 ## <a name="assign-a-license-to-the-user"></a>ユーザーにライセンスを割り当てる
 
@@ -42,19 +45,23 @@ Intune デバイス管理に登録するユーザーには、ユーザー アカ
 
 1. Intune にサインインしたときに使用したものと同じ資格情報で [Office 365 ポータル](http://go.microsoft.com/fwlink/p/?LinkId=698854)にサインインします。
 2. **[ユーザー]** > **[アクティブなユーザー]** の順に選択し、作成したユーザーを選択します。
-3. **[場所]** の下で、ユーザーの場所を選択します。
-3. **[製品ライセンス]** を選択し、**[Enterprise Mobility + Security E3]** (または Intune を含むお持ちの別のライセンス) を **[オン]** に設定します。
+3. **[製品ライセンス]** の隣の **[編集]** を選択します。
+4. **[場所]** の下で、ユーザーの場所を選択します。
+5. Intune のライセンス (または、ご自分が保有している Intune を含むその他のライセンス) の横の **[オン]** をクリックします。 表示された[製品名](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)** が Azure の管理でサービス プランとして使用されます。 
+
    > [!NOTE]
-   > このとき、このユーザーのライセンスの 1 つが使用されます。 ライブ環境を利用している場合、後でこのライセンスの使用をオフにし、実際のユーザーに再度割り当てることができます。
-5. **[保存]** を選びます。
+   > この設定では、所持しているライセンスの 1 つがこのユーザーに使用されます。 試用版環境を使用している場合、ライブ環境で実際のユーザーにこのライセンスを後で再割り当てします。
+6. **[保存]** > **[閉じる]** の順に選択します。
+
+新しいアクティブな Intune ユーザーが、**Intune** のライセンスを使用していると表示されます。
 
 ## <a name="clean-up-resources"></a>リソースをクリーンアップする
 
-このユーザーが必要なくなった場合は、削除することができます。削除するには、**[ユーザー]** > **[すべてのユーザー]** を選択し、一覧でそのユーザーを選択してから **[ユーザーの削除]** > **[はい]** の順に選択します。
+このユーザーをもう使用しない場合、[Office 365 ポータル](http://go.microsoft.com/fwlink/p/?LinkId=698854)に移動し、**[ユーザー]** > **[アクティブなユーザー]** > *一覧内のユーザーを選択* > **[ユーザーの削除]** > **[ユーザーの削除]** > **[Confirm changes]\(変更の確認\)** > **[閉じる]** の順に選択します。
 
 ## <a name="next-steps"></a>次の手順
 
-このクイック スタートでは、ユーザーを作成してライセンスを割り当てました。 これでそのユーザーをグループに割り当てることができます。
+このクイック スタートでは、ユーザーを作成し、そのユーザーにライセンスを割り当てました。 これでそのユーザーをグループに割り当てることができます。
 
 > [!div class="nextstepaction"]
 > [グループの作成](quickstart-create-group.md)

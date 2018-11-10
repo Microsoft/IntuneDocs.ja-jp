@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a3fd4c57edba6f4d9abfdd4188c94627543cb43
-ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
+ms.openlocfilehash: a95f68f0a9794047b8adb7f9ab729bb4905f2379
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49652157"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679391"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune での Windows 10 (以降) の設定に対するデバイスの制限
 この記事では、Windows 10 を実行するデバイスに構成できるすべての Microsoft Intune デバイスの制限設定について説明します。
@@ -179,7 +179,7 @@ Windows 10 Mobile を実行しているデバイス: 指定した回数分サイ
 -   **[既定の検索エンジン]** - 使用する既定の検索エンジンを指定します。 エンド ユーザーはこの値をいつでも変更できます。
 -   **[終了時に閲覧データをクリアする]** – ユーザーが Edge を終了すると、履歴と閲覧データが消去されます。
 -   **[ライブ タイル データの収集]** – ユーザーが Microsoft Edge からスタート メニューにサイトをピン留めするとき、Windows がライブ タイルから情報を収集する行為を停止します。
--  **[お気に入り一覧]** - お気に入りのファイルへのパスを定義します。 たとえば、 http://contoso.com/favorites.html のように指定します。
+-  **[お気に入り一覧]** - お気に入りのファイルへのパスを定義します。 例: http://contoso.com/favorites.html。
 -  **[Restrict changes to Favorites]** \(お気に入りへの変更の制限\) - これを **[ブロック]** に設定すると、ユーザーはお気に入り一覧を追加、インポート、並べ替え、または編集できなくなります。 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen

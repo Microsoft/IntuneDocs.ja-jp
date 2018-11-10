@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e38e6f615220135e9c4c9c786ab260f5921890ea
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 359f423e7b1bd098136670db1d43b2ddec6031a3
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49642908"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679323"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune で Windows デバイス用のデバイス コンプライアンス ポリシーを追加する
 
@@ -33,8 +33,8 @@ Windows の Intune デバイス コンプライアンス ポリシーでは、�
 |----| ----| --- |
 | **PIN またはパスワードの構成** | 修復 | 修復 |   
 | **デバイスの暗号化** | 該当なし | 修復 |   
-| **脱獄またはルート化されたデバイス** | 適用できません | 適用できません |  
-| **電子メールのプロファイル** | 適用できません | 適用できません |   
+| **脱獄またはルート化されたデバイス** | 適用なし | 適用なし |  
+| **電子メールのプロファイル** | 適用なし | 適用なし |   
 | **最小 OS バージョン** | 検疫済み | 検疫済み |   
 | **最大 OS バージョン** | 検疫済み | 検疫済み |   
 | **Windows 正常性構成証明書** | 検疫済み: Windows 10 および Windows 10 Mobile|該当なし: Windows 8.1 |
@@ -65,7 +65,7 @@ Windows の Intune デバイス コンプライアンス ポリシーでは、�
 
 これらのポリシー設定は、次のプラットフォームを実行しているデバイスに適用されます。
 
-- Windows Phone 8。1
+- Windows Phone 8.1
 - Windows 8.1 以降
 
 ### <a name="device-properties"></a>デバイスのプロパティ
@@ -107,10 +107,10 @@ Windows 8.1 PC の場合、バージョン **3** が返されます。 Windows �
 
 ## <a name="windows-10-and-later-policy-settings"></a>Windows 10 以降のポリシー設定
 
-### <a name="device-health"></a>Device health
+### <a name="device-health"></a>デバイスのヘルス
 
-- **[BitLocker が必要]**: Bitlocker がオンである場合は、システムがオフになっているとき、または休止状態になるときに、デバイスはドライブに格納されているデータを不正アクセスから保護できます。 Windows BitLocker ドライブ暗号化により、Windows オペレーティング システム ボリューム上に格納されているすべてのデータが暗号化されます。 BitLocker は TPM を使用して Windows オペレーティング システムとユーザー データを保護しています。 TMP はまた、コンピューターのそばに人がいなかった場合や、コンピューターを紛失したり、盗難されたりした場合でも、改ざんされていないことを確認するために役立ちます。 コンピューターに互換性のある TPM が装備されている場合、BitLocker は TPM を使用してデータを保護する暗号化キーをロックします。 その結果、TPM がコンピューターの状態を確認するまで、キーにアクセスできなくなります。
-- **[Require Secure Boot to be enabled on the device]\(デバイス上でセキュア ブートを有効にする必要がある\)**: セキュア ブートを有効にすると、システムが工場出荷時の信頼できる状態で強制的に起動されます。 また、セキュア ブートを有効にするときは、コンピューターを起動するために使用されるコア コンポーネントに、デバイスを製造した組織によって信頼されている正しい暗号署名が設定されている必要があります。 UEFI ファームウェアは、コンピューターを起動する前に署名を確認します。 ファイルが改ざんされ、その署名が破損している場合、システムは起動しません。
+- **[BitLocker が必要]**: Bitlocker がオンである場合は、システムがオフになっているとき、または休止状態になるときに、デバイスはドライブに格納されているデータを不正アクセスから保護できます。 BitLocker ドライブ暗号化は、Windows オペレーティング システムのボリュームに格納されているすべてのデータを暗号化します。 BitLocker は TPM を使用して Windows オペレーティング システムとユーザー データを保護しています。 TMP はまた、コンピューターのそばに人がいなかった場合や、コンピューターを紛失したり、盗難されたりした場合でも、改ざんされていないことを確認するために役立ちます。 コンピューターに互換性のある TPM がインストールされている場合は、BitLocker は TPM を使用してデータを保護する暗号化キーをロックします。 その結果、TPM がコンピューターの状態を確認するまで、キーはアクセスできません。
+- **[Require Secure Boot to be enabled on the device]\(デバイス上でセキュア ブートを有効にする必要がある\)**: セキュア ブートを有効にすると、システムが工場出荷時の信頼できる状態で強制的に起動されます。 また、セキュア ブートが有効である場合には、マシンの起動に使用するコア コンポーネントには、デバイスの製造者が信頼している適切な暗号署名が必要です。 UEFI ファームウェアは、コンピューターを起動する前に署名を確認します。 ファイルが改ざんされて、その署名が破壊されると、システムは起動しません。
 
   > [!NOTE]
   > **[デバイス上でセキュア ブートの有効化が必要]** の設定は TPM 1.2 および 2.0 デバイスでサポートされています。 TPM 2.0 以降をサポートしていないデバイスでは、Intune のポリシーの状態が **[非準拠]** と表示されます。 これは、Windows 10 の[デバイス正常性構成証明](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-overview#device-health-attestation)サービスの制限です。
@@ -168,6 +168,9 @@ HAS サービスのしくみの詳細については、「[HealthAttestation CSP
 #### <a name="encryption"></a>暗号化
 
 - **[Encryption of data storage on a device]\(デバイス上のデータ ストレージの暗号化\)**: **[必要]** を選択すると、デバイス上のデータ ストレージが暗号化されます。
+
+  > [!NOTE]
+  > **[Encryption of data storage on a device]\(デバイス上のデータ ストレージの暗号化\)** 設定では通常、デバイス上の暗号化の存在が確認されます。 より堅牢な暗号化設定が必要であれば、**[BitLocker が必要]** の使用を検討してください。Windows デバイス ヘルス構成証明が活用され、TPM レベルで BitLocker の状態が検証されます。
 
 #### <a name="device-security"></a>［デバイス セキュリティ］
 

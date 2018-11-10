@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87ae986e1f7a2b00c1a29208a163ee449e114f17
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 03d52c53b6e3152a5a262ca8bd6d158d5980b2c8
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425293"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236392"
 ---
 # <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Intune で Windows Holographic および HoloLens デバイスを管理および使用する
 
@@ -37,7 +37,7 @@ Azure Active Directory (AD) は、Windows Holographic for Business を実行す�
 
 - **[Windows デバイスの一括登録](windows-bulk-enroll.md)**: Azure Active Directory (AD) と Intune に多数の新しい Windows デバイスを参加させることができます。 この機能は一括登録と呼ばれ、プロビジョニング パッケージを使用します。 これらのパッケージでは、Windows Holographic for Business を実行するデバイスを Azure AD テナントに参加させ、Intune に登録します。
 
-## <a name="company-portal"></a>[ポータル サイト]
+## <a name="company-portal"></a>ポータル サイト
 **[ポータル サイト アプリを構成する](company-portal-app.md)**
 
 Intune には、ポータル サイト アプリが含まれています。このアプリでユーザーは会社のデータにアクセスしたり、デバイスを登録したり、アプリをインストールしたり、IT 部署に連絡したりします。 Windows Holographic for Business を実行しているデバイスに合わせてポータル サイト アプリをカスタマイズできます。
@@ -68,6 +68,10 @@ Intune を使用し、Windows Holographic for Business を実行しているデ�
 
 Microsoft Intune では、Windows Holographic for Business を実行している Microsoft HoloLens デバイスにユニバーサル Windows アプリを展開することができます。 アプリ パッケージは、Intune Azure Portal で直接アップロードするか、ビジネス向け Microsoft ストアから展開することができます。 関連する領域の詳細については、次の記事を参照してください。
 - Intune Azure Portal を使用して基幹業務 (LOB) アプリを展開するには、[Windows の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法](lob-apps-windows.md)に関するページを参照してください。
+
+    > [!NOTE]
+    > Intune のパッケージ サイズの上限は 8 GB です。 このパッケージ サイズは、Intune にアップロードされた LOB アプリにのみ使用できます。
+
 - ビジネス向け Microsoft ストアを使用してアプリを展開するには、「[ビジネス向け Microsoft ストアから購入したアプリを Microsoft Intune で管理する方法](windows-store-for-business.md)」を参照してください。 
 - Microsoft Intune でのアプリの管理については、[Microsoft Intune アプリの管理](app-management.md)に関するページを参照してください。
 - Microsoft HoloLens 用アプリの開発の詳細については、「[Microsoft HoloLens のための複合現実アプリ](https://www.microsoft.com/hololens/apps)」を参照してください。 
@@ -125,7 +129,7 @@ Intune で Wi-Fi プロファイルを作成し、お使いの Windows Holograph
 
 Intune には、Windows 10 デバイス用に、更新プログラム リングと呼ばれている機能があります。 更新プログラム リングには、更新プログラムのインストール方法を決定する一連の設定が含まれています。 たとえば、更新プログラムをインストールするためのメンテナンス期間を作成したり、更新プログラムのインストール後に再起動を選択したりできます。 更新プログラム リングは、Windows Holographic for Business を実行している複数のデバイスに適用できます。
 
-## <a name="terms-and-conditions"></a>Intune の登録および会社アクセスに関する使用条件
+## <a name="terms-and-conditions"></a>使用条件
 **[ユーザー アクセスに関する会社の使用条件を設定する](terms-and-conditions-create.md)**
 
 ユーザーがデバイスを登録したり、電子メールなど、会社のアプリにアクセスしたりする前に、会社の使用条件に同意するように要求できます。 Intune で、ポータル サイトに使用条件を表示する方法を定義します。また、Windows Holographic for Business を実行しているデバイスに使用条件を割り当てます。
