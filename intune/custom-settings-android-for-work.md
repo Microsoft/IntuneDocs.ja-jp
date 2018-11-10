@@ -1,12 +1,11 @@
 ---
-title: Android 仕事用プロファイル用の Intune カスタム プロファイル設定
-titlesuffix: Microsoft Intune
-description: Android 仕事用プロファイル用の Microsoft Intune カスタム プロファイル設定を作成する方法について説明します。
+title: Microsoft Intune で Android エンタープライズ デバイスにカスタム設定を追加する - Azure | Microsoft Docs
+description: Microsoft Intune で Android エンタープライズ デバイスを作成するためのカスタム プロファイルを追加または作成します
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/12/2017
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,42 +14,85 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 109c50acf194598017aa507a0979ad3b9298de9e
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: a622264ed7cc091849bacbd02f8ae7bdb33603fe
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905293"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983144"
 ---
-# <a name="create-intune-custom-profile-settings-for-android-work-profile-devices"></a>Android 仕事用プロファイル デバイス用の Intune カスタム プロファイル設定を作成する
+# <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Microsoft Intune で Android エンタープライズ デバイス用のカスタム設定を使用する
 
-Intune Android 仕事用プロファイル カスタム構成ポリシーを使用して、Android 仕事用プロファイル デバイスでの各機能の制御に使用できる OMA-URI 設定を割り当てます。 これらの設定は、多くのデバイス製造元がデバイスの機能を制御するために使用する標準の設定です。
+Microsoft Intune では、"カスタム プロファイル" を使用して Android エンタープライズ デバイス用のカスタム設定を追加または作成できます。 カスタム プロファイルは Intune の機能です。 Intune に組み込まれていないデバイスの設定と機能を追加するように設計されています。
 
-この機能は、Intune ポリシーで構成できない Android 設定を割り当てられるようにするためのものです。 現時点では、Intune でサポートされる Android カスタム ポリシーの数は限られています。 構成できるポリシーを見つける場合は、この記事の例を参照してください。
+Android エンタープライズのカスタム プロファイルでは、Open Mobile Alliance Uniform Resource Identifier (OMA-URI) 設定を使って、Android エンタープライズ デバイスの機能を制御します。 通常、これらの設定は、モバイル デバイスの製造元によってこれらの機能を制御するために使われます。
 
-## <a name="create-a-custom-profile"></a>カスタム プロファイルの作成
+Intune でサポートされる Android カスタム プロファイルの数は限られています。
 
-1. 「[Microsoft Intune でカスタム デバイス設定を構成する方法](custom-settings-configure.md)」の手順に従って開始します。 **[プラットフォーム]** には **[Android エンタープライズ]** を選択し、**[プロファイルの種類]** には **[カスタム]** を選択します。
-2. **[OMA-URI のカスタム設定]** ブレードで **[追加]** を選択して、新しい設定を追加します。
-3. **[行の追加]** ブレードで、以下を構成します。
-    - **[名前]** - Android 仕事用プロファイル カスタム設定の一意の名前を入力すると、Azure portal 内で容易に識別できます。
-    - **[説明]** - Android カスタム ポリシーの概要や、ポリシーを特定するのに役立つその他の関連情報についての説明を入力します。
-    - **[OMA-URI]** - 設定対象の OMA-URI を入力します。
-    - **[データ型]** - この OMA-URI 設定を指定するデータ型を選択します。 **[文字列]**、**[文字列 (XML ファイル)]**、**[日付と時刻]**、**[整数]**、**[浮動小数点]**、**[ブール値]**、または **[Base64 (ファイル)]** から選択します。
-    - **[値]** - 以前に指定した OMA-URI に関連付ける値を指定します。 この値の指定に使用する方法は、選択したデータ型によって異なります。 たとえば、**[日付と時刻]** を選択した場合は、[日付の選択] から値を選択します。
-4. 完了したら、[OK] を選択して **[OMA-URI のカスタム設定]** に戻り、他の設定を追加するか、**[作成]** を選択してカスタム プロファイルを作成します。
+この記事では、Android エンタープライズ デバイス用のカスタム プロファイルを作成する方法を示します。 また、コピーと貼り付けをブロックするカスタム プロファイルの例も示します。
 
+## <a name="create-the-profile"></a>プロファイルの作成
+
+1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、**[Intune]** をフィルターとして適用して、**[Microsoft Intune]** を選びます。
+2. **[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
+3. 次の設定を入力します。
+
+    - **名前**: `android enterprise custom profile` のようにプロファイルの名前を入力します
+    - **説明**: プロファイルの説明を入力します
+    - **プラットフォーム**: **[Android エンタープライズ]** を選択します
+    - **プロファイルの種類**: **[カスタム]** を選択します
+
+4. **[OMA-URI のカスタム設定]** で、**[追加]** を選択します。 次の設定を入力します。
+
+    - **名前**: 簡単に見つけられるように、OMA-URI 設定の一意の名前を入力します。
+    - **説明**: 設定の概要および他の重要な詳細がわかる説明を入力します。
+    - **OMA-URI**: 設定として使用する OMA-URI を入力します。
+    - **データ型**: この OMA-URI の設定に使用するデータ型を選択します。 次のようなオプションがあります。
+
+      - 文字列型
+      - 文字列 (XML ファイル)
+      - 日付と時刻
+      - 整数型
+      - 浮動小数点
+      - ブール型
+      - Base64 (ファイル)
+
+    - **値**: 入力した OMA-URI に関連付けるデータ値を入力します。 値は、選択したデータ型に依存します。 たとえば、**[日付と時刻]** を選択した場合は、日付の選択から値を選択します。
+
+    設定を何か追加した後は、**[エクスポート]** を選択できます。 **[エクスポート]** では、追加した値の一覧がコンマ区切り値 (.csv) ファイルで作成されます。
+
+5. **[OK]** を選択して変更を保存します。 必要に応じて他の設定の追加を続けます。
+6. 終わったら、**[OK]** > **[作成]** を選択して Intune プロファイルを作成します。 完了すると、プロファイルが **[デバイス構成 - プロファイル]** の一覧に表示されます。
 
 ## <a name="example"></a>例
 
-この例では、Android 仕事用プロファイル デバイスで、仕事用アプリと個人用アプリ間のコピーと貼り付け操作を許可するかどうかの制限に使用できるカスタム プロファイルを作成します。
+この例では、Android エンタープライズ デバイスで仕事用アプリと個人用アプリ間のコピーと貼り付け操作を制限するカスタム プロファイルを作成します。
 
-1. この記事の手順に従い、次の値を使用して Android 仕事用プロファイル デバイス用のカスタム プロファイルを作成します。
-    - **[名前]** - 「コピーと貼り付けをブロック」または独自のテキストを入力します。
-    - **[説明]** - 「仕事用アプリと個人用アプリの間でのコピーや貼り付けをブロック」または独自のテキストを入力します。
-    - **[OMA-URI]** - 「**./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste**」を入力します。
-    - **[データ型]** - **[ブール]** を選択して、この OMA-URI の値が **True** または **False** のいずれかであるかを示します。
-    - **[値]** - **True** を選択します。
-2. 最終的に、この画像のような設定になります。
-![Android 仕事用プロファイルのコピーと貼り付けをブロックします。](./media/custom-policy-afw-copy-paste.png)
-3. これで、このカスタム プロファイルを管理対象の Android 仕事用プロファイル デバイスに割り当てると、仕事用アプリと個人用アプリの間でのコピーと貼り付けはブロックされます。
+1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、**[Intune]** をフィルターとして適用して、**[Microsoft Intune]** を選びます。
+2. **[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
+3. 次の設定を入力します。
+
+    - **名前**: `android ent block copy paste custom profile` のようにプロファイルの名前を入力します。
+    - **説明**: プロファイルの説明を入力します 
+    - **プラットフォーム**: **[Android エンタープライズ]** を選択します。
+    - **プロファイルの種類**: **[カスタム]** を選択します。
+
+4. **[OMA-URI のカスタム設定]** で、**[追加]** を選択します。 次の設定を入力します。
+
+    - **名前**: `Block copy and paste` のような名前を入力します。
+    - **説明**: `Blocks copy/paste between work and personal apps` のような説明を入力します。
+    - **OMA-URI**: 「`./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste`」と入力します。
+    - **データ型**: この OMA-URI の値は **True** または **False** なので、**[ブール値]** を選択します。
+    - **値**: **[True]** を選択します。
+
+5. 設定を入力した後、環境は次の画像のようになります。
+
+    ![Android 仕事用プロファイルのコピーと貼り付けをブロックします。](./media/custom-policy-afw-copy-paste.png)
+
+このプロファイルを管理対象の Android エンタープライズ デバイスに割り当てると、仕事用アプリと個人用アプリの間でのコピーと貼り付けはブロックされます。
+
+## <a name="next-steps"></a>次の手順
+
+プロファイルは作成されましたが、まだ何も行われていません。 次に、[プロファイルを割り当てます](device-profile-assign.md)。
+
+[Android デバイスでプロファイルを作成する](custom-settings-android.md)方法を確認してください。

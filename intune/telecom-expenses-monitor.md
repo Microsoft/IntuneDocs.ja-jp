@@ -15,17 +15,17 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16d57ee6a722e8d840b8e8a09ba583698fcb67be
-ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
+ms.openlocfilehash: e4c44552a0df369767bb91749351674af9eab4b3
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45562903"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959555"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune で通信費管理サービスをセットアップする
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune を使用して、企業所有のモバイル デバイスでのデータの使用から発生する通信費を管理することができます。 この機能を有効にするために、Intune は、サードパーティのソフトウェア開発企業である Saaswedo の Datalert 通信費管理ソリューションと統合されています。 Datalert は、通信データの使用状況を管理できるリアルタイム通信費管理ソフトウェアです。 お使いの Intune で管理されているデバイスのコストのかかるデータや予期しないデータおよびローミングの超過を回避できます。
+Intune を使用して、企業所有のモバイル デバイスでのデータの使用から発生する通信費を管理することができます。 この機能を有効にするために、Intune は、サードパーティのソフトウェア開発企業である Saaswedo の [Datalert 通信費管理](http://datalert.biz/get-started)ソリューションと統合されています。 Datalert は、通信データの使用状況を管理できるリアルタイム通信費管理ソフトウェアです。 お使いの Intune で管理されているデバイスのコストのかかるデータや予期しないデータおよびローミングの超過を回避できます。
 
 Intune と Datalert の統合により、ローミングや国内のデータ使用料の上限を一元的に設定、監視、適用できるようになります。 定義済みのしきい値を超えると、自動的にアラートがトリガーされます。 さまざまなアクション (ローミングの無効化やしきい値の超過など) を個々のエンド ユーザーやそのグループに適用するように、サービスを構成できます。 Datalert 管理コンソールでは、データ使用量と監視情報を示すレポートが利用できます。
 
@@ -61,19 +61,31 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
 2. Datalert 管理コンソールで、**[Settings (設定)]** タブに移動し、さらに **[MDM configuration (MDM の構成)]** に移動します。
 
-3. **[Unblock (ブロック解除)]** を選択して、ページに設定を入力できるようにします。
+3. ページの下部にある **[Unblock]\(ブロック解除\)** を選択すると、ページの設定を変更できるようになります。
 
-4. **[Server MDM (サーバー MDM)]** で、**[Microsoft Intune]** を選択します。
+4. **[Intune / Datalert Connection]\(Intune/Datalert 接続\)** セクションの **[Server MDM]\(サーバー MDM\)** で、**[Microsoft Intune]** を選択します。    
 
-5. **[Azure AD domain (Azure AD ドメイン]** に Azure テナント ID を入力し、**[Connection (接続)]** ボタンをクリックします。
+5. **[Azure AD domain]\(Azure AD ドメイン\)** に Azure テナント ID を入力し、**[Connection]\(接続\)** をクリックします。
 
-    **[Connection (接続)]** を選択すると、Datalert と Intune の間に既存の接続がないことを確認するために、Datalert サービスによって Intune へのチェックインが行われます。 数秒後に Microsoft ログイン ページが表示され、その後に Datalert Azure 認証が行われます。
+    **[Connection]\(接続\)** を選択すると、Datalert と Intune の間に既存の接続がないことを確認するために、Datalert サービスによって Intune へのチェックインが行われます。 数秒後に Microsoft ログイン ページが表示され、その後に Datalert Azure 認証が行われます。
 
-6. Microsoft 認証ページで、**[Accept (同意する)]** を選択します。 Datalert の "Thank you" ページにリダイレクトされ、数秒後にそのページが閉じます。 Datalert によって接続が検証され、検証済みの項目一覧の横に緑色のチェック マークが表示されます。 検証が失敗した場合、赤色でメッセージが表示され、対処について Datalert サポートに問い合わせる必要があります。
+6. Microsoft 認証ページで、**[Accept (同意する)]** を選択します。 Datalert の **[thank you]\(ありがとうございます\)** ページにリダイレクトされ、数秒後にそのページが閉じます。 Datalert によって接続が検証され、検証済みの項目一覧の横に緑色のチェック マークが表示されます。 検証が失敗した場合、赤色でメッセージが表示され、対処について Datalert サポートに問い合わせる必要があります。
 
     次のスクリーン ショットは、接続に成功した場合に表示されることが期待できる緑色のチェック マークを示しています。
 
-   ![接続が成功したことを示す Datalert ページ](./media/tem-mdm-configuration-mdm-server-page.png)
+   ![接続が成功したことを示す Datalert ページ](./media/tem-datalert-connection.png)
+
+7. **[Datalert App / ADAL Consent]\(Datalert アプリ/ADAL 同意\)** セクションで、スイッチを **[オン]** に設定します。 Microsoft 認証ページで、**[Accept (同意する)]** を選択します。 Datalert の **[thank you]\(ありがとうございます\)** ページにリダイレクトされ、数秒後にそのページが閉じます。 Datalert によって接続が検証され、検証済みの項目一覧の横に緑色のチェック マークが表示されます。 検証が失敗した場合、赤色でメッセージが表示され、対処について Datalert サポートに問い合わせる必要があります。    
+
+    次のスクリーン ショットは、接続に成功した場合に表示されることが期待できる緑色のチェック マークを示しています。
+
+   ![接続が成功したことを示す Datalert ページ](./media/tem-datalert-adal-consent.png)
+
+8. **[MDM Profiles management (optional)]\(MDM プロファイル管理 (オプション)\)** セクションでスイッチを **[オン]** に設定し、ユーザーによるポリシーの設定をサポートするため Datalert が Intune で使用可能なプロファイルを読み取れるようにします。 Microsoft 認証ページで、**[Accept (同意する)]** を選択します。 Datalert の **[thank you]\(ありがとうございます\)** ページにリダイレクトされ、数秒後にそのページが閉じます。 Datalert によって接続が検証され、検証済みの項目一覧の横に緑色のチェック マークが表示されます。 検証が失敗した場合、赤色でメッセージが表示され、対処について Datalert サポートに問い合わせる必要があります。    
+
+    次のスクリーン ショットは、接続に成功した場合に表示されることが期待できる緑色のチェック マークを示しています。
+
+   ![接続が成功したことを示す Datalert ページ](./media/tem-datalert-mdm-profiles.png)
 
 ### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>手順 2: 通信費管理機能が Intune でアクティブであることを確認する
 

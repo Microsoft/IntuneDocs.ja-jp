@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7e740d03453a437572f8f960ed21927f4fcbace
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
+ms.openlocfilehash: f08e6275bb8f3dfb689dcc7e14d92ab65d588471
+ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49102040"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50149106"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>管理対象の Android デバイス用アプリ構成ポリシーを追加する
 
@@ -29,9 +29,7 @@ ms.locfileid: "49102040"
 Microsoft Intune のアプリ構成ポリシーを使用して、Android 仕事用プロファイル アプリを実行するための設定を指定します。 アプリ開発者は、アプリの構成設定を指定する場合、Android 管理対象アプリの構成設定を公開する必要があります。 設定を適用するユーザー グループにアプリ構成ポリシーを割り当てます。  ポリシー設定は、アプリがポリシーをチェックするとき (通常はアプリの初回実行時) に使用されます。
 
 > [!Note]  
-> アプリ構成をサポートしていないアプリもあります。 ビルドされたアプリでアプリ構成ポリシーがサポートされているかどうかについては、アプリの開発者にお問い合わせください。<p></p>
-> Microsoft Intune 管理者は、マネージド デバイス上の Microsoft Office アプリケーションにどのユーザー アカウントを追加するかを制御することができます。 許可されている組織ユーザー アカウントのみにアクセスを制限したり、登録済みデバイス上の個人アカウントをブロックしたりできます。 サポートされているアプリケーションがアプリの構成を処理し、未承認のアカウントを削除してブロックします。<p></p>
-> Microsoft Word、Microsoft Excel、Microsoft PowerPoint では、Android 16.0.9327.1000 以降を使用する必要があります。
+> アプリ構成をサポートしていないアプリもあります。 ビルドされたアプリでアプリ構成ポリシーがサポートされているかどうかについては、アプリの開発者にお問い合わせください。
 
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
 2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
@@ -80,7 +78,9 @@ Android デバイスでは、次のキー/値ペアを使用します。
 | **値** | <ul><li>1 つまたは複数の<code>;</code> で区切られた UPN。</li><li>このキーで定義された管理対象のユーザー アカウントのみが許可されます。</li><li> Intune に登録されているデバイスでは、<code>{{userprincipalname}}</code> のトークンを使用して登録済みのユーザー アカウントを表すことができます。</li></ul> |
 
    > [!NOTE]
-   > 複数 ID で構成された組織アカウントのみを許可する場合は、Outlook for Android 2.2.222 以降を使用する必要があります。 
+   > 複数 ID で構成された組織アカウントのみを許可する場合は、Outlook for Android 2.2.222 以降を使用する必要があります。<p></p>
+   > Microsoft Intune 管理者は、マネージド デバイス上の Microsoft Office アプリケーションにどのユーザー アカウントを追加するかを制御することができます。 許可されている組織ユーザー アカウントのみにアクセスを制限したり、登録済みデバイス上の個人アカウントをブロックしたりできます。 サポートされているアプリケーションがアプリの構成を処理し、未承認のアカウントを削除してブロックします。<p></p>
+   > Microsoft Word、Microsoft Excel、Microsoft PowerPoint では、アプリ バージョン 16.0.9327.1000 以降を使用する必要があります。 
 
 ## <a name="enter-the-json-editor"></a>JSON エディターの入力
 
@@ -96,7 +96,7 @@ Android デバイスでは、次のキー/値ペアを使用します。
 
 ## <a name="preconfigure-the-permissions-grant-state-for-apps"></a>アプリのアクセス許可の状態を事前に構成する
 
-Android デバイス機能にアクセスするためのアプリのアクセス許可を事前に構成することもできます。 既定では、場所やデバイス カメラへのアクセスなど、デバイスのアクセス許可を必要とする Android アプリは、アクセス許可の承諾または拒否をユーザーに求めます。 たとえば、アプリでデバイスのマイクが使用される場合、ユーザーは、そのマイクを使用するアクセス許可をアプリに付与するように求められます。
+Android デバイス機能にアクセスするためのアプリのアクセス許可を事前に構成することもできます。 既定では、場所やデバイス カメラへのアクセスなど、デバイスのアクセス許可を必要とする Android アプリは、アクセス許可の承諾または拒否をユーザーに求めます。 たとえば、アプリでデバイスのマイクが使用される場合、ユーザーは、そのマイクを使用するアクセス許可をアプリに付与するように求められます。
 
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
 2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。

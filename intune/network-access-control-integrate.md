@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/18/2017
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a2d2d7eb609db07d4f41254f2937120412f2f4b1
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: e1adfdba49ab8ac5ae55f792e71a99f4aef4c8a6
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643044"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236154"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>ネットワーク アクセス制御 (NAC) と Intune の統合
 
@@ -27,7 +27,7 @@ Intune はネットワーク アクセス制御パートナーと統合して、
 
 ## <a name="how-do-intune-and-nac-solutions-help-protect-your-organization-resources"></a>Intune と NAC ソリューションが組織のリソースを保護する方法
 
-NAC ソリューションでは、Intune でデバイスの登録とコンプライアンスの状態をチェックして、アクセス制御の決定を行います。 デバイスが登録されていない場合、または登録されていても Intune のデバイス コンプライアンス ポリシーに準拠していない場合は、登録および/またはデバイスのコンプライアンス チェックのために、デバイスを Intune にリダイレクトする必要があります。
+NAC ソリューションでは、Intune でデバイスの登録とコンプライアンスの状態をチェックして、アクセス制御の決定を行います。 デバイスが登録されていない場合、または登録されていても Intune のデバイス コンプライアンス ポリシーに準拠していない場合は、登録またはデバイスのコンプライアンス チェックのために、そのデバイスを Intune にリダイレクトする必要があります。
 
 ### <a name="example"></a>例
 
@@ -37,7 +37,7 @@ NAC ソリューションでは、Intune でデバイスの登録とコンプラ
 
 Intune とアクティブに同期しているデバイスは、**準拠** / **非準拠**から**未同期** (または**不明**) に移動することはできません。 **不明**の状態は、コンプライアンス対応状態がまだ評価されていない、新たに登録されたデバイスであることを示しています。
 
-リソースへのアクセスがブロックされているデバイスの場合、ブロックしているサービスが、すべてのユーザーを[管理ポータル](https://portal.manage.microsoft.com)にリダイレクトし、デバイスがブロックされている理由を特定します。  ユーザーがこのページにアクセスすると、デバイスのコンプライアンス対応状態が、同期的に再評価されます。
+リソースへのアクセスがブロックされているデバイスの場合、ブロックしているサービスが、すべてのユーザーを[管理ポータル](https://portal.manage.microsoft.com)にリダイレクトし、デバイスがブロックされている理由を特定します。  ユーザーがこのページにアクセスすると、デバイスのコンプライアンス対応状態が、同期的に再評価されます。
 
 ## <a name="nac-and-conditional-access"></a>NAC と条件付きアクセス
 
@@ -55,13 +55,23 @@ NAC は条件付きアクセスと連携して、アクセス制御の決定を�
 4. ユーザーが、会社の Wi-Fi アクセス ポイントに接続するか、VPN 接続要求を行います。
 5. NAC パートナー ソリューションは、Intune にデバイス情報を転送し、デバイスの登録とコンプライアンスの状態を Intune に問い合わせます。
 6. デバイスが準拠していないか、登録されていない場合は、NAC パートナー ソリューションはユーザーに登録またはデバイスのコンプライアンスの修正を指示します。
-7. デバイスは、コンプライアンスおよび登録状態の再検証を試みます。
+7. デバイスは、該当する場合にそのコンプライアンスおよび登録状態の再検証を試みます。
 8. デバイスが登録されて準拠するようになると、NAC パートナー ソリューションは Intune から状態を取得します。
 9. 接続が正常に確立されて、デバイスは会社のリソースにアクセスできるようになります。
+
+## <a name="use-nac-on-your-ios-devices"></a>iOS デバイス上で NAC を使用する
+
+現在、iOS 上の次の VPN クライアントではネットワーク アクセス制御がサポートされていません。
+-   Cisco AnyConnect
+-   F5 Access
+-   Citrix SSO  
+
+これらの新しいクライアント用の NAC ソリューションをリリースするために、パートナーと協力して作業しています。 ソリューションの準備が整ったら、追加の詳細と共にこの記事を更新します。 
+
 
 ## <a name="next-steps"></a>次の手順
 
 - [Cisco ISE と Intune を統合する](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 - [Citrix NetScaler と Intune を統合する](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
-- [HP Aruba Clear Pass と Intune を統合する](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=23757)
+- [HP Aruba ClearPass と Intune を統合する](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=31271)
 - [Squadra の secRMM (security Removable Media Manager) と Intune を統合する](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)

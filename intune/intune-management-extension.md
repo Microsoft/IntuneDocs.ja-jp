@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/30/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb7d8b35cb88223a3fbfa45e0ad8e2f8d2852a96
-ms.sourcegitcommit: ab801d715aa26f6d97f1a0c42a07e55146a14e6f
+ms.openlocfilehash: ad8e874dda47b7c6deeb614b0f893f7c922241ce
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35289025"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236341"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 デバイスの Intune で PowerShell スクリプトを管理する
 Intune 管理拡張機能を使用すると、Windows 10 デバイスで実行されている Intune で PowerShell スクリプトをアップロードできます。 この管理拡張機能は Windows 10 モバイル デバイス管理 (MDM) 機能を補完するもので、最新の管理に簡単に移行できます。
@@ -33,7 +33,7 @@ Intune 管理拡張機能は、インボックス Windows 10 MDM 機能を補完
 
 ## <a name="prerequisites"></a>必要条件
 Intune 管理拡張機能には次の前提条件があります。
-- デバイスを Azure AD に参加させる必要があります。 これには、ハイブリッド AD 参加済みデバイスは含まれません。
+- デバイスを Azure AD に参加させる必要があります。 Intune 管理拡張機能では、Azure Active Directory 参加済み、ハイブリッド ドメイン参加済み、および共同管理登録済みの Windows デバイスがサポートされます。
 - デバイスは Windows 10 バージョン 1607 以降を実行している必要があります。
 - MDM の自動登録が [Azure AD で有効](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment)になっており、デバイスが Intune に自動登録される必要があります。
 
@@ -56,7 +56,8 @@ Intune 管理拡張機能には次の前提条件があります。
 
 > [!NOTE]
 > - PowerShell スクリプトをコンピューター グループに適用することはできません。
-> - PowerShell スクリプトは、Azure Active Directory (AD) ユーザーがデバイスにサインインした場合にのみデバイス上で実行されます。
+> - エンドユーザーは、PowerShell スクリプトを実行するためにデバイスへのログインを要求されません。 
+> - Intune 内の PowerShell スクリプトは、AAD デバイスのセキュリティ グループを対象にすることができます。
 
 Intune 管理拡張機能は、1 時間に 1 回 Intune と同期します。 ポリシーを Azure AD グループに割り当てた後に、PowerShell スクリプトを実行すると、実行結果がレポートされます。 
  

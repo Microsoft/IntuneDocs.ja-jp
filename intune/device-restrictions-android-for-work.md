@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d6a633b73856b5f9f50ffe0b9993713b888b969b
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 2a521eadea2bcf118b4b0c643802fd8478f7ace2
+ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828144"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49652106"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Intune での Work デバイスの制限設定
 
@@ -124,6 +124,7 @@ ms.locfileid: "48828144"
     > [!IMPORTANT]
     >  - 選択した VPN クライアントは、デバイスにインストールされている必要があり、仕事用プロファイルでアプリごとの VPN をサポートしている必要があります。 そうでない場合、エラーが発生します。 
     >  - **Managed Google Play ストア**で VPN クライアント アプリを承認し、アプリを Intune に同期して、アプリをデバイスに展開する必要があります。 これを行うと、アプリがユーザーの仕事用プロファイルにインストールされます。
+    >  - Android 3.0.3 用の F5 Access と共にアプリごとの VPN を使用する場合、既知の問題があります。 詳細については、[Android 3.0.3 用の F5 Access に向けた F5 のリリース ノート](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-3.html#relnotes_known_issues_f5_access_android)をご覧ください。
 
 - **ロックダウン モード**: すべてのネットワーク トラフィックで VPN トンネルの使用を強制するには、**有効**にします。 VPN への接続が確立されていない場合、デバイスはネットワークにアクセスできません。
 

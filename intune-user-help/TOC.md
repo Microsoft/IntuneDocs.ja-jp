@@ -107,11 +107,13 @@
 #### [使用しているバージョンの macOS がまだサポートされていない](your-macos-version-isnt-yet-supported.md)
 #### [macOS デバイスを更新する](you-need-to-update-your-macos-device.md)
 #### [ポータル サイトのエラーを送信する](send-errors-macos.md)
+#### [他のユーザーに割り当てられたデバイス](unable-to-get-macOS-device-managed.md)
 #### [Microsoft による使用状況データの収集を無効にする](turn-off-microsoft-usage-data-collection-macos.md)
 #### [このデバイスでの若干の相違点](device-little-different-jamf.md)
 #### [シリアル番号の確認](how-do-i-find-the-serial-number-on-my-device-macos.md)
 #### [デバイスの識別](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 #### [デバイスの制限に達した](device-limit-wpj-macos.md)
+#### [macOS VM の管理の取得に関する問題](unable-to-get-macOS-device-managed.md) 
 
 ## [Windows デバイスを使用する](using-your-windows-device-with-intune.md)
 ### [Windows 10 デバイスの登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)

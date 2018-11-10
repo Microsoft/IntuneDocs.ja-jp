@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune - Azure での Windows Holographic for Business デバイス用のカスタム設定 | Microsoft Docs
-description: カスタム プロファイルを作成して、Microsoft Intune で Windows Holographic for Business を実行しているデバイスに対して OMA-URI 設定を使用します。 AllowFastReconnect、AllowVPN、AllowUpdateService、UpdateServiceURL、RequireUpdatesApproval、ApprovedUpdates、および ApplicationLaunchRestrictions ポリシー構成サービス プロバイダー (CSP) の設定を行うことができます。
+description: カスタム プロファイルを追加または作成して、Microsoft Hololens など、Microsoft Intune で Windows Holographic for Business を実行しているデバイスに対して OMA-URI 設定を使用します。 AllowFastReconnect、AllowVPN、AllowUpdateService、UpdateServiceURL、RequireUpdatesApproval、ApprovedUpdates、および ApplicationLaunchRestrictions ポリシー構成サービス プロバイダー (CSP) の設定を行うことができます。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/26/2018
+ms.date: 10/24/2018
 ms.article: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,39 +13,57 @@ ms.topic: article
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b8ba5078d304c0e9d6b10e4efb868642323c901c
-ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
+ms.openlocfilehash: 863ef32d05fed601eaf38f749aa30e1c4b657cc9
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403580"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983161"
 ---
-# <a name="custom-device-settings-for-devices-running-windows-holographic-for-business-in-intune"></a>Intune での Windows Holographic for Business を実行しているデバイスに対するカスタム デバイス設定
+# <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Intune で Windows Holographic for Business デバイス用のカスタム設定を使用する
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Microsoft Intune では、"カスタム プロファイル" を使用して Windows Holographic for Business デバイス用のカスタム設定を追加または作成できます。 カスタム プロファイルは Intune の機能です。 Intune に組み込まれていないデバイスの設定と機能を追加するように設計されています。
 
- デバイスで機能の制御に使用できる OMA-URI (Open Mobile Alliance Uniform Resource Identifier) の設定を展開するには、Windows Holographic for Business 用の Microsoft Intune **カスタム** プロファイルを使います。 Windows Holographic for Business では、構成サービス プロバイダー (CSP) の多くの設定を利用できます。 CSP の概要については、「[構成サービス プロバイダー (CSP) の概要 (IT 担当者向け)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers)」をご覧ください。 Windows Holographic で特定の CSP がサポートされているかどうかについては、「[CSPs supported in Windows Holographic](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)」(Windows Holographic でサポートされている CSP) をご覧ください。
+Windows Holographic for Business のカスタム プロファイルでは、Open Mobile Alliance Uniform Resource Identifier (OMA-URI) 設定を使って、さまざまな機能を構成します。 通常、これらの設定は、デバイスの機能を制御するためにモバイル デバイスの製造元によって使われます。
 
-特定の設定を探している場合、[Windows Holographic for Business デバイス制限プロファイル](device-restrictions-windows-holographic.md)には多くの組み込み設定が含まれ、カスタム値を指定する必要がないことに留意してください。
+Windows Holographic for Business では、構成サービス プロバイダー (CSP) の多くの設定を利用できます。 CSP の概要については、「[構成サービス プロバイダー (CSP) の概要 (IT 担当者向け)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers)」をご覧ください。 Windows Holographic で特定の CSP がサポートされているかどうかについては、「[CSPs supported in Windows Holographic](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)」(Windows Holographic でサポートされている CSP) をご覧ください。
 
-## <a name="create-the-custom-oma-uri-profile"></a>カスタム OMA-URI プロファイルを作成する
+特定の設定を探している場合、[Windows Holographic for Business デバイス制限プロファイル](device-restrictions-windows-holographic.md)には多くの組み込み設定が含まれることに留意してください。 そのため、カスタム値の入力は必要ない場合があります。
 
-1. [Microsoft Intune でのカスタム デバイス設定の構成](custom-settings-configure.md)に関するページの手順に従って開始します。
-2. **[プロファイルの作成]** で **[設定]** を選択し、1 つまたは複数の OMA-URI 設定を追加します。
-3. **[OMA-URI のカスタム設定]** で **[追加]** をクリックして、新しい値を追加します。 **[エクスポート]** をクリックして、コンマ区切り値 (.csv) ファイルで構成した値の一覧を作成することもできます。
-4. 各 OMA-URI 設定を追加するには、次の情報を入力します。
-  - **設定名**: OMA-URI 設定の一意の名前を入力すると、設定リスト内で容易に識別できます。
-  - **設定の説明**: 必要に応じて、設定の説明を入力します。
-  - **データ型**: 以下から選択します。
-    - **文字列**
-    - **文字列型 (XML)**
-    - **日付と時刻**
-    - **整数型**
-    - **浮動小数点**
-    - **ブール型**
-  - **OMA-URI (大文字と小文字を区別)**: 設定対象の OMA-URI を入力します。
-  - **値**:入力した OMA-URI に関連付ける値を入力します。
-5. 完了したら、**[プロファイルの作成]** に戻り、**[作成]** をクリックします。 プロファイルが作成され、プロファイル一覧に表示されます。
+この記事では、Windows Holographic for Business デバイス用のカスタム プロファイルを作成する方法を示します。 推奨される OMA-URI 設定の一覧も含まれます。
+
+## <a name="create-the-profile"></a>プロファイルの作成
+
+1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、**[Intune]** をフィルターとして適用して、**[Microsoft Intune]** を選びます。
+2. **[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
+3. 次の設定を入力します。
+
+    - **名前**: `hololens custom profile` のようにプロファイルの名前を入力します。
+    - **説明**: プロファイルの説明を入力します 
+    - **[プラットフォーム]**: **[Windows 10 以降]** を選択します。
+    - **プロファイルの種類**: **[カスタム]** を選択します。
+
+4. **[OMA-URI のカスタム設定]** で、**[追加]** を選択します。 次の設定を入力します。
+
+    - **名前**: OMA-URI 設定の一意の名前を入力すると、設定リスト内で容易に識別できます。
+    - **説明**: 設定の概要および他の重要な詳細がわかる説明を入力します。
+    - **OMA-URI** (大文字と小文字を区別): 設定として使用する OMA-URI を入力します。
+    - **データ型**: この OMA-URI の設定に使用するデータ型を選択します。 次のようなオプションがあります。
+
+        - 文字列型
+        - 文字列 (XML ファイル)
+        - 日付と時刻
+        - 整数型
+        - 浮動小数点
+        - ブール型
+        - Base64 (ファイル)
+
+    - **値**: 入力した OMA-URI に関連付けるデータ値を入力します。 値は、選択したデータ型に依存します。 たとえば、**[日付と時刻]** を選択した場合は、日付の選択から値を選択します。
+
+    設定を何か追加した後は、**[エクスポート]** を選択できます。 **[エクスポート]** では、追加した値の一覧がコンマ区切り値 (.csv) ファイルで作成されます。
+
+5. **[OK]** を選択して変更を保存します。 必要に応じて他の設定の追加を続けます。
+6. 終わったら、**[OK]** > **[作成]** を選択して Intune プロファイルを作成します。 完了すると、プロファイルが **[デバイス構成 - プロファイル]** の一覧に表示されます。
 
 ## <a name="recommended-custom-settings"></a>推奨されるカスタム設定
 
@@ -145,6 +163,12 @@ ms.locfileid: "47403580"
 
 ## <a name="find-the-policies-you-can-configure"></a>構成できるポリシーを見つける
 
-「[CSPs supported in Windows Holographic](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)」(Windows Holographic でサポートされている CSP) で、Windows Holographic によってサポートされているすべての構成サービス プロバイダー (CSP) の完全な一覧がわかります。 Windows Holographic のバージョンによっては、一部の設定に互換性がありません。 Windows 記事の表を見れば、各 CSP でサポートされているバージョンを確認できます。
+「[CSPs supported in Windows Holographic](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)」(Windows Holographic でサポートされている CSP) で、Windows Holographic によってサポートされているすべての構成サービス プロバイダー (CSP) の完全な一覧がわかります。 Windows Holographic のバージョンによっては、一部の設定に互換性がありません。 「[CSPs supported in Windows Holographic](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)」 (Windows Holographic でサポートされている CSP) の表に、各 CSP でサポートされているバージョンが一覧表示されます。
 
-また、記事の一覧にある設定の一部は Intune でサポートされていません。 Intune で必要な設定がサポートされているかどうかを確認するには、その設定の記事を開きます。 各設定ページには、サポートされている操作が示されます。 Intune で利用するには、その設定で**追加**操作または**置換**操作がサポートされている必要があります。
+また、「[CSPs supported in Windows Holographic](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)」(Windows Holographic でサポートされている CSP) に一覧表示されているすべての設定が Intune でサポートされているわけではありません。 Intune で必要な設定がサポートされているかどうかを確認するには、その設定の記事を開きます。 各設定ページには、サポートされている操作が示されます。 Intune で利用するには、その設定で**追加**操作または**置換**操作がサポートされている必要があります。
+
+## <a name="next-steps"></a>次の手順
+
+プロファイルは作成されましたが、まだ何も行われていません。 次に、[プロファイルを割り当てます](device-profile-assign.md)。
+
+[Windows 10 デバイス](custom-settings-windows-10.md)でのカスタム プロファイルの作成方法を確認してください。

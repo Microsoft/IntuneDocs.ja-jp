@@ -15,12 +15,12 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c94357d90f89e77be03df0db9ba9e2d89836623b
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: 57de118c2e13182a0d26aa36d1dc5b1f7ea9c4e9
+ms.sourcegitcommit: 46f6f3d4e1c7c0a5a716503f759ea5cf03c1a02b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799525"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136966"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>デバイス登録なしで管理対象アプリ用アプリ構成ポリシーを追加する
 
@@ -39,7 +39,7 @@ ms.locfileid: "48799525"
       Azure Portal に表示されるプロファイルの説明。
     - **デバイス登録の種類**  
       **[アプリの管理]** を選択します。
-6. **[関連アプリ]** を選択して、構成するアプリを選択します。 承認して Intune に同期したアプリの一覧からアプリを選択します。
+6.  **[関連アプリ]**  を選択し、構成するアプリを選択します。 承認して Intune に同期したアプリの一覧からアプリを選択します。
 7. アプリでサポートする構成設定ごとに、**[名前]** と **[値]** を入力し、省略記号 (**[...]**) を選択します。  
     構成を削除するには、省略記号 (**[...]**) を選択し、**[削除]** を選択します。  
     
@@ -51,13 +51,13 @@ Intune では特定のトークンを生成して、マネージド アプリケ
 
 Intune は、構成設定で次のトークンの種類をサポートしています。 その他のカスタム キーと値の組み合わせはサポートされていません。
 
-- \{\{userprincipalname\}\} — たとえば、**John@contoso.com**
-- \{\{mail\}\} — たとえば、**John@contoso.com**
-- \{\{partialupn\}\} — たとえば、**John**
-- \{\{accountid\}\} — たとえば、**fc0dc142-71d8-4b12-bbea-bae2a8514c81**
-- \{\{userid\}\} — たとえば、**3ec2c00f-b125-4519-acf0-302ac3761822**
-- \{\{username\}\} — たとえば、**John Doe**
-- \{\{PrimarySMTPAddress\}\} — たとえば、**testuser@ad.domain.com** 
+- \{\{userprincipalname\}\} — たとえば、John@contoso.com
+- \{\{mail\}\} — たとえば、John@contoso.com
+- \{\{partialupn\}\} — たとえば、John
+- \{\{accountid\}\} — たとえば、fc0dc142-71d8-4b12-bbea-bae2a8514c81
+- \{\{userid\}\} — たとえば、3ec2c00f-b125-4519-acf0-302ac3761822
+- \{\{username\}\} — たとえば、John Doe
+- \{\{PrimarySMTPAddress\}\} — たとえば、testuser@ad.domain.com
 
 
 > [!Note]  
