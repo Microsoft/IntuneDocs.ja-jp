@@ -15,12 +15,12 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bbf02fc9633cca5059a6c58c3ef021f05469be60
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 43ca9d165bd44684a23f7e82eaed04f833b30449
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075595"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212344"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>iOS の基幹業務アプリを Microsoft Intune に追加する
 
@@ -55,7 +55,6 @@ ms.locfileid: "49075595"
     - **[説明]**: アプリの説明を入力します。 説明はポータル サイトに表示されます。
     - **[発行元]**: アプリの発行元の名前を入力します。
     - **[オペレーティング システムの最小要件]**: アプリをインストールできる最小限のオペレーティング システム バージョンを一覧から選択します。 これよりも前のオペレーティング システムがアプリの割り当て先デバイスにインストールされている場合、そのアプリはインストールされません。
-    - **[アプリのバージョンを無視する]**: アプリ開発者がアプリがを自動的に更新する場合は、**[はい]** に設定します。
     - **[カテゴリ]**: 1 つまたは複数の組み込みアプリ カテゴリを選択するか、作成したカテゴリを選択します。 カテゴリを使用すれば、ユーザーはポータル サイトを参照する際にアプリを見つけやすくなります。
     - **[会社のポータルでおすすめアプリとして表示します]**: ユーザーがアプリを参照する際に、ポータル サイトのメイン ページでアプリを目立つように表示します。
     - **[情報 URL]**: 必要に応じて、このアプリに関する情報が含まれる Web サイトの URL を入力します。 この URL はポータル サイトに表示されます。

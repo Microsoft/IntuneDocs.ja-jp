@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 59e2ab4635c8488b99781ac123aacd0854967dc8
-ms.sourcegitcommit: c3ac9e5f6240223cb5dfed8b44c7425066d6ea86
+ms.openlocfilehash: b3de4d79e6121505718a75ffe64102bb1bc18347
+ms.sourcegitcommit: 244456907e3ab4a4389d32d06060606a9591cfba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49380033"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50751645"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Intune での Windows 10 (以降) 用のキオスクの設定
 
@@ -105,7 +105,7 @@ Intune では、デバイスごとに 1 つのキオスク プロファイルを
 
     - **[アプリケーション名]**: 必須です。 アプリケーションの名前を入力します。
     - **[ローカル パス]**: 必須です。 `C:\Program Files (x86)\Microsoft VS Code\Code.exe` や `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe` などの、実行可能ファイルのパスを入力します。
-    - **[アプリケーション ユーザー モデル ID (AUMID)]**: 省略可能です。 Win32 アプリのアプリケーション ユーザー モデル ID (AUMID) を入力します。 この設定により、デスクトップ上のタイルのスタート画面のレイアウトが決まります。 この ID を取得する場合は、「[Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)」 (インストール済みアプリのアプリケーション ユーザー モデル ID を見つける) を参照してください。
+    - **[アプリケーション ユーザー モデル ID (AUMID)]**: Win32 アプリのアプリケーション ユーザー モデル ID (AUMID) を入力します。 この設定により、デスクトップ上のタイルのスタート画面のレイアウトが決まります。 この ID を取得する場合は、「[Find the Application User Model ID of an installed app](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps)」 (インストール済みアプリのアプリケーション ユーザー モデル ID を見つける) を参照してください。
     - **[タイルのサイズ]**: 必須です。 小、中、全体、大の、アプリ タイルのサイズを選択します。
   
   - **[Add by AUMID]\(AUMID による追加\)**: このオプションを使用して、メモ帳や電卓などの受信トレイ Windows アプリを追加します。 次のプロパティを入力します。 

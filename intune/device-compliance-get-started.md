@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/28/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 151a445bf7c5c17f8ff1b5ee403df8744f2d8ba6
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
+ms.openlocfilehash: 226713d893e05c2c2aeea49cde2ce92591d06391
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49102057"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915701"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune のデバイス コンプライアンス ポリシーの概要
 
@@ -151,9 +151,9 @@ Remember that you need to implement conditional access policies in addition to c
 条件付きアクセスなしのデバイス コンプライアンス ポリシーを使用することもできます。 コンプライアンス ポリシーを単独で使用した場合、対象のデバイスが評価され、コンプライアンス ステータスを含めて報告されます。 たとえば、暗号化されていないデバイスの数や脱獄またはルート化されたデバイスに関するレポートを取得できます。 条件付きアクセスなしのコンプライアンス ポリシーを使用する場合、会社のリソースへのアクセス制限はありません。
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>デバイス コンプライアンス ポリシーを展開する方法
-ユーザー グループ内のユーザー、またはデバイス グループ内のデバイスにコンプライアンス ポリシーを展開することができます。 コンプライアンス ポリシーがユーザーに展開されると、すべてのユーザーのデバイスのコンプライアンスがチェックされます。
+ユーザー グループ内のユーザー、またはデバイス グループ内のデバイスにコンプライアンス ポリシーを展開することができます。 コンプライアンス ポリシーがユーザーに展開されると、すべてのユーザーのデバイスのコンプライアンスがチェックされます。 Windows 10 バージョン 1803 以降のデバイスでは、プライマリ ユーザーがデバイスを登録しなかった*場合は*デバイス グループに展開することをお勧めします。 このシナリオでのデバイス グループの使用は、コンプライアンス レポートに役立ちます。
 
-既定の **[コンプライアンス ポリシー設定]** ([Azure portal] > [デバイスのポリシー準拠]) には以下が含まれます。
+Intune に登録されたすべてのデバイスで、一連の組み込み**コンプライアンス ポリシー設定** (Azure portal > [デバイスのポリシー準拠]) が評価されます。 たとえば、次のとおりです。
 
 - **[Mark devices with no compliance policy assigned as]\(コンプライアンス ポリシーが割り当てられていないデバイスにマークを付ける\)**: このプロパティには次の 2 つの値があります。
 
@@ -171,7 +171,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 - **[コンプライアンス状態の有効期間 (日)]**: デバイスが受け取ったすべてのコンプライアンス ポリシーの状態をレポートする期間を入力します。 この期間内に状態を返さないデバイスは非準拠として扱われます。 既定値は 30 日です。
 
-すべてのデバイスに**既定のデバイス コンプライアンス ポリシー** ([Azure Portal] > [デバイス コンプライアンス] > [ポリシー コンプライアンス]) があります。 この既定のポリシーを使用して、これらの設定を監視します。
+すべてのデバイスに**組み込みのデバイス コンプライアンス ポリシー** (Azure portal > [デバイスのポリシー準拠] > [ポリシーへの準拠]) があります。 この組み込みポリシーを使用して、これらの設定を監視します。
 
 ポリシーの展開後にモバイル デバイスがポリシーを取得できるようになるまでの時間については、[デバイス プロファイルのトラブルシューティング](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned)に関するページを参照してください。
 

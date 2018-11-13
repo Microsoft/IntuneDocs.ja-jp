@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c9a413e0aaf13b2dab7b211a568fbd15ce43df3a
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
+ms.openlocfilehash: 47917943188b2b3d0448845b1e356d181ec8f3af
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187786"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410839"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune のサポートを受ける方法
 
@@ -36,7 +36,7 @@ Microsoft サポートは、Microsoft Intune に世界的な技術、購入前�
 IT 管理者は、**[ヘルプとサポート]** オプションを使用して、Azure portal から Intune 用のオンライン サポート チケットを提出することができます。 サポート チケットを作成するには、ご利用のアカウントを次のいずれかの [Azure Active Directory での管理者ロール](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)に割り当てる必要があります。 
 
 - Intune 管理者 
-- 全体管理者 
+- グローバル管理者 
 - サービス管理者  
 
 
@@ -96,6 +96,64 @@ Azure portal 内からサポート要求を表示できます。 これを実行
 1. Intune 管理者資格情報を使用して Azure (<https://portal.azure.com>) にサインインして、<strong>[?]</strong> を選択します。 アイコンを選択し、<strong>[ヘルプとサポート]</strong> を選択して、[Azure のヘルプとサポート](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)のページに移動します。
 
 2. **ヘルプとサポート**のページでは、**最近のサポート要求**の一覧を表示し、さらにそれらを選択して詳細を確認することができます。
+
+
+## <a name="new-help-and-support-experience"></a>新しいヘルプとサポート エクスペリエンス 
+*次の情報は、デバイスの管理ポータルを使用するユーザーが新しいヘルプとサポート エクスペリエンスのロールアウトに参加するときにのみ適用されます。このロールアウトの参加者は、利用可能な Intune テナントからランダムに選択されます。*  
+
+Intune のヘルプとサポートの更新プログラムは [Microsoft 365 デバイスの管理ポータル](http://devicemanagement.microsoft.com)の新しいエクスペリエンスですが、すべてのテナントではなく一部のテナントが利用できます。 この新しいエクスペリエンスは [Microsoft 365 管理センター](https://portal.office.com/AdminPortal/Home)で見られるエクスペリエンスと類似しており、デバイスの管理コンソールの一部の場所からアクセスされる前のヘルプとサポート エクスペリエンスに取って代わります。  
+
+デバイスの管理ポータルでは、**[すべてのサービス]**、**[デバイス管理]** の順に選択したときに表示される **[トラブルシューティング]** ブレード以外のブレードから **[ヘルプとサポート]** を選択したとき、ユーザーは新しいエクスペリエンスにアクセスすることになります。 ヘルプとサポートに**トラブルシューティング**など、他の場所からアクセスするか、コンソール バナーの右上の **?** オプションを使用するか、 サービスの左ウィンドウの一覧から **[ヘルプとサポート]** を選択する場合、元のエクスペリエンスにアクセスすることになります。  
+
+新しいエクスペリエンスでは、次の画像のように **[ヘルプが必要ですか?]** ビューにアクセスできます。  
+![デバイス管理ダッシュボードと [ヘルプが必要ですか?] ページ](./media/get-support/help-support-dashboard.png)
+
+このビューでは、以下の操作を行うことができます。
+
+1. ヘルプが必要な特定の問題について[詳細を指定する](#specify-details-about-an-issue)  
+2. 指定した詳細に基づき、[状況依存のヘルプ](#view-context-sensitive-help)と関連ソリューションを表示する  
+3. 電子メールや電話を利用して[サポートを受ける](#get-support)  
+4. この新しいワークフローを利用して前に[サポート ケース](#view-support-cases)を登録している場合、それを表示する  
+
+### <a name="specify-details-about-an-issue"></a>問題に関する詳細を指定する
+新しいエクスペリエンスでサポートされている場所から [ヘルプとサポート] を開くと、**[ヘルプが必要ですか?]** ページが  開きます。 このページで、問題の詳細を指定できます。 詳細を入力すると、使用したキーワードに基づき、よくある問い合わせがコンソールから提示されます。 提案を選択するか、自分で問題を説明できます。 自分で説明を入力する場合、**[ヘルプを表示]** を選択して送信します。 問い合わせを送信すると、問題の解決に役立つ可能性がある状況依存情報がコンソールから返されます。
+
+次は、送信することがある問い合わせの例です。
+  
+- *iOS デバイスを復元できません*  
+- *条件付きアクセス ポリシーを作成できません*  
+
+![[ヘルプが必要ですか?] ページで問題を指定する](./media/get-support/describe-the-issue.png)
+
+
+### <a name="view-context-sensitive-help"></a>状況依存のヘルプを表示する
+提案を選択するか、独自の問い合わせを送信すると、**[ソリューションの表示]** の下に状況依存の結果が表示されます。 これらの結果には、Intune 固有のセルフヘルプ ガイダンスと、クエリ条件に基づく Web 検索から返された追加の結果の両方が含まれます。  
+![結果の表示](./media/get-support/view-results.png)
+
+### <a name="get-support"></a>サポートを受ける  
+セルフヘルプまたは Web ベースのガイダンスでは問題が解決されない場合、コンソールを使用し、電子メールまたは電話でサポートを受けることができます。  
+**[ヘルプが必要ですか?]** ページで、使用するオプションを選択します。  
+
+- 電子メールで依頼する場合、自分の電子メール アドレスを入力してください。任意で、提出に添付ファイルを追加できます。 **[送信]** を選択し、依頼を登録します。  
+
+  ![電子メールによる依頼](./media/get-support/email-support.png)
+  
+- 電話で依頼する場合、自分の電話番号を入力してください。 任意で、自分の電子メール アドレスを含めたり、提出に添付ファイルを追加したりできます。 [電話で連絡] を選択し、依頼を提出します。  
+
+   ![電話で依頼](./media/get-support/phone-support.png)
+
+### <a name="view-support-cases"></a>サポート ケースを表示する
+[履歴] ボタンを選択すると、作成したサポート インシデントが表示されます。  
+
+![サポート ケースを表示する](./media/get-support/view-support-tickets.png)
+
+- 新しいワークフローを使用して登録したサポート ケースだけがこのワークフロー内から表示されます。 サポート ケースを表示するには、新しいエクスペリエンスに含まれるデバイスの管理コンソールの [ヘルプとサポート] ビューを使用します。 これらのケースには 8 桁の数字が与えられます。 これらのケースは Microsoft 365 管理センターからも表示できます。  
+
+- 新しいヘルプとサポート エクスペリエンスにアカウントを追加する前に登録したケースが変更されることはありません。 そのようなケースを表示するには、新しいエクスペリエンス ロールアウトに含まれない [ヘルプとサポート] ビューを使用する必要があります。 これらのケースには **117** または **118** で始まる 15 桁の数字が与えられます。  新しいエクスペリエンスに追加される前に登録したサポート ケースを表示するには、Azure portal を使用します。 これを実行するには、次のようにします。
+
+    1. Intune 管理者資格情報を使用して Azure (<https://portal.azure.com>) にサインインして、*[?]* を選択します。 アイコンを選択し、*[ヘルプとサポート]* を選択して、[Azure のヘルプとサポート](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)のページに移動します。
+
+    2. **ヘルプとサポート**のページでは、**最近のサポート要求**の一覧を表示し、さらにそれらを選択して詳細を確認することができます。
 
 ## <a name="additional-resources"></a>その他のリソース
 - [Microsoft Intune のサポートの電話番号](phone-support-contact.md)

@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d013ad2aefbfee5eea8f240277b0f84c2c6bf05a
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 05dfd1e756a7c05d29116cd9077182225f3b9fa5
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312951"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679306"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Microsoft Intune でのデバイス プロファイルの一般的な問題と解決策
 
@@ -98,7 +98,7 @@ Intune は Apple 構成ファイルのペイロードまたはカスタム Open 
     - **Windows Phone 8.1 デバイス**: 次の設定が削除されます。  
         - モバイル デバイスのロックを解除するパスワードを要求する
         - 単純なパスワードを許可する
-        - パスワードの最小文字数
+        - 最小のパスワードの長さ
         - 必要なパスワードの種類
         - パスワードの有効期限 (日)
         - パスワードの履歴を記憶する
@@ -130,9 +130,9 @@ Intune は Apple 構成ファイルのペイロードまたはカスタム Open 
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>デバイス制限プロファイルを変更しましたが、変更内容が適用されていません
 Windows Phone デバイスから、MDM または EAS を使用して設定されたセキュリティ ポリシーのセキュリティを一度設定した後に緩くすることはできません。 たとえば、 **パスワードの最小文字数** を 8 に設定し、次に 4 に減らしてみます。 より制限の厳しいプロファイルが、デバイスに既に適用されています。
 
-プロファイルを安全度の低い値に変更する場合、デバイスのプラットフォームによっては、セキュリティ ポリシーをリセットします。 たとえば、Windows で、デスクトップを右からスワイプして、**[設定]** > **[コントロール パネル]** の順にクリックします。 **[ユーザー アカウント]** アプレットを選択します。
+プロファイルを安全度の低い値に変更する場合、セキュリティ ポリシーをリセットします。 たとえば、Windows 8.1 で、デスクトップを右からスワイプして、**[設定]**、**[コントロール パネル]** の順にクリックします。 **[ユーザー アカウント]** アプレットを選択します。 左側のナビゲーション メニューの下部に、**[セキュリティ ポリシーのリセット]** リンクがあります。 これを選択し、**[ポリシーのリセット]** を選択します。
 
-左側のナビゲーション メニューの下部に、**[セキュリティ ポリシーのリセット]** リンクがあります。 これを選択し、**[ポリシーのリセット]** を選択します。 Android、Windows Phone 8.1 以降、iOS などのその他の MDM デバイスでは、制限の緩いプロファイルを適用するにはいったんデバイスを削除して、サービスに再登録しなければならない場合があります。
+Android、Windows Phone 8.1 以降、iOS、Windows 10 などのその他の MDM デバイスでは、制限の緩いプロファイルを適用するにはいったんデバイスを削除して、サービスに再登録しなければならない場合があります。
 
 ## <a name="next-steps"></a>次の手順
 さらに支援が必要ですか。 「[Microsoft Intune のサポートを受ける方法](get-support.md)」を参照してください。

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 10/24/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 89264dbd2024b976d7c57278b188223679b33836
-ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
+ms.openlocfilehash: d7fd8c7f6f2c3dd5e6e8af323ccbb41a1ab779df
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49169568"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025238"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -40,7 +40,133 @@ ms.locfileid: "49169568"
 ### Monitor and troubleshoot
 ### Role-based access control
 
--->   
+-->     
+## <a name="week-of-october-29-2018"></a>2018 年 10 月 29 日の週
+
+
+### <a name="app-management"></a>アプリ管理
+
+#### <a name="require-non-biometric-pin-after-a-specified-timeout----1506985---"></a>指定したタイムアウト後に生体認証以外の PIN を要求する <!-- 1506985 -->
+管理者指定のタイムアウト後に生体認証以外の PIN を要求することにより、Intune では、企業データ アクセス用の生体認証 ID の使用を制限することで、モバイル アプリケーション管理 (MAM) が有効になっているアプリのセキュリティが強化されます。 この設定は、Touch ID (iOS)、Face ID (iOS)、Android バイオメトリック、またはその他の将来の生体認証方法に依存して APP/MAM が有効なアプリケーションにアクセスするユーザーに影響します。 これらの設定により、Intune 管理者は、ユーザー アクセスをいっそうきめ細かく制御し、複数のフィンガープリントまたは他の生体認証アクセス方法を使うデバイスによって不適切なユーザーに会社のデータが公開されるのを防ぐことができます。 Azure Portal で **Microsoft Intune** を開きます。 **[クライアント アプリ]** > **[アプリ保護ポリシー]** > **[ポリシーの追加]** > **[設定]** の順に選択します。 特定の設定の **[アクセス]** セクションを探します。 アクセスの設定については、「[iOS の設定](app-protection-policy-settings-ios.md#access-settings)」および「[Android の設定](app-protection-policy-settings-android.md#access-settings)」をご覧ください。
+
+#### <a name="intune-app-data-transfer-settings-on-ios-mdm-enrolled-devices----2244713---"></a>iOS MDM に登録されたデバイスに対する Intune APP データ転送設定 <!-- 2244713 -->
+登録されたユーザーの ID (ユーザー プリンシパル名 (UPN) とも呼ばれます) を指定することにより、iOS MDM に登録されたデバイスに対する Intune APP データ転送設定の制御を区別することができます。 IntuneMAMUPN を使用しない管理者に、動作の変更は表示されなくなります。 この機能が使用できるようになると、登録されたデバイス上でのデータ転送動作を制御するために IntuneMAMUPN を使用する管理者は、新しい設定を確認し、必要に応じて、自分の APP 設定を更新する必要があります。
+
+#### <a name="windows-10-win32-apps----2617325---"></a>Windows 10 Win32 アプリ <!-- 2617325 -->
+デバイスのすべてのユーザー用にアプリをインストールするのではなく、個別のユーザーに対するユーザー コンテキストにインストールされるように、Win32 アプリを構成できます。
+
+#### <a name="windows-win32-apps-and-powershell-scripts----2617330---"></a>Windows Win32 アプリと PowerShell スクリプト <!-- 2617330 -->
+エンド ユーザーは、Win32 アプリをインストールしたり、PowerShell スクリプトを実行したりするために、デバイスにログインする必要がなくなります。 
+
+#### <a name="troubleshooting-client-app-installation----1363711---"></a>クライアント アプリのインストールのトラブルシューティング <!-- 1363711 -->
+**[トラブルシューティング]** ブレードの **[アプリのインストール]** 列を調べることで、クライアント アプリのインストールの成功をトラブルシューティングできます。 **[トラブルシューティング]** ブレードを表示するには、Intune ポータルで **[ヘルプとサポート]** の **[トラブルシューティング]** を選択します。
+
+### <a name="device-configuration"></a>デバイス構成
+
+#### <a name="network-access-control-support-on-ios-vpn-clients----1333693-wnready---"></a>iOS VPN クライアントでのネットワーク アクセス制御のサポート <!-- 1333693 wnready -->
+この更新では、Cisco AnyConnect、F5 Access、Citrix SSO for iOS 用の VPN 構成プロファイルを作成するときに、ネットワーク アクセス制御 (NAC) を有効にするための新しい設定があります。 この設定では、デバイスの NAC ID を VPN プロファイルに含めることができます。 現時点では、この新しい NAC ID をサポートする VPN クライアントまたは NAC パートナー ソリューションはありませんが、サポートされるようになったら[サポートのブログ投稿](ttps://aka.ms/iOS12_and_vpn)でお知らせします。
+
+NAC を使用するには、以下のことが必要です。
+1. デバイス ID を VPN プロファイルに含めることを Intune に許可します
+2. NAC プロバイダーから直接提供されるガイダンスを使用して、NAC プロバイダーのソフトウェア/ファームウェアを更新します
+
+iOS VPN プロファイルでのこの設定については、「[Microsoft Intune で iOS デバイスに対する VPN 設定を構成する](vpn-settings-ios.md)」をご覧ください。 ネットワーク アクセス制御について詳しくは、「[ネットワーク アクセス制御 (NAC) と Intune の統合](network-access-control-integrate.md)」をご覧ください。 
+
+適用対象: iOS
+
+#### <a name="remove-an-email-profile-from-a-device-even-when-theres-only-one-email-profile----1818139---"></a>電子メール プロファイルが 1 つしかないときでも、デバイスから電子メール プロファイルを削除する <!-- 1818139 -->
+以前は、電子メール プロファイルが 1 つしかない*場合*、デバイスからその電子メール プロファイルを削除することはできませんでした。 今回の更新では、この動作が変更されました。 デバイス上に 1 つしかない電子メール プロファイルでも削除できるようになりました。 詳細については、「[Microsoft Intune で電子メールの設定を構成する方法](email-settings-configure.md)」をご覧ください。
+
+#### <a name="powershell-scripts-and-aad----2309469---"></a>PowerShell スクリプトと AAD <!-- 2309469 -->
+Intune 内の PowerShell スクリプトは、AAD デバイスのセキュリティ グループを対象にすることができます。
+
+#### <a name="new-required-password-type-default-setting-for-android-android-enterprise---2649963---"></a>Android および Android エンタープライズでの [必要なパスワードの種類] の新しい既定値の設定 <!-- 2649963 -->
+新しいコンプライアンス ポリシーを作成すると (**[Intune]** > **[デバイスのポリシー準拠]** > **[ポリシー]** > **[ポリシーの作成]** > **[Android]**、または [プラットフォーム] > [システム セキュリティ] の **[Android エンタープライズ]**)、**[必要なパスワードの種類]** の既定値が変更されます。
+
+現在の既定値: デバイスの既定値、新しい既定値: 最小数の数字
+
+適用対象: Android、Android エンタープライズ
+
+これらの設定については、[Android](compliance-policy-create-android.md) および [Android エンタープライズ](compliance-policy-create-android-for-work.md)のページをご覧ください。
+
+#### <a name="use-a-pre-shared-key-in-a-windows-10-wi-fi-profile----2662938---"></a>Windows 10 Wi-Fi プロファイル内で事前共有キーを使用する <!-- 2662938 -->
+この更新では、事前共有キー (PSK) を WPA/WPA2-パーソナル セキュリティ プロトコルと一緒に使用することで、Windows 10 向け Wi-Fi 構成プロファイルを認証できるようになります。 また、2018 年 10 月更新の Windows 10 上のデバイスに対して従量制課金接続のコストの構成を指定することもできます。
+
+現時点では、Wi-Fi プロファイルをインポートするか、またはカスタム プロファイルを作成して事前共有キーを使用する必要があります。 [Windows 10 向けの Wi-Fi 設定](wi-fi-settings-windows.md)に関するページに現在の設定が一覧されています。 
+
+#### <a name="remove-pkcs-and-scep-certificates-from-your-devices----3218390---"></a>デバイスから PKCS 証明書および SCEP 証明書を削除する <!-- 3218390 -->
+一部のシナリオでは、グループからポリシーを削除したり、構成またはコンプライアンスの展開を削除したり、既存の SCEP プロファイルまたは PKCS プロファイルを管理者が更新したりした場合でも、PKCS 証明書および SCEP 証明書がデバイス上に残りました。 今回の更新ではこの動作が変更されます。 PKCS 証明書および SCEP 証明書がデバイスから削除されるシナリオと、証明書がデバイス上に残るシナリオが存在します。 各シナリオについては、「[Microsoft Intune で SCEP 証明書と PKCS 証明書を削除する](remove-certificates.md)」をご覧ください。
+
+#### <a name="use-gatekeeper-on-macos-devices-for-compliance----2504381---"></a>コンプライアンスのために MacOS デバイスでゲートキーパーを使用する <!-- 2504381 -->
+この更新には、デバイスのコンプライアンスを評価するための macOS ゲートキーパーが含まれています。 ゲートキーパーの正しい設定については、「[Intune で macOS デバイス用のデバイス コンプライアンス ポリシーを追加する](compliance-policy-create-mac-os.md)」をご覧ください。
+
+
+### <a name="device-enrollment"></a>デバイスの登録
+
+#### <a name="enrollment-abandonment-report----1382924---"></a>登録の破棄に関するレポート <!-- 1382924 -->
+破棄された登録の詳細を示す新しいレポートを使用できます。**[デバイスの登録]** > **[モニター]** の順に移動します。 詳しくは、「[ポータル サイトの破棄レポート](enrollment-report-company-portal-abandon.md)」をご覧ください。
+
+#### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522---"></a>Autopilot プロファイルを [すべてのデバイス] 仮想グループに割り当てる <!--2715522 -->
+Autopilot プロファイルを [すべてのデバイス] 仮想グループに割り当てられるようになります。 これを行うには、**[デバイスの登録]** > **[Windows の登録]** > **[Deployment Profiles]\(展開プロファイル\)** の順に選択し、プロファイルを選択し、**[割り当て]**、**[割り当て先]** の順に進み、**[すべてのデバイス]** を選択します。 Autopilot プロファイルについて詳しくは、「[Windows Autopilot を使用して Windows デバイスを登録する](enrollment-autopilot.md)」をご覧ください。
+
+#### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>新しい Azure Active Directory terms of use 機能 <!-- 2870393 -->
+Azure Active Directory では、既存の Intune の使用条件の代わりに使用できる terms of use 機能が用意されます。 Azure AD terms of use 機能では、どの使用条件をどのタイミングで表示するかについての柔軟性が高くなり、ローカライズのサポートが強化され、使用条件の表示方法をより細かく制御でき、レポート機能が改善されています。 Azure AD terms of use 機能を使用するには、Enterprise Mobility + Security E3 スイートにも含まれている Azure Active Directory Premium P1 が必要です。 詳しくは、「[ユーザー アクセスに関する会社の使用条件を管理する](terms-and-conditions-create.md)」をご覧ください。
+
+### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview----1048100--"></a>ハイブリッド Azure AD 参加済みデバイスに対する Autopilot のサポート (プレビュー) <!-- 1048100-->
+Autopilot を使用してハイブリッド Azure AD 参加済みデバイスを設定できるようになります。 ハイブリッド Autopilot 機能を使用するには、デバイスを組織のネットワークに参加させる必要があります。 詳しくは、「[Intune と Windows Autopilot を使用してハイブリッド Azure AD 参加済みデバイスをデプロイする](windows-autopilot-hybrid.md)」をご覧ください。
+この機能は、今後数日にわたってユーザー ベース全体にロールアウトされます。 そのため、自分のアカウントにロールアウトされるまで、以下の手順を実行できない可能性があります。
+
+### <a name="android-device-owner-mode-support---3188762--"></a>Android デバイス所有者モードのサポート <!--3188762-->
+Samsung Knox Mobile Enrollment について、Android デバイス所有者管理モードへのデバイスの登録を Intune がサポートするようになりました。 WiFi または移動体通信ネットワークのユーザーは、初めてデバイスをオンにしたときに、ほんの数タップで登録できます。 詳しくは、「[Samsung の Knox Mobile Enrollment を使用して Android デバイスを自動的に登録する](android-samsung-knox-mobile-enroll.md)」をご覧ください。
+
+### <a name="device-management"></a>デバイス管理
+
+### <a name="group-windows-autopilot-enrolled-devices-by-correlator-id----2075110---"></a>Windows Autopilot に登録されたデバイスを correlator ID によってグループ化する <!-- 2075110 -->
+Configuration Manager で [既存デバイス向け Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) を使用することによって登録するとき、correlator ID による Windows デバイスのグループ化が Intune によってサポートされます。 correlator ID は、Autopilot 構成ファイルのパラメーターです。 Intune では [Azure AD デバイス属性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) が等しい "OfflineAutopilotprofile-<correlator ID>" に自動的に設定されます。 これにより、オフライン Autopilot 登録用の enrollmentprofileName 属性を介して、correlator ID に基づく任意の Azure AD 動的グループを作成することができます。 詳しくは、「[既存のデバイス向けの Windows Autopilot](enrollment-autopilot.md#windows-autopilot-for-existing-devices)」をご覧ください。
+
+### <a name="intune-app-protection-policies----2984657---"></a>Intune アプリ保護ポリシー <!-- 2984657 -->
+Intune アプリ保護ポリシーを使用すると、Microsoft Outlook や Microsoft Word など、Intune で保護されているアプリに対するさまざまなデータ保護設定を構成できます。 [iOS](app-protection-policy-settings-ios.md) と [Android](app-protection-policy-settings-android.md) 両方でのこれらの設定のルック アンド フィールが、個々の設定を見つけやすいように変更されました。 ポリシー設定にはカテゴリが 3 つあります。
+- **データ再配置** - このグループには、切り取り、コピー、貼り付け、名前を付けて保存の制限など、データ損失防止 (DLP) コントロールが含まれます。 これらの設定によって、アプリでユーザーがデータを操作する方法が決定されます。
+- **アクセス要件** - このグループには、エンド ユーザーが仕事でアプリにアクセスする方法を決定するアプリ別の PIN オプションが含まれます。  
+- **条件付き起動** - このグループには、最小 OS 設定、脱獄またはルート化されたデバイスの検出、オフライン猶予期間などの設定が含まれます。  
+  
+設定の機能は変更されていませんが、ポリシー作成フローで作業するときに、設定を見つけやすくなります。 
+
+### <a name="intune-apps"></a>Intune アプリ
+
+#### <a name="intune-will-support-a-maximum-package-size-of-8-gb-for-lob-apps----1727158---"></a>Intune でサポートされる LOB アプリの最大パッケージ サイズが 8 GB になる <!-- 1727158 -->
+Intune では、基幹業務 (LOB) アプリの最大パッケージ サイズが 8 GB に増加します。 詳しくは、「[Microsoft Intune にアプリを追加する](apps-add.md)」をご覧ください。
+
+#### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>ポータル サイト アプリ用のカスタム ブランド イメージを追加する <!-- 1916266 -->
+Microsoft Intune 管理者は、iOS ポータル サイト アプリ内のユーザーのプロファイル ページに背景イメージとして表示されるカスタム ブランド イメージをアップロードできるようになります。 ポータル サイト アプリの構成方法の詳細については、「[Microsoft Intune ポータル サイト アプリを構成する方法](company-portal-app.md)」を参照してください。
+
+#### <a name="intune-will-maintain-the-office-localized-language-when-updating-office-on-end-users-machines----2971030---"></a>エンドユーザーのコンピューター上で Office を更新するとき、Office のローカライズされた言語は Intune によって維持される <!-- 2971030 -->
+エンドユーザーのコンピューターに Office が Intune によってインストールされる場合、エンド ユーザーには前の .MSI Office インストールで使用していたのと同じ言語パックが自動的に提供されます。 詳しくは、「[Microsoft Intune で Windows 10 デバイスに Office 365 アプリを割り当てる](apps-add-office365.md)」をご覧ください。
+
+### <a name="monitor-and-troubleshoot"></a>監視とトラブルシューティング
+
+#### <a name="new-intune-support-experience-in-the-microsoft-365-device-management-portal----3076965---"></a>Microsoft 365 デバイス管理ポータルでの新しい Intune サポート エクスペリエンス <!-- 3076965 -->
+[Microsoft 365 デバイス管理ポータル]( http://devicemanagement.microsoft.com)での Intune の新しいヘルプとサポート エクスペリエンスがロールアウトされています。 新しいエクスペリエンスでは、自分の言葉で問題を説明し、トラブルシューティングの分析情報と Web ベースの修復コンテンツを受け取ることができます。 これらの解決策は、ユーザーの照会により、ルール ベースの機械学習アルゴリズムを使用して提供されます。  
+
+問題固有のガイダンスに加えて、新しいケース作成ワークフローを使用して、メールまたは電話でサポート ケースを開くこともできます。  
+
+ロールアウトの一部であるお客様の場合、ヘルプとサポートを開いたコンソールの領域に基づいて事前選択されているオプションの静的セットである現在のヘルプとサポート エクスペリエンスが、この新しいエクスペリエンスに置き換えられます。  
+
+*この新しいヘルプとサポート エクスペリエンスは、全部ではなく一部のテナントにロールアウトされており、デバイス管理ポータルで使用できます。この新しいエクスペリエンスの参加者は、利用可能な Intune テナントからランダムに選択されます。ロールアウトが拡張されると、新しいテナントが追加されます。*  
+
+詳しくは、「Microsoft Intune のサポートを受ける方法」の「[新しいヘルプとサポート エクスペリエンス](get-support.md#new-help-and-support-experience)」をご覧ください。  
+
+### <a name="powershell-module-for-intune--preview-available----wnready-951068---"></a>Intune 用の PowerShell モジュール – プレビュー版<!-- wnready 951068 -->
+Microsoft Graph を通じて Intune API のサポートを提供する新しい PowerShell モジュールのプレビュー版が、[GitHub]( https://aka.ms/intunepowershell) で利用可能になりました。 このモジュールの使用方法について詳しくは、その場所にある README ファイルをご覧ください。 
+
+
+## <a name="week-of-october-15-2018"></a>2018 年 10 月 15 日の週
+
+### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device-----2637704----"></a>iOS デバイス上でフィンガープリントまたは Face ID を変更した場合の PIN プロンプト <!-- 2637704  -->
+iOS デバイス上での生体認証の変更後、ユーザーに PIN の入力が求められるようになりました。 これには、登録済みの指紋や Face ID の変更が含まれます。 プロンプトのタイミングは、*[アクセス要件を再確認するまでの時間 (分)]* の構成によって異なります。  PIN が設定されていない場合は、ユーザーに設定を求められます。 
+ 
+この機能は iOS でのみ使用可能で、iOS 向け Intune App SDK のバージョン 9.0.1 以降を統合するアプリケーションの参加が必要です。 SDK の統合は、対象のアプリケーション上で動作を適用するために必要です。 この統合は、ローリング方式で行われ、特定のアプリケーション チームに依存します。 参加するアプリケーションには、WXP、Outlook、Managed Browser、Yammer などが含まれます。
+
 
 ## <a name="week-of-october-1-2018"></a>2018 年 10 月 1 日の週
 
@@ -238,7 +364,7 @@ Intune Azure portal 内の Windows 10 用の Enterprise Wi-Fi プロファイル
 #### <a name="control-s-mode-on-windows-10-and-later-devices---public-preview----1958649---"></a>Windows 10 以降のデバイスで S モードを制御する - パブリック プレビュー <!-- 1958649 -->
 この機能更新プログラムでは、Windows 10 デバイスの S モードを解除するデバイス構成プロファイルを作成したり、ユーザーがデバイスの S モードを解除することを禁止したりできます。 この機能は Intune の **[デバイス構成]** > **[プロファイル]** >  **[Windows 10 以降]** > **[Edition upgrade and mode switch]\(エディション アップグレードとモード切替\)** にあります。
 S モードの詳細は「[Windows 10 (S モード) について](https://www.microsoft.com/windows/s-mode)」でご覧いただけます。
-適用対象: 一番新しい [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) ビルド (プレビュー段階)。
+適用対象: 一番新しい [Windows Insider](https://docs.microsoft.com/windows-insider/at-work-pro/) ビルド (プレビュー段階)。
 
 
 #### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>構成プロファイルに自動的に追加される Windows Defender ATP 構成パッケージ <!-- 2144658 -->
@@ -247,7 +373,7 @@ Windows 10 以降に適用されます。
 
 #### <a name="require-users-to-connect-during-device-setup---2311457--"></a>デバイスのセットアップ中に接続するためのユーザーが必要 <!--2311457-->
 Windows 10 のセットアップ中にネットワーク ページから進む前に、デバイスがネットワークに接続することを要求するように、デバイス プロファイルを設定できるようになりました。 この機能はプレビュー中ですが、Windows Insider ビルド 1809 以降ではこの設定を使用する必要があります。
-適用対象: 一番新しい [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) ビルド (プレビュー段階)。
+適用対象: 一番新しい [Windows Insider](https://docs.microsoft.com/windows-insider/at-work-pro/) ビルド (プレビュー段階)。
 
 
 #### <a name="restricts-apps-and-block-access-to-company-resources-on-ios-and-android-enterprise-devices----2451462---"></a>iOS デバイスと Android エンタープライズ デバイスでアプリを制限し、会社のリソースへのアクセスをブロックする <!-- 2451462 -->
@@ -280,7 +406,7 @@ DEP 登録中、セットアップ アシスタントの代わりに、ポータ
 
 #### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>Autopilot デバイスにユーザーとわかりやすい名前を割り当てる <!--1346521 -->
 [ユーザーを 1 つの Autopilot デバイスに割り当てる](enrollment-autopilot.md)ことができるようになりました。 管理者はまた、AutoPilot でデバイスを設定するユーザーにとってわかりやすい名前を与えることができます。
-適用対象: 一番新しい [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) ビルド (プレビュー段階)。
+適用対象: 一番新しい [Windows Insider](https://docs.microsoft.com/windows-insider/at-work-pro/) ビルド (プレビュー段階)。
 
 #### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>VPP デバイス ライセンスを使用して DEP 登録時にポータル サイトを事前プロビジョニングする <!-- 1608345 -->
 Volume Purchase Program (VPP) デバイス ライセンスを使用して、Device Enrollment Program (DEP) 登録時にポータル サイトを事前プロビジョニングすることができます。 そのためには、[登録プロファイルを作成または編集する](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)ときに、ポータル サイトをインストールするために使用する VPP トークンを指定します。 トークンの期限が切れていないことと、ポータル サイト アプリの十分なライセンスがあることを確認してください。 トークンの期限が切れているか、ライセンスが不足している場合、Intune は代わりに App Store ポータル サイトをプッシュします (この場合、Apple ID の入力が求められます)。
@@ -292,11 +418,11 @@ DEP 登録時にポータル サイトの事前プロビジョニングに Volum
 Intune の[モバイル デバイス管理](windows-enroll.md)で [Windows 個人デバイスの登録を禁止](enrollment-restrictions-set.md#set-device-type-restrictions)できます。 [Intune PC エージェント](manage-windows-pcs-with-microsoft-intune.md)で登録されているデバイスはこの機能でブロックできません。 この機能は次の数週間でロールアウトされます。そのため、ユーザー インターフェイスにはすぐに表示されないことがあります。
 
 #### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>Autopilot プロファイルにコンピューター名パターンを指定する <!--1849855-->
-Autopilot の登録時に、生成する[コンピューター名テンプレートを指定](enrollment-autopilot.md#create-an-autopilot-deployment-profile)したり、[コンピューター名](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)を設定したりできます。 適用対象: 一番新しい [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) ビルド (プレビュー段階)。
+Autopilot の登録時に、生成する[コンピューター名テンプレートを指定](enrollment-autopilot.md#create-an-autopilot-deployment-profile)したり、[コンピューター名](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)を設定したりできます。 適用対象: 一番新しい [Windows Insider](https://docs.microsoft.com/windows-insider/at-work-pro/) ビルド (プレビュー段階)。
 
 
 #### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>Windows Autopilot プロファイルの場合、会社のサインイン ページとドメイン エラー ページでアカウント変更オプションを非表示にする <!--1901669 -->
-会社のサインイン ページとドメイン エラー ページでアカウント変更オプションを管理者が非表示にするための[新しい Windows Autopilot プロファイル オプション](enrollment-autopilot.md#create-an-autopilot-deployment-profile)があります。 これらのオプションを非表示にするには、Azure Active Directory で会社のブランドを構成する必要があります。 適用対象: 一番新しい [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) ビルド (プレビュー段階)。
+会社のサインイン ページとドメイン エラー ページでアカウント変更オプションを管理者が非表示にするための[新しい Windows Autopilot プロファイル オプション](enrollment-autopilot.md#create-an-autopilot-deployment-profile)があります。 これらのオプションを非表示にするには、Azure Active Directory で会社のブランドを構成する必要があります。 適用対象: 一番新しい [Windows Insider](https://docs.microsoft.com/windows-insider/at-work-pro/) ビルド (プレビュー段階)。
 
 
 
@@ -327,7 +453,7 @@ Graph API との一貫性を保つために、Intune のユーザー インタ�
 - 大規模なアプリケーション カタログのパフォーマンスの向上
 - すべてのユーザーに対するアクセシビリティの向上  
 
-[Intune ポータル サイト Web サイトのドキュメント](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website)は、これらの変更を反映するように更新されています。 アプリの拡張機能の例を表示するには、「[Intune とエンド ユーザー アプリの UI の更新](whats-new-app-ui.md)」を参照してください。  
+[Intune ポータル サイト Web サイトのドキュメント](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website)は、これらの変更を反映するように更新されています。 アプリの拡張機能の例を表示するには、「[Intune とエンド ユーザー アプリの UI の更新](whats-new-app-ui.md)」を参照してください。  
 
 ### <a name="monitor-and-troubleshoot"></a>監視とトラブルシューティング
 
@@ -486,7 +612,7 @@ Microsoft Intune 管理者は、ボリューム購入プログラム (VPP) で�
 ### <a name="device-configuration"></a>デバイス構成
 
 #### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963-eenotready---"></a>[職場または学校にアクセスする] 設定を用いたデバイス カテゴリの選択<!-- 1058963 eenotready --> 
-[デバイス グループ マッピング](https://docs.microsoft.com/en-us/intune/device-group-mapping)を有効にした場合、**[設定]** > **[アカウント]** > **[職場または学校にアクセスする]** の **[接続]** から登録後、または Windows 10 のユーザーはデバイス カテゴリの選択を求められるようになります。 
+[デバイス グループ マッピング](https://docs.microsoft.com/intune/device-group-mapping)を有効にした場合、**[設定]** > **[アカウント]** > **[職場または学校にアクセスする]** の **[接続]** から登録後、または Windows 10 のユーザーはデバイス カテゴリの選択を求められるようになります。 
 
 #### <a name="use-samaccountname-as-the-account-username-for-email-profiles----1500307---"></a>電子メール プロファイルのアカウント ユーザー名として sAMAccountName を使用する <!-- 1500307 -->
 Android、iOS、および Windows 10 用の電子メール プロファイルのアカウント ユーザー名として、オンプレミスの **sAMAccountName** を使うことができます。 また、Azure Active Directory (Azure AD) の `domain` または `ntdomain` 属性から、ドメインを取得できます。 または、カスタムの静的ドメインを入力します。
@@ -695,8 +821,8 @@ Intune 管理者は、アプリケーション起動要件を設定して、数�
 #### <a name="line-of-business-lob-app-support-for-macos----1473977---"></a>macOS の基幹業務 (LOB) アプリのサポート <!-- 1473977 -->
 Microsoft Intune では、Azure Portal から macOS LOB アプリをインストールできます。 GitHub で利用可能なツールを使って前処理した macOS LOB アプリを、Intune に追加できます。 Azure portal で、**[Intune]** ブレードから **[クライアント アプリ]** を選択します。 **[クライアント アプリ]** ブレードで、**[アプリ]** > **[追加]** の順に選択します。 **[アプリの追加]** ブレードで、**[基幹業務アプリ]** を選択します。 
 
-#### <a name="built-in-all-users-and-all-devices-group-for-android-for-work-afw-app-assignment----1813073---"></a>Android for Work (AFW) のアプリの割り当てに対する組み込みのすべてのユーザー グループとすべてのデバイス グループ <!-- 1813073 -->
-組み込みの**すべてのユーザー** グループと**すべてのデバイス** グループを AFW アプリの割り当てに利用することができます。 詳細については、「[Microsoft Intune でのアプリ割り当ての組み込みと除外](apps-inc-exl-assignments.md)」を参照してください。
+#### <a name="built-in-all-users-and-all-devices-group-for-android-enterprise-work-profile-app-assignment----1813073---"></a>Android エンタープライズ仕事用プロファイルのアプリの割り当て用の、組み込みのすべてのユーザー グループとすべてのデバイス グループ <!-- 1813073 -->
+Android エンタープライズ仕事用プロファイルのアプリの割り当て用に、組み込みの **[すべてのユーザー]** グループと **[すべてのデバイス]** グループを利用できます。 詳細については、「[Microsoft Intune でのアプリ割り当ての組み込みと除外](apps-inc-exl-assignments.md)」を参照してください。
 
 #### <a name="intune-will-reinstall-required-apps-that-are-uninstalled-by-users----1947010---"></a>ユーザーがアンインストールした必要なアプリは Intune によって再インストールされる <!-- 1947010 -->
 エンド ユーザーが必要なアプリをアンインストールした場合、Intune は 7 日間の再評価サイクルを待機するのではなく、24 時間以内に該当するアプリを自動的に再インストールします。
@@ -724,10 +850,10 @@ Microsoft Intune では、Azure Portal から macOS LOB アプリをインスト
 
 教育プロファイルの場合、**[プリンター]** カテゴリで新しい設定 **[プリンター]**、**[通常使うプリンター]**、**[新しいプリンターの追加]** を利用できます。
 
-#### <a name="show-caller-id-in-personal-profile---android-for-work---1098984---"></a>個人プロファイルでの発信者番号通知 - Android for Work <!--1098984 -->
+#### <a name="show-caller-id-in-personal-profile---android-enterprise-work-profile---1098984---"></a>個人プロファイルでの発信者番号通知 - Android エンタープライズ仕事用プロファイル <!--1098984 -->
 デバイス上で個人プロファイルを使用する場合、勤務先の作業連絡先からの発信者番号の詳細がエンド ユーザーに表示されない場合があります。 
 
-この更新プログラムでは、**[Android for Work]** > **[デバイスの制限]** > **[仕事用プロファイルの設定]** に、次の新しい設定が表示されます。
+今回の更新では、**[Android エンタープライズ]** > **[デバイスの制限]** > **[仕事用プロファイルの設定]** に新しい設定が表示されます。
 - 個人プロファイルに勤務先の連絡先の発信者番号を表示する
 
 有効にすると (構成されていない場合)、勤務先の連絡先の発信者番号の詳細が個人プロファイルに表示されます。 ブロックすると、勤務先の連絡先の発信者番号は個人プロファイルに表示されません。 
@@ -753,12 +879,12 @@ Credential Guard を構成すると、次の関連するテクノロジが自動
 #### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>SCEP 証明書でのカスタム サブジェクト名の使用 <!-- 2064190 -->
 SCEP 証明書プロファイルでカスタム サブジェクトの共通名 **OnPremisesSamAccountName** を使うことができます。 たとえば、`CN={OnPremisesSamAccountName})` のように使用できます。
 
-####  <a name="block-camera-and-screen-captures-on-android-for-work----1098977---"></a>Android for Work でカメラと画面キャプチャをブロックする <!-- 1098977 -->
+####  <a name="block-camera-and-screen-captures-on-android-enterprise-work-profiles----1098977---"></a>Android エンタープライズ仕事用プロファイルでカメラと画面キャプチャをブロックする <!-- 1098977 -->
 Android デバイスのデバイス制限を構成するときに、次の 2 つの新しいプロパティをブロックに利用できます。 
 - カメラ: デバイスのすべてのカメラへのアクセスを禁止します
 - 画面キャプチャ: 画面のキャプチャをブロックし、セキュリティで保護されたビデオ出力を持たないディスプレイ デバイスにコンテンツが表示されないようにします
 
-Android for Work に適用されます。
+Android エンタープライズ仕事用プロファイルに適用されます。
 
 
 ### <a name="device-enrollment"></a>デバイスの登録
@@ -824,7 +950,7 @@ macOS デバイスのポータル サイト アプリが更新され、ユーザ
 詳細については、[macOS のエラーの送信](/intune-user-help/send-errors-macos)に関するページを参照してください。
 
 #### <a name="intune-adapts-to-fluent-design-system-in-the-company-portal-app-for-windows-10----1195010-wnready---"></a>Intune が Windows 10 ポータル サイト アプリの Fluent Design System に対応 <!-- 1195010 WNready -->
-Windows 10 の Intune ポータル サイト アプリが [Fluent Design System のナビゲーション ビュー](https://docs.microsoft.com/en-us/windows/uwp/design/basics/navigation-basics)に合わせて更新されました。 アプリの側面だけでなく、すべてのトップ レベルのページに静的な縦方向リストが表示されます。 リンクをクリックすると、ページをすばやく表示したり、ページを切り替えたりできます。 これは現在作成中の更新の一部であり、今後さらにアダプティブで馴染みがあり、使いやすい Intune の機能を提供していきます。 更新された外観を確認するには、[アプリ UI の新機能](whats-new-app-ui.md)に関するページを参照してください。
+Windows 10 の Intune ポータル サイト アプリが [Fluent Design System のナビゲーション ビュー](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics)に合わせて更新されました。 アプリの側面だけでなく、すべてのトップ レベルのページに静的な縦方向リストが表示されます。 リンクをクリックすると、ページをすばやく表示したり、ページを切り替えたりできます。 これは現在作成中の更新の一部であり、今後さらにアダプティブで馴染みがあり、使いやすい Intune の機能を提供していきます。 更新された外観を確認するには、[アプリ UI の新機能](whats-new-app-ui.md)に関するページを参照してください。
 
 ## <a name="week-of-april-16-2018"></a>2018 年 4 月 16 日の週
 
@@ -833,7 +959,7 @@ Windows 10 の Intune ポータル サイト アプリが [Fluent Design System 
 iOS 用に新しい VPN プロファイルを作成するとき、**[Cisco AnyConnect]** と **[Cisco Legacy AnyConnect]** の 2 つの選択肢から選択できるようになりました。 Cisco AnyConnect プロファイルは、4.0.7x 以降のバージョンに対応しています。 既存の iOS Cisco AnyConnect VPN プロファイルは **[Cisco Legacy AnyConnect]** と表示されるようになり、現在と同じように Cisco AnyConnect 4.0.5x 以前のバージョンで引き続き動作します。
 
 > [!NOTE]
-> この変更は iOS にのみ適用されます。 Android、Android for Work、macOS プラットフォームの Cisco AnyConnect オプションは、これまでどおり 1 つだけです。
+> この変更は iOS にのみ適用されます。 Android、Android エンタープライズ仕事用プロファイル、macOS プラットフォーム向けの Cisco AnyConnect オプションは、これまでどおり 1 つだけです。
 
 #### <a name="jamf-enrolled-macos-devices-can-now-register-with-intune----2370684---"></a>Jamf 登録 macOS デバイスを Intune に登録できるようになりました <!-- 2370684 -->
 

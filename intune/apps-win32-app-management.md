@@ -1,30 +1,13 @@
 ---
-title: Microsoft Intune に Win32 アプリを追加する
-titlesuffix: ''
-description: Microsoft Intune に Win32 アプリを追加して管理する方法について説明します。
-keywords: ''
-author: Erikre
-ms.author: erikre
-manager: dougeby
-ms.date: 10/08/2018
-ms.topic: article
-ms.prod: ''
-ms.service: microsoft-intune
-ms.technology: ''
-ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
-ms.reviewer: mghadial
-ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: 9513673b68522c6838a2f2090c597343d65d7004
-ms.sourcegitcommit: b7789fd2f34528275c13a717699cf53a289ed04e
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890997"
+title: Microsoft Intune に Win32 アプリを追加する titlesuffix: description: Microsoft Intune を使用して Win32 アプリを追加、配信、および管理する方法について説明します。 このトピックでは、Win32 アプリを配信および管理する Intune の機能の概要と、Win32 アプリのトラブルシューティング情報について説明します。 keywords: author: Erikre ms.author: erikre manager: dougeby <<<<<<< HEAD ms.date: 10/23/2018 ======= ms.date: 10/19/2018
+>>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
+
+ms.reviewer: mghadial ms.suite: ems ms.custom: intune-azure
 ---
+
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune スタンドアロン - Win32 アプリの管理 (パブリック プレビュー)
 
-Intune スタンドアロンでは、Win32 アプリの管理機能が向上します。 クラウドに接続された顧客が Win32 アプリの管理用に Configuration Manager を使用することはできますが、Intune 限定の顧客の方が、Win32 基幹業務 (LOB) アプリに対してより優れた管理機能を利用できます。 このドキュメントでは、Intune Win32 アプリの管理機能とトラブルシューティング情報の概要を示します。
+Intune スタンドアロンでは、Win32 アプリの管理機能が向上します。 クラウドに接続された顧客が Win32 アプリの管理用に Configuration Manager を使用することはできますが、Intune 限定の顧客の方が、Win32 基幹業務 (LOB) アプリに対してより優れた管理機能を利用できます。 このトピックでは、Win32 アプリを管理する Intune の機能の概要と、トラブルシューティング情報について説明します。
 
 ## <a name="prerequisites-for-public-preview"></a>パブリック プレビューの前提条件
 
@@ -32,7 +15,7 @@ Intune スタンドアロンでは、Win32 アプリの管理機能が向上し�
 - Windows 10 クライアントは次の状態である必要があります 
     - Azure Active Directory (AAD) またはハイブリッド Azure Active Directory に参加している
     - Intune に登録されている (MDM 管理対象)
-- パブリック プレビューでは、Windows アプリケーションのサイズはアプリごとに 2 GB に制限されています 
+- パブリック プレビューでは、Windows アプリケーションのサイズはアプリごとに 8 GB に制限されています 
 
 > [!NOTE]
 > 現在、Windows 10 バージョン 1607 の Pro と Education の各エディションのテストを実施しており、ご意見をお待ちしています。
@@ -51,7 +34,7 @@ Intune スタンドアロンでは、Win32 アプリの管理機能が向上し�
 |    `-h`     |    ヘルプ    |
 |    `-c <setup_folder>`     |    すべてのセットアップ ファイルのセットアップ フォルダー。    |
 |   ` -s <setup_file>`     |    セットアップ ファイル (*setup.exe*、*setup.msi* など)。    |
-|    `-o <output_file>`     |    生成された *.intunewin* ファイルの出力フォルダー。    |
+|    `-o <output_folder>`     |    生成された *.intunewin* ファイルの出力フォルダー。    |
 |    `-q`       |    Quiet モード。    |
 
 ### <a name="example-commands"></a>コマンド例
@@ -109,6 +92,11 @@ Intune スタンドアロンでは、Win32 アプリの管理機能が向上し�
 3.  アプリの GUID に基づいてアプリをアンインストールする完全なアンインストール コマンド ラインを追加します。 
 
     例: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+
+    > [!NOTE]
+    > Win32 アプリは、**ユーザー** コンテキストまたは**システム** コンテキストでインストールされるように構成できます。 **ユーザー** コンテキストでは、特定のユーザーのみが参照されます。 **システム** コンテキストでは、Windows 10 デバイスのすべてのユーザーが参照されます。
+    >
+    > エンド ユーザーは、Win32 アプリをインストールするためにデバイスにログインする必要はありません。
 
 4.  完了したら **[OK]** を選択します。
 
@@ -233,7 +221,6 @@ Intune スタンドアロンでは、Win32 アプリの管理機能が向上し�
 ### <a name="troubleshooting-areas-to-consider"></a>検討すべきトラブルシューティング領域
 - ターゲットを確認して、デバイスにエージェントがインストールされていることを確認する - グループをターゲットとする Win32 アプリ、またはグループをターゲットとする PowerShell スクリプトは、セキュリティ グループのエージェントのインストール ポリシーを作成します。
 - OS バージョンを確認する – Windows 10 1607 以降である必要があります。  
-- AAD ユーザーがクライアント コンピューターにログオンしているかどうか。
 - Windows 10 SKU を確認する - Windows 10 S (S モードを有効にして実行されている Windows バージョン) では、MSI のインストールはサポートされていません。
 
 ## <a name="next-steps"></a>次の手順

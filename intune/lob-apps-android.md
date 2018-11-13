@@ -15,12 +15,12 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f01ff78ed833e8c621783363a7d6ad1405df6f14
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: a57ae54787069f85798519a3a6bc051842db6c2b
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602233"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212327"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Android の基幹業務アプリを Microsoft Intune に追加する
 
@@ -55,7 +55,6 @@ ms.locfileid: "45602233"
     - **[説明]**: アプリの説明を入力します。 説明はポータル サイトに表示されます。
     - **[発行元]**: アプリの発行元の名前を入力します。
     - **[オペレーティング システムの最小要件]**: アプリをインストールできる最小限のオペレーティング システム バージョンを一覧から選択します。 これよりも前のオペレーティング システムがアプリの割り当て先デバイスにインストールされている場合、そのアプリはインストールされません。
-    - **[アプリのバージョンを無視する]**: アプリ開発者がアプリがを自動的に更新する場合は、**[はい]** に設定します。
     - **[カテゴリ]**: 1 つまたは複数の組み込みアプリ カテゴリを選択するか、作成したカテゴリを選択します。 カテゴリを使用すれば、ユーザーはポータル サイトを参照する際にアプリを見つけやすくなります。
     - **[会社のポータルでおすすめアプリとして表示します]**: ユーザーがアプリを参照する際に、ポータル サイトのメイン ページでアプリを目立つように表示します。
     - **[情報 URL]**: 必要に応じて、このアプリに関する情報が含まれる Web サイトの URL を入力します。 この URL はポータル サイトに表示されます。

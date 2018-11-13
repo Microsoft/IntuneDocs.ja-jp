@@ -12,20 +12,26 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: aa51cbea1ab1ea5f1bfc903a17638192aca59326
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 5fa3079c994a2e0ea2d587185e12c52085133f9c
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075899"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025187"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Windows Autopilot を使用して Windows デバイスを登録する  
 Windows Autopilot を使用すると、デバイスの登録が簡単になります。 カスタマイズされたオペレーティング システム イメージのビルドおよび維持は、時間のかかるプロセスです。 また、これらのカスタム オペレーティング システム イメージを新しいデバイスに適用し、エンド ユーザーに提供する前に使用の準備を行う場合にも、時間がかかることがあります。 Microsoft Intune と Autopilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および新しいデバイスへの適用を行わなくてもデバイスをエンド ユーザーに提供することができます。 Intune を使用して Autopilot デバイスを管理する場合、デバイスの登録後にポリシー、プロファイル、アプリなどを管理することができます。 利点、シナリオ、および前提条件の概要については、「[Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)」 (Windows Autopilot の概要) を参照してください。
 
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 - [Windows の自動登録が有効である](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium サブスクリプション](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+
+## <a name="how-to-get-the-csv-for-import-in-intune"></a>Intune にインポートするための CSV を取得する方法
+
+使用方法について詳しくは、PowerShell コマンドレットの説明をご覧ください。
+
+- [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/1.3/Content/Get-WindowsAutoPilotInfo.ps1)
 
 ## <a name="add-devices"></a>デバイスを追加する
 
@@ -153,15 +159,14 @@ Autopilot Deployment プロファイルを作成したら、その展開プロ�
 - 別のポータルで行われたプロファイル割り当てを同期する
 - 別のポータルで行われたデバイス一覧への変更を表示する
 
-## <a name="redeploying-windows-autopilot"></a>Windows Autopilot を再展開する
+## <a name="windows-autopilot-for-existing-devices"></a>既存のデバイス向けの Windows Autopilot
 
-Configuration Manager で[既存のデバイス向け Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) を使用することにより登録を行う場合は、correlator ID で Windows デバイスをグループ化することができます。 correlator ID は、Autopilot 構成ファイルのパラメーターです。 [Azure AD デバイス属性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) は等しい "OfflineAutopilotprofile-<correlator ID>" に自動的に設定されます。 これにより、オフライン Autopilot 登録用の enrollmentprofileName 属性を使用して correlator ID に基づく任意の Azure AD 動的グループを作成することができます。
+Configuration Manager で[既存のデバイス向け Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) を使用することにより登録を行う場合は、correlator ID で Windows デバイスをグループ化することができます。 correlator ID は、Autopilot 構成ファイルのパラメーターです。 [Azure AD デバイス属性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) は等しい "OfflineAutopilotprofile-\<correlator ID\>" に自動的に設定されます。 これにより、enrollmentprofileName 属性を使用して correlator ID に基づく任意の Azure AD 動的グループを作成することができます。
 
-Autopilot 登録をサポートしていない古い Windows バージョンをアップグレードする場合は、オフライン Autopilot プロファイルを使用できます。 Autopilot は Windows 10 1809 またはそれ以降のクリーン インストール中に役に立ちます。 オフライン プロファイルの一部として、correlator ID を指定することができます。 
-
-警告: correlator ID は Intune 内にあらかじめリストされていないので、ユーザーは必要とする任意の correlator ID での登録を選択することができます。 ユーザーが Autopilot または Apple DEP プロファイル名と一致する correlator ID を作成した場合、デバイスは enrollmentProfileName 属性に基づいて任意の動的 Azure AD デバイス グループに追加されます。 この競合を避けるには:
-- 常に enrollmentProfileName 値 "*全体*" と照合する動的グループ ルールを作成します。
-- Autopilot または Apple DEP プロファイルには "OfflineAutopilotprofile-" で始まる名前を決して付けないでください。
+>[!WARNING] 
+> correlator ID は Intune 内にあらかじめリストされていないので、デバイスで必要な correlator ID がレポートされる場合があります。 ユーザーが Autopilot または Apple DEP プロファイル名と一致する correlator ID を作成した場合、デバイスは enrollmentProfileName 属性に基づいて任意の動的 Azure AD デバイス グループに追加されます。 この競合を避けるには:
+> - 常に enrollmentProfileName 値 "*全体*" と照合する動的グループ ルールを作成します。
+> - Autopilot または Apple DEP プロファイルには "OfflineAutopilotprofile-" で始まる名前を決して付けないでください。
 
 ## <a name="next-steps"></a>次の手順
 登録済み Windows 10 デバイス用に Windows Autopilot を構成したら、これらのデバイスを管理する方法を学習します。 詳細については、「[Microsoft Intune デバイスの管理とは](https://docs.microsoft.com/intune/device-management)」をご覧ください。
