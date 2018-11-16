@@ -16,12 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c58cc56672409d954c4bf0b2829ea23d1b0a93df
-ms.sourcegitcommit: b01c607fc666254c560f5b60bd8a0def8e48197c
+ms.openlocfilehash: 3348f5e9673de410516cb2e2b774e20a4f17b036
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50132471"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51577006"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune の新機能 (過去数か月)
 
@@ -46,7 +46,7 @@ Android エンタープライズ (旧称 Android for Work) では、グループ
 
 ### <a name="device-management"></a>デバイス管理
 
-### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>IE、Microsoft Edge、または Chrome ですべてのデバイスを CSV ファイルにエクスポートする <!-- 2258071 -->
+### <a name="export-all-devices-into-csv-files-in-ie-microsoft-edge-or-chrome----2258071---"></a>IE、Microsoft Edge、または Chrome ですべてのデバイスを CSV ファイルにエクスポートする <!-- 2258071 -->
 **[デバイス]** > **[すべてのデバイス]** で、デバイスを CSV 形式の一覧に**エクスポート**することができます。 10,000 を超えるデバイスを持つ Internet Explorer (IE) ユーザーは、デバイスを複数のファイルに正常にエクスポートできます。 各ファイルには、最大 10,000 のデバイスが含まれます。
 
 30,000 を超えるデバイスを持つユーザーは、デバイスを複数のファイルに正常にエクスポートできます。 各ファイルには、最大 30,000 のデバイスが含まれます。
@@ -296,8 +296,8 @@ Windows Defender の正常性と状態を理解することは、Windows PC の�
 - **ユーザー アクティビティの公開**: これを **[ブロック]** に設定すると、タスク スイッチャーでの共有エクスペリエンスおよび最近使われたリソースの検出が行われなくなります。
 - **ローカル アクティビティの場合のみ**: これを **[ブロック]** に設定すると、ローカル アクティビティのみに基づいて、タスク スイッチャーでの共有エクスペリエンスおよび最近使われたリソースの検出が行われなくなります。
 
-#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Microsoft Edge ブラウザーの新しい設定 <!--1469166 -->
-Microsoft Edge ブラウザーを備えたデバイスで、[2 つの新しい設定](device-restrictions-windows-10.md#edge-browser) **[Path to favorites file]\(お気に入りファイルへのパス\)** と **[Changes to Favorites]\(お気に入りへの変更\)** が利用できるようになりました。
+#### <a name="new-settings-for-the-microsoft-edge-browser---1469166---"></a>Microsoft Edge ブラウザーの新しい設定 <!--1469166 -->
+Microsoft Edge ブラウザーを備えたデバイスで、[2 つの新しい設定](device-restrictions-windows-10.md#microsoft-edge-browser) **[Path to favorites file]\(お気に入りファイルへのパス\)** と **[Changes to Favorites]\(お気に入りの変更\)** が利用できるようになりました。
 
 ### <a name="app-management"></a>アプリ管理
 

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/20/2018
+ms.date: 11/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 003bf4046a997e3633105e4dc41c93a82e16ee40
-ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
+ms.openlocfilehash: 17b99c4a089fc426ecfeea803737fa8704f3b0a6
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46505718"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212310"
 ---
 # <a name="fix-common-issues-with-your-macos-device"></a>macOS デバイスに関する一般的な問題を解決する
 
@@ -33,3 +33,6 @@ ms.locfileid: "46505718"
 - [使用している Jamf で管理しているデバイスが非準拠である](device-little-different-jamf.md)
 - [シリアル番号を見つけることができない](how-do-i-find-the-serial-number-on-my-device-macos.md)
 - [使用しているデバイスを特定するよう求められる](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
+- [macOS 仮想マシンの登録時にエラーが発生する](unable-to-get-macOS-device-managed.md)  
+- [macOS デバイスのシリアル番号が制限されているというメッセージが表示される](unable-to-get-macOS-device-managed.md)  
+- [デバイスが既に他のユーザーに割り当てられている可能性がある](unable-to-get-macOS-device-managed.md)  

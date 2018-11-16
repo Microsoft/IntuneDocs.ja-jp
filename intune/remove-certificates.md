@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d4287322fd494c97cf24feb8cc16435a4405f2af
-ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
+ms.openlocfilehash: a823ea2f04d8e3a8f1ca5a2f1364060840686501
+ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50150109"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561943"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Microsoft Intune で SCEP 証明書と PKCS 証明書を削除する
 
@@ -131,7 +131,7 @@ Microsoft Intune で SCEP 証明書と PKCS 証明書をデバイスに追加で
   - 管理者が Azure AD からユーザーまたはグループを削除する
   - 管理者が PKCS プロファイルを変更または更新する
 
-## <a name="android--android-enterprise-devices"></a>Android デバイスと Android Enterprise デバイス
+## <a name="android-knox-devices"></a>Android KNOX デバイス
 
 #### <a name="scep-certificates"></a>SCEP 証明書
 
@@ -177,6 +177,10 @@ Microsoft Intune で SCEP 証明書と PKCS 証明書をデバイスに追加で
   - 管理者が PKCS プロファイルを変更または更新する
   - コンプライアンス プロファイルがグループ割り当てから削除される
   - コンプライアンス ポリシーがグループ割り当てから削除される 
+  
+  
+> [!NOTE]
+> Android for Work デバイスは、上記のシナリオで検証されていません。 Android の従来のデバイス (Samsung 以外のすべての、仕事用プロファイル以外のデバイス) では証明書の削除が無効です。 
 
 ## <a name="macos-certificates"></a>macOS 証明書
 

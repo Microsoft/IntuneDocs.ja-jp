@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 11/8/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 58a6681c22672b5aa2c8337708456b30361f741f
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 2252c81757b7745ed15ca86a4e7db310f03df19d
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236477"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298158"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Intune での Windows 10 以降のデバイス向けの Wi-Fi 設定の追加
 
@@ -26,7 +26,7 @@ ms.locfileid: "50236477"
 
 この記事では、これらの設定について説明します。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>始める前に
 
 [デバイス プロファイルを作成します](device-profile-create.md)。
 
@@ -57,6 +57,9 @@ ms.locfileid: "50236477"
   - **[WPA/WPA2 - パーソナル]**: よりセキュリティが強化されたオプションであり、Wi-Fi 接続でよく使用されます。 さらにセキュリティを強化するために、事前共有キー パスワードまたはネットワーク キーを入力することもできます。 
 
     - **[事前共有キー]** (PSK): 省略可能。 セキュリティの種類として **[WPA/WPA2 - パーソナル]** を選択した場合に表示されます。 組織のネットワークがセットアップまたは構成されるときに、パスワードまたはネットワーク キーも構成されます。 PSK の値に対して、このパスワードまたはネットワーク キーを入力します。 長さが 8 文字から 64 文字の文字列を入力します。 使用するパスワードまたはネットワーク キーが 64 文字である場合は、16 進数の文字を入力します。
+    
+      > [!NOTE]
+      > Wi-Fi プロファイルを保存するとき、入力した PSK 値はセキュリティ上の理由から表示されません。 PSK がプロファイルに保存された場合でも、事前共有キーの透かしにはまだ **[未構成]** と表示されます。 PSK を変更するには、新しいキーを入力して、プロファイルを保存します。 PSK を保存する場合に、ポリシーを編集し、PSK を空白のままにすると、既存の PSK がまだ使用されます。
 
 - **[会社のプロキシの設定]**: 組織内のプロキシ設定を使用する場合に選択します。 次のようなオプションがあります。
   - **[なし]**: プロキシ設定は構成されません。

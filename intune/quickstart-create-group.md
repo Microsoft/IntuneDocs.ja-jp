@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 723f4b4e-3090-4811-84ff-6af652abea5a
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b52265bb9b3df800c0e13450a2154e46098a933
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: e85a88b984aaa05423a35f222de9c56d7366d15a
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410822"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51511011"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>クイック スタート: ユーザーを管理するグループを作成する
 
@@ -31,7 +31,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 >[!NOTE]
 >Intune では、便利なように、最適化が組み込まれた **[すべてのユーザー]** グループと **[すべてのデバイス]** グループがコンソールで提供されています。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
 - このクイック スタートを完了するには、[ユーザーを作成する](quickstart-create-user.md)必要があります。
 
@@ -57,7 +57,9 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
 ## <a name="next-steps"></a>次の手順
 
-このクイック スタートでは、Intune を使用して、既存のユーザーに基づいてグループを作成しました。
+このクイック スタートでは、Intune を使用して、既存のユーザーに基づいてグループを作成しました。 Intune へのグループの追加について詳しくは、「[ユーザーとデバイスを整理するためのグループを追加する](groups-add.md)」をご覧ください。
+
+この一連の Intune のクイック スタートに従うには、次のクイック スタートに進んでください。
 
 > [!div class="nextstepaction"]
-> [デバイス コンプライアンス ポリシーの作成](quickstart-create-policy.md)
+> [クイック スタート: Windows 10 デバイスの自動登録を設定する](quickstart-setup-auto-enrollment.md)

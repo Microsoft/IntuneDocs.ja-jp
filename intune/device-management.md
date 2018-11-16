@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 8ae7a15f623b82cabed5314c4770c2edef902414
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 891b50b2280636c7a5df8ecc1a01bb10723122b5
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253563"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576736"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Microsoft Intune デバイスの管理とは
 
@@ -37,7 +37,7 @@ IT 管理者はデータをリスクから保護しながら、ユーザーが�
    - **[概要]** には登録済みデバイスのビジュアル スナップショットが表示されます。また、Android、iOS などのさまざまなプラットフォームを使用しているデバイスの数が表示されます。
    - **[すべてのデバイス]** には、管理する登録済みデバイスの一覧が示されます。
 
-     **エクスポート**機能を使用して、10,000 単位 (Internet Explorer) または 30,000 単位 (Edge、Chrome) ですべてのデバイスの .csv 一覧を作成します。
+     **エクスポート**機能を使用して、10,000 単位 (Internet Explorer) または 30,000 単位 (Microsoft Edge、Chrome) ですべてのデバイスの .csv 一覧を作成します。
 
      任意のデバイスを選択し、ハードウェアの詳細、インストールされているアプリ、そのコンプライアンス ポリシーの状態など、[デバイスに関する追加の詳細情報を表示](device-inventory.md)します。
 

@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b3de4d79e6121505718a75ffe64102bb1bc18347
-ms.sourcegitcommit: 244456907e3ab4a4389d32d06060606a9591cfba
+ms.openlocfilehash: 0d749d51f0ae146b68be8abb3a59a0504aea1180
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751645"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298141"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Intune での Windows 10 (以降) 用のキオスクの設定
 
@@ -77,8 +77,15 @@ Intune では、デバイスごとに 1 つのキオスク プロファイルを
   - **[Refresh browser after idle time]\(アイドル時間後にブラウザーを最新の情報に更新する\)**: キオスク ブラウザーを初期状態で再起動するまでのアイドル時間 (1 から 1,440 分) で入力します。 アイドル時間は、ユーザーが最後に操作してからの分数です。 既定では、値は空または空白となります。これは、アイドル タイムアウトがないことを意味します。
 
   - **[Allowed websites]\(許可されている Web サイト\)**: 特定の Web サイトを開けるようにするには、この設定を使用します。 つまり、デバイス上で Web サイトを制限またはブロックするには、この機能を使用します。 たとえば、`http://contoso.com*` のすべての Web サイトが開くようにすることができます。 既定では、すべての Web サイトが許可されます。
+ 
+      特定の web サイトを許可するには、許可される Web サイトが 1 行に 1 つずつ列記されているファイルをアップロードします。 ファイルを追加しない場合、すべての Web サイトが許可されます。 Intune では、* (アスタリスク) がワイルド カードとしてサポートされます。
 
-    特定の web サイトを許可するには、許可されている Web サイトの一覧が含まれる .csv ファイルをアップロードします。 .csv ファイルを追加しない場合、すべての Web サイトが許可されます。 Intune では、* (アスタリスク) がワイルド カードとしてサポートされます。
+      ファイルの例を次に示します。
+
+      `http://bing.com`  
+      `https://bing.com`  
+      `http://contoso.com/*`  
+      `https://contoso.com/*`  
 
   **[OK]** を選択して変更を保存します。
 

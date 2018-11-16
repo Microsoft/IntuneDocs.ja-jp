@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/09/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: d7fd8c7f6f2c3dd5e6e8af323ccbb41a1ab779df
-ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
+ms.openlocfilehash: 1180e085c0584f3da535947cad60c41d06a8026a
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025238"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576972"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-週ごとにまとめた、Microsoft Intune の新機能をご覧ください。 [今後の変更](#whats-coming)、サービスに関する[重要なお知らせ](#notices)、[過去のリリース](whats-new-archive.md)に関する情報も確認できます。 いくつかの機能については、数週間にわたってロールアウトされ、一部のお客様は最初の週にご利用になれない可能性があります。
+週ごとにまとめた、Microsoft Intune の新機能をご覧ください。 今後の変更、[重要なお知らせ](#notices)、[過去のリリース](whats-new-archive.md)に関する情報も確認できます。 いくつかの機能については、数週間にわたってロールアウトされ、一部のお客様は最初の週にご利用になれない可能性があります。
 
 > [!Note]
 > ハイブリッド モバイル デバイス管理 (MDM) での新機能については、[ハイブリッドの新機能に関するページ](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management)を確認してください。
@@ -41,6 +41,21 @@ ms.locfileid: "51025238"
 ### Role-based access control
 
 -->     
+## <a name="week-of-november-5-2018"></a>2018 年 11 月 5 日の週
+
+### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>iOS 電子メール プロファイルでの iOS 12 OAuth のサポート <!--2155106 -->
+
+Intune の iOS 電子メール プロファイルでは、iOS 12 Open Authorization (OAuth) がサポートされています。 この機能を確認するには、新しいプロファイルを作成するか (**[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** >  プラットフォームで **[iOS]** > プロファイルの種類で **[電子メール]**)、既存の iOS 電子メール プロファイルを更新します。 ユーザーに既にデプロイされているプロファイルで OAuth を有効にした場合、ユーザーは再認証し、電子メールをもう一度ダウンロードすることを求められます。
+
+[iOS での電子メール プロファイル](email-settings-ios.md)に関するページには、電子メール プロファイルでの OAuth の使用に関する詳細情報があります。
+
+### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview----1048100--"></a>ハイブリッド Azure AD 参加済みデバイスに対する Autopilot のサポート (プレビュー) <!-- 1048100-->
+Autopilot を使用してハイブリッド Azure AD 参加済みデバイスを設定できるようになります。 ハイブリッド Autopilot 機能を使用するには、デバイスを組織のネットワークに参加させる必要があります。 詳しくは、「[Intune と Windows Autopilot を使用してハイブリッド Azure AD 参加済みデバイスをデプロイする](windows-autopilot-hybrid.md)」をご覧ください。
+この機能は、今後数日にわたってユーザー ベース全体にロールアウトされます。 そのため、自分のアカウントにロールアウトされるまで、以下の手順を実行できない可能性があります。
+
+### <a name="app-protection-policy-app-settings-for-web-data----2662995----"></a>Web データ用のアプリ保護ポリシー (APP) 設定 <!-- 2662995  -->
+http リンクと https Web リンクの両方の処理、ならびに iOS ユニバーサル リンクおよび Android アプリ リンクを介したデータ転送をより適切に処理できるよう、Android デバイスと iOS デバイスの両方での Web コンテンツに対する APP ポリシー設定が更新されました。  
+
 ## <a name="week-of-october-29-2018"></a>2018 年 10 月 29 日の週
 
 
@@ -112,10 +127,6 @@ Autopilot プロファイルを [すべてのデバイス] 仮想グループに
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>新しい Azure Active Directory terms of use 機能 <!-- 2870393 -->
 Azure Active Directory では、既存の Intune の使用条件の代わりに使用できる terms of use 機能が用意されます。 Azure AD terms of use 機能では、どの使用条件をどのタイミングで表示するかについての柔軟性が高くなり、ローカライズのサポートが強化され、使用条件の表示方法をより細かく制御でき、レポート機能が改善されています。 Azure AD terms of use 機能を使用するには、Enterprise Mobility + Security E3 スイートにも含まれている Azure Active Directory Premium P1 が必要です。 詳しくは、「[ユーザー アクセスに関する会社の使用条件を管理する](terms-and-conditions-create.md)」をご覧ください。
 
-### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview----1048100--"></a>ハイブリッド Azure AD 参加済みデバイスに対する Autopilot のサポート (プレビュー) <!-- 1048100-->
-Autopilot を使用してハイブリッド Azure AD 参加済みデバイスを設定できるようになります。 ハイブリッド Autopilot 機能を使用するには、デバイスを組織のネットワークに参加させる必要があります。 詳しくは、「[Intune と Windows Autopilot を使用してハイブリッド Azure AD 参加済みデバイスをデプロイする](windows-autopilot-hybrid.md)」をご覧ください。
-この機能は、今後数日にわたってユーザー ベース全体にロールアウトされます。 そのため、自分のアカウントにロールアウトされるまで、以下の手順を実行できない可能性があります。
-
 ### <a name="android-device-owner-mode-support---3188762--"></a>Android デバイス所有者モードのサポート <!--3188762-->
 Samsung Knox Mobile Enrollment について、Android デバイス所有者管理モードへのデバイスの登録を Intune がサポートするようになりました。 WiFi または移動体通信ネットワークのユーザーは、初めてデバイスをオンにしたときに、ほんの数タップで登録できます。 詳しくは、「[Samsung の Knox Mobile Enrollment を使用して Android デバイスを自動的に登録する](android-samsung-knox-mobile-enroll.md)」をご覧ください。
 
@@ -130,7 +141,10 @@ Intune アプリ保護ポリシーを使用すると、Microsoft Outlook や Mic
 - **アクセス要件** - このグループには、エンド ユーザーが仕事でアプリにアクセスする方法を決定するアプリ別の PIN オプションが含まれます。  
 - **条件付き起動** - このグループには、最小 OS 設定、脱獄またはルート化されたデバイスの検出、オフライン猶予期間などの設定が含まれます。  
   
-設定の機能は変更されていませんが、ポリシー作成フローで作業するときに、設定を見つけやすくなります。 
+設定の機能は変更されていませんが、ポリシー作成フローで作業するときに、設定を見つけやすくなります。
+
+### <a name="new-intune-device-subscription-sku---3312071--"></a>Intune デバイスの新しいサブスクリプション SKU!--3312071-->
+企業でのデバイスの管理コストの削減に役立つ、デバイスに基づく新しいサブスクリプション SKU がご利用いただけるようになりました。 この Intune デバイス SKU は、月単位でのデバイスごとのライセンスです。 価格はライセンス プログラムによって変わります。 ダイレクト チャネル、Enterprise Agreement (EA)、マイクロソフト製品/サービス契約 (MPSA)、オープンおよび CSP (Cloud Solution Provider) で利用可能です。
 
 ### <a name="intune-apps"></a>Intune アプリ
 
@@ -619,7 +633,7 @@ Android、iOS、および Windows 10 用の電子メール プロファイルの
 
 この機能を使うには、オンプレミスの Active Directory 環境から Azure AD に `sAMAccountName` 属性を同期する必要があります。
 
-[Android](email-settings-android.md)、[iOS](email-settings-ios.md)、[Windows 10 以降](email-settings-windows-10.md)に適用される
+適用対象: [Android](email-settings-android.md)、[iOS](email-settings-ios.md)、[Windows 10 以降](email-settings-windows-10.md)
 
 #### <a name="see-device-configuration-profiles-in-conflict----1556983---"></a>競合しているデバイス構成プロファイルの確認 <!-- 1556983 -->
 **[デバイス構成]** には、既存のプロファイルのリストが表示されます。 今回の更新プログラムでは、競合しているプロファイルに関する詳細を示す新しい列が追加されます。 競合する行を選択することで、競合しているプロファイルと設定を確認できます。 
@@ -675,7 +689,7 @@ Microsoft Intune に統合されたモバイル脅威保護ソリューション
 
 ## <a name="week-of-june-18-2018"></a>2018 年 6 月 18 日の週
 
-### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Edge モバイルでの Intune アプリ保護ポリシーのサポート <!-- 1817882 -->
+### <a name="microsoft-edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Microsoft Edge モバイルでの Intune アプリ保護ポリシーのサポート <!-- 1817882 -->
 
 モバイル デバイス向けの Microsoft Edge ブラウザーで、Intune で定義されるアプリ保護ポリシーがサポートされるようになりました。
 
@@ -784,7 +798,7 @@ iOS および macOS デバイスの UDID (一意のデバイス識別子) を表
 Microsoft Intune の MDM で管理されたデバイスでは、アプリのインストールが失敗することがあります。 アプリのインストールが失敗した場合、失敗の理由を理解したり、問題をトラブルシューティングするのが難しい場合があります。 アプリ トラブルシューティング機能のパブリック プレビューが提供されています。 各デバイスの下に **[管理対象アプリ]** という新しいノードがあります。 これには、Intune MDM 経由で配布されたアプリが表示されます。 ノード内では、アプリのインストール状態が一覧表示されます。 個々のアプリを選ぶと、その特定のアプリのトラブルシューティング ビューが表示されます。 トラブルシューティング ビューでは、アプリが作成、変更、ターゲット指定、デバイス配布されたときなど、アプリのエンド ツー エンドのライフサイクルが表示されます。 さらに、アプリのインストールが成功しなかった場合は、エラー コードとエラーの原因に関する便利なメッセージが表示されます。 
 
 #### <a name="intune-app-protection-policies-and-microsoft-edge----1818968---"></a>Intune アプリ保護ポリシーと Microsoft Edge <!-- 1818968 -->
-モバイル デバイス (iOS および Android) 向けの Microsoft Edge ブラウザーで、Microsoft Intune アプリ保護ポリシーがサポートされるようになりました。 Microsoft Edge アプリケーションで企業の Azure AD アカウントを使用してサインインした iOS および Android デバイスのユーザーは、Intune によって保護されます。 iOS デバイスでは、**Web コンテンツの管理対象ブラウザーを必要とする**ポリシーにより、ユーザーは Microsoft Edge が管理されている場合にその Microsoft Edge でリンクを開くことができます。
+モバイル デバイス (iOS および Android) 向けの Microsoft Edge ブラウザーで、Microsoft Intune アプリ保護ポリシーがサポートされるようになりました。 Microsoft Edge アプリケーションで企業の Azure AD アカウントを使用してサインインした iOS および Android デバイスのユーザーは、Intune によって保護されます。 管理されている iOS デバイスでは、**[Require managed browser for web content]** \(Web コンテンツに管理されているブラウザーが必要\) ポリシーにより、ユーザーは Microsoft Edge でリンクを開くことができます。
 
 ## <a name="week-of-may-14-2018"></a>2018 年 5 月 14 日の週
 
@@ -1010,6 +1024,21 @@ iOS 用のポータル サイト アプリに対して、主要なユーザー �
 Intune アプリ ポリシー保護 (APP) および条件付きアクセス (CA) を使用して、Outlook Mobile によるオンプレミスの Exchange データへのアクセスを保護できるようになりました。 Azure portal 内でアプリ保護ポリシーを追加または変更するには、**[Microsoft Intune]** > **[クライアント アプリ]** > **[アプリ保護ポリシー]** の順に選択します。 この機能を使用する前に、[iOS および Android 用 Outlook の要件](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx)を満たしていることを確認します。
 
 ## <a name="notices"></a>通知
+
+### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>変更の計画: Intune for Education のパフォーマンスの更新プログラム <!--1750215-->
+Intune for Education に、ユーザーやデバイスに設定を割り当てる速度と信頼性を高める更新プログラムがいくつか追加されます。 この変更の一環として 11 月末までに、お客様のポリシーまたは設定の割り当てが新しいグループに移動されます。
+
+#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
+
+Intune for Education のお客様には、“All Users”\(すべてのユーザー\) と “All Devices”\(すべてのデバイス\) の 2 つの動的な Azure Active Directory (Azure AD) が用意されます。 これらの更新プログラムでは、Intune for Education コンソールに、これらの “All Users”\(すべてのユーザー\) と “All devices”\(すべてのデバイス\) の Azure AD グループは表示されません。 ただし、Intune on Azure コンソールには “All Users (Obsolete, do not use)”\(すべてのユーザー (古いため使用しない)\) と “All Devices (Obsolete, do not use)”\(すべてのデバイス (古いため使用しない)\) と名前変更され、表示されます。
+
+更新プログラムがロールアウトされたら、Intune に Azure AD グループを使用してアプリや設定を割り当てる必要がなくなります。 代わりに、Intune for Education コンソールの弊社がお客様のために作成する新しいグループに、設定の割り当てが移動されます。これでは、今までと同様に “All Users”\(すべてのユーザー\) と “All Devices”\(すべてのデバイス\) と表示されます。 これらの変更はバックエンドで行われるので、Intune for Education コンソール上では何の変化もお客様には見られません。 お客様のエンド ユーザーや登録済みデバイスに、予測される影響はありません。 
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
+弊社でポリシーの割り当てを移動する間、お客様は何も行う必要はありません。 Intune for Education コンソールで現在ポリシーを割り当てている場合、継続してください。
+
+現在、前述の Intune on Azure の Azure AD グループにポリシーを割り当てている場合、代わりに Intune for Education コンソールの All Users\(すべてのユーザー\) と All Devices\(すべてのデバイス\) にそれらの割り当て開始してください。 Azure AD グループがコンソールで古いと名前変更されていたら、Azure AD でポリシーを割り当てるのを停止してください。 現在、名前変更されたグループを他の目的で使用していない場合、それらは削除してください。
+
 
 ### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>変更の計画: Intune は 12 月に macOS 10.12 以降対応になります <!--2970975--> 
 

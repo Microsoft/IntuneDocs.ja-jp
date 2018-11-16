@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/29/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b797951c878dd90cbb7bb716b5108f94f48921c5
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 21dda51d2ddde74f07fcc173c5a4dd2a13c9c8b8
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231952"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225749"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>クイック スタート: iOS 用の電子メール デバイス プロファイルを作成する
 
@@ -69,7 +69,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
 ## <a name="next-steps"></a>次の手順
 
-このクイック スタートでは、iOS デバイス用の電子メール プロファイルを作成しました。 ここで、このプロファイルを使用して、プロファイルと一致しないすべての iOS デバイスを非準拠としてマークするコンプライアンス ポリシーを作成することで、iOS デバイスが準拠しているかどうかを判断することができます。 保護をさらに強化するには、非準拠の iOS デバイスが電子メールにアクセスできないようブロックする条件付きアクセス ポリシーを作成します。
+このクイック スタートでは、iOS デバイス用の電子メール プロファイルを作成しました。 ここで、このプロファイルを使用して、プロファイルと一致しないすべての iOS デバイスを非準拠としてマークするコンプライアンス ポリシーを作成することで、iOS デバイスが準拠しているかどうかを判断することができます。 保護をさらに強化するには、非準拠の iOS デバイスが電子メールにアクセスできないようブロックする条件付きアクセス ポリシーを作成します。 デバイス コンプライアンス ポリシーの詳細については、[Intune でのデバイス コンプライアンス ポリシーの概要](device-compliance-get-started.md)に関するページを参照してください。
 
 > [!div class="nextstepaction"]
-> [Intune のデバイス コンプライアンス ポリシーの概要](device-compliance-get-started.md)
+> [チュートリアル: マネージド デバイス上で Exchange Online の電子メールを保護する](tutorial-protect-email-on-enrolled-devices.md)

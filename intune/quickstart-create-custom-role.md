@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
-ms.openlocfilehash: 33c0d4f3ee3b29be47540c92425f76a3f1dcc044
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: 5c83af252b1c728b9e3d4015cdc8bb4fd3668ad1
+ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410771"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561926"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>クイック スタート - カスタム ロールを作成して割り当てる
 
@@ -20,7 +20,7 @@ ms.locfileid: "50410771"
 
 Intune サブスクリプションがない場合は、[無料試用版アカウントにサインアップ](free-trial-sign-up.md)します。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
 - このクイック スタートを完了するには、[グループを作成する](quickstart-create-group.md)必要があります。
 
@@ -64,7 +64,9 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
 ## <a name="next-steps"></a>次の手順
 
-このクイック スタートでは、カスタム セキュリティ オペレーション ロールを作成し、それをグループに割り当てました。 次の記事ではセキュリティ上の問題の詳細を確認できます。
+このクイック スタートでは、カスタム セキュリティ オペレーション ロールを作成し、それをグループに割り当てました。 Intune のロールの詳細については、「[Microsoft Intune でのロール ベースの管理制御 (RBAC)](role-based-access-control.md)」を参照してください。
+
+この一連の Intune のクイック スタートに従うには、次のクイック スタートに進んでください。
 
 > [!div class="nextstepaction"]
-> [デバイス コンプライアンス ポリシーの概要](device-compliance-get-started.md)
+> [クイック スタート: iOS 用の電子メール デバイス プロファイルを作成する](quickstart-email-profile.md)

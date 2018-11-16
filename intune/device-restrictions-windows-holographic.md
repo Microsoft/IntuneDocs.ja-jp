@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9d7f54ce0e288025a4a7f0f45bf5b10de5323021
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: f79985c9854af462fa9a456304a3184128283b9c
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321756"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576802"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Intune での Windows Holographic for Business のデバイス制限設定
 
@@ -41,7 +41,7 @@ Microsoft Hololens など、Windows Holographic for Business を実行してい�
 -   **[信頼できるアプリのインストール]** - 信頼済み証明書で署名されたアプリのサイドロードを許可します。
 -   **[開発者によるロック解除]** - サイドロードしたアプリのエンド ユーザーによる変更を許可するなど、Windows 開発者の設定を許可します。
 
-## <a name="edge-browser"></a>Microsoft Edge ブラウザー
+## <a name="microsoft-edge-browser"></a>Microsoft Edge ブラウザー
 
 -   **[Cookie]** - ブラウザーがインターネット Cookie をデバイスに保存するように設定します。
 -   **[ポップアップ]** - ブラウザー内のポップアップ ウィンドウをブロックします (Windows 10 デスクトップのみに適用)。
@@ -51,7 +51,7 @@ Microsoft Hololens など、Windows Holographic for Business を実行してい�
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
-- **[SmartScreen for Microsoft Edge]** - サイトへのアクセスとファイルのダウンロードに対して Edge の SmartScreen を有効にします。
+- **[SmartScreen for Microsoft Edge]** - サイトへのアクセスとファイルのダウンロードに対して Microsoft Edge の SmartScreen を有効にします。
 
 ## <a name="search"></a>検索
 - **[Search location]\(場所の検索\)** - 検索で場所を使用できるかどうかを指定します。 情報

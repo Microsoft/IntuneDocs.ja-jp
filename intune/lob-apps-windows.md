@@ -15,12 +15,12 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d6880d3891891fe27a41d04a118e14ac9d4782b3
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 04c9c6b184fac2082649e8be8e60e6ac3f5a5669
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828178"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212429"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Windows の基幹業務アプリを Microsoft Intune に追加する
 
@@ -55,7 +55,7 @@ ms.locfileid: "48828178"
     - **[名前]**: アプリの名前を入力します。この名前は会社のポータルに表示されます。 使用するアプリ名はすべて一意にします。 同じアプリ名が 2 つ存在する場合、いずれか 1 つのアプリのみが会社のポータルに表示されます。
     - **[説明]**: アプリの説明を入力します。 説明はポータル サイトに表示されます。
     - **[発行元]**: アプリの発行元の名前を入力します。
-    - **[アプリのバージョンを無視する]**: アプリ開発者がアプリがを自動的に更新する場合は、**[はい]** に設定します。
+    - **[アプリのバージョンを無視する]**: アプリ開発者がアプリがを自動的に更新する場合は、**[はい]** に設定します。 このオプションは、モバイル .msi アプリにのみ適用されます。
     - **[カテゴリ]**: 1 つまたは複数の組み込みアプリ カテゴリを選択するか、作成したカテゴリを選択します。 カテゴリを使用すれば、ユーザーはポータル サイトを参照する際にアプリを見つけやすくなります。
     - **[会社のポータルでおすすめアプリとして表示します]**: ユーザーがアプリを参照する際に、ポータル サイトのメイン ページでアプリを目立つように表示します。
     - **[情報 URL]**: 必要に応じて、このアプリに関する情報が含まれる Web サイトの URL を入力します。 この URL はポータル サイトに表示されます。
