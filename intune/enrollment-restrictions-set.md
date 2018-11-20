@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de77ad92eac4aa869aec504f1762ad6f216c74d2
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: 97543ec74225ef86208000bccb2a8ad7852dd9c1
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602148"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610058"
 ---
 # <a name="set-enrollment-restrictions"></a>登録制限を設定する
 
@@ -66,7 +66,7 @@ ms.locfileid: "45602148"
 
 ## <a name="set-device-type-restrictions"></a>デバイスの種類の制限を設定する
 
-デバイスの種類の制限に対する設定は以下の手順で変更できます。 この制限は、既に登録されているデバイスには適用されません。 [Intune PC エージェント](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune.md)で登録されているデバイスはこの機能でブロックできません。
+デバイスの種類の制限に対する設定は以下の手順で変更できます。 この制限は、既に登録されているデバイスには適用されません。 [Intune PC エージェント](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)で登録されているデバイスはこの機能でブロックできません。
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** を選択し、**Intune** を検索して **[Intune]** を選択します。
@@ -100,11 +100,11 @@ ms.locfileid: "45602148"
 - デバイスが[共同管理用の SCCM からの自動登録](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md)経由で登録されます。
  
 次の登録は Intune で会社として見なされますが、Intune 管理者のデバイスごとのコントロールがないため、ブロックされます。
- - [自動 MDM 登録](windows-enroll.md#enable-windows-10-automatic-enrollment)と [Windows セットアップ中の Azure Active Directory 参加](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)\*。
-- [自動 MDM 登録](windows-enroll.md#enable-windows-10-automatic-enrollment)と [Windows 設定からの Azure Active Directory 参加](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md)。
+ - [自動 MDM 登録](windows-enroll.md#enable-windows-10-automatic-enrollment)と [Windows セットアップ中の Azure Active Directory 参加](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*。
+- [自動 MDM 登録](windows-enroll.md#enable-windows-10-automatic-enrollment)と [Windows 設定からの Azure Active Directory 参加](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)。
  
 次の個人登録方法もブロックされます。
-- [自動 MDM 登録](windows-enroll.md#enable-windows-10-automatic-enrollment)と [Windows 設定からの職場アカウントの追加](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)\*。
+- [自動 MDM 登録](windows-enroll.md#enable-windows-10-automatic-enrollment)と [Windows 設定からの職場アカウントの追加](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)\*。
 - Windows 設定からの [MDM 登録のみ]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device)オプション。
 
 \* これらは、Autopilot に登録されている場合、ブロックされません。

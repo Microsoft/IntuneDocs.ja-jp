@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dfe8d8d7c7a534dd4a21104b0c7076c039d9f504
-ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
+ms.openlocfilehash: b0ee2b2ad8d25d1040577a7f8abff4377704d2d5
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51212531"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167537"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune で SCEP 証明書を構成して使用する
 
@@ -151,7 +151,7 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 この手順では、次のことを行います。
 
 - Windows サーバーに NDES を追加し、NDES をサポートするように IIS を構成する
-- NDES サービス アカウントを IIS_IUSR グループに追加する
+- NDES サービス アカウントを IIS_IUSR グループに追加します
 - NDES サービス アカウントのサービス プリンシパル名 (SPN) を設定する
 
 1. NDES をホストするサーバーに**エンタープライズ管理者**としてサインインし、[役割と機能の追加ウィザード](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831809(v=ws.11))を使って NDES をインストールします。
@@ -365,6 +365,7 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
      - iOS
      - Windows 8.1 以降
      - Windows 10 以降
+     - Android エンタープライズ
 
    - **[サブジェクト名の形式]**: Intune が証明書要求のサブジェクト名をどのように自動生成するかを指定します。 **[ユーザー]** 証明書の種類または **[デバイス]** 証明書の種類を選択すると、選択肢が変わります。 
 

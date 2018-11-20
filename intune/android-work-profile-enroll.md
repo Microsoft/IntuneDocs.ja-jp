@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc1943781dcf95209b575cdb6e36d5065275626f
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: a38c5db1e608cb5d9a047dc72ee9109e840096e0
+ms.sourcegitcommit: 4d5e811d451aeb6307e0f64818e182e471ae1ed4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255075"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51618992"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>Android 仕事用プロファイル デバイスの登録を設定する
 
@@ -56,5 +56,5 @@ Intune ポータル サイトを承認するには、次の手順のようにし
 5.  **[Keep approved when app requests new permissions]\(アプリが新しいアクセス許可を要求したときに承認済みのままにする\)** を選び、**[保存]** をクリックします。
 
 ## <a name="next-steps-for-android-work-profiles"></a>Android の仕事用プロファイルの次の手順
-- [Android 仕事用プロファイルのアプリを展開する](store-apps-android.md)
+- [Android 仕事用プロファイルのアプリを展開する](apps-add-android-for-work.md)
 - [Android 仕事用プロファイル構成ポリシーを追加する](device-profiles.md)
