@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d510596f021725292c7221e3056986c2c3fc93c
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: d7ff5a63b6afb619fbbe762d23208c1058e99943
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410788"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610143"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>デバイス登録マネージャー アカウントを使用してデバイスを登録する
 
@@ -34,7 +34,7 @@ DEM ユーザー アカウントと DEM ユーザー アカウントを使用し
   - ポータル サイト アプリまたは Web サイトには、ローカルのデバイスのみが表示されます。
   - アプリ管理のための Apple ID 要件がユーザー単位になるため、DEM ユーザー アカウントは Apple ID ユーザー ライセンスで Apple Volume Purchase Program (VPP) アプリを利用することはできません。
   - デバイスでは、Apple ID デバイス ライセンスがある場合に VPP アプリをインストールすることができます。
-  
+  - Windows 10 1803+ 以降の例外と共にデバイスが条件付きアクセスをブロックされます
 
 
 ## <a name="add-a-device-enrollment-manager"></a>デバイス登録マネージャーの追加

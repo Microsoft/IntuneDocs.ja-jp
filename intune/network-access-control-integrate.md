@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1adfdba49ab8ac5ae55f792e71a99f4aef4c8a6
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 00f660d2ac228fbebe218c53482d00e59f09ce56
+ms.sourcegitcommit: be6f6b750635ebc7956dd2d60a0e131d124b2fc3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236154"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51947328"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>ネットワーク アクセス制御 (NAC) と Intune の統合
 
@@ -59,12 +59,21 @@ NAC は条件付きアクセスと連携して、アクセス制御の決定を�
 8. デバイスが登録されて準拠するようになると、NAC パートナー ソリューションは Intune から状態を取得します。
 9. 接続が正常に確立されて、デバイスは会社のリソースにアクセスできるようになります。
 
-## <a name="use-nac-on-your-ios-devices"></a>iOS デバイス上で NAC を使用する
+## <a name="use-nac-for-vpn-on-your-ios-devices"></a>iOS デバイス上で VPN 用に NAC を使用する  
+VPN プロファイル内で NAC を有効にしなくても、Cisco Legacy AnyConnect、F5 Access Legacy、および Citrix VPN 用の NAC を使用できます。
 
-現在、iOS 上の次の VPN クライアントではネットワーク アクセス制御がサポートされていません。
+Citrix SSO 用の NAC もサポートされています。 iOS 向けに Citrix SSO 用の NAC を有効にするには:
+- Citrix ゲートウェイ 12.0.59 以上を使用します。  
+- ユーザーは Citrix SSO 1.1.6 以降をインストールしている必要があります。
+- Citrix の製品ドキュメントの説明に従って、[NAC のために NetScaler を Inture と統合します](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)。
+- 基本 VPN 設定の構成で、**[ネットワーク アクセス制御 (NAC) を有効にする]** の **[同意する]** チェック ボックスをオンにします。
+
+iOS 用の Citrix SSO を使用する場合、セキュリティ上の理由により VPN 接続は 24 時間ごとに切断されます。 VPN はすぐに再接続できます。
+
+
+**現在、iOS 上の次の VPN クライアントではネットワーク アクセス制御がサポートされていません。**
 -   Cisco AnyConnect
 -   F5 Access
--   Citrix SSO  
 
 これらの新しいクライアント用の NAC ソリューションをリリースするために、パートナーと協力して作業しています。 ソリューションの準備が整ったら、追加の詳細と共にこの記事を更新します。 
 

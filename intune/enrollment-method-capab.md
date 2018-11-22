@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c9e440aef7f434cbe675506fd6f22a9bd26b2c31
-ms.sourcegitcommit: 528d2bc70bfd25803a2d9f0fe9372c8a5f5e7dad
+ms.openlocfilehash: 457acdc212855767687f97f7d03b731f35afad46
+ms.sourcegitcommit: 490f68479af814fbea1d9bd222011736fcbb1dd6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446822"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51811531"
 ---
 # <a name="capabilities-by-enrollment-method-for-windows-devices"></a>Windows デバイスの登録方法別の機能
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "47446822"
 Intune では、従業員のデバイスやアプリ、従業員が会社のデータにアクセスする手段を管理できます。 まず、デバイスを Intune サービスに登録する必要があります。 従業員のデバイスを登録する方法は複数あります。 次の表に示すように、各方法には異なるベスト プラクティスと機能があります。
 
 ## <a name="best-practices-by-enrollment-method"></a>登録方法別のベスト プラクティス
-| **ベスト プラクティス** | **[Azure AD 参加済み](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD 参加済み (Autopilot を使用)](enrollment-autopilot.md)** |**[一括](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **GPO** |
+| **ベスト プラクティス** | **[Azure AD 参加済み](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD 参加済み (Autopilot を使用)](enrollment-autopilot.md)** |**[一括](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |EDU でよく使用されます|![○](media/xmark.png)|![チェックマーク](media/checkmark.png)|![チェックマーク](media/checkmark.png)|![チェックマーク](media/checkmark.png)|![○](media/xmark.png)|![○](media/xmark.png)|
 |デバイスは共有デバイスとして使用できます|![○](media/xmark.png)|![○](media/xmark.png)|![チェックマーク](media/checkmark.png)|![チェックマーク](media/checkmark.png)|![○](media/xmark.png)|![○](media/xmark.png)|
@@ -36,7 +36,7 @@ Intune では、従業員のデバイスやアプリ、従業員が会社のデ�
 
 ## <a name="capabilities-by-enrollment-method"></a>登録方法別の機能
 
-| **機能** | **[Azure AD 参加済み](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD 参加済み (Autopilot を使用)](enrollment-autopilot.md)** |**[一括](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **GPO** |
+| **機能** | **[Azure AD 参加済み](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD 参加済み (Autopilot を使用)](enrollment-autopilot.md)** |**[一括](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |条件付きアクセス                                      |![チェックマーク](media/checkmark.png)|![チェックマーク](media/checkmark.png)|![○](media/xmark.png)|![○](media/xmark.png)|![チェックマーク](media/checkmark.png)|![チェックマーク](media/checkmark.png)|
 |ユーザーはデバイスに関連付けられます                    |![チェックマーク](media/checkmark.png)|![チェックマーク](media/checkmark.png)|![○](media/xmark.png)|![○](media/xmark.png)|![チェックマーク](media/checkmark.png)|![チェックマーク](media/checkmark.png)|
@@ -52,5 +52,5 @@ Intune では、従業員のデバイスやアプリ、従業員が会社のデ�
 
 ## <a name="next-steps"></a>次の手順
 
-[登録オプション](enrollment-options.md)
+[Windows の登録をセットアップする](windows-enroll.md)
 

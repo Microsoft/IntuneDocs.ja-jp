@@ -1,10 +1,27 @@
 ---
-title: Microsoft Intune に Win32 アプリを追加する titlesuffix: description: Microsoft Intune を使用して Win32 アプリを追加、配信、および管理する方法について説明します。 このトピックでは、Win32 アプリを配信および管理する Intune の機能の概要と、Win32 アプリのトラブルシューティング情報について説明します。 keywords: author: Erikre ms.author: erikre manager: dougeby <<<<<<< HEAD ms.date: 10/23/2018 ======= ms.date: 10/19/2018
->>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
-
-ms.reviewer: mghadial ms.suite: ems ms.custom: intune-azure
+title: Microsoft Intune に Win32 アプリを追加する
+titlesuffix: ''
+description: Microsoft Intune を使用して Win32 アプリを追加、配信、および管理する方法について説明します。 このトピックでは、Win32 アプリを配信および管理する Intune の機能の概要と、Win32 アプリのトラブルシューティング情報について説明します。
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 11/15/2018
+ms.topic: article
+ms.prod: ''
+ms.service: microsoft-intune
+ms.technology: ''
+ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
+ms.reviewer: mghadial
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 8e152e3dc5bc42545bf8bee8595b7bbca2fab0eb
+ms.sourcegitcommit: 618c3076a7973b3b54ce3038ee007a33aa82efeb
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51830119"
 ---
-
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune スタンドアロン - Win32 アプリの管理 (パブリック プレビュー)
 
 Intune スタンドアロンでは、Win32 アプリの管理機能が向上します。 クラウドに接続された顧客が Win32 アプリの管理用に Configuration Manager を使用することはできますが、Intune 限定の顧客の方が、Win32 基幹業務 (LOB) アプリに対してより優れた管理機能を利用できます。 このトピックでは、Win32 アプリを管理する Intune の機能の概要と、トラブルシューティング情報について説明します。
@@ -43,6 +60,13 @@ Intune スタンドアロンでは、Win32 アプリの管理機能が向上し�
 |:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    `IntuneWinAppUtil -h`    |    このコマンドでは、ツールの使用情報が表示されます。    |
 |    `IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> <-q>`    |    このコマンドは、指定されたソース フォルダーおよびセットアップ ファイルから `.intunewin` ファイルを生成します。 MSI セットアップ ファイルでは、このツールは Intune に必要な情報を取得します。 `-q` が指定されている場合、コマンドは Quiet モードで実行され、出力ファイルが既に存在する場合は上書きされます。 また、出力フォルダーが存在しない場合は、自動的に作成されます。    |
+
+*.intunewin* ファイルを生成する際、参照するために必要なすべてのファイルをセットアップ フォルダーのサブフォルダーに置いてください。 次に、相対パスを使用して特定の必要なファイルを参照します。 次に例を示します。
+
+**セットアップのソース フォルダー:** *c:\testapp\v1.0*<br>
+**ライセンス ファイル:** *c:\testapp\v1.0\licenses\license.txt*
+
+相対パス *licenses\license.txt* を使用して *license.txt* ファイルを参照します。
 
 ## <a name="create-assign-and-monitor-a-win32-app"></a>Win32 アプリを作成、割り当て、および監視する
 

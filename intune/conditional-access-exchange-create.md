@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d44b7483d65eeb7b2a39783fb113c444184db4f3
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: b1e07bd67d4bf8b776500be01571deddb1e5e58f
+ms.sourcegitcommit: 630dfe1413c1819f35aa941ffc888a7084771a55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48232224"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51709140"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange On-Premises と従来の Exchange Online Dedicated の条件付きアクセス ポリシーを作成する
 
@@ -66,7 +66,7 @@ Exchange Online Dedicated 環境を使用していて、それが新しい構成
 - EAS メール クライアント **Android 仕事用プロファイル デバイス:** Android 仕事用プロファイル デバイスでは、**仕事用プロファイル**の **Gmail** と **Nine Work for Android Enterprise** のみがサポートされています。 条件付きアクセスが Android 仕事用プロファイルで動作するには、Gmail アプリまたは Nine Work for Android Enterprise アプリ用の電子メール プロファイルを展開する必要があります。また、必要なインストールとしてそのアプリを展開する必要があります。
 
 > [!NOTE]
-> Android と iOS の Microsoft Outlook アプリはサポートされていません。 
+> Exchange のオンプレミス コネクタを介した Android および iOS 用 Microsoft Outlook の使用はサポートされていません。 オンプレミスのメールボックスに対して iOS および Android 用 Outlook と共に Azure Active Directory の条件付きアクセス ポリシーおよび Intune アプリ保護ポリシーを活用したい場合は、[iOS および Android 用 Outlook でのハイブリッド先進認証の使用](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)に関するページをご覧ください。 
 
 ### <a name="support-for-pcs"></a>PC のサポート
 
@@ -79,9 +79,9 @@ Windows 8.1 以降用のネイティブ **メール** アプリケーション (
 
 1. 正常にサインインすると、**Azure ダッシュボード**が開きます。
 
-1. 左側のメニューから **[すべてのサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
+1. 左側のメニューから **[すべてのサービス]** を選択し、テキスト ボックス フィルターに「 **Intune** 」と入力します。
 
-1. **[Intune]** を選ぶと、**Intune ダッシュボード**が表示されます。
+1.  **[Intune]** を選ぶと、**Intune ダッシュボード**が表示されます。
 
 1. **[オンプレミス アクセス]** を選択します。 **[オンプレミス アクセス]** ウィンドウには、条件付きアクセス ポリシーの状態と、その影響を受けるデバイスが表示されます。
 

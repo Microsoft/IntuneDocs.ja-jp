@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: ef21f22a4808518ce8557b761e4181f8f6a655c3
-ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
+ms.openlocfilehash: f311d8a389d551ed834d955c5d1c59dbc9c3c4a2
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45978248"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610024"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune ソフトウェア クライアントを使用して Windows PC をコンピューターとして管理する
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> 以下に説明するように、Microsoft Intune を使用して、[モバイル デバイス管理 (MDM) によりモバイル デバイスとして](windows-enroll.md)、または Intune ソフトウェア クライアントによりコンピューターとして、Windows PC を管理できます。 しかし、Microsoft では、可能な場合は常に [MDM 管理ソリューションを使用する](windows-enroll.md)ことをお勧めします。
+> 以下に説明するように、Microsoft Intune を使用して、[モバイル デバイス管理 (MDM) によりモバイル デバイスとして](windows-enroll.md)、または Intune ソフトウェア クライアントによりコンピューターとして、Windows PC を管理できます。 しかし、Microsoft では、可能な場合は常に [MDM 管理ソリューションを使用する](windows-enroll.md)ことをお勧めします。 詳細については、「[Windows PC のコンピューターとしての管理とモバイル デバイスとしての管理の比較](pc-management-comparison.md)」をご覧ください。 
 
 Intune は、モバイル デバイス管理するための組織向けの包括的なソリューションを提供します。 Intune は、Windows 10 オペレーティング システムに組み込まれている最新のデバイス管理機能を使用して、モバイル デバイスとして Windows PC を管理できます。 組織の管理ニーズを満たすため、Intune は、Intune ソフトウェア クライアントでコンピューターとして Windows PC を管理することもできます。 この管理方法は、従来の Windows オペレーティング システムでのコンピューター管理機能を使います。
 
@@ -40,15 +40,17 @@ Intune は、ソフトウェア クライアントを使って、最大 7,000 �
 
 ## <a name="requirements-for-intune-pc-client-management"></a>Intune PC クライアント管理の要件
 
-**ハードウェア**: 次に、Intune クライアント ソフトウェアをインストールするハードウェアの最小要件を示します。
+**ハードウェア**:  
+Intune クライアント ソフトウェアをインストールするハードウェアの最小要件を次に示します。
 
 |要件|詳細情報|
 |---------------|--------------------|
 |ネットワーク|クライアントでは、PC がインターネット接続できる必要があります。|
 |プロセッサとメモリ|PC のオペレーティング システムに対するプロセッサ要件と RAM 要件を参照してください。|
-|ディスク領域|クライアント ソフトウェアをインストールする前に、200 MB の空きディスク領域が必要です。|
+|ディスク領域|クライアント ソフトウェアをインストールする前に、200 MB の空きディスク領域が必要です。|
 
-**ソフトウェア**: 次に、クライアント ソフトウェアをインストールするソフトウェアの要件を示します。
+**ソフトウェア**:  
+クライアント ソフトウェアをインストールするソフトウェアの要件を次に示します。
 
 |要件|詳細情報|
 |---------------|--------------------|

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8fdfa89654df1f62979240f364c2e28b5a15e78f
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: 6668848bcb381299417ca7a641e267c41f9a1e79
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058916"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167401"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>iOS アプリ プロビジョニング プロファイルを使用して、アプリが期限切れにならないようにする
 
@@ -49,7 +49,7 @@ iPhone および iPad に割り当てられた Apple iOS 基幹業務アプリ�
 3. **[プロファイルの作成]** ウィンドウで、次の値を構成します。
     - **名前** - このモバイル プロビジョニング プロファイルの名前を指定します。
     - **説明** - 必要に応じて、ポリシーの説明を指定します。
-    - **プロファイル ファイルのアップロード** - **[インポート]** を選択し、Apple Developer Web サイトからダウンロードした Apple モバイル構成プロファイル ファイル (拡張子 **.mobileprovision**) を選択します。
+    - **プロファイル ファイルのアップロード** - **[インポート]** を選択し、Apple Developer Web サイトからダウンロードした Apple モバイル構成プロファイル ファイル (拡張子 `.mobileprovision`) を選択します。
 4. 終了したら、**[作成]** を選択します。
 
 ## <a name="next-steps"></a>次の手順

@@ -15,12 +15,12 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ce54f3bc51735c763359b3e59832454d0a89fad
-ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
+ms.openlocfilehash: 1a10d434fbdb5d827c7ecb89d1ae2f7e43c0f951
+ms.sourcegitcommit: 1e6fee4032c50ab41a5166db39fbea80a731c541
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51298090"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51654910"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Intune と Windows Autopilot を使用してハイブリッド Azure AD 参加済みデバイスをデプロイする (プレビュー)
 Intune と Windows Autopilot を使用して、ハイブリッド Azure Active Directory 参加済みデバイスを設定できます。 そのためには、以下の手順のようにします。
@@ -110,12 +110,13 @@ Active Directory の Intune コネクタでは、オンプレミスの Active di
 
 Active Directory の Intune コネクタを、インターネットと Active Directory にアクセスできる Windows Server 2016 を実行しているコンピューターにインストールする必要があります。 スケールと可用性を高めたり、複数の Active Directory ドメインをサポートしたりするため、環境内に複数のコネクタをインストールできます。 他の Intune コネクタが実行されていないサーバーにインストールすることをお勧めします。
 
-1. [Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Windows 登録]** > **[Active Directory の Intune コネクタ (プレビュー)]** > **[コネクタの追加]** を選択します。 
-2. 手順に従ってコネクタをダウンロードします。
-3. ダウンロードしたコネクタのセットアップ ファイルを開いて、コネクタをインストールします (ODJConnectorBootstrapper.exe)。
-4. セットアップの最後で、**[構成]** を選択します。
-5. **[サインイン]** を選択します。
-6. ユーザーのグローバル管理者ロールまたは Intune 管理者ロールの資格情報を入力します。
+1. 言語パックをインストールし、「[Intune コネクタ (プレビュー) の言語の要件](https://docs.microsoft.com/windows/deployment/windows-autopilot/intune-connector)」の説明に従って構成したことを確認します。
+2. [Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Windows 登録]** > **[Active Directory の Intune コネクタ (プレビュー)]** > **[コネクタの追加]** を選択します。 
+3. 手順に従ってコネクタをダウンロードします。
+4. ダウンロードしたコネクタのセットアップ ファイルを開いて、コネクタをインストールします (ODJConnectorBootstrapper.exe)。
+5. セットアップの最後で、**[構成]** を選択します。
+6. **[サインイン]** を選択します。
+7. ユーザーのグローバル管理者ロールまたは Intune 管理者ロールの資格情報を入力します。
 8. **[デバイスの登録]** > **[Windows 登録]** > **[Active Directory の Intune コネクタ (プレビュー)]** に移動し、接続の状態が **[アクティブ]** であることを確認します。
 
 ### <a name="configure-web-proxy-settings"></a>Web プロキシ設定の構成

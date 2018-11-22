@@ -5,23 +5,45 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 11/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b794ec40d05358ddd1aa3179c2f4060b2cd6fe1d
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 23e993f883b149e86ce83e0e028572f55468b84b
+ms.sourcegitcommit: be6f6b750635ebc7956dd2d60a0e131d124b2fc3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236511"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51947311"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Microsoft Intune で iOS デバイスに対する VPN 設定を構成する
 
 Microsoft Intune には、ご利用の iOS デバイスに展開できる VPN 設定が多数含まれています。 これらの設定は、組織のネットワークへの VPN 接続を作成し構成するのに使用されます。 この記事では、これらの設定について説明します。 設定の中には、Citrix や Zscaler などの一部の VPN クライアントでしか利用できないものがあります。
+
+## <a name="connection-type"></a>接続の種類
+
+以下のベンダーのリストから VPN 接続の種類を選択します。
+
+- **Check Point Capsule VPN**
+- **[Cisco Legacy AnyConnect]**: 4.0.5x 以前のバージョンの [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) アプリに適用できます。
+- **[Cisco AnyConnect]**: 4.0.7x 以降のバージョンの [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) アプリに適用できます。
+- **SonicWall Mobile Connect**
+- **[F5 Access Legacy]**: バージョンが 2.1 以前の F5 Access アプリに適用できます。
+- **[F5 Access]**: バージョンが 3.0 以降の F5 Access アプリに適用できます。
+- **[Palo Alto Networks GlobalProtect (Legacy)]**: バージョンが 4.1 以前の Palo Alto Networks GlobalProtect アプリに適用できます。
+- **[Palo Alto Networks GlobalProtect]**: バージョンが 5.0 以降の Palo Alto Networks GlobalProtect アプリに適用できます。
+- **Pulse Secure**
+- **Cisco (IPSec)**
+- **Citrix VPN**
+- **Citrix SSO**
+- **[Zscaler]**: Zscaler Private Access (ZPA) とご利用の Azure AD アカウントを統合することが必要になります。 詳しい手順については、[Zscaler ドキュメント](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO)をご覧ください。 
+- **Custom VPN**
+
+> [!NOTE]
+> Cisco、Citrix、F5、Palo Alto については、iOS 12 ではそれらのレガシー クライアントが動作しないことが発表されています。 できるだけ早く、新しいアプリに移行してください。 詳細については、[Microsoft Intune サポート チームのブログ](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409)を参照してください。
 
 ## <a name="base-vpn-settings"></a>基本 VPN 設定
 
@@ -37,44 +59,28 @@ Microsoft Intune には、ご利用の iOS デバイスに展開できる VPN �
 
     > [!NOTE]
     > Cisco IPsec VPN の認証方法としてユーザー名とパスワードが使われている場合は、カスタム Apple Configurator プロファイルで SharedSecret を配布する必要があります。
-  
-- **[接続の種類]**: 以下のベンダーのリストから VPN 接続の種類を選択します。
-  - **Check Point Capsule VPN**
-  - **[Cisco Legacy AnyConnect]**: 4.0.5x 以前のバージョンの [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) アプリに適用できます。
-  - **[Cisco AnyConnect]**: 4.0.7x 以降のバージョンの [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) アプリに適用できます。
-  - **SonicWall Mobile Connect**
-  - **[F5 Access Legacy]**: バージョンが 2.1 以前の F5 Access アプリに適用できます。
-  - **[F5 Access]**: バージョンが 3.0 以降の F5 Access アプリに適用できます。
-  - **[Palo Alto Networks GlobalProtect (Legacy)]**: バージョンが 4.1 以前の Palo Alto Networks GlobalProtect アプリに適用できます。
-  - **[Palo Alto Networks GlobalProtect]**: バージョンが 5.0 以降の Palo Alto Networks GlobalProtect アプリに適用できます。
-  - **Pulse Secure**
-  - **Cisco (IPSec)**
-  - **Citrix VPN**
-  - **Citrix SSO**
-  - **[Zscaler]**: Zscaler Private Access (ZPA) とご利用の Azure AD アカウントを統合することが必要になります。 詳しい手順については、[Zscaler ドキュメント](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO)をご覧ください。 
-  - **Custom VPN**    
 
-    > [!NOTE]
-    > Cisco、Citrix、F5、Palo Alto については、iOS 12 ではそれらのレガシー クライアントが動作しないことが発表されています。 できるだけ早く、新しいアプリに移行してください。 詳細については、[Microsoft Intune サポート チームのブログ](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409)を参照してください。
-
-* **[除外された URL]** (Zscaler のみ): Zscaler VPN に接続されると、一覧にある URL には Zscaler クラウドの外からアクセスできます。 
+- **[除外された URL]** (Zscaler のみ): Zscaler VPN に接続されると、一覧にある URL には Zscaler クラウドの外からアクセスできます。 
 
 - **[分割トンネリング]**: **[有効]** または **[無効]** にします。これにより、トラフィックに応じて使用する接続がデバイスで判断されます。 たとえば、ホテルにいるユーザーは、業務ファイルへのアクセスに VPN 接続を使用しますが、通常の Web 閲覧にはホテルの標準ネットワークを使用します。
 
-- **[ネットワーク アクセス制御 (NAC) を有効にする]**: この設定は、Citrix などの VPN クライアントのプレース ホルダーです。これにより、ネットワーク アクセス制御 (NAC) で使用する VPN プロファイルにデバイス ID に含めることができます。 **[同意する]** を選択すると、このデバイス ID が VPN プロファイルに含められます。 現時点では、この新しい ID をサポートする VPN クライアントまたは NAC パートナー ソリューションは存在しないので、準拠状態に関係なく、デバイスには VPN への接続が許可されます。 パートナーが ID のサポートを追加した時点で、このドキュメントを更新します。
+- **[VPN 識別子]** (カスタム VPN、Zscaler、Citrix): 使用している VPN アプリの識別子であり、VPN プロバイダーから提供されます。
+  - **[Enter key/value pairs for your organization's custom VPN attributes]\(組織のカスタム VPN 属性に対してキーと値のペアを入力します\)**: VPN 接続をカスタマイズする**キー**と**値**を追加またはインポートします。 これらの値は、通常、ご利用の VPN プロバイダーから提供されることに注意してください。
+
+- **[ネットワーク アクセス制御 (NAC) を有効にする]** (Citrix SSO のみ): **[同意する]** を選択した場合、デバイス ID が VPN プロファイルに含められます。 VPN への認証用にこの ID を使用して、ネットワーク アクセスを許可または禁止することができます。
+
+  **ゲートウェイと共に Citrix SSO を使用する場合**、必ず次の操作を行ってください。
+
+  - Citrix ゲートウェイ 12.0.59 以上を使用していることを確認します。
+  - ユーザーが各自のデバイスに Citrix SSO 1.1.6 以降をインストール済みであることを確認します。
+  - Citrix の配置に関するガイド「[Integrating Microsoft Intune/Enterprise Mobility Suite with NetScaler (LDAP+OTP Scenario)](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf)」(Microsoft Intune/Enterprise Mobility Suite と NetScaler との統合 (LDAP + OTP のシナリオ)) の説明に従って、NAC のために Citrix ゲートウェイを Inture と統合します。
+  - VPN プロファイルで NAC を有効にします。
 
   重要な詳細情報:  
 
-  - この設定を有効にすると、VPN は 24 時間ごとに切断されます。
-  - デバイス ID はプロファイルの一部ですが、Intune で確認することはできず、プロファイル内にも表示されません。 この ID は Microsoft によっていずれの場所にも格納されず、Microsoft によって共有されていません。 VPN パートナーがこれをサポートしたら、Citrix SSO などの VPN クライアントによって ID が取得され、そのデバイスが登録されていることの確認、さらに VPN プロファイルが準拠しているか準拠していないかの確認のために Intune に対してクエリが実行されます。
+  - NAC を有効にすると、VPN は 24 時間ごとに切断されます。
+  - デバイス ID はプロファイルの一部ですが、Intune 内でこれを確認することはできません。 この ID は Microsoft によっていずれの場所にも格納されず、Microsoft によって共有されていません。 VPN パートナーがこれをサポートしたら、Citrix SSO などの VPN クライアントによって ID が取得され、そのデバイスが登録されていることの確認、さらに VPN プロファイルが準拠しているか準拠していないかの確認のために Intune に対してクエリが実行されます。
   - この設定を削除するには、プロファイルを再作成し、**[同意する]** は選択しないでください。 次に、プロファイルを再割り当てします。
-
-## <a name="custom-vpn-settings"></a>カスタム VPN 設定
-
-接続の種類として **[カスタム VPN]** を選択した場合、以下の追加設定を構成します。 Zscaler 接続と Citrix 接続でも、これらの設定が表示されます。
-
-- **[VPN 識別子]**: これは使用している VPN アプリの識別子であり、VPN プロバイダーから提供されます。
-- **[Enter key/value pairs for your organization's custom VPN attributes]\(組織のカスタム VPN 属性に対してキーと値のペアを入力します\)**: VPN 接続をカスタマイズする**キー**と**値**を追加またはインポートします。 これらの値は、通常、ご利用の VPN プロバイダーから提供されることに注意してください。
 
 ## <a name="automatic-vpn-settings"></a>自動 VPN 設定
 

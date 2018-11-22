@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e5442b45ed180d10943dfd5d1a1ef1546d693b2b
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
+ms.openlocfilehash: f7b875d370880f28fa6a611bd5f66fb54b02955d
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903422"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610109"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune を使用してアプリをグループに割り当てる
 
@@ -58,7 +58,7 @@ ms.locfileid: "48903422"
 6. メニューの **[管理]** セクションで、**[割り当て]** を選びます。
 7. **[グループの追加]** を選んで、アプリに関連する **[グループの追加]** ウィンドウを開きます。
 8. 特定のアプリについて、**[割り当ての種類]** を選びます。
-   - **[登録済みデバイスで使用可能]**: ユーザーはアプリをポータル サイト アプリまたは Web サイトからインストールできます。
+   - **[登録済みデバイスで使用可能]**: ポータル サイト アプリまたは Web サイトからアプリをインストールできるユーザーのグループにアプリを割り当てます。
    - **[登録の有無にかかわらず使用可能]**: このアプリを、デバイスが Intune に登録されていないユーザーのグループに割り当てます。 マネージド Google Play のアプリではこのオプションはサポートされません。 
    - **[必須]**: アプリは選択したグループのデバイスにインストールされます。
    - **[アンインストール]**: アプリは選択したグループのデバイスからアンインストールされます。

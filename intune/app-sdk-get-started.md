@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: a8cbe80154e5eac6a48c86101c76faed4602288a
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
+ms.openlocfilehash: 3362de6231aa8b045d064d1f3764cb2b13f5be3c
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915718"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167435"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune アプリ SDK の概要
 
@@ -106,9 +106,6 @@ Microsoft Intune はアプリの利用統計データを収集します。
 
     * エンド ユーザーがこのデータの送信を選択しない場合、ポータル サイト アプリの [設定] で製品利用統計情報をオフにする必要があります。 詳しくは、「[Microsoft による使用状況データの収集を無効にする](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)」をご覧ください。 
 
-
- iOS と Android の基幹業務アプリのバージョン番号が表示可能 <!-- 1380712 -->
-
 ## <a name="line-of-business-app-version-numbers"></a>基幹業務アプリのバージョン番号
 
 Intune では、iOS アプリと Android アプリを対象に、基幹業務アプリのバージョン番号が表示されるようになりました。 Azure Portal のアプリ一覧とアプリ概要ブレードで番号が表示されます。 エンド ユーザーは、ポータル サイト アプリと Web ポータルでアプリ番号を確認できます。
@@ -134,7 +131,7 @@ Intune で使用する基幹業務アプリを開発するときは、バージ�
 Intune|iOS|Android|説明|
 |---|---|---|---|
 バージョン番号|CFBundleShortVersionString|PackageVersionName |この番号は、エンド ユーザー向けにアプリの特定のリリースを示します。|
-ビルド番号|CFBundleVersion|PackageVersionCode |この番号は、アプリ コードのイテレーションを示すために使用されます。|
+［ビルド番号］|CFBundleVersion|PackageVersionCode |この番号は、アプリ コードのイテレーションを示すために使用されます。|
 
 #### <a name="ios"></a>iOS
 
@@ -164,6 +161,23 @@ iOS または Android アプリを Intune アプリ SDK と統合するために
 * **Intune のアプリ保護ポリシー**: Intune のすべてのアプリ保護ポリシーに対して、ご使用のアプリをテストするには、ポリシー設定ごとに想定される動作を把握する必要があります。 [iOS アプリ保護ポリシー](app-protection-policy-settings-ios.md)と [Android アプリ保護ポリシー](app-protection-policy-settings-android.md)の説明を参照してください。
 
 * **トラブルシューティング**: アプリのインストール ユーザー エクスペリエンスを手動でテストしているときに問題が発生した場合は、「[アプリのインストールに関する問題のトラブルシューティング](troubleshoot-app-install.md)」をご覧ください。 
+
+### <a name="give-your-app-access-to-the-intune-app-protection-service-optional"></a>Intune アプリ保護サービスへのアクセス権をアプリに付与する (省略可能)
+
+アプリで認証用に独自のカスタム Azure Active Directory (AAD) 設定を使用している場合、パブリック ストア アプリと内部 LOB アプリの両方に対して次の手順を実行する必要があります。 この手順は、**アプリで Intune SDK の既定のクライアント ID を使用している場合は実行する必要はありません**。 
+
+アプリを Azure テナント内に登録し、それが **[すべてのアプリケーション]** の下に表示されたら、Intune アプリ保護サービス (旧称: MAM サービス) へのアクセス権をアプリに付与する必要があります。 Azure portal で次の操作を行います。
+
+1.  **[Azure Active Directory]** ブレードに移動します。
+2.  **[アプリの登録]** を選択してアプリケーションを設定します。
+3.  **[API アクセス]** 見出しの下の **[設定]** で、**必要なアクセス許可**を選択します。 
+4.  **[+ 追加]** をクリックします。
+5.  **[API を選択します]** をクリックします。 
+6.  検索ボックスに「**Microsoft Mobile Application Management**」と入力します。
+7.  API の一覧で **[Microsoft Mobile Application Management]** を選択し、[選択] をクリックします。
+8.  **[Read and Write the User’s App Management Data]\(ユーザーのアプリ管理データの読み取りと書き込み\)** を選択します。
+9.  **[完了]** をクリックします。
+10. **[アクセス許可の付与]** をクリックして、**[はい]** をクリックします。 
 
 ### <a name="badge-your-app-optional"></a>アプリにバッジを付ける (省略可能)
 

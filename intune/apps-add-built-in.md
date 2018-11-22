@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 908135e93fd3980af9d9e80d9c5cf3b4a8abddc3
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: b12a1233daf2aeb673765342edc81fe32a28146a
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058752"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167418"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>組み込みアプリを Microsoft Intune に追加する
 
@@ -48,7 +48,7 @@ Microsoft Intune の使用可能なアプリに組み込みアプリを追加す
 ## <a name="configure-app-information"></a>アプリ情報の構成
 
 組み込みアプリに関する情報を変更できます。 この情報は、アプリを Intune で識別する場合と、ユーザーが会社のポータルでアプリを探す場合に役立ちます。
-1. **[Mobile Apps -アプリ]** ウィンドウで、変更する組み込みアプリを選択します。  
+1. **[クライアント アプリ] - [アプリ]** ウィンドウで、変更する組み込みアプリを選択します。  
     組み込みアプリのウィンドウが表示されます。
 2. **[管理]** の **[プロパティ]** オプションを選択します。
 3. 組み込みアプリ情報を変更するには、**[構成]** オプションを選択します。

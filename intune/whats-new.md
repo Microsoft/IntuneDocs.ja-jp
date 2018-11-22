@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 1180e085c0584f3da535947cad60c41d06a8026a
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: b96e9b79d70c538982aac52ca822b403d1c0e4f8
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576972"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167588"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,6 +41,15 @@ ms.locfileid: "51576972"
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-november-12-2018"></a>2018 年 11 月 12 日の週
+
+### <a name="network-access-control-nac-support-for-citrix-sso-for-ios----3259404---"></a>iOS 用 Citrix SSO に向けたネットワーク アクセス制御 (NAC) のサポート <!-- 3259404 -->
+
+Citrix によって Citrix ゲートウェイの更新プログラムがリリースされ、Intune で iOS 用 Citrix SSO のネットワーク アクセス制御 (NAC) を使用できるようになりました。 Intune で VPN プロファイル内にデバイス ID を含めることを選択し、このプロファイルを iOS デバイスにプッシュすることができます。 この機能を使用するには、Citrix ゲートウェイに対する最新の更新プログラムをインストールする必要があります。
+
+追加の要件など、NAC の使用に関する詳細については、[iOS デバイスに対する VPN 設定の構成](vpn-settings-ios.md#base-vpn-settings)に関する記事をご覧ください。 
+
 ## <a name="week-of-november-5-2018"></a>2018 年 11 月 5 日の週
 
 ### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>iOS 電子メール プロファイルでの iOS 12 OAuth のサポート <!--2155106 -->
@@ -53,11 +62,7 @@ Intune の iOS 電子メール プロファイルでは、iOS 12 Open Authorizat
 Autopilot を使用してハイブリッド Azure AD 参加済みデバイスを設定できるようになります。 ハイブリッド Autopilot 機能を使用するには、デバイスを組織のネットワークに参加させる必要があります。 詳しくは、「[Intune と Windows Autopilot を使用してハイブリッド Azure AD 参加済みデバイスをデプロイする](windows-autopilot-hybrid.md)」をご覧ください。
 この機能は、今後数日にわたってユーザー ベース全体にロールアウトされます。 そのため、自分のアカウントにロールアウトされるまで、以下の手順を実行できない可能性があります。
 
-### <a name="app-protection-policy-app-settings-for-web-data----2662995----"></a>Web データ用のアプリ保護ポリシー (APP) 設定 <!-- 2662995  -->
-http リンクと https Web リンクの両方の処理、ならびに iOS ユニバーサル リンクおよび Android アプリ リンクを介したデータ転送をより適切に処理できるよう、Android デバイスと iOS デバイスの両方での Web コンテンツに対する APP ポリシー設定が更新されました。  
-
 ## <a name="week-of-october-29-2018"></a>2018 年 10 月 29 日の週
-
 
 ### <a name="app-management"></a>アプリ管理
 
@@ -120,9 +125,6 @@ Intune 内の PowerShell スクリプトは、AAD デバイスのセキュリテ
 
 #### <a name="enrollment-abandonment-report----1382924---"></a>登録の破棄に関するレポート <!-- 1382924 -->
 破棄された登録の詳細を示す新しいレポートを使用できます。**[デバイスの登録]** > **[モニター]** の順に移動します。 詳しくは、「[ポータル サイトの破棄レポート](enrollment-report-company-portal-abandon.md)」をご覧ください。
-
-#### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522---"></a>Autopilot プロファイルを [すべてのデバイス] 仮想グループに割り当てる <!--2715522 -->
-Autopilot プロファイルを [すべてのデバイス] 仮想グループに割り当てられるようになります。 これを行うには、**[デバイスの登録]** > **[Windows の登録]** > **[Deployment Profiles]\(展開プロファイル\)** の順に選択し、プロファイルを選択し、**[割り当て]**、**[割り当て先]** の順に進み、**[すべてのデバイス]** を選択します。 Autopilot プロファイルについて詳しくは、「[Windows Autopilot を使用して Windows デバイスを登録する](enrollment-autopilot.md)」をご覧ください。
 
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>新しい Azure Active Directory terms of use 機能 <!-- 2870393 -->
 Azure Active Directory では、既存の Intune の使用条件の代わりに使用できる terms of use 機能が用意されます。 Azure AD terms of use 機能では、どの使用条件をどのタイミングで表示するかについての柔軟性が高くなり、ローカライズのサポートが強化され、使用条件の表示方法をより細かく制御でき、レポート機能が改善されています。 Azure AD terms of use 機能を使用するには、Enterprise Mobility + Security E3 スイートにも含まれている Azure Active Directory Premium P1 が必要です。 詳しくは、「[ユーザー アクセスに関する会社の使用条件を管理する](terms-and-conditions-create.md)」をご覧ください。
@@ -504,17 +506,6 @@ Android P のリリースをサポートする Android 用 Intune アプリ SDK 
 
 
 ### <a name="device-configuration"></a>デバイス構成
-
-#### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642---"></a>S/MIME を使用して暗号化し、ユーザーの複数のデバイスに署名する <!-- 1333642 -->
-この更新プログラムには、新しくインポートされる証明書プロファイル (**[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]**、該当するプラットフォーム、**[PKCS のインポートされた証明書]** プロファイルの種類の順に選択) を使用する S/MIME メールの暗号化が含まれます。 Intune では、PFX 形式で証明書をインポートできます。 その後、Intune はその同じ証明書を、単一ユーザーによって登録された複数のデバイスに配信できます。 これには、次のものも含まれます。
-
-- ネイティブ iOS メール プロファイルでは、PFX 形式でインポートされた証明書を使用する S/MIME 暗号化を有効にすることができます。
-- Windows Phone 10 デバイス上のネイティブ メール アプリでは、自動的に S/MIME 証明書が使用されます。
-- プライベート証明書は複数のプラットフォームに配信できます。 しかし、すべてのメール アプリで S/MIME がサポートされるわけではありません。
-- 他のプラットフォームでは、S/MIME を有効にするようにメール アプリを手動で構成する必要がある場合があります。  
-- S/MIME 暗号化をサポートするメール アプリでは、発行元の証明書ストアからの読み取りなど、MDM ではサポートできない方法で S/MIME メール暗号化のための証明書の検索を処理する場合があります。
-
-サポート対象: Windows、Windows Phone 10、macOS、iOS、Android
 
 #### <a name="create-device-compliance-policy-using-firewall-settings-on-macos-devices----1497640---"></a>macOS デバイスでファイアウォール設定を使ってデバイスのコンプライアンス ポリシーを作成する <!-- 1497640 -->
 macOS の新しいコンプライアンス ポリシーを作成するとき (**[デバイスのポリシー準拠]** > **[ポリシー]** > **[ポリシーの作成]** > **[プラットフォーム: macOS]** > **[システム セキュリティ]**)、**ファイアウォール**に関するいくつかの新しい設定を使用できます。 
