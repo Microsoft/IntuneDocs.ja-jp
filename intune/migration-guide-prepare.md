@@ -14,12 +14,13 @@ ms.technology: ''
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: f7bf390bd581e3edee1c94f446e89b16163cadee
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+search.appverid: MET150
+ms.openlocfilehash: 1e21fef5102b22dfe698a9adb73736508452acfe
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021515"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186377"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>フェーズ 1: モバイル デバイス管理 (MDM) に Microsoft Intune を準備する
 
@@ -35,7 +36,7 @@ Intune の設定の詳細について説明する前に、組織のモバイル 
 
 -   どのような種類の接続を使用しますか。 Wi-Fi、移動体通信、VPN ですか。
 
-### <a name="what-do-your-users-need-to-do-on-managed-devices"></a>管理対象デバイスでユーザーが行う作業
+### <a name="what-do-your-users-need-to-do-on-managed-devices"></a>マネージド デバイスでユーザーが行う作業
 
 -   エンド ユーザーにアプリをプロビジョニングする必要がありますか。
 

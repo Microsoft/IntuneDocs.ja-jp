@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f480feae1e1df95567023614744c80ec392e86cb
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: e407b2059d986841541c969e387d77e71c5e5b4b
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236426"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181362"
 ---
 # <a name="manage-your-companys-terms-and-conditions-for-user-access"></a>ユーザー アクセスに関する会社の使用条件を管理する
 
@@ -40,7 +41,7 @@ Intune 管理者は、ユーザーがポータル サイトを使用して以下
 ## <a name="create-terms-and-conditions"></a>使用条件を作成する
 次の手順で使用条件を作成します。 表示名と説明は管理目的で使用されます。条件のプロパティはポータル サイトでユーザーに表示されます。
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
 2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで **[デバイスの登録]** > **[使用条件]** の順に選択します。
 2. **[作成]** を選択します。

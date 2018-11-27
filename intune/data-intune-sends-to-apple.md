@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: b204a956-18ec-11e8-accf-0ed5f89f718b
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e2829ffe4c8dfffd4d23f4c86b2985d41e983799
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ba9d4d779a0f609bf07e4d0d7d9aad83e5d415c5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31023939"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181532"
 ---
 # <a name="data-intune-sends-to-apple"></a>Intune から Apple に送られるデータ
 
@@ -65,7 +66,7 @@ Microsoft Intune が接続を確立する前に、各 Apple サービスの Appl
 | ASM/DEP | デバイス | デバイスのシリアル番号を含む文字列の配列 (空にすることができます)。 |
 | VPP | Intune UserId guid | Intune で生成された GUID |
 | VPP | 管理対象 AppleId UPN | Apple との VPP トークン接続を構成するときに管理者が指定した Apple ID。 |
-| VPP | シリアル番号 | 管理対象デバイスのシリアル番号。 |
+| VPP | シリアル番号 | マネージド デバイスのシリアル番号。 |
 
 Microsoft Intune で Apple サービスの使用を停止してデータを削除するには、Microsoft Intune の Apple トークンを無効にして、Apple アカウントを削除する必要があります。 詳細については、Apple アカウントのアカウントの管理方法を参照してください。
 

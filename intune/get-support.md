@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 47917943188b2b3d0448845b1e356d181ec8f3af
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: 103b509a562e777a28882f21aef2ca36354533f5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410839"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183252"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune のサポートを受ける方法
 
@@ -36,7 +37,7 @@ Microsoft サポートは、Microsoft Intune に世界的な技術、購入前�
 IT 管理者は、**[ヘルプとサポート]** オプションを使用して、Azure portal から Intune 用のオンライン サポート チケットを提出することができます。 サポート チケットを作成するには、ご利用のアカウントを次のいずれかの [Azure Active Directory での管理者ロール](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)に割り当てる必要があります。 
 
 - Intune 管理者 
-- グローバル管理者 
+- 全体管理者 
 - サービス管理者  
 
 

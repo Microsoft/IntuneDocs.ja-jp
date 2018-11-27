@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 7744d8422e774242e0883c8d77814c42fd71895f
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: b8694596851c231c4c7d1a8a5edd448a7506f829
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224827"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186309"
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>iOS ユーザーがアプリを入手する方法
 
@@ -31,11 +32,9 @@ Microsoft Intune を通して配布したアプリをエンド ユーザーが�
 
 **使用可能なアプリ** - ポータル サイト アプリの一覧に表示されるアプリおよびユーザーが必要に応じてインストールするアプリです。
 
+**管理対象のアプリ** -- ポリシーによって管理できて、Intune によって "ラップされた" アプリまたは Intune アプリ ソフトウェア開発キット (SDK) で構築されたアプリです。 これらのアプリは Intune によって管理することができます。また、これらのアプリにはアプリ保護ポリシーを適用することができます。
 
-  **管理対象のアプリ** -- ポリシーによって管理できて、Intune によって "ラップされた" アプリまたは Intune アプリ ソフトウェア開発キット (SDK) で構築されたアプリです。 これらのアプリは Intune によって管理することができます。また、これらのアプリにはアプリ保護ポリシーを適用することができます。
-
-
-  **管理対象外のアプリ** -- ポリシーによって管理でき、Intune によってラップされていないアプリまたは Intune アプリ SDK を組み込んでいないアプリです。 これらのアプリにアプリケーション ポリシーを適用することはできません。
+**管理対象外のアプリ** -- ポリシーによって管理でき、Intune によってラップされていないアプリまたは Intune アプリ SDK を組み込んでいないアプリです。 これらのアプリにアプリケーション ポリシーを適用することはできません。
 
 Apple の制限により、基幹業務アプリおよび管理対象アプリ ストアのアプリはポータル サイト アプリに表示されません。 この問題を回避するため、iOS 用ポータル サイト アプリのアプリ タイルでは、次のように、ユーザーは単一の場所 (ポータル サイト Web サイト) のさまざまなビューですべてのアプリを確認できます。
 

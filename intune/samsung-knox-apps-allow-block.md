@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 28aab246778610691ee78c447fd08f2a923ec6c0
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: ddce0103dd73d6489a3727408671f509b84fe50b
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31830852"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187822"
 ---
 # <a name="use-custom-policies-in-microsoft-intune-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Microsoft Intune でカスタム ポリシーを使用して Samsung KNOX Standard デバイス用のアプリを許可またはブロックする 
 
@@ -33,8 +34,8 @@ ms.locfileid: "31830852"
 
 ## <a name="create-an-allowed-or-blocked-app-list"></a>許可されているアプリまたはブロックされているアプリの一覧の作成
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
+2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ウィンドウで、**[管理]**、**[プロファイル]** の順に選択します。
 2. プロファイルの一覧ウィンドウで、**[プロファイルの作成]** を選択します。

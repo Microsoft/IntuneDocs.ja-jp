@@ -14,19 +14,20 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d9c9027964648ad83c552f7dd7067598cacf560e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: cf5146946fef464d2d74271e0ad801dabbdce13e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836527"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186870"
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Intune Certificate Connector を Symantec PKI Manager Web サービス向けに設定する
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-この記事では、Intune Certificate Connector をインストールして、Intune 管理対象デバイスに、Symantec PKI Manager Web サービスから PKCS 証明書を発行するように構成する方法について説明します。
+この記事では、Intune Certificate Connector をインストールして、Intune マネージド デバイスに、Symantec PKI Manager Web サービスから PKCS 証明書を発行するように構成する方法について説明します。
 
 この記事を通して、Symantec PKI Manager Web サービスを Symantec CA と呼びます。 Microsoft 証明機関 (CA) から PKCS 証明書および SCEP 証明書を発行するように Intune Certificate Connector を構成済みの場合、同じ Certificate Connector を使用して Symantec CA の PKCS 証明書を構成し発行できます。 この場合、Intune Certificate Connector では以下の証明書を発行できます。
 
@@ -167,8 +168,8 @@ Microsoft CA 用および Symantec CA 用に Intune Certificate Connector を使
 
 既存の Microsoft CA 用に最新の Intune Certificate Connector を既に使用しており Symantec CA サポートを追加する場合、この手順はスキップします。 それ以外の場合は、Intune の管理ポータルから最新の Intune Certificate Connector をインストールし、次の手順に実行します。
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
+2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
 4. **[デバイス構成]** ウィンドウで **[証明機関]** を選択します。
 5. **[追加]** をクリックして、**[Download the Connector file]\(コネクタ ファイルをダウンロードします\)** を選択します。 インストールするサーバーからアクセスできる場所にダウンロードしたものを保存します。 
@@ -221,7 +222,7 @@ Microsoft CA 用および Symantec CA 用に Intune Certificate Connector を使
  
 ## <a name="create-a-trusted-certificate-profile"></a>信頼済み証明書プロファイルの作成
 
-Intune 管理対象デバイスに展開する PKCS 証明書は、信頼されたルート証明書にチェーンする必要があります。 これを行うには、Symantec CA から取得したルート証明書を使用して Intune の信頼済み証明書プロファイルを作成する必要があります
+Intune マネージド デバイスに展開する PKCS 証明書は、信頼されたルート証明書にチェーンする必要があります。 これを行うには、Symantec CA から取得したルート証明書を使用して Intune の信頼済み証明書プロファイルを作成する必要があります
 
 1. Symantec CA から信頼されたルート証明書を取得します。
 
@@ -292,7 +293,7 @@ Symantec CA の証明書プロファイル テンプレートには、証明書�
 
 3. **[割り当て]** をクリックして、適切なグループを選択します。  割り当てるグループには、1 名以上のユーザーまたは 1 台以上のデバイスが含まれている必要があります。
  
-前のステップを完了すると、Intune Certificate Connector により、割り当てたグループの Intune 管理対象デバイスへ Symantec CA の PKCS 証明書が発行されます。 これらの証明書は、Intune 管理対象デバイスの [現在のユーザー] 証明書ストアの [個人] ストアで使用できるようになります。
+前のステップを完了すると、Intune Certificate Connector により、割り当てたグループの Intune マネージド デバイスへ Symantec CA の PKCS 証明書が発行されます。 これらの証明書は、Intune マネージド デバイスの [現在のユーザー] 証明書ストアの [個人] ストアで使用できるようになります。
 
 ### <a name="pkcs-certificate-profile-supported-attributes"></a>PKCS 証明書プロファイルでサポートされる属性
 
@@ -315,7 +316,7 @@ Intune Certificate Connector サービスのログは、NDES Connector コンピ
 | Symantec プロバイダー - Symantec ポリシーを取得できません “要求は中止されました: SSL/TLS のセキュリティで保護されているチャネルを作成できませんでした。” | このエラーは、次のようなシナリオで発生します。 <br><br> 1.Intune Certificate Connector サービスに、ローカル コンピューターの [個人] ストアのリソース承認証明書とその秘密キーを読み取る十分な権限が設定されていません。 この問題を解決するには、services.msc でコネクタ サービスが実行されているコンテキスト アカウントを確認します。 コネクタ サービスは、NT AUTHORITY\SYSTEM コンテキストで実行する必要があります。 <br><br> 2.Intune 管理ポータルの PKCS 証明書プロファイルに無効な Symantec CA ベース サービス FQDN が設定されている可能性があります。 FQDN は `pki-ws.symauth.com` のように設定します。 この問題を解決するには、この URL が使用中のサブスクリプションに合っているかどうかを Symantec カスタマー サポートに確認してください。 <br><br> 3.Intune Certificate Connector が秘密キーを取得できないため、リソース承認証明書を使用して Symantec CA を認証できません。 この問題を解決するには、ローカル コンピューターの [個人] 証明書ストアにリソース承認証明書とその秘密キーをインストールします。 <br><br> 問題が解決しない場合は、Symantec カスタマー サポートに問い合わせてください。 |
 | Symantec プロバイダー - Symantec ポリシーを取得できません “要求の要素を認識できません。” | クライアント プロファイル OID と Intune 証明書プロファイルが一致しないため、Intune Certificate Connector で Symantec 証明書プロファイル テンプレートを取得できませんでした。 もしくは、Intune Certificate Connector が、Symantec CA で指定のクライアント プロファイル OID に関連付けられている証明書プロファイル テンプレートを見つけられませんでした。 <br><br> この問題を解決するには、Symantec CA の Symantec 証明書テンプレートから適切なクライアント プロファイル OID を取得します。 Intune 管理ポータルで PKCS 証明書プロファイルを更新します。 <br><br> Symantec CA から証明書プロファイル OID を取得します。 <br> 1.Symantec CA 管理ポータルにログオンします。 <br> 2.[Manage Certificate Profiles]\(証明書プロファイルの管理\) をクリックします。 <br> 3.使用する証明書プロファイルを選択します。 <br> 4.証明書プロファイル OID を取得します。 これは次の例のようなものです。 <br> `Certificate Profile OID = 2.16.840.1.113733.1.16.1.2.3.1.1.47196109` <br><br> 適切な証明書プロファイル OID で PKCS 証明書プロファイルを更新します。 <br>1.Intune 管理ポータルにログオンします。 <br> 2.PKCS 証明書プロファイルを選択し、**[編集]** をクリックします。 <br> 3.[証明書テンプレート名] フィールドの証明書プロファイル OID を更新します。 <br> 4.PKCS 証明書プロファイルを保存します。 |
 | Symantec プロバイダー - ポリシーの検証に失敗しました。 <br><br> Symantec でサポートされる証明書テンプレートの属性一覧に属性が含まれていません | Symantec 証明書プロファイル テンプレートと Intune 証明書プロファイルに不一致がある場合、Symantec CA によりこのメッセージが表示されます。 この問題の原因は、SubjectName 属性または SubjectAltName 属性の不一致であると考えられます。 <br><br> この問題を解決するには、Symantec 証明書プロファイル テンプレートの SubjectName および SubjectAltName に対して Intune でサポートされる属性を選択します。 詳細については、証明書パラメーターに関するセクションで Intune でサポートされる属性をご覧ください。 |
-| 一部のユーザー デバイスで、Symantec CA から PKCS 証明書が受信されません。 | この問題は、ユーザー UPN にアンダースコアなどの特殊文字 (例: `global_admin@intune.onmicrosoft.com`) が含まれている場合に発生します。 <br><br> Symantec CA の mail_firstname および mail_lastname では特殊文字はサポートされません。 <br><br> この問題を解決するには、次の手順を実行します。 <br><br> 1. Symantec CA 管理ポータルにログオンします。 <br> 2.[Manage Certificate Profiles]\(証明書プロファイルの管理\) に移動します。 <br> 3. Intune で使用している証明書プロファイルをクリックします。 <br> 4.[Customize options]\(カスタマイズ オプション\) リンクをクリックします。 <br> 5. [Advanced options]\(詳細オプション\) ボタンをクリックします。 <br> 6.証明書の [Subject DN]\(サブジェクト DN\) フィールドの下に [Common Name (CN)]\(共通名 (CN)\) フィールドを追加し、既存の [Common Name (CN)]\(共通名 (CN)\) フィールドを削除します。 追加と削除は一度に実行する必要があります。 <br> 7.  [Save] をクリックします。 <br><br> 上記の変更により、Symantec 証明書プロファイルでは mail_firstname と mail_lastname の代わりに “CN=<upn>” が要求されるようになります。 |
+| 一部のユーザー デバイスで、Symantec CA から PKCS 証明書が受信されません。 | この問題は、ユーザー UPN にアンダースコアなどの特殊文字 (例: `global_admin@intune.onmicrosoft.com`) が含まれている場合に発生します。 <br><br> Symantec CA の mail_firstname および mail_lastname では特殊文字はサポートされません。 <br><br> この問題を解決するには、次の手順を実行します。 <br><br> 1. Symantec CA 管理ポータルにログオンします。 <br> 2.[Manage Certificate Profiles]\(証明書プロファイルの管理\) に移動します。 <br> 3. Intune で使用している証明書プロファイルをクリックします。 <br> 4.[Customize options]\(カスタマイズ オプション\) リンクをクリックします。 <br> 5. [Advanced options]\(詳細オプション\) ボタンをクリックします。 <br> 6.証明書の [Subject DN]\(サブジェクト DN\) フィールドの下に [Common Name (CN)]\(共通名 (CN)\) フィールドを追加し、既存の [Common Name (CN)]\(共通名 (CN)\) フィールドを削除します。 追加と削除は一度に実行する必要があります。 <br> 7.  [保存] をクリックします。 <br><br> 上記の変更により、Symantec 証明書プロファイルでは mail_firstname と mail_lastname の代わりに “CN=<upn>” が要求されるようになります。 |
 | ユーザーが、展開済みの証明書をデバイスから手動で削除しました。 | Intune により、次のチェックイン時またはポリシー適用中に同一の証明書が再展開されます。 この場合、NDES Connector は PKCS 証明書要求を受信しません。 |
 
 ## <a name="next-steps"></a>次の手順

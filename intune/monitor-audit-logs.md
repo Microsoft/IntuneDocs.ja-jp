@@ -11,12 +11,13 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: c7c8b860be9722138f8bd804a66131328b592022
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+search.appverid: MET150
+ms.openlocfilehash: d9ecfa44e2619e5e123c9e8af169b6a8a95ee466
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2018
-ms.locfileid: "29962448"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183895"
 ---
 # <a name="audit-logs-for-intune-activities"></a>Intune のアクティビティの監査ログ
 監査ログには、Microsoft Intune で変更を行うアクティビティが記録されます。 作成、更新 (編集)、削除、割り当ての操作またはリモート タスクが実行されると、確認可能な監査イベントが生成されます。 Intune ワークロードの監査ログの大半を確認できます。 すべてのユーザーは既定で監査が有効になっています。無効にすることはできません。 監査イベントは、2017 年 12 月の機能リリース日から記録が開始されました。これよりも前の監査イベントは利用できません。
@@ -29,8 +30,8 @@ ms.locfileid: "29962448"
 
 ## <a name="audit-logs-for-intune-workloads"></a>Intune ワークロードの監査ログ
 各 Intune ワークロードの監視グループで監査ログを確認できます。  
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
+2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[デバイス]** などの監査ログを確認するワークロードを選択します。
 4. ワークロードの**監視**グループで、**[監査ログ]** を選択します。
 

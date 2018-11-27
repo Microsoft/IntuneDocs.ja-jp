@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ff1f4f6a728fc041241371a413ce9d2dfdf89605
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: a606f63bd22ce2ed543b6c5863ddc4f35d7ea212
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236460"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186207"
 ---
 # <a name="add-a-device-compliance-policy-for-android-enterprise-devices-in-intune"></a>Intune で Android エンタープライズ デバイス用のデバイス コンプライアンス ポリシーを追加する
 
@@ -40,10 +41,10 @@ Intune を使用して組織のリソースを保護する場合、デバイス�
 | **PIN またはパスワードの構成** |  検疫済み |
 | **デバイスの暗号化** |  検疫済み |
 | **脱獄またはルート化されたデバイス** | 検疫済み (設定ではありません) |
-| **電子メールのプロファイル** | 適用なし |
+| **電子メールのプロファイル** | 適用できません |
 | **最小 OS バージョン** | 検疫済み |
 | **最大 OS バージョン** | 検疫済み |
-| **Windows 正常性構成証明書** |適用なし |
+| **Windows 正常性構成証明書** |適用できません |
 
 **修復** = デバイス オペレーティング システムによって準拠が強制されます  たとえば、ユーザーは PIN を設定するように強制されます。
 
@@ -58,7 +59,7 @@ Intune を使用して組織のリソースを保護する場合、デバイス�
 4. **[プラットフォーム]** で、**[Android エンタープライズ]** を選択します。 
 5. **[設定]、[構成]** の順に選択します。 この記事の説明に従って、**[デバイスのヘルス]**、**[デバイス プロパティ]**、および **[システム セキュリティ]** の設定を入力します。
 
-## <a name="device-health"></a>デバイスのヘルス
+## <a name="device-health"></a>Device health
 
 - **[ルート化されたデバイス]**: **[ブロック]** を選択すると、ルート化された (脱獄された) デバイスが非準拠としてマークされます。 **[未構成]** (既定値) を選択した場合、準拠しているか準拠していないかについて、この設定は評価されません。
 - **[デバイスは、デバイス脅威レベル以下であることが必要]**: この設定は、Lookout MTP ソリューションからのリスク評価をコンプライアンスの条件とする場合に使用します。 **[未構成]** (既定値) を選択した場合、準拠しているか準拠していないかについて、この設定は評価されません。 この設定を使用するには、許容された脅威レベルを選択します。

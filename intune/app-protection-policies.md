@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3a7285edfa2dcb50cc5fd28e4fefc1be4c3b9e10
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
+ms.openlocfilehash: 2e0331210a10727ff5753e6c227777cd1ebb16d9
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679275"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185971"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>アプリ保護ポリシーを作成して割り当てる方法
 
@@ -28,7 +29,7 @@ ms.locfileid: "50679275"
 
 Microsoft Intune アプリ保護ポリシーを作成してユーザーに割り当てる方法について説明します。 このトピックでは、既存のポリシーを変更する方法についても説明します。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>始める前に
 
 アプリ保護ポリシーは、場合によっては Intune で管理できないデバイスで実行されているアプリに適用できます。 アプリ保護ポリシーのしくみと Intune のアプリ保護ポリシーでサポートされるシナリオの詳細については、[Microsoft Intune のアプリ保護ポリシー](app-protection-policy.md)に関するページを参照してください。
 
@@ -84,7 +85,7 @@ Microsoft Intune ライセンスが割り当てられているユーザーのみ
 >[!IMPORTANT]
 > Intune を使用し、Configuration Manager によってデバイスを管理する場合、このポリシーは、選択したグループ直下のユーザーにのみ適用されます。 選択したグループ内で入れ子になっている子グループのメンバーは、影響を受けません。
 
-エンド ユーザーは App Store または Google Play からアプリをダウンロードできます。 詳細については、「
+エンド ユーザーは App Store または Google Play からアプリをダウンロードできます。 詳細については、次をご覧ください。
 * [アプリ保護ポリシーを使用して Android アプリを管理するときの注意点](app-protection-enabled-apps-android.md)
 * [アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点](app-protection-enabled-apps-ios.md)
 
@@ -133,7 +134,7 @@ Intune アプリ保護ポリシーの対象はユーザーの ID であるため
 
 iOS の場合、Intune に登録されているデバイスのアプリに APP 設定を行うには、さらにアプリを構成設定する必要があります。
 - **IntuneMAMUPN** を、MDM で管理されているすべてのアプリケーションに構成する必要があります。 詳細については、「[Microsoft Intune で iOS アプリ間のデータ転送を管理する方法](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)」を参照してください。
-- すべてのサードパーティ製アプリケーションと LOB MDM マネージド アプリケーションに **IntuneMAMDeviceID** を構成する必要があります。 **IntuneMAMDeviceID** を、デバイスの ID トークンに構成する必要があります。 例: `key=IntuneMAMDeviceID, value={{deviceID}}`。 詳細については、「[管理対象の iOS デバイス用アプリ構成ポリシーを追加する](https://docs.microsoft.com/intune/app-configuration-policies-use-ios)」を参照してください。
+- すべてのサードパーティ製アプリケーションと LOB MDM マネージド アプリケーションに **IntuneMAMDeviceID** を構成する必要があります。 **IntuneMAMDeviceID** を、デバイスの ID トークンに構成する必要があります。 たとえば、`key=IntuneMAMDeviceID, value={{deviceID}}` のように指定します。 詳細については、「[管理対象の iOS デバイス用アプリ構成ポリシーを追加する](https://docs.microsoft.com/intune/app-configuration-policies-use-ios)」を参照してください。
 - **IntuneMAMDeviceID** のみが構成されている場合、Intune APP はデバイスが管理対象であると見なしません。  
 
 > [!NOTE]

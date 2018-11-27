@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0b2a31a90dc0d88386a829756116edebd28990f9
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: 5cd16a351beefd851d51175717abd4400382c216
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602182"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185238"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Intune での Android デバイス向けのキオスク設定
 
@@ -47,7 +48,7 @@ ms.locfileid: "45602182"
 
 Android キオスク デバイスに複数のアプリを設定するには、次の主な手順を実行します。
 
-1. [managed Google Play から Managed Home Screen アプリをインポートし、展開する](#import-and -deploy-the-managed-home-screen-app)
+1. [managed Google Play から Managed Home Screen アプリをインポートし、展開する](#import-and-deploy-the-managed-home-screen-app)
 2. [キオスク モードで使用できるアプリを追加し、割り当てる](#add-and-assign-apps-that-can-be-used-in-kiosk-mode)
 3. (任意) [キオスク モードで使用できる Web リンクを追加する](#add-web-links-that-can-be-used-in-kiosk-mode)
 

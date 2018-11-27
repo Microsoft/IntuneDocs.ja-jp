@@ -12,20 +12,21 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 30b4cf585edd7153ee01710ce8c572593056454f
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: c408c19a630daff9ca1b238afcef9bb9193f5c98
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117873"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179510"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>デバイスを Intune と同期して最新のポリシーとアクションを取得する
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-デバイスの**同期**のアクションは、選択したデバイスの Intune との即座の同期を強制的に実行します。 チェックインしたデバイスには、それに対して保留中のアクションまたはポリシーが即座に割り当てられます。 この機能により、次のスケジュールされたチェックインを待たずに、割り当てられたポリシーの検証およびトラブルシューティングを即座に実行できるようになります。
+デバイスの**同期**のアクションは、選択したデバイスの Intune との即座の同期を強制的に実行します。 チェックインしたデバイスには、それに対して保留中のアクションまたはポリシーが即座に割り当てられます。 この機能により、次のスケジュールされたチェックインを待たずに、割り当てられたポリシーの検証およびトラブルシューティングを即座に実行できるようになります。
 
 ## <a name="supported-platforms"></a>サポートされているプラットフォーム
 

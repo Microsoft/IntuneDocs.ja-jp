@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: muhosabe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6132e77c4f4a86a30a55d436219f0d7e2a49980c
-ms.sourcegitcommit: ff6db80cb3638e1eec0a4c8b185649363e9e552e
+ms.openlocfilehash: 318bde24e42bfdf9bbcf15d83f42405fc06f7901
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49806325"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184218"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Intune および Exchange Online 用に Exchange サービス コネクタを構成する
 この記事では、Microsoft Intune サービスを Exchange Online サービスまたは新しい Exchange Online Dedicated サービスに接続する方法を説明します。 Exchange Online Dedicated 環境が**新しい**バージョンか**従来の**バージョンかを確認するには、アカウント マネージャーに問い合わせてください。

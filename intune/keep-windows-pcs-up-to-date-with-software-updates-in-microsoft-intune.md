@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 6c20a54be851bba4343c383b722ca3e034e76a1c
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: 7c6bdbde87f6438696b5a262ba1890532dcfccdd
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310625"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180863"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Microsoft Intune でソフトウェア更新プログラムを使用して Windows PC を最新の状態に保つ
 
@@ -160,8 +161,7 @@ Microsoft 以外のソフトウェアの更新プログラムを展開できま�
 
 6.  ファイルのパス、名前、Windows インストーラーの製品コード、レジストリ キーなどの検出規則の構成に必要な追加情報を指定し、**[次へ]** を選択します。
 
-7.  ウィザードの **[要件]** ページで、この更新プログラムをインストールする前にインストールしておく必要があるソフトウェアを指定します。 
-  **[なし]** を指定し、既に追加されて Intune で管理されているソフトウェア パッケージを選択するか、ソフトウェアを説明する次の規則のいずれかを指定することができます。
+7.  ウィザードの **[要件]** ページで、この更新プログラムをインストールする前にインストールしておく必要があるソフトウェアを指定します。 **[なし]** を指定し、既に追加されて Intune で管理されているソフトウェア パッケージを選択するか、ソフトウェアを説明する次の規則のいずれかを指定することができます。
 
     -   **ファイルが存在します**
 

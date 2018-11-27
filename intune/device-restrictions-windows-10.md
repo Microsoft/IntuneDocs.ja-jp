@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ac0348736e5975633776c86dee88555dfceb6919
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: c49da9c323e1c4124ad76ae64e63a177edfcaa71
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576887"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189981"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Intune での Windows 10 (以降) の設定に対するデバイスの制限
 この記事では、Windows 10 を実行するデバイスに構成できるすべての Microsoft Intune デバイスの制限設定について説明します。

@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: ba1ee5a6811457b8c6e7343de7355261a2fcecdb
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 44a6d89b649514a08193d7144dff7d89dc3d9c55
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236756"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183368"
 ---
 # <a name="company-portal-abandonment-report"></a>ポータル サイトの破棄レポート
 
@@ -71,7 +72,7 @@ ms.locfileid: "50236756"
 
 #### <a name="setup-checklist-section"></a>[セットアップ チェックリスト] セクション
 
-| 破棄名 | 画面またはフロー | プラットフォーム | 処理 |
+| 破棄名 | 画面またはフロー | プラットフォーム | 操作 |
 | ---- |---- |---- |---- |
 | EnrollmentWrapUp | ポータル サイトでページを開くプロンプト | iOS/Android | **キャンセル** |
 | EnrollmentWrapUp | **[会社のリソースを読み込んでいます]** が終わるまで [デバイスを登録しています] 画面 | iOS/Android | 30 分以上かかった |
@@ -81,7 +82,7 @@ ms.locfileid: "50236756"
 
 #### <a name="platform-screens-section"></a>[プラットフォーム画面] セクション
 
-| 破棄名 | 画面またはフロー | プラットフォーム | 処理 |
+| 破棄名 | 画面またはフロー | プラットフォーム | 操作 |
 | ---- |---- |---- |---- |
 | iOSProfileLaunch | 構成プロファイルを表示するプロンプト | iOS | **無視** |
 | iOSProfileLaunch | [Installing profile]\(プロファイルのインストール\) 画面 | iOS | **キャンセル** |
@@ -94,14 +95,14 @@ ms.locfileid: "50236756"
 
 #### <a name="terms-of-use-section"></a>[利用規約] セクション
 
-| 破棄名 | 画面またはフロー | プラットフォーム | 処理 |
+| 破棄名 | 画面またはフロー | プラットフォーム | 操作 |
 | ---- |---- |---- |---- |
 | TermsofUse | (管理者が構成している場合) 利用規約 | iOS/Android | **すべて拒否** |
 | TermsofUse | **[Accept all]** \(すべて承諾\) まで利用規約 | iOS/Android | 30 分以上かかった |
 
 #### <a name="complianceactivation-section"></a>[コンプライアンス/アクティブ化] セクション
 
-| 破棄名 | 画面またはフロー | プラットフォーム | 処理 |
+| 破棄名 | 画面またはフロー | プラットフォーム | 操作 |
 | ---- |---- |---- |---- |
 | コンプライアンス | 登録後のアクセス設定で (管理者が構成している場合) [デバイスのポリシー準拠] が緑色でない| iOS/Android | **延期** |
 | コンプライアンス | 更新され緑色になるまで [デバイスのポリシー準拠] が緑色でない | iOS/Android | 30 分以上かかった |

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3d48bc6f710aa329a3427bbd245c286c1ccdce32
-ms.sourcegitcommit: 4d5e811d451aeb6307e0f64818e182e471ae1ed4
+ms.openlocfilehash: 531b09f4ef35e47b7415f63ad3d43fd5a66a72ec
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51619043"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181050"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune の Android アプリ保護ポリシー設定
 この記事では、Android デバイスのアプリ保護ポリシーの設定について説明します。 説明されているポリシーの設定は、Azure Portal の **[設定]** ブレードでアプリ保護ポリシー用に[構成](app-protection-policies.md)することができます。

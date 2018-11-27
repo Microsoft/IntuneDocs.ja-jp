@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 49194d49658042802cbc1148276445008ee1b09f
-ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
+ms.openlocfilehash: a9828f1b8a24e4f7d871f9e6e6f67e9f6c6fb197
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30254555"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182773"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune の macOS エンドポイント保護設定
 
@@ -30,7 +31,7 @@ ms.locfileid: "30254555"
   - **[Mac App Store and identified developers]\(Mac App Store と確認済みの開発者\)**
   - **[どこでも]**
 
-- **[ユーザーはゲートキーパーを上書きできます]**: ユーザーがゲートキーパー設定を上書きすることを禁止し、Control キーを押しながらクリックしてアプリをインストールすることを防止します。 有効にすると、ユーザーはあらゆるアプリを Control キーを押しながらクリックし、インストールできます。
+- **[ユーザーはゲートキーパーをオーバーライドできます]**: ユーザーがゲートキーパー設定をオーバーライドすることを禁止し、Control キーを押しながらクリックしてアプリをインストールすることを防止します。 有効にすると、ユーザーはあらゆるアプリを Control キーを押しながらクリックし、インストールできます。
 
 ## <a name="firewall"></a>ファイアウォール
 

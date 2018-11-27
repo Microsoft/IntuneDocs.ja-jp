@@ -13,12 +13,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up Windows Autopilot so that users can enroll in Intune.
-ms.openlocfilehash: a90f53bfc5841cc0f773751e7df917d8fc8b6cf8
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+ms.custom: intune
+ms.openlocfilehash: 087f890f84c9bc0ff0c46f129ef84b8a268c738e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49431936"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187737"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>チュートリアル: Autopilot を使用して Intune に Windows デバイスを登録する
 Windows Autopilot を使用すると、デバイスの登録が簡単になります。 Microsoft Intune と Autopilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および適用を行わなくてもデバイスをエンド ユーザーに提供することができます。 
@@ -71,7 +75,7 @@ Windows Autopilot の設定で最初にやることは、Intune への Windows �
 
 次に、デバイス グループを作成し、読み込んだ Autopilot デバイスをそこに格納します。
 
-1. [Azure portal の Intune](https://aka.ms/intuneportal) で、**[グループ]** > **[新しいグループ]** を選択します。
+1. [Azure portal の Intune](https://aka.ms/intuneportal) で、**[グループ]** > **[新しいグループ]** の順に選択します。
 2. **[グループ]** ブレードで、次の手順を実行します。
     1. **[グループの種類]** で、**[セキュリティ]** を選択します。
     2. **[グループ名]** に、「*Autopilot Group*」と入力します。 **[グループの説明]** に「*Test group for Autopilot devices*」と入力します。

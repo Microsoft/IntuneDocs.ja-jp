@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fc7aac337c01db3098be5f699db22c3a81c6eb75
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 175491e53ba9b1fbd41ac8bec8841c600b6916fb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236613"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184558"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Volume Purchase Program で購入した iOS アプリを Microsoft Intune で管理する方法
 
@@ -61,7 +62,7 @@ iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purc
 
 また、サードパーティの開発者も、iTunes Connect に指定されているビジネス メンバーに、認められたボリューム購入プログラムにプライベートでアプリを配布できます。 VPP for Business のメンバーは、Volume Purchase Program App Store にサインインし、アプリを購入できます。 エンド ユーザーが購入した VPP for Business アプリはそのユーザーの Intune テナントに同期されます。
 
-## <a name="before-you-start"></a>開始前の準備
+## <a name="before-you-start"></a>開始する前に
 開始する前に、Apple から VPP トークンを取得し、それを Intune アカウントにアップロードする必要があります。 さらに、次の条件を理解する必要があります。
 
 * 複数の VPP トークンを Intune アカウントに関連付けることができます。
@@ -80,7 +81,7 @@ iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purc
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Apple VPP トークンを取得およびアップロードするには
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
 2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3.  **[Intune]** ウィンドウで、**[セットアップ]** の **[クライアント アプリ]** > **[iOS VPP トークン]** の順に選択します。
 4.  VPP トークンの一覧ウィンドウで、**[作成]** を選択します。
@@ -120,13 +121,13 @@ iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purc
 
 エンド ユーザーには、さまざまなシナリオで VPP アプリ インストールのプロンプトが表示されます。 次の表は、各条件を説明したものです。
 
-| # | シナリオ                                | Apple VPP プログラムへの招待                              | アプリ インストールのプロンプト | Apple ID のプロンプト |
+| # | 通信の種類                                | Apple VPP プログラムへの招待                              | アプリ インストールのプロンプト | Apple ID のプロンプト |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD – ユーザー ライセンスあり                             | 可能                                                                                               | 可能                                           | 可能                                 |
-| 2 | Corp – ユーザー ライセンスあり (非監視対象デバイス)     | 可能                                                                                               | 可能                                           | 可能                                 |
-| 3 | Corp – ユーザー ライセンスあり (監視対象デバイス)         | 可能                                                                                               | N                                           | 可能                                 |
-| 4 | BYOD – デバイス ライセンスあり                           | N                                                                                               | 可能                                           | N                                 |
-| 5 | CORP – デバイス ライセンスあり (非監視対象デバイス)                           | N                                                                                               | 可能                                           | N                                 |
+| 1 | BYOD – ユーザー ライセンスあり                             | Y                                                                                               | Y                                           | Y                                 |
+| 2 | Corp – ユーザー ライセンスあり (非監視対象デバイス)     | Y                                                                                               | Y                                           | Y                                 |
+| 3 | Corp – ユーザー ライセンスあり (監視対象デバイス)         | Y                                                                                               | N                                           | Y                                 |
+| 4 | BYOD – デバイス ライセンスあり                           | N                                                                                               | Y                                           | N                                 |
+| 5 | CORP – デバイス ライセンスあり (非監視対象デバイス)                           | N                                                                                               | Y                                           | N                                 |
 | 6 | CORP – デバイス ライセンスあり (監視対象デバイス)                           | N                                                                                               | N                                           | N                                 |
 | 7 | キオスク モード (監視対象デバイス) – デバイス ライセンスあり | N                                                                                               | N                                           | N                                 |
 | 8 | キオスク モード (監視対象デバイス) – ユーザー ライセンスあり   | --- | ---                                          | ---                                |

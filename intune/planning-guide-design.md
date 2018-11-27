@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 8e73a9cf189ba44a9f093559b9175dfa947a38e1
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
+ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864593"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186496"
 ---
 # <a name="create-a-design"></a>設計の作成
 
@@ -34,11 +35,11 @@ Intune の設計は、[このガイドの他のセクション](planning-guide.m
 
 -   デバイスのプラットフォームに関する考慮事項
 
--   配布する要件  
+-   配布する要件  
 
 オンプレミスのインフラストラクチャに関する最低限の要件はあるものの、設計計画があれば、目標、目的、および要件に合った適切なモバイル デバイス管理ソリューションを手に入れるために役立ちます。
 
-これらの各項目について詳しく説明します。 
+これらの各項目について詳しく説明します。 
 
 ## <a name="record-your-current-environment"></a>現在の環境を記録する
 また、実装とテストのフェーズで設計に変更が発生することはよくあります。 設計計画を使用して、そのような変更が発生した場合に変更の内容とその背後にある論理的根拠を文書化します。

@@ -14,26 +14,27 @@ ms.technology: ''
 ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c30d20592a95f7894bb040f9e8fe5a2e3ddd0166
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
+ms.openlocfilehash: 1584344907df168a98f947e187d6f0f0ef4a492a
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915752"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187923"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>ビジネス向け Microsoft ストアから購入したアプリを Microsoft Intune で管理する方法
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-[ビジネス向け Microsoft ストア](https://www.microsoft.com/business-store)では、組織用のアプリを見つけて、個別または大量に購入することができます。 Microsoft Intune にストアを接続することで、Azure Portal からボリューム購入アプリを管理することができます。 例:
+[ビジネス向け Microsoft ストア](https://www.microsoft.com/business-store)では、組織用のアプリを見つけて、個別または大量に購入することができます。 Microsoft Intune にストアを接続することで、Azure Portal からボリューム購入アプリを管理することができます。 次に例を示します。
 * ストアから購入したアプリの一覧を Intune に同期することができます。
 * 同期されているアプリは Intune 管理コンソールに表示され、他のアプリと同様に割り当てることができます。
 * 使用可能なライセンス数、および Intune 管理コンソールで使用中のライセンス数を追跡することができます。
 * 使用可能なライセンス数が不足している場合、Intune はアプリの割り当てとインストールをブロックします。
 * ユーザーが企業を退社したとき、または管理者がユーザーとユーザー デバイスを削除したときに、ビジネス向け Microsoft ストアによって管理されているアプリはライセンスを自動的に取り消します。
 
-## <a name="before-you-start"></a>開始前の準備
+## <a name="before-you-start"></a>開始する前に
 
 ビジネス向け Microsoft ストアのアプリを同期して割り当てる前に、以下のことを確認してください。
 
@@ -62,7 +63,7 @@ Intune コンソールで同期を有効にする前に、以下の手順に従�
 
 ## <a name="configure-synchronization"></a>同期を構成する
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
 2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[クライアント アプリ]** を選択します。
 1. **[クライアント アプリ]** ウィンドウで、**[セットアップ]** > **[ビジネス向け Microsoft Store]** の順に選択します。

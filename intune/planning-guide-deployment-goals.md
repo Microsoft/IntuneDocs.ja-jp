@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: f76e227037efd6ea8ee7ea95d61f3358698af1d9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 10598f4868a42b9736b6b33a6d9b5c4b4b308967
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2018
-ms.locfileid: "29961471"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189352"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>展開の目標、目的、課題を判別する
 
@@ -78,7 +79,7 @@ ms.locfileid: "29961471"
 
 展開の課題は、組織が最も関心を寄せる問題で、それにより展開に悪影響が及ぶ可能性があります。 課題は、以前のプロジェクトで発生した、回避すべき過去の問題に関連していることもあれば、現在の展開での取り組みに関する新しい問題に関連していることもあります。 次の一覧では、Intune 展開の課題の例と、可能性のある対策を示します。
 
--   サポートの準備やエンド ユーザー エクスペリエンスは、最初のプロジェクト スコープには含まれません。 このため、エンド ユーザーに採用されにくいといった問題やサポート組織の課題が生じています。
+-   サポートの準備やエンド ユーザー エクスペリエンスは、最初のプロジェクト スコープには含まれません。 このため、エンド ユーザーに採用されにくいといった問題やサポート組織の課題が生じています。
 
     -   **対策:** サポート トレーニングを組み込みます。 展開計画で定めた成功の指標を使用して、エンド ユーザー エクスペリエンスを検証します。
 

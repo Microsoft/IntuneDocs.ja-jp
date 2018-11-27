@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: da149ea2870880a35352e9d37a91c5c39f7a7438
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: b58f6f360cf034be11153a57227da42ed1e29388
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602080"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189777"
 ---
 # <a name="reference-for-current-user-entity"></a>現在のユーザー エンティティのリファレンス
 

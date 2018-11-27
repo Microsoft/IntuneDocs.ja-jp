@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d039cfe5509990ff15fe8a1cb476ad44037d60df
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: fcf6f3071e50304216a182a21dd542cace1b6390
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021015"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186462"
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>ユーザーとデータ アクセスを管理するためのグループを作成する
 
@@ -31,7 +32,7 @@ Microsoft Intune は Azure Active Directory (Azure AD) を利用し、会社の�
 ## <a name="how-do-i-create-a-group"></a>グループの作成方法
 
 1. [Azure ポータル](https://portal.azure.com)にサインインします。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Microsoft Intune]** ウィンドウを開いたら、**[グループ]** を選択します。
 4. **[ユーザーとグループ - すべてのグループ]** ウィンドウで、**[新しいグループ]** コマンドを選択します。
 5. **[グループ]** ウィンドウで、**[グループの種類]** を選択します。

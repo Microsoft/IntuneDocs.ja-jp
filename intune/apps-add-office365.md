@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 740eee3324a9dc2266b987e119694e2ff70fe2e9
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: c98eb7795ca01db9a78b428faf433109928cff76
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236375"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182272"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune で Windows 10 デバイスに Office 365 アプリを割り当てる
 
@@ -29,7 +30,7 @@ ms.locfileid: "50236375"
 > [!NOTE]
 > Microsoft Intune で展開された Office 365 ProPlus アプリをアクティブ化するには、Office 365 ProPlus ライセンスを使用する必要があります。 現時点では、Office 365 Business Edition は Intune ではサポートされていません。
 
-## <a name="before-you-start"></a>開始前の準備
+## <a name="before-you-start"></a>開始する前に
 
 > [!IMPORTANT]
 > .msi Office アプリがエンド ユーザー デバイスにある場合、それらのアプリを安全にアンインストールするには **MSI 削除**機能を使用する必要があります。 そうしないと、Intune 配信の Office 365 アプリをインストールできません。
@@ -121,7 +122,7 @@ ms.locfileid: "50236375"
 
 ||||
 |-|-|-|
-|Status|フェーズ|説明|
+|状態|フェーズ|説明|
 |1460 (ERROR_TIMEOUT)|ダウンロード|Office 展開ツールのダウンロードに失敗しました|    
 |13 (ERROR_INVALID_DATA)|-|ダウンロードした Office 展開ツールの署名を確認できません|
 |CertVerifyCertificateChainPolicy からのエラー コード|-|ダウンロードした Office 展開ツールの証明書の確認に失敗しました|    
@@ -137,7 +138,7 @@ ms.locfileid: "50236375"
 
 |||||
 |-|-|-|-|
-|シナリオ|リターン コード|UI|メモ|
+|通信の種類|リターン コード|UI|メモ|
 |アクティブなクイック実行のインストールがないときに、アンインストールします|-2147418113、0x8000ffff または 2147549183|エラー コード: 30088-1008<br>エラー コード: 30125-1011 (404)|Office 展開ツール|
 |MSI バージョンがインストールされているときに、インストールします|1603|-|Office 展開ツール|
 |インストールが、ユーザーまたは別のインストールによって取り消されました|17002|-|クイック実行|

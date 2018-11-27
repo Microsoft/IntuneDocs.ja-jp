@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fe8a55153ccc2b28c23ec2f32a4285d20afaaf6a
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: f0ff43e5a25a2f2d7d97564e638d01b014ab81cb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48232184"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181073"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune との Lookout Mobile Threat Defense 統合を設定する
 
@@ -50,11 +51,11 @@ Lookout を Intune に統合するために、Lookout Mobility Endpoint Security
 
 次の手順に従って、Lookout サポート チームに提供する必要のある情報を収集してください。
 
-1. [Azure Portal](https://portal.azure.com) にサインインして、サブスクリプションを選択します。 
+1. [Azure Portal](https://portal.azure.com) にサインインして、サブスクリプションを選択します。 
 
-2. サブスクリプションの名前を選択すると、表示される URL にサブスクリプション ID が含まれています。  サブスクリプション ID を検索する際に問題が生じた場合は、サブスクリプション ID の検索方法に関するヒントが記載されているこちらの [Microsoft サポート記事](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b)を参照してください。
+2. サブスクリプションの名前を選択すると、表示される URL にサブスクリプション ID が含まれています。  サブスクリプション ID を検索する際に問題が生じた場合は、サブスクリプション ID の検索方法に関するヒントが記載されているこちらの [Microsoft サポート記事](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b)を参照してください。
 
-3. Azure AD のグループ ID を確認します。 Lookout コンソールでは、次の 2 つのレベルのアクセスがサポートされます。  
+3. Azure AD のグループ ID を確認します。 Lookout コンソールでは、次の 2 つのレベルのアクセスがサポートされます。  
    * **フル アクセス:** Azure AD の管理者は、フル アクセス権を持つユーザーのグループを作成できるだけでなく、必要に応じて制限付きアクセス権を持つユーザーのグループも作成できます。  これらのグループのユーザーだけが、**Lookout コンソール**にログインできます。
    * **制限付きアクセス:** このグループのユーザーは、Lookout コンソールの構成と登録に関するモジュールにはアクセスできません。Lookout コンソールの**セキュリティ ポリシー** モジュールには読み取り専用でアクセスできます。  
 

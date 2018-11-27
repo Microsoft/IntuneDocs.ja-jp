@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7ff30ef609cf2ad742b55d80f418919bf4ab144a
-ms.sourcegitcommit: d40bfb6af66f2ce7026c0151ace98ec23f1cf76e
+ms.openlocfilehash: 40549d8fa9bead312f39ca9a782fb555e1022cd6
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33927442"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180410"
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>iOS Classroom アプリの Intune 設定を構成する方法
 
@@ -74,8 +75,8 @@ SDS は SIS の情報を同期し、それを Azure AD に保管します。 Azu
 
 ### <a name="configure-general-settings"></a>全般的な設定を構成する
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
-2. **[すべてのサービス]**、**[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
+2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
 2. **[デバイス構成]** ウィンドウの **[管理]** セクションで、**[プロファイル]** を選択します。
 5.  [プロファイル] ウィンドウで **[プロファイルの作成]** を選択します。

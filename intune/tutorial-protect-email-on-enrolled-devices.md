@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5e88108d6c438bf2c192516be44908c4d76dfa9f
-ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
+ms.openlocfilehash: 2c23ad2c63fad8c74666e3c1ae9acc543e48f8e8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49652123"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181872"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>チュートリアル: マネージド デバイス上で Exchange Online の電子メールを保護する
 デバイス コンプライアンス ポリシーと条件付きアクセスを使用して、iOS デバイスが Intune によって管理され、承認されたメール アプリを使用している場合にのみ、Exchange Online のメールにアクセスできるようにする方法を説明します。 
