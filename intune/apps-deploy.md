@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f7b875d370880f28fa6a611bd5f66fb54b02955d
-ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.openlocfilehash: a9afde942f2784cb2fb42b13d11a127e3c9811a1
+ms.sourcegitcommit: 3903f20cb5686532ccd8c36aa43c5150cee7cca2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51610109"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52267256"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune を使用してアプリをグループに割り当てる
 
@@ -65,6 +66,8 @@ ms.locfileid: "51610109"
 
      > [!NOTE]
      > **iOS アプリの場合のみ**: アプリごとの VPN 設定を含む iOS VPN プロファイルを作成した場合は、**[VPN]** で VPN プロファイルを選ぶことができます。 アプリが実行されると、VPN 接続が開かれます。 詳細については、「[iOS デバイス向けの VPN 設定](vpn-settings-ios.md)」を参照してください。
+     >
+     > **Android アプリのみ**: **[登録の有無にかかわらず使用可能]** として Android アプリを展開する場合、レポートの状況は登録済みデバイスでのみ使用できます。
 
 9. このアプリ割り当てによって影響を受けるユーザーのグループを選ぶには、**[組み込まれたグループ]** を選びます。
 10. 含めるグループを 1 つ以上選んだ後、**[選択]** を選びます。

@@ -5,20 +5,21 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 60d9398b80a30adee194470ac4e5c6c1efc0bd4c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 7cb7c23e673c9e0c074f45991333fde9bfc8e930
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744637"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186190"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>TeamViewer を使用して、Intune デバイスをリモートで管理する
 
@@ -58,7 +59,10 @@ TeamViewer を使用すると、Intune コネクタ用 TeamViewer での TeamVie
 
 ![TeamViewer を使用して Android デバイスをリモート管理する - 例](./media/android-teamviewer.png)
 
-リモート セッションを開始すると、エンド ユーザーのデバイスのポータル サイト アプリのアイコンに通知フラグが表示されます。 通知は、アプリを開いたときにも表示されます。 その後、ユーザーはリモート アシスタンス要求を受け入れることができます。
+リモート セッションを開始すると、ユーザーのデバイス上で、ポータル サイト アプリのアイコンに通知フラグが表示されます。 通知は、アプリを開いたときにも表示されます。 これで、ユーザーはリモート アシスタンス要求を受け入れられるようになります。
+
+> [!NOTE]
+> DEM や WCD など、"ユーザーレス" メソッドを使用して登録された Windows デバイスの場合、ポータル サイト アプリに TeamViewer 通知が表示されません。 このようなシナリオでは、TeamViewer ポータルを使用してセッションを生成することをお勧めします。
 
 TeamViewer では、デバイスの制御など、デバイスでさまざまな操作を完了できます。 実行できる操作の詳細については、[TeamViewer ガイダンス](https://www.teamviewer.com/support/documents/)を参照してください。
 

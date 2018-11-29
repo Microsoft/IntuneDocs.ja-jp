@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ad8e874dda47b7c6deeb614b0f893f7c922241ce
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 29a3f6c6e320f970ef7b2b086b8d25ab82453199
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236341"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179407"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 デバイスの Intune で PowerShell スクリプトを管理する
 Intune 管理拡張機能を使用すると、Windows 10 デバイスで実行されている Intune で PowerShell スクリプトをアップロードできます。 この管理拡張機能は Windows 10 モバイル デバイス管理 (MDM) 機能を補完するもので、最新の管理に簡単に移行できます。
@@ -27,9 +28,9 @@ Intune 管理拡張機能を使用すると、Windows 10 デバイスで実行�
 ## <a name="moving-to-modern-management"></a>最新の管理への移行
 エンドユーザーのコンピューティングはデジタル変換を経ています。 従来の IT 担当者は、単一のデバイス プラットフォーム、企業所有のデバイス、オフィスで働くユーザー、および手動で事後対応型の多様な IT プロセスに重点を置きます。 一方、最近の職場では、ユーザーと企業の両方が所有する複数のデバイス プラットフォームに対応し、ユーザーがどこからでも作業できるようにして、自動化された事前対応型の IT プロセスを提供しています。 
 
-Microsoft Intune などの MDM サービスは、MDM プロトコルを使用して Windows 10 デバイスを管理できます。 組み込みの Windows 10 管理クライアントは、Intune と通信してエンタープライズ管理タスクを実行できます。 そのため、Windows 10 デバイスで最新の管理に移行できます。 ただし、高度なデバイスの構成、トラブルシューティング、Windows 10 MDM では現在使用できないレガシ Win32 アプリ管理など、特定の機能が必要な場合があります。 このような機能のために、Windows 10 デバイスで Intune ソフトウェア クライアントを実行することができます。 その場合は、Windows 10 MDM が提供する新しい機能を使用できません。 [Intune ソフトウェア クライアントと Windows 10 MDM の違いを比較してください](https://docs.microsoft.com/intune-classic/deploy-use/pc-management-comparison)。
+Microsoft Intune などの MDM サービスは、MDM プロトコルを使用して Windows 10 デバイスを管理できます。 組み込みの Windows 10 管理クライアントは、Intune と通信してエンタープライズ管理タスクを実行できます。 そのため、Windows 10 デバイスで最新の管理に移行できます。 ただし、Windows 10 に組み込まれている MDM 機能では使用できない高度なデバイス構成など、必要な機能がいくつかあります。
 
-Intune 管理拡張機能は、インボックス Windows 10 MDM 機能を補完するものです。 必要な機能を提供する PowerShell スクリプトを作成して、Windows 10 デバイスで実行することができます。 たとえば、Windows 10 デバイスにレガシ Win32 アプリをインストールする PowerShell スクリプトを作成し、スクリプトを Intune にアップロードし、スクリプトを Azure Active Directory (AD) グループに割り当て、Windows 10 デバイスでスクリプトを実行することができます。 Windows 10 デバイスでスクリプトの実行状態を最初から完了まで監視できます。
+Intune 管理拡張機能は、インボックス Windows 10 MDM 機能を補完するものです。 必要な機能を提供する PowerShell スクリプトを作成して、Windows 10 デバイスで実行することができます。 カスタム設定を構成し、Intune にスクリプトをアップロードし、Azure Active Directory (AD) グループにスクリプトを割り当て、Windows 10 デバイス上でスクリプトを実行する PowerShell スクリプトを作成できます。 Windows 10 デバイス上でスクリプトの実行状態を最初から完了までスクリプトを監視できます。
 
 ## <a name="prerequisites"></a>必要条件
 Intune 管理拡張機能には次の前提条件があります。
@@ -55,7 +56,6 @@ Intune 管理拡張機能には次の前提条件があります。
 3. スクリプトを受信するデバイスを持つユーザーが属する 1 つまたは複数のグループを選択します。 **[選択]** をクリックして、選択したグループにポリシーを割り当てます。
 
 > [!NOTE]
-> - PowerShell スクリプトをコンピューター グループに適用することはできません。
 > - エンドユーザーは、PowerShell スクリプトを実行するためにデバイスへのログインを要求されません。 
 > - Intune 内の PowerShell スクリプトは、AAD デバイスのセキュリティ グループを対象にすることができます。
 

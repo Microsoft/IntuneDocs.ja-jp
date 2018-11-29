@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/15/2017
+ms.date: 11/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,17 +14,26 @@ ms.technology: ''
 ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 05502c901f01ba134475ec69df3c42aa6e0e7480
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: eedbc17147c6f9e2988d954308f2332de10d00ab
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231757"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189845"
 ---
 # <a name="review-client-app-protection-logs"></a>クライアント アプリの保護ログのレビュー
 
-アプリ保護ログで確認できる設定について説明します。 モバイル クライアント上のアプリケーションの Intune 診断モードを有効にして、ログにアクセスします。 次の表に、ログに記録される設定の名前と説明を示します。
+アプリ保護ログで確認できる設定について説明します。 モバイル クライアント上で Intune 診断を有効にして、ログにアクセスします。 
+
+ログを有効にして収集するプロセスは、プラットフォームによって変わります。
+- **Android デバイス** - *ポータル サイト*を使用します。 「[電子メールでログを会社のサポートに送信する](/intune-user-help/send-logs-to-your-it-admin-by-email-android)」を参照してください。
+- **iOS デバイス** - Managed Browser または *Microsoft Edge* を使用してログを収集します。 詳細については、[Intune Managed Browser のログ送信用の新しい Intune 診断コンソール](https://blogs.technet.microsoft.com/intunesupport/2017/11/10/support-tip-new-intune-diagnostic-console-for-log-submission-in-the-intune-managed-browser)に関する Intune サポート チームのブログを参照してください。 
+- **Windows 10 デバイス** - *MDMDiag* とイベント ログを使用します。 Windows クライアント管理コンテンツの「[Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)」(Windows 10 の MDM エラーの診断) と、ブログ「[Troubleshooting Windows 10 Intune Policy Failures](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures)」(Windows 10 Intune ポリシー エラーのトラブルシューティング) を参照してください
+
+
+次の表に、ログに記録される設定の名前と説明を示します。
 
 ## <a name="app-protection-policy-settings"></a>アプリ保護ポリシー設定
 

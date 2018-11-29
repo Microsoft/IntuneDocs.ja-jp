@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e4330d8e8095df49b14ab60c4b08aae44d134452
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
+ms.openlocfilehash: ffb7ecc9bfd183c6fa7a863a5b1440ee7d25b0f3
+ms.sourcegitcommit: 0dbce0415e53fe963dc7f927ac4b0c06411f199c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679221"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281073"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-macos"></a>macOS を実行するデバイス用に Microsoft Intune で VPN 設定を構成する
 
@@ -56,6 +57,6 @@ ms.locfileid: "50679221"
 
 ## <a name="proxy-settings"></a>プロキシの設定
 
-- **[自動構成スクリプト]** - ファイルを使用してプロキシ サーバーを構成します。 構成ファイルが格納されている**プロキシ サーバーの URL** を入力します (例: `** http://proxy.contoso.com**`)。
+- **[自動構成スクリプト]** - ファイルを使用してプロキシ サーバーを構成します。 構成ファイルを含む**プロキシ サーバー URL** を入力します。 たとえば、「`http://proxy.contoso.com`」と入力します。
 - **[アドレス]** - プロキシ サーバーのアドレスを (IP アドレスとして) 入力します。
 - **[ポート番号]** - プロキシ サーバーに関連付けられているポート番号を入力します。

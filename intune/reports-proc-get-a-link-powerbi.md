@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5020b1653dd92587805e471e80808e34f3007a84
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
+ms.openlocfilehash: e2c4335b17397833fdae9e95fecc2677c8068150
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494032"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187346"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Power BI でデータ ウェアハウスに接続する
 
@@ -53,7 +54,7 @@ Power BI ファイル (pbix) には、テナントの接続情報と、データ
 > [!Important]  
 > 各 Power BI ファイル (pbix) は、テナントの場所によって異なる場合があります。 複数の Intune テナントを管理している場合は、必ずそのテナントにログインした状態で Azure Portal からダウンロードしたファイルを使用します。  
 
-1.  Azure Portal にサインインし、**[監視 + 管理]** > **[Intune]** の順に選択します。 **Intune** のリソースを検索することもできます。  
+1.  Azure portal にサインインし、**[監視 + 管理]** > **[Intune]** を選択します。  **Intune** のリソースを検索することもできます。  
 2.  **[Microsoft Intune データ ウェアハウス API (プレビュー)]** ブレードを開きます。
 3.  **[Power BI ファイルのダウンロード]** を選択します。 拡張子が pbix のファイルが、指定した場所にダウンロードされます。
 4.  Power BI でファイルを開きます。 *Intune データ ウェアハウス レポート*が読み込まれますが、テナント データの取得に少し時間がかかる可能性があります。
@@ -64,7 +65,7 @@ Power BI ファイル (pbix) には、テナントの接続情報と、データ
 
 Azure AD に対してクライアントが認証されていると、OData URL は、データ ウェアハウス API で、データ モデルをレポート クライアントに公開している RESTful エンドポイントに接続します。 Power BI Desktop を使用して接続して独自のレポートを作成するするには、次の手順を実行します。 OAUTH2.0 認証と OData v4.0 標準をサポートしているクライアントであれば、Power BI Desktop だけでなく、OData URL にお気に入りの分析ツールを使用できます。
 
-1.  Azure Portal にサインインし、**[監視 + 管理]** > **[Intune]** の順に選択します。 **Intune** のリソースを検索することもできます。  
+1.  Azure portal にサインインし、**[監視 + 管理]** > **[Intune]** を選択します。  **Intune** のリソースを検索することもできます。  
 2.  **[Microsoft Intune データ ウェアハウス API (プレビュー)]** ブレードを開きます。
 3. たとえば、`https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta` などのレポート ブレードからカスタム フィード URL を取得します。
 4. **Power BI Desktop** を開きます。

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6deed5de94b72ec3dfb5e8336cc2a58678b4748f
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: aad6687a110642f3b21dc0cff3a791f4714c7949
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231476"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187465"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Zimperium Mobile Threat Defense コネクタと Intune
 
@@ -58,7 +59,7 @@ Intune と Zimperium を統合する場合のシナリオのいくつかを、�
 
 ### <a name="control-access-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいてアクセスを制御する
 
-ネットワークで **Man-in-the-middle** のような脅威を検出し、デバイスのリスクに基づいて Wi-Fi ネットワークへのアクセスを保護します。
+ネットワークで **中間者攻撃** のような脅威を検出し、デバイスのリスクに基づいて Wi-Fi ネットワークへのアクセスを保護します。
 
 **Wi-Fi 経由のネットワーク アクセスをブロックする:**
 
@@ -70,7 +71,7 @@ Intune と Zimperium を統合する場合のシナリオのいくつかを、�
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいて SharePoint Online へのアクセスを制御する
 
-ネットワークで **Man-in-the-middle** のような脅威を検出し、デバイスのリスクに基づいて会社内のファイルの同期を阻止します。
+ネットワークで **中間者攻撃** のような脅威を検出し、デバイスのリスクに基づいて会社内のファイルの同期を阻止します。
 
 **ネットワークの脅威が検出されたときに SharePoint Online をブロック:**
 
@@ -94,7 +95,7 @@ Intune と Zimperium を統合する場合のシナリオのいくつかを、�
 
 -   Zimperium Mobile Threat Defense サブスクリプション
 
-    -   詳細については、[Zimperium Web サイト](https://www.zimperium.com/zips-mobile-ips)を参照してください。
+    -   詳細については、 [Zimperium の Web サイト](https://www.zimperium.com/zips-mobile-ips) を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 
