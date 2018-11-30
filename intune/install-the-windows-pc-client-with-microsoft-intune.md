@@ -12,13 +12,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 322a60101132d5ef435752079bb5c52a7a4b3a78
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 9059ddb164dfa57ed76b57141aad89dbb716a09f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425021"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179085"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Windows PC に Intune ソフトウェア クライアントをインストールする
 
@@ -256,7 +257,7 @@ Intune 管理コンソールを使用してソフトウェア クライアント
 
 登録解除プロセスでは、OnlineManagement フォルダーが削除されません。 アンインストール後、30 分待ち、このコマンドを実行します。 30 分待たずに実行した場合、アンインストールの状態がわからなくなる可能性があります。 フォルダーを削除するには、プロンプトを管理者特権で開き、次を実行します。
 
-    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>次の手順
 [Microsoft Intune を使用してデバイスを管理する](device-management.md)

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: dab6f5c8-1ebb-42c4-a7a7-7af001f94e15
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 39efa1b85bd06b7c1b5e553d0ff6058f6eeeb64e
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: 6d0a7485aa25dee74bf54192fa931d081be81cd8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576737"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184515"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>クイック スタート: クライアント アプリを追加して割り当てる
 
@@ -48,7 +49,7 @@ Intune にアプリを追加するには、次の手順に従います。
 4. **[OK]** をクリックし、既定で選択されているアプリを受け入れます。
 5. **[アプリ スイートの情報]** を選択します。
 6. **[スイート名]** として「**Microsoft Office 365 アプリ スイート**」と入力します。
-7. **[スイートの説明]** として「**Microsoft Office 365 アプリ スイート**」と入力します。 as the <bpt id="p1">**</bpt>Suite Description<ept id="p1">**</ept>.
+7. **[スイートの説明]** として「**Microsoft Office 365 アプリ スイート**」と入力します。
 8. **[Display this as a featured app in the Company Portal]** \(このアプリをポータル サイトでおすすめアプリとして表示する\) の横の **[はい]** をクリックします。
 9. **[OK]** をクリックします。
 
