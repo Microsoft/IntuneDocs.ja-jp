@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dfefb17a2d8b9b4041846b879297f388156fee54
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 28c8863e8739563a6b6c9152a46abb6bf50f2db5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312819"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189199"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>ワイプ、インベントリからの削除、デバイス登録の手動解除を使用し、デバイスを削除する
 
@@ -130,7 +131,7 @@ Android の仕事用プロファイルのデバイスから会社データを削
 
 ### <a name="windows"></a>Windows
 
-|［データの種類］|Windows 8.1 (MDM) と Windows RT 8.1|Windows RT|Windows Phone 8.1 および Windows Phone 8|Windows 10|
+|［データの種類］|Windows 8.1 (MDM) と Windows RT 8.1|Windows RT|Windows Phone 8.1 および Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
 |Intune でインストールされた会社のアプリと関連するデータ。|EFS で保護されているファイルのキーは失効します。 ユーザーがファイルを開くことはできません。|会社のアプリは削除されません。|元々ポータル サイトでインストールされたアプリはアンインストールされます。 会社のアプリ データは削除されます。|アプリはアンインストールされます。 サイドローディング キーは削除されます。<br>Windows 10 バージョン 1703 (Creators Update) 以降の場合、Office 365 ProPlus アプリは削除されません。|
 |Settings|Intune ポリシーで設定された構成は強制されなくなります。 ユーザーが設定を変更できます。|Intune ポリシーで設定された構成は強制されなくなります。 ユーザーが設定を変更できます。|Intune ポリシーで設定された構成は強制されなくなります。 ユーザーが設定を変更できます。|Intune ポリシーで設定された構成は強制されなくなります。 ユーザーが設定を変更できます。|
