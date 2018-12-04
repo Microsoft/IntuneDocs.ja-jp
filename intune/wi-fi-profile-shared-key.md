@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: karanda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 59736ad188cf88c994ff93b4a505731afad8f550
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: a7250471e698d32a305755147943311d2150f0b2
+ms.sourcegitcommit: a27a9c4cae47be50807aa3c890f0d5c0c023f04a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186326"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52618188"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>カスタム デバイス プロファイルを使用し、事前共有キーを使用した WiFi プロファイルを作成する - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -34,9 +34,8 @@ ms.locfileid: "52186326"
 ## <a name="before-you-begin"></a>始める前に
 
 - この記事の後半に示されているように、そのネットワークに接続されているコンピューターからコードをコピーした方が簡単な場合があります。
-- Android では、[Android PSK Generator](http://intunepskgenerator.johnathonb.com/) を使用することもできます。
 - OMA-URI 設定をさらに追加することにより、複数のネットワークとキーを追加できます。
-- iOS でプロファイルを構成するには、Mac ステーションで Apple Configurator を使用します。 または、[iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/) を使用します。
+- iOS でプロファイルを構成するには、Mac ステーションで Apple Configurator を使用します。
 - PSK には、64 桁の 16 進数文字列、または 8 から 63 個の印刷可能な ASCII 文字のパスフレーズが必要です。 アスタリスク (*) など、一部の文字はサポートされていません。
 
 ## <a name="create-a-custom-profile"></a>カスタム プロファイルの作成
