@@ -15,12 +15,12 @@ ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 44e7307997df67ad1c1ae6170da3bcc13e99070d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 8c4e5e18c0b995ad84340cdbc07a8a11b09e4f3a
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185051"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112784"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>ポータル サイト アプリで表示されるメッセージに関してエンド ユーザーをサポートする
 
@@ -108,7 +108,7 @@ ms.locfileid: "52185051"
 
 ### <a name="what-it-means"></a>意味
 
-ポータル サイトを Windows 情報保護 (WIP) のアプリ保護ポリシーの **[許可されたアプリ]** または **[適用から除外されるアプリ]** 一覧に追加します。 詳細については、「[Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune)」を参照してください。
+ポータル サイトを Windows 情報保護 (WIP) のアプリ保護ポリシーの **[許可されたアプリ]** または **[適用から除外されるアプリ]** 一覧に追加します。 詳細については、「[Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する](windows-information-protection-policy-create.md)」を参照してください。
 
 ### <a name="see-also"></a>関連項目
 [Intune の使用に関するエンドユーザーへの通知内容](end-user-educate.md)

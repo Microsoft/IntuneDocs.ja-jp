@@ -15,12 +15,12 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 27f3a184e355f63d20a79fd92e8326206f6eee15
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9bbf6f30b7a7490608f9896ae8fe54e27341ccae
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185629"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112325"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Azure コンソールと従来の Intune PC クライアントでの Intune
 
@@ -53,7 +53,7 @@ MDM を使用して管理できない Windows 7 では、Silverlight コンソ�
 
 ## <a name="mdm-capabilities"></a>MDM の機能
 
-PC クライアントと MDM 機能の詳細な比較については、[Windows PC をコンピューターやモバイル デバイスとして管理する場合の比較](https://docs.microsoft.com/intune-classic/deploy-use/pc-management-comparison)に関するページをご覧ください。 MDM の更新プログラムにより、MDM に登録されている Windows 10 デバイスに、Win 32 アプリ用のオプションの評価を含む新しい管理機能が引き続き組み込まれます。 サービスへの最新リリースの追加については、「[新機能](https://docs.microsoft.com/intune/whats-new)」をご覧ください。
+PC クライアントと MDM 機能の詳細な比較については、[Windows PC をコンピューターやモバイル デバイスとして管理する場合の比較](pc-management-comparison.md)に関するページをご覧ください。 MDM の更新プログラムにより、MDM に登録されている Windows 10 デバイスに、Win 32 アプリ用のオプションの評価を含む新しい管理機能が引き続き組み込まれます。 サービスへの最新リリースの追加については、「[新機能](https://docs.microsoft.com/intune/whats-new)」をご覧ください。
 
 ## <a name="switch-from-pc-client-to-mdm"></a>PC クライアントから MDM への切り替え
 
