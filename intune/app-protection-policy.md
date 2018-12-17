@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: d974e6db3543ef3ba0b11cf67989260e429dde4c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
+ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179169"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389871"
 ---
 # <a name="what-are-app-protection-policies"></a>アプリ保護ポリシーとは
 
@@ -66,9 +66,9 @@ MDM をアプリ保護ポリシーと共に使用することで、MDM ありの
 
 
 ### <a name="supported-platforms-for-app-protection-policies"></a>アプリ保護ポリシーでサポートされているプラットフォーム
-Intune アプリの保護ポリシーのプラットフォーム サポートは、Office モバイル アプリケーションのプラットフォーム サポートと連携しています。 詳細については、[Office システム要件](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg)の「**モバイル アプリ**」セクションを参照してください。
+Intune アプリの保護ポリシーのプラットフォーム サポートは、Android および iOS デバイス向けの Office モバイル アプリケーションのプラットフォーム サポートと連携しています。 詳細については、[Office システム要件](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg)の「**モバイル アプリ**」セクションを参照してください。
 
-Windows デバイスは現在サポートされていません。 ただし、Intune で Windows 10 デバイスを登録すると、同様の機能を提供する Windows 情報保護を使用できます。 詳細については、「[Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)」 (Windows 情報保護 (WIP) を使用してエンタープライズ データを保護する) を参照してください。
+Windows デバイスは現在サポートされていません。 ただし、同様の機能を提供する Windows 情報保護を使用できます。 詳細については、「[Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)」 (Windows 情報保護 (WIP) を使用してエンタープライズ データを保護する) を参照してください。
 
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>アプリ保護ポリシーでアプリのデータを保護するしくみ
@@ -146,7 +146,9 @@ iOS 向けと Android 向けの OneDrive アプリと SharePoint アプリを有
 
 複数の ID をサポートするアプリの場合、仕事用や個人用など、複数のアカウントを利用して同じアプリにアクセスできます。アプリが仕事で利用されているときにのみ、アプリ保護ポリシーが適用されます。
 
-たとえば、仕事用アカウントを利用して OneDrive アプリを起動する人がいるとします。 仕事のうちに入る場合、個人ストレージの場所にファイルを移動することができません。 後で、個人のアカウントで OneDrive を使用するとき、個人の OneDrive から制限なしでデータをコピーしたり、移動したりできます。
+個人のコンテキストの例としては、Word で新しいドキュメントの作成を開始するユーザーがいるとします。これは個人のコンテキストと見なされるため、Intune App Protection ポリシーは適用されません。 ドキュメントが企業の OneDrive アカウントに保存された後は、企業のコンテキストと見なされ、Intune App Protection ポリシーが適用されます。
+
+仕事のコンテキストの例としては、仕事用アカウントを利用して OneDrive アプリを起動する人がいるとします。 仕事のうちに入る場合、個人ストレージの場所にファイルを移動することができません。 後で、個人のアカウントで OneDrive を使用するとき、個人の OneDrive から制限なしでデータをコピーしたり、移動したりできます。
 
 - Intune で [MAM と複数の ID](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) をサポートするアプリについての詳細を参照してください。
 

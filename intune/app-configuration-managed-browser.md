@@ -16,12 +16,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d86df4c38e0d4313dbff6ff2cd9111b2126dbaba
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 829b9587849208c40d5e4c0f58169b4f6dfd4153
+ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180937"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52630019"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune のポリシーで保護されたブラウザーを使用してインターネット アクセスを管理する
 
@@ -175,7 +175,12 @@ Outlook は、アプリ保護ポリシーの **[Managed Browser に表示する 
 
 ## <a name="how-to-configure-the-homepage-for-a-protected-browser"></a>保護ブラウザーのホームページを構成する方法
 
-この設定では、ユーザーが保護ブラウザーを開始するか、新しいタブを作成したときに表示するホームページを構成することができます。Microsoft Edge または Managed Browser アプリの構成を作成する手順に従い、以下のキーと値のペアを指定します。
+この設定では、ユーザーが保護ブラウザーを開始するか、新しいタブを作成したときに表示するホームページを構成することができます。 
+- この設定によって、Managed Browser に Web ページが表示されます。  Edge では、ホーム ページのショートカットが代わりに表示されます。
+- ホーム ページ ショートカット アイコンが、検索コントロールの下にアイコンとして表示されます。  編集または削除することはできません。
+- ホーム ページ ショートカットには、区別のために組織の名前が表示されます。  これは常に最初のアイコンとして表示されます。
+
+Microsoft Edge または Managed Browser アプリの構成を作成する手順に従い、以下のキーと値のペアを指定します。
 
 |                                キー                                |                                                           値                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|

@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2407225bfd0cdb5892663bf2e66de36157aaf4e0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 24b64d4d7b2ccd376f666e9d7961706025b6eaad
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182008"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829106"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>デバイス登録なしで管理対象アプリ用アプリ構成ポリシーを追加する
 
@@ -40,7 +40,7 @@ ms.locfileid: "52182008"
       Azure Portal に表示されるプロファイルの説明。
     - **デバイス登録の種類**  
       **[アプリの管理]** を選択します。
-6.  **[関連アプリ]**  を選択し、構成するアプリを選択します。 承認して Intune に同期したアプリの一覧からアプリを選択します。
+6. **[関連アプリ]** を選択して、構成するアプリを選択します。 承認して Intune に同期したアプリの一覧からアプリを選択します。
 7. アプリでサポートする構成設定ごとに、**[名前]** と **[値]** を入力し、省略記号 (**[...]**) を選択します。  
     構成を削除するには、省略記号 (**[...]**) を選択し、**[削除]** を選択します。  
     

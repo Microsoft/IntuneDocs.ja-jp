@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dabd5b6ca2f8bb01421c24cb7c16ab57cf59ef56
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 06b568ee7cc2dc55a8d44cf04b96078b47d8c4b3
+ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180988"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52579168"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Microsoft Intune で SCEP 証明書と PKCS 証明書を削除する
 
@@ -43,8 +43,7 @@ Microsoft Intune で SCEP 証明書と PKCS 証明書をデバイスに追加で
   - 管理者が[ワイプ](devices-wipe.md#wipe) アクションを実行する
   - 管理者が[インベントリからの削除](devices-wipe.md#retire)アクションを実行する
   - デバイスが Azure Active Directory (AD) グループから削除される
-  - コンプライアンス ポリシーがグループ割り当てから削除される
-  - コンプライアンス プロファイルがグループ割り当てから削除される
+  - 証明書プロファイルがグループ割り当てから削除される
 
 - SCEP 証明書は次の場合に取り消されます。
   - 管理者が SCEP プロファイルを変更または更新する
@@ -53,7 +52,6 @@ Microsoft Intune で SCEP 証明書と PKCS 証明書をデバイスに追加で
   - エンドユーザーの登録が解除される
   - 管理者が[ワイプ](devices-wipe.md#wipe) アクションを実行する
   - 管理者が[インベントリからの削除](devices-wipe.md#retire)アクションを実行する
-  - コンプライアンス ポリシーがグループ割り当てから削除される
 
 - SCEP 証明書は次の場合にデバイスに**残ります** (証明書は取り消されず、削除されません)。
   - エンドユーザーが Intune ライセンスを失う
@@ -78,8 +76,7 @@ Microsoft Intune で SCEP 証明書と PKCS 証明書をデバイスに追加で
   - 管理者が Intune ライセンスを取り消す
   - 管理者が Azure AD からユーザーまたはグループを削除する
   - 管理者が PKCS プロファイルを変更または更新する
-  - コンプライアンス プロファイルがグループ割り当てから削除される
-  - コンプライアンス ポリシーがグループ割り当てから削除される 
+  - 証明書プロファイルがグループ割り当てから削除される
 
 
 ## <a name="ios-devices"></a>iOS デバイス
@@ -92,8 +89,7 @@ Microsoft Intune で SCEP 証明書と PKCS 証明書をデバイスに追加で
   - 管理者が[ワイプ](devices-wipe.md#wipe) アクションを実行する
   - 管理者が[インベントリからの削除](devices-wipe.md#retire)アクションを実行する
   - デバイスが Azure Active Directory (AD) グループから削除される
-  - コンプライアンス ポリシーがグループ割り当てから削除される
-  - コンプライアンス プロファイルがグループ割り当てから削除される
+  - 証明書プロファイルがグループ割り当てから削除される
 
 - SCEP 証明書は次の場合に取り消されます。
   - 管理者が SCEP プロファイルを変更または更新する
@@ -102,7 +98,6 @@ Microsoft Intune で SCEP 証明書と PKCS 証明書をデバイスに追加で
   - エンドユーザーの登録が解除される
   - 管理者が[ワイプ](devices-wipe.md#wipe) アクションを実行する
   - 管理者が[インベントリからの削除](devices-wipe.md#retire)アクションを実行する
-  - コンプライアンス ポリシーがグループ割り当てから削除される
 
 - SCEP 証明書は次の場合にデバイスに**残ります** (証明書は取り消されず、削除されません)。
   - エンドユーザーが Intune ライセンスを失う
@@ -118,8 +113,7 @@ Microsoft Intune で SCEP 証明書と PKCS 証明書をデバイスに追加で
   - 管理者が[インベントリからの削除](devices-wipe.md#retire)アクションを実行する
 
 - PKCS 証明書は次の場合に削除されます。
-  - コンプライアンス ポリシーがグループ割り当てから削除される
-  - コンプライアンス プロファイルがグループ割り当てから削除される
+  - 証明書プロファイルがグループ割り当てから削除される
   
 - ルート証明書は次の場合に削除されます。
   - エンドユーザーの登録が解除される
@@ -143,8 +137,7 @@ Microsoft Intune で SCEP 証明書と PKCS 証明書をデバイスに追加で
 - SCEP 証明書は次の場合に取り消されます。
   - 管理者が[インベントリからの削除](devices-wipe.md#retire)アクションを実行する
   - デバイスが Azure Active Directory (AD) グループから削除される
-  - コンプライアンス ポリシーがグループ割り当てから削除される
-  - コンプライアンス プロファイルがグループ割り当てから削除される
+  - 証明書プロファイルがグループ割り当てから削除される
   - 管理者が Azure Active Directory (AD) からユーザーまたはグループを削除する
   - 管理者が SCEP プロファイルを変更または更新する
 
@@ -176,8 +169,7 @@ Microsoft Intune で SCEP 証明書と PKCS 証明書をデバイスに追加で
   - 管理者が Intune ライセンスを取り消す
   - 管理者が Azure AD からユーザーまたはグループを削除する
   - 管理者が PKCS プロファイルを変更または更新する
-  - コンプライアンス プロファイルがグループ割り当てから削除される
-  - コンプライアンス ポリシーがグループ割り当てから削除される 
+  - 証明書プロファイルがグループ割り当てから削除される
   
   
 > [!NOTE]
@@ -191,8 +183,7 @@ Microsoft Intune で SCEP 証明書と PKCS 証明書をデバイスに追加で
   - エンドユーザーの登録が解除される
   - 管理者が[インベントリからの削除](devices-wipe.md#retire)アクションを実行する
   - デバイスが Azure Active Directory (AD) グループから削除される
-  - コンプライアンス ポリシーがグループ割り当てから削除される
-  - コンプライアンス プロファイルがグループ割り当てから削除される
+  - 証明書プロファイルがグループ割り当てから削除される
 
 - SCEP 証明書は次の場合に取り消されます。
   - 管理者が SCEP プロファイルを変更または更新する

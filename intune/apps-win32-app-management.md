@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/15/2018
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0dc1974a57e5a5aa6808936c37e02fd31a7cac7b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 6e8a74763f29707aa3e774be52f7b383b040ec1e
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187296"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829149"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune スタンドアロン - Win32 アプリの管理 (パブリック プレビュー)
 
@@ -29,15 +29,11 @@ Intune スタンドアロンでは、Win32 アプリの管理機能が向上し�
 
 ## <a name="prerequisites-for-public-preview"></a>パブリック プレビューの前提条件
 
-- Windows 10 バージョン 1607 以降 (Enterprise)
+- Windows 10 バージョン 1607 以降 (Enterprise、Pro、Education バージョン)
 - Windows 10 クライアントは次の状態である必要があります 
     - Azure Active Directory (AAD) またはハイブリッド Azure Active Directory に参加している
     - Intune に登録されている (MDM 管理対象)
 - パブリック プレビューでは、Windows アプリケーションのサイズはアプリごとに 8 GB に制限されています 
-
-> [!NOTE]
-> 現在、Windows 10 バージョン 1607 の Pro と Education の各エディションのテストを実施しており、ご意見をお待ちしています。
-
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>Win32 アプリ コンテンツのアップロードを準備する
 
@@ -228,9 +224,13 @@ Intune スタンドアロンでは、Win32 アプリの管理機能が向上し�
 
 この時点で、Intune に Win32 アプリを追加する手順が完了しました。 アプリの割り当てと監視については、「[Microsoft Intune を使用してアプリをグループに割り当てる](https://docs.microsoft.com/intune/apps-deploy)」および「[Microsoft Intune でアプリの情報と割り当てを監視する](https://docs.microsoft.com/intune/apps-monitor)」を参照してください。
 
+## <a name="delivery-optimization"></a>配信の最適化
+
+Windows 10 RS3 以降のクライアントでは、Windows 10 クライアント上の配信最適化コンポーネントを使用して、Intune Win32 アプリ コンテンツがダウンロードされます。 配信の最適化では、既定で有効になるピア ツー ピア機能が提供されます。 配信の最適化は、グループ ポリシーによって、また将来的には Intune MDM を使用して、構成できます。 詳しくは、[Windows 10 の配信の最適化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)に関するページをご覧ください。 
+
 ## <a name="install-required-and-available-apps-on-devices"></a>デバイスに必須および利用可能なアプリをインストールする
 
-エンド ユーザーに対して、必須および利用可能なアプリのインストールのための Windows トースト通知が表示されます。 次の図は、デバイスが再起動されるまでアプリのインストールが完了しない、トースト通知の例を示します。 
+エンド ユーザーには、必要なアプリのインストールと利用可能なアプリのインストールに対する Windows トースト通知が表示されます。 次の図は、デバイスが再起動されるまでアプリのインストールが完了しない、トースト通知の例を示します。 
 
 ![アプリのインストールのための Windows トースト通知のスクリーンショット例](./media/apps-win32-app-08.png)    
 

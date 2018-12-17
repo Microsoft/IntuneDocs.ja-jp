@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 29a3f6c6e320f970ef7b2b086b8d25ab82453199
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2c4fb7000d808d860494d2af572c821b42fa6d5c
+ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179407"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52579185"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 デバイスの Intune で PowerShell スクリプトを管理する
 Intune 管理拡張機能を使用すると、Windows 10 デバイスで実行されている Intune で PowerShell スクリプトをアップロードできます。 この管理拡張機能は Windows 10 モバイル デバイス管理 (MDM) 機能を補完するもので、最新の管理に簡単に移行できます。
@@ -67,6 +67,12 @@ Azure Portal でユーザーとデバイスの PowerShell スクリプトの実�
 **[PowerShell スクリプト]** で、監視するスクリプトを選択し、**[監視]** を選択し、次のいずれかのレポートを選択します。
    - **デバイスの状態**
    - **ユーザーの状態**
+
+## <a name="troubleshoot-powershell-scripts"></a>PowerShell スクリプトをトラブルシューティングする
+
+クライアント コンピューター上のエージェント ログは、一般的に `\ProgramData\Microsoft\IntuneManagementExtension\Logs` にあります。 [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools) を使用してこれらのログ ファイルを表示できます。 
+
+![エージェント ログのスクリーンショット](./media/apps-win32-app-10.png)  
 
 ## <a name="delete-a-powershell-script"></a>Powershell スクリプトを削除する
 **PowerShell スクリプト**で、スクリプトを右クリックし、**[削除]** を選択します。

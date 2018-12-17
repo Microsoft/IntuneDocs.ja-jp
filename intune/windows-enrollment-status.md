@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ada9fee575824d27a6bfdd8f14d4845d228467db
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186084"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52729043"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>登録ステータス ページを設定する
  
@@ -61,6 +61,16 @@ ms.locfileid: "52186084"
 2. 一覧内のプロファイルにカーソルを合わせます。
 3. 3 つの縦向きドットを使用して、そのプロファイルを一覧上の目的の位置にドラッグします。
 
+## <a name="block-access-to-a-device-until-a-specific-application-is-installed"></a>特定のアプリケーションがインストールされるまでデバイスへのアクセスをブロックする
+
+ユーザーがデスクトップにアクセスするためにインストールしておく必要があるアプリを指定できます。
+
+1. Intune で、**[デバイス登録]** > **[Windows 登録]** > **[登録ステータス ページ (プレビュー)]** の順に選択します。
+2. プロファイルを選択して、**[設定]** を選択します。
+3. **[アプリとプロファイルのインストールの進行状況を表示する]** で、**[はい]** を選択します。
+4. **[すべてのアプリとプロファイルがインストールされるまでデバイスの使用をブロックする]** で **[はい]** を選択します。
+5. **[これらの必要なアプリがユーザーまたはデバイスに割り当てられている場合、それらがインストールされるまでデバイスの使用をブロックします]** で **[選択済み]** を選択します。
+ 6. **[アプリを選択]** を選択し、アプリを選択してから、**[選択]** > **[保存]** を選択します。
 
 ## <a name="enrollment-status-page-tracking-information"></a>登録ステータス ページの追跡情報
 

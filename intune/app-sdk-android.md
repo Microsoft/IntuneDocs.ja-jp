@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 12c48a00e4b755409b698d5f2ee6182403802f23
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c556bab6deadc0db0ea625ee3c26bba636ea497d
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190406"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829183"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android 用 Microsoft Intune アプリ SDK 開発者ガイド
 
@@ -639,21 +639,9 @@ ADAL を使用してアプリを構成する一般的な方法を次に示しま
 
 必要に応じて、Authority と NonBrokerRedirectURI を指定できます。
 
-次の手順を使用して Azure AD でアプリを登録します。
-
-Azure portal で次の操作を行います。
-1.  **[Azure Active Directory]** ブレードに移動します。
-2.  **[アプリの登録]** を選択してアプリケーションを設定します。
-3.  **[API アクセス]** 見出しの下の **[設定]** で、**必要なアクセス許可**を選択します。 
-4.  **[+ 追加]** をクリックします。
-5.  **[API を選択します]** をクリックします。 
-6.  検索ボックスに「**Microsoft Mobile Application Management**」と入力します。
-7.  API の一覧で **[Microsoft Mobile Application Management]** を選択し、[選択] をクリックします。
-8.  **[Read and Write the User’s App Management Data]\(ユーザーのアプリ管理データの読み取りと書き込み\)** を選択します。
-9.  **[完了]** をクリックします。
-10. **[アクセス許可の付与]** をクリックして、**[はい]** をクリックします。 
-
-Azure AD へのアプリケーションの登録については、[こちら](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)を参照してください。 
+次の手順を使用して Azure AD にアプリを登録します。
+* Azure AD へのアプリケーションの登録については、[こちら](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)を参照してください。 
+* Android アプリにアプリ保護ポリシー (APP) サービスへのアクセス許可を付与するための手順に従っていることを確認します。 [Intune SDK ガイドの概要](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration)に関するページ内の「Give your app access to the Intune app protection service (optional)」(Intune アプリ保護サービスへのアクセス権をアプリに付与する (省略可能)) の下に記載されている手順を使用します。 
 
 以下の「[条件付きアクセス](#conditional-access)」の要件も参照してください。
 

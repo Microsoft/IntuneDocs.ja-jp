@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 650a358281f89c511bbd56f3807f2ef4a6ba582c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 94e7bc3e3b936489ea34170616d1ab0ad49bafd3
+ms.sourcegitcommit: 8ddd3b0d4636a4516b2a05fa83c60ec111903c6c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190355"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52546042"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する
 
@@ -139,7 +139,7 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
     ![[VPP によるポータル サイトのインストール] のスクリーンショット。](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
 
 7. **[VPP によるポータル サイトのインストール]** にトークンを選択した場合、セットアップ アシスタントの完了直後、シングル アプリ モードでデバイスをロックできます (具体的には、ポータル サイト アプリ)。 **[Run Company Portal in Single App Mode until authentication]\(認証されるまでシングル アプリ モードでポータル サイトを実行する\)** に **[はい]** を選択すると、このオプションが設定されます。 デバイスを使用するには、ポータル サイトを使用したサインインで最初に認証する必要があります。
-    この機能は iOS 11.3.1 以降で最適に動作します。 以前のバージョンを使用すると、インストールに長い時間がかかる場合があります。
+    この機能は iOS 11.3.1 以降のみでサポートされます。
 
 8. **[デバイス管理の設定]** を選択し、このプロファイルを使用するデバイスを監視するかどうかを選択します。
 

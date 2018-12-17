@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 56427f5b6d72d952ce9c388b4d5289d3075b7df0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 35091139e3afaabac4fad0b22fc6096cf7ada7c3
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182273"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728873"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Intune で iOS デバイス用のデバイス コンプライアンス ポリシーの追加
 
@@ -54,7 +54,8 @@ Intune iOS デバイス コンプライアンス ポリシーでは、iOS デバ
 ## <a name="create-a-device-compliance-policy"></a>デバイス コンプライアンス ポリシーの作成
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. **[プラットフォーム]** で **[iOS]** を選択します。 **[設定]** を選択し、**[電子メール]**、**[デバイスのヘルス]**、**[デバイス プロパティ]**、および **[システム セキュリティ]** の設定を入力します。 完了したら、**[OK]**、**[作成]** の順に選択します。
+4. **[プラットフォーム]** で **[iOS]** を選択します。 
+5. **[設定]** を選択し、このトピックの説明に従って、**[電子メール]**、**[デバイスのヘルス]**、**[デバイス プロパティ]**、および **[システム セキュリティ]** の設定を入力します。 完了したら、**[OK]**、**[作成]** の順に選択します。
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -88,6 +89,8 @@ Intune iOS デバイス コンプライアンス ポリシーでは、iOS デバ
 
 - **必要な最小 OS バージョン**: デバイスが最小 OS バージョンの要件を満たしていない場合、非準拠として報告されます。 アップグレード方法に関する情報のリンクが表示されます。 ユーザーは、そのデバイスのアップグレードを行うことを選択できます。 その後、会社のリソースにアクセスできます。
 - **許可される最大 OS バージョン**: ルールに指定された OS バージョンより新しいバージョンの OS がデバイスで使用されている場合、会社のリソースへのアクセスがブロックされます。 そして、IT 管理者に問い合わせることをユーザーに促すメッセージが表示されます。対象の OS バージョンを許可するようにルールが変更されるまで、このデバイスを使用して会社のリソースにアクセスすることはできません。
+- **許可される最小 OS ビルド バージョン**: Apple がセキュリティ更新プログラムを発行するとき、通常は OS バージョンではなくビルド番号が更新されます。 この機能を使用して、デバイスで許可される最小ビルド番号を入力します。 このコンプライアンス チェックでは、iOS 8.0 以降が実行されるデバイスがサポートされます。 
+- **許可される最大 OS ビルド バージョン**: Apple がセキュリティ更新プログラムを発行するとき、通常は OS バージョンではなくビルド番号が更新されます。 この機能を使用して、デバイスで許可される最大ビルド番号を入力します。 このコンプライアンス チェックでは、iOS 8.0 以降が実行されるデバイスがサポートされます。
 
 ## <a name="system-security"></a>システム セキュリティ
 

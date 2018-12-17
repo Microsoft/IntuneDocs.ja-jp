@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 79df4e20a1dcd4a5cbc30ab0c887d53bf205ebbf
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5ff7876ef5c04eb59d1e89ac03b640d4f443cca6
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184745"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728958"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>iOS アプリ保護ポリシー設定
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "52184745"
 
 ポリシーの設定には、"*データ再配置*"、"*アクセス要件*"、"*条件付き起動*" の 3 つのカテゴリがあります。 この記事の "***ポリシーで管理されているアプリ***" という用語は、アプリ保護ポリシーで構成されるアプリを示します。
 
-##  <a name="data-relocation-settings"></a>データ再配置設定
+##  <a name="data-protection-settings"></a>データ保護設定
 
 | Setting | 使用方法 |  
 |------|------| 
@@ -47,7 +47,7 @@ ms.locfileid: "52184745"
 
 
 > [!NOTE]
-> データ再配置の設定では、iOS デバイスの Apple Managed Open In 機能は制御されません。 Apple Managed Open In を使うには、「[Microsoft Intune を使用して iOS アプリ間のデータ転送を管理する](data-transfer-between-apps-manage-ios.md)」をご覧ください。
+> データ保護の設定では、iOS デバイスの Apple Managed Open In 機能は制御されません。 Apple Managed Open In を使うには、「[Microsoft Intune を使用して iOS アプリ間のデータ転送を管理する](data-transfer-between-apps-manage-ios.md)」をご覧ください。
 
 ## <a name="data-transfer-exemptions"></a>データ転送の除外対象
 

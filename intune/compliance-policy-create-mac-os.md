@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 14588563dd261063071c09c1bbd3b428fb375830
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 583a64b5dd91df2ef9e5acbaf129b447aca7f2d9
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184184"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52828996"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Intune で macOS デバイス用のデバイス コンプライアンス ポリシーを追加する
 
@@ -49,7 +49,8 @@ Intune macOS デバイス コンプライアンス ポリシーでは、macOS �
 ## <a name="create-a-device-compliance-policy"></a>デバイス コンプライアンス ポリシーの作成
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. **[プラットフォーム]** で、**[macOS]** を選択します。 **[設定]** を選択し、**[デバイスのヘルス]**、**[デバイス プロパティ]**、および **[システム セキュリティ]** の設定を入力します。 完了したら、**[OK]**、**[作成]** の順に選択します。
+4. **[プラットフォーム]** で、**[macOS]** を選択します。 
+5. **[Settings Configure]\(設定の構成\)** を選択し、この記事の説明に従って、**[デバイスのヘルス]**、**[デバイス プロパティ]**、および **[システム セキュリティ]** の設定を入力します。 完了したら、**[OK]**、**[作成]** の順に選択します。
 
 ## <a name="device-health"></a>デバイスのヘルス
 
@@ -59,6 +60,8 @@ Intune macOS デバイス コンプライアンス ポリシーでは、macOS �
 
 - **[最小 OS バージョン]**: デバイスが最小 OS バージョンの要件を満たしていない場合、非準拠として報告されます。 アップグレード方法に関する情報のリンクが表示されます。 エンド ユーザーは、デバイスのアップグレードを行うことを選択できます。アップグレード後は、会社のリソースにアクセスできます。
 - **[最大 OS バージョン]**: ルールに指定された OS バージョンより新しいバージョンの OS がデバイスで使用されている場合、会社のリソースへのアクセスがブロックされます。 IT 管理者に問い合わせることをユーザーに促すメッセージが表示されます。対象の OS バージョンを許可するようにルールが変更されるまで、このデバイスを使用して会社のリソースにアクセスすることはできません。
+- **[Minimum OS build version]\(最小 OS ビルド バージョン\)**: Apple でセキュリティ更新プログラムが発行されるときは、通常、OS バージョンではなくビルド番号が更新されます。 この機能を使用して、デバイスで許可される最小ビルド番号を入力します。
+- **[Maximum OS build version]\(最大 OS ビルド バージョン\)**: Apple でセキュリティ更新プログラムが発行されるときは、通常、OS バージョンではなくビルド番号が更新されます。 この機能を使用して、デバイスで許可される最大ビルド番号を入力します。
 
 ## <a name="system-security-settings"></a>システム セキュリティ設定
 
