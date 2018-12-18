@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: df84438ca93e50c392b085eb439abe02f074e5c3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cd238a7b779dd5e52e3cf8fb06c8f89db1f76559
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189726"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112927"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Intune のデバイス登録に関するトラブルシューティング
 
@@ -73,12 +73,12 @@ ms.locfileid: "52189726"
 
 > [!NOTE]
 > 
-> デバイスの登録上限を超えないように、デバイス登録マネージャー アカウントを使用します (「[Microsoft Intune のデバイス登録マネージャーを使用した企業所有のデバイスの登録](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)」をご覧ください)。
+> デバイスの登録上限を超えないように、デバイス登録マネージャー アカウントを使用します (「[Microsoft Intune のデバイス登録マネージャーを使用した企業所有のデバイスの登録](device-enrollment-manager-enroll.md)」をご覧ください)。
 > 
 > デバイス登録マネージャー アカウントに追加されているユーザー アカウントのユーザー ログインについて条件付きアクセス ポリシーが適用されている場合、そのアカウントは登録を完了できません。
 
 ### <a name="company-portal-temporarily-unavailable"></a>"ポータル サイトは一時的に使用できません"
-**問題:** デバイスで **ポータル サイトは一時的に使用できません** というエラーがユーザーに表示されます。
+**問題:** デバイスで **"ポータル サイトは一時的に使用できません"** というエラーが表示されます。
 
 **解決方法:**
 
@@ -130,13 +130,13 @@ ms.locfileid: "52189726"
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>会社名に特殊文字が含まれている場合にポリシーの作成またはデバイスの登録ができない
 **問題:** ポリシーを作成することやデバイスを登録することができません。
 
-**解決方法:** [Office 365 管理センター](https://portal.office.com/)で、会社名から特殊文字を削除した後、会社情報を保存します。
+**解決方法:**[Office 365 管理センター](https://portal.office.com/)で、会社名から特殊文字を削除した後、会社情報を保存します。
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>確認済みドメインが複数ある場合にデバイスへのサインインまたはデバイスの登録ができない
 **問題:** この問題は、ADFS に 2 番目の確認済みドメインを追加すると発生する可能性があります。 2 番目のドメインのユーザー プリンシパル名 (UPN) サフィックスを持つユーザーがポータルにログインできなくなる場合や、デバイスを登録できなくなる場合があります。
 
 
-<strong>解決方法:</strong> Microsoft Office 365 ユーザーは、次の場合に、各サフィックスに対して別々の AD FS 2.0 フェデレーション サービス インスタンスを展開する必要があります。
+<strong>解決方法:</strong>Microsoft Office 365 ユーザーは、次の場合に、各サフィックスに対して別々の AD FS 2.0 フェデレーション サービス インスタンスを展開する必要があります。
 - AD FS 2.0 によるシングル サインオン (SSO) を使用する。かつ
 - 組織内にユーザーの UPN サフィックス用のトップ レベル ドメイン (@contoso.com、@fabrikam.com など) を複数持っている。
 
@@ -220,7 +220,7 @@ Android 6.0 へのアップグレードを試みるようユーザーに通知�
 
 ### <a name="android-certificate-issues"></a>Android 証明書に関する問題
 
-**問題**: ユーザーが自分のデバイスで、[*You cannot sign in because your device is missing a required certificate.*]\(デバイスに必要な証明書がないためにサインインすることはできません。) というメッセージを受信します。
+**問題**:ユーザーが自分のデバイス上で、[*You cannot sign in because your device is missing a required certificate.]\(デバイスに必要な証明書がないためにサインインすることはできません。\)* というメッセージを受信します。
 
 **解決方法 1**:
 
@@ -266,12 +266,12 @@ Android デバイスでは、[SSL のサーバー ハロー](https://technet.mic
 |エラー メッセージ|問題|解決策|
 |-------------|-----|----------|
 |NoEnrollmentPolicy|登録ポリシーが見つかりません|Apple Push Notification Services (APNs) 証明書などのすべての登録前提条件が構成済みであること、"プラットフォームとしての iOS" が有効であることを確認します。 手順については、「[iOS および Mac のデバイス管理をセットアップする](ios-enroll.md)」を参照してください。|
-|DeviceCapReached|登録されているモバイル デバイス数が多すぎます。|別のモバイル デバイスを登録する前に、ユーザーは現在登録されているモバイル デバイスの 1 つをポータル サイトから削除する必要があります。 使用しているデバイスの種類ごとの手順 ([Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android)、[iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios)、[Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows)) を参照してください。|
+|DeviceCapReached|登録されているモバイル デバイス数が多すぎます。|別のモバイル デバイスを登録する前に、ユーザーは現在登録されているモバイル デバイスの 1 つをポータル サイトから削除する必要があります。 使用しているデバイスの種類ごとの手順([Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android)、[iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios)、[Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows)) を参照してください。|
 |APNSCertificateNotValid|モバイル デバイスと会社のネットワークとの通信を可能にする証明書に問題があります。<br /><br />|Apple Push Notification Service (APNs) には、登録済みの iOS デバイスに接続するチャネルが用意されています。 次場合、登録は失敗し、このメッセージが表示されます。<ul><li>APN 証明書を取得する手順が完了していない。または</li><li>APN 証明書の有効期限が切れている。</li></ul>ユーザー設定方法の詳細については、「[Active Directory を同期化して Intune にユーザーを追加する](users-add.md)」と[ユーザーとデバイスの整理](groups-add.md)に関するページを確認してください。|
 |AccountNotOnboarded|モバイル デバイスと会社のネットワークとの通信を可能にする証明書に問題があります。<br /><br />|Apple Push Notification Service (APNs) には、登録済みの iOS デバイスに接続するチャネルが用意されています。 次場合、登録は失敗し、このメッセージが表示されます。<ul><li>APN 証明書を取得する手順が完了していない。または</li><li>APN 証明書の有効期限が切れている。</li></ul>詳細については、「[Microsoft Intune を使用して iOS および Mac の管理をセットアップする](ios-enroll.md)」を確認してください。|
 |DeviceTypeNotSupported|ユーザーが iOS 以外のデバイスを使用して登録を試みた可能性があります。 登録しようとしているモバイル デバイスの種類はサポートされていません。<br /><br />デバイスが iOS バージョン 8.0 以降を実行していることを確認します。<br /><br />|ユーザーのデバイスで iOS バージョン 8.0 以降が実行されていることを確認します。|
 |UserLicenseTypeInvalid|ユーザーのアカウントがまだ必要なユーザー グループのメンバーではないため、デバイスを登録できません。<br /><br />|ユーザーが自分のデバイスを登録できるようにするには、ユーザーは適切なユーザー グループのメンバーである必要があります。 このメッセージは、モバイル デバイス管理機関に必要なライセンスの種類をユーザーが持っていないことを示します。 たとえば、次の両方に該当する場合はこのエラーが表示されます。<ol><li>Intune がモバイル デバイス管理機関として設定されている。</li><li>System Center 2012 R2 Configuration Manager ライセンスを使用している。</li></ol>詳細については、以下の記事を参照してください。<br /><br />「[Microsoft Intune を使用して iOS および Mac の管理をセットアップする](ios-enroll.md)」のほか、「[Active Directory を同期化して Intune にユーザーを追加する](users-add.md)」と[ユーザーとデバイスの整理](groups-add.md)に関するページでユーザー設定方法についての情報を確認してください。|
-|MdmAuthorityNotDefined|モバイル デバイス管理機関が定義されていません。<br /><br />|Intune でモバイル デバイス管理機関が設定されていません。<br /><br />[Microsoft Intune の 30 日間の試用版の使用](free-trial-sign-up.md)に関するページの「手順 6: モバイル デバイスを登録してアプリをインストールする」セクションの項目 1 を確認してください。|
+|MdmAuthorityNotDefined|モバイル デバイス管理機関が定義されていません。<br /><br />|Intune でモバイル デバイス管理機関が設定されていません。<br /><br />「手順 6:モバイル デバイスを登録してアプリをインストールする」セクションの項目 1 ([Microsoft Intune の 30 日間の試用版の使用](free-trial-sign-up.md)に関するページ) を確認してください。|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cant-communicate-with-them"></a>デバイスが無効か、管理コンソールとデバイスが通信できない
 **問題:** iOS デバイスが Intune サービスでチェックインしていません。 保護されている企業リソースへのアクセスを維持するには、デバイスがサービスで定期的にチェックインする必要があります。 デバイスがチェックインしないと次のような状態になります。
@@ -348,7 +348,7 @@ Android デバイスでは、[SSL のサーバー ハロー](https://technet.mic
 
 ### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>ユーザーの iOS デバイスが登録画面で 10 分以上スタックしている
 
-**問題**: 登録中のデバイスが次の 2 つの画面のいずれかでスタックする場合があります。
+**問題**:登録中のデバイスが次の 2 つの画面のいずれかでスタックする場合があります。
 - "Microsoft" から最終的な構成を待機している。
 - ガイド付きのアクセス アプリを利用できない。 管理者に問い合わせてください。
 
@@ -364,7 +364,7 @@ Android デバイスでは、[SSL のサーバー ハロー](https://technet.mic
 | VPP によるポータル サイトのインストール | Use token: token address\(トークンの使用: トークン アドレス\) |
 | Run Company Portal in Single App Mode until authentication\(認証されるまでシングル アプリ モードでポータル サイトを実行する\) | はい |
 
-**解決方法**: 問題を解決するには、次の操作を実行する必要があります。
+**解決方法**:問題を解決するには、次の操作を実行する必要があります。
 1. VPP トークンに問題があるかどうかを判断し、修正します。
 2. ブロックされているデバイスを特定します。
 3. 影響を受けているデバイスをワイプします。
@@ -396,9 +396,9 @@ VPP トークンを使用して問題を修正した後は、ブロックされ�
 ## <a name="macos-issues"></a>macOS の問題
 
 ### <a name="macos-enrollment-errors"></a>macOS の登録エラー
-**エラー メッセージ 1:** *It looks like you're using a virtual machine.Make sure you've fully configured your virtual machine, including serial number and hardware model.If this isn't a virtual machine, please contact support.* (仮想マシンを使用しているようです。シリアル番号やハードウェア モデルなど、仮想マシンを完全に構成したことを確認してください。仮想マシンではない場合は、サポートにお問い合わせください。)  
+**エラー メッセージ 1:***It looks like you're using a virtual machine.Make sure you've fully configured your virtual machine, including serial number and hardware model.If this isn't a virtual machine, please contact support.* (仮想マシンを使用しているようです。シリアル番号やハードウェア モデルなど、仮想マシンを完全に構成したことを確認してください。仮想マシンではない場合は、サポートにお問い合わせください。)  
 
-**エラー メッセージ 2:** *We’re having trouble getting your device managed.This problem could be caused if you're using a virtual machine, have a restricted serial number, or if this device is already assigned to someone else.Learn how to resolve these problems or contact your company support.* (デバイスを管理されている状態にする際に問題が発生しました。この問題は、仮想マシンを使用している場合、シリアル番号が制限されている場合、またはこのデバイスが他のユーザーに既に割り当てられている場合に、発生することがあります。これらの問題の解決方法を確認するか、会社のサポートにお問い合わせください。)
+**エラー メッセージ 2**:*We’re having trouble getting your device managed.This problem could be caused if you're using a virtual machine, have a restricted serial number, or if this device is already assigned to someone else.Learn how to resolve these problems or contact your company support.* (デバイスを管理されている状態にする際に問題が発生しました。この問題は、仮想マシンを使用している場合、シリアル番号が制限されている場合、またはこのデバイスが他のユーザーに既に割り当てられている場合に、発生することがあります。これらの問題の解決方法を確認するか、会社のサポートにお問い合わせください。)
 
 **問題:** このメッセージは、次のいずれかの理由の結果である可能性があります。  
 * macOS 仮想マシン (VM) が正しく構成されていません  
@@ -450,7 +450,7 @@ iOS 登録エラーの一覧は、「[Troubleshooting iOS device enrollment prob
 
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>コンピューターは既にサービスに登録されています - エラー hr 0x8007064c
-**問題:** **"The machine is already enrolled"** (コンピューターは既にサービスに登録されています) というエラーが発生し、登録に失敗します。 登録ログにはエラー **hr 0x8007064c** が記録されます。
+**問題:****"The machine is already enrolled"** (コンピューターは既にサービスに登録されています) というエラーが発生し、登録に失敗します。 登録ログにはエラー **hr 0x8007064c** が記録されます。
 
 このエラーは、コンピューターが次の状態になったために発生する可能性があります。
 - 以前に登録されていた。または
@@ -464,9 +464,9 @@ iOS 登録エラーの一覧は、「[Troubleshooting iOS device enrollment prob
 1. **[証明書]** をダブルクリックし、**[コンピューター アカウント]** > **[次へ]**、**[ローカル コンピューター]** の順に選択します。
 1. **[証明書 (ローカル コンピューター)]** をダブルクリックして、**[個人証明書]** を選択します。
 1. Sc_Online_Issuing によって発行された Intune 証明書を探し、もし見つかった場合は削除します。
-1. レジストリ キー  **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** が存在する場合は削除し、サブ キーもすべて削除します。
+1. レジストリ キー**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** が存在する場合は削除し、サブ キーもすべて削除します。
 1. 再登録を試行します。
-1. それでも PC を登録できない場合は、キー **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95** を探して、存在する場合は削除してください。
+1. それでも PC を登録できない場合は、キー**KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95** を探して、存在する場合は削除してください。
 1. 再登録を試行します。
 
     > [!IMPORTANT]
@@ -491,7 +491,7 @@ iOS 登録エラーの一覧は、「[Troubleshooting iOS device enrollment prob
 |0x80043008、0x80CF3008|Microsoft オンライン管理更新ービスを開始できませんでした。|「[Microsoft Intune のサポートを受ける方法](get-support.md)」の説明に従って、Microsoft サポートにお問い合わせください。|
 |0x80043009、0x80CF3009|クライアント コンピューターは、既にサービスに登録されています。|サービスを再登録する前に、クライアント コンピューターを削除する必要があります。|
 |0x8004300B、0x80CF300B|クライアントで実行されている Windows のバージョンがサポートされていないため、クライアント ソフトウェア インストール パッケージを実行できません。|Intune が、クライアント コンピューターで実行されている Windows のバージョンをサポートしていません。|
-|0xAB2|Windows インストーラーが、カスタム動作に必要な VBScript ランタイムにアクセスできませんでした。|このエラーは、ダイナミック リンク ライブラリ (DLL) に基づくカスタム動作が原因で発生します。 DLL のトラブルシューティング時に、場合によっては「[Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](https://support.microsoft.com/kb/198038)」 (Microsoft サポート技術情報 198038: パッケージと展開の問題に役立つツール) に記載されているツールを使用する必要があります。|
+|0xAB2|Windows インストーラーが、カスタム動作に必要な VBScript ランタイムにアクセスできませんでした。|このエラーは、ダイナミック リンク ライブラリ (DLL) に基づくカスタム動作が原因で発生します。 DLL のトラブルシューティング時に、場合によっては「[Microsoft サポート技術情報 198038:パッケージと展開の問題のための便利なツールの情報](https://support.microsoft.com/kb/198038)」に記載されているツールを使用する必要があります。|
 |0x80cf0440|サービス エンドポイントとの接続が切断されました。|試用アカウントまたは有料アカウントが中断されています。 新しい試用アカウントまたは有料アカウントを作成し、再登録してください。|
 
 

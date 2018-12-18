@@ -14,18 +14,18 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: de80092647462f83fb92303080239fd30198bd3c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1b8d08e60b9cd656eb9467fd5289b9dfc428d183
+ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180236"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53167996"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Intune で条件付きアクセスによる Windows Defender ATP を有効にする
 
 Windows Defender Advanced Threat Protection (ATP) と Microsoft Intune の連動により、セキュリティ違反を防ぎ、組織内の違反の影響を抑えることができます。
 
-この機能は、Windows 10 デバイスに適用されます。
+この機能は、以下に適用されます。Windows 10 デバイス
 
 たとえば、誰かが組織内のユーザーに悪意のあるコードが埋め込まれた Word の添付ファイルを送信したとします。 そのユーザーは添付ファイルを開き、コンテンツを有効にします。 昇格された特権への攻撃が始まります。リモート コンピューターからの攻撃者は犠牲者のデバイスへの管理者権限を持ちます。 その後、攻撃者はそのユーザーの他のデバイスにリモートでアクセスします。
 
@@ -89,13 +89,13 @@ Windows Defender には、[Windows Defender ATP サービス](https://docs.micro
 5. **[プロファイルの種類]** では、**[Windows Defender ATP (Windows 10 デスクトップ)]** を選択します。
 6. 次のように設定を構成します。
 
-  - **[Windows Defender ATP client configuration package type]**(Windows Defender ATP クライアント構成パッケージの種類): **[Onboard]** \(オンボード\) を選択し、プロファイルに構成パッケージを追加します。 **[Offboard]** \(オフボード\) を選択し、プロファイルから構成パッケージを削除します。
+  - **[Windows Defender ATP client configuration package type]\(Windows Defender ATP クライアント構成パッケージの種類\)**:**[Onboard]\(オンボード\)** を選択し、プロファイルに構成パッケージを追加します。 **[Offboard]** \(オフボード\) を選択し、プロファイルから構成パッケージを削除します。
   
     > [!NOTE] 
-    > Windows Defender ATP との接続を適切に確立している場合、Intune によって構成プロファイルが自動的に**オンボーディング**されます。
+    > Windows Defender ATP との接続を適切に確立している場合、Intune によって自動的に構成プロファイルが**オンボード**されるので、**[Windows Defender ATP client configuration package type]\(Windows Defender ATP クライアント構成パッケージの種類\)** の設定はできません。
   
-  - **[すべてのファイルのサンプル共有]**: **[有効にする]** では、サンプルを収集し、Windows Defender ATP と共有できるようにします。 たとえば、疑わしいファイルがある場合、Windows Defender ATP に送信して詳しく分析できます。 **[構成されていません]** では、いかなるサンプルも Windows Defender ATP と共有されません。
-  - **[テレメトリの報告頻度を早める]**: 高リスクのデバイスがある場合は、この設定を**有効**にして、Windows Defender ATP サービスにより頻繁にテレメトリを報告することができます。
+  - **[すべてのファイルのサンプル共有]**:**[有効にする]** では、サンプルを収集し、Windows Defender ATP と共有できるようにします。 たとえば、疑わしいファイルがある場合、Windows Defender ATP に送信して詳しく分析できます。 **[構成されていません]** では、いかなるサンプルも Windows Defender ATP と共有されません。
+  - **[テレメトリの報告頻度を早める]**:高リスクのデバイスがある場合は、この設定を**有効**にして、Windows Defender ATP サービスにより頻繁にテレメトリを報告することができます。
 
     これらの Windows Defender ATP の設定の詳細については、[System Center Configuration Manager を使用する Windows 10 コンピューターのオンボード](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-sccm-windows-defender-advanced-threat-protection)に関するページを参照してください。
 
@@ -110,10 +110,10 @@ Windows Defender には、[Windows Defender ATP サービス](https://docs.micro
 4. **[プラットフォーム]** で、**[Windows 10 以降]** を選択します。
 5. **[Windows Defender ATP]** 設定で、**[Require the device to be at or under the machine risk score]\(デバイスは、コンピューターのリスク スコア以下であることが必要\)** を次の任意のレベルに設定します。
 
-  - **[クリア]**: このレベルはセキュリティ上最も安全です。 デバイスに既存のいかなる脅威も存在できず、デバイスからは引き続き会社のリソースにアクセスできます。 いずれかの脅威が見つかった場合、デバイスは非準拠と評価されます。
-  - **[低]**: 低レベルの脅威が存在する場合にのみ、デバイスは準拠しています。 脅威レベルが中または高のデバイスは非準拠になります。
-  - **[中]**: デバイスに存在する脅威が低または中の場合、デバイスは準拠しています。 高レベルの脅威が検出された場合は、デバイスは非準拠と判定されます。
-  - **[高]**: 最も安全性の低いレベルであり、すべての脅威レベルが許容されます。 したがって、脅威レベルが高、中または低のデバイスは準拠していると見なされます。
+  - **[クリア]**:このレベルはセキュリティ上最も安全です。 デバイスに既存のいかなる脅威も存在できず、デバイスからは引き続き会社のリソースにアクセスできます。 いずれかの脅威が見つかった場合、デバイスは非準拠と評価されます。
+  - **[低]**:低レベルの脅威が存在する場合にのみ、デバイスは準拠しています。 脅威レベルが中または高のデバイスは非準拠になります。
+  - **[中]**:デバイスに存在する脅威が低または中の場合、デバイスは準拠しています。 高レベルの脅威が検出された場合は、デバイスは非準拠と判定されます。
+  - **[高]**:最も安全性の低いレベルであり、すべての脅威レベルが許容されます。 したがって、脅威レベルが高、中または低のデバイスは準拠していると見なされます。
 
 6. **[OK]**、**[作成]** の順に選択して、変更を保存 (およびポリシーを作成) します。
 

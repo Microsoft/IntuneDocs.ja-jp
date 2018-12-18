@@ -15,15 +15,15 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: e407b2059d986841541c969e387d77e71c5e5b4b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: ecc5228eef9e9d7be5ba567db6b32c84e95df1b6
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181362"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032301"
 ---
-# <a name="manage-your-companys-terms-and-conditions-for-user-access"></a>ユーザー アクセスに関する会社の使用条件を管理する
+# <a name="terms-and-conditions-for-user-access"></a>ユーザー アクセスに関する使用条件
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -48,17 +48,17 @@ Intune 管理者は、ユーザーがポータル サイトを使用して以下
 ![Azure Portal のスクリーンショット。使用条件の [作成] ボタンを確認できます。](media/terms-create-terms.png)
 3. ウィンドウを展開し、次の情報を指定します。
 
-   - **[表示名]**: Azure Portal における条件の名前。 ユーザーにはこの名前は表示されません。
+   - **[表示名]**:Azure portal における条件の名前。 ユーザーにはこの名前は表示されません。
 
-   - **[説明]**: Azure Portal でこの条件セットの識別に役立つ任意の説明。
+   - **説明**:Azure portal 上でこの条件セットの識別に役立つ任意の説明。
 
 4. **[Define terms of use]\(使用条件を定義する\)** の横にある矢印を選択し、[使用条件] ウィンドウを開いて次の情報を入力します。
 
    ![エンド ユーザーの使用条件の同意画面と条件の概要のスクリーンショット](./media/terms-summary-create.png)
 
-   - **[タイトル]**: ポータル サイトで **[概要]** の上に表示される使用条件の名前。
-   - **[使用条件の概要]**: 使用条件に対するユーザーの同意が意味することを説明するテキスト。 たとえば、「デバイスを登録すると、Contoso が定めている利用規約に同意することになります。 条件をよく読んでから続行してください。」のように入力します。
-   - **[使用条件]**: ユーザーに確認と承諾または拒否を求める使用条件。
+   - **[タイトル]**:ポータル サイト上で **[概要]** の上に表示される使用条件の名前。
+   - **[使用条件の概要]**:使用条件に対するユーザーの同意が意味することを説明するテキスト。 たとえば、「デバイスを登録すると、Contoso が定めている利用規約に同意することになります。 条件をよく読んでから続行してください。」のように入力します。
+   - **[使用条件]**:ユーザーに確認と承諾または拒否を求める使用条件。
 
 5. **[OK]** > **[作成]** の順に選択します。
 

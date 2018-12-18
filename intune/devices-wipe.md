@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 28c8863e8739563a6b6c9152a46abb6bf50f2db5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 44923d89647118268c7a55746599354ac88fbfd2
+ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189199"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861015"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>ワイプ、インベントリからの削除、デバイス登録の手動解除を使用し、デバイスを削除する
 
@@ -81,7 +81,7 @@ MDM ポリシーは、デバイスが次に Intune に接続再したときに�
 
 |［データの種類］|iOS|
 |-------------|-------|
-|Intune でインストールされた会社のアプリと関連するデータ。|アプリはアンインストールされます。 会社のアプリ データは削除されます。<br /><br />モバイル アプリ管理を使用する Microsoft アプリからのアプリ データは削除されます。 アプリは削除されません。|
+|Intune でインストールされた会社のアプリと関連するデータ。|**ポータル サイトを使用してインストールされたアプリ:** すべてのアプリ データとアプリが削除されます。 これには、元々 App Store からインストールされ、その後会社のアプリとして管理されているアプリも含まれます。 <br /><br /> **モバイル アプリの管理を使用し、App Store からインストールされた Microsoft アプリ:** 個人のアプリ データは削除されます。 会社のアプリ データとアプリは削除されません。|
 |Settings|Intune ポリシーで設定された構成は強制されなくなります。 ユーザーが設定を変更できます。|
 |Wi-fi と VPN プロファイルの設定|削除されます。|
 |証明書プロファイルの設定|証明書は削除され、失効されます。|
