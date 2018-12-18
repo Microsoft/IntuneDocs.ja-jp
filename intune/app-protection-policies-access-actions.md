@@ -1,12 +1,12 @@
 ---
-title: アプリ保護ポリシーのアクセス アクションを利用したデータの選択的ワイプ
+title: アプリ保護ポリシーのアクセス アクションを利用したデータのワイプ
 titleSuffix: Microsoft Intune
 description: Microsoft Intune でアプリ保護ポリシーのアクセス アクションを利用してデータを選択的にワイプする方法について説明します。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/3/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: f8173b409eb82a3bb98ef0a30570e489fac1fc49
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 5a28cdcf4d19aec62cd05808f4fb3cda68e083ea
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189701"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032063"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Intune でアプリ保護ポリシーのアクセス アクションを利用し、データを選択的にワイプする
 
@@ -84,10 +84,10 @@ Android の場合、**[設定]** ドロップダウンを利用して次の設�
 -  [デバイスの製造元]
 
 **[デバイスの製造元]** 設定を使用するには、Android の製造元の一覧をセミコロンで区切って入力します。 デバイスの Android の製造元は、デバイスの設定で確認できます。<br>
-入力例: *Manufacturer A;Manufacturer B* 
+入力例:*Manufacturer A;Manufacturer B* 
 
 >[!NOTE]
-> これらは、Intune を使用してデバイスから報告される一般的な製造元であり、次のような入力を使用できます: Asus;Blackberry;Bq;Gionee;Google;Hmd global;Htc;Huawei;Infinix;Kyocera;Lemobile;Lenovo;Lge;Motorola;Oneplus;Oppo;Samsung;Sharp;Sony;Tecno;Vivo;Vodafone;Xiaomi;Zte;Zuk
+> これらは、Intune を使用してデバイスから報告される一般的な製造元であり、次のような入力を使用できます:Asus;Blackberry;Bq;Gionee;Google;Hmd global;Htc;Huawei;Infinix;Kyocera;Lemobile;Lenovo;Lge;Motorola;Oneplus;Oppo;Samsung;Sharp;Sony;Tecno;Vivo;Vodafone;Xiaomi;Zte;Zuk
 
 エンド ユーザー デバイスの Intune クライアントは、アプリケーション保護ポリシーに対して Intune で指定されている、デバイス モデルの文字列の単純一致に基づいてアクションを実行します。 一致は、デバイスの報告に完全に依存します。 ユーザー (IT 管理者) は、動作が意図したものであるか確認することを推奨されます。それには、さまざまなデバイスの製造元とモデルをベースとし、小規模なユーザー グループを対象として、この設定をテストします。 既定値は **[未構成]** です。<br>
 次の操作のいずれかを選択します。 

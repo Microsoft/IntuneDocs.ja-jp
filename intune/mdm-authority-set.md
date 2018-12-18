@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0eb3ccf85c8851f16dcfe303603f65517fcf7312
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 6f0138da6e9ea427ad07ad3b41dd22b7319bb044
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183759"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112580"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>モバイル デバイス管理機関の設定
 
@@ -41,7 +41,7 @@ ms.locfileid: "52183759"
 - **Office 365 のモバイル デバイス管理** - Office 365 と Intune クラウド ソリューションの統合。 Office 365 管理センターから Intune を構成します。 Intune スタンドアロンで利用できる機能の一部が含まれます。 Office 365 管理センターで MDM 機関を設定します。
 
 > [!IMPORTANT]
-> Configuration Manager 1610 以降のバージョンと Microsoft Intune バージョン 1705 では、MDM 機関の変更にあたって Microsoft サポートに問い合わせる必要はありません。また、既存のマネージド デバイスの登録を解除して再登録する必要もありません。 詳細については、「[不適切な MDM 機関の設定を選択した場合の対処方法](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting)」を参照してください。
+> Configuration Manager 1610 以降のバージョンと Microsoft Intune バージョン 1705 では、MDM 機関の変更にあたって Microsoft サポートに問い合わせる必要はありません。また、既存のマネージド デバイスの登録を解除して再登録する必要もありません。 詳細については、「[MDM 機関を Configuration Manager に変更する準備](mdm-authority-set.md#prepare-to-change-the-mdm-authority-to-configuration-manager)」を参照してください。
 
 ## <a name="set-mdm-authority-to-intune"></a>MDM 機関を Intune に設定する
 
@@ -90,8 +90,8 @@ MDM 機関の変更に備えて、次の情報を確認します。
     > [!NOTE]    
     > MDM 機関に **[Managed by Intune and Office 365]\(Intune と Office 365 が管理\)** と表示される場合、MDM 機関を **Configuration Manager** (ハイブリッド) に変更すると、Office 365 で管理されていた MDM デバイスは管理されなくなります。 このようなユーザーには、MDM 機関を変更する前に、Intune または Enterprise Mobility Suite のライセンスを付与することをお勧めします。   
 
-- [Microsoft Intune 管理コンソール](http://manage.microsoft.com)で、デバイス登録マネージャー ロールを削除します。 詳細については、「[Intune からのデバイス登録マネージャーの削除](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune#delete-a-device-enrollment-manager-from-intune)」を参照してください。
-- 構成するデバイス グループ マッピングをオフにします。 詳細については、「[Microsoft Intune でデバイス グループのマッピングを使用してデバイスを分類する](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune)」を参照してください。
+- [Microsoft Intune 管理コンソール](http://manage.microsoft.com)で、デバイス登録マネージャー ロールを削除します。 詳細については、「[Intune からのデバイス登録マネージャーの削除](device-enrollment-manager-enroll.md#remove-device-enrollment-manager-permissions)」を参照してください。
+- 構成するデバイス グループ マッピングをオフにします。 詳細については、「[Microsoft Intune でデバイス グループのマッピングを使用してデバイスを分類する](device-group-mapping.md)」を参照してください。
 - MDM 機関の変更中に、エンドユーザーへの影響はあまりありません。 ただし、変更後すぐに、ユーザーがデバイスの電源を入れてサービスに接続するように、この変更について通知することをお勧めします。 この注意により、多数のデバイスが迅速に新しい機関経由でサービスに接続し、登録できるようになります。
 - Intune スタンドアロンを使用して iOS デバイスを管理していて、MDM 機関を変更する予定の場合は、Intune で使用されていたものと同じ Apple Push Notification サービス (APNs) 証明書を更新し、Configuration Manager (ハイブリッド) でテナントのセットアップに使用する必要があります。    
 

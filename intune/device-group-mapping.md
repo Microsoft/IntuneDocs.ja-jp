@@ -1,5 +1,5 @@
 ---
-title: Intune でデバイスをグループに分類する方法
+title: Intune を使用してデバイスをグループに分類する
 titleSuffix: Microsoft Intune
 description: 管理を容易にするためにデバイスをグループに分類する方法を説明します。
 keywords: ''
@@ -14,19 +14,19 @@ ms.technology: ''
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 159079686507815ad4cf1738ca4157467352f681
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 0abc42de95f90b3690e91908f92bb53d11a802d8
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189522"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031764"
 ---
-# <a name="categorize-devices-into-groups-for-easier-management"></a>管理を容易にするためのデバイスのグループへの分類
+# <a name="categorize-devices-into-groups"></a>デバイスをグループに分類する
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune デバイス カテゴリを使用し、定義したカテゴリに基づいてデバイスをグループに自動的に追加します。 これにより、デバイスが管理しやすくなります。
+デバイス管理を容易にするために、Microsoft Intune デバイス カテゴリを使用し、定義したカテゴリに基づいてデバイスをグループに自動的に追加することができます。
 
 デバイス カテゴリでは、次のワークフローを使用します。
 1. ユーザーがデバイスを登録するときに選択できるカテゴリを作成します。
@@ -42,7 +42,7 @@ Microsoft Intune デバイス カテゴリを使用し、定義したカテゴ�
 
 ## <a name="how-to-configure-device-categories"></a>デバイス カテゴリを構成する方法
 
-### <a name="step-1-create-device-categories-on-the-intune-blade-of-the-azure-portal"></a>手順 1: Azure Portal の [Intune] ブレードでデバイス カテゴリを作成する
+### <a name="step-1-create-device-categories-on-the-intune-blade-of-the-azure-portal"></a>手順 1.Azure portal の [Intune] ブレードでデバイス カテゴリを作成する
 1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** を選択します。
 2. **[デバイスの登録]** ブレードで、**[デバイス カテゴリ]** を選択します。
 3. **[デバイス カテゴリ]** ページで、**[作成]** を選択して、新しいカテゴリを追加します。

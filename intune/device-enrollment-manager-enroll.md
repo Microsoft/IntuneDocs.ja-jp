@@ -1,7 +1,7 @@
 ---
 title: デバイス登録マネージャー アカウントを使用してデバイスを登録する
 titlesuffix: Microsoft Intune
-description: デバイス登録マネージャー アカウントを使用してデバイスを Intune に登録します。 "
+description: デバイス登録マネージャー アカウントを使用してデバイスを Intune に登録します。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,15 +15,15 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 1d3e01cdbc7c9e30034e83e9609c0df5f031c18a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: eb369d8e89ff41e75d5bd669819afbe98b6d1ba7
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184915"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031842"
 ---
-# <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>デバイス登録マネージャー アカウントを使用してデバイスを登録する
+# <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>デバイス登録マネージャー アカウントを使用してデバイスを Intune に登録する
 
 デバイス登録マネージャー (DEM) アカウントを使用することで、1 つの Azure Active Directory アカウントで最大 1,000 台のモバイル デバイスを登録できます。 DEM は AAD ユーザー アカウントに適用できる Intune アクセス許可であり、ユーザーは最大 1,000 台のデバイスを登録できます。 DEM アカウントは、デバイスのユーザーに渡される前にデバイスの登録と準備を行うシナリオで役立ちます。
 

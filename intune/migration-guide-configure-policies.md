@@ -1,5 +1,5 @@
 ---
-title: Intune 移行中にデバイス コンプライアンス ポリシーとアプリ管理ポリシーを構成する
+title: Intune 移行中にデバイスとアプリのコンプライアンスを構成する
 titlesuffix: Microsoft Intune
 description: この記事では、Microsoft Intune 移行中にデバイスのコンプライアンス ポリシーとアプリ管理ポリシーを構成するために必要な手順について説明します。
 keywords: ''
@@ -15,12 +15,13 @@ ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 651612ac403db01ff2c5b7574216459c7ee2bd16
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 99f8f1eb297ac1530f9379dd4f033b72eee0b0f4
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183802"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031825"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Microsoft Intune への移行時にデバイス コンプライアンス ポリシーとアプリ管理ポリシーを構成する
 
@@ -41,7 +42,7 @@ Intune 移行時の主な目標は、すべてのデバイスが Intune に登�
 
 ## <a name="task-list-for-device-compliance-policies"></a>デバイス コンプライアンス ポリシーのタスク一覧
 
-### <a name="task-1-add-device-groups-optional"></a>タスク 1: デバイス グループを追加する (省略可能)
+### <a name="task-1-add-device-groups-optional"></a>タスク 1:デバイス グループを追加する (省略可能)
 
 ユーザー ID ではなくデバイス ID に基づいて管理タスクを実行する必要がある場合に、デバイス グループを作成することができます。
 
@@ -49,11 +50,11 @@ Intune 移行時の主な目標は、すべてのデバイスが Intune に登�
 
 デバイスを登録する前にデバイス グループを構成しておくと、デバイス カテゴリを使って、登録時にデバイスをグループに自動的に参加させることができます。 その後、デバイスはグループのデバイス ポリシーを自動的に受け取ります。 「[グループの概要](groups-get-started.md)」をご覧ください。
 
-### <a name="task-2-use-resource-access-profiles-wi-fi-vpn-and-email-certificates"></a>タスク 2: リソース アクセス プロファイル (Wi-Fi、VPN、および電子メールの証明書) を使用する
+### <a name="task-2-use-resource-access-profiles-wi-fi-vpn-and-email-certificates"></a>タスク 2:リソース アクセス プロファイル (Wi-Fi、VPN、および電子メールの証明書) を使用する
 
 リソース アクセス プロファイルは、登録されたデバイスに証明書とアクセス構成を提供します。 証明書ベースの認証を使っている場合は、[証明書を構成](certificates-configure.md)します。
 
-### <a name="task-3-create-and-deploy-device-configuration-profiles"></a>タスク 3: デバイス構成プロファイルを作成して展開する
+### <a name="task-3-create-and-deploy-device-configuration-profiles"></a>タスク 3:デバイス構成プロファイルを作成して展開する
 
 デバイス構成プロファイルを作成して、デバイス レベルの設定 (カメラの無効化、アプリ ストア、単一アプリ モードの構成、ホーム画面など) を適用する必要があります。 デバイス プロファイルについては、[こちら](device-profiles.md)をご覧ください。
 
@@ -65,7 +66,7 @@ Intune 移行時の主な目標は、すべてのデバイスが Intune に登�
 
 - iOS のカスタム ポリシーを追加する方法は[こちら](custom-settings-ios.md)を参照してください。
 
-### <a name="task-4-create-and-deploy-device-compliance-policies-optional"></a>タスク 4: デバイス コンプライアンス ポリシーを作成して展開する (省略可能)
+### <a name="task-4-create-and-deploy-device-compliance-policies-optional"></a>タスク 4:デバイス コンプライアンス ポリシーを作成して展開する (省略可能)
 
 デバイス コンプライアンス ポリシーはセキュリティ指向の設定を評価し、デバイスが会社の基準に準拠しているかどうかを示すレポートを提供します。 設定は次のとおりです。
 
@@ -81,7 +82,7 @@ Intune 移行時の主な目標は、すべてのデバイスが Intune に登�
 
 -   デバイス コンプライアンス ポリシーの作成方法は、[こちら](device-compliance-get-started.md)を参照してください。
 
-### <a name="task-5-publish-and-deploy-apps"></a>タスク 5: アプリを公開して展開する
+### <a name="task-5-publish-and-deploy-apps"></a>タスク 5:アプリを公開して展開する
 
 Intune MDM を使用する場合は、アプリの自動インストールを要求するか、ポータル サイトでアプリを使用できるようにすることで、アプリを提供できます。
 
@@ -89,7 +90,7 @@ Intune MDM を使用する場合は、アプリの自動インストールを要
 
 -   [アプリを展開する方法](apps-deploy.md)。
 
-### <a name="task-6-enable-device-enrollment"></a>タスク 6: デバイスの登録を可能にする
+### <a name="task-6-enable-device-enrollment"></a>タスク 6:デバイスの登録を可能にする
 
 デバイスを管理するには、デバイスを登録する必要があります。 企業所有およびユーザー個人のデバイスの登録を準備する方法については、[こちら](device-enrollment.md)を参照してください。
 

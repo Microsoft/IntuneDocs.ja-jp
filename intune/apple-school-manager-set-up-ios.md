@@ -1,12 +1,12 @@
 ---
-title: iOS デバイスのための Apple School Manager プログラム登録の設定
+title: iOS デバイスのための Apple School Manager プログラム登録
 titleSuffix: Microsoft Intune
 description: 企業所有の iOS デバイスを Intune で登録するために、Apple School Manager プログラム登録を設定する方法について説明します。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/04/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: ecd669f534fac9d359b542cbf1f2e6b543ed34f2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: fdda0edd8c7bf67dbfce9d428f1b3ce0266b3726
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190338"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032420"
 ---
-# <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager での iOS デバイス登録の有効化
+# <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Apple School Manager での iOS デバイス登録の設定
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-この記事は、[Apple School Manager](https://school.apple.com/) プログラムで購入したデバイスの iOS デバイス登録を有効にする場合に役立ちます。 Apple School Manager と共に Intune を使用して、デバイスに触れることなく、大量の iOS デバイスを登録できます。 学生や教師がデバイスの電源をオンにすると、セットアップ アシスタントが構成済み設定で実行され、デバイスが管理対象として登録されます。
+[Apple School Manager](https://school.apple.com/) プログラムで購入した iOS デバイスを登録するよう Intune を設定できます。 Apple School Manager と共に Intune を使用して、デバイスに触れることなく、大量の iOS デバイスを登録できます。 学生や教師がデバイスの電源をオンにすると、セットアップ アシスタントが構成済み設定で実行され、デバイスが管理対象として登録されます。
 
 Apple School Manager 登録を有効にするには、Intune と Apple School Manager ポータルの両方を使用します。 管理するために Intune にデバイスを割り当てられるように、シリアル番号のリストまたは注文番号が必要になります。 登録時にデバイスに適用された設定を含む DEP 登録プロファイルを作成します。
 
@@ -108,7 +108,7 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
 
     デバイスが監視対象であることは次の 2 つの方法でユーザーに通知されます。
 
-   - ロック画面に "この iPhone は Contoso によって管理されています" という内容のメッセージが表示されます。
+   - ロック画面に"この iPhone は Contoso によって管理されています" という内容のメッセージが表示されます。
    - **[設定]** > **[全般]** > **[情報]** 画面に、"この iPhone は監視されています" という内容のメッセージが表示されます。 Contoso はインターネット トラフィックを監視し、このデバイスの位置を特定できます。" と、
 
      > [!NOTE]
@@ -124,7 +124,7 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
 
 11. **[OK]** を選びます。
 
-12. **[セットアップ アシスタントの設定]** を選択し、![[セットアップ アシスタントのカスタマイズ]](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png) プロファイル設定を構成します。
+12. **[セットアップ アシスタントの設定]** を選択し、次のプロファイル設定を構成します。![セットアップ アシスタントのカスタマイズ。](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
     |                 Setting                  |                                                                                               説明                                                                                               |

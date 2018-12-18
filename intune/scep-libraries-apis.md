@@ -1,11 +1,12 @@
 ---
-title: サード パーティの証明機関をオンボードするための API の使用 - Microsoft Intune - Azure | Microsoft Docs
+title: サード パーティの証明機関をオンボードするための API
+titlesuffix: Microsoft Intune
 description: Microsoft Intune のデバイスに SCEP 証明書を発行するには、サード パーティの証明機関 (CA) に SCEP GitHub ソリューションを追加または統合します。 このソリューションには、Intune に成功および失敗の通知を検証、送信する、Intune との通信時に SSL ソケット ファクトリを使用する Java および C# の API が含まれています。 SCEP の CA 構成をテストする手順の概要も参照してください。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/12/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 054342994a75965b3e1bcb13884af07131ab0122
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 4109c437ae5a096c78c19aef489218cf7286eb01
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181923"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032335"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>SCEP 用のサード パーティ CA を Intune に追加するための API の使用
 

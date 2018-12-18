@@ -1,25 +1,25 @@
 ---
-title: Windows Holographic を Windows Holographic for Business にアップグレードする
+title: Windows Holographic for Business へのアップグレード
 titleSuffix: Microsoft Intune
 description: Windows Holographic を実行するデバイスを Windows Holographic for Business にアップグレードする方法について説明します
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 735cd658e78a68156957d54be02f32b41812495e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 4839206db5e34a039c9e99dd74f5ab1bad328418
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179203"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112342"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>Windows Holographic を実行するデバイスを Windows Holographic for Business にアップグレードする
 

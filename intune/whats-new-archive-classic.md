@@ -15,12 +15,12 @@ ROBOTS: noindex,nofollow
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5a76a54de62ead26ec4b3c7a8e34db3cd639b6c1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 56d5d9c773a11b3884b4e72b55fab27e7044f1e9
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181702"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112903"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune クラシック ポータルの新機能 (過去数か月)
 
@@ -48,7 +48,7 @@ Android 用ポータル サイト アプリが更新されて、起動または�
 
 #### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>アプリの SharePoint Online へのアクセスをブロック<!-- 679339 -->
 
-アプリ ベースの条件付きアクセス ポリシーを作成して、アプリ保護ポリシーが適用されていないアプリが [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online) にアクセスするのをブロックできるようになりました。 アプリ ベースの条件付きアクセスのシナリオでは、Azure Portal を使用して SharePoint Online にアクセスするアプリを指定できます。
+アプリ ベースの条件付きアクセス ポリシーを作成して、アプリ保護ポリシーが適用されていないアプリが [SharePoint Online](app-based-conditional-access-intune-create.md) にアクセスするのをブロックできるようになりました。 アプリ ベースの条件付きアクセスのシナリオでは、Azure Portal を使用して SharePoint Online にアクセスするアプリを指定できます。
 
 #### <a name="single-sign-on-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>iOS 用のポータル サイトおよび Outlook からのシングル サインオンのサポート <!--834012-->
 iOS 用のポータル サイト アプリに既にサインインしているユーザーは、同じデバイス上の同じアカウントを使う Outlook アプリであればサインインしなおす必要はありません。 Outlook アプリを起動するときに、自分のアカウントを選んで自動的にサインインできます。 現在、他の Microsoft アプリにこの機能を追加する作業を進めています。
@@ -67,7 +67,7 @@ Windows 10 ポータル サイト アプリで開始されるアプリ インス
 
 #### <a name="bulk-enroll-windows-10-devices----747607---"></a>Windows 10 デバイスを一括登録する <!-- 747607 -->
 
-Windows 構成デザイナー (WCD) で Azure Active Directory と Intune に Windows 10 Creators Update を実行する多数のデバイスを参加させることができるようになりました。 Azure AD テナントの [一括 MDM 登録](/intune-classic/deploy-use/bulk-enroll-windows) を有効にするには、Windows 構成デザイナーを使用して Azure AD テナントにデバイスを参加させるプロビジョニング パッケージを作成し、一括登録と管理を行う会社所有のデバイスにパッケージを適用します。 パッケージがデバイスに適用されると、デバイスは Azure AD に参加し、Intune に登録され、Azure AD ユーザーがログオンできる状態になります。  Azure AD ユーザーはこれらのデバイス上の標準ユーザーであり、割り当て済みのポリシーと必須アプリを受け取ります。 この時点では、セルフ サービスとポータル サイトのシナリオはサポートされていません。
+Windows 構成デザイナー (WCD) で Azure Active Directory と Intune に Windows 10 Creators Update を実行する多数のデバイスを参加させることができるようになりました。 Azure AD テナントの [一括 MDM 登録](windows-bulk-enroll.md) を有効にするには、Windows 構成デザイナーを使用して Azure AD テナントにデバイスを参加させるプロビジョニング パッケージを作成し、一括登録と管理を行う会社所有のデバイスにパッケージを適用します。 パッケージがデバイスに適用されると、デバイスは Azure AD に参加し、Intune に登録され、Azure AD ユーザーがログオンできる状態になります。  Azure AD ユーザーはこれらのデバイス上の標準ユーザーであり、割り当て済みのポリシーと必須アプリを受け取ります。 この時点では、セルフ サービスとポータル サイトのシナリオはサポートされていません。
 
 ### <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal--736542--"></a>Azure Portal での Intune のパブリック プレビューの新機能<!--736542-->
 
@@ -109,11 +109,11 @@ Intune クラシック ポータル (Silverlight) で使用される既存のモ
 
 #### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>すべてのプラットフォームでのポータル サイト アプリのサインイン操作の改善<!--User Story 1132123-->
 
-Android、iOS、Windows での Intune ポータル サイト アプリのサインイン エクスペリエンス向上のために、今後数か月間に予定されている変更についてお知らせします。 Azure AD でこの変更が行われ次第、自動的にすべてのプラットフォームでポータル サイト アプリのユーザー エクスペリエンスが一新される予定です。 また、自動生成される一時使用コードを使用して、別のデバイスからポータル サイトにサインインできるようになりました。 これは、資格情報を使用せずにサインインする必要がある場合には特に便利です。
+Android、iOS、Windows 用の Intune ポータル サイト アプリのサインイン エクスペリエンス向上のために、今後数か月間に予定されている変更についてお知らせします。 Azure AD でこの変更が行われ次第、自動的にすべてのプラットフォームでポータル サイト アプリのユーザー エクスペリエンスが一新される予定です。 また、自動生成される一時使用コードを使用して、別のデバイスからポータル サイトにサインインできるようになりました。 これは、資格情報を使用せずにサインインする必要がある場合には特に便利です。
 
-以前のサインイン エクスペリエンス、資格情報を使用した新たなエクスペリエンス、別のデバイスからのエクスペリエンスのスクリーンショットを [アプリ UI の新機能](whats-new-app-ui.md)に関するページで確認できます。
+以前のサインイン エクスペリエンス、資格情報を使用した新たなエクスペリエンス、別のデバイスからのエクスペリエンスのスクリーンショットを[アプリ UI の新機能](whats-new-app-ui.md)に関するページで確認できます。
 
-#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>変更の計画: Intune で Intune パートナー ポータル エクスペリエンスが変更されます<!-- 1050016 -->
+#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>変更の計画:Intune パートナー ポータルのエクスペリエンスが変更されます<!-- 1050016 -->
 
 2017 年 5 月中旬のサービス更新で、Intune パートナーのページが manage.microsoft.com から削除されます。  
 
@@ -141,17 +141,17 @@ Microsoft Intune に統合されたモバイル脅威保護ソリューション
 - アプリケーション防御
 - 脆弱性防御
 
-Intune のデバイス コンプライアンス ポリシーにより有効になった Skycure のリスク評価に基づいて、EMS の条件付きアクセス ポリシーを構成できます。 これらのポリシーを使用して、検出された脅威に基づき、非準拠のデバイスによる企業リソースへのアクセスを許可またはブロックすることができます。 詳細については、「[Skycure Mobile Threat Defense コネクター](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector)」を参照してください。
+Intune のデバイス コンプライアンス ポリシーにより有効になった Symantec Endpoint Protection Mobile (Skycure) のリスク評価に基づいて、EMS の条件付きアクセス ポリシーを構成できます。 これらのポリシーを使用して、検出された脅威に基づき、非準拠のデバイスによる企業リソースへのアクセスを許可またはブロックすることができます。 詳細については、「[Symantec Endpoint Protection Mobile コネクタ](skycure-mobile-threat-defense-connector.md)」を参照してください。
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Android 用ポータル サイト アプリに関する新しいユーザー エクスペリエンス <!--621622-->
 
 Android 用ポータル サイト アプリでは、ユーザー インターフェイスが最新の外観となり、ユーザー エクスペリエンスが向上しました。 主な更新内容は次のとおりです。
 
-- 色: ポータル サイトのタブ ヘッダーの色が、IT が定義するブランド色になります。
-- アプリ: **[アプリ]** タブの **[おすすめアプリ]** ボタンと **[すべてのアプリ]** ボタンが更新されました。
-- 検索: **[アプリ]** タブの **[検索]** ボタンが浮動アクション ボタンになりました。
-- ナビゲーション アプリ: **[すべてのアプリ]** ビューで **[おすすめ]**、**[すべて]** および **[カテゴリ]** のタブ付きビューが表示され、移動がより簡単になります。
-- サポート: **[デバイス]** タブと **[IT に連絡]** タブが更新されて、読みやすくなりました。
+- 色:ポータル サイトのタブ ヘッダーの色が、IT が定義するブランド色になります。
+- アプリ:**[アプリ]** タブの **[おすすめアプリ]** ボタンと **[すべてのアプリ]** ボタンが更新されました。
+- ［検索］:**[アプリ]** タブの **[検索]** ボタンが浮動アクション ボタンになりました。
+- アプリのナビゲーション:**[すべてのアプリ]** ビューで **[おすすめ]**、**[すべて]**、**[カテゴリ]** のタブ付きビューが表示され、移動がより簡単になりました。
+- サポート:**[デバイス]** タブと **[IT に連絡]** タブが更新されて、読みやすくなりました。
 
 これらの変更について詳しくは、「[Intune とエンド ユーザー アプリの UI の更新](whats-new-app-ui.md)」をご覧ください。
 
@@ -170,7 +170,7 @@ Windows 10 ポータル サイト アプリのダウンロードおよびサイ�
 
 2017 年 3 月 27 日に、iOS ユーザー向けに iOS 10.3 がリリースされました。 既存の Intune MDM と MAM のシナリオには、Apple の最新バージョンの OS との互換性があります。 現在利用できる iOS デバイスを管理するすべて既存の Intune 機能は、ユーザーがデバイスとアプリを iOS 10.3 にアップグレードすることによって機能し続けます。
 
-現時点で共有すべき既知の問題はありません。 iOS 10.3 に関する問題が発生した場合は、[Intune サポート チーム](/intune-classic/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)にお問い合わせください。
+現時点で共有すべき既知の問題はありません。 iOS 10.3 に関する問題が発生した場合は、[Intune サポート チーム](get-support.md)にお問い合わせください。
 
 #### <a name="improved-support-for-android-users-based-in-china---720444--"></a>中国の Android ユーザー向けのサポートが向上しました <!--720444-->
 
@@ -213,7 +213,7 @@ Windows 10 ポータル サイト アプリのダウンロードおよびサイ�
 同様に、IT 管理者が業務用デバイスの登録プロファイルの対象となる Intune グループを変更した場合、Intune では新しいプロファイルの割り当てを反映する新しい動的グループが作成されますが、古い割り当て用に作成された動的グループが削除されることはありません。
 
 ### <a name="defaulting-to-managing-windows-desktop-devices-through-windows-settings---663050--"></a>Windows 設定による Windows デスクトップ デバイスの既定での管理 <!--663050-->
-Windows 10 デスクトップを登録するための既定の動作が変わります。 新しい登録では、PC エージェントを使用するのではなく、一般的な MDM エージェント登録フローに従います。 ポータル Web サイトでは、Windows 10 デスクトップのユーザーに登録手順が提供されます。この手順では、Windows 10 デスクトップ コンピューターをモバイル デバイスとして追加するプロセスが示されます。 これは、現在登録されている PC には影響しません。組織では引き続き、[任意の](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune) PC エージェントを使用して Windows 10 デスクトップを管理できます。
+Windows 10 デスクトップを登録するための既定の動作が変わります。 新しい登録では、PC エージェントを使用するのではなく、一般的な MDM エージェント登録フローに従います。 ポータル Web サイトでは、Windows 10 デスクトップのユーザーに登録手順が提供されます。この手順では、Windows 10 デスクトップ コンピューターをモバイル デバイスとして追加するプロセスが示されます。 これは、現在登録されている PC には影響しません。組織では引き続き、[任意の](manage-windows-pcs-with-microsoft-intune.md) PC エージェントを使用して Windows 10 デスクトップを管理できます。
 
 #### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>選択的ワイプのためのモバイル アプリ管理サポートの向上 <!--581242-->
 "アプリのデータがワイプされるまでのオフライン期間" ポリシーにより、職場または学校のデータが自動的に削除された場合に、そのデータへのアクセス権の再取得方法に関する追加のガイダンスがエンド ユーザーに示されます。<!--, or the removal of the Intune Company Portal on Android.-->
@@ -228,14 +228,14 @@ Windows および Windows Phone のユーザーがデバイスを登録しよう
 3 月以降、Android 用ポータル サイト アプリでは[材料設計ガイドライン](https://material.io/guidelines/material-design/introduction.html)に従って、最新の外観が作成されます。 この改善されたユーザー エクスペリエンスには、次のものが含まれます。
 
 * __色__: タブ ヘッダーを、カスタムの色パレットに従って色付けすることができます。
-* __インターフェイス__: [アプリ] タブの [おすすめアプリ] ボタンと [すべてのアプリ] ボタンが更新されました。[検索] ボタンは浮動アクション ボタンになりました。
-* __ナビゲーション__: [すべてのアプリ] で [おすすめ]、[すべて] および [カテゴリ] のタブ付きビューが表示され、移動がより簡単になります。
-* __サービス__: [デバイス] タブと [IT に連絡] タブが読みやすくなりました。
+* __インターフェイス__:[アプリ] タブの [おすすめアプリ] ボタンと [すべてのアプリ] ボタンが更新されました。[検索] ボタンは浮動アクション ボタンになりました。
+* __ナビゲーション__:[すべてのアプリ] ビューで [おすすめ]、[すべて]、[カテゴリ] のタブ付きビューが表示され、移動がより簡単になりました。
+* __サービス__:[デバイス] タブと [IT に連絡] タブが読みやすくなりました。
 
 [UI の更新ページ](whats-new-app-ui.md)で、更新前と後のイメージを確認できます。
 
 ### <a name="associate-multiple-management-tools-with-the-microsoft-store-for-business---926135--"></a>複数の管理ツールとビジネス向け Microsoft ストアの関連付け <!--926135-->
-ビジネス向け Microsoft ストアのアプリを展開するために複数の管理ツールを使用する場合、これまでは、ビジネス向け Microsoft ストアにはそのうちの 1 つしか関連付けることができませんでした。 これからは、複数のツール (Intune や Configuration Manager など) をストアに関連付けることができます。 詳細については、「[ビジネス向け Microsoft ストアから購入したアプリを Microsoft Intune で管理する](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune)」を参照してください。
+ビジネス向け Microsoft ストアのアプリを展開するために複数の管理ツールを使用する場合、これまでは、ビジネス向け Microsoft ストアにはそのうちの 1 つしか関連付けることができませんでした。 これからは、複数のツール (Intune や Configuration Manager など) をストアに関連付けることができます。 詳細については、「[ビジネス向け Microsoft ストアから購入したアプリを Microsoft Intune で管理する](windows-store-for-business.md)」を参照してください。
 
 ## <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal---736542--"></a>Azure Portal での Intune のパブリック プレビューの新機能 <!--736542-->
 
@@ -252,20 +252,20 @@ Azure の Intune プレビューの新機能は[ここ](whats-new.md)で確認�
 ### <a name="new-capabilities"></a>新しい機能
 
 #### <a name="in-console-reports-for-mam-without-enrollment---677961--"></a>登録を必要としない MAM のコンソール内レポート <!--677961-->
-登録されているデバイスと登録されていないデバイスの両方に対して、新しいアプリ保護レポートが追加されました。 詳細については、「[Microsoft Intune でのモバイル アプリ管理ポリシーの監視](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune)」を参照してください。
+登録されているデバイスと登録されていないデバイスの両方に対して、新しいアプリ保護レポートが追加されました。 詳細については、「[Microsoft Intune でのモバイル アプリ管理ポリシーの監視](app-protection-policies-monitor.md)」を参照してください。
 
 #### <a name="android-711-support---694397--"></a>Android 7.1.1 のサポート <!--694397-->
 Intune では Android 7.1.1 が完全にサポートされ、管理されるようになりました。
 
 #### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them---unknown--"></a>iOS デバイスが無効か、管理コンソールと通信できない問題を解決 <!--unknown-->
-ユーザーのデバイスと Intune の接続が失われるとき、新しいトラブルシューティング手順を指示できます。会社リソースへのアクセスを回復するのに役立ちます。 「[デバイスが無効か、管理コンソールとデバイスが通信できない](/intune-classic/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them)」を参照してください。
+ユーザーのデバイスと Intune の接続が失われるとき、新しいトラブルシューティング手順を指示できます。会社リソースへのアクセスを回復するのに役立ちます。 「[デバイスが無効か、管理コンソールとデバイスが通信できない](troubleshoot-device-enrollment-in-intune.md#devices-are-inactive-or-the-admin-console-cant-communicate-with-them)」を参照してください。
 
 ### <a name="notices"></a>通知
 
 #### <a name="defaulting-to-managing-windows-desktop-devices-through-windows-settings---663050--"></a>Windows 設定による Windows デスクトップ デバイスの既定での管理 <!--663050-->
 Windows 10 デスクトップを登録するための既定の動作が変わります。 新しい登録では、PC エージェントを使用するのではなく、一般的な MDM エージェント登録フローに従います。
 
-ポータル Web サイトでは、Windows 10 デスクトップのユーザーに登録手順が提供されます。この手順では、Windows 10 デスクトップ コンピューターをモバイル デバイスとして追加するプロセスが示されます。 これは、現在登録されている PC には影響しません。組織では引き続き、[任意の](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune) PC エージェントを使用して Windows 10 デスクトップを管理できます。
+ポータル Web サイトでは、Windows 10 デスクトップのユーザーに登録手順が提供されます。この手順では、Windows 10 デスクトップ コンピューターをモバイル デバイスとして追加するプロセスが示されます。 これは、現在登録されている PC には影響しません。組織では引き続き、[任意の](manage-windows-pcs-with-microsoft-intune.md) PC エージェントを使用して Windows 10 デスクトップを管理できます。
 
 #### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>選択的ワイプのためのモバイル アプリ管理サポートの向上 <!--581242-->
 "アプリのデータがワイプされるまでのオフライン期間" ポリシーにより、職場または学校のデータが自動的に削除された場合に、そのデータへのアクセス権の再取得方法に関する追加のガイダンスがエンド ユーザーに示されます。<!--, or the removal of the Intune Company Portal on Android.-->
@@ -301,7 +301,7 @@ iOS 用ポータル サイトでは、ユーザーに発生する読み込みプ
 
 Azure Portal の管理者エクスペリエンスでは、既に発表されている新しいグループ化とターゲット設定の機能が使用されます。既存のテナントを新しいグループ化エクスペリエンスに移行すると、テナントの管理者エクスペリエンスも新しいプレビュー版に移行されます。 それまでの間、Azure Portal で Microsoft Intune のために用意しているものを[新しいドキュメント](/intune/what-is-intune)でご確認いただけます。
 
-__Azure Portal のパブリック プレビューでの電気通信経費管理の統合__ <!--747605--> Azure Portal では、サード パーティの電気通信経費管理 (TEM) サービスとの統合のプレビューが始められています。 Intune を使用して、国内およびローミングのデータ使用量を制限できます。 これらの統合は、[Saaswedo](http://www.saaswedo.com/) で始まっています。 試用テナントでこの機能を有効にする場合は、[Microsoft サポートにお問い合わせください](/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune)。
+__Azure Portal のパブリック プレビューでの電気通信経費管理の統合__ <!--747605--> Azure Portal では、サード パーティの電気通信経費管理 (TEM) サービスとの統合のプレビューが始められています。 Intune を使用して、国内およびローミングのデータ使用量を制限できます。 これらの統合は、[Saaswedo](http://www.saaswedo.com/) で始まっています。 試用テナントでこの機能を有効にする場合は、[Microsoft サポートにお問い合わせください](get-support.md)。
 
 ### <a name="new-capabilities"></a>新しい機能
 
@@ -311,7 +311,7 @@ __モバイル デバイス登録を制限する機能__ <!--747596--> Intune �
 * モバイル デバイスの登録を制限しても、PC クライアントの登録は制限されません。
 * iOS のみについては、個人所有デバイスの登録をブロックする 1 つの追加オプションがあります。
 
-[この記事](/intune-classic/deploy-use/manage-corporate-owned-devices)で説明されているように、IT 管理者が明示的に会社所有と指定しない限り、Intune はすべての新しいデバイスを個人所有としてマークします。
+[この記事](device-enrollment.md)で説明されているように、IT 管理者が明示的に会社所有と指定しない限り、Intune はすべての新しいデバイスを個人所有としてマークします。
 
 ### <a name="notices"></a>通知
 

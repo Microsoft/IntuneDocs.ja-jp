@@ -1,7 +1,7 @@
 ---
-title: Apple MDM プッシュ証明書を取得する
-titlesuffix: Microsoft Intune
-description: Intune で iOS デバイスを管理するために Apple MDM プッシュ証明書を取得する手順について説明します。
+title: Intune 用の Apple MDM プッシュ証明書を取得する
+titlesuffix: ''
+description: Intune を使用して iOS デバイスを管理するために Apple MDM プッシュ証明書を取得します。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,19 +15,19 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 927da6f2e7584cb3b43bede77cfbc19ec91b568a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 053e3f42553268aaeff0502e2cfe05b33b18618b
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189471"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032165"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Apple MDM プッシュ証明書を取得する
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune では、iPad、iPhone、および Mac コンピューターのモバイル デバイス管理 (MDM) が有効になり、会社の電子メールおよびアプリへのアクセス権がユーザーに付与されます。 Intune で iOS および macOS デバイスを管理するには、Apple MDM プッシュ証明書が必要です。 証明書を Intune に追加すると、ユーザーは以下を使用して、自分のデバイスを登録できます。
+Intune で iOS および macOS デバイスを管理するには、Apple MDM プッシュ証明書が必要です。 証明書を Intune に追加すると、ユーザーは以下を使用して、自分のデバイスを登録できます。
 
 - ポータル サイト アプリ。
 

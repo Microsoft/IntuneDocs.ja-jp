@@ -1,11 +1,11 @@
 ---
 title: Android デバイスを更新する必要がある | Microsoft Docs
-description: ''
+description: Android デバイスを更新する必要があります。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/20/2016
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,13 +16,13 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.custom: intune-enduser
-ms.openlocfilehash: 95c13bc48ef0b524de43b5e0944e10bd20c36bd9
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.custom: intune-enduser; seodec18
+ms.openlocfilehash: d0b76962796043e7c7a8b04606bb9b4ff3b10bc8
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149142"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031876"
 ---
 # <a name="you-need-to-update-your-android-device"></a>Android デバイスを更新する必要がある
 

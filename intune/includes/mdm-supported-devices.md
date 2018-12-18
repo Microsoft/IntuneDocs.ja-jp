@@ -2,7 +2,7 @@
 
 ### <a name="apple"></a>Apple
 - Apple iOS 10.0 以降
-- Mac OS X 10.11 以降 (2018 年 12 月に、サポートされるバージョンは 10.12 以降に変更されます)
+- Mac OS X 10.12 以降
 
 ### <a name="google"></a>Google
 - Android 4.4 以降 (Samsung KNOX Standard 4.4 以降を含む)
@@ -26,8 +26,8 @@
 - Windows Phone 8.1、Windows 8.1 RT、Windows 8.1 (維持モード) が稼働している PC
 
 > [!NOTE]
-> Intune は Windows Server オペレーティング システムを管理できません。
+> Intune は Windows Server オペレーティング システムを管理できません。 Home SKU では一部の Intune 機能がサポートされません。
 
-Enterprise Management + Security (EMS) を使用している場合は、[Azure Active Directory (Azure AD) を使用して Windows 10 デバイスを登録する](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment)こともできます。
+Enterprise Management + Security (EMS) を使用している場合は、[Azure Active Directory (Azure AD) を使用して Windows 10 デバイスを登録する](/intune/windows-enroll.md)こともできます。
 
 

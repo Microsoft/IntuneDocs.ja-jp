@@ -1,6 +1,6 @@
 ---
 title: 企業 ID を Intune に追加する
-titlesuffix: Microsoft Intune
+titlesuffix: ''
 description: 企業 ID (登録方法、IMEI 番号、シリアル番号) を Microsoft Intune に追加する方法について説明します。
 keywords: ''
 author: ErikjeMS
@@ -15,13 +15,13 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: cc65cc3440d260adc3bd2c7de3a311374681327d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 38c1d982dc627ccddf2844bf7a6334157e1f0b92
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183453"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032250"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>デバイスの企業所有としての識別
 
@@ -67,7 +67,7 @@ Android デバイスのシリアル番号の検索方法については、[こ�
 
 > [!IMPORTANT]
 > 一部の Android デバイスには複数の IMEI 番号があります。 Intune は、登録済みデバイスごとに 1 つの IMEI 番号のみを読み取ります。 IMEI 番号をインポートするときに、その番号が Intune にインベントリされている IMEI ではない場合、デバイスは会社所有のデバイスではなく個人のデバイスとして分類されます。 1 台のデバイスに複数の IMEI 番号をインポートすると、インベントリされていない番号の登録状態は **[不明]** と表示されます。<br>
->注: Android のシリアル番号は一意であることと存在することが保証されていません。 シリアル番号が信頼できるデバイス ID であるかどうかは、デバイスの供給元にご確認ください。
+>次の点にも注意してください。Android のシリアル番号は一意であることと存在することが保証されていません。 シリアル番号が信頼できるデバイス ID であるかどうかは、デバイスの供給元にご確認ください。
 >デバイスから Intune に報告されたシリアル番号は、Android デバイスの [設定]/[バージョン情報] メニューに表示される ID と一致しない場合があります。 デバイスの製造元から報告されたシリアル番号の種類をご確認ください。
 >ドット (.) が含まれるシリアル番号のファイルをアップロードしようとすると、アップロードが失敗します。 ドット (.) が含まれるシリアル番号はサポートされていません。
 
@@ -77,7 +77,7 @@ Android デバイスのシリアル番号の検索方法については、[こ�
 
    ![[追加] ボタンが強調表示された、[業務用デバイス ID] ワークスペース](./media/add-corp-id.png)
 
-2. **[ID の追加]** ブレードで **[IMEI]** または **[シリアル]** の ID の種類を指定します。
+2. **[ID の追加]** ブレードで、ID の種類として **[IMEI]** または **[シリアル]** を指定します。
 
 3. フォルダー アイコンをクリックし、インポートするリストのパスを指定します。 .csv ファイルに移動して、**[追加]** を選択します。 
 
@@ -87,7 +87,7 @@ Android デバイスのシリアル番号の検索方法については、[こ�
 
 1. [Azure portal の Intune](https://portal.azure.com) で **[デバイスの登録]** > **[業務用デバイスの ID]** > **[追加]** > **[手動で入力]** の順に選択します。
 
-2. **[ID の追加]** ブレードで **[IMEI]** または **[シリアル]** の ID の種類を指定します。
+2. **[ID の追加]** ブレードで、ID の種類として **[IMEI]** または **[シリアル]** を指定します。
 
 3. 追加する ID ごとに、**[ID]** と **[詳細]** を入力します。 ID の入力を完了したら、**[追加]** を選択します。
 

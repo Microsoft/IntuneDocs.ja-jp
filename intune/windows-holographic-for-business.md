@@ -5,22 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: fd99a168747bd4a0f5852404e767d658b8400ba2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure, seodec18
+ms.openlocfilehash: 062adf12f743fdbbe42c1f29e91f2a16414ca457
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180835"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032267"
 ---
-# <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Intune で Windows Holographic および HoloLens デバイスを管理および使用する
+# <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Intune を使用して Windows Holographic デバイスと HoloLens デバイスのさまざまなデバイス管理機能を管理および使用する
 
 Microsoft Intune には、[Microsoft HoloLens](https://docs.microsoft.com/hololens/) など、Windows Holographic for Business を実行するデバイスを管理するのに役立つ機能が多数含まれています。 Intune では、デバイスが組織のルールと対応していることを確認したり、VPN または WiFi プロファイルを追加してデバイスをカスタマイズできます。 別の主な機能には、デバイスをキオスクとして使用したり、特定のアプリまたは特定のアプリのセットを実行できるというのがあります。
 
@@ -32,11 +32,11 @@ Intune で Windows Holographic デバイスを使用する場合、エディシ�
 
 Azure Active Directory (AD) は、Windows Holographic for Business を実行するデバイスの管理と制御に役立つ優れたリソースです。 Intune と Azure AD を使用して、次の操作を行うことができます。 
 
-- **[Azure Active Directory に参加しているデバイスの設定](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup)**: Azure Active Directory (AD) では、Windows Holographic for Business を実行するデバイスを含む、職場所有の Windows 10 デバイスを追加することができます。 この機能を利用して、Azure AD でデバイスを制御することができます。 ユーザーがセキュリティとコンプライアンスの標準を満たすデバイスから会社のリソースにアクセスしていることを確認できます。
+- **[Azure Active Directory へのデバイスの参加](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)**:Azure Active Directory (AD) では、Windows Holographic for Business を実行するデバイスを含む、職場所有の Windows 10 デバイスを追加することができます。 この機能を利用して、Azure AD でデバイスを制御することができます。 ユーザーがセキュリティとコンプライアンスの標準を満たすデバイスから会社のリソースにアクセスしていることを確認できます。
 
-  詳細については、「[Azure Active Directory のデバイス管理の概要](https://docs.microsoft.com/azure/active-directory/device-management-introduction)」を参照してください。
+  詳細については、「[Azure Active Directory のデバイス管理とは](https://docs.microsoft.com/azure/active-directory/devices/overview)」を参照してください。
 
-- **[Windows デバイスの一括登録](windows-bulk-enroll.md)**: Azure Active Directory (AD) と Intune に多数の新しい Windows デバイスを参加させることができます。 この機能は一括登録と呼ばれ、プロビジョニング パッケージを使用します。 これらのパッケージでは、Windows Holographic for Business を実行するデバイスを Azure AD テナントに参加させ、Intune に登録します。
+- **[Windows デバイスの一括登録](windows-bulk-enroll.md)**:Azure Active Directory (AD) と Intune に多数の新しい Windows デバイスを参加させることができます。 この機能は一括登録と呼ばれ、プロビジョニング パッケージを使用します。 これらのパッケージでは、Windows Holographic for Business を実行するデバイスを Azure AD テナントに参加させ、Intune に登録します。
 
 ## <a name="company-portal"></a>[ポータル サイト]
 **[ポータル サイト アプリを構成する](company-portal-app.md)**
@@ -49,7 +49,6 @@ Intune には、ポータル サイト アプリが含まれています。こ�
 - [デバイスの名前を変更する](/intune-user-help/rename-your-device-cpapp)
 - デバイスに[アプリをインストールする](/intune-user-help/install-apps-cpapp-windows)
 - 設定アプリまたはポータル サイト アプリから[手動でデバイスを同期する](/intune-user-help/sync-your-device-manually-windows)
-
 
 ## <a name="compliance-policy"></a>コンプライアンス ポリシー
 **[デバイス コンプライアンス ポリシーの作成](compliance-policy-create-windows.md)**
@@ -85,11 +84,11 @@ Intune にはいくつかの組み込みアクションがあります。これ�
 
 Windows Holographic for Business を実行するデバイスを使用する場合、次のアクションを使用できます。 
 
-- **[ワイプ](devices-wipe.md#wipe)**: **[ワイプ]** アクションでは、Intune からデバイスを削除し、デバイスを出荷時の既定設定に復元します。 デバイスを新しいユーザーに割り当てる前に、あるいはデバイスの紛失時や盗難時に、このアクションを使用します。
+- **[ワイプ](devices-wipe.md#wipe)**:**[ワイプ]** アクションでは、Intune からデバイスを削除し、デバイスを出荷時の既定設定に復元します。 デバイスを新しいユーザーに割り当てる前に、あるいはデバイスの紛失時や盗難時に、このアクションを使用します。
 
-- **[インベントリから削除](devices-wipe.md#retire)**: **[リタイヤ]** アクションでは、Intune からデバイスが削除されます。 管理対象アプリのデータ、設定、Intune によって割り当てられた電子メール プロファイルも削除されます。 ユーザーの個人データはデバイスに保持されます。
+- **[インベントリから削除](devices-wipe.md#retire)**:**[リタイヤ]** アクションでは、Intune からデバイスを削除します。 管理対象アプリのデータ、設定、Intune によって割り当てられた電子メール プロファイルも削除されます。 ユーザーの個人データはデバイスに保持されます。
 
-- **[デバイスを同期して最新のポリシーと操作を取得する](device-sync.md)**: **[同期]** アクションでは、デバイスが Intune ですぐにチェックインするよう強制します。 デバイスは、チェックインするとすぐに、割り当てられているポリシーまたは保留中のアクションを受け取ります。 この機能は、次のスケジュールされたチェックインを待つことなく、割り当てられたポリシーの検証およびトラブルシューティングに役立ちます。
+- **[デバイスを同期して最新のポリシーとアクションを取得する](device-sync.md)**:**[同期]** アクションは、デバイスが即座に Intune にチェックインするよう強制します。 デバイスは、チェックインするとすぐに、割り当てられているポリシーまたは保留中のアクションを受け取ります。 この機能は、次のスケジュールされたチェックインを待つことなく、割り当てられたポリシーの検証およびトラブルシューティングに役立ちます。
 
 「**[Microsoft Intune デバイスの管理とは](device-management.md)**」は、Azure Portal を使用するデバイスの管理について学習する際に役立つリソースです。 
 

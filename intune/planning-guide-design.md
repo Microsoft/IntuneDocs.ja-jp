@@ -1,5 +1,5 @@
 ---
-title: 設計の作成
+title: Microsoft Intune の設計を作成する
 titlesuffix: Microsoft Intune
 description: この記事では、Microsoft Intune のクラウド専用の設計と実装の設計を作成する方法について説明します。
 keywords: ''
@@ -15,13 +15,13 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.custom: ''
-ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: f0159b4d33112e507556ceb53505eedc57ec05f7
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186496"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112988"
 ---
 # <a name="create-a-design"></a>設計の作成
 
@@ -211,7 +211,7 @@ Intune は、モバイル デバイスを管理して、企業のデータをセ
 
 Intune は、企業所有のデバイスと個人のデバイスの両方をサポートします。 デバイス登録マネージャーまたは Device Enrollment Program によって登録されるデバイスは企業所有と見なされます。 たとえば、Apple Device Enrollment Program (DEP) でデバイスを登録し、企業所有とマークして、対象を絞った企業ポリシーとアプリを受け取るデバイス グループに配置できます。
 
-企業と BYOD のユース ケースについて詳しくは、「[セクション 3: ユース ケースのシナリオの要件を決定する](planning-guide-requirements.md)」をご覧ください。
+企業と BYOD のユース ケースについて詳しくは、「[セクション 3:ユース ケースのシナリオの要件を決定する](planning-guide-requirements.md)」をご覧ください。
 
 ### <a name="bulk-enrollment"></a>一括登録
 
@@ -257,10 +257,10 @@ Intune は、企業所有のデバイスと個人のデバイスの両方をサ�
 
 | **ポリシー名** | **デバイスのプラットフォーム** | **設定** | **対象グループ** |   
 |:---:|:---:|:---:|:---:|
-| 企業 - iOS | iOS | PIN 必要、長さ: 6、クラウド バックアップの制限 | 企業デバイス |                                                           
-| 企業 - Android | Android | PIN 必要、長さ: 6、クラウド バックアップの制限 | 企業デバイス |                                                           
-| BYOD – iOS  | iOS | PIN 必要、長さ: 4 | BYOD デバイス |
-| BYOD – Android  | Android | PIN 必要、長さ: 4 | BYOD デバイス |
+| 企業 - iOS | iOS | PIN 必要、長さ:6、クラウド バックアップの制限 | 企業デバイス |                                                           
+| 企業 - Android | Android | PIN 必要、長さ:6、クラウド バックアップの制限 | 企業デバイス |                                                           
+| BYOD – iOS  | iOS | PIN 必要、長さ:4 | BYOD デバイス |
+| BYOD – Android  | Android | PIN 必要、長さ:4 | BYOD デバイス |
 
 
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して、構成ポリシーのニーズを確認することができます。
@@ -402,7 +402,7 @@ Intune では、複数の方法でユーザーまたはデバイスにアプリ�
 
 オンライン アクセスについては、条件付きアクセス ポリシーの対象となるプラットフォームおよびユーザー グループを決めます。 また、Exchange Online またはオンプレミスの Exchange 用の Intune サービス間コネクタをインストールして構成する必要があるかどうかを判断します。 Intune サービス間コネクタをインストールして構成する方法の詳細については、以下をご覧ください。<!---these links are correct--->
 
--   [Exchange Online](/intune-classic/deploy-use/intune-service-to-service-exchange-connector)
+-   [Exchange Online](exchange-service-connector-configure.md)
 
 -   [Exchange On-premises](exchange-connector-install.md)
 

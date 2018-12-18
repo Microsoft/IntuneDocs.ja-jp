@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5482d84d22aa7be29a8030dc75a27ba793792e40
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 26bf759722b5cb92bda28b0e60c9365a7edc7710
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182110"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112874"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために iOS アプリを準備する
 
@@ -28,7 +28,7 @@ ms.locfileid: "52182110"
 
 iOS 用 Microsoft Intune アプリ ラッピング ツールを使用すれば、アプリ自体のコードを変更せずに社内の iOS アプリの Intune アプリ保護ポリシーを有効にすることができます。
 
-このツールはアプリを囲むように "ラッパー" を作成する macOS コマンド ライン アプリケーションです。 アプリが処理されると、[アプリ保護ポリシー](/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)をアプリに展開することで、アプリの機能を変更できます。
+このツールはアプリを囲むように "ラッパー" を作成する macOS コマンド ライン アプリケーションです。 アプリが処理されると、[アプリ保護ポリシー](app-protection-policies.md)をアプリに展開することで、アプリの機能を変更できます。
 
 このツールをダウンロードする場合は、GitHub の「[iOS 用 Microsoft Intune アプリ ラッピング ツール](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)」を参照してください。
 
@@ -278,7 +278,7 @@ iOS では、アプリへの署名に元々使用されたものとは異なる�
 |指定した入力アプリケーションは署名されていません。 署名されている有効なアプリケーションを指定します。|アプリ ラッピング ツールでは、アプリに署名が必要です。 ラッピングされたアプリに署名する方法については、開発者ドキュメントを参照してください。|
 |指定した入力アプリケーションは .ipa または .app 形式である必要があります。|アプリ ラッピング ツールは .app 拡張子と .ipa 拡張子のみを受け取ります。 入力ファイルに有効な拡張子があり、.app または .ipa ファイルとしてコンパイルされていることを確認します。|
 |指定した入力アプリは既にラッピングされていて、最新のポリシー テンプレート バージョンです。|アプリ ラッピング ツールは、既にラッピングされ、ポリシー テンプレート バージョンが最新のアプリを再ラッピングしません。|
-|警告: SHA1 証明書ハッシュを指定しませんでした。 展開前にラッピングされたアプリケーションが署名されていることを確認します。|-c コマンドライン フラグの後に有効な SHA1 ハッシュを指定します。 |
+|警告:SHA1 証明書ハッシュを指定しませんでした。 展開前にラッピングされたアプリケーションが署名されていることを確認します。|-c コマンドライン フラグの後に有効な SHA1 ハッシュを指定します。 |
 
 ### <a name="log-files-for-the-app-wrapping-tool"></a>アプリ ラッピング ツールのログ ファイル
 アプリ ラッピング ツールでラッピングされているアプリはログを生成し、ログが iOS クライアント デバイス コンソールに書き込まれます。 この情報は、アプリケーションで問題が発生し、問題がアプリ ラッピング ツールに関連するかどうかを判断する必要がある場合に役立ちます。 この情報を取得するには、次の手順を使用します。
@@ -439,5 +439,5 @@ iOS 用アプリ ラッピング ツールで権利のエラーが表示され�
 
 ### <a name="see-also"></a>関連項目
 - [Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](apps-prepare-mobile-application-management.md)</br>
-- [Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
-- [SDK を使用してモバイル アプリケーション管理に対応する](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+- [Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
+- [SDK を使用してモバイル アプリケーション管理に対応する](app-sdk.md)

@@ -1,7 +1,7 @@
 ---
-title: Windows デバイスの登録方法別の Intune 機能
+title: Windows デバイスの Intune 登録方法別の機能
 titlesuffix: Microsoft Intune
-description: Windows デバイスの各登録方法でサポートされる機能を確認します。
+description: Windows デバイスの登録方法別の機能です。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -14,18 +14,18 @@ ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 38bb88015261aa50d6c27aec026614f1205aebe8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: f32a0967c094c16b76ad4c4572ebd8e80c6115b2
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189811"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032131"
 ---
-# <a name="capabilities-by-enrollment-method-for-windows-devices"></a>Windows デバイスの登録方法別の機能
+# <a name="intune-enrollment-method-capabilities-for-windows-devices"></a>Windows デバイスの Intune 登録方法別の機能
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune では、従業員のデバイスやアプリ、従業員が会社のデータにアクセスする手段を管理できます。 まず、デバイスを Intune サービスに登録する必要があります。 従業員のデバイスを登録する方法は複数あります。 次の表に示すように、各方法には異なるベスト プラクティスと機能があります。
+従業員のデバイスを Intune に登録する方法は複数あります。 次の表に示すように、各方法には異なるベスト プラクティスと機能があります。
 
 ## <a name="best-practices-by-enrollment-method"></a>登録方法別のベスト プラクティス
 | **ベスト プラクティス** | **[Azure AD 参加済み](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD 参加済み (Autopilot を使用)](enrollment-autopilot.md)** |**[一括](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |

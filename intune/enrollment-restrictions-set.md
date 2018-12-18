@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d9a7ad5d77f0c085fc1e91b6991657e6b848b3f3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e6f816ae0eb025addfaa0c5f7ec7d16005f6b040
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187839"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112954"
 ---
 # <a name="set-enrollment-restrictions"></a>登録制限を設定する
 
@@ -67,7 +67,7 @@ ms.locfileid: "52187839"
 
 ## <a name="set-device-type-restrictions"></a>デバイスの種類の制限を設定する
 
-デバイスの種類の制限に対する設定は以下の手順で変更できます。 この制限は、既に登録されているデバイスには適用されません。 [Intune PC エージェント](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)で登録されているデバイスはこの機能でブロックできません。
+デバイスの種類の制限に対する設定は以下の手順で変更できます。 この制限は、既に登録されているデバイスには適用されません。 [Intune PC エージェント](manage-windows-pcs-with-microsoft-intune.md)で登録されているデバイスはこの機能でブロックできません。
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** を選択し、**Intune** を検索して **[Intune]** を選択します。
@@ -123,7 +123,7 @@ ms.locfileid: "52187839"
 6. **[保存]** を選択します。
 
 
-ユーザーがデバイス登録の上限に達すると、そのことを伝える通知が表示されます。 たとえば、iOS では次のようになります。
+BYOD の登録中にユーザーがデバイス登録の上限に達すると、そのことを伝える通知が表示されます。 たとえば、iOS では次のようになります。
 
 ![iOS のデバイス制限通知](./media/enrollment-restrictions-ios-set-limit-notification.png)
 

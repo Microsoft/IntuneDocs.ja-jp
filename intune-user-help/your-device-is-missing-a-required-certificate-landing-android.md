@@ -1,11 +1,12 @@
 ---
 title: デバイスに必要な証明書がない | Microsoft Docs
-description: ''
+titlesuffix: Microsoft Intune
+description: デバイスに会社のサポートが必要とする証明書がありません。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,13 +17,13 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.custom: intune-enduser
-ms.openlocfilehash: 043b04688630f345be625456fb9cfec586e2f790
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.custom: intune-enduser; seodec18
+ms.openlocfilehash: e40ac2fd81375b84084dd229f4cb5a6ab3e9915f
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150754"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032216"
 ---
 # <a name="your-device-is-missing-a-required-certificate"></a>デバイスに必要な証明書がない
 
@@ -38,6 +39,6 @@ Android デバイスが Intune に登録されておらず、会社のサポー�
 
 まず実行すべき手順は、[デバイスに通常プレインストールされている証明書が不足](your-device-is-missing-a-preinstalled-certificate-android.md)しているかどうかを確認することです。
 
-この手順で解決しない場合、会社のサポートから、[追加のセキュリティのために 2 番目の証明書をインストールするよう要求される](your-device-is-missing-an-IT-required-certificate-android.md)ことがあります。
+証明書の問題を修正しても解決しない場合、会社のサポートから、[追加のセキュリティのために 2 番目の証明書をインストールするよう要求される](your-device-is-missing-an-IT-required-certificate-android.md)ことがあります。
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

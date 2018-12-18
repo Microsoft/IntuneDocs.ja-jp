@@ -5,31 +5,31 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 12/05/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 658a7655-a6df-4dbe-b56c-22c7fc60e706
-ms.reviewer: angerobe
+ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 13ffb9e7091b484c59f44802de675b1ab45b1c77
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5876b0df6787640e465952cb1cca17f4f3105762
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183470"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977339"
 ---
-# <a name="quickstart-enroll-your-windows-10-device"></a>クイック スタート: Windows 10 デバイスを登録する
+# <a name="quickstart-enroll-your-windows-10-device"></a>クイック スタート:Windows 10 デバイスを登録する
 
 このクイック スタートでは、最初に Intune ユーザーのロールで、Microsoft Intune に Windows 10 デバイスを登録します。 次に、Intune に戻って、登録したデバイスを確認します。
 
 デバイスを Microsoft Intune に登録すると、Windows 10 デバイスが組織のセキュリティで保護されているデータ (電子メール、ファイル、その他のリソースなど) にアクセスできるようになります。 対象は Windows 10 Desktop と Windows 10 Mobile デバイスの両方です。 デバイスを登録すると、ユーザーと組織の両方にとってこのアクセスを保護し、職場のデータと個人のデータを分けることができます。
 
 > [!TIP]
-> 「[ポータル サイト アプリをインストールし、Intune に Windows デバイスを登録するとどうなりますか](/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)」と「[デバイスを Intune に登録した場合に IT 管理者が確認できるもの](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)」を参照してください。
+> 「[ポータル サイト アプリをインストールし、Intune に Windows デバイスを登録するとどうなりますか](/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows)」と「[デバイスを Intune に登録した場合に IT 管理者が確認できるもの](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)」を参照してください。
 
 Intune サブスクリプションがない場合は、[無料試用版アカウントにサインアップ](free-trial-sign-up.md)します。
 
@@ -58,7 +58,7 @@ Windows 10 デスクトップを登録する前に、インストールされて
 4. Windows 10 の **[バージョン]** が **1607 以降**であることを確認します。
 
     > [!IMPORTANT]
-    > このクイック スタートの手順は Windows 10 バージョン **1607 以降**に対するものです。バージョンが **1511 以前**の場合は、[こちらの手順](/intune-user-help/enroll-your-w10-device-your-account.md)に従ってください。
+    > このクイック スタートの手順は Windows 10 バージョン **1607 以降**に対するものです。バージョンが **1511 以前**の場合は、[こちらの手順](/intune-user-help/enroll-your-w10-device-your-account)に従ってください。
 
 ## <a name="enroll-windows-10-desktop"></a>Windows 10 デスクトップを登録する
 
@@ -85,7 +85,7 @@ Windows 10 デスクトップを登録する前に、インストールされて
 
    ![新しく追加したアカウントのスクリーンショット](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-06.png)
 
-    前の手順を実行しても職場または学校の電子メール アカウントとファイルにまだアクセスできない場合は、「[[職場または学校にアクセスする] が表示されている場合のトラブルシューティング手順](/intune-user-help/troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school)」に従ってください。
+    前の手順を実行しても職場または学校の電子メール アカウントとファイルにまだアクセスできない場合は、「[[職場または学校にアクセスする] が表示されている場合のトラブルシューティング手順](/intune-user-help/troubleshoot-your-windows-10-device-windows#troubleshooting-steps-to-follow-if-you-see-access-work-or-school)」に従ってください。
 
 ## <a name="confirm-your-device-enrollment-in-intune"></a>Intune でのデバイス登録を確認する
 
@@ -97,13 +97,13 @@ Windows 10 デスクトップを登録する前に、インストールされて
 
 ## <a name="clean-up-resources"></a>リソースをクリーンアップする
 
-Windows デバイスの登録を解除するには、「[管理から Windows デバイスを削除する](/intune-user-help/unenroll-your-device-from-intune-windows.md)」をご覧ください。
+Windows デバイスの登録を解除するには、「[管理から Windows デバイスを削除する](/intune-user-help/unenroll-your-device-from-intune-windows)」をご覧ください。
 
 ## <a name="next-steps"></a>次の手順
 
-このクイック スタートでは、Windows 10 デバイスを Intune に登録する方法を説明しました。 すべてのプラットフォーム全体にデバイスを登録する他の方法について学習することができます。 Intune でのデバイスの使用について詳しくは、「[マネージド デバイスを使用して作業する](/intune-user-help/use-managed-devices-to-get-work-done.md)」をご覧ください。
+このクイック スタートでは、Windows 10 デバイスを Intune に登録する方法を説明しました。 すべてのプラットフォーム全体にデバイスを登録する他の方法について学習することができます。 Intune でのデバイスの使用について詳しくは、「[マネージド デバイスを使用して作業する](/intune-user-help/use-managed-devices-to-get-work-done)」をご覧ください。
 
 この一連の Intune のクイック スタートに従うには、次のクイック スタートに進んでください。
 
 > [!div class="nextstepaction"]
-> [クイック スタート: Android デバイスに必要なパスワードの長さを設定する](quickstart-set-password-length-android.md)
+> [クイック スタート:Android デバイスに必要なパスワードの長さを設定する](quickstart-set-password-length-android.md)

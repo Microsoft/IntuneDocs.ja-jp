@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: db655c49277051267036d76e518cc870757f67c2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fafc9381f59ceb4e78e3e76d24694cd0acdcf8d0
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183045"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112376"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Microsoft Intune の既知の問題
 
@@ -31,7 +31,7 @@ ms.locfileid: "52183045"
 
 ここに記載されていないバグを報告する場合は、[サポートを依頼](get-support.md)してください。
 
-Intune への新機能の追加を依頼する場合は、[Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) サイトでレポートを提出することをご検討ください。
+Intune への新機能の追加を依頼する場合は、[Microsoft Intune Feedback](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) サイトでレポートを提出することをご検討ください。
 
 ## <a name="migration"></a>移行
 
@@ -44,13 +44,13 @@ Azure クラシック ポータルで作成されたコンプライアンス ポ
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Intune の従来の PC クライアント機能が使用できるのは Silverlight コンソールのみです。
 
-Azure Portal 上の Intune で Windows 10 を管理する機能は、Windows MDM を通して提供されます。 詳細については、「[Azure コンソールと従来の Intune PC クライアントでの Intune](https://docs.microsoft.com/intune-classic/deploy-use/intune-on-azure)」を参照してください。
+Azure Portal 上の Intune で Windows 10 を管理する機能は、Windows MDM を通して提供されます。 詳細については、「[Azure コンソールと従来の Intune PC クライアントでの Intune](intune-legacy-pc-client.md)」を参照してください。
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>移行中に Intune で作成されるグループは、他の Microsoft 製品の機能に影響する可能性がある
 
 Intune から Azure Portal に移行すると、**All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** という新しいグループが表示される場合があります。 このグループには、Intune のライセンスを持つユーザーだけでなく、ご利用の Azure Active Directory のすべてのユーザーが含まれます。 このグループを使用すると、一部の既存のユーザーまたは新規ユーザーがどのグループにも属さない場合に、他の Microsoft 製品に関する問題が発生することがあります。
 
-### <a name="status-blades-for-migrated-policies-do-not-work"></a>移行したポリシーの状態を示すブレードが機能しない
+### <a name="status-blades-for-migrated-policies-dont-work"></a>移行したポリシーの状態を示すブレードが機能しない
 
 Azure クラシック ポータルから移行したポリシーの状態に関する情報は、Azure Portal では表示できません。 ただし、クラシック ポータルではこれらのポリシーに関するレポートを引き続き表示できます。 移行した構成ポリシーの状態に関する情報を表示するには、Azure Portal でポリシーを再作成します。
 

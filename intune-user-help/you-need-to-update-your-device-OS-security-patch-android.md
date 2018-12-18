@@ -1,11 +1,12 @@
 ---
 title: Android デバイスを更新する必要がある | Microsoft Docs
-description: ''
+titlesuffix: Microsoft Intune
+description: Android デバイスのオペレーティング システムを更新する必要があります。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/11/2017
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,13 +15,13 @@ ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope:
 - User help
 ROBOTS: ''
-ms.custom: intune-enduser
-ms.openlocfilehash: 7d67d5cc34dfb701f68763bd6265de009055f815
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.custom: intune-enduser; seodec18
+ms.openlocfilehash: d7edf041157ba0ffc5e195b08633f1f0407c0c88
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147540"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031672"
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Android デバイスのオペレーティング システムを更新する必要がある
 

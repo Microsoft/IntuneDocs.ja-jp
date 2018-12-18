@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: efb850e0f08c94cfee7948f50411220216eb8418
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9562eb2c8fae49628ac042f28f172fb9f8fd5106
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188077"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112546"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows デバイスの登録をセットアップする
 
@@ -55,7 +55,7 @@ Intune では、Windows 10 Creators Update を実行する、Azure Active Direct
 ## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>Azure AD Premium なしで Windows 登録を簡略化する
 Intune サーバーに登録要求をリダイレクトする、ドメイン ネーム サーバー (DNS) エイリアス (CNAME レコード タイプ) を作成することで、登録を簡略化できます。 それ以外の場合、Intune に接続を試行するユーザーは、登録時に Intune のサーバー名を入力する必要があります。
 
-**手順 1: CNAME を作成する** (省略可能)<br>
+**手順 1:CNAME を作成する** (省略可能)<br>
 会社のドメインの CNAME DNS リソース レコードを作成します。 たとえば、会社の Web サイトが contoso.com の場合、EnterpriseEnrollment.contoso.com を enterpriseenrollment-s.manage.microsoft.com にリダイレクトする CNAME を DNS に作成します。
 
 CNAME DNS エントリの作成は省略可能ですが、CNAME レコードにより登録が簡単になります。 CNAME レコードの登録が見つからない場合、ユーザーは手動で MDM サーバー名 enrollment.manage.microsoft.com を入力するように求められます。
@@ -83,7 +83,7 @@ Contoso DNS の管理者は、次の CNAME を作成する必要があります�
 
 DNS レコードの変更が反映されるまでには、最大で 72 時間かかります。 DNS レコードの変更が反映されるまで、Intune で DNS の変更を確認することはできません。
 
-**手順 2: CNAME を確認する** (省略可能)<br>
+**手順 2:CNAME を確認する** (省略可能)<br>
 1. [Azure portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Windows の登録]** > **[CNAME 検証]** の順に選択します。
 2. **[ドメイン]** ボックスに、企業の Web サイトを入力し、**[テスト]** を選択します。
 
@@ -102,4 +102,4 @@ DNS レコードの変更が反映されるまでには、最大で 72 時間か
 
 ## <a name="next-steps"></a>次の手順
 
-- [Azure で Intune を使用して Windows デバイスを管理する際の考慮事項](/intune-classic/deploy-use/intune-on-azure)
+- [Azure で Intune を使用して Windows デバイスを管理する際の考慮事項](intune-legacy-pc-client.md)

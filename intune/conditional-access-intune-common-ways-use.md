@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune での条件付きアクセス
-titlesuffix: ''
+title: 条件付きアクセスのシナリオ
+titlesuffix: Microsoft Intune
 description: Intune の条件付きアクセスが、デバイス ベースおよびアプリ ベースの条件付きアクセスに一般的にどのように使用されるかについて説明します。
 keywords: ''
 author: brenduns
@@ -14,13 +14,13 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure; get-started
-ms.openlocfilehash: d7c47e7e82928ea40d0b39dfbb17472441eac4f5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure; get-started; seodec18
+ms.openlocfilehash: 7073c5c617806bcf35934aba73bf15a9a195a506
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187669"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112478"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune での条件付きアクセスの一般的な使用方法
 
@@ -45,7 +45,7 @@ Exchange Online や他の Office 365 製品のデバイス ベースの条件付
 
 -   Intune のデバイス コンプライアンスの詳細については、[こちら](device-compliance.md)を参照してください。
 
--   Intune で条件付きアクセスを使用した、電子メール、Office 365、およびその他のサービスの保護について詳しくは、[こちら](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)をご覧ください。
+-   Intune で条件付きアクセスを使用した、電子メール、Office 365、およびその他のサービスの保護について詳しくは、[こちら](app-based-conditional-access-intune.md)をご覧ください。
 
 > [!NOTE]
 > Android デバイスの場合、Sharepoint Online に対するデバイス ベースのアクセスを有効にすると、ユーザーは登録されたデバイスで次のように **[ブラウザー アクセスを有効にする]** オプションを有効にする必要があります。
@@ -125,7 +125,7 @@ Intune は、モバイル デバイス上のマルウェア、トロイの木馬
 
 Intune と Mobile Threat Defense の統合は、デバイスのリスクに基づいた条件付きアクセスの決定において重要な役割を果たします。
 
--   Intune Mobile Threat Defense について詳しくは、[こちら](https://docs.microsoft.com/intune-classic/deploy-use/mobile-threat-defense)をご覧ください。
+-   Intune Mobile Threat Defense について詳しくは、[こちら](mobile-threat-defense.md)をご覧ください。
 
 ### <a name="conditional-access-for-windows-pcs"></a>Windows PC の条件付きアクセス
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 470c3b7ac273e051af047eba95012b36a8ea1deb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fd3a38b331507ddc50a7b5e4ce8794e71d0e5dc5
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186003"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977356"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune のデバイス コンプライアンス ポリシーの概要
 
@@ -40,6 +40,9 @@ ms.locfileid: "52186003"
 - デバイスが Mobile Threat Defense レベル以下であることが必要
 
 デバイス コンプライアンス ポリシーを使用して、デバイス コンプライアンスの状態を監視することもできます。
+
+> [!IMPORTANT]
+> Intune では、デバイス上のすべてのコンプライアンス評価をデバイスのチェックイン スケジュールに従って行います。 [デバイスのチェックイン スケジュールの詳細については、こちらをご覧ください](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned)。
 
 <!---### Actions for noncompliance
 
@@ -156,21 +159,21 @@ Remember that you need to implement conditional access policies in addition to c
 
 Intune に登録されたすべてのデバイスで、一連の組み込み**コンプライアンス ポリシー設定** (Azure portal > [デバイスのポリシー準拠]) が評価されます。 たとえば、次のとおりです。
 
-- **[Mark devices with no compliance policy assigned as]\(コンプライアンス ポリシーが割り当てられていないデバイスにマークを付ける\)**: このプロパティには次の 2 つの値があります。
+- **[Mark devices with no compliance policy assigned as]\(コンプライアンス ポリシーが割り当てられていないデバイスにマークを付ける\)**:このプロパティには次の 2 つの値があります。
 
   - **[準拠]**: セキュリティ機能が無効
   - **[非準拠]** (既定値): セキュリティ機能が有効
 
   デバイスにコンプライアンス ポリシーが割り当てられていない場合、そのデバイスは非準拠と見なされます。 既定では、デバイスは **[準拠]** としてマークされます。 条件付きアクセスを使用する場合は、設定を **[非準拠]** に変更することをお勧めします。 ポリシーが割り当てられていないためにエンド ユーザーが非準拠である場合、ポータル サイトには `No compliance policies have been assigned` とリストされます。
 
-- **[脱獄の高度な検出]**: この設定が有効な場合、iOS デバイスは Intune によって、より頻繁にチェックインされます。 このプロパティを有効にすると、デバイスの位置情報サービスが使用され、バッテリの使用量に影響します。 ユーザーの場所データは Intune では保存されません。
+- **[脱獄の高度な検出]**:この設定が有効な場合、iOS デバイスは Intune によって、より頻繁にチェックインされます。 このプロパティを有効にすると、デバイスの位置情報サービスが使用され、バッテリの使用量に影響します。 ユーザーの場所データは Intune では保存されません。
 
   この設定を有効にするには、デバイスで以下の操作が必要です。
   - OS レベルで位置情報サービスを有効にする
   - ポータル サイトで位置情報サービスを使用できるようにする
   - 72 時間ごとに 1 回以上、脱獄状態を評価して Intune にレポートする それ以外の場合、デバイスは非準拠とマークされます。 ポータル サイト アプリを開くか、デバイスを 500 メートル以上物理的に移動すると、評価がトリガーされます。
 
-- **[コンプライアンス状態の有効期間 (日)]**: デバイスが受け取ったすべてのコンプライアンス ポリシーの状態をレポートする期間を入力します。 この期間内に状態を返さないデバイスは非準拠として扱われます。 既定値は 30 日です。
+- **[コンプライアンス状態の有効期間 (日)]**:デバイスが受け取ったすべてのコンプライアンス ポリシーの状態をレポートする期間を入力します。 この期間内に状態を返さないデバイスは非準拠として扱われます。 既定値は 30 日です。
 
 すべてのデバイスに**組み込みのデバイス コンプライアンス ポリシー** (Azure portal > [デバイスのポリシー準拠] > [ポリシーへの準拠]) があります。 この組み込みポリシーを使用して、これらの設定を監視します。
 

@@ -6,22 +6,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/29/2017
+ms.date: 12/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 363fd280-1865-4a61-855b-eb75c3c62753
-ms.reviewer: heenamac
+ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 68896a363cab37aabe9a597872da0fe75c44c473
-ms.sourcegitcommit: 3903f20cb5686532ccd8c36aa43c5150cee7cca2
+ms.openlocfilehash: 3f2ffb3f99ce0dc925c52f733b25292cdbddae3e
+ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52267239"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52860998"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Zimperium を Intune と統合する
 
@@ -36,7 +36,7 @@ Zimperium と Intune の統合を始める前に、次のサブスクリプシ�
 
 -   Microsoft Intune サブスクリプション
 
--   次のアクセス許可を付与する Azure Active Directory 管理者資格情報:
+-   次のアクセス許可を付与する、Azure Active Directory グローバル管理者の管理者資格情報:
 
     -   サインインしてユーザー プロファイルを読み取る
 
@@ -52,7 +52,7 @@ Zimperium と Intune の統合を始める前に、次のサブスクリプシ�
 
 Zimperium アプリ承認プロセスは以下で構成されます。
 
--   Zimperium サービスがデバイスの正常性状態に関する情報を Intune に通知できるようにします。
+-   Zimperium サービスがデバイスの正常性状態に関する情報を Intune に通知できるようにします。 これらのアクセス許可を付与するには、グローバル管理者の資格情報を使用する必要があります。 アクセス許可の付与は 1 回限りの操作です。 アクセス許可が付与されたら、日常業務でグローバル管理者の資格情報が必要になることはありません。
 
 -   Zimperium は、Azure Active Directory 登録グループ メンバーシップと同期してデバイスのデータベースを設定します。
 
@@ -60,9 +60,12 @@ Zimperium アプリ承認プロセスは以下で構成されます。
 
 -   Zimperium アプリが Azure AD SSO を使用してサインインできるようにします。
 
+同意と Azure Active Directory アプリケーションの詳細については、Azure Active Directory の記事「*Azure Active Directory v2.0 エンドポイントでのアクセス許可と同意*」の「[ディレクトリ管理者にアクセス許可を要求する](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#request-the-permissions-from-a-directory-admin)」をご覧ください。
+
+
 ## <a name="to-set-up-zimperium-integration"></a>Zimperium の統合を設定するには
 
-1.   [Zimperium MTD コンソール](https://sso.zimperium.com/signon/aad/) に移動し、資格情報を使用してサインインします。
+1.   [Zimperium MTD コンソール](https://sso.zimperium.com/signon/aad/) に移動し、資格情報を使用してサインインします。 Zimperium 統合のセットアップ プロセスを実行するには、グローバル管理者のロールを持つ Azure Active Directory ユーザーとしてサインインする必要があります。 この 1 回限りのセットアップ操作では、グローバル管理者権限を使用して、組織内で Zimperium アプリが Intune と通信する権限を付与します。 
 
 2.  左のメニューから **[Management]\(管理\)** を選択します。
 
@@ -70,16 +73,18 @@ Zimperium アプリ承認プロセスは以下で構成されます。
 
 4.  **[Add MDM]\(MDM の追加\)** を選択し、**[MDM provider]\(MDM プロバイダー\)** 一覧から **[Microsoft Intune]** を選択します。
 
-5.  Microsoft Intune を MDM サービスとして設定すると、 **[Microsoft Intune Configuration]\(Microsoft Intune 構成\)**  ウィンドウが開くので、**[Zimperium zConsole]** と **[zIPS iOS and Android apps]\(zIPS iOS および Android アプリ\)** オプションのそれぞれで  **[Azure Active Directory を追加する]**  を選択します。これらのオプションは Zimperium が Azure AD シングル サインオンを使用して Intune および Azure AD と通信することを承認するものです。
+5.  Microsoft Intune を MDM サービスとして設定すると、 **[Microsoft Intune Configuration]\(Microsoft Intune 構成\)**  ウィンドウが開くので、 **[Azure Active Directory を追加する]**  を **[Zimperium zConsole]** と **[zIPS iOS and Android apps]\(zIPS iOS および Android アプリ\)** オプションのそれぞれで選択します。これらのオプションは Zimperium が Azure AD シングル サインオンを使用して Intune および Azure AD と通信することを承認するものです。
 
-    > [!IMPORTANT]
-    > Intune との統合プロセスを完了するには、Zimperium zConsole、zIPS iOS および Android アプリを追加する必要があります。
+    > [!IMPORTANT]  
+    > Intune との統合プロセスを完了するには、[Zimperium zConsole] と [zIPS iOS and Android apps]\(zIPS iOS および Android アプリ\) を追加する必要があります。
 
 6.   **[Accept]\(承認\)**  を選択して、Zimperium アプリが Intune および Azure Active Directory と通信することを承認します。
 
-7.  **[Zimperium zConsole]** および **[zIPS iOS and Android]\(zIPS および Android\)** アプリを Azure AD に追加したら、Azure AD セキュリティ グループを追加します。 これで、Zimperium が Azure AD セキュリティ グループとそのサービスを同期できるようになります。
+7.  **[Zimperium zConsole]** と **[zIPS iOS and Android apps]\(zIPS iOS および Android アプリ\)** を Azure AD に追加したら、Azure AD セキュリティ グループを追加します。 これで、Zimperium が Azure AD セキュリティ グループとそのサービスを同期できるようになります。
 
 8.   **[Finish]\(完了\)** を選択して構成を保存し、最初の Azure AD セキュリティ グループの同期を開始します。
+
+9.  Zimperium MTD コンソールからサインアウトします。
 
 ## <a name="next-steps"></a>次の手順
 

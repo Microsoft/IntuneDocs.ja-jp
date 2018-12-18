@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: ''
-ms.date: 05/08/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: fdd99d7c3987eee852399c37108c890a827e1111
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 47627bc9f223c301fd04b88c0080b3a6fea26fe8
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189743"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032467"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Samsung の Knox Mobile Enrollment を使用して Android デバイスを自動的に登録する
 
@@ -43,15 +43,15 @@ Knox Deployment Program に参加している承認されたリセラーから�
 ## <a name="prerequisites"></a>必要条件
 
 KME を使って Intune に登録するには、最初に、次の手順に従って、Samsung Knox ポータルで会社を登録する必要があります。
-1.  [使っているリージョンで KME を利用できることを確認する](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME は 55 以上の国で使用できます。 展開する国がサポートされていることを確認します。
+1.  [お住まいの地域で KME が使用可能であることを確認する](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries):KME は 55 を超える国で使用できます。 展開する国がサポートされていることを確認します。
 
-2.  [サポートされているデバイス](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+): KME は、Android の登録については Knox 2.4 以降、Android エンタープライズの登録については Knox 2.8 以降の、すべての Samsung デバイスで使用できます。
+2.  [サポートされているデバイス](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+):KME は、Android の登録については Knox 2.4 以降、Android エンタープライズの登録については Knox 2.8 以降の、すべての Samsung デバイスで使用できます。
 
-3.  [ネットワーク要件](https://docs.samsungknox.com/KME-Getting-Started/Content/firewall_exceptions.htm): 必要なファイアウォール ルールとネットワーク アクセス ルールが、ネットワークで許可されていることを確認します。
+3.  [ネットワーク要件](https://docs.samsungknox.com/KME-Getting-Started/Content/firewall_exceptions.htm):必要なファイアウォール ルールとネットワーク アクセス ルールが、ネットワークで許可されていることを確認します。
 
-4.  [Samsung アカウントの登録](https://www2.samsungknox.com/en/user/register): KME に登録して有効にし、Knox Enterprise のすべての権利を一元管理するには、Samsung アカウントが必要です。
+4.  [Samsung アカウントの登録](https://www2.samsungknox.com/en/user/register):KME に登録して有効にし、Knox Enterprise のすべての権利を一元管理するには、Samsung アカウントが必要です。
 
-5.  登録の確認: プロファイルが完成して送信された後、Samsung はユーザーのアプリケーションの確認を実行し、すぐに承認するか、またはさらにフォローアップするためにレビュー保留状態にします。 アカウントが承認された後は、以降の手順に進むことができます。
+5.  登録の確認:プロファイルが完成して送信された後、Samsung はユーザーのアプリケーションの確認を実行し、すぐに承認するか、またはさらにフォローアップするためにレビュー保留状態にします。 アカウントが承認された後は、以降の手順に進むことができます。
 
 ## <a name="create-mdm-profile"></a>MDM プロファイルを作成する
 
@@ -68,7 +68,7 @@ KME を使って Intune に登録するには、最初に、次の手順に従�
 |Enable this app as a Google Device Owner (このアプリを Google デバイスの所有者として有効にする) | はい | Android エンタープライズに登録するには、このオプションを選択します。 
 |Supported MDM (サポートされる MDM)      | はい       |Microsoft Intune 
 |Leave all system apps enabled (すべてのシステム アプリを有効のままにする) | [いいえ] | すべてのアプリを有効にして、プロファイルで使用できるようにするには、このオプションを選択します。 このオプションを選択しないと、非常に限られたシステム アプリのセットのみがデバイスのアプリ トレイに表示されます。 メール アプリなどのアプリが非表示のままになります。 
-|Custom JSON (カスタム JSON)        | [いいえ]        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "Intune 登録トークン文字列を入力してください"}。 [登録プロファイルの作成方法](android-kiosk-enroll.md)に関する記事をご覧ください。 
+|Custom JSON (カスタム JSON)        | [いいえ]        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN":"Intune 登録トークン文字列を入力してください"}。 [登録プロファイルの作成方法](android-kiosk-enroll.md)に関する記事をご覧ください。 
 | Add legal agreements (法的契約を追加する) | [いいえ] | 空白のままにします。 
 
 ### <a name="for-android"></a>Android の場合
@@ -120,6 +120,8 @@ MDM プロファイルを作成して割り当て、ユーザー名を関連付�
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 - **デバイス所有者のサポート:** Intune は Android エンタープライズを使用するキオスク モードへのデバイスの登録のみをサポートします。 他の Android エンタープライズ デバイス所有者モードは、Intune で利用可能になったらサポートされます。
+
+- **仕事用プロファイルのサポートなし**:KME は会社のデバイスを登録する方法であり、デバイスを Android 仕事用プロファイルに登録することにより、個人のデバイスの仕事用データと個人用データが別々に管理されるようになります。 そのため Intune では、KME を使用してデバイスを仕事用プロファイルに登録するシナリオはサポートされていません。
 
 - **Android エンタープライズに対する登録への工場出荷時リセット:** 既に設定されているデバイスを用途変更する場合は、Android エンタープライズに登録するときに、デバイスを工場出荷時の状態にリセットする必要があります。
 

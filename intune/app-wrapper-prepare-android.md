@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 74ef09c8979e6867d49c119668ad329570cee424
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 42b554f025f80546a0a2dd93de92549f2f037b3f
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189828"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112875"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために Android アプリを準備する
 
@@ -28,7 +28,7 @@ ms.locfileid: "52189828"
 
 Android 用 Microsoft Intune アプリ ラッピング ツールを使用して社内 Android アプリの動作を変更すれば、アプリ自体のコードを変更しなくてもアプリの機能を制限できます。
 
-このツールは、PowerShell で実行される Windows のコマンドライン アプリケーションであり、Android アプリのラッパーを作成します。 アプリがラッピングされた後は、Intune で[モバイル アプリケーション管理ポリシー](/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)を構成することによって、アプリの機能を変更できます。
+このツールは、PowerShell で実行される Windows のコマンドライン アプリケーションであり、Android アプリのラッパーを作成します。 アプリがラッピングされた後は、Intune で[モバイル アプリケーション管理ポリシー](app-protection-policies.md)を構成することによって、アプリの機能を変更できます。
 
 
 このツールを実行する前に、「[アプリ ラッピング ツールを実行するうえでのセキュリティ上の考慮事項](#security-considerations-for-running-the-app-wrapping-tool)」を確認してください。 このツールをダウンロードするには、GitHub の「[Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android)」 (Android 用 Microsoft Intune アプリ ラッピング ツール) にアクセスしてください。
@@ -63,7 +63,7 @@ Android 用 Microsoft Intune アプリ ラッピング ツールを使用して�
 
 2.  ライセンス条項に同意し、インストールを完了します。
 
-このツールをインストールしたフォルダーをメモしておきます。 既定の場所は、C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool です。
+このツールをインストールしたフォルダーをメモしておきます。 既定の場所は次のとおりです。C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool です。
 
 ## <a name="run-the-app-wrapping-tool"></a>アプリ ラッピング ツールを実行する
 
@@ -91,7 +91,7 @@ Android 用 Microsoft Intune アプリ ラッピング ツールを使用して�
 |**-KeyStorePassword**&lt;SecureString&gt;|キーストアの暗号化を解除するために使用するパスワード。 Android では、すべてのアプリケーション パッケージ (.apk) に署名する必要があります。 Java キーツールを使用して KeyStorePassword を生成できます。 詳細については、こちらの Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) を参照してください。| |
 |**-KeyAlias**&lt;String&gt;|署名に使用するキーの名前。| |
 |**-KeyPassword**&lt;SecureString&gt;|署名に使用する秘密キーの暗号化を解除するために使用するパスワード。| |
-|**-SigAlg**&lt;SecureString&gt;| (省略可能) 署名に使用する署名アルゴリズムの名前。 アルゴリズムは秘密キーと互換性を持つ必要があります。|例: SHA256withRSA、SHA1withRSA|
+|**-SigAlg**&lt;SecureString&gt;| (省略可能) 署名に使用する署名アルゴリズムの名前。 アルゴリズムは秘密キーと互換性を持つ必要があります。|例:SHA256withRSA、SHA1withRSA|
 | **&lt;CommonParameters&gt;** | (省略可能) コマンドは、verbose、debug などの一般的な PowerShell パラメーターをサポートします。 |
 
 

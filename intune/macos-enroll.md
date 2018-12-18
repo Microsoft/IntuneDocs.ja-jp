@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 85a05f4816692d3bccfe695c7e69f54d007f3b59
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 7a54a72afb6052ed11566c2d2ada596ebde2159b
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187006"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112410"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Intune で macOS デバイスの登録をセットアップする
 
@@ -37,7 +37,7 @@ macOS デバイスの登録を設定する前に、以下の前提条件を満�
 
 - [ドメインを構成する](custom-domain-name-configure.md)
 - [MDM 機関を設定する](mdm-authority-set.md)
-- [グループの作成](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
+- [グループの作成](groups-add.md)
 - [ポータル サイト アプリを構成する](company-portal-app.md)
 - [Office 365 ポータル](http://go.microsoft.com/fwlink/p/?LinkId=698854)でユーザー ライセンスを割り当てる
 - [Apple MDM プッシュ証明書を取得する](apple-mdm-push-certificate-get.md)
@@ -47,7 +47,7 @@ macOS デバイスの登録を設定する前に、以下の前提条件を満�
 Intune 管理のために、ユーザーに個人用デバイスを登録させることができます。これは "Bring Your Own Device" (BYOD) と呼ばれます。 前提条件を満たした上で、ユーザーにライセンスを割り当てた後、ユーザーは次の方法で各自のデバイスを登録できます。
 - [会社のポータル Web サイト](https://portal.manage.microsoft.com)にアクセスします。(または)
 - ポータル サイト アプリをダウンロードします。
-オンライン登録の手順 (「[Intune に macOS デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)」) へのリンクを送信することもできます。
+オンライン登録の手順(「[Intune に macOS デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)」) へのリンクを送信することもできます。
 
 その他のエンドユーザー タスクの詳細については、次の記事を参照してください。
 
@@ -56,8 +56,8 @@ Intune 管理のために、ユーザーに個人用デバイスを登録させ�
 
 ## <a name="company-owned-macos-devices"></a>会社所有の macOS デバイス
 Intune は、ユーザーのデバイスを購入する組織のため、次の会社所有の macOS デバイスの登録方法をサポートします。
-- [Apple の Device Enrollment Program (DEP)](device-enrollment-program-enroll-macos.md): 組織は、Apple の Device Enrollment Program (DEP) を通して macOS デバイスを購入できます。 DEP では、登録プロファイルを “無線で” 展開して、デバイスを管理対象として登録できます。
-- [デバイス登録マネージャー (DEM)](device-enrollment-manager-enroll.md): DEM アカウントを使用して、最大で 1,000 台のデバイスを登録できます。
+- [Apple の Device Enrollment Program (DEP)](device-enrollment-program-enroll-macos.md):組織は、Apple の Device Enrollment Program (DEP) を通して macOS デバイスを購入できます。 DEP では、登録プロファイルを “無線で” 展開して、デバイスを管理対象として登録できます。
+- [デバイス登録マネージャー (DEM)](device-enrollment-manager-enroll.md):DEM アカウントを使用して、最大で 1,000 台のデバイスを登録できます。
 
 ## <a name="block-macos-enrollment"></a>macOS の登録をブロックする
 既定では、Intune で macOS デバイスを登録できます。 macOS デバイスの登録をブロックする場合は、「[Set device type restrictions](enrollment-restrictions-set.md)」 (デバイスの種類の制限を設定する) を参照してください。

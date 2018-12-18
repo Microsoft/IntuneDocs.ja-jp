@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune - Azure での Windows Holographic for Business デバイス用のカスタム設定 | Microsoft Docs
+title: カスタム設定 - Windows Holographic for Business デバイス- Microsoft Intune
 description: カスタム プロファイルを追加または作成して、Microsoft Hololens など、Microsoft Intune で Windows Holographic for Business を実行しているデバイスに対して OMA-URI 設定を使用します。 AllowFastReconnect、AllowVPN、AllowUpdateService、UpdateServiceURL、RequireUpdatesApproval、ApprovedUpdates、および ApplicationLaunchRestrictions ポリシー構成サービス プロバイダー (CSP) の設定を行うことができます。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 12/06/2018
 ms.article: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.topic: article
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b66adc535d51fdaf2e3fc7a4bb1b11d34433db98
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 2c4e6041f00ad55b18f8b20996da8002f5ce0247
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185578"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032199"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Intune で Windows Holographic for Business デバイス用のカスタム設定を使用する
 
@@ -39,17 +39,17 @@ Windows Holographic for Business では、構成サービス プロバイダー 
 2. **[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
 3. 次の設定を入力します。
 
-    - **名前**: `hololens custom profile` のようにプロファイルの名前を入力します。
-    - **説明**: プロファイルの説明を入力します 
-    - **[プラットフォーム]**: **[Windows 10 以降]** を選択します。
-    - **プロファイルの種類**: **[カスタム]** を選択します。
+    - **[名前]**:`hololens custom profile` のようにプロファイルの名前を入力します。
+    - **説明**:プロファイルの説明を入力します。
+    - **[プラットフォーム]**:**[Windows 10 以降]** を選択します。
+    - **[プロファイルの種類]**:**[カスタム]** を選択します。
 
 4. **[OMA-URI のカスタム設定]** で、**[追加]** を選択します。 次の設定を入力します。
 
-    - **名前**: OMA-URI 設定の一意の名前を入力すると、設定リスト内で容易に識別できます。
-    - **説明**: 設定の概要および他の重要な詳細がわかる説明を入力します。
-    - **OMA-URI** (大文字と小文字を区別): 設定として使用する OMA-URI を入力します。
-    - **データ型**: この OMA-URI の設定に使用するデータ型を選択します。 次のようなオプションがあります。
+    - **[名前]**:OMA-URI 設定の一意の名前を入力すると、設定リスト内で容易に識別できます。
+    - **説明**:設定の概要および他の重要な詳細がわかる説明を入力します。
+    - **[OMA-URI]** (大文字と小文字を区別):設定として使用する OMA-URI を入力します。
+    - **[データ型]**:この OMA-URI の設定に使用するデータ型を選択します。 次のようなオプションがあります。
 
         - 文字列型
         - 文字列 (XML ファイル)
@@ -59,7 +59,7 @@ Windows Holographic for Business では、構成サービス プロバイダー 
         - ブール型
         - Base64 (ファイル)
 
-    - **値**: 入力した OMA-URI に関連付けるデータ値を入力します。 値は、選択したデータ型に依存します。 たとえば、**[日付と時刻]** を選択した場合は、日付の選択から値を選択します。
+    - **[値]**:入力した OMA-URI に関連付けるデータ値を入力します。 値は、選択したデータ型に依存します。 たとえば、**[日付と時刻]** を選択した場合は、日付の選択から値を選択します。
 
     設定を何か追加した後は、**[エクスポート]** を選択できます。 **[エクスポート]** では、追加した値の一覧がコンマ区切り値 (.csv) ファイルで作成されます。
 
