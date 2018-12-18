@@ -16,12 +16,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2ef7ebf495511e1d5c04aa8a9c459ba48f3dbb42
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 3a0f9a55fd3d5db8b36db09f4a83d5c09db29725
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180861"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829115"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Windows Autopilot を使用して Windows デバイスを登録する  
 Windows Autopilot を使用すると、デバイスの登録が簡単になります。 カスタマイズされたオペレーティング システム イメージのビルドおよび維持は、時間のかかるプロセスです。 また、これらのカスタム オペレーティング システム イメージを新しいデバイスに適用し、エンド ユーザーに提供する前に使用の準備を行う場合にも、時間がかかることがあります。 Microsoft Intune と Autopilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および新しいデバイスへの適用を行わなくてもデバイスをエンド ユーザーに提供することができます。 Intune を使用して Autopilot デバイスを管理する場合、デバイスの登録後にポリシー、プロファイル、アプリなどを管理することができます。 利点、シナリオ、および前提条件の概要については、「[Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)」 (Windows Autopilot の概要) を参照してください。
@@ -82,8 +82,8 @@ Autopilot Deployment プロファイルは、Autopilot デバイスを構成す�
     - **[自己展開 (プレビュー)]**: (最新の [Windows 10 Insider Preview ビルド](https://docs.microsoft.com/windows-insider/at-work-pro/)が必要) このプロファイルのデバイスは、デバイスを登録しているユーザーに関連付けられません。 デバイスを登録するのに、ユーザーの資格情報は必要ありません。
 5. **[Join to Azure AD as]\(Azure AD への参加状況\)** ボックスに、**[Azure AD 参加済み]** を選択します。
 6. **[Out-of-box experience (OOBE)]** を選択し、次のオプションを構成して **[保存]** を選択します。
-    - **言語 (リージョン)***: デバイスで使用する言語を選択します。 このオプションは、**[配置モード]** に **[自己展開]** を選択した場合のみ使用できます。
-    - **キーボードを自動的に構成する***: **[言語 (リージョン)]** を選択している場合は、**[はい]** を選択してキーボード選択ページをスキップしてください。 このオプションは、**[配置モード]** に **[自己展開]** を選択した場合のみ使用できます。
+    - **言語 (リージョン)**\*: デバイスで使用する言語を選択します。 このオプションは、**[配置モード]** に **[自己展開]** を選択した場合のみ使用できます。
+    - **[キーボードを自動的に構成する]**: **[言語 (リージョン)]** を選択している場合は、**[はい]** を選択してキーボード選択ページをスキップします。 このオプションは、**[配置モード]** に **[自己展開]** を選択した場合のみ使用できます。
     - **[使用許諾契約書 (EULA)]**: (Windows 10、バージョン 1709 またはそれ以降) EULA をユーザーに表示するかどうかを選択します。
     - **[プライバシーの設定]**: プライバシーの設定をユーザーに表示するかどうかを選択します。
     - **[アカウント変更オプションを非表示にする] (Windows Insider のみ)**: **[非表示]** を選択すると、会社のサインイン ページとドメイン エラー ページにアカウント変更オプションが表示されなくなります。 これらのオプションでは、[Azure Active Directory で会社のブランドを構成する](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)必要があります。

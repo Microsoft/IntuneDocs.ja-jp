@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7552c9c1fa8e94560505a8971143886160cff6ce
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 574bc38fb9ce47d2b051a74f3f931139c0de7224
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185961"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728839"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Intune での Windows 10 (以降) 用のキオスクの設定
 
@@ -200,3 +200,5 @@ Windows Holographic for Business デバイスでは、シングル アプリ キ
 
 ## <a name="next-steps"></a>次の手順
 [プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
+
+[Android](device-restrictions-android.md#kiosk) デバイスと [Android エンタープライズ](device-restrictions-android-for-work.md#kiosk-settings) デバイスのキオスク プロファイルを作成することもできます。
