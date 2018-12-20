@@ -1,7 +1,7 @@
 ---
 title: 登録ステータス ページを設定する
 titleSuffix: Microsoft Intune
-description: Windows 10 デバイスを登録しようとしているユーザーにあいさつをします。
+description: Windows 10 デバイスを登録するユーザー向けの案内ページを設定します。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,19 +15,19 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: seodec18
+ms.openlocfilehash: b87e0d24c000e3083eaebeac1a4cf6026d495ccf
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52729043"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032097"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>登録ステータス ページを設定する
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-デバイスの設定中に、登録ステータス ページにデバイスでのインストール情報が表示されます。 ユーザーが、デバイスにサインインするための既定の登録を完了するまでに、一部のアプリケーション、プロファイル、証明書がインストールされない場合があります。 登録ステータス ページは、ユーザーがデバイスの設定中に自分のデバイスの状態を把握するのに役立ちます。 登録ステータス ページのプロファイルを複数作成して、それらをさまざまなグループに適用することができます。 プロファイルを設定すると、次のことが行えます。
+Intune を使用したデバイスの設定中に、登録ステータス ページにデバイスでのインストール情報が表示されます。 ユーザーが、デバイスにサインインするための既定の登録を完了するまでに、一部のアプリケーション、プロファイル、証明書がインストールされない場合があります。 登録ステータス ページは、ユーザーがデバイスの設定中に自分のデバイスの状態を把握するのに役立ちます。 登録ステータス ページのプロファイルを複数作成して、それらをさまざまなグループに適用することができます。 プロファイルを設定すると、次のことが行えます。
 - インストールの進行状況を表示する。
 - インストールが完了するまで使用をブロックする。
 - デバイスの設定が失敗した場合にユーザーが行えることを指定する。

@@ -5,34 +5,36 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36cfb5ac05b2d69b5c7349f4ebc6054848a08fc8
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 1b83a380620704e9e3f616cee77b33d577c86c0d
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52730407"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977271"
 ---
 # <a name="windows-10-and-newer-delivery-optimization-settings-in-microsoft-intune"></a>Microsoft Intune での Windows 10 (およびそれ以降) の配信の最適化設定
 
-この記事では、Windows 10 デバイスに対して構成できるすべての配信の最適化設定を説明します。 これらの設定は、デバイスの構成プロファイルに追加した後、Microsoft Intune を使ってデバイスに割り当てたり展開したりします。
+この記事では、Windows 10 デバイスに対して構成できるすべての配信の最適化設定を説明します。 これらの設定は、デバイスの構成プロファイルに追加した後、Microsoft Intune を使ってデバイスに割り当てたり展開したりします。 
+
+[配信の最適化更新プログラム](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)は、Windows 10 での配信の最適化に関して詳しく学習するのに適したリソースです。
 
 ## <a name="settings"></a>Settings
 
-**[配信の最適化ダウンロード モード]**: 更新プログラムをデバイスに配信する方法を選択します。 次のようなオプションがあります。
+**配信の最適化ダウンロード モード**:デバイスに更新プログラムを配信する方法を選択します。 次のようなオプションがあります。
 
-- **[未構成]**: エンド ユーザーはそれぞれ独自の方法を使って各デバイスを更新します。**Windows Updates** や、OS で使用できる **[配信の最適化]** 設定が使われる場合があります。
-- **[HTTP のみ、ピアリングなし]**: 更新プログラムをインターネットからのみ取得します。 ネットワーク上の他のコンピューターからは更新プログラムを取得しません (ピアリングまたはピア ツー ピアと呼ばれます)。
-- **[HTTP blended with peering behind the same NAT HTTP blended with peering across a private group]\(HTTP と同じ NAT HTTP の背後にあるピアリングとプライベート グループでのピアリングの組み合わせ\)**: インターネットおよびネットワーク上の他のコンピューターから更新プログラムを取得します。 ピアリングは、同じ Active Directory サイト (存在する場合) または同じドメイン内にあるデバイス上で発生します。 このオプションを選択した場合、ピアリングはネットワーク アドレス変換 (NAT) の IP アドレスを越えます。
-- **[HTTP とインターネット ピアリングの組み合わせ]**: インターネットおよびネットワーク上の他のコンピューターから更新プログラムを取得します。
-- **[ピアリングなしの簡易ダウンロード モード]**: インターネットを介して、Microsoft などの更新プログラムの所有者から更新プログラムを直接取得します。 これは配信の最適化クラウド サービスに接続しません。
-- **[バイパス モード]**: バックグラウンド インテリジェント転送サービス (BITS) を使って更新プログラムを取得します。 配信の最適化を使いません。
+- **[未構成]**:エンド ユーザーはそれぞれ独自の方法を使って各デバイスを更新します。**Windows Updates** や、OS で使用できる **[配信の最適化]** 設定が使われる場合があります。
+- **[HTTP のみ、ピアリングなし]**:更新プログラムをインターネットからのみ取得します。 ネットワーク上の他のコンピューターからは更新プログラムを取得しません (ピアリングまたはピア ツー ピアと呼ばれます)。
+- **[HTTP と同じ NAT でのピアリングの組み合わせ]、[HTTP とプライベート グループでのピアリングの組み合わせ]**:インターネットおよびネットワーク上の他のコンピューターから更新プログラムを取得します。 ピアリングは、同じ Active Directory サイト (存在する場合) または同じドメイン内にあるデバイス上で発生します。 このオプションを選択した場合、ピアリングはネットワーク アドレス変換 (NAT) の IP アドレスを越えます。
+- **[HTTP とインターネット ピアリングの組み合わせ]**:インターネットおよびネットワーク上の他のコンピューターから更新プログラムを取得します。
+- **[ピアリングなしの簡易ダウンロード モード]**:インターネットを介して、Microsoft などの更新プログラムの所有者から更新プログラムを直接取得します。 これは配信の最適化クラウド サービスに接続しません。
+- **[バイパス モード]**:バックグラウンド インテリジェント転送サービス (BITS) を使って更新プログラムを取得します。 配信の最適化を使いません。
 
 ## <a name="move-from-existing-update-rings-to-delivery-optimization"></a>既存の更新プログラム リングから配信の最適化に移動する
 

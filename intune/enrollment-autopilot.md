@@ -15,20 +15,20 @@ ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 3a0f9a55fd3d5db8b36db09f4a83d5c09db29725
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.custom: seodec18
+ms.openlocfilehash: af767ce47b9382012f01de48ccd280c29ccfc27c
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829115"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112866"
 ---
-# <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Windows Autopilot を使用して Windows デバイスを登録する  
-Windows Autopilot を使用すると、デバイスの登録が簡単になります。 カスタマイズされたオペレーティング システム イメージのビルドおよび維持は、時間のかかるプロセスです。 また、これらのカスタム オペレーティング システム イメージを新しいデバイスに適用し、エンド ユーザーに提供する前に使用の準備を行う場合にも、時間がかかることがあります。 Microsoft Intune と Autopilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および新しいデバイスへの適用を行わなくてもデバイスをエンド ユーザーに提供することができます。 Intune を使用して Autopilot デバイスを管理する場合、デバイスの登録後にポリシー、プロファイル、アプリなどを管理することができます。 利点、シナリオ、および前提条件の概要については、「[Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)」 (Windows Autopilot の概要) を参照してください。
+# <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot を使用して Intune に Windows デバイスを登録する  
+Windows Autopilot を使用すると、Intune でのデバイスの登録が簡単になります。 カスタマイズされたオペレーティング システム イメージのビルドおよび維持は、時間のかかるプロセスです。 また、これらのカスタム オペレーティング システム イメージを新しいデバイスに適用し、エンド ユーザーに提供する前に使用の準備を行う場合にも、時間がかかることがあります。 Microsoft Intune と Autopilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および新しいデバイスへの適用を行わなくてもデバイスをエンド ユーザーに提供することができます。 Intune を使用して Autopilot デバイスを管理する場合、デバイスの登録後にポリシー、プロファイル、アプリなどを管理することができます。 利点、シナリオ、および前提条件の概要については、「[Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)」 (Windows Autopilot の概要) を参照してください。
 
 
 ## <a name="prerequisites"></a>必要条件
-- [Windows の自動登録が有効である](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
+- [Windows の自動登録が有効である](windows-enroll.md#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium サブスクリプション](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
 ## <a name="how-to-get-the-csv-for-import-in-intune"></a>Intune にインポートするための CSV を取得する方法
@@ -82,11 +82,11 @@ Autopilot Deployment プロファイルは、Autopilot デバイスを構成す�
     - **[自己展開 (プレビュー)]**: (最新の [Windows 10 Insider Preview ビルド](https://docs.microsoft.com/windows-insider/at-work-pro/)が必要) このプロファイルのデバイスは、デバイスを登録しているユーザーに関連付けられません。 デバイスを登録するのに、ユーザーの資格情報は必要ありません。
 5. **[Join to Azure AD as]\(Azure AD への参加状況\)** ボックスに、**[Azure AD 参加済み]** を選択します。
 6. **[Out-of-box experience (OOBE)]** を選択し、次のオプションを構成して **[保存]** を選択します。
-    - **言語 (リージョン)**\*: デバイスで使用する言語を選択します。 このオプションは、**[配置モード]** に **[自己展開]** を選択した場合のみ使用できます。
-    - **[キーボードを自動的に構成する]**: **[言語 (リージョン)]** を選択している場合は、**[はい]** を選択してキーボード選択ページをスキップします。 このオプションは、**[配置モード]** に **[自己展開]** を選択した場合のみ使用できます。
-    - **[使用許諾契約書 (EULA)]**: (Windows 10、バージョン 1709 またはそれ以降) EULA をユーザーに表示するかどうかを選択します。
+    - **[言語 (リージョン)]**\*: デバイスで使用する言語を選択します。 このオプションは、**[配置モード]** に **[自己展開]** を選択した場合のみ使用できます。
+    - **[キーボードを自動的に構成する]**\*: **[言語 (リージョン)]** を選択している場合は、**[はい]** を選択してキーボード選択ページをスキップします。 このオプションは、**[配置モード]** に **[自己展開]** を選択した場合のみ使用できます。
+    - **[使用許諾契約書 (EULA)]**: (Windows 10、バージョン 1709 以降) EULA をユーザーに表示するかどうかを選択します。
     - **[プライバシーの設定]**: プライバシーの設定をユーザーに表示するかどうかを選択します。
-    - **[アカウント変更オプションを非表示にする] (Windows Insider のみ)**: **[非表示]** を選択すると、会社のサインイン ページとドメイン エラー ページにアカウント変更オプションが表示されなくなります。 これらのオプションでは、[Azure Active Directory で会社のブランドを構成する](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)必要があります。
+    - **[アカウントの変更オプションを非表示にする] (Windows Insider のみ)**: **[非表示]** を選択すると、会社のサインイン ページとドメイン エラー ページにアカウント変更オプションが表示されなくなります。 これらのオプションでは、[Azure Active Directory で会社のブランドを構成する](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)必要があります。
     - **[ユーザー アカウントの種類]**: ユーザーのアカウントの種類を選択します (**管理者**ユーザーまたは**標準**ユーザー)。
     - **[Apply computer name template]\(コンピューター名テンプレートを適用する\) (Windows Insider のみ)**: **[はい]** を選択すると、登録中にデバイスに名前を付けるときに使用するテンプレートが作成されます。 名前を 15 文字以下にする必要があります。また、文字、数字、ハイフンを含めることができます。 数字だけで名前を作ることはできません。 [%SERIAL% マクロ](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)を使用し、ハードウェア固有のシリアル番号を追加します。 または、[%RAND:x% マクロ](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)を使用して、数字のランダム文字列を追加します。x は追加する桁数です。 
 
@@ -125,7 +125,7 @@ Autopilot Deployment プロファイルを作成したら、その展開プロ�
 
 特定の Autopilot デバイスにユーザーを割り当てることができます。 この割り当てにより、Windows のセットアップ中、[社名](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)サインイン ページに Azure Active Directory からユーザーが事前入力されます。 カスタムの挨拶の名前を設定することもできます。 それによって、データが事前入力されることも、Windows サインインが変更されることもありません。 ライセンスが与えられた Intune ユーザーのみ、この方法で割り当てることができます。
 
-前提条件: Azure Active Directory のポータル サイトが構成済みであり、[Windows 10 Insider Preview ビルド](https://docs.microsoft.com/windows-insider/at-work-pro/) が最新のものである必要があります。
+前提条件:Azure Active Directory のポータル サイトが構成済みであり、[Windows 10 Insider Preview ビルド](https://docs.microsoft.com/windows-insider/at-work-pro/) が最新のものである必要があります。
 
 1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Windows の登録]** > **[デバイス]** の順に選択し、デバイスを選択して **[ユーザーの割り当て]** を選択します。
 

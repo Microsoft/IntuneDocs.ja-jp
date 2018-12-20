@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: ed6a79142c2bbe3bd93b02c17e92f4f11f2583f3
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.openlocfilehash: 06031b8085e50caa2092287c97b3eab0ead366ee
+ms.sourcegitcommit: 5e4c7da8ce62d5a5720316ef4068c1920f8f5b67
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829200"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53200608"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,6 +42,14 @@ ms.locfileid: "52829200"
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-december-10-2018"></a>2018 年 12 月 10 日の週
+
+### <a name="microsoft-auto-update-version-450-required-for-macos-devices----3503442---"></a>macOS デバイスに必要な Microsoft Auto Update 4.50 <!-- 3503442 -->
+ポータル サイトおよびその他の Office アプリケーション用の更新プログラムの受信を継続するには、Intune によって管理されている macOS デバイスを Microsoft Auto Update 4.5.0 にアップグレードする必要があります。 ユーザーは自分の Office アプリに対してこのバージョンを既に使用している可能性があります。
+
+### <a name="intune-requires-macos-1012-or-later----2827778---"></a>Intune には macOS 10.12 以降が必要です<!-- 2827778 -->
+Intune には、macOS バージョン 10.12 以降が必要になりました。 以前の macOS バージョンが使用されているデバイスでは、ポータル サイトを使用して Intune に登録することはできません。 サポートを受け、新しい機能を受け取るには、macOS 10.12 以降にデバイスをアップグレードし、ポータル サイト アプリを最新版にアップグレードする必要があります。
 
 ## <a name="week-of-november-26-2018"></a>2018 年 11 月 26 日の週
 
@@ -114,7 +122,7 @@ Volume Purchase Program (VPP) を使用して、DEP 登録時にポータル サ
 Intune では、macOS デバイスで Apple School Manager アカウントに対する Device Enrollment Program の使用がサポートされるようになりました。  詳しくは、「[Device Enrollment Program または Apple School Manager を使用して macOS デバイスを自動登録する](device-enrollment-program-enroll-macos.md)」をご覧ください。
 
 ### <a name="new-intune-device-subscription-sku---3312071--"></a>Intune デバイスの新しいサブスクリプション <!--3312071-->
-企業でのデバイスの管理コストの削減に役立つ、デバイスに基づく新しいサブスクリプション SKU がご利用いただけるようになりました。 この Intune デバイス SKU は、月単位でのデバイスごとのライセンスです。 価格はライセンス プログラムによって変わります。 ダイレクト チャネル、Enterprise Agreement (EA)、マイクロソフト製品/サービス契約 (MPSA)、オープンおよび CSP (Cloud Solution Provider) で利用可能です。
+企業でのデバイスの管理コストの削減に役立つ、デバイスに基づく新しいサブスクリプション SKU がご利用いただけるようになりました。 この Intune デバイス SKU は、月単位でのデバイスごとのライセンスです。 価格はライセンス プログラムによって変わります。 これは、Office 管理ポータルを通して直接に入手することも、[Enterprise Agreement](https://www.microsoft.com/licensing/licensing-programs/enterprise?activetab=enterprise-tab:primaryr2) (EA)、[Microsoft Products and Services Agreement](https://www.microsoft.com/licensing/mpsa/default) (MPSA)、[Microsoft Open Agreement](https://partner.microsoft.com/licensing/licensing-agreements)、および[クラウド ソリューション プロバイダー](https://www.microsoftpartnercommunity.com/t5/Partnership-101/What-is-the-Cloud-Solution-Provider-CSP-program/td-p/2453) (CSP) を通して入手することもできます。
 
 ### <a name="device-management"></a>デバイス管理
 
@@ -187,9 +195,9 @@ Intune 内の PowerShell スクリプトは、AAD デバイスのセキュリテ
 #### <a name="new-required-password-type-default-setting-for-android-android-enterprise---2649963---"></a>Android および Android エンタープライズでの [必要なパスワードの種類] の新しい既定値の設定 <!-- 2649963 -->
 新しいコンプライアンス ポリシーを作成すると (**[Intune]** > **[デバイスのポリシー準拠]** > **[ポリシー]** > **[ポリシーの作成]** > **[Android]**、または [プラットフォーム] > [システム セキュリティ] の **[Android エンタープライズ]**)、**[必要なパスワードの種類]** の既定値が変更されます。
 
-現在の既定値: デバイスの既定値、新しい既定値: 最小数の数字
+開始:デバイスの既定値:最小数の数字
 
-適用対象: Android、Android エンタープライズ
+適用先:Android、Android Enterprise
 
 これらの設定については、[Android](compliance-policy-create-android.md) および [Android エンタープライズ](compliance-policy-create-android-for-work.md)のページをご覧ください。
 
@@ -213,15 +221,18 @@ Intune 内の PowerShell スクリプトは、AAD デバイスのセキュリテ
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>新しい Azure Active Directory terms of use 機能 <!-- 2870393 -->
 Azure Active Directory では、既存の Intune の使用条件の代わりに使用できる terms of use 機能が用意されます。 Azure AD terms of use 機能では、どの使用条件をどのタイミングで表示するかについての柔軟性が高くなり、ローカライズのサポートが強化され、使用条件の表示方法をより細かく制御でき、レポート機能が改善されています。 Azure AD terms of use 機能を使用するには、Enterprise Mobility + Security E3 スイートにも含まれている Azure Active Directory Premium P1 が必要です。 詳しくは、「[ユーザー アクセスに関する会社の使用条件を管理する](terms-and-conditions-create.md)」をご覧ください。
 
-### <a name="android-device-owner-mode-support---3188762--"></a>Android デバイス所有者モードのサポート <!--3188762-->
+#### <a name="android-device-owner-mode-support---3188762--"></a>Android デバイス所有者モードのサポート <!--3188762-->
 Samsung Knox Mobile Enrollment について、Android デバイス所有者管理モードへのデバイスの登録を Intune がサポートするようになりました。 WiFi または移動体通信ネットワークのユーザーは、初めてデバイスをオンにしたときに、ほんの数タップで登録できます。 詳しくは、「[Samsung の Knox Mobile Enrollment を使用して Android デバイスを自動的に登録する](android-samsung-knox-mobile-enroll.md)」をご覧ください。
 
 ### <a name="device-management"></a>デバイス管理
+#### <a name="new-settings-for-software-updates------1907869--wnready---"></a>ソフトウェア更新プログラムの新しい設定   <!-- 1907869  wnready -->  
+- 最新のソフトウェア更新プログラムのインストールを完了するのに必要な再起動に関して、エンドユーザーに警告するための通知を構成できるようになりました。   
+- 勤務時間外に実行される再起動に対して表示する再起動警告メッセージを構成できるようになりました。これにより、BYOD シナリオがサポートされます。
 
-### <a name="group-windows-autopilot-enrolled-devices-by-correlator-id----2075110---"></a>Windows Autopilot に登録されたデバイスを correlator ID によってグループ化する <!-- 2075110 -->
+#### <a name="group-windows-autopilot-enrolled-devices-by-correlator-id----2075110---"></a>Windows Autopilot に登録されたデバイスを correlator ID によってグループ化する <!-- 2075110 -->
 Configuration Manager で [既存デバイス向け Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) を使用することによって登録するとき、correlator ID による Windows デバイスのグループ化が Intune によってサポートされます。 correlator ID は、Autopilot 構成ファイルのパラメーターです。 Intune では [Azure AD デバイス属性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) が等しい "OfflineAutopilotprofile-<correlator ID>" に自動的に設定されます。 これにより、オフライン Autopilot 登録用の enrollmentprofileName 属性を介して、correlator ID に基づく任意の Azure AD 動的グループを作成することができます。 詳しくは、「[既存のデバイス向けの Windows Autopilot](enrollment-autopilot.md#windows-autopilot-for-existing-devices)」をご覧ください。
 
-### <a name="intune-app-protection-policies----2984657---"></a>Intune アプリ保護ポリシー <!-- 2984657 -->
+#### <a name="intune-app-protection-policies----2984657---"></a>Intune アプリ保護ポリシー <!-- 2984657 -->
 Intune アプリ保護ポリシーを使用すると、Microsoft Outlook や Microsoft Word など、Intune で保護されているアプリに対するさまざまなデータ保護設定を構成できます。 [iOS](app-protection-policy-settings-ios.md) と [Android](app-protection-policy-settings-android.md) 両方でのこれらの設定のルック アンド フィールが、個々の設定を見つけやすいように変更されました。 ポリシー設定にはカテゴリが 3 つあります。
 - **データ再配置** - このグループには、切り取り、コピー、貼り付け、名前を付けて保存の制限など、データ損失防止 (DLP) コントロールが含まれます。 これらの設定によって、アプリでユーザーがデータを操作する方法が決定されます。
 - **アクセス要件** - このグループには、エンド ユーザーが仕事でアプリにアクセスする方法を決定するアプリ別の PIN オプションが含まれます。  
@@ -301,7 +312,7 @@ Windows LOB アプリのファイル拡張子に、*.msi*、*.appx*、*.appxbund
 #### <a name="create-dns-suffixes-in-vpn-configuration-profiles-on-devices-running-windows-10---1333668---"></a>Windows 10 を実行するデバイスの VPN 構成プロファイルで DNS サフィックスを作成する<!-- 1333668 -->
 VPN デバイス構成プロファイルを作成するとき (**[デバイス構成]**、**[プロファイル]**、**[プロファイルの作成]** の順に選択し、プラットフォームに **[Windows 10 以降]** を選択し、プロファイルの種類に **[VPN]** を選択します)、DNS 設定を入力します。 この更新プログラムでは、Intune で **DNS サフィックス**を複数入力することもできるようになりました。 DNS サフィックスを使用する場合は、完全修飾ドメイン名 (FQDN) ではなく、短い名前を使用してネットワーク リソースを検索できます。 この更新プログラムでは、Intune で DNS サフィックスの順序を変更することもできます。
 [Windows 10 VPN 設定](vpn-settings-windows-10.md#dns-settings)によって、現在の DNS 設定が一覧表示されます。
-適用: Windows 10 デバイス
+適用先:Windows 10 デバイス
 
 #### <a name="support-for-always-on-vpn-for-android-enterprise-work-profiles----1333705---"></a>Android エンタープライズ作業プロファイル向けの常時 VPN のサポート <!-- 1333705 -->
 この更新プログラムでは、管理対象の作業プロファイルが与えられた Android エンタープライズ デバイスで常時 VPN 接続を使用できます。 常時 VPN 接続では接続状態が常に維持されるか、ユーザーが自分のデバイスをロックしたとき、デバイスが再起動したとき、ワイヤレス ネットワークに変更があったとき、すぐに再接続されます。 接続を "ロックダウン" モードにすることもできます。このモードでは、VPN 接続が有効になるまですべてのネットワーク トラフィックがブロックされます。
@@ -342,7 +353,7 @@ VPN デバイス構成プロファイルを作成するとき (**[デバイス�
 
 [[SCEP 証明書プロファイルを作成する]](certificates-scep-configure.md#create-a-scep-certificate-profile) には、SCEP 構成プロファイルの作成時、現在の変数が一覧表示されます。 
 
-適用対象: Windows 10 以降と iOS、Wi-Fi でサポート。
+適用先:Windows 10 以降と iOS、Wi-Fi でサポート。
 
 #### <a name="remotely-lock-uncompliant-devices----2064495---"></a>非準拠デバイスのリモート ロック <!-- 2064495 -->
 デバイスが非準拠のとき、そのデバイスをリモートでロックするアクションをコンプライアンス ポリシーで作成できます。 Intune で **[デバイスのポリシー準拠]** を選択して新しいポリシーを作成するか、既存のポリシーを選択し、**[プロパティ]** を選択します。 **[コンプライアンス非対応に対するアクション]**、**[追加]** の順に選択し、デバイスのリモート ロックを選択します。
@@ -358,7 +369,7 @@ VPN デバイス構成プロファイルを作成するとき (**[デバイス�
 - 現在のところ、同じデバイスで複数のキオスク プロファイルを作成できます。 この更新プログラムで Intune はデバイスあたりキオスク プロファイルを 1 つだけサポートするようになります。 1 台のデバイスに複数のキオスク プロファイルが必要な場合は、カスタム URI を使用できます。
 - **マルチアプリ キオスク** プロファイルでは、アプリケーション グリッドの**スタート メニュー レイアウト**でアプリケーション タイルのサイズと順序を選択できます。 さらにカスタマイズする場合、続けて XML ファイルをアップロードできます。
 - キオスク ブラウザーの設定が**キオスク**設定に移動します。 現在のところ、Azure portal には**キオスク Web ブラウザー**設定に独自のカテゴリがあります。
-適用対象: Windows 10 以降
+適用先:Windows 10 以降
 
 
 
@@ -591,9 +602,9 @@ Android P のリリースをサポートする Android 用 Intune アプリ SDK 
 #### <a name="create-device-compliance-policy-using-firewall-settings-on-macos-devices----1497640---"></a>macOS デバイスでファイアウォール設定を使ってデバイスのコンプライアンス ポリシーを作成する <!-- 1497640 -->
 macOS の新しいコンプライアンス ポリシーを作成するとき (**[デバイスのポリシー準拠]** > **[ポリシー]** > **[ポリシーの作成]** > **[プラットフォーム: macOS]** > **[システム セキュリティ]**)、**ファイアウォール**に関するいくつかの新しい設定を使用できます。 
 
-- **[ファイアウォール]**: ご利用の環境における着信接続の処理方法を構成します。
-- **[着信接続]**: DHCP、Bonjour、IPSec など、基本的なインターネット サービスに必要な接続を除き、すべての着信接続を **[ブロック]** します。 この設定は、すべての共有サービスもブロックします。
-- **[ステルス モード]**: ステルス モードを **[有効]** にして、デバイスがプローブ要求に応答するのを防ぎます。 デバイスは引き続き、許可されているアプリに関する着信要求に応答します。
+- **ファイアウォール**: ご利用の環境における着信接続の処理方法を構成します。
+- **着信接続**: DHCP、Bonjour、IPSec など、基本的なインターネット サービスに必要な接続を除き、すべての着信接続を **[ブロック]** します。 この設定は、すべての共有サービスもブロックします。
+- **ステルス モード**: ステルス モードを **[有効]** にして、デバイスがプローブ要求に応答するのを防ぎます。 デバイスは引き続き、許可されているアプリに関する着信要求に応答します。
 
 適用対象: macOS 10.12 以降
 
@@ -721,11 +732,11 @@ Android、iOS、および Windows 10 用の電子メール プロファイルの
 - 適用不可。異なるプラットフォームのデバイス数を示すイメージも表示されます。 たとえば、iOS プロファイルを見ている場合、新しいタイルでは、そのプロファイルに割り当てられている iOS 以外のデバイスの数も示されます。 [デバイス コンプライアンス ポリシー](compliance-policy-monitor.md#view-status-of-device-policies)に関するポリシーを参照してください。
 
 #### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>デバイスのコンプライアンスはサード パーティのウイルス対策ソリューションをサポートする <!-- 2325484 -->
-デバイス コンプライアンス ポリシーを作成するとき (**[デバイスのポリシー準拠]** > **[ポリシー]** > **[ポリシーの作成]** > **[プラットフォーム: Windows 10 以降]** > **[設定]** > **[システム セキュリティ]**)、新しい **[[デバイスのセキュリティ]](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)** オプションがあります。 
+デバイス コンプライアンス ポリシーを作成する場合 (**[デバイスのポリシー準拠]** > **[ポリシー]** > **[ポリシーの作成]** > **[プラットフォーム: Windows 10 以降]** > **[設定]** > **[システム セキュリティ]**)、新しい**[デバイス セキュリティ](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)** オプションを利用できます。 
 - **[ウイルス対策]**: **[必要]** に設定すると、Windows Security Center に登録されている Symantec や Windows Defender などのウイルス対策ソリューションを使って、コンプライアンスを確認できます。 
 - **[スパイウェア対策]**: **[必要]** に設定すると、Windows Security Center に登録されている Symantec や Windows Defender などのスパイウェア対策ソリューションを使って、コンプライアンスを確認できます。 
 
-適用対象: Windows 10 以降 
+適用先:Windows 10 以降 
 
 ### <a name="device-enrollment"></a>デバイスの登録
 
@@ -830,7 +841,7 @@ AutoPilot 展開プロファイルは AutoPilot デバイスを含む Azure AD �
 #### <a name="set-compliance-by-device-location----851881----"></a>デバイスの場所によるコンプライアンスの設定 <!-- 851881 ! -->
 状況によっては、ネットワーク接続で定義される特定の場所に、企業リソースへのアクセスを制限することが必要な場合あります。 デバイスの IP アドレスに基づき、コンプライアンス ポリシーを作成できるようになりました (**[デバイスのポリシー準拠]** > **[場所]**)。 デバイスが IP 範囲外に移動した場合、デバイスは会社のリソースにアクセスできません。
 
-適用対象: Android デバイス 6.0 以降 (ポータル サイト アプリ更新済み)
+適用先:Android デバイス 6.0 以降 (ポータル サイト アプリ更新済み)
 
 #### <a name="prevent-consumer-apps-and-experiences-on-windows-10-enterprise-rs4-autopilot-devices---1621980---"></a>Windows 10 Enterprise RS4 Autopilot デバイスでのコンシューマー アプリおよびエクスペリエンスの禁止<!-- 1621980 -->
 Windows 10 Enterprise RS4 Autopilot デバイスへのコンシューマー アプリおよびエクスペリエンスのインストールを禁止することができます。 この機能を表示するには、**[Intune]** > **[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** > **[プラットフォーム]** = **[Windows 10 or later]\(Windows 10 以降\)** > **[プロファイルの種類]** = **[デバイスの制限]** > **[構成]** > **[Windows スポットライト]** > **[コンシューマー向けの機能]** の順に移動します。 
@@ -844,7 +855,7 @@ Windows 10 コンピューターで重大な問題が見つかった場合は、
 #### <a name="management-name-field-will-be-editable----1875989---"></a>管理名フィールドが編集可能になる <!-- 1875989 -->
 デバイスの **[プロパティ]** ブレードで、管理名フィールドを編集できるようになりました。 このフィールドを編集するには、**[デバイス]** > **[すべてのデバイス]** > デバイスを選択 > **[プロパティ]** の順に選びます。 管理名フィールドを使って、デバイスを一意に識別できます。
 
-#### <a name="new-all-devices-filter-device-category----1878520---"></a>新しいすべてのデバイス フィルター: デバイスのカテゴリ <!-- 1878520 -->
+#### <a name="new-all-devices-filter-device-category----1878520---"></a>新しい [すべてのデバイス] フィルター処理: デバイスのカテゴリ<!-- 1878520 -->
 デバイスのカテゴリごとに **[すべてのデバイス]** リストをフィルター処理できるようになりました。 これを行うには、**[デバイス]** > **[すべてのデバイス]** > **[フィルター]** > **[デバイスのカテゴリ]** の順に選択します。
 
 #### <a name="use-teamviewer-to-screen-share-ios-and-macos-devices----1985547---"></a>TeamViewer を使用して iOS デバイスと MacOS デバイスの画面を共有する <!-- 1985547 -->
@@ -934,7 +945,7 @@ Android エンタープライズ仕事用プロファイルのアプリの割り
 
 #### <a name="new-printer-settings-for-education-profiles----1308900---"></a>教育プロファイル用の新しいプリンター設定 <!-- 1308900 -->
 
-教育プロファイルの場合、**[プリンター]** カテゴリで新しい設定 **[プリンター]**、**[通常使うプリンター]**、**[新しいプリンターの追加]** を利用できます。
+教育プロファイルの場合、**[プリンター]** カテゴリで次に示す新しい設定を利用できます: **[プリンター]**、**[通常使うプリンター]**、**[新しいプリンターの追加]**。
 
 #### <a name="show-caller-id-in-personal-profile---android-enterprise-work-profile---1098984---"></a>個人プロファイルでの発信者番号通知 - Android エンタープライズ仕事用プロファイル <!--1098984 -->
 デバイス上で個人プロファイルを使用する場合、勤務先の作業連絡先からの発信者番号の詳細がエンド ユーザーに表示されない場合があります。 
@@ -944,7 +955,7 @@ Android エンタープライズ仕事用プロファイルのアプリの割り
 
 有効にすると (構成されていない場合)、勤務先の連絡先の発信者番号の詳細が個人プロファイルに表示されます。 ブロックすると、勤務先の連絡先の発信者番号は個人プロファイルに表示されません。 
 
-適用対象: Android OS v6.0 以降の Android 仕事用プロファイル デバイス
+適用先:Android OS v6.0 以降の Android 仕事用プロファイル デバイス
 
 #### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252-----from-1802-and-1804--"></a>Endpoint Protection の設定に追加された新しい Windows Defender Credential Guard の設定 <!--1102252 --><!--from 1802 and 1804-->
 
@@ -959,16 +970,16 @@ Android エンタープライズ仕事用プロファイルのアプリの割り
 
 Credential Guard を構成すると、次の関連するテクノロジが自動的に有効になります。 
 
-  - **[Enable Virtualization-based Security (VBS)]\(仮想化ベースのセキュリティ (VBS) を有効にする\)**: 次回の再起動で仮想化ベースのセキュリティ (VBS) が有効になります。 仮想化ベースのセキュリティは、Windows ハイパーバイザーを使用してセキュリティ サービスのサポートを提供し、セキュア ブートを要求します。
-  - **[Secure Boot with Direct Memory Access (DMA)]\(直接メモリ アクセス (DMA) によるセキュア ブート\)**: セキュア ブートおよび直接メモリ アクセスによる VBS が有効になります。 DMA 保護は、ハードウェアのサポートを必要とし、正しく構成されたデバイスでのみ有効にされます。 
+  - **[仮想化ベースのセキュリティ (VBS) を有効にする]**: 仮想化ベースのセキュリティ (VBS) を次の再起動時にオンにします。 仮想化ベースのセキュリティは、Windows ハイパーバイザーを使用してセキュリティ サービスのサポートを提供し、セキュア ブートを要求します。
+  - **[セキュア ブートと直接メモリ アクセス (DMA)]**: セキュア ブートと直接メモリ アクセスで VBS をオンにします。 DMA 保護は、ハードウェアのサポートを必要とし、正しく構成されたデバイスでのみ有効にされます。 
 
 #### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>SCEP 証明書でのカスタム サブジェクト名の使用 <!-- 2064190 -->
 SCEP 証明書プロファイルでカスタム サブジェクトの共通名 **OnPremisesSamAccountName** を使うことができます。 たとえば、`CN={OnPremisesSamAccountName})` のように使用できます。
 
 ####  <a name="block-camera-and-screen-captures-on-android-enterprise-work-profiles----1098977---"></a>Android エンタープライズ仕事用プロファイルでカメラと画面キャプチャをブロックする <!-- 1098977 -->
 Android デバイスのデバイス制限を構成するときに、次の 2 つの新しいプロパティをブロックに利用できます。 
-- カメラ: デバイスのすべてのカメラへのアクセスを禁止します
-- 画面キャプチャ: 画面のキャプチャをブロックし、セキュリティで保護されたビデオ出力を持たないディスプレイ デバイスにコンテンツが表示されないようにします
+- カメラ: デバイス上のすべてのカメラへのアクセスを禁止します
+- 画面の取り込み: 画面のキャプチャをブロックし、セキュリティで保護されたビデオ出力を持たないディスプレイ デバイスにコンテンツが表示されないようにします
 
 Android エンタープライズ仕事用プロファイルに適用されます。
 
@@ -1042,7 +1053,7 @@ Windows 10 の Intune ポータル サイト アプリが [Fluent Design System 
 
 #### <a name="use-cisco-anyconnect-client-for-ios----1333708---"></a>iOS 向け Cisco AnyConnect クライアントを使用する <!-- 1333708 -->
 
-iOS 用に新しい VPN プロファイルを作成するとき、**[Cisco AnyConnect]** と **[Cisco Legacy AnyConnect]** の 2 つの選択肢から選択できるようになりました。 Cisco AnyConnect プロファイルは、4.0.7x 以降のバージョンに対応しています。 既存の iOS Cisco AnyConnect VPN プロファイルは **[Cisco Legacy AnyConnect]** と表示されるようになり、現在と同じように Cisco AnyConnect 4.0.5x 以前のバージョンで引き続き動作します。
+iOS 用の VPN プロファイルを新規に作成するときに、次の 2 つのオプションを利用できるようになりました。**[Cisco AnyConnect]** と **[Cisco Legacy AnyConnect]**。 Cisco AnyConnect プロファイルは、4.0.7x 以降のバージョンに対応しています。 既存の iOS Cisco AnyConnect VPN プロファイルは **[Cisco Legacy AnyConnect]** と表示されるようになり、現在と同じように Cisco AnyConnect 4.0.5x 以前のバージョンで引き続き動作します。
 
 > [!NOTE]
 > この変更は iOS にのみ適用されます。 Android、Android エンタープライズ仕事用プロファイル、macOS プラットフォーム向けの Cisco AnyConnect オプションは、これまでどおり 1 つだけです。
@@ -1118,12 +1129,12 @@ Exchange Online と条件付きアクセスのエクスペリエンスを簡素�
 
 
 
-### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>変更の計画: Intune for Education のパフォーマンスの更新プログラム <!--1750215-->
+### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>変更の計画:Intune for Education のパフォーマンスの更新プログラム <!--1750215-->
 Intune for Education に、ユーザーやデバイスに設定を割り当てる速度と信頼性を高める更新プログラムがいくつか追加されます。 この変更の一環として 11 月末までに、お客様のポリシーまたは設定の割り当てが新しいグループに移動されます。
 
 #### <a name="how-does-this-affect-me"></a>ユーザーへの影響
 
-Intune for Education のお客様には、“All Users”\(すべてのユーザー\) と “All Devices”\(すべてのデバイス\) の 2 つの動的な Azure Active Directory (Azure AD) が用意されます。 これらの更新プログラムでは、Intune for Education コンソールに、これらの “All Users”\(すべてのユーザー\) と “All devices”\(すべてのデバイス\) の Azure AD グループは表示されません。 ただし、Intune on Azure コンソールには “All Users (Obsolete, do not use)”\(すべてのユーザー (古いため使用しない)\) と “All Devices (Obsolete, do not use)”\(すべてのデバイス (古いため使用しない)\) と名前変更され、表示されます。
+Intune for Education のお客様には、次の 2 つの動的な Azure Active Directory (Azure AD) グループが用意されます: [すべてのユーザー] と [すべてのデバイス]。 これらの更新プログラムでは、Intune for Education コンソールに、これらの “All Users”\(すべてのユーザー\) と “All devices”\(すべてのデバイス\) の Azure AD グループは表示されません。 ただし、Intune on Azure コンソールには “All Users (Obsolete, do not use)”\(すべてのユーザー (古いため使用しない)\) と “All Devices (Obsolete, do not use)”\(すべてのデバイス (古いため使用しない)\) と名前変更され、表示されます。
 
 更新プログラムがロールアウトされたら、Intune に Azure AD グループを使用してアプリや設定を割り当てる必要がなくなります。 代わりに、Intune for Education コンソールの弊社がお客様のために作成する新しいグループに、設定の割り当てが移動されます。これでは、今までと同様に “All Users”\(すべてのユーザー\) と “All Devices”\(すべてのデバイス\) と表示されます。 これらの変更はバックエンドで行われるので、Intune for Education コンソール上では何の変化もお客様には見られません。 お客様のエンド ユーザーや登録済みデバイスに、予測される影響はありません。 
 
@@ -1133,7 +1144,7 @@ Intune for Education のお客様には、“All Users”\(すべてのユーザ
 現在、前述の Intune on Azure の Azure AD グループにポリシーを割り当てている場合、代わりに Intune for Education コンソールの All Users\(すべてのユーザー\) と All Devices\(すべてのデバイス\) にそれらの割り当て開始してください。 Azure AD グループがコンソールで古いと名前変更されていたら、Azure AD でポリシーを割り当てるのを停止してください。 現在、名前変更されたグループを他の目的で使用していない場合、それらは削除してください。
 
 
-### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>変更の計画: Intune は 12 月に macOS 10.12 以降対応になります <!--2970975--> 
+### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>変更の計画: <!--2970975--> 年 12 月、Intune は macOS 10.12 以降対応になります。 
 
 Apple が macOS 10.14 を公開しました。 それに続いて、2018 年 12 月、Intune は macOS 10.12 以降対応になります。 
 
@@ -1161,7 +1172,9 @@ macOS 10.12 以降は現在、以下でサポートされています。
 詳細については、「[ポータル サイト アプリで Intune に macOS デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)」を参照してください。
  
 
-### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>変更の計画: Premier のお客様のための新しい Intune サポート 
+### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>変更の計画: Premier のお客様のための新しい Intune サポート エクスペリエンス 
+2018 年 12 月 4 日の更新プログラム: Microsoft ではこのプロセスの改善を試みています。そのため、MPO でのサポート要求の作成は 12 月 3 日ではなく後日、無効にされます。 メッセージ センターを通してお知らせすると共に、この変更のタイムラインを共有するためにこの投稿をすぐに更新します。
+
 Microsoft Premier をご利用のお客様は現在、Microsoft Premier Online (MPO) ポータル (premier.microsoft.com) と Azure での Intune (portal.azure.com) を利用し、Intune のサポート要求を作成できます。 2018 年 12 月 3 日以降、Premier サポートを引き続き強化するには、Azure での Intune でのみサポート要求を作成できます。
 
 #### <a name="how-does-this-affect-me"></a>ユーザーへの影響
@@ -1181,7 +1194,7 @@ Microsoft Premier をご利用のお客様は現在、Microsoft Premier Online (
 詳細については、[Microsoft Intune サポート チームのブログ投稿](https://aka.ms/IntuneSupport_MPO_to_Azure)を参照してください。
 
 
-### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>アクションの実行: Intune でお使いの Android デバイスの制限またはコンプライアンス ポリシー パスワードの設定を更新してください。
+### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>アクションの実行: Intune でご利用の Android デバイスの制限またはコンプライアンス ポリシー パスワードの設定を更新してください。
 Intune では、Android 4.4 以降のデバイスについて使用可能なパスワードの種類 "既定のデバイス" が削除されます。 Android プラットフォームと既定のデバイスの違いにより、そのポリシーはデバイスによってオプションとして扱われることがよくあります。 Android でこの設定が強制される場合についての混乱を解消するため、次回のリリースでこの設定を UI から削除します。 
 #### <a name="how-does-this-affect-me"></a>ユーザーへの影響
 - デバイスでパスワードを要求することが望ましい場合は、"既定のデバイス" を使用する代わりに、Android プラットフォームのプロファイルを編集して、必要なパスワードの種類を明確に示すことをお勧めします。
@@ -1194,7 +1207,7 @@ https://aka.ms/PasswordSettings
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple の要求による Application Transport Security 対応のための更新<!--748318-->
 Apple は、Application Transport Security (ATS) の特定の要件を適用すると発表しました。 ATS では、HTTPS 経由で行われるアプリ通信すべてに、より厳格なセキュリティ保護が適用されます。 この変更により、iOS ポータル サイト アプリを使用している Intune ユーザーが影響を受けます。 詳細については、[Intune サポート ブログ](https://aka.ms/compportalats)を参照してください。
 
-### <a name="plan-for-change-intune-moving-to-tls-12"></a>変更の計画: Intune の TLS 1.2 への移行
+### <a name="plan-for-change-intune-moving-to-tls-12"></a>変更の計画: Intune での TLS 1.2 への移行
 2018 年 10 月 31 日以降、Intune では、サービスが既定でより安全であることを保障するため、また Microsoft Office 365 などの他の Microsoft 製品と並んでクラス最高の暗号化を提供できるよう、トランスポート層セキュリティ (TLS) プロトコル バージョン 1.2 をサポートするようになりました。 Office では、この変更を MC128929 でご連絡しています。
 
 ポータル サイトも 2018 年 10 月 31 日に TLS 1.2 対応になります。
@@ -1207,7 +1220,7 @@ Apple は、Application Transport Security (ATS) の特定の要件を適用す�
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
 環境から TLS 1.0 と 1.1 の依存関係を積極的に削除し、可能な場合にはオペレーティング システム レベルで TLS 1.0 と 1.1 を無効にすることをお勧めします。 今日、TLS 1.2 への移行を計画しましょう。 現在 Intune ではサポートされていないが、ポリシーを依然受け取っていて、TLS バージョン 1.2 では通信できないデバイス一覧を以下のサポートのブログ投稿で確認してください。 会社のリソースにアクセスできなくなることを、エンド ユーザーに通知する必要がある場合があります。
 
-**追加情報**: [Intune moving to TLS 1.2 for encryption](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/) (Intune の暗号化の TLS 1.2 への移行)
+**追加情報**: [Intune では TLS 1.2 に移行して暗号化に対応](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
 
 
 

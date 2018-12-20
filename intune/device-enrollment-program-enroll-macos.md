@@ -1,12 +1,12 @@
 ---
 title: macOS デバイスの登録 - Device Enrollment Program または Apple School Manager
-titleSuffix: Microsoft Intune
+titleSuffix: ''
 description: Device Enrollment Program を使用して企業が所有する macOS デバイスを登録する方法を説明します。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 12a59165cd9ebe43826f8ec63ed5b045e5f3e991
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: seodec18
+ms.openlocfilehash: 2bd9b244947f5f0b8fcb832682951c7a241f96a4
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728754"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032352"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>Device Enrollment Program または Apple School Manager を使用して macOS デバイスを自動登録する
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-この記事は、Apple の [Device Enrollment Program (DEP)](https://deploy.apple.com) または [Apple School Manager](https://school.apple.com/) で購入したデバイスの macOS デバイス登録を設定するのに役立ちます。 これらの登録方法を使用すると、デバイスに触れることなく、多数のデバイスを登録できます。 ユーザーに直接 macOS デバイスを出荷できます。 ユーザーがデバイスの電源をオンにすると、セットアップ アシスタントが構成済み設定で実行され、デバイスが Intune の管理として登録されます。
+この記事は、Apple の [Device Enrollment Program (DEP)](https://deploy.apple.com) または [Apple School Manager](https://school.apple.com/) で購入した macOS デバイス用に Intune の登録を設定できます。 これらの登録方法を使用すると、デバイスに触れることなく、多数のデバイスを登録できます。 ユーザーに直接 macOS デバイスを出荷できます。 ユーザーがデバイスの電源をオンにすると、セットアップ アシスタントが構成済み設定で実行され、デバイスが Intune の管理として登録されます。
 
 登録を設定するには、Intune ポータルと Apple DEP ポータルの両方を使います。 登録時にデバイスに適用された設定を含む登録プロファイルを作成します。
 
@@ -123,7 +123,7 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
  
 7. **[OK]** を選びます。
 
-8. **[セットアップ アシスタントの設定]** を選択し、次のプロファイル設定を構成します。![[セットアップ アシスタントのカスタマイズ]](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)。
+8. **[セットアップ アシスタントの設定]** を選択し、次のプロファイル設定を構成します。![セットアップ アシスタントのカスタマイズ。](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
 
     | 部門の設定 | 説明 |
     |---|---|
