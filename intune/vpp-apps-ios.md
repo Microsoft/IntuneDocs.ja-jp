@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 175491e53ba9b1fbd41ac8bec8841c600b6916fb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b2ec10ec1174e5e689802d2c4f17a21de8312a15
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184558"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305966"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Volume Purchase Program で購入した iOS アプリを Microsoft Intune で管理する方法
 
@@ -56,7 +56,7 @@ Microsoft Intune では、以下を行うことにより、このプログラム
 
 ### <a name="supports-apple-volume-purchase-program-volume-purchased-apps-for-ios-devices"></a>Apple Volume Purchase Program の iOS デバイス用のボリューム購入アプリをサポート
 
-iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purchase Program](http://www.apple.com/business/vpp/) 経由または[教育向け Apple Volume Purchase Program](http://volume.itunes.apple.com/us/store) 経由で購入します。 このためには、Apple Web サイトから Apple VPP アカウントをセットアップし、Apple VPP トークンを Intune にアップロードする必要があります。  その後、ボリューム購入情報を Intune と同期し、ボリューム購入アプリの使用を追跡することができます。
+iOS アプリの複数のライセンスを[ビジネス向け Apple Volume Purchase Program](https://www.apple.com/business/vpp/) 経由または[教育向け Apple Volume Purchase Program](https://volume.itunes.apple.com/us/store) 経由で購入します。 このためには、Apple Web サイトから Apple VPP アカウントをセットアップし、Apple VPP トークンを Intune にアップロードする必要があります。  その後、ボリューム購入情報を Intune と同期し、ボリューム購入アプリの使用を追跡することができます。
 
 ### <a name="supports-business-to-business-volume-purchased-apps-for-ios-devices"></a>iOS デバイス用の企業間ボリューム購入アプリをサポート
 

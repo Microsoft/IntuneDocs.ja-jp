@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c7d5d29df0f91a4cff1060cd10a5d2355e196e39
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180141"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305932"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Intune で Android 仕事用プロファイルのデバイスにアプリを割り当てる
 
@@ -56,7 +56,7 @@ Intune と Android 仕事用プロファイルが Azure Portal の **[デバイ�
 
     ![新しいアプリのアクセス許可要求を処理するオプション](media/approve-app-settings.png)
 
-    アプリは承認され、IT 管理者コンソールに表示されます。 次に、[Intune と Android 仕事用プロファイルのアプリを同期する](apps-add-android-for-work.md#sync-an-android-for-work-app-with-intune)ことができます。 
+    アプリは承認され、IT 管理者コンソールに表示されます。 次に、[Intune と Android 仕事用プロファイルのアプリを同期する](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune)ことができます。 
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>Intune で Managed Google Play のアプリを同期する
 
@@ -84,7 +84,7 @@ Android Enterprise では、Intune にアプリを同期してユーザーに割
 
 管理対象の Google Play コンソールに定期的にアクセスして、新しいアクセス許可があるかどうか確認してください。 承認されたアプリに新しいアクセス許可が必要な場合は、自分や他のユーザーに電子メールを送信するように Google Play を構成できます。 アプリを割り当ててもデバイスにインストールされていない場合は、次の手順を実行して新しいアクセス許可を確認します。
 
-1. [Google Play](http://play.google.com/work) に移動します。
+1. [Google Play](https://play.google.com/work) に移動します。
 2. アプリを公開して承認する際に使用した Google アカウントでサインインします。
 3. **[更新]** タブを選択し、更新が必要なアプリがあるかどうかを確認します。  
     一覧にあるアプリでは新しいアクセス許可が必要で、それらが適用されるまで割り当てられません。

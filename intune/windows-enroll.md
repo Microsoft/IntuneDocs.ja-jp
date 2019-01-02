@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9562eb2c8fae49628ac042f28f172fb9f8fd5106
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 3c100ef3e598bf377f0464bfba161d4ad689ba98
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112546"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626042"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows デバイスの登録をセットアップする
 
@@ -69,7 +69,7 @@ CNAME DNS エントリの作成は省略可能ですが、CNAME レコードに�
 
 - name@contoso.com
 - name@us.contoso.com
-- name@eu.constoso.com\
+- name@eu.contoso.com
 
 Contoso DNS の管理者は、次の CNAME を作成する必要があります。
 

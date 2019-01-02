@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a4d40915cce17846ca2aaab29bb597c6580e8920
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 30155227f68f5b98eb1808cfc255b368f134ce91
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180665"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305915"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Volume Purchase Program で購入した iOS 電子ブックを Microsoft Intune で管理する方法
 
@@ -35,7 +35,7 @@ Microsoft Intune では、このプログラムを通して購入したブック
 ブックを管理する手順は、[VPP アプリを管理する](vpp-apps-ios.md)手順とほぼ同様です。
 
 ## <a name="manage-volume-purchased-books-for-ios-devices"></a>iOS デバイス用のボリューム購入ブックの管理
-iOS ブックの複数のライセンスを購入するには、[ビジネス向け Apple Volume Purchase Program](http://www.apple.com/business/vpp/) または [教育向け Apple Volume Purchase Program](http://volume.itunes.apple.com/us/store) を利用します。 このためには、Apple Web サイトから Apple VPP アカウントをセットアップし、Apple VPP トークンを Intune にアップロードする必要があります。  その後、ボリューム購入情報を Intune に同期し、ボリューム購入ブックの使用状況を追跡することができます。
+iOS ブックの複数のライセンスを購入するには、[ビジネス向け Apple Volume Purchase Program](https://www.apple.com/business/vpp/) または [教育向け Apple Volume Purchase Program](https://volume.itunes.apple.com/us/store) を利用します。 このためには、Apple Web サイトから Apple VPP アカウントをセットアップし、Apple VPP トークンを Intune にアップロードする必要があります。  その後、ボリューム購入情報を Intune に同期し、ボリューム購入ブックの使用状況を追跡することができます。
 
 ## <a name="before-you-start"></a>開始する前に
 開始する前に、Apple から VPP トークンを取得し、これを Intune アカウントにアップロードします。 補足:

@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 470bafba548c38870e57a545c4514459dde219b4
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 76f155d84a3f447cf067970c614d2bd7fd4f1798
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189392"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305898"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Intune データ ウェアハウスのアカウント データを移動する 
 
@@ -81,4 +81,4 @@ Azure Portal のビュー内の一部のトレンド グラフがリセットさ
 ## <a name="next-steps"></a>次の手順
 
  - [週ごとにまとめた Intune の新機能](whats-new.md)を参照してください。 今後の変更、サービスに関する重要なお知らせ、過去のリリースに関する情報も確認できます。
- - [Microsoft Intune のブログ](http://go.microsoft.com/fwlink/?LinkID=273882)を参照してください。
+ - [Microsoft Intune のブログ](https://go.microsoft.com/fwlink/?LinkID=273882)を参照してください。
