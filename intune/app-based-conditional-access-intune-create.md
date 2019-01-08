@@ -1,5 +1,6 @@
 ---
 title: Intune を使用してアプリベースの条件付きアクセス ポリシーをセットアップする
+titlesuffix: Microsoft Intune
 description: Intune を使用してアプリベースの条件付きアクセス ポリシーを作成する方法について説明します。
 keywords: ''
 author: brenduns
@@ -15,12 +16,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 32044422943282d9cf813192405a335ee756e44e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 079671064c09c22d151ea71f8b3fb385652aef0f
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52177934"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816924"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Intune を使用してアプリ ベースの条件付きアクセス ポリシーをセットアップする
 

@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3158d0531de4809bf654c030b8c1e0ef90185362
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 0201f9a33fcdf3e7f5780f8e65a3666e6eb5d7d1
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247069"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816958"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>アプリ保護ポリシーの設定を検証する方法
 
@@ -29,11 +29,11 @@ ms.locfileid: "53247069"
 
 アプリ保護ポリシーが正しくセットアップされ、動作していることを検証します。 このガイドは、Azure Portal のアプリ保護ポリシーに適用されます。
 
-### <a name="checking-for-symptoms"></a>現象の確認
+## <a name="checking-for-symptoms"></a>現象の確認
 アプリ保護はデータ保護ツールであるため、ユーザーが問題を報告することはほとんどありません。 アプリ保護の構成に問題がある場合、ユーザーは、アプリ保護がない場合と同じようにアクセスの制限を受けないため、問題があることがわかりません。 この理由により、アプリ保護の制限を意図的にテストできるユーザーの小規模なグループでアプリ保護ポリシーをパイロット運用して、アプリ保護の構成を検証することをお勧めします。
 
 
-### <a name="what-to-check"></a>確認項目
+## <a name="what-to-check"></a>確認項目
 
 テストの結果、アプリ保護ポリシーが予期しない動作をしていることがわかった場合は、以下の項目を確認します。
 
@@ -41,7 +41,7 @@ ms.locfileid: "53247069"
 - ユーザーは O365 のライセンスを取得していますか。
 - 各ユーザーのアプリ保護アプリの状態。 アプリの状態は、**[確認済み]** か **[未確認]** のはずです。
 
-#### <a name="user-app-protection-status"></a>ユーザーのアプリ保護の状態
+### <a name="user-app-protection-status"></a>ユーザーのアプリ保護の状態
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
 2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[クライアント アプリ]** > **[モニター]** >  **[アプリの保護状態]** を選択した後、**[割り当てられたユーザー]** タイルを選択します。 
@@ -50,7 +50,7 @@ ms.locfileid: "53247069"
 
 
 
-### <a name="what-to-do"></a>対処
+## <a name="what-to-do"></a>対処
 ユーザーの状態に基づいて実行するアクションを次に示します。
 
 - ユーザーがアプリ保護のラインセンスを取得していない場合は、Intune ライセンスをそのユーザーに割り当てます。
@@ -58,6 +58,6 @@ ms.locfileid: "53247069"
 - ユーザーのアプリが **[チェックインされていません]** という状態で一覧に表示される場合は、そのアプリのアプリ保護ポリシーを正しく構成したかどうかを確認します。
 - アプリ保護ポリシーを適用するすべてのユーザー全体に、これらの条件が適用されていることを確認します。
 
-### <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目
 
 [Intune アプリ保護ポリシーとは](app-protection-policies.md)
