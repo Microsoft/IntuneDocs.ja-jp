@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 4ccbdff5eac7fef8d28696d8340eb498bae95176
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 03840b0a4a7ce3f4735e22a227f5d2856d532b11
+ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187856"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657782"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune アプリ SDK の概要
 
@@ -79,11 +79,11 @@ Microsoft が、アンケートに入力された電子メール アドレスを
 
 以下の開発者ガイドのいずれかが必要になります。これらは、Intune アプリ SDK をご使用のアプリに統合するのに役立ちます。
 
-* **[iOS 用 Intune アプリ SDK 開発者ガイド](app-sdk-ios.md)**: このドキュメントでは、Intune アプリ SDK を使用したネイティブ iOS アプリを有効にする方法について、段階的に説明しています。
+* **[iOS 用 Intune アプリ SDK 開発者ガイド](app-sdk-ios.md)**:このドキュメントでは、Intune アプリ SDK を使用したネイティブ iOS アプリを有効にする方法について、段階的に説明しています。
 
-* **[Android 用 Intune アプリ SDK 開発者ガイド](app-sdk-android.md)**: このドキュメントでは、Intune アプリ SDK を使用したネイティブ Android アプリを有効にする方法について、段階的に説明しています。
+* **[Android 用 Intune アプリ SDK 開発者ガイド](app-sdk-android.md)**:このドキュメントでは、Intune アプリ SDK を使用したネイティブ Android アプリを有効にする方法について、段階的に説明しています。
 
-* **[Intune App SDK Xamarin Bindings ガイド](app-sdk-xamarin.md)**: このドキュメントは、iOS アプリと Android アプリを Xamarin を使用してビルドし、Intune アプリ保護ポリシーを適用するのに役立ちます。
+* **[Intune App SDK Xamarin Bindings ガイド](app-sdk-xamarin.md)**:このドキュメントは、Xamarin を使って Intune アプリ保護ポリシー用に iOS および Android アプリをビルドするのに役立ちます。
 
 
 
@@ -99,11 +99,11 @@ Microsoft が、アンケートに入力された電子メール アドレスを
 
 Microsoft Intune はアプリの利用統計データを収集します。
 
-* **iOS 用 Intune アプリ SDK**: SDK により、既定では、使用状況イベントに関する SDK 製品利用統計情報がログに記録されます。 このデータは、Microsoft Intune に送信されます。
+* **iOS 用 Intune アプリ SDK**:SDK では、使用状況イベントに関する SDK 利用統計情報が既定でログに記録されます。 このデータは、Microsoft Intune に送信されます。
 
     * アプリから SDK の製品利用統計情報を Microsoft Intune に送信しない場合は、IntuneMAMSettings ディレクトリのプロパティ `MAMTelemetryDisabled` を "YES" に設定して、製品利用統計情報の送信を無効にする必要があります。
 
-* **Intune App SDK for Android**: Intune App SDK for Android は、アプリからのデータ収集を制御しません。 ポータル サイト アプリケーションでは、既定で、製品利用統計情報がログに記録されます。 このデータは、Microsoft Intune に送信されます。 Microsoft ポリシーに基づき、個人を特定できる情報 (PII) は収集しません。 
+* **Android 用 Intune App SDK**:Intune App SDK for Android は、アプリからのデータ収集を制御しません。 ポータル サイト アプリケーションでは、既定で、製品利用統計情報がログに記録されます。 このデータは、Microsoft Intune に送信されます。 Microsoft ポリシーに基づき、個人を特定できる情報 (PII) は収集しません。 
 
     * エンド ユーザーがこのデータの送信を選択しない場合、ポータル サイト アプリの [設定] で製品利用統計情報をオフにする必要があります。 詳しくは、「[Microsoft による使用状況データの収集を無効にする](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)」をご覧ください。 
 
@@ -153,15 +153,15 @@ Intune|iOS|Android|説明|
 ### <a name="test-your-app"></a>アプリのテスト
 iOS または Android アプリを Intune アプリ SDK と統合するために必要な手順を完了した後、すべてのアプリ保護ポリシーが、ユーザーと IT 管理者に対して有効化され、機能していることを確認する必要があります。統合されたアプリをテストするには、次の手順を実行します。
 
-* **Microsoft Intune のテスト アカウント**: Intune アプリ保護機能に対して Intune の管理対象アプリをテストするには、Microsoft Intune のアカウントが必要です。
+* **Microsoft Intune のテスト アカウント**:Intune アプリ保護機能に対して Intune で管理されているアプリをテストするには、Microsoft Intune のアカウントが必要です。
 
     * Intune アプリ保護ポリシーに対して iOS または Android ストア アプリを有効化している ISV の場合は、登録ステップで説明した Microsoft Intune での登録が完了すると、プロモーション コードを受け取ります。 プロモーション コードを使用すると、Microsoft Intune の 1 年間の拡張使用試用版にサインアップできます。
 
     * ストアに出荷されない基幹業務アプリを開発している場合は、組織を介して Microsoft Intune へのアクセス権が付与されます。 この場合も、[Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) で、1 か月間の無料試用版にサインアップできます。
 
-* **Intune のアプリ保護ポリシー**: Intune のすべてのアプリ保護ポリシーに対して、ご使用のアプリをテストするには、ポリシー設定ごとに想定される動作を把握する必要があります。 [iOS アプリ保護ポリシー](app-protection-policy-settings-ios.md)と [Android アプリ保護ポリシー](app-protection-policy-settings-android.md)の説明を参照してください。
+* **Intune のアプリ保護ポリシー**:Intune のすべてのアプリ保護ポリシーに対してアプリをテストするには、ポリシー設定ごとに想定される動作を把握する必要があります。 [iOS アプリ保護ポリシー](app-protection-policy-settings-ios.md)と [Android アプリ保護ポリシー](app-protection-policy-settings-android.md)の説明を参照してください。
 
-* **トラブルシューティング**: アプリのインストール ユーザー エクスペリエンスを手動でテストしているときに問題が発生した場合は、「[アプリのインストールに関する問題のトラブルシューティング](troubleshoot-app-install.md)」をご覧ください。 
+* **トラブルシューティング**:アプリのインストール ユーザー エクスペリエンスを手動でテストしているときに問題が発生した場合は、「[アプリのインストールに関する問題のトラブルシューティング](troubleshoot-app-install.md)」をご覧ください。 
 
 ### <a name="give-your-app-access-to-the-intune-app-protection-service-optional"></a>Intune アプリ保護サービスへのアクセス権をアプリに付与する (省略可能)
 
@@ -188,7 +188,7 @@ Intune アプリ保護ポリシーがアプリで機能していることを確�
 
 ブリーフケース アイコンのバッジは、次のサンプルのように表示されます。
 
-![バッジの例 1](./media/badge-example-1.png) ![バッジの例 2](./media/badge-example-2.png)
+![Intune アプリ保護ポリシー - バッジの例 1](./media/badge-example-1.png) ![Intune アプリ保護ポリシー - バッジの例 2](./media/badge-example-2.png)
 
 **アプリにバッジを付けるために必要なもの**:
 

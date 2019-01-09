@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 0cea1b958849d6c2422461e85eba57577a65e884
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 2d47a8f61c85b390ae53311154f27d2d85860840
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112597"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626048"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune でサポートされるオペレーティング システムとブラウザー
 
@@ -30,6 +30,8 @@ ms.locfileid: "53112597"
 Microsoft Intune をセットアップする前に、サポートされているオペレーティング システムとブラウザーを確認してください。
 
 デバイスへの Intune のインストールについては、「[マネージド デバイスを使用して作業する](/intune-user-help/company-portal-frequently-asked-questions)」と [Intune のネットワーク帯域幅の使用法](network-bandwidth-use.md)に関するページを参照してください。
+
+構成サービス プロバイダー サポートの詳細については、「[Configuration service provider reference (構成サービス プロバイダー リファレンス)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)」を参照してください。
 
 ## <a name="intune-supported-operating-systems"></a>Intune でサポートされるオペレーティング システム
 

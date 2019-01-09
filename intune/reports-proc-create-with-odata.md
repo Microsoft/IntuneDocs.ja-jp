@@ -6,7 +6,7 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 931aa360b82efcf4ef643fb40bc4982c05e589ee
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9c93554fd6750459aacc154165e7a58e160534fb
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182994"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429714"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Power BI で OData フィードからレポートを作成する
 
@@ -45,7 +45,7 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
 
 ## <a name="install-power-bi-desktop"></a>Power BI Desktop をインストールする
 
-最新バージョンの Power BI Desktop をインストールします。 Power BI Desktop は [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop) からダウンロードできます。
+最新バージョンの Power BI Desktop をインストールします。 Power BI Desktop は、[PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop) からダウンロードできます
 
 ## <a name="connect-to-the-odata-feed-for-the-intune-data-warehouse-for-your-tenant"></a>テナントの Intune データ ウェアハウスの OData フィードに接続する
 
@@ -106,7 +106,7 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
 アプリを使った追加の質問に回答できるように、ツリーマップにフィルターを追加できます。
 
 
-1. フィルターを追加するには、レポート キャンバスを選択し、**[視覚化]** の**スライサー アイコン** (![ツリーマップとデータ](media/reports-create-slicer.png)) を選択します。
+1. フィルターを追加するには、レポート キャンバスを選択し、**[視覚化]** の下の**スライサー アイコン** (![データ モデルとサポートされているリレーションシップが示されたツリーマップ](media/reports-create-slicer.png)) を選択します。
 2. **ownerTypes** テーブルを探し、**ownerTypeName** データ フィールドを **[視覚化]** パネルの **[フィルター]** セクションにドラッグします。  
 
    devices テーブルに、デバイスが会社所有か個人所有かを示すコードを含む **OwnerTypeKey** データ フィールドがあります。 このフィルターにはフレンドリー名を表示したいので、**ownerTypes** テーブルを探し、**ownerTypeName** をドラッグします。 この例では、データ モデルがテーブル間のリレーションシップをサポートする方法を示します。

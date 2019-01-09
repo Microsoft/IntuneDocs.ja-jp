@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 42b554f025f80546a0a2dd93de92549f2f037b3f
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: e9d3b82fb544b1c73671438440b108573343795a
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112875"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324907"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために Android アプリを準備する
 
@@ -45,7 +45,7 @@ Android 用 Microsoft Intune アプリ ラッピング ツールを使用して�
 
 -   このアプリは、自社で開発されているか、自社向けに開発されている必要があります。 Google Play ストアからダウンロードしたアプリでこのツールを使用することはできません。
 
--   アプリ ラッピング ツールを実行するには、最新バージョンの [Java ランタイム環境](http://java.com/download/)をインストールし、Java の path 変数が Windows 環境変数で C:\ProgramData\Oracle\Java\javapath に設定されている必要があります。 詳細については、[Java のドキュメント](http://java.com/download/help/)を参照してください。
+-   アプリ ラッピング ツールを実行するには、最新バージョンの [Java ランタイム環境](https://java.com/download/)をインストールし、Java の path 変数が Windows 環境変数で C:\ProgramData\Oracle\Java\javapath に設定されている必要があります。 詳細については、[Java のドキュメント](https://java.com/download/help/)を参照してください。
 
     > [!NOTE]
     > 場合によっては、32 ビット バージョンの Java を使用すると、メモリに関連した問題が発生する可能性があります。 64 ビット バージョンをインストールすることをお勧めします。
@@ -71,12 +71,12 @@ Android 用 Microsoft Intune アプリ ラッピング ツールを使用して�
 
 2. ツールをインストールしたフォルダーから、アプリ ラッピング ツールの PowerShell モジュールをインポートします。
 
-   ```
+   ```PowerShell
    Import-Module .\IntuneAppWrappingTool.psm1
    ```
 
 3. **invoke-AppWrappingTool** コマンドを使用してツールを実行します。コマンドの構文は次のとおりです。
-   ```
+   ```PowerShell
    Invoke-AppWrappingTool [-InputPath] <String> [-OutputPath] <String> -KeyStorePath <String> -KeyStorePassword <SecureString>
    -KeyAlias <String> -KeyPassword <SecureString> [-SigAlg <String>] [<CommonParameters>]
    ```
@@ -99,18 +99,18 @@ Android 用 Microsoft Intune アプリ ラッピング ツールを使用して�
 
 - ツールの詳細な使用方法を確認するには、次のコマンドを入力します。
 
-    ```
+    ```PowerShell
     Help Invoke-AppWrappingTool
     ```
 
 **例:**
 
 PowerShell モジュールをインポートします。
-```
+```PowerShell
 Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1"
 ```
 ネイティブ アプリ HelloWorld.apk に対してアプリ ラッピング ツールを実行します。
-```
+```PowerShell
 invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped\HelloWorld_wrapped.apk -KeyStorePath "C:\Program Files (x86)\Java\jre1.8.0_91\bin\mykeystorefile" -keyAlias mykeyalias -SigAlg SHA1withRSA -Verbose
 ```
 
@@ -142,7 +142,7 @@ Android では、Android デバイスにインストールするために、す�
 
 -   このツールを実行しているコンピューター上の Intune に出力アプリケーションをインポートします。 Java keytool について詳しくは、[keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) に関するページをご覧ください。
 
--   出力アプリケーションとツールが汎用名前付け規則 (UNC) パスにあり、ツールと入力ファイルを同じコンピューター上で実行していない場合、[インターネット プロトコル セキュリティ (IPsec)](http://wikipedia.org/wiki/IPsec) または[サーバー メッセージ ブロック (SMB) 署名](https://support.microsoft.com/kb/887429)を使用して環境をセキュリティで保護します。
+-   出力アプリケーションとツールが汎用名前付け規則 (UNC) パスにあり、ツールと入力ファイルを同じコンピューター上で実行していない場合、[インターネット プロトコル セキュリティ (IPsec)](https://wikipedia.org/wiki/IPsec) または[サーバー メッセージ ブロック (SMB) 署名](https://support.microsoft.com/kb/887429)を使用して環境をセキュリティで保護します。
 
 -   アプリケーションが信頼されたソースからのものであることを確認します。
 
@@ -167,11 +167,17 @@ Android では、Android デバイスにインストールするために、す�
 > アプリに関連付けられている "クライアント ID" という用語は、アプリに関連付けられている Azure Portal の用語 "アプリケーション ID" と同じです。 
 > * SSO を有効にするには、「ADAL の一般的な構成」の 2. が必要です。
 
-2. マニフェストに次の値を入力して、既定の登録を有効にします。```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+2. マニフェストに次の値を入力して、既定の登録を有効にします。
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
+   ```
    > [!NOTE] 
    > これは、アプリ内での唯一の MAM-WE 統合である必要があります。 MAMEnrollmentManager API を呼び出す他の試行がある場合、競合が発生する可能性があります。
 
-3. マニフェストに次の値を入力して、必要な MAM ポリシーを有効にします。```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+3. マニフェストに次の値を入力して、必要な MAM ポリシーを有効にします。
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
+   ```
    > [!NOTE] 
    > その結果、ユーザーの使用前に、デバイスにポータル サイトをダウンロードし、既定の登録フローを完了することを強制します。
 

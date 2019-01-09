@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/04/2018
+ms.date: 12/20/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
-ms.openlocfilehash: 048b8472be00c544611fe2ea8763b16019cebc0b
-ms.sourcegitcommit: 580eb4920d18ce09c9431d9d0dfee9d195459c0e
+ms.openlocfilehash: e122f2c0c62fbde04a328b1423416be82dcfa1f9
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52887051"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734223"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Microsoft Intune のアプリ ライフサイクルの概要
 
@@ -28,7 +28,7 @@ ms.locfileid: "52887051"
 
 Microsoft Intune のアプリ ライフサイクルは、アプリが追加されると開始し、アプリを削除するまで以降のフェーズに従って進行します。 各フェーズを理解することで、Intune でアプリ管理を始めるために必要な知識が得られます。
 
-![アプリのライフサイクル](./media/app-lifecycle.png "Intune アプリのライフサイクル")
+![アプリのライフサイクル - 追加、デプロイ、構成、保護、インベントリから削除。](./media/app-lifecycle.png "Intune アプリ ライフサイクル")
 
 ## <a name="add"></a>追加
 

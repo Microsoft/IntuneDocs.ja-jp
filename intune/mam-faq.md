@@ -15,12 +15,12 @@ ms.reviewer: erikre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7cb6e5e603b353be5d3c0d3fdaca4f1d8af675ad
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1e2b97970a7ab440a032eb29f5307e4dbeddc3bc
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181192"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53306017"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM とアプリの保護に関してよく寄せられる質問
 
@@ -39,7 +39,7 @@ MAM は、アプリケーション内の組織のデータを保護します。 
 Intune MAM では次の 2 つの構成をサポートしています。
 - **Intune MDM + MAM**: IT 管理者は、Intune モバイル デバイス管理 (MDM) に登録されているデバイスで MAM とアプリ保護ポリシーを使用したアプリの管理のみを行うことができます。 MDM と MAM を使用してアプリを管理するには、Azure Portal (https://portal.azure.com) の Intune コンソールを使用する必要があります。
 
-- **デバイス登録なしの MAM**: デバイス登録なしの MAM (MAM-WE) では、IT 管理者は Intune MDM に登録されていないデバイスで MAM とアプリ保護ポリシーを使ってアプリを管理できます。 つまり、サードパーティ EMM プロバイダーに登録されているデバイスで Intune によりアプリを管理できます。 MAM-WE を使用してアプリを管理するには、Azure Portal (http://portal.azure.com) の Intune コンソールを使用する必要があります。 また、Intune では、サードパーティ製エンタープライズ モビリティ管理 (EMM) プロバイダーに登録されているデバイス上でも、MDM に全く登録されていないデバイス上でもアプリを管理することができます。
+- **デバイス登録なしの MAM**: デバイス登録がない MAM や MAM-WE では、IT 管理者は、Intune MDM に登録されていないデバイス上で MAM とアプリ保護ポリシーを使用してアプリの管理を行うことしかできません。 つまり、サードパーティ EMM プロバイダーに登録されているデバイスで Intune によりアプリを管理できます。 MAM-WE を使用してアプリを管理するには、Azure Portal (https://portal.azure.com) の Intune コンソールを使用する必要があります。 また、Intune では、サードパーティ製エンタープライズ モビリティ管理 (EMM) プロバイダーに登録されているデバイス上でも、MDM に全く登録されていないデバイス上でもアプリを管理することができます。
 
 
 ## <a name="app-protection-policies"></a>アプリ保護ポリシー
@@ -61,7 +61,7 @@ Intune アプリ保護ポリシーでは、[Intune アプリ SDK](/intune/app-sd
 
 - エンドユーザーに、Azure Active Directory アカウントに割り当てられた Microsoft Intune のライセンスが必要です。 Intune ライセンスをエンドユーザーに割り当てる方法については、「[Intune のライセンスを管理する](/intune/licenses-assign)」を参照してください。
 
-- エンドユーザーは、アプリ保護ポリシーの対象となるセキュリティ グループに属している必要があります。 同一のアプリ保護ポリシーでは、使用中の特定のアプリを対象とする必要があります。 アプリ保護ポリシーは、[Azure Portal](http://portal.azure.com) の Intune コンソールで作成して展開できます。 セキュリティ グループは、現在 [Office ポータル](http://portal.office.com)で作成できます。
+- エンドユーザーは、アプリ保護ポリシーの対象となるセキュリティ グループに属している必要があります。 同一のアプリ保護ポリシーでは、使用中の特定のアプリを対象とする必要があります。 アプリ保護ポリシーは、[Azure Portal](https://portal.azure.com) の Intune コンソールで作成して展開できます。 セキュリティ グループは、現在 [Office ポータル](https://portal.office.com)で作成できます。
 
 - エンドユーザーは、AAD アカウントを使用してアプリにサインインする必要があります。
 
@@ -76,7 +76,7 @@ Intune アプリ保護ポリシーでは、[Intune アプリ SDK](/intune/app-sd
 
 **[Word、Excel、PowerPoint](https://products.office.com/business/office) のアプリを使用するための追加要件は何ですか。**
 
-- エンドユーザーに、Azure Active Directory アカウントにリンクされた [Office 365 Business または Office 365 Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) のライセンスが必要です。 サブスクリプションには、モバイル デバイスの Office アプリが含まれている必要があります。また、[OneDrive for Business](https://onedrive.live.com/about/business/) のクラウド ストレージ アカウントを含めることも可能です。 Office 365 のライセンスは、[Office ポータル](http://portal.office.com)でこちらの[手順](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)を実行して割り当てることができます。
+- エンドユーザーに、Azure Active Directory アカウントにリンクされた [Office 365 Business または Office 365 Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) のライセンスが必要です。 サブスクリプションには、モバイル デバイスの Office アプリが含まれている必要があります。また、[OneDrive for Business](https://onedrive.live.com/about/business/) のクラウド ストレージ アカウントを含めることも可能です。 Office 365 のライセンスは、[Office ポータル](https://portal.office.com)でこちらの[手順](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)を実行して割り当てることができます。
 
 - エンド ユーザーは、[名前を付けて保存することを禁止] アプリケーション保護ポリシー設定の機能として、詳細保存を使用して管理対象の場所を構成しておく必要があります。 たとえば、管理対象の場所が OneDrive の場合、[OneDrive](https://onedrive.live.com/about/) アプリは、エンド ユーザーの Word アプリ、Excel アプリ、または PowerPoint アプリ内で構成される必要があります。
 
@@ -109,9 +109,9 @@ Outlook では個人用電子メールと "企業" 電子メールの両方が�
 
 - **Intune の PIN の入力はどのくらいの頻度で求められますか。**<br></br> IT 管理者は、Intune 管理コンソールで、"(分数) 後にアクセス要件を再確認する" という Intune アプリ保護ポリシー設定を定義できます。 この設定では、デバイスで、アクセス要件がチェックされ、アプリケーションの PIN 画面が再度表示されるまでの時間を指定します。 ただし、PIN に関する以下の内容は重要であり、ユーザーが入力を求められる頻度に影響を与えます。 
 
-    - **使いやすさの向上のために、同じアプリの公開元のアプリで PIN が共有されます:** iOS では、アプリの PIN は、**同じ公開元の**すべてのアプリで共有されます。 Android では、アプリの PIN はすべてのアプリで共有されます。
+    - **使いやすさの向上のために、同じ公開元のアプリで PIN が共有されます:** iOS 上では、アプリの PIN は、**同じ公開元の**すべてのアプリ間で共有されます。 Android では、アプリの PIN はすべてのアプリで共有されます。
     - **デバイス再起動後の [(分数) 後に、アクセス要件を再確認する] 動作:** "PIN タイマー" が非アクティブな時間の分数を追跡し、Intune アプリの PIN を次に表示するタイミングを決定します。 iOS では、PIN タイマーはデバイスの再起動の影響を受けません。 そのため、デバイスの再起動は、Intune PIN ポリシーを使用する iOS アプリからの、ユーザーが非アクティブになっている時間の分数に影響しません。 Android では、PIN タイマーはデバイスの再起動時にリセットされます。 そのため、Intune PIN ポリシーを使用する Android アプリは、[(分数) 後に、アクセス要件を再確認する] の設定値に関係なく、**デバイスの再起動後に**アプリの PIN を要求する場合があります。  
-    - **PIN に関連付けられたタイマーの回転という性質:** PIN を入力してアプリ (アプリ A) にアクセスし、その後、そのアプリがデバイスのフォアグラウンド (メイン入力フォーカス) を離れると、その PIN の PIN タイマーがリセットされます。 タイマーがリセットされるため、この PIN を共有するアプリ (アプリ B) では、PIN の入力は求められません。 "(分数) 後にアクセス要件を再確認する" の値がもう一度満たされると、再度プロンプトが表示されます。
+    - **PIN に関連付けられたタイマーのローリングという性質:** PIN を入力してアプリ (アプリ A) にアクセスし、その後、そのアプリがデバイス上のフォアグラウンド (メイン入力フォーカス) を離れると、その PIN の PIN タイマーがリセットされます。 タイマーがリセットされるため、この PIN を共有するアプリ (アプリ B) では、PIN の入力は求められません。 "(分数) 後にアクセス要件を再確認する" の値がもう一度満たされると、再度プロンプトが表示されます。
 
 iOS デバイスの場合、発行元が異なるアプリ間で PIN を共有する場合でも、メイン入力フォーカスではないアプリに対して再度、**[(分数) 後にアクセス要件を再確認する]** 値が満たされると、プロンプトが再表示されます。 そこで、たとえば、ユーザーに発行元 _X_ からのアプリ _A_ と発行元 _Y_ からのアプリ _B_ があるとき、それら 2 つのアプリで同じ PIN が共有されているとします。 ユーザーのフォーカスがアプリ _A_ (前景) にあり、アプリ _B_ は最小化されています。 **[(分数) 後にアクセス要件を再確認する]** 値が満たされ、ユーザーがアプリ _B_ に切り替えると、PIN が必要になります。
 

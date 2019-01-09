@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fd3a38b331507ddc50a7b5e4ce8794e71d0e5dc5
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: b896a1607dfc036fe248c233477239700dc96091
+ms.sourcegitcommit: 3297fe04ad0d10bc32ebdb903406c2152743179e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977356"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53531330"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Intune のデバイス コンプライアンス ポリシーの概要
 
@@ -171,7 +171,7 @@ Intune に登録されたすべてのデバイスで、一連の組み込み**�
   この設定を有効にするには、デバイスで以下の操作が必要です。
   - OS レベルで位置情報サービスを有効にする
   - ポータル サイトで位置情報サービスを使用できるようにする
-  - 72 時間ごとに 1 回以上、脱獄状態を評価して Intune にレポートする それ以外の場合、デバイスは非準拠とマークされます。 ポータル サイト アプリを開くか、デバイスを 500 メートル以上物理的に移動すると、評価がトリガーされます。
+  - 72 時間ごとに 1 回以上、脱獄状態を評価して Intune にレポートする それ以外の場合、デバイスは非準拠とマークされます。 ポータル サイト アプリを開くか、デバイスを 500 メートル以上物理的に移動すると、評価がトリガーされます。 デバイスが 72 時間以内に 500 メートルを移動しない場合は、脱獄評価を強化するために、ユーザーはポータル サイト アプリを開く必要があります。
 
 - **[コンプライアンス状態の有効期間 (日)]**:デバイスが受け取ったすべてのコンプライアンス ポリシーの状態をレポートする期間を入力します。 この期間内に状態を返さないデバイスは非準拠として扱われます。 既定値は 30 日です。
 

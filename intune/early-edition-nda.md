@@ -17,12 +17,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 35298713738c666ca19d57e647412729a85bbc4a
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 21d89d97355430f071763391d69fe332cf3ef369
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112835"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642899"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>Microsoft Intune の初期エディション - 2018 年 12 月
 
@@ -50,11 +50,11 @@ ms.locfileid: "53112835"
 Windows 10 以降のデバイスでは、contoso.com などのドメインを解決するための DNS サーバーのリストを含む VPN 構成プロファイルを作成できます。 これには、名前解決のための新しい設定が含まれます (**[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** > プラットフォームとして **[Windows 10 以降]** を選択 > プロファイルの種類として **[VPN]** を選択 > **[DNS 設定]** >**[追加]**)。 
 
 - **自動接続**: **有効**にすると、デバイスは、入力された contoso.com などのドメインにアクセスするときに、VPN に自動的に接続します。
-- **永続性**: この VPN プロファイルを使用してデバイスに接続している限り、既定で、名前解決ポリシー テーブル (NRPT) のすべてのルールがアクティブになります。 NRPT ルールでこの設定が**有効**になっていると、VPN が切断されたり VPN プロファイルが削除されたりしても、ルールはデバイス上でアクティブなままになります。 ルールは、PowerShell を使って手動で削除されるまで、保持されています。
+- **永続性**: この VPN プロファイルを使用してデバイスに接続している限り、既定で、名前解決ポリシー テーブル (NRPT) のすべてのルールがアクティブになります。 NRPT ルールでこの設定を**有効**にすると、VPN が切断されても、ルールはデバイス上でアクティブなままになります。 VPN プロファイルを削除するか、ルールを手動で削除するまで (PowerShell を使って実行できます)、ルールは保持されます。
 
 [Windows 10 の VPN 設定](vpn-settings-windows-10.md)に関するページでは、設定の現在の一覧が説明されています。 
 
-### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642-eeready---"></a>S/MIME を使用して暗号化し、ユーザーの複数のデバイスに署名する <!-- 1333642 eeready -->
+### <a name="use-smime-to-encrypt-and-sign-multiple-devices-for-a-user----1333642-eeready---"></a>S/MIME を使って暗号化し、ユーザーの複数のデバイスに署名する <!-- 1333642 eeready -->
 新しくインポートされる証明書プロファイルを使用する S/MIME メールの暗号化がサポートされます (**[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** > 該当するプラットフォーム > **[PKCS のインポートされた証明書]** プロファイルの種類)。 Intune では、PFX 形式で証明書をインポートできます。 その後、Intune はその同じ証明書を、単一ユーザーによって登録された複数のデバイスに配信できます。 これには、次のものも含まれます。
 
 - ネイティブ iOS メール プロファイルでは、PFX 形式でインポートされた証明書を使用する S/MIME 暗号化を有効にすることができます。
@@ -73,14 +73,14 @@ Windows ポータル サイト アプリに新しいページが追加されま�
 [Windows 10 の VPN 設定](vpn-settings-windows-10.md)に関するページには、現在の VPN 設定の一覧があります。
 
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>256 ビット暗号化キーをサポートするようになる Intune App SDK <!-- 1832174 -->
-アプリ保護ポリシーによって暗号化が有効にされると、iOS 用 Intune App SDK では 256 ビット暗号化キーが使用されるようになります。 古いバージョンの SDK を使用するコンテンツやアプリとの互換性のため、SDK では引き続き 128 ビット キーのサポートが提供されます。
+アプリ保護ポリシーによって暗号化が有効にされると、Android 用 Intune App SDK では 256 ビット暗号化キーが使用されるようになります。 古いバージョンの SDK を使用するコンテンツやアプリとの互換性のため、SDK では引き続き 128 ビット キーのサポートが提供されます。
 
 ### <a name="enabled-shared-pc-settings-in-intune-profile----1907917---"></a>Intune プロファイルでの共有 PC 設定の有効化 <!-- 1907917 -->
 現在、共有 PC の設定は、Windows 10 デスクトップ デバイスでカスタム OMA-URI の設定を使用して構成できます。 共有 PC の設定を構成するための新しいプロファイルが追加されます (**[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** > **[Windows 10 以降]** > **[Shared multi-user device]\(共有マルチユーザー デバイス\)**)。
 適用先:Windows 10 以降、Windows Holographic for Business
 
 ### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation-----1927359---"></a>Intune ポリシーでの認証方法とポータル サイト アプリのインストールの更新 <!-- 1927359 -->
-Intune では、特定のデバイスで App Store からインストールされる場合に、ポータル サイト アプリがサポートされなくなります。 この変更は、登録時に Apple セットアップ アシスタントで認証を行う場合にのみ関係があります。 また、この変更は、以下から登録される iOS デバイスのみに影響します。  
+Apple の会社用デバイスの登録方法のいずれかを使ってセットアップ アシスタント経由で既に登録されているデバイスの場合、Intune では、特定のデバイスで App Store からインストールされる場合に、ポータル サイト アプリがサポートされなくなります。 この変更は、登録時に Apple セットアップ アシスタントで認証を行う場合にのみ関係があります。 また、この変更は、以下から登録される iOS デバイスのみに影響します。  
 * Apple Configurator
 * Apple Business Manager
 * Apple School Manager
@@ -113,6 +113,9 @@ Windows 10 更新プログラム リングで、次のことができるよう�
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>BitLocker の一部の設定で Windows 10 Pro エディションがサポートされる <!-- 2727036 -->
 Windows 10 デバイスで、BitLocker などの Endpoint Protection の設定を行う構成プロファイルを作成できるようになります。 これにより、BitLocker の一部の設定に Windows 10 Professional エディションのサポートが追加されます。 現在の Windows 10 エディションの設定を確認するには、[Windows 10 用の Endpoint Protection 設定](endpoint-protection-windows-10.md#windows-encryption)に関する記事をご覧ください。
+
+
+### <a name="intune-device-reporting-fields----2748738---"></a>Intune のデバイス レポートのフィールド <!-- 2748738 -->
 Intune では、Android の製造元、モデル、セキュリティ更新プログラムのバージョン、iOS のモデルなど、デバイス レポートのフィールドが追加されます。 Intune でこれらのフィールドを使用するには、**[クライアント アプリ]** > **[アプリの保護状態]** を選択して、**[アプリ保護レポート: iOS、Android]** を選択します。 さらに、これらのパラメーターは、デバイス製造元 (Android) の**許可**リスト、デバイス モデル (Android および iOS) の**許可**リスト、および Android セキュリティ修正プログラムの最小バージョンの設定を構成するのに役立ちます。 
 
 ### <a name="intune-device-reporting-fields----2748738---"></a>Intune のデバイス レポートのフィールド <!-- 2748738 -->

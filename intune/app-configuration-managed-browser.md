@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 829b9587849208c40d5e4c0f58169b4f6dfd4153
-ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
+ms.openlocfilehash: 65f3598282bd46d422f8748d2653dbf8e18cf9b7
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "52630019"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324975"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune のポリシーで保護されたブラウザーを使用してインターネット アクセスを管理する
 
@@ -150,7 +150,7 @@ Microsoft Edge および Intune Managed Browser と [Azure AD アプリケーシ
 ### <a name="before-you-start"></a>開始する前に
 
 - Azure AD アプリケーション プロキシ経由の内部アプリケーションをセットアップします。
-    - アプリケーション プロキシを構成し、アプリケーションを公開するには、[セットアップに関するドキュメント](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started)を参照してください。 
+    - アプリケーション プロキシを構成し、アプリケーションを公開するには、[セットアップに関するドキュメント](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#get-started)を参照してください。 
 - Managed Browser アプリの最小バージョン 1.2.0 を使用する必要があります。
 - Managed Browser または Microsoft Edge アプリのユーザーは、[Intune アプリの保護ポリシー]( app-protection-policy.md)をアプリに割り当てています。
 
@@ -158,17 +158,17 @@ Microsoft Edge および Intune Managed Browser と [Azure AD アプリケーシ
     > 更新されたアプリケーション プロキシのリダイレクト データが、Managed Browser や Microsoft Edge で有効になるまでには、最大で 24 時間かかる場合があります。
 
 
-#### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>ステップ 1: Outlook から保護ブラウザーへの自動リダイレクトを有効にする
+#### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>手順 1.Outlook から保護ブラウザーへの自動リダイレクトを有効にする
 Outlook は、アプリ保護ポリシーの **[Managed Browser に表示する Web コンテンツを制限する]** 設定を有効にして構成される必要があります。
 
-#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>ステップ 2: 保護ブラウザーに割り当てられたアプリ構成ポリシーを割り当てる
+#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>手順 2: 保護ブラウザーに割り当てられたアプリ構成ポリシーを割り当てる
 この手順では、アプリ プロキシのリダイレクトを使用するように、Managed Browser または Microsoft Edge アプリを構成します。 Microsoft Edge または Managed Browser アプリの構成を作成する手順に従い、以下のキーと値のペアを指定します。
 
 | キー                                                             | 値    |
 |-----------------------------------------------------------------|----------|
 | **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
-オンプレミスの Web アプリへのシームレスな (保護された) アクセスのため、Managed Browser、Microsoft Edge、Azure AD アプリケーション プロキシを並行使用する方法に関する詳細は、Enterprise Mobility + Security のブログ記事「[Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access)」 (最適な組み合わせ: ユーザーのアクセスを向上するための Intune と Azure Active Directory の連携) を参照してください。
+オンプレミスの Web アプリへのシームレスな (保護された) アクセスのために、Managed Browser、Microsoft Edge、Azure AD アプリケーション プロキシを並行使用できる方法の詳細については、Enterprise Mobility + Security のブログ記事「[Better together: Intune and Azure Active Directory team up to improve user access (最適な組み合わせ: ユーザーのアクセスを向上するための Intune と Azure Active Directory の連携)](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access)」を参照してください。
 
 > [!NOTE]
 > Microsoft Edge は、Managed Browser と同じキーと値のペアを使用します。 
@@ -261,6 +261,19 @@ Microsoft Edge または Managed Browser アプリの構成を作成する手順
   - `http://www.contoso.com:*`
 
   - `http://www.contoso.com: /*`
+## <a name="opening-links-within-the-intune-managed-browser-vs-microsoft-edge"></a>Intune Managed Browser または Microsoft Edge 内でリンクを開くMicrosoft Edge 
+
+Intune Managed Browser および Microsoft Edge は現在、両方ともポリシーで管理されているブラウザー/保護されているブラウザーと見なされています。 今日、既存のアプリ保護ポリシーは Intune マネージド アプリからの Web リンクになっており、使用するシナリオおよびプラットフォームに応じて特定のブラウザーで開きます。 
+
+Android 上の場合:  
+* ポリシー マネージド ブラウザーが必須になっているすべての Intune マネージド アプリにおいて、アプリ構成の設定 "com.microsoft.intune.useEdge" が "true" に設定されていない限り、MB および Edge の両方がデバイス上にある場合は Managed Browser。  
+* Microsoft Edge のみがデバイス上にあり、ポリシーの対象になっている場合は、Microsoft Edge。
+* Managed Browser のみがデバイス上にあり、ポリシーの対象になっている場合は、Managed Browser。 
+
+iOS 上で、iOS または 9.0.9+ 用の Intune SDK を統合したアプリ向けの場合:  
+* すべての Intune マネージド アプリにおいて、アプリ構成の設定 "com.microsoft.intune.useEdge" が "true" に設定されていない限り、MB および Edge の両方がデバイス上にある場合は、Managed Browser。**または**、Microsoft Edge がインストールされており、ポリシーが受信済みの場合は、Microsoft Edge。 
+* Microsoft Edge のみがデバイス上にあり、ポリシーで対象になっており、かつ、ポリシーが受信済みの場合は、Microsoft Edge。 
+* Managed Browser のみがデバイス上にあり、ポリシーの対象になっており、かつ、ポリシーが受信済みの場合は、Managed Browser。
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>iOS で Managed Browser を使用し、管理対象アプリ ログにアクセスする方法
 

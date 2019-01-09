@@ -5,7 +5,7 @@ keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c96d66a11f49db68d20511aeae9b2abbab53b172
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 4e37675186ef21d219627ec3ec1973e6e9944d1d
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181244"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737969"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune を使用して Windows デバイスに展開できるように基幹業務アプリに署名する
 
@@ -34,10 +34,10 @@ Intune 管理者は、ポータル サイト アプリを含め、基幹業務 (
 
 
 1. **Microsoft 開発者として登録する**<br>
-   ログイン時に使用した会社のアカウント情報を使用して、[Microsoft 開発者として登録](http://go.microsoft.com/fwlink/?LinkId=268442)し、自身の会社のアカウントを購入します。 コード署名証明書を受け取る前に、会社の担当者からこの要求の承認を受ける必要があります。
+   ログイン時に使用した会社のアカウント情報を使用して、[Microsoft 開発者として登録](https://go.microsoft.com/fwlink/?LinkId=268442)し、自身の会社のアカウントを購入します。 コード署名証明書を受け取る前に、会社の担当者からこの要求の承認を受ける必要があります。
 
 2. **会社の Symantec 証明書を取得する**<br>
-  [Symantec の Web サイト](http://go.microsoft.com/fwlink/?LinkId=268441)から Symantec ID を使用して証明書を購入します。 証明書を購入すると、Microsoft 開発者として登録したときに指定した会社の承認者は、証明書要求の承認を求めるメールを受信します。 Symantec 証明書の要件の詳細については、「[Why Windows Phone requires a Symantec certificate? (Windows Phone で Symantec 証明書が必要な理由)](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec)」 (Windows デバイスの登録に関する FAQ) をご覧ください。
+  [Symantec の Web サイト](https://go.microsoft.com/fwlink/?LinkId=268441)から Symantec ID を使用して証明書を購入します。 証明書を購入すると、Microsoft 開発者として登録したときに指定した会社の承認者は、証明書要求の承認を求めるメールを受信します。 Symantec 証明書の要件の詳細については、「[Why Windows Phone requires a Symantec certificate? (Windows Phone で Symantec 証明書が必要な理由)](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec)」 (Windows デバイスの登録に関する FAQ) をご覧ください。
 
 3.  **証明書をインポートする**<br>
     要求が承認されると、証明書をインポートするための手順を含む電子メールが届きます。 メールの指示に従って証明書をインポートします。
@@ -45,14 +45,14 @@ Intune 管理者は、ポータル サイト アプリを含め、基幹業務 (
 4.  **インポートされた証明書を確認する**<br>
     証明書が正しくインポートされたことを確認するには、**[証明書]** スナップインに進み、**[証明書]** を右クリックして **[証明書の検索]** を選択します。 **[含む]** フィールドに「Symantec」と入力し、 **[今すぐ検索]** をクリックします。 インポートした証明書が検索結果に表示されます。
 
-    ![Symantec 証明書の検索](./media/wit.gif)
+    ![証明書の結果が [証明書の検索] ダイアログ ボックスに一覧表示される](./media/wit.gif)
 
 5. **署名証明書をエクスポートする**<br>
     証明書があることを確認したら、.pfx ファイルをエクスポートしてポータル サイトに署名できます。 **[使用目的]** が "コード署名" になっている Symantec 証明書を選択します。 そのコード署名証明書を右クリックして、**[エクスポート]** を選択します。
 
     ![署名証明書のエクスポート](./media/wit-walk-cert2.gif)
 
-    **[証明書のエクスポート ウィザード]** が起動したら、 **[はい、秘密キーをエクスポートします]** を選択して **[次へ]** をクリックします。 **[Personal Information Exchange - PKCS #12 (.PFX)]** を選択し、**[証明のパスにある証明書を可能であればすべて含む]** チェック ボックスをオンにします。 ウィザードを完了します。 詳細については、「 [証明書を秘密キーと共にエクスポートする](http://go.microsoft.com/fwlink/?LinkID=203031)」をご覧ください。
+    **[証明書のエクスポート ウィザード]** が起動したら、 **[はい、秘密キーをエクスポートします]** を選択して **[次へ]** をクリックします。 **[Personal Information Exchange - PKCS #12 (.PFX)]** を選択し、**[証明のパスにある証明書を可能であればすべて含む]** チェック ボックスをオンにします。 ウィザードを完了します。 詳細については、「 [証明書を秘密キーと共にエクスポートする](https://go.microsoft.com/fwlink/?LinkID=203031)」をご覧ください。
 
 6.  **Intune にアプリをアップロードする**<br>
     署名付きのアプリ ファイルと、コード署名証明書をアップロードして、アプリをエンド ユーザーが使用できるようにします。
@@ -65,39 +65,39 @@ Intune 管理者は、ポータル サイト アプリを含め、基幹業務 (
 
     4.  ウィザードを完了します。
 
-## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>例: Windows デバイス用ポータル サイト アプリのダウンロード、署名、および展開
+## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>例:Windows デバイス用ポータル サイト アプリのダウンロード、署名、および展開
 
 Microsoft ストアからインストールしなくても、Intune を使用して、Windows Phone や Windows 10 Mobile デバイスなどの Windows デバイスにポータル サイト アプリを展開できます。 ポータル サイト アプリをダウンロードし、証明書を使用して署名する必要があります。  この手順は、ユーザーが会社のストアを使用しないが、ポータル サイトを Windows Phone 8.1 デバイスに展開する場合のみ必要です。
 
 
 1.  **ポータル サイトをダウンロードする**
 
-    Intune を使用してポータル サイト アプリを展開する場合は、ダウンロード センターから [Windows Phone 8.1 用 Microsoft Intune ポータル サイト アプリ](http://go.microsoft.com/fwlink/?LinkId=615799)をダウンロードし、自己解凍形式 (.exe) のファイルを実行します。 このファイルには、以下の 2 つのファイルが含まれています。
+    Intune を使用してポータル サイト アプリを展開する場合は、ダウンロード センターから [Windows Phone 8.1 用 Microsoft Intune ポータル サイト アプリ](https://go.microsoft.com/fwlink/?LinkId=615799)をダウンロードし、自己解凍形式 (.exe) のファイルを実行します。 このファイルには、以下の 2 つのファイルが含まれています。
 
     -   CompanyPortal.appx – ポータル サイトの Windows Phone 8.1 用インストール アプリ
 
     -   WinPhoneCompanyPortal.ps1 – ポータル サイト アプリ ファイルへの署名に使用する PowerShell スクリプト。これにより、ポータル サイト アプリを Windows Phone 8.1 デバイスに展開できます。
 
-    また、[ビジネス向け Microsoft ストア](http://businessstore.microsoft.com/)から Windows Phone 8.1 ポータル サイト (オフライン ライセンス パッケージ) または Windows 10 ポータル サイト (オフライン ライセンス パッケージ) をダウンロードすることもできます。 ポータル サイト アプリは、オフライン ライセンスと、オフラインで使用するためにダウンロードした適切なパッケージを使用して取得する必要があります。 選択項目の Windows 8 および Windows Phone 8 プラットフォーム リストでは、対応する 8.1 が参照されます。 Intune でそれを行う方法については、「[ビジネス向け Microsoft ストアから購入したアプリを管理する](windows-store-for-business.md)」を参照してください。
+    また、[ビジネス向け Microsoft ストア](https://businessstore.microsoft.com/)から Windows Phone 8.1 ポータル サイト (オフライン ライセンス パッケージ) または Windows 10 ポータル サイト (オフライン ライセンス パッケージ) をダウンロードすることもできます。 ポータル サイト アプリは、オフライン ライセンスと、オフラインで使用するためにダウンロードした適切なパッケージを使用して取得する必要があります。 選択項目の Windows 8 および Windows Phone 8 プラットフォーム リストでは、対応する 8.1 が参照されます。 Intune でそれを行う方法については、「[ビジネス向け Microsoft ストアから購入したアプリを管理する](windows-store-for-business.md)」を参照してください。
 
-2.  **Windows Phone SDK をダウンロードする** Windows Phone SDK 8.0 (http://go.microsoft.com/fwlink/?LinkId=615570) をダウンロードし、SDK をコンピューターにインストールします。 この SDK は、アプリケーション登録トークンを生成するために必要です。
+2.  **Windows Phone SDK をダウンロードする** Windows Phone SDK 8.0 (https://go.microsoft.com/fwlink/?LinkId=615570) をダウンロードし、SDK をコンピューターにインストールします。 この SDK は、アプリケーション登録トークンを生成するために必要です。
 
 3.  **AETX ファイルを生成する** Windows Phone SDK 8.0 に含まれる AETGenerator.exe を使用して、Symantec PFX ファイルからアプリケーション登録トークン (.aetx) ファイルを生成します。 AETX ファイルの作成手順については、「 [Windows Phone 用のアプリケーション登録トークンを生成する方法](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)」をご覧ください。
 
-4.  **Windows SDK for Windows 8.1 をダウンロードする** [Windows Phone SDK](http://go.microsoft.com/fwlink/?LinkId=613525) (http://go.microsoft.com/fwlink/?LinkId=613525) をダウンロードしてインストールします。 ポータル サイト アプリに付属の PowerShell スクリプトでは、既定のインストール場所 `${env:ProgramFiles(x86)}\Windows Kits\8.1`が使用される点に注意してください。 他の場所にインストールする場合は、コマンドレット パラメーターにその場所を含める必要があります。
+4.  **Windows SDK for Windows 8.1 をダウンロードする** [Windows Phone SDK](https://go.microsoft.com/fwlink/?LinkId=613525) (https://go.microsoft.com/fwlink/?LinkId=613525) をダウンロードしてインストールします。 ポータル サイト アプリに付属の PowerShell スクリプトでは、既定のインストール場所 `${env:ProgramFiles(x86)}\Windows Kits\8.1`が使用される点に注意してください。 他の場所にインストールする場合は、コマンドレット パラメーターにその場所を含める必要があります。
 
 5.  **PowerShell を使用してアプリにコード署名をする** Windows SDK と Symantec エンタープライズ モバイル コード署名証明書がインストールされたホスト コンピューターで、管理者として **Windows PowerShell** を開き、Sign-WinPhoneCompanyPortal.ps1 ファイルに移動してスクリプトを実行します。
 
     **例 1**
 
-    ```
+    ```PowerShell
     .\Sign-WinPhoneCompanyPortal.ps1 -InputAppx 'C:\temp\CompanyPortal.appx' -OutputAppx 'C:\temp\CompanyPortalEnterpriseSigned.appx' -PfxFilePath 'C:\signing\cert.pfx' -PfxPassword '1234' -AetxPath 'C:\signing\cert.aetx'
     ```
     この例では、C:\temp\ にある CompanyPortal.appx に署名し、CompanyPortalEnterpriseSigned.appx を生成します。 PFX パスワード 1234 を使用して、PFX ファイルから発行者 ID を読み取ります。 同様に、cert.aetx ファイルからはエンタープライズ ID を読み取ります。
 
     **例 2**
 
-    ```
+    ```PowerShell
     .\Sign-WinPhoneCompanyPortal.ps1 -InputAppx 'C:\temp\CompanyPortal.appx' -OutputAppx 'C:\temp\CompanyPortalEnterpriseSigned.appx' -PfxFilePath 'C:\signing\cert.pfx' -PfxPassword '1234' -PublisherId 'OID.0.9.2342.19200300.100.1.1=1000000001, CN="Test, Inc.", OU=Test 1' -EnterpriseId 1000000001
     ```
     この例では、C:\temp\ にある CompanyPortal.appx に署名し、CompanyPortalEnterpriseSigned.appx を生成します。 PFX パスワード 1234 を使用して、指定された発行者 ID を使用します。
@@ -128,7 +128,7 @@ Windows および Windows Phone モバイル アプリを展開するのに使�
 
 1.  証明書の有効期限の約 14 日前に Symantec から送信される更新に関する電子メールを探します。 この電子メールには、エンタープライズ証明書の更新に関する Symantec から指示が記載されています。
 
-    Symantec 証明書の詳細については、[www.symantec.com](http://www.symantec.com) にアクセスするか、1-877-438-8776 または 1-650-426-3400 に電話をかけてください。
+    Symantec 証明書の詳細については、[www.symantec.com](https://www.symantec.com) にアクセスするか、1-877-438-8776 または 1-650-426-3400 に電話をかけてください。
 
 2.  Web サイト (例: [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)) に移動し、証明書に関連付けられている Symantec Publisher ID と電子メール アドレスを使用してログインします。 更新を開始するコンピューターは、証明書のダウンロードに使用するのと同じコンピューターである必要があります。
 
@@ -155,7 +155,7 @@ Intune をビジネス向け Microsoft ストアと統合していない場合�
 1. [ビジネス向け Microsoft ストア](https://www.microsoft.com/business-store)のアカウントにログインし、ポータル サイト アプリの**オフライン ライセンス** バージョンを取得します。  
 2. アプリが取得されたら、**[インベントリ]** ページでアプリを選択します。  
 3. **プラットフォーム**として **[Windows 10 all devices (Windows 10 のすべてのデバイス)]** を選択し、適切な**アーキテクチャ**を選択してダウンロードします。 このアプリは、アプリ ライセンス ファイルを必要としません。
-![ダウンロードする Windows 10 のすべてのデバイスと Architecture X86 Package のイメージ](./media/Win10CP-all-devices.png)
+![ダウンロード用 Windows 10 X86 パッケージの詳細の画像](./media/Win10CP-all-devices.png)
 4. [必要なフレームワーク] の下のすべてのパッケージをダウンロードします。 x86、x64、および ARM アーキテクチャ用に実行する必要があります。次に示すように、合計 9 個のパッケージのダウンロードが必要になる場合があります。
 
 ![ダウンロードする依存関係ファイルのイメージ ](./media/Win10CP-dependent-files.png)
@@ -164,7 +164,7 @@ Intune をビジネス向け Microsoft ストアと統合していない場合�
    ![APPXBUN ファイルと共に保存された依存関係フォルダーのイメージ](./media/Win10CP-Dependencies-save.png)
    2. 依存関係フォルダーに 9 つの依存関係パッケージを配置します。  
    依存関係がこの形式で配置されていないと、Intune はパッケージのアップロード時にこれらを認識、アップロードすることができます、次のエラーでアップロードが失敗します。  
-   ![このソフトウェア インストーラーに関する Windows アプリの依存関係がアプリケーション フォルダー内で見つかりませんでした。 このアプリケーションの作成と展開を続行できますが、不明な Windows アプリの依存関係が提供されるまでは実行されません。](./media/Win10CP-error-message.png)
+   ![エラー メッセージ - Windows アプリの依存関係を指定する必要があります。](./media/Win10CP-error-message.png)
 6. Intune に戻り、ポータル サイト アプリを新しいアプリとしてアップロードします。 これを必要なアプリとして対象の一連のターゲット ユーザーに展開します。  
 
 Intune がユニバーサル アプリ用に依存関係をどのように処理するかについて詳しくは、「[Deploying an appxbundle with dependencies via Microsoft Intune MDM (Microsoft Intune MDM 経由で依存関係を使用して appxbundle を展開する)](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)」ご覧ください。  

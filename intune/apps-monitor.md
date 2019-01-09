@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 457b5b97bd13caddb5c60836940dd491eac752f8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bff4e2b3afe684fe12243fa0f410728eb16eeaba
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181889"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53325179"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune でアプリの情報と割り当てを監視する
 
@@ -36,7 +36,7 @@ Intune には、管理しているアプリのプロパティを監視し、ア�
 5. アプリの一覧で、監視するアプリを選びます。 デバイスの状態とユーザーの状態の概要を含む、アプリ ウィンドウが表示されます。
 
 > [!NOTE]
-> **利用可能**として展開されている Android ストア アプリでは、そのインストール状態は報告されません。
+> **[使用可能]** として展開されている Android ストア アプリと **[登録の有無にかかわらず使用可能 ]** として展開されている Android LOB アプリでは、インストールのステータスを報告しません。
 
 ## <a name="app-overview-pane"></a>アプリ概要ウィンドウ
 

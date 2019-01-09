@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b4a45ac5a73d199ec883e3dda95a97a8f3c09d9a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fee473cd6cb6fa7e8a092ebd70192f2b7f8a8b84
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181518"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737935"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Microsoft Intune でのアプリ割り当ての組み込みと除外
 
@@ -50,7 +50,7 @@ Intune は、グループを除外するときに、ユーザーとデバイス�
 5. 割り当てるアプリを選びます。 ダッシュボードに、アプリについての情報が表示されます。 
 6. メニューの **[管理]** セクションで、**[割り当て]** を選びます。 
 
-    ![Intune でのアプリの割り当て](./media/apps-inc-exl-01.png)
+    ![アプリを割り当てるときにアプリの割り当てを含める](./media/apps-inc-exl-01.png)
 7. **[グループの追加]** を選んで、アプリに割り当てるユーザーのグループを追加します。 
 8. **[グループの追加]** ウィンドウで、使用可能な割り当ての種類から **[割り当ての種類]** を選びます。
 9. 割り当ての種類として **[登録の有無にかかわらず使用可能]** を選びます。

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 02f276c5ddcd77b2800eb7b83a269b47a0ba5233
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5180682489e693e49e8142d7912302bc8ea2f7a8
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180682"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429697"
 ---
-# <a name="intune-app-sdk-overview"></a>Intune App SDK の概要
+# <a name="microsoft-intune-app-sdk-overview"></a>Microsoft Intune App SDK の概要
 iOS と Android の両方で使用可能な Intune App SDK で、Intune アプリ保護ポリシーに対してご使用のアプリを有効にすることができます。 アプリの開発者が必要なコード変更が最小限に抑えられます。 SDK の機能の多くは、アプリの動作を変更せずに利用できます。 エンド ユーザーと IT 管理者のエクスペリエンスを向上させるために、API を利用してアプリの動作をカスタマイズし、アプリ側の処理が必要な機能を実現できます。
 
 アプリ保護ポリシーに対してアプリを有効にしたら、IT 管理者はそのポリシーを展開し、アプリ内の会社のデータを保護することができます。
@@ -75,4 +75,8 @@ IT 管理者は、アプリへのアクセスに、職場または学校のア�
 ### <a name="on-demand-application-vpn-connections-with-citrix-mvpn"></a>Citrix mVPN でのオンデマンドのアプリケーション VPN 接続 
 Citrix XenMobile MDX と Microsoft Intune を組み合わせ、デバイスとアプリを管理することができます。 この組み合わせにより、Citrix の mVPN テクノロジを使用し、Intune アプリの保護ポリシーでアプリを管理できるようになります。 Citrix は、iOS と Android 用の Intune App SDK、および iOS と Android 用の Intune アプリ ラッピング ツール(citrix フラグを含む) に統合されています。
  
-Citrix MDX の詳細については、「[About the MDX Toolkit](http://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html)」 (MDX ツールキットについて)、「[Citrix MDX app wrapper for iOS](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html)」 (iOS 用の Citrix MDX アプリ ラッパー) および「[Citrix MDX app wrapper for Android](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html)」 (Android 用の Citrix MDX アプリ ラッパー) を参照してください。
+Citrix MDX の詳細については、「[About the MDX Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html)」 (MDX ツールキットについて)、「[Citrix MDX app wrapper for iOS](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html)」 (iOS 用の Citrix MDX アプリ ラッパー) および「[Citrix MDX app wrapper for Android](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html)」 (Android 用の Citrix MDX アプリ ラッパー) を参照してください。
+
+## <a name="next-steps"></a>次の手順
+
+- [アプリ保護ポリシー](app-protection-policy.md)について確認してください。

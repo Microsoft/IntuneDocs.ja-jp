@@ -6,7 +6,7 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: b08746965c23c8d247a53bcd0b0844a24581b4e6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 730195b200448d529d2a56ac8e8a45548264de2d
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179092"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429646"
 ---
-#  <a name="intune-data-warehouse-api"></a>Intune データ ウェアハウス API
+#  <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune データ ウェアハウス API
 
 Intune データ ウェアハウス API を使用すると、コンピューターで読み取ることができる Intune データにアクセスし、普段使用する分析ツールに利用することができます。 API を使用して、企業のモバイル環境を分析するレポートを構築することができます。 API では OData プロトコルを使用しています。OData プロトコルは次の標準のパターンに従います。
 
@@ -66,6 +66,6 @@ OData で抽象データ モデルとプロトコルを定義し、任意のデ�
 
 「[Azure AD の認証シナリオ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)」を読んで、Azure AD の操作についてさらに詳しく学習します。
 
-[odata.org](http://www.odata.org) で OData のリソースを探します。
+[odata.org](https://www.odata.org) で OData のリソースを探します。
   
-[OData バージョン 4.0] (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html) で OData バージョン 4.0 標準を確認します。  
+[OData バージョン 4.0] (https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html) で OData バージョン 4.0 標準を確認します。  

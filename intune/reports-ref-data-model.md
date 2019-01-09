@@ -6,7 +6,7 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 228b662739d161a4f4d6d145746fc68e7c3b87e0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ce4689aaecd40d7d44f0064b1e951823fa0bb2c2
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188111"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738003"
 ---
-# <a name="data-warehouse-data-model"></a>データ ウェアハウス データ モデル
+# <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune データ ウェアハウスのデータ モデル
 
 Intune データ ウェアハウスは、データを毎日サンプリングし、常に変化するモバイル デバイス環境の履歴ビューを提供します。 ビューは時間に関連のあるエンティティで構成されます。
 
-## <a name="entities-entity-sets"></a>エンティティ: エンティティ セット
+## <a name="entities-entity-sets"></a>エンティティ:エンティティ セット
 
 このウェアハウスは、次の上位領域のデータを公開します。
 
@@ -48,7 +48,7 @@ Intune データ ウェアハウスは、データを毎日サンプリングし
   -  [現在のユーザー](reports-ref-current-user.md)
   -  [ユーザー デバイスの関連付け](reports-ref-user-device.md)
 
-## <a name="relationships-star-schema-model"></a>リレーションシップ: スタースキーマ モデル
+## <a name="relationships-star-schema-model"></a>リレーションシップ:スタースキーマ モデル
 
 このウェアハウスでは、エンティティがリレーションシップに分類されます。リレーションシップは、尋ねる質問の種類に応じたものです。 たとえば、社内で開発された Android アプリケーションのインストールの数を確認できます。 データ ウェアハウスの構造を使用して、モバイル環境を分析できます。 また、Microsoft Power BI などの分析ツールでデータ ウェアハウス データ モデルを使用して、視覚化と動的ダッシュボードを作成できます。
 
@@ -56,7 +56,7 @@ Intune データ ウェアハウスは、データを毎日サンプリングし
 
 スタースキーマ モデルは、柔軟性とデータ分析に合わせて最適化されているため、進化するモバイル環境を理解するために必要なレポートを作成できます。
 
-## <a name="time-daily-snapshots"></a>時間: 毎日のスナップショット
+## <a name="time-daily-snapshots"></a>時刻:毎日のスナップショット
 
 このウェアハウスは、Intune データのダウンストリームです。 Intune では、午前 0 時 (UTC) に毎日のスナップショットを取得し、ウェアハウスにスナップショットを保存します。 スナップショットの保有期間はファクト テーブルによって異なります。 7 日間や 30 日間、またはさらに長い期間のものもあります。
 

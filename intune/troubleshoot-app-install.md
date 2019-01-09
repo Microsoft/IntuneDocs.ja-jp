@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: b613f364-0150-401f-b9b8-2b09470b34f4
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 86f0892fe855201b9bdb28d61301353f6588954a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cd43bfda69b42fb81a72d520d169fe1785161f65
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188128"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53267013"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>アプリのインストールに関する問題のトラブルシューティング
 
@@ -84,6 +84,19 @@ Intune では、特定のユーザーのデバイスにインストールされ�
 |    ユーザーがアプリの更新の提案を拒否しました。 (0x87D13B63)    |    更新プロセス中、エンドユーザーがキャンセルをクリックしました。     |
 |    詳細不明のエラー (0x87D103E8)    |    詳細不明のインストール エラーが発生しました。 他のエラーが確認できなければ、結果的にこのエラーとなります。    |
 
+### <a name="other-installation-errors"></a>その他のインストール エラー
+
+|    エラー メッセージ/コード    |    説明    |
+|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0x80073CFF、0x80CF201C (クライアント エラー)    |    このアプリケーションをインストールするには、サイドローディング対応のシステムが必要です。 必ず、信頼できる署名を使用してアプリ パッケージに署名して、**AllowAllTrustedApps** ポリシーを有効にしたドメインに参加するデバイス、または **AllowAllTrustedApps** ポリシーを有効にした Windows サイドローディング ライセンスを持つデバイスにアプリ パッケージをインストールします。 詳細については、「[Troubleshooting packaging, deployment, and query of Windows Store apps (Windows ストア アプリのパッケージ化、展開、クエリのトラブルシューティング)](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting)」を参照してください。     |
+|    0x80073CF0    |    パッケージを開くことができませんでした。 次の原因が考えられます。<ul><li> パッケージが署名されていません。</li><li> 発行元の名前が、署名している証明書の件名と一致しません。</li></ul> 詳細については、**AppxPackagingOM** イベント ログを確認してください。 詳細については、「[Troubleshooting packaging, deployment, and query of Windows Store apps (Windows ストア アプリのパッケージ化、展開、クエリのトラブルシューティング)](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting)」を参照してください。    |
+|    0x80073CF3    |    パッケージは更新、依存関係、または競合の検証に失敗しました。 次の原因が考えられます。<ul><li> 受信パッケージがインストール済みのパッケージと競合しています。</li><li> 指定したパッケージの依存関係が見つかりません。</li><li> パッケージは正しいプロセッサ アーキテクチャをサポートしていません。</li></ul> 詳細については、**AppXDeployment-Server** イベント ログを確認してください。 詳細については、「[Troubleshooting packaging, deployment, and query of Windows Store apps (Windows ストア アプリのパッケージ化、展開、クエリのトラブルシューティング)](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting)」を参照してください。    |
+|    0x80073CFB    |    指定したパッケージは既にインストールされており、パッケージの再インストールがブロックされています。 既にインストールされているパッケージと同じではないパッケージをインストールしようとすると、このエラーが発生する可能性があります。 デジタル署名がパッケージにも含まれることを確認します。 パッケージを再ビルドまたは再署名すると、パッケージは以前にインストールしたパッケージとビット単位で同じではなくなります。 このエラーを修正するには、次のように 2 つの選択肢が考えられます。<ul><li> アプリケーションのバージョン番号を増やして、パッケージの再ビルドと再署名を行います。</li><li> システムのすべてのユーザーの古いパッケージを削除してから、新しいパッケージをインストールします。</li></ul> 詳細については、「[Troubleshooting packaging, deployment, and query of Windows Store apps (Windows ストア アプリのパッケージ化、展開、クエリのトラブルシューティング)](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting)」を参照してください。    |
+|    0x87D1041C    |    アプリケーションがインストールされましたが、検出されません。 アプリは Intune によって正常に展開され、その後、アンインストールされました。 アプリがアンインストールされる理由を次に示します。<ul><li> エンドユーザーが、アプリをアンインストールする。</li><li> パッケージ内の ID 情報が、不適切なアプリに対してデバイスが報告している内容と一致しない。</li><li>自己更新する MSI の場合、Intune 外部で更新された後に、製品のバージョンがアプリの情報と一致しない。</li></ul> ユーザーは、ポータル サイトからアプリを再インストールするように指示されます。 デバイスが次回チェックインするときに、必要なアプリが自動的に再インストールされることに注意してください。    |
+
+## <a name="troubleshooting-apps-from-the-microsoft-store"></a>Microsoft ストア アプリのトラブルシューティング
+
+トピック「[Troubleshooting packaging, deployment, and query of Microsoft Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx)」 (Microsoft ストア アプリのパッケージ化、展開、およびクエリのトラブルシューティング) に記載されている情報は、Microsoft ストアからアプリをインストールする際に発生する可能性がある一般的な問題のトラブルシューティングで役に立ちます (Intune を使用する場合、または他の手段を使用する場合に関係なく)。
 
 ## <a name="next-steps"></a>次の手順
 

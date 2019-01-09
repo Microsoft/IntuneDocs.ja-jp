@@ -1,12 +1,12 @@
 ---
 title: Windows 10 ポータル サイト アプリを手動で追加する
 titleSuffix: Microsoft Intune
-description: Windows 10 ポータル サイト アプリを手動で追加する方法について説明します。
+description: 従業員が Microsoft Store から自分の PC へ Windows 10 ポータル サイト アプリを手動で追加できる方法について説明します。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7808d9c189f429e15cdf916d18412ba951c7e696
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 755e836c5954b9cbbf3c7729755aaa25062710d8
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190270"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642593"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Microsoft Intune を使用して Windows 10 ポータル サイト アプリを手動で追加する
 
@@ -51,7 +51,7 @@ ms.locfileid: "52190270"
 
 7. **[ダウンロード]** を選択して、[必要なフレームワーク] の下のすべてのパッケージをダウンロードします。  
     このアクションは x86、x64、ARM アーキテクチャ用に実行する必要があります (パッケージは合計で 12 個)。
-8. ポータル サイト アプリを Intune にアップロードする前に、パッケージを次のように構成してフォルダー (C:\ポータル サイトなど) を作成します。
+8. ポータル サイト アプリを Intune にアップロードする前に、パッケージを次のように構成してフォルダー (C:\Company Portal など) を作成します。
    - C:\ポータル サイトにポータル サイト パッケージを配置します。 また、この場所に*依存関係*サブフォルダーも作成します。  
 
      ![APPXBUN ファイルと共に保存された依存関係フォルダー](./media/Win10CP-Dependencies-save.png)

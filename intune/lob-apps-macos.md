@@ -1,12 +1,12 @@
 ---
 title: macOS の基幹業務アプリを Microsoft Intune に追加する方法
 titlesuffix: ''
-description: Microsoft Intune への macOS の基幹業務 (LOB) アプリの追加について説明します。
+description: macOS の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法について学習します。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1b60610be892afd10ace568694b57cc18190eec1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 356f21067f0e0d625882822fd8747661d72005e8
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180011"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642661"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>macOS の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法
 

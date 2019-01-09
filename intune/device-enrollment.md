@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/13/2018
+ms.date: 12/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: e677b62c7610739079184bc5ef59e47544f833bb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 73caf328bd25cb31bacea6b964c1db7601f3aec6
+ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190219"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53570810"
 ---
 # <a name="what-is-device-enrollment"></a>デバイス登録とは
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -47,6 +47,7 @@ Intune では、従業員のデバイスやアプリ、従業員が会社のデ�
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#bring-your-own-device)** | [いいえ]| はい | [いいえ] | [詳細情報](./macos-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| [いいえ] |[いいえ] |[いいえ]  | [詳細情報](./device-enrollment-manager-enroll.md)|
+|**[DEP](#apple-device-enrollment-program)**|   はい |   省略可能 |  省略可能|[詳細情報](./device-enrollment-program-enroll-macos.md)|
 
 
 ## <a name="windows-enrollment-methods"></a>Windows の登録方法
@@ -56,10 +57,10 @@ Intune では、従業員のデバイスやアプリ、従業員が会社のデ�
 |**[BYOD](#bring-your-own-device)** | [いいえ] |  はい |   [いいえ] | [詳細情報](windows-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| [いいえ] |[いいえ] |[いいえ]  |[詳細情報](device-enrollment-manager-enroll.md)|
 |**自動登録** | [いいえ] |はい |[いいえ] | [詳細情報](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
-|**Autopilot** |はい |はい |[いいえ] | [詳細情報](enrollment-autopilot.md)]
+|**Autopilot** |はい |はい |[いいえ] | [詳細情報](enrollment-autopilot.md)
 |**一括登録** |[いいえ] |[いいえ] |[いいえ] | [詳細情報](./windows-bulk-enroll.md) |
-|**共同管理** |[いいえ] |はい |[いいえ] | [詳細情報](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)]
-|**GPO** |[いいえ] |はい |[いいえ] | [詳細情報](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)]
+|**共同管理** |[いいえ] |はい |[いいえ] | [詳細情報](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
+|**GPO** |[いいえ] |はい |[いいえ] | [詳細情報](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)
 
 
 ## <a name="android-enrollment-methods"></a>Android の登録方法
@@ -81,7 +82,7 @@ BYOD (私物デバイスの業務利用) デバイスには、個人の電話、
 デバイス登録マネージャー (DEM) は、複数の会社所有のデバイスを登録して管理するために使用される特別なユーザー アカウントです。 作成後は、マネージャーがポータル サイトをインストールし、多数のユーザーがいないデバイスを登録できます。 この種のデバイスは、POS アプリやユーティリティ アプリなどには適していますが、電子メールや会社のリソースにアクセスする必要があるユーザーには適していません。 DEM の詳細については[ここ](./device-enrollment-manager-enroll.md)を参照してください。 
 
 ### <a name="apple-device-enrollment-program"></a>Apple Device Enrollment Program
-Apple Device Enrollment Program (DEP) 管理では、ポリシーを作成し、DEP で購入および管理されている iOS デバイスに "無線で" 展開できます。 ユーザーが初めてデバイスの電源を入れて iOS Setup Assistant を実行した際に、デバイスが登録されます。 この方法は、iOS 監視対象モードをサポートしているため、特定の機能でデバイスを構成することができます。
+Apple Device Enrollment Program (DEP) 管理では、ポリシーを作成し、DEP で購入および管理されている iOS および macOS デバイスに "無線で" 展開できます。 ユーザーが初めてデバイスの電源を入れて Setup Assistant を実行した際に、デバイスが登録されます。 この方法は、iOS 監視対象モードをサポートしているため、特定の機能でデバイスを構成することができます。
 
 iOS DEP 登録の詳細については、以下をご覧ください。
 

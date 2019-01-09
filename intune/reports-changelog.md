@@ -1,7 +1,7 @@
 ---
 title: Intune データ ウェアハウスの変更ログ
 titlesuffix: Microsoft Intune
-description: Intune のデータ ウェアハウス API の変更一覧。
+description: このトピックには、Microsoft Intune データ ウェアハウス API の変更の一覧が記載されています。
 keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: dfdbaffeb8872e8b121d138ee0aca0315279e718
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0f39b0cb758c8c62da2e76ef8eaff07264ff3f3a
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189947"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642763"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune データ ウェアハウス API の変更ログ
 
@@ -95,4 +95,4 @@ _リリース日: 2017 年 10 月_
 
 ## <a name="next-steps"></a>次の手順
  - [週ごとにまとめた Intune の新機能](whats-new.md)を参照してください。 今後の変更、サービスに関する重要なお知らせ、過去のリリースに関する情報も確認できます。
- - [Microsoft Intune のブログ](http://go.microsoft.com/fwlink/?LinkID=273882)を参照してください。
+ - [Microsoft Intune のブログ](https://go.microsoft.com/fwlink/?LinkID=273882)を参照してください。

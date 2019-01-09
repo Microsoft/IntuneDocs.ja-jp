@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 637fe2d2c764cf78e67e728bfa77567cf12e88ce
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 76a16df06c085eb3b40a3a48d4398a46233a09b8
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031995"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626086"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Android エンタープライズ キオスク デバイスの Intune 登録の設定
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android は、企業所有、単一用途のソリューションが設定されたキオスク スタイルのデバイスに対応しています。 そのようなデバイスは、デジタル サイネージ、チケット印刷、在庫管理など、1 つの目的のために使用されます。 管理者はデバイスの使用を厳しく管理し、限られたアプリと Web リンクのみ許可します。 また、ユーザーがデバイスに他のアプリを追加したり、他の操作を行ったりできないようになっています。
+Android は、[専用デバイス](https://developers.google.com/android/work/overview#company-owned-devices-for-dedicated-use)のソリューションが設定されたキオスク スタイルのデバイスに対応しています。 そのようなデバイスは、デジタル サイネージ、チケット印刷、在庫管理など、1 つの目的のために使用されます。 管理者はデバイスの使用を厳しく管理し、限られたアプリと Web リンクのみ許可します。 また、ユーザーがデバイスに他のアプリを追加したり、他の操作を行ったりできないようになっています。
 
 Intune では、Android キオスク デバイスにアプリや設定を展開できます。 Android エンタープライズに関する特定の詳細については、「[Android enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012)」 (Android エンタープライズの要件) を参照してください。
 

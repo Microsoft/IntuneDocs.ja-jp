@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 5a28cdcf4d19aec62cd05808f4fb3cda68e083ea
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 3f53ce0b2afd214dec98082c23f7187b4e69317b
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032063"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734240"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Intune でアプリ保護ポリシーのアクセス アクションを利用し、データを選択的にワイプする
 
@@ -110,7 +110,7 @@ Android の場合、**[設定]** ドロップダウンを利用して次の設�
 
 **[OS の最小バージョン]** 設定など、場合によっては、バージョン番号によっては該当するアクションをすべて実行するように設定を構成できます。 
 
-![Intune アプリ保護アクセス アクションのスクリーンショット - OS の最小バージョン](./media/apps-selective-wipe-access-actions05.png)
+![アプリ保護アクセス アクションのスクリーンショット - OS の最小バージョン](./media/apps-selective-wipe-access-actions05.png)
 
 設定がすべて構成されると、読み取り専用ビューで行が表示されますが、これはいつでも編集できます。 また、行にはドロップダウンがあり、**[設定]** 列で選択できように見えます。 既に構成されており、複数のアクションを許可しない設定はドロップダウンで選択できません。
 

@@ -1,12 +1,12 @@
 ---
 title: データ ウェアハウスのユーザー エンティティ タイムライン
 titlesuffix: Microsoft Intune
-description: Intune データ ウェアハウスがタイムライン内のユーザーを表す方法について説明します。
+description: Microsoft Intune データ ウェアハウスにおけるタイムライン内のユーザーの表記方法について説明します。
 keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 4493ea8442642c09ee7a94b9b73fe0412c015649
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d270aef9bd7102148466006f4057f1c598b02b0e
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189913"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642703"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Microsoft Intune データ ウェアハウスのユーザー有効期間の表記
 

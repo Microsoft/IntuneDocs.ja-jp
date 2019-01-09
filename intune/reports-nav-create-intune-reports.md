@@ -6,7 +6,7 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 13054bcaf885173e768fefb585cb71f266e9ca9e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 02bf1672db70bce57e527a0992f6a979b2e099e7
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184660"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429578"
 ---
-# <a name="use-the-intune-data-warehouse"></a>Intune データ ウェアハウスを使用する
+# <a name="use-the-microsoft-intune-data-warehouse"></a>Microsoft Intune データ ウェアハウスを使用する
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -31,6 +31,8 @@ Intune データ ウェアハウスを使用して、社内のモバイル環境
 -   ライセンス購入の最適化に利用できる Intune に登録されているユーザーの傾向
 -   モバイル デバイスの状態を確認できるアプリと OS バージョンの内訳
 -   ポリシーの更新をスムーズにロールアウトできる登録とデバイス コンプライアンスの傾向
+
+## <a name="data-warehouse-benefits"></a>データ ウェアハウスの利点
 
 データ ウェアハウスを使用すると、モバイル環境について Azure Portal よりも詳細な情報にアクセスできます。 Intune データ ウェアハウスでは、次の情報にアクセスできます。
 
@@ -45,7 +47,7 @@ Intune データ ウェアハウスを使用して、社内のモバイル環境
 > クエリ パラメーター  `api-version=v1.0` を設定することにより、Intune データ ウェアハウスの v1.0 バージョンを使用できるようになりました。 Data Warehouse 内のコレクションに対する更新は本質的に追加であり、既存のシナリオが使用できなくなることはありません。<br><br>
 > データ ウェアハウスの最新機能については、ベータ バージョンを使用して試すことができます。 ベータ バージョンを使用するには、URL にクエリ パラメーター  `api-version=beta` を含める必要があります。 ベータ バージョンは、サポートされるサービスとして一般公開される前の機能を提供しています。 Intune に新しい機能が追加されると、ベータ バージョンの動作とデータ コントラクトが変わる可能性があります。 カスタム コードまたはレポート ツールがベータ バージョンに依存していると、今後の更新プログラムで使用できなくなる可能性があります。
 
-**次のステップ**
+## <a name="next-steps"></a>次の手順
 
 - リンクを取得し、Power BI を使用して分析します。 手順については、「[Connect to the Intune Data Warehouse with Power BI](reports-proc-get-a-link-powerbi.md)」(Power BI で Intune データ ウェアハウスに接続する) を参照してください。
 - リンクを使用して Power BI でカスタム レポートを作成します。 方法は、「[Power BI で OData フィードからレポートを作成する](reports-proc-create-with-odata.md)」を参照してください。

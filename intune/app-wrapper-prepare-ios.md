@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 26bf759722b5cb92bda28b0e60c9365a7edc7710
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 94e4f955a57f5a505bfbbdc84ae236bbfb85fe8b
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112874"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738054"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために iOS アプリを準備する
 
@@ -100,7 +100,7 @@ Intune によってラップされたアプリを配布するには、次が必�
 
 4. **[Certificates, IDs & Profiles]** (証明書、ID、プロファイル) をクリックします。
 
-   ![Azure Developer ポータル](./media/iOS-signing-cert-1.png)
+   ![Azure Developer ポータル - [Certificates, IDs & Profiles] (証明書、ID、プロファイル)](./media/iOS-signing-cert-1.png)
 
 5. をクリックして ![右上隅の Apple Developer ポータルのプラス記号をクリックして、](./media/iOS-signing-cert-2.png) iOS 証明書を追加します。
 
@@ -125,7 +125,7 @@ Intune によってラップされたアプリを配布するには、次が必�
 
 11. 上記の Apple Developer サイトの指示に従い、CSR ファイルを作成します。 macOS コンピューターに CSR ファイルを保存します。
 
-    ![キーチェーン アクセスで証明機関から証明書を要求する](./media/iOS-signing-cert-6.png)
+    ![要求する証明書の情報を入力する](./media/iOS-signing-cert-6.png)
 
 12. Apple Developer サイトに戻ります。 **[続行]** をクリックします。 それから、CSR ファイルをアップロードします。
 
@@ -141,7 +141,7 @@ Intune によってラップされたアプリを配布するには、次が必�
 
 16. 情報ウィンドウが表示されます。 一番下までスクロールし、**[Fingerprints]** (指紋) ラベルの下を確認します。 アプリ ラッピング ツールの "-c" 引数として使用するため、**[SHA1]** 文字列 (図ではぼかしています) をコピーします。
 
-    ![証明書をキーチェーンに追加する](./media/iOS-signing-cert-9.png)
+    ![iPhone 情報 - [Fingerprints] (指紋) の [SHA1] 文字列](./media/iOS-signing-cert-9.png)
 
 
 
@@ -179,7 +179,7 @@ Intune によってラップされたアプリを配布するには、次が必�
 
 macOS ターミナルを開き、次のコマンドを実行します。
 
-```
+```bash
 /Volumes/IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
 ```
 
@@ -188,7 +188,7 @@ macOS ターミナルを開き、次のコマンドを実行します。
 
 **例:** 次のコマンド例では、MyApp.ipa という名前のアプリでアプリ ラッピング ツールを実行しています。 プロビジョニング ファイルと署名証明書の SHA-1 ハッシュが指定され、ラッピングされたアプリに署名するために使用されます。 出力アプリ (MyApp_Wrapped.ipa) が作成され、ユーザーのデスクトップ フォルダーに格納されます。
 
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true
 ```
 
@@ -289,7 +289,7 @@ iOS では、アプリへの署名に元々使用されたものとは異なる�
 
 3.  次のスクリプトをコンソールに入力し、アプリ制限出力の保存ログをフィルター処理します。
 
-    ```
+    ```bash
     grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
     ```
     Microsoft にフィルター処理したログを送信できます。
@@ -368,20 +368,20 @@ iOS 用アプリ ラッピング ツールで権利のエラーが表示され�
 
 3.  codesign ツールを使用して .app バンドルの権利を確認します。`YourApp.app` は .app バンドルの実際の名前です。
 
-    ```
+    ```bash
     $ codesign -d --entitlements :- "Payload/YourApp.app"
     ```
 
 4.  セキュリティ ツールを使用して、アプリに組み込まれているプロビジョニング プロファイルの権利を確認します。`YourApp.app` は .app バンドルの実際の名前です。
 
-    ```
+    ```bash
     $ security -D -i "Payload/YourApp.app/embedded.mobileprovision"
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>–e パラメーターを使用してアプリから権利を削除する
 このコマンドは、権利ファイルに含まれていないアプリで有効になっているすべての機能を削除します。 アプリが使用している権利を削除すると、アプリは損なわれます。 欠落している機能を削除する例とは、既定ですべての機能を備えているベンダー製のアプリがある場合です。
 
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
 ```
 
@@ -416,12 +416,12 @@ iOS 用アプリ ラッピング ツールで権利のエラーが表示され�
 通常のアプリ ラッピング コマンドを実行するときに、`-citrix` フラグを追加するだけです。 現在、`-citrix` フラグの引数はありません。
 
 **使用形式**:
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
 ```
 
 **コマンド例**:
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
 

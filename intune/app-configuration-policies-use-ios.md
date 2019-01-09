@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dd18b882af8c685bb640468ef7076ed6317126a5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 685803f6ef30994a943969e3642bd8349dcf9f6e
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184609"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53324941"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>管理対象の iOS デバイス用アプリ構成ポリシーを追加する
 
@@ -100,14 +100,14 @@ Microsoft Intune には、アプリに固有の構成設定が用意されてい
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>複数 ID アプリで構成済みの組織アカウントのみを許可する 
 
-Android デバイスでは、次のキー/値ペアを使用します。
+iOS デバイスでは、次のキー/値ペアを使用します。
 
 | **Key** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **値** | <ul><li>**[有効]**: [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) キーによって定義された管理対象のユーザー アカウントのみが許可されます。</li><li>**[無効]** (**[有効]** と大文字小文字を問わず一致しないすべての値): すべてのアカウントが許可されます。</li></ul> |
+| **値** | <ul><li>**有効**: [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) キーによって定義されたマネージド ユーザー アカウントのみが許可されます。</li><li>**[無効]** (**[有効]** と大文字小文字を問わず一致しないすべての値): すべてのアカウントが許可されます。</li></ul> |。
 
    > [!NOTE]
-   > 複数 ID で構成された組織アカウントのみを許可する場合は、OneDrive for iOS 10.34 以降、および Outlook for iOS 2.99.0 以降を使用する必要があります。
+   > 複数 ID で構成された組織アカウントのみを許可する場合は、必ず OneDrive for iOS 10.34 以降、および Outlook for iOS 2.99.0 以降を使用すると共に、アプリが [Intune アプリ保護ポリシー](app-protection-policy.md)の対象になっている必要があります。
 
 ## <a name="enter-xml-data"></a>XML データを入力する
 
@@ -123,7 +123,7 @@ XML プロパティ リストの詳細情報:
 
 アプリ構成ファイルを作成する場合、この形式を使用して次の値を 1 つ以上指定できます。
 
-```
+```xml
 <dict>
   <key>userprincipalname</key>
   <string>{{userprincipalname}}</string>

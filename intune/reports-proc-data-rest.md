@@ -1,12 +1,12 @@
 ---
 title: REST クライアントを使用してデータ ウェアハウス API からデータを取得する
 titlesuffix: Microsoft Intune
-description: RESTful API を使用し、Intune データ ウェアハウスからデータを取得します。
+description: このトピックでは、RESTful API を使って Microsoft Intune データ ウェアハウスからデータを取得する方法について説明します。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: bcd4d9177bcefc1e026bc55831e589a5bcb57105
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 893e20652af68ec7f33c733376252a937f9584dc
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185995"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642882"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST クライアントを使用して Intune データ ウェアハウス API からデータを取得する
 

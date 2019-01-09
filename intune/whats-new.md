@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/30/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 06031b8085e50caa2092287c97b3eab0ead366ee
-ms.sourcegitcommit: 5e4c7da8ce62d5a5720316ef4068c1920f8f5b67
+ms.openlocfilehash: 3f0283b07c4efd03800f21aadba2cc53beffec68
+ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53200608"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53553692"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -45,11 +45,20 @@ ms.locfileid: "53200608"
 
 ## <a name="week-of-december-10-2018"></a>2018 年 12 月 10 日の週
 
-### <a name="microsoft-auto-update-version-450-required-for-macos-devices----3503442---"></a>macOS デバイスに必要な Microsoft Auto Update 4.50 <!-- 3503442 -->
+### <a name="app-management"></a>アプリ管理
+
+#### <a name="updates-for-application-transport-security----748318---"></a>Application Transport Security 対応のための更新 <!-- 748318 -->
+
+Microsoft Intune では、クラス最高の暗号化を提供する、既定の状態でも安全であることを保証する、また、Microsoft Office 365 などの他の Microsoft サービスと連携することを目的に、トランスポート層セキュリティ (TLS) 1.2 以降をサポートしています。 この要件を満たすために、iOS と macOS のポータル サイトには、やはり TLS 1.2 以降が要求されている Apple の改定後の Application Transport Security (ATS) 要件が適用されます。 ATS では、HTTPS 経由で行われるアプリ通信すべてに、より厳格なセキュリティ保護が適用されます。 この変更により、iOS および macOS のポータル サイト アプリを使用している Intune ユーザーが影響を受けます。 詳しくは、[Intune サポートのブログ](https://aka.ms/compportalats)をご覧ください。
+
+#### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>256 ビット暗号化キーをサポートするようになる Intune App SDK <!-- 1832174 -->
+アプリ保護ポリシーによって暗号化が有効化されると、Android 用 Intune App SDK では現在、256 ビット暗号化キーが使用されます。 古いバージョンの SDK を使用するコンテンツやアプリとの互換性のため、SDK では引き続き 128 ビット キーのサポートが提供されます。
+
+### <a name="microsoft-auto-update-version-450-required-for-macos-devices----3503442---"></a>macOS デバイスに必要な Microsoft Auto Update バージョン 4.5.0 <!-- 3503442 -->
 ポータル サイトおよびその他の Office アプリケーション用の更新プログラムの受信を継続するには、Intune によって管理されている macOS デバイスを Microsoft Auto Update 4.5.0 にアップグレードする必要があります。 ユーザーは自分の Office アプリに対してこのバージョンを既に使用している可能性があります。
 
 ### <a name="intune-requires-macos-1012-or-later----2827778---"></a>Intune には macOS 10.12 以降が必要です<!-- 2827778 -->
-Intune には、macOS バージョン 10.12 以降が必要になりました。 以前の macOS バージョンが使用されているデバイスでは、ポータル サイトを使用して Intune に登録することはできません。 サポートを受け、新しい機能を受け取るには、macOS 10.12 以降にデバイスをアップグレードし、ポータル サイト アプリを最新版にアップグレードする必要があります。
+Intune には、macOS バージョン 10.12 以降が必要になりました。 以前の macOS バージョンが使用されているデバイスでは、ポータル サイトを使用して Intune に登録することはできません。 サポートを受けて新しい機能を利用するには、デバイスを macOS 10.12 以降にアップグレードすると共に、ポータル サイト アプリを最新版にアップグレードする必要があります。
 
 ## <a name="week-of-november-26-2018"></a>2018 年 11 月 26 日の週
 
@@ -103,6 +112,23 @@ Intune のアプリ保護に関する設定とボタンのラベルを、理解�
 配信の最適化は、Windows 10 以降での新しい構成プロファイルです。 この機能では、組織内のデバイスにソフトウェア更新プログラムを配信するためのエクスペリエンスが、いっそう合理化されています。 また、この更新では、構成プロファイルを使用して新規および既存の更新プログラムのリングで設定を配信することもできます。
 配信の最適化の構成プロファイルを構成するには、[Windows 10 (以降) での配信の最適化の設定](delivery-optimization-windows.md)に関するページをご覧ください。
 
+#### <a name="new-device-restriction-settings-added-to-ios-and-macos-devices----2827760---"></a>iOS および macOS デバイスに追加された新しいデバイス制限の設定 <!-- 2827760 -->
+この更新プログラムには、iOS 12 と共にリリースされた iOS および macOS デバイス用の新しい設定が含まれています。
+
+**iOS の設定**:  
+- ［全般］:アプリ削除をブロックする (監視モードのみ)
+- ［全般］:USB 制限モードをブロックする (監視モードのみ)
+- ［全般］:日付と時刻自動設定を強制する (監視モードのみ)
+- ［パスワード］:パスワード オートフィルをブロックする (監視モードのみ)
+- ［パスワード］:パスワード近接要求をブロックする (監視モードのみ)
+- ［パスワード］:パスワード共有をブロックする (監視モードのみ)
+
+**macOS の設定**:  
+- ［パスワード］:パスワード オートフィルをブロックする
+- ［パスワード］:パスワード近接要求をブロックする
+- ［パスワード］:パスワード共有をブロックする
+
+これらの設定の詳細については、[iOS](device-restrictions-ios.md) および [macOS](device-restrictions-macos.md) デバイスの制限の設定を参照してください。
 
 ### <a name="device-enrollment"></a>デバイスの登録
 
@@ -1143,35 +1169,6 @@ Intune for Education のお客様には、次の 2 つの動的な Azure Active 
 
 現在、前述の Intune on Azure の Azure AD グループにポリシーを割り当てている場合、代わりに Intune for Education コンソールの All Users\(すべてのユーザー\) と All Devices\(すべてのデバイス\) にそれらの割り当て開始してください。 Azure AD グループがコンソールで古いと名前変更されていたら、Azure AD でポリシーを割り当てるのを停止してください。 現在、名前変更されたグループを他の目的で使用していない場合、それらは削除してください。
 
-
-### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>変更の計画: <!--2970975--> 年 12 月、Intune は macOS 10.12 以降対応になります。 
-
-Apple が macOS 10.14 を公開しました。 それに続いて、2018 年 12 月、Intune は macOS 10.12 以降対応になります。 
-
-#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
-
-12 月以降、macOS 10.11 以前がインストールされているデバイスを使用しているエンド ユーザーは Intune に登録する目的でポータル サイトを使用できなくなります。 引き続きサポートを受け、新しい機能を受け取るには、macOS 10.12 以降にデバイスをアップグレードし、ポータル サイト アプリを最新版にアップグレードする必要があります。 
-
-macOS 10.12 以降は現在、以下でサポートされています。 
-- MacBook (2009 年後半以降) 
-- iMac (2009 年後半以降)
-- MacBook Air (2010 年後半以降)  
-- MacBook Pro (2010 年後半以降) 
-- Mac Mini (2010 年後半以降) 
-- Mac Pro (2010 年後半以降) 
-
-12 月以降、上記の一覧にある以外のデバイスをお持ちのエンドユーザーは、macOS 向けポータル サイト アプリの最新版にアクセスできなくなります。 macOS 10.12 以前のサポートのないバージョンを実行している既存の登録デバイスは引き続き管理対象であり、Intune 管理コンソールに表示されます。
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
-
-- 2018 年 12 月までに、サポートされる OS バージョンにデバイスをアップグレードすることがエンド ユーザーに求められます。 
-- 影響を受けるデバイスまたはユーザーについては、Azure コンソールの Intune レポートで確認してください。 [デバイス]、[すべてのデバイス]、の順に移動し、[OS] で絞り込みます。 組織の人で、macOS 10.11 を実行しているデバイスを持つ人を特定するのに役立つ列を追加できます。 
-- ハイブリッド モバイル デバイス管理 (MDM) を使用している場合、Configuration Manager コンソールで [資産とコンプライアンス]、[デバイス] の順に選択し、列を右クリックして [オペレーティング システム] 列と [クライアント バージョン] 列を追加し、OS で絞り込みます。 ハイブリッド MDM が非推奨になりました。できるだけ早く、Azure での Intune に移行してください。 
- 
-#### <a name="additional-information"></a>追加情報
-詳細については、「[ポータル サイト アプリで Intune に macOS デバイスを登録する](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)」を参照してください。
- 
-
 ### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>変更の計画: Premier のお客様のための新しい Intune サポート エクスペリエンス 
 2018 年 12 月 4 日の更新プログラム: Microsoft ではこのプロセスの改善を試みています。そのため、MPO でのサポート要求の作成は 12 月 3 日ではなく後日、無効にされます。 メッセージ センターを通してお知らせすると共に、この変更のタイムラインを共有するためにこの投稿をすぐに更新します。
 
@@ -1204,28 +1201,3 @@ Intune では、Android 4.4 以降のデバイスについて使用可能なパ�
 #### <a name="additional-information"></a>追加情報
 https://aka.ms/PasswordSettings 
 
-### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple の要求による Application Transport Security 対応のための更新<!--748318-->
-Apple は、Application Transport Security (ATS) の特定の要件を適用すると発表しました。 ATS では、HTTPS 経由で行われるアプリ通信すべてに、より厳格なセキュリティ保護が適用されます。 この変更により、iOS ポータル サイト アプリを使用している Intune ユーザーが影響を受けます。 詳細については、[Intune サポート ブログ](https://aka.ms/compportalats)を参照してください。
-
-### <a name="plan-for-change-intune-moving-to-tls-12"></a>変更の計画: Intune での TLS 1.2 への移行
-2018 年 10 月 31 日以降、Intune では、サービスが既定でより安全であることを保障するため、また Microsoft Office 365 などの他の Microsoft 製品と並んでクラス最高の暗号化を提供できるよう、トランスポート層セキュリティ (TLS) プロトコル バージョン 1.2 をサポートするようになりました。 Office では、この変更を MC128929 でご連絡しています。
-
-ポータル サイトも 2018 年 10 月 31 日に TLS 1.2 対応になります。
-
-#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
-2018 年 10 月 31 日以降、Intune では TLS プロトコル バージョン 1.0 または 1.1 はサポートしなくなります。 問題なく Intune に接続できるようにするには、すべてのクライアントとサーバー、およびブラウザーとサーバーの組み合わせで、接続を確保するために TLS バージョン 1.2 を使用する必要があります。 これらの変更は Intune ではサポートされていないが、引き続き Intune からポリシーを受け取っていて TLS バージョン 1.2 を使用できないエンド ユーザー デバイスには影響することに注意してください。 これには、Android 4.3 以前を実行するデバイスも含まれます。 影響を受けるデバイスやブラウザーの一覧については、以下の「追加情報」を参照してください。
-
-2018 年 10 月 31 日以降、古い TLS のバージョンの使用に関連した問題が発生する場合、解決策の一環として TLS 1.2 に更新するか、TLS 1.2 をサポートするデバイスに更新する必要があります。
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
-環境から TLS 1.0 と 1.1 の依存関係を積極的に削除し、可能な場合にはオペレーティング システム レベルで TLS 1.0 と 1.1 を無効にすることをお勧めします。 今日、TLS 1.2 への移行を計画しましょう。 現在 Intune ではサポートされていないが、ポリシーを依然受け取っていて、TLS バージョン 1.2 では通信できないデバイス一覧を以下のサポートのブログ投稿で確認してください。 会社のリソースにアクセスできなくなることを、エンド ユーザーに通知する必要がある場合があります。
-
-**追加情報**: [Intune では TLS 1.2 に移行して暗号化に対応](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
-
-
-
-## <a name="see-also"></a>関連項目
-* [Microsoft Intune のブログ](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [クラウド プラットフォームのロードマップ](https://www.microsoft.com/cloud-platform/roadmap)
-* [ポータル Web サイトの UI の新機能](whats-new-app-ui.md)
-* [以前の月の新機能](whats-new-archive.md)
