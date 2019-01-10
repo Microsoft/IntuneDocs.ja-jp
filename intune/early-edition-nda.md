@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/3/2018
+ms.date: 01/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,14 +17,14 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 21d89d97355430f071763391d69fe332cf3ef369
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 94125ced318f304e5b2bdc8f09472280fc05b08a
+ms.sourcegitcommit: 662afec5e87639a7f541bb89700cc0fec5037bb0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642899"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54069355"
 ---
-# <a name="the-early-edition-for-microsoft-intune---december-2018"></a>Microsoft Intune の初期エディション - 2018 年 12 月
+# <a name="the-early-edition-for-microsoft-intune---january-2019"></a>Microsoft Intune の初期エディション - 2019 年 1 月
 
 > [!Note]
 > NDA 通知: Intune に関して以下の機能が現在開発されています。 この情報は、NDA に基づき、非常に限られた範囲で共有されます。 Twitter、UserVoice、Reddit などの、ソーシャル メディアやパブリック Web サイトには、この情報を投稿しないでください。 
@@ -40,6 +40,45 @@ ms.locfileid: "53642899"
 -->
  
 ## <a name="intune-in-the-azure-portal"></a>Azure Portal での Intune
+
+<!-- 1901 start -->
+
+### <a name="android-enterprise-apps----1352553----"></a>Android エンタープライズ アプリ<!-- 1352553  -->
+Microsoft Intune からマネージド Google Play アプリを削除できます。 マネージド Google Play アプリを削除するには、Azure portal で Microsoft Intune を開き、**[クライアント アプリ]** > **[アプリ]** の順に選択します。 アプリの一覧から、マネージド Google Play アプリの右側にある省略記号 (...) を選択し、表示された一覧で **[削除]** を選択します。 アプリの一覧からマネージド Google Play アプリを削除すると、そのマネージド Google Play アプリは自動的に未承認になります。
+
+### <a name="managed-google-play-app-type----1352580---"></a>マネージド Google Play アプリの種類<!-- 1352580 -->
+**マネージド Google Play** アプリの種類では、特定の[マネージド Google Play アプリ](https://play.google.com/work/search?q=microsoft&c=apps)を Intune に追加できます。 Intune の管理者は、Intune でマネージド Google Play アプリを参照、検索、承認、同期および割り当てできます。 マネージド Google Play コンソールに別途移動する必要がなく、また再認証する必要もありません。 Intune で、**[クライアント アプリ]** > **[アプリ]** > **[追加]** を選択します。 **[アプリケーションの種類]** 一覧で、アプリの種類として **[マネージド Google Play]** を選択します。
+
+### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>会社が所有する完全に管理された Android デバイスのサポートのプレビュー <!-- 1574342  -->
+Intune では、完全に管理された Android デバイス、つまりデバイスが IT によって厳格に管理され、個々のユーザーと関連付けられている、会社所有の "デバイス所有者" シナリオがサポートされます。 これにより、管理者は、デバイス全体を管理し、仕事用プロファイルでは利用できない拡張範囲のポリシー制御を適用し、managed Google Play からのみアプリをインストールするようにユーザーを制限することができます。 完全に管理された Android デバイスを設定するには、**[デバイスの登録]** > **[Android の登録]** > **[Corporate-owned, fully managed user devices]\(会社が所有する完全に管理されたユーザー デバイス\)** に移動します。 なお、この機能はプレビュー段階です。 証明書、コンプライアンス、および条件付きのアクセスなど、一部の Intune 機能は、現在 Android の完全に管理されたユーザー デバイスでは利用できません。
+
+### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----16726660----"></a>オンラインでライセンスされたビジネス向け Microsoft Store アプリの展開 <!-- 16726660  -->
+オンラインでライセンスされた必要なビジネス向け Microsoft Store アプリをデバイスのコンテキストで割り当てることができます。 このようにして、ビジネス向け Microsoft Store アプリを展開すると、デバイス上のすべてのユーザーにアプリをインストールできます。 対象は Windows 10 RS4 以上のデスクトップ デバイスのみです。 デバイスのコンテキストでインストールするオプションは、MSFB オンラインのライセンスされたアプリのクライアント アプリの割り当てページにあります。
+
+### <a name="configure-profile-to-skip-some-screens-during-setup-assistant----2276470----"></a>セットアップ アシスタント中、一部の画面をスキップするようにプロファイルを構成する <!-- 2276470  -->
+macOS の登録プロファイルの作成時、ユーザーにセットアップ アシスタントで表示される次のいずれかの画面をスキップするよう構成できます。
+- Android 移行
+- ディスプレイの色調
+- プライバシー
+- iCloudStorage
+
+### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522----"></a>Autopilot プロファイルを [すべてのデバイス] 仮想グループに割り当てる <!--2715522  -->
+Autopilot プロファイルを [すべてのデバイス] 仮想グループに割り当てられるようになります。 これを行うには、**[デバイスの登録]** > **[Windows の登録]** > **[Deployment Profiles]\(展開プロファイル\)** の順に選択し、プロファイルを選択し、**[割り当て]**、**[割り当て先]** の順に進み、**[すべてのデバイス]** を選択します。 Autopilot プロファイルについて詳しくは、「[Windows Autopilot を使用して Windows デバイスを登録する](enrollment-autopilot.md)」をご覧ください。
+
+### <a name="customize-wallpaper-on-supervised-ios-devices-using-a-device-configuration-profile----2809324----"></a>デバイスの構成プロファイルを使用した監視対象の iOS デバイスの壁紙のカスタマイズ <!-- 2809324  -->
+iOS デバイス用のデバイス構成プロファイルを作成するとき、**[デバイスの構成]** > **[プロファイル]** > **[プロファイルの作成]** > **プラットフォーム用の iOS** > プロファイルの種類用の **[デバイスの制限]** で一部の設定を許可したり制限できます。 この更新には、管理者が .png、.jpg、または .jpeg 画像を壁紙として使用したり、画像をプレビューしたり、壁紙をユーザーが変更するのをブロックする新しい**壁紙**の設定があります。 壁紙の設定は、監視対象のデバイスにのみ適用できます。 現在の設定の一覧については、[iOS デバイスの制限設定](device-restrictions-ios.md)に関するページを参照してください。
+
+### <a name="toast-notifications-for-win32-apps----3136566-----"></a>Win32 アプリのトースト通知 <!-- 3136566   -->
+アプリ割り当てごとに、エンドユーザーにトースト通知が表示されるのを抑制することができます。 Intune で **[クライアント アプリ]** > **[アプリ]**> アプリを選択 > **[Assignemnts]\(割り当て\)** > **[グループを含める]** を選択します。 
+
+### <a name="contact-sharing-via-bluetooth-is-removed-in-device-restrictions--device-owner-for-android-enterprise----3598396---"></a>Android エンタープライズの [デバイスの制限] > [デバイスの所有者] での [Bluetooth 経由での連絡先の共有] の削除 <!-- 3598396 -->
+Android エンタープライズ デバイス用にデバイスの制限プロファイルを作成した場合、**[Bluetooth 経由での連絡先の共有 ]** 設定があります。 この更新では、**[Bluetooth 経由での連絡先の共有]** の設定が削除されます (**[デバイスの構成]** > **[プロファイル]** > **[プロファイルの作成]** > **プラットフォーム用の Android エンタープライズ** > **[デバイスの制限] > プロファイルの種類の [デバイスの所有者]** > **[全般]**)。 
+
+**[Bluetooth 経由での連絡先の共有]** 設定は、Android エンタープライズのデバイス所有者の管理ではサポートされていません。 したがって、この設定が削除されると、この設定が環境で有効および構成されていた場合でもいかなるデバイスやテナントにも影響はありません。
+
+現在の設定一覧を確認するには、[Android エンタープライズ デバイスの機能を許可または制限する設定](device-restrictions-android-for-work.md)に関するページを参照してください。
+
+適用先:Android エンタープライズ デバイスの所有者
 
 <!-- 1812 start -->
 
@@ -75,8 +114,9 @@ Windows ポータル サイト アプリに新しいページが追加されま�
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>256 ビット暗号化キーをサポートするようになる Intune App SDK <!-- 1832174 -->
 アプリ保護ポリシーによって暗号化が有効にされると、Android 用 Intune App SDK では 256 ビット暗号化キーが使用されるようになります。 古いバージョンの SDK を使用するコンテンツやアプリとの互換性のため、SDK では引き続き 128 ビット キーのサポートが提供されます。
 
-### <a name="enabled-shared-pc-settings-in-intune-profile----1907917---"></a>Intune プロファイルでの共有 PC 設定の有効化 <!-- 1907917 -->
+### <a name="enabled-shared-pc-settings-in-intune-profile----1907917-1063203---"></a>Intune プロファイルでの共有 PC 設定の有効化 <!-- 1907917, 1063203 -->
 現在、共有 PC の設定は、Windows 10 デスクトップ デバイスでカスタム OMA-URI の設定を使用して構成できます。 共有 PC の設定を構成するための新しいプロファイルが追加されます (**[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** > **[Windows 10 以降]** > **[Shared multi-user device]\(共有マルチユーザー デバイス\)**)。
+
 適用先:Windows 10 以降、Windows Holographic for Business
 
 ### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation-----1927359---"></a>Intune ポリシーでの認証方法とポータル サイト アプリのインストールの更新 <!-- 1927359 -->
@@ -113,10 +153,6 @@ Windows 10 更新プログラム リングで、次のことができるよう�
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>BitLocker の一部の設定で Windows 10 Pro エディションがサポートされる <!-- 2727036 -->
 Windows 10 デバイスで、BitLocker などの Endpoint Protection の設定を行う構成プロファイルを作成できるようになります。 これにより、BitLocker の一部の設定に Windows 10 Professional エディションのサポートが追加されます。 現在の Windows 10 エディションの設定を確認するには、[Windows 10 用の Endpoint Protection 設定](endpoint-protection-windows-10.md#windows-encryption)に関する記事をご覧ください。
-
-
-### <a name="intune-device-reporting-fields----2748738---"></a>Intune のデバイス レポートのフィールド <!-- 2748738 -->
-Intune では、Android の製造元、モデル、セキュリティ更新プログラムのバージョン、iOS のモデルなど、デバイス レポートのフィールドが追加されます。 Intune でこれらのフィールドを使用するには、**[クライアント アプリ]** > **[アプリの保護状態]** を選択して、**[アプリ保護レポート: iOS、Android]** を選択します。 さらに、これらのパラメーターは、デバイス製造元 (Android) の**許可**リスト、デバイス モデル (Android および iOS) の**許可**リスト、および Android セキュリティ修正プログラムの最小バージョンの設定を構成するのに役立ちます。 
 
 ### <a name="intune-device-reporting-fields----2748738---"></a>Intune のデバイス レポートのフィールド <!-- 2748738 -->
 Intune では、Android の製造元、モデル、セキュリティ更新プログラムのバージョン、iOS のモデルなど、デバイス レポートのフィールドが追加されます。 Intune でこれらのフィールドを使用するには、**[クライアント アプリ]** > **[アプリの保護状態]** を選択して、**[アプリ保護レポート: iOS、Android]** を選択します。 さらに、これらのパラメーターは、デバイス製造元 (Android) の**許可**リスト、デバイス モデル (Android および iOS) の**許可**リスト、および Android セキュリティ修正プログラムの最小バージョンの設定を構成するのに役立ちます。 
@@ -155,6 +191,8 @@ Intune の管理用テンプレート (**[デバイス構成]** > **[管理用�
 管理用テンプレートはパブリック プレビューで使用できます。管理用テンプレートは、**[デバイス構成]** > **[管理用テンプレート]** から、**[デバイス構成]** > **[プロファイル]** >**[プロファイルの作成]** を選択し、**[プラットフォーム]** で **[Windows 10 以降]** を選択し、**[プロファイルの種類]** で **[管理用テンプレート]** を選択した場所に移動されています。
 レポートが有効にされます。適用先: Windows 10 以降
 
+### <a name="intune-macos-company-portal-dark-mode----3300524---"></a>Intune の macOS ポータル サイトのダーク モード <!-- 3300524 -->
+Intune の macOS ポータル サイトで、macOS 用にダーク モードがサポートされるようになりました。 macOS 10.14 以降のデバイスでダーク モードを有効にすると、Intune ポータル サイトではそのモードの色に外観を調整します。
 
 <!-- 1810 start -->
 

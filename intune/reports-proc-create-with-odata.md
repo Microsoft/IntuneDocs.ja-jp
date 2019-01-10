@@ -6,7 +6,7 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 01/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 9c93554fd6750459aacc154165e7a58e160534fb
-ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
+ms.openlocfilehash: 3599146aaebc2e3788fa96e8e04657ce4db41c4f
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53429714"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067450"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Power BI で OData フィードからレポートを作成する
 
@@ -61,7 +61,7 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
 7. **[OData フィード]** ウィンドウの [URL] ボックスにカスタム フィードの URL を貼り付けます。
 8. **[基本]** を選択します。
 
-    ![OData フィード](media/reports-create-01-odatafeed.png)
+    ![テナントの Intune データ ウェアハウスの OData フィード](media/reports-create-01-odatafeed.png)
 
 9. **[OK]** を選択します。
 10. **[組織のアカウント]** を選択し、Intune の資格情報でサインインします。
@@ -70,7 +70,7 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
 
 11. **[接続]** を選択します。 ナビゲーターが開き、Intune データ ウェアハウスのテーブルの一覧が表示されます。
 
-    ![ナビゲーター](media/reports-create-02-loadentities.png)
+    ![ナビゲーターのスクリーンショット - Data Warehouse のテーブル一覧](media/reports-create-02-loadentities.png)
 
 12. **devices** テーブルと **ownerTypes** テーブルを選択します。  **[読み込み]** を選択します。 Power BI がモデルにデータを読み込みます。
 
@@ -78,7 +78,7 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
 
 複数のテーブルをインポートして、1 つのテーブル内のデータだけでなく、複数のテーブルの関連するデータを分析することができます。  PowerBI には**自動検出**と呼ばれる機能があり、リレーションシップの自動的な検索と作成を試みます。 データ ウェアハウスのテーブルは、PowerBI の自動検出が機能するように作成されています。 ただし、PowerBI がリレーションシップを自動的に検索しない場合でも、リレーションシップを管理することは可能です。
 
-![リレーションシップを管理する](media/reports-create-03-managerelationships.png)
+![テーブル間の関連データのリレーションシップの管理](media/reports-create-03-managerelationships.png)
 
 1. **[リレーションシップの管理]** を選択します。
 2. PowerBI でリレーションシップがまだ検出されていない場合は、**[自動検出]** を選択します。
@@ -99,7 +99,7 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
 
 組織内のデバイスの製造元の分布を示すビジュアルが作成されます。
 
-![ツリーマップとデータ](media/reports-create-06-treemapwdata.png)
+![ツリーマップとデータ - デバイスの製造元の分布](media/reports-create-06-treemapwdata.png)
 
 ## <a name="add-a-filter"></a>フィルターを追加する
 
@@ -111,7 +111,7 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
 
    devices テーブルに、デバイスが会社所有か個人所有かを示すコードを含む **OwnerTypeKey** データ フィールドがあります。 このフィルターにはフレンドリー名を表示したいので、**ownerTypes** テーブルを探し、**ownerTypeName** をドラッグします。 この例では、データ モデルがテーブル間のリレーションシップをサポートする方法を示します。
 
-![ツリーマップとフィルター](media/reports-create-08_ownertype.png)
+![ツリーマップとフィルター - テーブル間のリレーションシップのサポート](media/reports-create-08_ownertype.png)
 
 会社所有デバイスと個人所有デバイスを切り替えることができる対話型フィルターができました。 このフィルターを使って、分布の違いを見ることができます。
 

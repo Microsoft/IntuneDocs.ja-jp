@@ -1,12 +1,11 @@
 ---
-title: Microsoft Intune のサポートを受ける方法
-titlesuffix: Microsoft Intune
+title: Microsoft Intune のサポートを受ける方法 | Microsoft Intune
 description: Microsoft Intune の有料サブスクリプションと試用版サブスクリプションについて、オンラインと電話によるサポートを受けます。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2feb18f9c21929d803bbb3605842effa8f63d75d
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 6a57a3a26a786e86775ce1509c5f751d2856f95b
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247171"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817298"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune のサポートを受ける方法
 
@@ -49,11 +48,11 @@ Azure portal にサインインして Intune を開いたら、Azure portal の 
 
 1. Intune 管理者資格情報を使用して Azure portal (<https://portal.azure.com>) にサインインして、**[?]** を選択します。 アイコンを選択し、**[ヘルプとサポート]** を選択して、[Azure のヘルプとサポート](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)のページに移動します。
 
-   ![Azure Portal のヘルプとサポートで [ヘルプとサポート] のリンクが強調表示された [?] マーク リンクのスクリーンショット](./media/azure-get-support.png)
+   ![[ヘルプとサポート] のリンクが強調表示された疑問符マークの画像](./media/azure-get-support.png)
 
 2. Azure の **[ヘルプとサポート]** のページ上で、**[新しいサポート要求]** を選択します。
 
-   ![[新しいサポート要求] のリンクが強調表示された Azure のヘルプとサポートのページのスクリーンショット](media/azure-support-ticket-link.png)
+   ![[ヘルプとサポート] ページで [新しいサポート要求] のリンクが強調表示された画像](media/azure-support-ticket-link.png)
 
 3. Intune のほとんどのテクニカル サポートの問題では、**[基本]** タブ上で、次のオプションを選択します。
    - **問題の種類**: **テクニカル**
@@ -63,18 +62,18 @@ Azure portal にサインインして Intune を開いたら、Azure portal の 
    - **[問題のサブタイプ]**: ドロップダウン メニューから、問題のサブタイプを選択します。
    - **[件名]**: 発生している問題を簡単に説明します。
 
-   ![[ヘルプとサポート] - [新しいサポート要求] ページ上にある [基本] タブのスクリーン ショット](./media/get-support/help-new-support-case-basics.png)
+   ![[ヘルプとサポート] の [基本] タブの画像 - [新しいサポート要求] ページ](./media/get-support/help-new-support-case-basics.png)
 
    **[Next: Solutions]\(次へ: ソリューション\)** を選択して続行します。
 4. **[ソリューション]** タブ上で、チケットを提出しなくても問題の解決に役立つ可能性がある推奨手順を確認します。 手順を確認した後に、やはりサポート要求を作成することにした場合は、**[Next: Details]\(次へ: 詳細\)** をクリックします。
 
-   ![[ヘルプとサポート] - [新しいサポート要求] ページ上にある [ソリューション] タブのスクリーン ショット](./media/get-support/help-new-support-case-solutions.png)
+   ![[ヘルプとサポート] の [ソリューション] タブの画像 - [新しいサポート要求] ページ](./media/get-support/help-new-support-case-solutions.png)
 5. **[詳細]** タブ上で、問題の詳細、サポートの方法、お客様の連絡先情報を入力してから、**[Next: Review + create]\(次へ: 確認と作成\)** をクリックします。
 
-   ![[ヘルプとサポート] - [新しいサポート要求] ページ上にある [詳細] タブのスクリーン ショット](./media/get-support/help-new-support-case-details.png)
+   ![[ヘルプとサポート] の [詳細] タブの画像 - [新しいサポート要求] ページ](./media/get-support/help-new-support-case-details.png)
 6. 情報を見直して、正しいことを確認してから、**[作成]** を選択してサポート要求を送信します。
 
-   ![[ヘルプとサポート] - [新しいサポート要求] ページ上にある [review + create]\(確認と作成\) タブのスクリーン ショット](./media/get-support/help-new-support-case-create.png)
+   ![[新しいサポート要求] ページの [review + create]\(確認と作成\) タブの画像](./media/get-support/help-new-support-case-create.png)
 
 <!--
   - **Support plan**: **Technical support - included** (for Intune technical issues, support is complimentary) or **Premier**
@@ -117,7 +116,7 @@ Azure portal 内からサポート要求を表示できます。 これを実行
 ## <a name="new-help-and-support-experience"></a>新しいヘルプとサポート エクスペリエンス
 *次の情報は、デバイスの管理ポータルを使用するユーザーが新しいヘルプとサポート エクスペリエンスのロールアウトに参加するときにのみ適用されます。このロールアウトの参加者は、利用可能な Intune テナントからランダムに選択されます。*  
 
-Intune のヘルプとサポートの更新プログラムは [Microsoft 365 デバイスの管理ポータル](http://devicemanagement.microsoft.com)の新しいエクスペリエンスですが、すべてのテナントではなく一部のテナントが利用できます。 この新しいエクスペリエンスは [Microsoft 365 管理センター](https://portal.office.com/AdminPortal/Home)で見られるエクスペリエンスと類似しており、デバイスの管理コンソールの一部の場所からアクセスされる前のヘルプとサポート エクスペリエンスに取って代わります。  
+Intune のヘルプとサポートの更新プログラムは [Microsoft 365 デバイスの管理ポータル](https://devicemanagement.microsoft.com)の新しいエクスペリエンスですが、すべてのテナントではなく一部のテナントが利用できます。 この新しいエクスペリエンスは [Microsoft 365 管理センター](https://portal.office.com/AdminPortal/Home)で見られるエクスペリエンスと類似しており、デバイスの管理コンソールの一部の場所からアクセスされる前のヘルプとサポート エクスペリエンスに取って代わります。  
 
 デバイスの管理ポータルでは、**[すべてのサービス]**、**[デバイス管理]** の順に選択したときに表示される **[トラブルシューティング]** ブレード以外のブレードから **[ヘルプとサポート]** を選択したとき、ユーザーは新しいエクスペリエンスにアクセスすることになります。 ヘルプとサポートに**トラブルシューティング**など、他の場所からアクセスするか、コンソール バナーの右上の **?** オプションを使用するか、 サービスの左ウィンドウの一覧から **[ヘルプとサポート]** を選択する場合、元のエクスペリエンスにアクセスすることになります。  
 
@@ -143,7 +142,7 @@ Intune のヘルプとサポートの更新プログラムは [Microsoft 365 デ
 
 ### <a name="view-context-sensitive-help"></a>状況依存のヘルプを表示する
 提案を選択するか、独自の問い合わせを送信すると、**[ソリューションの表示]** の下に状況依存の結果が表示されます。 これらの結果には、Intune 固有のセルフヘルプ ガイダンスと、クエリ条件に基づく Web 検索から返された追加の結果の両方が含まれます。  
-![結果の表示](./media/get-support/view-results.png)
+![[View-results]\(結果の表示\) ウィンドウの画像](./media/get-support/view-results.png)
 
 ### <a name="get-support"></a>サポートを受ける
 セルフヘルプまたは Web ベースのガイダンスでは問題が解決されない場合、コンソールを使用し、電子メールまたは電話でサポートを受けることができます。  
@@ -151,16 +150,16 @@ Intune のヘルプとサポートの更新プログラムは [Microsoft 365 デ
 
 - 電子メールで依頼する場合、自分の電子メール アドレスを入力してください。任意で、提出に添付ファイルを追加できます。 **[送信]** を選択し、依頼を登録します。  
 
-  ![電子メールによる依頼](./media/get-support/email-support.png)
+  ![[メール要求] ウィンドウの画像](./media/get-support/email-support.png)
   
 - 電話で依頼する場合、自分の電話番号を入力してください。 任意で、自分の電子メール アドレスを含めたり、提出に添付ファイルを追加したりできます。 [電話で連絡] を選択し、依頼を提出します。  
 
-   ![電話で依頼](./media/get-support/phone-support.png)
+   ![[Phone request]\(電話要求\) ウィンドウの画像](./media/get-support/phone-support.png)
 
 ### <a name="view-support-cases"></a>サポート ケースを表示する
 [履歴] ボタンを選択すると、作成したサポート インシデントが表示されます。  
 
-![サポート ケースを表示する](./media/get-support/view-support-tickets.png)
+![[View support cases]\(サポート ケースの表示\) ウィンドウの画像](./media/get-support/view-support-tickets.png)
 
 - 新しいワークフローを使用して登録したサポート ケースだけがこのワークフロー内から表示されます。 サポート ケースを表示するには、新しいエクスペリエンスに含まれるデバイスの管理コンソールの [ヘルプとサポート] ビューを使用します。 これらのケースには 8 桁の数字が与えられます。 これらのケースは Microsoft 365 管理センターからも表示できます。  
 
@@ -173,5 +172,5 @@ Intune のヘルプとサポートの更新プログラムは [Microsoft 365 デ
 ## <a name="additional-resources"></a>その他のリソース
 - [Microsoft Intune のサポートの電話番号](phone-support-contact.md)
 - [課金とサブスクリプション管理のサポート](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-- [ボリューム ライセンス](http://go.microsoft.com/fwlink/p/?LinkID=282015)
+- [ボリューム ライセンス](https://go.microsoft.com/fwlink/p/?LinkID=282015)
 - [Intune の問題のトラブルシューティング](help-desk-operators.md)

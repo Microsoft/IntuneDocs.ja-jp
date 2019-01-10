@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/06/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2257253d023c97d14418b3566c0c493a3cd8f615
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 59e9af2449f384fce22acaef9a696f2944eabaa1
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53737918"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067433"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>クイック スタート:Microsoft Intune を無料で試す 
 
@@ -50,7 +50,7 @@ Intune は 30 日間無料で試用できます。 既に職場または学校�
 
 2. 会社名に続けて「**.onmicrosoft.com**」と入力してアカウントを作成します。 
 
-    ![Microsoft Intune 試用版アカウントの新しい資格情報プロセスのスクリーンショット](./media/account-sign-up-site-user-id.png)
+    ![Intune 試用版アカウントの新しい資格情報の手順のスクリーンショット](./media/account-sign-up-site-user-id.png)
 
     **.onmicrosoft.com** ではない独自のカスタム ドメインを組織で使用したい場合は、この記事で後述する Office 365 管理ポータルで変更することができます。
 

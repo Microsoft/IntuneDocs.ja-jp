@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 72349a609485096b5abd6eaff3c252a510a978a7
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 6d9d6cb1eccd91e7832a9456504c36cb983b4810
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738020"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817383"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune ポータル サイト アプリを構成する方法
 
@@ -89,7 +89,7 @@ Intune 関連の質問に対する連絡先を従業員に示すために、会�
 
 |フィールド名|詳細情報|
 |---|---|
-|**Upload your brand image (ブランド画像のアップロード)**| このオプションを使用すると、ポータル サイト アプリのユーザーのプロファイル ページに背景画像を表示できます。<p>*注*:プラットフォームによって表示される画像が異なる場合があります。<p><ul><li>推奨される画像の幅:1125 px より大きく、640 px 以上</li><li>画像の最大サイズ:1.3 MB</li><li>ファイルの種類:PNG、JPG、または JPEG</li></ul>|
+|**Upload your brand image (ブランド画像のアップロード)**| このオプションを使用すると、ポータル サイト アプリのユーザーのプロファイル ページに背景画像を表示できます。<p>*注*:プラットフォームによって表示される画像が異なる場合があります。<p><ul><li>推奨される画像の幅:1125 px 未満、640 px 以上</li><li>画像の最大サイズ:1.3 MB</li><li>ファイルの種類:PNG、JPG、または JPEG</li></ul>|
 
 適切なブランド画像を選択すると、会社のブランドの認知度を高め、ポータル サイトのユーザーの信頼を強化することができます。 ここでは、ポータル サイトの画像を取得、選択、最適化する場合に検討することができるヒントを紹介します。 
 

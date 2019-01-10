@@ -1,6 +1,6 @@
 ---
 title: 会社のサポートに Windows 10 デバイスのログを送信する | Microsoft Docs
-description: 会社のサポートによるアプリの問題解決に役立つ診断ログを送信します
+description: 会社のサポートがアプリの問題を解決できるようにエラーの詳細を送信する
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa6018d4a226303c6ea097a9ee36a043a040038c
-ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.openlocfilehash: cc1af3dee9dc8c591322c26b65a354130b05786a
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626069"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006320"
 ---
 # <a name="send-diagnostic-logs-to-your-company-support-from-company-portal-for-windows"></a>Windows 用のポータル サイトから会社のサポートに診断ログを送信する
 
