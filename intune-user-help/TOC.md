@@ -130,6 +130,7 @@
 ### [デバイスをリセットした場合の動作](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Microsoft による使用状況データの収集を無効にする](turn-off-microsoft-usage-data-collection-windows.md)
 ### [デバイスを手動で同期する](sync-your-device-manually-windows.md)
+### [ヘルプとサポート](help-support-windows-cpapp.md)
 
 ### [Windows の一般的な問題をトラブルシューティングする](troubleshoot-your-device-windows.md)
 #### [アクセス ポイント制限を解決する](resolve-access-point-restrictions.md)
