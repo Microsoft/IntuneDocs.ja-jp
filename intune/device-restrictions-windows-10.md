@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune での Windows 10 用のデバイスの制限設定 - Azure | Microsoft Docs
-description: Windows 10 およびそれ以降のデバイスに対するデバイス制限を作成するには、すべての設定とその説明の一覧を参照してください。 これらの設定を構成プロファイル内で使用すると、スクリーン ショット、パスワード要件、キオスク設定、ストア内アプリ、Edge ブラウザー、Windows Defender、クラウドへのアクセス、[スタート] メニューなどを Microsoft Intune で制御できます。
+description: Windows 10 およびそれ以降のデバイスに対するデバイス制限を作成するには、すべての設定とその説明の一覧を参照してください。 これらの設定を構成プロファイル内で使用すると、スクリーン ショット、パスワード要件、キオスク設定、ストア内アプリ、Microsoft Edge ブラウザー、Windows Defender、クラウドへのアクセス、[スタート] メニューなどを Microsoft Intune で制御できます。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
