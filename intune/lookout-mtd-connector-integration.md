@@ -1,12 +1,11 @@
 ---
-title: Microsoft Intune との Lookout 統合を設定する
-titlesuffix: ''
+title: Microsoft Intune との Lookout 統合を設定する | Microsoft Intune
 description: モバイル デバイスから会社のリソースへのアクセスを制御するための Intune と Lookout Mobile Threat Defense の統合について説明します。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f0ff43e5a25a2f2d7d97564e638d01b014ab81cb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 84bc12d568fce0f5cd6e460595eedf0af0d6296e
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181073"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816873"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune との Lookout Mobile Threat Defense 統合を設定する
 
@@ -77,11 +76,11 @@ Lookout を Intune に統合するために、Lookout Mobility Endpoint Security
 
 3. [Lookout コンソール](https://aad.lookout.com)で **[System]** (システム) モジュールから **[Connectors]** (コネクタ) タブを選択し、**[Intune]** を選択します。
 
-   ![Lookout コンソールの 「Connectors」\ (コネクタ) タブが開き [Intune] オプションが強調されている状態のスクリーンショット](./media/lookout_mtp_setup-intune-connector.png)
+   ![[Connectors]\(コネクタ\) タブに [Intune] オプションが表示された Lookout コンソールの画像](./media/lookout_mtp_setup-intune-connector.png)
 
 4. **[Connectors]\(コネクタ)** > **[Connection Settings]\(接続設定)** を選択し、**[Heartbeat Frequency]\(ハートビート頻度)** を分単位で指定します。
 
-   ![ハートビート周期が構成されている接続設定タブのスクリーンショット](./media/lookout-mtp-connection-settings.png)
+   ![ハートビート頻度が構成された [Connection Settings]\(接続設定\) タブの画像](./media/lookout-mtp-connection-settings.png)
 
 ## <a name="configure-enrollment-groups"></a>登録グループを構成する
 1. ベスト プラクティスとして、Lookout の統合をテストする少数のユーザーを含む Azure AD セキュリティ グループを [Azure AD 管理ポータル](https://manage.windowsazure.com)に作成することをお勧めします。
@@ -95,10 +94,10 @@ Lookout を Intune に統合するために、Lookout Mobility Endpoint Security
 
     >[!IMPORTANT]
     > Azure Portal のセキュリティ グループの **[プロパティ]** に表示される **[表示名]** は大文字と小文字が区別されます。 次の画像のように、セキュリティ グループの **[Display Name]\(表示名\)** は大文字と小文字が混在していますが、タイトルはすべて小文字です。 Lookout コンソールでは、セキュリティ グループの **[表示名]** の大文字/小文字と一致させます。
-    >![Azure Portal の Azure Active Directory サービスの [プロパティ] ページのスクリーンショット](./media/aad-group-display-name.png)
+    >![Azure portal の Azure Active Directory サービスの [プロパティ] ページの画像](./media/aad-group-display-name.png)
 
     >[!NOTE] 
-    >新しいデバイスをチェックする間隔には、既定値 (5 分) を使用することをお勧めします。 現時点での制限事項、**Lookout はグループの表示名を検証できません:** Azure Portal の **[表示名]** フィールドが Azure AD セキュリティ グループと厳密に一致していることを確認してください。 **入れ子のグループを作成することはできません:** Lookout で使用する Azure AD セキュリティ グループには、ユーザーのみを含める必要があります。 他のグループを含めることはできません。
+    >新しいデバイスをチェックする間隔には、既定値 (5 分) を使用することをお勧めします。 現時点での制限事項、**Lookout はグループの表示名を検証できません:** Azure ポータルの **[表示名]** フィールドは、Azure AD セキュリティ グループと完全に一致するようにします。 **入れ子のグループを作成することはできません:** Lookout で使用する Azure AD セキュリティ グループには、ユーザーのみを含める必要があります。 他のグループを含めることはできません。
 
 3.  グループを追加して、次にサポートされるデバイスでユーザーが Lookout for Work アプリを開いたときに、そのデバイスが Lookout でアクティブ化されます。
 
@@ -115,7 +114,7 @@ Lookout を Intune に統合するために、Lookout Mobility Endpoint Security
 ## <a name="configure-enrollment-settings"></a>登録設定を構成する
 **[System]** \ (モジュール) の **[Connectors]** \ (コネクタ) ページで、デバイスが切断されたと判断されるまでの日数を指定します。  切断されたデバイスは非準拠と見なされ、Intune の条件付きアクセス ポリシーに基づいて会社のアプリケーションにアクセスできなくなります。 1 から 90 日の値を指定できます。
 
-![Lookout 登録設定](./media/lookout-console-enrollment-settings.png)
+![システム モジュールでの Lookout 登録設定](./media/lookout-console-enrollment-settings.png)
 
 ## <a name="configure-email-notifications"></a>電子メールの通知を構成する
 脅威に関する電子メール通知を受け取りたい場合は、通知を受け取るユーザー アカウントで [Lookout コンソール](https://aad.lookout.com)にサインインします。 **[System]** (システム) モジュールの **[Preferences]** (基本設定) タブで、通知が必要な脅威レベルを選択して、**[ON]** (オン) に設定します。 変更を保存します。
@@ -123,7 +122,7 @@ Lookout を Intune に統合するために、Lookout Mobility Endpoint Security
 ![ユーザー アカウントが表示された基本設定ページのスクリーンショット](./media/lookout-mtp-email-notifications.png) 電子メール通知を受け取る必要がなくなった場合は、通知を **[OFF]** (オフ) に設定して変更を保存します。
 
 ### <a name="configure-threat-classification"></a>脅威の分類を構成する
-Lookout Mobile Threat Defense によって、さまざまな種類のモバイルの脅威が分類されます。 [Lookout の脅威の分類](http://personal.support.lookout.com/hc/articles/114094130693)には、既定のリスク レベルが関連付けられています。 これらは会社の要件に合わせていつでも変更できます。
+Lookout Mobile Threat Defense によって、さまざまな種類のモバイルの脅威が分類されます。 [Lookout の脅威の分類](https://personal.support.lookout.com/hc/articles/114094130693)には、既定のリスク レベルが関連付けられています。 これらは会社の要件に合わせていつでも変更できます。
 
 ![脅威と分類を示すポリシー ページのスクリーンショット](./media/lookout-mtp-threat-classification.png)
 

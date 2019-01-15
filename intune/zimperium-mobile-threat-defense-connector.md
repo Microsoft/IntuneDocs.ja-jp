@@ -16,18 +16,18 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aad6687a110642f3b21dc0cff3a791f4714c7949
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b94b4228f05abd2e7c815797f2f187efb8b303e4
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187465"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817247"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Zimperium Mobile Threat Defense コネクタと Intune
 
 Microsoft Intune に統合された Mobile Threat Defense (MTD) ソリューションである Zimperium によって実行されるリスク評価に基づき、条件付きアクセスを利用し、モバイル デバイスから会社のリソースへのアクセスを制御できます。 リスクは、Zimperium アプリを実行するデバイスから収集される製品利用統計情報に基づいて評価されます。
 
-Intune デバイス コンプライアンス ポリシーで有効にした Zimperium リスク評価に基づき、条件付きアクセスのポリシーを構成できます。Intune デバイス コンプライアンス ポリシーは、検出された脅威に基づき、非準拠デバイスから企業リソースへのアクセスを許可したり、拒否したりするために利用できます。
+Intune のデバイス コンプライアンス ポリシーにより有効になった Zimperium のリスク評価に基づいて、条件付きアクセス ポリシーを構成できます。 リスク評価ポリシーは、検出された脅威に基づき、非準拠デバイスの企業リソースへのアクセスを許可またはブロックすることができます。
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>Intune と Zimperium を利用し、会社のリソースをどのように保護しますか?
 
@@ -51,11 +51,11 @@ Intune と Zimperium を統合する場合のシナリオのいくつかを、�
 
 **悪意のあるアプリが検出されたときにブロックする:**
 
-![検出された悪意のあるアプリ](./media/Maliciousapps_blocked_Zimperium.png)
+![検出された悪意のあるアプリの概念図](./media/Maliciousapps_blocked_Zimperium.png)
 
 **修復後、アクセスが与えられる:**
 
-![悪意のあるアプリの検出、アクセス権](./media/maliciousapps_unblocked_Zimperium.png)
+![修復後に付与されたアクセス権の概念図](./media/maliciousapps_unblocked_Zimperium.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいてアクセスを制御する
 
@@ -95,7 +95,7 @@ Intune と Zimperium を統合する場合のシナリオのいくつかを、�
 
 -   Zimperium Mobile Threat Defense サブスクリプション
 
-    -   詳細については、 [Zimperium の Web サイト](https://www.zimperium.com/zips-mobile-ips) を参照してください。
+    -   詳細については、 [Zimperium の Web サイト](https://www.zimperium.com/zips-mobile-ips)を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

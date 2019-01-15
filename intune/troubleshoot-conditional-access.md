@@ -1,5 +1,5 @@
 ---
-title: 条件付きアクセスに関するトラブルシューティング
+title: 条件付きアクセスに関するトラブルシューティング | Microsoft Intune
 description: ユーザーが Intune の条件付きアクセスでリソースにアクセスできない場合の対処方法。
 keywords: ''
 author: brenduns
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 642a4da6a1ca3c368e90f2d3007c1fc6a068af78
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d24b96408ed02413f25957e2558704385c5e1bfd
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189233"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817145"
 ---
 # <a name="troubleshoot-conditional-access"></a>条件付きアクセスに関するトラブルシューティング
 
@@ -73,7 +73,7 @@ Intune と条件付きアクセスを使用して、Exchange Online、SharePoint
 - ターゲット グループと除外グループを確認します。 ユーザーが正しいターゲット グループにいない、または除外グループにいる場合、ユーザーはブロックされません。 ターゲット グループ内のユーザーのデバイスのみが対応しているかどうかチェックされます。
 - デバイスが検出されていることを確認します。 ユーザーが Exchange 2013 Server を使用しているにもかかわらず、Exchange Connector が Exchange 2010 CAS を指していませんか。 このケースでは、ユーザーがターゲット グループに存在する場合でも、既定の Exchange 規則が [許可] であれば、Intune は Exchange へのデバイスの接続を認識しません。
 - Exchange で次のようにデバイスの存在とアクセスの状態を確認します。
-  - PowerShell コマンドレット "Get-ActiveSyncDeviceStatistics -mailbox mbx" を使用してメールボックスのすべてのモバイル デバイスの一覧を取得します。 デバイスが一覧に表示されない場合、デバイスは Exchange にアクセスしていません。
+  - メールボックスのすべてのモバイル デバイスの一覧を取得するには、PowerShell コマンドレット:"Get-ActiveSyncDeviceStatistics -mailbox mbx" を使用します。 デバイスが一覧に表示されない場合、デバイスは Exchange にアクセスしていません。
   - デバイスが一覧に表示されている場合は、Get-CASmailbox -identity:’upn’ | fl コマンドレットを使用してアクセスの状態に関する詳細情報を取得し、その情報を Microsoft サポートに提供します。
 
 ## <a name="next-steps"></a>次の手順

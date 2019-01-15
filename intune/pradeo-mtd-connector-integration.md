@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 82872ba6-80f8-4cc9-adf4-0ccd8ff26dd2
 search.appverid: MET150
-ms.openlocfilehash: d7b88b73c260a6a84fdb835069de23c52775929a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 65b480b60b195ab012743f9a4006fb69aa929dbb
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179484"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816805"
 ---
 # <a name="integrate-pradeo-with-intune"></a>Pradeo と Intune を統合する
 
@@ -61,27 +61,27 @@ Pradeo アプリ承認プロセスは以下で構成されます。
 
 1.  [Pradeo のセキュリティ コンソール](https://www.apps-security.com)に移動し、資格情報を使用してサインインします。
 
-2.  メニューから **[Administration - Enterprise Mobility Management]** (管理 - Enterprise Mobility Management) を選択します。
+2.  メニューから [**Administration - Enterprise Mobility Management**] (管理 - Enterprise Mobility Management) を選択します。
 
 3.  **Intune のロゴ**を選択します。
 
-4.  **[EMM (Enterprise Mobility Management - Intune)]** (EMM (Enterprise Mobility Management - Intune)) ウィンドウの **[手順 1]** で、**[Pradeo Connector]** (Pradeo コネクタ) ボタンを選択します。 
+4.  [**EMM (Enterprise Mobility Management - Intune)**] (EMM (Enterprise Mobility Management - Intune)) ウィンドウの [**手順 1**] で、[**Pradeo Connector**] (Pradeo コネクタ) ボタンを選択します。 
 
-    ![[Pradeo EMM Intune] ウィンドウ](./media/pradeo_setup.png)
+    ![Pradeo EMM Intune ウィンドウのスクリーンショット](./media/pradeo_setup.png)
 
 5. Microsoft Intune の接続ウィンドウに Intune の資格情報を入力します。
 
-5.  Pradeo の Web ページが再度開きます。 **[手順 2]** の **[Pradeo Device Health]** (Pradeo デバイスの正常性) ボタンを選択します。
+5.  Pradeo の Web ページが再度開きます。 [**手順 2**] の [**Pradeo Device Health**] (Pradeo デバイスの正常性) ボタンを選択します。
 
-7. Pradeo-Intune Connector] \(Pradeo-Intune コネクタ) ウィンドウで **[Accept]** \(同意する) を選択します。 
+7. [Pradeo-Intune Connector] \(Pradeo-Intune コネクタ) ウィンドウで [**Accept**] \(同意する) を選択します。 
 
-8. Pradeo device API connector] \(Pradeo デバイス API コネクタ) ウィンドウで **[Accept]** \(同意する) を選択します。
+8. [Pradeo device API connector] \(Pradeo デバイス API コネクタ) ウィンドウで [**Accept**] \(同意する) を選択します。
 
-9. Pradeo の Web ページが再度開きます。 **[手順 3]** の **[Connect to Microsoft]** (Microsoft に接続) ボタンを選択します。 
+9. Pradeo の Web ページが再度開きます。 [**手順 3**] の [**Connect to Microsoft**] (Microsoft に接続) ボタンを選択します。 
 
 10. Microsoft Intune の認証ウィンドウで、Intune の資格情報を入力します。
 
-11. **[Successful Integration]** (統合に成功しました) というメッセージが表示されると統合は完了です。
+11. [**Successful Integration**] (統合に成功しました) というメッセージが表示されると統合は完了です。
 
 ## <a name="next-steps"></a>次の手順
 

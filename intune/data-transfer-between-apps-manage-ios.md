@@ -1,6 +1,5 @@
 ---
-title: iOS アプリ間のデータ転送を管理する
-titlesuffix: Microsoft Intune
+title: iOS アプリ間のデータ転送を管理する | Microsoft Intune
 description: Microsoft Intune でモバイル アプリ管理ポリシーを使用してアプリ間でデータの転送を管理する方法について説明します。
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e252822569723be6cfe18e488f79a7605f21193c
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: bbd0272b37b56f9f9e66cdf00ddc89a827f3c875
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728669"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816975"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune で iOS アプリ間のデータ転送を管理する方法
 
@@ -59,7 +58,7 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 4.  登録済みデバイスに、Intune またはサード パーティの MDM プロバイダーを使用して **Open in management** ポリシーをデプロイします。
 
 
-### <a name="example-1-admin-experience-in-intune-or-third-party-mdm-console"></a>例 1: Intune またはサード パーティ MDM コンソールの管理エクスペリエンス
+### <a name="example-1-admin-experience-in-intune-or-third-party-mdm-console"></a>例 1:Intune またはサード パーティ MDM コンソールの管理エクスペリエンス
 
 1. Intune またはサード パーティ MDM プロバイダーの管理コンソールに移動します。 登録済みの iOS デバイスにアプリケーション構成設定をデプロイするコンソールのセクションに移動します。
 

@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
-ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
+ms.openlocfilehash: 49ecdebc2777112ce8c8c97af1f98b3c12b200e1
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389871"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006286"
 ---
 # <a name="what-are-app-protection-policies"></a>アプリ保護ポリシーとは
 
@@ -75,14 +75,14 @@ Windows デバイスは現在サポートされていません。 ただし、�
 
 #### <a name="apps-without-app-protection-policies"></a>アプリ保護ポリシーのないアプリ
 
-![アプリ保護ポリシーが配備されていない場合にデータがアプリ間を自由に移動できることを示す画像](./media/apps-without-protection-policies.png)
+![ポリシーが定められていないアプリ間のデータ移動の概念図](./media/apps-without-protection-policies.png)
 
 アプリが制限なしで使用されている場合、会社データと個人データが混在する可能性があります。 会社データが個人の記憶域に保存されたり、管理範囲外のアプリに転送されたりして、データ損失を招くことがあります。 先の図の矢印は企業アプリと個人アプリの間のデータ移動やストレージの場所へのデータ移動を示しており、データ移動は制限されています。
 
 
 ### <a name="data-protection-with-app-protection-policies"></a>アプリ保護ポリシーによるデータ保護
 
-![アプリ保護ポリシーが適用されている場合に会社のデータがどのように保護されるかを示すイメージ ](./media/apps-with-protection-policies.png)
+![ポリシーによって保護されている会社のデータを示す概念図](./media/apps-with-protection-policies.png)
 
 
 アプリ保護ポリシーを使用し、デバイスのローカル ストレージに会社のデータが保存されることを禁止できます。 また、アプリ保護ポリシーで保護されていない他のアプリへのデータ移動を制限できます。 アプリ保護ポリシー設定には以下のようなものがあります。

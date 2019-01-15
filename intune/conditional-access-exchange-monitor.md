@@ -1,6 +1,5 @@
 ---
-title: Microsoft Intune で Exchange の条件付きアクセスを監視する
-titlesuffix: ''
+title: Microsoft Intune で Exchange の条件付きアクセスを監視する | Microsoft Intune
 description: Intune Azure ポータルを使用し、Exchange On-Premises と Exchange Online の条件付きアクセス コンプライアンスを監視します。
 keywords: ''
 author: brenduns
@@ -15,12 +14,12 @@ ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 20a99290d2a84c22bc2bee823d7a3bb42e43aced
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 8c9602dbe183501cc779fcb9b5d5a1e6e4bf6154
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180580"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816772"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Intune で Exchange On-Premises および Exchange Online の条件付きアクセス コンプライアンスを監視する
 
@@ -56,15 +55,15 @@ Intune 1704 リリース以降では、管理者は、内部設置型 Exchange C
 
 デバイスの詳細ウィンドウでは、さらに情報を表示できます。
 
--   **[概要]:** OS のバージョン、デバイス モデル、所有権、シリアル番号、デバイスの製造元、電話番号、デバイスの最終チェックイン日時など、デバイスのプロパティを見ることができます。
+-   **[概要]:** 次のようなデバイスのプロパティを見ることができます。OS のバージョン、デバイス モデル、所有権、シリアル番号、デバイスの製造元、電話番号、デバイスの最終チェックイン日時など。
 
--   **[プロパティ]:** デバイスの所有権 (個人または企業) を設定できます。
+-   **プロパティ:** デバイスの所有権 (個人または企業) を設定できます。
 
--   **[ハードウェア]:** [概要] の情報に加えて、ストレージの詳細 (合計容量と空き容量)、システム エンクロージャ、ネットワークの詳細、ネットワーク サービス、およびその他の条件付きアクセスのブロックの詳細が表示されます。
+-   **[ハードウェア]:**[概要] の情報に加えて、ストレージの詳細 (合計容量と空き容量)、システム エンクロージャ、ネットワークの詳細、ネットワーク サービス、およびその他の条件付きアクセスのブロックの詳細が表示されます。
 
 -   **[検出されたアプリ]:** デバイスにインストールされているすべてのアプリケーションが表示されます。 インストールされているアプリの一覧を .CSV 形式にエクスポートすることもできます。
 
--   **[ポリシー準拠状況]:** すべてのデバイス コンプライアンス ポリシーの詳細が表示されます。
+-   **[コンプライアンス]:** すべてのデバイス コンプライアンス ポリシーの詳細が表示されます。
 
 -   **[デバイス構成]:** すべてのデバイス構成の詳細が表示されます。
 

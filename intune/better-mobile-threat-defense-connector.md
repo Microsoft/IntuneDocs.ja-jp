@@ -6,19 +6,19 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
-ms.openlocfilehash: 8eeb55ca9e2c698d2d9e1814e9ea17f779326732
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 313c20699c30d20d1bbc9bb6aea9189a83b61f53
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178496"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816635"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Better Mobile Threat Defense コネクタと Intune
 
@@ -48,7 +48,7 @@ Intune デバイス コンプライアンス ポリシーには、Better Mobile 
 
 **悪意のあるアプリが検出されたときにブロックする:**
 
-![検出された悪意のあるアプリ](./media/better_mobile_maliciousapps_blocked.png)
+![検出された悪意のあるアプリを示す画像](./media/better_mobile_maliciousapps_blocked.png)
 
 **修復後、アクセスが与えられる:**
 
@@ -64,7 +64,7 @@ Intune デバイス コンプライアンス ポリシーには、Better Mobile 
 
 **修復後、アクセスが与えられる:**
 
-![修復するとアクセス権が付与される](./media/better_mobile_network_wifi_unblocked.png)
+![修復時にアクセス権が付与されたことを示す画像](./media/better_mobile_network_wifi_unblocked.png)
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいて SharePoint Online へのアクセスを制御する
 

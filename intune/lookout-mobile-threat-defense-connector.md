@@ -1,6 +1,5 @@
 ---
-title: Microsoft Intune を使用した Lookout MTD コネクタ
-titlesuffix: ''
+title: Microsoft Intune を使用した Lookout MTD コネクタ | Microsoft Intune
 description: モバイル デバイスから会社のリソースへのアクセスを制御するための Intune と Lookout Mobile Threat Defense (MTD) の統合について説明します。
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d7a545fe08acc9ab88086fa92be934c860ae4716
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bd61b10ee60e1f9413c22d0d618bc5c270dc76a6
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179543"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817077"
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense コネクターと Intune
 
@@ -63,34 +62,34 @@ Intune で Lookout Mobile Threat Defense を使用する場合の一般的なシ
 
 **悪意のあるアプリが検出されたときにブロックする:**
 
-![悪意のあるアプリに起因し、デバイスが非準拠として見なされたときにアクセスを禁止する条件付きアクセス ポリシーの図](./media/malicious-apps-blocked.png)
+![悪意のあるアプリによるアクセスをブロックするポリシーの概念図](./media/malicious-apps-blocked.png)
 
 **修復後、アクセスが与えられる:**
 
-![修復後、デバイスが準拠状態にあると判断された場合にアクセス権を付与する条件付きアクセス ポリシーを示す図](./media/malicious-apps-unblocked.png)
+![修復後にデバイスに付与されるアクセスを示す概念図](./media/malicious-apps-unblocked.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいてアクセスを制御する
 Man-in-the-middle 攻撃など、ネットワークに対する脅威を検出し、デバイスのリスクに基づいて WiFi ネットワークへのアクセスを保護します。
 
 **Wi-Fi 経由のネットワーク アクセスをブロックする:**
 
-![ネットワークの脅威に基づいて WiFi アクセスを禁止する条件付きアクセスの図](./media/network-wifi-blocked.png)
+![ネットワークの脅威に基づいた WiFi アクセスのブロックを示す画像](./media/network-wifi-blocked.png)
 
 **修復後、アクセスが与えられる:**
 
-![脅威の修復時にアクセスを許可する条件付きアクセスを示す図](./media/network-wifi-unblocked.png)
+![修復後にアクセスを許可する条件付きアクセスの概念図](./media/network-wifi-unblocked.png)
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいて SharePoint Online へのアクセスを制御する
 
 Man-in-the-middle 攻撃など、ネットワークに対する脅威を検出し、デバイスのリスクに基づいて会社内のファイルの同期を阻止します。
 
 **ネットワークの脅威が検出されたときに SharePoint Online をブロック:**
 
-![検出した脅威に基づいて SharePoint Online へのデバイスのアクセスをブロックする条件付きアクセスを示す図](./media/network-spo-blocked.png)
+![SharePoint Online へのアクセスをブロックする概念図](./media/network-spo-blocked.png)
 
 
 **修復後、アクセスが与えられる:**
 
-![ネットワークの脅威が修復された後でアクセスを許可する条件付きアクセスを示す図](./media/network-spo-unblocked.png)
+![ネットワークの脅威の修復後にアクセスを許可する概念図](./media/network-spo-unblocked.png)
 
 ## <a name="next-steps"></a>次の手順
 このソリューションを実装するために実行する必要がある主な手順を次に示します。

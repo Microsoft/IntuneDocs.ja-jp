@@ -1,12 +1,11 @@
 ---
-title: MTD アプリを追加し、Microsoft Intune に割り当てる
-titleSuffix: ''
+title: MTD アプリを追加し、Microsoft Intune に割り当てる | Microsoft Intune
 description: Intune を使用し、Mobile Threat Defense (MTD) アプリ、Microsoft Authenticator アプリ、iOS 構成ポリシーを Azure Portal で追加します。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,19 +15,19 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: afc5028e4ed57757832844637298caf1656d610c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d08a7332ba96f552b488ad3f5d00004d0445d7ec
+ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181175"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53995999"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune で Mobile Threat Defense (MTD) アプリを追加して割り当てる
 
 > [!NOTE] 
 > このトピックは、すべての Mobile Threat Defense パートナーに適用されます。
 
-脅威がモバイル デバイスで特定されたときにエンドユーザーが通知を受け取れるように、また、脅威を除去するための手引きが受けられるように、Intune を利用して MTD アプリを追加して展開することができます。
+脅威がモバイル デバイスで特定されたときにエンドユーザーが通知を受け取れるように、また、脅威を除去するための手引きが受けられるように、Intune を利用して Mobile Threat Defense (MTD) アプリを追加して展開することができます。
 
 
 ## <a name="before-you-begin"></a>始める前に
@@ -38,13 +37,12 @@ ms.locfileid: "52181175"
   -   [Intune にアプリを追加する](apps-add.md)。
   -   [iOS アプリ構成ポリシーを Intune に追加する](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
   -   [Intune でアプリを割り当てる](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune)。
-  -   [iOS アプリ構成ポリシーを追加する](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
 
 > [!TIP]
 > Intune ポータル サイトは Android デバイスでブローカーとして機能するため、ユーザーに Azure AD によってチェックされた ID が与えられます。
 
 ## <a name="configure-microsoft-authenticator-for-ios"></a>iOS 向け Microsoft Authenticator を構成する
-iOS デバイスでは、Azure AD によってチェックされた ID がユーザーに与えられるように、[Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) が必要です。 さらに、Intune で使用するには MTD の iOS アプリが通知される iOS アプリ構成ポリシーも必要です。
+iOS デバイスでは、Azure AD によってチェックされた ID がユーザーに与えられるように、[Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) が必要です。 さらに、Intune で使用する MTD の iOS アプリを設定する iOS アプリ構成ポリシーも必要です。
 
 iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 「**アプリ情報を構成する**」セクションの**手順 12** では、この [Microsoft Authenticator アプリ ストア URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) を使います。
 
@@ -145,11 +143,11 @@ MTD プロバイダーに対応するセクションを選択します。
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Lookout for Work アプリ構成ポリシー
 
-- [iOS アプリ構成ポリシーの使用](app-configuration-policies-use-ios.md)に関するトピックの説明に従って、iOS アプリ構成ポリシーを作成します。
+- [iOS アプリ構成ポリシーの使用](app-configuration-policies-use-ios.md)に関する記事の説明に従って、iOS アプリ構成ポリシーを作成します。
 
 ### <a name="sep-mobile-app-configuration-policy"></a>SEP モバイル アプリ構成ポリシー
 
--   [Symantec Endpoint Protection Management コンソール](https://aad.skycure.com)で以前に構成したものと同じ Azure AD アカウントを使います。これは、Intune クラシック ポータルにログインするためのものと同じアカウントにする必要があります。
+-   [Symantec Endpoint Protection Management コンソール](https://aad.skycure.com)で以前に構成したものと同じ Azure AD アカウントを使います。これは、Intune クラシック ポータルにサインインするためのものと同じアカウントにする必要があります。
 
 -   iOS アプリ構成ポリシーのファイルは次のようにして**ダウンロードする**必要があります。 
     -   [Symantec Endpoint Protection Management コンソール](https://aad.skycure.com)に移動し、管理者資格情報でサインインします。

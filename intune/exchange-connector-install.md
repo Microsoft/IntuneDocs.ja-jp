@@ -1,12 +1,11 @@
 ---
-title: Microsoft Intune のオンプレミス Exchange Connector をセットアップする
-titleSuffix: ''
+title: Microsoft Intune のオンプレミス Exchange Connector をセットアップする | Microsoft Intune
 description: Intune の登録と Exchange Active Sync (EAS) に基づいて、Exchange メールボックスへのデバイス アクセスを管理するには、オンプレミスの Exchange Connector を使います。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0dc87c20b0da6fcfcc4e3ab304c61c5b264aaf38
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 28886382da00f5c07129f4e69e0bbadf97634420
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112563"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817264"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Microsoft Intune Azure で Intune のオンプレミス Exchange コネクタをセットアップする
 
@@ -71,7 +70,7 @@ ms.locfileid: "53112563"
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>オンプレミス Exchange コネクタ ソフトウェア インストール パッケージのダウンロード
 
-1. オンプレミス Exchange コネクタのサポートされている Windows Server オペレーティング システムで、Exchange Server を使用するライセンスを持つオンプレミス Exchange Server 内の管理者であるユーザー アカウントを使用して、[Azure portal](http://portal.azure.com) を開きサインインします。
+1. オンプレミス Exchange コネクタのサポートされている Windows Server オペレーティング システムで、Exchange Server を使用するライセンスを持つオンプレミス Exchange Server 内の管理者であるユーザー アカウントを使用して、[Azure portal](https://portal.azure.com) を開きサインインします。
 
 2. 左側のメニューから **[すべてのサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
 

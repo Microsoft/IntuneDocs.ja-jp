@@ -1,12 +1,11 @@
 ---
-title: Exchange Online 用の Intune Exchange Connector
-titleSuffix: ''
+title: Exchange Online 用の Intune Exchange コネクタ | Microsoft Intune
 description: Exchange ActiveSync モバイル デバイス管理 (MDM) をサポートするために、Intune を Office 365 Exchange サービスに接続する。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 318bde24e42bfdf9bbcf15d83f42405fc06f7901
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9845ed1b809b611975c07c6c8335acd237d845c0
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184218"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816703"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Intune および Exchange Online 用に Exchange サービス コネクタを構成する
 この記事では、Microsoft Intune サービスを Exchange Online サービスまたは新しい Exchange Online Dedicated サービスに接続する方法を説明します。 Exchange Online Dedicated 環境が**新しい**バージョンか**従来の**バージョンかを確認するには、アカウント マネージャーに問い合わせてください。
@@ -52,7 +51,7 @@ Intune Exchange サービス コネクタが使用する Exchange Online ユー�
 
 ## <a name="set-up-the-service-to-service-connector"></a>Service to Service Connector を設定します。
 
-1. Exchange 管理者権限と[上記](#exchange-cmdlet-requirements)のコマンドレットのアクセス許可、有効な Intune ライセンス、およびグローバル管理者ロールを持つユーザー アカウントで、[Azure Portal](http://portal.azure.com) にサインインします。 Microsoft Intune は、現在サインインしているユーザーの電子メール アドレスを使用して、接続をセットアップします。
+1. Exchange 管理者権限と[上記](#exchange-cmdlet-requirements)のコマンドレットのアクセス許可、有効な Intune ライセンス、およびグローバル管理者ロールを持つユーザー アカウントで、[Azure Portal](https://portal.azure.com) にサインインします。 Microsoft Intune は、現在サインインしているユーザーの電子メール アドレスを使用して、接続をセットアップします。
 
 2. 左側のメニューから **[すべてのサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
 

@@ -15,12 +15,12 @@ ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c6ab669b1f9331d0bd0a70ca5f86ac7f3f190fb6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bda8512bd28351c384bfe53b46db62e5a86fe9bd
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180392"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817281"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>ネットワーク アクセス制御 (NAC) と Intune の統合
 
@@ -48,7 +48,7 @@ NAC は条件付きアクセスと連携して、アクセス制御の決定を�
 
 以下の一覧には、Intune と統合されたときの NAC 統合のしくみの概要が示されています。 最初の 3 つの手順 (1 - 3) では、オンボード プロセスについて説明します。 手順 4 から 9 では、NAC ソリューションが Intune と統合された後の継続的な動作について説明します。
 
-![NAC が Intune と連携する方法](./media/ca-intune-common-ways-2.png)
+![NAC が Intune と連携する方法の概念図](./media/ca-intune-common-ways-2.png)
 
 1. NAC パートナー ソリューションを Azure Active Directory (AAD) に登録し、Intune NAC API への委任されたアクセス許可を付与します。
 2. Intune 検出 URL などの適切な設定で、NAC パートナー ソリューションを構成します。

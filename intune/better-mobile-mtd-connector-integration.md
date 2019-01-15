@@ -6,19 +6,19 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
-ms.openlocfilehash: aa447721449b2b3733e20d9f65f0253e9123228b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 761605a74e6aeda65d9c6361b18b51e255873ac1
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184207"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816533"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>Better Mobile と Intune を統合する
 
@@ -62,7 +62,7 @@ Better Mobile アプリの承認プロセスは以下で構成されます。
 1. [Better Mobile の管理コンソール](https://aad.bmobi.net)に移動し、資格情報を使用してサインインします。
 2. **[統合]** > **[EMM/MDM]** > **[アカウントの追加]** の順に選択します。
 
-     ![Better Mobile の管理コンソール](media/better_mobile_console.png)
+     ![Better Mobile の管理コンソールの画像](media/better_mobile_console.png)
  
 3. **[Intune]** を選択します。
 4. **[アカウント名]** の横に、記述子を入力します。 

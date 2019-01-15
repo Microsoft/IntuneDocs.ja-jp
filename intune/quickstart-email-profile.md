@@ -16,14 +16,14 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3da4208b3036b0252e2e5bd26d8361d04642183a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 83371d14215eb9ed2298796279d232ffbc7d129f
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189709"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817043"
 ---
-# <a name="quickstart-create-an-email-device-profile-for-ios"></a>クイック スタート: iOS 用の電子メール デバイス プロファイルを作成する
+# <a name="quickstart-create-an-email-device-profile-for-ios"></a>クイック スタート:iOS 用の電子メール デバイス プロファイルを作成する
 
 このクイック スタートでは、iOS デバイス用の電子メール デバイス プロファイルを作成する方法を確認します。 このプロファイルでは、iOS デバイス上の組み込みの電子メール アプリが会社の電子メールに接続するために必要な設定を指定します。 電子メール デバイス プロファイルは、デバイス間で設定を標準化するのに役立ちます。これにより、エンドユーザーは自分自身では何も設定する必要なく、個人のデバイスで会社の電子メールにアクセスできます。 電子メールの保護をさらに強化するには、電子メール プロファイルを使用してデバイスが準拠しているかどうかを判断し、準拠しているデバイスのみが電子メールにアクセスできるように、条件付きアクセスを設定します。 電子メール プロファイルの詳細については、「[Microsoft Intune で電子メールの設定を構成する方法](email-settings-configure.md)」を参照してください。
 
@@ -45,16 +45,16 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
    - **[プラットフォーム]** で **[iOS]** を選択します。
    - **[プロファイルの種類]** で、**[電子メール]** を選択します。
     
-     ![iOS 用の電子メール プロファイルを作成する](media/quickstart-email-profile/ios-email-profile-name.png)
+     ![iOS で使用するための電子メール プロファイルを作成する](media/quickstart-email-profile/ios-email-profile-name.png)
 
 5. **[設定]** を選択し、次の設定を入力します (その他の設定は既定値のままにします)。
-   - **[電子メール サーバー]**: このクイック スタートでは、「**outlook.office365.com**」と入力します。 この設定では、iOS のメール アプリが電子メールへの接続に使用する電子メール サーバーの Exchange の場所 (URL) を指定します。
-   - **[アカウント名]**: **[会社の電子メール]** を入力します。
-   - **[AAD からのユーザー名の属性]**: Intune が Azure Active Directory (Azure AD) から取得する名前。 Intune では、この名前を使用してこのプロファイルのユーザー名を動的に生成します。 このクイック スタートでは、プロファイルのユーザー名として **[ユーザー プリンシパル名]** (たとえば、user1@contoso.com) を使用すると仮定します。
-   - **[AAD からのメール アドレス属性]**: この設定は、Exchange へのサインインに使用する Azure AD からの電子メール アドレスです。 このクイック スタートでは、**[ユーザー プリンシパル名]** を選択します。
-   - **[認証方法]**: このクイック スタートでは、**[ユーザー名とパスワード]** を選択します (Intune に証明書を既に設定している場合は、**[証明書]** を選択することもできます)。
+   - **[電子メール サーバー]**:このクイック スタートでは、「**outlook.office365.com**」と入力します。 この設定では、iOS のメール アプリが電子メールへの接続に使用する電子メール サーバーの Exchange の場所 (URL) を指定します。
+   - **[アカウント名]**:**会社の電子メール**を入力します。
+   - **[AAD からのユーザー名の属性]**:Intune が Azure Active Directory (Azure AD) から取得する名前。 Intune では、この名前を使用してこのプロファイルのユーザー名を動的に生成します。 このクイック スタートでは、プロファイルのユーザー名として **[ユーザー プリンシパル名]** (たとえば、user1@contoso.com) を使用すると仮定します。
+   - **[AAD からのメール アドレス属性]**:この設定は、Exchange へのサインインに使用する Azure AD からの電子メール アドレスです。 このクイック スタートでは、**[ユーザー プリンシパル名]** を選択します。
+   - **[認証方法]**:このクイック スタートでは、**[ユーザー名とパスワード]** を選択します (Intune に証明書を既に設定している場合は、**[証明書]** を選択することもできます)。
     
-     ![iOS 用の電子メール プロファイルを作成する](media/quickstart-email-profile/ios-email-profile.png)
+     ![iOS で使用する電子メール プロファイルを作成する](media/quickstart-email-profile/ios-email-profile.png)
 
 6. **[OK]** を選択します。
 7. **[作成]** を選択します。 プロファイルの一覧に、ダッシュボードが表示された状態で新しいプロファイルが表示されます。これにより、プロファイルが iOS デバイスおよび iOS ユーザーにどのように割り当てられているかを監視できます。

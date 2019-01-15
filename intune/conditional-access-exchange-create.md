@@ -1,5 +1,5 @@
 ---
-title: Exchange の条件付きアクセス ポリシーを作成する
+title: Exchange の条件付きアクセス ポリシーを作成する | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Intune で Exchange On-Premises と従来の Exchange Online Dedicated の条件付きアクセスを構成します。
 keywords: ''
@@ -15,12 +15,12 @@ ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0a539000153ad45b5256e4e63086fa72fee44947
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ed996ec17ab0c8144286eeed0a87f07b35da2969
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186105"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817060"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange On-Premises と従来の Exchange Online Dedicated の条件付きアクセス ポリシーを作成する
 
@@ -82,7 +82,7 @@ Windows 8.1 以降用のネイティブ **メール** アプリケーション (
 
 1. 左側のメニューから **[すべてのサービス]** を選択し、テキスト ボックス フィルターに「 **Intune** 」と入力します。
 
-1.  **[Intune]** を選ぶと、**Intune ダッシュボード**が表示されます。
+1.  **[Intune]** を選ぶと、 **Intune ダッシュボード** が表示されます。
 
 1. **[オンプレミス アクセス]** を選択します。 **[オンプレミス アクセス]** ウィンドウには、条件付きアクセス ポリシーの状態と、その影響を受けるデバイスが表示されます。
 

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11//28/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2a5b16e828b1a2e680f41f50aa603b1bfe2ad9fa
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 35fd4650d5508995f879f4d83030f70fe9c550b8
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728822"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817366"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>アプリ保護ポリシーを作成して割り当てる方法
 
@@ -72,11 +72,11 @@ MAM でサポートされるアプリの一覧については、[MAM アプリ�
 
 2. \***[Intune App Protection]** ウィンドウで、**[割り当て]** を選択し、**[Intune App Protection - 割り当て]** ウィンドウを開きます。 *[含める]* タブで **[含めるグループを選択]** を選択します。 
 
-   ![[含めるグループを選択] メニュー オプションが強調表示された [割り当て] ウィンドウのスクリーンショット](./media/app-protection-policy-add-users.png)
+   ![[割り当て] ウィンドウと [含めるグループを選択] メニュー オプションのスクリーンショット](./media/app-protection-policy-add-users.png)
 
 3.  **Azure Active Directory** にあるすべてのセキュリティ グループの一覧が表示されます。 このポリシーを適用するユーザー グループを選択し、**[選択]** を選択します。 
 
-    ![Azure Active Directory ユーザーの一覧を示している [ユーザー グループの追加] ウィンドウのスクリーンショット](./media/azure-ad-user-group-list.png)
+    ![[ユーザー グループの追加] ウィンドウと Azure AD ユーザーの一覧のスクリーンショット](./media/azure-ad-user-group-list.png)
 
 4.  グループを含めたり除外したりした後で、**[保存]** を選択して構成を保存し、ポリシーをユーザーにデプロイします。 構成を保存する前に **[破棄]** を選択すると、"*[含める]*" タブと "*[除外する]*" タブで行ったすべての変更内容が破棄されます。   
  
@@ -138,7 +138,7 @@ Intune アプリ保護ポリシーの対象はユーザーの ID であるため
 
 これらのポリシーを作成するには、Intune コンソールで **[クライアント アプリ]**、**[アプリ保護ポリシー]** の順に参照し、**[ポリシーの作成]** を選択します。 既存のアプリ保護ポリシーを編集することもできます。 マネージド デバイスとアンマネージド デバイスの両方にアプリ保護ポリシーを適用するには、**[すべてのアプリの種類を対象にする]** が **[はい]** (既定値) に設定されていることを確認してください。 管理状態に基づいて細かく割り当てる場合は、**[すべてのアプリの種類を対象にする]** を **[いいえ]** に設定します。 
 
-![[すべてのアプリの種類を対象にする] が選択された [Add an policy]\(ポリシーの追加\) ブレードのスクリーンショット](./media/app-protection-policies-target-all.png)
+![[ポリシーの追加] ブレードと [すべてのアプリの種類を対象にする] のスクリーンショット](./media/app-protection-policies-target-all.png)
 
 iOS の場合、Intune に登録されているデバイスのアプリに APP 設定を行うには、さらにアプリを構成設定する必要があります。
 - **IntuneMAMUPN** を、MDM で管理されているすべてのアプリケーションに構成する必要があります。 詳細については、「[Microsoft Intune で iOS アプリ間のデータ転送を管理する方法](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)」を参照してください。

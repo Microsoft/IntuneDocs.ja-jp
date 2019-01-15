@@ -1,12 +1,12 @@
 ---
-title: Jamf デバイスのデバイス コンプライアンス ポリシー
+title: Jamf デバイスのデバイス コンプライアンス ポリシー | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Microsoft Intune コンプライアンス ポリシーと Azure Active Directory の条件付きアクセスを使って、Jamf で管理されるデバイスをセキュリティ保護できます。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/16/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6fa89e96b05e5344dec32fb452be8ebeaa58bc12
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d7d054b11a4abc969ad411169d0222be37fd6711
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182025"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817230"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Jamf Pro で管理された Mac にコンプライアンスを適用します
 
-適用先: Azure Portal での Intune
+適用先:Azure Portal での Intune
 
 Azure Active Directory および Microsoft Intune の条件付きアクセス ポリシーを使用して、エンド ユーザーが組織の要件に準拠することを確実にできます。 これらのポリシーは [Jamf Pro で管理されている](conditional-access-integrate-jamf.md) Mac に適用できます。 これには、Intune と Jamf Pro の両方のコンソールへのアクセスが必要です。
 
@@ -57,7 +57,7 @@ Azure Active Directory および Microsoft Intune の条件付きアクセス �
 ## <a name="create-a-policy-in-jamf-pro-to-have-users-register-their-devices-with-azure-active-directory"></a>ユーザーに Azure Active Directory で自分のデバイスを登録させるためのポリシーを Jamf Pro で作成する
 
 > [!NOTE]
-> 次の手順に進む前に、macOS 用の[ポータル サイトの展開](conditional-access-assign-jamf.md#require-the-company-portal-app-for-macos)を行う必要があります。  
+> 次の手順に進む前に、macOS 用の[ポータル サイトの展開](conditional-access-assign-jamf.md#deploy-the-company-portal-app-for-macos-in-jamf-pro)を行う必要があります。  
 
 エンドユーザーは、デバイスを Jamf Pro によって管理されるデバイスとして Azure AD で登録するために、Jamf セルフ サービスを経由してポータル サイト アプリを起動する必要があります。 この場合、エンドユーザーは操作を実行する必要があります。 電子メール、Jamf Pro 通知、またはエンドユーザーへの他の通知方法を通して、Jamf セルフ サービスでボタンをクリックするように[エンド ユーザーに連絡する](end-user-educate.md)ことをお勧めします。
 

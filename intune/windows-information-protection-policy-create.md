@@ -1,6 +1,5 @@
 ---
-title: Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
-titlesuffix: Microsoft Intune
+title: Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する | Microsoft Intune
 description: Microsoft Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b5599e98b9712d30979c327167b19b159d3ff5dc
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 57d0aaebd0ed07a78b32eec64a6dc2817bf5e7f5
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181331"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817315"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 
@@ -35,9 +34,9 @@ WIP ポリシーを追加するときのいくつかの概念について理解�
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>許可されているアプリと適用から除外されるアプリの一覧
 
--   **[Protected apps]\(保護されたアプリ\)**: このポリシーに準拠する必要があるアプリです。
+-   **[Protected apps]\(保護されたアプリ\)**:このポリシーに準拠する必要があるアプリです。
 
--   **[適用から除外されるアプリ]**: これらのアプリはこのポリシーから除外され、制限なしに企業データにアクセスできます。
+-   **[適用から除外されるアプリ]**:これらのアプリはこのポリシーから除外され、制限なしに企業データにアクセスできます。
 
 ### <a name="types-of-apps"></a>アプリの種類
 
@@ -75,11 +74,11 @@ WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを
 4. **[クライアント アプリ]** ブレードで、**[アプリ保護ポリシー]** を選択します。
 5. **[ポリシーの追加]** を選択して、**[ポリシーの追加]** ブレードを表示します。
 6. 次の値を追加します。
-    - **[名前]:** (必須) 新しいポリシーの名前を入力します。
-    - **[説明]:** (省略可能) 説明を入力します。
+    - **[名前]:**(必須) 新しいポリシーの名前を入力します。
+    - **説明:**(省略可能) 説明を入力します。
     - **[プラットフォーム]:** アプリ保護ポリシーのサポート対象プラットフォームとして **[Windows 10]** を選択します。
     - **[登録の状態]:** ポリシーの登録状態として、**[未登録]** を選択します。
-7.  **[作成]** を選択します。 ポリシーが作成されて、**[アプリ保護ポリシー]** ブレードのテーブルに表示されます。
+7.  [**作成**] を選択します。 ポリシーが作成されて、**[アプリ保護ポリシー]** ブレードのテーブルに表示されます。
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>おすすめのアプリを保護されたアプリの一覧に追加するには
 
@@ -149,7 +148,7 @@ WIP を無効にすると、ローカルに接続されたドライブ上の WIP
 
 1.  **[アプリに関するポリシー]** ブレードでポリシーの名前を選び、**[必須の設定]** を選びます。
 
-    ![学習モードのスクリーンショット](./media/learning-mode-sc1.png)
+    ![[学習モード] ウィンドウのスクリーンショット](./media/learning-mode-sc1.png)
 
 1.  設定を選択して、**[保存]** を選びます。
 

@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6f0138da6e9ea427ad07ad3b41dd22b7319bb044
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 889e298d3d04429c1b9be2ee70519d68063953ab
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112580"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006303"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>モバイル デバイス管理機関の設定
 
@@ -36,7 +36,7 @@ ms.locfileid: "53112580"
 - **Intune ハイブリッド** - Intune クラウド ソリューションと System Center Configuration Manager の統合。 Configuration Manager コンソールを使用して Intune を構成します。 [Configuration Manager で MDM 機関を設定](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription)します。 
 
     > [!Important]
-    >ハイブリッド MDM への新規顧客のオンボードは、次のリリースから行われなくなります。 詳しくは、「[MC146431 Plan for Change blog](https://blogs.technet.microsoft.com/intunesupport/2018/08/14/move-from-hybrid-mobile-device-management-to-intune-on-azure/)」(MC146431 - 変更計画) に関するブログをご覧ください。
+    >ハイブリッド MDM への新規顧客のオンボードは、次のリリースから行われなくなります。 詳細については、「[Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150)」 (ハイブリッド MDM から Azure での Intune に移行する) のブログ記事を参照してください。
 
 - **Office 365 のモバイル デバイス管理** - Office 365 と Intune クラウド ソリューションの統合。 Office 365 管理センターから Intune を構成します。 Intune スタンドアロンで利用できる機能の一部が含まれます。 Office 365 管理センターで MDM 機関を設定します。
 

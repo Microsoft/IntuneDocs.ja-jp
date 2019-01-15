@@ -1,6 +1,5 @@
 ---
-title: Symantec と Microsoft Intune の統合を設定する
-titlesuffix: ''
+title: Symantec と Microsoft Intune の統合を設定する | Microsoft Intune
 description: Microsoft Intune で Symantec Endpoint Protection Mobile ソリューションをセットアップし、モバイル デバイスから会社のリソースへのアクセスを制御する方法。
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: accd8dea2b997a6eb1cfec22a6e822e984ef710d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 4b519c30f432a6d8584c2bd5bca94ead95a862b1
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180155"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817349"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Symantec Endpoint Protection Mobile と Intune の統合を設定する
 
@@ -68,7 +67,7 @@ SEP Mobile では、Intune との統合に 2 つのモードがあります。
 
 4.  **[iOS App]\(iOS アプリ\)** の **[Add to Active Directory]\(Active Directory に追加\)** を選びます。
 
-    ![Symantec Endpoint Protection Mobile Management コンソールでの iOS アプリの画像](./media/symantec-portal-basic-add.png)
+    ![Symantec Endpoint Protection Mobile Management コンソールの画像](./media/symantec-portal-basic-add.png)
 
 5.  ログイン ページが開いたら、Intune の資格情報を入力し、**[Accept]\(同意する\)** を選びます。
 
@@ -90,7 +89,7 @@ SEP Mobile を実行しているすべてのデバイスを含む Azure AD セ�
 
 SEP Mobile は、Mobile Threat Defense サービスを実行しているデバイスと Azure AD セキュリティ グループを同期します。
 
-![SEP Mobile 管理コンソールで完了したセキュリティ グループの構成を示す画像](./media/symantec-portal-basic-status.png)
+![SEP Mobile 管理コンソールのセキュリティ グループの構成の画像](./media/symantec-portal-basic-status.png)
 
 ## <a name="to-set-up-the-full-integration-between-intune-and-sep-mobile"></a>Intune と SEP Mobile の間に完全統合を設定するには
 

@@ -1,6 +1,5 @@
 ---
-title: Microsoft Intune を使用した Symantec コネクタ
-titlesuffix: ''
+title: Microsoft Intune を使用した Symantec コネクタ | Microsoft Intune
 description: モバイル デバイスから会社のリソースへのアクセスを制御するための Intune と Symantec Endpoint Protection Mobile の統合について説明します。
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1503bdb9b62e7e9fb4b2d5a0482e058d6fed31f7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5ba90d47f13ac22465927fc5724a254f121c800e
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187702"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817125"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile コネクタ
 
@@ -67,11 +66,11 @@ Intune では、SEP Mobile との統合に 2 つのモードがあります。
 
 **悪意のあるアプリが検出されたときにブロックする:**
 
-![検出された悪意のあるアプリ](./media/symantec-arch-1.png)
+![検出された悪意のあるアプリの概念図](./media/symantec-arch-1.png)
 
 **修復後、アクセスが与えられる:**
 
-![悪意のあるアプリが検出された後、修復するとアクセス権が付与される](./media/symantec-arch-2.png)
+![悪意のあるアプリが検出された後、修復時に付与されるアクセス権の画像](./media/symantec-arch-2.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいてアクセスを制御する
 
