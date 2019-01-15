@@ -2,8 +2,8 @@
 title: Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する | Microsoft Intune
 description: Microsoft Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 10/04/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 57d0aaebd0ed07a78b32eec64a6dc2817bf5e7f5
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 9f91f5b9779c3067a3120864eaf265346efd8a02
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817315"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297436"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 
@@ -78,7 +78,7 @@ WIP アプリ保護ポリシーを作成する前に、MAM プロバイダーを
     - **説明:**(省略可能) 説明を入力します。
     - **[プラットフォーム]:** アプリ保護ポリシーのサポート対象プラットフォームとして **[Windows 10]** を選択します。
     - **[登録の状態]:** ポリシーの登録状態として、**[未登録]** を選択します。
-7.  [**作成**] を選択します。 ポリシーが作成されて、**[アプリ保護ポリシー]** ブレードのテーブルに表示されます。
+7.  **[作成]** を選択します。 ポリシーが作成されて、**[アプリ保護ポリシー]** ブレードのテーブルに表示されます。
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>おすすめのアプリを保護されたアプリの一覧に追加するには
 
