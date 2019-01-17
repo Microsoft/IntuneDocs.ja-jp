@@ -583,12 +583,12 @@ items:
           href: data-apple-sends-to-intune.md
         - name: Google から Intune に送られるデータ
           href: data-google-sends-to-intune.md
+        - name: Jamf Pro から Intune に送られるデータ
+          href: data-jamf-sends-to-intune.md
         - name: Intune から Apple に送られるデータ
           href: data-intune-sends-to-apple.md
         - name: Intune から Google に送られるデータ
           href: data-intune-sends-to-google.md
-        - name: Intune に Jamf Pro から共有する情報
-          href: conditional-access-integrate-jamf.md
       - name: 個人データの表示と修正
         href: privacy-data-view-correct.md
       - name: 監査、エクスポート、削除
@@ -854,9 +854,9 @@ items:
         href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
       - name: ポリシーの競合を解決する
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
-ms.openlocfilehash: 1f17ae67e609e9836c29f6afd810bbea5ece99b4
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 2939459eafe7771c33ec20fd150c36c7808c2b1c
+ms.sourcegitcommit: 7c41f42d6e398ed46aa602ec8aaa4f39aaf92772
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203588"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54325051"
