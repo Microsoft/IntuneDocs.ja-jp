@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: e9d3b82fb544b1c73671438440b108573343795a
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: e7b60ecbf2a9a110b68807f8d1dce4db21f8f61d
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324907"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316918"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために Android アプリを準備する
 
@@ -147,39 +147,6 @@ Android では、Android デバイスにインストールするために、す�
 -   アプリケーションが信頼されたソースからのものであることを確認します。
 
 -   ラップされたアプリが格納されている出力ディレクトリをセキュリティで保護します。 出力にユーザー レベルのディレクトリを使用することを検討します。
-
-## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-wrapped-android-lob-app-and-enabling-adal-sso-optional"></a>自動 APP-WE サービス登録の場合にユーザー ログイン プロンプトを必須にする、ラップされた Android LOB アプリを使用するために Intune のアプリ保護ポリシーを必須にする、ADAL SSO を有効にする (省略可能)
-
-ここでは、自動 APP-WE サービス登録の場合にアプリの起動時にユーザー プロンプトを必須にする (このセクションでは、**既定の登録**と呼びます) 場合と、Intune で保護されたユーザーにのみラップされた Android LOB アプリの使用を許可する Intune アプリ保護ポリシーを必須にする場合のガイダンスを示します。 また、ラップされた Android LOB アプリで SSO を有効にする方法についても説明します。 
-
-> [!NOTE] 
-> **既定の登録**の利点には、デバイス上のアプリの APP-WE サービスからポリシーを取得する方法が簡単なことなどがあります。
-
-### <a name="general-requirements"></a>一般的な要件
-* Intune SDK チームから、アプリのアプリケーション ID が求められます。 アプリケーション ID は、[Azure Portal](https://portal.azure.com/) の **[すべてのアプリ]** の **[アプリケーション ID]** の列にあります。 Intune SDK チームに問い合わせるには、msintuneappsdk@microsoft.com に電子メールを送信することをお勧めします。
-     
-### <a name="working-with-the-intune-sdk"></a>Intune SDK の使用
-これらの手順は、エンド ユーザー デバイスで使用するために Intune アプリ保護ポリシーが必要なすべての Android および Xamarin アプリ向けです。
-
-1. [Android 用 Intune SDK ガイド](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)のセクションで定義されている手順を使用して ADAL を構成します。
-
-> [!NOTE]
-> アプリに関連付けられている "クライアント ID" という用語は、アプリに関連付けられている Azure Portal の用語 "アプリケーション ID" と同じです。 
-> * SSO を有効にするには、「ADAL の一般的な構成」の 2. が必要です。
-
-2. マニフェストに次の値を入力して、既定の登録を有効にします。
-   ```xml
-   <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
-   ```
-   > [!NOTE] 
-   > これは、アプリ内での唯一の MAM-WE 統合である必要があります。 MAMEnrollmentManager API を呼び出す他の試行がある場合、競合が発生する可能性があります。
-
-3. マニフェストに次の値を入力して、必要な MAM ポリシーを有効にします。
-   ```xml
-   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
-   ```
-   > [!NOTE] 
-   > その結果、ユーザーの使用前に、デバイスにポータル サイトをダウンロードし、既定の登録フローを完了することを強制します。
 
 ### <a name="see-also"></a>関連項目
 - [Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](apps-prepare-mobile-application-management.md)
