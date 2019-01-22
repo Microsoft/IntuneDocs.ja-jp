@@ -2,10 +2,10 @@
 title: Microsoft Intune で Windows Update for Business を構成する - Azure | Microsoft Docs
 description: Windows 10 デバイス上で Microsoft Intune を使用することにより、プロファイル内のソフトウェア更新プログラムの設定を更新プログラム リングの作成に更新し、コンプライアンスを検証し、Windows Update for Business の設定で更新プログラムを一時停止します。
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 01/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: c39faf6bb6a22cb861eb655edd6358b345b87c7e
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112767"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297385"
 ---
 # <a name="manage-software-updates-in-intune"></a>Intune でのソフトウェア更新プログラムの管理
 
@@ -76,16 +76,12 @@ Windows Update for Business を使用して、更新管理エクスペリエン�
 1. [Azure portal](https://portal.azure.com) で、**[すべてのサービス]** を選択し、**Intune** でフィルター処理して、**Microsoft Intune** を選びます。
 2. **[ソフトウェア更新プログラム]** > **[Windows 10 更新プログラムのリング]** > **[作成]** の順に選択します。
 3. 名前、説明 (省略可能) を入力し、**[構成]** を選択します。
-4. **[設定]** で、次の情報を入力します。
+4. **[設定]** で、次の情報を入力します。  
 
+   **設定の更新**  
    - **サービス チャネル**:デバイスが Windows 更新プログラムを受信するチャネルを設定します。
    - **Microsoft 製品の更新プログラム**:Microsoft Update のアプリの更新プログラムをスキャンするように選択します。
    - **Windows ドライバー**:更新プログラムから Windows Update ドライバーを除外するように選択します。
-   - **自動更新の動作**:再開または再起動するときに自動更新プログラムをインストールする方法を選択します。 詳しくは、「[Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate)」をご覧ください。
-     - **自動動作の頻度**:更新プログラムの動作として **[Auto install and restart at scheduled time]\(スケジュールされた時刻に自動的にインストールして再起動する\)** を選択した場合に、この設定が表示されます。 この設定を使用して、週、日、時刻など、更新プログラムをインストールするタイミングをスケジュールします。
-
-   - **再起動チェック**:既定で有効になっています。 デバイスの再起動時には、アクティブなユーザー、バッテリ レベル、実行中のゲームなどについて、いくつかのチェックが実行されます。 デバイスの再起動時にこれらのチェックをスキップするには、**[スキップ]** を選択します。
-
    - **品質更新プログラムの遅延期間 (日数)**:品質更新プログラムを遅延させる日数を指定します。 これらの品質更新プログラムの受信を、リリースから最大 30 日間延期できます。
 
      品質更新プログラムは、既存の Windows 機能の修正プログラムや機能強化で、月の第 2 火曜日に公開されるのが一般的です。 これらの更新プログラムは、Windows Update for Business を介した品質更新プログラムでは、受信のみされます ('B' リリース)。一方、その他の更新プログラムは、いつでも Microsoft からリリースできる場合があります。 Windows Update 上で品質更新プログラムが入手できるようになってから、その受信を延期するかどうか、どれくらい延期するかを定義できます。 詳細については、「[Windows Update for Business を使った更新プログラムの展開](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb)」を参照してください。
@@ -96,9 +92,21 @@ Windows Update for Business を使用して、更新管理エクスペリエン�
 
      次に例を示します。**サービス チャネルが半期チャネル (対象指定) に設定され、遅延期間が 30 日の場合**:機能更新プログラム X が Windows Update で 1 月に半期チャネル (対象指定) として最初に公開されるものとします。 デバイスは 2 月になるまで (30 日後まで) 更新プログラムを受信しません。
 
-     **サービス チャネルが半期チャネルに設定され、遅延期間が 30 日の場合**:機能更新プログラム X が Windows Update で 1 月に半期チャネル (対象指定) として最初に公開されるものとします。 4 か月後の 4 月に、機能更新プログラム X が半期チャネルにリリースされます。 デバイスは、この半期チャネル リリースの 30 日後に機能更新プログラムを受信し、5 月に更新されます。
+     **サービス チャネルが半期チャネルに設定され、遅延期間が 30 日の場合**:機能更新プログラム X が Windows Update で 1 月に半期チャネル (対象指定) として最初に公開されるものとします。 4 か月後の 4 月に、機能更新プログラム X が半期チャネルにリリースされます。 デバイスは、この半期チャネル リリースの 30 日後に機能更新プログラムを受信し、5 月に更新されます。  
 
-   - **配信の最適化ダウンロード モード**:デバイスが Windows 更新プログラムをダウンロードする方法を選択します。 詳細については、「[DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode)」を参照してください。
+   **ユーザー エクスペリエンスの設定**
+   
+   - **自動更新の動作**:再開または再起動するときに自動更新プログラムをインストールする方法を選択します。 詳しくは、「[Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate)」をご覧ください。
+
+     *[既定にリセット]* の設定では、*2018 年 10 月更新*以降を実行している Windows 10 コンピューター上で元の自動更新設定を復元します。  
+
+     - **自動動作の頻度**:更新プログラムの動作として **[Auto install and restart at scheduled time]\(スケジュールされた時刻に自動的にインストールして再起動する\)** を選択した場合に、この設定が表示されます。 この設定を使用して、週、日、時刻など、更新プログラムをインストールするタイミングをスケジュールします。
+
+   - **再起動チェック**:既定で有効になります。 デバイスの再起動時には、アクティブなユーザー、バッテリ レベル、実行中のゲームなどについて、いくつかのチェックが実行されます。 デバイスの再起動時にこれらのチェックをスキップするには、**[スキップ]** を選択します。
+
+   - **Block user from pausing Windows updates \(ユーザーによる Windows 更新プログラムの一時停止をブロックする\)**:既定で有効になっています。 この設定を使用すると、コンピューターの "*設定*" から、ユーザーによる更新プログラムのインストールの一時停止を許可またはブロックできます。 
+      
+   - **配信の最適化ダウンロード モード**:配信の最適化は、ソフトウェアの更新プログラムで Windows 10 更新リングの一部として構成されなくなりました。 現在、配信の最適化はデバイスの構成で設定されます。 ただし、以前の構成は引き続きコンソールで使用できます。 これらの以前の構成は、*[未構成]* へと編集することで削除できますが、それ以外の変更を行うことはできません。 新しいポリシーと既存のポリシーの間の競合を避けるには、[既存の更新リングから配信の最適化へ移動する](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization)方法に関するページを参照し、設定を配信の最適化プロファイルに移動します。 
 
 5. 終了したら、**[OK]** を選択します。 **[更新プログラムのリングの作成]** で、**[作成]** を選択します。
 

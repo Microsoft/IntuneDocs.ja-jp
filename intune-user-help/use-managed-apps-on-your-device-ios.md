@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/14/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0f8139d5a17d1a6594354994fda6c0eef64a22f3
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: c3f1c28fb94823dd3370080c62c0d6f3d0da521e
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147504"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203265"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>iOS デバイスで管理対象アプリを使用する
 
@@ -34,7 +34,7 @@ ms.locfileid: "43147504"
 
 ![managed-apps-message-ios](./media/managed-apps-message.png)
 
-### <a name="how-do-i-get-managed-apps"></a>管理対象アプリを取得する方法
+## <a name="how-do-i-get-managed-apps"></a>管理対象アプリを取得する方法  
 管理対象アプリはいくつかの方法で取得できます。
 
 -   デバイスが Microsoft Intune に登録されるときに、ポータル サイト アプリまたはポータル Web サイトからアプリをインストールするか、または会社のサポートがアプリをデバイスにインストールする場合があります。 登録については、「[Intune に iOS デバイスを登録する](enroll-your-device-in-intune-ios.md)」または「[Intune に macOS デバイスを登録する](enroll-your-device-in-intune-macos.md)」を参照してください。
@@ -43,7 +43,16 @@ ms.locfileid: "43147504"
 
 会社のサポートは、ユーザーがインストールするアプリ用に複数のライセンスを購入している場合があります。 Apple Volume Purchase Program 契約の同意を求めるメッセージが表示された場合、これは正常であり、同意することができます。 同意しない場合は、アプリをインストールすることができません。
 
-### <a name="what-can-my-company-support-manage-in-an-app"></a>会社のサポートがアプリで管理できるもの
+## <a name="available-apps"></a>Available apps   
+ 組織では、職場または学校で適切かつ便利なアプリを選択します。 ポータル サイト内にはこうしたアプリのみが存在します。   
+
+ アプリは、デバイスの種類に基づいて使用が許可されます。 たとえば、iOS 用ポータル サイト アプリを使用している場合、iOS アプリにはアクセスできますが、Android アプリにはアクセスできません。   
+
+## <a name="request-an-app-for-work-or-school"></a>職場または学校用のアプリを要求する   
+ 必要なアプリがあるが、ポータル サイト内に存在しない場合は、そのアプリを要求できます。 ポータル サイト アプリの **[サポート]** タブで、**ヘルプデスク**の連絡先詳細を確認してください。同じ連絡先情報は、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)でも確認できます。   
+ 
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>会社のサポートがアプリで管理できるもの  
 以下は、会社のサポートがアプリで管理でき、デバイス上での会社データとのやり取りに影響するオプションの例です。
 
 -   特定の web サイトへのアクセス

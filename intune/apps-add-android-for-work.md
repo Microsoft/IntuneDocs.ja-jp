@@ -1,12 +1,12 @@
 ---
-title: Android 仕事用プロファイルのデバイスにアプリを割り当てる
+title: マネージド Google Play アプリを Android エンタープライズ デバイスに割り当てる
 titlesuffix: Microsoft Intune
-description: Managed Google Play ストアから Android 仕事用プロファイルのデバイスにアプリを同期してから割り当てる方法を説明します。
+description: マネージド Google Play ストアから Android エンタープライズ デバイスにアプリを同期してから割り当てる方法について説明します。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
-ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
+ms.openlocfilehash: 135aa120d8c0e441c59e9b9b3c5bb8ee6aa17229
+ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305932"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54239576"
 ---
-# <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Intune で Android 仕事用プロファイルのデバイスにアプリを割り当てる
+# <a name="assign-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Intune 内でマネージド Google Play アプリを Android エンタープライズ デバイスに割り当てる
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android Enterprise は、Android 仕事用プロファイルのデバイスおよび Kiosk デバイス用のプログラムです。 Android 仕事用プロファイルのデバイスの場合、Android Enterprise は、仕事用のアプリとデータから個人用のアプリとデータを分離する機能とサービスのセットです。 Android Enterprise は、ユーザーが仕事に Android デバイスを使用するときの追加の管理オプションとプライバシーを提供します。 Intune を使用すると、アプリと設定を Android 仕事用プロファイルのデバイスに展開し、仕事の情報と個人の情報を分けることができます。 Android 仕事用プロファイルのデバイスにインストールするすべてのアプリは、Managed Google Play ストアから入手します。 Android 仕事用プロファイルのデバイスにアプリを割り当てる方法は、標準の Android デバイスに割り当てる場合と異なります。 ストアにサインインし、目的のアプリを検索し、アプリを承認します。 承認後、アプリが Azure Portal の **[ライセンスされたアプリ]** ノードに表示されます。他のアプリと同様にアプリの割り当てを管理できます。
+Android エンタープライズは、Android 仕事用プロファイル デバイス、専用/キオスク デバイス、および完全に管理されたデバイス用のプログラムです。 Android 仕事用プロファイルのデバイスの場合、Android Enterprise は、仕事用のアプリとデータから個人用のアプリとデータを分離する機能とサービスのセットです。 Android Enterprise は、ユーザーが仕事に Android デバイスを使用するときの追加の管理オプションとプライバシーを提供します。 Intune を使用すると、アプリと設定を Android 仕事用プロファイルのデバイスに展開し、仕事の情報と個人の情報を分けることができます。 Android 仕事用プロファイルのデバイスにインストールするすべてのアプリは、Managed Google Play ストアから入手します。 Android 仕事用プロファイルのデバイスにアプリを割り当てる方法は、標準の Android デバイスに割り当てる場合と異なります。 ストアにサインインし、目的のアプリを検索し、アプリを承認します。 承認後、アプリが Azure Portal の **[ライセンスされたアプリ]** ノードに表示されます。他のアプリと同様にアプリの割り当てを管理できます。
 
 また、独自の基幹業務 (LOB) アプリを作成している場合は、以下の手順でアプリを割り当てることができます。
 - Google Play ストアの非公開領域にアプリを公開できる Google Developer アカウントにサインアップする。

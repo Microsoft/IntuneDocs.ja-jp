@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune - Azure のデバイス プロファイル | Microsoft Docs
-description: 機能、制限事項、電子メール、WiFi、VPN、教育、証明書、Windows 10 のアップグレード、BitLocker と Windows Defender、Windows 情報保護、Azure Portal でのデバイスのカスタム構成設定を含む、さまざまな Microsoft Intune デバイス プロファイルの概要。 これらのプロファイルを使用して、社内のデータとデバイスを管理および保護します。
+title: Microsoft Intune のデバイスの機能と設定 - Azure | Microsoft Docs
+description: 機能、制限事項、電子メール、WiFi、VPN、教育、証明書、Windows 10 のアップグレード、BitLocker と Windows Defender、Windows 情報保護、管理用テンプレート、および Azure portal のカスタム デバイス構成設定を含む、さまざまな Microsoft Intune デバイス プロファイルの概要。 これらのプロファイルを使用して、社内のデータとデバイスを管理および保護します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 01/09/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,42 +15,101 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: c9a3146b1ad5f6f7c439d2e49cf534e14d154f76
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: bc28bca31c43140a7bca528655825bab60c53be1
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728703"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203520"
 ---
-# <a name="what-are-microsoft-intune-device-profiles"></a>Microsoft Intune のデバイス プロファイルとは
+# <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune でデバイス プロファイルを使用してデバイスに機能設定を適用する
 
-Microsoft Intune には、組織内のさまざまなデバイスで有効または無効にできる設定と機能が含まれています。 これらの設定と機能は、プロファイルを使用して管理されます。 プロファイルの例には、次のようなものがあります。 
+Microsoft Intune には、組織内のさまざまなデバイスで有効または無効にできる設定と機能が含まれています。 これらの設定と機能は "構成プロファイル" に追加されます。 プロファイルをさまざまなデバイス用に、また、iOS、Android、Windows を含め、さまざまなプラットフォーム用に作成してから、Intune を使用して、組織内のデバイスにそのプロファイルを適用することができます。
 
-- さまざまなデバイスに会社の WiFi へのアクセスを提供する WiFi プロファイル
-- さまざまなデバイスに企業ネットワーク内の VPN サーバーへのアクセスを提供する VPN プロファイル
+プロファイルの例には、次のようなものがあります。
 
-この記事では、ご利用のデバイス用に作成できるさまざまなプロファイルの概要を提供します。 これらのプロファイルを使用して、デバイスで一部の機能を許可または禁止します。
+- Windows 10 デバイスでは、Internet Explorer で ActiveX コントロールをブロックするプロファイル テンプレートを使用します。
+- iOS および macOS デバイスでは、ユーザーが組織内の AirPrint プリンターを使用できるようにします。
+- デバイス上の Bluetooth へのアクセスを許可または禁止します。
+- さまざまなデバイスに企業ネットワークへのアクセスを提供する WiFi または VPN プロファイルを作成します。
+- インストールのタイミングを含め、ソフトウェア更新プログラムを管理します。
+- 1 つのアプリ、または多くのアプリを実行できる専用のキオスク デバイスである、Android デバイスを実行します。
 
-## <a name="before-you-begin"></a>始める前に
-
-使用可能な機能を表示するには、[Azure Portal](https://portal.azure.com) を開き、Intune リソースを開きます。 
-
-**デバイス構成**には、次のオプションが含まれます。
-
-- **概要**: プロファイルの状態を一覧表示し、ユーザーとデバイスに割り当てたプロファイルに関する追加の詳細を提供します
-- **管理**: デバイス プロファイルを作成し、カスタムの[PowerShell スクリプト](intune-management-extension.md)をアップロードしてプロファイル内で実行します
-- **モニター**: プロファイルの状態が成功か失敗かを確認し、プロファイルのログも表示します
-- **セットアップ**: 証明書機関 (SCEP または .PFX) を追加するか、プロファイルに通信費管理サービスを有効にします
+この記事ではプロファイルを作成する手順を一覧表示し、作成できるさまざまな種類のプロファイルの概要を示します。 これらのプロファイルを使用して、デバイスで一部の機能を許可または禁止します。
 
 ## <a name="create-the-profile"></a>プロファイルの作成
 
-[デバイス プロファイルの作成](device-profile-create.md)では、プロファイルを作成するための詳細な手順を提供しています。 
+1. [Azure portal](https://portal.azure.com) で、**[すべてのサービス]** を選択し、**Intune** でフィルター処理して、**[Intune]** を選択します。
 
-## <a name="device-features---ios-and-macos"></a>デバイス機能 - iOS と macOS
+2. **[デバイス構成]** を選択します。 次のオプションがあります。
 
-[デバイス機能](device-features-configure.md)は、AirPrint、通知、共有デバイス構成など、iOS デバイスと macOS デバイスの機能を制御します。
+    - **概要**:プロファイルの状態を一覧表示し、ユーザーとデバイスに割り当てたプロファイルに関する追加の詳細を提供します。
+    - **管理**:デバイス プロファイルを作成し、カスタムの [PowerShell スクリプト](intune-management-extension.md)をアップロードしてプロファイル内で実行し、[eSIM](esim-device-configuration.md) を使用してデバイスにデータ プランを追加します。
+    - **監視**:プロファイルの状態が成功か失敗かを確認し、プロファイルのログも表示します。
+    - **セットアップ**:SCEP または PFX 証明書機関を追加するか、プロファイルで[通信費管理サービス](telecom-expenses-monitor.md)を有効にします。
+
+3. **[プロファイル]** > **[プロファイルの作成]** の順に選択します。 次のプロパティを入力します。
+
+   - **名前**: プロファイルのわかりやすい名前を入力します。
+   - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
+   - **[プラットフォーム]**:デバイスのプラットフォームを選択します。 次のようなオプションがあります。  
+
+       - **Android**
+       - **Android エンタープライズ**
+       - **Android**
+       - **macOS**
+       - **Windows Phone 8.1**
+       - **Windows 8.1 以降**
+       - **Windows 10 以降**
+
+   - **[プロファイルの種類]**:作成する設定の種類を選択します。 表示されるリストは、選択する**プラットフォーム**によって異なります。
+
+       - [管理用テンプレート](administrative-templates-windows.md)
+       - [カスタム](custom-settings-configure.md)
+       - [配信の最適化](delivery-optimization-windows.md)
+       - [デバイスの機能](device-features-configure.md)
+       - [デバイスの制限](device-restrictions-configure.md)
+       - [エディションのアップグレードとモードの切り替え](edition-upgrade-configure-windows-10.md)
+       - [教育](education-settings-configure.md)
+       - [電子メール](email-settings-configure.md)
+       - [Endpoint Protection](endpoint-protection-configure.md)
+       - [ID 保護](identity-protection-configure.md)  
+       - [キオスク](kiosk-settings.md)
+       - [PKCS 証明書](certficates-pfx-configure.md)
+       - [SCEP 証明書](certificates-scep-configure.md)
+       - [信頼された証明書](certificates-configure.md)
+       - [更新ポリシー](software-updates-ios.md)
+       - [VPN](vpn-settings-configure.md)
+       - [Wi-Fi](wi-fi-settings-configure.md)
+       - [Windows Defender ATP](advanced-threat-protection.md)
+       - [Windows 情報保護](windows-information-protection-configure.md)
+
+     たとえば、プラットフォームとして **iOS** を選択した場合、プロファイルの種類のオプションは次のようになります。
+
+     ![Intune で iOS プロファイルを作成する](./media/create-device-profile.png)
+
+4. **[設定]** を選択します。 設定はカテゴリごとに整理されます。 カテゴリを選択して、構成できるすべての設定のリストを表示します。
+
+5. 完了したら、**[OK]** > **[作成]** の順に選択して変更を保存します。
+
+さまざまなプロファイルの種類の詳細については、この記事の次のセクションをお読みください。
+
+## <a name="administrative-templates-preview"></a>管理用テンプレート (プレビュー)
+
+[管理用テンプレート](administrative-templates-windows.md)には数百の設定が含まれており、これらを Internet Explorer、OneDrive、リモート デスクトップ、Word、Excel、およびその他の Office プログラム用に構成することができます。
+
+これらのテンプレートでは、管理者にグループ ポリシーと同様の設定の簡単な簡易ビューが提供されますが、それらは 100% クラウドベースです。 
 
 この機能では以下をサポートします。
+
+- Windows 10 以降
+
+## <a name="device-features"></a>デバイスの機能
+
+[デバイスの機能](device-features-configure.md)では、AirPrint、通知、ロック画面メッセージなど、iOS および macOS デバイスの機能を制御します。
+
+この機能では以下をサポートします。
+
 - iOS 
 - macOS
 
@@ -167,6 +226,8 @@ Windows Defender Advanced Threat Protection (WDATP) と Microsoft Intune をオ�
 
 [iOS 更新ポリシー](software-updates-ios.md)には、iOS デバイスにソフトウェア更新プログラムをインストールするための iOS ポリシーを作成し、割り当てる方法が示されます。 インストールの状態を確認することもできます。
 
+Windows デバイスの更新プログラム ポリシーについては、[配信の最適化](delivery-optimization-windows.md)に関するページを参照してください。 
+
 この機能では以下をサポートします。
 - iOS
 
@@ -187,7 +248,19 @@ Windows Defender Advanced Threat Protection (WDATP) と Microsoft Intune をオ�
 [Windows 情報保護](windows-information-protection-configure.md)は、従業員のエクスペリエンスを妨げることなく、データ漏えいの防止に役立ちます。 また、企業が所有するデバイスと従業員が作業のために持ち込む個人用デバイスでもエンタープライズ アプリとデータを偶発的なデータ漏えいから保護します。 Windows Information Protection は、環境やその他のアプリを変更しなくても使用できます。
 
 この機能では以下をサポートします。
+
 - Windows 10 以降
+
+## <a name="shared-multi-user-device"></a>共有のマルチ ユーザー デバイス
+
+[Windows 10](shared-user-device-settings-windows.md) および [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) には、複数のユーザーが使用するデバイス (共有デバイスや共有 PC ともいう) を管理するための設定が含まれます。 ユーザーがデバイスにサインインするときに、そのユーザーがスリープ オプションを変更できるようにするか、デバイス上にファイルを保存できるようにするかを選択します。 また、領域を節約するために Windows HoloLens デバイスから非アクティブな資格情報を削除するポリシーを作成することもできます。
+
+これらの共有のマルチ ユーザー デバイス設定では、管理者はデバイスの一部の機能を制御し、Intune を使用してその共有デバイスを管理することができます。
+
+この機能では以下をサポートします。
+
+- Windows 10 以降
+- Windows Holographic for Business
 
 ## <a name="custom-profile"></a>カスタム プロファイル
 
@@ -203,3 +276,7 @@ Windows Defender Advanced Threat Protection (WDATP) と Microsoft Intune をオ�
 ## <a name="manage-and-troubleshoot"></a>管理とトラブルシューティング
 
 [プロファイルの管理](device-profile-monitor.md)に関する説明では、デバイスの状態や割り当てられているプロファイルの確認方法を説明しています。 競合を起こした設定と、これらの設定を含むプロファイルを確認することによって、競合も解決できます。 [一般的な問題とその解決方法](device-profile-troubleshoot.md)に関する説明では、プロファイルを削除すると起こることや、デバイスに通知が送信される原因など、プロファイルの使用に関する Q&A の一覧があります。
+
+## <a name="next-steps"></a>次の手順
+プラットフォームを選択して始めてください。
+

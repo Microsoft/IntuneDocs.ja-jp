@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 893e20652af68ec7f33c733376252a937f9584dc
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: f587fdf7c1690dbb0a31388a9c70b780179e541e
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642882"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210875"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST クライアントを使用して Intune データ ウェアハウス API からデータを取得する
 
@@ -47,7 +47,7 @@ Azure でネイティブ アプリを作成します。 このネイティブ �
     3.  **[サインオン URL]** に URL を入力します。 サインオン URL は特定のシナリオによって代わります。ただし、Postman を利用する予定の場合、「`https://www.getpostman.com/oauth2/callback`」と入力してください。 Azure AD に認証するとき、クライアント認証手順のコールバックを利用します。
 4.  **[作成]** を選択します。
 
-     ![Intune データ ウェアハウス API](./media/reports-get_rest_data_client_overview.png)
+     ![Intune データ ウェアハウスのクライアント アプリ](./media/reports-get_rest_data_client_overview.png)
 
 5. このアプリの **[アプリケーション ID]** をメモします。 この ID は次のセクションで使用します。
 
@@ -134,7 +134,7 @@ Postman のために新しいアクセス トークンを取得するには、Az
 
 12. **[Request Token]\(トークンの要求\)** を選択します。
 
-    ![トークンの情報](./media/reports-postman_getnewtoken.png)
+    ![アクセス トークンの情報](./media/reports-postman_getnewtoken.png)
 
 13. アクティブな AD 認証ページで資格情報を入力します。 これで、Postman のトークン一覧に `Bearer` という名前のトークンが含まれます。
 14. **[Use Token]\(トークンの使用\)** を選択します。 ヘッダーの一覧には、認証の新しいキー値と値 `Bearer <your-authorization-token>` が含まれます。
@@ -144,7 +144,7 @@ Postman のために新しいアクセス トークンを取得するには、Az
 1.  **[送信]** を選択します。
 2.  返されるデータは Postman の応答本文に表示されます。
 
-    ![Postman 200OK](./media/reports-postman_200OK.png)
+    ![Postman クライアントの状態が 200 OK](./media/reports-postman_200OK.png)
 
 ## <a name="create-a-rest-client-c-to-get-data-from-the-intune-data-warehouse"></a>Intune データ ウェアハウスからデータを取得する REST クライアント (C#) を作成する
 
@@ -161,7 +161,7 @@ Postman のために新しいアクセス トークンを取得するには、Az
 6. **[同意する]** を選択し、NuGet パッケージ ライセンスに同意します。
 7. ソリューション エクスプローラーから `Program.cs` を開きます。
 
-    ![Visual Studio のプロジェクト](./media/reports-get_rest_data_in.png)
+    ![Visual Studio での Progam.cs とソリューション エクスプローラー](./media/reports-get_rest_data_in.png)
 
 8. Program.cs のコードを次のコードに置き換えます。  
    ```csharp

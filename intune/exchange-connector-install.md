@@ -15,12 +15,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 28886382da00f5c07129f4e69e0bbadf97634420
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 3e66dd3d77cc36a6d311afea82e0f2087b469495
+ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817264"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54239593"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Microsoft Intune Azure で Intune のオンプレミス Exchange コネクタをセットアップする
 
@@ -78,7 +78,7 @@ ms.locfileid: "53817264"
 
 4. **[セットアップ]** の下で **[Exchange ActiveSync のコネクタ]** を選択し、**[オンプレミス コネクタをダウンロードします]** を選択します。
 
-5.  オンプレミス Exchange コネクタは、開いたり保存したりできる圧縮 (.zip) フォルダーに含まれています。 **[ファイルのダウンロード]** ダイアログ ボックスで **[保存]** を選んで、圧縮フォルダーを安全な場所に保存します。
+5.  オンプレミス Exchange コネクタは、開いたり保存したりできる圧縮 (.zip) フォルダー内にあります。 **[ファイルのダウンロード]** ダイアログ ボックスで **[保存]** を選んで、圧縮フォルダーを安全な場所に保存します。
 
     > [!IMPORTANT]
     > オンプレミス Exchange コネクタ フォルダー内のファイルの名前を変更したり、ファイルを移動したりしないでください。 フォルダーの内容を移動したり、名前を変更したりすると、Exchange コネクタのインストールが失敗します。
@@ -97,7 +97,7 @@ ms.locfileid: "53817264"
 
    ![Exchange Server の種類を選択する場所を示す画像](./media/intune-sa-exchange-connector-config.png)
 
-   オンプレミス Exchange サーバーの場合、**クライアント アクセス サーバー** ロールをホストする Exchange サーバーのサーバー名または完全修飾ドメイン名を指定します。
+   社内の Exchange Server の場合、**クライアント アクセス サーバー** ロールをホストする Exchange サーバーのサーバー名または完全修飾ドメイン名を指定します。
 
    ホスト型 Exchange Server の場合、Exchange Server のアドレスを指定します。 ホスト型 Exchange サーバーの URL を見つけるには:
 
@@ -116,15 +116,15 @@ ms.locfileid: "53817264"
 
        4. **[OK]** を選びます。
 
-   5. **[ユーザー (ドメイン\ユーザー)]** フィールドと **[パスワード]** フィールドに、Exchange Server への接続に必要な資格情報を入力します。
+4. **[ユーザー (ドメイン\ユーザー)]** フィールドと **[パスワード]** フィールドに、Exchange Server への接続に必要な資格情報を入力します。
 
-   6.  ユーザーの Exchange Server メールボックスに通知を送信するために必要な資格情報を指定します。 このユーザーは通知専用でもかまいません。 通知ユーザーには、メールで通知を送信できるように Exchange メールボックスが必要です。 これらの通知は、Intune で条件付きアクセス ポリシーにより構成できます。  
+5. ユーザーの Exchange Server メールボックスに通知を送信するために必要な資格情報を指定します。 このユーザーは通知専用でもかまいません。 通知ユーザーには、メールで通知を送信できるように Exchange メールボックスが必要です。 これらの通知は、Intune で条件付きアクセス ポリシーにより構成できます。  
 
-       自動検出サービスと Exchange Web Services が Exchange クライアント アクセス サーバーで構成されていることを確認します。 詳細については、「[クライアント アクセス サーバー](https://technet.microsoft.com/library/dd298114.aspx)」を参照してください。
+       Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
 
-   7.  **[パスワード]** フィールドに、このアカウントで Intune から Exchange Server にアクセスするのに必要なパスワードを入力します。
+6. **[パスワード]** フィールドに、このアカウントで Intune から Exchange Server にアクセスするのに必要なパスワードを入力します。
 
-   8. **[接続]** を選びます。
+7. **[接続]** を選びます。
 
    > [!NOTE]
    > 接続が構成されるまでに数分かかることがあります。
@@ -142,7 +142,7 @@ Intune は、サブスクリプションあたり複数のオンプレミス Exc
 後続のセクションで説明する高可用性、監視、手動同期といった機能は、Intune に接続している Exchange 組織ごとにサポートされています。
 
 ## <a name="on-premises-exchange-connector-high-availability-support"></a>オンプレミスの Exchange Connector の高可用性のサポート 
-Exchange Connector によって、指定の CAS で Exchange への接続が作成された後、コネクタで別の CAS も検出することができます。 メインの CAS が利用できなくなった場合、再度利用可能になるまで、コネクタが別の CAS (ある場合) にフェールオーバーします。 この機能は、既定で有効になっています。 この機能を無効にするには、次の手順に従います。
+Exchange Connector によって、指定の CAS で Exchange への接続が作成された後、コネクタで別の CAS を検出できます。 メインの CAS が利用できなくなった場合、再度利用可能になるまで、コネクタが別の CAS (ある場合) にフェールオーバーします。 この機能は、既定で有効になっています。 この機能を無効にするには、次の手順に従います。
 1. Exchange Connector がインストールされているサーバーで、%*ProgramData*%\Microsoft\Windows Intune Exchange Connector にアクセスします。 
 2. テキスト エディターを使用して、**OnPremisesExchangeConnectorServiceConfiguration.xml** を開きます。
 3. &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; を &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; に変更して、機能を無効にします。    
@@ -157,9 +157,9 @@ Exchange コネクタを正常に構成したら、接続のステータスと�
 
 また、前回いつ同期が完了したかも確認することができます。
 
-### <a name="system-center-operations-manager-scom-management-pack"></a>System Center Operations Manager (SCOM) 管理パック
+### <a name="system-center-operations-manager-management-pack"></a>System Center Operations Manager 管理パック
 
-Intune 1710 リリース以降では、[Exchange Connector および Intune の SCOM 管理パック](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True)を使用できます。 問題のトラブルシューティングを行う必要がある場合、これにより別の方法で Exchange Connector を監視できます。
+Intune 1710 リリース以降では、[Exchange Connector および Intune の Operations Manager 管理パック](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True)を使用できます。 問題のトラブルシューティングを行う必要がある場合、これにより別の方法で Exchange Connector を監視できます。
 
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>クイック同期または完全同期を手動で強制する
 オンプレミス Exchange コネクタは、EAS と Intune デバイス レコードを定期的に自動同期します。 デバイスのコンプライアンス状態が変わった場合、自動同期プロセスによって定期的にレコードが更新され、デバイス アクセスを適宜、禁止または許可できます。

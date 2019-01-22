@@ -3,10 +3,10 @@ title: アプリのデータ転送ポリシーの例外
 titleSuffix: Microsoft Intune
 description: Intune モバイル アプリケーション管理 (MAM) データ転送ポリシーの例外を作成します。
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 03/28/2018
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,23 +16,21 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6a2507dc7b920d446b6f7fe78aa7b90f6c31322f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 94798e7745b5802a551c4dda6908ff9f5f803d8f
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178405"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297349"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Intune モバイル アプリケーション管理 (MAM) データ転送ポリシーの例外を作成する方法
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 管理者の場合、Intune モバイル アプリケーション管理 (MAM) データ転送ポリシーの例外を作成することができます。 例外を使用すると、管理対象アプリとの間でデータをやりとりできる管理対象ではないアプリを指定できます。 管理者が例外一覧に追加した管理対象ではないアプリは、IT 部門に信頼されている必要があります。 
 
 >[!WARNING] 
 > 管理者は、データ転送の例外ポリシーを変更する責任があります。 管理対象ではないアプリ (Intune によって管理されていないアプリケーション) は、このポリシーに追加すると、管理対象アプリによって保護されているデータにアクセスできるようになります。 このような保護されたデータのアクセスで、データ セキュリティの漏えいが発生する可能性があります。 組織で使用する必要があり、Intune APP (アプリケーション保護ポリシー) をサポートしていないアプリについてのみ、データ転送の例外を追加してください。 また、データ漏えいのリスクとは見なされないアプリについてのみ、例外を追加してください。
 
-Intune アプリケーション保護ポリシーで、**[このアプリから他のアプリにデータを転送できるようにする]** を **[ポリシーで管理されているアプリ]** に設定すると、アプリは Intune で管理されているアプリにのみデータを転送できることを意味します。 Intune アプリをサポートしていない特定のアプリへのデータ転送を許可する必要がある場合は、**[除外するアプリを選択します]** を使用してこのポリシーの例外を作成できます。 除外すると、Intune で管理されるアプリケーションは、URL プロトコル (iOS) またはパッケージ名 (Android) に基づいて、管理されていないアプリケーションを起動できます。 既定では、Intune の例外一覧には、重要なネイティブ アプリケーションが追加されています。 
+Intune アプリケーション保護ポリシーで、**[このアプリから他のアプリにデータを転送できるようにする]** を **[ポリシーで管理されているアプリ]** に設定すると、アプリが Intune で管理されているアプリにのみデータを転送できることを意味します。 Intune アプリをサポートしていない特定のアプリへのデータ転送を許可する必要がある場合は、**[除外するアプリを選択します]** を使用してこのポリシーの例外を作成できます。 除外すると、Intune で管理されるアプリケーションは、URL プロトコル (iOS) またはパッケージ名 (Android) に基づいて、管理されていないアプリケーションを起動できます。 既定では、Intune の例外一覧には、重要なネイティブ アプリケーションが追加されています。 
 
 > [!NOTE]
 > データ転送ポリシーの例外を変更または追加しても、切り取り、コピー、貼り付けの制限など、他のアプリ保護ポリシーには影響しません。 
@@ -53,11 +51,11 @@ Android をターゲットとするポリシーの場合、アプリ パッケ�
 ### <a name="example"></a>例
 **Webex** パッケージを MAM データ転送ポリシーの例外として追加すると、管理対象の Outlook 電子メール メッセージ内の Webex リンクを Webex アプリケーションで直接開くことができるようになります。 他の管理対象ではないアプリではデータ転送が制限されます。
 
-- iOS の **Webex** の例: **Webex** アプリを除外対象にして、Intune の管理対象アプリから呼び出すことができるようにするには、<code>wbx</code> という文字列についてデータ転送の例外を追加する必要があります。
+- iOS **Webex** の例: **Webex** アプリを除外対象にして、Intune の管理対象アプリから呼び出すことができるようにするには、<code>wbx</code> という文字列についてデータ転送の例外を追加する必要があります。
     
- - iOS の **Maps** の例: ネイティブ **Maps** アプリを除外対象にして、Intune の管理対象アプリから呼び出すことができるようにするには、<code>maps</code> という文字列についてデータ転送の例外を追加する必要があります。
+ - iOS **Maps** の例:ネイティブ **Maps** アプリを除外対象にして、Intune の管理対象アプリから呼び出すことができるようにするには、<code>maps</code> という文字列についてデータ転送の例外を追加する必要があります。
 
-- Android の **Webex** の例: **Webex** アプリを除外対象にして、Intune の管理対象アプリから呼び出すことができるようにするには、<code>com.cisco.webex.meetings</code> という文字列についてデータ転送の例外を追加する必要があります。
+- Android **Webex** の例: **Webex** アプリを除外対象にして、Intune の管理対象アプリから呼び出すことができるようにするには、<code>com.cisco.webex.meetings</code> という文字列についてデータ転送の例外を追加する必要があります。
     
 - Android **SMS** の例: ネイティブ **SMS** アプリを除外対象にして、異なるメッセージング アプリと Android デバイス全体で Intune の管理対象アプリから呼び出すことができるようにするには、次の文字列についてデータ転送の例外を追加する必要があります。 
     <code>com.google.android.apps.messaging</code>

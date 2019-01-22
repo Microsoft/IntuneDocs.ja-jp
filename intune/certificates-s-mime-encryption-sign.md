@@ -1,41 +1,46 @@
 ---
-title: S/MIME メールの署名と暗号化 - Azure | Microsoft Docs
-description: Microsoft Intune で S/MIME を使用または有効にして、電子メールの署名または暗号化を行います
+title: S/MIME を使用して電子メールに署名して暗号化する - Microsoft Intune - Azure | Microsoft Docs
+description: Microsoft Intune の電子メール デジタル証明書を使用してデバイス上で電子メールの署名および暗号化を実行する方法について説明します。 このような証明書は S/MIME と呼ばれ、デバイス構成プロファイルを使用して構成されています。 署名証明書と暗号化証明書は PKCS、つまりプライベート証明書を使用し、コネクタを使用して証明書をインポートします。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/21/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: eaa85870b289bb3b65ce997d8610324f43d69452
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure; seodec18
+ms.openlocfilehash: 0339be98bf045d280912bf88e88b5ba544b0a1f4
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185646"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203129"
 ---
-# <a name="smime-email-signing-and-encryption-in-intune"></a>Intune での S/MIME メールの署名と暗号化
+# <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>Intune で電子メールに署名し、暗号化する S/MIME の概要
 
-> [!IMPORTANT]
-> この記事で説明する S/MIME 機能を改善しています。 そのため、S/MIME 機能は一時的に Intune から除去されています。 この機能がリリースされたときに、この記述を削除します。
+電子メール証明書は S/MIME 証明書とも呼ばれ、暗号化と解読を使用することにより、電子メール通信のセキュリティを強化します。 Microsoft Intune は、S/MIME 証明書を使用して、次のプラットフォームを実行しているモバイル デバイスに送信される電子メールの署名および暗号化を行うことができます。
 
-S/MIME は、暗号化と解読を使用することにより、メール通信のセキュリティを強化します。 Microsoft Intune は、S/MIME を使用して、iOS、Windows、Windows Phone、Android、macOS を実行しているモバイル デバイスに送信される電子メールの署名および暗号化を行うことができます。
+- Android
+- iOS
+- macOS
+- Windows 10 以降
+- Windows Phone
 
-iOS デバイスでは、S/MIME と証明書を使用して送受信されるメールの署名と暗号化を行う、Intune で管理されたメール プロファイルを作成できます。 他のプラットフォームでは、S/MIME はサポートされている場合とサポートされていない場合があります。 サポートされている場合は、S/MIME の署名と暗号化を使用する証明書をインストールできます。 その後、エンド ユーザーは電子メール アプリケーションで S/MIME を有効にできます。
+iOS デバイスでは、S/MIME と証明書を使用して送受信されるメールの署名と暗号化を行う、Intune で管理されたメール プロファイルを作成できます。 他のプラットフォームでは、S/MIME はサポートされている場合とサポートされていない場合があります。 サポートされている場合は、S/MIME の署名と暗号化を使用する証明書をインストールします。 その後、エンド ユーザーは電子メール アプリケーションで S/MIME を有効にできます。
 
-S/MIME メールの署名と暗号化について詳しくは、「[S/MIME for message signing and encryption](https://docs.microsoft.com/Exchange/policy-and-compliance/smime)」(S/MIME によるメッセージの署名と暗号化) をご覧ください。
+Exchange を使用した S/MIME メールの署名と暗号化の詳細については、「[S/MIME によるメッセージの署名と暗号化](https://docs.microsoft.com/Exchange/policy-and-compliance/smime)」を参照してください。
+
+この記事では、S/MIME 証明書を使用してデバイス上で電子メールに署名および暗号化する方法の概要を説明します。
 
 ## <a name="signing-certificates"></a>署名証明書
 
 署名に使われる証明書を使用することで、クライアントのメール アプリはメール サーバーと安全に通信できます。
 
-署名証明書を使うには、証明機関で署名用のテンプレートを作成します。 Microsoft Active Directory 証明機関の場合は、「[Configure the server certificate template](https://docs.microsoft.com/windows-server/networking/core-network-guide/cncg/server-certs/configure-the-server-certificate-template)」(サーバー証明書テンプレートを構成する) で証明書テンプレートの作成手順が示されています。
+署名証明書を使うには、証明機関 (CA) で署名用のテンプレートを作成します。 Microsoft Active Directory 証明機関の場合は、「[Configure the server certificate template](https://docs.microsoft.com/windows-server/networking/core-network-guide/cncg/server-certs/configure-the-server-certificate-template)」(サーバー証明書テンプレートを構成する) で証明書テンプレートの作成手順が示されています。
 
 Intune での署名証明書は、PKCS 証明書を使います。 「[Intune で PKCS 証明書を構成して使用する](certficates-pfx-configure.md)」では、Intune 環境に PKCS 証明書を展開して使う方法が説明されています。 次のステップが含まれます。
 
@@ -71,3 +76,10 @@ Intune にインポートされた、メールの暗号化に使われる PKCS �
 ## <a name="smime-email-profiles"></a>S/MIME メール プロファイル
 
 S/MIME の署名証明書と暗号化証明書のプロファイルを作成した後は、[iOS のネイティブ メールに対して S/MIME を有効にする](email-settings-ios.md)ことができます。
+
+## <a name="next-steps"></a>次の手順
+
+- [SCEP 証明書を使用する](certificates-scep-configure.md)
+- [PKCS 証明書を使用する](certficates-pfx-configure.md)
+- [パートナー CA を使用する](certificate-authority-add-scep-overview.md)
+- [Symantec PKI マネージャー Web サービスから PKCS 証明書を発行する](certificates-symantec-configure.md)

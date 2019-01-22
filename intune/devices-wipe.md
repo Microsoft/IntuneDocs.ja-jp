@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 12d050bb7ef959b940e2b758284863319282f179
-ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
+ms.openlocfilehash: ad2d2842672853587da1396cae6c15ebd7ade44a
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53553658"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122640"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>ワイプ、インベントリからの削除、デバイス登録の手動解除を使用し、デバイスを削除する
 
@@ -192,6 +192,10 @@ Intune による管理から Apple DEP デバイスを完全に削除する場�
 6. **[再割り当て]** を選択します。
 
     ![Apple の再割り当てのスクリーン ショット](./media/devices-wipe/apple-reassign.png)
+
+## <a name="fresh-start"></a>新たに開始
+
+Windows 10 デバイスの場合に適用されます。 詳細については [[新たに開始]](https://docs.microsoft.com/intune/device-fresh-start) に関するページを参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

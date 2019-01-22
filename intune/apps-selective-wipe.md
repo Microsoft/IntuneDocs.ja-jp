@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 01/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 57e22c7b999f2f672c67dc623a20bf643e739376
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: cd6ac0b1fdb64897a831c0111f7e0a611c85bede
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642576"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210705"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Intune で管理されているアプリから会社のデータをワイプする方法
 
@@ -30,7 +30,7 @@ ms.locfileid: "53642576"
 デバイスが紛失や盗難にあった場合、または従業員が離職した場合、会社のアプリのデータがデバイスから削除されたことを確認する必要があります。 ただし、個人のデータをデバイスから削除するのは好ましくありません。デバイスが従業員所有のデバイスである場合はなおさらです。
 
 >[!NOTE]
-> 現在、Intune 管理対象アプリから会社のデータをワイプできるプラットフォームは、iOS と Android の 2 つです。
+> 現在、Intune 管理対象アプリから会社のデータをワイプできるプラットフォームは、iOS と Android の 2 つです。 Intune 管理対象アプリは、Intune アプリ SDK を含み、組織用のライセンスのあるユーザー アカウントを持つアプリケーションです。 アプリの選択的ワイプを有効にするために、アプリケーション保護ポリシーのデプロイは必要ありません。
 
 会社のアプリ データを選択して削除するには、このトピックの手順を使用してワイプ要求を作成します。 ワイプ要求の完了後、次にデバイス上でアプリが実行されると、そのアプリから会社のデータが削除されます。 管理者は、ワイプ要求を作成するだけでなく、アプリケーション保護ポリシー (APP) アクセス設定の条件が満たされないときの新しいアクションとして、組織のデータの選択的ワイプを構成することができます。 この機能を使うと、事前に構成した条件に基づいて、アプリケーションから組織の機密データを自動的に保護したり削除したりできます。
 

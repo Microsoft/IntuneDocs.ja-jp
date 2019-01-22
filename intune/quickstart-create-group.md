@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 01/11/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d6c51a2823e95526b76e5e71e35420d1744b70f6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 6f7d7ccb4c94300d00f02dcace5c3a089cd9f2a2
+ms.sourcegitcommit: d54a12a836503f7e8b90346f16b7ad2d83b710dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178388"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270573"
 ---
-# <a name="quickstart-create-a-group-to-manage-users"></a>クイック スタート: ユーザーを管理するグループを作成する
+# <a name="quickstart-create-a-group-to-manage-users"></a>クイック スタート:ユーザーを管理するグループを作成する
 
 このクイック スタートでは、Intune を使用して、既存のユーザーに基づいてグループを作成します。 グループは、ユーザーを管理し、会社のリソースへの従業員のアクセスを制御するために使用されます。 これらのリソースは、会社のインターネットの一部である場合もあれば、SharePoint サイト、SaaS アプリ、または Web アプリなど、外部リソースの場合もあります。
 
@@ -38,7 +38,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
 ## <a name="sign-in-to-intune"></a>Intune にサインインする
 
-[グローバル管理者または Intune サービス管理者](users-add.md#types-of-administrators)として [Intune](https://aka.ms/intuneportal) にサインインします。 Intune の試用版サブスクリプションを作成した場合、サブスクリプションを作成したアカウントがグローバル管理者になります。
+[全体管理者または Intune サービス管理者](users-add.md#types-of-administrators)として、[Intune](https://aka.ms/intuneportal) ポータルにサインインします。 Intune の試用版サブスクリプションを作成した場合、サブスクリプションを作成したアカウントがグローバル管理者になります。
 
 ## <a name="create-a-group"></a>グループの作成
 

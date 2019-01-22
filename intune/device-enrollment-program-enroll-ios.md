@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1af474063ec7b6ccac2a36afbec421767f79444a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: afddf57f93ef2308ce8e8fd8aab8d74c3419a3ea
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642848"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203418"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する
 
@@ -192,7 +192,15 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
     | <strong>Zoom</strong> | ユーザーに、デバイスを設定するときに表示を拡大するオプションを表示します。 |
     | <strong>Siri</strong> | ユーザーに、Siri を設定するオプションを表示します。 |
     | <strong>診断データ</strong> | **[診断]** 画面をユーザーに表示します。 この画面では、ユーザーは Apple に診断データを送信できます。 |
-
+    | <strong>トーンの表示</strong> | [トーンの表示] をオンにするオプションをユーザーに表示します。 |
+    | <strong>プライバシー</strong> | [プライバシー] 画面をユーザーに表示します。 |
+    | <strong>Android の移行</strong> | Android デバイスからデータを移行するオプションをユーザーに表示します。 |
+    | <strong>iMessage と FaceTime</strong> | iMessage と FaceTime を設定するオプションをユーザーに表示します。 |
+    | <strong>オンボード</strong> | 送付状、マルチタスク コントロール センターなど、ユーザー教育用のオンボード情報画面を表示します。 |
+    | <strong>Watch の移行</strong> | Watch デバイスからデータを移行するオプションをユーザーに表示します。 |
+    | <strong>画面の表示時間</strong> | [画面の表示時間] 画面を表示します。 |
+    | <strong>ソフトウェア更新プログラム</strong> | 必須のソフトウェア更新プログラム画面を表示します。 |
+    | <strong>SIM のセットアップ</strong> | セルラー プランを追加するオプションをユーザーに表示します。 |
 
 14. **[OK]** を選びます。
 

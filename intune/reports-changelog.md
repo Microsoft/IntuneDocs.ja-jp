@@ -6,7 +6,7 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 01/11/2010
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,25 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0f39b0cb758c8c62da2e76ef8eaff07264ff3f3a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 3fce49decb7574d32d1923a77bb2cca28384ce11
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642763"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297232"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune データ ウェアハウス API の変更ログ
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 常に Intune データ ウェアハウスの最新の更新プログラムをインストールしてください。
+
+## <a name="1812"></a>1812 
+_2018 年 12 月リリース_
+
+### <a name="enrollment-activities-collection-released-to-v10"></a>v1.0 にリリースされた登録アクティビティ コレクション 
+
+v1.0 で登録アクティビティ コレクションが利用できるようになりました。 このコレクションを使用して、環境内での登録エラーのボリュームと傾向を把握できます。 詳細については、「[enrollmentActivities](intune-data-warehouse-collections.md#enrollmentactivities)」、「[enrollmentEventStatuses](intune-data-warehouse-collections.md#enrollmenteventstatuses)」、「[enrollmentFailureCategories](intune-data-warehouse-collections.md#enrollmentfailurecategories)」、および「[enrollmentFailureReasons](intune-data-warehouse-collections.md#enrollmentfailurereasons)」を参照してください。
 
 ## <a name="1808"></a>1808
 _リリース日: 2018 年 8 月_
@@ -36,9 +43,9 @@ _リリース日: 2018 年 8 月_
 
 クエリ パラメーター `api-version=v1.0` を設定することにより、Intune データ ウェアハウスの v1.0 バージョンを使用できるようになりました。 Data Warehouse 内のコレクションに対する更新は本質的に追加であり、既存のシナリオが使用できなくなることはありません。
 
-### <a name="enrollment-failure-collection-released-to-beta"></a>ベータ版にリリースされた Enrollment Failure コレクション
+### <a name="enrollment-activities-collection-released-to-beta"></a>ベータ版にリリースされた登録アクティビティ コレクション
 
-新しい `Enrollment Failure` コレクションが、ベータ版にリリースされました。 このコレクションを使用して、最も一般的なエラーを表示することにより、登録の進行状況がわかります。 
+新しい `Enrollment Activities` コレクションが、ベータ版にリリースされました。 このコレクションを使用して、最も一般的なエラーを表示することにより、登録の進行状況がわかります。 
 
 
 ## <a name="1805"></a>1805

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/06/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,23 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2a5f383eef6f380711578cb79dfd8006ca6f96e1
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: e067ce76046355a7da6bb785ae3302c0fc3e8bb9
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150668"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203148"
 ---
-# <a name="use-managed-devices-to-get-work-done"></a>マネージド デバイスを使用して作業する
-Microsoft Intune は、組織がデバイス (スマートフォン、タブレット、PC など)、アプリ、およびその他の企業リソース (電子メールなど) を管理できるようにするソフトウェアです。 これを利用すると、企業の情報の安全性を確保しつつ、従業員が事実上どこからでも、ほぼすべてのデバイスで業務情報にアクセスできるようになります。
+# <a name="use-managed-devices-to-access-work-or-school-resources"></a>管理対象デバイスを使用して職場または学校のリソースにアクセスする
+Microsoft Intune は、組織がデバイス、アプリ、および電子メールへのアクセスを管理するためのデバイス管理システムです。 デバイス管理により、ユーザーおよび他の従業員や学生が、事実上どこからでも、ほぼすべてのデバイス上の作業情報にアクセスできます。 リモートで作業している場合でも、ユーザーおよび組織の情報はセキュリティで保護され続けます。
 
-デバイスを Intune による管理対象として登録すると、IT 部門はそのような職場または学校のリソースを管理してより安全な状態に維持できるようになる一方で、従業員は自分好みのデバイスを使用して業務を進めることができるようになります。 主な登録方法は、ポータル サイトを通じてデバイスを管理対象として登録する方法です。
+Microsoft Intune は、セキュリティとデバイスの要件を構成するために会社が使用するソフトウェアです。 デバイスを管理対象にする準備ができたら、Intune ポータル サイト アプリを使用します。 このアプリでは、自分好みのデバイスを使用して職場または学校のリソースにアクセスできます。 
 
-## <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>デバイスを Intune に登録した場合に会社が確認できる情報
-会社のサポートでは、作業に関する情報は確認できますが、個人情報は確認できません。 これは、職場で使用される個人のデバイスを登録するかどうかを確認する上で特に重要なことです。 [確認できる内容とできない内容については、ユーザー ヘルプの次の記事](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)で詳しく説明します。
+## <a name="what-information-can-my-company-see-when-i-get-my-device-managed"></a>デバイスを管理対象にした場合に会社が確認できる情報
+ポータル サイトでユーザーを設定したら、会社のサポートは、作業に関連する情報のみを確認できます。 ユーザーの個人情報を確認することはできません。 これは、職場で使用される個人のデバイスを登録するかどうかを確認する上で特に重要なことです。 [確認できる内容とできない内容については、次の記事](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)で説明します。
 
-## <a name="how-do-i-get-the-company-portal"></a>ポータル サイトの入手方法
-ポータル サイトは 2 通りの方法で入手できます。
+## <a name="how-do-i-get-company-portal"></a>ポータル サイトを取得する方法
+ポータル サイトは、次のいずれかの方法で取得できます。
 
 - ポータル サイト アプリをデバイスにインストールします。 一般的に、ポータル サイト アプリはお使いのデバイスのアプリ ストアに移動して入手しますが、会社のサポートが代わりにポータル サイト アプリをインストールすることもできます。
 - 会社のサポートが設定した[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)に移動します。

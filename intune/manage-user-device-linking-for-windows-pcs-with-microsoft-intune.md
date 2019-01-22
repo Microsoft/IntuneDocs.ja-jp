@@ -16,12 +16,12 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 81f84c2e645a9a6a20ff901239117b562a26b0aa
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9d6c894e30b050ec6e824e1e77d0c476d4dc15bc
+ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186649"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149629"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Windows PC に対するユーザー デバイスの関連付けを管理する
 
@@ -43,7 +43,7 @@ PC にユーザーを関連付けるには:
 
    - PC と現在のユーザーの関連付けをそのままにするには、**[キャンセル]** を選択します。
 
-   - 現在のユーザーとの関連付けを削除する (存在する場合) には、<strong>[リンクの削除]、[OK]</strong> の順に選択します。
+   - 現在のユーザーとの関連付けを削除する (存在する場合) には、<strong>[リンクの削除]**&gt;**[OK]</strong> の順に選択します。
 
    - PC を新しいユーザーに関連付けるには、**[すべてのユーザー]** の一覧からユーザーを選択します。 選択したユーザーのデータが正しいことを確認して、**[OK]** を選択します。
 

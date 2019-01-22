@@ -14,16 +14,16 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 080205e601b857d4765eb6b97eeeeeb8f4e6fc1b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0da6861b6c49fc37691b8c6e464a506670643fa3
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187159"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203333"
 ---
 # <a name="use-scope-tags-to-filter-policies"></a>スコープのタグを使用してポリシーをフィルター処理する
 
-スコープのタグを使用すると、作成したカスタム タグを使ってポリシーをフィルター処理できます。
+スコープのタグを使用すると、作成したカスタム タグを使ってポリシーをフィルター処理できます。 スコープ タグはロールとアプリに適用できます。
 
 たとえば、"エンジニアリング部門" と呼ばれるスコープのタグを作成し、エンジニアリング部門に関連する構成プロファイルに割り当てます。 その同じタグを "エンジニアリング管理者" ロールに割り当てます。 "エンジニアリング部門" タグを含むポリシーのみが表示されます。
 
@@ -38,6 +38,11 @@ ms.locfileid: "52187159"
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>スコープのタグをロールに割り当てるには
 
 **[ロール]** > **[すべてのロール]** > **[Policy and Profile Manager]\(ポリシーとプロファイル マネージャー\)** > **[割り当て]** > **[スコープ (タグ)]** の順に選択します。
+
+## <a name="to-assign-a-scope-tag-to-an-app"></a>スコープ タグをアプリに割り当てるには
+
+**[クライアント アプリ]** > **[アプリ]** でアプリを選択し、**[プロパティ]** > **[スコープ (タグ)]** > **[追加]** でタグを選択して、**[選択]** > **[OK]** > **[保存]** を選択します。
+
 
 ## <a name="next-steps"></a>次の手順
 

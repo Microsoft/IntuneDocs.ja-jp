@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e6f816ae0eb025addfaa0c5f7ec7d16005f6b040
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: a8ebe8f8cd84ef5eb38bf7e17f413bcc6a0791cd
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112954"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122546"
 ---
 # <a name="set-enrollment-restrictions"></a>登録制限を設定する
 
@@ -81,6 +81,8 @@ ms.locfileid: "53112954"
     - Android 仕事用プロファイルは major.minor.rev.build をサポートしています。
     - iOS では major.minor.rev がサポートされます。オペレーティング システムのバージョンは、Device Enrollment Program、Apple School Manager、または Apple Configurator アプリを使用して登録する Apple デバイスには適用されません。
     - Windows では major.minor.rev.build がサポートされます (Windows 10 の場合のみ)。
+> [!Note]
+> Windows 10 では登録時にビルド番号が提供されないため、たとえば 10.0.17134.100 と入力し、デバイスが 10.0.17134.174 の場合、登録中にブロックされます。
 8. 一覧にあるプラットフォームごとに、**個人所有**のデバイスを**許可**するか**ブロック**するかを選択します。
 9. **[OK]** を選びます。
 

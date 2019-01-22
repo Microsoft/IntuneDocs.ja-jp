@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 03840b0a4a7ce3f4735e22a227f5d2856d532b11
-ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
+ms.openlocfilehash: e0bb198b078695b567756c6a7db832d00e7a8c5b
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657782"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210841"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune アプリ SDK の概要
 
@@ -158,6 +158,8 @@ iOS または Android アプリを Intune アプリ SDK と統合するために
     * Intune アプリ保護ポリシーに対して iOS または Android ストア アプリを有効化している ISV の場合は、登録ステップで説明した Microsoft Intune での登録が完了すると、プロモーション コードを受け取ります。 プロモーション コードを使用すると、Microsoft Intune の 1 年間の拡張使用試用版にサインアップできます。
 
     * ストアに出荷されない基幹業務アプリを開発している場合は、組織を介して Microsoft Intune へのアクセス権が付与されます。 この場合も、[Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) で、1 か月間の無料試用版にサインアップできます。
+    
+    * エンド ユーザー アカウントを使用してモバイル デバイスでアプリをテストしている場合は、管理者アカウントを使用してログインした後、Office 管理ポータル Web サイトによってそのアカウントに Intune ライセンスが付与されていることを確認します。[Microsoft Intune ライセンスの割り当て](https://docs.microsoft.com/en-ca/intune/licenses-assign)に関するページを参照してください。
 
 * **Intune のアプリ保護ポリシー**:Intune のすべてのアプリ保護ポリシーに対してアプリをテストするには、ポリシー設定ごとに想定される動作を把握する必要があります。 [iOS アプリ保護ポリシー](app-protection-policy-settings-ios.md)と [Android アプリ保護ポリシー](app-protection-policy-settings-android.md)の説明を参照してください。
 

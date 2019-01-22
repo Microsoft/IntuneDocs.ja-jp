@@ -15,12 +15,12 @@ ms.reviewer: karanda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f4cdd3c215fbd9eab4204eca0639d5d38fe4c97a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 12131fe0b78814850cfadee15533620dd5813f6c
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180733"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297402"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Intune での iOS デバイス用のアプリごとの Virtual Private Network (VPN) 設定
 
@@ -33,9 +33,9 @@ ms.locfileid: "52180733"
  - Citrix
  - F5
  - Pulse Connect Secure
+ - Palo Alto Networks
  - SonicWall
- - Palo Alto Networks GlobalProtect
- - Zscaler
+ - Zscaler プライベート アクセス
 
 ## <a name="prerequisites-for-per-app-vpn"></a>アプリごとの VPN の前提条件
 
@@ -186,10 +186,12 @@ VPN プロファイルを追加した後、アプリと Azure AD グループを
     - Check Point Capsule Connect
     - Cisco AnyConnect
     - Citrix VPN
+    - Citrix SSO
     - F5 Access
+    - Palo Alto Networks GlobalProtect
     - Pulse Secure
     - SonicWall Mobile Connect
-    - Zscaler アプリ
+    - Zscaler
 
     > [!NOTE]
     > Pulse Secure VPN アプリを使用している場合、アプリ層またはパケット層でのトンネリングを使用することを選択できます。 **[ProviderType]** 値に、アプリ層トンネリングには **[app-proxy]** を設定し、パケット層トンネリングには **[packet-tunnel]** を設定します。

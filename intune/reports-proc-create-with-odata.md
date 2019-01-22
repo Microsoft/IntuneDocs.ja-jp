@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 3599146aaebc2e3788fa96e8e04657ce4db41c4f
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: cc7e61d7b5dd0d7ff16836602b8d959683a971e7
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067450"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210722"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Power BI で OData フィードからレポートを作成する
 
@@ -89,7 +89,7 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
 
 ツリーマップ グラフには、ボックス内のボックスとして階層データが示されます。 階層の各分岐は、サブ分岐を示す小さいボックスが含まれているボックスです。 Power BI Desktop を使用して、Intune データのツリーマップを作成できます。
 
-![視覚化 > ツリーマップ](media/reports-create-03-treemap.png)
+![Power BI ツリーマップの視覚化](media/reports-create-03-treemap.png)
 
 1. グラフの種類を選びます。 **[Treemap]** を選びます。
 2. データ モデルで、**devices** テーブルを探します。

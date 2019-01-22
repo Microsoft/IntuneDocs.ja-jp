@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 755e836c5954b9cbbf3c7729755aaa25062710d8
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: ec170727b8846caae3e96cc19be8d1e274c17427
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642593"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210739"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Microsoft Intune を使用して Windows 10 ポータル サイト アプリを手動で追加する
 
@@ -47,7 +47,7 @@ ms.locfileid: "53642593"
 5. **プラットフォーム**に **[Windows 10 *all devices*]\(Windows 10 の*すべてのデバイス*\)** を選択し、適切な**最小バージョン**、**アーキテクチャ**、**アプリ メタデータのダウンロード**の各値を選択します。 
 6. **[ダウンロード]** を選択して、ローカル コンピューターにファイルを保存します。
 
-    ![ダウンロードに "Windows 10 のすべてのデバイス" とアーキテクチャ X86 のパッケージ詳細が選択されています](./media/Win10CP-all-devices.png)
+    ![Windows 10 デバイス、X86 のアーキテクチャが選択されている状態](./media/Win10CP-all-devices.png)
 
 7. **[ダウンロード]** を選択して、[必要なフレームワーク] の下のすべてのパッケージをダウンロードします。  
     このアクションは x86、x64、ARM アーキテクチャ用に実行する必要があります (パッケージは合計で 12 個)。

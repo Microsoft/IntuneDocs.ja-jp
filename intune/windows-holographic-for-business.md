@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 062adf12f743fdbbe42c1f29e91f2a16414ca457
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 721d3a26e25c14a2e4ccd20b179ae7d4611d3186
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032267"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203384"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Intune を使用して Windows Holographic デバイスと HoloLens デバイスのさまざまなデバイス管理機能を管理および使用する
 
@@ -123,6 +123,11 @@ Intune で利用できる共有またはゲスト PC 機能を利用し、キオ
 #### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[Wi-Fi を構成する](wi-fi-settings-configure.md)
 
 Intune で Wi-Fi プロファイルを作成し、お使いの Windows Holographic for Business デバイスに無線ネットワーク設定を割り当てることもできます。 Wi-Fi プロファイルを割り当てると、エンド ユーザーはネットワークを構成しなくても企業のネットワークにアクセスできます。 たとえば、お使いの Windows Holographic for Business デバイス専用の Wi-Fi ネットワークを作成できます。
+
+## <a name="shared-multi-user-devices"></a>共有のマルチ ユーザー デバイス
+[共有デバイス](shared-user-device-settings-windows-holographic.md)
+
+Microsoft HoloLens など、Windows Holographic for Business を実行するデバイスには、複数のユーザーが存在する可能性があります。 Intune には、ローカル ストレージを使用してこれらの共有デバイスのさまざまな機能 (電源管理など) を制御する設定や、アカウント管理が含まれます。 構成プロファイルは、異なるオペレーティング システムを備えたデバイスにも適用できます。 たとえば、デバイス グループには、同じグループ内で RS2 と RS3 を実行するデバイスを含めることができます。
 
 ## <a name="software-updates"></a>ソフトウェア更新プログラム
 **[ソフトウェア更新プログラムの管理](windows-update-for-business-configure.md)**

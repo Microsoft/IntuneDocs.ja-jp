@@ -14,12 +14,12 @@ ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
-ms.openlocfilehash: 753ad125e541936586f2939985a23ed3b06ea7ea
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: a762f14fd93400d76c63d2108a41229bf2ffc34d
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817162"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122589"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune での条件付きアクセスの一般的な使用方法
 
@@ -39,15 +39,14 @@ Intune と Azure Active Directory が連携することで、管理されたデ�
 Intune には、デバイスのコンプライアンス対応状態を評価する、デバイス コンプライアンス ポリシーの機能があります。 コンプライアンス対応状態は Azure Active Directory に報告され、ユーザーが会社のリソースにアクセスしようとしたときに、Azure Active Directory で作成された条件付きアクセスのポリシーを適用するために使用されます。
 
 Exchange Online や他の Office 365 製品のデバイス ベースの条件付きアクセス ポリシーは、[Azure Portal](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune) で構成します。
-
--   Azure Active Directory の条件付きアクセスについて詳しくは、[こちら](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)をご覧ください。
+-   Azure Active Directory で条件付きアクセスを使用するマネージド デバイスを要求する方法の詳細については、[こちら](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-managed-devices)を参照してください。
 
 -   Intune のデバイス コンプライアンスの詳細については、[こちら](device-compliance.md)を参照してください。
 
--   Intune で条件付きアクセスを使用した、電子メール、Office 365、およびその他のサービスの保護について詳しくは、[こちら](app-based-conditional-access-intune.md)をご覧ください。
+-   Azure Active Directory で条件付きアクセスを使用するサポートされるブラウザーについては、[こちら](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/technical-reference#supported-browsers)を参照してください。
 
 > [!NOTE]
-> Android デバイスの場合、Sharepoint Online に対するデバイス ベースのアクセスを有効にすると、ユーザーは登録されたデバイスで次のように **[ブラウザー アクセスを有効にする]** オプションを有効にする必要があります。
+> Android デバイスの場合、Sharepoint Online に対するデバイス ベースのアクセスまたは Exchange Online に対するブラウザー ベースのアクセスを有効にすると、ユーザーは登録されたデバイスで次のように **[ブラウザー アクセスを有効にする]** オプションを有効にする必要があります。
 > 1. **ポータル サイト アプリ**を起動します。
 > 2. トリプル ドット (...) またはハードウェアのメニュー ボタンから、 **[設定]** ページに移動します。
 > 3. **[ブラウザー アクセスを有効にする]** ボタンを押します。 
@@ -146,7 +145,9 @@ PC の条件付きアクセスでは、モバイル デバイスで利用でき�
 
 #### <a name="bring-your-own-device-byod"></a>Bring Your Own Device (BYOD)
 
--   **Workplace Join と Intune 管理:** この場合、ユーザーは個人のデバイスを参加させて、会社のリソースやサービスにアクセスできます。 Workplace Join を使用し、デバイスを Intune に登録して、デバイスレベルのポリシーを受け取ることができます。これは、条件付きアクセスの基準を評価する別のオプションでもあります。
+-   **Workplace Join と Intune 管理:** この場合、ユーザーは個人のデバイスを参加させて、会社のリソースやサービスにアクセスできます。 Workplace Join を使用し、デバイスを Intune MDM に登録して、デバイスレベルのポリシーを受け取ることができます。これは、条件付きアクセスの基準を評価する別のオプションでもあります。
+
+Azure Active Directory のデバイス管理の詳細については、[こちら](https://docs.microsoft.com/en-us/azure/active-directory/devices/overview)を参照してください。
 
 ## <a name="app-based-conditional-access"></a>アプリベースの条件付きアクセス
 

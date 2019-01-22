@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 60df25542e69422e15a2a57473a3fbfa2cc413a5
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.openlocfilehash: d5b07262dad3eaab76dd4854b82f0e45b3921b26
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959504"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203503"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Android デバイスで管理対象アプリを使用する
 マネージド アプリは、組織のセキュリティ要件を満たすように構成されて、職場や学校のデータを保護します。 これらのアプリは、お使いのデバイスに自動的にインストールして使用できます。 
@@ -56,7 +56,15 @@ ms.locfileid: "49959504"
 * 組織が、ポータル サイトでマネージド アプリを使用できるようにします。 ポータル サイト アプリまたは Web サイトに移動し、これらのアプリを検索、表示、およびインストールします。 
 * ユーザーが Google Play ストアからアプリをインストールした後、職場または学校アカウントでアプリにサインインします。  
 
-## <a name="what-can-my-company-support-manage-in-an-app"></a>会社のサポートがアプリで管理できるもの
+ ## <a name="available-apps"></a>Available apps   
+ 組織では、職場または学校で適切かつ便利なアプリを選択します。 ポータル サイト内にはこうしたアプリのみが存在します。   
+
+ アプリは、デバイスの種類に基づいて使用が許可されます。 たとえば、Android 用ポータル サイト アプリを使用している場合、Android アプリにはアクセスできますが、iOS アプリにはアクセスできません。   
+
+ ## <a name="request-an-app-for-work-or-school"></a>職場または学校用のアプリを要求する   
+ 必要なアプリがあるが、ポータル サイト内に存在しない場合は、そのアプリを要求できます。 ポータル サイト アプリの **[IT 部門にメールで連絡]** タブで、**ヘルプデスク**の連絡先詳細を確認してください。同じ連絡先情報は、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)でも確認できます。   
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>会社のサポートがアプリで管理できるもの  
 次の一覧に、会社のサポートがアプリ内で管理できる設定を示します。 これらの設定は、デバイスでの職場または学校のデータの表示方法、アクセス方法、それ以外の使用方法に影響します。
 
 * 特定の web サイトへのアクセス  
