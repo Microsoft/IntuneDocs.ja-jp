@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,27 +15,28 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6bc6f5d2f32ff060eb2eec568b0048628ad0e09c
-ms.sourcegitcommit: 349ab913932547b4a7491181f0aff092f109b87b
+ms.openlocfilehash: cb6e3f0a9f62348d55b5dc2284c1007ea7faf088
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52303857"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203214"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Microsoft Intune でのデバイス プロファイルの作成
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="create-the-profile"></a>プロファイルの作成
-1. [Azure Portal](https://portal.azure.com) で、**[すべてのサービス]** を選択し、**Microsoft Intune** を検索します。
 
-2. **Microsoft Intune** で、**[デバイス構成]** を選択し、**[プロファイル]** を選択します。 次に、**[プロファイルの作成]** を選択します。
+1. [Azure portal](https://portal.azure.com) で、**[すべてのサービス]** を選択し、**Intune** でフィルター処理して、**[Intune]** を選択します。
+
+2. **[デバイス構成]**、**[プロファイル]**、**[プロファイルの作成]** の順に選択します。
 
 3. 次のプロパティを入力します。
 
-   - **名前**: 新しいプロファイルのわかりやすい名前を入力します。
-   - **説明**: プロファイルの説明を入力します  (これは省略可能ですが、入力することをお勧めします)。
-   - **[プラットフォーム]**: プラットフォームの種類を選択します。  
+   - **[名前]**:新しいプロファイルのわかりやすい名前を入力します。
+   - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
+   - **[プラットフォーム]**:プラットフォームの種類を選択します。  
 
        - **Android**
        - **Android エンタープライズ**
@@ -45,8 +46,8 @@ ms.locfileid: "52303857"
        - **Windows 8.1 以降**
        - **Windows 10 以降**
 
-   - **[プロファイルの種類]**: 作成する種類を選択します。 リストは、選択したプラットフォームによって異なります。
-   - **[設定]**: プロファイルの種類ごとの設定に関する説明については、次のトピックを参照してください。
+   - **[プロファイルの種類]**:作成する種類を選択します。 リストは、選択したプラットフォームによって異なります。
+   - **設定**:次の記事では、ファイルの種類ごとの設定について説明します。
 
        -  [デバイスの機能](device-features-configure.md)
        -  [デバイスの制限](device-restrictions-configure.md)

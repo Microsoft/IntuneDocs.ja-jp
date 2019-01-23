@@ -16,12 +16,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: af767ce47b9382012f01de48ccd280c29ccfc27c
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 17e60e489b024b5f70c0c3c9a1fe564ed227172e
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112866"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210858"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot を使用して Intune に Windows デバイスを登録する  
 Windows Autopilot を使用すると、Intune でのデバイスの登録が簡単になります。 カスタマイズされたオペレーティング システム イメージのビルドおよび維持は、時間のかかるプロセスです。 また、これらのカスタム オペレーティング システム イメージを新しいデバイスに適用し、エンド ユーザーに提供する前に使用の準備を行う場合にも、時間がかかることがあります。 Microsoft Intune と Autopilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および新しいデバイスへの適用を行わなくてもデバイスをエンド ユーザーに提供することができます。 Intune を使用して Autopilot デバイスを管理する場合、デバイスの登録後にポリシー、プロファイル、アプリなどを管理することができます。 利点、シナリオ、および前提条件の概要については、「[Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)」 (Windows Autopilot の概要) を参照してください。
@@ -31,7 +31,7 @@ Windows Autopilot を使用すると、Intune でのデバイスの登録が簡�
 - [Windows の自動登録が有効である](windows-enroll.md#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium サブスクリプション](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
-## <a name="how-to-get-the-csv-for-import-in-intune"></a>Intune にインポートするための CSV を取得する方法
+## <a name="how-to-get-the-csv-for-import-in-intune"></a>Intune でのインポート用に CSV を取得する方法
 
 使用方法について詳しくは、PowerShell コマンドレットの説明をご覧ください。
 
@@ -79,20 +79,20 @@ Autopilot Deployment プロファイルは、Autopilot デバイスを構成す�
 3. 割り当てられたグループ内のデバイスのすべてが自動的に Autopilot に変換されるようにする場合は、**[すべての対象デバイスを Autopilot に変換する]** を **[はい]** に設定します。 割り当てられたグループ内の Autopilot 以外のデバイスはすべて Autopilot 展開サービスに登録されます。 登録が処理されるまで 48 時間待ちます。 デバイスが登録解除されリセットされると、Autopilot によってそのデバイスが登録されます。 この方法でデバイスを登録すると、このオプションを無効にしてもプロファイルの割り当てを削除しても、Autopilot 展開サービスからデバイスは削除されません。 [デバイスを直接削除](enrollment-autopilot.md#delete-autopilot-devices)する必要があります。
 4. **[配置モード]** には、次の 2 つのオプションのどちらかを選択します。
     - **[ユーザー ドリブン]**: このプロファイルのデバイスは、デバイスを登録しているユーザーに関連付けられます。 デバイスを登録するには、ユーザーの資格情報が必要です。
-    - **[自己展開 (プレビュー)]**: (最新の [Windows 10 Insider Preview ビルド](https://docs.microsoft.com/windows-insider/at-work-pro/)が必要) このプロファイルのデバイスは、デバイスを登録しているユーザーに関連付けられません。 デバイスを登録するのに、ユーザーの資格情報は必要ありません。
+    - **[自己展開 (プレビュー)]**: (Windows 10 バージョン 1809 以降が必要) このプロファイルのデバイスは、デバイスを登録しているユーザーに関連付けられません。 デバイスを登録するのに、ユーザーの資格情報は必要ありません。
 5. **[Join to Azure AD as]\(Azure AD への参加状況\)** ボックスに、**[Azure AD 参加済み]** を選択します。
 6. **[Out-of-box experience (OOBE)]** を選択し、次のオプションを構成して **[保存]** を選択します。
     - **[言語 (リージョン)]**\*: デバイスで使用する言語を選択します。 このオプションは、**[配置モード]** に **[自己展開]** を選択した場合のみ使用できます。
     - **[キーボードを自動的に構成する]**\*: **[言語 (リージョン)]** を選択している場合は、**[はい]** を選択してキーボード選択ページをスキップします。 このオプションは、**[配置モード]** に **[自己展開]** を選択した場合のみ使用できます。
     - **[使用許諾契約書 (EULA)]**: (Windows 10、バージョン 1709 以降) EULA をユーザーに表示するかどうかを選択します。
     - **[プライバシーの設定]**: プライバシーの設定をユーザーに表示するかどうかを選択します。
-    - **[アカウントの変更オプションを非表示にする] (Windows Insider のみ)**: **[非表示]** を選択すると、会社のサインイン ページとドメイン エラー ページにアカウント変更オプションが表示されなくなります。 これらのオプションでは、[Azure Active Directory で会社のブランドを構成する](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)必要があります。
+    - **[アカウントの変更オプションを非表示にする] (Windows 10 バージョン 1809 以降が必要)**:**[非表示]** を選択すると、会社のサインイン ページとドメイン エラー ページにアカウント変更オプションが表示されなくなります。 これらのオプションでは、[Azure Active Directory で会社のブランドを構成する](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)必要があります。
     - **[ユーザー アカウントの種類]**: ユーザーのアカウントの種類を選択します (**管理者**ユーザーまたは**標準**ユーザー)。
-    - **[Apply computer name template]\(コンピューター名テンプレートを適用する\) (Windows Insider のみ)**: **[はい]** を選択すると、登録中にデバイスに名前を付けるときに使用するテンプレートが作成されます。 名前を 15 文字以下にする必要があります。また、文字、数字、ハイフンを含めることができます。 数字だけで名前を作ることはできません。 [%SERIAL% マクロ](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)を使用し、ハードウェア固有のシリアル番号を追加します。 または、[%RAND:x% マクロ](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)を使用して、数字のランダム文字列を追加します。x は追加する桁数です。 
+    - **[Apply computer name template]\(コンピューター名のテンプレートを適用する\) (Windows 10 バージョン 1809 以降が必要)**:**[はい]** を選択すると、登録中にデバイスに名前を付けるときに使用するテンプレートが作成されます。 名前を 15 文字以下にする必要があります。また、文字、数字、ハイフンを含めることができます。 数字だけで名前を作ることはできません。 [%SERIAL% マクロ](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)を使用し、ハードウェア固有のシリアル番号を追加します。 または、[%RAND:x% マクロ](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)を使用して、数字のランダム文字列を追加します。x は追加する桁数です。 
 
 6. **[作成]** を選択して、プロファイルを作成します。 これで、Autopilot Deployment プロファイルをデバイスに割り当てられるようになりました。
 
-* **[言語 (リージョン)]** も **[キーボードを自動的に構成する]** も、**[配置モード]** に **[自己展開 (プレビュー)]** を選択した場合にのみ使用できます (最新の [Windows 10 Insider Preview ビルド](https://docs.microsoft.com/windows-insider/at-work-pro/)が必要)。
+* **[言語 (リージョン)]** も **[キーボードを自動的に構成する]** も、**[配置モード]** に **[自己展開 (プレビュー)]** を選択した場合にのみ使用できます (Windows 10 バージョン 1809 以降が必要)。
 
 
 ## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>Autopilot Deployment プロファイルをデバイス グループに割り当てる
@@ -100,6 +100,9 @@ Autopilot Deployment プロファイルは、Autopilot デバイスを構成す�
 1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Windows の登録]** > **[Deployment profile]\(展開プロファイル\)** でプロファイルを選択します。
 2. 特定のプロファイルのブレードで、**[割り当て]** を選択します。 
 3. **[グループの選択]** を選択し、**[グループの選択]** ブレードでプロファイルを割り当てるグループを選択して、**[選択]** をクリックします。
+
+> [!NOTE]
+> Intune は、割り当てられているグループ内の新しいデバイスを定期的に確認し、これらのデバイスにプロファイルを割り当てるプロセスを開始します。 このプロセスの完了には数分かかることがあります。 デバイスをデプロイする前に、このプロセスが完了したことを確認します。  この確認は、**[デバイスの登録]** > **[Windows の登録]** > **[デバイス]** で行うことができます。ここで、プロファイルの状態が "未割り当て" から "割り当て中" に変わり、最後に "割り当て済み" になります。
 
 ## <a name="edit-an-autopilot-deployment-profile"></a>Autopilot Deployment プロファイルを編集する
 Autopilot Deployment プロファイルを作成したら、その展開プロファイルの特定の部分を編集することができます。   
@@ -125,7 +128,7 @@ Autopilot Deployment プロファイルを作成したら、その展開プロ�
 
 特定の Autopilot デバイスにユーザーを割り当てることができます。 この割り当てにより、Windows のセットアップ中、[社名](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)サインイン ページに Azure Active Directory からユーザーが事前入力されます。 カスタムの挨拶の名前を設定することもできます。 それによって、データが事前入力されることも、Windows サインインが変更されることもありません。 ライセンスが与えられた Intune ユーザーのみ、この方法で割り当てることができます。
 
-前提条件:Azure Active Directory のポータル サイトが構成済みであり、[Windows 10 Insider Preview ビルド](https://docs.microsoft.com/windows-insider/at-work-pro/) が最新のものである必要があります。
+前提条件:Azure Active Directory ポータル サイトが構成されていること。Windows 10 バージョン 1809 以降。
 
 1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Windows の登録]** > **[デバイス]** の順に選択し、デバイスを選択して **[ユーザーの割り当て]** を選択します。
 
