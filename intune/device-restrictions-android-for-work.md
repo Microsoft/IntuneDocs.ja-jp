@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 671c713be805038c7c2f2608dbadd9d8afdce344
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 62c44768f17ecc82dc748eb4dfda74da421ee3b5
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203605"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54387010"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように Android エンタープライズ デバイスを設定する
 
@@ -87,7 +87,7 @@ ms.locfileid: "54203605"
 
 ### <a name="kiosk-settings"></a>キオスクの設定
 
-デバイスを構成して、1 つのアプリまたは複数のアプリを実行させることができます。 デバイスがキオスク モードのときは、ご自身が追加したアプリのみを使用できます。
+デバイスを構成して、1 つのアプリまたは複数のアプリを実行させることができます。 デバイスがキオスク モードのときは、ご自身が追加したアプリのみを使用できます。 これらの設定は Android 専用デバイスには適用されますが、Android フル マネージド専用デバイスには適用されません。
 
 **[キオスク モード]**:デバイスで 1 つのアプリまたは複数のアプリを実行させる場合に選択します。
 

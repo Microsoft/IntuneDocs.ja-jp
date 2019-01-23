@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f6a78c6612f98903fcbaa9d33b8037c5ea4a3960
-ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
+ms.openlocfilehash: f81875afffa461e036bc319febc9a6141967c440
+ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149663"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380468"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Intune と Windows Autopilot を使用してハイブリッド Azure AD 参加済みデバイスをデプロイする (プレビュー)
 Intune と Windows Autopilot を使用して、ハイブリッド Azure Active Directory 参加済みデバイスを設定できます。 そのためには、以下の手順のようにします。
@@ -116,6 +116,9 @@ Active Directory の Intune コネクタを、インターネットと Active Di
 6. **[サインイン]** を選択します。
 7. ユーザーのグローバル管理者ロールまたは Intune 管理者ロールの資格情報を入力します。
 8. **[デバイスの登録]** > **[Windows 登録]** > **[Active Directory の Intune コネクタ (プレビュー)]** に移動し、接続の状態が **[アクティブ]** であることを確認します。
+
+ > [!NOTE]
+ > コネクタに **[サインイン]** した後、それが [Intune](https://aka.ms/intuneportal) で表示されるまでに数分かかる場合があります。 Intune サービスと正常に通信できる場合にのみコネクタが表示されることに注意してください。
 
 ### <a name="configure-web-proxy-settings"></a>Web プロキシ設定の構成
 

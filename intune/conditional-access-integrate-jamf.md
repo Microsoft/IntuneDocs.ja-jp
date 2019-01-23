@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/12/2019
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8e607dc612f71cdf72322b9fa7ecf14abb5fd809
-ms.sourcegitcommit: d54a12a836503f7e8b90346f16b7ad2d83b710dc
+ms.openlocfilehash: 971dc851714045a8a3b60dfe8ff6c6acc4419294
+ms.sourcegitcommit: 7c41f42d6e398ed46aa602ec8aaa4f39aaf92772
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270590"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54325017"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>コンプライアンスのために Jamf Pro を Intune と統合する
 
@@ -83,51 +83,9 @@ Intune を Jamf Pro に接続するには、次の手順に従います。
 
 Intune と Jamf の統合を構成したら、[Jamf で管理されたデバイスにコンプライアンス ポリシーを適用する](conditional-access-assign-jamf.md)必要があります。
 
-## <a name="information-shared-from-jamf-pro-to-intune"></a>Intune に Jamf Pro から共有する情報
 
-Jamf Pro は、管理対象の macOS デバイスについてのインベントリ情報をキャプチャします。 Jamf Pro は、Intune に次の情報をレポートします。
-
-* デバイスの Azure AD ID
-* JAMF のインベントリ状態 (過去 24 時間以内に Jamf Pro でチェックインされたコンピューターのインベントリ状態)
-* OS のバージョン
-* ユーザーの Azure AD ID
-* 暗号化 (FileVault 2)
-* Gatekeeper ステータス
-* パスワード: 文字セットの最小数
-* パスワードの有効期限 (日)
-* パスワードの種類 - 簡易、英数字、または不明
-* 自動ログインの防止
-* 必要なパスコードの長さ
-* パスワード: 再利用を防止する前のパスワードの数
-* システム整合性の保護
-* 最後のチェックイン時刻
-* アーキテクチャの種類
-* 使用可能な RAM スロット
-* バッテリ容量
-* ブート ROM
-* バス速度
-* キャッシュ サイズ
-* ［デバイス名］
-* ドメイン参加
-* Jamf ID
-* MAC アドレス
-* Make
-* モデル
-* モデル識別子
-* NIC 速度
-* コア数
-* プロセッサ数
-* OS
-* プラットフォーム
-* プロセッサ速度
-* プロセッサの種類
-* セカンダリ MAC アドレス
-* シリアル番号
-* SMC バージョン
-* RAM 合計
-* UDID
-* ユーザーの電子メール
 
 ## <a name="next-steps"></a>次の手順
 
 - [Jamf で管理されたデバイスにコンプライアンス ポリシーを適用する](conditional-access-assign-jamf.md)
+- [Jamf から Intune に送られるデータ](data-jamf-sends-to-intune.md)

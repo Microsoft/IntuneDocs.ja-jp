@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 0efc84da6a9efb594600b9ca33aa5eb7622c8101
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: d1b553d262200e58a4c06dd0f4bcb72ca1398080
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203435"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54386986"
 ---
 # <a name="the-early-edition-for-microsoft-intune---january-2019"></a>Microsoft Intune の初期エディション - 2019 年 1 月
 
@@ -48,9 +48,6 @@ Microsoft Intune からマネージド Google Play アプリを削除できま�
 
 ### <a name="managed-google-play-app-type----1352580---"></a>マネージド Google Play アプリの種類<!-- 1352580 -->
 **マネージド Google Play** アプリの種類では、特定の[マネージド Google Play アプリ](https://play.google.com/work/search?q=microsoft&c=apps)を Intune に追加できます。 Intune の管理者は、Intune でマネージド Google Play アプリを参照、検索、承認、同期および割り当てできます。 マネージド Google Play コンソールに別途移動する必要がなく、また再認証する必要もありません。 Intune で、**[クライアント アプリ]** > **[アプリ]** > **[追加]** を選択します。 **[アプリケーションの種類]** 一覧で、アプリの種類として **[マネージド Google Play]** を選択します。
-
-### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>会社が所有する完全に管理された Android デバイスのサポートのプレビュー <!-- 1574342  -->
-Intune では、完全に管理された Android デバイス、つまりデバイスが IT によって厳格に管理され、個々のユーザーと関連付けられている、会社所有の "デバイス所有者" シナリオがサポートされます。 これにより、管理者は、デバイス全体を管理し、仕事用プロファイルでは利用できない拡張範囲のポリシー制御を適用し、managed Google Play からのみアプリをインストールするようにユーザーを制限することができます。 完全に管理された Android デバイスを設定するには、**[デバイスの登録]** > **[Android の登録]** > **[Corporate-owned, fully managed user devices]\(会社が所有する完全に管理されたユーザー デバイス\)** に移動します。 なお、この機能はプレビュー段階です。 証明書、コンプライアンス、および条件付きのアクセスなど、一部の Intune 機能は、現在 Android の完全に管理されたユーザー デバイスでは利用できません。
 
 ### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----1672660----"></a>オンラインでライセンスされたビジネス向け Microsoft Store アプリの展開 <!-- 1672660  -->
 オンラインでライセンスされた必要なビジネス向け Microsoft Store アプリをデバイスのコンテキストで割り当てることができます。 このようにして、ビジネス向け Microsoft Store アプリを展開すると、デバイス上のすべてのユーザーにアプリをインストールできます。 対象は Windows 10 RS4 以上のデスクトップ デバイスのみです。 デバイスのコンテキストでインストールするオプションは、MSFB オンラインのライセンスされたアプリのクライアント アプリの割り当てページにあります。
@@ -130,9 +127,8 @@ Intune の macOS ポータル サイトで、macOS 用にダーク モードが�
 ### <a name="use-microsoft-recommended-settings-with-security-baselines----2055484---"></a>セキュリティ ベースラインに対して Microsoft 推奨の設定を使用する<!-- 2055484 -->
 Intune は、セキュリティに的を絞ったその他のサービス (Windows Defender ATP や Office 365 ATP など) と統合されます。 一般的な戦略と、Microsoft 365 サービス間での結束的なエンドツーエンドのセキュリティ ワークフローをお客様から求められています。 目標としているのは、セキュリティの運用と一般的な管理者タスクをブリッジするソリューションを構築できるように戦略を調整することにあります。 Intune では、Microsoft が推奨する一連の "セキュリティ ベースライン" を公開することによって、この目標の達成を目指しています (**[Intune]** > **セキュリティ ベースライン**)。  管理者はこれらのベースラインからセキュリティ ポリシーを直接作成し、それをユーザーに展開することができるようになります。 それらのユーザーは、組織のニーズに合わせてベスト プラクティスの推奨事項をカスタマイズすることもできます。 Intune では、これらのベースラインにデバイスが準拠した状態に維持されていることが確認され、管理者には準拠した状態にないユーザーまたはデバイスが通知されます。
 
-### <a name="deployed-wip-policies-without-user-enrollment----1434452---"></a>ユーザー登録なしでの WIP ポリシーの展開 <!-- 1434452 -->
-使用している Windows 10 デバイスを登録することを MDM ユーザーに求めることなく、Windows 情報保護 (WIP) ポリシーを展開できるようになります。 この構成により、会社は WIP 構成に基づいて会社のドキュメントを保護することができ、一方、ユーザーは独自の Windows デバイスの管理を維持することができます。 WIP ポリシーを使用してドキュメントが保護されると、Intune 管理者は保護されたデータを選択的にワイプすることができます。 ユーザーとデバイスを選択してワイプ要求を送信することにより、WIP ポリシーを介して保護されたデータはすべて使用できなくなります。 Azure portal 内で Intune から、**[モバイル アプリ]** > **[アプリの選択的ワイプ]** の順に選択します。
-
+### <a name="selective-wipe-support-for-wip-without-enrollment-devices----1434452---"></a>登録なしの WIP デバイスに対する選択的ワイプのサポート <!-- 1434452 -->
+登録なしの Windows Information Protection (WIP-WE) を使うと、MDM への完全な登録を必要とせずに Windows 10 デバイス上の企業データを保護することができます。 WIP-WE ポリシーを使用してドキュメントが保護されると、Intune 管理者は保護されたデータを選択的にワイプすることができます。 ユーザーとデバイスを選択してワイプ要求を送信することにより、WIP-WE ポリシーを介して保護されたデータはすべて使用できなくなります。 Azure portal 内で Intune から、**[モバイル アプリ]** > **[アプリの選択的ワイプ]** の順に選択します。
 
 <!-- 1809 start -->  
 
