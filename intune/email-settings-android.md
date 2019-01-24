@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ffe25f7e4870f2ea6969d1261f33c69362d75469
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: b96363d679a6f09327bf9a1b46421e786d1956a8
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032029"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316884"
 ---
 # <a name="android-and-android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Intune を使用して電子メール、認証、および同期を構成するための Android デバイスおよび Android エンタープライズ デバイスの設定
 
@@ -69,7 +69,9 @@ Intune 管理者は、次の Android デバイスに対して電子メール設�
 
 ### <a name="content-sync-settings"></a>コンテンツ同期設定
 
-- **[同期するコンテンツの種類]**:デバイスに同期するコンテンツの種類を選択します。
+- **[同期するコンテンツの種類]**:デバイスで同期するコンテンツの種類を選択します。 **[未構成]** の場合、この設定が無効になります。 **[未構成]** に設定すると、エンド ユーザーがデバイスで同期を有効にしても、デバイスと Intune が同期したとき、ポリシーが再適用され、再び無効になります。 
+
+  次の内容を同期できます。 
   - **連絡先**
   - **カレンダー**
   - **タスク**
@@ -84,7 +86,9 @@ Intune 管理者は、次の Android デバイスに対して電子メール設�
   - **[証明書]** を選択した場合は、Exchange 接続の認証のために事前に作成しておいたクライアント SCEP または PKCS 証明書プロファイルを選択します。
 - **[SSL]**:電子メールの送受信および Exchange サーバーとの通信に、SSL (Secure Sockets Layer) 通信を使用します。
 - **[同期する電子メールの日数]**:同期する電子メールの日数を選択します。利用可能なすべての電子メールを同期する場合は **[無制限]** を選択します。
-- **[同期するコンテンツの種類]** (Nine Work のみ):デバイスに同期するコンテンツの種類を選択します。
+- **[同期するコンテンツの種類]** (Nine Work のみ):デバイスで同期するコンテンツの種類を選択します。 **[未構成]** の場合、この設定が無効になります。 **[未構成]** に設定すると、エンド ユーザーがデバイスで同期を有効にしても、デバイスと Intune が同期したとき、ポリシーが再適用され、再び無効になります。 
+
+  次の内容を同期できます。 
   - **連絡先**
   - **カレンダー**
   - **タスク**

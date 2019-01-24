@@ -15,12 +15,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: db499f2d55318919f420e03be0883ec70d949d20
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 576e690e6f77480756e1406e6c0bea8696c422ea
+ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180371"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380446"
 ---
 # <a name="set-up-intune"></a>Intune をセットアップする
 
@@ -30,7 +30,7 @@ ms.locfileid: "52180371"
 
 Intune サブスクリプションの設定や MDM 権限の設定など、一部の手順はほとんどのシナリオで必須となります。 カスタム ドメインの構成やアプリの追加など、その他の手順が必要かどうかは会社次第です。
 
-現在コンピューターとサーバーの管理に Microsoft System Center Configuration Manager を使用している場合は、[Configuration Manager を拡張してモバイル デバイスを管理する](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)ことができます。
+現在コンピューターとサーバーの管理に Microsoft System Center Configuration Manager を使用している場合は、[Configuration Manager と共同管理をクラウドで接続](https://docs.microsoft.com/sccm/comanage/overview)できます。
 
 >[!TIP]
 >対象となるプランで Intune のライセンスを 150 以上購入した場合は、*FastTrack センター特典*をご利用いただけます。 このサービスでは、Microsoft のスペシャリストが Intune 用の環境の準備をお手伝いします。 「[Enterprise Mobility + Security (EMS) 用の FastTrack センター特典](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program)」を参照してください。

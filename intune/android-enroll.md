@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 12/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 79a1a03f74db8e44dc3ee4d6575e193ce7841e24
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 3d86afec4e501533ab0048e866969a5bf73c2c57
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031893"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54387046"
 ---
 # <a name="enroll-android-devices"></a>Android デバイスの登録
 
@@ -29,9 +29,10 @@ ms.locfileid: "53031893"
 
 Intune 管理者は、次の Android デバイスを管理できます。
 - Android デバイス (Samsung KNOX Standard デバイスを含む)
-- Android Enterprise デバイス ([Android 仕事用プロファイルのデバイス](#enable-enrollment-of-android-for-work-devices)および Android Kiosk デバイスを含む)
-
-Samsung Knox Standard を実行するデバイスが、Intune によるマルチ ユーザー管理のサポート対象になりました。 つまり、ユーザーは Azure AD 資格情報を使用してデバイスに対してサインインしたりサインアウトしたりすることができます。 使用中かどうかに関係なく、デバイスは中央管理されます。 サインインしたユーザーはアプリにアクセスできるのに加え、適用されるポリシーを受け取ります。 ユーザーがサインアウトすると、すべてのアプリ データがクリアされます。
+- Android エンタープライズ デバイスには次のものが含まれます。
+    - **Android 仕事用プロファイルのデバイス**:会社のデータにアクセスする権限が与えられた個人用デバイス。 管理者は職場のアカウント、アプリ、データにアクセスできます。 デバイスに入っている個人のデータは仕事のデータから分離され、個人の設定やデータが管理者に操作されることはありません。 
+    - **Android 専用デバイス**:デジタル サイネージ、チケット印刷、在庫管理など、会社が所有する単回使用デバイス。 管理者はデバイスの使用を厳しく管理し、限られたアプリと Web リンクのみ許可します。 また、ユーザーがデバイスに他のアプリを追加したり、他の操作を行ったりできないようになっています。
+    - **Android フル マネージド デバイス**:仕事のためにのみ使用し、私事には使用しない会社所有の単一ユーザー デバイス。 管理者はデバイス全体を管理し、仕事用プロファイルで利用できないポリシー制御を強制できます。 
 
 ## <a name="prerequisite"></a>前提条件
 
@@ -52,14 +53,16 @@ Android デバイスをブロックする場合や、個人所有の Android デ
 
 ## <a name="set-up-android-enterprise-enrollment"></a>Android Enterprise の登録の設定
 
-Android Enterprise は、仕事用のアプリとデータを含む仕事用プロファイルから個人用アプリとデータを分離する、Android デバイスの機能とサービスのセットです。 Android Enterprise デバイス (仕事用プロファイルのデバイスおよび Kiosk デバイスを含む) 
+Android Enterprise は、仕事用のアプリとデータを含む仕事用プロファイルから個人用アプリとデータを分離する、Android デバイスの機能とサービスのセットです。 Android エンタープライズ デバイスには、仕事用プロファイルのデバイス、フル マネージド デバイス、専用デバイスがあります。 
 
-Android Enterprise デバイスの登録をセットアップするには、まず[を Intune に Android Enterprise を接続](connect-intune-android-enterprise.md)します。 この手順を完了すると、次の操作を実行できます。
-
-[Android 仕事用プロファイルの登録の設定](android-work-profile-enroll.md)
-[Android Kiosk の登録の設定](android-kiosk-enroll.md)
+- [Android の仕事用プロファイルの登録を設定する](android-work-profile-enroll.md)
+- [Android の専用デバイスの登録を設定する](android-kiosk-enroll.md)
+- [Android のフル マネージドの登録を設定する](android-fully-managed-enroll.md)
 
 ## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>Samsung KNOX デバイス登録時のエンドユーザー エクスペリエンス
+
+Samsung Knox Standard デバイスが Intune によるマルチ ユーザー管理のサポート対象になりました。 つまり、ユーザーは Azure AD 資格情報を使用してデバイスに対してサインインしたりサインアウトしたりすることができます。 使用中かどうかに関係なく、デバイスは中央管理されます。 サインインしたユーザーはアプリにアクセスできるのに加え、適用されるポリシーを受け取ります。 ユーザーがサインアウトすると、すべてのアプリ データが消去されます。
+
 Samsung Knox デバイスを登録する場合、次のいくつかの考慮事項があります。
 -   ポリシーで PIN が要求されない場合でも、デバイスを登録するには少なくとも 4 桁の PIN が必要です。 デバイスに PIN がない場合、ユーザーに作成を求めるメッセージが表示されます。
 -   Workplace Join Certificates (WPJ) に関するユーザーの操作はありません。
@@ -69,3 +72,9 @@ Samsung Knox デバイスを登録する場合、次のいくつかの考慮事�
 -   会社のリソースへのアクセスのサービスでプッシュされる証明書のインストールをユーザーに求める追加のメッセージは表示されません。
 - 一部の古い Knox デバイスでは、会社のリソースへのアクセスで使用される追加の証明書を求めるメッセージがユーザーに表示されます。
 - Samsung Mini デバイスで WPJ のインストールに失敗し、"**証明書が見つかりません**" または "**デバイスを登録できません**" などのエラーが表示された場合は、最新の Samsung Firmware Updates をインストールします。
+
+## <a name="next-steps"></a>次の手順
+
+- [Android の仕事用プロファイルの登録を設定する](android-work-profile-enroll.md)
+- [Android の専用デバイスの登録を設定する](android-kiosk-enroll.md)
+- [Android のフル マネージドの登録を設定する](android-fully-managed-enroll.md)

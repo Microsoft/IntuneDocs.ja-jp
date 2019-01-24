@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c32effb645b329c8095ec8757a980b1f3d80a4d7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 698bc4e7e2d2cf8ece1b1c17b091a91c76a7d178
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184288"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54386889"
 ---
 # <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>Android エンタープライズ アカウントに Intune アカウントを接続する
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android 仕事用プロファイル デバイスと Android キオスク デバイスをサポートするには、Intune テナント アカウントを Android エンタープライズ アカウントに接続する必要があります。 
+[Android 仕事用プロファイル デバイス](android-work-profile-enroll.md)、[Android フル マネージド デバイス](android-fully-managed-enroll.md)、[Android 専用デバイス](android-kiosk-enroll.md)をサポートするには、Intune テナント アカウントを Android エンタープライズ アカウントに接続する必要があります。  
 
 > [!NOTE]
 > Google ドメインと Microsoft ドメインの間の相互作用のため、この手順では、ブラウザー設定の調整が必要な場合があります。  "portal.azure.com" と "play.google.com" がブラウザーの同じセキュリティ ゾーンにあることを確認してください。

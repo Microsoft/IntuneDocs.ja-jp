@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4b76625276a34c027ae8c74f1c6a3977c4a7e8bd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: db6aed3d87b8a8df55c5c95e52eb3dd9ccc690a7
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179951"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54386961"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>管理対象の Android デバイス用アプリ構成ポリシーを追加する
 
@@ -62,13 +62,17 @@ Microsoft Intune のアプリ構成ポリシーを使用して、Android 仕事�
 ### <a name="supported-variables-for-configuration-values"></a>構成値でサポートされる変数
 
 値の型として変数を選択する場合は、次のオプションを選ぶことができます。
-- ユーザー プリンシパル名 — **John@contoso.com** など
-- メール — **John@contoso.com** など
-- UPN の一部 — **John** など
-- アカウント ID — **fc0dc142-71d8-4b12-bbea-bae2a8514c81** など
-- デバイス ID — **b9841cd9-9843-405f-be28-b2265c59ef97** など
-- ユーザー ID — **3ec2c00f-b125-4519-acf0-302ac3761822** など
-- ユーザー名 — **John Doe** など
+
+| オプション | 例 |
+|----|----|
+| メール | john@contoso.com |
+| ユーザー プリンシパル名 | john@contoso.com |
+| UPN の一部 | john |
+| Domain | contoso.com |
+| [ユーザー名] | John Doe |
+| アカウント ID | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
+| ユーザー ID | 3ec2c00f-b125-4519-acf0-302ac3761822 |
+| デバイス ID | b9841cd9-9843-405f-be28-b2265c59ef97 |
 
 ### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>複数 ID アプリで構成済みの組織アカウントのみを許可する 
 
