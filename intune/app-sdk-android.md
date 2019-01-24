@@ -35,8 +35,8 @@ Android 用 Microsoft Intune アプリ SDK を使用すると、ネイティブ 
 Intune App SDK は、次のファイルで構成されます。
 
 * **Microsoft.Intune.MAM.SDK.aar**:サポート ライブラリ JAR ファイルを除く、SDK コンポーネントです。
-* **Microsoft.Intune.MAM.SDK.Suppまたはt.v4.jar**:Android v4 サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。
-* **Microsoft.Intune.MAM.SDK.Suppまたはt.v7.jar**:Android v7 サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。
+* **Microsoft.Intune.MAM.SDK.Support.v4.jar**:Android v4 サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。
+* **Microsoft.Intune.MAM.SDK.Support.v7.jar**:Android v7 サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。
 * **Microsoft.Intune.MAM.SDK.Support.v17.jar**:Android v17 サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。 
 * **Microsoft.Intune.MAM.SDK.Support.Text.jar**:`android.support.text` パッケージ内の Android サポート ライブラリのクラスを使用するアプリで MAM を有効にするために必要なクラスです。
 * **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**:この jar には、新しいデバイス上にのみ存在し、MAMActivity 内のメソッドによって参照される Android システム クラスのためのスタブが含まれています。 新しいデバイスでは、これらのスタブ クラスを無視します。 この jar が必要になるのは、MAMActivity から派生したクラスに対してリフレクションを実行する場合のみであり、ほとんどのアプリにはこの jar を含める必要がありません。 この jar を使用している場合、そのすべてのクラスを ProGuard から除外する操作は慎重に行う必要があります。 それはすべて "android" ルート パッケージの下にあります。
@@ -224,33 +224,33 @@ Intune 管理を有効にするために、Android の基底クラスを、そ�
 
 | Android の基底クラス | Intune アプリ SDK の代替物 |
 |--|--|
-| とroid.app.Activity | MAMActivity |
-| とroid.app.ActivityGroup | MAMActivityGroup |
-| とroid.app.AliasActivity | MAMAliasActivity |
-| とroid.app.Application | MAMApplication |
-| とroid.app.DialogFragment | MAMDialogFragment |
-| とroid.app.ExpとableListActivity | MAMExpとableListActivity |
-| とroid.app.Fragment | MAMFragment |
-| とroid.app.IntentService | MAMIntentService |
-| とroid.app.LauncherActivity | MAMLauncherActivity |
-| とroid.app.ListActivity | MAMListActivity |
+| android.app.Activity | MAMActivity |
+| android.app.ActivityGroup | MAMActivityGroup |
+| android.app.AliasActivity | MAMAliasActivity |
+| android.app.Application | MAMApplication |
+| android.app.DialogFragment | MAMDialogFragment |
+| android.app.ExpとableListActivity | MAMExpとableListActivity |
+| android.app.Fragment | MAMFragment |
+| android.app.IntentService | MAMIntentService |
+| android.app.LauncherActivity | MAMLauncherActivity |
+| android.app.ListActivity | MAMListActivity |
 | android.app.ListFragment | MAMListFragment |
-| とroid.app.NativeActivity | MAMNativeActivity |
-| とroid.app.PendingIntent | MAMPendingIntent (「[PendingIntent](#pendingintent)」を参照) |
-| とroid.app.Service | MAMService |
-| とroid.app.TabActivity | MAMTabActivity |
-| とroid.app.TaskStackBuilder | MAMTaskStackBuilder |
-| とroid.app.backup.BackupAgent | MAMBackupAgent |
-| とroid.app.backup.BackupAgentHelper | MAMBackupAgentHelper |
-| とroid.app.backup.FileBackupHelper | MAMFileBackupHelper |
-| とroid.app.backup.SharePreferencesBackupHelper | MAMSharedPreferencesBackupHelper |
-| とroid.content.BroadcastReceiver | MAMBroadcastReceiver |
-| とroid.content.ContentProvider | MAMContentProvider |
-| とroid.os.Binder | MAMBinder (Android インターフェイス定義言語 (AIDL) インターフェイスから Binder が生成されない場合にのみ必要) |
+| android.app.NativeActivity | MAMNativeActivity |
+| android.app.PendingIntent | MAMPendingIntent (「[PendingIntent](#pendingintent)」を参照) |
+| android.app.Service | MAMService |
+| android.app.TabActivity | MAMTabActivity |
+| android.app.TaskStackBuilder | MAMTaskStackBuilder |
+| android.app.backup.BackupAgent | MAMBackupAgent |
+| android.app.backup.BackupAgentHelper | MAMBackupAgentHelper |
+| android.app.backup.FileBackupHelper | MAMFileBackupHelper |
+| android.app.backup.SharePreferencesBackupHelper | MAMSharedPreferencesBackupHelper |
+| android.content.BroadcastReceiver | MAMBroadcastReceiver |
+| android.content.ContentProvider | MAMContentProvider |
+| android.os.Binder | MAMBinder (Android インターフェイス定義言語 (AIDL) インターフェイスから Binder が生成されない場合にのみ必要) |
 | android.media.MediaPlayer | MAMMediaPlayer |
 | android.media.MediaMetadataRetriever | MAMMediaMetadataRetriever |
-| とroid.provider.DocumentsProvider | MAMDocumentsProvider |
-| とroid.preference.PreferenceActivity | MAMPreferenceActivity |
+| android.provider.DocumentsProvider | MAMDocumentsProvider |
+| android.preference.PreferenceActivity | MAMPreferenceActivity |
 | android.support.multidex.MultiDexApplication | MAMMultiDexApplication |
 | android.widget.TextView | MAMTextView |
 | android.widget.AutoCompleteTextView | MAMAutoCompleteTextView |
@@ -266,12 +266,12 @@ Intune 管理を有効にするために、Android の基底クラスを、そ�
 
 | Android クラス | Intune アプリ SDK の代替物 |
 |--|--|
-| とroid.suppまたはt.v4.app.DialogFragment | MAMDialogFragment
-| とroid.suppまたはt.v4.app.FragmentActivity | MAMFragmentActivity
-| とroid.suppまたはt.v4.app.Fragment | MAMFragment
+| android.suppまたはt.v4.app.DialogFragment | MAMDialogFragment
+| android.suppまたはt.v4.app.FragmentActivity | MAMFragmentActivity
+| android.suppまたはt.v4.app.Fragment | MAMFragment
 | android.support.v4.app.JobIntentService | MAMJobIntentService
-| とroid.suppまたはt.v4.app.TaskStackBuilder | MAMTaskStackBuilder
-| とroid.suppまたはt.v4.content.FileProvider | MAMFileProvider
+| android.suppまたはt.v4.app.TaskStackBuilder | MAMTaskStackBuilder
+| android.suppまたはt.v4.content.FileProvider | MAMFileProvider
 | android.support.v4.content.WakefulBroadcastReceiver | MAMWakefulBroadcastReceiver
 
 ### <a name="microsoftintunemamsdksupportv7jar"></a>Microsoft.Intune.MAM.SDK.Support.v7.jar:
