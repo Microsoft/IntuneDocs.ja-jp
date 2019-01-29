@@ -16,12 +16,12 @@ ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ecc5228eef9e9d7be5ba567db6b32c84e95df1b6
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 7283b728e519eb2ca5a9a0b7516774c8cfc26f9b
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032301"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831515"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>ユーザー アクセスに関する使用条件
 
@@ -29,7 +29,7 @@ ms.locfileid: "53032301"
 
 Intune 管理者は、ユーザーがポータル サイトを使用して以下の操作を行う前に、会社の使用条件に同意することを必須にすることができます。
 - デバイスを登録する
-- 会社のアプリやメールなどのリソースにアクセスする。
+- 会社のアプリやメールなどのリソースにアクセスする。    
 使用条件の構成は任意です。
 
 複数の条件セットを作成し、異なるグループに割り当てることができます。それにより、たとえば、さまざまな言語をサポートします。
