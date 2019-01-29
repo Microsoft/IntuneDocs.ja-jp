@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.openlocfilehash: d0fcb021545d96fe8f5bfdf742dd4d181c91fb1a
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297385"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831566"
 ---
 # <a name="manage-software-updates-in-intune"></a>Intune でのソフトウェア更新プログラムの管理
 
@@ -106,7 +106,7 @@ Windows Update for Business を使用して、更新管理エクスペリエン�
 
    - **Block user from pausing Windows updates \(ユーザーによる Windows 更新プログラムの一時停止をブロックする\)**:既定で有効になっています。 この設定を使用すると、コンピューターの "*設定*" から、ユーザーによる更新プログラムのインストールの一時停止を許可またはブロックできます。 
       
-   - **配信の最適化ダウンロード モード**:配信の最適化は、ソフトウェアの更新プログラムで Windows 10 更新リングの一部として構成されなくなりました。 現在、配信の最適化はデバイスの構成で設定されます。 ただし、以前の構成は引き続きコンソールで使用できます。 これらの以前の構成は、*[未構成]* へと編集することで削除できますが、それ以外の変更を行うことはできません。 新しいポリシーと既存のポリシーの間の競合を避けるには、[既存の更新リングから配信の最適化へ移動する](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization)方法に関するページを参照し、設定を配信の最適化プロファイルに移動します。 
+   - **配信の最適化ダウンロード モード**:配信の最適化は、ソフトウェアの更新プログラムで Windows 10 更新リングの一部として構成されなくなりました。 現在、配信の最適化はデバイスの構成で設定されます。 ただし、以前の構成は引き続きコンソールで使用できます。 これらの以前の構成は、*[未構成]* へと編集することで削除できますが、それ以外の変更を行うことはできません。 新しいポリシーと既存のポリシーの間の競合を避けるには、[既存の更新リングから配信の最適化へ移動する](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization)方法に関するページを参照し、設定を配信の最適化プロファイルに移動します。 
 
 5. 終了したら、**[OK]** を選択します。 **[更新プログラムのリングの作成]** で、**[作成]** を選択します。
 

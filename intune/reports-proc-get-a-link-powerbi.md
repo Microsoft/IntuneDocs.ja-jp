@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 145b4ba18325d82942eb4ebf5fbfe17ffc8e653b
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 833e58d8add6b316267e7cb1e177384a0ca4966d
+ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53737901"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54899112"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Power BI でデータ ウェアハウスに接続する
 
@@ -54,7 +54,7 @@ Power BI ファイル (pbix) には、テナントの接続情報と、データ
 > [!Important]  
 > 各 Power BI ファイル (pbix) は、テナントの場所によって異なる場合があります。 複数の Intune テナントを管理している場合は、必ずそのテナントにログインした状態で Azure Portal からダウンロードしたファイルを使用します。  
 
-1.  Azure portal にサインインし、**[監視 + 管理]** > **[Intune]** を選択します。   **Intune** のリソースを検索することもできます。  
+1.  Azure Portal にサインインし、**[監視 + 管理]** > **[Intune]** の順に選択します。 **Intune** のリソースを検索することもできます。  
 2.  **[Microsoft Intune データ ウェアハウス API (プレビュー)]** ブレードを開きます。
 3.  **[Power BI ファイルのダウンロード]** を選択します。 拡張子が pbix のファイルが、指定した場所にダウンロードされます。
 4.  Power BI でファイルを開きます。 *Intune データ ウェアハウス レポート*が読み込まれますが、テナント データの取得に少し時間がかかる可能性があります。
@@ -65,7 +65,7 @@ Power BI ファイル (pbix) には、テナントの接続情報と、データ
 
 Azure AD に対してクライアントが認証されていると、OData URL は、データ ウェアハウス API で、データ モデルをレポート クライアントに公開している RESTful エンドポイントに接続します。 Power BI Desktop を使用して接続して独自のレポートを作成するするには、次の手順を実行します。 OAUTH2.0 認証と OData v4.0 標準をサポートしているクライアントであれば、Power BI Desktop だけでなく、OData URL にお気に入りの分析ツールを使用できます。
 
-1.  Azure portal にサインインし、**[監視 + 管理]** > **[Intune]** を選択します。   **Intune** のリソースを検索することもできます。  
+1.  Azure Portal にサインインし、**[監視 + 管理]** > **[Intune]** の順に選択します。 **Intune** のリソースを検索することもできます。  
 2.  **[Microsoft Intune データ ウェアハウス API (プレビュー)]** ブレードを開きます。
 3. たとえば、`https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta` などのレポート ブレードからカスタム フィード URL を取得します。
 4. **Power BI Desktop** を開きます。

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 62c44768f17ecc82dc748eb4dfda74da421ee3b5
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 91f338a768ef67106a9b65de759dd74da2902138
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387010"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072560"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように Android エンタープライズ デバイスを設定する
 
@@ -48,7 +48,6 @@ ms.locfileid: "54387010"
 - **[Wi-Fi 設定の変更]**:**[ブロック]** を選択すると、デバイスの所有者が作成した Wi-Fi 設定をユーザーが変更できなくなります。 ユーザーは、独自の Wi-Fi 構成を作成できます。 **[未構成]** では、ユーザーがデバイス上で Wi-Fi 設定を変更できるようになります。
 - **[Wi-Fi アクセス ポイントの構成]**:**[ブロック]** を選択すると、ユーザーが Wi-Fi 構成を作成したり変更したりできなくなります。 **[未構成]** では、ユーザーがデバイス上で Wi-Fi 設定を変更できるようになります。
 - **[Bluetooth の構成]**:**[ブロック]** を選択すると、ユーザーがデバイス上で Bluetooth を構成できなくなります。 **[未構成]** では、デバイス上で Bluetooth を使用できるようになります。
-- **[Bluetooth 経由での連絡先の共有]**:**[ブロック]** を選択すると、別のデバイス (Bluetooth を使って Android デバイスをペアリングしている自動車システムなど) から勤務先の連絡先にアクセスできなくなります。 **[未構成]** では、Android デバイスにペアリングされている別の Bluetooth デバイスから勤務先の連絡先にアクセスできるようになります。
 - **[テザリングおよびホットスポットへのアクセス]**:**[ブロック]** を選択すると、テザリングしたりポータブル ホットスポットにアクセスしたりできなくなります。 **[未構成]** では、テザリングしたりポータブル ホットスポットにアクセスしたりできるようになります。
 - **[USB ストレージ]**:**[許可]** を選択すると、デバイス上で USB ストレージにアクセスできるようになります。 **[未構成]** では、USB ストレージにアクセスできなくなります。
 - **[USB ファイルの転送]**:**[ブロック]** を選択すると、USB 経由でファイルを転送できなくなります。 **[未構成]** では、ファイルを転送できるようになります。

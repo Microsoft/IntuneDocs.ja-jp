@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: cdac4623c6c5c9e7258897e1536856e6b24492ea
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 8479e69d661b163778a4d0b4eb1f68e729436f4e
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032012"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831498"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限する Windows Holographic for Business デバイスの設定
 
@@ -28,7 +28,7 @@ ms.locfileid: "53032012"
 
 ## <a name="before-you-begin"></a>始める前に
 
-[デバイス構成プロファイルを作成します](device-restrictions-configure.md)。
+[デバイス構成プロファイルを作成します](device-restrictions-configure.md#create-the-profile)。
 
 ## <a name="general"></a>全般
 
@@ -79,7 +79,7 @@ ms.locfileid: "53032012"
 
 ## <a name="kiosk---obsolete"></a>キオスク - 現在不使用
 
-これらの設定は読み取り専用であり、変更することはできません。 キオスク モードを構成する場合は、「[キオスクの設定](kiosk-settings.md#windows-holographic-for-business)」を参照してください。
+これらの設定は読み取り専用であり、変更することはできません。 キオスク モードを構成する場合は、「[キオスクの設定](kiosk-settings-holographic.md)」を参照してください。
 
 通常、キオスク デバイスでは特定のアプリが実行されます。 ユーザーは、キオスク アプリ以外のデバイスの機能にアクセスすることはできません。
 
@@ -104,3 +104,7 @@ ms.locfileid: "53032012"
 ## <a name="reporting-and-telemetry"></a>レポートとテレメトリ
 
 - **[使用状況データの共有]**:診断データの送信レベルを選択します。
+
+## <a name="next-steps"></a>次の手順
+
+[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。

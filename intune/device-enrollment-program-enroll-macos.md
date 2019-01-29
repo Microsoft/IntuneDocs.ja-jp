@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 2bd9b244947f5f0b8fcb832682951c7a241f96a4
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 91d85182ccb51968915511d6d1941a350e3a9695
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032352"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068290"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>Device Enrollment Program または Apple School Manager を使用して macOS デバイスを自動登録する
 
@@ -150,7 +150,7 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
     | <strong>FileVault</strong> | ユーザーに、FileVault 暗号化を設定するオプションを表示します。 |
     | <strong>iCloud 診断</strong> | ユーザーは Apple に iCloud 診断データを送信できます。 |
     | <strong>登録</strong>| ユーザーがデバイスを登録する必要があります。 |
-
+    
    
 
 10. **[OK]** を選びます。

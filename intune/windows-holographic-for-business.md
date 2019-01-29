@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 721d3a26e25c14a2e4ccd20b179ae7d4611d3186
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: df91908f3d3be7be23e3cecfa83e2d92b656b91e
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203384"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831600"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Intune を使用して Windows Holographic デバイスと HoloLens デバイスのさまざまなデバイス管理機能を管理および使用する
 
@@ -108,7 +108,7 @@ Intune には、組織内のさまざまなデバイスで有効または無効�
 
 OMA-URI (Open Mobile Alliance Uniform Resource Identifier) 設定を構成するために、Intune でカスタム プロファイルを作成できます。 OMA-URI 設定を利用し、Windows Holographic for Business のさまざまな機能を制御できます。たとえば、VPN を有効にしたり、Microsoft Update の更新プログラムを確認したりできます。
 
-#### <a name="configure-kiosk-modekiosk-settingsmdwindows-holographic-for-business"></a>[キオスク モードを構成する](kiosk-settings.md#windows-holographic-for-business)
+#### <a name="configure-kiosk-modekiosk-settings-holographicmd"></a>[キオスク モードを構成する](kiosk-settings-holographic.md)
 
 Intune で利用できる共有またはゲスト PC 機能を利用し、キオスクとして実行されるように Windows Holographic for Business デバイスを構成できます。 キオスクとして構成したデバイスでは、1 つのアプリを実行するか (シングルアプリ キオスク モード)、複数のアプリを実行できます (マルチアプリ キオスク モード)。
 

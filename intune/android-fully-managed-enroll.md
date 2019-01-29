@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 45c1d1f293454b32b97c8147f08809565714743a
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: d457ca413f3069e8528dc6f4951f834e3f1dac6a
+ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387206"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146912"
 ---
 # <a name="set-up-intune-enrollment-of-android-fully-managed-devices-preview"></a>Android フル マネージド デバイスの Intune 登録を設定する (プレビュー)
 
@@ -38,7 +38,7 @@ Android フル マネージド デバイスを管理するには、Intune スタ
 
 デバイスを Android フル マネージド デバイスとして管理するには、以下の要件を満たす必要があります。
 
-- Android OS バージョン 6.0 以降。
+- Android OS バージョン 5.1 以降。
 - デバイスは、Google Mobile Services (GMS) に接続できる Android ビルドを実行する必要があります。 デバイスで GMS が利用できて、GMS に接続できる必要があります。
 
 上記の要件が満たされた場合、デバイスの製造元/OEM に制限はありません。
