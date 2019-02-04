@@ -1,12 +1,11 @@
 ---
-title: Android エンタープライズ デバイスおよびキオスク デバイス用の Wi-fi 設定
-titleSuffix: Microsoft Intune
+title: Android エンタープライズ デバイスおよびキオスク デバイス用の Wi-Fi 設定 - Microsoft Intune | Microsoft Docs
 description: Android エンタープライズ デバイスおよびキオスク デバイス用の Wi-Fi デバイス構成プロファイルを作成または追加します。 Microsoft Intune での証明書の追加、EAP の種類の選択、認証方式の選択など、他の設定もご覧ください。 キオスク デバイスの場合、ネットワークの事前共有キーも入力します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,22 +13,22 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1424cd43c6ccde17724a4165fe74def4da291e29
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: ea72cda4cb72af9028c52078e2215619bb2bef3c
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112359"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831481"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>Microsoft Intune で Android エンタープライズおよび Android キオスクを実行するデバイス用の Wi-Fi 設定を追加する
 
 特定の Wi-Fi 設定でプロファイルを作成し、Android エンタープライズ デバイスおよび Android キオスク デバイスにこのプロファイルを展開することができます。 Microsoft Intune では、ネットワークに対する認証や、事前共有キーの使用など、多くの機能が提供されています。
 
-この記事では、これらの設定について説明します。
+この記事では、これらの設定について説明します。 [デバイス上で Wi-Fi を使用する](wi-fi-settings-configure.md)方法に関するページでは、Microsoft Intune の Wi-Fi 機能についてさらに詳しく説明されています。
 
 ## <a name="before-you-begin"></a>始める前に
 
-[デバイス プロファイルを作成します](device-profile-create.md)。
+[デバイス プロファイルを作成します](wi-fi-settings-configure.md#create-a-device-profile)。
 
 ## <a name="device-owner-only---kiosk"></a>デバイスの所有者のみ - キオスク
 
@@ -66,7 +65,7 @@ Android エンタープライズ デバイスをキオスクとして使用す�
 
   - **[EAP-TLS]**:次の項目も入力します。
 
-    - **[サーバー信頼]** - **[サーバー検証のためのルート証明書]**:既存の信頼されたルート証明書プロファイルを選択します。 この証明書は、クライアントがネットワークに接続するときにサーバーに対して提示され、接続の認証に使用されます。
+    - **[サーバー信頼]** - **[サーバー検証のためのルート証明書]**:既存の信頼されたルート証明書プロファイルを選択します。 クライアントがネットワークに接続すると、この証明書がサーバーに対して提示され、接続が認証されます。
 
       **[OK]** を選択して変更を保存します。
 
@@ -76,7 +75,7 @@ Android エンタープライズ デバイスをキオスクとして使用す�
 
   - **[EAP-TTLS]**:次の項目も入力します。
 
-    - **[サーバー信頼]** - **[サーバー検証のためのルート証明書]**:既存の信頼されたルート証明書プロファイルを選択します。 この証明書は、クライアントがネットワークに接続するときにサーバーに対して提示され、接続の認証に使用されます。
+    - **[サーバー信頼]** - **[サーバー検証のためのルート証明書]**:既存の信頼されたルート証明書プロファイルを選択します。 クライアントがネットワークに接続すると、この証明書がサーバーに対して提示され、接続が認証されます。
 
       **[OK]** を選択して変更を保存します。
 
@@ -95,7 +94,7 @@ Android エンタープライズ デバイスをキオスクとして使用す�
 
   - **[PEAP]**:次の項目も入力します。
 
-    - **[サーバー信頼]** - **[サーバー検証のためのルート証明書]**:既存の信頼されたルート証明書プロファイルを選択します。 この証明書は、クライアントがネットワークに接続するときにサーバーに対して提示され、接続の認証に使用されます。
+    - **[サーバー信頼]** - **[サーバー検証のためのルート証明書]**:既存の信頼されたルート証明書プロファイルを選択します。 クライアントがネットワークに接続すると、この証明書がサーバーに対して提示され、接続が認証されます。
 
       **[OK]** を選択して変更を保存します。
 
@@ -116,9 +115,6 @@ Android エンタープライズ デバイスをキオスクとして使用す�
 
 ## <a name="next-steps"></a>次の手順
 
-プロファイルは作成されますが、何も実行されません。 次に、[このプロファイルを割り当て](device-profile-assign.md)ます。
+プロファイルは作成されますが、何も実行されません。 次に、[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
 
-## <a name="more-resources"></a>その他のリソース
-
-- Android デバイスで使用できる設定については、[Android を実行するデバイス向けの Wi-Fi 設定](wi-fi-settings-android.md)に関する記事をご覧ください。
-- 他のプラットフォームなど、[Wi-Fi 設定の概要](wi-fi-settings-configure.md)に関する記事。
+[Android](wi-fi-settings-android.md)、[iOS](wi-fi-settings-ios.md)、[macOS](wi-fi-settings-macos.md)、[Windows 10](wi-fi-settings-windows.md)、および [Windows 8.1](wi-fi-settings-import-windows-8-1.md) デバイスの Wi-Fi プロファイルも作成できます。

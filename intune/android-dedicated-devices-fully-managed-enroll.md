@@ -16,23 +16,23 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9f9f95c42be252e0b2be515344e01a1d93e2cc6c
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 0eb12470c20efd8d455f8bb165455ae4266da956
+ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387219"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146895"
 ---
 # <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>Android の専用デバイスまたはフル マネージド デバイスを登録する (プレビュー)
 
 Intune で [Android 専用デバイス](android-kiosk-enroll.md)または[フル マネージド デバイス](android-fully-managed-enroll.md)を設定した後、デバイスを登録できます。 Android デバイスの登録方法は、オペレーティング システムによって異なります。
 
-| 登録方法 | 専用デバイスの最小 Android OS バージョン | フル マネージド デバイスの最小 Android OS バージョン |
-| ----- | ----- | ----- |
-| 近距離無線通信 | 5.1 | 6.0 |
-| トークン エントリ | 6.0 | 6.0 |
-| QR コード | 7.0 | 7.0 |
-| ゼロ タッチ  | 8.0\* | 8.0\* |
+| 登録方法 | 専用およびフル マネージド デバイスの最小 Android OS バージョン |
+| ----- | ----- |
+| 近距離無線通信 | 5.1 |
+| トークン エントリ | 6.0 |
+| QR コード | 7.0 |
+| ゼロ タッチ  | 8.0\* |
 
 \* 参加製造元で。
 
@@ -42,7 +42,7 @@ NFC 対応のデバイスについては、特殊な形式の NFC タグでデ�
 
 ### <a name="enroll-by-using-a-token"></a>トークンを利用して登録する
 
-Android 6 以降のデバイスについては、トークンを利用してデバイスを登録できます。 Android 6.1 以降のバージョンでは、**aft#setup** の登録方法を使用して QR コードのスキャンを活用することもできます。
+Android 6 以降のデバイスについては、トークンを利用してデバイスを登録できます。 Android 6.1 以降のバージョンでは、**afw#setup** の登録方法を使用して QR コードのスキャンを活用することもできます。
 
 1. ワイプされたデバイスをオンにします。
 2. **[ようこそ]** 画面で、言語を選択します。

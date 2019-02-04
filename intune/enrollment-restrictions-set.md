@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a8ebe8f8cd84ef5eb38bf7e17f413bcc6a0791cd
-ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
+ms.openlocfilehash: bd282a6b23f33b11cbd046cac4f791d6d675e365
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54122546"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751214"
 ---
 # <a name="set-enrollment-restrictions"></a>登録制限を設定する
 
@@ -100,7 +100,7 @@ ms.locfileid: "54122546"
 - デバイスは、Windows Autopilot に登録されますが、Windows 設定からの MDM 登録のみオプションではありません。
 - デバイスの IMEI 番号が **[デバイスの登録]** > **[[業務用デバイスの ID]](corporate-identifiers-add.md)** に記載されています。 (Windows Phone 8.1 ではサポートされていません。)
 - デバイスが[一括プロビジョニング パッケージ](windows-bulk-enroll.md)経由で登録されます。
-- デバイスが[共同管理用の SCCM からの自動登録](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md)経由で登録されます。
+- デバイスが GPO または[共同管理用の SCCM からの自動登録](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md)経由で登録されます。
  
 次の登録は Intune で会社として見なされますが、Intune 管理者のデバイスごとのコントロールがないため、ブロックされます。
  - [自動 MDM 登録](windows-enroll.md#enable-windows-10-automatic-enrollment)と [Windows セットアップ中の Azure Active Directory 参加](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*。

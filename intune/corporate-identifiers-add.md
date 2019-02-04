@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 83baf13b42cd67e682227d6310b7057bdbd6bf1e
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: ae4691b21b9728a28f9cac0ae0af7fd42a8bdbde
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324861"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199440"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>デバイスの企業所有としての識別
 
@@ -41,7 +41,7 @@ Intune は登録時に、次のようなデバイスに会社所有の状態を�
 
 ## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>IMEI またはシリアル番号により、会社所有デバイスとして特定される
 
-Intune 管理者は、IMEI 番号またはシリアル番号を記載しているコンマ区切り値 (.csv) ファイルを作成し、インポートできます。 Intune は、デバイス登録時、この識別子を使用し、デバイスの所有権を会社として指定します。 サポートされているすべてのプラットフォームの IMEI 番号を宣言できます。 iOS、macOS、Android デバイスのシリアル番号のみ宣言できます。 各 IMEI またはシリアル番号の一覧には管理目的で詳細を追加できます。
+Intune 管理者は、14 桁の IMEI 番号またはシリアル番号をリストしたコンマ区切り値 (.csv) ファイルを作成して、インポートできます。 Intune は、デバイス登録時、この識別子を使用し、デバイスの所有権を会社として指定します。 サポートされているすべてのプラットフォームの IMEI 番号を宣言できます。 iOS、macOS、Android デバイスのシリアル番号のみ宣言できます。 各 IMEI またはシリアル番号の一覧には管理目的で詳細を追加できます。
 
 <!-- When you upload serial numbers for corporate-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
 
@@ -49,7 +49,7 @@ Apple デバイスのシリアル番号の検索方法については、[こち�
 Android デバイスのシリアル番号の検索方法については、[こちら](https://support.google.com/store/answer/3333000)をご覧ください。
 
 ## <a name="add-corporate-identifiers-by-using-a-csv-file"></a>.csv ファイルを使用して企業 ID を追加する
-リストを作成するには、ヘッダーなしの 2 列のコンマ区切り値 (.csv) リストを作成します。 IMEI またはシリアル番号を左側の列に、詳細を右側の列に追加します。 1 つの .csv ファイルにインポートできるのは、1 種類の ID、IMEI、またはシリアル番号のみです。 詳細の上限は 128 文字です。また、管理者のみが使用できます。 詳細はデバイスに表示されません。 現在の上限は .csv ファイルあたり 5,000 行です。
+リストを作成するには、ヘッダーなしの 2 列のコンマ区切り値 (.csv) リストを作成します。 14 桁の IMEI またはシリアル番号を左側の列に、詳細を右側の列に追加します。 1 つの .csv ファイルにインポートできるのは、1 種類の ID、IMEI、またはシリアル番号のみです。 詳細の上限は 128 文字です。また、管理者のみが使用できます。 詳細はデバイスに表示されません。 現在の上限は .csv ファイルあたり 5,000 行です。
 
 **シリアル番号が含まれている .csv ファイルをアップロード** – csv ファイル 1 つあたりデバイス 5,000 個または 5 MB を上限とする、2 つの列を持つヘッダーなしのコンマ区切り値のリスト (.csv) を作成します。
 

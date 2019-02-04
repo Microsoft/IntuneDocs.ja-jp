@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cd6ac0b1fdb64897a831c0111f7e0a611c85bede
-ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
+ms.openlocfilehash: 51d1c477f490cb23c35ef54a0a5099ee4b4b035b
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54210705"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068256"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Intune で管理されているアプリから会社のデータをワイプする方法
 
@@ -36,6 +36,9 @@ ms.locfileid: "54210705"
 
 >[!IMPORTANT]
 > アプリケーションからネイティブ アドレス帳に直接同期された連絡先が削除されます。 ネイティブ アドレス帳から別の外部ソースに同期された連絡先はワイプできません。 現在、これは Microsoft Outlook アプリにのみ適用されます。
+
+## <a name="deployed-wip-policies-without-user-enrollment"></a>ユーザー登録なしでの WIP ポリシーの展開
+使用している Windows 10 デバイスを登録することを MDM ユーザーに求めることなく、Windows 情報保護 (WIP) ポリシーを展開できるようになります。 この構成により、会社は WIP 構成に基づいて会社のドキュメントを保護することができ、一方、ユーザーは独自の Windows デバイスの管理を維持することができます。 WIP ポリシーを使用してドキュメントが保護されると、Intune 管理者は保護されたデータを選択的にワイプすることができます。 ユーザーとデバイスを選択してワイプ要求を送信することにより、WIP ポリシーを介して保護されたデータはすべて使用できなくなります。 Azure portal 内で Intune から、**[クライアント アプリ]** > **[アプリの選択的ワイプ]** の順に選択します。 詳細については、「[Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する](windows-information-protection-policy-create.md)」を参照してください。
 
 ## <a name="create-a-wipe-request"></a>ワイプ要求の作成
 

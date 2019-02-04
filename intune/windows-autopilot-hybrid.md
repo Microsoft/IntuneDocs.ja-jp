@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f81875afffa461e036bc319febc9a6141967c440
-ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
+ms.openlocfilehash: 171e994be67a24e351b242967c8af934272da356
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380468"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105172"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Intune と Windows Autopilot を使用してハイブリッド Azure AD 参加済みデバイスをデプロイする (プレビュー)
 Intune と Windows Autopilot を使用して、ハイブリッド Azure Active Directory 参加済みデバイスを設定できます。 そのためには、以下の手順のようにします。
@@ -106,7 +106,7 @@ Active Directory の Intune コネクタでは、オンプレミスの Active di
 
 ## <a name="install-the-intune-connector"></a>Intune コネクタをインストールする
 
-Active Directory の Intune コネクタを、インターネットと Active Directory にアクセスできる Windows Server 2016 を実行しているコンピューターにインストールする必要があります。 スケールと可用性を高めたり、複数の Active Directory ドメインをサポートしたりするため、環境内に複数のコネクタをインストールできます。 他の Intune コネクタが実行されていないサーバーにインストールすることをお勧めします。
+Active Directory の Intune コネクタを、インターネットと Active Directory にアクセスできる Windows Server 2016 (以降) を実行しているコンピューターにインストールする必要があります。 スケールと可用性を高めたり、複数の Active Directory ドメインをサポートしたりするため、環境内に複数のコネクタをインストールできます。 他の Intune コネクタが実行されていないサーバーにインストールすることをお勧めします。
 
 1. 言語パックをインストールし、「[Intune コネクタ (プレビュー) の言語の要件](https://docs.microsoft.com/windows/deployment/windows-autopilot/intune-connector)」の説明に従って構成したことを確認します。
 2. [Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Windows 登録]** > **[Active Directory の Intune コネクタ (プレビュー)]** > **[コネクタの追加]** を選択します。 
@@ -114,7 +114,7 @@ Active Directory の Intune コネクタを、インターネットと Active Di
 4. ダウンロードしたコネクタのセットアップ ファイルを開いて、コネクタをインストールします (ODJConnectorBootstrapper.exe)。
 5. セットアップの最後で、**[構成]** を選択します。
 6. **[サインイン]** を選択します。
-7. ユーザーのグローバル管理者ロールまたは Intune 管理者ロールの資格情報を入力します。
+7. ユーザーのグローバル管理者ロールまたは Intune 管理者ロールの資格情報を入力します。 ユーザー アカウントに Intune ライセンスが割り当てられている必要があります。
 8. **[デバイスの登録]** > **[Windows 登録]** > **[Active Directory の Intune コネクタ (プレビュー)]** に移動し、接続の状態が **[アクティブ]** であることを確認します。
 
  > [!NOTE]

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,50 +14,34 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 4839206db5e34a039c9e99dd74f5ab1bad328418
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 80d4cf8db5789e6eeb22a777eeef74dce3009856
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112342"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831294"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>Windows Holographic を実行するデバイスを Windows Holographic for Business にアップグレードする
 
+Microsoft Intune には、デバイスの管理と保護に役立つ多くの設定が含まれています。 この記事では、Windows Holographic デバイスを Windows Holographic for Business にアップグレードするための設定の一覧を示して説明します。 このような設定は、デバイスにプッシュまたは展開される Intune のアップグレード構成プロファイルに作成されます。
 
-Windows Holographic を実行するデバイスを Microsoft Intune で管理するには、Windows Holographic から Windows Holographic for Business にデバイスをアップグレードする必要があります。 このアップグレードを行うために、エディション アップグレード プロファイルを作成できます。 Microsoft HoloLens の場合、Commercial Suite を購入してアップグレードに必要なライセンスを入手できます。 詳細については、「[Windows Holographic for Business 機能のロック解除](https://docs.microsoft.com/hololens/hololens-upgrade-enterprise)」を参照してください。
+モバイル デバイス管理 (MDM) ソリューションの一部として、これらの設定を使用して Windows Holographic デバイスをアップグレードします。 Microsoft HoloLens の場合、Commercial Suite を購入してアップグレードに必要なライセンスを入手できます。 詳細については、「[Windows Holographic for Business 機能のロック解除](https://docs.microsoft.com/hololens/hololens-upgrade-enterprise)」を参照してください。
 
-## <a name="to-set-up-an-edition-upgrade-device-configuration-profile"></a>エディションのアップグレード デバイス構成プロファイルを設定するには
+この機能の詳細については、[Windows 10 エディションのアップグレードまたは S モードの有効化](edition-upgrade-configure-windows-10.md)に関するページを参照してください。
 
-1. 管理者アカウントで [Azure Portal](https://portal.azure.com) にサインインします。
+## <a name="before-you-begin"></a>始める前に
 
+[デバイス構成プロファイルを作成します](edition-upgrade-configure-windows-10.md#create-the-profile)。
 
-2.  **[デバイス構成]**、**[プロファイル]**、**[プロファイルの作成]** の順にクリックします。
+## <a name="edition-upgrade"></a>エディションのアップグレード
 
-    ![プロファイルの作成](media/Holographic-create-profile.png)
+- **アップグレード後のエディション**:**[Windows 10 Holographic for Business]** を選択します。
+- **ライセンス ファイル**:提供された XML ライセンス ファイルを参照して選択します。
 
-3.  **[プロファイルの作成]** ページで、プロファイルの名前を入力し、プラットフォームとして **[Windows 10 以降]** を選び、プロファイルの種類として **[エディションのアップグレード]** を選びます。 **[設定] > [構成]** をクリックします。
-
-5. **[エディションのアップグレード]** ページの **[アップグレードのターゲット エディション]** で、**[Windows 10 Holographic for Business]** を選びます。 **[ライセンス ファイル]** で、提供された XML ライセンス ファイルを参照して選びます。
-
-    ![XML ファイルの名前を入力する](media/Holographic-edition-upgrade.png)
+  ![Holographic for Business のライセンス情報を含む XML ファイル名を入力します](media/Holographic-edition-upgrade.png)
  
-5.  **[OK]** をクリックし、**[作成]** をクリックしてプロファイルを作成します。
-
-
-## <a name="deploy-the-edition-upgrade-policy"></a>エディションのアップグレード ポリシーを展開する
-
-次に、エディションのアップグレード プロファイルを選んだグループまたはデバイスに割り当てます。
-
-1. 前のステップで作成したプロファイルで、**[割り当て]** をクリックします。
-
-2. **[割り当て]** ページのユーザー グループとデバイスで、ポリシーに含めるものとポリシーから除外するものを選びます。
-
-![含めるグループと除外するグループ](media/Holographic-groups.PNG)
-
-これらのユーザーまたはデバイスが Intune に登録されるとき、エディションのアップグレード プロファイルが適用されます。 
-
 ## <a name="next-steps"></a>次の手順
 
-グループについては、「[グループの概要](get-started-groups.md)」を参照してください。
+プロファイルは作成されましたが、まだ何も実行できない可能性があります。 必ず[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)してください。
 
-
+[Windows 10 以降](edition-upgrade-windows-settings.md)のデバイス用にエディションのアップグレード プロファイルを作成することもできます。

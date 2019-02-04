@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 11b241a14ed70a2e999fa505449cd12cdd1e025e
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 7ab60e64927db5537a106c1257a5624670771f86
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728788"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831413"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune でデバイスの制限設定を構成する
 
@@ -32,7 +32,7 @@ ms.locfileid: "52728788"
 
 デバイス制限プロファイルの基礎を学習します。その後、デバイスの詳細について、各プラットフォームの記事を参照してください。
 
-## <a name="create-a-device-profile-containing-device-restriction-settings"></a>デバイスの制限設定を含むデバイス プロファイルの作成
+## <a name="create-the-profile"></a>プロファイルの作成
 
 1. [Azure portal](https://portal.azure.com) で、**[すべてのサービス]** を選択し、**Intune** でフィルター処理して、**Intune** を選択します。
 2. **[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
@@ -48,7 +48,7 @@ ms.locfileid: "52728788"
     - **Windows 10 以降**
 
 5. **[プロファイルの種類]** ドロップダウン リストで、**[デバイスの制限]** を選択します。 Surface Hub などの Windows 10 Team デバイス用のデバイスの制限プロファイルを作成するには、**[デバイスの制限 (Windows 10 Team)]** を選択します。
-6. 選択したプラットフォームによって構成できる設定が異なります。 プラットフォームの詳細設定を選択します。
+6. 選択したプラットフォームによって構成できる設定が異なります。 詳細な設定については、お使いのプラットフォームを選択してください。
 
     - [Android の設定](device-restrictions-android.md)
     - [Android エンタープライズの設定](device-restrictions-android-for-work.md)
@@ -60,13 +60,13 @@ ms.locfileid: "52728788"
     - [Windows 10 Team の設定](device-restrictions-windows-10-teams.md)
     - [Windows Holographic for Business の設定](device-restrictions-windows-holographic.md)
 
-7. 完了したら、**[プロファイルの作成]** ページに戻り、**[作成]** を選択します。
+7. 完了したら、**[OK]** > **[作成]** を選択して変更を保存します。
 
-プロファイルが作成され、プロファイルの一覧ページに表示されます。 
+プロファイルが作成され、プロファイル一覧に表示されます。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-steps"></a>次の手順
 
-プロファイルが作成されると、割り当てることができます。 手順については、[デバイス プロファイルの割り当て](device-profile-assign.md)に関するページをご覧ください。 
+プロファイルが作成されると、割り当てることができます。 次に、[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

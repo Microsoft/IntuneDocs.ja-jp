@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune - Azure での Windows 10 用のキオスクの設定 | Microsoft Docs
-description: シングル アプリ キオスクおよびマルチ アプリ キオスクとして Windows 10 (およびそれ以降) デバイスを構成し、スタート メニューのカスタマイズ、アプリの追加、タスク バーの表示、および Web ブラウザーの構成を行います。 また、Microsoft Intune でマルチ アプリ キオスクとして Windows Holographic for Business デバイスを構成します。
+title: Microsoft Intune の Windows および Holographic デバイスのキオスク設定 - Azure | Microsoft Docs
+description: Microsoft Intune でシングル アプリおよびマルチ アプリ キオスクとして Windows 10 (以降) および Windows Holographic for Business デバイスを構成し、スタート メニューのカスタマイズ、アプリの追加、タスク バーの表示、および Web ブラウザーの構成を行います。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/17/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,26 +13,29 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 353c18affa41e56501a76bf695f95cbe95796e99
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: beb1c63e672c08963ba822e6cee2bf8a69456dac
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203469"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831345"
 ---
-# <a name="windows-10-and-later-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>Intune を使用して専用キオスクとして実行するための Windows 10 (以降) デバイスの設定
+# <a name="windows-10-and-windows-holographic-for-business-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>Intune を使用して専用キオスクとして実行するための Windows 10 および Windows Holographic for Business デバイスの設定
 
 Windows 10 デバイスで Intune を使用して、専用デバイスとも呼ばれるキオスクとしてデバイスを実行します。 キオスク モードのデバイスでは、1 つのアプリも、複数のアプリも実行できます。 スタート メニューの表示とカスタマイズ、Win32 アプリを含むさまざまなアプリの追加、特定のホーム ページの Web ブラウザーへの追加などを行うことができます。 
 
-この記事では、Windows 10 以降のデバイスで制御できるさまざまな設定の一覧を示して説明します。 モバイル デバイス管理 (MDM) ソリューションの一部として、これらの設定を使用して、Windows 10 デバイスをキオスク モードで実行するように構成します。
+この機能は、次を実行しているデバイスに適用されます。
+
+- Windows 10 以降
+- Windows Holographic for Business
 
 Intune では、デバイスごとに 1 つのキオスク プロファイルをサポートします。 1 台のデバイスに複数のキオスク プロファイルが必要な場合は、[カスタム OMA-URI](custom-settings-windows-10.md) を使用することができます。
 
-## <a name="before-you-begin"></a>始める前に
+Intune では、"構成プロファイル" を使用して、お客様の組織のニーズに合わせてこのような設定を作成およびカスタマイズします。 このような機能をプロファイルに追加したら、その設定を組織内のグループにプッシュまたは展開します。
 
-[デバイス構成プロファイルを作成します](device-profile-create.md)。
+この記事では、デバイス構成プロファイルを作成する方法について説明します。 すべての設定の一覧とその実行内容については、[Windows 10 のキオスク設定](kiosk-settings-windows.md)と [Windows Holographic for Business のキオスク設定](kiosk-settings-holographic.md)に関するページを参照してください。
 
-## <a name="kiosk-settings"></a>キオスクの設定
+## <a name="create-the-profile"></a>プロファイルの作成
 
 1. [Azure portal](https://portal.azure.com) で、**[すべてのサービス]** を選択し、**Intune** でフィルター処理して、**[Microsoft Intune]** を選びます。
 2. **[デバイス構成]**、**[プロファイル]**、**[プロファイルの作成]** の順に選択します。
@@ -43,7 +46,7 @@ Intune では、デバイスごとに 1 つのキオスク プロファイルを
    - **[プラットフォーム]**:**[Windows 10 以降]** を選択します。
    - **[プロファイルの種類]**:**[キオスク]** を選択します。
 
-4. **[キオスク モード]** を選択します。 **[キオスク モード]** では、ポリシーによってサポートされるキオスク モードの種類を識別します。 次のオプションがあります。
+4. **[設定]** の **[キオスク モード]** を選択します。 **[キオスク モード]** では、ポリシーによってサポートされるキオスク モードの種類を識別します。 次のオプションがあります。
 
     - **[未構成]** (既定):このポリシーでは、キオスク モードが有効になりません。
     - **[シングル アプリ、全画面表示キオスク]**:デバイスは単一ユーザー アカウントとして実行され、1 つのストア アプリに制限されます。 したがって、ユーザーがサインインすると、特定のアプリが起動します。 また、このモードでは、ユーザーによる新しいアプリを開く操作や、実行中のアプリを変更する操作が制限されます。
@@ -51,156 +54,20 @@ Intune では、デバイスごとに 1 つのキオスク プロファイルを
 
         マルチ アプリ キオスク (または固定目的デバイス) の利点は、ユーザーがアクセスできるのは必要なアプリだけなので、わかりやすいエクスペリエンスがユーザーに提供されることです。 また、必要のないアプリはビューから削除されます。
 
-## <a name="single-full-screen-app-kiosks"></a>シングル全画面表示アプリ キオスク
-シングル アプリ キオスク モードを選択するときには、次の設定を入力します。
+    すべての設定の一覧とその実行内容については、以下を参照してください。
+      - [Windows 10 のキオスク設定](kiosk-settings-windows.md)
+      - [Windows Holographic for Business のキオスク設定](kiosk-settings-holographic.md)
 
-- **[ユーザーのログオンの種類]**:追加するアプリは、入力したユーザー アカウントとして実行します。 次のようなオプションがあります。
+5. 完了したら、**[OK]** > **[作成]** を選択して変更を保存します。 
 
-  - **[Auto logon (Windows 10 version 1803 and later)]\(自動ログオン (Windows 10 バージョン 1803 以降)\)**:ゲスト アカウントと同様、ユーザーのサインインを必要としないパブリックに公開された環境のキオスク用です。 この設定では [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) を使用します。
-  - **[ローカル ユーザー アカウント]**:(デバイスの) ローカル ユーザー アカウントを入力します。 入力したアカウントは、キオスクへのサインインに使用されます。
-
-- **[アプリケーションの種類]**:**[ストア アプリ]** を選択します。
-
-- **[キオスク モードで実行するアプリ]**:**[ストア アプリの追加]** を選択し、一覧からアプリを選択します。
-
-    アプリが何も表示されない場合は、 [クライアント アプリ](apps-add.md)ごとの手順を使用して追加してください。
-
-    **[OK]** を選択して変更を保存します。
-
-- **[キオスク ブラウザーの設定]**:これらの設定で、キオスクの Web ブラウザー アプリを制御します。 [キオスク ブラウザー アプリ](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP)をストアから取得し、これを[クライアント アプリ](apps-add.md)として Intune に追加してから、キオスク デバイスにアプリを割り当ててください。
-
-  次の設定を入力します。
-
-  - **[既定のホーム ページ URL]**:キオスク ブラウザーが開いたときや再起動したときに表示される既定の URL を入力します。 たとえば、「`http://bing.com`」や「`http://www.contoso.com`」と入力します。
-
-  - **[ホーム ボタン]**:キオスク ブラウザーの [ホーム] ボタンを**表示**または**非表示**にします。 既定では、ボタンは表示されません。
-
-  - **ナビゲーション ボタン**:[進む] および [戻る] ボタンを**表示**または**非表示**にします。 既定では、ナビゲーション ボタンは表示されません。
-
-  - **[セッションの終了] ボタン**:[セッションの終了] ボタンを**表示**または**非表示**にします。 表示されている場合、ユーザーがボタンを選択すると、アプリでセッションの終了が求められます。 確認すると、ブラウザーで閲覧データ (Cookie やキャッシュなど) がすべてクリアされ、既定の URL が開きます。 既定では、ボタンは表示されません。
-
-  - **[アイドル時間が経過した後、ブラウザーを更新する]**:キオスク ブラウザーを初期状態で再起動するまでのアイドル時間 (1 から 1,440 分) で入力します。 アイドル時間は、ユーザーが最後に操作してからの分数です。 既定では、値は空または空白となります。これは、アイドル タイムアウトがないことを意味します。
-
-  - **[許可された Web サイト]**:特定の Web サイトを開けるようにするには、この設定を使用します。 つまり、デバイス上で Web サイトを制限またはブロックするには、この機能を使用します。 たとえば、`http://contoso.com*` のすべての Web サイトが開くようにすることができます。 既定では、すべての Web サイトが許可されます。
- 
-      特定の web サイトを許可するには、許可される Web サイトが 1 行に 1 つずつ列記されているファイルをアップロードします。 ファイルを追加しない場合、すべての Web サイトが許可されます。 Intune では、* (アスタリスク) がワイルド カードとしてサポートされます。
-
-      ファイルの例を次に示します。
-
-      `http://bing.com`  
-      `https://bing.com`  
-      `http://contoso.com/*`  
-      `https://contoso.com/*`  
-
-  **[OK]** を選択して変更を保存します。
-
-## <a name="multi-app-kiosks"></a>マルチ アプリ キオスク
-
-このモードのアプリはスタート メニューから使用できます。 ユーザーはこれらのアプリのみを開くことができます。
-
-マルチ アプリ キオスク モードを選択するときには、次の設定を入力します。
-
-- **[S モード デバイスで Windows 10 を対象とする]**:キオスク プロファイルでストア アプリおよび AUMID アプリ (Win32 アプリを除く) を許可する場合は、**[はい]** を選択します。 キオスク プロファイルでストア アプリ、Win32 アプリ、AUMID アプリを許可する場合は、**[いいえ]** を選択します。 **[いいえ]** を選択すると、このキオスク プロファイルは S モードのデバイスに展開されません。
-
-- **[ユーザーのログオンの種類]**:追加するアプリは、入力したユーザー アカウントとして実行します。 次のようなオプションがあります。
-
-  - **[Auto logon (Windows 10 version 1803 and later)]\(自動ログオン (Windows 10 バージョン 1803 以降)\)**:ゲスト アカウントと同様、ユーザーのサインインを必要としないパブリックに公開された環境のキオスク用です。 この設定では [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) を使用します。
-  - **[ローカル ユーザー アカウント]**:(デバイスの) ローカル ユーザー アカウントを**追加**します。 入力したアカウントは、キオスクへのサインインに使用されます。
-  - **[Azure AD user or group (Windows 10 version 1803 and later)]\(Azure AD ユーザーまたはグループ (Windows 10 バージョン 1803 以降)\)**:一覧から Azure AD のユーザーまたはグループを選択するには、**[追加]** を選択します。 複数のユーザーおよびグループを選択することができます。 **[選択]** を選んで変更を保存します。
-  - **[HoloLens の訪問者]**:訪問者のアカウントはゲスト アカウントであり、「[共有 PC モードの概念](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts)」の説明のとおり、ユーザーの資格情報や認証は必要ありません。
-
-- **[アプリケーション]**:キオスク デバイスで実行するアプリを追加します。 複数のアプリを追加することができます。
-
-  - **[ストア アプリの追加]**:ビジネス向け Microsoft Store からアプリを追加します。 アプリが何も表示されない場合は、アプリを取得して [Intune に追加する](store-apps-windows.md)ことができます。 たとえば、キオスク ブラウザー、Excel、OneNote などを追加できます。
-
-  - **[Add Win32 App]\(Win32 アプリの追加\)**:Win32 アプリは Visual Studio Code や Google Chrome などの従来のデスクトップ アプリです。 次のプロパティを入力します。
-
-    - **[アプリケーション名]**:必須。 アプリケーションの名前を入力します。
-    - **[ローカル パス]**:必須。 `C:\Program Files (x86)\Microsoft VS Code\Code.exe` や `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe` などの、実行可能ファイルのパスを入力します。
-    - **[アプリケーション ユーザー モデル ID (AUMID)]**:Win32 アプリのアプリケーション ユーザー モデル ID (AUMID) を入力します。 この設定により、デスクトップ上のタイルのスタート画面のレイアウトが決まります。 この ID を取得する場合は、「[Find the Application User Model ID of an installed app](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps)」 (インストール済みアプリのアプリケーション ユーザー モデル ID を見つける) を参照してください。
-    - **[タイル サイズ]**:必須。 小、中、全体、大の、アプリ タイルのサイズを選択します。
-  
-  - **[AUMID による追加]**:このオプションを使用して、メモ帳や電卓などの受信トレイ Windows アプリを追加します。 次のプロパティを入力します。 
-
-    - **[アプリケーション名]**:必須。 アプリケーションの名前を入力します。
-    - **[アプリケーション ユーザー モデル ID (AUMID)]**:必須。 Windows アプリのアプリケーション ユーザー モデル ID (AUMID) を入力します。 この ID を取得する場合は、「[Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)」 (インストール済みアプリのアプリケーション ユーザー モデル ID を見つける) を参照してください。
-    - **[タイル サイズ]**:必須。 小、中、全体、大の、アプリ タイルのサイズを選択します。
-
-  > [!TIP]
-  > すべてのアプリを追加したら、一覧内のアプリをクリックしてドラッグすることで、表示順序を変更することができます。  
-
-  **[OK]** を選択して変更を保存します。
-
-- **[キオスク ブラウザーの設定]**:これらの設定で、キオスクの Web ブラウザー アプリを制御します。 [クライアント アプリ](apps-add.md)を使用してキオスク デバイスに Web ブラウザー アプリを展開したことを確認してください。
-
-  次の設定を入力します。
-
-  - **[既定のホーム ページ URL]**:キオスク ブラウザーが開いたときや再起動したときに表示される既定の URL を入力します。 たとえば、「`http://bing.com`」や「`http://www.contoso.com`」と入力します。
-
-  - **[ホーム ボタン]**:キオスク ブラウザーの [ホーム] ボタンを**表示**または**非表示**にします。 既定では、ボタンは表示されません。
-
-  - **ナビゲーション ボタン**:[進む] および [戻る] ボタンを**表示**または**非表示**にします。 既定では、ナビゲーション ボタンは表示されません。
-
-  - **[セッションの終了] ボタン**:[セッションの終了] ボタンを**表示**または**非表示**にします。 表示されている場合、ユーザーがボタンを選択すると、アプリでセッションの終了が求められます。 確認すると、ブラウザーで閲覧データ (Cookie やキャッシュなど) がすべてクリアされ、既定の URL が開きます。 既定では、ボタンは表示されません。
-
-  - **[アイドル時間が経過した後、ブラウザーを更新する]**:キオスク ブラウザーを初期状態で再起動するまでのアイドル時間 (1 から 1,440 分) で入力します。 アイドル時間は、ユーザーが最後に操作してからの分数です。 既定では、値は空または空白となります。これは、アイドル タイムアウトがないことを意味します。
-
-  - **[許可された Web サイト]**:特定の Web サイトを開けるようにするには、この設定を使用します。 つまり、デバイス上で Web サイトを制限またはブロックするには、この機能を使用します。 たとえば、`contoso.com*` のすべての Web サイトが開くようにすることができます。 既定では、すべての Web サイトが許可されます。
-
-    特定の web サイトを許可するには、許可されている Web サイトの一覧が含まれる .csv ファイルをアップロードします。 .csv ファイルを追加しない場合、すべての Web サイトが許可されます。
-
-  **[OK]** を選択して変更を保存します。
-
-- **[代替のスタート画面のレイアウトを使用する]**:アプリの順序を含む、アプリをスタート メニューに表示する方法を説明する XML ファイルを入力するには、**[はい]** を選択します。 [スタート] メニューでさらにカスタマイズが必要な場合は、このオプションを使用します。 ガイダンスおよび XML のサンプルについては、「[スタート画面のレイアウトのカスタマイズとエクスポート](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout)」をご覧ください。
-
-- **[Windows タスク バー]**:タスク バーを**表示**または**非表示**にします。 既定では、タスク バーは表示されません。
-
-## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
-
-Windows Holographic for Business デバイスでは、シングル アプリ キオスク モード、またはマルチ アプリ キオスク モードで実行するようにこれらのデバイスを構成することができます。 一部の機能は、Windows Holographic for Business ではサポートされていません。
-
-#### <a name="single-full-screen-app-kiosks"></a>シングル全画面表示アプリ キオスク
-シングル アプリ キオスク モードを選択するときには、次の設定を入力します。
-
-- **[ユーザーのログオンの種類]**:**[ローカル ユーザー アカウント]** を選択して、(デバイスの) ローカル ユーザー アカウントか、キオスク アプリに関連付けられている Microsoft アカウント (MSA) を入力します。 **[自動ログオン]** というユーザー アカウントの種類は、Windows Holographic for Business ではサポートされていません。
-
-- **[アプリケーションの種類]**:**[ストア アプリ]** を選択します。
-
-- **[キオスク モードで実行するアプリ]**:**[ストア アプリの追加]** を選択し、一覧からアプリを選択します。
-
-    アプリが何も表示されない場合は、 [クライアント アプリ](apps-add.md)ごとの手順を使用して追加してください。
-
-    **[OK]** を選択して変更を保存します。
-
-#### <a name="multi-app-kiosks"></a>マルチ アプリ キオスク
-このモードのアプリはスタート メニューから使用できます。 ユーザーはこれらのアプリのみを開くことができます。 マルチ アプリ キオスク モードを選択するときには、次の設定を入力します。
-
-- **[S モード デバイスで Windows 10 を対象とする]**:**[いいえ]** を選択します。 S モードは、Windows Holographic for Business ではサポートされていません。
-
-- **[ユーザーのログオンの種類]**:追加したアプリを使用できるユーザー アカウントを追加します。 次のようなオプションがあります。 
-
-  - **[自動ログオン]**:Windows Holographic for Business ではサポートされていません。
-  - **[ローカル ユーザー アカウント]**:(デバイスの) ローカル ユーザー アカウントを**追加**します。 入力したアカウントは、キオスクへのサインインに使用されます。
-  - **[Azure AD user or group (Windows 10 version 1803 and later)]\(Azure AD ユーザーまたはグループ (Windows 10 バージョン 1803 以降)\)**:デバイスへのサインインにはユーザーの資格情報が必要です。 一覧から Azure AD のユーザーまたはグループを選択するには、**[追加]** を選択します。 複数のユーザーおよびグループを選択することができます。 **[選択]** を選んで変更を保存します。
-  - **[HoloLens の訪問者]**:訪問者のアカウントはゲスト アカウントであり、「[共有 PC モードの概念](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts)」の説明のとおり、ユーザーの資格情報や認証は必要ありません。
-
-- **[アプリケーション]**:キオスク デバイスで実行するアプリを追加します。 複数のアプリを追加することができます。
-
-  - **[Add Store apps]\(ストア アプリの追加\)**:[クライアント アプリ](apps-add.md)を使用して追加した既存のアプリを選択します。 アプリが何も表示されない場合は、アプリを取得して [Intune に追加する](store-apps-windows.md)ことができます。
-  - **[Add Win32 App]\(Win32 アプリの追加\)**:Windows Holographic for Business ではサポートされていません。
-  - **[AUMID による追加]**:このオプションを使用して、受信トレイ Windows アプリを追加します。 次のプロパティを入力します。 
-
-    - **[アプリケーション名]**:必須。 アプリケーションの名前を入力します。
-    - **[アプリケーション ユーザー モデル ID (AUMID)]**:必須。 Windows アプリのアプリケーション ユーザー モデル ID (AUMID) を入力します。 この ID を取得する場合は、「[Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app)」 (インストール済みアプリのアプリケーション ユーザー モデル ID を見つける) を参照してください。
-    - **[タイル サイズ]**:必須。 小、中、全体、大の、アプリ タイルのサイズを選択します。
-
-- **[キオスク ブラウザーの設定]**:Windows Holographic for Business ではサポートされていません。
-
-- **[代替のスタート画面のレイアウトを使用する]**:アプリの順序を含む、アプリをスタート メニューに表示する方法を説明する XML ファイルを入力するには、**[はい]** を選択します。 [スタート] メニューでさらにカスタマイズが必要な場合は、このオプションを使用します。 [[スタート画面のレイアウトのカスタマイズとエクスポート]](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) ではいくつかのガイダンスが提供され、Windows Holographic for Business デバイス用の特定の XML ファイルが含まれます。
-
-- **[Windows タスク バー]**:Windows Holographic for Business ではサポートされていません。
+プロファイルが作成され、プロファイル一覧に表示されます。 次に、プロファイルを[割り当てます](device-profile-assign.md)。
 
 ## <a name="next-steps"></a>次の手順
+
 [プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
 
-[Android](device-restrictions-android.md#kiosk) デバイスと [Android エンタープライズ](device-restrictions-android-for-work.md#kiosk-settings) デバイスのキオスク プロファイルを作成することもできます。
+次のプラットフォームを実行するデバイス用のキオスク プロファイルを作成できます。
+- [Android](device-restrictions-android.md#kiosk)
+- [Android エンタープライズ](device-restrictions-android-for-work.md#kiosk-settings)
+- [Windows 10 以降](kiosk-settings-windows.md)
+- [Windows Holographic for Business](kiosk-settings-holographic.md)

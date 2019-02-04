@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 01/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 264b7f4b476b18695c6dd0282f34a9af33b6b27f
-ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
+ms.openlocfilehash: 21fde80ec80492957b686a66dcfe4db55894c38e
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54418212"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199491"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -31,6 +31,7 @@ ms.locfileid: "54418212"
 > [!Note]
 > ハイブリッド モバイル デバイス管理 (MDM) での新機能については、[ハイブリッドの新機能に関するページ](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management)を確認してください。
 
+**RSS フィード**:ご自身のフィード リーダーに次の URL をコピーして貼り付けることで、このページの更新時に通知を受け取ることができます。`https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
 
 <!-- Common categories:  
 ### App management
@@ -42,6 +43,102 @@ ms.locfileid: "54418212"
 ### Role-based access control
 
 -->     
+## <a name="week-of-january-21-2019"></a>2019 年 1 月 21 日の週
+
+### <a name="app-management"></a>アプリ管理
+
+#### <a name="toast-notifications-for-win32-apps----3136566-----"></a>Win32 アプリのトースト通知 <!-- 3136566   -->
+アプリ割り当てごとに、エンド ユーザーにトースト通知が表示されるのを抑制することができます。 Intune で **[クライアント アプリ]** > **[アプリ]** > アプリを選択 > **[割り当て]** > **[グループを含める]** を選択します。 
+
+#### <a name="intune-app-protection-policies-ui-update----3251427----"></a>Intune アプリ保護ポリシーの UI の更新 <!-- 3251427  -->
+Intune のアプリ保護に関する設定とボタンのラベルを、理解しやすいように変更しました。 変更の一部を次に示します。  
+- コントロールは、**はい** / **いいえ**から、主として**ブロック** / **許可**および**無効** / **有効**に変更されています。 ラベルも更新されています。  
+- 設定は形式が変更されて、設定とそのラベルがコントロールに並べて配置されるようになり、ナビゲーションが容易になっています。   
+
+既定の設定および多くの設定は同じままですが、この変更により、ユーザーは、これまでより簡単に設定を理解し、ナビゲートし、利用して、選択したアプリ保護ポリシーを適用できます。 詳細については、[iOS の設定](app-protection-policy-settings-ios.md)と [Android の設定](app-protection-policy-settings-android.md)に関する記事をご覧ください。
+
+#### <a name="additional-settings-for-outlook----3301182----"></a>Outlook <!-- 3301182  --> の追加設定
+Intune を使用して、Outlook for iOS と Outlook for Android の追加設定を構成できるようになりました。  これらの設定には以下が含まれます。職場または学校のアカウントを iOS および Android の Outlook でのみ使用することを許可する、Office 365 およびハイブリッド先進認証オンプレミス アカウントの先進認証をデプロイする、基本認証が選択されている場合に、メール プロファイルのユーザー名フィールドで `SAMAccountName` を使用する、連絡先の保存を許可する、外部受信者メール ヒントを構成する、**[優先受信トレイ]** を構成する、Outlook for iOS へのアクセスに生体認証を要求する、外部の画像をブロックする
+> [!NOTE]
+> Intune アプリ保護ポリシーを使用して企業 ID のアクセスを管理している場合は、**生体認証を要求する**オプションを有効にしないよう考慮する必要があります。 詳細については、[iOS のアクセス設定](app-protection-policy-settings-ios.md#access-settings)および [Android のアクセス設定](app-protection-policy-settings-android.md#access-settings)について、**アクセスのための企業認証情報の要求**に関する記事を参照してください。
+
+#### <a name="delete-android-enterprise-apps----1352553---"></a>Android エンタープライズ アプリを削除する <!-- 1352553 -->
+Microsoft Intune から managed Google Play アプリを削除できます。 managed Google Play アプリを削除するには、Azure portal で Microsoft Intune を開き、**[クライアント アプリ]** > **[アプリ]** の順に選択します。 アプリの一覧から、managed Google Play アプリの右側にある省略記号 (...) を選択し、表示された一覧で **[削除]** を選択します。 アプリの一覧からマネージド Google Play アプリを削除すると、そのマネージド Google Play アプリは自動的に未承認になります。
+
+#### <a name="managed-google-play-app-type----1352580---"></a>マネージド Google Play アプリの種類<!-- 1352580 -->
+**マネージド Google Play** アプリの種類では、特定の[マネージド Google Play アプリ](https://play.google.com/work/search?q=microsoft&c=apps)を Intune に追加できます。 Intune の管理者は、Intune 内で managed Google Play アプリを参照、検索、承認、同期および割り当てできるようになりました。  managed Google Play コンソールに別途移動する必要はなく、また再認証する必要もありません。  Intune で、**[クライアント アプリ]** > **[アプリ]** > **[追加]** を選択します。 **[アプリケーションの種類]** 一覧で、アプリの種類として **[マネージド Google Play]** を選択します。
+
+### <a name="device-configuration"></a>デバイス構成
+
+#### <a name="use-microsoft-recommended-settings-with-security-baselines-public-preview----2055484-----"></a>セキュリティ ベースラインを使って Microsoft 推奨の設定を使う (パブリック プレビュー) <!-- 2055484   -->
+注: この機能のロールアウトは現在も続いていて、近いうちに利用可能になります。
+
+Intune は、セキュリティに的を絞ったその他のサービス (Windows Defender ATP や Office 365 ATP など) と統合されます。 一般的な戦略と、Microsoft 365 サービス間での結束的なエンドツーエンドのセキュリティ ワークフローをお客様から求められています。 目標としているのは、セキュリティの運用と一般的な管理者タスクをブリッジするソリューションを構築できるように戦略を調整することにあります。 Intune では、Microsoft が推奨する一連の "セキュリティ ベースライン" を公開することによって、この目標の達成を目指しています (**[Intune]** > **セキュリティ ベースライン**)。  管理者はこれらのベースラインから直接セキュリティ ポリシーを作成し、それを各自のユーザーにデプロイできます。 また、ご自分の組織のニーズに合わせてベスト プラクティスのレコメンデーションをカスタマイズすることもできます。 Intune では、これらのベースラインにデバイスが準拠した状態に維持されていることが確認され、管理者には準拠した状態にないユーザーまたはデバイスが通知されます。
+
+セキュリティ ベースラインについて詳しくは、[Intune での Windows 10 セキュリティ ベースラインの作成](security-baselines-monitor.md)に関する記事をご覧ください。
+
+この機能は、以下に適用されます。Windows 10 以降
+
+#### <a name="non-administrators-can-enable-bitlocker-on-windows-10-devices-joined-to-azure-ad---2147379-----"></a>管理者以外のユーザーが、Azure AD 参加済み Windows 10 デバイスで BitLocker を有効にできる <!-- 2147379   -->
+Windows 10 デバイスで BitLocker の設定を有効にすると (**[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** > プラットフォームとして **[Windows 10 以降] を選択** > プロファイルの種類として **[Endpoint Protection]** > **[Windows 暗号化]**)、BitLocker の設定が追加されます。 
+
+この更新には、標準ユーザー (管理者以外) が暗号化を有効にするのを許可する新しい BitLocker の設定が含まれます。 
+
+設定を確認するには、[Windows 10 用の Endpoint Protection 設定](endpoint-protection-windows-10.md#windows-encryption)に関する記事を参照してください。
+
+#### <a name="check-for-configuration-manager-compliance----2192052--eepublished----"></a>Configuration Manager コンプライアンスの確認 <!-- 2192052  eepublished  -->
+この更新には、新しい System Center Configuration Manager コンプライアンス設定 (**[デバイスのポリシー準拠]** > **[ポリシー]** > **[ポリシーの作成]** > **[Windows 10 以降]** > **[Configuration Manager のコンプライアンス]**) が含まれます。 Configuration Manager から Intune コンプライアンスにシグナルが送信されます。 この設定を使用して、すべての Configuration Manager シグナルで "準拠" を返すように要求することができます。
+
+たとえば、すべてのソフトウェア更新プログラムをデバイスにインストールすることを要求します。 Configuration Manager では、この要求は "インストール済み" 状態となります。 デバイス上のいずれかのプログラムが不明な状態である場合、Intune ではデバイスが非準拠となります。
+
+この設定については、「[Configuration Manager Compliance (Configuration Manager コンプライアンス)](compliance-policy-create-windows.md#configuration-manager-compliance)」で説明されています。
+
+適用先:Windows 10 以降
+
+#### <a name="customize-wallpaper-on-supervised-ios-devices-using-a-device-configuration-profile----2809324-----"></a>デバイスの構成プロファイルを使用した監視対象の iOS デバイスの壁紙のカスタマイズ <!-- 2809324   -->
+iOS デバイス用のデバイス構成プロファイルを作成するときに、一部の機能をカスタマイズできます (**[デバイスの構成]** > **[プロファイル]** > **[プロファイルの作成]**  >  プラットフォーム用の **iOS** > プロファイルの種類用の **[デバイス機能]**)。 この更新には新しい **[壁紙]** 設定が含まれています。これを使うと、管理者はホーム画面またはロック画面上で .png、.jpg、または .jpeg 画像を使うことができます。 これらの壁紙の設定は、監視対象のデバイスにのみ適用できます。 
+
+これらの設定の一覧については、[iOS デバイスの機能設定](ios-device-features-settings.md)に関する記事をご覧ください。
+
+#### <a name="windows-10-kiosk-is-generally-available----3594661----"></a>Windows 10 キオスクの一般提供 <!-- 3594661  -->
+この更新では、Windows 10 以降のデバイスでのキオスク機能が一般提供 (GA) になりました。 追加および構成できるすべての設定については、[Windows 10 (およびそれ以降) のキオスク設定](kiosk-settings.md)に関する記事をご覧ください。
+
+#### <a name="contact-sharing-via-bluetooth-is-removed-in-device-restrictions--device-owner-for-android-enterprise----3598396-----"></a>Android エンタープライズの [デバイスの制限] > [デバイスの所有者] での [Bluetooth 経由での連絡先の共有] の削除 <!-- 3598396   -->
+Android エンタープライズ デバイス用にデバイスの制限プロファイルを作成した場合、**[Bluetooth 経由での連絡先の共有 ]** 設定があります。 この更新では、**[Bluetooth 経由での連絡先の共有]** の設定が削除されます (**[デバイスの構成]** > **[プロファイル]** > **[プロファイルの作成]**  >  プラットフォーム用の **Android エンタープライズ** > **[デバイスの制限] > プロファイルの種類の [デバイスの所有者]** > **[全般]**)。 
+
+**[Bluetooth 経由での連絡先の共有]** 設定は、Android エンタープライズのデバイス所有者の管理ではサポートされていません。 したがって、この設定が削除されると、この設定が環境で有効および構成されていた場合でもいかなるデバイスやテナントにも影響はありません。
+
+現在の設定一覧を確認するには、[Android エンタープライズ デバイスの機能を許可または制限する設定](device-restrictions-android-for-work.md)に関するページを参照してください。
+
+適用先:Android エンタープライズ デバイスの所有者
+
+#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Intune アプリ保護ポリシーの UI の更新 <!-- 3251427 -->
+Intune のアプリ保護に関する設定とボタンのラベルを、理解しやすいように変更しました。 変更の一部を次に示します。  
+- コントロールは、**はい** / **いいえ**から、主として**ブロック** / **許可**および**無効** / **有効**に変更されています。 ラベルも更新されています。  
+- 設定は形式が変更されて、設定とそのラベルがコントロールに並べて配置されるようになり、ナビゲーションが容易になっています。   
+
+既定の設定および多くの設定は同じままですが、この変更により、ユーザーは、これまでより簡単に設定を理解し、ナビゲートし、利用して、選択したアプリ保護ポリシーを適用できます。 詳細については、[iOS の設定](app-protection-policy-settings-ios.md)と [Android の設定](app-protection-policy-settings-android.md)に関する記事をご覧ください。
+
+### <a name="device-management"></a>デバイス管理
+
+#### <a name="selective-wipe-support-for-wip-without-enrollment-devices----1434452---"></a>登録なしの WIP デバイスに対する選択的ワイプのサポート <!-- 1434452 -->
+登録なしの Windows Information Protection (WIP-WE) を使うと、MDM への完全な登録を必要とせずに Windows 10 デバイス上の企業データを保護することができます。 WIP-WE ポリシーを使用してドキュメントが保護されると、Intune 管理者は保護されたデータを選択的にワイプすることができます。 ユーザーとデバイスを選択してワイプ要求を送信することにより、WIP-WE ポリシーを介して保護されたデータはすべて使用できなくなります。 Azure portal 内で Intune から、**[モバイル アプリ]** > **[アプリの選択的ワイプ]** の順に選択します。
+
+### <a name="monitor-and-troubleshoot"></a>監視とトラブルシューティング
+
+#### <a name="new-operational-logs-and-ability-to-send-logs-to-azure-monitor-services----3762211----"></a>新しい操作ログ、およびログを Azure Monitor サービスに送信する機能 <!-- 3762211  -->
+Intune には、変更が加えられるとイベントを追跡する組み込みの監査ログが備わっています。 この更新には、次の新しいログ記録機能が含まれます。 
+- 登録したユーザーおよびデバイスの詳細を示す操作ログ (プレビュー) (成功および失敗した試行を含む)。
+- 監査ログと操作ログは Azure Monitor に送信することができます (ストレージ アカウント、イベント ハブ、ログ分析を含む)。 これらのサービスを使うと、保存したり、Splunk や QRadar などの分析を使ったり、ログ データの視覚化を取得したりできます。
+
+この機能について詳しくは、[Intune でのストレージ、イベント ハブ、またはログ分析へのログ データの送信](review-logs-using-azure-monitor.md)に関する記事をご覧ください。
+
+### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509----"></a>iOS DEP デバイスでスキップできるセットアップ アシスタントの画面が増える <!-- 2687509  -->
+現在スキップすることができる画面に加えて、ユーザーがデバイスを登録するときにセットアップ アシスタント内で次の画面をスキップするように iOS DEP デバイスを設定できます: [ディスプレイの色調]、[プライバシー]、[Android 移行]、[ホーム ボタン]、[iMessage & FaceTime]、[オンボード]、[Watch の移行]、[外観]、[画面の表示時間]、[ソフトウェア更新プログラム]、[SIM のセットアップ]。
+スキップする画面を選択するには、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]** に移動し、トークンを選択します。次に、**[プロファイル]** を選択してプロファイルを選択し、**[プロパティ]** > **[セットアップ アシスタントのカスタマイズ]** を選択し、スキップする画面の **[非表示]** を選択して、**[OK]** を選択します。
+新しいプロファイルを作成するかプロファイルを編集する場合は、選択したスキップする画面が Apple MDM サーバーと同期している必要があります。 ユーザーは、プロファイルの変更を取得するときに遅延が発生しないように、手動でのデバイスの同期を発行できます。
+この機能はロールアウトが開始されていますが、すべてのお客様が利用できるようになるまでに数日かかります。
+
 ## <a name="week-of-january-14-2019"></a>2019 年 1 月 14 日の週
 
 ### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>会社が所有する完全に管理された Android デバイスのサポートのプレビュー <!-- 1574342  -->

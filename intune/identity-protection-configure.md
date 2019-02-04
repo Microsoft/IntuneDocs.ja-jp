@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune で Identity Protection の設定を構成する - Azure | Microsoft Docs
-description: デバイス プロファイルを追加して、Microsoft Intune 内の Windows 10 デバイスで Windows Hello for Business を設定します
+title: Microsoft Intune を使用する Windows 10 デバイスに PIN を使ってサインインする - Azure | Microsoft Docs
+description: ユーザーが PIN、指紋などを使ってデバイスにサインインできるようにするには、Windows Hello for Business を使用します。 Intune for Windows 10 デバイスでこのような設定を含む ID 保護構成プロファイルを作成し、そのプロファイルをユーザー グループとデバイス グループに割り当てます。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/29/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,83 +13,54 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f9d0db8e15e6de1241984f98bf651fcff1578033
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 843806681fcee4ddec175207c2c49d6db95e0f0d
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188647"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831388"
 ---
-# <a name="configure-identity-protection-settings-in-microsoft-intune"></a>Microsoft Intune で Identity Protection の設定を構成する
+# <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune がインストールされた Windows 10 デバイス上で Windows Hello for Business を使用する
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Identity Protection プロファイルによって、Windows Hello for Business が管理対象の Windows 10 デバイスでどのようにプロビジョニングおよび構成されるかを制御します。 このプロファイルを作成して以下を構成します。  
-* デバイスとユーザーに対する Windows Hello for Business の可用性
-* デバイスの PIN の要件
-* デバイスにサインインするためのユーザーによるジェスチャの使用可否  
+Windows Hello for Business は、パスワード、スマート カード、および仮想スマート カードを置き換えることで Windows デバイスにサインインする方法です。 Intune には、管理者が Windows Hello for Business を構成および使用できるようになる組み込みの設定が含まれています。 たとえば、これらの設定を使用すると、次のようなことができます。
 
- このプロファイルをユーザーとデバイス グループを選択して、またはすべてのユーザーとすべてのデバイスに割り当てることができます。 グループは Intune にチェックインするときに、Identity Protection プロファイルを受信します。    
+- デバイスとユーザーに対して Windows Hello for Business を有効にする
+- PIN の長さの最小値または最大値など、デバイスの PIN の要件を設定する
+- ユーザーがデバイスにサインインするために使用できる (または使用できない) 指紋などのジェスチャを許可する
 
-この記事の情報を使用して、Identity Protection プロファイルを作成します。 次に、ユーザーとデバイス グループに[ご自分のプロファイルを割り当てます](device-profile-assign.md)。
+この機能は、次を実行しているデバイスに適用されます。
 
-この機能は、次を実行しているデバイスに適用されます。  
 - Windows 10 以降
-- Windows Holographic for Business  
+- Windows 10 Mobile
+- Windows Holographic for Business
 
-## <a name="create-a-device-profile-with-identity-protection-settings"></a>Identity Protection の設定でデバイス プロファイルを作成する
+Intune では、"構成プロファイル" を使用して、お客様の組織のニーズに合わせてこのような設定を作成およびカスタマイズします。 このような機能をプロファイルに追加したら、その設定を組織内のユーザーおよびデバイス グループにプッシュまたは展開します。
 
-1. [Azure ポータル](https://portal.azure.com)にサインインします。
-2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
-3. **[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
-4. Identity Protection プロファイルの **[名前]** と **[説明]** を入力します。
-5. **[プラットフォーム]** ドロップダウン リストで、**[Windows 10 以降]** を選択します。 Windows Hello for Business は、Windows 10 以降を実行しているデバイスのみでサポートされます。
-6. **[プロファイルの種類]** ドロップダウン リストで、**[Identity Protection]** を選択します。
-7. [Windows Hello for Business] ウィンドウで、[Windows Hello for Business の構成] のオプションを次から選択します。
-    * 無効にします。 Windows Hello for Business を使用しない場合は、この設定を選択します。 画面上の他のすべての設定が使用できなくなります。
-    * 有効にします。 Windows Hello for Business の設定を構成する場合は、この設定を選択します。  
+この記事では、デバイス構成プロファイルを作成する方法について説明します。 すべての設定の一覧とその実行内容については、[Windows Hello for Business を有効にするための Windows 10 デバイス設定](identity-protection-windows-settings.md)に関するページを参照してください。
 
-8. 前の手順で **[有効]** を選択した場合は、対象となる登録済みの Windows 10 と Windows 10 Mobile のデバイスとユーザーに適用される必須設定を構成します。
+## <a name="create-the-device-profile"></a>デバイス プロファイルを作成する
 
-> [!NOTE]
-> Identity Protection プロファイルをユーザーのみに割り当てた場合は、デバイス コンテキストは既定で **[未構成]** になります。  
+1. [Azure portal](https://portal.azure.com) で、**[すべてのサービス]** を選択し、**Intune** でフィルター処理して、**Microsoft Intune** を選びます。
+2. **[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
+3. 次のプロパティを入力します。
 
-   - **[PIN の長さの最小値]**/**[PIN の長さの最大値]**。 サインインをセキュリティで保護するために指定する PIN の最小長と最大長を使用するようにデバイスを構成します。 既定の PIN の長さは 6 文字ですが、最小長を 4 文字にすることができます。 PIN の最大長は 127 文字です。  
+    - **[名前]**:新しいプロファイルのわかりやすい名前を入力します。
+    - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
+    - **[プラットフォーム]**:**[Windows 10 以降]** を選択します。 Windows Hello for Business は、Windows 10 以降を実行しているデバイスのみでサポートされます。
+    - **[プロファイルの種類]**:**[Identity Protection]** を選択します。
+    - **[Windows Hello for Business の構成]**:Windows Hello for Business を構成する方法を選択します。 次のようなオプションがあります。
 
-   - **[PIN での小文字の使用を必要とする]**/**[PIN での大文字の使用を必要とする]**/**[Special characters in PIN]\(PIN での特殊文字の使用を必要とする\)**。 大文字、小文字、特殊文字を PIN で使用するように要求することで、PIN をより強力にすることができます。 次の中から選択します。
+        - **[未構成]**:デバイス上に [Windows Hello for Business をプロビジョニング](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning)します。 Identity Protection プロファイルをユーザーのみに割り当てた場合は、デバイス コンテキストは既定で **[未構成]** になります。
+        - **[無効]**: Windows Hello for Business を使用しない場合は、このオプションを選択します。 このオプションを選択すると、すべてのユーザーの Windows Hello for Business が無効になります。
+        - **有効**: Intune で Windows Hello for Business 設定を[プロビジョニング]((https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning))し、構成するには、このオプションを選択します。 構成が必要な設定を入力します。 すべての設定の一覧とその実行内容については、以下を参照してください。
 
-     - **[許可]**。 ユーザーは PIN で文字を使用できますが、使用は必須ではありません。
+            - [Windows Hello for Business を有効にするための Windows 10 デバイス設定](identity-protection-windows-settings.md)
 
-     - **[必須]**。 ユーザーは PIN に文字を 1 文字以上含める必要があります。 たとえば、一般的なのは、少なくとも 1 つの大文字と 1 つの特殊文字の使用を要求する方法です。
+4. 完了したら、**[OK]** > **[作成]** を選択して変更を保存します。
 
-     - **[許可しない]** (既定)。 ユーザーは、これらの文字を PIN で使用することができません  (この動作は、設定が構成されていない場合にも発生します。)<br>特殊文字には次のものが含まれます。**! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**
-
-   - **[PIN の有効期間 (日)]**。 その期間が経過したらユーザーが PIN を変更する必要がある有効期間を指定することをお勧めします。 既定は 41 日です。
-
-   - **[PIN の履歴を保存]**。 以前に使用した PIN の再利用を制限します。 既定では、直近 5 回の PIN を再利用することはできません。  
-   - **[Enable PIN recovery]\(PIN の回復を有効にします\)**: Windows Hello for Business の PIN の回復サービスを使用して、ユーザーが自分の PIN を変更することを許可します。 
-       - **[有効]**。 クラウド サービスで、PIN の回復シークレットが暗号化され、デバイスに保存されます。 必要に応じて、ユーザーは自分の PIN を変更できます。  
-       - **[未構成]** (既定)。 PIN の回復シークレットは作成または保存されません。 ユーザーの PIN を忘れてしまった場合、新しい PIN を取得するには、既存の PIN を削除して新しい PIN を作成するのが唯一の方法です。 ユーザーは、古い PIN でアクセスできた任意のサービスに再登録する必要があります。  
-   
-   - **[トラステッド プラットフォーム モジュール (TPM) の使用]**。 TPM チップは、追加のデータのセキュリティ層を提供します。 次のいずれかの値を選択します。  
-     - **[有効]**。 アクセス可能な TPM を装備したデバイスのみが Windows Hello for Business をプロビジョニングできます。
-     - **[Not configured]** (未構成)。 使用可能な TPM がない場合も、すべてのデバイスで Windows Hello for Business をプロビジョニングすることができます。 デバイスでは、まず TPM を使用しようとしますが、利用できない場合は、デバイスでソフトウェアの暗号化を使用できます。  
-
-   - **[生体認証を許可]**。 Windows Hello for Business の PIN の代わりとして、顔認識や指紋などの生体認証を有効にします。 ユーザーは、生体認証に失敗した場合のために、Work の PIN も設定する必要があります。 次の中から選択します。
-
-     - **[有効]**。 Windows Hello for Business で生体認証が使用可能になります。
-     - **[未構成]** (既定)。 Windows Hello for Business で生体認証を利用できません (すべてのアカウントの種類が対象)。
-
-   - **[拡張スプーフィング対策が使用可能な場合は使用する]**。 Windows Hello のスプーフィング対策機能 (例: 実際の顔の代わりに写真の顔を検出する) をサポートしているデバイスで、その機能を使用するかどうかを構成します。
-       - **[有効]**。 Windows のすべてのユーザーは、サポートされている場合に顔の特徴のスプーフィング対策を使用する必要があります。  
-       - **[未構成]** (既定)。 Windows では、デバイス上のスプーフィング対策の構成を優先します。
-
-   - **[Certificate for on-premise resources]\(オンプレミスのリソースの証明書\)**。 
-       - **[有効]**。 オンプレミスのリソースを認証するために、Windows Hello for Business で証明書を使用することを許可します。
-       - **[未構成]** (既定)。 オンプレミスのリソースを認証するために、Windows Hello for Business で証明書を使用できないようにします。  
-9. **[OK]** をクリックし、プロファイルを保存します。  
-
-プロファイルが作成され、**[デバイス構成 - プロファイル]** リストに表示されます。 先に進んでこのプロファイルをグループに割り当てるには、「[Microsoft Intune でユーザーおよびデバイス プロファイルを割り当てる](device-profile-assign.md)」を参照してください。  
+プロファイルが作成され、プロファイル一覧に表示されます。 次に、このプロファイルをグループに[割り当て](device-profile-assign.md)ます。
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 
@@ -100,3 +71,8 @@ In this high-level example, you'll create a device restriction policy that block
 ![How to disable the camera on Android devices](./media/disable-android-camera.png)
 
 -->
+
+## <a name="next-steps"></a>次の手順
+
+- すべての[設定の一覧とその実行内容](identity-protection-windows-settings.md)を参照してください。
+- [プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。

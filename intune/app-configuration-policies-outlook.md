@@ -6,7 +6,7 @@ author: Erikre
 ms.author: erikre
 ms.reviewer: smithre4
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 691029cc7b9fd8880c5440a84b95bbf2462920d6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 433d15d91bc32ef409c9a89c4d71cacb7478e74d
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180325"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068307"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Microsoft Outlook の構成設定 
 
@@ -29,18 +29,9 @@ iOS デバイスと Android デバイスで実行されている Microsoft Outlo
 
 ## <a name="configuration-settings"></a>構成設定
 
-Intune で構成ポリシーを追加すると、Microsoft Outlook を構成する特定の設定を行うことができます。 **[構成設定]** ウィンドウで、メール アカウントの構成を設定できます。
+Intune で構成ポリシーを追加するときに、iOS および Android 上で Microsoft Outlook を構成する設定を指定できます。 [構成設定] ウィンドウで、電子メール アカウントの構成を指定し、アプリ固有の設定を構成することができます。 さらに、このような設定を構成したり、名前と値のペアを使用したりすることができます。
 
-### <a name="basic-authentication-email-account-settings"></a>基本認証用メール アカウントの設定
-iOS および Android 用 Outlook を使用すると、Exchange 管理者は、ActiveSync プロトコルによる基本認証を使用するオンプレミスのユーザーに対して、アカウントの構成を "プッシュ" することができます。 詳細については、「[基本認証を使用した iOS および Android 向けの Outlook でのアカウントのセットアップ](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/account-setup)」を参照してください。 アカウントのセットアップ構成を有効にするには、次の設定を構成します。
-
-- **[電子メール サーバー]**: オンプレミスの Exchange サーバーのホスト名を入力します (mail.contoso.com など)。
-- **[メール アカウント名]**: メール アカウントの表示名を入力します。 この名前は、ユーザーのデバイス上に表示されます。
-- **[AAD からのユーザー名の属性]**: Intune が Azure Active Directory (Azure AD) から取得する名前。 Intune はこのプロファイルで使用されるユーザー名を動的に生成します。 次のような方法があります。
-  - **[ユーザー プリンシパル名]**: `user1` または `user1@contoso.com` などの名前を取得します。
-  - **[プライマリ SMTP アドレス]**: `user1@contoso.com` のような書式で電子メール アドレスを取得します。
-- **[AAD からのメール アドレス属性]**: ユーザーの電子メール アドレスを生成する方法を選択します。 完全プリンシパル名を電子メール アドレスとして使用する場合は **[ユーザー プリンシパル名]** (`user1@contoso.com` または `user1`) を選択し、Exchange へのサインインにプライマリ SMTP アドレスを使用する場合は **[プライマリ SMTP アドレス]** (`user1@contoso.com`) を選択します。 **[プライマリ SMTP アドレス]** を選択することをお勧めします。
-- **[アカウントのドメイン]**: (省略可能) アカウントのドメイン。
+Microsoft Intune での iOS および Android デバイスの Outlook アカウントの設定情報と手順については、[iOS および Android アプリの構成設定に対する Outlook の展開](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)に関するページを参照してください。
 
 ## <a name="next-steps"></a>次の手順
 [Intune で電子メールを設定する](email-settings-configure.md)

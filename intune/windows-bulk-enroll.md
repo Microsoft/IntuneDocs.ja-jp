@@ -3,7 +3,7 @@ title: Windows 10 の一括登録
 titlesuffix: Microsoft Intune
 description: Microsoft Intune の一括登録パッケージを作成する
 keywords: ''
-author: Erikje
+author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 5/21/2018
@@ -15,12 +15,12 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fca6fd73da1277973ee313055eaf4b5ba073afbb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 97f51b4934a2dc2267e255da0ec1d896dd6b8961
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184813"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751197"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows デバイスの一括登録
 
@@ -48,8 +48,7 @@ Azure AD ユーザーはこれらのデバイス上の標準ユーザーであ�
    - **プロジェクト フォルダー** - プロジェクトの保存場所
    - **説明**-プロジェクトの説明 (オプション) ![Windows Configuration Designer アプリで、名前、プロジェクト フォルダー、説明を指定するスクリーン ショット](media/bulk-enroll-name.png)
 
-4. デバイスの一意の名前を入力します。 名前には、シリアル番号 (%%SERIAL%%)、または文字のランダムなセットを含めることができます。 必要に応じて、Windows のエディションをアップグレードする場合にプロダクト キーを入力したり、デバイスを共有使用のために構成したり、事前にインストールされたソフトウェアを削除することもできます。
-
+4. デバイスの一意の名前を入力します。 名前には、シリアル番号 (%SERIAL%)、または文字のランダムなセットを含めることができます。 必要に応じて、Windows のエディションをアップグレードする場合にプロダクト キーを入力したり、デバイスを共有使用のために構成したり、事前にインストールされたソフトウェアを削除することもできます。
    ![Windows Configuration Designer アプリで名前とプロダクト キーを指定するスクリーンショット](media/bulk-enroll-device.png)
 
 5. 必要に応じて、初回起動時にデバイスが接続する Wi-fi ネットワークを構成できます。  ネットワーク デバイスが構成されていない場合は、デバイスの初回起動時にワイヤード (有線) ネットワーク接続が必要になります。

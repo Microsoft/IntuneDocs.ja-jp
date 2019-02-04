@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 11a698628e3ca1342f10f088045012523c8ac745
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.openlocfilehash: cb52a9755dffd20e6d3d66419855cc4ee7fca293
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734291"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068324"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune スタンドアロン - Win32 アプリの管理 (パブリック プレビュー)
 
@@ -95,13 +95,13 @@ Intune スタンドアロンでは、Win32 アプリの管理機能が向上し�
     - **説明**:アプリの説明を入力します。 説明はポータル サイトに表示されます。
     - **[発行元]**:アプリの発行元の名前を入力します。
     - **[カテゴリ]**:1 つまたは複数の組み込みアプリ カテゴリを選択するか、ご自身で作成したカテゴリを選択します。 カテゴリを使用すれば、ユーザーはポータル サイトを参照する際にアプリを見つけやすくなります。
-    - **[会社のポータルでおすすめアプリとして表示します]**:ユーザーがアプリを参照するとき、会社のポータルのメイン ページにアプリが目立つように表示されます。
+    - **[会社のポータルでおすすめアプリとして表示します]**: ユーザーがアプリを参照するとき、会社のポータルのメイン ページにアプリが目立つように表示されます。
     - **[情報 URL]**:必要に応じて、このアプリに関する情報が含まれる Web サイトの URL を入力します。 この URL はポータル サイトに表示されます。
     - **[プライバシー URL]**:必要に応じて、このアプリのプライバシー情報が含まれる Web サイトの URL を入力します。 この URL はポータル サイトに表示されます。
-    - **[開発者]**:必要に応じて、アプリ開発者の名前を入力します。
-    - **[所有者]**:必要に応じて、このアプリの所有者の名前を入力します。 たとえば、「**人事部**」と入力します。
-    - **[メモ]**:このアプリに関連付けるメモを入力します。
-    - **[ロゴ]**:アプリに関連付けるアイコンをアップロードします。 ユーザーが会社のポータルを参照するとき、アプリにアイコンが表示されます。
+    - **[開発者]**: (省略可能) アプリ開発者の名前を入力します。
+    - **[所有者]**: (省略可能) このアプリの所有者の名前を入力します。 たとえば、「**人事部**」と入力します。
+    - **[メモ]**: このアプリに関連付けるメモを入力します。
+    - **[ロゴ]**: アプリに関連付けるアイコンをアップロードします。 ユーザーが会社のポータルを参照するとき、アプリにアイコンが表示されます。
 3.  完了したら **[OK]** を選択します。
 
 ### <a name="step-4-configure-app-installation-details"></a>手順 4:アプリのインストール情報を構成する
@@ -239,6 +239,9 @@ Windows 10 RS3 以降のクライアントでは、Windows 10 クライアント
 次の図では、デバイスに対してアプリの変更が行われていることがエンド ユーザーに通知されます。
 
 ![アプリが変更されていることをユーザーに通知するスクリーンショット](./media/apps-win32-app-09.png)    
+
+## <a name="toast-notifications-for-win32-apps"></a>Win32 アプリのトースト通知 
+必要に応じて、アプリ割り当てごとに、エンド ユーザーにトースト通知が表示されるのを抑制することができます。 Intune で **[クライアント アプリ]** > **[アプリ]**> アプリを選択 > **[Assignemnts]\(割り当て\)** > **[グループを含める]** を選択します。 
 
 ## <a name="troubleshoot-win32-app-issues"></a>Win32 アプリの問題をトラブルシューティングする
 クライアント コンピューター上のエージェント ログは、一般的に `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs` にあります。 これらのログ ファイルを表示するには、`CMTrace.exe` を利用します。 *CMTrace.exe* は、[SCCM クライアント ツール](https://docs.microsoft.com/sccm/core/support/tools)からダウンロードできます。 

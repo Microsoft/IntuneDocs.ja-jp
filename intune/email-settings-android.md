@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune での Android および Android エンタープライズの電子メール設定 - Azure | Microsoft Docs
-description: Exchange サーバーを使用するデバイス構成電子メール プロファイルを作成し、Azure Active Directory から属性を取得します。 Android デバイスと Android 仕事用プロファイル デバイス上で Microsoft Intune を使用して、SSL または SMIME を有効にする、証明書またはユーザー名/パスワードを使用してユーザーを認証する、および電子メールとスケジュールを同期することができます。
+title: Android の Microsoft Intune の電子メール設定 - Azure | Microsoft Docs
+description: Exchange サーバーを使用するデバイス構成電子メール プロファイルを作成し、Azure Active Directory から属性を取得します。 Android Samsung Knox デバイス上で Microsoft Intune を使用して、SSL または SMIME を有効にする、証明書またはユーザー名/パスワードを使用してユーザーを認証する、および電子メールとスケジュールを同期することができます。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -13,34 +13,33 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: b96363d679a6f09327bf9a1b46421e786d1956a8
-ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
+ms.openlocfilehash: 4336be8d24ac4a81ec6fca09f22d594000bbd9a5
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54316884"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831390"
 ---
-# <a name="android-and-android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Intune を使用して電子メール、認証、および同期を構成するための Android デバイスおよび Android エンタープライズ デバイスの設定
+# <a name="android-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Intune で電子メール、認証、および同期を構成するための Android デバイスの設定
 
-この記事では、Android デバイスおよび Android エンタープライズ デバイスで制御できる各種メール設定について説明します。 モバイル デバイス管理 (MDM) ソリューションの一部として、これらの設定を使って電子メール サーバーの構成や、SSL を使用した電子メールの暗号化などを行います。
+この記事では、Android Samsung Knox デバイス上の Intune で制御できるさまざまな電子メール設定を一覧を示して説明します。 モバイル デバイス管理 (MDM) ソリューションの一部として、これらの設定を使って電子メール サーバーの構成や、SSL を使用した電子メールの暗号化などを行います。
 
-Intune 管理者は、次の Android デバイスに対して電子メール設定の作成と割り当てができます。
+Intune 管理者は、Android Samsung Knox Standard デバイスに対して電子メール設定を作成し、割り当てることができます。
 
-- Android Samsung Knox Standard
-- Android エンタープライズ
+Intune での電子メール プロファイルの詳細については、[電子メール設定の構成](email-settings-configure.md)に関するページを参照してください。
 
 ## <a name="before-you-begin"></a>始める前に
 
-[デバイス構成プロファイルを作成します](email-settings-configure.md)。
+[デバイス構成プロファイルを作成します](email-settings-configure.md#create-a-device-profile)。
 
 ## <a name="android-samsung-knox"></a>Android (Samsung Knox)
 
-- **[電子メール サーバー]**:Exchange サーバーのホスト名を入力します。
+- **[電子メール サーバー]**:Exchange サーバーのホスト名を入力します。 たとえば、「`outlook.office365.com`」と入力します。
 - **[アカウント名]**:電子メール アカウントの表示名を入力します。 この名前は、ユーザーのデバイス上に表示されます。
-- **[AAD からのユーザー名の属性]**:これは、Intune が Azure Active Directory (AAD) から取得する名前です。 Intune はこのプロファイルで使用されるユーザー名を動的に生成します。 次のようなオプションがあります。
+- **[AAD からのユーザー名の属性]**:Intune が Azure Active Directory (Azure AD) から取得する名前。 Intune はこのプロファイルで使用されるユーザー名を動的に生成します。 次のようなオプションがあります。
   - **[ユーザー プリンシパル名]**:`user1` や `user1@contoso.com` などの名前を取得します。
   - **[ユーザー名]**:`user1` などの名前のみを取得します。
-  - **[sAM アカウント名]**:`domain\user1` などのドメインを要求します。 SAM アカウント名は、Android デバイスにのみ使用できます。 Android エンタープライズはサポートされていません。
+  - **[sAM アカウント名]**:`domain\user1` などのドメインを要求します。 SAM アカウント名は、Android デバイスにのみ使用されます。
 
     次の項目も入力します。  
     - **[ユーザー ドメイン名のソース]**:**[AAD]** (Azure Active Directory) または **[カスタム]** を選択します。
@@ -51,7 +50,9 @@ Intune 管理者は、次の Android デバイスに対して電子メール設�
       **[カスタム]** 属性を使用する選択を行っている場合、次を入力します。
       - **[使用するカスタム ドメイン名]**:Intune がドメイン名として使用する、`contoso.com` や `contoso` などの値を入力します。
 
-- **[AAD からのメール アドレス属性]**:ユーザーの電子メール アドレスを生成する方法を選択します。 完全プリンシパル名を電子メール アドレスとして使用する場合は **[ユーザー プリンシパル名]** (`user1@contoso.com` または `user1`) を選択し、Exchange へのサインインにプライマリ SMTP アドレスを使用する場合は **[プライマリ SMTP アドレス]** (`user1@contoso.com`) を選択します。
+- **[AAD からのメール アドレス属性]**:この名前は、Intune が Azure AD から取得する電子メール属性です。 Intune では、このプロファイルに使用される電子メール アドレスが動的に生成されます。 次のようなオプションがあります。
+  - **[ユーザー プリンシパル名]**:電子メール アドレスとして完全プリンシパル名 (`user1@contoso.com`、`user1` など) を使用します。
+  - **[プライマリ SMTP アドレス]**:プライマリ SMTP アドレス (`user1@contoso.com` など) を使用して Exchange にサインインします。
 
 - **[認証方法]**:電子メール プロファイルで使用する認証方法として、**[ユーザー名とパスワード]** または **[証明書]** を選択します。
   - **[証明書]** を選択した場合は、Exchange 接続の認証のために事前に作成しておいたクライアント SCEP または PKCS 証明書プロファイルを選択します。
@@ -71,27 +72,13 @@ Intune 管理者は、次の Android デバイスに対して電子メール設�
 
 - **[同期するコンテンツの種類]**:デバイスで同期するコンテンツの種類を選択します。 **[未構成]** の場合、この設定が無効になります。 **[未構成]** に設定すると、エンド ユーザーがデバイスで同期を有効にしても、デバイスと Intune が同期したとき、ポリシーが再適用され、再び無効になります。 
 
-  次の内容を同期できます。 
-  - **連絡先**
-  - **カレンダー**
-  - **タスク**
-
-## <a name="android-enterprise"></a>Android エンタープライズ
-
-- **[メール アプリ]**:**[Gmail]** または **[Nine Work]** を選択します。
-- **[電子メール サーバー]**:Exchange サーバーのホスト名。
-- **[AAD からのユーザー名の属性]**:この電子メール プロファイルのユーザー名を生成するために使用される Active Directory (AD) または Azure AD の属性です。 **プライマリ SMTP アドレス** (user1@contoso.com など) または**ユーザー プリンシパル名** (user1、user1@contoso.com など) を選択します。
-- **[AAD からのメール アドレス属性]**:各デバイスでユーザーの電子メール アドレスを生成する方法。 **[ユーザー プリンシパル名]**  を選択して電子メール アドレスとして完全プリンシパル名を使用するか、**[ユーザー名]** を選択します。
-- **[認証方法]**:電子メール プロファイルで使用する認証方法として、**[ユーザー名とパスワード]** または **[証明書]** を選択します。
-  - **[証明書]** を選択した場合は、Exchange 接続の認証のために事前に作成しておいたクライアント SCEP または PKCS 証明書プロファイルを選択します。
-- **[SSL]**:電子メールの送受信および Exchange サーバーとの通信に、SSL (Secure Sockets Layer) 通信を使用します。
-- **[同期する電子メールの日数]**:同期する電子メールの日数を選択します。利用可能なすべての電子メールを同期する場合は **[無制限]** を選択します。
-- **[同期するコンテンツの種類]** (Nine Work のみ):デバイスで同期するコンテンツの種類を選択します。 **[未構成]** の場合、この設定が無効になります。 **[未構成]** に設定すると、エンド ユーザーがデバイスで同期を有効にしても、デバイスと Intune が同期したとき、ポリシーが再適用され、再び無効になります。 
-
-  次の内容を同期できます。 
-  - **連絡先**
-  - **カレンダー**
-  - **タスク**
+  次の内容を同期できます。  
+  - **[連絡先]**:エンド ユーザーが自分のデバイスに連絡先を同期できるようにするには、**[有効]** を選択します。
+  - **[カレンダー]**:エンド ユーザーが自分のデバイスにカレンダーを同期できるようにするには、**[有効]** を選択します。
+  - **[タスク]**:エンド ユーザーが自分のデバイスにタスクを同期できるようにするには、**[有効]** を選択します。
 
 ## <a name="next-steps"></a>次の手順
-[Intune で電子メールを設定する](email-settings-configure.md)
+
+[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
+
+また、[Android エンタープライズ - 仕事用プロファイル](email-settings-android-enterprise.md)、[iOS](email-settings-ios.md)、[Windows 10 以降](email-settings-windows-10.md)、および [Windows Phone 8.1](email-settings-windows-phone-8-1.md) 用の電子メール プロファイルを作成することもできます。

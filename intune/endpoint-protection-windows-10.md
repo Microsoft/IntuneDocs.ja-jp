@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/26/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 5981b3dbb74209fbd4d7f0ab03adb5a35a41954b
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: d9dfa25c2528ea2f929c3db6714bc68fee013a7b
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203537"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072577"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune を使用してデバイスを保護するための Windows 10 (以降) の設定
 
@@ -152,6 +152,9 @@ Microsoft Edge がインストールされた、次のエディションの Wind
 基本設定は、すべての種類のデータ ドライブに対するユニバーサル BitLocker の設定です。 これらの設定では、エンド ユーザーがすべての種類のデータ ドライブで変更できるドライブ暗号化タスクまたは構成オプションを管理します。
 
 - **他のディスクの暗号化に対する警告**:**[ブロック]** を選択すると、別のディスク暗号化サービスがデバイスに存在する場合の警告プロンプトが無効になります。 **[未構成]** (既定) の場合、警告が表示されます。
+    - **[Azure AD 参加中の暗号化の有効化を標準ユーザーに許可する]**:**[許可]** を選択すると、ユーザーがサインインするときに標準ユーザー/非管理者が BitLocker 暗号化を有効にすることができます。 この設定は、Azure Active Directory に参加している (Azure ADJ) デバイスにのみ適用されます。 **[未構成]** を選択すると、デバイス上で BitLocker 暗号化を有効にすることを管理者にのみ許可します。
+      
+      この設定は、Azure Active Directory に参加している (Azure ADJ) デバイスにのみ適用されます。 また、**[他のディスクの暗号化に対する警告]** 設定も **[ブロック]** に設定する必要があります。
 - **暗号化方法の構成**:オペレーティング システム、データ、リムーバブル ドライブ用の暗号化アルゴリズムを構成する場合は、この設定を**有効**にします。 **[未構成]** (既定) の場合、BitLocker は XTS-AES 128 ビットを既定の暗号化手法として使用するか、他の設定スクリプトによって指定される暗号化手法を使用します。
   - **オペレーティング システム ドライブの暗号化**:オペレーティング システム ドライブ用の暗号化の方法を選択します。 XTS-AES アルゴリズムの使用をお勧めします。
   - **固定データ ドライブの暗号化**:固定 (組み込み) のデータ ドライブ用の暗号化の方法を選択します。 XTS-AES アルゴリズムの使用をお勧めします。

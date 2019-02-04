@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,16 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a338cce6249cc7c5214a9d69a897cad3eaa09e93
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 54af9b1ef7872caddb972515d9c4765f8492bf00
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188400"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831362"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Microsoft Intune でデバイスに Wi-Fi 設定を追加して使用する
 
-Microsoft Intune の Wi-Fi プロファイルを使用して、ワイヤレス ネットワーク設定を組織のユーザーとデバイスに割り当てます。 Wi-Fi プロファイルを割り当てると、ユーザーは自分で構成することなく、組織の Wi-Fi ネットワークにアクセスできます。
+Wi-Fi は、多数のモバイル デバイスがネットワークにアクセスするために使用しているワイヤレス ネットワークです。 Microsoft Intune には、組織内のユーザーとデバイスに展開できる組み込みの Wi-Fi 設定が含まれています。 この設定のグループは "プロファイル" と呼ばれ、さまざまなユーザーとグループに割り当てることができます。 割り当てると、ユーザーは自分で構成しなくても組織の Wi-Fi ネットワークにアクセスできるようになります。
 
 たとえば、Contoso Wi-Fi という新しい Wi-Fi ネットワークをインストールします。 そして、すべての iOS デバイスをこのネットワークに接続するように設定するものとします。 その手順は次のとおりです。
 
@@ -30,7 +30,7 @@ Microsoft Intune の Wi-Fi プロファイルを使用して、ワイヤレス �
 2. iOS デバイスのすべてのユーザーを含むグループにそのプロファイルを割り当てます。
 3. ユーザーは、自分のデバイスでワイヤレス ネットワークの一覧にある新しい Contoso Wi-Fi ネットワークを見つます。 ユーザーは、選択されている認証方法を使用して、ネットワークに接続できます。
 
-Wi-Fi プロファイルを作成するには、この記事で説明する手順を使用します。 その後、プラットフォーム固有の設定と詳細に関するトピックを確認してください。
+この記事では、Wi-Fi プロファイルの作成手順を説明します。 また、各プラットフォームのさまざまな設定について説明されたリンクも含まれています。
 
 ## <a name="supported-device-platforms"></a>サポートされるデバイス プラットフォーム
 
@@ -45,7 +45,7 @@ Wi-Fi プロファイルでは次のデバイス プラットフォームをサ�
 > [!NOTE]
 > Windows 8.1 を実行しているデバイスの場合は、以前に別のデバイスからエクスポートした Wi-Fi 構成をインポートできます。
 
-## <a name="create-a-wi-fi-device-profile"></a>Wi-Fi デバイス プロファイルを作成する
+## <a name="create-a-device-profile"></a>デバイス プロファイルの作成
 
 1. [Azure portal](https://portal.azure.com) で、**[すべてのサービス]** を選択し、**Intune** でフィルター処理して、**Microsoft Intune** を選びます。 
 2. **[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
@@ -56,7 +56,6 @@ Wi-Fi プロファイルでは次のデバイス プラットフォームをサ�
     - **Android エンタープライズ**
     - **Android**
     - **macOS**
-    - **Windows Phone 8.1**
     - **Windows 8.1 以降**
     - **Windows 10 以降**
 
@@ -80,4 +79,4 @@ Wi-Fi プロファイルでは次のデバイス プラットフォームをサ�
 
 ## <a name="next-steps"></a>次の手順
 
-プロファイルは作成されますが、何も実行されません。 次に、[このプロファイルを割り当て](device-profile-assign.md)ます。
+プロファイルは作成されますが、何も実行されません。 次に、[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
