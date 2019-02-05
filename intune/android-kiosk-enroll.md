@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 4a6818f67ab4e3b04364b412fb8ecf71227328d4
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: b3ced7e52de05e98c2f4a7ec9a828972ab60cf71
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54386918"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290725"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Android エンタープライズ専用デバイスの Intune 登録を設定する
 
@@ -101,7 +101,7 @@ Android 専用デバイスの管理を設定するには、次の手順を実行
 
 ## <a name="managing-apps-on-android-dedicated-devices"></a>Android 専用デバイス上でアプリを管理する
 
-割り当ての種類が [[必須]](apps-deploy.md#to-assign-an-app) に設定されているアプリのみ、Android 専用デバイスにインストールできます。 アプリは、Android 仕事用プロファイル デバイスと同じ方法で managed Google Play ストアからインストールされます。
+割り当ての種類が [[必須]](apps-deploy.md#assign-an-app) に設定されているアプリのみ、Android 専用デバイスにインストールできます。 アプリは、Android 仕事用プロファイル デバイスと同じ方法で managed Google Play ストアからインストールされます。
 
 アプリは、アプリ開発者が更新版を Google Play に公開したとき、管理対象デバイスで自動的に更新されます。
 

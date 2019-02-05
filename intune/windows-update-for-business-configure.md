@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/15/2019
+ms.date: 02/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: d0fcb021545d96fe8f5bfdf742dd4d181c91fb1a
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: 184f70aefbdc90c301ef2f97c5a3abb5ac49a4a8
+ms.sourcegitcommit: 12f8b7f0bca1baa2c1f68dd6af4f16a4814daa11
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831566"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55737487"
 ---
 # <a name="manage-software-updates-in-intune"></a>Intune でのソフトウェア更新プログラムの管理
 
@@ -167,7 +167,7 @@ Intune で、カスタム ポリシーの OMA-URI 設定を使用して商用 ID
 > 一時停止コマンドを発行した場合、デバイスは、次にサービスにチェックインしたときにこのコマンドを受信します。 チェックインする前に、スケジュールされた更新プログラムをインストールする可能性もあります。
 > また、一時停止コマンドを発行したときに対象のデバイスが無効になっていると、有効にしたときに、デバイスは Intune でチェックインする前に、スケジュールされた更新プログラムをダウンロードしインストールする場合があります。
 
-### <a name="uninstall-the-latest-from-windows-10-software-updates"></a>Windows 10 ソフトウェア更新プログラムの最新のものをアンインストールする 
+## <a name="uninstall-the-latest-from-windows-10-software-updates"></a>Windows 10 ソフトウェア更新プログラムの最新のものをアンインストールする 
 Windows 10 コンピューターで重大な問題が発生した場合は、最新の機能更新プログラムまたは最新の品質更新プログラムをアンインストール (ロールバック) できます。 機能更新プログラムまたは品質更新プログラムをアンインストールできるのは、デバイスが存在するサービス チャネルの場合のみです。 アンインストールすると、Windows 10 コンピューター上の以前の更新プログラムを復元するためのポリシーがトリガーされます。 機能更新プログラムの場合、最新バージョンのアンインストールを適用できる期間を 2 日から 60 日間で制限できます。 ソフトウェア更新プログラムのアンインストール オプションを設定するには:
 
 1. Intune で、**[ソフトウェア更新プログラム]** を選択します。

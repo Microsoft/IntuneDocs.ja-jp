@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 01/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: bc28bca31c43140a7bca528655825bab60c53be1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: cf2bfbc992d4577e345b73f07ec465990feac317
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203520"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55229986"
 ---
 # <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune でデバイス プロファイルを使用してデバイスに機能設定を適用する
 
@@ -123,7 +123,7 @@ Microsoft Intune には、組織内のさまざまなデバイスで有効また
 - Android エンタープライズ
 - iOS
 - macOS
-- Windows 10
+- Windows 10 以降
 - Windows 10 Team
 
 ## <a name="delivery-optimization"></a>配信の最適化
@@ -174,7 +174,7 @@ Windows Defender Advanced Threat Protection (WDATP) と Microsoft Intune をオ�
 - Android
 - iOS
 - Windows Phone 8。1
-- Windows 10
+- Windows 10 以降
 
 ## <a name="vpn"></a>VPN
 
@@ -189,7 +189,7 @@ Windows Defender Advanced Threat Protection (WDATP) と Microsoft Intune をオ�
 - macOS
 - Windows Phone 8。1
 - Windows 8.1
-- Windows 10
+- Windows 10 以降
 
 ## <a name="wi-fi"></a>Wi-Fi
 
@@ -201,6 +201,7 @@ Windows Defender Advanced Threat Protection (WDATP) と Microsoft Intune をオ�
 - iOS
 - macOS
 - Windows 8.1 (インポートのみ)
+- Windows 10 以降
 
 ## <a name="esim-cellular---public-preview"></a>eSIM 携帯電話 - パブリック プレビュー
 
@@ -241,7 +242,7 @@ Windows デバイスの更新プログラム ポリシーについては、[配�
 - iOS
 - Windows Phone 8。1
 - Windows 8.1
-- Windows 10
+- Windows 10 以降
 
 ## <a name="windows-information-protection-profile"></a>Windows 情報保護プロファイル
 
