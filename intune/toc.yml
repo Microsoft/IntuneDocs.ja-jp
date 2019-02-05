@@ -699,6 +699,10 @@ items:
           href: wi-fi-settings-macos.md
         - name: カスタム
           href: custom-settings-macos.md
+    - name: セキュリティ ベースライン
+      items:
+      - name: Windows セキュリティ ベースラインの設定
+        href: security-baseline-settings-windows.md
     - name: Windows 10 以降
       items:
       - name: コンプライアンス ポリシーの設定
@@ -951,9 +955,9 @@ items:
       href: data-outside-protect.md
     - name: 管理されていないデバイスでのデータ漏洩の防止
       href: data-leak-prevention.md
-ms.openlocfilehash: 456d3f4205ca9e24c4358c97a3a2f6a33d1a421f
-ms.sourcegitcommit: 4a1ac07efd66b45c1435649bcd7215adbd84898f
+ms.openlocfilehash: cb54a7f48a96684c98ed73584adf4acc57a19f56
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55645191"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690786"

@@ -98,7 +98,7 @@
 ##### [SandBlast Mobile Protect を使用する](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 ##### [Zimperium zIPS を使用する](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
-## [macOS デバイスを使用する](using-your-macos-device-with-intune.md)
+## macOS デバイスを使用する
 ### [macOS デバイスの登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [macOS デバイスを登録する](enroll-your-device-in-intune-macos-cp.md)
 ### [組織で提供される macOS デバイスを登録する](enroll-company-device-macos.md)  
