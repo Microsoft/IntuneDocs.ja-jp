@@ -231,19 +231,19 @@ items:
       href: troubleshoot-device-enrollment-in-intune.md
   - name: デバイス コンプライアンスの設定
     items:
-    - name: デバイス コンプライアンスの概要
+    - name: コンプライアンスの概要
       href: device-compliance-get-started.md
-    - name: Android ポリシーの作成
+    - name: Android のコンプライアンス
       href: compliance-policy-create-android.md
-    - name: Android エンタープライズのプロファイルのポリシーの作成
+    - name: Android Enterprise のコンプライアンス
       href: compliance-policy-create-android-for-work.md
-    - name: Google Play プロテクトを有効にするためのポリシーの作成
+    - name: Google Play の保護を有効にする
       href: compliance-policy-create-google-play-protect.md
-    - name: iOS ポリシーの作成
+    - name: iOS のコンプライアンス
       href: compliance-policy-create-ios.md
-    - name: Windows ポリシーの作成
+    - name: Windows のコンプライアンス
       href: compliance-policy-create-windows.md
-    - name: 場所ベースのポリシー
+    - name: 地域別のコンプライアンス
       href: use-network-locations.md
     - name: ポリシーを評価します
       href: policy-evaluate.md
@@ -251,39 +251,39 @@ items:
       href: actions-for-noncompliance.md
     - name: デバイス コンプライアンスを監視する
       href: compliance-policy-monitor.md
-  - name: デバイスの構成
+  - name: デバイス設定を構成する
     items:
-    - name: プロファイルを使用してデバイスを構成する
+    - name: デバイス構成の概要
       href: device-profiles.md
     - name: デバイス プロファイル
       href: device-profile-create.md
     - name: 管理用テンプレート
       href: administrative-templates-windows.md
-    - name: デバイス機能 (iOS と MacOS)
+    - name: デバイスの機能
       href: device-features-configure.md
-    - name: デバイスの制限
+    - name: デバイスの設定と機能を制限する
       href: device-restrictions-configure.md
-    - name: 配信の最適化
+    - name: 更新プログラムを配信する
       href: delivery-optimization-windows.md
-    - name: エディションのアップグレードとモードの切り替え
+    - name: エディションと S モードをアップグレードする
       href: edition-upgrade-configure-windows-10.md
-    - name: 電子メールの設定
+    - name: 電子メールを構成する
       href: email-settings-configure.md
-    - name: キオスクの設定
+    - name: キオスク モードを有効にする
       href: kiosk-settings.md
-    - name: VPN 設定
+    - name: VPN を追加する
       href: vpn-settings-configure.md
       items:
       - name: Android 用のアプリ別の VPN
         href: android-pulse-secure-per-app-vpn.md
       - name: iOS 用のアプリ別の VPN
         href: vpn-setting-configure-per-app.md
-    - name: Wi-Fi 設定
+    - name: ワイヤレスの Wi-fi ネットワークを追加する
       href: wi-fi-settings-configure.md
       items:
       - name: 事前共有キーを使用する Wi-Fi
         href: wi-fi-profile-shared-key.md
-    - name: 教育設定
+    - name: Education Take a Test アプリ
       href: education-settings-configure.md
     - name: 共有のマルチ ユーザー デバイス
       href: shared-user-device-settings.md
@@ -295,7 +295,7 @@ items:
       href: device-profile-assign.md
     - name: プロファイルの監視
       href: device-profile-monitor.md
-    - name: プロファイルのトラブルシューティング
+    - name: 一般的な質問と回答
       href: device-profile-troubleshoot.md
   - name: デバイス データの保護
     items:
@@ -854,6 +854,8 @@ items:
       items:
       - name: Intune API リファレンス
         href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
+    - name: デバイスの構成に使用される Graph API
+      href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: リソース
   items:
   - name: Microsoft Intune のドキュメント ガイド
@@ -949,9 +951,9 @@ items:
       href: data-outside-protect.md
     - name: 管理されていないデバイスでのデータ漏洩の防止
       href: data-leak-prevention.md
-ms.openlocfilehash: 9ba87d149285aea0e39e790f7e620bba52bb47bd
-ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
+ms.openlocfilehash: 456d3f4205ca9e24c4358c97a3a2f6a33d1a421f
+ms.sourcegitcommit: 4a1ac07efd66b45c1435649bcd7215adbd84898f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55504546"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55645191"
