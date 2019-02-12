@@ -15,12 +15,13 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3eea1d1f100515b29dfda3b2297005f61e05ea23
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b1539a1c373126df13ed3e951bb0d4ecae728fd3
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831617"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851493"
 ---
 # <a name="upgrade-windows-10-editions-or-enable-s-mode-on-devices-using-microsoft-intune"></a>Microsoft Intune を使用しているデバイス上での Windows 10 エディションのアップグレードまたは S モードの有効化
 
@@ -28,7 +29,7 @@ ms.locfileid: "54831617"
 
 モバイル デバイス管理 (MDM) ソリューションの一部として、Windows 10 デバイスをアップグレードすることができます。 たとえば、Windows 10 Professional デバイスを Windows 10 Enterprise にアップグレードすることができます。 また、S モバイルを有効にして、デバイスで Microsoft Store のアプリのみを実行するようにします。
 
-[Windows 10 S モード](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode)はセキュリティとパフォーマンスのために設計されています。 Microsoft Store からのアプリのみをデバイスで実行する場合、S モードを利用し、デバイスをセキュリティで保護できます。 Microsoft Store で入手できないアプリをデバイスで使用する場合は、S モードから切り替えます。 S モードから切り替える操作は一方向です。 Windows 10 S モードから切り替えると、戻ることができません。
+[Windows 10 S モード](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode)はセキュリティとパフォーマンスのために設計されています。 Microsoft Store からのアプリのみをデバイスで実行する場合、S モードを利用し、デバイスをセキュリティで保護できます。 Microsoft Store で入手できないアプリをデバイスで使用する場合は、S モードから切り替えます。 S モードから抜けるという行為は一方向です。 Windows 10 S モードから一度抜けると、戻ることができません。
 
 この機能は、以下に適用されます。
 
