@@ -15,12 +15,13 @@ ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ed996ec17ab0c8144286eeed0a87f07b35da2969
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8b4f35dba38dd1b69f770a3a10689ce87eaf3a27
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817060"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840401"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange On-Premises と従来の Exchange Online Dedicated の条件付きアクセス ポリシーを作成する
 
@@ -80,9 +81,9 @@ Windows 8.1 以降用のネイティブ **メール** アプリケーション (
 
 1. 正常にサインインすると、**Azure ダッシュボード**が開きます。
 
-1. 左側のメニューから **[すべてのサービス]** を選択し、テキスト ボックス フィルターに「 **Intune** 」と入力します。
+1. 左側のメニューから **[すべてのサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
 
-1.  **[Intune]** を選ぶと、 **Intune ダッシュボード** が表示されます。
+1. **[Intune]** を選ぶと、**Intune ダッシュボード**が表示されます。
 
 1. **[オンプレミス アクセス]** を選択します。 **[オンプレミス アクセス]** ウィンドウには、条件付きアクセス ポリシーの状態と、その影響を受けるデバイスが表示されます。
 

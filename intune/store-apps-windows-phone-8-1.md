@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5892ffe0369ae7b43489c1ce5c327f88c0d857f3
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f5d043d0f7d17825ebf8ce7d991372dc0587da15
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642525"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845620"
 ---
 # <a name="add-windows-phone-81-store-apps-to-microsoft-intune"></a>Windows Phone 8.1 ストア アプリを Microsoft Intune に追加する
 
@@ -49,7 +50,7 @@ ms.locfileid: "53642525"
     - **[情報 URL]**: このアプリに関する情報が含まれる Web サイトの URL を入力することもできます。 この URL は会社のポータルでユーザーに表示されます。
     - **[プライバシー URL]**: このアプリのプライバシー情報が含まれる Web サイトの URL を入力することもできます。 この URL は会社のポータルでユーザーに表示されます。
     - **[開発者]**: (省略可能) アプリ開発者の名前を入力します。
-    - **[所有者]**: (省略可能) このアプリの所有者の名前 (*人事部*など) を入力します。
+    - **[所有者]**: (省略可能) このアプリの所有者の名前 ("*人事部*" など) を入力します。
     - **[メモ]**: (省略可能) このアプリに関連付けるメモを入力します。
     - **[ロゴ]**: (省略可能) アプリに関連付けるアイコンをアップロードします。 ユーザーが会社のポータルを参照するとき、アプリにこのアイコンが表示されます。
 8. **[OK]** を選択します。

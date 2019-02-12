@@ -3,8 +3,8 @@ title: Microsoft Intune でデバイスを保護する
 titleSuffix: Microsoft Intune
 description: 不正アクセスなどの脅威からのデバイス保護に Intune が役立つ方法のいくつかについて説明します。
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 07/19/2018
 ms.topic: article
@@ -16,12 +16,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 06f14b0ba1edcde28c7f2c732ab286e80f186bf2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a5743e1d24e878a84413c23c8309cda2ab0dda90
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188264"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844481"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Microsoft Intune でデバイスを保護する
 

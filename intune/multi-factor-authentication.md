@@ -15,12 +15,13 @@ ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2e48e782a3da5f7b367236218e8ec036a5c1b7f6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 71d551ca64f85c3ba6a807fac70e3b0662e1b89a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179713"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834094"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Intune へのデバイスの登録で多要素認証を要求する
 

@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ddf075828ca9b9a7d8030a88a2d7f58efbc0e980
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: aa48aae8f35ad55e3e836016262056268fd9cd89
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150124"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836287"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>iOS デバイスでの問題に関するエラーを会社のサポートに送信する
 iOS デバイスでポータル サイト アプリを利用しているとき、エラーが発生することがあります。 そのとき、会社のサポート担当者にエラーに関する詳細を電子メールで送信できます。 この詳細によって、問題を解決するために必要な背景を伝えることができます。

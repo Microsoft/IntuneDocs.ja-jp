@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: f156accf5b51e7fff51db738c70b0b0840d7e365
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0f2c5da7772ff137e44fead66f00fe34004bb1f4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642831"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850908"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune アプリの管理とは
 
@@ -102,7 +103,7 @@ Intune では、アプリを実行するデバイス上で必要なアプリを�
 
 このセクションの詳細については、[アプリの管理](apps-monitor.md)に関するページを参照してください。
 
-### <a name="set-up"></a>セットアップ
+### <a name="set-up"></a>セットアップする
 - **[iOS VPP トークン]**:iOS Volume Purchase Program (VPP) のライセンスを適用し、表示します。 詳細については、次をご覧ください。
     - [iOS 大量購入アプリ](vpp-apps-ios.md)
 - **[Windows Enterprise 証明書]**:基幹業務アプリを Windows マネージド デバイスに配布するために使うコード署名証明書の状態を適用または表示します。

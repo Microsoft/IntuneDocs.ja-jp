@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 58a78cee51a411c940d4510cd8498994c14129f0
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: caf4401a2274a74050ec0eb404363cfc15b23e76
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642746"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851442"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune データ ウェアハウス API エンドポイント
 
@@ -76,11 +77,11 @@ API の現在のバージョンは `beta` です。
 
 |                             フィルター                             |           パフォーマンスの最適化           |                                          説明                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
-|    `maxhistorydays=7`                                            |    フル                                      |    `DateKey` が 20180214 から 20180221 の間のデータを返します。                                     |
-|    `$filter=DateKey eq 20180214`                                 |    フル                                      |    `DateKey` が 20180214 のデータを返します。                                                    |
-|    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    フル                                      |    `DateKey` が 20180214 から 20180220 の間のデータを返します。                                     |
+|    `maxhistorydays=7`                                            |    完全                                      |    `DateKey` が 20180214 から 20180221 の間のデータを返します。                                     |
+|    `$filter=DateKey eq 20180214`                                 |    完全                                      |    `DateKey` が 20180214 のデータを返します。                                                    |
+|    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    完全                                      |    `DateKey` が 20180214 から 20180220 の間のデータを返します。                                     |
 |    `maxhistorydays=7&$filter=Id gt 1`                            |    部分、Id gt 1 は最適化されません    |    `DateKey` が 20180214 から 20180221 の間で、Id が 1 より大きい値のデータを返します。             |
-|    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    フル                                      |    `DateKey` が 20180214 のデータを返します。 `maxhistorydays` は無視されます。                            |
+|    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    完全                                      |    `DateKey` が 20180214 のデータを返します。 `maxhistorydays` は無視されます。                            |
 |    `$filter=DateKey eq 20180214 and Id gt 1`                     |    なし                                      |    `DateKey` 範囲のフィルターとして扱われないため、パフォーマンスは向上されません。                              |
 |    `$filter=DateKey ne 20180214`                                 |    なし                                      |    `DateKey` 範囲のフィルターとして扱われないため、パフォーマンスは向上されません。                              |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214 and Id gt 1`    |    なし                                      |    `DateKey` 範囲のフィルターとして扱われないため、パフォーマンスは向上されません。 `maxhistorydays` は無視されます。    |

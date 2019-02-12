@@ -15,12 +15,13 @@ ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 58ff1bd91a5c95d66d75ad6546137dd2de9feac3
-ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e827862510f24a2f133562c836d6c1b47186c330
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899095"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086150"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>モバイル アプリケーション管理に関するトラブルシューティング
 
@@ -34,9 +35,9 @@ ms.locfileid: "54899095"
 
 | 問題 | 説明 | 解決策 |
 | -- | -- | -- |
-| ポリシーが Skype for Business に適用されない | Azure Portal でデバイスを登録しないで設定したアプリ保護ポリシーが、iOS デバイスと Android デバイスの Skype for Business アプリに適用されません。 | 先進認証を使うように Skype for Business を設定する必要があります。  「[Enable your tenant for modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)」 (テナントで先進認証を有効にする) の説明に従って、Skype に先進認証を設定してください。 |
+| ポリシーが Skype for Business に適用されない | Azure Portal でデバイスを登録しないで設定したアプリ保護ポリシーが、iOS デバイスと Android デバイスの Skype for Business アプリに適用されません。 | 先進認証を使うように Skype for Business を設定する必要があります。  「[Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)」 (テナントで先進認証を有効にする) の説明に従って、Skype に先進認証を設定してください。 |
 | Office のアプリ ポリシーが適用されない | アプリ保護ポリシーが、すべてのユーザーの、どの[サポートされる Office アプリ](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)にも適用されません。 | ユーザーに Intune のライセンスが与えられていること、および Office アプリが展開されるアプリ保護ポリシーの対象であることを確認します。 新しく展開したアプリ保護ポリシーが適用されるには最大 8 時間かかります。 |
-| 管理者が Azure ポータルでアプリ保護ポリシーを構成できない | IT 管理者ユーザーが、Azure Portal でアプリ保護ポリシーを構成できません。 | 次のユーザー ロールには Azure Portal へのアクセス権があります。 <ul><li>グローバル管理者: [Office ポータル](http://portal.office.com/)で設定できます。</li><li>所有者: [Azure ポータル](https://portal.azure.com/)で設定できます。</li><li>共同作成者: [Azure ポータル](https://portal.azure.com/)で設定できます。</li></ul> これらのロールの設定については、「[Microsoft Intune でのロール ベースの管理制御 (RBAC)](role-based-access-control.md)」を参照してください。|
+| 管理者が Azure ポータルでアプリ保護ポリシーを構成できない | IT 管理者ユーザーが、Azure Portal でアプリ保護ポリシーを構成できません。 | 次のユーザー ロールには Azure Portal へのアクセス権があります。 <ul><li>グローバル管理者: [Office ポータル](https://portal.office.com/)で設定できます。</li><li>所有者: [Azure ポータル](https://portal.azure.com/)で設定できます。</li><li>共同作成者: [Azure ポータル](https://portal.azure.com/)で設定できます。</li></ul> これらのロールの設定については、「[Microsoft Intune でのロール ベースの管理制御 (RBAC)](role-based-access-control.md)」を参照してください。|
 |ユーザー アカウントがアプリ保護ポリシー レポートに表示されない | 管理コンソールのレポートに、アプリ保護ポリシーが最近展開されたユーザー アカウントが表示されません。 | 新しくアプリ保護ポリシーの対象になったユーザーは、対象ユーザーとしてレポートに表示されるまでに最大で 24 時間かかります。 |
 | ポリシーの変更が行われない | アプリ保護ポリシーの変更および更新が適用されるまで、最大 8 時間かかります。 | 該当する場合、エンド ユーザーは、いったんアプリをログアウトしてから再びログインすることで、サービスと強制的に同期できます。 |
 | DEP でアプリ保護ポリシーが動作しない | アプリ保護ポリシーが Apple DEP デバイスに適用されません。 | Apple Device Enrollment Program (DEP) でユーザー アフィニティを使用していることを確認します。 DEP でのユーザー認証を必要とするすべてのアプリにはユーザー アフィニティが必要です。 <br><br>iOS DEP 登録の詳細については、「[Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する](device-enrollment-program-enroll-ios.md)」を参照してください。|

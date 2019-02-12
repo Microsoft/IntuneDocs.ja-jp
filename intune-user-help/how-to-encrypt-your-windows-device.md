@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: bf6610b3f72913bc496c1e24a136543314d42937
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 477aa18ebb1e079573e7962429d33a8ca4afabed
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149171"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834332"
 ---
 # <a name="how-to-encrypt-your-windows-device"></a>Windows デバイスを暗号化する方法
 

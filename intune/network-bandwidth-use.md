@@ -16,12 +16,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 243e9602a253fecf2eda1dd73dfb49a488db0974
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0ba4cf212f44742ca9feb077a945a1f500ca1a78
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190253"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840945"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune のネットワーク構成の要件と帯域幅
 
@@ -165,7 +166,7 @@ Intune は、Intune ソフトウェアを実行するサーバーのようなオ
 
 ### <a name="apple-device-network-information"></a>Apple デバイス ネットワークの情報
 
-|         ホスト名         |                                        URL (IP アドレス/サブネット)                                        |  プロトコル  |     ポート     |                          デバイス                           |
+|         Hostname         |                                        URL (IP アドレス/サブネット)                                        |  プロトコル  |     ポート     |                          デバイス                           |
 |--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
 |      管理コンソール       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS と macOS                    |
 |      管理コンソール       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS と macOS                    |
@@ -175,5 +176,5 @@ Intune は、Intune ソフトウェアを実行するサーバーのようなオ
 |     デバイス サービス      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |
 |     デバイス サービス      |   Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net   |    HTTP    |      80      |                           Apple                           |
 | デバイス (インターネット/Wi-Fi) |                                 #-courier.push.apple.com(17.0.0.0/8)                                  |    TCP     | 5223 および 443 | Apple のみ。 &#39;#&#39; は、0 から 200 の乱数です。 |
-| デバイス (インターネット/Wi-Fi) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP/HTTPS |  80 または 443   |                        Apple のみ                         |
+| デバイス (インターネット/Wi-Fi) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP/ HTTPS |  80 または 443   |                        Apple のみ                         |
 

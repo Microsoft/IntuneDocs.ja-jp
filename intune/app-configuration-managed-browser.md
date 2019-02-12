@@ -16,12 +16,13 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 65f3598282bd46d422f8748d2653dbf8e18cf9b7
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 64cd4aa629e980bf69557d6cd2c40f8bee7bd3c6
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53324975"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086218"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune のポリシーで保護されたブラウザーを使用してインターネット アクセスを管理する
 
@@ -150,16 +151,16 @@ Microsoft Edge および Intune Managed Browser と [Azure AD アプリケーシ
 ### <a name="before-you-start"></a>開始する前に
 
 - Azure AD アプリケーション プロキシ経由の内部アプリケーションをセットアップします。
-    - アプリケーション プロキシを構成し、アプリケーションを公開するには、[セットアップに関するドキュメント](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#get-started)を参照してください。 
+    - アプリケーション プロキシを構成し、アプリケーションを公開するには、[セットアップに関するドキュメント](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)を参照してください。 
 - Managed Browser アプリの最小バージョン 1.2.0 を使用する必要があります。
-- Managed Browser または Microsoft Edge アプリのユーザーは、[Intune アプリの保護ポリシー]( app-protection-policy.md)をアプリに割り当てています。
+- Managed Browser または Microsoft Edge アプリのユーザーは、[Intune アプリの保護ポリシー](app-protection-policy.md)をアプリに割り当てています。
 
     > [!NOTE]
     > 更新されたアプリケーション プロキシのリダイレクト データが、Managed Browser や Microsoft Edge で有効になるまでには、最大で 24 時間かかる場合があります。
 
 
 #### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>手順 1.Outlook から保護ブラウザーへの自動リダイレクトを有効にする
-Outlook は、アプリ保護ポリシーの [**Managed Browser に表示する Web コンテンツを制限する**] 設定を有効にして構成される必要があります。
+Outlook は、アプリ保護ポリシーの **[Managed Browser に表示する Web コンテンツを制限する]** 設定を有効にして構成される必要があります。
 
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>手順 2: 保護ブラウザーに割り当てられたアプリ構成ポリシーを割り当てる
 この手順では、アプリ プロキシのリダイレクトを使用するように、Managed Browser または Microsoft Edge アプリを構成します。 Microsoft Edge または Managed Browser アプリの構成を作成する手順に従い、以下のキーと値のペアを指定します。
@@ -297,7 +298,7 @@ iOS デバイスに Managed Browser をインストールしているエンド �
 
 -   ユーザーが自分のデバイスの組み込みブラウザーに対して構成した設定は、Managed Browser では使用されません。 Managed Browser では、これらの設定にアクセスできません。
 
--   Managed Browser に関連付けられているアプリ保護ポリシーにオプション [**アクセスの際にシンプルな PIN を要求する**] または [**アクセスの際に会社の資格情報を要求する**] を設定した場合、およびユーザーが認証ページでヘルプのリンクを選択した場合は、ポリシーのブロック リストに追加されているかどうかにかかわらず、インターネット サイトを参照できます。
+-   Managed Browser に関連付けられているアプリ保護ポリシーにオプション **[アクセスの際にシンプルな PIN を要求する]** または **[アクセスの際に会社の資格情報を要求する]** を設定した場合、およびユーザーが認証ページでヘルプのリンクを選択した場合は、ポリシーのブロック リストに追加されているかどうかにかかわらず、インターネット サイトを参照できます。
 
 -   Managed Browser では、サイトへの直接のアクセスのみをブロックできます。 中間サービス (翻訳サービスなど) がサイトへのアクセスに使用される場合、そのアクセスはブロックされません。
 
