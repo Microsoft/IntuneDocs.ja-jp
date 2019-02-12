@@ -2,8 +2,8 @@
 title: Microsoft Intune で秘密キーと公開キーの証明書を使用する - Azure | Microsoft Docs
 description: Microsoft Intune で Public Key Cryptography Standards (PKCS) 証明書を追加または作成します。これには、ルート証明書をエクスポートする、証明書テンプレートを構成する、Microsoft Intune Certificate Connector (NDES) をダウンロードしてインストールする、デバイス構成プロファイルを作成す。Azure とご利用の証明機関で PKCS 証明書プロファイルを作成するという手順が含まれます。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/10/2018
 ms.topic: article
@@ -11,16 +11,16 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 6a617f56e688d8dd6e9bca8e964e075865f05be1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: f825e66a4668a007dc364e4c42b18ca7c2736016
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203622"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303493"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune で PKCS 証明書を構成して使用する
 
@@ -136,6 +136,7 @@ VPN、WiFi、その他のリソースを使用して認証するには、ルー�
 6. **[詳細設定]** タブでは、**[このコンピューターの SYSTEM アカウントを使用する (既定)]** をオンのままにすることをお勧めします。
 7. **[適用]** > **[閉じる]** を選択します
 8. Azure ポータルに戻ります (**[Intune]**、**[デバイス構成]**、**[証明機関]**)。 しばらくすると、緑のチェックマークが表示され、**[接続の状態]** が **[アクティブ]** になります。 これでコネクタ サーバーは Intune と通信できます。
+9. ご利用のネットワーク環境に Web プロキシがある場合、コネクタが動作するように追加の構成が必要になる可能性があります。 詳細については、Azure Active Directory ドキュメントの「[既存のオンプレミス プロキシ サーバーと連携する](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers)」を参照してください。
 
 > [!NOTE]
 > Microsoft Intune Certificate Connector には、TLS 1.2 のサポートが含まれています。 したがって、Microsoft Intune Certificate Connector がインストールされているサーバーが TLS 1.2 をサポートする場合、TLS 1.2 が使用されます。 サーバーが TLS 1.2 をサポートしない場合、TLS 1.1 が使用されます。 現在、デバイスとサーバー間の認証には、TLS 1.1 が使用されています。

@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
-ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2c9ea11cd19fee8f491329020753501996b47f40
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48260251"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834723"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>ポータル サイト アプリで Intune に macOS デバイスを登録する
 
@@ -46,7 +47,7 @@ ms.locfileid: "48260251"
 次の手順を使用して、OS X El Capitan 10.11 以降を実行している macOS デバイスを登録します。   
 
 
-1. ポータル サイト Web サイトにアクセスするには、__Safari__ で新しいウィンドウを開き、 https://portal.manage.microsoft.com に移動します。  
+1. ポータル サイト Web サイトにアクセスするには、__Safari__ で新しいウィンドウを開き、https://portal.manage.microsoft.com に移動します。  
 
 2. 職場や学校のアカウントでポータル サイト Web サイトにサインインします。
 
@@ -93,4 +94,11 @@ macOS デバイスにインストールされているモバイル デバイス�
 
 また、それらの他のプロファイルは個別に検証される必要がないため、より迅速に生成され、デバイスに送信されます。 
 
-サポートが必要な場合は、 会社のサポートに問い合わせてください。 連絡先の情報は、[会社のポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)でわかります。  
+## <a name="updating-the-company-portal-app"></a>ポータル サイト アプリを更新する
+
+ポータル サイト アプリの更新は、Microsoft AutoUpdate for Mac を使用して、他の Office アプリの場合と同じように行われます。 macOS 用 Microsoft アプリの更新の詳細については、[こちら](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1)を参照してください。  
+
+## <a name="next-steps"></a>次の手順  
+さらに手助けが必要ですか。 会社のサポートに問い合わせてください。 連絡先の情報は、[会社のポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)でわかります。  
+
+

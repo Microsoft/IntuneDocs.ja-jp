@@ -2,10 +2,10 @@
 title: Microsoft Intune でセキュリティのベースラインを使用する - Azure | Microsoft Docs
 description: モバイル デバイス管理に Microsoft Intune を使用して、デバイス上のユーザーとデータを保護するために推奨されるグループ セキュリティ設定を追加または構成します。 BitLocker の有効化、Windows Defender Advanced Threat Protection の構成、Internet Explorer の制御、SmartScreen の使用、ローカル セキュリティ ポリシーの設定、パスワードの要求、インターネット ダウンロードのブロックなどを行います。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,23 +14,24 @@ ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d78adf8e7d6d2ce05951171e6248dcc8c389945d
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c610371760413cc157bee84382280666f387432b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55070301"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850830"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Intune で Windows 10 のセキュリティのベースラインを作成する
 
-セキュリティのベースラインは、Windows 10 以降を実行しているデバイスで使用できるプレビュー段階の機能です。 この機能には、ユーザーとデバイスをセキュリティで保護するための多数の Intune 設定が含まれています。 また、このような設定をセキュリティ チームの推奨値に自動的に設定します。 たとえば、ベースラインによって、BitLocker を自動的に有効にする、デバイスのロックを解除するためにパスワードを自動的に要求する、基本認証を自動的に無効にするなどの操作を実行できます。
+セキュリティのベースラインは、Windows 10 以降を実行しているデバイスで使用できるプレビュー段階の機能です。 この機能には、ユーザーとデバイスをセキュリティで保護するために使用できる、Intune によってサポートされる多数の設定が含まれています。 また、このような設定をセキュリティ チームの推奨値に自動的に設定します。 たとえば、ベースラインによって、BitLocker を自動的に有効にする、デバイスのロックを解除するためにパスワードを自動的に要求する、基本認証を自動的に無効にするなどの操作を実行できます。
 
 この機能は、以下に適用されます。
 
 - Windows 10 バージョン 1809 以降
 
 > [!NOTE]
-> セキュリティのベースラインはプレビュー段階ですが、Microsoft は運用環境でプロファイルを使用することをお勧めしません。プレビューの過程でベースラインが変更される可能性があるためです。
+> セキュリティのベースラインはプレビュー段階ですが、Microsoft は運用環境でプロファイルを使用することをお勧めしません。プレビューの過程でベースラインが変更される可能性があるためです。 セキュリティ ベースラインが一般に使用できるようになったとき、既存のプロファイルがサポートされる最新のプロファイルに変換されることはありません。
 
 セキュリティのベースラインを使用する目的は、Microsoft 365 を使用するときにエンドツーエンドのセキュリティで保護されたワークフローを提供することです。 次のような利点があります。
 
@@ -94,6 +95,12 @@ Intune マネージド デバイスに関するセキュリティのベースラ
 
 保存するとすぐに、デバイスの Intune へのチェックイン時にプロファイルがデバイスにプッシュされるようになります。 そのため、この処理はすぐに実行されます。
 
+## <a name="available-security-baselines"></a>使用可能なセキュリティ ベースライン  
+
+Intune では次のセキュリティ ベースラインを使用できます。
+- **プレビュー:MDM セキュリティ ベースライン**
+  - バージョン:[2018 年 10 月](security-baseline-settings-windows.md)
+
 ## <a name="q--a"></a>Q & A
 
 #### <a name="why-these-settings"></a>これらの設定の理由を教えてください。
@@ -117,5 +124,5 @@ Microsoft セキュリティ チームは、これらの推奨事項を作成す
 - Microsoft Intune と共に Azure Active Directory (AD) を使用して、オンプレミスの Active Directory グループ ポリシーから純粋なクラウド ソリューションに移行することは、1 つの旅です。 参考までに、ハイブリッド AD および Azure AD の参加デバイス向けに公開されているガイドの GPO があります。 このようなデバイスは、必要に応じてクラウド (Intune) から MDM 設定を取得し、オンプレミス ドメイン コントローラーからグループ ポリシー設定を取得できます。
 
 ## <a name="next-steps"></a>次の手順
-
-状態を確認し、[ベースラインとプロファイル](security-baselines-monitor.md)を監視します。
+- Intune でサポートされている [Windows セキュリティ ベースラインの設定](security-baseline-settings-windows.md)を確認します。  
+- 状態を確認し、[ベースラインとプロファイル](security-baselines-monitor.md)を監視します。

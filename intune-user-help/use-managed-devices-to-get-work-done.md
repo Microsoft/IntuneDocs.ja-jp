@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e067ce76046355a7da6bb785ae3302c0fc3e8bb9
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 360715881e3d6b2f61e7bf251045fc3356c44f6b
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203148"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690684"
 ---
 # <a name="use-managed-devices-to-access-work-or-school-resources"></a>管理対象デバイスを使用して職場または学校のリソースにアクセスする
 Microsoft Intune は、組織がデバイス、アプリ、および電子メールへのアクセスを管理するためのデバイス管理システムです。 デバイス管理により、ユーザーおよび他の従業員や学生が、事実上どこからでも、ほぼすべてのデバイス上の作業情報にアクセスできます。 リモートで作業している場合でも、ユーザーおよび組織の情報はセキュリティで保護され続けます。
@@ -39,16 +39,9 @@ Microsoft Intune は、セキュリティとデバイスの要件を構成する
 - 会社のサポートが設定した[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)に移動します。
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>アプリと Web サイトの違い
-ポータル サイトとポータル サイト Web サイトには微妙な違いがいくつかありますが、ほとんどのタスクは同じように実行できます。 実行できるいくつかのタスクを以下に示します。
+Windows 10、iOS、macOS、および Android 用の各ポータル サイト アプリは、デバイスの各プラットフォームとシームレスに統合します。 Web サイトには任意のデバイスからアクセスでき、使用しているデバイスに関係なく同じ共通のエクスペリエンスが提供されます。 
 
-- デバイスを登録して管理する
-- デバイスの状態の確認
-- 組織に必要な推奨アプリをダウンロードする
-- デバイスの名前の変更
-- デバイスの PIN またはパスワードをリセットする
-- IT 部門に連絡し、サポートを求める
-
-次のリンクで、ポータル サイトとポータル サイト Web サイトで可能な操作を比較できます。
+デバイスのプラットフォームに固有のポータル サイトに関する登録手順以降のガイダンスについては、以下のリンクをご覧ください。  
 
 - [Android デバイスを使用する](using-your-android-device-with-intune.md)
 - [iOS デバイスを使用する](using-your-ios-device-with-intune.md)
