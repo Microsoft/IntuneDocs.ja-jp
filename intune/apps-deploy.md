@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bc31c793722f7073281c82da1fe4389fc214457b
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.openlocfilehash: 9258bf1847e83087404967c0ded50481da3a8dff
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734274"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290742"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Microsoft Intune を使用してアプリをグループに割り当てる
 
@@ -51,7 +51,7 @@ ms.locfileid: "53734274"
 >
 > Intune に登録されていないデバイスでアプリの更新プログラムを受け取るには、デバイスのユーザーは、組織の Intune ポータル サイトに移動し、アプリの更新プログラムを手動でインストールする必要があります。
 
-## <a name="to-assign-an-app"></a>アプリを割り当てるには
+## <a name="assign-an-app"></a>アプリの割り当て
 
 1. [Azure ポータル](https://portal.azure.com)にサインインします。
 2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
@@ -62,7 +62,7 @@ ms.locfileid: "53734274"
 7. **[グループの追加]** を選んで、アプリに関連する **[グループの追加]** ウィンドウを開きます。
 8. 特定のアプリについて、**[割り当ての種類]** を選びます。
    - **[登録済みデバイスで使用可能]**:ポータル サイト アプリまたは Web サイトからアプリをインストールできるユーザーのグループにアプリを割り当てます。
-   - **[登録の有無にかかわらず使用可能]**:このアプリを、デバイスが Intune に登録されていないユーザーのグループに割り当てます。 マネージド Google Play のアプリではこのオプションはサポートされません。 ユーザーに Intune ライセンスを割り当てる必要があります ([Intune のライセンス](licenses.md)を参照)。
+   - **[登録の有無にかかわらず使用可能]**:このアプリを、デバイスが Intune に登録されていないユーザーのグループに割り当てます。 ユーザーに Intune ライセンスを割り当てる必要があります ([Intune のライセンス](licenses.md)を参照)。
    - **[必須]**:アプリは選択したグループのデバイスにインストールされます。 一部のプラットフォームでは、アプリのインストールが開始される前に、エンド ユーザーが確認するための追加のプロンプトが表示されることがあります。
    - **[アンインストール]**:同じデプロイを使って、[登録済みデバイスで使用可能] または [必須] 割り当て経由で、Intune によりデバイスにアプリケーションが以前にインストールされていた場合、アプリは選択したグループのデバイスからアンインストールされます。 デプロイ後に Web リンクを削除することはできません。
 
@@ -122,6 +122,9 @@ ms.locfileid: "53734274"
 > [!NOTE]
 > 管理対象の iOS ストア アプリの場合のみ、これらのアプリを Microsoft Intune に追加し、**必須**として割り当てるとき、**必須**インテントと**利用可能**インテントの両方で自動的に作成されます。<br><br>
 > 必要なインテントで対象となる iOS ストア アプリ (iOS VPP アプリではなく) は、デバイスのチェックイン時にデバイスに適用され、ポータル サイト アプリにも表示されます。
+
+## <a name="android-enterprise-app-we-app-deployment"></a>Android エンタープライズ APP-WE アプリの展開
+登録のないアプリ保護ポリシー (APP-WE) の展開シナリオでの Android デバイスでは、managed Google Play を使用してストア アプリと LOB アプリをユーザーに展開できるようになりました。 具体的には、不明なソースからのインストールを許可することによってデバイスのセキュリティ状態を損なう必要がないアプリ カタログとインストール エクスペリエンスをエンド ユーザーに提供できます。 さらに、この展開シナリオでは、向上したエンド ユーザー エクスペリエンスが提供されます。 アプリを割り当てる手順については、[アプリの割り当て](apps-deploy.md#assign-an-app)に関するページを参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

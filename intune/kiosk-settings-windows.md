@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 61cb1a3c9de10020381d62a2a7795d5ff728db22
-ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
+ms.openlocfilehash: 31cfa617e0ca5d8d0848d1ecb781fda701589ccd
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 01/29/2019
-ms.locfileid: "55199423"
+ms.locfileid: "55229952"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Intune で Windows 10 以降のデバイスをキオスクとして実行するための設定
 
@@ -28,7 +28,7 @@ Windows 10 以降のデバイスでは、シングル アプリ キオスク モ
 
 Intune 管理者は、デバイスに対してこれらの設定を作成し、割り当てることができます。
 
-Intune での Windows のキオスク機能について詳しくは、[キオスク設定の構成](kiosk-settings.md)に関するページをご覧ください。
+Intune での Windows キオスク機能の詳細については、[キオスク設定の構成](kiosk-settings.md)に関するページを参照してください。
 
 ## <a name="before-you-begin"></a>始める前に
 
@@ -101,7 +101,7 @@ Intune での Windows のキオスク機能について詳しくは、[キオス
 
     - **[アプリケーション名]**:必須。 アプリケーションの名前を入力します。
     - **[ローカル パス]**:必須。 `C:\Program Files (x86)\Microsoft VS Code\Code.exe` や `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe` などの、実行可能ファイルのパスを入力します。
-    - **[アプリケーション ユーザー モデル ID (AUMID)]**:Win32 アプリのアプリケーション ユーザー モデル ID (AUMID) を入力します。 この設定により、デスクトップ上のタイルのスタート画面のレイアウトが決まります。 この ID を取得する場合は、「[Find the Application User Model ID of an installed app](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps)」 (インストール済みアプリのアプリケーション ユーザー モデル ID を見つける) を参照してください。
+    - **[アプリケーション ユーザー モデル ID (AUMID)]**:Win32 アプリのアプリケーション ユーザー モデル ID (AUMID) を入力します。 この設定により、デスクトップ上のタイルのスタート画面のレイアウトが決まります。 この ID を取得するには、「[Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps)」を参照してください。
     - **[タイル サイズ]**:必須。 小、中、全体、大の、アプリ タイルのサイズを選択します。
   
   - **[AUMID による追加]**:このオプションを使用して、メモ帳や電卓などの受信トレイ Windows アプリを追加します。 次のプロパティを入力します。 

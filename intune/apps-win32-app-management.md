@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,30 +16,30 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cb52a9755dffd20e6d3d66419855cc4ee7fca293
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: ba77c14e470ed75a87f44adcaf0ba9b98cd06438
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55068324"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290759"
 ---
-# <a name="intune-standalone---win32-app-management-public-preview"></a>Intune スタンドアロン - Win32 アプリの管理 (パブリック プレビュー)
+# <a name="intune-standalone---win32-app-management"></a>Intune スタンドアロン - Win32 アプリ管理
 
 Intune スタンドアロンでは、Win32 アプリの管理機能が向上します。 クラウドに接続された顧客が Win32 アプリの管理用に Configuration Manager を使用することはできますが、Intune 限定の顧客の方が、Win32 基幹業務 (LOB) アプリに対してより優れた管理機能を利用できます。 このトピックでは、Win32 アプリを管理する Intune の機能の概要と、トラブルシューティング情報について説明します。
 
-## <a name="prerequisites-for-public-preview"></a>パブリック プレビューの前提条件
+## <a name="prerequisites"></a>必要条件
 
 - Windows 10 バージョン 1607 以降 (Enterprise、Pro、Education バージョン)
 - Windows 10 クライアントは次の状態である必要があります 
     - Azure Active Directory (AAD) またはハイブリッド Azure Active Directory に参加している
     - Intune に登録されている (MDM 管理対象)
-- パブリック プレビューでは、Windows アプリケーションのサイズはアプリごとに 8 GB に制限されています 
+- Windows アプリケーションのサイズはアプリごとに 8 GB に制限されています
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>Win32 アプリ コンテンツのアップロードを準備する
 
-[Microsoft Intune Win32 アプリのアップロード準備ツール](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool)を使用して、Win32 アプリを事前処理します。 パッケージ化ツールは、アプリケーション インストール ファイルを *.intunewin* 形式に変換します。 また、パッケージ化ツールは、Intune でアプリケーションのインストール状態を判断するのに必要な属性の一部を検出します。 アプリのインストーラー フォルダーでこのツールを使用した後、Intune コンソールで Win32 アプリを作成できます。
+[Microsoft Win32 コンテンツ準備ツール](https://go.microsoft.com/fwlink/?linkid=2065730)を使用して、Win32 アプリを事前処理します。 このツールは、アプリケーション インストール ファイルを *.intunewin* 形式に変換します。 また、このツールは、Intune でアプリケーションのインストール状態を判断するのに必要な属性の一部を検出します。 アプリのインストーラー フォルダーでこのツールを使用した後、Intune コンソールで Win32 アプリを作成できます。
 
-[Microsoft Intune Win32 アプリのアップロード準備ツール](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool)は GitHub からダウンロードできます。
+[Microsoft Win32 コンテンツ準備ツール](https://go.microsoft.com/fwlink/?linkid=2065730)は GitHub からダウンロードできます。
 
 ### <a name="available-command-line-parameters"></a>使用可能なコマンド ライン パラメーター 
 
@@ -74,7 +74,7 @@ Intune スタンドアロンでは、Win32 アプリの管理機能が向上し�
 1.  [Azure ポータル](https://portal.azure.com/)にサインインします。
 2.  **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
 3.  **[Intune]** ウィンドウで、**[クライアント アプリ]** > **[アプリ]** > **[追加]** を選択します。
-4.  **[アプリの追加]** ウィンドウで、表示されたドロップダウン リストから **[Windows アプリ (Win32) - プレビュー]** を選択します。
+4.  **[アプリの追加]** ウィンドウで、表示されたドロップダウン リストから **[Windows アプリ (Win32)]** を選択します。
 
     ![[アプリの追加] ブレードのスクリーンショット - [アプリの種類] ドロップダウン ボックス](./media/apps-win32-app-01.png)
 
@@ -85,6 +85,10 @@ Intune スタンドアロンでは、Win32 アプリの管理機能が向上し�
     ![[アプリのパッケージ ファイル] ブレードのスクリーンショット](./media/apps-win32-app-02.png)
 
 2.  **[アプリのパッケージ ファイル]** ウィンドウで、参照ボタンを選択します。 次に、拡張子が *.intunewin* の Windows インストール ファイルを選択します。
+
+    > [!IMPORTANT]
+    > Microsoft Win32 コンテンツ準備ツールの最新バージョンを使用してください。 最新バージョンを使用しない場合、アプリが以前のバージョンの Microsoft Win32 コンテンツ準備ツールを使用してパッケージ化されたことを示す警告が表示されます。 
+
 3.  完了したら **[OK]** を選択します。
 
 ### <a name="step-3-configure-app-information"></a>手順 3: アプリ情報の構成
@@ -171,7 +175,7 @@ Intune スタンドアロンでは、Win32 アプリの管理機能が向上し�
             
                 ![[検出規則] ウィンドウ - レジストリ キーの存在を確認する場合のスクリーンショット](./media/apps-win32-app-05.png)    
             
-            2.  レジストリ値が存在するかどうかを確認します (**プレビューでは使用できません**)。
+            2.  レジストリ値が存在することを確認します。
         
                 ![[検出規則] ウィンドウ - レジストリ値の存在を確認する場合のスクリーンショット](./media/apps-win32-app-06.png)    
         

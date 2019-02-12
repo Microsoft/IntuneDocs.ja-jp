@@ -2,24 +2,24 @@
 title: Microsoft Intune で SCEP 証明書を使用する - Azure | Microsoft Docs
 description: SCEP 証明書を Microsoft Intune で使うには、オンプレミスの AD ドメインを構成し、証明機関を作成し、NDES サーバーをセットアップして、Intune Certificate Connector をインストールします。 その後、SCEP 証明書プロファイルを作成して、グループにこのプロファイルを割り当てます。 また、Intune コネクタ サービスのさまざまなイベント ID とその説明、および診断コードを確認します。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 1/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.reviewer: kmyrup
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ee61063a36a486a0840446f82834bc37cc96bfc0
-ms.sourcegitcommit: a843bd081e9331838ade05a3c05b02d60b6bec4c
+ms.openlocfilehash: f8b4d1aded0198dfc3dcccf6bdeda30bb54ee651
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53597377"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230156"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune で SCEP 証明書を構成して使用する
 
@@ -556,9 +556,10 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 | 0x00000409 | CRPSCEPSigningCert_NotFound  | 署名証明書を取得できませんでした。 Intune コネクタ サービスが正しく構成されていて動作していることを確認してください。 また、証明書ダウンロード イベントが成功したことを確認してください。 |
 | 0x00000410 | CRPSCEPDeserialize_Failed  | SCEP チャレンジ要求の逆シリアル化が失敗しました。 NDES と Intune コネクタが正しくセットアップされていることを確認してください。 |
 | 0x00000411 | CRPSCEPChallenge_Expired  | 証明書チャレンジ期限切れのため、要求は拒否されました。 クライアント デバイスは、管理サーバーから新しいチャレンジを取得した後で再試行できます。 |
-| 0x0FFFFFFFF | Unknown_Error  | サーバー側でエラーが発生したため、要求を完了できません。 再試行してください。 |
+| 0x0FFFFFFFF | Unknown_Error  | サーバー側でエラーが発生したため、要求を完了できません。 もう一度やり直してください。 |
 
 ## <a name="next-steps"></a>次の手順
 
 - [PKCS 証明書を使用する](certficates-pfx-configure.md)か、[Symantec PKI マネージャー Web サービスから PKCS 証明書を発行する](certificates-symantec-configure.md)
 - [サードパーティ CA を追加して Intune で SCEP を使用する](certificate-authority-add-scep-overview.md)
+- 詳細については、「[Microsoft Intune の SCEP 証明書プロファイルの展開のトラブルシューティング](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune)」のガイドを参照してください。

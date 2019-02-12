@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3c100ef3e598bf377f0464bfba161d4ad689ba98
-ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.openlocfilehash: bab1656ec141b26cc3e9cb4195da7c1c24e401a1
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626042"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230173"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows デバイスの登録をセットアップする
 
@@ -83,7 +83,13 @@ Contoso DNS の管理者は、次の CNAME を作成する必要があります�
 
 DNS レコードの変更が反映されるまでには、最大で 72 時間かかります。 DNS レコードの変更が反映されるまで、Intune で DNS の変更を確認することはできません。
 
-**手順 2:CNAME を確認する** (省略可能)<br>
+## <a name="additional-endpoints-are-supported-but-not-recommended"></a>追加のエンドポイントはサポートされてはいるが非推奨
+EnterpriseEnrollment-s.manage.microsoft.com は、登録用の優先 FQDN ですが、その他に、過去に顧客によって使用され、サポートされている 2 つのエンドポイントがあります。 EnterpriseEnrollment.manage.microsoft.com (-s がない) と manage.microsoft.com は、両方とも自動検出サーバーのターゲットとして使用できますが、ユーザーは確認メッセージで [OK] をタッチする必要があります。 EnterpriseEnrollment-s.manage.microsoft.com をポイントすると、ユーザーが追加の確認ステップを実行する必要がないため、これは推奨される構成です。
+
+## <a name="alternate-methods-of-redirection-are-not-supported"></a>リダイレクトの別の方法はサポートされていない
+CNAME の構成以外の方法を使用することは、サポートされていません。 たとえば、プロキシ サーバーを使用して enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc を enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc または manage.microsoft.com/EnrollmentServer/Discovery.svc のいずれかにリダイレクトすることは、サポートされていません。
+
+**手順 2: CNAME を確認する** (省略可能)<br>
 1. [Azure portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Windows の登録]** > **[CNAME 検証]** の順に選択します。
 2. **[ドメイン]** ボックスに、企業の Web サイトを入力し、**[テスト]** を選択します。
 

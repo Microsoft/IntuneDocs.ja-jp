@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: f2b75eb5a87dbfd7a17aee83f173d3d472920428
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203639"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230122"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように Windows 10 (以降) のデバイスを設定する
 
@@ -420,7 +420,7 @@ ms.locfileid: "54203639"
 
 - **[スタート メニューのレイアウト]**:デスクトップ デバイス上の [スタート] メニューをカスタマイズするために、アプリが一覧される順序などのご使用のカスタマイズを含む XML ファイルをアップロードすることができます。 入力された [スタート] メニューのレイアウトをユーザーが変更することはできません。
 - **[Pin websites to tiles in Start menu]\(Web サイトを [スタート] メニューにタイルとしてピン留めする\)**:デスクトップ デバイスで Windows の [スタート] メニューにリンクとして表示される Microsoft Edge から画像をインポートします。
-- **[Unpin apps from task bar]\(タスク バーからアプリをピン解除する\)**:**[ブロック]** を選択すると、ユーザーがアプリを [スタート] メニューからピン解除できなくなります。
+- **[Unpin apps from task bar]\(タスク バーからアプリをピン解除する\)**:**[ブロック]** を選択すると、ユーザーはタスク バーからアプリのピン留めを外すことができなくなります。
 - **[高速なユーザーの切り替え]**:**[ブロック]** を選択すると、ログオフすることなく、同時にログオンしているユーザー間を切り替えることを防止します。
 - **[Most used apps]\(最もよく使用されたアプリ\)**:**[ブロック]** を選択すると、最もよく使用されたアプリが [スタート] メニュー上に表示されなくなります。 [設定] アプリ内の対応するトグルも無効にされます。
 - **[最近追加したアプリ]**:**[ブロック]** を選択すると、最近追加したアプリが [スタート] メニュー上に表示されなくなります。 [設定] アプリ内の対応するトグルも無効にされます。
