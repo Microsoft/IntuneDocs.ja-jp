@@ -13,12 +13,13 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98b3180bc90c7b54213781ddf8b6668918b22dd3
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f8bdb74c19e6b996bafc9284bfedaf0608fdf8fb
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54205026"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834621"
 ---
 # <a name="intune-tenant-status-page"></a>Intune のテナントの状態ページ
 中央ハブとして [Tenant Status]\(テナントの状態\) ページを使用し、テナント、ライセンスの可用性と使用、コネクタの状態、および Intune サービスに関する重要な通信についての重要な詳細を把握します。  
