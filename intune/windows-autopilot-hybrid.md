@@ -1,7 +1,7 @@
 ---
-title: Hybrid Active Directory 参加済みデバイスの登録 - Windows Autopilot
+title: Hybrid Azure AD 参加済みデバイスの登録 - Windows Autopilot
 titleSuffix: ''
-description: Windows Autopilot を使用して Hybrid Active Directory 参加済みデバイスを Microsoft Intune に登録します。
+description: Windows Autopilot を使用して Hybrid Azure AD 参加済みデバイスを Microsoft Intune に登録します。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,20 +16,19 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 171e994be67a24e351b242967c8af934272da356
-ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
+ms.openlocfilehash: b952483fc0cb33b32769a4b83564618b082c4b87
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55105172"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303448"
 ---
-# <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Intune と Windows Autopilot を使用してハイブリッド Azure AD 参加済みデバイスをデプロイする (プレビュー)
-Intune と Windows Autopilot を使用して、ハイブリッド Azure Active Directory 参加済みデバイスを設定できます。 そのためには、以下の手順のようにします。
+# <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Intune と Windows Autopilot を使用して Hybrid Azure AD 参加済みデバイスをデプロイする (プレビュー)
+Intune と Windows Autopilot を使用して、Hybrid Azure Active Directory (Azure AD) 参加済みデバイスを設定できます。 そのためには、この記事の手順のようにします。
 
 ## <a name="prerequisites"></a>必要条件
 
-- [ハイブリッド Azure Active Directory 参加済みデバイス](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)を正常に構成します。
-    - [Get-MsolDevice コマンドレットを使用して登録を確認]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration)します。
+[Hybrid Azure AD 参加済みデバイス](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)を正しく構成します。 Get-MsolDevice コマンドレットを使用して、[デバイスの登録を確認]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration)します。
 
 登録するデバイスでは次のことも必要です。
 - [2018 年 10 月更新](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/)の Windows 10 を実行している。
@@ -39,105 +38,108 @@ Intune と Windows Autopilot を使用して、ハイブリッド Azure Active D
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Windows 10 の自動登録を設定する
 
-1. [Azure Portal](https://portal.azure.com) にサインインして、 **[Azure Active Directory]** を選択します。
+1. [Azure portal](https://portal.azure.com) にサインインし、左側のウィンドウで **[Azure Active Directory]** を選択します。
 
-   ![Azure Portal のスクリーンショット](./media/auto-enroll-azure-main.png)
+   ![Azure portal](./media/auto-enroll-azure-main.png)
 
-2. **[モビリティ (MDM と MAM)]** を選択します。
+1. **[モビリティ (MDM と MAM)]** を選択します。
 
-   ![Azure Portal のスクリーンショット](./media/auto-enroll-mdm.png)
+   ![[Azure Active Directory] ウィンドウ](./media/auto-enroll-mdm.png)
 
-3. **Microsoft Intune** を選択します。
+1. **Microsoft Intune** を選択します。
 
-   ![Azure Portal のスクリーンショット](./media/auto-enroll-intune.png)
+   ![[モビリティ (MDM および MAM)] ウィンドウ](./media/auto-enroll-intune.png)
 
-4. Intune と Windows を使用して Azure Active Directory 参加済みデバイスをデプロイしているユーザーが、**MDM ユーザー スコープ**に含まれるグループのメンバーであることを確認します。
+1. Intune と Windows を使用して Azure AD 参加済みデバイスをデプロイするユーザーが、**MDM ユーザー スコープ**に含まれるグループのメンバーであることを確認します。
 
-   ![Azure Portal のスクリーンショット](./media/auto-enroll-scope.png)
+   ![[モビリティ (MDM および MAM)] の [構成] ウィンドウ](./media/auto-enroll-scope.png)
 
-5. 次の URL の既定値を使用します。
-    - **MDM 使用条件 URL**
-    - **MDM 探索 URL**
-    - **MDM 準拠 URL**
-6. **[保存]** を選びます。
+1. **[MDM 利用規約 URL]**、**[MDM 探索 URL]**、**[MDM 準拠 URL]** の各ボックスには既定値を使用して、**[保存]** を選択します。
 
 ## <a name="increase-the-computer-account-limit-in-the-organizational-unit"></a>組織単位でコンピューター アカウントの上限を増やす
 
-Active Directory の Intune コネクタでは、オンプレミスの Active directory ドメインに Autopilot 登録コンピューターが作成されます。 Intune コネクタをホストするコンピューターには、ドメイン内にコンピューター オブジェクトを作成する権限が必要です。 
+Active Directory 用の Intune コネクタでは、オンプレミスの Active directory ドメインに Autopilot 登録済みコンピューターが作成されます。 Intune コネクタをホストするコンピューターには、ドメイン内にコンピューター オブジェクトを作成する権限が必要です。 
 
 一部のドメインでは、コンピューターにはコンピューターを作成する権限が付与されません。 また、ドメインには組み込みの制限 (既定値は 10) があり、コンピューター オブジェクトの作成権限を委任されていないすべてのユーザーとコンピューターに適用されます。 そのため、Intune コネクタをホストし、Hybrid Azure AD 参加済みデバイスを作成する組織単位のコンピューターに、この権限を委任する必要があります。
 
-コンピューター作成権限を付与する組織単位は、次のどちらかと一致している必要があります。
-- ドメイン参加プロファイルで入力された組織単位
-- または、プロファイルが選択されていない場合は、お使いのドメインに対するコンピューターのドメイン名。
+コンピューター作成権限を付与される組織単位は、次のどちらかと一致している必要があります。
+- ドメイン参加プロファイルで入力された組織単位。
+- プロファイルが選択されていない場合は、お使いのドメインに対するコンピューターのドメイン名。
 
 1. **[Active Directory ユーザーとコンピューター]** (DSA.msc) を開きます。
 
-2. ハイブリッド Azure AD 参加済みコンピューターの作成に使用する組織単位を右クリックして、**[制御の委任]** を選択します。
+1. Hybrid Azure AD 参加済みコンピューターの作成に使用する組織単位を右クリックして、**[制御の委任]** を選択します。
 
-    ![制御の委任のスクリーンショット](media/windows-autopilot-hybrid/delegate-control.png)
+    ![[制御の委任] コマンド](media/windows-autopilot-hybrid/delegate-control.png)
 
-3. **制御の委任**ウィザードで、**[次へ]** > **[追加]** > **[オブジェクトの種類]** を選択します。
+1. **制御の委任**ウィザードで、**[次へ]** > **[追加]** > **[オブジェクトの種類]** を選択します。
 
-4. **[オブジェクトの種類]** ダイアログ ボックスで、**[コンピューター]** をオンにして、**[OK]** を選択します。
+1. **[オブジェクトの種類]** ウィンドウで、**[コンピューター]** チェック ボックスをオンにして、**[OK]** を選択します。
 
-    ![制御の委任のスクリーンショット](media/windows-autopilot-hybrid/object-types-computers.png)
+    ![[オブジェクトの種類] ウィンドウ](media/windows-autopilot-hybrid/object-types-computers.png)
 
-5. **[ユーザー、コンピューター、またはグループの選択]** ダイアログ ボックスの **[選択するオブジェクト名を入力してください]** ボックスに、コネクタをインストールするコンピューターの名前を入力します。
+1. **[ユーザー、コンピューター、またはグループの選択]** ウィンドウの **[選択するオブジェクト名を入力してください]** ボックスに、コネクタをインストールするコンピューターの名前を入力します。
 
-    ![制御の委任のスクリーンショット](media/windows-autopilot-hybrid/enter-object-names.png)
+    ![[ユーザー、コンピューター、またはグループの選択] ウィンドウ](media/windows-autopilot-hybrid/enter-object-names.png)
 
-6. **[名前の確認]** を選択して入力を検証し、**[OK]** > **[次へ]** を選択します。
+1. **[名前の確認]** を選択して入力を検証し、**[OK]** を選択してから、**[次へ]** を選択します。
 
-7. **[委任するカスタム タスクを作成する]** > **[次へ]** を選択します。
+1. **[委任するカスタム タスクを作成する]** > **[次へ]** を選択します。
 
-8. **[フォルダー内の次のオブジェクトのみ]** を選択し、次のオプションをオンにします。
-    - **コンピューター オブジェクト**
-    - **選択されたオブジェクトをこのフォルダーに作成する**
-    - **選択されたオブジェクトをこのフォルダーから削除する**
+1. **[フォルダー内の次のオブジェクトのみ]** チェック ボックスをオンにし、**[コンピューター オブジェクト]**、**[選択されたオブジェクトをこのフォルダーに作成する]**、および **[選択されたオブジェクトをこのフォルダーから削除する]** チェック ボックスをオンにします。
 
-    ![制御の委任のスクリーンショット](media/windows-autopilot-hybrid/only-following-objects.png)
+    ![[Active Directory オブジェクトの種類] ウィンドウ](media/windows-autopilot-hybrid/only-following-objects.png)
     
-9. **[次へ]** を選択します。
+1. **[次へ]** を選択します。
 
-10. **[アクセス許可]** で **[フル コントロール]** をオンにし (他のすべてのオプションがオンになります)、**[次へ]** > **[完了]** を選択します。
+1. **[アクセス許可]** で、**[フル コントロール]** チェック ボックスをオンにします。  
+    この操作で、他のすべてのオプションが選択されます。
 
-    ![制御の委任のスクリーンショット](media/windows-autopilot-hybrid/full-control.png)
+    ![[アクセス許可] ウィンドウ](media/windows-autopilot-hybrid/full-control.png)
+
+1. **[次へ]** を選択し、**[完了]** を選択します。
 
 ## <a name="install-the-intune-connector"></a>Intune コネクタをインストールする
 
-Active Directory の Intune コネクタを、インターネットと Active Directory にアクセスできる Windows Server 2016 (以降) を実行しているコンピューターにインストールする必要があります。 スケールと可用性を高めたり、複数の Active Directory ドメインをサポートしたりするため、環境内に複数のコネクタをインストールできます。 他の Intune コネクタが実行されていないサーバーにインストールすることをお勧めします。
+Active Directory 用の Intune コネクタは、Windows Server 2016 以降を実行しているコンピューターにインストールする必要があります。 コンピューターは、インターネットとお使いの Active Directory にもアクセスできる必要があります。 スケールと可用性を高めたり、複数の Active Directory ドメインをサポートしたりするため、環境内に複数のコネクタをインストールできます。 コネクタは、他の Intune コネクタが実行されていないサーバーにインストールすることをお勧めします。
 
 1. 言語パックをインストールし、「[Intune コネクタ (プレビュー) の言語の要件](https://docs.microsoft.com/windows/deployment/windows-autopilot/intune-connector)」の説明に従って構成したことを確認します。
-2. [Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Windows 登録]** > **[Active Directory の Intune コネクタ (プレビュー)]** > **[コネクタの追加]** を選択します。 
+2. [Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Windows の登録]** > **[Active Directory の Intune コネクタ (プレビュー)]** > **[コネクタの追加]** を選択します。 
 3. 手順に従ってコネクタをダウンロードします。
-4. ダウンロードしたコネクタのセットアップ ファイルを開いて、コネクタをインストールします (ODJConnectorBootstrapper.exe)。
-5. セットアップの最後で、**[構成]** を選択します。
+4. ダウンロードしたコネクタのセットアップ ファイル *ODJConnectorBootstrapper.exe* を開いて、コネクタをインストールします。
+5. セットアップの最後に、**[構成]** を選択します。
 6. **[サインイン]** を選択します。
-7. ユーザーのグローバル管理者ロールまたは Intune 管理者ロールの資格情報を入力します。 ユーザー アカウントに Intune ライセンスが割り当てられている必要があります。
-8. **[デバイスの登録]** > **[Windows 登録]** > **[Active Directory の Intune コネクタ (プレビュー)]** に移動し、接続の状態が **[アクティブ]** であることを確認します。
+7. ユーザーのグローバル管理者ロールまたは Intune 管理者ロールの資格情報を入力します。  
+   ユーザー アカウントに Intune ライセンスが割り当てられている必要があります。
+8. **[デバイスの登録]** > **[Windows の登録]** > **[Active Directory の Intune コネクタ (プレビュー)]** に移動し、接続の状態が **[アクティブ]** であることを確認します。
 
- > [!NOTE]
- > コネクタに **[サインイン]** した後、それが [Intune](https://aka.ms/intuneportal) で表示されるまでに数分かかる場合があります。 Intune サービスと正常に通信できる場合にのみコネクタが表示されることに注意してください。
+> [!NOTE]
+> コネクタにサインインした後、それが [Intune](https://aka.ms/intuneportal) に表示されるまでに数分かかる場合があります。 Intune サービスと正常に通信できる場合にのみ表示されます。
 
 ### <a name="configure-web-proxy-settings"></a>Web プロキシ設定の構成
 
-ネットワーク環境に Web プロキシがある場合は、「[既存のオンプレミス プロキシ サーバーと連携する](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers)」の手順に従って、Active Directory の Intune コネクタが正しく動作するようにします。
+ネットワーク環境に Web プロキシがある場合は、「[既存のオンプレミス プロキシ サーバーと連携する](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers)」を参照して、Active Directory 用の Intune コネクタが正しく動作することを確認します。
 
 
 ## <a name="create-a-device-group"></a>デバイス グループを作成する
 1. [Intune](https://aka.ms/intuneportal) で、**[グループ]** > **[新しいグループ]** の順に選択します。
-2. **[グループ]** ブレードで、次の手順を実行します。
-    1. **[グループの種類]** で、**[セキュリティ]** を選択します。
-    2. **[グループ名]** と **[グループ テキスト]** を入力します。
-    3. **[メンバーシップの種類]** を選択します。
-3. 上の **[メンバーシップの種類]** で **[動的デバイス]** を選択した場合は、**[グループ]** ブレードで **[動的なデバイス メンバー]** を選択し、**[高度なルール]** ボックスに次のいずれかのコードを入力します。
-    - Autopilot デバイスをすべて含むグループを作成する場合は、「`(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`」と入力します
-    - 特定の注文 ID の Autopilot デバイスをすべて含むグループを作成する場合は、「`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `」と入力します
-    - 特定の注文書 ID の Autopilot デバイスをすべて含むグループを作成する場合は、「`(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`」と入力します
+
+1. **[グループ]** ウィンドウで、次のようにします。
+
+    」を参照します。 **[グループの種類]** で、**[セキュリティ]** を選択します。
+
+    b. **[グループ名]** と **[グループの説明]** を入力します。
+
+    c. **[メンバーシップの種類]** を選択します。
+
+1. メンバーシップの種類で **[動的デバイス]** を選択した場合は、**[グループ]** ウィンドウで **[動的なデバイス メンバー]** を選択し、**[高度なルール]** ボックスで次のいずれかのようにします。
+    - すべての Autopilot デバイスを含むグループを作成するには、「`(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`」と入力します。
+    - 特定の注文 ID のすべての Autopilot デバイスを含むグループを作成するには、「`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`」と入力します。
+    - 特定の注文書 ID のすべての Autopilot デバイスを含むグループを作成するには、「`(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`」と入力します。
     
-    **[高度なルール]** にコードを追加したら、**[保存]** を選択します。
-5. **[作成]** を選択します。  
+1. **[保存]** を選択します。
+
+1. **[作成]** を選択します。  
 
 ## <a name="register-your-autopilot-devices"></a>Autopilot デバイスを登録する
 
@@ -158,56 +160,56 @@ Active Directory の Intune コネクタを、インターネットと Active Di
 
 新しいデバイスを購入する場合、OEM によってはデバイスを登録できます。 詳しくは、[Windows Autopilot のページ](http://aka.ms/WindowsAutopilot)をご覧ください。
 
-Autopilot デバイスを登録すると (Intune に登録する前)、3 か所にデバイスが表示されます (名前はシリアル番号に設定されます)。
-- Azure portal の Intune の Autopilot デバイス ブレード (**[デバイスの登録]** > **[Windows の登録]** > **[デバイス]**)。
-- Azure portal の Intune の Azure AD デバイス ブレード (**[デバイス]** > **[Azure AD デバイス]**)。
-- Azure portal の Azure Active Directory の AAD のすべてのデバイス ブレード (**[デバイス]** > **[すべてのデバイス]**)。
+"*登録*" が済んだ Autopilot デバイスは、Intune に登録される前に、次の 3 つの場所に表示されます (名前はシリアル番号に設定されます)。
+- Azure portal の Intune の **[Autopilot デバイス]** ウィンドウ。 **[デバイスの登録]** > **[Windows の登録]** > **[デバイス]** を選択します。
+- Azure portal の Intune の **[Azure AD デバイス]** ウィンドウ。 **[デバイス]** > **[Azure AD デバイス]** を選択します。
+- Azure portal の Azure Active Directory の **[Azure AD All Devices]\(Azure AD のすべてのデバイス\)** ウィンドウ (**[デバイス]** > **[すべてのデバイス]**)。
 
-Autopilot デバイスの登録後は、4 つの場所に表示されます。
-- Azure portal の Intune の Autopilot デバイス ブレード (**[デバイスの登録]** > **[Windows の登録]** > **[デバイス]**)。
-- Azure portal の Intune の Azure AD デバイス ブレード (**[デバイス]** > **[Azure AD デバイス]**)。
-- Azure portal の Azure Active Directory の AAD のすべてのデバイス ブレード (**[デバイス]** > **[すべてのデバイス]**)。
-- Azure portal の Intune のすべてのデバイス ブレード (**[デバイス]** > **[すべてのデバイス]**)。
+Autopilot デバイスが "*登録*" された後は、次の 4 つの場所に表示されます。
+- Azure portal の Intune の **[Autopilot デバイス]** ウィンドウ。 **[デバイスの登録]** > **[Windows の登録]** > **[デバイス]** を選択します。
+- Azure portal の Intune の **[Azure AD デバイス]** ウィンドウ。 **[デバイス]** > **[Azure AD デバイス]** を選択します。
+- Azure portal の Azure Active Directory の **[Azure AD All Devices]\(Azure AD のすべてのデバイス\)** ウィンドウ。 **[デバイス]** > **[すべてのデバイス]** を選択します。
+- Azure portal の Intune の **[すべてのデバイス]** ウィンドウ。 **[デバイス]** > **[すべてのデバイス]** を選択します。
 
-Autopilot デバイスを登録すると、デバイス名はデバイスのホスト名に変わります。 既定では、"DESKTOP-" で始まります。
-
-
+登録後の Autopilot デバイスの名前は、デバイスのホスト名になります。 既定では、ホスト名は *DESKTOP-* で始まります。
 
 
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>AutoPilot Deployment プロファイルを作成して割り当てる
 Autopilot Deployment プロファイルは、Autopilot デバイスを構成する場合に使用されます。
 
 1. [Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Windows の登録]** > **[デプロイ プロファイル]** > **[プロファイルの作成]** の順に選択します。
-2. **名前**と、必要に応じて**説明**を入力します。
-3. **[配置モード]** では、**[ユーザー ドリブン]** を選択します。
-4. **[Azure AD への参加の種類]** ボックスで、**[ハイブリッド Azure AD 参加済み (プレビュー)]** を選択します。
-5. **[Out-of-box experience (OOBE)]** を選択し、必要に応じてオプションを構成して、**[保存]** を選択します。
-6. **[作成]** を選択して、プロファイルを作成します。 
-7. プロファイルのブレードで、**[割り当て]** を選択します。
-8. **[グループの選択]** を選択し、**[グループの選択]** ブレードでデバイス グループを選択して、**[選択]** を選択します。
+1. **[名前]** を入力し、必要に応じて **[説明]** を入力します。
+1. **[配置モード]** では、**[ユーザー ドリブン]** を選択します。
+1. **[Azure AD への参加の種類]** ボックスで、**[ハイブリッド Azure AD 参加済み (プレビュー)]** を選択します。
+1. **[Out-of-box experience (OOBE)]** を選択し、必要に応じてオプションを構成して、**[保存]** を選択します。
+1. **[作成]** を選択して、プロファイルを作成します。 
+1. プロファイル ウィンドウで、**[割り当て]** を選択します。
+1. **[グループの選択]** を選択します。
+1. **[グループの選択]** ウィンドウで、デバイス グループを選択して、**[選択]** をクリックします。
 
-デバイス プロファイルの状態が **[割り当てられていません]** から **[割り当て中]** を経て最後に **[割り当て済み]** に変わるまでに、約 15 分かかります。
+デバイス プロファイルの状態が *[未割り当て]* から *[割り当て中]* を経て最後に *[割り当て済み]* に変わるまでに、約 15 分かかります。
 
-## <a name="turn-on-the-enrollment-status-page-optional"></a>登録状態ページを有効にする (省略可能)
+## <a name="optional-turn-on-the-enrollment-status-page"></a>(省略可能) 登録状態ページを有効にする
 
-1. [Intune](https://aka.ms/intuneportal) で、**[デバイス登録]** > **[Windows 登録]** > **[Enrollment Status Page (Preview)]\(登録ステータス ページ (プレビュー)\)** の順に選択します。
-2. **[登録ステータス ページ]** ブレードで、**[既定]** > **[設定]** の順に選択します。
-3. **[Show app and profile installation progress]\(アプリとプロファイルのインストールの進行状況を表示する\)** で、**[はい]** を選択します。
-4. 必要に応じて、他のオプションを構成します。
-5. **[保存]** を選びます。
+1. [Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Windows の登録]** > **[登録ステータス ページ (プレビュー)]** の順に選択します。
+1. **[登録ステータス ページ]** ウィンドウで、**[既定]** > **[設定]** の順に選択します。
+1. **[アプリとプロファイルのインストール進行状況を表示する]** ボックスで、**[はい]** を選択します。
+1. 必要に応じて、他のオプションを構成します。
+1. **[保存]** を選択します。
 
 ## <a name="create-and-assign-a-domain-join-profile"></a>ドメイン参加プロファイルを作成して割り当てる
 
-1. [Intune](https://aka.ms/intuneportal) で、**[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
-2. 次のプロパティを入力します。
+1. [Intune](https://aka.ms/intuneportal) で、**[デバイスの構成]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
+1. 次のプロパティを入力します。
    - **[名前]**:新しいプロファイルのわかりやすい名前を入力します。
    - **説明**:プロファイルの説明を入力します。
    - **[プラットフォーム]**:**[Windows 10 以降]** を選択します。
    - **[プロファイルの種類]**:**[ドメイン参加 (プレビュー)]** を選択します。
-3. **[設定]** を選択し、**[コンピューター名のプレフィックス]**、**[ドメイン名]**、および **[組織単位]** (省略可能) を [DN 形式](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name)で指定します。 
-4. **[OK]** > **[作成]** の順に選択します。 プロファイルが作成され、リストに表示されます。
-5. プロファイルを割り当てるには、「[デバイス プロファイルを割り当てる](device-profile-assign.md#assign-a-device-profile)」の手順のようにします。 
+1. **[設定]** を選択し、**[コンピューター名のプレフィックス]**、**[ドメイン名]**、および [DN 形式](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name)の **[組織単位]** (省略可能) を指定します。 
+1. **[OK]** > **[作成]** を選択します。  
+    プロファイルが作成されて、一覧に表示されます。
+1. プロファイルを割り当てるには、「[デバイス プロファイルを割り当てる](device-profile-assign.md#assign-a-device-profile)」の手順のようにします。 
 
 ## <a name="next-steps"></a>次の手順
 
-Windows Autopilot を構成した後は、これらのデバイスを管理する方法を学習します。 詳細については、「[Microsoft Intune デバイスの管理とは](device-management.md)」をご覧ください。
+Windows Autopilot を構成した後は、これらのデバイスを管理する方法を学習します。 詳細については、「[Microsoft Intune デバイスの管理とは](device-management.md)」を参照してください。

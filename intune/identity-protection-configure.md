@@ -2,10 +2,10 @@
 title: Microsoft Intune を使用する Windows 10 デバイスに PIN を使ってサインインする - Azure | Microsoft Docs
 description: ユーザーが PIN、指紋などを使ってデバイスにサインインできるようにするには、Windows Hello for Business を使用します。 Intune for Windows 10 デバイスでこのような設定を含む ID 保護構成プロファイルを作成し、そのプロファイルをユーザー グループとデバイス グループに割り当てます。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 843806681fcee4ddec175207c2c49d6db95e0f0d
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: c6ca040c91437a35d12626f54b8385311d6631eb
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831388"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290657"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune がインストールされた Windows 10 デバイス上で Windows Hello for Business を使用する
 
@@ -60,7 +60,7 @@ Intune では、"構成プロファイル" を使用して、お客様の組織�
 
 4. 完了したら、**[OK]** > **[作成]** を選択して変更を保存します。
 
-プロファイルが作成され、プロファイル一覧に表示されます。 次に、このプロファイルをグループに[割り当て](device-profile-assign.md)ます。
+プロファイルが作成され、プロファイル一覧に表示されます。 次に、ご自分のニーズに合わせてこのプロファイルをユーザーとデバイス グループに[割り当てます](device-profile-assign.md)。
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 
