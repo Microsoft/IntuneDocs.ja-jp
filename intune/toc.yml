@@ -425,6 +425,8 @@ items:
       items:
       - name: ビジネス設定向けの Windows Update
         href: windows-update-for-business-configure.md
+      - name: Windows Update のコンプライアンス レポート
+        href: windows-update-compliance-reports.md
       - name: iOS 更新ポリシー
         href: software-updates-ios.md
   - name: アプリを管理する
@@ -737,6 +739,8 @@ items:
           href: shared-user-device-settings-windows.md
         - name: カスタム
           href: custom-settings-windows-10.md
+      - name: Windows Update の設定
+        href: windows-update-settings.md
     - name: Windows Holographic for Business
       items:
       - name: デバイスの制限
@@ -953,9 +957,9 @@ items:
       href: data-outside-protect.md
     - name: 管理されていないデバイスでのデータ漏洩の防止
       href: data-leak-prevention.md
-ms.openlocfilehash: 1c293290d9d2e2dc2ba44278f77edf9976cb2a7c
-ms.sourcegitcommit: 01d6832978cb7ca23049000950696b300a87abd4
+ms.openlocfilehash: ace0bec62318d846cdcc37330abb63b2a89fef14
+ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55761009"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55986911"
