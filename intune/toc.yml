@@ -65,6 +65,8 @@ items:
     href: common-scenarios.md
   - name: EMS での BYOD に関する技術の決定事項
     href: byod-technology-decisions.md
+  - name: アプリ保護ポリシーと作業プロファイル (Android)
+    href: android-deployment-scenarios-app-protection-work-profiles.md
   - name: オペレーティング システムのバージョンの管理
     href: manage-os-versions.md
   - name: Windows Holographic の管理
@@ -957,9 +959,9 @@ items:
       href: data-outside-protect.md
     - name: 管理されていないデバイスでのデータ漏洩の防止
       href: data-leak-prevention.md
-ms.openlocfilehash: ace0bec62318d846cdcc37330abb63b2a89fef14
-ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
+ms.openlocfilehash: 3b178658fad3e94d09dcd5979e155b8097753ffd
+ms.sourcegitcommit: 5708ec1d7ae50494be44ed5064f150b636188c84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55986911"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56240046"
