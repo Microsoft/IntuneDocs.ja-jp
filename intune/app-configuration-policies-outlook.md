@@ -32,7 +32,7 @@ iOS デバイスと Android デバイスで実行されている Microsoft Outlo
 
 Intune で構成ポリシーを追加するときに、iOS および Android 上で Microsoft Outlook を構成する設定を指定できます。 [構成設定] ウィンドウで、電子メール アカウントの構成を指定し、アプリ固有の設定を構成することができます。 さらに、このような設定を構成したり、名前と値のペアを使用したりすることができます。
 
-Microsoft Intune での iOS および Android デバイスの Outlook アカウントの設定情報と手順については、[iOS および Android アプリの構成設定に対する Outlook の展開](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)に関するページを参照してください。
+Microsoft Intune での iOS および Android デバイス用 Outlook アカウントの設定情報と手順については、[iOS および Android 用 Outlook のアプリ構成設定の展開](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)に関するページを参照してください。
 
 ## <a name="next-steps"></a>次の手順
 [Intune で電子メールを設定する](email-settings-configure.md)
