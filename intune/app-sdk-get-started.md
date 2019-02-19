@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ea7ee32794a120c12b0720be5fa11f3b97536ab
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: ac9c8ca0b04cbb6f7cf570134a6f4bdce7bf57ed
+ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848812"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325454"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune アプリ SDK の概要
 
@@ -41,7 +41,7 @@ Intune アプリ SDK は、iOS と Android で類似するシナリオをサポ�
 
 登録が完了し、Microsoft Intune チームによって確認されるまで、Intune 管理者はアプリ保護ポリシーをアプリのディープ リンクに適用できません。 アプリは、[Microsoft Intune パートナーのページ](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)にも追加されます。 ここには、Intune のアプリ保護ポリシーに対応していることを示すアプリのアイコンが表示されます。
 
-Microsoft 連絡先をまだ利用したことがない場合、登録プロセスを始めるには、[Microsoft Intune アプリ パートナー アンケート](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u)に記入します。
+Microsoft 連絡先をまだ利用したことがない場合、登録プロセスを始めるには、[Microsoft Intune アプリ パートナー アンケート](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR80SNPjnVA1KsGiZ89UxSdVUMEpZNUFEUzdENENOVEdRMjM5UEpWWjJFVi4u)に記入します。
 
 Microsoft が、アンケートに入力された電子メール アドレスを使用してご連絡し、登録プロセスを続行します。 また、何らかの問題が発生した場合の連絡にも、登録電子メール アドレスを使用します。
 

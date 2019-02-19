@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 951db22026725c2ec2e9c2be340bcccd44b2528b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 383370aaaca10cb44b614be6e250218106406cb4
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848102"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307755"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Intune で Exchange On-Premises および Exchange Online の条件付きアクセス コンプライアンスを監視する
 
@@ -34,13 +34,13 @@ Intune 1704 リリース以降では、管理者は、内部設置型 Exchange C
 
 ## <a name="to-monitor-conditional-access-compliance"></a>条件付きアクセス コンプライアンスを監視するには
 
-1.  [Azure Portal](https://portal.azure.com/) に移動し、Intune 資格情報でサインインします。
+1.  [Azure Portal](https://portal.azure.com/) に移動し、Intune の資格情報でサインインします。
 
 2.  正常にサインインすると、**Azure ダッシュボード**が開きます。
 
-3.  左側のメニューから **[すべてのサービス]** を選択し、テキスト ボックス フィルターに「 **Intune** 」と入力します。
+3.  左側のメニューから **[すべてのサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
 
-4.   **[Intune]** を選ぶと、 **Intune** ダッシュボード が表示されます。
+4.  **[Intune]** を選ぶと、**Intune ダッシュボード**が表示されます。
 
 5.  **[条件付きアクセス]** を選択し、**[概要]** を選択します。
 
