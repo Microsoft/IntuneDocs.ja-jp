@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 444fd63f8c582d35891dfa5aedb9eadd6626e541
-ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 573ca3aa10094e61165d297730d556e2ef559767
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "55303397"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302185"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Windows 10 デバイスの Intune で PowerShell スクリプトを管理する
 
@@ -30,9 +31,9 @@ Windows 10 デバイスで実行するために Intune に PowerShell スクリ�
 
 エンドユーザーのコンピューティングはデジタル変換を経ています。 従来の IT 担当者は、単一のデバイス プラットフォーム、企業所有のデバイス、オフィスで働くユーザー、および手動で事後対応型の多様な IT プロセスに重点を置きます。 最近の職場では、ユーザーと企業の両方が所有する多数のプラットフォームが使用され、ユーザーがどこからでも作業できるようにして、自動化された事前対応型の IT プロセスを提供しています。
 
-Microsoft Intune などの MDM サービスでは、Windows 10 を実行するモバイル デバイスとデスクトップ デバイスを管理できます。 組み込みの Windows 10 管理クライアントは、Intune と通信してエンタープライズ管理タスクを実行します。 高度なデバイスの構成、トラブルシューティング、Windows 10 MDM では現在使用できないレガシ Win32 アプリ管理など、必要になる場合があるタスクがいくつかあります。 このような機能のために、Windows 10 デバイスで Intune ソフトウェア クライアントを実行することができます。 「[Windows PC のコンピューターとしての管理とモバイル デバイスとしての管理の比較](pc-management-comparison.md)」は優れたリソースです。
+Microsoft Intune などの MDM サービスでは、Windows 10 を実行するモバイル デバイスとデスクトップ デバイスを管理できます。 組み込みの Windows 10 管理クライアントは、Intune と通信してエンタープライズ管理タスクを実行します。 高度なデバイス構成やトラブルシューティングなど、必要な場合があるタスクがいくつかあります。 Win32 アプリの管理の場合、ご自分の Windows 10 デバイス上の [Win32 アプリの管理](apps-win32-app-management.md)機能を使えます。
 
-Intune 管理拡張機能は、Windows 10 MDM の標準機能を補完するものです。 PowerShell スクリプトを作成して、Windows 10 デバイスで実行することができます。 たとえば、レガシ Win32 アプリをインストールする PowerShell スクリプトを作成し、スクリプトを Intune にアップロードし、スクリプトを Azure Active Directory (AD) グループに割り当てて、スクリプトを実行することができます。 スクリプトの実行状態を最初から完了まで監視できます。
+Intune 管理拡張機能は、Windows 10 MDM の標準機能を補完するものです。 PowerShell スクリプトを作成して、Windows 10 デバイスで実行することができます。 たとえば、高度なデバイス構成を行う PowerShell スクリプトを作成し、スクリプトを Intune にアップロードして、スクリプトを Azure Active Directory (AD) グループに割り当て、スクリプトを実行することができます。 スクリプトの実行状態を最初から完了まで監視できます。
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -46,7 +47,7 @@ Intune 管理拡張機能には次の前提条件があります。
 
 1. [Azure portal](https://portal.azure.com) で、**[すべてのサービス]** を選択し、**Intune** でフィルター処理して、**Microsoft Intune** を選びます。
 2. **[デバイス構成]** > **[PowerShell スクリプト]** > **[追加]** の順に選択します。
-3. PowerShell スクリプトの**名前**と**説明**を入力します。 **[スクリプトの場所]** で、PowerShell スクリプトを参照します。 スクリプトはサイズが 200 KB (ASCII) または 100 KB (Unicode) 未満である必要があります。
+3. PowerShell スクリプトの**名前**と**説明**を入力します。 **[スクリプトの場所]** で、PowerShell スクリプトを参照します。 スクリプトのサイズは 200 KB を超えないようにする必要があります。
 4. **[構成]** を選択します。 次に、デバイスでのスクリプトの実行にユーザーの資格情報を使用する (**[はい]**) を選択するか、またはシステム コンテキストを使用する (**[いいえ]**) を選択します。 既定で、スクリプトはシステム コンテキストで実行されます。 システム コンテキストでスクリプトを実行する必要がある場合以外は、**[はい]** を選択してください。 
   ![[PowerShell スクリプトの追加] ウィンドウ](./media/mgmt-extension-add-script.png)
 5. 信頼された発行者がスクリプトに署名する必要がある (**[はい]**) かどうかを選択します。 既定で、スクリプトに署名する要件はありません。 

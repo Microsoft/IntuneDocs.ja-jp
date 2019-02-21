@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b68206fd2170dd2bc156d844ae83caafaa08180
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: ba3e4ae88423183d5d0317dedb59715d2adb4e11
+ms.sourcegitcommit: 5708ec1d7ae50494be44ed5064f150b636188c84
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836576"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56240029"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Intune で managed Google Play アプリを Android エンタープライズ デバイスに追加する
 
@@ -41,8 +41,8 @@ Intune と Android 仕事用プロファイルが Azure Portal の **[デバイ�
 >[!NOTE]
 >Microsoft Intune を使うときは、Microsoft Edge または Google Chrome ブラウザーを使うことをお勧めします。
 
-## <a name="managed-google-play-app-type"></a>managed Google Play アプリの種類 
-アプリの種類を **[managed Google Play]** にすると、特定の [managed Google Play アプリ](https://play.google.com/work/search?q=microsoft&c=apps)を Intune に追加できます。 Intune の管理者は、Intune 内で managed Google Play アプリを参照、検索、承認、同期および割り当てできるようになりました。  managed Google Play コンソールに別途移動する必要はなく、また再認証する必要もありません。 
+## <a name="managed-google-play-app-type"></a>managed Google Play アプリの種類
+アプリの種類を **[managed Google Play]** にすると、特定の [managed Google Play アプリ](https://play.google.com/work/search?q=microsoft&c=apps)を Intune に追加できます。 Intune の管理者は、Intune 内で managed Google Play アプリを参照、検索、承認、同期および割り当てできるようになりました。  managed Google Play コンソールに別途移動する必要はなく、また再認証する必要もありません。
 
 > [!NOTE]
 > managed Google Play アプリと Intune を同期させる場合は、[「managed Google Play アプリを Intune と同期する」](apps-add-android-for-work.md#synchronize-a-managed-google-play-app-with-intune-alternative)を参照してください。
@@ -55,11 +55,12 @@ Intune と Android 仕事用プロファイルが Azure Portal の **[デバイ�
 3. **[Intune]** ウィンドウで、**[クライアント アプリ]** > **[アプリ]** の順に選択します。
 5. **[アプリ]** ウィンドウで **[追加]** を選択します。
 6. **[アプリケーションの種類]** ドロップダウン ボックスで、**[managed Google Play]** を選択します。
-7. **[Managed Google Play - Approve apps]\(managed Google Play - アプリの承認\)** を選択し、承認済みの managed Google Play アプリを検索します。
-8. 含める各アプリをクリックします。 次に、
-9. **[承認]** をクリックして managed Google Play アプリを承認し、**[承認]** をクリックしてアプリのアクセス許可を受け入れます。 
-10. **[OK]** をクリックしてアプリを追加します。
-11. **[アプリの追加]** ウィンドウの **[追加]** をクリックして managed Google Play サービスと同期します。
+7. **[Managed Google Play - Approve]\(managed Google Play - 承認\)** を選択して、managed Google Play カタログを開きます。
+8. 検索ボックスを使って、追加するアプリを検索します。
+9. **[承認]** をクリックして managed Google Play 内のアプリを承認し、**[承認]** をクリックしてアプリのアクセス許可を受け入れます。
+10. [承認の設定] ウィンドウで **[Keep approved when app requests new permissions]\(アプリが新しいアクセス許可を要求したときに承認済みのままにする\)** を選び、**[保存]** をクリックします。 このオプションを選択しない場合、アプリの開発者が更新プログラムを発行した場合に、新しいアクセス許可をすべて手動で承認することが必要になります。  これにより、アクセス許可が承認されるまでアプリのインストールと更新が停止されます。 このため、新しいアクセス許可を自動的に承認するオプションを選択することをお勧めします。 
+11. **[OK]** をクリックして、承認済みのアプリを追加します。
+12. **[アプリの追加]** ウィンドウの **[同期]** をクリックして、managed Google Play サービスと同期します。
 
 ## <a name="synchronize-a-managed-google-play-app-with-intune-alternative"></a>managed Google Play アプリを Intune と同期する (代替)
 Intune を使用して直接追加するのではなく、managed Google Play アプリを Intune と同期する場合は、次の手順を実行します。
@@ -75,8 +76,8 @@ Intune を使用して直接追加するのではなく、managed Google Play �
     Microsoft Excel アプリが選択されている例を次に示します。
 
     ![Managed Google Play ストアの [承認] ボタン](media/approve.png)
-    
-   多様な操作を実行するアクセス許可をアプリに付与するように求めるウィンドウが開きます。 
+
+   多様な操作を実行するアクセス許可をアプリに付与するように求めるウィンドウが開きます。
 
 4. **[承認]** を選択し、アプリのアクセス許可に同意して続行します。
 
@@ -86,7 +87,7 @@ Intune を使用して直接追加するのではなく、managed Google Play �
 
     ![新しいアプリのアクセス許可要求を処理するオプション](media/approve-app-settings.png)
 
-    アプリは承認され、IT 管理者コンソールに表示されます。 次に、[Intune と Android 仕事用プロファイルのアプリを同期する](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune)ことができます。 
+    アプリは承認され、IT 管理者コンソールに表示されます。 次に、[Intune と Android 仕事用プロファイルのアプリを同期する](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune)ことができます。
 
 ### <a name="sync-a-managed-google-play-app-with-intune"></a>Intune で Managed Google Play のアプリを同期する
 
@@ -121,7 +122,7 @@ Android Enterprise では、Intune にアプリを同期してユーザーに割
 3. **[更新]** タブを選択し、更新が必要なアプリがあるかどうかを確認します。  
     一覧にあるアプリでは新しいアクセス許可が必要で、それらが適用されるまで割り当てられません。
 
-あるいは、Google Play を構成することで、アプリごとにアクセス許可を自動的に再許可できます。 
+あるいは、Google Play を構成することで、アプリごとにアクセス許可を自動的に再許可できます。
 
 ## <a name="working-with-a-line-of-business-app-from-the-managed-google-play-store"></a>Managed Google Play ストアの基幹業務アプリを使用する
 
@@ -139,10 +140,9 @@ Android Enterprise では、Intune にアプリを同期してユーザーに割
 5. ストアの **[アプリ]** ノードに、公開したアプリが表示されることを確認します。  
     アプリは自動的に承認され、Intune と同期されます。
 
-## <a name="delete-managed-google-play-apps"></a>managed Google Play アプリを削除する 
+## <a name="delete-managed-google-play-apps"></a>managed Google Play アプリを削除する
 必要に応じて、Microsoft Intune から managed Google Play アプリを削除できます。 managed Google Play アプリを削除するには、Azure portal で Microsoft Intune を開き、**[クライアント アプリ]** > **[アプリ]** の順に選択します。 アプリの一覧から、managed Google Play アプリの右側にある省略記号 (...) を選択し、表示された一覧で **[削除]** を選択します。 アプリの一覧からマネージド Google Play アプリを削除すると、そのマネージド Google Play アプリは自動的に未承認になります。
 
 ## <a name="next-steps"></a>次の手順
 
-- [アプリをグループに割り当てる](apps-deploy.md) 
-
+- [アプリをグループに割り当てる](apps-deploy.md)

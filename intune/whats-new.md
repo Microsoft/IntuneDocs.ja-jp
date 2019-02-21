@@ -16,12 +16,13 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 996b4d85da41b480d73d7a79011e2bbd732ea334
-ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f6d346d7f060b5e997577b09c3ee8b006843ab7b
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690837"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302236"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -240,10 +241,15 @@ iOS デバイス用の構成プロファイルを作成するときに、ロッ�
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices----3201839-3201843---"></a>Android エンタープライズ デバイス所有者デバイスに対する新しい通知、ヒント、キーガードの設定 <!-- 3201839 3201843 -->
 この更新には、デバイス所有者として実行するときの Android エンタープライズ デバイスに関するいくつかの新機能が含まれます。 これらの機能を使用するには、**[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** に移動し、**[プラットフォーム]** で **[Android エンタープライズ]** を選択し、**[プロファイルの種類]** で **[デバイスの所有者のみ]** > **[デバイスの制限]** を選択します。
+
 新機能は次のとおりです。 
-- 着信通話、システム アラート、システム エラーなどのシステム通知の表示を無効にします
-- 初めて開いたアプリのチュートリアルとヒントのスキップを提案します
-- カメラ、通知、指紋によるロック解除など、キーガードの高度な設定を無効にします。これらの設定については、[Android エンタープライズ デバイスの制限の設定](device-restrictions-android-for-work.md)に関するページを参照してください。
+
+- 着信、システム アラート、システム エラーなどのシステム通知の表示を無効にします。
+- 初めて開いたアプリのチュートリアルとヒントの開始をスキップすることを提案します。
+- カメラ、通知、指紋によるロック解除など、高度なキーガード設定を無効にします。
+
+
+これらの設定については、[Android エンタープライズ デバイスの制限の設定](device-restrictions-android-for-work.md)に関するページを参照してください。
 
 #### <a name="android-enterprise-device-owner-devices-can-use-always-on-vpn-connections----3202194---"></a>Android エンタープライズ デバイス所有者デバイスで、常時 VPN 接続を使用できる <!-- 3202194 -->
 この更新では、Android エンタープライズ デバイス所有者デバイスで常時 VPN 接続を使用できます。 常時 VPN 接続では接続状態が常に維持されるか、ユーザーが自分のデバイスをロックしたとき、デバイスが再起動したとき、ワイヤレス ネットワークに変更があったとき、すぐに再接続されます。 接続を "ロックダウン" モードにすることもできます。このモードでは、VPN 接続が有効になるまですべてのネットワーク トラフィックがブロックされます。
@@ -282,7 +288,7 @@ iOS デバイス用の構成プロファイルを作成するときに、ロッ�
 ### <a name="role-based-access-control"></a>ロールベースのアクセス制御
 
 #### <a name="scope-tags-for-apps----1081941---"></a>アプリのスコープ タグ <!-- 1081941 -->
-ロールとアプリへのアクセスを制限するために、スコープのタグを作成できます。 アプリにスコープのタグを追加すると、ロールを持つユーザーのうち、そのスコープのタグも割り当てられているユーザーだけがアプリにアクセスできるようになります。 Apple Volume Purchase Program (VPP) を使って購入したアプリには、スコープのタグを割り当てることはできません。  詳細については、「[スコープのタグを使用してポリシーをフィルター処理する](scope-tags.md)」を参照してください。
+ロールとアプリへのアクセスを制限するために、スコープのタグを作成できます。 アプリにスコープのタグを追加すると、ロールを持つユーザーのうち、そのスコープのタグも割り当てられているユーザーだけがアプリにアクセスできるようになります。 現在、managed Google Play から Intune に追加されたアプリや、Apple Volume Purchase Program (VPP) を使って購入されたアプリにスコープ タグを割り当てることはできません (ただし、今後サポートされる予定です)。 詳細については、「[スコープのタグを使用してポリシーをフィルター処理する](scope-tags.md)」を参照してください。
 
 
 

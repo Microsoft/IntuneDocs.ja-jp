@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74445c678455dc881f79fed20ed68be6f090fe78
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 10b2ef5844c2d8889fd1d5c377fcefb8330be9e2
+ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834774"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325437"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>アプリ保護ポリシーを利用するために基幹業務アプリで準備を行う
 
@@ -87,7 +87,6 @@ SDK の詳細については、「[概要](app-sdk.md)」を参照してくだ�
 |[アプリで他のアプリからのデータの受信を許可する]|○|○|
 |他のアプリとの間で切り取り、コピー、貼り付けを制限する|○|○|
 |[アクセスには簡易暗証番号が必要]|○|○|
-|[組み込みアプリ PIN を Intune PIN で置き換える]|○||
 |[PIN をリセットするまでの試行数を指定する]|○|○|
 |PIN の代わりに指紋を要求する|○|○|
 |PIN の代わりに顔認識を許可する (iOS のみ)|○|○|
@@ -98,8 +97,8 @@ SDK の詳細については、「[概要](app-sdk.md)」を参照してくだ�
 |[オフラインの猶予期間を指定する]|○|○|
 |[画面キャプチャをブロック (Android のみ)]|○|○|
 |デバイスの登録なしで MAM をサポート|○|○|
-|完全なワイプ|○|○|
-|選択的なワイプ <br><br>**注:** iOS では、管理プロファイルを削除するとアプリも削除されます。|○||
+|アプリ データのフル ワイプ|○|○|
+|複数 ID のシナリオにおける職場および学校のデータの選択的ワイプ <br><br>**注:** iOS では、管理プロファイルを削除するとアプリも削除されます。|○||
 |[[名前を付けて保存] を禁止する]|○||
 |対象となるアプリケーションの構成|○||
 |[マルチ ID アプリのサポート]|○||

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 943b5dc8c0fe1c9b55b9c4971be2087353b60428
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55230122"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307891"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように Windows 10 (以降) のデバイスを設定する
 
@@ -70,6 +71,7 @@ ms.locfileid: "55230122"
 - **[Microsoft アカウント]**:ユーザーがデバイスに Microsoft アカウントを関連付けられるようにします。
 - **[Microsoft 以外のアカウント]**:Microsoft アカウントに関連付けられていないデバイスに、ユーザーが電子メール アカウントを追加できるようにします。
 - **[Microsoft アカウントの設定の同期]**:Microsoft アカウントに関連付けられたデバイスとアプリの設定をデバイス間で同期できるようにします。
+- **[Microsoft アカウント サインイン アシスタント]**:**[無効]** を選択すると、手動によるサービスの停止や開始など、Microsoft サインイン アシスタント サービス (wlidsvc) をエンド ユーザーが制御できなくなります。 **[未構成]** に設定した場合、wlidsvc NT サービスではオペレーティング システム (OS) の既定値が使われ、それによりエンド ユーザーがサービスを開始したり停止したりできるようになる場合があります。 このサービスは、ユーザーが各自の Microsoft アカウントにサインインできるように OS によって使用されます。
 
 ## <a name="cloud-printer"></a>クラウド プリンター
 
@@ -136,6 +138,10 @@ ms.locfileid: "55230122"
 - **[Ink Workspace]\(Ink ワークスペース\)**:ユーザーが Ink ワークスペースを使用するのを禁止します。 **[Not configured]\(未構成\)** の場合、Ink ワークスペースはオンになり、ユーザーはロック画面上でこれを使用できるようになります。
 - **[自動再展開]**:管理権限を持つユーザーが、デバイス ロック画面で **CTRL + Win + R** を使用してすべてのユーザー データとユーザー設定を削除できます。 このデバイスは自動的に再構成され、管理対象に再登録されます。
 - **[Require users to connect to network during device setup (Windows Insider only)]\(デバイスのセットアップ中、ユーザーにネットワークへの接続を求める (Windows Insider のみ)\)**:**[必須]** を選択すると、Windows 10 のセットアップ中、[ネットワーク] ページから先に進む前にデバイスをネットワークに接続されます。 この機能はプレビュー中ですが、Windows Insider ビルド 1809 以降ではこの設定を使用する必要があります。
+- **[DMA]**:**[ブロック]** では、ユーザーが Windows にサインインするまで、ホット プラグ可能なすべての PCI ダウンストリーム ポートへの直接メモリ アクセス (DMA) が禁止されます。 **[有効]** (既定値) にすると、ユーザーがサインインしていない場合でも、DMA へのアクセスが許可されます。
+
+  CSP:[DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
+
 - **[タスク マネージャーからのプロセスを終了する]**:この設定により、管理者以外がタスク マネージャーを使用してタスクを終了できるかどうかが決まります。 **[ブロック]** は、標準ユーザー (管理者以外) がタスク マネージャーを使用してデバイス上でプロセスまたはタスクを終了するのを防ぎます。 **[未構成]** (既定値) は、標準ユーザーがタスク マネージャーを使用してプロセスまたはタスクを終了するのを許可します。
 
 ## <a name="kiosk-preview---obsolete"></a>キオスク (プレビュー) - 廃止
@@ -192,7 +198,7 @@ ms.locfileid: "55230122"
 ## <a name="locked-screen-experience"></a>ロック画面
 
 - **[アクション センターの通知 (モバイルのみ)]**:デバイス ロック画面にアクション センターの通知を表示させます (Windows 10 Mobile のみ)。
-- **[ロック画面の画像の URL (デスクトップのみ)]**:Windows のロック画面の壁紙として使用する、JPEG 形式の画像への URL を入力します。 この設定はユーザーが変更できません。
+- **[ロック画面の画像の URL (デスクトップのみ)]**:Windows のロック画面の壁紙として使用する、JPEG 形式の画像への URL を入力します。 この設定では画像がロックされます。 後から画像を変更することはできません。
 - **[ユーザーが構成可能なスクリーン タイムアウト (モバイルのみ)]**:時間の構成をユーザーに許可します。 
 - **[ロック画面での Cortana (デスクトップのみ)]**:デバイスがロック画面になっているとき、Cortana の操作をユーザーに許可しません (Windows 10 デスクトップのみ)。
 - **[ロック画面でのトースト通知]**:デバイス ロック画面でアラート メッセージの表示をブロックします。
@@ -313,7 +319,6 @@ ms.locfileid: "55230122"
   - **[以前のパスワードを再利用できないようにする]**:デバイスで記憶される、以前に使用したパスワードの数を指定します。
   - **[デバイスがアイドル状態から戻るときにパスワードを必須にする (モバイルのみ)]**:ユーザーがデバイスのロックを解除するときにパスワードの入力を必須にします (Windows 10 Mobile のみ)。
   - **[単純なパスワード]**:簡易パスワードの使用を許可します (1111、1234 など)。 この設定は、Windows ピクチャ パスワードの使用も許可またはブロックします。
-- **[暗号化]**:対象デバイスの暗号化を有効にします。
 
 ## <a name="per-app-privacy-exceptions"></a>アプリごとのプライバシー例外
 

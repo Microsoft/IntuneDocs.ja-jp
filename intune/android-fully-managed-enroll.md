@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a730dbb702286f71534623b2c08da6b388c3e499
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 482ae185f221b3ff77534c1cfd8cccd8278965b7
+ms.sourcegitcommit: 84ab7a49aad853591a4ae362382f293e29b360df
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835845"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56156170"
 ---
 # <a name="set-up-intune-enrollment-of-android-fully-managed-devices-preview"></a>Android フル マネージド デバイスの Intune 登録を設定する (プレビュー)
 
@@ -35,7 +35,7 @@ Intune を利用すると、Android フル マネージド デバイスなど、
 
 ## <a name="technical-requirements"></a>技術要件
 
-Android フル マネージド デバイスを管理するには、Intune スタンドアロン テナントを用意する必要があります。 フル マネージド デバイスは、ハイブリッド (SCCM 接続) モードと旧 Silverlight 管理コンソールでは管理できません。
+Android フル マネージド デバイスを管理するには、Intune スタンドアロン テナントを用意する必要があります。 フル マネージド デバイスは、ハイブリッド (SCCM 接続) モードまたは旧 Silverlight 管理コンソールでは管理できません。
 
 デバイスを Android フル マネージド デバイスとして管理するには、以下の要件を満たす必要があります。
 
