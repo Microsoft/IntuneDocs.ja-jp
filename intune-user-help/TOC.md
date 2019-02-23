@@ -25,7 +25,6 @@
 
 ### [Android に関する一般的な問題の解決](troubleshoot-your-device-android.md)
 #### [デバイスのコンプライアンスを確認する](check-compliance-on-your-device-android.md)
-#### [バッテリー節約機能モードでの Outlook の電子メールの同期](power-saving-mode-android.md)
 #### [Samsung KNOX に関する一般的な問題の解決](samsung-knox-errors-android.md)
 #### [Outlook をインストールするデバイスを更新する](update-device-outlook-android.md)
 
