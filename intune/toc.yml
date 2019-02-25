@@ -197,17 +197,17 @@ items:
       items:
       - name: Android の登録を設定する
         href: android-enroll.md
-      - name: Intune を Android エンタープライズに接続する
+      - name: Intune を Android Enterprise に接続する
         href: connect-intune-android-enterprise.md
-      - name: Android の仕事用プロファイルの登録を設定する
+      - name: Android Enterprise 仕事用プロファイル登録
         href: android-work-profile-enroll.md
-      - name: Android の専用デバイスの登録を設定する
+      - name: Android Enterprise の専用デバイスの登録
         href: android-kiosk-enroll.md
-      - name: Android のフル マネージドの登録を設定する
+      - name: Android Enterprise フル マネージド登録
         href: android-fully-managed-enroll.md
-      - name: Android の専用デバイスまたはフル マネージド デバイスを登録する
+      - name: Android Enterprise の専用デバイスまたはフル マネージド デバイスを登録する
         href: android-dedicated-devices-fully-managed-enroll.md
-      - name: Android の仕事用プロファイルのデバイスを管理する
+      - name: Android Enterprise 仕事用プロファイル デバイスの管理
         href: android-enterprise-overview.md
       - name: Samsung Knox Mobile Enrollment
         href: android-samsung-knox-mobile-enroll.md
@@ -250,6 +250,8 @@ items:
       href: device-remote-lock.md
     - name: パスコードのリセット
       href: device-passcode-reset.md
+    - name: デバイス名の変更
+      href: device-rename.md
     - name: デバイスの再起動
       href: device-restart.md
     - name: 現在のユーザーのログアウト
@@ -578,6 +580,8 @@ items:
             href: app-protection-policies-exception.md
         - name: アプリ保護ポリシーを検証する
           href: app-protection-policies-validate.md
+        - name: アプリ保護ポリシーの配信
+          href: app-protection-policy-delivery.md
         - name: アプリ保護のユーザーの状態を監視する
           href: app-protection-policies-monitor.md
         - name: WIP アプリ保護ポリシーの準備をする
@@ -1001,9 +1005,9 @@ items:
       href: data-outside-protect.md
     - name: 管理されていないデバイスでのデータ漏洩の防止
       href: data-leak-prevention.md
-ms.openlocfilehash: d10d6c5a1c19430a0413e4f3149035a9e783dfc6
-ms.sourcegitcommit: f1681554ad842c22ad3f82f0e6d44d5966e4aa3d
+ms.openlocfilehash: 680ae510d7f3387b53ad6ae50c8e4d8ba194f8b9
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56458911"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742824"
