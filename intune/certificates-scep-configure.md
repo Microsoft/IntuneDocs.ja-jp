@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/29/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50235e4e21e738081dc1b41d8e6a8b6210430064
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: cdc0f02aa09edd05314d0d4a6a2abacc98c94bf2
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838136"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742739"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune で SCEP 証明書を構成して使用する
 
@@ -364,10 +364,12 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 6. 次の設定を入力します。
 
    - **[証明書の種類]**: ユーザー証明書の **[ユーザー]** を選択します。 キオスクなどのユーザーのないデバイスの場合は、**[デバイス]** を選択します。 **[デバイス]** 証明書は、次のプラットフォームで使用できます。  
+     - Android エンタープライズ
      - iOS
+     - macOS
      - Windows 8.1 以降
      - Windows 10 以降
-     - Android エンタープライズ
+
 
    - **[サブジェクト名の形式]**: Intune が証明書要求のサブジェクト名をどのように自動生成するかを選択します。 **[ユーザー]** 証明書の種類または **[デバイス]** 証明書の種類を選択すると、選択肢が変わります。 
 
