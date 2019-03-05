@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: acbfafcc26aa924a5a9d0a7712bb56119099af43
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f84eddaf9fac6dd678c7046664bf1feb9ea8cfc1
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848221"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335243"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>組織から提供された macOS デバイスを管理登録する
 
@@ -64,7 +64,7 @@ macOS デバイスを管理対象に登録するには、次の手順のよう�
     * お使いの Mac を設定します  
 ## <a name="get-the-company-portal-app"></a>Intune ポータル サイト アプリを取得する      
 デバイスに macOS 用の Intune ポータル サイト アプリをダウンロードします。 このアプリでは、デバイスの監視、同期、追加、管理からのデバイスの削除、アプリのインストールを行うことができます。 これらの手順では、ポータル サイトにデバイスを登録する方法についても説明しています。  
-1. ご使用の macOS デバイスで http://portal.manage.microsoft.com/EnrollmentRedirect.aspx に進みます。
+1. ご使用の macOS デバイスで https://portal.manage.microsoft.com/EnrollmentRedirect.aspx に進みます。
 2. 職場や学校のアカウントでポータル サイト Web サイトにサインインします。 
 3. **[Get the App]\(アプリの取得\)** をクリックして、macOS 用のポータル サイト インストーラーをダウンロードします。
 4. 求められたら .pkg ファイルを開き、インストール手順を完了します。

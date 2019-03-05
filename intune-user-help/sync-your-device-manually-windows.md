@@ -18,21 +18,18 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4666779620aa0404c12107a374280c403d66bec3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 30135c69b95ba9731682af52ad0da3bb9df193e9
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840214"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335073"
 ---
 # <a name="sync-your-windows-device-manually"></a>Windows デバイスを手動で同期する
 
 アプリのインストールの速度が理想より遅いときは、手動によるデバイスの同期を開始します。手動同期を行うと、最新の更新プログラムと通信のためにデバイスが Intune と強制的に接続されます。 デバイスの同期が完了した後、インストールの速度が向上する可能性があります。
 
-Intune では、ポータル サイト アプリから、デスクトップ タスク バーまたはスタート メニューから、あるいはデバイス設定アプリから手動同期できます。 
-
-Intune ポータル サイト アプリの機能は、Creators Update (1703) 以降を実行する Windows 10 デバイスでサポートされます。 
-* [Intune ポータル サイト アプリからの同期](#Sync-from-Company-Portal-app-for-Windows)  
+Intune では、ポータル サイト アプリから、デスクトップ タスク バーまたはスタート メニューから、あるいはデバイス設定アプリから手動同期できます。 Intune ポータル サイト アプリの機能は、Creators Update (1703) 以降を実行する Windows 10 デバイスでサポートされます。 
 
 次のようなすべての Windows デバイスをデバイス設定アプリから同期できます。
 
@@ -75,11 +72,11 @@ Microsoft HoloLens、Windows 10 Desktop、Windows 10 Mobile、または Windows 
 
 3. デスクトップ用 Windows 10 には複数のバージョンが存在します。 実際の画面を以下のスクリーンショットと比較し、使用する手順を決定してください。 
 
-    * 画面に **[職場または学校にアクセスする]** と表示される場合は、「[[職場または学校にアクセスする] の手順](#access-work-or-school)」に進みます。
+    * 画面に **[職場または学校にアクセスする]** と表示される場合は、「[[職場または学校にアクセスする] の手順](#access-work-or-school-steps)」に進みます。
 
     ![設定アプリの [職場または学校にアクセスする] オプション](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-    * 画面に **[職場のアクセス]** と表示される場合は、「[[職場のアクセス] の手順](#work-access)」に進みます。  
+    * 画面に **[職場のアクセス]** と表示される場合は、「[[職場のアクセス] の手順](#work-access-steps)」に進みます。  
 
     ![アカウントの種類として職場のアクセスを選択する](./media/win10pc-sync-3-work-access.png)
 

@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af53739574a5ae7087b59d72bacd866e132a19ac
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 9444a124b9b8a47633f544205940dadb3df0fd8f
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843223"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335005"
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Android デバイスは暗号化されるように見えるが、ポータル サイトではそのように認識されていない
 
@@ -66,13 +66,13 @@ ms.locfileid: "55843223"
 以下のデバイスのいずれかをお使いの場合は、デバイスを最新バージョンの Android に更新していない場合にこの問題が発生する可能性があります。 **[設定]** > **[更新]** と移動して、これらのデバイスの更新プログラムをインストールできます。 
 
 - [Huawei Honor 8](https://consumer.huawei.com/us/support/phones/honor-8/)
-- [Huawei P9](http://consumer.huawei.com/en/phones/p9/)
+- [Huawei P9](https://consumer.huawei.com/en/phones/p9/)
 
 ### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>更新によってこの問題を解決できない既知のデバイス
 
 以下のデバイスについてはこの問題を解決できません。 会社のリソースにアクセスするには別のデバイスを使う必要があります。 
 
 - [Huawei Mate 8](https://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
-- [OPPO デバイス](http://www.oppo.com/en/smartphones)
+- [OPPO デバイス](https://www.oppo.com/en/smartphones)
 - [Vivo デバイス](https://www.vivo.co.in)
 - [Xiaomi Mi スマートフォン](https://xiaomi-mi.com/mi-smartphones/)

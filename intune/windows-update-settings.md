@@ -5,8 +5,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/16/2019
-ms.topic: article
+ms.date: 03/04/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98c3425c58b6039c8a1c3b5750f9473c74a78634
-ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
+ms.openlocfilehash: 28e7109a82a5c083b4be26bc823bb0e06d97a7ca
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325471"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334988"
 ---
 # <a name="windows-update-settings-for-intune"></a>Intune での Windows Update の設定  
 
@@ -236,6 +236,6 @@ Microsoft Update のアプリの更新プログラムをスキャンするには
 
 配信の最適化は、ソフトウェアの更新プログラムで Windows 10 更新リングの一部として構成されなくなりました。 現在、配信の最適化はデバイスの構成で設定されます。 ただし、以前の構成は引き続きコンソールで使用できます。 これらの以前の構成は、*[未構成]* へと編集することで削除できますが、それ以外の変更を行うことはできません。 
 
-新しいポリシーと既存のポリシーの間の競合を避けるには、[既存の更新リングから配信の最適化へ移動する](https://docs.microsoft.com/en-us/intune/delivery-optimization-windows#move-from-existing-update-rings-to-delivery-optimization)方法に関するページを参照し、設定を配信の最適化プロファイルに移動します。
+新しいポリシーと既存のポリシーの間の競合を避けるには、[既存の更新リングから配信の最適化へ移動する](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization)方法に関するページを参照し、設定を配信の最適化プロファイルに移動します。
 
 

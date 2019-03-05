@@ -1,12 +1,12 @@
 ---
-title: Microsoft Intune - Azure でデバイスを構成するときに使用する Api のグラフ |Microsoft Docs
+title: グラフ Api を Microsoft Intune - Azure でデバイスを構成する |Microsoft Docs
 titleSuffix: ''
-description: 一致する Windows CSP を使用したすべての Graph Api の一覧を表示し、オフセット URI 以降 Windows 10 デバイスでは、Microsoft Intune でデバイスを構成するときに使用します。 共有 Pc、endpoint protection、Windows Defender advanced threat protection、identity protection、Windows 10 のチーム、キオスク、および Windows Update for Business の一致する API と CSP を参照してください。
+description: 一致する Windows CSP を使用したすべての Graph API エンティティの一覧を表示し、オフセット URI 以降 Windows 10 デバイスでは、Microsoft Intune でデバイスを構成するときに使用します。 共有 Pc、endpoint protection、Windows Defender advanced threat protection、identity protection、Windows 10 のチーム、キオスク、および Windows Update for Business の一致する API と CSP を参照してください。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/01/2019
+ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,30 +15,34 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ccc46914e53e72d941cc726b6a32fa421e23ca4
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: b2bed795125043eac07fce41a0f101a9b029bd06
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232133"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335311"
 ---
 # <a name="graph-apis-and-matching-windows-10-csps-used-in-intune"></a>Graph Api と Intune で使用される Windows 10 の Csp を照合
 
-Microsoft Intune を使用して、 [Graph API](https://docs.microsoft.com/graph/api/resources/intune-graph-overview)デバイスを構成する (**Intune** > **デバイス構成**) Windows 10 以降を実行しています。 Graph API では、構成サービス プロバイダー (Csp) を使用して、読み取り、設定、変更、またはデバイスの構成設定を削除します。
+Microsoft Intune を使用して、 [Graph API エンティティ](https://docs.microsoft.com/graph/api/resources/intune-graph-overview)(別の Docs サイトを開きます) デバイスを構成する (**Intune** > **デバイス構成**) Windows 10 を実行しています。およびそれ以降。 Graph API では、構成サービス プロバイダー (Csp) を使用して、読み取り、設定、変更、またはデバイスの構成設定を削除します。
 
 この一覧に適用されます。
 
 - Windows 10 以降
 
-この記事では、グラフのプロパティ、および一致する Windows 10 の Csp とオフセットを示しますの Uri。
+この記事では、Graph のエンティティと一致する Windows 10 Csp の一覧表示されます。 Uri をオフセットします。
+
+この情報は、さまざまなシナリオに適しています。 たとえば、Intune によって使用されるものを参照してください、設定して、OMA-URI のカスタム構成を参照してください。 
 
 ## <a name="windows-10-csps"></a>Windows 10 の Csp
 
-Windows 10 構成サービス プロバイダーの詳細については、次を参照してください。、[構成サービス プロバイダー リファレンス](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)します。
+Windows 10 構成サービス プロバイダーの詳細については、次を参照してください。、[構成サービス プロバイダー リファレンス](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)(別の Docs サイトを開きます)。
 
 ## <a name="graph-api-properties-to-csp-mapping"></a>Graph API のプロパティ CSP へのマッピングから
 
-Microsoft Intune で Windows 10 デバイスの構成に使用する Graph API のプロパティを次に示します。 Windows 10 に対応する CSP も示しています、URI のオフセットします。
+Microsoft Intune で Windows 10 デバイスの構成に使用する Graph API のエンティティの大半を以下に示します。 Windows 10 に対応する CSP も示しています、URI のオフセットします。
+
+次の Api を適用する Windows 10 のバージョンを表示するには、Windows 10 を使用して、[構成サービス プロバイダー リファレンス](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)(別の Docs サイトを開きます)。
 
 #### <a name="editionupgradeconfigurationlicense"></a>EditionUpgradeConfiguration.License 
 **CSP**: ./Device/Vendor/MSFT/WindowsLicensing  
@@ -237,8 +241,7 @@ Microsoft Intune で Windows 10 デバイスの構成に使用する Graph API �
 **URI のオフセット**:/Config/CredentialsUI/EnumerateAdministrators
 
 #### <a name="windows10endpointprotectionconfigurationdefenderadditionalguardedfolders"></a>Windows10EndpointProtectionConfiguration.DefenderAdditionalGuardedFolders 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI のオフセット**:/Config/Defender/ControlledFolderAccessProtectedFolders
+**CSP**: ./Device/Vendor/MSFT/Policy **URI をオフセット**:/Config/Defender/ControlledFolderAccessProtectedFolders
 
 #### <a name="windows10endpointprotectionconfigurationdefenderadvancedransomewareprotectiontype"></a>Windows10EndpointProtectionConfiguration.DefenderAdvancedRansomewareProtectionType 
 **CSP**: ./Device/Vendor/MSFT/Policy  
@@ -257,23 +260,21 @@ Microsoft Intune で Windows 10 デバイスの構成に使用する Graph API �
 **URI のオフセット**:/Config/Defender/AttackSurfaceReductionRules (CSP/構成には、グラフのプロパティが必要です: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType、windows10endpointprotection/Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType、windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType、windows10endpointprotection/Configuration.defenderOfficeMacroCodeAllowWin32ImportsType、windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType、windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType、windows10endpointprotection/Configuration.defenderEmailContentExecutionType、windows10endpointprotection/Configuration.defenderPreventCredentialStealingType、windows10endpointprotection/Configuration.defenderUntrustedUSBProcessType
 
 #### <a name="windows10endpointprotectionconfigurationdefenderexploitprotectionxml"></a>Windows10EndpointProtectionConfiguration.DefenderExploitProtectionXml 
-**CSP**: ./Device/Vendor/MSFT/Policy/ **URI をオフセット**:/Config/ExploitGuard/ExploitProtectionSettings
+**CSP**: ./Device/Vendor/MSFT/Policy **URI をオフセット**:/Config/ExploitGuard/ExploitProtectionSettings
 
 #### <a name="windows10endpointprotectionconfigurationdefenderexploitprotectionxmlfilename"></a>Windows10EndpointProtectionConfiguration.DefenderExploitProtectionXmlFileName 
 **CSP**: ./Device/Vendor/MSFT/Policy  
 **URI のオフセット**:/Config/ExploitGuard/ExploitProtectionSettings
 
 #### <a name="windows10endpointprotectionconfigurationdefenderguardedfoldersallowedapppaths"></a>Windows10EndpointProtectionConfiguration.DefenderGuardedFoldersAllowedAppPaths 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI のオフセット**:/Config/Defender/ControlledFolderAccessAllowedApplications
+**CSP**: ./Device/Vendor/MSFT/Policy **URI をオフセット**:/Config/Defender/ControlledFolderAccessAllowedApplications
 
 #### <a name="windows10endpointprotectionconfigurationdefenderguardmyfolderstype"></a>Windows10EndpointProtectionConfiguration.DefenderGuardMyFoldersType 
 **CSP**: ./Device/Vendor/MSFT/Policy  
 **URI のオフセット**:/Config/Defender/EnableControlledFolderAccess
 
 #### <a name="windows10endpointprotectionconfigurationdefendernetworkprotectiontype"></a>Windows10EndpointProtectionConfiguration.DefenderNetworkProtectionType 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI のオフセット**:/Config/Defender/EnableNetworkProtection
+**CSP**: ./Device/Vendor/MSFT/Policy **URI をオフセット**:/Config/Defender/EnableNetworkProtection
 
 #### <a name="windows10endpointprotectionconfigurationdefenderofficeappsexecutablecontentcreationorlaunch"></a>Windows10EndpointProtectionConfiguration.DefenderOfficeAppsExecutableContentCreationOrLaunch 
 **CSP**: ./Device/Vendor/MSFT/Policy  
@@ -340,8 +341,7 @@ Microsoft Intune で Windows 10 デバイスの構成に使用する Graph API �
 **URI のオフセット**:/Config/Defender/AttackSurfaceReductionRules (CSP/構成には、グラフのプロパティが必要です: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType、windows10endpointprotection/Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType、windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType、windows10endpointprotection/Configuration.defenderOfficeMacroCodeAllowWin32ImportsType、windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType、windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType、windows10endpointprotection/Configuration.defenderEmailContentExecutionType、windows10endpointprotection/Configuration.defenderPreventCredentialStealingType、windows10endpointprotection/Configuration.defenderUntrustedUSBProcessType
 
 #### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterblockexploitprotectionoverride"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterBlockExploitProtectionOverride 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI のオフセット**:/Config/WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride
+**CSP**: ./Device/Vendor/MSFT/Policy **URI をオフセット**:/Config/WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride
 
 #### <a name="windows10endpointprotectionconfigurationdefendersecuritycenterdisableaccountui"></a>Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableAccountUI 
 **CSP**: ./Device/Vendor/MSFT/Policy  
@@ -416,19 +416,18 @@ Microsoft Intune で Windows 10 デバイスの構成に使用する Graph API �
 **URI のオフセット**:/Config/Defender/AttackSurfaceReductionRules (CSP/構成には、グラフのプロパティが必要です: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType、windows10endpointprotection/Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType、windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType、windows10endpointprotection/Configuration.defenderOfficeMacroCodeAllowWin32ImportsType、windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType、windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType、windows10endpointprotection/Configuration.defenderEmailContentExecutionType、windows10endpointprotection/Configuration.defenderPreventCredentialStealingType、windows10endpointprotection/Configuration.defenderUntrustedUSBProcessType
 
 #### <a name="windows10endpointprotectionconfigurationdeviceguardenablesecurebootwithdma"></a>Windows10EndpointProtectionConfiguration.DeviceGuardEnableSecureBootWithDMA 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**: ./Device/Vendor/MSFT/Policy  
 **URI のオフセット**:/Config/DeviceGuard/RequirePlatformSecurityFeatures
 
 #### <a name="windows10endpointprotectionconfigurationdeviceguardenablevirtualizationbasedsecurity"></a>Windows10EndpointProtectionConfiguration.DeviceGuardEnableVirtualizationBasedSecurity 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI のオフセット**:/Config/DeviceGuard/EnableVirtualizationBasedSecurity
+**CSP**: ./Device/Vendor/MSFT/Policy **URI をオフセット**:/Config/DeviceGuard/EnableVirtualizationBasedSecurity
 
 #### <a name="windows10endpointprotectionconfigurationdeviceguardlaunchsystemguard"></a>Windows10EndpointProtectionConfiguration.DeviceGuardLaunchSystemGuard 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**: ./Device/Vendor/MSFT/Policy  
 **URI のオフセット**:/Config/DeviceGuard/ConfigureSystemGuardLaunch
 
 #### <a name="windows10endpointprotectionconfigurationdeviceguardlocalsystemauthoritycredentialguardsettings"></a>Windows10EndpointProtectionConfiguration.DeviceGuardLocalSystemAuthorityCredentialGuardSettings 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**: ./Device/Vendor/MSFT/Policy  
 **URI のオフセット**:/Config/DeviceGuard/LsaCfgFlags
 
 #### <a name="windows10endpointprotectionconfigurationdmaguarddeviceenumerationpolicy"></a>Windows10EndpointProtectionConfiguration.DmaGuardDeviceEnumerationPolicy 
@@ -868,12 +867,10 @@ Microsoft Intune で Windows 10 デバイスの構成に使用する Graph API �
 **URI のオフセット**:/Config/MSSecurityGuide/WDigestAuthentication
 
 #### <a name="windows10endpointprotectionconfigurationsmartscreenblockoverrideforfiles"></a>Windows10EndpointProtectionConfiguration.SmartScreenBlockOverrideForFiles 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI のオフセット**:/Config/DeviceGuard/RequirePlatformSecurityFeatures
+**CSP**: ./Device/Vendor/MSFT/Policy **URI をオフセット**:/Config/DeviceGuard/RequirePlatformSecurityFeatures
 
 #### <a name="windows10endpointprotectionconfigurationsmartscreenenableinshell"></a>Windows10EndpointProtectionConfiguration.SmartScreenEnableInShell 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
-**URI のオフセット**:/Config/SmartScreen/EnableSmartScreenInShell
+**CSP**: ./Device/Vendor/MSFT/Policy **URI をオフセット**:/Config/SmartScreen/EnableSmartScreenInShell
 
 #### <a name="windows10endpointprotectionconfigurationsolicitedremoteassistance"></a>windows10endpointprotectionconfiguration.solicitedRemoteAssistance 
 **CSP**: ./Device/Vendor/MSFT/Policy  
@@ -1030,6 +1027,9 @@ Microsoft Intune で Windows 10 デバイスの構成に使用する Graph API �
 #### <a name="windows10endpointprotectionconfigurationxboxserviceslivenetworkingservicestartupmode"></a>Windows10EndpointProtectionConfiguration.XboxServicesLiveNetworkingServiceStartupMode 
 **CSP**: ./Vendor/MSFT/Policy  
 **URI のオフセット**:/Config/SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode
+
+#### <a name="windows10enterprisemodernappmanagementconfigurationuninstallbuiltinapps"></a>Windows10EnterpriseModernAppManagementConfiguration.UninstallBuiltInApps
+**CSP**:該当なしの Graph API の呼び出しのみ**オフセット URI**:該当なしの Graph API の呼び出しのみ
 
 #### <a name="windows10generalconfigurationaccountsblockaddingnonmicrosoftaccountemail"></a>Windows10GeneralConfiguration.AccountsBlockAddingNonMicrosoftAccountEmail 
 **CSP**: ./Vendor/MSFT/Policy  
@@ -2924,9 +2924,17 @@ Microsoft Intune で Windows 10 デバイスの構成に使用する Graph API �
 **CSP**: ./Device/Vendor/MSFT/Policy  
 **URI のオフセット**:/Config/Update/PauseFeatureUpdatesStartTime
 
+#### <a name="windowsupdateforbusinessconfigurationfeatureupdatesrollbackstartdatetime"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesRollbackStartDateTime
+**CSP**:該当なし - Graph API のみ**URI をオフセット**:該当なし - Graph API のみ
+
 #### <a name="windowsupdateforbusinessconfigurationfeatureupdateswillberolledback"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesWillBeRolledBack 
-**CSP**: ./Device/Vendor/MSFT/Policy  
-**URI のオフセット**: ロールバック/FeatureUpdate
+**CSP**:該当なし - Graph API のみ**URI をオフセット**:該当なし - Graph API のみ
+
+#### <a name="windowsupdateforbusinessconfigurationfeatureupdatesrollbackwindowindays"></a>WindowsUpdateForBusinessConfiguration.FeatureUpdatesRollbackWindowInDays
+**CSP**:該当なし - Graph API のみ**URI をオフセット**:該当なし - Graph API のみ
+
+#### <a name="windowsupdateforbusinessconfigurationinstallationschedule"></a>WindowsUpdateForBusinessConfiguration.InstallationSchedule
+**CSP**: ./Device/Vendor/MSFT/Policy **URI をオフセット**:/Config/Update/ActiveHoursStart、/Config/Update/ActiveHoursEnd、/Config/Update/ScheduledInstallDay、/Config/Update/ScheduledInstallTime
 
 #### <a name="windowsupdateforbusinessconfigurationmicrosoftupdateserviceallowed"></a>WindowsUpdateForBusinessConfiguration.MicrosoftUpdateServiceAllowed 
 **CSP**: ./Device/Vendor/MSFT/Policy  
@@ -2948,9 +2956,11 @@ Microsoft Intune で Windows 10 デバイスの構成に使用する Graph API �
 **CSP**: ./Device/Vendor/MSFT/Policy  
 **URI のオフセット**:/Config/Update/PauseQualityUpdatesStartTime
 
+#### <a name="windowsupdateforbusinessconfigurationqualityupdatesrollbackstartdatetime"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesRollbackStartDateTime
+**CSP**:該当なし - Graph API のみ**URI をオフセット**:該当なし - Graph API のみ
+
 #### <a name="windowsupdateforbusinessconfigurationqualityupdateswillberolledback"></a>WindowsUpdateForBusinessConfiguration.QualityUpdatesWillBeRolledBack 
-**CSP**: ./Device/Vendor/MSFT/Policy  
-**URI のオフセット**: ロールバック/QualityUpdate
+**CSP**:該当なし - Graph API のみ**URI をオフセット**:該当なし - Graph API のみ
 
 #### <a name="windowsupdateforbusinessconfigurationscheduleimminentrestartwarninginminutes"></a>WindowsUpdateForBusinessConfiguration.ScheduleImminentRestartWarningInMinutes 
 **CSP**: ./Device/Vendor/MSFT/Policy  
@@ -2976,4 +2986,4 @@ Microsoft Intune で Windows 10 デバイスの構成に使用する Graph API �
 ## <a name="next-steps"></a>次の手順
 
 - [デバイスの構成の概要](device-profiles.md)
-- [構成サービス プロバイダー リファレンス](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)
+- [構成サービス プロバイダー リファレンス](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)(別の Docs サイトを開きます)

@@ -28,6 +28,6 @@
 > [!NOTE]
 > Intune は Windows Server オペレーティング システムを管理できません。 Home SKU では一部の Intune 機能がサポートされません。
 
-Enterprise Management + Security (EMS) を使用している場合は、[Azure Active Directory (Azure AD) を使用して Windows 10 デバイスを登録する](/intune/windows-enroll.md)こともできます。
+Enterprise Management + Security (EMS) を使用している場合は、[Azure Active Directory (Azure AD) を使用して Windows 10 デバイスを登録する](/intune/windows-enroll)こともできます。
 
 

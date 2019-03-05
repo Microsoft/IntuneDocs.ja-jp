@@ -6,8 +6,8 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/09/2019
-ms.topic: article
+ms.date: 02/26/2019
+ms.topic: overview
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1df3676b4259ac84cf1ae5f0ce76ee300aa92f85
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 2e7e27b4e8fe40dae16d8359575304718df8bf26
+ms.sourcegitcommit: 7d694e3cd01623513c2b163946e60a99ab9535d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839143"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56891642"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Intune が会社のためにできることとは。
 Microsoft Intune はクラウドベースのエンタープライズ モビリティ管理 (EMM) サービスであり、これでは、会社のデータを守りながら、社員に生産的に働いてもらうことができます。
