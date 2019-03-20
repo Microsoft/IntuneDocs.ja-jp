@@ -6,9 +6,10 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 09/25/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 5fa59501-5f33-46b7-a5f5-75eeae9f1209
 ms.reviewer: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 522e2e8b424c3c8865b29a5503c301b80b3c36ba
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 50c147e13a59df00ce9527a0843784d223afec20
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845409"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460718"
 ---
 # <a name="troubleshoot-conditional-access"></a>条件付きアクセスに関するトラブルシューティング
 
@@ -74,7 +75,7 @@ Intune と条件付きアクセスを使用して、Exchange Online、SharePoint
 - ターゲット グループと除外グループを確認します。 ユーザーが正しいターゲット グループにいない、または除外グループにいる場合、ユーザーはブロックされません。 ターゲット グループ内のユーザーのデバイスのみが対応しているかどうかチェックされます。
 - デバイスが検出されていることを確認します。 ユーザーが Exchange 2013 Server を使用しているにもかかわらず、Exchange Connector が Exchange 2010 CAS を指していませんか。 このケースでは、ユーザーがターゲット グループに存在する場合でも、既定の Exchange 規則が [許可] であれば、Intune は Exchange へのデバイスの接続を認識しません。
 - Exchange で次のようにデバイスの存在とアクセスの状態を確認します。
-  - メールボックスのすべてのモバイル デバイスの一覧を取得するには、PowerShell コマンドレット:"Get-ActiveSyncDeviceStatistics -mailbox mbx" を使用します。 デバイスが一覧に表示されない場合、デバイスは Exchange にアクセスしていません。
+  - PowerShell コマンドレット "Get-ActiveSyncDeviceStatistics -mailbox mbx" を使用してメールボックスのすべてのモバイル デバイスの一覧を取得します。 デバイスが一覧に表示されない場合、デバイスは Exchange にアクセスしていません。
   - デバイスが一覧に表示されている場合は、Get-CASmailbox -identity:’upn’ | fl コマンドレットを使用してアクセスの状態に関する詳細情報を取得し、その情報を Microsoft サポートに提供します。
 
 ## <a name="next-steps"></a>次の手順

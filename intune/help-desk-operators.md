@@ -6,22 +6,23 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/23/2018
-ms.topic: conceptual
+ms.date: 03/11/2019
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba74c93e2ef7dc469ebd7f5086659181b72a0981
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 135e93bf3cfb93b5299dfd005a3ca70bbba84d77
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230025"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57787136"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>トラブルシューティング ポータルを使用して社内のユーザーをサポートする
 
@@ -69,176 +70,180 @@ ms.locfileid: "57230025"
 | 4.   | ユーザー情報  | 一覧を使用して、ウィンドウで確認する詳細を選択します。 <br>以下を選択できます。 <ul><li>クライアント アプリ<li>Compliance ポリシー<li> 構成ポリシー<li>アプリ保護ポリシー <li>登録制限</ul>      |
 | 5.   | グループのメンバーシップ  | 選択したユーザーがメンバーになっている現在のグループが表示されます。       |
 
-## <a name="client-apps-reference"></a>クライアント アプリ リファレンス
+<!-- this section needs to be updated
 
-次を実行しているアプリ
-- Intune および Azure Active Directory (AD) によって管理されているデバイス 
-- Intune および Azure Active Directory (AD) によって管理されているユーザーが所有しているデバイス
+## Client apps reference
 
-### <a name="properties"></a>[プロパティ]
+The apps that are running devices
+- managed by Intune and Azure Active Directory (AD) 
+- owned by users managed by Intune and Azure Active Directory (AD).
 
-クライアント アプリのプロパティ。
+### Properties
 
-| プロパティ      | 説明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+The properties of client apps.
+
+| Property      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 名前          | アプリケーションの名前。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| OS            | デバイスにインストールされているオペレーティング システム。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Type          | アプリごとに割り当ての種類を選択できます。  <br> **[使用可能]** - ユーザーがポータル サイト アプリまたは Web サイトからアプリをインストールします。  <br> **[該当なし]** - アプリはポータル サイトにインストールまたは表示されません。 <br> **[アンインストール]** - アプリは選択したグループのデバイスからアンインストールされます。  <br> **[登録せずに使用可能]** - このアプリを、デバイスが Intune に登録されていないユーザーのグループに割り当てます。 |
-| ［更新日時］ | デバイスの種類の名前。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Name          | The name of the application.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| OS            | The operating system installed on the device.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Type          | You can choose an assignment type for each app.  <br> **Available** - Users install the app from the Company Portal app or website.  <br> **Not Applicable** - The app is not installed or shown in the Company Portal. <br> **Uninstall** - The app is uninstalled from devices in the selected groups.  <br> **Available with or without enrollment** - Assign this app to groups of users whose devices are not enrolled with Intune. |
+| Last Modified | The name of the type of device.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
-### <a name="devices"></a>[デバイス]
+### Devices
 
-Intune によって管理されているか、Intune または Azure AD で管理されているユーザーによって管理されているデバイス。
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| プロパティ           | 説明                                                                                                                         |
+| Property           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| デバイス名        | デバイスの種類の名前。                                                                                                     |
-| 管理者         | ポリシーが変更されたときのタイムスタンプ。                                                                                              |
-| Azure AD の結合の種類 | 各ユーザーのアプリ保護アプリの状態。 アプリの状態は、**[確認済み]** か **[未確認]** のはずです。 |
-| 所有権          | デバイスの所有権の種類 (**会社**、**個人**、または**不明**)。                                               |
-| Intune 準拠   | デバイスの種類の名前。                                                                                                     |
-| Azure AD 準拠 | 各ユーザーのアプリ保護アプリの状態。 アプリの状態は、**[確認済み]** か **[未確認]** のはずです。 |
-| アプリのインストール | アプリのインストールの失敗または成功が個別デバイスで発生したかどうか。 |
-| OS                 | デバイスにインストールされているオペレーティング システム。                                                                                       |
-| OS のバージョン         | デバイスのオペレーティング システムのバージョン番号。                                                                                  |
-| 最後のチェックイン      | デバイスの種類の名前。                                                                                                     |
+| Device name        | The name of the type of device.                                                                                                     |
+| Managed by         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| App install | Denotes whether an app install failure or success has occurred on the individual device. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last check-in      | The name of the type of device.                                                                                                     |
 
-### <a name="app-protection-status"></a>アプリの保護の状態
+### App protection status
 
-アプリ保護ポリシーは、Enterprise Mobility Solution (EMS) テクノロジと統合されたモバイル アプリで使用できます。 これらのポリシーにより、会社のデータがモバイル アプリ (Office モバイル アプリを含む) にダウンロードされる場合の保護基準が示されます。 
+An app protection policy is available to mobile apps that integrate with Enterprise Mobility Solution (EMS) technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-| プロパティ    | 説明                                                                           |
+| Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| 状態      | デバイスの所有権の種類 (**会社**、**個人**、または**不明**)。 |
-| アプリ名    | アプリケーションの名前                                                           |
-| デバイス名 | デバイスの種類の名前。                                                       |
-| デバイスの種類 | デバイスの種類の名前。                                                       |
-| ポリシー    | デバイスの所有権の種類 (**会社**、**個人**、または**不明**)。 |
-| 最後の同期   | デバイスと Intune が最後に同期された時刻のタイムスタンプ。                   |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| App name    | The name of the application                                                           |
+| Device name | The name of the type of device.                                                       |
+| Device type | The name of the type of device.                                                       |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
 
-## <a name="app-protection-policies-reference"></a>アプリ保護ポリシー リファレンス
+## App protection policies reference
 
-アプリ保護ポリシーは、EMS テクノロジと統合されたモバイル アプリで使用できます。これらのポリシーにより、会社のデータがモバイル アプリ (Office モバイル アプリを含む) にダウンロードされる場合の保護基準が示されます。 
+An app protection policy is available to mobile apps that integrate with EMS technologies.These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-### <a name="properties"></a>[プロパティ]
+### Properties
 
-Intune で管理されるデバイスのアプリ保護ポリシーの状態を以下の表にまとめます。
+The table summarizes app protection policies status for devices managed by Intune.
 
-| プロパティ    | 説明                                                                                                                                |
+| Property    | Description                                                                                                                                |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| 名前        | アプリケーションの名前。                                                                                                        |
-| 展開済み    | 各ユーザーのアプリ保護アプリの状態。 アプリの状態は、**[確認済み]** か **[未確認]** のはずです。 |
-| プラットフォーム    | デバイスの所有権の種類 (**会社**、**個人**、または**不明**)。                                               |
-| 登録  | デバイスの種類の名前。                                                                                                     |
-| ［最終更新日時］ | ポリシーが変更されたときのタイムスタンプ。                                                                                              |
+| Name        | The name of the application.                                                                                                        |
+| Deployed    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Platform    | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Enrollment  | The name of the type of device.                                                                                                     |
+| Last Update | The timestamp the policy was modified.                                                                                              |
 
-### <a name="devices"></a>[デバイス]
+### Devices
 
-Intune によって管理されているか、Intune または Azure AD で管理されているユーザーによって管理されているデバイス。
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| プロパティ           | テキスト                                                                                                                                |
+| Property           | Text                                                                                                                                |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| ［デバイス名］        | デバイスの種類の名前。                                                                                                     |
-| 管理者         | ポリシーが変更されたときのタイムスタンプ。                                                                                              |
-| Azure AD の結合の種類 | 各ユーザーのアプリ保護アプリの状態。 アプリの状態は、**[確認済み]** か **[未確認]** のはずです。 |
-| 所有権          | デバイスの所有権の種類 (**会社**、**個人**、または**不明**)。                                               |
-| Intune 準拠   | デバイスの種類の名前。                                                                                                     |
-| Azure AD 準拠 | 各ユーザーのアプリ保護アプリの状態。 アプリの状態は、**[確認済み]** か **[未確認]** のはずです。 |
-| Azure AD 準拠 | 各ユーザーのアプリ保護アプリの状態。 アプリの状態は、**[確認済み]** か **[未確認]** のはずです。 |
-| OS                 | デバイスにインストールされているオペレーティング システム。                                                                                       |
-| OS のバージョン         | デバイスのオペレーティング システムのバージョン番号。                                                                                  |
-| 最後のチェックイン      | デバイスの種類の名前。                                                                                                     |
+| Device Name        | The name of the type of device.                                                                                                     |
+| Managed By         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last Check in      | The name of the type of device.                                                                                                     |
 
-## <a name="compliance-policies-reference"></a>コンプライアンス ポリシー リファレンス
+## Compliance policies reference
 
-会社のアプリやデータにアクセスするために使用するデバイスが、デバイスにアクセスする場合の PIN の使用や、デバイスに格納されるデータの暗号化などの特定のルールに準拠していることを確認します。
+Makes sure that the devices used to access company apps and data, comply with certain rules like using a PIN to access the device, and encryption of data stored on the device.
 
-### <a name="properties"></a>[プロパティ]
+### Properties
 
-コンプライアンス ポリシーのプロパティ。
+The properties of the compliance policies.
 
-| プロパティ      | 説明                                                                                                                         |
+| Property      | Description                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| 割り当て    | 各ユーザーのアプリ保護アプリの状態。 アプリの状態は、**[確認済み]** か **[未確認]** のはずです。 |
-| 名前          | アプリケーションの名前。                                                                                                        |
-| OS            | デバイスにインストールされているオペレーティング システム。                                                                                       |
-| ポリシーの種類   | デバイスの所有権の種類 (**会社**、**個人**、または**不明**)。                                               |
-| ［更新日時］ | デバイスの種類の名前。                                                                                                     |
+| Assignment    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Name          | The name of the application.                                                                                                        |
+| OS            | The operating system installed on the device.                                                                                       |
+| Policy Type   | The type of device ownership (**Company**, **Personal**, and **Unknown**).                                               |
+| Last Modified | The name of the type of device.                                                                                                     |
 
-### <a name="devices"></a>[デバイス]
+### Devices
 
-Intune によって管理されているか、Intune または Azure AD で管理されているユーザーによって管理されているデバイス。
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| プロパティ           | 説明                                                                                                                         |
+| Property           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| デバイス名        | デバイスの種類の名前。                                                                                                     |
-| 管理者         | ポリシーが変更されたときのタイムスタンプ。                                                                                              |
-| Azure AD の結合の種類 | 各ユーザーのアプリ保護アプリの状態。 アプリの状態は、**[確認済み]** か **[未確認]** のはずです。 |
-| 所有権          | デバイスの所有権の種類 (**会社**、**個人**、または**不明**)。                                               |
-| Intune 準拠   | デバイスの種類の名前。                                                                                                     |
-| Azure AD 準拠 | 各ユーザーのアプリ保護アプリの状態。 アプリの状態は、**[確認済み]** か **[未確認]** のはずです。 |
-| OS                 | デバイスにインストールされているオペレーティング システム。                                                                                       |
-| OS のバージョン         | デバイスのオペレーティング システムのバージョン番号。                                                                                  |
-| 最後のチェックイン      | デバイスの種類の名前。                                                                                                     |
+| Device name        | The name of the type of device.                                                                                                     |
+| Managed by         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, and **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last check-in      | The name of the type of device.                                                                                                     |
 
-### <a name="app-protection-policies"></a>アプリ保護ポリシー
+### App protection policies
 
-アプリ保護ポリシーは、EMS テクノロジと統合されたモバイル アプリで使用できます。 これらのポリシーにより、会社のデータがモバイル アプリ (Office モバイル アプリを含む) にダウンロードされる場合の保護基準が示されます。 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-| プロパティ    | 説明                                                                           |
+| Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| 状態      | デバイスの所有権の種類 (**会社**、**個人**、または**不明**)。 |
-| アプリ名    | アプリケーションの名前                                                           |
-| デバイス名 | デバイスの種類の名前。                                                       |
-| デバイスの種類 | デバイスの種類の名前。                                                       |
-| ポリシー    | デバイスの所有権の種類 (**会社**、**個人**、または**不明**)。 |
-| 最後の同期   | デバイスと Intune が最後に同期された時刻のタイムスタンプ。                   |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| App name    | The name of the application                                                           |
+| Device name | The name of the type of device.                                                       |
+| Device type | The name of the type of device.                                                       |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
 
-## <a name="configuration-policies-reference"></a>構成ポリシー リファレンス
+## Configuration policies reference
 
-アプリ構成ポリシーは、ベンダー固有の構成のモバイル アプリで使用できます。 
+An app configuration policy is available to mobile apps with vendor-specific configuration. 
 
-### <a name="properties"></a>[プロパティ]
+### Properties
 
-構成ポリシーのプロパティ。
+The properties of the configuration policies.
 
-| プロパティ      | 説明                                                                                                                         |
+| Property      | Description                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| 割り当て    | 各ユーザーのアプリ保護アプリの状態。 アプリの状態は、**[確認済み]** か **[未確認]** のはずです。 |
-| 名前          | アプリケーションの名前。                                                                                                        |
-| OS            | デバイスにインストールされているオペレーティング システム。                                                                                       |
-| ポリシーの種類   | デバイスの所有権の種類 (**会社**、**個人**、または**不明**)。                                               |
-| ［更新日時］ | デバイスの種類の名前。                                                                                                     |
+| Assignment    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Name          | The name of the application.                                                                                                        |
+| OS            | The operating system installed on the device.                                                                                       |
+| Policy Type   | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Last Modified | The name of the type of device.                                                                                                     |
 
-### <a name="devices"></a>[デバイス]
+### Devices
 
-Intune によって管理されているか、Intune または Azure AD で管理されているユーザーによって管理されているデバイス。
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| プロパティ           | 説明                                                                                                                         |
+| Property           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| デバイス名        | デバイスの種類の名前。                                                                                                     |
-| 管理者         | ポリシーが変更されたときのタイムスタンプ。                                                                                              |
-| Azure AD の結合の種類 | 各ユーザーのアプリ保護アプリの状態。 アプリの状態は、**[確認済み]** か **[未確認]** のはずです。 |
-| 所有権          | デバイスの所有権の種類 (**会社**、**個人**、または**不明**)。                                               |
-| Intune 準拠   | デバイスの種類の名前。                                                                                                     |
-| Azure AD 準拠 | 各ユーザーのアプリ保護アプリの状態。 アプリの状態は、**[確認済み]** か **[未確認]** のはずです。 |
-| OS                 | デバイスにインストールされているオペレーティング システム。                                                                                       |
-| OS のバージョン         | デバイスのオペレーティング システムのバージョン番号。                                                                                  |
-| 最後のチェックイン      | デバイスの種類の名前。                                                                                                     |
+| Device name        | The name of the type of device.                                                                                                     |
+| Managed by         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last check-in      | The name of the type of device.                                                                                                     |
 
 
-### <a name="app-protection-policies"></a>アプリ保護ポリシー
+### App protection policies
 
-アプリ保護ポリシーは、EMS テクノロジと統合されたモバイル アプリで使用できます。 これらのポリシーにより、会社のデータがモバイル アプリ (Office モバイル アプリを含む) にダウンロードされる場合の保護基準が示されます。 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-| プロパティ    | 説明                                                                           |
+| Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| 状態      | デバイスの所有権の種類 (**会社**、**個人**、または**不明**)。 |
-| アプリ名    | アプリケーションの名前                                                           |
-| デバイス名 | デバイスの種類の名前。                                                       |
-| デバイスの種類 | デバイスの種類の名前。                                                       |
-| ポリシー    | デバイスの所有権の種類 (**会社**、**個人**、または**不明**)。 |
-| 最後の同期   | デバイスと Intune が最後に同期された時刻のタイムスタンプ。                   |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| App name    | The name of the application                                                           |
+| Device name | The name of the type of device.                                                       |
+| Device type | The name of the type of device.                                                       |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
+
+-->
 
 ## <a name="enrollment-failure-reference"></a>登録エラーのリファレンス
 

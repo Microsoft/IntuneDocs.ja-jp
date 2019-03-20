@@ -6,9 +6,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/14/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a44b5b911d89a2e31f2a718aaa76702847ffb3d8
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: b6e51e936a70580643cbaa232441e0ba21c3db14
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849205"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566660"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために iOS アプリを準備する
 
@@ -279,7 +280,7 @@ iOS では、アプリへの署名に元々使用されたものとは異なる�
 |指定した入力アプリケーションは署名されていません。 署名されている有効なアプリケーションを指定します。|アプリ ラッピング ツールでは、アプリに署名が必要です。 ラッピングされたアプリに署名する方法については、開発者ドキュメントを参照してください。|
 |指定した入力アプリケーションは .ipa または .app 形式である必要があります。|アプリ ラッピング ツールは .app 拡張子と .ipa 拡張子のみを受け取ります。 入力ファイルに有効な拡張子があり、.app または .ipa ファイルとしてコンパイルされていることを確認します。|
 |指定した入力アプリは既にラッピングされていて、最新のポリシー テンプレート バージョンです。|アプリ ラッピング ツールは、既にラッピングされ、ポリシー テンプレート バージョンが最新のアプリを再ラッピングしません。|
-|警告:SHA1 証明書ハッシュを指定しませんでした。 展開前にラッピングされたアプリケーションが署名されていることを確認します。|-c コマンドライン フラグの後に有効な SHA1 ハッシュを指定します。 |
+|警告: SHA1 証明書ハッシュを指定しませんでした。 展開前にラッピングされたアプリケーションが署名されていることを確認します。|-c コマンドライン フラグの後に有効な SHA1 ハッシュを指定します。 |
 
 ### <a name="log-files-for-the-app-wrapping-tool"></a>アプリ ラッピング ツールのログ ファイル
 アプリ ラッピング ツールでラッピングされているアプリはログを生成し、ログが iOS クライアント デバイス コンソールに書き込まれます。 この情報は、アプリケーションで問題が発生し、問題がアプリ ラッピング ツールに関連するかどうかを判断する必要がある場合に役立ちます。 この情報を取得するには、次の手順を使用します。
@@ -438,7 +439,8 @@ iOS 用アプリ ラッピング ツールで権利のエラーが表示され�
 > [!NOTE]
 > ログ記録機能は、バージョン 7.1.13 以降の Intune アプリ ラッピング ツールでラッピングされたアプリで使用できます。
 
-### <a name="see-also"></a>関連項目
-- [Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](apps-prepare-mobile-application-management.md)</br>
-- [Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
+## <a name="see-also"></a>関連項目
+
+- [Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](apps-prepare-mobile-application-management.md)
+- [一般的な質問、問題、およびデバイスのポリシーとプロファイルの解像度](device-profile-troubleshoot.md)
 - [SDK を使用してモバイル アプリケーション管理に対応する](app-sdk.md)

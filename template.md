@@ -14,11 +14,11 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: 68090a038cec49009b6bd0ce0515a075f62483b8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
-ms.translationtype: HT
+ms.openlocfilehash: d05559a46cfd2bf9e092378e7cff779022e21792
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "20283571"
 ---
 # <a name="metadata-and-markdown-template"></a>メタデータとマークダウン テンプレート
@@ -37,7 +37,7 @@ ms.locfileid: "20283571"
 - 値 (title など) に使用するコロンはメタデータ パーサーを中断します。 代わりに HTML エンコーディングの &#58; を使用します ("title: Azure Rights Management&#58; 基本情報 | Azure RMS" など)。
 - **title**: このタイトルは検索エンジンの結果に表示されます。 タイトルの後ろにパイプ (|) を付け、サービス名を入れる必要があります (前述の例のように)。 このタイトルを H1 見出しのタイトルと同じにする必要はありません (変えることをお勧めします)。 65 文字前後に収めます ("| サービス名" も含め)。
 - **author**、**manager**、**reviewer**: author フィールドには、エイリアスではなく、作成者の **Github ユーザー名** を含める必要があります。  一方、"manager" と "reviewer" フィールドにはエイリアスを含める必要があります。 ms.reviewer は記事またはサービスに関連付けられている PM の名前を指定します。
-- **ms.assetid**: CAPS からの記事の GUID です。 新しいマークダウン ファイルを作成する場合、[https://www.guidgenerator.com](https://www.guidgenerator.com) から GUID を取得します。 
+- **ms.assetid**: CAPS からの記事の GUID です。 新しいマークダウン ファイルを作成する場合は、[https://www.guidgenerator.com](https://www.guidgenerator.com) から GUID を取得します。 
 - **ms.prod**、**ms.service**、**ms.technology**、**ms.devlang**、**ms.topic**、**ms.tgt_pltfrm**: これらの要素で利用可能な値は、[こちら](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default)で検索できます。
 
 ## <a name="basic-markdown-and-gfm"></a>基本的なマークダウンと GFM
@@ -60,7 +60,7 @@ ms.locfileid: "20283571"
 ##### <a name="fifth-level-heading"></a>第 5 レベルの見出し
 ###### <a name="sixth-level-heading"></a>第 6 レベルの見出し
 
-## <a name="text-styling"></a>テキスト スタイルの設定
+## <a name="text-styling"></a>テキストのスタイル設定
 
 *斜体* 
 
@@ -126,7 +126,7 @@ ms.locfileid: "20283571"
 
 ##### <a name="unordered-list-with-an-embedded-lists"></a>埋め込みリストを含む順序指定されていない一覧
 
-- この 
+- これが 
 - 箇条書き 
 - リスト
     - Mrs. Peacock
@@ -167,7 +167,7 @@ ms.locfileid: "20283571"
 
 ## <a name="blockquotes"></a>Blockquotes
 
-> 干ばつは 1000 万年も続き、恐竜の治世はとうに終わっていた。 ここ、赤道地帯、いずれアフリカと呼ばれるようになる大陸では、生存の戦いは熾烈なクライマックスを迎えていたが、勝者はまだ現れていなかった。 この乾燥した不毛の大地では、小さなもの、すばしこいもの、どう猛なもののみ栄えることができ、また生存の望みをつなぐことができた。
+> 干ばつはすでに 1000 万年も続いていました。恐竜が君臨した時代はとうに終わっていたのです。 ここ、赤道地帯、いずれアフリカと呼ばれるようになる大陸では、生存の戦いは熾烈なクライマックスを迎えていたが、勝者はまだ現れていなかった。 この乾燥した不毛の大地では、小さなもの、すばしこいもの、どう猛なもののみ栄えることができ、また生存の望みをつなぐことができた。
 
 ## <a name="images"></a>画像
 

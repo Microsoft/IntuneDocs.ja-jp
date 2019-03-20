@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 472a1e5192b9054c9d89a7d4240750824a3a8b0a
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "36914930"
+---
 
 
 ### <a name="apple"></a>Apple
@@ -14,7 +22,6 @@
 
   Enterprise Management + Security (EMS) を使用している場合は、[Azure Active Directory (AAD) を使用して Windows 10 デバイスを登録する](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment)こともできます。
 
-  
   [Intune ソフトウェア クライアント](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)では、Windows 10 Home エディションを除く、Windows 7 以降の PC を管理できます。
 
 ### <a name="google"></a>Google

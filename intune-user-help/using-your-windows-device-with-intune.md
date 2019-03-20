@@ -18,11 +18,11 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9bdb3e5c79b348b323df129c2dec4c02af596215
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 85856e77fc8ebbd4054ef819a9110e0fa258ced3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55844549"
 ---
 # <a name="using-your-windows-device-with-intune-company-portal"></a>Windows デバイスを Intune ポータル サイトで使用する
@@ -46,7 +46,7 @@ ms.locfileid: "55844549"
 ポータル サイトでは、[Windows 10 Holographic](https://www.microsoft.com/hololens) など、他のバージョンの Windows もサポートされています。 ただし、これらのバージョンの使用はごく限定的なので、この記事では取り上げません。
 
 ## <a name="set-up-your-device-in-the-company-portal"></a>ポータル サイトでデバイスをセットアップする
-- [ポータル サイトで管理されている Windows デバイスを取得する](enroll-your-device-in-intune-windows.md)
+- [ポータル サイトで管理されている Windows デバイスを取得する](windows-enrollment-company-portal.md)  
 - [デバイスを*管理対象*にすることの意味](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 - [会社が確認できるデバイス上の情報](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 - [デバイスを暗号化する](encrypt-your-device-windows.md)
