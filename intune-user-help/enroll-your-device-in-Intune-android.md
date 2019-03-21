@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5eb00734c8095202b5b633f1db105a42d40e4567
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 188c32a2fd38d3445380a9d1898b90a3bb080ae1
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149037"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57335209"
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Intune に Android デバイスを登録する
 
@@ -36,7 +37,7 @@ ms.locfileid: "43149037"
 
 **Android デバイスを登録するには:**
 
-1. 無料の Intune ポータル サイト アプリを [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) からインストールします。
+1. 無料の Intune ポータル サイト アプリを [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) からインストールします。
 
 2. ポータル サイト アプリを開きます。
 

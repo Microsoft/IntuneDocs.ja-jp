@@ -7,9 +7,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/20/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: aanavath
@@ -17,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e305d419a101410a9a934a200dfcfb1c3488ff7
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 2cbf6e1bde3f8853f2e5c6c1919089bf0dc10126
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238287"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565522"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune データ ウェアハウスのデータ モデル
 
 Intune データ ウェアハウスは、データを毎日サンプリングし、常に変化するモバイル デバイス環境の履歴ビューを提供します。 ビューは時間に関連のあるエンティティで構成されます。
 
-## <a name="entities-entity-sets"></a>エンティティ:エンティティ セット
+## <a name="entities-entity-sets"></a>エンティティ: エンティティ セット
 
 このウェアハウスは、次の上位領域のデータを公開します。
 
@@ -49,7 +50,7 @@ Intune データ ウェアハウスは、データを毎日サンプリングし
   -  [現在のユーザー](reports-ref-current-user.md)
   -  [ユーザー デバイスの関連付け](reports-ref-user-device.md)
 
-## <a name="relationships-star-schema-model"></a>リレーションシップ:スタースキーマ モデル
+## <a name="relationships-star-schema-model"></a>リレーションシップ: スタースキーマ モデル
 
 このウェアハウスでは、エンティティがリレーションシップに分類されます。リレーションシップは、尋ねる質問の種類に応じたものです。 たとえば、社内で開発された Android アプリケーションのインストールの数を確認できます。 データ ウェアハウスの構造を使用して、モバイル環境を分析できます。 また、Microsoft Power BI などの分析ツールでデータ ウェアハウス データ モデルを使用して、視覚化と動的ダッシュボードを作成できます。
 
@@ -57,7 +58,7 @@ Intune データ ウェアハウスは、データを毎日サンプリングし
 
 スタースキーマ モデルは、柔軟性とデータ分析に合わせて最適化されているため、進化するモバイル環境を理解するために必要なレポートを作成できます。
 
-## <a name="time-daily-snapshots"></a>時刻 :毎日のスナップショット
+## <a name="time-daily-snapshots"></a>時間: 毎日のスナップショット
 
 このウェアハウスは、Intune データのダウンストリームです。 Intune では、午前 0 時 (UTC) に毎日のスナップショットを取得し、ウェアハウスにスナップショットを保存します。 スナップショットの保有期間はファクト テーブルによって異なります。 7 日間や 30 日間、またはさらに長い期間のものもあります。
 

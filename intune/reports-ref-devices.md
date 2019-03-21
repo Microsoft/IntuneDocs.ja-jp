@@ -7,21 +7,23 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/20/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 3993cb4e7ccbc04ccc1d341a9bd72594948f3262
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: fe16111095051c1fddb4b87d5b4f815ae2798e92
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297521"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566371"
 ---
 # <a name="reference-for-devices-entities"></a>デバイス エンティティの参照
 
@@ -214,7 +216,10 @@ ms.locfileid: "54297521"
 |---------|------------|--------|
 | ownerTypeID |所有者の種類を示す一意識別子。 | |
 | ownerTypeKey |データ ウェアハウスにおける所有者の種類を示す一意識別子 - 代理キー。 | |
-| ownerTypeName |デバイスの所有者の種類を表します。  <br>[会社] - 会社が所有するデバイスです。 <br>[個人] - 個人が所有するデバイスです (BYOD)。  <br>[不明] - このデバイスの情報はありません。 |会社、個人、不明 |
+| ownerTypeName |デバイスの所有者の種類を表します。  <br>企業の所有する会社がデバイスです。 <br>[個人] - 個人が所有するデバイスです (BYOD)。  <br>[不明] - このデバイスの情報はありません。 |企業個人、不明 |
+
+> [!Note]  
+> `ownerTypeName`で azure Ad デバイスの動的なグループを作成するときに、フィルター値を設定する必要があります。`deviceOwnership`として`Company`します。 詳細については、次を参照してください。[デバイスのルール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)します。 
 
 ## <a name="mdmstatuses"></a>MdmStatuses
 

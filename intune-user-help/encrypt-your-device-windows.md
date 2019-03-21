@@ -1,6 +1,6 @@
 ---
 title: 暗号化を使用して Windows デバイスを保護する方法 | Microsoft Docs
-description: Windows デバイスを暗号化する方法について説明します
+description: Windows 10 デバイスを暗号化して BitLocker を有効にします。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6f5da597ae0c765ea1328ee44d4c4e69d41b5ea
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: b39cc879c9e1232335c38e8d95c0861a12662c6a
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55847688"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57564467"
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>暗号化を使用して Windows デバイスを保護する方法
 

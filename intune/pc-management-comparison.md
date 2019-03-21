@@ -7,9 +7,10 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
-ms.topic: conceptual
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d94549f150b2c658ba422ea1d6f68c5b5df85e33
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 9c70dbee01c546f73052b8741ce339c7bfe92fc7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238491"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57461143"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Windows PC のコンピューターとしての管理とモバイル デバイスとしての管理の比較
 
@@ -53,4 +54,5 @@ ms.locfileid: "57238491"
 最新のモバイル デバイス管理での Windows PC 管理には、次の利点があります。
 - **スケーラビリティ** - MDM 管理は Intune クラウド管理とともに拡張します。 Intune ソフトウェア クライアントの制限は、PC 7,000 台までです。
 - **簡単** - ダウンロード済みのソフトウェア クライアントに依存せず、オペレーティング システムに含まれる最新の管理機能を使用します。
-- **整合性** - お使いの Windows PC は組織内の他のすべてのモバイル デバイスと同様に管理されます。<!-- - **Cloud optimization** - -->
+- **整合性** - お使いの Windows PC は組織内の他のすべてのモバイル デバイスと同様に管理されます。
+<!-- - **Cloud optimization** - -->

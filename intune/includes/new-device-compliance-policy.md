@@ -1,20 +1,7 @@
 ---
-title: ファイルを含める
-description: ファイルを含める
-services: microsoft-intune
-author: MandiOhlinger
-ms.service: microsoft-intune
-ms.topic: include
-ms.date: 04/16/2018
-ms.author: mandia
-ms.custom: include file
-ms.openlocfilehash: 26dba56aad238ff20f7d9e90c4eaf62793ef6b59
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236732"
+ タイトル: ファイルの説明を含める: ファイル サービスが含まれます: microsoft intune の作成者: MandiOhlinger ms.service:: microsoft intune ms.topic:: ms.date: を含める: 2018 年 04 月 16 日 ms.author:: mandia ms.custom:: ファイル ms.collection を含めます。M365 id デバイス管理
 ---
+
 1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、**[Intune]** をフィルターとして適用して、**[Microsoft Intune]** を選びます。
 2. **[デバイスのポリシー準拠]** > **[ポリシー]** > **[ポリシーの作成]** の順に選択します。
 3. **名前**と**説明**を入力します。

@@ -7,9 +7,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/20/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c1e9469abbf8fa28863184552608e09bf9c988b
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: a3342eec0ea9797f4ce21b53e589ff4f427d03bb
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235074"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57564807"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Power BI でデータ ウェアハウスに接続する
 
@@ -46,7 +47,7 @@ Power BI ファイルをダウンロードする方法と、Power BI で OData �
 
 ## <a name="install-power-bi"></a>Power BI をインストールする
 
-最新バージョンの Power BI Desktop をインストールします。 Power BI Desktop は、[PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop) からダウンロードできます
+最新バージョンの Power BI Desktop をインストールします。 Power BI Desktop は [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop) からダウンロードできます。
 
 ## <a name="load-the-data-and-reports-using-the-power-bi-file-pbix"></a>Power BI ファイル (pbix) を使用してデータとレポートを読み込む
 
