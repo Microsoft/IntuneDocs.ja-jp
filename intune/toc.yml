@@ -12,6 +12,8 @@ items:
     items:
     - name: アプリの UI の新機能
       href: whats-new-app-ui.md
+    - name: 開発中の機能
+      href: in-development.md
   expanded: true
 - name: クイックスタート
   items:
@@ -75,8 +77,6 @@ items:
     href: windows-information-protection-configure.md
   - name: MAM のよく寄せられる質問
     href: mam-faq.md
-  - name: ポリシーとプロファイルのよく寄せられる質問
-    href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: 操作方法ガイド
   items:
   - name: 展開の計画
@@ -225,9 +225,7 @@ items:
       items:
       - name: Device Enrollment Program または Apple School Manager
         href: device-enrollment-program-enroll-macos.md
-    - name: Windows PC に Intune ソフトウェア クライアントをインストールする
-      href: install-the-windows-pc-client-with-microsoft-intune.md
-    - name: 破棄レポート
+    - name: 不完全な登録のレポート
       href: enrollment-report-company-portal-abandon.md
     - name: デバイス登録に関するトラブルシューティング
       href: troubleshoot-device-enrollment-in-intune.md
@@ -254,11 +252,11 @@ items:
       href: device-rename.md
     - name: デバイスの再起動
       href: device-restart.md
-    - name: 現在のユーザーのログアウト
+    - name: 現在のユーザーをサインアウトする
       href: device-logout-user.md
     - name: ユーザーの削除
       href: device-remove-user.md
-    - name: デバイスの消去
+    - name: macOS デバイスのデータを消去する
       href: device-erase.md
     - name: モバイル デバイスのリモート制御
       href: device-profile-android-teamviewer.md
@@ -307,6 +305,7 @@ items:
     - name: デバイスの設定と機能を制限する
       href: device-restrictions-configure.md
     - name: 更新プログラムを配信する
+      displayName: delivery optimization; updates
       href: delivery-optimization-windows.md
     - name: エディションと S モードをアップグレードする
       href: edition-upgrade-configure-windows-10.md
@@ -363,7 +362,7 @@ items:
         - name: Intune から Google に送られるデータ
           href: data-intune-sends-to-google.md
         - name: Intune に Jamf Pro から共有する情報
-          href: conditional-access-integrate-jamf.md
+          href: data-jamf-sends-to-intune.md
       - name: 個人データの表示と修正
         href: privacy-data-view-correct.md
       - name: 監査、エクスポート、削除
@@ -376,6 +375,7 @@ items:
       - name: Exchange On-premises コネクタをインストールする
         href: exchange-connector-install.md
       - name: 条件付きアクセス ポリシーの作成と割り当て
+        href: conditional-access-exchange-create.md
       - name: デバイス ベースの条件付きアクセス ポリシー
         href: create-conditional-access-intune.md
       - name: 条件付きアクセス ポリシーを 従来の Intune ポータルから再割り当てする
@@ -448,6 +448,8 @@ items:
       href: network-access-control-integrate.md
     - name: Windows Hello
       href: windows-hello.md
+    - name: デバイス暗号化の監視
+      href: encryption-monitor.md
     - name: 証明書
       href: certificates-configure.md
       items:
@@ -532,6 +534,8 @@ items:
         href: apps-inc-exl-assignments.md
       - name: Windows 10アプリデプロイ
         href: apps-windows-10-app-deploy.md
+      - name: アプリを Government 環境にデプロイする
+        href: apps-deploy-gcc-dod.md
     - name: アプリの監視
       href: apps-monitor.md
     - name: アプリの構成
@@ -616,6 +620,8 @@ items:
       href: data-google-sends-to-intune.md
   - name: ヘルプとサポート
     items:
+    - name: テナントの状態
+      href: tenant-status.md
     - name: トラブルシューティング
       items:
       - name: ユーザーによる問題のトラブルシューティングをサポートする
@@ -624,6 +630,8 @@ items:
         href: troubleshoot-company-resource-access-problems.md
       - name: アプリのインストールに関する問題のトラブルシューティング
         href: troubleshoot-app-install.md
+      - name: モバイル アプリケーション管理に関するトラブルシューティング
+        href: troubleshoot-mam.md
       - name: Intune のアクティビティの監査ログ
         href: monitor-audit-logs.md
       - name: Azure Monitor でのログのレビュー
@@ -636,14 +644,12 @@ items:
         href: troubleshoot-software-updates-in-microsoft-intune.md
       - name: Endpoint Protection に関するトラブルシューティング
         href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-      - name: ポリシーに関するトラブルシューティング
+      - name: ポリシーとプロファイルのトラブルシューティング
         href: troubleshoot-policies-in-microsoft-intune.md
       - name: 条件付きアクセスに関するトラブルシューティング
         href: troubleshoot-conditional-access.md
       - name: Exchange Connector に関するトラブルシューティング
         href: troubleshoot-exchange-connector.md
-    - name: 既知の問題
-      href: known-issues.md
     - name: サポートを受ける
       href: get-support.md
 - name: リファレンス
@@ -660,14 +666,6 @@ items:
           href: device-restrictions-android.md
         - name: Email
           href: email-settings-android.md
-        - name: 信頼された証明書
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 証明書
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS のインポートされた証明書
-          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-        - name: PKCS 証明書
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-android.md#android-vpn-settings
         - name: Wi-Fi
@@ -687,16 +685,8 @@ items:
           href: device-restrictions-android-for-work.md
         - name: Email
           href: email-settings-android-enterprise.md
-        - name: 信頼された証明書
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 証明書
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS のインポートされた証明書
-          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-        - name: PKCS 証明書
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
-          href: vpn-settings-android.md#android-for-work-vpn-settings
+          href: vpn-settings-android.md#android-enterprise-vpn-settings
         - name: Wi-Fi
           href: wi-fi-settings-android-enterprise.md
         - name: カスタム
@@ -713,12 +703,6 @@ items:
           href: device-restrictions-ios.md
         - name: Email
           href: email-settings-ios.md
-        - name: 信頼された証明書
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 証明書
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS 証明書
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-ios.md
         - name: Wi-Fi
@@ -737,26 +721,20 @@ items:
           href: device-restrictions-macos.md
         - name: Endpoint Protection
           href: endpoint-protection-macos.md
-        - name: 信頼された証明書
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 証明書
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-macos.md
         - name: Wi-Fi
           href: wi-fi-settings-macos.md
         - name: カスタム
           href: custom-settings-macos.md
-    - name: セキュリティ ベースライン
-      items:
-      - name: Windows セキュリティ ベースラインの設定
-        href: security-baseline-settings-windows.md
     - name: Windows 10 以降
       items:
       - name: コンプライアンス ポリシーの設定
         href: compliance-policy-create-windows.md#windows-10-and-later-policy-settings
       - name: 構成プロファイルの設定
         items:
+        - name: 配信の最適化の設定
+          href: delivery-optimization-settings.md
         - name: デバイスの制限
           href: device-restrictions-windows-10.md
         - name: デバイスの制限 (Windows 10 Team)
@@ -771,12 +749,6 @@ items:
           href: identity-protection-windows-settings.md
         - name: キオスク
           href: kiosk-settings-windows.md
-        - name: 信頼された証明書
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 証明書
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS 証明書
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-windows-10.md
         - name: Wi-Fi
@@ -787,6 +759,8 @@ items:
           href: shared-user-device-settings-windows.md
         - name: カスタム
           href: custom-settings-windows-10.md
+      - name: セキュリティ ベースラインの設定
+        href: security-baseline-settings-windows.md
       - name: Windows Update の設定
         href: windows-update-settings.md
     - name: Windows Holographic for Business
@@ -809,10 +783,6 @@ items:
         items:
         - name: デバイスの制限
           href: device-restrictions-windows-8-1.md
-        - name: 信頼された証明書
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 証明書
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-windows-8-1.md
         - name: Wi-Fi インポート
@@ -827,10 +797,6 @@ items:
           href: device-restrictions-windows-phone-8-1.md
         - name: Email
           href: email-settings-windows-phone-8-1.md
-        - name: 信頼された証明書
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP 証明書
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-windows-phone-8-1.md
         - name: カスタム
@@ -854,6 +820,9 @@ items:
         href: app-wrapper-prepare-android.md
       - name: Android 用 Intune アプリ SDK
         href: app-sdk-android.md
+        items:
+        - name: Android 用 Intune App SDK テスト ガイド
+          href: app-sdk-android-testing-guide.md
       - name: Intune App SDK Xamarin Bindings
         href: app-sdk-xamarin.md
     - name: Intune データ ウェアハウスを使用する
@@ -912,34 +881,6 @@ items:
       href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: リソース
   items:
-  - name: Microsoft Intune のドキュメント ガイド
-    href: intune-documentation.md
-  - name: トラブルシューティング
-    items:
-    - name: ユーザーによる問題のトラブルシューティングをサポートする
-      href: help-desk-operators.md
-    - name: 会社のリソースへのアクセスに関する問題のトラブルシューティング
-      href: troubleshoot-company-resource-access-problems.md
-    - name: アプリのインストールに関する問題のトラブルシューティング
-      href: troubleshoot-app-install.md
-    - name: モバイル アプリケーション管理に関するトラブルシューティング
-      href: troubleshoot-mam.md
-    - name: Intune のアクティビティの監査ログ
-      href: monitor-audit-logs.md
-    - name: アプリの保護ログのレビュー
-      href: app-protection-policy-settings-log.md
-    - name: 電子メール プロファイルに関するトラブルシューティング
-      href: troubleshoot-email-profiles-in-microsoft-intune.md
-    - name: ソフトウェアの更新に関するトラブルシューティング
-      href: troubleshoot-software-updates-in-microsoft-intune.md
-    - name: Endpoint Protection に関するトラブルシューティング
-      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-    - name: ポリシーに関するトラブルシューティング
-      href: troubleshoot-policies-in-microsoft-intune.md
-    - name: 条件付きアクセスに関するトラブルシューティング
-      href: troubleshoot-conditional-access.md
-    - name: Exchange Connector に関するトラブルシューティング
-      href: troubleshoot-exchange-connector.md
   - name: アーカイブ
     items:
     - name: 新機能の公開履歴
@@ -1005,9 +946,9 @@ items:
       href: data-outside-protect.md
     - name: 管理されていないデバイスでのデータ漏洩の防止
       href: data-leak-prevention.md
-ms.openlocfilehash: 680ae510d7f3387b53ad6ae50c8e4d8ba194f8b9
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 2a7f7b7a1d1c56cf316362ef8dc2693343e64955
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742824"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306861"
