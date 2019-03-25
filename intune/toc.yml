@@ -262,8 +262,6 @@ items:
       href: device-profile-android-teamviewer.md
     - name: Windows 10 の PIN のリセット
       href: device-windows-pin-reset.md
-    - name: Exchange サービス コネクタをインストールする
-      href: exchange-service-connector-configure.md
     - name: デバイスの同期
       href: device-sync.md
     - name: デバイス インベントリの確認
@@ -329,6 +327,11 @@ items:
       href: education-settings-configure.md
     - name: 共有のマルチ ユーザー デバイス
       href: shared-user-device-settings.md
+    - name: Zebra デバイス上のモビリティの拡張機能
+      href: android-zebra-mx-overview.md
+      items:
+      - name: StageNow ログおよび一般的な問題
+        href: android-zebra-mx-logs-troubleshoot.md
     - name: 通信費の監視
       href: telecom-expenses-monitor.md
     - name: カスタム デバイス設定
@@ -854,8 +857,6 @@ items:
             href: reports-ref-user-timeline.md
           - name: アプリケーション エンティティのリファレンス
             href: reports-ref-application.md
-          - name: 現在のユーザー エンティティのリファレンス
-            href: reports-ref-current-user.md
           - name: 日付エンティティのリファレンス
             href: reports-ref-date.md
           - name: デバイス エンティティの参照
@@ -946,9 +947,9 @@ items:
       href: data-outside-protect.md
     - name: 管理されていないデバイスでのデータ漏洩の防止
       href: data-leak-prevention.md
-ms.openlocfilehash: 2a7f7b7a1d1c56cf316362ef8dc2693343e64955
-ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
+ms.openlocfilehash: f342d2ce12fb45db49cf06263807ed4a155fba55
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306861"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394682"
