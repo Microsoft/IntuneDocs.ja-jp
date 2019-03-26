@@ -115,11 +115,11 @@
 #### [macOS VM の管理の取得に関する問題](unable-to-get-macOS-device-managed.md) 
 
 ## [Windows デバイスを使用する](using-your-windows-device-with-intune.md)
-### [Windows 10 デバイスの登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+### [Windows 10 用のポータル サイトについて](about-cp-app-for-windows-10.md)
 #### [他のバージョンの Windows の登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-### [Windows デバイスを登録する](enroll-your-device-in-intune-windows.md)
-#### [Windows 10 デバイスを登録する](enroll-your-w10-phone-or-w10-pc-windows.md)
-#### [[職場または学校にアクセスする] から Windows 10 デバイスを登録する](enroll-your-w10-device-access-work-or-school.md)
+### Windows デバイスを登録する
+#### [Windows の登録の概要](windows-enrollment-company-portal.md)
+#### [Windows 10 デバイスを登録する](enroll-windows-10-device.md)
 #### [Windows 8.1 または Windows RT 8.1 デバイスを登録する](enroll-your-w81-or-rt81-windows.md)
 #### [Windows Phone 8.1 デバイスを登録する](enroll-your-wp81-windows.md)
 ### [デバイスを暗号化する](encrypt-your-device-windows.md)
@@ -150,13 +150,14 @@
 
 ## Windows 用 Intune ポータル サイト アプリの使用 
 ### [デバイス アクセスを確認する](check-device-access-windows-cpapp.md)
-### [ポータル サイト アプリからアプリをインストールする](install-apps-cpapp-windows.md) 
-### [ポータル サイト アプリからリモートでデバイスをロックする](remote-lock-your-device-cp-app.md)   
-### [ポータル サイト アプリからデバイスの名前を変更する](rename-your-device-cpapp.md) 
+### [アプリをインストールする](install-apps-cpapp-windows.md) 
+### [デバイスのリモート ロック](remote-lock-your-device-cp-app.md)   
+### [デバイス名の変更](rename-your-device-cpapp.md) 
+### [デバイスのリセット](reset-device-cp-app.md)
 
 ## [Intune ポータル サイト Web サイトの使用](using-the-intune-company-portal-website.md)
-### [デバイスのリモートからのロック](remote-lock-your-device-cpwebsite.md)
-### [デバイスの名前の変更](rename-your-device-cpwebsite.md)
-### [デバイスの削除](remove-your-device-cpwebsite.md)
-### [デバイスのパスコードのリセット](reset-your-passcode-cpwebsite.md)
-### [デバイスをリセットし、消去する](reset-erase-your-device-cpwebsite.md)
+### [デバイスのリモート ロック](remote-lock-your-device-cpwebsite.md)  
+### [デバイス名の変更](rename-your-device-cpwebsite.md)  
+### [デバイス名の削除](remove-your-device-cpwebsite.md)  
+### [デバイスのパスコードのリセット](reset-your-passcode-cpwebsite.md)  
+### [デバイスのリセット](reset-erase-your-device-cpwebsite.md)  
