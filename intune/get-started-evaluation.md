@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34d1cbe969b8e186d9e067660237da9c4ca88fb8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 313e4ccf0e96536b3e99edb968298e4cc3343aa1
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396223"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429735"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Intune が会社のためにできることとは。
 Microsoft Intune はクラウドベースのエンタープライズ モビリティ管理 (EMM) サービスであり、これでは、会社のデータを守りながら、社員に生産的に働いてもらうことができます。
@@ -46,17 +46,17 @@ Intune では次のことができます。
 
 ## <a name="quickstarts"></a>クイックスタート
 
-モバイル デバイスの管理は大変な仕事になりうると理解されています。会社のためにさまざまな決定を行う必要があるためです。 次のクイックスタートでは、Intune の概要を説明すると共に、いくつかの一般的なタスクをわずかな時間で完了させます。
+モバイル デバイスの管理の開始が困難な場合があることがわかりました。 ご自身の会社の代わりに、さまざまな決定を多数行う必要があります。 次のクイックスタートでは、Intune の概要を説明すると共に、いくつかの一般的なタスクをわずかな時間で完了させます。
 
-ページの左側にある目次を利用し、**クイック スタート**を意図された順番でこなします。
+ページの左側にある目次を使って、**クイック スタート**の意図された順番に従うことができます。
 
 - [Intune の無料試用](free-trial-sign-up.md) - Intune をテスト環境で使用する無料のサブスクリプションを作成できます。    
 - [ユーザーの作成](quickstart-create-user.md) - Intune にユーザーを追加して、モバイル デバイスから会社のリソースにアクセスできるようにします。
 - [グループの作成](quickstart-create-group.md) - ユーザーをグループにまとめ、ユーザーがアクセスできるポリシーやアプリを管理しやすくします。
-- [自動登録の設定](quickstart-setup-auto-enrollment.md) - 特定のユーザーが Windows 10 デバイスにサインインしたとき、Microsoft Intune がデバイスを自動的に登録するようにします。
-- [デバイスの登録](quickstart-enroll-windows-device.md) - Intune ユーザーのロールで、デバイスを Microsoft Intune に登録します。 次いで Intune に戻り、登録したデバイスを確認します。
+- [自動登録の設定](quickstart-setup-auto-enrollment.md) - 特定のユーザーが Windows 10 デバイスにサインインしたとき、Intune がデバイスを自動的に登録するように設定します。
+- [デバイスの登録](quickstart-enroll-windows-device.md) - Intune ユーザーのロールで、ご自分のデバイスを Intune に登録します。 次に、Intune に戻ってデバイスが正常に登録されたことを確認します。
 - [デバイスのコンプライアンス ポリシーの作成](quickstart-set-password-length-android.md) - デバイスのコンプライアンス ポリシーを作成し、そのポリシーにグループを割り当てます。
-- [非対応のデバイスへの通知の送信](quickstart-send-notification.md) - デバイスが非対応である従業員メンバーにコンプライアンス ポリシーを作成および割り当て、メール通知を送信します。
+- [非対応のデバイスへの通知の送信](quickstart-send-notification.md) - コンプライアンス ポリシーを作成して割り当てることで、デバイスが非対応である従業員メンバーにメール通知を送信します。
 - [アプリの追加および割り当て](quickstart-add-assign-app.md) - 職場の従業員に、クライアント アプリを追加および割り当てます。
 - [アプリ保護ポリシーの作成および割り当て](quickstart-create-assign-app-policy.md) - エンド ユーザーのデバイス上のクライアント アプリに対し、アプリ保護ポリシーを作成および割り当てます。
 - [カスタム ロールの作成および割り当て](quickstart-create-custom-role.md) - セキュリティ オペレーション部門用に特定のアクセス許可のあるカスタム ロールを作成および割り当てます。 
@@ -64,13 +64,13 @@ Intune では次のことができます。
 
 ## <a name="prerequisites"></a>必要条件
 
-始める前に、Intune の管理者/テナント アカウントを有効にしておく必要があります。 テスト環境で [Intune を無料で試す](free-trial-sign-up.md)無料のサブスクリプションを作成します。 現行のサブスクライバーも、ライブ テナントで以上の作業を完了できます。 これらの概要の記事では、テスト デバイスで作業することを前提とします。
+始める前に、Intune の管理者/テナント アカウントをアクティブにしておく必要があります。 テスト環境で [Intune を無料で試す](free-trial-sign-up.md)無料のサブスクリプションを作成します。 現行のサブスクライバーも、各自のライブ テナントでこれらのアクティビティを完了できます。 これらの概要の記事は、テスト デバイス上で作業することを前提としています。
 
 また、すべての入門タスクを完了するためには、自分が組織のグローバル管理者になっていることを確認する必要があります。
 
 ## <a name="intune-architecture"></a>Intune アーキテクチャ
 
-Intune は Enterprise Mobility + Security (EMS) に含まれ、モバイル デバイスとモバイル アプリを管理します。 ID とアクセス制御のために Azure Active Directory (Azure AD) のような他の EMS コンポーネントと、データ保護のために Azure Information Protection と密接に統合されます。 Office 365 との連携で、社員はあらゆるデバイスを生産的に活用し、同時に会社の情報を保護することができます。
+Intune は Enterprise Mobility + Security (EMS) に含まれ、モバイル デバイスとモバイル アプリを管理します。 ID とアクセス制御のために Azure Active Directory (Azure AD) のような他の EMS コンポーネントと、データ保護のために Azure Information Protection と密接に統合されます。 これを Office 365 と共に使う場合、従業員が各自のデバイスを生産的に活用できるようにしながら、同時に組織の情報を保護することができます。
 
 ![Microsoft Intune の概要的アーキテクチャ図](/intune/media/intunearchitecture.svg)
 
