@@ -4,6 +4,7 @@ description: クイック スタート - Intune でユーザーを作成しま�
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 10/30/2018
 ms.author: erikje
@@ -11,14 +12,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: b5653c67766a3312cf7ce2872e8b0cd4301b0e8b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 98c71bd4c93e869b429b7677b4fb7c442aa58643
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189497"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57991078"
 ---
-# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>クイック スタート: ユーザーを作成してライセンスを割り当てる
+# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>クイック スタート:ユーザーを作成してライセンスを割り当てる
 
 このクイック スタートでは、ユーザーを作成し、そのユーザーにライセンスを割り当てます。 Intune を使用する場合、会社のデータへのアクセス権を付与する各ユーザーには、ユーザー アカウントが必要です。 このようなユーザーは、Intune 管理者がアクセス制御を管理するために、後から構成できます。
 
@@ -45,9 +47,9 @@ Intune デバイス管理に登録するユーザーには、ユーザー アカ
 
 ## <a name="assign-a-license-to-the-user"></a>ユーザーにライセンスを割り当てる
 
-ユーザーを作成したら、[Office 365 ポータル](http://go.microsoft.com/fwlink/p/?LinkId=698854)を利用し、Intune ライセンスをそのユーザーに割り当てる必要があります。 ライセンスを割り当てないと、ユーザーは自分のデバイスを Intune に登録できません。 
+ユーザーを作成したら、[Microsoft 365 管理センター](http://go.microsoft.com/fwlink/p/?LinkId=698854)を利用し、Intune ライセンスをそのユーザーに割り当てる必要があります。 ライセンスを割り当てないと、ユーザーは自分のデバイスを Intune に登録できません。 
 
-1. Intune にサインインしたときに使用したものと同じ資格情報で [Office 365 ポータル](http://go.microsoft.com/fwlink/p/?LinkId=698854)にサインインします。
+1. Intune にサインインしたときに使用した同じ資格情報で [Microsoft 365 管理センター](http://go.microsoft.com/fwlink/p/?LinkId=698854)にサインインします。
 2. **[ユーザー]** > **[アクティブなユーザー]** の順に選択し、作成したユーザーを選択します。
 3. **[製品ライセンス]** の隣の **[編集]** を選択します。
 4. **[場所]** の下で、ユーザーの場所を選択します。
@@ -61,7 +63,7 @@ Intune デバイス管理に登録するユーザーには、ユーザー アカ
 
 ## <a name="clean-up-resources"></a>リソースをクリーンアップする
 
-このユーザーをもう使用しない場合、[Office 365 ポータル](http://go.microsoft.com/fwlink/p/?LinkId=698854)に移動し、**[ユーザー]** > **[アクティブなユーザー]** > *一覧内のユーザーを選択* > **[ユーザーの削除]** > **[ユーザーの削除]** > **[Confirm changes]\(変更の確認\)** > **[閉じる]** の順に選択します。
+このユーザーをもう使用しない場合、[Microsoft 365 管理センター](http://go.microsoft.com/fwlink/p/?LinkId=698854)に移動し、**[ユーザー]** > **[アクティブなユーザー]** > *一覧内のユーザーを選択* > **[ユーザーの削除]** > **[ユーザーの削除]** > **[変更の確認]** > **[閉じる]** の順に選択します。
 
 ## <a name="next-steps"></a>次の手順
 

@@ -4,6 +4,7 @@ description: 'クイック スタート: Intune で Windows 10 デバイスの�
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 11/05/2018
 ms.author: erikje
@@ -11,14 +12,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0d6f210d055d8395985b4fe64b5a061b2c8a0304
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 810adbf06ddcd0aabb5c758f6a71c898116a9cee
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179666"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57394310"
 ---
-# <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>クイック スタート: Windows 10 デバイスの自動登録を設定する
+# <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>クイック スタート:Windows 10 デバイスの自動登録を設定する
 
 このクイック スタートでは、特定のユーザーが Windows 10 デバイスにサインインしたとき、Microsoft Intune がデバイスを自動的に登録するように設定します。
 
@@ -74,4 +76,4 @@ Intune の自動登録を再構成するには、「[Windows デバイスの登�
 この一連の Intune のクイック スタートに従うには、次のクイック スタートに進んでください。
 
 > [!div class="nextstepaction"]
-> [クイック スタート: Windows 10 デバイスを登録する](quickstart-enroll-windows-device.md)
+> [クイック スタート: Windows 10 デバイスの登録](quickstart-enroll-windows-device.md)

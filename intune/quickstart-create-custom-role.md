@@ -4,6 +4,7 @@ description: クイック スタート - リモート デバイス マネージ�
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
@@ -11,14 +12,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 5de108835254d6a65546b8f1c9e8d0e9c32dbd26
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: be3ef61d3bdce2f1ad74a388a2ec50691313a1d1
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189930"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57400290"
 ---
-# <a name="quickstart-create-and-assign-a-custom-role"></a>クイック スタート - カスタム ロールを作成して割り当てる
+# <a name="quickstart-create-and-assign-a-custom-role"></a>クイック スタート:カスタム ロールを作成して割り当てる
 
 この Intune のクイック スタートでは、セキュリティ オペレーション部門用に特定のアクセス許可のあるカスタム ロールを作成します。 次に、このようなオペレーターのグループにロールを割り当てます。 すぐに使用できる既定のロールがいくつかあります。 しかし、このようなカスタム ロールを作成することで、モバイル デバイス管理システムのすべての部分に対して細かいアクセス制御ができるようになります。
 
