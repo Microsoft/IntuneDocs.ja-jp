@@ -10,20 +10,22 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dab6f5c8-1ebb-42c4-a7a7-7af001f94e15
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6d0a7485aa25dee74bf54192fa931d081be81cd8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 40f321b02565f696554e2380d488c41a3b1f24eb
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184515"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57391885"
 ---
-# <a name="quickstart-add-and-assign-a-client-app"></a>クイック スタート: クライアント アプリを追加して割り当てる
+# <a name="quickstart-add-and-assign-a-client-app"></a>クイック スタート:クライアント アプリの追加および割り当て
 
 このクイック スタートでは、Intune を使用して、会社の従業員にクライアント アプリを追加して割り当てます。 管理者の優先事項の 1 つは、エンド ユーザーが仕事を行う上で必要なアプリに確実にアクセスできるようにすることです。 
 
@@ -49,7 +51,7 @@ Intune にアプリを追加するには、次の手順に従います。
 4. **[OK]** をクリックし、既定で選択されているアプリを受け入れます。
 5. **[アプリ スイートの情報]** を選択します。
 6. **[スイート名]** として「**Microsoft Office 365 アプリ スイート**」と入力します。
-7. **[スイートの説明]** として「**Microsoft Office 365 アプリ スイート**」と入力します。
+7. [スイートの説明] として「**Microsoft Office 365 アプリ スイート**」と入力します ****。
 8. **[Display this as a featured app in the Company Portal]** \(このアプリをポータル サイトでおすすめアプリとして表示する\) の横の **[はい]** をクリックします。
 9. **[OK]** をクリックします。
 
@@ -90,7 +92,7 @@ Intune にアプリを追加するには、次の手順に従います。
 4. Intune を使用して追加したアプリをクリックします。 このクイック スタートでは、**Microsoft Office 365 アプリ スイート** アプリを追加しました。
 
     > [!NOTE]
-    > Intune ユーザーに何らかのアプリを正しく割り当てることができなかった場合、「*Your IT administrator did not make any apps available to you.*」\(IT 管理者によりどのアプリも利用可能にされていません\) というメッセージが表示されます。
+    > Intune ユーザーに何らかのアプリを正しく割り当てることができなかった場合、「*IT 管理者が用意した利用可能なアプリはありません*」というメッセージが表示されます。
 
 5. **[インストール]** をクリックします。
 
@@ -103,4 +105,4 @@ Intune にアプリを追加するには、次の手順に従います。
 この一連の Intune のクイック スタートに従うには、次のクイック スタートに進んでください。
 
 > [!div class="nextstepaction"]
-> [クイック スタート: アプリ保護ポリシーを作成して割り当てる](quickstart-create-assign-app-policy.md)
+> [クイック スタート: アプリ保護ポリシーの作成および割り当て](quickstart-create-assign-app-policy.md)
