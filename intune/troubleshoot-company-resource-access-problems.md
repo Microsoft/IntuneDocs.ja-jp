@@ -1,11 +1,11 @@
 ---
-title: 会社のリソースへのアクセスに関する問題のトラブルシューティング | Microsoft Docs
-description: Managed Instance エラーと状態コードを使用すると、リソースのアクセスに関する問題のトラブルシューティングに役立ちます。
+title: Microsoft Intune - Azure でのエラーと状態コード |Microsoft Docs
+description: MDM を使用して管理対象デバイス、Microsoft Intune で会社のリソース、iOS デバイスでのエラー、および OMA 応答エラーへのアクセスを取得するときに、エラー、状態コード、説明、および解決策の一覧を参照してください。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/08/2018
+ms.date: 03/20/2019
 ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebb311eab93abd66f6a23e58737573622b68f3e8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2e4d2b940a0079794c5b17e8d1c1900f630d14cd
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461500"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330480"
 ---
-# <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Microsoft Intune での会社のリソースへのアクセスに関する問題のトラブルシューティング
+# <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>一般的なエラー コードと Microsoft Intune での説明
 
-Microsoft Intune の操作でエラー コードが返された場合の問題を解決するには、このトピックのエラー コードと状態コードの説明を参考にしてください。
+この記事では、組織のリソースにアクセスするときの一般的なエラー、状態コード、説明、および考えられる解決策を一覧表示します。 Microsoft Intune を使用する場合のアクセスに関する問題のトラブルシューティングに役立つ、この情報を使用します。
 
-この情報で問題が解決しない場合、さらに役立つ方法を探すには、「[Microsoft Intune のサポートを受ける方法](get-support.md)」を参照してください。
+ヘルプをサポートする必要がある場合は、次を参照してください。 [Microsoft Intune のサポートを受ける](get-support.md)します。
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>MDM 管理の Windows デバイスの状態コード
 
@@ -385,5 +385,6 @@ Microsoft Intune の操作でエラー コードが返された場合の問題�
 |-2016345912|0x87D100C8|SyncML コマンドが正常に完了しました。|
 |-2016346011|0x87D10065|指定された SyncML コマンドは実行されていますが、まだ完了していません。|
 
-### <a name="next-steps"></a>次の手順
-このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](get-support.md)」の説明に従って Microsoft サポートにお問い合わせください。
+## <a name="next-steps"></a>次の手順
+
+Microsoft サポートに問い合わせて[Microsoft Intune のサポートを受ける](get-support.md)します。
