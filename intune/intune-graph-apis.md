@@ -7,20 +7,22 @@ author: dougeby
 manager: dougeby
 ms.author: dougeby
 ms.date: 03/08/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5129484a3cfea873be4009849b5989f9c2acd888
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8625eddaa3c6223767c7c93022275b028b4a145b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187451"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566558"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD を使用して Microsoft Graph の Intune API にアクセスする方法
 
@@ -146,13 +148,13 @@ __Microsoft Intune デバイスでユーザーに影響を与えるリモート�
 __Microsoft Intune デバイスの読み取りおよび書き込み__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
 __Microsoft Intune デバイスの読み取り__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __Microsoft Intune RBAC の設定の読み取りおよび書き込み__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
-__Microsoft Intune RBAC の設定の読み取り__ | [DeviceManagementRBAC.Read.All](#rac=ro)
+__Microsoft Intune RBAC の設定の読み取り__ | DeviceManagementRBAC.Read.All
 __Microsoft Intune アプリの読み取りおよび書き込み__ | [DeviceManagementApps.ReadWrite.All](#app-rw)
 __Microsoft Intune アプリの読み取り__ | [DeviceManagementApps.Read.All](#app-ro)
-__Microsoft Intune のデバイスの構成とポリシーの読み取りおよび書き込み__ | [DeviceManagementConfiguration.ReadWrite.All](#cfg-rw)
+__Microsoft Intune のデバイスの構成とポリシーの読み取りおよび書き込み__ | DeviceManagementConfiguration.ReadWrite.All
 __Microsoft Intune のデバイスの構成とポリシーの読み取り__ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
 __Microsoft Intune の構成の読み取りおよび書き込み__ | [DeviceManagementServiceConfig.ReadWrite.All](#svc-rw)
-__Microsoft Intune の構成の読み取り__ | [DeviceManagementServiceConfig.Read.All](#svc-ra)
+__Microsoft Intune の構成の読み取り__ | DeviceManagementServiceConfig.Read.All
 
 表は、Azure Portal に表示される順序で設定を一覧表示しています。 次のセクションでは、スコープについてアルファベット順に説明します。
 
@@ -588,7 +590,7 @@ catch {
 
 また、
 
-- を使用して、ユーザー アカウントに Intune のライセンスを割り当てます https://portal.office.com 。
+- を使用して、ユーザー アカウントに Intune のライセンスを割り当てます https://admin.microsoft.com 。
 
 - 自身ではなく、クライアントの Azure AD テナントのドメインに対する認証のためにアプリケーション コードを更新します。
 

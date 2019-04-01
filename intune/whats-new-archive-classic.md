@@ -6,9 +6,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 06/08/2017
-ms.topic: conceptual
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a56dcf0bb9c35bb12198537e6fdd1d2f72e3cfbb
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 32bee8ea873c728741deac1ef2adfd57bd9bf612
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238865"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57461279"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune クラシック ポータルの新機能 (過去数か月)
 
@@ -43,21 +44,21 @@ Managed Browser の Android バージョンと iOS バージョンのアイコ�
 
 ポータル サイトは、Android 版アプリ、iOS 版アプリ、Windows 版アプリの更新されたアイコンを受け取り、EM+S の他のアプリとの一貫性を向上させます。 これらのアイコンは、4 月から 5 月末にかけて段階的にプラットフォーム全体にリリースされます。
 
-#### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 用ポータル サイトでのサインイン進行状況インジケーター<!--953374-->
+#### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 用ポータル サイトでのサインイン進行状況インジケーター <!--953374-->
 
 Android 用ポータル サイト アプリが更新されて、起動または再開時にサインイン進行状況インジケーターが表示されるようになります。 ユーザーがアプリへのアクセスを許可されるまでにインジケーターに順番に表示される新しいステータスは、[接続中...]、[サインイン中...]、[Checking for security requirements... (セキュリティ要件確認中...)] です。 Android 用ポータル サイト アプリの新しい画面は、[Intune アプリ UI の新機能](whats-new-app-ui.md)に関するページでご覧いただけます。
 
-#### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>アプリの SharePoint Online へのアクセスをブロック<!-- 679339 -->
+#### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>アプリの SharePoint Online へのアクセスをブロック <!-- 679339 -->
 
 アプリ ベースの条件付きアクセス ポリシーを作成して、アプリ保護ポリシーが適用されていないアプリが [SharePoint Online](app-based-conditional-access-intune-create.md) にアクセスするのをブロックできるようになりました。 アプリ ベースの条件付きアクセスのシナリオでは、Azure Portal を使用して SharePoint Online にアクセスするアプリを指定できます。
 
 #### <a name="single-sign-on-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>iOS 用のポータル サイトおよび Outlook からのシングル サインオンのサポート <!--834012-->
 iOS 用のポータル サイト アプリに既にサインインしているユーザーは、同じデバイス上の同じアカウントを使う Outlook アプリであればサインインしなおす必要はありません。 Outlook アプリを起動するときに、自分のアカウントを選んで自動的にサインインできます。 現在、他の Microsoft アプリにこの機能を追加する作業を進めています。
 
-#### <a name="improved-status-messaging-in-the-company-portal-app-for-ios---744866--"></a>iOS 用ポータル サイト アプリでの状態メッセージの向上<!--744866-->
+#### <a name="improved-status-messaging-in-the-company-portal-app-for-ios---744866--"></a>iOS 用ポータル サイト アプリでの状態メッセージの向上 <!--744866-->
 デバイスで起きていることがよくわかる情報を提供する、新しい具体的なエラー メッセージが iOS 用のポータル サイト アプリに表示されるようになります。 これらのエラー情報は、これまでは "ポータル サイトは一時的に使用できません" というタイトルの一般的なエラー メッセージに含まれていました。 さらに、ユーザーがインターネットに接続できないときに iOS でポータル サイトを開始した場合は、"インターネットに接続されていません" という内容の固定ステータス バーがホーム ページに表示されるようになります。
 
-#### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Windows 10 ポータル サイト アプリのアプリ インストール状態の向上<!--676495-->
+#### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Windows 10 ポータル サイト アプリのアプリ インストール状態の向上 <!--676495-->
 
 Windows 10 ポータル サイト アプリで開始されるアプリ インストールの新しい改善点は次のとおりです。
 -   MSI パッケージのインストール進行状況レポートの高速化
@@ -108,22 +109,22 @@ Intune クラシック ポータル (Silverlight) で使用される既存のモ
 
 ### <a name="whats-coming"></a>今後の更新情報
 
-#### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>すべてのプラットフォームでのポータル サイト アプリのサインイン操作の改善<!--User Story 1132123-->
+#### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>すべてのプラットフォームでのポータル サイト アプリのサインイン操作の改善 <!--User Story 1132123-->
 
 Android、iOS、Windows 用の Intune ポータル サイト アプリのサインイン エクスペリエンス向上のために、今後数か月間に予定されている変更についてお知らせします。 Azure AD でこの変更が行われ次第、自動的にすべてのプラットフォームでポータル サイト アプリのユーザー エクスペリエンスが一新される予定です。 また、自動生成される一時使用コードを使用して、別のデバイスからポータル サイトにサインインできるようになりました。 これは、資格情報を使用せずにサインインする必要がある場合には特に便利です。
 
 以前のサインイン エクスペリエンス、資格情報を使用した新たなエクスペリエンス、別のデバイスからのエクスペリエンスのスクリーンショットを[アプリ UI の新機能](whats-new-app-ui.md)に関するページで確認できます。
 
-#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>変更の計画:Intune パートナー ポータルのエクスペリエンスが変更されます<!-- 1050016 -->
+#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>変更の計画: Intune で Intune パートナー ポータル エクスペリエンスが変更されます <!-- 1050016 -->
 
 2017 年 5 月中旬のサービス更新で、Intune パートナーのページが manage.microsoft.com から削除されます。  
 
 お客様がパートナーの管理者である場合は、Intune パートナーのページで顧客に代わって閲覧したり、操作したりすることができなくなります。代わりに、マイクロソフトの他の 2 つのパートナー ポータルのいずれかでサインインする必要があります。
 
-[Microsoft パートナー センター](https://partnercenter.microsoft.com/)と [Microsoft Office 365 パートナー管理センター](https://portal.office.com/)の両方で、管理している顧客アカウントにサインインできます。 パートナーとして前進するために、これらのサイトのいずれかを使用して顧客の管理を行いましょう。
+[Microsoft パートナー センター](https://partnercenter.microsoft.com/)と [Microsoft 365 管理センター](https://admin.microsoft.com/)の両方で、管理している顧客アカウントにサインインできます。 パートナーとして前進するために、これらのサイトのいずれかを使用して顧客の管理を行いましょう。
 
 
-#### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple の要求による Application Transport Security 対応のための更新<!--748318-->
+#### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple の要求による Application Transport Security 対応のための更新 <!--748318-->
 
 Apple は、Application Transport Security (ATS) の特定の要件を適用すると発表しました。 ATS では、HTTPS 経由で行われるアプリ通信すべてに、より厳格なセキュリティ保護が適用されます。 この変更により、iOS ポータル サイト アプリを使用している Intune ユーザーが影響を受けます。
 
@@ -148,11 +149,11 @@ Intune のデバイス コンプライアンス ポリシーにより有効に�
 
 Android 用ポータル サイト アプリでは、ユーザー インターフェイスが最新の外観となり、ユーザー エクスペリエンスが向上しました。 主な更新内容は次のとおりです。
 
-- 色:ポータル サイトのタブ ヘッダーの色が、IT が定義するブランド色になります。
-- アプリ:**[アプリ]** タブの **[おすすめアプリ]** ボタンと **[すべてのアプリ]** ボタンが更新されました。
-- ［検索］:**[アプリ]** タブの **[検索]** ボタンが浮動アクション ボタンになりました。
-- アプリのナビゲーション:**[すべてのアプリ]** ビューで **[おすすめ]**、**[すべて]**、**[カテゴリ]** のタブ付きビューが表示され、移動がより簡単になりました。
-- サポート:**[デバイス]** タブと **[IT に連絡]** タブが更新されて、読みやすくなりました。
+- 色: ポータル サイトのタブ ヘッダーの色が、IT が定義するブランド色になります。
+- アプリ: **[アプリ]** タブの **[おすすめアプリ]** ボタンと **[すべてのアプリ]** ボタンが更新されました。
+- 検索: **[アプリ]** タブの **[検索]** ボタンが浮動アクション ボタンになりました。
+- ナビゲーション アプリ: **[すべてのアプリ]** ビューで **[おすすめ]**、**[すべて]** および **[カテゴリ]** のタブ付きビューが表示され、移動がより簡単になります。
+- サポート: **[デバイス]** タブと **[IT に連絡]** タブが更新されて、読みやすくなりました。
 
 これらの変更について詳しくは、「[Intune とエンド ユーザー アプリの UI の更新](whats-new-app-ui.md)」をご覧ください。
 
@@ -160,7 +161,7 @@ Android 用ポータル サイト アプリでは、ユーザー インターフ
 
 ポータル Web サイトでの設計変更に伴い、iOS と Android ユーザーは、管理されていないデバイスで "登録なしで使用可能" として割り当てられているアプリをインストールできるようになります。 Intune 資格情報を使用して、ユーザーはポータル Web サイトにログインし、割り当てられているアプリの一覧を表示することができます。 "登録なしで使用可能" なアプリのアプリ パッケージは、ポータル Web サイトからダウンロードできます。 この変更は、インストールするために登録が必要なアプリには影響しません。そのようなアプリをインストールする場合は、デバイスの登録が求められます。
 
-#### <a name="signing-script-for-windows-10-company-portal---941642--"></a>Windows 10 ポータル サイトの署名スクリプト<!--941642-->
+#### <a name="signing-script-for-windows-10-company-portal---941642--"></a>Windows 10 ポータル サイトの署名スクリプト <!--941642-->
 
 Windows 10 ポータル サイト アプリのダウンロードおよびサイドロードの必要がある場合に、スクリプトを使用して、組織のアプリ署名プロセスを簡素化および合理化できるようになりました。   スクリプトとこれを使用するための手順をダウンロードするには、TechNet ギャラリーの [Windows 10 ポータル サイトの Microsoft Intune 署名スクリプト](https://aka.ms/win10cpscript)に関する記事をご覧ください。 この発表に関して詳しくは、Intune サポート チームのブログの「[Updating your Windows 10 Company Portal app (Windows 10 ポータル サイト アプリの更新)](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/)」をご覧ください。
 
@@ -183,7 +184,7 @@ Windows 10 ポータル サイト アプリのダウンロードおよびサイ�
 - [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
 - [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
 
-#### <a name="best-practice-make-sure-your-company-portal-apps-are-up-to-date---879465--"></a>ベスト プラクティス: ポータル サイト アプリが最新かどうかを確認する<!--879465-->
+#### <a name="best-practice-make-sure-your-company-portal-apps-are-up-to-date---879465--"></a>ベスト プラクティス: ポータル サイト アプリが最新かどうかを確認する <!--879465-->
 
 2016 年 12 月にマイクロソフトは、ユーザーのグループの iOS、Android、Windows 8.1 以降、または Windows Phone 8.1 以降のデバイスの登録時に、これらのグループへの多要素認証 (MFA) の強制を有効にする更新プログラムをリリースしました。 この機能を使用するには、Android (v5.0.3419.0 以降) および iOS (v2.1.17 以降) 向けのポータル サイト アプリの特定のベースライン バージョンが必要です。
 
@@ -206,7 +207,7 @@ Windows 10 ポータル サイト アプリのダウンロードおよびサイ�
 
 ### <a name="notices"></a>通知
 
-#### <a name="group-migration-will-not-require-any-updates-to-groups-or-policies-for-ios-devices---898837--"></a>グループの移行に、iOS デバイス用のグループまたはポリシーの更新は不要<!--898837-->
+#### <a name="group-migration-will-not-require-any-updates-to-groups-or-policies-for-ios-devices---898837--"></a>グループの移行に、iOS デバイス用のグループまたはポリシーの更新は不要 <!--898837-->
 業務用デバイスの登録プロファイルで事前に割り当てられている Intune デバイス グループごとに、Azure Active Directory デバイス グループへの移行時に、業務用デバイスの登録プロファイルの名前に基づいて、AAD に対応する動的デバイス グループが作成されます。 これにより、デバイスは登録時に確実に自動でグループ化され、元の Intune グループと同じポリシーおよびアプリが受信されるようになります。
 
 テナントがグループ化と対象設定のための移行プロセスに入ると、Intune で自動的に動的 AAD グループが作成され、業務用デバイスの登録プロファイルの対象となる Intune グループに対応します。 Intune 管理者が対象となる Intune グループを削除しても、対応する動的 AAD グループは削除されません。 グループのメンバーと動的クエリは消去されますが、グループ自体は、IT 管理者が AAD ポータルで削除するまで残ります。
@@ -229,9 +230,9 @@ Windows および Windows Phone のユーザーがデバイスを登録しよう
 3 月以降、Android 用ポータル サイト アプリでは[材料設計ガイドライン](https://material.io/guidelines/material-design/introduction.html)に従って、最新の外観が作成されます。 この改善されたユーザー エクスペリエンスには、次のものが含まれます。
 
 * __色__: タブ ヘッダーを、カスタムの色パレットに従って色付けすることができます。
-* __インターフェイス__:[アプリ] タブの [おすすめアプリ] ボタンと [すべてのアプリ] ボタンが更新されました。[検索] ボタンは浮動アクション ボタンになりました。
-* __ナビゲーション__:[すべてのアプリ] ビューで [おすすめ]、[すべて]、[カテゴリ] のタブ付きビューが表示され、移動がより簡単になりました。
-* __サービス__:[デバイス] タブと [IT に連絡] タブが読みやすくなりました。
+* __インターフェイス__: [アプリ] タブの [おすすめアプリ] ボタンと [すべてのアプリ] ボタンが更新されました。[検索] ボタンは浮動アクション ボタンになりました。
+* __ナビゲーション__: [すべてのアプリ] で [おすすめ]、[すべて] および [カテゴリ] のタブ付きビューが表示され、移動がより簡単になります。
+* __サービス__: [デバイス] タブと [IT に連絡] タブが読みやすくなりました。
 
 [UI の更新ページ](whats-new-app-ui.md)で、更新前と後のイメージを確認できます。
 
@@ -258,7 +259,7 @@ Azure の Intune プレビューの新機能は[ここ](whats-new.md)で確認�
 #### <a name="android-711-support---694397--"></a>Android 7.1.1 のサポート <!--694397-->
 Intune では Android 7.1.1 が完全にサポートされ、管理されるようになりました。
 
-#### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them---unknown--"></a>iOS デバイスが無効か、管理コンソールと通信できない問題を解決 <!--unknown-->
+#### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them---unknown--"></a>デバイスが無効か、管理コンソールとデバイスが通信できない問題を解決 <!--unknown-->
 ユーザーのデバイスと Intune の接続が失われるとき、新しいトラブルシューティング手順を指示できます。会社リソースへのアクセスを回復するのに役立ちます。 「[デバイスが無効か、管理コンソールとデバイスが通信できない](troubleshoot-device-enrollment-in-intune.md#devices-are-inactive-or-the-admin-console-cant-communicate-with-them)」を参照してください。
 
 ### <a name="notices"></a>通知
@@ -302,13 +303,16 @@ iOS 用ポータル サイトでは、ユーザーに発生する読み込みプ
 
 Azure Portal の管理者エクスペリエンスでは、既に発表されている新しいグループ化とターゲット設定の機能が使用されます。既存のテナントを新しいグループ化エクスペリエンスに移行すると、テナントの管理者エクスペリエンスも新しいプレビュー版に移行されます。 それまでの間、Azure Portal で Microsoft Intune のために用意しているものを[新しいドキュメント](/intune/what-is-intune)でご確認いただけます。
 
-__Azure Portal のパブリック プレビューでの電気通信経費管理の統合__ <!--747605--> Azure Portal では、サード パーティの電気通信経費管理 (TEM) サービスとの統合のプレビューが始められています。 Intune を使用して、国内およびローミングのデータ使用量を制限できます。 これらの統合は、[Saaswedo](http://www.saaswedo.com/) で始まっています。 試用テナントでこの機能を有効にする場合は、[Microsoft サポートにお問い合わせください](get-support.md)。
+__Azure Portal のパブリック プレビューでの電気通信経費管理の統合__ <!--747605-->
+Azure Portal では、サード パーティの電気通信経費管理 (TEM) サービスとの統合のプレビューが始められています。 Intune を使用して、国内およびローミングのデータ使用量を制限できます。 これらの統合は、[Saaswedo](http://www.saaswedo.com/) で始まっています。 試用テナントでこの機能を有効にする場合は、[Microsoft サポートにお問い合わせください](get-support.md)。
 
 ### <a name="new-capabilities"></a>新しい機能
 
-__すべてのプラットフォームでの多要素認証__ <!--747590--> Azure Active Directory で Microsoft Intune 登録アプリケーションに多要素認証 (MFA) を構成することにより、Azure の管理ポータルから iOS、Android、Windows 8.1+、または Windows Phone 8.1+ デバイスを登録すると、選択したユーザー グループに MFA を適用できます。
+__すべてのプラットフォームでの多要素認証__ <!--747590-->
+Azure Active Directory で Microsoft Intune 登録アプリケーションに多要素認証 (MFA) を構成することにより、Azure の管理ポータルから iOS、Android、Windows 8.1+、または Windows Phone 8.1+ デバイスを登録すると、選択したユーザー グループに MFA を適用できます。
 
-__モバイル デバイス登録を制限する機能__ <!--747596--> Intune では、登録を許可されるモバイル デバイス プラットフォームを制御する新しい登録制限が追加されています。 Intune では、モバイル デバイス プラットフォームが iOS、macOS、Android、Windows、Windows Mobile に分かれています。
+__モバイル デバイス登録を制限する機能__ <!--747596-->
+Intune では、登録を許可されるモバイル デバイス プラットフォームを制御する新しい登録制限が追加されています。 Intune では、モバイル デバイス プラットフォームが iOS、macOS、Android、Windows、Windows Mobile に分かれています。
 * モバイル デバイスの登録を制限しても、PC クライアントの登録は制限されません。
 * iOS のみについては、個人所有デバイスの登録をブロックする 1 つの追加オプションがあります。
 
@@ -316,9 +320,11 @@ __モバイル デバイス登録を制限する機能__ <!--747596--> Intune �
 
 ### <a name="notices"></a>通知
 
-__Azure Portal に移動する登録での多要素認証__ <!--VSO 750545--> これまで、Intune の登録に MFA を設定するには、Intune コンソールまたは構成マネージャー (2016 年 10 月のリリースより前) コンソールを使用しました。 この機能更新により、今後は Intune の資格情報で [Microsoft Azure Portal ](https://manage.windowsazure.com)にログインし、Azure AD を使用して MFA の設定を構成するようになります。 詳細については、[こちら](https://aka.ms/mfa_ad)をご覧ください。
+__Azure Portal に移動する登録での多要素認証__ <!--VSO 750545-->
+これまで、Intune の登録に MFA を設定するには、Intune コンソールまたは構成マネージャー (2016 年 10 月のリリースより前) コンソールを使用しました。 この機能更新により、今後は Intune の資格情報で [Microsoft Azure Portal ](https://manage.windowsazure.com)にログインし、Azure AD を使用して MFA の設定を構成するようになります。 詳細については、[こちら](https://aka.ms/mfa_ad)をご覧ください。
 
-__Android 用ポータル サイト アプリが中国で利用可能になる__ <!--VSO 658093--> Android 用ポータル サイト アプリが中国でダウンロードできるようになりました。 中国には Google Play ストアがないので、Android デバイスは中国のアプリ マーケットプレースからアプリを入手する必要があります。 Android 用ポータル サイト アプリは、以下のストアでダウンロードできます。
+__中国で利用可能になった Android 用ポータル サイト アプリ__ <!--VSO 658093-->
+Android 用ポータル サイト アプリが中国でダウンロードできるようになりました。 中国には Google Play ストアがないので、Android デバイスは中国のアプリ マーケットプレースからアプリを入手する必要があります。 Android 用ポータル サイト アプリは、以下のストアでダウンロードできます。
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
 * [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
 * [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
@@ -337,11 +343,14 @@ Android 用ポータル サイト アプリは、Google Play 開発者サービ�
 
 ### <a name="deprecations"></a>廃止予定
 
-__Firefox による Silverlight のサポート終了__ <!--VSO TBA--> Mozilla では、2017 年 3 月をもって、[Firefox ブラウザー](https://www.mozilla.org/firefox)のバージョン 52 で Silverlight のサポートを終了します。 結果として、バージョンが 51 より後の Firefox では既存の Intune コンソールにログインできなくなります。 管理コンソールにアクセスするときは、Internet Explorer 10 または 11 を使用するか、[バージョンが 52 より前の Firefox](https://ftp.mozilla.org/pub/firefox/releases/) を使用することが推奨されます。 Intune を Azure Portal に移行することで、Silverlight を利用しなくてもさまざまな[最新ブラウザー](/azure/azure-preview-portal-supported-browsers-devices)に対応します。
+__Firefox では Silverlight のサポートが終了しました__ <!--VSO TBA-->
+Mozilla では、2017 年 3 月をもって、[Firefox ブラウザー](https://www.mozilla.org/firefox)のバージョン 52 で Silverlight のサポートを終了します。 結果として、バージョンが 51 より後の Firefox では既存の Intune コンソールにログインできなくなります。 管理コンソールにアクセスするときは、Internet Explorer 10 または 11 を使用するか、[バージョンが 52 より前の Firefox](https://ftp.mozilla.org/pub/firefox/releases/) を使用することが推奨されます。 Intune を Azure Portal に移行することで、Silverlight を利用しなくてもさまざまな[最新ブラウザー](/azure/azure-preview-portal-supported-browsers-devices)に対応します。
 
-__Exchange Online モバイル受信トレイ ポリシーの削除__ <!--770687--> 12 月以降、管理者は Intune コンソールで Exchange Online (EAS) モバイル メールボックス ポリシーを表示または構成できなくなります。 この変更は、12 月から 1 月にかけてすべての Intune テナントに展開されます。 既存のすべてのポリシー構成は今までどおりですが、新しいポリシーの構成には Exchange 管理シェルを使います。 詳しくは、[こちら](https://technet.microsoft.com/library/bb123783%28v=exchg.150%29.aspx)をご覧ください。
+__Exchange Online のモバイル受信トレイ ポリシーの削除__ <!--770687-->
+12 月以降、管理者は Intune コンソールで Exchange Online (EAS) モバイル メールボックス ポリシーを表示または構成できなくなります。 この変更は、12 月から 1 月にかけてすべての Intune テナントに展開されます。 既存のすべてのポリシー構成は今までどおりですが、新しいポリシーの構成には Exchange 管理シェルを使います。 詳しくは、[こちら](https://technet.microsoft.com/library/bb123783%28v=exchg.150%29.aspx)をご覧ください。
 
-__Android での Intune AV Player、Image Viewer、PDF Viewer アプリのサポート終了__<!--747553--> 2016 年 12 月中旬以降、Intune AV Player、Image Viewer、PDF Viewer の各アプリが使用できなくなります。 これらのアプリの代わりに、Azure Information Protection アプリが使用できるようになります。 Azure Information Protection アプリについて詳しくは、[こちら](/information-protection/rms-client/mobile-app-faq)をご覧ください。
+__Android での Intune AV Player、Image Viewer、PDF Viewer アプリのサポート終了__ <!--747553-->
+2016 年 12 月中旬以降、Intune AV Player、Image Viewer、PDF Viewer の各アプリを使用できなくなります。 これらのアプリの代わりに、Azure Information Protection アプリが使用できるようになります。 Azure Information Protection アプリについて詳しくは、[こちら](/information-protection/rms-client/mobile-app-faq)をご覧ください。
 
 ## <a name="november-2016"></a>2016 年 11 月
 

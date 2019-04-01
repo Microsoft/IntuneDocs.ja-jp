@@ -7,20 +7,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2176eda7ce54906c6af5b34cc3db49e21ecda274
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 1c6a2f4fc3e3cae171cea96520d075a659d4d1ca
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231963"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566337"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>Windows Holographic を実行するデバイスを Windows Holographic for Business にアップグレードする
 
@@ -36,8 +37,8 @@ Microsoft Intune には、デバイスの管理と保護に役立つ多くの設
 
 ## <a name="edition-upgrade"></a>エディションのアップグレード
 
-- **アップグレード後のエディション**:**[Windows 10 Holographic for Business]** を選択します。
-- **ライセンス ファイル**:提供された XML ライセンス ファイルを参照して選択します。
+- **アップグレード後のエディション**: 選択**Windows 10 Holographic for Business**します。
+- **[ライセンス ファイル]**: 提供された XML ライセンス ファイルを参照して選びます。
 
   ![Holographic for Business のライセンス情報を含む XML ファイル名を入力します](media/Holographic-edition-upgrade.png)
  

@@ -18,73 +18,76 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1708066ce0065b58f5d7399862ac157d5647341
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 16a610050a7c4ce094005617304249acdb961878
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55841319"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57335107"
 ---
-# <a name="enroll-your-windows-phone-81-device-in-intune"></a>Intune に Windows Phone 8.1 デバイスを登録する
+# <a name="enroll-your-windows-phone-81-device-in-intune"></a>Intune に Windows Phone 8.1 デバイスを登録する  
 
-職場または学校が Microsoft Intune を使用している場合は、お使いのデバイスを登録して、会社の電子メール、ファイル、またその他のリソースにアクセスできます。 デバイスを登録すると、組織は会社のデータをセキュリティで保護することができます。 登録の詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)」と[会社のサポートがユーザーのデバイスに関して確認できる情報と確認できない情報](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)に関するページを参照してください。
+職場または学校の電子メール、ファイル、およびその他のリソースにアクセスするデバイスを登録します。 デバイスを登録すると、組織は会社のデータをセキュリティで保護することができます。 登録の詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなるか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)」と[会社のサポートがユーザーのデバイスに関して確認できる情報と確認できない情報](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)に関するページを参照してください。  
+
+Intune にデバイスを登録するには、アクセス許可または現在のアカウントの状態と一致する命令のセットに従います。
+
+## <a name="enroll-through-company-portal"></a>ポータル サイトを使用して登録します。  
+Microsoft Store からポータル サイト アプリをインストールする場合は、以下の手順を実行します。 
+
+1.  **[スタート]**  >  **[ストア]** をタップします。  
+
+2.  **[検索]** をタップし、「**ポータル サイト**」と入力します。  
+
+3.  結果の一覧で、**[ポータル サイト]** をタップします。  
 
 
-Intune に Phone 8.1 デバイスを登録するには、自分の職場または学校に当てはまる手順に従ってください。
+    ![会社のポータルの検索結果](./media/WP81-1-CP-search-store-v2.png)  
 
--   [会社で Microsoft ストアからポータル サイトを使用できるようにする場合](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
+4.  **[ポータル サイト]** &gt; **[インストール]** を順にタップします。  
 
--   [Windows Phone から Microsoft ストアへのアクセスが許可されていない場合、または Microsoft アカウントを所有していない場合](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
-## <a name="if-your-company-lets-you-use-the-company-portal-from-the-microsoft-store"></a>会社で Microsoft ストアからポータル サイトを使用できる場合
-ポータル サイト アプリをデバイスにインストールします。
+    ![ポータル サイトのインストール](./media/WP81-2-CP-install-v2.png)  
 
-1.  **[スタート]** &gt; **[ストア]** をタップします。
+デバイスを登録するには、次の手順を実行します。  
 
-2.  **[検索]** をタップし、「**ポータル サイト**」と入力します。
+1.  デバイスで、**Microsoft Intune ポータル サイト** アプリを開きます。  
 
-3.  結果の一覧で、**[ポータル サイト]** をタップします。
 
-    ![会社のポータルの検索結果](./media/WP81-1-CP-search-store-v2.png)
+2.  資格情報を入力します。 会社の使用条件に同意するように求められる場合があります。  
 
-4.  **[ポータル サイト]** &gt; **[インストール]** を順にタップします。
+3.  **[マイ デバイス]** までスワイプします。  
 
-    ![ポータル サイトのインストール](./media/WP81-2-CP-install-v2.png)
+4.  **[このデバイスを登録または特定するには、タップしてください]** を選択します。  
 
-デバイスを登録するには、次の手順を実行します。
 
-1.  デバイスで、**Microsoft Intune ポータル サイト** アプリを開きます。
+    ![[このデバイスを登録または特定するには、タップしてください] 画面](./media/WP81-enroll-1-swipe-my-devices.png)  
 
-2.  資格情報を入力します。 会社の使用条件に同意するように求められる場合があります。
+5.  **[このデバイスの登録]** をタップします。  
 
-3.  **[マイ デバイス]** までスワイプします。
 
-4.  **[このデバイスを登録または特定するには、タップしてください]** をタップします。
+    ![[このデバイスの登録] 画面](./media/WP81-enroll-2-enroll-this-device.png)  
 
-    ![[このデバイスを登録または特定するには、タップしてください] 画面](./media/WP81-enroll-1-swipe-my-devices.png)
+6.  **[アカウントの追加]** をタップします。  
 
-5.  **[このデバイスの登録]** をタップします。
 
-    ![[このデバイスの登録] 画面](./media/WP81-enroll-2-enroll-this-device.png)
+    ![[ワークプレース] 設定画面](./media/WP81-enroll-3-workplace-add-acct.png)  
 
-6.  **[アカウントの追加]** をタップします。
+7.  要求された追加情報を入力し、**[サインイン]** をタップして、登録を完了します。 **[設定]** &gt; **[ワークプレース]** ページに社内アカウントが表示されているはずです。  
 
-    ![[ワークプレース] 設定画面](./media/WP81-enroll-3-workplace-add-acct.png)
 
-7.  要求された追加情報を入力し、**[サインイン]** をタップして、登録を完了します。 **[設定]** &gt; **[ワークプレース]** ページに社内アカウントが表示されているはずです。
+    ![追加されたアカウントの画面](./media/WP81-enroll-4-account-added.png)  
 
-    ![追加されたアカウントの画面](./media/WP81-enroll-4-account-added.png)
+## <a name="enroll-through-settings-app"></a>[設定] アプリを使用して登録します。  
+Windows Phone デバイスから Microsoft Store にアクセスできない場合、または Microsoft アカウントがあるない場合は、以下の手順を実行します。
 
-## <a name="if-you-are-not-allowed-to-access-the-microsoft-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>Windows Phone から Microsoft ストアへのアクセスが許可されていない場合、または Microsoft アカウントを所有していない場合
+1.  **[設定]** &gt; **[社内]** の順にタップします。  
 
-1.  **[設定]** &gt; **[社内]** の順にタップします。
+2.  **[アカウントの追加]** をタップし、仕事用アカウントを使用してサインインします。  
 
-2.  **[アカウントの追加]** をタップし、仕事用アカウントを使用してサインインします。
+3.  要求された追加情報を入力し、**[サインイン]** をタップして、登録を完了します。  
 
-3.  要求された追加情報を入力し、**[サインイン]** をタップして、登録を完了します。
+4.  会社のアプリまたはハブをインストールするように求められたら、関連するボックスがオンになっていることを確認し、**[完了]** をタップします。  
 
-4.  会社のアプリまたはハブをインストールするように求められたら、関連するボックスがオンになっていることを確認し、**[完了]** をタップします。
-
-会社のサポートによって、登録時に Intune ポータル サイトがインストールされるようにセットアップされている場合は、その Intune ポータル サイトがアプリの一覧に表示されることがわかります。
+会社のサポートによって、登録時に Intune ポータル サイトがインストールされるようにセットアップされている場合は、その Intune ポータル サイトがアプリの一覧に表示されることがわかります。  
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

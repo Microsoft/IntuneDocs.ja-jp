@@ -6,20 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/10/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6939ee44261215cf00805c975889d7d56c4e443
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: b6c6c6e3e999e44ad6a07b4d8bdc1ddf9c400cf7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236485"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565453"
 ---
 # <a name="android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Intune を使用して電子メール、認証、および同期を構成するための Android エンタープライズ デバイスの設定
 
@@ -35,25 +36,25 @@ Intune での電子メール プロファイルの詳細については、[電�
 
 ## <a name="android-enterprise"></a>Android エンタープライズ
 
-- **[メール アプリ]**:**[Gmail]** または **[Nine Work]** を選択します。
-- **[電子メール サーバー]**:Exchange サーバーのホスト名。 たとえば、「`outlook.office365.com`」と入力します。
-- **[AAD からのユーザー名の属性]**:Intune が Azure Active Directory (Azure AD) から取得する名前。 Intune はこのプロファイルで使用されるユーザー名を動的に生成します。 次のようなオプションがあります。
+- **[メール アプリ]**: **[Gmail]** または **[Nine Work]** を選択します。
+- **[電子メール サーバー]**: Exchange サーバーのホスト名。 たとえば、「`outlook.office365.com`」と入力します。
+- **[AAD からのユーザー名の属性]**: Intune が Azure Active Directory (Azure AD) から取得する名前。 Intune はこのプロファイルで使用されるユーザー名を動的に生成します。 次のようなオプションがあります。
 
-  - **[ユーザー プリンシパル名]**:`user1` や `user1@contoso.com` などの名前を取得します。
-  - **[ユーザー名]**:`user1` などの名前のみを取得します。
+  - **[ユーザー プリンシパル名]**: `user1` または `user1@contoso.com` などの名前を取得します。
+  - **[ユーザー名]**: `user1` などの名前のみを取得します。
 
-- **[AAD からのメール アドレス属性]**:この名前は、Intune が Azure AD から取得する電子メール属性です。 Intune では、このプロファイルに使用される電子メール アドレスが動的に生成されます。 次のようなオプションがあります。
-  - **[ユーザー プリンシパル名]**:電子メール アドレスとして完全プリンシパル名 (`user1@contoso.com`、`user1` など) を使用します。
-  - **[プライマリ SMTP アドレス]**:プライマリ SMTP アドレス (`user1@contoso.com` など) を使用して Exchange にサインインします。
+- **AAD からのメール アドレス属性**: この名前はメール属性を Intune が Azure AD から取得します。 Intune では、このプロファイルに使用される電子メール アドレスが動的に生成されます。 次のようなオプションがあります。
+  - **[ユーザー プリンシパル名]**: 電子メール アドレスとして完全プリンシパル名 (`user1@contoso.com`、`user1` など) を使用します。
+  - **プライマリ SMTP アドレス**: プライマリ SMTP アドレスを使用します。 `user1@contoso.com`、Exchange にサインインします。
 
-- **[認証方法]**:電子メール プロファイルで使用する認証方法として、**[ユーザー名とパスワード]** または **[証明書]** を選択します。
+- **[認証方法]**: 電子メール プロファイルで使用する認証方法として、**[ユーザー名とパスワード]** または **[証明書]** を選択します。
   - **[証明書]** を選択した場合は、Exchange 接続の認証のために事前に作成しておいたクライアント SCEP または PKCS 証明書プロファイルを選択します。
-- **[SSL]**:電子メールの送受信および Exchange サーバーとの通信に、SSL (Secure Sockets Layer) 通信を使用するには、**[有効]** を選択します。
-- **[同期する電子メールの日数]**:同期する電子メールの日数を選択します。 または、利用可能なすべての電子メールを同期する場合は **[無制限]** を選択します。
-- **[同期するコンテンツの種類]** (Nine Work のみ):デバイス上で同期するデータを選択します。 次のようなオプションがあります。
-  - **[連絡先]**:エンド ユーザーが自分のデバイスに連絡先を同期できるようにするには、**[有効]** を選択します。
-  - **[カレンダー]**:エンド ユーザーが自分のデバイスにカレンダーを同期できるようにするには、**[有効]** を選択します。
-  - **[タスク]**:エンド ユーザーが自分のデバイスにタスクを同期できるようにするには、**[有効]** を選択します。
+- **[SSL]**: 電子メールの送受信および Exchange サーバーとの通信に、SSL (Secure Sockets Layer) 通信を使用するには、**[有効]** を選択します。
+- **同期する電子メールの量**: 同期する電子メールの時間の量を選択します。 または、利用可能なすべての電子メールを同期する場合は **[無制限]** を選択します。
+- **同期するコンテンツの種類**(Nine Work のみ): デバイスで同期するデータを選択します。 次のようなオプションがあります。
+  - **[連絡先]**: エンド ユーザーが自分のデバイスに連絡先を同期できるようにするには、**[有効]** を選択します。
+  - **[カレンダー]**: エンド ユーザーが自分のデバイスにカレンダーを同期できるようにするには、**[有効]** を選択します。
+  - **[タスク]**: エンド ユーザーが自分のデバイスにタスクを同期できるようにするには、**[有効]** を選択します。
 
 ## <a name="next-steps"></a>次の手順
 

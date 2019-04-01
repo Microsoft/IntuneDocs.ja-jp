@@ -6,21 +6,22 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 12/05/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0707226412d314ac1d44ba339b4c9151b394919
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 4973dc5038ecfe9a8e909df1a1db3feceb30979b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233901"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565334"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune での macOS デバイスの機能設定
 
@@ -35,9 +36,9 @@ Intune には、macOS ユーザーがネットワーク内の AirPrint プリン
 1. **[設定]** で **[AirPrint]** を選択します。 AirPrint サーバーの次のプロパティを入力します。
 
     - **[IP アドレス]**: プリンターの IPv4 アドレスまたは IPv6 アドレスを入力します。 ホスト名を使用してプリンターを識別している場合は、ターミナル アプリでプリンターに ping を実行することで IP アドレスを取得できます。 詳細については、「[IP アドレスとパスを取得する](#get-the-ip-address-and-path)」(この記事) を参照してください。
-    - **パス**:プリンターのパスを入力します。 通常、このパスはネットワーク上のプリンターの `ipp/print` です。 詳細については、「[IP アドレスとパスを取得する](#get-the-ip-address-and-path)」(この記事) を参照してください。
-    - **ポート**:AirPrint の接続先のリスニング ポートを入力します。 このプロパティを空白のままにすると、AirPrint には既定のポートが使用されます。 iOS 11.0 以降で使用できます。
-    - **TLS**:トランスポート層セキュリティ (TLS) で AirPrint の接続を保護するには、**[有効]** を選択します。 iOS 11.0 以降で使用できます。
+    - **[パス]**: プリンターのパスを入力します。 通常、このパスはネットワーク上のプリンターの `ipp/print` です。 詳細については、「[IP アドレスとパスを取得する](#get-the-ip-address-and-path)」(この記事) を参照してください。
+    - **[ポート]**: AirPrint の接続先のリスニング ポートを入力します。 このプロパティを空白のままにすると、AirPrint には既定のポートが使用されます。 iOS 11.0 以降で使用できます。
+    - **[TLS]**: トランスポート層セキュリティ (TLS) で AirPrint の接続を保護するには、**[有効]** を選択します。 iOS 11.0 以降で使用できます。
 
 2. **[追加]** を選択します。 AirPrint サーバーが一覧に追加されます。 多数の AirPrint サーバーを追加できます。
 

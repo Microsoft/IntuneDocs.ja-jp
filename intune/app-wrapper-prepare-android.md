@@ -5,10 +5,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2018
-ms.topic: conceptual
+ms.date: 03/11/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b554bd4eb6aa5e49354501e69326b6eeb11098ef
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 64de72822ad8d2f8d9893e3428208ff1363d33e2
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236980"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566048"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために Android アプリを準備する
 
@@ -30,7 +31,6 @@ ms.locfileid: "57236980"
 Android 用 Microsoft Intune アプリ ラッピング ツールを使用して社内 Android アプリの動作を変更すれば、アプリ自体のコードを変更しなくてもアプリの機能を制限できます。
 
 このツールは、PowerShell で実行される Windows のコマンドライン アプリケーションであり、Android アプリのラッパーを作成します。 アプリがラッピングされた後は、Intune で[モバイル アプリケーション管理ポリシー](app-protection-policies.md)を構成することによって、アプリの機能を変更できます。
-
 
 このツールを実行する前に、「[アプリ ラッピング ツールを実行するうえでのセキュリティ上の考慮事項](#security-considerations-for-running-the-app-wrapping-tool)」を確認してください。 このツールをダウンロードするには、GitHub の「[Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android)」 (Android 用 Microsoft Intune アプリ ラッピング ツール) にアクセスしてください。
 
@@ -53,10 +53,12 @@ Android 用 Microsoft Intune アプリ ラッピング ツールを使用して�
 
 - Android では、すべてのアプリ パッケージ (.apk) が署名されている必要があります。 既存の証明書の**再利用**と署名証明書の全体的なガイダンスについては、「[署名証明書とラッピング アプリの再利用](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps)」を参照してください。 ラッピングされた出力アプリへの署名に必要な**新しい**資格情報を生成するには、Java の実行可能ファイル keytool.exe を使います。 設定するパスワードはすべて安全である必要がありますが、後でアプリ ラッピング ツールを実行するときに必要になるので記録しておきます。
 
-> [!NOTE]
-> Intune アプリ ラッピング ツールでは、アプリの署名で Google の v2 とまもなくリリースされる v3 の署名スキームはサポートされません。 Intune アプリ ラッピング ツールを使用して .apk ファイルをラッピングした後で、[Google 提供の Apksigner ツール]( https://developer.android.com/studio/command-line/apksigner)を使用することをお勧めします。 そうすると、アプリがエンド ユーザー デバイスで使用されるとき、Android 標準によって適切に起動されるようになります。 
+    > [!NOTE]
+    > Intune アプリ ラッピング ツールでは、アプリの署名で Google の v2 とまもなくリリースされる v3 の署名スキームはサポートされません。 Intune アプリ ラッピング ツールを使用して .apk ファイルをラッピングした後で、[Google 提供の Apksigner ツール]( https://developer.android.com/studio/command-line/apksigner)を使用することをお勧めします。 そうすると、アプリがエンド ユーザー デバイスで使用されるとき、Android 標準によって適切に起動されるようになります。 
 
-- (省略可能) 入力アプリ内で Multidex を有効にします。 ラッピング中に追加される Intune MAM SDK クラスにより、アプリが Dalvik Executable (DEX) サイズの上限に達する場合があります。 DEX ファイルは、Android アプリのコンパイルの一部です。 このシナリオでは、アプリの内部で Multidex を有効にするのがベスト プラクティスです。 特定の組織では、アプリをコンパイルするユーザー (例: アプリのビルド チーム) と共同作業する必要がある場合があります。 
+- (省略可能) ラッピング中に追加される Intune MAM SDK クラスにより、アプリが Dalvik Executable (DEX) サイズの上限に達する場合があります。 DEX ファイルは、Android アプリのコンパイルの一部です。 Intune アプリ ラッピング ツールでは、21 以上レベルの最小の API でアプリのラッピング中には、DEX ファイル オーバーフローを自動的に処理 (の[1.0.2501.1 v.](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases))。 最小値は、ラッパーを使用して、API レベルを向上させるがベスト プラクティスと最小 API レベル 21 < 向け`-UseMinAPILevelForNativeMultiDex`フラグ。 お客様は、アプリの最小 API レベルを増やすことはできません、DEX オーバーフローの次の回避策が利用できます。 特定の組織では、アプリをコンパイルするユーザー (例: アプリのビルド チーム) と共同作業する必要がある場合があります。
+* ProGuard を使用して、アプリのプライマリ DEX ファイルから未使用のクラスの参照を削除します。
+* V3.1.0 を使用して顧客の以降、Android の Gradle プラグインの無効にする、 [D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html)します。  
 
 ## <a name="install-the-app-wrapping-tool"></a>アプリ ラッピング ツールをインストールする
 
@@ -64,7 +66,7 @@ Android 用 Microsoft Intune アプリ ラッピング ツールを使用して�
 
 2.  ライセンス条項に同意し、インストールを完了します。
 
-このツールをインストールしたフォルダーをメモしておきます。 既定の場所は次のとおりです。C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool です。
+このツールをインストールしたフォルダーをメモしておきます。 既定の場所は、C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool です。
 
 ## <a name="run-the-app-wrapping-tool"></a>アプリ ラッピング ツールを実行する
 
@@ -92,7 +94,8 @@ Android 用 Microsoft Intune アプリ ラッピング ツールを使用して�
 |**-KeyStorePassword**&lt;SecureString&gt;|キーストアの暗号化を解除するために使用するパスワード。 Android では、すべてのアプリケーション パッケージ (.apk) に署名する必要があります。 Java キーツールを使用して KeyStorePassword を生成できます。 詳細については、こちらの Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) を参照してください。| |
 |**-KeyAlias**&lt;String&gt;|署名に使用するキーの名前。| |
 |**-KeyPassword**&lt;SecureString&gt;|署名に使用する秘密キーの暗号化を解除するために使用するパスワード。| |
-|**-SigAlg**&lt;SecureString&gt;| (省略可能) 署名に使用する署名アルゴリズムの名前。 アルゴリズムは秘密キーと互換性を持つ必要があります。|例:SHA256withRSA、SHA1withRSA|
+|**-SigAlg**&lt;SecureString&gt;| (省略可能) 署名に使用する署名アルゴリズムの名前。 アルゴリズムは秘密キーと互換性を持つ必要があります。|例: SHA256withRSA、SHA1withRSA|
+|**-UseMinAPILevelForNativeMultiDex**| (省略可能)21 に、ソースの Android アプリの最小 API レベルを上げるには、このフラグを使用します。 このフラグは、ようにこのアプリをインストールすることがありますが制限されます、確認を求められます。 ユーザーは、パラメーターを追加して確認のダイアログ ボックスをスキップできます"のことを確認します: $false"の PowerShell コマンドにします。 フラグは、お客様は min API < DEX オーバーフロー エラーが原因で正常にラップする失敗 21 を使用したアプリでのみ使用する必要があります。 | |
 | **&lt;CommonParameters&gt;** | (省略可能) コマンドは、verbose、debug などの一般的な PowerShell パラメーターをサポートします。 |
 
 

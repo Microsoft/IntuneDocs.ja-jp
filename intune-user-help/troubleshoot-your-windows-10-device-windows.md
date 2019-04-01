@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/13/2017
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,15 +18,15 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3dba2401240b19b93318946af0e8760fef121518
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 2fe8a765bdb11d0b94dbbb7519360c6e7a01e8ce
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55837579"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 デバイスの登録に関するトラブルシューティング
-「[Intune に Windows 10 Mobile または Windows 10 デスクトップ デバイスを登録する](enroll-your-w10-phone-or-w10-pc-windows.md)」の手順を完了しても職場または学校の電子メールやファイルにアクセスできない場合は、次のトラブルシューティング手順を試してください。
+お使いのデバイスを登録した、職場または学校の電子メールやファイルに、まだアクセスできない場合は、これらのトラブルシューティング手順を実行してください。  
 
 1.  次の 2 つの画面を見て、お使いのデバイスの表示画面に似ている方をご確認ください。 お使いのデバイスの表示画面に対応する手順に従います。
 
@@ -48,13 +48,13 @@ ms.locfileid: "55837579"
 
      ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-   - 上に示した接続情報が表示されない場合、または接続情報は表示されるが一部のオプションが表示されない場合は、**[接続]** をタップし、職場または学校の資格情報でサインインします。 これで接続が完了します。
+   - 上に示した接続情報が表示されない、またはそれが表示が一部のオプションがない、タップ**Connect**します。 職場または学校の資格情報でサインインして、接続します。  
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>[お使いのアカウント] が表示される場合のトラブルシューティング手順
 
 上記の手順を実行しても、職場または学校の電子メールやファイルなどのデータにアクセスできない場合は、**[アカウント]** に戻り、**[職場のアクセス]** をタップします。
 
-- 職場または学校のアカウントが表示された場合は、正常に 接続されています。
+- すると、職場または学校のアカウントが一覧表示すると場合、接続しています。  
 
 - 職場または学校のアカウントが表示されない場合は、**[接続]** をタップしてから、職場または学校の資格情報でサインインします。
 

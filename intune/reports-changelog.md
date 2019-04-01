@@ -6,10 +6,11 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2010
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
@@ -17,18 +18,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8e10549e05f814975337831e3eb9821d87a3f43
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 20c9c1bf5eea12407cba2e00288a039b74fcaca7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834009"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565640"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune データ ウェアハウス API の変更ログ
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 常に Intune データ ウェアハウスの最新の更新プログラムをインストールしてください。
+
+## <a name="1902"></a>1902 
+_リリース日: 2019 年 2 月_
+
+### <a name="power-bi-compliance-app"></a>Power BI のコンプライアンス対応のアプリ 
+
+Power BI オンラインを使用して、Intune データ ウェアハウスへのアクセス、 [Intune コンプライアンス (データ ウェアハウス)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance)アプリ。 この Power BI アプリで今すぐアクセスし、すべての設定を行わなくても、web ブラウザーを離れることがなく、作成済みのレポートを共有できます。 
+
+> [!NOTE]
+> Intune 対応アプリに適用できる 2 つの追加のフィルターがあります。
+
+#### <a name="add-additional-filters-to-the-intune-compliance-app"></a>Intune 対応アプリに追加のフィルターを追加します。
+1. 開く、 [Intune コンプライアンス (データ ウェアハウス)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) web ブラウザーでアプリ。
+2. をクリックして**非準拠デバイス**選択と**準拠していない**で、 **complianceStatus**フィルター。 
+3. をクリックして**不明なデバイス**選択と**はまだ利用できない**で、 **complianceStatus**フィルター。 
 
 ## <a name="1812"></a>1812 
 _2018 年 12 月リリース_

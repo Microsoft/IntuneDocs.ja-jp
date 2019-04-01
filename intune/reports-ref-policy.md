@@ -6,22 +6,23 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
-ms.topic: conceptual
+ms.date: 03/05/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e28f5b7a37e1ed21c4680a57098bdd0a43a79346
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: af0c544540798a52dc018c749909da6cea50df6c
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238406"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566677"
 ---
 # <a name="reference-for-policy-entities"></a>ポリシー エンティティのリファレンス
 
@@ -59,7 +60,7 @@ ms.locfileid: "57238406"
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
 
-**DeviceConfigurationProfileDeviceActivity** エンティティには、成功、保留中、失敗、エラー状態のデバイス数/日が表示されます。 この数は、エンティティに割り当てられているデバイス構成プロファイルを反映しています。 たとえば、割り当てられているすべてのポリシーでデバイスが成功状態の場合、その日の成功カウンターが 1 つ増えます。 成功状態のプロファイルとエラー状態のプロファイルという 2 つのプロファイルがデバイスに割り当てられている場合、エンティティは成功カウンターを増やし、デバイスをエラー状態にします。 エンティティには、過去 30 日間の各状態のデバイス数/日が表示されます。
+**DeviceConfigurationProfileDeviceActivity** エンティティには、成功、保留中、失敗、エラー状態の**デバイス**数/日が表示されます。 この数は、エンティティに割り当てられているデバイス構成プロファイルを反映しています。 たとえば、割り当てられているすべてのポリシーで**デバイス**が成功状態の場合、その日の成功カウンターが 1 つ増えます。 成功状態のプロファイルとエラー状態のプロファイルという 2 つのプロファイルがデバイスに割り当てられている場合、エンティティは成功カウンターを増やし、デバイスをエラー状態にします。 エンティティには、過去 30 日間の各状態のデバイス数/日が表示されます。
 
 | プロパティ  | 説明 | 例 |
 |---------|------------|--------|
@@ -69,9 +70,7 @@ ms.locfileid: "57238406"
 | エラー |エラー状態の一意のデバイス数。 |10 |
 | Failed |失敗状態の一意のデバイス数。 |2 |
 
-
-
-**DeviceConfigurationProfileUserActivity** エンティティには、成功、保留中、失敗、エラー状態のユーザー数/日が表示されます。 この数は、エンティティに割り当てられているデバイス構成プロファイルを反映しています。 たとえば、割り当てられているすべてのポリシーでユーザーが成功状態の場合、その日の成功カウンターが 1 つ増えます。 ユーザーに、成功状態のプロファイルとエラー状態のプロファイルの 2 つのプロファイルが割り当てられている場合、エラー状態のユーザーがカウントされます。  **DeviceConfigurationProfileUserActivity** エンティティには、過去 30 日間の各状態のユーザー数/日が表示されます。
+**DeviceConfigurationProfileUserActivity** エンティティには、成功、保留中、失敗、エラー状態の**ユーザー**数/日が表示されます。 この数は、エンティティに割り当てられているデバイス構成プロファイルを反映しています。 たとえば、割り当てられているすべてのポリシーで**ユーザー**が成功状態の場合、その日の成功カウンターが 1 つ増えます。 ユーザーに、成功状態のプロファイルとエラー状態のプロファイルの 2 つのプロファイルが割り当てられている場合、エラー状態のユーザーがカウントされます。  **DeviceConfigurationProfileUserActivity** エンティティには、過去 30 日間の各状態のユーザー数/日が表示されます。
 
 | プロパティ  | 説明 | 例 |
 |---------|------------|--------|

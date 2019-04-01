@@ -7,9 +7,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/10/2019
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c43b27a07aa5eafc19ce1528bbfe34c1a6dbb1d
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 0e57d197cadf2ba6586aa39fdc5dbb9cddba554c
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839469"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566575"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST クライアントを使用して Intune データ ウェアハウス API からデータを取得する
 
@@ -99,7 +100,7 @@ Postman を使用して REST 呼び出しを行うには、次の情報が必要
 3. **[その他のタスク]** の **[Intune データ ウェアハウスの設定]** を選択します。
 4. **[サード パーティのレポート サービスを使用する]** のカスタム フィード URL をコピーします。 これは次のようになります。`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 
-エンドポイントは次の形式に従います。`https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`
+エンドポイントは次の形式に従います: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`
 
 たとえば、**dates** エンティティは次のようになります。`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 
@@ -164,7 +165,7 @@ Postman のために新しいアクセス トークンを取得するには、Az
 
     ![Visual Studio での Progam.cs とソリューション エクスプローラー](./media/reports-get_rest_data_in.png)
 
-8. Program.cs のコードを次のコードに置き換えます。  
+8. *Program.cs* のコードを次のコードに置き換えます。  
    ```csharp
    namespace IntuneDataWarehouseSamples
    {

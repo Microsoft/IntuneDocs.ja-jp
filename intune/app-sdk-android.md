@@ -5,10 +5,11 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/13/2018
-ms.topic: article
+ms.date: 03/26/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f51d229e745a1e545d0853fa9e710a06cbfe6f8b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 965dcfbb711eac1b38977e023d1975f4dc0e8b81
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55851425"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514499"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android 用 Microsoft Intune アプリ SDK 開発者ガイド
 
@@ -35,20 +36,20 @@ Android 用 Microsoft Intune アプリ SDK を使用すると、ネイティブ 
 
 Intune App SDK は、次のファイルで構成されます。
 
-* **Microsoft.Intune.MAM.SDK.aar**:サポート ライブラリ JAR ファイルを除く、SDK コンポーネントです。
-* **Microsoft.Intune.MAM.SDK.Support.v4.jar**:Android v4 サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。
-* **Microsoft.Intune.MAM.SDK.Support.v7.jar**:Android v7 サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。
-* **Microsoft.Intune.MAM.SDK.Support.v17.jar**:Android v17 サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。 
-* **Microsoft.Intune.MAM.SDK.Support.Text.jar**:`android.support.text` パッケージ内の Android サポート ライブラリのクラスを使用するアプリで MAM を有効にするために必要なクラスです。
-* **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**:この jar には、新しいデバイス上にのみ存在し、MAMActivity 内のメソッドによって参照される Android システム クラスのためのスタブが含まれています。 新しいデバイスでは、これらのスタブ クラスを無視します。 この jar が必要になるのは、MAMActivity から派生したクラスに対してリフレクションを実行する場合のみであり、ほとんどのアプリにはこの jar を含める必要がありません。 この jar を使用している場合、そのすべてのクラスを ProGuard から除外する操作は慎重に行う必要があります。 それはすべて "android" ルート パッケージの下にあります。
-* **com.microsoft.intune.mam.build.jar**:[SDK の統合を補助する](#build-tooling) Gradle のプラグインです。
-* **CHANGELOG.txt**:各 SDK バージョンで行われた変更の記録を提供します。
-* **THIRDPARTYNOTICES.TXT**:アプリにコンパイルされるサード パーティや OSS のコードを確認する属性通知です。
+* **Microsoft.Intune.MAM.SDK.aar**: サポート ライブラリ JAR ファイルを除く、SDK コンポーネントです。
+* **Microsoft.Intune.MAM.SDK.Support.v4.jar**: Android v4 サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。
+* **Microsoft.Intune.MAM.SDK.Support.v7.jar**: Android v7 サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。
+* **Microsoft.Intune.MAM.SDK.Support.v17.jar**: Android v17 サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。 
+* **Microsoft.Intune.MAM.SDK.Support.Text.jar**: `android.support.text` パッケージで Android サポート ライブラリを使用するアプリで MAM を有効にするために必要なクラスです。
+* **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**: この jar には、新しいデバイス上にのみ存在し、MAMActivity 内のメソッドによって参照される Android システム クラスのためのスタブが含まれています。 新しいデバイスでは、これらのスタブ クラスを無視します。 この jar が必要になるのは、MAMActivity から派生したクラスに対してリフレクションを実行する場合のみであり、ほとんどのアプリにはこの jar を含める必要がありません。 この jar を使用している場合、そのすべてのクラスを ProGuard から除外する操作は慎重に行う必要があります。 それはすべて "android" ルート パッケージの下にあります。
+* **com.microsoft.intune.mam.build.jar**: [SDK の統合を補助する](#build-tooling) Gradle のプラグインです。
+* **CHANGELOG.txt**: 各 SDK バージョンに加えた変更の記録を提供します。
+* **THIRDPARTYNOTICES.TXT**:  アプリにコンパイルされるサード パーティや OSS のコードを確認する属性通知です。
 
 ## <a name="requirements"></a>要件
 
-この SDK は Android API 19 (Android 4.4 以降) から Android API 28 (Android 8.0) までをサポートしています。
-
+### <a name="android-versions"></a>Android バージョン
+この SDK は Android API 19 (Android 4.4 以降) から Android API 28 (Android 9.0) までをサポートしています。
 
 ### <a name="company-portal-app"></a>ポータル サイト アプリ
 Android 用の Intune アプリ SDK でアプリ保護ポリシーを有効にするには、デバイスに[ポータル サイト](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) アプリが存在する必要があります。 ポータル サイトは、Intune サービスからアプリ保護ポリシーを取得します。 アプリが初期化されるときに、ポータル サイトからポリシーとコードを読み込み、そのポリシーを適用します。
@@ -60,6 +61,9 @@ Android 用の Intune アプリ SDK でアプリ保護ポリシーを有効に�
 
 ## <a name="sdk-integration"></a>SDK 統合
 
+### <a name="sample-app"></a>サンプル アプリ
+Intune アプリ SDK と正しく統合する方法の例についてで[GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Android-App)します。 この例では、 [Gradle ビルド プラグイン](#gradle-build-plugin)します。
+
 ### <a name="referencing-intune-app-libraries"></a>Intune アプリのライブラリを参照する
 
 Intune アプリ SDK は、外部依存関係のない標準の Android ライブラリです。 **Microsoft.Intune.MAM.SDK.aar** には、アプリ保護ポリシーの有効化に必要なインターフェイスと Microsoft Intune ポータル サイト アプリとの対話操作に必要なコードの両方が含まれています。
@@ -70,7 +74,7 @@ Intune アプリ SDK は、外部依存関係のない標準の Android ライ�
 
 #### <a name="proguard"></a>ProGuard
 
-[ProGuard](http://proguard.sourceforge.net/) (または任意のその他の圧縮/難読化メカニズム) がビルド ステップとして使用される場合、SDK には追加の構成ルールを含める必要があります。 .aar をご自分のビルドに含めると、ルールが自動的に ProGuard ステップに統合され、必要なクラス ファイルが保持されます。
+[ProGuard](http://proguard.sourceforge.net/) (または任意のその他の圧縮/難読化メカニズム) がビルド ステップとして使用される場合、SDK には追加の構成ルールを含める必要があります。 .AAR をご自分のビルドに含めると、ルールが自動的に ProGuard ステップに統合され、必要なクラス ファイルが保持されます。
 
 Azure Active Directory 認証ライブラリ (ADAL) には、独自の ProGuard の制限がある場合があります。 アプリが ADAL を統合する場合、これらの制限について ADAL のドキュメントに従う必要があります。
 
@@ -134,7 +138,7 @@ dependencies {
 }
 intunemam {
     excludeProjects = [':product:FooLib']
-    includeExternalLibraries = ['bar.jar', "com.contoso.foo:zap-artifact", "com.microsoft.*"]
+    includeExternalLibraries = ['bar.jar', "com.contoso.foo:zap-artifact", "com.microsoft.*", "!com.microsoft.qux*"]
     excludeClasses = ['com.contoso.SplashActivity']
     excludeVariants=['savory']
 }
@@ -147,10 +151,11 @@ intunemam {
 * `zap.jar` はプロジェクトではなく、`includeExternalLibraries` に含まれないため、上書きされ**ません**。
 * `com.contoso.foo:zap-artifact:1.0.0` は `includeExternalLibraries` に含まれるため、上書きされます。
 * `com.microsoft.bar:baz:1.0.0` はワイルドカード (`com.microsoft.*`) によって `includeExternalLibraries` に含まれるため、上書きされます。
+* `com.microsoft.qux:foo:2.0` 否定のパターンを使用して明示的に除外されるため、前の項目として同じワイルドカードと一致する場合でも再書き込みされないです。
 
 #### <a name="usage-of-includeexternallibraries"></a>includeExternalLibraries の使い方
 
-既定でプラグインはプロジェクトの依存関係でのみ動作するため (通常、`project()` 関数で指定される)、`fileTree(...)` によって指定された、または Maven やその他のパッケージ ソース (例: "`com.contoso.bar:baz:1.2.0`") から取得した任意の依存関係は、その MAM 処理が以下で説明される条件に基づいて必要な場合は、`includeExternalLibraries` プロパティに提供される必要があります。 ワイルドカード ("*") がサポートされます。
+既定でプラグインはプロジェクトの依存関係でのみ動作するため (通常、`project()` 関数で指定される)、`fileTree(...)` によって指定された、または Maven やその他のパッケージ ソース (例: "`com.contoso.bar:baz:1.2.0`") から取得した任意の依存関係は、その MAM 処理が以下で説明される条件に基づいて必要な場合は、`includeExternalLibraries` プロパティに提供される必要があります。 ワイルドカード ("*") がサポートされます。 始まるの項目`!`否定は、ワイルドカードが含まれますそれ以外の場合のライブラリを除外するために使用できます。
 
 成果物で外部の依存関係を指定している場合、`includeExternalLibraries` 値のバージョン コンポーネントを省略することをお勧めします。 バージョンを含める場合は、正確なバージョンである必要があります。 ダイナミック バージョンの定義 (例: `1.+`) はサポートされません。
 
@@ -168,12 +173,20 @@ intunemam {
 | `Activity`、`Application` および `Fragment` から派生したクラスを含む React Native などのライブラリを含めますが、静的なヘルパーまたはユーティリティ クラスのみを使用します | [いいえ] |
 | `TextView` から派生したビュー クラスを含むライブラリを含めて、ご利用のアプリでそれらのクラスを使用したり、さらに派生させたりします | はい |
 
+#### <a name="reporting"></a>レポート
+ビルド プラグインでは、変更の html レポートを生成できます。 このレポートの生成を要求するには、指定`report = true`で、`intunemam`構成ブロック。 、生成された場合に、レポートが書き込まれます`outputs/logs`ビルド ディレクトリにします。
+
+```groovy
+intunemam {
+    report = true
+}
+```
 
 #### <a name="dependencies"></a>依存関係
 
 Gradle のプラグインには、(上述のとおり) Gradle の依存関係の解決に利用できる必要がある [Javassist](https://jboss-javassist.github.io/javassist/) に依存関係があります。 Javassist は、プラグインを実行しているときのビルド時に単独で使用されます。 Javassist コードはご自分のアプリには追加されません。
 
-> [!NOTE]
+> [!NOTE] 
 > Android Gradle プラグインのバージョン 3.0 以降および Gradle 4.1 以降を使用している必要があります。
 
 ### <a name="command-line-build-tool"></a>コマンド ラインのビルド ツール
@@ -186,6 +199,7 @@ Gradle のプラグインには、(上述のとおり) Gradle の依存関係の
 コマンド ライン ツールは、`BuildTool\bin` ディレクトリに配置された指定のヘルパー スクリプトを使用して呼び出すことができます。
 
 このツールには、次のパラメーターが必要です。
+
 | パラメーター | 説明 |
 | -- | -- |
 | `--input` | jar ファイルと変更するクラス ファイルのディレクトリのセミコロン区切りの一覧。 これは上書きしようとするすべての jars/ディレクトリを含む必要があります。 |
@@ -194,6 +208,9 @@ Gradle のプラグインには、(上述のとおり) Gradle の依存関係の
 | `--excludeClasses`| 上書きから除外される必要があるクラスの名前を含むセミコロン区切りの一覧。 |
 
 省略可能な `--excludeClasses` を除く、すべてのパラメーターが必須です。
+
+> [!NOTE] 
+> Unix に似たシステム セミコロンはコマンドの区切り記号です。 分割するとコマンド シェルを避けるためには、各 - セミコロンをエスケープすることを確認してください '\'または引用符で囲まれた完全なパラメーターをラップします。
 
 #### <a name="example-command-line-tool-invocation"></a>コマンド ライン ツールの呼び出しの例
 
@@ -229,6 +246,8 @@ Intune 管理を有効にするために、Android の基底クラスを、そ�
 | android.app.ActivityGroup | MAMActivityGroup |
 | android.app.AliasActivity | MAMAliasActivity |
 | android.app.Application | MAMApplication |
+| android.app.Dialog | MAMDialog |
+| android.app.AlertDialog.Builder | MAMAlertDialogBuilder |
 | android.app.DialogFragment | MAMDialogFragment |
 | android.app.ExpとableListActivity | MAMExpとableListActivity |
 | android.app.Fragment | MAMFragment |
@@ -279,7 +298,8 @@ Intune 管理を有効にするために、Android の基底クラスを、そ�
 
 |Android クラス | Intune アプリ SDK の代替物 |
 |--|--|
-|android.support.v7.app.AppCompatActivity | MAMAppCompatActivity |
+| android.support.v7.app.AlertDialog.Builder | MAMAlertDialogBuilder |
+| android.support.v7.app.AppCompatActivity | MAMAppCompatActivity |
 | android.support.v7.widget.AppCompatAutoCompleteTextView | MAMAppCompatAutoCompleteTextView |
 | android.support.v7.widget.AppCompatCheckedTextView | MAMAppCompatCheckedTextView |
 | android.support.v7.widget.AppCompatEditText | MAMAppCompatEditText |
@@ -300,10 +320,11 @@ Intune 管理を有効にするために、Android の基底クラスを、そ�
 | android.support.text.emoji.widget.EmojiTextView | MAMEmojiTextView |
 
 ### <a name="renamed-methods"></a>名前が変更されたメソッド
-多くの場合、Android のクラスで使用できるメソッドが、MAM の置換クラスで最終版としてマークされています。 この場合、MAM 置換クラスによって、似た名前のメソッド (`MAM` というサフィックスが付いている) が提供され、これをオーバーライドする必要があります。 たとえば、`MAMActivity` から派生する場合は、`onCreate()` をオーバーライドして `super.onCreate()` を呼び出すのではなく、`Activity` で `onMAMCreate()` をオーバーライドし、`super.onMAMCreate()` を呼び出す必要があります。 同等の MAM でなく、元のメソッドが偶発的にオーバーライドされることを防ぐために、Java コンパイラによって、最終的な制限が強制されます。
+多くの場合、Android のクラスで使用できるメソッドが、MAM の置換クラスで最終版としてマークされています。 この場合、MAM 置換クラスによって、似た名前のメソッド (通常は `MAM` というサフィックスが付いている) が提供され、これをオーバーライドする必要があります。 たとえば、`MAMActivity` から派生する場合は、`onCreate()` をオーバーライドして `super.onCreate()` を呼び出すのではなく、`Activity` で `onMAMCreate()` をオーバーライドし、`super.onMAMCreate()` を呼び出す必要があります。 同等の MAM でなく、元のメソッドが偶発的にオーバーライドされることを防ぐために、Java コンパイラによって、最終的な制限が強制されます。
 
 ### <a name="mamapplication"></a>MAMApplication
 アプリで `android.app.Application` のサブクラスを作成する場合は、代わりに `com.microsoft.intune.mam.client.app.MAMApplication` のサブクラスを作成する**必要**があります。 アプリで `android.app.Application` のサブクラスを作成しない場合は、AndroidManifest.xml の `<application>` タグに `"android:name"` 属性として `"com.microsoft.intune.mam.client.app.MAMApplication"` を設定する**必要**があります。
+
 ### <a name="pendingintent"></a>PendingIntent
 `PendingIntent.get*` の代わりに `MAMPendingIntent.get*` メソッドを使用する必要があります。 その後、通常どおり、結果の `PendingIntent` を使用できます。
 
@@ -313,8 +334,17 @@ Intune 管理を有効にするために、Android の基底クラスを、そ�
 | Android クラス | Intune アプリ SDK の代替物 |
 |--|--|
 | android.content.ClipboardManager | MAMClipboard |
+| android.content.ContentProviderClient | MAMContentProviderClientManagement |
+| android.content.ContentResolver | MAMContentResolverManagement |
 | android.content.pm.PackageManager | MAMPackageManagement |
 | android.app.DownloadManager | MAMDownloadManagement |
+| android.print.PrintManager | MAMPrintManagement |
+| android.support.v4.print.PrintHelper | MAMPrintHelperManagement |
+| android.view.View | MAMViewManagement |
+| android.view.DragEvent | MAMDragEventManagement |
+
+いくつかのクラスは、ラップされたなどのメソッドのほとんどを持って`ClipboardManager`、 `ContentProviderClient`、 `ContentResolver`、および`PackageManager`他のクラスが 1 つまたは 2 つのメソッドなど、ラップ`DownloadManager`、 `PrintManager`、 `PrintHelper`、 `View`、および`DragEvent`します。 BuildPlugin を使用しない場合は、正確なメソッドの MAM の同等のクラスによって公開される Api を参照してください。 
+
 ### <a name="manifest-replacements"></a>マニフェストの置換
 場合によっては、マニフェストと共に Java コードでも上記の一部のクラスの置換を実行する必要があります。 注意: 
 * `android.support.v4.content.FileProvider` を参照するマニフェストは、`com.microsoft.intune.mam.client.support.v4.content.MAMFileProvider` に置き換える必要があります。
@@ -411,6 +441,20 @@ boolean getIsSaveToLocationAllowed(Uri location);
 boolean getIsSaveToLocationAllowed(SaveLocation service, String username);
 
 /**
+ * Checks whether any activities which could handle the given intent are allowed by policy. Returns false only if all
+ * activities which could otherwise handle the intent are blocked. If there are no activities which could handle the intent
+ * regardless of policy, returns true. If some activities are allowed and others blocked, returns true. Note that it is not
+ * necessary to use this method for policy enforcement. If your app attempts to launch an intent for which there are no
+ * allowed activities, MAM will display a dialog explaining the situation to the user.
+ *
+ * @param intent
+ *         intent to check
+ *
+ * @return whether any activities which could handle this intent are allowed.
+*/
+boolean areIntentActivitiesAllowed(Intent intent);
+
+/**
  * Whether the SDK PIN prompt is enabled for the app.
  *
  * @return True if the PIN is enabled. False otherwise.
@@ -452,7 +496,7 @@ String toString();
 > [!NOTE]
 > `MAMPolicyManager.getPolicy` は、デバイスまたはアプリが Intune 管理ポリシーに従わない場合でも、常に null 以外のアプリ ポリシーを返します。
 
-### <a name="example-determine-if-pin-is-required-for-the-app"></a>例:PIN がアプリケーションに必要なかどうかを確認する
+### <a name="example-determine-if-pin-is-required-for-the-app"></a>例: PIN がアプリケーションに必要なかどうかを確認します。
 
 アプリケーションに独自の PIN ユーザー エクスペリエンスがあり、IT 管理者がアプリの PIN の入力を求めるように SDK を構成している場合は、それを無効にしたいことがあります。 IT 管理者が、現在のエンドユーザーのアプリ PIN ポリシーをこのアプリに展開したかどうかを判断するには、次のメソッドを呼び出します。
 
@@ -461,7 +505,7 @@ String toString();
 MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
 ```
 
-### <a name="example-determine-the-primary-intune-user"></a>例:プライマリ Intune ユーザーを判別する
+### <a name="example-determine-the-primary-intune-user"></a>例: プライマリ Intune ユーザーを判別します。
 
 AppPolicy で公開される API に加えて、ユーザー プリンシパル名で (**UPN**) も `MAMUserInfo`インターフェイス内で定義された `getPrimaryUser()` API によって公開されます。 UPN を取得するには、次のように呼び出します。
 
@@ -487,7 +531,7 @@ public interface MAMUserInfo {
 }
 ```
 
-### <a name="example-determine-if-saving-to-device-or-cloud-storage-is-permitted"></a>例:デバイスまたはクラウド ストレージへの保存が許可されているかどうかを判断する
+### <a name="example-determine-if-saving-to-device-or-cloud-storage-is-permitted"></a>例: デバイスまたはクラウド ストレージへの保存が許可されているかどうかを判断します。
 
 多くのアプリでは、エンドユーザーがローカルまたはクラウド ストレージ サービスにファイルを保存する機能を実装しています。 Intune アプリ SDK を使用することで、データの漏えいを防ぐために、IT 管理者が組織に合ったポリシー制限を適用できます。  IT 部門で制御できるポリシーの 1 つとして、エンドユーザーが "個人用" の管理対象外データ ストアに保存できるかどうかというものがあります。 これには、ローカルの場所、SD カード、またはサード パーティ バックアップ サービスへの保存が含まれます。
 
@@ -504,8 +548,11 @@ SaveLocation service, String username);
 
 
 - `SaveLocation.ONEDRIVE_FOR_BUSINESS`
-- `SaveLocation.LOCAL`
 - `SaveLocation.SHAREPOINT`
+- `SaveLocation.LOCAL`
+- `SaveLocation.OTHER`
+
+`username`に保存されているクラウド サービスに関連付けられた UPN/ユーザー名/電子メールする必要があります (*いない*ドキュメントを保存するを所有しているユーザーと必ずしも同じ)。 AAD の UPN とクラウド サービスのユーザー名の間のマッピングが存在しないか、ユーザー名がわからない場合は null を使用します。
 
 ユーザーのポリシーがさまざまな場所にデータを保存することを許可するかどうかを判断する前のメソッドは、同じ **AppPolicy** クラス内の `getIsSaveToPersonalAllowed()` です。 この関数は現在**非推奨**になっており、使用しないようにする必要があります。次の呼び出しは `getIsSaveToPersonalAllowed()` と同じです：
 
@@ -572,22 +619,37 @@ public interface MAMNotificationReceiver {
 
 アプリに次の通知が送信されます。その一部によって、アプリによる処理が要求される場合があります。
 
-* **WIPE_USER_DATA**:この通知は、`MAMUserNotification` クラスで送信されます。 この通知を受信すると、アプリでは `MAMUserNotification` で渡された "企業" ID に関連するすべてのデータを削除する必要があります。 この通知は、現在、APP-WE サービスの登録解除中に送信されます。 ユーザーのプライマリ名は、通常、登録プロセス中に指定されます。 この通知に登録する場合、アプリがすべてのユーザー データが削除されたことを確認する必要があります。 登録しない場合、既定の選択的ワイプの動作が実行されます。
+* **WIPE_USER_DATA**: この通知は、`MAMUserNotification` クラスで送信されます。 この通知を受信すると、アプリでは `MAMUserNotification` で渡された "企業" ID に関連するすべてのデータを削除する必要があります。 この通知は、現在、APP-WE サービスの登録解除中に送信されます。 ユーザーのプライマリ名は、通常、登録プロセス中に指定されます。 この通知に登録する場合、アプリがすべてのユーザー データが削除されたことを確認する必要があります。 登録しない場合、既定の選択的ワイプの動作が実行されます。
 
-* **WIPE_USER_AUXILIARY_DATA**:Intune アプリ SDK に対して既定の選択的ワイプの実行を求めるが、ワイプが発生したときにいくつかの補助的なデータを削除する必要があるアプリは、この通知に登録できます。 この通知は単一 ID アプリには利用できません。複数 ID アプリにのみ送信されます。
+* **WIPE_USER_AUXILIARY_DATA**: Intune アプリ SDK に対して既定の選択的ワイプの実行を求めるが、ワイプが発生したときにいくつかの補助的なデータを削除する必要があるアプリは、この通知に登録できます。 この通知は単一 ID アプリには利用できません。複数 ID アプリにのみ送信されます。
 
-* **REFRESH_POLICY**:この通知は、`MAMUserNotification` で送信されます。 この通知を受信した場合、キャッシュ済みの Intune ポリシーを無効にして更新する必要があります。 これは SDK によって処理されますが、何らかの永続的な方法で、ポリシーを使用する場合は、アプリによって処理する必要があります。
+* **REFRESH_POLICY**: この通知は、`MAMUserNotification` で送信されます。 この通知が受信したときに、アプリによってキャッシュの Intune ポリシーの決定事項を無効になりを更新する必要があります。 アプリが、ポリシーの前提条件を保存できない場合、この通知の必要な登録できません。
 
-* **MANAGEMENT_REMOVED**:この通知は、`MAMUserNotification` で送信され、アンマネージドになることをアプリに直前に通知します。 管理対象外になると、暗号化されたファイルの読み取り、MAMDataProtectionManager で暗号化されたデータの読み取り、暗号化されたクリップボードとの対話、それ以外の管理対象アプリのエコシステムへの参加ができなくなります。
+* **REFRESH_APP_CONFIG**: この通知、`MAMUserNotification`します。 この通知が受信されると、キャッシュされたアプリケーションの構成データを無効になるし、更新する必要があります。
 
+* **MANAGEMENT_REMOVED**: この通知は、`MAMUserNotification` で送信され、管理対象外になることをアプリに直前に通知します。 管理対象外になると、暗号化されたファイルの読み取り、MAMDataProtectionManager で暗号化されたデータの読み取り、暗号化されたクリップボードとの対話、それ以外の管理対象アプリのエコシステムへの参加ができなくなります。 さらに以下の詳細を参照してください。
+
+* **MAM_ENROLLMENT_RESULT**: この通知は送信、`MAMEnrollmentNotification`アプリ通知をするアプリ-登録の試行が完了し、その試行の状態を提供します。
+
+* **COMPLIANCE_STATUS**: この通知、`MAMComplianceNotification`コンプライアンス修復の試行の結果のアプリに通知します。
 
 > [!NOTE]
 > アプリは `WIPE_USER_DATA` と `WIPE_USER_AUXILIARY_DATA` の両方の通知に登録することはできません。
 
+### <a name="managementremoved"></a>MANAGEMENT_REMOVED
+
+`MANAGEMENT_REMOVED`通知は、ポリシーで管理されていたユーザーが Intune MAM ポリシーによって管理されなくなりますを示します。 ユーザー データをワイプまたはサインアウトすると、ユーザーは必要ありません (ワイプが必要な場合、`WIPE_USER_DATA`通知が送信されます)。 多くのアプリは、ただし、この通知を処理する必要はありませんを使用するアプリ`MAMDataProtectionManager`が[この通知の特別な注意](#data-protection)します。
+
+MAM のアプリの呼び出したときに`MANAGEMENT_REMOVED`受信側では、次が true になります。
+* MAM のアプリに属している (ただし、保護されていないデータのバッファー) 以前に暗号化されたファイルが既に復号化します。 アプリに直接属していない、sdcard でパブリックの場所にあるファイル (などのドキュメントまたはフォルダーをダウンロード) は暗号化解除されません。
+* 新しいファイルまたは受信者メソッド (または、受信側が開始した後に実行されているその他のコード) によって作成される保護されたデータ バッファーは暗号化されません。
+* でも、アプリでは、データ バッファーの復号化などの操作が成功するために、暗号化キーへのアクセスにします。
+
+アプリの受信側が返されると、暗号化キーにアクセスできなくなります。
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Azure Active Directory Authentication Library (ADAL) の構成
 
-まず、[GitHub の ADAL リポジトリ](https://github.com/AzureAD/azure-activedirectory-library-for-android)にある ADAL の統合ガイドラインを参照してください。
+最初に、[ADAL GitHub のリポジトリ](https://github.com/AzureAD/azure-activedirectory-library-for-android)にある ADAL の統合のガイドラインを参照してください。
 
 SDK では[認証](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/)と条件付き起動シナリオを [ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) に依存するため、アプリを [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/) を使用して構成する必要があります。 構成値は、AndroidManifest メタデータを使用して SDK に伝達されます。
 
@@ -611,68 +673,68 @@ SDK では[認証](https://azure.microsoft.com/documentation/articles/active-dir
 ### <a name="adal-metadata"></a>ADAL メタデータ
 
 * **Authority** は、使用中の AAD 機関です。 この値が存在しない場合は、AAD のパブリック環境が使用されます。
-> [!NOTE]
-> アプリケーションがソブリン クラウド対応である場合は、このフィールドを設定しないでください。
+    > [!NOTE]
+    > アプリケーションがソブリン クラウド対応である場合は、このフィールドを設定しないでください。
 
-* **ClientID** は、使用する AAD ClientID です。 Azure AD に登録されている場合は、独自のアプリの ClientID を使用してください。 この値が存在しない場合は、Intune の既定値が使用されます。
+* **ClientID**が使用する AAD ClientID (アプリケーション ID とも呼ばれます)。 Azure AD に登録されている場合は、独自のアプリの ClientID を使用してください。 この値が存在しない場合は、Intune の既定値が使用されます。
 
 * **NonBrokerRedirectURI** は、ブローカーを使用しない場合に使用する AAD リダイレクト URI です。 指定しない場合は、既定値の `urn:ietf:wg:oauth:2.0:oob` が使用されます。 この既定値は、ほとんどのアプリケーションに適しています。
 
-* **SkipBroker** は、ブローカーのリダイレクト URI を使用するように ClientID が構成されていない場合に使用されます。 既定値は "false" です。
-    * **ADAL を統合しない**アプリおよび**デバイス全体の仲介型の認証/SSO に参加しないアプリ**の場合、このプロパティを "true" に設定する必要があります。 この値が "true" の場合は、使用されるリダイレクト URI は、NonBrokerRedirectURI のみです。
+    * SkipBroker が"true"の場合にのみ、NonBrokerRedirectURI が使用されます。
 
-    * デバイス全体にわたる SSO ブローカーをサポートしているアプリの場合、これを "false" にする必要があります。 値が "false" の場合、SDK はシステムでのブローカーの可用性を基にして、[`com.microsoft.aad.adal.AuthenticationContext.getRedirectUriForBroker()`](https://github.com/AzureAD/azure-activedirectory-library-for-android) の結果と NonBrokerRedirectURI の間のブローカーを選択します。 一般に、ブローカーはポータル サイト アプリまたは Azure Authenticator アプリから利用可能になります。
+* **SkipBroker**既定の ADAL SSO への参加の動作をオーバーライドするために使用します。 SkipBroker は、ClientID を指定するアプリに対してのみ指定する必要があります**と**仲介型認証/デバイス全体にわたる SSO をサポートしていません。 ここで設定する必要があります"true"にします。 ほとんどのアプリでは、SkipBroker パラメーターは設定しないでください。
+
+    * ClientID**する必要があります**SkipBroker 値を指定するマニフェストで指定します。
+
+    * ClientID を指定すると、既定値は"false"にします。
+
+    * SkipBroker が"true"の場合は、NonBrokerRedirectURI が使用されます。 アプリを ADAL が統合されない操作を行います (およびそのため、ClientID はあるありません) は"true"に既定でも。
 
 ### <a name="common-adal-configurations"></a>ADAL の一般的な構成
 
-ADAL を使用してアプリを構成する一般的な方法を次に示します。 アプリの構成を検索し、ADAL メタデータ パラメーター (上述) を必要な値に設定したことを確認します。 いずれの場合も、既定以外の環境では必要でも、一般的には不要である場合、Authority を指定できます。
+ADAL を使用してアプリを構成する一般的な方法を次に示します。 アプリの構成を検索し、ADAL メタデータ パラメーター (上述) を必要な値に設定したことを確認します。 いずれの場合も、既定以外の環境では必要でも、Authority を指定できます。 指定しない場合は、パブリックの運用環境の AAD 機関が使用されます。
 
-1. **アプリに ADAL が統合されない場合:**
+#### <a name="1-app-does-not-integrate-adal"></a>1.アプリに ADAL が統合されない場合
+ADAL メタデータ**しないで**マニフェスト内に存在可能です。
 
-追加のマニフェスト値を構成する必要はありません。
+#### <a name="2-app-integrates-adal"></a>2.アプリに ADAL が統合される場合
 
-2. **アプリに ADAL が統合される場合:**
+|必須の ADAL パラメーター| 値 |
+|--|--|
+| ClientID | アプリの ClientID (アプリが登録されるときに Azure AD によって生成される) |
 
-    |必須の ADAL パラメーター| 値 |
-    |--|--|
-    | ClientID | アプリの ClientID (アプリが登録されるときに Azure AD によって生成される) |
-    | SkipBroker | False |
+権限を指定することがあります必要な場合。
 
-必要に応じて、Authority と NonBrokerRedirectURI を指定できます。
-
-次の手順を使用して Azure AD にアプリを登録します。
-* Azure AD へのアプリケーションの登録については、[こちら](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)を参照してください。 
+Azure AD にアプリを登録し、アプリ保護ポリシーのサービスにアプリのアクセス権を付与する必要があります。
+* Azure AD へのアプリケーションの登録については、[こちら](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)を参照してください。
 * Android アプリにアプリ保護ポリシー (APP) サービスへのアクセス許可を付与するための手順に従っていることを確認します。 [Intune SDK ガイドの概要](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration)に関するページ内の「Give your app access to the Intune app protection service (optional)」(Intune アプリ保護サービスへのアクセス権をアプリに付与する (省略可能)) の下に記載されている手順を使用します。 
 
 以下の「[条件付きアクセス](#conditional-access)」の要件も参照してください。
 
-3. **アプリは ADAL を統合しますが、仲介型認証/デバイス全体にわたる SSO をサポートしていません。**
 
-    |必須の ADAL パラメーター| 値 |
-    |--|--|
-    | ClientID | アプリの ClientID (アプリが登録されるときに Azure AD によって生成される) |
-    | SkipBroker | **True** |
-    
-    必要に応じて、Authority と NonBrokerRedirectURI を指定できます。
+#### <a name="3-app-integrates-adal-but-does-not-support-brokered-authenticationdevice-wide-sso"></a>3.アプリは ADAL を統合しますが、仲介型認証/デバイス全体にわたる SSO をサポートしていません
 
+|必須の ADAL パラメーター| 値 |
+|--|--|
+| ClientID | アプリの ClientID (アプリが登録されるときに Azure AD によって生成される) |
+| SkipBroker | **True** |
+
+必要に応じて、Authority と NonBrokerRedirectURI を指定できます。
 
 ### <a name="conditional-access"></a>条件付きアクセス
-条件付きアクセス (CA) は Azure Active Directory の[機能](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)です。これを使用して、AAD リソースへのアクセスを制御できます。  [Intune 管理者は、CA ルールを定義できます](https://docs.microsoft.com/intune/conditional-access)。このルールで、Intune によって管理されるデバイスまたはアプリのみからのリソース アクセスを許可します。 必要に応じてアプリが確実にリソースにアクセスできるようにするには、以下の手順に従う必要があります。 アプリで AAD アクセス トークンを取得しないか、CA で保護できないリソースのみにアクセスする場合は、これらの手順をスキップしてもかまいません。
+
+条件付きアクセス (CA) は Azure Active Directory の[機能](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)です。これを使用して、AAD リソースへのアクセスを制御できます。 [Intune 管理者は、CA ルールを定義できます](https://docs.microsoft.com/intune/conditional-access)。このルールで、Intune によって管理されるデバイスまたはアプリのみからのリソース アクセスを許可します。 必要に応じてアプリが確実にリソースにアクセスできるようにするには、以下の手順に従う必要があります。 アプリで AAD アクセス トークンを取得しないか、CA で保護できないリソースのみにアクセスする場合は、これらの手順をスキップしてもかまいません。
+
 1. [ADAL の統合に関するガイドライン](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library)に従ってください。 
    特にブローカーの使用に関する手順 11 を参照してください。
-
-2. [Azure Active Directory にアプリケーションを登録します](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration)。 リダイレクト URI は、上記の ADAL の統合に関するガイドラインで確認できます。
-
+2. [Azure Active Directory にアプリケーションを登録します] (https://docs.microsoft.com/azure/active-directory/active-directory-app-registration)。 
+   リダイレクト URI は、上記の ADAL の統合に関するガイドラインで確認できます。
 3. 上記の項目 2 の [ADAL の一般的な構成](#common-adal-configurations)ごとにマニフェスト メタデータ パラメーターを設定します。
-
 4. すべて正しく構成されていることをテストします。その場合、[Azure portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) から[デバイス ベースの CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use) を有効にして、以下を確認します。
-* アプリへのサインイン時に Intune ポータル サイトのインストールと登録が求められる
-* 登録後、アプリへのサインインが正常に完了する。
-
-5. アプリで Intune APP SDK の統合が提供されたら、msintuneappsdk@microsoft.com に連絡して、[アプリベース条件付きアクセス](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)の承認済みアプリ リストへの追加を依頼します。
-
+    - アプリへのサインイン時に Intune ポータル サイトのインストールと登録が求められる
+    - 登録後、アプリへのサインインが正常に完了する。
+5. アプリで Intune APP SDK の統合が提供されたら、msintuneappsdk@microsoft.com に連絡して、[アプリベース条件付きアクセス](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)の承認済みアプリ リストへの追加を依頼します
 6. アプリが承認済みリストに追加されたら、[アプリベースの CA を構成](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create)し、アプリへのサインインが正常に完了したことを確認して検証します。
-
 
 ## <a name="app-protection-policy-without-device-enrollment"></a>デバイス登録が不要なアプリの保護ポリシー
 
@@ -701,7 +763,7 @@ APP-WE 統合を実装するには、アプリが MAM SDK にユーザー アカ
 
 2. ユーザー アカウントが作成され、ユーザーが正常に ADAL にサインインしたときに、アプリは、`registerAccountForMAM()` を呼び出す_必要があります_。
 
-3. ユーザー アカウントが完全に削除されたときには、アプリは、`unregisterAccountForMAM()` を呼び出して Intune 管理からアカウントを削除する必要があります。
+3. ユーザー アカウントが削除されたときには、アプリは、`unregisterAccountForMAM()` を呼び出して Intune 管理からアカウントを削除する必要があります。
 
     > [!NOTE]
     > ユーザーがアプリから一時的にサインアウトする場合、アプリは `unregisterAccountForMAM()` を呼び出す必要はありません。 呼び出しでは、ユーザーの会社のデータを完全に削除するワイプを開始できます。
@@ -718,9 +780,6 @@ MAMEnrollmentManager mgr = MAMComponents.get(MAMEnrollmentManager.class);
 ```
 
 返された `MAMEnrollmentManager` インスタンスは、null ではないことが保証されます。 API メソッドは、**認証**と**アカウント登録**という 2 つのカテゴリに分類されます。
-
-> [!NOTE]
-> `MAMEnrollmentManager` には、すぐに非推奨となる API メソッドがいくつか含まれています。 わかりやすくするために、次のコード ブロックでは、関連するメソッドと結果のコードのみを示します。
 
 ```java
 package com.microsoft.intune.mam.policy;
@@ -770,10 +829,21 @@ void updateToken(String upn, String aadId, String resourceId, String token);
 
 2. `acquireToken()` メソッドは、特定のユーザーの要求されたリソース ID のアクセス トークンを取得する必要があります。 要求されたトークンを取得できない場合は、null を返す必要があります。
 
+    > [!NOTE]
+    > アプリを利用することを確認、`resourceId`と`aadId`に渡されるパラメーター`acquireToken()`正しいトークンを取得できるようにします。
+
+    ```java
+    class MAMAuthCallback implements MAMServiceAuthenticationCallback {
+        public String acquireToken(String upn, String aadId, String resourceId) {
+        return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
+        }
+    }
+    ```
+
 3. SDK が `acquireToken()` を呼び出すときにアプリがトークンを提供することができない場合 (たとえば、サイレント認証が失敗し、UI を表示するには不都合な期間である場合)、アプリは、`updateToken()` メソッドを呼び出すことによって後でトークンを提供できます。 `acquireToken()` の前回の呼び出しで要求されたものと同じ UPN、AAD ID、およびリソース ID を最後に取得されたトークンと合わせて `updateToken()` に渡す必要があります。 アプリは、指定されたコールバックから null が戻された後に、できるだけ早く、このメソッドを呼び出す必要があります。
 
-> [!NOTE]
-> SDK は、トークンを取得するために `acquireToken()` を定期的に呼び出すので、`updateToken()` の呼び出しは厳密には必須ではありません。 ただし、これは登録とアプリ保護ポリシーのチェックインを適切なタイミングで完了するためには役立つので推奨されます。
+    > [!NOTE]
+    > SDK は、トークンを取得するために `acquireToken()` を定期的に呼び出すので、`updateToken()` の呼び出しは厳密には必須ではありません。 ただし、これは登録とアプリ保護ポリシーのチェックインを適切なタイミングで完了するためには役立つので強く推奨されます。
 
 
 ### <a name="account-registration"></a>アカウントの登録
@@ -789,15 +859,15 @@ Result getRegisteredAccountStatus(String upn);
 
 1. アカウントを管理用に登録するには、アプリで `registerAccountForMAM()` を呼び出す必要があります。 ユーザー アカウントは UPN と AAD ユーザー ID の両方で識別されます。 登録データをユーザーの AAD テナントと関連付けるには、テナント ID も必要です。 ユーザーの機関は特定のソブリン クラウドに対する登録を許可するために指定することもできます。詳細については、「[ソブリン クラウドの登録](#sovereign-cloud-registration)」を参照してください。  SDK は MAM サービスで特定のユーザー向けにアプリを登録しようとする場合があります。登録が失敗した場合、アカウントが登録されるまで定期的に登録を再試行します。 再試行の期間は通常 12 ～ 24 時間です。 SDK は、通知を使用して非同期的に登録の試行の状態を示します。
 
-2. AAD 認証が必要なため、ユーザー アカウントを登録する最適なタイミングは、ユーザーがアプリケーションにサインインし、ADAL を使用して正常に認証した後です。
-    * [`AuthenticationResult`](https://github.com/AzureAD/azure-activedirectory-library-for-android) オブジェクトの一部として、ユーザーの AAD ID とテナント ID が ADAL 認証呼び出しから返されます。 テナント ID は、`AuthenticationResult.getTenantID()` メソッドから取得されます。
+2. AAD 認証が必要なため、ユーザー アカウントを登録する最適なタイミングは、ユーザーがアプリにサインインが ADAL を使用して認証が成功した後です。一部として、ユーザーの AAD ID とテナント ID、ADAL 認証呼び出しから返されますが、 [ `AuthenticationResult` ](https://github.com/AzureAD/azure-activedirectory-library-for-android)オブジェクト。
+    * テナント ID は、`AuthenticationResult.getTenantID()` メソッドから取得されます。
     * ユーザーに関する情報は、`AuthenticationResult.getUserInfo()` から取得される `UserInfo` 型のサブオブジェクトで見つかり、AAD ユーザー ID は `UserInfo.getUserId()` を呼び出すオブジェクトから取得されます。
 
-3. アカウントを Intune 管理から登録解除するには、アプリで `unregisterAccountForMAM()` を呼び出す必要があります。 アカウントが正常に登録されて管理される場合、SDK は、アカウントの登録を解除し、そのデータを消去します。 アカウントの定期的な登録の再試行は停止されます。 SDK は、通知を使用して非同期的に登録の試行の状態を示します。
+3. アカウントを Intune 管理から登録解除するには、アプリで `unregisterAccountForMAM()` を呼び出す必要があります。 アカウントが正常に登録されて管理される場合、SDK は、アカウントの登録を解除し、そのデータを消去します。 アカウントの定期的な登録の再試行は停止されます。 SDK は、通知を介して非同期的に登録解除要求の状態を示します。
 
 ### <a name="sovereign-cloud-registration"></a>ソブリン クラウドの登録
 
-[ソブリン クラウド対応](https://www.microsoft.com/en-us/trustcenter/cloudservices/nationalcloud)のアプリケーションでは、`authority` を `registerAccountForMAM()` に指定する**必要**があります。  これは、ADAL の [1.14.0 以上](https://github.com/AzureAD/azure-activedirectory-library-for-android/releases/tag/v1.14.0)の acquireToken extraQueryParameters で `instance_aware=true` を指定してから、AuthenticationCallback AuthenticationResult で `getAuthority()` を呼び出すことで取得できます。
+[ソブリン クラウド対応](https://www.microsoft.com/trustcenter/cloudservices/nationalcloud)のアプリケーションでは、`authority` を `registerAccountForMAM()` に指定する**必要**があります。  これは、ADAL の [1.14.0 以上](https://github.com/AzureAD/azure-activedirectory-library-for-android/releases/tag/v1.14.0)の acquireToken extraQueryParameters で `instance_aware=true` を指定してから、AuthenticationCallback AuthenticationResult で `getAuthority()` を呼び出すことで取得できます。
 
 ```java
 mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBehavior.FORCE_PROMPT, "instance_aware=true",
@@ -816,18 +886,10 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 ```
 
 > [!NOTE]
-> AndroidManifest.xml メタデータ機関は設定しないでください。
-<br/>
-
-```xml
-<meta-data
-    android:name="com.microsoft.intune.mam.aad.Authority"
-    android:value="https://AAD authority/" />
-```
+> 設定しないでください、 `com.microsoft.intune.mam.aad.Authority` AndroidManifest.xml 内のメタ データ項目。
 
 > [!NOTE]
 > `MAMServiceAuthenticationCallback::acquireToken()` メソッドに機関が正しく設定されていることを確認してください。
-
 
 #### <a name="currently-supported-sovereign-clouds"></a>現在サポートされているソブリン クラウド
 
@@ -837,13 +899,14 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 
 #### <a name="authentication"></a>認証
 
-* アプリが `registerAccountForMAM()` を呼び出したときに、`MAMServiceAuthenticationCallback` インターフェイスで直後に異なるスレッドでコールバックを受け取る場合があります。 **MAMService トークン**の取得を早めるために、アプリがアカウントを登録する前に ADAL から専用のトークンを取得しているの理想的です。 アプリが、コールバックから有効なトークンを返す場合は、登録処理が続行され、アプリが通知を使用して最終的な結果を取得します。
+* アプリが `registerAccountForMAM()` を呼び出したときに、`MAMServiceAuthenticationCallback` インターフェイスで直後に異なるスレッドでコールバックを受け取る場合があります。 要求されたトークンの取得を早めるために、アプリがアカウントを登録する前に ADAL から専用のトークンを取得しているの理想的です。 アプリが、コールバックから有効なトークンを返す場合は、登録処理が続行され、アプリが通知を使用して最終的な結果を取得します。
 
-* アプリが有効な AAD トークンを返さない場合、登録の試行の最終的な結果は `AUTHENTICATION_NEEDED` になります。 アプリが通知を介してこの結果を受信する場合、アプリは、**MAMService トークン**を取得して `updateToken()` メソッドを呼び出してもう一度登録プロセスを開始することで登録プロセスを早めます。 ただし、SDK は登録を定期的に再試行してトークンを取得するためのコールバックを呼び出すので、これは確実な要件_ではありません_。
+* アプリが有効な AAD トークンを返さない場合、登録の試行の最終的な結果は `AUTHENTICATION_NEEDED` になります。 アプリが通知を介してこの結果を受信した場合、ユーザーのトークンを取得することによって、登録プロセスを迅速に強くお勧めし、リソースは以前から要求された`acquireToken()`を呼び出すと、`updateToken()`を開始する方法、登録プロセスでもう一度使用します。
 
 * アプリの登録済みの `MAMServiceAuthenticationCallback` は、定期的なアプリ保護ポリシー更新チェックイン時にトークンを取得するためにも呼び出されます。アプリが要求されたときにトークンを提供できない場合、通知は得られませんが、トークンの取得を試行する必要があり、チェックイン プロセスの時間を短縮するために次の便利な時刻に `updateToken()` を呼び出す必要があります。 トークンが提供されていない場合、次のチェックインの試行時にコールバックも引き続き呼び出されます。
 
 * ソブリン クラウドのサポートには、機関の指定が必要です。
+
 #### <a name="registration"></a>登録
 
 * 参考までに、登録メソッドはべき等です。たとえば、`registerAccountForMAM()` はアカウントのみを登録し、アカウントがまだ登録されていない場合はアプリを登録しようとします。`unregisterAccountForMAM()` はアカウントが現在登録されている場合にのみ登録解除します。 後続の呼び出しは操作不要なので、これらのメソッドを複数回呼び出しても弊害はありません。 さらに、これらのメソッドの呼び出しと結果の通知の対応は保証されません。つまり、既に登録されている ID のために `registerAccountForMAM` が呼び出された場合、その ID の通知は再び送信されないことがあります。 SDK では、バック グラウンドで定期的に登録を試みることがあり、登録は、Intune サービスから受信したワイプ要求によって発生する可能性があるので、これらのメソッドへの呼び出しに対応していない通知が送信される可能性があります。
@@ -873,13 +936,13 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 
 `COMPANY_PORTAL_REQUIRED` の結果が受信された場合、SDK は登録が要求された対象の ID を使用したアクティビティの使用をブロックします。 代わりに、SDK は、それらアクティビティでポータル サイトをダウンロードするためのプロンプトを表示させます。 アプリでこの動作を回避する場合は、アクティビティで `MAMActivity.onMAMCompanyPortalRequired` を実装できます。
 
-このメソッドは、SDK が既定の UI のブロックを表示する前に呼び出されます。 アプリが、アクティビティ ID を変更するか、登録しようとしたユーザーの登録を解除した場合、SDK は、アクティビティはブロックしません。 この場合、会社のデータのリークを防ぐことはアプリの責任です。 アクティビティ ID を変更できるのは、(後述の) 複数 ID アプリのみであることに注意してください。
+このメソッドは、SDK が既定の UI のブロックを表示する前に呼び出されます。 アプリが、アクティビティ ID を変更するか、登録しようとしたユーザーの登録を解除した場合、SDK は、アクティビティはブロックしません。 この場合、会社のデータのリークを防ぐことはアプリの責任です。 アクティビティ ID を変更できるのは、(後述の) 複数 ID アプリのみです。
 
 (ビルド ツールによってその変更が行われるため) 明示的に `MAMActivity` を継承しませんが、引き続きこの通知を処理する必要がある場合、代わりに `MAMActivityBlockingListener` を実装できます。
 
 ### <a name="notifications"></a>通知
 
-登録要求が完了したことをアプリに通知するために新しい種類の `MAMNotification` が追加されました。  「[SDK からの通知の登録](#register-for-notifications-from-the-sdk)」 セクションで説明されているように、`MAMNotificationReceiver` インターフェイスから `MAMEnrollmentNotification` を受信します。
+場合は、アプリの種類の通知に登録**MAM_ENROLLMENT_RESULT**、`MAMEnrollmentNotification`アプリ登録要求が完了したことを通知するために送信されます。 「[SDK からの通知の登録](#register-for-notifications-from-the-sdk)」 セクションで説明されているように、`MAMNotificationReceiver` インターフェイスから `MAMEnrollmentNotification` を受信します。
 
 ```java
 public interface MAMEnrollmentNotification extends MAMUserNotification {
@@ -889,8 +952,136 @@ public interface MAMEnrollmentNotification extends MAMUserNotification {
 
 `getEnrollmentResult()` メソッドは、登録要求の結果を返します。  `MAMEnrollmentNotification` は、`MAMUserNotification` を拡張するので、登録が試行されたユーザーの ID も利用できます。 アプリは、これらの通知を受信するために `MAMNotificationReceiver` インターフェイスを実装する必要があります。詳細については、「[SDK からの通知の登録](#register-for-notifications-from-the-sdk)」セクションを参照してください。
 
-登録通知を受け取ると、登録済みユーザーのアカウントのステータスが変更されることがありますが、場合によっては変更されないことがあります (たとえば、`WRONG_USER` などのより多くの情報がある結果の後に `AUTHORIZATION_NEEDED` 通知を受信した場合、より多くの情報がある結果がアカウントのステータスとして維持されます)。
+登録通知を受け取ると、登録済みユーザーのアカウントのステータスが変更されることがありますが、どのような場合でも変更されません (たとえば、`WRONG_USER` などのより多くの情報がある結果の後に `AUTHORIZATION_NEEDED` 通知を受信した場合、より多くの情報がある結果がアカウントのステータスとして維持されます)。  アカウントが正常に登録すると、状態はそのまま`ENROLLMENT_SUCCEEDED`アカウントの登録を解除またはワイプされるまでです。
 
+登録通知を受け取ると、登録済みユーザーのアカウントのステータスが変更されることがありますが、どのような場合でも変更されません (たとえば、`WRONG_USER` などのより多くの情報がある結果の後に `AUTHORIZATION_NEEDED` 通知を受信した場合、より多くの情報がある結果がアカウントのステータスとして維持されます)。  アカウントが正常に登録すると、状態はそのまま`ENROLLMENT_SUCCEEDED`アカウントの登録を解除またはワイプされるまでです。
+
+## <a name="app-ca-with-policy-assurance"></a>アプリの CA とポリシーの保証
+
+### <a name="overview"></a>概要
+ポリシーの保証付きでアプリの ca (条件付きアクセス)、リソースへのアクセスは Intune アプリ保護ポリシーのアプリケーションで conditionalized します。  AAD では、登録し、保護されたリソース ポリシーの保証付きで、アプリの CA にアクセス トークンを付与する前に、アプリで管理するアプリを要求することでこれを適用します。  トークンの取得の ADAL のブローカーを使用するアプリが必要し、セットアップは、上記のと同じ[条件付きアクセス](#conditional-access)
+
+### <a name="adal-changes"></a>ADAL の変更
+ADAL ライブラリには、非対応アプリの管理をトークンの取得にエラーが発生したアプリの通知の新しいエラー コードがあります。  アプリでは、このエラー コードを受信する場合は、アプリの登録、ポリシーを適用してコンプライアンス対応を修復しようとする SDK の呼び出しが必要です。 例外は受信、 `onError()` 、ADAL のメソッド`AuthenticationCallback`、エラー コードが`ADALError.AUTH_FAILED_INTUNE_POLICY_REQUIRED`します。  この場合、例外にキャストできる、 `IntuneAppProtectionPolicyRequiredException`、追加パラメーターから抽出できる使用修復ポリシーに準拠 (以下のコード サンプルを参照してください)。 修復が成功すると、アプリが ADAL からトークンの取得を再試行できます。
+
+> [!NOTE]
+> この新しいエラー コードとアプリの CA ポリシー アシュアランスをご利用の他のサポートがバージョン 1.15.0 が必要です (またはそれ以上) の ADAL ライブラリ。
+
+### <a name="mamcompliancemanager"></a>MAMComplianceManager
+
+`MAMComplianceManager`インターフェイスは、ポリシーに必要なエラーが ADAL から受信したときに使用されます。  含まれている、`remediateCompliance()`メソッドに準拠している状態に、アプリを格納しようとするために呼び出す必要があります。 `MAMComplianceManager` の参照は、次のように取得できます。
+
+```java
+MAMComplianceManager mgr = MAMComponents.get(MAMComplianceManager.class);
+
+// make use of mgr
+```
+
+返された `MAMComplianceManager` インスタンスは、null ではないことが保証されます。
+
+```java
+package com.microsoft.intune.mam.policy;
+
+public interface MAMComplianceManager {
+    void remediateCompliance(String upn, String aadId, String tenantId, String authority, boolean showUX);
+}
+```
+
+`remediateCompliance()` AAD を要求されたトークンを付与するための条件を満たすために管理下でアプリを配置しようとするメソッドが呼び出されます。  最初の 4 つのパラメーターは、ADAL で受信した例外から抽出できる`AuthenticationCallback.onError()`メソッド (以下のコード サンプルを参照してください)。  最後のパラメーターは、コンプライアンスの試行中に、UX を表示するかを制御するブール値です。  この操作中にカスタマイズされた UX を表示する必要がないアプリ用の既定値として指定の単純なブロックの進行状況スタイル インターフェイスです。  コンプライアンス修復が進行中であり、最終的な結果は表示されませんのみブロックされます。  アプリでは、コンプライアンス修復の試行 (下記参照) の成否を処理するために、通知受信者を登録する必要があります。
+
+`remediateCompliance()`メソッドは、コンプライアンスの構築の一環として、MAM 登録を行うことができます。  登録通知の通知の受信側が登録されている場合、アプリは登録通知を受け取ることがあります。  アプリの登録済み`MAMServiceAuthenticationCallback`がその`acquireToken()`MAM 登録用のトークンを取得するメソッドが呼び出されます。 `acquireToken()` アプリは、アプリが正常なトークンの取得後は、ブックキーピングまたはアカウントの作成タスク可能性がありますがまだ実行していないため、独自のトークンを買収しました。 前に呼び出されます。  コールバックは、この場合、トークンを取得できる必要があります。  取得したトークンを返すことはできない場合`acquireToken()`、コンプライアンス修復の試行は失敗します。  呼び出す場合`updateToken()`後で要求されたリソースの有効なトークンでコンプライアンス修復が再試行されますすぐに指定されたトークンを使用します。
+
+> [!NOTE]
+> 自動でトークンの取得が可能では引き続き`acquireToken()`、ユーザーが既にされたガイド付きブローカーをインストールし、前にデバイスを登録するため、`ADALError.AUTH_FAILED_INTUNE_POLICY_REQUIRED`エラーが表示されます。  これは、結果を正常に要求されたトークンのサイレント acqisition をできるように、キャッシュ内の有効な更新トークンを持つブローカー。
+
+ポリシーが必要なエラー メッセージのサンプルを次に示します、`AuthenticationCallback.onError()`メソッド、および通話、`MAMComplianceManager`エラーを処理します。
+
+```java
+public void onError(@Nullable Exception exc) {
+    if (exc instanceof AuthenticationException && 
+        ((AuthenticationException) exc).getCode() == ADALError.AUTH_FAILED_INTUNE_POLICY_REQUIRED) {
+
+        final IntuneAppProtectionPolicyRequiredException policyRequiredException = 
+            (IntuneAppProtectionPolicyRequiredException) ex;
+
+        final String upn = policyRequiredException.getAccountUpn();
+        final String aadId = policyRequiredException.getAccountUserId();
+        final String tenantId = policyRequiredException.getTenantId();
+        final String authority = policyRequiredException.getAuthorityURL();
+
+        MAMComplianceManager complianceManager = MAMComponents.get(MAMComplianceManager.class);
+        complianceManager.remediateCompliance(upn, aadId, tenantId, authority, showUX);
+    }
+}
+```
+
+### <a name="status-notifications"></a>状態の通知
+
+場合は、アプリの種類の通知に登録**COMPLIANCE_STATUS**、`MAMComplianceNotification`コンプライアンス修復の試行の最終的な状態のアプリを通知するために送信されます。 「[SDK からの通知の登録](#register-for-notifications-from-the-sdk)」 セクションで説明されているように、`MAMNotificationReceiver` インターフェイスから `MAMComplianceNotification` を受信します。
+
+```java
+public interface MAMComplianceNotification extends MAMUserNotification {
+    MAMCAComplianceStatus getComplianceStatus();
+    String getComplianceErrorTitle();
+    String getComplianceErrorMessage();
+}
+```
+
+`getComplianceStatus()`メソッドからの値としてコンプライアンス修復の試行の結果を返します、`MAMCAComplianceStatus`列挙型。
+
+|状態コード | 説明 |
+| -- | -- |
+| UNKNOWN | 状態が不明です。 予期しないエラーの理由がある可能性があります。 詳細については、ポータル サイトのログを参照場合があります。 |
+| COMPLIANT | コンプライアンス修復が成功したし、アプリがポリシーに準拠しているようになりました。 ADAL のトークンの取得を再試行する必要があります。 |
+| NOT_COMPLIANT | コンプライアンス対応を修復できませんでした。  アプリが準拠していないと、エラー条件が訂正されるまで、ADAL のトークンの取得を再試行は避けてください。  追加のエラー情報は、MAMComplianceNotification で送信されます。 |
+| SERVICE_FAILURE | Intune サービスからのコンプライアンス対応データを取得するときに、エラーが発生しました。 詳細については、ポータル サイトのログを参照場合があります。 |
+| NETWORK_FAILURE | Intune サービスへの接続エラーが発生しました。 アプリは、ネットワーク接続が復元されるときに、もう一度そのトークンの取得をしてみてください。 |
+| CLIENT_ERROR | 準拠を修復しようとするは、クライアントに関連するいくつかの理由で失敗しました。  たとえば、トークン、または正しくないユーザーがいません。 追加のエラー情報は、MAMComplianceNotification で送信されます。 |
+| PENDING | コンプライアンス対応を修復しようとするは、状態の応答がまだされてから受信できないため、サービスの制限時間を超過したときに失敗しました。 アプリは、後でもう一度そのトークンの取得をしてみてください。 |
+| COMPANY_PORTAL_REQUIRED | コンプライアンス修復が成功するためにデバイスには、ポータル サイトをインストールする必要があります。  ポータル サイトは、デバイスに既にインストールされて場合、アプリを再起動する必要があります。  ここでは、ダイアログに表示されるユーザーに確認するアプリを再起動します。 |
+
+コンプライアンス対応状態の場合`MAMCAComplianceStatus.COMPLIANT`アプリが (独自のリソース) をその元のトークンの取得を再度開始する必要があります。 コンプライアンス修復の試行に失敗した場合、`getComplianceErrorTitle()`と`getComplianceErrorMessage()`メソッドは、アプリを選択した場合、エンドユーザーに表示できるローカライズされた文字列を返します。  の一般的なケースのアカウントの作成またはログインに失敗し、後でもう一度お試しにユーザーを許可するに最適な場合があります、ほとんどのエラーの場合は、アプリによって remediable はありません。  障害が永続的な場合は、MAM ログが原因の特定に役立ちます。  エンドユーザーが見つかった方向を使用してログを送信できます[ここ](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android "ログを会社のサポートを電子メール")します。
+
+`MAMComplianceNotification` は、`MAMUserNotification` を拡張するので、修復が試行されたユーザーの ID も利用できます。
+
+匿名クラスを使用して、MAMNotificationReceiver インターフェイスを実装する受信者を登録する例を次に示します。
+
+```java
+final MAMNotificationReceiverRegistry notificationRegistry = MAMComponents.get(MAMNotificationReceiverRegistry.class);
+// create a receiver
+final MAMNotificationReceiver receiver = new MAMNotificationReceiver() {
+    public boolean onReceive(MAMNotification notification) {
+        if (notification.getType() == MAMNotificationType.COMPLIANCE_STATUS) {
+            MAMComplianceNotification complianceNotification = (MAMComplianceNotification) notification;
+            
+            // take appropriate action based on complianceNotification.getComplianceStatus()
+            
+            // unregister this receiver if no longer needed
+            notificationRegistry.unregisterReceiver(this, MAMNotificationType.COMPLIANCE_STATUS);
+        }
+        return true;
+    }
+};
+// register the receiver
+notificationRegistry.registerReceiver(receiver, MAMNotificationType.COMPLIANCE_STATUS);
+```
+
+> [!NOTE]
+> 通知受信者を呼び出す前に登録する必要があります`remediateCompliance()`通知で失われる原因となる競合状態を回避するためにします。
+
+### <a name="implementation-notes"></a>実装に関するメモ
+
+> [!NOTE]
+> アプリの`MAMServiceAuthenticationCallback.acquireToken()`メソッドに渡す必要があります*true*新しい`forceRefresh`フラグを`acquireTokenSilentSync()`ブローカーから強制的に更新します。  これは、MAM サービスのトークンに影響を与える ADAL のトークン キャッシュの問題を回避します。 一般に、これは、ようになります。
+```java
+AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ true);
+```
+
+> [!NOTE]
+> 修復の試行中にカスタム ブロッキング UX を表示する場合は、渡す必要があります*false* showUX のパラメーターに対して`remediateCompliance()`します。 UX を表示し、最初に呼び出す前に、通知リスナーを登録することを確認する必要があります`remediateCompliance()`します。  これにより、競合状態がいる場合、通知が欠落する可能性があります`remediateCompliance()`非常に短時間に失敗します。  たとえば、`onCreate()`または`onMAMCreate()`メソッド、アクティビティのサブクラスの通知リスナーを登録し、呼び出す最適な場所は、`remediateCompliance()`します。  パラメーターを`remediateCompliance()`インテント エクストラとして、UX に渡すことができます。  コンプライアンスの状態の通知が受信したときに、結果を表示または単に、アクティビティを終了できます。
+
+> [!NOTE]
+> `remediateCompliance()` アカウントと試行の登録が登録されます。  メインのトークンが取得されると、呼び出す`registerAccountForMAM()`必要はありませんが行っても問題はありません。 その一方で、アプリは、そのトークンとユーザー アカウントを削除するを取得する失敗した場合、呼び出す必要があります`unregisterAccountForMAM()`をバック グラウンドの登録の再試行を防ぐため、アカウントを削除します。
 
 ## <a name="protecting-backup-data"></a>バックアップ データの保護
 
@@ -918,7 +1109,7 @@ Intune では、XML でカスタム ルールを定義する機能など、Andro
 
 4. その後で、マニフェストで `android:fullBackupContent` に配置するものはすべて、`com.microsoft.intune.mam.FullBackupContent` という名前のメタデータにコピー_**する必要があります**_。
 
-    **例 1**:例外なしにアプリで完全バックアップを実行する場合、`android:fullBackupContent` 属性と `com.microsoft.intune.mam.FullBackupContent` メタデータ タグの両方を **true** に設定します。
+    **例 1**: 例外なしにアプリで完全バックアップを実行する場合、`android:fullBackupContent` 属性と `com.microsoft.intune.mam.FullBackupContent` メタデータ タグの両方を **true** に設定します。
 
     ```xml
     android:fullBackupContent="true"
@@ -926,7 +1117,7 @@ Intune では、XML でカスタム ルールを定義する機能など、Andro
     <meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="true" />  
     ```
 
-    **例 2**:アプリでカスタム BackupAgent を使用して、完全な Intune ポリシー準拠の自動バックアップを停止する場合は、この属性とメタデータ タグを **false** に設定する必要があります。
+    **例 2**: アプリでカスタム BackupAgent を使用して、完全な Intune ポリシー互換の自動バックアップを停止する場合は、この属性とメタデータ タグを **false** に設定する必要があります。
 
     ```xml
     android:fullBackupContent="false"
@@ -934,7 +1125,7 @@ Intune では、XML でカスタム ルールを定義する機能など、Andro
     <meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="false" />  
     ```
 
-    **例 3**:アプリで XML ファイルで定義したカスタム ルールに従って完全バックアップを使用する場合は、この属性とメタデータ タグを同じ XML リソースに設定してください。
+    **例 3**: アプリで XML ファイルで定義したカスタム ルールに従って完全バックアップを使用する場合は、この属性とメタデータ タグを同じ XML リソースに設定してください。
 
     ```xml
     android:fullBackupContent="@xml/my_scheme"
@@ -995,6 +1186,7 @@ BackupAgent を使用すると、バックアップの対象とするデータ�
 
 ### <a name="overview"></a>概要
 既定では、Intune アプリ SDK はポリシーをアプリ全体に適用します。 複数 ID は、ID 単位のレベルでポリシーを適用できるようにするオプションの Intune アプリ保護機能です。 これには、他のアプリ保護機能よりはるかに多くのアプリの参加が必要です。
+
 > [!NOTE]
 >  適切なアプリの参加が不足していると、データのリークや他のセキュリティの問題が発生する場合があります。
 
@@ -1003,9 +1195,10 @@ BackupAgent を使用すると、バックアップの対象とするデータ�
 > [!NOTE]
 > 現時点では、サポートされる Intune 管理対象 ID はデバイスあたり 1 つだけです。
 
-ID は文字列として簡単に定義されます。 ID は**大文字と小文字を区別されず**、SDK に ID を要求すると返される ID は、大文字と小文字の使い分けが ID 設定時の本来のものと異なる可能性があります。
+ID は文字列として定義されます。 ID は**大文字と小文字を区別されず**、SDK に ID を要求すると返される ID は、大文字と小文字の使い分けが ID 設定時の本来のものと異なる可能性があります。
 
 アプリは、アクティブな ID を変更しようとするときに、SDK に通知する*必要があります*。 また、場合によっては、SDK は ID の変更が必要なときにもアプリに通知します。 ただし、ほとんどの場合、MAM は UI で表示されているデータまたは指定された時刻のスレッドに使用されるデータを把握することはできません。データのリークを避けるために、適切な ID の設定はアプリに依存します。 後続のセクションでは、アプリのアクションを必要とするいくつかの特定のシナリオが呼び出されます。
+
 ### <a name="enabling-multi-identity"></a>複数 ID を有効にする
 
 既定では、すべてのアプリが単一 ID アプリと見なされます。 AndroidManifest.xml に次のメタデータを配置することでアプリが複数 ID に対応していることを宣言できます。
@@ -1021,12 +1214,26 @@ ID は文字列として簡単に定義されます。 ID は**大文字と小�
 開発者は、次のレベルで降順にアプリ ユーザーの ID を設定できます。
 
   1. スレッド レベル
-  2. コンテキスト (通常はアクティビティ) レベル
+  2. `Context` (通常`Activity`) レベル
   3. プロセス レベル
 
-スレッド レベルで設定された ID は、プロセス レベルで設定された ID よりも優先されるコンテキスト レベルで設定された ID よりも優先されます。 コンテキストで設定された ID は、適切な関連するシナリオにのみ使用されます。 ファイル IO 操作などにコンテキストは関連付けられません。 ほとんどの場合、アプリはアクティビティのコンテキスト ID を設定します。 アプリは、アクティビティの ID が同じ ID に設定されない限り、管理されている ID のデータを表示*できません*。 一般に、プロセス レベル ID は、アプリがすべてのスレッドで一度に単一のユーザーだけが操作する場合にのみ役立ちます。 多くのアプリは、この ID を利用する必要がない可能性があります。
+スレッド レベルで設定された ID は、プロセス レベルで設定された ID よりも優先される `Context` レベルで設定された ID よりも優先されます。 `Context` で設定された ID は、適切な関連するシナリオにのみ使用されます。 ファイル IO 操作などに `Context` は関連付けられません。 ほとんどの場合は、アプリの設定、`Context`で id、`Activity`します。 アプリは、`Activity` ID が同じ ID に設定されない限り、管理されている ID のデータを表示*できません*。 一般に、プロセス レベル ID は、アプリがすべてのスレッドで一度に単一のユーザーだけが操作する場合にのみ役立ちます。 多くのアプリは、この ID を利用する必要がない可能性があります。
 
-`MAMPolicyManager` の次のメソッドは、ID を設定し、以前に設定された ID 値を取得するために使用できます。
+アプリで使用する場合、`Application`システム サービスの取得をスレッドまたはプロセス id が設定されているか、アプリの UI id を設定することを確認します。 コンテキスト`Application`コンテキスト。
+
+UI の id を更新するときに、特殊なケースを処理するために`setUIPolicyIdentity`または`switchMAMIdentity`のセットを両方のメソッドに渡すことができる`IdentitySwitchOption`値。
+
+* `IGNORE_INTENT`: 現在のアクティビティに関連付けられていることを目的に無視する必要があります、id 切り替えを要求している場合に使用します。
+  次に例を示します。
+
+  1. 管理対象のドキュメントを格納している管理対象 id から、アプリが、インテントを受信し、アプリが、ドキュメントを表示します。
+  2. ユーザーは、アプリ UI の id の切り替えを要求するために、個人に切り替わります。 個人の id で、アプリが不要になったドキュメントを表示するを使用するように`IGNORE_INTENT`id 切り替えを要求するときにします。
+
+  指定しない場合、セット、SDK と仮定して、最新の目的が、アプリで使用されていること。 これにより、受信データとして、インテントを処理し、その id を使用する新しい id のポリシーを受信します。
+
+>[!NOTE]
+> `CLIPBOARD_SERVICE`される SDK がフォア グラウンド利用状況の UI id を使用する UI 操作の場合は、`ClipboardManager`操作。
+> `MAMPolicyManager` の次のメソッドは、ID を設定し、以前に設定された ID 値を取得するために使用できます。
 
 ```java
   public static void setUIPolicyIdentity(final Context context, final String identity, final MAMSetUIIdentityCallback mamSetUIIdentityCallback);
@@ -1074,7 +1281,7 @@ ID を設定するために使用されるすべてのメソッドは、`MAMIden
 | CANCELLED | ユーザーが ID 変更を取り消しました。通常、この取り消しは、PIN または認証プロンプトで [戻る] ボタンを押して行われます。 |
 | FAILED | 不明な理由により、ID 変更が失敗しました。|
 
-アプリは、企業データを表示または使用する前に、ID の切り替えが成功していることを確認する*必要があります*。 現時点では、プロセスとスレッド ID の切り替えは、常に複数の ID が有効なアプリに対して成功しますが、エラー条件を追加するための権限を予約します。 UI ID の切り替えは、スレッド ID と競合している場合、またはユーザーが条件付きの起動要件によって取り消した場合に (PIN 画面で戻るボタンを押すなど)、無効な引数で失敗する可能性があります。
+アプリは、企業データを表示または使用する前に、ID の切り替えが成功していることを確認する必要があります。 現時点では、プロセスとスレッド ID の切り替えは、常に複数の ID が有効なアプリに対して成功しますが、エラー条件を追加するための権限を予約します。 UI ID の切り替えは、スレッド ID と競合している場合、またはユーザーが条件付きの起動要件によって取り消した場合に (PIN 画面で戻るボタンを押すなど)、無効な引数で失敗する可能性があります。
 
 
 コンテキスト ID を設定する場合、結果は非同期的にレポートされます。 コンテキストがアクティビティの場合、ユーザーが PIN または企業資格情報の入力が必要になる可能性がある条件付きの起動が実行されるまで、SDK は ID 変更が正常に行われたかどうかがわかりません。 アプリはこの結果を受信するために `MAMSetUIIdentityCallback` の実装が必要になります。このパラメーターに null を渡すことができます。
@@ -1088,7 +1295,7 @@ ID を設定するために使用されるすべてのメソッドは、`MAMIden
 アクティビティの ID は、`MAMActivity` を呼び出す代わりに `MAMPolicyManager.setUIPolicyIdentity` のメソッドを使用して直接設定することもできます。 これを行うには、次のメソッドを使用します。
 
 ```java
-     public final void switchMAMIdentity(final String newIdentity);
+     public final void switchMAMIdentity(final String newIdentity, final EnumSet<IdentitySwitchOption> options);
 ```
 
 アプリでアクティビティの ID 変更の試行結果通知を受ける必要がある場合は、`MAMActivity` のメソッドをオーバーライドすることもできます。
@@ -1096,6 +1303,8 @@ ID を設定するために使用されるすべてのメソッドは、`MAMIden
 ``` java
     public void onSwitchMAMIdentityComplete(final MAMIdentitySwitchResult result);
 ```
+
+オーバーライドしていない場合`onSwitchMAMIdentityComplete`(呼び出したり、`super`メソッド)、アクティビティの失敗した id の切り替えが完了するアクティビティになります。 メソッドをオーバーライドする場合必要があります注意する会社のデータが、失敗した id の切り替えの後に表示されます。
 
 >[!NOTE]
 > ID の切り替えには、アクティビティの再作成が必要になる場合があります。 その場合、`onSwitchMAMIdentityComplete` コールバックはアクティビティの新しいインスタンスに配信されます。
@@ -1148,11 +1357,11 @@ ID を設定するために使用されるすべてのメソッドは、`MAMIden
     }
     ```
 
-    ここで ```AppIdentitySwitchResult``` は SUCCESS または FAILURE です。
+    ここで ```AppIdentitySwitchResult``` は `SUCCESS` または `FAILURE` です。
 
 `MAMService.onMAMBind` から返される Binder によるものを除く、すべての暗黙的な ID 変更に対してメソッド `onMAMIdentitySwitchRequired` が呼び出されます。 `onMAMIdentitySwitchRequired` の既定の実装は次のメソッドを直ちに呼び出します。
 
-* 理由が RESUME_CANCELLED の場合は `reportIdentitySwitchResult(FAILURE)`。
+* `reportIdentitySwitchResult(FAILURE)` 理由は、いつ`RESUME_CANCELLED`します。
 
 * 他のすべての場合は `reportIdentitySwitchResult(SUCCESS)`。
 
@@ -1162,25 +1371,29 @@ ID を設定するために使用されるすべてのメソッドは、`MAMIden
 
   * サービスがメイン スレッドで実行されている場合、`reportIdentitySwitchResult` を同期的に呼び出す**必要があります**。そうしないと、UI スレッドがハングします。
 
-  * **アクティビティ**作成の場合、`onMAMCreate` の前に `onMAMIdentitySwitchRequired` が呼び出されます。 アプリで ID 切り替えを許可するかどうかを判断するために UI を表示する必要がある場合、その UI を*別*のアクティビティを使用して表示する必要があります。
+  * **`Activity`** の作成の場合、`onMAMCreate` の前に `onMAMIdentitySwitchRequired` が呼び出されます。 アプリで ID 切り替えを許可するかどうかを判断するために UI を表示する必要がある場合、その UI を*別*のアクティビティを使用して表示する必要があります。
 
-  * **アクティビティ**では、RESUME_CANCELLED という理由で空の ID への切り替えが要求された場合、アプリは再開されたアクティビティを変更し、その ID 切り替えに適したデータを表示する必要があります。  これができない場合、アプリは切り替えを拒否する必要があり、ユーザーは再開 ID のポリシーへの準拠を再度求められます (たとえば、アプリの PIN 入力画面が表示されます)。
+  * **`Activity`** では、`RESUME_CANCELLED` という理由で空の ID への切り替えが要求された場合、アプリは再開されたアクティビティを変更し、その ID 切り替えに適したデータを表示する必要があります。  これができない場合、アプリは切り替えを拒否する必要があり、ユーザーは再開 ID のポリシーへの準拠を再度求められます (たとえば、アプリの PIN 入力画面が表示されます)。
 
     > [!NOTE]
     > 複数 ID のアプリは常に、管理対象と管理対象外の両方のアプリからデータを受信します。 アプリは、管理された方法で管理対象 ID からのデータを処理する必要があります。
 
   要求された ID が管理対象 (`MAMPolicyManager.getIsIdentityManaged` を使用して確認します) であるが、アプリでそのアカウントを使用できない場合 (電子メール アカウントなどのアカウントはアプリで最初にセットアップする必要があるなどの理由で)、ID 切り替えを拒否する必要があります。
+
 #### <a name="build-plugin--tool-considerations"></a>ビルド プラグイン / ビルド ツールの考慮事項
-(ビルド ツールでその変更を行うようにできるため) 明示的に `MAMActivity`、`MAMService`、または `MAMContentProvider` から継承しませんが、引き続き ID の切り替えを処理する必要がある場合、代わりに `MAMActivityIdentityRequirementListener` (アクティビティ用) または `MAMIdentityRequirementListener` (サービスと ContentProvider 用) を実装できます。 `MAMActivity.onMAMIdentitySwitchRequired` に対する既定の動作には、静的メソッド `MAMActivity.defaultOnMAMIdentitySwitchRequired(activity, identity,
+(ビルド ツールでその変更を行うようにできるため) 明示的に `MAMActivity`、`MAMService`、または `MAMContentProvider` から継承しませんが、引き続き ID の切り替えを処理する必要がある場合、代わりに `MAMActivityIdentityRequirementListener` (`Activity` の場合) または `MAMIdentityRequirementListener` (`Service` または `ContentProviders` の場合) を実装できます。
+`MAMActivity.onMAMIdentitySwitchRequired` に対する既定の動作には、静的メソッド `MAMActivity.defaultOnMAMIdentitySwitchRequired(activity, identity,
 reason, callback)` を呼び出すことによってアクセスできます。
 
 同様に、`MAMActivity.onSwitchMAMIdentityComplete` をオーバーライドする必要がある場合は、明示的に `MAMActivity` から継承することなく、`MAMActivityIdentitySwitchListener` を実装できます。
 
 ### <a name="preserving-identity-in-async-operations"></a>非同期操作での ID の保持
 UI スレッドに対する操作は、バック グラウンド タスクを別のスレッドにディスパッチするのが一般的です。 マルチ ID アプリでは、このようなバック グラウンド タスクが適切な ID で動作していることを確認する必要があります。多くの場合は、バック グラウンド タスクをディスパッチしたアクティビティで使用される ID と同じものになります。 MAM SDK では、ID を保持するのに便利な機能として `MAMAsyncTask` と `MAMIdentityExecutors` を提供しています。
+これらは、非同期操作は、会社のデータをファイルに書き込む可能性がありますまたは他のアプリと通信できる場合に使用する必要があります。
+
 #### <a name="mamasynctask"></a>MAMAsyncTask
 
-`MAMAsyncTask` を使用するには、AsyncTask ではなく MAMAsyncTask を継承し、`doInBackground` のオーバーライドを `doInBackgroundMAM` に、`onPreExecute` のオーバーライドを `onPreExecuteMAM` に置換するだけです。 `MAMAsyncTask` コンストラクターは、アクティビティ コンテキストを取ります。 次に例を示します。
+`MAMAsyncTask` を使用するには、`AsyncTask` ではなくこれを継承し、`doInBackground` と `onPreExecute` のオーバーライドを `doInBackgroundMAM` と `onPreExecuteMAM` に置き換えます。 `MAMAsyncTask` コンストラクターは、アクティビティ コンテキストを取ります。 次に例を示します。
 
 ```java
   AsyncTask<Object, Object, Object> task = new MAMAsyncTask<Object, Object, Object>(thisActivity) {
@@ -1207,74 +1420,78 @@ UI スレッドに対する操作は、バック グラウンド タスクを別
 
 すべてのファイルに、スレッドとプロセス ID に基づいて作成時に関連付けられた ID があります。 この ID は、ファイルの暗号化と選択的ワイプの両方に使用されます。 ID が管理され、暗号化を必要とするポリシーがあるファイルのみが暗号化されます。 SDK の既定の選択機能ワイプでは、ワイプが要求されている管理対象の ID に関連付けられたファイルのみがワイプされます。 アプリでは `MAMFileProtectionManager` クラスを使用して、ファイルの ID の照会または変更を行うことができます。
 
-  ```java
-    public final class MAMFileProtectionManager {
+```java
+public final class MAMFileProtectionManager {
 
-        /**
-         * Protect a file. This will synchronously trigger whatever protection is required for the 
-         * file, and will tag the file for future protection changes.
-         *
-         * @param identity
-         *            Identity to set.
-         * @param file
-         *            File to protect.
-         * @throws IOException
-         *             If the file cannot be changed.
-         */
-        public static void protect(final File file, final String identity) throws IOException;
+   /**
+    * Protect a file or directory. This will synchronously trigger whatever protection is required for the file, and will tag the
+    * file for future protection changes. If an identity is set on a directory, it is set recursively on all files and
+    * subdirectories. New files or directories will inherit their parent directory's identity. If MAM is operating in offline mode,
+    * this method will silently do nothing.
+    *
+    * @param identity
+    *       Identity to set.
+    * @param file
+    *       File to protect.
+    *
+    * @throws IOException
+    *       If the file cannot be protected.
+    */
+   public static void protect(final File file, final String identity) throws IOException;
 
-       /**
-         * Protect a file obtained from a content provider. This is intended to be used for
-         * sdcard (whether internal or removable) files accessed through the Storage Access Framework.
-         * It may also be used with descriptors referring to private files owned by this app.
-         * It is not intended to be used for files owned by other apps and such usage will fail. If
-         * creating a new file via a content provider exposed by another MAM-integrated app, the new
-         * file identity will automatically be set correctly if the ContentResolver in use was
-         * obtained via a Context with an identity or if the thread identity is set.
-         *
-         * This will synchronously trigger whatever protection is required for the file, and will tag
-         * the file for future protection changes. If an identity is set on a directory, it is set
-         * recursively on all files and subdirectories. If MAM is operating in offline mode, this
-         * method will silently do nothing.
-         *
-         * @param identity
-         *            Identity to set.
-         * @param file
-         *            File to protect.
-         *
-         * @throws IOException
-         *             If the file cannot be protected.
-         */
-        public static void protect(final ParcelFileDescriptor file, final String identity) throws IOException;
+   /**
+     * Protect a file obtained from a content provider. This is intended to be used for
+     * sdcard (whether internal or removable) files accessed through the Storage Access Framework.
+     * It may also be used with descriptors referring to private files owned by this app.
+     * It is not intended to be used for files owned by other apps and such usage will fail. If
+     * creating a new file via a content provider exposed by another MAM-integrated app, the new
+     * file identity will automatically be set correctly if the ContentResolver in use was
+     * obtained via a Context with an identity or if the thread identity is set.
+     *
+     * This will synchronously trigger whatever protection is required for the file, and will tag
+     * the file for future protection changes. If an identity is set on a directory, it is set
+     * recursively on all files and subdirectories. If MAM is operating in offline mode, this
+     * method will silently do nothing.
+     *
+     * @param identity
+     *            Identity to set.
+     * @param file
+     *            File to protect.
+     *
+     * @throws IOException
+     *             If the file cannot be protected.
+     */
+    public static void protect(final ParcelFileDescriptor file, final String identity) throws IOException;
 
-       /**
-        * Get the protection info on a file.
-        *
-        * @param file
-        *            File or directory to get information on.
-        * @return File protection info, or null if there is no protection info.
-        * @throws IOException
-        *             If the file cannot be read or opened.
-        */
-        public static MAMFileProtectionInfo getProtectionInfo(final File file) throws IOException;
+   /**
+    * Get the protection info on a file.
+    *
+    * @param file
+    *            File or directory to get information on.
+    * @return File protection info, or null if there is no protection info.
+    * @throws IOException
+    *             If the file cannot be read or opened.
+    */
+    public static MAMFileProtectionInfo getProtectionInfo(final File file) throws IOException;
 
-       /**
-        * Get the protection info on a file.
-        *
-        * @param file
-        *            File or directory to get information on.
-        * @return File protection info, or null if there is no protection info.
-        * @throws IOException
-        *             If the file cannot be read or opened.
-        */
-        public static MAMFileProtectionInfo getProtectionInfo(final ParcelFileDescriptor file) throws IOException;
+   /**
+    * Get the protection info on a file.
+    *
+    * @param file
+    *            File or directory to get information on.
+    * @return File protection info, or null if there is no protection info.
+    * @throws IOException
+    *             If the file cannot be read or opened.
+    */
+    public static MAMFileProtectionInfo getProtectionInfo(final ParcelFileDescriptor file) throws IOException;
 
-    }
+}
 
-    public interface MAMFileProtectionInfo {
-        String getIdentity();
-    }
-  ```
+public interface MAMFileProtectionInfo {
+    String getIdentity();
+}
+ ```
+
 #### <a name="app-responsibility"></a>アプリの責任
 MAM では、読み取られているファイルと `Activity` に表示されているデータの関係を自動的に推測することはできません。 アプリは、企業データを表示する前に、UI ID を適切に設定する*必要があります*。 これには、ファイルから読み取られたデータが含まれます。 ファイルがアプリの外部 (`ContentProvider` または公開されている書き込み可能な場所のいずれか) からのものである場合、アプリはファイルから読み取った情報を表示する前に、(`MAMFileProtectionManager.getProtectionInfo` を使用して) ファイル ID の判断を試みる*必要があります*。 `getProtectionInfo` が null 以外 (空ではない ID) をレポートする場合は、UI ID を (`MAMActivity.switchMAMIdentity` または `MAMPolicyManager.setUIPolicyIdentity` を使用して) この ID に一致するように設定する*必要があります*。 ID の切り替えが失敗した場合、ファイルのデータは表示*できません*。
 
@@ -1286,6 +1503,9 @@ MAM では、読み取られているファイルと `Activity` に表示され�
     * アプリは、結果がコールバックにレポートされるまで待機します
     * レポートされた結果が失敗の場合、アプリでドキュメントが表示されません
   * アプリを開き、ファイルが表示されます
+  
+#### <a name="single-identity-to-multi-identity-transition"></a>複数 Id の移行に単一 Id
+単一 id の Intune の統合に後で以前にリリースされたアプリは、複数の id を統合、以前にインストールされているアプリは、遷移を発生 (表示されていないユーザーにはありません UX が関連付けられている)。 アプリがいない*必要*この遷移を処理するために明示的な何もします。 移行中は引き続き前に作成されたすべてのファイル (したがって、暗号化ポリシーがある場合、暗号化されたそのままされます) が管理されていると見なされます。 アップグレードを検出して使用できます必要な場合、`MAMFileProtectionManager.protect`に特定のファイルまたは空の id (暗号化されていた場合、暗号化が解除されます) を使用してディレクトリをタグ付けします。
 
 #### <a name="offline-scenarios"></a>オフラインのシナリオ
 
@@ -1305,7 +1525,8 @@ MAM では、読み取られているファイルと `Activity` に表示され�
 
 複数 ID に属しているものとしてファイルにタグを付けることはできません。 同じファイル内の別のユーザーに属しているデータを格納する必要があるアプリでは、`MAMDataProtectionManager` で提供される機能を使用して手動でこれを行うことができます。 これにより、アプリではデータを暗号化し、特定のユーザーに関連付けることができます。 暗号化されたデータは、ファイルのディスクへの格納に適しています。 ID に関連付けられているデータを照会することができ、後でデータの暗号化を解除することができます。
 
-`MAMDataProtectionManager` を使用するアプリは、`MANAGEMENT_REMOVED` 通知のレシーバーを実装する必要があります。 このクラスを使用してバッファーが保護されていたときにファイルの暗号化が有効になっていた場合、この通知が完了した後に、保護されていたバッファーは読み取りできなくなります。 アプリは、この通知中にすべてのバッファーで MAMDataProtectionManager.unprotect を呼び出すことによってこのような状況を修復することができます。 ID 情報を保持する必要がある場合、この通知中に保護を呼び出しても安全です。暗号化は通知中に無効になることが保証されます。
+`MAMDataProtectionManager` を使用するアプリは、`MANAGEMENT_REMOVED` 通知のレシーバーを実装する必要があります。 このクラスを使用してバッファーが保護されていたときにファイルの暗号化が有効になっていた場合、この通知が完了した後に、保護されていたバッファーは読み取りできなくなります。 アプリが呼び出すことによってこのような状況を修復できます`MAMDataProtectionManager.unprotect`でこの通知中にすべてのバッファー。 ID 情報を保持する必要がある場合、この通知中に保護を呼び出しても安全です。暗号化は通知中に無効になることが保証されます。
+
 
 ```java
 
@@ -1402,24 +1623,32 @@ public final class MAMDataProtectionManager {
 
 ### <a name="content-providers"></a>コンテンツ プロバイダー
 
-アプリが **ContentProvider** を通じて **ParcelFileDescriptor** 以外の会社データを提供する場合、アプリは `MAMContentProvider` でメソッド `isProvideContentAllowed(String)` を呼び出し、コンテンツの所有者 ID の UPN (ユーザー プリンシパル名) を渡す必要があります。 この関数で false が返されると、コンテンツを呼び出し元に返すことは "*できません*"。 コンテンツ プロバイダーから返されたファイル記述子は、ファイル ID に基づいて自動的に処理されます。
+アプリが `ContentProvider` を介して `ParcelFileDescriptor` 以外の会社データを提供する場合、アプリは `MAMContentProvider` でメソッド `isProvideContentAllowed(String)` を呼び出し、コンテンツの所有者 ID の UPN (ユーザー プリンシパル名) を渡す必要があります。 この関数で false が返されると、コンテンツを呼び出し元に返すことは "*できません*"。 コンテンツ プロバイダーから返されたファイル記述子は、ファイル ID に基づいて自動的に処理されます。
+
+継承しない場合`MAMContentProvider`代わりに、明示的には、その変更を行うビルド ツールを許可する、静的バージョンの同じメソッドを呼び出すことができます:`MAMContentProvider.isProvideContentAllowed(provider, contentIdentity)`します。
 
 ### <a name="selective-wipe"></a>選択的なワイプ
 
 複数 ID アプリを `WIPE_USER_DATA` 通知に登録する場合、ワイプするユーザーのすべてのデータをそのアプリで削除する必要があります。データには、そのユーザーに属しているものとして ID タグが付けられたすべてのファイルが含まれます。 アプリでファイルからユーザー データを削除するが、そのファイルの他のデータはそのままにしておきたい場合は、(空の ID または個人ユーザーに対する `MAMFileProtectionManager.protect` を使用して) ファイルの ID を変更する*必要* があります。 暗号化ポリシーを使用している場合、ワイプするユーザーに属している残りのファイルの暗号化は解除されず、ワイプ後にアプリにアクセスできなくなります。
 
-`WIPE_USER_DATA` に登録しているアプリは、SDK の既定の選択的ワイプ動作の利点が得られなくなります。 複数 ID 対応アプリの場合、MAM の既定の選択的ワイプではワイプ対象の ID のファイルのみがワイプされるため、この損失がとても重要になることがあります。 複数 ID 対応アプリケーションで MAM の既定の選択的ワイプを実行し、_**さらに**_ 独自のアクションを実行する場合、`WIPE_USER_AUXILIARY_DATA` 通知に登録する必要があります。 この通知は、MAM の既定の選択的ワイプを実行する直前に SDK によって送信されます。 アプリは、WIPE_USER_DATA と WIPE_USER_AUXILIARY_DATA の両方に登録しないようにする必要があります。
+`WIPE_USER_DATA` に登録しているアプリは、SDK の既定の選択的ワイプ動作の利点が得られなくなります。 複数 ID 対応アプリの場合、MAM の既定の選択的ワイプではワイプ対象の ID のファイルのみがワイプされるため、この損失がとても重要になることがあります。 複数 ID 対応アプリケーションで MAM の既定の選択的ワイプを実行し、_**さらに**_ 独自のアクションを実行する場合、`WIPE_USER_AUXILIARY_DATA` 通知に登録する必要があります。 この通知は、MAM の既定の選択的ワイプを実行する直前に SDK によって送信されます。 アプリは `WIPE_USER_DATA` と `WIPE_USER_AUXILIARY_DATA` の両方に登録できません。
+
+既定の選択的ワイプは、アクティビティを完了して、アプリのプロセスを強制終了にアプリを正常にクローズします。 アプリでは、既定の選択的ワイプをオーバーライドする場合、ユーザーが、ワイプが発生した後、インメモリ データへのアクセスするを防ぐために手動でアプリを終了したい場合があります。
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Android アプリケーションの MAM 対象の構成を有効にする (省略可能)
-アプリケーション固有のキーと値のペアは、Intune コンソールで構成することはできません。 これらのキーと値のペアが、Intune で解釈されることはありませんが、単にアプリに渡されます。 このような構成を受信する必要があるアプリケーションは、この操作を行うために `MAMAppConfigManager` と `MAMAppConfig` クラスを使用できます。 複数のポリシーが同じアプリで対象となっている場合は、同じキーに使用できる複数の値が競合している可能性があります。
+向けの Intune コンソールで構成できるアプリケーション固有のキー/値ペア[MAM-私たち](https://docs.microsoft.com/intune/app-configuration-policies-managed-app)と[Android 仕事用プロファイル アプリ](https://docs.microsoft.com/intune/app-configuration-policies-use-android)します。
+これらのキーと値のペアが、Intune で解釈されることはありませんが、アプリに渡されます。 このような構成を受信する必要があるアプリケーションは、この操作を行うために `MAMAppConfigManager` と `MAMAppConfig` クラスを使用できます。 複数のポリシーが同じアプリで対象となっている場合は、同じキーに使用できる複数の値が競合している可能性があります。
+
+> [!NOTE] 
+> MAM で配信される構成のセットアップ-でまとめますにすることは私たち`offline`します。  Android エンタープライズ AppRestrictions のみを使用して配信される、`MAMUserNotification`このケースで空の id。
 
 ### <a name="example"></a>例
 ```java
 MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
 String identity = "user@contoso.com"
 MAMAppConfig appConfig = configManager.getAppConfig(identity);
-LOGGER.info("App Config Data = " + (appConfig == null ? "null" : appConfig.getFullData()));
+LOGGER.info("App Config Data = " + appConfig.getFullData());
 String valueToUse = null;
 if (appConfig.hasConflict("foo")) {
     List<String> values = appConfig.getAllStringsForKey("foo");
@@ -1434,124 +1663,11 @@ if (appConfig.hasConflict("foo")) {
 LOGGER.info("Found value " + valueToUse);
 ```
 
-### <a name="mamappconfig-reference"></a>MAMAppConfig 参照
-
-```java
-public interface MAMAppConfig {
-    /**
-     * Conflict resolution types for Boolean values.
-     */
-    enum BooleanQueryType {
-        /**
-         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
-         */
-        Any,
-        /**
-         * In case of conflict, returns true if any of the values are true.
-         */
-        Or,
-        /**
-         * In case of conflict, returns false if any of the values are false.
-         */
-        And
-    }
-
-    /**
-     * Conflict resolution types for integer and double values.
-     */
-    enum NumberQueryType {
-        /**
-         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
-         */
-        Any,
-        /**
-         * In case of conflict, returns the minimum Integer.
-         */
-        Min,
-        /**
-         * In case of conflict, returns the maximum Integer.
-         */
-        Max
-    }
-
-    /**
-     * Conflict resolution types for Strings.
-     */
-    enum StringQueryType {
-        /**
-         * In case of conflict, arbitrarily picks one. This is not guaranteed to return the same value every time.
-         */
-        Any,
-        /**
-         * In case of conflict, returns the first result ordered alphabetically.
-         */
-        Min,
-        /**
-         * In case of conflict, returns the last result ordered alphabetically.
-         */
-        Max
-    }
-
-    /**
-     * Retrieve the List of Dictionaries containing all the custom
-     *  config data sent by the MAMService. This will return every
-     * Application Configuration setting available for this user, one
-     *  mapping for each policy applied to the user.
-     */
-    List<Map<String, String>> getFullData();
-
-    /**
-     * Returns true if there is more than one targeted custom config setting for the key provided. 
-     */
-    boolean hasConflict(String key);
-
-    /**
-     * @return a Boolean value for the given key if it can be coerced into a Boolean, or 
-     * null if none exists or it cannot be coerced.
-     */
-    Boolean getBooleanForKey(String key, BooleanQueryType queryType);
-
-    /**
-     * @return a Long value for the given key if it can be coerced into a Long, or null if none exists or it cannot be coerced.
-     */
-    Long getIntegerForKey(String key, NumberQueryType queryType);
-
-    /**
-     * @return a Double value for the given key if it can be coerced into a Double, or null if none exists or it cannot be coerced.
-     */
-    Double getDoubleForKey(String key, NumberQueryType queryType);
-
-    /**
-     * @return a String value for the given key, or null if none exists.
-     */
-    String getStringForKey(String key, StringQueryType queryType);
-
-    /**
-     * Like getBooleanForKey except returns all values if multiple are present.
-     */
-    List<Boolean> getAllBooleansForKey(String key);
-
-    /**
-     * Like getIntegerForKey except returns all values if multiple are present.
-     */
-    List<Long> getAllIntegersForKey(String key);
-
-    /**
-     * Like getDoubleForKey except returns all values if multiple are present.
-     */
-    List<Double> getAllDoublesForKey(String key);
-
-    /**
-     * Like getStringForKey except returns all values if multiple are present.
-     */
-    List<String> getAllStringsForKey(String key);
-}
-```
-
 ### <a name="notification"></a>通知
 アプリの構成で新しい通知の種類を追加します。
-* **REFRESH_APP_CONFIG**:この通知は、`MAMUserNotification` で送信され、アプリに新しいアプリの構成データを使用できることを通知します。
+* **REFRESH_APP_CONFIG**: この通知は、`MAMUserNotification` で送信され、アプリに新しいアプリの構成データを使用できることを通知します。
 
+### <a name="further-reading"></a>参考記事
 Graph API の機能に関する詳細については、[Graph API のリファレンス](https://developer.microsoft.com/graph/docs/concepts/overview) ページを参照してください。 <br>
 
 Android で MAM 対象アプリ構成ポリシーを作成する方法については、「[Android for Work の Microsoft Intune アプリ構成ポリシーを使用する方法](https://docs.microsoft.com/intune/app-configuration-policies-use-android)」の MAM 対象アプリ構成セクションを参照してください。
@@ -1593,48 +1709,33 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
 | アプリのロゴ | Intune アプリの PIN 画面に表示される大きなアイコン | logo_image | Drawable |
 
 ## <a name="default-enrollment-optional"></a>既定の登録 (オプション)
-<!-- Requiring user login prompt for an automatic APP-WE service enrollment, requiring Intune app protection policies in order to use your SDK-integrated Android LOB app, and enabling ADAL SSO (optional) -->
 
 ここでは、自動 APP-WE サービス登録の場合にアプリの起動時にユーザー プロンプトを必須にする (このセクションでは、**既定の登録**と呼びます) 場合と、Intune で保護されたユーザーにのみ SDK に統合された Android LOB アプリの使用を許可する Intune アプリ保護ポリシーを必須にする場合のガイダンスを示します。 また、SDK に統合された Android LOB アプリで SSO を有効にする方法についても説明します。 Intune 以外のユーザーが使用できるストア アプリでは、この方法は**サポートされません**。
 
 > [!NOTE] 
 > **既定の登録**の利点には、デバイス上のアプリの APP-WE サービスからポリシーを取得する方法が簡単なことなどがあります。
 
-### <a name="general-requirements"></a>一般的な要件
-* 「[ADAL の一般的な構成](https://docs.microsoft.com/intune/app-sdk-android#common-adal-configurations)」の 2. の手順に従って、自分のアプリが Intune モバイル アプリケーション管理サービスで登録されていることを確認します。
+> [!NOTE] 
+> **既定の登録**はソブリン クラウドを認識します。
 
-### <a name="working-with-the-intune-sdk"></a>Intune SDK の使用
-これらの手順は、エンド ユーザー デバイスで使用するアプリのために Intune アプリ保護ポリシーが必要なすべての Android および Xamarin アプリの開発者向けです。
+次の手順で既定の登録を有効にします。
 
-1. [Android 用 Intune SDK ガイド](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal)のセクションで定義されている手順を使用して ADAL を構成します。
-   > [!NOTE] 
-   > アプリに関連付けられている "クライアント ID" という用語は、Azure Portal の用語 "アプリケーション ID" と同じです。 
-2. SSO を有効にするには、「ADAL の一般的な構成」の 2. が必要です。
-
-3. マニフェストに次の値を入力して、既定の登録を有効にします。
-   ```xml
+1. アプリに ADAL が統合されるか、SSO を有効にする必要がある[ADAL 構成](#configure-azure-active-directory-authentication-library-adal)次[ADAL の一般的な構成](#common-adal-configurations)2。 それ以外の場合は、この手順をスキップすることがあります。
+   
+2. マニフェストに次の値を入力して、既定の登録を有効にします。
+   ```xml 
    <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
    ```
    > [!NOTE] 
-   > これは、アプリ内での唯一の MAM-WE 統合である必要があります。 MAMEnrollmentManager API を呼び出す他の試行がある場合、競合が発生する可能性があります。
+   > これは、アプリ内での唯一の MAM-WE 統合である必要があります。 MAMEnrollmentManager API を呼び出す他の試行がある場合、競合が発生します。
 
-4. マニフェストに次の値を入力して、必要な MAM ポリシーを有効にします。
-   ```xml
+3. マニフェストに次の値を入力して、必要な MAM ポリシーを有効にします。
+   ```xml 
    <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
    ```
    > [!NOTE] 
    > その結果、ユーザーの使用前に、デバイスにポータル サイトをダウンロードし、既定の登録フローを完了することを強制します。
-   >
-   > これは、アプリ内での唯一の MAM-WE 統合である必要があります。 MAMEnrollmentManager API を呼び出す他の試行がある場合、競合が発生します。
 
-3. マニフェストに次の値を入力して、必要な MAM ポリシーを有効にします。
-
-   ```xml
-   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
-   ```
-
-> [!NOTE] 
-> その結果、ユーザーの使用前に、デバイスにポータル サイトをダウンロードし、既定の登録フローを完了することを強制します。
 
 ## <a name="limitations"></a>制限事項
 
@@ -1647,9 +1748,7 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
 
 ### <a name="policy-enforcement-limitations"></a>ポリシーの適用の制限事項
 
-* **画面キャプチャ**:SDK は Activity.onCreate が既に終了したアクティビティに対し、新しい画面キャプチャの設定値を適用することができません。 これにより、アプリがスクリーン ショットを無効にするよう構成されているものの、スクリーン ショットを引き続き実行できる期間が発生します。
-
-* **コンテンツ リゾルバーの使用**:"転送ポリシーまたは受信" Intune ポリシーにより、別のアプリのコンテンツ プロバイダーにアクセスするためのコンテンツ リゾルバーの使用がブロックされるか、部分的にブロックされる場合があります。 これにより、ContentResolver メソッドによって null が返されるか、失敗値がスローされます (例: ブロックされている場合、`openOutputStream` によって `FileNotFoundException` がスローされる)。 アプリでは、次の呼び出しを行って、コンテンツ リゾルバーを介したデータの書き込みのエラーが、ポリシーによって発生した (またはポリシーによって発生する) かどうかを確認できます。
+* **コンテンツ リゾルバーの使用**: "転送ポリシーまたは受信" Intune ポリシーにより、別のアプリのコンテンツ プロバイダーにアクセスするためのコンテンツ リゾルバーの使用がブロックされるか、部分的にブロックされる場合があります。 これにより、`ContentResolver` メソッドによって null が返されるか、失敗値がスローされます (例: ブロックされている場合、`openOutputStream` によって `FileNotFoundException` がスローされる)。 アプリでは、次の呼び出しを行って、コンテンツ リゾルバーを介したデータの書き込みのエラーが、ポリシーによって発生した (またはポリシーによって発生する) かどうかを確認できます。
     ```java
     MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
     ```
@@ -1669,7 +1768,7 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
 MAM の基底クラス (MAMActivity、MAMDocumentsProvider など) の一部には、特定の API レベルより上にあるパラメーターまたは戻り値の型のみを使用するメソッド (Android の元の基底クラスに基づく) が含まれています。 このため、リフレクションを使用して、常にアプリ コンポーネントのすべてのメソッドを列挙できるとは限りません。 この制限は MAM に限定されるものではなく、アプリ自体が、Android 基底クラスからのこのようなメソッドを実装する場合にも同じ制限が適用されます。
 
 ### <a name="robolectric"></a>Robolectric
-Robolectric での MAM SDK 動作のテストはサポートされていません。 実際のデバイスやエミュレーターでは正確に模倣されない Roboelectric に存在する動作による、Roboelectric での MAM SDK の実行に関する既知の問題があります。
+Robolectric での MAM SDK 動作のテストはサポートされていません。 実際のデバイスやエミュレーターでは正確に模倣されない Robolectric に存在する動作による、Robolectric での MAM SDK の実行に関する既知の問題があります。
 
 Roboelectric でアプリケーションをテストする必要がある場合に推奨される回避策は、アプリケーション クラスのロジックをヘルパーに移動し、MAMApplication から継承しないアプリケーション クラスで単体テスト apk を生成することです。
 ## <a name="expectations-of-the-sdk-consumer"></a>SDK コンシューマーの要望
@@ -1686,7 +1785,7 @@ Intune SDK は Android API によって提供されるコントラクトを維�
 
 ## <a name="telemetry"></a>製品利用統計情報
 
-Intune App SDK for Android は、アプリからのデータ収集を制御しません。 ポータル サイト アプリケーションでは、既定で、製品利用統計情報がログに記録されます。 このデータは、Microsoft Intune に送信されます。 Microsoft ポリシーに基づき、個人を特定できる情報 (PII) は収集しません。
+Intune App SDK for Android は、アプリからのデータ収集を制御しません。 会社ポータル アプリケーションは、既定では、システムによって生成されたデータを記録します。 このデータは、Microsoft Intune に送信されます。 Microsoft ポリシーに基づきは個人データは収集されません。
 
 > [!NOTE]
 > エンド ユーザーがこのデータの送信を選択しない場合、ポータル サイト アプリの [設定] で製品利用統計情報をオフにする必要があります。 詳しくは、「[Microsoft による使用状況データの収集を無効にする](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android)」をご覧ください。 

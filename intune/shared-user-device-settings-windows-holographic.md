@@ -6,9 +6,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/09/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 428025e5e56450fd859f6bf2c9a990cbdca4f263
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 151ceaa40f2993d3160b9de34eee92e53c35925d
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835114"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565861"
 ---
 # <a name="windows-holographic-for-business-settings-to-manage-shared-devices-using-intune"></a>Intune を使用して共有デバイスを管理するための Windows Holographic for Business の設定
 
@@ -42,10 +43,10 @@ Intune でのこの機能の詳細については、[共有 PC またはマル�
 > [!NOTE]
 > Microsoft HoloLens など、Windows Holographic for Business を実行するデバイスは、**[アカウント管理]** 設定のみをサポートしています。 **[共有 PC モード]** など、Intune に表示されるその他の設定を構成しても、これらのデバイスには影響を与えません。
 
-- **[アカウント管理]**:**[有効]** に設定すると、ゲストによって作成されたローカル アカウント、および AD と Azure AD のアカウントが自動的に削除されます。 ユーザーがデバイスからサインオフするか、またはシステム メンテナンスが実行されると、これらのアカウントは削除されます。 有効になっている場合は、次も設定します。
-  - **アカウントの削除**:次のように、アカウントを削除するタイミングを選択します:**[記憶域スペースのしきい値で]**、**[記憶域スペースのしきい値と非アクティブなしきい値で]**、または **[ログアウトの直後に]**。次の項目も入力します。
-    - **削除開始のしきい値 (%)**:ディスク領域のパーセンテージ (0-100) を入力します。 合計ディスク領域/記憶域が入力した値を下回ると、キャッシュされているアカウントが削除されます。 継続的にアカウントが削除されて、ディスク領域が再利用されます。 最も長時間非アクティブになっているアカウントが最初に削除されます。
-    - **[Stop delete threshold(%)]\(削除停止のしきい値 (%)\)**:ディスク領域のパーセンテージ (0-100) を入力します。 合計ディスク領域/記憶域が入力した値を満たすと、削除が停止されます。
+- **[アカウント管理]**: **[有効]** に設定すると、ゲストによって作成されたローカル アカウント、および AD と Azure AD のアカウントが自動的に削除されます。 ユーザーがデバイスからサインオフするか、またはシステム メンテナンスが実行されると、これらのアカウントは削除されます。 有効になっている場合は、次も設定します。
+  - **アカウントの削除**: アカウントが削除されたときの選択:**ストレージ領域のしきい値に**、**ストレージ領域のしきい値と非アクティブのしきい値に**、または**ログアウト後すぐに**.次の項目も入力します。
+    - **削除を開始 threshold(%)**: ディスク領域の割合 (0-100) を入力します。 合計ディスク領域/記憶域が入力した値を下回ると、キャッシュされているアカウントが削除されます。 継続的にアカウントが削除されて、ディスク領域が再利用されます。 最も長時間非アクティブになっているアカウントが最初に削除されます。
+    - **停止 delete threshold(%)**: ディスク領域の割合 (0-100) を入力します。 合計ディスク領域/記憶域が入力した値を満たすと、削除が停止されます。
 
   **[無効]** に設定すると、ゲストによって作成されたローカル、AD、および Azure AD のアカウントが保持されます。
 

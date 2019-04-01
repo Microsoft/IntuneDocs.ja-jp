@@ -6,10 +6,11 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 02/25/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: caf4401a2274a74050ec0eb404363cfc15b23e76
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: e0e56c2dd4e26c68a82d5cb9d902e4480e1b98c8
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55851442"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57396484"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune データ ウェアハウス API エンドポイント
 
@@ -57,11 +58,13 @@ URL には、次の要素が含まれています。
 
 ## <a name="api-version-information"></a>API のバージョン情報
 
-API の現在のバージョンは `beta` です。 
+クエリ パラメーター  `api-version=v1.0` を設定することにより、Intune データ ウェアハウスの v1.0 バージョンを使用できるようになりました。 Data Warehouse 内のコレクションに対する更新は本質的に追加であり、既存のシナリオが使用できなくなることはありません。
+
+データ ウェアハウスの最新機能については、ベータ バージョンを使用して試すことができます。 ベータ バージョンを使用するには、URL にクエリ パラメーター  `api-version=beta` を含める必要があります。 ベータ バージョンは、サポートされるサービスとして一般公開される前の機能を提供しています。 Intune に新しい機能が追加されると、ベータ バージョンの動作とデータ コントラクトが変わる可能性があります。 カスタム コードまたはレポート ツールがベータ バージョンに依存していると、今後の更新プログラムで使用できなくなる可能性があります。
 
 ## <a name="odata-query-options"></a>OData クエリのオプション
 
-現在のバージョンは、OData クエリ パラメーター `$filter, $orderby, $select, $skip,` と `$top` をサポートしています。
+現在のバージョンは、OData クエリ パラメーター `$filter`、`$select`、`$skip,`、および `$top` をサポートしています。 `$filter`だけ`DateKey`または`RowLastModifiedDateTimeUTC`列は、該当して、その他のプロパティが正しくない要求をトリガーするときにサポートされている可能性があります。
 
 ## <a name="datekey-range-filters"></a>DateKey 範囲のフィルター
 
@@ -73,15 +76,12 @@ API の現在のバージョンは `beta` です。
 ## <a name="filter-examples"></a>フィルターの例
 
 > [!NOTE]
-> フィルターの例では、今日を 2018 年 2 月 21 日と想定しています。
+> フィルターの例では、今日を 2019 年 2 月 21 日と想定しています。
 
 |                             フィルター                             |           パフォーマンスの最適化           |                                          説明                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
 |    `maxhistorydays=7`                                            |    完全                                      |    `DateKey` が 20180214 から 20180221 の間のデータを返します。                                     |
 |    `$filter=DateKey eq 20180214`                                 |    完全                                      |    `DateKey` が 20180214 のデータを返します。                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    完全                                      |    `DateKey` が 20180214 から 20180220 の間のデータを返します。                                     |
-|    `maxhistorydays=7&$filter=Id gt 1`                            |    部分、Id gt 1 は最適化されません    |    `DateKey` が 20180214 から 20180221 の間で、Id が 1 より大きい値のデータを返します。             |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    完全                                      |    `DateKey` が 20180214 のデータを返します。 `maxhistorydays` は無視されます。                            |
-|    `$filter=DateKey eq 20180214 and Id gt 1`                     |    なし                                      |    `DateKey` 範囲のフィルターとして扱われないため、パフォーマンスは向上されません。                              |
-|    `$filter=DateKey ne 20180214`                                 |    なし                                      |    `DateKey` 範囲のフィルターとして扱われないため、パフォーマンスは向上されません。                              |
-|    `maxhistorydays=7&$filter=DateKey eq 20180214 and Id gt 1`    |    なし                                      |    `DateKey` 範囲のフィルターとして扱われないため、パフォーマンスは向上されません。 `maxhistorydays` は無視されます。    |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    完全                                       |    データを返す`RowLastModifiedDateTimeUTC`がより大きいまたは等しい `2018-02-21T23:18:51.3277273Z`                             |

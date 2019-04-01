@@ -6,9 +6,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: dagerrit
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38087afa95dc5933b55e6342ad46386cf0185f42
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: c2a8c234c305744c48785763c87913c2635276ad
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228971"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565606"
 ---
 # <a name="windows-10-and-newer-device-settings-to-upgrade-editions-or-enable-s-mode-in-intune"></a>Intune でエディションのアップグレードや S モードの有効化に使用する Windows 10 (以降の) デバイス設定
 
@@ -37,15 +38,15 @@ Microsoft Intune には、デバイスの管理と保護に役立つ多くの設
 
 ## <a name="edition-upgrade"></a>エディションのアップグレード
 
-- **アップグレード後のエディション**:アップグレード後の Windows 10 エディションを選択します。 このポリシーで対象となるデバイスが選択したエディションにアップグレードされます。
-- **プロダクト キー**:Microsoft から受け取ったプロダクト キーを入力します。 プロダクト キーを含むポリシーの作成後、キーは更新できなくなり、セキュリティ上の理由から非表示になります。 プロダクト キーを変更するには、キー全体を再入力します。
-- **ライセンス ファイル**:**[Windows 10 Holographic for Business]** または **[Windows 10 Mobile エディション]** については、**[参照]** を選択し、Microsoft から受け取ったライセンス ファイルを選択します。 このライセンス ファイルには、デバイスをアップグレードするエディションのライセンス情報が含まれています。
+- **アップグレード後のエディション**: アップグレード後の Windows 10 エディションを選択します。 このポリシーで対象となるデバイスが選択したエディションにアップグレードされます。
+- **プロダクト キー**: Microsoft から受け取ったプロダクト キーを入力します。 プロダクト キーを含むポリシーの作成後、キーは更新できなくなり、セキュリティ上の理由から非表示になります。 プロダクト キーを変更するには、キー全体を再入力します。
+- **ライセンス ファイル**: **[Windows 10 Holographic for Business]** または **[Windows 10 Mobile エディション]** については、**[参照]** を選択し、Microsoft から受け取ったライセンス ファイルを選択します。 このライセンス ファイルには、デバイスをアップグレードするエディションのライセンス情報が含まれています。
 
 ## <a name="mode-switch"></a>モード切り替え
 
-- **No configuration (構成なし)**:S モード デバイスは S モードのままです。 エンドユーザーはデバイスを S モードから抜けさせることができます。
-- **S モードのままにする**:エンド ユーザーはデバイスを S モードから抜けさせることができなくなります。
-- **切り替え**:デバイスを S モードから切り替えます。
+- **構成なし**: S モード デバイスは S モードのままになります。 エンドユーザーはデバイスを S モードから抜けさせることができます。
+- **S モードを維持する**: エンド ユーザーはデバイスを S モードから抜けさせることができなくなります。
+- **切り替える**: デバイスを S モードから抜けさせます。
 
 ## <a name="next-steps"></a>次の手順
 

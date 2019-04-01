@@ -10,18 +10,20 @@ ms.date: 01/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 29f09230-dc56-43db-b599-d961967bda49
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 2eae4ea2bfabe1b41af88ae34b81fbf12ef5f9d9
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2cdf7ea715a13809c860e77412914e3fd2b45a28
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297504"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57400485"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune データ ウェアハウスのコレクション
 
@@ -505,7 +507,10 @@ Microsoft Intune によるモバイル アプリケーション管理を使用�
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | 所有者の種類を示す一意識別子。                                                                                                                                               |                            |
 | ownerTypeKey  | データ ウェアハウスにおける所有者の種類を示す一意識別子 - 代理キー。                                                                                                       |                            |
-| ownerTypeName | デバイスの所有者の種類を表します。Company - 会社が所有するデバイスです。  Personal - 個人が所有するデバイスです (BYOD)。   Unknown - このデバイスの情報はありません。 | Company、Personal、Unknown |
+| ownerTypeName | デバイスの所有者の種類を表します: Corporate - 会社が所有するデバイスです。  Personal - 個人が所有するデバイスです (BYOD)。   Unknown - このデバイスの情報はありません。 | 企業個人、不明 |
+
+> [!Note]  
+> `ownerTypeName`フィルターでは、azure Ad デバイスの動的なグループを作成するときに、値を設定する必要があります。`deviceOwnership`として`Company`します。 詳細については、次を参照してください。[デバイスのルール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)します。 
 
 ## <a name="policies"></a>ポリシー
 **Policy** エンティティには、デバイス構成プロファイル、アプリ構成プロファイル、およびコンプライアンス ポリシーが表示されます。 モバイル デバイス管理 (MDM) を含むポリシーを社内のグループに割り当てることができます。
