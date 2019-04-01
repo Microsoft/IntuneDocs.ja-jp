@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
+ms.date: 03/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78b47decc297c58feadb7cd507a3ff09070d46d4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 55a0cb45cd3e3a8e367b0bff7bd8e856b02af953
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565742"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429693"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Intune で Windows 10 以降のデバイスをキオスクとして実行するための設定
 
@@ -176,6 +176,7 @@ Intune での Windows キオスク機能の詳細については、[キオスク
 
       **[OK]** を選択して変更を保存します。
 
+    - **自動的**: 省略可能です。 ユーザーがサインインするときに自動的にアプリケーションを選択します。 1 つのアプリのみが AutoLaunched できます。
     - **[タイルのサイズ]**: 必須です。 小、中、全体、大の、アプリ タイルのサイズを選択します。
 
   > [!TIP]
@@ -184,6 +185,8 @@ Intune での Windows キオスク機能の詳細については、[キオスク
 - **[Use alternative Start layout]\(スタート画面の別のレイアウトを使用する\)**: **[はい]** を選択して、アプリの順序を含む、アプリをスタート メニューに表示する方法を説明する XML ファイルを入力します。 [スタート] メニューでさらにカスタマイズが必要な場合は、このオプションを使用します。 ガイダンスおよび XML のサンプルについては、「[スタート画面のレイアウトのカスタマイズとエクスポート](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout)」をご覧ください。
 
 - **[Windows タスク バー]**: タスク バーを**表示**または**非表示**にします。 既定では、タスク バーは表示されません。 Wi-Fi アイコンなどのアイコンが表示されますが、エンドユーザーが設定を変更することはできません。
+
+- **ダウンロード フォルダーへのアクセスを許可する**: 選択**はい**Windows エクスプ ローラーの [ダウンロード] フォルダーにアクセスできるようにします。 既定では、ダウンロード フォルダーへのアクセスは無効になります。 この機能は、ブラウザーからダウンロードされたアイテムにアクセスするエンドユーザーのよく使用されます。
 
 **[OK]** を選択して変更を保存します。
 
