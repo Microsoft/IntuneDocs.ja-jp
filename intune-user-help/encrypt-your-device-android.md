@@ -1,11 +1,11 @@
 ---
-title: 暗号化を使用して Android デバイスを保護する方法 | Microsoft Docs
-description: Android デバイスを保護する
+title: Android デバイスを Intune ポータル サイトの暗号化 |Microsoft Docs
+description: Android デバイスでデバイスの暗号化を有効にする手順
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 03/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,31 +18,47 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 115025d60038daea6f43c97cbdc03a20d5b0bf59
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c9f1e7bbbad243e37f34cb298466adf886be9273
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838174"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490589"
 ---
-# <a name="how-to-protect-your-android-device-using-encryption"></a>暗号化を使用して Android デバイスを保護する方法
+# <a name="encrypting-your-android-device"></a>Android デバイスの暗号化
 
-デバイスを暗号化するときに、承認されていないユーザーがアクセスできないように保護コード層でデバイスに関する情報をラップします。 ユーザーの情報を確実にセキュリティで保護するために、組織ではまず、企業のファイル、電子メール、またはデータにアクセスする前にユーザーに Android デバイスを暗号化するよう求める必要があります。
+デバイスの暗号化保護ファイルとフォルダーを不正アクセスからデバイスが紛失または盗難にあった場合します。 デバイスの暗号化を有効にすると、正しいパスワードまたは pin でのユーザーのみは同じデバイスにサインインすることができます。 
+
+学校または会社のリソースにアクセスする前に、組織は、Android デバイスを暗号化する必要があります。 既定では、一部の新しい Android デバイスで暗号化ボックスの。  
+
+## <a name="turn-on-encryption"></a>暗号化を有効にします。
+
+デバイスを暗号化する必要がある会社のポータルでメッセージを受信する場合は、次の手順を完了します。 
 
 > [!Note]
-> Huawei 製や Vivo および OPPO 製の特定の Android デバイスは暗号化できません。 詳細については、[こちら](your-device-appears-encrypted-but-cp-says-otherwise-android.md)を参照してください。
+> Huawei、Vivo および OPPO から特定の Android デバイスを暗号化することはできません。 詳細については、[こちら](your-device-appears-encrypted-but-cp-says-otherwise-android.md)を参照してください。  
 
-電話の登録を解除しても、暗号化は維持されます。
+1.  デバイスの画面のロックを設定します。  
+    」を参照します。 **[設定]** > **[ロック画面とセキュリティ]** > **[Screen lock type]\(画面のロックの種類\)** に移動します。  
+    b. いずれかを選択**PIN**、**パスワード**、または**パターン**します。  
+    c. 画面のロックを構成するのには、画面の指示に従います。  
 
-1.  デバイスの画面ロック PIN またはパスワードが設定されていることを確認します。
+2. 戻り**ロック画面とセキュリティ**選択**安全な起動**します。
+3. 選択**デバイスをオンに PIN を必要と** > **OK**します。
+4. 確認し、デバイスの暗号化、PIN を入力します。
+5. ポータル サイト アプリを開き、デバイスを選択して、**[デバイス設定の確認]** をタップします。  
 
-2.  **[設定]** で、**[セキュリティ]** > **[Encrypt Device]\(デバイスの暗号化\)** の順に選択します。
-    (一部の電話では、"暗号化" オプションを表示するために、**[ストレージ]** > **[ストレージの暗号化]** または **[ストレージ]** > **[画面のロックとセキュリティ]** > **[他のセキュリティ設定]** の順に選択する必要があります。)
+Android 4.4 以降を実行しているデバイスがない、 **Secure startup**オプション。 その場合は、デバイスを暗号化するには、次の手順を完了します。
 
-3.  画面の指示に従います。 暗号化が行われている間、デバイスが何度か再起動する場合があります。
+1. 移動して**設定** > **セキュリティ** > **デバイスを暗号化**します。 Android デバイスで画面に表示されるラベルは異なります。 表示されない場合、**デバイスの暗号化**オプションで確認してください。
+    * **記憶域** > **ストレージの暗号化**
+    * **記憶域** > **ロック画面とセキュリティ** > **他のセキュリティ設定** 
 
-### <a name="what-to-do-if-you-have-issues"></a>問題がある場合の対処方法
-**問題**: デバイスに既に暗号化を適用していますが、次のいずれかの状態に遭遇しました。
+2. 画面の指示に従います。 暗号化中、デバイスが何度か再起動する可能性があります。
+3. ポータル サイト アプリを開き、デバイスを選択して、**[デバイス設定の確認]** をタップします。  
+
+## <a name="troubleshoot"></a>トラブルシューティング  
+**問題**: デバイスが既に暗号化されていると
 
 - 暗号化ボタンが無効です。
 - 暗号化が必要であるというメッセージが引き続き表示されます。
@@ -50,20 +66,7 @@ ms.locfileid: "55838174"
 
 **対処方法**
 
-- デバイスが課金され、接続されていることを確認します。
-- デバイスで PIN やパスワードが設定されていることを確認します。
-- デバイスに PIN またはパスワードを既に設定してある場合は、次の手順を試してみます。会社のサポートがデバイスのセキュリティを強化する必要がある場合があります。 Android デバイスの種類により、手順で表示されるメニュー名が若干異なることがあります。
+- デバイスが課金され、接続されていることを確認します。  
+- デバイスで PIN やパスワードが設定されていることを確認します。  
 
-    1. **[設定]** > **[ロック画面とセキュリティ]** > **[画面のロック]** の順に進みます。 現在の PIN またはパスワードを確認します。
-
-    2. **[Choose screen lock]** (画面のロックの選択) 画面で、使用する画面ロックの種類を選択します。 
-
-    3. 画面のロックを選択したら、**[ロック画面とセキュリティ]** 画面に戻り、**[安全な起動]** を選択します。 
-    
-    4. **[安全な起動]** 画面で、**[Require PIN to start device]\(デバイスの起動に PIN が必要\)** をタップし、**[続行]** をタップします。
-
-    5. PIN を選択し (前に入力したものと同じものを入力できます)、**[Confirm your PIN]** (PIN の確認) をタップします。
-
-    6. ポータル サイト アプリを開き、デバイスを選択して、**[Check Compliance]** (ポリシー準拠状況の確認) をタップします。
-
-サポートが必要な場合は、 会社のサポートに問い合わせるか (連絡先情報については[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください)、または <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android チーム</a>にご連絡ください。
+サポートが必要な場合は、 会社のサポートに問い合わせるか (連絡先情報については[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください)、または <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android チーム</a>にご連絡ください。  

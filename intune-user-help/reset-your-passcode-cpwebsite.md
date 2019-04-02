@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e973e18a79c18af6b201194fc1a6534da5fa38a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: fd05c600553ec23085b03eb560e0e736c9d7a764
+ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838038"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58163430"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>ポータル サイト Web サイトからデバイスのパスコードをリセットする方法
 
@@ -32,7 +32,7 @@ ms.locfileid: "55838038"
 企業登録対象のデバイスを使用している場合、デバイスのパスコードをリセットするためのオプションが表示されない可能性があります。 会社のサポートにパスコードのリセットを依頼してください。
 
    > [!NOTE]
-   > Android 7.0 以降のデバイスのパスコードはリセットできません。 パスコードを忘れた場合は、デバイスを工場出荷時の設定にリセットする必要があります。 
+   > Android 7.0 以降を稼働しているデバイスのパスコードはリセットできません。 パスコードを忘れた場合は、デバイスを工場出荷時の設定にリセットする必要があります。 
 
 ## <a name="reset-your-passcode"></a>パスコードをリセットする
 

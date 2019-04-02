@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe16111095051c1fddb4b87d5b4f815ae2798e92
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 29213400b5baf9705c188bb45b3666b65262d577
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566371"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358235"
 ---
 # <a name="reference-for-devices-entities"></a>デバイス エンティティの参照
 
@@ -66,36 +66,12 @@ ms.locfileid: "57566371"
 | 11 |Android |Android デバイス - デバイス管理者により管理 |
 | 12 |ISocConsumer |iSoc Consumer デバイス |
 | 14 |MacMDM |Mac OS X デバイス - 組み込み MDM エージェントにより管理 |
-| 15 |HoloLens |Holo Lens デバイス |
+| 15 |HoloLens |HoloLens デバイス |
 | 16 |SurfaceHub |Surface Hub デバイス |
 | 17 |AndroidForWork |Android デバイス - Android Profile Owner により管理 |
 | 100 |Blackberry |Blackberry デバイス |
 | 101 |Palm |Palm デバイス |
 | 255 |Unknown |デバイスの種類が不明 |
-
-## <a name="clientregistrationstatetypes"></a>ClientRegistrationStateTypes
-
-**ClientRegistrationStateTypes** エンティティは、他のデータ ウェアハウス テーブルにより参照される登録の種類を表します。
-
-| プロパティ  | 説明 |
-|---------|------------|
-| clientRegisterationStateID |登録状況の一意識別子 |
-| clientRegisterationStateKey |データ ウェアハウスにおける登録状況を示す一意識別子 - 代理キー |
-| clientRegisterationStateName |登録状況 |
-
-### <a name="example"></a>例
-
-| ClientRegisterationStateID  | 名前 | 説明 |
-|---------|------------|--------|
-| 0 |NotRegistered |未登録 |
-| 1 |SMSIDConflict |SMS ID 競合 |
-| 2 |登録済み |登録済み |
-| 3 |取り消し済み |状態は IT 管理者がクライアントをブロックしたことを意味します。クライアントのブロックを解除できます。 デバイスは、ワイプした後やインベントリから削除した後にも取り消し済み状態になります。 |
-| 4 |KeyConflict |キー競合 |
-| 5 |ApprovalPending |承認保留中 |
-| 6 |ResetCert |証明書のリセット |
-| 7 |NotRegisteredPendingEnrollment |未登録で登録保留中 |
-| 8 |Unknown |状態が不明 |
 
 ## <a name="enrollmentactivities"></a>enrollmentActivities 
 **EnrollmentActivity** エンティティは、デバイス登録のアクティビティを示します。
@@ -104,7 +80,6 @@ ms.locfileid: "57566371"
 |-------------------------------|---------------------------------------------------------------------------|
 | dateKey                       | この登録アクティビティが記録された日付のキー。               |
 | deviceEnrollmentTypeKey       | 登録の種類のキー。                                        |
-| deviceTypeKey                 | デバイスの種類のキー。                                                |
 | enrollmentEventStatusKey      | 登録の成功または失敗を示す状態のキー。    |
 | enrollmentFailureCategoryKey  | 登録エラー カテゴリのキー (登録が失敗した場合)。        |
 | enrollmentFailureReasonKey    | 登録エラーの理由のキー (登録が失敗した場合)。          |
@@ -151,8 +126,8 @@ ms.locfileid: "57566371"
 | BadRequest                      | クライアントによって、サービスで認識/サポートされていない要求が送信されました。                                        |
 | FeatureNotSupported             | この登録で使用される機能が、このアカウントでサポートされていません。                                        |
 | EnrollmentRestrictionsEnforced  | 管理者が構成した登録制限によって、この登録がブロックされました。                                          |
-| ClientDisconnected              | クライアントがタイムアウトになったか、エンドユーザーによって中断されました。                                                        |
-| UserAbandonment                 | 登録はエンドユーザーによって中止されました  (エンドユーザーはオンボードを開始しましたが、適時に完了できませんでした)。  |
+| ClientDisconnected              | クライアントがタイムアウトになったか、エンドユーザーによって登録が中断されました。                                                        |
+| UserAbandonment                 | エンドユーザーによって登録が中止されました。 (エンドユーザーはオンボードを開始しましたが、適切なタイミングでそれを完了できませんでした)  |
 
 ## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
 **EnrollmentFailureReason** エンティティは、特定のエラー カテゴリ内のデバイス登録エラーのより詳細な理由を示します。  
@@ -181,33 +156,8 @@ ms.locfileid: "57566371"
 | EnrollmentCriteriaNotMet         | 構成された登録制限規則により、このデバイスの登録に失敗しました。                                                                                                                          |
 | BulkDeviceNotPreregistered       | このデバイスの International Mobile Equipment Identifier (IMEI) またはシリアル番号が見つかりませんでした。  この識別子がない場合、デバイスは、現在ブロックされている個人所有デバイスとして認識されます。  |
 | FeatureNotSupported              | ユーザーが、すべての顧客に対してまだリリースされていないか、Intune 構成と互換性のない機能にアクセスしようとしました。                                                            |
-| UserAbandonment                  | 登録はエンドユーザーによって中止されました  (エンドユーザーはオンボードを開始しましたが、適時に完了できませんでした)。                                                                                           |
+| UserAbandonment                  | エンドユーザーによって登録が中止されました。 (エンドユーザーはオンボードを開始しましたが、適切なタイミングでそれを完了できませんでした)                                                                                           |
 | APNSCertificateExpired           | 期限切れの Apple MDM プッシュ証明書では、Apple デバイスを管理できません。                                                                                                                            |
-
-## <a name="enrollmenttypes"></a>EnrollmentTypes
-
-**EnrollmentTypes** エンティティは、デバイスの登録方法を示します。 登録の種類により、登録の方法が保存されます。 例には、登録のさまざまな種類とその意味が一覧表示されています。
-
-| プロパティ  | 説明 |
-|---------|------------|
-| managementStateID |管理状態を示す一意識別子 |
-| managementStateKey |データ ウェアハウスにおける管理状態を示す一意識別子 - 代理キー |
-| managementStateName |このデバイスに適用されるリモート アクションの状態を示します。 |
-
-### <a name="example"></a>例
-
-| enrollmentTypeID  | 名前 | 説明 |
-|---------|------------|--------|
-| 0 |Unknown |登録の種類が収集されませんでした |
-| 1 |UserEnrollment |ユーザーが開始した登録 |
-| 2 |DeviceEnrollment |ユーザーなしのプロファイルによるデバイス登録 |
-| 3 |DeviceEnrollmentWithUDA |UDA プロファイルによるデバイス登録 |
-| 4 |AzureDomainJoined |ユーザーが Azure Active Directory を利用して開始したデバイス登録 |
-| 5 |UserEnrollmentWithServiceAccount |ユーザーがサービス アカウントを利用して開始した登録 |
-| 6 |DepDeviceEnrollment |ユーザーなしのプロファイルによる DEP デバイス登録 |
-| 7 |DepDeviceEnrollmentWithUDA |UDA プロファイルによる DEP デバイス登録 |
-| 8 |AutoEnrollment |BYOD シナリオのための DRS と MDM を組み合わせた登録 |
-
 ## <a name="ownertypes"></a>OwnerTypes
 
 **EnrollmentTypes** エンティティは、デバイスの種類として企業所有、個人所有、不明のいずれかを示します。
@@ -220,28 +170,6 @@ ms.locfileid: "57566371"
 
 > [!Note]  
 > `ownerTypeName`で azure Ad デバイスの動的なグループを作成するときに、フィルター値を設定する必要があります。`deviceOwnership`として`Company`します。 詳細については、次を参照してください。[デバイスのルール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)します。 
-
-## <a name="mdmstatuses"></a>MdmStatuses
-
-**MdmStatuses** エンティティは、デバイスのコンプライアンス対応状態を示します。
-
-| プロパティ  | 説明 |
-|---------|------------|
-| MdmStatusID |コンプライアンスの状態を示す一意識別子 |
-| MdmStatusKey |データ ウェアハウスにおけるコンプライアンス対応状態を示す一意識別子 - 代理キー | 
-| ComplianceStatus |デバイスのコンプライアンスの状態。以下の表のいずれかの値が表示されます | 
-
-
-### <a name="example"></a>例
-
-| MdmStatusID  | ComplianceStatus | 説明 |
-|---------|------------|--------|
-| 0 |Unknown |デバイスのコンプライアンスの状態は不明です。 |
-| 1 |準拠 |デバイスは準拠しています。 |
-| 2 |非準拠 |デバイスは準拠していません。 |
-| 3 |競合 |デバイスのコンプライアンスで競合が発生しました。 |
-| 4 |エラー |デバイスのコンプライアンス状態の読み取りでエラーが発生しました。 |
-
 
 ## <a name="managementstates"></a>ManagementStates
 
@@ -269,30 +197,6 @@ ms.locfileid: "57566371"
 | 9 |WipeCanceled | ワイプ コマンドが取り消されています。 |
 | 10 |RetireCanceled | インベントリから削除するコマンドが取り消されています。 |
 | 11 |Discovered | Intune がデバイスを新たに検出しました。最初のチェックイン後、状態が [Managed] に変更されます。 |
-
-## <a name="workplacejoinstatetypes"></a>WorkPlaceJoinStateTypes
-
-**WorkPlaceJoinStateTypes** エンティティは、デバイスの Azure Active Directory の社内参加の状況を表します。  登録ワークフローでは、検証または認証に 1 つまたは複数の証明書を利用できます。 デバイスをワークプレース登録するとき、証明書でデバイスとユーザーを検証します。 証明書は SCEP (Simple Certificate Enrollment Point) サーバーから発行されます。 エンティティの値は、デバイスがこのプロセスを通過するときのさまざまな状態を示します。 このような状態の中に、(SCEP サーバーから) 必要な証明書が発行されなかったため、社内参加ができなかったという状態があります。 デバイスがこのワークフローを通過しなかった場合、値は [不明] に設定されます。
-
-| プロパティ  | 説明 |
-|---------|------------|
-| WorkPlaceJoinStateID | ワークプレース参加状態を示す一意識別子 |
-| WorkPlaceJoinStateKey | データ ウェアハウスにおけるワークプレース参加状態を示す一意識別子 - 代理キー |
-| WorkPlaceJoinStateName | ワークプレース参加状態 |
-
-### <a name="example"></a>例
-
-| workPlaceJoinStateID  | 名前 | 説明 |
-|---------|------------|--------|
-| 0 |Unknown |デバイスが社内参加していない場合、状態は不明となります。 |
-| 1 |成功 |社内参加に成功しました |
-| 2 |FailureToGetScepMetadata |SCEP メタデータを取得できませんでした |
-| 3 |FailureToGetScepChallenge |SCEP チャレンジを取得できませんでした |
-| 4 |DeviceFailureToInstallScepCommand |デバイスに SCEP コマンドをインストールしようとしましたが失敗しました |
-| 5 |DeviceFailureToGetCertificate |デバイスが SCEP 経由で証明書を取得しようとしましたが失敗しました |
-| 6 |DeviceScepPending |保留状態であり、デバイスは SCEP を継続しています |
-| 7 |DeviceScepFailed |デバイスが SCEP 経由で証明書をインストールしようとしましたが失敗しました |
-| 8 |AADValidationFailed |AAD にデバイスが存在するか検証しようとしましたが失敗しました |
 
 ## <a name="managementagenttypes"></a>ManagementAgentTypes
 
@@ -326,39 +230,20 @@ ms.locfileid: "57566371"
 | DeviceId | デバイスの一意識別子。 |
 | DeviceName | デバイスに名前を付けられるプラットフォーム上にあるデバイスの名前。 その他のプラットフォームの場合、Intune がその他のプロパティから名前を作成します。 この属性は一部のデバイスで利用できません。 |
 | DeviceTypeKey | このデバイスの種類属性のキー。 |
-| ClientRegisterationStateKey | このデバイスのクライアント登録状態属性のキー。 |
 | OwnerTypeKey | このデバイスの所有者の種類属性のキー (会社、個人、不明) |
 | objectSourceKey | この列は無視してください。 |
-| CreatedDate | デバイスが登録された日付。 |
-| LastContact | Intune によるデバイス チェックインで最後に確認されているもの。 |
-| LastContactNotification | Intune によるチェックインを Intune がデバイスに通知した最後の時刻。 |
-| LastContactWorkplaceJoin | このデバイスの社内参加について最後に確認されている状態を示すタイムスタンプ |
 | ManagementAgentKey | このデバイスに関連付けられている管理エージェントのキー |
 | ManagementStateKey | このデバイスに関連付けられている管理状態を示すキーであり、リモート アクションの最新の状態を示すか、脱獄/ルート化状態を示します |
-| ReferenceId | Azure Active Directory のデバイス ID。 |
-| WorkPlaceJoinStateKey | このデバイスに関連付けられている社内参加の状態を示すキー |
-| CategoryId | この列は無視してください。 |
-| EnrollmentTypeKey | このデバイスに関連付けられている登録の種類を示すキーであり、登録の方法を示します |
-| CertExpirationDate | MDM 管理証明書の有効期限日 |
-| MdmStatusKey | MdmStatus キー。 |
-| OSFamily | OS 製品群 (Windows、iOS、Android など) |
 | OSVersion | OS のバージョン |
 | OSMajorVersion | OS バージョンのメジャー バージョン コンポーネント (major.minor.build.revision)。 |
 | OSMinorVersion | OS バージョンのマイナー バージョン コンポーネント (major.minor.build.revision)。 |
 | OSBuildNumber | OS バージョンのビルド バージョン コンポーネント (major.minor.build.revision)。 |
 | OSRevisionNumber | OS バージョンのリビジョン バージョン コンポーネント (major.minor.build.revision)。 |
-| EasID | デバイスが Exchange Active Sync で管理されている場合、このデバイスの EAS ID |
-| GraphDeviceIsManaged | Intune により Azure AD で最後に設定された管理状態。 |
-| GraphDeviceIsCompliant | Intune により Azure AD で最後に設定されたコンプライアンス対応状態。 |
 | SerialNumber | デバイスのシリアル番号 (使用可能な場合)。 |
-| EnrolledByUser | このデバイスを登録したユーザーの ID であり、ユーザー テーブルの userId 列を参照します |
 | RowLastModifiedDateTimeUTC | このレコードが変更された最後の時刻 |
-| ProcessorArchitecture | プロセッサ アーキテクチャ。 |
 | DeviceAction | 最後に発行されたデバイス アクション (今回は無視してください) |
 | 製造元 | デバイスの製造元。 |
 | モデル | デバイスのモデル。 |
-| LastPolicyUpdateUtc | デバイスでポリシーが更新された最後の時刻。 |
-| LastExchangeStatusUtc | デバイスと Exchange が同期を行った最後の時刻 |
 | IsDeleted | Intune によるデバイスの管理が終了している場合、True に設定されます。 最後に確認されている状態が保存されます。 |
 | AndroidSecurityPatchLevel |デバイスの最新のセキュリティ更新プログラムの日付。 |
 
@@ -371,138 +256,14 @@ ms.locfileid: "57566371"
 | DateKey |日付テーブルの参照であり、日を示します。 |
 | DeviceKey |データ ウェアハウスにおけるデバイスを示す一意識別子 - 代理キー。 これは、Intune デバイス ID が含まれるデバイス テーブルの参照です。 |
 | DeviceName |デバイスに名前を付けられるプラットフォーム上にあるデバイスの名前。 その他のプラットフォームの場合、Intune がその他のプロパティから名前を作成します。 この属性は一部のデバイスで利用できません。 |
-| DeviceTypeKey |このデバイスの種類属性のキー。 |
-| ClientRegisterationStateKey |このデバイスのクライアント登録状態属性のキー。 |
 | OwnerTypeKey |このデバイスの所有者の種類属性のキー (会社、個人、不明) |
 | objectSourceKey |この列は無視してください。 |
-| CreatedDate |デバイスが登録された日付。 |
-| LastContact |Intune によるデバイス チェックインで最後に確認されているもの。 |
-| LastContactNotification |Intune によるチェックインを Intune がデバイスに通知した最後の時刻。 |
-| LastContactWorkplaceJoin |このデバイスの社内参加について最後に確認されている状態を示すタイムスタンプ |
-| ManagementAgentKey |このデバイスに関連付けられている管理エージェントのキー |
 | ManagementStateKey |このデバイスに関連付けられている管理状態を示すキーであり、リモート アクションの最新の状態を示すか、脱獄/ルート化状態を示します |
-| ReferenceId |Azure Active Directory のデバイス ID。 |
-| WorkPlaceJoinStateKey |このデバイスに関連付けられている社内参加の状態を示すキー |
-| CategoryId |この列は無視してください。 |
-| EnrollmentTypeKey |このデバイスに関連付けられている登録の種類を示すキーであり、登録の方法を示します |
-| CertExpirationDate |MDM 管理証明書の有効期限日 |
-| MdmStatusKey |MdmStatus キー。 |
-| OSFamily |OS 製品群 (Windows、iOS、Android など) |
 | OSVersion |OS のバージョン。 |
 | OSMajorVersion |OS バージョンのメジャー バージョン コンポーネント (major.minor.build.revision)。 |
 | OSMinorVersion |OS バージョンのマイナー バージョン コンポーネント (major.minor.build.revision)。 |
 | OSBuildNumber |OS バージョンのビルド バージョン コンポーネント (major.minor.build.revision)。 |
-| OSRevisionNumber |OS バージョンのリビジョン バージョン コンポーネント (major.minor.build.revision)。 |
-| EasID |デバイスが Exchange Active Sync で管理されている場合、このデバイスの EAS ID |
-| GraphDeviceIsManaged |Intune により Azure AD で最後に設定された管理状態。 |
-| GraphDeviceIsCompliant |Intune により Azure AD で最後に設定されたコンプライアンス対応状態。 |
-| SerialNumber |デバイスのシリアル番号 (使用可能な場合)。 |
-| EnrolledByUser |このデバイスを登録したユーザーの ID であり、ユーザー テーブルの userId 列を参照します |
-| RowLastModifiedDateTimeUTC |このレコードが変更された最後の時刻 |
-| ProcessorArchitecture |プロセッサ アーキテクチャ。 |
 | DeviceAction |最後に発行されたデバイス アクション (今回は無視してください) |
-| 製造元 |デバイスの製造元。 |
-| モデル |デバイスのモデル。 |
-| LastPolicyUpdateUtc |デバイスでポリシーが更新された最後の時刻。 |
-| LastExchangeStatusUtc |デバイスと Exchange が同期を行った最後の時刻 |
-
-## <a name="mdmdeviceinventoryhistories"></a>MdmDeviceInventoryHistories
-
-**MdmDeviceInventoryHistories** エンティティには、過去 90 日間、MDM で管理しているデバイスのインベントリ データを対象に毎日作成されたスナップショットが含まれています。 DateKey 列は行の日を示します。 デバイスによっては適用または入力されないプロパティがあります。詳しくは、このページを参照してください。 詳細については、「[Microsoft Intune でインベントリを使用してデバイスを把握する](device-inventory.md)」を参照してください。
-
-| プロパティ  | 説明 |
-|---------|------------|
-| DateKey | 日付テーブルの参照であり、日を示します。 |
-| DeviceKey |データ ウェアハウスにおけるデバイスを示す一意識別子 - 代理キー。 これは、Intune デバイス ID が含まれるデバイス テーブルの参照です。 |
-| DeviceModel |デバイスのモデル。 |
-| OS |デバイスの OS。 |
-| DeviceName |デバイスに名前を付けられるプラットフォーム上にあるデバイスの名前。 その他のプラットフォームの場合、Intune がその他のプロパティから名前を作成します。 この属性は一部のデバイスで利用できません。 |
-| SoftwareVersion |多くの場合、OS バージョンとは異なる Apple プラットフォームを除き、これは OS バージョンになります。 |
-| Imei |IMEI 番号 |
-| HardwareInventoryTimeUtc |このデバイスのインベントリが報告された最初の時刻 |
-| InventoryModifiedTimeUtc |このスナップショットが作成されたときにインベントリが保存された最後の時刻。 |
-| InventoryReportingTimeUtc |このデバイスのインベントリが回収された最後の時刻 |
-| ExchangeActiveSyncId |Exchange ActiveSync デバイス ID。 |
-| ComputerSystemDescription |システムの説明。 |
-| ComputerSystemName |システム名。 |
-| ComputerSystemManufacturer |システムの製造元。 |
-| ComputerSystemModel |システムのモデル。 |
-| UserName |ユーザー名。 |
-| OSType |OS の種類。 |
-| OSCaption |OS キャプション。 |
-| OSName |OS の名前。 |
-| OSManufacturer |OS の製造元。 |
-| OSProductSuite |OS 製品スイート。 |
-| OSProductType |OS 製品の種類。 |
-| ロケール |OS ロケール。 |
-| PhysicalMemoryCapacity |物理メモリ容量 (バイト単位)。 |
-| PhysicalMemoryRemovable |物理リムーバブル メモリ (バイト単位)。 |
-| SystemEnclosureChassisTypesInnerText |このデバイスのシステム シャーシの種類を定義します。 数字は次の値を示します。  <br>0 または空白 = 不明   <br>1 = デスクトップ   <br>2 = ノート PC  <br>3 = ワークステーション  <br>4 = エンタープライズ サーバー  <br>100 = 電話  <br>101 = タブレット  <br>102/103 = 別の不明な種類のモバイル デバイス |
-| SystemEnclosureModel |システム格納装置のモデル。 |
-| SystemEnclosureSerialNumber |システム格納装置のシリアル番号。 |
-| NetworkAdapterConfigurationText |ネットワーク アダプターからの構成テキスト。 |
-| MacAddress |MAC アドレス。 |
-| SmsID |Intune デバイス ID。 |
-| CertExpiry |MDM 管理証明書の有効期限日 |
-| DeviceClientAgentVersion |クライアント エージェントのバージョン。 |
-| DeviceClientID |デバイスのクライアント ID。 |
-| SerialNumber |シリアル番号。 |
-| DeviceManufacturer |デバイスの製造元。 |
-| DMVersion |DM バージョン。 |
-| FirmwareVersion |ファームウェアのバージョン。 |
-| HardwareVersion |ハードウェアのバージョン。 |
-| PlatformType |プラットフォームの種類。 |
-| ProcessorLevel |プロセッサのレベル。 |
-| ProcessorRevision |プロセッサのリビジョン。 |
-| 製品 |製品。 |
-| ProductVersion |製品のバージョン。 |
-| OEM |相手先ブランド供給。 |
-| DeviceBuildVersion |デバイスのビルド バージョン。 |
-| Meid |モバイル機器の識別子 |
-| PhoneNumber |電話番号。 |
-| SubscriberCarrierNetwork |電話通信事業者のネットワーク名。 |
-| CellularTechnology |電話通信事業者のネットワークの種類 (CDMA/GSM)。 |
-| Imsi |IMSI 番号。 |
-| JailBroken |デバイスが脱獄またはルート化されている場合は True |
-| IsActivationLockEnabled |アクティベーション ロックが有効な場合は True |
-| DeviceType |デバイスの種類 |
-| IsSupervised |監督対象モードになっています |
-| DeviceDisplayNumberOfColors |デバイスのディスプレイの色数 |
-| HorizontalResolution |デバイスの水平画面解像度 |
-| VerticalResolution |デバイスの垂直画面解像度 |
-| StorageFree |記憶域の空き容量 (バイト単位) |
-| StorageTotal |記憶域の合計容量 (バイト単位) |
-| ProgramFree |プログラム実行用メモリの空き容量 (バイト単位) |
-| ProgramTotal |プログラム実行用メモリの合計容量 (バイト単位) |
-| RemovableStorageFree |リムーバブル記憶域の空き容量 (バイト単位) |
-| RemovableStorageTotal |リムーバブル記憶域の合計容量 (バイト単位) |
-| DeviceMemoryDeviceCapacity |デバイス メモリの容量 |
-| DeviceMemoryAvailableDeviceCapacity |デバイス メモリの空き容量 |
-| DeviceOSVersion |OS のバージョン |
-| DeviceOSPlatform |OS のプラットフォーム |
-| DeviceOSLanguage |OS の言語 |
-| PasswordMaxAttemptsBeforeWipe |パスワードの最大試行回数であり、これを超えるとデバイスがワイプされます |
-| PasswordMinComplexChars |パスワードに必要な複合文字の最小数 |
-| PasswordMinLength |パスワードの必要な長さの最小値 |
-| PasswordHistory |パスワードを記録し、過去に使った中で最も新しい n 個までのパスワードを使用禁止とするとき、その最小数をここで指定します |
-| PasswordEnabled |パスワードが有効かどうか |
-| PasswordExpiration |パスワード - 有効期限。 |
-| AllowRecoveryPassword |パスワードの復元を許可する。 |
-| PasswordAutoLockTimeout |パスワード - 自動ロック タイムアウト。 |
-| PasswordType |パスワードの種類。 |
-| BacklightACTimeout |電源利用時のバックライトのタイムアウト。 |
-| BacklightBatTimeout |バッテリー利用時のバックライトのタイムアウト。 |
-| PowerBackupPercent |電源バックアップ パーセント。 |
-| BatteryPercent |残りのバッテリーのパーセント |
-| PlatformID |プラットフォーム ID。 |
-| ExchangeDeviceID |Exchange デバイス ID。 |
-| SmsProcessorDescription |プロセッサの説明。 |
-| OwnerEmailAddress |所有者の電子メール アドレス。 |
-| DeviceOSName |OS の名前。 |
-| WifiMac |WiFi Mac アドレス。 |
-| EthernetMac |イーサネット MAC アドレス。 |
-| RequireEncryption |デバイスが暗号化されているかどうかを示します |
-| ActivationLockBypassCode |アクティベーション ロックのバイパス コード。 |
 
 ## <a name="applicationinventory"></a>ApplicationInventory
 

@@ -1,11 +1,11 @@
 ---
-title: Intune から macOS デバイスの登録を解除する | Microsoft Docs
-description: Intune から macOS デバイスを登録解除する方法について説明します
+title: Intune ポータル サイトから macOS デバイスの登録を解除する | Microsoft Docs
+description: ポータル サイトから macOS デバイスを登録解除する方法について説明します
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/12/2018
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,22 +18,24 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3518707aa90c3866fbf8b24936db6d781712bdb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 19cb76df318abe84670c1a7d703e85e3b7e7539a
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55839975"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330400"
 ---
-# <a name="unenroll-your-macos-device-from-intune"></a>Intune から macOS デバイスの登録を解除する
+# <a name="unenroll-your-macos-device-from-company-portal"></a>ポータル サイトから macOS デバイスを登録解除します。
 
-Intune から macOS デバイスの登録を解除した後は、会社のリソースにアクセスできなくなります。
+Intune から macOS デバイスの登録を解除すると、デバイスで会社のリソースにアクセスできなくなります。
 
 以下の手順に従って、管理から macOS デバイスの登録を解除します。
 
-1.  ポータル サイト アプリの **[デバイス]** で、登録を解除するデバイスを選択します。
+1.  macOS 用のポータル サイトにサインインします。
+2.  **[デバイス]** に移動し、登録を解除するデバイスを選択します。
 
-2.  **[削除]** > **[削除]** の順にクリックします。
+3.  省略記号のメニュー アイコンを選択 >**削除**します。
+4.  確認メッセージが表示されます。 選択**削除**デバイスの登録を解除します。 
 
 Intune からデバイスの登録を解除すると、どのようになるかを次に示します。
 

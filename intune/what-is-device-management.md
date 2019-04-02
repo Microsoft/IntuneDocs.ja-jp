@@ -4,7 +4,7 @@ description: Microsoft 365 Enterprise には Microsoft Intune が含まれてい
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 03/29/2018
 ms.topic: conceptual
 audience: ITPro
 ms.prod: microsoft-365-enterprise
@@ -16,16 +16,16 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93e34c3de77dde59b87829617b8cbbd2614f7081
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: ea24101600c7a0e485440f50fc043c14bd840968
+ms.sourcegitcommit: 8e6f4acb592dbe5de63aa7642ee9487288740714
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57231249"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646490"
 ---
 # <a name="what-is-device-management"></a>デバイス管理とは 
 
-すべての管理者の重要なタスクは、組織のリソースとデータを保護することです。 このタスクがデバイス管理です。 ユーザーは多くのデバイスを使用して、個人のファイルを開いて共有したり、Web サイトにアクセスしたり、アプリやゲームをインストールしたりしています。 これらの同じユーザーは、従業員や学生でもあり、各自のデバイスを使用して、電子メールや OneNote などの仕事や学校のリソースにアクセスしたいと考えます。 *デバイス管理*を使用して、組織のリソースとデータを保護できます。 
+すべての管理者の重要なタスクは、組織のリソースとデータを保護することです。 このタスクが "*デバイス管理*" です。 ユーザーは多くのデバイスを使用して、個人のファイルを開いて共有したり、Web サイトにアクセスしたり、アプリやゲームをインストールしたりしています。 これらの同じユーザーは、従業員や学生でもあり、各自のデバイスを使用して、電子メールや OneNote などの仕事や学校のリソースにアクセスしたいと考えます。 組織では、デバイス管理を使ってそのリソースとデータを守り、セキュリティで保護できます。 
 
 デバイス管理プロバイダーを使用することで、組織では、承認されたユーザーとデバイスだけが機密情報にアクセスできるようにすることができます。 同様に、デバイスのユーザーは、自分のデバイスが組織のセキュリティ要件を満たしていることがわかっているため、安心して自分の電話から作業データにアクセスできます。 組織には、**リソースを保護するために何を使用すべきか**という疑問があると考えられます。
 
