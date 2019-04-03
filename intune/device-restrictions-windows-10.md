@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune での Windows 10 用のデバイスの制限設定 - Azure | Microsoft Docs
-description: Windows 10 およびそれ以降のデバイスに対するデバイス制限を作成するには、すべての設定とその説明の一覧を参照してください。 これらの設定を構成プロファイル内で使用すると、スクリーン ショット、パスワード要件、キオスク設定、ストア内アプリ、Microsoft Edge ブラウザー、Windows Defender、クラウドへのアクセス、[スタート] メニューなどを Microsoft Intune で制御できます。
+description: Windows 10 およびそれ以降のデバイスに対するデバイス制限を作成するには、すべての設定とその説明の一覧を参照してください。 これらの設定を構成プロファイル内で使用すると、スクリーン ショット、パスワード要件、キオスク設定、ストア内アプリ、Microsoft Edge ブラウザー、Windows ディフェンダー、クラウドへのアクセス、[スタート] メニューなどを Microsoft Intune で制御できます。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8190365ad2b50dfa7369b8899e8984b6a52f1cba
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 7ca34826f3a235fe620b5ac0dcb95d57dabf4c71
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566754"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58395002"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように Windows 10 (以降) のデバイスを設定する
 
@@ -29,7 +29,7 @@ ms.locfileid: "57566754"
 これらの設定は、Intune でデバイスの構成プロファイルに追加した後、ご使用の Windows 10 デバイスに割り当てたり展開したりします。
 
 > [!Note]
-> Windows のすべてのエディションですべてのオプションを利用できるわけではありません
+> Windows のすべてのエディションですべてのオプションを利用できるわけではありません。 サポートされているエディションを表示するを参照してください、[ポリシー Csp](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (別の Microsoft web サイトを開きます)。
 
 ## <a name="before-you-begin"></a>始める前に
 
@@ -59,13 +59,13 @@ ms.locfileid: "57566754"
 - **[Bluetooth の検出可能性]**: その他の Bluetooth 対応デバイスにより、デバイスが検出されるようにします。
 - **[Bluetooth の事前ペアリング]**: ホスト デバイスと自動的にペアリングするように特定の Bluetooth デバイスを構成できます。
 - **[Bluetooth 広告]**: デバイスが Bluetooth 経由で広告を受信できるようにします。
-- **[接続されているデバイスのサービス]**: 接続されているデバイスのサービスを許可するかどうかを選択できます。他の Bluetooth デバイスの検出と接続が有効になります。
+- **[接続されているデバイスのサービス]**: 接続されているデバイスのサービスを許可することを選択できます。これにより、他の Bluetooth デバイスの検出と接続が有効になります。
 - **[NFC]**: ユーザーがデバイス上で近距離無線通信 (NFC) 機能を有効にして構成できるようにします。
 - **[Wi-Fi]**: ユーザーがデバイスで Wi-Fi を有効にして構成できるようにします (Windows 10 Mobile のみ)。
 - **[Automatically connect to Wi-Fi hotspot]\(自動的に Wi-Fi ホットスポットに接続します\)**: デバイスが無料の Wi-Fi ホットスポットに自動的に接続し、接続の使用条件に自動的に同意するようにします。
 - **[Wi-Fi の手動設定]**: ユーザーが独自に Wi-Fi 接続を構成できるようにするか、Wi-Fi プロファイルで構成された接続のみを使用できるようにするかを制御します (Windows 10 Mobile のみ)。
-- **[Wi-Fi スキャンの間隔]**: デバイスが Wi-Fi ネットワークをスキャンする頻度を指定します。 1 (頻度が最も多い) から 500 (頻度が最も少ない) までの値を指定できます。
-- **[Bluetooth を使用できるサービス]**: 許可される Bluetooth のサービスとプロファイルの一覧を 16 進数文字列で指定します。
+- **[Wi-Fi スキャンの間隔]**: デバイスが Wi-Fi ネットワークをスキャンする頻度を入力します。 1 (頻度が最も多い) から 500 (頻度が最も少ない) までの値を入力します。
+- **[Bluetooth を使用できるサービス]**: 許可される Bluetooth のサービスとプロファイルの一覧を 16 進数文字列で入力します。
 
 ## <a name="cloud-and-storage"></a>クラウドとストレージ
 
@@ -138,13 +138,12 @@ ms.locfileid: "57566754"
 - **[SIM カード エラー ダイアログ (モバイルのみ)]**: SIM カードが検出されない場合のデバイスでのエラー メッセージ表示をブロックします。
 - **[Ink Workspace]\(Ink ワークスペース\)**: ユーザーが Ink ワークスペースを使用するのを禁止します。 **[Not configured]\(未構成\)** の場合、Ink ワークスペースはオンになり、ユーザーはロック画面上でこれを使用できるようになります。
 - **[自動再展開]**: 管理権限を持つユーザーが、デバイス ロック画面で **CTRL + Win + R** を使用してすべてのユーザー データとユーザー設定を削除できます。 このデバイスは自動的に再構成され、管理対象に再登録されます。
-- **[Require users to connect to network during device setup (Windows Insider only)]\(デバイスのセットアップ中、ユーザーにネットワークへの接続を求める (Windows Insider のみ)\)**: **[必須]** を選択すると、Windows 10 のセットアップ中、[ネットワーク] ページから先に進む前にデバイスをネットワークに接続されます。 この機能はプレビュー中ですが、Windows Insider ビルド 1809 以降ではこの設定を使用する必要があります。
+- **[Require users to connect to network during device setup (Windows Insider only)]\(デバイスのセットアップ中、ユーザーにネットワークへの接続を求める (Windows Insider のみ)\)**: **[必須]** を選択すると、Windows 10 のセットアップ中、[ネットワーク] ページから先に進む前にデバイスをネットワークに接続されます。 この機能はプレビュー段階ですが、Windows インサイダー ビルド 1809 以降ではこの設定を使用する必要があります。
 - **[Direct Memory Access]\(ダイレクト メモリ アクセス\)**: **[ブロック]** では、ユーザーが Windows にサインインするまで、ホット プラグ可能なすべての PCI ダウンストリーム ポートへの直接メモリ アクセス (DMA) が禁止されます。 **[有効]** (既定値) にすると、ユーザーがサインインしていない場合でも、DMA へのアクセスが許可されます。
 
   CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
 
 - **タスク マネージャーからのプロセス終了**: この設定は、管理者以外のユーザーがタスク マネージャーを使用してタスクを終了するかどうかを決定します。 **[ブロック]** は、標準ユーザー (管理者以外) がタスク マネージャーを使用してデバイス上でプロセスまたはタスクを終了するのを防ぎます。 **[未構成]** (既定値) は、標準ユーザーがタスク マネージャーを使用してプロセスまたはタスクを終了するのを許可します。
-
 
 ## <a name="locked-screen-experience"></a>ロック画面
 
@@ -168,25 +167,25 @@ ms.locfileid: "57566754"
 使用可能な設定は、ユーザーの選択に応じて変更します。 次のようなオプションがあります。
 
 - **いいえ**(既定値): Microsoft Edge がキオスク モードで実行されていません。 Microsoft Edge のすべての設定を変更および構成するため利用できます。
-- **デジタル/対話型ポスター (シングル アプリ キオスク)**: シングル アプリ キオスクの Windows 10 でのみ使用するためのデジタル/対話型ポスター Edge キオスク モードに適用されるフィルター Edge の設定。 URL の全画面表示を開くには、この設定を選択し、その web サイトでのみコンテンツを表示します。 [デジタル署名を設定](https://docs.microsoft.com/windows/configuration/setup-digital-signage)この機能について詳しく説明します。
-- **InPrivate パブリック ブラウズ (シングル アプリ キオスク)**: Windows 10 シングル アプリ キオスクに使用するための InPrivate のパブリック参照の Edge キオスク モードに適用されるフィルター Edge の設定。 Microsoft Edge のマルチタブのバージョンを実行します。
-- **通常モード (マルチ アプリ キオスク)**: 標準のエッジのキオスク モードに適用されるフィルター Edge の設定。 すべての参照機能と Microsoft Edge の完全版を実行します。
-- **(マルチ アプリ キオスク) をパブリックに参照**: Windows 10 のマルチ アプリ キオスクにパブリックに参照するために適用されるフィルター Edge の設定。  Microsoft Edge の InPrivate のマルチタブのバージョンを実行します。
+- **デジタル/対話型ポスター (シングル アプリ キオスク)**: シングル アプリ キオスクの Windows 10 でのみ使用/対話型のデジタル サイネージ Microsoft Edge のキオスク モードに適用されるフィルターの Microsoft Edge の設定。 URL の全画面表示を開くには、この設定を選択し、その web サイトでのみコンテンツを表示します。 [デジタル署名を設定](https://docs.microsoft.com/windows/configuration/setup-digital-signage)この機能について詳しく説明します。
+- **InPrivate パブリック ブラウズ (シングル アプリ キオスク)**: InPrivate パブリック参照 Microsoft Edge のキオスク モードで Windows 10 シングル アプリ キオスク使用に適用されるフィルターの Microsoft Edge の設定。 Microsoft Edge のマルチタブのバージョンを実行します。
+- **通常モード (マルチ アプリ キオスク)**: 標準の Microsoft Edge のキオスク モードに適用されるフィルターの Microsoft Edge の設定。 すべての参照機能と Microsoft Edge の完全版を実行します。
+- **(マルチ アプリ キオスク) をパブリックに参照**: Windows 10 のマルチ アプリ キオスクにパブリックに参照するために適用されるフィルターの Microsoft Edge の設定。  Microsoft Edge の InPrivate のマルチタブのバージョンを実行します。
 
 > [!TIP]
 > これらのオプションの実行の詳細については、次を参照してください。[キオスク モード構成の種類の Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types)します。
 
 このデバイスの制限プロファイルに直接関連して、キオスク プロファイルを使用して作成した、 [Windows キオスク設定](kiosk-settings-windows.md)します。 まとめ
 
-1. 作成、 [Windows キオスク設定](kiosk-settings-windows.md)デバイスをキオスク モードで実行するプロファイル。 アプリケーションと Microsoft Edge を選択し、キオスク プロファイルで Edge キオスク モードを設定します。
-2. この記事で説明されているデバイス制限プロファイルを作成し、特定の機能と Microsoft Edge で許容される設定を構成します。 キオスク プロファイルで選択されている同じエッジ キオスク モードの種類を選択してください ([Windows キオスク設定](kiosk-settings-windows.md))。 
+1. 作成、 [Windows キオスク設定](kiosk-settings-windows.md)デバイスをキオスク モードで実行するプロファイル。 アプリケーションと Microsoft Edge を選択し、キオスク プロファイルで Microsoft Edge のキオスク モードを設定します。
+2. この記事で説明されているデバイス制限プロファイルを作成し、特定の機能と Microsoft Edge で許容される設定を構成します。 キオスク プロファイルで選択されている同じの Microsoft Edge キオスク モードの種類を選択してください ([Windows キオスク設定](kiosk-settings-windows.md))。 
 
     [キオスク モードの設定がサポートされている](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode)は優れたリソースです。
 
 > [!IMPORTANT] 
 > キオスク プロファイルと同じデバイスにこの Microsoft Edge プロファイルを割り当てるようにしてください ([Windows キオスク設定](kiosk-settings-windows.md))。
 
-CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
+[ConfigureKioskMode CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 
 ### <a name="start-experience"></a>開始エクスペリエンス
 
@@ -204,7 +203,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   - **[[カスタム ホーム] ボタンの URL]**: **[[ホーム] ボタンの URL]** 設定で選択したオプションが開きます。
   - **[[ホーム] ボタンを非表示にする]ホーム ボタン**: [ホーム] ボタンを非表示になります。
 - **[User can change Home button]\(ユーザーが [ホーム] ボタンを変更できる\)**: **[許可]** を選択すると、ユーザーが [ホーム] ボタンを変更できます。 [ホーム] ボタンに対して管理者が行った設定は、ユーザーが行った変更でオーバーライドされます。 **[Not configured]\(未構成\)** を選択すると、デバイス上の OS の既定の動作が使用され、ユーザーが管理者による [ホーム] ボタンの構成を変更できる場合も、変更できない場合もあります。
-- **[最初の実行エクスペリエンス ページの表示]**: **[ブロック]** を選択すると、Microsoft Edge の初回実行時に紹介ページが表示されなくなります。 この機能により、企業 (ゼロ エミッション コンフィギュレーションに登録している企業など) は、このページをブロックできます。 **[Not configured]\(未構成\)** を選択すると、紹介ページが表示されます。
+- **[最初の実行エクスペリエンス ページの表示]**: **[ブロック]** を選択すると、Microsoft Edge の初回実行時に紹介ページが表示されなくなります。 この機能により、企業 (ゼロ エミッション コンフィギュレーションに登録している組織など) は、このページをブロックできます。 **[Not configured]\(未構成\)** を選択すると、紹介ページが表示されます。
   - **[最初の実行エクスペリエンス URL]**: ユーザーが最初に Microsoft Edge を実行したときに表示されるページの URL を入力します (Windows 10 Mobile のみ)。
 - **アイドル時間の後にブラウザーを更新して**: 0 ~ 1440 からブラウザーが更新されるまでのアイドル状態の分単位の数を入力分。 既定値は`5`分。 設定すると`0`(ゼロ)、ブラウザーがアイドル状態に更新されません。
 
@@ -300,7 +299,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **[パスワード]**: エンド ユーザーがデバイスにアクセスする際にパスワードの入力を要求します。
   - **[必要なパスワードの種類]**: パスワードを数字のみにするか、英数字にするかを指定します。
   - **[Minimum password length]\(パスワードの最小文字数\)**: Windows 10 Mobile のみに適用されます。
-  - **[Number of sign-in failures before wiping device]\(デバイスがワイプされるまでのサインイン失敗回数\)**: Windows 10 を実行しているデバイス: デバイスで BitLocker が有効になっている場合は、指定した回数分サインインに失敗すると、BitLocker 回復モードになります。 デバイスの BitLocker が有効でない場合は、この設定は適用されません。 Windows 10 Mobile を実行しているデバイス: 指定した回数分サインインに失敗すると、デバイスがワイプされます。
+  - **[Number of sign-in failures before wiping device]\(デバイスがワイプされるまでのサインイン失敗回数\)**: Windows 10 を実行しているデバイス: デバイスで BitLocker が有効になっている場合は、指定した回数分サインインに失敗すると、BitLocker 回復モードになります。 デバイスの BitLocker が有効でない場合は、この設定は適用されません。 Windows 10 Mobile を実行しているデバイス: 入力した回数分サインインに失敗すると、デバイスがワイプされます。
   - **[Maximum minutes of inactivity until screen locks]\(画面がロックされるまでの非アクティブな最長時間 (分)\)**: デバイスのアイドル状態が許容される時間を指定します。この時間を超えると、画面はロックされます。
   - **[パスワードの有効期限 (日数)]**: デバイスのパスワードを設定後、変更が必要になるまでの日数を指定します。
   - **[Prevent reuse of previous passwords]\(前のパスワードを再利用できないようにする\)**: デバイスで記憶される、以前に使用したパスワードの数を指定します。
@@ -331,7 +330,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **[電話]**: このアプリが電話にアクセスできるかどうかを定義します。
 - **[無線]**: 一部のアプリはデバイスで無線 (Bluetooth など) を使用してデータ送受信するため、無線をオンまたはオフにする必要があります。 このアプリが無線を制御できるかどうかを定義します。
 - **[タスク]**: このアプリがタスクにアクセスできるかどうかを定義します。
-- **[信頼済みデバイス]**: このアプリが、信頼済みデバイス (既に接続済みのハードウェア、またはデバイスに付属するハードウェア) を使用できるかどうかを選択します。 たとえば、テレビやプロジェクターなどを信頼済みデバイスとして使用します。
+- **信頼済みデバイス**: このアプリが信頼済みデバイスを使用できるかどうかに選択します。 信頼済みデバイスは、既に接続済みのハードウェア、またはデバイスに付属するハードウェアです。 たとえば、テレビやプロジェクターなどを信頼済みデバイスとして使用します。
 - **[Feedback and diagnostics]\(フィードバックと診断\)**: このアプリが診断情報にアクセスできるかどうかを定義します。
 - **[Sync with devices]\(デバイスとの同期\)**: このアプリが、このデバイスと明示的にペアリングされていないワイヤレス デバイスと自動的に情報を共有し、同期できるかどうかを選択します。
 
@@ -352,7 +351,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **[Publish user activities]\(ユーザー アクティビティの公開\)**: **[ブロック]** を選択すると、タスク スイッチャーでの共有エクスペリエンスおよび最近使われたリソースの検出が行われなくなります。
 - **[Local activities only]\(ローカル アクティビティの場合のみ\)**: **[ブロック]** を選択すると、ローカル アクティビティのみに基づいて、タスク スイッチャーでの共有エクスペリエンスおよび最近使われたリソースの検出が行われなくなります。
 
-デバイス上のすべてのアプリがアクセス可能な情報を構成できます。 **アプリごとのプライバシー例外**を使用して、アプリごとに例外を定義できます。
+デバイス上のすべてのアプリがアクセス可能な情報を構成できます。 また、**アプリごとのプライバシー例外**を使用して、アプリごとに例外を定義します。
 
 ### <a name="exceptions"></a>例外
 
@@ -381,11 +380,11 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **[Projection to this PC]\(この PC へのプロジェクション\)**: この PC がプロジェクション用として他のデバイスで検出されません。
 - **[Require PIN for pairing]\(ペアリングには PIN が必要\)**: プロジェクション デバイスに接続するときに PIN が必要です。
 
-## <a name="reporting-and-telemetry"></a>レポートとテレメトリ
+## <a name="reporting-and-telemetry"></a>レポートと遠隔測定
 
 - **[使用状況データの共有]**: 送信される診断データのレベルを選択します。 次のようなオプションがあります。
   - セキュリティ
-  - Basic
+  - 基本
   - 拡張
   - 完全
 - **[Send Microsoft Edge browsing data to Microsoft 365 Analytics]\(Microsoft Edge 閲覧データを Microsoft 365 Analytics に送信する\)**: この機能を使用するには、**[使用状況データの共有]** 設定を **[拡張]** または **[Full]\(フル\)** に設定します。 この機能では、商用 ID が構成されたエンタープライズ デバイスについて、Microsoft Edge から Microsoft 365 Analytics に送信されるデータを制御します。 次のようなオプションがあります。
@@ -393,7 +392,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   - **[Only send intranet data]\(イントラネット データのみを送信\)**: 管理者がイントラネット データの履歴を送信できます。
   - **[Only send internet data]\(インターネット データのみを送信\)**: 管理者がインターネット データの履歴を送信できます。
   - **[Send intranet and internet data]\(イントラネットおよびインターネット データを送信\)**: 管理者がイントラネットおよびインターネット データの履歴を送信できます。
-- **[テレメトリ プロキシ サーバー]**: Secure Sockets Layer (SSL) 接続を使用して、接続ユーザー エクスペリエンスとテレメトリ要求を転送するプロキシ サーバーの完全修飾ドメイン名 (FQDN) または IP アドレスを入力します。 この設定の形式は、*サーバー*:*ポート*です。 指定されたプロキシが失敗した場合、またはこのポリシーが有効のときに入力されたプロキシがない場合は、接続ユーザー エクスペリエンスとテレメトリ データが送信されず、ローカル デバイス上に残ります。
+- **[テレメトリ プロキシ サーバー]**: Secure Sockets Layer (SSL) 接続を使用して、接続ユーザー エクスペリエンスとテレメトリ要求を転送するプロキシ サーバーの完全修飾ドメイン名 (FQDN) または IP アドレスを入力します。 この設定の形式は、*サーバー*:*ポート*です。 指定されたプロキシが失敗した場合、またはこのポリシーを有効にするときにプロキシが入力されなかった場合は、接続ユーザー エクスペリエンスとテレメトリ データが送信されず、ローカル デバイス上に残ります。
 
   形式の例:
 
@@ -467,24 +466,46 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **[Scan all downloads]\(すべてのダウンロードをスキャンする\)**: インターネットからダウンロードされたすべてのファイルを Defender でスキャンするかどうかを制御します。
 - **[Scan scripts loaded in Microsoft web browsers]\(Microsoft Web ブラウザーに読み込まれたスクリプトをスキャンする\)**: Internet Explorer で使用されるスクリプトを Defender でスキャンできるようにします。
 - **[End user access to Defender]\(Defender へのエンド ユーザー アクセス\)**: Windows Defender ユーザー インターフェイスをエンド ユーザーに対して非表示にするかどうかを制御します。 この設定の変更は、エンド ユーザーの PC が次に再起動されたときに有効になります。
-- **[Signature update interval (in hours)]\(署名更新間隔 (時単位)\)**: 新しいシグネチャ ファイルを Defender でチェックする間隔を指定します。
+- **[署名更新間隔 (時単位)]**: 新しいシグネチャ ファイルを Defender でチェックする間隔を入力します。
 - **[Monitor file and program activity]\(ファイルとプログラムのアクティビティを監視する\)**: デバイス上のファイルとプログラムのアクティビティの監視を Defender に許可します。
-- **[Days before deleting quarantined malware]\(検疫済みマルウェアを削除するまでの日数\)**: 指定した日数の間、Defender で解決済みマルウェアの追跡を続けられるようにし、以前に影響を受けたデバイスを手動でチェックできるようにします。 日数を **0** に設定すると、マルウェアは検疫フォルダーに残り、自動的に削除されなくなります。
-- **[CPU usage limit during a scan]\(スキャン中の CPU 使用率の制限\)**: スキャンに使用できる CPU の使用率を制限できるようにします (**1** ～ **100**)。
+- **検疫済みマルウェアを削除する前に日**: 追跡を続ける解決したマルウェアを以前の影響を受けたデバイスを手動で確認できるように入力する日数。 日数を **0** に設定すると、マルウェアは検疫フォルダーに残り、自動的に削除されなくなります。
+- **[スキャン中の CPU 使用率の制限]**: スキャンに使用できる CPU の使用率を制限します (**1** から **100** まで)。
 - **[アーカイブ ファイルをスキャンする]**: Zip ファイルや Cab ファイルなどのアーカイブ済みのファイルを Defender でスキャンできるようにします。
 - **[受信メール メッセージをスキャンする]**: デバイスに届いた電子メール メッセージを Defender で直ちにスキャンできるようにします。
 - **[Scan removable drives during a full scan]\(フル スキャン中に、リムーバブル ドライブをスキャンする\)**: USB メモリなどのリムーバブル ドライブを Defender でスキャンできるようにします。
 - **[Scan mapped network drives during a full scan]\(フル スキャン中に、マップされたネットワーク ドライブをスキャンする\)**: マップ済みネットワーク ドライブ上のファイルを Defender でスキャンできるようにします。
   ドライブ上のファイルが読み取り専用である場合、Defender では、検出したマルウェアを一切削除できません。
 - **[Scan files opened from network folders]\(ネットワーク フォルダーから開いたファイルをスキャンする\)**: 共有ネットワーク ドライブ上のファイルを Defender でスキャンできるようにします (UNC パスからアクセスされたファイルなど)。 ドライブ上のファイルが読み取り専用である場合、Defender では、検出したマルウェアを一切削除できません。
-- **[クラウド保護]**: 管理対象のデバイスからマルウェアのアクティビティに関する情報が Microsoft Active Protection Service に送信されるのを許可またはブロックします。 この情報は、将来的に本サービスの品質向上を目的として使用されます。
+- **[クラウド保護]**: 管理対象のデバイスからマルウェアのアクティビティに関する情報が Microsoft Active Protection Service に送信されるのを許可またはブロックします。 この情報は、今後のサービスを向上します。
 - **[Prompt users before sample submission]\(サンプルを送信する前にユーザーに確認メッセージを表示する\)**: 悪意の有無を判断するために詳しい分析が必要なファイルを Microsoft に自動的に送信するかどうかを制御します。
-- **[Time to perform a daily quick scan]\(毎日のクイック スキャンを実行する時刻\)**: 選択した時刻に毎日実行されるクイック スキャンのスケジュールを設定できます。
-- **[Type of system scan to perform]\(実行するシステム スキャンの種類\)**: システム スキャンのスケジュールを設定したときに実行されるスキャンのレベルを入力します。
+- **毎日のクイック スキャンを実行する時間**: 毎日のクイック スキャンを実行する時間を選択します。 **構成されていない**毎日スキャンは実行されません。 さらにカスタマイズする場合は、構成、**を実行するシステム スキャンの種類**設定します。
+
+  [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
+- **実行するシステム スキャンの種類**: スキャンのレベルを含むシステム スキャンを 1 日のスケジュール設定し、スキャンを実行する時刻します。 次のようなオプションがあります。
+  - **構成されていない**: デバイス上のシステム スキャンをスケジュールしません。 エンドユーザーはスキャンを自分のデバイスで必要なまたは目的として実行手動でことができます。
+  - **無効にする**: 任意のシステム デバイスのスキャンを無効にします。 デバイスをスキャンするパートナーのウイルス対策ソリューションを使用している場合は、このオプションを選択します。
+  - **クイック スキャン**: 一般的な場所ではマルウェアの可能性がありますが登録されると、レジストリ キーなど、既知の Windows スタートアップ フォルダー。
+    - **スケジュールされた日**: スキャンを実行する日付を選択します。
+    - **スケジュールされた時刻**: スキャンの実行に時間を選択します。
+  - **フル スキャン**: 一般的な場所ではマルウェアが登録されると、およびすべてのファイルと、デバイス上のフォルダーのスキャンが実行が考えられます。
+    - **スケジュールされた日**: スキャンを実行する日付を選択します。
+    - **スケジュールされた時刻**: スキャンの実行に時間を選択します。
+
+  この設定と競合する可能性が、**毎日のクイック スキャンを実行する時間**設定します。 いくつかの推奨設定:
+
+  - 毎日のクイック スキャンを実行するには、構成、**毎日のクイック スキャンを実行する時間**設定します。
+  - 毎日のクイック スキャンと毎週のフル スキャンを実行するを構成し、**毎日のクイック スキャンを実行する時間**、設定と**を実行するシステム スキャンの種類**曜日と時刻にフル スキャンします。
+  - 構成されていない、**毎日のクイック スキャンを実行する時間**で同時に設定、**を実行するシステム スキャンの種類**に設定**クイック スキャン**します。 これらの設定が競合する可能性し、スキャンを実行できません。
+  - 午前 6 時に毎週火曜日のクイック スキャンを実行するには、構成、**を実行するシステム スキャンの種類**設定します。
+
+  [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
+  [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
+  [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
+
 - **[望ましくない可能性のあるアプリケーションの検出]**: 望ましくない可能性のあるアプリケーションが Windows で検出されたときの保護レベルを選択します。
   - **ブロック**
   - **[監査]** 望ましくない可能性のあるアプリの詳細については、「[望ましくない可能性があるアプリケーションの検出およびブロック](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus)」をご覧ください。
-- **[Actions on detected malware threats]\(検出されたマルウェアの脅威に対するアクション\)**: このオプションを使用すると、Defender で検出された脅威のレベル (低、中、高、重大) ごとに Defender で実行するアクションを選択できます。 次のようなオプションがあります。
+- **[検出されたマルウェアの脅威に対するアクション]**: Defender で、検出した脅威のレベル (低、中、高、重大) ごとに実行したいアクションを選択します。 次のようなオプションがあります。
   - **消去**
   - **検疫**
   - **削除**

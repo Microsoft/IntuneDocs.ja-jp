@@ -6,7 +6,7 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/05/2019
+ms.date: 03/19/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ea3e2c87055e4f111c8f12c47c468dff2c4e587
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 524a4f39ba6a319f42ca23c7d85e84ffd86fce0d
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565691"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358218"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>モバイル アプリ管理 (MAM) エンティティのリファレンス
 
@@ -43,9 +43,6 @@ ms.locfileid: "57565691"
 
 | プロパティ | 説明 | 例 |
 |---------|------------|--------|
-| ApplicationKey |データ ウェアハウスにおける MAM アプリを示す一意識別子。 |123 |
-| ApplicationName |MAM アプリの名前。 |"Word" |
-| ApplicationId |MAM アプリのアプリケーション ID。 |b66bc706-ffff-7437-0340-032819502773 |
 | IsDeleted |この MAM アプリ レコードが更新されているかどうかを示します。 <br>True - MAM アプリには新しいレコードがあり、そのフィールドはこのテーブルで更新されています。 <br>False - この MAM アプリの最新のレコード。 |真/偽 |
 | StartDateInclusiveUTC |この MAM アプリがデータ ウェアハウスで作成されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
 | DeletedDateUTC |IsDeleted が True に変更されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
@@ -61,14 +58,11 @@ ms.locfileid: "57565691"
 |   ApplicationInstanceKey   |                                                               データ ウェアハウスにおける MAM アプリ インスタンスを示す一意識別子 - 代理キー。                                                                |                 123                  |
 |           UserId           |                                                                              この MAM アプリをインストールしたユーザーのユーザー ID。                                                                              | b66bc706-ffff-7437-0340-032819502773 |
 |   ApplicationInstanceId    |                                              MAM アプリ インスタンスを示す一意識別子 - ApplicationInstanceKey に似ていますが、識別子はナチュラル キーです。                                              | b66bc706-ffff-7437-0340-032819502773 |
-|       ApplicationId        |                                                                                        この MAM アプリのアプリケーション ID                                                                                         |  com.microsoft.groupies-daily.<IOS>  |
 |     ApplicationVersion     |                                                                                     この MAM アプリのアプリケーション バージョン。                                                                                      |                  2                   |
 |        CreatedDate         |                                                                 MAM アプリ インスタンスのこのレコードが作成された日付 値は null を取ることができます。                                                                 |        11/23/2016 12:00:00 AM        |
 |          プラットフォーム          |                                                                          この MAM アプリがインストールされているデバイスのプラットフォーム。                                                                           |                  2                   |
 |      PlatformVersion       |                                                                      この MAM アプリがインストールされているデバイスのプラットフォーム バージョン。                                                                       |                 2.2                  |
 |         SdkVersion         |                                                                            この MAM アプリをラップした MAM SDK バージョン。                                                                            |                 3.2                  |
-|          DeviceId          |                                                                          この MAM アプリがインストールされているデバイスのデバイス ID。                                                                          | b66bc706-ffff-7437-0340-032819502773 |
-|         DeviceName         |                                                                         この MAM アプリがインストールされているデバイスのデバイス名。                                                                         |              "MyDevice"              |
 |         IsDeleted          | この MAM アプリ インスタンス レコードが更新されているかどうかを示します。 <br>True - この MAM アプリ インスタンスには新しいレコードがあり、そのフィールドはこのテーブルで更新されています。 <br>False - この MAM アプリ インスタンスの最新のレコード。 |              真/偽              |
 |   StartDateInclusiveUtc    |                                                              この MAM アプリ インスタンスがデータ ウェアハウスで作成されたときの UTC 日時。                                                               |        11/23/2016 12:00:00 AM        |
 |       DeletedDateUtc       |                                                                             IsDeleted が True に変更されたときの UTC 日時。                                                                              |        11/23/2016 12:00:00 AM        |
@@ -86,7 +80,6 @@ ms.locfileid: "57565691"
 | DateKey |MAM アプリ チェックインがデータ ウェアハウスに記録されたときの日付キー。 | 20160703 |
 | ApplicationInstanceKey |この MAM アプリ チェックインに関連付けられているアプリ インスタンスのキー。 | 123 |
 | UserKey |この MAM アプリ チェックインに関連付けられているユーザーのキー。 | 4323 |
-| ApplicationKey |チェックインした MAM アプリのキー。 |234 |
 | DeviceHealthKey |この MAM アプリ チェックインに関連付けられている DeviceHealth のキー。 | 321 |
 | PlatformKey |この MAM アプリ チェックインに関連付けられているデバイスのプラットフォームを表します。 |123 |
 | EffectiveAppliedPolicyKey |チェックインした MAM アプリに関連付けられているポリシーが適用されていることを表します。 特定のアプリとユーザーに関連するポリシーがすべて結合された結果、ポリシー適用は有効となります。 | 322 |

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/04/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6e82e24f051e64d07487d915ac6fd0848727ecf
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: acf14ea6f1b667cb631a424223a40e44a8338edd
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566813"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306844"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Intune で Windows デバイス用のデバイス コンプライアンス ポリシーを追加する
 
@@ -125,7 +125,10 @@ Windows 8.1 PC の場合、バージョン **3** が返されます。 Windows �
 
 - **[コードの整合性が必要]:** コードの整合性は、ドライバーまたはシステム ファイルがメモリに読み込まれるたびに、その整合性を検証する機能です。 コードの整合性で、未署名のドライバーまたはシステム ファイルがカーネルに読み込まれているかどうかが検出されます。 また、管理者特権を持つユーザー アカウントが実行している悪意のあるソフトウェアによって、システム ファイルが変更されたかどうかも検出されます。
 
-HAS サービスのしくみの詳細については、「[HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp)」をご覧ください。
+その他の資料:
+
+- HAS サービスのしくみについて詳しくは、[正常性構成証明 CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) に関するページをご覧ください。
+- [Intune コンプライアンス ポリシーの一部としてデバイス正常性構成証明書設定のサポートのヒント: を使用して ](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643)
 
 ### <a name="device-properties"></a>デバイスのプロパティ
 

@@ -6,7 +6,7 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/21/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,18 +18,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 20c9c1bf5eea12407cba2e00288a039b74fcaca7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d7d69c602471e8508744f2a00008294cbd335204
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565640"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358260"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune データ ウェアハウス API の変更ログ
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 常に Intune データ ウェアハウスの最新の更新プログラムをインストールしてください。
+
+## <a name="1903"></a>1903
+"_リリース日: 2019 年 3 月_"
+
+### <a name="v10-changes-reflecting-back-to-beta"></a>ベータ版に反映 V1.0 の変更
+V1.0 は 1808 で初めて導入されました、ときに、API のベータ版からのいくつかの重要な点で異なっています。 1903 でそれらの変更は、ベータ版の API バージョンに反映されます。 ベータ版の API バージョンを使用する重要なレポートがあれば、それらのレポートを重大な変更を回避するために V1.0 に切り替えを強くお勧めします。 参照してください[API のバージョン情報](reports-api-url.md)詳細についてはデータ ウェアハウス API のバージョンと旧バージョンとの互換性。 
 
 ## <a name="1902"></a>1902 
 _リリース日: 2019 年 2 月_
@@ -93,7 +99,7 @@ OData クエリ パラメーターとして <code>$select</code> を使用でき
 
 ### <a name="new-entities-in-the-in-data-warehouse-data-model----2077804---"></a>データ ウェアハウス データ モデルの新しいエンティティ <!-- 2077804 -->
 
- - エンティティ [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md#mobileappdeviceuserinstallstatus) が追加されました。 **MobileAppDeviceUserInstallStatus** は、特定のデバイスとユーザーのモバイル アプリのインストール状態を表します。
+ - エンティティ [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md) が追加されました。 **MobileAppDeviceUserInstallStatus** は、特定のデバイスとユーザーのモバイル アプリのインストール状態を表します。
  - エンティティ [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate) が追加されました。 **MobileAppInstallState** エンティティは、デバイス、ユーザー、またはその両方を含むグループに割り当てられた後のモバイル アプリケーションのインストール状態を表します。 
 
 ## <a name="1710"></a>1710

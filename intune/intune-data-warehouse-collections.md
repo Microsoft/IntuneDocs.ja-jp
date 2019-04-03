@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cdf7ea715a13809c860e77412914e3fd2b45a28
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400485"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358319"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune データ ウェアハウスのコレクション
 
@@ -281,7 +281,7 @@ ms.locfileid: "57400485"
 | 12           | ISocConsumer      | iSoc Consumer デバイス                                |
 | 13           | Unix              | Unix デバイス                                         |
 | 14           | MacMDM            | 組み込み MDM エージェントによって管理された Mac OS X デバイス |
-| 15           | HoloLens          | Holo Lens デバイス                                    |
+| 15           | HoloLens          | HoloLens デバイス                                       |
 | 16           | SurfaceHub        | Surface Hub デバイス                                  |
 | 17           | AndroidForWork    | Android Profile Owner によって管理された Android デバイス  |
 | 18           | AndroidEnterprise | Android エンタープライズ デバイス。                          |
@@ -368,8 +368,8 @@ ms.locfileid: "57400485"
 | BadRequest                      | クライアントによって、サービスで認識/サポートされていない要求が送信されました。                                        |
 | FeatureNotSupported             | この登録で使用される機能が、このアカウントでサポートされていません。                                        |
 | EnrollmentRestrictionsEnforced  | 管理者が構成した登録制限によって、この登録がブロックされました。                                          |
-| ClientDisconnected              | クライアントがタイムアウトになったか、エンドユーザーによって中断されました。                                                        |
-| UserAbandonment                 | 登録はエンドユーザーによって中止されました  (エンドユーザーはオンボードを開始しましたが、適時に完了できませんでした)。  |
+| ClientDisconnected              | クライアントがタイムアウトになったか、エンドユーザーによって登録が中断されました。                                                        |
+| UserAbandonment                 | エンドユーザーによって登録が中止されました。 (エンドユーザーはオンボードを開始しましたが、適切なタイミングでそれを完了できませんでした)  |
 
 ## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
 **EnrollmentFailureReason** エンティティは、特定のエラー カテゴリ内のデバイス登録エラーのより詳細な理由を示します。  
@@ -398,7 +398,7 @@ ms.locfileid: "57400485"
 | EnrollmentCriteriaNotMet         | 構成された登録制限規則により、このデバイスの登録に失敗しました。                                                                                                                          |
 | BulkDeviceNotPreregistered       | このデバイスの International Mobile Equipment Identifier (IMEI) またはシリアル番号が見つかりませんでした。  この識別子がない場合、デバイスは、現在ブロックされている個人所有デバイスとして認識されます。  |
 | FeatureNotSupported              | ユーザーが、すべての顧客に対してまだリリースされていないか、Intune 構成と互換性のない機能にアクセスしようとしました。                                                            |
-| UserAbandonment                  | 登録はエンドユーザーによって中止されました  (エンドユーザーはオンボードを開始しましたが、適時に完了できませんでした)。                                                                                           |
+| UserAbandonment                  | エンドユーザーによって登録が中止されました。 (エンドユーザーはオンボードを開始しましたが、適切なタイミングでそれを完了できませんでした)                                                                                           |
 | APNSCertificateExpired           | 期限切れの Apple MDM プッシュ証明書では、Apple デバイスを管理できません。                                                                                                                            |
 
 ## <a name="intunemanagementextensions"></a>intuneManagementExtensions
@@ -448,7 +448,7 @@ ms.locfileid: "57400485"
 | 5                     | EasIntuneClient                   | デバイスは Exchange Active Sync と Intune PC エージェントの両方で管理されています |
 | 8                     | ConfigManagerClient               | デバイスは System Center Configuration Manager エージェントで管理されています     |
 | 10                    | ConfigurationManagerClientMdm     | デバイスは Configuration Manager と MDM で管理されています。                    |
-| 11                    | ConfigurationManagerCLientMdmEas  | デバイスは Configuration Manager、MDM、Eas で管理されています。               |
+| 11                    | ConfigurationManagerCLientMdmEas  | デバイスは、Configuration Manager、MDM と Exchange Active Sync によって管理されます。               |
 | 16                    | Unknown                           | 管理エージェントの種類は不明です                                              |
 | 32                    | Jamf                              | デバイスの属性は、Jamf からフェッチされます。                               |
 | 64                    | GoogleCloudDevicePolicyController |  デバイスは、Google の CloudDPC によって管理されています。                                 |
@@ -512,7 +512,7 @@ Microsoft Intune によるモバイル アプリケーション管理を使用�
 > [!Note]  
 > `ownerTypeName`フィルターでは、azure Ad デバイスの動的なグループを作成するときに、値を設定する必要があります。`deviceOwnership`として`Company`します。 詳細については、次を参照してください。[デバイスのルール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)します。 
 
-## <a name="policies"></a>ポリシー
+## <a name="policies"></a>policies
 **Policy** エンティティには、デバイス構成プロファイル、アプリ構成プロファイル、およびコンプライアンス ポリシーが表示されます。 モバイル デバイス管理 (MDM) を含むポリシーを社内のグループに割り当てることができます。
 
 |          プロパティ          |                                                                       説明                                                                      |                例               |
@@ -617,7 +617,7 @@ Microsoft Intune によるモバイル アプリケーション管理を使用�
 | UserKey                    | データ ウェアハウス内のユーザーを示す一意識別子 - 代理キー。                                                                                                                                                         | 123                                  |
 | UserId                     | ユーザーを示す一意識別子 - UserKey と似ていますが、ナチュラル キーです。                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail                  | ユーザーの電子メール アドレス。                                                                                                                                                                                                     | John@constoso.com                    |
-| UPN                        | ユーザーのユーザー プリンシパル名。                                                                                                                                                                                               | John@constoso.com                    |
+| userPrincipalName                        | ユーザーのユーザー プリンシパル名。                                                                                                                                                                                               | John@constoso.com                    |
 | DisplayName                 | ユーザーの表示名。                                                                                                                                                                                                      | John                                 |
 | IntuneLicensed             | ユーザーに Intune のライセンスがあるかどうかを示します。                                                                                                                                                                              | 真/偽                           |
 | IsDeleted                  | そのユーザーのすべてのライセンスの期限が切れているかどうか、および、そのユーザーがそのため Intune から削除されたかどうかを示します。 1 つのレコードでは、このフラグは変更されません。 代わりに、新しいユーザー状態用の新しいレコードが作成されます。 | 真/偽                           |
