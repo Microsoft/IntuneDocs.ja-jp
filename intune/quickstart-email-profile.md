@@ -1,12 +1,12 @@
 ---
 title: クイック スタート - iOS 用の電子メール デバイス プロファイルを作成する
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: iOS デバイスが会社の電子メールに安全に接続できるように、Microsoft Intune を使用して電子メール デバイス プロファイルを作成する方法について説明します。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0c96ffdabca3a29b2e0ac5d0a26d5e23b0dabda
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b252c9d3d719847c8c0911b6cbce06c83bb4bf0e
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390455"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799284"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>クイック スタート:iOS 用の電子メール デバイス プロファイルを作成する
 
@@ -33,7 +33,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
 ## <a name="sign-in-to-intune"></a>Intune にサインインする
 
-グローバル管理者または Intune サービス管理者として [Intune](https://aka.ms/intuneportal) にサインインします。 Intune には、Azure portal で **[すべてのサービス]** > **[Intune]** を選択してアクセスします。
+グローバル管理者または Intune サービス管理者として [Intune](https://aka.ms/intuneportal) にサインインします。 Intune の試用版サブスクリプションを作成した場合、サブスクリプションを作成したアカウントがグローバル管理者になります。
 
 ## <a name="create-an-ios-email-profile"></a>iOS 電子メール プロファイルを作成する
 1. Intune で **[デバイス構成]** を選択し、**[プロファイル]** を選択します。
