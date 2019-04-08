@@ -1,12 +1,12 @@
 ---
 title: クイック スタート - Android デバイス用のパスワード コンプライアンス ポリシーを作成する
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: このクイック スタートでは、Microsoft Intune を使用して Android デバイスに必要なパスワードの長さを設定します。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ae0c7b9a00c3e07bb49261ca1a20bd5ef5db15
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f4a16272f32b8546e7e9bb12a22f16235ab49aed
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397271"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799660"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>クイック スタート:Android デバイス用のパスワード コンプライアンス ポリシーを作成する
 
@@ -49,7 +49,8 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 3. **[プラットフォーム]** で、**[Android]** を選択します。 
 4. **[設定]** > **[システム セキュリティ]** を選択し、Android の **[システム セキュリティ]** ブレードを表示します。
 5. **[モバイル デバイスのロック解除にパスワードを必要とする]** の **[必要]** をクリックします。
-6. **[パスワードの最小文字数]** に「**6**」と入力します。 
+6. **[必要なパスワードの種類]** の横の **[数字を使用する]** を選択します。
+7. **[パスワードの最小文字数]** に「**6**」と入力します。 
 
     ![Microsoft Intune でのグループ作成のスクリーンショット](media/quickstart-set-password-length-android/quickstart-set-password-length-android-01.png)
 

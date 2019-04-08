@@ -1,6 +1,6 @@
 ---
 title: 会社のデータへの無許可のアクセスを防止する
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune を使用して、企業ネットワーク外での共有時に、会社のデータへの無許可のアクセスを防止します。
 keywords: Office 365 O365 Azure Information Protection データ保護 ネットワークの外部 会社のデータ
 ms.author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ffe9fcf4f16041eed698d94bb16f9ed2fd94341
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0882fb19d3ce74c837b83973ec07f391bc2875fa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460463"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799441"
 ---
 # <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>Microsoft Intune を使用して、会社のデータへの無許可のアクセスを防止する
 

@@ -1,6 +1,6 @@
 ---
 title: Windows PC のソフトウェア更新プログラム
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune で最新の修正プログラムとソフトウェア更新プログラムを迅速にインストールし、マネージド コンピューターを最新の状態に保ちます。
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 381802de52f63cd4d7c836dbabe25167c0370ee5
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 68f8b814084328fdc5aed954cb71b9ce8dcedc63
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460673"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798953"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Microsoft Intune でソフトウェア更新プログラムを使用して Windows PC を最新の状態に保つ
 

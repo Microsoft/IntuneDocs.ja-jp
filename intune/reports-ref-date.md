@@ -1,6 +1,6 @@
 ---
 title: 日付 - Intune データ ウェアハウス
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune データ ウェアハウス API のエンティティ コレクションの日付カテゴリに関するリファレンス トピック。
 keywords: Intune データ ウェアハウス
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2813c2b3f94bf0d57d63b75250239149eb2c1726
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0f69da2ced8e9c249514bb30490372db66c00b8c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565997"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798508"
 ---
 # <a name="reference-for-date-entity"></a>Date エンティティのリファレンス
 

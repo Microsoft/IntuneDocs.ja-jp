@@ -1,6 +1,6 @@
 ---
 title: Azure AD を使用して Microsoft Graph の Intune API にアクセスする方法
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: アプリで Azure AD を使用して Microsoft Graph の Intune API にアクセスするために必要な手順について説明します。
 keywords: intune graphapi c# powershell アクセス許可の役割
 author: dougeby
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8625eddaa3c6223767c7c93022275b028b4a145b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 26bdeaf2a5860d0c19feba2ec8b5864e95754b12
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566558"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798991"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD を使用して Microsoft Graph の Intune API にアクセスする方法
 

@@ -1,12 +1,12 @@
 ---
 title: クイック スタート - 非準拠デバイスに通知を送信する
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: このクイック スタートでは、Microsoft Intune を使用して、非準拠デバイスにメール通知を送信します。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 757191515ca88cedf1a5edcdb243b1ecb730ec3c
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: ba835eb76dae19a13985a6175b4eceee0bae7f12
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57991122"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871435"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>クイック スタート:非準拠デバイスに通知を送信する
 
@@ -40,7 +40,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
 ## <a name="sign-in-to-intune"></a>Intune にサインインする
 
-[全体管理者](users-add.md#types-of-administrators)または Intune [サービス管理者](users-add.md#types-of-administrators)として、[Intune](https://aka.ms/intuneportal) ポータルにサインインします。 
+[全体管理者](users-add.md#types-of-administrators)または Intune [サービス管理者](users-add.md#types-of-administrators)として、[Intune](https://aka.ms/intuneportal) ポータルにサインインします。 Intune の試用版サブスクリプションを作成した場合、サブスクリプションを作成したアカウントがグローバル管理者になります。
 
 ## <a name="create-a-notification-message-template"></a>通知メッセージ テンプレートを作成する
 
@@ -51,7 +51,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
    - **名前**: *Contoso 管理者*
    - **[件名]**: *デバイスのポリシー準拠*
-   - **[メッセージ]**:*現在、あなたのデバイスは組織のコンプライアンス要件を満たしていません。*
+   - **[メッセージ]**:"*現在、あなたのデバイスは組織のコンプライアンス要件を満たしていません。*"
    - **電子メール ヘッダー - 会社のロゴを含める**:組織のロゴを表示するには、**[有効]** に設定します。
    - **電子メール フッター - 会社名を含める**:組織名を表示するには、**[有効]** に設定します。
    - **電子メール フッター - 連絡先情報を含める**:組織名の連絡先情報を表示するには、**[有効]** に設定します。
@@ -83,14 +83,13 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 5. **[モバイル デバイスのロック解除にパスワードを必要とする]** を **[必要]** に設定します。 ユーザーが自分のモバイル デバイスの情報にアクセスするときにパスワードを入力する必要があるかどうかを指定します。 
 6. **[パスワードの最小文字数]** を「**6**」に設定します。 パスワードに最低限必要な数字または文字の数を指定します。
 
-    ![新しいコンプライアンス ポリシーのシステム セキュリティ設定](./media/quickstart-send-notification-02.png) 
+    <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
 7. **[OK]**、**[OK]**、**[作成]** の順にクリックして、コンプライアンス ポリシーを作成します。
-8. 新しいポリシー名を選択します。**Windows 10 コンプライアンス**。
-9. **[プロパティ]** > **[Action for noncompliance]\(非準拠のアクション\)** > **[追加]** を選択します。
-10. **[アクション]** ドロップダウン ボックスで、**[メールをエンド ユーザーに送信する]** が選択されていることを確認します。
-11. **[メッセージ テンプレート]** > "**Contoso 管理者**" > **[選択]** を選択して、このトピックで前に作成したメッセージ テンプレートを選択します。
-12. **[OK]** > **[OK]** > **[保存]** の順に選択して、変更を保存します。
+8. **[プロパティ]** > **[Action for noncompliance]\(非準拠のアクション\)** > **[追加]** を選択します。
+9. **[アクション]** ドロップダウン ボックスで、**[メールをエンド ユーザーに送信する]** が選択されていることを確認します。
+10. **[メッセージ テンプレート]** > "**Contoso 管理者**" > **[選択]** を選択して、このトピックで前に作成したメッセージ テンプレートを選択します。
+11. **[追加]** > **[OK]** > **[保存]** の順に選択して、変更を保存します。
 
 ## <a name="assign-the-policy"></a>ポリシーを割り当てる
 

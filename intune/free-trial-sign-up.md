@@ -1,6 +1,6 @@
 ---
 title: 'クイック スタート: Microsoft Intune を無料で試す'
-titlesuffix: ''
+titleSuffix: ''
 description: このクイック スタートでは、無料試用版サブスクリプションを作成し、サポートされている構成とネットワーク要件を理解し、必要に応じてドメイン名を構成します。
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c83ab0f70a5a40bd745b4db83ef16ac14acd00
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 63f9ef266c9a5754d5de57232a8f7bc41a6c5777
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756855"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871397"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>クイック スタート:Microsoft Intune を無料で試す 
 
@@ -97,7 +97,7 @@ MDM 機関について詳しくは、「[モバイル デバイス管理機関�
 
 ## <a name="configure-your-custom-domain-name-optional"></a>カスタム ドメイン名を構成する (省略可能)
 
-前述のように、**.onmicrosoft.com** ではない独自のカスタム ドメインを組織で使用したい場合は、Microsoft 365 管理センターで変更することができます。 カスタム ドメイン名は、次の手順で追加、確認、および構成できます。  
+前述のように、**.onmicrosoft.com** ではない独自のカスタム ドメインを組織で使用したい場合は、Microsoft 365 管理センターで変更することができます。 次の手順に従ってカスタム ドメイン名を追加、確認、および構成できます。  
 
 > [!IMPORTANT]
 > *初期*ドメイン名の **onmicrosoft.com** の部分は名前変更または削除できません。 ただし、企業のアイデンティティを明確にするために、Intune で使う*カスタム* ドメイン名を追加、確認、削除することはできます。 詳細については、[カスタム ドメイン名の構成](custom-domain-name-configure.md)に関するページを参照してください。
@@ -110,7 +110,7 @@ MDM 機関について詳しくは、「[モバイル デバイス管理機関�
 
    ![Microsoft 365 管理センターのスクリーンショット - [ドメイン名の追加]](./media/domain-custom-add.png)
 
-4. 前の手順で入力したドメインの所有者であることを確認します。 
+4. 前の手順で入力したドメインの所有者が自分であることを確認します。 
     
     **[メールでコードを送信する]** を選択すると、ドメインの登録済み連絡先にメールが送信されます。 メールを受け取ったら、コードをコピーし、**[ここに確認コードを入力]** というフィールドに貼り付けます。 確認コードが一致すると、ドメインがテナントに追加されます。 見慣れないメール アドレスが表示されることがあります。 一部のレジストラーは、実際のメール アドレスを表示しません。 また、ドメインの登録時のものとメール アドレスが異なる場合があります。
 
@@ -123,7 +123,7 @@ MDM 機関について詳しくは、「[モバイル デバイス管理機関�
 
 次の 2 つのポータルを使用できます。
 - Azure ([portal.azure.com](https://portal.azure.com)) の Intune ダッシュボードでは、[Intune の各機能](what-is-intune.md)を確認できます。 通常、Intune ダッシュボードで作業します。
-- Microsoft 365 管理センター ([admin.microsoft.com](https://admin.microsoft.com)) では、ユーザーの追加と管理ができます (Azure Active Directory を使用していない場合)。 また、課金やサポートなど、アカウントのその他の要素を管理することもできます。
+- Microsoft 365 管理センター ([admin.microsoft.com](https://admin.microsoft.com)) では、ユーザーの追加と管理を行えます (このために Azure Active Directory を使用していない場合)。 また、課金やサポートなど、アカウントのその他の要素を管理することもできます。
 
 ## <a name="next-steps"></a>次の手順
 

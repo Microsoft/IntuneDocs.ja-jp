@@ -1,12 +1,12 @@
 ---
 title: チュートリアル - アンマネージド デバイス上で Exchange Online の電子メールを保護する
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune アプリの保護ポリシーと Azure AD 条件付きアクセスを利用して Office 365 Exchange Online をセキュリティ保護する方法について説明します。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 03/26/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4692e19d657e19efe18a91273ce585eb59c6cb65
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e6224a0dae7c0aa3d80d4e64331a668953220f65
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528277"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798786"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>チュートリアル: アンマネージド デバイス上で Exchange Online の電子メールを保護する
 
@@ -91,8 +91,8 @@ Outlook 用のアプリ保護ポリシーが作成されます。 これで、Ou
 5.  **[割り当て]** で、**[条件]** > **[デバイス プラットフォーム]** を選択します。
      
     1. **[構成]** で、**[はい]** を選択します。
-    2. **[含む]** タブで **[すべてのプラットフォーム (サポート対象外を含む)]** を選択します。 
-    3. **[完了]** を選びます。
+    2. **[含む]** タブで、**[任意のデバイス]** を選択します。
+    1. **[完了]** を選びます。
    
 6.  **[条件]** ウィンドウで、**[クライアント アプリ]** を選択します。
      
@@ -136,7 +136,7 @@ Outlook 用のアプリ保護ポリシーが作成されます。 これで、Ou
 5.  **[割り当て]** で、**[条件]** > **[デバイス プラットフォーム]** を選択します。
      
     1. **[構成]** で、**[はい]** を選択します。
-    2. **[含む]** タブで **[すべてのプラットフォーム (サポート対象外を含む)]** を選択して、**[完了]** を選択します。 
+    2. **[含む]** タブで **[任意のデバイス]** を選択してから、**[完了]** を選択します。 
     3. **[完了]** をもう一度選択します。
 
 6.  **[条件]** ウィンドウで、**[クライアント アプリ]** を選択します。

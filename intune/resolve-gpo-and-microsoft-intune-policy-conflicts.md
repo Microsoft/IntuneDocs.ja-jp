@@ -1,6 +1,6 @@
 ---
 title: GPO と Intune ポリシーの競合を解決する
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: グループ ポリシーと Intune 構成ポリシーの競合を解決する方法について説明します。
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7024d2c5f9e6b5ac3f844a2f974d2a1d5a0444b0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 05941f35fe2a3501d6596e4d818027f7e1a57c79
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57459936"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798417"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>グループ ポリシー オブジェクト (GPO) と Microsoft Intune ポリシーの競合を解決する
 

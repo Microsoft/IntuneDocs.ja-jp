@@ -5,7 +5,7 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 03/27/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b9247d07ae947e61528095a4853e5cdbcbc80c0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6dfdf61159d899a81e1ef53a1aaa649c98833b0e
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389975"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871418"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>クイック スタート:Windows 10 デバイスを登録する
 
@@ -72,7 +72,7 @@ Windows 10 デスクトップを登録する前に、インストールされて
 
     ![[職場または学校にアクセスする] アカウントの選択](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-04.png)
 
-3. 職場または学校アカウントで Intune にサインインし、**[次へ]** を選択します。 「ユーザーを作成してライセンスを割り当てる」クイック スタートに従った場合、作成したユーザー アカウントでサインインすることができます。
+3. 職場または学校アカウントで Intune にサインインし、**[次へ]** を選択します。 [ユーザーを作成してライセンスを割り当てる](quickstart-create-user.md)クイック スタートに従った場合は、作成したユーザー アカウントでサインインすることができます。
 
     > [!NOTE]
     > ".onmicrosoft.com" を設定した場合、ユーザー アカウントのアドレスの一部が **.onmicrosoft.com** になります。 

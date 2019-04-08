@@ -6,23 +6,23 @@ author: ErikjeMS
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.topic: quickstart
-ms.date: 10/30/2018
+ms.date: 03/25/2019
 ms.author: erikje
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98c71bd4c93e869b429b7677b4fb7c442aa58643
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: b49595493b5db3e5735e0a4717c27e91f058b8d8
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57991078"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514265"
 ---
-# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>クイック スタート:ユーザーを作成してライセンスを割り当てる
+# <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>クイック スタート:Intune でユーザーを作成してライセンスを割り当てる
 
-このクイック スタートでは、ユーザーを作成し、そのユーザーにライセンスを割り当てます。 Intune を使用する場合、会社のデータへのアクセス権を付与する各ユーザーには、ユーザー アカウントが必要です。 このようなユーザーは、Intune 管理者がアクセス制御を管理するために、後から構成できます。
+このクイック スタートでは、ユーザーを作成して Intune を割り当てます。 Intune を使用する場合、会社のデータにアクセスできるようにしたい各ユーザーが独自のユーザー アカウントを持っている必要があります。 Intune 管理者は後からユーザーを構成して、アクセスの制御を管理できます。
 
 Intune サブスクリプションがない場合は、[無料試用版アカウントにサインアップ](free-trial-sign-up.md)します。
 
@@ -32,7 +32,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
 ## <a name="create-a-user"></a>ユーザーを作成する
 
-Intune デバイス管理に登録するユーザーには、ユーザー アカウントが必要です。
+Intune デバイス管理に登録するユーザーには、ユーザー アカウントが必要です。 新しいユーザーを作成するには:
 
 1. Intune で、**[ユーザー]** > **[すべてのユーザー]** > **[新しいユーザー]** の順に選択します。
 ![ブラウザー](media/quickstart-create-user/create-user.png)
@@ -47,7 +47,9 @@ Intune デバイス管理に登録するユーザーには、ユーザー アカ
 
 ## <a name="assign-a-license-to-the-user"></a>ユーザーにライセンスを割り当てる
 
-ユーザーを作成したら、[Microsoft 365 管理センター](http://go.microsoft.com/fwlink/p/?LinkId=698854)を利用し、Intune ライセンスをそのユーザーに割り当てる必要があります。 ライセンスを割り当てないと、ユーザーは自分のデバイスを Intune に登録できません。 
+ユーザーを作成したら、[Microsoft 365 管理センター](http://go.microsoft.com/fwlink/p/?LinkId=698854)を使ってそのユーザーに Intune ライセンスを割り当てる必要があります。 ユーザーは、ライセンスを割り当てられないと、各自のデバイスを Intune に登録できません。 
+
+ユーザーに Intune ライセンスを割り当てるには:
 
 1. Intune にサインインしたときに使用した同じ資格情報で [Microsoft 365 管理センター](http://go.microsoft.com/fwlink/p/?LinkId=698854)にサインインします。
 2. **[ユーザー]** > **[アクティブなユーザー]** の順に選択し、作成したユーザーを選択します。
@@ -67,7 +69,7 @@ Intune デバイス管理に登録するユーザーには、ユーザー アカ
 
 ## <a name="next-steps"></a>次の手順
 
-このクイック スタートでは、ユーザーを作成し、そのユーザーにライセンスを割り当てました。 Intune へのユーザーの追加について詳しくは、「[Intune にユーザーを追加して管理アクセス許可を付与する](users-add.md)」をご覧ください。
+このクイック スタートでは、ユーザーを作成し、そのユーザーに Intune ライセンスを割り当てました。 Intune へのユーザーの追加について詳しくは、「[Intune にユーザーを追加して管理アクセス許可を付与する](users-add.md)」をご覧ください。
 
 この一連の Intune のクイック スタートに従うには、次のクイック スタートに進んでください。
 

@@ -1,12 +1,12 @@
 ---
 title: クイック スタート - アプリ保護ポリシーを作成して割り当てる
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: このクイック スタートでは、Microsoft Intune を使用して、アプリ保護ポリシーを作成および割り当てます。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7dee5407b39d9299081bf526b117c64b5883a106
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5d7e63542563425606cf1f9a8509a7bf0c09b9a9
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393358"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871363"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>クイック スタート:アプリ保護ポリシーを作成して割り当てる
 
@@ -41,7 +41,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
 ## <a name="create-an-app-protection-policy"></a>アプリ保護ポリシーを作成する
 
-次の手順を使用して、アプリ保護ポリシーを作成します。
+次の手順に従って、アプリ保護ポリシーを作成します。
 
 1. [Intune](https://aka.ms/intuneportal) で、**[クライアント アプリ]** > **[アプリ保護ポリシー]** > **[ポリシーの作成]** の順に選択します。 
 2. 次の詳細を入力します。 
@@ -72,7 +72,7 @@ Intune でアプリ保護ポリシーを作成したら、グループに割り�
 3.  **[割り当て]** を選択します。
 4.  **[含める]** タブで **[含めるグループを選択]** を選択します。
 5.  含めるグループとして **[Contoso テスト担当者]** を選択します。
-6.  **[選択]** をクリックします。 
+6.  **[選択]** > **[保存]** の順にクリックします。 
 
 これでアプリ保護ポリシーが割り当てられました。
 

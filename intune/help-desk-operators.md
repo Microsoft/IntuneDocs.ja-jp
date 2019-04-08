@@ -1,6 +1,6 @@
 ---
 title: ヘルプ デスクのトラブルシューティング ポータル
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: ヘルプ デスクのスタッフが、トラブルシューティング ポータルを使用して、ユーザーの技術的な問題を解決します。
 keywords: ''
 author: dougeby
@@ -17,12 +17,12 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 135e93bf3cfb93b5299dfd005a3ca70bbba84d77
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: df5b20be667159689aaaee9a790c0a4c5b5864fd
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57787136"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798400"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>トラブルシューティング ポータルを使用して社内のユーザーをサポートする
 
@@ -48,7 +48,7 @@ ms.locfileid: "57787136"
 トラブルシューティング ウィンドウで、**[ユーザーの選択]** を選択してユーザー情報を表示します。 ユーザー情報は、ユーザーと彼らのデバイスの現在の状態を理解するのに役立ちます。  
 
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
-2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[トラブルシューティング]** を選択します。
 4. **[選択]** をクリックして、トラブルシューティングを行うユーザーを選択します。
 5. 名前または電子メール アドレスを入力して、ユーザーを選択します。 **[選択]** をクリックします。 ユーザーのトラブルシューティング情報が、トラブルシューティング ウィンドウに表示されます。 情報については、次の表で説明します。

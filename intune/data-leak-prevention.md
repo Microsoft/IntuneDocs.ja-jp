@@ -1,6 +1,6 @@
 ---
 title: 管理されていないデバイスでのデータ漏洩の防止
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune を使用して、デバイス上での企業データへのアクセスを許可し、データ漏洩を防ぎます。
 keywords: データ保護 漏洩の防止 デバイス O365 Office 365
 ms.author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4bbb6a09d9f81c5e5309e3ef04a63c8165a1f23
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 324187db4951ffb6b80e9cc488a2a0fb59f40a9a
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461194"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799374"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Microsoft Intune を使用して、管理されていないデバイスでのデータ漏洩を防止する
 

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 1/30/2019
+ms.date: 03/29/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Device Enrollment Program so that users can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88fe825b75e7717740e5a5ca4af4c52e9bb21768
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f9cd0eec492f5131e4015aa64eccb4c081c663ee
+ms.sourcegitcommit: 8e6f4acb592dbe5de63aa7642ee9487288740714
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400400"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646473"
 ---
 # <a name="tutorial-use-the-device-enrollment-program-to-enroll-ios-devices-in-intune"></a>チュートリアル: Device Enrollment Program を使用して Intune に iOS デバイスを登録する
 Apple の Device Enrollment Program (DEP) によって、デバイスの登録が簡略化されます。 Microsoft Intune と DEP では、最初にユーザーがデバイスをオンにしたときに、デバイスが自動的に登録されます。 そのため、各デバイスを個別に設定することなく、デバイスを多くのユーザーに配送できます。 
@@ -61,7 +61,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 
 5. **[MDM Server Name]\(MDM サーバー名\)** に、「*TestMDMServer*」と入力して **[次へ]** を選びます。 サーバー名は、自分がモバイル デバイス管理 (MDM) サーバーを識別できるようにするための名前です。 Microsoft Intune サーバーの名前または URL ではありません。
 
-6. **[Add &lt;ServerName&gt;\(<サーバー名> の追加\)]** ダイアログ ボックスが開き、**[Upload Your Public Key\(公開キーをアップロードする\)]** と表示されます。 **[Choose File]** (ファイルを選択) をクリックして .pem ファイルをアップロードし、**[Next]** (次へ) を選択します。
+6. **[Add &lt;ServerName&gt;\(<サーバー名> の追加\)]** ダイアログ ボックスが開き、**[Upload Your Public Key\(公開キーをアップロードする\)]** と表示されます。 **[ファイルの選択…]** を選択して .pem ファイルをアップロードし、**[Next]** (次へ) を選択します。
 
 6. **[Deployment Programs]** > **[Device Enrollment Program]** > **[デバイスの管理]** に移動します。
 7. **[Choose Devices By]\(デバイスの選択基準\)** で、**[シリアル番号]** を選びます。 <!--ask Tiffany about this-->

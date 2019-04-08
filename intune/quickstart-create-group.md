@@ -1,12 +1,12 @@
 ---
 title: クイック スタート - ユーザーを管理するグループを作成する
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: このクイック スタートでは、Microsoft Intune を使用して、既存のユーザーに基づいてグループを作成します。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 03/25/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e22aecbeddeb03060ebd91f3b1d7109d01b8daad
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7cbfe19e4f7aea28c16cae50c9b79336be81c8fa
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57391535"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871329"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>クイック スタート:ユーザーを管理するグループを作成する
 
@@ -44,17 +44,18 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
 ## <a name="create-a-group"></a>グループの作成
 
-このクイックスタート シリーズの後半で使用するグループを作成します。
+このクイックスタート シリーズの後半で使用するグループを作成します。 グループを作成するには:
 
 1. **[Microsoft Intune]** ウィンドウを開いたら、**[グループ]** >  **[新しいグループ]** の順に選択します。
 2. **[グループの種類]** ドロップダウン ボックスで **[セキュリティ]** を選択します。
-3. **[名前]** を「Contoso テスト担当者」に設定し、グループの**説明**を追加します。
-4. **[メンバーシップの種類]** を **[割り当て済み]** に設定します。 
-5. **[メンバー]** をクリックし、既存の一覧からグループのメンバーを 1 人または複数選択します。
+3. **[グループ名]** フィールドに新しいグループの名前を入力します (例: **Contoso Testers**)。
+4. グループの **[説明]** を追加します。
+5. **[メンバーシップの種類]** を **[割り当て済み]** に設定します。 
+6. **[メンバー]** をクリックし、一覧からグループのメンバーを 1 人または複数人選択します。
 
     ![Microsoft Intune でのグループ作成のスクリーンショット](./media/quickstart-use-groups-01.png)
 
-6. **[選択]**、**[作成]** の順にクリックします。
+7. **[選択]**、**[作成]** の順にクリックします。
 
 グループが正常に作成されると、**[すべてのグループ]** の一覧にそのグループが表示されます。 
 
