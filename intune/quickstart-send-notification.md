@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 03/27/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba835eb76dae19a13985a6175b4eceee0bae7f12
-ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
+ms.openlocfilehash: 4b5e6ac4683284dc71c9171f4367e72d5ec45c59
+ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58871435"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58899013"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>クイック スタート:非準拠デバイスに通知を送信する
 
@@ -85,7 +85,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
     <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
-7. **[OK]**、**[OK]**、**[作成]** の順にクリックして、コンプライアンス ポリシーを作成します。
+7. **[OK]** > **[OK]** > **[作成]** の順に選択して、コンプライアンス ポリシーを作成します。
 8. **[プロパティ]** > **[Action for noncompliance]\(非準拠のアクション\)** > **[追加]** を選択します。
 9. **[アクション]** ドロップダウン ボックスで、**[メールをエンド ユーザーに送信する]** が選択されていることを確認します。
 10. **[メッセージ テンプレート]** > "**Contoso 管理者**" > **[選択]** を選択して、このトピックで前に作成したメッセージ テンプレートを選択します。
