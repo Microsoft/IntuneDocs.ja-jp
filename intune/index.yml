@@ -9,133 +9,141 @@ metadata:
   author: dougeby
   ms.author: dougeby
   manager: dougeby
-  ms.date: 10/31/2017
+  ms.date: 02/25/2019
   ms.topic: landing-page
-  ms.devlang: na
+  ms.devlang: null
   ms.service: microsoft-intune
-  ms.openlocfilehash: f359e36b07334866a1913e5eebd37a0960fc677d
-  ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
-  ms.translationtype: HT
-  ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/22/2018
-  ms.locfileid: "30017811"
 sections:
-- items:
-  - type: markdown
-    text: Microsoft Intune をすぐに使い始めましょう。 クラウドベースのエンタープライズ モビリティ管理 (EMM) サービスを使って、会社のデータを守りながら、社員に生産的に働いてもらうことができるようにします。 Intune は、ID とアクセス制御のために Azure Active Directory と、データ保護のために Azure Information Protection と統合されます。
-- items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
+  - items:
+      - type: markdown
+        text: Microsoft Intune をすぐに使い始めましょう。 クラウドベースのエンタープライズ モビリティ管理 (EMM) サービスを使って、会社のデータを守りながら、社員に生産的に働いてもらうことができるようにします。 Intune は、ID とアクセス制御のために Azure Active Directory と、データ保護のために Azure Information Protection と統合されます。
+  - items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: introduction-intune.md
+            html: <p>Intune の機能とそのしくみについてご確認ください。</p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_overview.svg'
+            title: Intune とは何か
+          - href: free-trial-sign-up.md
+            html: <p>この簡単なチュートリアルで Intune をお試しください。</p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_get-started.svg'
+            title: 作業開始
+          - href: get-support.md
+            html: <p>サポート チケットを作成し、必要なときにヘルプを表示する方法を説明します。</p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_support.svg'
+            title: サポートを受ける
+          - href: whats-new.md
+            html: <p>今週の Intune の新機能をご覧ください。</p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_whats-new.svg'
+            title: 新機能
+  - title: 新しい記事とブログの投稿
     items:
-    - href: introduction-intune.md
-      html: <p>Intune の機能とそのしくみについてご確認ください。</p>
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_overview.svg
-      title: Intune とは何か
-    - href: get-started-evaluation.md
-      html: <p>この簡単なチュートリアルで Intune のしくみをご確認ください。</p>
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
-      title: 作業開始
-    - href: get-support.md
-      html: <p>サポート チケットを作成し、必要なときにヘルプを表示する方法を説明します。</p>
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_support.svg
-      title: サポートを受ける
-    - href: whats-new.md
-      html: <p>今週の Intune の新機能をご覧ください。</p>
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_whats-new.svg
-      title: 新機能
-- title: 新しい記事とブログの投稿
-  items:
-  - type: paragraph
-    text: 把握しておく必要がある最新の重要な情報をご確認ください。
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: paragraph
+        text: 把握しておく必要がある最新の重要な情報をご確認ください。
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: what-is-intune.md
+            title: Azure Portal での Intune について知る
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_portal.svg'
+          - href: ui-changes.md
+            title: Intune の機能が Azure Portal のどこにあるかを確認する
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_guide.svg'
+          - href: high-level-architecture.md
+            title: Intune の高レベルなアーキテクチャを確認する
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_architecture.svg'
+          - href: enrollment-autopilot.md
+            title: Microsoft Intune で Windows AutoPilot Deployment プログラムをサポート
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_generic-database.svg'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2018/09/12/support-tip-intune-support-for-ios-12/'
+            title: '[ブログ] サポートのヒント:Intune の iOS 12 のサポート'
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_blog.svg'
+          - href: 'https://blogs.technet.microsoft.com/intunesupport/2018/09/04/coming-soon-new-intune-support-experience-for-premier-customers/'
+            title: '[ブログ] Premier のお客様のための新しい Intune サポート エクスペリエンス'
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_blog.svg'
+  - title: ビデオ
     items:
-    - href: what-is-intune.md
-      title: Azure Portal での Intune について知る
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_portal.svg
-    - href: ui-changes.md
-      title: Intune の機能が Azure Portal のどこにあるかを確認する
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_guide.svg
-    - href: high-level-architecture.md
-      title: Intune の高レベルなアーキテクチャを確認する
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
-    - href: enrollment-autopilot.md
-      title: Microsoft Intune で Windows AutoPilot Deployment プログラムをサポート
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_generic-database.svg
-    - href: https://blogs.technet.microsoft.com/intunesupport/2017/10/11/upcoming-security-enhancements-in-the-intune-service-your-action-is-required/
-      title: '[ブログ] Intune サービスでのセキュリティ強化 '
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
-    - href: https://cloudblogs.microsoft.com/enterprisemobility/2017/10/26/intunes-new-troubleshooting-portal-makes-diagnosing-and-resolving-end-user-issues-easier/
-      title: '[ブログ] エンド ユーザーの問題を簡単に診断し、解決するためのトラブルシューティング ポータル'
-      image:
-        src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
-- title: ビデオ
-  items:
-  - type: markdown
-    text: '>[!VIDEO https://www.youtube.com/embed/FpkCI6xmsE4]'
-  - type: markdown
-    text: '>[!VIDEO https://www.youtube.com/embed/Cn29dmgDcIw]'
-- title: 計画に関する記事
-  items:
-  - type: list
-    style: unordered
+      - type: markdown
+        text: '>[!VIDEO https://www.youtube.com/embed/offk-KH7eIA]'
+      - type: paragraph
+        text: ' '
+      - type: markdown
+        text: '>[!VIDEO https://www.youtube.com/embed/Cn29dmgDcIw]'
+  - title: Intune の無料トレーニング
     items:
-    - html: <a href="/intune/planning-guide">Intune の展開計画、設計および実装ガイド</a>
-    - html: <a href="/intune/migration-guide">Intune 移行ガイド</a>
-- title: 操作方法に関する記事
-  items:
-  - type: list
-    style: unordered
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 1
+        items:
+          - href: 'https://www.pluralsight.com/courses/windows-10-configuring-intune-creators'
+            title: 'Windows 10 の構成:Microsoft Intune を計画および実装する'
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/logos/logo_pluralsight.svg'
+  - title: 計画に関する記事
     items:
-    - html: <a href="/intune/device-enrollment">デバイスの登録</a>
-    - html: <a href="/intune/device-management">デバイスの管理</a>
-    - html: <a href="/intune/app-management">アプリの管理</a>
-    - html: <a href="/intune/device-profiles">デバイスの構成</a>
-    - html: <a href="/intune/device-compliance-get-started">デバイス コンプライアンスの設定</a>
-    - html: <a href="/intune/conditional-access">条件付きアクセスの設定</a>
-    - html: <a href="/intune/app-protection-policy">アプリの保護</a>
-    - html: <a href="/intune/mobile-threat-defense">Mobile Threat Defense の設定</a>
-    - html: <a href="/intune/network-access-control-integrate">ネットワーク アクセス制御の統合</a>
-    - html: <a href="/intune/role-based-access-control">ロールの管理</a>
-    - html: <a href="/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json">Intune ソフトウェア クライアントを使った PC の管理</a>
-- title: トラブルシューティングに関する記事
-  items:
-  - type: list
-    style: unordered
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="/intune/planning-guide">Intune の展開計画、設計および実装ガイド</a>
+          - html: <a href="/intune/migration-guide">Intune 移行ガイド</a>
+  - title: 操作方法に関する記事
     items:
-    - html: <a href="/intune/help-desk-operators">トラブルシューティング ポータルを使用してユーザーをサポートする</a>
-    - html: <a href="/intune/known-issues">Intune の既知の問題</a>
-    - html: <a href="/intune/get-support">サポートを受ける</a>
-- title: 開発とカスタマイズに関する記事
-  items:
-  - type: list
-    style: unordered
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="/intune/device-enrollment">デバイスの登録</a>
+          - html: <a href="/intune/device-management">デバイスの管理</a>
+          - html: <a href="/intune/app-management">アプリの管理</a>
+          - html: <a href="/intune/device-profiles">デバイスの構成</a>
+          - html: <a href="/intune/device-compliance-get-started">デバイス コンプライアンスの設定</a>
+          - html: <a href="/intune/conditional-access">条件付きアクセスの設定</a>
+          - html: <a href="/intune/app-protection-policy">アプリの保護</a>
+          - html: <a href="/intune/mobile-threat-defense">Mobile Threat Defense の設定</a>
+          - html: <a href="/intune/network-access-control-integrate">ネットワーク アクセス制御の統合</a>
+          - html: <a href="/intune/role-based-access-control">ロールの管理</a>
+          - html: <a href="/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json">Intune ソフトウェア クライアントを使った PC の管理</a>
+  - title: トラブルシューティングに関する記事
     items:
-    - html: <a href="/intune/custom-settings-configure">カスタム デバイス設定の構成</a>
-    - html: <a href="/intune/apps-prepare-mobile-application-management">Intune アプリケーション ラッパー ツールによる基幹業務 (LOB) アプリの準備</a>
-    - html: <a href="/intune/app-sdk">Intune App SDK での LOB アプリの準備</a>
-    - html: <a href="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview">Microsoft Graph での Intune の使用</a>
-    - html: <a href="/intune/reports-nav-intune-data-warehouse">Intune データ ウェアハウス API</a>
-- title: その他のリソース
-  items:
-  - type: list
-    style: unordered
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="/intune/help-desk-operators">トラブルシューティング ポータルを使用してユーザーをサポートする</a>
+          - html: <a href="/intune/known-issues">Intune の既知の問題</a>
+          - html: <a href="/intune/get-support">サポートを受ける</a>
+  - title: 開発とカスタマイズに関する記事
     items:
-    - html: <a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">ライセンス数が 150 以上ある場合にFastTrack 特典を利用する</a>
-    - html: <a href="https://blogs.technet.microsoft.com/enterprisemobility/">Enterprise Mobility and Security チームのブログを読む</a>
-    - html: <a href="https://blogs.technet.microsoft.com/intunesupport/">Intune サポート ブログで役立つ情報を入手する</a>
-    - html: <a href="https://microsoftintune.uservoice.com/forums/291681-ideas">UserVoice で Intune に関するフィードバックを提供する</a>
-    - html: <a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc">Intune ディスカッション フォーラムで質問または回答する</a>
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="/intune/custom-settings-configure">カスタム デバイス設定の構成</a>
+          - html: <a href="/intune/apps-prepare-mobile-application-management">Intune アプリケーション ラッパー ツールによる基幹業務 (LOB) アプリの準備</a>
+          - html: <a href="/intune/app-sdk">Intune App SDK での LOB アプリの準備</a>
+          - html: '<a href="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview">Microsoft Graph での Intune の使用</a>'
+          - html: <a href="/intune/reports-nav-intune-data-warehouse">Intune データ ウェアハウス API</a>
+  - title: その他のリソース
+    items:
+      - type: list
+        style: unordered
+        items:
+          - html: '<a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">ライセンス数が 150 以上ある場合にFastTrack 特典を利用する</a>'
+          - html: '<a href="https://docs.microsoft.com/microsoft-365">Intune を含む完全なソリューションである Microsoft 365 の詳細を確認する</a>'
+          - html: '<a href="https://blogs.technet.microsoft.com/enterprisemobility/">Enterprise Mobility and Security チームのブログを読む</a>'
+          - html: '<a href="https://blogs.technet.microsoft.com/intunesupport/">Intune サポート ブログで役立つ情報を入手する</a>'
+          - html: '<a href="https://microsoftintune.uservoice.com/forums/291681-ideas">UserVoice で Intune に関するフィードバックを提供する</a>'
+          - html: '<a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc">Intune ディスカッション フォーラムで質問または回答する</a>'
