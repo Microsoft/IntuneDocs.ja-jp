@@ -1,5 +1,6 @@
 ---
-title: Zimperium MTD を Microsoft Intune と統合する | Microsoft Intune
+title: Zimperium MTD を Microsoft Intune と統合する
+titleSuffix: Microsoft Intune
 description: Microsoft Intune で Zimperium Mobile Threat Defense (MTD) ソリューションをセットアップし、モバイル デバイスから会社のリソースへのアクセスを制御する方法。
 keywords: ''
 author: brenduns
@@ -9,6 +10,7 @@ ms.date: 12/04/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 363fd280-1865-4a61-855b-eb75c3c62753
 ms.reviewer: davidra
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc7128e006b46f8e918c71697cf2b371fe81fbd7
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 5ce1950c81a1327ede14fc5885eaf12f33614097
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229481"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569676"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Zimperium を Intune と統合する
 

@@ -1,6 +1,6 @@
 ---
 title: Intune 展開の計画と設計のためのテンプレートとリソース
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: テンプレートの計画と、Microsoft Intune の展開の計画および実装の処理中に役立つと思われる Intune のその他の情報へのリンク。
 keywords: ''
 author: dougeby
@@ -10,18 +10,19 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb42270a585bf390e91995a010168414a030a66f
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 14c1dcef4479cbbe6606cf4bb107514a21d7ab21
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236468"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567518"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Intune の展開計画に関するその他のリソース
 

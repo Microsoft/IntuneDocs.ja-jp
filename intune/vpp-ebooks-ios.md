@@ -1,15 +1,16 @@
 ---
 title: ボリューム購入した iOS 電子ブックの管理
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: iOS ストアからボリューム購入したブックを Intune に同期し、その使用状況を管理および追跡する方法について説明します。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 04/09/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: daed0da10a31d3429cf44bda8829369c741ba71a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: f31c623196abd4ffcdfc4f5ccded088c12d5d992
+ms.sourcegitcommit: 617bd653c34c1e6a4e2ad61811c5912f8dab775c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235550"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59570742"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Volume Purchase Program で購入した iOS 電子ブックを Microsoft Intune で管理する方法
 
@@ -56,7 +57,7 @@ iOS ブックの複数のライセンスを購入するには、[ビジネス向
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Apple VPP トークンを取得およびアップロードするには
 
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
-2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[クライアント アプリ]** を選択します。
 1.  **[クライアント アプリ]** ワークロードで、**[セットアップ]** > **[iOS VPP トークン]** の順に選択します。
 2.  VPP トークンの一覧ウィンドウで、**[作成]** をクリックします。

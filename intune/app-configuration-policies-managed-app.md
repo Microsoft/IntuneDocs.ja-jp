@@ -1,6 +1,6 @@
 ---
 title: デバイス登録のない管理対象アプリ用構成ポリシー
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: デバイス登録のない管理対象アプリ用構成ポリシーについて説明します。
 keywords: ''
 author: Erikre
@@ -10,6 +10,7 @@ ms.date: 01/02/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cde71d7c4c23aeb91c1e43469e23a4764e62b5b
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 92aae318fd8ffb53b933ca8ddce21a6c6220f494
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238593"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567206"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>デバイス登録なしで管理対象アプリ用アプリ構成ポリシーを追加する
 
@@ -31,7 +32,7 @@ ms.locfileid: "57238593"
 登録されていないデバイスでも、Intune App SDK をサポートする管理対象アプリにアプリ構成ポリシーを使用できます。 
 
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
-2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[クライアント アプリ]** ワークロードを選択します。
 4. **[管理]** グループの **[アプリ構成ポリシー]** を選択し、**[追加]** を選択します。
 5. 次の詳細を設定します。

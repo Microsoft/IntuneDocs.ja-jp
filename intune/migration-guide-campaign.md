@@ -1,6 +1,6 @@
 ---
 title: Intune 移行キャンペーンを開始する
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: この記事では、Microsoft Intune の移行キャンペーンの開始方法に関するガイダンスを提供します。
 keywords: ''
 author: dougeby
@@ -10,18 +10,19 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f781b029-50f2-46ee-8ff7-03b4a6719e80
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 979de57b86239211551641a290470642cf8a3398
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: db56bbc180a84e8b3972ffc6473126efd366faa8
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236912"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568272"
 ---
 # <a name="phase-2-migration-campaign"></a>フェーズ 2:移行のキャンペーン
 

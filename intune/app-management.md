@@ -1,15 +1,16 @@
 ---
 title: Microsoft Intune でのアプリの管理とは
-titlesuffix: ''
+titleSuffix: ''
 description: Microsoft Intune のプラットフォームでクライアント アプリを管理する機能について説明します。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f2c5da7772ff137e44fead66f00fe34004bb1f4
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 34807edabf99a107c259fdfae5e43db18084fb67
+ms.sourcegitcommit: 219bbbfb44eba70ac2b751970d8b4b778cd28416
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850908"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59569065"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Microsoft Intune アプリの管理とは
 
@@ -44,7 +45,7 @@ Intune では、アプリを実行するデバイス上で必要なアプリを�
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | デバイスとユーザーにアプリを追加して割り当てる | はい | はい | はい | はい | はい |
 | Intune に登録されていないデバイスにアプリを割り当てる | はい | はい | いいえ | [いいえ] | [いいえ] |
-| アプリ構成ポリシーを使用してアプリのスタートアップ動作を制御する | [いいえ] | はい | いいえ | [いいえ] | [いいえ] |
+| アプリ構成ポリシーを使用してアプリのスタートアップ動作を制御する | はい | はい | いいえ | [いいえ] | [いいえ] |
 | モバイル アプリ プロビジョニング ポリシーを使用して期限切れのアプリを更新する | [いいえ] | はい | いいえ | [いいえ] | [いいえ] |
 | アプリ保護ポリシーでアプリ内の会社のデータを保護する | はい | はい | [いいえ] | いいえ 1 | [いいえ] |
 | インストール済みのアプリから会社のデータのみを削除する (アプリの選択的ワイプ) | はい | はい | いいえ | はい | はい |
@@ -103,7 +104,7 @@ Intune では、アプリを実行するデバイス上で必要なアプリを�
 
 このセクションの詳細については、[アプリの管理](apps-monitor.md)に関するページを参照してください。
 
-### <a name="set-up"></a>セットアップする
+### <a name="set-up"></a>セットアップ
 - **[iOS VPP トークン]**:iOS Volume Purchase Program (VPP) のライセンスを適用し、表示します。 詳細については、次をご覧ください。
     - [iOS 大量購入アプリ](vpp-apps-ios.md)
 - **[Windows Enterprise 証明書]**:基幹業務アプリを Windows マネージド デバイスに配布するために使うコード署名証明書の状態を適用または表示します。

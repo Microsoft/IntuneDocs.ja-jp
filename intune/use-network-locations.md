@@ -9,6 +9,7 @@ ms.date: 05/21/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ayesham
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad1c633261e4d917cb88793efbac2ff4416dd429
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: d2431695f89c9cdf339a0192e27f8140ec042435
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236689"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57396241"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Intune で場所 (ネットワーク フェンス) を使用する
 
@@ -29,7 +30,7 @@ ms.locfileid: "57236689"
 
 ネットワーク フェンスとも呼ばれる、ネットワークの場所ベースのコンプライアンス ポリシーを作成できます。 ポリシーは、デバイスが準拠するように社内ネットワークに接続されるようにします。 このポリシーを条件付きアクセス ポリシーと共に使用して、デバイスが社内ネットワークに接続されているときに*のみ*、職場のリソースにアクセスできるようにします。 デバイスが社内ネットワークに接続されていない場合、そのデバイスは非準拠となり、社内ネットワークにアクセスできなくなります。
 
-このような場合は、まず、次のことを確認してください。
+次のシナリオを考えてみましょう。
 
 製造工場では、一部の従業員が Android デバイスを使用しています。 ある従業員は、工場の外に Android デバイスを持ち出しています。 無許可のアクセスを防止するために、次の操作を行うことができます。
 

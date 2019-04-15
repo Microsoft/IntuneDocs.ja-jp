@@ -1,5 +1,6 @@
 ---
-title: コンプライアンスのために Jamf Pro を Microsoft Intune と統合する | Microsoft Intune
+title: コンプライアンスのために Jamf Pro を Microsoft Intune と統合する
+titleSuffix: Microsoft Intune
 description: Microsoft Intune コンプライアンス ポリシーと Azure Active Directory の条件付きアクセスを使って、Jamf で管理されるデバイスをセキュリティ保護できます。
 keywords: ''
 author: brenduns
@@ -9,6 +10,7 @@ ms.date: 01/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
@@ -16,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55e7dffa72ccdd77d8d6069923437ad49f2456fe
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 57527d0b1825d0e8d3fefb63d1b960ab3fb5c676
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233246"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569481"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>コンプライアンスのために Jamf Pro を Intune と統合する
 
-適用先:Azure Portal での Intune
+適用対象:Azure Portal での Intune
 
 組織で [Jamf Pro](https://www.jamf.com) を使用してエンド ユーザーの Mac を管理している場合、Microsoft Intune コンプライアンス ポリシーと Azure Active Directory の条件付きアクセスを使用して、組織内のデバイスがコンプライアンスに確実に準拠するようにできます。
 

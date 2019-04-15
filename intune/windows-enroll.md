@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune を使用して Windows デバイスの登録をセットアップする
-titlesuffix: ''
+titleSuffix: ''
 description: Windows デバイスの登録をセットアップします。
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 09/27/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2192b6d653bfb51503b006a5045d454c202618f
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: d7dd4ab5f7cecfa8a765b6dfa038b73015a0c768
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234112"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567297"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Windows デバイスの登録をセットアップする
 
@@ -42,8 +43,8 @@ Windows デバイスの登録を簡略化する方法は、次の 2 つの要素
 
 ||**Azure AD Premium**|**その他の AD**|
 |----------|---------------|---------------|  
-|**Windows 10**|[自動登録](#enable-windows-10-automatic-enrollment) |[ユーザー登録](#enable-windows-enrollment-without-azure-ad-premium)|
-|**以前の Windows バージョン**|[ユーザー登録](#enable-windows-enrollment-without-azure-ad-premium)|[ユーザー登録](#enable-windows-enrollment-without-azure-ad-premium)|
+|**Windows 10**|[自動登録](#enable-windows-10-automatic-enrollment) |ユーザー登録|
+|**以前の Windows バージョン**|ユーザー登録|ユーザー登録|
 
 自動登録を利用できる組織は、Windows 構成デザイナー アプリを利用し、[デバイスの一括登録](windows-bulk-enroll.md)を構成することもできます。
 

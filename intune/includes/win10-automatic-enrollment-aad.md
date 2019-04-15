@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 04afc9c44bc1c4898950e6f3aff5dac7cb93370f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "56323358"
+---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Windows 10 の自動登録を有効にする
 
 自動登録により、Intune に Windows 10 デバイスを登録できます。 登録するには、ユーザーが職場アカウントを個人所有のデバイスを追加するか、会社所有のデバイスを Azure Active Directory に参加させます。 バック グラウンドでデバイスが登録され、Azure Active Directory に参加します。 登録されると、デバイスは Intune で管理されます。
