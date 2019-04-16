@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune の使用条件の設定
-titlesuffix: ''
+titleSuffix: ''
 description: Intune 用ポータル サイトでユーザーに表示する使用条件を設定します。
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 10/20/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b0571ad6196277ee2bc257d72cc4db24fcc3424
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 7c056e86f7e768d79b4851fda327dc2e32fa349c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237949"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567310"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>ユーザー アクセスに関する使用条件
 
@@ -43,7 +44,7 @@ Intune 管理者は、ユーザーがポータル サイトを使用して以下
 次の手順で使用条件を作成します。 表示名と説明は管理目的で使用されます。条件のプロパティはポータル サイトでユーザーに表示されます。
 
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
-2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで **[デバイスの登録]** > **[使用条件]** の順に選択します。
 2. **[作成]** を選択します。
 ![Azure Portal のスクリーンショット。使用条件の [作成] ボタンを確認できます。](media/terms-create-terms.png)

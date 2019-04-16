@@ -1,5 +1,6 @@
 ---
-title: Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する | Microsoft Intune
+title: Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
+titleSuffix: Microsoft Intune
 description: Microsoft Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 keywords: ''
 author: Erikre
@@ -9,6 +10,7 @@ ms.date: 01/02/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6494bbff9ca1c9d46c4af03ff90340fcca36ec97
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 1b8257b315bc18b10e7c2c86e931af005e44730c
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231572"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569767"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Intune で Windows 情報保護 (WIP) アプリ保護ポリシーを作成して展開する
 
@@ -125,7 +127,8 @@ WIP で保護するアプリを追加した後は、**[WIP の学習]** を使�
 
 WIP の学習は、WIP が有効なアプリおよび WIP にとって不明なアプリを監視できるようにするレポートです。 不明アプリは、組織の IT 部門によって展開されていないアプリです。 "ブロック" モードで WIP を適用する前に、レポートからこのようなアプリをエクスポートして WIP ポリシーに追加することで、生産性の阻害を回避できます。
 
-<!-- 1631908 --> WIP が有効になっているアプリの情報を表示できるだけでなく、作業データを Web サイトで共有しているデバイスの概要も表示できます。 この情報を使用して、グループおよびユーザーの WIP ポリシーに追加する Web サイトを判断できます。 概要には、WIP が有効なアプリからアクセスされる Web サイトの URL が示されます。
+<!-- 1631908 -->
+WIP が有効になっているアプリの情報を表示できるだけでなく、作業データを Web サイトで共有しているデバイスの概要も表示できます。 この情報を使用して、グループおよびユーザーの WIP ポリシーに追加する Web サイトを判断できます。 概要には、WIP が有効なアプリからアクセスされる Web サイトの URL が示されます。
 
 WIP が有効なアプリおよび WIP にとって不明なアプリを使用する場合は、まず、**[サイレント]** または **[オーバーライドの許可]** を使用し、保護されたアプリの一覧に適切なアプリが含まれる小規模なグループで確認することをお勧めします。 それが済んだ後、最終的な適用ポリシーである **[ブロック]** に変更できます。
 
