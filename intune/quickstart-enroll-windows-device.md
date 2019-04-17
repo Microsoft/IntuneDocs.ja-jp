@@ -5,7 +5,7 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 04/15/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 872cbd203a57976bd1bceb83e5fbf95a15721ff4
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: b774235e896c4dcbc548d4c8c65b4c6ab218ea28
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292308"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587486"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>クイック スタート:Windows 10 デバイスを登録する
 
@@ -60,7 +60,7 @@ Windows 10 デスクトップを登録する前に、インストールされて
 4. Windows 10 の **[バージョン]** が **1607 以降**であることを確認します。
 
     > [!IMPORTANT]
-    > このクイック スタートの手順は Windows 10 バージョン **1607 以降**に対するものです。バージョンが **1511 以前**の場合は、[こちらの手順](/intune-user-help/enroll-windows-10-device.md)に従ってください。  
+    > このクイック スタートの手順は Windows 10 バージョン **1607 以降**に対するものです。バージョンが **1511 以前**の場合は、[こちらの手順](/intune-user-help/enroll-windows-10-device)に従ってください。  
 
 ## <a name="enroll-windows-10-desktop"></a>Windows 10 デスクトップを登録する
 
