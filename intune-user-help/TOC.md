@@ -8,10 +8,12 @@
 
 ## [ポータル サイトにサインインする](sign-in-to-the-company-portal.md)
 
-## [Android デバイスを使用する](using-your-android-device-with-intune.md)
-### [Android デバイスの登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-### [デバイスの登録](enroll-your-device-in-Intune-android.md)
-#### [Android for Work でデバイスを登録する](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+## Android デバイスを使用する
+### [Android デバイスを登録する理由](why-enroll-android-device.md)
+### デバイスを登録する
+#### [Android デバイスを登録する](enroll-device-android-company-portal.md)  
+#### [Android 仕事用プロファイルを使用して登録する](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+#### [Microsoft Intune アプリを使用して登録する](enroll-device-android-microsoft-intune-app.md)
 ### [デバイスで管理対象アプリを使用する](use-managed-apps-on-your-device-android.md)
 ### [デバイスを暗号化する](encrypt-your-device-android.md)
 ### [PIN またはパスワードを設定する](set-your-pin-or-password-android.md)
@@ -23,16 +25,15 @@
 #### [デバイスの登録解除](unenroll-your-device-from-intune-android.md)
 #### [利用規約を拒否した場合にデバイスの登録を解除する](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 
-### [Android に関する一般的な問題の解決](troubleshoot-your-device-android.md)
+### Android に関する一般的な問題の解決
 #### [デバイスのコンプライアンスを確認する](check-compliance-on-your-device-android.md)
 #### [Samsung KNOX に関する一般的な問題の解決](samsung-knox-errors-android.md)
 #### [Outlook をインストールするデバイスを更新する](update-device-outlook-android.md)
 
-#### ログを使用した問題の解決
+#### ログ記録
 ##### [詳細ログ記録を有効にする](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-##### [電子メールを使用してログを送信する](send-logs-to-your-it-admin-by-email-android.md)
+##### [アップロードとメールのログ](send-logs-to-your-it-admin-by-email-android.md)
 ##### [USB ケーブルを使用してログを送信する](send-logs-to-your-it-admin-using-cable-android.md)
-##### [登録エラーを送信する](send-enrollment-errors-to-your-it-admin-android.md)
 ##### [Microsoft にエラーを送信する](send-logs-to-microsoft-android.md)
 
 ### オペレーティング システムの質問
