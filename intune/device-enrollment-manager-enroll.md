@@ -1,6 +1,6 @@
 ---
 title: デバイス登録マネージャー アカウントを使用してデバイスを登録する
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: デバイス登録マネージャー アカウントを使用してデバイスを Intune に登録します。
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 02/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a12d162b9877bbbc73ecbcc7bb2ed2f1e0095b9e
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 6bb3289bf2136506903d1fefe6c5170580a6fc11
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509814"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>デバイス登録マネージャー アカウントを使用してデバイスを Intune に登録する
 
@@ -32,12 +33,14 @@ ms.locfileid: "57228292"
 
 DEM ユーザー アカウントと DEM ユーザー アカウントを使用して登録されているデバイスには、次の制限があります。
 
+  - DEM アカウントのユーザーには、Intune ライセンスを割り当てる必要があります。
   - ポータル サイトからはワイプできません。 DEM ユーザー アカウントで登録されたデバイスは、Azure portal で Intune からワイプできます。
   - ポータル サイト アプリまたは Web サイトには、ローカルのデバイスのみが表示されます。
   - アプリ管理のための Apple ID 要件がユーザー単位になるため、DEM ユーザー アカウントは Apple ID ユーザー ライセンスで Apple Volume Purchase Program (VPP) アプリを利用することはできません。
   - デバイスでは、Apple ID デバイス ライセンスがある場合に VPP アプリをインストールすることができます。
   - Windows 10 1803+ 以降の例外と共にデバイスが条件付きアクセスをブロックされます
-  - DEM アカウントに登録されている各デバイスには、それぞれ独自の Intune デバイスのライセンスが必要です。
+  - DEM アカウントに登録されているすべてのデバイスを Intune で管理するには、適切にライセンスする必要があります。 ライセンスは、Intune ユーザー ライセンスまたは Intune デバイス ライセンスにすることができます。
+
 
 
 ## <a name="add-a-device-enrollment-manager"></a>デバイス登録マネージャーの追加

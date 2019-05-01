@@ -1,15 +1,16 @@
 ---
 title: Microsoft Intune の設計を作成する
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: この記事では、Microsoft Intune のクラウド専用の設計と実装の設計を作成する方法について説明します。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22af3d4de296d90a89bb3d812cab0e55983e786b
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 307895935e1cd6fe2489a4ee8ae03333ce97d55b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512721"
 ---
 # <a name="create-a-design"></a>設計の作成
 
@@ -110,6 +111,10 @@ Intune の設計は、[このガイドの他のセクション](planning-guide.m
 
 Intune には、スタンドアロンとハイブリッドの 2 種類の展開オプションがあります。 スタンドアロンとはクラウドで実行されている Intune サービスのことであり、ハイブリッドとは Intune と System Center Configuration Manager が統合されたものです。 このガイドは、基本的にスタンドアロン オプション用です。 [どちらのオプションがビジネス要件に合うかを判断する](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)には、こちらをご覧ください。
 
+> [!Important]
+>新規のハイブリッド MDM の顧客のオンボーディングは非推奨となりました。 詳細については、「[Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150)」 (ハイブリッド MDM から Azure での Intune に移行する) のブログ記事を参照してください。
+
+
 ## <a name="intune-tenant-location"></a>Intune テナントの場所
 
 世界的に展開している組織の場合、サービスに登録するときにテナントが存在する場所を確実に計画してください。 Intune のサブスクリプションに初めてサインアップするときに国を定義し、以下に示す世界中の地域にマップします。
@@ -133,7 +138,7 @@ Intune には、スタンドアロンとハイブリッドの 2 種類の展開�
 
 -   公開キー基盤 (PKI)
 
-以下ではこれらの一般的な外部依存関係について詳しく説明します。
+以下では、これらの一般的な外部依存関係について詳しく説明します。
 
 ### <a name="identity"></a>ID
 
@@ -399,11 +404,9 @@ Intune では、複数の方法でユーザーまたはデバイスにアプリ�
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して、コンプライアンス ポリシーのニーズを確認することができます。
 #### <a name="conditional-access-policies"></a>条件付きアクセス ポリシー
 
-条件付きアクセスは、準拠デバイスのみに電子メールやその他の企業リソースへのアクセスを許可するために使用します。 Intune は、Enterprise Mobility + Security (EMS) と連携して、企業リソースへのアクセスを制御します。 条件付きアクセスが必要かどうか、および何をセキュリティで保護する必要があるかを、決める必要があります。 条件付きアクセスの詳細については、[ここ](conditional-access.md)をご覧ください。
+条件付きアクセスは、準拠デバイスのみに電子メールやその他の企業リソースへのアクセスを許可するために使用します。 Intune は、Enterprise Mobility + Security (EMS) と連携して、企業リソースへのアクセスを制御します。 条件付きアクセスが必要かどうか、および何をセキュリティで保護する必要があるかを決定します。 条件付きアクセスの詳細については、[ここ](conditional-access.md)をご覧ください。
 
-オンライン アクセスについては、条件付きアクセス ポリシーの対象となるプラットフォームおよびユーザー グループを決めます。 また、Exchange Online またはオンプレミスの Exchange 用の Intune サービス間コネクタをインストールして構成する必要があるかどうかを判断します。 Intune サービス間コネクタをインストールして構成する方法の詳細については、以下をご覧ください。<!---these links are correct--->
-
--   [Exchange Online](exchange-service-connector-configure.md)
+オンライン アクセスについては、条件付きアクセス ポリシーによって対象とするプラットフォームおよびユーザー グループを決めます。 また、Exchange オンプレミス用の Intune コネクタをインストールまたは構成する必要があるかどうかを判断します。 
 
 -   [Exchange On-premises](exchange-connector-install.md)
 

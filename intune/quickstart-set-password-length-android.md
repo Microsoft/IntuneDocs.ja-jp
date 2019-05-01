@@ -1,12 +1,12 @@
 ---
-title: クイック スタート - Android デバイス用のパスワード コンプライアンス ポリシーを作成する
+title: クイック スタート - Android デバイス用のパスワード コンプライアンス ポリシー
 titleSuffix: Microsoft Intune
 description: このクイック スタートでは、Microsoft Intune を使用して Android デバイスに必要なパスワードの長さを設定します。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/15/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4a16272f32b8546e7e9bb12a22f16235ab49aed
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: e71a9a69cfc474f311bc6acd9e8f24c776a44476
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512771"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>クイック スタート:Android デバイス用のパスワード コンプライアンス ポリシーを作成する
 
@@ -32,7 +32,7 @@ ms.locfileid: "58799660"
 Intune デバイス コンプライアンス ポリシーでは、準拠しているものと見なされるためにデバイスが満たす必要のあるルールと設定を指定します。 コンプライアンス ポリシーを条件付きアクセスと一緒に使用することにより、会社のリソースへのアクセスを許可または阻止することができます。 コンプライアンス違反に対して、デバイス レポートを取得したり、是正措置を取ったりすることもできます。
 
 > [!IMPORTANT]
-> パスワードの設定だけでなく、従業員を保護する他のシステム セキュリティ設定も考慮する必要があります。 詳しくは、「[システム セキュリティ設定](compliance-policy-create-android-for-work.md#system-security-settings)」をご覧ください。
+> パスワードの設定だけでなく、従業員を保護する他のシステム セキュリティ設定も考慮する必要があります。 詳しくは、「[システム セキュリティ設定](compliance-policy-create-android-for-work.md)」をご覧ください。
 
 Intune サブスクリプションがない場合は、[無料試用版アカウントにサインアップ](free-trial-sign-up.md)します。
 

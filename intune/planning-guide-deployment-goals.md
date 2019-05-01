@@ -1,27 +1,29 @@
 ---
 title: 展開の目標、目的、課題を判別する
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: この記事は、Microsoft Intune のクラウド専用実装における展開の目標、目的、課題の判別に役立ちます。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 10598f4868a42b9736b6b33a6d9b5c4b4b308967
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cd1fd6198e71dd585d0216c0850c0140f5e71344
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189352"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512680"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>展開の目標、目的、課題を判別する
 
@@ -61,7 +63,7 @@ ms.locfileid: "52189352"
 
 -   **デバイス管理ソリューションの数を減らす**
 
-    -   **実装:** アプリとデバイスの企業データを保護するために、Microsoft Intune という単一のモバイル デバイス管理ソリューションに統合します。
+    -   **実装:** 単一のモバイル デバイス管理ソリューションへの集約: アプリおよびデバイスの企業データ保護のための Microsoft Intune。
 
 -   **セキュリティで保護された、Exchange および SharePoint Online へのアクセスを提供する**
 
@@ -69,7 +71,7 @@ ms.locfileid: "52189352"
 
 -   **企業データがモバイル デバイスで社外サービスに格納または転送されないようにする**
 
-    -   **実行:** Microsoft Office および LOB アプリに Intune アプリ保護ポリシーを適用します。
+    -   **実装:** Microsoft Office および基幹業務アプリに Intune アプリ保護ポリシーを適用します。
 
 -   **デバイスからの企業データのワイプ機能を提供する**
 
@@ -93,4 +95,4 @@ ms.locfileid: "52189352"
 
 ## <a name="next-steps"></a>次の手順
 
-これで、展開の目標、目的、および潜在的な課題を識別しました。次のセクション「[Intune ユース ケース シナリオの特定](planning-guide-scenarios.md)」に移動しましょう。
+これで、展開の目標、目的、および潜在的な課題を識別しました。次のセクションに移動しましょう: [Intune ユース ケース シナリオの特定](planning-guide-scenarios.md)

@@ -1,27 +1,28 @@
 ---
 title: Intune のテストと検証
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 環境内で Intune のクラウド専用のソリューションをテストおよび検証する方法について説明します。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4974dc3e86b26434cb633bd58e524d290573ecd0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: ba257ad6ebd7c8dbb2ca6ef805c896a4584ed41f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512869"
 ---
 # <a name="intune-testing-and-validation"></a>Intune のテストと検証
 
@@ -43,7 +44,7 @@ ms.locfileid: "57237556"
 
 -   **デバイス:** ワイプまたは工場出荷時の既定値へのリセットが可能なテスト デバイス。
 
--   **統合コンポーネント:** あらゆる統合コンポーネント (Certificate Connector、ホスト型 Exchange 用 Intune Service to Service Connector、Intune On-Premises Exchange Connector) を必要に応じてインストールし、構成する必要があります。
+-   **統合コンポーネント:** 必要に応じてすべての統合コンポーネント (証明書コネクタと Intune Exchange オンプレミス コネクタ) をインストールして構成する必要があります。
 
 予想外の問題に対処するために、設計を変更しなければならないことがあります。 また、設計変更はすべて、その理由と共に完全に記録してください。 たとえば、次のような変更が行われます。
 

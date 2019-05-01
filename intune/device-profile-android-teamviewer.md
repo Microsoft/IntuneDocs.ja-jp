@@ -2,24 +2,26 @@
 title: Microsoft Intune - Azure でデバイスをリモートで管理する | Microsoft Docs
 description: TeamViewer を使用するために必要なロールの表示、TeamViewer コネクタのインストール方法、Azure Portal で Microsoft Intune を使用してデバイスをリモートで管理する方法の段階的なガイダンス
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 06/12/2018
-ms.topic: article
+ms.date: 02/05/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7cb7c23e673c9e0c074f45991333fde9bfc8e930
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: dd2d9f0a0caf87eb75ba3a9cdc123e69425ceb8b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509733"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>TeamViewer を使用して、Intune デバイスをリモートで管理する
 
@@ -32,9 +34,9 @@ Intune で管理されているデバイスは、[TeamViewer](https://www.teamvi
 - Azure Portal 内の Intune 管理者には、次の [Intune ロール](role-based-access-control.md)が必要です。  
 
     - **リモート アシスタンスの更新**: 管理者に TeamViewer コネクタの設定の変更を許可します。
-    - **リモート アシスタンスの要求**: 管理者にすべてのユーザーに対して新しいリモート アシスタンス セッションを開始することを許可します。 このロールを持つユーザーは、スコープ内のどの Intune ロールにも制限されません。 また、スコープ内で Intune ロールが割り当てられたユーザーまたはデバイス グループも、リモート アシスタンスを要求することができます。 
+    - **リモート アシスタンスの要求**: すべてのユーザーに対して新しいリモート アシスタンス セッションを開始することを管理者に許可します。 このロールを持つユーザーは、スコープ内のどの Intune ロールにも制限されません。 また、スコープ内で Intune ロールが割り当てられたユーザーまたはデバイス グループも、リモート アシスタンスを要求することができます。 
 
-- サインイン資格情報を持つ [TeamViewer](https://www.teamviewer.com) アカウント
+- サインイン資格情報を持つ [TeamViewer](https://www.teamviewer.com) アカウント。 Intune との統合をサポートできるのは、一部の TeamViewer ライセンスだけです。 特定の TeamViewer ニーズの場合、「[TeamViewer Integration Partner:Microsoft Intune](https://www.teamviewer.com/integrations/microsoft-intune/)」 (TeamViewer 統合パートナー: Microsoft Intune) を参照してください。
 
 TeamViewer を使用すると、Intune コネクタ用 TeamViewer での TeamViewer セッションの作成、Active Directory データの読み取り、TeamViewer アカウント アクセス トークンの保存を許可することになります。
 

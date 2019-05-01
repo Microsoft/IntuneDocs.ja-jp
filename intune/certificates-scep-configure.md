@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdc0f02aa09edd05314d0d4a6a2abacc98c94bf2
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 6f1cdacf4b4d26e9db9b4090805f697927a399c5
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61510126"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune で SCEP 証明書を構成して使用する
 
@@ -36,9 +37,9 @@ ms.locfileid: "56742739"
 - **NDES サーバー**: Windows Server 2012 R2 以降で、ネットワーク デバイス登録サービス (NDES) サーバー ロールを設定します。 エンタープライズ CA も実行しているサーバー上では、Intune は NDES をサポートしていません。 NDES をホストするための Windows Server 2012 R2 の構成方法については、「[ネットワーク デバイス登録サービスのガイダンス](http://technet.microsoft.com/library/hh831498.aspx)」を参照してください。
 NDES サーバーは、エンタープライズ CA と同じフォレスト内のドメインに参加する必要があります。 別個のフォレスト、分離ネットワーク、内部ドメインで NDES サーバーを展開する方法については、「[ポリシー モジュールとネットワーク デバイス登録サービスの使用](https://technet.microsoft.com/library/dn473016.aspx)」を参照してください。
 
-- **Microsoft Intune Certificate Connector**: Intune 管理ポータルから **Certificate Connector** のインストーラー (**NDESConnectorSetup.exe**) をダウンロードします。 このインストーラーは、NDES の役割を使用してサーバー上で実行します。  
+- **Microsoft Intune Certificate Connector**: Intune ポータルで、**[デバイス構成]** > **[証明書コネクタ]** > **[追加]** の順に移動して、*SCEP 用コネクタをインストールする手順*に従います。 ポータルのダウンロード リンクを使用して、証明書コネクタのインストーラー **NDESConnectorSetup.exe** のダウンロードを開始します。  このインストーラーは、NDES の役割を使用してサーバー上で実行します。  
 
-  - NDES 証明書コネクタは、Federal Information Processing Standard (FIPS) モードもサポートしています。 FIPS は必須ではありませんが、有効になっている場合は、証明書の発行および失効を行うことができます。
+この NDES 証明書コネクタでは、Federal Information Processing Standard (FIPS) モードもサポートされています。 FIPS は必須ではありませんが、有効になっている場合は、証明書の発行および失効を行うことができます。
 
 - **Web アプリケーション プロキシ サーバー** (省略可能): Windows Server 2012 R2 以降を実行しているサーバーを、Web アプリケーション プロキシ (WAP) サーバーとして使用します。 この構成は:
   - デバイスはインターネット接続を使用して証明書を受信できます。
@@ -262,7 +263,7 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 
     クライアント認証証明書には次のプロパティが必要です。
 
-    - **拡張キー使用法**:この値は、**[クライアント認証]** を含む必要があります
+    - **拡張キー使用法**: この値は、**[クライアント認証]** を含む必要があります
 
     - **サブジェクト名**: この値は、証明書をインストールするサーバー (NDES サーバー) の DNS 名と同じにする必要があります
 
@@ -298,12 +299,13 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 > Microsoft Intune 証明書コネクタは、別の Windows サーバーにインストールする**必要があります**。 発行元の証明機関 (CA) にインストールすることはできません。 また、ネットワーク デバイス登録サービス (NDES) の役割と同じサーバー上にインストールする**必要があります**。
 
 1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、**[Intune]** をフィルターとして適用して、**[Microsoft Intune]** を選びます。
-2. **[デバイス構成]** > **[証明機関]** > **[追加]** の順に選択します
-3. コネクタ ファイルをダウンロードして保存します。 コネクタをインストールするサーバーからアクセスできる場所に保存します。
+2. **[デバイス構成]** > **[証明書のコネクタ]** > **[追加]** の順に選択します。
+3. SCEP ファイル用のコネクタをダウンロードして保存します。 コネクタをインストールするサーバーからアクセスできる場所に保存します。
 
-    ![ConnectorDownload](./media/certificates-download-connector.png)
+   ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
-4. ダウンロードが完了した後、ネットワーク デバイス登録サービス (NDES) の役割をホストしているサーバーに移動します。 次のことを行います。
+
+4. ダウンロードが完了した後、ご利用のネットワーク デバイス登録サービス (NDES) をホストしているサーバーに移動します。 次のことを行います。
 
     1. .NET Framework 4.5 がインストールされていることを確認します。NDES 証明書コネクタで必要となるからです。 .NET Framework 4.5 は、Windows Server 2012 R2 およびそれ以降の新しいバージョンには自動的に含められます。
     2. インストーラーを実行します (**NDESConnectorSetup.exe**)。 インストーラーは、NDES のポリシー モジュールと CRP Web サービスもインストールします。 CRP Web サービス CertificateRegistrationSvc は IIS のアプリケーションとして実行されます。
@@ -323,7 +325,7 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
     > [!TIP]
     > 証明書コネクタの UI を起動する前にウィザードを閉じた場合は、次のコマンドを実行して再び開くことができます。
     >
-    > <インストール パス>\NDESConnectorUI\NDESConnectorUI.exe
+    > <install_Path>\NDESConnectorUI\NDESConnectorUI.exe
 
 7. **証明書コネクタ** UI で:
 
@@ -363,8 +365,8 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 5. **[プロファイルの種類]** ドロップダウン リストで、**[SCEP 証明書]** を選択します。
 6. 次の設定を入力します。
 
-   - **[証明書の種類]**: ユーザー証明書の **[ユーザー]** を選択します。 キオスクなどのユーザーのないデバイスの場合は、**[デバイス]** を選択します。 **[デバイス]** 証明書は、次のプラットフォームで使用できます。  
-     - Android エンタープライズ
+   - **[証明書の種類]**: ユーザー証明書の **[ユーザー]** を選択します。 **[ユーザー]** 証明書の種類では、証明書のサブジェクトと SAN 内にユーザー属性とデバイス属性の両方を含めることができます。  キオスクのようなユーザーなしデバイスなどのシナリオの場合、または Windows デバイスの場合は、**[デバイス]** を選択します。これによって、ローカル コンピューターの証明書ストアに証明書が配置されます。 **[デバイス]** 証明書では、証明書のサブジェクトと SAN にデバイスの属性を含めることができます。  **[デバイス]** 証明書は、次のプラットフォームで使用できます。  
+     - Android エンタープライズ - 仕事用プロファイル
      - iOS
      - macOS
      - Windows 8.1 以降

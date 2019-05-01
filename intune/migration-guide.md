@@ -1,26 +1,28 @@
 ---
 title: Intune モバイル デバイス管理の移行ガイド
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: このガイドは、サードパーティの MDM プロバイダーからの Microsoft Intune への移行に関連したさまざまな詳細情報を説明します。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: bde445601b6fe3612a1a3d8bcab4f6996a997228
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e293140838cd772dea4cdf810623cfe92fa0fe9e
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512975"
 ---
 # <a name="intune-migration-guide"></a>Intune 移行ガイド
 
@@ -34,7 +36,7 @@ Microsoft Intune への移行を成功させるには、まず現在のモバイ
 
 このガイドは移行を 2 つのフェーズに分けます。各フェーズには、Intune MDM への移行プロセス全体を理解するうえで役立つタスク、戦略、および戦術的ガイダンスが含まれます。
 
--   [フェーズ 1: モバイル デバイス管理の Intune を準備する](migration-guide-prepare.md)
+-   [フェーズ 1: モバイル デバイス管理のために Intune を準備する](migration-guide-prepare.md)
 
     -   [MDM 移行要件を評価する](migration-guide-prepare.md#assess-mdm-requirements)
 
@@ -70,4 +72,4 @@ Microsoft Intune への移行を成功させるには、まず現在のモバイ
 
 ## <a name="next-steps"></a>次の手順
 
-[フェーズ 1: モバイル デバイス管理の Intune を準備する](migration-guide-prepare.md)
+[フェーズ 1: モバイル デバイス管理のために Intune を準備する](migration-guide-prepare.md)
