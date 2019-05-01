@@ -1,59 +1,62 @@
 ---
-title: Microsoft Intune のオンプレミス Exchange Connector をセットアップする | Microsoft Intune
+title: Microsoft Intune のオンプレミス Exchange Connector をセットアップする
+titleSuffix: Microsoft Intune
 description: Intune の登録と Exchange Active Sync (EAS) に基づいて、Exchange メールボックスへのデバイス アクセスを管理するには、オンプレミスの Exchange Connector を使います。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
-ms.topic: article
+ms.date: 03/22/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
-ms.reviewer: chrisgre
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4481645781e21da4f433f5feae1d685efb73d412
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 3724f2494dd4e4fe7939a9be87a30e1bc5bfbf27
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55841421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513583"
 ---
-# <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Microsoft Intune Azure で Intune のオンプレミス Exchange コネクタをセットアップする
+# <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Microsoft Intune で Intune のオンプレミス Exchange コネクタを設定する
+この記事の情報は、Intune 用の Exchange Active Sync オンプレミス コネクタをインストールして監視するのに役立ちます。  Intune オンプレミス Exchange コネクタを[条件付きアクセス ポリシーと一緒に使用して、ご利用の Exchange オンプレミス メールボックスへのアクセスを許可またはブロックします](conditional-access-exchange-create.md)。 
 
-オンプレミス Exchange Server 環境では、Intune の条件付きアクセスを利用し、Exchange のオンプレミス メールボックスへのアクセスを許可または禁止できます。 Exchange Active Sync オンプレミス コネクタを使用し、Exchange 組織に Intune を接続し、デバイスのコンプライアンス ポリシーと共に Intune の条件付きアクセスを設定します。 次に、デバイスが Exchange に接続しようとすると、Intune はそのデバイスが Intune に登録されているか、基準に準拠しているか判断します。 Intune に登録されているデバイスを判断するために、オンプレミス Exchange コネクタは Exchange Server の Exchange Active Sync (EAS) レコードを Intune レコードにマッピングします。 このしくみについては、「[Intune での条件付きアクセスの一般的な使用方法](conditional-access-intune-common-ways-use.md)」を参照してください。
+デバイスによって、ご利用のオンプレミス Exchange へのアクセスが試みられると、Exchange コネクタでは Exchange Serve 内の Exchange Active Sync (EAS) レコードが Intune レコードに割り当てられて、デバイスが Intune に登録されているかどうか、およびご利用のデバイス コンプライアンス ポリシーに準拠しているかどうかが確認されます。 ご利用の条件付きアクセス ポリシーに応じて、デバイスからのアクセスは許可またはブロックされます。 詳細については、「[Intune での条件付きアクセスの一般的な使用方法](conditional-access-intune-common-ways-use.md)」を参照してください。
 
-> [!IMPORTANT]
-> Intune は、サブスクリプションあたり複数のオンプレミス Exchange コネクタに対応できるようになりました。 オンプレミス Exchange 組織が複数になる場合、Exchange 組織別にコネクタを設定できます。
+Intune では、サブスクリプションごとに複数のオンプレミス Exchange コネクタをインストールすることがサポートされています。 オンプレミス Exchange 組織が複数ある場合、それぞれにコネクタを個別に設定できます。 ただし、個々の Exchange 組織用にインストールできるコネクタは 1 つだけです。 
 
-オンプレミス Exchange Server と通信するために Microsoft Intune を有効にする接続を設定するには、概して次のような手順を行います。
+Intune とオンプレミス Exchange Server が通信できるようにするための接続を設定する一般的な手順を次に示します。
 
-1.  Intune オンプレミス Exchange コネクタを Azure Portal からダウンロードします。
-2.  オンプレミス Exchange 組織のコンピューターに Exchange コネクタをインストールし、構成します。
-3.  Exchange 接続を確認します。
-4. Intune と接続させる Exchange 組織ごとに以上の手順を繰り返します。
+1. Intune ポータルから、Intune のオンプレミス Exchange コネクタをダウンロードします。
+2. オンプレミス Exchange 組織のコンピューターに Exchange コネクタをインストールし、構成します。
+3. Exchange 接続を確認します。
+4. Intune と接続させる追加の Exchange 組織ごとに以上の手順を繰り返します。
 
 ## <a name="intune-on-premises-exchange-connector-requirements"></a>Intune オンプレミス Exchange コネクタの要件
-以下の表に、オンプレミス Exchange コネクタをインストールするコンピューターの要件を示します。
+コネクタが Exchange に接続するために使用できる Intune ライセンスを持つアカウントが必要です。 アカウントは、コネクタをインストールするときに指定します。  
 
+以下の表に、オンプレミス Exchange コネクタをインストールするコンピューターの要件を示します。  
 
-|            要件             |                                                                                                                                                                                                        詳細情報                                                                                                                                                                                                        |
-|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|         Operating systems          |                                                               Intune は、Windows Server 2008 SP2 64 ビット、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2、または Windows Server 2016 の任意のエディションを実行しているコンピューター上のオンプレミス Exchange コネクタをサポートします。<br /><br />Server Core インストールでは、コネクタはサポートされません。                                                                |
-|         Microsoft Exchange         |                                                                           オンプレミス コネクタには、Microsoft Exchange 2010 SP3 以降または従来の Exchange Online Dedicated が必要です。 Exchange Online Dedicated 環境が<strong>新しい</strong>構成か<strong>従来の</strong>構成かを確認するには、アカウント マネージャーに問い合わせてください。                                                                           |
-| モバイル デバイス管理機関 |                                                                                                                              [モバイル デバイス管理機関を Intune に設定します](mdm-authority-set.md)。                                                                                                                               |
-|              ハードウェア              |                                                                                                                                                     コネクタをインストールするコンピューターには、1.6 GHz の CPU と 2 GB の RAM と 10 GB の空きディスク容量が必要です。                                                                                                                                                      |
-|  Active Directory の同期  |                                                                                      コネクタを使用して Intune を Exchange Server に接続するには、[Active Directory の同期をセットアップ](users-add.md)して、ローカル ユーザーとセキュリティ グループが Azure Active Directory のインスタンスと同期されるようにする必要があります。                                                                                      |
-|        その他のソフトウェア         |                                                                                                                                           コネクタをホストするコンピューターに、Microsoft .NET Framework 4.5 および Windows PowerShell 2.0 の完全インストールがインストールされている必要があります。                                                                                                                                           |
-|              ネットワーク               | コネクタをインストールするコンピューターは、Exchange Server をホストするドメインと信頼関係があるドメインに参加している必要があります。<br /><br />コンピューターは、ポート 80 と 443 でファイアウォールとプロキシ サーバー経由で Intune サービスにアクセスできるように構成する必要があります。 Intune によって使用されるドメインには、manage.microsoft.com、&#42;manage.microsoft.com、および &#42;.manage.microsoft.com が含まれます。 |
+|  要件  |   詳細情報     |
+|---------------|------------------------|
+|  Operating systems        | Intune は、Windows Server 2008 SP2 64 ビット、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2、または Windows Server 2016 の任意のエディションを実行しているコンピューター上のオンプレミス Exchange コネクタをサポートします。<br /><br />Server Core インストールでは、コネクタはサポートされません。  |
+| Microsoft Exchange          | オンプレミス コネクタには、Microsoft Exchange 2010 SP3 以降または従来の Exchange Online Dedicated が必要です。 Exchange Online Dedicated 環境が<strong>新しい</strong>構成か<strong>従来の</strong>構成かを確認するには、アカウント マネージャーに問い合わせてください。 |
+| モバイル デバイス管理機関           | [モバイル デバイス管理機関を Intune に設定します](mdm-authority-set.md)。 |
+| ハードウェア              | コネクタをインストールするコンピューターには、1.6 GHz の CPU と 2 GB の RAM と 10 GB の空きディスク容量が必要です。 |
+|  Active Directory の同期             | コネクタを使用して Intune を Exchange Server に接続するには、[Active Directory の同期をセットアップ](users-add.md)して、ローカル ユーザーとセキュリティ グループが Azure Active Directory のインスタンスと同期されるようにする必要があります。 |
+| その他のソフトウェア         | コネクタをホストするコンピューターに、Microsoft .NET Framework 4.5 および Windows PowerShell 2.0 の完全インストールがインストールされている必要があります。 |
+| ネットワーク               | コネクタをインストールするコンピューターは、Exchange Server をホストするドメインと信頼関係があるドメインに参加している必要があります。<br /><br />コンピューターは、ポート 80 と 443 でファイアウォールとプロキシ サーバー経由で Intune サービスにアクセスできるように構成する必要があります。 Intune によって使用されるドメインには、manage.microsoft.com、&#42;manage.microsoft.com、および &#42;.manage.microsoft.com が含まれます。 |
 
 ### <a name="exchange-cmdlet-requirements"></a>Exchange コマンドレットの要件
 
-オンプレミス Exchange コネクタが使用する Active Directory ユーザー アカウントを作成する必要があります。 アカウントには、次の必須の Windows PowerShell Exchange コマンドレットを実行するための権限が必要です。
+オンプレミス Exchange コネクタが使用する Active Directory ユーザー アカウントを作成します。 アカウントには、次の必須の Windows PowerShell Exchange コマンドレットを実行するための権限が必要です。
 
 
  -   Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
@@ -73,13 +76,11 @@ ms.locfileid: "55841421"
 
 1. オンプレミス Exchange コネクタのサポートされている Windows Server オペレーティング システムで、Exchange Server を使用するライセンスを持つオンプレミス Exchange Server 内の管理者であるユーザー アカウントを使用して、[Azure portal](https://portal.azure.com) を開きサインインします。
 
-2. 左側のメニューから **[すべてのサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
+2. **[Intune]** > **[Exchange へのアクセス]** の順に移動します。  
 
-3. **[Intune]** を選択し、Intune ダッシュボードが開いたら、**[オンプレミス アクセス]** を選択します。
+3. **[セットアップ]** で、**[Exchange ActiveSync のオンプレミス コネクタ]** を選択してから **[追加]** を選択します。
 
-4. **[セットアップ]** の下で **[Exchange ActiveSync のコネクタ]** を選択し、**[オンプレミス コネクタをダウンロードします]** を選択します。
-
-5.  オンプレミス Exchange コネクタは、開いたり保存したりできる圧縮 (.zip) フォルダー内にあります。 **[ファイルのダウンロード]** ダイアログ ボックスで **[保存]** を選んで、圧縮フォルダーを安全な場所に保存します。
+4. **[コネクタの追加]** ページで、**[オンプレミス コネクタをダウンロードします]** を選択します。 オンプレミス Exchange コネクタは、開いたり保存したりできる圧縮 (.zip) フォルダー内にあります。 **[ファイルのダウンロード]** ダイアログ ボックスで **[保存]** を選んで、圧縮フォルダーを安全な場所に保存します。
 
     > [!IMPORTANT]
     > オンプレミス Exchange コネクタ フォルダー内のファイルの名前を変更したり、ファイルを移動したりしないでください。 フォルダーの内容を移動したり、名前を変更したりすると、Exchange コネクタのインストールが失敗します。
@@ -117,9 +118,9 @@ ms.locfileid: "55841421"
 
        4. **[OK]** を選びます。
 
-4. **[ユーザー (ドメイン\ユーザー)]** フィールドと **[パスワード]** フィールドに、Exchange Server への接続に必要な資格情報を入力します。
+4. **[ユーザー (ドメイン\ユーザー)]** フィールドと **[パスワード]** フィールドに、Exchange Server への接続に必要な資格情報を入力します。 指定したアカウントには Intune を使用するためのライセンスが含まれている必要があります。 
 
-5. ユーザーの Exchange Server メールボックスに通知を送信するために必要な資格情報を指定します。 このユーザーは通知専用でもかまいません。 通知ユーザーには、メールで通知を送信できるように Exchange メールボックスが必要です。 これらの通知は、Intune で条件付きアクセス ポリシーにより構成できます。  
+5. ユーザーの Exchange Server メールボックスに通知を送信するために必要な資格情報を指定します。 このユーザーは通知専用でもかまいません。 通知ユーザーには、メールで通知を送信するための Exchange メールボックスが必要です。 これらの通知は、Intune で条件付きアクセス ポリシーにより構成できます。  
 
        Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
 
@@ -137,42 +138,62 @@ Exchange コネクタが接続を設定すると、Exchange で管理されて�
 > [!NOTE]
 > オンプレミス Exchange コネクタをインストールしているとき、ある時点で Exchange 接続を削除した場合、インストールされていたコンピューターからオンプレミス Exchange コネクタをアンインストールする必要があります。
 
+
+
 ## <a name="install-connectors-for-multiple-exchange-organizations"></a>複数の Exchange 組織にコネクタをインストールする
-Intune は、サブスクリプションあたり複数のオンプレミス Exchange コネクタに対応できます。 Exchange 組織が複数あるテナントには、組織ごとにコネクタを 1 つ設定できます。 .zip フォルダーを 1 回ダウンロードし、Exchange 組織ごとに前セクションの手順を行い、組織のサーバーでセットアップ プログラムを抽出し、実行してください。
+Intune は、サブスクリプションあたり複数のオンプレミス Exchange コネクタに対応できます。 Exchange 組織が複数あるテナントの場合、Exchange 組織ごとにコネクタを設定できますが、1 つの組織に対して設定できるコネクタは 1 つのみとなります。 
+
+複数の Exchange 組織に接続するためにコネクタを複数インストールする場合は、.zip フォルダーを 1 回ダウンロードしてから、インストールする各コネクタに対してその同じダウンロードを再利用します。 追加するコネクタごとに、前セクションの手順に従って、Exchange 組織内のサーバー上で設定プログラムを抽出し、実行してください。
 
 後続のセクションで説明する高可用性、監視、手動同期といった機能は、Intune に接続している Exchange 組織ごとにサポートされています。
 
 ## <a name="on-premises-exchange-connector-high-availability-support"></a>オンプレミスの Exchange Connector の高可用性のサポート 
-Exchange Connector によって、指定の CAS で Exchange への接続が作成された後、コネクタで別の CAS を検出できます。 メインの CAS が利用できなくなった場合、再度利用可能になるまで、コネクタが別の CAS (ある場合) にフェールオーバーします。 この機能は、既定で有効になっています。 この機能を無効にするには、次の手順に従います。
-1. Exchange Connector がインストールされているサーバーで、%*ProgramData*%\Microsoft\Windows Intune Exchange Connector にアクセスします。 
+オンプレミス Exchange コネクタの高可用性とは、コネクタで使用されている Exchange クライアント アクセス サーバー (CAS) が利用できなくなった場合に、その Exchange 組織用の別の CAS を使用するようにコネクタで切り替えを行えることを意味します。 Exchange コネクタ自体では、高可用性はサポートされていません。 コネクタが失敗した場合、自動フェールオーバーは行われませんので、[新しいコネクタをインストール](#reinstall-the-on-premises-exchange-connector)することで、問題のコネクタを交換する必要があります。 
+
+フェールオーバーを達成するために、コネクタでは指定された CAS を使用して Exchange への接続に成功すると、その Exchange 組織用の他の CAS が検出されます。 他の CAS に関する知識を活用してコネクタは、プライマリ CAS が利用できるようになるまで、別の CAS (利用可能な場合) にフェールオーバーすることができます。 既定では、他の CAS の検出は有効になっています。 フェールオーバーを無効にするには、次の手順に従います。  
+1. Exchange コネクタがインストールされているサーバー上で、%*ProgramData*%\Microsoft\Windows Intune Exchange Connector にアクセスします。 
 2. テキスト エディターを使用して、**OnPremisesExchangeConnectorServiceConfiguration.xml** を開きます。
 3. &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; を &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; に変更して、機能を無効にします。    
+ 
 
+## <a name="reinstall-the-on-premises-exchange-connector"></a>オンプレミス Exchange コネクタの再インストール
+Exchange コネクタの再インストールが必要な場合があります。 各 Exchange 組織に対して接続がサポートされるコネクタは 1 つだけであるため、組織用に 2 つ目のコネクタをインストールすると、元のコネクタは、インストールした新しいコネクタに置き換えられます。
+
+1. 「[Intune のオンプレミス Exchange コネクタのインストールと構成](#install-and-configure-the-intune-on-premises-exchange-connector)」の手順を使用して、新しいコネクタのインストールを開始します。 
+2. プロンプトが表示されたら、**[置換]** を選択して新しいコネクタをインストールします。  
+   ![コネクタを置換するかどうかを確認する構成プロンプト](./media/exchange-connector-install/prompt-to-replace.png)
+
+3. 引き続き前述の手順を使用して、Intune にもう一度ログインします。
+4. 最後の画面が表示されたら、**[閉じる]** を選択してインストールを完了します。  
+   ![設定を完了する](./media/exchange-connector-install/successful-reinstall.png)
+ 
 
 ## <a name="monitor-the-exchange-connector-activity"></a>Exchange Connector アクティビティを監視する
 
-Exchange コネクタを正常に構成したら、接続のステータスと前回の成功した同期の試行を表示できます。 Exchange コネクタ接続を確認するには:
+Exchange コネクタの構成が正常に行えたら、接続の状態と前回成功した同期の試行を表示できます。 Exchange コネクタの接続を確認するには:
 
-1. Intune ダッシュボードで、**[オンプレミス アクセス]** を選択します。
-2. **[セットアップ]** の下で **[Exchange ActiveSync のコネクタ]** を選択し、各 Exchange コネクタの接続状態を確認します。
+1. Intune ダッシュ ボードで、**[Exchange へのアクセス]** を選択します。
+2. **[Exchange On-Premises のアクセス]** を選択して、Exchange コネクタごとに接続状態を確認します。
 
 また、前回いつ同期が完了したかも確認することができます。
+--> 
 
 ### <a name="system-center-operations-manager-management-pack"></a>System Center Operations Manager 管理パック
 
-Intune 1710 リリース以降では、[Exchange Connector および Intune の Operations Manager 管理パック](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True)を使用できます。 問題のトラブルシューティングを行う必要がある場合、これにより別の方法で Exchange Connector を監視できます。
+Intune 1710 リリース以降では、[Exchange Connector および Intune の Operations Manager 管理パック](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True)を使用できます。 管理パックを使用すれば、問題のトラブルシューティングを行う必要がある場合にさまざまな方法で Exchange コネクタを監視できます。
 
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>クイック同期または完全同期を手動で強制する
-オンプレミス Exchange コネクタは、EAS と Intune デバイス レコードを定期的に自動同期します。 デバイスのコンプライアンス状態が変わった場合、自動同期プロセスによって定期的にレコードが更新され、デバイス アクセスを適宜、禁止または許可できます。
+オンプレミス Exchange コネクタは、EAS と Intune デバイス レコードを定期的に自動同期します。 デバイスのコンプライアンス状態が変わった場合、自動同期プロセスによって定期的にレコードが更新され、デバイス アクセスをブロックまたは許可できます。
 
    - **クイック同期**は定期的に、1 日に数回実行されます。 クイック同期では、Intune のライセンスが与えられ、オンプレミス Exchange に条件付きでアクセスするユーザーのデバイスに関する情報が前回の同期以降に変更された部分だけ取得されます。
 
    - **完全同期**は既定で 1 日に 1 回実行されます。 完全同期では、Intune のライセンスが与えられ、オンプレミス Exchange に条件付きでアクセスするすべてのユーザーのデバイスに関する情報が取得されます。 完全同期の場合、Exchange サーバーの情報も取得され、Azure Portal の Intune によって指定された構成が Exchange サーバーで更新されます。 
 
+
 Intune ダッシュボードで **[クイック同期]** または **[完全同期]** オプションを使用し、同期を実行するようにコネクタに強制できます。手順は次のようになります。
 
-   1. Intune ダッシュボードで、**[オンプレミス アクセス]** を選択します。
-   2. **[セットアップ]** で **[Exchange Active Sync のコネクタ]** を選択します。
+   1. Intune ダッシュ ボードで、**[Exchange へのアクセス]** を選択します。
+   2. **[Exchange On-Premises のアクセス]** を選択します。
    3. 同期するコネクタを選択し、**[クイック同期]** または **[完全同期]** を選択します。
 
 ## <a name="next-steps"></a>次の手順

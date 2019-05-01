@@ -5,10 +5,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 69cc0d732c9dc850d55acedf4e6dbae0f43f350a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 21d773b0ab2227f59f1ee0b2091d39b7c9799721
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506816"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM とアプリの保護に関してよく寄せられる質問
 
@@ -62,7 +63,7 @@ Intune アプリ保護ポリシーでは、[Intune アプリ SDK](/intune/app-sd
 
 - エンドユーザーに、Azure Active Directory アカウントに割り当てられた Microsoft Intune のライセンスが必要です。 Intune ライセンスをエンドユーザーに割り当てる方法については、「[Intune のライセンスを管理する](/intune/licenses-assign)」を参照してください。
 
-- エンドユーザーは、アプリ保護ポリシーの対象となるセキュリティ グループに属している必要があります。 同一のアプリ保護ポリシーでは、使用中の特定のアプリを対象とする必要があります。 アプリ保護ポリシーは、[Azure Portal](https://portal.azure.com) の Intune コンソールで作成して展開できます。 セキュリティ グループは、現在 [Office ポータル](https://portal.office.com)で作成できます。
+- エンドユーザーは、アプリ保護ポリシーの対象となるセキュリティ グループに属している必要があります。 同一のアプリ保護ポリシーでは、使用中の特定のアプリを対象とする必要があります。 アプリ保護ポリシーは、[Azure Portal](https://portal.azure.com) の Intune コンソールで作成して展開できます。 セキュリティ グループは現在のところ、[Microsoft 365 管理センター](https://admin.microsoft.com)で作成できます。
 
 - エンドユーザーは、AAD アカウントを使用してアプリにサインインする必要があります。
 
@@ -77,7 +78,7 @@ Intune アプリ保護ポリシーでは、[Intune アプリ SDK](/intune/app-sd
 
 **[Word、Excel、PowerPoint](https://products.office.com/business/office) のアプリを使用するための追加要件は何ですか。**
 
-- エンドユーザーに、Azure Active Directory アカウントにリンクされた [Office 365 Business または Office 365 Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) のライセンスが必要です。 サブスクリプションには、モバイル デバイスの Office アプリが含まれている必要があります。また、[OneDrive for Business](https://onedrive.live.com/about/business/) のクラウド ストレージ アカウントを含めることも可能です。 Office 365 のライセンスは、[Office ポータル](https://portal.office.com)でこちらの[手順](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)を実行して割り当てることができます。
+- エンドユーザーに、Azure Active Directory アカウントにリンクされた [Office 365 Business または Office 365 Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) のライセンスが必要です。 サブスクリプションには、モバイル デバイスの Office アプリが含まれている必要があります。また、[OneDrive for Business](https://onedrive.live.com/about/business/) のクラウド ストレージ アカウントを含めることも可能です。 Office 365 ライセンスは、[Microsoft 365 管理センター](https://admin.microsoft.com)で割り当てることができます。[こちら](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)の手順に従ってください。
 
 - エンド ユーザーは、[名前を付けて保存することを禁止] アプリケーション保護ポリシー設定の機能として、詳細保存を使用して管理対象の場所を構成しておく必要があります。 たとえば、管理対象の場所が OneDrive の場合、[OneDrive](https://onedrive.live.com/about/) アプリは、エンド ユーザーの Word アプリ、Excel アプリ、または PowerPoint アプリ内で構成される必要があります。
 
@@ -170,6 +171,27 @@ Intune APP SDK は、ファーストパーティとサードパーティの両�
 
 さまざまな種類の設定を扱う場合、優先順位は、アプリのバージョン要件、Android オペレーティング システムのバージョン要件、Android パッチのバージョン要件となります。 その後、同じ順序ですべての種類の設定の警告が確認されます。
 
+**Intune App Protection ポリシーは、Google の Android デバイス向け SafetyNet 構成証明に合格することをエンド ユーザー デバイスに要求する機能を管理者に与えます。新しい SafetyNet 構成証明の結果がサービスに送信される頻度は?** <br><br> Google Play サービスに関する新しい決定は、Intune サービスによって決められた間隔で IT 管理者に報告されます。 サービス呼び出しの頻度は負荷に基づいて調整されます。そのため、この値は内部で保守管理され、構成できません。 Google SafetyNet 構成証明設定に対して IT 管理者が構成したアクションは、条件付き起動時に、Intune サービスに最後に報告された結果に基づいて行われます。 データがない場合、他の条件付き起動チェックで不合格にならなければアクセスが許可されます。構成証明結果を決定するための Google Play Service の "ラウンドトリップ" がバックエンドで開始し、デバイスが不合格の場合、ユーザーに非同期で指示が求められます。 データが古い場合、最後に報告された結果に基づいてアクセスが拒否または許可されます。同様に、構成証明結果を決定するための Google Play Service の "ラウンドトリップ" が開始し、デバイスが不合格の場合、ユーザーに非同期で指示が求められます。
+
+**Intune App Protection ポリシーは、Google の Android デバイス向けアプリの確認 API 経由で信号を送信することをエンド ユーザー デバイスに要求する機能を管理者に与えます。これに起因してアクセスが禁止されることがないように、エンド ユーザーがアプリ スキャンをオンにする方法は?**<br><br> この方法はデバイスごとに若干異なります。 一般的なプロセスでは、Google Play Store に移動し、**[My apps & games]\(アプリとゲーム\)** をアクセスし、最後のアプリ スキャンの結果をクリックします。クリックすると、Play Protect メニューが表示されます。 **[Scan device for security threats]\(端末をスキャンしてセキュリティ上の脅威を確認\)** のトグルが確実にオンになっているようにします。
+
+**Google の SafetyNet 構成証明 API は実際に Android デバイスの何を確認しますか?"基本的な整合性のチェック" と "基本的な整合性と認定デバイスのチェック" の間で構成可能値にはどのような違いがありますか?** <br><br>
+Intune は未登録のデバイスに対する既存のルート検出チェックに追加する目的で Google Play Protect SafetyNet API を活用します。 Google は、ルート化されたデバイスでアプリを実行させない場合に採用するよう、Android アプリ向けにこの API セットを開発し、保守管理しています。 Android Pay アプリなどでこれを組み込んでいます。 Google は行われるルート検出チェックの全体を公表しませんが、デバイスをルート化しているユーザーを検出することがこのような API に期待されます。 そのようなユーザーのアクセスをブロックしたり、ポリシーが有効になっているアプリからそのようなユーザーの企業アカウントを消去したりできます。 "基本的な整合性のチェック" からは、デバイスの全体的な整合性がわかります。 ルート化されたデバイス、エミュレーター、仮想デバイス、改ざんの兆候があるデバイスは基本的な整合性のチェックで不合格になります。 "基本的な整合性と認定デバイスのチェック" からは、デバイスと Google のサービスとの互換性がわかります。 Google に認められた、改造されていないデバイスのみがこのチェックに合格します。 不合格になるデバイス:
+* 基本的な整合性のチェックで不合格になるデバイス
+* ブートローダーがロックされていないデバイス
+* カスタム システム イメージ/ROM が含まれるデバイス
+* メーカーが Google 認定に申し込まなかった、あるいは合格しなかったデバイス 
+* Android オープン ソース プログラムのソース ファイルから直接構築されたシステム イメージを含むデバイス
+* ベータ版/開発者プレビューのシステム イメージを含むデバイス
+
+技術的な詳細については、「[Google's documentation on the SafetyNet Attestation](https://developer.android.com/training/safetynet/attestation)」 (SafetyNet 構成証明に関する Google の文書) を参照してください。
+
+**Android デバイス向け Intune App Protection Policy を作成するとき、条件付き起動セクションに似たようなチェックが 2 つあります。"SafetyNet デバイスの構成証明" 設定を要求すべきですか。それとも "脱獄またはルート化されたデバイス" 設定を要求すべきですか。** <br><br>
+Google Play Protect の SafetyNet API チェックでは、エンド ユーザーがオンラインになっていることが要求されます。少なくとも構成証明結果を決定するための "ラウンドトリップ" の実行中はオンラインになっている必要があります。 エンド ユーザーがオフラインになっている場合でも、IT 管理者は "脱獄またはルート化されたデバイス" 設定から結果を適用できます。 しかしながら、エンド ユーザーがオフラインになっている時間が長すぎると、"オフラインの猶予期間" 値が作動し、タイマー値に到達すると、ネットワーク アクセスが利用できるようになるまで、職場または学校のデータへのアクセスがすべて遮断されます。 両方の設定をオンにすると、階層的な手法でエンド ユーザー デバイスの正常性が維持されます。これは、エンド ユーザーがモバイルで職場または学校のデータにアクセスするときに重要です。 
+
+**Google Play Protect API を活用するアプリ保護ポリシー設定を利用するには、Google Play 開発者サービスが機能する必要があります。エンド ユーザーがいる場所で Google Play 開発者サービスが許可されない場合はどうなりますか。**<br><br>
+"SafetyNet デバイスの構成証明" 設定と "アプリの脅威のスキャン" 設定の両方で、Google が決定したバージョンの Google Play 開発者サービスが正しく機能する必要があります。 これらはセキュリティの領域に属する設定であるため、エンド ユーザーはこれらの設定の対象となっているとき、Google Play 開発者サービスのバージョンが適切でない、あるいは Google Play 開発者サービスにアクセスできない場合はブロックされます。 
+
 ## <a name="app-experience-on-ios"></a>iOS でのアプリのエクスペリエンス
 **フィンガープリントや顔をデバイスに追加したりデバイスから削除したりすると、何が起こりますか。**
 Intune アプリ保護ポリシーでは、アプリへのアクセスを制御して、Intune のライセンスがあるユーザーのみを許可することができます。 アプリへのアクセスを制御する方法の 1 つは、Apple の Touch ID または Face ID のいずれかをサポートされているデバイス上で要求することです。 Intune は、デバイスの生体認証データベースに何らかの変更が加えられると、次に非アクティブ状態のタイムアウト値に達したときにユーザーに PIN の入力を求めるように実装されています。 フィンガープリントや顔の追加や削除も、生体認証データの変更に含まれます。 Intune ユーザーが PIN を設定していない場合は、Intune PIN を設定するよう求められます。
@@ -184,20 +206,13 @@ Intune アプリ保護ポリシーでは、デバイスを管理せずに iOS �
 
 さまざまな種類の設定を扱う場合、優先順位は、Intune App SDK のバージョン要件、アプリのバージョン要件、iOS オペレーティング システムのバージョン要件となります。 その後、同じ順序ですべての種類の設定の警告が確認されます。 ブロックが重要である場合は、Intune 製品チームのガイダンスのみに従って、Intune App SDK のバージョン要件を構成することをお勧めします。
 
-## <a name="app-protection-policies---policy-refresh"></a>アプリ保護ポリシー - ポリシーの更新
-- アプリは、30 分ごとに App Service にチェックインします。
-- 30 分間のしきい値は、タイマーに基づいています。
-    - 30 分後にアプリがアクティブだった場合は、30 分後にチェックインします。
-    - 30 分後にアプリがスリープ状態だった場合は、次の目標でチェックインします。
-- ユーザーにポリシーが割り当てられていない場合は、8 時間ごとにチェックインが発生します。
-- Intune のライセンスが割り当てられていない場合は、24 時間ごとにチェックインが発生します。
-
 
 ## <a name="see-also"></a>関連項目
 - [Intune の計画を実装する](planning-guide-onboarding.md)
 - [Intune のテストと検証](planning-guide-test-validation.md)
 - [Microsoft Intune での Android モバイル アプリ管理ポリシーの設定](app-protection-policy-settings-android.md)
 - [iOS モバイル アプリ管理ポリシーの設定](app-protection-policy-settings-ios.md)
-- [アプリ保護ポリシーを確認する](app-protection-policies-validate.md)
+- [アプリ保護ポリシー - ポリシーの更新](app-protection-policy-delivery.md)
+- [アプリ保護ポリシーを確認する](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)
 - [デバイス登録なしで管理対象アプリ用アプリ構成ポリシーを追加する](app-configuration-policies-managed-app.md)
 - [Microsoft Intune のサポートを受ける方法](get-support.md)

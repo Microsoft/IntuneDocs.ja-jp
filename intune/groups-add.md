@@ -1,6 +1,6 @@
 ---
 title: ユーザーとデバイスを整理するためのグループを追加する
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: 地理、部門、またはハードウェアの特性ごとにユーザーとデバイスを整理するためのグループを追加します。
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 06/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6e7d45c4f1c990123e310c8910e9b7bd3cf0ce4
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 9e0e3994addf8722adc8606f20517bcd4aeb7acd
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61514090"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>ユーザーとデバイスを整理するためのグループを追加する
 Intune では、デバイスとユーザーの管理に Azure Active Directory (AD) のグループを使用します。 Intune 管理者は、組織のニーズに合ったグループをセットアップできます。 地理的な場所、部門、ハードウェアの特性ごとにグループを作成して、ユーザーまたはデバイスを整理します。 大規模なタスクを管理するには、グループを使用します。 多数のユーザーにポリシーを設定したり、一連のデバイスにアプリを展開したりする場合などです。
@@ -35,11 +36,11 @@ Intune では、デバイスとユーザーの管理に Azure Active Directory (
 
 新しいグループを作成するには、次の手順に従います。
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
-2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで **[グループ]** を選択し、**[すべてのグループ]** ウィンドウで **[新しいグループ]** を選択します。
    ![[新しいグループ] が選択された Azure Portal のスクリーンショット](./media/groups-add-new.png)
 4. **[グループの種類]** で、次のいずれかのオプションを選択します。
-    - **[セキュリティ]**:セキュリティ グループは、ユーザー グループを設定するときに使用するのに適したリソースです。 セキュリティ グループではどのユーザーがどのリソースにアクセスできるかが定義されているので、セキュリティ グループは Intune ユーザー グループに変換できます。 Active Directory から Azure Active Directory に同期されたセキュリティ グループや、Office 365 管理センター、または Azure ポータルで Azure Active Directory に直接作成されたセキュリティ グループは、Intune でユーザー グループを作成するときに使用できます。
+    - **[セキュリティ]**:セキュリティ グループは、ユーザー グループを設定するときに使用するのに適したリソースです。 セキュリティ グループではどのユーザーがどのリソースにアクセスできるかが定義されているので、セキュリティ グループは Intune ユーザー グループに変換できます。 Active Directory から Azure Active Directory に同期されたセキュリティ グループや、Microsoft 365 管理センター、または Azure portal で Azure Active Directory に直接作成されたセキュリティ グループは、Intune でユーザー グループを作成するときに使用できます。
     - **Office 365**
 
 5. 新しいグループの **[名前]** と **[説明]** を入力します。 これらのプロパティは、管理ポータルのみに表示され、ユーザーには表示されません。

@@ -1,32 +1,33 @@
 ---
-title: Microsoft Intune を使用してデバイスに Office 365 アプリをインストールする
-titlesuffix: ''
-description: Microsoft Intune を使用して、簡単に Windows 10 デバイスに Office 365 アプリをインストールする方法について説明します。
+title: Microsoft Intune で Windows 10 デバイスに Office 365 アプリを割り当てる
+titleSuffix: ''
+description: Microsoft Intune を使用し、Office 365 アプリを Windows 10 デバイスにインストールする方法について説明します。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
-ms.reviewer: aiwang
+ms.reviewer: craigma
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d3db1449ec583678924fadb0db930146c3cd848
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: c640e3e02d7d016785b87d681443b2c49f7a6281
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507139"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune で Windows 10 デバイスに Office 365 アプリを割り当てる
 
-このアプリの種類を使用すると、Windows 10 を実行している管理対象のデバイスに Office 365 アプリを簡単に割り当てることができます。 また、ライセンスを所有している場合は、Microsoft Project Online デスクトップ クライアントおよび Visio Pro for Office 365 のアプリをインストールすることもできます。 必要なアプリは、Intune コンソールのアプリ一覧に単一のエントリとして表示されます。
+アプリの割り当て、監視、構成、または保護を行うには、対象のアプリを事前に Intune に追加しておく必要があります。 使用できる[種類のアプリ](apps-add.md#app-types-in-microsoft-intune)の 1 つに Windows 10 向け Office 365 アプリがあります。 Intune でこの種類のアプリを選択することで、Windows 10 を実行し、自分で管理しているデバイスに Office 365 アプリを割り当て、インストールできます。 ライセンスを所有している場合は、Microsoft Project Online デスクトップ クライアントおよび Microsoft Visio Online Plan 2 のアプリを割り当て、インストールすることもできます。 利用できる Office 365 は、Azure 内の Intune コンソールのアプリ一覧に単一のエントリとして表示されます。
 
 > [!NOTE]
 > Microsoft Intune で展開された Office 365 ProPlus アプリをアクティブ化するには、Office 365 ProPlus ライセンスを使用する必要があります。 現時点では、Office 365 Business Edition は Intune ではサポートされていません。
@@ -54,18 +55,25 @@ ms.locfileid: "57229753"
 5. **[追加]** を選択します。
 6. **[アプリの追加]** ウィンドウの **[アプリの種類]** の一覧で、**[Office 365 スイート]** の **[Windows 10]** を選びます。
 
-これで、アプリ スイートを構成できます。
+## <a name="select-settings-format"></a>設定の形式を選択する
 
-## <a name="configure-the-app-suite"></a>アプリ スイートの構成
+**[設定の形式]** を選択することで、アプリ設定を構成するための方法を選択できます。 [設定の形式] オプション:
+- 構成デザイナー
+- XML データを入力する
 
-デバイスに割り当てる Office アプリを選びます。
+**[構成デザイナー]** を選択すると、**[アプリの追加]** ブレードが変更され、2 つの設定オプションが追加されます。
+- アプリ スイートの構成
+- アプリ スイートの設定
 
-1. **[アプリの追加]** ウィンドウで、**[アプリ スイートの構成]** を選びます。
-2. **[アプリ スイートの構成]** ウィンドウで、デバイスに割り当てる標準の Office アプリを選びます。  
-    さらに、ライセンスを所有している場合は、Microsoft Project Online デスクトップ クライアントおよび Microsoft Visio Pro for Office 365 のアプリをインストールできます。
-3. **[OK]** を選択します。
+<img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-## <a name="configure-app-information"></a>アプリ情報の構成
+**[XML データを入力する]** を選択すると、**[アプリの追加]** ブレードに **[XML データを入力する]** オプションが表示されます。 これを選択すると、**[構成ファイル]** ブレードが表示されます。 
+
+![Office 365 構成デザイナーの追加](./media/apps-add-office365/apps-add-office365-01.png)
+    
+**[XML データを入力する]** オプションに関する詳細については、下の「[XML データを入力する](apps-add-office365.md#enter-xml-format)」を参照してください。
+
+## <a name="configure-app-suite-information"></a>アプリ スイートの情報を構成する
 
 この手順では、アプリ スイートに関する情報を指定します。 この情報は、Intune でアプリ スイートを識別し、ユーザーが会社のポータルでアプリを探す場合に役立ちます。
 
@@ -84,9 +92,18 @@ ms.locfileid: "57229753"
     - **[ロゴ]**: ユーザーがポータル サイトを閲覧するとき、アプリと一緒に Office 365 のロゴが表示されます。
 3. **[OK]** を選択します。
 
-## <a name="configure-app-settings"></a>アプリの設定の構成
+## <a name="configure-app-suite"></a>アプリ スイートの構成
 
-この手順では、アプリ スイートのインストール オプションを構成します。 この設定は、スイートに追加したすべてのアプリに適用されます。
+**[設定の形式]** ドロップダウン ボックスで **[構成デザイナー]** オプションを選択した場合、**[アプリの追加]** ブレードに **[アプリ スイートの構成]** オプションが表示されます。 デバイスに割り当てる Office アプリを選びます。
+
+1. **[アプリの追加]** ウィンドウで、**[アプリ スイートの構成]** を選びます。
+2. **[アプリ スイートの構成]** ウィンドウで、デバイスに割り当てる標準の Office アプリを選びます。  
+    さらに、ライセンスを所有している場合は、Microsoft Project Online デスクトップ クライアントおよび Microsoft Visio Online Plan 2 のアプリをインストールできます。
+3. **[OK]** を選択します。
+
+## <a name="configure-app-suite-settings"></a>アプリ スイート設定の構成
+
+**[設定の形式]** ドロップダウン ボックスで **[構成デザイナー]** を選択した場合、**[アプリの追加]** ブレードに **[アプリ スイートの設定]** オプションが表示されます。 この手順では、アプリ スイートのインストール オプションを構成します。 この設定は、スイートに追加したすべてのアプリに適用されます。
 
 1. **[アプリの追加]** ウィンドウで、**[アプリ スイートの設定]** を選びます。
 2. **[アプリ スイートの設定]** ウィンドウで、次のようにします。
@@ -110,6 +127,10 @@ ms.locfileid: "57229753"
     - **[共有コンピューターのライセンス認証を使用]**: 複数のユーザーでコンピューターを共有する場合は、このオプションを選びます。 詳細については、[Office 365 に対する共有コンピューターのライセンス認証の概要](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus)に関するページを参照してください。
     - **[言語]**: Office は、エンド ユーザーのデバイス上の Windows にインストールされている任意のサポート言語で自動的にインストールされます。 アプリ スイートと共に追加の言語をインストールする場合は、このオプションを選択します。 <p></p>
     Intune によって管理されている Office 365 Pro Plus アプリに追加の言語を展開することができます。 使用可能な言語のリストには、言語パックの **種類** (コア、部分、校正) が含まれます。 Azure Portal で、**[Microsoft Intune]** > **[クライアント アプリ]** > **[アプリ]** > **[追加]** の順に選びます。 **[アプリの追加]** ブレードの **[アプリの種類]** 一覧で、**[Office 365 スイート]** の **[Windows 10]** を選びます。 **[アプリ スイートの設定]** ブレードで **[言語]** を選びます。 詳細については、「[Office 365 ProPlus での言語の展開の概要](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus)」を参照してください。
+
+## <a name="enter-xml-format"></a>XML 形式を入力する
+
+**[設定の形式]** ドロップダウン ボックスで **[XML データを入力する]** を選択した場合、**[アプリの追加]** ブレードに **[Enter XML format]\(XML 形式を入力する\)** オプションが表示されます。 詳細については、「[Office 展開ツールのオプションの構成](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool)」を参照してください。
 
 ## <a name="finish-up"></a>完了
 
@@ -138,7 +159,7 @@ ms.locfileid: "57229753"
 
 | 通信の種類 | リターン コード | UI | メモ |
 |------------------------------------------------------------------------------------------------------------------|---------------------------------------|----------------------------------------------------|------------------------------------|
-| アクティブなクイック実行のインストールがないときに、アンインストールします | -2147418113、0x8000ffff または 2147549183 | エラー コード :30088-1008 エラー コード: 30125-1011 (404) | Office 展開ツール |
+| アクティブなクイック実行のインストールがないときに、アンインストールします | -2147418113、0x8000ffff または 2147549183 | エラー コード:30088-1008 エラー コード: 30125-1011 (404) | Office 展開ツール |
 | MSI バージョンがインストールされているときに、インストールします | 1603 | - | Office 展開ツール |
 | インストールが、ユーザーまたは別のインストールによって取り消されました | 17002 | - | クイック実行 |
 | 32 ビットがインストールされているデバイス上に 64 ビットをインストールしようとします。 | 1603 | - | Office 展開ツールのリターン コード |

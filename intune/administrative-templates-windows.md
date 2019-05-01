@@ -5,35 +5,33 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
-ms.topic: article
+ms.date: 02/27/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36076aab02f16937066cb3d47d573f7c74dd6277
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 704abe5e03410b52d54c7729e1832e527ae4dfb6
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55833618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61504316"
 ---
-# <a name="windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Microsoft Intune でグループ ポリシー設定を構成するための Windows 10 テンプレート
+# <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10 テンプレートを使用し、Microsoft Intune でグループ ポリシー設定を構成する
 
 組織内でデバイスを管理する際には、さまざまなデバイス グループに適用される設定のグループを作成する必要があります。 たとえば、いくつかのデバイス グループがあるとします。 グループ A には、特定の設定のセットを割り当てます。 グループ B には、別の設定のセットを割り当てます。 また、構成できる設定の単純なビューも必要です。
 
-このタスクを完了するには、Microsoft Intune で**管理用テンプレート**を使用します。 管理用テンプレートには、Internet Explorer、Microsoft Office プログラム、リモート デスクトップの機能の制御、OneDrive へのアクセス、ピクチャ パスワードまたは PIN によるサインインなどを行う、数百の設定が含まれます。 これらのテンプレートは、Active Directory (AD) のグループ ポリシー (GPO) 設定に似ており、XML を使用する、[ADMX によって支援される設定](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies)です。 ただし、Intune のテンプレートは 100% クラウド ベースです。 これらのテンプレートは、設定を構成して必要な設定を見つけるための、より単純かつ明快な方法を提供します。
+このタスクを完了するには、Microsoft Intune で**管理用テンプレート**を使用します。 管理用テンプレートには、Internet Explorer、Microsoft Office プログラム、リモート デスクトップの機能の制御、OneDrive へのアクセス、ピクチャ パスワードまたは PIN によるサインインなどを行う、数百の設定が含まれます。 これらのテンプレートは、Active Directory (AD) のグループ ポリシー (GPO) 設定に似ており、XML を使用する、[ADMX によって支援される設定](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies)です (別のドキュメント サイトを開きます)。 ただし、Intune のテンプレートは 100% クラウド ベースです。 これらのテンプレートは、設定を構成して必要な設定を見つけるための、より単純かつ明快な方法を提供します。
 
 **管理用テンプレート**は Intune 内に構築されており、OMA-URI の使用を含め、カスタマイズを必要としません。 モバイル デバイス管理 (MDM) ソリューションの一部として、これらのテンプレート設定を総合ポータルとして使用し、Windows 10 デバイスを管理します。
 
 この記事では、Windows 10 デバイス用のテンプレートを作成する手順を示し、Microsoft Intune で使用可能なすべての設定をフィルター処理する方法について説明します。 テンプレートを作成すると、デバイス構成プロファイルが作成されます。 その後、組織内でこのプロファイルを Windows 10 デバイスに割り当てるかデプロイできます。
-
-> [!NOTE]
-> 管理用テンプレートは、スタンドアロン デバイスでサポートされています。 これらのテンプレートは、現在、System Center Configuration Manager (SCCM) 共同管理対象デバイスではサポートされていません。
 
 ## <a name="create-a-template"></a>テンプレートを作成する
 
@@ -70,11 +68,13 @@ ms.locfileid: "55833618"
 
   ![[パス] をクリックしてアルファベット順に並べ替える](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
 
-- テンプレートで**検索**ボックスを使用して、特定の設定を見つけます。 たとえば、「`copy`」というメッセージを探してみてください。 「`copy`」を含むすべての設定が表示されます。
+- テンプレートで**検索**ボックスを使用して、特定の設定を見つけます。 たとえば、「 `copy`」というメッセージを探してみてください。 「`copy`」を含むすべての設定が表示されます。
 
   ![[パス] をクリックしてアルファベット順に並べ替える](./media/administrative-templates-windows/search-copy-settings.png)
 
   もう 1 つの例として、「`microsoft word`」を検索します。 Microsoft Word プログラムに対して設定できるすべての設定が表示されます。 「`explorer`」を検索して、テンプレートに追加できる Internet Explorer のすべての設定を確認します。
+
+この機能では、[Windows ポリシー CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) が使用されます (別のドキュメント サイトを開きます)。 CSP は、Home、Professional、Enterprise など、さまざまなエディションの Windows で動作します。 CSP が特定のエディションで動作するかどうかを確認するには、[Windows ポリシー CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) に移動してください (別のドキュメント サイトを開きます)。
 
 ## <a name="next-steps"></a>次の手順
 

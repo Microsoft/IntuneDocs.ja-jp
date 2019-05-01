@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/29/2019
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afa2ef4cf1199597f61af99d631243e2d3b51e64
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 036f2ca8302f9b3c2d700a04918c4c49a4c6211a
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490570"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Intune で条件付きアクセスによる Windows Defender ATP の準拠を強制する
 
@@ -109,12 +110,12 @@ Windows Defender には、[Windows Defender ATP サービス](https://docs.micro
 2. **[デバイスのポリシー準拠]** > **[ポリシー]** > **[ポリシーの作成]** の順に選択します。
 3. **名前**と**説明**を入力します。
 4. **[プラットフォーム]** で、**[Windows 10 以降]** を選択します。
-5. **[Windows Defender ATP]** 設定で、**[Require the device to be at or under the machine risk score]\(デバイスは、コンピューターのリスク スコア以下であることが必要\)** を次の任意のレベルに設定します。
+5. **[Windows Defender ATP]** 設定で、**[デバイスは、次のマシン リスク スコア以下であることが必要]** を次の任意のレベルに設定します。 脅威レベルの分類は、[Windows Defender ATP によって決まります](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue)。
 
-  - **[クリア]**:このレベルはセキュリティ上最も安全です。 デバイスに既存のいかなる脅威も存在できず、デバイスからは引き続き会社のリソースにアクセスできます。 いずれかの脅威が見つかった場合、デバイスは非準拠と評価されます。
-  - **[低]**:低レベルの脅威が存在する場合にのみ、デバイスは準拠しています。 脅威レベルが中または高のデバイスは非準拠になります。
-  - **[中]**:デバイスに存在する脅威が低または中の場合、デバイスは準拠しています。 高レベルの脅威が検出された場合は、デバイスは非準拠と判定されます。
-  - **[高]**:最も安全性の低いレベルであり、すべての脅威レベルが許容されます。 したがって、脅威レベルが高、中または低のデバイスは準拠していると見なされます。
+   - **[クリア]**:このレベルはセキュリティ上最も安全です。 デバイスに既存のいかなる脅威も存在できず、デバイスからは引き続き会社のリソースにアクセスできます。 いずれかの脅威が見つかった場合、デバイスは非準拠と評価されます。 (Windows Defender ATP ユーザーの値は *[セキュア]* です)。
+   - **[低]**:低レベルの脅威が存在する場合にのみ、デバイスは準拠しています。 脅威レベルが中または高のデバイスは非準拠になります。
+   - **[中]**:デバイスに存在する脅威が低または中の場合、デバイスは準拠しています。 高レベルの脅威が検出された場合は、デバイスは非準拠と判定されます。
+   - **[高]**:最も安全性の低いレベルであり、すべての脅威レベルが許容されます。 したがって、脅威レベルが高、中または低のデバイスは準拠していると見なされます。
 
 6. **[OK]**、**[作成]** の順に選択して、変更を保存 (およびポリシーを作成) します。
 
@@ -126,10 +127,13 @@ Windows Defender には、[Windows Defender ATP サービス](https://docs.micro
 4. ポリシーの割り当て対象として Azure AD グループを含めるか除外します。
 5. グループにポリシーを展開するには、**[保存]** を選択します。 ポリシーの対象となっているユーザー デバイスは、コンプライアンスが評価されます。
 
-## <a name="create-an-azure-ad-conditional-access-policy"></a>Azure AD 条件付きアクセス ポリシーを作成する
-デバイスが準拠していない*場合* は、条件付きアクセス ポリシーによって、リソースへのアクセスがブロックされます。 したがって、デバイスが脅威レベルを超えている場合は、SharePoint や Exchange Online などの企業リソースへのアクセスをブロックすることができます。
+## <a name="create-a-conditional-access-policy"></a>条件付きアクセス ポリシーを作成する
+デバイスが準拠していない*場合* は、条件付きアクセス ポリシーによって、リソースへのアクセスがブロックされます。 したがって、デバイスが脅威レベルを超えている場合は、SharePoint や Exchange Online などの企業リソースへのアクセスをブロックすることができます。  
 
-1. [Azure Portal](https://portal.azure.com) で、**[Azure Active Directory]** > **[条件付きアクセス]** > **[新しいポリシー]** の順に開きます。
+> [!TIP]  
+> 条件付きアクセスは、Azure Active Directory (Azure AD) テクノロジです。 *Intune* からアクセスされる条件付きアクセス ノードは、*Azure AD* からアクセスされるノードと同じです。  
+
+1. [Azure portal](https://portal.azure.com) で、**[Intune]** > **[条件付きアクセス]** > **[新しいポリシー]** の順に開きます。
 2. ポリシーの**名前**を入力して、**[ユーザーとグループ]** を選択します。 含めるオプションまたは除外するオプションを使用して、ポリシーのグループを追加し、**[完了]** を選択します。
 3. **[クラウド アプリ]** を選択し、保護するアプリを選びます。 たとえば、**[アプリを選択]** を選び、**[Office 365 SharePoint Online]** と **[Office 365 Exchange Online]** を選択します。
 

@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/01/2019
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 180a4cad27082105aa41c2bd79e6f9c05a65d162
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 5b2a5e2bbd6d06cc4ec0cf71ee815229b01040a8
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490689"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Intune で Windows 10 のセキュリティのベースラインを作成する
 
@@ -46,6 +47,10 @@ ms.locfileid: "57238610"
 この記事では、セキュリティのベースラインを使用してプロファイルを作成し、プロファイルを割り当て、プロファイルを監視する方法を説明します。
 
 「[Windows セキュリティ基本計画](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)」は、この機能の詳細を学ぶ際に役立つリソースです。 「[Mobile device management (モバイル デバイス管理)](https://docs.microsoft.com/windows/client-management/mdm/)」(MDM) は、MDM と、Windows デバイス上で実行できることに関する優れたリソースです。
+
+## <a name="prerequisites"></a>必要条件
+Intune でベースラインを管理するには、アカウントに [[Policy and Profile Manager]\(ポリシーとプロファイル マネージャー\)](role-based-access-control.md#built-in-roles) 組み込みロールが必要です。
+
 
 ## <a name="co-managed-devices"></a>共同管理デバイス
 

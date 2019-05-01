@@ -1,32 +1,34 @@
 ---
 title: デバイス登録に関するトラブルシューティング
-description: デバイス登録で問題が発生した場合の解決方法の推奨事項。
+titleSuffix: Microsoft Intune
+description: Microsoft Intune でデバイス登録に問題が発生した場合の解決方法の推奨事項。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 11/09/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
+ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2d345ba84eb963600a921c0f77f7a93ed6aa1b0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 06a8bd8d0a46b7d7eed8efb4cb8b4c2d4e21f77d
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509227"
 ---
-# <a name="troubleshoot-device-enrollment-in-intune"></a>Intune のデバイス登録に関するトラブルシューティング
+# <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune でのデバイス登録に関するトラブルシューティング
 
-この記事では、デバイス登録で問題が発生した場合の解決方法を提案します。 この情報で問題が解決しない場合、さらに役立つ方法を探すには、「[Microsoft Intune のサポートを受ける方法](get-support.md)」を参照してください。
+この記事では、[デバイス登録](device-enrollment.md)で問題が発生した場合の解決方法を提案します。 この情報で問題が解決しない場合、さらに役立つ方法を探すには、「[Microsoft Intune のサポートを受ける方法](get-support.md)」を参照してください。
 
 
 ## <a name="initial-troubleshooting-steps"></a>最初のトラブルシューティングの手順
@@ -100,7 +102,7 @@ ms.locfileid: "57238678"
 
 1.  MDM 機関が[適切に設定](mdm-authority-set.md)されていることを確認します。
     
-2.  ユーザーの資格情報が Azure Active Directory と正常に同期していることを確認します。 ユーザーの UPN と、Office 365 ポータルの Active Directory 情報が一致していることを確認できます。
+2.  ユーザーの資格情報が Azure Active Directory と正常に同期していることを確認します。 ユーザーの UPN と、Microsoft 365 管理センターの Active Directory 情報が一致していることを確認できます。
     UPN が Active Directory 情報と一致しない場合:
 
     1.  ローカル サーバーで DirSync を無効にします。
@@ -131,7 +133,7 @@ ms.locfileid: "57238678"
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>会社名に特殊文字が含まれている場合にポリシーの作成またはデバイスの登録ができない
 **問題:** ポリシーを作成することやデバイスを登録することができません。
 
-**解決方法:**[Office 365 管理センター](https://portal.office.com/)で、会社名から特殊文字を削除した後、会社情報を保存します。
+**解決方法:**[Microsoft 365 管理センター](https://admin.microsoft.com/)で、会社名から特殊文字を削除した後、会社情報を保存します。
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>確認済みドメインが複数ある場合にデバイスへのサインインまたはデバイスの登録ができない
 **問題:** この問題は、ADFS に 2 番目の確認済みドメインを追加すると発生する可能性があります。 2 番目のドメインのユーザー プリンシパル名 (UPN) サフィックスを持つユーザーがポータルにログインできなくなる場合や、デバイスを登録できなくなる場合があります。
@@ -225,7 +227,7 @@ Android 6.0 へのアップグレードを試みるようユーザーに通知�
 
 **解決方法 1**:
 
-ユーザーは「[Your device is missing a required certificate (デバイスに必要な証明書がありません)](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator)」の手順に従って、不足している証明書を取得できる場合があります。 引き続きエラーが発生する場合は、解決方法 2 をお試しください。
+ユーザーは「[Your device is missing a required certificate (デバイスに必要な証明書がありません)](/intune-user-help/your-device-is-missing-a-required-certificate-android)」の手順に従って、不足している証明書を取得できる場合があります。 引き続きエラーが発生する場合は、解決方法 2 をお試しください。
 
 **解決方法 2**:
 

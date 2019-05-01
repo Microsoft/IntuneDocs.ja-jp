@@ -1,26 +1,28 @@
 ---
 title: 移行における情報伝達の計画
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: この記事では、Microsoft Intune への移行における情報伝達計画と戦略について説明します。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: e19ce1aa39d6402ccf1de93af493457b0a10d0b8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 08fcda324d2c3c397deb99924d731ed4d4512651
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490154"
 ---
 # <a name="plan-communications"></a>通信手段の計画
 
@@ -57,6 +59,8 @@ Intune では、ユーザーのデバイス登録を推進するその他のテ�
 -   [IT 管理者向けの Intune エンド ユーザー登録テンプレート](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a)は、Intune で Android、iOS、および Mac デバイスを登録する方法を説明するカスタマイズ可能な Word 文書です。
 
 -   「[FastTrack for EMS how to guides & emails (EMS 用 FastTrack: 方法ガイドとメール)](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c)」は、貴社のロゴでカスタマイズして、組織内での Intune と EMS の採用を促進できます。
+
+-   Android、iOS、および Windows ユーザーと[ポータル サイト アプリの URL](http://go.microsoft.com/fwlink/?LinkID=396941) を共有します。 この URL を使用すると、Android、iOS、および Windows デバイス上の適切なポータル サイト アプリ一覧にリダイレクトされます。
 
 ## <a name="next-steps"></a>次の手順
 

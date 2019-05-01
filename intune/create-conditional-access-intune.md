@@ -1,33 +1,34 @@
 ---
 title: Intune によるデバイス ベースの条件付きアクセスの設定
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune デバイスのコンプライアンスとモバイル アプリ管理に基づいて、デバイス ベースの条件付きアクセス ポリシーを作成する方法について説明します。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03ca9a65d5a62c75c45541b42c9b2aa5c4871a18
-ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
+ms.openlocfilehash: aaf9b82bc810dd3a616eb25f39f4b5830b1c3e6f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56307789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508649"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>デバイス ベースの条件付きアクセス ポリシーを作成する
 
-Intune を利用して、モバイル デバイスのコンプライアンスをアクセス制御に追加することで、Azure Active Directory における条件付きアクセスを拡張できます。 デバイスがコンプライアンスに準拠するように要件を定義した Intune コンプライアンス ポリシーを作成すると、以降はデバイスのコンプライアンス ステータスを使用して、お使いのアプリとサービスへのアクセスを許可または拒否できるようになります。 **[デバイスは準拠としてマーク済みである必要があります]** 設定を使用した条件付きアクセス ポリシーを作成することで、これを実現できます。 
+Intune を利用して、モバイル デバイスのコンプライアンスをアクセス制御に追加することで、Azure Active Directory における条件付きアクセスを拡張できます。 デバイスがコンプライアンスに準拠するように要件を定義した Intune コンプライアンス ポリシーを作成すると、以降はデバイスのコンプライアンス ステータスを使用して、お使いのアプリとサービスへのアクセスを許可または拒否できるようになります。 **[デバイスは準拠としてマーク済みである必要があります]** 設定を使用した条件付きアクセス ポリシーを作成することで、これを実現できます。  
 
-条件付きアクセス ポリシーでは、保護するアプリまたはサービス、そのアプリまたはサービスにアクセスできる条件、およびポリシーが適用されるユーザーを指定します。 条件付きアクセスは、Azure Active Directory 内で構成できる Azure AD のプレミアム機能ですが、Intune ポータル内からこれらと同じポリシーを設定することも可能です。 
+条件付きアクセス ポリシーでは、保護するアプリまたはサービス、そのアプリまたはサービスにアクセスできる条件、およびポリシーが適用されるユーザーを指定します。 条件付きアクセスは、Azure Active Directory 内で構成できる Azure AD のプレミアム機能ですが、Intune ポータル内からこれらと同じポリシーを設定することも可能です。 *Intune* からアクセスされる条件付きアクセス ノードは、*Azure AD* からアクセスされるノードと同じです。  
 
 > [!IMPORTANT]
 > 条件付きアクセスを設定する前に、Intune デバイスのコンプライアンス ポリシーを設定して、特定の要件を満たしているかに基づいてデバイスを評価する必要があります。 「[Intune のデバイス コンプライアンス ポリシーの概要](device-compliance-get-started.md)」をご覧ください。

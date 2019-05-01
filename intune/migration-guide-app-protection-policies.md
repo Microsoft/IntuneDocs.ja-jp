@@ -1,5 +1,5 @@
 ---
-title: Intune 移行中にアプリ保護ポリシーを構成する
+title: 移行中にアプリ保護ポリシーを構成する
 titleSuffix: Microsoft Intune
 description: この記事では、Microsoft Intune 移行中にアプリ保護ポリシーを設定するために必要な手順について説明します。
 keywords: ''
@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 076750334c8faba6e9a99368d7af682b10de8962
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: c516c53c38eb033aa2a9688c40b301bedcc7a034
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59567362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508346"
 ---
 # <a name="configure-app-protection-policies-optional"></a>アプリ保護ポリシーを構成する (省略可能)
 

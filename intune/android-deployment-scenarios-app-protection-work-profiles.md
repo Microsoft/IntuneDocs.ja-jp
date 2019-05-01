@@ -9,17 +9,18 @@ ms.date: 02/13/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6fd12432d07d1486e0943f88c0cf8b4536e651bc
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: cbd3b13215a58a831a15884bfe451f00a35ba379
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490197"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Intune での Android エンタープライズ デバイス上のアプリケーション保護ポリシーと仕事用プロファイル
 
@@ -50,7 +51,7 @@ Intune のアプリ保護ポリシー (APP) は、ユーザーを対象とした
 
     支援のために、Intune には、既存の Android アプリ (APK) 用の**アプリ ラッピング ツール** ツールが含まれており、APP ポリシーを認識するアプリが作成されます。
 
-    このツールについて詳しくは、「[アプリ保護ポリシーを利用するために基幹業務アプリで準備を行う](apps-prepare-mobile-application-management.md)」をご覧ください。
+    このツールの詳細については、「[アプリ保護ポリシーを利用するために基幹業務アプリで準備を行う](apps-prepare-mobile-application-management.md)」を参照してください。
 
 APP が有効になっているアプリの一覧を確認するには、[一連の豊富なモバイル アプリケーション保護ポリシーを備えたマネージド アプリ](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)に関するページをご覧ください。
 

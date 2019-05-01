@@ -6,19 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 12/19/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fd401875e1a98690d9673243b28b48347e4c6183
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 654d5b86a8a2df8eaddc8ea626b55390d2d32920
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509072"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune デバイスのコンプライアンス対応ポリシーの監視
 
@@ -160,11 +162,11 @@ ms.locfileid: "53642814"
 1. **[デバイスのポリシー準拠]** > **[ポリシー]** の順に選択します。 ポリシーの一覧が表示されます。これにはプラットフォーム、ポリシーが割り当てられているかどうか、およびその他の詳細が含まれます。
 2. ポリシーを選択し、**[概要]** を選択します。 このビューでは、ポリシー割り当てに次の状態が含まれています。
 
-    - ［成功］:ポリシーが適用されます
+    - 成功:ポリシーが適用されます
     - エラー:ポリシーを適用できませんでした。 メッセージは通常、説明のリンクを含むエラー コードと共に表示されます。 
     - 競合:2 つの設定が同じデバイスに適用されます。Intune では競合に対処できません。 管理者が確認する必要があります。
     - 保留中:デバイスはまだ、ポリシーを受信するために Intune でチェックインしていません。 
-    - 適用外:デバイスがポリシーを受信できません。 たとえば、ポリシーで iOS 11.1 に特有の設定が更新されるが、デバイスが iOS 10 を使用している場合です。 
+    - 適用できない:デバイスがポリシーを受信できません。 たとえば、ポリシーで iOS 11.1 に特有の設定が更新されるが、デバイスが iOS 10 を使用している場合です。 
 
 3. このポリシーを使用してデバイスの詳細を表示するには、状態のいずれかを選択します。 たとえば、**[成功]** を選択します。 次のウィンドウでは、デバイス名や展開状態など、特定のデバイスの詳細が一覧表示されます。
 

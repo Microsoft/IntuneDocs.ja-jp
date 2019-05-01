@@ -6,20 +6,22 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/07/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 36ed7a4dda91cfcc3cc4b97cc9ab8872b0a2c80e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b53ffbed93195b84544570e6a740fa614e219458
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513550"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Intune を使って Windows デバイスのパスコードをリセットする
 
@@ -40,9 +42,9 @@ Windows デバイスのパスコードをリセットすることができます
 Windows デバイスのパスコードをリセットするには、PIN Reset Service を Intune テナントにオンボードします。
 
 1. [Microsoft PIN Reset Service Production](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent) に移動し、テナント管理者アカウントを使ってサインインします。
-2. PIN Reset Service の承諾に**同意**して、ご自分のアカウントにアクセスします。![PIN Reset Server のアクセス許可要求に同意する](./media/pin-reset-service-home-screen.png)
+2. PIN リセット サービスの承諾に**同意**して、ご自分のアカウントにアクセスします。![アクセス許可に対する PIN Reset Server の要求を受け入れる](./media/pin-reset-service-home-screen.png)
 3. [Microsoft PIN Reset Client Production](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent) に移動し、テナント管理者アカウントを使ってサインインします。 PIN Reset Client の承諾に**同意**して、ご自分のアカウントにアクセスします。
-4. [Azure Portal](https://portal.azure.com) で、PIN Reset Service がエンタープライズ アプリケーション (すべてのアプリケーション) に表示されていることを確認します。![PIN Reset Service アクセス許可ページ](./media/pin-reset-service-application.png)
+4. [Azure portal](https://portal.azure.com) で、PIN リセット サービスがエンタープライズ アプリケーション (すべてのアプリケーション) に表示されていることを確認します。![PIN リセット サービスの [アクセス許可] ページ](./media/pin-reset-service-application.png)
 
 > [!NOTE]
 > PIN リセット要求に同意した後、`Page not found` というメッセージが表示されたり、何も行われていないように見えたりすることがあります。 この動作は正常なものです。 2 つの PIN リセット アプリケーションがご自分のテナントに表示されることを確認してください。

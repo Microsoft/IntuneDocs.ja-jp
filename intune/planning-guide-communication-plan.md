@@ -1,27 +1,29 @@
 ---
 title: ロールアウト コミュニケーション計画の作成
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: この記事は、Microsoft Intune を展開するためのロールアウト コミュニケーション計画を作成する場合に役立ちます。
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 10/30/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 393ebe75-d001-485a-b81c-6361c8b5e6ee
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 013e2c6c10d5a545343c864b1b564acbede7c675
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6e3584d97bf9f1a223b15c986f398681a20520c1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513292"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>ロールアウト コミュニケーション計画の作成
 
@@ -55,7 +57,7 @@ ms.locfileid: "52179832"
 
 Intune ロールアウトに関する情報を対象となる組織グループとユーザーに伝達するには、いくつかの配信方法があります。 次の一覧では、情報の配信方法の例とその方法を使用する段階を示しています。
 
--   組織全体を対象にした対面の会議または Skype 会議 (キックオフ段階)
+-   組織全体を対象にした対面の会議または Microsoft Teams 会議 (キックオフ段階)
 
 -   電子メール (登録前段階、登録段階、登録後段階)
 

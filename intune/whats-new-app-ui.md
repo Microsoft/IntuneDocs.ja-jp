@@ -1,49 +1,97 @@
 ---
 title: Intune とエンド ユーザー アプリの UI の更新
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune を使用したエンド ユーザー デバイスで動作するアプリの UI の変更点について説明します。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/13/2018
-ms.topic: article
+ms.date: 04/04/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0d6a798f9f16f4eaa0e882fb7d90203be912051f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 753c261ea08ce304176f19e1c64389053b055d5f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61518172"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune とエンド ユーザー アプリの UI の更新
-このリリースの Microsoft Intune でエンド ユーザーに表示されるアプリの UI に加えられた変更について説明します。 これらの更新を理解すると、ユーザーとの通信や、展開のサポートのために作成したカスタム ドキュメントの更新に役立ちます。 会社のポータルを使用してヘルプデスクにサポートを求める場合に、直面している問題のトラブルシューティングをより適切に行う方法を理解するのにも役立ちます。
+Microsoft Intune アプリに対する最新の更新プログラムについて学習します。 Intune ポータル サイト アプリと Web サイトに対する追加および改善は定期的に行われています。 Intune 管理者またはサポート担当者である場合、次の作業を行うために必要な情報がこの記事で提供されています。
+
+* アプリと登録の変更について、学生と従業員にアラートを表示する。
+* 組織のドキュメントまたはヘルプデスクのプロシージャを更新する。  
+
+従業員または学生である場合は、必ず、ポータル サイトのヘルプ ドキュメントへのリンクとスクリーンショットを確認してください。 ポータル サイト アプリを使用する方法の詳細については、[ポータル サイト ユーザーのヘルプ ドキュメント](https://docs.microsoft.com/intune-user-help/)を参照してください。  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-april-15-2019"></a>2019 年 4 月 15 日の週  
+
+### <a name="new-end-user-app-microsoft-intune-app---3903244---"></a>新しいエンド ユーザー アプリ (Microsoft Intune アプリ) <!--3903244 -->  
+**Microsoft Intune** と呼ばれる、Android フル マネージド デバイス用の新しいエンド ユーザー アプリがあります。 この新しいアプリは軽量かつ最新のものであり、ポータル サイト アプリと同様の機能が提供されますが、企業のフル マネージド デバイスの場合です。 詳細については、[Google Play の Microsoft Intune アプリ](https://play.google.com/store/apps/details?id=com.microsoft.intune)に関するページを参照してください。  
+
+デバイスの詳細画面のスクリーンショット例: 
+
+![Jane の Android のデバイスの詳細を示す、Microsoft Intune アプリのスクリーンショット。](./media/1904-intune-app-device-details.png)   
+
+**アクセスのセットアップ**画面のスクリーンショット例:  
+
+![アクセスのセットアップ登録画面を示す、Microsoft Intune アプリのスクリーンショット。](./media/1904-intune-app-setup-access.png)   
+
+アプリ メニューのスクリーンショット例:  
+
+![サイド メニューを示す、Microsoft Intune アプリのスクリーンショット。](./media/1904-intune-app-navigation-menu.png)   
+
+**[ヘルプ]** 画面のスクリーンショット例:  
+
+![Microsoft Intune アプリの [ヘルプ] 画面のスクリーンショット。](./media/1904-intune-app-help.png)   
+
+
+## <a name="week-of-april-1-2019"></a>2019 年 4 月 1 日の週  
+
+### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>iOS 12 デバイス ユーザー用ポータル サイトの登録の変更 <!--3448635 -->  
+Apple iOS 12.2 でリリースされた MDM 登録変更に合わせて、iOS 用ポータル サイトの登録画面と手順が更新されました。 更新されたワークフローでは、次のような場合にユーザーにメッセージが表示されます。  
+
+* Safari でポータル Web サイトを開き、ポータル サイト アプリに戻る前に管理プロファイルをダウンロードできるようにする。  
+* [設定] アプリを開き、デバイスに管理プロファイルをインストールする。  
+* ポータル サイト アプリに戻り、登録を完了する。  
+
+更新された登録の手順と画面については、[Intune への iOS デバイスの登録](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)に関するページを参照してください。  
+
+### <a name="user-experience-update-for-the-company-portal-app-for-ios----2536024---"></a>iOS 用ポータル サイト アプリに関するユーザー エクスペリエンスの更新プログラム <!-- 2536024 -->
+iOS デバイス用ポータル サイト アプリのホーム ページが再設計されました。 この変更によって、ホーム ページでは iOS UI パターンにより適切に従うようになり、アプリと電子ブックの検出可用性も向上しました。  
+
+## <a name="week-of-february-19-2019"></a>2019 年 2 月 19 日の週  
+### <a name="new-app-categories-screen-in-the-company-portal-app-for-windows-10---3834780-wnready4review---"></a>Windows 10 用ポータル サイト アプリでの新しい [アプリのカテゴリ] 画面<!-- 3834780 WNready4Review -->  
+**[アプリのカテゴリ]** という新しい画面が追加され、Windows 10 用ポータル サイトでのアプリの参照と選択のエクスペリエンスが向上しました。 ユーザーには、**[おすすめ]**、**[教育]**、**[生産性]** などのカテゴリに並べ替えられたアプリが表示されるようになります。 この変更は、ポータル サイト バージョン 10.3.3451.0 以降で表示されます。 ポータル サイトでのアプリのインストールについて詳しくは、「[デバイスにアプリをインストールして共有する](/intune-user-help/install-apps-cpapp-windows)」を参照してください。  
+
+![Windows 10 用ポータル サイトの [アプリのカテゴリ] 画面のスクリーンショット。](./media/1902_CP_app_categories.png)   
+
 
 ## <a name="week-of-november-12-2018"></a>2018 年 11 月 12 日の週
 
 ### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>Windows ポータル サイトのキーボード ショートカット <!-- 2771518 -->
-エンドユーザーは、Windows ポータル サイトでキーボード ショートカット (アクセラレータ) を使用してアプリとデバイスのアクションをトリガーできるようになりました。
+エンド ユーザーは、Windows ポータル サイトで[キーボード ショートカット (アクセラレータ) を使用](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts)して、アプリとデバイスのアクションをトリガーできるようになります。
 
 ## <a name="week-of-october-22-2018"></a>2018 年 10 月 22 日の週
 
 ### <a name="add-custom-brand-image-for-company-portal-app----1916266---"></a>ポータル サイト アプリ用のカスタム ブランド イメージを追加する <!-- 1916266 -->
-Microsoft Intune 管理者は、iOS ポータル サイト アプリ内のユーザーのプロファイル ページに背景イメージとして表示されるカスタム ブランド イメージをアップロードできるようになります。 ポータル サイト アプリの構成方法の詳細については、「[Microsoft Intune ポータル サイト アプリを構成する方法](company-portal-app.md)」を参照してください。
-
-
+Microsoft Intune 管理者は、iOS ポータル サイト アプリ内のユーザーのプロファイル ページに背景イメージとして表示されるカスタム ブランド イメージをアップロードできるようになります。 ポータル サイト アプリの構成方法の詳細については、「[Microsoft Intune ポータル サイト アプリを構成する方法](company-portal-app.md)」を参照してください。  
 
 ## <a name="week-of-august-27-2018"></a>2018 年 8 月 27 日の週  
 
-### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>ポータル Web サイトの新しいユーザー エクスペリエンスの更新<!--2000968 -->  
-顧客からのフィードバックに基づいて、Intune ポータル サイト Web サイトに新機能を追加しています。 ご利用のデバイスから、既存の機能と使いやすさの大幅な向上を体験できます。 &ndash;デバイス詳細、フィードバックとサポート、デバイス概要など&ndash;のサイトの領域には、最新の応答性の高いデザインが採用されています。 [Intune ポータル サイト Web サイトのドキュメント](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website)は、これらの変更を反映するように更新されています。   
+### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>Intune ポータル サイトの新しいユーザー エクスペリエンスの更新 <!--2000968 -->  
+顧客からのフィードバックに基づいて、Intune ポータル サイト Web サイトに新機能を追加しています。 ご利用のデバイスから、既存の機能と使いやすさの大幅な向上を体験できます。 デバイスの詳細、フィードバックとサポート、デバイスの概要など、サイトの特定の領域には、最新の応答性の高いデザインが採用されるようになりました。 [Intune ポータル サイト Web サイトのドキュメント](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website)は、これらの変更を反映するように更新されています。   
 
 更新プログラムでは、次のような内容を確認できます。  
 
@@ -63,13 +111,13 @@ Microsoft Intune 管理者は、iOS ポータル サイト アプリ内のユー
 ## <a name="week-of-july-16-2018"></a>2018 年 7 月 16 日の週  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Windows 用ポータル サイト アプリ内での同期の機会の増加   
-Windows 用ポータル サイト アプリでは、Windows タスク バーと [スタート] メニューから直接同期を開始できるようになりました。 この機能は、唯一のタスクがデバイスを同期して、企業リソースへのアクセスを取得することで場合に特に便利です。 この新しい機能にアクセスするには、ご利用のタスク バーまたは [スタート] メニューに固定されているポータル サイト アイコンを右クリックします。 メニュー オプション (ジャンプ リストとも呼ばれる) で、**[Sync this device]\(このデバイスを同期\)** を選択します。 ポータル サイトが開いて、**[設定]** ページが表示され、同期が開始されます。  
+Windows 用ポータル サイト アプリでは、Windows タスク バーと [スタート] メニューから直接同期を開始できるようになりました。 この機能は、唯一のタスクがデバイスを同期して、企業リソースへのアクセスを取得することで場合に特に便利です。 この新しい機能にアクセスするには、ご利用のタスク バーまたは **[スタート]** メニューに固定されているポータル サイト アイコンを右クリックします。 メニュー オプション (ジャンプ リストとも呼ばれる) で、**[Sync this device]\(このデバイスを同期\)** を選択します。 ポータル サイトが開いて、**[設定]** ページが表示され、同期が開始されます。  
 
 ![デバイスのデスクトップ上の Windows タスク バーのスクリーンショット。 ポータル サイトのアプリ プログラム アイコンをクリックすると、メニューにオプションの [タスク バーにピン留め]、[ウィンドウを閉じる]、[Sync this device]\(このデバイスを同期\) アクションが表示されます。](./media/sync-device-from-start-menu-1807.png)  
 
 ### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Windows 用ポータル サイト アプリでの新しい参照エクスペリエンス  
 
-Windows 用ポータル サイト アプリでアプリを参照または検索するときに、既存の **[タイル]** ビューと新しく追加された **[詳細]** ビューを切り替えることができるようになりました。 新しいビューには、名前、発行元、発行日、インストール状態などのアプリケーションの詳細が一覧表示されます。  
+Windows 用ポータル サイト アプリでアプリを参照または検索するときに、既存の **[タイル]** ビューと新しい **[詳細]** ビューを切り替えることができるようになりました。 この新しいビューには、名前、発行元、発行日、インストール状態などのアプリケーションの詳細がリストされます。  
 
 **[アプリ]** ページの **[インストール済み]** ビューでは、完了済みと進行中のアプリのインストールに関する詳細を確認できます。  
 
@@ -82,7 +130,7 @@ Windows 用ポータル サイト アプリでアプリを参照または検索�
 ![インストールされているアプリが詳細ビューに表示された Windows 用の Intune ポータル サイト アプリのスクリーンショット。](/intune/media/details-installed-view-cpapp-1807.png) 
 
 ## <a name="week-of-april-23-2018"></a>2018 年 4 月 23 日の週
-### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>Windows 10 用の Intune ポータル サイト アプリでのナビゲーション ビューの更新 <!-- 1195010 -->
+### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>Windows 10 用ポータル サイト アプリでのナビゲーション ビューの更新 <!-- 1195010 -->
 Windows 10 の Intune ポータル サイト アプリが [Fluent Design System のナビゲーション ビュー](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics)に合わせて更新されました。 アプリの側面だけでなく、すべてのトップ レベルのページに静的な縦方向リストが表示されます。 リンクをクリックすると、ページをすばやく表示したり、ページを切り替えたりできます。 これは現在作成中の更新の一部であり、今後さらにアダプティブで馴染みがあり、使いやすい Intune の機能を提供していきます。 
 
 ![Fluent デザイン ナビゲーション ビューが示されている Intune ポータル サイト アプリのダッシュボードのスクリーンショット](./media/1804_WindowsCP_Fluent_01.png)
@@ -91,7 +139,7 @@ Windows 10 の Intune ポータル サイト アプリが [Fluent Design System 
 ## <a name="week-of-april-2-2018"></a>2018 年 4 月 2 日の週
 
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>iOS 用ポータル サイト アプリに関するユーザー エクスペリエンスの更新プログラム <!-- 1412866 -->
-iOS 用のポータル サイト アプリに対して、主要なユーザー エクスペリエンスの更新プログラムをリリースする予定です。 この更新プログラムでは、最新のルック アンド フィールを含む完全なビジュアル再設計が行われています。 アプリの機能を維持した上で、操作性とアクセシビリティが向上しています。  
+iOS 用のポータル サイト アプリに対して、主要なユーザー エクスペリエンスの更新プログラムをリリースしました。 この更新プログラムでは、最新のルック アンド フィールを含む完全なビジュアル再設計が行われています。 アプリの機能を維持した上で、操作性とアクセシビリティが向上しています。  
 
 また、次のような更新が行われています。
 - iPhone X のサポート。
@@ -115,7 +163,7 @@ iOS 用のポータル サイト アプリに対して、主要なユーザー �
 
 ## <a name="week-of-march-12-2018"></a>2018 年 3 月 12 日の週
 
-### <a name="company-portal-for-android-visual-updates----976944---"></a>Android 用 Intune ポータル サイトのビジュアルの更新 <!-- 976944 -->
+### <a name="company-portal-for-android-visual-updates----976944---"></a>Android 用ポータル サイトのビジュアルの更新 <!-- 976944 -->
 
 Android 用 Intune ポータル サイト アプリを、Android の[マテリアル デザイン](https://material.io/) ガイドラインに合わせて更新しています。
 
@@ -140,7 +188,7 @@ Android 用 Intune ポータル サイト アプリを、Android の[マテリ�
 
 ## <a name="week-of-november-13-2017"></a>2017 年 11 月 13 日の週
 
-### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>iOS 用ポータル サイト バージョン 2.9.0 でのデバイスのセットアップ ワークフローの機能強化<!-- 1417174 -->
+### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>iOS 用ポータル サイト バージョン 2.9.0 でのデバイスのセットアップ ワークフローの機能強化 <!-- 1417174 -->
 
 iOS 用ポータル サイト アプリでのデバイス セットアップ ワークフローを改善しました。 言葉がよりわかりやすくなり、可能な範囲で画面をまとめました。 また、セットアップのテキスト全体でお客様の会社名を使用することで、表現がより会社に合ったものになっています。
 
@@ -189,7 +237,7 @@ iOS ユーザーもこの変更の影響を受けます。ポータル Web サ�
 
 ## <a name="week-of-october-2-2017"></a>2017 年 10 月 2 日の週
 
-### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>ポータル サイトでのデバイスのセットアップ ワークフローの機能強化<!-- 1490692 -->
+### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>ポータル サイトでのデバイスのセットアップ ワークフローの機能強化 <!-- 1490692 -->
 Android 用のポータル サイト アプリでデバイスのセットアップ ワークフローを改良しました。 言語がよりわかりやすく、会社固有のものとなり、可能な範囲で画面をまとめるようにしました。 
 
 |以前|これらの手順の完了後、|
@@ -233,7 +281,7 @@ Android 用ポータル サイト アプリについて、エンドユーザー�
 
 ## <a name="august-2017"></a>2017 年 8 月
 
-### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 のメール アプリが OAuth をサポート <!-- 1196951 -->
+### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>iOS 11 のメール アプリで OAuth をサポート <!-- 1196951 -->
 
 Intune での条件付きアクセスで、OAuth を使用した iOS デバイスのより安全な認証がサポートされます。 これをサポートし、より安全な認証を可能にするため、iOS のポータル サイト アプリに異なるフローが生成されます。 エンドユーザーがメール アプリで新しい Exchange アカウントにサインインしようとすると、Web ビューのプロンプトが表示されます。 Intune に登録すると、ネイティブのメール アプリによる証明書へのアクセスを許可するプロンプトがユーザーに表示されます。 ほとんどのエンドユーザーにはそれ以上の検疫済みメールは表示されません。 既存のメール アカウントは引き続き基本認証プロトコルを使用するため、これに該当するユーザーには検疫済みメールが配信されます。 このエンド ユーザー向けサインイン エクスペリエンスは Office モバイル アプリの場合と似ています。
 
@@ -280,7 +328,7 @@ Android 用のポータル サイト アプリのアプリの詳細ページに�
 
 ![新しいアプリの詳細ポリシー](./media/cp_android_appdetails_after_1708.png)
 
-### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>すべてのプラットフォームでのポータル サイト アプリのサインイン操作の改善<!--User Story 1132123-->
+### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>すべてのプラットフォームでのポータル サイト アプリのサインイン操作の改善 <!--User Story 1132123-->
 
 Android、iOS、Windows 用の Intune ポータル サイト アプリのサインイン エクスペリエンス向上のために、今後数か月間に予定されている変更についてお知らせします。 Azure AD でこの変更が行われ次第、自動的にすべてのプラットフォームでポータル サイト アプリのユーザー エクスペリエンスが一新される予定です。 また、自動生成される一時使用コードを使用して、別のデバイスからポータル サイトにサインインできるようになりました。 これは、資格情報を使用せずにサインインする必要がある場合には特に便利です。  
 
@@ -366,7 +414,7 @@ Windows 10 用のポータル サイト アプリで、特定または登録さ�
 
 ![Windows 10 ポータル サイト アプリの完了画面の画像。すべて設定済みであり、デバイスに適切に追加された会社のアカウントでデバイスが登録されたことをユーザーに知らせています。](./media/win10_guided_enroll_youre_all_set_after_1706.png)
 
-### <a name="new-menu-action-to-easily-remove-company-portal---1164569--"></a>ポータル サイトを簡単に削除できるアクション メニューの追加<!--1164569-->
+### <a name="new-menu-action-to-easily-remove-company-portal---1164569--"></a>ポータル サイトを簡単に削除できるアクション メニューの追加 <!--1164569-->
 Android 用ポータル サイト アプリでは、ユーザーからのフィードバックに基づき、デバイスからポータル サイトの削除を開始できる新しいアクション メニューが追加されました。 この操作では Intune の管理対象からデバイスが削除されるため、ユーザーはデバイスからアプリを削除できるようになります。
 
 ![右上隅にアクション メニューが開いた Android 用ポータル サイト アプリの画像です。 [マイ プロファイル]、[設定] の下と、[使用条件]、[ヘルプとフィードバック]、[概要] の上に、新しい [ポータル サイトの削除] オプションが 3 つ目のオプションとして表示されます。](./media/android_remove_cp_menu_action_after_1705.png)
@@ -412,7 +460,7 @@ Managed Browser の Android バージョンと iOS バージョンのアイコ�
 
 Android、iOS、Windows でのポータル サイト アプリのアイコンも更新されて、EM+S での他のアプリとの一貫性が向上します。 これらのアイコンは、4 月から 5 月末にかけて段階的にプラットフォーム全体にリリースされます。
 
-### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 用ポータル サイトでのサインイン進行状況インジケーター<!--953374-->
+### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Android 用ポータル サイトでのサインイン進行状況インジケーター <!--953374-->
 
 Android 用ポータル サイト アプリが更新されて、起動または再開時にサインイン進行状況インジケーターが表示されるようになります。 ユーザーがアプリへのアクセスを許可されるまでにインジケーターに順番に表示される新しいステータスは、[接続中...]、[サインイン中...]、[Checking for security requirements... (セキュリティ要件確認中...)] です。
 
@@ -434,7 +482,7 @@ Android 用ポータル サイト アプリが更新されて、起動または�
 </body>
 </html>
 
-### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Windows 10 ポータル サイト アプリのアプリ インストール状態の向上<!--676495-->
+### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Windows 10 ポータル サイト アプリのアプリ インストール状態の向上 <!--676495-->
 現在の Windows 10 ポータル サイト アプリでは、アプリ詳細ページにインストール進行状況バーが表示されます。 これは、Windows 10 Anniversary Update 以降を実行するデバイスの最新アプリについてサポートされます。
 
 __変更前__ ![変更前のバージョンの読み込み画面の画像。状態は単に 'インストール中' と表示されていました。](./media/cp_win10_install_status_before_1704.png)
@@ -450,11 +498,11 @@ __変更後__ ![変更後のバージョンの読み込み画面の画像。イ�
 
 ![左側は、更新前の Android 用ポータル サイト アプリのイメージです。 右側は、更新後の Android 用ポータル サイト アプリのイメージです。 両方のイメージに、[アプリ]、[デバイス]、および [IT に連絡] の使用可能な 3 つのタブから選択されたタブとして、[デバイス] タブが示されています。](./media/CP_Android_DevicesTab_BeforeAfter.png)
 
-* __インターフェイス__: __[アプリ]__ タブの __[おすすめアプリ]__ ボタンと __[すべてのアプリ]__ ボタンが更新されました。__[検索]__ ボタンは浮動アクション ボタンになりました。
+* __インターフェイス__:__[アプリ]__ タブの __[おすすめアプリ]__ ボタンと __[すべてのアプリ]__ ボタンが更新されました。__[検索]__ ボタンは浮動アクション ボタンになりました。
 
 ![左側は、更新前の Android 用ポータル サイト アプリのイメージです。 右側は、更新後の Android 用ポータル サイト アプリのイメージです。 両方のイメージに、[アプリ]、[デバイス]、および [IT に連絡] の使用可能な 3 つのタブから選択されたタブとして、[アプリ] タブが示されています。](./media/CP_Android_AppsTab_BeforeAfter.png)
 
-* __ナビゲーション__: [すべてのアプリ] で __[おすすめ]__、__[すべて]__ および __[カテゴリ]__ のタブ付きビューが表示され、移動がより簡単になります。 __[IT に連絡]__ が簡素化され、読みやすくなりました。
+* __ナビゲーション__:[すべてのアプリ] で __[おすすめ]__、__[すべて]__、__[カテゴリ]__ のタブ付きビューが表示され、移動がより簡単になりました。 __[IT に連絡]__ が簡素化され、読みやすくなりました。
 
 <html>
 <body>
@@ -479,26 +527,7 @@ __変更後__ ![変更後のバージョンの読み込み画面の画像。イ�
 これらは、ユーザー インターフェイスを更新することによってユーザー エクスペリエンスを向上させるために計画されている方法です。
 
 > [!Note]
-> 次のイメージはプレビューであり、発表される製品は示されているバージョンとは異なる場合があることに注意してください。
-
-### <a name="ui-iwp"></a>ポータル Web サイトの新しいユーザー エクスペリエンスの更新<!--2000968-->
-
-UI の更新、ワークフローの簡素化、ユーザー補助機能の改善を備えた新しいポータル Web サイトのエクスペリエンスを、8 月から導入します。 これには、アプリ共有などのお客様の要望に基づいた機能拡張や、よりユーザー フレンドリなエクスペリエンスを提供するための全体的なパフォーマンスの向上などが含まれます。
-
-お客様からのフィードバックに基づいて、既存の機能と使いやすさを大幅に向上させる新しい機能もいくつか追加されています。
-
--   Web サイト全体の UI の機能強化
--   アプリへの直接リンクを共有する機能
-- 大規模なアプリケーション カタログのパフォーマンスの向上
-
-この変更の準備のために何かを行う必要はありません。 更新されたポータル Web サイトが利用可能になったら、お知らせいたします。 ただし、最終的には、更新されたスクリーンショットを使用して、エンド ユーザーのドキュメントを更新する必要があります。 また、Web サイトは iOS アプリの **[アプリ]** セクションに影響するため、iOS のポータル サイト アプリのドキュメントも更新する必要があることに注意してください。  
-
-### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>ポータル Web サイトの UI の更新 <!--1313244 part 2-->
-
-__おすすめアプリの更新__ サイトにおすすめとして選択したアプリを参照できる専用ページを追加し、ホームページのおすすめセクションでいくつかの UI の修正を行いました。
-
-![アプリが表示されたカラフルなタイル。 各アプリの大きな四角形の色は、アプリのロゴに主に使われている色から取られています。 "おすすめアプリ" セクションはポータル サイト アプリの一番上に表示されます。](./media/cp_win10_colorful_tiles_after_1708.png)
-
+> 次のイメージはプレビューであり、発表される製品は示されているバージョンとは異なる場合があります。  
 
 
 ### <a name="see-also"></a>関連項目

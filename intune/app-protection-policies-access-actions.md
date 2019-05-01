@@ -7,21 +7,23 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/20/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 3f53ce0b2afd214dec98082c23f7187b4e69317b
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5b07081ceae3ba07148723490977546fb3edcdd6
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490452"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Intune でアプリ保護ポリシーのアクセス アクションを利用し、データを選択的にワイプする
 
@@ -82,6 +84,8 @@ Android の場合、**[設定]** ドロップダウンを利用して次の設�
 -  [アプリの最小バージョン]
 -  [パッチの最小バージョン]
 -  [デバイスの製造元]
+-  [SafetyNet デバイスの構成証明]
+-  アプリの脅威のスキャン
 
 **[デバイスの製造元]** 設定を使用するには、Android の製造元の一覧をセミコロンで区切って入力します。 デバイスの Android の製造元は、デバイスの設定で確認できます。<br>
 入力例:*Manufacturer A;Manufacturer B* 

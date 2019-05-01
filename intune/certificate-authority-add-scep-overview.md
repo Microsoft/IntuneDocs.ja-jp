@@ -6,20 +6,22 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 07/26/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: de0df4878d2461d2f7c0a022a7e3d305e58aef7f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d042a160d016343c6e8374dff8f74560b9806014
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508486"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>SCEP を使用して Intune でパートナーの証明機関を追加する
 
@@ -69,7 +71,7 @@ Azure Active Directory (Azure AD) アプリケーションを使って、デバ�
 
 Azure AD アプリを登録するのに必要なアクセス許可があることを確認してください。 「[必要なアクセス許可](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions)」で手順が示されています。
 
-**ステップ 1: Azure AD アプリケーションを作成する**
+**手順 1: Azure AD アプリケーションを作成する**
 
 1. [Azure ポータル](https://portal.azure.com)にサインインします。
 2. **[Azure Active Directory]** > **[アプリの登録]** > **[新しいアプリケーションの登録]** の順に選択します。
@@ -78,7 +80,7 @@ Azure AD アプリを登録するのに必要なアクセス許可があるこ�
 
 URL と名前に関するヒントなど、アプリ作成のガイダンスについては、「[Azure Active Directory とアプリケーションの統合](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)」をご覧ください。
 
-**ステップ 2: アクセス許可を付与する**
+**手順 2: アクセス許可を付与する**
 
 アプリケーションを作成した後、Microsoft Intune API に必要なアクセス許可を付与します。
 
@@ -87,7 +89,7 @@ URL と名前に関するヒントなど、アプリ作成のガイダンスに�
 3. **[アクセス許可の選択]** で、**[SCEP challenge validation]\(SCEP チャレンジの検証\)** > **[選択]** を選択します。
 4. **[完了]** を選択して変更を保存します。
 
-**ステップ 3: アプリケーション ID と認証キーを取得する**
+**手順 3: アプリケーション ID と認証キーを取得する**
 
 次に、Azure AD アプリケーションの ID とキーの値を取得します。 次の値が必要です。
 

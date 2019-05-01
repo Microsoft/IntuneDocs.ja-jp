@@ -1,26 +1,29 @@
 ---
-title: iOS アプリ間のデータ転送を管理する | Microsoft Intune
+title: iOS アプリ間のデータ転送を管理する
+titleSuffix: Microsoft Intune
 description: Microsoft Intune でモバイル アプリ管理ポリシーを使用してアプリ間でデータの転送を管理する方法について説明します。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/28/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8e223301b15a408c5f5a444a1904fca9826929ac
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bb109f8c837fe8848ad8cb19c930de765ed381d1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55229901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509516"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune で iOS アプリ間のデータ転送を管理する方法
 
@@ -49,11 +52,15 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 
 2.  次の汎用化された手順を使用して、Intune またはサード パーティの MDM ソリューションで管理するアプリとメール プロファイルをデプロイします。 このエクスペリエンスは*例 1* でも取り上げています。
 
-3.  次のアプリ構成設定でアプリをデプロイします。
+3.  次のアプリ構成設定でアプリをマネージド デバイスにデプロイします。
 
       **キー** = IntuneMAMUPN、**値** = <username@company.com>
 
       例: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+      
+       > [!NOTE]
+       > Intune では、App Configuration ポリシーを登録の種類 "マネージド デバイス" 用にする必要があります。
+       > さらに、アプリは、Intune ポータル サイト (使用可能として設定されている場合) からインストールするか、または必要に応じてデバイスにプッシュする必要があります。 
 
 4.  登録済みデバイスに、Intune またはサード パーティの MDM プロバイダーを使用して **Open in management** ポリシーをデプロイします。
 
@@ -76,7 +83,7 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
    |ManageEngine Mobile Device Manager | IntuneMAMUPN | 文字列型 | %upn% |
 
 
-### <a name="example-2-end-user-experience"></a>例 2: エンドユーザー エクスペリエンス
+### <a name="example-2-end-user-experience"></a>例 2:エンドユーザー エクスペリエンス
 
 1.  ユーザーは、デバイスに Microsoft Word アプリをインストールします。
 

@@ -1,43 +1,43 @@
 ---
-title: Mobile Threat Defense と Microsoft Intune | Microsoft Intune
+title: Mobile Threat Defense と Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Mobile Threat Defense パートナーで Intune Mobile Threat Defense (MTD) 使用し、デバイスのリスクに基づいて会社のリソースへのアクセスを保護します。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/28/2017
-ms.topic: article
+ms.date: 03/20/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 18161e8293ae92420f9437dab18e008e8e57b93a
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e364ad88591b8ecc945702659255d9378723624f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513036"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Mobile Threat Defense の Intune との統合
-
-
-Intune Mobile Threat Defense コネクターを使用すると、選択した Mobile Threat Defense ベンダーをコンプライアンス ポリシーと条件付きアクセス規則の情報ソースとして活用できます。 これにより、IT 管理者が、特に危険にさらされたモバイル デバイスから、Exchange、Sharepoint などの企業リソースに保護レイヤーを追加することができます。
+Intune を使用すると、Mobile Threat Defense ベンダーからのデータを、コンプライアンス ポリシーおよび条件付きアクセス規則の情報ソースとして統合することができます。 この情報を使用すれば、危険にさらされたモバイル デバイスからのアクセスをブロックすることで、Exchange や SharePoint などの会社リソースを容易に保護することができます。  
 
 ## <a name="what-problem-does-this-solve"></a>どのような問題がこれにより解決されますか?
+Mobile Threat Defense ベンダーからの情報を統合することは、モバイル プラットフォームに影響する脅威から会社のリソースを保護する場合に役立ちます。  
 
-会社は物理的な脅威、アプリ ベースの脅威、ネットワーク ベースの脅威などの新種の脅威やオペレーティング システムの脆弱性から機密データを守る必要があります。
-
-これまで、企業は PC の防御を積極的に行ってきましたが、モバイル デバイスは監視や保護のない状態が続いています。 モバイル プラットフォームには、アプリの分離や検証済みコンシューマー アプリ ストアなどの防御手法が組み込まれていますが、依然として高度な攻撃を受けやすい状態にあります。 現在、モバイル デバイスを仕事に利用し、機密情報にアクセスする社員が増えています。 増え続ける高度な攻撃からモバイル デバイスを守る必要があります。
+通常、会社は PC を脆弱性や攻撃から保護することには積極的ですが、一方で、モバイル デバイスは多くの場合、監視や保護のない状態が続きます。 モバイル プラットフォームには、アプリの分離や検証済みコンシューマー アプリ ストアなどの防御手法が組み込まれていますが、依然として高度な攻撃を受けやすい状態にあります。 仕事用のデバイスを使用して機密情報にアクセスする従業員が増えるにつれて、ますます高度化する攻撃からご利用のデバイスとリソースを保護するのに Mobile Threat Defense ベンダーからの情報が役立ちます。  
 
 ## <a name="how-do-the-intune-mobile-threat-defense-connectors-work"></a>Intune Mobile Threat Defense コネクターのしくみ
 
-このコネクターは、Intune と選択した Mobile Threat Defense ベンダーの間の通信チャネルを作成することで、会社のリソースを保護します。 Intune Mobile Threat Defense パートナーは、直感的で簡単に展開できるモバイル デバイス向けアプリケーションを提供します。これらのアプリケーションは、脅威情報を積極的にスキャンして分析し、レポートや強制を目的として Intune と共有します。 
+Intune では、Mobile Threat Defense コネクタを使用して、Intune と選択した Mobile Threat Defense ベンダーとの間に通信チャネルが作成されます。 Intune Mobile Threat Defense パートナーからは、モバイル デバイス用のアプリケーションをデプロイするための直感的で容易な方法が提供されています。 これらのアプリケーションでは積極的にスキャンが行われ、Intune と共有する脅威の情報が分析されます。 Intune では、この情報をレポートや強制を目的として使用できます。  
 
-たとえば、Mobile Threat Defense アプリが、電話またはネットワークが Man in the Middle 攻撃に対して脆弱なネットワークに接続されていることを Mobile Threat Defense ベンダーに報告した場合、この情報は共有されて適切なリスク レベル (低/中/高) に分類されます。その後、Intune で構成済みのリスク レベル許容度と比較されて、デバイスが侵害されたときに選択した特定のリソースへのアクセスを無効にする必要があるかどうかが判断されます。
+次に例を示します。接続された Mobile Threat Defense アプリからは、ご利用のネットワーク上の電話が中間者攻撃に対して脆弱なネットワークに現在接続されていることが Mobile Threat Defense ベンダーに報告されます。 この情報は適切なリスク レベル (低、中、高) に分類されます。 次にこのリスク レベルが、Intune に設定したリスク レベル許容値と比較されます。 この比較に基づいて、デバイスが侵害されている間は、選択した特定のリソースへのアクセスを取り消すことができます。
 
 ## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Intune は Mobile Threat Defense のためにどのようなデータを収集しますか?
 
@@ -80,3 +80,5 @@ Mobile Threat Defense ソリューションによってデバイスが感染し�
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)
 - [Pradeo](pradeo-mobile-threat-defense-connector.md)
 - [Better Mobile](better-mobile-threat-defense-connector.md)
+- Sophos (詳細は近日公開予定)
+- Wandera (詳細は近日公開予定)

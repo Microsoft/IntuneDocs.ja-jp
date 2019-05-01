@@ -9,17 +9,18 @@ ms.date: 7/31/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 680853446b40949309ef406a6cab5b6b0181798a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 4bdaf5768c1b78fbd07a732ee6690e59638fcff1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513775"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Intune で eSIM 携帯電話プロファイルを構成する - パブリック プレビュー
 
@@ -194,7 +195,7 @@ Azure AD グループからデバイスを削除すると、eSIM プロファイ
 - csv ファイルが正しく書式設定されていることを確認してください。 ファイルに重複コード、複数の携帯電話会社、異なるデータ通信プランが含まれていないことを確認します。 各ファイルは携帯電話会社および携帯データ通信プランに固有である必要があることに注意してください。
 - ターゲットとなる eSIM デバイスのみを含む、静的なデバイスの Azure AD グループを作成します。
 - 展開の状態に問題がある場合は、以下を確認します。
-  - **ファイル形式が正しくありません**: このトピックの「**手順 1:携帯電話のアクティブ化コードを追加する**」 (この記事内) で、ファイルを正しく書式設定する方法について参照してください。
+  - **ファイル形式が正しくありません**: 「**手順 1: 携帯電話のアクティブ化コードを追加する**」 (この記事内) で、ファイルを正しく書式設定する方法について参照してください。
   - **携帯電話アクティブ化エラー、携帯電話会社に問い合わせる**: このアクティブ化コードは、ネットワーク内でアクティブ化されていない可能性があります。 または、プロファイルのダウンロードと携帯電話のアクティブ化に失敗しています。
 
 ## <a name="next-steps"></a>次の手順

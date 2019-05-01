@@ -9,18 +9,20 @@ ms.date: 05/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 675e45a7f49a943cb57135c141a9331ba24fabe7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d43c999cf5dc90d62b9409e3c4565502b773ddf4
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508233"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune サービスの説明
 
@@ -35,7 +37,7 @@ Intune は ID とアクセス制御のために Azure Active Directory (Azure AD
 Intune でデバイス、アプリ、企業データを管理し、保護する方法については、[Intune 文書](https://docs.microsoft.com/intune/)をご覧ください。
 
 ## <a name="30-day-free-trial"></a>30 日間の無料評価版
-Intune は、100 ユーザー ライセンスを含む 30 日間の無料試用版で使用することができます。 無料試用版を開始する場合は、[Intune のサインアップ ページ](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)にアクセスしてください。 お客様の組織が Enterprise Agreement または同等のボリューム ライセンス契約を結んでいる場合は、Microsoft 担当者に連絡して無料試用版の設定を依頼してください。
+Intune は、100 ユーザー ライセンスを含む 30 日間の無料試用版で使用することができます。 無料試用版を開始する場合は、[Intune のサインアップ ページ](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)にアクセスしてください。 お客様の組織が Enterprise Agreement または同等のボリューム ライセンス契約を結んでいる場合は、Microsoft 担当者に連絡して無料試用版の設定を依頼してください。
 
 > [!NOTE]
 > お客様の組織が Microsoft Online Services の職場や学校用アカウントをお持ちで、試用期間の終了後に Intune サブスクリプションを本番環境で継続して使用する場合、ページで **[サインイン]** オプションを選択し、組織のグローバル管理者アカウントを使用して認証を受けてください。 こうすることで、Intune 試用版が既存の職場や学校用アカウントと関連付けられます。
@@ -57,7 +59,7 @@ Microsoft では、Intune オンボーディング特典で、適格なプラン
 
 - [Microsoft Intune の新機能](whats-new.md) このトピックは、月ごとのサービス更新で更新されます。また、ポータル サイト アプリなどのアプリがリリースされた場合には週ごとに更新されます。
 
-- 重要なサービスの更新情報も、[Office 365 管理ポータル](https://portal.office.com/Admin/Default.aspx)のメッセージ センターで告知されます。 コンパニオン [Office 365 Admin Mobile アプリ](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)をインストールしている場合、モバイル デバイスで通知を受け取ることができます。 Office 365 メッセージ センターの利用方法については[こちら](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates)をご覧ください。
+- 重要なサービスの更新情報も、[Microsoft 365 管理センター](https://admin.microsoft.com/)のメッセージ センターで告知されます。 コンパニオン [Office 365 Admin Mobile アプリ](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)をインストールしている場合、モバイル デバイスで通知を受け取ることができます。 Office 365 メッセージ センターの利用方法については[こちら](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates)をご覧ください。
 
     いくつかの役立つヒント:
 
@@ -76,7 +78,7 @@ Microsoft では、Intune オンボーディング特典で、適格なプラン
     - [Intune サポートのブログ](https://blogs.technet.microsoft.com/intunesupport/)
 
 >[!Note]
->Intune のサービス正常性は、[Office 365 管理ポータル](https://portal.office.com/Admin/Default.aspx)で監視できます。 左側のウィンドウで **[サービス正常性]** を選択します。 また、[Office 365 Admin Mobile アプリ](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)を使用して、サービスの正常性を表示することもできます。
+>Intune のサービス正常性は、[Microsoft 365 管理センター](https://admin.microsoft.com)で監視できます。 左側のウィンドウで **[サービス正常性]** を選択します。 また、[Office 365 Admin Mobile アプリ](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)を使用して、サービスの正常性を表示することもできます。
 
 ## <a name="types-of-notices-microsoft-provides-about-the-intune-service"></a>Intune サービスに関して Microsoft が提供する通知の種類
 
@@ -101,7 +103,7 @@ You can set up Intune in several ways to manage and help protect your company's 
 - **Intune with System Center Configuration Manager.** Use the Configuration Manager management console to manage computers and mobile devices in your enterprise. This configuration can help you to manage all your organization’s devices through a single console, the Configuration Manager Admin Console. Configuration Manager supports large numbers of mobile devices, servers, and computers. For more about Configuration Manager, see [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management). For more help deciding which approach is right for you, see [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).--->
 
 ## <a name="language-support"></a>言語サポート
-Intune は Azure Portal で実行されていますが、Azure Portal がサポートしている言語は、簡体字中国語、繁体字中国語、チェコ語、オランダ語、英語、ドイツ語、ハンガリー語、イタリア語、日本語、ポルトガル (ブラジル) 語、ポルトガル (ポルトガル) 語、ロシア語、スペイン語、英語、フランス語、韓国語、ポーランド語、スウェーデン語、およびトルコ語です。
+Intune は Azure portal で実行されていますが、Azure portal によりサポートされている言語は、簡体字中国語、繁体字中国語、チェコ語、オランダ語、英語、ドイツ語、ハンガリー語、イタリア語、日本語、ポルトガル (ブラジル) 語、ポルトガル (ポルトガル) 語、ロシア語、スペイン語、英語、フランス語、韓国語、ポーランド語、スウェーデン語、トルコ語です。
 
 Intune 管理コンソールとユーザーが対面するモバイル エクスペリエンスでは、Azure ポータルでサポートされている言語だけでなくデンマーク語、ギリシャ語、フィンランド語、ノルウェー語、およびルーマニア語もサポートしています。
 

@@ -10,6 +10,7 @@ ms.date: 12/06/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e51c13136b5dd79ba9ff395008c6a8cb3e67e9e4
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 1ab718cd087757211ad4e84cbba39808cf9de7d3
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61515507"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Intune と Windows Autopilot を使用して Hybrid Azure AD 参加済みデバイスをデプロイする (プレビュー)
 Intune と Windows Autopilot を使用して、Hybrid Azure Active Directory (Azure AD) 参加済みデバイスを設定できます。 そのためには、この記事の手順のようにします。
@@ -36,6 +37,7 @@ Intune と Windows Autopilot を使用して、Hybrid Azure Active Directory (Az
 - インターネットにアクセスできる。
 - Active Directory にアクセスできる (VPN 接続は非サポート)。
 - OOBE (Out-of-Box Experience) を使用している。
+- 参加を試みるドメインのドメイン コントローラーを ping できる。
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Windows 10 の自動登録を設定する
 
@@ -119,7 +121,7 @@ Active Directory 用の Intune コネクタは、Windows Server 2016 以降を�
 
 ### <a name="configure-web-proxy-settings"></a>Web プロキシ設定の構成
 
-ネットワーク環境に Web プロキシがある場合は、「[既存のオンプレミス プロキシ サーバーと連携する](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers)」を参照して、Active Directory 用の Intune コネクタが正しく動作することを確認します。
+ネットワーク環境に Web プロキシがある場合は、「[既存のオンプレミス プロキシ サーバーと連携する](autopilot-hybrid-connector-proxy.md)」を参照して、Active Directory 用の Intune コネクタが正しく動作することを確認します。
 
 
 ## <a name="create-a-device-group"></a>デバイス グループを作成する
@@ -210,6 +212,9 @@ Autopilot Deployment プロファイルは、Autopilot デバイスを構成す�
 1. **[OK]** > **[作成]** を選択します。  
     プロファイルが作成されて、一覧に表示されます。
 1. プロファイルを割り当てるには、「[デバイス プロファイルを割り当てる](device-profile-assign.md#assign-a-device-profile)」の手順のようにします。 
+
+> [!NOTE]
+> Hybrid Azure AD Join 用の Windows Autopilot の名前付け機能では、%SERIAL% などの変数はサポートされません。サポートされるのは、コンピューター名のプレフィックスのみです。
 
 ## <a name="next-steps"></a>次の手順
 
