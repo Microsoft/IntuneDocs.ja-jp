@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5106a4f147828310fc1b4a41ef4065d10bdaeecf
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: 0d0623e9d12132ac470813d65510bc2c76379109
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490728"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871473"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように iOS デバイスを設定する
 
@@ -195,7 +195,7 @@ ms.locfileid: "58490728"
 
 #### <a name="safari"></a>Safari
 
-- **Safari**: デバイスでの Safari ブラウザーの使用を**ブロック**します。 **[未構成]** では、ユーザーは Safari ブラウザーを使用できます。
+- **[Safari (supervised only)]\(Safari (監視モードのみ)\)**: デバイスでの Safari ブラウザーの使用を**ブロック**します。 **[未構成]** では、ユーザーは Safari ブラウザーを使用できます。
 - **[オートフィル]**: **[ブロック]** を選択すると、デバイス上の Safari のオートフィル機能が無効になります。 **[未構成]** では、ユーザーが Web ブラウザー内のオートコンプリート設定を変更できます。
 - **[Cookie]**: デバイスで Cookie を処理する方法を選択します。 次のようなオプションがあります。
   - Allow
@@ -290,7 +290,7 @@ ms.locfileid: "58490728"
 ## <a name="cloud-and-storage"></a>クラウドとストレージ
 
 - **[iCloud へのバックアップ]**: **[未構成]** では、ユーザーが iCloud にデバイスをバックアップできるようになります。 **[ブロック]** を選択すると、ユーザーがデバイスを iCloud にバックアップできなくなります。
-- **[Block iCloud Document sync]\(iCloud ドキュメントの同期をブロックする\)**: **[未構成]** では、ドキュメントとキー値を iCloud 記憶域スペースに同期できるようになります。 **[ブロック]** では、iCloud がドキュメントとデータと同期しなくなります。
+- **[iCloud へのドキュメントの同期 (監視下のみ)]**: **[未構成]** では、ドキュメントとキー値を iCloud 記憶域スペースに同期できるようになります。 **[ブロック]** では、iCloud がドキュメントとデータと同期しなくなります。
 - **[iCloud へのフォト ストリームの同期]**: **[未構成]** では、ユーザーがデバイスの **[My Photo Stream]\(マイ フォト ストリーム\)** を有効にして iCloud と同期することができ、すべてのユーザー デバイスで写真を使用できるようになります。 **[ブロック]** では、フォト ストリームを iCloud と同期できなくなります。
 - **[暗号化されたバックアップ]**: **[必要]** では、デバイス バックアップを暗号化する必要があります。
 - **[iCloud フォトライブラリ]**: **[ブロック]** に設定すると、写真やビデオをクラウドに保存するための iCloud フォト ライブラリを使用できなくなります。 iCloud フォト ライブラリからデバイスに完全にダウンロードされていない写真はすべてデバイスから削除されます。 **[未構成]** では、iCloud フォト ライブラリを使用できるようになります。

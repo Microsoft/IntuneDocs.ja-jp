@@ -1,6 +1,6 @@
 ---
 title: アプリのインストールに関する問題のトラブルシューティング
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune のトラブルシューティング ウィンドウを使用して、アプリのインストールに関する問題をトラブルシューティングします。
 keywords: ''
 author: Erikre
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a5e000a973932db0bbaa215ea94976219ff905c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 574f509383891ff3e8e0f4c1b04a19832a378829
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57577848"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799503"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>アプリのインストールに関する問題のトラブルシューティング
 
@@ -33,7 +33,7 @@ Microsoft Intune の MDM で管理されたデバイスでは、アプリのイ�
 Intune では、特定のユーザーのデバイスにインストールされているアプリに基づいて、アプリのトラブルシューティングの詳細が提供されます。
 
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
-2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで、**[トラブルシューティング]** を選択します。
 4. **[ユーザーの選択]** をクリックして、トラブルシューティングするユーザーを選択します。 **[ユーザーの選択]** ウィンドウが表示されます。
 5. 名前または電子メール アドレスを入力して、ユーザーを選択します。 ウィンドウの下部にある **[選択]** をクリックします。 ユーザーに対するトラブルシューティング情報が、**[トラブルシューティング]** ウィンドウに表示されます。 

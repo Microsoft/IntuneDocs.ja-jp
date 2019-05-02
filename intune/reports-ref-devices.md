@@ -1,12 +1,12 @@
 ---
 title: デバイス - Intune データ ウェアハウス
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune データ ウェアハウス API にあるエンティティ コレクションのデバイス カテゴリのための参照トピック。
 keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 29213400b5baf9705c188bb45b3666b65262d577
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: c361c6054cf52c802155587084eaea76e024f78c
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358235"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429184"
 ---
 # <a name="reference-for-devices-entities"></a>デバイス エンティティの参照
 
@@ -80,6 +80,7 @@ ms.locfileid: "58358235"
 |-------------------------------|---------------------------------------------------------------------------|
 | dateKey                       | この登録アクティビティが記録された日付のキー。               |
 | deviceEnrollmentTypeKey       | 登録の種類のキー。                                        |
+| deviceTypeKey                 | デバイスの種類のキー。                                                |
 | enrollmentEventStatusKey      | 登録の成功または失敗を示す状態のキー。    |
 | enrollmentFailureCategoryKey  | 登録エラー カテゴリのキー (登録が失敗した場合)。        |
 | enrollmentFailureReasonKey    | 登録エラーの理由のキー (登録が失敗した場合)。          |
@@ -224,46 +225,61 @@ ms.locfileid: "58358235"
 
 **Devices** エンティティには、管理中のすべての登録済みデバイスとそれに対応するプロパティが一覧表示されます。
 
-| プロパティ  | 説明 |
-|---------|------------|
-| DeviceKey | データ ウェアハウスにおけるデバイスを示す一意識別子 - 代理キー。 |
-| DeviceId | デバイスの一意識別子。 |
-| DeviceName | デバイスに名前を付けられるプラットフォーム上にあるデバイスの名前。 その他のプラットフォームの場合、Intune がその他のプロパティから名前を作成します。 この属性は一部のデバイスで利用できません。 |
-| DeviceTypeKey | このデバイスの種類属性のキー。 |
-| OwnerTypeKey | このデバイスの所有者の種類属性のキー (会社、個人、不明) |
-| objectSourceKey | この列は無視してください。 |
-| ManagementAgentKey | このデバイスに関連付けられている管理エージェントのキー |
-| ManagementStateKey | このデバイスに関連付けられている管理状態を示すキーであり、リモート アクションの最新の状態を示すか、脱獄/ルート化状態を示します |
-| OSVersion | OS のバージョン |
-| OSMajorVersion | OS バージョンのメジャー バージョン コンポーネント (major.minor.build.revision)。 |
-| OSMinorVersion | OS バージョンのマイナー バージョン コンポーネント (major.minor.build.revision)。 |
-| OSBuildNumber | OS バージョンのビルド バージョン コンポーネント (major.minor.build.revision)。 |
-| OSRevisionNumber | OS バージョンのリビジョン バージョン コンポーネント (major.minor.build.revision)。 |
-| SerialNumber | デバイスのシリアル番号 (使用可能な場合)。 |
-| RowLastModifiedDateTimeUTC | このレコードが変更された最後の時刻 |
-| DeviceAction | 最後に発行されたデバイス アクション (今回は無視してください) |
-| 製造元 | デバイスの製造元。 |
-| モデル | デバイスのモデル。 |
-| IsDeleted | Intune によるデバイスの管理が終了している場合、True に設定されます。 最後に確認されている状態が保存されます。 |
-| AndroidSecurityPatchLevel |デバイスの最新のセキュリティ更新プログラムの日付。 |
+|          プロパティ          |                                                                                       説明                                                                                      |
+|:--------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| DeviceKey                  | データ ウェアハウスにおけるデバイスを示す一意識別子 - 代理キー。                                                                                                               |
+| DeviceId                   | デバイスの一意識別子。                                                                                                                                                     |
+| DeviceName                 | デバイスに名前を付けられるプラットフォーム上にあるデバイスの名前。 その他のプラットフォームの場合、Intune がその他のプロパティから名前を作成します。 この属性は一部のデバイスで利用できません。 |
+| DeviceTypeKey              | このデバイスの種類属性のキー。                                                                                                                                    |
+| DeviceRegistrationState    | このデバイスのクライアント登録状態属性のキー。                                                                                                                      |
+| OwnerTypeKey               | このデバイスの所有者の種類属性のキー: 会社、個人、不明。                                                                                                    |
+| EnrolledDateTime           | このデバイスが登録された日時。                                                                                                                                         |
+| LastSyncDateTime           | Intune によるデバイス チェックインで最後に確認されているもの。                                                                                                                                              |
+| ManagementAgentKey         | このデバイスに関連付けられている管理エージェントのキー。                                                                                                                             |
+| ManagementStateKey         | このデバイスに関連付けられている管理状態を示すキーであり、リモート アクションの最新の状態を示すか、脱獄/ルート化状態を示します。                                                |
+| AzureADDeviceId            | このデバイスの Azure deviceID。                                                                                                                                                  |
+| AzureADRegistered          | デバイスが Azure Active Directory に登録されているかどうか。                                                                                                                             |
+| DeviceCategoryKey          | このデバイスに関連付けられているカテゴリのキー。                                                                                                                                     |
+| DeviceEnrollmentType       | このデバイスに関連付けられている登録の種類を示すキーであり、登録の方法を示します。                                                                                             |
+| ComplianceStateKey         | このデバイスに関連付けられているコンプライアンスの状態のキー。                                                                                                                             |
+| OSVersion                  | デバイスのオペレーティング システムのバージョン。                                                                                                                                                |
+| EasDeviceId                | デバイスの Exchange ActiveSync ID。                                                                                                                                                  |
+| SerialNumber               | SerialNumber                                                                                                                                                                           |
+| UserId                     | デバイスに関連付けられているユーザーの一意識別子。                                                                                                                           |
+| RowLastModifiedDateTimeUTC | このデバイスがデータ ウェアハウスで最後に変更されたときの UTC 日時。                                                                                                       |
+| 製造元               | デバイスの製造元                                                                                                                                                             |
+| モデル                      | デバイスのモデル                                                                                                                                                                    |
+| OperatingSystem            | デバイスのオペレーティング システム。 Windows、iOS など。                                                                                                                                   |
+| IsDeleted                  | デバイスを削除されているかどうかを示すバイナリ。                                                                                                                                 |
+| AndroidSecurityPatchLevel  | Android セキュリティ パッチ レベル                                                                                                                                                           |
+| MEID                       | MEID                                                                                                                                                                                   |
+| isSupervised               | デバイスの監視状態                                                                                                                                                               |
+| FreeStorageSpaceInBytes    | ストレージの空き容量 (バイト単位)。                                                                                                                                                                 |
+| TotalStorageSpaceInBytes   | ストレージの合計容量 (バイト単位)。                                                                                                                                                                |
+| EncryptionState            | デバイスの暗号化の状態。                                                                                                                                                      |
+| SubscriberCarrier          | デバイスの通信事業者                                                                                                                                                       |
+| PhoneNumber                | デバイスの電話番号                                                                                                                                                             |
+| IMEI                       | IMEI                                                                                                                                                                                   |
+| CellularTechnology         | デバイスの携帯電話テクノロジ                                                                                                                                                    |
+| WiFiMacAddress             | Wi-Fi MAC                                                                                                                                                                              |
 
 ## <a name="devicepropertyhistory"></a>DevicePropertyHistory
 
 **DevicePropertyHistory** エンティティには、デバイス テーブルと過去 90 日間の各デバイス レコードの日次スナップショットと同じプロパティが与えられます。 DateKey 列は、各行の日を示します。
 
-| プロパティ  | 説明 |
-|---------|------------|
-| DateKey |日付テーブルの参照であり、日を示します。 |
-| DeviceKey |データ ウェアハウスにおけるデバイスを示す一意識別子 - 代理キー。 これは、Intune デバイス ID が含まれるデバイス テーブルの参照です。 |
-| DeviceName |デバイスに名前を付けられるプラットフォーム上にあるデバイスの名前。 その他のプラットフォームの場合、Intune がその他のプロパティから名前を作成します。 この属性は一部のデバイスで利用できません。 |
-| OwnerTypeKey |このデバイスの所有者の種類属性のキー (会社、個人、不明) |
-| objectSourceKey |この列は無視してください。 |
-| ManagementStateKey |このデバイスに関連付けられている管理状態を示すキーであり、リモート アクションの最新の状態を示すか、脱獄/ルート化状態を示します |
-| OSVersion |OS のバージョン。 |
-| OSMajorVersion |OS バージョンのメジャー バージョン コンポーネント (major.minor.build.revision)。 |
-| OSMinorVersion |OS バージョンのマイナー バージョン コンポーネント (major.minor.build.revision)。 |
-| OSBuildNumber |OS バージョンのビルド バージョン コンポーネント (major.minor.build.revision)。 |
-| DeviceAction |最後に発行されたデバイス アクション (今回は無視してください) |
+|          プロパティ          |                                                                                      説明                                                                                     |
+|:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| DateKey                    | 日付テーブルの参照であり、日を示します。                                                                                                                                          |
+| DeviceKey                  | データ ウェアハウスでのデバイスの一意識別子 - 代理キー。 これは、Intune デバイス ID が含まれるデバイス テーブルの参照です。                               |
+| DeviceName                 | デバイスに名前を付けられるプラットフォーム上にあるデバイスの名前。 その他のプラットフォームの場合、Intune がその他のプロパティから名前を作成します。 この属性は一部のデバイスでは利用できません。 |
+| DeviceRegistrationStateKey | このデバイスのデバイス登録状態属性のキー。                                                                                                                    |
+| OwnerTypeKey               | このデバイスの所有者の種類属性のキー: 会社、個人、不明                                                                                                  |
+| ManagementStateKey         | このデバイスに関連付けられている管理状態を示すキーであり、リモート アクションの最新の状態を示すか、脱獄/ルート化状態を示します。                                                |
+| AzureADRegistered          | デバイスが Azure Active Directory に登録されているかどうか。                                                                                                                             |
+| ComplianceStateKey         | ComplianceState へのキー。                                                                                                                                                            |
+| OSVersion                  | OS のバージョン。                                                                                                                                                                          |
+| JailBroken                 | デバイスが脱獄またはルート化されているかどうか。                                                                                                                                         |
+| DeviceCategoryKey          | このデバイスのデバイス カテゴリ属性のキー。 
 
 ## <a name="applicationinventory"></a>ApplicationInventory
 

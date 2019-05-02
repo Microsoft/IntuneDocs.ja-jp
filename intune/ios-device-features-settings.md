@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 04/01/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34f0869b46323606d69891c3761bfbc154f3b6a3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: c2a94be7ebc369005f92809d57c8e55076972df3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566626"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799267"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>Intune で iOS の一般的な機能を使用する iOS デバイスの設定
 
@@ -96,6 +96,9 @@ AirPrinter サーバーを追加するには、プリンターの IP アドレ�
 
       3. **[追加]** を選びます。 デバイスの Dock には最大 **20** ページまで追加できます。
       4. **[OK]** を選択して変更を保存します。
+
+> [!NOTE]
+> ドッキングの設定を使用してアイコンを追加して、ホーム画面とページ上のアイコンがロックされ、移動することはできません。 IOS および Apple の MDM ポリシーを設計してあります。
 
 #### <a name="example"></a>例
 

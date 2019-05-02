@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 04/01/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28f8a589f20cb63ad4f9873942e9ad511d729b37
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 535f66c68b066454ce9706b1dd1d7a4fce5c265c
+ms.sourcegitcommit: e63e3debb5f4d9a757f767913e72e39742137b17
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566456"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58788489"
 ---
 # <a name="windows-10-and-later-settings-to-manage-shared-devices-using-intune"></a>Intune を使用して共有デバイスを管理するための Windows 10 以降の設定
 
@@ -60,6 +60,9 @@ Intune でのこの機能の詳細については、[共有 PC またはマル�
 - **[教育ポリシー]**: より制限の厳しい、学校で使用されるデバイスの推奨設定を使う場合は、**[有効]** を選択します。 **[無効]** を選択すると、既定および推奨される教育ポリシーが使用されません。 **[未構成]** (既定値) の場合、この設定は Intune による管理対象外のままとなり、デバイスでこの設定を制御するためのポリシーはプッシュされません。
 
   教育ポリシーで行う内容について詳しくは、「[教育ユーザーのための Windows 10 構成の推奨事項](https://docs.microsoft.com/education/windows/configure-windows-for-education)」を参照してください。
+
+> [!TIP]
+> [共有またはゲスト PC 設定](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc)(別の docs web サイトを開きます) は概念と共有モードで設定できるグループ ポリシーを含む、この Windows 10 機能の優れたリソースです。
 
 ## <a name="next-steps"></a>次の手順
 

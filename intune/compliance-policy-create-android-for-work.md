@@ -1,65 +1,44 @@
 ---
-title: Microsoft Intune で Android エンタープライズのコンプライアンス ポリシーを作成する - Azure | Microsoft Docs
-description: Android エンタープライズまたは仕事用プロファイル デバイス用の Microsoft Intune デバイス コンプライアンス ポリシーを作成または構成します。 脱獄されたデバイスを許可し、許容可能な脅威レベルを設定し、Google Play を確認し、オペレーティング システムの最小および最大バージョンを入力し、パスワードの要件を選択し、サイドローディング アプリケーションを許可します。
+title: Microsoft Intune での Android エンタープライズ デバイスの設定 - Azure | Microsoft Docs
+description: Microsoft Intune で Android エンタープライズ デバイスのコンプライアンスの設定時に使用するすべての設定の一覧を参照してください。 パスワード規則を設定、オペレーティング システムの最小値または最大バージョンを選択、特定のアプリの制限、再利用のパスワード、および詳細を防ぐためです。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 04/04/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
-ms.reviewer: muhosabe
+ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6f1f07c1cb7b5dbe81120fd678f429a996f230e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 16db0acab84a1095c40e9a92648c75c2581187cd
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566235"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423562"
 ---
-# <a name="add-a-device-compliance-policy-for-android-enterprise-devices-in-intune"></a>Intune で Android エンタープライズ デバイス用のデバイス コンプライアンス ポリシーを追加する
+# <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Android のエンタープライズ設定または Intune の使用は非準拠としてデバイスをマークするには
 
-Intune を使用して組織のリソースを保護する場合、デバイスのコンプライアンス ポリシーは重要な機能です。 Intune では、パスワードの長さなど、デバイスが準拠と見なされるために満たす必要がある規則と設定を作成できます。 デバイスが準拠していない場合は、[条件付きアクセス](conditional-access.md)を使用してデータとリソースへのアクセスをブロックできます。 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-また、デバイスのレポートを取得し、コンプライアンス違反の場合は、通知メールをユーザーに送信するなど対応を実行できます。 コンプライアンス ポリシーの詳細については、[デバイス コンプライアンスの概要](device-compliance-get-started.md)に関するページを参照してください。
+この記事では、Intune で Android エンタープライズ デバイスで構成できるさまざまなコンプライアンス設定の一覧です。 モバイル デバイス管理 (MDM) ソリューションの一部として、非準拠としてデバイスを root 化された (脱獄) をマークする、許容脅威レベルを設定、Google Play Protect の場合、その他を有効にするこれらの設定を使用します。
 
-この記事では、Android エンタープライズを実行しているデバイスのコンプライアンス ポリシー内で使用できる設定について説明します。
+この機能は、以下に適用されます。
 
-## <a name="non-compliance-and-conditional-access"></a>コンプライアンス違反および条件付きアクセス
+- Android エンタープライズ
 
-次の表では、条件付きアクセス ポリシーとコンプライアンス ポリシーを使用する場合に非準拠設定をどのように管理するかについて説明しています。
+Intune 管理者は、組織のリソースを保護するために、これらのコンプライアンス設定を使用します。 コンプライアンス ポリシーの詳細については、[デバイス コンプライアンスの概要](device-compliance-get-started.md)に関するページを参照してください。
 
---------------------------
+## <a name="before-you-begin"></a>始める前に
 
-|**ポリシー設定**| **Android エンタープライズ プロファイル** |
-| --- | --- |
-| **PIN またはパスワードの構成** |  検疫済み |
-| **デバイスの暗号化** |  検疫済み |
-| **脱獄またはルート化されたデバイス** | 検疫済み (設定ではありません) |
-| **電子メールのプロファイル** | 適用できません |
-| **最小 OS バージョン** | 検疫済み |
-| **最大 OS バージョン** | 検疫済み |
-| **Windows 正常性構成証明書** |適用できません |
-
-**修復** = デバイス オペレーティング システムによって準拠が強制されます  たとえば、ユーザーは PIN を設定するように強制されます。
-
-**検疫済み** = デバイス オペレーティング システムによって準拠が強制されません。 たとえば、Android デバイスでは、デバイスを暗号化するようにユーザーに強制していません。 デバイスが準拠していない場合、次のアクションが行われます。
-
-  - ユーザーに条件付きアクセス ポリシーを適用すると、デバイスがブロックされます。
-  - ポータル サイトは、コンプライアンスの問題をユーザーに通知します。
-
-## <a name="create-a-device-compliance-policy"></a>デバイス コンプライアンス ポリシーの作成
-
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-4. **[プラットフォーム]** で、**[Android エンタープライズ]** を選択します。 
-5. **[設定]、[構成]** の順に選択します。 この記事の説明に従って、**[デバイスのヘルス]**、**[デバイス プロパティ]**、および **[システム セキュリティ]** の設定を入力します。
+[コンプライアンス ポリシーの作成](create-compliance-policy.md#create-the-policy)。 **[プラットフォーム]** で、**[Android エンタープライズ]** を選択します。
 
 ## <a name="device-health"></a>Device health
 
@@ -69,6 +48,9 @@ Intune を使用して組織のリソースを保護する場合、デバイス�
   - **[低]**: 存在する脅威が低レベルの場合のみ、デバイスは準拠として評価されます。 低レベルより高い脅威が存在する場合、デバイスは非準拠状態になります。
   - **[中]**: デバイスに存在する脅威が低レベルまたは中レベルの場合、デバイスは準拠として評価されます。 デバイスで高レベルの脅威が検出された場合は、非準拠と判定されます。
   - **[高]**: すべての脅威レベルが許容されるため、最も安全性の低いオプションとなります。 このソリューションをレポート目的のみで使用した場合、役立つ場合があります。
+
+### <a name="google-play-protect"></a>Google Play プロテクトします。
+
 - **[Google Play サービスが構成されています]**: Google Play 開発者サービス アプリがインストールされ、有効になっている**必要があります**。 Google Play 開発者サービスはセキュリティ更新プログラムを許可し、Google の認定デバイスの多くのセキュリティ機能に対してベースレベルの依存関係となっています。 **[未構成]** (既定値) を選択した場合、準拠しているか準拠していないかについて、この設定は評価されません。
 - **[最新のセキュリティ プロバイダー]**: 最新のセキュリティ プロバイダーが既知の脆弱性からデバイスを保護できるようになっている**必要があります**。 **[未構成]** (既定値) を選択した場合、準拠しているか準拠していないかについて、この設定は評価されません。
 - **[SafetyNet デバイス構成証明]**: 満たす必要がある [SafetyNet デバイス構成証明](https://developer.android.com/training/safetynet/attestation.html)のレベルを入力します。 次のようなオプションがあります。
@@ -76,9 +58,8 @@ Intune を使用して組織のリソースを保護する場合、デバイス�
   - **基本的な整合性のチェック**
   - **基本的な整合性と認定デバイスのチェック**
 
-#### <a name="threat-scan-on-apps"></a>アプリの脅威のスキャン
-
-Android エンタープライズ デバイスでは、**[アプリの脅威のスキャン]** 設定が構成ポリシーです。 [Android エンタープライズ デバイスの制限の設定](device-restrictions-android-for-work.md)に関するページを参照してください。
+> [!NOTE]
+> Android エンタープライズ デバイスの場合は、**アプリの脅威のスキャン**デバイスのポリシーを構成します。 管理者の構成ポリシーを使用して、デバイスの設定が有効にできます。 [Android エンタープライズ デバイスの制限の設定](device-restrictions-android-for-work.md)に関するページを参照してください。
 
 ## <a name="device-properties-settings"></a>デバイスのプロパティの設定
 
@@ -136,31 +117,10 @@ Android エンタープライズ デバイスでは、**[アプリの脅威の�
 
 - **[最低限のセキュリティ パッチ レベル]**: デバイスに含めることができる最も古いセキュリティ パッチ レベルを選択します。 修正プログラムがこのレベルに達していないデバイスは非準拠になります。 日付は *YYYY-MM-DD* 形式で入力する必要があります。
 
-完了したら、**[OK]** > **[OK]** を選択して、変更内容を保存します。
-
-## <a name="actions-for-noncompliance"></a>コンプライアンス非対応に対するアクション
-
-**[コンプライアンス非対応に対するアクション]** を選択します。 既定のアクションでは、デバイスがすぐに非対応としてマークされます。
-
-デバイスを非対応としてマークするスケジュールを更新することができます (たとえば、1 日後)。 デバイスが非対応になったとき、ユーザーにメールを送信する 2 つ目のアクションを構成することもできます。
-
-ユーザーへの通知メールの作成など、詳細については、[非対応デバイスに対するアクションの追加](actions-for-noncompliance.md)に関するページを参照してください。
-
-## <a name="scope-tags"></a>スコープのタグ
-
-スコープのタグは、営業、エンジニアリング、人事などの特定のグループにポリシーを割り当てるための優れた方法です。 コンプライアンス ポリシーにスコープのタグを追加することができます。 「[スコープのタグを使用してポリシーをフィルター処理する](scope-tags.md)」を参照してください。 
-
-## <a name="assign-user-groups"></a>ユーザー グループを割り当てる
-
-ポリシーが作成されても、ポリシーを割り当てるまで何も行われません。 ポリシーを割り当てるには: 
-
-1. 構成済みのポリシーを選択します。 既存のポリシーは、**[デバイスのポリシー準拠]** > **[ポリシー]** で確認できます。
-2. ポリシーを選択し、**[割り当て]** を選択します。 Azure Active Directory (AD) のセキュリティ グループは、含めることも除外することもできます。
-3. **[選択したグループ]** を選択すると、Azure AD セキュリティ グループが表示されます。 このポリシーで適用するユーザー グループを選択し、**[保存]** を選択してユーザーにポリシーを展開します。
-
-ポリシーがユーザーに適用されました。 ポリシーの対象となっているユーザーが使用しているデバイスに対して、コンプライアンスに関する評価が行われます。
+**[OK]** > **[作成]** を選択して変更を保存します。
 
 ## <a name="next-steps"></a>次の手順
-[非準拠デバイスに対する自動メール送信とアクションの追加](actions-for-noncompliance.md)  
-[Intune デバイスのコンプライアンス対応ポリシーの監視](compliance-policy-monitor.md)  
-[Android 向けのコンプライアンス ポリシー設定](compliance-policy-create-android.md)
+
+- [非対応に対するアクションを追加](actions-for-noncompliance.md)と[フィルター ポリシー スコープのタグを使用して、](scope-tags.md)します。
+- [コンプライアンス ポリシーを監視](compliance-policy-monitor.md)します。
+- [Android デバイス向けのコンプライアンス ポリシー設定](compliance-policy-create-android.md)

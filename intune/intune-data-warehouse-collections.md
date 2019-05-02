@@ -1,12 +1,12 @@
 ---
 title: Intune データ ウェアハウスのコレクション
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune データ ウェアハウスのコレクションでは、データ ウェアハウス API に関する詳細が提供されます。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: 00a0bd4936d1ad8ba8dd52f1839e7d42505db60e
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358319"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429226"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune データ ウェアハウスのコレクション
 
@@ -428,6 +428,85 @@ ms.locfileid: "58358319"
 | ExtensionVersionKey | IntuneManagementExtension バージョンの一意識別子。 | 1       |
 | ExtensionVersion    | 4 桁のバージョン番号。                                   | 1.0.2.0 |
 
+## <a name="mamapplications"></a>MamApplications
+
+**MamApplication** エンティティは、企業内登録なしで、モバイル アプリケーション管理 (MAM) 経由で管理される基幹業務 (LOB) アプリを一覧表示します。
+
+| プロパティ | 説明 | 例 |
+|---------|------------|--------|
+| mamApplicationKey |MAM アプリケーションの一意の識別子。 | 432 |
+| mamApplicationName |MAM アプリケーションの名前。 |MAM アプリケーション名の例 |
+| mamApplicationId |MAM アプリのアプリケーション ID。 | 123 |
+| IsDeleted |この MAM アプリ レコードが更新されているかどうかを示します。 <br>True - MAM アプリには新しいレコードがあり、そのフィールドはこのテーブルで更新されています。 <br>False - この MAM アプリの最新のレコード。 |真/偽 |
+| StartDateInclusiveUTC |この MAM アプリがデータ ウェアハウスで作成されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
+| DeletedDateUTC |IsDeleted が True に変更されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
+| RowLastModifiedDateTimeUTC |この MAM アプリがデータ ウェアハウスで最後に変更されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
+
+
+## <a name="mamapplicationinstances"></a>MamApplicationInstances
+
+**MamApplicationInstance** エンティティは、デバイス別ユーザー別の単一インスタンスとして、管理されているモバイル アプリケーション管理 (MAM) アプリを一覧表示します。 エンティティ内に一覧表示されているユーザーとデバイスはすべて、少なくとも 1 つの MAM ポリシーが割り当てられ、保護されます。
+
+
+|          プロパティ          |                                                                                                  説明                                                                                                  |               例                |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|   ApplicationInstanceKey   |                                                               データ ウェアハウスにおける MAM アプリ インスタンスを示す一意識別子 - 代理キー。                                                                |                 123                  |
+|           UserId           |                                                                              この MAM アプリをインストールしたユーザーのユーザー ID。                                                                              | b66bc706-ffff-7437-0340-032819502773 |
+|   ApplicationInstanceId    |                                              MAM アプリ インスタンスを示す一意識別子 - ApplicationInstanceKey に似ていますが、識別子はナチュラル キーです。                                              | b66bc706-ffff-7437-0340-032819502773 |
+| mamApplicationId | この Mam アプリケーション インスタンスが作成された Mam アプリケーションのアプリケーション Id。   | 11/23/2016 12:00:00 AM   |
+|     ApplicationVersion     |                                                                                     この MAM アプリのアプリケーション バージョン。                                                                                      |                  2                   |
+|        CreatedDate         |                                                                 MAM アプリ インスタンスのこのレコードが作成された日付 値は null を取ることができます。                                                                 |        11/23/2016 12:00:00 AM        |
+|          プラットフォーム          |                                                                          この MAM アプリがインストールされているデバイスのプラットフォーム。                                                                           |                  2                   |
+|      PlatformVersion       |                                                                      この MAM アプリがインストールされているデバイスのプラットフォーム バージョン。                                                                       |                 2.2                  |
+|         SdkVersion         |                                                                            この MAM アプリをラップした MAM SDK バージョン。                                                                            |                 3.2                  |
+| mamDeviceId | 使用する MAM アプリケーション インスタンスが関連付けられているデバイスのデバイス Id。   | 11/23/2016 12:00:00 AM   |
+| mamDeviceType | 使用する MAM アプリケーション インスタンスが関連付けられているデバイスのデバイスの種類。   | 11/23/2016 12:00:00 AM   |
+| mamDeviceName | 使用する MAM アプリケーション インスタンスが関連付けられているデバイスのデバイス名。   | 11/23/2016 12:00:00 AM   |
+|         IsDeleted          | この MAM アプリ インスタンス レコードが更新されているかどうかを示します。 <br>True - この MAM アプリ インスタンスには新しいレコードがあり、そのフィールドはこのテーブルで更新されています。 <br>False - この MAM アプリ インスタンスの最新のレコード。 |              真/偽              |
+|   StartDateInclusiveUtc    |                                                              この MAM アプリ インスタンスがデータ ウェアハウスで作成されたときの UTC 日時。                                                               |        11/23/2016 12:00:00 AM        |
+|       DeletedDateUtc       |                                                                             IsDeleted が True に変更されたときの UTC 日時。                                                                              |        11/23/2016 12:00:00 AM        |
+| RowLastModifiedDateTimeUtc |                                                           この MAM アプリ インスタンスがデータ ウェアハウスで最後に変更されたときの UTC 日時。                                                            |        11/23/2016 12:00:00 AM        |
+
+## <a name="mamcheckins"></a>MamCheckins
+
+**MamCheckin** エンティティは、モバイル アプリケーション管理 (MAM) アプリ インスタンスが Intune サービスでチェックインしたときに集められたデータを表します。 
+
+> [!Note]  
+> アプリ インスタンスが一日に複数回チェックインするとき、データ ウェアハウスは単一チェックインとしてそれを保存します。
+
+| プロパティ | 説明 | 例 |
+|---------|------------|--------|
+| DateKey |MAM アプリ チェックインがデータ ウェアハウスに記録されたときの日付キー。 | 20160703 |
+| ApplicationInstanceKey |この MAM アプリ チェックインに関連付けられているアプリ インスタンスのキー。 | 123 |
+| UserKey |この MAM アプリ チェックインに関連付けられているユーザーのキー。 | 4323 |
+| mamApplicationKey |アプリケーション キーの関連付けられているアプリケーションでの MAM アプリケーションのチェック。 | 432 |
+| DeviceHealthKey |この MAM アプリ チェックインに関連付けられている DeviceHealth のキー。 | 321 |
+| PlatformKey |この MAM アプリ チェックインに関連付けられているデバイスのプラットフォームを表します。 |123 |
+| LastCheckInDate |この MAM アプリが最後にチェックインした日時 値は null を取ることができます。 |11/23/2016 12:00:00 AM |
+
+## <a name="mamdevicehealths"></a>MamDeviceHealths
+
+**MamDeviceHealth** エンティティは、モバイル アプリケーション管理 (MAM) ポリシーが展開されているデバイスを表します。脱獄されているものも含まれます。
+
+| プロパティ | 説明 | 例 |
+|---------|------------|--------|
+| DeviceHealthKey |データ ウェアハウスにおけるデバイスとそれに関連付けられている正常性を示す一意識別子 - 代理キー。 |123 |
+| DeviceHealth |デバイスとそれに関連付けられている正常性を示す一意識別子 - DeviceHealthKey に似ていますが、この識別子はナチュラル キーです。 |b66bc706-ffff-7777-0340-032819502773 |
+| DeviceHealthName |デバイスの状態を表します。 <br>利用不可 - このデバイスの情報はありません。 <br>正常 - デバイスは脱獄されていません。 <br>異常 - デバイスは脱獄されています。 |利用不可、正常、異常 |
+| RowLastModifiedDateTimeUtc |この特定の MAM デバイス正常性がデータ ウェアハウスで最後に変更されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
+
+## <a name="mamplatforms"></a>MamPlatforms
+
+**MamPlatform** エンティティは、モバイル アプリケーション管理 (MAM) アプリがインストールされたプラットフォームの名前と種類を一覧表示します。
+
+
+|          プロパティ          |                                    説明                                    |                         例                         |
+|----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
+|        PlatformKey         |     データ ウェアハウスにおけるプラットフォームを示す一意識別子 - 代理キー。      |                           123                           |
+|          プラットフォーム          | プラットフォームを示す一意識別子 - PlatformKey に似ていますが、ナチュラル キーです。 |                           123                           |
+|        PlatformName        |                                   プラットフォームの名前                                   | 利用不可 <br>なし <br>Windows <br>iOS <br>Android。 |
+| RowLastModifiedDateTimeUtc | このプラットフォームがデータ ウェアハウスで最後に変更されたときの UTC 日時。  |                 11/23/2016 12:00:00 AM                  |
+
 ## <a name="managementagenttypes"></a>managementAgentTypes
 **managementAgentType** エンティティは、デバイスの管理に使用されるエージェントを表します。
 
@@ -497,7 +576,7 @@ Microsoft Intune によるモバイル アプリケーション管理を使用�
 | AppKey             | AppRevision のインスタンスの識別に使用する、モバイル アプリのキー。                                                          |
 | DeviceTypeKey      | モバイル アプリケーションに関連付けられているデバイス種類のキー。                                                              |
 | AppInstallStateKey | MobileAppInstallState のインスタンスの識別に使用する、アプリのインストール状態のキー。                                         |
-| エラー コード          | アプリのインストーラー、モバイル プラットフォーム、またはアプリのインストールと関わりがあるサービスによって返されるエラー コード。 |
+| ErrorCode          | アプリのインストーラー、モバイル プラットフォーム、またはアプリのインストールと関わりがあるサービスによって返されるエラー コード。 |
 | カウント              | 総数。                                                                                                                  |
 
 ## <a name="ownertypes"></a>ownerTypes

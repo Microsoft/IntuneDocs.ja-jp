@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ca34826f3a235fe620b5ac0dcb95d57dabf4c71
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
-ms.translationtype: MTE75
+ms.openlocfilehash: 8957c8d8aad2eaa1741b1a625afd4b5a41a8bb51
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58395002"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423698"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように Windows 10 (以降) のデバイスを設定する
 
@@ -138,7 +138,10 @@ ms.locfileid: "58395002"
 - **[SIM カード エラー ダイアログ (モバイルのみ)]**: SIM カードが検出されない場合のデバイスでのエラー メッセージ表示をブロックします。
 - **[Ink Workspace]\(Ink ワークスペース\)**: ユーザーが Ink ワークスペースを使用するのを禁止します。 **[Not configured]\(未構成\)** の場合、Ink ワークスペースはオンになり、ユーザーはロック画面上でこれを使用できるようになります。
 - **[自動再展開]**: 管理権限を持つユーザーが、デバイス ロック画面で **CTRL + Win + R** を使用してすべてのユーザー データとユーザー設定を削除できます。 このデバイスは自動的に再構成され、管理対象に再登録されます。
-- **[Require users to connect to network during device setup (Windows Insider only)]\(デバイスのセットアップ中、ユーザーにネットワークへの接続を求める (Windows Insider のみ)\)**: **[必須]** を選択すると、Windows 10 のセットアップ中、[ネットワーク] ページから先に進む前にデバイスをネットワークに接続されます。 この機能はプレビュー段階ですが、Windows インサイダー ビルド 1809 以降ではこの設定を使用する必要があります。
+- **[Require users to connect to network during device setup (Windows Insider only)]\(デバイスのセットアップ中、ユーザーにネットワークへの接続を求める (Windows Insider のみ)\)**: **[必須]** を選択すると、Windows 10 のセットアップ中、[ネットワーク] ページから先に進む前にデバイスをネットワークに接続されます。
+
+  設定は、次回デバイスがワイプまたはリセット有効になります。 その他の Intune 構成と同様に、デバイスを登録され、構成設定を受信する Intune で管理する必要があります。 登録 1 回と、次の Windows セットアップ中に設定を適用し、デバイスのリセット ポリシーを受信するには、します。
+
 - **[Direct Memory Access]\(ダイレクト メモリ アクセス\)**: **[ブロック]** では、ユーザーが Windows にサインインするまで、ホット プラグ可能なすべての PCI ダウンストリーム ポートへの直接メモリ アクセス (DMA) が禁止されます。 **[有効]** (既定値) にすると、ユーザーがサインインしていない場合でも、DMA へのアクセスが許可されます。
 
   CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
@@ -305,6 +308,29 @@ ms.locfileid: "58395002"
   - **[Prevent reuse of previous passwords]\(前のパスワードを再利用できないようにする\)**: デバイスで記憶される、以前に使用したパスワードの数を指定します。
   - **[Require password when device returns from idle state]\(デバイスがアイドル状態から戻るときにパスワードを必須にする (モバイルのみ)\)**: ユーザーがデバイスのロックを解除するときにパスワードの入力を必須にします (Windows 10 Mobile のみ)。
   - **[簡易パスワード]**: 簡易パスワードの使用を許可します (1111、1234 など)。 この設定は、Windows ピクチャ パスワードの使用も許可またはブロックします。
+- **AADJ 中の自動暗号化**:**ブロック**デバイスが Azure AD に参加しているときに、最初の使用のデバイスが準備されたときに自動の BitLocker デバイス暗号化は使用できません。 **構成されていない**(既定値) はオペレーティング システムの既定値は、暗号化を有効にすることがあります。 詳細[BitLocker デバイス暗号化](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)します。
+
+  [セキュリティ/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
+
+- **連邦情報処理規格 (FIPS) ポリシー**:**許可**米国政府機関である連邦情報処理規格 (FIPS) ポリシーを使用して標準の暗号化、ハッシュ、署名します。 **構成されていない**(既定値) は、オペレーティング システムの既定値は、FIPS を使用していないを使用します。
+
+  [暗号化/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
+
+- **Windows こんにちはデバイス認証**:**許可**Windows こんにちはコンパニオン デバイス、電話、バンドの適合性、または IoT デバイスなどを使用して、Windows 10 コンピューターにサインインするユーザー。 **構成されていない**(既定値) はオペレーティング システムの既定値は、Windows こんにちはコンパニオン デバイスが Windows で認証されない可能性があります。
+
+  [認証/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
+
+- **Web サインイン**: により、Windows ログオンの非 ADFS (Active Directory フェデレーション サービス) のフェデレーション プロバイダー、Security Assertion Markup Language (SAML) などのサポート。 SAML は、web ブラウザー、シングル サインオン (SSO) エクスペリエンスを提供するセキュリティで保護されたトークンを使用します。 次のようなオプションがあります。
+
+  - **構成されていない**(既定値): デバイスのオペレーティング システムの既定値を使用します。
+  - **有効になっている**: サインインのため、Web の資格情報プロバイダーが有効になっています。
+  - **無効になっている**: サインインのため、Web の資格情報プロバイダーが無効になっています。
+
+  [認証/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
+
+- **Azure AD テナント ドメインを優先**: Azure AD 組織内の既存のドメイン名を入力します。 このドメインのユーザーがサインインするときに、ドメイン名を入力する必要はありません。 たとえば、「`contoso.com`」と入力します。 内のユーザー、 `contoso.com` "abby"など、ユーザー名を使用してサインイン ドメインの代わりに"abby@contoso.com"。
+
+  [Authentication/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
 ## <a name="per-app-privacy-exceptions"></a>アプリごとのプライバシー例外
 

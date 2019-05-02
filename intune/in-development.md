@@ -1,12 +1,12 @@
 ---
 title: で開発 - Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Microsoft Intune の機能の開発
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e068e2c9834290b705e8e7bc2f895636415f9ba
-ms.sourcegitcommit: 69aaf89140f82f344404e75a69dc59d8a1585b10
+ms.openlocfilehash: aa38a684a32756d4f2c3be3b750f8e79b66e98f6
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675444"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587384"
 ---
 # <a name="in-development-for-microsoft-intune---april-2019"></a>Microsoft Intune の - 年 2019年 4 月の開発
 
 準備が整っているし、計画、このページで支援するために Intune UI の更新プログラムし、機能をリストは、開発中がリリースされていません。 さらに
 
-- 予想、変更する前にアクションを実行する必要があります、無償の Office メッセージ センター投稿を公開しますします。
+- 予想、変更する前にアクションを実行する必要があります、補完的な Office メッセージ センターの投稿を公開しますします。
 - 機能がプレビューとして、運用環境で起動するか、一般公開機能の説明はこのページを無効と移動にときに、[は新しいページ](whats-new.md)します。
 - このページと[は新しいページ](whats-new.md)定期的に更新されます。 適宜確認してください。
 - 参照してください、 [M365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?rtc=2&filters=EMS)の戦略的な成果物、およびタイムライン。
@@ -61,18 +61,6 @@ MacOS デバイスでデバイス構成プロファイルを作成すること�
 ### <a name="require-app-protection-conditional-access----1634317---"></a>アプリ保護の条件付きアクセスが必要です。  <!--1634317 -->
 使用できる*必要なアプリ保護ポリシー*をユーザーが条件付きアクセスを保護するデータにアクセスすることを防ぐためにサインインが完了する前に、ユーザーのアプリに適用がポリシーを確認します。 ポリシーの保証には、最初の使用経験が遅く、中には、ネットワークの問題、管理構成の誤り、またはアプリケーション保護ポリシーを阻止する意図的な取り組みに対して保護するのに役立ちます。 
 
-### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----16726660---"></a>オンラインでライセンスされたビジネス向け Microsoft Store アプリの展開 <!-- 16726660 -->
-オンラインでライセンスされた必要なビジネス向け Microsoft Store アプリをデバイスのコンテキストで割り当てることができます。 このようにして、ビジネス向け Microsoft Store アプリを展開すると、デバイス上のすべてのユーザーにアプリをインストールできます。 対象は Windows 10 RS4 以上のデスクトップ デバイスのみです。 デバイスのコンテキストでインストールするオプションは、MSFB オンラインのライセンスされたアプリのクライアント アプリの割り当てページにあります。
-
-### <a name="include-and-exclude-mixture-of-user-groups-and-device-groups-when-assigning-policies-and-profiles----1807547---"></a>ポリシーとプロファイルを割り当てるときに、ユーザー グループとデバイス グループの組み合わせを含めたり除外したり <!-- 1807547 -->
-コンプライアンス ポリシーまたは構成プロファイルに割り当てるときに割り当てることができますをセキュリティ グループにユーザーまたはデバイスとします。 現時点では、含めるし、ユーザーのグループのみを除外する*または*およびデバイス グループのみを除外します。 含めるとグループの組み合わせを除外するなどのユーザー グループを含めることはできません*と*デバイス グループを除外します。
-
-さまざまなユーザー グループおよびデバイス グループを含めたり除外したりすることができます。 ユーザーのグループを含めるし、デバイスのグループを除外することができます。 たとえば、割り当てる、ユーザーのグループに、デバイス構成プロファイルを展開またはが個人のデバイスを除外します。
-
-[デバイス構成プロファイルを割り当てる](device-profile-assign.md)ユーザー グループとデバイス グループにプロファイルを割り当てる方法に関する詳細が含まれています。
-
-適用対象: すべてのプラットフォーム
-
 ### <a name="retire-noncompliant-devices----1827291---"></a>非準拠デバイスをインベントリから削除します。 <!-- 1827291 -->
 コンプライアンス違反のデバイスをインベントリからの新しいコンプライアンス アクションを追加しようとしています。 コンプライアンス違反のデバイスをインベントリから削除、そこからすべての会社のデータを削除し、デバイスが Intune によって管理されているから削除されます。 日で構成されている値に達すると、このアクションが実行されます。 最小値は 30 日間です。 
 
@@ -98,7 +86,7 @@ Apple VPP トークンにスコープのタグを追加することができま�
 ### <a name="use-applicability-rules-when-creating-windows-10-device-configuration-profiles----2549910---"></a>ときに、[適用性ルール] を使用して Windows 10 デバイス構成プロファイルを作成します。 <!-- 2549910 -->
 Windows 10 デバイス構成プロファイルを作成する (**デバイス構成** > **プロファイル** > **プロファイルを作成する** > **Windows 10**プラットフォーム)。 作成することができます、**適用性ルール**のため、プロファイルは、特定のエディションまたは特定のバージョンにのみ適用されます。 たとえば、いくつかの BitLocker 設定を有効にするプロファイルを作成します。 プロファイルを追加すると、プロファイルは、Windows 10 Enterprise を実行しているデバイスにのみ適用されますので、適用性ルールを使用します。
 
-適用先: 
+適用対象: 
 - Windows 10 以降
 
 ### <a name="enable-win32-app-dependencies----2617348---"></a>Win32 アプリの依存関係を有効にします。 <!-- 2617348 -->
@@ -127,7 +115,7 @@ Intune では、OEMConfig で Android エンタープライズ デバイスの�
 
 Oem のサポートは、OEM ごとに現在です。 OEMConfig アプリの一覧で、OEMConfig アプリを使用できない場合にお問い合わせください。`IntuneOEMConfig@microsoft.com`します。
 
-適用先: 
+適用対象: 
 - Android エンタープライズ
 
 ### <a name="new-device-restriction-settings-for-android-enterprise-device-owner----3574254---"></a>Android エンタープライズ デバイスの所有者の新しいデバイスの制限設定 <!-- 3574254 -->
@@ -142,9 +130,9 @@ Android エンタープライズ デバイスの場合は、許可するか、�
 ### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>Windows 10 デバイスのコンプライアンス ポリシーでの TPM チップセットのチェック <!-- 3617671 -->
 多くの Windows 10 および以降のデバイスは、トラステッド プラットフォーム モジュール (TPM) チップのセットを使ってください。 新しいコンプライアンス設定には、デバイスに TPM があるか確認します。
 
-[Windows 10 およびそれ以降のコンプライアンス ポリシー設定](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)現在の設定を一覧表示されます。
+[Windows 10 およびそれ以降のコンプライアンス ポリシー設定](compliance-policy-create-windows.md)現在の設定を一覧表示されます。
 
-適用先: 
+適用対象: 
 - Windows 10 以降
 
 ### <a name="configure-your-win32-apps-to-be-installed-on-intune-enrolled-azure-ad-joined-devices----3695227---"></a>Intune に登録されたにインストールされる Win32 アプリを構成する Azure AD 参加済みデバイス <!-- 3695227 -->
@@ -177,15 +165,6 @@ Windows 更新プログラムをスキャンからのユーザーをブロック
 
 ### <a name="windows-update-notifications----3316782---"></a>Windows の更新通知 <!-- 3316782 -->
 Windows の更新の通知をユーザーに表示を構成できるように Windows 更新プログラム リングの構成にサポートを追加いたします。 この設定は、ポータル内から使用可能ではありませんが、Intune Graph API を使用して構成することができます。
-
-### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>12 の iOS デバイスのユーザーの登録をポータル サイトへの変更 <!--3448635 --> 
-IOS 用ポータル サイトを更新して、アプリの登録画面と Apple iOS 12.2 でリリースされた MDM 登録の変更とを連携させる手順がいます。 更新されたワークフローには、ユーザーに求めるようになりましたが。
-
-- (Safari) を使用して、ポータル サイト web サイトを開き、ポータル サイト アプリに戻る前に管理プロファイルをダウンロードする Safari を許可します。
-- 自分のデバイスに管理プロファイルをインストール、設定アプリを開きます。
-- 登録を完了してポータル サイト アプリに戻ります。
-
-これらの変更を準備する方法の詳細については、次を参照してください。、 [Microsoft Tech Community post](https://aka.ms/CP_changes_iOS12)します。 それまでは、会社のポータルで新しい iOS の登録をサポートするために更新しました」の手順[Intune に iOS デバイスを登録](https://docs.microsoft.com/en-us/intune/ios-enroll)します。 これらのドキュメントの変更は、Apple iOS 12.2 のバージョンのリリース後、ライブになります。 
 
 ### <a name="easier-access-to-diagnostic-settings----3804627---"></a>診断設定に簡単にアクセス <!-- 3804627 -->
 新しいオプションを追加しています、**監査ログ**ブレードにすべての監査ログのワークロードを直接開くに使用できる Intune コンソールで、*診断設定*ページ。

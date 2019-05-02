@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23c254094281c7591730b2972ec0de41f5243e66
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: c6389bc9790fce45604887bc2d73b3d5d8c35c45
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566388"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423596"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK の概要
 
@@ -34,7 +34,7 @@ Intune アプリ SDK は、iOS と Android で類似するシナリオをサポ�
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>アプリが組織内向けであり、一般に公開できない場合:
 
-アプリを登録する_**必要はありません**_。 内部[基幹業務 (LOB) アプリ](apps-add.md#app-types-in-microsoft-intune)を書き込まれたか、会社の IT 管理者がアプリを社内に展開します。 Intune は、アプリが SDK でビルドされたことを検出し、IT 管理者がアプリ保護ポリシーを適用できるようにします。 「[アプリ保護ポリシーに対して iOS または Android アプリを有効にする](#enable-your-iOS-or-Android-app-for-app-protection-policy)」セクションに進んでください。
+アプリを登録する_**必要はありません**_。 内部[基幹業務 (LOB) アプリ](apps-add.md#app-types-in-microsoft-intune)を書き込まれたか、会社の IT 管理者がアプリを社内に展開します。 Intune は、アプリが SDK でビルドされたことを検出し、IT 管理者がアプリ保護ポリシーを適用できるようにします。 「[アプリ保護ポリシーに対して iOS または Android アプリを有効にする](#enable-your-ios-or-android-app-for-app-protection-policy)」セクションに進んでください。
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Apple App Store や Google Play などのパブリック アプリ ストアにアプリをリリースする場合:
 
@@ -135,7 +135,7 @@ Intune で使用する基幹業務アプリを開発するときは、バージ�
 Intune|iOS|Android|説明|
 |---|---|---|---|
 バージョン番号|CFBundleShortVersionString|PackageVersionName |この番号は、エンド ユーザー向けにアプリの特定のリリースを示します。|
-［ビルド番号］|CFBundleVersion|PackageVersionCode |この番号は、アプリ コードのイテレーションを示すために使用されます。|
+ビルド番号|CFBundleVersion|PackageVersionCode |この番号は、アプリ コードのイテレーションを示すために使用されます。|
 
 #### <a name="ios"></a>iOS
 
