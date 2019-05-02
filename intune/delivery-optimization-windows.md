@@ -1,39 +1,40 @@
 ---
 title: Microsoft Intune での Windows 10 用の配信の最適化設定 - Azure | Microsoft Docs
-description: Windows 10 以降のデバイスで利用できる配信の最適化クラウド サービスを使って、デバイスにソフトウェア更新プログラムを配信する方法を構成します。 Intune では、デバイス構成プロファイルを作成してインターネットから更新プログラムをインストールします。 また、既存の更新プログラム リングを配信の最適化プロファイルに置き換える方法についても確認します。
+description: Intune で管理する Windows 10 デバイスで配信の最適化を使用する方法を構成します。 Intune では、デバイス構成プロファイルを作成してインターネットから更新プログラムをインストールします。 また、既存の更新プログラム リングを配信の最適化プロファイルに置き換える方法についても確認します。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 12/05/2018
-ms.topic: article
+ms.date: 03/12/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f335c8acf9e979366fe75d1a3da2318b7ec46400
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.reviewer: kerimh
+ms.openlocfilehash: 45d91766b3bbdcdd3528afd80d74a56a94e88a2c
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61510199"
 ---
-# <a name="windows-10-and-newer-delivery-optimization-settings-in-microsoft-intune"></a>Microsoft Intune での Windows 10 (およびそれ以降) の配信の最適化設定
+# <a name="delivery-optimization-settings-in-microsoft-intune"></a>Microsoft Intune での配信の最適化設定
+
+Intune では、ご利用の Windows 10 デバイスに合わせて配信の最適化の設定を使用することで、そのデバイスでアプリケーションおよび更新プログラムをダウンロードする際に消費される帯域幅を削減することができます。 配信の最適化は、ご利用のデバイスの構成プロファイルの一部として構成されます。  
+
+この記事では、デバイスの構成プロファイルの一部として配信の最適化の設定を構成する方法について説明します。 プロファイルを作成したら、次に、そのプロファイルをご利用の Windows 10 デバイスに割り当てるか、展開します。 
+
+Intune でサポートされる配信の最適化の設定の一覧については、「[Intune の配信の最適化の設定](delivery-optimization-settings.md)」を参照してください。  
+
+Windows 10 での配信の最適化について学習するには、Windows ドキュメントの[配信の最適化更新プログラム](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)に関するページを参照してください。  
+
 
 > [!NOTE]
-> **[ソフトウェア更新プログラム] – [Windows 10 更新プログラムのリング]** は、**[配信の最適化]** 設定によって置き換えられます。 **[配信の最適化]** 設定を使用するように既存の更新リングを変更できます。 「[既存の更新リングを配信の最適化に移動する](#move-existing-update-rings-to-delivery-optimization)」(この記事) にはその手順が説明されています。 
-
-
-この機能は次のプラットフォームに適用されます。
-
-- Windows 10 以降
-
-この記事では、Windows 10 デバイスに対して構成できるすべての配信の最適化設定を説明します。 これらの設定は、デバイスの構成プロファイルに追加した後、Microsoft Intune を使ってデバイスに割り当てたり展開したりします。
-
-[配信の最適化更新プログラム](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)は、Windows 10 での配信の最適化に関して詳しく学習するのに適したリソースです。
-
+> **[ソフトウェア更新プログラム] – [Windows 10 更新プログラムのリング]** は、**[配信の最適化]** 設定によって置き換えられます。 **[配信の最適化]** 設定を使用するように既存の更新リングを変更できます。 「[既存の更新リングを配信の最適化に移動する](#move-existing-update-rings-to-delivery-optimization)」(この記事)。 
 ## <a name="create-the-profile"></a>プロファイルの作成
 
 1. [Azure portal](https://portal.azure.com) で、**[すべてのサービス]** を選択し、**Intune** でフィルター処理して、**[Intune]** を選択します。
@@ -49,23 +50,15 @@ ms.locfileid: "55836695"
         - **Windows 10 以降**
 
     - **[プロファイルの種類]**:**[配信の最適化]** を選択します。
-    - **設定**:希望する更新プログラムのダウンロード方法を選択します。 次のようなオプションがあります。 
-
-        - **[未構成]**:エンド ユーザーはそれぞれ独自の方法を使って各デバイスを更新します。**Windows Updates** や、OS で使用できる **[配信の最適化]** 設定が使われる場合があります。
-        - **[HTTP のみ、ピアリングなし]**:更新プログラムをインターネットからのみ取得します。 ネットワーク上の他のコンピューターからは更新プログラムを取得しません (ピアリングまたはピア ツー ピアと呼ばれます)。
-        - **[HTTP blended with peering behind the same NAT]\(HTTP と同じ NAT でのピアリングの組み合わせ\)**:インターネットおよびネットワーク上の他のコンピューターから更新プログラムを取得します。 
-        - **[HTTP blended with peering across a private group]\(HTTP とプライベート グループでのピアリングの組み合わせ\)**:ピアリングは、同じ Active Directory サイト (存在する場合) または同じドメイン内にあるデバイス上で発生します。 このオプションを選択した場合、ピアリングはネットワーク アドレス変換 (NAT) の IP アドレスを越えます。
-        - **[HTTP とインターネット ピアリングの組み合わせ]**:インターネットおよびネットワーク上の他のコンピューターから更新プログラムを取得します。
-        - **[ピアリングなしの簡易ダウンロード モード]**:インターネットを介して、Microsoft などの更新プログラムの所有者から更新プログラムを直接取得します。 これは配信の最適化クラウド サービスに接続しません。
-        - **[バイパス モード]**:バックグラウンド インテリジェント転送サービス (BITS) を使って更新プログラムを取得します。 配信の最適化を使いません。
+    - **設定**:更新プログラムやアプリをダウンロードする方法を定義する設定を構成します。 使用可能な設定については、「[Intune の配信の最適化の設定](delivery-optimization-settings.md)」を参照してください。
 
 4. 完了したら、**[OK]** > **[作成]** の順に選択して変更を保存します。
 
-プロファイルが作成され、一覧に表示されます。 次に、[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
+プロファイルが作成され、一覧に表示されます。 次に、[プロファイルを割り当て](device-profile-assign.md)てから、[その状態を監視](device-profile-monitor.md)します。
 
 ## <a name="move-existing-update-rings-to-delivery-optimization"></a>既存の更新リングを配信の最適化に移動する
 
-**[ソフトウェア更新プログラム] – [Windows 10 更新プログラムのリング]** は、**[配信の最適化]** 設定によって置き換えられます。 既存の更新プログラム リングは、**[配信の最適化]** 設定を使うように簡単に変更できます。 ステップ:
+**[ソフトウェア更新プログラム] – [Windows 10 更新プログラムのリング]** は、**[配信の最適化]** 設定によって置き換えられます。 既存の更新プログラム リングは、**[配信の最適化]** 設定を使うように簡単に変更できます。 配信の最適化のプロファイルを作成するときに同じ設定を維持するには、同じ*配信の最適化ダウンロード モード*を使用し、さらに既に使用しているものと同じ設定内容を設定します。 ただし、配信の最適化のプロファイルで管理できるあらゆる追加設定を活用できるように、配信の最適化の設定を再構成することもできます。
 
 1. 配信の最適化の構成プロファイルを作成します。
 
@@ -76,7 +69,7 @@ ms.locfileid: "55836695"
         - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
         - **[プラットフォーム]**:**[Windows 10 以降]** を選択します。
         - **[プロファイルの種類]**:**[配信の最適化]** を選択します。
-        - **設定**:**[配信の最適化ダウンロード モード]** に対して、既存のソフトウェア更新プログラム リングによって使用されるものと同じモードを選択します。 次のようなオプションがあります。
+        - **設定**:**配信の最適化ダウンロード モード**については、ご利用のデバイスに適用する設定を変更する必要がない限り、既存のソフトウェア更新プログラム リングで使用されているものと同じモードを選択します。 次のようなオプションがあります。
             - **未構成**
             - **HTTP のみ、ピアリングなし**
             - **HTTP blended with peering behind the same NAT (HTTP と同じ NAT でのピアリングの組み合わせ)**
@@ -84,8 +77,8 @@ ms.locfileid: "55836695"
             - **HTTP とインターネット ピアリングの組み合わせ**
             - **ピアリングなしの簡易ダウンロード モード**
             - **バイパス モード**
-
-2. 既存のソフトウェア更新プログラム リングと同じデバイスおよびユーザーに、この新しいプロファイルを割り当てます。 [プロファイルの割り当て](device-profile-assign.md)に関するページに手順が記載されています。
+    3. 管理したい追加設定を構成します。
+1. 既存のソフトウェア更新プログラム リングと同じデバイスおよびユーザーに、この新しいプロファイルを割り当てます。 [プロファイルの割り当て](device-profile-assign.md)に関するページに手順が記載されています。
 
 3. 既存のソフトウェアのリングの構成を解除します。
     1. Intune で、**[ソフトウェア更新プログラム]** > [Windows 10 更新プログラムのリング] の順に移動します。
@@ -95,4 +88,5 @@ ms.locfileid: "55836695"
 
 ## <a name="next-steps"></a>次の手順
 
-[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
+[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。  
+Intune 用の[配信の最適化の設定](delivery-optimization-settings.md)を表示します。
