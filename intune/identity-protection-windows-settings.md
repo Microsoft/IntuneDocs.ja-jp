@@ -18,7 +18,7 @@ ms.collection: M365-identity-device-management
 ms.reviewer: shpate
 ms.openlocfilehash: 308a730737612f39863160952409ab92670f9153
 ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/15/2019
 ms.locfileid: "58069172"
@@ -27,7 +27,7 @@ ms.locfileid: "58069172"
 
 この記事では、Windows 10 デバイス上の Intune で制御できる Windows Hello for Business の設定の一覧を示して説明します。 Intune 管理者は構成して、モバイル デバイス管理 (MDM) ソリューションの一部としてこれらの設定を Windows 10 デバイスに割り当てます。 
 
-これらの設定に関する追加情報を見つけることができます[構成 Windows こんにちは for Business のポリシー設定](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings)、WIndows こんにちはのドキュメント。
+これらの設定に関する追加情報は、WIndows Hello ドキュメント内の[Windows Hello for Business のポリシー設定の構成](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings) にあります。
 
 
 Intune の Windows Hello for Business プロファイルの詳細については、[ID 保護の構成](identity-protection-configure.md)に関するページを参照してください。
@@ -38,7 +38,7 @@ Intune の Windows Hello for Business プロファイルの詳細については
 
 ## <a name="windows-hello-for-business"></a>Windows Hello for Business
 
-- **Windows こんにちは for Business 構成**: この機能を使用して、その設定を設定して、次のように選択します。**を有効にする**します。
+- **Windows Hello for Business の構成**: この機能を使用し、その設定を構成するには、**[有効にする]** を選択します。
 - **[PIN の長さの最小値]**: デバイス上で許可する PIN の長さの最小値を入力します。 PIN の長さの既定値は 6 文字です。 PIN の長さの最小値は 4 文字です。
 - **[PIN の長さの最大値]**: デバイス上で許可する PIN の長さの最大値を入力します。 PIN の長さの既定値は 6 文字です。 PIN の最大長は 127 文字です。  
 - **[PIN での小文字の使用]**: エンド ユーザーに小文字を含めるように要求することで、より強力な PIN を強制できます。 次のようなオプションがあります。
@@ -77,7 +77,7 @@ Intune の Windows Hello for Business プロファイルの詳細については
   - **[有効にする]**: Windows Hello for Business で生体認証が使用可能になります。
   - **[未構成]** (既定値): Windows Hello for Business で生体認証を利用できません (すべてのアカウントの種類が対象)。
 
-- **拡張スプーフィング対策を使用可能な場合を使用して、**: サポートされているデバイスで Windows こんにちはの機能を使用の場合、スプーフィング対策を選択します。 たとえば、実際の顔ではなく顔の写真を検出します。
+- **可能な場合、拡張スプーフィング対策を使用**: Windows Hello のスプーフィング対策機能が、その機能をサポートしているデバイス上で使用されている場合に選択します。 たとえば、実際の顔ではなく顔の写真を検出します。
 
   - **[有効にする]**: Windows のすべてのユーザーは、サポートされている場合に顔の特徴のスプーフィング対策を使用する必要があります。  
   - **構成されていない**(既定値): Windows は、デバイス上のなりすまし対策の構成を優先します。
