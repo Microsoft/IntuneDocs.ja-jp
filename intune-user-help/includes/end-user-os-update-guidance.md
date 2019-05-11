@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: bbad42e478fadcb40f35d621e805367e60944a00
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.translationtype: MTE75
+ms.contentlocale: ja-JP
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490478"
+---
   > [!NOTE]
   > デバイスを最新の状態に保つことで、最新機能にアクセスすることができます。また、デバイスで最も安全なバージョンのオペレーティング システムを使用することができます。 Microsoft およびほとんどの主要ベンダーでは、一般的に最新バージョンのソフトウェアで個人と会社の両方のデバイスを使用できるようにしておくことをお勧めします。
 
