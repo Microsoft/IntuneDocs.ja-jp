@@ -79,7 +79,7 @@ Remember that you need to implement conditional access policies in addition to c
   - iOS
   - macOS (プレビュー)
   - Windows 8.1
-  - Windows Phone 8。1
+  - Windows Phone 8.1
   - Windows 10
 
 - コンプライアンスの状態を確認するために Intune にデバイスを登録します
