@@ -70,7 +70,7 @@ Intune デバイス コンプライアンス ポリシーには、準拠して�
 
 これらのポリシー設定は、次のプラットフォームを実行しているデバイスに適用されます。
 
-- Windows Phone 8。1
+- Windows Phone 8.1
 - Windows 8.1 以降
 
 ### <a name="device-properties"></a>デバイスのプロパティ
