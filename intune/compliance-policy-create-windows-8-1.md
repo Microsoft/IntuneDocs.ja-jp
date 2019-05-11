@@ -30,7 +30,7 @@ ms.locfileid: "59424943"
 
 この機能は、以下に適用されます。
 
-- Windows Phone 8。1
+- Windows Phone 8.1
 - Windows 8.1 以降
 
 Intune 管理者は、組織のリソースを保護するために、これらのコンプライアンス設定を使用します。 コンプライアンス ポリシーの詳細については、[デバイス コンプライアンスの概要](device-compliance-get-started.md)に関するページを参照してください。
