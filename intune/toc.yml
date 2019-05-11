@@ -791,7 +791,7 @@
                   href: vpn-settings-windows-8-1.md
                 - name: Wi-Fi インポート
                   href: wi-fi-settings-import-windows-8-1.md
-        - name: Windows Phone 8。1
+        - name: Windows Phone 8.1
           items:
             - name: コンプライアンス ポリシーの設定
               href: compliance-policy-create-windows-8-1.md
