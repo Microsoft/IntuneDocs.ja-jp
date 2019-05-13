@@ -66,7 +66,7 @@ Windows 10、iOS、macOS、および Android 用の各ポータル サイト ア
 -   Windows デバイス
     -   Windows 10 Mobile
     -   [Windows] 10 Desktop
-    -   Windows Phone 8。1
+    -   Windows Phone 8.1
     -   Windows 8.1
 
 ## <a name="can-you-remove-a-computer-or-device-from-the-company-portal"></a>ポータル サイトからコンピューターまたはデバイスを削除できますか。
