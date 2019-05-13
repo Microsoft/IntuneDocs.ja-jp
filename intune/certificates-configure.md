@@ -61,7 +61,7 @@ Intune を使用して、管理するデバイスに証明書を割り当てる�
    | Android エンタープライズ     | はい    | はい    | はい    |
    | iOS                    | はい    | はい    | はい    |
    | macOS                  |        | はい    | はい    |
-   | Windows Phone 8。1      |        | はい    | はい    |
+   | Windows Phone 8.1      |        | はい    | はい    |
    | Windows 8.1 以降  |        | はい    |        |
    | Windows 10 以降   | はい    | はい    | はい    |
 
