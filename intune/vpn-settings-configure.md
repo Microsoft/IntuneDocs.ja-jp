@@ -43,7 +43,7 @@ Intune のカスタム構成ポリシーを使用して、次のプラットフ�
 
 次の接続の種類を使用して、VPN プロファイルを作成できます。
 
-|接続の種類|Android<br>Android 仕事用プロファイル|iOS|macOS|Windows Phone 8。1|Windows 8.1|Windows 10|
+|接続の種類|Android<br>Android 仕事用プロファイル|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
 |自動|[いいえ]|[いいえ]|[いいえ]|[いいえ]|[いいえ]|はい|
 |Check Point Capsule VPN|はい|はい|はい|はい|はい|はい|
