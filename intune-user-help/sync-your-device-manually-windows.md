@@ -135,7 +135,7 @@ Microsoft HoloLens、Windows 10 Desktop、Windows 10 Mobile、または Windows 
 
 3.  接続されたアカウントの **[同期]** を選びます。![[同期] ボタンが強調表示された HoloLens 設定アプリのスクリーンショット](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
 
-### <a name="windows-phone-81"></a>Windows Phone 8。1
+### <a name="windows-phone-81"></a>Windows Phone 8.1
 
 1. **[すべてのアプリ]** > **[設定]** > **[会社アカウント]** の順にタップします。
 
