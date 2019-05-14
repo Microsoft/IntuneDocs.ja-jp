@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/23/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa2734247569245794bce7fe1de68c8b20c6091f
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: 69814b91978aa3cd74c4dc239b099883ae402af9
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490606"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764776"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>使用し、Microsoft Intune で Zebra モビリティの拡張機能による Zebra デバイスの管理
 
@@ -30,7 +30,9 @@ ms.locfileid: "58490606"
 
 Intune には、アプリの管理とデバイスの設定を構成するなど、機能の豊富なセットが含まれています。 これらの組み込み機能と設定を使用して、Zebra Technologies とも呼ばれます"Zebra devices"の Android デバイスを管理できます。
 
-Zebra に固有の他の設定を追加またはカスタマイズする場合は、使用することできますも Zebra**モビリティ拡張機能 (MX)** これらのデバイスでします。 
+Android デバイスで使用して**モビリティ拡張機能 (MX)** プロファイルをカスタマイズしたり、他の Zebra に固有の設定を追加します。
+
+この記事では、Microsoft Intune でデバイスを Zebra で Zebra モビリティ拡張機能 (MX) を使用する方法を示します。
 
 この機能は、以下に適用されます。
 
@@ -39,8 +41,6 @@ Zebra に固有の他の設定を追加またはカスタマイズする場合�
 会社は、Zebra デバイスを使用して、工場での製品版の可能性があります。 など、小売業者をしているし、環境内に何千も販売関係で使用される Zebra モバイル デバイスにはが含まれています。 Intune でモバイル デバイス管理 (MDM) ソリューションの一部としてこれらのデバイスを管理できます。
 
 Intune を使用して、デバイスに基幹業務アプリを展開する Zebra デバイスを登録できます。 [デバイス構成] プロファイルを使用して、Zebra 固有設定を管理する MX プロファイルを作成できます。
-
-この記事では、Microsoft Intune でデバイスを Zebra で Zebra モビリティ拡張機能 (MX) を使用する方法を示します。
 
 ## <a name="before-you-begin"></a>始める前に
 
@@ -95,7 +95,7 @@ UI を使用できない場合は、使用、 **DevAdmin Manager** StageNow ポ�
 
 最初の 2 つの手順を完了すると、ポータル サイト アプリは、デバイスにインストールされます。 Intune に登録するのには、デバイスです。
 
-[Android デバイスを登録](android-enroll.md)の手順を示します。 使用するとする可能性がありますを多く Zebra デバイスがある場合、[デバイス登録マネージャー アカウント](device-enrollment-manager-enroll.md)します。
+[Android デバイスを登録](android-enroll.md)の手順を示します。 使用するとする可能性がありますを多く Zebra デバイスがある場合、[デバイス登録マネージャー (DEM) アカウント](device-enrollment-manager-enroll.md)します。 ユーザーとして簡単にデバイスの登録を解除できないように、ポータル サイト アプリからの登録を解除するためのオプションを削除します DEM アカウントを使用しても。
 
 ## <a name="step-4-create-a-device-management-profile-in-stagenow"></a>手順 4: StageNow でデバイスの管理プロファイルを作成します。
 
@@ -149,6 +149,5 @@ Intune で、デバイス構成プロファイルを作成します。
 
 ## <a name="next-steps"></a>次の手順
 
-[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
-
-[StageNow ログ Zebra デバイスのトラブルシューティングを使用して](android-zebra-mx-logs-troubleshoot.md)します。
+- [プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
+- [StageNow ログ Zebra デバイスのトラブルシューティングを使用して](android-zebra-mx-logs-troubleshoot.md)します。

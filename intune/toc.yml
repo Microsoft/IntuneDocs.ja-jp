@@ -397,36 +397,6 @@
             - name: Mobile Threat Defense
               href: mobile-threat-defense.md
               items:
-                - name: Lookout の設定
-                  href: lookout-mobile-threat-defense-connector.md
-                  items:
-                    - name: Lookout と Intune の統合
-                      href: lookout-mtd-connector-integration.md
-                - name: Symantec の設定
-                  href: skycure-mobile-threat-defense-connector.md
-                  items:
-                    - name: Symantec と Intune の統合
-                      href: skycure-mtd-connector-integration.md
-                - name: Check Point の設定
-                  href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
-                  items:
-                    - name: Check Point と Intune の統合
-                      href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-                - name: Zimperium の設定
-                  href: zimperium-mobile-threat-defense-connector.md
-                  items:
-                    - name: Zimperium と Intune の統合
-                      href: zimperium-mtd-connector-integration.md
-                - name: Pradeo の設定
-                  href: pradeo-mobile-threat-defense-connector.md
-                  items:
-                    - name: Pradeo と Intune の統合
-                      href: pradeo-mtd-connector-integration.md
-                - name: Better Mobile の設定
-                  href: better-mobile-threat-defense-connector.md
-                  items:
-                    - name: Better Mobile と Intune の統合
-                      href: better-mobile-mtd-connector-integration.md
                 - name: MTD 用 Intune のセットアップ
                   items:
                     - name: MTD アプリの追加
@@ -435,6 +405,43 @@
                       href: mtd-device-compliance-policy-create.md
                     - name: Intune で MTD を有効にする
                       href: mtd-connector-enable.md
+                - name: MTD アプリ
+                  items:
+                    - name: Lookout の設定
+                      href: lookout-mobile-threat-defense-connector.md
+                      items:
+                        - name: Lookout と Intune の統合
+                          href: lookout-mtd-connector-integration.md
+                    - name: Symantec の設定
+                      href: skycure-mobile-threat-defense-connector.md
+                      items:
+                        - name: Symantec と Intune の統合
+                          href: skycure-mtd-connector-integration.md
+                    - name: Check Point の設定
+                      href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
+                      items:
+                        - name: Check Point と Intune の統合
+                          href: checkpoint-sandblast-mobile-mtd-connector-integration.md
+                    - name: Zimperium の設定
+                      href: zimperium-mobile-threat-defense-connector.md
+                      items:
+                        - name: Zimperium と Intune の統合
+                          href: zimperium-mtd-connector-integration.md
+                    - name: Pradeo の設定
+                      href: pradeo-mobile-threat-defense-connector.md
+                      items:
+                        - name: Pradeo と Intune の統合
+                          href: pradeo-mtd-connector-integration.md
+                    - name: Better Mobile の設定
+                      href: better-mobile-threat-defense-connector.md
+                      items:
+                        - name: Better Mobile と Intune の統合
+                          href: better-mobile-mtd-connector-integration.md
+                    - name: Sophos Mobile を設定する
+                      href: sophos-mtd-connector.md
+                      items:
+                        - name: Sophos Mobile と Intune の統合
+                          href: sophos-mtd-connector-integration.md
             - name: Windows Defender ATP
               href: advanced-threat-protection.md
             - name: セキュリティ ベースライン
@@ -709,6 +716,8 @@
                   href: wi-fi-settings-ios.md
                 - name: カスタム
                   href: custom-settings-ios.md
+                - name: 組み込みアプリのバンドル ID
+                  href: bundle-ids-built-in-ios-apps.md
         - name: macOS
           items:
             - name: コンプライアンス ポリシーの設定

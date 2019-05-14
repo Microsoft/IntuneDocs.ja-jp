@@ -20,7 +20,7 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b7b67f1484ed74bd538cad53f02babd542b77fff
 ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/14/2019
 ms.locfileid: "55838837"

@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2fe8a765bdb11d0b94dbbb7519360c6e7a01e8ce
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61501240"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Windows 10 デバイスの登録に関するトラブルシューティング
 お使いのデバイスを登録した、職場または学校の電子メールやファイルに、まだアクセスできない場合は、これらのトラブルシューティング手順を実行してください。  
