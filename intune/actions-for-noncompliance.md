@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/19/2019
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e642573311d1452a970dce798dabdc705e4a44f7
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 751d89ef023bea07d3c8bdb69904605d88c9e0b6
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504208"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135218"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Intune で非準拠デバイスに対してメールを自動送信し、アクションを追加する
 
@@ -103,9 +103,6 @@ ms.locfileid: "61504208"
          - グループを選んで、**追加の受信者**を入力します
     
     - **コンプライアンス違反デバイスをリモートでロックする**:デバイスがコンプライアンスに違反しているとき、デバイスをロックします。 このアクションにより、ユーザーはデバイスのロックを解除するために PIN またはパスコードを入力するよう強制されます。 
-
-    - **コンプライアンス違反デバイスをインベントリから削除する**:デバイスがコンプライアンスに違反しているとき、デバイスから会社のデータをすべて削除し、Intune 管理からデバイスを削除します。 デバイスをうっかり削除してしまうことを防ぐため、このアクションでは、**30** 日間という最小スケジュールがサポートされています。  
-
     
 5. **スケジュール**の構成:コンプライアンス違反が発生してからユーザーのデバイスに対するアクションをトリガーするまでの日数 (0 から 365) を入力します。 この猶予期間の後、条件付きアクセス ポリシーを適用できます。 日数として **0** を入力した場合、条件付きアクセスは**すぐに**有効になります。 たとえば、デバイスがコンプライアンスに違反している場合、すぐに企業リソースへのアクセスをブロックすることができます。
 

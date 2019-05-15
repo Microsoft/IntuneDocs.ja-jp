@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c2cac99ba45ccd91629e6db32d91735d90d706e
-ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
+ms.openlocfilehash: 24e783bc4586709d0cde6a2ebd19c2b5ca30ab6b
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426155"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135119"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune スタンドアロン - Win32 アプリ管理
 
@@ -142,8 +142,8 @@ Win32 アプリの管理を使用する場合は、必ず、次の基準を満�
     たとえば、アプリのファイル名が **MyApp123** の場合、以下を追加します。<br>
     `msiexec /p “MyApp123.msp”`<p>
     また、アプリケーションが `ApplicationName.exe` である場合、コマンドはアプリケーション名となり、その後に、パッケージでサポートされるコマンド引数 (スイッチ) が続きます。 <br>次に例を示します。<br>
-    `ApplicationName.exe /quite`<br>
-    上記のコマンドでは、`ApplicaitonName.exe` パッケージで `/quite` コマンド引数がサポートされます。<p> アプリケーション パッケージでサポートされる特定の引数については、アプリケーション ベンダーにお問い合わせください。
+    `ApplicationName.exe /quiet`<br>
+    上記のコマンドでは、`ApplicationName.exe` パッケージで `/quiet` コマンド引数がサポートされます。<p> アプリケーション パッケージでサポートされる特定の引数については、アプリケーション ベンダーにお問い合わせください。
 
 3.  アプリの GUID に基づいてアプリをアンインストールする完全なアンインストール コマンド ラインを追加します。 
 
@@ -282,9 +282,6 @@ Win32 アプリの管理を使用する場合は、必ず、次の基準を満�
 ## <a name="app-dependencies"></a>アプリ間の依存関係
 
 アプリ間の依存関係は、Win32 アプリをインストールする前にインストールする必要があるアプリケーションです。 依存関係として他のアプリがインストールされるように要求できます。 つまり、デバイスで Win32 アプリをインストールする前に、依存するアプリをインストールする必要があります。 最大 100 個の依存関係があり、これらには、アプリ自体だけでなく、含まれるすべての依存関係の依存関係が含まれます。 Win32 アプリ間の依存関係は、Win32 アプリが追加され、Intune にアップロードされた後にのみ追加できます。 Win32 アプリが追加されたら、Win32 アプリのブレードに **[依存関係]** オプションが表示されます。 
-
-> [!NOTE]
-> Intune 管理エージェントが 1904 バージョン (1.18.120.0 以降) にアップグレードされた後にのみ、アプリ間の依存関係機能を利用できるようになります。サービスの 1904 へのアップグレード後、さらに 1 週間または 2 週間かかる場合があります。
 
 アプリ間の依存関係を追加する場合、アプリ名と発行元に基づいて検索できます。 さらに、アプリ名と発行元に基づいて、追加された依存関係を並べ替えることができます。 以前追加されたアプリ間の依存関係を、追加されたアプリ間の依存関係リストで選択することはできません。 
 
