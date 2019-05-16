@@ -552,6 +552,8 @@
               href: app-configuration-policies-use-ios.md
             - name: Android マネージド デバイス
               href: app-configuration-policies-use-android.md
+            - name: Android Enterprise 用マネージド ホーム スクリーン アプリ
+              href: app-configuration-managed-home-screen-app.md
             - name: Managed apps
               href: app-configuration-policies-managed-app.md
             - name: iOS アプリ プロビジョニング プロファイルを使用する
