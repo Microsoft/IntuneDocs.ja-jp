@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98e2229194287ff644e9503fa21c9536cbff4734
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 895b358760775b1021e545b271acb7ced7fa7b1d
+ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61507309"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65942077"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Microsoft Intune でのロールベースのアクセス制御 (RBAC)
 
@@ -42,7 +42,7 @@ ms.locfileid: "61507309"
 -   **割り当て**:どのユーザーがどのユーザー/デバイスへのアクセス権を持つかを定義する[ロールの割り当て]( assign-role.md)のリスト。 ロールは複数の割り当てを持つことができ、ユーザーは複数の割り当てを受けることができます。
 
 ### <a name="built-in-roles"></a>組み込みロール
-追加の構成を行うことなく、組み込みロールをグループに割り当てることができます。 組み込みロールの名前、説明、種類、またはアクセス許可を削除または編集することはできません。 各組み込みロールのアクセス許可の完全な一覧は、[Intune RBAC テーブル] ((https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) を参照してください。
+追加の構成を行うことなく、組み込みロールをグループに割り当てることができます。 組み込みロールの名前、説明、種類、またはアクセス許可を削除または編集することはできません。 各組み込みロールのアクセス許可の完全な一覧は、「[Intune RBAC Table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)」を参照してください。
 
 - **ヘルプ デスク オペレーター**:ユーザーとデバイスに対するリモート タスクを実行し、ユーザーやデバイスにアプリケーションやポリシーを割り当てることができます。
 - **ポリシーおよびプロファイル マネージャー**:コンプライアンス ポリシー、構成プロファイル、Apple の登録、企業デバイスの識別子、セキュリティ ベースラインを管理します。
