@@ -473,8 +473,8 @@
               href: certificates-s-mime-encryption-sign.md
             - name: SCEP でサード パーティの証明機関を使用する
               href: certificate-authority-add-scep-overview.md
-            - name: Symantec PKI Manager Web サービス
-              href: certificates-symantec-configure.md
+            - name: DigiCert PKI を使用する
+              href: certificates-digicert-configure.md
             - name: SCEP 証明書または PKCS 証明書を削除する
               href: remove-certificates.md
         - name: eSIM 携帯電話のプロファイル
