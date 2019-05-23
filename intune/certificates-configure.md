@@ -1,5 +1,5 @@
 ---
-title: Microsoft Intune - Azure での証明書プロファイルの作成 | Microsoft Docs
+title: Microsoft Intune での証明書プロファイルの作成 - Azure | Microsoft Docs
 description: デバイスに対して、SCEP または PKCS 証明書の環境を構成して証明書プロファイルを追加または作成し、パブリック証明書をエクスポートし、Azure Portal でプロファイルを作成してから、Azure Portal の Microsoft Intune で証明書プロファイルに SCEP または PKCS を割り当てます
 keywords: ''
 author: brenduns
