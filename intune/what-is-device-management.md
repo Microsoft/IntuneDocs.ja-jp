@@ -60,7 +60,7 @@ Intune により、ユーザーごと、および iOS、macOS、Android、Window
 - **Windows Defender** には、Windows 10 デバイスを保護するための多くのセキュリティ機能が含まれています。 たとえば、Intune と Windows Defender を一緒に使用すると、次のことができます。 
 
     - [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) を有効にして、モバイル デバイス上のファイルとアプリでの不審なアクティビティを検索できます。 
-    - 使用[Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection)モバイル デバイスでセキュリティ侵害を防止します。 また、会社のリソースからのユーザーをブロックすることで、セキュリティ侵害の影響を抑えるに役立ちます。
+    - [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection)を使用して、モバイル デバイスでセキュリティ侵害を防止します。 また、会社のリソースからのユーザーをブロックすることで、セキュリティ侵害の影響を抑えるに役立ちます。
 
 - **条件付きアクセス**は、Azure Active Directory の機能で、Intune と適切に統合します。 [条件付きアクセス](https://docs.microsoft.com/intune/conditional-access)を使用すると、準拠しているデバイスだけが電子メール、SharePoint、およびその他のアプリへのアクセスが許可されていることを確信できます。 
 
