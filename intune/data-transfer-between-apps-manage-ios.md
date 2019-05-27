@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb109f8c837fe8848ad8cb19c930de765ed381d1
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: dffdf67597ccb7a1719b2b769a79a6a5f365198c
+ms.sourcegitcommit: 5fec35341d83b16023a92fc4b2b3e9237fc6c9ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509516"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65853903"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune で iOS アプリ間のデータ転送を管理する方法
 
@@ -80,6 +80,7 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
    |Microsoft Intune| IntuneMAMUPN | 文字列型 | {{UserPrincipalName}}|
    |VMware AirWatch| IntuneMAMUPN | 文字列型 | {UserPrincipalName}|
    |MobileIron | IntuneMAMUPN | 文字列型 | ${userUPN} **または** ${userEmailAddress} |
+   |Citrix Endpoint Management | IntuneMAMUPN | 文字列型 | ${user.userprincipalname} |
    |ManageEngine Mobile Device Manager | IntuneMAMUPN | 文字列型 | %upn% |
 
 

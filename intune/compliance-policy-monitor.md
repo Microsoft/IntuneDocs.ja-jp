@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 654d5b86a8a2df8eaddc8ea626b55390d2d32920
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b5da0e5f14d3b87827d42d48341fa7080d73c567
+ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509072"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65942055"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune デバイスのコンプライアンス対応ポリシーの監視
 
@@ -75,7 +75,9 @@ ms.locfileid: "61509072"
 
   - デバイスにコンプライアンス ポリシーが割り当てられておらず、コンプライアンスを確認するトリガーが与えられていない
   - コンプライアンス ポリシーが最後に更新されてからデバイスがチェックインしていない
-  - デバイスが特定のユーザーに関連付けられていない
+  - 次などのように、デバイスが特定のユーザーに関連付けられていない
+    - ユーザー アフィニティがない Apple の Device Enrollment Program (DEP) で購入した iOS デバイス
+    - Android キオスクまたは Android エンタープライズ専用デバイス
   - デバイスがデバイス登録マネージャー (DEM) アカウントを使って登録されている
 
 - **非準拠**:1 つ以上のデバイス コンプライアンス ポリシーがデバイスに適用されませんでした。 あるいは、ユーザーがポリシーに違反しています。

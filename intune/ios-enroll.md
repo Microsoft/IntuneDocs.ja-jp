@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eef5524cff3ce29e802ca8078ba2b5e104e89775
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 7ba5ca4dcd8e43d63e98c281cac3487def8a0045
+ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490159"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65765319"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Intune で iOS デバイスを登録する
 
@@ -85,3 +85,6 @@ Mac コンピューターで実行している Apple Configurator を使って�
 
 ユーザー アフィニティが必要な場合は、デバイスを登録する前に、デバイスの登録プロファイルで **[ユーザー アフィニティ]** が選択されていることを確認してください。 デバイスのアフィニティの状態を変更するには、デバイスをインベントリから削除してから再登録する必要があります。
 
+## <a name="see-also"></a>関連項目
+
+[Microsoft Intune での iOS デバイス登録の問題に関するトラブルシューティング](https://support.microsoft.com/help/4039809)

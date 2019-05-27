@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 05/14/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 66a23b75913f6465064a988bd8f2ba9c2b4c36d6
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 6b7ea047daca5dad327b431986840a59074614d1
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61514141"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732634"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Intune で Windows 10 デバイスに対して PowerShell スクリプトを使用する
 
@@ -70,6 +70,9 @@ Intune 管理拡張機能には次の前提条件があります。
 
     ![Microsoft Intune で PowerShell スクリプトを追加および使用する](./media/mgmt-extension-add-script.png)
 5. **[OK]** > **[作成]** の順に選択してスクリプトを保存します。
+
+> [!NOTE]
+> PowerShell スクリプトがユーザー コンテキストに設定され、デバイスのエンド ユーザーが管理特権を持っている場合、スクリプトは (既定で) 管理特権で実行されます。
 
 ## <a name="assign-the-policy"></a>ポリシーを割り当てる
 

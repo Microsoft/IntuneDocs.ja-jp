@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36aa9ad733e2ae5e0f4a292b073fbebd5f5f5f8f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: c2d137945325d8ec11801aec225fd0e89196ed05
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511541"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732988"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>チュートリアル: Autopilot を使用して Intune に Windows デバイスを登録する
 Windows Autopilot を使用すると、デバイスの登録が簡単になります。 Microsoft Intune と Autopilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および適用を行わなくてもデバイスをエンド ユーザーに提供することができます。 
@@ -90,23 +90,20 @@ Windows Autopilot の設定で最初にやることは、Intune への Windows �
 デバイス グループを作成した後は、Autopilot デバイスを構成できるように、展開プロファイルを作成する必要があります。
 
 1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Windows の登録]** > **[Deployment mode]\(展開プロファイル\)** > **[プロファイルの作成]** の順に選択します。
-2. **[名前]** に、「*Autopilot Profile*」と入力します。 **[説明]** に「*Test profile for Autopilot devices*」と入力します。
+2. **[基本]** ページで、**[名前]** に「*Autopilot Profile*」と入力します。 **[説明]** に「*Test profile for Autopilot devices*」と入力します。
 3. **[すべての対象デバイスを Autopilot に変換する]** を **[はい]** に設定します。 この設定により、リスト内のすべてのデバイスが確実に Autopilot 展開サービスに登録されます。 登録が処理されるまで 48 時間待ちます。
-4. **[配置モード]** では、**[ユーザー ドリブン]** を選択します。 このプロファイルのデバイスは、デバイスを登録しているユーザーに関連付けられます。 デバイスを登録するには、ユーザーの資格情報が必要です。
-5. **[Join to Azure AD as]\(Azure AD への参加状況\)** ボックスに、**[Azure AD 参加済み]** を選択します。
-6. **[Out-of-box experience (OOBE)]** を選択して、次のオプションを構成し、他の設定は既定値のままにして、**[保存]** を選択します。
+4. **[次へ]** を選択します。
+5. **[Out-of-box experience (OOBE)]** ページの **[配置モード]** で、**[ユーザー ドリブン]** を選択します。 このプロファイルのデバイスは、デバイスを登録しているユーザーに関連付けられます。 デバイスを登録するには、ユーザーの資格情報が必要です。
+6. **[Join to Azure AD as]\(Azure AD への参加状況\)** ボックスに、**[Azure AD 参加済み]** を選択します。
+7. 以下のオプションを構成し、他は既定値の設定のままにします。
     - **[使用許諾契約書 (EULA)]**: **非表示**
     - **[プライバシーの設定]**: **表示**
     - **[ユーザー アカウントの種類]**: **標準**
-
-6. **[作成]** を選択して、プロファイルを作成します。 これで、Autopilot Deployment プロファイルをデバイスに割り当てられるようになりました。
-
-## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>Autopilot Deployment プロファイルをデバイス グループに割り当てる
-
-Deployment プロファイルが作成されるので、それをデバイス グループに割り当てます。
-1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Windows の登録]** > **[Deployment profile]\(展開プロファイル\)** でプロファイルを選択します。
-2. 特定のプロファイルのブレードで、**[割り当て]** を選択します。 
-3. **[グループの選択]** を選択し、**[グループの選択]** ブレードで **Autopilot Group** を選択して、**[選択]** を選択します。
+8. **[次へ]** を選択します。
+9. **[割り当て]** ページで、**[割り当て先]** として **[選択したグループ]** を選択します。
+10. **[含めるグループを選択]** を選択して、**Autopilot Group** を選択します。
+11. **[次へ]** を選択します。
+12. **[確認および作成]** ページで、**[作成]** を選択してプロファイルを作成します。
 
 ## <a name="distribute-devices-to-users"></a>デバイスをユーザーに配布する
 

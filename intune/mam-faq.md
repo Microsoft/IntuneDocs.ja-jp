@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21d773b0ab2227f59f1ee0b2091d39b7c9799721
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 31b5697d9673866d378cc526a3735138d6a120b3
+ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506816"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65992896"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM とアプリの保護に関してよく寄せられる質問
 
@@ -51,6 +51,13 @@ Intune MAM では次の 2 つの構成をサポートしています。
 
 **アプリ保護ポリシーにはどのようなものがありますか。**<br></br>
 各アプリ保護ポリシーの設定の詳細については、[Android アプリ保護ポリシーの設定](app-protection-policy-settings-android.md)と [iOS アプリ保護ポリシーの設定](app-protection-policy-settings-ios.md)に関する各記事を参照してください。
+
+**同じユーザーに同時に、MDM ポリシーと MAM ポリシーの両方を別のデバイスで適用できますか。たとえば、ユーザーは自分の MAM 対応のコンピューターから仕事のリソースにアクセスし、職場の Intune の MDM マネージド デバイスも使用します。このアイデアで何か注意することはありますか。**<br></br>
+デバイスの状態を設定せず、ユーザーに MAM ポリシーを適用する場合、ユーザーは、BYOD デバイスと Intune マネージド デバイスの両方で MAM ポリシーを取得します。 管理されている状態に基づいて、MAM ポリシーを適用することもできます。 したがって、アプリ保護ポリシーを作成する場合、[すべてのアプリの種類を対象にする] の横で [いいえ] を選択します。 次に以下のいずれかを実行します。
+- Intune マネージド デバイスに制限が緩い MAM ポリシーを適用し、MDM が登録されていないデバイスにより制限の厳しい MAM ポリシーを適用します。
+- 登録解除されたデバイスのみに MAM ポリシーを適用します。
+
+詳細については、「[アプリ保護ポリシーを監視する方法](app-protection-policies-monitor.md)」を参照してください。
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>アプリ保護ポリシーで管理できるアプリ
 

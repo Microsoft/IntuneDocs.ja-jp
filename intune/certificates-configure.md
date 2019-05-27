@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 569ddd9be0c59cf9a4bd7ba1f8b114183ce46d7d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 40d8b3d14411827642661b01929d17e83a5198ad
+ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508275"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65765349"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Microsoft Intune でデバイスの証明書プロファイルを構成する
 
@@ -133,3 +133,9 @@ SCEP または PKCS 証明書プロファイルを作成する前に、信頼さ
 [デバイス プロファイルを割り当てる](device-profile-assign.md)  
 [S/MIME を使用して電子メールに署名し、暗号化する](certificates-s-mime-encryption-sign.md)  
 [サードパーティの証明機関を使用する](certificate-authority-add-scep-overview.md)
+
+## <a name="see-also"></a>関連項目
+
+[Microsoft Intune 証明書プロファイルで使用するための NDES の構成のトラブルシューティング](https://support.microsoft.com/help/4459540)
+
+[Microsoft Intune での SCEP 証明書プロファイルの展開のトラブルシューティング](https://support.microsoft.com/help/4457481)

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f1cdacf4b4d26e9db9b4090805f697927a399c5
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 96a0da69cdb77ae36ce2456186593f5c334c870c
+ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61510126"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65765411"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune で SCEP 証明書を構成して使用する
 
@@ -567,4 +567,6 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 
 - [PKCS 証明書を使用する](certficates-pfx-configure.md)か、[Symantec PKI マネージャー Web サービスから PKCS 証明書を発行する](certificates-symantec-configure.md)
 - [サードパーティ CA を追加して Intune で SCEP を使用する](certificate-authority-add-scep-overview.md)
-- 詳細については、「[Microsoft Intune の SCEP 証明書プロファイルの展開のトラブルシューティング](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune)」のガイドを参照してください。
+- さらに支援が必要な場合は、次のガイドを使用してください。
+  - [Microsoft Intune での SCEP 証明書プロファイルの展開のトラブルシューティング](https://support.microsoft.com/help/4457481)
+  - [Microsoft Intune 証明書プロファイルで使用するための NDES の構成のトラブルシューティング](https://support.microsoft.com/help/4459540)
