@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1de4783d9d6e151f616406cc6a2f80406f58e408
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 5e24e72951d473c2e7e49d5ae62b39df18635c16
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798570"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040273"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Windows PC のハードウェアとソフトウェアのインベントリを表示する
 
@@ -39,31 +38,31 @@ Intune は、Intune ソフトウェア クライアントを使用して PC と�
 
 ## <a name="to-display-information-about-pcs-you-manage"></a>管理する PC に関する情報を表示するには
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[レポート]** &gt; **[コンピューター インベントリ レポート]** を選択します。
+1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[レポート]** &gt; **[コンピューター インベントリ レポート]** を選択します。
 
 2.  **[新しいレポートの作成]** ページで、既定値をそのまま使用するか、カスタマイズして、レポートで返される結果をフィルター処理します。 たとえば、Windows 8.1 を実行する PC だけをレポートに表示するように選択できます。
 
-3.  **[レポートの表示]** を選択すると、**[コンピューター インベントリ レポート]** が新しいウィンドウで開きます。
+3.  **[レポートの表示]** を選択すると、 **[コンピューター インベントリ レポート]** が新しいウィンドウで開きます。
 
-    レポートは、列見出し (**[名前]**、**[シャーシの種類]**、**[製造元]** など) を選択して並べ替えることができます。
+    レポートは、列見出し ( **[名前]** 、 **[シャーシの種類]** 、 **[製造元]** など) を選択して並べ替えることができます。
 
 ## <a name="to-display-software-installed-on-pcs-you-manage"></a>管理する PC にインストールされているソフトウェアを表示するには
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[レポート]** &gt; **[検出されたソフトウェアのレポート]** を選択します。
+1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[レポート]** &gt; **[検出されたソフトウェアのレポート]** を選択します。
 
 2.  **[新しいレポートの作成]** ページで、既定値をそのまま使用するか、カスタマイズして、レポートで返される結果をフィルター処理します。 たとえば、Microsoft が発行したソフトウェアだけをレポートに表示するように選択できます。
 
-3.  **[レポートの表示]** を選択すると、**[検出されたソフトウェアのレポート]** が新しいウィンドウで開きます。
+3.  **[レポートの表示]** を選択すると、 **[検出されたソフトウェアのレポート]** が新しいウィンドウで開きます。
 
-    レポートは、列見出し (**[名前]**、**[発行元]**、**[カテゴリ]** など) を選択して並べ替えることができます。 一覧の項目に付いている矢印を選択すると、一覧が展開して、更新プログラムの詳細 (更新プログラムがインストールされている PC など) が表示されます。
+    レポートは、列見出し ( **[名前]** 、 **[発行元]** 、 **[カテゴリ]** など) を選択して並べ替えることができます。 一覧の項目に付いている矢印を選択すると、一覧が展開して、更新プログラムの詳細 (更新プログラムがインストールされている PC など) が表示されます。
 
 ## <a name="to-refresh-computer-inventory-to-ensure-it-is-current"></a>コンピューターのインベントリを更新して最新の状態に保つには
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[グループ]** &gt; **[すべてのデバイス]** (または、インベントリを更新する PC が含まれる別のグループ) を選択します。
+1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[グループ]** &gt; **[すべてのデバイス]** (または、インベントリを更新する PC が含まれる別のグループ) を選択します。
 
 2.  PC を 1 台選択するか、**Ctrl** キーを押しながら複数選択します。
 
-3.  タスク バーで、**[リモート タスク]** &gt; **[インベントリの更新]** を選択します。
+3.  タスク バーで、 **[リモート タスク]** &gt; **[インベントリの更新]** を選択します。
 
 4.  タスクの状態を表示するには、ページの右下隅にある **[リモート タスク]** を選択します。
 

@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7192d7c71d1737a624f2c76e3253cb232dc1f2af
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: c19c02c8d4c9ece66d03b3510071bb90e7f35ad3
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798980"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047513"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Microsoft Intune の Endpoint Protection を使用して Windows PC を保護する
 
@@ -63,15 +62,15 @@ IT 管理者として最も優先度が高い事項の 1 つは、管理する�
 ## <a name="configure-microsoft-intune-endpoint-protection"></a>Microsoft Intune Endpoint Protection を構成する
 Microsoft Intune の Endpoint Protection を構成するには、次の手順に従います。
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[ポリシー]**  >  **[ポリシーの追加]** を選択します。
+1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[ポリシー]**  >  **[ポリシーの追加]** を選択します。
 
-2.  **[コンピューターの管理]** を展開し、**[Microsoft Intune エージェントの設定]** を選択します。 **[カスタム ポリシーの作成および展開]** を選択して Endpoint Protection 設定のポリシーを指定します。 次に、**[ポリシーを作成する]** ボタンをクリックします。
+2.  **[コンピューターの管理]** を展開し、 **[Microsoft Intune エージェントの設定]** を選択します。 **[カスタム ポリシーの作成および展開]** を選択して Endpoint Protection 設定のポリシーを指定します。 次に、 **[ポリシーを作成する]** ボタンをクリックします。
 
 推奨される設定を使用することも、設定をカスタマイズすることもできます。 ポリシーの作成および展開方法の詳細については、「[Microsoft Intune コンピューター クライアントを使用した一般的な Windows PC 管理タスク](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)」を参照してください。
 
   ![Endpoint Protection の設定](media/pol-sa-pc-endpoint-policy.png)
 
-展開された Endpoint Protection ポリシーは、**[ポリシー]** ワークスペースの **[すべてのポリシー]** ページで見ることができます。
+展開された Endpoint Protection ポリシーは、 **[ポリシー]** ワークスペースの **[すべてのポリシー]** ページで見ることができます。
 
 ## <a name="specify-endpoint-protection-service-settings"></a>Endpoint Protection サービスの設定を指定する
 
@@ -85,7 +84,7 @@ Microsoft Intune の Endpoint Protection を構成するには、次の手順に
 |                    <strong>マルウェアを駆除する前にシステムの復元ポイントを作成する</strong>                    |                                                                                                                                                                                                                                                                                                                                 マルウェアを駆除する前に、Windows システムの復元ポイントを作成するには、<strong>[はい]</strong> に設定します。<br /><br />推奨値: <strong>○</strong>                                                                                                                                                                                                                                                                                                                                  |
 |                                 <strong>解決されたマルウェアを追跡する (日数)</strong>                                  |                                                                                                                                                                                                                                                                                      以前に感染したコンピューターを手動で確認できるように、指定した期間、解決したマルウェアを Endpoint Protection で追跡できるようにします。<br /><br />0 ～ 30 日の値を指定できます。<br /><br />推奨値: <strong>[7 日間]</strong>                                                                                                                                                                                                                                                                                       |
 
-**[Endpoint Protection のインストール]** と **[Endpoint Protection を有効にする]** のポリシー値を **[はい]** に設定し、**[サード パーティ製エンドポイント保護アプリケーションがインストールされている場合でも Endpoint Protection をインストールする]** のポリシー値を **[いいえ]** に設定している場合、Microsoft Intune Endpoint Protection は別のエンドポイント保護アプリケーションがインストールされていることを検出します。 つまり、Endpoint Protection はインストールされず、既に存在する場合はアンインストールされます。 ただし、Microsoft Intune Endpoint Protection は他のエンドポイント保護アプリケーションの Intune での正常性について報告します。
+**[Endpoint Protection のインストール]** と **[Endpoint Protection を有効にする]** のポリシー値を **[はい]** に設定し、 **[サード パーティ製エンドポイント保護アプリケーションがインストールされている場合でも Endpoint Protection をインストールする]** のポリシー値を **[いいえ]** に設定している場合、Microsoft Intune Endpoint Protection は別のエンドポイント保護アプリケーションがインストールされていることを検出します。 つまり、Endpoint Protection はインストールされず、既に存在する場合はアンインストールされます。 ただし、Microsoft Intune Endpoint Protection は他のエンドポイント保護アプリケーションの Intune での正常性について報告します。
 
   ウイルスやスパイウェアなどの潜在的な脅威が PC 上でインストールまたは実行を試みると、Microsoft Security Essentials がリアルタイム保護でアラートを通知します。 これが発生すると、タスク バーの右側の通知領域にメッセージが直ちに表示されます。
 
@@ -115,7 +114,7 @@ Microsoft Intune の Endpoint Protection を構成するには、次の手順に
 
 |ポリシー設定|説明|
 |------------------|--------------------|
-|**Endpoint Protection をインストール後にフル スキャンを実行する**|Endpoint Protection をコンピューターにインストールした後で、自動的にフル システム スキャンを実行するには、**[はい]** に設定します。 このスキャンは、ユーザーの生産性への影響を最小限に抑えるためにコンピューターがアイドル状態のときにのみ実行されます。<br /><br />推奨値: **○**|
+|**Endpoint Protection をインストール後にフル スキャンを実行する**|Endpoint Protection をコンピューターにインストールした後で、自動的にフル システム スキャンを実行するには、 **[はい]** に設定します。 このスキャンは、ユーザーの生産性への影響を最小限に抑えるためにコンピューターがアイドル状態のときにのみ実行されます。<br /><br />推奨値: **○**|
 |**マルウェア除去後に必要に応じてフル スキャンを自動的に実行する**|**[はい]** に設定すると、マルウェアの削除後に、その他のファイルが影響を受けていないことを確認するため、Endpoint Protection で自動的にコンピューターでフル システム スキャンを実行します。<br /><br />推奨値: **○**|
 |**コンピューターがアイドル状態のときだけスケジュールされたスキャンを開始する**|**[はい]** に設定すると、コンピューターが使用中のときは、スケジュール済みのスキャンが実行されないようにして、ユーザーの操作が邪魔されないようにできます。<br /><br />推奨値: **○**|
 |**スキャンを開始する前に、最新のマルウェア定義があるかどうかを確認する**|**[はい]** に設定すると、コンピューターのスキャンを開始する前に、Endpoint Protection で最新のマルウェア定義を自動的に確認します。<br /><br />推奨値: **○**|
@@ -130,7 +129,7 @@ Microsoft Intune の Endpoint Protection を構成するには、次の手順に
 
 **[次のアラート レベルのマルウェアに対する Endpoint Protection の処置を選択する]** 設定では、さまざまなアラート レベルのマルウェアが検出されたときに Endpoint Protection で実行される既定のアクションが指定されます。 各アラート レベルに対して、マルウェアの削除、検疫、または、Microsoft の推奨操作の実行を指定できます。
 
-推奨値: **[推奨される操作]**。Endpoint Protection は操作を推奨できるようになります。   
+推奨値: **[推奨される操作]** 。Endpoint Protection は操作を推奨できるようになります。   
 
 ### <a name="decide-whether-to-choose-the-excluded-files-and-folders-settings"></a>除外されるファイルとフォルダーの設定を選択するかどうかを決定する
 
@@ -138,14 +137,14 @@ Microsoft Intune の Endpoint Protection を構成するには、次の手順に
 
 ### <a name="decide-whether-to-choose-the-excluded-processes-settings"></a>除外されるプロセスの設定を選択するかどうかを決定する
 
-**[スキャンまたはリアルタイム保護から除外するプロセス]** 設定を使用すると、スキャンの実行時またはリアルタイム保護をコンピューターで使用するときに、特定のプロセスを除外できます。 拡張子 **.exe**、**.com**、または **.scr** のファイルのみを除外できます。
+**[スキャンまたはリアルタイム保護から除外するプロセス]** 設定を使用すると、スキャンの実行時またはリアルタイム保護をコンピューターで使用するときに、特定のプロセスを除外できます。 拡張子 **.exe**、 **.com**、または **.scr** のファイルのみを除外できます。
 
 ### <a name="decide-whether-to-choose-the-excluded-file-types-settings"></a>除外されるファイルの種類の設定を選択するかどうかを決定する
 
 **[スキャンまたはリアルタイム保護から除外するファイルの拡張子]** 設定を使用すると、スキャンの実行時またはリアルタイム保護をコンピューターで使用するときに、特定のファイル名拡張子を除外できます。
 
 ### <a name="specify-microsoft-active-protection-service-settings"></a>Microsoft Active Protection サービスの設定を指定する
-Microsoft Active Protection Service は、潜在的な脅威の対処方法についてさまざまな情報が交換、掲載されているオンライン コミュニティです。 このコミュニティは、マルウェアの新たな感染が広がらないようにする際にも役立ちます。 **Microsoft Active Protection Service に参加する**には、**[はい]** を選択し、**[メンバーシップ レベル]** を指定します。
+Microsoft Active Protection Service は、潜在的な脅威の対処方法についてさまざまな情報が交換、掲載されているオンライン コミュニティです。 このコミュニティは、マルウェアの新たな感染が広がらないようにする際にも役立ちます。 **Microsoft Active Protection Service に参加する**には、 **[はい]** を選択し、 **[メンバーシップ レベル]** を指定します。
   - **基本** - 検出されたマルウェアに関する基本情報を Microsoft に送信します。 基本情報には、ソフトウェアの発信元、ユーザーが実行する処置、Endpoint Protection によって自動的に実行される処置、処置の実行結果などが含まれます。
   - **詳細** - マルウェア、スパイウェア、望ましくない可能性のあるソフトウェアの詳細情報を Microsoft に送信します。 詳細情報には、ソフトウェアの場所、ファイル名、ソフトウェアの動作、感染したコンピューターへの影響などが含まれます。
 
@@ -155,10 +154,10 @@ Microsoft Active Protection Service は、潜在的な脅威の対処方法に�
 次のタスクは、Endpoint Protection を実行するマネージド コンピューターのさまざまな管理タスクの実行に役立ちます。
 - マルウェア定義の更新
   - Intune コンソール - **[グループ]** ワークスペースから、更新するコンピューターを選択します。 **[リモート タスク]** &gt; **[マルウェア定義の更新]** の順に選択します。
-  - マネージド コンピューター - Windows 通知領域から Endpoint Protection クライアント ソフトウェアを起動します。 **[更新]** タブを選択して、**[更新]** をクリックします。
+  - マネージド コンピューター - Windows 通知領域から Endpoint Protection クライアント ソフトウェアを起動します。 **[更新]** タブを選択して、 **[更新]** をクリックします。
 - マルウェア スキャンの実行
   - Intune コンソール - **[グループ]** ワークスペースから、スキャンするコンピューターを選択します。 **[マルウェアのフル スキャンの実行]** または **[マルウェアのクイック スキャンの実行]** を選択します。
-  - マネージド コンピューター - Windows 通知領域から Endpoint Protection クライアント ソフトウェアを起動します。 **[クイック]**、**[フル]**、または **[カスタム]** を選択し、**[今すぐスキャン]** を選択します。
+  - マネージド コンピューター - Windows 通知領域から Endpoint Protection クライアント ソフトウェアを起動します。 **[クイック]** 、 **[フル]** 、または **[カスタム]** を選択し、 **[今すぐスキャン]** を選択します。
 
 リモート タスクの状態を表示するには、Intune コンソールの右下隅にある **[リモート タスク]** リンクを選択します。 **[リモート タスクの状態]** ダイアログ ボックスに、現在のリモート タスク、タスクの状態、デバイス名、発生したエラーが一覧表示されます。 また、ある場合は、トラブルシューティング情報へのリンクも表示されます。
 
@@ -174,15 +173,15 @@ Microsoft Active Protection Service は、潜在的な脅威の対処方法に�
   - **このマルウェアの詳細** - Microsoft マルウェア プロテクション センターに掲載されているマルウェアの詳細情報のトピックが開きます。
 
 > [!IMPORTANT]
-> クライアントをインストールして少なくとも 1 つのコンピューター クライアントを管理するまで、**[保護]** ワークスペースは、管理コンソールに表示されません。
+> クライアントをインストールして少なくとも 1 つのコンピューター クライアントを管理するまで、 **[保護]** ワークスペースは、管理コンソールに表示されません。
 
   ![エンドポイント保護の監視](media/pol-sa-ep-monitor.png)
 
 ### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>コンピューター上のマルウェアに対する [最近の検出パス] を表示する方法
 Intune では、デバイスで検出されたマルウェアのインスタンスのパスを最新 10 件まで表示できます。 **[最近の検出パス]** は、既定では無効になっています。 この表示を有効にするには、次の手順を実行します。
 
-1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[グループ]** > **[すべてのデバイス]** > **[すべてのコンピューター]** を選択します。
-2. 最近の検出パスを表示したいコンピューターを右クリックして、**[プロパティ]** を選択します。
+1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[グループ]**  >  **[すべてのデバイス]**  >  **[すべてのコンピューター]** を選択します。
+2. 最近の検出パスを表示したいコンピューターを右クリックして、 **[プロパティ]** を選択します。
 3. 上部のタブから **[マルウェア]** を選択します。
 
    ![[マルウェア] タブを選択して、[最近の検出パス] チェック ボックスをクリックします。](media/malware-path-column.png)
@@ -191,7 +190,7 @@ Intune では、デバイスで検出されたマルウェアのインスタン�
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>コンピューターでのマルウェア スキャンの実行またはマルウェア定義の更新
 Intune では、Intune クライアントがインストールされているリモートの管理対象 PC で Endpoint Protection または Windows Defender を使用して、フル マルウェア スキャンまたはクイック マルウェア スキャンを実行できます。
 
-1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[グループ]**  >  **[概要]**  >  **[すべてのデバイス]**  >  **[すべてのコンピューター]** に移動し、対象のコンピューターを選択します。
+1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[グループ]**  >  **[概要]**  >  **[すべてのデバイス]**  >  **[すべてのコンピューター]** に移動し、対象のコンピューターを選択します。
 
 2. **[リモート タスク]** ドロップダウン リストを選択し、リモート コンピューターで実行するタスクを選択します。
 

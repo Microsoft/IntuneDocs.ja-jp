@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 11/13/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbce65fc22bb1d3ecafcd2ffbb3a35dec703ccc4
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: e39766bc8a880c104bd5af9ff530144e2b5d2beb
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069227"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041680"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune ソフトウェア クライアントを使用して Windows PC をコンピューターとして管理する
 
@@ -59,7 +58,7 @@ Intune クライアント ソフトウェアをインストールするハード
 |---------------|--------------------|
 |オペレーティング システム | Windows 7 SP1 および Windows 8.1 以降を実行している Windows デバイスであること。 </br></br>**Home エディションのバージョンはサポートされていません。**|
 |管理者のアクセス許可|クライアント ソフトウェアをインストールするアカウントは、そのデバイスのローカル管理者のアクセス許可を持っている必要があります。|
-|Windows インストーラー 3.1|PC には Windows インストーラー 3.1 以降がインストールされている必要があります。<br /><br />PC で Windows インストーラーのバージョンを確認するには<br /><br />  PC で、**%windir%\System32\msiexec.exe** を右クリックし、**[プロパティ]** をクリックします。<br /><br />最新バージョンの Windows インストーラーは、Microsoft Developer Network Web サイトの「 [Windows Installer Redistributables (Windows インストーラー再頒布可能パッケージ)](http://go.microsoft.com/fwlink/?LinkID=234258) 」からダウンロードできます。|
+|Windows インストーラー 3.1|PC には Windows インストーラー 3.1 以降がインストールされている必要があります。<br /><br />PC で Windows インストーラーのバージョンを確認するには<br /><br />  PC で、 **%windir%\System32\msiexec.exe** を右クリックし、 **[プロパティ]** をクリックします。<br /><br />最新バージョンの Windows インストーラーは、Microsoft Developer Network Web サイトの「 [Windows Installer Redistributables (Windows インストーラー再頒布可能パッケージ)](http://go.microsoft.com/fwlink/?LinkID=234258) 」からダウンロードできます。|
 |互換性のないクライアント ソフトウェアを削除する|Intune クライアント ソフトウェアをインストールする前に、その PC から Configuration Manager、Operations Manager、および Service Manager のクライアント ソフトウェアをアンインストールします。|
 
 > [!WARNING]
@@ -88,7 +87,7 @@ Intune 管理者は、さまざまな方法でユーザーが Intune ソフト�
 
 Intune クライアント ソフトウェアでは、ソフトウェアの更新、Windows ファイアウォール、および Endpoint Protection を管理することで [PC の保護に役立つ管理機能](policies-to-protect-windows-pcs-in-microsoft-intune.md)がサポートされますが、Intune クライアント ソフトウェアで管理される PC を、モバイル デバイス管理に特化した **Windows** ポリシー設定などの他の Intune ポリシーの対象とすることはできません。
 
-Intune クライアント ソフトウェアを使って Windows PC を管理する場合は、**[コンピューター管理]** セクションに表示されているポリシーのみを使うことができます。
+Intune クライアント ソフトウェアを使って Windows PC を管理する場合は、 **[コンピューター管理]** セクションに表示されているポリシーのみを使うことができます。
 
 Intune では、Windows Server における Active Directory ドメイン サービス (AD DS) グループ ポリシー オブジェクト (GPO) と似た方法で、ポリシーを使って Windows PC を管理します。 Active Directory ドメインに参加しているコンピューターを Intune で管理する場合は、組織で使われている[他の GPO と Intune のポリシーが競合しないようにしてください](resolve-gpo-and-microsoft-intune-policy-conflicts.md)。 詳しくは、「[初心者向けのグループ ポリシー](https://technet.microsoft.com/library/hh147307.aspx)」をご覧ください。
 
@@ -117,7 +116,7 @@ PC をモバイル デバイスとして管理するために使うことがで�
 -   フル ワイプ (選択的ワイプは使用可能)
 -   条件付きアクセス
 
-また、**[更新]**、**[保護]**、**[ライセンス]** などの特定のセクションは、Intune クライアント ソフトウェアを使ってデバイスを登録した場合にのみ Intune 管理コンソールに表示されることにも注意してください。
+また、 **[更新]** 、 **[保護]** 、 **[ライセンス]** などの特定のセクションは、Intune クライアント ソフトウェアを使ってデバイスを登録した場合にのみ Intune 管理コンソールに表示されることにも注意してください。
 
   ![PC クライアントにのみ表示される管理コンソールの項目](media/admin-console-settings-only-for-pc-agent.png)
 

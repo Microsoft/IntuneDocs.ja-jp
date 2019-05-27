@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ef14d8ed3b1635fba183134b0d457ddc82ae329
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: cad83daa88351749d60d0b1c72935ea47f9a14ce
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799233"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046939"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Windows PC に対するユーザー デバイスの関連付けを管理する
 
@@ -35,22 +34,22 @@ ms.locfileid: "58799233"
 
 PC にユーザーを関連付けるには:
 
-1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[グループ]** &gt; **[すべてのデバイス]** (または、ユーザーに関連付ける PC が含まれる別のグループ) を選択します。
+1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[グループ]** &gt; **[すべてのデバイス]** (または、ユーザーに関連付ける PC が含まれる別のグループ) を選択します。
 
-2. ユーザーを関連付ける PC を選択して、**[ユーザーの関連付け]** を選択します。
+2. ユーザーを関連付ける PC を選択して、 **[ユーザーの関連付け]** を選択します。
 
-   **[ユーザーの関連付け]** ダイアログ ボックスには、関連付けることができるユーザーの表示名とユーザー ID、および現在関連付けられている PC の台数が表示されます。 選択した PC に既にユーザーが関連付けられている場合は、そのユーザーの名前とユーザー ID が **[現在のユーザー]** の下に表示されます。 PC がどのユーザーにも関連付けられていない場合、**[現在のユーザー]** の下に **[ユーザーなし]** と表示されます。
+   **[ユーザーの関連付け]** ダイアログ ボックスには、関連付けることができるユーザーの表示名とユーザー ID、および現在関連付けられている PC の台数が表示されます。 選択した PC に既にユーザーが関連付けられている場合は、そのユーザーの名前とユーザー ID が **[現在のユーザー]** の下に表示されます。 PC がどのユーザーにも関連付けられていない場合、 **[現在のユーザー]** の下に **[ユーザーなし]** と表示されます。
 
 3. 以下のいずれかを実行します。
 
-   - PC と現在のユーザーの関連付けをそのままにするには、**[キャンセル]** を選択します。
+   - PC と現在のユーザーの関連付けをそのままにするには、 **[キャンセル]** を選択します。
 
-   - 現在のユーザーとの関連付けを削除する (存在する場合) には、<strong>[リンクの削除]**&gt;**[OK]</strong> の順に選択します。
+   - 現在のユーザーとの関連付けを削除する (存在する場合) には、<strong>[リンクの削除] **&gt;** [OK]</strong> の順に選択します。
 
-   - PC を新しいユーザーに関連付けるには、**[すべてのユーザー]** の一覧からユーザーを選択します。 選択したユーザーのデータが正しいことを確認して、**[OK]** を選択します。
+   - PC を新しいユーザーに関連付けるには、 **[すべてのユーザー]** の一覧からユーザーを選択します。 選択したユーザーのデータが正しいことを確認して、 **[OK]** を選択します。
 
 > [!TIP]
-> エンド ユーザーが各自の PC に関連付けをするのを抑制する場合は、**[Microsoft Intune エージェントの設定]** ポリシーの **[ユーザーによる各自のコンピューターへの関連付けを制限する]** オプションを有効にします。
+> エンド ユーザーが各自の PC に関連付けをするのを抑制する場合は、 **[Microsoft Intune エージェントの設定]** ポリシーの **[ユーザーによる各自のコンピューターへの関連付けを制限する]** オプションを有効にします。
 
 ### <a name="see-also"></a>関連項目
 

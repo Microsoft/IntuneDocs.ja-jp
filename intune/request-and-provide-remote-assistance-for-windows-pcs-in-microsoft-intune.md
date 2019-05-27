@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7004d72328d606f6adc5cd84e79ce4830409059
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: a1a725ff5ba5a677a41fe2a89b999f1ae41b3b6f
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798539"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040907"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Windows PC のリモート アシスタンス要求と提供
 
@@ -44,31 +43,31 @@ Intune では別売りの [TeamViewer](https://www.teamviewer.com) ソフトウ�
 
 ## <a name="configure-the-teamviewer-connector"></a>TeamViewer Connector を構成する
 
-1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、**[管理者]** を選択します。
-2. **[管理者]** ワークスペースで、**[TeamViewer]** を選択します。
-3. **[TeamViewer]** ページの **[TeamViewer Connector]** で、**[有効化]** を選択します。
-4. **[TeamViewer の有効化]** ダイアログ ボックスで、ライセンス条項を **[承諾]** します。 TeamViewer ライセンスをまだ所有していない場合、**[TeamViewer ライセンスの購入]** を選択します。
+1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com)で、 **[管理者]** を選択します。
+2. **[管理者]** ワークスペースで、 **[TeamViewer]** を選択します。
+3. **[TeamViewer]** ページの **[TeamViewer Connector]** で、 **[有効化]** を選択します。
+4. **[TeamViewer の有効化]** ダイアログ ボックスで、ライセンス条項を **[承諾]** します。 TeamViewer ライセンスをまだ所有していない場合、 **[TeamViewer ライセンスの購入]** を選択します。
 5. TeamViewer ブラウザー ウィンドウが開いたら、TeamViewer 資格情報でサイトにサインインします。
 6. TeamViewer サイトで、Intune で TeamViewer に接続するためのオプションを読み、承諾します。
-7. Intune コンソールで、**[TeamViewer Connector]** アイテムに **[有効]** が表示されていることを確認します。
+7. Intune コンソールで、 **[TeamViewer Connector]** アイテムに **[有効]** が表示されていることを確認します。
 
 
 ## <a name="open-a-remote-assistance-request-end-user"></a>リモート アシスタンス要求を登録する (エンド ユーザー)
 
-1. クライアント Windows PC で、**[Microsoft Intune Center]** を開きます。
-2. **[リモート アシスタンス]** で、**[リモート アシスタンスの要求]** を選択します。
+1. クライアント Windows PC で、 **[Microsoft Intune Center]** を開きます。
+2. **[リモート アシスタンス]** で、 **[リモート アシスタンスの要求]** を選択します。
 3. 要求を承認すると (下図参照)、クライアントで TeamViewer が開きます。 Web ブラウザーが TeamViewer アプリケーションを開こうとしているというメッセージが表示されたら、ユーザーはそれを承諾する必要があります。
 4. ユーザーには、管理者がユーザーの PC を操作してよいのか尋ねるメッセージが表示されます。 続行するには、ユーザーはメッセージを承諾する必要があります。
 5. リモート アシスタンス セッション中、管理者が接続されていることを示すウィンドウがユーザーに表示されます。 ユーザーがこのウィンドウを閉じると、リモート セッションが終了します。
 
 ## <a name="respond-to-a-remote-assistance-request"></a>リモート アシスタンス要求に応答する
 
-1. ユーザーがリモート アシスタンス要求を送信すると、**[アラート]** ワークスペースの **[管理]**  >  **[リモート アシスタンス]** に要求が表示されます。 次に例を示します。
+1. ユーザーがリモート アシスタンス要求を送信すると、 **[アラート]** ワークスペースの **[管理]**  >  **[リモート アシスタンス]** に要求が表示されます。 次に例を示します。
    > ![リモート アシスタンス要求のスクリーンショット](/intune/media/team-viewer.png)
 
 <br>未応答のまま 4 時間以上経過すると、要求は削除されます。
-2. 要求を承諾するには、**[要求を承認してリモート アシスタンスを開始する]** を選択します。
-3. **[リモート アシスタンスの新しい要求が保留中]** ダイアログ ボックスで、**[リモート アシスタンスの要求を受け入れる]** を選択します。 まだインストールされていない場合、TeamViewer は PC に必要なアプリをインストールします。
+2. 要求を承諾するには、 **[要求を承認してリモート アシスタンスを開始する]** を選択します。
+3. **[リモート アシスタンスの新しい要求が保留中]** ダイアログ ボックスで、 **[リモート アシスタンスの要求を受け入れる]** を選択します。 まだインストールされていない場合、TeamViewer は PC に必要なアプリをインストールします。
 4. TeamViewer は、管理者がエンド ユーザーの PC を操作することをエンド ユーザーに通知します。 ユーザーがこの要求を承諾すると、TeamViewer ウィンドウが開き、管理者は PC を操作できます。
 
 リモート アシスタンス セッション中、リモート PC を操作するためのあらゆる TeamViewer コマンドを使用できます。 コマンドの詳細については、TeamViewer Web サイトから [[リモート コントロールのマニュアル]](http://www.teamviewer.com/en/support/documents/) をダウンロードしてください。
@@ -80,9 +79,9 @@ Intune では別売りの [TeamViewer](https://www.teamviewer.com) ソフトウ�
 ## <a name="remotely-restart-a-windows-pc"></a>Windows PC をリモートで再起動する
 問題を解決するためにユーザーをサポートする際、ユーザーの PC のリモート再起動が必要になる場合があります。 次の手順で Windows PC をリモート再起動します。
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[グループ]** &gt; **[すべてのデバイス]** (または、再起動する PC が含まれる別のグループ) を選択します。
+1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[グループ]** &gt; **[すべてのデバイス]** (または、再起動する PC が含まれる別のグループ) を選択します。
 
-2.  1 つまたは複数の PC を選択し、**[リモート タスク]** &gt; **[コンピューターの再起動]** を選択します。
+2.  1 つまたは複数の PC を選択し、 **[リモート タスク]** &gt; **[コンピューターの再起動]** を選択します。
 
 3.  タスクの状態を表示するには、ページの右下隅にある **[リモート タスク]** を選択します。
 

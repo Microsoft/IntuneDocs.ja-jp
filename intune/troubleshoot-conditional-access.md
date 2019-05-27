@@ -8,7 +8,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 09/25/2018
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4c9f2ecfc6b3e153bf755f92f72953e5573af90
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: 9a5aeae0d4256232d01c7e6171b10159a130b513
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292405"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044671"
 ---
 # <a name="troubleshoot-conditional-access"></a>条件付きアクセスに関するトラブルシューティング
 
@@ -35,7 +34,7 @@ Intune と条件付きアクセスを使用して、Exchange Online、SharePoint
 
 - デバイスを Intune で登録および管理する必要がある。
 - ユーザーとデバイスの両方が、割り当てられた Intune コンプライアンス ポリシーに準拠する必要がある。
-- 既定で、ユーザーにデバイス コンプライアンス ポリシーを割り当てる必要がある。 これは、Intune 管理ポータルの **[デバイスのポリシー準拠]** > **[コンプライアンス ポリシー設定]** で **[コンプライアンス ポリシーが割り当てられていないデバイスをマークする]** という設定がどのように構成されているかに既存する可能性があります。
+- 既定で、ユーザーにデバイス コンプライアンス ポリシーを割り当てる必要がある。 これは、Intune 管理ポータルの **[デバイスのポリシー準拠]**  >  **[コンプライアンス ポリシー設定]** で **[コンプライアンス ポリシーが割り当てられていないデバイスをマークする]** という設定がどのように構成されているかに既存する可能性があります。
 -   ユーザーが Outlook ではなくデバイスのネイティブ メール クライアントを使用する場合、デバイスで Exchange ActiveSync を有効にする必要がある。 これは、iOS、Windows Phone、および Android デバイスで自動的に発生します。
 -   Intune Exchange Connector を適切に構成する必要がある。 詳細については、[Microsoft Intune での Exchange Connector のトラブルシューティング](troubleshoot-exchange-connector.md)に関するページを参照してください。
 
@@ -52,7 +51,7 @@ Intune と条件付きアクセスを使用して、Exchange Online、SharePoint
   - 別のネットワーク (たとえば、携帯電話や Wi-Fi) で問題が解決されないかどうかを確認します。
 
   問題が解決されない場合は、「[Microsoft Intune のサポートを受ける方法](get-support.md)」の説明に従って、Microsoft サポートにお問い合わせください。
-- 一部の Android デバイスは暗号化されているように見えることがありますが、ポータル サイト アプリでは、このようなデバイスは暗号化されていないデバイスとして認識されるので、非準拠となります。 このシナリオでは、ポータル サイト アプリで、デバイスのスタートアップ パスコードを設定するように求める通知がユーザーに表示されます。 通知をタップし、既存の PIN またはパスワードを確認した後に、**[Secure start-up]/(安全な起動/)** 画面で **[Require PIN to start device]/(デバイスの起動に PIN が必要/)** を選択します。次に、ポータル サイト アプリから、デバイスに対して **[ポリシー準拠状況の確認]** ボタンをタップします。 デバイスは暗号化済みとして検出されるようになります。 
+- 一部の Android デバイスは暗号化されているように見えることがありますが、ポータル サイト アプリでは、このようなデバイスは暗号化されていないデバイスとして認識されるので、非準拠となります。 このシナリオでは、ポータル サイト アプリで、デバイスのスタートアップ パスコードを設定するように求める通知がユーザーに表示されます。 通知をタップし、既存の PIN またはパスワードを確認した後に、 **[Secure start-up]/(安全な起動/)** 画面で **[Require PIN to start device]/(デバイスの起動に PIN が必要/)** を選択します。次に、ポータル サイト アプリから、デバイスに対して **[ポリシー準拠状況の確認]** ボタンをタップします。 デバイスは暗号化済みとして検出されるようになります。 
   > [!NOTE]
   > デバイスの製造元によっては、ユーザーが設定した PIN ではなく既定の PIN を使用してデバイスを暗号化します。 Intune では、既定の PIN を使用した暗号化を安全でないと見なし、ユーザーが既定以外の新しい PIN を作成するまで、それらのデバイスを非準拠としてマークします。
 - 登録され、ポリシーに準拠している Android デバイスでも、企業のリソースに初めてアクセスしようとした際に、ブロックされて検疫通知を受け取る場合があります。 この場合は、ポータル サイト アプリが実行されていないことを確認し、検疫電子メール内で **[今すぐ開始]** リンクをクリックして、評価をトリガーします。 この処理は、条件付きアクセスを初めて有効にする場合にのみ実行する必要があります。

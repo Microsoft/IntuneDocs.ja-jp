@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 01/06/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9cfb464122018c6e77d5ea1395b699bafa81f33
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 45df3e3b217e25c9e61fd51d7f458f33c7c0481d
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799038"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045518"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Power BI で OData フィードからレポートを作成する
 
@@ -55,11 +54,11 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
 > Intune の**レポート**に対するアクセス許可が必要です。 詳細については、「[承認](reports-api-url.md)」を参照してください。
 
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**  >  **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune データ ウェアハウス]** ウィンドウを開きます。
 4. カスタム フィードの URL をコピーします。 例: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 5. Power BI Desktop を開きます。
-6. **[データの取得]** > **[Odata フィード]** を選びます。
+6. **[データの取得]**  >  **[Odata フィード]** を選びます。
 7. **[OData フィード]** ウィンドウの [URL] ボックスにカスタム フィードの URL を貼り付けます。
 8. **[基本]** を選択します。
 
@@ -83,7 +82,7 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
 ![テーブル間の関連データのリレーションシップの管理](media/reports-create-03-managerelationships.png)
 
 1. **[リレーションシップの管理]** を選択します。
-2. PowerBI でリレーションシップがまだ検出されていない場合は、**[自動検出]** を選択します。
+2. PowerBI でリレーションシップがまだ検出されていない場合は、 **[自動検出]** を選択します。
 
 リレーションシップの追加元と宛先の列が表示されます。 この例では、**devices** テーブルのデータ フィールド **ownerTypeKey** が、**ownerTypes** テーブルのデータ フィールド **ownerTypeKey** にリンクしています。 リレーションシップを使って、**devices** テーブルのデバイス種類コードの一般的な名前を調べます。
 
@@ -95,9 +94,9 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
 
 1. グラフの種類を選びます。 **[Treemap]** を選びます。
 2. データ モデルで、**devices** テーブルを探します。
-3. **devices テーブル**を展開し、**[フィールド]** パネルで **manufacturer** データ フィールドを選択します。
+3. **devices テーブル**を展開し、 **[フィールド]** パネルで **manufacturer** データ フィールドを選択します。
 4. **manufacturer** データ フィールドをレポート キャンバスのツリーマップ グラフにドラッグします。
-5. **devices** テーブルの **deviceKey** データ フィールドを、**[視覚化]** ウィンドウの **[値]** セクションにドラッグして、**[データ フィールドをここにドラッグ]** ボックスにドロップします。  
+5. **devices** テーブルの **deviceKey** データ フィールドを、 **[視覚化]** ウィンドウの **[値]** セクションにドラッグして、 **[データ フィールドをここにドラッグ]** ボックスにドロップします。  
 
 組織内のデバイスの製造元の分布を示すビジュアルが作成されます。
 
@@ -108,7 +107,7 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
 アプリを使った追加の質問に回答できるように、ツリーマップにフィルターを追加できます。
 
 
-1. フィルターを追加するには、レポート キャンバスを選択し、**[視覚化]** の下の**スライサー アイコン** (![データ モデルとサポートされているリレーションシップが示されたツリーマップ](media/reports-create-slicer.png)) を選択します。
+1. フィルターを追加するには、レポート キャンバスを選択し、 **[視覚化]** の下の**スライサー アイコン** (![データ モデルとサポートされているリレーションシップが示されたツリーマップ](media/reports-create-slicer.png)) を選択します。
 2. **ownerTypes** テーブルを探し、**ownerTypeName** データ フィールドを **[視覚化]** パネルの **[フィルター]** セクションにドラッグします。  
 
    devices テーブルに、デバイスが会社所有か個人所有かを示すコードを含む **OwnerTypeKey** データ フィールドがあります。 このフィルターにはフレンドリー名を表示したいので、**ownerTypes** テーブルを探し、**ownerTypeName** をドラッグします。 この例では、データ モデルがテーブル間のリレーションシップをサポートする方法を示します。

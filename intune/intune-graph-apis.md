@@ -8,7 +8,6 @@ manager: dougeby
 ms.author: dougeby
 ms.date: 03/08/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26bdeaf2a5860d0c19feba2ec8b5864e95754b12
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 6276f38eed4d20e7e81437c2ba3e2c9bc58ae1c1
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798991"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047747"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD を使用して Microsoft Graph の Intune API にアクセスする方法
 
@@ -68,7 +67,7 @@ Microsoft Graph API を使用するアプリを登録するには、次の作業
     - テナントの管理者アカウント。
     - **[ユーザーはアプリケーションを登録できる]** の設定が有効になっている、テナントのユーザー アカウント。
 
-2.  メニューで、**[Azure Active Directory]** &gt; **[アプリの登録]** の順に選択します。
+2.  メニューで、 **[Azure Active Directory]** &gt; **[アプリの登録]** の順に選択します。
 
     <img src="./media/azure-ad-app-reg.png" width="157" height="170" alt="The App registrations menu command" />
 
@@ -80,7 +79,7 @@ Microsoft Graph API を使用するアプリを登録するには、次の作業
 
     2.  **[アプリケーションの種類]** と **[リダイレクト URI]** の値。
 
-        これらは要件によって異なります。 たとえば Azure AD [Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) を使用している場合、**[アプリケーションの種類]** は `Native` に、**[リダイレクト URI]** は `urn:ietf:wg:oauth:2.0:oob` に設定します。
+        これらは要件によって異なります。 たとえば Azure AD [Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) を使用している場合、 **[アプリケーションの種類]** は `Native` に、 **[リダイレクト URI]** は `urn:ietf:wg:oauth:2.0:oob` に設定します。
 
         <img src="media/azure-ad-app-new.png" width="209" height="140" alt="New app properties and values" />
 
@@ -94,11 +93,11 @@ Microsoft Graph API を使用するアプリを登録するには、次の作業
 
     <img src="media/azure-ad-req-perm.png" width="483" height="186" alt="The Required permissions setting" />
 
-6.  **[必要なアクセス許可]** ブレードで、**[追加]** &gt; **[API アクセスの追加]** &gt; **[API を選択します]** の順に選択します。
+6.  **[必要なアクセス許可]** ブレードで、 **[追加]** &gt; **[API アクセスの追加]** &gt; **[API を選択します]** の順に選択します。
 
     <img src="media/azure-ad-add-graph.png" width="436" height="140" alt="The Microsoft Graph setting" />
 
-7.  **[API を選択します]** ブレードで、**[Microsoft Graph]** &gt; **[選択]** の順に選択します。  **[アクセスの有効化]** ブレードが開き、アプリケーションで使用できるアクセス許可スコープが一覧表示されます。
+7.  **[API を選択します]** ブレードで、 **[Microsoft Graph]** &gt; **[選択]** の順に選択します。  **[アクセスの有効化]** ブレードが開き、アプリケーションで使用できるアクセス許可スコープが一覧表示されます。
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
@@ -106,13 +105,13 @@ Microsoft Graph API を使用するアプリを登録するには、次の作業
 
     最善の結果を得るには、アプリケーションの実装に必要な最小限の役割を選択します。
 
-    完了したら、**[選択]** と **[完了]** を選択して変更を保存します。
+    完了したら、 **[選択]** と **[完了]** を選択して変更を保存します。
 
 この時点で、次も実行できます。
 
 - すべてのテナント アカウントに、資格情報を入力せずにアプリを使用するアクセス許可を付与することを選択します。  
 
-    これを実行するには、**[アクセス許可の付与]** を選択し、確認プロンプトに同意します。
+    これを実行するには、 **[アクセス許可の付与]** を選択し、確認プロンプトに同意します。
 
     初めてアプリケーションを実行すると、選択した役割を実行できるアクセス許可をアプリに付与するように求められます。
 
@@ -122,7 +121,7 @@ Microsoft Graph API を使用するアプリを登録するには、次の作業
 
     これを実行するには、次のようにします。
 
-  1. [アプリケーション] ブレードで **[マニフェスト]** を選択すると、**[マニフェストの編集]** ブレードが開きます。
+  1. [アプリケーション] ブレードで **[マニフェスト]** を選択すると、 **[マニフェストの編集]** ブレードが開きます。
 
      <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
 
@@ -345,7 +344,7 @@ __Microsoft Intune の構成の読み取り__ | DeviceManagementServiceConfig.Re
 
     1.  ソリューション エクスプローラーを右クリックします。
     2.  **[NuGet パッケージの管理...]**  &gt; **[参照]** を選択します。
-    3.  `Microsoft.IdentityModel.Clients.ActiveDirectory` を選択して、**[インストール]** を選択します。
+    3.  `Microsoft.IdentityModel.Clients.ActiveDirectory` を選択して、 **[インストール]** を選択します。
 
     <img src="media/aad-auth-cpp-install-package.png" width="624" height="458" alt="Selecting the Azure AD identity model module" />
 
@@ -568,7 +567,7 @@ catch {
 
 ユーザーを招待してテナントのゲストにするには、次を実行します。
 
-1.  **[クイック タスク]** パネルで、**[ゲスト ユーザーの追加]** を選択します。
+1.  **[クイック タスク]** パネルで、 **[ゲスト ユーザーの追加]** を選択します。
 
     <img src="media/azure-ad-add-guest.png" width="448" height="138" alt="Use Quick Tasks to add a guest user" />
 
@@ -584,7 +583,7 @@ catch {
 
    ユーザーは **[開始]** リンクを選択して、招待を承諾する必要があります。
 
-リレーションシップが確立されると (または招待が承諾されると)、**[ディレクトリ ロール]** にユーザー アカウントが追加されます。
+リレーションシップが確立されると (または招待が承諾されると)、 **[ディレクトリ ロール]** にユーザー アカウントが追加されます。
 
 必要に応じて、そのほかのロールにユーザーを追加するようにします。 たとえば、ユーザーに Intune の設定の管理を許可する場合、ユーザーは **[グローバル管理者]** または **[Intune サービス管理者]** のいずれかである必要があります。
 

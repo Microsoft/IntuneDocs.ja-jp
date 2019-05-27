@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 6/14/2018
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e7ec762e7e7299e400fefedbf7a8810e1da929f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 000f48f062e9e7300337ade04c8cf872d96eab2a
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461347"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040233"
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Microsoft Intune でのソフトウェア更新のトラブルシューティング
 
@@ -252,8 +251,8 @@ Microsoft Intune でのソフトウェア更新に関する問題を解決する
 - 突然、Microsoft 管理コンソールに報告しなくなる。  
 - CPU 使用率が高くなる。
 - Intune ポータルからアプリケーションをインストールするときに、インストールの処理速度が遅くなる。
-- Microsoft Intune Center で次のエラーが発生する。*"このコンピューターを更新中にエラーが発生しました。エラーが見つかりました: コード 0x800705b4*。
-- Intune 管理コンソールの [グループ] の [すべてのデバイス] の下にあるステータス フィールドに、次のメッセージが表示される。*"このコンピューターにインストールされているエージェントでエラーが発生しました。このコンピューターの情報は、正確でないか最新のものでない可能性があります。"*
+- Microsoft Intune Center で次のエラーが発生する。 *"このコンピューターを更新中にエラーが発生しました。エラーが見つかりました: コード 0x800705b4*。
+- Intune 管理コンソールの [グループ] の [すべてのデバイス] の下にあるステータス フィールドに、次のメッセージが表示される。 *"このコンピューターにインストールされているエージェントでエラーが発生しました。このコンピューターの情報は、正確でないか最新のものでない可能性があります。"*
 
 この問題は、別の更新によって置き換えられた更新プログラムが長期間拒否されていない場合に発生することがあります。 Windows がアプリケーションのインストールなどの特定の処理を行う際、置き換えられた更新プログラムと置き換え後の更新プログラムを正しく関連付けるために、置き換えられた更新プログラムを順番にすべてチェックします。 置き換えられた更新プログラムが多くなりすぎると、このチェック処理に負荷と時間がかかるため、CPU 使用率が高くなる場合があります。 Windows 7 では置き換えられた更新プログラムが大量に提供されているため、この問題は主に Windows 7 を実行しているクライアントに影響します。 Windows 8 以降のオペレーティング システムでは置き換えられた更新プログラムがそれほど多く提供されていないため、この問題の影響はあまりありません。
 

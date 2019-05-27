@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 6/14/2018
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02eac7eaa42f6f9c97426e0536e48a4bc399ed08
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: ef84241f72f34e0f00516702d0928e0395478929
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461024"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044658"
 ---
 # <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Microsoft Intune の電子メール プロファイルに関するトラブルシューティング
 
@@ -34,13 +33,13 @@ ms.locfileid: "57461024"
 ## <a name="unable-to-send-images-from--email-account"></a>電子メール アカウントから画像を送信できない
 Azure クラシック ポータルでの Intune に適用されます。
 
-電子メール アカウントを自動的に構成したユーザーが、自分のデバイスから画像を送信することができません。 このシナリオは、**[サードパーティ アプリケーションからの電子メール送信を許可する]** が有効ではない場合に発生する可能性があります。
+電子メール アカウントを自動的に構成したユーザーが、自分のデバイスから画像を送信することができません。 このシナリオは、 **[サードパーティ アプリケーションからの電子メール送信を許可する]** が有効ではない場合に発生する可能性があります。
 
 ### <a name="intune-solution"></a>Intune での解決方法
 
-1. Microsoft Intune 管理コンソールで、**[ポリシー]** ワークロード > **[構成ポリシー]** の順に選択します。
+1. Microsoft Intune 管理コンソールで、 **[ポリシー]** ワークロード > **[構成ポリシー]** の順に選択します。
 
-2. 電子メール プロファイルを選択し、**[編集]** を選択します。
+2. 電子メール プロファイルを選択し、 **[編集]** を選択します。
 
 3. **[サード パーティ アプリケーションから電子メールを送信できるようにする]** をオンにします。
 
@@ -48,11 +47,11 @@ Azure クラシック ポータルでの Intune に適用されます。
 
 1. Configuration Manager コンソール > **[資産とコンプライアンス]** の順に開きます。
 
-2. **[概要]** > **[コンプライアンス設定]** > **[会社のリソースへのアクセス]** の順に展開して、**[電子メール プロファイル]** を選択します。
+2. **[概要]**  >  **[コンプライアンス設定]**  >  **[会社のリソースへのアクセス]** の順に展開して、 **[電子メール プロファイル]** を選択します。
 
-3. 電子メール プロファイルを右クリックし、**[プロパティ]** を開きます。
+3. 電子メール プロファイルを右クリックし、 **[プロパティ]** を開きます。
 
-4. **[同期設定]** タブで、**[サード パーティ アプリケーションから電子メールを送信できるようにする]** をオンにします。
+4. **[同期設定]** タブで、 **[サード パーティ アプリケーションから電子メールを送信できるようにする]** をオンにします。
 
 ## <a name="device-already-has-an-email-profile-installed"></a>デバイスに電子メール プロファイルが既にインストールされている
 

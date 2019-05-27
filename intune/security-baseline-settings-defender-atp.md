@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 05/17/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b4acb5c4e79ba6895849d28c4f44766132d4daf
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
+ms.openlocfilehash: f96393e0d6071b1b56700e954714324b01ffcf25
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65733445"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040744"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 向けの Microsoft Defender Advanced Threat Protection ベースライン設定
 
@@ -151,7 +150,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 詳細については、Windows のドキュメントの「[BitLocker グループ ポリシー設定](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings)」を参照してください。  
 
 - **デバイスの暗号化**  
-  BitLocker デバイスの暗号化を有効にするには、*[はい]* を選択します。 デバイスのハードウェアおよび Windows のバージョンによって異なりますが、デバイス ユーザーは、デバイス上にサードパーティの暗号化が存在しないことを確認するよう求められる場合があります。 サードパーティの暗号化がアクティブになっているときに Windows の暗号化をオンにすると、デバイスが不安定になります。  
+  BitLocker デバイスの暗号化を有効にするには、 *[はい]* を選択します。 デバイスのハードウェアおよび Windows のバージョンによって異なりますが、デバイス ユーザーは、デバイス上にサードパーティの暗号化が存在しないことを確認するよう求められる場合があります。 サードパーティの暗号化がアクティブになっているときに Windows の暗号化をオンにすると、デバイスが不安定になります。  
 
    **既定値**: はい
 
@@ -211,7 +210,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
   **既定値**: デバイスの既定値
 
 - **Hardware device installation by device identifiers (デバイス識別子を使用してハードウェア デバイスをインストールする)**  
-  [DeviceInstallation/PreventInstallationOfMatchingDeviceIDs](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceids) - このポリシーでは、Windows によるインストールが禁止されているデバイス用のプラグ アンド プレイ ハードウェア ID および互換性 ID のリストを指定します。 このポリシー設定は、デバイスのインストールを許可する他のポリシー設定よりも優先されます。 このポリシー設定を有効にした場合 (*[ハードウェア デバイスのインストールをブロックする]* に設定)、Windows ではプラグ アンド プレイ ハードウェア ID または互換性 ID が作成した一覧に含まれているデバイスはインストールできません。 リモート デスクトップ サーバーでこのポリシーを有効にした場合、このポリシー設定は、リモート デスクトップ クライアントからリモート デスクトップ サーバーへの指定されたデバイスのリダイレクトに影響します。 このポリシー設定を無効にした場合、または構成しなかった場合 (*[ハードウェア デバイスのインストールを許可する]* に設定) は、他のポリシー設定に従って、デバイスのインストールや更新が許可されるかどうかが決まります。  
+  [DeviceInstallation/PreventInstallationOfMatchingDeviceIDs](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-preventinstallationofmatchingdeviceids) - このポリシーでは、Windows によるインストールが禁止されているデバイス用のプラグ アンド プレイ ハードウェア ID および互換性 ID のリストを指定します。 このポリシー設定は、デバイスのインストールを許可する他のポリシー設定よりも優先されます。 このポリシー設定を有効にした場合 ( *[ハードウェア デバイスのインストールをブロックする]* に設定)、Windows ではプラグ アンド プレイ ハードウェア ID または互換性 ID が作成した一覧に含まれているデバイスはインストールできません。 リモート デスクトップ サーバーでこのポリシーを有効にした場合、このポリシー設定は、リモート デスクトップ クライアントからリモート デスクトップ サーバーへの指定されたデバイスのリダイレクトに影響します。 このポリシー設定を無効にした場合、または構成しなかった場合 ( *[ハードウェア デバイスのインストールを許可する]* に設定) は、他のポリシー設定に従って、デバイスのインストールや更新が許可されるかどうかが決まります。  
 
   **既定値**: Block hardware device installation (ハードウェア デバイスのインストールをブロックする)  
 
@@ -222,7 +221,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
     **既定値**: *既定の構成はありません*
 
   - **Hardware device identifiers that are blocked (ブロックされているハードウェア デバイス識別子)**  
-    この設定は *[Hardware device installation by device identifiers]\(デバイス識別子でハードウェア デバイスをインストールする\)* が *[Block hardware device installation]\(ハードウェア デバイスのインストールをブロックする\)* に設定されているときのみ使用できます。 この設定を構成するには、オプションを展開し、**[+ 追加]** を選択して、ブロックするハードウェア デバイスの識別子を指定します。  
+    この設定は *[Hardware device installation by device identifiers]\(デバイス識別子でハードウェア デバイスをインストールする\)* が *[Block hardware device installation]\(ハードウェア デバイスのインストールをブロックする\)* に設定されているときのみ使用できます。 この設定を構成するには、オプションを展開し、 **[+ 追加]** を選択して、ブロックするハードウェア デバイスの識別子を指定します。  
 
     **既定値**: *デバイスはブロックされません*  
 
@@ -235,7 +234,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 
 
 - **Hardware device installation by setup classes (セットアップ クラスを使用してハードウェア デバイスをインストールする)**  
-  [DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdevicesetupclasses) - このポリシーでは、インストールを禁止するデバイス ドライバーのデバイス セットアップ クラス GUID (グローバル一意識別子) の一覧を指定できます。 このポリシー設定は、デバイスのインストールを許可する他のポリシー設定よりも優先されます。 このポリシー設定を有効にした場合 (*[ハードウェア デバイスのインストールをブロックする]* に設定)、デバイス セットアップ クラス GUID が作成した一覧に含まれているデバイス ドライバーはインストールすることも更新することもできません。 リモート デスクトップ サーバーでこのポリシー設定を有効にした場合、このポリシー設定は、リモート デスクトップ クライアントからリモート デスクトップ サーバーへの指定されたデバイスのリダイレクトに影響します。 このポリシー設定を無効にした場合、または構成しなかった場合 (*[ハードウェア デバイスのインストールを許可する]* に設定)、他のポリシー設定に従って、デバイスのインストールや更新が許可されるかどうかが決まります。  
+  [DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation#deviceinstallation-allowinstallationofmatchingdevicesetupclasses) - このポリシーでは、インストールを禁止するデバイス ドライバーのデバイス セットアップ クラス GUID (グローバル一意識別子) の一覧を指定できます。 このポリシー設定は、デバイスのインストールを許可する他のポリシー設定よりも優先されます。 このポリシー設定を有効にした場合 ( *[ハードウェア デバイスのインストールをブロックする]* に設定)、デバイス セットアップ クラス GUID が作成した一覧に含まれているデバイス ドライバーはインストールすることも更新することもできません。 リモート デスクトップ サーバーでこのポリシー設定を有効にした場合、このポリシー設定は、リモート デスクトップ クライアントからリモート デスクトップ サーバーへの指定されたデバイスのリダイレクトに影響します。 このポリシー設定を無効にした場合、または構成しなかった場合 ( *[ハードウェア デバイスのインストールを許可する]* に設定)、他のポリシー設定に従って、デバイスのインストールや更新が許可されるかどうかが決まります。  
 
   **既定値**: Block hardware device installation (ハードウェア デバイスのインストールをブロックする)
 
@@ -247,7 +246,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
     **既定値**: *既定の構成はありません*  
 
   - **Hardware device identifiers that are blocked (ブロックされているハードウェア デバイス識別子)**  
-    この設定は [Hardware device installation by setup classes]\(設定クラスでハードウェア デバイスをインストールする\) が [Block hardware device installation]\(ハードウェア デバイスのインストールをブロックする\) に設定されているときのみ使用できます。 この設定を構成するには、オプションを展開し、**[+ 追加]** を選択して、ブロックするハードウェア デバイスの識別子を指定します。  
+    この設定は [Hardware device installation by setup classes]\(設定クラスでハードウェア デバイスをインストールする\) が [Block hardware device installation]\(ハードウェア デバイスのインストールをブロックする\) に設定されているときのみ使用できます。 この設定を構成するには、オプションを展開し、 **[+ 追加]** を選択して、ブロックするハードウェア デバイスの識別子を指定します。  
  
     **既定値**: *デバイスはブロックされません*
 
@@ -303,17 +302,17 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
   **既定値**: 監査モード
 
 - **Require SmartScreen for Microsoft Edge (Microsoft Edge で SmartScreen が必要)**  
-  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) - Microsoft Edge では、(有効に設定された) Windows Defender SmartScreen を使用して、フィッシング詐欺にあう可能性や悪意のあるソフトウェアから既定でユーザーを保護しています。 既定では、このポリシーは有効になっています (*[はい]* に設定されています)。有効になっている場合、ユーザーは Windows Defender SmartScreen をオフすることができません。  デバイス用の有効なポリシーが [未構成] に相当する場合、ユーザーは Windows Defender SmartScreen を無効にして、デバイスを保護されていない状態にすることができます。  
+  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) - Microsoft Edge では、(有効に設定された) Windows Defender SmartScreen を使用して、フィッシング詐欺にあう可能性や悪意のあるソフトウェアから既定でユーザーを保護しています。 既定では、このポリシーは有効になっています ( *[はい]* に設定されています)。有効になっている場合、ユーザーは Windows Defender SmartScreen をオフすることができません。  デバイス用の有効なポリシーが [未構成] に相当する場合、ユーザーは Windows Defender SmartScreen を無効にして、デバイスを保護されていない状態にすることができます。  
 
   **既定値**: はい
   
 - **Block malicious site access (悪意のあるサイトへのアクセスをブロックする)**  
-  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) - 既定では、Microsoft Edge を使用する場合、ユーザーは悪意のある可能性があるサイトに関する Windows Defender SmartScreen の警告を無視してそのサイトへのアクセスを続行できます。 このポリシーを有効にした場合 (*[はい]* に設定)、Microsoft Edge を使用しているユーザーは警告を無視してサイトへのアクセスを続行することはできません。  
+  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) - 既定では、Microsoft Edge を使用する場合、ユーザーは悪意のある可能性があるサイトに関する Windows Defender SmartScreen の警告を無視してそのサイトへのアクセスを続行できます。 このポリシーを有効にした場合 ( *[はい]* に設定)、Microsoft Edge を使用しているユーザーは警告を無視してサイトへのアクセスを続行することはできません。  
 
   **既定値**: はい
 
 - **Block unverified file download (確認されていないファイルのダウンロードをブロックする)**  
-  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) - Microsoft Edge では、悪意のある可能性があるファイルに関する Windows Defender SmartScreen の警告を既定で無視して、確認されていないファイルのダウンロードを続行することができます。 このポリシーを有効にすると (*[はい]* に設定)、ユーザーは警告を無視して確認されていないファイルをダウンロードすることはできません。  
+  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) - Microsoft Edge では、悪意のある可能性があるファイルに関する Windows Defender SmartScreen の警告を既定で無視して、確認されていないファイルのダウンロードを続行することができます。 このポリシーを有効にすると ( *[はい]* に設定)、ユーザーは警告を無視して確認されていないファイルをダウンロードすることはできません。  
 
   **既定値**: はい
 
@@ -332,7 +331,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
   **既定値**: はい
 
 - **Defender sample submission consent type (Defender のサンプル送信の同意の種類)**  
-  [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) - Windows Defender でデータを送信するためのユーザーの同意レベルを確認します。 必要な同意が既に与えられている場合、Windows Defender からそれらが送信されます。 それ以外の場合 (かつユーザーが "確認しない" を指定した場合)、(*[クラウドによる保護]* が *[はい]* に設定されている場合は) データを送信する前にユーザーの同意を求める UI が起動します。  
+  [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) - Windows Defender でデータを送信するためのユーザーの同意レベルを確認します。 必要な同意が既に与えられている場合、Windows Defender からそれらが送信されます。 それ以外の場合 (かつユーザーが "確認しない" を指定した場合)、( *[クラウドによる保護]* が *[はい]* に設定されている場合は) データを送信する前にユーザーの同意を求める UI が起動します。  
 
   **既定値**: 安全なサンプルを自動的に送信します
 
@@ -381,7 +380,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 - **Cloud-delivered protection (クラウドによる保護)**  
   [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) – *[はい]* に設定すると、検出された問題に関する情報が Windows Defender から Microsoft に送信されます。 Microsoft は、その情報を分析し、報告者や他の顧客に影響する問題について詳細に把握して、強化されたソリューションを提供します。
 
-  このポリシーを *[はい]* に設定すると、*[Defender のサンプル送信の同意の種類]* を使用して、ユーザーに自分のデバイスからの情報の送信を制御させることができます。  
+  このポリシーを *[はい]* に設定すると、 *[Defender のサンプル送信の同意の種類]* を使用して、ユーザーに自分のデバイスからの情報の送信を制御させることができます。  
 
   **既定値**: はい
 

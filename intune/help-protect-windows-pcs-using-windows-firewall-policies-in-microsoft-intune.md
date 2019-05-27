@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5edcfedcd03492d8634549147b70be14ffb742e
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: b289f9edc1522333f70308a6979b2ea2e71b17c6
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798877"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047533"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Microsoft Intune で Windows ファイアウォール ポリシーを使用して Windows PC を保護する
 
@@ -51,13 +50,13 @@ Windows ファイアウォール ポリシーを使用すると、管理され�
 
 ## <a name="configure-a-windows-firewall-policy"></a>Windows ファイアウォール ポリシーの構成
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[ポリシー]** &gt; **[ポリシーの追加]** を選択します。
+1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[ポリシー]** &gt; **[ポリシーの追加]** を選択します。
 
 2.  **Windows ファイアウォール設定** ポリシーを構成し、展開します。 推奨される設定を使用することも、設定をカスタマイズすることもできます。 ポリシーの作成および展開方法の詳細については、「[Microsoft Intune コンピューター クライアントを使用した一般的な Windows PC 管理タスク](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)」を参照してください。
 
     次のセクションでは、ポリシーに構成できる値と、ポリシーをカスタマイズしない場合に使用される既定値を示します。
 
-Windows ファイアウォール ポリシーを展開したら、**[ポリシー]** ワークスペースの **[すべてのポリシー]** ページでその状態を確認できます。
+Windows ファイアウォール ポリシーを展開したら、 **[ポリシー]** ワークスペースの **[すべてのポリシー]** ページでその状態を確認できます。
 
 ## <a name="specify-policy-settings-for-windows-firewall"></a>Windows ファイアウォールのポリシー設定を指定する
 

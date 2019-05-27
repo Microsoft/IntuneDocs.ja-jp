@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3516f34d925b4055b99586de388f5384746cb810
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 71ff00c0a41fecada6e61f8a9bfa6c5a00dab921
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798212"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040851"
 ---
 # <a name="retire-a-windows-pc"></a>Windows PC をインベントリから削除する
 
@@ -31,13 +30,13 @@ ms.locfileid: "58798212"
 
 Intune ソフトウェア クライアントを実行して PC として管理しているデスクトップは、次の手順でインベントリから削除します。 PC をインベントリから削除すると、Intune 管理から除外されます。 Intune から PC をワイプし、工場出荷時の設定に戻すことはできません。
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、**[グループ]** &gt; **[すべてのデバイス]** (または、インベントリから削除する PC が含まれる別のグループ) を選択します。
+1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[グループ]** &gt; **[すべてのデバイス]** (または、インベントリから削除する PC が含まれる別のグループ) を選択します。
 
-2.  削除するデバイスを選択し、**[インベントリからの削除/ワイプ]** を選択します。
+2.  削除するデバイスを選択し、 **[インベントリからの削除/ワイプ]** を選択します。
 
 PC を Intune に再登録する場合は、「[Microsoft Intune を使用して Windows PC クライアントをインストールする](install-the-windows-pc-client-with-microsoft-intune.md)」を参照して、その PC にソフトウェア クライアントを再度インストールしてください。
 
-PC が Intune に接続できない場合、**[ダッシュボード]** ワークスペースにメッセージが表示されます。
+PC が Intune に接続できない場合、 **[ダッシュボード]** ワークスペースにメッセージが表示されます。
 
 PC をインベントリから削除した場合:
 

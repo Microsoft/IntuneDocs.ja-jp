@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 1/4/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: def09c1782db5b888257b7283074a997abbfa625
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 207a3f950d6fca2d6fcbe024f24fbf05487f2151
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460786"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040403"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Azure での Intune の機能の移動先
 Intune から Azure Portal に移行する際に、いくつかのタスクがより論理的に整理されました。 しかし、このような改善を行えば、新しい構成を学ばなければなりません。 このリファレンス ガイドは、従来のポータルを使用した Intune の知識があり、Intune で行われていた内容を Azure portal ではどのように実行されるのかについて関心があるユーザーを対象にしています。 この記事にお探しの機能が記載されていない場合は、今後更新できるように記事の最後にコメントを残してください。
@@ -95,7 +94,7 @@ Azure Portal でも、Intune クラシックと同じ手順で Apple のデバ�
 
 ## <a name="where-did-corporate-pre-enrolled-devices-go"></a>会社の事前登録済みデバイスの移動先
 ### <a name="by-ios-serial-number"></a>iOS シリアル番号を使用
-従来のポータルでは、Apple デバイス登録プログラム (DEP) と Apple Configurator ツールを使用して iOS デバイスを登録できます。 どちらの方法でも、シリアル番号を使用したデバイスの事前登録が可能で、この登録によって特別な業務用デバイスの登録プロファイルが割り当てられます。 登録の前に、**[会社の事前登録済みデバイス] の [iOS シリアル番号を使用]** のデバイス グループから登録プロファイルの割り当てを管理できます。
+従来のポータルでは、Apple デバイス登録プログラム (DEP) と Apple Configurator ツールを使用して iOS デバイスを登録できます。 どちらの方法でも、シリアル番号を使用したデバイスの事前登録が可能で、この登録によって特別な業務用デバイスの登録プロファイルが割り当てられます。 登録の前に、 **[会社の事前登録済みデバイス] の [iOS シリアル番号を使用]** のデバイス グループから登録プロファイルの割り当てを管理できます。
 
 ![従来の Apple シリアル番号の画像](./media/09-classic-apple-serials.png)
 
@@ -124,7 +123,7 @@ Apple のデバイス登録プログラムまたは Apple Configurator ツール
 
 ![従来のデバイスの登録プロファイルの画像](./media/14-classic-corp-profiles.png)
 
-この一覧には Apple のデバイス登録プログラムでの使用が有効なプロファイル (**DEP が [On (オン)]**) と、Apple Configurator ツールでの使用のみが有効なプロファイル (**DEP が [Off (オフ)]**) が表示されています。
+この一覧には Apple のデバイス登録プログラムでの使用が有効なプロファイル (**DEP が [On (オン)]** ) と、Apple Configurator ツールでの使用のみが有効なプロファイル (**DEP が [Off (オフ)]** ) が表示されています。
 
 2 つのプロファイルを混同し、割り当て (DEP プロファイルから Configurator デバイス、およびその逆) が一致しない可能性を少なくするため、(Apple のデバイス登録プログラムと Apple スクール マネージャーの両方をサポートする) 登録プログラムのプロファイルと、Apple Configurator プロファイルの作成と管理を分けました。
 

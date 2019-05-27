@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 10/24/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e1edae77144b85d100bf590716768792afd8470
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d6bfd832d9225221bcc6aaefe091a3cebf57a54c
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565539"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66048618"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune で iOS デバイス用のカスタム設定を使用する
 
@@ -44,7 +43,7 @@ iOS デバイスを使用するとき、Intune にカスタム設定を取り込
 
   - Profile Manager で[モバイル デバイス管理](https://help.apple.com/serverapp/mac/5.7/#/apd05B9B761-D390-4A75-9251-E9AD29A61D0C)を有効にします。
   - Profile Manager で [iOS デバイス](https://help.apple.com/profilemanager/mac/5.7/#/pm9onzap1984)を追加します。
-  - Profile Manager でデバイスを追加した後、**[Under the Library]\(ライブラリの下\)** > **[Devices]\(デバイス\)** に移動し、デバイスを選択し、**[Settings]\(設定\)** を選択します。 デバイスの全般設定を入力します。
+  - Profile Manager でデバイスを追加した後、 **[Under the Library]\(ライブラリの下\)**  >  **[Devices]\(デバイス\)** に移動し、デバイスを選択し、 **[Settings]\(設定\)** を選択します。 デバイスの全般設定を入力します。
 
     このファイルをダウンロードして保存します。 このファイルを Intune プロファイルに入力します。
 
@@ -52,21 +51,21 @@ iOS デバイスを使用するとき、Intune にカスタム設定を取り込
 
 ## <a name="create-the-profile"></a>プロファイルの作成
 
-1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、**[Intune]** をフィルターとして適用して、**[Microsoft Intune]** を選びます。
-2. **[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
+1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、 **[Intune]** をフィルターとして適用して、 **[Microsoft Intune]** を選びます。
+2. **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
 3. 次の設定を入力します。
 
     - **名前**: `ios custom profile` のようにプロファイルの名前を入力します。
     - **説明**: プロファイルの説明を入力します 
-    - **[プラットフォーム]**: **[iOS]** を選びます。
+    - **[プラットフォーム]** : **[iOS]** を選びます。
     - **プロファイルの種類**: **[カスタム]** を選択します。
 
 4. **[カスタムの構成]** には、次の設定を入力します。
 
     - **カスタム構成プロファイル名**: ポリシーの名前を入力します。 この名前は、デバイス上と、Intune の状態に表示されます。
-    - **構成プロファイル ファイル**: Apple Configurator または Apple Profile Manager を使用して作成した構成プロファイルを指定します。 インポートしたファイルは、**[ファイルの内容]** 領域に表示されます。
+    - **構成プロファイル ファイル**: Apple Configurator または Apple Profile Manager を使用して作成した構成プロファイルを指定します。 インポートしたファイルは、 **[ファイルの内容]** 領域に表示されます。
 
-5. **[OK]** > **[作成]** を選択して、Intune プロファイルを作成します。 完了すると、プロファイルが **[デバイス構成 - プロファイル]** の一覧に表示されます。
+5. **[OK]**  >  **[作成]** を選択して、Intune プロファイルを作成します。 完了すると、プロファイルが **[デバイス構成 - プロファイル]** の一覧に表示されます。
 
 ## <a name="next-steps"></a>次の手順
 
