@@ -8,7 +8,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 01/02/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe1c9baac31f8709aad3f88dc42c82b35c201027
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: a197b057278ff2f32539169feccc91edbd752386
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509431"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66048971"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>条件付きアクセス ポリシーを Intune クラシック ポータルから Azure Portal に再割り当てする
 
 新しい Azure Portal 以降の条件付きアクセスは、アプリケーションごとの複数のポリシーと詳細なカスタマイズ機能のサポートを提供します。 Intune クラシック ポータルで以前に条件付きアクセス ポリシー作成した場合、それを Azure Portal に移行することができます。 
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>開始する前に
 
 Azure Portal に移行する準備ができた場合、このトピックの手順に従って、Intune クラシック ポータルで作成した条件付きアクセス ポリシーの再割り当てを行うことができます。
 
@@ -205,7 +204,7 @@ Azure Portal で条件付きアクセス ポリシーの再割り当てを行っ
 
     ![Intune クラシック ポータルで条件付きアクセス ポリシーを無効にする画像](./media/reassign-ca-18.png)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>「
 
 - [Intune での条件付きアクセスの一般的な使用方法](conditional-access-intune-common-ways-use.md)
 - [Intune でのアプリ ベースの条件付きアクセス](app-based-conditional-access-intune.md)

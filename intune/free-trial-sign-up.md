@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 03/11/2019
 ms.topic: quickstart
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63f9ef266c9a5754d5de57232a8f7bc41a6c5777
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 325428f99c50ac4d2eede35d4aaadd858cd8b136
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61514915"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047664"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>クイック スタート:Microsoft Intune を無料で試す 
 
@@ -31,7 +30,7 @@ Microsoft Intune でデバイスやアプリケーションを管理すると、
 
 Intune には、モバイル デバイス管理 (MDM) 機能とモバイル アプリケーション管理 (MAM) 機能があります。これらの機能は、Microsoft Azure portal を使用して管理されているセキュリティで保護されたクラウドベースのサービスで利用できます。 Intune を使用すると、企業のコンプライアンス ポリシーや要件を満たしながら、従業員の会社リソース (データ、デバイス、アプリ) の構成、アクセス、更新を適切に行うことができるようになります。 
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 Microsoft Intune を設定する前に、次の要件を確認してください。
 
    - [サポートされるオペレーティング システムとブラウザー](supported-devices-browsers.md) 

@@ -8,7 +8,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 01/02/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe3561bd664842e79f50f738307ce6a026464565
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: d200c8d56dbbe60dd331081537154951f5e5591d
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513224"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041551"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Intune で Mobile Threat Defense (MTD) デバイス コンプライアンス ポリシーを作成する
 
@@ -32,7 +31,7 @@ ms.locfileid: "61513224"
 
 Intune で MTD を使用すると、モバイル デバイス上で脅威を検出し、リスクを評価できます。 リスクを評価する Intune デバイス コンプライアンス ポリシー ルールを作成すれば、デバイスがポリシーに準拠しているかどうかを判断できます。 さらに、[条件付きアクセス ポリシー](create-conditional-access-intune.md)を使用することで、デバイスのコンプライアンスに基づいて、サービスへのアクセスを禁止できます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>開始する前に
 
 MTD の設定の一部として、MTD パートナー コンソールで、さまざまな脅威を高、中、低として分類するポリシーを作成しておきます。 これにより、Intune デバイス コンプライアンス ポリシーに Mobile Threat Defense レベルを設定する必要があります。
 

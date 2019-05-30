@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 05/01/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 751d89ef023bea07d3c8bdb69904605d88c9e0b6
-ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
+ms.openlocfilehash: 4b3e8d7de7f80017d65e80860d217f1a9bc71fbe
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135218"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050247"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Intune で非準拠デバイスに対してメールを自動送信し、アクションを追加する
 
@@ -46,7 +45,7 @@ ms.locfileid: "65135218"
 - メールの送信やデバイスのリモート ロックなど、コンプライアンス違反に対するアクションを作成する
 
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>開始する前に
 
 - コンプライアンス違反に対するアクションを設定するには、少なくとも 1 つのデバイス コンプライアンス ポリシーが必要です。 デバイス コンプライアンス ポリシーの作成については、以下のプラットフォームをご覧ください。
 

@@ -8,7 +8,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/26/2019
 ms.topic: tutorial
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6224a0dae7c0aa3d80d4e64331a668953220f65
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b91e3863a23d62921f4145db4460fa07f325df98
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61515782"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040289"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>チュートリアル: アンマネージド デバイス上で Exchange Online の電子メールを保護する
 
@@ -32,7 +31,7 @@ Intune などのデバイス管理ソリューションにデバイスが登録�
 > * Outlook アプリ用の Intune アプリ保護ポリシーを作成する。 "名前を付けて保存" を防止することで、ユーザーができるアプリ データの操作を限定すると共に、切り取り、コピー、および貼り付けのアクションを制限します。 
 > * Outlook アプリのみに Exchange Online の会社の電子メールへのアクセスを許可する Azure Active Directory (Azure AD) 条件付きアクセス ポリシーを作成する。 また、iOS 版や Android 版の Outlook など、先進認証クライアントには多要素認証 (MFA) も要求します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
   - このチュートリアルでは、次のサブスクリプションのあるテスト テナントが必要です。
     - Azure Active Directory Premium ([無料試用版](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
     - Intune サブスクリプション ([無料試用版](free-trial-sign-up.md))

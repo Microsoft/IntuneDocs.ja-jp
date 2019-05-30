@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 02/27/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 704abe5e03410b52d54c7729e1832e527ae4dfb6
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 0965d08dc2981fbd35bcb5aa3c2652726a96ccd5
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504316"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050092"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10 テンプレートを使用し、Microsoft Intune でグループ ポリシー設定を構成する
 
@@ -68,7 +67,7 @@ ms.locfileid: "61504316"
 
   ![[パス] をクリックしてアルファベット順に並べ替える](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
 
-- テンプレートで**検索**ボックスを使用して、特定の設定を見つけます。 たとえば、「 `copy`」というメッセージを探してみてください。 「`copy`」を含むすべての設定が表示されます。
+- テンプレートで**検索**ボックスを使用して、特定の設定を見つけます。 たとえば、「`copy`」というメッセージを探してみてください。 「`copy`」を含むすべての設定が表示されます。
 
   ![[パス] をクリックしてアルファベット順に並べ替える](./media/administrative-templates-windows/search-copy-settings.png)
 

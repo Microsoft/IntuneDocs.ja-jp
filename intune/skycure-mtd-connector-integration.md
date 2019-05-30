@@ -8,7 +8,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 12/21/2017
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b44164ff31be89e01eb895a8b889e07bb3f704f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: a2f5eb5c6e8e454f6558aff7247f8ac10b7a5393
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506669"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040572"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Symantec Endpoint Protection Mobile と Intune の統合を設定する
 
 Symantec Endpoint Protection Mobile (SEP Mobile) ソリューションと Intune を統合するには、以下の手順のようにします。 シングル サインオン機能を有効にするには、SEP Mobile アプリを Azure AD に追加する必要があります。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>開始する前に
 
 ### <a name="azure-ad-account-used-to-integrate-intune-and-sep-mobile"></a>Intune と SEP Mobile の統合に使用される Azure AD アカウント
 

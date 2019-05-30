@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 05/16/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e87b7397d994b089a30fedd9ccedc0107bf0cef
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
+ms.openlocfilehash: 0ed95507d8a7486bc1c1cca2c2a067658239eed8
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65732491"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043535"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>SCEP を使用して Intune でパートナーの証明機関を追加する
 
@@ -130,7 +129,7 @@ Azure AD アプリを登録するのに必要なアクセス許可があるこ�
 - [Intune SCEP API の GitHub リポジトリ](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
 - [サード パーティ CA 向けの Intune SCEP API ガイダンス](scep-libraries-apis.md)
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>「
 
 - [証明書プロファイルを構成する](certificates-scep-configure.md)
 - [Intune SCEP API の GitHub リポジトリ](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)

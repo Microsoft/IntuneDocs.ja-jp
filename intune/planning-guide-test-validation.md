@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 3/22/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba257ad6ebd7c8dbb2ca6ef805c896a4584ed41f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 2820007f167b2f79b8dd98ca31d7e50968ac1969
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512869"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046047"
 ---
 # <a name="intune-testing-and-validation"></a>Intune のテストと検証
 
@@ -30,7 +29,7 @@ ms.locfileid: "61512869"
 
 サポート ドキュメントが作成され、IT サポートやヘルプデスクのスタッフが快適に製品をサポートできるように、IT サポート/ヘルプデスクのスタッフをテスト段階に組み入れることが推奨されます。 部品やシナリオがユース ケースに基づいて機能しない場合、必要な変更を記録し、変更が行われた理由を追加してください。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>開始する前に
 
 次の内容を文書化することをお勧めします。
 

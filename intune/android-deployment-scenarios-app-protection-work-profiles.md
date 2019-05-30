@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 02/13/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cbd3b13215a58a831a15884bfe451f00a35ba379
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 3ce7ad6b0254b1c3a8e2843cfcbe70a6b718ce88
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490197"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66049913"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Intune での Android エンタープライズ デバイス上のアプリケーション保護ポリシーと仕事用プロファイル
 
@@ -129,7 +128,7 @@ Intune APP の使用が最適なレコメンデーションであるエンター
 
 たとえば、中国内のお客様や中国にユーザーがいるお客様は、Google サービスがブロックされるので Android デバイス管理を使用できません。 この場合は、DLP に Intune APP を使用します。
 
-## <a name="summary"></a>[概要]
+## <a name="summary"></a>要約
 
 Intune を使用すると、APP-WE と Android エンタープライズ仕事用プロファイルの両方を Android BYOD プログラムに利用できます。 APP-WE と仕事用プロファイルのどちらを選ぶかは、ビジネスと使用の要件によって決まります。 つまり、マネージド デバイスに対する証明書の展開やアプリのプッシュなどの MDM アクティビティが必要な場合は、仕事用プロファイルを使用します。 デバイスを管理したくないか管理できず、Intune APP 対応アプリのみを使用している場合は、APP-WE を使用します。
 

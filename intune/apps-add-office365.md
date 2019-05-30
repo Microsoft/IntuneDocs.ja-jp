@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/08/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c640e3e02d7d016785b87d681443b2c49f7a6281
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 87a7657577372a37c7554941886b80277bfee11e
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61507139"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66049418"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune で Windows 10 デバイスに Office 365 アプリを割り当てる
 
@@ -46,7 +45,7 @@ ms.locfileid: "61507139"
 - **[Office バージョン]**: Office の 32 ビットまたは 64 ビット バージョンのどちらを割り当てるかを選択します。 32 ビットと 64 ビットのどちらのデバイスでも 32 ビット バージョンをインストールできますが、64 ビットのデバイスには 64 ビット バージョンしかインストールできません。
 - **[Remove MSI from end-user devices]** \(エンドユーザーのデバイスから MSI を削除する\): エンドユーザーのデバイスから、既にある Office .MSI アプリを削除するかどうか選択します。 エンドユーザーのデバイスに、既に .MSI アプリがある場合、インストールは成功しません。 インストールされるアプリは、**[アプリ スイートの構成]** でインストール対象として選択されたアプリに限りません。すべての Office (MSI) アプリがエンド ユーザー デバイスから削除されます。 詳細については、「[Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)」 (Office 365 ProPlus へのアップグレード時に Office の既存の MSI バージョンを削除する) を参照してください。 エンドユーザーのコンピューターに Office が Intune によって再インストールされる場合、エンド ユーザーには前の .MSI Office インストールで使用していたのと同じ言語パックが自動的に提供されます。
 
-## <a name="get-started"></a>作業開始
+## <a name="get-started"></a>開始
 
 1. [Azure ポータル](https://portal.azure.com)にサインインします。
 2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
@@ -108,7 +107,7 @@ ms.locfileid: "61507139"
 1. **[アプリの追加]** ウィンドウで、**[アプリ スイートの設定]** を選びます。
 2. **[アプリ スイートの設定]** ウィンドウで、次のようにします。
     - **[Office バージョン]**: Office の 32 ビットまたは 64 ビット バージョンのどちらを割り当てるかを選択します。 32 ビットと 64 ビットのどちらのデバイスでも 32 ビット バージョンをインストールできますが、64 ビットのデバイスには 64 ビット バージョンしかインストールできません。
-    - **[更新プログラム チャネル]**: デバイス上で Office を更新する方法を選択します。 さまざまな更新プログラム チャネルについて詳しくは、「[Office 365 ProPlus 更新プログラム チャネルの概要](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)」をご覧ください。 次の中から選択します。
+    - **[更新プログラム チャネル]**: デバイス上で Office を更新する方法を選択します。 さまざまな更新プログラム チャネルについて詳しくは、「[Office 365 ProPlus 更新プログラム チャネルの概要](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)」をご覧ください。 以下から選択します。
         - **毎月**
         - **Monthly (Targeted)** \(毎月 (対象指定)\)
         - **Semi-Annual**\(半期\)
@@ -142,7 +141,7 @@ ms.locfileid: "61507139"
 
 ### <a name="status-for-office-csp"></a>Office CSP の状態
 
-| 状態 | フェーズ | 説明 |
+| 状態 | フェーズ | [説明] |
 |--------------------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1460 (ERROR_TIMEOUT) | ダウンロード | Office 展開ツールのダウンロードに失敗しました |
 | 13 (ERROR_INVALID_DATA) | - | ダウンロードした Office 展開ツールの署名を確認できません |
@@ -157,7 +156,7 @@ ms.locfileid: "61507139"
 
 ### <a name="office-deployment-tool-error-codes"></a>Office 展開ツールのエラー コード
 
-| 通信の種類 | リターン コード | UI | メモ |
+| シナリオ | リターン コード | UI | 注意 |
 |------------------------------------------------------------------------------------------------------------------|---------------------------------------|----------------------------------------------------|------------------------------------|
 | アクティブなクイック実行のインストールがないときに、アンインストールします | -2147418113、0x8000ffff または 2147549183 | エラー コード:30088-1008 エラー コード: 30125-1011 (404) | Office 展開ツール |
 | MSI バージョンがインストールされているときに、インストールします | 1603 | - | Office 展開ツール |

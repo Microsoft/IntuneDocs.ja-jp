@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 2/22/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78d55ef2baf0608d22af53bf0803634700e01eb3
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 546694409e6f87d85c5ef934b5d084b0955e0bf7
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505864"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041862"
 ---
 # <a name="incomplete-user-enrollments-report"></a>不完全なユーザー登録レポート
 
 ポータル サイトで登録を行ったユーザーが登録を完了しなかったとき、その登録を止めた箇所をこのレポートで確認できます。
 
-レポートを表示するには、**[Intune]**、**[デバイスの登録]**、**[不完全なユーザー登録]** を選択します。
+レポートを表示するには、 **[Intune]** 、 **[デバイスの登録]** 、 **[不完全なユーザー登録]** を選択します。
 
 この情報を使用すると、ユーザーが登録を完了できるように、オンボード ドキュメントを更新できます。 たとえば、多くのユーザーが利用規約で終了している場合、その区分を確認して、そこがユーザーにとってより直観的になるようにできます。
 

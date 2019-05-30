@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 02/22/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 036f2ca8302f9b3c2d700a04918c4c49a4c6211a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: a53ae7f43f135f7316b665672dc410812ef14d08
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490570"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050131"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Intune で条件付きアクセスによる Windows Defender ATP の準拠を強制する
 
@@ -43,7 +42,7 @@ Intune を使用することで、リスクの許容レベルを決定するコ�
 - Intune でコンプライアンス ポリシーを作成する。
 - 脅威レベルに基づいて、デバイス上の Azure Active Directory (AD) で条件付きアクセスを有効にする。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 
 Intune で ATP を使用する場合は、以下が構成済みであり、使用できる状態であることを確認してください。
 
@@ -54,20 +53,20 @@ Intune で ATP を使用する場合は、以下が構成済みであり、使�
 ## <a name="enable-windows-defender-atp-in-intune"></a>Intune で Windows Defender ATP を有効にする
 
 1. [Azure ポータル](https://portal.azure.com)にサインインします。
-2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
-3. **[デバイスのポリシー準拠]**、**[Windows Defender ATP]** > **[Windows Defender セキュリティ センターを開く]** の順に選択します。
+2. **[すべてのサービス]** を選択し、 **[Intune]** をフィルターとして適用し、 **[Microsoft Intune]** を選択します。
+3. **[デバイスのポリシー準拠]** 、 **[Windows Defender ATP]**  >  **[Windows Defender セキュリティ センターを開く]** の順に選択します。
 
     ![Windows Defender セキュリティ センターを選択して開く](./media/atp-device-compliance-open-windows-defender.png)
 
 4. **Windows Defender セキュリティ センター**で、以下の操作を行います。
-    1. **[設定]** > **[高度な機能]** の順に選択します。
+    1. **[設定]**  >  **[高度な機能]** の順に選択します。
     2. **Microsoft Intune の接続**については、次のように **[オン]** を選択します。
 
         ![Intune への接続を有効にする](./media/atp-security-center-intune-toggle.png)
 
     3. **[環境設定の保存]** を選択します。
 
-5. Intune に戻り、**[デバイスのポリシー準拠]** > **[Windows Defender ATP]** の順に選択します。 **[Connect Windows devices version 10.0.15063 and above to Windows Defender ATP]\(Windows デバイス バージョン 10.0.15063 以上を Windows Defender ATP に接続する\)** を **[オン]** に設定します。
+5. Intune に戻り、 **[デバイスのポリシー準拠]**  >  **[Windows Defender ATP]** の順に選択します。 **[Connect Windows devices version 10.0.15063 and above to Windows Defender ATP]\(Windows デバイス バージョン 10.0.15063 以上を Windows Defender ATP に接続する\)** を **[オン]** に設定します。
 6. **[保存]** を選択します。
 
 通常、このタスクは 1 回実行します。 したがって、Intune リソースで既に ATP が有効になっている場合は、再度実行する必要はありません。
@@ -84,48 +83,48 @@ Windows Defender には、[Windows Defender ATP サービス](https://docs.micro
 
 ### <a name="create-the-configuration-profile"></a>構成プロファイルを作成する
 
-1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、**[Intune]** をフィルターとして適用して、**[Microsoft Intune]** を選びます。
-2. **[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
+1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、 **[Intune]** をフィルターとして適用して、 **[Microsoft Intune]** を選びます。
+2. **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
 3. **名前**と**説明**を入力します。
-4. **[プラットフォーム]** では、**[Windows 10 以降]** を選択します。
-5. **[プロファイルの種類]** では、**[Windows Defender ATP (Windows 10 デスクトップ)]** を選択します。
+4. **[プラットフォーム]** では、 **[Windows 10 以降]** を選択します。
+5. **[プロファイルの種類]** では、 **[Windows Defender ATP (Windows 10 デスクトップ)]** を選択します。
 6. 次のように設定を構成します。
 
-  - **[Windows Defender ATP client configuration package type]\(Windows Defender ATP クライアント構成パッケージの種類\)**:**[Onboard]\(オンボード\)** を選択し、プロファイルに構成パッケージを追加します。 **[Offboard]** \(オフボード\) を選択し、プロファイルから構成パッケージを削除します。
+  - **[Windows Defender ATP client configuration package type]\(Windows Defender ATP クライアント構成パッケージの種類\)** : **[Onboard]\(オンボード\)** を選択し、プロファイルに構成パッケージを追加します。 **[Offboard]** \(オフボード\) を選択し、プロファイルから構成パッケージを削除します。
   
     > [!NOTE] 
-    > Windows Defender ATP との接続を適切に確立している場合、Intune によって自動的に構成プロファイルが**オンボード**されるので、**[Windows Defender ATP client configuration package type]\(Windows Defender ATP クライアント構成パッケージの種類\)** の設定はできません。
+    > Windows Defender ATP との接続を適切に確立している場合、Intune によって自動的に構成プロファイルが**オンボード**されるので、 **[Windows Defender ATP client configuration package type]\(Windows Defender ATP クライアント構成パッケージの種類\)** の設定はできません。
   
-  - **[すべてのファイルのサンプル共有]**:**[有効にする]** では、サンプルを収集し、Windows Defender ATP と共有できるようにします。 たとえば、疑わしいファイルがある場合、Windows Defender ATP に送信して詳しく分析できます。 **[構成されていません]** では、いかなるサンプルも Windows Defender ATP と共有されません。
-  - **[テレメトリの報告頻度を早める]**:高リスクのデバイスがある場合は、この設定を**有効**にして、Windows Defender ATP サービスにより頻繁にテレメトリを報告することができます。
+  - **[すべてのファイルのサンプル共有]** : **[有効にする]** では、サンプルを収集し、Windows Defender ATP と共有できるようにします。 たとえば、疑わしいファイルがある場合、Windows Defender ATP に送信して詳しく分析できます。 **[構成されていません]** では、いかなるサンプルも Windows Defender ATP と共有されません。
+  - **[テレメトリの報告頻度を早める]** :高リスクのデバイスがある場合は、この設定を**有効**にして、Windows Defender ATP サービスにより頻繁にテレメトリを報告することができます。
 
     これらの Windows Defender ATP の設定の詳細については、[System Center Configuration Manager を使用する Windows 10 コンピューターのオンボード](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-sccm-windows-defender-advanced-threat-protection)に関するページを参照してください。
 
-7. **[OK]**、**[作成]** の順に選択して変更を保存します。これで、プロファイルが作成されます。
+7. **[OK]** 、 **[作成]** の順に選択して変更を保存します。これで、プロファイルが作成されます。
 
 ## <a name="create-the-compliance-policy"></a>コンプライアンス ポリシーを作成する
 コンプライアンス ポリシーによって、デバイス上でのリスクの許容レベルが決まります。
 
-1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、**[Intune]** をフィルターとして適用して、**[Microsoft Intune]** を選びます。
-2. **[デバイスのポリシー準拠]** > **[ポリシー]** > **[ポリシーの作成]** の順に選択します。
+1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、 **[Intune]** をフィルターとして適用して、 **[Microsoft Intune]** を選びます。
+2. **[デバイスのポリシー準拠]**  >  **[ポリシー]**  >  **[ポリシーの作成]** の順に選択します。
 3. **名前**と**説明**を入力します。
-4. **[プラットフォーム]** で、**[Windows 10 以降]** を選択します。
-5. **[Windows Defender ATP]** 設定で、**[デバイスは、次のマシン リスク スコア以下であることが必要]** を次の任意のレベルに設定します。 脅威レベルの分類は、[Windows Defender ATP によって決まります](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue)。
+4. **[プラットフォーム]** で、 **[Windows 10 以降]** を選択します。
+5. **[Windows Defender ATP]** 設定で、 **[デバイスは、次のマシン リスク スコア以下であることが必要]** を次の任意のレベルに設定します。 脅威レベルの分類は、[Windows Defender ATP によって決まります](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue)。
 
-   - **[クリア]**:このレベルはセキュリティ上最も安全です。 デバイスに既存のいかなる脅威も存在できず、デバイスからは引き続き会社のリソースにアクセスできます。 いずれかの脅威が見つかった場合、デバイスは非準拠と評価されます。 (Windows Defender ATP ユーザーの値は *[セキュア]* です)。
-   - **[低]**:低レベルの脅威が存在する場合にのみ、デバイスは準拠しています。 脅威レベルが中または高のデバイスは非準拠になります。
-   - **[中]**:デバイスに存在する脅威が低または中の場合、デバイスは準拠しています。 高レベルの脅威が検出された場合は、デバイスは非準拠と判定されます。
-   - **[高]**:最も安全性の低いレベルであり、すべての脅威レベルが許容されます。 したがって、脅威レベルが高、中または低のデバイスは準拠していると見なされます。
+   - **[クリア]** :このレベルはセキュリティ上最も安全です。 デバイスに既存のいかなる脅威も存在できず、デバイスからは引き続き会社のリソースにアクセスできます。 いずれかの脅威が見つかった場合、デバイスは非準拠と評価されます。 (Windows Defender ATP ユーザーの値は *[セキュア]* です)。
+   - **[低]** :低レベルの脅威が存在する場合にのみ、デバイスは準拠しています。 脅威レベルが中または高のデバイスは非準拠になります。
+   - **[中]** :デバイスに存在する脅威が低または中の場合、デバイスは準拠しています。 高レベルの脅威が検出された場合は、デバイスは非準拠と判定されます。
+   - **[高]** :最も安全性の低いレベルであり、すべての脅威レベルが許容されます。 したがって、脅威レベルが高、中または低のデバイスは準拠していると見なされます。
 
-6. **[OK]**、**[作成]** の順に選択して、変更を保存 (およびポリシーを作成) します。
+6. **[OK]** 、 **[作成]** の順に選択して、変更を保存 (およびポリシーを作成) します。
 
 ## <a name="assign-the-policy"></a>ポリシーを割り当てる
 
-1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、**[Intune]** をフィルターとして適用して、**[Microsoft Intune]** を選びます。
-2. **[デバイスのポリシー準拠]** > **[ポリシー]** > Windows Defender ATP コンプライアンス ポリシーの順に選択します。
+1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、 **[Intune]** をフィルターとして適用して、 **[Microsoft Intune]** を選びます。
+2. **[デバイスのポリシー準拠]**  >  **[ポリシー]** > Windows Defender ATP コンプライアンス ポリシーの順に選択します。
 3. **[割り当て]** を選択します。
 4. ポリシーの割り当て対象として Azure AD グループを含めるか除外します。
-5. グループにポリシーを展開するには、**[保存]** を選択します。 ポリシーの対象となっているユーザー デバイスは、コンプライアンスが評価されます。
+5. グループにポリシーを展開するには、 **[保存]** を選択します。 ポリシーの対象となっているユーザー デバイスは、コンプライアンスが評価されます。
 
 ## <a name="create-a-conditional-access-policy"></a>条件付きアクセス ポリシーを作成する
 デバイスが準拠していない*場合* は、条件付きアクセス ポリシーによって、リソースへのアクセスがブロックされます。 したがって、デバイスが脅威レベルを超えている場合は、SharePoint や Exchange Online などの企業リソースへのアクセスをブロックすることができます。  
@@ -133,29 +132,29 @@ Windows Defender には、[Windows Defender ATP サービス](https://docs.micro
 > [!TIP]  
 > 条件付きアクセスは、Azure Active Directory (Azure AD) テクノロジです。 *Intune* からアクセスされる条件付きアクセス ノードは、*Azure AD* からアクセスされるノードと同じです。  
 
-1. [Azure portal](https://portal.azure.com) で、**[Intune]** > **[条件付きアクセス]** > **[新しいポリシー]** の順に開きます。
-2. ポリシーの**名前**を入力して、**[ユーザーとグループ]** を選択します。 含めるオプションまたは除外するオプションを使用して、ポリシーのグループを追加し、**[完了]** を選択します。
-3. **[クラウド アプリ]** を選択し、保護するアプリを選びます。 たとえば、**[アプリを選択]** を選び、**[Office 365 SharePoint Online]** と **[Office 365 Exchange Online]** を選択します。
+1. [Azure portal](https://portal.azure.com) で、 **[Intune]**  >  **[条件付きアクセス]**  >  **[新しいポリシー]** の順に開きます。
+2. ポリシーの**名前**を入力して、 **[ユーザーとグループ]** を選択します。 含めるオプションまたは除外するオプションを使用して、ポリシーのグループを追加し、 **[完了]** を選択します。
+3. **[クラウド アプリ]** を選択し、保護するアプリを選びます。 たとえば、 **[アプリを選択]** を選び、 **[Office 365 SharePoint Online]** と **[Office 365 Exchange Online]** を選択します。
 
     **[完了]** を選択して変更を保存します。
 
-4. **[条件]** > **[クライアント アプリ]** の順に選択して、アプリとブラウザーにポリシーを適用します。 たとえば、**[はい]** を選択し、**[ブラウザー]** と **[モバイル アプリとデスクトップ クライアント]** を有効にします。
+4. **[条件]**  >  **[クライアント アプリ]** の順に選択して、アプリとブラウザーにポリシーを適用します。 たとえば、 **[はい]** を選択し、 **[ブラウザー]** と **[モバイル アプリとデスクトップ クライアント]** を有効にします。
 
     **[完了]** を選択して変更を保存します。
 
-5. **[許可]** を選択し、デバイスのコンプライアンスに基づいて条件付きアクセスを適用します。 たとえば、**[アクセスの許可]** > **[デバイスは準拠しているとしてマーク済みである必要があります]** の順に選択します。
+5. **[許可]** を選択し、デバイスのコンプライアンスに基づいて条件付きアクセスを適用します。 たとえば、 **[アクセスの許可]**  >  **[デバイスは準拠しているとしてマーク済みである必要があります]** の順に選択します。
 
     **[選択]** を選んで変更を保存します。
 
-6. **[ポリシーを有効にする]**、**[作成]** の順に選択して変更を保存します。
+6. **[ポリシーを有効にする]** 、 **[作成]** の順に選択して変更を保存します。
 
 「[条件付きアクセスとは](conditional-access.md)」は適切なリソースです。
 
 ## <a name="monitor-device-compliance"></a>デバイス コンプライアンスを監視する
 次に、Windows Defender ATP コンプライアンス ポリシーを持つデバイスの状態を監視します。
 
-1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、**[Intune]** をフィルターとして適用して、**[Microsoft Intune]** を選びます。
-2. **[デバイスのポリシー準拠]** > **[ポリシーへの準拠]** の順に選択します。
+1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、 **[Intune]** をフィルターとして適用して、 **[Microsoft Intune]** を選びます。
+2. **[デバイスのポリシー準拠]**  >  **[ポリシーへの準拠]** の順に選択します。
 3. 一覧で Windows Defender ATP ポリシーを見つけ、準拠しているデバイスまたは準拠していないデバイスを確認します。
 
 ## <a name="more-good-stuff"></a>関連トピック

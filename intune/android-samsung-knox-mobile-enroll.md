@@ -8,7 +8,6 @@ ms.author: erikje
 manager: ''
 ms.date: 12/06/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f753b959d7b2c64358abd92f4276a8e7f55c0f6
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 63226ba18ac42ef2dd2a37608d58f8ba4918f75b
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504010"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66049808"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Samsung の Knox Mobile Enrollment を使用して Android デバイスを自動的に登録する
 
@@ -42,7 +41,7 @@ Samsung KME を使って Intune の登録を有効にするには、Intune と S
 Knox Deployment Program に参加している承認されたリセラーからデバイスを購入すると、デバイス識別子 (シリアル番号と IMEI) の一覧が Knox ポータルに自動的に追加されます。
 
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 
 KME を使って Intune に登録するには、最初に、次の手順に従って、Samsung Knox ポータルで会社を登録する必要があります。
 1.  [お住まいの地域で KME が使用可能であることを確認する](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries):KME は 55 を超える国で使用できます。 展開する国がサポートされていることを確認します。
@@ -61,34 +60,34 @@ KME を使って Intune に登録するには、最初に、次の手順に従�
 
 ### <a name="for-android-enterprise"></a>Android エンタープライズの場合
 
-| MDM プロファイルのフィールド| 必須 | 値 | 
+| MDM プロファイルのフィールド| 必須? | 値 | 
 |-------------------|-----------|-------| 
-|MDM Server URI (MDM サーバーの URI)     | [いいえ]        |空白のままにします。 
+|MDM Server URI (MDM サーバーの URI)     | いいえ        |空白のままにします。 
 |プロファイル名       | はい       |選択したプロファイル名を入力します。 
-|説明        | [いいえ]        |プロファイルを説明するテキストを入力します。 
+|[説明]        | いいえ        |プロファイルを説明するテキストを入力します。 
 |MDM Agent APK (MDM エージェント APK)      | はい       |https://aka.ms/intune_kme_deviceowner 
 |Enable this app as a Google Device Owner (このアプリを Google デバイスの所有者として有効にする) | はい | Android エンタープライズに登録するには、このオプションを選択します。 
 |Supported MDM (サポートされる MDM)      | はい       |Microsoft Intune 
-|Leave all system apps enabled (すべてのシステム アプリを有効のままにする) | [いいえ] | すべてのアプリを有効にして、プロファイルで使用できるようにするには、このオプションを選択します。 このオプションを選択しないと、非常に限られたシステム アプリのセットのみがデバイスのアプリ トレイに表示されます。 メール アプリなどのアプリが非表示のままになります。 
-|Custom JSON (カスタム JSON)        | [いいえ]        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN":"Intune 登録トークン文字列を入力してください"}。 [登録プロファイルの作成方法](android-kiosk-enroll.md)に関する記事をご覧ください。 
-| Add legal agreements (法的契約を追加する) | [いいえ] | 空白のままにします。 
+|Leave all system apps enabled (すべてのシステム アプリを有効のままにする) | いいえ | すべてのアプリを有効にして、プロファイルで使用できるようにするには、このオプションを選択します。 このオプションを選択しないと、非常に限られたシステム アプリのセットのみがデバイスのアプリ トレイに表示されます。 メール アプリなどのアプリが非表示のままになります。 
+|Custom JSON (カスタム JSON)        | いいえ        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN":"Intune 登録トークン文字列を入力してください"}。 [登録プロファイルの作成方法](android-kiosk-enroll.md)に関する記事をご覧ください。 
+| Add legal agreements (法的契約を追加する) | いいえ | 空白のままにします。 
 
 ### <a name="for-android"></a>Android の場合
 
 手順については、[Samsung Knox Profile Setup Wizard](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm) の説明をご覧ください。
 
-| MDM プロファイルのフィールド| 必須 | 値 |
+| MDM プロファイルのフィールド| 必須? | 値 |
 |-------------------|-----------|-------|
-|MDM Server URI (MDM サーバーの URI)     | [いいえ]        |空白のままにします。
+|MDM Server URI (MDM サーバーの URI)     | いいえ        |空白のままにします。
 |プロファイル名       | はい       |選択したプロファイル名を入力します。
-|説明        | [いいえ]        |プロファイルを説明するテキストを入力します。
+|description        | いいえ        |プロファイルを説明するテキストを入力します。
 |MDM Agent APK (MDM エージェント APK)      | はい       |https://aka.ms/intune_kme
-|Enable this app as a Google Device Owner (このアプリを Google デバイスの所有者として有効にする) | [いいえ] | Android の場合はオフのままにします。 これは Android エンタープライズに対してのみ適用されます。
-|Skip Setup wizard (セットアップ ウィザードをスキップ)  | [いいえ]        |エンド ユーザーの代わりの標準のデバイス セットアップ プロンプトをスキップするには、このオプションを選択します。
-|Allow End User to Cancel Enrollment (エンド ユーザーが登録をキャンセルするのを許可) | [いいえ] | ユーザーが KME をキャンセルできるようにするには、このオプションを選択します。
-|Custom JSON (カスタム JSON)        | [いいえ]        |空白のままにします。
-| Add legal agreements (法的契約を追加する) | [いいえ] | 空白のままにします。
-Associate a Knox license with this profile (このプロファイルと Knox ライセンスを関連付け) | [いいえ] | オフのままにします。 KME 使用の Intune 登録に Knox ライセンスは不要です。
+|Enable this app as a Google Device Owner (このアプリを Google デバイスの所有者として有効にする) | いいえ | Android の場合はオフのままにします。 これは Android エンタープライズに対してのみ適用されます。
+|Skip Setup wizard (セットアップ ウィザードをスキップ)  | いいえ        |エンド ユーザーの代わりの標準のデバイス セットアップ プロンプトをスキップするには、このオプションを選択します。
+|Allow End User to Cancel Enrollment (エンド ユーザーが登録をキャンセルするのを許可) | いいえ | ユーザーが KME をキャンセルできるようにするには、このオプションを選択します。
+|Custom JSON (カスタム JSON)        | いいえ        |空白のままにします。
+| Add legal agreements (法的契約を追加する) | いいえ | 空白のままにします。
+Associate a Knox license with this profile (このプロファイルと Knox ライセンスを関連付け) | いいえ | オフのままにします。 KME 使用の Intune 登録に Knox ライセンスは不要です。
 
 ## <a name="add-devices"></a>デバイスを追加する
 

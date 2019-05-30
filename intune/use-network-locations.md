@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 05/21/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2431695f89c9cdf339a0192e27f8140ec042435
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: ddc58aed6e7a1efaecd8b7e7cf51a39e43d14e58
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61515332"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044340"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Intune で場所 (ネットワーク フェンス) を使用する
 
@@ -40,7 +39,7 @@ ms.locfileid: "61515332"
 
 さらに、[コンプライアンス非対応に対するアクション](#configure-the-actions-for-noncompliance)を追加することができます。 デバイスがオンプレミスとネットワークの場所に戻された場合は、企業リソースに再度アクセスできるようになります。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 
 場所ベースのコンプライアンス ポリシーを作成するには
 

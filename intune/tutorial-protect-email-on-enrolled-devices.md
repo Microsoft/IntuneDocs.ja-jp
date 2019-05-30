@@ -8,7 +8,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/26/2019
 ms.topic: tutorial
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4a8e873c48ceb59bfb8ac98fec9a29fa51d6cd3
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 80f9d3d2799732f2d019189913c5c47cc6973809
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512280"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044590"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>チュートリアル: マネージド デバイス上で Exchange Online の電子メールを保護する
 デバイス コンプライアンス ポリシーと条件付きアクセスを使用して、iOS デバイスが Intune によって管理され、承認されたメール アプリを使用している場合にのみ、Exchange Online のメールにアクセスできるようにする方法を説明します。 
@@ -35,7 +34,7 @@ ms.locfileid: "61512280"
 
 Intune サブスクリプションがない場合は、[無料試用版アカウントにサインアップ](free-trial-sign-up.md)します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
   - このチュートリアルでは、次のサブスクリプションのあるテスト テナントが必要です。
     - Azure Active Directory Premium ([無料試用版](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
     - Exchange を含む Office 365 Business サブスクリプション ([無料試用版](https://go.microsoft.com/fwlink/p/?LinkID=510938))

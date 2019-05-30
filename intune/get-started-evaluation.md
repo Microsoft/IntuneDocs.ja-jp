@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 02/26/2019
 ms.topic: overview
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 313e4ccf0e96536b3e99edb968298e4cc3343aa1
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 0118087d5084830ac7b1761109a2bb542ec37421
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513991"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041812"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Intune が会社のためにできることとは。
 Microsoft Intune はクラウドベースのエンタープライズ モビリティ管理 (EMM) サービスであり、これでは、会社のデータを守りながら、社員に生産的に働いてもらうことができます。
@@ -62,7 +61,7 @@ Intune では次のことができます。
 - [カスタム ロールの作成および割り当て](quickstart-create-custom-role.md) - セキュリティ オペレーション部門用に特定のアクセス許可のあるカスタム ロールを作成および割り当てます。 
 - [iOS 用の電子メール デバイス プロファイルの作成](quickstart-email-profile.md) - iOS デバイス用の電子メール デバイス プロファイルを作成します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 
 始める前に、Intune の管理者/テナント アカウントをアクティブにしておく必要があります。 テスト環境で [Intune を無料で試す](free-trial-sign-up.md)無料のサブスクリプションを作成します。 現行のサブスクライバーも、各自のライブ テナントでこれらのアクティビティを完了できます。 これらの概要の記事は、テスト デバイス上で作業することを前提としています。
 

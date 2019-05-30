@@ -8,7 +8,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/22/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3724f2494dd4e4fe7939a9be87a30e1bc5bfbf27
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: e236548002f2779377e7ac57443077d48869e1f9
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513583"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047709"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Microsoft Intune で Intune のオンプレミス Exchange コネクタを設定する
 この記事の情報は、Intune 用の Exchange Active Sync オンプレミス コネクタをインストールして監視するのに役立ちます。  Intune オンプレミス Exchange コネクタを[条件付きアクセス ポリシーと一緒に使用して、ご利用の Exchange オンプレミス メールボックスへのアクセスを許可またはブロックします](conditional-access-exchange-create.md)。 
@@ -44,9 +43,9 @@ Intune とオンプレミス Exchange Server が通信できるようにする�
 
 以下の表に、オンプレミス Exchange コネクタをインストールするコンピューターの要件を示します。  
 
-|  要件  |   詳細情報     |
+|  要件  |   説明を見る     |
 |---------------|------------------------|
-|  Operating systems        | Intune は、Windows Server 2008 SP2 64 ビット、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2、または Windows Server 2016 の任意のエディションを実行しているコンピューター上のオンプレミス Exchange コネクタをサポートします。<br /><br />Server Core インストールでは、コネクタはサポートされません。  |
+|  オペレーティング システム        | Intune は、Windows Server 2008 SP2 64 ビット、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2、または Windows Server 2016 の任意のエディションを実行しているコンピューター上のオンプレミス Exchange コネクタをサポートします。<br /><br />Server Core インストールでは、コネクタはサポートされません。  |
 | Microsoft Exchange          | オンプレミス コネクタには、Microsoft Exchange 2010 SP3 以降または従来の Exchange Online Dedicated が必要です。 Exchange Online Dedicated 環境が<strong>新しい</strong>構成か<strong>従来の</strong>構成かを確認するには、アカウント マネージャーに問い合わせてください。 |
 | モバイル デバイス管理機関           | [モバイル デバイス管理機関を Intune に設定します](mdm-authority-set.md)。 |
 | ハードウェア              | コネクタをインストールするコンピューターには、1.6 GHz の CPU と 2 GB の RAM と 10 GB の空きディスク容量が必要です。 |

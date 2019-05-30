@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 03/27/2019
 ms.topic: quickstart
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b5e6ac4683284dc71c9171f4367e72d5ec45c59
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 7d1153254f5e803bc0e1f933b8bdc022f241abcc
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61514736"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045846"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>クイック スタート:非準拠デバイスに通知を送信する
 
@@ -35,7 +34,7 @@ ms.locfileid: "61514736"
 
 Intune サブスクリプションがない場合は、[無料試用版アカウントにサインアップ](free-trial-sign-up.md)します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 - デバイス コンプライアンス ポリシーを使ってデバイスを企業リソースからブロックする場合は、AAD の条件付きアクセスを設定する必要があります。 「[デバイス コンプライアンス ポリシーを作成する](quickstart-set-password-length-android.md)」クイック スタートを完了している場合は、Azure Active Directory を使用しています。 AAD について詳しくは、「[Azure Active Directory の条件付きアクセスとは](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)」および「[Intune での条件付きアクセスの一般的な使用方法](conditional-access-intune-common-ways-use.md)」をご覧ください。
 
 ## <a name="sign-in-to-intune"></a>Intune にサインインする
@@ -50,7 +49,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 2. 次の情報を入力します。
 
    - **名前**: *Contoso 管理者*
-   - **[件名]**: *デバイスのポリシー準拠*
+   - **[件名]**:*デバイスのポリシー準拠*
    - **[メッセージ]**:"*現在、あなたのデバイスは組織のコンプライアンス要件を満たしていません。*"
    - **電子メール ヘッダー - 会社のロゴを含める**:組織のロゴを表示するには、**[有効]** に設定します。
    - **電子メール フッター - 会社名を含める**:組織名を表示するには、**[有効]** に設定します。

@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 03/18/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb33a1207e165323de2e82467c7a0dd5239d9713
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 803d556150d60d0a3d60ec03c029d65f0f935f67
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61507376"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045289"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Intune でストレージ、イベントハブ、または Log Analytics にログ データを送信する (プレビュー)
 
@@ -38,7 +37,7 @@ Microsoft Intune には、お客様の環境に関する情報を提供する組
 
 この記事では、**[診断設定]** を使用してログ データをさまざまなサービスに送信する方法について説明し、例とコストの見積もりを示し、よく寄せられる質問に回答します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 
 この機能を使用するには、以下が必要です。
 
@@ -209,7 +208,7 @@ Azure Monitor を Event Hubs と共に使用して、ログを SIEM システム
 
 #### <a name="can-i-access-the-data-from-an-event-hub-without-using-an-external-siem-tool"></a>外部の SIEM ツールを使用せずにイベント ハブのデータにアクセスできますか。
 
-はい。 カスタム アプリケーションからログにアクセスするには、[Event Hubs API](https://docs.microsoft.com/azure/event-hubs/event-hubs-dotnet-standard-getstarted-receive-eph) を使用できます。
+対応 カスタム アプリケーションからログにアクセスするには、[Event Hubs API](https://docs.microsoft.com/azure/event-hubs/event-hubs-dotnet-standard-getstarted-receive-eph) を使用できます。
 
 #### <a name="what-data-is-stored"></a>どのデータが保存されますか。
 

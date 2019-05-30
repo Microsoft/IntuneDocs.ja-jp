@@ -8,7 +8,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 06/09/2017
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cf507ba470013bddf4809b6ad6ad54b4cb52d9d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: da8ccc65b2091e96d7ef089994c3d34bbaf9b557
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61507292"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041737"
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense コネクターと Intune
 
@@ -46,7 +45,7 @@ Intune に登録するとき、Lookout では次のプラットフォームが�
 * **Android 4.1 以降**
 * **iOS 8 以降** プラットフォームと言語サポートの詳細については、[Lookout Web サイト](https://personal.support.lookout.com/hc/articles/114094140253)をご覧ください。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 * Microsoft Intune サブスクリプション
 * Azure Active Directory
 * Lookout Mobile EndPoint Security エンタープライズ サブスクリプション  

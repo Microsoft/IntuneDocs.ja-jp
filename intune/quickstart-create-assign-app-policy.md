@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 03/26/2019
 ms.topic: quickstart
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d7e63542563425606cf1f9a8509a7bf0c09b9a9
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: bad416e738f1a0481c67480d9a83157a4781c71b
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511236"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050335"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>クイック スタート:アプリ保護ポリシーを作成して割り当てる
 
@@ -31,7 +30,7 @@ ms.locfileid: "61511236"
 
 Intune サブスクリプションがない場合は、[無料試用版アカウントにサインアップ](free-trial-sign-up.md)します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 
 - このクイック スタートを完了するには、[ユーザーの作成](quickstart-create-user.md)、[グループの作成](quickstart-create-group.md)、[デバイスの登録](quickstart-setup-auto-enrollment.md)、および[アプリの追加および割り当て](quickstart-add-assign-app.md)を行う必要があります。
 

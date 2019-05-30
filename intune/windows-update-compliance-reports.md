@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 02/12/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3af9fbfa5bb1a9c6ebd9ebd0f20a55677c48b755
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: a2b236d01cb5ffcf5a26e71ac0a9b65bb586dcb1
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509978"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66039666"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>更新プログラムに関する Intune コンプライアンス レポート
 Intune を使用して Windows 10 デバイスに Windows の更新プログラムを展開する場合は、Intune を使用するか、または Microsoft Operations Management Suite (OMS) の一部であり、*Update Compliance* と呼ばれる無料のソリューションを使用することで、更新プログラムのコンプライアンスについて詳細を表示できます。
@@ -56,7 +55,7 @@ Intune コンソールで、カスタム ポリシーの OMA-URI 設定を使用
 - **設定名**:Windows Analytics の商用 ID
 - **設定の説明**:Windows Analytics ソリューションの商用 ID を構成
 - **OMA-URI** (大文字と小文字を区別): .*./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID*
-- **データ型**:文字列型
+- **データ型**:String
 - **値**: \<OMS ワークスペースの Windows 利用統計情報に示された GUID を使用>
  
 > [!NOTE]  

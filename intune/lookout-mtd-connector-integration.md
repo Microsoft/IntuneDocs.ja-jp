@@ -8,7 +8,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 01/02/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3644ebaa0582cea5e79c5123ac89b97bc6f97f29
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: ffdfd203b2b67a25d5826798d89ae548e33d7756
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61507529"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047141"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Intune との Lookout Mobile Threat Defense 統合を設定する
 
@@ -32,7 +31,7 @@ Lookout Mobile Threat Defense のサブスクリプションを設定するに�
 | #        |手順  |
 | ------------- |:-------------|
 | 1 | [Azure AD の情報を収集する](#collect-azure-ad-information) |
-| 2 | [サブスクリプションを構成する](#configure-your-subscription) |
+| 2 で保護されたプロセスとして起動されました | [サブスクリプションを構成する](#configure-your-subscription) |
 | 3 | [登録グループを構成する](#configure-enrollment-groups) |
 | 4 | [状態の同期を構成する](#configure-state-sync) |
 | 5 | [エラー レポートの電子メール受信者情報を構成する](#configure-error-report-email-recipient-information) |

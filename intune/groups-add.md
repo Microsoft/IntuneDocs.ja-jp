@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 06/13/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e0e3994addf8722adc8606f20517bcd4aeb7acd
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b11829bad3091b24bead99afc08dc5cdc01f0a0c
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61514090"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047657"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>ユーザーとデバイスを整理するためのグループを追加する
 Intune では、デバイスとユーザーの管理に Azure Active Directory (AD) のグループを使用します。 Intune 管理者は、組織のニーズに合ったグループをセットアップできます。 地理的な場所、部門、ハードウェアの特性ごとにグループを作成して、ユーザーまたはデバイスを整理します。 大規模なタスクを管理するには、グループを使用します。 多数のユーザーにポリシーを設定したり、一連のデバイスにアプリを展開したりする場合などです。
@@ -35,7 +34,7 @@ Intune では、デバイスとユーザーの管理に Azure Active Directory (
 ## <a name="add-a-new-group"></a>新しいグループを追加する
 
 新しいグループを作成するには、次の手順に従います。
-1. [Azure ポータル](https://portal.azure.com) にサインインします。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
 2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 3. **[Intune]** ウィンドウで **[グループ]** を選択し、**[すべてのグループ]** ウィンドウで **[新しいグループ]** を選択します。
    ![[新しいグループ] が選択された Azure Portal のスクリーンショット](./media/groups-add-new.png)
@@ -65,6 +64,6 @@ Intune では、デバイスとユーザーの管理に Azure Active Directory (
 
 
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>「
 - [Azure Active Directory のグループによるリソースへのアクセス管理](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)
 - [Azure Portal での Intune クラシック グループ](groups-get-started.md)

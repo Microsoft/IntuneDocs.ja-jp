@@ -8,7 +8,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 12/04/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ce1950c81a1327ede14fc5885eaf12f33614097
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 9ddd08baa99ebf7d6e7701d8345e42a72f0dbd57
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509813"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046568"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Zimperium を Intune と統合する
 
 Zimperium Mobile Threat Defense ソリューションを Intune と統合するには、次の手順をすべて実行します。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>開始する前に
 
 > [!NOTE]
 > 次の手順はすべて、 [Zimperium MTD コンソール](https://sso.zimperium.com/signon/aad/)で実行します。

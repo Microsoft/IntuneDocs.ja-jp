@@ -7,7 +7,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 03/04/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9f16c563ff0416092abe3812b3505c2f6d92587
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 233b093ba9c062618740fd8f14c5ea306647acdd
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512901"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050507"
 ---
 # <a name="basic-setup"></a>基本的なセットアップ
 
@@ -83,6 +82,6 @@ MDM 機関を **Intune** に設定して、Intune Azure Portal を有効にし�
 
 モバイル管理機関を設定する方法については、[こちら](mdm-authority-set.md)を参照してください。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [デバイスおよびアプリの管理ポリシー](migration-guide-configure-policies.md)を構成します。

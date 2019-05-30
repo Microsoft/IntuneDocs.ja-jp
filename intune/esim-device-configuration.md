@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 7/31/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -15,19 +14,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4bdaf5768c1b78fbd07a732ee6690e59638fcff1
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 0bb4d94048025f4b0b6c984c4bf0972b432707b6
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513775"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041874"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Intune で eSIM 携帯電話プロファイルを構成する - パブリック プレビュー
 
 > [!NOTE]
 > Microsoft では皆様のご意見をお待ちしております。 質問がある場合や、ディスカッションを開始する場合には、`eSIMonIntune@microsoft.com` 宛てにメールをお送りください。
 
-## <a name="introduction"></a>概要
+## <a name="introduction"></a>はじめに
 
 eSIM は埋め込み SIM チップであり、[Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro) などの eSIM 対応デバイス上で携帯データネットワーク接続を介してインターネットに接続することができます。 eSIM を利用する場合、携帯電話会社から SIM カードを入手する必要はありません。 世界中を旅行する場合でも、携帯電話会社やデータ プランを切り替え、常に回線接続を維持できます。
 
@@ -71,7 +70,7 @@ Intune を使ってご利用のデバイスに eSIM を展開するには、次�
 - Lenovo Yoga C630
 - Samsung Galaxy Book 2
 
-## <a name="step-1-add-cellular-activation-codes"></a>手順 1.携帯電話のアクティブ化コードを追加する
+## <a name="step-1-add-cellular-activation-codes"></a>手順 1:携帯電話のアクティブ化コードを追加する
 
 携帯電話のアクティブ化コードは、コンマ区切りファイル (csv) として、携帯電話会社によって提供されます。 このファイルがある場合は、次の手順を使用して Intune に追加します。
 
@@ -105,7 +104,7 @@ Intune を使ってご利用のデバイスに eSIM を展開するには、次�
 
     ![携帯電話サブスクリプション プールに、アクティブ化コード サンプルの csv ファイルの名前が付けられている](./media/esim-device-configuration/subscription-pool-name-csv-file.png)
 
-## <a name="step-2-create-an-azure-ad-device-group"></a>手順 2: Azure AD デバイス グループを作成する
+## <a name="step-2-create-an-azure-ad-device-group"></a>手順 2:Azure AD デバイス グループを作成する
 
 eSIM 対応デバイスを含むデバイス グループを作成します。 手順については、「[グループの追加](groups-add.md)」を参照してください。
 
@@ -113,7 +112,7 @@ eSIM 対応デバイスを含むデバイス グループを作成します。 �
 > - デバイスのみがターゲットとなり、ユーザーはターゲットになりません。
 > - ご利用の eSIM デバイスを含む静的な Azure AD デバイス グループを作成することをお勧めします。 グループを使用すれば、確実に eSIM デバイスのみがターゲットとなります。
 
-## <a name="step-3-assign-esim-activation-codes-to-devices"></a>手順 3: eSIM アクティブ化コードをデバイスに割り当てる
+## <a name="step-3-assign-esim-activation-codes-to-devices"></a>手順 3:eSIM アクティブ化コードをデバイスに割り当てる
 
 ご利用の eSIM デバイスを含む Azure AD グループにプロファイルを割り当てます。
 

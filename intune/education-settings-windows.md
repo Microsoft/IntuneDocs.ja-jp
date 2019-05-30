@@ -7,7 +7,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 01/22/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 206bc3276f3c175fe61852f235c722b835ad60b4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 61d8f5f66d424c434edf119ad7fe221c35ee35ae
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57564858"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042212"
 ---
 # <a name="configure-the-take-a-test-app-on-windows-10-devices-using-intune"></a>Windows 10 デバイス上で Intune を使用してテスト アプリを構成する
 
@@ -38,7 +37,7 @@ ms.locfileid: "57564858"
 
 ## <a name="take-a-test-settings"></a>テストの設定
 
-- **アカウントの種類**: テスト ユーザーのサインイン方法を選択します。 次のようなオプションがあります。
+- **[アカウントの種類]** : ユーザーがテストにサインインする方法を選択します。 次のようなオプションがあります。
   - Azure AD アカウント
   - ドメイン アカウント
   - ローカル アカウント
@@ -49,7 +48,7 @@ ms.locfileid: "57564858"
   - `computerName\username`
 - **評価 URL**: ユーザーに受けさせるテストの URL を入力します。 URL の取得の詳細については、[テストに関するドキュメント](https://docs.microsoft.com/education/windows/take-tests-in-windows-10)を参照してください。
 - **画面の監視**: ユーザーがテストを受けている間、画面の動作を監視するには **[許可]** を選択します。 **[未構成]** を選択すると、テスト中に画面を監視できなくなります。
-- **テキストの候補**: 受験者がテキストの候補を表示できるようにするには、**[許可]** を選択します。 **[未構成]** を選択すると、ユーザーがテストを受けている間、テキストの候補がブロックされます。
+- **テキストの候補**: 受験者がテキストの候補を表示できるようにするには、 **[許可]** を選択します。 **[未構成]** を選択すると、ユーザーがテストを受けている間、テキストの候補がブロックされます。
 
 ## <a name="next-steps"></a>次の手順
 

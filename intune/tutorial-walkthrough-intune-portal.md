@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 03/28/2019
 ms.topic: tutorial
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c601af8c2b73ac68ec88f45d3684fcfd41f1c87f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: c84cd0ec61ea08956bbebd040167991c6285d073
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61516336"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044980"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>チュートリアル: Azure portal での Microsoft Intune のチュートリアル
 
@@ -36,7 +35,7 @@ ms.locfileid: "61516336"
 
 Intune サブスクリプションがない場合は、[無料試用版アカウントにサインアップ](free-trial-sign-up.md)します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 Microsoft Intune を設定する前に、次の要件を確認してください。
 
    - [サポートされるオペレーティング システムとブラウザー](supported-devices-browsers.md) 

@@ -1,13 +1,12 @@
 ---
-title: Microsoft Intune - Azure でのエラーと状態コード |Microsoft Docs
-description: MDM を使用して管理対象デバイス、Microsoft Intune で会社のリソース、iOS デバイスでのエラー、および OMA 応答エラーへのアクセスを取得するときに、エラー、状態コード、説明、および解決策の一覧を参照してください。
+title: Microsoft Intune のエラー コードと状態コード - Azure | Microsoft Docs
+description: Microsoft Intune で、会社のリソースにアクセスして MDM 管理のデバイスを使用するときに発生するエラー、状態コード、説明、解決策の一覧、iOS デバイスのエラーや OMA 応答エラーの一覧を参照してください。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/20/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e4d2b940a0079794c5b17e8d1c1900f630d14cd
-ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.openlocfilehash: 36d21c0b80a2737be39bbee2399f6005c43edc43
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330480"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040426"
 ---
-# <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>一般的なエラー コードと Microsoft Intune での説明
+# <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Microsoft Intune の一般的なエラー コードと説明
 
-この記事では、組織のリソースにアクセスするときの一般的なエラー、状態コード、説明、および考えられる解決策を一覧表示します。 Microsoft Intune を使用する場合のアクセスに関する問題のトラブルシューティングに役立つ、この情報を使用します。
+この記事では、組織のリソースにアクセスしたときに遭遇する一般的なエラー、状態コード、説明、可能な解決策を紹介します。 Microsoft Intune を使用するときに、この情報を利用するとアクセス問題の解決に役立ちます。
 
-ヘルプをサポートする必要がある場合は、次を参照してください。 [Microsoft Intune のサポートを受ける](get-support.md)します。
+サポートが必要な場合、「[Microsoft Intune のサポートを受ける方法](get-support.md)」を参照してください。
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>MDM 管理の Windows デバイスの状態コード
 
@@ -387,4 +386,4 @@ ms.locfileid: "58330480"
 
 ## <a name="next-steps"></a>次の手順
 
-Microsoft サポートに問い合わせて[Microsoft Intune のサポートを受ける](get-support.md)します。
+[Microsoft Intune のサポートを受ける](get-support.md)には、Microsoft サポートにお問い合わせください。

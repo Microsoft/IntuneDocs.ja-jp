@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/08/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dffdf67597ccb7a1719b2b769a79a6a5f365198c
-ms.sourcegitcommit: 5fec35341d83b16023a92fc4b2b3e9237fc6c9ab
+ms.openlocfilehash: 9be961908920420dbb4111c2c3ba108b7e11c09f
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65853903"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042782"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune で iOS アプリ間のデータ転送を管理する方法
 
@@ -77,14 +76,14 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 
    |サードパーティ MDM プロバイダー| Configuration キー | 値の種類 | 構成値|
    | ------- | ---- | ---- | ---- |
-   |Microsoft Intune| IntuneMAMUPN | 文字列型 | {{UserPrincipalName}}|
-   |VMware AirWatch| IntuneMAMUPN | 文字列型 | {UserPrincipalName}|
-   |MobileIron | IntuneMAMUPN | 文字列型 | ${userUPN} **または** ${userEmailAddress} |
-   |Citrix Endpoint Management | IntuneMAMUPN | 文字列型 | ${user.userprincipalname} |
+   |Microsoft Intune| IntuneMAMUPN | String | {{UserPrincipalName}}|
+   |VMware AirWatch| IntuneMAMUPN | String | {UserPrincipalName}|
+   |MobileIron | IntuneMAMUPN | String | ${userUPN} **または** ${userEmailAddress} |
+   |Citrix Endpoint Management | IntuneMAMUPN | String | ${user.userprincipalname} |
    |ManageEngine Mobile Device Manager | IntuneMAMUPN | 文字列型 | %upn% |
 
 
-### <a name="example-2-end-user-experience"></a>例 2:エンドユーザー エクスペリエンス
+### <a name="example-2-end-user-experience"></a>例 2: エンドユーザー エクスペリエンス
 
 1.  ユーザーは、デバイスに Microsoft Word アプリをインストールします。
 
@@ -110,5 +109,5 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 まず、[アプリ保護ポリシーを作成し、iOS アプリに割り当て](app-protection-policies.md)ます。 アプリ保護ポリシーをテストする方法の詳細については、[アプリ保護ポリシーの検証](app-protection-policies-validate.md)に関するページを参照してください。
 
 
-### <a name="see-also"></a>関連項目
+### <a name="see-also"></a>「
 [Intune アプリ保護ポリシーとは](app-protection-policy.md)

@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 69a4ee29a6d35623d6269a94a9c1b4fc7a1f956f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 6ce8d87a653e87a2b9ba91552f6857fdab6bee12
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512619"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045990"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>モバイル デバイス管理のユース ケース シナリオを特定する
 
@@ -64,7 +63,7 @@ ms.locfileid: "61512619"
 
 ## <a name="organizational-groups-for-your-scenarios"></a>シナリオ用の組織のグループ
 
-次に、各ユース ケースとサブ ユース ケース シナリオに関連付けられている組織グループを特定する必要があります。 次に例を示します。
+次に、各ユース ケースとサブ ユース ケース シナリオに関連付けられている組織グループを特定する必要があります。 たとえば、次のように入力します。
 
 | **ユース ケース** | **サブ ユース ケース** | **組織グループ** |
 |:---:|:---:|:---:|

@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 05/14/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 07922ff771f8dea2e19a94cd965fb7779f20f131
-ms.sourcegitcommit: 5fec35341d83b16023a92fc4b2b3e9237fc6c9ab
+ms.openlocfilehash: 0b3a566fd5c040e1c0007c10b1b57a64788a2323
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65853948"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043824"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune スタンドアロン - Win32 アプリ管理
 
@@ -32,7 +31,7 @@ ms.locfileid: "65853948"
 > [!NOTE]
 > このアプリの管理機能では、Windows アプリケーションの 32 ビットと 64 ビットの両方のオペレーティング システム アーキテクチャがサポートされます。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 
 Win32 アプリの管理を使用する場合は、必ず、次の基準を満たすようにしてください。
 
@@ -64,7 +63,7 @@ Win32 アプリの管理を使用する場合は、必ず、次の基準を満�
 
 |    **コマンド ライン パラメーター**    |    **説明**    |
 |:------------------------------:|:----------------------------------------------------------:|
-|    `-h`     |    ヘルプ    |
+|    `-h`     |    [ヘルプ]    |
 |    `-c <setup_folder>`     |    すべてのセットアップ ファイルのフォルダー。 このフォルダー内のすべてのファイルは、*.intunewin* ファイルに圧縮されます。    |
 |   ` -s <setup_file>`     |    セットアップ ファイル (*setup.exe*、*setup.msi* など)。    |
 |    `-o <output_folder>`     |    生成された *.intunewin* ファイルの出力フォルダー。    |
@@ -77,7 +76,7 @@ Win32 アプリの管理を使用する場合は、必ず、次の基準を満�
 |    `IntuneWinAppUtil -h`    |    このコマンドでは、ツールの使用情報が表示されます。    |
 |    `IntuneWinAppUtil -c c:\testapp\v1.0 -s c:\testapp\v1.0\setup.exe -o c:\testappoutput\v1.0 -q`    |    このコマンドは、指定されたソース フォルダーおよびセットアップ ファイルから `.intunewin` ファイルを生成します。 MSI セットアップ ファイルでは、このツールは Intune に必要な情報を取得します。 `-q` が指定されている場合、コマンドは Quiet モードで実行され、出力ファイルが既に存在する場合は上書きされます。 また、出力フォルダーが存在しない場合は、自動的に作成されます。    |
 
-*.intunewin* ファイルを生成する場合、参照するために必要なすべてのファイルをセットアップ フォルダーのサブフォルダーに置いてください。 次に、相対パスを使用して特定の必要なファイルを参照します。 次に例を示します。
+*.intunewin* ファイルを生成する場合、参照するために必要なすべてのファイルをセットアップ フォルダーのサブフォルダーに置いてください。 次に、相対パスを使用して特定の必要なファイルを参照します。 たとえば、次のように入力します。
 
 **セットアップのソース フォルダー:** *c:\testapp\v1.0*<br>
 **ライセンス ファイル:** *c:\testapp\v1.0\licenses\license.txt*
@@ -96,7 +95,7 @@ Win32 アプリの管理を使用する場合は、必ず、次の基準を満�
 
 次の手順では、Intune に Windows アプリを追加するためのガイダンスを提供します。
 
-### <a name="step-1-specify-the-software-setup-file"></a>手順 1.ソフトウェアのセットアップ ファイルを指定する
+### <a name="step-1-specify-the-software-setup-file"></a>手順 1:ソフトウェアのセットアップ ファイルを指定する
 
 1.  [Azure ポータル](https://portal.azure.com/)にサインインします。
 2.  **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は、**[監視 + 管理]** セクションにあります。
@@ -105,7 +104,7 @@ Win32 アプリの管理を使用する場合は、必ず、次の基準を満�
 
     ![[アプリの追加] ブレードのスクリーンショット - [アプリの種類] ドロップダウン ボックス](./media/apps-win32-app-01.png)
 
-### <a name="step-2-upload-the-app-package-file"></a>手順 2: アプリ パッケージ ファイルをアップロードする
+### <a name="step-2-upload-the-app-package-file"></a>手順 2:アプリ パッケージ ファイルをアップロードする
 
 1.  **[アプリの追加]** ウィンドウで **[アプリのパッケージ ファイル]** を選択して、ファイルを選択します。 [アプリのパッケージ ファイル] ウィンドウが表示されます。
 
@@ -118,7 +117,7 @@ Win32 アプリの管理を使用する場合は、必ず、次の基準を満�
 
 3.  完了したら **[OK]** を選択します。
 
-### <a name="step-3-configure-app-information"></a>手順 3: アプリ情報の構成
+### <a name="step-3-configure-app-information"></a>手順 3:アプリ情報の構成
 
 1.  **[アプリの追加]** ウィンドウで、**[アプリ情報]** を選び、アプリを構成します。
 2.  **[アプリ情報]** ウィンドウで、以下の情報を構成します。 このウィンドウの一部の値は、自動的に入力される場合があります。
@@ -141,13 +140,13 @@ Win32 アプリの管理を使用する場合は、必ず、次の基準を満�
 
     たとえば、アプリのファイル名が **MyApp123** の場合、以下を追加します。<br>
     `msiexec /p “MyApp123.msp”`<p>
-    また、アプリケーションが `ApplicationName.exe` である場合、コマンドはアプリケーション名となり、その後に、パッケージでサポートされるコマンド引数 (スイッチ) が続きます。 <br>次に例を示します。<br>
+    また、アプリケーションが `ApplicationName.exe` である場合、コマンドはアプリケーション名となり、その後に、パッケージでサポートされるコマンド引数 (スイッチ) が続きます。 <br>たとえば、次のように入力します。<br>
     `ApplicationName.exe /quiet`<br>
     上記のコマンドでは、`ApplicationName.exe` パッケージで `/quiet` コマンド引数がサポートされます。<p> アプリケーション パッケージでサポートされる特定の引数については、アプリケーション ベンダーにお問い合わせください。
 
 3.  アプリの GUID に基づいてアプリをアンインストールする完全なアンインストール コマンド ラインを追加します。 
 
-    例: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+    たとえば次のようになります。`msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
 
     > [!NOTE]
     > Win32 アプリは、**ユーザー** コンテキストまたは**システム** コンテキストでインストールされるように構成できます。 **ユーザー** コンテキストでは、特定のユーザーのみが参照されます。 **システム** コンテキストでは、Windows 10 デバイスのすべてのユーザーが参照されます。

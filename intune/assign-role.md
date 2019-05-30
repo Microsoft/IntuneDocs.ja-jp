@@ -7,7 +7,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 03/26/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a59c413fcc11dfce76152a7325517703a71785d2
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: a22fef1c04ae52a8a4cc65eaadc1ef6fcd524c19
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508182"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043593"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Intune ユーザーにロールを割り当てる
 
@@ -34,7 +33,7 @@ ms.locfileid: "61508182"
 
 各組み込みロールのアクセス許可の完全な一覧は、「[Intune RBAC Table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)」を参照してください。
 
-1. [Azure ポータル](https://portal.azure.com) にサインインします。
+1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
 
 2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 

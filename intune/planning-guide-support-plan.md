@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46b01a4b45e76ff290038bef57ee6a2def8e82b8
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 64349d2e4c681bf0fac8cf231085cc63e42ffc62
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512627"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041475"
 ---
 # <a name="develop-a-support-plan"></a>サポート計画を作成する
 
@@ -91,6 +90,6 @@ Intune サポート トレーニングの課題例を次に示します。
 
 IT サポート/ヘルプデスク スタッフが Intune 展開計画やパイロット運用の初期段階に参加することは、Intune 展開の改善につながり、エンド ユーザーは効率的に Intune を導入できます。 初期段階から関与する場合、サポート スタッフに Intune を公開し、貴重な体験を始めから与えることになります。 IT サポート/ヘルプデスク スタッフが組織の本格的な運用ロールアウトのサポートに備えることができます。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 次のセクションは、[Intune の設計](planning-guide-design.md)に関するガイダンスです。

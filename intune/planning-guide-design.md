@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 3/22/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 307895935e1cd6fe2489a4ee8ae03333ce97d55b
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 812a2e91b28908dcd3893ec77e9923362c8a9173
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512721"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046139"
 ---
 # <a name="create-a-design"></a>設計の作成
 
@@ -186,7 +185,7 @@ VPN、Wi-Fi、または Intune での電子メール プロファイルで証明
 
 -   サポートされるデバイス プラットフォーム
 
--   [デバイス]
+-   デバイス
 
 -   デバイスの所有権
 
@@ -200,9 +199,9 @@ VPN、Wi-Fi、または Intune での電子メール プロファイルで証明
 
 [Intune でサポートされているデバイスの完全な一覧](supported-devices-browsers.md)については、こちらをご覧ください。
 
-### <a name="devices"></a>[デバイス]
+### <a name="devices"></a>デバイス
 
-Intune は、モバイル デバイスを管理して、企業のデータをセキュリティで保護し、エンド ユーザーがより多くの場所から作業できるようにします。 Intune は多数のデバイス プラットフォームをサポートしているので、組織の設計でサポートされるデバイスおよび OS プラットフォームとバージョンを文書化することをお勧めします。 次に例を示します。
+Intune は、モバイル デバイスを管理して、企業のデータをセキュリティで保護し、エンド ユーザーがより多くの場所から作業できるようにします。 Intune は多数のデバイス プラットフォームをサポートしているので、組織の設計でサポートされるデバイスおよび OS プラットフォームとバージョンを文書化することをお勧めします。 たとえば、次のように入力します。
 
 | **デバイスのプラットフォーム** | **OS のバージョン** |
 |:---:|:---:|
@@ -271,7 +270,7 @@ Intune は、企業所有のデバイスと個人のデバイスの両方をサ�
 
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して、構成ポリシーのニーズを確認することができます。
 
-### <a name="profiles"></a>Profiles
+### <a name="profiles"></a>プロファイル
 
 プロファイルを使用して、エンド ユーザーが会社データに接続するのを補助します。 Intune は、さまざまな種類のプロファイルをサポートします。 ユース ケースと要件を参照して、どのような場合にプロファイルを構成するかを確認してください。 すべてのデバイス プロファイルは、プラットフォームの種類によって分類され、設計ドキュメントに含まれる必要があります。
 

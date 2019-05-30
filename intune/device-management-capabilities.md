@@ -7,7 +7,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 04/16/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 293fa40b59d0005f60aad45a3fc42d3dd790857d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 415005ee58367a189986e9d7bd0ef693f14bc5c9
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61510148"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66048366"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Microsoft Intune の登録済みデバイス管理機能
 
@@ -39,7 +38,7 @@ Microsoft Intune では、サービスにデバイスを*登録*することに�
 
 ## <a name="device-security-and-configuration"></a>デバイスのセキュリティと構成
 
-|機能|説明|詳細情報|
+|機能|詳細情報|詳細情報|
 |--------------|-----------|--------------------|
 |構成ポリシー<br><br>カスタム ポリシー| 組織内のモバイル デバイスの多くの設定や機能を管理できます。 たとえば、パスワード必須、試行失敗の回数制限、画面をロックするまでの時間の制限、パスワードの有効期限の設定、以前に使用したパスワードの禁止を利用できます。 また、デバイス カメラや Web ブラウザーなど、ハードウェアとソフトウェアの機能の使用を制御することもできます。<br><br>カスタム ポリシーは、必要な設定が構成ポリシーに含まれていない場合に使用します。 iOS デバイスの場合は、Apple Configurator ツールからエクスポートした設定をインポートできます。 その他のデバイスの場合は、Open Mobile Alliance Uniform Resource Identifier (OMA-URI) 設定を使用して、デバイスの設定と機能を構成できます。|[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](device-compliance-get-started.md)|
 |リモート ワイプ、リモート ロック、パスコードのリセット|デバイスの紛失時または盗難時に、機密性の高いデータを消去します。 たとえば、遠隔操作でデバイスをロックしたり、工場出荷時の設定に戻したり、会社のデータのみをワイプしたりできます。<br><br>ユーザーがデバイスにアクセスできなくなった場合にパスコードをリセットしたり、紛失または盗難にあったデバイスをロックしたり、紛失または盗難にあったデバイスのデータをワイプしたりできます。|[リモート ロック](device-remote-lock.md)と[パスコードのリセット](device-passcode-reset.md)によってデバイスを保護する|
@@ -47,7 +46,7 @@ Microsoft Intune では、サービスにデバイスを*登録*することに�
 
 ## <a name="app-management"></a>アプリ管理
 
-|機能|説明|詳細情報|
+|機能|詳細情報|説明を見る|
 |--------------|-----------|--------------------|
 |アプリの展開と管理|インストール ファイルと App Store からのアプリの展開、アプリの状態の詳細な監視、アプリの削除など、モバイル アプリのライフ サイクルを通じて管理に役立つさまざまなツールを提供します。|[Microsoft Intune でアプリを展開する](apps-deploy.md)|
 |準拠アプリと非準拠アプリ|準拠アプリ (ユーザーによるインストールが許可されるアプリ) と非準拠アプリ (ユーザーによるインストールが許可されないアプリ) の一覧を指定できます。|[Microsoft Intune の iOS ポリシー設定](device-restrictions-ios.md)|
@@ -60,7 +59,7 @@ Microsoft Intune では、サービスにデバイスを*登録*することに�
 
 ## <a name="company-resource-access"></a>会社のリソースへのアクセス
 
-|機能|説明|詳細情報|
+|機能|詳細情報|説明を見る|
 |--------------|-----------|--------------------|
 |証明書プロファイル|信頼できる証明書プロファイルや、Wi-Fi プロファイル、VPN プロファイル、および電子メール プロファイルのセキュリティ保護と認証に使用できる Simple Certificate Enrollment Protocol (SCEP) 証明書を作成および展開します。|[Secure resource access with certificate profiles in Microsoft Intune](certificates-configure.md) (Microsoft Intune の証明書プロファイルでリソースへのアクセスを保護する)|
 |Wi-Fi プロファイル|ワイヤレス ネットワークの設定をユーザーに展開します。 これらの設定を展開して、企業ネットワークに接続するために必要なユーザーの作業を最小化します。|[Microsoft Intune での Wi-Fi 接続](wi-fi-settings-configure.md)|

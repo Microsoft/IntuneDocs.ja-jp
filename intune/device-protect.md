@@ -8,7 +8,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 07/19/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce2c5e51c7a902e7b132f78a216b9067690011b8
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 32acd9a388f069151313f5ce8f03f4fec96561b8
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511202"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66048262"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Microsoft Intune でデバイスを保護する
 
 Microsoft Intune を使用すると、管理するデバイスと、そのデバイスに格納されたデータを保護することができます。
 
 ## <a name="device-configuration"></a>デバイス構成
-Intune の[構成ポリシー](device-profiles.md)は、さまざまな設定や機能を制御してデバイスを保護したり構成したりするのに役立ちます。 次に例を示します。
+Intune の[構成ポリシー](device-profiles.md)は、さまざまな設定や機能を制御してデバイスを保護したり構成したりするのに役立ちます。 たとえば、次のように入力します。
 - カメラや Bluetooth などのデバイス上のハードウェア機能の使用を制限できます。
 - 準拠アプリと非準拠アプリを構成できます。 非準拠アプリがインストールされる場合、アラートが表示されます (一部のプラットフォームでは、インストールを実際にブロックできます)。
 

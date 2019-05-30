@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 03/25/2019
 ms.topic: quickstart
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cbfe19e4f7aea28c16cae50c9b79336be81c8fa
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 0a9cf1b610830928a753be176de2643fa1826bd0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511395"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050320"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>クイック スタート:ユーザーを管理するグループを作成する
 
@@ -34,7 +33,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 >[!NOTE]
 >Intune では、便利なように、最適化が組み込まれた **[すべてのユーザー]** グループと **[すべてのデバイス]** グループがコンソールで提供されています。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 
 - このクイック スタートを完了するには、[ユーザーを作成する](quickstart-create-user.md)必要があります。
 
@@ -46,7 +45,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
 このクイックスタート シリーズの後半で使用するグループを作成します。 グループを作成するには:
 
-1. **[Microsoft Intune]** ウィンドウを開いたら、**[グループ]** > **[新しいグループ]** の順に選択します。
+1. **[Microsoft Intune]** ウィンドウを開いたら、 **[グループ]**  >  **[新しいグループ]** の順に選択します。
 2. **[グループの種類]** ドロップダウン ボックスで **[セキュリティ]** を選択します。
 3. **[グループ名]** フィールドに新しいグループの名前を入力します (例: **Contoso Testers**)。
 4. グループの **[説明]** を追加します。
@@ -55,9 +54,9 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
     ![Microsoft Intune でのグループ作成のスクリーンショット](./media/quickstart-use-groups-01.png)
 
-7. **[選択]**、**[作成]** の順にクリックします。
+7. **[選択]** 、 **[作成]** の順にクリックします。
 
-グループが正常に作成されると、**[すべてのグループ]** の一覧にそのグループが表示されます。 
+グループが正常に作成されると、 **[すべてのグループ]** の一覧にそのグループが表示されます。 
 
 ## <a name="next-steps"></a>次の手順
 

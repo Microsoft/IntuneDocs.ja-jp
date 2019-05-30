@@ -8,7 +8,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 02/22/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5299ef8c0159592c9754f886fe1c3d90a6637599
-ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
+ms.openlocfilehash: 9cb081dd52999f203420e8a1f0b4f9c52a313f75
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65765373"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043286"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>デバイス ベースの条件付きアクセス ポリシーを作成する
 
@@ -95,7 +94,7 @@ Intune を利用して、モバイル デバイスのコンプライアンスを
 
 12. **[作成]** を選択します。
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>「
 [Intune を使用したアプリ ベースの条件付きアクセス](app-based-conditional-access-intune.md)
 
 [Intune の条件付きアクセスの設定のトラブルシューティング](https://support.microsoft.com/help/4456106)

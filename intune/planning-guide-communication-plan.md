@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 10/30/2017
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e3584d97bf9f1a223b15c986f398681a20520c1
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 57ec922d76ca08639139a7d130fb14c5e8bfa413
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513292"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046222"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>ロールアウト コミュニケーション計画の作成
 
@@ -86,6 +85,6 @@ Intune ロールアウトに関する情報を対象となる組織グループ�
 
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) してコミュニケーション計画を作成することができます。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 次のセクションは、[サポート計画](planning-guide-support-plan.md)を立てる場合のガイダンスです。

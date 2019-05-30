@@ -7,7 +7,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 05/18/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eede87fdca31e8e263d1dea78d766fec59f05f58
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 6082f4de6a881f211f2c7569fcd052ba1f37ad7b
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511304"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045923"
 ---
 # <a name="data-collection-in-intune"></a>Intune でのデータ収集
 
@@ -56,7 +55,7 @@ Intune によって収集される識別済みデータには、次のような�
     - ICCID
     - 電話番号
 - 次のアクティビティに関するデータを含む、監査ログ情報
-    - コンピューターの
+    - 管理
     - 作成
     - 更新 (編集)
     - 削除

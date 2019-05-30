@@ -7,7 +7,6 @@ ms.author: tanvira
 manager: smantri
 ms.date: 4/16/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,18 +16,18 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebefba3f912669166e5e077fe15b0b04f4a7b75f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 5c47a7413d98467fffc26dee098a64cfeac770e4
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490003"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043561"
 ---
 # <a name="work-with-existing-on-premises-proxy-servers"></a>既存のオンプレミス プロキシ サーバーと連携する
 
 この記事では、送信プロキシ サーバーと連携するように Active Directory 用の Intune コネクタを構成する方法について説明します。 ネットワーク環境に既存のプロキシがあるお客様を対象としています。
 
-コネクタのしくみの詳細については、「[Azure AD アプリケーション プロキシ コネクタを理解する](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-connectors)」を参照してください。
+コネクタのしくみの詳細については、「[Azure AD アプリケーション プロキシ コネクタを理解する](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-connectors)」を参照してください。
 
 ## <a name="bypass-outbound-proxies"></a>送信プロキシをバイパスする
 

@@ -7,7 +7,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 05/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31b5697d9673866d378cc526a3735138d6a120b3
-ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
+ms.openlocfilehash: 1fb3b02cd9d9b978f1de5e98634d647c4c81cde0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65992896"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041649"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM とアプリの保護に関してよく寄せられる質問
 
@@ -214,12 +213,12 @@ Intune アプリ保護ポリシーでは、デバイスを管理せずに iOS �
 さまざまな種類の設定を扱う場合、優先順位は、Intune App SDK のバージョン要件、アプリのバージョン要件、iOS オペレーティング システムのバージョン要件となります。 その後、同じ順序ですべての種類の設定の警告が確認されます。 ブロックが重要である場合は、Intune 製品チームのガイダンスのみに従って、Intune App SDK のバージョン要件を構成することをお勧めします。
 
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>「
 - [Intune の計画を実装する](planning-guide-onboarding.md)
 - [Intune のテストと検証](planning-guide-test-validation.md)
 - [Microsoft Intune での Android モバイル アプリ管理ポリシーの設定](app-protection-policy-settings-android.md)
 - [iOS モバイル アプリ管理ポリシーの設定](app-protection-policy-settings-ios.md)
 - [アプリ保護ポリシー - ポリシーの更新](app-protection-policy-delivery.md)
-- [アプリ保護ポリシーを確認する](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)
+- [アプリ保護ポリシーを確認する](app-protection-policy-delivery.md)
 - [デバイス登録なしで管理対象アプリ用アプリ構成ポリシーを追加する](app-configuration-policies-managed-app.md)
 - [Microsoft Intune のサポートを受ける方法](get-support.md)

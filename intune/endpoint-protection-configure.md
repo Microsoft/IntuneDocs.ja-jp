@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 5/17/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: c13c5d71d1ff631d7a3c84cd3f62037569757917
-ms.sourcegitcommit: bc5e4dff18f5f9b79077a888f8a58dcc490708c0
+ms.openlocfilehash: 184781a315dcaeaac9540294746a9c2cd85da917
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975774"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041900"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Intune でエンドポイント保護設定を追加する
 
@@ -46,7 +45,7 @@ Intune でデバイスの構成プロファイルを使用し、次などのデ�
    - **macOS**
    - **Windows 10 以降**
 6. **[プロファイルの種類]** ドロップダウン リストで、**[Endpoint Protection]** を選択します。 
-7. 選択したプラットフォームによって構成できる設定が異なります。 次を参照してください。
+7. 選択したプラットフォームによって構成できる設定が異なります。 以下を参照してください。
    - [macOS の設定](endpoint-protection-macos.md)
    - [Windows 10 の設定](endpoint-protection-windows-10.md)  
 

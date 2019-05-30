@@ -7,7 +7,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 03/22/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 895b358760775b1021e545b271acb7ced7fa7b1d
-ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
+ms.openlocfilehash: 7419a316018ed5c883f89a51090a852680cd9e38
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65942077"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040664"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Microsoft Intune でのロールベースのアクセス制御 (RBAC)
 
@@ -59,12 +58,12 @@ ms.locfileid: "65942077"
 | --- | :---: | :---: |
 | グローバル管理者 | 読み取り/書き込み | 読み取り/書き込み |
 | Intune サービス管理者 | 読み取り/書き込み | 読み取り/書き込み |
-| 条件付きアクセス管理者 | なし | なし |
+| 条件付きアクセス管理者 | None | None |
 | セキュリティ管理者 | 読み取り専用 | 読み取り専用 |
 | セキュリティ オペレーター | 読み取り専用 | 読み取り専用 |
 | セキュリティ閲覧者 | 読み取り専用 | 読み取り専用 |
-| コンプライアンス管理者 | なし | 読み取り専用 |
-| コンプライアンス データ管理者 | なし | 読み取り専用 |
+| コンプライアンス管理者 | None | 読み取り専用 |
+| コンプライアンス データ管理者 | None | 読み取り専用 |
 
 > [!TIP]
 > Intune には 3 つの Azure AD 拡張機能も表示されます。**ユーザー**、**グループ**、**条件付きアクセス**です。これらは、Azure AD RBAC を使用して制御されされます。 また、**ユーザーアカウント管理者**は AAD ユーザー/グループのアクティビティのみを実行します。Intune のすべてのアクティビティを実行する完全なアクセス許可はありません。 詳細については、[Azure AD での RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) に関するページを参照してください。
