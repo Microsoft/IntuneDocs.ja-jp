@@ -1,12 +1,12 @@
 ---
 title: Intune データ ウェアハウスの変更ログ
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: このトピックには、Microsoft Intune データ ウェアハウス API の変更の一覧が記載されています。
 keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/21/2019
+ms.date: 04/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7d69c602471e8508744f2a00008294cbd335204
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: 30f315f58a905e690a43ab3c44aee783bd0ef8c9
+ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358260"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59571809"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Intune データ ウェアハウス API の変更ログ
 
@@ -31,26 +31,166 @@ ms.locfileid: "58358260"
 
 常に Intune データ ウェアハウスの最新の更新プログラムをインストールしてください。
 
+## <a name="1903-part-2"></a>1903 (パート 2)
+_リリース日: 2019 年 4 月_
+
+### <a name="beta-changes"></a>ベータ版の変更
+
+次の表には、Intune データ ウェアハウス内で最近削除されたコレクションと置換のコレクションが一覧表示されています。
+
+|    コレクション                          |    変更     |    追加情報                                                                                                                                                                                                                                                                                                                                                                 |
+|----------------------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    mobileAppDeviceUserInstallStatus    |    削除済み    |    代わりに [mobileAppInstallStatusCounts](intune-data-warehouse-collections.md#mobileappinstallstatuscounts) を使用します。                                                                                                                                                                                                                                                                     |
+|    enrollmentTypes                     |    削除済み    |    代わりに [deviceEnrollmentTypes](intune-data-warehouse-collections.md#deviceenrollmenttypes) を使用します。                                                                                                                                                                                                                                                                                      |
+|    mdmStatuses                         |    削除済み    |    代わりに [complianceStates](intune-data-warehouse-collections.md#compliancestates) を使用します。                                                                                                                                                                                                                                                                                               |
+|    workPlaceJoinStateTypes             |    削除済み    |    代わりに [devices](intune-data-warehouse-collections.md#devices) と [devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories) コレクションの `azureAdRegistered` プロパティを使用します。                                                                                                                                                                                                             |
+|    clientRegistrationStateTypes        |    削除済み    |    代わりに [deviceRegistrationStates](intune-data-warehouse-collections.md#deviceregistrationstates) を使用します。                                                                                                                                                                                                                                                                             |
+|    currentUser                         |    削除済み    |    代わりに [users](intune-data-warehouse-collections.md#users) コレクションを使用します。                                                                                                                                                                                                                                                                                                      |
+|    mdmDeviceInventoryHistories         |    削除済み    |    多くのプロパティは冗長であったか、[devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories) または [devices](intune-data-warehouse-collections.md#devices) コレクションで見つけることができるようになりました。 これらの 2 つのプロパティと共に、まだ一覧にない任意の **mdmDeviceInventoryHistories** プロパティは、利用できなくなりました。 以下の詳細を参照してください。    |
+
+次の表では、以前に **mdmDeviceInventoryHistories** コレクションで見つかった古いプロパティと変更/置換を一覧表示しています。 **mdmDeviceInventoryHistories** にあったプロパティで、以下に一覧にないプロパティは削除されました。
+
+|    古いプロパティ                |    変更/置換                                                           |
+|--------------------------------|---------------------------------------------------------------------------------|
+|    cellularTechnology          |    devices コレクションの cellularTechnology                                     |
+|    deviceClientId              |    devices コレクションの deviceId                                               |
+|    deviceManufacturer          |    devices コレクションの manufacturer                                           |
+|    deviceModel                 |    devices コレクションの model                                                  |
+|    deviceName                  |    devices コレクションの deviceName                                             |
+|    deviceOsPlatform            |    devices コレクションの deviceTypeKey                                          |
+|    deviceOsVersion             |    devicePropertyHistories コレクションの osVersion                              |
+|    deviceType                  |    devices コレクションの deviceTypeKey、deviceTypes コレクションを参照    |
+|    encryptionState             |    devices コレクションの encryptionState プロパティ                           |
+|    exchangeActiveSyncId        |    devices コレクションの easDeviceId プロパティ                               |
+|    exchangeDeviceId            |    devices コレクションの easDeviceId                                            |
+|    imei                        |    devices コレクションの imei                                                   |
+|    isSupervised                |    devices コレクションの isSupervised プロパティ                              |
+|    jailBroken                  |    devicePropertyHistories コレクションの jailBroken                             |
+|    meid                        |    devices コレクションの meid プロパティ                                      |
+|    oem                         |    devices コレクションの manufacturer                                           |
+|    osName                      |    devices コレクションの deviceTypeKey、deviceTypes コレクションを参照    |
+|    phoneNumber                 |    devices コレクションの phoneNumber                                            |
+|    platformType                |    devices コレクションの model                                                  |
+|    product                     |    devices コレクションの deviceTypeKey                                          |
+|    productVersion              |    devicePropertyHistories コレクションの osVersion                              |
+|    serialNumber                |    devices コレクションの serialNumber                                           |
+|    storageFree                 |    devices コレクションの freeStorageSpaceInBytes プロパティ                   |
+|    storageTotal                |    devices コレクションの totalStorageSpaceInBytes プロパティ                |
+|    subscriberCarrierNetwork    |    devices コレクションの subscriberCarrier プロパティ                         |
+|    wifimac                     |    devices コレクションの wiFiMacAddress                                         |
+
+次の表には、[devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories) コレクションで見つかるプロパティへの変更が一覧表示されています。 
+
+|    古いプロパティ                  |    変更/置換                                               |
+|----------------------------------|---------------------------------------------------------------------|
+|    categoryId                    |    deviceCategoryKey、deviceCategories コレクションを参照       |
+|    certExpirationDate            |    削除済み                                                          |
+|    clientRegistrationStateKey    |    deviceRegistrationStateKey                                       |
+|    createdDate                   |    devices コレクションの enrolledDateTime                           |
+|    deviceTypeKey                 |    devices コレクションの deviceTypeKey                              |
+|    easID                         |    devices コレクションの easDeviceId                                |
+|    enrolledByUser                |    devices コレクションの userId                                     |
+|    enrollmentTypeKey             |    devices コレクションの deviceEnrollmentTypeKey                    |
+|    graphDeviceIsCompliant        |    削除済み                                                          |
+|    graphDeviceIsManaged          |    削除済み                                                          |
+|    lastContact                   |    devices コレクションの lastSyncDateTime                           |
+|    lastContactNotification       |    削除済み                                                          |
+|    lastContactWorkplaceJoin      |    削除済み                                                          |
+|    lastExchangeStatusUtc         |    削除済み                                                          |
+|    lastModifiedDateTimeUTC       |    削除済み                                                          |
+|    lastPolicyUpdateUtc           |    削除済み                                                          |
+|    managementAgentKey            |    managementStateKey                                               |
+|    manufacturer                  |    devices コレクションの manufacturer                               |
+|    mdmStatusKey                  |    complianceStateKey、complianceStates コレクションを参照    |
+|    対象となるのは、モデル                         |    devices コレクションの model                                      |
+|    osFamily                      |    devices コレクションの operatingSystem                            |
+|    osRevisionNumber              |    devices コレクションの osVersion                                  |
+|    processorArchitecture         |    削除済み                                                          |
+|    referenceId                   |    devices コレクションの azureAdDeviceId                            |
+|    serialNumber                  |    devices コレクションの serialNumber                               |
+|    workplaceJoinStateKey         |    azureAdRegistered                                                |
+
+次の表には、[devices](intune-data-warehouse-collections.md#devices) コレクションで見つかるプロパティへの変更が一覧表示されています。 
+
+|    古いプロパティ                  |    変更/置換                                               |
+|----------------------------------|---------------------------------------------------------------------|
+|    categoryId                    |    deviceCategoryKey、deviceCategories コレクションを参照       |
+|    certExpirationDate            |    削除済み                                                          |
+|    clientRegistrationStateKey    |    deviceRegistrationStateKey                                       |
+|    createdDate                   |    enrolledDateTime                                                 |
+|    easId                         |    easDeviceId                                                      |
+|    enrolledByUser                |    userId                                                           |
+|    enrollmentTypeKey             |    deviceEnrollmentTypeKey                                          |
+|    graphDeviceIsCompliant        |    削除済み                                                          |
+|    graphDeviceIsManaged          |    削除済み                                                          |
+|    lastContact                   |    lastSyncDateTime                                                 |
+|    lastContactNotification       |    削除済み                                                          |
+|    lastContactWorkplaceJoin      |    削除済み                                                          |
+|    lastExchangeStatusUtc         |    削除済み                                                          |
+|    lastPolicyUpdateUtc           |    削除済み                                                          |
+|    mdmStatusKey                  |    complianceStateKey、complianceStates コレクションを参照    |
+|    osFamily                      |    operatingSystem                                                  |
+|    processorArchitecture         |    削除済み                                                          |
+|    referenceId                   |    azureAdDeviceId                                                  |
+|    workplaceJoinStateKey         |    azureAdRegistered                                                |
+
+次の表には、[enrollmentActivities](intune-data-warehouse-collections.md#enrollmentactivities) コレクションで見つかるプロパティへの変更が一覧表示されています。 
+
+|    古いプロパティ         |    変更/置換         |
+|-------------------------|-------------------------------|
+|    enrollmentTypeKey    |    deviceEnrollmentTypeKey    |
+
+次の表には、[mamApplications](intune-data-warehouse-collections.md#mamapplications) コレクションで見つかるプロパティへの変更が一覧表示されています。 
+
+|    古いプロパティ       |    変更/置換    |
+|-----------------------|--------------------------|
+|    applicationKey     |    mamApplicationKey     |
+|    applicationName    |    mamApplicationName    |
+|    applicationId      |    mamApplicationId      |
+
+次の表には、[mamApplicationInstances](intune-data-warehouse-collections.md#mamapplicationinstances) コレクションで見つかるプロパティへの変更が一覧表示されています。 
+
+|    古いプロパティ     |    変更/置換    |
+|---------------------|--------------------------|
+|    applicationId    |    mamApplicationId      |
+|    deviceId         |    mamDeviceId           |
+|    deviceType       |    mamDeviceType         |
+|    deviceName       |    mamDeviceName         |
+
+次の表には、[mamCheckins](intune-data-warehouse-collections.md#mamcheckins) コレクションで見つかるプロパティへの変更が一覧表示されています。 
+
+|    古いプロパティ      |    変更/置換    |
+|----------------------|--------------------------|
+|    applicationKey    |    mamApplicationKey     |
+
+次の表には、[users](intune-data-warehouse-collections.md#users) コレクションで見つかるプロパティへの変更が一覧表示されています。 
+
+|    古いプロパティ             |    変更/置換    |
+|-----------------------------|--------------------------|
+|    startDateInclusiveUtc    |    削除済み               |
+|    endDateInclusiveUtc      |    削除済み               |
+|    isCurrent                |    削除済み               |
+
 ## <a name="1903"></a>1903
 "_リリース日: 2019 年 3 月_"
 
-### <a name="v10-changes-reflecting-back-to-beta"></a>ベータ版に反映 V1.0 の変更
-V1.0 は 1808 で初めて導入されました、ときに、API のベータ版からのいくつかの重要な点で異なっています。 1903 でそれらの変更は、ベータ版の API バージョンに反映されます。 ベータ版の API バージョンを使用する重要なレポートがあれば、それらのレポートを重大な変更を回避するために V1.0 に切り替えを強くお勧めします。 参照してください[API のバージョン情報](reports-api-url.md)詳細についてはデータ ウェアハウス API のバージョンと旧バージョンとの互換性。 
+### <a name="v10-changes-reflecting-back-to-beta"></a>ベータに反映された V1.0 の変更
+V1.0 が 1808 で初めて導入されたとき、ベータ API とはいくつかの重要な点で異なっていました。 1903 では、それらの変更がベータ API バージョンに反映されます。 ベータ API バージョンを使用する重要なレポートがある場合は、破壊的な変更を回避するためにそれらのレポートを V1.0 に切り替えることを強くお勧めします。 データ ウェアハウスの API バージョンと下位互換性の詳細については、[API のバージョン情報](reports-api-url.md)に関するページを参照してください。 
 
 ## <a name="1902"></a>1902 
 _リリース日: 2019 年 2 月_
 
-### <a name="power-bi-compliance-app"></a>Power BI のコンプライアンス対応のアプリ 
+### <a name="power-bi-compliance-app"></a>Power BI コンプライアンス アプリ 
 
-Power BI オンラインを使用して、Intune データ ウェアハウスへのアクセス、 [Intune コンプライアンス (データ ウェアハウス)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance)アプリ。 この Power BI アプリで今すぐアクセスし、すべての設定を行わなくても、web ブラウザーを離れることがなく、作成済みのレポートを共有できます。 
+[Intune コンプライアンス (データ ウェアハウス)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) アプリを使用して、Power BI Online 内の Intune データ ウェアハウスにアクセスします。 この Power BI アプリを使用すると、設定を行うことも、Web ブラウザーを離れることもなく、事前に作成されたレポートにアクセスし、共有することができます。 
 
 > [!NOTE]
-> Intune 対応アプリに適用できる 2 つの追加のフィルターがあります。
+> Intune コンプライアンス アプリに適用できる追加のフィルターが 2 つあります。
 
-#### <a name="add-additional-filters-to-the-intune-compliance-app"></a>Intune 対応アプリに追加のフィルターを追加します。
-1. 開く、 [Intune コンプライアンス (データ ウェアハウス)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) web ブラウザーでアプリ。
-2. をクリックして**非準拠デバイス**選択と**準拠していない**で、 **complianceStatus**フィルター。 
-3. をクリックして**不明なデバイス**選択と**はまだ利用できない**で、 **complianceStatus**フィルター。 
+#### <a name="add-additional-filters-to-the-intune-compliance-app"></a>Intune コンプライアンス アプリに追加のフィルターを追加する
+1. ご利用の Web ブラウザーで [Intune コンプライアンス (データ ウェアハウス)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) アプリを開きます。
+2. **[Non-Compliant Devices]\(非準拠デバイス\)** をクリックして、**complianceStatus** フィルターで **[非準拠]** を選択します。 
+3. **[Unknown Devices]\(不明なデバイス\)** をクリックして、**complianceStatus** フィルターで **[まだ使用できません]** を選択します。 
 
 ## <a name="1812"></a>1812 
 _2018 年 12 月リリース_

@@ -434,9 +434,9 @@ ms.locfileid: "59429226"
 
 | プロパティ | 説明 | 例 |
 |---------|------------|--------|
-| mamApplicationKey |MAM アプリケーションの一意の識別子。 | 432 |
-| mamApplicationName |MAM アプリケーションの名前。 |MAM アプリケーション名の例 |
-| mamApplicationId |MAM アプリのアプリケーション ID。 | 123 |
+| mamApplicationKey |MAM アプリケーションの一意識別子。 | 432 |
+| mamApplicationName |MAM アプリケーションの名前。 |MAM Application Example Name |
+| mamApplicationId |MAM アプリケーションのアプリケーション ID。 | 123 |
 | IsDeleted |この MAM アプリ レコードが更新されているかどうかを示します。 <br>True - MAM アプリには新しいレコードがあり、そのフィールドはこのテーブルで更新されています。 <br>False - この MAM アプリの最新のレコード。 |真/偽 |
 | StartDateInclusiveUTC |この MAM アプリがデータ ウェアハウスで作成されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
 | DeletedDateUTC |IsDeleted が True に変更されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
@@ -453,15 +453,15 @@ ms.locfileid: "59429226"
 |   ApplicationInstanceKey   |                                                               データ ウェアハウスにおける MAM アプリ インスタンスを示す一意識別子 - 代理キー。                                                                |                 123                  |
 |           UserId           |                                                                              この MAM アプリをインストールしたユーザーのユーザー ID。                                                                              | b66bc706-ffff-7437-0340-032819502773 |
 |   ApplicationInstanceId    |                                              MAM アプリ インスタンスを示す一意識別子 - ApplicationInstanceKey に似ていますが、識別子はナチュラル キーです。                                              | b66bc706-ffff-7437-0340-032819502773 |
-| mamApplicationId | この Mam アプリケーション インスタンスが作成された Mam アプリケーションのアプリケーション Id。   | 11/23/2016 12:00:00 AM   |
+| mamApplicationId | この MAM アプリケーション インスタンスが作成される MAM アプリケーションのアプリケーション ID。   | 11/23/2016 12:00:00 AM   |
 |     ApplicationVersion     |                                                                                     この MAM アプリのアプリケーション バージョン。                                                                                      |                  2                   |
 |        CreatedDate         |                                                                 MAM アプリ インスタンスのこのレコードが作成された日付 値は null を取ることができます。                                                                 |        11/23/2016 12:00:00 AM        |
 |          プラットフォーム          |                                                                          この MAM アプリがインストールされているデバイスのプラットフォーム。                                                                           |                  2                   |
 |      PlatformVersion       |                                                                      この MAM アプリがインストールされているデバイスのプラットフォーム バージョン。                                                                       |                 2.2                  |
 |         SdkVersion         |                                                                            この MAM アプリをラップした MAM SDK バージョン。                                                                            |                 3.2                  |
-| mamDeviceId | 使用する MAM アプリケーション インスタンスが関連付けられているデバイスのデバイス Id。   | 11/23/2016 12:00:00 AM   |
-| mamDeviceType | 使用する MAM アプリケーション インスタンスが関連付けられているデバイスのデバイスの種類。   | 11/23/2016 12:00:00 AM   |
-| mamDeviceName | 使用する MAM アプリケーション インスタンスが関連付けられているデバイスのデバイス名。   | 11/23/2016 12:00:00 AM   |
+| mamDeviceId | MAM アプリケーション インスタンスが関連付けられているデバイスのデバイス ID。   | 11/23/2016 12:00:00 AM   |
+| mamDeviceType | MAM アプリケーション インスタンスが関連付けられているデバイスのデバイスの種類。   | 11/23/2016 12:00:00 AM   |
+| mamDeviceName | MAM アプリケーション インスタンスが関連付けられているデバイスのデバイス名。   | 11/23/2016 12:00:00 AM   |
 |         IsDeleted          | この MAM アプリ インスタンス レコードが更新されているかどうかを示します。 <br>True - この MAM アプリ インスタンスには新しいレコードがあり、そのフィールドはこのテーブルで更新されています。 <br>False - この MAM アプリ インスタンスの最新のレコード。 |              真/偽              |
 |   StartDateInclusiveUtc    |                                                              この MAM アプリ インスタンスがデータ ウェアハウスで作成されたときの UTC 日時。                                                               |        11/23/2016 12:00:00 AM        |
 |       DeletedDateUtc       |                                                                             IsDeleted が True に変更されたときの UTC 日時。                                                                              |        11/23/2016 12:00:00 AM        |
@@ -479,7 +479,7 @@ ms.locfileid: "59429226"
 | DateKey |MAM アプリ チェックインがデータ ウェアハウスに記録されたときの日付キー。 | 20160703 |
 | ApplicationInstanceKey |この MAM アプリ チェックインに関連付けられているアプリ インスタンスのキー。 | 123 |
 | UserKey |この MAM アプリ チェックインに関連付けられているユーザーのキー。 | 4323 |
-| mamApplicationKey |アプリケーション キーの関連付けられているアプリケーションでの MAM アプリケーションのチェック。 | 432 |
+| mamApplicationKey |MAM アプリケーションのチェックインに関連付けられているアプリケーションのアプリケーション キー。 | 432 |
 | DeviceHealthKey |この MAM アプリ チェックインに関連付けられている DeviceHealth のキー。 | 321 |
 | PlatformKey |この MAM アプリ チェックインに関連付けられているデバイスのプラットフォームを表します。 |123 |
 | LastCheckInDate |この MAM アプリが最後にチェックインした日時 値は null を取ることができます。 |11/23/2016 12:00:00 AM |
@@ -527,7 +527,7 @@ ms.locfileid: "59429226"
 | 5                     | EasIntuneClient                   | デバイスは Exchange Active Sync と Intune PC エージェントの両方で管理されています |
 | 8                     | ConfigManagerClient               | デバイスは System Center Configuration Manager エージェントで管理されています     |
 | 10                    | ConfigurationManagerClientMdm     | デバイスは Configuration Manager と MDM で管理されています。                    |
-| 11                    | ConfigurationManagerCLientMdmEas  | デバイスは、Configuration Manager、MDM と Exchange Active Sync によって管理されます。               |
+| 11                    | ConfigurationManagerCLientMdmEas  | デバイスは Configuration Manager、MDM、Exchange Active Sync で管理されています。               |
 | 16                    | Unknown                           | 管理エージェントの種類は不明です                                              |
 | 32                    | Jamf                              | デバイスの属性は、Jamf からフェッチされます。                               |
 | 64                    | GoogleCloudDevicePolicyController |  デバイスは、Google の CloudDPC によって管理されています。                                 |
@@ -586,10 +586,10 @@ Microsoft Intune によるモバイル アプリケーション管理を使用�
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | 所有者の種類を示す一意識別子。                                                                                                                                               |                            |
 | ownerTypeKey  | データ ウェアハウスにおける所有者の種類を示す一意識別子 - 代理キー。                                                                                                       |                            |
-| ownerTypeName | デバイスの所有者の種類を表します: Corporate - 会社が所有するデバイスです。  Personal - 個人が所有するデバイスです (BYOD)。   Unknown - このデバイスの情報はありません。 | 企業個人、不明 |
+| ownerTypeName | デバイスの所有者の種類を表します: Corporate - 会社が所有するデバイスです。  Personal - 個人が所有するデバイスです (BYOD)。   Unknown - このデバイスの情報はありません。 | 会社、個人、不明 |
 
 > [!Note]  
-> `ownerTypeName`フィルターでは、azure Ad デバイスの動的なグループを作成するときに、値を設定する必要があります。`deviceOwnership`として`Company`します。 詳細については、次を参照してください。[デバイスのルール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)します。 
+> デバイスに対して動的グループを作成する場合の AzureAD の `ownerTypeName` フィルターでは、値 `deviceOwnership` を `Company` として設定する必要があります。 詳細については、「[デバイスのルール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)」を参照してください。 
 
 ## <a name="policies"></a>policies
 **Policy** エンティティには、デバイス構成プロファイル、アプリ構成プロファイル、およびコンプライアンス ポリシーが表示されます。 モバイル デバイス管理 (MDM) を含むポリシーを社内のグループに割り当てることができます。

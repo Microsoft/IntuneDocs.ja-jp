@@ -43,9 +43,9 @@ ms.locfileid: "59429201"
 
 | プロパティ | 説明 | 例 |
 |---------|------------|--------|
-| mamApplicationKey |MAM アプリケーションの一意の識別子。 | 432 |
-| mamApplicationName |MAM アプリケーションの名前。 |MAM アプリケーション名の例 |
-| mamApplicationId |MAM アプリのアプリケーション ID。 | 123 |
+| mamApplicationKey |MAM アプリケーションの一意識別子。 | 432 |
+| mamApplicationName |MAM アプリケーションの名前。 |MAM Application Example Name |
+| mamApplicationId |MAM アプリケーションのアプリケーション ID。 | 123 |
 | IsDeleted |この MAM アプリ レコードが更新されているかどうかを示します。 <br>True - MAM アプリには新しいレコードがあり、そのフィールドはこのテーブルで更新されています。 <br>False - この MAM アプリの最新のレコード。 |真/偽 |
 | StartDateInclusiveUTC |この MAM アプリがデータ ウェアハウスで作成されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
 | DeletedDateUTC |IsDeleted が True に変更されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
@@ -62,15 +62,15 @@ ms.locfileid: "59429201"
 |   ApplicationInstanceKey   |                                                               データ ウェアハウスにおける MAM アプリ インスタンスを示す一意識別子 - 代理キー。                                                                |                 123                  |
 |           UserId           |                                                                              この MAM アプリをインストールしたユーザーのユーザー ID。                                                                              | b66bc706-ffff-7437-0340-032819502773 |
 |   ApplicationInstanceId    |                                              MAM アプリ インスタンスを示す一意識別子 - ApplicationInstanceKey に似ていますが、識別子はナチュラル キーです。                                              | b66bc706-ffff-7437-0340-032819502773 |
-| mamApplicationId | この Mam アプリケーション インスタンスが作成された Mam アプリケーションのアプリケーション Id。   | 11/23/2016 12:00:00 AM   |
+| mamApplicationId | この MAM アプリケーション インスタンスが作成される MAM アプリケーションのアプリケーション ID。   | 11/23/2016 12:00:00 AM   |
 |     ApplicationVersion     |                                                                                     この MAM アプリのアプリケーション バージョン。                                                                                      |                  2                   |
 |        CreatedDate         |                                                                 MAM アプリ インスタンスのこのレコードが作成された日付 値は null を取ることができます。                                                                 |        11/23/2016 12:00:00 AM        |
 |          プラットフォーム          |                                                                          この MAM アプリがインストールされているデバイスのプラットフォーム。                                                                           |                  2                   |
 |      PlatformVersion       |                                                                      この MAM アプリがインストールされているデバイスのプラットフォーム バージョン。                                                                       |                 2.2                  |
 |         SdkVersion         |                                                                            この MAM アプリをラップした MAM SDK バージョン。                                                                            |                 3.2                  |
-| mamDeviceId | 使用する MAM アプリケーション インスタンスが関連付けられているデバイスのデバイス Id。   | 11/23/2016 12:00:00 AM   |
-| mamDeviceType | 使用する MAM アプリケーション インスタンスが関連付けられているデバイスのデバイスの種類。   | 11/23/2016 12:00:00 AM   |
-| mamDeviceName | 使用する MAM アプリケーション インスタンスが関連付けられているデバイスのデバイス名。   | 11/23/2016 12:00:00 AM   |
+| mamDeviceId | MAM アプリケーション インスタンスが関連付けられているデバイスのデバイス ID。   | 11/23/2016 12:00:00 AM   |
+| mamDeviceType | MAM アプリケーション インスタンスが関連付けられているデバイスのデバイスの種類。   | 11/23/2016 12:00:00 AM   |
+| mamDeviceName | MAM アプリケーション インスタンスが関連付けられているデバイスのデバイス名。   | 11/23/2016 12:00:00 AM   |
 |         IsDeleted          | この MAM アプリ インスタンス レコードが更新されているかどうかを示します。 <br>True - この MAM アプリ インスタンスには新しいレコードがあり、そのフィールドはこのテーブルで更新されています。 <br>False - この MAM アプリ インスタンスの最新のレコード。 |              真/偽              |
 |   StartDateInclusiveUtc    |                                                              この MAM アプリ インスタンスがデータ ウェアハウスで作成されたときの UTC 日時。                                                               |        11/23/2016 12:00:00 AM        |
 |       DeletedDateUtc       |                                                                             IsDeleted が True に変更されたときの UTC 日時。                                                                              |        11/23/2016 12:00:00 AM        |
@@ -89,7 +89,7 @@ ms.locfileid: "59429201"
 | DateKey |MAM アプリ チェックインがデータ ウェアハウスに記録されたときの日付キー。 | 20160703 |
 | ApplicationInstanceKey |この MAM アプリ チェックインに関連付けられているアプリ インスタンスのキー。 | 123 |
 | UserKey |この MAM アプリ チェックインに関連付けられているユーザーのキー。 | 4323 |
-| mamApplicationKey |アプリケーション キーの関連付けられているアプリケーションでの MAM アプリケーションのチェック。 | 432 |
+| mamApplicationKey |MAM アプリケーションのチェックインに関連付けられているアプリケーションのアプリケーション キー。 | 432 |
 | DeviceHealthKey |この MAM アプリ チェックインに関連付けられている DeviceHealth のキー。 | 321 |
 | PlatformKey |この MAM アプリ チェックインに関連付けられているデバイスのプラットフォームを表します。 |123 |
 | EffectiveAppliedPolicyKey |チェックインした MAM アプリに関連付けられているポリシーが適用されていることを表します。 特定のアプリとユーザーに関連するポリシーがすべて結合された結果、ポリシー適用は有効となります。 | 322 |

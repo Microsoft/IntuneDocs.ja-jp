@@ -1,7 +1,7 @@
 ---
-title: Microsoft Intune - Azure での組み込みアプリのバンドル Id の iOS |Microsoft Docs
+title: Microsoft Intune での組み込みアプリ用の iOS バンドル ID - Azure | Microsoft Docs
 titleSuffix: ''
-description: 組み込み iOS アプリのバンドル Id の一覧を参照してください。 デバイス構成プロファイルのアプリと Microsoft Intune でポリシーを明示的に許可するのにには、これらのバンドル Id を使用します。
+description: 組み込み iOS アプリ用のバンドル ID の一覧を参照してください。 Microsoft Intune で、これらのバンドル ID を使用してデバイス構成プロファイルおよびポリシー内でアプリを許可します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -18,14 +18,14 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 052a5f533ef577358b8c28262116c065b3c4748d
 ms.sourcegitcommit: d1b4f0d5487e35902e8bcd478ad02f93125cc31d
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/24/2019
 ms.locfileid: "64336706"
 ---
-# <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Intune で使用できる組み込み iOS アプリのバンドル Id
+# <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Intune で使用できる組み込み iOS アプリ用のバンドル ID
 
-IOS デバイスで機能を構成するときに、iOS デバイスで組み込みのアプリを追加することもできます。 この記事では、バンドルの一般的な組み込み iOS アプリの Id を一覧表示します。 他のアプリのバンドル ID を調べるには、ソフトウェア ベンダーにお問い合わせください。
+iOS デバイス上で機能を構成すると、iOS デバイス上に組み込みアプリを追加することもできます。 この記事では、一部の一般的な組み込み iOS アプリのバンドル ID を一覧します。 他のアプリのバンドル ID を調べるには、ソフトウェア ベンダーにお問い合わせください。
 
 ## <a name="bundle-ids"></a>バンドル ID
 
@@ -78,4 +78,4 @@ IOS デバイスで機能を構成するときに、iOS デバイスで組み込
 
 ## <a name="next-steps"></a>次の手順
 
-これらのバンドル Id を使用して構成する[デバイス機能](ios-device-features-settings.md)と[許可または制限の設定の一部](device-restrictions-ios.md)iOS デバイスでします。
+これらのバンドル ID を使用して[デバイス機能](ios-device-features-settings.md)を構成すると共に、iOS デバイス上で[一部の設定を許可または制限](device-restrictions-ios.md)します。

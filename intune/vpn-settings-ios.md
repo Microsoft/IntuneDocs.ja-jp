@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 04/25/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d914ea9bffe9485d2e37f8ede4d168f597f9e200
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: c40146f37ff6477663dc63468d1081a73ac2544a
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565938"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135150"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Microsoft Intune で iOS デバイスに対する VPN 設定を構成する
 
@@ -42,7 +42,7 @@ Microsoft Intune には、ご利用の iOS デバイスに展開できる VPN �
 - **Cisco (IPSec)**
 - **Citrix VPN**
 - **Citrix SSO**
-- **[Zscaler]**: Zscaler Private Access (ZPA) とご利用の Azure AD アカウントを統合することが必要になります。 詳しい手順については、[Zscaler ドキュメント](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO)をご覧ください。 
+- **Zscaler**: 条件付きアクセスを使用する、またはユーザーが Zscaler サインイン画面をバイパスできるようにするには、Zscaler Private Access (ZPA) をご使用の Azure AD アカウントと統合する必要があります。 詳しい手順については、[Zscaler ドキュメント](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO)をご覧ください。 
 - **Custom VPN**
 
 > [!NOTE]
@@ -70,19 +70,28 @@ Microsoft Intune には、ご利用の iOS デバイスに展開できる VPN �
 - **[VPN 識別子]** (カスタム VPN、Zscaler、Citrix): 使用している VPN アプリの識別子であり、VPN プロバイダーから提供されます。
   - **[Enter key/value pairs for your organization's custom VPN attributes]\(組織のカスタム VPN 属性に対してキーと値のペアを入力します\)**: VPN 接続をカスタマイズする**キー**と**値**を追加またはインポートします。 これらの値は、通常、ご利用の VPN プロバイダーから提供されることに注意してください。
 
-- **[ネットワーク アクセス制御 (NAC) を有効にする]** (Citrix SSO のみ): **[同意する]** を選択した場合、デバイス ID が VPN プロファイルに含められます。 VPN への認証用にこの ID を使用して、ネットワーク アクセスを許可または禁止することができます。
+- **[ネットワーク アクセス制御 (NAC) を有効にする]** (Citrix SSO、F5 Access): **[同意する]** を選択した場合、デバイス ID が VPN プロファイルに含められます。 VPN への認証用にこの ID を使用して、ネットワーク アクセスを許可または禁止することができます。
+
+  **F5 Access を使用するときは**、必ず次の操作を行ってください。
+
+  - F5 BIG-IP 13.1.1.5 を使用していることを確認します。 BIG-IP 14 はサポートされていません。
+  - BIG-IP と Intune for NAC を統合します。 F5 ガイド「[Overview: Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89)」 (概要: エンドポイント管理システムのデバイス状態チェック用に APM を構成する) を参照してください。
+  - VPN プロファイルで NAC を有効にします。
 
   **ゲートウェイと共に Citrix SSO を使用する場合**、必ず次の操作を行ってください。
 
   - Citrix ゲートウェイ 12.0.59 以上を使用していることを確認します。
   - ユーザーが各自のデバイスに Citrix SSO 1.1.6 以降をインストール済みであることを確認します。
-  - Citrix の配置に関するガイド「[Integrating Microsoft Intune/Enterprise Mobility Suite with NetScaler (LDAP+OTP Scenario)](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf)」(Microsoft Intune/Enterprise Mobility Suite と NetScaler との統合 (LDAP + OTP のシナリオ)) の説明に従って、NAC のために Citrix ゲートウェイを Inture と統合します。
+  - Citrix Gateway と Intune for NAC を統合します。 Citrix の配置に関するガイド「[Integrating Microsoft Intune/Enterprise Mobility Suite with NetScaler (LDAP+OTP Scenario)](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf)」(Microsoft Intune/Enterprise Mobility Suite と NetScaler との統合 (LDAP + OTP のシナリオ)) を参照してください。
   - VPN プロファイルで NAC を有効にします。
 
-  重要な詳細情報:  
+  **重要な詳細情報**:  
 
-  - NAC を有効にすると、VPN は 24 時間ごとに切断されます。
-  - デバイス ID はプロファイルの一部ですが、Intune 内でこれを確認することはできません。 この ID は Microsoft によっていずれの場所にも格納されず、Microsoft によって共有されていません。 VPN パートナーがこれをサポートしたら、Citrix SSO などの VPN クライアントによって ID が取得され、そのデバイスが登録されていることの確認、さらに VPN プロファイルが準拠しているか準拠していないかの確認のために Intune に対してクエリが実行されます。
+  - NAC を有効にすると、VPN は 24 時間ごとに切断されます。 VPN はすぐに再接続できます。
+  - デバイス ID はプロファイルの一部ですが、Intune 内には表示されません。 この ID は Microsoft によっていずれの場所にも格納されず、Microsoft によって共有されていません。
+
+  VPN パートナーがデバイス ID をサポートしたら、Citrix SSO などの VPN クライアントによって ID が取得されます。 その後、そのデバイスが登録されていることの確認、さらに VPN プロファイルが準拠しているか準拠していないかの確認のために Intune に対してクエリが実行されます。
+
   - この設定を削除するには、プロファイルを再作成し、**[同意する]** は選択しないでください。 次に、プロファイルを再割り当てします。
 
 ## <a name="automatic-vpn-settings"></a>自動 VPN 設定
@@ -92,7 +101,7 @@ Microsoft Intune には、ご利用の iOS デバイスに展開できる VPN �
   - Pulse Secure または Custom VPN を含む iOS の**アプリごとの VPN** プロファイルを使用するときに、アプリ層トンネリング (アプリプロキシ) またはパケット レベル トンネリング (パケットトンネル) を選択できます。 **[ProviderType]** 値には、アプリ層トンネリングの場合は **[app-proxy]** を設定し、パケット層トンネリングの場合は **[packet-tunnel]** を設定します。 使用すべき値がわからない場合、ご利用の VPN プロバイダーのドキュメントを参照してください。
   - **[この VPN をトリガーする Safari URL]**: 1 つまたは複数の Web サイト URL を追加します。 これらの URL にデバイスの Safari ブラウザーを使用してアクセスすると、VPN 接続が自動的に確立されます。
 
-- **[オンデマンド VPN]**- VPN 接続が開始されるタイミングを制御する条件付き規則を構成します。 たとえば、デバイスが会社の Wi-Fi ネットワークに接続されていない場合にのみ VPN 接続を使用するというような条件を作成します。 または、入力した DNS 検索ドメインにデバイスがアクセスできない場合には VPN 接続を開始しないといった条件を作成します。
+- **[オンデマンド VPN]**- VPN 接続が開始されるタイミングを制御する条件付き規則を構成します。 たとえば、デバイスが会社の Wi-Fi ネットワークに接続されていない場合にのみ VPN 接続を使用するというような条件を作成します。 または、条件を作成します。 たとえば、入力した DNS 検索ドメインにデバイスがアクセスできない場合には VPN 接続を開始しません。
 
   - **[SSID または DNS 検索ドメイン]**: この条件でワイヤレス ネットワークの **SSID** を使用するか、**DNS 検索ドメイン**を使用するかを選択します。 1 つ以上の SSID または検索ドメインを構成するには、**[追加]** を選択します。
   - **[URL string probe]\(URL 文字列プローブ\)**: 省略可能です。 ルールがテストとして使う URL を入力します。 このプロファイルを持つデバイスによって、この URL がリダイレクトなしにアクセスされた場合は、VPN 接続が開始されます。 さらに、デバイスがターゲット URL に接続されます。 ユーザーには、URL 文字列プローブ サイトは表示されません。 URL 文字列プローブの例としては、VPN への接続前にデバイスのポリシー準拠を確認する監査 Web サーバーのアドレスがあります。 別の例としては、デバイスを VPN 経由でターゲット URL に接続する前に、サイトに接続する VPN の機能をテストする URL があります。

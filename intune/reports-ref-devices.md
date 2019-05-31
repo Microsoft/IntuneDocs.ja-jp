@@ -167,10 +167,10 @@ ms.locfileid: "59429184"
 |---------|------------|--------|
 | ownerTypeID |所有者の種類を示す一意識別子。 | |
 | ownerTypeKey |データ ウェアハウスにおける所有者の種類を示す一意識別子 - 代理キー。 | |
-| ownerTypeName |デバイスの所有者の種類を表します。  <br>企業の所有する会社がデバイスです。 <br>[個人] - 個人が所有するデバイスです (BYOD)。  <br>[不明] - このデバイスの情報はありません。 |企業個人、不明 |
+| ownerTypeName |デバイスの所有者の種類を表します。  <br>[会社] - 会社が所有するデバイスです。 <br>[個人] - 個人が所有するデバイスです (BYOD)。  <br>[不明] - このデバイスの情報はありません。 |会社、個人、不明 |
 
 > [!Note]  
-> `ownerTypeName`で azure Ad デバイスの動的なグループを作成するときに、フィルター値を設定する必要があります。`deviceOwnership`として`Company`します。 詳細については、次を参照してください。[デバイスのルール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)します。 
+> デバイスに対して動的グループを作成する場合の AzureAD の `ownerTypeName` では、フィルター値 `deviceOwnership` を `Company` として設定する必要があります。 詳細については、「[デバイスのルール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices)」を参照してください。 
 
 ## <a name="managementstates"></a>ManagementStates
 

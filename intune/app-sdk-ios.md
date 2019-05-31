@@ -604,7 +604,7 @@ ID は、単にアカウントのユーザー名です (例: user@contoso.com)�
 
 常に、すべてのスレッドは UI タスクとファイル タスクのための有効な ID を持っています。 これは、適用する必要があるポリシー (ある場合) を確認するために使用される ID です。 ID が "ID なし" の場合、またはユーザーが管理されていない場合は、ポリシーは適用されません。 次の図は、有効な ID がどのように特定されるかを示しています。
 
-  ![Intune App SDK iOS: Id の決定のプロセス](./media/ios-thread-identities.png)
+  ![Intune App SDK iOS: ID 決定のプロセス](./media/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>スレッド キュー
 
