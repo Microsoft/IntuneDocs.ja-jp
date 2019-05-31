@@ -43,7 +43,7 @@ Intune データ ウェアハウスを使用して、社内のモバイル環境
   -  OData 標準を使用するデータ モデル
 
 > [!Note]
-> System Center Configuration Manager と Microsoft Intune で共同管理モバイル デバイス管理 (MDM) を使用している場合は、Configuration Manager からデータを取得する必要があります。 Intune データが含まれるのは Intune データ ウェアハウスのみです。 カスタム レポートには、Configuration Manager の Power BI のダッシュ ボードを使用できます。 詳細については、「[Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)」(System Center Configuration Manager 用 Power BI ソリューション テンプレートの発表) と [Dynamics 365 の Power BI コンテンツ](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)に関するページを参照してください。
+> System Center Configuration Manager と Microsoft Intune で共同管理モバイル デバイス管理 (MDM) を使用している場合は、Configuration Manager からデータを取得する必要があります。 Intune データが含まれるのは Intune データ ウェアハウスのみです。 カスタム レポートには Configuration Manager Power BI ダッシュボードを使用できます。 詳細については、「[Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)」(System Center Configuration Manager 用 Power BI ソリューション テンプレートの発表) と [Dynamics 365 の Power BI コンテンツ](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)に関するページを参照してください。
 
 > [!Important]  
 > クエリ パラメーター  `api-version=v1.0` を設定することにより、Intune データ ウェアハウスの v1.0 バージョンを使用できるようになりました。 Data Warehouse 内のコレクションに対する更新は本質的に追加であり、既存のシナリオが使用できなくなることはありません。<br><br>

@@ -1,27 +1,28 @@
 ---
-title: Exchange の条件付きアクセス ポリシーを作成する | Microsoft Intune
-titlesuffix: Microsoft Intune
+title: Exchange の条件付きアクセス ポリシーを作成する
+titleSuffix: Microsoft Intune
 description: Intune で Exchange On-Premises と従来の Exchange Online Dedicated の条件付きアクセスを構成します。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2018
-ms.topic: article
+ms.date: 04/15/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b4f35dba38dd1b69f770a3a10689ce87eaf3a27
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 003e6e5aa78440861e6aff5be138c4a302171c1b
+ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840401"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59571741"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange On-Premises と従来の Exchange Online Dedicated の条件付きアクセス ポリシーを作成する
 
@@ -79,52 +80,54 @@ Windows 8.1 以降用のネイティブ **メール** アプリケーション (
 
 1. [Azure Portal](https://portal.azure.com/) に移動し、Intune 資格情報でサインインします。
 
-1. 正常にサインインすると、**Azure ダッシュボード**が開きます。
+2. **[Intune]**  >  **[Exchange へのアクセス]** に移動して、 **[Exchange On-Premises のアクセス]** を選択します。 
 
-1. 左側のメニューから **[すべてのサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
+3. **[Exchange On-Premises のアクセス]** ウィンドウで **[はい]** を選択し、*Exchange On-Premises のアクセス制御を有効にします*。
 
-1. **[Intune]** を選ぶと、**Intune ダッシュボード**が表示されます。
+4. 左側のメニューから **[すべてのサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
 
-1. **[オンプレミス アクセス]** を選択します。 **[オンプレミス アクセス]** ウィンドウには、条件付きアクセス ポリシーの状態と、その影響を受けるデバイスが表示されます。
+5. **[Intune]** を選ぶと、**Intune ダッシュボード**が表示されます。
 
-1. **[管理]** で、**[Exchange On-Premises のアクセス]** を選択します。
+6. **[オンプレミス アクセス]** を選択します。 **[オンプレミス アクセス]** ウィンドウには、条件付きアクセス ポリシーの状態と、その影響を受けるデバイスが表示されます。
 
-1. **[Exchange On-premises のアクセス]** ウィンドウで **[はい]** を選択し、Exchange On-premises アクセス制御を有効にします。
+7. **[管理]** で、 **[Exchange On-Premises のアクセス]** を選択します。
+
+8. **[Exchange On-premises のアクセス]** ウィンドウで **[はい]** を選択し、Exchange On-premises アクセス制御を有効にします。
 
     > [!NOTE]
     > Exchange Active Sync オンプレミス コネクタを構成していない場合、このオプションは無効です。  Exchange オンプレミスの条件付きアクセスを有効にするには、コネクタを少なくとも 1 つインストールして構成しておく必要があります。 詳細については、[Intune On-premises Exchange Connector のインストール](exchange-connector-install.md)に関するページを参照してください
 
-1. **[割り当て]** で、**[組み込まれたグループ]** を選択します。  条件付きアクセスが適用されているセキュリティ ユーザー グループを使用します。 この操作では、ユーザーは自分のデバイスを Intune に登録し、コンプライアンス プロファイルに準拠する必要があります。
+9. **[割り当て]** で、 **[組み込まれたグループ]** を選択します。  条件付きアクセスが適用されているセキュリティ ユーザー グループを使用します。 この操作では、ユーザーは自分のデバイスを Intune に登録し、コンプライアンス プロファイルに準拠する必要があります。
 
-1. 特定のユーザー グループを除外するには、**[除外されたグループ]** を選択し、デバイスの登録とコンプライアンスから除外するユーザー グループを選択します。
+10. 特定のユーザー グループを除外するには、 **[除外されたグループ]** を選択し、デバイスの登録とコンプライアンスから除外するユーザー グループを選択します。
 
-1. **[設定]** で **[ユーザーへの通知]** を選択して、既定の電子メール メッセージを変更します。 このメッセージは、準拠していないデバイスでユーザーが Exchange On-premises にアクセスしようとしたときに送信されます。 メッセージ テンプレートでは、マークアップ言語が使用されます。  また、入力しながら、メッセージがどのように表示されるかをプレビュー表示できます。
+11. **[設定]** で **[ユーザーへの通知]** を選択して、既定の電子メール メッセージを変更します。 このメッセージは、準拠していないデバイスでユーザーが Exchange On-premises にアクセスしようとしたときに送信されます。 メッセージ テンプレートでは、マークアップ言語が使用されます。  また、入力しながら、メッセージがどのように表示されるかをプレビュー表示できます。
     > [!TIP]
     > マークアップ言語の詳細については、Wikipedia の[こちらの記事](https://en.wikipedia.org/wiki/Markup_language)を参照してください。
 
-1. 次の 2 つの手順に従って、**[Advanced Exchange Active Sync access settings] \(Exchange Active Sync アクセスの詳細設定\)** ウィンドウで、Intune で管理されていないデバイスからのアクセスに対して既定のグローバル ルールを設定するか、プラットフォームレベルのルールを設定します。
+12. 次の 2 つの手順に従って、 **[Advanced Exchange Active Sync access settings] \(Exchange Active Sync アクセスの詳細設定\)** ウィンドウで、Intune で管理されていないデバイスからのアクセスに対して既定のグローバル ルールを設定するか、プラットフォームレベルのルールを設定します。 詳細設定ウィンドウに移動するには、 *[Exchange へのアクセス] の [Exchange On-Premises のアクセス]* ビューで、 *[Exchange ActiveSync のオンプレミス コネクタ]* を選択します。
 
-1. 条件付きアクセスまたは他のルールの影響を受けないデバイスについては、デバイスによる Exchange へのアクセスを許可するかブロックするかを選択できます。
+13. 条件付きアクセスまたは他のルールの影響を受けないデバイスについては、デバイスによる Exchange へのアクセスを許可するかブロックするかを選択できます。
 
    - アクセスを許可するように設定した場合、すべてのデバイスから Exchange On-premises にすぐにアクセスできます。  **[組み込まれたグループ]** のユーザーのデバイスについては、そのデバイスが後でコンプライアンス ポリシーに非準拠と評価されたり、Intune に登録されていなかったりするとブロックされます。
    - アクセスをブロックするように設定した場合、最初はすべてのデバイスから Exchange On-premises にすぐにアクセスできません。  **[組み込まれたグループ]** のユーザーに属するデバイスについては、そのデバイスが Intune に登録され、準拠と評価された場合にアクセスが許可されます。 Samsung KNOX Standard が実行されていない Android デバイスは、この設定をサポートしていないため常にブロックされます。
 
-1. **[デバイス プラットフォームの例外]** で、**[追加]** を選択してプラットフォームを指定します。 **[管理対象外デバイス アクセス]** 設定が**ブロック済み**に設定されている場合は、ブロックに対してプラットフォーム例外があっても、登録済みの準拠デバイスは許可されます。 **[OK]** を選択して、設定を保存します。
+14. **[デバイス プラットフォームの例外]** で、 **[追加]** を選択してプラットフォームを指定します。 **[管理対象外デバイス アクセス]** 設定が**ブロック済み**に設定されている場合は、ブロックに対してプラットフォーム例外があっても、登録済みの準拠デバイスは許可されます。 **[OK]** を選択して、設定を保存します。
 
-1. **[On-premises]** ウィンドウで **[保存]** をクリックして、条件付きアクセス ポリシーを保存します。
+15. **[On-premises]** ウィンドウで **[保存]** をクリックして、条件付きアクセス ポリシーを保存します。
 
 ## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>Intune で Azure AD の条件付きアクセス ポリシーを作成する
 
-Intune 1704 リリース以降では、管理者は Intune Azure Portal から Azure AD の条件付きアクセス ポリシーを作成できるため、Azure と Intune のワークロードを切り替える必要はありません。
+条件付きアクセスは、Azure Active Directory (Azure AD) テクノロジです。 *Intune* からアクセスされる条件付きアクセス ノードは、*Azure AD* からアクセスされるノードと同じです。  
 
 > [!IMPORTANT]
 > Intune Azure Portal から Azure AD の条件付きアクセス ポリシーを作成するには、Azure AD Premium ライセンスが必要です。
 
-### <a name="to-create-azure-ad-conditional-access-policy"></a>Azure AD 条件付きアクセス ポリシーを作成するには
+### <a name="to-create-a-conditional-access-policy"></a>条件付きアクセス ポリシーを作成するには
 
-1. **Intune ダッシュボード**で、**[条件付きアクセス]** を選びます。
+1. **Intune ダッシュボード**で、 **[条件付きアクセス]** を選択します。
 
-2. **[ポリシー]** ウィンドウで、**[新しいポリシー]** を選択し、新しい Azure AD 条件付きアクセス ポリシーを作成します。
+2. **[ポリシー]** ウィンドウで、 **[新しいポリシー]** を選択し、新しい Azure AD 条件付きアクセス ポリシーを作成します。
 
 ## <a name="see-also"></a>関連項目
 

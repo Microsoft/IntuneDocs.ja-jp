@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/09/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 00a0bd4936d1ad8ba8dd52f1839e7d42505db60e
-ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
-ms.translationtype: HT
+ms.openlocfilehash: 8581d047e76ac1734b2d6c7816facf601e397957
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59429226"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041727"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune データ ウェアハウスのコレクション
 
@@ -361,8 +360,8 @@ ms.locfileid: "59429226"
 | Unknown                         | 不明なエラー。                                                                                                |
 | 認証                  | 認証に失敗しました。                                                                                        |
 | 承認                   | 呼び出しは認証されましたが、登録する権限がありません。                                                         |
-| AccountValidation               | 登録用のアカウントの検証に失敗しました  (アカウントはブロックされ、登録は有効になっていません)。                      |
-| UserValidation                  | ユーザーを検証できませんでした  (ユーザーが存在しておらず、ライセンスが欠落しています)。                                           |
+| AccountValidation               | 登録用のアカウントの検証に失敗しました (アカウントはブロックされ、登録は有効になっていません)。                      |
+| UserValidation                  | ユーザーを検証できませんでした (ユーザーが存在しておらず、ライセンスが欠落しています)。                                           |
 | DeviceNotSupported              | デバイスがモバイル デバイス管理でサポートされていません。                                                         |
 | InMaintenance                   | アカウントがメンテナンス中です。                                                                                    |
 | BadRequest                      | クライアントによって、サービスで認識/サポートされていない要求が送信されました。                                        |
@@ -697,7 +696,7 @@ Microsoft Intune によるモバイル アプリケーション管理を使用�
 | UserId                     | ユーザーを示す一意識別子 - UserKey と似ていますが、ナチュラル キーです。                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail                  | ユーザーの電子メール アドレス。                                                                                                                                                                                                     | John@constoso.com                    |
 | userPrincipalName                        | ユーザーのユーザー プリンシパル名。                                                                                                                                                                                               | John@constoso.com                    |
-| DisplayName                 | ユーザーの表示名。                                                                                                                                                                                                      | John                                 |
+| DisplayName                | ユーザーの表示名。                                                                                                                                                                                                      | John                                 |
 | IntuneLicensed             | ユーザーに Intune のライセンスがあるかどうかを示します。                                                                                                                                                                              | 真/偽                           |
 | IsDeleted                  | そのユーザーのすべてのライセンスの期限が切れているかどうか、および、そのユーザーがそのため Intune から削除されたかどうかを示します。 1 つのレコードでは、このフラグは変更されません。 代わりに、新しいユーザー状態用の新しいレコードが作成されます。 | 真/偽                           |
 | RowLastModifiedDateTimeUTC | レコードがデータ ウェアハウスで最後に変更されたときの UTC 日時                                                                                                                                                 | 11/23/2016 0:00                      |

@@ -34,7 +34,7 @@ Intune アプリ SDK は、iOS と Android で類似するシナリオをサポ�
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>アプリが組織内向けであり、一般に公開できない場合:
 
-アプリを登録する_**必要はありません**_。 内部[基幹業務 (LOB) アプリ](apps-add.md#app-types-in-microsoft-intune)を書き込まれたか、会社の IT 管理者がアプリを社内に展開します。 Intune は、アプリが SDK でビルドされたことを検出し、IT 管理者がアプリ保護ポリシーを適用できるようにします。 「[アプリ保護ポリシーに対して iOS または Android アプリを有効にする](#enable-your-ios-or-android-app-for-app-protection-policy)」セクションに進んでください。
+アプリを登録する_**必要はありません**_。 会社が作成したまたは会社向けに作成された社内向け[基幹業務 (LOB) アプリ](apps-add.md#app-types-in-microsoft-intune)の場合、IT 管理者が社内にアプリを展開します。 Intune は、アプリが SDK でビルドされたことを検出し、IT 管理者がアプリ保護ポリシーを適用できるようにします。 「[アプリ保護ポリシーに対して iOS または Android アプリを有効にする](#enable-your-ios-or-android-app-for-app-protection-policy)」セクションに進んでください。
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Apple App Store や Google Play などのパブリック アプリ ストアにアプリをリリースする場合:
 

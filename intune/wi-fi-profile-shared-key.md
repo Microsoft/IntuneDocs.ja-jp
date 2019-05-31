@@ -5,10 +5,11 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/28/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d71a70d12ad699dcc3af02610241473071645906
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 7bf859075e675ef0205b24e0575fca5ab74f312c
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234904"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "59566985"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>カスタム デバイス プロファイルを使用し、事前共有キーを使用した WiFi プロファイルを作成する - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -75,10 +76,12 @@ Android または Windows の Wi-Fi プロファイルの XML コードの例は
 
 > [!IMPORTANT]
 >
-> `<protected>false</protected>` は **false** に設定する必要があります。 **true** に設定すると、デバイスはパスワードが暗号化されているものと見なし、暗号化の解除を試みます。その結果、接続が失敗する場合があります。
+> - `<protected>false</protected>` は **false** に設定する必要があります。 **true** に設定すると、デバイスはパスワードが暗号化されているものと見なし、暗号化の解除を試みます。その結果、接続が失敗する場合があります。
 >
->  `<hex>53534944</hex>` は、`<name><SSID of wifi profile></name>` の 16 進値に設定する必要があります。
+> - `<hex>53534944</hex>` は、`<name><SSID of wifi profile></name>` の 16 進値に設定する必要があります。
 >  Windows 10 デバイスは、"*0x87D1FDE8 修復できませんでした*" という間違ったエラーを返す場合がありますが、デバイスには引き続きプロファイルが含まれます。
+>
+> - XML には `&` (アンパサンド) などの特殊文字があります。 特殊文字を使用すると、XML が期待どおりに動作しないことがあります。 
 
 ```
 <!--
@@ -112,9 +115,9 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
         <useOneX>false</useOneX>
       </authEncryption>
       <sharedKey>
-        <keyType>networkKey</keyType>
+        <keyType>passPhrase</keyType>
         <protected>false</protected>
-        <keyMaterial>MyPassword</keyMaterial>
+        <keyMaterial>password</keyMaterial>
       </sharedKey>
       <keyIndex>0</keyIndex>
     </security>

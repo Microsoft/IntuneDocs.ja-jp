@@ -91,18 +91,18 @@ SDK では、その[認証](https://azure.microsoft.com/documentation/articles/a
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>Android モバイル アプリで Intune のアプリ保護ポリシーを有効にする
 
 1. [Microsoft.Intune.MAM.Xamarin.Android NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android)を Xamarin.Android プロジェクトに追加します。
-    1. Xamarin.Forms アプリでは、追加、 [Microsoft.Intune.MAM.Remapper.Tasks NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks)も Xamarin.Android プロジェクトにします。 
-2. 必要な一般的な手順に従います[、Intune アプリ SDK を統合する](app-sdk-android.md)詳細については、このドキュメントを参照しながら Android モバイル アプリにします。
+    1. Xamarin.Forms アプリの場合は、[Microsoft.Intune.MAM.Remapper.Tasks NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks)も Xamarin.Android プロジェクトに追加します。 
+2. 詳細についてこのドキュメントを参照しながら、Android モバイル アプリへの [Intune App SDK の統合](app-sdk-android.md)に必要な一般的な手順に従います。
 
 ### <a name="xamarinandroid-integration"></a>Xamarin.Android の統合
 
-Intune アプリ SDK を統合するための完全な概要が記載されて、 [Android 開発者ガイド用の Microsoft Intune アプリ SDK](app-sdk-android.md)します。 番組ガイドを読んで、Xamarin アプリで Intune アプリ SDK を統合すると次のセクションでは、Java で開発されたネイティブの Android アプリで開発された Xamarin アプリの実装の違いを強調表示するためのものがC#します。 これらのセクションでは、補足として扱う必要があるし、ガイド全体を読み取るための代替として機能できません。
+Intune App SDK を統合するための完全な概要については、「[Microsoft Intune App SDK for Android developer guide](app-sdk-android.md)」 (Android 用 Microsoft Intune App SDK 開発者ガイド) を参照してください。 ガイドに目を通して、Intune App SDK をご利用の Xamarin アプリに統合するときに、Java で開発されたネイティブの Android アプリと、C# で開発された Xamarin アプリでは実装に違いがあり、以降のセクションは、それを明らかにすることを目的としています。 これらのセクションは、補足情報として扱うべきもので、ガイド全体に目を通すことの代わりとなるものではありません。
 
 #### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[名前が変更されたメソッド](app-sdk-android.md#renamed-methods)
 多くの場合、Android のクラスで使用できるメソッドが、MAM の置換クラスで最終版としてマークされています。 この場合、MAM 置換クラスによって、似た名前のメソッド (`MAM` というサフィックスが付いている) が提供され、これをオーバーライドする必要があります。 たとえば、`MAMActivity` から派生する場合は、`OnCreate()` をオーバーライドして `base.OnCreate()` を呼び出すのではなく、`Activity` で `OnMAMCreate()` をオーバーライドし、`base.OnMAMCreate()` を呼び出す必要があります。
 
 #### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[MAM アプリケーション](app-sdk-android.md#mamapplication)
-アプリを定義する必要があります、`Android.App.Application`クラスから継承する`MAMApplication`します。 必ずサブクラスを `[Application]` 属性で適切に修飾し、`(IntPtr, JniHandleOwnership)` コンストラクターをオーバーライドします。
+アプリで `MAMApplication` から継承する `Android.App.Application` クラスを定義する必要があります。 必ずサブクラスを `[Application]` 属性で適切に修飾し、`(IntPtr, JniHandleOwnership)` コンストラクターをオーバーライドします。
 ```csharp
     [Application]
     class TaskrApp : MAMApplication
@@ -111,7 +111,7 @@ Intune アプリ SDK を統合するための完全な概要が記載されて�
         : base(handle, transfer) { }
 ```
 > [!NOTE]
-> MAM の Xamarin バインドの問題には、アプリケーションがデバッグ モードで配置するときにクラッシュする可能性があります。 回避策として、`Debuggable=false`に属性を追加する必要があります、`Application`クラスおよび`android:debuggable="true"`フラグは、手動で設定されている場合、マニフェストから削除する必要があります。
+> MAM の Xamarin バインドの問題により、アプリケーションをデバッグ モードで展開したときにクラッシュする可能性があります。 回避策として、`Debuggable=false` 属性を `Application` クラスに追加して、`android:debuggable="true"` フラグをマニフェストから削除 (手動で設定されている場合) する必要があります。
 
 #### <a name="enable-features-that-require-app-participationapp-sdk-androidmdenable-features-that-require-app-participation"></a>[アプリによる処理を必要とする機能の有効化](app-sdk-android.md#enable-features-that-require-app-participation)
 例: PIN がアプリケーションに必要なかどうかを確認します。
@@ -149,12 +149,12 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 
 ### <a name="xamarinforms-integration"></a>Xamarin.Forms の統合
 
-`Xamarin.Forms`アプリケーションが用意されています、`Microsoft.Intune.MAM.Remapper`を挿入することで自動的に MAM に代わってクラス置換を実行するパッケージ`MAM`クラスの階層構造によく使用されるクラス`Xamarin.Forms`クラス。 
+`Xamarin.Forms` アプリケーションには、一般的に使用されている `Xamarin.Forms` クラスのクラス階層に `MAM` クラスを挿入することで、MAM クラスの置き換えを自動的に実行する `Microsoft.Intune.MAM.Remapper` パッケージが用意されています。 
 
 > [!NOTE]
-> Xamarin.Forms の統合は、また上述 Xamarin.Android 統合するためには。
+> Xamarin.Forms の統合は、前述した Xamarin.Android 統合に加えて行われます。
 
-プロジェクトに追加すると、Remapper MAM の同等の置換を実行する必要があります。 たとえば、`FormsAppCompatActivity`と`FormsApplicationActivity`に用意されているアプリケーションは使用を続行できます`OnCreate`と`OnResume`は同等の MAM に置き換えられます`OnMAMCreate`と`OnMAMResume`それぞれします。
+Remapper をプロジェクトに追加すると、MAM に相当する置換を実行する必要があります。 たとえば、`FormsAppCompatActivity` と `FormsApplicationActivity` は、`OnCreate` と `OnResume` へのオーバーライドが MAM に相当する `OnMAMCreate` と `OnMAMResume` にそれぞれ置き換えられた場合は、引き続き使用することができます。
 
 ```csharp
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
@@ -166,13 +166,13 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
             LoadApplication(new App());
         }
 ```
-置換が行われていない場合、置換を行うまで、次のコンパイル エラーを発生可能性があります。
-* [コンパイラ エラー CS0239](https://docs.microsoft.com/dotnet/csharp/misc/cs0239):  このエラーは次の形式でよく見られます: 「``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``」。
+置換が行われていない場合は、置換を行うまで次のコンパイル エラーが発生する可能性があります。
+* [コンパイラ エラー CS0239](https://docs.microsoft.com/dotnet/csharp/misc/cs0239): このエラーは次の形式でよく見られます: 「``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``」。
 これは Remapper によって Xamarin クラスの継承が変更されるために発生する可能性があり、特定の関数が `sealed` になり、代わりにオーバーライドするための新しい MAM バリアントが追加されます。
-* [コンパイラ エラー CS0507](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0507): このエラーは、このフォームでよく見られます``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``します。 Remapper によっていくつかの Xamarin クラスの継承が変更されるときに、特定のメンバー関数が `public` に変更されます。 これらの関数をオーバーライドする場合は、これらのアクセス修飾子をオーバーライドする設定を変更する必要があります。`public`もします。
+* [コンパイラ エラー CS0507](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0507): このエラーは次の形式でよく見られます。``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...`` Remapper によっていくつかの Xamarin クラスの継承が変更されるときに、特定のメンバー関数が `public` に変更されます。 これらの関数のいずれかをオーバーライドする場合は、これらのオーバーライドのアクセス修飾子も同じく `public` に変更する必要があります。
 
 > [!NOTE]
-> Remapper IntelliSense オート コンプリートに Visual Studio を使用する依存関係を再書き込みします。 そのため、再読み込みして、IntelliSense の変更が正しく認識するため、Remapper が追加されたときに、プロジェクトをリビルドする必要があります。
+> Remapper により、Visual Studio で IntelliSense のオートコンプリートに使用する依存関係が再度書き込まれます。 そのため、変更が正しく認識されるように IntelliSense に Remapper が追加されるときに、場合によっては、プロジェクトを再度読み込んでリビルドする必要があります。
 
 ## <a name="support"></a>Support
-組織が Intune の既存顧客の場合、Microsoft サポートの担当者と共にサポート チケットを開き、[Github の問題ページ](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues)で問題を作成してください。Microsoft ができるだけ早くサポートを提供します。 
+組織が Intune の既存顧客の場合、Microsoft サポートの担当者と共にサポート チケットを開き、[GitHub の問題ページ](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues)で問題を作成してください。Microsoft ができるだけ早くサポートを提供します。 

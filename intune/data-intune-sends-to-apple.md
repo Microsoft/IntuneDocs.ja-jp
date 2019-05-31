@@ -7,21 +7,23 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/26/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b204a956-18ec-11e8-accf-0ed5f89f718b
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ba9d4d779a0f609bf07e4d0d7d9aad83e5d415c5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f1fbf8f37b989112025bd6d54328dd61246913f7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181532"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57400213"
 ---
 # <a name="data-intune-sends-to-apple"></a>Intune から Apple に送られるデータ
 
@@ -59,10 +61,10 @@ Microsoft Intune が接続を確立する前に、各 Apple サービスの Appl
 | ASM/DEP | device_assigned_by | デバイスを割り当てた個人の電子メール アドレス。 |
 | ASM/DEP | os | デバイスのオペレーティング システム: iOS、OSX、または tvOS。 このキーは、X-Server-Protocol-Version 2 以降で有効です。 |
 | ASM/DEP | device_family | デバイスの Apple 製品ファミリ: iPad、iPhone、iPod、Mac、または AppleTV。 このキーは、X-Server-Protocol-Version 2 以降で有効です。 |
-| ASM/DEP | profile_name | 文字列です。 人が判読できるプロファイル名。 |
-| ASM/DEP | support_phone_number | 任意。 文字列です。 組織のサポートの電話番号。 |
-| ASM/DEP | support_email_address | 任意。 文字列です。 組織のサポートの電子メール アドレス。 このキーは、X-Server-Protocol-Version 2 以降で有効です。 |
-| ASM/DEP | department | 任意。 文字列です。 ユーザーが定義した部門または場所の名前。 |
+| ASM/DEP | profile_name | 文字列。 人が判読できるプロファイル名。 |
+| ASM/DEP | support_phone_number | 任意。 文字列。 組織のサポートの電話番号。 |
+| ASM/DEP | support_email_address | 任意。 文字列。 組織のサポートの電子メール アドレス。 このキーは、X-Server-Protocol-Version 2 以降で有効です。 |
+| ASM/DEP | department | 任意。 文字列。 ユーザーが定義した部門または場所の名前。 |
 | ASM/DEP | デバイス | デバイスのシリアル番号を含む文字列の配列 (空にすることができます)。 |
 | VPP | Intune UserId guid | Intune で生成された GUID |
 | VPP | 管理対象 AppleId UPN | Apple との VPP トークン接続を構成するときに管理者が指定した Apple ID。 |

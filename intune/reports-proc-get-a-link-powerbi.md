@@ -1,12 +1,12 @@
 ---
 title: Power BI でデータ ウェアハウスに接続する
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Power BI で使用するファイルをダウンロードし、Microsoft Intune テナントに合わせて動的に生成されるインタラクティブなレポートを読み込むことができます。
 keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/28/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b93bb9911fa93998e443a797d085a568280c278
-ms.sourcegitcommit: e23e78a563928ed2b2cbc588f2aa65678f7bb409
-ms.translationtype: MTE75
+ms.openlocfilehash: 259d700d04547a801b0ebc37242dacf536ad61d3
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58618503"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871380"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Power BI でデータ ウェアハウスに接続する
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Microsoft Power BI で使用するファイルをダウンロードし、Intune テナントに合わせて動的に生成されるインタラクティブなレポートを読み込むことができます。 データ ウェアハウス Power BI ファイル (pbix) には、テナントへの接続設定と、次のサンプル レポートとグラフが含まれています。  
+Power BI コンプライアンス アプリを使用すると、Intune テナントに関する対話型で動的に生成されたレポートを読み込むことができます。 さらに、OData リンクを使用して Power BI にテナント データを読み込むことができます。 Intune にはテナントへの接続設定機能があるので、以下に関連するサンプル レポートとグラフを表示することができます。  
 
   -  [デバイス]
   -  登録
@@ -47,31 +47,38 @@ Power BI ファイルをダウンロードする方法と、Power BI で OData �
 
 ## <a name="install-power-bi"></a>Power BI をインストールする
 
-最新バージョンの Power BI Desktop をインストールします。 Power BI Desktop は [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop) からダウンロードできます。
+最新バージョンの [Power BI Desktop](https://aka.ms/intune/datawarehouseapi/installpowerbi) をインストールします。 詳細については、「[Power BI Desktop](https://powerbi.microsoft.com/desktop)」を参照してください。
 
-## <a name="load-the-data-and-reports-using-the-power-bi-file-pbix"></a>Power BI ファイル (pbix) を使用してデータとレポートを読み込む
+## <a name="load-the-data-and-reports-using-the-power-bi-intune-compliance-data-warehouse-app"></a>Power BI の Intune Compliance Data Warehouse アプリを使用してデータとレポートを読み込む
 
-Power BI ファイル (pbix) には、テナントの接続情報と、データ ウェアハウス データ モデルに基づいて構築済みのレポートのセットが含まれています。 Power BI Desktop でファイルを開き、Azure AD にサインインします。 レポートでは Intune テナントからデータが読み込まれます。
+Power BI の [Intune Compliance Data Warehouse アプリ](https://aka.ms/intune/datawarehouseapi/getpowerbiapp)には、テナントの接続情報と、データ ウェアハウス データ モデルに基づいた構築済みのレポートのセットが含まれています。
 
-> [!Important]  
-> 各 Power BI ファイル (pbix) は、テナントの場所によって異なる場合があります。 複数の Intune テナントを管理している場合は、必ずそのテナントにログインした状態で Azure Portal からダウンロードしたファイルを使用します。  
+1.  インストール プロセスを開始するには、[[Intune Compliance Data Warehouse app]\(Intune Compliance Data Warehouse アプリ\)](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) に移動します。
+2.  信頼できるソースから Power BI アプリをインストールするように求められたら、 **[インストール]** をクリックします。
+3.  **[Intune Compliance Data Warehouse App]\(Intune Compliance Data Warehouse アプリ\)** タイルをクリックします。
+4.  **[データに接続]** ボタンをクリックします。 
+    **[Connect to Intune Compliance Data Warehouse App]\(Intune Compliance Data Warehouse アプリへの接続\)** ダイアログが表示されます。
+5.  **[サインイン]** ボタンをクリックします。
+6.  表示するレポートがあるテナントの Intune データ ウェアハウスにアクセスできるユーザー アカウントでサインインします。 
+7.  **[レポート]** タブをクリックしてから **[Compliance V1.0]** レポートをクリックします。
+8.  後でこれらのレポートに簡単に戻ることができるようにするには、 **[Compliance V1.0]** レポートの横にある星をクリックします。 これで、Power BI のお気に入りにレポートが追加されます。
 
-1.  Azure Portal にサインインし、**[監視 + 管理]** > **[Intune]** の順に選択します。 **Intune** のリソースを検索することもできます。  
-2.  開く、 **Intune データ ウェアハウスの設定**ブレード。
-3.  **[Power BI ファイルのダウンロード]** を選択します。 拡張子が pbix のファイルが、指定した場所にダウンロードされます。
-4.  Power BI でファイルを開きます。 *Intune データ ウェアハウス レポート*が読み込まれますが、テナント データの取得に少し時間がかかる可能性があります。
-5.  **[更新]** を選択してテナント データを読み込み、レポートを確認します。
-6.  Power BI が Azure Active Directory の資格情報で認証されていない場合は、資格情報の入力を求められます。 資格情報を選択するときに、認証方法として **[組織アカウント]** を選択します。
+また、Intune ポータルからアプリをインストールすることもできます。
+
+1.  Azure Portal にサインインし、 **[監視 + 管理]**  >  **[Intune]** の順に選択します。 Intune のリソースを検索することもできます。
+2.  **[Intune データ ウェアハウスの設定]** ブレードを開きます。
+3.  **[Get Power BI App]\(Power BI アプリの取得\)** を選択して、ブラウザーでテナント用に事前に作成された Power BI レポートにアクセスおよび共有します。
+4.  上記の手順 2 - 8 を実行します。
 
 ## <a name="load-the-data-in-power-bi-using-the-odata-link"></a>OData リンクを使用して Power BI でデータを読み込む
 
 Azure AD に対してクライアントが認証されていると、OData URL は、データ ウェアハウス API で、データ モデルをレポート クライアントに公開している RESTful エンドポイントに接続します。 Power BI Desktop を使用して接続して独自のレポートを作成するするには、次の手順を実行します。 OAUTH2.0 認証と OData v4.0 標準をサポートしているクライアントであれば、Power BI Desktop だけでなく、OData URL にお気に入りの分析ツールを使用できます。
 
-1.  Azure Portal にサインインし、**[監視 + 管理]** > **[Intune]** の順に選択します。 **Intune** のリソースを検索することもできます。  
-2.  開く、 **Intune データ ウェアハウスの設定**ブレード。
-3. たとえば、`https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta` などのレポート ブレードからカスタム フィード URL を取得します。
+1.  Azure Portal にサインインし、 **[監視 + 管理]**  >  **[Intune]** の順に選択します。 **Intune** のリソースを検索することもできます。  
+2.  **[Intune データ ウェアハウスの設定]** ブレードを開きます。
+3. たとえば、`https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0` などのレポート ブレードからカスタム フィード URL を取得します。
 4. **Power BI Desktop** を開きます。
-5. **[ホーム]** > **[データの取得]** を選択します。 **[OData フィード]** を選択します。
+5. **[ホーム]**  >  **[データの取得]** を選択します。 **[OData フィード]** を選択します。
 6. **[基本]** を選択します。
 7. [URL] ボックスに **[OData URL]** を入力するか貼り付けます。
 8. **[OK]** を選択します。
@@ -84,7 +91,7 @@ Azure AD に対してクライアントが認証されていると、OData URL �
 
 ## <a name="next-steps"></a>次の手順
 
-過去 1 週間に登録されたデバイス数/日など、環境について知りたい情報が見つかります。 Azure のブレードから取得した Intune データ ウェアハウス Power BI ファイル (pbix) を使用したレポートで、Intune テナントとクライアント数を分析できます。 また、Intune には、データを拡張または再利用することができる機能が多数あります。 Power BI と Intune データ ウェアハウス API を使用すると、次のようにさまざまな処理を実行できます。
+過去 1 週間に登録されたデバイス数/日など、環境について知りたい情報が見つかります。 Azure のブレードから取得した Intune データ ウェアハウス Power BI レポートを使用して、Intune テナントとクライアント数を分析できます。 また、Intune には、データを拡張または再利用することができる機能が多数あります。 Power BI と Intune Data Warehouse API には、以下のような追加の機能があります。
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
  -  テナント データを整理し、データを基に分析しやすくすることができます。 データの整理方法については、「[Data Warehouse Data Model](reports-ref-data-model.md)」(データ ウェアハウス データ モデル) を参照してください。

@@ -5,9 +5,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 04/25/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48228d0baea204fd94175750075c04771116a74d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: e9663691053d8ecd204ad899805153d0bfb25e6f
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513791"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041568"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>ネットワーク アクセス制御 (NAC) と Intune の統合
 
@@ -63,27 +62,39 @@ NAC は条件付きアクセスと連携して、アクセス制御の決定を�
 9. 接続が正常に確立されて、デバイスは会社のリソースにアクセスできるようになります。
 
 ## <a name="use-nac-for-vpn-on-your-ios-devices"></a>iOS デバイス上で VPN 用に NAC を使用する  
-VPN プロファイル内で NAC を有効にしなくても、Cisco Legacy AnyConnect、F5 Access Legacy、および Citrix VPN 用の NAC を使用できます。
 
-Citrix SSO 用の NAC もサポートされています。 iOS 向けに Citrix SSO 用の NAC を有効にするには:
-- Citrix ゲートウェイ 12.0.59 以上を使用します。  
-- ユーザーは Citrix SSO 1.1.6 以降をインストールしている必要があります。
-- Citrix の製品ドキュメントの説明に従って、[NAC のために NetScaler を Inture と統合します](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)。
-- 基本 VPN 設定の構成で、**[ネットワーク アクセス制御 (NAC) を有効にする]** の **[同意する]** チェック ボックスをオンにします。
+- NAC を VPN プロファイルで有効にしなくても、NAC は次の VPN で使用できます。
 
-iOS 用の Citrix SSO を使用する場合、セキュリティ上の理由により VPN 接続は 24 時間ごとに切断されます。 VPN はすぐに再接続できます。
+  - NAC for Cisco Legacy AnyConnect
+  - F5 Access Legacy
+  - Citrix VPN
 
+- NAC は、Citrix SSO および F5 Access でも使用できます。 Citrix SSO で NAC を有効にするには:
 
-**現在、iOS 上の次の VPN クライアントではネットワーク アクセス制御がサポートされていません。**
--   Cisco AnyConnect
--   F5 Access
+  - Citrix ゲートウェイ 12.0.59 以上を使用します。  
+  - ユーザーは Citrix SSO 1.1.6 以降をインストールしている必要があります。
+  - Citrix の製品ドキュメントの説明に従って、[NAC のために NetScaler を Inture と統合します](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)。
+  - VPN プロファイルで **[Base setting]** \(基本設定\) >  **[ネットワーク アクセス制御 (NAC) を有効にする]** を選択し、 **[同意する]** を選択します。
 
-これらの新しいクライアント用の NAC ソリューションをリリースするために、パートナーと協力して作業しています。 ソリューションの準備が整ったら、追加の詳細と共にこの記事を更新します。 
+  VPN 接続は、セキュリティ上の理由により 24 時間ごとに切断されます。 VPN はすぐに再接続できます。
 
+- F5 Access で NAC を有効にするには:
+
+  - F5 BIG-IP 13.1.1.5 を使用します。 BIG-IP 14 はサポートされていません。
+  - NAC 用に Intune に BIG-IP を統合します。 「[Overview:Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89)」 (エンドポイント管理システムを使用したデバイス ポスチャ チェック用の APM の構成) の F5 のガイドに手順があります。
+  - VPN プロファイルで **[Base setting]** \(基本設定\) >  **[ネットワーク アクセス制御 (NAC) を有効にする]** を選択し、 **[同意する]** を選択します。
+
+  VPN 接続は、セキュリティ上の理由により 24 時間ごとに切断されます。 VPN はすぐに再接続できます。
+
+- iOS 上の次の VPN クライアントでは、ネットワーク アクセス制御はサポートされていません。
+  - Cisco AnyConnect
+
+これらの新しいクライアント用の NAC ソリューションをリリースするために、パートナーと協力して作業しています。 この記事は、ソリューションの準備が整ったら、情報を追加して更新されます。
 
 ## <a name="next-steps"></a>次の手順
 
 - [Cisco ISE と Intune を統合する](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 - [Citrix NetScaler と Intune を統合する](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
+- [Intune に F5 BIG-IP Access Policy Manager を統合する](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-13-0-0/6.html)
 - [HP Aruba ClearPass と Intune を統合する](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=31271)
 - [Squadra の secRMM (security Removable Media Manager) と Intune を統合する](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)

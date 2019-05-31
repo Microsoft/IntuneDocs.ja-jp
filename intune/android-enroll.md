@@ -1,15 +1,16 @@
 ---
 title: Intune で Android デバイスを登録する
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune で Android デバイスを登録する方法について説明します。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/31/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 866db22b79f2ca9255f9eccdfdba28dc353836ed
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 363a7d0ef32aee0c21c6e5cecbd55cc3087f4613
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846759"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568675"
 ---
 # <a name="enroll-android-devices"></a>Android デバイスの登録
 
@@ -30,10 +31,10 @@ ms.locfileid: "55846759"
 
 Intune 管理者は、次の Android デバイスを管理できます。
 - Android デバイス (Samsung KNOX Standard デバイスを含む)
-- Android エンタープライズ デバイスには次のものが含まれます。
-    - **Android 仕事用プロファイルのデバイス**:会社のデータにアクセスする権限が与えられた個人用デバイス。 管理者は職場のアカウント、アプリ、データにアクセスできます。 デバイスに入っている個人のデータは仕事のデータから分離され、個人の設定やデータが管理者に操作されることはありません。 
-    - **Android 専用デバイス**:デジタル サイネージ、チケット印刷、在庫管理など、会社が所有する単回使用デバイス。 管理者はデバイスの使用を厳しく管理し、限られたアプリと Web リンクのみ許可します。 また、ユーザーがデバイスに他のアプリを追加したり、他の操作を行ったりできないようになっています。
-    - **Android フル マネージド デバイス**:仕事のためにのみ使用し、私事には使用しない会社所有の単一ユーザー デバイス。 管理者はデバイス全体を管理し、仕事用プロファイルで利用できないポリシー制御を強制できます。 
+- Android Enterprise デバイスには次のものが含まれます。
+    - **Android Enterprise 仕事用プロファイル デバイス**:会社のデータにアクセスする権限が与えられた個人用デバイス。 管理者は職場のアカウント、アプリ、データにアクセスできます。 デバイスに入っている個人のデータは仕事のデータから分離され、個人の設定やデータが管理者に操作されることはありません。 
+    - **Android Enterprise 専用デバイス**:デジタル サイネージ、チケット印刷、在庫管理など、会社が所有する単回使用デバイス。 管理者はデバイスの使用を厳しく管理し、限られたアプリと Web リンクのみ許可します。 また、ユーザーがデバイスに他のアプリを追加したり、他の操作を行ったりできないようになっています。
+    - **Android Enterprise のフル マネージド デバイス**:仕事のためにのみ使用し、私事には使用しない会社所有の単一ユーザー デバイス。 管理者はデバイス全体を管理し、仕事用プロファイルで利用できないポリシー制御を強制できます。 
 
 ## <a name="prerequisite"></a>前提条件
 
@@ -52,13 +53,13 @@ Intune では、既定で Android および Samsung Knox Standard デバイス�
 
 Android デバイスをブロックする場合や、個人所有の Android デバイスのみの登録をブロックする場合は、「[Set device type restrictions](enrollment-restrictions-set.md)」 (デバイスの種類の制限を設定する) を参照してください。
 
-## <a name="set-up-android-enterprise-enrollment"></a>Android Enterprise の登録の設定
+## <a name="set-up-android-enterprise-enrollment"></a>Android Enterprise の登録を設定する
 
-Android Enterprise は、仕事用のアプリとデータを含む仕事用プロファイルから個人用アプリとデータを分離する、Android デバイスの機能とサービスのセットです。 Android エンタープライズ デバイスには、仕事用プロファイルのデバイス、フル マネージド デバイス、専用デバイスがあります。 
+Android Enterprise には、最新のセキュリティで保護された機能をユーザーに提供する一連の登録オプションがあります。 Android Enterprise 登録オプションには、仕事用プロファイル、フル マネージド デバイス、専用デバイスがあります。
 
-- [Android の仕事用プロファイルの登録を設定する](android-work-profile-enroll.md)
-- [Android の専用デバイスの登録を設定する](android-kiosk-enroll.md)
-- [Android のフル マネージドの登録を設定する](android-fully-managed-enroll.md)
+- [Android Enterprise の仕事用プロファイルの登録を設定する](android-work-profile-enroll.md)
+- [Android Enterprise の専用デバイスの登録を設定する](android-kiosk-enroll.md)
+- [Android Enterprise のフル マネージドの登録を設定する](android-fully-managed-enroll.md)
 
 ## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>Samsung KNOX デバイス登録時のエンドユーザー エクスペリエンス
 
@@ -76,6 +77,6 @@ Samsung Knox デバイスを登録する場合、次のいくつかの考慮事�
 
 ## <a name="next-steps"></a>次の手順
 
-- [Android の仕事用プロファイルの登録を設定する](android-work-profile-enroll.md)
-- [Android の専用デバイスの登録を設定する](android-kiosk-enroll.md)
-- [Android のフル マネージドの登録を設定する](android-fully-managed-enroll.md)
+- [Android Enterprise の仕事用プロファイルの登録を設定する](android-work-profile-enroll.md)
+- [Android Enterprise の専用デバイスの登録を設定する](android-kiosk-enroll.md)
+- [Android Enterprise のフル マネージドの登録を設定する](android-fully-managed-enroll.md)

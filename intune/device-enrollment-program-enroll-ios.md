@@ -7,9 +7,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 05/04/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60364d01f4ba4ca83ff91226f7738ec095e9152e
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 19f0fbf401fee4bad660e946bb135544a29de310
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849252"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566507"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する
 
@@ -63,7 +64,7 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>手順 1. トークンを作成するために必要な Intune 公開キー証明書をダウンロードする
 
-1. [Azure portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]** > **[追加]** の順に選択します。
+1. [Azure portal の Intune](https://aka.ms/intuneportal) で、 **[デバイスの登録]**  >  **[Apple の登録]**  >  **[Enrollment Program トークン]**  >  **[追加]** の順に選択します。
 
     ![Enrollment Program トークンを取得します。](./media/device-enrollment-program-enroll-ios/image01.png)
 
@@ -77,12 +78,12 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 ### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>手順 2. キーを使用して Apple からトークンをダウンロードする
 
 1. **[Create a token for Apple's Device Enrollment Program]\(Apple Device Enrollment Program 用のトークンを作成します\)** を選択して Apple の Deployment Program ポータルを開き、会社の Apple ID でサインインします。 この Apple ID を使って、DEP トークンを更新できます。
-2.  Apple の [Deployment Programs ポータル](https://deploy.apple.com) で、**[Device Enrollment Program]** の **[開始]** を選択します。
+2.  Apple の [Deployment Programs ポータル](https://deploy.apple.com) で、 **[Device Enrollment Program]** の **[開始]** を選択します。
 
-3. **[Manage Servers\(サーバーの管理\)]** ページで、**[Add MDM Server\(MDM サーバーの追加\)]** を選びます。
-4. **MDM サーバー名**を入力し、**[Next]** (次へ) をクリックします。 サーバー名は、自分がモバイル デバイス管理 (MDM) サーバーを識別できるようにするための名前です。 Microsoft Intune サーバーの名前または URL ではありません。
+3. **[Manage Servers\(サーバーの管理\)]** ページで、 **[Add MDM Server\(MDM サーバーの追加\)]** を選びます。
+4. **MDM サーバー名**を入力し、 **[Next]** (次へ) をクリックします。 サーバー名は、自分がモバイル デバイス管理 (MDM) サーバーを識別できるようにするための名前です。 Microsoft Intune サーバーの名前または URL ではありません。
 
-5. **[Add &lt;ServerName&gt;\(<サーバー名> の追加\)]** ダイアログ ボックスが開き、**[Upload Your Public Key\(公開キーをアップロードする\)]** と表示されます。 **[Choose File]** (ファイルを選択) をクリックして .pem ファイルをアップロードし、**[Next]** (次へ) を選択します。
+5. **[Add &lt;ServerName&gt;\(<サーバー名> の追加\)]** ダイアログ ボックスが開き、 **[Upload Your Public Key\(公開キーをアップロードする\)]** と表示されます。 **[Choose File]** (ファイルを選択) をクリックして .pem ファイルをアップロードし、 **[Next]** (次へ) を選択します。
 
 6. **[Deployment Programs] (展開プログラム)** &gt; **[Device Enrollment Program]** &gt; **[Manage Devices] (デバイスの管理)** の順に移動します。
 7. **[Choose Devices By\(デバイスの選択方法\)]** で、デバイスを識別する方法を指定します。
@@ -92,9 +93,9 @@ DEP トークンを作成する場合は、Apple DEP ポータルを使用しま
 
    ![シリアル番号でデバイスを選択するように指定し、アクションの選択でサーバーへの割り当てを設定し、サーバー名を選択したスクリーンショット。](./media/enrollment-program-token-specify-serial.png)
 
-8. **[アクションの選択]** で **[Assign to Server]\(サーバーに割り当てる\)** を選択し、Microsoft Intune に指定した **ServerName** を選択して、&lt;[OK]&gt; を選択します。 指定したデバイスが管理用に Intune サーバーに割り当てられて、**[Assignment Complete\(割り当て完了\)]** と表示されます。
+8. **[アクションの選択]** で **[Assign to Server]\(サーバーに割り当てる\)** を選択し、Microsoft Intune に指定した **ServerName** を選択して、&lt;[OK]&gt; を選択します。 指定したデバイスが管理用に Intune サーバーに割り当てられて、 **[Assignment Complete\(割り当て完了\)]** と表示されます。
 
-   Apple ポータルで、**[Deployment Programs\(配備プログラム\)]** &gt; **[Device Enrollment Program\(Device Enrollment Program\)]** &gt; **[View Assignment History\(割り当て履歴の表示\)]** の順に移動して、デバイスとその MDM サーバーの割り当てのリストを表示します。
+   Apple ポータルで、 **[Deployment Programs\(配備プログラム\)]** &gt; **[Device Enrollment Program\(Device Enrollment Program\)]** &gt; **[View Assignment History\(割り当て履歴の表示\)]** の順に移動して、デバイスとその MDM サーバーの割り当てのリストを表示します。
 
 ### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>手順 3. このトークンの作成に使用した Apple ID を保存する
 
@@ -102,8 +103,13 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
 
 ![Enrollment Program トークンの作成に使った Apple ID の指定と、Enrollment Program トークンの参照のスクリーンショット。](./media/device-enrollment-program-enroll-ios/image03.png)
 
-### <a name="step-4-upload-your-token"></a>手順 4. トークンをアップロードする
-**[Apple トークン]** ボックスで、証明書 (.pem) ファイルを参照し、**[開く]** を選択して、**[作成]** を選択します。 このプッシュ証明書を使用して、Intune はモバイル デバイスを登録し、登録したモバイル デバイスにポリシーを適用して iOS デバイスを管理できます。 Intune は、Apple と自動的に同期して、Enrollment Program アカウントを表示します。
+### <a name="step-4-upload-your-token-and-choose-scope-tags"></a>手順 4. トークンをアップロードして、スコープのタグを選択します。
+
+1. **[Apple トークン]** ボックスで、証明書 (.pem) ファイルを参照し、 **[開く]** を選択します。
+2. この DEP トークンに[スコープのタグ](scope-tags.md)を適用する場合は、 **[スコープ (タグ)]** を選択して、必要なスコープのタグを選択します。 トークンに適用されるスコープのタグは、このトークンに追加されたプロファイルとデバイスによって継承されます。
+3. **[作成]** を選択します。
+
+このプッシュ証明書を使用して、Intune はモバイル デバイスを登録し、登録したモバイル デバイスにポリシーを適用して iOS デバイスを管理できます。 Intune は、Apple と自動的に同期して、Enrollment Program アカウントを表示します。
 
 ## <a name="create-an-apple-enrollment-profile"></a>Apple 登録プロファイルの作成
 
@@ -113,8 +119,8 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
 > VPP トークンに十分な Intune ポータル サイト ライセンスがない場合、またはトークンの有効期限が切れている場合は、デバイスがブロックされます。 トークンの有効期限が近づいている場合、またはライセンスが不足している場合は、Intune でアラートが表示されます。
  
 
-1. Azure Portal の Intune で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]** の順に選択します。
-2. トークンを選択し、**[プロファイル]** を選択し、**[プロファイルの作成]** を選択します。
+1. Azure Portal の Intune で、 **[デバイスの登録]**  >  **[Apple の登録]**  >  **[Enrollment Program トークン]** の順に選択します。
+2. トークンを選択し、 **[プロファイル]** を選択し、 **[プロファイルの作成]** を選択します。
 
     ![プロファイルの作成のスクリーンショット。](./media/device-enrollment-program-enroll-ios/image04.png)
 
@@ -123,7 +129,7 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
     ![プロファイル名と説明。](./media/device-enrollment-program-enroll-ios/image05.png)
 
 4. **[ユーザー アフィニティ]** で、このプロファイルに対応するデバイスを割り当て済みユーザーとともに登録する必要があるかどうかを選択します。
-    - **[ユーザー アフィニティとともに登録する]** - このオプションは、ユーザーに属しているデバイスであって、かつアプリのインストールなどのサービスにポータル サイトを使用する必要があるデバイスの場合に選択します。 ADFS と登録プロファイルの使用によって、**[Apple セットアップ アシスタントの代わりにポータル サイトで認証します]** が **[いいえ]** に設定されている場合、[WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/library/adfs2-help-endpoints) ([詳細情報](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)) が必要です。
+    - **[ユーザー アフィニティとともに登録する]** - このオプションは、ユーザーに属しているデバイスであって、かつアプリのインストールなどのサービスにポータル サイトを使用する必要があるデバイスの場合に選択します。 ADFS と登録プロファイルの使用によって、 **[Apple セットアップ アシスタントの代わりにポータル サイトで認証します]** が **[いいえ]** に設定されている場合、[WS-Trust 1.3 Username/Mixed エンドポイント](https://technet.microsoft.com/library/adfs2-help-endpoints) ([詳細情報](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)) が必要です。
 
     - **[ユーザー アフィニティなしで登録する]** - このオプションは、1 人のユーザーに関連付けられていないデバイスの場合に選択します。 このオプションは、ローカルのユーザー データにアクセスせずにタスクを実行するデバイスで使用します。 ポータル サイト アプリなどのアプリは動作しません。
 
@@ -132,19 +138,21 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
     ![ポータル サイトで認証します。](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
 
     > [!NOTE]
-    > 次のいずれかを実行する場合は、**[Apple セットアップ アシスタントの代わりにポータル サイトで認証します]** を **[はい]** に設定します。
+    > 次のいずれかを実行する場合は、 **[Apple セットアップ アシスタントの代わりにポータル サイトで認証します]** を **[はい]** に設定します。
     >    - 多要素認証の使用
     >    - 最初のサインイン時にパスワードの変更が必要なユーザーにプロンプトを表示する
     >    - 登録の間に有効期限が切れたパスワードのリセットをユーザーに求める
     >
     > Apple セットアップ アシスタントで認証を行っているときは、これらはサポートされません。
 
-6. **[Apple セットアップ アシスタントの代わりにポータル サイトで認証します]** で **[はい]** を選択した場合、ユーザーが Apple ID を指定しなくても、Volume Purchase Program (VPP) トークンを使用して自動的に Intune ポータル サイトをデバイスにインストールできます。 VPP トークンを使用して Intune ポータル サイトをインストールするには、**[VPP によるポータル サイトのインストール]** でトークンを選択します。 トークンの期限が切れていないことと、ポータル サイト アプリの十分なデバイス ライセンスがあることを確認してください。 トークンの期限が切れているか、ライセンスが不足している場合、Intune は代わりに App Store ポータル サイトをインストールし、Apple ID の入力を求めます。
+6. **[Apple セットアップ アシスタントの代わりにポータル サイトで認証します]** で **[はい]** を選択した場合、ユーザーが Apple ID を指定しなくても、Volume Purchase Program (VPP) トークンを使用して自動的に Intune ポータル サイトをデバイスにインストールできます。 VPP トークンを使用して Intune ポータル サイトをインストールするには、 **[VPP によるポータル サイトのインストール]** でトークンを選択します。 トークンの期限が切れていないことと、ポータル サイト アプリの十分なデバイス ライセンスがあることを確認してください。 トークンの期限が切れているか、ライセンスが不足している場合、Intune は代わりに App Store ポータル サイトをインストールし、Apple ID の入力を求めます。
 
     ![[VPP によるポータル サイトのインストール] のスクリーンショット。](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
 
 7. **[VPP によるポータル サイトのインストール]** にトークンを選択した場合、セットアップ アシスタントの完了直後、シングル アプリ モードでデバイスをロックできます (具体的には、ポータル サイト アプリ)。 **[Run Company Portal in Single App Mode until authentication]\(認証されるまでシングル アプリ モードでポータル サイトを実行する\)** に **[はい]** を選択すると、このオプションが設定されます。 デバイスを使用するには、ポータル サイトを使用したサインインで最初に認証する必要があります。
     この機能は iOS 11.3.1 以降のみでサポートされます。
+
+   ![単一アプリ モードのスクリーンショット。](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
 
 8. **[デバイス管理の設定]** を選択し、このプロファイルを使用するデバイスを監視するかどうかを選択します。
 
@@ -155,14 +163,14 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
     デバイスが監視対象であることは次の 2 つの方法でユーザーに通知されます。
 
    - ロック画面には次のように表示されます。"This iPhone is managed by Contoso." (この iPhone は Contoso によって管理されています。)
-   - **[設定]** > **[全般]** > **[情報]** 画面には、次のように表示されます。"This iPhone is supervised. (この iPhone は監視されています。) Contoso はインターネット トラフィックを監視し、このデバイスの位置を特定できます。" と、
+   - **[設定]**  >  **[全般]**  >  **[情報]** 画面には、次のように表示されます。"This iPhone is supervised. (この iPhone は監視されています。) Contoso はインターネット トラフィックを監視し、このデバイスの位置を特定できます。" と、
 
      > [!NOTE]
      > 監視なしで登録されているデバイスは、Apple Configurator でのみ監視対象にリセットすることができます。 この方法でデバイスをリセットするには、USB ケーブルを使用して iOS デバイスを Mac に接続する必要があります。 詳細については、[Apple Configurator ドキュメント](http://help.apple.com/configurator/mac/2.3)を参照してください。
 
-9. このプロファイルを使用するデバイスの登録をロックする必要があるかどうかを選択します。 **[ロックされた登録]** を選択すると、**[設定]** メニューから管理プロファイルを削除する操作を許可する iOS 設定が無効になります。 デバイスの登録後は、デバイスをワイプしないと、この設定を変更することができません。 そのようなデバイスについては、**[監視下]** 管理モードを *[はい]* に設定する必要があります。 
+9. このプロファイルを使用するデバイスの登録をロックする必要があるかどうかを選択します。 **[ロックされた登録]** を選択すると、 **[設定]** メニューから管理プロファイルを削除する操作を許可する iOS 設定が無効になります。 デバイスの登録後は、デバイスをワイプしないと、この設定を変更することができません。 そのようなデバイスについては、 **[監視下]** 管理モードを *[はい]* に設定する必要があります。 
 
-10. このプロファイルを使用したデバイスを**コンピューターと同期**できるようにするかどうかを選択します。 **[証明書による Apple Configurator の許可]** を選択した場合は、**[Apple Configurator の証明書]** で証明書を選択する必要があります。
+10. このプロファイルを使用したデバイスを**コンピューターと同期**できるようにするかどうかを選択します。 **[証明書による Apple Configurator の許可]** を選択した場合は、 **[Apple Configurator の証明書]** で証明書を選択する必要があります。
 
 11. 前の手順で **[証明書による Apple Configurator の許可]** を選択した場合は、インポートする Apple Configurator の証明書を選択します。
 
@@ -205,16 +213,16 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
 
 14. **[OK]** を選びます。
 
-15. プロファイルを保存するには、**[作成]** を選択します。
+15. プロファイルを保存するには、 **[作成]** を選択します。
 
 ## <a name="sync-managed-devices"></a>マネージド デバイスを同期する
 デバイスを管理するアクセス許可を Intune に割り当てたので、Intune と Apple を同期して、マネージド デバイスを Azure ポータルの Intune に表示できます。
 
-1. Azure ポータルの Intune で、**[デバイスの登録]**>**[Apple の登録]**>**[Enrollment Program トークン]** の順に選択し、リスト内でトークンを選択し、**[デバイス]**>**[同期]** の順に選択します。![[Enrollment Program デバイス] ノードと [同期] リンクが選ばれているスクリーンショット。](./media/device-enrollment-program-enroll-ios/image06.png)
+1. Azure ポータルの Intune で、 **[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]** の順に選択し、リスト内でトークンを選択し、 **[デバイス]** > **[同期]** の順に選択します。![[Enrollment Program デバイス] ノードと [同期] リンクが選ばれているスクリーンショット。](./media/device-enrollment-program-enroll-ios/image06.png)
 
    許容される Enrollment Program トラフィックについての Apple の規約に準拠するため、Intune では次の制限が課せられます。
    - 完全な同期は 7 日に 1 回だけ実行できます。 完全な同期中に、Intune に接続された Apple MDM サーバーに割り当てられているシリアル番号の完全な最新の一覧を Intune がフェッチします。 DEP ポータルで Apple MDM サーバーからの割り当てを解除せずに Intune ポータルから Enrollment Program デバイスが削除されると、完全同期が実行されるまで Intune に再インポートされません。   
-   - 同期は 24 時間ごとに自動的に実行されます。 **[同期]** ボタンをクリックして同期することもできます (15 分以内に 2 回以上は同期できません)。 すべての同期要求は、完了までに 15 分与えられます。 同期が完了するまで、**[同期]** ボタンは無効になっています。 この同期により、既存のデバイスの状態が更新され、Apple MDM サーバーに割り当てられている新しいデバイスがインポートされます。   
+   - 同期は 24 時間ごとに自動的に実行されます。 **[同期]** ボタンをクリックして同期することもできます (15 分以内に 2 回以上は同期できません)。 すべての同期要求は、完了までに 15 分与えられます。 同期が完了するまで、 **[同期]** ボタンは無効になっています。 この同期により、既存のデバイスの状態が更新され、Apple MDM サーバーに割り当てられている新しいデバイスがインポートされます。   
 
 
 ## <a name="assign-an-enrollment-profile-to-devices"></a>登録プロファイルをデバイスに割り当てる
@@ -223,16 +231,16 @@ Azure ポータルの Intune で、後で参照するための Apple ID を指�
 >[!NOTE]
 >**[Apple Serial Numbers\(Apple シリアル番号\)]** ブレードでプロファイルにシリアル番号を割り当てることもできます。
 
-1. Intune で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]** の順に選択し、リスト内でトークンを選択します。
-2. **[デバイス]** を選択し、リスト内でデバイスを選択し、**[プロファイルの割り当て]** を選択します。
-3. **[プロファイルの割り当て]** の下でデバイス用のプロファイルを選択し、**[割り当て]** を選択します。
+1. Intune で、 **[デバイスの登録]**  >  **[Apple の登録]**  >  **[Enrollment Program トークン]** の順に選択し、リスト内でトークンを選択します。
+2. **[デバイス]** を選択し、リスト内でデバイスを選択し、 **[プロファイルの割り当て]** を選択します。
+3. **[プロファイルの割り当て]** の下でデバイス用のプロファイルを選択し、 **[割り当て]** を選択します。
 
 ### <a name="assign-a-default-profile"></a>既定のプロファイルを割り当てる
 
 特定のトークンを使用して登録するすべてのデバイスに適用される既定のプロファイルを選択することができます。
 
-1. Intune で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]** の順に選択し、リスト内でトークンを選択します。
-2. **[既定のプロファイルの設定]** を選択し、ドロップダウン リストでプロファイルを選択し、**[保存]** を選択します。 このプロファイルは、トークンに登録されたすべてのデバイスに適用されます。
+1. Intune で、 **[デバイスの登録]**  >  **[Apple の登録]**  >  **[Enrollment Program トークン]** の順に選択し、リスト内でトークンを選択します。
+2. **[既定のプロファイルの設定]** を選択し、ドロップダウン リストでプロファイルを選択し、 **[保存]** を選択します。 このプロファイルは、トークンに登録されたすべてのデバイスに適用されます。
 
 ## <a name="distribute-devices"></a>デバイスを配布する
 Apple と Intune の間の同期と管理を有効にし、DEP デバイスを登録できるようにプロファイルを割り当てました。 ユーザーにデバイスを配布できるようになりました。 ユーザー アフィニティがあるデバイスでは、各ユーザーに Intune ライセンスを割り当てる必要があります。 ユーザー アフィニティがないデバイスでは、デバイスのライセンスが必要です。 デバイスがワイプされるまで、アクティブ化されたデバイスは登録プロファイルを適用できません。
@@ -247,7 +255,7 @@ Apple と Intune の間の同期と管理を有効にし、DEP デバイスを�
     ![生成された新しいトークンのスクリーンショット。](./media/device-enrollment-program-enroll-ios/generatenewtoken.png)
 
 4. **[Your Server Token]\(サーバー トークン\)** を選択します。  
-5. [Azure portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[Apple の登録]** > **[Enrollment Program トークン]**、トークンの順に選択します。
+5. [Azure portal の Intune](https://aka.ms/intuneportal) で、 **[デバイスの登録]**  >  **[Apple の登録]**  >  **[Enrollment Program トークン]** 、トークンの順に選択します。
     ![Enrollment Program トークンのスクリーンショット。](./media/device-enrollment-program-enroll-ios/enrollmentprogramtokens.png)
 
 6. **[トークンを更新する]** を選択し、元のトークンの作成に使用した Apple ID を入力します。  

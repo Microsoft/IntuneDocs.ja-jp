@@ -1,11 +1,12 @@
 ---
-title: Intune への Windows アプリと Windows Phone アプリのサイドロード
+title: Windows アプリと Windows Phone アプリのサイドロード
+titleSuffix: Microsoft Intune
 description: Intune を使用して展開できるように、基幹業務アプリに署名する方法について説明します。
 keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2018
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +16,12 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e29757cdd09a90c85dd1c965c3b77328ace4dcca
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8652d260849537d1e0b504f5d309a3ab2708e5cd
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390759"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587520"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Intune を使用して Windows デバイスに展開できるように基幹業務アプリに署名する
 
@@ -45,16 +46,16 @@ Intune 管理者は、ポータル サイト アプリを含め、基幹業務 (
     要求が承認されると、証明書をインポートするための手順を含む電子メールが届きます。 メールの指示に従って証明書をインポートします。
 
 4.  **インポートされた証明書を確認する**<br>
-    証明書が正しくインポートされたことを確認するには、**[証明書]** スナップインに進み、**[証明書]** を右クリックして **[証明書の検索]** を選択します。 **[含む]** フィールドに「Symantec」と入力し、 **[今すぐ検索]** をクリックします。 インポートした証明書が検索結果に表示されます。
+    証明書が正しくインポートされたことを確認するには、 **[証明書]** スナップインに進み、 **[証明書]** を右クリックして **[証明書の検索]** を選択します。 **[含む]** フィールドに「Symantec」と入力し、 **[今すぐ検索]** をクリックします。 インポートした証明書が検索結果に表示されます。
 
     ![証明書の結果が [証明書の検索] ダイアログ ボックスに一覧表示される](./media/wit.gif)
 
 5. **署名証明書をエクスポートする**<br>
-    証明書があることを確認したら、.pfx ファイルをエクスポートしてポータル サイトに署名できます。 **[使用目的]** が "コード署名" になっている Symantec 証明書を選択します。 そのコード署名証明書を右クリックして、**[エクスポート]** を選択します。
+    証明書があることを確認したら、.pfx ファイルをエクスポートしてポータル サイトに署名できます。 **[使用目的]** が "コード署名" になっている Symantec 証明書を選択します。 そのコード署名証明書を右クリックして、 **[エクスポート]** を選択します。
 
     ![署名証明書のエクスポート](./media/wit-walk-cert2.gif)
 
-    **[証明書のエクスポート ウィザード]** が起動したら、 **[はい、秘密キーをエクスポートします]** を選択して **[次へ]** をクリックします。 **[Personal Information Exchange - PKCS #12 (.PFX)]** を選択し、**[証明のパスにある証明書を可能であればすべて含む]** チェック ボックスをオンにします。 ウィザードを完了します。 詳細については、「 [証明書を秘密キーと共にエクスポートする](https://go.microsoft.com/fwlink/?LinkID=203031)」をご覧ください。
+    **[証明書のエクスポート ウィザード]** が起動したら、 **[はい、秘密キーをエクスポートします]** を選択して **[次へ]** をクリックします。 **[Personal Information Exchange - PKCS #12 (.PFX)]** を選択し、 **[証明のパスにある証明書を可能であればすべて含む]** チェック ボックスをオンにします。 ウィザードを完了します。 詳細については、「 [証明書を秘密キーと共にエクスポートする](https://go.microsoft.com/fwlink/?LinkID=203031)」をご覧ください。
 
 6.  **Intune にアプリをアップロードする**<br>
     署名付きのアプリ ファイルと、コード署名証明書をアップロードして、アプリをエンド ユーザーが使用できるようにします。
@@ -140,7 +141,7 @@ Windows および Windows Phone モバイル アプリを展開するのに使�
 
 1.  最新バージョンの基幹業務アプリに署名します。
 
-2.  Azure Portal を開き、**[管理]** &gt; **[モバイル デバイス管理]** &gt; **[Windows Phone]** の順に選択し、**[Upload Signed App]\(署名済みアプリのアップロード\)** をクリックします。
+2.  Azure Portal を開き、 **[管理]** &gt; **[モバイル デバイス管理]** &gt; **[Windows Phone]** の順に選択し、 **[Upload Signed App]\(署名済みアプリのアップロード\)** をクリックします。
 
 3.  新しく署名したポータル サイトをアップロードします。 新しく署名した SSP.xap と、Symantec から送信された新しい .PFX ファイルまたはこの新しい .PFX ファイルを使用して作成されたアプリケーション登録トークンが必要になります。
 
@@ -155,7 +156,7 @@ Intune をビジネス向け Microsoft ストアと統合していない場合�
  > このオプションでは、アプリの更新プログラムがリリースされるたびに、手動更新を展開する必要があります。
 
 1. [ビジネス向け Microsoft ストア](https://www.microsoft.com/business-store)のアカウントにログインし、ポータル サイト アプリの**オフライン ライセンス** バージョンを取得します。  
-2. アプリが取得されたら、**[インベントリ]** ページでアプリを選択します。  
+2. アプリが取得されたら、 **[インベントリ]** ページでアプリを選択します。  
 3. **プラットフォーム**として **[Windows 10 all devices (Windows 10 のすべてのデバイス)]** を選択し、適切な**アーキテクチャ**を選択してダウンロードします。 このアプリは、アプリ ライセンス ファイルを必要としません。
 ![ダウンロード用 Windows 10 X86 パッケージの詳細の画像](./media/Win10CP-all-devices.png)
 4. [必要なフレームワーク] の下のすべてのパッケージをダウンロードします。 x86、x64、および ARM アーキテクチャ用に実行する必要があります。次に示すように、合計 9 個のパッケージのダウンロードが必要になる場合があります。

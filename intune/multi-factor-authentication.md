@@ -1,27 +1,28 @@
 ---
 title: Intune へのデバイスの登録で多要素認証を要求する
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune へのデバイス登録で Azure AD の多要素認証を要求する方法。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2018
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71d551ca64f85c3ba6a807fac70e3b0662e1b89a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: cf5611b3b9292222582d66cae39b4f751279dcec
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834094"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568792"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Intune へのデバイスの登録で多要素認証を要求する
 
@@ -50,18 +51,17 @@ MFA を有効にするには、エンド ユーザーは 2 種類の資格情報
 >Microsoft Intune 登録には、**デバイス ベースのアクセス規則**を構成しないでください。
 
 1. 資格情報を利用し、[Microsoft Azure Portal](https://portal.azure.com) にサインインします。
-2. ポータルで、**[[Azure Active Directory]](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)** に移動します。
-3. **[Azure Active Directory]** の [セキュリティ] で、**[[条件付きアクセス]](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)** を選択します。
+2. ポータルで、**Intune** に移動し、 **[条件付きアクセス]** を選択します。 *Intune* からアクセスされる条件付きアクセス ノードは、*Azure AD* からアクセスされるノードと同じです。
 4. **[新しいポリシー]** を選びます。
 5. **[新しいポリシー]** で、ポリシーのわかりやすい名前を入力します。
-6. **[割り当て]** セクションで、**[ユーザーとグループ]** を選択します。
-7. **[ユーザーとグループ]** で **[ユーザーまたはグループの選択]** を選択し、**[ユーザーとグループ]** をオンにします。 このポリシーを受けるユーザーやグループを選択し、**[完了]** を選択します。
-8. **[割り当て]** セクションで、**[クラウド アプリ]** を選択します。
-9. **[クラウド アプリ]** の **[挿入]** タブで、**[アプリを選択]** を選択し、**[選択]** > **[Microsoft Intune Enrollment]\(Microsoft Intune 登録\)** の順に選択し、**[完了]** を選択します。
+6. **[割り当て]** セクションで、 **[ユーザーとグループ]** を選択します。 
+7. **[ユーザーとグループ]** で **[ユーザーまたはグループの選択]** を選択し、 **[ユーザーとグループ]** をオンにします。 このポリシーを受けるユーザーやグループを選択し、 **[完了]** を選択します。
+8. **[割り当て]** セクションで、 **[クラウド アプリ]** を選択します。
+9. **[クラウド アプリ]** の **[挿入]** タブで、 **[アプリを選択]** を選択し、 **[選択]**  >  **[Microsoft Intune Enrollment]\(Microsoft Intune 登録\)** の順に選択し、 **[完了]** を選択します。
 10. **[割り当て]** セクションの **[条件]** では、MFA 設定を構成する必要はありません。
-11. **[アクセス制御]** セクションで、**[許可]** を選択します。
-12. **[許可]** で、**[アクセス権の付与]** を選択し、**[多要素認証を要求する]** を選択します。 **[デバイスは準拠としてマーク済みである必要があります]** は選択しないでください。登録されるまで、デバイスの準拠状態は評価できません。 次に **[選択]** を選択します。
-13. **[新しいポリシー]** で、**[ポリシーを有効にする]** > **[オン]** の順に選択し、**[作成]** を選択します。
+11. **[アクセス制御]** セクションで、 **[許可]** を選択します。
+12. **[許可]** で、 **[アクセス権の付与]** を選択し、 **[多要素認証を要求する]** を選択します。 **[デバイスは準拠としてマーク済みである必要があります]** は選択しないでください。登録されるまで、デバイスの準拠状態は評価できません。 次に **[選択]** を選択します。
+13. **[新しいポリシー]** で、 **[ポリシーを有効にする]**  >  **[オン]** の順に選択し、 **[作成]** を選択します。
 
 
 

@@ -7,21 +7,23 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/28/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b3ca1b95a6dcf7bdc30b61469fa747894d20fe73
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 031db83302dfef8b99fc83ab7975e233c3eeb799
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188094"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57396864"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune で通信費管理サービスをセットアップする
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -56,33 +58,33 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
 開始する前に、Intune および Datalert 通信費管理サービスのサブスクリプションがあることを確認します。
 
-### <a name="step-1-connect-the-datalert-service-to-microsoft-intune"></a>手順 1: Datalert サービスを Microsoft Intune に接続する
+### <a name="step-1-connect-the-datalert-service-to-microsoft-intune"></a>手順 1.Datalert サービスを Microsoft Intune に接続する
 
 1. 管理者資格情報を使用して Datalert 管理コンソールにサインインします。
 
-2. Datalert 管理コンソールで、**[Settings (設定)]** タブに移動し、さらに **[MDM configuration (MDM の構成)]** に移動します。
+2. Datalert 管理コンソールで、 **[Settings (設定)]** タブに移動し、さらに **[MDM configuration (MDM の構成)]** に移動します。
 
 3. ページの下部にある **[Unblock]\(ブロック解除\)** を選択すると、ページの設定を変更できるようになります。
 
-4. **[Intune / Datalert Connection]\(Intune/Datalert 接続\)** セクションの **[Server MDM]\(サーバー MDM\)** で、**[Microsoft Intune]** を選択します。    
+4. **[Intune / Datalert Connection]\(Intune/Datalert 接続\)** セクションの **[Server MDM]\(サーバー MDM\)** で、 **[Microsoft Intune]** を選択します。    
 
-5. **[Azure AD domain]\(Azure AD ドメイン\)** に Azure テナント ID を入力し、**[Connection]\(接続\)** をクリックします。
+5. **[Azure AD domain]\(Azure AD ドメイン\)** に Azure テナント ID を入力し、 **[Connection]\(接続\)** をクリックします。
 
     **[Connection]\(接続\)** を選択すると、Datalert と Intune の間に既存の接続がないことを確認するために、Datalert サービスによって Intune へのチェックインが行われます。 数秒後に Microsoft ログイン ページが表示され、その後に Datalert Azure 認証が行われます。
 
-6. Microsoft 認証ページで、**[Accept (同意する)]** を選択します。 Datalert の **[thank you]\(ありがとうございます\)** ページにリダイレクトされ、数秒後にそのページが閉じます。 Datalert によって接続が検証され、検証済みの項目一覧の横に緑色のチェック マークが表示されます。 検証が失敗した場合、赤色でメッセージが表示され、対処について Datalert サポートに問い合わせる必要があります。
+6. Microsoft 認証ページで、 **[Accept (同意する)]** を選択します。 Datalert の **[thank you]\(ありがとうございます\)** ページにリダイレクトされ、数秒後にそのページが閉じます。 Datalert によって接続が検証され、検証済みの項目一覧の横に緑色のチェック マークが表示されます。 検証が失敗した場合、赤色でメッセージが表示され、対処について Datalert サポートに問い合わせる必要があります。
 
     次のスクリーン ショットは、接続に成功した場合に表示されることが期待できる緑色のチェック マークを示しています。
 
    ![接続が成功したことを示す Datalert ページ](./media/tem-datalert-connection.png)
 
-7. **[Datalert App / ADAL Consent]\(Datalert アプリ/ADAL 同意\)** セクションで、スイッチを **[オン]** に設定します。 Microsoft 認証ページで、**[Accept (同意する)]** を選択します。 Datalert の **[thank you]\(ありがとうございます\)** ページにリダイレクトされ、数秒後にそのページが閉じます。 Datalert によって接続が検証され、検証済みの項目一覧の横に緑色のチェック マークが表示されます。 検証が失敗した場合、赤色でメッセージが表示され、対処について Datalert サポートに問い合わせる必要があります。    
+7. **[Datalert App / ADAL Consent]\(Datalert アプリ/ADAL 同意\)** セクションで、スイッチを **[オン]** に設定します。 Microsoft 認証ページで、 **[Accept (同意する)]** を選択します。 Datalert の **[thank you]\(ありがとうございます\)** ページにリダイレクトされ、数秒後にそのページが閉じます。 Datalert によって接続が検証され、検証済みの項目一覧の横に緑色のチェック マークが表示されます。 検証が失敗した場合、赤色でメッセージが表示され、対処について Datalert サポートに問い合わせる必要があります。    
 
     次のスクリーン ショットは、接続に成功した場合に表示されることが期待できる緑色のチェック マークを示しています。
 
    ![接続が成功したことを示す Datalert ページ](./media/tem-datalert-adal-consent.png)
 
-8. **[MDM Profiles management (optional)]\(MDM プロファイル管理 (オプション)\)** セクションでスイッチを **[オン]** に設定し、ユーザーによるポリシーの設定をサポートするため Datalert が Intune で使用可能なプロファイルを読み取れるようにします。 Microsoft 認証ページで、**[Accept (同意する)]** を選択します。 Datalert の **[thank you]\(ありがとうございます\)** ページにリダイレクトされ、数秒後にそのページが閉じます。 Datalert によって接続が検証され、検証済みの項目一覧の横に緑色のチェック マークが表示されます。 検証が失敗した場合、赤色でメッセージが表示され、対処について Datalert サポートに問い合わせる必要があります。    
+8. **[MDM Profiles management (optional)]\(MDM プロファイル管理 (オプション)\)** セクションでスイッチを **[オン]** に設定し、ユーザーによるポリシーの設定をサポートするため Datalert が Intune で使用可能なプロファイルを読み取れるようにします。 Microsoft 認証ページで、 **[Accept (同意する)]** を選択します。 Datalert の **[thank you]\(ありがとうございます\)** ページにリダイレクトされ、数秒後にそのページが閉じます。 Datalert によって接続が検証され、検証済みの項目一覧の横に緑色のチェック マークが表示されます。 検証が失敗した場合、赤色でメッセージが表示され、対処について Datalert サポートに問い合わせる必要があります。    
 
     次のスクリーン ショットは、接続に成功した場合に表示されることが期待できる緑色のチェック マークを示しています。
 
@@ -90,15 +92,15 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
 ### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>手順 2: 通信費管理機能が Intune でアクティブであることを確認する
 
-上記の手順 1 を完了すると、接続が自動的に有効になり、接続状態 **[アクティブ]** が Azure Portal に表示されます。 次の手順は、**[アクティブ]** 状態を確認する方法を示しています。
+上記の手順 1 を完了すると、接続が自動的に有効になり、接続状態 **[アクティブ]** が Azure Portal に表示されます。 次の手順は、 **[アクティブ]** 状態を確認する方法を示しています。
 
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
 
-2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**  >  **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 
-3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
+3. **[Intune]** ウィンドウで、 **[デバイス構成]** を選択します。
 
-4. **[デバイス構成]** ウィンドウで、**[セットアップ]** > **[通信費管理]** を選択します。
+4. **[デバイス構成]** ウィンドウで、 **[セットアップ]**  >  **[通信費管理]** を選択します。
 
    ページの上部に表示されている接続状態が **[アクティブ]** になっていることを確認します。
 
@@ -122,17 +124,17 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
 次の手順に従って、プラットフォームごとに、Intune で Datalert アプリを作成します。 次の手順では、例として iOS を使用します。
 
-1. [Azure portal](https://portal.azure.com) の **[Intune]** ウィンドウで、**[クライアント アプリ]** を選択します。
+1. [Azure portal](https://portal.azure.com) の **[Intune]** ウィンドウで、 **[クライアント アプリ]** を選択します。
 
-2. **[クライアント アプリ]** ウィンドウで、**[管理]** > **[アプリ]** の順に選択します。
+2. **[クライアント アプリ]** ウィンドウで、 **[管理]**  >  **[アプリ]** の順に選択します。
 
 3. **[追加]** を選択してアプリを追加します。
 
-4. アプリの種類を選択します。 たとえば、iOS の場合は、**[iOS ストア アプリ]** を選択します。
+4. アプリの種類を選択します。 たとえば、iOS の場合は、 **[iOS ストア アプリ]** を選択します。
 
 5. **[アプリ ストアを検索します]** で、検索ウィンドウに「**Datalert**」と入力して、Datalert アプリを検索します。
 
-6. **Datalert** アプリを選択し、**[選択]** を選択します。
+6. **Datalert** アプリを選択し、 **[選択]** を選択します。
 
    ![[ポリシーの追加] ウィンドウのスクリーンショット](./media/tem-select-app-from-apple-app-store.png)
 
@@ -144,7 +146,7 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
 1. **[クライアント アプリ] - [アプリ]** ウィンドウで、前の手順で作成した iOS Datalert アプリを選択します。
 
-2. **[アプリ]** ウィンドウで、**[管理]** > **[割り当て]** を選択します。
+2. **[アプリ]** ウィンドウで、 **[管理]**  >  **[割り当て]** を選択します。
 
 3. **[グループの追加]** を選択し、企業のデバイス グループを選択する手順に従います。
 
@@ -152,11 +154,11 @@ Intune は、現時点で以下の通信費管理プロバイダーと統合さ�
 
    ![[ポリシーの追加] ウィンドウのスクリーンショット](./media/tem-assign-datalert-app-to-device-group.png)
 
-### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>手順 4: 企業が料金を支払う電話回線をDatalert コンソールに追加する
+### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>手順 4:企業が料金を支払う電話回線を Datalert コンソールに追加する
 
 これで、Intune サービスと Datalert サービスが互いに通信するように構成されました。 次に、企業が料金を支払う電話回線を Datalert コンソールに追加し、携帯データまたはローミング データの使用量違反に対するしきい値と動作を定義する必要があります。 企業が料金を支払う電話回線を手動で Datalert コンソールに追加するか、またはデバイスが Intune に登録されたら自動的に追加することができます。
 
-これらの項目を設定するには、[Microsoft Intune 用の Datalert のセットアップ ページ](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup)) に移動し、**[Settings]** タブでセットアップ ウィザードの手順に従います。
+これらの項目を設定するには、[Microsoft Intune 用の Datalert のセットアップ ページ](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup)) に移動し、 **[Settings]** タブでセットアップ ウィザードの手順に従います。
 
   ![[ポリシーの追加] ウィンドウのスクリーンショット](./media/tem-add-phone-lines-to-datalert-console.png)
 
@@ -178,7 +180,7 @@ Azure Portal で Datalert サービスを無効にすると、以下のような
 
 **サービスを無効にするには**
 
-1. Azure Portal の **[通信費管理]** ウィンドウで、**[無効]** を選択します。
+1. Azure Portal の **[通信費管理]** ウィンドウで、 **[無効]** を選択します。
 
 2. **[保存]** を選択します。
 

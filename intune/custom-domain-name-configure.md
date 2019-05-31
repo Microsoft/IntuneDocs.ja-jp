@@ -1,6 +1,6 @@
 ---
 title: カスタムのドメイン名を構成する
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune サブスクリプションのカスタム ドメイン名を追加します
 keywords: ''
 author: dougeby
@@ -10,18 +10,20 @@ ms.date: 02/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: a4227399eb5cf1d2cc2e265215eccb2c05d73ac5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4d0c3d11eb3a031f34704dcd9ecf16f3312ac818
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181498"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567245"
 ---
 # <a name="configure-a-custom-domain-name"></a>カスタムのドメイン名を構成する
 
@@ -42,15 +44,15 @@ Microsoft のクラウドベースのサービスにサブスクライブする�
 
 ## <a name="to-add-and-verify-your-custom-domain"></a>カスタム ドメインを追加して確認するには
 
-1. [Office 365 管理ポータル](https://portal.office.com/Admin/Default.aspx)を開き、管理者アカウントにサインインします。
+1. [Microsoft 365 管理センター](https://admin.microsoft.com/)を開き、管理者アカウントにサインインします。
 
-2. ナビゲーション ウィンドウで **[セットアップ]**、**[ドメイン]** の順に選択します。
+2. ナビゲーション ウィンドウで **[セットアップ]** 、 **[ドメイン]** の順に選択します。
 
 3. **[ドメインの追加]** を選択し、カスタム ドメイン名を入力します。 **[次へ]** を選択します。
-   ![[設定] > [ドメイン] を選択して新しいドメイン名を追加した Office 365 管理センターのスクリーンショット](./media/domain-custom-add.png)
+   ![[設定] > [ドメイン] を選択して新しいドメイン名を追加した Microsoft 365 管理センターのスクリーンショット](./media/domain-custom-add.png)
 4. **[ドメインの確認]** ダイアログ ボックスが開き、DNS ホスティング プロバイダーに TXT レコードを作成する値が表示されます。
-    - **GoDaddy ユーザー**: Office 365 管理ポータルから GoDaddy のログイン ページにリダイレクトされます。 資格情報を入力し、ドメインの変更アクセス許可に同意すると、TXT レコードが自動的に作成されます。 または [TXT レコードを作成](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a)できます。
-    - **Register.com ユーザー**: この[ステップ バイ ステップの指示](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify)に従って、TXT レコードを作成します。
+    - **GoDaddy ユーザー**:Microsoft 365 管理センターから GoDaddy のログイン ページにリダイレクトされます。 資格情報を入力し、ドメインの変更アクセス許可に同意すると、TXT レコードが自動的に作成されます。 または [TXT レコードを作成](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a)できます。
+    - **Register.com ユーザー**:この[ステップ バイ ステップの指示](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify)に従って、TXT レコードを作成します。
 
 カスタム ドメインを追加し、確認する手順は、[Azure Active Directory でも実行](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/)できます。
 

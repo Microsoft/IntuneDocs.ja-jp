@@ -6,21 +6,23 @@ author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 08/21/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5f8263f06fe33537a74a6d1889b02b89ee6a825f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f4169f5625965ebc7d2bbbf9153cb4183fcd22b3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183402"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57388073"
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Android ユーザーがアプリを入手する方法
 
@@ -37,8 +39,8 @@ Microsoft Intune を通して配布したアプリを Android エンド ユー�
 
 [LOB アプリ](lob-apps-android.md)をインストールするには、エンド ユーザーは、不明なソースからのインストールを許可する必要があります。 通常、設定には 2 つの場所があります。
 
-* **Android 7.1.2 以前**: **[設定]** > **[セキュリティ]** > **[不明なソース]**
-* **Android 8.0 以降**: **[設定]** > **[Apps & notifications]\(アプリと通知\)** > **[Special app access]\(特別なアプリ アクセス\)** > **[Install unknown apps]\(不明なアプリのインストール\)** > **[ポータル サイト]** > **[Allow from this source]\(このソースからは許可する\)**
+* **Android 7.1.2 以前**: **[設定]**  >  **[セキュリティ]**  >  **[不明なソース]**
+* **Android 8.0 以降**: **[設定]**  >  **[Apps & notifications]\(アプリと通知\)**  >  **[Special app access]\(特別なアプリ アクセス\)**  >  **[Install unknown apps]\(不明なアプリのインストール\)**  >  **[ポータル サイト]**  >  **[Allow from this source]\(このソースからは許可する\)**
 
 許可が必要になった場合、ポータル サイト アプリがエンド ユーザーに通知し、該当する設定画面まで直接誘導します。 
 

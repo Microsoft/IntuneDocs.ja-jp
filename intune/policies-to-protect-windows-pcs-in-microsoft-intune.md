@@ -46,4 +46,4 @@ IT 管理者として最も優先度が高い事項の 1 つは、[管理する 
 
 ## <a name="see-also"></a>関連項目
 
-[一般的な質問、問題と解決策をデバイスのポリシーとプロファイル](device-profile-troubleshoot.md)
+[デバイス ポリシーとプロファイルの一般的な質問、問題と解決策](device-profile-troubleshoot.md)

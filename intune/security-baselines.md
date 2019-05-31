@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b2a5e2bbd6d06cc4ec0cf71ee815229b01040a8
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 70638228875f1fb063a2ea22dc424c00f3940a30
+ms.sourcegitcommit: ef4bc7318449129af3dc8c0154e54a264b7bf4e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61490689"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65197622"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Intune で Windows 10 のセキュリティのベースラインを作成する
 
@@ -56,16 +56,16 @@ Intune でベースラインを管理するには、アカウントに [[Policy 
 
 Intune マネージド デバイスに関するセキュリティのベースラインは、Configuration Manager との共同マネージド デバイスと似ています。 共同マネージド デバイスでは、System Center Configuration Manager と Microsoft Intune を使用して Windows 10 デバイスを同時に管理します。 これにより、既存の Configuration Manager への投資を Intune のメリットへとクラウドで結び付けることができます。 Configuration Manager を使用していて、クラウドのメリットも必要な場合、[共同管理の概要](https://docs.microsoft.com/sccm/comanage/overview)に関するページは優れたリソースです。
 
-共同マネージド デバイスを使用する場合は、**[デバイス構成]** ワークロード (その設定) を Intune に切り替える必要があります。 詳細については、[デバイス構成ワークロード](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration)に関するセクションを参照してください。
+共同マネージド デバイスを使用する場合は、 **[デバイス構成]** ワークロード (その設定) を Intune に切り替える必要があります。 詳細については、[デバイス構成ワークロード](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration)に関するセクションを参照してください。
 
 ## <a name="create-the-profile"></a>プロファイルの作成
 
-1. [Azure portal](https://portal.azure.com/) で、**[すべてのサービス]** を選択し、**Intune** でフィルター処理して、**[Intune]** を選択します。
-2. **[セキュリティのベースライン (プレビュー)]** を選択します。 使用できるベースラインの一覧が表示されます。 さらにベースラインが追加されると、次のように表示されます。
+1. [Azure portal](https://portal.azure.com/) で、 **[すべてのサービス]** を選択し、**Intune** でフィルター処理して、 **[Intune]** を選択します。
+2. **[デバイス セキュリティ]**  >  **[セキュリティのベースライン (プレビュー)]** を選択します。 使用できるベースラインの一覧が表示されます。 さらにベースラインが追加されると、次のように表示されます。
 
     ![現在使用できるセキュリティのベースラインの一覧を Intune で表示する](./media/security-baselines/available-baselines.png)
 
-3. 使用するベースラインを選択し、**[プロファイルの作成]** を選択します。
+3. 使用するベースラインを選択し、 **[プロファイルの作成]** を選択します。
 4. **[Basics]\(基本\)** で次のプロパティを入力します。
 
     - **名前**: セキュリティのベースライン プロファイルの名前を入力します。 たとえば、「`pilot Windows 10 MDM baseline - Oct 2018`」と入力します。
@@ -75,7 +75,7 @@ Intune マネージド デバイスに関するセキュリティのベースラ
 
     ![設定を展開すると、Intune のこのセキュリティのベースラインの設定がすべて表示されます。](./media/security-baselines/sample-list-of-settings.png)
 
-    いくつかの設定を展開して値を確認してください。 たとえば、**[Windows Defender]** を展開します。 いくつかの設定と、その設定されている実行内容を確認してください。
+    いくつかの設定を展開して値を確認してください。 たとえば、 **[Windows Defender]** を展開します。 いくつかの設定と、その設定されている実行内容を確認してください。
 
     ![Windows Defender 設定の一部に自動的に設定されている Intune の実行内容を表示する](./media/security-baselines/expand-windows-defender.png)
 
@@ -86,8 +86,8 @@ Intune マネージド デバイスに関するセキュリティのベースラ
 
 プロファイルが作成されたら、ユーザー、デバイス、グループに割り当てることができます。 割り当てると、プロファイルとその設定は、選択したユーザー、デバイス、グループに適用されます。
 
-1. Intune で **[Security Baselines]\(セキュリティのベースライン\)** を選択し、ベースライン、**[プロファイル]** の順に選択します。
-2. プロファイル、**[割り当て]** の順に選択します。
+1. Intune で **[Security Baselines]\(セキュリティのベースライン\)** を選択し、ベースライン、 **[プロファイル]** の順に選択します。
+2. プロファイル、 **[割り当て]** の順に選択します。
 
     ![Intune でセキュリティのベースライン プロファイルを選択し、プロファイルを展開する割り当てをクリックします](./media/security-baselines/assignments.png)
 

@@ -1,26 +1,28 @@
 ---
-title: 条件付きアクセスのシナリオ | Microsoft Intune
+title: 条件付きアクセスのシナリオ
+titleSuffix: Microsoft Intune
 description: Intune の条件付きアクセスが、デバイス ベースおよびアプリ ベースの条件付きアクセスに一般的にどのように使用されるかについて説明します。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd29f52b4d108173b8f08b68cf8b85ce291a0077
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 666a62e9aa42212bacba0e0222a828d89d780eef
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842764"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569377"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune での条件付きアクセスの一般的な使用方法
 
@@ -31,7 +33,7 @@ Intune での条件付きアクセスには、デバイス ベースの条件付
 ここでは、Intune のモバイル *デバイス*のコンプライアンス機能と Intune のモバイル *アプリケーション*管理 (MAM) 機能の使用方法について説明します。 
 
 > [!NOTE]
-> 条件付きアクセスは、Azure Active Directory Premium ライセンスに含まれる Azure Active Directory の機能です。 Intune は、モバイル デバイス コンプライアンスとモバイル アプリ管理をソリューションに加えて、この機能を強化します。
+> 条件付きアクセスは、Azure Active Directory Premium ライセンスに含まれる Azure Active Directory の機能です。 Intune は、モバイル デバイス コンプライアンスとモバイル アプリ管理をソリューションに加えて、この機能を強化します。 *Intune* からアクセスされる条件付きアクセス ノードは、*Azure AD* からアクセスされるノードと同じです。  
 
 ## <a name="device-based-conditional-access"></a>デバイス ベースの条件付きアクセス
 
@@ -71,15 +73,15 @@ Exchange Online や他の Office 365 製品のデバイス ベースの条件付
 
 Intune Exchange Connector は Exchange サーバーに存在するすべての Exchange Active Sync (EAS) レコードを収集するため、Intune はこれらの EAS レコードを取得して、Intune デバイス レコードにマップすることができます。 これらのレコードはデバイスに登録され、Intune によって認識されます。 このプロセスにより、電子メールへのアクセスが許可またはブロックされます。
 
-EAS レコードが新しいために Intune が認識しない場合、Intune は電子メールへのアクセスをブロックするコマンドレットを発行します。 次の図で、このプロセスのしくみについて詳しく説明します。
+EAS レコードが新しいために Intune が認識しない場合、Intune によって電子メールへのアクセスをブロックするコマンドレットが発行されます。 次の図で、このプロセスのしくみについて詳しく説明します。
 
 ![Exchange On-premises と条件付きアクセス (CA) のフローチャート](./media/ca-intune-common-ways-1.png)
 
 1.  ユーザーは、Exchange On-premises 2010 SP1 以降でホストされている会社の電子メールにアクセスしようとしています。
 
-2.  デバイスが Intune で管理されていない場合は、電子メールへのアクセスがブロックされます。 Intune は、EAS クライアントにブロック通知を送信します。
+2.  デバイスが Intune で管理されていない場合、電子メールへのアクセスがブロックされます。 Intune によって、EAS クライアントにブロック通知が送信されます。
 
-3.  EAS はブロック通知を受信し、該当デバイスを検疫に移動して、検疫メールを送信します。このメールには、ユーザーがデバイスを登録するためのリンクを含む修復手順が記載されています。
+3.  EAS がブロック通知を受信し、該当デバイスを検疫に移動して、検疫メールを送信します。このメールには、ユーザーがデバイスを登録するためのリンクを含む修復手順が記載されています。
 
 4.  Workplace Join プロセスが発生します。これは、Intune でデバイスを管理する最初の手順です。
 
@@ -91,7 +93,7 @@ EAS レコードが新しいために Intune が認識しない場合、Intune �
 
 8.  Azure AD Device Registration により、デバイスの状態に関する情報が保存されます。
 
-9.  ユーザーが条件付きアクセス ポリシーを満たしている場合、Intune は Intune Exchange Connector を介して、メールボックスの同期を許可するコマンドレットを発行します。
+9.  ユーザーが条件付きアクセス ポリシーを満たしている場合、Intune によって Intune Exchange Connector を介して、メールボックスの同期を許可するコマンドレットが発行されます。
 
 10. Exchange サーバーが EAS クライアントに通知を送信し、ユーザーは電子メールにアクセスできるようになります。
 
@@ -101,10 +103,10 @@ Intune はデバイスの状態を評価し、管理します。
 
 #### <a name="whats-the-exchange-server-role"></a>Exchange サーバー ロールとは
 
-Exchange サーバーは、デバイスを検疫に移動するための API とインフラストラクチャを提供します。
+Exchange サーバーでは、デバイスを検疫に移動するための API とインフラストラクチャを提供しています。
 
 > [!IMPORTANT]
-> デバイスのコンプライアンスを評価するために、デバイスを使用するユーザーにコンプライアンス プロファイルを割り当てる必要がある点に注意してください。 コンプライアンス ポリシーがユーザーに展開されていない場合、デバイスは準拠したものと見なされ、アクセス制限は適用されません。
+> デバイスのコンプライアンスを評価できるようにするために、デバイスを使用するユーザーにコンプライアンス プロファイルを割り当てる必要がある点に注意してください。 コンプライアンス ポリシーがユーザーに展開されていない場合、デバイスは準拠したものと見なされ、アクセス制限は適用されません。
 
 ### <a name="conditional-access-based-on-network-access-control"></a>ネットワーク アクセス制御に基づいた条件付きアクセス
 
@@ -136,7 +138,7 @@ PC の条件付きアクセスでは、モバイル デバイスで利用でき�
 
 -   **Azure AD ドメインへの参加と Intune の管理:** このシナリオは、Choose Your Own Device (CYOD) と、ローミング ラップトップを会社のネットワークにほとんど接続しないシナリオを対象にしています。 デバイスは Azure AD に参加し、Intune に登録されます。これにより、オンプレミス AD とドメイン コントローラーへの依存が排除されます。 会社のリソースにアクセスする場合は、これを条件付きアクセスの基準として使用できます。
 
--   **AD ドメインへの参加と System Center Configuration Manager:** 現在のブランチでは、System Center Configuration Manager は、ドメインに参加している PC とするのに加え、次の特定のコンプライアンス基準を評価できる条件付きアクセスの機能を提供します。
+-   **AD ドメインへの参加と System Center Configuration Manager:** 現在のブランチでは、System Center Configuration Manager は、ドメインに参加している PC となるのに加え、次の特定のコンプライアンス基準を評価できる条件付きアクセス機能を提供します。
 
     -   PC が暗号化されているか。
 

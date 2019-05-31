@@ -1,15 +1,16 @@
 ---
 title: Windows 10 用のアプリ保護ポリシーを構成する
 titleSuffix: Microsoft Intune
-description: Azure AD でモバイル アプリケーション管理 (MAM) プロバイダーをセットアップします。
+description: このトピックでは、Windows 10 デバイスにアプリ保護ポリシー (APP) を構成する方法について説明します。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
-ms.topic: article
+ms.date: 04/09/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5626861f05e7c78f43715b3dc14773eb3adfa7b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 9f7bff9fa319f8df1abc4622237d1f9b98b9a685
+ms.sourcegitcommit: 617bd653c34c1e6a4e2ad61811c5912f8dab775c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55832812"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59570716"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Windows 10 用のアプリ保護ポリシーを構成する準備をする 
 
@@ -32,7 +33,7 @@ Azure AD で MAM プロバイダーを設定して、Windows 10 用モバイル 
 
 ## <a name="to-configure-the-mam-provider"></a>MAM プロバイダーを構成するには
 
-1. Azure Portal にサインインして、**[Azure Active Directory]** を選択します。
+1. Azure Portal にサインインして、 **[Azure Active Directory]** を選択します。
 
 2. **[管理]** グループで **[モビリティ (MDM および MAM)]** を選択します。
 
@@ -52,7 +53,7 @@ Azure AD で MAM プロバイダーを設定して、Windows 10 用モバイル 
    **MAM 準拠 URL**  
    MAM 準拠 URL は、Microsoft Intune ではサポートされていません。 保護ポリシーを適用するには、この入力ボックスを空白のままにする必要があります。 
 
-5.  **[Save]**(保存) をクリックします。
+5.  **[Save]** (保存) をクリックします。
 
 ## <a name="next-steps"></a>次の手順
 

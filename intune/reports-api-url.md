@@ -64,7 +64,7 @@ URL には、次の要素が含まれています。
 
 ## <a name="odata-query-options"></a>OData クエリのオプション
 
-現在のバージョンは、OData クエリ パラメーター `$filter`、`$select`、`$skip,`、および `$top` をサポートしています。 `$filter`だけ`DateKey`または`RowLastModifiedDateTimeUTC`列は、該当して、その他のプロパティが正しくない要求をトリガーするときにサポートされている可能性があります。
+現在のバージョンは、OData クエリ パラメーター `$filter`、`$select`、`$skip,`、および `$top` をサポートしています。 `$filter` では、列が該当する場合は `DateKey` または `RowLastModifiedDateTimeUTC` のみがサポートされ、その他のプロパティでは正しくない要求がトリガーされます。
 
 ## <a name="datekey-range-filters"></a>DateKey 範囲のフィルター
 
@@ -84,4 +84,4 @@ URL には、次の要素が含まれています。
 |    `$filter=DateKey eq 20180214`                                 |    完全                                      |    `DateKey` が 20180214 のデータを返します。                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    完全                                      |    `DateKey` が 20180214 から 20180220 の間のデータを返します。                                     |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    完全                                      |    `DateKey` が 20180214 のデータを返します。 `maxhistorydays` は無視されます。                            |
-|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    完全                                       |    データを返す`RowLastModifiedDateTimeUTC`がより大きいまたは等しい `2018-02-21T23:18:51.3277273Z`                             |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    完全                                       |    `RowLastModifiedDateTimeUTC` が `2018-02-21T23:18:51.3277273Z` 以上のデータを返します                             |

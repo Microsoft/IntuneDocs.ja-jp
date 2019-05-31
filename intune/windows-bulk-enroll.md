@@ -1,6 +1,6 @@
 ---
 title: Windows 10 の一括登録
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Microsoft Intune の一括登録パッケージを作成する
 keywords: ''
 author: ErikjeMS
@@ -10,18 +10,19 @@ ms.date: 5/21/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7df624f0a3db11b058498c650a9f9c3dd95e8d12
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 064d11f1992d63df9dacbedb8d53e849425e9b1f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236808"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568168"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows デバイスの一括登録
 
@@ -29,7 +30,7 @@ ms.locfileid: "57236808"
 
 管理者として、Azure Active Directory と Intune に多数の新しい Windows デバイスを参加させることができます。 Azure AD テナントのデバイスを一括登録するには、Windows Configuration Designer (WCD) アプリでプロビジョニング パッケージを作成します。 企業所有のデバイスにプロビジョニング パッケージを適用すると、Azure AD テナントにデバイスを参加させ、Intune 管理用に登録します。 パッケージが適用されると、Azure AD ユーザーがログオンするための準備は完了です。
 
-Azure AD ユーザーはこれらのデバイス上の標準ユーザーであり、割り当て済みの Intune ポリシーと必須アプリを受け取ります。 この時点では、セルフ サービスとポータル サイトのシナリオはサポートされていません。
+Azure AD ユーザーはこれらのデバイス上の標準ユーザーであり、割り当て済みの Intune ポリシーと必須アプリを受け取ります。 Windows 一括登録を使用して Intune に登録されている Windows デバイスは、ポータル サイト アプリを使用して、使用可能なアプリをインストールできます。 
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Windows デバイスの一括登録の前提条件
 
@@ -41,7 +42,7 @@ Azure AD ユーザーはこれらのデバイス上の標準ユーザーであ�
 1. Microsoft ストアから [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) をダウンロードします。
    ![Windows Configuration Designer アプリ ストアのスクリーンショット](media/bulk-enroll-store.png)
 
-2. **Windows Configuration Designer** アプリを開き、**[Provision desktop devices]** (デスクトップ デバイスのプロビジョニング) を選択します。
+2. **Windows Configuration Designer** アプリを開き、 **[Provision desktop devices]** (デスクトップ デバイスのプロビジョニング) を選択します。
    ![Windows Configuration Designer アプリでデスクトップ デバイスのプロビジョニングを選択するスクリーン ショット](media/bulk-enroll-select.png)
 
 3. **[新しいプロジェクト]** ウィンドウが開くので、そこで次の情報を指定します。
@@ -55,13 +56,13 @@ Azure AD ユーザーはこれらのデバイス上の標準ユーザーであ�
 5. 必要に応じて、初回起動時にデバイスが接続する Wi-fi ネットワークを構成できます。  ネットワーク デバイスが構成されていない場合は、デバイスの初回起動時にワイヤード (有線) ネットワーク接続が必要になります。
    ![Windows Configuration Designer アプリで、ネットワーク SSID やネットワークの種類のオプションを含む Wi-fi を有効にするスクリーン ショット](media/bulk-enroll-network.png)
 
-6. **[Enroll in Azure AD]\(Azure AD に登録\)** を選択し、**[Bulk Token Expiry]\(一括トークンの有効期限\)** の日付を入力して、**[Get Bulk Token]\(一括トークンの取得\)** を選択します。
+6. **[Enroll in Azure AD]\(Azure AD に登録\)** を選択し、 **[Bulk Token Expiry]\(一括トークンの有効期限\)** の日付を入力して、 **[Get Bulk Token]\(一括トークンの取得\)** を選択します。
    ![Windows Configuration Designer アプリでのアカウント管理のスクリーンショット](media/bulk-enroll-account.png)
 
 7. 一括トークンを取得するための Azure AD の資格情報を入力します。
    ![Windows Configuration Designer アプリへのサインインのスクリーンショット](media/bulk-enroll-cred.png)
 
-8. **一括トークン**が正常にフェッチされたら、**[次へ]** をクリックします。
+8. **一括トークン**が正常にフェッチされたら、 **[次へ]** をクリックします。
 
 9. 必要に応じて **[アプリケーションの追加]** や **[証明書の追加]** ができます。 これらのアプリと証明書がデバイスでプロビジョニングされます。
 

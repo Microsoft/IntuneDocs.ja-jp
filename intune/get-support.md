@@ -1,14 +1,16 @@
 ---
-title: Microsoft Intune のサポートを受ける方法 | Microsoft Intune
+title: Microsoft Intune のサポートを受ける方法
+titleSuffix: Microsoft Intune
 description: Microsoft Intune の有料サブスクリプションと試用版サブスクリプションについて、オンラインと電話によるサポートを受けます。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/04/2019
+ms.date: 04/05/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01cffe9143034b9f4221cd760f9cb91f1cceebce
-ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
+ms.openlocfilehash: cf1e87d40459d194f2c4aa0ff702a137e45504ab
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57334971"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569754"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Microsoft Intune のサポートを受ける方法
 
@@ -29,16 +31,28 @@ ms.locfileid: "57334971"
 
 Microsoft サポートは、Microsoft Intune に世界的な技術、購入前、請求、およびサブスクリプションのサポートを提供しています。 有料サブスクリプションと試用版サブスクリプションについて、オンラインと電話によるサポートを利用できます。 オンライン テクニカル サポートは、英語と日本語で提供されています。 電話によるサポートとオンライン課金サポートは、他の言語でも利用できます。
 
+Intune 管理者は、 **[ヘルプとサポート]** オプションを使用して、Azure portal から Intune 用のオンライン サポート チケットを提出することができます。 サポート インシデントを作成して管理するには、"*アクション*" **microsoft.office365.supportTickets/allEntities/allTasks** を含む Azure Active Directory (Azure AD) のロールがアカウントに割り当てられている必要があります。 サポート チケットを作成するために必要な Azure AD のロールとアクセス許可については、[Azure Active Directory での管理者ロール](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)に関するページを参照してください。 
+
+**サポート インシデントの作成に関する既知の問題**
+
+アカウントに必要なアクセス許可があるが、[ヘルプとサポート] に正常にアクセスできないか、サポート インシデントを作成または管理できない場合は、次の既知の問題と解決策を確認してください。  
+- アカウントのユーザー トークンが古くなっている。 この問題を解決するには、すべてのアクティブなコンソール セッションからサインアウトし、もう一度サインインしてから、サポート インシデントを作成または管理してみます。 
+- アクティブなセッションが複数存在する。 複数のユーザーまたはセッションを使用してサインインしている場合は、1 つのコンソールを除くすべてのセッションからサインアウトします。 次に、1 つのアクティブなセッションを使用して、サポート インシデントを作成または管理してみます。
+
+アクセスの問題を解決するために必要になる可能性がある追加のアクションは、次のとおりです。
+- アクティブなブラウザー セッションのすべての cookie をクリアしてから、サポート インシデントの作成または管理を再試行します。
+- InPrivate ブラウズ セッションを使用して Intune にサインインし、サポート インシデントを作成または管理してみます。  
+
+前述の回避策で問題が解決しない場合は、[Microsoft 365 管理センター](https://admin.microsoft.com)にアクセスし、そこからサポート チケットを作成します。 現在、夏の終わりに使用可能になる予定の修正プログラムを作成中です。 
+
+
+
 >[!IMPORTANT]  
 > Intune と連携するサードパーティ製品 (Saaswedo、Cisco、Lookout など) のテクニカル サポートについては、まず、その製品の提供元に連絡してください。 Intune サポート要求を開始する前に、その他の製品が正しく構成されていることを確認します。
 >
 > Microsoft Intune に関連する問題のトラブルシューティングについては、Intune のドキュメントの[トラブルシューティングに関するセクション](help-desk-operators.md)を参照してください。
 
-IT 管理者は、**[ヘルプとサポート]** オプションを使用して、Azure portal から Intune 用のオンライン サポート チケットを提出することができます。 サポート チケットを作成するには、ご利用のアカウントを次のいずれかの [Azure Active Directory での管理者ロール](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)に割り当てる必要があります。
 
-- Intune 管理者
-- 全体管理者
-- サービス管理者  
 
 
 ## <a name="help-and-support-experience"></a>ヘルプとサポート エクスペリエンス
@@ -50,19 +64,19 @@ Intune のヘルプとサポート エクスペリエンスは、[Microsoft 365 
 ![Intune のブレード](./media/get-support/intune-blades.png)
 
 
-この新しいエクスペリエンスは、[Microsoft 365 管理センター](https://portal.office.com/AdminPortal/Home)で見られるエクスペリエンスと類似しており、[以前のヘルプとサポート エクスペリエンス](#azure-help-+-support-experience)に取って代わります。 
+この新しいエクスペリエンスは、[Microsoft 365 管理センター](https://admin.microsoft.com/)で見られるエクスペリエンスと類似しており、以前のヘルプとサポート エクスペリエンスに取って代わるものです。 
 
-[ヘルプとサポート] にアクセスするには、次の手順に従います。  
+[ヘルプとサポート] にアクセスするには、次のオプションを使用します。  
 - **デバイス管理ダッシュボード:**
    - **[ヘルプとサポート]** の使用可能な任意のオプションを選択する
-   - ポータルの右上隅にある **[?]**  アイコンを選択する
+   - ポータルの右上隅にある **[?]** アイコンを選択する
 
 - **Azure ポータル:**
    - Intune の任意のブレードまたはページから **[ヘルプとサポート]** を選択する
 
-   右上隅にある **[?]**  アイコン、または Azure portal の任意の場所にある左側のナビゲーション ウィンドウで **[ヘルプとサポート]** を選択すると、Azure の *[ヘルプとサポート]* が開きます。 最良のエクスペリエンスを得るには、Intune のブレードにある *[ヘルプとサポート]* を使用します。  
+   右上隅にある **[?]** アイコン、または Azure portal の任意の場所にある左側のナビゲーション ウィンドウで **[ヘルプとサポート]** を選択すると、Azure の *[ヘルプとサポート]* が開きます。 最良のエクスペリエンスを得るには、Intune のブレードにある *[ヘルプとサポート]* を使用します。  
 
-新しいエクスペリエンスでは、次のデバイス管理ダッシュボードの画像のように、**[ヘルプが必要ですか?]** ビューにアクセスできます。  
+新しいエクスペリエンスでは、次のデバイス管理ダッシュボードの画像のように、 **[ヘルプが必要ですか?]** ビューにアクセスできます。  
 ![デバイス管理ダッシュボードと [ヘルプが必要ですか?] ページ](./media/get-support/help-support-dashboard.png)
 
 このビューでは、以下の操作を行うことができます。
@@ -73,7 +87,7 @@ Intune のヘルプとサポート エクスペリエンスは、[Microsoft 365 
 4. この新しいワークフローを利用して前に[サポート ケース](#view-support-cases)を登録している場合、それを表示する  
 
 ### <a name="specify-details-about-an-issue"></a>問題に関する詳細を指定する
-新しいエクスペリエンスでサポートされている場所から [ヘルプとサポート] を開くと、**[ヘルプが必要ですか?]** ページが  開きます。 このページで、問題の詳細を指定できます。 詳細を入力すると、使用したキーワードに基づき、よくある問い合わせがコンソールから提示されます。 提案を選択するか、自分で問題を説明できます。 自分で説明を入力する場合、**[ヘルプを表示]** を選択して送信します。 問い合わせを送信すると、問題の解決に役立つ可能性がある状況依存情報がコンソールから返されます。
+新しいエクスペリエンスでサポートされている場所から [ヘルプとサポート] を開くと、 **[ヘルプが必要ですか?]** ページが開きます。 このページで、問題の詳細を指定できます。 詳細を入力すると、使用したキーワードに基づき、よくある問い合わせがコンソールから提示されます。 提案を選択するか、自分で問題を説明します。 自分で説明を入力する場合、 **[ヘルプを表示]** を選択して送信します。 問い合わせを送信すると、問題の解決に役立つ可能性がある状況依存情報がコンソールから返されます。
 
 次は、送信することがある問い合わせの例です。
   
@@ -83,11 +97,11 @@ Intune のヘルプとサポート エクスペリエンスは、[Microsoft 365 
 ![[ヘルプが必要ですか?] ページで問題を指定する](./media/get-support/describe-the-issue.png)
 
 ### <a name="view-context-sensitive-help"></a>状況依存のヘルプを表示する
-提案を選択するか、独自の問い合わせを送信すると、**[ソリューションの表示]** の下に状況依存の結果が表示されます。 これらの結果には、Intune 固有のセルフヘルプ ガイダンスと、クエリ条件に基づく Web 検索から返された追加の結果の両方が含まれます。  
+提案を選択するか、独自の問い合わせを送信すると、 **[ソリューションの表示]** の下に状況依存の結果が表示されます。 これらの結果には、Intune 固有のセルフヘルプ ガイダンスと、クエリ条件に基づく Web 検索から返された追加の結果の両方が含まれます。  
 ![結果の表示](./media/get-support/view-results.png)
 
 ### <a name="get-support"></a>サポートを受ける
-セルフヘルプまたは Web ベースのガイダンスでは問題が解決されない場合、コンソールを使用し、電子メールまたは電話でサポートを受けることができます。  
+セルフヘルプまたは Web ベースのガイダンスで問題が解決されない場合は、コンソールを使用して、電子メールまたは電話でサポートを受けてください。  
 **[ヘルプが必要ですか?]** ページで、使用するオプションを選択します。  
 
 - 電子メールで依頼する場合、自分の電子メール アドレスを入力してください。任意で、提出に添付ファイルを追加できます。 **[送信]** を選択し、依頼を登録します。  
@@ -107,42 +121,42 @@ Intune のヘルプとサポート エクスペリエンスは、[Microsoft 365 
 
 - Intune のヘルプとサポート エクスペリエンスを使用していないときに開いたケースは、変更ありません。 そのようなケースを表示するには、Intune エクスペリエンスに含まれない [ヘルプとサポート] ビュー、またはデバイス管理ダッシュボードを使用する必要があります。 これらのケースには **117** または **118** で始まる 15 桁の数字が与えられます。 管理共有を表示するには
 
-    1. Intune 管理者資格情報を使用して Azure (<https://portal.azure.com>) にサインインして、*[?]* を選択します。 アイコンを選択し、*[ヘルプとサポート]* を選択して、[Azure のヘルプとサポート](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)のページに移動します。
+    1. Intune 管理者資格情報を使用して Azure (<https://portal.azure.com>) にサインインして、 *[?]* を選択します。 アイコンを選択し、 *[ヘルプとサポート]* を選択して、[Azure のヘルプとサポート](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)のページに移動します。
 
     2. **ヘルプとサポート**のページでは、**最近のサポート要求**の一覧を表示し、さらにそれらを選択して詳細を確認することができます。
 
 
 ## <a name="azure-help--support-experience"></a>Azure のヘルプとサポート エクスペリエンス
-次のセクションでは、左側のナビゲーション ウィンドウで **[ヘルプとサポート]** を使用するか、Azure portal の右上隅にある **[?]**  オプションを使用して、Azure portal から引き続きアクセスできる Azure のヘルプとサポート エクスペリエンスについて説明します。 2019 年 1 月より、Intune のブレードにある *[ヘルプとサポート]* から Azure の*ヘルプとサポート* エクスペリエンスにアクセスできなくなります。  
+次のセクションでは、左側のナビゲーション ウィンドウで **[ヘルプとサポート]** を使用するか、Azure portal の右上隅にある **[?]** オプションを使用して、Azure portal から引き続きアクセスできる Azure のヘルプとサポート エクスペリエンスについて説明します。 2019 年 1 月より、Intune のブレードにある *[ヘルプとサポート]* から Azure の*ヘルプとサポート* エクスペリエンスにアクセスできなくなります。  
 
 ### <a name="create-an-online-support-ticket"></a>オンライン サポート チケットの作成
 
-1. Intune 管理者資格情報を使用して Azure portal (<https://portal.azure.com>) にサインインして、**[?]** を選択します。 アイコンを選択し、**[ヘルプとサポート]** を選択して、[Azure のヘルプとサポート](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)のページに移動します。
+1. Intune 管理者資格情報を使用して Azure portal (<https://portal.azure.com>) にサインインして、 **[?]** を選択します。 アイコンを選択し、 **[ヘルプとサポート]** を選択して、[Azure のヘルプとサポート](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)のページに移動します。
 
    ![[ヘルプとサポート] のリンクが強調表示された疑問符マークの画像](./media/azure-get-support.png)
 
-2. Azure の **[ヘルプとサポート]** のページ上で、**[新しいサポート要求]** を選択します。
+2. Azure の **[ヘルプとサポート]** のページ上で、 **[新しいサポート要求]** を選択します。
 
    ![[ヘルプとサポート] ページで [新しいサポート要求] のリンクが強調表示された画像](media/azure-support-ticket-link.png)
 
-3. Intune のほとんどのテクニカル サポートの問題では、**[基本]** タブ上で、次のオプションを選択します。
+3. Intune のほとんどのテクニカル サポートの問題では、 **[基本]** タブ上で、次のオプションを選択します。
    - **問題の種類**: **テクニカル**
    - **サブスクリプション**: <"*お使いのサブスクリプション*">
    - **サービス**:**Microsoft Intune**
-   - **[問題の種類]**: ドロップダウン メニューから、問題の種類を選択します。
-   - **[問題のサブタイプ]**: ドロップダウン メニューから、問題のサブタイプを選択します。
-   - **[件名]**: 発生している問題を簡単に説明します。
+   - **[問題の種類]** : ドロップダウン メニューから、問題の種類を選択します。
+   - **[問題のサブタイプ]** : ドロップダウン メニューから、問題のサブタイプを選択します。
+   - **[件名]** : ヘルプが必要な問題を簡単に説明します。
 
    ![[ヘルプとサポート] の [基本] タブの画像 - [新しいサポート要求] ページ](./media/get-support/help-new-support-case-basics.png)
 
    **[Next: Solutions]\(次へ: ソリューション\)** を選択して続行します。
-4. **[ソリューション]** タブ上で、チケットを提出しなくても問題の解決に役立つ可能性がある推奨手順を確認します。 手順を確認した後に、やはりサポート要求を作成することにした場合は、**[Next: Details]\(次へ: 詳細\)** をクリックします。
+4. **[ソリューション]** タブ上で、チケットを提出しなくても問題の解決に役立つ可能性がある推奨手順を確認します。 手順を確認した後に、やはりサポート要求を作成することにした場合は、 **[Next: Details]\(次へ: 詳細\)** をクリックします。
 
    ![[ヘルプとサポート] の [ソリューション] タブの画像 - [新しいサポート要求] ページ](./media/get-support/help-new-support-case-solutions.png)
-5. **[詳細]** タブ上で、問題の詳細、サポートの方法、お客様の連絡先情報を入力してから、**[Next: Review + create]\(次へ: 確認と作成\)** をクリックします。
+5. **[詳細]** タブ上で、問題の詳細、サポートの方法、お客様の連絡先情報を入力してから、 **[Next: Review + create]\(次へ: 確認と作成\)** をクリックします。
 
    ![[ヘルプとサポート] の [詳細] タブの画像 - [新しいサポート要求] ページ](./media/get-support/help-new-support-case-details.png)
-6. 情報を見直して、正しいことを確認してから、**[作成]** を選択してサポート要求を送信します。
+6. 情報を見直して、正しいことを確認してから、 **[作成]** を選択してサポート要求を送信します。
 
    ![[新しいサポート要求] ページの [review + create]\(確認と作成\) タブの画像](./media/get-support/help-new-support-case-create.png)
 
@@ -175,17 +189,16 @@ Intune のヘルプとサポート エクスペリエンスは、[Microsoft 365 
 6. Choose **Create** to submit your support request.
 -->
 >[!IMPORTANT]
->請求やサブスクリプションの質問がある場合は、ケースを開いて [Office 管理センター](https://portal.office.com/Support/SupportEntry.aspx)からサポートを受けることができます。
+>請求やサブスクリプションの質問がある場合は、ケースを開いて [Microsoft 365 管理センター](https://admin.microsoft.com/Support/SupportEntry.aspx)からサポートを受けることができます。
 
 ### <a name="view-support-requests"></a>サポート要求を表示する
 Azure portal 内からサポート要求を表示できます。 これを実行するには、次のようにします。
 
-1. Intune 管理者資格情報を使用して Azure (<https://portal.azure.com>) にサインインして、**[?]** を選択します。 アイコンを選択し、**[ヘルプとサポート]** を選択して、[Azure のヘルプとサポート](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)のページに移動します。
+1. Intune 管理者資格情報を使用して Azure (<https://portal.azure.com>) にサインインして、 **[?]** を選択します。 アイコンを選択し、 **[ヘルプとサポート]** を選択して、[Azure のヘルプとサポート](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview)のページに移動します。
 
 2. **ヘルプとサポート**のページでは、**最近のサポート要求**の一覧を表示し、さらにそれらを選択して詳細を確認することができます。
 
 ## <a name="additional-resources"></a>その他のリソース
-- [Microsoft Intune のサポートの電話番号](phone-support-contact.md)
 - [課金とサブスクリプション管理のサポート](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - [ボリューム ライセンス](https://go.microsoft.com/fwlink/p/?LinkID=282015)
 - [Intune の問題のトラブルシューティング](help-desk-operators.md)

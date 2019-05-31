@@ -6,9 +6,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 05/09/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3e9c9c538f9311da4c383b5de24048eb836ab0a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 8fccf991f93a1b2804d31418bdb0f84edf681c92
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513445"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041594"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune で Mobile Threat Defense (MTD) アプリを追加して割り当てる
 
@@ -59,6 +58,7 @@ MTD プロバイダーに対応するセクションを選択します。
   - [Zimperium](#configure-zimperium-apps)
   - [Pradeo](#configure-pradeo-apps)
   - [Better Mobile](#configure-better-mobile-apps)
+  - [Sophos Mobile](#configure-sophos-apps)
 
 ### <a name="configure-lookout-for-work-apps"></a>Lookout for Work アプリを構成する
 
@@ -81,7 +81,7 @@ MTD プロバイダーに対応するセクションを選択します。
 
         3. **com.lookout.enterprise.yourcompanyname** は、IPA に署名したときに選択したカスタマー バンドル ID で置き換えます。
 
-        4.  リダイレクト URI を追加します。**&lt;companyportal://code/>** の後に、元のリダイレクト URI を URL エンコードしたバージョンを続けます。
+        4.  リダイレクト URI を追加します。 **&lt;companyportal://code/>** の後に、元のリダイレクト URI を URL エンコードしたバージョンを続けます。
 
         5.  アプリに**デリゲートされたアクセス許可**を追加します。
 
@@ -142,7 +142,18 @@ MTD プロバイダーに対応するセクションを選択します。
 
     - iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 **手順 12** の**アプリ情報を構成する**セクションでは、この [ActiveShield アプリ ストアの URL](https://itunes.apple.com/us/app/activeshield/id980234260?mt=8&uo=4) を使用してください。
 
+
+### <a name="configure-sophos-apps"></a>Sophos アプリを構成する  
+- **Android**
+
+    - Android ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-android.md)をご覧ください。 **手順 7** には、この [Sophos アプリ ストア URL](https://play.google.com/store/apps/details?id=com.sophos.smsec) を使用してください。
+
+ - **Android**
+
+    - iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 **手順 12** の**アプリ情報を構成する**セクションでは、この [ActiveShield アプリ ストアの URL](https://itunes.apple.com/us/app/sophos-mobile-security/id1086924662?mt=8) を使用してください。
+
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>MTD アプリに iOS アプリ構成ポリシーを構成する
+
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Lookout for Work アプリ構成ポリシー
 
@@ -155,21 +166,21 @@ MTD プロバイダーに対応するセクションを選択します。
 -   iOS アプリ構成ポリシーのファイルは次のようにして**ダウンロードする**必要があります。 
     -   [Symantec Endpoint Protection Management コンソール](https://aad.skycure.com)に移動し、管理者資格情報でサインインします。
 
-    -   **[Settings]\(設定\)** に移動し、**[Integrations]\(統合\)** で **[Intune]** を選びます。 **[EMM Integration Selection]\(EMM 統合の選択\)** を選びます。 **[Microsoft]** を選び、選択内容を保存します。
+    -   **[Settings]\(設定\)** に移動し、 **[Integrations]\(統合\)** で **[Intune]** を選びます。 **[EMM Integration Selection]\(EMM 統合の選択\)** を選びます。 **[Microsoft]** を選び、選択内容を保存します。
 
-    -   **[Integration setup files]\(統合セットアップ ファイル\)** リンクをクリックし、生成された \*.zip ファイルを保存します。 この .zip ファイルには ***.plist** ファイルが含まれます。このファイルを利用し、Intune で iOS アプリ構成ポリシーが作成されます。
+    -   **[Integration setup files]\(統合セットアップ ファイル\)** リンクをクリックし、生成された \*.zip ファイルを保存します。 この .zip ファイルには * **.plist** ファイルが含まれます。このファイルを利用し、Intune で iOS アプリ構成ポリシーが作成されます。
 
     -   [iOS 用 Microsoft Intune アプリ構成ポリシーを使用する](app-configuration-policies-use-ios.md)手順に従って、SEP Mobile iOS アプリ構成ポリシーを追加します。
 
-    - **手順 8** で、**[XML データを入力する]** オプションを使用して内容を ***.plist** ファイルからコピーして、構成ポリシーの本文に貼り付けます。
+    - **手順 8** で、 **[XML データを入力する]** オプションを使用して内容を * **.plist** ファイルからコピーして、構成ポリシーの本文に貼り付けます。
 
-> [!NOTE]
+> [!NOTE]  
 > ファイルを取得できない場合は、[Symantec Endpoint Protection Mobile エンタープライズ サポート](https://support.symantec.com/en_US/contact-support.html)にお問い合わせください。
 
 ### <a name="check-point-sandblast-mobile-app-configuration-policy"></a>Check Point SandBlast Mobile アプリ構成ポリシー
 
 - [iOS 用 Microsoft Intune アプリ構成ポリシーを使用する](app-configuration-policies-use-ios.md)手順に従って、Check Point SandBlast Mobile iOS アプリ構成ポリシーを追加します。
-    - **手順 8** で、**[XML データを入力する]** オプションを使用して以下の内容をコピーし、構成ポリシーの本文に貼り付けます。
+    - **手順 8** で、 **[XML データを入力する]** オプションを使用して以下の内容をコピーし、構成ポリシーの本文に貼り付けます。
 
 ```
 <dict><key>MDM</key><string>INTUNE</string></dict>
@@ -178,7 +189,7 @@ MTD プロバイダーに対応するセクションを選択します。
 ### <a name="zimperium-app-configuration-policy"></a>Zimperium アプリ構成ポリシー
 
 - [iOS 用 Microsoft Intune アプリ構成ポリシーを使用する](app-configuration-policies-use-ios.md)手順に従って、Zimperium iOS アプリ構成ポリシーを追加します。
-    - **手順 8** で、**[XML データを入力する]** オプションを使用して以下の内容をコピーし、構成ポリシーの本文に貼り付けます。
+    - **手順 8** で、 **[XML データを入力する]** オプションを使用して以下の内容をコピーし、構成ポリシーの本文に貼り付けます。
 
 ```
 <dict>
@@ -192,11 +203,14 @@ MTD プロバイダーに対応するセクションを選択します。
 <string>{{udidlast4digits}}</string>
 </dict>
 ```
+### <a name="pradeo-app-configuration-policy"></a>Pradeo アプリ構成ポリシー
+Pradeo では、iOS でのアプリケーション構成ポリシーをサポートしていません。  アプリを構成するには、代わりに、Pradeo を使用して目的の設定であらかじめ構成されたカスタム IPA または APK ファイルを実装します。
+
 
 ### <a name="better-mobile-app-configuration-policy"></a>Better Mobile モバイル アプリ構成ポリシー
 
 - [iOS 用 Microsoft Intune アプリ構成ポリシーを使用する](app-configuration-policies-use-ios.md)手順に従って、Better Mobile iOS アプリ構成ポリシーを追加します。
-    - **手順 8** で、**[XML データを入力する]** オプションを使用して以下の内容をコピーし、構成ポリシーの本文に貼り付けます。 `https://client.bmobi.net` の URL を適切なコンソールの URL に置き換えます。
+    - **手順 8** で、 **[XML データを入力する]** オプションを使用して以下の内容をコピーし、構成ポリシーの本文に貼り付けます。 `https://client.bmobi.net` の URL を適切なコンソールの URL に置き換えます。
 
 ```
 <dict>
@@ -208,6 +222,9 @@ MTD プロバイダーに対応するセクションを選択します。
 <string>{{userprincipalname}}</string>
 </dict>
 ```
+
+### <a name="sophos-mobile-app-configuration-policy"></a>Sophos Mobile アプリ構成ポリシー
+[iOS アプリ構成ポリシーの使用](app-configuration-policies-use-ios.md)に関する記事の説明に従って、iOS アプリ構成ポリシーを作成します。
 
 ## <a name="assign-apps-to-groups"></a>アプリをグループに割り当てる
 

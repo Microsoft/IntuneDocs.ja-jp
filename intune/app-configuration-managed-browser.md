@@ -1,40 +1,52 @@
 ---
-title: ポリシーで保護されたブラウザーを使用して Web アクセスを管理する
-titlesuffix: Microsoft Intune
-description: ポリシーで保護されたブラウザーを使用して、Web の閲覧や Web データ転送を制限します。
+title: ポリシーで保護されたブラウザーを使用して会社の Web アクセスを管理する
+titleSuffix: Microsoft Intune
+description: Intune によって割り当てられたポリシーで保護されたブラウザーを使用して、会社の Web の閲覧や Web データ転送を管理します。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64cd4aa629e980bf69557d6cd2c40f8bee7bd3c6
-ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
+ms.openlocfilehash: 8f32cfbb5e05958ec9d8f303809d3ffa28c3a3ec
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086218"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569728"
 ---
-# <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune のポリシーで保護されたブラウザーを使用してインターネット アクセスを管理する
+# <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Microsoft Intune のポリシーで保護されたブラウザーを使用して Web アクセスを管理する
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune ポリシーで保護されているブラウザー (Microsoft Edge または Intune Managed Browser) を使用して、企業の Web サイトが常にインプレースの保護付きでアクセスされるようにすることができます。  Intune を使用して構成されている場合、保護ブラウザーでは以下を利用します。
 
-- アプリケーション保護ポリシー。
-- 条件付きアクセス。
-- シングル サインオン。
-- アプリケーション構成設定。
-- Azure アプリケーション プロキシの統合。
+- アプリケーション保護ポリシー
+- 条件付きアクセス
+- シングル サインオン
+- アプリケーション構成設定
+- Azure アプリケーション プロキシの統合
+
+## <a name="microsoft-edge-support"></a>Microsoft Edge のサポート
+
+iOS および Android デバイスでエンタープライズ シナリオに Microsoft Edge を使用できます。 Microsoft Edge では、Intune Managed Browser と同じ管理シナリオがすべてサポートされ、エンド ユーザー エクスペリエンスの機能強化が追加されます。 Intune ポリシーで有効になっている次の Microsoft Edge エンタープライズ機能を使用できます。 これらのエンタープライズ機能は次のとおりです。
+
+1. **デュアル ID** -ユーザーは、閲覧用に、個人アカウントに加えて、職場アカウントを追加できます。 2 つの ID の間は完全に分離されており、Office 365 と Outlook のアーキテクチャとエクスペリエンスに似ています。 Intune 管理者は、職場アカウント内に保護された閲覧エクスペリエンス用の必要なポリシーを設定できます。 
+2. **Intune アプリ保護ポリシーの統合**- 管理者は、切り取り、コピー、貼り付けの制御、画面キャプチャの禁止、ユーザーが選択したリンクを他の管理対象アプリでのみ開けるようにするなどのアプリ保護ポリシーの対象として Microsoft Edge を指定できるようになりました。
+3. **Azure アプリケーション プロキシの統合**- エンドユーザーが企業ネットワークから接続するか、インターネットから接続するかに関係なく、管理者は SaaS アプリおよび Web アプリへのアクセスを制御し、ブラウザー ベースのアプリをセキュリティで保護された Microsoft Edge ブラウザーでのみ実行させることができます。 
+4. **管理されたお気に入りとホーム ページのショートカット** - 管理者は、企業コンテキスト内のエンドユーザーがアクセスしやすいように、[お気に入り] の下に表示される URL を設定できます。 管理者は、企業ユーザーが Microsoft Edge で新しいページまたは新しいタブを開いたときに、プライマリ ショートカットとして表示されるホームページ ショートカットを設定できます。
+
+Microsoft Edge の Microsoft Intune 保護ポリシーは、組織のデータとリソースを保護するのに役立ちます。 Intune で保護されている Microsoft Edge により、会社のリソースがネイティブにインストールされたアプリ内だけでなく、Web ブラウザーを介してアクセスしたときにも保護されます。
 
 ## <a name="getting-started"></a>はじめに
 
@@ -72,32 +84,36 @@ Managed Browser または Microsoft Edge が Intune で管理されていない�
 
 ## <a name="conditional-access-for-protected-browsers"></a>保護ブラウザーの条件付きアクセス
 
-Managed Browser は、条件付きアクセスの承認済みクライアント アプリになりました。 つまり、Safari や Chrome など、その他のすべての保護されていないブラウザーからのアクセスをブロックして、モバイル ブラウザー アクセスを、ユーザーが Managed Browser しか使用できない Azure AD に接続された Web アプリに制限することができます。 この保護は、Exchange Online や SharePoint Online などの Azure リソース、Office ポータル、および [Azure AD アプリケーション プロキシ](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)を介して外部ユーザーに公開しているオンプレミス サイトにも適用できます。 
+Managed Browser は、条件付きアクセスの承認済みクライアント アプリになりました。 つまり、Safari や Chrome など、その他のすべての保護されていないブラウザーからのアクセスをブロックして、モバイル ブラウザー アクセスを、ユーザーが Managed Browser しか使用できない Azure AD に接続された Web アプリに制限することができます。 この保護は、Exchange Online や SharePoint Online などの Azure リソース、Microsoft 365 管理センター、および [Azure AD アプリケーション プロキシ](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started)を介して外部ユーザーに公開されているオンプレミス サイトにも適用できます。 
 
-Azure AD に接続された Web アプリをモバイル プラットフォームでの Intune Managed Browser の使用に制限するために、承認済みのクライアント アプリケーションを必要とする Azure AD の条件付きアクセス ポリシーを作成することができます。 
+Azure AD に接続された Web アプリをモバイル プラットフォーム上の Intune Managed Browser の使用に制限するために、承認済みのクライアント アプリケーションを必要とする条件付きアクセス ポリシーを作成することができます。 
 
-1. Azure Portal で **[Azure Active Directory]** > **[エンタープライズ アプリケーション]** > **[条件付きアクセス]** > **[新しいポリシー]** の順に選択します。 
+> [!TIP]  
+> 条件付きアクセスは、Azure Active Directory (Azure AD) テクノロジです。 *Intune* からアクセスされる条件付きアクセス ノードは、*Azure AD* からアクセスされるノードと同じです。  
+
+
+1. Intune ポータルで、 **[条件付きアクセス]**  >  **[新しいポリシー]** の順に選択します。 
 2. 次に、ブレードの **[アクセス制御]** セクションから **[許可]** を選びます。 
 3. **[承認されたクライアント アプリが必要です]** をクリックします。 
 4. **[許可]** ブレードで **[選択]** をクリックします。 このポリシーは、Intune Managed Browser アプリにのみアクセス可能にするクラウド アプリに割り当てる必要があります。
 
     ![Azure AD - Managed Browser の条件付きアクセス ポリシー](./media/managed-browser-conditional-access-01.png)
 
-5. **[割り当て]** セクションで、**[条件]** > **[クライアント アプリ]** の順に選択します。 **[クライアント アプリ]** ブレードが表示されます。
+5. **[割り当て]** セクションで、 **[条件]**  >  **[クライアント アプリ]** の順に選択します。 **[クライアント アプリ]** ブレードが表示されます。
 6. **[構成]** の下で **[はい]** をクリックして、特定のクライアント アプリにポリシーを適用します。
 7. **[ブラウザー]** がクライアント アプリとして選択されていることを確認します。
 
     ![Azure AD - Managed Browser - クライアント アプリの選択](./media/managed-browser-conditional-access-02.png)
 
     > [!NOTE]
-    > これらのクラウド アプリケーションにアクセスできるネイティブ アプリ (ブラウザー ベースではないアプリ) を制限する場合は、**[モバイル アプリとデスクトップ クライアント]** を選択することもできます。
+    > これらのクラウド アプリケーションにアクセスできるネイティブ アプリ (ブラウザー ベースではないアプリ) を制限する場合は、 **[モバイル アプリとデスクトップ クライアント]** を選択することもできます。
 
-8. **[割り当て]** セクションで、**[ユーザーとグループ]** を選択し、このポリシーを割り当てるユーザーまたはグループを選択します。 
+8. **[割り当て]** セクションで、 **[ユーザーとグループ]** を選択し、このポリシーを割り当てるユーザーまたはグループを選択します。 
 
     > [!NOTE]
     > アプリ構成ポリシーを受信するには、Intune App Protection ポリシーもターゲットとする必要があります。 Intune アプリ保護ポリシーの作成の詳細については、「[アプリ保護ポリシーとは](app-protection-policy.md)」をご覧ください。
 
-9. **[割り当て]** セクションで、**[クラウド アプリ]** を選択して、このポリシーで保護するアプリを選択します。
+9. **[割り当て]** セクションで、 **[クラウド アプリ]** を選択して、このポリシーで保護するアプリを選択します。
 
 上記のポリシーが構成されると、ユーザーは強制的に Intune Managed Browser を使用して、このポリシーで保護している Azure AD に接続されている Web アプリにアクセスします。 ユーザーが、このシナリオで管理されていないブラウザーを使用しようとすると、Intune Managed Browser を代わりに使用する必要があることが通知されます。
 
@@ -118,27 +134,27 @@ SSO では、iOS 上の Microsoft Authenticator アプリまたは Android 上�
 >適用するアプリの構成については、ユーザーの保護されたブラウザーまたはデバイス上の別のアプリが既に [Intune App Protection ポリシー]( app-protection-policy.md)で管理されている必要があります
 
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
-2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3.  [管理] リストの **[クライアント アプリ]** ブレードで、**[アプリ構成ポリシー]** を選択します。
-4.  **[アプリ構成ポリシー]** ブレードで、**[追加]** を選択します。
+2. **[すべてのサービス]**  >  **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3.  [管理] リストの **[クライアント アプリ]** ブレードで、 **[アプリ構成ポリシー]** を選択します。
+4.  **[アプリ構成ポリシー]** ブレードで、 **[追加]** を選択します。
 5.  **[構成ポリシーの追加]** ブレードで **[名前]** を入力し、必要に応じてアプリ構成設定の **[説明]** を入力します。
-6.  **[デバイス登録の種類]** には、**[管理対象アプリ]** を選択します。
-7.  **[必要なアプリの選択]** を選択して、**[対象アプリ]** ブレードで、iOS、Android、またはその両方向けの **[Managed Browser]** または **[Microsoft Edge]**(あるいは両方) を選択します。
+6.  **[デバイス登録の種類]** には、 **[管理対象アプリ]** を選択します。
+7.  **[必要なアプリの選択]** を選択して、 **[対象アプリ]** ブレードで、iOS、Android、またはその両方向けの **[Managed Browser]** または **[Microsoft Edge]** (あるいは両方) を選択します。
 8.  **[OK]** を選択して **[構成ポリシーの追加]** ブレードに戻ります。
 9.  **[構成設定]** を選択します。 **[構成]** ブレードで、Managed Browser の構成を指定するキーと値のペアを定義します。 定義できる別のキーと値のペアについては、この記事の後半のセクションで説明します。
-10. 終了したら、**[OK]** を選択します。
-11. **[構成ポリシーの追加]** ブレードで、**[追加]** を選択します。
-12. 新しい構成が作成され、**[アプリの構成]** ブレードに表示されます。
+10. 終了したら、 **[OK]** を選択します。
+11. **[構成ポリシーの追加]** ブレードで、 **[追加]** を選択します。
+12. 新しい構成が作成され、 **[アプリの構成]** ブレードに表示されます。
 
 
 ## <a name="assign-the-configuration-settings-you-created"></a>作成した構成設定を割り当てる
 
 設定をユーザーの Azure AD グループに割り当てます。 ユーザーが対象の保護ブラウザー アプリをインストールしている場合、そのアプリは指定された設定で管理されます。
 
-1. Intune モバイル アプリケーション管理ダッシュボードの **[クライアント アプリ]** ブレードで、**[アプリ構成ポリシー]** を選択します。
+1. Intune モバイル アプリケーション管理ダッシュボードの **[クライアント アプリ]** ブレードで、 **[アプリ構成ポリシー]** を選択します。
 2. アプリの構成の一覧から、割り当てる構成を選択します。
-3. 次のブレードで、**[割り当て]** を選択します。
-4. **[割り当て]** ブレードで、アプリの構成を割り当てる Azure AD グループを選択し、**[OK]** を選択します。
+3. 次のブレードで、 **[割り当て]** を選択します。
+4. **[割り当て]** ブレードで、アプリの構成を割り当てる Azure AD グループを選択し、 **[OK]** を選択します。
 
 
 ## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>保護ブラウザーのアプリケーション プロキシ設定を構成する方法
@@ -216,7 +232,7 @@ Microsoft Edge または Managed Browser アプリの構成を作成する手順
 ### <a name="url-format-for-allowed-and-blocked-urls"></a>許可される URL とブロックされる URL の形式
 許可リストとブロック リストで URL を指定するときに使用できる形式とワイルドカードについて説明します。
 
-- ワイルドカード記号 (**&#42;**) は、以下の許可されているパターン リストの規則に従って使用できます。
+- ワイルドカード記号 ( **&#42;** ) は、以下の許可されているパターン リストの規則に従って使用できます。
 
 - リストに入力するときは、すべての URL の先頭に必ず **http** または **https** を付けてください。
 
@@ -264,15 +280,15 @@ Microsoft Edge または Managed Browser アプリの構成を作成する手順
   - `http://www.contoso.com: /*`
 ## <a name="opening-links-within-the-intune-managed-browser-vs-microsoft-edge"></a>Intune Managed Browser または Microsoft Edge 内でリンクを開くMicrosoft Edge 
 
-Intune Managed Browser および Microsoft Edge は現在、両方ともポリシーで管理されているブラウザー/保護されているブラウザーと見なされています。 今日、既存のアプリ保護ポリシーは Intune マネージド アプリからの Web リンクになっており、使用するシナリオおよびプラットフォームに応じて特定のブラウザーで開きます。 
+Intune Managed Browser と Microsoft Edge は、両方ともポリシーで管理されているブラウザー/保護されているブラウザーと見なされるようになりました。 今日、既存のアプリ保護ポリシーは Intune マネージド アプリからの Web リンクになっており、使用するシナリオおよびプラットフォームに応じて特定のブラウザーで開きます。 
 
-Android 上の場合:  
-* ポリシー マネージド ブラウザーが必須になっているすべての Intune マネージド アプリにおいて、アプリ構成の設定 "com.microsoft.intune.useEdge" が "true" に設定されていない限り、MB および Edge の両方がデバイス上にある場合は Managed Browser。  
-* Microsoft Edge のみがデバイス上にあり、ポリシーの対象になっている場合は、Microsoft Edge。
-* Managed Browser のみがデバイス上にあり、ポリシーの対象になっている場合は、Managed Browser。 
+Android 上の場合: 
+* ユーザーが Managed Browser と Microsoft Edge の両方をデバイスにダウンロードしている場合は、Managed Browser が開きます。 Managed Browser の代わりに Microsoft Edge が開くようにするには、ポリシー マネージド ブラウザーが必須になっているすべての Intune マネージド アプリで、アプリ構成の設定 "com.microsoft.intune.useEdge" を "true" に設定します。  
+* Microsoft Edge のみがデバイス上にあり、ポリシーの対象になっている場合は、Microsoft Edge が開きます。
+* Managed Browser のみがデバイス上にあり、ポリシーの対象になっている場合は、Managed Browser が開きます。 
 
-iOS 上で、iOS または 9.0.9+ 用の Intune SDK を統合したアプリ向けの場合:  
-* すべての Intune マネージド アプリにおいて、アプリ構成の設定 "com.microsoft.intune.useEdge" が "true" に設定されていない限り、MB および Edge の両方がデバイス上にある場合は、Managed Browser。**または**、Microsoft Edge がインストールされており、ポリシーが受信済みの場合は、Microsoft Edge。 
+iOS 上で、iOS または 9.0.9+ 用の Intune SDK を統合したアプリ向けの場合: 
+* すべての Intune マネージド アプリにおいて、アプリ構成の設定 "com.microsoft.intune.useEdge" が "true" に設定されていない限り、MB と Edge の両方がデバイス上にある場合は、Managed Browser。**または**、Microsoft Edge がインストールされており、ポリシーが受信済みの場合は、Microsoft Edge。 
 * Microsoft Edge のみがデバイス上にあり、ポリシーで対象になっており、かつ、ポリシーが受信済みの場合は、Microsoft Edge。 
 * Managed Browser のみがデバイス上にあり、ポリシーの対象になっており、かつ、ポリシーが受信済みの場合は、Managed Browser。
 
@@ -302,7 +318,7 @@ iOS デバイスに Managed Browser をインストールしているエンド �
 
 -   Managed Browser では、サイトへの直接のアクセスのみをブロックできます。 中間サービス (翻訳サービスなど) がサイトへのアクセスに使用される場合、そのアクセスはブロックされません。
 
--   認証を許可し、Intune ドキュメントにアクセスするために、**&#42;.microsoft.com** は許可またはブロック リスト設定の対象から除外されます。 常に許可されます。
+-   認証を許可し、Intune ドキュメントにアクセスするために、 **&#42;.microsoft.com** は許可またはブロック リスト設定の対象から除外されます。 常に許可されます。
 
 ### <a name="turn-off-usage-data"></a>使用状況データをオフにする
 Microsoft は、Microsoft の製品やサービスを改善するために、Managed Browser のパフォーマンスおよび使用に関する匿名データを自動的に収集します。 ただし、ユーザーはデバイスの **[使用状況データ]** 設定を使用して、データの収集を無効にすることができます。 このデータの収集方法は制御できません。

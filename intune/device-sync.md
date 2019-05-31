@@ -5,22 +5,23 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2018
-ms.topic: article
+ms.date: 02/28/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b766f9f92fb5d0e8cedfbebbac7246f48b90a6a2
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6f13e00abad5b48dcd7996cf9df1cc5756f250d3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846130"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57388108"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>デバイスを Intune と同期して最新のポリシーとアクションを取得する
 
@@ -40,12 +41,14 @@ ms.locfileid: "55846130"
 ## <a name="sync-a-device"></a>デバイスを同期する
 
 1. [Azure ポータル](https://portal.azure.com)にサインインします。
-2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。 
-3. **Intune** で、**[デバイス]** > **[すべてのデバイス]** の順に選択します。
-4. 管理するデバイスの一覧で、デバイスを選択して、**[詳細]**、**[同期]** の順に選択します。
-5. 確定するには、**[はい]** を選択します。
+2. **[すべてのサービス]** を選択し、 **[Intune]** をフィルターとして適用し、 **[Microsoft Intune]** を選択します。 
+3. **Intune** で、 **[デバイス]**  >  **[すべてのデバイス]** の順に選択します。
+4. 管理するデバイスの一覧で、デバイスを選択して、 **[詳細]** 、 **[同期]** の順に選択します。
+5. 確定するには、 **[はい]** を選択します。
 
-同期操作の状態を表示するには、**[デバイス]** > **[デバイス アクション]** の順に選択します。
+同期操作の状態を表示するには、 **[デバイス]**  >  **[デバイス アクション]** の順に選択します。
+
+標準的な Intune ポリシーのチェックイン頻度は、[サイクル時間の更新](device-profiles.md)で確認することができます。
 
 ## <a name="retryable-error-codes"></a>再試行可能なエラー コード
 

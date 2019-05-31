@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 4/24/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d089d0e9724a1ce150fa7e8697c80734fb0d7e9c
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 68f5fad9d05787b6e79792d594480547ce10cf81
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568428"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764918"
 ---
 # <a name="what-is-device-enrollment"></a>デバイス登録とは
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -67,11 +67,19 @@ Intune では、従業員のデバイスやアプリ、従業員が会社のデ�
 
 ## <a name="android-enrollment-methods"></a>Android の登録方法
 
-| **方法** |  **リセットが必要** |    **ユーザー アフィニティ**   |   **ロック済み** | **詳細**|
+| **個人用** | **登録方法** | **リセットが必要** | **ユーザー アフィニティ** | **ロック済み** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#bring-your-own-device)** | [いいえ]|   はい |   [いいえ] | [詳細情報](./android-enroll.md)|
-|**[DEM](#device-enrollment-manager)**| [いいえ] |[いいえ] |[いいえ]  |[詳細情報](./device-enrollment-manager-enroll.md)|
-|**Android 仕事用プロファイル**| [いいえ] | はい | [いいえ]| [詳細情報](./android-work-profile-enroll.md) |
+|**Android のデバイス管理**|**ポータル サイトからユーザーが開始** | [いいえ] | はい | [いいえ] | [詳細情報](https://docs.microsoft.com/intune-user-help/enroll-device-android-company-portal)|
+|**Android エンタープライズの仕事用プロファイル**|**ポータル サイトからユーザーが開始**| [いいえ] | はい | [いいえ] | [詳細情報](./android-work-profile-enroll.md)|
+
+
+| **企業** | **登録方法** | **リセットが必要** | **ユーザー アフィニティ** | **ロック済み** | **詳細**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**Android のデバイス管理**|**ポータル サイトから [DEM](#device-enrollment-manager) が開始**| [いいえ] | [いいえ] | [いいえ] |[詳細情報](./device-enrollment-manager-enroll.md)|
+|**Android のデバイス管理**|**(事前に宣言されている IMEI または SN) ポータル サイトからユーザーが開始**| [いいえ] | はい | [いいえ] | [詳細情報](./corporate-identifiers-add.md)|
+|**Zebra モビリティ拡張が装備された Android デバイス管理**|**ポータル サイトからユーザーまたは[DEM](#device-enrollment-manager) が開始**| [いいえ] | ユーザーが開始した場合は [はい]、[DEM](#device-enrollment-manager) が開始した場合は [いいえ] | [いいえ] | [詳細情報](./android-zebra-mx-overview.md)|
+|**Android Enterprise 専用**|**NFC、トークン、QR コード、ゼロ タッチ**| はい | [いいえ] | ポリシーで構成可能 | [詳細情報](./android-kiosk-enroll.md)|
+|**Android Enterprise のフル マネージド (プレビュー)**|**NFC、トークン、QR コード、ゼロ タッチ**| はい | はい | ポリシーで構成可能 | [詳細情報](./android-dedicated-devices-fully-managed-enroll.md)|
 
 
 ## <a name="bring-your-own-device"></a>Bring Your Own Device

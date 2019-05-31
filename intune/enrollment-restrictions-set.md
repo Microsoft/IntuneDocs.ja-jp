@@ -1,15 +1,16 @@
 ---
 title: Microsoft Intune で登録制限を設定する
-titlesuffix: ''
+titleSuffix: ''
 description: Intune でプラットフォームごとに登録を制限し、デバイス登録の上限数を設定します。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 08/17/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cfbfb26569a85d8cd19b840ab86ec58160a1dec4
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 1080ae8a73223ad16445d0d2233434faa818b04b
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839673"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59569117"
 ---
 # <a name="set-enrollment-restrictions"></a>登録制限を設定する
 
@@ -42,10 +43,11 @@ ms.locfileid: "55839673"
   - iOS
   - macOS
   - Windows
-- iOS、Android、Android 仕事用プロファイル、および Windows のプラットフォームのオペレーティング システム バージョン。 (使用できる Windows のバージョンは 10 のみです。 Windows 8.1 が許可される場合は、空白のままにしておきます)。
+  - Windows Mobile
+- iOS、Android、Android 仕事用プロファイル、Windows、および Windows Mobile のプラットフォームのオペレーティング システム バージョン。 (使用できる Windows のバージョンは 10 のみです。 Windows 8.1 が許可される場合は、空白のままにしておきます)。
   - 最小バージョン。
   - 最大バージョン。
-- 個人所有デバイスを制限します (iOS、Android、Android 仕事用プロファイル、macOS、Windows のみ)。
+- 個人所有デバイスを制限します (iOS、Android、Android 仕事用プロファイル、macOS、Windows、Windows Mobile のみ)。
 
 ## <a name="default-restrictions"></a>既定の制限
 
@@ -55,14 +57,14 @@ ms.locfileid: "55839673"
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** を選択し、**Intune** を検索して **[Intune]** を選択します。
-3. **[デバイスの登録]** > **[登録の制限]** を選択します。
+3. **[デバイスの登録]**  >  **[登録の制限]** を選択します。
 4. **[制限の作成]** を選択します。
 5. 制限に名前付け、説明を加えます。
-6. **[制限の種類]** を選択し、**[作成]** を選択します。
-7. デバイス数の制限については、**[デバイスの制限]** を選択して、ユーザーが登録できるデバイスの最大数を設定します。
-8. デバイスの種類の制限については、**[プラットフォーム]**、**[プラットフォーム構成]** の順に選択して、各種のプラットフォームおよびバージョンを許可またはブロックします。
-9. **[割り当て]** > **[+ グループの選択]** を選択します。
-10. **[グループの選択]** で、1 つ以上のグループを選択し、**[選択]** を選択します。 制限が適用されるのは、制限が割り当てられているグループのみです。 少なくとも 1 つのグループに割り当てていない限り、制限は何も影響しません。
+6. **[制限の種類]** を選択し、 **[作成]** を選択します。
+7. デバイス数の制限については、 **[デバイスの制限]** を選択して、ユーザーが登録できるデバイスの最大数を設定します。
+8. デバイスの種類の制限については、 **[プラットフォーム]** 、 **[プラットフォーム構成]** の順に選択して、各種のプラットフォームおよびバージョンを許可またはブロックします。
+9. **[割り当て]**  >  **[+ グループの選択]** を選択します。
+10. **[グループの選択]** で、1 つ以上のグループを選択し、 **[選択]** を選択します。 制限が適用されるのは、制限が割り当てられているグループのみです。 少なくとも 1 つのグループに割り当てていない限り、制限は何も影響しません。
 11. **[保存]** を選択します。
 12. 既定値の制限のすぐ上の優先度を持つ新しい制限が作成されます。 [優先度は変更](#change-enrollment-restriction-priority)することができます。
 
@@ -72,8 +74,8 @@ ms.locfileid: "55839673"
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** を選択し、**Intune** を検索して **[Intune]** を選択します。
-3. **[デバイスの登録]** > **[登録の制限]** を選択します。
-4. **[デバイスの種類の制限]** で、設定する制限を選択し、**[プロパティ]** > **[プラットフォームの選択]** の順に選択します。 一覧されたプラットフォームごとに、**[許可]** または **[ブロック]** を選択します。
+3. **[デバイスの登録]**  >  **[登録の制限]** を選択します。
+4. **[デバイスの種類の制限]** で、設定する制限を選択し、 **[プロパティ]**  >  **[プラットフォームの選択]** の順に選択します。 一覧されたプラットフォームごとに、 **[許可]** または **[ブロック]** を選択します。
     ![スクリーンショット。プラットフォームを許可またはブロックします。](media/enrollment-restrictions-set/platform-allow-block.png)
 5. **[OK]** を選びます。
 6. **[プラットフォームの構成]** を選択します。
@@ -99,11 +101,11 @@ ms.locfileid: "55839673"
  - 登録ユーザーは[デバイス登録マネージャー アカウント]( device-enrollment-manager-enroll.md)を使用しています。
 - デバイスは [Windows AutoPilot](enrollment-autopilot.md) 経由で登録されます。
 - デバイスは、Windows Autopilot に登録されますが、Windows 設定からの MDM 登録のみオプションではありません。
-- デバイスの IMEI 番号が **[デバイスの登録]** > **[[業務用デバイスの ID]](corporate-identifiers-add.md)** に記載されています。 (Windows Phone 8.1 ではサポートされていません。)
+- デバイスの IMEI 番号が **[デバイスの登録]**  >  **[[業務用デバイスの ID]](corporate-identifiers-add.md)** に記載されています。 (Windows Phone 8.1 ではサポートされていません。)
 - デバイスが[一括プロビジョニング パッケージ](windows-bulk-enroll.md)経由で登録されます。
 - デバイスが GPO または[共同管理用の SCCM からの自動登録](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md)経由で登録されます。
  
-次の登録は Intune で会社として見なされますが、Intune 管理者のデバイスごとのコントロールがないため、ブロックされます。
+次の登録は Intune で会社として見なされます。 しかし、Intune 管理者のデバイスごとのコントロールがないため、ブロックされます。
  - [自動 MDM 登録](windows-enroll.md#enable-windows-10-automatic-enrollment)と [Windows セットアップ中の Azure Active Directory 参加](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*。
 - [自動 MDM 登録](windows-enroll.md#enable-windows-10-automatic-enrollment)と [Windows 設定からの Azure Active Directory 参加](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)。
  
@@ -119,16 +121,27 @@ ms.locfileid: "55839673"
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** を選択し、**Intune** を検索して **[Intune]** を選択します。
-3. **[デバイスの登録]** > **[登録の制限]** を選択します。
+3. **[デバイスの登録]**  >  **[登録の制限]** を選択します。
 4. **[デバイス数の制限]** で、設定する制限を選択します。
 5. **[デバイスの制限]** を選択し、ドロップダウン リストで、ユーザーが登録できるデバイスの最大数を選択します。
     ![デバイス数の制限を示す [デバイス数の制限] ブレード](./media/device-restrictions-limit.png)
 6. **[保存]** を選択します。
 
 
-BYOD の登録中にユーザーがデバイス登録の上限に達すると、そのことを伝える通知が表示されます。 たとえば、iOS では次のようになります。
+BYOD の登録中にユーザーがデバイス登録の上限に達すると、そのことを伝える通知が表示されます。 たとえば、iOS の場合:
 
 ![iOS のデバイス制限通知](./media/enrollment-restrictions-ios-set-limit-notification.png)
+
+> [!IMPORTANT]
+> デバイス数の制限は、次の Windows 登録の種類に適用されません。
+> - 共同管理登録
+> - GPO の登録
+> - Azure Active Directory 参加済み登録
+> - Azure Active Directory 参加済み一括登録
+> - Autopilot 登録
+>
+> これらの登録の種類は共有デバイス シナリオと見なされるため、それらにデバイス数制限は適用されません。
+> これらの登録の種類のハード制限を [Azure Active Directory に](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings)設定できます。
 
 ## <a name="change-enrollment-restriction-priority"></a>登録制限の優先度を変更する
 
@@ -142,6 +155,6 @@ BYOD の登録中にユーザーがデバイス登録の上限に達すると、
 
 1. Azure ポータルにサインインします。
 2. **[その他のサービス]** を選択し、**Intune** を検索して **[Intune]** を選択します。
-3. **[デバイスの登録]** > **[登録の制限]** を選択します。
+3. **[デバイスの登録]**  >  **[登録の制限]** を選択します。
 4. 優先度リスト内の制限にマウス ポインタを移動させます。
 5. 3 つの縦向きドットを使用して、リスト内の目的の位置に優先度をドラッグします。

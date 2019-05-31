@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/09/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c361c6054cf52c802155587084eaea76e024f78c
-ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
-ms.translationtype: HT
+ms.openlocfilehash: 45f93416a8fd6190549a958f1b1a7e5f3bdf6df1
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59429184"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045304"
 ---
 # <a name="reference-for-devices-entities"></a>デバイス エンティティの参照
 
@@ -120,8 +119,8 @@ ms.locfileid: "59429184"
 | Unknown                         | 不明なエラー。                                                                                                |
 | 認証                  | 認証に失敗しました。                                                                                        |
 | 承認                   | 呼び出しは認証されましたが、登録する権限がありません。                                                         |
-| AccountValidation               | 登録用のアカウントの検証に失敗しました  (アカウントはブロックされ、登録は有効になっていません)。                      |
-| UserValidation                  | ユーザーを検証できませんでした  (ユーザーが存在しておらず、ライセンスが欠落しています)。                                           |
+| AccountValidation               | 登録用のアカウントの検証に失敗しました (アカウントはブロックされ、登録は有効になっていません)。                      |
+| UserValidation                  | ユーザーを検証できませんでした (ユーザーが存在しておらず、ライセンスが欠落しています)。                                           |
 | DeviceNotSupported              | デバイスがモバイル デバイス管理でサポートされていません。                                                         |
 | InMaintenance                   | アカウントがメンテナンス中です。                                                                                    |
 | BadRequest                      | クライアントによって、サービスで認識/サポートされていない要求が送信されました。                                        |

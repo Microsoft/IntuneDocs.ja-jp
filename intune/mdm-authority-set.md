@@ -1,6 +1,6 @@
 ---
 title: モバイル デバイス管理機関の設定
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune でモバイル デバイス管理機関を設定します。
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 04/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99b913b23638a507ed9b0a5cb32afff66679a164
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 898c4eee19aa50136736f4ee72c55e4e8931317d
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231912"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567479"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>モバイル デバイス管理機関の設定
 
@@ -34,12 +35,12 @@ ms.locfileid: "57231912"
 
 - **Intune スタンドアロン** - Azure Portal を利用して構成する、クラウドのみの管理。 Intune で提供される機能がすべて含まれます。 [Intune コンソールで MDM 機関を設定](#set-mdm-authority-to-intune)します。
 
-- **Intune ハイブリッド** - Intune クラウド ソリューションと System Center Configuration Manager の統合。 Configuration Manager コンソールを使用して Intune を構成します。 [Configuration Manager で MDM 機関を設定](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription)します。 
+- **Intune 共同管理** - Intune クラウド ソリューションと Windows 10 用 System Center Configuration Manager デバイスの統合。 Configuration Manager コンソールを使用して Intune を構成します。 [Intune へのデバイスの自動登録を構成します](https://docs.microsoft.com/sccm/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune)。 
 
     > [!Important]
-    >ハイブリッド MDM への新規顧客のオンボードは、次のリリースから行われなくなります。 詳細については、「[Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150)」 (ハイブリッド MDM から Azure での Intune に移行する) のブログ記事を参照してください。
+    >新規のハイブリッド MDM の顧客のオンボーディングは非推奨となりました。 詳細については、「[Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150)」 (ハイブリッド MDM から Azure での Intune に移行する) のブログ記事を参照してください。
 
-- **Office 365 のモバイル デバイス管理** - Office 365 と Intune クラウド ソリューションの統合。 Office 365 管理センターから Intune を構成します。 Intune スタンドアロンで利用できる機能の一部が含まれます。 Office 365 管理センターで MDM 機関を設定します。
+- **Office 365 のモバイル デバイス管理** - Office 365 と Intune クラウド ソリューションの統合。 Microsoft 365 管理センターから Intune を構成します。 Intune スタンドアロンで利用できる機能の一部が含まれます。 Microsoft 365 管理センターで MDM 機関を設定します。
 
 > [!IMPORTANT]
 > Configuration Manager 1610 以降のバージョンと Microsoft Intune バージョン 1705 では、MDM 機関の変更にあたって Microsoft サポートに問い合わせる必要はありません。また、既存のマネージド デバイスの登録を解除して再登録する必要もありません。 詳細については、「[MDM 機関を Configuration Manager に変更する準備](mdm-authority-set.md#prepare-to-change-the-mdm-authority-to-configuration-manager)」を参照してください。
@@ -49,8 +50,8 @@ ms.locfileid: "57231912"
 MDM 機関をまだ設定していない場合は、次の手順に従います。 MDM 機関を別の MDM 機関に変更するには、後述する[MDM 機関の変更](#prepare-to-change-the-mdm-authority-to-configuration-manager)に関するセクションを参照してください。
 
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
-2. **すべてのサービス** > **Intune** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3. オレンジのバナーを選択し、**[モバイル デバイス管理機関]** 設定を開きます。 オレンジのバナーは、MDM 機関をまだ設定していない場合にのみ表示されます。
+2. **[すべてのサービス]**  >  **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+3. オレンジのバナーを選択し、 **[モバイル デバイス管理機関]** 設定を開きます。 オレンジのバナーは、MDM 機関をまだ設定していない場合にのみ表示されます。
 4. **[モバイル デバイス管理機関]** で、次の選択肢から MDM 機関を選択します。
    - **Intune MDM 機関**
    - **Configuration Manager MDM 機関**
@@ -102,8 +103,8 @@ MDM 機関の変更に備えて、次の情報を確認します。
 ## <a name="change-the-mdm-authority-to-configuration-manager"></a>MDM 機関を Configuration Manager に変更する
 
 1. Configuration Manager コンソールで **[管理]** &gt; **[概要]** &gt; **[クラウド サービス]** &gt; **[Microsoft Intune サブスクリプション]** に移動し、Intune サブスクリプションを選択して追加します。
-2. Intune で MDM 機関を設定したときに元々使用していた Intune テナントにサインインし、**[次へ]** をクリックします。
-3. **[MDM 機関を Configuration Manager に変更]** を選択し、**[次へ]** をクリックします。
+2. Intune で MDM 機関を設定したときに元々使用していた Intune テナントにサインインし、 **[次へ]** をクリックします。
+3. **[MDM 機関を Configuration Manager に変更]** を選択し、 **[次へ]** をクリックします。
 4. 新しいハイブリッド MDM 機関で継続して管理するすべてのユーザーを含むユーザー コレクションを選択します。
 5. **[次へ]** をクリックして、ウィザードを完了します。 これで MDM 機関は **Configuration Manager** に変更されました。
 6. 同じ Intune テナントを使用して [Microsoft Intune 管理コンソール](http://manage.microsoft.com)にサインインし、MDM 機関が **[Configuration Manager に設定]** に変更されたことを確認します。
@@ -114,7 +115,7 @@ MDM 機関の変更に備えて、次の情報を確認します。
 
 ## <a name="change-mdm-authority-to-office-365"></a>MDM 機関を Office 365 に変更する
 
-既存の Intune サービスに加えて Office 365 MDM をアクティブにするには、[https://protection.office.com](https://protection.office.com) に進み、**[データ損失防止]** > **[デバイス セキュリティ ポリシー]** > **[View list of Managed Devices]\(マネージド デバイスの一覧を表示\)** > **[始めましょう]** の順に選択します。
+既存の Intune サービスに加えて Office 365 MDM をアクティブにするには、[https://protection.office.com](https://protection.office.com) に進み、 **[データ損失防止]**  >  **[デバイス セキュリティ ポリシー]**  >  **[View list of Managed Devices]\(マネージド デバイスの一覧を表示\)**  >  **[始めましょう]** の順に選択します。
 
 詳細については、「[Office 365 でのモバイル デバイス管理 (MDM) の設定](https://support.office.com/en-us/article/Set-up-Mobile-Device-Management-MDM-in-Office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)」を参照してください。
 

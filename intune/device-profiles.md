@@ -1,14 +1,15 @@
 ---
 title: Microsoft Intune のデバイスの機能と設定 - Azure | Microsoft Docs
-description: 機能、制限事項、電子メール、WiFi、VPN、教育、証明書、Windows 10 のアップグレード、BitLocker と Windows Defender、Windows 情報保護、管理用テンプレート、および Azure portal のカスタム デバイス構成設定を含む、さまざまな Microsoft Intune デバイス プロファイルの概要。 これらのプロファイルを使用して、社内のデータとデバイスを管理および保護します。
+description: さまざまな Microsoft Intune デバイス プロファイルの概要。 機能、制限事項、電子メール、WiFi、VPN、教育、証明書、Windows 10 のアップグレード、BitLocker と Windows Defender、Windows 情報保護、管理用テンプレート、および Azure portal のカスタム デバイス構成設定に関する情報が得られます。 これらのプロファイルを使用して、社内のデータとデバイスを管理および保護します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
@@ -16,90 +17,35 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b9bd8aaca9aaf6e39c7a120518eeca1cef31511
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 4dc68071886b8f2a0852feb69bf78c2c265f046d
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845093"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59570352"
 ---
-# <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune でデバイス プロファイルを使用してデバイスに機能設定を適用する
+# <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Microsoft Intune でデバイス プロファイルを使用してデバイスに機能と設定を適用する
 
-Microsoft Intune には、組織内のさまざまなデバイスで有効または無効にできる設定と機能が含まれています。 これらの設定と機能は "構成プロファイル" に追加されます。 プロファイルをさまざまなデバイス用に、また、iOS、Android、Windows を含め、さまざまなプラットフォーム用に作成してから、Intune を使用して、組織内のデバイスにそのプロファイルを適用することができます。
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-プロファイルの例には、次のようなものがあります。
+Microsoft Intune には、組織内のさまざまなデバイスで有効または無効にできる設定と機能が含まれています。 これらの設定と機能は "構成プロファイル" に追加されます。 異なるデバイスおよび iOS、Android、Windows などの異なるプラットフォームに対するプロファイルを作成することができます。 次に、Intune を使用して、デバイスへのプロファイルの適用 ("割り当て") を行います。
+
+モバイル デバイス管理 (MDM) ソリューションの一部として、これらの構成プロファイルを使用してさまざまなタスクを実行します。 プロファイルの例には、次のようなものがあります。
 
 - Windows 10 デバイスでは、Internet Explorer で ActiveX コントロールをブロックするプロファイル テンプレートを使用します。
 - iOS および macOS デバイスでは、ユーザーが組織内の AirPrint プリンターを使用できるようにします。
 - デバイス上の Bluetooth へのアクセスを許可または禁止します。
 - さまざまなデバイスに企業ネットワークへのアクセスを提供する WiFi または VPN プロファイルを作成します。
 - インストールのタイミングを含め、ソフトウェア更新プログラムを管理します。
-- 1 つのアプリ、または多くのアプリを実行できる専用のキオスク デバイスである、Android デバイスを実行します。
+- 1 つのアプリ、または多くのアプリを実行できる専用のキオスク デバイスとして、Android デバイスを実行します。
 
-この記事ではプロファイルを作成する手順を一覧表示し、作成できるさまざまな種類のプロファイルの概要を示します。 これらのプロファイルを使用して、デバイスで一部の機能を許可または禁止します。
-
-## <a name="create-the-profile"></a>プロファイルの作成
-
-1. [Azure portal](https://portal.azure.com) で、**[すべてのサービス]** を選択し、**Intune** でフィルター処理して、**[Intune]** を選択します。
-
-2. **[デバイス構成]** を選択します。 次のオプションがあります。
-
-    - **概要**:プロファイルの状態を一覧表示し、ユーザーとデバイスに割り当てたプロファイルに関する追加の詳細を提供します。
-    - **管理**:デバイス プロファイルを作成し、カスタムの [PowerShell スクリプト](intune-management-extension.md)をアップロードしてプロファイル内で実行し、[eSIM](esim-device-configuration.md) を使用してデバイスにデータ プランを追加します。
-    - **監視**:プロファイルの状態が成功か失敗かを確認し、プロファイルのログも表示します。
-    - **セットアップ**:SCEP または PFX 証明書機関を追加するか、プロファイルで[通信費管理サービス](telecom-expenses-monitor.md)を有効にします。
-
-3. **[プロファイル]** > **[プロファイルの作成]** の順に選択します。 次のプロパティを入力します。
-
-   - **名前**: プロファイルのわかりやすい名前を入力します。
-   - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
-   - **[プラットフォーム]**:デバイスのプラットフォームを選択します。 次のようなオプションがあります。  
-
-       - **Android**
-       - **Android エンタープライズ**
-       - **Android**
-       - **macOS**
-       - **Windows Phone 8.1**
-       - **Windows 8.1 以降**
-       - **Windows 10 以降**
-
-   - **[プロファイルの種類]**:作成する設定の種類を選択します。 表示されるリストは、選択する**プラットフォーム**によって異なります。
-
-       - [管理用テンプレート](administrative-templates-windows.md)
-       - [カスタム](custom-settings-configure.md)
-       - [配信の最適化](delivery-optimization-windows.md)
-       - [デバイスの機能](device-features-configure.md)
-       - [デバイスの制限](device-restrictions-configure.md)
-       - [エディションのアップグレードとモードの切り替え](edition-upgrade-configure-windows-10.md)
-       - [教育](education-settings-configure.md)
-       - [電子メール](email-settings-configure.md)
-       - [Endpoint Protection](endpoint-protection-configure.md)
-       - [ID 保護](identity-protection-configure.md)  
-       - [キオスク](kiosk-settings.md)
-       - [PKCS 証明書](certficates-pfx-configure.md)
-       - [SCEP 証明書](certificates-scep-configure.md)
-       - [信頼された証明書](certificates-configure.md)
-       - [更新ポリシー](software-updates-ios.md)
-       - [VPN](vpn-settings-configure.md)
-       - [Wi-Fi](wi-fi-settings-configure.md)
-       - [Windows Defender ATP](advanced-threat-protection.md)
-       - [Windows 情報保護](windows-information-protection-configure.md)
-
-     たとえば、プラットフォームとして **iOS** を選択した場合、プロファイルの種類のオプションは次のようになります。
-
-     ![Intune で iOS プロファイルを作成する](./media/create-device-profile.png)
-
-4. **[設定]** を選択します。 設定はカテゴリごとに整理されます。 カテゴリを選択して、構成できるすべての設定のリストを表示します。
-
-5. 完了したら、**[OK]** > **[作成]** の順に選択して変更を保存します。
-
-さまざまなプロファイルの種類の詳細については、この記事の次のセクションをお読みください。
+この記事では、作成できるさまざまな種類のプロファイルの概要を示します。 これらのプロファイルを使用して、デバイスで一部の機能を許可または禁止します。
 
 ## <a name="administrative-templates-preview"></a>管理用テンプレート (プレビュー)
 
 [管理用テンプレート](administrative-templates-windows.md)には数百の設定が含まれており、これらを Internet Explorer、OneDrive、リモート デスクトップ、Word、Excel、およびその他の Office プログラム用に構成することができます。
 
-これらのテンプレートでは、管理者にグループ ポリシーと同様の設定の簡単な簡易ビューが提供されますが、それらは 100% クラウドベースです。 
+これらのテンプレートでは、管理者にグループ ポリシーと同様の設定の簡易ビューが提供されますが、それらは 100% クラウドベースです。
 
 この機能では以下をサポートします。
 
@@ -129,7 +75,7 @@ Microsoft Intune には、組織内のさまざまなデバイスで有効また
 
 ## <a name="delivery-optimization"></a>配信の最適化
 
-[配信の最適化](delivery-optimization-windows.md)では、ソフトウェア更新プログラムの配信に関するエクスペリエンスを向上させることができます。 これらの設定は、**[ソフトウェア更新プログラム]** > **[Windows 10 更新プログラムのリング]** 設定に置き換わるものです。
+[配信の最適化](delivery-optimization-windows.md)では、ソフトウェア更新プログラムの配信に関するエクスペリエンスを向上させることができます。 これらの設定は、 **[ソフトウェア更新プログラム]**  >  **[Windows 10 更新プログラムのリング]** 設定に置き換わるものです。
 
 これらの設定は、ソフトウェア更新プログラムを組織内のデバイスにダウンロードする方法を制御するために使用します。 たとえば、デバイス プロファイル内で、ユーザーが自分で更新プログラムを取得できるように設定することも、配信の最適化クラウド サービスを通じて更新プログラムを取得できるように設定することもできます。
 
@@ -164,7 +110,7 @@ Windows Defender Advanced Threat Protection (WDATP) と Microsoft Intune をオ�
 
 - Windows 10 以降
 
-キオスク設定は、[Android](device-restrictions-android.md#kiosk)、[Android エンタープライズ](device-restrictions-android-for-work.md#kiosk-settings)、および [ios](device-restrictions-ios.md#kiosk-supervised-only) 用のデバイス制限としても使用できます。
+キオスク設定は、[Android](device-restrictions-android.md#kiosk)、[Android エンタープライズ](device-restrictions-android-for-work.md#dedicated-device-settings)、および [ios](device-restrictions-ios.md#kiosk-supervised-only) 用のデバイス制限としても使用できます。
 
 ## <a name="email"></a>Email
 
@@ -173,8 +119,9 @@ Windows Defender Advanced Threat Protection (WDATP) と Microsoft Intune をオ�
 この機能では以下をサポートします。 
 
 - Android
+- Android エンタープライズ
 - iOS
-- Windows Phone 8.1
+- Windows Phone 8。1
 - Windows 10 以降
 
 ## <a name="vpn"></a>VPN
@@ -186,9 +133,10 @@ Windows Defender Advanced Threat Protection (WDATP) と Microsoft Intune をオ�
 この機能では以下をサポートします。 
 
 - Android
+- Android エンタープライズ
 - iOS
 - macOS
-- Windows Phone 8.1
+- Windows Phone 8。1
 - Windows 8.1
 - Windows 10 以降
 
@@ -199,6 +147,7 @@ Windows Defender Advanced Threat Protection (WDATP) と Microsoft Intune をオ�
 この機能では以下をサポートします。 
 
 - Android
+- Android エンタープライズ
 - iOS
 - macOS
 - Windows 8.1 (インポートのみ)
@@ -235,13 +184,15 @@ Windows デバイスの更新プログラム ポリシーについては、[配�
 
 ## <a name="certificates"></a>証明書
 
-[証明書](certificates-configure.md)では、デバイスに割り当てられ Wi-Fi、VPN、電子メール プロファイルの認証に使用される、信頼済み証明書、SCEP 証明書、PKCS 証明書を構成します。
+[証明書](certificates-configure.md)では、デバイスに割り当てられる、信頼された証明書、SCEP 証明書、および PKCS 証明書を構成します。 これらの証明書により、WiFi プロファイル、VPN プロファイル、および電子メール プロファイルが認証されます。
 
 この機能では以下をサポートします。 
 
 - Android
+- Android エンタープライズ
 - iOS
-- Windows Phone 8.1
+- macOS
+- Windows Phone 8。1
 - Windows 8.1
 - Windows 10 以降
 
@@ -255,7 +206,7 @@ Windows デバイスの更新プログラム ポリシーについては、[配�
 
 ## <a name="shared-multi-user-device"></a>共有のマルチ ユーザー デバイス
 
-[Windows 10](shared-user-device-settings-windows.md) および [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) には、複数のユーザーが使用するデバイス (共有デバイスや共有 PC ともいう) を管理するための設定が含まれます。 ユーザーがデバイスにサインインするときに、そのユーザーがスリープ オプションを変更できるようにするか、デバイス上にファイルを保存できるようにするかを選択します。 また、領域を節約するために Windows HoloLens デバイスから非アクティブな資格情報を削除するポリシーを作成することもできます。
+[Windows 10](shared-user-device-settings-windows.md) および [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) には、複数のユーザーが使用するデバイス (共有デバイスや共有 PC ともいう) を管理するための設定が含まれます。 ユーザーがデバイスにサインインするときに、そのユーザーがスリープ オプションを変更できるようにするか、デバイス上にファイルを保存できるようにするかを選択します。 また、領域を節約するために、Windows HoloLens デバイスから非アクティブな資格情報を削除するプロファイルを作成することもできます。
 
 これらの共有のマルチ ユーザー デバイス設定では、管理者はデバイスの一部の機能を制御し、Intune を使用してその共有デバイスを管理することができます。
 
@@ -264,21 +215,30 @@ Windows デバイスの更新プログラム ポリシーについては、[配�
 - Windows 10 以降
 - Windows Holographic for Business
 
-## <a name="custom-profile"></a>カスタム プロファイル
+## <a name="zebra-mobility-extensions-mx"></a>Zebra モビリティ拡張 (MX)
 
-管理者は[カスタム設定](custom-settings-configure.md)を使用して、Intune に組み込まれていないデバイス設定を割り当てることができます。 たとえば、Android デバイスでは、OMA-URI 値を入力できます。 iOS デバイスの場合は、Apple Configurator で作成した構成ファイルをインポートできます。 
+管理者は [Zebra モビリティ拡張 (MX)](android-zebra-mx-overview.md) を使用して、Intune で Zebra デバイスを使用および管理できます。 設定で StageNow プロファイルを作成してから、Intune を使用して Zebra デバイスにこれらのプロファイルを割り当ておよび展開することができます。 [StageNow ログと一般的な問題](android-zebra-mx-logs-troubleshoot.md)に関する説明は、プロファイルのトラブルシューティング用の優れたリソースなので、StageNow を使用する際にはいくつかの潜在的な問題を参照してください。
 
 この機能では以下をサポートします。
 
 - Android
+
+## <a name="custom-profile"></a>カスタム プロファイル
+
+管理者は[カスタム設定](custom-settings-configure.md)を使用して、Intune に組み込まれていないデバイス設定を割り当てることができます。 Android デバイスでは、OMA-URI 値を入力できます。 iOS デバイスの場合は、Apple Configurator で作成した構成ファイルをインポートできます。
+
+この機能では以下をサポートします。
+
+- Android
+- Android エンタープライズ
 - iOS
 - macOS
-- Windows Phone 8.1
+- Windows Phone 8。1
 
 ## <a name="manage-and-troubleshoot"></a>管理とトラブルシューティング
 
-[プロファイルの管理](device-profile-monitor.md)に関する説明では、デバイスの状態や割り当てられているプロファイルの確認方法を説明しています。 競合を起こした設定と、これらの設定を含むプロファイルを確認することによって、競合も解決できます。 [一般的な問題とその解決方法](device-profile-troubleshoot.md)に関する説明では、プロファイルを削除すると起こることや、デバイスに通知が送信される原因など、プロファイルの使用に関する Q&A の一覧があります。
+[プロファイルの管理](device-profile-monitor.md)に関する説明では、デバイスの状態や割り当てられているプロファイルの確認方法を説明しています。 競合を起こした設定と、これらの設定を含むプロファイルを確認することによって、競合も解決できます。 [一般的な問題と解決策](device-profile-troubleshoot.md)に関する説明は、管理者がプロファイルを操作するのに役立ちます。 プロファイルを削除した場合の動作や、デバイスに通知が送信される原因などについて説明しています。
 
 ## <a name="next-steps"></a>次の手順
-プラットフォームを選択して始めてください。
 
+プラットフォームを選択し、操作を開始します。

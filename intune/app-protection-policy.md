@@ -6,23 +6,24 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure; get-started
+ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbb6a8f159aebe837fabf671a84dd96223298227
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 45e9f50881ff7da0554a4731712441b5fedb01d8
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836355"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569416"
 ---
 # <a name="what-are-app-protection-policies"></a>アプリ保護ポリシーとは
 
@@ -69,8 +70,8 @@ MDM をアプリ保護ポリシーと共に使用することで、MDM ありの
 ### <a name="supported-platforms-for-app-protection-policies"></a>アプリ保護ポリシーでサポートされているプラットフォーム
 Intune アプリの保護ポリシーのプラットフォーム サポートは、Android および iOS デバイス向けの Office モバイル アプリケーションのプラットフォーム サポートと連携しています。 詳細については、[Office システム要件](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg)の「**モバイル アプリ**」セクションを参照してください。
 
-Windows デバイスは現在サポートされていません。 ただし、同様の機能を提供する Windows 情報保護を使用できます。 詳細については、「[Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip)」 (Windows 情報保護 (WIP) を使用してエンタープライズ データを保護する) を参照してください。
-
+> [!IMPORTANT]
+> Android デバイスでアプリ保護ポリシーを受信するには、デバイスに Intune ポータル サイトが必要です。 詳細については、[Intune ポータル サイト アクセス アプリの要件](end-user-mam-apps-android.md#access-apps)に関するページを参照してください。
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>アプリ保護ポリシーでアプリのデータを保護するしくみ
 
@@ -132,7 +133,7 @@ MDM ソリューションに登録されていない BYOD デバイスでは、�
 
 ## <a name="app-protection-global-policy"></a>アプリ保護グローバル ポリシー
 
-OneDrive 管理者が **admin.office.com** にアクセスし、**[デバイス]** アクセスを選択するとき、クライアント アプリの OneDrive と SharePoint に**モバイル アプリケーション管理**コントロールを設定できます。 
+OneDrive 管理者が **admin.office.com** にアクセスし、 **[デバイス]** アクセスを選択するとき、クライアント アプリの OneDrive と SharePoint に**モバイル アプリケーション管理**コントロールを設定できます。 
 
 OneDrive 管理コンソールで利用可能になった設定により、**グローバル** ポリシーという名称の特別な Intune アプリ保護ポリシーが構成されます。 このグローバル ポリシーはテナント内のすべてのユーザーに適用され、ポリシーの対象を制御する手段はありません。 
 
