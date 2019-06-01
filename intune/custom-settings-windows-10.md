@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f1935ff839b9e2aa97d002bd98d1f5dac87c390
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: HT
+ms.openlocfilehash: e9d07b2d46e5128d96a578e9a000e17c2aca7cec
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043048"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373979"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Intune で Windows 10 デバイス用のカスタム設定を使用する
 
@@ -39,12 +39,12 @@ Windows 10 では、[ポリシー構成サービス プロバイダー (ポリ�
 
 ## <a name="create-the-profile"></a>プロファイルの作成
 
-1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、 **[Intune]** をフィルターとして適用して、 **[Microsoft Intune]** を選びます。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 2. **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
 3. 次の設定を入力します。
 
     - **名前**: `windows 10 custom profile` のようにプロファイルの名前を入力します。
-    - **説明**: プロファイルの説明を入力します 
+    - **説明**: プロファイルの説明を入力します
     - **[プラットフォーム]** : **[Windows 10 以降]** を選択します。
     - **プロファイルの種類**: **[カスタム]** を選択します。
 

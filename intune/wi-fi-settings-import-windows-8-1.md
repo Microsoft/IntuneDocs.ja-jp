@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ce2813702d9b2b3cb91f5531308cbb58b1f9f80
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e9e4c27f7aca8d510ed82eabeab87612b1c16e11
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050611"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373323"
 ---
 # <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>Intune で Windows デバイス用の Wi-Fi 設定をインポートする
 
@@ -44,7 +44,7 @@ Windows で、`netsh wlan` を使用して、既存の Wi-Fi プロファイル�
 
 ## <a name="import-the-wi-fi-settings-into-intune"></a>Intune への Wi-Fi 設定のインポート
 
-1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、 **[Intune]** をフィルターとして適用して、 **[Microsoft Intune]** を選びます。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 2. **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
 3. デバイス制限プロファイルの **[名前]** と **[説明]** を入力します。
 

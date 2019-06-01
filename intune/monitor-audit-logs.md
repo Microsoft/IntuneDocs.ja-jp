@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d01b1f745450785209bf289be5b6e36ac65cc2d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5d39b62762d623c150ac6198bd2d6215b4410663
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046302"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412296"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>監査ログを使用し、Microsoft Intune のイベントを追跡し、監視する
 
@@ -39,7 +39,7 @@ ms.locfileid: "66046302"
 
 各 Intune ワークロードの監視グループで監査ログを確認できます。
 
-1. [Azure portal](https://portal.azure.com/) で、 **[すべてのサービス]** を選択し、**Intune** でフィルター処理して、 **[Intune]** を選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 2. 監査ログを確認するワークロードを選択します。 たとえば、 **[デバイス]** を選択します。
 3. **[監視]** の下で **[監査ログ]** を選択します。
 
