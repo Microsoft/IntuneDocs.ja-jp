@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca41e12136911cc0aecb6968a949fb738e2e2d77
-ms.sourcegitcommit: d1116c70bd0f2382d590091e0e66095de3925324
+ms.openlocfilehash: 0eadff455a25a22d53d58d87790a356072f9db66
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59570768"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764727"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Windows の基幹業務アプリを Microsoft Intune に追加する
 
@@ -63,8 +63,8 @@ ms.locfileid: "59570768"
     - **[会社のポータルでおすすめアプリとして表示します]** : ユーザーがアプリを参照するとき、会社のポータルのメイン ページにアプリが目立つように表示されます。
     - **[情報 URL]** :必要に応じて、このアプリに関する情報が含まれる Web サイトの URL を入力します。 この URL はポータル サイトに表示されます。
     - **[プライバシー URL]** :必要に応じて、このアプリのプライバシー情報が含まれる Web サイトの URL を入力します。 この URL はポータル サイトに表示されます。
-    - **[コマンド ライン引数]** :必要に応じて、実行時に .msi ファイルに適用するコマンド ライン引数を入力します。 たとえば、「 **/q**」と入力します。
-    - **[開発者]** :(省略可能) アプリ開発者の名前を入力します。
+    - **[コマンド ライン引数]** :必要に応じて、実行時に .msi ファイルに適用するコマンド ライン引数を入力します。  たとえば、「 **/q**」と入力します。 **/i** や **/x** などの msiexec コマンドまたは引数は、自動的に使用されるため、含めないでください。 詳細については、「[Command-Line Options (コマンド ライン オプション)](https://docs.microsoft.com/windows/desktop/Msi/command-line-options)」をご覧ください。 
+    - **[開発者]** : (省略可能) アプリ開発者の名前を入力します。
     - **[所有者]** : (省略可能) このアプリの所有者の名前を入力します。 たとえば、「**人事部**」と入力します。
     - **[メモ]** : このアプリに関連付けるメモを入力します。
     - **[ロゴ]** : アプリに関連付けるアイコンをアップロードします。 ユーザーが会社のポータルを参照するとき、アプリにアイコンが表示されます。
