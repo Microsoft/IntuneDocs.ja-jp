@@ -121,7 +121,7 @@ Windows Defender Advanced Threat Protection (WDATP) と Microsoft Intune をオ�
 - Android
 - Android エンタープライズ
 - iOS
-- Windows Phone 8。1
+- Windows Phone 8.1
 - Windows 10 以降
 
 ## <a name="vpn"></a>VPN
@@ -136,7 +136,7 @@ Windows Defender Advanced Threat Protection (WDATP) と Microsoft Intune をオ�
 - Android エンタープライズ
 - iOS
 - macOS
-- Windows Phone 8。1
+- Windows Phone 8.1
 - Windows 8.1
 - Windows 10 以降
 
@@ -192,7 +192,7 @@ Windows デバイスの更新プログラム ポリシーについては、[配�
 - Android エンタープライズ
 - iOS
 - macOS
-- Windows Phone 8。1
+- Windows Phone 8.1
 - Windows 8.1
 - Windows 10 以降
 
@@ -233,7 +233,7 @@ Windows デバイスの更新プログラム ポリシーについては、[配�
 - Android エンタープライズ
 - iOS
 - macOS
-- Windows Phone 8。1
+- Windows Phone 8.1
 
 ## <a name="manage-and-troubleshoot"></a>管理とトラブルシューティング
 
