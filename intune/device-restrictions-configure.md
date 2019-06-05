@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8554f0addf7364150c3f225e8cba1a7d751f8a7d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4cae90723c7ff92a8042f068fb49c1709506c7ff
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048092"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412423"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Microsoft Intune でデバイスの制限設定を構成する
 
@@ -35,8 +35,8 @@ ms.locfileid: "66048092"
 
 ## <a name="create-the-profile"></a>プロファイルの作成
 
-1. [Azure portal](https://portal.azure.com) で、**[すべてのサービス]** を選択し、**Intune** でフィルター処理して、**Intune** を選択します。
-2. **[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+2. **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
 3. デバイス制限プロファイルの **[名前]** と **[説明]** を入力します。
 4. **[プラットフォーム]** ドロップダウン リストで、カスタム設定を適用するデバイス プラットフォームを選択します。 現時点では、デバイスの制限設定に対応している次のいずれかのプラットフォームを選択できます。
 
@@ -48,7 +48,7 @@ ms.locfileid: "66048092"
     - **Windows 8.1 以降**
     - **Windows 10 以降**
 
-5. **[プロファイルの種類]** ドロップダウン リストで、**[デバイスの制限]** を選択します。 Surface Hub などの Windows 10 Team デバイス用のデバイスの制限プロファイルを作成するには、**[デバイスの制限 (Windows 10 Team)]** を選択します。
+5. **[プロファイルの種類]** ドロップダウン リストで、 **[デバイスの制限]** を選択します。 Surface Hub などの Windows 10 Team デバイス用のデバイスの制限プロファイルを作成するには、 **[デバイスの制限 (Windows 10 Team)]** を選択します。
 6. 選択したプラットフォームによって構成できる設定が異なります。 詳細な設定については、お使いのプラットフォームを選択してください。
 
     - [Android の設定](device-restrictions-android.md)
@@ -61,7 +61,7 @@ ms.locfileid: "66048092"
     - [Windows 10 Team の設定](device-restrictions-windows-10-teams.md)
     - [Windows Holographic for Business の設定](device-restrictions-windows-holographic.md)
 
-7. 完了したら、**[OK]** > **[作成]** を選択して変更を保存します。
+7. 完了したら、 **[OK]**  >  **[作成]** を選択して変更を保存します。
 
 プロファイルが作成され、プロファイル一覧に表示されます。
 

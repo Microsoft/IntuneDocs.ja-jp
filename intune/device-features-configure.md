@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8483e036e270744daa5e36bf9375da6e11c25746
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1a5c85c936e49c277b54b542f372f97b247d6a37
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048295"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373814"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Intune での iOS または macOS デバイスの機能設定の追加
 
@@ -39,22 +39,22 @@ Intune には、管理者が iOS および macOS デバイスを制御するた�
 
 ## <a name="create-a-device-profile"></a>デバイス プロファイルの作成
 
-1. [Azure portal](https://portal.azure.com) で、**[すべてのサービス]** を選択し、**Intune** でフィルター処理して、**[Intune]** を選択します。
-2. **[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+2. **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
 3. 次のプロパティを入力します。
 
-    - **[名前]**:新しいプロファイルのわかりやすい名前を入力します。
+    - **[名前]** :新しいプロファイルのわかりやすい名前を入力します。
     - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
-    - **[プラットフォーム]**:プラットフォームを選択します。
+    - **[プラットフォーム]** :プラットフォームを選択します。
         - **Android**
         - **macOS**
-    - **[プロファイルの種類]**:**[デバイスの機能]** を選択します。
+    - **[プロファイルの種類]** : **[デバイスの機能]** を選択します。
     - **設定**:構成が必要な設定を入力します。 すべての設定の一覧とその実行内容については、以下を参照してください。
 
         - [Android](ios-device-features-settings.md)
         - [macOS](macos-device-features-settings.md)
 
-4. 完了したら、**[OK]** を選択し、**[作成]** を選択して変更を保存します。
+4. 完了したら、 **[OK]** を選択し、 **[作成]** を選択して変更を保存します。
 
 プロファイルが作成され、一覧に表示されます。 必ず[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)してください。
 

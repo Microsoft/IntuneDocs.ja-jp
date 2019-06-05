@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 803d556150d60d0a3d60ec03c029d65f0f935f67
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8d13cb9fed28bb759007f1be1cb6df6139c19d3b
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045289"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412702"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Intune でストレージ、イベントハブ、または Log Analytics にログ データを送信する (プレビュー)
 
@@ -35,9 +35,9 @@ Microsoft Intune には、お客様の環境に関する情報を提供する組
 
 このような機能は、Intune の**診断設定**の一部です。
 
-この記事では、**[診断設定]** を使用してログ データをさまざまなサービスに送信する方法について説明し、例とコストの見積もりを示し、よく寄せられる質問に回答します。
+この記事では、 **[診断設定]** を使用してログ データをさまざまなサービスに送信する方法について説明し、例とコストの見積もりを示し、よく寄せられる質問に回答します。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
 この機能を使用するには、以下が必要です。
 
@@ -53,7 +53,7 @@ Microsoft Intune には、お客様の環境に関する情報を提供する組
 
 ## <a name="send-logs-to-azure-monitor"></a>ログを Azure Monitor に送信する
 
-1. [Azure portal](https://portal.azure.com/) で、**[すべてのサービス]** を選択し、**Intune** でフィルター処理して、**[Intune]** を選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 2. **[監視]** で **[診断設定]** を選択します。 初めて開いたときに有効にします。
 
     ![Intune の [診断設定] を有効にして、Azure Monitor にログを送信する](media/diagnostics-settings-turn-on.png)
@@ -61,30 +61,30 @@ Microsoft Intune には、お客様の環境に関する情報を提供する組
 3. 次のプロパティを入力します。
 
     - **名前**: 診断設定の名前を入力します。 この設定には、入力したすべてのプロパティが含まれます。 たとえば、「`Route audit logs to storage account`」と入力します。
-    - **[ストレージ アカウントへのアーカイブ]**:ログ データを Azure ストレージ アカウントに保存します。 データを保存またはアーカイブする場合は、このオプションを使用します。
+    - **[ストレージ アカウントへのアーカイブ]** :ログ データを Azure ストレージ アカウントに保存します。 データを保存またはアーカイブする場合は、このオプションを使用します。
 
-        1. このオプションを選択し、**[構成]** を選択します。 
-        2. 一覧から既存のストレージ アカウントを選択し、**[OK]** を選択します。
+        1. このオプションを選択し、 **[構成]** を選択します。 
+        2. 一覧から既存のストレージ アカウントを選択し、 **[OK]** を選択します。
 
-    - **[イベント ハブへのストリーム]**:ログを Azure イベント ハブにストリームします。 Splunk や QRadar などの SIEM ツールを使用してログ データを分析する場合は、このオプションを選択します。
+    - **[イベント ハブへのストリーム]** :ログを Azure イベント ハブにストリームします。 Splunk や QRadar などの SIEM ツールを使用してログ データを分析する場合は、このオプションを選択します。
 
-        1. このオプションを選択し、**[構成]** を選択します。 
-        2. 一覧から既存のイベント ハブ名前空間とポリシーを選択し、**[OK]** を選択します。
+        1. このオプションを選択し、 **[構成]** を選択します。 
+        2. 一覧から既存のイベント ハブ名前空間とポリシーを選択し、 **[OK]** を選択します。
 
-    - **[Log Analytics への送信]**:Azure Log Analytics にデータを送信します。 ログの視覚化、監視、アラートを使用する場合は、このオプションを選択します。
+    - **[Log Analytics への送信]** :Azure Log Analytics にデータを送信します。 ログの視覚化、監視、アラートを使用する場合は、このオプションを選択します。
 
-        1. このオプションを選択し、**[構成]** を選択します。 
-        2. 新しいワークスペースを作成し、ワークスペースの詳細を入力します。 または、一覧から既存のワークスペースを選択し、**[OK]** を選択します。
+        1. このオプションを選択し、 **[構成]** を選択します。 
+        2. 新しいワークスペースを作成し、ワークスペースの詳細を入力します。 または、一覧から既存のワークスペースを選択し、 **[OK]** を選択します。
 
             このような設定の詳細については、[Azure Log Analytics ワークスペース](https://docs.microsoft.com/azure/azure-monitor/learn/quick-create-workspace)に関するページを参照してください。
 
-    - **[ログ]** > **[AuditLogs]**:[Intune 監査ログ](monitor-audit-logs.md)をストレージ アカウント、イベント ハブ、または Log Analytics に送信するには、このオプションを選択します。 監査ログには、Intune で変更を生成したすべてのタスクの履歴 (誰がいつ行ったのかなど) が表示されます。
+    - **[ログ]**  >  **[AuditLogs]** :[Intune 監査ログ](monitor-audit-logs.md)をストレージ アカウント、イベント ハブ、または Log Analytics に送信するには、このオプションを選択します。 監査ログには、Intune で変更を生成したすべてのタスクの履歴 (誰がいつ行ったのかなど) が表示されます。
 
-      ストレージ アカウントの使用を選択した場合は、データを保持する日数 (リテンション期間) も入力します。 データを永続的に保持するには、**[リテンション期間 (日数)]** を `0` (ゼロ) に設定します。
+      ストレージ アカウントの使用を選択した場合は、データを保持する日数 (リテンション期間) も入力します。 データを永続的に保持するには、 **[リテンション期間 (日数)]** を `0` (ゼロ) に設定します。
 
-    - **[ログ]** > **[OperationalLogs]**:操作ログ (プレビュー) には、Intune に登録したユーザーとデバイスの成功または失敗と、コンプライアンス非対応のデバイスの詳細が表示されます。 登録ログをストレージ アカウント、イベント ハブ、または Log Analytics に送信するには、このオプションを選択します。
+    - **[ログ]**  >  **[OperationalLogs]** :操作ログ (プレビュー) には、Intune に登録したユーザーとデバイスの成功または失敗と、コンプライアンス非対応のデバイスの詳細が表示されます。 登録ログをストレージ アカウント、イベント ハブ、または Log Analytics に送信するには、このオプションを選択します。
 
-      ストレージ アカウントの使用を選択した場合は、データを保持する日数 (リテンション期間) も入力します。 データを永続的に保持するには、**[リテンション期間 (日数)]** を `0` (ゼロ) に設定します。
+      ストレージ アカウントの使用を選択した場合は、データを保持する日数 (リテンション期間) も入力します。 データを永続的に保持するには、 **[リテンション期間 (日数)]** を `0` (ゼロ) に設定します。
 
       > [!NOTE]
       > 操作ログはプレビュー段階です。 操作ログに含まれる情報など、フィードバックを提供するには、[UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback) にアクセスしてください (新しい Web サイトが開きます)。
@@ -93,7 +93,7 @@ Microsoft Intune には、お客様の環境に関する情報を提供する組
 
     ![Intune 監査ログが Azure ストレージ アカウントに送信されるサンプル画像](media/diagnostics-settings-example.png)
 
-4. 変更内容を**保存**します。 一覧に設定が表示されます。 作成された後は、**[設定の編集]** > **[保存]** を選択して設定を変更できます。
+4. 変更内容を**保存**します。 一覧に設定が表示されます。 作成された後は、 **[設定の編集]**  >  **[保存]** を選択して設定を変更できます。
 
 ## <a name="use-audit-logs-throughout-intune"></a>Intune 全体で監査ログを使用する
 
@@ -101,12 +101,12 @@ Microsoft Intune には、お客様の環境に関する情報を提供する組
 
 たとえば、デバイスのコンプライアンスを使用するときに監査ログをエクスポートするには、次の手順を実行します。
 
-1. [Azure portal](https://portal.azure.com/) で、**[すべてのサービス]** を選択し、**Intune** でフィルター処理して、**[Intune]** を選択します。
-2. **[デバイス コンプライアンス]** > **[監視]** > **[監査ログ]** の順に選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+2. **[デバイス コンプライアンス]**  >  **[監視]**  >  **[監査ログ]** の順に選択します。
 
     ![Intune データを Azure Monitor ストレージ、イベント ハブ、または分析にルーティングする監査ログを選択する](media/audit-logs-under-monitor-in-compliance.png)
 
-3. **[データ設定のエクスポート]** を選択します。 有効になっていない場合は、**[診断設定]** をオンにできます。 また、「[ログを Azure Monitor に送信する](#send-logs-to-azure-monitor)」 (この記事内) で説明されているように、ログの送信先を選択することもできます。
+3. **[データ設定のエクスポート]** を選択します。 有効になっていない場合は、 **[診断設定]** をオンにできます。 また、「[ログを Azure Monitor に送信する](#send-logs-to-azure-monitor)」 (この記事内) で説明されているように、ログの送信先を選択することもできます。
 
 ## <a name="cost-considerations"></a>コストの考慮事項
 
@@ -208,7 +208,7 @@ Azure Monitor を Event Hubs と共に使用して、ログを SIEM システム
 
 #### <a name="can-i-access-the-data-from-an-event-hub-without-using-an-external-siem-tool"></a>外部の SIEM ツールを使用せずにイベント ハブのデータにアクセスできますか。
 
-対応 カスタム アプリケーションからログにアクセスするには、[Event Hubs API](https://docs.microsoft.com/azure/event-hubs/event-hubs-dotnet-standard-getstarted-receive-eph) を使用できます。
+はい。 カスタム アプリケーションからログにアクセスするには、[Event Hubs API](https://docs.microsoft.com/azure/event-hubs/event-hubs-dotnet-standard-getstarted-receive-eph) を使用できます。
 
 #### <a name="what-data-is-stored"></a>どのデータが保存されますか。
 

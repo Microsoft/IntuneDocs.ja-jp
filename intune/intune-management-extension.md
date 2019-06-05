@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c590f81b846fe3671d5ccddede28a4a4bd799ba
-ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
+ms.openlocfilehash: f17bdf21db61616f88cef4d257fbcd28d941dae8
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264153"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373466"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Intune で Windows 10 デバイスに対して PowerShell スクリプトを使用する
 
@@ -39,7 +39,7 @@ Microsoft Intune などの MDM サービスでは、Windows 10 を実行する�
 
 Intune 管理拡張機能は、Windows 10 MDM の標準機能を補完するものです。 PowerShell スクリプトを作成して、Windows 10 デバイスで実行することができます。 たとえば、高度なデバイス構成を行う PowerShell スクリプトを作成し、スクリプトを Intune にアップロードして、スクリプトを Azure Active Directory (AD) グループに割り当て、スクリプトを実行することができます。 スクリプトの実行状態を最初から完了まで監視できます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
 Intune 管理拡張機能には次の前提条件があります。 これらが満たされると、PowerShell スクリプトまたは Win32 アプリがユーザーまたはデバイスに割り当てられたときに Intune 管理拡張機能が自動的にインストールされます。
 
@@ -65,7 +65,7 @@ Intune 管理拡張機能には次の前提条件があります。 これらが
 
 ## <a name="create-a-script-policy"></a>スクリプト ポリシーを作成する 
 
-1. [Azure portal](https://portal.azure.com) で、 **[すべてのサービス]** を選択し、**Intune** でフィルター処理して、 **[Intune]** を選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 2. **[デバイス構成]**  >  **[PowerShell スクリプト]**  >  **[追加]** の順に選択します。
 3. 次のプロパティを入力します。
     - **名前**: PowerShell スクリプトの名前を入力します。 
@@ -80,7 +80,7 @@ Intune 管理拡張機能には次の前提条件があります。 これらが
 
       | 64 ビットの PS ホストでスクリプトを実行する | クライアント アーキテクチャ | 新しい PS スクリプト | 既存のポリシー PS スクリプト |
       | --- | --- | --- | --- | 
-      | いいえ | 32 ビット  | 32 ビットの PS ホストがサポートされる | 32 ビットおよび 64 ビットのアーキテクチャで動作する 32 ビット PS ホストでのみ実行されます。 |
+      | [いいえ] | 32 ビット  | 32 ビットの PS ホストがサポートされる | 32 ビットおよび 64 ビットのアーキテクチャで動作する 32 ビット PS ホストでのみ実行されます。 |
       | はい | 64 ビット | 64 ビット アーキテクチャ用の 64 ビットの PS ホストでスクリプトが実行されます。 32 ビット上で実行した場合、スクリプトは 32 ビットの PS ホストで実行されます。 | 32 ビットの PS ホストでスクリプトが実行されます。 この設定が 64 ビットに変更されると、スクリプトは 64 ビットの PS ホストで開き (実行されない)、スクリプトから結果がレポートされます。 32 ビット上で実行した場合、スクリプトは 32 ビットの PS ホストで実行されます。 |
 
     ![Microsoft Intune で PowerShell スクリプトを追加および使用する](./media/mgmt-extension-add-script.png)
