@@ -135,6 +135,10 @@
           items:
             - name: ネットワークの構成
               href: network-bandwidth-use.md
+            - name: Intune エンドポイント
+              href: intune-endpoints.md
+            - name: Intune 米国政府機関のエンドポイント
+              href: intune-us-government-endpoints.md
         - name: Intune にサインインする
           href: account-sign-up.md
         - name: ドメインを構成する
