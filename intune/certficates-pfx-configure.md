@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02a5a7bd3625b5e95ddb304df7cf64461cca9c10
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 13858b257c1adbc8ce3147710d450c4a09ec9dc2
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049137"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454060"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune で PKCS 証明書を構成して使用する
 
@@ -136,7 +136,7 @@ VPN、WiFi、またはその他のリソースを使用してデバイスを認�
 > [!IMPORTANT]  
 > Microsoft Intune Certificate Connector を、発行元証明機関 (CA) にインストールすることはできません。代わりに、別の Windows サーバーにインストールする必要があります。  
 
-1. [Azure portal](https://portal.azure.com) で、 **[すべてのサービス]** を選択し、**Intune** でフィルター処理して、 **[Intune]** を選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 2. **[デバイス構成]**  >  **[証明書のコネクタ]**  >  **[追加]** の順に選択します。
 3. コネクタのインストール先となるサーバーからアクセスできる場所にコネクタ ファイルをダウンロードして保存します。
 
@@ -160,7 +160,7 @@ VPN、WiFi、またはその他のリソースを使用してデバイスを認�
 
 ### <a name="pfx-certificate-connector-for-microsoft-intune"></a>PFX Certificate Connector for Microsoft Intune
 
-1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、 **[Intune]** をフィルターとして適用して、 **[Microsoft Intune]** を選びます。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 2. **[デバイス構成]**  >  **[証明書のコネクタ]**  >  **[追加]** の順に選択します。
 3. PFX Certificate Connector for Microsoft Intune をダウンロードして保存します。 コネクタをインストールするサーバーからアクセスできる場所に保存します。
 4. ダウンロードが完了したら、サーバーにサインインします。 次のことを行います。

@@ -14,12 +14,12 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: d927c886bbb3f82c18d5873a86fc427d00d96337
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4190d84fda46e4be3cdc4c4f7bfe4ac8a1852ebc
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042631"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373947"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Microsoft Intune での配信の最適化設定
 
@@ -36,7 +36,7 @@ Windows 10 での配信の最適化について学習するには、Windows ド�
 > **[ソフトウェア更新プログラム] – [Windows 10 更新プログラムのリング]** は、 **[配信の最適化]** 設定によって置き換えられます。 **[配信の最適化]** 設定を使用するように既存の更新リングを変更できます。 「[既存の更新リングを配信の最適化に移動する](#move-existing-update-rings-to-delivery-optimization)」(この記事)。 
 ## <a name="create-the-profile"></a>プロファイルの作成
 
-1. [Azure portal](https://portal.azure.com) で、 **[すべてのサービス]** を選択し、**Intune** でフィルター処理して、 **[Intune]** を選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 
 2. **[デバイス構成]** 、 **[プロファイル]** 、 **[プロファイルの作成]** の順に選択します。
 

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a53ae7f43f135f7316b665672dc410812ef14d08
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: abbd226f2b812e1062d56a1d66b3e10bc9d68036
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050131"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374078"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Intune で条件付きアクセスによる Windows Defender ATP の準拠を強制する
 
@@ -42,7 +42,7 @@ Intune を使用することで、リスクの許容レベルを決定するコ�
 - Intune でコンプライアンス ポリシーを作成する。
 - 脅威レベルに基づいて、デバイス上の Azure Active Directory (AD) で条件付きアクセスを有効にする。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
 Intune で ATP を使用する場合は、以下が構成済みであり、使用できる状態であることを確認してください。
 
@@ -83,7 +83,7 @@ Windows Defender には、[Windows Defender ATP サービス](https://docs.micro
 
 ### <a name="create-the-configuration-profile"></a>構成プロファイルを作成する
 
-1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、 **[Intune]** をフィルターとして適用して、 **[Microsoft Intune]** を選びます。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 2. **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
 3. **名前**と**説明**を入力します。
 4. **[プラットフォーム]** では、 **[Windows 10 以降]** を選択します。
@@ -105,11 +105,11 @@ Windows Defender には、[Windows Defender ATP サービス](https://docs.micro
 ## <a name="create-the-compliance-policy"></a>コンプライアンス ポリシーを作成する
 コンプライアンス ポリシーによって、デバイス上でのリスクの許容レベルが決まります。
 
-1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、 **[Intune]** をフィルターとして適用して、 **[Microsoft Intune]** を選びます。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 2. **[デバイスのポリシー準拠]**  >  **[ポリシー]**  >  **[ポリシーの作成]** の順に選択します。
 3. **名前**と**説明**を入力します。
 4. **[プラットフォーム]** で、 **[Windows 10 以降]** を選択します。
-5. **[Windows Defender ATP]** 設定で、 **[デバイスは、次のマシン リスク スコア以下であることが必要]** を次の任意のレベルに設定します。 脅威レベルの分類は、[Windows Defender ATP によって決まります](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue)。
+5. **[Windows Defender ATP]** 設定で、 **[デバイスは、次のマシン リスク スコア以下であることが必要]** を次の任意のレベルに設定します。 脅威レベルの分類は、[Windows Defender ATP によって決まります](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection)。
 
    - **[クリア]** :このレベルはセキュリティ上最も安全です。 デバイスに既存のいかなる脅威も存在できず、デバイスからは引き続き会社のリソースにアクセスできます。 いずれかの脅威が見つかった場合、デバイスは非準拠と評価されます。 (Windows Defender ATP ユーザーの値は *[セキュア]* です)。
    - **[低]** :低レベルの脅威が存在する場合にのみ、デバイスは準拠しています。 脅威レベルが中または高のデバイスは非準拠になります。
@@ -120,7 +120,7 @@ Windows Defender には、[Windows Defender ATP サービス](https://docs.micro
 
 ## <a name="assign-the-policy"></a>ポリシーを割り当てる
 
-1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、 **[Intune]** をフィルターとして適用して、 **[Microsoft Intune]** を選びます。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 2. **[デバイスのポリシー準拠]**  >  **[ポリシー]** > Windows Defender ATP コンプライアンス ポリシーの順に選択します。
 3. **[割り当て]** を選択します。
 4. ポリシーの割り当て対象として Azure AD グループを含めるか除外します。
@@ -153,7 +153,7 @@ Windows Defender には、[Windows Defender ATP サービス](https://docs.micro
 ## <a name="monitor-device-compliance"></a>デバイス コンプライアンスを監視する
 次に、Windows Defender ATP コンプライアンス ポリシーを持つデバイスの状態を監視します。
 
-1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、 **[Intune]** をフィルターとして適用して、 **[Microsoft Intune]** を選びます。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 2. **[デバイスのポリシー準拠]**  >  **[ポリシーへの準拠]** の順に選択します。
 3. 一覧で Windows Defender ATP ポリシーを見つけ、準拠しているデバイスまたは準拠していないデバイスを確認します。
 
