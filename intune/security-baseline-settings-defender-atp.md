@@ -5,7 +5,7 @@ description: Microsoft Defender Advanced Threat Protection を管理するため
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 05/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,16 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f96393e0d6071b1b56700e954714324b01ffcf25
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: MTE75
+ms.openlocfilehash: c6feae4d7caeeefbf9638e5018ba7b653a260f5c
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040744"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373512"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 向けの Microsoft Defender Advanced Threat Protection ベースライン設定
 
 Microsoft Intune でサポートされている Microsoft Defender Advanced Threat Protection (旧称 Windows Defender Advanced Threat Protection) ベースライン設定を表示します。 この記事での既定値は、Intune に対する既定のベースライン構成を表しています。 これらの既定値は Intune 用の推奨構成を表しており、Windows の既定値と一致しない可能性があります。
+
+  ご使用の環境が [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) を使用するための前提条件を満たしている場合は、Microsoft Defender Advanced Threat Protection ベースラインを使用できます。
+
+
+
 
 > [!NOTE]  
 > WDATP ベースライン設定は、**プレビュー**段階にあります。 プレビュー段階の間は、使用可能な設定の一覧、およびこのコンテンツでそれらの設定が示される順序は、ポータル内で提供されるものと異なる可能性があります。 
@@ -345,7 +350,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
  
   **既定値**: 4
 
-- **スケジュールされたスキャン用に低い CPU 優先度を構成**   
+- **スケジュールされたスキャン用に低い CPU 優先度を構成**  
   [Defender/EnableLowCPUPriority](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablelowcpupriority) – *[はい]* に設定すると、スキャンに対する CPU 優先度は低く設定されます。 *[未構成]* の場合、スケジュールされたスキャンの CPU 優先度に変更は加えられません。  
 
     **既定値**: はい
@@ -476,7 +481,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 - **ファイアウォール プロファイル ドメイン** - *FirewallRules/FirewallRuleName/Profiles*  
   ルールが属するプロファイルを指定します: ドメイン、プライベート、パブリック。 この値は、ドメインに接続されているネットワークのプロファイルを表します。  
 
-  利用可能な設定:   
+  利用可能な設定:  
   - **マルチキャスト ブロードキャストへのユニキャスト応答が必要**  
     **既定値**: はい
 
@@ -504,7 +509,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 - **ファイアウォール プロファイル パブリック** - *FirewallRules/FirewallRuleName/Profiles*  
   ルールが属するプロファイルを指定します: ドメイン、プライベート、パブリック。 この値は、パブリック ネットワークのプロファイルを表します。 これらのネットワークは、サーバー ホストで管理者によってパブリックとして分類されます。 分類は、ホストが初めてネットワークに接続したときに行われます。 通常、これらのネットワークは空港や喫茶店など、ネットワーク内のピアまたはネットワーク管理者が信頼されていない公共の場所にあります。  
 
-  利用可能な設定: 
+  利用可能な設定:
 
   - **受信接続をブロック**  
     **既定値**: はい 
@@ -545,7 +550,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 - **ファイアウォール プロファイル プライベート** - *FirewallRules/FirewallRuleName/Profiles*  
   ルールが属するプロファイルを指定します: ドメイン、プライベート、パブリック。 この値は、プライベート ネットワークのプロファイルを表します。  
 
-  利用可能な設定:  
+  利用可能な設定: 
 
   - **受信接続をブロック**  
     **既定値**: はい

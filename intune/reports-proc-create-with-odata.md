@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45df3e3b217e25c9e61fd51d7f458f33c7c0481d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0d2e52ed64bfee2da8eafbc228abe61f109b3c27
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045518"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412447"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Power BI で OData フィードからレポートを作成する
 
@@ -53,14 +53,13 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
 > [!Note]  
 > Intune の**レポート**に対するアクセス許可が必要です。 詳細については、「[承認](reports-api-url.md)」を参照してください。
 
-1. [Azure ポータル](https://portal.azure.com) にサインインします。
-2. **[すべてのサービス]**  >  **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3. **[Intune データ ウェアハウス]** ウィンドウを開きます。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+3. **[Microsoft Intune - 概要]** ブレードの右側にある **[その他のタスク]** のデータ ウェアハウス リンクを選択して、 **[Intune データ ウェアハウス]** ウィンドウを開きます。
 4. カスタム フィードの URL をコピーします。 例: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
-5. Power BI Desktop を開きます。
-6. **[データの取得]**  >  **[Odata フィード]** を選びます。
-7. **[OData フィード]** ウィンドウの [URL] ボックスにカスタム フィードの URL を貼り付けます。
-8. **[基本]** を選択します。
+1. Power BI Desktop を開きます。
+2. **[データの取得]**  >  **[Odata フィード]** を選びます。
+3. **[OData フィード]** ウィンドウの [URL] ボックスにカスタム フィードの URL を貼り付けます。
+4. **[基本]** を選択します。
 
     ![テナントの Intune データ ウェアハウスの OData フィード](media/reports-create-01-odatafeed.png)
 

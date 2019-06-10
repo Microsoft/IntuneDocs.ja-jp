@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6bfd832d9225221bcc6aaefe091a3cebf57a54c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9637cc36d6ee901b5da0ffbe44180cd7dbdaffee
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048618"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374003"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune で iOS デバイス用のカスタム設定を使用する
 
@@ -51,12 +51,12 @@ iOS デバイスを使用するとき、Intune にカスタム設定を取り込
 
 ## <a name="create-the-profile"></a>プロファイルの作成
 
-1. **Azure Portal** で、[[すべてのサービス]](https://portal.azure.com) を選択し、 **[Intune]** をフィルターとして適用して、 **[Microsoft Intune]** を選びます。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 2. **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
 3. 次の設定を入力します。
 
     - **名前**: `ios custom profile` のようにプロファイルの名前を入力します。
-    - **説明**: プロファイルの説明を入力します 
+    - **説明**: プロファイルの説明を入力します
     - **[プラットフォーム]** : **[iOS]** を選びます。
     - **プロファイルの種類**: **[カスタム]** を選択します。
 

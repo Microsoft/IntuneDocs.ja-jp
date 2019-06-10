@@ -5,9 +5,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/24/2019
+ms.date: 04/29/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6389bc9790fce45604887bc2d73b3d5d8c35c45
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.openlocfilehash: 35f4007d03ca66ada5721de1ffe20dd87bfe4527
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423596"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043789"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK の概要
 
@@ -34,11 +33,11 @@ Intune アプリ SDK は、iOS と Android で類似するシナリオをサポ�
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>アプリが組織内向けであり、一般に公開できない場合:
 
-アプリを登録する_**必要はありません**_。 会社が作成したまたは会社向けに作成された社内向け[基幹業務 (LOB) アプリ](apps-add.md#app-types-in-microsoft-intune)の場合、IT 管理者が社内にアプリを展開します。 Intune は、アプリが SDK でビルドされたことを検出し、IT 管理者がアプリ保護ポリシーを適用できるようにします。 「[アプリ保護ポリシーに対して iOS または Android アプリを有効にする](#enable-your-ios-or-android-app-for-app-protection-policy)」セクションに進んでください。
+アプリを登録する _**必要はありません**_ 。 会社が作成したまたは会社向けに作成された社内向け[基幹業務 (LOB) アプリ](apps-add.md#app-types-in-microsoft-intune)の場合、IT 管理者が社内にアプリを展開します。 Intune は、アプリが SDK でビルドされたことを検出し、IT 管理者がアプリ保護ポリシーを適用できるようにします。 「[アプリ保護ポリシーに対して iOS または Android アプリを有効にする](#enable-your-ios-or-android-app-for-app-protection-policy)」セクションに進んでください。
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Apple App Store や Google Play などのパブリック アプリ ストアにアプリをリリースする場合:
 
-最初に Microsoft Intune にアプリを登録し、登録規約に同意する_**必要があります**_。 その後、IT 管理者はアプリ保護ポリシーを管理対象アプリに適用できるようになり、そのアプリは[保護されている Intune パートナーアプリ](apps-supported-intune-apps.md#partner-apps)としてリストされます。
+最初に Microsoft Intune にアプリを登録し、登録規約に同意する _**必要があります**_ 。 その後、IT 管理者はアプリ保護ポリシーを管理対象アプリに適用できるようになり、そのアプリは[保護されている Intune パートナーアプリ](apps-supported-intune-apps.md#partner-apps)としてリストされます。
 
 登録が完了し、Microsoft Intune チームによって確認されるまで、Intune 管理者はアプリ保護ポリシーをアプリのディープ リンクに適用できません。 アプリは、[Microsoft Intune パートナーのページ](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)にも追加されます。 ここには、Intune のアプリ保護ポリシーに対応していることを示すアプリのアイコンが表示されます。
 
@@ -82,11 +81,11 @@ Microsoft が、アンケートに入力された電子メール アドレスを
 
 以下の開発者ガイドのいずれかが必要になります。これらは、Intune アプリ SDK をご使用のアプリに統合するのに役立ちます。
 
-* **[iOS 用 Intune アプリ SDK 開発者ガイド](app-sdk-ios.md)**: このドキュメントでは、Intune アプリ SDK を使用したネイティブ iOS アプリを有効にする方法について、段階的に説明しています。
+* **[iOS 用 Intune アプリ SDK 開発者ガイド](app-sdk-ios.md)** : このドキュメントでは、Intune アプリ SDK を使用したネイティブ iOS アプリを有効にする方法について、段階的に説明しています。
 
-* **[Android 用 Intune アプリ SDK 開発者ガイド](app-sdk-android.md)**: このドキュメントでは、Intune アプリ SDK を使用したネイティブ Android アプリを有効にする方法について、段階的に説明しています。
+* **[Android 用 Intune アプリ SDK 開発者ガイド](app-sdk-android.md)** : このドキュメントでは、Intune アプリ SDK を使用したネイティブ Android アプリを有効にする方法について、段階的に説明しています。
 
-* **[Intune App SDK Xamarin Bindings ガイド](app-sdk-xamarin.md)**: このドキュメントは、iOS アプリと Android アプリを Xamarin を使用してビルドし、Intune アプリ保護ポリシーを適用するのに役立ちます。
+* **[Intune App SDK Xamarin Bindings ガイド](app-sdk-xamarin.md)** : このドキュメントは、iOS アプリと Android アプリを Xamarin を使用してビルドし、Intune アプリ保護ポリシーを適用するのに役立ちます。
 
 
 
@@ -164,7 +163,7 @@ iOS または Android アプリを Intune アプリ SDK と統合するために
     
     * エンド ユーザー アカウントを使用してモバイル デバイスでアプリをテストしている場合は、管理者アカウントを使用してログインした後、Microsoft 365 管理センター Web サイトによってそのアカウントに Intune ライセンスが付与されていることを確認します。[Microsoft Intune ライセンスの割り当て](https://docs.microsoft.com/en-ca/intune/licenses-assign)に関するページを参照してください。
 
-* **Intune のアプリ保護ポリシー**: Intune のすべてのアプリ保護ポリシーに対して、ご使用のアプリをテストするには、ポリシー設定ごとに想定される動作を把握する必要があります。 [iOS アプリ保護ポリシー](app-protection-policy-settings-ios.md)と [Android アプリ保護ポリシー](app-protection-policy-settings-android.md)の説明を参照してください。
+* **Intune のアプリ保護ポリシー**: Intune のすべてのアプリ保護ポリシーに対して、ご使用のアプリをテストするには、ポリシー設定ごとに想定される動作を把握する必要があります。 [iOS アプリ保護ポリシー](app-protection-policy-settings-ios.md)と [Android アプリ保護ポリシー](app-protection-policy-settings-android.md)の説明を参照してください。 アプリで Intune SDK を統合していても、対象アプリとしてまだ Azure portal に表示されない場合は、[+ その他のアプリ] オプションを選択し、テキスト ボックスにバンドル ID (iOS) またはパッケージ名 (Android) を指定することでポリシーの対象にすることができます。
 
 * **トラブルシューティング**: アプリのインストール ユーザー エクスペリエンスを手動でテストしているときに問題が発生した場合は、「[アプリのインストールに関する問題のトラブルシューティング](troubleshoot-app-install.md)」をご覧ください。 
 
@@ -183,7 +182,7 @@ iOS または Android アプリを Intune アプリ SDK と統合するために
 7.  API の一覧で **[Microsoft Mobile Application Management]** を選択し、[選択] をクリックします。
 8.  **[Read and Write the User’s App Management Data]\(ユーザーのアプリ管理データの読み取りと書き込み\)** を選択します。
 9.  **[完了]** をクリックします。
-10. **[アクセス許可の付与]** をクリックして、**[はい]** をクリックします。 
+10. **[アクセス許可の付与]** をクリックして、 **[はい]** をクリックします。 
 
 ### <a name="badge-your-app-optional"></a>アプリにバッジを付ける (省略可能)
 

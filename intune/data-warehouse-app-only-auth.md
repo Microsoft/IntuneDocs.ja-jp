@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 05/31/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4edf6e1e2b0ed57ec221e445bc171895fb9e0072
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b9d3cd7dfb28d26451da95861fe9a3011c2556b1
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042670"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454039"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Intune データ ウェアハウス アプリケーションのみの認証
 
@@ -92,10 +92,11 @@ Azure Active Directory (Azure AD) では、OAuth 2.0 を使用して Azure AD �
 2.  左側で、 **[Visual C#]** を選択して、すべての .NET Framework プロジェクトを表示します。
 3.  **[コンソール アプリ (.NET Framework)]** を選択し、アプリ名を追加し、 **[OK]** をクリックして、アプリを作成します。
 4.  **ソリューション エクスプローラー**で **[Program.cs]** を選択してコードを表示します。
-5.  ポップアップ メニューで、 **[追加]**  >  **[新しい項目]** を選択します。 **[新しい項目の追加]** ダイアログ ボックスが表示されます。
-6.  左側にある **[Visual C#]** で **[コード]** を選択します。
-7.  **[クラス]** を選択し、クラスの名前を "*IntuneDataWarehouseClass.cs*" に変更し、 **[追加]** をクリックします。
-8.  <code>Main</code> メソッドに次のコードを追加します。
+5.  ソリューション エクスプローラーで、アセンブリ `System.Configuration` への参照を追加します。
+6.  ポップアップ メニューで、 **[追加]**  >  **[新しい項目]** を選択します。 **[新しい項目の追加]** ダイアログ ボックスが表示されます。
+7.  左側にある **[Visual C#]** で **[コード]** を選択します。
+8.  **[クラス]** を選択し、クラスの名前を "*IntuneDataWarehouseClass.cs*" に変更し、 **[追加]** をクリックします。
+9.  <code>Main</code> メソッドに次のコードを追加します。
 
     ``` csharp
          var applicationId = ConfigurationManager.AppSettings["appId"].ToString();
@@ -110,7 +111,7 @@ Azure Active Directory (Azure AD) では、OAuth 2.0 を使用して Azure AD �
                  new SecureClientSecret(applicationSecret))).Result;
     ``` 
 
-9. コード ファイルの先頭に次のコードを追加して、追加の名前空間を追加します。
+10. コード ファイルの先頭に次のコードを追加して、追加の名前空間を追加します。
 
     ``` csharp
      using System.Security;
@@ -118,7 +119,7 @@ Azure Active Directory (Azure AD) では、OAuth 2.0 を使用して Azure AD �
      using System.Configuration;
     ``` 
 
-10. <code>Main</code> メソッドの後に、次のプライベート メソッドを追加して、アプリ キーの処理および変換を行います。
+11. <code>Main</code> メソッドの後に、次のプライベート メソッドを追加して、アプリ キーの処理および変換を行います。
 
     ``` csharp
     private static SecureString ConvertToSecureStr(string appkey)
@@ -136,10 +137,10 @@ Azure Active Directory (Azure AD) では、OAuth 2.0 を使用して Azure AD �
     }
     ```
 
-11. **ソリューション エクスプローラー**で、 **[参照]** を右クリックし、 **[NuGet パッケージの管理]** をクリックします。
-12. *Microsoft.IdentityModel.Clients.ActiveDirectory* を検索し、関連する Microsoft NuGet パッケージをインストールします。
-13. **ソリューション エクスプローラー**で、*App.config* ファイルを選択して開きます。
-14. xml が次のように表示されるように、<code>appSettings</code> セクションを追加します。
+12. **ソリューション エクスプローラー**で、 **[参照]** を右クリックし、 **[NuGet パッケージの管理]** をクリックします。
+13. *Microsoft.IdentityModel.Clients.ActiveDirectory* を検索し、関連する Microsoft NuGet パッケージをインストールします。
+14. **ソリューション エクスプローラー**で、*App.config* ファイルを選択して開きます。
+15. xml が次のように表示されるように、<code>appSettings</code> セクションを追加します。
 
     ``` xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -155,8 +156,8 @@ Azure Active Directory (Azure AD) では、OAuth 2.0 を使用して Azure AD �
     </configuration>
     ``` 
 
-15. 一意のアプリ関連の値に一致するように、<code>appId</code>、<code>appKey</code>、<code>tenantDomain</code> の各値を更新します。
-16. アプリをビルドします。
+16. 一意のアプリ関連の値に一致するように、<code>appId</code>、<code>appKey</code>、<code>tenantDomain</code> の各値を更新します。
+17. アプリをビルドします。
 
     >[!NOTE] 
     > その他の実装コードについては、[Intune データ ウェアハウスのコード例](https://github.com/Microsoft/Intune-Data-Warehouse/tree/master/Samples/CSharp )に関するページを参照してください。

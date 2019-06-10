@@ -6,9 +6,8 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/24/2019
+ms.date: 05/30/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: ''
 ms.technology: ''
@@ -16,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 052a5f533ef577358b8c28262116c065b3c4748d
-ms.sourcegitcommit: d1b4f0d5487e35902e8bcd478ad02f93125cc31d
-ms.translationtype: HT
+ms.openlocfilehash: 7ff5b411f14fef4ad294b0dd8b265680fd67df08
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "64336706"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402759"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Intune で使用できる組み込み iOS アプリ用のバンドル ID
 
-iOS デバイス上で機能を構成すると、iOS デバイス上に組み込みアプリを追加することもできます。 この記事では、一部の一般的な組み込み iOS アプリのバンドル ID を一覧します。 他のアプリのバンドル ID を調べるには、ソフトウェア ベンダーにお問い合わせください。
+iOS デバイス上で機能を構成すると、iOS デバイス上に組み込みアプリを追加することもできます。 この記事では、一部の一般的な組み込み iOS アプリのバンドル ID を一覧します。 他のアプリのバンドル ID を調べるには、ソフトウェア ベンダーにお問い合わせください。 Apple の [iOS バンドル ID](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web) (Apple の Web サイトが開きます) の一覧を参照してください。
 
 ## <a name="bundle-ids"></a>バンドル ID
 
@@ -60,6 +59,7 @@ iOS デバイス上で機能を構成すると、iOS デバイス上に組み込
 | com.apple.mobilenotes       | 注        | Apple     |
 | com.apple.Numbers           | 数字      | Apple     |
 | com.apple.Pages             | ページ        | Apple     |
+| com.apple.mobilephone       | 電話        | Apple     |
 | com.apple.Photo-Booth       | Photo Booth  | Apple     |
 | com.apple.mobileslideshow   | 写真       | Apple     |
 | com.apple.podcasts          | Podcast     | Apple     |
@@ -69,7 +69,7 @@ iOS デバイス上で機能を構成すると、iOS デバイス上に組み込
 | com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | 株価       | Apple     |
 | com.apple.tips              | ヒント         | Apple     |
-| com.apple.TV                | TV           | Apple     |
+| com.apple.tv                | TV           | Apple     |
 | com.apple.videos            | ビデオ       | Apple     |
 | com.apple.VoiceMemos        | VoiceMemos   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |

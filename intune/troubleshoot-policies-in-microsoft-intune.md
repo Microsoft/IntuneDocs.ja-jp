@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 05/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0f8e9e7fec0bea759d408f3ca3d94aa46748bf8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
-ms.translationtype: HT
+ms.openlocfilehash: 1bed0fda1c19df181dacb36c832a2a4c94e61aff
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044613"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402661"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Intune でのポリシーとプロファイルのトラブルシューティング
 
@@ -32,13 +32,12 @@ Microsoft Intune には、トラブルシューティング機能がいくつか
 
 ## <a name="use-built-in-troubleshooting"></a>組み込みのトラブルシューティングを使用する
 
-1. [Azure portal](https://portal.azure.com) で、 **[すべてのサービス]** を選択し、**Intune** でフィルター処理して、 **[Intune]** を選択します。
-2. **[トラブルシューティング]** を選択します。
+1. [[Intune]](https://go.microsoft.com/fwlink/?linkid=2090973) で **[トラブルシューティング]** を選択します。
 
     ![Intune で、[ヘルプとサポート] に移動し、[トラブルシューティング] を選択する](./media/help-and-support-troubleshoot.png)
 
-3. **[ユーザーの選択]** を選択し、問題が発生しているユーザーを選択して、 **[選択]** を選択します。
-4. **[Intune ライセンス]** と **[アカウントの状態]** の両方に緑のチェック マークが表示されていることを確認します。
+2. **[ユーザーの選択]** を選択し、問題が発生しているユーザーを選択して、 **[選択]** を選択します。
+3. **[Intune ライセンス]** と **[アカウントの状態]** の両方に緑のチェック マークが表示されていることを確認します。
 
     ![Intune でユーザーを選択し、[アカウントの状態] と [Intune ライセンス] の状態に緑のチェック マークが表示されることを確認する](./media/account-status-intune-license-show-green.png)
 
@@ -47,7 +46,7 @@ Microsoft Intune には、トラブルシューティング機能がいくつか
     - [ユーザーがデバイスを登録できるようにライセンスを割り当てる](licenses-assign.md)
     - [Intune にユーザーを追加する](users-add.md)
 
-5. **[デバイス]** で、問題のあるデバイスを探します。 別の列を確認します。
+4. **[デバイス]** で、問題のあるデバイスを探します。 別の列を確認します。
 
     - **管理対象**: デバイスがコンプライアンス ポリシーまたは構成ポリシーを受け取るには、このプロパティに **[MDM]** または **[EAS/MDM]** と表示されている必要があります。
 
@@ -98,7 +97,7 @@ Microsoft Intune には、トラブルシューティング機能がいくつか
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>プロファイルが正しく適用されているかどうかわからない
 
-1. [Azure portal](https://portal.azure.com) で、 **[すべてのサービス]** を選択し、**Intune** でフィルター処理して、 **[Intune]** を選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 2. **[デバイス]**  >  **[すべてのデバイス]** を選択し、デバイスを選択して、 **[デバイスの構成]** を選択します。 
 
     すべてのデバイスで、プロファイルが一覧表示されます。 各プロファイルには **[状態]** があります。 ハードウェアと OS の制限と要件を含む、すべての割り当てられたプロファイルがまとめて考慮されると、状態が適用されます。 可能性のある状態は次のとおりです。
@@ -164,4 +163,6 @@ Intune ソフトウェア クライアントで管理されている Windows PC 
 
 ## <a name="next-steps"></a>次の手順
 
-まだ手助けが必要な場合は、[Microsoft Intune のサポートを受ける](get-support.md)ことができます。
+[電子メール プロファイルの一般的な問題と解決方法](troubleshoot-email-profiles-in-microsoft-intune.md)
+
+[Microsoft からサポート](get-support.md)を受けるか、[コミュニティ フォーラム](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune)を使用します。
