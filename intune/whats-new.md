@@ -6,9 +6,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/25/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 401bc833b2b864983ec301972950ffbd04fe2229
-ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
+ms.openlocfilehash: 25a3acda374266a0fbd16feabde7787204555ea2
+ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65135185"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66264165"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 
@@ -47,6 +46,125 @@ ms.locfileid: "65135185"
 
 <!-- ########################## -->
 
+## <a name="week-of-may-20-2019"></a>2019 年 5 月 20 日の週 
+
+### <a name="app-management"></a>アプリ管理
+
+#### <a name="windows-company-portal-app----3316993---"></a>Microsoft ポータル サイト アプリ <!-- 3316993 -->
+Windows ポータル サイト アプリには、 **[デバイス]** とラベル付けされた新しいページが設けられました。 **[デバイス]** ページには、登録されているデバイスのすべてのエンド ユーザーが表示されます。 バージョン 10.3.4291.0 以降を使用している場合、ユーザーはポータル サイト上でこの変更を確認できます。 ポータル サイトの構成方法については、「[Microsoft Intune ポータル サイト アプリを構成する方法](company-portal-app.md)」をご覧ください。
+
+### <a name="device-enrollment"></a>デバイスの登録
+
+#### <a name="autopilot-device-orderid-attribute-name-changed-to-group-tag----4659453---"></a>Autopilot デバイスの OrderID 属性の名前がグループ タグに変更された <!-- 4659453 -->
+
+直感的にわかりやすくするために、Autopilot デバイス上での **OrderID** 属性の名前が、**グループ タグ**に変更されました。 Autopilot デバイス情報をアップロードするために CSV を使用する場合は、OrderID ではなく、列ヘッダーとしてグループ タグを使用する必要があります。  
+
+## <a name="week-of-may-13-2019"></a>2019 年 5 月 13 日の週 
+
+### <a name="app-management"></a>アプリ管理
+
+#### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation-----1927359-idready-wnready--"></a>Intune ポリシーによって認証方法とポータル サイト アプリのインストールを更新する  <!-- 1927359 idready wnready-->
+Apple の会社用デバイスの登録方法のいずれかを使ってセットアップ アシスタント経由で既に登録されているデバイスの場合、Intune では、特定のデバイスで App Store からインストールされる場合に、ポータル サイト アプリがサポートされなくなります。 この変更は、登録時に Apple セットアップ アシスタントで認証を行う場合にのみ関係があります。 また、この変更は、以下から登録される iOS デバイスのみに影響します。  
+* Apple Configurator
+
+* Apple Business Manager
+
+* Apple School Manager
+
+* Apple Device Enrollment Program (DEP)
+
+App Store からポータル サイト アプリをインストールした後、これらのデバイスを登録しようとすると、エラーが発生します。 登録時に Intune によって自動的にプッシュされた場合、これらのデバイスではポータル サイトだけを使用することが期待されます。 Azure portal での Intune の登録プロファイルは、デバイスの認証方法およびポータル サイト アプリを受信するかどうかを指定できるように更新されます。 DEP デバイス ユーザーがポータル サイトを使用するようにしたい場合は、登録プロファイルでユーザー設定を指定する必要があります。 
+
+さらに、iOS ポータル サイト内の **[デバイスの特定]** 画面は、削除される予定です。 そのため、条件付きアクセスの有効化または業務用アプリのデプロイを行う管理者は、DEP 登録プロファイルを更新する必要があります。 この要件は、DEP 登録が設定アシスタントによって認証された場合にのみ、適用されます。 その場合、デバイス上にポータル サイトをプッシュする必要があります。 これを行うには、 **[Intune]**  >  **[デバイスの登録]**  >  **[Apple の登録]**  >  **[Enrollment Program トークン]** の順に選択し、1 つのトークンを選んで **[プロファイル]** から 1 つのプロファイルを選択し、 **[プロパティ]** から **[ポータル サイトのインストール]** を **[はい]** に設定します。
+
+既に登録されている DEP デバイス上にポータル サイトをインストールするには、Intune 上で [クライアント アプリ] に移動し、アプリ構成ポリシーを利用してマネージド アプリとしてプッシュする必要があります。 
+
+#### <a name="configure-how-end-users-update-a-line-of-business-lob-app-using-an-app-protection-policy----3568384---"></a>アプリ保護ポリシーを利用してエンド ユーザーが基幹業務 (LOB) アプリを更新する方法を構成する <!-- 3568384 -->
+エンド ユーザーが基幹業務 (LOB) アプリの更新バージョンを取得できる場所を構成できるようになりました。 この機能がエンド ユーザーに対して表示されるのは **[アプリの最小バージョン]** 条件付き起動ダイアログであり、エンド ユーザーは最小バージョンの LOB アプリに更新することを求められます。 LOB アプリ保護ポリシー (APP) の一部として、これらの更新の詳細を提供する必要があります。 この機能は iOS および Android 上で使用できます。 iOS の場合、この機能ではアプリを統合する (または、ラッピング ツールを使用しラップする) ことが必要になります。その際に利用するのは、iOS 用の Intune SDK 10.0.7 以降です。 Android の場合、この機能では最新のポータル サイトが必要になります。 エンド ユーザーが LOB アプリを更新する方法を構成するには、キー `com.microsoft.intune.myappstore` を含むマネージド アプリ構成ポリシーをアプリに送信する必要があります。 送信される値により、エンド ユーザーがアプリをダウンロードするストアが定義されます。 アプリがポータル サイト経由で展開される場合、値は `CompanyPortal` である必要があります。 他のストアの場合は、完全な URL を入力する必要があります。
+
+#### <a name="intune-management-extension-powershell-scripts-----3734186-idready---"></a>Intune 管理拡張機能の PowerShell スクリプト  <!-- 3734186 idready -->
+ユーザーの管理者特権を使用してデバイス上で実行するように、PowerShell スクリプトを構成できます。 詳しくは、「[Intune で Windows 10 デバイスに対して PowerShell スクリプトを使用する](intune-management-extension.md)」と、[Win32 アプリ管理](apps-win32-app-management.md)に関するページをご覧ください。
+
+#### <a name="android-enterprise-app-management----4459905---"></a>Android Enterprise アプリの管理 <!-- 4459905 -->
+IT 管理者がより簡単に Android Enterprise 管理を構成および使用できるよう、Intune では 4 つの一般的な Android Enterprise 関連のアプリが Intune 管理コンソールに自動的に追加されます。 4 つの Android Enterprise アプリは次のとおりです。
+
+- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)** - Android Enterprise フル マネージド シナリオで使用されます。
+- **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** - 2 要素検証を使用している場合、アカウントへのサインインを支援します。
+- **[Intune ポータル サイト](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** - アプリ保護ポリシー (APP) と Android Enterprise 仕事用プロファイルのシナリオで使用されます。
+- [Managed Home Screen](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise) - Android Enterprise 専用またはキオスクのシナリオで使用されます。
+
+以前は、IT 管理者はセットアップの一部として、手動でこれらのアプリを [Managed Google Play ストア](https://play.google.com/store/apps)で探して承認する必要がありました。 この変更により、以前の手動による手順は不要となり、お客様は Android Enterprise 管理をより簡単に素早く使用できるようになります。
+
+管理者は Intune テナントを Managed Google Play に最初に接続したときに、これらの 4 つのアプリが自動的に Intune アプリ一覧に追加されていることを確認できます。 詳細については、[Managed Google Play アカウントへの Intune アカウントの接続](connect-intune-android-enterprise.md)に関するページを参照してください。 自分のテナントを既に接続済みであるか、Android Enterprise を既に使用済みのテナントの場合、管理者が行う必要のある処理はありません。 これらの 4 つのアプリは、2019 年 5 月のサービス ロール アウトの完了から 7 日以内に自動的に表示されます。
+
+### <a name="device-configuration"></a>デバイス構成
+
+####  <a name="intune-security-tasks-for-defender-atp-in-public-preview--------3208597---"></a>Defender ATP 用の Intune セキュリティ タスク (パブリック プレビュー)     <!-- 3208597 -->
+パブリック プレビューでは、Intune を使用して Microsoft Defender Advanced Threat Protection (ATP) 用のセキュリティ タスクを管理できます。 この ATP との統合によってリスク ベースの手法が追加され、エンドポイントの脆弱性や誤設定を検出し、優先度を付けて修復できるようになり、検出から軽減までにかかる時間が短縮されます。
+
+#### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---idstaged--"></a>Windows 10 デバイスのコンプライアンス ポリシーでの TPM チップセットのチェック <!-- 3617671   idstaged-->
+Windows 10 以降のデバイスの多くには、トラステッド プラットフォーム モジュール (TPM) チップセットが含まれています。 この更新プログラムには、デバイスの TPM チップのバージョンを確認する新しいコンプライアンス設定が含まれています。 
+
+[Windows 10 以降のコンプライアンス ポリシー設定](compliance-policy-create-windows.md#device-security)で、この設定が説明されています。
+
+適用対象:Windows 10 以降
+
+#### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices----4097904-----"></a>エンド ユーザーによる個人用ホットスポットの変更を防止し、iOS デバイス上での Siri サーバーのログ記録を無効にする <!-- 4097904   --> 
+iOS デバイス上にデバイスの制限プロファイルを作成します ( **[デバイスの構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  >  **[iOS]** (プラットフォーム) > **[デバイスの制限]** (プロファイルの種類))。 この更新プログラムには構成できる新しい設定が含まれています。
+
+- **組み込みアプリ**:Siri コマンドに対するサーバー側のログ記録
+- **ワイヤレス**:個人用ホットスポットのユーザー変更 (監視モードのみ)
+
+これらの設定を確認するには、[iOS 用の組み込みのアプリ設定](device-restrictions-ios.md#built-in-apps)と [iOS 用のワイヤレス設定](device-restrictions-ios.md#wireless)に移動します。
+
+iOS デバイス 12.2 以降に適用されます。
+
+#### <a name="new-classroom-app-device-restriction-settings-for-macos-devices----4097905-----"></a>macOS デバイス用の新しい Classroom アプリ デバイス制限の設定 <!-- 4097905   --> 
+macOS デバイス用のデバイス構成プロファイルを作成できます ( **[デバイスの構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  >  **[macOS]** (プラットフォーム) > **[デバイスの制限]** (プロファイルの種類))。 この更新プログラムには、新しい Classroom アプリ設定と、iCloud フォト ライブラリを無効にするためのオプションが含まれています。
+
+現在の設定を確認するには、「[Intune を使用して機能を許可または制限するように macOS デバイスを設定する](device-restrictions-macos.md)」を参照してください。
+
+適用対象: macOS
+
+#### <a name="the-ios-password-to-access-app-store-setting-is-renamed---4557891----"></a>iOS の [アプリ ストアにアクセスするためのパスワード] 設定の名前が変更される<!-- 4557891  -->
+**[アプリ ストアにアクセスするためのパスワード]** 設定の名前が、 **[すべての購入に iTunes Store パスワードを要求します]** に変更されています ( **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  >  **[iOS]** (プラットフォームに対応) > **[デバイスの制限]** (プロファイルの種類に対応) > **[アプリ ストア、ドキュメント表示、ゲーム]** )。
+
+使用可能な設定を確認するには、[[アプリ ストア、ドキュメントの表示、ゲーム] の iOS 設定](device-restrictions-ios.md#app-store-doc-viewing-gaming)に移動します。
+
+適用対象: iOS
+
+####  <a name="microsoft-defender-advanced-threat-protection--baseline--preview------3754134---"></a>Microsoft Defender Advanced Threat Protection のベースライン (プレビュー)  <!--  3754134 -->
+[Microsoft Defender Advanced Threat Protection](security-baseline-settings-defender-atp.md) の設定に、セキュリティ ベースラインのプレビューを追加しました。  
+
+### <a name="device-enrollment"></a>デバイスの登録
+
+#### <a name="windows-enrollment-status-page-esp-is-now-generally-available----3605348---"></a>Windows 登録ステータス ページ (ESP) が一般提供される <!-- 3605348 -->
+登録ステータス ページがプレビューではなくなりました。 詳しくは、「[登録ステータス ページを設定する](windows-enrollment-status.md)」をご覧ください。
+
+
+#### <a name="intune-user-interface-update---autopilot-enrollment-profile-creation-----4593669---"></a>Intune ユーザー インターフェイスの更新 - Autopilot 登録プロファイルの作成  <!-- 4593669 -->
+Autopilot 登録プロファイルを作成するためのユーザー インターフェイスが、Azure ユーザー インターフェイスの形式に準拠するように更新されました。 詳しくは、「[Create an Autopilot enrollment profile (Autopilot 登録プロファイルを作成する)](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-deployment-profile)」をご覧ください。 Intune の追加のシナリオでは、今後はこの新しい UI 形式に更新されます。
+
+#### <a name="enable-autopilot-reset-for-all-windows-devices----4225665---"></a>すべての Windows デバイスに対して Autopilot リセットを有効にする <!-- 4225665 -->
+登録ステータス ページを使用するように構成されていない場合であっても、AutoPilot リセットがすべての Windows デバイスにおいて有効になりました。 初期のデバイス登録時に、登録ステータス ページがデバイスに対して構成されていなかった場合、デバイスではサインイン後、デスクトップへと直接移動します。 同期して Intune 内での適合が確認できるまでに、最大で 8 時間かかる場合があります。 詳しくは、「[リモート Windows 自動操縦リセットを使用してデバイスをリセットする](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset-remote)」をご覧ください。
+
+#### <a name="exact-imei-format-not-required-when-searching-all-devices---30407680---"></a>[すべてのデバイス] を検索する場合に厳密な IMEI 形式を必須としない <!--30407680 -->
+**[すべてのデバイス]** を検索するときに、IMEI 番号にスペースを含める必要がなくなります。
+
+#### <a name="deleting-a-device-in-the-apple-portal-will-be-reflected-in-the-intune-portal---2489996---"></a>Apple ポータルでデバイスを削除すると、Intune ポータルに反映される <!--2489996 -->
+Apple の Device Enrollment Program または Apple Business Manager ポータルからデバイスが削除されると、そのデバイスは Intune から次回の同期中に自動的に削除されます。
+
+
+### <a name="monitor-and-troubleshoot"></a>監視とトラブルシューティング
+
+#### <a name="the-encryption-report-is-out-of-public-preview------4587546--------"></a>暗号化レポートのパブリック プレビューが終了する   <!-- 4587546      -->
+[BitLocker およびデバイス暗号化用のレポート](encryption-monitor.md)が一般提供されるようになり、パブリック プレビュー段階ではなくなりました。 
+
+<!-- ########################## -->
+
+#### <a name="outlook-signature-and-biometric-settings-for--ios-and-android-devices----4050557---"></a>iOS および Android デバイス用の Outlook 署名と生体認証の設定 <!-- 4050557 -->
+iOS および Android デバイス上では、Outlook 内で既定の署名を有効にするかどうかを指定できるようになりました。 さらに、iOS 上の Outlook では、ユーザーによる生体認証設定の変更を許可する選択ができるようになっています。
+
 ## <a name="week-of-may-6-2019"></a>2019 年 5 月 6 日の週 
 
 ### <a name="device-configuration"></a>デバイス構成
@@ -56,7 +174,7 @@ ms.locfileid: "65135185"
 F5 は、iOS 上の Intune に、F5 Access で NAC 機能を許可する BIG-IP 13 の更新プログラムをリリースしました。 この機能を使用するには、以下を行います。
 
 - BIG-IP を 13.1.1.5 refresh に更新します。 BIG-IP 14 はサポートされていません。
-- NAC 用に Intune に BIG-IP を統合します。 「[Overview:Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89)」 (概要: エンドポイント管理システムを使用したデバイス ポスチャ チェック用の APM の構成) の手順。
+- NAC 用に Intune に BIG-IP を統合します。 「[Overview:Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89)」 (概要: エンドポイント管理システムを使用したデバイス ポスチャ チェック用の APM の構成) の手順。
 - Intune の VPN プロファイルの **Enable Network Access Control (NAC)** 設定を確認します。
 
 利用できる設定については、[iOS デバイスへの VPN 設定の構成](vpn-settings-ios.md)に関する記事を参照してください。
@@ -111,7 +229,7 @@ Intune に登録された Azure AD 参加済みデバイスにインストール
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Android エンタープライズ仕事用プロファイル デバイスに関するマネージド Google Play アプリの追加レポート <!-- 4105925  -->
 Android エンタープライズ仕事用プロファイル デバイスに展開されたマネージド Google Play アプリについて、デバイスにインストールされているアプリの特定のバージョン番号を表示できます。 これは必須アプリのみに適用されます。 将来のリリースでは、利用可能なアプリに対して同じ機能が有効になります。 
 
-#### <a name="ios-third-party-keyboards----4111843-idready-eeready---"></a>iOS サード パーティ製キーボード <!-- 4111843 idready eeready -->
+#### <a name="ios-third-party-keyboards----4111843-----"></a>iOS サード パーティ製キーボード <!-- 4111843   -->
 iOS 用の**サードパーティ製キーボード**の設定での Intune アプリ保護ポリシー (APP) のサポートは、iOS プラットフォームの変更によりサポートされなくなりました。 この設定は、Intune の管理コンソールからは構成できなくなり、Intune App SDK でクライアントに強制されなくなります。
 
 ### <a name="device-configuration"></a>デバイス構成
@@ -1131,7 +1249,7 @@ Autopilot に関してまだ登録されていない登録 Win 10 デバイス�
 登録ステータス ページ プロファイルを複数[作成し、Azure AD グループに割り当てる](windows-enrollment-status.md)ことができるようになりました。
 
 #### <a name="migration-from-device-enrollment-program-to-apple-business-manager-in-intune---2748613--"></a>Intune で Device Enrollment Program から Apple Business Manager に移行する <!--2748613-->
-Apple Business Manager (ABM) は Intune で動作します。Device Enrollment Program (DEP) から ABM にアカウントをアップグレードできます。 Intune でのプロセスは同じです。 DEP から ABM に Apple をアップグレードするには、[ https://support.apple.com/en-us/HT208817]( https://support.apple.com/en-us/HT208817) に移動します。
+Apple Business Manager (ABM) は Intune で動作します。Device Enrollment Program (DEP) から ABM にアカウントをアップグレードできます。 Intune でのプロセスは同じです。 DEP から ABM に Apple をアップグレードするには、[ https://support.apple.com/HT208817]( https://support.apple.com/HT208817) に移動します。
 
 ### <a name="alert-and-enrollment-status-tabs-on-the-device-enrollment-overview-page---2748656--"></a>デバイス登録概要ページのアラートと登録ステータスのタブ <!--2748656-->
 デバイス登録概要ページでは、アラートや登録エラーが別々のタブに表示されるようになりました。
