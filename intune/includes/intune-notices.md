@@ -7,36 +7,14 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: ffcef5b4d78856709f8563ee1f667ec7e5d993b3
-ms.sourcegitcommit: d2e04a38e024b0f5afb0ca202823227de9da3ad1
+ms.openlocfilehash: 1073a38da8a5b2467b1ff8c97b32b93f92e34e4c
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65732599"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454124"
 ---
 以下の通知では、今後の Intune の変更と機能に備えるために役立つ重要な情報が提供されます。 
-
-### <a name="change-in-enrollment-workflow-with-intune-company-portal-on-corporate-ios-devices-authenticating-with-setup-assistant----1927359---"></a>設定アシスタントを使って認証する企業の iOS デバイスに対する、Intune ポータル サイトでの登録ワークフローの変更 <!-- 1927359 -->
-Apple の業務用デバイス登録メソッド (Apple Configurator、Apple Business Manager、Apple School Manager、または Apple Device Enrollment Program (DEP)) のいずれかを使った iOS デバイスの登録ワークフローについて、認証に設定アシスタントを使う場合、今後の変更点があります。 この変更は、ユーザー アフィニティを使って登録されているデバイスにのみ適用されます。
-
-#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
-この変更がロールアウトされると、Azure portal での Intune の登録プロファイルは、デバイスの認証方法およびポータル サイト アプリを受信するかどうかを指定できるように更新されます。 上記の方法で iOS デバイスを登録するための改善されたワークフローが追加されます。 
-
-- 新しいデバイスを登録し、設定アシスタントでそれを認証する場合、ポータル サイト アプリを自動的に展開するかどうかを選択できます。 登録フローでエンド ユーザーに [デバイスの特定] 画面や [デバイスの確認] 画面が表示されることがなくなります。  
-- Apple の業務用デバイス登録方法のいずれかを使い、設定アシスタント経由で既に登録されているデバイスについて条件付きアクセスを有効にするには、自分で処理を行う必要があります。 特定の xml を使って[アプリ構成ポリシーを構成し](https://aka.ms/enrollment_setup_assistant)、これらのデバイスにポータル サイトをプッシュする必要があります。  この方法でポータル サイトをプッシュすることを選ぶと、登録フローでエンド ユーザーに [デバイスの特定] 画面や [デバイスの確認] 画面が表示されることがなくなります。 
-- この変更がロールアウトされた後に、上記のアプリ構成プロファイルを使ってポータル サイトを展開しておらず、かつエンド ユーザーがアプリ ストアからポータル サイト アプリをダウンロードした場合、サインインすることはできますが、エラー メッセージが発生します。 条件付きアクセス用にそのアプリを使用することができません。 
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
-変更されたワークフローを使用する予定の場合は、エンド ユーザー向けガイダンスを更新して以下を示す必要があります。
-
-- 登録フローで、上記の 2 つの画面はエンド ユーザーに表示されなくなります。 
-- ポータル サイトが自動的に展開され、アプリ ストアからダウンロードされていない場合は、これにサインインする必要があります。 
-
-この変更に備えて、必要があればアプリ構成ポリシーを作成することを選択できるようになりました。 この新しいワークフローがロールアウトされると、コンソールに更新された登録プロファイルが表示されます。 このロールアウトについては、メッセージ センターを通じてもお知らせします。 その後、エンドユーザーが DEP を使って設定アシスタントで認証して登録できるように、また条件付きアクセスに対してポータル サイトを使えるように、そのアクションを実行する必要があります。
-
-#### <a name="additional-information"></a>追加情報 
-[https://aka.ms/enrollment_setup_assistant](https://aka.ms/enrollment_setup_assistant)
-
 
 ### <a name="update-your-android-company-portal-app-to-the-latest-version---4536963--"></a>Android 用ポータル サイト アプリを最新バージョンに更新する <!--4536963-->
 Intune では、Android 用ポータル サイト アプリに対する更新プログラムが定期的にリリースされます。 2018 年 11 月に、ポータル サイトの更新プログラムがリリースされました。これには、Google による既存の通知プラットフォームから Google の Firebase Cloud Messaging (FCM) への変更に備えるための、バックエンド スイッチが含まれていました。 Google が既存の通知プラットフォームを終了して FCM に移行したとき、エンド ユーザーは、Google Play ストアとの交信を継続するために、各自のポータル サイト アプリを少なくとも 2018 年 11 月のリリースに更新済みである必要があります。
@@ -49,3 +27,16 @@ Intune では、Android 用ポータル サイト アプリに対する更新プ
 
 #### <a name="additional-information"></a>追加情報
 https://firebase.google.com/docs/cloud-messaging/
+
+
+### <a name="new-fullscreen-experience-coming-to-intune---4593669--"></a>Intune に設置された新しい全画面のエクスペリエンス <!--4593669-->
+Azure portal では、Intune に対する UI 作成と編集のエクスペリエンスを更新して公開しました。 この新しいエクスペリエンスでは、1 つのブレード内にまとめられたウィザード形式のフォーマットを使用することで、既存のワークフローを簡素化します。 この更新によって、"ブレードが無秩序に増える" ことや、ブレードを詳細にドリルダウンしていくことが求められる作成および編集のフローを回避します。 また、作成のワークフローは、割り当て (アプリ割り当て以外) を含むように更新されます。
+
+#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
+portal.azure.com および devicemanagement.microsoft.com の両方で、次の数か月間にわたって全画面のエクスペリエンスが Intune に公開されます。 この UI の更新は、既存のポリシーとプロファイルの機能には影響を及ぼしませんが、少し変更されたワークフローが表示されます。 たとえば、新しいポリシーを作成するときに、いくつかの割り当てをポリシーの作成後に行うのではなく、このフローの一部として設定できます。 コンソールでの新しいエクスペリエンスの外観を示したスクリーンショットは、「追加情報」にあるブログ投稿で確認してください。
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
+何らかのアクションを行う必要はありませんが、必要に応じて IT プロフェッショナル向けのガイダンスの更新を検討できます。 Microsoft では、Azure portal 上で Intune 内の各種のブレードに対してこのエクスペリエンスが公開され次第、ドキュメントを更新する予定です。
+
+#### <a name="additional-information"></a>追加情報 
+https://aka.ms/intune_fullscreen

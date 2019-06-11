@@ -6,9 +6,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,23 +16,23 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 52b92483ddafadf460911caaa472825a0bc0a20f
-ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
+ms.openlocfilehash: d90bc17d01a76c9c566210edc3bdc265511fa16d
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65527220"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047821"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>BitLocker とデバイスの暗号化を監視する  
 Intune には、ご利用の Windows 10 デバイスの暗号化の状態を識別するための一元的な場所が用意されているため、Intune を使用すれば、Azure Active Directory (Azure AD) 内で BitLocker の重要な情報が検出されたら、ご自分のデバイスからアクセスできます。  
 
-- [暗号化レポート (パブリック プレビュー)](#encryption-report) では、デバイスの暗号化の状態と準備に関する詳細が提供されます。 レポートの詳細は、保護するデバイスの暗号化が正常に行われるのを妨げている問題を特定するのに役立ちます。  
-- Intune ポータル内から、ご利用のデバイスのキー ID や回復キーなど、[BitLocker の詳細を表示する (パブリック プレビュー)](#bitlocker-recovery-keys)。  
+- [暗号化レポート](#encryption-report)では、デバイスの暗号化の状態と準備に関する詳細が提供されます。 レポートの詳細は、保護するデバイスの暗号化が正常に行われるのを妨げている問題を特定するのに役立ちます。  
+- Intune ポータル内から、ご利用のデバイスのキー ID や回復キーなど、[BitLocker の詳細を表示](#bitlocker-recovery-keys)します。  
 
 ## <a name="encryption-report"></a>レポートの暗号化
-暗号化レポート (パブリック プレビュー) を使用して、ご利用の Windows 10 デバイスの暗号化の状態に関する詳細を確認できます。  
+暗号化レポートを使用して、ご利用の Windows 10 デバイスの暗号化の状態に関する詳細を確認できます。  
 
-レポートを検索するには、[Intune](https://aka.ms/intuneportal) にサインインし、 **[デバイス構成]** に進み、次に *[監視]* で、 **[暗号化レポート (プレビュー)]** を選択します。  
+レポートを検索するには、[Intune](https://aka.ms/intuneportal) にサインインし、 **[デバイス構成]** に進み、 *[監視]* 下にある **[暗号化レポート]** を選択します。  
 
 ### <a name="prerequisites"></a>前提条件:
 暗号化レポートに表示されるためには、デバイス上で Windows のバージョン 1607 以降を実行している必要があります。  
@@ -90,14 +89,14 @@ Intune には、ご利用の Windows 10 デバイスの暗号化の状態を識�
    - 固定ドライブの暗号化の方法が、BitLocker ポリシーと一致していません。  
    - ドライブを暗号化する場合、BitLocker ポリシーによって、ユーザーが管理者としてサインインする必要がある、または、デバイスが Azure AD に参加している場合は、AllowStandardUserEncryption ポリシーを 1 に設定する必要がある、のいずれかが求められています。  
    - Windows 回復環境 (WinRE) が構成されていません。  
-   - TPM が BitLocker で使用できません。原因として、それが存在していない、それがレジストリ内で利用できなくなっている、または OS がリムーバブル ドライブ上にあることが挙げられます。  
+   - TPM が BitLocker では使用できません。原因として、存在していない、レジストリ内で利用できなくなっている、または OS がリムーバブル ドライブ上にあることが挙げられます。  
    - TPM が BitLocker で使用する準備ができていません。  
    - 回復キーのバックアップに必要なネットワークが使用できません。  
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker 回復キー
-パブリック プレビューとして Intune では BitLocker 用の Azure AD ブレードにアクセスできます。これにより、Intune ポータル内から、ご利用の Windows 10 デバイス用の BitLocker キー ID および回復キーを確認できます。  アクセスできるようになるには、デバイスのキーが Azure AD にエスクローされている必要があります。 
+Intune では BitLocker 用の Azure AD ブレードにアクセスできます。これにより、Intune ポータル内から、ご利用の Windows 10 デバイス用の BitLocker キー ID および回復キーを確認できます。  アクセスできるようになるには、デバイスのキーが Azure AD にエスクローされている必要があります。 
 1. [Intune](https://aka.ms/intuneportal) にサインインし、 **[デバイス]** に移動してから、 *[管理]* で、 **[すべてのデバイス]** を選択します。
-2. 一覧からデバイスを選択して、 *[監視]* で、 **[回復キー – プレビュー]** を選択します。  
+2. 一覧からデバイスを選択して、 *[監視]* 下にある **[回復キー]** を選択します。  
   
 キーが Azure AD で利用できる場合は、次の情報を入手できます。
 - BitLocker キー ID

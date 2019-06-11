@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 12/06/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be0598d09f10403892fa6a82e109ecc90015ccf9
-ms.sourcegitcommit: 47d8ca144ea4e8b8817e95ac4b8c6bd8591fcc06
+ms.openlocfilehash: 030467009e0fed8716a1aa622474188352c0e0b0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65619433"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050353"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Intune と Windows Autopilot を使用して Hybrid Azure AD 参加済みデバイスをデプロイする
 Intune と Windows Autopilot を使用して、Hybrid Azure Active Directory (Azure AD) 参加済みデバイスを設定できます。 そのためには、この記事の手順のようにします。
@@ -119,6 +118,9 @@ Active Directory 用の Intune コネクタは、Windows Server 2016 以降を�
 > [!NOTE]
 > コネクタにサインインした後、それが [Intune](https://aka.ms/intuneportal) に表示されるまでに数分かかる場合があります。 Intune サービスと正常に通信できる場合にのみ表示されます。
 
+### <a name="turn-off-ie-enhanced-security-configuration"></a>[IE セキュリティ強化の構成] をオフにする
+Windows Server では既定で、Internet Explorer セキュリティ強化の構成がオンになっています。 Intune Connector for Active Directory にサインインできない場合、管理者向けの [IE セキュリティ強化の構成] をオフにします。 「[How To Turn Off Internet Explorer Enhanced Security Configuration (Internet Explorer セキュリティ強化の構成をオフにする方法)](https://blogs.technet.microsoft.com/chenley/2011/03/10/how-to-turn-off-internet-explorer-enhanced-security-configuration)」
+
 ### <a name="configure-web-proxy-settings"></a>Web プロキシ設定の構成
 
 ネットワーク環境に Web プロキシがある場合は、「[既存のオンプレミス プロキシ サーバーと連携する](autopilot-hybrid-connector-proxy.md)」を参照して、Active Directory 用の Intune コネクタが正しく動作することを確認します。
@@ -137,7 +139,7 @@ Active Directory 用の Intune コネクタは、Windows Server 2016 以降を�
 
 1. メンバーシップの種類で **[動的デバイス]** を選択した場合は、 **[グループ]** ウィンドウで **[動的なデバイス メンバー]** を選択し、 **[高度なルール]** ボックスで次のいずれかのようにします。
     - すべての Autopilot デバイスを含むグループを作成するには、「`(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`」と入力します。
-    - 特定の注文 ID のすべての Autopilot デバイスを含むグループを作成するには、「`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`」と入力します。
+    - Intune のグループ タグ フィールドは、Azure AD デバイス上の OrderID 属性にマップされます。 特定のグループ タグ (OrderID) を使って Autopilot デバイスをすべて含むグループを作成する場合は、「 `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`」と入力する必要があります
     - 特定の注文書 ID のすべての Autopilot デバイスを含むグループを作成するには、「`(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`」と入力します。
     
 1. **[保存]** を選択します。
@@ -194,7 +196,7 @@ Autopilot Deployment プロファイルは、Autopilot デバイスを構成す�
 
 ## <a name="optional-turn-on-the-enrollment-status-page"></a>(省略可能) 登録状態ページを有効にする
 
-1. [Intune](https://aka.ms/intuneportal) で、 **[デバイスの登録]**  >  **[Windows の登録]**  >  **[登録ステータス ページ (プレビュー)]** の順に選択します。
+1. [Intune](https://aka.ms/intuneportal) で、 **[デバイスの登録]**  >  **[Windows の登録]**  >  **[登録ステータス ページ]** の順に選択します。
 1. **[登録ステータス ページ]** ウィンドウで、 **[既定]**  >  **[設定]** の順に選択します。
 1. **[アプリとプロファイルのインストール進行状況を表示する]** ボックスで、 **[はい]** を選択します。
 1. 必要に応じて、他のオプションを構成します。

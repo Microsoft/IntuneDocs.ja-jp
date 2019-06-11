@@ -1,13 +1,12 @@
 ---
 title: Microsoft Intune でセキュリティのベースラインを使用する - Azure | Microsoft Docs
-description: モバイル デバイス管理に Microsoft Intune を使用して、デバイス上のユーザーとデータを保護するために推奨されるグループ セキュリティ設定を追加または構成します。 BitLocker の有効化、Windows Defender Advanced Threat Protection の構成、Internet Explorer の制御、SmartScreen の使用、ローカル セキュリティ ポリシーの設定、パスワードの要求、インターネット ダウンロードのブロックなどを行います。
+description: モバイル デバイス管理に Microsoft Intune を使用して、デバイス上のユーザーとデータを保護するために推奨されるグループ セキュリティ設定を追加または構成します。 BitLocker の有効化、Microsoft Defender Advanced Threat Protection の構成、Internet Explorer の制御、SmartScreen の使用、ローカル セキュリティ ポリシーの設定、パスワードの要求、インターネット ダウンロードのブロックなどを行います。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/22/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70638228875f1fb063a2ea22dc424c00f3940a30
-ms.sourcegitcommit: ef4bc7318449129af3dc8c0154e54a264b7bf4e5
+ms.openlocfilehash: feb2bda30547779680a001b3c598b54d236f70ed
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65197622"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045099"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Intune で Windows 10 のセキュリティのベースラインを作成する
 
@@ -44,9 +43,19 @@ ms.locfileid: "65197622"
 
 プロファイルが割り当てられたら、プロファイルを監視し、ベースラインを監視できます。 たとえば、ベースラインと一致するデバイスや、ベースラインと一致しないデバイスを確認できます。
 
-この記事では、セキュリティのベースラインを使用してプロファイルを作成し、プロファイルを割り当て、プロファイルを監視する方法を説明します。
+この記事では、セキュリティ ベースラインを使用してプロファイルを作成し、プロファイルを割り当て、プロファイルを監視する方法を説明します。
 
 「[Windows セキュリティ基本計画](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)」は、この機能の詳細を学ぶ際に役立つリソースです。 「[Mobile device management (モバイル デバイス管理)](https://docs.microsoft.com/windows/client-management/mdm/)」(MDM) は、MDM と、Windows デバイス上で実行できることに関する優れたリソースです。
+
+## <a name="available-security-baselines"></a>使用可能なセキュリティ ベースライン  
+
+Intune では、次のセキュリティ ベースラインを使用できます。
+- **プレビュー:2018 年 10 月の MDM セキュリティ ベースライン**  
+  [設定を表示する](security-baseline-settings-windows.md)
+
+- **プレビュー:Windows Defender ATP ベースライン**  
+  [設定を表示する](security-baseline-settings-defender-atp.md)
+
 
 ## <a name="prerequisites"></a>必要条件
 Intune でベースラインを管理するには、アカウントに [[Policy and Profile Manager]\(ポリシーとプロファイル マネージャー\)](role-based-access-control.md#built-in-roles) 組み込みロールが必要です。
@@ -60,51 +69,36 @@ Intune マネージド デバイスに関するセキュリティのベースラ
 
 ## <a name="create-the-profile"></a>プロファイルの作成
 
-1. [Azure portal](https://portal.azure.com/) で、 **[すべてのサービス]** を選択し、**Intune** でフィルター処理して、 **[Intune]** を選択します。
-2. **[デバイス セキュリティ]**  >  **[セキュリティのベースライン (プレビュー)]** を選択します。 使用できるベースラインの一覧が表示されます。 さらにベースラインが追加されると、次のように表示されます。
+1. [[Intune]](https://go.microsoft.com/fwlink/?linkid=20909) にサインインして、 **[デバイスのセキュリティ]**  >  **[セキュリティのベースライン (プレビュー)]** を選択します。 使用できるベースラインの一覧が表示されます。 
 
-    ![現在使用できるセキュリティのベースラインの一覧を Intune で表示する](./media/security-baselines/available-baselines.png)
+    ![構成するセキュリティ ベースラインを選択する](./media/security-baselines/available-baselines.png)
 
-3. 使用するベースラインを選択し、 **[プロファイルの作成]** を選択します。
-4. **[Basics]\(基本\)** で次のプロパティを入力します。
 
-    - **名前**: セキュリティのベースライン プロファイルの名前を入力します。 たとえば、「`pilot Windows 10 MDM baseline - Oct 2018`」と入力します。
+2. 使用するベースラインを選択して、 **[プロファイルの作成]** を選択します。  
+
+3. **[基本]** タブ上で、次のプロパティを指定します。
+
+    - **名前**: セキュリティのベースライン プロファイルの名前を入力します。 たとえば、「*Standard profile for Defender ATP*」(Defender ATP 用の標準プロファイル) と入力します
     - **説明**:このベースラインの実行内容を説明するテキストを入力します。 この説明には、任意のテキストを入力できます。 省略可能ですが、強く推奨されます。
 
-5. **[設定]** を展開します。 一覧には、このセキュリティのベースラインのすべての設定と、その設定に自動的に設定されている実行内容が表示されます。 設定とその値は推奨値が指定されていますが、変更することができます。
+4. **[構成]** タブを選択して、このベースラインで利用可能な **[設定]** のグループを表示します。 グループを選択して展開し、含まれている個々の設定を表示します。 設定には、セキュリティ ベースラインに対する既定の構成があります。 ビジネス ニーズに合うように、既定の設定を再構成します。  
 
-    ![設定を展開すると、Intune のこのセキュリティのベースラインの設定がすべて表示されます。](./media/security-baselines/sample-list-of-settings.png)
+    ![グループを展開してそのグループに対する設定を表示する](./media/security-baselines/sample-list-of-settings.png)
 
-    いくつかの設定を展開して値を確認してください。 たとえば、 **[Windows Defender]** を展開します。 いくつかの設定と、その設定されている実行内容を確認してください。
+5. **[割り当て]** タブを選択して、ベースラインをグループに割り当てます。 既存のグループにベースラインを割り当てるか、または Intune コンソール内の標準プロセスを使用して新しいグループを作成し、構成を完了します。  
 
-    ![Windows Defender 設定の一部に自動的に設定されている Intune の実行内容を表示する](./media/security-baselines/expand-windows-defender.png)
+   ![プロファイルを割り当てる](./media/security-baselines/assignments.png)
+  
+6. ベースラインをデプロイする準備が整ったら、 **[Review + create]\(確認と作成\)** タブを選択して、ベースラインの詳細を確認します。 その後、 **[プロファイルの保存]** を選択して、プロファイルを保存してデプロイします。 
 
-6. プロファイルを **[作成]** します。 
-7. **[プロファイル]** を選択します。 プロファイルが作成され、一覧に表示されます。 ただし、まだ何も行われていません。 次に、プロファイルを割り当てます。
+   ![ベースラインを確認する](./media/security-baselines/review.png) 
 
-## <a name="assign-the-profile"></a>プロファイルを割り当てる
+   保存するとすぐに、デバイスの Intune へのチェックイン時にプロファイルがデバイスにプッシュされるようになります。 そのため、この処理はすぐに実行されます。
 
-プロファイルが作成されたら、ユーザー、デバイス、グループに割り当てることができます。 割り当てると、プロファイルとその設定は、選択したユーザー、デバイス、グループに適用されます。
+   > [!TIP]  
+   > プロファイルは、最初にグループに割り当てなくても、保存することができます。 後からプロファイルを編集して、グループに追加できます。 
 
-1. Intune で **[Security Baselines]\(セキュリティのベースライン\)** を選択し、ベースライン、 **[プロファイル]** の順に選択します。
-2. プロファイル、 **[割り当て]** の順に選択します。
-
-    ![Intune でセキュリティのベースライン プロファイルを選択し、プロファイルを展開する割り当てをクリックします](./media/security-baselines/assignments.png)
-
-3. **[Intune]** タブで、このポリシーを適用するグループ、ユーザー、またはデバイスを追加します。
-
-    > [!TIP]
-    > グループを**除外**することもできる点に注意してください。 ポリシーを **[すべてのユーザー]** に適用する場合は、管理者グループを除外することを検討してください。 何かが起こった場合に、お客様とその管理者が締め出されないようにします。
-
-4. 変更内容を**保存**します。
-
-保存するとすぐに、デバイスの Intune へのチェックイン時にプロファイルがデバイスにプッシュされるようになります。 そのため、この処理はすぐに実行されます。
-
-## <a name="available-security-baselines"></a>使用可能なセキュリティ ベースライン  
-
-Intune では次のセキュリティ ベースラインを使用できます。
-- **プレビュー:MDM セキュリティ ベースライン**
-  - バージョン:[2018 年 10 月](security-baseline-settings-windows.md)
+7. プロファイルを作成した後に、 **[デバイス セキュリティ]**  >  **[Security baselines]\(セキュリティ ベースライン\)** の順に移動して編集を行い、構成したベースラインを選択して、 **[プロファイル]** を選択します。  プロファイルを選択してから、 **[プロパティ]** を選択して設定を編集し、 **[割り当て]** を選択してこのベースラインを受信するグループを編集します。 
 
 ## <a name="q--a"></a>Q & A
 
