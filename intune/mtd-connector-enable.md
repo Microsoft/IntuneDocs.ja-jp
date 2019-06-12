@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7998eb82b27a7e70d5a77374950e544fd603f6d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1929b811a5a5320bc0ceefcef4f05ed2443ac070
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046296"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819648"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Intune で Mobile Threat Defense コネクタを有効にする
 
@@ -33,13 +33,9 @@ Mobile Threat Defense (MTD) のセットアップ中、MTD パートナー コ�
 
 ## <a name="to-enable-the-mtd-connector"></a>MTD コネクタを有効にするには
 
-1. [Azure Portal](https://portal.azure.com) に移動し、Intune 資格情報でサインインします。 正常にサインインできたら、**Azure ダッシュボード**が表示されます。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 
-2. **Azure ダッシュボード**の左のメニューから **[すべてのサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
-
-3. **[Intune]** を選択します。**Intune ダッシュボード**が開きます。
-
-4. **Intune ダッシュボード**で、 **[デバイスのポリシー準拠]** を選択し、 **[設定]** セクションで **[Mobile Threat Defense]** を選択します。
+4. **Intune ダッシュ ボード**で、 **[デバイスのポリシー準拠]** を選択し、 **[セットアップ]** セクションで **[Mobile Threat Defense]** を選択します。
 
 5. **[Mobile Threat Defense]** ウィンドウで、 **[追加]** を選択します。
 

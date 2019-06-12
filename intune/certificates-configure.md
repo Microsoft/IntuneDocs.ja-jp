@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37938287cc5ddde6285ec09aa0fffea56f98b3c3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e0e0eda1c60e420adcdab9364ecb0da1f52fe4e6
+ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048936"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66713905"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Microsoft Intune でデバイスの証明書プロファイルを構成する
 
@@ -73,7 +73,7 @@ Intune を使用して、管理するデバイスに証明書を割り当てる�
 - SCEP プロファイルと PKCS プロファイルのどちらを使用する場合でも、Microsoft Intune 証明書コネクタをダウンロードして構成します。
 
 
-## <a name="step-1-configure-your-certificate-infrastructure"></a>手順 1:証明書インフラストラクチャを構成する
+## <a name="step-1-configure-your-certificate-infrastructure"></a>手順 1.証明書インフラストラクチャを構成する
 
 インフラストラクチャの構成については、証明書プロファイルの種類に応じて次の記事のいずれかを参照してください。
 
@@ -81,18 +81,17 @@ Intune を使用して、管理するデバイスに証明書を割り当てる�
 - [Intune で PKCS 証明書を構成して管理する](certficates-pfx-configure.md)
 
 
-## <a name="step-2-export-your-trusted-root-ca-certificate"></a>手順 2:信頼されたルート CA 証明書をエクスポートする
+## <a name="step-2-export-your-trusted-root-ca-certificate"></a>手順 2: 信頼されたルート CA 証明書をエクスポートする
 
 発行元 CA、または発行元 CA を信頼するデバイスから、信頼されたルート証明機関 (CA) 証明書をパブリック証明書 (.cer) としてエクスポートします。 秘密キー (.pfx) をエクスポートしないでください。
 
 信頼された証明書プロファイルを構成するときにこの証明書をインポートします。
 
-## <a name="step-3-create-trusted-certificate-profiles"></a>手順 3:信頼された証明書プロファイルを作成する
+## <a name="step-3-create-trusted-certificate-profiles"></a>手順 3: 信頼された証明書プロファイルを作成する
 SCEP または PKCS 証明書プロファイルを作成する前に、信頼された証明書プロファイルを作成します。 デバイス プラットフォームごとに、信頼された証明書プロファイルと SCEP または PKCS プロファイルが必要です。 信頼された証明書を作成する手順は、どのデバイス プラットフォームでも同様です。
 
-1. [Azure ポータル](https://portal.azure.com)にサインインします。
-2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
-3. **[デバイス構成]** > **[管理]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+3. **[デバイス構成]**  >  **[管理]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
 4. 信頼された証明書プロファイルの **[名前]** と **[説明]** を入力します。
 5. **[プラットフォーム]** ドロップダウン リストで、この信頼された証明書のデバイス プラットフォームを選択します。 次のようなオプションがあります。
 
@@ -104,15 +103,15 @@ SCEP または PKCS 証明書プロファイルを作成する前に、信頼さ
     - **Windows 8.1 以降**
     - **Windows 10 以降**
 
-6. **[プロファイルの種類]** ドロップダウン リストで、**[信頼済み証明書]** を選択します。
-7. 「[手順 2:信頼されたルート CA 証明書をエクスポートする](#step-2-export-your-trusted-root-ca-certificate)」で保存した証明書を参照し、**[OK]** をクリックします。
+6. **[プロファイルの種類]** ドロップダウン リストで、 **[信頼済み証明書]** を選択します。
+7. 「[手順 2:信頼されたルート CA 証明書をエクスポートする](#step-2-export-your-trusted-root-ca-certificate)」で保存した証明書を参照し、 **[OK]** をクリックします。
 8. Windows 8.1 および Windows 10 デバイスの場合のみ、信頼された証明書の**保存先ストア**を以下から選択します。
 
     - **コンピューター証明書ストア - ルート**
     - **コンピューター証明書ストア - 中間**
     - **ユーザー証明書ストア - 中間**
 
-9. 完了したら、**[OK]** を選択し、**[プロファイルの作成]** ウィンドウに戻り、**[作成]** を選択します。
+9. 完了したら、 **[OK]** を選択し、 **[プロファイルの作成]** ウィンドウに戻り、 **[作成]** を選択します。
 
 プロファイルが作成され、リストに表示されます。 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルの割り当て](device-profile-assign.md)に関するページを参照してください。
 
@@ -133,7 +132,7 @@ SCEP または PKCS 証明書プロファイルを作成する前に、信頼さ
 [S/MIME を使用して電子メールに署名し、暗号化する](certificates-s-mime-encryption-sign.md)  
 [サードパーティの証明機関を使用する](certificate-authority-add-scep-overview.md)
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
 
 [Microsoft Intune 証明書プロファイルで使用するための NDES の構成のトラブルシューティング](https://support.microsoft.com/help/4459540)
 

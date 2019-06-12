@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/21/2019
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25a3acda374266a0fbd16feabde7787204555ea2
-ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
+ms.openlocfilehash: 72b96714e8740fe4077583cfa5d9f148c2ee0908
+ms.sourcegitcommit: f41b22f65286a64a8002e2cbe80debfdd6692278
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264165"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66469586"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 
@@ -45,6 +45,13 @@ ms.locfileid: "66264165"
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-may-27-2019"></a>2019 年 5 月 27 日の週 
+
+### <a name="app-management"></a>アプリ管理
+
+#### <a name="reporting-for-potentially-harmful-apps-on-android-devices----4223162---"></a>Android デバイス上の有害な可能性のあるアプリについてのレポート <!-- 4223162 -->
+Intune により、Android デバイス上の有害な可能性のあるアプリに関する追加レポート情報が提供されるようになりました。 
 
 ## <a name="week-of-may-20-2019"></a>2019 年 5 月 20 日の週 
 
@@ -134,7 +141,7 @@ macOS デバイス用のデバイス構成プロファイルを作成できま�
 適用対象: iOS
 
 ####  <a name="microsoft-defender-advanced-threat-protection--baseline--preview------3754134---"></a>Microsoft Defender Advanced Threat Protection のベースライン (プレビュー)  <!--  3754134 -->
-[Microsoft Defender Advanced Threat Protection](security-baseline-settings-defender-atp.md) の設定に、セキュリティ ベースラインのプレビューを追加しました。  
+[Microsoft Defender Advanced Threat Protection](security-baseline-settings-defender-atp.md) の設定に、セキュリティ ベースラインのプレビューを追加しました。 ご使用の環境が [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) を使用するための前提条件を満たしている場合は、このベースラインを使用できます。
 
 ### <a name="device-enrollment"></a>デバイスの登録
 
@@ -153,6 +160,14 @@ Autopilot 登録プロファイルを作成するためのユーザー インタ
 
 #### <a name="deleting-a-device-in-the-apple-portal-will-be-reflected-in-the-intune-portal---2489996---"></a>Apple ポータルでデバイスを削除すると、Intune ポータルに反映される <!--2489996 -->
 Apple の Device Enrollment Program または Apple Business Manager ポータルからデバイスが削除されると、そのデバイスは Intune から次回の同期中に自動的に削除されます。
+
+### <a name="the-enrollment-status-page-now-tracks-win32-apps----2714451---"></a>登録ステータス ページによる Win32 アプリの追跡 <!-- 2714451 -->
+これは、Windows 10 バージョン 1903 以降を稼働しているデバイスにのみ適用されます。 詳しくは、「[登録ステータス ページを設定する](windows-enrollment-status.md)」をご覧ください。
+
+### <a name="device-management"></a>デバイス管理
+
+#### <a name="reset-and-wipe-devices-in-bulk-by-using-the-graph-api----3295288---"></a>Graph API を使用してデバイスを一括でリセットおよびワイプする <!-- 3295288 -->
+Graph API を使用して 100 台までのデバイスを一括でリセットおよびワイプできるようになりました。
 
 
 ### <a name="monitor-and-troubleshoot"></a>監視とトラブルシューティング
@@ -227,7 +242,7 @@ Intune に登録された Azure AD 参加済みデバイスにインストール
 デバイスの概要ページに、ユーザーとデバイスのアフィニティ ユーザー (UDA) とも呼ばれるプライマリ ユーザーが表示されます。 デバイスのプライマリ ユーザーを表示するには、 **[Intune]**  >  **[デバイス]**  >  **[すべてのデバイス]** を選択し、デバイスを選びます。 プライマリ ユーザーは、 **[概要]** ページの上部近くに表示されます。
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Android エンタープライズ仕事用プロファイル デバイスに関するマネージド Google Play アプリの追加レポート <!-- 4105925  -->
-Android エンタープライズ仕事用プロファイル デバイスに展開されたマネージド Google Play アプリについて、デバイスにインストールされているアプリの特定のバージョン番号を表示できます。 これは必須アプリのみに適用されます。 将来のリリースでは、利用可能なアプリに対して同じ機能が有効になります。 
+Android エンタープライズ仕事用プロファイル デバイスに展開されたマネージド Google Play アプリについて、デバイスにインストールされているアプリの特定のバージョン番号を表示できます。 これは必須アプリのみに適用されます。  
 
 #### <a name="ios-third-party-keyboards----4111843-----"></a>iOS サード パーティ製キーボード <!-- 4111843   -->
 iOS 用の**サードパーティ製キーボード**の設定での Intune アプリ保護ポリシー (APP) のサポートは、iOS プラットフォームの変更によりサポートされなくなりました。 この設定は、Intune の管理コンソールからは構成できなくなり、Intune App SDK でクライアントに強制されなくなります。
@@ -277,7 +292,7 @@ Android エンタープライズ デバイスでは、機能を許可または�
 
 #### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>Windows 10 デバイスのコンプライアンス ポリシーでの TPM チップセットのチェック <!-- 3617671 -->
 
-この機能は遅れており、将来のリリースに組み込まれる見込みです。
+この機能のリリースは遅延しており、もう少し後になる予定です。
 
 #### <a name="updated-ui-changes-for-microsoft-edge-browser-on-windows-10-and-later-devices----3775833-----"></a>Windows 10 以降のデバイスでの Microsoft Edge ブラウザーの更新された UI の変更 <!-- 3775833   -->
 デバイス構成プロファイルを作成するとき、Windows 10 以降のデバイスで Microsoft Edge の機能を許可または制限することができます ( **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  > プラットフォームに **[Windows 10 以降]** > プロファイルの種類に **[デバイスの制限]** > **[Microsoft Edge ブラウザー]** )。 この更新では、Microsoft Edge の設定がよりわかりやすく、より簡単に理解できるようになっています。 
@@ -320,7 +335,7 @@ Apple の会社登録方法 (DEP/ABM/ASM) のいずれかを使用する場合�
 ### <a name="device-management"></a>デバイス管理
 
 #### <a name="retire-noncompliant-devices-----1827291-----"></a>非準拠デバイスをインベントリから削除する  <!-- 1827291   -->
-この機能は遅れており、将来のリリースで提供されます。
+この機能は遅れており、将来のリリースが予定されています。
 
 
 ### <a name="monitor-and-troubleshoot"></a>監視とトラブルシューティング
@@ -878,7 +893,7 @@ iOS デバイス用の構成プロファイルを作成するときに、ロッ�
 ### <a name="role-based-access-control"></a>ロールベースのアクセス制御
 
 #### <a name="scope-tags-for-apps----1081941---"></a>アプリのスコープ タグ <!-- 1081941 -->
-ロールとアプリへのアクセスを制限するために、スコープのタグを作成できます。 アプリにスコープのタグを追加すると、ロールを持つユーザーのうち、そのスコープのタグも割り当てられているユーザーだけがアプリにアクセスできるようになります。 現在、managed Google Play から Intune に追加されたアプリや、Apple Volume Purchase Program (VPP) を使って購入されたアプリにスコープ タグを割り当てることはできません (ただし、今後サポートされる予定です)。 詳細については、「[スコープのタグを使用してポリシーをフィルター処理する](scope-tags.md)」を参照してください。
+ロールとアプリへのアクセスを制限するために、スコープのタグを作成できます。 アプリにスコープのタグを追加すると、ロールを持つユーザーのうち、そのスコープのタグも割り当てられているユーザーだけがアプリにアクセスできるようになります。 現在、managed Google Play から Intune に追加されたアプリや、Apple Volume Purchase Program (VPP) を使って購入されたアプリにスコープ タグを割り当てることはできません (今後のサポートが予定されています)。 詳細については、「[スコープのタグを使用してポリシーをフィルター処理する](scope-tags.md)」を参照してください。
 
 <!-- ########################## -->
 ## <a name="week-of-december-10-2018"></a>2018 年 12 月 10 日の週
@@ -908,7 +923,7 @@ Intune には、macOS バージョン 10.12 以降が必要になりました。
 企業所有の監視対象 iOS デバイス上のアプリを削除できます。 **[アンインストール]** 割り当て種類でユーザーまたはデバイスのグループを対象とすることにより、すべてのアプリを削除できます。 個人所有または監視対象外の iOS デバイスの場合は、引き続き Intune を使用してインストールされたアプリのみを削除できます。
 
 #### <a name="downloading-intune-win32-app-content----2617320---"></a>Intune Win32 アプリのコンテンツのダウンロード <!-- 2617320 -->
-Windows 10 RS3 以降のクライアントでは、Windows 10 クライアント上の配信最適化コンポーネントを使用して、Intune Win32 アプリ コンテンツがダウンロードされます。 配信の最適化では、既定で有効になるピア ツー ピア機能が提供されます。 配信の最適化は、グループ ポリシーによって、また将来的には Intune MDM を使用して、構成できます。 詳しくは、[Windows 10 の配信の最適化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)に関するページをご覧ください。 
+Windows 10 RS3 以降のクライアントでは、Windows 10 クライアント上の配信最適化コンポーネントを使用して、Intune Win32 アプリ コンテンツがダウンロードされます。 配信の最適化では、既定で有効になるピア ツー ピア機能が提供されます。 現在、配信の最適化は、グループ ポリシーによって構成できます。 詳しくは、[Windows 10 の配信の最適化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)に関するページをご覧ください。 
 
 #### <a name="end-user-device-and-app-content-menu----2771453---"></a>エンド ユーザー デバイスとアプリのコンテンツのメニュー <!-- 2771453 -->
 エンド ユーザーはデバイス上のコンテキスト メニューとアプリを使用して、デバイスの名前変更、準拠状況の確認などの一般的なアクションをトリガーできるようになりました。

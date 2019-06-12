@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 05/29/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: feb2bda30547779680a001b3c598b54d236f70ed
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0e4d5c23d598641256c196cd7217797f87f99d1c
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045099"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374128"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Intune で Windows 10 のセキュリティのベースラインを作成する
 
@@ -54,7 +54,8 @@ Intune では、次のセキュリティ ベースラインを使用できます
   [設定を表示する](security-baseline-settings-windows.md)
 
 - **プレビュー:Windows Defender ATP ベースライン**  
-  [設定を表示する](security-baseline-settings-defender-atp.md)
+  [設定を表示する](security-baseline-settings-defender-atp.md)  
+  " *(ご使用の環境が [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) を使用するための前提条件を満たしている場合は、このベースラインを使用できます)* "。
 
 
 ## <a name="prerequisites"></a>必要条件
@@ -73,7 +74,8 @@ Intune マネージド デバイスに関するセキュリティのベースラ
 
     ![構成するセキュリティ ベースラインを選択する](./media/security-baselines/available-baselines.png)
 
-
+   >[!TIP]  
+   > ご使用の環境が [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) を使用するための前提条件を満たしている場合は、Windows Defender ATP ベースラインを使用できます。
 2. 使用するベースラインを選択して、 **[プロファイルの作成]** を選択します。  
 
 3. **[基本]** タブ上で、次のプロパティを指定します。
