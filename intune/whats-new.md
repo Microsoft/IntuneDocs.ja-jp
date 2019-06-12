@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72b96714e8740fe4077583cfa5d9f148c2ee0908
-ms.sourcegitcommit: f41b22f65286a64a8002e2cbe80debfdd6692278
+ms.openlocfilehash: 7c14568a0581220cf5941984645bd0b9044e00c1
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66469586"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749955"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 
@@ -106,8 +106,11 @@ IT 管理者がより簡単に Android Enterprise 管理を構成および使用
 
 ### <a name="device-configuration"></a>デバイス構成
 
+#### <a name="updated-pfx-certificate-connector-for-microsoft-intune-----1533038---"></a>PFX Certificate Connector for Microsoft Intune の更新  <!-- 1533038 -->
+新しい要求の処理を停止するコネクタの原因である、既存の PFX 証明書の再処理が続行する問題に対処する、[Microsoft Intune の PFX 証明書コネクタ](certficates-pfx-configure.md#whats-new-for-connectors)の更新プログラムをリリースしました。
+
 ####  <a name="intune-security-tasks-for-defender-atp-in-public-preview--------3208597---"></a>Defender ATP 用の Intune セキュリティ タスク (パブリック プレビュー)     <!-- 3208597 -->
-パブリック プレビューでは、Intune を使用して Microsoft Defender Advanced Threat Protection (ATP) 用のセキュリティ タスクを管理できます。 この ATP との統合によってリスク ベースの手法が追加され、エンドポイントの脆弱性や誤設定を検出し、優先度を付けて修復できるようになり、検出から軽減までにかかる時間が短縮されます。
+パブリック プレビューでは、Intune を使用して [Microsoft Defender Advanced Threat Protection (ATP) 用のセキュリティ タスクを管理できます](atp-manage-vulnerabilities.md)。 この ATP との統合によってリスク ベースの手法が追加され、エンドポイントの脆弱性や誤設定を検出し、優先度を付けて修復できるようになり、検出から軽減までにかかる時間が短縮されます。
 
 #### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---idstaged--"></a>Windows 10 デバイスのコンプライアンス ポリシーでの TPM チップセットのチェック <!-- 3617671   idstaged-->
 Windows 10 以降のデバイスの多くには、トラステッド プラットフォーム モジュール (TPM) チップセットが含まれています。 この更新プログラムには、デバイスの TPM チップのバージョンを確認する新しいコンプライアンス設定が含まれています。 
@@ -116,7 +119,7 @@ Windows 10 以降のデバイスの多くには、トラステッド プラッ�
 
 適用対象:Windows 10 以降
 
-#### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices----4097904-----"></a>エンド ユーザーによる個人用ホットスポットの変更を防止し、iOS デバイス上での Siri サーバーのログ記録を無効にする <!-- 4097904   --> 
+#### <a name="prevent-end-users-from-modifying-their-personal-hotspot-and-disable-siri-server-logging-on-ios-devices----4097904-----"></a>エンド ユーザーによる個人用ホットスポットの変更を防止し、iOS デバイス上での Siri サーバーのログ記録を無効にする <!-- 4097904   -->  
 iOS デバイス上にデバイスの制限プロファイルを作成します ( **[デバイスの構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  >  **[iOS]** (プラットフォーム) > **[デバイスの制限]** (プロファイルの種類))。 この更新プログラムには構成できる新しい設定が含まれています。
 
 - **組み込みアプリ**:Siri コマンドに対するサーバー側のログ記録
