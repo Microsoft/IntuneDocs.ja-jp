@@ -270,7 +270,7 @@
         - name: macOS デバイスのデータを消去する
           href: device-erase.md
         - name: モバイル デバイスのリモート制御
-          href: device-profile-android-teamviewer.md
+          href: teamviewer-support.md
         - name: Windows 10 の PIN のリセット
           href: device-windows-pin-reset.md
         - name: デバイスの同期
