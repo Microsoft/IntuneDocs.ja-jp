@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: fc2e17c605af2c9cec021724852bcf1b48012ba8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 76e6e3186ae0e8bf1d05698d28539994d33486e8
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "58069075"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804431"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft オープン ソース コード倫理規定
 
@@ -20,34 +20,34 @@ Microsoft では、コミュニティ (ユーザー、お客様、パートナ�
 
 * **GitHub アカウントを作成する**: [GitHub.com](https://www.github.com) で無料でサインアップできます。
 
-* **お使いのブラウザーを使用して、**: 2 つのオプションがあります。 
+* **ブラウザーを使用する**: 次の 2 つの選択肢があります。 
 
-    **オプション 1: は、docs.microsoft.com から直接編集します。**  
-    1. など、トピックに移動[ https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](https://docs.microsoft.com/ntune/troubleshoot-policies-in-microsoft-intune)します。 
-    2. 選択**編集**(右上)。 GitHub リポジトリで markdown ファイルが表示されます。
-    3. 鉛筆アイコンを選択します。 鉛筆アイコンをポイントすると表示されます、**このファイルを編集**ツールヒント。 
-    4. 変更を加え、し**コミット**変更します。 
-    5. プル要求を作成します。
+    **選択肢 1: docs.microsoft.com から直接編集する**  
+    1. [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune) などのトピックに移動します。 
+    2. **[編集]** (右上) を選択します。 これは GitHub リポジトリのマークダウン ファイルを示しています。
+    3. 鉛筆アイコンを選択します。 鉛筆アイコンをポイントすると、 **[このファイルの編集]** というツールヒントが表示されます。 
+    4. 変更を加えてから、変更を**コミット**します。 
+    5. pull request を作成します。
     
-    **オプション 2: このリポジトリで、情報の記事を検索および更新**  
-    1.  ほとんどのトピックは`https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`します。 このフォルダーに、トピック名など、検索`troubleshoot-policies-in-microsoft-intune`します。 
-    2. リンクを選択し、鉛筆アイコンをクリックします。 鉛筆アイコンをポイントすると表示されます、**このファイルを編集**ツールヒント。 
-    3. 変更を加え、し**コミット**変更します。 
-    4. プル要求を作成します。 
+    **選択肢 2: このリポジトリ内の記事を見つけて更新する**  
+    1.  ほとんどのトピックは `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune` にあります。 このフォルダー内で `troubleshoot-policies-in-microsoft-intune` などのトピック名を検索します。 
+    2. リンクを選択して鉛筆アイコンをクリックします。 鉛筆アイコンをポイントすると、 **[このファイルの編集]** というツールヒントが表示されます。 
+    3. 変更を加えてから、変更を**コミット**します。 
+    4. pull request を作成します。 
 
   更新すると、ライセンス契約に署名するよう求められることがあります。 これは 1 回限りの操作です。 そのため、今後 GitHub ユーザー名を使用して更新した場合に、再度署名する必要はありません。 
   
-  値、 `author` (すべてのトピックの上部) のメタデータには、GitHub の作成者が一覧表示されます。 `troubleshoot-policies-in-microsoft-intune`などが表示されます`MandiOhlinger`します。 プル要求にすることができますも言うまでも (@*authorValue*) 場合は、作成者です。
+  `author` メタデータの値 (各トピックの上部) には GitHub の作成者一覧が表示されます。 `troubleshoot-policies-in-microsoft-intune` の例の場合、`MandiOhlinger` と表示されます。 pull request では、お気に入りの作成者にメンションする (@*authorValue*) こともできます。
   
-* **MSFT 従業員**: GitHub アカウントを作成したら、Microsoft のメール アドレスにリンクします。 アカウントがリンクされている場合は、更新するためにライセンス契約に署名する必要はありません。 ステップ:
+* **MSFT 従業員**: GitHub アカウントを作成したら、Microsoft のメール アドレスにリンクします。 アカウントがリンクされている場合は、更新するためにライセンス契約に署名する必要はありません。 手順:
 
   1. 企業ネットワークに接続しているデバイスで [GitHub アカウントの設定](https://review.docs.microsoft.com/en-us/help/contribute/contribute-get-started-setup-github?branch=master)ページにアクセスします。 企業ネットワークに接続していない場合、このリンクをクリックすると 404 が返されます。
   
     GitHub アカウントの作成と Microsoft アカウントとのリンクは 1 回限りの操作です。 アカウントがリンクされている場合は、更新するためにライセンス契約に署名する必要はありません。 
 
-  2. ブラウザーで記事にアクセスし、**[編集]** を選択します。 プライベート リポジトリ (IntuneDocs-pr) に切り替えます。  
-    **切り替え前**: https://github.com/MicrosoftDocs/IntuneDocs/..。  
-    **切り替え後**: https://github.com/MicrosoftDocs/IntuneDocs-pr/..。
+  2. ブラウザーで記事にアクセスし、 **[編集]** を選択します。 プライベート リポジトリ (IntuneDocs-pr) に切り替えます。  
+    **切り替え前**: https://github.com/MicrosoftDocs/IntuneDocs/.. 。  
+    **切り替え後**: https://github.com/MicrosoftDocs/IntuneDocs-pr/.. 。
   
   3. 鉛筆アイコンを選択し、変更します。 
 

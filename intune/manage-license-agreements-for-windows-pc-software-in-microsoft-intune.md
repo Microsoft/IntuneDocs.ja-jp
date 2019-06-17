@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 417d244cbe64af967e61112f67dbf7829ce7feda
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7068bb96b72861c0647c44261edef0c3e83a120c
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046961"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031661"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Microsoft Intune で Windows PC ソフトウェアのライセンス契約を管理する
 
@@ -53,7 +53,7 @@ Intune 管理者コンソールの **[ライセンス]** ワークスペース�
 ## <a name="add-microsoft-volume-licensing-agreements"></a>Microsoft ボリューム ライセンス契約の追加
 Intune のボリューム ライセンス契約には、Microsoft ボリューム ライセンス契約で購入したソフトウェアのライセンス情報が含まれています。 契約番号の一致するペアを入力して、Microsoft ボリューム ライセンス契約を Intune に追加できます。 契約番号または認証番号は、正しいライセンス番号または登録番号と一致している必要があります。 契約番号のペアは、ライセンス契約を購入するときに、 [ボリューム ライセンス サービス センター (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842)から入手します。
 
-1.  [Microsoft Intune 管理者コンソール](https://account.manage.microsoft.com/admin/default.aspx)で、 **[ライセンス]** を選択します。
+1.  [Microsoft Intune 管理者コンソール](https://admin.manage.microsoft.com/)で、 **[ライセンス]** を選択します。
 
 2.  **[契約の追加]** ページで、 **[契約の種類の選択]** の **[ボリューム ライセンス契約]** を選択します。
 
@@ -93,7 +93,7 @@ Intune のボリューム ライセンス契約には、Microsoft ボリュー�
 
         -   **契約名** - 契約の一意の名前を指定します。
 
-            契約名の最大文字数は、256 文字です。ただし、**~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** は使えません。 スペースは使用できます。
+            契約名の最大文字数は、256 文字です。ただし、 **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** は使えません。 スペースは使用できます。
 
         -   **認証/契約番号** - ライセンス ペアの認証/契約番号を入力します。
 
@@ -138,7 +138,7 @@ Intune には、Microsoft ボリューム ライセンス契約に加えて、�
 
 ### <a name="to-add-other-software-agreements"></a>他のソフトウェア ライセンス契約を追加するには
 
-1.  [Microsoft Intune 管理者コンソール](https://account.manage.microsoft.com/admin/default.aspx)で、 **[ライセンス]** を選択します。
+1.  [Microsoft Intune 管理者コンソール](https://admin.manage.microsoft.com/)で、 **[ライセンス]** を選択します。
 
 2.  **[その他のソフトウェア ライセンス契約]** セクションの **[契約の追加]** を選択します。
 
@@ -146,7 +146,7 @@ Intune には、Microsoft ボリューム ライセンス契約に加えて、�
 
 4.  **[契約の詳細の追加]** 領域で、次の項目を指定します。
 
-    -   **Agreement name** (必須): 契約名の最大文字数は、256 文字です。ただし、**~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** は使えません。 スペースは使用できます。
+    -   **Agreement name** (必須): 契約名の最大文字数は、256 文字です。ただし、 **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** は使えません。 スペースは使用できます。
 
     -   **発行者** (必須): 発行者の名前を入力し始めると、入力した文字を含む名前がすべて検索されます。 たとえば、「soft」と入力すると、"Microsoft" や "Microsoft Research" など、名前に "soft" という文字を含む発行者名がすべて検索されます。 発行者名は、ソフトウェア アセット カタログから取得されます。 必ず、発行者を選択してから、製品タイトルを入力してください。
 

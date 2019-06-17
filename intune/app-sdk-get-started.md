@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/29/2019
+ms.date: 06/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35f4007d03ca66ada5721de1ffe20dd87bfe4527
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b5672963c6737d51e720a8b1597dd90318f33a05
+ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043789"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66506865"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK の概要
 
@@ -174,15 +174,12 @@ iOS または Android アプリを Intune アプリ SDK と統合するために
 アプリを Azure テナント内に登録し、それが **[すべてのアプリケーション]** の下に表示されたら、Intune アプリ保護サービス (旧称: MAM サービス) へのアクセス権をアプリに付与する必要があります。 Azure portal で次の操作を行います。
 
 1.  **[Azure Active Directory]** ブレードに移動します。
-2.  **[アプリの登録]** を選択してアプリケーションを設定します。
-3.  **[API アクセス]** 見出しの下の **[設定]** で、**必要なアクセス許可**を選択します。 
-4.  **[+ 追加]** をクリックします。
-5.  **[API を選択します]** をクリックします。 
-6.  検索ボックスに「**Microsoft Mobile Application Management**」と入力します。
-7.  API の一覧で **[Microsoft Mobile Application Management]** を選択し、[選択] をクリックします。
-8.  **[Read and Write the User’s App Management Data]\(ユーザーのアプリ管理データの読み取りと書き込み\)** を選択します。
-9.  **[完了]** をクリックします。
-10. **[アクセス許可の付与]** をクリックして、 **[はい]** をクリックします。 
+2.  **[アプリ登録]** で、アプリケーション用に設定された一覧に移動します。
+3.  **[+ アクセス許可の追加]** をクリックします。
+4.  **[所属する組織で使用している API]** をクリックします。 
+5.  検索ボックスに「**Microsoft Mobile Application Management**」と入力します。
+6.  **[委任されたアクセス許可]** で **[DeviceManagementManagedApps.ReadWrite: Read and Write the User’s App Management Data]\(DeviceManagementManagedApps.ReadWrite: ユーザーのアプリ管理データの読み取りと書き込み\)** * チェックボックスをオンにします。
+7. **[アクセス許可の追加]** をクリックします。
 
 ### <a name="badge-your-app-optional"></a>アプリにバッジを付ける (省略可能)
 

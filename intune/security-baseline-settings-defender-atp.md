@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6feae4d7caeeefbf9638e5018ba7b653a260f5c
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
-ms.translationtype: HT
+ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373512"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749913"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 向けの Microsoft Defender Advanced Threat Protection ベースライン設定
 
-Microsoft Intune でサポートされている Microsoft Defender Advanced Threat Protection (旧称 Windows Defender Advanced Threat Protection) ベースライン設定を表示します。 この記事での既定値は、Intune に対する既定のベースライン構成を表しています。 これらの既定値は Intune 用の推奨構成を表しており、Windows の既定値と一致しない可能性があります。
+Microsoft Intune でサポートされている Microsoft Defender Advanced Threat Protection (旧称 Windows Defender Advanced Threat Protection) ベースライン設定を表示します。 Advanced Threat Protection (ATP) ベースラインの既定値は、ATP の推奨される構成を表しており、他のセキュリティ ベースラインのベースラインの既定値と一致しない場合があります。  
 
   ご使用の環境が [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) を使用するための前提条件を満たしている場合は、Microsoft Defender Advanced Threat Protection ベースラインを使用できます。
 
@@ -33,7 +33,7 @@ Microsoft Intune でサポートされている Microsoft Defender Advanced Thre
 
 
 > [!NOTE]  
-> WDATP ベースライン設定は、**プレビュー**段階にあります。 プレビュー段階の間は、使用可能な設定の一覧、およびこのコンテンツでそれらの設定が示される順序は、ポータル内で提供されるものと異なる可能性があります。 
+> ATP ベースライン設定は、**プレビュー**段階にあります。 プレビュー段階の間は、使用可能な設定の一覧、およびこのコンテンツでそれらの設定が示される順序は、ポータル内で提供されるものと異なる可能性があります。  
 >
 > ベースライン設定のプレビュー段階が終了すると、このコンテンツは更新され、Intune でサポートされる最新のセキュリティ ベースライン設定を反映するようになります。
 
@@ -431,7 +431,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
   [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) – このポリシーを使用すると、Windows Defender ウイルス対策で悪意のあるファイルをブロックおよびスキャンする際にどの程度積極的に行うかを決定できます。 次のオプションがあります。
 
   - 高 - クライアントのパフォーマンスの最適化中に不明なファイルを積極的にブロックします (誤検知の可能性が高くなります)
-  - + 高 - 不明なファイルを積極的にブロックし、追加の保護策を適用します (クライアントのパフォーマンスに影響を及ぼす可能性があります)
+  - \+ 高 - 不明なファイルを積極的にブロックし、追加の保護策を適用します (クライアントのパフォーマンスに影響を及ぼす可能性があります)
   - ゼロ トレランス - 不明な実行可能ファイルをすべてブロックします。
 
   **既定値**: 未構成

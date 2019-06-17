@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6276f38eed4d20e7e81437c2ba3e2c9bc58ae1c1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4d838d0cd0d0f92cb344592d18d9e04e18d7e456
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047747"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819731"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD を使用して Microsoft Graph の Intune API にアクセスする方法
 
@@ -61,7 +61,7 @@ Microsoft Graph の Intune API へのアクセスには、以下のものが必�
 
 Microsoft Graph API を使用するアプリを登録するには、次の作業を行います。
 
-1.  管理者資格情報を使って、[Azure Portal](https://portal.azure.com) にサインインします。
+1.  サインインする[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)管理者の資格情報を使用します。
 
     必要に応じて、次を使用することができます。
     - テナントの管理者アカウント。
@@ -343,7 +343,7 @@ __Microsoft Intune の構成の読み取り__ | DeviceManagementServiceConfig.Re
 3.  ソリューション エクスプローラーを使用して、プロジェクトに Microsoft ADAL NuGet パッケージを追加します。
 
     1.  ソリューション エクスプローラーを右クリックします。
-    2.  **[NuGet パッケージの管理...]**  &gt; **[参照]** を選択します。
+    2.  **[NuGet パッケージの管理...]** &gt; **[参照]** を選択します。
     3.  `Microsoft.IdentityModel.Clients.ActiveDirectory` を選択して、 **[インストール]** を選択します。
 
     <img src="media/aad-auth-cpp-install-package.png" width="624" height="458" alt="Selecting the Azure AD identity model module" />
