@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc5ea7076e77e5071724168fab58fa78f59601c4
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
-ms.translationtype: HT
+ms.openlocfilehash: 1c8a7be6646c0035eaefed6d61d749c8469c8a4e
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744306"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031655"
 ---
 # <a name="in-development-for-microsoft-intune---june-2019"></a>Microsoft Intune 用に開発中 - 2019 年 6 月
 
@@ -51,14 +51,11 @@ ms.locfileid: "66744306"
 #### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>デバイスのユーザーは、インストール済みまたはインストールしようとしたすべての管理対象アプリを表示できる <!-- 2352913 -->
 Windows 用ポータル サイトに、ユーザーのデバイスにインストールされているすべてのマネージド アプリ (必須および使用可能の両方) が一覧表示されます。 ユーザーは、試行した、および保留中のアプリのインストールと、それらの現在の状態を表示することができるようになります。 組織でアプリが必須または使用可能とされていない場合、会社のアプリは全くインストールされていないというメッセージがユーザーに表示されます。 ユーザーはまた、インストールの状態でアプリを並べ替えまたはフィルタリングすることができます。
 
-#### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956---"></a>Android の仕事用プロファイルに使用できる Google Play アプリのレポート <!-- 3041956 -->
-Android の仕事用プロファイル デバイスに使用できるアプリのインストールについては、アプリのインストール状態とマネージド Google Play アプリのインストール済みバージョンを確認できます。 詳細については、[アプリの保護ポリシーを監視する方法](app-protection-policies-monitor.md)、[Intune を使用した Android の仕事用プロファイル デバイスの管理](android-enterprise-overview.md)、および[マネージド Google Play アプリの種類](apps-add-android-for-work.md#managed-google-play-app-type)に関する記事を参照してください。
-
 #### <a name="configure-which-browser-is-allowed-to-link-to-organization-data----3145939---"></a>組織データへのリンクを許可するブラウザーを構成する <!-- 3145939 -->
 Android および iOS デバイス上の Intune App Protection ポリシー (APP) を使用すると、組織の Web リンクを Intune Managed Browser または Microsoft Edge 以外の特定のブラウザーに転送できます。  アプリの詳細については、「[アプリ保護ポリシーとは](app-protection-policy.md)」を参照してください。
 
 #### <a name="installed-apps-page-on-the-company-portal-website-----4224326---"></a>ポータル サイト Web サイト上のインストール済みアプリ ページ  <!-- 4224326 -->
-[ポータル サイト Web サイト](https://portal.manage.microsoft.com/)には、デバイスにインストールされているすべてのアプリをユーザーに表示する新しいページが含まれます。 この一覧には、その組織で使用できるアプリと必要なアプリの両方が含まれています。 このページから、ユーザーは自分のデバイス上のアプリのインストールと要件の状態を確認することができます。 ポータル サイト Web サイトの詳細については、「[Intune ポータル サイト Web サイトの使用](/intune-user-help/using-the-intune-company-portal-website.md)」と「[Microsoft Intune ポータル サイト アプリを構成する方法](company-portal-app.md)」を参照してください。
+[ポータル サイト Web サイト](https://portal.manage.microsoft.com/)には、デバイスにインストールされているすべてのアプリをユーザーに表示する新しいページが含まれます。 この一覧には、その組織で使用できるアプリと必要なアプリの両方が含まれています。 このページから、ユーザーは自分のデバイス上のアプリのインストールと要件の状態を確認することができます。 ポータル サイト Web サイトの詳細については、「[Intune ポータル サイト Web サイトの使用](/intune-user-help/using-the-intune-company-portal-website)」と「[Microsoft Intune ポータル サイト アプリを構成する方法](company-portal-app.md)」を参照してください。
 
 #### <a name="call-graph-api-read-operations-from-an-application-without-user-credentials----4655885---"></a>ユーザーの資格情報なしでアプリケーションから Graph API の読み取り操作を呼び出す <!-- 4655885 -->
 アプリケーションから、ユーザー資格情報を使用せず、アプリ ID を使用して Intune Graph API 読み取り操作を呼び出すことができるようになります。 詳細については、「[ユーザーなしでアクセスを取得](https://docs.microsoft.com/graph/auth-v2-service)」を参照してください。
