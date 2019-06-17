@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 72a9156ce9b7b1b43acf9b39d9186a52dd6c3e8d
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: b799fd65a08646b46bf7fcce67bf4a09dc0413a6
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373706"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819899"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Intune で非準拠デバイスに対してメールを自動送信し、アクションを追加する
 
@@ -85,7 +85,7 @@ ms.locfileid: "66373706"
 
 コンプライアンス ポリシーを作成するとき、または既存のポリシーを更新するときにも別のアクションを追加できます。 
 
-1. [Azure portal](https://portal.azure.com) で **[Microsoft Intune]**  >  **[デバイスのポリシー準拠]** の順に選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインして、 **[デバイス コンプライアンス]** を選択します。
 2. **[ポリシー]** を選択し、ポリシーのいずれかを選択して、 **[プロパティ]** を選択します。 
 
     ポリシーがまだない場合は、 [Android](compliance-policy-create-android.md)、[iOS](compliance-policy-create-ios.md)、[Windows](compliance-policy-create-windows.md)、または他のプラットフォーム用のポリシーを作成します。

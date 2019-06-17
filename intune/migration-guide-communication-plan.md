@@ -16,51 +16,38 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80292fab9a8e35db23163f7c5a0dfc1c01b65848
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 864e43bf644bf4e4f959c6ad826d9d5bade617a5
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050548"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804658"
 ---
-# <a name="plan-communications"></a>通信手段の計画
+# <a name="plan-communications"></a>通信手段の計画 
+情報伝達計画は、Intune 移行における重要な要素です。 次のツールとテンプレートは、エンド ユーザーを教育する際に役立つように提供されます。 Intune 導入キットには、電子メール テンプレート、Intune 登録ガイド、およびエンド ユーザー登録のための説明ビデオへのリンクが含まれています。  
 
-情報伝達計画は、Intune 移行における重要な要素です。 移行の各フェーズで、同じ情報伝達計画に従うことができます。
+ダウンロード:[Intune 導入キット](http://aka.ms/IntuneAdoptionKit)
 
-## <a name="email-templates"></a>電子メール テンプレート
-
+## <a name="email-templates"></a>電子メール テンプレート 
 次のメール通信の計画をお勧めします。 情報伝達計画に適用できるテンプレートが提供されています。
+- **電子メール #1**:利点、見込み、スケジュールについて説明します。 この機会を利用して、Intune によって管理されるデバイスでアクセスが許可される他の新しいサービスを紹介します。 
 
--   **電子メール \#1:** 利点、見込み、スケジュールについて説明します。 この機会を利用して、Intune によって管理されるデバイスでアクセスが許可される他の新しいサービスを紹介します。<br/><br/>
-
-
-    -   [電子メール \# 1 テンプレートをダウンロードする](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
-<br></br>
-
--   **電子メール \#2:** Intune からサービスにアクセスする準備が整ったことを発表します。 ユーザーに早速登録するよう伝えます。 移行の利点と戦略的な理由を再認識してもらいます。<br/><br/>
-
-
-    -   [電子メール \#2 テンプレートをダウンロードする](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
-<br></br>
-
--   **電子メール \#3:** アクセスが影響を受ける前にタイムラインをユーザーに提供します。 移行の利点と戦略的な理由を再認識してもらいます。 電子メールのタイミングには、フェーズに合わせたスライディング ウィンドウが必要です。 たとえば、6 月に電子メール \#1 をフェーズ 1 のユーザーに送信し、電子メール \#2 をフェーズ 2 のユーザー、電子メール \#3 をフェーズ 3 のユーザーに送信します。<br/><br/>
-
-    -   [電子メール \#3 テンプレートをダウンロードする](https://gallery.technet.microsoft.com/Intune-migration-guide-end-831521b5)
-
+- **電子メール #2**:Intune からサービスにアクセスする準備が整ったことを発表します。 ユーザーに早速登録するよう伝えます。  アクセスが影響を受ける前にタイムラインをユーザーに提供します。 移行の利点と戦略的な理由を再認識してもらいます。
 一定期間後に、条件付きアクセス ポリシーによるコンプライアンスの強制的な適用を開始し、企業データにアクセスする基準として使用します (「[条件付きアクセスを利用してエンド ユーザーの導入を推進する](migration-guide-drive-adoption.md)」を参照)。
 
-## <a name="additional-communication-templates"></a>その他の情報伝達テンプレート
+## <a name="intune-enrollment-guide"></a>Intune の登録ガイド 
+この PDF 添付ファイルをそのままユーザーに提供することができます。あるいは、Word バージョンをカスタマイズして、内部リソースと連絡先情報を含めることができます。
 
-Intune では、ユーザーのデバイス登録を推進するその他のテンプレートを用意しています。
-
--   モバイル OS プラットフォームごとの登録手順について詳しくは、「[Microsoft Intune に関してエンド ユーザーを教育する方法](end-user-educate.md)」をご覧ください。
-
--   [IT 管理者向けの Intune エンド ユーザー登録テンプレート](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a)は、Intune で Android、iOS、および Mac デバイスを登録する方法を説明するカスタマイズ可能な Word 文書です。
-
--   「[FastTrack for EMS how to guides & emails (EMS 用 FastTrack: 方法ガイドとメール)](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c)」は、貴社のロゴでカスタマイズして、組織内での Intune と EMS の採用を促進できます。
-
--   Android、iOS、および Windows ユーザーと[ポータル サイト アプリの URL](http://go.microsoft.com/fwlink/?LinkID=396941) を共有します。 この URL を使用すると、Android、iOS、および Windows デバイス上の適切なポータル サイト アプリ一覧にリダイレクトされます。
+## <a name="instructional-videos"></a>説明ビデオ
+ユーザーが Intune でデバイスを簡単に登録できるように、短いステップ バイ ステップのビデオを作成しました。
+- [Android デバイスを登録する](https://www.youtube.com/watch?v=k0Q_sGLSx6o&t=1s)
+- [Android 仕事用プロファイル デバイスを登録する](https://www.youtube.com/watch?v=9Dl8HsGk4tI&t=3s)
+- [iOS デバイスを登録する](https://www.youtube.com/watch?v=mJyv6YcHi7c)
+- [macOS デバイスを登録する](https://www.youtube.com/watch?v=Pa2pfhwq_yk)
+- [Windows を登録する](https://www.youtube.com/watch?v=TKQxEckBHiE)
 
 ## <a name="next-steps"></a>次の手順
-
-[条件付きアクセスでエンド ユーザーの導入を推進します](migration-guide-drive-adoption.md)。
+Intune には、ユーザーのデバイス登録を推進するために使用できるその他のリソースが用意されています。
+- モバイル OS プラットフォームごとの登録手順について詳しくは、「[Microsoft Intune に関してエンド ユーザーを教育する方法](https://docs.microsoft.com/intune/end-user-educate)」をご覧ください。 
+- [IT 管理者向けの Intune デバイスの登録](https://docs.microsoft.com/intune/device-enrollment)に関するページには、Intune での Android、iOS、および Mac デバイスの登録方法について説明されています。
+- Android、iOS、および Windows ユーザーと[ポータル サイト アプリの URL](http://go.microsoft.com/fwlink/?LinkID=396941) を共有します。 この URL を使用すると、Android、iOS、および Windows デバイス上の適切なポータル サイト アプリ一覧にリダイレクトされます。

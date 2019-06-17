@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/05/2019
+ms.date: 06/06/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee0f7ce806b1ed2a17b59add467b1b0af2a40578
-ms.sourcegitcommit: 023b1293b47314b77eb80997bbd8aa679db90880
+ms.openlocfilehash: e170fe0c1b461bad140b89ac01a2ad817e2082e5
+ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448115"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744339"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune で SCEP 証明書を構成して使用する
 
@@ -115,7 +115,8 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
    - **[セキュリティ]** で、NDES サービス アカウントを追加し、テンプレートの **[登録]** アクセス許可を付与します。 SCEP プロファイルを作成する Intune 管理者は、SCEP プロファイルの作成時にテンプレートを閲覧できるように、**読み取り**権限を必要とします。
 
      > [!NOTE]
-     > 証明書を失効させるには、証明書プロファイルで使用されている証明書テンプレートごとに*証明書の発行および管理*の権限が NDES サービス アカウントに必要です。
+     > 証明書を取り消すには、NDES サービス アカウントに、証明機関に対する*証明書の発行および管理* 権限が必要です。 このアクセス許可を委任するには、証明機関管理コンソールを開き、証明機関名を右クリックします。 その後、[セキュリティ] タブで、アカウントを追加または選択してから、 **[証明書の発行および管理]** のチェックボックスをオンにします。
+
 
 3. **[一般]** タブでテンプレートの **[有効期間]** を確認します。 既定では、Intune はテンプレートで構成されている値を使用します。 ただし、要求元が異なる値を入力できるように CA を構成できます。その値は Intune 管理者コンソール内から設定できます。 常にテンプレートの値を使用する場合は、この手順の残りの部分をスキップしてください。
 
@@ -299,15 +300,15 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 2. **[デバイス構成]**  >  **[証明書のコネクタ]**  >  **[追加]** の順に選択します。
-3. SCEP ファイル用のコネクタをダウンロードして保存します。 コネクタをインストールするサーバーからアクセスできる場所に保存します。
+3. SCEP ファイル用のコネクタをダウンロードして保存します。 コネクタをインストールする NDES サーバーからアクセスできる場所にそれを保存します。
 
    ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
 
-4. ダウンロードが完了した後、ご利用のネットワーク デバイス登録サービス (NDES) をホストしているサーバーに移動します。 次のことを行います。
+4. ダウンロードが完了した後、ご利用のネットワーク デバイス登録サービス (NDES) をホストしている NDES サーバーに移動します。 次のことを行います。
 
     1. .NET Framework 4.5 がインストールされていることを確認します。NDES 証明書コネクタで必要となるからです。 .NET Framework 4.5 は、Windows Server 2012 R2 およびそれ以降の新しいバージョンには自動的に含められます。
-    2. インストーラーを実行します (**NDESConnectorSetup.exe**)。 インストーラーは、NDES のポリシー モジュールと CRP Web サービスもインストールします。 CRP Web サービス CertificateRegistrationSvc は IIS のアプリケーションとして実行されます。
+    2. インストーラー (**NDESConnectorSetup.exe**) を実行するには、サーバーに対する管理権限のあるアカウントを使用します。 インストーラーは、NDES のポリシー モジュールと CRP Web サービスもインストールします。 CRP Web サービス CertificateRegistrationSvc は IIS のアプリケーションとして実行されます。
 
     > [!NOTE]
     > スタンドアロン Intune の NDES をインストールする場合、CRP サービスは証明書コネクタと共に自動的にインストールされます。 構成マネージャーで Intune を使用する場合は、証明書登録ポイントを別のサイト システムの役割としてインストールします。
@@ -335,7 +336,7 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 
     組織でプロキシ サーバーを使用していて、NDES サーバーがインターネットにアクセスするためにプロキシが必要な場合は、 **[プロキシ サーバーを使用する]** を選択します。 次に、接続するためのプロキシ サーバーの名前、ポート、およびアカウント資格情報を入力します。
 
-    **[詳細設定]** タブを選択し、発行元 CA で**証明書の発行と管理**アクセス許可を持つアカウントの資格情報を入力します。 変更を**適用**します。
+    **[詳細設定]** タブを選択し、発行元 CA で**証明書の発行と管理**アクセス許可を持つアカウントの資格情報を入力します。 変更を**適用**します。 [証明機関の構成](#configure-the-certification-authority)時に NDES サービス アカウントにこのアクセス許可を委任した場合は、ここでそのアカウントを指定します。 
 
     これで、証明書コネクタ UI を閉じることができます。
 

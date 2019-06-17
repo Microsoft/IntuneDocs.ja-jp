@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abbd226f2b812e1062d56a1d66b3e10bc9d68036
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 78c34345804f600aa62ff5e25ef27a23591e0f5c
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374078"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819875"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Intune で条件付きアクセスによる Windows Defender ATP の準拠を強制する
 
@@ -52,8 +52,7 @@ Intune で ATP を使用する場合は、以下が構成済みであり、使�
 
 ## <a name="enable-windows-defender-atp-in-intune"></a>Intune で Windows Defender ATP を有効にする
 
-1. [Azure ポータル](https://portal.azure.com)にサインインします。
-2. **[すべてのサービス]** を選択し、 **[Intune]** をフィルターとして適用し、 **[Microsoft Intune]** を選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 3. **[デバイスのポリシー準拠]** 、 **[Windows Defender ATP]**  >  **[Windows Defender セキュリティ センターを開く]** の順に選択します。
 
     ![Windows Defender セキュリティ センターを選択して開く](./media/atp-device-compliance-open-windows-defender.png)
@@ -132,7 +131,7 @@ Windows Defender には、[Windows Defender ATP サービス](https://docs.micro
 > [!TIP]  
 > 条件付きアクセスは、Azure Active Directory (Azure AD) テクノロジです。 *Intune* からアクセスされる条件付きアクセス ノードは、*Azure AD* からアクセスされるノードと同じです。  
 
-1. [Azure portal](https://portal.azure.com) で、 **[Intune]**  >  **[条件付きアクセス]**  >  **[新しいポリシー]** の順に開きます。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインし、 **[条件付きアクセス]**  >  **[新しいポリシー]** の順に選択します。
 2. ポリシーの**名前**を入力して、 **[ユーザーとグループ]** を選択します。 含めるオプションまたは除外するオプションを使用して、ポリシーのグループを追加し、 **[完了]** を選択します。
 3. **[クラウド アプリ]** を選択し、保護するアプリを選びます。 たとえば、 **[アプリを選択]** を選び、 **[Office 365 SharePoint Online]** と **[Office 365 Exchange Online]** を選択します。
 

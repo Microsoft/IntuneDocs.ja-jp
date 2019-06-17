@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ed95507d8a7486bc1c1cca2c2a067658239eed8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5124796166f27823b7a13b0f3dd239446f778850
+ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043535"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66713866"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>SCEP を使用して Intune でパートナーの証明機関を追加する
 
@@ -72,30 +72,30 @@ Azure AD アプリを登録するのに必要なアクセス許可があるこ�
 
 #### <a name="create-an-application-in-azure-active-directory"></a>Azure Active Directory でアプリケーションを作成する  
 
-1. [Azure portal](https://portal.azure.com) で、**[Azure Active Directory]** > **[アプリの登録]** に移動し、**[New registration]\(新規登録\)** を選択します。  
+1. [Azure portal](https://portal.azure.com) で、 **[Azure Active Directory]**  >  **[アプリの登録]** に移動し、 **[New registration]\(新規登録\)** を選択します。  
 
 2. **[アプリケーションの登録]** ページで、次の詳細を指定します。  
    - **[名前]** セクションで、わかりやすいアプリケーション名を入力します。  
-   - **[サポートされているアカウントの種類]** セクションで、**[任意の組織のディレクトリ内のアカウント]** を選択します。  
+   - **[サポートされているアカウントの種類]** セクションで、 **[任意の組織のディレクトリ内のアカウント]** を選択します。  
    - **[リダイレクト URI]** については、既定値の [Web] のままにして、サード パーティの SCEP サーバーのサインオン URL を指定します。  
 
 3. **[登録]** を選択してアプリケーションを作成し、新しいアプリの [概要] ページを開きます。  
 
-4. アプリの **[概要]** ページで、**[Application (client) ID]\(アプリケーション \(クライアント\) ID\)** の値をコピーし、後で使うので記録しておきます。 この値は後で必要になります。  
+4. アプリの **[概要]** ページで、 **[Application (client) ID]\(アプリケーション \(クライアント\) ID\)** の値をコピーし、後で使うので記録しておきます。 この値は後で必要になります。  
 
-5. アプリのナビゲーション ウィンドウで、**[管理]** の **[証明書とシークレット]** に移動します。 **[New client secret]\(新しいクライアント シークレット\)** ボタンを選択します。 [説明] に値を入力し、**[有効期限]** で任意のオプションを選択してから、**[追加]** を選択して、クライアント シークレットの "*値*" を生成します。 
+5. アプリのナビゲーション ウィンドウで、 **[管理]** の **[証明書とシークレット]** に移動します。 **[New client secret]\(新しいクライアント シークレット\)** ボタンを選択します。 [説明] に値を入力し、 **[有効期限]** で任意のオプションを選択してから、 **[追加]** を選択して、クライアント シークレットの "*値*" を生成します。 
    > [!IMPORTANT]  
    > このページを終了する前に、クライアント シークレットの値をコピーし、後でサード パーティの CA の実装に使うので記録しておきます。 この値は、二度と表示されません。 アプリケーション ID、認証キー、テナント ID の必要な構成方法については、サード パーティの CA のガイダンスを確認してください。  
 
 6. **テナント ID** を記録しておきます。 テナント ID は、アカウントで @ 記号の後にあるドメイン テキストです。 たとえば、アカウントが *admin@name.onmicrosoft.com* の場合、テナント ID は **name.onmicrosoft.com** です。  
 
-7. アプリのナビゲーション ウィンドウで、**[管理]** の **[API のアクセス許可]** に移動し、**[アクセス許可の追加]** を選択します。  
+7. アプリのナビゲーション ウィンドウで、 **[管理]** の **[API のアクセス許可]** に移動し、 **[アクセス許可の追加]** を選択します。  
 
-8. **[API アクセス許可の要求]** ページで、**[Intune]** を選択して、**[アプリケーションのアクセス許可]** を選択します。 **scep_challenge_provider** (SCEP チャレンジの検証) のチェック ボックスをオンにします。  
+8. **[API アクセス許可の要求]** ページで、 **[Intune]** を選択して、 **[アプリケーションのアクセス許可]** を選択します。 **scep_challenge_provider** (SCEP チャレンジの検証) のチェック ボックスをオンにします。  
 
    **[アクセス許可の追加]** を選択して、この構成を保存します。  
 
-9. **[API のアクセス許可]** ページで、**[Microsoft に管理者の同意を与えます]** を選択して、**[はい]** を選択します。  
+9. **[API のアクセス許可]** ページで、 **[Microsoft に管理者の同意を与えます]** を選択して、 **[はい]** を選択します。  
    
    Azure AD でのアプリの登録プロセスは完了です。
 
@@ -123,13 +123,14 @@ Azure AD アプリを登録するのに必要なアクセス許可があるこ�
 - [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf)
 - [IDnomic](https://www.idnomic.com/)
 - [Sectigo](https://sectigo.com/products)
+- [DigiCert](https://knowledge.digicert.com/tutorials/microsoft-intune.html)
 
 自社の製品と Intune の統合に関心をお持ちのサード パーティ CA は、API のガイダンスを確認してください。
 
 - [Intune SCEP API の GitHub リポジトリ](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
 - [サード パーティ CA 向けの Intune SCEP API ガイダンス](scep-libraries-apis.md)
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
 
 - [証明書プロファイルを構成する](certificates-scep-configure.md)
 - [Intune SCEP API の GitHub リポジトリ](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)

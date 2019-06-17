@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 1073a38da8a5b2467b1ff8c97b32b93f92e34e4c
-ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
+ms.openlocfilehash: fab8f2be48a30f6ad058b3eeb6874a44ff04e6ac
+ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66454124"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744317"
 ---
 以下の通知では、今後の Intune の変更と機能に備えるために役立つ重要な情報が提供されます。 
 
@@ -40,3 +40,35 @@ portal.azure.com および devicemanagement.microsoft.com の両方で、次の�
 
 #### <a name="additional-information"></a>追加情報 
 https://aka.ms/intune_fullscreen
+
+### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665342--"></a>変更の計画: Intune で 9 月に iOS 11 以降のサポートを開始 <!-- 4665342-->
+9 月に、Apple によって iOS 13 がリリースされる予定です。 Intune の登録、ポータル サイト、および Managed Browser では、iOS 13 のリリース直後に iOS 11 以降がサポートされるようになります。
+
+#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
+O365 モバイル アプリが iOS 11.0 以降でサポートされている場合、ユーザーには影響しない可能性があります。OS またはデバイスを既にアップグレードしている可能性があります。 ただし、以下にリストされているデバイスのいずれかを所有している場合、または以下にリストされているデバイスのいずれかを登録することにした場合、以下のデバイスでは iOS 10 以降の OS はサポートされません。 これらのデバイスは iOS 11 以降をサポートするデバイスにアップグレードする必要があります。
+
+- iPhone 5
+- iPhone 5c
+- iPad (第 4 世代)
+
+7 月以降、iOS 10 とポータル サイトが使用されている MDM 登録デバイスには、OS またはデバイスのアップグレードを求めるメッセージが表示されます。 アプリケーション保護ポリシー (APP) を使用する場合は、[iOS オペレーティング システムの最小要件 (警告のみ)] アクセスの設定を行うこともできます。
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
+影響を受ける可能性のあるデバイスまたはユーザーについては、Intune レポートで確認してください。 **[デバイス]**  >  **[すべてのデバイス]** の順に移動し、OS でフィルター処理します。 同じ組織にいる方で、iOS 10 を実行しているデバイスを持つ人を特定するのに役立つ列を追加できます。 9 月までに、使用しているデバイスをサポートされている OS バージョンにアップグレードするようにエンド ユーザーに要求します。
+
+### <a name="plan-for-change-support-for-version-811-and-higher-of-intune-app-sdk-for-ios----3586942--"></a>変更の計画: バージョン 8.1.1 以降の iOS 用 Intune アプリ SDK のサポート <!-- 3586942-->
+2019 年 9 月以降、Intune では Intune アプリ SDK 8.1.1 以降を使用する iOS アプリがサポートされるようになります。 8\.1.1 より前の SDK バージョンでビルドされたアプリはサポートされなくなります。 これは、9 月頃に予定されており、MC181399 でも発表されている、Apple の iOS 13 リリースでこの変更が有効になります。
+
+#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
+Intune App SDK またはアプリ ラッピングの統合により、データの暗号化を通じて、承認されていないアプリケーションとユーザーから会社のデータを保護することができます。 Intune のアプリ保護ポリシー (APP) によって暗号化が有効にされると、iOS 用 Intune App SDK では 256 ビットの暗号化キーが既定で使用されるようになります。 この変更の後、128 ビットの暗号化キーを使用する、8.1.1 より前の SDK バージョンのすべての iOS アプリは、SDK 8.1.1 と統合されたか 256 ビット キーを使用するアプリケーションとデータを共有できなくなります。 すべての iOS アプリでは、保護されたデータの共有を許可するために、SDK バージョン 8.1.1 以降が必要になります。
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
+Microsoft、サードパーティ、および基幹業務 (LOB) アプリを確認します。 Intune APP で保護されているすべてのアプリケーションで、SDK バージョン 8.1.1 以降が確実に使用されているようにする必要があります。
+
+- LOB アプリの場合:SDK バージョン 8.1.1 以降と統合されたアプリを再発行する必要がある場合があります。 最新の SDK バージョンをお勧めします。 アプリ保護ポリシー用に LOB アプリを準備する方法については、「[アプリ保護ポリシーを利用するために基幹業務アプリを準備する](../apps-prepare-mobile-application-management.md)」を参照してください。
+- Microsoft/サード パーティ アプリの場合:これらの最新バージョンのアプリがユーザーに確実に展開されているようにします。
+
+また、この変更を SDK のサポートに含める場合は、ドキュメントまたは開発者ガイダンスを更新する必要があります。
+
+#### <a name="additional-information"></a>追加情報
+https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
