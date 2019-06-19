@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5ede50bed3cefbcee5aaa96dfbecfe24d2bd8d9
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 631d76aca2c393be3c81cb8b6f532605664f4ce4
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041265"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031638"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Intune でのデータのセキュリティと共有
 
@@ -70,7 +70,7 @@ Microsoft のエージェントとして活動しているすべてのサード�
 
 Microsoft Intune では、データが System Center Configuration Manager と共有されることはありません。 System Center Configuration Manager は、お客様が直接デプロイ、管理、操作するオンプレミス製品です。 Configuration Manager で収集される診断データおよび使用状況データは、今後のリリースでインストールのエクスペリエンス、品質、セキュリティを向上させるためだけに使用されます。
 
-詳細については、「[System Center Configuration Manager の診断結果と使用状況データ](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data.md)」を参照してください。 
+詳細については、「[System Center Configuration Manager の診断結果と使用状況データ](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)」を参照してください。 
 
 
 ## <a name="next-steps"></a>次の手順

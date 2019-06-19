@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc97e9884fbcd23c599c917c181e29cdbc3708ee
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 7ce117f21c1ad78c2c977466398ce6d30989cc6a
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374037"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67041298"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune デバイスのコンプライアンス対応ポリシーの監視
 
@@ -60,7 +60,7 @@ ms.locfileid: "66374037"
 このグラフには、Intune に登録されているすべてのデバイスのコンプライアンス状態が表示されます。 デバイスのコンプライアンス状態は、Intune と Azure Active Directory という 2 つの異なるデータベースで保持されます。 
 
 > [!IMPORTANT]
-> Intune では、デバイス上のすべてのコンプライアンス評価をデバイスのチェックイン スケジュールに従って行います。 [デバイスのチェックイン スケジュールの詳細については、こちらをご覧ください](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned)。
+> Intune では、デバイス上のすべてのコンプライアンス評価をデバイスのチェックイン スケジュールに従って行います。 [デバイスのチェックイン スケジュールの詳細については、こちらをご覧ください](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)。
 
 デバイス コンプライアンス ポリシーのさまざまな状態に関する説明:
 

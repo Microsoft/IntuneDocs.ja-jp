@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 87bd539199ec4f8b43f0679b251bd550cd837651
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 659fdb9b67b941a27cef5a3680537f3eeb3bbbeb
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041306"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031687"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Intune での個人データの監査、エクスポート、または削除
 
@@ -58,13 +58,13 @@ Intune による管理から個人データを削除するには、3 つの方�
 
 ### <a name="delete-a-user-from-intune"></a>Intune からユーザーを削除する
 
-Intune からエンド ユーザーの個人データを削除するには、管理者が [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad) からユーザーを削除する必要があります。 ユーザーが AAD から削除 (物理的に削除) されると、Intune は AAD から削除信号を受信し、自動的にそのユーザーのすべての個人データを Intune サービスから消去し始めます。 ユーザーの情報は、削除アクションから 30 日以内に Intune サービスから削除されます。
+Intune からエンド ユーザーの個人データを削除するには、管理者が [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user) からユーザーを削除する必要があります。 ユーザーが AAD から削除 (物理的に削除) されると、Intune は AAD から削除信号を受信し、自動的にそのユーザーのすべての個人データを Intune サービスから消去し始めます。 ユーザーの情報は、削除アクションから 30 日以内に Intune サービスから削除されます。
 
 ### <a name="reset-device-to-factory-settings"></a>デバイスを出荷時設定にリセットする
 出荷時設定にリセットすると、会社と個人のデータと設定はすべて元の出荷時設定に復元されます。 この方法は、次の従業員にデバイスを提供する場合に便利です。 ユーザー ファイル、ユーザーがインストールしたアプリケーション、および既定以外の設定は削除されます。このデータは、削除アクションから 30 日以内に Intune サービスから削除されます。
 
 ### <a name="user-self-removal-from-intune-management"></a>ユーザー自身が Intune による管理から削除する
-ユーザーは、管理者の支援を受けずに Intune による管理から自分の [Android、Apple、または Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android.md) の個人用デバイスを削除できます。   
+ユーザーは、管理者の支援を受けずに Intune による管理から自分の [Android、Apple、または Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android) の個人用デバイスを削除できます。   
 
 ### <a name="retire"></a>インベントリから削除
 **インベントリから削除**すると、会社のアプリケーション、Intune が管理しているアプリに関するデータ、ポリシー設定、Intune でプロビジョニングされた電子メール プロファイルなど、Intune でプロビジョニングされたデータが削除されます。 このアクションでは、ユーザーの個人データはデバイス上にそのまま保持されます。
@@ -77,8 +77,8 @@ Intune テナントの顧客が Intune アカウントをキャンセルする�
 ハイブリッド MDM 環境 (Configuration Manager と統合された Intune) がある場合、ユーザーを完全に削除し、ローカルの Active Directory、Configuration Manager、および Intune から完全に削除するには、次のアクションを (順番に) 実行する必要があります。
 
 1. ローカルの Active Directory (AD) からユーザーを削除します。 この結果、ユーザーは Azure AD に同期されなくなり、Configuration Manager の検出機能からも検出されなくなります。 
-2. Configuration Manager コンソールからユーザーを削除して、Configuration Manager からユーザーと関連データを削除します。 コンソールで **[資産とコンプライアンス]** > **[ユーザー]** に移動し、削除するユーザーを右クリックし、**[削除]** をクリックします。
-3. [AAD からユーザーを削除します](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad)。これにより、Azure Active Directory と Intune の両方からユーザーと関連データが同時に削除されます。 ユーザーが AAD から削除 (物理的に削除) されると、Intune は AAD から削除信号を受信し、自動的にそのユーザーのすべての個人データを Intune サービスから消去し始めます。 ユーザーの情報は、削除アクションから 30 日以内に Intune サービスから削除されます。
+2. Configuration Manager コンソールからユーザーを削除して、Configuration Manager からユーザーと関連データを削除します。 コンソールで **[資産とコンプライアンス]**  >  **[ユーザー]** に移動し、削除するユーザーを右クリックし、 **[削除]** をクリックします。
+3. [AAD からユーザーを削除します](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user)。これにより、Azure Active Directory と Intune の両方からユーザーと関連データが同時に削除されます。 ユーザーが AAD から削除 (物理的に削除) されると、Intune は AAD から削除信号を受信し、自動的にそのユーザーのすべての個人データを Intune サービスから消去し始めます。 ユーザーの情報は、削除アクションから 30 日以内に Intune サービスから削除されます。
 
 > [!Important]
 >新規のハイブリッド MDM の顧客のオンボーディングは非推奨となりました。 詳細については、「[Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150)」 (ハイブリッド MDM から Azure での Intune に移行する) のブログ記事を参照してください。
