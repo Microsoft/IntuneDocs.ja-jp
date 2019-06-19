@@ -17,20 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a5aeae0d4256232d01c7e6171b10159a130b513
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f286ec4928ad4bb026c95d10562d9b339b2ca5f3
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044671"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043903"
 ---
 # <a name="troubleshoot-conditional-access"></a>条件付きアクセスに関するトラブルシューティング
 
-Intune と条件付きアクセスを使用して、Exchange Online、SharePoint Online、Skype for Business Online、Exchange On-Premises などの Office 365 サービスへのアクセスを保護できます。 この機能では、会社のリソースへのアクセスを、Intune 管理コンソールまたは Azure Active Directory で設定した条件付きアクセス ルールに準拠する、Intune に登録されたデバイスに限定することができます。 この記事では、条件付きアクセスで保護されているリソースにユーザーがアクセスできなかった場合、または保護されているリソースにユーザーがアクセスできるがブロックする必要がある場合の対処方法について説明します。
+Intune と条件付きアクセスを使用して、Exchange Online、SharePoint Online、Skype for Business Online、Exchange On-Premises などを始めとする Office 365 サービスへのアクセスを保護できます。 この機能を使うと、会社のリソースへのアクセスを、Intune 管理コンソールまたは Azure Active Directory で設定した条件付きアクセス ルールに準拠する、Intune に登録されたデバイスに限定することができます。 この記事では、条件付きアクセスで保護されているリソースにユーザーがアクセスできなかった場合、または保護されているリソースにユーザーがアクセスできるがブロックする必要がある場合の対処方法について説明します。
 
 ## <a name="requirements-for-conditional-access"></a>条件付きアクセスの要件
 
-条件付きアクセスが機能するには、次の要件を満たす必要があります。
+条件付きアクセスを機能させるには、次の要件を満たす必要があります。
 
 - デバイスを Intune で登録および管理する必要がある。
 - ユーザーとデバイスの両方が、割り当てられた Intune コンプライアンス ポリシーに準拠する必要がある。
@@ -54,7 +54,7 @@ Intune と条件付きアクセスを使用して、Exchange Online、SharePoint
 - 一部の Android デバイスは暗号化されているように見えることがありますが、ポータル サイト アプリでは、このようなデバイスは暗号化されていないデバイスとして認識されるので、非準拠となります。 このシナリオでは、ポータル サイト アプリで、デバイスのスタートアップ パスコードを設定するように求める通知がユーザーに表示されます。 通知をタップし、既存の PIN またはパスワードを確認した後に、 **[Secure start-up]/(安全な起動/)** 画面で **[Require PIN to start device]/(デバイスの起動に PIN が必要/)** を選択します。次に、ポータル サイト アプリから、デバイスに対して **[ポリシー準拠状況の確認]** ボタンをタップします。 デバイスは暗号化済みとして検出されるようになります。 
   > [!NOTE]
   > デバイスの製造元によっては、ユーザーが設定した PIN ではなく既定の PIN を使用してデバイスを暗号化します。 Intune では、既定の PIN を使用した暗号化を安全でないと見なし、ユーザーが既定以外の新しい PIN を作成するまで、それらのデバイスを非準拠としてマークします。
-- 登録され、ポリシーに準拠している Android デバイスでも、企業のリソースに初めてアクセスしようとした際に、ブロックされて検疫通知を受け取る場合があります。 この場合は、ポータル サイト アプリが実行されていないことを確認し、検疫電子メール内で **[今すぐ開始]** リンクをクリックして、評価をトリガーします。 この処理は、条件付きアクセスを初めて有効にする場合にのみ実行する必要があります。
+- 登録され、ポリシーに準拠している Android デバイスでも、企業のリソースに初めてアクセスしようとした際に、ブロックされて検疫通知を受け取る場合があります。 この場合は、ポータル サイト アプリが実行されていないことを確認し、検疫電子メール内で **[今すぐ開始]** リンクをクリックして、評価をトリガーします。 これは、条件付きアクセスを初めて有効にする場合にのみ実行する必要があります。
 
 ## <a name="devices-are-blocked-and-no-quarantine-email-is-received"></a>デバイスがブロックされ、検疫電子メールが受信されない
 
@@ -64,10 +64,10 @@ Intune と条件付きアクセスを使用して、Exchange Online、SharePoint
 
 ## <a name="devices-are-noncompliant-but-users-are-not-blocked"></a>デバイスが準拠していないが、ユーザーがブロックされていない
 
-- Windows PC では、条件付きアクセスによって、ネイティブ電子メール アプリ、先進認証を使用する Office 2013、または Office 2016 のみがブロックされます。 以前のバージョンの Outlook、または Windows PC 上のすべてのメール アプリをブロックするには、「[SharePoint Online と Exchange Online に Azure Active Directory の条件付きアクセスを設定する](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication)」の説明に従って、AAD Device Registration および Active Directory フェデレーション サービス (AD FS) を構成する必要があります。 
+- Windows PC では、条件付きアクセスによって、ネイティブ電子メール アプリ、先進認証を使用する Office 2013、または Office 2016 のみがブロックされます。 Windows PC 上の以前のバージョンの Outlook またはすべてのメール アプリをブロックするには、[Azure Active Directory の条件付きアクセス用の SharePoint Online および Exchange Online の設定](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication)に関するページに従って、AAD Device Registration および Active Directory フェデレーション サービス (AD FS) を構成する必要があります。 
 - デバイスが選択的にワイプされるか、Intune から削除された場合、削除後に数時間にわたってアクセス許可を持ち続ける可能性があります。 これは Exchange がアクセス権を 6 時間キャッシュするためです。 このシナリオでは、使用中止となったデバイスのデータの保護には別の手段を検討してください。
-- Surface Hub デバイスでは条件付きアクセスがサポートされていますが、適切な評価を行うには、デバイス グループ (ユーザー グループではなく) にコンプライアンス ポリシーをデプロイする必要があります。
-- コンプライアンス ポリシーと条件付きアクセス ポリシーの割り当てを確認します。 ポリシーが割り当てられているグループにユーザーが属さないか、または除外するグループにユーザーが属する場合、ユーザーはブロックされません。 割り当てられているグループ内のユーザーのデバイスのみが、コンプライアンスをチェックされます。
+- Surface Hub デバイスでは条件付きアクセスがサポートされていますが、適切な評価を行うには、デバイス グループ (ユーザー グループではなく) にコンプライアンス ポリシーを展開する必要があります。
+- ご自分のコンプライアンス ポリシーおよび条件付きアクセス ポリシーの割り当てを確認します。 ポリシーが割り当てられているグループにユーザーが属さないか、または除外するグループにユーザーが属する場合、ユーザーはブロックされません。 割り当てられているグループ内のユーザーのデバイスのみが、コンプライアンスをチェックされます。
 
 ## <a name="noncompliant-device-is-not-blocked"></a>非準拠のデバイスがブロックされていない
 

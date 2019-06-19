@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30c0e5af6d7ff0467383294c071d0ffdb96c5dc1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9d3e74244315b7345a632a9ecd2bf631a134e5ab
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041849"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045025"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>デバイス管理を要求せずに Office 365 Exchange Online を保護する
 
@@ -34,9 +34,9 @@ ms.locfileid: "66041849"
 
 1. [条件付きアクセスについて学習します](conditional-access.md)。 
 2. [アプリベースの条件付きアクセスについて学習します](app-based-conditional-access-intune.md)。
-3. [Exchange Online のアプリベースの条件付きアクセス ポリシーを設定します](app-based-conditional-access-intune-create.md)。
+3. [Exchange Online 用にアプリベースの条件付きアクセス ポリシーを設定します](app-based-conditional-access-intune-create.md)。
 4. [管理できないアプリをブロックします](app-modern-authentication-block.md)。特に、Azure Active Directory Authentication Library (ADAL) を使用しないアプリをブロックします。
-5. (任意) [SharePoint Online のアプリベースの条件付きアクセス ポリシーを設定します](app-based-conditional-access-intune-create.md)。 このポリシーは、管理できないアプリやセキュリティ対策を施せないアプリから会社のデータへのアクセスをブロックします。 このポリシーは、SharePoint モバイルからのアクセスも制限します。 
+5. (任意) [SharePoint Online 用にアプリベースの条件付きアクセス ポリシーを設定します](app-based-conditional-access-intune-create.md)。 このポリシーは、管理できないアプリやセキュリティ対策を施せないアプリから会社のデータへのアクセスをブロックします。 このポリシーは、SharePoint モバイルからのアクセスも制限します。 
 
 ## <a name="what-to-tell-employees-and-students"></a>社員や学生に伝えること
 
@@ -47,7 +47,7 @@ ms.locfileid: "66041849"
 
 アプリベースの条件付きアクセスを利用し、会社データのセキュリティを強化しました。 次の手順として、会社データの保護機能を上げる他の方法について学習できます。次のようなものがあります。 
 
-* [Active Directory や Azure Active Directory でデバイス コンプライアンス、デバイス リスク、場所、ユーザー属性に基づいて条件付きアクセス](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)を設定します。  
+* [Active Directory や Azure Active Directory のデバイス コンプライアンス、デバイス リスク、場所、ユーザー属性に基づく条件付きアクセス](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)を設定します。  
 * アプリ保護ポリシーを設定し、意図的な、あるいは意図しないデータ漏洩から会社のデータを守ります。 
 * Azure Information Protection を活用し、ネットワークの外にある会社データを守ります。 
 

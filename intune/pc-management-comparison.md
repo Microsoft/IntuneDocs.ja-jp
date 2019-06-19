@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47c5892541359263383621307d269936f01fa2c6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3665a785391d2bff707bf5b8fe0a7e4f6e8a43d
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041529"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044527"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Windows PC のコンピューターとしての管理とモバイル デバイスとしての管理の比較
 
@@ -43,7 +43,7 @@ ms.locfileid: "66041529"
 |**インベントリ**|利用可能 <br>[Windows PC のハードウェアとソフトウェアのインベントリを表示する](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md)|利用可能 <br>[アプリ情報を監視する方法](apps-monitor.md)<br>[デバイス管理とは](device-management.md)|
 |**Windows ファイアウォールのポリシー**|利用可能 <br>[Windows ファイアウォール ポリシーを使用して Windows PC を保護する](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |利用可能 <br>[Windows Defender ファイアウォール](endpoint-protection-windows-10.md#windows-defender-firewall)|
 |**マルウェア対策**|Endpoint Protection<br>[Endpoint Protection を使用した Windows PC の保護](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Windows Defender<br>[Windows Defender を有効にする](advanced-threat-protection.md)|
-|**リモート アシスタンス** |TeamViewer<br>[Windows PC のリモート アシスタンス要求と提供](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [TeamViewer を使用して、Intune デバイスをリモートで管理する](device-profile-android-teamviewer.md) |
+|**リモート アシスタンス** |TeamViewer<br>[Windows PC のリモート アシスタンス要求と提供](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [TeamViewer を使用して、Intune デバイスをリモートで管理する](teamviewer-support.md) |
 |**アプリの展開** | ビジネス向け Microsoft ストアでは使用できません。<br>.exe、.appx、マルチファイル .msi のみ<br>[Intune ソフトウェア クライアントを実行している Windows PC にアプリを追加する](add-apps-for-windows-pcs-in-microsoft-intune.md)|Microsoft ストア アプリと基幹業務アプリに使用可能<br>[Windows ストア アプリを追加する方法](store-apps-windows.md)<br>[Windows の基幹業務 (LOB) アプリを Microsoft Intune に追加する方法](lob-apps-windows.md)|
 |**アプリ保護**|利用不可|利用可能 <br>[アプリ保護ポリシーとは](app-protection-policy.md)|
 |**正常性構成証明書**|利用不可|利用可能|

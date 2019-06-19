@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5672963c6737d51e720a8b1597dd90318f33a05
-ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
-ms.translationtype: HT
+ms.openlocfilehash: e3b0aff29db5402de7e91282e74cd6d69a103545
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66506865"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045814"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK の概要
 
@@ -91,7 +91,7 @@ Microsoft が、アンケートに入力された電子メール アドレスを
 
 ## <a name="enable-your-ios-or-android-app-for-app-based-conditional-access"></a>アプリ ベースの条件付きアクセスに対して iOS または Android アプリを有効にする
  
- アプリの保護ポリシーに対してアプリを有効することに加えて、Azure Active Directory (AAD) アプリ ベースの条件付きアクセスでアプリが正常に機能するには、次の条件が必須です。
+ アプリの保護ポリシーに対してアプリを有効することに加えて、Azure Active Directory (AAD) アプリ ベースの条件付きアクセスを使ってアプリを正常に機能させるには、以下が必要です。
  
  * アプリのビルドには [Azure Active Directory Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) が使用されていて、AAD ブローカー認証に対してアプリが有効になっている。
  

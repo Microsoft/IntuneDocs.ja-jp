@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2950ddf4b130222e23fd9ea23f7c9e5793f8638a
-ms.sourcegitcommit: 229816afef86a9767eaca816d644c77ec4babed5
-ms.translationtype: MTE75
+ms.openlocfilehash: 357d1619fdf051d07ea47c84a79b2aebd1523460
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66354219"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67041130"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように Windows 10 (以降) のデバイスを設定する
 
@@ -430,9 +430,9 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
     > [!IMPORTANT]
     > Windows デスクトップでパスワード要件が変更されると、デバイスがアイドルからアクティブに移行する次回のサインイン時にユーザーに影響します。 要件を満たすパスワードを持っているユーザーにも、パスワードの変更を求めるメッセージが表示されます。
     
-  - **[デバイスがワイプされるまでのサインイン失敗回数]** : 認証エラーの回数を入力します (1 - 11)。この回数を超えると、デバイスがワイプされます。 `0` (ゼロ) を使用すると、デバイスのワイプ機能が無効になる可能性があります。
+  - **[デバイスがワイプされるまでのサインイン失敗回数]** : 認証エラーの回数を入力します (最大 11 回)。この回数を超えると、デバイスがワイプされる可能性があります。 入力した有効な数値は、エディションによって異なります。 [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts)サポートされている値を一覧表示されます。 `0` (ゼロ) を使用すると、デバイスのワイプ機能が無効になる可能性があります。
 
-    この設定は、エディションによって影響が異なります。 詳細については、「[DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts)」を参照してください。
+    この設定も、エディションによって影響が異なります。 この設定の詳細については、[DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) に関するページをご覧ください。
 
   - **[画面がロックされるまでの非アクティブな最長時間 (分)]** : デバイスのアイドル状態が許容される時間を入力します。この時間を超えると、画面はロックされます。
   - **[パスワードの有効期限 (日数)]** : デバイスのパスワードの変更が必要になるまでの日数を指定します (1 - 365)。 たとえば、パスワードを 90 日後に期限切れにするには、`90` と入力します。

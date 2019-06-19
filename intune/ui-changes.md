@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 207a3f950d6fca2d6fcbe024f24fbf05487f2151
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 052190185159dfdee4adee94d4c43c72ce6f41d4
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040403"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046330"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Azure での Intune の機能の移動先
 Intune から Azure Portal に移行する際に、いくつかのタスクがより論理的に整理されました。 しかし、このような改善を行えば、新しい構成を学ばなければなりません。 このリファレンス ガイドは、従来のポータルを使用した Intune の知識があり、Intune で行われていた内容を Azure portal ではどのように実行されるのかについて関心があるユーザーを対象にしています。 この記事にお探しの機能が記載されていない場合は、今後更新できるように記事の最後にコメントを残してください。
@@ -72,12 +72,12 @@ Azure Portal の Intune では、[Azure Active Directory (AD)](https://docs.micr
 ## <a name="where-did-my-conditional-access-policies-go"></a>条件付きアクセス ポリシーの移動先
 テナントが Azure portal に移行された後も、テナントの条件付きアクセス ポリシーは引き続き適用されます。 ただし、Azure portal で Intune からそれらを表示または変更することはできません。
 
-Azure portal から条件付きアクセス ポリシーを表示および変更したい場合は、クラシック ポータルから古いポリシーを削除することが必要になります。 次に、Azure portal でそれらを再度作成します。 条件付きアクセス ポリシーの移行の詳細については、[Azure portal でのクラシック ポリシーの移行](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration)に関するページを参照してください。 
+Azure portal から条件付きアクセス ポリシーを表示および変更したい場合は、クラシック ポータルから古いポリシーを削除することが必要になります。 次に、Azure portal でそれらを再度作成します。 条件付きアクセス ポリシーの移行の詳細については、[Azure portal でのクラシック ポリシーの移行](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration)に関するページをご覧ください。 
 
 ## <a name="where-did-my-compliance-policies-go"></a>コンプライアンス ポリシーの移動先
 テナントが Azure portal に移行された後も、テナントのコンプライアンス ポリシーは引き続き適用されます。 ただし、Azure portal で Intune からそれらを表示または変更することはできません。
 
-Azure portal からコンプライアンス ポリシーを表示および変更したい場合は、クラシック ポータルから古いポリシーを削除することが必要になります。 次に、Azure portal でそれらを再度作成します。 デバイス コンプライアンス ポリシーの詳細については、[Intune でのデバイス コンプライアンス ポリシーの概要](https://docs.microsoft.com/intune/known-issues#compliance)に関するページを参照してください。 
+Azure portal からコンプライアンス ポリシーを表示および変更したい場合は、クラシック ポータルから古いポリシーを削除することが必要になります。 次に、Azure portal でそれらを再度作成します。 デバイス コンプライアンス ポリシーの詳細については、[Intune でのデバイス コンプライアンス ポリシーの概要](https://docs.microsoft.com/intune/device-compliance-get-started)に関するページを参照してください。 
 
 ## <a name="where-did-apple-dep-go"></a>Apple DEP の移動先
 従来のポータルでは、Intune が Apple のデバイス登録プログラムと統合されるように設定し、Apple サービスとの同期を手動で要求できました。

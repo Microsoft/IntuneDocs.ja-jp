@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 9a18bceb6b42f06464baf31a4cdd4dea21d19675
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 984b78b271d130618ec0994f76e966f1dc338706
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461296"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044714"
 ---
 ## <a name="april-2017"></a>2017 年 4 月
 
@@ -26,7 +26,7 @@ Android 用ポータル サイト アプリが更新されて、起動または�
 
 #### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>アプリの SharePoint Online へのアクセスをブロック <!-- 679339 -->
 
-アプリ ベースの条件付きアクセス ポリシーを作成して、アプリ保護ポリシーが適用されていないアプリが [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online) にアクセスするのをブロックできるようになりました。 アプリ ベースの条件付きアクセスのシナリオでは、Azure Portal を使用して SharePoint Online にアクセスするアプリを指定できます。
+アプリ ベースの条件付きアクセス ポリシーを作成して、アプリ保護ポリシーが適用されていないアプリの [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online) へのアクセスをブロックできるようになりました。 アプリ ベースの条件付きアクセスのシナリオでは、Azure portal を使用して、SharePoint Online にアクセスさせたいアプリを指定できます。
 
 #### <a name="single-sign-in-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>iOS 用ポータル サイトから Outlook for iOS へのシングル サインインのサポート <!--834012-->
 iOS 用のポータル サイト アプリに既にサインインしているユーザーは、同じデバイス上の同じアカウントを使う Outlook アプリであればサインインしなおす必要はありません。 Outlook アプリを起動するときに、自分のアカウントを選んで自動的にサインインできます。 現在、他の Microsoft アプリにこの機能を追加する作業を進めています。
@@ -128,7 +128,7 @@ Android 用ポータル サイト アプリでは、ユーザー インターフ
 - 色: ポータル サイトのタブ ヘッダーの色が、IT が定義するブランド色になります。
 - アプリ: **[アプリ]** タブの **[おすすめアプリ]** ボタンと **[すべてのアプリ]** ボタンが更新されました。
 - 検索: **[アプリ]** タブの **[検索]** ボタンが浮動アクション ボタンになりました。
-- ナビゲーション アプリ: **[すべてのアプリ]** ビューで **[おすすめ]**、**[すべて]** および **[カテゴリ]** のタブ付きビューが表示され、移動がより簡単になります。
+- ナビゲーション アプリ: **[すべてのアプリ]** ビューで **[おすすめ]** 、 **[すべて]** および **[カテゴリ]** のタブ付きビューが表示され、移動がより簡単になります。
 - サポート: **[デバイス]** タブと **[IT に連絡]** タブが更新されて、読みやすくなりました。
 
 これらの変更について詳しくは、「[Intune とエンド ユーザー アプリの UI の更新](/intune/whats-new-app-ui)」をご覧ください。
@@ -179,7 +179,7 @@ Windows 10 ポータル サイト アプリのダウンロードおよびサイ�
 ### <a name="new-capabilities"></a>新しい機能
 
 ### <a name="modernizing-the-company-portal-website---753980--"></a>ポータル Web サイトの進化 <!--753980-->
-ポータル Web サイトでマネージド デバイスを持っていないユーザーを対象とするアプリをサポートします。 この Web サイトは、新しいコントラストの配色パターン、動的な図、および "ハンバーガー メニュー"  ![(ヘルプデスクの連絡先詳細や既存の管理対象デバイスに関する情報を含む、](/intune/whats-new-app-ui)。
+ポータル Web サイトでマネージド デバイスを持っていないユーザーを対象とするアプリをサポートします。 この Web サイトは、新しいコントラストの配色パターン、動的な図、および "ハンバーガー メニュー" ![(ヘルプデスクの連絡先詳細や既存の管理対象デバイスに関する情報を含む、](/intune/whats-new-app-ui)。
 
 ### <a name="notices"></a>通知
 
@@ -252,7 +252,7 @@ Windows 10 デスクトップを登録するための既定の動作が変わり
 iOS 用ポータル サイト内のリンク (ドキュメントとアプリへのリンクを含む) は、Safari のアプリ内ビューを使用して、ポータル サイト アプリに直接開きます。 この更新プログラムは、1 月にサービス更新プログラムとは別に提供されます。
 
 #### <a name="modernizing-the-company-portal-website---753980--"></a>ポータル Web サイトの進化 <!--753980-->
-2 月から、ポータル Web サイトでマネージド デバイスを持っていないユーザーを対象とするアプリをサポートします。 この Web サイトは、新しいコントラストの配色パターン、動的な図、および "ハンバーガー メニュー"  ![ポータル サイトのハンバーガー メニュー](/intune/whats-new-app-ui)。
+2 月から、ポータル Web サイトでマネージド デバイスを持っていないユーザーを対象とするアプリをサポートします。 この Web サイトは、新しいコントラストの配色パターン、動的な図、および "ハンバーガー メニュー" ![ポータル サイトのハンバーガー メニュー](/intune/whats-new-app-ui)。
 
 #### <a name="new-documentation-for-app-protection-policies---583398--"></a>アプリの保護ポリシーに関する新しいドキュメント <!--583398-->
 Intune アプリ ラッピング ツールまたは Intune アプリ SDK を使用して、iOS および Android アプリでアプリ保護ポリシー (MAM ポリシーとして知られる) を有効にする必要がある管理者やアプリ開発者用のドキュメントを更新しました。
@@ -337,7 +337,7 @@ __Windows 10 デバイスで使用可能な新しい Microsoft Intune ポータ�
 この新しいアプリでは、ユーザーは、Windows 10 デバイスでのシングル サインオン (SSO) や証明書ベースの認証など、追加のプラットフォーム機能も利用することができます。 アプリは、Microsoft ストアからインストールした既存の Windows 8.1 ポータル サイトと Windows Phone 8.1 ポータル サイトへのアップグレードとして利用可能になります。 詳細については、[aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp) を参照してください。
 
 > [!IMPORTANT]
-> __Intune と Android for Work の更新プログラム__ __[必須]__ の操作を使用して Android for Work アプリを展開できますが、Intune グループが新しい Azure AD グループ エクスペリエンスに移行された場合、__[利用可能]__ としてのみアプリを展開できます。
+> __Intune と Android for Work の更新プログラム__ __[必須]__ の操作を使用して Android for Work アプリを展開できますが、Intune グループが新しい Azure AD グループ エクスペリエンスに移行された場合、 __[利用可能]__ としてのみアプリを展開できます。
 
 __Cordova プラグイン用 Intune アプリ SDK で登録なしの MAM をサポート開始__ アプリ開発者は、Cordova プラグイン用 Intune アプリ SDK を使用して、Android および iOS 用の Cordova ベースのアプリでデバイス登録を行わずに MAM 機能を有効化できるようになりました。 Cordova プラグイン用の Intune アプリ SDK は[こちら](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)にあります。
 

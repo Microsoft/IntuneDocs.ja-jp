@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eeb70727a187a769e56a9cfd517ecd7b583ba1c1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f13b78e05b9f0b94d98677004c7059f1acaa80f9
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042463"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045709"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Android および Samsung KNOX Standard デバイスの制限設定一覧 - Intune
 
@@ -51,7 +51,7 @@ ms.locfileid: "66042463"
     > [!NOTE]
     > Samsung Knox デバイスでは、MDM 登録時に自動的に 4 桁の PIN が要求されます。 ネイティブ Android デバイスでは、条件付きアクセスに準拠するために自動的に PIN が要求される場合があります。
 
-- **[パスワードの最小文字数]** : ユーザーが入力する必要があるパスワードの最小文字数 (4 - 16 文字) を入力します。
+- **[パスワードの最小文字数]** : ユーザーが入力する必要があるパスワードの最小文字数 (4 から 16 文字) を入力します。
 - **[画面がロックされるまでの非アクティブな最長時間 (分)]** : 画面がロックされるまでに、デバイスの非アクティブ状態が許容される最長時間 (分) を入力します。 エンド ユーザーは、デバイス上で、プロファイルで構成した時間よりも長い時間値を設定することはできません。 エンド ユーザーが設定できるのは、短い時間値です。 たとえば、プロファイルで値が 15 分に設定されている場合、エンド ユーザーは 5 分に設定できます。 エンド ユーザーは、値を 30 分に設定することはできません。 
 - **[デバイスがワイプされるまでのサインイン失敗回数]** : デバイスをワイプするまでのサインイン エラーの数を入力します。
 - **[パスワードの有効期限 (日数)]** : デバイス パスワードの変更が必要になるまでの日数を入力します。

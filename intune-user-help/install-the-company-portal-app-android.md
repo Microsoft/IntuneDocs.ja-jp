@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/27/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,20 +18,20 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08eb5c3d2f306fef6f867fbe9f3976cb7a5aea80
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f2bcae8e48fd9c6558d77aced73d12b15e54b2f7
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837854"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67040945"
 ---
 # <a name="install-the-company-portal-app-for-android"></a>Android 用ポータル サイト アプリをインストールする
 
-ポータル サイトは、ユーザーが会社または学校のアプリ、電子メール、およびインターネット接続にアクセスできるようにするアプリです。 このアプリは、会社のアプリを常に最新の状態に保ったり、一定時間の経過後にデバイスが自動的にロックされるようにしたりするなど、デバイスの安全性を保つことによって組織の情報を安全に保管できるようにします。 ポータル サイト アプリでは、[Microsoft Intune へのデバイスの登録](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)をサポートすることによって、これを可能にしています。
+ポータル サイトは、ユーザーが会社または学校のアプリ、電子メール、およびインターネット接続にアクセスできるようにするアプリです。 このアプリは、会社のアプリを常に最新の状態に保ったり、一定時間の経過後にデバイスが自動的にロックされるようにしたりするなど、デバイスの安全性を保つことによって組織の情報を安全に保管できるようにします。 ポータル サイトと、それがデバイス管理の機能の詳細については、次を参照してください。 [Android デバイスを登録する理由](why-enroll-android-device.md)します。  
 
-1.  **[ホーム]** > **[Play ストア]** の順にタップします。
+1.  **[ホーム]**  >  **[Play ストア]** の順にタップします。
 
-2.  **[検索]** ボックスに、「**intune ポータル サイト**」と入力します。
+2.  **[検索]** ボックスに、「**Intune ポータル サイト**」と入力します。  
 
 3.  **[Intune 会社のポータル]** をタップします。
 
@@ -45,6 +45,6 @@ ms.locfileid: "55837854"
 
     ![android-accept-company-portal-terms](./media/and-cpinstall-3-cp-accept.png)
 
-ポータル サイト アプリをダウンロードしたら、職場の情報へのフル アクセスを取得するために [Intune にデバイスを登録](enroll-your-device-in-Intune-android.md)することをお勧めします。 [別のデバイスを使用してサインインする](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device)こともできます。
+ポータル サイト アプリをダウンロードしたら、職場の情報へのフル アクセスを取得するために [Intune にデバイスを登録](enroll-device-android-company-portal.md)することをお勧めします。 [別のデバイスを使用してサインインする](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#sign-in-from-another-device)こともできます。  
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

@@ -4,10 +4,10 @@ description: Microsoft 365 Enterprise には Microsoft Intune が含まれてい
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/29/2019
+ms.date: 06/12/2019
 ms.topic: conceptual
 audience: ITPro
-ms.service: ''
+ms.service: microsoft-intune
 ms.technology: ''
 ms.custom: intune
 ms.assetid: 0649d310-43a7-4b01-85d2-da255d03e1da
@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 452cb8e4163b82d699347a33fd8dfda9c792b6fc
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d5614f0657175658c1a8442d650e16c8550c1ac1
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050269"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043842"
 ---
 # <a name="what-is-device-management"></a>デバイス管理とは 
 
@@ -61,7 +61,7 @@ Intune により、ユーザーごと、および iOS、macOS、Android、Window
     - [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) を有効にして、モバイル デバイス上のファイルとアプリでの不審なアクティビティを検索できます。 
     - モバイル デバイスに対するセキュリティ侵害を防ぐには、[Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) を使用します。 また、ユーザーを企業リソースからブロックすることで、セキュリティ侵害の影響を抑えるために役立ちます。
 
-- **条件付きアクセス**は、Azure Active Directory の機能で、Intune と適切に統合します。 [条件付きアクセス](https://docs.microsoft.com/intune/conditional-access)を使用することで、確実に準拠しているデバイスのみに電子メール、SharePoint、およびその他のアプリへのアクセスを許可します。 
+- **条件付きアクセス**は、Azure Active Directory の機能で、Intune とうまく統合されます。 [条件付きアクセス](https://docs.microsoft.com/intune/conditional-access)を使用することで、確実に準拠しているデバイスのみに電子メール、SharePoint、およびその他のアプリへのアクセスを許可します。 
 
 ## <a name="choose-the-device-management-solution-thats-right-for-you"></a>適切なデバイス管理ソリューションの選択
 

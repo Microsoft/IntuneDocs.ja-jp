@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5808a4b81fcc66d37e78c50cb5bcd2ae7bbe44e2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c929965b79d9ee35fcc1094b4ad18cff6d73d80d
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049603"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045535"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android 用 Microsoft Intune アプリ SDK 開発者ガイド
 
@@ -159,8 +159,8 @@ intunemam {
 成果物で外部の依存関係を指定している場合、`includeExternalLibraries` 値のバージョン コンポーネントを省略することをお勧めします。 バージョンを含める場合は、正確なバージョンである必要があります。 ダイナミック バージョンの定義 (例: `1.+`) はサポートされません。
 
 `includeExternalLibraries` にライブラリを含める必要があるかどうかを判断するために使用する必要がある一般的なルールは、次の 2 つの質問に基づいています。
-1. ライブラリにはクラスが含まれ、それに対して同等の MAM がありますか?  例: `Activity`、`Fragment`、`ContentProvider`、`Service` など。
-2. はいの場合、ご利用のアプリでそれらのクラスを活用しますか? 
+1. ライブラリにはクラスが含まれ、それに対して同等の MAM がありますか? 例: `Activity`、`Fragment`、`ContentProvider`、`Service` など。
+2. はいの場合、ご利用のアプリでそれらのクラスを活用しますか?
 
 これらの質問の答えが両方 "はい" の場合は、そのライブラリを `includeExternalLibraries` に含める必要があります。 
 
@@ -345,7 +345,7 @@ Intune 管理を有効にするために、Android の基底クラスを、そ�
 `ClipboardManager`、`ContentProviderClient`、`ContentResolver` や `PackageManager` など、ほとんどのメソッドがラップされているクラスもあれば、`DownloadManager`、`PrintManager`、`PrintHelper`、`View` や `DragEvent` など、1 つまたは 2 つのメソッドのみがラップされているクラスもあります。 BuildPlugin を使用しない場合は、正確なメソッドの MAM 同等クラスによって公開される API を参照してください。 
 
 ### <a name="manifest-replacements"></a>マニフェストの置換
-場合によっては、マニフェストと共に Java コードでも上記の一部のクラスの置換を実行する必要があります。 注意: 
+場合によっては、マニフェストと共に Java コードでも上記の一部のクラスの置換を実行する必要があります。 注意:
 * `android.support.v4.content.FileProvider` を参照するマニフェストは、`com.microsoft.intune.mam.client.support.v4.content.MAMFileProvider` に置き換える必要があります。
 
 ## <a name="androidx-libraries"></a>AndroidX ライブラリ
@@ -726,13 +726,13 @@ Azure AD にアプリを登録し、そのアプリに保護ポリシー サー�
 
 1. [ADAL の統合に関するガイドライン](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library)に従ってください。 
    特にブローカーの使用に関する手順 11 を参照してください。
-2. [Azure Active Directory にアプリケーションを登録します] (https://docs.microsoft.com/azure/active-directory/active-directory-app-registration)。 
+2. [Azure Active Directory にアプリケーションを登録します] (https://docs.microsoft.com/azure/active-directory/active-directory-app-registration) 。 
    リダイレクト URI は、上記の ADAL の統合に関するガイドラインで確認できます。
 3. 上記の項目 2 の [ADAL の一般的な構成](#common-adal-configurations)ごとにマニフェスト メタデータ パラメーターを設定します。
 4. すべて正しく構成されていることをテストします。その場合、[Azure portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) から[デバイス ベースの CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use) を有効にして、以下を確認します。
     - アプリへのサインイン時に Intune ポータル サイトのインストールと登録が求められる
     - 登録後、アプリへのサインインが正常に完了する。
-5. アプリで Intune APP SDK の統合が提供されたら、msintuneappsdk@microsoft.com に連絡して、[アプリベース条件付きアクセス](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)の承認済みアプリ リストへの追加を依頼します
+5. アプリで Intune APP SDK の統合が提供されたら、msintuneappsdk@microsoft.com に連絡して、[アプリベース条件付きアクセス](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)の承認済みアプリ リストへの追加を依頼します。
 6. アプリが承認済みリストに追加されたら、[アプリベースの CA を構成](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create)し、アプリへのサインインが正常に完了したことを確認して検証します。
 
 ## <a name="app-protection-policy-without-device-enrollment"></a>デバイス登録が不要なアプリの保護ポリシー
