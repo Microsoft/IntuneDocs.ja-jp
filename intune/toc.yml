@@ -50,6 +50,8 @@
       href: tutorial-use-autopilot-enroll-devices.md
     - name: DEP を使って iOS デバイスを登録する
       href: tutorial-use-device-enrollment-program-enroll-ios.md
+    - name: Slack を構成して Intune を使用する
+      href: tutorial-configure-slack-enterprise-grid.md
 - name: 概念
   items:
     - name: デバイス管理とは
@@ -662,10 +664,6 @@
               href: troubleshoot-policies-in-microsoft-intune.md
             - name: 電子メール プロファイルに関する問題と解決策
               href: troubleshoot-email-profiles-in-microsoft-intune.md
-            - name: ソフトウェアの更新に関するトラブルシューティング
-              href: troubleshoot-software-updates-in-microsoft-intune.md
-            - name: Endpoint Protection の一般的なエラー
-              href: troubleshoot-endpoint-protection-in-microsoft-intune.md
             - name: 条件付きアクセスに関するトラブルシューティング
               href: troubleshoot-conditional-access.md
             - name: Exchange Connector に関するトラブルシューティング
@@ -968,6 +966,10 @@
               href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
             - name: ポリシーの競合を解決する
               href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
+            - name: ソフトウェアの更新に関するトラブルシューティング
+              href: troubleshoot-software-updates-in-microsoft-intune.md
+            - name: Endpoint Protection の一般的なエラー
+              href: troubleshoot-endpoint-protection-in-microsoft-intune.md
     - name: シナリオの実装ガイド
       items:
         - name: Exchange Online の保護
