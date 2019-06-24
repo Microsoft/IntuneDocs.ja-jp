@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 06/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 357d1619fdf051d07ea47c84a79b2aebd1523460
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
-ms.translationtype: HT
+ms.openlocfilehash: 9af61c89b90a7f31654cd43a3cfc457b27e9700f
+ms.sourcegitcommit: 86aa5fefcba1e71841696b1a5e3ca5bffb1a9528
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041130"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67234976"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように Windows 10 (以降) のデバイスを設定する
 
@@ -420,7 +420,8 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 
 これらの設定では、[DeviceLock ポリシー CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) が使用されます。それには、サポートされる Windows のエディションも示されています。
 
-- **[パスワード]** : エンド ユーザーがデバイスにアクセスする際にパスワードの入力を**要求**します。 **[未構成]** (既定値) にすると、パスワードなしでのデバイスへのアクセスが許可されます。
+- **[パスワード]** : エンド ユーザーがデバイスにアクセスする際にパスワードの入力を**要求**します。 **[未構成]** (既定値) にすると、パスワードなしでのデバイスへのアクセスが許可されます。 ローカル アカウントのみに適用されます。 ドメイン アカウントのパスワードは、Active Directory (AD) と Azure AD で構成されているままです。
+
   - **必要なパスワードの種類**: パスワードの種類を選択します。 次のようなオプションがあります。
     - **[未構成]** : パスワードに数字と文字を含めることができます。
     - **[数値]** : パスワードは数値のみにする必要があります。

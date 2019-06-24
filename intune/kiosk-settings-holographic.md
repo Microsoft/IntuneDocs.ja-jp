@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 06/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aef2db158e0572c1eec056a1d6e33b4b97aea77a
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9d6366034af09acdbecdc0cb0e670f6d57766b35
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047017"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197523"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-run-as-a-kiosk-in-intune"></a>Intune でキオスクとして実行するための Windows Holographic for Business デバイスの設定
 
@@ -64,7 +64,7 @@ Intune での Windows キオスク機能の詳細については、[キオスク
 
 - **[アプリケーション]** : キオスク デバイスで実行するアプリを追加します。 複数のアプリを追加することができます。
 
-  - **[Add Store apps]\(ストア アプリの追加\)** : [クライアント アプリ](apps-add.md)を使用して追加した既存のアプリを選択します。 アプリが何も表示されない場合は、アプリを取得して [Intune に追加する](store-apps-windows.md)ことができます。
+  - **ストア アプリの追加**: 追加またはとして Intune に配置した既存のアプリを選択します。[クライアント アプリ](apps-add.md)、LOB アプリを含むです。 表示されているすべてのアプリを持っていない場合は多くの Intune サポートしている[アプリの種類](apps-add.md)した[を Intune に追加](store-apps-windows.md)します。
   - **[Add Win32 app]\(Win32 アプリの追加\)** : Windows Holographic for Business ではサポートされていません。
   - **[Add by AUMID]\(AUMID による追加\)** : このオプションを使用して、受信トレイ Windows アプリを追加します。 次のプロパティを入力します。 
 

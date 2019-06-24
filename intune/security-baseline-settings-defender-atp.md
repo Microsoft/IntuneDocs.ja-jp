@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 837442f93bbac2c5eb19b3c433c91f91aa38a17e
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749913"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197543"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 向けの Microsoft Defender Advanced Threat Protection ベースライン設定
 
@@ -83,7 +83,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 
   **既定値**: はい
 
-## <a name="attach-surface-reduction"></a>攻撃の回避  
+## <a name="attack-surface-reduction"></a>攻撃の回避  
 
 - **Office apps launch child process type (Office アプリの子プロセスの起動の種類)**  
   [攻撃面の減少ルール](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – *[ブロック]* に設定すると、Office アプリで子プロセスを作成することはできません。 Office アプリには、Word、Excel、PowerPoint、OneNote、および Access などがあります。 子プロセスを作成するのは、一般的なマルウェアの動作です。特に、Office アプリを使用して悪意のある実行可能ファイルの起動またはダウンロードを試みるマクロベースの攻撃で作成されます。  
