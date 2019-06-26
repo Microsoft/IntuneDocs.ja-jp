@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: 184781a315dcaeaac9540294746a9c2cd85da917
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2bebdf712ccf325c6742e6bb326a8fb2768023b7
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041900"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251171"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Intune でエンドポイント保護設定を追加する
 
@@ -38,18 +38,18 @@ Intune でデバイスの構成プロファイルを使用し、次などのデ�
 
 ## <a name="create-a-device-profile-containing-endpoint-protection-settings"></a>エンドポイント保護設定を含むデバイス プロファイルを作成する
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=20909) にサインインします。
-3. **[デバイス構成]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+3. **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
 4. エンドポイント保護プロファイルの **[名前]** と **[説明]** を入力します。
 5. **[プラットフォーム]** ドロップダウン リストで、カスタム設定を適用するデバイス プラットフォームを選択します。 現時点では、デバイスの制限設定に対応している次のいずれかのプラットフォームを選択できます。
    - **macOS**
    - **Windows 10 以降**
-6. **[プロファイルの種類]** ドロップダウン リストで、**[Endpoint Protection]** を選択します。 
-7. 選択したプラットフォームによって構成できる設定が異なります。 以下を参照してください。
+6. **[プロファイルの種類]** ドロップダウン リストで、 **[Endpoint Protection]** を選択します。 
+7. 選択したプラットフォームによって構成できる設定が異なります。 次を参照してください。
    - [macOS の設定](endpoint-protection-macos.md)
    - [Windows 10 の設定](endpoint-protection-windows-10.md)  
 
-8. 適切な設定を構成したら、**[プロファイルの作成]** ページで **[作成]** を選択します。
+8. 適切な設定を構成したら、 **[プロファイルの作成]** ページで **[作成]** を選択します。
 
    プロファイルが作成され、プロファイルの一覧ページに表示されます。 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルの割り当て](device-profile-assign.md)に関するページを参照してください。
 

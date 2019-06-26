@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e4d5c23d598641256c196cd7217797f87f99d1c
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: bb1ddcadcac1ec9b4730a5dcd66abca111d80196
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374128"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251208"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Intune で Windows 10 のセキュリティのベースラインを作成する
 
@@ -70,7 +70,7 @@ Intune マネージド デバイスに関するセキュリティのベースラ
 
 ## <a name="create-the-profile"></a>プロファイルの作成
 
-1. [[Intune]](https://go.microsoft.com/fwlink/?linkid=20909) にサインインして、 **[デバイスのセキュリティ]**  >  **[セキュリティのベースライン (プレビュー)]** を選択します。 使用できるベースラインの一覧が表示されます。 
+1. [[Intune]](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインして、 **[デバイスのセキュリティ]**  >  **[セキュリティのベースライン (プレビュー)]** を選択します。 使用できるベースラインの一覧が表示されます。 
 
     ![構成するセキュリティ ベースラインを選択する](./media/security-baselines/available-baselines.png)
 
