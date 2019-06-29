@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6c7de15c3839548e8edf5056579eab1c0c0751a
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 59432baf0e8120cc7280b3486c4c25388a4248b4
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045255"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403773"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>グループ ポリシー オブジェクト (GPO) と Microsoft Intune ポリシーの競合を解決する
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
+
+> [!NOTE]
+> このトピックの情報は、Intune ソフトウェア クライアントを使用して PC として管理している Windows デスクトップにのみ適用されます。
 
 Intune は、Windows PC の設定を管理するためにポリシーを使用します。 たとえば、ポリシーを使用して、PC の Windows ファイアウォールに関する設定を制御できます。 多くの Intune 設定は、Windows グループ ポリシーで構成する設定と似ています。 ただし、この 2 つの設定が互いに競合することがあります。
 
