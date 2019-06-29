@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9af61c89b90a7f31654cd43a3cfc457b27e9700f
-ms.sourcegitcommit: 86aa5fefcba1e71841696b1a5e3ca5bffb1a9528
+ms.openlocfilehash: 30e869cbb0311e1855dd4dc09978505ad539970e
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67234976"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403085"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように Windows 10 (以降) のデバイスを設定する
 
@@ -57,7 +57,16 @@ ms.locfileid: "67234976"
 - **[システム ボリュームにアプリ データをインストールする]** : **[ブロック]** にすると、アプリがデバイスのシステム ボリュームにデータを格納できなくなります。 **[未構成]** (既定値) にすると、アプリによるデバイスのシステム ボリュームへのデータの格納が許可されます。
 - **[システム ドライブにアプリをインストールする]** : **[ブロック]** では、デバイスのシステム ドライブにアプリをインストールできなくなります。 **[未構成]** (既定値) にすると、デバイスのシステム ドライブへのアプリのインストールが許可されます。
 - **[ゲーム録画]** (デスクトップのみ): **[ブロック]** にすると、Windows ゲーム録画とブロードキャストが無効になります。 **[未構成]** (既定値) にすると、ゲームの録画とブロードキャストが許可されます。
-- **[ストアのアプリのみ許可する]** : **[必須]** にすると、Windows App Store のアプリのみインストールするようにエンド ユーザーに強制します。 **[未構成]** にすると、Windows App Store 以外の場所からアプリをインストールすることをエンド ユーザーに許可します。
+- **ストアのアプリのみ**: この設定は、ユーザーは、Microsoft Store 以外の場所からアプリをインストールするときに、ユーザー エクスペリエンスを決定します。 次のようなオプションがあります。
+
+  - **構成されていない**(既定値): エンドユーザーが他のポリシー設定で定義されているアプリを含む、Microsoft Store 以外の場所からアプリをインストールします。  
+  - **任意の場所**: アプリの推奨事項をオフにし、任意の場所からアプリをインストールすることができます。  
+  - **のみを格納**: 強制的にエンドユーザーのみ Microsoft Store からアプリをインストールします。
+  - **推奨事項**: Microsoft Store で利用できる web サイトからアプリをインストールするときにユーザーがストアからダウンロードするを推奨するメッセージを参照してください。  
+  - **ストアを必要に応じて**: Microsoft Store 以外の場所からアプリをインストールするときに、ユーザーに警告します。
+
+  [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
+
 - **[更新の失敗時にアプリの再起動を強制する]** : アプリが使用中の場合、更新されないことがあります。 この設定を使用して、アプリを強制的に再起動します。 **[未構成]** (既定値) にすると、アプリの強制的な再起動は行われません。 **[必須]** にすると、管理者は、特定の日付時刻、または定期スケジュールで再起動を強制できます。 **[必須]** を設定した場合は、以下も入力します。
 
   - **[開始日付/時刻]** : アプリを再起動する特定の日付時刻を選択します。

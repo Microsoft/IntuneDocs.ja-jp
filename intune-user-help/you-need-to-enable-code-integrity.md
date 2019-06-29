@@ -18,12 +18,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a10fc54fa3aa535e6dcfd2c06124fdc5b87c6a4
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 167d091f212536ed94e3f4ce0c103649e4a2e537
+ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041279"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67413822"
 ---
 # <a name="enable-code-integrity"></a>コードの整合性を有効にする
 
@@ -34,7 +34,7 @@ ms.locfileid: "67041279"
 高度なデバイスのユーザーとして自分自身を指定し、独自の手順を実行する場合は、次を参照してください。[セキュア ブートを再度有効にする](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot)します。
 
 ## <a name="additional-resources-for-it-administrators"></a>IT 管理者向けの他のリソース  
-Intune 管理者し Intune のデバイス正常性のコンプライアンス設定の詳細をする場合を参照してください。 [Intune で Windows 10 デバイス用のデバイス コンプライアンス ポリシーを追加](https://docs.microsoft.com/intune/compliance-policy-create-windows)します。 Intune で実行できるコンプライアンス アクションの詳細については、次を参照してください。、 [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#a-href-idtake-policy-actionastep-8-take-appropriate-policy-action-based-on-evaluation-results)します。  
+Intune 管理者し Intune のデバイス正常性のコンプライアンス設定の詳細をする場合を参照してください。 [Intune で Windows 10 デバイス用のデバイス コンプライアンス ポリシーを追加](https://docs.microsoft.com/intune/compliance-policy-create-windows)します。 Intune で実行できるコンプライアンス アクションの詳細については、次を参照してください。、 [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results)します。  
 
 ## <a name="next-steps"></a>次の手順  
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

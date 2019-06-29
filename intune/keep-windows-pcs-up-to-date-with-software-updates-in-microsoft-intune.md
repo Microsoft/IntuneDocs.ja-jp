@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56bbe6d8af43693814a90351acb2f400cff92025
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3cc84d8215a841b9ff8a70a6b6307d3452696cb0
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046991"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402997"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Microsoft Intune でソフトウェア更新プログラムを使用して Windows PC を最新の状態に保つ
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
+
+> [!NOTE]
+> このトピックの情報は、Intune ソフトウェア クライアントを使用して PC として管理している Windows デスクトップにのみ適用されます。 Windows Pc の更新プログラムがモバイル デバイスとして登録して管理する場合は、「 [Intune でソフトウェア更新プログラム管理](windows-update-for-business-configure.md)します。
 
 Microsoft Intune は、さまざまな方法でマネージド コンピューターをセキュリティで保護します。たとえば、ソフトウェア更新プログラムの管理機能では、最新の修正プログラムやソフトウェア更新プログラムを迅速にインストールして、コンピューターを最新の状態に保ちます。
 
@@ -50,7 +53,7 @@ Microsoft Intune は、さまざまな方法でマネージド コンピュー�
 
 2.  更新設定の **Microsoft Intune エージェントの設定** ポリシーを構成して展開します。 推奨される設定を使用することも、設定をカスタマイズすることもできます。 ポリシーの作成および展開方法の詳細については、「[Microsoft Intune コンピューター クライアントを使用した一般的な Windows PC 管理タスク](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)」を参照してください。
 
-次の表に、ポリシーに構成できる値と、ポリシーをカスタマイズしない場合に使用される推奨値を示します。 これらの設定は、**[更新プログラム]** セクションに表示されます。
+次の表に、ポリシーに構成できる値と、ポリシーをカスタマイズしない場合に使用される推奨値を示します。 これらの設定は、 **[更新プログラム]** セクションに表示されます。
 
   |ポリシー設定|説明|
     |------------------|--------------------|

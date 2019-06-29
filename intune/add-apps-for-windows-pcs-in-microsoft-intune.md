@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86cbea29233d792006bce68fcd2a36fb1a7ec0a6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3e24bd79fbceba1834d02af8512e5dd52676d471
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050193"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403302"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Intune ソフトウェア クライアントを実行している Windows PC にアプリを追加する
 
@@ -103,4 +103,4 @@ PC にアプリをインストールするには、ユーザー操作なしで�
 
 アプリを作成したら、次はアプリを展開します。 詳細については、「[Microsoft Intune を使用してアプリをグループに割り当てる方法](apps-deploy.md)」を参照してください。
 
-Windows PC にソフトウェアをデプロイする際のヒントとテクニックに関する詳細情報を読むには、「[Support Tip: Best Practices for Intune Software Distribution to PC’s](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/)」(サポートのヒント: PC への Intune ソフトウェア配布のベスト プラクティス) というブログの投稿をご覧ください。
+Windows PC にソフトウェアをデプロイする際のヒントとテクニックに関する詳細情報を読むには、「[Support Tip: Best Practices for Intune Software Distribution to PC’s](https://support.microsoft.com/en-US/help/2583929)」(サポートのヒント: PC への Intune ソフトウェア配布のベスト プラクティス) というブログの投稿をご覧ください。

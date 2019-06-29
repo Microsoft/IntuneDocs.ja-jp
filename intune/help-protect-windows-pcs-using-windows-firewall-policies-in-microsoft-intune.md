@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b289f9edc1522333f70308a6979b2ea2e71b17c6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f3b552c42a7a84ad8099a406bfff2db575785915
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047533"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403010"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Microsoft Intune で Windows ファイアウォール ポリシーを使用して Windows PC を保護する
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
+
+> [!NOTE]
+> このトピックの情報は、Intune ソフトウェア クライアントを使用して PC として管理している Windows デスクトップにのみ適用されます。 Windows Pc 用ファイアウォールの設定がモバイル デバイスとして登録して管理する場合は、「 [Intune での endpoint protection 設定を追加する](endpoint-protection-configure.md)します。
 
 Microsoft Intune を使用すると、Intune クライアントで管理する Windows PC をさまざまな方法で保護することができます。 たとえば、PC で Windows ファイアウォールの設定を構成できるようにするポリシーを提供できます。
 

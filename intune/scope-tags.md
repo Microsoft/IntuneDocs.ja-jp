@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57a14e1e3c4caea570667096fec71cecf2d88ddf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ba1d7669e80fd91398f41c57ca2d27ce78a06041
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045184"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403785"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>分散 IT にロールベースのアクセス制御 (RBAC) とスコープのタグを使用する
 
@@ -42,8 +42,10 @@ ms.locfileid: "66045184"
 
     ![スコープのタグ作成のスクリーンショット](./media/scope-tags/create-scope-tag.png)
 
-2. **名前**と**説明**を入力します。
-3. **[作成]** を選択します。
+3. 特定のグループ内のすべてのデバイスを実行する場合に、選択**スコープのタグを選択したグループ内のすべてのデバイスに割り当てる**します。
+    1. **含めるグループを選択**ページで、このスコープのタグを割り当てるデバイスを含むグループを選択します。
+    2. **[選択]** を選択します。
+4. **[作成]** を選択します。
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>スコープのタグをロールに割り当てるには
 
