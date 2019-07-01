@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/20/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,18 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bed0fda1c19df181dacb36c832a2a4c94e61aff
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 9314617640d0bfd7f3a7b0cd0ba572e99ede53f9
+ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402661"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298397"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Intune でのポリシーとプロファイルのトラブルシューティング
 
 Microsoft Intune には、トラブルシューティング機能がいくつか組み込まれています。 これらの機能を使用して、お使いの環境でのコンプライアンス ポリシーと構成プロファイルをトラブルシューティングすることができます。
 
 この記事では、一般的なトラブルシューティング手法の一覧を示し、発生する可能性があるいくつかの問題について説明します。
+
+## <a name="check-tenant-status"></a>テナントの状態を確認してください。
+チェック、[テナントの状態](tenant-status.md)し、サブスクリプションがアクティブであることを確認します。 アクティブなインシデントや、ポリシーまたはプロファイルの展開に影響を与える可能性アドバイザリの詳細を表示することもできます。
 
 ## <a name="use-built-in-troubleshooting"></a>組み込みのトラブルシューティングを使用する
 
@@ -113,6 +116,13 @@ Microsoft Intune には、トラブルシューティング機能がいくつか
 > [!NOTE]
 > 制限レベルが異なる 2 つのポリシーを同じデバイスまたはユーザーに適用すると、より厳しい方のポリシーが適用されます。
 
+## <a name="policy-troubleshooting-resources"></a>ポリシーのトラブルシューティングに関するリソース
+
+- [IOS または Android のポリシーをデバイスに適用されないトラブルシューティング](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154)(別の Microsoft サイトを開きます)
+- [Windows 10 の Intune ポリシーのエラーのトラブルシューティング](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures/)(ブログが表示されます)
+- [Windows 10 の CSP のカスタム設定のトラブルシューティングを行う](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune)(別の Microsoft サイトを開きます)
+- [Windows 10 のグループ ポリシーと Intune MDM ポリシー](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (別の Microsoft サイトを開きます)
+
 ## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>アラート: アクセス ルールを Exchange に保存できませんでした
 
 **問題**: 管理コンソールが「 **アクセス ルールを Exchange に保存できませんでした** 」のアラートを受信する。
@@ -125,11 +135,13 @@ Microsoft Intune には、トラブルシューティング機能がいくつか
 
 Windows Phone デバイスから、MDM または EAS を使用して設定されたセキュリティ ポリシーのセキュリティを一度設定した後に緩くすることはできません。 たとえば、**パスワードの最小文字数** を 8 に設定し、次に 4 に減らしてみます。 より制限の厳しいポリシーがデバイスに適用されます。
 
+Windows 10 デバイスは、ポリシー (配置を停止) の割り当てを解除するときにセキュリティ ポリシーを削除することはできません。 割り当てられた、ポリシーのままにし、既定値にセキュリティ設定を変更する必要があります。
+
 ポリシーを安全度の低い値に変更する場合、デバイスのプラットフォームによっては、セキュリティ ポリシーをリセットしなければならない場合があります。
 
-たとえば、Windows で、デスクトップを右からスワイプして、 **[チャーム]** バーを開きます。 **[設定]**  >  **[コントロール パネル]**  >  **[ユーザー アカウント]** を選択します。 左側で **[セキュリティ ポリシーのリセット]** リンクを選択し、 **[ポリシーのリセット]** を選択します。
+たとえば、Windows 8.1 で、デスクトップを右からスワイプして、 **[チャーム]** バーを開きます。 **[設定]**  >  **[コントロール パネル]**  >  **[ユーザー アカウント]** を選択します。 左側で **[セキュリティ ポリシーのリセット]** リンクを選択し、 **[ポリシーのリセット]** を選択します。
 
-Android、iOS、Windows Phone 8.1 などの他の MDM デバイスでは、制限の緩いポリシーを適用するには、いったんデバイスを削除し、再登録しなければならない場合があります。
+Android、iOS、Windows Phone 8.1 などの他のプラットフォームは、より制限の緩いポリシーを適用するために、いったん削除し、再登録しなければならない場合があります。
 
 [デバイス登録に関するトラブルシューティング](troubleshoot-device-enrollment-in-intune.md)に関するページが役に立つ場合があります。
 
@@ -160,6 +172,7 @@ Intune ソフトウェア クライアントで管理されている Windows PC 
 ローカル システム上の時間が 5 分以上ずれている場合に発生します。 ローカル コンピューターの時間が同期されていない場合は、タイム スタンプが有効でないためセキュリティで保護されたトランザクションが失敗します。
 
 この問題を解決するには、ローカル システム時刻をインターネットの時刻にできるだけ近く設定します。 または、ネットワーク上のドメイン コントローラーの時刻に設定します。
+
 
 ## <a name="next-steps"></a>次の手順
 

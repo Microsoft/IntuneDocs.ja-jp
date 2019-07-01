@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/17/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,20 +17,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0fe37deb63457fef869df0f7263970a4e53cb29
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 2246e3f6faa853f620327558a7faf4dc9d6a6e85
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402719"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197509"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Microsoft Intune の電子メール プロファイルに関する一般的な問題と解決方法
 
 一般的な電子メール プロファイルに関する問題と、そのトラブルシューティングと解決方法について説明します。
 
+## <a name="what-you-need-to-know"></a>知っておく必要がある情報
+
+- デバイスを登録したユーザーの電子メール プロファイルが展開されます。 電子メール プロファイルを構成するには、Intune は、登録時に、ユーザーの電子メール プロファイルで Azure Active Directory (AD) のプロパティを使用します。 [電子メールの設定をデバイスに追加](email-settings-configure.md)適切なリソースがあります。
+- Configuration Manager のハイブリッドから Intune スタンドアロンへの移行後 Configuration Manager のハイブリッドからの電子メール プロファイルはデバイスに 7 日間にとどまります。 これは通常の動作です。 すぐに削除する電子メール プロファイルが必要な場合にお問い合わせください。 [Intune サポート](get-support.md)します。
+- Android Enterprise は、Gmail または管理対象の Google Play ストアを使用した作業の 9 を展開します。 [Managed Google Play のアプリを追加する](apps-add-android-for-work.md)の手順を示します。
+- Microsoft Outlook for iOS と Android には、電子メール プロファイルをサポートしていません。 代わりに、アプリ構成ポリシーを展開します。 詳細については、次を参照してください。 [Outlook 設定](app-configuration-policies-outlook.md)します。
+- デバイス グループ (ユーザー グループではなく) を対象とする電子メール プロファイルをデバイスに配信可能性があります。 デバイスのプライマリ ユーザーが対象とするデバイスに動作します。 電子メール プロファイルには、ユーザー証明書が含まれている場合は、ターゲット ユーザー グループを必ず。
+- ユーザーは、電子メール プロファイルのパスワードの入力を繰り返し要求される場合があります。 このシナリオでは、電子メール プロファイルで参照されているすべての証明書を確認します。 ユーザーに証明書のいずれかの対象はない場合、Intune は、電子メール プロファイルの展開を再試行します。
+
 ## <a name="device-already-has-an-email-profile-installed"></a>デバイスに電子メール プロファイルが既にインストールされている
 
-ユーザーが Intune に登録する前に電子メール プロファイルを作成した場合、Intune の電子メール プロファイルが期待どおりに機能しない可能性があります。
+ユーザーは、Intune または Office 365 の MDM で登録する前に、電子メール プロファイルを作成する場合は、Intune によって展開された電子メール プロファイルが正常に動作しない可能性があります。
 
 - **iOS**: Intune は、ホスト名と電子メール アドレスに基づいて既存の重複する電子メール プロファイルを検出します。 ユーザーが作成した電子メール プロファイルがあると、Intune で作成されたプロファイルが展開されません。 これは一般的な問題です。iOS ユーザーは通常、電子メール プロファイルを作成し、それから登録するためです。 ポータル サイト アプリには、ユーザーが準拠していないと表示され、電子メール プロファイルを削除するようにユーザーが求められる場合があります。
 
@@ -50,19 +59,16 @@ Samsung KNOX の EAS プロファイルおよびソース ポリシーの構成�
 
 ## <a name="unable-to-send-images-from--email-account"></a>電子メール アカウントから画像を送信できない
 
-Azure クラシック ポータルでの Intune に適用されます。
-
 電子メール アカウントを自動的に構成したユーザーが、自分のデバイスから画像を送信することができません。 このシナリオは、 **[サードパーティ アプリケーションからの電子メール送信を許可する]** が有効ではない場合に発生する可能性があります。
 
 ### <a name="intune-solution"></a>Intune での解決方法
 
-1. Microsoft Intune 管理コンソールで、 **[ポリシー]** ワークロード > **[構成ポリシー]** の順に選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+2. **[デバイス構成]**  >  **[プロファイル]** を選択します。
+3. 電子メール プロファイルを選択 >**プロパティ** > **設定**します。
+4. 設定、**電子メールをサードパーティ製のアプリケーションから送信されるようにする**設定**を有効にする**します。
 
-2. 電子メール プロファイルを選択し、 **[編集]** を選択します。
-
-3. **[サード パーティ アプリケーションから電子メールを送信できるようにする]** をオンにします。
-
-### <a name="configuration-manager-integrated-with-intune-solution"></a>Windows Intune と統合された Configuration Manager
+### <a name="configuration-manager-hybrid"></a>Configuration Manager ハイブリッド
 
 1. Configuration Manager コンソール > **[資産とコンプライアンス]** の順に開きます。
 
