@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/31/2019
+ms.date: 06/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,19 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c14568a0581220cf5941984645bd0b9044e00c1
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 756fafc02a6d64b1495a838ab8eee4130ee77361
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749955"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389339"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 
-週ごとにまとめた、Microsoft Intune の新機能をご覧ください。 [今後の変更](in-development.md)、[重要なお知らせ](#notices)、[過去のリリース](whats-new-archive.md)に関する情報も確認できます。 
+週ごとにまとめた、Microsoft Intune の新機能をご覧ください。 また、[重要なお知らせ](#notices)、[過去のリリース](whats-new-archive.md)、および [Intune サービスの更新プログラムのリリース方法](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)に関する情報もあります。 
 
 > [!Note]
+> 個々の[マンスリー更新プログラム](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728)は、展開に最大 3 日かかることがあります。順序は次のとおりです。
+> - 1 日目:アジア太平洋 (APAC)
+> - 2 日目:ヨーロッパ、中東、アフリカ (EMEA)
+> - 3 日目:北米
+> 
 > いくつかの機能については、数週間にわたってロールアウトされ、一部のお客様は最初の週にご利用になれない可能性があります。
+>
+> リリースの今後の機能の一覧については、[開発中のページ](in-development.md)を参照してください。
 
 **RSS フィード**:ご自身のフィード リーダーに次の URL をコピーして貼り付けることで、このページの更新時に通知を受け取ることができます。`https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
 
@@ -45,6 +52,29 @@ ms.locfileid: "66749955"
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-june-17-2019"></a>2019 年 6 月 17 日の週   
+
+### <a name="app-management"></a>アプリ管理
+
+#### <a name="new-features-in-microsoft-intune-app"></a>Microsoft Intune アプリの新機能
+Android 用 Microsoft Intune アプリ (プレビュー) に新機能が追加されました。 フル マネージド Android デバイスのユーザーは次のことが可能になりました。  
+
+* Intune ポータル サイトまたは Microsoft Intune のアプリを介して登録したデバイスを表示して管理する。    
+* サポートが必要な場合はお客様の組織に問い合わせてください。    
+* Microsoft にフィードバックを送信する。    
+* 組織で設定されている場合は、使用条件を表示する。  
+
+## <a name="week-of-june-10-2019"></a>2019 年 6 月 10 日の週 
+
+### <a name="app-management"></a>アプリ管理  
+
+#### <a name="new-sample-apps-showing-intune-sdk-integration-available-on-github----2653471---"></a>GitHub で入手できる Intune SDK 統合を示す新しいサンプル アプリ <!-- 2653471 -->
+msintuneappsdk GitHub アカウントで、iOS (Swift)、Android、Xamarin.iOS、Xamarin Forms、および Xamarin.Android 用の新しいサンプル アプリケーションが追加されました。 これらのアプリの目的は、既存のドキュメントを補完し、Intune APP SDK をお客様のモバイル アプリに統合する方法のデモを提供することです。 Intune SDK の追加のガイダンスが必要なアプリ開発者の場合は、次のリンク先のサンプルを参照してください。
+- [Chatr](https://github.com/msintuneappsdk/Chatr-Sample-Intune-iOS-App) - 仲介型認証に Azure Active Directory 認証ライブラリ (ADAL) を使用するネイティブ iOS (Swift) インスタント メッセージング アプリ。
+- [Taskr](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Android-App) - 仲介型認証に ADAL を使用するネイティブの Android todo リスト アプリ。
+- [Taskr](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps) - 仲介型認証に ADAL を使用する Xamarin.Android の todo リスト アプリ。このリポジトリには Xamarin.Forms アプリもあります。
+- [Xamarin.iOS サンプル アプリ](https://github.com/msintuneappsdk/sample-intune-xamarin-ios) - 必要最低限の Xamarin.iOS サンプル アプリ。
 
 ## <a name="week-of-may-27-2019"></a>2019 年 5 月 27 日の週 
 
@@ -192,7 +222,7 @@ iOS および Android デバイス上では、Outlook 内で既定の署名を�
 F5 は、iOS 上の Intune に、F5 Access で NAC 機能を許可する BIG-IP 13 の更新プログラムをリリースしました。 この機能を使用するには、以下を行います。
 
 - BIG-IP を 13.1.1.5 refresh に更新します。 BIG-IP 14 はサポートされていません。
-- NAC 用に Intune に BIG-IP を統合します。 「[Overview:Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89)」 (概要: エンドポイント管理システムを使用したデバイス ポスチャ チェック用の APM の構成) の手順。
+- NAC 用に Intune に BIG-IP を統合します。 「[Overview:Configuring APM for device posture checks with endpoint management systems](https://techdocs.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html)」 (概要: エンドポイント管理システムを使用したデバイス ポスチャ チェック用の APM の構成) の手順。
 - Intune の VPN プロファイルの **Enable Network Access Control (NAC)** 設定を確認します。
 
 利用できる設定については、[iOS デバイスへの VPN 設定の構成](vpn-settings-ios.md)に関する記事を参照してください。
@@ -562,7 +592,7 @@ macOS
 
 #### <a name="intune-conditional-access-ui-update------2432313-----"></a>Intune の条件付きアクセスの UI の更新   <!-- 2432313   -->
 Intune コンソール内の条件付きアクセスの UI の改善を行いました。 たとえば、次のとおりです。
--  Intune の*条件付きアクセス* ブレードを Azure Active Directory のブレードに置き換え。 これにより、Azure AD テクノロジのまま[条件付きアクセス](conditional-access.md)のすべての設定と構成に Intune コンソール内からアクセスできるようになります。 
+-  Intune の "*条件付きアクセス*" ブレードを Azure Active Directory のブレードに置き換え。 これにより、Azure AD テクノロジのまま[条件付きアクセス](conditional-access.md)のすべての設定と構成に Intune コンソール内からアクセスできるようになります。 
 - *[オンプレミス アクセス]* ブレードの名前を *[Exchange へのアクセス]* に変更し、 *[Exchange サービス コネクタ]* の設定をこの名前変更されたブレードに再配置しました。  この変更により、[Exchange Online とオンプレミスに関する詳細を構成および監視する](exchange-connector-install.md)場所が統合されました。  
 
 #### <a name="kiosk-browser-and-microsoft-edge-browser-apps-can-run-on-windows-10-devices-in-kiosk-mode----2935135-----"></a>キオスク ブラウザーと Microsoft Edge ブラウザー アプリを、キオスク モードの Windows 10 デバイスで実行できる <!-- 2935135   -->
@@ -1109,7 +1139,7 @@ Samsung Knox Mobile Enrollment について、Android デバイス所有者管�
 - 勤務時間外に実行される再起動に対して表示する再起動警告メッセージを構成できるようになりました。これにより、BYOD シナリオがサポートされます。
 
 #### <a name="group-windows-autopilot-enrolled-devices-by-correlator-id----2075110---"></a>Windows Autopilot に登録されたデバイスを correlator ID によってグループ化する <!-- 2075110 -->
-Configuration Manager で [既存デバイス向け Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) を使用することによって登録するとき、correlator ID による Windows デバイスのグループ化が Intune によってサポートされます。 correlator ID は、Autopilot 構成ファイルのパラメーターです。 Intune では [Azure AD デバイス属性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) が等しい "OfflineAutopilotprofile-<correlator ID>" に自動的に設定されます。 これにより、オフライン Autopilot 登録用の enrollmentprofileName 属性を介して、correlator ID に基づく任意の Azure AD 動的グループを作成することができます。 詳しくは、「[既存のデバイス向けの Windows Autopilot](enrollment-autopilot.md#windows-autopilot-for-existing-devices)」をご覧ください。
+Configuration Manager で [既存デバイス向け Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) を使用することによって登録するとき、correlator ID による Windows デバイスのグループ化が Intune によってサポートされます。 correlator ID は、Autopilot 構成ファイルのパラメーターです。 Intune では [Azure AD デバイス属性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices) が等しい "OfflineAutopilotprofile-<correlator ID>" に自動的に設定されます。 これにより、オフライン Autopilot 登録用の enrollmentprofileName 属性を介して、correlator ID に基づく任意の Azure AD 動的グループを作成することができます。 詳しくは、「[既存のデバイス向けの Windows Autopilot](enrollment-autopilot.md#windows-autopilot-for-existing-devices)」をご覧ください。
 
 #### <a name="intune-app-protection-policies----2984657---"></a>Intune のアプリ保護ポリシー <!-- 2984657 -->
 Intune アプリ保護ポリシーを使用すると、Microsoft Outlook や Microsoft Word など、Intune で保護されているアプリに対するさまざまなデータ保護設定を構成できます。 [iOS](app-protection-policy-settings-ios.md) と [Android](app-protection-policy-settings-android.md) 両方でのこれらの設定のルック アンド フィールが、個々の設定を見つけやすいように変更されました。 ポリシー設定にはカテゴリが 3 つあります。

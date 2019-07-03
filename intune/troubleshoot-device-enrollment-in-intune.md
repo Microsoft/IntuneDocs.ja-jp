@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6175fca13f1883338b7f5858538728132183b8db
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 063a288c99f3f773b63bd6fe0040e200a754c888
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040596"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046302"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune でのデバイス登録に関するトラブルシューティング
 
@@ -143,7 +143,7 @@ ms.locfileid: "66040596"
 - 組織内にユーザーの UPN サフィックス用のトップ レベル ドメイン (@contoso.com、@fabrikam.com など) を複数持っている。
 
 
-[AD FS 2.0 用ロールアップ](http://support.microsoft.com/kb/2607496)が <strong>SupportMultipleDomain</strong> スイッチと連携することで、AD FS 2.0 サーバーを追加しなくても、AD FS サーバーはこのような状況に対応できます。 詳細については、[このブログ](https://blogs.technet.microsoft.uucom/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)を参照してください。
+[AD FS 2.0 用ロールアップ](http://support.microsoft.com/kb/2607496)が <strong>SupportMultipleDomain</strong> スイッチと連携することで、AD FS 2.0 サーバーを追加しなくても、AD FS サーバーはこのような状況に対応できます。 詳細については、[このブログ](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)を参照してください。
 
 
 ## <a name="android-issues"></a>Android の問題
@@ -152,7 +152,7 @@ ms.locfileid: "66040596"
 
 次の表は、Intune に Android デバイスを登録しているときに、エンド ユーザーに表示される可能性があるエラーの一覧です。
 
-|エラー メッセージ|問題|解決方法|
+|エラー メッセージ|問題|解決策|
 |---|---|---|
 |**IT 管理者がアクセスするためのライセンスを割り当てる必要があります**<br>IT 管理者は、このアプリを使用するためのアクセス許可を付与していません。 IT 管理者から支援を受けるか、後でやり直してください。|ユーザーのアカウントに必要なライセンスがないため、このデバイスを登録することはできません。|ユーザーは自分のデバイスを登録する前に、必要なライセンスを割り当てられている必要があります。 このメッセージは、モバイル デバイス管理機関に必要なライセンスの種類をユーザーが持っていないことを示します。 たとえば、次の両方に該当する場合はこのエラーが表示されます。<ol><li>Intune がモバイル デバイス管理機関として設定されている。</li><li>System Center 2012 R2 Configuration Manager ライセンスを使用している。</li></ol>詳細については、「[ユーザー アカウントに Intune のライセンスを割り当てる](/intune/licenses-assign)」を参照してください。|
 |**IT 管理者は、MDM 機関を設定する必要があります**<br>IT 管理者が、MDM 機関を設定していないようです。 IT 管理者から支援を受けるか、後でやり直してください。|モバイル デバイス管理機関が定義されていません。|Intune でモバイル デバイス管理機関が設定されていません。 [モバイル デバイス管理機関を設定する](/intune/mdm-authority-set)方法に関する情報を参照してください。|
@@ -265,7 +265,7 @@ Android デバイスでは、[SSL のサーバー ハロー](https://technet.mic
 ### <a name="ios-enrollment-errors"></a>iOS の登録エラー
 次の表は、Intune に iOS デバイスを登録している最中にエンド ユーザーに表示される可能性があるエラーの一覧です。
 
-|エラー メッセージ|問題|解決方法|
+|エラー メッセージ|問題|解決策|
 |-------------|-----|----------|
 |NoEnrollmentPolicy|登録ポリシーが見つかりません|Apple Push Notification Services (APNs) 証明書などのすべての登録前提条件が構成済みであること、"プラットフォームとしての iOS" が有効であることを確認します。 手順については、「[iOS および Mac のデバイス管理をセットアップする](ios-enroll.md)」を参照してください。|
 |DeviceCapReached|登録されているモバイル デバイス数が多すぎます。|別のモバイル デバイスを登録する前に、ユーザーは現在登録されているモバイル デバイスの 1 つをポータル サイトから削除する必要があります。 使用しているデバイスの種類ごとの手順([Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android)、[iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios)、[Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows)) を参照してください。|
@@ -305,7 +305,7 @@ Android デバイスでは、[SSL のサーバー ハロー](https://technet.mic
 ### <a name="verify-ws-trust-13-is-enabled"></a>WS-Trust 1.3 が有効になっていることを確認する
 **問題** Device Enrollment Program (DEP) iOS デバイスを登録できません
 
-ユーザー アフィニティが設定された DEP デバイスを登録するには、ユーザー トークンを要求するよう WS-Trust 1.3 Username/Mixed エンドポイントを有効にする必要があります。 Active Directory は既定でこのエンドポイントを有効にします。 有効なエンドポイントの一覧を表示するには、Get-AdfsEndpoint PowerShell コマンドレットを使用し、trust/13/UsernameMixed エンドポイントを探します。 たとえば、次のように入力します。
+ユーザー アフィニティが設定された DEP デバイスを登録するには、ユーザー トークンを要求するよう WS-Trust 1.3 Username/Mixed エンドポイントを有効にする必要があります。 Active Directory は既定でこのエンドポイントを有効にします。 有効なエンドポイントの一覧を表示するには、Get-AdfsEndpoint PowerShell コマンドレットを使用し、trust/13/UsernameMixed エンドポイントを探します。 次に例を示します。
 
       Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
 
@@ -445,7 +445,7 @@ iOS 登録エラーの一覧は、「[Troubleshooting iOS device enrollment prob
 
 ## <a name="pc-issues"></a>PC の問題
 
-|エラー メッセージ|問題|解決方法|
+|エラー メッセージ|問題|解決策|
 |---|---|---|
 |**IT 管理者がアクセスするためのライセンスを割り当てる必要があります**<br>IT 管理者は、このアプリを使用するためのアクセス許可を付与していません。 IT 管理者から支援を受けるか、後でやり直してください。|ユーザーのアカウントに必要なライセンスがないため、このデバイスを登録することはできません。|ユーザーは自分のデバイスを登録する前に、必要なライセンスを割り当てられている必要があります。 このメッセージは、モバイル デバイス管理機関に必要なライセンスの種類をユーザーが持っていないことを示します。 たとえば、次の両方に該当する場合はこのエラーが表示されます。 <ol><li>Intune がモバイル デバイス管理機関として設定されている。</li><li>System Center 2012 R2 Configuration Manager ライセンスを使用している。</li></ol>[ユーザー アカウントに Intune のライセンスを割り当てる](https://docs.microsoft.com/intune/licenses-assign)方法に関する情報を参照してください。|
 

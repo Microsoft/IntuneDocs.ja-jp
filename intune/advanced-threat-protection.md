@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78c34345804f600aa62ff5e25ef27a23591e0f5c
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: 186ba1a8813e84b89a23c8aabb3a4ef0bd392da4
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819875"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045915"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Intune で条件付きアクセスによる Windows Defender ATP の準拠を強制する
 
@@ -126,7 +126,7 @@ Windows Defender には、[Windows Defender ATP サービス](https://docs.micro
 5. グループにポリシーを展開するには、 **[保存]** を選択します。 ポリシーの対象となっているユーザー デバイスは、コンプライアンスが評価されます。
 
 ## <a name="create-a-conditional-access-policy"></a>条件付きアクセス ポリシーを作成する
-デバイスが準拠していない*場合* は、条件付きアクセス ポリシーによって、リソースへのアクセスがブロックされます。 したがって、デバイスが脅威レベルを超えている場合は、SharePoint や Exchange Online などの企業リソースへのアクセスをブロックすることができます。  
+デバイスが準拠していない "*場合*" は、条件付きアクセス ポリシーによって、リソースへのアクセスがブロックされます。 したがって、デバイスが脅威レベルを超えている場合は、SharePoint や Exchange Online などの企業リソースへのアクセスをブロックすることができます。  
 
 > [!TIP]  
 > 条件付きアクセスは、Azure Active Directory (Azure AD) テクノロジです。 *Intune* からアクセスされる条件付きアクセス ノードは、*Azure AD* からアクセスされるノードと同じです。  
@@ -147,7 +147,7 @@ Windows Defender には、[Windows Defender ATP サービス](https://docs.micro
 
 6. **[ポリシーを有効にする]** 、 **[作成]** の順に選択して変更を保存します。
 
-「[条件付きアクセスとは](conditional-access.md)」は適切なリソースです。
+「[条件付きアクセスとは](conditional-access.md)」はお勧めのリソースです。
 
 ## <a name="monitor-device-compliance"></a>デバイス コンプライアンスを監視する
 次に、Windows Defender ATP コンプライアンス ポリシーを持つデバイスの状態を監視します。

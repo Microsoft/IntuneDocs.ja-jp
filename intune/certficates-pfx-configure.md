@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 06/19/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1119a5681033574ec0a114442b122990da872bf
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 985ca70dba2a5a486947bd2de08e7f8934e90d75
+ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749812"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67263724"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune で PKCS 証明書を構成して使用する
 
@@ -278,8 +278,6 @@ VPN、WiFi、またはその他のリソースを使用してデバイスを認�
 
 プロファイルは作成されましたが、まだ何も行われていません。 次に、[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
 
-[SCEP 証明書を使用](certificates-scep-configure.md)するか、[Symantec PKI マネージャー Web サービスから PKCS 証明書を発行](certificates-symantec-configure.md)します。
+[SCEP 証明書を使用](certificates-scep-configure.md)するか、[Digicert PKI マネージャー Web サービスから PKCS 証明書を発行](certificates-digicert-configure.md)します。
 
-[NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "Azure Portal で Intune に移動して信頼された証明書用の新しいプロファイルを作成する"
-[ProfileSettings]: ./media/certificates-pfx-configure-profile-fill.png "プロファイルを作成して信頼された証明書をアップロードする"
-[ConnectorDownload]: ./media/certificates-download-connector.png "Azure Portal から Certificate Connector をダウンロードする"  
+
