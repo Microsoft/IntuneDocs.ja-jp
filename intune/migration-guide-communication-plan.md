@@ -16,17 +16,17 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73cdd0f802ce3b52a566bbdddd7cf5cca2e2bef2
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: d207d1ac51da5b34f48aeffd83791bdbb40bf971
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044609"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494575"
 ---
 # <a name="plan-communications"></a>通信手段の計画 
 情報伝達計画は、Intune 移行における重要な要素です。 次のツールとテンプレートは、エンド ユーザーを教育する際に役立つように提供されます。 Intune 導入キットには、電子メール テンプレート、Intune 登録ガイド、およびエンド ユーザー登録のための説明ビデオへのリンクが含まれています。  
 
-ダウンロード:[Intune 導入キット](http://aka.ms/IntuneAdoptionKit)
+ダウンロード:[Intune 導入キット](https://aka.ms/IntuneAdoptionKit)
 
 ## <a name="email-templates"></a>電子メール テンプレート 
 次のメール通信の計画をお勧めします。 情報伝達計画に適用できるテンプレートが提供されています。

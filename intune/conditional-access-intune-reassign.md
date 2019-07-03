@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4fa42a52e104ef1c9cf13c8490159f3dbb2efed
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: dbebcb495298f3e8b17007d1fb00f0362ead4ab8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045333"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530665"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>条件付きアクセス ポリシーを Intune クラシック ポータルから Azure portal に再割り当てする
 
@@ -81,7 +81,7 @@ Azure Portal の **[Intune アプリ保護]** ブレードで、管理者は、I
 3. ポリシーの名前を指定します。
 
 4. **[割り当て]** セクションで、新しい条件付きアクセス ポリシーの対象として **[ユーザーとグループ]** を選びます。
-    
+
     ![Intune ポータルと Azure portal のユーザー グループ UI を比較する画像](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 

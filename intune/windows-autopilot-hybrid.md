@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb9d1f52ccb147dc9a412f3cb7b601e3b18f214a
-ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
+ms.openlocfilehash: 0bf75aca7035eb2873f84f76d3c9ee0e00df7fb3
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389320"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494527"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Intune と Windows Autopilot を使用して Hybrid Azure AD 参加済みデバイスをデプロイする
 Intune と Windows Autopilot を使用して、Hybrid Azure Active Directory (Azure AD) 参加済みデバイスを設定できます。 そのためには、この記事の手順のようにします。
@@ -163,7 +163,7 @@ Windows Server では既定で、Internet Explorer セキュリティ強化の�
 
 ### <a name="register-devices-from-an-oem"></a>OEM からデバイスを登録する
 
-新しいデバイスを購入する場合、OEM によってはデバイスを登録できます。 詳しくは、[Windows Autopilot のページ](http://aka.ms/WindowsAutopilot)をご覧ください。
+新しいデバイスを購入する場合、OEM によってはデバイスを登録できます。 詳しくは、[Windows Autopilot のページ](https://aka.ms/WindowsAutopilot)をご覧ください。
 
 "*登録*" が済んだ Autopilot デバイスは、Intune に登録される前に、次の 3 つの場所に表示されます (名前はシリアル番号に設定されます)。
 - Azure portal の Intune の **[Autopilot デバイス]** ウィンドウ。 **[デバイスの登録]**  >  **[Windows の登録]**  >  **[デバイス]** を選択します。

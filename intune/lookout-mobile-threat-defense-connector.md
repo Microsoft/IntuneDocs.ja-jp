@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3566d144abad563ead64c124e128c221e725a25c
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: a6dfce050726cfddadc493f73c91701021dc21ea
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045707"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529818"
 ---
 # <a name="lookout-mobile-endpoint-security-connector-with-intune"></a>Lookout Mobile Endpoint Security コネクタと Intune
 
@@ -98,7 +98,7 @@ Man-in-the-middle 攻撃など、ネットワークに対する脅威を検出�
 
 ## <a name="next-steps"></a>次の手順
 このソリューションを実装するために実行する必要がある主な手順を次に示します。
-1.  [Lookout 統合を設定する](lookout-mtd-connector-integration.md)
-2.  [Intune で Mobile Endpoint Security を有効にする](mtd-connector-enable.md)
-3.  [Lookout for Work アプリを追加して割り当てる](mtd-apps-ios-app-configuration-policy-add-assign.md)
-4.  [Lookout デバイス コンプライアンス ポリシーを構成する](mtd-device-compliance-policy-create.md)
+1. [Lookout 統合を設定する](lookout-mtd-connector-integration.md)
+2. [Intune で Mobile Endpoint Security を有効にする](mtd-connector-enable.md)
+3. [Lookout for Work アプリを追加して割り当てる](mtd-apps-ios-app-configuration-policy-add-assign.md)
+4. [Lookout デバイス コンプライアンス ポリシーを構成する](mtd-device-compliance-policy-create.md)

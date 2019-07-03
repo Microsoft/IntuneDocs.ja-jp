@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3400169aab9598624216fcbc9ef7694e1d5441cc
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: c2e8c475cd52e199519db7a3d7ea83e6dbfef1a3
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045789"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530658"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Microsoft Enterprise Mobility + Security (EMS) で BYOD を有効にするための技術の決定事項
 
@@ -56,7 +56,7 @@ MDM を行わない MAM は、BYOD をサポートする組織で非常によく
 
 * アクセスを試みているユーザー
 * 信頼できる場所かどうか
-*   サインイン リスク レベル
+* サインイン リスク レベル
 * デバイスのプラットフォーム
 
 それでも、多くの組織で心配されている特定のリスクが発生することがよくあります。  次の表は、一般的な懸念事項と、それらにする MDM と MAM の対応の比較をまとめたものです。
