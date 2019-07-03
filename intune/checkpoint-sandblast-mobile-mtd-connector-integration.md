@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a483eb45e350104b2188906c97dae3a98c52ff2c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 43e1bee27d785269d57fa7a35a8f6f9fd9bbbd8c
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043328"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530572"
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>Check Point SandBlast Mobile と Intune を統合します
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>始める前に
 
 > [!NOTE] 
 > 以下の手順は、[Check Point SandBlast Mobile MTD コンソール](https://intune-4.eu1.locsec.net/)で行う必要があります。
@@ -65,7 +65,7 @@ Check Point SandBlast アプリ承認プロセスは以下で構成されます�
 
 2.  **[設定]** タブをクリックします。
 
-3.  **[Device management\(デバイス管理\)]**、**[設定]** の順に選択します。
+3.  **[Device management\(デバイス管理\)]** 、 **[設定]** の順に選択します。
 
 4.  **[MDM Service\(MDM サービス\)]** ドロップダウン リストから **[Microsoft Intune]** を選択します。
 
@@ -80,7 +80,7 @@ Check Point SandBlast アプリ承認プロセスは以下で構成されます�
 
 7.  すべてのデバイス プラットフォームを有効にした後、Azure AD セキュリティ グループを入力する必要があります。
 
-8.  **[Verify\(確認\)]** を選択し、Azure AD セキュリティ グループが正常に検証された後、**[保存]** を選択します。
+8.  **[Verify\(確認\)]** を選択し、Azure AD セキュリティ グループが正常に検証された後、 **[保存]** を選択します。
 
 ## <a name="next-steps"></a>次の手順
 

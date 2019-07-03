@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17db2227303fe3937156ad6afa610dce48bd1992
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1fa23deb26dbf54f8e3e98ec0b9604859a34a90d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041343"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528315"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>クイック スタート:クライアント アプリの追加および割り当て
 
@@ -69,7 +69,7 @@ Intune にアプリを追加するには、次の手順に従います。
 
 グループにアプリを割り当てるには、次の手順に従います。
 1. [Intune](https://aka.ms/intuneportal) で、 **[クライアント アプリ]**  >  **[アプリ]** を選択します。 
-2. グループに割り当てるアプリを選びます。   
+2. グループに割り当てるアプリを選びます。
 3. **[割り当て]**  >  **[グループの追加]** をクリックし、 **[グループの追加]** ブレードを表示します。
 4. **[割り当ての種類]** ドロップダウン ボックスで **[Available for enrolled devices]** \(登録済みデバイスで利用可能\) を選択します。 
 5. **[組み込まれたグループ]**  >  **[含めるグループを選択]**  >  **[Contoso テスト担当者]** の順に選択します。

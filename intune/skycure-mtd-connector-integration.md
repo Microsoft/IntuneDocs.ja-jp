@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2f5eb5c6e8e454f6558aff7247f8ac10b7a5393
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1cab7957a0de1b26a6e172fc696cf887d5fe3916
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040572"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528393"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Symantec Endpoint Protection Mobile と Intune の統合を設定する
 
 Symantec Endpoint Protection Mobile (SEP Mobile) ソリューションと Intune を統合するには、以下の手順のようにします。 シングル サインオン機能を有効にするには、SEP Mobile アプリを Azure AD に追加する必要があります。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>始める前に
 
 ### <a name="azure-ad-account-used-to-integrate-intune-and-sep-mobile"></a>Intune と SEP Mobile の統合に使用される Azure AD アカウント
 
@@ -63,15 +63,15 @@ SEP Mobile では、Intune との統合に 2 つのモードがあります。
 
 1.  [Symantec Endpoint Protection Mobile Management コンソール](https://aad.skycure.com)に移動します。
 
-2.  **[SEP Mobile admin credentials]\(SEP Mobile 管理者資格情報\)** を入力し、**[Continue]\(続行\)** を選びます。
+2.  **[SEP Mobile admin credentials]\(SEP Mobile 管理者資格情報\)** を入力し、 **[Continue]\(続行\)** を選びます。
 
-3.  **[Settings]\(設定\)** に進み、**[Intune Integration]\(Intune との統合\)** で **[Basic Setup]\(基本セットアップ\)** を選びます。
+3.  **[Settings]\(設定\)** に進み、 **[Intune Integration]\(Intune との統合\)** で **[Basic Setup]\(基本セットアップ\)** を選びます。
 
 4.  **[iOS App]\(iOS アプリ\)** の **[Add to Active Directory]\(Active Directory に追加\)** を選びます。
 
     ![Symantec Endpoint Protection Mobile Management コンソールの画像](./media/symantec-portal-basic-add.png)
 
-5.  ログイン ページが開いたら、Intune の資格情報を入力し、**[Accept]\(同意する\)** を選びます。
+5.  ログイン ページが開いたら、Intune の資格情報を入力し、 **[Accept]\(同意する\)** を選びます。
 
     ![iOS アプリの Intune ログイン プロンプトの画像](./media/symantec-portal-basic-accept.png)
 
@@ -87,7 +87,7 @@ SEP Mobile を実行しているすべてのデバイスを含む Azure AD セ�
 
 -  SEP Mobile を実行しているデバイスのセキュリティ グループをすべて入力し、変更を保存します。
 
-    ![SEP Mobile アプリのユーザー グループを示す画像](./media/symantec-portal-basic-groups.png)   
+    ![SEP Mobile アプリのユーザー グループを示す画像](./media/symantec-portal-basic-groups.png)
 
 SEP Mobile は、Mobile Threat Defense サービスを実行しているデバイスと Azure AD セキュリティ グループを同期します。
 
@@ -108,45 +108,45 @@ SEP Mobile は、Mobile Threat Defense サービスを実行しているデバ�
     ![Azure Portal のディレクトリの ID を示す画像](./media/symantec-azure-portal-directory-ID.png)
 
 ### <a name="optional-create-a-dedicated-security-group-for-devices-that-need-to-run-the-sep-mobile-apps"></a>(省略可能) SEP Mobile アプリの実行に必要なデバイスに専用のセキュリティ グループを作成する
-1. [Azure portal](https://portal.azure.com) の **[管理]** で **[ユーザーとグループ]** を選んでから、**[すべてのグループ]** を選びます。
+1. [Azure portal](https://portal.azure.com) の **[管理]** で **[ユーザーとグループ]** を選んでから、 **[すべてのグループ]** を選びます。
 
-2. **[追加]** ボタンを選びます。 グループの **[名前]** を入力します。 **[メンバーシップの種類]** で、**[割り当て済み]** を選びます。
+2. **[追加]** ボタンを選びます。 グループの **[名前]** を入力します。 **[メンバーシップの種類]** で、 **[割り当て済み]** を選びます。
 
-3. **[メンバー]** ブレードでグループのメンバーを選んでから、**[選択]** ボタンを選びます。
+3. **[メンバー]** ブレードでグループのメンバーを選んでから、 **[選択]** ボタンを選びます。
 
-4. **[グループ]** ブレードで、**[作成]** を選びます。
+4. **[グループ]** ブレードで、 **[作成]** を選びます。
 
 ### <a name="set-up-the-integration-between-symantec-endpoint-protection-mobile-and-intune"></a>Symantec Endpoint Protection Mobile と Intune の統合を設定する
 
 1.  [Symantec Endpoint Protection Mobile Management コンソール](https://aad.skycure.com)に移動します。
 
-2.  **[SEP Mobile admin credentials]\(SEP Mobile 管理者資格情報\)** を入力し、**[Continue]\(続行\)** を選びます。
+2.  **[SEP Mobile admin credentials]\(SEP Mobile 管理者資格情報\)** を入力し、 **[Continue]\(続行\)** を選びます。
 
-3.  **[Settings]\(設定\)** > **[Integrations]\(統合\)** > **[Intune]** > **[EMM Integration Selection]\(EMM 統合の選択\)** セクションの順に移動します。
+3.  **[Settings]\(設定\)**  >  **[Integrations]\(統合\)**  >  **[Intune]**  >  **[EMM Integration Selection]\(EMM 統合の選択\)** セクションの順に移動します。
 
 4. **[Directory ID]\(ディレクトリ ID\)** ボックスに、前のセクションで Azure Active Directory からコピーしたディレクトリ ID を貼り付け、設定を保存します。
 
-    ![SEP Mobile ポータルのディレクトリの ID を示す画像](./media/symantec-portal-directory-ID.png)     
+    ![SEP Mobile ポータルのディレクトリの ID を示す画像](./media/symantec-portal-directory-ID.png)
 
-5. **[Settings]\(設定\)** > **[Integrations]\(統合\)** > **[Intune]** > **[Basic Setup]\(基本セットアップ\)** セクションの順に移動します。
+5. **[Settings]\(設定\)**  >  **[Integrations]\(統合\)**  >  **[Intune]**  >  **[Basic Setup]\(基本セットアップ\)** セクションの順に移動します。
 
 6. **[iOS App]\(iOS アプリ\)** の **[Add to Active Directory]\(Active Directory に追加\)** ボタンを選びます。
 
-    ![Active Directory への iOS アプリの追加を示す画像](./media/symantec-portal-basic-add.png)   
+    ![Active Directory への iOS アプリの追加を示す画像](./media/symantec-portal-basic-add.png)
 
-7.  ディレクトリを管理する Office 365 アカウントの Azure Active Directory 資格情報を使ってサインインします。
+7. ディレクトリを管理する Office 365 アカウントの Azure Active Directory 資格情報を使ってサインインします。
 
-8.  **[同意する]** ボタンを選んで、SEP Mobile iOS アプリを Azure Active Directory に追加します。
+8. **[同意する]** ボタンを選んで、SEP Mobile iOS アプリを Azure Active Directory に追加します。
 
-    ![[同意する] ボタンの画像](./media/symantec-portal-basic-accept.png)     
+    ![[同意する] ボタンの画像](./media/symantec-portal-basic-accept.png)
 
-9.  **Android アプリ**と **Management アプリ**についても同じプロセスを繰り返します。
+9. **Android アプリ**と **Management アプリ**についても同じプロセスを繰り返します。
 
 10. SEP Mobile アプリを実行する必要があるすべてのユーザー グループを選びます (前に作成したセキュリティ グループなど)。
 
-    ![SEP Mobile アプリのユーザー グループを示す画像](./media/symantec-portal-basic-groups.png)   
+    ![SEP Mobile アプリのユーザー グループを示す画像](./media/symantec-portal-basic-groups.png)
 
-11.  選択したグループのデバイスが SEP Mobile によって同期され、Intune への情報の報告が始まります。 このデータは、[Full Integration]\(完全統合\) セクションで見ることができます。 **[Settings]\(設定\)** > **[Integrations]\(統合\)** > **[Intune]** > **[Full Integration]\(完全統合\)** セクションの順に移動します。
+11.  選択したグループのデバイスが SEP Mobile によって同期され、Intune への情報の報告が始まります。 このデータは、[Full Integration]\(完全統合\) セクションで見ることができます。 **[Settings]\(設定\)**  >  **[Integrations]\(統合\)**  >  **[Intune]**  >  **[Full Integration]\(完全統合\)** セクションの順に移動します。
 
      ![SEP Mobile の完全統合の完了を示す画像](media/symantec-portal-basic-status.PNG)
 ## <a name="next-steps"></a>次の手順

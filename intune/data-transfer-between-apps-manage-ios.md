@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9be961908920420dbb4111c2c3ba108b7e11c09f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f97b3365036271a7f41e7c3274e8a3bd966407f3
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042782"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512138"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune で iOS アプリ間のデータ転送を管理する方法
 
@@ -34,12 +34,12 @@ ms.locfileid: "66042782"
 
 iOS デバイスの **Open In Management** 機能を使用すると、**MDM チャネル**を使用して展開されているアプリ間でのみファイル転送が行われるよう制限できます。 *Open In Management* の制限は、構成設定で設定し、MDM ソリューションを使用して展開します。  展開されているアプリをユーザーがインストールすると、管理者が設定した制限が適用されます。
 
-##  <a name="use-app-protection-with-ios-apps"></a>iOS アプリでアプリ保護を使用する
+## <a name="use-app-protection-with-ios-apps"></a>iOS アプリでアプリ保護を使用する
 アプリ保護ポリシーを iOS の **Open in Management** 機能と共に使用して、以下のように会社データを保護します。
 
 -   **MDM ソリューションで管理されていない従業員所有のデバイス:** アプリ保護ポリシー設定を **[Allow app to transfer data to only Policy Managed apps]\(アプリでポリシー管理型アプリへのデータ転送のみ許可する\)** に設定できます。 ポリシー マネージド アプリで *Open-In* 動作を行うと、その他のポリシー マネージド アプリのみが共有対象のオプションとして表示されます。 ネイティブ メール アプリで、ユーザーが OneDrive からポリシー保護ファイルを添付ファイルとして送信すると、そのファイルは読み取り不能になります。
 
--   **Intune で管理されているデバイス:** Intune で登録したデバイスの場合、アプリ保護ポリシーを使用するアプリと、Intune で展開された管理対象の他の iOS アプリの間で自動的にデータを転送できるようになります。 他のアプリへのデータ転送を許可する方法を指定するには、**[アプリで他のアプリへのデータ転送を許可する]** を有効にし、希望する共有レベルを選択します。 アプリで他のアプリからのデータの受信を許可する方法を指定するには、**[アプリで他のアプリからのデータの受信を許可する]** を有効にし、希望するデータ受信レベルを選択します。 **Open in Management** 機能を使用して、Intune で展開されているアプリ間のデータ転送を制御できます。 アプリ データの受信と共有の詳細については、「[データ再配置設定](app-protection-policy-settings-ios.md#data-protection)」を参照してください。   
+-   **Intune で管理されているデバイス:** Intune で登録したデバイスの場合、アプリ保護ポリシーを使用するアプリと、Intune で展開された管理対象の他の iOS アプリの間で自動的にデータを転送できるようになります。 他のアプリへのデータ転送を許可する方法を指定するには、 **[アプリで他のアプリへのデータ転送を許可する]** を有効にし、希望する共有レベルを選択します。 アプリで他のアプリからのデータの受信を許可する方法を指定するには、 **[アプリで他のアプリからのデータの受信を許可する]** を有効にし、希望するデータ受信レベルを選択します。 **Open in Management** 機能を使用して、Intune で展開されているアプリ間のデータ転送を制御できます。 アプリ データの受信と共有の詳細については、「[データ再配置設定](app-protection-policy-settings-ios.md#data-protection)」を参照してください。   
 
 -   **サードパーティの MDM ソリューションで管理されているデバイス:** iOS の **Open In Management** 機能を使用して、データ転送が管理対象のアプリに対してのみ行われるよう制限できます。
 サードパーティの MDM ソリューションを使用して展開するアプリを、Intune アプリ保護ポリシーとも関連付けるには、[ユーザー UPN 設定の構成](#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)に関するセクションに従ってユーザー UPN 設定を構成します。 アプリがユーザー UPN 設定を使用して展開されている場合、エンド ユーザーが職場アカウントを使用してサインインすると、アプリ保護ポリシーがアプリに適用されます。
@@ -76,14 +76,14 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 
    |サードパーティ MDM プロバイダー| Configuration キー | 値の種類 | 構成値|
    | ------- | ---- | ---- | ---- |
-   |Microsoft Intune| IntuneMAMUPN | String | {{UserPrincipalName}}|
-   |VMware AirWatch| IntuneMAMUPN | String | {UserPrincipalName}|
-   |MobileIron | IntuneMAMUPN | String | ${userUPN} **または** ${userEmailAddress} |
-   |Citrix Endpoint Management | IntuneMAMUPN | String | ${user.userprincipalname} |
+   |Microsoft Intune| IntuneMAMUPN | 文字列型 | {{UserPrincipalName}}|
+   |VMware AirWatch| IntuneMAMUPN | 文字列型 | {UserPrincipalName}|
+   |MobileIron | IntuneMAMUPN | 文字列型 | ${userUPN} **または** ${userEmailAddress} |
+   |Citrix Endpoint Management | IntuneMAMUPN | 文字列型 | ${user.userprincipalname} |
    |ManageEngine Mobile Device Manager | IntuneMAMUPN | 文字列型 | %upn% |
 
 
-### <a name="example-2-end-user-experience"></a>例 2: エンドユーザー エクスペリエンス
+### <a name="example-2-end-user-experience"></a>例 2:エンドユーザー エクスペリエンス
 
 1.  ユーザーは、デバイスに Microsoft Word アプリをインストールします。
 
@@ -109,5 +109,5 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 まず、[アプリ保護ポリシーを作成し、iOS アプリに割り当て](app-protection-policies.md)ます。 アプリ保護ポリシーをテストする方法の詳細については、[アプリ保護ポリシーの検証](app-protection-policies-validate.md)に関するページを参照してください。
 
 
-### <a name="see-also"></a>「
+### <a name="see-also"></a>関連項目
 [Intune アプリ保護ポリシーとは](app-protection-policy.md)
