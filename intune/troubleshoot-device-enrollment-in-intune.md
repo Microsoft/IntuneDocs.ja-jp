@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 063a288c99f3f773b63bd6fe0040e200a754c888
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 9c304cafa03d9a88831048a271fa4d74b17a944f
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046302"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528756"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune でのデバイス登録に関するトラブルシューティング
 
@@ -34,10 +34,10 @@ ms.locfileid: "67046302"
 
 トラブルシューティングを開始する前に、登録を有効にするように Intune を構成していることを確認してください。 構成要件は次で確認できます。
 
--   [Microsoft Intune にデバイスを登録する準備](setup-steps.md)
--   [iOS および Mac のデバイス管理をセットアップする](ios-enroll.md)
--   [Windows デバイスの管理をセットアップする](windows-enroll.md)
--   [Android デバイスの管理をセットアップする](android-enroll.md) - 追加の手順は必要ありません
+- [Microsoft Intune にデバイスを登録する準備](setup-steps.md)
+- [iOS および Mac のデバイス管理をセットアップする](ios-enroll.md)
+- [Windows デバイスの管理をセットアップする](windows-enroll.md)
+- [Android デバイスの管理をセットアップする](android-enroll.md) - 追加の手順は必要ありません
 
 ユーザーのデバイス上の時刻と日付が正しく設定されていることも確認できます。
 
@@ -236,15 +236,15 @@ Android デバイスでは、[SSL のサーバー ハロー](https://technet.mic
 
 この問題を解決するには、AD FS サーバーまたはプロキシでコンピューターの個人証明書に証明書を次のようにインポートします。
 
-1.  ADFS およびプロキシ サーバー上で、 **[開始]** を右クリックし、 **[実行]**  >  **[certlm.msc]** の順にクリックして、ローカル コンピューターの証明書管理コンソールを起動します。
-2.  **[個人用]** を展開し、 **[証明書]** を選択します。
-3.  AD FS サービス通信の証明書を見つけ (公的に署名された証明書)、ダブルクリックしてそのプロパティを表示します。
-4.  **[証明のパス]** タブを選択し、証明書の親証明書を選択します。
-5.  親証明書ごとに、 **[証明書の表示]** を選択します。
-6.  **[詳細]**  >  **[ファイルへコピー]** の順に選択します。
-7.  ウィザードの指示に従い、親証明書の公開鍵を任意のファイル保存先にエクスポート (保存) します。
-8.  右クリックして **[証明書]**  >  **[すべてのタスク]**  >  **[インポート]** の順に選択します。
-9.  ウィザードの指示に従い、親証明書を **Local Computer\Personal\Certificates** にインポートします。
+1. ADFS およびプロキシ サーバー上で、 **[開始]** を右クリックし、 **[実行]**  >  **[certlm.msc]** の順にクリックして、ローカル コンピューターの証明書管理コンソールを起動します。
+2. **[個人用]** を展開し、 **[証明書]** を選択します。
+3. AD FS サービス通信の証明書を見つけ (公的に署名された証明書)、ダブルクリックしてそのプロパティを表示します。
+4. **[証明のパス]** タブを選択し、証明書の親証明書を選択します。
+5. 親証明書ごとに、 **[証明書の表示]** を選択します。
+6. **[詳細]**  >  **[ファイルへコピー]** の順に選択します。
+7. ウィザードの指示に従い、親証明書の公開鍵を任意のファイル保存先にエクスポート (保存) します。
+8. 右クリックして **[証明書]**  >  **[すべてのタスク]**  >  **[インポート]** の順に選択します。
+9. ウィザードの指示に従い、親証明書を **Local Computer\Personal\Certificates** にインポートします。
 10. AD FS サーバーを再起動します。
 11. すべての AD FS サーバーとプロキシ サーバーで上記の手順を繰り返します。
 
