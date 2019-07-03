@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9884f1c5d794b527aeaf8fb522d9118d59468b3b
-ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
+ms.openlocfilehash: 54511e29bd44b862a5ad06bdfda2067ed7248677
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66506878"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494281"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM とアプリの保護に関してよく寄せられる質問
 
@@ -37,9 +37,9 @@ MAM は、アプリケーション内の組織のデータを保護します。 
 
 **MAM でサポートされるのはどのようなデバイス構成ですか。**<br></br>
 Intune MAM では次の 2 つの構成をサポートしています。
-- **Intune MDM + MAM**: IT 管理者は、Intune モバイル デバイス管理 (MDM) に登録されているデバイスで MAM とアプリ保護ポリシーを使用したアプリの管理のみを行うことができます。 MDM と MAM を使用してアプリを管理するには、Azure Portal (https://portal.azure.com) の Intune コンソールを使用する必要があります。
+- **Intune MDM + MAM**: IT 管理者は、Intune モバイル デバイス管理 (MDM) に登録されているデバイスで MAM とアプリ保護ポリシーを使用したアプリの管理のみを行うことができます。 MDM と MAM を使用してアプリを管理するには、Azure Portal (https://portal.azure.com ) の Intune コンソールを使用する必要があります。
 
-- **デバイス登録なしの MAM**: デバイス登録がない MAM や MAM-WE では、IT 管理者は、Intune MDM に登録されていないデバイス上で MAM とアプリ保護ポリシーを使用してアプリの管理を行うことしかできません。 つまり、サードパーティ EMM プロバイダーに登録されているデバイスで Intune によりアプリを管理できます。 MAM-WE を使用してアプリを管理するには、Azure Portal (https://portal.azure.com) の Intune コンソールを使用する必要があります。 また、Intune では、サードパーティ製エンタープライズ モビリティ管理 (EMM) プロバイダーに登録されているデバイス上でも、MDM に全く登録されていないデバイス上でもアプリを管理することができます。
+- **デバイス登録なしの MAM**: デバイス登録がない MAM や MAM-WE では、IT 管理者は、Intune MDM に登録されていないデバイス上で MAM とアプリ保護ポリシーを使用してアプリの管理を行うことしかできません。 つまり、サードパーティ EMM プロバイダーに登録されているデバイスで Intune によりアプリを管理できます。 MAM-WE を使用してアプリを管理するには、Azure Portal (https://portal.azure.com ) の Intune コンソールを使用する必要があります。 また、Intune では、サードパーティ製エンタープライズ モビリティ管理 (EMM) プロバイダーに登録されているデバイス上でも、MDM に全く登録されていないデバイス上でもアプリを管理することができます。
 
 
 ## <a name="app-protection-policies"></a>アプリ保護ポリシー
@@ -86,7 +86,7 @@ Intune APP SDK は、ファーストパーティとサードパーティの両�
 - エンド ユーザーに、[Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) メールボックスと Azure Active Directory アカウントにリンクされたライセンスが必要です。
 
   >[!NOTE]
-  > 現段階では、Outlook モバイル アプリは Microsoft Exchange Online と[ハイブリッド先進認証を使用する Exchange Server](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx) のみをサポートし、Office 365 専用の Exchange はサポートされていません。
+  > 現段階では、Outlook モバイル アプリは Microsoft Exchange Online と[ハイブリッド先進認証を使用する Exchange Server](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx) のみをサポートし、Office 365 専用の Exchange はサポートされていません。
 
 **[Word、Excel、PowerPoint](https://products.office.com/business/office) のアプリを使用するための追加要件は何ですか。**
 
@@ -142,7 +142,7 @@ Intune PIN は、非アクティブ状態ベースのタイマー (以前の [(�
 - **同じ公開元のアプリで PIN 設定を 2 回行う必要があるのはなぜですか。**<br></br> MAM (iOS) では現在、英数字と特殊文字による "パスコード" と呼ばれるアプリケーションレベルの PIN が許可されていますが、iOS 用 Intune APP SDK を統合するには、アプリケーション (WXP、Outlook、Managed Browser、Yammer) の参加が必要です。 これを行わないと、パスコードの設定が対象のアプリケーションに正しく適用されません。 これは iOS 用 Intune SDK の、 バージョン 7.1.12 でリリースされた機能です。 <br><br> この機能をサポートし、iOS 用 Intune SDK の以前のバージョンとの下位互換性を保証するために、7.1.12 以降の PIN は (数値のものもパスコードも) すべて、以前のバージョンの SDK で使用された数値からなる PIN とは別に扱われます。 そのため公開元が同じで、7.1.12 よりも前のバージョンと後のバージョンの iOS 用 Intune SDK を使用するアプリケーションが、1 つのデバイス上に "両方とも" ある場合、PIN を 2 つ設定する必要があります。 <br><br> とはいえ、(各アプリの) 2 つの PIN に関連性はありません。言い換えると、それらはアプリに適用されるアプリ保護ポリシーに従う必要があるということです。 そのため、アプリ A とアプリ B に対し、(PIN に関して) 同じポリシーを適用する場合に*のみ*、ユーザーは同じ PIN を 2 回設定できます。 <br><br> これは Intune Mobile App Management が有効になっている iOS アプリケーション上の PIN に固有の動作です。 時間の経過とともに、新しいバージョンの iOS 用 Intune SDK が採用されていくと、同じ公開元のアプリに 1 つの PIN を 2 回設定しなくてはならないという問題は減っていきます。 例については、以下の注記をご覧ください。
 
   >[!NOTE]
-  > たとえば、アプリの公開元が同じで、アプリ A が 7.1.12 よりも前のバージョンでビルドされ、アプリ B が 7.1.12 以上のバージョンでビルドされている場合、エンド ユーザーは A と B の両方に別の PIN を設定する必要があります (両方が 1 つの iOS デバイスにインストールされている場合)。 <br><br> そのデバイスに、バージョン 7.1.9 の SDK を持つアプリ C をインストールすると、アプリ C はアプリ A と同じ PIN を共有します。 <br><br> 7.1.14 でビルドされたアプリ D の場合は、アプリ B と同じ PIN を共有します。 <br><br> 1 つのデバイスに アプリ A とアプリ C だけがインストールされている場合、設定する必要がある PIN は 1 つです。 1 つのデバイスに アプリ B とアプリ D だけがインストールされている場合も同様です。
+  > たとえば、アプリの公開元が同じで、アプリ A が 7.1.12 よりも前のバージョンでビルドされ、アプリ B が 7.1.12 以上のバージョンでビルドされている場合、エンド ユーザーは A と B の両方に別の PIN を設定する必要があります (両方が 1 つの iOS デバイスにインストールされている場合)。 <br><br> そのデバイスに、バージョン 7.1.9 の SDK を持つアプリ C をインストールすると、アプリ C はアプリ A と同じ PIN を共有します。 <br><br> 7\.1.14 でビルドされたアプリ D の場合は、アプリ B と同じ PIN を共有します。 <br><br> 1 つのデバイスに アプリ A とアプリ C だけがインストールされている場合、設定する必要がある PIN は 1 つです。 1 つのデバイスに アプリ B とアプリ D だけがインストールされている場合も同様です。
 
 **暗号化についてはどうですか。**<br></br>
 IT 管理者は、アプリ データの暗号化を必須にするアプリ保護ポリシーを展開できます。 ポリシーの一環として、IT 管理者はコンテンツがいつ暗号化されるかを指定することもできます。

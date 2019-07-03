@@ -6,25 +6,25 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/09/2017
+ms.date: 06/11/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3a730a5d-2a90-42b0-aa28-aadfc7a18788
-ms.reviewer: heenamac
+ms.reviewer: davera
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da8ccc65b2091e96d7ef089994c3d34bbaf9b557
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3566d144abad563ead64c124e128c221e725a25c
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041737"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045707"
 ---
-# <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense コネクターと Intune
+# <a name="lookout-mobile-endpoint-security-connector-with-intune"></a>Lookout Mobile Endpoint Security コネクタと Intune
 
 Microsoft Intune に統合された Mobile Threat Defense ソリューションである Lookout によって実行されるリスク評価に基づいて、モバイル デバイスから会社のリソースへのアクセスを制御することができます。 リスクは、Lookout サービスによりデバイスから収集される次のような製品利用統計情報に基づいて評価されます。
 - オペレーティング システムの脆弱性
@@ -33,28 +33,31 @@ Microsoft Intune に統合された Mobile Threat Defense ソリューション�
 
 Intune コンプライアンス ポリシーにより有効になった Lookout のリスク評価に基づいて条件付きアクセス ポリシーを構成できます。 設定により、検出された脅威に基づいて非準拠デバイスを許可したり、ブロックしたりできます。
 
-## <a name="how-do-intune-and-lookout-mobile-threat-defense-help-protect-company-resources"></a>Intune および Lookout の Mobile Threat Defense は会社リソースの保護にどのように役立ちますか?
+## <a name="how-do-intune-and-lookout-mobile-endpoint-security-help-protect-company-resources"></a>Intune と Lookout Mobile Endpoint Security で会社リソースを保護する方法
 Lookout のモバイル アプリ、**Lookout for work** は、モバイル デバイスにインストールされ、実行されます。 このアプリは、利用できる場合、ファイル システム、ネットワーク スタック、デバイスとアプリケーションの製品利用統計情報を記録し、Lookout クラウド サービスに送信し、モバイル デバイスの脅威に対するリスクを評価します。 Lookout コンソールでは、要件に合わせ、脅威に対するリスク レベルの分類を変更できます。  
 
 Intune のコンプライアンス ポリシーには、Lookout のリスク評価に基づく Lookout Mobile Threat Defense のルールが含まれています。 このルールを有効にすると、Intune は、有効にされたポリシーに基づいてデバイスの準拠状態を評価します。
 
 デバイスが準拠していないことが判明した場合、Exchange Online や SharePoint Online などのリソースに対するアクセスをブロックできます。 ブロックされたデバイスのユーザーには、問題を解決し、アクセスを回復するための手順が与えられます。 ガイダンスは Lookout for work アプリから起動されます。
 
-## <a name="supported-platforms"></a>サポートされているプラットフォーム
+## <a name="supported-platforms"></a>サポートされているプラットフォーム  
 Intune に登録するとき、Lookout では次のプラットフォームがサポートされます。
-* **Android 4.1 以降**
-* **iOS 8 以降** プラットフォームと言語サポートの詳細については、[Lookout Web サイト](https://personal.support.lookout.com/hc/articles/114094140253)をご覧ください。
+* **Android 4.1 以降**  
+* **iOS 8 以降**  
 
-## <a name="prerequisites"></a>前提条件
-* Microsoft Intune サブスクリプション
-* Azure Active Directory
+プラットフォームと言語サポートの詳細については、[Lookout Web サイト](https://personal.support.lookout.com/hc/articles/114094140253)を参照してください。  
+
+## <a name="prerequisites"></a>必要条件
 * Lookout Mobile EndPoint Security エンタープライズ サブスクリプション  
+* Microsoft Intune サブスクリプション
+* Azure Active Directory Premium
+* ユーザーにライセンスが割り当てられている Enterprise Mobility and Security (EMS) E3 または E5。  
 
 詳細については、「[Lookout Mobile Endpoint Security](https://www.lookout.com/products/mobile-endpoint-security)」を参照してください。
 
 ## <a name="sample-scenarios"></a>サンプル事例
 
-Intune で Lookout Mobile Threat Defense を使用する場合の一般的なシナリオを次に示します。
+Intune で Mobile Endpoint Security を使用する場合の一般的なシナリオを次に示します。
 
 ### <a name="control-access-based-on-threats-from-malicious-apps"></a>悪意のあるアプリの脅威に基づいてアクセスを制御する
 マルウェアなどの悪意のあるアプリがデバイスで検出されると、脅威が解決されるまで、デバイスで次の行為が禁止されます。
@@ -96,6 +99,6 @@ Man-in-the-middle 攻撃など、ネットワークに対する脅威を検出�
 ## <a name="next-steps"></a>次の手順
 このソリューションを実装するために実行する必要がある主な手順を次に示します。
 1.  [Lookout 統合を設定する](lookout-mtd-connector-integration.md)
-2.  [Intune で Lookout Mobile Threat Defense を有効にする](mtd-connector-enable.md)
+2.  [Intune で Mobile Endpoint Security を有効にする](mtd-connector-enable.md)
 3.  [Lookout for Work アプリを追加して割り当てる](mtd-apps-ios-app-configuration-policy-add-assign.md)
 4.  [Lookout デバイス コンプライアンス ポリシーを構成する](mtd-device-compliance-policy-create.md)

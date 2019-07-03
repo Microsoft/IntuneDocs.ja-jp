@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d66a9ae4d72ef37f39c2017c4351847e8bace46
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6f59ff42f7707ace92442bf37ddac9679e36448f
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049891"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045890"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Intune で Android 仕事用プロファイルのデバイスを管理する
 
@@ -62,7 +62,7 @@ Android Enterprise 仕事用プロファイル デバイスで Exchange ActiveSy
 
 ## <a name="app-protection-policies"></a>アプリ保護ポリシー
 
-適用されているアプリ保護ポリシーは、仕事用プロファイルと個人用プロファイルで完全にサポートされています。 Android アプリ公開コンソール (https://play.google.com/apps/publish) で基幹業務アプリを公開できます。 このコンソールには、アプリを組織にのみ制限するオプションもあります。 詳細については、[Intune で Android Enterprise 仕事用プロファイル デバイス用のデバイス コンプライアンス ポリシーを追加する](compliance-policy-create-android-for-work.md)に関する記事を参照してください。 アプリ保護ポリシーについて詳しくは、「[アプリ保護ポリシーとは](app-protection-policy.md)」を参照してください。
+適用されているアプリ保護ポリシーは、仕事用プロファイルと個人用プロファイルで完全にサポートされています。 Android アプリ公開コンソール (https://play.google.com/apps/publish ) で基幹業務アプリを公開できます。 このコンソールには、アプリを組織にのみ制限するオプションもあります。 詳細については、[Intune で Android Enterprise 仕事用プロファイル デバイス用のデバイス コンプライアンス ポリシーを追加する](compliance-policy-create-android-for-work.md)に関する記事を参照してください。 アプリ保護ポリシーについて詳しくは、「[アプリ保護ポリシーとは](app-protection-policy.md)」を参照してください。
 
 ## <a name="vpn-profiles"></a>VPN プロファイル
 

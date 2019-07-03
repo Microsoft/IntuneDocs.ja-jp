@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: 55e758c8a7eddc1a5500464754448d26680ec772
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: eda0d77fc5cdb11fa4bc5b21f48ceb7616ecfb15
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819584"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389259"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Windows デバイスの Intune 登録方法
 
@@ -51,6 +51,7 @@ Intune でデバイスを管理するには、まず、デバイスを Intune �
 - [Configuration Manager の共同管理](https://docs.microsoft.com/sccm/comanage/overview)では、管理者は、既存の Configuration Manager マネージド デバイスを Intune に登録して、Intune と Configuration Manager の 2 つの利点を得ることができます。 
 - [デバイス登録マネージャー](device-enrollment-manager-enroll.md) (DEM) は特別なサービス アカウントです。 DEM アカウントには、許可されているユーザーが複数の会社所有デバイスを登録して管理できるようにするアクセス許可があります。 この種のデバイスは、POS アプリやユーティリティ アプリなどには適していますが、電子メールや会社のリソースにアクセスする必要があるユーザーには適していません。 この方法では、条件付きアクセスなどの機能の使用が許可されません。 
 - [一括登録](windows-bulk-enroll.md)では、許可されているユーザーは、数多くの新しい企業所有デバイスを Azure Active Directory と Intune に参加させることができます。 Windows Configuration Designer (WCD) アプリでプロビジョニング パッケージを作成します。 その後、既存の Windows PC からまたは最初の Windows OOBE エクスペリエンス時に USB メディアを使用して、プロビジョニング パッケージをインストールし、デバイスを Intune に自動的に登録します。 この方法では、条件付きアクセスの使用が許可されません。 
+- [Windows IoT Core デバイスの登録](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/intunedeviceenrollment)を行うには、Windows IoT Core ダッシュボードを使用してデバイスを準備してから、Windows Configuration Designer を使用してプロビジョニング パッケージを作成します。 次に、初回起動時に SD カード メディアを使用して、プロビジョニング パッケージをインストールしてデバイスを Intune に自動登録します。
 
 ## <a name="next-steps"></a>次の手順
 

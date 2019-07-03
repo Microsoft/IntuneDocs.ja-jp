@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 06/26/2019
 ms.topic: archived
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,18 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e24e72951d473c2e7e49d5ae62b39df18635c16
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2c1717be830d88ed0a7d1b660b7910c8192c93c5
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040273"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403546"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Windows PC のハードウェアとソフトウェアのインベントリを表示する
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
-Intune は、Intune ソフトウェア クライアントを使用して PC として管理されるデスクトップのハードウェアおよびソフトウェアに関する詳細情報を収集します。 以下の手順を参照して、次の項目を作成する方法を確認してください:
+> [!NOTE]
+> このトピックの情報は、Intune ソフトウェア クライアントを使用して PC として管理している Windows デスクトップにのみ適用されます。 モバイル デバイスとして登録されている Windows Pc のインベントリを表示する場合は、「 [Intune でデバイス詳細を表示](device-inventory.md)します。
+
+Intune では、Intune ソフトウェア クライアントを使用して、お客様が PC として管理するデスクトップのハードウェアおよびソフトウェアに関する詳細情報が収集されます。 以下の手順を参照して、次の項目を作成する方法を確認してください:
 
 -   管理する PC のハードウェア性能に関する情報を一覧にしたレポート。
 
@@ -40,7 +43,7 @@ Intune は、Intune ソフトウェア クライアントを使用して PC と�
 
 1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[レポート]** &gt; **[コンピューター インベントリ レポート]** を選択します。
 
-2.  **[新しいレポートの作成]** ページで、既定値をそのまま使用するか、カスタマイズして、レポートで返される結果をフィルター処理します。 たとえば、Windows 8.1 を実行する PC だけをレポートに表示するように選択できます。
+2.  **[新しいレポートの作成]** ページで、既定値をそのまま使用するか、カスタマイズして、レポートで返される結果をフィルター処理します。 たとえば、Windows 8.1 を稼働している PC だけをレポートに表示するように選択できます。
 
 3.  **[レポートの表示]** を選択すると、 **[コンピューター インベントリ レポート]** が新しいウィンドウで開きます。
 

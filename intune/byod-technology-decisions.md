@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba3f6fc48a68122f0a192adc8e2140bb7a603b31
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3400169aab9598624216fcbc9ef7694e1d5441cc
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043476"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045789"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Microsoft Enterprise Mobility + Security (EMS) で BYOD を有効にするための技術の決定事項
 
@@ -52,7 +52,7 @@ MDM を行わない MAM は、BYOD をサポートする組織で非常によく
 詳しくは、[デバイス管理とアプリ管理のライフサイクルに関するページ](introduction-device-app-lifecycles.md)をご覧ください。
 
 ## <a name="mdm-vs-mam-capability-comparison"></a>MDM と MAM の機能の比較
-既に説明したように、条件付きアクセスを使うと、デバイスの登録、または Outlook Mobile などの管理されたアプリの使用を、ユーザーに促すことができます。 いずれの場合も、次のような他の多くの条件を適用できます。
+既に説明したように、条件付きアクセスを使うと、デバイスの登録、または Outlook Mobile などのマネージド アプリの使用をユーザーに促すことができます。 いずれの場合も、次のような他の多くの条件を適用できます。
 
 * アクセスを試みているユーザー
 * 信頼できる場所かどうか

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/03/2019
+ms.date: 06/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,14 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c8a7be6646c0035eaefed6d61d749c8469c8a4e
-ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
-ms.translationtype: MTE75
+ms.openlocfilehash: 633bf52084ad261f768cb4e59aaf4ce0ab5cd5bc
+ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031655"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "67468728"
 ---
-# <a name="in-development-for-microsoft-intune---june-2019"></a>Microsoft Intune 用に開発中 - 2019 年 6 月
+# <a name="in-development-for-microsoft-intune---july-2019"></a>Microsoft Intune 用に開発中 - 2019 年 7 月
 
 お客様による準備と計画を支援するため、このページには Intune の UI の更新と、開発中でまだリリースされていない機能がリストされています。 さらに
 
@@ -42,29 +42,39 @@ ms.locfileid: "67031655"
 ## What's coming to Intune apps
 ## Notices
 -->
+
+<!-- Common categories:  
+#### App management
+#### Device configuration
+#### Device enrollment
+#### Device management
+#### Intune apps
+#### Monitor and troubleshoot
+#### Role-based access control
+#### Security
+
+-->
  
-## <a name="intune-in-the-azure-portal"></a>Azure Portal での Intune
-
 <!-- ***********************************************-->
-### <a name="app-management"></a>アプリ管理
+## <a name="app-management"></a>アプリ管理
 
-#### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>デバイスのユーザーは、インストール済みまたはインストールしようとしたすべての管理対象アプリを表示できる <!-- 2352913 -->
+### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>デバイスのユーザーは、インストール済みまたはインストールしようとしたすべての管理対象アプリを表示できる <!-- 2352913 -->
 Windows 用ポータル サイトに、ユーザーのデバイスにインストールされているすべてのマネージド アプリ (必須および使用可能の両方) が一覧表示されます。 ユーザーは、試行した、および保留中のアプリのインストールと、それらの現在の状態を表示することができるようになります。 組織でアプリが必須または使用可能とされていない場合、会社のアプリは全くインストールされていないというメッセージがユーザーに表示されます。 ユーザーはまた、インストールの状態でアプリを並べ替えまたはフィルタリングすることができます。
 
-#### <a name="configure-which-browser-is-allowed-to-link-to-organization-data----3145939---"></a>組織データへのリンクを許可するブラウザーを構成する <!-- 3145939 -->
-Android および iOS デバイス上の Intune App Protection ポリシー (APP) を使用すると、組織の Web リンクを Intune Managed Browser または Microsoft Edge 以外の特定のブラウザーに転送できます。  アプリの詳細については、「[アプリ保護ポリシーとは](app-protection-policy.md)」を参照してください。
+### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>ユーザーとグループのカスタマイズされた通知    <!-- 16766574   -->
+さらに、iOS および Android デバイスを Intune で管理する上のユーザーがポータル サイト アプリケーションからカスタムの一時的なプッシュ通知を送信することが間もなくなります。 これらのカスタム通知が特定の Intune 機能に関連付けられていないの一部を送信する一般的な通知など、必要な目的に使用できるすべての従業員またはします。  
 
-#### <a name="installed-apps-page-on-the-company-portal-website-----4224326---"></a>ポータル サイト Web サイト上のインストール済みアプリ ページ  <!-- 4224326 -->
-[ポータル サイト Web サイト](https://portal.manage.microsoft.com/)には、デバイスにインストールされているすべてのアプリをユーザーに表示する新しいページが含まれます。 この一覧には、その組織で使用できるアプリと必要なアプリの両方が含まれています。 このページから、ユーザーは自分のデバイス上のアプリのインストールと要件の状態を確認することができます。 ポータル サイト Web サイトの詳細については、「[Intune ポータル サイト Web サイトの使用](/intune-user-help/using-the-intune-company-portal-website)」と「[Microsoft Intune ポータル サイト アプリを構成する方法](company-portal-app.md)」を参照してください。
+### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>組織のアカウントのアプリの通知のコンテンツを構成します。 <!-- 2576686 -->
+Android および iOS デバイスで Intune アプリ保護ポリシー (アプリ) を使用するアプリの通知のコンテンツをコントロールに組織のアカウント。 この機能では、アプリケーションからのサポートは必要とし、すべてのアプリを有効になっているアプリケーションで使用できることができない可能性があります。 アプリの詳細については、「[アプリ保護ポリシーとは](app-protection-policy.md)」を参照してください。
 
-#### <a name="call-graph-api-read-operations-from-an-application-without-user-credentials----4655885---"></a>ユーザーの資格情報なしでアプリケーションから Graph API の読み取り操作を呼び出す <!-- 4655885 -->
-アプリケーションから、ユーザー資格情報を使用せず、アプリ ID を使用して Intune Graph API 読み取り操作を呼び出すことができるようになります。 詳細については、「[ユーザーなしでアクセスを取得](https://docs.microsoft.com/graph/auth-v2-service)」を参照してください。
+### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956----"></a>Android の仕事用プロファイルに使用できる Google Play アプリのレポート <!-- 3041956  -->
+Android の仕事用プロファイル デバイスに使用できるアプリのインストールについては、アプリのインストール状態と managed Google Play アプリのインストール済みバージョンを確認できます。 詳細については、[アプリの保護ポリシーを監視する方法](app-protection-policies-monitor.md)、[Intune を使用した Android の仕事用プロファイル デバイスの管理](android-enterprise-overview.md)、および[マネージド Google Play アプリの種類](apps-add-android-for-work.md#managed-google-play-app-type)に関する記事を参照してください。
 
 <!-- ***********************************************-->
-### <a name="device-configuration"></a>デバイス構成
+## <a name="device-configuration"></a>デバイス構成
 
 
-#### <a name="support-for-ikev2-vpn-profiles-for-ios----1943438---"></a>iOS 用の IKEv2 VPN プロファイルのサポート <!-- 1943438 -->
+### <a name="support-for-ikev2-vpn-profiles-for-ios----1943438---"></a>iOS 用の IKEv2 VPN プロファイルのサポート <!-- 1943438 -->
 IKEv2 プロトコルを使用して、iOS ネイティブ VPN クライアント用の VPN プロファイルを作成できるようになります。 IKEv2 は、 **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  > **プラットフォームに [iOS]** > プラットフォームの種類に **[VPN]** > **[設定]** の新しい接続の種類です。
 
 これらの VPN プロファイルではネイティブ VPN クライアントを構成します。 そのため、VPN クライアント アプリはマネージド デバイスにインストールまたはプッシュされません。 この機能を使用するには、デバイスを Intune に登録する必要があります (MDM 登録)。
@@ -73,85 +83,45 @@ IKEv2 プロトコルを使用して、iOS ネイティブ VPN クライアン�
 
 適用対象: iOS
 
-#### <a name="configure-settings-for-kernel-extensions-on-macos-devices----20430240---"></a>macOS デバイスのカーネル拡張機能の設定を構成する <!-- 20430240 -->
-macOS デバイスで、デバイス構成プロファイルを作成できます ( **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** > プラットフォームに **[macOS]** を選択します)。 今後の更新プログラムには、デバイスのカーネル拡張機能を構成して使用することができる新しい設定のグループが追加される予定です。
-
-適用対象: macOS 10.13.2 以降
-
-#### <a name="baseline-support-for-keyword-search-----3082036-----------"></a>キーワード検索のベースライン サポート  <!-- 3082036         -->
-まもなく、セキュリティのベースライン プロファイルを作成または編集中、コンソールに表示される設定をフィルター処理するために "*検索*" を使用できるようになります。   
-
-#### <a name="use-applicability-rules-when-creating-windows-10-device-configuration-profiles----2549910---"></a>Windows 10 デバイス構成プロファイルを作成するときは "適用規則" を使用する <!-- 2549910 -->
+### <a name="use-applicability-rules-when-creating-windows-10-device-configuration-profiles----2549910---"></a>Windows 10 デバイス構成プロファイルを作成するときは "適用規則" を使用する <!-- 2549910 -->
 Windows 10 デバイス構成プロファイルを作成します ( **[デバイスの構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  >  **[Windows 10]** (プラットフォーム))。 **適用規則**を作成し、プロファイルが特定のエディションまたは特定のバージョンにのみ適用されるようにすることができます。 たとえば、いくつかの BitLocker 設定を有効にするプロファイルを作成します。 プロファイルを追加したら、適用規則を使用して Windows 10 Enterprise を実行しているデバイスにのみプロファイルを適用します。
 
 適用対象: 
 - Windows 10 以降
 
-#### <a name="apps-from-the-store-only-setting-for-windows-10-devices-includes-more-configuration-options----2697002----"></a>Windows 10 デバイスのストアのアプリのみ設定に含まれるその他の構成オプション <!-- 2697002  -->
-
-ユーザーが Windows アプリ ストアからのみアプリをインストールするように、Windows デバイス用のデバイス制限プロファイルを作成するときに **[Apps from the store only]\(ストアのアプリのみ\)** 設定を使用することがでます ( **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  > **プラットフォームに [Windows 10 以降]** > プロファイルの種類に **[デバイスの制限]** )。 今後の更新プログラムでは、この設定はより多くのオプションをサポートするように拡張される予定です。 
-
-現在の設定を確認するには、「[Intune を使用して機能を許可または制限するように Windows 10 (以降) のデバイスを設定する](device-restrictions-windows-10.md#app-store)」を参照してください。
-
-適用対象: Windows 10 以降
-
-#### <a name="deploy-multiple-zebra-mobility-extensions-device-profiles-to-a-device-same-user-group-or-same-devices-group----4089955---"></a>複数の Zebra モビリティ拡張機能デバイス プロファイルを 1 つのデバイス、同じユーザー グループ、または同じデバイス グループに展開する <!-- 4089955 -->
-Intune では、デバイス構成プロファイルで Zebra モビリティ拡張機能 (MX) を使用して設定をカスタマイズすることや、Intune に組み込まれていない設定を追加することができます。 現在、1 つのデバイスに 1 つのプロファイルを展開できます。 今後の更新プログラムでは、複数のプロファイルを以下に展開できるようになります。
-
-- 同じユーザー グループ
-- 同じデバイス グループ
-- 1 つのデバイス
-
-「[Microsoft Intune で Zebra モビリティ拡張機能を備えた Zebra デバイスを使用および管理する](android-zebra-mx-overview.md)」には、Intune で MX を使用する方法が説明されています。
-
-適用対象: Android
-
-#### <a name="some-kiosk-settings-on-ios-devices-are-set-using-block-replacing-allow----4404075----"></a>iOS デバイス上の一部のキオスク設定は、[許可] の代わりに [ブロック] を使用して設定されています。 <!-- 4404075  -->
-iOS デバイス上にデバイス制限プロファイルを作成した場合は ( **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  > **プラットフォームに [iOS]** > プロファイルの種類に **[デバイスの制限]** > **[キオスク]** )、 **[自動ロック]** 、 **[着信音スイッチ]** 、 **[画面の回転]** 、 **[画面スリープ ボタン]** 、および **[音量ボタン]** を設定します。 
-
-現在、これらの設定は **[許可]** (機能をブロックする) または **[未構成]** (機能を許可する) を使用して構成されています。 今後の更新プログラムでは、値は **[ブロック]** (機能をブロックする) または **[未構成]** (機能を許可する) になる予定です。
-
-現在の設定を確認するには、[機能を許可または制限する iOS デバイスの設定](device-restrictions-ios.md)に関するページを参照してください。 
-
-適用対象: iOS
-
-#### <a name="use-face-id-for-password-authentication-on-ios-devices----4490704----"></a>iOS デバイスのパスワード認証に Face ID を使用する <!-- 4490704  -->
-iOS デバイス用のデバイス制限プロファイルを作成するときは、パスワードに指紋を使用できます。 今後の更新プログラムでは、指紋のパスワード設定でも顔認識が可能になる予定です ( **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  > **プラットフォームに [iOS]** > **プロファイルの種類に [デバイスの制限]** > **[パスワード]** )。 その結果、次の設定が変更されています。
-
-- **[指紋によるロック解除]** は **[Touch ID と Face ID のロック解除]** になりました。
-- **[指紋の変更 (管理モードのみ)]** は **[Touch ID と Face ID の変更 (監視モードのみ)]** になりました。
-
-Face ID は iOS 11.0 以降で使用できます。 現在の設定を確認するには、「[Intune を使用して機能を許可または制限するように iOS デバイスを設定する](device-restrictions-ios.md#password)」を参照してください。
-
-適用対象: iOS
-
-#### <a name="apps-feature-is-dependent-on-ratings-region-when-restricting-gaming-and-app-store-features-on-ios-devices----4593948----"></a>iOS デバイスでゲームやアプリ ストアの機能を制限している場合、アプリの機能は年齢区分の地域によって異なります <!-- 4593948  -->
-iOS デバイスでは、ゲーム、アプリ ストア、およびドキュメントの表示に関連する機能を許可または制限できます ( **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  > **プラットフォームに [iOS]** > プロファイルの種類に **[デバイスの制限]** > **[アプリ ストア、ドキュメント表示、ゲーム]** )。 米国などの年齢区分の地域を選択することもできます。 今後の更新プログラムでは、 **[アプリ]** 機能が **[年齢区分の地域]** の子に移動され、 **[年齢区分の地域]** に依存するようになります。
-
-現在の設定を確認するには、「[Intune を使用して機能を許可または制限するように iOS デバイスを設定する](device-restrictions-ios.md#app-store-doc-viewing-gaming)」を参照してください。
-
-適用対象: iOS
-
-#### <a name="administrative-templates-for-group-policy---------3510695---"></a>グループ ポリシーの管理用テンプレート     <!--  3510695 -->
+### <a name="administrative-templates-for-group-policy---------3510695---"></a>グループ ポリシーの管理用テンプレート     <!--  3510695 -->
 クラウド内のデバイスのセキュリティを向上するために、Intune を使用して Windows PC 用に選択したグループ ポリシー設定を構成することができる管理用テンプレートをリリースする予定です。  これらのテンプレートでは、Office、Windows、および OneDrive の最大 2,500 個の追加設定を提供するためにポリシー構成サービス プロバイダー (CSP) を使用します。
 
-####  <a name="new-settings-for-the-windows-security-baseline-----3534649-4217151------------"></a>Windows セキュリティ ベースラインの新しい設定  <!-- 3534649, 4217151          -->
-Windows セキュリティ ベースラインに新しい設定を追加しています。 最初の設定は、セキュア ブートが必要な仮想化ベースのセキュリティです。 2 つ目の設定では、画面がロックされているときに Windows アプリの音声によるアクティブ化を管理できます。
+### <a name="manage-filevault-for-macos-------3858502--1210104-----"></a>MacOS 用の FileVault を管理します。   <!--  3858502 + 1210104   -->
+Intune endpoint protection のデバイス構成プロファイルを使用して macOS デバイス向けの FileVault キー暗号化を管理することができます。 これには、表示と、会社のデバイスの暗号化キーの回転のエスクローが含まれます。 エンドユーザーはポータル サイト web サイトを通じてこれらのキーを取得することになります。
 
-#### <a name="security-baselines-will-be-generally-available------3785395---------"></a>セキュリティ ベースラインは一般提供される予定  <!--  3785395       -->
-セキュリティ ベースライン機能は間もなくプレビュー段階ではなくなり、一般提供される予定です。 
+### <a name="advanced-settings-for-windows-defender-firewall-------1311949-------"></a>Windows Defender ファイアウォールの詳細設定   <!--  1311949     -->
+まもなく、パブリック プレビューとして、Intune を使って Windows Defender 用のクライアント上のカスタム ファイアウォール規則を管理することができるようになります。  
 
-#### <a name="the-windows-security-baseline-template-will-be-generally-available-------3794072---------"></a>Windows セキュリティ ベースライン テンプレートは一般提供される予定   <!--  3794072       -->
-Windows セキュリティ ベースライン テンプレートは間もなくプレビュー段階ではなくなり、一般提供される予定です。 プレビュー バージョンのテンプレートは廃止され、新しいテンプレートがリリースされる予定です。
+### <a name="new-configuration-designer-when-creating-an-oemconfig-profile-for-android-enterprise----3712769----"></a>Android Enterprise に対する OEMConfig プロファイルを作成するときに、新しい構成デザイナー <!-- 3712769  -->
+Intune では、OEMConfig アプリを使用するデバイス構成プロファイルを作成することができます (デバイスの構成 > プロファイル > プロファイルを作成 > プラットフォーム用の Android エンタープライズ > プロファイルの種類の OEMConfig)。 これを行うときにテンプレートを変更するための値と JSON エディターが開きます。 この更新プログラムには、タイトルや説明などを含めて、アプリに埋め込まれている詳細情報を示すより優れたユーザー エクスペリエンスを持つ構成デザイナーが含まれています。 JSON エディターは、引き続き使用できますが、構成デザイナーで行った変更を示しています。
+
+現在の設定を確認するには[使用 OEMConfig による Android エンタープライズ デバイスの管理と](android-oem-configuration-overview.md)します。
+
+適用対象: Android エンタープライズ
+
 
 <!-- ***********************************************-->
-### <a name="device-management"></a>デバイス管理
+## <a name="device-management"></a>デバイス管理
 
-#### <a name="assign-scope-tags-to-all-managed-devices-in-a-security-group----3173810---"></a>セキュリティ グループ内のすべてのマネージド デバイスにスコープ タグを割り当てる <!-- 3173810 -->
-現時点では、個々のデバイスの **[プロパティ]** ページに移動し、スコープ タグを選択することで、デバイスにスコープ タグを割り当てることができます。 今後の更新プログラムでは、スコープ タグをセキュリティ グループに割り当てられるようになります。また、セキュリティ グループ内のすべてのデバイスもそれらのスコープ タグに関連付けられるようになります。 これを行うには、 **[Intune]**  >  **[ロール]**  >  **[スコープ (タグ)]**  >  **[作成]**  >  **[スコープ (タグ)]** を選択し、スコープ タグを割り当てるグループを選択します。 これらのグループ内のすべてのデバイスにもスコープ タグが割り当てられます。 この機能で設定されたスコープ タグによって、現在のデバイス スコープ タグ フローで設定されたスコープ タグは上書きされる予定です (今後の更新プログラムでは、スコープ タグをデバイスに割り当てる現在のフローは読み取り専用になる予定です)。
+### <a name="improve-device-location---3855417---"></a>デバイスの場所を向上させる<!-- 3855417 -->
+使用して、デバイスの正確な座標を拡大できる、**デバイスを検索**アクション。 紛失した iOS デバイスを見つける方法についての詳細については、次を参照してください。 [iOS デバイスを紛失検索](device-locate.md)します。
 
-#### <a name="see-the-security-patch-level-for-android-devices----4461911----"></a>Android デバイス用のセキュリティ パッチ レベルを確認する <!-- 4461911  -->
-Android デバイス用のセキュリティ パッチ レベルを確認できるようになる予定です。 これを行うには、 **[Intune]**  >  **[デバイス]**  >  **[すべてのデバイス]** > デバイスを選択 > **[監視]**  >  **[ハードウェア]** を選択します。
+### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>30 日間までのデバイスの自動クリーンアップ時間制限を構成します。 <!--4231059  -->
+デバイスの自動クリーンアップの最後のサインイン後に (90 日間の現在の制限) ではなく 30 日間の短い時間制限を設定することができます。 これを行うに移動**Intune** > **デバイス** > **セットアップ** > **デバイス クリーン アップ ルール**します。
+
+
+<!-- ***********************************************-->
+## <a name="security"></a>セキュリティ
+
+### <a name="import-and-export-security-baselines------3408610------------"></a>セキュリティ基準のインポートとエクスポート    <!--3408610          -->  
+エクスポートしたカスタマイズを実行し、Intune 環境間で共有できるように、セキュリティ基準をインポートし、機能を追加いたします。
+
 
 
 <!-- ***********************************************-->
@@ -159,7 +129,7 @@ Android デバイス用のセキュリティ パッチ レベルを確認でき�
 
 [!INCLUDE [Intune notices](./includes/intune-notices.md)]
 
-### <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目
 最近の開発状況について詳しくは、「[Microsoft Intune の新機能](whats-new.md)」をご覧ください。
 
 

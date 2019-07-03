@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e236548002f2779377e7ac57443077d48869e1f9
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ffaf29d34c7f6a08d48717f7560926d53cfa8ba2
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047709"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529767"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Microsoft Intune で Intune のオンプレミス Exchange コネクタを設定する
 この記事の情報は、Intune 用の Exchange Active Sync オンプレミス コネクタをインストールして監視するのに役立ちます。  Intune オンプレミス Exchange コネクタを[条件付きアクセス ポリシーと一緒に使用して、ご利用の Exchange オンプレミス メールボックスへのアクセスを許可またはブロックします](conditional-access-exchange-create.md)。 
@@ -43,9 +43,9 @@ Intune とオンプレミス Exchange Server が通信できるようにする�
 
 以下の表に、オンプレミス Exchange コネクタをインストールするコンピューターの要件を示します。  
 
-|  要件  |   説明を見る     |
+|  要件  |   詳細情報     |
 |---------------|------------------------|
-|  オペレーティング システム        | Intune は、Windows Server 2008 SP2 64 ビット、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2、または Windows Server 2016 の任意のエディションを実行しているコンピューター上のオンプレミス Exchange コネクタをサポートします。<br /><br />Server Core インストールでは、コネクタはサポートされません。  |
+|  Operating systems        | Intune は、Windows Server 2008 SP2 64 ビット、Windows Server 2008 R2、Windows Server 2012、Windows Server 2012 R2、または Windows Server 2016 の任意のエディションを実行しているコンピューター上のオンプレミス Exchange コネクタをサポートします。<br /><br />Server Core インストールでは、コネクタはサポートされません。  |
 | Microsoft Exchange          | オンプレミス コネクタには、Microsoft Exchange 2010 SP3 以降または従来の Exchange Online Dedicated が必要です。 Exchange Online Dedicated 環境が<strong>新しい</strong>構成か<strong>従来の</strong>構成かを確認するには、アカウント マネージャーに問い合わせてください。 |
 | モバイル デバイス管理機関           | [モバイル デバイス管理機関を Intune に設定します](mdm-authority-set.md)。 |
 | ハードウェア              | コネクタをインストールするコンピューターには、1.6 GHz の CPU と 2 GB の RAM と 10 GB の空きディスク容量が必要です。 |
@@ -75,11 +75,11 @@ Intune とオンプレミス Exchange Server が通信できるようにする�
 
 1. オンプレミス Exchange コネクタのサポートされている Windows Server オペレーティング システムで、Exchange Server を使用するライセンスを持つオンプレミス Exchange Server 内の管理者であるユーザー アカウントを使用して、[Azure portal](https://portal.azure.com) を開きサインインします。
 
-2. **[Intune]** > **[Exchange へのアクセス]** の順に移動します。  
+2. **[Intune]**  >  **[Exchange へのアクセス]** の順に移動します。  
 
-3. **[セットアップ]** で、**[Exchange ActiveSync のオンプレミス コネクタ]** を選択してから **[追加]** を選択します。
+3. **[セットアップ]** で、 **[Exchange ActiveSync のオンプレミス コネクタ]** を選択してから **[追加]** を選択します。
 
-4. **[コネクタの追加]** ページで、**[オンプレミス コネクタをダウンロードします]** を選択します。 オンプレミス Exchange コネクタは、開いたり保存したりできる圧縮 (.zip) フォルダー内にあります。 **[ファイルのダウンロード]** ダイアログ ボックスで **[保存]** を選んで、圧縮フォルダーを安全な場所に保存します。
+4. **[コネクタの追加]** ページで、 **[オンプレミス コネクタをダウンロードします]** を選択します。 オンプレミス Exchange コネクタは、開いたり保存したりできる圧縮 (.zip) フォルダー内にあります。 **[ファイルのダウンロード]** ダイアログ ボックスで **[保存]** を選んで、圧縮フォルダーを安全な場所に保存します。
 
     > [!IMPORTANT]
     > オンプレミス Exchange コネクタ フォルダー内のファイルの名前を変更したり、ファイルを移動したりしないでください。 フォルダーの内容を移動したり、名前を変更したりすると、Exchange コネクタのインストールが失敗します。
@@ -94,7 +94,7 @@ Intune とオンプレミス Exchange Server が通信できるようにする�
    > [!IMPORTANT]
    > 抽出先のフォルダーが安全な場所ではない場合、オンプレミス コネクタのインストールを完了したとき、**MicrosoftIntune.accountcert** という証明書ファイルを削除してください。
 
-3. **[Microsoft Intune Exchange Connector]** ダイアログ ボックスで、**[内部設置型 Microsoft Exchange Server]** または **[ホストされた Microsoft Exchange Server]** を選択します。
+3. **[Microsoft Intune Exchange Connector]** ダイアログ ボックスで、 **[内部設置型 Microsoft Exchange Server]** または **[ホストされた Microsoft Exchange Server]** を選択します。
 
    ![Exchange Server の種類を選択する場所を示す画像](./media/intune-sa-exchange-connector-config.png)
 
@@ -104,7 +104,7 @@ Intune とオンプレミス Exchange Server が通信できるようにする�
 
    1. Office 365 の Outlook on the web を開きます。
 
-   2. 左上の **?**  アイコンを選択し、**[バージョン情報]** を選択します。
+   2. 左上の **?** アイコンを選択し、 **[バージョン情報]** を選択します。
 
    3. **[POP 外部サーバー]** の値を探します。
 
@@ -113,7 +113,7 @@ Intune とオンプレミス Exchange Server が通信できるようにする�
 
        2. サーバーへのアクセスに使用する **[プロキシ サーバー名]** と **[ポート番号]** を入力します。
 
-       3. プロキシ サーバーにアクセスできるユーザーの資格情報を指定する必要がある場合は、**[資格情報を使用してプロキシ サーバーに接続する]** を選択します。 次に、**ドメイン\ユーザー**と**パスワード**を入力します。
+       3. プロキシ サーバーにアクセスできるユーザーの資格情報を指定する必要がある場合は、 **[資格情報を使用してプロキシ サーバーに接続する]** を選択します。 次に、**ドメイン\ユーザー**と**パスワード**を入力します。
 
        4. **[OK]** を選びます。
 
@@ -159,11 +159,11 @@ Intune は、サブスクリプションあたり複数のオンプレミス Exc
 Exchange コネクタの再インストールが必要な場合があります。 各 Exchange 組織に対して接続がサポートされるコネクタは 1 つだけであるため、組織用に 2 つ目のコネクタをインストールすると、元のコネクタは、インストールした新しいコネクタに置き換えられます。
 
 1. 「[Intune のオンプレミス Exchange コネクタのインストールと構成](#install-and-configure-the-intune-on-premises-exchange-connector)」の手順を使用して、新しいコネクタのインストールを開始します。 
-2. プロンプトが表示されたら、**[置換]** を選択して新しいコネクタをインストールします。  
+2. プロンプトが表示されたら、 **[置換]** を選択して新しいコネクタをインストールします。  
    ![コネクタを置換するかどうかを確認する構成プロンプト](./media/exchange-connector-install/prompt-to-replace.png)
 
 3. 引き続き前述の手順を使用して、Intune にもう一度ログインします。
-4. 最後の画面が表示されたら、**[閉じる]** を選択してインストールを完了します。  
+4. 最後の画面が表示されたら、 **[閉じる]** を選択してインストールを完了します。  
    ![設定を完了する](./media/exchange-connector-install/successful-reinstall.png)
  
 
@@ -171,7 +171,7 @@ Exchange コネクタの再インストールが必要な場合があります�
 
 Exchange コネクタの構成が正常に行えたら、接続の状態と前回成功した同期の試行を表示できます。 Exchange コネクタの接続を確認するには:
 
-1. Intune ダッシュ ボードで、**[Exchange へのアクセス]** を選択します。
+1. Intune ダッシュ ボードで、 **[Exchange へのアクセス]** を選択します。
 2. **[Exchange On-Premises のアクセス]** を選択して、Exchange コネクタごとに接続状態を確認します。
 
 また、前回いつ同期が完了したかも確認することができます。
@@ -191,9 +191,9 @@ Intune 1710 リリース以降では、[Exchange Connector および Intune の 
 
 Intune ダッシュボードで **[クイック同期]** または **[完全同期]** オプションを使用し、同期を実行するようにコネクタに強制できます。手順は次のようになります。
 
-   1. Intune ダッシュ ボードで、**[Exchange へのアクセス]** を選択します。
+   1. Intune ダッシュ ボードで、 **[Exchange へのアクセス]** を選択します。
    2. **[Exchange On-Premises のアクセス]** を選択します。
-   3. 同期するコネクタを選択し、**[クイック同期]** または **[完全同期]** を選択します。
+   3. 同期するコネクタを選択し、 **[クイック同期]** または **[完全同期]** を選択します。
 
 ## <a name="next-steps"></a>次の手順
 [Exchange On-premises の条件付きアクセス ポリシーを作成する](conditional-access-exchange-create.md)

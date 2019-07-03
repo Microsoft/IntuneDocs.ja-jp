@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0a83526a2e9333c0e6a131e59cee29a4a76fffa
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 28c3da6d2e3390d20aecc3673cac38e8424ef57a
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041187"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389306"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot を使用して Intune に Windows デバイスを登録する  
 Windows Autopilot を使用すると、Intune でのデバイスの登録が簡単になります。 カスタマイズされたオペレーティング システム イメージのビルドおよび維持は、時間のかかるプロセスです。 また、これらのカスタム オペレーティング システム イメージを新しいデバイスに適用し、エンド ユーザーに提供する前に使用の準備を行う場合にも、時間がかかることがあります。 Microsoft Intune と Autopilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および新しいデバイスへの適用を行わなくてもデバイスをエンド ユーザーに提供することができます。 Intune を使用して Autopilot デバイスを管理する場合、デバイスの登録後にポリシー、プロファイル、アプリなどを管理することができます。 利点、シナリオ、および前提条件の概要については、「[Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)」 (Windows Autopilot の概要) を参照してください。
@@ -99,8 +99,8 @@ Autopilot Deployment プロファイルは、Autopilot デバイスを構成す�
     
     - **[アカウントの変更オプションを非表示にする] (Windows 10 バージョン 1809 以降が必要)** : **[非表示]** を選択すると、会社のサインイン ページとドメイン エラー ページにアカウント変更オプションが表示されなくなります。 これらのオプションでは、[Azure Active Directory で会社のブランドを構成する](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)必要があります。
     - **[ユーザー アカウントの種類]** : ユーザーのアカウントの種類を選択します (**管理者**ユーザーまたは**標準**ユーザー)。
-    - **White Glove OOBE を許可する** : **[はい]** を選択して、White Glove のサポートを許可します。
-    - **デバイス名のテンプレートを適用する**: **[はい]** を選択すると、登録中にデバイスに名前を付けるときに使用するテンプレートが作成されます。 名前を 15 文字以下にする必要があります。また、文字、数字、ハイフンを含めることができます。 数字だけで名前を作ることはできません。 [%SERIAL% マクロ](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)を使用し、ハードウェア固有のシリアル番号を追加します。 または、[%RAND:x% マクロ](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)を使用して、数字のランダム文字列を追加します。x は追加する桁数です。 
+    - **[White Glove OOBE を許可する]** (Windows 10 バージョン 1903 以降が必要、[追加の物理的要件](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove#prerequisites)): **[はい]** を選択して、White Glove のサポートを許可します。
+    - **[デバイス名のテンプレートを適用する]** (Windows 10 バージョン 1809 以降が必要) **[はい]** を選択すると、登録中にデバイスに名前を付けるときに使用するテンプレートが作成されます。 名前を 15 文字以下にする必要があります。また、文字、数字、ハイフンを含めることができます。 数字だけで名前を作ることはできません。 [%SERIAL% マクロ](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)を使用し、ハードウェア固有のシリアル番号を追加します。 または、[%RAND:x% マクロ](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)を使用して、数字のランダム文字列を追加します。x は追加する桁数です。 
     - **[言語 (リージョン)]** \*: デバイスで使用する言語を選択します。 このオプションは、 **[配置モード]** に **[自己展開]** を選択した場合のみ使用できます。
     - **[キーボードを自動的に構成する]** \*: **[言語 (リージョン)]** を選択している場合は、 **[はい]** を選択してキーボード選択ページをスキップします。 このオプションは、 **[配置モード]** に **[自己展開]** を選択した場合のみ使用できます。
 8. **[次へ]** を選択します。

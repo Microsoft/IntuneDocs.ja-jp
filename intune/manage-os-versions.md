@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e717895e039e46ba7877476f67f29c1ce83b767
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b490d5ff083d344a1b39d27a2298503bdfa1f130
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041671"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044908"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Intune を使用したオペレーティング システムのバージョン管理
 最近のモバイル プラットフォームおよびデスクトップ プラットフォームでは、主要な更新プログラム、修正プログラム、および新しいバージョンが速いペースでリリースされます。 Windows 上の更新プログラムおよび修正プログラムについては、完全に管理するためのコントロールがありますが、iOS や Android などの他のプラットフォームでは、エンド ユーザーをプロセスに参加させる必要があります。  Microsoft Intune には、異なるプラットフォーム間のオペレーティング システムのバージョン管理を構築するための機能があります。

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f17bdf21db61616f88cef4d257fbcd28d941dae8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 90b3e858a06a6f3a34de6ec8102e1a6c458369a2
+ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373466"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298422"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Intune で Windows 10 デバイスに対して PowerShell スクリプトを使用する
 
@@ -45,7 +45,7 @@ Intune 管理拡張機能には次の前提条件があります。 これらが
 
 - Windows 10 バージョン 1607 以降を実行しているデバイス。 デバイスが[一括自動登録](windows-bulk-enroll.md)を使用して登録される場合は、Windows 10 バージョン 1703 以降でデバイスを実行する必要があります。 Intune 管理拡張機能は S モードの Windows 10 ではサポートされません。S モードではストア以外にあるアプリの実行が許可されないためです。 
   
-- 次を含む、Azure Active Directory (AD) に参加しているデバイス:
+- 次を含む、Azure Active Directory (AD) に参加しているデバイス:  
   
   - Hybrid Azure AD 参加済み: Azure Active Directory (AD) だけでなく、オンプレミスの Active Directory (AD) にも参加しているデバイス。 [Hybrid Azure Active Directory 参加の実装の計画](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)について、ガイダンスを参照してください。
 
@@ -55,13 +55,20 @@ Intune 管理拡張機能には次の前提条件があります。 これらが
   
   - 次の状況で、Intune に手動で登録されたデバイス:
   
-    - ユーザーがローカル ユーザー アカウントを使用してデバイスにサインインし、デバイスを手動で Azure AD に参加させている (そして Intune への自動登録が Azure AD で有効になっている)。
+    - Azure AD では、[Intune への自動登録](quickstart-setup-auto-enrollment.md)が有効です。 エンド ユーザーは、ローカル ユーザー アカウントを使用してデバイスにサインインし、手動でデバイスを Azure AD に参加させてから、自分の Azure AD アカウントを使用してデバイスにサインインします。
     
-    または
+    または  
     
     - ユーザーが自分の Azure AD アカウントを使用してデバイスにサインインし、Intune に登録している。
 
-  - Configuration Manager と Intune を使用して共同管理しているデバイス。 ガイダンスについては、「[共同管理とは](https://docs.microsoft.com/sccm/comanage/overview)」を参照してください。
+  - Configuration Manager と Intune を使用して共同管理しているデバイス。 **[クライアント アプリ]** ワークロードが **[Pilot Intune]\(パイロット Intune\)** または **[Intune]** に設定されていることを確認します。 以下を参考にしてください。 
+  
+    - [共同管理とは](https://docs.microsoft.com/sccm/comanage/overview) 
+    - [クライアント アプリ ワークロード](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
+    - [Configuration Manager のワークロードを Intune に切り替える](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+  
+> [!TIP]
+> 必ずデバイスを Azure AD に[参加](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)させます。 Azure AD への[登録](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)のみが行われているデバイスは、スクリプトを受信しません。
 
 ## <a name="create-a-script-policy"></a>スクリプト ポリシーを作成する 
 
@@ -87,7 +94,7 @@ Intune 管理拡張機能には次の前提条件があります。 これらが
 5. **[OK]**  >  **[作成]** の順に選択してスクリプトを保存します。
 
 > [!NOTE]
-> PowerShell スクリプトがユーザー コンテキストに設定され、デバイスのエンド ユーザーが管理特権を持っている場合、スクリプトは (既定で) 管理特権で実行されます。
+> スクリプトがユーザー コンテキストに設定され、エンド ユーザーに管理者権限がある場合、既定で PowerShell スクリプトは管理者特権で実行されます。
 
 ## <a name="assign-the-policy"></a>ポリシーを割り当てる
 
@@ -156,6 +163,7 @@ Azure Portal でユーザーとデバイスの PowerShell スクリプトの実�
     > [!TIP]
     > **Microsoft Intune 管理拡張機能**はサービス アプリ (services.msc) に表示されているその他のサービスと同様、デバイスで実行されるサービスです。 デバイスが再起動した後、このサービスも再開する可能性があります。Intune サービスで割り当てられている PowerShell スクリプトがないかを確認してください。 **Microsoft Intune 管理拡張機能**サービスが手動に設定されている場合は、デバイスの再起動後にサービスが再開しない可能性があります。
 
+- 必ずデバイスを [Azure AD に参加](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)させます。 職場や組織にのみ参加しているデバイス ([Azure AD に登録されている](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)) はスクリプトを受信しません。
 - Intune 管理拡張機能クライアントは、1 時間に 1 回、Intune でスクリプトまたはポリシーに変更があったかどうかを確認します。
 - Intune 管理拡張機能が `%ProgramFiles(x86)%\Microsoft Intune Management Extension` にダウンロードされていることを確認します。
 - Surface Hub または S モードの Windows 10 ではスクリプトは実行しません。

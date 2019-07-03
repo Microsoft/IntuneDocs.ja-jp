@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546694409e6f87d85c5ef934b5d084b0955e0bf7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c15bd301b60481f4d8b15617512851e2cc29034a
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041862"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529763"
 ---
 # <a name="incomplete-user-enrollments-report"></a>不完全なユーザー登録レポート
 
@@ -35,9 +35,9 @@ ms.locfileid: "66041862"
 
 不完全なユーザー登録とは、ユーザーが次のいずれかを実行することです。
 
--   登録を停止するアクションを明示的に選ぶ
--   登録中にポータル サイトを閉じる
--   登録のセクション間で 30 分以上の時間を費やす
+- 登録を停止するアクションを明示的に選ぶ
+- 登録中にポータル サイトを閉じる
+- 登録のセクション間で 30 分以上の時間を費やす
 
 ユーザーが登録を何度も停止し、再開している場合、複数回試行され、複数回登録を完了しなかったと表示されます。 ユーザーが次の別の登録画面に移る間に 30 分間待機する場合、複数回登録を完了しなかったものと見なされます。
 
@@ -53,18 +53,18 @@ ms.locfileid: "66041862"
 
 レポートの上部には、すべての登録の不完全登録の回数と割合が表示されます。
 
--   登録が開始されました:登録の試行回数です。
--   不完全な登録:登録完了および準拠デバイスとならなかった登録の試行回数です。
--   不完全率:破棄された登録の試行の割合です (破棄された登録/開始された登録)。
+- 登録が開始されました:登録の試行回数です。
+- 不完全な登録:登録完了および準拠デバイスとならなかった登録の試行回数です。
+- 不完全率:破棄された登録の試行の割合です (破棄された登録/開始された登録)。
 
 ### <a name="line-graph"></a>折れ線グラフ
 
 折れ線グラフでは、次の 4 つの主要な登録セクションの日単位での不完全登録回数が示されます。
 
--   セットアップ チェックリスト
--   プラットフォーム画面
--   利用規約
--   コンプライアンス/アクティブ化
+- セットアップ チェックリスト
+- プラットフォーム画面
+- 利用規約
+- コンプライアンス/アクティブ化
 
 ### <a name="user-abandonment-actions"></a>User abandonment actions\(ユーザーの破棄操作\)
 

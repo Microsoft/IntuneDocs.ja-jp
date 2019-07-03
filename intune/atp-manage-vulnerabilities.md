@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 987e3171c4e5c5ba3f15097837e2c018ddc7a4b6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: aa6dfef745157ae96736f8405fd5cafc33d4335f
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049210"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045294"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Intune を使用して Microsoft Defender ATP によって検出された脆弱性を修復する  
 
@@ -56,22 +56,22 @@ Windows Defender Security Center コンソールで、ATP セキュリティ管�
 
   この例の Media Player はマネージド アプリではないため、Intune で提供できるのはテキストでの説明のみです。 アプリがマネージドであった場合、Intune では更新バージョンをダウンロードする手順を提供でき、更新されたファイルを展開に追加できるようにアプリの展開を開くためのリンクが提供されます。 
 
-- 修復が完了した後、Intune 管理者はセキュリティ タスクを開き、**[タスクの完了]** を選択します。  Intune と ATP で修復の状態が更新され、セキュリティ管理者は脆弱性の状態が変更されたことを確認します。  
+- 修復が完了した後、Intune 管理者はセキュリティ タスクを開き、 **[タスクの完了]** を選択します。  Intune と ATP で修復の状態が更新され、セキュリティ管理者は脆弱性の状態が変更されたことを確認します。  
 
-## <a name="prerequisites"></a>前提条件  
+## <a name="prerequisites"></a>必要条件  
 
-**サブスクリプション**:   
+**サブスクリプション**:  
 - Microsoft Intune  
 - Microsoft Defender Advanced Threat Protection ([無料試用版にサインアップ](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-main-abovefoldlink))  
 
-**ATP 用の Intune の構成**:   
+**ATP 用の Intune の構成**:  
 - Microsoft Defender ATP でサービス間の接続を構成します。  
 - ATP によって評価されるリスクがあるデバイスに、プロファイルの種類を **Microsoft Defender ATP (Windows 10 Desktop)** にしてデバイス コンプライアンス ポリシーを展開します。
-  ATP で動作するように Intune を設定する方法については、[Intune の条件付きアクセスでの Microsoft Defender ATP に対するコンプライアンスの適用](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)に関する記事をご覧ください。  
+  ATP で動作するように Intune を設定する方法については、[Intune の条件付きアクセスでの Microsoft Defender ATP に対するコンプライアンスの適用](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)に関する記事を参照してください。  
 
 ## <a name="work-with-security-tasks"></a>セキュリティ タスクを処理する  
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインし、**[デバイスのセキュリティ]** > **[セキュリティ タスク]** に移動します。  
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインし、 **[デバイスのセキュリティ]**  >  **[セキュリティ タスク]** に移動します。  
 2. 一覧からタスクを選択してリソース ウィンドウを開き、そのセキュリティ タスクに対する追加の詳細を表示します。  
 3. セキュリティ タスクのリソース ウィンドウを表示している間に、追加のリンクを選択できます。  
    - [マネージド アプリ] - 脆弱であるアプリケーションが表示されます。 その脆弱性が複数のアプリに適用されるときは、アプリのフィルター処理された一覧が表示されます。  
@@ -84,7 +84,7 @@ Windows Defender Security Center コンソールで、ATP セキュリティ管�
 
    可能な場合、修復手順には Intune コンソールで関連する構成オブジェクトを開くリンクが含まれます。  
 
-6. 修復手順を完了した後、セキュリティ タスクを開き、**[タスクの完了]** を選択します。  このアクションにより、Intune と ATP の両方でセキュリティ タスクの状態が更新されます。  
+6. 修復手順を完了した後、セキュリティ タスクを開き、 **[タスクの完了]** を選択します。  このアクションにより、Intune と ATP の両方でセキュリティ タスクの状態が更新されます。  
 
 修復が成功した後、修復されたデバイスからの新しい情報に基づき、ATP のリスク エクスポージャ スコアが下がる場合があります。 
 

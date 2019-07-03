@@ -16,23 +16,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5d229972c238756598694d2e3463f22290924ccc
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 4877920821b2471f752f9fdb8941e87576d937ba
+ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045472"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67413855"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS 用 Microsoft Intune App SDK 開発者ガイド
 
 > [!NOTE]
 > [Intune App SDK ガイドの概要](app-sdk-get-started.md)に関する記事を読むことを検討してください。このガイドでは、サポートされる各プラットフォームで統合のための準備をする方法について説明しています。
 
-iOS 用 Microsoft Intune App SDK を使用すると、ネイティブ iOS アプリに Intune アプリ保護ポリシー (**APP** ポリシーまたは **MAM** ポリシーともいう) を組み込むことができます。 MAM 対応のアプリケーションが Intune アプリ SDK に統合されています。 Intune で積極的にアプリを管理している場合、IT 管理者はモバイル アプリにアプリ保護ポリシーを展開できます。
+iOS 用 Microsoft Intune App SDK を使用すると、ネイティブ iOS アプリに Intune アプリ保護ポリシー (APP ポリシーまたは MAM ポリシーともいう) を組み込むことができます。 MAM 対応のアプリケーションが Intune App SDK に統合されています。 Intune で積極的にアプリを管理している場合、IT 管理者はモバイル アプリにアプリ保護ポリシーを展開できます。
 
 ## <a name="prerequisites"></a>必要条件
 
-* OS X 10.8.5 以降を実行し、Xcode 9 以降がインストールされている Mac OS コンピューターが必要になります。
+* OS X 10.8.5 以降を実行していて、また Xcode 9 以降もインストールされている Mac OS コンピューターが必要になります。
 
 * アプリは iOS 10 以降を対象としている必要があります。
 
@@ -40,19 +40,30 @@ iOS 用 Microsoft Intune App SDK を使用すると、ネイティブ iOS アプ
 
 * [GitHub](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) で iOS 用 Intune アプリ SDK のファイルをダウンロードします。
 
-## <a name="whats-in-the-sdk"></a>SDK の機能
+## <a name="whats-in-the-sdk-repository"></a>SDK リポジトリには
 
-iOS 用 Intune App SDK には、スタティック ライブラリ、リソース ファイル、API ヘッダー、デバッグ設定 plist ファイルおよび構成ツールが含まれています。 ほとんどのポリシー適用では、クライアント アプリに単にリソース ファイルを含め、ライブラリに静的にリンクできます。 高度な Intune APP 機能は、API を介して適用されます。
+次のファイルを Swift コードが含まれていないか、10.2 より前の Xcode のバージョンでコンパイルされたアプリ/拡張機能に関連します。
 
-このガイドでは、iOS 用 Intune App SDK の次のコンポーネントの使用方法について説明します。
+* **IntuneMAM.framework**: Intune アプリ SDK フレームワーク。 このフレームワークは、Intune のクライアント アプリケーションの管理を有効にする、アプリ拡張/にリンクすることをお勧めします。 ただし、静的ライブラリのパフォーマンスの利点を好む開発者も可能性があります。 以下をご覧ください。
 
-* **libIntuneMAM.a**: Intune アプリ SDK の静的ライブラリ。 アプリで拡張機能を使用しない場合は、このライブラリをプロジェクトにリンクして、アプリで Intune クライアント アプリケーション管理を行えるようにします。
+* **libIntuneMAM.a**: Intune アプリ SDK の静的ライブラリ。 開発者は、フレームワークではなくスタティック ライブラリをリンクすることができます。 スタティック ライブラリがビルド時にバイナリ アプリ/拡張に直接埋め込まれているために、スタティック ライブラリを使用するいくつかの起動時のパフォーマンスの利点があります。 ただし、アプリに統合することより複雑なプロセスです。 場合は、アプリに含まれるすべての拡張機能、スタティック ライブラリをアプリにリンクして、拡張機能と、アプリ バンドル サイズを大きく、スタティック ライブラリとしてに埋め込まれる各アプリ/拡張機能バイナリ。 フレームワークを使用して、アプリと拡張機能はアプリのサイズを小さくしてその結果、同じ Intune SDK バイナリを共有できます。
 
-* **IntuneMAM.framework**: Intune アプリ SDK フレームワーク。 アプリで Intune クライアント アプリケーション管理を行えるようにするには、このフレームワークをプロジェクトにリンクします。 アプリで拡張機能を使用する場合は、静的ライブラリではなくフレームワークを使用して、プロジェクトが静的ライブラリの複数のコピーを作成しないようにします。
+* **IntuneMAMResources.bundle**: SDK が依存するリソースが含まれているリソース バンドル。 リソース バンドルは、スタティック ライブラリ (libIntuneMAM.a) を統合することがアプリにのみ必要です。
 
-* **IntuneMAMResources.bundle**: SDK が依存するリソースが含まれているリソース バンドル。
+次のファイルは、Swift コードを含むことが Xcode 10.2 + でコンパイルされたアプリ/拡張機能に関連します。
 
-* **ヘッダー**: Intune アプリ SDK の API を表示します。 API を使用する場合は、API を含むヘッダー ファイルをインクルードする必要があります。 次のヘッダー ファイルには、Intune App SDK から開発者に提供されている API、データ型、プロトコルが含まれています。
+* **IntuneMAMSwift.framework**: The Intune アプリ SDK の Swift フレームワーク。 このフレームワークには、Api は、アプリを呼び出すためのすべてのヘッダーが含まれています。 アプリ/拡張機能に Intune のクライアント アプリケーションの管理を有効にするには、このフレームワークをリンクします。
+
+* **IntuneMAMSwiftStub.framework**: The Intune App SDK Swift スタブ フレームワーク。 これは、アプリ/拡張機能にリンクする必要があります IntuneMAMSwift.framework の依存関係が必要です。
+
+
+次のファイルがすべてのアプリ/拡張機能に関連します。
+
+* **IntuneMAMConfigurator**: Intune 管理の必要な最低限の変更をアプリまたは拡張機能の Info.plist の構成に使用するツール。 アプリまたは拡張機能の機能によっては、Info.plist に追加の手動変更を加える必要があります。
+
+* **ヘッダー**: パブリックな Intune アプリ SDK の API を表示します。 これらのヘッダーは、ので、フレームワークのいずれかを利用する開発者は、そのプロジェクトにヘッダーを手動で追加する必要はありません、IntuneMAM/IntuneMAMSwift フレームワーク内に含まれています。 リンク、スタティック ライブラリ (libIntuneMAM.a) を選択する開発者は、そのプロジェクトに手動でこれらのヘッダーを含める必要があります。
+
+次のヘッダー ファイルには、Intune App SDK から開発者に提供されている API、データ型、プロトコルが含まれています。
 
     * IntuneMAMAppConfig.h
     * IntuneMAMAppConfigManager.h
@@ -70,30 +81,32 @@ iOS 用 Intune App SDK には、スタティック ライブラリ、リソー�
     * IntuneMAMPolicyManager.h
     * IntuneMAMVersionInfo.h
 
-開発者は、IntuneMAM.h をインポートするだけで上記のすべてのヘッダーの内容が使用できるようにすることができます。
+開発者は、IntuneMAM.h をインポートするだけで、前のすべてのヘッダーの内容を使用可能にすることができます
 
 
 ## <a name="how-the-intune-app-sdk-works"></a>Intune アプリ SDK のしくみ
 
-iOS 用 Intune アプリ SDK の目的は、最小限のコード変更で iOS アプリケーションに管理機能を追加することです。 コードの変更が少ないほど、モバイル アプリケーションの一貫性と安定性に与える影響がなくなり、短期間で製品化できます。
+iOS 用 Intune アプリ SDK の目的は、最小限のコード変更で iOS アプリケーションに管理機能を追加することです。 コードの変更が少ないほど、市場投入までの時間が短くなりますが、モバイル アプリケーションの一貫性と安定性に影響を出ることはありません。
 
 
 ## <a name="build-the-sdk-into-your-mobile-app"></a>モバイル アプリとして SDK をビルドする
 
-Intune アプリ SDK を有効にするには、次の手順を実行します。
+Intune App SDK を有効にするには、次の手順を実行します。
 
-1. **オプション 1 (推奨)** : `IntuneMAM.framework` をプロジェクトにリンクします。 プロジェクトのターゲットの **[Embedded Binaries]** (埋め込みバイナリ) の一覧に `IntuneMAM.framework` をドラッグします。
+1. **オプション 1 - (推奨) Framework**: Xcode 10.2 + を使用しているアプリ/拡張機能には、Swift コードが含まれている場合は、リンク`IntuneMAMSwift.framework`と`IntuneMAMSwiftStub.framework`ターゲット: ドラッグ`IntuneMAMSwift.framework`と`IntuneMAMSwiftStub.framework`を**埋め込みバイナリ**プロジェクト ターゲットの一覧。
+
+    それ以外の場合、リンク`IntuneMAM.framework`ターゲット: ドラッグ`IntuneMAM.framework`を**埋め込みバイナリ**プロジェクト ターゲットの一覧。
 
    > [!NOTE]
    > フレームワークを使用する場合は、アプリ ストアにアプリを送信する前に、ユニバーサル フレームワークからシミュレーター アーキテクチャを手動で除去する必要があります。 詳細については、「[iOS 用 Microsoft Intune App SDK 開発者ガイド](#submit-your-app-to-the-app-store)」を参照してください。
 
-   **オプション 2**: `libIntuneMAM.a` ライブラリにリンクします。 `libIntuneMAM.a` ライブラリをプロジェクト ターゲットの **[Linked Frameworks and Libraries]** (リンク先フレームワークおよびライブラリ) ボックスの一覧にドラッグします。
+   **オプション 2 - スタティック ライブラリ**: このオプションは Swift コードが含まれていない、または Xcode でビルドされたアプリ/拡張機能の使用のみ < 10.2 します。 `libIntuneMAM.a` ライブラリにリンクします。 `libIntuneMAM.a` ライブラリをプロジェクト ターゲットの **[Linked Frameworks and Libraries]** (リンク先フレームワークおよびライブラリ) ボックスの一覧にドラッグします。
 
     ![Intune App SDK iOS: リンク先フレームワークおよびライブラリ](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
     `-force_load {PATH_TO_LIB}/libIntuneMAM.a` を次のいずれかに追加して、`{PATH_TO_LIB}` を Intune アプリ SDK の場所に置き換えます。
-   * プロジェクトの `OTHER_LDFLAGS` ビルド構成設定
-   * Xcode UI の **その他のリンカー フラグ**
+   * プロジェクトの `OTHER_LDFLAGS` ビルド構成設定。
+   * Xcode UI の **[その他のリンカー フラグ]** 。
 
      > [!NOTE]
      > `PATH_TO_LIB` を検索するには、`libIntuneMAM.a` ファイルを選択し、 **[ファイル]** メニューの **[情報の取得]** を選択します。 **[Info]** (情報 ) ウィンドウの **[General]** (全般) セクションから、 **[Where]** (場所) 情報 (パス) をコピーして貼り付けます。
@@ -101,8 +114,21 @@ Intune アプリ SDK を有効にするには、次の手順を実行します�
      **[ビルド フェーズ]** の **[Copy Bundle Resources]** (バンドル リソースのコピー) にあるリソース バンドルをドラッグして、`IntuneMAMResources.bundle` リソース バンドルをプロジェクトに追加します。
 
      ![Intune App SDK iOS: バンドル リソースのコピー](./media/intune-app-sdk-ios-copy-bundle-resources.png)
+     
+2. Swift からの Intune Api を呼び出す必要がある場合、アプリ/拡張機能を OBJECTIVE-C ブリッジ ヘッダーを使用して必要な Intune SDK のヘッダーをインポートする必要があります。 アプリ/拡張機能が既にを OBJECTIVE-C ブリッジ ヘッダーを含めない場合を使用していずれかを指定、`SWIFT_OBJC_BRIDGING_HEADER`ビルド構成設定または Xcode UI の**OBJECTIVE-C Bridging Header**フィールド。 ブリッジのヘッダーは、このようなものになります。
 
-2. 次の iOS フレームワークをプロジェクトに追加します。  
+   ```objc
+      #import <IntuneMAMSwift/IntuneMAM.h>
+   ```
+   
+   これにより、Intune SDK のすべての Api 使用可能なすべてのソースの Swift ファイル全体でアプリ/拡張機能。 
+   
+    > [!NOTE]
+    > * ブリッジ特定 Intune SDK のヘッダーだけ包括的 IntuneMAM.h ではなく、Swift にすることができます。
+    > * 統合したら、フレームワークまたは静的ライブラリに応じて、ヘッダー ファイルへのパスが異なる場合があります。
+    > * Intune SDK の Api で利用可能に Swift モジュールのインポート ステートメントを使用して (例: IntuneMAMSwift をインポート) は現在サポートされていません。 推奨される方法を OBJECTIVE-C ブリッジ ヘッダーを使用します。
+    
+3. 次の iOS フレームワークをプロジェクトに追加します。  
     * MessageUI.framework  
     * Security.framework  
     * MobileCoreServices.framework  
@@ -115,10 +141,10 @@ Intune アプリ SDK を有効にするには、次の手順を実行します�
     * QuartzCore.framework  
     * WebKit.framework
 
-3. 各プロジェクト ターゲットの **[機能]** を選択し、 **[Keychain Sharing]** (キーチェーン共有) スイッチを有効にして、キーチェーン共有を有効にします (まだ有効になっていない場合)。 次の手順に進むには、キーチェーン共有が必要です。
+4. 各プロジェクト ターゲットの **[機能]** を選択し、 **[Keychain Sharing]** (キーチェーン共有) スイッチを有効にして、キーチェーン共有を有効にします (まだ有効になっていない場合)。 次の手順に進むには、キーチェーン共有が必要です。
 
    > [!NOTE]
-   > プロビジョニング プロファイルで新しいキーチェーン共有値がサポートされている必要があります。 キーチェーン アクセス グループは、ワイルドカード文字をサポートする必要があります。 これを確認するには、テキスト エディターで .mobileprovision ファイルを開いて **keychain-access-groups** を検索し、ワイルド カードがあることを確認します。 次に例を示します。
+   > プロビジョニング プロファイルで新しいキーチェーン共有値がサポートされている必要があります。 キーチェーン アクセス グループは、ワイルドカード文字をサポートする必要があります。 これを確認するには、テキスト エディターで .mobileprovision ファイルを開いて **keychain-access-groups** を検索し、ワイルドカード文字があることを確認します。 次に例を示します。
    >  ```xml
    >  <key>keychain-access-groups</key>
    >  <array>
@@ -126,29 +152,29 @@ Intune アプリ SDK を有効にするには、次の手順を実行します�
    >  </array>
    >  ```
 
-4. キーチェーン共有を有効にした後、次の手順に従って、Intune App SDK がデータを格納する個別のアクセス グループを作成します。 キーチェーン アクセス グループを作成するには、UI を使用するか、権利ファイルを使用します。 キーチェーン アクセス グループを作成する UI を使用している場合、次の手順を実行してください。
+5. キーチェーン共有を有効にした後、次の手順に従って、Intune App SDK がデータを格納する個別のアクセス グループを作成します。 キーチェーン アクセス グループを作成するには、UI を使用するか、権利ファイルを使用します。 キーチェーン アクセス グループを作成する UI を使用している場合、次の手順を実行してください。
 
-    1. モバイル アプリでキーチェーン アクセス グループが定義されていない場合は、アプリのバンドル ID を**最初**のグループとして追加します。
+     」を参照します。 モバイル アプリでキーチェーン アクセス グループが定義されていない場合は、アプリのバンドル ID を**最初**のグループとして追加します。
     
-    2. 共有キーチェーン グループ `com.microsoft.intune.mam` を既存のアクセス グループに追加します。 このアクセス グループは、Intune アプリ SDK でデータを格納するために使用されます。
+    b. 共有キーチェーン グループ `com.microsoft.intune.mam` を既存のアクセス グループに追加します。 Intune App SDK はこのアクセス グループを使用してデータを格納します。
     
-    3. `com.microsoft.adalcache` を既存のアクセス グループに追加します。
+    c. `com.microsoft.adalcache` を既存のアクセス グループに追加します。
     
-        ![Intune App SDK iOS: キーチェーン共有](./media/intune-app-sdk-ios-keychain-sharing.png)
+        ![Intune App SDK iOS: keychain sharing](./media/intune-app-sdk-ios-keychain-sharing.png)
     
-    4. 前に示したキーチェーン アクセス グループを作成する Xcode UI を使用するのではなく、権利ファイルを直接編集している場合、キーチェーン アクセス グループの先頭に `$(AppIdentifierPrefix)` を追加します (Xcode ではこの処理が自動的に行われます)。 次に例を示します。
+    d. 前に示したキーチェーン アクセス グループを作成する Xcode UI を使用するのではなく、権利ファイルを直接編集している場合、キーチェーン アクセス グループの先頭に `$(AppIdentifierPrefix)` を追加します (Xcode ではこの処理が自動的に行われます)。 次に例を示します。
     
         - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
         - `$(AppIdentifierPrefix)com.microsoft.adalcache`
     
         > [!NOTE]
-        > 権利ファイルとは、自分のモバイル アプリケーションに固有の XML ファイルです。 iOS アプリで特別なアクセス許可と機能を指定するために使用されます。 お使いのアプリにあらかじめ権利ファイルが無かった場合、キーチェーンの共有 (手順 3) を有効にすると Xcode によってアプリ用に権利ファイルが生成されます。 アプリのバンドル ID が一覧の最初のエントリであることを確認します。
+        > An entitlements file is an XML file that is unique to your mobile application. It is used to specify special permissions and capabilities in your iOS app. If your app did not previously have an entitlements file, enabling keychain sharing (step 3) should have caused Xcode to generate one for your app. Ensure the app's bundle ID is the first entry in the list.
 
-5. アプリが `UIApplication canOpenURL` に渡す各プロトコルを、アプリの Info.plist ファイルの `LSApplicationQueriesSchemes` 配列に含めます。 次の手順に進む前に、変更内容を必ず保存してください。
+6. アプリが `UIApplication canOpenURL` に渡す各プロトコルを、アプリの Info.plist ファイルの `LSApplicationQueriesSchemes` 配列に含めます。 次の手順に進む前に、変更内容を必ず保存してください。
 
-6. アプリでまだ FaceID が使用されていない場合、既定のメッセージと共に [NSFaceIDUsageDescription Info.plist キー](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75)が確実に構成されているようにします。 これは、iOS がアプリでの FaceID の用途をユーザーに通知するために必要です。 Intune アプリ保護ポリシー設定では、IT 管理者が構成している場合、アプリにアクセスするための手段として FaceID を使用することが許可されています。
+7. アプリでまだ FaceID が使用されていない場合、既定のメッセージと共に [NSFaceIDUsageDescription Info.plist キー](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75)が確実に構成されているようにします。 これは、iOS がアプリでの FaceID の用途をユーザーに通知するために必要です。 Intune アプリ保護ポリシー設定では、IT 管理者が構成している場合、アプリにアクセスするための手段として FaceID を使用することが許可されています。
 
-7. [SDK のリポジトリ](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)に含まれる IntuneMAMConfigurator ツールを使用して、アプリの Info.plist の構成を終了します。 このツールには、次の 3 つのパラメーターがあります。
+8. [SDK のリポジトリ](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)に含まれる IntuneMAMConfigurator ツールを使用して、アプリの Info.plist の構成を終了します。 このツールには、次の 3 つのパラメーターがあります。
 
    |プロパティ|使用方法|
    |---------------|--------------------------------|

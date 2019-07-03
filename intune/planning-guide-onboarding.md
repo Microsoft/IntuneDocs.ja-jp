@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e21eb6169acf8ae69ace94fd54007eaa4f7f90f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5ed13994576f67c7b740a2ea895db9d1a0f42289
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046748"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044345"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Microsoft Intune の計画を実装する
 
@@ -127,7 +127,7 @@ Intune はコンプライアンス ポリシーに対応しています。 Intun
 
 Intune は、Exchange Online、Exchange オンプレミス、SharePoint Online、Skype for Business Online、Dynamics CRM Online の条件付きアクセスに対応しています。 Intune 展開のユース ケースと要件に基づき、条件付きアクセスを有効にして構成します。
 
--   条件付きアクセスの詳細については、[ここ](conditional-access.md)をご覧ください。
+-   詳しくは、「[Microsoft Intune で電子メール、Office 365、およびその他のサービスへのアクセスを制限する](conditional-access.md)」をご覧ください。
 
 ### <a name="task-13-enroll-devices"></a>タスク 13: デバイスの登録
 

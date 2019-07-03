@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dec78e0b1e323e99b6e70f71db982256aa98d18
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: cdedbfc611d44b4d6acb01e5e05bf3e73ed7fbda
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041223"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044201"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>クイック スタート:Android デバイス用のパスワード コンプライアンス ポリシーを作成する
 
@@ -43,23 +43,23 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
 このクイック スタートでは、Intune を使用して、従業員の Android ユーザーに対し、Android デバイスでの情報へのアクセスを許可する前に、特定の長さのパスワードが必要なように設定します。
 
-1. Intune で、**[デバイスのポリシー準拠]** > **[ポリシー]** > **[ポリシーの作成]** の順に選択します。
+1. Intune で、 **[デバイスのポリシー準拠]**  >  **[ポリシー]**  >  **[ポリシーの作成]** の順に選択します。
 2. 「**Android compliance**」という **[名前]** を追加します。 **[説明]** も追加します。
-3. **[プラットフォーム]** で、**[Android]** を選択します。 
-4. **[設定]** > **[システム セキュリティ]** を選択し、Android の **[システム セキュリティ]** ブレードを表示します。
+3. **[プラットフォーム]** で、 **[Android]** を選択します。 
+4. **[設定]**  >  **[システム セキュリティ]** を選択し、Android の **[システム セキュリティ]** ブレードを表示します。
 5. **[モバイル デバイスのロック解除にパスワードを必要とする]** の **[必要]** をクリックします。
 6. **[必要なパスワードの種類]** の横の **[数字を使用する]** を選択します。
 7. **[パスワードの最小文字数]** に「**6**」と入力します。 
 
     ![Microsoft Intune でのグループ作成のスクリーンショット](media/quickstart-set-password-length-android/quickstart-set-password-length-android-01.png)
 
-7. 終わったら、**[OK]** > **[OK]** > **[作成]** の順にクリックして、ポリシーを作成します。
+7. 終わったら、 **[OK]**  >  **[OK]**  >  **[作成]** の順にクリックして、ポリシーを作成します。
 
 ポリシーが正常に作成されると、デバイス コンプライアンス ポリシーの一覧に表示されます。 
 
 ## <a name="clean-up-resources"></a>リソースをクリーンアップする
 
-不要になったら、ポリシーを削除します。 そのためには、コンプライアンス ポリシーを選択して、**[削除]** をクリックします。
+不要になったら、ポリシーを削除します。 そのためには、コンプライアンス ポリシーを選択して、 **[削除]** をクリックします。
 
 ## <a name="next-steps"></a>次の手順
 

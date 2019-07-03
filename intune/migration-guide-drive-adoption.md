@@ -1,5 +1,5 @@
 ---
-title: 条件付きアクセスを利用してエンド ユーザーの導入を推進する
+title: 条件付きアクセスでエンドユーザーの導入を推進する
 titleSuffix: Microsoft Intune
 description: Microsoft Intune でドライブ登録への条件付きアクセスを使用する方法について説明します。
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a37d6dac24049a10b5abaed41a44c0c391b095e6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2bedaf279d65ee1ed7f8dda4e8d866fb848bade7
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050471"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044593"
 ---
 # <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Microsoft Intune で条件付きアクセスでエンド ユーザーの導入を推進する
 
@@ -52,15 +52,15 @@ Intune で条件付きアクセス機能を有効にする (未登録のデバ�
 
 数多くの方法のうち 1 つを紹介します。 すべてのフェーズで登録の指示を行うまでは条件付きアクセスを延期する簡単なプロセスを選択するか、最初から条件付きアクセスを適用して、すべてのアクセスにおいて完全な準拠を要求する厳格なプロセスを選択することができます。
 
--   条件付きアクセスの詳細については、[ここ](conditional-access.md)をご覧ください。
+-   詳しくは、「[Microsoft Intune で電子メール、Office 365、およびその他のサービスへのアクセスを制限する](conditional-access.md)」をご覧ください。
 
 ## <a name="task-list-for-conditional-access"></a>条件付きアクセスのタスク一覧
 
-### <a name="task-1-decide-how-you-are-going-to-implement-conditional-access"></a>タスク 1:条件付きアクセスを実装する方法の決定
+### <a name="task-1-decide-how-you-are-going-to-implement-conditional-access"></a>タスク 1: 条件付きアクセスを実装する方法の決定
 
-[条件付きアクセスの一般的な使用方法](conditional-access-intune-common-ways-use.md)。
+[条件付きアクセスの一般的な使用方法](conditional-access-intune-common-ways-use.md)
 
-### <a name="task-2-set-up-intune-conditional-access"></a>タスク 2:Intune の条件付きアクセスの設定
+### <a name="task-2-set-up-intune-conditional-access"></a>タスク 2: Intune の条件付きアクセスの設定
 
 次のいずれかのオプションを選択します。
 
@@ -68,7 +68,7 @@ Intune で条件付きアクセス機能を有効にする (未登録のデバ�
 
 -   [Intune で On-Premises Exchange Connector をインストールする](exchange-connector-install.md)
 
--   [Exchange Online のアプリベースの条件付きアクセス ポリシーを設定する](app-based-conditional-access-intune-create.md)
+-   [Exchange Online 用にアプリベースの条件付きアクセス ポリシーを設定する](app-based-conditional-access-intune-create.md)
 
 -   [SharePoint Online のアプリベースの条件付きアクセス ポリシーを設定する](app-based-conditional-access-intune-create.md)
 

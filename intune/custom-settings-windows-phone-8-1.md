@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 06/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5918dc0574033020689b267418fb6283cd686db
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 97d656db3e828ef3377b927395a283fe995bb8a4
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373892"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389298"
 ---
 # <a name="use-custom-settings-for-windows-phone-81-devices-in-intune"></a>Intune で Windows Phone 8.1 デバイス用のカスタム設定を使用する
 
 Microsoft Intune では、"カスタム プロファイル" を使用して Windows Phone 8.1 デバイス用のカスタム設定を追加または作成できます。 カスタム プロファイルは Intune の機能です。 Intune に組み込まれていないデバイスの設定と機能を追加するように設計されています。
 
-Windows Phone 8.1 のカスタム プロファイルでは、Open Mobile Alliance Uniform Resource Identifier (OMA-URI) の設定を使用してさまざまな機能を構成します。 通常、これらの設定は、デバイスの機能を制御するためにモバイル デバイスの製造元によって使われます。
+Windows Phone 8.1 のカスタム プロファイルでは、Open Mobile Alliance Uniform Resource Identifier (OMA-URI) の設定を使用してさまざまな機能を構成します。 通常、これらの設定は、デバイスの機能を制御するためにモバイル デバイスの製造元によって使われます。 [Windows Phone 8.1 の MDM プロトコルのドキュメント](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-phone/dn499787(v=technet.10))設定を示しています。
 
 この記事では、Windows Phone 8.1 デバイス用のカスタム プロファイルを作成する方法を示します。 
 
@@ -62,6 +62,16 @@ Windows Phone 8.1 のカスタム プロファイルでは、Open Mobile Allianc
 
 5. **[OK]** を選択して変更を保存します。 必要に応じて他の設定の追加を続けます。
 6. 終わったら、 **[OK]**  >  **[作成]** を選択して Intune プロファイルを作成します。 完了すると、プロファイルが **[デバイス構成 - プロファイル]** の一覧に表示されます。
+
+## <a name="example"></a>例
+
+次の例では、Windows 8.1 phone のデバイスはから通信事業者のカバレッジ領域の外側に旅行するときに、移動体通信ネットワークを変更できません。
+
+- **名前**: 携帯電話データ ローミングを許可します。
+- **説明**: 許可または携帯電話データのローミングを禁止します。
+- **OMA-URI** (大文字小文字を区別): ./Vendor/MSFT/PolicyManager/My/Connectivity/AllowCellularDataRoaming
+- **データ型**: 整数
+- **値**:0
 
 ## <a name="next-steps"></a>次の手順
 

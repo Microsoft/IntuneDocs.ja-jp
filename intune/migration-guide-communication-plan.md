@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 06/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 864e43bf644bf4e4f959c6ad826d9d5bade617a5
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 73cdd0f802ce3b52a566bbdddd7cf5cca2e2bef2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804658"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044609"
 ---
 # <a name="plan-communications"></a>通信手段の計画 
 情報伝達計画は、Intune 移行における重要な要素です。 次のツールとテンプレートは、エンド ユーザーを教育する際に役立つように提供されます。 Intune 導入キットには、電子メール テンプレート、Intune 登録ガイド、およびエンド ユーザー登録のための説明ビデオへのリンクが含まれています。  

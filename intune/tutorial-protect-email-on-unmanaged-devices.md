@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc1f877f9b457c6abafef7f1e66e8b04bba2c8e0
-ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
+ms.openlocfilehash: 7868d5f9ef97f4b054457deff6f24cd91d6c31d8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66828998"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528688"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>チュートリアル: アンマネージド デバイス上で Exchange Online の電子メールを保護する
 
@@ -74,7 +74,7 @@ Intune などのデバイス管理ソリューションにデバイスが登録�
 
     **[OK]** を選択して、[設定] ウィンドウに戻ります。  
 
-7.  [設定] ウィンドウで **[OK]** を選択してから、[ポリシーの作成] ウィンドウで **[作成]** を選択します。
+7. [設定] ウィンドウで **[OK]** を選択してから、[ポリシーの作成] ウィンドウで **[作成]** を選択します。
 
 Outlook 用のアプリ保護ポリシーが作成されます。 次に、Outlook アプリを使用するデバイスに要求する条件付きアクセスを設定します。
 
@@ -188,5 +188,5 @@ Outlook 用のアプリ保護ポリシーが作成されます。 次に、Outlo
 4. **[条件付きアクセス]**  >  **[ポリシー]** の順に選択します。  
 5. **[ポリシー名]** 一覧で、お使いの各テスト ポリシーのコンテキスト メニュー **[...]** を選択し、 **[削除]** を選択します。 **[はい]** をクリックして操作を確定します。  
 
- ## <a name="next-steps"></a>次の手順  
-このチュートリアルでは、アプリ保護ポリシーを作成して、Outlook アプリにおいてユーザーができる操作を制限しました。また、Outlook アプリの要求と、先進認証クライアントに対しては MFA の要求を行う条件付きアクセス ポリシーを作成しました。 他のアプリやサービスを保護するために条件付きアクセスと共に Intune を使用する方法については、「[条件付きアクセスの設定](conditional-access.md)」をご覧ください。
+## <a name="next-steps"></a>次の手順  
+このチュートリアルでは、アプリ保護ポリシーを作成して、Outlook アプリにおいてユーザーができる操作を制限しました。また、Outlook アプリの要求と、先進認証クライアントに対しては MFA の要求を行う条件付きアクセス ポリシーを作成しました。 他のアプリやサービスを保護するために条件付きアクセスと共に Intune を使用する方法については、「[条件付きアクセスの設定](conditional-access.md)」を参照してください。

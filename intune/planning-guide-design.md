@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 812a2e91b28908dcd3893ec77e9923362c8a9173
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c279e21abf47d6ec067f3c75b36ecc7b58681e7e
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046139"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044406"
 ---
 # <a name="create-a-design"></a>設計の作成
 
@@ -185,7 +185,7 @@ VPN、Wi-Fi、または Intune での電子メール プロファイルで証明
 
 -   サポートされるデバイス プラットフォーム
 
--   デバイス
+-   [デバイス]
 
 -   デバイスの所有権
 
@@ -199,9 +199,9 @@ VPN、Wi-Fi、または Intune での電子メール プロファイルで証明
 
 [Intune でサポートされているデバイスの完全な一覧](supported-devices-browsers.md)については、こちらをご覧ください。
 
-### <a name="devices"></a>デバイス
+### <a name="devices"></a>[デバイス]
 
-Intune は、モバイル デバイスを管理して、企業のデータをセキュリティで保護し、エンド ユーザーがより多くの場所から作業できるようにします。 Intune は多数のデバイス プラットフォームをサポートしているので、組織の設計でサポートされるデバイスおよび OS プラットフォームとバージョンを文書化することをお勧めします。 たとえば、次のように入力します。
+Intune は、モバイル デバイスを管理して、企業のデータをセキュリティで保護し、エンド ユーザーがより多くの場所から作業できるようにします。 Intune は多数のデバイス プラットフォームをサポートしているので、組織の設計でサポートされるデバイスおよび OS プラットフォームとバージョンを文書化することをお勧めします。 次に例を示します。
 
 | **デバイスのプラットフォーム** | **OS のバージョン** |
 |:---:|:---:|
@@ -270,7 +270,7 @@ Intune は、企業所有のデバイスと個人のデバイスの両方をサ�
 
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して、構成ポリシーのニーズを確認することができます。
 
-### <a name="profiles"></a>プロファイル
+### <a name="profiles"></a>Profiles
 
 プロファイルを使用して、エンド ユーザーが会社データに接続するのを補助します。 Intune は、さまざまな種類のプロファイルをサポートします。 ユース ケースと要件を参照して、どのような場合にプロファイルを構成するかを確認してください。 すべてのデバイス プロファイルは、プラットフォームの種類によって分類され、設計ドキュメントに含まれる必要があります。
 
@@ -403,7 +403,7 @@ Intune では、複数の方法でユーザーまたはデバイスにアプリ�
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)して、コンプライアンス ポリシーのニーズを確認することができます。
 #### <a name="conditional-access-policies"></a>条件付きアクセス ポリシー
 
-条件付きアクセスは、準拠デバイスのみに電子メールやその他の企業リソースへのアクセスを許可するために使用します。 Intune は、Enterprise Mobility + Security (EMS) と連携して、企業リソースへのアクセスを制御します。 条件付きアクセスが必要かどうか、および何をセキュリティで保護する必要があるかを決定します。 条件付きアクセスの詳細については、[ここ](conditional-access.md)をご覧ください。
+条件付きアクセスは、準拠デバイスのみに電子メールやその他の企業リソースへのアクセスを許可するために使用します。 Intune は、Enterprise Mobility + Security (EMS) と連携して、企業リソースへのアクセスを制御します。 条件付きアクセスが必要かどうか、および何をセキュリティで保護する必要があるかを決定します。 詳しくは、「[Microsoft Intune で電子メール、Office 365、およびその他のサービスへのアクセスを制限する](conditional-access.md)」をご覧ください。
 
 オンライン アクセスについては、条件付きアクセス ポリシーによって対象とするプラットフォームおよびユーザー グループを決めます。 また、Exchange オンプレミス用の Intune コネクタをインストールまたは構成する必要があるかどうかを判断します。 
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/06/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e170fe0c1b461bad140b89ac01a2ad817e2082e5
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
+ms.openlocfilehash: 2e8e7e6c244e14e880dddb7ae76ab0c08ef5088a
+ms.sourcegitcommit: edf0f4e791138dcf589dec8b633edc6eda55ef8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744339"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67344087"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune で SCEP 証明書を構成して使用する
 
@@ -68,7 +68,7 @@ NDES サーバーは、[Azure AD アプリケーション プロキシ](https://
 |**証明書テンプレート**|発行元 CA でこのテンプレートを構成します。|
 |**クライアント認証証明書**|発行元 CA またはパブリック CA から要求されます。この証明書を NDES サーバーにインストールします。|
 |**サーバー認証証明書**|発行元 CA またはパブリック CA から要求されます。この SSL 証明書をインストールし NDES サーバーの IIS にバインドします。 証明書にクライアントとサーバーの認証キーの使用が設定されている場合は (**拡張キー使用法**)、同じ証明書を使用できます。|
-|**信頼されたルート CA 証明書**|ルート CA またはルート CA を信頼しているデバイスから、この証明書を **.cer** ファイルとしてエクスポートします。 次に、信頼された CA 証明書プロファイルを使用してそれをユーザー、デバイス、または両方に割り当てます。<br /><b>注:<b /> SCEP 証明書プロファイルが割り当てられている場合は、SCEP 証明書プロファイルで参照されている信頼されたルート証明書プロファイルを同じユーザーまたはデバイス グループに割り当ててください。<br /><br />オペレーティング システムのプラットフォームごとに 1 つの信頼されたルート CA 証明書を使用し、作成する各信頼されたルート証明書プロファイルに関連付けます。<br /><br />必要に応じて、信頼されたルート CA 証明書を追加して使用できます。 ルート CA 証明書を追加する局面としては、Wi-Fi アクセス ポイント用のサーバー認証証明書に署名する CA の信頼性を担保する必要がある場合などが考えられます。|
+|**信頼されたルート CA 証明書**|ルート CA またはルート CA を信頼しているデバイスから、この証明書を **.cer** ファイルとしてエクスポートします。 次に、信頼された CA 証明書プロファイルを使用してそれをユーザー、デバイス、または両方に割り当てます。<br /> **注:<br /> SCEP 証明書プロファイルが割り当てられている場合は、SCEP 証明書プロファイルで参照されている "*信頼されたルート証明書プロファイル*" を同じユーザーまたはデバイス グループに割り当ててください。このプロファイルを作成するには、PKCS 証明書プロファイルについて説明されている「[信頼済み証明書プロファイルを作成する](certficates-pfx-configure.md#create-a-trusted-certificate-profile)」を参照してください。** <br/><br />オペレーティング システムのプラットフォームごとに 1 つの信頼されたルート CA 証明書を使用し、作成する各信頼されたルート証明書プロファイルに関連付けます。 <br /><br />必要に応じて、信頼されたルート CA 証明書を追加して使用できます。 ルート CA 証明書を追加する局面としては、Wi-Fi アクセス ポイント用のサーバー認証証明書に署名する CA の信頼性を担保する必要がある場合などが考えられます。|
 
 ### <a name="accounts"></a>[アカウント]
 
@@ -487,7 +487,7 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
      - **[デジタル署名]** : キーがデジタル署名で保護されている場合のみ、キーを交換できます
    - **[キー サイズ (ビット)]** : キーに含めるビット数を選択します
    - **[ハッシュ アルゴリズム]** (Android、Windows Phone 8.1、Windows 8.1、Windows 10): この証明書で使用するハッシュ アルゴリズムの種類を 1 つ選択します。 接続しているデバイスをサポートするセキュリティの最も強力なレベルを選択します。
-   - **[ルート証明書]** : 既に構成してユーザーまたはデバイスに割り当てているルート CA 証明書プロファイルを選択します。 この CA 証明書は、この証明書プロファイルで構成している証明書を発行する CA のルート証明書である必要があります。 この信頼されたルート証明書プロファイルは、SCEP 証明書プロファイルに割り当てられているものと同じグループに必ず割り当ててください。
+   - **[ルート証明書]** : 以前に作成し、ユーザーやデバイスに割り当てた [[信頼されたルート証明書プロファイル]](certficates-pfx-configure.md#create-a-trusted-certificate-profile) を選択します。 この CA 証明書は、この証明書プロファイルで構成している証明書を発行する CA のルート証明書である必要があります。 この信頼されたルート証明書プロファイルは、SCEP 証明書プロファイルに割り当てられているものと同じグループに必ず割り当ててください。
    - **[拡張キー使用法]** : 証明書の使用目的に対応する値を**追加**します。 ほとんどの場合、ユーザーまたはデバイスがサーバーに対して認証できるように、証明書には **[クライアント認証]** が必要です。 ただし、必要に応じてその他のキー使用法を追加できます。
    - **登録設定**
      - **[更新しきい値 (%)]** : 証明書の有効期間の残りがどの程度 (%) になったら、デバイスが更新を要求するかを入力します。
@@ -508,6 +508,7 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 
     > [!NOTE]
     > iOS では、同じ証明書プロファイルを使う複数のリソース プロファイルを展開した場合は、管理プロファイルに証明書の複数のコピーが表示されます。
+- Intune と Configuration Manager に共同管理を使用する場合は、Configuration Manager で *[Resource Access Policy]\(リソース アクセス ポリシー\)* の[ワークロード スライダー](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)を **[Intune]** または **[Pilot Intune]\(パイロット Intune\)** に設定します。 この設定により、Windows 10 クライアントは証明書を要求するプロセスを開始できます。  
 
 プロファイルを割り当てる方法については、[デバイス プロファイルの割り当て](device-profile-assign.md)に関する記事をご覧ください。
 
@@ -552,7 +553,7 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 | -------------   | -------------   | -------------      |
 | 0x00000000 | 成功  | 成功 |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | 証明機関は有効ではないか、到達可能ではありません。 証明機関が使用可能であること、およびサーバーが証明機関と通信できることを確認してください。 |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | Symantec クライアント認証証明書がローカル証明書ストアに見つかりませんでした。 詳細については、「[Symantec 登録承認証明書のインストール](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate)」をご覧ください。  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | Symantec クライアント認証証明書がローカル証明書ストアに見つかりませんでした。 詳細については、記事「[Set up Intune Certificate Connector for DigiCert PKI Platform (DigiCert PKI プラットフォーム用に Intune 証明書コネクタを設定する)](https://docs.microsoft.com/intune/certificates-digicert-configure#troubleshooting)」を参照してください。  |
 | 0x00000402 | RevokeCert_AccessDenied  | 指定されたアカウントには、CA から証明書を取り消すアクセス許可がありません。 発行元 CA を特定するには、イベント メッセージの詳細の CA 名フィールドを参照してください。  |
 | 0x00000403 | CertThumbprint_NotFound  | 入力に一致する証明書を見つけられませんでした。 証明書コネクタを登録してからやり直してください。 |
 | 0x00000404 | Certificate_NotFound  | 提供された入力に一致する証明書を見つけられませんでした。 証明書コネクタを再登録してからやり直してください。 |

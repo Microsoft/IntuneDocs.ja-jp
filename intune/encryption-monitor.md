@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d90bc17d01a76c9c566210edc3bdc265511fa16d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bccfc952202ed9db5bdc5f68bbbba57c61b37b13
+ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047821"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67316929"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>BitLocker とデバイスの暗号化を監視する  
 Intune には、ご利用の Windows 10 デバイスの暗号化の状態を識別するための一元的な場所が用意されているため、Intune を使用すれば、Azure Active Directory (Azure AD) 内で BitLocker の重要な情報が検出されたら、ご自分のデバイスからアクセスできます。  
@@ -51,7 +51,7 @@ Intune には、ご利用の Windows 10 デバイスの暗号化の状態を識�
   - **準備中**: デバイスは暗号化のすべての機能を備えていませんが、それでもデバイスでは暗号化がサポートされています。 たとえば、デバイスの暗号化は、ユーザーが手動で行ったり、TMP なしでの暗号化を許可するように設定できるグループ ポリシーを介して行ったりする場合があります。
   - **適用なし**:このデバイスを分類するための十分な情報がありません。  
 
-- **暗号化の状態** – OS ドライブが暗号化されているかどうか。  
+- **暗号化の状態** – OS ドライブが暗号化されているかどうか。 
 
 
 ### <a name="device-encryption-status"></a>デバイスの暗号化の状態
@@ -60,7 +60,7 @@ Intune には、ご利用の Windows 10 デバイスの暗号化の状態を識�
 このウィンドウでは、次のような詳細が表示されます。  
 - **デバイス名** – 確認しているデバイスの名前。  
 - **暗号化の準備** - BitLocker 暗号化をサポートするための、デバイスの準備に関する評価。 デバイスに TPM が不足していることからデバイスの暗号化の準備が "*準備中*" であっても、デバイスの暗号化の状態は "*暗号化*" となる可能性があります (詳細については、前のセクションの「暗号化の準備」を参照してください)。
-- **暗号化の状態** - OS ドライブが暗号化されているかどうか。  
+- **暗号化の状態** - OS ドライブが暗号化されているかどうか。 Intune がデバイスの暗号化状態またはその状態の変更についてレポートを開始するまでに最大 24 時間かかることがあります。  
 - **プロファイル** – このデバイスに適用され、次のプロファイルの種類と設定が含まれる "*デバイス構成*" プロファイルの一覧。  
   - プロファイルの種類 = *Endpoint protection*  
   - [設定] > [Windows 暗号化] > [デバイスの暗号化] = *必須*  
@@ -95,7 +95,7 @@ Intune には、ご利用の Windows 10 デバイスの暗号化の状態を識�
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker 回復キー
 Intune では BitLocker 用の Azure AD ブレードにアクセスできます。これにより、Intune ポータル内から、ご利用の Windows 10 デバイス用の BitLocker キー ID および回復キーを確認できます。  アクセスできるようになるには、デバイスのキーが Azure AD にエスクローされている必要があります。 
-1. [Intune](https://aka.ms/intuneportal) にサインインし、 **[デバイス]** に移動してから、 *[管理]* で、 **[すべてのデバイス]** を選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインし、 **[デバイス]** に移動してから、 *[管理]* で、 **[すべてのデバイス]** を選択します。
 2. 一覧からデバイスを選択して、 *[監視]* 下にある **[回復キー]** を選択します。  
   
 キーが Azure AD で利用できる場合は、次の情報を入手できます。
