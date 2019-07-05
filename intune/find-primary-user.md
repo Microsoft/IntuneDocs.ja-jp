@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6a20ccec2ef0cbaba87637b3c44c2cc2be094ab
-ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
+ms.openlocfilehash: 21f62ad44d992d1f4adbb1945bdba02e526d9138
+ms.sourcegitcommit: 2db7dc2baea0c159f70338e6a0529acc89580773
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67325540"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67500649"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Intune デバイスのプライマリ ユーザーを確認する
 
@@ -60,8 +60,8 @@ Intune では、登録時または登録直後に、プライマリ ユーザー
 | Windows | Azure AD 参加 (すぐに利用できるエクスペリエンス) | 登録ユーザー | 登録時 | 
 | Windows | Azure AD の参加 (Autopilot のすぐに利用できるエクスペリエンス) | 登録ユーザー | 登録時 | 
 | Windows | MDM のみへの登録 | 登録ユーザー | 登録時 | 
-| Windows | ハイブリッド AADJ + 自動登録 GPO | サインインする最初のユーザー | 最初のユーザーがサインインするとき | 
-| Windows | 共同管理 | サインインする最初のユーザー | 最初のユーザーがサインインするとき | 
+| Windows | ハイブリッド AADJ + 自動登録 GPO | Windows にサインインする最初のユーザー | Windows に最初のユーザーがサインインするとき| 
+| Windows | 共同管理 | Windows にサインインする最初のユーザー | Windows に最初のユーザーがサインインするとき | 
 | Windows | Azure AD 参加 (一括登録トークン) | なし | 適用できません | 
 | Windows | Azure AD 参加 (Autopilot の自己展開モード) | なし | 適用できません | 
 | クロスプラット フォーム | ポータル サイト アプリへのユーザー主導の登録 | 登録ユーザー | 登録時 |

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/24/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e8e7e6c244e14e880dddb7ae76ab0c08ef5088a
-ms.sourcegitcommit: edf0f4e791138dcf589dec8b633edc6eda55ef8c
+ms.openlocfilehash: 7a952a5aa3de20159247f022d91d3e4302262290
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "67344087"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494304"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune で SCEP 証明書を構成して使用する
 
@@ -30,10 +30,10 @@ ms.locfileid: "67344087"
 
 - **Active Directory ドメイン**: このセクションで示されているすべてのサーバー (Web アプリケーション プロキシ サーバーを除く) は、Active Directory ドメインに参加する必要があります。
 
-- **証明機関** (CA): Windows Server 2008 R2 以降の Enterprise エディションで実行する Microsoft エンタープライズ証明機関 (CA) であることが要件です。 スタンドアロン CA はサポートされません。 詳細については、「[Install the Certification Authority (証明機関のインストール)](http://technet.microsoft.com/library/jj125375.aspx)」をご覧ください。
+- **証明機関** (CA): Windows Server 2008 R2 以降の Enterprise エディションで実行する Microsoft エンタープライズ証明機関 (CA) であることが要件です。 スタンドアロン CA はサポートされません。 詳細については、「[Install the Certification Authority (証明機関のインストール)](https://technet.microsoft.com/library/jj125375.aspx)」をご覧ください。
     CA が Windows Server 2008 R2 を搭載している場合は、 [KB2483564 の修正プログラムをインストール](http://support.microsoft.com/kb/2483564/)する必要があります。
 
-- **NDES サーバー**: Windows Server 2012 R2 以降で、ネットワーク デバイス登録サービス (NDES) サーバー ロールを設定します。 エンタープライズ CA も実行しているサーバー上では、Intune は NDES をサポートしていません。 NDES をホストするための Windows Server 2012 R2 の構成方法については、「[ネットワーク デバイス登録サービスのガイダンス](http://technet.microsoft.com/library/hh831498.aspx)」を参照してください。
+- **NDES サーバー**: Windows Server 2012 R2 以降で、ネットワーク デバイス登録サービス (NDES) サーバー ロールを設定します。 エンタープライズ CA も実行しているサーバー上では、Intune は NDES をサポートしていません。 NDES をホストするための Windows Server 2012 R2 の構成方法については、「[ネットワーク デバイス登録サービスのガイダンス](https://technet.microsoft.com/library/hh831498.aspx)」を参照してください。
 NDES サーバーは、エンタープライズ CA と同じフォレスト内のドメインに参加する必要があります。 別個のフォレスト、分離ネットワーク、内部ドメインで NDES サーバーを展開する方法については、「[ポリシー モジュールとネットワーク デバイス登録サービスの使用](https://technet.microsoft.com/library/dn473016.aspx)」を参照してください。 既に他の MDM によって使われている NDES サーバーを使うことはできません。
 
 - **Microsoft Intune Certificate Connector**: Intune ポータルで、 **[デバイス構成]**  >  **[証明書コネクタ]**  >  **[追加]** の順に移動して、*SCEP 用コネクタをインストールする手順*に従います。 ポータルのダウンロード リンクを使用して、証明書コネクタのインストーラー **NDESConnectorSetup.exe** のダウンロードを開始します。  このインストーラーは、NDES の役割を使用してサーバー上で実行します。  
@@ -507,7 +507,8 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
 - 各プロファイルは個別に割り当てますが、信頼されたルート CA と、SCEP または PKCS プロファイルを割り当てる必要もあります。 そうしないと、SCEP または PKCS 証明書ポリシーは失敗します。
 
     > [!NOTE]
-    > iOS では、同じ証明書プロファイルを使う複数のリソース プロファイルを展開した場合は、管理プロファイルに証明書の複数のコピーが表示されます。
+    > iOS デバイスの場合、SCEP 証明書プロファイルが Wi-fi プロファイルや VPN プロファイルなどの追加のプロファイルに関連付けられている場合、デバイスは、該当する追加のプロファイルの各々に対する証明書を受け取ります。 これにより、SCEP 証明書の要求によって提供される複数の証明書を持つ iOS デバイスが存在するようになります。  
+
 - Intune と Configuration Manager に共同管理を使用する場合は、Configuration Manager で *[Resource Access Policy]\(リソース アクセス ポリシー\)* の[ワークロード スライダー](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)を **[Intune]** または **[Pilot Intune]\(パイロット Intune\)** に設定します。 この設定により、Windows 10 クライアントは証明書を要求するプロセスを開始できます。  
 
 プロファイルを割り当てる方法については、[デバイス プロファイルの割り当て](device-profile-assign.md)に関する記事をご覧ください。

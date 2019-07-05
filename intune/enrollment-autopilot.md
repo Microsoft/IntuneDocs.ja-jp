@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28c3da6d2e3390d20aecc3673cac38e8424ef57a
-ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
+ms.openlocfilehash: cbd73d22c2e42f0a379ec2a97179f9e3c4dec224
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389306"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512112"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot を使用して Intune に Windows デバイスを登録する  
 Windows Autopilot を使用すると、Intune でのデバイスの登録が簡単になります。 カスタマイズされたオペレーティング システム イメージのビルドおよび維持は、時間のかかるプロセスです。 また、これらのカスタム オペレーティング システム イメージを新しいデバイスに適用し、エンド ユーザーに提供する前に使用の準備を行う場合にも、時間がかかることがあります。 Microsoft Intune と Autopilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および新しいデバイスへの適用を行わなくてもデバイスをエンド ユーザーに提供することができます。 Intune を使用して Autopilot デバイスを管理する場合、デバイスの登録後にポリシー、プロファイル、アプリなどを管理することができます。 利点、シナリオ、および前提条件の概要については、「[Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)」 (Windows Autopilot の概要) を参照してください。
@@ -35,7 +35,7 @@ Windows Autopilot を使用すると、Intune でのデバイスの登録が簡�
 
 ## <a name="how-to-get-the-csv-for-import-in-intune"></a>Intune でのインポート用に CSV を取得する方法
 
-使用方法について詳しくは、PowerShell コマンドレットの説明をご覧ください。
+詳細については、PowerShell コマンドレットの説明をご覧ください。
 
 - [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/1.3/Content/Get-WindowsAutoPilotInfo.ps1)
 
@@ -47,8 +47,9 @@ CSV ファイルの情報をインポートすることにより、Windows Autop
 
     ![Windows Autopilot デバイスのスクリーンショット](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. **[Windows AutoPilot デバイスの追加]** で、追加するデバイスを一覧表示する CSV ファイルを参照します。 CSV ファイルでは、デバイスのシリアル番号、Windows 製品 ID (省略可能)、ハードウェア ハッシュ、およびグループ タグ (省略可能) が一覧に示されているはずです。 一覧には最大 500 行を含めることができます。 次に示すヘッダーと行の形式を使用してください: `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`
-    `<serialNumber>,<optionalProductID>,<hardwareHash>,<optionalGroupTag>`
+2. **[Windows AutoPilot デバイスの追加]** で、追加するデバイスを一覧表示する CSV ファイルを参照します。 CSV ファイルでは、デバイスのシリアル番号、Windows 製品 ID、ハードウェア ハッシュ、およびグループ タグ (省略可能)、割り当てられたユーザー、注文 ID が一覧に示されているはずです。 一覧には最大 500 行を含めることができます。 次に示すヘッダーと行の形式を使用してください:
+
+    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User, Order ID` `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>,<optionalOrderID>`
 
     ![Windows Autopilot デバイスの追加のスクリーンショット](media/enrollment-autopilot/autopilot-import-device2.png)
 
@@ -69,7 +70,7 @@ CSV ファイルの情報をインポートすることにより、Windows Autop
     まだ登録されていない Autopilot デバイスの場合、デバイスのシリアル番号が名前です。
 4. 上の **[メンバーシップの種類]** で **[動的デバイス]** を選択した場合は、 **[グループ]** ブレードで **[動的なデバイス メンバー]** を選択し、 **[高度なルール]** ボックスに次のいずれかのコードを入力します。
     - Autopilot デバイスをすべて含むグループを作成する場合は、「`(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`」と入力します
-    - Intune のグループ タグ フィールドは、Azure AD デバイス上の OrderID 属性にマップされます。 特定のグループ タグ (OrderID) を使って Autopilot デバイスをすべて含むグループを作成する場合は、「`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `」と入力する必要があります
+    - Intune のグループ タグ フィールドは、Azure AD デバイス上の OrderID 属性にマップされます。 特定のグループ タグ (OrderID) を使って Autopilot デバイスをすべて含むグループを作成する場合は、「`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`」と入力する必要があります
     - 特定の注文書 ID の Autopilot デバイスをすべて含むグループを作成する場合は、「`(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`」と入力します
     
     **[高度なルール]** にコードを追加したら、 **[保存]** を選択します。
@@ -95,7 +96,7 @@ Autopilot Deployment プロファイルは、Autopilot デバイスを構成す�
     - **[使用許諾契約書 (EULA)]** : (Windows 10、バージョン 1709 以降) EULA をユーザーに表示するかどうかを選択します。
     - **[プライバシーの設定]** : プライバシーの設定をユーザーに表示するかどうかを選択します。
     >[!IMPORTANT]
-    >Windows 10 バージョン 1903 デバイス以降に Autopilot をデプロイする場合、診断データの既定は [フル] に自動設定されます。 詳しくは、[Windows 診断データ](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data)に関するページをご覧ください <br>
+    >Windows 10 バージョン 1903 デバイス以降に Autopilot をデプロイする場合、診断データの既定は [フル] に自動設定されます。 詳しくは、[Windows 診断データ](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data)に関するページをご覧ください <br>
     
     - **[アカウントの変更オプションを非表示にする] (Windows 10 バージョン 1809 以降が必要)** : **[非表示]** を選択すると、会社のサインイン ページとドメイン エラー ページにアカウント変更オプションが表示されなくなります。 これらのオプションでは、[Azure Active Directory で会社のブランドを構成する](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)必要があります。
     - **[ユーザー アカウントの種類]** : ユーザーのアカウントの種類を選択します (**管理者**ユーザーまたは**標準**ユーザー)。
@@ -118,7 +119,7 @@ Autopilot Deployment プロファイルは、Autopilot デバイスを構成す�
     ![確認ページのスクリーンショット](media/enrollment-autopilot/create-profile-review.png)
 
 > [!NOTE]
-> Intune は、割り当てられているグループ内の新しいデバイスを定期的に確認し、これらのデバイスにプロファイルを割り当てるプロセスを開始します。 このプロセスの完了には数分かかることがあります。 デバイスをデプロイする前に、このプロセスが完了したことを確認します。  この確認は、 **[デバイスの登録]** > **[Windows の登録]** > **[デバイス]** で行うことができます。ここで、プロファイルの状態が "未割り当て" から "割り当て中" に変わり、最後に "割り当て済み" になります。
+> Intune は、割り当てられているグループ内の新しいデバイスを定期的に確認し、これらのデバイスにプロファイルを割り当てるプロセスを開始します。 このプロセスの完了には数分かかることがあります。 デバイスをデプロイする前に、このプロセスが完了したことを確認します。  この確認は、 **[デバイスの登録]**  >  **[Windows の登録]**  >  **[デバイス]** で行うことができます。ここで、プロファイルの状態が "未割り当て" から "割り当て中" に変わり、最後に "割り当て済み" になります。
 
 ## <a name="edit-an-autopilot-deployment-profile"></a>Autopilot Deployment プロファイルを編集する
 Autopilot Deployment プロファイルを作成したら、その展開プロファイルの特定の部分を編集することができます。   

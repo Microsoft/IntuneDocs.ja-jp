@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 06/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ee16e40eea4d217cd78c3a026731656bfa4ca53
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 87e3b6bf1acbce88b45c9ebc78c45279d718a44c
+ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045628"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "67468756"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune とエンド ユーザー アプリの UI の更新
 Microsoft Intune アプリに対する最新の更新プログラムについて学習します。 Intune ポータル サイト アプリと Web サイトに対する追加および改善は定期的に行われています。 Intune 管理者またはサポート担当者である場合、次の作業を行うために必要な情報がこの記事で提供されています。
@@ -33,6 +33,29 @@ Microsoft Intune アプリに対する最新の更新プログラムについて
 従業員または学生である場合は、必ず、ポータル サイトのヘルプ ドキュメントへのリンクとスクリーンショットを確認してください。 ポータル サイト アプリを使用する方法の詳細については、[ポータル サイト ユーザーのヘルプ ドキュメント](https://docs.microsoft.com/intune-user-help/)を参照してください。  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## <a name="week-of-june-24-2019"></a>2019 年 6 月 24 日の週  
+
+### <a name="view-all-installed-apps-from-new-company-portal-web-page----4224326---"></a>新しいポータル サイト Web ページにインストールされたすべてのアプリが表示 <!-- 4224326 -->
+ポータル サイト Web サイトの新しい **[インストール済みアプリ]** ページに、ユーザーのデバイスにインストールされているすべてのマネージド アプリ (必須および使用可能の両方) が一覧表示されます。 割り当ての種類だけでなく、アプリの発行元、発行日、現在のインストール状態も表示されます。 ユーザーに対して必須または使用可能とされているアプリがない場合は、会社アプリがインストールされていないというメッセージが表示されます。 Web 上で新しいページを参照するには、[ポータル サイト Web サイト](https://portal.manage.microsoft.com)に移動して、 **[インストール済みアプリ]** をクリックします。   
+
+![ポータル サイト Web サイト上の [インストール済みアプリ] ページのスクリーンショット。](/intune-user-help/media/intune-installed-apps-1907.png)     
+
+### <a name="new-view-lets-app-users-see-all-managed-apps-installed-on-device----2352913---"></a>新しいビューでデバイスにインストールされているすべてのマネージド アプリが表示可能に <!-- 2352913 -->
+Windows 用ポータル サイトのアプリに、ユーザーのデバイスにインストールされているすべてのマネージド アプリ (必須および使用可能の両方) が一覧表示されるようになりました。 ユーザーは、試行した、および保留中のアプリのインストールと、それらの現在の状態も確認できます。 ユーザーに対して必須または使用可能とされているアプリがない場合は、アプリがインストールされていないというメッセージが表示されます。 新しいビューを表示するには、ポータル サイトのナビゲーション ウィンドウに移動し、 **[アプリ]**  >  **[インストール済みアプリ]** の順に選択します。   
+
+![Windows 10 用ポータル サイト アプリの [インストール済みアプリ] ページのサンプル スクリーンショット。 ](/intune-user-help/media/installed-apps-cp-1906.png)  
+
+
+## <a name="week-of-june-17-2019"></a>2019 年 6 月 17 日の週  
+
+#### <a name="new-features-in-microsoft-intune-app"></a>Microsoft Intune アプリの新機能
+Android 用 Microsoft Intune アプリ (プレビュー) に新機能が追加されました。 フル マネージド Android デバイスのユーザーは次のことが可能になりました。  
+
+* Intune ポータル サイトまたは Microsoft Intune のアプリを介して登録したデバイスを表示して管理する。    
+* サポートが必要な場合はお客様の組織に問い合わせてください。    
+* Microsoft にフィードバックを送信する。    
+* 組織で設定されている場合は、使用条件を表示する。 
 
 ## <a name="week-of-april-15-2019"></a>2019 年 4 月 15 日の週  
 
