@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b55d41939b9772227cee0f12da65040edbca0d0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: a012cb7fe25b70ee260f2b3a2d49a47c3bae06a3
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55843767"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558464"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>Android デバイスに SandBlast Mobile Protect をインストールする必要があります
 
@@ -31,11 +31,11 @@ ms.locfileid: "55843767"
 
 **必要な操作**
 
-1. 画面の一番上から下にドラッグして通知バーを開き、**[Required application – Install SandBlast Mobile Protect from Play Store]\(必要なアプリケーション – Play ストアから SandBlast Mobile Protect をインストール\)** をタップします。 ポータル サイト アプリの __[Compliance Details]\(ポリシー準拠状況の詳細)__ でも確認することができます。
+1. 画面の一番上から下にドラッグして通知バーを開き、 **[Required application – Install SandBlast Mobile Protect from Play Store]\(必要なアプリケーション – Play ストアから SandBlast Mobile Protect をインストール\)** をタップします。 ポータル サイト アプリの __[Compliance Details]\(ポリシー準拠状況の詳細)__ でも確認することができます。
 
-2. Play ストアの SandBlast Mobile Protect のインストール ページが表示されます。 SandBlast Mobile Protect をインストールし、**[同意する]** をタップし、SandBlast Mobile Protect がお使いのデバイスにアクセスすることを許可します。
+2. Play ストアの SandBlast Mobile Protect のインストール ページが表示されます。 SandBlast Mobile Protect をインストールし、 **[同意する]** をタップし、SandBlast Mobile Protect がお使いのデバイスにアクセスすることを許可します。
 
-3. SandBlast Mobile Protect を開き、**[VERIFY]\(確認)** をタップします。
+3. SandBlast Mobile Protect を開き、 **[VERIFY]\(確認)** をタップします。
 
 4. **[Azure Active Directory でサインインする]** をタップし、職場または学校の電子メールやファイルへのアクセスに使用しているアカウントを入力します。
 
@@ -47,9 +47,9 @@ ms.locfileid: "55843767"
 
 8. SandBlast Mobile Protect がこのデバイス上のセキュリティの脅威を探す処理をただちに開始します。
 
-9.  SandBlast Mobile Protect によってこのデバイスでセキュリティ上の脅威が見つかった場合は、問題を解決する手順が表示されます。
+9. SandBlast Mobile Protect によってこのデバイスでセキュリティ上の脅威が見つかった場合は、問題を解決する手順が表示されます。
 
-10.  脅威が検出されない場合は、3 つの脅威の種類はすべて緑色で表示されます。
+10. 脅威が検出されない場合は、3 つの脅威の種類はすべて緑色で表示されます。
 
 11. ポータル サイトの **[デバイスの詳細]** 画面には、このデバイスが会社のセキュリティ要件に準拠している状態であることが表示されます。
 

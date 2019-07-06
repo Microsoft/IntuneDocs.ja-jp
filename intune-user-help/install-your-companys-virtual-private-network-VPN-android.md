@@ -18,22 +18,22 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f1d8befd1cd960fd70b7cc3fbd574609ce1fb0d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fdee032728db9c57a0a62d78c161ba43adcb4ad5
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55845161"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546178"
 ---
 # <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>会社の仮想プライベート ネットワーク (VPN) をインストールする方法
 
 ユーザーが会社のリソースに接続できるように VPN アプリケーションが会社のサポートによって構成されている場合は、VPN アプリをインストールする必要があることを知らせる通知が Android デバイスに表示されます。 VPN アプリをインストールするには、次の手順を実行します。
 
-1.  通知ドロワーを開き、**[タップして、この必要なアプリをインストールしてください]** をタップします。
+1. 通知ドロワーを開き、 **[タップして、この必要なアプリをインストールしてください]** をタップします。
 
-2.  **[Play ストア]** で **[インストール]** をクリックし、画面に表示される指示に従ってアプリをインストールします。
+2. **[Play ストア]** で **[インストール]** をクリックし、画面に表示される指示に従ってアプリをインストールします。
 
-3.  **[企業 VPN プロファイルをインストールしてください]** をタップして、画面に表示される指示に従います。 インストール手順は、会社で使用している VPN のプロバイダーによって多少異なる場合があります。
+3. **[企業 VPN プロファイルをインストールしてください]** をタップして、画面に表示される指示に従います。 インストール手順は、会社で使用している VPN のプロバイダーによって多少異なる場合があります。
 
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

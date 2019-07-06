@@ -18,12 +18,12 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35d77c9aa739096f36f4dbf4b75a4186e55a3381
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5ae4e454a0ca41858cb670790fd5acd4d6bf998a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835065"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546614"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>iOS デバイスで管理対象アプリを使用する
 
@@ -38,9 +38,9 @@ ms.locfileid: "55835065"
 ## <a name="how-do-i-get-managed-apps"></a>管理対象アプリを取得する方法  
 管理対象アプリはいくつかの方法で取得できます。
 
--   デバイスが Microsoft Intune に登録されるときに、ポータル サイト アプリまたはポータル Web サイトからアプリをインストールするか、または会社のサポートがアプリをデバイスにインストールする場合があります。 登録については、「[Intune に iOS デバイスを登録する](enroll-your-device-in-intune-ios.md)」または「[Intune に macOS デバイスを登録する](enroll-your-device-in-intune-macos.md)」を参照してください。
+- デバイスが Microsoft Intune に登録されるときに、ポータル サイト アプリまたはポータル Web サイトからアプリをインストールするか、または会社のサポートがアプリをデバイスにインストールする場合があります。 登録については、「[Intune に iOS デバイスを登録する](enroll-your-device-in-intune-ios.md)」または「[Intune に macOS デバイスを登録する](enroll-your-device-in-intune-macos.md)」を参照してください。
 
--   アプリ ストアからアプリをインストールし、Intune で管理されている会社のユーザー アカウントでサインインします。
+- アプリ ストアからアプリをインストールし、Intune で管理されている会社のユーザー アカウントでサインインします。
 
 会社のサポートは、ユーザーがインストールするアプリ用に複数のライセンスを購入している場合があります。 Apple Volume Purchase Program 契約の同意を求めるメッセージが表示された場合、これは正常であり、同意することができます。 同意しない場合は、アプリをインストールすることができません。
 
@@ -56,22 +56,22 @@ ms.locfileid: "55835065"
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>会社のサポートがアプリで管理できるもの  
 以下は、会社のサポートがアプリで管理でき、デバイス上での会社データとのやり取りに影響するオプションの例です。
 
--   特定の web サイトへのアクセス
+- 特定の web サイトへのアクセス
 
--   アプリケーション間のデータ転送
+- アプリケーション間のデータ転送
 
--   ファイルの保存
+- ファイルの保存
 
--   コピーと貼り付けの操作
+- コピーと貼り付けの操作
 
--   暗証番号 (pin) のアクセスの要件
+- 暗証番号 (pin) のアクセスの要件
 
--   会社の資格情報を使用したサインイン
+- 会社の資格情報を使用したサインイン
 
--   クラウドへのバックアップ機能
+- クラウドへのバックアップ機能
 
--   スクリーン ショットを撮る機能
+- スクリーン ショットを撮る機能
 
--   データの暗号化の要件
+- データの暗号化の要件
 
 デバイスの管理対象アプリの詳細については、会社のサポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

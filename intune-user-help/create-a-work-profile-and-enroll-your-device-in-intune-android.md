@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fb5911f8a706f38e3e880c32113d203369ed870
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: f0a8b0b633f64a2ed6e3e14d5d884df80342067a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196934"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545464"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Android の仕事用プロファイルでデバイスを登録する
 
@@ -33,7 +33,7 @@ ms.locfileid: "66196934"
 
 ## <a name="create-work-profile-and-enroll-device"></a>仕事用プロファイルを作成してデバイスを登録する
 
-1.  Android ポータル サイトの **[ようこそ]** 画面で、 **[サインイン]** をタップし、職場または学校アカウントを使用してサインインします。 この無料アプリをまだインストールしていない場合は、[Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) からダウンロードし、インストールしてください。
+1. Android ポータル サイトの **[ようこそ]** 画面で、 **[サインイン]** をタップし、職場または学校アカウントを使用してサインインします。 この無料アプリをまだインストールしていない場合は、[Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) からダウンロードし、インストールしてください。
 
     ![Android ポータル サイト アプリの [ようこそ] 画面](./media/and-enroll-0-welcome-screen.png)
 
@@ -41,15 +41,15 @@ ms.locfileid: "66196934"
 
     ![[会社アクセスのセットアップ] 画面](/intune/media/android_cp_enroll_01_1709_new.png)
 
-3.  **[Why create a work profile?]** (仕事用プロファイルを作成する理由) 画面で機能を確認し、 **[続行]** をタップします。
+3. **[Why create a work profile?]** (仕事用プロファイルを作成する理由) 画面で機能を確認し、 **[続行]** をタップします。
 
     ![仕事用プロファイルを作成する理由](./media/andr-afw-why-create-a-work-profile.png)
 
-4.  会社のサポートがユーザーのデバイスに関して確認できる情報と確認できない情報について確認し、 **[続行]** をタップします。
+4. 会社のサポートがユーザーのデバイスに関して確認できる情報と確認できない情報について確認し、 **[続行]** をタップします。
 
     ![会社のサポートがデバイスに関して確認できる情報と確認できない情報](/intune/media/android_cp_enroll_02_after_1710.png)
 
-5.  **[What's next?]\(次のステップ\)** 画面で、登録中に行う内容を確認し、 **[登録]** をタップします。
+5. **[What's next?]\(次のステップ\)** 画面で、登録中に行う内容を確認し、 **[登録]** をタップします。
 
     ![[次のステップ] 画面](/intune/media/android_work_cp_enroll_03_after_1710.png)
 

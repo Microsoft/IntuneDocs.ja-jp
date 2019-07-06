@@ -18,12 +18,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7265eb7b4679d72fa6ab348c17f9f4f7508482e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f6e73b784f0e938058dcb9d6001082f86ac800ff
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55836430"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545659"
 ---
 # <a name="your-computer-is-already-enrolled"></a>お使いのコンピューターは既に登録されています
 
@@ -31,11 +31,11 @@ ms.locfileid: "55836430"
 
 コンピューターを関連付けるには
 
-1.  ユーザー アカウントに関連付けるコンピューターで **[スタート]** を選択し、**[Microsoft Intune Center]** を選択します。
+1. ユーザー アカウントに関連付けるコンピューターで **[スタート]** を選択し、 **[Microsoft Intune Center]** を選択します。
 
-2.  ポータル サイトを開きます。
+2. ポータル サイトを開きます。
 
-3.  表示される指示に従って、コンピューターをユーザー アカウントに関連付けます。
+3. 表示される指示に従って、コンピューターをユーザー アカウントに関連付けます。
 
 デバイスの登録を解除する場合は、使用しているデバイスの種類ごとの手順 ([Android](unenroll-your-device-from-intune-android.md)、[iOS](unenroll-your-device-from-intune-ios.md)、[Windows](unenroll-your-device-from-intune-windows.md)) を使用してください。
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c929965b79d9ee35fcc1094b4ad18cff6d73d80d
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 4530c1ec573560924b54aa8fd21d39a86cefe97e
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045535"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558424"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android 用 Microsoft Intune アプリ SDK 開発者ガイド
 
@@ -111,10 +111,10 @@ apply plugin: 'com.microsoft.intune.mam'
 
 既定では、プラグインは `project` 依存関係で**のみ**動作します。
 テストのコンパイルは影響を受けません。 構成は一覧するために提供される場合があります。
-*  除外するプロジェクト
-*  [含める外部依存関係](#usage-of-includeexternallibraries) 
-*  処理から除外する特定のクラス
-*  処理から除外するバリアント これらは完全なバリアント名または単一のフレーバーのいずれかを参照できます。 例
+* 除外するプロジェクト
+* [含める外部依存関係](#usage-of-includeexternallibraries) 
+* 処理から除外する特定のクラス
+* 処理から除外するバリアント これらは完全なバリアント名または単一のフレーバーのいずれかを参照できます。 例
      * ご利用のアプリにフレーバー {`savory`, `sweet`} と {`vanilla`, `chocolate`} を含むビルドの種類 `debug` と `release` がある場合は、指定できます。
      * savory フレーバーを含むバリアントをすべて除外するには `savory`、正確なバリアントのみを除外するには `savoryVanillaRelease`。
 
@@ -834,7 +834,7 @@ void updateToken(String upn, String aadId, String resourceId, String token);
     ```java
     class MAMAuthCallback implements MAMServiceAuthenticationCallback {
         public String acquireToken(String upn, String aadId, String resourceId) {
-        return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
+            return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
         }
     }
     ```
@@ -1187,7 +1187,7 @@ BackupAgent を使用すると、バックアップの対象とするデータ�
 既定では、Intune アプリ SDK はポリシーをアプリ全体に適用します。 複数 ID は、ID 単位のレベルでポリシーを適用できるようにするオプションの Intune アプリ保護機能です。 これには、他のアプリ保護機能よりはるかに多くのアプリの参加が必要です。
 
 > [!NOTE]
->  適切なアプリの参加が不足していると、データのリークや他のセキュリティの問題が発生する場合があります。
+> 適切なアプリの参加が不足していると、データのリークや他のセキュリティの問題が発生する場合があります。
 
 ユーザーがデバイスまたはアプリを登録すると、SDK はこの ID を登録し、それをプライマリ Intune 管理対象 ID であると判断します。 アプリの他のユーザーは、無制限のポリシー設定を持つ管理対象外として扱われます。
 
@@ -1317,7 +1317,7 @@ ID を設定するために使用されるすべてのメソッドは、`MAMIden
 
   1. アクティビティが別の MAM アプリによって送信された`Intent`から起動された場合、そのアクティビティの ID は、`Intent`の送信時に他のアプリで有効な ID に基づいて設定されます。
 
-  2.  サービスについては、スレッドの ID は、`onStart` または `onBind` 呼び出しの期間に同様に設定されます。 `onBind` から返される `Binder` の呼び出しでも、スレッド ID が一時的に設定されます。
+  2. サービスについては、スレッドの ID は、`onStart` または `onBind` 呼び出しの期間に同様に設定されます。 `onBind` から返される `Binder` の呼び出しでも、スレッド ID が一時的に設定されます。
 
   3. `ContentProvider` の呼び出しでは同様に、それらの期間にスレッド ID を設定します。
 
@@ -1429,12 +1429,12 @@ public final class MAMFileProtectionManager {
     * this method will silently do nothing.
     *
     * @param identity
-    *       Identity to set.
+    *        Identity to set.
     * @param file
-    *       File to protect.
+    *        File to protect.
     *
     * @throws IOException
-    *       If the file cannot be protected.
+    *         If the file cannot be protected.
     */
    public static void protect(final File file, final String identity) throws IOException;
 
@@ -1742,8 +1742,8 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
 
 [ProGuard](http://proguard.sourceforge.net/) なしに実行される大規模なコード ベースにおいて Dalvik 実行可能ファイル形式の制限が問題になります。 具体的には、次の制限事項が発生する可能性があります。
 
-1.  フィールドの 65 K の制限。
-2.  メソッドの 65 K の制限。
+1. フィールドの 65 K の制限。
+2. メソッドの 65 K の制限。
 
 ### <a name="policy-enforcement-limitations"></a>ポリシーの適用の制限事項
 

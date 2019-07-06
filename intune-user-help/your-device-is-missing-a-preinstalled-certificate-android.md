@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e21fa0285c769f98eada3fd4cb31f3fe82fb8bb9
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 119e3399067297764abb8a14d2f5861cba33e408
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55841820"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529294"
 ---
 # <a name="your-android-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>電話に通常インストールされている証明書が Android デバイスにない
 
@@ -35,11 +35,11 @@ ms.locfileid: "55841820"
 
 1. __Baltimore CyberTrust Root__ 証明書を見つけてダウンロードします。 直接[こちら](https://www.digicert.com/CACerts/BaltimoreCyberTrustRoot.crt)からダウンロードすることもできます。
 
-2. 画面の上から下へドラッグして最近の通知の一覧を表示し、**[BaltimoreCyberTrustRoot.crt]** をタップします。
+2. 画面の上から下へドラッグして最近の通知の一覧を表示し、 **[BaltimoreCyberTrustRoot.crt]** をタップします。
 
 3. デバイスに**証明書の命名**を求めるメッセージが表示されます。 表示された既定の証明書名を変更しないでください。
 
-4. **[認証情報の使用]** が **[VPN とアプリ]** に設定されていることを確認し、**[OK]** をタップします。
+4. **[認証情報の使用]** が **[VPN とアプリ]** に設定されていることを確認し、 **[OK]** をタップします。
 
     ![screenshot-certificate-name-dialog-showing-baltimore-certificate-name](./media/andr-cert_install-2-add_cert_name.png)
 

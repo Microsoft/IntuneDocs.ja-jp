@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97e9042b6c7c1890cd1829f803c05fbab7ae9b44
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b612a245e0a12384f8f9e7ec4a2c970afc2fd628
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040204"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548817"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>ポリシーを使用して Windows PC 管理を簡略化する
 
@@ -35,13 +35,13 @@ Intune ソフトウェア クライアントを実行することにより Windo
 ### <a name="manage-the-microsoft-intune-center"></a>Microsoft Intune Center の管理
 ユーザーは、Intune ソフトウェア クライアントを **Microsoft Intune Center** として確認します。 Microsoft Intune Center を使用してユーザーは次の操作を実行できます。
 
--   ポータル サイトからアプリケーションを取得する。
+- ポータル サイトからアプリケーションを取得する。
 
--   更新プログラムを確認する。
+- 更新プログラムを確認する。
 
--   Microsoft Intune Endpoint Protection を管理する。
+- Microsoft Intune Endpoint Protection を管理する。
 
--  リモート アシスタンスを要求する。
+- リモート アシスタンスを要求する。
 
 Microsoft Intune Center は、すべてのマネージド コンピューターにインストールされます。 Intune ポリシーで次の設定を構成でき、各設定は Microsoft Intune Center でユーザーに表示されます。
 

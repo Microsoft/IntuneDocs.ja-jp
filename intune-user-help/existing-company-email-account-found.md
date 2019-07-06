@@ -18,12 +18,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a02a7b69245b9b6e7b8f62fdb9be8acb83d42981
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8326693717ac96a0e9d32617e7d7080d50206ac6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55834757"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545430"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>既存の会社の電子メール アカウントが検出された
 
@@ -34,7 +34,7 @@ ms.locfileid: "55834757"
 
 これらの手順によって、確実にお使いのデバイスが社内のセキュリティ要件を満たすと共に、電子メールを引き続きセキュリティ保護できます。
 
-1.  お使いのデバイス上で、**[設定]** に移動して、接続されているアカウントを検出します。 たとえば、iOS 11+ デバイス上で、**[Password & Accounts]** \(パスワードとアカウント\) を選択します。
+1. お使いのデバイス上で、 **[設定]** に移動して、接続されているアカウントを検出します。 たとえば、iOS 11+ デバイス上で、 **[Password & Accounts]** \(パスワードとアカウント\) を選択します。
  
 2. お使いの職場の電子メール アカウントを選択して削除します。
 

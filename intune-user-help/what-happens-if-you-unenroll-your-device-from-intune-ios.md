@@ -1,5 +1,5 @@
 ---
-title: 'iOS または macOS デバイスの登録を解除するとどうなるか '
+title: iOS または macOS デバイスの登録を解除するとどうなるか
 description: Intune からデバイスを削除した後どうなるかについて説明します
 keywords: ''
 author: lenewsad
@@ -18,30 +18,30 @@ ms.reviewer: esmich, elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85f6ae657361bea0ab89b8afa73976273fa000f4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4ba5705fa04d9eb28e74128228ca8a862f1cb772
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55844243"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545673"
 ---
 # <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>Intune から iOS または macOS デバイスの登録を解除するとどうなるか
 
 Intune から iOS または macOS デバイスの登録を解除すると、次のようになります。
 
--   ポータル サイトにお使いのデバイスが表示されなくなります。
+- ポータル サイトにお使いのデバイスが表示されなくなります。
 
--   ポータル サイトからアプリケーションをインストールできなくなります。
+- ポータル サイトからアプリケーションをインストールできなくなります。
 
--   追加時にデバイスで変更した設定がある場合 (カメラを無効にする、特定のパスワードの長さを必須にするなど)、その設定は適用されなくなります。
+- 追加時にデバイスで変更した設定がある場合 (カメラを無効にする、特定のパスワードの長さを必須にするなど)、その設定は適用されなくなります。
 
--   お使いのデバイスで、ファイルの共有または内部 Web サイトなど、一部の会社リソースにアクセスできなくなる可能性があります。
+- お使いのデバイスで、ファイルの共有または内部 Web サイトなど、一部の会社リソースにアクセスできなくなる可能性があります。
 
--   お使いのデバイスで、会社のアプリと会社のデータを使用できなくなります。
+- お使いのデバイスで、会社のアプリと会社のデータを使用できなくなります。
 
--   Wi-Fi または仮想プライベート ネットワーク (VPN) を使用して、社内ネットワークに接続できなくなる可能性があります。
+- Wi-Fi または仮想プライベート ネットワーク (VPN) を使用して、社内ネットワークに接続できなくなる可能性があります。
 
--   会社の電子メールのプロファイルはデバイスから削除されます。
+- 会社の電子メールのプロファイルはデバイスから削除されます。
 
 登録を解除する手順については、「[Intune からデバイスの登録を解除する](unenroll-your-device-from-intune-ios.md)」を参照してください。
 

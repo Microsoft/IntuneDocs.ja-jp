@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1a725ff5ba5a677a41fe2a89b999f1ae41b3b6f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a58339f8a956e4250064bc81e2f291a72c27c27f
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040907"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549148"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Windows PC のリモート アシスタンス要求と提供
 
@@ -79,13 +79,13 @@ Intune では別売りの [TeamViewer](https://www.teamviewer.com) ソフトウ�
 ## <a name="remotely-restart-a-windows-pc"></a>Windows PC をリモートで再起動する
 問題を解決するためにユーザーをサポートする際、ユーザーの PC のリモート再起動が必要になる場合があります。 次の手順で Windows PC をリモート再起動します。
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[グループ]** &gt; **[すべてのデバイス]** (または、再起動する PC が含まれる別のグループ) を選択します。
+1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[グループ]** &gt; **[すべてのデバイス]** (または、再起動する PC が含まれる別のグループ) を選択します。
 
-2.  1 つまたは複数の PC を選択し、 **[リモート タスク]** &gt; **[コンピューターの再起動]** を選択します。
+2. 1 つまたは複数の PC を選択し、 **[リモート タスク]** &gt; **[コンピューターの再起動]** を選択します。
 
-3.  タスクの状態を表示するには、ページの右下隅にある **[リモート タスク]** を選択します。
+3. タスクの状態を表示するには、ページの右下隅にある **[リモート タスク]** を選択します。
 
-4.  **[タスクの状態]** ダイアログ ボックスで、現在のリモート タスク、タスクの状態、デバイス名、発生したエラーを確認します。
+4. **[タスクの状態]** ダイアログ ボックスで、現在のリモート タスク、タスクの状態、デバイス名、発生したエラーを確認します。
 
 ### <a name="see-also"></a>関連項目
 

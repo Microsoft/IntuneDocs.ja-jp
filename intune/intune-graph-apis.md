@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d838d0cd0d0f92cb344592d18d9e04e18d7e456
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: f182d356c151c569b9cf49adfe2f2c0cc34f1a54
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819731"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548903"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD を使用して Microsoft Graph の Intune API にアクセスする方法
 
@@ -61,23 +61,23 @@ Microsoft Graph の Intune API へのアクセスには、以下のものが必�
 
 Microsoft Graph API を使用するアプリを登録するには、次の作業を行います。
 
-1.  サインインする[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)管理者の資格情報を使用します。
+1. サインインする[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)管理者の資格情報を使用します。
 
     必要に応じて、次を使用することができます。
     - テナントの管理者アカウント。
     - **[ユーザーはアプリケーションを登録できる]** の設定が有効になっている、テナントのユーザー アカウント。
 
-2.  メニューで、 **[Azure Active Directory]** &gt; **[アプリの登録]** の順に選択します。
+2. メニューで、 **[Azure Active Directory]** &gt; **[アプリの登録]** の順に選択します。
 
     <img src="./media/azure-ad-app-reg.png" width="157" height="170" alt="The App registrations menu command" />
 
-3.  **[新しいアプリケーションの登録]** を選択して新しいアプリケーションを作成するか、または既存のアプリケーションを選択します。  (既存のアプリケーションを選択した場合は、次の手順をスキップします。)
+3. **[新しいアプリケーションの登録]** を選択して新しいアプリケーションを作成するか、または既存のアプリケーションを選択します。  (既存のアプリケーションを選択した場合は、次の手順をスキップします。)
 
-4.  **[作成]** ブレードで、次を指定します。
+4. **[作成]** ブレードで、次を指定します。
 
-    1.  アプリケーションの **[名前]** \(ユーザーがサインインするときに表示されます\)。
+    1. アプリケーションの **[名前]** \(ユーザーがサインインするときに表示されます\)。
 
-    2.  **[アプリケーションの種類]** と **[リダイレクト URI]** の値。
+    2. **[アプリケーションの種類]** と **[リダイレクト URI]** の値。
 
         これらは要件によって異なります。 たとえば Azure AD [Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) を使用している場合、 **[アプリケーションの種類]** は `Native` に、 **[リダイレクト URI]** は `urn:ietf:wg:oauth:2.0:oob` に設定します。
 
@@ -85,19 +85,19 @@ Microsoft Graph API を使用するアプリを登録するには、次の作業
 
         詳細については、「[Azure AD の認証シナリオ](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)」をご覧ください。
 
-5.  [アプリケーション] ブレードで、次の作業を行います。
+5. [アプリケーション] ブレードで、次の作業を行います。
 
-    1.  **[アプリケーション ID]** の値をメモします。
+    1. **[アプリケーション ID]** の値をメモします。
 
-    2.  **[設定]** &gt; **[API アクセス]** &gt; **[必要なアクセス許可]** の順に選択します。
+    2. **[設定]** &gt; **[API アクセス]** &gt; **[必要なアクセス許可]** の順に選択します。
 
     <img src="media/azure-ad-req-perm.png" width="483" height="186" alt="The Required permissions setting" />
 
-6.  **[必要なアクセス許可]** ブレードで、 **[追加]** &gt; **[API アクセスの追加]** &gt; **[API を選択します]** の順に選択します。
+6. **[必要なアクセス許可]** ブレードで、 **[追加]** &gt; **[API アクセスの追加]** &gt; **[API を選択します]** の順に選択します。
 
     <img src="media/azure-ad-add-graph.png" width="436" height="140" alt="The Microsoft Graph setting" />
 
-7.  **[API を選択します]** ブレードで、 **[Microsoft Graph]** &gt; **[選択]** の順に選択します。  **[アクセスの有効化]** ブレードが開き、アプリケーションで使用できるアクセス許可スコープが一覧表示されます。
+7. **[API を選択します]** ブレードで、 **[Microsoft Graph]** &gt; **[選択]** の順に選択します。  **[アクセスの有効化]** ブレードが開き、アプリケーションで使用できるアクセス許可スコープが一覧表示されます。
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
@@ -334,28 +334,28 @@ __Microsoft Intune の構成の読み取り__ | DeviceManagementServiceConfig.Re
 
 この例では、C# を使用して、Intune アカウントに関連付けられているデバイスの一覧を取得する方法を説明します。
 
-1.  Visual Studio を起動して、新しい Visual C# コンソール アプリ (.NET Framework) プロジェクトを作成します。
+1. Visual Studio を起動して、新しい Visual C# コンソール アプリ (.NET Framework) プロジェクトを作成します。
 
-2.  プロジェクトの名前を入力し、必要に応じて他の詳細情報を入力します。
+2. プロジェクトの名前を入力し、必要に応じて他の詳細情報を入力します。
 
     <img src="media/aad-auth-cpp-new-console.png" width="624" height="433" alt="Creating a C# console app project in Visual Studio"  />
 
-3.  ソリューション エクスプローラーを使用して、プロジェクトに Microsoft ADAL NuGet パッケージを追加します。
+3. ソリューション エクスプローラーを使用して、プロジェクトに Microsoft ADAL NuGet パッケージを追加します。
 
-    1.  ソリューション エクスプローラーを右クリックします。
-    2.  **[NuGet パッケージの管理...]** &gt; **[参照]** を選択します。
-    3.  `Microsoft.IdentityModel.Clients.ActiveDirectory` を選択して、 **[インストール]** を選択します。
+    1. ソリューション エクスプローラーを右クリックします。
+    2. **[NuGet パッケージの管理...]** &gt; **[参照]** を選択します。
+    3. `Microsoft.IdentityModel.Clients.ActiveDirectory` を選択して、 **[インストール]** を選択します。
 
     <img src="media/aad-auth-cpp-install-package.png" width="624" height="458" alt="Selecting the Azure AD identity model module" />
 
-4.  **Program.cs** の先頭に、次のステートメントを追加します。
+4. **Program.cs** の先頭に、次のステートメントを追加します。
 
     ``` csharp
     using Microsoft.IdentityModel.Clients.ActiveDirectory;</p>
     using System.Net.Http;
     ```
 
-5.  Authorization ヘッダーを作成するメソッドを追加します。
+5. Authorization ヘッダーを作成するメソッドを追加します。
 
     ``` csharp
     private static async Task<string> GetAuthorizationHeader()
@@ -386,14 +386,14 @@ __Microsoft Intune の構成の読み取り__ | DeviceManagementServiceConfig.Re
     }
     ```
 
-7.  **Main** を **GetMyManagedDevices** を呼び出すように更新します。
+7. **Main** を **GetMyManagedDevices** を呼び出すように更新します。
 
     ``` csharp
     string devices = GetMyManagedDevices().GetAwaiter().GetResult();
     Console.WriteLine(devices);
     ```
 
-8.  プログラムをコンパイルし、実行します。  
+8. プログラムをコンパイルし、実行します。  
 
 初めてプログラムを実行すると、2 つのプロンプトが表示されます。  1 つ目は資格情報を要求し、2 つ目は `managedDevices` 要求に対するアクセス許可を付与します。  
 
@@ -553,11 +553,11 @@ catch {
 
 これを実行するには、次のようにします。
 
-1.  対象の Azure AD テナントに、クライアントのアカウントが存在することを確認します。
+1. 対象の Azure AD テナントに、クライアントのアカウントが存在することを確認します。
 
-2.  テナント アカウントが、ユーザーによるアプリケーションの登録を許可していることを確認します (**ユーザー設定** をご覧ください)。
+2. テナント アカウントが、ユーザーによるアプリケーションの登録を許可していることを確認します (**ユーザー設定** をご覧ください)。
 
-3.  各テナント間のリレーションシップを確立します。  
+3. 各テナント間のリレーションシップを確立します。  
 
     そのためには、次のいずれかを実行します。
 
@@ -567,15 +567,15 @@ catch {
 
 ユーザーを招待してテナントのゲストにするには、次を実行します。
 
-1.  **[クイック タスク]** パネルで、 **[ゲスト ユーザーの追加]** を選択します。
+1. **[クイック タスク]** パネルで、 **[ゲスト ユーザーの追加]** を選択します。
 
     <img src="media/azure-ad-add-guest.png" width="448" height="138" alt="Use Quick Tasks to add a guest user" />
 
-2.  クライアントのメール アドレスを入力し、(必要に応じて) 招待状に個人的なメッセージを追加します。
+2. クライアントのメール アドレスを入力し、(必要に応じて) 招待状に個人的なメッセージを追加します。
 
     <img src="media/azure-ad-guest-invite.png" width="203" height="106" alt="Inviting an external user as a guest" />
 
-3.  **[招待する]** を選択します。
+3. **[招待する]** を選択します。
 
 これにより、ユーザーに招待状が送信されます。
 

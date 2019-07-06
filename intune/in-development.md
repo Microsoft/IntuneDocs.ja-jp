@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 633bf52084ad261f768cb4e59aaf4ce0ab5cd5bc
-ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
-ms.translationtype: HT
+ms.openlocfilehash: f7dd6f62cb53dd0cc373fb3f2ffa7d9434b135cd
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "67468728"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494241"
 ---
 # <a name="in-development-for-microsoft-intune---july-2019"></a>Microsoft Intune 用に開発中 - 2019 年 7 月
 
@@ -58,8 +58,6 @@ ms.locfileid: "67468728"
 <!-- ***********************************************-->
 ## <a name="app-management"></a>アプリ管理
 
-### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>デバイスのユーザーは、インストール済みまたはインストールしようとしたすべての管理対象アプリを表示できる <!-- 2352913 -->
-Windows 用ポータル サイトに、ユーザーのデバイスにインストールされているすべてのマネージド アプリ (必須および使用可能の両方) が一覧表示されます。 ユーザーは、試行した、および保留中のアプリのインストールと、それらの現在の状態を表示することができるようになります。 組織でアプリが必須または使用可能とされていない場合、会社のアプリは全くインストールされていないというメッセージがユーザーに表示されます。 ユーザーはまた、インストールの状態でアプリを並べ替えまたはフィルタリングすることができます。
 
 ### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>ユーザーとグループのカスタマイズされた通知    <!-- 16766574   -->
 さらに、iOS および Android デバイスを Intune で管理する上のユーザーがポータル サイト アプリケーションからカスタムの一時的なプッシュ通知を送信することが間もなくなります。 これらのカスタム通知が特定の Intune 機能に関連付けられていないの一部を送信する一般的な通知など、必要な目的に使用できるすべての従業員またはします。  

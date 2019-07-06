@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 76e6e3186ae0e8bf1d05698d28539994d33486e8
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 1c716f48a46e4fd2dc24d203426c364dd4cd88c0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804431"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545232"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft オープン ソース コード倫理規定
 
@@ -30,7 +30,7 @@ Microsoft では、コミュニティ (ユーザー、お客様、パートナ�
     5. pull request を作成します。
     
     **選択肢 2: このリポジトリ内の記事を見つけて更新する**  
-    1.  ほとんどのトピックは `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune` にあります。 このフォルダー内で `troubleshoot-policies-in-microsoft-intune` などのトピック名を検索します。 
+    1. ほとんどのトピックは `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune` にあります。 このフォルダー内で `troubleshoot-policies-in-microsoft-intune` などのトピック名を検索します。 
     2. リンクを選択して鉛筆アイコンをクリックします。 鉛筆アイコンをポイントすると、 **[このファイルの編集]** というツールヒントが表示されます。 
     3. 変更を加えてから、変更を**コミット**します。 
     4. pull request を作成します。 

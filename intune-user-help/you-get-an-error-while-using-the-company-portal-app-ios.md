@@ -18,21 +18,21 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d9ea064da17e5447c08c3a8370017dec34e30af
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 416c109ae9d27ac48896c1601bd8448fa89d0af7
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55844404"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545609"
 ---
 # <a name="you-get-an-error-while-using-the-company-portal-app"></a>会社のポータル アプリの使用中にエラーが発生する
 
 iOS デバイスでポータル サイト アプリを使用している間にエラーが発生した場合は、会社のサポートが問題のトラブルシューティングを行う際に役立つようにエラーに関する情報を送信することができます。 さまざまな方法では、エラー情報を送信できます。
 
--   エラー アラート メッセージに対して **[レポート]** をタップします。
+- エラー アラート メッセージに対して **[レポート]** をタップします。
 
--   ポータル サイト アプリの **[バージョン情報]** 画面の **[診断レポートの送信]** をタップします。
+- ポータル サイト アプリの **[バージョン情報]** 画面の **[診断レポートの送信]** をタップします。
 
--   ポータル サイト アプリでデバイスをシェイクし、診断アラートが表示されたら **[電子メール]** をタップします。 デバイスをシェイクしてもアラートが表示されない場合は、**[設定]** > **[ポータル サイト]** の順に開き、**[シェイク ジェスチャ]** オプションがオンになっていることを確認します。
+- ポータル サイト アプリでデバイスをシェイクし、診断アラートが表示されたら **[電子メール]** をタップします。 デバイスをシェイクしてもアラートが表示されない場合は、 **[設定]**  >  **[ポータル サイト]** の順に開き、 **[シェイク ジェスチャ]** オプションがオンになっていることを確認します。
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

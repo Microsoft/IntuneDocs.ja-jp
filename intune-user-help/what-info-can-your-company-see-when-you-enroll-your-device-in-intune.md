@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f47d7e238bc810db9057a4a7c86dbfa523b0e7b
-ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
+ms.openlocfilehash: 1afdaa1bb21e3a13932202524eed9322d95479bb
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174215"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545651"
 ---
 # <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>デバイスを登録した場合に組織が確認できる情報
 
@@ -34,7 +34,7 @@ Microsoft Intune にデバイスを登録しても、組織はユーザーの個
 - 電子メールとテキスト メッセージ
 - 連絡先
 - 予定表
--   パスワード
+- パスワード
 - フォト アプリやカメラ ロールの内容を含む、画像
 - ファイル
 
@@ -51,8 +51,8 @@ Microsoft Intune にデバイスを登録しても、組織はユーザーの個
 
 **組織が閲覧できる可能性がある情報:**
 
--  電話番号: **会社**が所有するデバイスの場合は、ユーザーの電話番号を確認できます。 **個人**が所有するデバイスの場合、組織が確認できるのは、ユーザーの電話番号の最後の 4 桁のみです。 個々のデバイスの**所有権の種類**を確認するには、デバイスの **[デバイスの詳細]** ページを開きます。
+- 電話番号: **会社**が所有するデバイスの場合は、ユーザーの電話番号を確認できます。 **個人**が所有するデバイスの場合、組織が確認できるのは、ユーザーの電話番号の最後の 4 桁のみです。 個々のデバイスの**所有権の種類**を確認するには、デバイスの **[デバイスの詳細]** ページを開きます。
 - デバイスの記憶域スペース: 必要なアプリをインストールできない場合、組織がユーザーのデバイスの記憶域スペースを確認し、スペースが少なすぎるかどうかを判断することがあります。  
--  場所: 失われた監視対象の iOS デバイスを復旧する必要がある場合を除いて、組織がユーザーのデバイスの場所を確認することは絶対にできません。 監視対象のデバイスに関する詳細については、[Apple iOS のドキュメント](https://go.microsoft.com/fwlink/?linkid=853816)を確認してください。  
+- 場所: 失われた監視対象の iOS デバイスを復旧する必要がある場合を除いて、組織がユーザーのデバイスの場所を確認することは絶対にできません。 監視対象のデバイスに関する詳細については、[Apple iOS のドキュメント](https://go.microsoft.com/fwlink/?linkid=853816)を確認してください。  
 - アプリ インベントリの詳細: 組織で Mobile Threat Defense を使っている場合、iOS デバイス上のアプリの詳細を表示することができます。 Mobile Threat Defense の詳細については、[こちら](you-are-prompted-to-install-mtd-ios.md)をご覧ください。
 - ネットワーク情報: Android デバイスのネットワーク接続情報の一部は、組織のサポートが確認できる場合があります。 たとえば、デバイスを特定の建物内に維持するように組織が定めている場合、デバイスでは接続先のネットワークが識別されます。 

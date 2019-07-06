@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3b0aff29db5402de7e91282e74cd6d69a103545
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 9e9a50855a26b72b2f6589d9f44ce6deea0588fa
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045814"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529185"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Microsoft Intune App SDK の概要
 
@@ -160,8 +160,8 @@ iOS または Android アプリを Intune アプリ SDK と統合するために
     * Intune アプリ保護ポリシーに対して iOS または Android ストア アプリを有効化している ISV の場合は、登録ステップで説明した Microsoft Intune での登録が完了すると、プロモーション コードを受け取ります。 プロモーション コードを使用すると、Microsoft Intune の 1 年間の拡張使用試用版にサインアップできます。
 
     * ストアに出荷されない基幹業務アプリを開発している場合は、組織を介して Microsoft Intune へのアクセス権が付与されます。 この場合も、[Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) で、1 か月間の無料試用版にサインアップできます。
-    
-    * エンド ユーザー アカウントを使用してモバイル デバイスでアプリをテストしている場合は、管理者アカウントを使用してログインした後、Microsoft 365 管理センター Web サイトによってそのアカウントに Intune ライセンスが付与されていることを確認します。[Microsoft Intune ライセンスの割り当て](https://docs.microsoft.com/en-ca/intune/licenses-assign)に関するページを参照してください。
+
+    * エンド ユーザー アカウントを使用してモバイル デバイスでアプリをテストしている場合は、管理者アカウントを使用してログインした後、Microsoft 365 管理センター Web サイトによってそのアカウントに Intune ライセンスが付与されていることを確認します。[Microsoft Intune ライセンスの割り当て](https://docs.microsoft.com/intune/licenses-assign)に関するページを参照してください。
 
 * **Intune のアプリ保護ポリシー**: Intune のすべてのアプリ保護ポリシーに対して、ご使用のアプリをテストするには、ポリシー設定ごとに想定される動作を把握する必要があります。 [iOS アプリ保護ポリシー](app-protection-policy-settings-ios.md)と [Android アプリ保護ポリシー](app-protection-policy-settings-android.md)の説明を参照してください。 アプリで Intune SDK を統合していても、対象アプリとしてまだ Azure portal に表示されない場合は、[+ その他のアプリ] オプションを選択し、テキスト ボックスにバンドル ID (iOS) またはパッケージ名 (Android) を指定することでポリシーの対象にすることができます。
 
@@ -173,12 +173,12 @@ iOS または Android アプリを Intune アプリ SDK と統合するために
 
 アプリを Azure テナント内に登録し、それが **[すべてのアプリケーション]** の下に表示されたら、Intune アプリ保護サービス (旧称: MAM サービス) へのアクセス権をアプリに付与する必要があります。 Azure portal で次の操作を行います。
 
-1.  **[Azure Active Directory]** ブレードに移動します。
-2.  **[アプリ登録]** で、アプリケーション用に設定された一覧に移動します。
-3.  **[+ アクセス許可の追加]** をクリックします。
-4.  **[所属する組織で使用している API]** をクリックします。 
-5.  検索ボックスに「**Microsoft Mobile Application Management**」と入力します。
-6.  **[委任されたアクセス許可]** で **[DeviceManagementManagedApps.ReadWrite: Read and Write the User’s App Management Data]\(DeviceManagementManagedApps.ReadWrite: ユーザーのアプリ管理データの読み取りと書き込み\)** * チェックボックスをオンにします。
+1. **[Azure Active Directory]** ブレードに移動します。
+2. **[アプリ登録]** で、アプリケーション用に設定された一覧に移動します。
+3. **[+ アクセス許可の追加]** をクリックします。
+4. **[所属する組織で使用している API]** をクリックします。 
+5. 検索ボックスに「**Microsoft Mobile Application Management**」と入力します。
+6. **[委任されたアクセス許可]** で **[DeviceManagementManagedApps.ReadWrite: Read and Write the User’s App Management Data]\(DeviceManagementManagedApps.ReadWrite: ユーザーのアプリ管理データの読み取りと書き込み\)** * チェックボックスをオンにします。
 7. **[アクセス許可の追加]** をクリックします。
 
 ### <a name="badge-your-app-optional"></a>アプリにバッジを付ける (省略可能)

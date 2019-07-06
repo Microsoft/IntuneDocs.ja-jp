@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ddecf202160decb6ab219cfe0ef490092132059
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9ca937fc5d129dc98c288fa0dde59aa861709f93
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840741"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527889"
 ---
 # <a name="install-lookout-for-work"></a>Lookout for Work をインストールする
 
@@ -31,11 +31,11 @@ ms.locfileid: "55840741"
 
 ## <a name="what-you-need-to-do"></a>必要事項
 
-1. 画面の一番上から下にドラッグして通知バーを開き、**[Required application – Install Lookout for Work from Play Store]** (必要なアプリケーション – Lookout for Work を Play ストアからインストール) をタップします。
+1. 画面の一番上から下にドラッグして通知バーを開き、 **[Required application – Install Lookout for Work from Play Store]** (必要なアプリケーション – Lookout for Work を Play ストアからインストール) をタップします。
 
    ![Lookout for Work をインストールする必要があります](./media/lookout-required-app-install-android.png)
 
-2. Play ストアの Lookout for Work のインストール ページが表示されます。 Lookout for Work をインストールしてから、**[同意する]** をタップして Lookout for Work によるデバイスへのアクセスを許可します。
+2. Play ストアの Lookout for Work のインストール ページが表示されます。 Lookout for Work をインストールしてから、 **[同意する]** をタップして Lookout for Work によるデバイスへのアクセスを許可します。
 
    ![[同意する] をタップして Lookout for Work によるデバイスへのアクセスを許可します](./media/lookout-accept-store-permissions-android.png)
 

@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b59dc8599ce2dd5c99875a0032ccce5326c376cd
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8290ccbb61308fb7f001b1a7d331fd366e13d902
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55843750"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527734"
 ---
 # <a name="install-lookout-for-work-on-your-ios-device"></a>iOS デバイスで Lookout for Work をインストールする
 
@@ -31,15 +31,15 @@ ms.locfileid: "55843750"
 
 ## <a name="what-you-need-to-do"></a>必要事項
 
-1.  次のプロンプトが表示された場合は、**[インストール]** をタップし、デバイスへの Lookout for Work のインストールを許可します。
+1. 次のプロンプトが表示された場合は、 **[インストール]** をタップし、デバイスへの Lookout for Work のインストールを許可します。
 
       ![アプリのインストールを促す画面のスクリーンショット。[キャンセル] ボタンと [インストール] ボタンが表示されています。](/intune-user-help/media/ios-mts-install-app-request-after-1804.png)
 
-2. 次のメッセージが表示されたら **[設定]** をタップし、**[ロケーション サービス]** をオンにし、**[続行]** をタップします。
+2. 次のメッセージが表示されたら **[設定]** をタップし、 **[ロケーション サービス]** をオンにし、 **[続行]** をタップします。
 
       ![[設定]、[ロケーション サービス] の順にタップする](./media/ios-lfw-allow-location-services.png)
 
-3. Lookout for Work に必要なアクセス許可を確認し、**[続行]** をタップします。
+3. Lookout for Work に必要なアクセス許可を確認し、 **[続行]** をタップします。
 
       ![Lookout for Work に接続している状態になりました](./media/ios-lfw-permissions-lookout-needs.png)
 

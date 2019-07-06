@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ee68b4f330077ce0892baa5e8d82f6c9c4e8ffe
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: 4f83504e5d651d7f981fa605fc9157287bdb09a4
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069202"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529281"
 ---
 # <a name="install-zimperium-zips-on-your-android-device"></a>Android デバイスに Zimperium zIPS をインストールする
 
@@ -31,11 +31,11 @@ ms.locfileid: "58069202"
 
 ## <a name="what-you-need-to-do"></a>必要事項
 
-1. 画面の一番上から下にドラッグして通知バーを開き、**[Required application – Install Skycure from Play Store]\(必要なアプリケーション – Skycure を Play ストアからインストール)** をタップします。 ポータル サイト アプリの __[Compliance Details]\(ポリシー準拠状況の詳細)__ でも確認することができます。
+1. 画面の一番上から下にドラッグして通知バーを開き、 **[Required application – Install Skycure from Play Store]\(必要なアプリケーション – Skycure を Play ストアからインストール)** をタップします。 ポータル サイト アプリの __[Compliance Details]\(ポリシー準拠状況の詳細)__ でも確認することができます。
 
-2. Play ストアの Zimperium zIPS のインストール ページが表示されます。 Zimperium zIPS をインストールし、**[同意する]** をタップして Zimperium zIPS がお使いのデバイスにアクセスすることを許可します。
+2. Play ストアの Zimperium zIPS のインストール ページが表示されます。 Zimperium zIPS をインストールし、 **[同意する]** をタップして Zimperium zIPS がお使いのデバイスにアクセスすることを許可します。
 
-3. Zimperium zIPS を開き、**[VERIFY]\(確認)** をタップします。
+3. Zimperium zIPS を開き、 **[VERIFY]\(確認)** をタップします。
 
 4. **[Azure Active Directory でサインインする]** をタップし、職場または学校の電子メールやファイルへのアクセスに使用しているアカウントを入力します。
 

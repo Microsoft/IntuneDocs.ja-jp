@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6daeaaac7fb554e2c29f6ac150eaff8308d670b0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 13a12da72577edfee1d6ba23c2cd5e56d1fe397e
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55850558"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527584"
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-ios-device"></a>iOS デバイスに Symantec Endpoint Protection Mobile をインストールする
 
@@ -29,11 +29,11 @@ ms.locfileid: "55850558"
 
 ## <a name="what-you-need-to-do"></a>必要事項
 
-1.  次のプロンプトが表示された場合は、**[インストール]** をタップし、デバイスへの SEP Mobile のインストールを許可します。
+1. 次のプロンプトが表示された場合は、 **[インストール]** をタップし、デバイスへの SEP Mobile のインストールを許可します。
 
-2. 次のメッセージが表示されたら **[設定]** をタップし、**[ロケーション サービス]** をオンにし、**[続行]** をタップします。
+2. 次のメッセージが表示されたら **[設定]** をタップし、 **[ロケーション サービス]** をオンにし、 **[続行]** をタップします。
 
-3. SEP Mobile に必要なアクセス許可を確認し、**[続行]** をタップします。
+3. SEP Mobile に必要なアクセス許可を確認し、 **[続行]** をタップします。
 
 4. SEP Mobile に通知の送信の許可を求めるプロンプトで **[許可]** をタップします。
 

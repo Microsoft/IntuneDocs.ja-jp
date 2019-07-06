@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8756ad134853bdd19155c3d8f50d1f07960e80f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f90568b3939d37bb4e7fbeff72d5e357bc57bd6e
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045368"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547885"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune データ ウェアハウスのデータ モデル
 
@@ -32,22 +32,22 @@ Intune データ ウェアハウスは、データを毎日サンプリングし
 
 このウェアハウスは、次の上位領域のデータを公開します。
 
-  -  アプリ保護が有効なアプリと使用状況
-  -  登録済みデバイス、プロパティ、インベントリ
-  -  アプリとソフトウェアのインベントリ
-  -  デバイスの構成とコンプライアンス ポリシー
+  - アプリ保護が有効なアプリと使用状況
+  - 登録済みデバイス、プロパティ、インベントリ
+  - アプリとソフトウェアのインベントリ
+  - デバイスの構成とコンプライアンス ポリシー
 
 これらの領域には、お使いの Intune 環境にとって重要なエンティティが含まれます。 エンティティ セットの詳細については、次の各トピックをご覧ください。
 
-  -  [アプリケーション](reports-ref-application.md)
-  -  [日付](reports-ref-date.md)
-  -  [デバイス](reports-ref-devices.md)
-  -  [Intune の管理拡張](reports-ref-intunemanagementextension.md)
-  -  [ポリシー](reports-ref-policy.md)
-  -  [モバイル アプリ管理 (MAM)](reports-ref-mobile-app-management.md)
-  -  [ユーザー](reports-ref-user.md)
-  -  [現在のユーザー](reports-ref-current-user.md)
-  -  [ユーザー デバイスの関連付け](reports-ref-user-device.md)
+  - [アプリケーション](reports-ref-application.md)
+  - [日付](reports-ref-date.md)
+  - [デバイス](reports-ref-devices.md)
+  - [Intune の管理拡張](reports-ref-intunemanagementextension.md)
+  - [ポリシー](reports-ref-policy.md)
+  - [モバイル アプリ管理 (MAM)](reports-ref-mobile-app-management.md)
+  - [ユーザー](reports-ref-user.md)
+  - [現在のユーザー](reports-ref-current-user.md)
+  - [ユーザー デバイスの関連付け](reports-ref-user-device.md)
 
 ## <a name="relationships-star-schema-model"></a>リレーションシップ: スタースキーマ モデル
 

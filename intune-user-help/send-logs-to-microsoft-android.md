@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52f6caf8e48cd9781648acf1de0152ec107d5246
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 20bdfcce6574d31c37442a7bad58582aa7ea2fb6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55850907"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546133"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>Android デバイスのログをポータル サイト開発者に送信する
 
@@ -34,16 +34,16 @@ ms.locfileid: "55850907"
 
 Microsoft にログを送信するには、次の手順に従います。
 
-1.  ポータル サイト アプリを開きます。
+1. ポータル サイト アプリを開きます。
 
-2.  **[メニュー]** > **[ヘルプ]** > **[メール サポート]** の順にタップします。
+2. **[メニュー]**  >  **[ヘルプ]**  >  **[メール サポート]** の順にタップします。
 
     > [!NOTE]
     > **メニュー**は、ご使用の Android デバイスの種類によって、ソフトウェア ボタンの場合も、ハードウェア ボタンの場合もあります。
 
-3.  **[ログのみをアップロード]** をタップします。
+3. **[ログのみをアップロード]** をタップします。
 
-4.  アップロードが完了すると、インシデント ID が届きます。 記録用に ID を保存します。
+4. アップロードが完了すると、インシデント ID が届きます。 記録用に ID を保存します。
 
 Android のポータル サイト チームに直接連絡をとる場合、<a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a> 宛てにメールを送信してください。 
 

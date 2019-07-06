@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b90edf1f2e380790e2c725ee00c03d525c9fa1e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e5e00e1f7d4f84f9bdc1d1a52b83095135479327
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55833975"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546162"
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>管理対象の macOS デバイスの適切なユーザーにエラーを送信する
 
@@ -33,11 +33,11 @@ Intune ポータル サイト アプリでは、不明なエラーが発生す�
 
 Intune ポータル サイト アプリでエラーに関する詳細を送信するには:
 
--   受け取ったエラー メッセージで、**[レポート]** をクリックします。
+- 受け取ったエラー メッセージで、 **[レポート]** をクリックします。
 
--   **[ヘルプ]** メニューの **[診断レポートの保存]** をクリックします。 ファイルを保存する場所を選びます。 次に、このファイルを会社のサポート担当者にメールまたはアップロードします。
+- **[ヘルプ]** メニューの **[診断レポートの保存]** をクリックします。 ファイルを保存する場所を選びます。 次に、このファイルを会社のサポート担当者にメールまたはアップロードします。
 
--   メール アプリが構成されている場合は、**[ヘルプ]** > **[診断レポートの送信]** で診断レポートを送信できます。 ログをアップロードした後、**[電子メールの詳細]** をクリックします。
+- メール アプリが構成されている場合は、 **[ヘルプ]**  >  **[診断レポートの送信]** で診断レポートを送信できます。 ログをアップロードした後、 **[電子メールの詳細]** をクリックします。
 
 ## <a name="send-errors-to-the-company-portal-developers-for-macos-devices"></a>macOS デバイスのポータル サイト開発者にエラーを送信する
 
@@ -45,8 +45,8 @@ Intune ポータル サイト アプリが、予期せず終了することが�
 
 Microsoft にログを送信するには、次の手順に従います。
 
-1.  ポータル サイト アプリを開きます。
-2.  **[ヘルプ]** メニューの **[診断レポートの送信]** をクリックします。  ログがアップロードされた後、インシデント ID を受け取ります。 その ID をコピーして保存します。
-3.  <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">こちらのテンプレート</a>を使って、Microsoft にメールを送ります。
+1. ポータル サイト アプリを開きます。
+2. **[ヘルプ]** メニューの **[診断レポートの送信]** をクリックします。  ログがアップロードされた後、インシデント ID を受け取ります。 その ID をコピーして保存します。
+3. <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">こちらのテンプレート</a>を使って、Microsoft にメールを送ります。
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

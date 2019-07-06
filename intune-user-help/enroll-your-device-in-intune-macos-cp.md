@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fea76693fe929338b29d110c299277e753134cc6
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: ee17e963964b6d2e4aa9d3e05c7a562f3c61bbf5
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196774"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545727"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>ポータル サイト アプリで Intune に macOS デバイスを登録する
 
@@ -63,7 +63,7 @@ ms.locfileid: "66196774"
     * デバイスがない場合は、バナーに **[You don't have any managed devices.Add this one by tapping here.]\(マネージド デバイスがありません。ここをタップしてこのデバイスを追加してください。\)** と表示されます。 バナーをクリックして、デバイスを追加します。  
 
      ![バナー オプションが赤い四角で囲まれ、クリックする場所が強調表示されている、[デバイス] ページのスクリーンショット。](./media/CP-enroll-MACOS-1808.png)  
-5.  ポータル サイトに現在表示されているメッセージと一致する以下の手順を行います。  
+5. ポータル サイトに現在表示されているメッセージと一致する以下の手順を行います。  
     * 初めてデバイスを追加する場合は、デバイスにポータル サイト アプリをダウンロードするように求められます。 **[ダウンロード]** をクリックして続行します。  
 
          ![macOS のポータル サイト アプリをダウンロードするためのプロンプト画面のスクリーンショット例。 ユーザーは、プロンプトの左下にある青色の [ダウンロード] ボタン、または右下にある灰色の [キャンセル] ボタンをクリックすることができます。](./media/CP-enroll-download-macOS-1808.png)  

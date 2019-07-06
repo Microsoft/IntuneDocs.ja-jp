@@ -18,12 +18,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbf35b77c843b4dc084916b2c283b6c66d5f066d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fb4ac87bef7c822111e95c18f149fa8d0598c36e
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55849235"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546629"
 ---
 # <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>"利用規約" を拒否した場合に管理からデバイスを削除する
 
@@ -31,17 +31,17 @@ ms.locfileid: "55849235"
 
 ポータル サイト アプリをアンインストールすると、Intune からそのデバイスも削除されます。 デバイスは会社のリソースにアクセスできなくなります。 管理からデバイスを削除した場合の詳細については、「[Intune からデバイスの登録を解除するとどうなりますか。](what-happens-if-you-unenroll-your-device-from-intune-android.md)」を参照してください。
 
-会社のポータル アプリをアンインストールするには、最初に **[Device administrators]** 設定に進み、**[会社のポータル]** をオフにします。 使用している Android デバイスによっては、手順が多少異なる場合があります。
+会社のポータル アプリをアンインストールするには、最初に **[Device administrators]** 設定に進み、 **[会社のポータル]** をオフにします。 使用している Android デバイスによっては、手順が多少異なる場合があります。
 
 ## <a name="removing-the-device-from-the-company-portal-app"></a>ポータル サイト アプリからデバイスを削除する
 
 Intune からデバイスを削除し、ポータル サイト アプリをアンインストールするには:
 
-1.  **[設定]** &gt; **[セキュリティ &amp; 画面のロック]** &gt;**[デバイス管理者]** の順に進みます。
+1. **[設定]** &gt; **[セキュリティ &amp; 画面のロック]** &gt; **[デバイス管理者]** の順に進みます。
 
     この手順は、デバイスの登録を解除したらすぐに実行します。
 
-2.  **[会社のポータル]** の横のチェック ボックスの選択を解除 (オフに) します。
+2. **[会社のポータル]** の横のチェック ボックスの選択を解除 (オフに) します。
 
     これで、会社のポータル アプリをアンインストールできます。
 

@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0ef2bc644b537787bd5275e95a4ecc72c899393
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6bdf97e6a36a49bc6df5a182af7676c357440f3e
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835879"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529330"
 ---
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Android デバイスに、会社のサポートが必要とする証明書がありません
 
@@ -64,7 +64,7 @@ ms.locfileid: "55835879"
 
 4. 次のスクリーンショットのような **[Name the Certificate]** (証明書の名前指定) ダイアログ ボックスで、既定の証明書名を受け入れます。
 
-5. **[認証情報の使用]** が **[VPN とアプリ]** に設定されていることを確認し、**[OK]** をタップします。
+5. **[認証情報の使用]** が **[VPN とアプリ]** に設定されていることを確認し、 **[OK]** をタップします。
 
     ![screenshot-certificate-name-dialog-showing-certificate-name](./media/andr-missing-cert-cert-name.png)
 

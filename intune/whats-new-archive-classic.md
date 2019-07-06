@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c554f2ab9fabf83695489ab5e6acd65e8d28f34c
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 29aa32b02f5ab97707ce76eb10a84a8913a9f702
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046239"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572306"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune クラシック ポータルの新機能 (過去数か月)
 
@@ -60,15 +60,15 @@ iOS 用のポータル サイト アプリに既にサインインしている�
 #### <a name="improved-app-install-status-for-the-windows-10-company-portal-app---676495--"></a>Windows 10 ポータル サイト アプリのアプリ インストール状態の向上 <!--676495-->
 
 Windows 10 ポータル サイト アプリで開始されるアプリ インストールの新しい改善点は次のとおりです。
--   MSI パッケージのインストール進行状況レポートの高速化
--   Windows 10 Anniversary Update 以降を実行するデバイス上の先進アプリのインストール進行状況レポートの高速化
--   Windows 10 Anniversary Update 以降を実行するデバイス上の先進アプリのインストールで使用される新しい進行状況バー
+- MSI パッケージのインストール進行状況レポートの高速化
+- Windows 10 Anniversary Update 以降を実行するデバイス上の先進アプリのインストール進行状況レポートの高速化
+- Windows 10 Anniversary Update 以降を実行するデバイス上の先進アプリのインストールで使用される新しい進行状況バー
 
 新しい進行状況バーは、[Intune アプリ UI の新機能に関するページ](whats-new-app-ui.md)で確認できます。
 
 #### <a name="bulk-enroll-windows-10-devices----747607---"></a>Windows 10 デバイスを一括登録する <!-- 747607 -->
 
-Windows 構成デザイナー (WCD) で Azure Active Directory と Intune に Windows 10 Creators Update を実行する多数のデバイスを参加させることができるようになりました。 Azure AD テナントの [一括 MDM 登録](windows-bulk-enroll.md) を有効にするには、Windows 構成デザイナーを使用して Azure AD テナントにデバイスを参加させるプロビジョニング パッケージを作成し、一括登録と管理を行う会社所有のデバイスにパッケージを適用します。 パッケージがデバイスに適用されると、デバイスは Azure AD に参加し、Intune に登録され、Azure AD ユーザーがログオンできる状態になります。  Azure AD ユーザーはこれらのデバイス上の標準ユーザーであり、割り当て済みのポリシーと必須アプリを受け取ります。 この時点では、セルフ サービスとポータル サイトのシナリオはサポートされていません。
+Windows 構成デザイナー (WCD) で Azure Active Directory と Intune に Windows 10 Creators Update を実行する多数のデバイスを参加させることができるようになりました。 Azure AD テナントの [一括 MDM 登録](windows-bulk-enroll.md) を有効にするには、Windows 構成デザイナーを使用して Azure AD テナントにデバイスを参加させるプロビジョニング パッケージを作成し、一括登録と管理を行う会社所有のデバイスにパッケージを適用します。 パッケージがデバイスに適用されると、デバイスは Azure AD に参加し、Intune に登録され、Azure AD ユーザーがログオンできる状態になります。  Azure AD ユーザーはこれらのデバイス上の標準ユーザーであり、割り当て済みのポリシーと必須アプリを受け取ります。 この時点では、セルフ サービスとポータル サイトのシナリオはサポートされていません。
 
 ### <a name="whats-new-in-the-public-preview-of-intune-in-the-azure-portal--736542--"></a>Azure Portal での Intune のパブリック プレビューの新機能<!--736542-->
 
@@ -104,7 +104,7 @@ Intune PC エージェントによって管理されるデバイスへの既存�
 
 #### <a name="administration-roles-being-replaced-in-azure-portal"></a>Azure Portal で置き換えられる管理ロール
 
-Intune クラシック ポータル (Silverlight) で使用される既存のモバイル アプリケーション管理 (MAM) の管理ロール (共同作成者、所有者、および読み取り専用) は、Intune Azure portal の新しいロール ベースの管理制御 (RBAC) の完全なセットで置き換えられます。 Azure Portal に移行すると、管理者をこれらの新しい管理ロールに割り当て直す必要があります。 RBAC と新しいロールの詳細については、[Microsoft Intune のロール ベースのアクセス制御](role-based-access-control.md)に関する記事を参照してください。
+Intune クラシック ポータル (Silverlight) で使用される既存のモバイル アプリケーション管理 (MAM) の管理ロール (共同作成者、所有者、および読み取り専用) は、Intune Azure Portal の新しいロール ベースの管理制御 (RBAC) の完全なセットで置き換えられます。 Azure Portal に移行すると、管理者をこれらの新しい管理ロールに割り当て直す必要があります。 RBAC と新しいロールの詳細については、[Microsoft Intune のロール ベースのアクセス制御](role-based-access-control.md)に関する記事を参照してください。
 
 ### <a name="whats-coming"></a>今後の更新情報
 
@@ -357,7 +357,7 @@ __Android での Intune AV Player、Image Viewer、PDF Viewer アプリのサポ
 
 __Windows 10 デバイスで使用可能な新しい Microsoft Intune ポータル サイト__ Microsoft は、[Windows 10 デバイス用に新しい Microsoft Intune ポータル サイト アプリ](https://www.microsoft.com/store/apps/9wzdncrfj3pz)をリリースします。 このアプリでは新しい Windows 10 ユニバーサル形式を利用します。このアプリ内ではユーザーに対して更新されたユーザー エクスペリエンスが提供され、すべての Windows 10 デバイスで同じエクスペリエンスが提供されます。現在使用されている機能はすべて引き続き利用できます。
 
-この新しいアプリでは、ユーザーは、Windows 10 デバイスでのシングル サインオン (SSO) や証明書ベースの認証など、追加のプラットフォーム機能も利用することができます。 アプリは、Microsoft ストアからインストールした既存の Windows 8.1 ポータル サイトと Windows Phone 8.1 ポータル サイトへのアップグレードとして利用可能になります。 詳細については、[aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp) を参照してください。
+この新しいアプリでは、ユーザーは、Windows 10 デバイスでのシングル サインオン (SSO) や証明書ベースの認証など、追加のプラットフォーム機能も利用することができます。 アプリは、Microsoft ストアからインストールした既存の Windows 8.1 ポータル サイトと Windows Phone 8.1 ポータル サイトへのアップグレードとして利用可能になります。 詳細については、[aka.ms/intunecp_universalapp](https://aka.ms/intunecp_universalapp) を参照してください。
 
 > [!IMPORTANT]
 > __Intune と Android for Work の更新プログラム__ __[必須]__ の操作を使用して Android for Work アプリを展開できますが、Intune グループが新しい Azure AD グループ エクスペリエンスに移行された場合、 __[利用可能]__ としてのみアプリを展開できます。

@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd8934d3318459ecc7587a9c51bba9b6f744dbc7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8d4f957af4c05a66de4ce4ae7c233eda297153f8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55841693"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527620"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-ios-device"></a>iOS デバイスに SandBlast Mobile Protect をインストールする必要がある
 
@@ -29,11 +29,11 @@ ms.locfileid: "55841693"
 
 **必要な操作**
 
-1.  次のプロンプトが表示された場合は、**[インストール]** をタップし、デバイスへの SandBlast Mobile Protect のインストールを許可します。
+1. 次のプロンプトが表示された場合は、 **[インストール]** をタップし、デバイスへの SandBlast Mobile Protect のインストールを許可します。
 
-2. 次のメッセージが表示されたら **[設定]** をタップし、**[ロケーション サービス]** をオンにし、**[続行]** をタップします。
+2. 次のメッセージが表示されたら **[設定]** をタップし、 **[ロケーション サービス]** をオンにし、 **[続行]** をタップします。
 
-3. SandBlast Mobile Protect に必要なアクセス許可を確認し、**[続行]** をタップします。
+3. SandBlast Mobile Protect に必要なアクセス許可を確認し、 **[続行]** をタップします。
 
 4. SandBlast Mobile Protect に通知の送信の許可を求めるプロンプトで **[許可]** をタップします。
 

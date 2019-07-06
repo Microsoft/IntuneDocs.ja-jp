@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96ace484d0c4e832470ae9a6e4ffc69290c7d657
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 733cb20c43b34393003f2e9f4f4466922f3f581e
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044953"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572561"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune ソフトウェア クライアントを使用して Windows PC をコンピューターとして管理する
 
@@ -49,7 +49,7 @@ Intune クライアント ソフトウェアをインストールするハード
 |---------------|--------------------|
 |ネットワーク|クライアントでは、PC がインターネット接続できる必要があります。|
 |プロセッサとメモリ|PC のオペレーティング システムに対するプロセッサ要件と RAM 要件を参照してください。|
-|ディスク領域|クライアント ソフトウェアをインストールする前に、200 MB の空きディスク領域が必要です。|
+|ディスク領域|クライアント ソフトウェアをインストールする前に、200 MB の空きディスク領域が必要です。|
 
 **ソフトウェア**:  
 クライアント ソフトウェアをインストールするソフトウェアの要件を次に示します。
@@ -70,16 +70,16 @@ Intune 管理者は、さまざまな方法でユーザーが Intune ソフト�
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Intune クライアント ソフトウェアを使ったコンピューター管理機能
 ほとんどのシナリオでは、デバイスを Microsoft Intune に登録します。そうすることで、さらに多くの機能を使用できるようになります。 ただし、PC の管理には、Intune ソフトウェアを使用することもできます。このソフトウェアでは、次の機能が利用できます。
 
--   **[ソフトウェア更新プログラムの管理](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)** - PC を最新の状態に保ち、更新プログラムを適用する時間を決定できます。
+- **[ソフトウェア更新プログラムの管理](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)** - PC を最新の状態に保ち、更新プログラムを適用する時間を決定できます。
 
--   **[Windows ファイアウォールのポリシー](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** - この機能により、会社で使用する PC に、非アクティブまたは適切でない構成の Windows ファイアウォールが存在しないようにします。
+- **[Windows ファイアウォールのポリシー](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** - この機能により、会社で使用する PC に、非アクティブまたは適切でない構成の Windows ファイアウォールが存在しないようにします。
 
--   **[マルウェア対策](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** - Intune には、マルウェアから PC を保護するのに役立つ Endpoint Protection が含まれています。
+- **[マルウェア対策](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** - Intune には、マルウェアから PC を保護するのに役立つ Endpoint Protection が含まれています。
 
--   **[リモート アシスタンス](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** - ユーザーは Intune を使用して、IT サポート スタッフに連絡できます。IT サポート スタッフは、Intune に含まれているリモート デスクトップ機能を使用してサポートを提供できます (TeamViewer ソフトウェアが必要)。
+- **[リモート アシスタンス](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** - ユーザーは Intune を使用して、IT サポート スタッフに連絡できます。IT サポート スタッフは、Intune に含まれているリモート デスクトップ機能を使用してサポートを提供できます (TeamViewer ソフトウェアが必要)。
 
--   **[ソフトウェア ライセンス管理](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** - 使用可能なソフトウェア ライセンスの数と、そのうちの使用中のライセンスの数を追跡します。
--   **[アプリの展開](add-apps-for-windows-pcs-in-microsoft-intune.md)** - 管理対象の PC にソフトウェアを展開します。 ソフトウェア クライアントを使用して PC を管理する場合、一部のアプリ管理機能は利用できません。
+- **[ソフトウェア ライセンス管理](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** - 使用可能なソフトウェア ライセンスの数と、そのうちの使用中のライセンスの数を追跡します。
+- **[アプリの展開](add-apps-for-windows-pcs-in-microsoft-intune.md)** - 管理対象の PC にソフトウェアを展開します。 ソフトウェア クライアントを使用して PC を管理する場合、一部のアプリ管理機能は利用できません。
 
 <!-- - **Compliance settings reporting** -->
 
@@ -113,8 +113,8 @@ Intune 管理コンソールを使って、クライアントがインストー�
 
 PC をモバイル デバイスとして管理するために使うことができる一部の管理オプションは、Intune クライアント ソフトウェアで管理されている PC には使えません。
 
--   フル ワイプ (選択的ワイプは使用可能)
--   条件付きアクセス
+- フル ワイプ (選択的ワイプは使用可能)
+- 条件付きアクセス
 
 また、 **[更新]** 、 **[保護]** 、 **[ライセンス]** などの特定のセクションは、Intune クライアント ソフトウェアを使ってデバイスを登録した場合にのみ Intune 管理コンソールに表示されることにも注意してください。
 

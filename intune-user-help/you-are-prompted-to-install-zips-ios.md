@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb70d999cf43d568ad19f2ba83618f6ecfbaf7d7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 949a310b1588876cfe0c547dfa73f1510a710710
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55844287"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527588"
 ---
 # <a name="install-zimperium-zips-on-your-ios-device"></a>iOS デバイスに Zimperium zIPS をインストールする
 
@@ -29,11 +29,11 @@ ms.locfileid: "55844287"
 
 ## <a name="what-you-need-to-do"></a>必要事項 
 
-1.  次のプロンプトが表示された場合は、**[インストール]** をタップし、デバイスへの Zimperium zIPS のインストールを許可します。
+1. 次のプロンプトが表示された場合は、 **[インストール]** をタップし、デバイスへの Zimperium zIPS のインストールを許可します。
 
-2. 次のメッセージが表示されたら **[設定]** をタップし、**[ロケーション サービス]** をオンにし、**[続行]** をタップします。
+2. 次のメッセージが表示されたら **[設定]** をタップし、 **[ロケーション サービス]** をオンにし、 **[続行]** をタップします。
 
-3. Zimperium zIPS に必要なアクセス許可を確認し、**[続行]** をタップします。
+3. Zimperium zIPS に必要なアクセス許可を確認し、 **[続行]** をタップします。
 
 4. Zimperium zIPS に通知の送信の許可を求めるプロンプトで **[許可]** をタップします。
 

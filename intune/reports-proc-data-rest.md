@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 733ac8eee551a3ddba7a5219827c09357659a06e
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: 9fd99c0b42316a4425828cfa875f12d75dd86489
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412721"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558537"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>REST クライアントを使用して Intune データ ウェアハウス API からデータを取得する
 
@@ -43,10 +43,10 @@ Azure でネイティブ アプリを作成します。 このネイティブ �
 1. テナントの Azure Portal にサインインします。 **[Azure Active Directory]** 、 >  **[アプリの登録]** の順に選択し、 **[アプリの登録]** ウィンドウを開きます。
 2. **[New app registration]\(新しいアプリの登録\)** を選択します。
 3. アプリの詳細を入力します。
-    1.  「Intune データ ウェアハウス クライアント」など、わかりやすい名前を **[名前]** に入力します。
-    2.  **[アプリケーションの種類]** の **[ネイティブ]** を選択します。
-    3.  **[サインオン URL]** に URL を入力します。 サインオン URL は特定のシナリオによって代わります。ただし、Postman を利用する予定の場合、「`https://www.getpostman.com/oauth2/callback`」と入力してください。 Azure AD に認証するとき、クライアント認証手順のコールバックを利用します。
-4.  **[作成]** を選択します。
+    1. 「Intune データ ウェアハウス クライアント」など、わかりやすい名前を **[名前]** に入力します。
+    2. **[アプリケーションの種類]** の **[ネイティブ]** を選択します。
+    3. **[サインオン URL]** に URL を入力します。 サインオン URL は特定のシナリオによって代わります。ただし、Postman を利用する予定の場合、「`https://www.getpostman.com/oauth2/callback`」と入力してください。 Azure AD に認証するとき、クライアント認証手順のコールバックを利用します。
+4. **[作成]** を選択します。
 
      ![Intune データ ウェアハウスのクライアント アプリ](./media/reports-get_rest_data_client_overview.png)
 
@@ -56,21 +56,21 @@ Azure でネイティブ アプリを作成します。 このネイティブ �
 
 これでアプリが Azure に定義されました。 ネイティブ アプリから Microsoft Intune API にアクセスするための許可を与えます。
 
-1.  ネイティブ アプリを選択します。 アプリには **Intune Data Warehouse Client** などの名前が付けてあります。
-2.  **[設定]** ウィンドウから **[必要なアクセス許可]** を選択します。
-3.  **[必要なアクセス許可]** ウィンドウで **[追加]** を選択します。
-4.  **[API を選択します]** を選びます。
-5.  Web アプリ名を検索します。 **Microsoft Intune API** という名前です。
-6.  一覧でアプリを選びます。
-7.  **[選択]** を選びます。
-8.  **[委任されたアクセス許可]** ボックスにチェックマークを入れ、 **[Get data warehouse information from Microsoft Intune]\(Microsoft Intune からデータ ウェアハウス情報を取得する\)** を追加します。
+1. ネイティブ アプリを選択します。 アプリには **Intune Data Warehouse Client** などの名前が付けてあります。
+2. **[設定]** ウィンドウから **[必要なアクセス許可]** を選択します。
+3. **[必要なアクセス許可]** ウィンドウで **[追加]** を選択します。
+4. **[API を選択します]** を選びます。
+5. Web アプリ名を検索します。 **Microsoft Intune API** という名前です。
+6. 一覧でアプリを選びます。
+7. **[選択]** を選びます。
+8. **[委任されたアクセス許可]** ボックスにチェックマークを入れ、 **[Get data warehouse information from Microsoft Intune]\(Microsoft Intune からデータ ウェアハウス情報を取得する\)** を追加します。
 
     ![アクセスの有効化 - Microsot Intune API](./media/reports-get_rest_data_client_access.png)
 
-9.  **[選択]** を選びます。
-10.  **[完了]** を選びます。
-11.  必要に応じて、[必要なアクセス許可] ウィンドウで **[アクセス許可の付与]** を選択します。 これで、現在のディレクトリのすべてのアカウントへのアクセスが与えられます。 テナントのすべてのユーザーに対して同意を求めるダイアログ ボックスが表示されなくなります。 詳細については、「[Azure Active Directory とアプリケーションの統合](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)」を参照してください。
-12.  **[はい]** を選択します。
+9. **[選択]** を選びます。
+10. **[完了]** を選びます。
+11. 必要に応じて、[必要なアクセス許可] ウィンドウで **[アクセス許可の付与]** を選択します。 これで、現在のディレクトリのすべてのアカウントへのアクセスが与えられます。 テナントのすべてのユーザーに対して同意を求めるダイアログ ボックスが表示されなくなります。 詳細については、「[Azure Active Directory とアプリケーションの統合](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)」を参照してください。
+12. **[はい]** を選択します。
 
 ## <a name="get-data-from-the-microsoft-intune-api-with-postman"></a>Microsoft Intune API と Postman からデータを取得する
 
@@ -110,19 +110,19 @@ Postman のために新しいアクセス トークンを取得するには、Az
 
 #### <a name="add-the-information-used-to-request-the-token"></a>トークンの要求に必要な情報を追加する
 
-1.  まだインストールしていない場合、Postman をダウンロードします。 Postman をダウンロードする方法は、[www.getpostman](https://www.getpostman.com) でご確認ください。
-2.  Postman を開きます。 HTTP 操作の **GET** を選択します。
-3.  アドレスにエンドポイント URL を貼り付けます。 次のようになります。  
+1. まだインストールしていない場合、Postman をダウンロードします。 Postman をダウンロードする方法は、[www.getpostman](https://www.getpostman.com) でご確認ください。
+2. Postman を開きます。 HTTP 操作の **GET** を選択します。
+3. アドレスにエンドポイント URL を貼り付けます。 次のようになります。  
 
     `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
-4.  **[認証]** タブを選択し、 **[種類]** 一覧から **[OAuth 2.0]** を選択します。
-5.  **[Get New Access Token]\(新しいアクセス トークンを取得する\)** を選択します。
-6.  Azure でアプリにコールバック URL が追加されていることを確認します。 コールバック URL は `https://www.getpostman.com/oauth2/callback` です。
-7.  **[トークン名]** のベアラーを入力します。
-8.  **[認証 URL]** を追加します。 次のようになります。  
+4. **[認証]** タブを選択し、 **[種類]** 一覧から **[OAuth 2.0]** を選択します。
+5. **[Get New Access Token]\(新しいアクセス トークンを取得する\)** を選択します。
+6. Azure でアプリにコールバック URL が追加されていることを確認します。 コールバック URL は `https://www.getpostman.com/oauth2/callback` です。
+7. **[トークン名]** のベアラーを入力します。
+8. **[認証 URL]** を追加します。 次のようになります。  
 
     `https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com/`
-9.  **[アクセス トークン URL]** を追加します。 次のようになります。  
+9. **[アクセス トークン URL]** を追加します。 次のようになります。  
 
      `https://login.microsoftonline.com/common/oauth2/token`
 
@@ -141,8 +141,8 @@ Postman のために新しいアクセス トークンを取得するには、Az
 
 #### <a name="send-the-call-to-the-endpoint-using-postman"></a>Postman を使用し、エンドポイントへの呼び出しを送信します。
 
-1.  **[送信]** を選択します。
-2.  返されるデータは Postman の応答本文に表示されます。
+1. **[送信]** を選択します。
+2. 返されるデータは Postman の応答本文に表示されます。
 
     ![Postman クライアントの状態が 200 OK](./media/reports-postman_200OK.png)
 
@@ -155,7 +155,7 @@ Postman のために新しいアクセス トークンを取得するには、Az
 
 1. **Microsoft Visual Studio** を起動します。
 2. **[ファイル]**  >  **[新しいプロジェクト]** の順に選択します。 **[Visual C#]** を展開し、 **[コンソール アプリ (.Net Framework)]** を選択します。
-3. プロジェクトに ` IntuneDataWarehouseSamples` という名前を付け、プロジェクトを保存する場所に進み、 **[OK]** を選択します。
+3. プロジェクトに `IntuneDataWarehouseSamples` という名前を付け、プロジェクトを保存する場所に進み、 **[OK]** を選択します。
 4. ソリューション エクスプローラーでソリューションの名前を右クリックし、 **[ソリューションの NuGet パッケージの管理]** を選択します。 **[参照]** を選択して、検索ボックスに「`Microsoft.IdentityModel.Clients.ActiveDirectory`」と入力します。
 5. パッケージを選択し、[Manage Packages for Your Solution]\(ソリューションのパッケージ管理\) で **IntuneDataWarehouseSamples** プロジェクトを選択して、 **[インストール]** を選択します。
 6. **[同意する]** を選択し、NuGet パッケージ ライセンスに同意します。

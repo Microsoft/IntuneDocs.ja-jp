@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59432baf0e8120cc7280b3486c4c25388a4248b4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 8ebae39c529571c5f926debcf64b46d6399d770f
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403773"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547951"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>グループ ポリシー オブジェクト (GPO) と Microsoft Intune ポリシーの競合を解決する
 
@@ -38,11 +38,11 @@ Intune は、Windows PC の設定を管理するためにポリシーを使用�
 ## <a name="what-to-do-if-you-are-using-group-policy"></a>グループ ポリシーを使用する場合の操作
 適用するポリシーがグループ ポリシーの管理対象かどうかを確認してください。 競合を回避するために、次の方法の 1 つまたは複数を使用できます。
 
--   グループ ポリシー設定が適用されない Active Directory 組織単位 (OU) に PC を移動してから、Intune クライアントをインストールします。 また、Intune に登録されている PC を含む OU にグループ ポリシー設定を適用しない場合は、その OU へのグループ ポリシーの継承をブロックすることもできます。
+- グループ ポリシー設定が適用されない Active Directory 組織単位 (OU) に PC を移動してから、Intune クライアントをインストールします。 また、Intune に登録されている PC を含む OU にグループ ポリシー設定を適用しない場合は、その OU へのグループ ポリシーの継承をブロックすることもできます。
 
--   セキュリティ グループ フィルターを使用して、Intune で管理されていない PC のみに GPO を制限します。
+- セキュリティ グループ フィルターを使用して、Intune で管理されていない PC のみに GPO を制限します。
 
--   Intune ポリシーと競合するグループ ポリシー オブジェクトを無効にするか削除します。
+- Intune ポリシーと競合するグループ ポリシー オブジェクトを無効にするか削除します。
 
 Active Directory と Windows グループ ポリシーの詳細については、Windows Server のマニュアルを参照してください。
 
@@ -54,7 +54,7 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
 
 #### To apply WMI filters to a GPO
 
-1.  Create a management object file by copying and pasting the following into a text file, and then saving it to a convenient location as **WIT.mof**. The file contains the WMI class instance that you deploy to PCs that you want to enroll in the Intune service.
+1. Create a management object file by copying and pasting the following into a text file, and then saving it to a convenient location as **WIT.mof**. The file contains the WMI class instance that you deploy to PCs that you want to enroll in the Intune service.
 
     ```
     //Beginning of MOF file.
@@ -84,42 +84,42 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
     };
     ```
 
-2.  Use either a startup script or Group Policy to deploy the file. The following is the deployment command for the startup script. The WMI class instance must be deployed before you enroll client PCs in the Intune service.
+2. Use either a startup script or Group Policy to deploy the file. The following is the deployment command for the startup script. The WMI class instance must be deployed before you enroll client PCs in the Intune service.
 
     **C:/Windows/System32/Wbem/MOFCOMP &lt;path to MOF file&gt;\wit.mof**
 
-3.  Run either of the following commands to create the WMI filters, depending on whether the GPO you want to filter applies to PCs that are managed by using Intune or to PCs that are not managed by using Intune.
+3. Run either of the following commands to create the WMI filters, depending on whether the GPO you want to filter applies to PCs that are managed by using Intune or to PCs that are not managed by using Intune.
 
-    -   For GPOs that apply to PCs that are not managed by using Intune, use the following:
+    - For GPOs that apply to PCs that are not managed by using Intune, use the following:
 
         ```
         Namespace:root\WindowsIntune
         Query:  SELECT WindowsIntunePolicyEnabled FROM WindowsIntune_ManagedNode WHERE WindowsIntunePolicyEnabled=0
         ```
 
-    -   For GPOs that apply to PCs that are managed by Intune, use the following:
+    - For GPOs that apply to PCs that are managed by Intune, use the following:
 
         ```
         Namespace:root\WindowsIntune
         Query:  SELECT WindowsIntunePolicyEnabled FROM WindowsIntune_ManagedNode WHERE WindowsIntunePolicyEnabled=1
         ```
 
-4.  Edit the GPO in the Group Policy Management console to apply the WMI filter that you created in the previous step.
+4. Edit the GPO in the Group Policy Management console to apply the WMI filter that you created in the previous step.
 
-    -   For GPOs that should apply only to PCs that you want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=1**.
+    - For GPOs that should apply only to PCs that you want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=1**.
 
-    -   For GPOs that should apply only to PCs that you do not want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=0**.
+    - For GPOs that should apply only to PCs that you do not want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=0**.
 
 For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883). --->
 
 
 GPO は、グループ ポリシー管理コンソールで、選択した GPO の **[セキュリティ フィルター処理]** に指定されているセキュリティ グループのみに適用できます。 既定では、GPO は *[認証されたユーザー]* に適用されます。
 
--   **[Active Directory ユーザーとコンピューター]** スナップインで、Intune で管理しないコンピューターとユーザー アカウントを含む新しいセキュリティ グループを作成します。 このグループに *Not In Microsoft Intune* などの名前を設定します。
+- **[Active Directory ユーザーとコンピューター]** スナップインで、Intune で管理しないコンピューターとユーザー アカウントを含む新しいセキュリティ グループを作成します。 このグループに *Not In Microsoft Intune* などの名前を設定します。
 
--   グループ ポリシー管理コンソールで、選択した GPO の **[委任]** タブを開き、新しいセキュリティ グループを右クリックして、適切な**読み取り**アクセス許可と**グループ ポリシーの適用**アクセス許可をセキュリティ グループ内のユーザーとコンピューターの両方に委任できます。 (**グループ ポリシーの適用** アクセス許可は **[詳細設定]** ダイアログ ボックスで使用できます)。
+- グループ ポリシー管理コンソールで、選択した GPO の **[委任]** タブを開き、新しいセキュリティ グループを右クリックして、適切な**読み取り**アクセス許可と**グループ ポリシーの適用**アクセス許可をセキュリティ グループ内のユーザーとコンピューターの両方に委任できます。 (**グループ ポリシーの適用** アクセス許可は **[詳細設定]** ダイアログ ボックスで使用できます)。
 
--   次に、選択した GPO に新しいセキュリティ グループ フィルターを適用し、既定の **[認証されたユーザー]** フィルターを解除します。
+- 次に、選択した GPO に新しいセキュリティ グループ フィルターを適用し、既定の **[認証されたユーザー]** フィルターを解除します。
 
 新しいセキュリティ グループは、Intune サービス変更の登録として保持する必要があります。
 

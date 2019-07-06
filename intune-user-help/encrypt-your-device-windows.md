@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b39cc879c9e1232335c38e8d95c0861a12662c6a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4784bcb706dd8eef395763729e04503682197f78
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57564467"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545263"
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>暗号化を使用して Windows デバイスを保護する方法
 
@@ -37,8 +37,8 @@ ms.locfileid: "57564467"
 
 デスクトップ デバイスがある場合、次の手順で暗号化します。
 
-1.  **BitLocker の管理**アプリを検索して起動します。
+1. **BitLocker の管理**アプリを検索して起動します。
 
-2.  **[BitLocker をオンにする]** を選択し、指示に従って各ドライブを暗号化します。
+2. **[BitLocker をオンにする]** を選択し、指示に従って各ドライブを暗号化します。
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

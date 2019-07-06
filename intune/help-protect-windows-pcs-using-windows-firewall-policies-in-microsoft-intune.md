@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3b552c42a7a84ad8099a406bfff2db575785915
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: eade2a1bc19e4b0c477faf2ad8e262196da8cc30
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403010"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572515"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Microsoft Intune で Windows ファイアウォール ポリシーを使用して Windows PC を保護する
 
@@ -48,14 +48,14 @@ Windows ファイアウォール ポリシーを使用すると、管理され�
 > [!IMPORTANT]
 > Intune を使用して Windows ファイアウォールを管理するには、管理対象のコンピューターで次の 2 つのサービスを有効にする必要があります。
 >
-> -   Windows ファイアウォール
-> -   IPSec ポリシー エージェント
+> - Windows ファイアウォール
+> - IPSec ポリシー エージェント
 
 ## <a name="configure-a-windows-firewall-policy"></a>Windows ファイアウォール ポリシーの構成
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[ポリシー]** &gt; **[ポリシーの追加]** を選択します。
+1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[ポリシー]** &gt; **[ポリシーの追加]** を選択します。
 
-2.  **Windows ファイアウォール設定** ポリシーを構成し、展開します。 推奨される設定を使用することも、設定をカスタマイズすることもできます。 ポリシーの作成および展開方法の詳細については、「[Microsoft Intune コンピューター クライアントを使用した一般的な Windows PC 管理タスク](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)」を参照してください。
+2. **Windows ファイアウォール設定** ポリシーを構成し、展開します。 推奨される設定を使用することも、設定をカスタマイズすることもできます。 ポリシーの作成および展開方法の詳細については、「[Microsoft Intune コンピューター クライアントを使用した一般的な Windows PC 管理タスク](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)」を参照してください。
 
     次のセクションでは、ポリシーに構成できる値と、ポリシーをカスタマイズしない場合に使用される既定値を示します。
 

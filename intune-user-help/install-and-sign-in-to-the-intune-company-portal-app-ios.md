@@ -18,24 +18,24 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc2173e2972e422ac629331110d3b86b787765da
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 494269b82840331041ac2607ea853dbfb1d979de
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67040956"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546332"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>ポータル サイト アプリをインストールしてサインインする
 
 iOS デバイスに Intune ポータル サイト アプリをインストールして、職場や学校のアプリ、電子メールおよびネットワークにアクセスすることができます。 このアプリを使用すると、ご使用のデバイスを Microsoft Intune に登録し、職場や学校のリソースへのそれを使用してのアクセスをセキュリティで保護することができます。 詳細については、「[ポータル サイト アプリをインストールし、Intune にデバイスを登録するとどうなりますか](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)」を参照してください。
 
-1.  **App Store** を開いて、**Intune ポータル サイト**を探します。
+1. **App Store** を開いて、**Intune ポータル サイト**を探します。
 
-2.  **Intune ポータル サイト** アプリをダウンロードします。
+2. **Intune ポータル サイト** アプリをダウンロードします。
 
     ![App Store に表示された Intune ポータル サイト アプリのスクリーン ショット。](./media/CP_iosRedesign_after_1803_04.PNG)
 
-3.  ポータル サイト アプリを開き、職場または学校の電子メール アドレスとパスワードを入力して、 **[サインイン]** をタップします。
+3. ポータル サイト アプリを開き、職場または学校の電子メール アドレスとパスワードを入力して、 **[サインイン]** をタップします。
 
     職場または学校で Intune を使用している場合は、ポータル サイト アプリに初めてサインインするときに、デバイスを Intune に登録するよう求められます。 登録するには、「[Intune に iOS デバイスを登録する](enroll-your-device-in-intune-ios.md)」の手順に従います。 [別のデバイスを使用してサインインする](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#sign-in-from-another-device)こともできます。
 

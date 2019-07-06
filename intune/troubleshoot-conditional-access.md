@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f286ec4928ad4bb026c95d10562d9b339b2ca5f3
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: e8ebc708f76ed1f55f512edda75206d3ed5890a0
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043903"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530720"
 ---
 # <a name="troubleshoot-conditional-access"></a>条件付きアクセスに関するトラブルシューティング
 
@@ -35,8 +35,8 @@ Intune と条件付きアクセスを使用して、Exchange Online、SharePoint
 - デバイスを Intune で登録および管理する必要がある。
 - ユーザーとデバイスの両方が、割り当てられた Intune コンプライアンス ポリシーに準拠する必要がある。
 - 既定で、ユーザーにデバイス コンプライアンス ポリシーを割り当てる必要がある。 これは、Intune 管理ポータルの **[デバイスのポリシー準拠]**  >  **[コンプライアンス ポリシー設定]** で **[コンプライアンス ポリシーが割り当てられていないデバイスをマークする]** という設定がどのように構成されているかに既存する可能性があります。
--   ユーザーが Outlook ではなくデバイスのネイティブ メール クライアントを使用する場合、デバイスで Exchange ActiveSync を有効にする必要がある。 これは、iOS、Windows Phone、および Android デバイスで自動的に発生します。
--   Intune Exchange Connector を適切に構成する必要がある。 詳細については、[Microsoft Intune での Exchange Connector のトラブルシューティング](troubleshoot-exchange-connector.md)に関するページを参照してください。
+- ユーザーが Outlook ではなくデバイスのネイティブ メール クライアントを使用する場合、デバイスで Exchange ActiveSync を有効にする必要がある。 これは、iOS、Windows Phone、および Android デバイスで自動的に発生します。
+- Intune Exchange Connector を適切に構成する必要がある。 詳細については、[Microsoft Intune での Exchange Connector のトラブルシューティング](troubleshoot-exchange-connector.md)に関するページを参照してください。
 
 各デバイスのこれらの状態は、Azure portal およびデバイスのインベントリ レポートで確認できます。
 

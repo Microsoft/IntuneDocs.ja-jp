@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9f328577ba2da97595c116efc51626176a14931a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 1ad21f9197f32f8ff06cc0537719261f3daec7cb
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840758"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545745"
 ---
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>ポータル サイトを使用して iOS デバイスをリセットするとどうなりますか。
 
@@ -31,14 +31,14 @@ ms.locfileid: "55840758"
 
 **会社のサポートがモバイル デバイスを管理している**
 
--   デバイスにポータル サイトは表示されなくなります。
+- デバイスにポータル サイトは表示されなくなります。
 
--   デバイスの設定は製造元の工場出荷時の既定設定に戻され、個人のデータ、アプリ、および設定が削除されます。
+- デバイスの設定は製造元の工場出荷時の既定設定に戻され、個人のデータ、アプリ、および設定が削除されます。
 
 **デバイスは会社の電子メールのみにアクセスできる**
 
--   デバイスにポータル サイトは表示されなくなります。
+- デバイスにポータル サイトは表示されなくなります。
 
--   会社の電子メール アカウントは削除され、保存されなかった電子メールは削除されます。
+- 会社の電子メール アカウントは削除され、保存されなかった電子メールは削除されます。
 
 ご不明な点がある場合は、会社のサポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

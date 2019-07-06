@@ -18,26 +18,26 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32dfb275e96ecf1d8c60f115881d7ceb0593a3b2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 73e9c42f69517d145c797b13ae9fa5aa779ebc5d
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837435"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546502"
 ---
 # <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>Intune から Android デバイスの登録を解除するとどうなりますか。
 
 Intune から Android デバイスの登録を解除すると次のようになります。
 
--   会社のサポートは、デバイスを管理できなくなります。
+- 会社のサポートは、デバイスを管理できなくなります。
 
--   会社のデータおよびリソースにアクセスできなくなります。
+- 会社のデータおよびリソースにアクセスできなくなります。
 
--   ポータル サイトにお使いのデバイスが表示されなくなります。
+- ポータル サイトにお使いのデバイスが表示されなくなります。
 
--   ポータル サイトからアプリケーションをインストールできなくなります。
+- ポータル サイトからアプリケーションをインストールできなくなります。
 
--   追加時にデバイスで変更した設定がある場合 (カメラを無効にする、特定のパスワードの長さを必須にするなど)、その設定は適用されなくなります。
+- 追加時にデバイスで変更した設定がある場合 (カメラを無効にする、特定のパスワードの長さを必須にするなど)、その設定は適用されなくなります。
 
 会社のメールだけを受信するようデバイスが設定されている場合にデバイスの登録を解除すると、そのデバイスが会社のポータルに表示されなくなります。
 

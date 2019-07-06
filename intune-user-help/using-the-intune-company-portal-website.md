@@ -18,32 +18,32 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1119c9602d2577f8041ad528d012adf9652dc641
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5ebf8d43bd18629d38be24929b3df5c12a7e244b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837375"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546531"
 ---
 # <a name="using-the-intune-company-portal-website"></a>Intune ポータル サイト Web サイトの使用
 [ポータル サイト Web サイト](https://portal.manage.microsoft.com)を使用して、マネージド デバイスを表示、編集、追加、削除します。
 
 ポータル サイト Web サイトからは、次のアクションを実行できます。
 
--   [デバイスの名前の変更](rename-your-device-cpwebsite.md)
+- [デバイスの名前の変更](rename-your-device-cpwebsite.md)
 
--   [デバイスの削除](remove-your-device-cpwebsite.md)
+- [デバイスの削除](remove-your-device-cpwebsite.md)
 
--   [デバイスのリセット](reset-erase-your-device-cpwebsite.md)
+- [デバイスのリセット](reset-erase-your-device-cpwebsite.md)
 
--   [デバイスのパスコードのリセット](reset-your-passcode-cpwebsite.md)
+- [デバイスのパスコードのリセット](reset-your-passcode-cpwebsite.md)
 
--   [デバイスのリモート ロック](remote-lock-your-device-cpwebsite.md)
+- [デバイスのリモート ロック](remote-lock-your-device-cpwebsite.md)
 
--   会社のサポートの連絡先情報の検索 (構成している場合)
+- 会社のサポートの連絡先情報の検索 (構成している場合)
 
--   コンプライアンス状態の確認
+- コンプライアンス状態の確認
 
--   PC のリモート管理
+- PC のリモート管理
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

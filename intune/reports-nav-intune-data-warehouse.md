@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61cbe326bbbd0e52c045491fe59ba837779ddb6e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c5b903cfa9a6700b8931ccedea0f44a9de0d8011
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041148"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549218"
 ---
-#  <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune データ ウェアハウス API
+# <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune データ ウェアハウス API
 
 Intune データ ウェアハウス API を使用すると、コンピューターで読み取ることができる Intune データにアクセスし、普段使用する分析ツールに利用することができます。 API を使用して、企業のモバイル環境を分析するレポートを構築することができます。 API では OData プロトコルを使用しています。OData プロトコルは次の標準のパターンに従います。
 
-  -   要求および応答のヘッダー
-  -   状態コード
-  -   HTTP メソッド
-  -   URL の表記規則
-  -   メディアの種類
-  -   ペイロード形式
-  -   クエリ オプション
+  - 要求および応答のヘッダー
+  - 状態コード
+  - HTTP メソッド
+  - URL の表記規則
+  - メディアの種類
+  - ペイロード形式
+  - クエリ オプション
 
 OData (Open Data Protocol) は、RESTful API を構築し、使用する際のベスト プラクティスが定義されている Organization for the Advancement of Structured Information Standards (OASIS) 標準です。 Intune データ ウェアハウスでは、OData バージョン 4.0 を使用しています。
 
@@ -56,8 +56,8 @@ RESTful エンドポイント経由で Intune データ ウェアハウスのデ
 
 API を使用するには Azure AD による承認が必要です。 Azure AD は OAuth 2.0 を使用します。 承認が完了すると、HTTP GET 動詞を使用し、公開されているエンティティ コレクションに接続して、API からデータを取得できます。 詳細については、次のページを参照してください。
 
- -  [承認](reports-api-url.md)
- -  [API URL 構造](reports-api-url.md)
+ - [承認](reports-api-url.md)
+ - [API URL 構造](reports-api-url.md)
 
 ## <a name="intune-data-warehouse-data-model"></a>Intune データ ウェアハウスのデータ モデル
 

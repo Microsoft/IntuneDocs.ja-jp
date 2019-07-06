@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 582b4615941dae8c2fc696ce5dfc87e2bbe4b98b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0c72fb6e7ace6c603410ff0ffc9a96e4a0ff528d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55846249"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527624"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>iOS デバイスに Mobile Threat Defense をインストールする
 
@@ -38,12 +38,12 @@ ms.locfileid: "55846249"
 
 Mobile Threat Defense は、企業の情報を盗もうとするアプリからデバイスを保護する手段です。 この保護を追加するには、デバイスで会社が使っているアプリに関する追加情報を Mobile Threat Defense サービスに報告する必要があります。 会社は、ユーザーの個人用アプリのデータを見ることはできません。 Mobile Threat Defense サービスを使用すると、デバイス上のすべてのアプリが[会社が確認できる情報](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)に追加されます。 会社が確認できるアプリの部分を次に示します。
 
-*   アプリ名
+* アプリ名
 * アプリ ID: アプリ ストアでアプリを示す一意名
-*   アプリのバージョンと短いバージョン番号: アプリの特定のリリース番号
+* アプリのバージョンと短いバージョン番号: アプリの特定のリリース番号
 * アプリのバンドルと動的なサイズ: デバイスでのアプリの使用領域
 * アプリの有効性: アプリの使用が承認されているかどうか
-*   アプリの管理状態: アプリが会社によって管理されているか、または個人用アプリか
+* アプリの管理状態: アプリが会社によって管理されているか、または個人用アプリか
 
 ## <a name="if-the-installation-doesnt-work"></a>インストールが機能しない場合
 
