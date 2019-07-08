@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ebca73344b88778a4d734e0690615d0aa3a20b5
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4dd9fc00475c8a8eea28bef2150f25639ac38e15
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041780"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572609"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Windows PC に Intune ソフトウェア クライアントをインストールする
 
@@ -50,7 +50,7 @@ Intune クライアント ソフトウェアには、Intune 管理で PC を登�
 
    ![Intune PC クライアントのダウンロード](./media/https://docs.microsoft.com/intune/media/install-the-windows-pc-client/pc-sa-client-download.png)
 
-2. **[クライアント ソフトウェアのダウンロード]** ページで、**[クライアント ソフトウェアのダウンロード]** をクリックします。 ソフトウェアが含まれている **Microsoft_Intune_Setup.zip** パッケージをネットワーク上のセキュリティで保護された場所に保存します。
+2. **[クライアント ソフトウェアのダウンロード]** ページで、 **[クライアント ソフトウェアのダウンロード]** をクリックします。 ソフトウェアが含まれている **Microsoft_Intune_Setup.zip** パッケージをネットワーク上のセキュリティで保護された場所に保存します。
 
    Intune クライアント ソフトウェアのインストール パッケージにはお客様のアカウントに固有の情報が含まれており、これらの情報は埋め込み証明書に記載されています。 許可されていないユーザーがインストール パッケージにアクセスした場合は、埋め込み証明書に示されているアカウントに PC を登録できることになり、会社のリソースへのアクセスが行われる可能性があります。
 
@@ -68,34 +68,34 @@ Intune クライアント ソフトウェアには、Intune 管理で PC を登�
 
 ## <a name="deploy-the-client-software-by-using-group-policy"></a>グループ ポリシーを使ってクライアント ソフトウェアを展開する
 
-1.  **Microsoft_Intune_Setup.exe** と **MicrosoftIntune.accountcert** というファイルを含むフォルダーで、次のコマンドを実行して、32 ビットおよび 64 ビット コンピューター用の Windows インストーラーベースのインストール プログラムを抽出します。
+1. **Microsoft_Intune_Setup.exe** と **MicrosoftIntune.accountcert** というファイルを含むフォルダーで、次のコマンドを実行して、32 ビットおよび 64 ビット コンピューター用の Windows インストーラーベースのインストール プログラムを抽出します。
 
     ```
     Microsoft_Intune_Setup.exe/Extract <destination folder>
     ```
 
-2.  **Microsoft_Intune_x86.msi** ファイル、**Microsoft_Intune_x64.msi** ファイル、および **MicrosoftIntune.accountcert** ファイルを、クライアント ソフトウェアをインストールする予定のすべてのコンピューターからアクセスできるネットワーク上の場所にコピーします。
+2. **Microsoft_Intune_x86.msi** ファイル、**Microsoft_Intune_x64.msi** ファイル、および **MicrosoftIntune.accountcert** ファイルを、クライアント ソフトウェアをインストールする予定のすべてのコンピューターからアクセスできるネットワーク上の場所にコピーします。
 
     > [!IMPORTANT]
     > ファイルの名前を変更すると、クライアント ソフトウェアをインストールできなくなります。
 
-3.  グループ ポリシーを使用して、ネットワーク上のコンピューターにソフトウェアを展開します。
+3. グループ ポリシーを使用して、ネットワーク上のコンピューターにソフトウェアを展開します。
 
     グループ ポリシーを使用してソフトウェアを自動的に展開する方法の詳細については、「[初心者向けのグループ ポリシー](https://technet.microsoft.com/library/hh147307.aspx)」を参照してください。
 
 ## <a name="deploy-the-client-software-as-part-of-an-image"></a>システム イメージの一部としてクライアント ソフトウェアを展開する
 Intune クライアント ソフトウェアは、次の手順に従って、オペレーティング システム イメージの一部としてコンピューターに展開できます。
 
-1.  クライアント インストール ファイルの **Microsoft_Intune_Setup.exe** と **MicrosoftIntune.accountcert** を、基準コンピューターの **%Systemdrive%\Temp\Microsoft_Intune_Setup** フォルダーにコピーします。
+1. クライアント インストール ファイルの **Microsoft_Intune_Setup.exe** と **MicrosoftIntune.accountcert** を、基準コンピューターの **%Systemdrive%\Temp\Microsoft_Intune_Setup** フォルダーにコピーします。
 
-2.  次のコマンドを **SetupComplete.cmd** スクリプトに追加して、 **WindowsIntuneEnrollPending** レジストリのエントリを作成します。
+2. 次のコマンドを **SetupComplete.cmd** スクリプトに追加して、 **WindowsIntuneEnrollPending** レジストリのエントリを作成します。
 
     ```
     %windir%\system32\reg.exe add HKEY_LOCAL_MACHINE\Software\Microsoft\Onlinemanagement\Deployment /v
     WindowsIntuneEnrollPending /t REG_DWORD /d 1
     ```
 
-3.  **setupcomplete.cmd** に次のコマンドを追加して、/PrepareEnroll コマンド ライン引数を使用して登録パッケージが実行されるようにします。
+3. **setupcomplete.cmd** に次のコマンドを追加して、/PrepareEnroll コマンド ライン引数を使用して登録パッケージが実行されるようにします。
 
     ```
     %systemdrive%\temp\Microsoft_Intune_Setup\Microsoft_Intune_Setup.exe /PrepareEnroll
@@ -103,9 +103,9 @@ Intune クライアント ソフトウェアは、次の手順に従って、オ
     > [!TIP]
     > **SetupComplete.cmd** スクリプトを使用すると、ユーザーがサインオンする前に、Windows セットアップによってシステムを変更できます。 **/PrepareEnroll** というコマンド ライン引数は、Windows セットアップの実行後に、対象のコンピューターが Intune に自動的に登録されるようにする引数です。
 
-4.  **SetupComplete.cmd** を、基準コンピューターの **%Windir%\Setup\Scripts** フォルダーに配置します。
+4. **SetupComplete.cmd** を、基準コンピューターの **%Windir%\Setup\Scripts** フォルダーに配置します。
 
-5.  基準コンピューターのイメージをキャプチャして、対象のコンピューターに展開します。
+5. 基準コンピューターのイメージをキャプチャして、対象のコンピューターに展開します。
 
     対象のコンピューターで Windows セットアップの実行が完了し、コンピューターが再起動すると、 **WindowsIntuneEnrollPending** レジストリ キーが作成されます。 登録パッケージによって、コンピューターが登録されたかどうかがチェックされます。 登録されている場合は、何も行われません。 登録されていない場合は、Microsoft Intune への自動登録タスクが作成されます。
 
@@ -125,7 +125,7 @@ Intune クライアント ソフトウェアは、次の手順に従って、オ
 
 - Windows 10 または Windows 8.1 PC のユーザーには、次の 2 つの登録オプションが表示されます。
 
-  -  **PC をモバイル デバイスとして登録**: ユーザーは **[登録方法を表示]** ボタンを選択します。そうすると、PC をモバイル デバイスとして登録する方法の手順が示されます。 MDM 登録は既定の推奨登録オプションと見なされるため、このボタンは目立つように表示されます。 ただし、ここでは MDM オプションは適用されません。クライアント ソフトウェア インストールについてのみ説明します。
+  - **PC をモバイル デバイスとして登録**: ユーザーは **[登録方法を表示]** ボタンを選択します。そうすると、PC をモバイル デバイスとして登録する方法の手順が示されます。 MDM 登録は既定の推奨登録オプションと見なされるため、このボタンは目立つように表示されます。 ただし、ここでは MDM オプションは適用されません。クライアント ソフトウェア インストールについてのみ説明します。
   - **Intune クライアント ソフトウェアを使用して PC を登録**: ユーザーに **[ダウンロードするには、ここをクリックします]** のリンクを選択するように指示する必要があります。ユーザーは、このリンクを選択してクライアント ソフトウェアをインストールします。
 
 次の表に、オプションの概要を示します。
@@ -171,19 +171,19 @@ Intune PC クライアント ソフトウェアを使用して既に登録され
 
 ### <a name="to-verify-the-installation-of-the-client-software-from-the-microsoft-intune-administrator-console"></a>Microsoft Intune 管理コンソールでクライアント ソフトウェアのインストールを確認するには
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[グループ]** &gt; **[すべてのデバイス]** &gt; **[すべてのコンピューター]** をクリックします。
+1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[グループ]** &gt; **[すべてのデバイス]** &gt; **[すべてのコンピューター]** をクリックします。
 
-2.  一覧内で、Intune と通信しているコンピューターを見つけるか、または、 **[デバイスの検索]** ボックスにコンピューターの名前 (または名前の一部) を入力して、特定のマネージド コンピューターを検索します。
+2. 一覧内で、Intune と通信しているコンピューターを見つけるか、または、 **[デバイスの検索]** ボックスにコンピューターの名前 (または名前の一部) を入力して、特定のマネージド コンピューターを検索します。
 
-3.  コンソールの下部ウィンドウに表示されるコンピューターの状態を確認します。 エラーがあれば解決します。
+3. コンソールの下部ウィンドウに表示されるコンピューターの状態を確認します。 エラーがあれば解決します。
 
 ### <a name="to-create-a-computer-inventory-report-to-display-all-enrolled-computers"></a>登録されているすべてのコンピューターを表示する、コンピューターのインベントリ レポートを作成するには
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[レポート]** &gt; **[コンピューター インベントリ レポート]** をクリックします。
+1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[レポート]** &gt; **[コンピューター インベントリ レポート]** をクリックします。
 
-2.  **[新しいレポートの作成]** ページで、(フィルターを適用しない場合は) すべてのフィールドを既定値のままにして、 **[レポートの表示]** をクリックします。
+2. **[新しいレポートの作成]** ページで、(フィルターを適用しない場合は) すべてのフィールドを既定値のままにして、 **[レポートの表示]** をクリックします。
 
-3.  新しいウィンドウで **[コンピューター インベントリ レポート]** ページが開き、Intune に登録されているすべてのコンピューターが表示されます。
+3. 新しいウィンドウで **[コンピューター インベントリ レポート]** ページが開き、Intune に登録されているすべてのコンピューターが表示されます。
 
     > [!TIP]
     > レポートの列見出しをクリックすると、列の内容で一覧が並べ替えられます。
@@ -258,7 +258,7 @@ Intune 管理コンソールを使用してソフトウェア クライアント
 
 登録解除プロセスでは、OnlineManagement フォルダーが削除されません。 アンインストール後、30 分待ち、このコマンドを実行します。 30 分待たずに実行した場合、アンインストールの状態がわからなくなる可能性があります。 フォルダーを削除するには、プロンプトを管理者特権で開き、次を実行します。
 
-    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>次の手順
 [Intune ソフトウェア クライアントを使用した一般的な Windows PC 管理タスク](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
