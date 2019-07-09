@@ -17,25 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45f93416a8fd6190549a958f1b1a7e5f3bdf6df1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2b1fe488ed7d295a40b42c1fb17a76693004be4d
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045304"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547918"
 ---
 # <a name="reference-for-devices-entities"></a>デバイス エンティティの参照
 
 **デバイス** カテゴリには、次のような情報を追跡記録するモバイル デバイスのエンティティが含まれています。
 
-  -  デバイスの種類
-  -  デバイスの登録と登録状況
-  -  デバイスの所有権
-  -  デバイスの管理状態
-  -  デバイスの Azure AD メンバーシップ状況
-  -  登録ステータス
-  -  デバイスに関する過去の情報
-  -  デバイス上のアプリ目録
+  - デバイスの種類
+  - デバイスの登録と登録状況
+  - デバイスの所有権
+  - デバイスの管理状態
+  - デバイスの Azure AD メンバーシップ状況
+  - 登録ステータス
+  - デバイスに関する過去の情報
+  - デバイス上のアプリ目録
 
 ## <a name="devicetypes"></a>DeviceTypes
 
@@ -269,7 +269,7 @@ ms.locfileid: "66045304"
 |          プロパティ          |                                                                                      説明                                                                                     |
 |:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | DateKey                    | 日付テーブルの参照であり、日を示します。                                                                                                                                          |
-| DeviceKey                  | データ ウェアハウスでのデバイスの一意識別子 - 代理キー。 これは、Intune デバイス ID が含まれるデバイス テーブルの参照です。                               |
+| DeviceKey                  | データ ウェアハウスにおけるデバイスを示す一意識別子 - 代理キー。 これは、Intune デバイス ID が含まれるデバイス テーブルの参照です。                               |
 | DeviceName                 | デバイスに名前を付けられるプラットフォーム上にあるデバイスの名前。 その他のプラットフォームの場合、Intune がその他のプロパティから名前を作成します。 この属性は一部のデバイスでは利用できません。 |
 | DeviceRegistrationStateKey | このデバイスのデバイス登録状態属性のキー。                                                                                                                    |
 | OwnerTypeKey               | このデバイスの所有者の種類属性のキー: 会社、個人、不明                                                                                                  |

@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 5/21/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,18 +16,16 @@ ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 064d11f1992d63df9dacbedb8d53e849425e9b1f
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 996380a4938ca73bbf5f71c82e99814f772001a4
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568168"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403398"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows デバイスの一括登録
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-管理者として、Azure Active Directory と Intune に多数の新しい Windows デバイスを参加させることができます。 Azure AD テナントのデバイスを一括登録するには、Windows Configuration Designer (WCD) アプリでプロビジョニング パッケージを作成します。 企業所有のデバイスにプロビジョニング パッケージを適用すると、Azure AD テナントにデバイスを参加させ、Intune 管理用に登録します。 パッケージが適用されると、Azure AD ユーザーがログオンするための準備は完了です。
+管理者として、Azure Active Directory と Intune に多数の新しい Windows デバイスを参加させることができます。 Azure AD テナントのデバイスを一括登録するには、Windows Configuration Designer (WCD) アプリでプロビジョニング パッケージを作成します。 企業所有のデバイスにプロビジョニング パッケージを適用すると、Azure AD テナントにデバイスを参加させ、Intune 管理用に登録します。 パッケージが適用されると、Azure AD ユーザーがサインインするための準備が整います。
 
 Azure AD ユーザーはこれらのデバイス上の標準ユーザーであり、割り当て済みの Intune ポリシーと必須アプリを受け取ります。 Windows 一括登録を使用して Intune に登録されている Windows デバイスは、ポータル サイト アプリを使用して、使用可能なアプリをインストールできます。 
 
@@ -51,6 +48,7 @@ Azure AD ユーザーはこれらのデバイス上の標準ユーザーであ�
    - **説明**-プロジェクトの説明 (オプション) ![Windows Configuration Designer アプリで、名前、プロジェクト フォルダー、説明を指定するスクリーン ショット](media/bulk-enroll-name.png)
 
 4. デバイスの一意の名前を入力します。 名前には、シリアル番号 (%SERIAL%)、または文字のランダムなセットを含めることができます。 必要に応じて、Windows のエディションをアップグレードする場合にプロダクト キーを入力したり、デバイスを共有使用のために構成したり、事前にインストールされたソフトウェアを削除することもできます。
+   
    ![Windows Configuration Designer アプリで名前とプロダクト キーを指定するスクリーンショット](media/bulk-enroll-device.png)
 
 5. 必要に応じて、初回起動時にデバイスが接続する Wi-fi ネットワークを構成できます。  ネットワーク デバイスが構成されていない場合は、デバイスの初回起動時にワイヤード (有線) ネットワーク接続が必要になります。
@@ -91,9 +89,6 @@ Azure AD ユーザーはこれらのデバイス上の標準ユーザーであ�
 
 - Active Directory ドメイン、またはローカル アカウントを作成していない Azure Active Directory テナントへの参加を試行するプロビジョニング パッケージでは、ネットワーク接続がないためにドメイン参加処理が失敗した場合、デバイスが到達不能になることがあります。
 - プロビジョニング パッケージによって実行されるスクリプトは、システム コンテキストで実行されます。 スクリプトは、デバイスのファイル システムと構成に、任意の変更を加えることができます。 悪意のある、または正しくないスクリプトを使用すると、デバイスは再イメージングまたはワイプすることでのみ回復できる状態になることがあります。
-
-### <a name="problems-with-bulk-enrollment-and-company-portal"></a>一括登録およびポータル サイトに関する問題
-ユーザーが以前に一括登録したデバイスをポータル サイトで登録しようとすると、デバイスにセットアップまたは登録のどちらかの追加操作が必要なことを警告するメッセージが届きます。 デバイスは登録されていますが、登録がポータル サイト アプリまたは Web サイトで認識されていません。
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>Wi-Fi で一括登録 
 

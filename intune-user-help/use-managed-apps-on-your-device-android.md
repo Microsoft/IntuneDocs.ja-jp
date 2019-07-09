@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ba4ca5ccc9083f2132a8b8893c3bc2070ed3c50
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: efcb622681e4f3b3fba7b686551cca7db6bb4c3a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55841336"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546031"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Android デバイスで管理対象アプリを使用する
 マネージド アプリは、組織のセキュリティ要件を満たすように構成されて、職場や学校のデータを保護します。 これらのアプリは、お使いのデバイスに自動的にインストールして使用できます。 
@@ -45,32 +45,32 @@ ms.locfileid: "55841336"
 ## <a name="commonly-managed-apps"></a>一般的なマネージド アプリ  
 学校および職場で一般に必要とされる、または使用できるマネージド アプリの例は次のとおりです。
 
--   Microsoft Edge
+- Microsoft Edge
 
--   Microsoft Outlook
+- Microsoft Outlook
 
--   Microsoft Word、Excel、PowerPoint
+- Microsoft Word、Excel、PowerPoint
 
 ## <a name="how-do-i-get-managed-apps"></a>管理対象アプリを取得する方法
-最初に、ポータル サイトをインストールし、必要な場合は、デバイスを管理対象にする必要があります。 その後、マネージド アプリを入手するには 3 つの方法があります。
-* 組織によって自動的に、登録時にアプリにデバイスがインストールされます。 登録については、「[Intune にデバイスを登録する](enroll-your-device-in-Intune-android.md)」をご覧ください。
-* 組織が、ポータル サイトでマネージド アプリを使用できるようにします。 ポータル サイト アプリまたは Web サイトに移動し、これらのアプリを検索、表示、およびインストールします。 
-* ユーザーが Google Play ストアからアプリをインストールした後、職場または学校アカウントでアプリにサインインします。  
+管理対象アプリを入手する 3 つの方法はあります。  
+* 組織によって自動的に、登録時にアプリにデバイスがインストールされます。  
+* ユーザーが Google Play ストアからアプリをインストールした後、職場または学校アカウントでアプリにサインインします。    
+* 組織が、ポータル サイトでマネージド アプリを使用できるようにします。 ポータル サイト アプリまたは Web サイトに移動し、使用可能なアプリを検索、表示、およびインストールします。 これらのアプリの詳細については、次のセクションを参照してください。[使用可能なアプリ](#available-apps)します。  
 
- ## <a name="available-apps"></a>Available apps   
- 組織では、職場または学校で適切かつ便利なアプリを選択します。 ポータル サイト内にはこうしたアプリのみが存在します。   
+### <a name="available-apps"></a>Available apps   
+ 組織では、適切なと便利ですが、職場または学校では、使用できるようにする会社のポータルでアプリを選択できます。  
 
  アプリは、デバイスの種類に基づいて使用が許可されます。 たとえば、Android 用ポータル サイト アプリを使用している場合、Android アプリにはアクセスできますが、iOS アプリにはアクセスできません。   
 
- ## <a name="request-an-app-for-work-or-school"></a>職場または学校用のアプリを要求する   
- 必要なアプリがあるが、ポータル サイト内に存在しない場合は、そのアプリを要求できます。 ポータル サイト アプリの **[IT 部門にメールで連絡]** タブで、**ヘルプデスク**の連絡先詳細を確認してください。同じ連絡先情報は、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)でも確認できます。   
+## <a name="request-an-app-for-work-or-school"></a>職場または学校用のアプリを要求する   
+ 必要なアプリがあるが、ポータル サイト内に存在しない場合は、そのアプリを要求できます。 連絡先の詳細について、**ヘルプデスク**どちらかのアプリケーションで**IT に連絡**タブ。同じ連絡先情報は、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)でも確認できます。   
 
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>会社のサポートがアプリで管理できるもの  
 次の一覧に、会社のサポートがアプリ内で管理できる設定を示します。 これらの設定は、デバイスでの職場または学校のデータの表示方法、アクセス方法、それ以外の使用方法に影響します。
 
 * 特定の web サイトへのアクセス  
 
-* Edge と Azure Active Directory プロキシを使用した社内の Web サイトへのアクセス  
+* Microsoft Edge と Azure Active Directory プロキシを使用した社内 Web サイトへのアクセス  
 
 * アプリの最小バージョン、OS のバージョン
 

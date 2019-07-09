@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,35 +14,91 @@ ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: robstack
+ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7b67f1484ed74bd538cad53f02babd542b77fff
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 2c0d3484311d044842daf6718b306d45fc93edf2
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838837"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545941"
 ---
-# <a name="use-managed-devices-to-access-work-or-school-resources"></a>管理対象デバイスを使用して職場または学校のリソースにアクセスする
-Microsoft Intune は、組織がデバイス、アプリ、および電子メールへのアクセスを管理するためのデバイス管理システムです。 デバイス管理により、ユーザーおよび他の従業員や学生が、事実上どこからでも、ほぼすべてのデバイス上の作業情報にアクセスできます。 リモートで作業している場合でも、ユーザーおよび組織の情報はセキュリティで保護され続けます。
+# <a name="enroll-device-for-access-to-work-or-school-resources"></a>職場または学校のリソースにアクセスするためのデバイスを登録します。
+デバイスを登録し、電子メールおよびアプリへのアクセス、Intune ポータル サイト アプリまたは Microsoft Intune のアプリをインストールする必要があります。 登録すると、パスワード、PIN、および暗号化など、組織が構成される基本的な管理ポリシーがデバイスに適用されます。 デバイスの設定を使用して、すべての組織の要件を満たしていると事実上どこから職場の情報を安全にアクセスできます。  
 
-Microsoft Intune は、セキュリティとデバイスの要件を構成するために会社が使用するソフトウェアです。 デバイスを管理対象にする準備ができたら、Intune ポータル サイト アプリを使用します。 このアプリでは、自分好みのデバイスを使用して職場または学校のリソースにアクセスできます。 
+ポータル サイトと Microsoft Intune のアプリでは、デバイスの設定が、組織のポリシーと一致することを確認してセキュリティで保護された登録済みデバイスを保持します。 
 
-## <a name="what-information-can-my-company-see-when-i-get-my-device-managed"></a>デバイスを管理対象にした場合に会社が確認できる情報
-ポータル サイトでユーザーを設定したら、会社のサポートは、作業に関連する情報のみを確認できます。 ユーザーの個人情報を確認することはできません。 これは、職場で使用される個人のデバイスを登録するかどうかを確認する上で特に重要なことです。 [確認できる内容とできない内容については、次の記事](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)で説明します。
+ポータル サイト アプリでは次も行えます。  
+* 独立した、個人と職場の情報を保持します。  
+* 検索して関連する作業と学校のアプリをインストールできるようになります。   
 
-## <a name="how-do-i-get-company-portal"></a>ポータル サイトを取得する方法
-ポータル サイトは、次のいずれかの方法で取得できます。
+## <a name="get-the-apps"></a>アプリを入手する
+ポータル サイトを取得するには:
 
-- ポータル サイト アプリをデバイスにインストールします。 一般的に、ポータル サイト アプリはお使いのデバイスのアプリ ストアに移動して入手しますが、会社のサポートが代わりにポータル サイト アプリをインストールすることもできます。
-- 会社のサポートが設定した[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)に移動します。
+- プラットフォーム固有のアプリ ストアからポータル サイト アプリをインストールします。 場合によっては、組織がポータル サイト アプリをインストールします。  
+- 移動して、[ポータル サイト web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)ブラウザーから、アプリにアクセスします。  
 
-## <a name="whats-the-difference-between-the-app-and-the-website"></a>アプリと Web サイトの違い
-Windows 10、iOS、macOS、および Android 用の各ポータル サイト アプリは、デバイスの各プラットフォームとシームレスに統合します。 Web サイトには任意のデバイスからアクセスでき、使用しているデバイスに関係なく同じ共通のエクスペリエンスが提供されます。 
+場合は、Microsoft Intune のアプリを使用する必要がありますが、組織はインストールします。  
 
-デバイスのプラットフォームに固有のポータル サイトに関する登録手順以降のガイダンスについては、以下のリンクをご覧ください。  
+
+## <a name="what-information-can-my-company-see-when-i-enroll"></a>ユーザーが登録した場合に会社が確認できる情報
+デバイスの登録後、組織のサポート スタッフは作業に関連する情報をのみ参照できます。 ユーザーの個人情報を確認することはできません。 場合は、職場で使用される個人のデバイスを登録する[について正確に把握でき、見なすことはできません](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)します。  
+
+
+## <a name="whats-the-difference-between-the-apps-and-the-website"></a>アプリと Web サイトの違い
+ポータル サイト アプリでは、Windows 10、iOS、macOS、Android デバイスおよび使用できます。 これは、デバイスのそれぞれのプラットフォームとシームレスに統合します。 Web サイト バージョンには任意のデバイスからアクセスでき、使用しているデバイスに関係なく同じ共通のエクスペリエンスが提供されます。 
+
+Microsoft Intune のアプリは、企業所有の Android デバイス用です。  
+
+## <a name="what-kind-of-devices-can-you-enroll-with-company-portal"></a>ポータル サイトでは、デバイスの種類を登録できますか。
+- iOS (iPhone や iPad など) および macOS (MacBook や iMac など) を使用する Apple デバイス
+- Android デバイス
+- Windows デバイス
+    - Windows 10 Mobile
+    - [Windows] 10 Desktop
+    - Windows Phone 8.1
+    - Windows 8.1
+
+## <a name="what-kind-of-devices-can-you-enroll-with-the-microsoft-intune-app"></a>Microsoft Intune のアプリでは、デバイスの種類を登録できますか。  
+アプリで使用する組織がセットアップされている企業所有の Android デバイスを登録することができます。 アプリには、Android 6.0 以降がサポートしています。 
+
+## <a name="can-you-remove-a-computer-or-device-from-the-company-portal"></a>ポータル サイトからコンピューターまたはデバイスを削除できますか。
+ポータル サイトのコンピューターまたはデバイスは、削除またはリセットできます。 **削除**と**リセット**には違いがあります。
+
+ポータル サイトからコンピューターまたはデバイスを削除すると、そのデバイスは Intune から登録解除されます。 登録が解除されると、そのデバイスからポータル サイトにはアクセスできなくなります。また、一部の会社データがデバイスから削除される場合があります。 ポータル サイトからデバイスを削除する方法については、次のリンクを参照してください。  
+
+- [Android デバイスの登録解除](unenroll-your-device-from-intune-android.md)
+- [iOS デバイスの登録解除](unenroll-your-device-from-intune-ios.md)
+- [macOS デバイスの登録解除](unenroll-your-device-from-intune-macos.md)
+- [Windows デバイスの登録解除](unenroll-your-device-from-intune-windows.md)
+
+コンピューターまたはデバイスをリセットすると、ポータル サイトによって、そのコンピューターまたはデバイスの製造元の既定の設定へのリセットが試みられます。 デバイスをリセットすると、デバイスから会社と個人のデータがすべて削除されます。 デバイスを紛失した場合、ポータル サイトの Web サイトからリモートでリセットすることもできます。  
+
+デバイスをリセットする方法については、次を参照してください。[ポータル サイト web サイトからデバイスをリセット](reset-erase-your-device-cpwebsite.md)します。  
+
+## <a name="can-you-remove-a-computer-or-device-from-the-microsoft-intune-app"></a>できます削除するコンピューターまたはデバイスを Microsoft Intune のアプリからでしょうか。
+いいえ、Microsoft Intune のアプリから会社所有のデバイスを削除するための方法はありません。  
+
+## <a name="what-if-i-cant-see-my-device-in-the-company-portal-or-microsoft-intune-app"></a>場合、ポータル サイトまたは Microsoft Intune のアプリでデバイスを表示することはできませんか。
+デバイスを表示するには、ポータル サイトに追加する必要があります。 管理者から推奨されたポータル サイトを開き、ご利用のデバイス向けの手順に従ってください。 会社が所有および管理しているデバイスは表示されません。
+
+Microsoft Intune のアプリを使用している場合は、現在使用しているデバイスのみ表示されます。 その他の登録済みデバイスは、アプリで表示されません。  
+
+## <a name="where-else-can-i-go-for-help"></a>サポートを受けられるその他の場所  
+一般的な問題と質問をトラブルシューティングするには、これらのプラットフォームに固有のドキュメントをご覧ください。  
+
+- [Android デバイスに関する一般的な問題を解決する](check-compliance-on-your-device-android.md)  
+- [iOS デバイスに関する一般的な問題を解決する](troubleshoot-your-device-ios.md)
+- [macOS デバイスに関する一般的な問題を解決する](troubleshoot-your-device-macos.md)
+- [Windows デバイスに関する一般的な問題を解決する](troubleshoot-your-device-windows.md)
+
+サポート担当者に連絡することができますも。 ポータル サイトと Microsoft Intune アプリ ヘルプを提供し、連絡先情報や問題を報告する方法を示すページをサポートしています。 連絡先情報は、大きな組織で使用できるも[ポータル サイト web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)します。  
+
+## <a name="next-steps"></a>次の手順  
+
+以降では、デバイスのプラットフォームに固有の登録、ヘルプを取得するには。  
 
 - [Android デバイスを使用する](using-your-android-device-with-intune.md)
 - [iOS デバイスを使用する](using-your-ios-device-with-intune.md)
@@ -50,50 +106,4 @@ Windows 10、iOS、macOS、および Android 用の各ポータル サイト ア
 - [Windows デバイスを使用する](using-your-windows-device-with-intune.md)
 - [ポータル Web サイトを使用する](using-the-intune-company-portal-website.md)
 
-## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>コンピューターやデバイスをポータル サイトに追加すると、どうなりますか。
-コンピューターやデバイスをポータル サイトに追加すると、なんらかのソフトウェアがインストールされるか、アプリがダウンロードされる場合があります (デバイスによって異なります)。 また、デバイスの管理を会社のサポートに許可することで、デバイス上の会社情報を保護しやすくすることもできます。
 
-会社のサポートがユーザーのデバイスに関して確認できる情報と確認できない情報については、使用しているデバイスの種類に該当するリンクを参照してください。
-
-- [Android 用ポータル サイト アプリのインストール](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [iOS 用ポータル サイト アプリのインストール](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
-- [macOS 用ポータル サイト アプリのインストール](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
-- [Windows 用ポータル サイト アプリのインストール](about-cp-app-for-windows-10.md)
-
-## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>ポータル サイトにはどのような種類のコンピューターまたはデバイスを追加できますか。
--   iOS (iPhone や iPad など) および macOS (MacBook や iMac など) を使用する Apple デバイス
--   Android デバイス
--   Windows デバイス
-    -   Windows 10 Mobile
-    -   [Windows] 10 Desktop
-    -   Windows Phone 8.1
-    -   Windows 8.1
-
-## <a name="can-you-remove-a-computer-or-device-from-the-company-portal"></a>ポータル サイトからコンピューターまたはデバイスを削除できますか。
-ポータル サイトのコンピューターまたはデバイスは、削除またはリセットできます。 **削除**と**リセット**には違いがあります。
-
-ポータル サイトからコンピューターまたはデバイスを*削除*すると、デバイスの登録が Intune で解除されます。 登録が解除されると、そのデバイスからポータル サイトにはアクセスできなくなります。また、一部の会社データがデバイスから削除される場合があります。 ポータル サイトからデバイスを削除する方法については、次のいずれかのリンクを参照してください。
-
-- [Android デバイスの登録解除](unenroll-your-device-from-intune-android.md)
-- [iOS デバイスの登録解除](unenroll-your-device-from-intune-ios.md)
-- [macOS デバイスの登録解除](unenroll-your-device-from-intune-macos.md)
-- [Windows デバイスの登録解除](unenroll-your-device-from-intune-windows.md)
-
-コンピューターまたはデバイスを*リセット*すると、ポータル サイトは、コンピューターまたはデバイスを製造元の既定の設定にリセットしようとします。 デバイスをリセットすると、デバイスから会社データと個人データがすべて削除されます。 デバイスを紛失した場合、ポータル サイト Web サイトからリモート リセットできます。
-
-デバイスのリセット方法については、次のトピックを参照してください。
-
-- [ポータル Web サイトからデバイスをリセットする](reset-erase-your-device-cpwebsite.md)
-
-## <a name="what-if-i-cant-see-my-device-in-the-company-portal"></a>ポータル サイトでデバイスを表示できない場合の対処方法
-デバイスを表示するには、ポータル サイトに追加する必要があります。 管理者から推奨されたポータル サイトを開き、ご利用のデバイス向けの手順に従ってください。 会社が所有および管理しているデバイスは表示されません。
-
-## <a name="where-else-can-i-go-for-help"></a>サポートを受けられるその他の場所
-まず、自分で問題を解決できるかどうか確認することをお勧めします。 Microsoft では、Intune でサポートされているプラットフォームごとに発生する可能性のある問題を解決できる方法をまとめたリストを提供しています。
-
-- [Android デバイスに関する一般的な問題を解決する](troubleshoot-your-device-android.md)
-- [iOS デバイスに関する一般的な問題を解決する](troubleshoot-your-device-ios.md)
-- [macOS デバイスに関する一般的な問題を解決する](troubleshoot-your-device-macos.md)
-- [Windows デバイスに関する一般的な問題を解決する](troubleshoot-your-device-windows.md)
-
-以下のコメントを投稿してサポートを受けることはできますが、組織によって要求は異なるため、必ずしもすべての質問にお答えできるとは限りません。 会社のサポートにサポートを求めることで、最も迅速かつ適切な返答が得られる可能性があります。 連絡先の情報は、[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)で確認できます。

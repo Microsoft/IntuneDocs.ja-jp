@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c19c02c8d4c9ece66d03b3510071bb90e7f35ad3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e9b32b7b7bc3bfa7735a7e4437e8238630e56884
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047513"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548775"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Microsoft Intune の Endpoint Protection を使用して Windows PC を保護する
 
@@ -46,15 +46,15 @@ IT 管理者として最も優先度が高い事項の 1 つは、管理する�
 
 現在のエンドポイント保護アプリケーションから Microsoft Intune Endpoint Protection に切り替えるには、次の手順を実行します。
 
-1.  現在のエンドポイント保護アプリケーションを実行しながら、Intune クライアント ソフトウェアをコンピューターに展開します。
+1. 現在のエンドポイント保護アプリケーションを実行しながら、Intune クライアント ソフトウェアをコンピューターに展開します。
 
-2.  Microsoft Intune Endpoint Protection がインストールされ、クライアント コンピューターを保護していることを確認します。
+2. Microsoft Intune Endpoint Protection がインストールされ、クライアント コンピューターを保護していることを確認します。
 
-3.  次の方法で、サード パーティ製エンドポイント保護ソフトウェアを削除します。
+3. 次の方法で、サード パーティ製エンドポイント保護ソフトウェアを削除します。
 
-    -   Intune のソフトウェア配布を使用して、サード パーティのエンドポイント保護アプリケーションの製造元が提供するソフトウェア削除ツールを展開します。 詳細については、「[Deploy apps in Microsoft Intune](apps-deploy.md)」 (Microsoft Intune でアプリを展開する) を参照してください。
+    - Intune のソフトウェア配布を使用して、サード パーティのエンドポイント保護アプリケーションの製造元が提供するソフトウェア削除ツールを展開します。 詳細については、「[Deploy apps in Microsoft Intune](apps-deploy.md)」 (Microsoft Intune でアプリを展開する) を参照してください。
 
-    -   サード パーティ製エンドポイント保護アプリケーションを手動で削除します。
+    - サード パーティ製エンドポイント保護アプリケーションを手動で削除します。
 
 > [!NOTE]
 > Intune は、サード パーティ製エンドポイント保護アプリケーションを自動的にアンインストールしません。
@@ -62,9 +62,9 @@ IT 管理者として最も優先度が高い事項の 1 つは、管理する�
 ## <a name="configure-microsoft-intune-endpoint-protection"></a>Microsoft Intune Endpoint Protection を構成する
 Microsoft Intune の Endpoint Protection を構成するには、次の手順に従います。
 
-1.  [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[ポリシー]**  >  **[ポリシーの追加]** を選択します。
+1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[ポリシー]**  >  **[ポリシーの追加]** を選択します。
 
-2.  **[コンピューターの管理]** を展開し、 **[Microsoft Intune エージェントの設定]** を選択します。 **[カスタム ポリシーの作成および展開]** を選択して Endpoint Protection 設定のポリシーを指定します。 次に、 **[ポリシーを作成する]** ボタンをクリックします。
+2. **[コンピューターの管理]** を展開し、 **[Microsoft Intune エージェントの設定]** を選択します。 **[カスタム ポリシーの作成および展開]** を選択して Endpoint Protection 設定のポリシーを指定します。 次に、 **[ポリシーを作成する]** ボタンをクリックします。
 
 推奨される設定を使用することも、設定をカスタマイズすることもできます。 ポリシーの作成および展開方法の詳細については、「[Microsoft Intune コンピューター クライアントを使用した一般的な Windows PC 管理タスク](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)」を参照してください。
 

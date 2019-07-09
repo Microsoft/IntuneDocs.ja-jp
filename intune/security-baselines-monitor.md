@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a87b54dde9afe9803d71f7cbef62f7c55375f51b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3bf59f75d41d50cfd9280251e20964a35a149a8
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040649"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403575"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Microsoft Intune でセキュリティのベースラインとプロファイルを監視する  
 
@@ -34,7 +34,7 @@ Microsoft Intune のセキュリティのベースライン機能の詳細につ
 
 ベースラインを監視すると、Microsoft の推奨事項に基づいて、デバイスのセキュリティ状態に関する分析情報が得られます。 このような分析情報は、Intune コンソールのセキュリティ ベースラインの [概要] ウィンドウから表示できます。  最初にベースラインを割り当ててからデータが表示されるまで最大 24 時間かかります。 その後の変更は、表示されるまで最大 6 時間かかります。  
 
-ベースラインとデバイスの監視データを表示するには、[Intune ポータル](https://go.microsoft.com/fwlink/?linkid=2090973)にサインインします。 次に **[デバイスのセキュリティ]**  >  **[セキュリティのベースライン (プレビュー)]** を選択してベースラインを選択し、 **[概要]** ウィンドウを参照します。
+ベースラインとデバイスの監視データを表示するには、[Intune ポータル](https://go.microsoft.com/fwlink/?linkid=2090973)にサインインします。 次に、 **[デバイスのセキュリティ]**  >  **[セキュリティ ベースライン]** の順に選択して、ベースラインを選択し、 **[概要]** ウィンドウを表示します。
 
 **[概要]** ウィンドウには、状態を監視する方法が 2 つあります。
 - **デバイス** ビュー - ベースラインの状態カテゴリ別デバイス数の概要。  

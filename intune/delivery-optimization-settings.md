@@ -14,12 +14,12 @@ ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 41ca1c3b387b2cd43ac882a8aec50980c8ed3807
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: ab4871da52f5df0aec0a698f31daa5608a57c1c3
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041228"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493901"
 ---
 # <a name="delivery-optimization-settings-for-intune"></a>Intune 用の配信最適化の設定
 
@@ -63,7 +63,7 @@ Intune を構成してこれらの設定を使用するには、[更新プログ
 |[ピア キャッシュの最小のコンテンツ ファイル サイズ (MB)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#minimum-peer-caching-content-file-size)      | 1703        | ピア キャッシュを使用するためにファイルが満たす必要のある最小サイズを MB 単位で指定します。  <br><br>**既定値**: "*値の構成なし*"  <br><br>**推奨値**: 10 MB   <br><br>ポリシー CSP: [DOMinFileSizeToCache](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dominfilesizetocache)  <br><br>      |
 |[アップロードに必要な最小バッテリ レベル (%)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level)      | 1709        | ピアにデータをアップロードするためにデバイスで必要な最小バッテリ レベルを割合で指定します。 バッテリ レベルが指定した値まで低下した場合、アクティブなアップロードは自動的に一時停止します。   <br><br>**既定値**: "*値の構成なし*"  <br><br>**推奨**: 40%   <br><br>ポリシー CSP: [DOMinBatteryPercentageAllowedToUpload](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dominbatterypercentageallowedtoupload) <br><br>        |
 |[キャッシュ ドライブの変更](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#modify-cache-drive)        | 1607        | 配信最適化でキャッシュに使用するドライブを指定します。 環境変数、ドライブ文字、または完全なパスを使用できます。  <br><br>**既定値**: %SystemDrive% <br><br>ポリシー CSP: [DOModifyCacheDrive](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domodifycachedrive) <br><br>        |
-| [最大キャッシュ時間 (日数)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-age)    | 1511         | 各ファイルが正常にダウンロードされた後、デバイス上の配信最適化キャッシュにファイルが保持されている期間を指定します。   <br><br>Intune では、キャッシュの期間を日数で構成します。 定義した日数は、この設定が Windows で定義されるときのように、秒数に変換されます。 たとえば、Intune 構成での 3 日は、デバイスでは 259,200 秒 (3 日) に変換されます。  <br><br>**既定値**: "*値の構成なし*"     <br><br>**推奨**: 7   <br><br>ポリシー CSP: [DOMaxCacheAge](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)  <br><br>          |
+| [最大キャッシュ時間 (日数)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-age)    | 1511         | 各ファイルが正常にダウンロードされた後、デバイス上の配信最適化キャッシュにファイルが保持されている期間を指定します。   <br><br>Intune では、キャッシュの期間を日数で構成します。 定義した日数は、この設定が Windows で定義されるときのように、適切な秒数に変換されます。 たとえば、Intune 構成での 3 日は、デバイスでは 259,200 秒 (3 日) に変換されます。  <br><br>**既定値**: "*値の構成なし*"     <br><br>**推奨**: 7   <br><br>ポリシー CSP: [DOMaxCacheAge](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)  <br><br>          |
 | 最大キャッシュ サイズの種類  | *詳細を参照*    | デバイス上で配信最適化によって使用されるディスク領域の量を管理する方法を選択します。 構成しない場合、キャッシュ サイズは使用可能な空きディスク領域の 20% に既定で設定されます。  <br><ul><li>**[未構成]** (既定値)</li><br><li>**[絶対]** – [[絶対最大キャッシュ サイズ (GB)]](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#absolute-max-cache-size) を指定して、デバイスで配信最適化に使用できるドライブ領域の最大量を構成します。 0 (ゼロ) に設定すると、キャッシュ サイズは無制限になりますが、デバイスのディスク領域が少なくなると配信最適化によってキャッシュがクリアされます。 <br><br>Windows 1607 が必要です<br><br> ポリシー CSP: [DOAbsoluteMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-doabsolutemaxcachesize) </li><br><li>**[割合]** – [[最大キャッシュ サイズ (%)]](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-size) を指定して、デバイスで配信最適化に使用できるドライブ領域の最大量を構成します。 割合はドライブの空き領域を指し、配信最適化では常にドライブの空き容量が評価され、最大キャッシュ サイズが設定されている割合を超えないようにキャッシュがクリアされます。 <br><br>Windows 1511 が必要です<br><br>ポリシー CSP: [DOMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcachesize)  |
 | [VPN ピア キャッシュ](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#enable-peer-caching-while-the-device-connects-via-vpn)  | 1709  | VPN によってドメイン ネットワークに接続されている間はピア キャッシュに参加するようデバイスを構成するには、 **[有効]** を選択します。 有効に設定したデバイスでは、VPN または会社のドメイン ネットワーク上にある他のドメイン ネットワーク デバイスとの間で、ダウンロードまたはアップロードを行うことができます。  <br><br>**既定値**: 未構成  <br><br>ポリシー CSP: [DOAllowVPNPeerCaching](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)    |
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/19/2019
+ms.date: 07/03/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe7ffa6ff024c719fc24209947b87b07ea2b6791
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
-ms.translationtype: MTE75
+ms.openlocfilehash: f7a4be4deddae2f2983996a6880232463924c948
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412680"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558518"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>アプリのインストールに関する問題のトラブルシューティング
 
@@ -50,6 +50,18 @@ Intune では、特定のユーザーのデバイスにインストールされ�
 
 > [!Note]  
 > **[トラブルシューティング]** ウィンドウには、ブラウザーで [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) に移動してアクセスすることもできます。
+
+## <a name="user-group-targeted-app-installation-does-not-reach-device"></a>アプリのインストールを対象となるユーザー グループがデバイスに到達できません。
+アプリのインストールに問題がある場合は、次の操作を考慮する必要があります。
+- 会社のポータルで、アプリが表示されない場合で、アプリが展開されていることを確認**利用可能な**インテントと、ユーザーがアプリでサポートされているデバイスの種類でポータル サイトにアクセスしています。
+- Windows の BYOD デバイスは、ユーザーは、デバイスに職場アカウントを追加する必要があります。
+- かどうか、ユーザーは AAD デバイスの制限を超えたことを確認します。
+  1. 移動します[Azure Active Directory のデバイス設定](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId)します。
+  2. 設定された値を書き留めて**ユーザーごとに最大デバイス**します。
+  3. 移動します[Azure Active Directory ユーザー](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers)します。
+  4. 影響を受けるユーザーを選択し、クリックして**デバイス**します。
+  5. ユーザーのセットの制限を超える場合は、不要になったために必要なすべての古いレコードを削除します。
+- IOS DEP デバイスの場合、ユーザーが表示されていることを確認します**ユーザーによって登録されている**Intune デバイスの概要 ブレードでします。 NA になっている場合は、Intune ポータル サイトの構成ポリシーを展開します。 詳細については、[ポータル サイト アプリの構成](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices)に関する記事をご覧ください。
 
 ## <a name="win32-app-installation-troubleshooting"></a>Win32 アプリのインストールのトラブルシューティング
 
