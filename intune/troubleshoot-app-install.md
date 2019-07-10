@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f7a4be4deddae2f2983996a6880232463924c948
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
-ms.translationtype: HT
+ms.openlocfilehash: ebd8f15a8f8633043f64cb4e004aafbb3c399042
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558518"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648890"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>アプリのインストールに関する問題のトラブルシューティング
 
@@ -51,17 +51,17 @@ Intune では、特定のユーザーのデバイスにインストールされ�
 > [!Note]  
 > **[トラブルシューティング]** ウィンドウには、ブラウザーで [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) に移動してアクセスすることもできます。
 
-## <a name="user-group-targeted-app-installation-does-not-reach-device"></a>アプリのインストールを対象となるユーザー グループがデバイスに到達できません。
-アプリのインストールに問題がある場合は、次の操作を考慮する必要があります。
-- 会社のポータルで、アプリが表示されない場合で、アプリが展開されていることを確認**利用可能な**インテントと、ユーザーがアプリでサポートされているデバイスの種類でポータル サイトにアクセスしています。
-- Windows の BYOD デバイスは、ユーザーは、デバイスに職場アカウントを追加する必要があります。
-- かどうか、ユーザーは AAD デバイスの制限を超えたことを確認します。
-  1. 移動します[Azure Active Directory のデバイス設定](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId)します。
-  2. 設定された値を書き留めて**ユーザーごとに最大デバイス**します。
-  3. 移動します[Azure Active Directory ユーザー](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers)します。
-  4. 影響を受けるユーザーを選択し、クリックして**デバイス**します。
-  5. ユーザーのセットの制限を超える場合は、不要になったために必要なすべての古いレコードを削除します。
-- IOS DEP デバイスの場合、ユーザーが表示されていることを確認します**ユーザーによって登録されている**Intune デバイスの概要 ブレードでします。 NA になっている場合は、Intune ポータル サイトの構成ポリシーを展開します。 詳細については、[ポータル サイト アプリの構成](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices)に関する記事をご覧ください。
+## <a name="user-group-targeted-app-installation-does-not-reach-device"></a>ユーザーグループの対象アプリのインストールがデバイスに接続していません
+アプリのインストールで問題が発生した場合は、次の操作を考慮する必要があります。
+- アプリがポータルサイトに表示されない場合は、アプリが**使用可能**なインテントで展開されていることと、ユーザーがアプリでサポートされているデバイスの種類を使用してポータルサイトにアクセスしていることを確認します。
+- Windows BYOD デバイスの場合、ユーザーは仕事用アカウントをデバイスに追加する必要があります。
+- ユーザーが AAD デバイスの制限を超えているかどうかを確認します。
+  1. [ [Azure Active Directory デバイスの設定](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId)] に移動します。
+  2. **ユーザーごとのデバイスの最大**数の設定値をメモしておきます。
+  3. [ [Azure Active Directory のユーザー](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers)] に移動します。
+  4. 影響を受けるユーザーを選択し、 **[デバイス]** をクリックします。
+  5. ユーザーが設定された制限を超えている場合は、不要になった古いレコードを削除します。
+- IOS DEP デバイスの場合は、ユーザーが Intune デバイスの概要ブレードで **[ユーザーによる登録]** として表示されていることを確認します。 NA と表示されている場合は、Intune ポータルサイトの構成ポリシーを展開します。 詳細については、[ポータル サイト アプリの構成](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices)に関する記事をご覧ください。
 
 ## <a name="win32-app-installation-troubleshooting"></a>Win32 アプリのインストールのトラブルシューティング
 
@@ -161,8 +161,14 @@ Win32 アプリのインストール ログを収集するには、まずセク�
 
 トピック「[Troubleshooting packaging, deployment, and query of Microsoft Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx)」 (Microsoft ストア アプリのパッケージ化、展開、およびクエリのトラブルシューティング) に記載されている情報は、Microsoft ストアからアプリをインストールする際に発生する可能性がある一般的な問題のトラブルシューティングで役に立ちます (Intune を使用する場合、または他の手段を使用する場合に関係なく)。
 
+## <a name="app-troubleshoooting-resources"></a>App troubleshoooting のリソース
+- [Office Pro Plus の展開の一部として Visio と Project を展開する](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Deploying-Visio-and-Project-as-part-of-your-Office/ba-p/701795)
+- [Windows 10 1903 に Intune を使用して展開された MSfB アプリを確認するためのアクションを実行します](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Take-Action-to-Ensure-MSfB-Apps-deployed-through/ba-p/658864)
+- [Microsoft Intune での MSI アプリの展開のトラブルシューティング](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-MSI-App-deployments-in-Microsoft/ba-p/359125)
+- [Intune クラシック Windows PC エージェントへのソフトウェアの配布に関するベストプラクティス](https://support.microsoft.com/en-us/help/2583929/best-practices-for-intune-software-distribution-to-windows-pc)
+
 ## <a name="next-steps"></a>次の手順
 
 - Intune のトラブルシューティングに関する追加情報については、「[トラブルシューティング ポータルを使用して社内のユーザーをサポートする](help-desk-operators.md)」をご覧ください。 
-- Microsoft Intune の既知の問題について学習します。 詳細については、「[Microsoft Intune の既知の問題](known-issues.md)」を参照してください。
+- Microsoft Intune の既知の問題について学習します。 詳細については、「 [Intune のお客様の成功](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)」を参照してください。
 - さらに支援が必要ですか。 「[Microsoft Intune のサポートを受ける方法](get-support.md)」を参照してください。

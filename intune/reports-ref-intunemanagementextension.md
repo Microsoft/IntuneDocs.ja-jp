@@ -6,7 +6,7 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 07/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 571080f3d25753fdc423c45100b06377ecd426b5
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 934742108effda0a88f4bcc42e06daa12c55288c
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549189"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648838"
 ---
 # <a name="reference-for-intune-management-extension"></a>Intune 管理拡張のリファレンス
 
@@ -35,7 +35,7 @@ ms.locfileid: "67549189"
 
 **IntuneManagementExtensionVersion** エンティティは、IntuneManagementExtension で使用されるすべてのバージョンを一覧表示します。
 
-| プロパティ  | 説明 | 例 |
+| プロパティ  | [説明] | 例 |
 |---------|------------|--------|
 | ExtensionVersionKey |IntuneManagementExtension バージョンの一意識別子。 | 1 |
 | ExtensionVersion |4 桁のバージョン番号。 |1.0.2.0 |
@@ -44,9 +44,9 @@ ms.locfileid: "67549189"
 
 **IntuneManagementExtensionHealthState** は、IntuneManagementExtension の考えられるすべてのヘルス状態を一覧表示します。
 
-| プロパティ  | 説明 | 例 |
+| プロパティ  | [説明] | 例 |
 |---------|------------|--------|
-| ExtensionStateKey |ヘルス状態の一意識別子。 | 2 |
+| ExtensionStateKey |ヘルス状態の一意識別子。 | 2 で保護されたプロセスとして起動されました |
 | ExtensionState |IntuneManagementExtension のヘルス状態。 | Healthy |
 
 ## <a name="intunemanagementextension"></a>IntuneManagementExtension
@@ -55,11 +55,11 @@ ms.locfileid: "67549189"
 過去 60 日間のデータが保持されます。 
 
 
-|      プロパティ       |                         説明                         | 例 |
+|      プロパティ       |                         [説明]                         | 例 |
 |---------------------|-------------------------------------------------------------|---------|
 |       DateKey       |               日付の一意識別子。                |   123   |
 |      TenantKey      |              テナントの一意識別子。               |   456   |
 |      DeviceKey      |              デバイスの一意識別子。               |   789   |
 | ExtensionVersionKey | IntuneManagementExtension バージョンの一意識別子。 |    1    |
-|  ExtensionStateKey  |             ヘルス状態の一意識別子。              |    2    |
+|  ExtensionStateKey  |             ヘルス状態の一意識別子。              |    2 で保護されたプロセスとして起動されました    |
 
