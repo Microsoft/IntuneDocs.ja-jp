@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7ab0ecd2802e68dbac32b757e472a74e697da13
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 91c2ab71cb393bdf885c947c8f3cd93a5bb196c3
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530747"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548043"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>チュートリアル: マネージド デバイス上で Exchange Online の電子メールを保護する
 デバイス コンプライアンス ポリシーと条件付きアクセスを使用して、iOS デバイスが Intune によって管理され、承認されたメール アプリを使用している場合にのみ、Exchange Online のメールにアクセスできるようにする方法を説明します。 
@@ -53,7 +53,7 @@ Intune デバイス コンプライアンス ポリシーを設定して、デ�
 4. **[プラットフォーム]** で **[iOS]** を選択します。 
 5. **[設定]**  >  **[電子メール]** を選択します。 
      
-    1.  **[モバイル デバイスは管理されているメール プロファイルを持つことが必要]** の隣の **[必要]** を選択します。
+    1. **[モバイル デバイスは管理されているメール プロファイルを持つことが必要]** の隣の **[必要]** を選択します。
     2. **[OK]** を選択します。
 
     ![管理されたメール プロファイルを必要とするように電子メール コンプライアンス ポリシーを設定する](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-email.png)
@@ -77,7 +77,7 @@ Intune デバイス コンプライアンス ポリシーを設定して、デ�
 ## <a name="create-the-conditional-access-policy"></a>条件付きアクセス ポリシーを作成する
 次に、すべてのデバイス プラットフォームに対し、Exchange Online にアクセスするためには、Intune に登録することと、Intune コンプライアンス ポリシーに準拠することを要求する、条件付きアクセス ポリシーを作成します。 また、メールへのアクセスには Outlook アプリを使用することも要求します。 条件付きアクセス ポリシーは、Azure AD ポータルまたは Intune ポータルのいずれかで構成できます。 既に Intune ポータルにいるので、ここでポリシーを作成します。
 1. Intune で、 **[条件付きアクセス]**  >  **[ポリシー]**  >  **[新しいポリシー]** の順に選択します。
-1.  **[名前]** に「**Test policy for Office 365 email**」と入力します。 
+1. **[名前]** に「**Test policy for Office 365 email**」と入力します。 
 3. **[割り当て]** で、 **[ユーザーとグループ]** を選択します。 **[含む]** タブで **[すべてのユーザー]** を選択して、 **[完了]** を選択します。
 
 4. **[割り当て]** で、 **[クラウド アプリ]** を選択します。 Office 365 Exchange Online のメールを保護するので、次の手順で選択します。

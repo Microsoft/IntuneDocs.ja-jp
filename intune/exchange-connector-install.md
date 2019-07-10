@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffaf29d34c7f6a08d48717f7560926d53cfa8ba2
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: da828b162e008541cb5cb2b5d15092d0fce417c5
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529767"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572532"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Microsoft Intune で Intune のオンプレミス Exchange コネクタを設定する
 この記事の情報は、Intune 用の Exchange Active Sync オンプレミス コネクタをインストールして監視するのに役立ちます。  Intune オンプレミス Exchange コネクタを[条件付きアクセス ポリシーと一緒に使用して、ご利用の Exchange オンプレミス メールボックスへのアクセスを許可またはブロックします](conditional-access-exchange-create.md)。 
@@ -58,22 +58,22 @@ Intune とオンプレミス Exchange Server が通信できるようにする�
 オンプレミス Exchange コネクタが使用する Active Directory ユーザー アカウントを作成します。 アカウントには、次の必須の Windows PowerShell Exchange コマンドレットを実行するための権限が必要です。
 
 
- -   Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
- -   Get-CasMailbox、Set-CasMailbox
- -   Get-ActiveSyncMailboxPolicy、Set-ActiveSyncMailboxPolicy、New-ActiveSyncMailboxPolicy、Remove-ActiveSyncMailboxPolicy
- -   Get-ActiveSyncDeviceAccessRule、Set-ActiveSyncDeviceAccessRule、New-ActiveSyncDeviceAccessRule、Remove-ActiveSyncDeviceAccessRule
- -   Get-ActiveSyncDeviceStatistics
- -   Get-ActiveSyncDevice
- -   Get-ExchangeServer
- -   Get-ActiveSyncDeviceClass
- -   Get-Recipient
- -   Clear-ActiveSyncDevice、Remove-ActiveSyncDevice
- -   Set-ADServerSettings
- -   Get-Command
+ - Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
+ - Get-CasMailbox、Set-CasMailbox
+ - Get-ActiveSyncMailboxPolicy、Set-ActiveSyncMailboxPolicy、New-ActiveSyncMailboxPolicy、Remove-ActiveSyncMailboxPolicy
+ - Get-ActiveSyncDeviceAccessRule、Set-ActiveSyncDeviceAccessRule、New-ActiveSyncDeviceAccessRule、Remove-ActiveSyncDeviceAccessRule
+ - Get-ActiveSyncDeviceStatistics
+ - Get-ActiveSyncDevice
+ - Get-ExchangeServer
+ - Get-ActiveSyncDeviceClass
+ - Get-Recipient
+ - Clear-ActiveSyncDevice、Remove-ActiveSyncDevice
+ - Set-ADServerSettings
+ - Get-Command
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>オンプレミス Exchange コネクタ ソフトウェア インストール パッケージのダウンロード
 
-1. オンプレミス Exchange コネクタのサポートされている Windows Server オペレーティング システムで、Exchange Server を使用するライセンスを持つオンプレミス Exchange Server 内の管理者であるユーザー アカウントを使用して、[Azure portal](https://portal.azure.com) を開きサインインします。
+1. オンプレミス Exchange コネクタのサポートされている Windows Server オペレーティング システムで、Exchange Server を使用するライセンスを持つオンプレミス Exchange Server 内の管理者であるユーザー アカウントを使用して、[Azure Portal](https://portal.azure.com) を開きサインインします。
 
 2. **[Intune]**  >  **[Exchange へのアクセス]** の順に移動します。  
 

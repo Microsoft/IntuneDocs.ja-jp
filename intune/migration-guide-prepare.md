@@ -16,14 +16,14 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4bd03075e6088b4cf06237429a723e93e87029fd
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 0656c199d2f6179429415161ec02ef8a9037bf6b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494586"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548361"
 ---
-# <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>フェーズ 1: モバイル デバイス管理 (MDM) に Microsoft Intune を準備する
+# <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>フェーズ 1:モバイル デバイス管理 (MDM) に Microsoft Intune を準備する
 
 Intune の設定の詳細について説明する前に、組織のモバイル デバイス管理の要件を確認しておきましょう。 現在の MDM プロバイダーでアクティブなユーザーのレポートを実行して重要なユーザー グループを識別すると役立つ場合があります。 その後、「[MDM 要件を評価する](migration-guide-prepare.md#assess-mdm-requirements)」セクションの質問に答えることができます。
 
@@ -31,30 +31,30 @@ Intune の設定の詳細について説明する前に、組織のモバイル 
 
 ### <a name="what-kinds-of-devices-do-you-need-to-manage"></a>管理が必要なデバイスの種類について
 
--   どの[プラットフォーム](supported-devices-browsers.md)をサポートする必要がありますか。
+- どの[プラットフォーム](supported-devices-browsers.md)をサポートする必要がありますか。
 
--   サポートする必要があるのは、企業所有デバイスですか個人のデバイスですか。
+- サポートする必要があるのは、企業所有デバイスですか個人のデバイスですか。
 
--   どのような種類の接続を使用しますか。 Wi-Fi、移動体通信、VPN ですか。
+- どのような種類の接続を使用しますか。 Wi-Fi、移動体通信、VPN ですか。
 
 ### <a name="what-do-your-users-need-to-do-on-managed-devices"></a>マネージド デバイスでユーザーが行う作業
 
--   エンド ユーザーにアプリをプロビジョニングする必要がありますか。
+- エンド ユーザーにアプリをプロビジョニングする必要がありますか。
 
--   カスタムの基幹業務アプリを使用しますか。 それともパブリックなストア アプリのみ必要ですか。
+- カスタムの基幹業務アプリを使用しますか。 それともパブリックなストア アプリのみ必要ですか。
 
--   電子メール アカウントをプロビジョニングする必要がありますか。
+- 電子メール アカウントをプロビジョニングする必要がありますか。
 
 ### <a name="what-kinds-of-users"></a>ユーザーの種類について
 
--   1 つのデバイスを使用するユーザー数は何人ですか。
+- 1 つのデバイスを使用するユーザー数は何人ですか。
 
--   どのような使用条件が必要ですか。
+- どのような使用条件が必要ですか。
 
-    -   これについては早い段階で法務部門が関与するようにします。
-    -   どのようなローカライズが必要ですか。
+    - これについては早い段階で法務部門が関与するようにします。
+    - どのようなローカライズが必要ですか。
 
--   一般的に、ユーザーは技術と IT についてよく理解していますか。
+- 一般的に、ユーザーは技術と IT についてよく理解していますか。
 
 ### <a name="what-is-your-device-security-policy"></a>デバイスのセキュリティ ポリシーについて
 
@@ -68,11 +68,11 @@ Intune の設定の詳細について説明する前に、組織のモバイル 
 
 - どのような種類の認証をサポートする必要がありますか。 証明書ベースの認証が必要な場合、どのような種類の証明書をプロビジョニングする必要がありますか。
   - Intune では、リソース アクセス プロファイルを使用して、登録されたデバイスに証明書をプロビジョニングします。
-  -   どのような種類の公開キー基盤 (PKI) インフラをサポートする必要がありますか。
+  - どのような種類の公開キー基盤 (PKI) インフラをサポートする必要がありますか。
   <br></br>
 - デバイスまたはアプリケーション レベルで、仮想プライベート ネットワーク (VPN) をサポートする必要がありますか。
 
-  -   Intune では、サードパーティ VPN プロバイダー向けの VPN 構成をプロビジョニングします。
+  - Intune では、サードパーティ VPN プロバイダー向けの VPN 構成をプロビジョニングします。
   <br/><br/>
 - ダウンタイムを回避するために、特定の要件に対して一時的な例外を設定できますか。 それともアクセスが許可されたデバイスは、常にすべてのセキュリティ要件を遵守する必要がありますか。
 

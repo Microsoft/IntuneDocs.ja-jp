@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 980138015cdbe063d6d4b05eb6dd8ab70be4b601
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 2f0a4b9a957948c9bda0b0ad2d9829ff9560f217
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67512242"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548480"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Mobile Threat Defense コネクタと Intune
 
@@ -41,11 +41,11 @@ Intune デバイス コンプライアンス ポリシーには、Pradeo リス�
 
 マルウェアなどの悪意のあるアプリがデバイスで検出されると、脅威が解決されるまで、デバイスで次の行為が禁止されます。
 
--   会社の電子メールに接続する
+- 会社の電子メールに接続する
 
--   OneDrive for Work アプリを使用して会社のファイルを同期する
+- OneDrive for Work アプリを使用して会社のファイルを同期する
 
--   会社のアプリにアクセスする
+- 会社のアプリにアクセスする
 
 **悪意のあるアプリが検出されたときにブロックする:**
 
@@ -81,19 +81,19 @@ Intune デバイス コンプライアンス ポリシーには、Pradeo リス�
 
 ## <a name="supported-platforms"></a>サポートされているプラットフォーム
 
--   **Android 4.0.3 以降**
+- **Android 4.0.3 以降**
 
--   **iOS 7 以降**
+- **iOS 7 以降**
 
 ## <a name="prerequisites"></a>必要条件
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune サブスクリプション
+- Microsoft Intune サブスクリプション
 
--   Mobile Threat Defense サブスクリプション用の Pradeo のセキュリティ
+- Mobile Threat Defense サブスクリプション用の Pradeo のセキュリティ
 
-    -   詳細については、[Pradeo の Web サイト](https://www.pradeo.com/en-US/mobile-threat-protection)を参照してください。
+    - 詳細については、[Pradeo の Web サイト](https://www.pradeo.com/en-US/mobile-threat-protection)を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

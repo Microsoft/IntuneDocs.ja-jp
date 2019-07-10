@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1cab7957a0de1b26a6e172fc696cf887d5fe3916
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: cd185a42d36de6aaf1e6d0ff0b8e34619b02c093
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528393"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572436"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Symantec Endpoint Protection Mobile と Intune の統合を設定する
 
@@ -32,7 +32,7 @@ Symantec Endpoint Protection Mobile (SEP Mobile) ソリューションと Intune
 
 ### <a name="azure-ad-account-used-to-integrate-intune-and-sep-mobile"></a>Intune と SEP Mobile の統合に使用される Azure AD アカウント
 
--   SEP Mobile の基本セットアップ プロセスを始める前に、[Symantec Endpoint Protection Mobile Management コンソール](https://aad.skycure.com)で Azure AD アカウントを適切に構成する必要があります。
+- SEP Mobile の基本セットアップ プロセスを始める前に、[Symantec Endpoint Protection Mobile Management コンソール](https://aad.skycure.com)で Azure AD アカウントを適切に構成する必要があります。
 - Azure AD アカウントは、統合を実行する全体管理者アカウントである必要があります。
 ### <a name="network-setup"></a>ネットワークのセットアップ
 
@@ -42,40 +42,40 @@ SEP Mobile セットアップとの統合用にネットワークが正しく構
 
 SEP Mobile では、Intune との統合に 2 つのモードがあります。
 
--   **読み取り専用統合 (基本セットアップ):** Azure Active Directory からのデバイスのインベントリのみを作成し、それらを Symantec Endpoint Protection Mobile Management コンソールに設定します。
+- **読み取り専用統合 (基本セットアップ):** Azure Active Directory からのデバイスのインベントリのみを作成し、それらを Symantec Endpoint Protection Mobile Management コンソールに設定します。
 <br>
-    -   Symantec Endpoint Protection Mobile Management コンソールで **[Report the health and risk of devices to Intune]\(デバイスの健全性とリスクを Intune に報告する\)** ボックスと **[Also report security incidents to Intune]\(セキュリティ インシデントも Intune に報告する\)** ボックスがオンになっていない場合、統合は読み取り専用となり、Intune でデバイスの状態 (準拠または非準拠) が変化することはありません。
+    - Symantec Endpoint Protection Mobile Management コンソールで **[Report the health and risk of devices to Intune]\(デバイスの健全性とリスクを Intune に報告する\)** ボックスと **[Also report security incidents to Intune]\(セキュリティ インシデントも Intune に報告する\)** ボックスがオンになっていない場合、統合は読み取り専用となり、Intune でデバイスの状態 (準拠または非準拠) が変化することはありません。
 <br></br>
--   **完全統合:** リスクのあるデバイスとセキュリティ インシデントの詳細を Intune に報告することを SEP Mobile に許可します。両方のクラウド サービス間に双方向の通信が作成されます。
+- **完全統合:** リスクのあるデバイスとセキュリティ インシデントの詳細を Intune に報告することを SEP Mobile に許可します。両方のクラウド サービス間に双方向の通信が作成されます。
 
 ### <a name="how-are-the-sep-mobile-apps-used-with-azure-ad-and-intune"></a>Azure AD および Intune での SEP Mobile アプリの使用方法
 
--   **iOS アプリ:** エンドユーザーは iOS アプリを利用し、Azure AD にサインインできます。
+- **iOS アプリ:** エンドユーザーは iOS アプリを利用し、Azure AD にサインインできます。
 
--   **Android アプリ:** エンドユーザーは Android アプリを利用し、Azure AD にサインインできます。
+- **Android アプリ:** エンドユーザーは Android アプリを利用し、Azure AD にサインインできます。
 
--   **Management アプリ:** これは、Intune とのサービス間通信を可能にする SEP Mobile Azure AD マルチテナント アプリです。
+- **Management アプリ:** これは、Intune とのサービス間通信を可能にする SEP Mobile Azure AD マルチテナント アプリです。
 
 ## <a name="to-set-up-the-read-only-integration-between-intune-and-sep-mobile"></a>Intune と SEP Mobile の間に読み取り専用の統合を設定するには
 
 > [!IMPORTANT]
 > SEP Mobile 管理者の資格情報は、Azure Active Directory の有効なユーザーに属するメール アカウントで構成されている必要があります。そうでない場合、ログインは失敗します。 SEP Mobile は、シングル サインオン (SSO) を使った管理者の認証に、Azure Active Directory を使います。
 
-1.  [Symantec Endpoint Protection Mobile Management コンソール](https://aad.skycure.com)に移動します。
+1. [Symantec Endpoint Protection Mobile Management コンソール](https://aad.skycure.com)に移動します。
 
-2.  **[SEP Mobile admin credentials]\(SEP Mobile 管理者資格情報\)** を入力し、 **[Continue]\(続行\)** を選びます。
+2. **[SEP Mobile admin credentials]\(SEP Mobile 管理者資格情報\)** を入力し、 **[Continue]\(続行\)** を選びます。
 
-3.  **[Settings]\(設定\)** に進み、 **[Intune Integration]\(Intune との統合\)** で **[Basic Setup]\(基本セットアップ\)** を選びます。
+3. **[Settings]\(設定\)** に進み、 **[Intune Integration]\(Intune との統合\)** で **[Basic Setup]\(基本セットアップ\)** を選びます。
 
-4.  **[iOS App]\(iOS アプリ\)** の **[Add to Active Directory]\(Active Directory に追加\)** を選びます。
+4. **[iOS App]\(iOS アプリ\)** の **[Add to Active Directory]\(Active Directory に追加\)** を選びます。
 
     ![Symantec Endpoint Protection Mobile Management コンソールの画像](./media/symantec-portal-basic-add.png)
 
-5.  ログイン ページが開いたら、Intune の資格情報を入力し、 **[Accept]\(同意する\)** を選びます。
+5. ログイン ページが開いたら、Intune の資格情報を入力し、 **[Accept]\(同意する\)** を選びます。
 
     ![iOS アプリの Intune ログイン プロンプトの画像](./media/symantec-portal-basic-accept.png)
 
-6.  アプリが Azure AD に追加された後、アプリが正常に追加されたことが示されます。
+6. アプリが Azure AD に追加された後、アプリが正常に追加されたことが示されます。
 
     ![iOS アプリの完了画面の画像](./media/symantec-portal-basic-added.png)
 
@@ -85,7 +85,7 @@ SEP Mobile では、Intune との統合に 2 つのモードがあります。
 
 SEP Mobile を実行しているすべてのデバイスを含む Azure AD セキュリティ グループを追加する必要があります。
 
--  SEP Mobile を実行しているデバイスのセキュリティ グループをすべて入力し、変更を保存します。
+- SEP Mobile を実行しているデバイスのセキュリティ グループをすべて入力し、変更を保存します。
 
     ![SEP Mobile アプリのユーザー グループを示す画像](./media/symantec-portal-basic-groups.png)
 
@@ -118,11 +118,11 @@ SEP Mobile は、Mobile Threat Defense サービスを実行しているデバ�
 
 ### <a name="set-up-the-integration-between-symantec-endpoint-protection-mobile-and-intune"></a>Symantec Endpoint Protection Mobile と Intune の統合を設定する
 
-1.  [Symantec Endpoint Protection Mobile Management コンソール](https://aad.skycure.com)に移動します。
+1. [Symantec Endpoint Protection Mobile Management コンソール](https://aad.skycure.com)に移動します。
 
-2.  **[SEP Mobile admin credentials]\(SEP Mobile 管理者資格情報\)** を入力し、 **[Continue]\(続行\)** を選びます。
+2. **[SEP Mobile admin credentials]\(SEP Mobile 管理者資格情報\)** を入力し、 **[Continue]\(続行\)** を選びます。
 
-3.  **[Settings]\(設定\)**  >  **[Integrations]\(統合\)**  >  **[Intune]**  >  **[EMM Integration Selection]\(EMM 統合の選択\)** セクションの順に移動します。
+3. **[Settings]\(設定\)**  >  **[Integrations]\(統合\)**  >  **[Intune]**  >  **[EMM Integration Selection]\(EMM 統合の選択\)** セクションの順に移動します。
 
 4. **[Directory ID]\(ディレクトリ ID\)** ボックスに、前のセクションで Azure Active Directory からコピーしたディレクトリ ID を貼り付け、設定を保存します。
 
@@ -146,7 +146,7 @@ SEP Mobile は、Mobile Threat Defense サービスを実行しているデバ�
 
     ![SEP Mobile アプリのユーザー グループを示す画像](./media/symantec-portal-basic-groups.png)
 
-11.  選択したグループのデバイスが SEP Mobile によって同期され、Intune への情報の報告が始まります。 このデータは、[Full Integration]\(完全統合\) セクションで見ることができます。 **[Settings]\(設定\)**  >  **[Integrations]\(統合\)**  >  **[Intune]**  >  **[Full Integration]\(完全統合\)** セクションの順に移動します。
+11. 選択したグループのデバイスが SEP Mobile によって同期され、Intune への情報の報告が始まります。 このデータは、[Full Integration]\(完全統合\) セクションで見ることができます。 **[Settings]\(設定\)**  >  **[Integrations]\(統合\)**  >  **[Intune]**  >  **[Full Integration]\(完全統合\)** セクションの順に移動します。
 
      ![SEP Mobile の完全統合の完了を示す画像](media/symantec-portal-basic-status.PNG)
 ## <a name="next-steps"></a>次の手順

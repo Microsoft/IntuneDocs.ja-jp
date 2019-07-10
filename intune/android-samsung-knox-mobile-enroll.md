@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d07d9466cda86270898d0e54e8d50b358bcb1b84
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 0c962085ce61f01613bfc04ef0c80699e6f5a3e8
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494114"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547425"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Samsung の Knox Mobile Enrollment を使用して Android デバイスを自動的に登録する
 
@@ -44,15 +44,15 @@ Knox Deployment Program に参加している承認されたリセラーから�
 ## <a name="prerequisites"></a>必要条件
 
 KME を使って Intune に登録するには、最初に、次の手順に従って、Samsung Knox ポータルで会社を登録する必要があります。
-1.  [お住まいの地域で KME が使用可能であることを確認する](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries):KME は 55 を超える国で使用できます。 展開する国がサポートされていることを確認します。
+1. [お住まいの地域で KME が使用可能であることを確認する](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries):KME は 55 を超える国で使用できます。 展開する国がサポートされていることを確認します。
 
-2.  [サポートされているデバイス](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+):KME は、Android の登録については Knox 2.4 以降、Android エンタープライズの登録については Knox 2.8 以降の、すべての Samsung デバイスで使用できます。
+2. [サポートされているデバイス](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+):KME は、Android の登録については Knox 2.4 以降、Android エンタープライズの登録については Knox 2.8 以降の、すべての Samsung デバイスで使用できます。
 
-3.  [ネットワーク要件](https://docs.samsungknox.com/KME-Getting-Started/Content/firewall_exceptions.htm):必要なファイアウォール ルールとネットワーク アクセス ルールが、ネットワークで許可されていることを確認します。
+3. [ネットワーク要件](https://docs.samsungknox.com/KME-Getting-Started/Content/firewall_exceptions.htm):必要なファイアウォール ルールとネットワーク アクセス ルールが、ネットワークで許可されていることを確認します。
 
-4.  [Samsung アカウントの登録](https://www2.samsungknox.com/en/user/register):KME に登録して有効にし、Knox Enterprise のすべての権利を一元管理するには、Samsung アカウントが必要です。
+4. [Samsung アカウントの登録](https://www2.samsungknox.com/en/user/register):KME に登録して有効にし、Knox Enterprise のすべての権利を一元管理するには、Samsung アカウントが必要です。
 
-5.  登録の確認:プロファイルが完成して送信された後、Samsung はユーザーのアプリケーションの確認を実行し、すぐに承認するか、またはさらにフォローアップするためにレビュー保留状態にします。 アカウントが承認された後は、以降の手順に進むことができます。
+5. 登録の確認:プロファイルが完成して送信された後、Samsung はユーザーのアプリケーションの確認を実行し、すぐに承認するか、またはさらにフォローアップするためにレビュー保留状態にします。 アカウントが承認された後は、以降の手順に進むことができます。
 
 ## <a name="create-mdm-profile"></a>MDM プロファイルを作成する
 

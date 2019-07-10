@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef0c4f5fd3f8c92d1d78ed37946663a127df440f
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: f9438c3c566dc62acfa7567428ebe3a6a6be4777
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530685"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572578"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Intune との Check Point SandBlast Mobile Threat Defense コネクタ
 
@@ -45,11 +45,11 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 マルウェアなどの悪意のあるアプリがデバイスで検出されると、脅威が解決されるまで、デバイスで次の行為が禁止されます。
 
--   会社の電子メールに接続する
+- 会社の電子メールに接続する
 
--   OneDrive for Work アプリを使用して会社のファイルを同期する
+- OneDrive for Work アプリを使用して会社のファイルを同期する
 
--   会社のアプリにアクセスする
+- 会社のアプリにアクセスする
 
 **悪意のあるアプリが検出されたときにブロックする:**
 
@@ -61,7 +61,7 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ### <a name="control-access-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいてアクセスを制御する
 
-ネットワークで **中間者攻撃** のような脅威を検出し、デバイスのリスクに基づいて Wi-Fi ネットワークへのアクセスを保護します。
+ネットワークで **Man-in-the-middle** のような脅威を検出し、デバイスのリスクに基づいて Wi-Fi ネットワークへのアクセスを保護します。
 
 **Wi-Fi 経由のネットワーク アクセスをブロックする:**
 
@@ -73,7 +73,7 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいて SharePoint Online へのアクセスを制御する
 
-ネットワークで **中間者攻撃** のような脅威を検出し、デバイスのリスクに基づいて会社内のファイルの同期を阻止します。
+ネットワークで **Man-in-the-middle** のような脅威を検出し、デバイスのリスクに基づいて会社内のファイルの同期を阻止します。
 
 **ネットワークの脅威が検出されたときに SharePoint Online をブロック:**
 
@@ -85,18 +85,18 @@ closing syntax for comment above is missing. Please insert closing syntax at int
 
 ## <a name="supported-platforms"></a>サポートされているプラットフォーム
 
--   **Android 4.1 以降**
+- **Android 4.1 以降**
 
--   **iOS 8 以降**
+- **iOS 8 以降**
 
 ## <a name="pre-requisites"></a>前提条件
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune サブスクリプション
+- Microsoft Intune サブスクリプション
 
--   Check Point SandBlast Mobile Threat Defense サブスクリプション
-    -   詳細については、[Check Point SandBlast の Web サイト](https://www.checkpoint.com/)を参照してください。
+- Check Point SandBlast Mobile Threat Defense サブスクリプション
+    - 詳細については、[Check Point SandBlast の Web サイト](https://www.checkpoint.com/)を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

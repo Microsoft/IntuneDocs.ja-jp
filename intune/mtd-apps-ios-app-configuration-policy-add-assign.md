@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6065fda71688909dd7fcbc6ef1909e3d3ab36b8
-ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
+ms.openlocfilehash: fdc7434616db6c06f56438fb6d8774ae3f2deca9
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67407114"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548430"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune で Mobile Threat Defense (MTD) アプリを追加して割り当てる  
 
@@ -34,9 +34,9 @@ ms.locfileid: "67407114"
 ## <a name="before-you-begin"></a>始める前に    
 [Azure Portal](https://portal.azure.com/) で以下の手順を完了しておく必要があります。 次のプロセスをよく理解している必要があります。
 
--   [Intune にアプリを追加する](apps-add.md)。
--   [iOS アプリ構成ポリシーを Intune に追加する](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
--   [Intune でアプリを割り当てる](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune)。
+- [Intune にアプリを追加する](apps-add.md)。
+- [iOS アプリ構成ポリシーを Intune に追加する](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
+- [Intune でアプリを割り当てる](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune)。
 
 > [!TIP]
 > Intune ポータル サイトは Android デバイスでブローカーとして機能するため、ユーザーに Azure AD によってチェックされた ID が与えられます。

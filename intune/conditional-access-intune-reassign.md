@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbebcb495298f3e8b17007d1fb00f0362ead4ab8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 8bcc9aa527ed27ef35db901117ceb8f4c8d10c97
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530665"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546892"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>条件付きアクセス ポリシーを Intune クラシック ポータルから Azure portal に再割り当てする
 
@@ -51,13 +51,13 @@ Azure portal に移行する準備ができた場合、このトピックの手�
 
 ### <a name="to-verify-your-device-based-conditional-access-policies-in-the-intune-classic-portal"></a>Intune クラシック ポータルでデバイス ベースの条件付きアクセス ポリシーを確認するには
 
-1.  [Intune クラシック ポータル](https://manage.microsoft.com)に移動し、資格情報でサインインします。
+1. [Intune クラシック ポータル](https://manage.microsoft.com)に移動し、資格情報でサインインします。
 
-2.  左側のメニューから **[ポリシー]** を選びます。
+2. 左側のメニューから **[ポリシー]** を選びます。
 
-3.  **[条件付きアクセス]** を選んだ後、条件付きアクセス ポリシーを作成した対象の Microsoft クラウド サービス (Exchange Online、SharePoint Online など) を選びます。
+3. **[条件付きアクセス]** を選んだ後、条件付きアクセス ポリシーを作成した対象の Microsoft クラウド サービス (Exchange Online、SharePoint Online など) を選びます。
 
-4.  条件付きアクセスの設定を記録し、それを参考にして、Azure portal で同じ条件付きアクセス ポリシーを作成します。
+4. 条件付きアクセスの設定を記録し、それを参考にして、Azure portal で同じ条件付きアクセス ポリシーを作成します。
 
 ### <a name="app-and-device-based-conditional-access-policies-working-together"></a>連携するアプリ ベースとデバイス ベースの条件付きアクセス ポリシー
 
@@ -194,13 +194,13 @@ Azure portal で条件付きアクセス ポリシーの再割り当てを行っ
 
 ### <a name="to-disable-the-conditional-access-policies"></a>条件付きアクセス ポリシーを無効にするには
 
-1.  [Intune クラシック ポータル](https://manage.microsoft.com)に移動し、資格情報でサインインします。
+1. [Intune クラシック ポータル](https://manage.microsoft.com)に移動し、資格情報でサインインします。
 
-2.  左側のメニューから **[ポリシー]** を選びます。
+2. 左側のメニューから **[ポリシー]** を選びます。
 
-3.  **[条件付きアクセス]** を選んだ後、条件付きアクセス ポリシーを作成した対象の Microsoft クラウド サービス (Exchange Online、SharePoint Online など) を選びます。
+3. **[条件付きアクセス]** を選んだ後、条件付きアクセス ポリシーを作成した対象の Microsoft クラウド サービス (Exchange Online、SharePoint Online など) を選びます。
 
-4.  **[条件付きアクセス ポリシーを有効にする]** オプションをオフにした後、 **[保存]** をクリックします。
+4. **[条件付きアクセス ポリシーを有効にする]** オプションをオフにした後、 **[保存]** をクリックします。
 
     ![Intune クラシック ポータルで条件付きアクセス ポリシーを無効にする画像](./media/reassign-ca-18.png)
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ce8d87a653e87a2b9ba91552f6857fdab6bee12
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 28e48d64ba220f75f412ef117a08b07dfd477d06
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045990"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549288"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>モバイル デバイス管理のユース ケース シナリオを特定する
 
@@ -33,9 +33,9 @@ ms.locfileid: "66045990"
 ## <a name="device-ownership"></a>デバイスの所有権
 お客様の展開向けの主なユース ケース シナリオを特定するには、組織の Intune 展開の目標と目的を確認することから始めます。 Intune 展開計画の範囲内で、以下の質問にお答えください。
 
--   会社所有のデバイスをサポートする予定ですか。
+- 会社所有のデバイスをサポートする予定ですか。
 
--   個人所有のデバイス (BYOD) をサポートする予定ですか。
+- 個人所有のデバイス (BYOD) をサポートする予定ですか。
 
 これらの質問はどちらか 1 つを選択する類のものではありません。 両方の形式のデバイス所有権をサポートして組織の目標を果たす必要があると気付く場合があります。 サブ ユース ケースは、異なるデバイス管理ポリシーを適用する場所を明らかにするのに役立ちます。
 
@@ -43,11 +43,11 @@ ms.locfileid: "66045990"
 
 各ユース ケース シナリオにサブ ユース ケースが含まれるかどうかを判断します。 たとえば、組織が会社のユース ケース シナリオをサポートするための要件を特定していて、そのシナリオに、以下のようなユーザーの種類またはデバイスのロールに基づいた追加のサブ ユース ケースが含まれている場合があります。
 
--   インフォメーション ワーカー
+- インフォメーション ワーカー
 
--   役員
+- 役員
 
--   キオスク
+- キオスク
 
 ユース ケース シナリオとサブ ユース ケース シナリオのいくつかの例を次に示します。
 
@@ -63,7 +63,7 @@ ms.locfileid: "66045990"
 
 ## <a name="organizational-groups-for-your-scenarios"></a>シナリオ用の組織のグループ
 
-次に、各ユース ケースとサブ ユース ケース シナリオに関連付けられている組織グループを特定する必要があります。 たとえば、次のように入力します。
+次に、各ユース ケースとサブ ユース ケース シナリオに関連付けられている組織グループを特定する必要があります。 次に例を示します。
 
 | **ユース ケース** | **サブ ユース ケース** | **組織グループ** |
 |:---:|:---:|:---:|

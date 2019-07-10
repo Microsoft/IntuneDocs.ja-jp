@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f59ff42f7707ace92442bf37ddac9679e36448f
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 1649c6256e4df61b538e2adee87512617b677bb4
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045890"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547489"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Intune で Android 仕事用プロファイルのデバイスを管理する
 
@@ -68,9 +68,9 @@ Android Enterprise 仕事用プロファイル デバイスで Exchange ActiveSy
 
 VPN のサポートは、Android VPN プロファイルに似ています。 Android Enterprise 管理では同じ VPN プロバイダーと基本構成オプションを使用できますが、次の 2 つの違いがあります。
 
--  **仕事用プロファイル対象の VPN** - VPN 接続は、仕事用プロファイルに展開されるアプリのみが対象です。 Android Enterprise で管理されるアプリのみが VPN 接続を使用できます。 デバイス上の個人用のアプリは、管理対象の VPN 接続を使用できません。 詳細については、「[Android エンタープライズの VPN の設定](vpn-settings-android.md#android-enterprise-vpn-settings)」を参照してください。
+- **仕事用プロファイル対象の VPN** - VPN 接続は、仕事用プロファイルに展開されるアプリのみが対象です。 Android Enterprise で管理されるアプリのみが VPN 接続を使用できます。 デバイス上の個人用のアプリは、管理対象の VPN 接続を使用できません。 詳細については、「[Android エンタープライズの VPN の設定](vpn-settings-android.md#android-enterprise-vpn-settings)」を参照してください。
 
--  **アプリ固有の VPN** – VPN プロバイダーがサポートしている場合は、Intune でアプリ固有の VPN を構成できます。
+- **アプリ固有の VPN** – VPN プロバイダーがサポートしている場合は、Intune でアプリ固有の VPN を構成できます。
     - アプリ固有の VPN の構成
     - Android Enterprise アプリの構成プロファイルを介してアプリごとの VPN を構成する機能です。
     詳細については、「[Microsoft Intune のカスタム プロファイルを使って、Android デバイス用にアプリごとの VPN プロファイルを作成する](android-pulse-secure-per-app-vpn.md)」を参照してください。
@@ -79,9 +79,9 @@ VPN のサポートは、Android VPN プロファイルに似ています。 And
 
 Android 管理で使用できるものと同じ証明書プロファイルの構成オプションが、Android Enterprise 仕事用プロファイル デバイスで使用できます。 Android Enterprise には、強化された証明書管理 API があります。 強化された証明書管理には、次の機能があります。
 
--  ユーザーにとって、証明書の展開が自動的かつシームレスに実行されます。
--  デバイスが Intune のインベントリから削除され、仕事用プロファイルが削除されるときに、展開された証明書が削除されます。
--  IT 部門が管理サービスを介して証明書を展開し、構成したことをユーザーに伝えるメッセージ処理が改善されます。
+- ユーザーにとって、証明書の展開が自動的かつシームレスに実行されます。
+- デバイスが Intune のインベントリから削除され、仕事用プロファイルが削除されるときに、展開された証明書が削除されます。
+- IT 部門が管理サービスを介して証明書を展開し、構成したことをユーザーに伝えるメッセージ処理が改善されます。
 
 詳細については、「[Microsoft Intune でデバイスの証明書プロファイルを構成する](certificates-configure.md)」を参照してください。
 

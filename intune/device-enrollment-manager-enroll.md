@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8bbb1c7ec7151a09c8eeae33f4252781e5338f7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2ea1ca5f2661d51088efae79d97da40ce8737b7e
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048323"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546710"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>デバイス登録マネージャー アカウントを使用してデバイスを Intune に登録する
 
@@ -44,11 +44,11 @@ DEM ユーザー アカウントと DEM ユーザー アカウントを使用し
 
 ## <a name="add-a-device-enrollment-manager"></a>デバイス登録マネージャーの追加
 
-1.  [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]** > **[デバイス登録マネージャー]** の順に選択します。
+1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、 **[デバイスの登録]**  >  **[デバイス登録マネージャー]** の順に選択します。
 
-2.  **[追加]** を選択します。
+2. **[追加]** を選択します。
 
-3.  **[ユーザーの追加]** ブレードで、DEM ユーザーのユーザー プリンシパル名を入力し、**[追加]** を選択します。 DEM ユーザーが DEM ユーザーの一覧に追加されます。
+3. **[ユーザーの追加]** ブレードで、DEM ユーザーのユーザー プリンシパル名を入力し、 **[追加]** を選択します。 DEM ユーザーが DEM ユーザーの一覧に追加されます。
 
 ## <a name="permissions-for-dem"></a>DEM のアクセス許可
 
@@ -65,6 +65,6 @@ DEM ユーザー アカウントと DEM ユーザー アカウントを使用し
 
 **デバイス登録マネージャーを削除するには**
 
-1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、**[デバイスの登録]**、**[デバイス登録マネージャー]** の順に選びます。
-2. **[デバイス登録マネージャー]** ブレードで、DEM ユーザーを選択し、**[削除]** を選択します。
+1. [Azure Portal の Intune](https://aka.ms/intuneportal) で、 **[デバイスの登録]** 、 **[デバイス登録マネージャー]** の順に選びます。
+2. **[デバイス登録マネージャー]** ブレードで、DEM ユーザーを選択し、 **[削除]** を選択します。
 

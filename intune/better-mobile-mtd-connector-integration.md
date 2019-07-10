@@ -14,65 +14,65 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e803eb3d47d44c8c8f3cd1b699b5ca220aeb91f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a7072d7d3d24578e0f82ea21eb653906dfa30b4c
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049107"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546971"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>Better Mobile と Intune を統合する
 
 Better Mobile Threat Defense ソリューションを Intune と統合するには、次の手順を行います。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>始める前に
 
 > [!NOTE]
 > 次の手順は、[Better Mobile の管理コンソール](https://aad.bmobi.net)で完了する必要があります。
 
 Better Mobile と Intune の統合を始める前に、次のものがあることを確認します。
 
--   Microsoft Intune サブスクリプション
+- Microsoft Intune サブスクリプション
 
--   次のアクセス許可を付与する Azure Active Directory 管理者資格情報:
+- 次のアクセス許可を付与する Azure Active Directory 管理者資格情報:
 
-    -   サインインしてユーザー プロファイルを読み取る
+    - サインインしてユーザー プロファイルを読み取る
 
-    -   サインインしたユーザーとしてディレクトリにアクセスする
+    - サインインしたユーザーとしてディレクトリにアクセスする
 
-    -   ディレクトリ データの読み込み
+    - ディレクトリ データの読み込み
 
-    -   Intune にデバイス情報を送信する
+    - Intune にデバイス情報を送信する
 
--   Better Mobile 管理コンソールにアクセスするための管理者資格情報。
+- Better Mobile 管理コンソールにアクセスするための管理者資格情報。
 
 ### <a name="better-mobile-app-authorization"></a>Better Mobile アプリの承認
 
 Better Mobile アプリの承認プロセスは以下で構成されます。
 
--   Better Mobile サービスがデバイスの正常性状態に関する情報を Intune に通知できるようにします。
+- Better Mobile サービスがデバイスの正常性状態に関する情報を Intune に通知できるようにします。
 
--   Better Mobile は、Azure AD 登録グループ メンバーシップと同期してデバイスのデータベースを設定します。
+- Better Mobile は、Azure AD 登録グループ メンバーシップと同期してデバイスのデータベースを設定します。
 
--   Better Mobile 管理コンソールが Azure AD シングル サインオン (SSO) を使用できるようにします。
+- Better Mobile 管理コンソールが Azure AD シングル サインオン (SSO) を使用できるようにします。
 
--   Better Mobile アプリが Azure AD SSO を使用してサインインできるようにします。
+- Better Mobile アプリが Azure AD SSO を使用してサインインできるようにします。
 
 ## <a name="to-set-up-better-mobile-integration"></a>Better Mobile の統合を設定するには
 
 1. [Better Mobile の管理コンソール](https://aad.bmobi.net)に移動し、資格情報を使用してサインインします。
-2. **[統合]** > **[EMM/MDM]** > **[アカウントの追加]** の順に選択します。
+2. **[統合]**  >  **[EMM/MDM]**  >  **[アカウントの追加]** の順に選択します。
 
      ![Better Mobile の管理コンソールの画像](media/better_mobile_console.png)
  
 3. **[Intune]** を選択します。
 4. **[アカウント名]** の横に、記述子を入力します。 
 5. **Microsoft のサインイン**のウィンドウに Intune の資格情報を入力します。
-6. **[要求されているアクセス許可]** ウィンドウで、**[Accept]\(同意\)** を選択します。
+6. **[要求されているアクセス許可]** ウィンドウで、 **[Accept]\(同意\)** を選択します。
 7. Better Mobile を同期するデバイスが属する Azure AD セキュリティ グループを検索し、一覧から選択します。 **[続行]** を選択します。
 8. **[完了]** を選びます。
 9. **[アカウントの追加]** ページが再表示されます。 ページを閉じます。 
 
 ## <a name="next-steps"></a>次の手順
 
--   [Better Client アプリを設定する](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Better Client アプリを設定する](mtd-apps-ios-app-configuration-policy-add-assign.md)

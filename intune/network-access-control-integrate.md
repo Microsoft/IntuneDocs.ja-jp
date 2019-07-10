@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 400de55e26076a8d612ac31388d5c5daec68d4a0
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 926d31e226bd25890afe5214b9e8c9247f7316a2
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044539"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572180"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>ネットワーク アクセス制御 (NAC) と Intune の統合
 
@@ -39,7 +39,7 @@ NAC ソリューションでは、Intune でデバイスの登録とコンプラ
 
 Intune とアクティブに同期しているデバイスは、**準拠** / **非準拠**から**未同期** (または**不明**) に移動することはできません。 **不明**の状態は、コンプライアンス対応状態がまだ評価されていない、新たに登録されたデバイスであることを示しています。
 
-リソースへのアクセスがブロックされているデバイスの場合、ブロックしているサービスが、すべてのユーザーを[管理ポータル](https://portal.manage.microsoft.com)にリダイレクトし、デバイスがブロックされている理由を特定します。  ユーザーがこのページにアクセスすると、デバイスのコンプライアンス対応状態が、同期的に再評価されます。
+リソースへのアクセスがブロックされているデバイスの場合、ブロックしているサービスが、すべてのユーザーを[管理ポータル](https://portal.manage.microsoft.com)にリダイレクトし、デバイスがブロックされている理由を特定します。  ユーザーがこのページにアクセスすると、デバイスのコンプライアンス対応状態が、同期的に再評価されます。
 
 ## <a name="nac-and-conditional-access"></a>NAC と条件付きアクセス
 

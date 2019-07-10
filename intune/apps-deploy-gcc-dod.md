@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/18/2019
+ms.date: 07/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ed4bc1d4063c177f438f7b7fbbe960b28a2a904c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 17d94252dd957c5699b34e0b8c2cbae2eee0b66f
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049336"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713357"
 ---
 # <a name="deploying-apps-using-intune-on-the-gcc-high-and-dod-environments"></a>Intune を使用して GCC High 環境および DoD 環境でアプリを展開する 
 
@@ -40,10 +40,10 @@ Intune を使用して、GCC High 環境または DoD 環境向けに基幹業�
 ビジネス向け Microsoft Store から[オフライン ライセンス付きアプリのダウンロード](https://docs.microsoft.com/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app)をする必要がある場合は、次の手順を実行してアプリケーションをダウンロードします。 
 
 1. [ビジネス向けストア](https://businessstore.microsoft.com/)にサインインします。
-2. **[管理]** > **[設定]** の順に選択します。
+2. **[管理]**  >  **[設定]** の順に選択します。
 3. **[Shopping Experience]\(ショッピング体験\)** の **[Show offline apps]\(オフライン アプリの表示\)** を **[オン]** に設定します。
 
-アプリの購入時にオフライン バージョンが利用可能な場合は、ライセンスの種類をオフラインに変更することもできます。 アプリを取得した後で、[ビジネス向けストア](https://businessstore.microsoft.com/)で **[管理]** > **[Products & Services]\(製品およびサービス\)** を選択してアプリを管理できます。 さらに、アプリとその依存関係をダウンロードすることができます。 次に、Intune を使用してユーザーにこのダウンロードしたアプリ (とその依存関係) を展開できます。  
+アプリの購入時にオフライン バージョンが利用可能な場合は、ライセンスの種類をオフラインに変更することもできます。 アプリを取得した後で、[ビジネス向けストア](https://businessstore.microsoft.com/)で **[管理]**  >  **[Products & Services]\(製品およびサービス\)** を選択してアプリを管理できます。 さらに、アプリとその依存関係をダウンロードすることができます。 次に、Intune を使用してユーザーにこのダウンロードしたアプリ (とその依存関係) を展開できます。  
 
 ## <a name="syncing-intune-to-the-store-for-business"></a>Intune をビジネス向けストアと同期させる 
 

@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f04879e88cb85eaacdb75f5645a486e3539cb13a
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 6480c6fb412c12e228b8bc3647045cf15da531e1
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044072"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548030"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile コネクタ
 
 Microsoft Intune に統合された Mobile Threat Defense ソリューションである Symantec Endpoint Protection Mobile (SEP Mobile) によって実行されるリスク評価に基づき、条件付きアクセスを利用し、モバイル デバイスから会社のリソースへのアクセスを制御できます。 リスクは、SEP Mobile を実行するデバイスから収集される次のような製品利用統計情報に基づいて評価されます。
 
--   物理的防御
+- 物理的防御
 
--   ネットワーク防御
+- ネットワーク防御
 
--   アプリケーション防御
+- アプリケーション防御
 
--   脆弱性防御
+- 脆弱性防御
 
 Intune デバイス コンプライアンス ポリシーで SEP Mobile のリスク評価を有効にした後、条件付きアクセスのポリシーを使って、検出された脅威に基づき、非準拠デバイスから企業リソースへのアクセスを許可または拒否できます。
 
@@ -48,9 +48,9 @@ Intune デバイス コンプライアンス ポリシーには、SEP Mobile の
 
 Intune では、SEP Mobile との統合に 2 つのモードがあります。
 
--   **基本セットアップ**は読み取り専用モードであり、SEP Mobile は Intune のデバイスを表示できます。
+- **基本セットアップ**は読み取り専用モードであり、SEP Mobile は Intune のデバイスを表示できます。
 
--   **完全統合**の場合、SEP Mobile から、デバイスのリスクとセキュリティ インシデントの詳細を Intune に報告できます。
+- **完全統合**の場合、SEP Mobile から、デバイスのリスクとセキュリティ インシデントの詳細を Intune に報告できます。
 
 ## <a name="sample-scenarios"></a>サンプル事例
 
@@ -60,11 +60,11 @@ Intune では、SEP Mobile との統合に 2 つのモードがあります。
 
 マルウェアなどの悪意のあるアプリがデバイスで検出されると、脅威が解決されるまで、デバイスで次の行為が禁止されます。
 
--   会社の電子メールに接続する
+- 会社の電子メールに接続する
 
--   OneDrive for Work アプリを使用して会社のファイルを同期する
+- OneDrive for Work アプリを使用して会社のファイルを同期する
 
--   会社のアプリにアクセスする
+- 会社のアプリにアクセスする
 
 **悪意のあるアプリが検出されたときにブロックする:**
 
@@ -100,17 +100,17 @@ Intune では、SEP Mobile との統合に 2 つのモードがあります。
 
 ## <a name="supported-platforms"></a>サポートされているプラットフォーム
 
--   **Android 4.1 以降**
+- **Android 4.1 以降**
 
--   **iOS 8 以降**
+- **iOS 8 以降**
 
 ## <a name="pre-requisites"></a>前提条件
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune サブスクリプション
+- Microsoft Intune サブスクリプション
 
--   Symantec Endpoint Protection Mobile のサブスクリプション
+- Symantec Endpoint Protection Mobile のサブスクリプション
 
 詳しくは、[Symantec の Web サイト](https://www.skycure.com/skycure-microsoft-integration/)をご覧ください。
 

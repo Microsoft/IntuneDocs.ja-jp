@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3de3db1f3758642221b6f1ed0465f8d25d8d84b0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8168cdaec4d6616b12fa4da225c84fa2d239994d
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049146"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648651"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune を使用する Windows 10 アプリの展開 
 
 現在、Microsoft Intune では、Windows 10 デバイスでのさまざまなアプリの種類と展開のシナリオがサポートされています。 アプリを Intune に追加した後、そのアプリをユーザーとデバイスに割り当てることができます。 ここでは、サポートされている Windows 10 シナリオに関連する詳細情報を示します。 さらに、Windows へのアプリの展開時に注意する必要がある主な詳細情報を示します。 
 
-基幹業務 (LOB) アプリとビジネス向け Microsoft Store アプリは、Windows 10 デバイスでサポートされているアプリの種類です。 Windows アプリのファイル拡張子には、**.msi**、**.appx**、**.appxbundle** があります。  
+基幹業務 (LOB) アプリとビジネス向け Microsoft Store アプリは、Windows 10 デバイスでサポートされているアプリの種類です。 Windows アプリのファイル拡張子には、 **.msi**、 **.appx**、 **.appxbundle** があります。  
 
 > [!Note]
 > 最新のアプリを展開するのに必要な最小の Windows 10 の更新プログラムは、次のとおりです。

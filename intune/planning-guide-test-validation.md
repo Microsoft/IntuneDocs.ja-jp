@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2820007f167b2f79b8dd98ca31d7e50968ac1969
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7aaeb94aad7e31c3346b088239024c14f9e190da
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046047"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549348"
 ---
 # <a name="intune-testing-and-validation"></a>Intune のテストと検証
 
@@ -29,21 +29,21 @@ ms.locfileid: "66046047"
 
 サポート ドキュメントが作成され、IT サポートやヘルプデスクのスタッフが快適に製品をサポートできるように、IT サポート/ヘルプデスクのスタッフをテスト段階に組み入れることが推奨されます。 部品やシナリオがユース ケースに基づいて機能しない場合、必要な変更を記録し、変更が行われた理由を追加してください。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>始める前に
 
 次の内容を文書化することをお勧めします。
 
--   **テスト条件:** 測定水準とするベンチマークを特定します。
+- **テスト条件:** 測定水準とするベンチマークを特定します。
 
--   **設計部品:** 1 つ以上のテスト条件に存在する必要があります。
+- **設計部品:** 1 つ以上のテスト条件に存在する必要があります。
 
 ある設計部品が、要件またはシナリオに合わせて調整される 1 つ以上のテスト条件に存在しない場合、その設計部品が必要かどうかを検討してください。 また、次の項目を用意する必要があります。
 
--   **アカウント:** あらゆるユース ケース シナリオをテストするために EMS や Office 365 にライセンス供与されているテスト アカウント。
+- **アカウント:** あらゆるユース ケース シナリオをテストするために EMS や Office 365 にライセンス供与されているテスト アカウント。
 
--   **デバイス:** ワイプまたは工場出荷時の既定値へのリセットが可能なテスト デバイス。
+- **デバイス:** ワイプまたは工場出荷時の既定値へのリセットが可能なテスト デバイス。
 
--   **統合コンポーネント:** 必要に応じてすべての統合コンポーネント (証明書コネクタと Intune Exchange オンプレミス コネクタ) をインストールして構成する必要があります。
+- **統合コンポーネント:** 必要に応じてすべての統合コンポーネント (証明書コネクタと Intune Exchange オンプレミス コネクタ) をインストールして構成する必要があります。
 
 予想外の問題に対処するために、設計を変更しなければならないことがあります。 また、設計変更はすべて、その理由と共に完全に記録してください。 たとえば、次のような変更が行われます。
 
@@ -51,9 +51,9 @@ ms.locfileid: "66046047"
 
 テストや検証のプロセスで、技術的な指南や特別なトラブルシューティングが必要な問題に遭遇することがあります。 Microsoft サポート チャンネルのサポートを利用することが推奨されます。
 
--   [Intune サポートの利用方法の詳細](get-support.md)
+- [Intune サポートの利用方法の詳細](get-support.md)
 
--   [Microsoft Intune のサポートの電話番号](get-support.md)
+- [Microsoft Intune のサポートの電話番号](get-support.md)
 
 ## <a name="functional-validation-testing"></a>機能検証テスト
 

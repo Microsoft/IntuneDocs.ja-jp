@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8134b9db0e478efa69391edeb570b39c91a41c9
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 473de0ae24cb3ee2a9f7fbd84ef78e6c25ef6ce6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511777"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547289"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Better Mobile Threat Defense コネクタと Intune
 
@@ -41,11 +41,11 @@ Intune デバイス コンプライアンス ポリシーには、Better Mobile 
 
 マルウェアなどの悪意のあるアプリがデバイスで検出されると、脅威が解決されるまで、デバイスで次の行為が禁止されます。
 
--   会社の電子メールに接続する
+- 会社の電子メールに接続する
 
--   OneDrive for Work アプリを使用して会社のファイルを同期する
+- OneDrive for Work アプリを使用して会社のファイルを同期する
 
--   会社のアプリにアクセスする
+- 会社のアプリにアクセスする
 
 **悪意のあるアプリが検出されたときにブロックする:**
 
@@ -81,19 +81,19 @@ Intune デバイス コンプライアンス ポリシーには、Better Mobile 
 
 ## <a name="supported-platforms"></a>サポートされているプラットフォーム
 
--   **Android 4.1 以降**
+- **Android 4.1 以降**
 
--   **iOS 8.0 以降**
+- **iOS 8.0 以降**
 
 ## <a name="prerequisites"></a>必要条件
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune サブスクリプション
+- Microsoft Intune サブスクリプション
 
--   Better Mobile Threat Defense サブスクリプション
+- Better Mobile Threat Defense サブスクリプション
 
-    -   詳細については、[Better Mobile の Web サイト](https://www.better.mobi/)を参照してください。
+    - 詳細については、[Better Mobile の Web サイト](https://www.better.mobi/)を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

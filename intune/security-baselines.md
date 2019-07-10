@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93e470175829008b72b5b8991188f3c92e38a567
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
+ms.openlocfilehash: 3e4e1040913daef5418f0b4fa1e56f6ef827dd67
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67416842"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713273"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune でのセキュリティ ベースラインを使用した Windows 10 デバイスの構成
 
@@ -155,7 +155,7 @@ Intune マネージド デバイスに関するセキュリティのベースラ
 3. **[バージョンの変更]** ウィンドウで、 **[Select a security baseline to update to]\(更新先のセキュリティ ベースラインを選択する\)** ドロップダウンを使い、使用するバージョンのインスタンスを選択します。  
 
    ![バージョンの選択](./media/security-baselines/select-instance.png)  
- 
+   
 4. **[Review update]\(更新のレビュー\)** を選択し、プロファイルの現在のインスタンスのバージョンと選択した新しいバージョン間の違いを表示する CSV ファイルをダウンロードします。 このファイルを確認して、どの設定が追加され、削除されるか、また更新されたプロファイルでのこれらの設定の規定値は何かを把握します。  
 
    準備ができたら、次の手順に進みます。  

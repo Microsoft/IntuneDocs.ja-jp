@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57ec922d76ca08639139a7d130fb14c5e8bfa413
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7e69236f7babc974bca0db32245de2323627e494
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046222"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548348"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>ロールアウト コミュニケーション計画の作成
 
 適切な変更管理が行えるかどうかは、今後の変更に関する明確で有益な情報伝達にかかっています。 Intune の展開を円滑に進めるには、ロールアウト コミュニケーション計画に次の 4 つの領域を含める必要があります。
 
--   伝達する情報
+- 伝達する情報
 
--   伝達に使用する配信方法
+- 伝達に使用する配信方法
 
--   情報を受け取るユーザー
+- 情報を受け取るユーザー
 
--   情報伝達のタイムライン
+- 情報伝達のタイムライン
 
 それぞれの領域について詳しく説明します。
 
@@ -56,13 +56,13 @@ ms.locfileid: "66046222"
 
 Intune ロールアウトに関する情報を対象となる組織グループとユーザーに伝達するには、いくつかの配信方法があります。 次の一覧では、情報の配信方法の例とその方法を使用する段階を示しています。
 
--   組織全体を対象にした対面の会議または Microsoft Teams 会議 (キックオフ段階)
+- 組織全体を対象にした対面の会議または Microsoft Teams 会議 (キックオフ段階)
 
--   電子メール (登録前段階、登録段階、登録後段階)
+- 電子メール (登録前段階、登録段階、登録後段階)
 
--   組織の Web サイト (すべての段階)
+- 組織の Web サイト (すべての段階)
 
--   Yammer、ポスター、チラシ (キックオフ段階、登録前段階)
+- Yammer、ポスター、チラシ (キックオフ段階、登録前段階)
 
 ## <a name="communications-timeline"></a>情報伝達のタイムライン
 
@@ -85,6 +85,6 @@ Intune ロールアウトに関する情報を対象となる組織グループ�
 
 [上記の表のテンプレートをダウンロード](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) してコミュニケーション計画を作成することができます。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 次のセクションは、[サポート計画](planning-guide-support-plan.md)を立てる場合のガイダンスです。
