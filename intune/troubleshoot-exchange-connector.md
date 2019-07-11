@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd6d24b5a897c5a6bcd075da111fa579d8d74154
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5bdb727b542cd66e0b8fcf4a0822eaf0107600ad
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044561"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735740"
 ---
 # <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>Intune のオンプレミス Exchange Connector のトラブルシューティング
 
@@ -32,17 +32,17 @@ ms.locfileid: "66044561"
 
 [Intune オンプレミス Exchange Connector の設定](exchange-connector-install.md)を調べて、Connector が正しく構成されているかどうかを確認します。 一般的ないくつかの問題を次に示します。 修正を行ったら、問題が解決されているかどうかを確認します。
 
- - [Microsoft Intune Exchange Connector] ダイアログ ボックスで、[必須の Windows PowerShell Exchange コマンドレット](exchange-connector-install.md#exchange-cmdlet-requirements)を実行するための適切なアクセス許可を持つユーザー アカウントが指定されていることを確認します。
+- [Microsoft Intune Exchange Connector] ダイアログ ボックスで、[必須の Windows PowerShell Exchange コマンドレット](exchange-connector-install.md#exchange-cmdlet-requirements)を実行するための適切なアクセス許可を持つユーザー アカウントが指定されていることを確認します。
 - 通知を有効にし、通知アカウントを指定します。
- - Exchange Connector を構成するときに、Exchange Connector をホストするサーバーに近接するクライアント アクセス サーバー (CAS) を指定します。 特に Exchange Online Dedicated を使用している場合は、CAS と Exchange Connector 間の通信の遅延によってデバイスの検出が遅くなる可能性があります。
- - 新しく登録されたデバイスを持つユーザーは、Exchange Connector が Exchange CAS と同期するまで、アクセスに遅延が生じる可能性があります。 完全同期は 1 日に 1 回実行され、差分 (クイック) 同期は 1 日に数回実行されます。  遅延を最小限に抑えるために、[クイック同期または完全同期を手動で適用](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync)することができます。
+- Exchange Connector を構成するときに、Exchange Connector をホストするサーバーに近接するクライアント アクセス サーバー (CAS) を指定します。 特に Exchange Online Dedicated を使用している場合は、CAS と Exchange Connector 間の通信の遅延によってデバイスの検出が遅くなる可能性があります。
+- 新しく登録されたデバイスを持つユーザーは、Exchange Connector が Exchange CAS と同期するまで、アクセスに遅延が生じる可能性があります。 完全同期は 1 日に 1 回実行され、差分 (クイック) 同期は 1 日に数回実行されます。  遅延を最小限に抑えるために、[クイック同期または完全同期を手動で適用](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync)することができます。
  
 ## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>Exchange ActiveSync device not discovered from Exchange (Exchange ActiveSync デバイスが Exchange から検出されない)
 [Exchange Connector のアクティビティを監視](exchange-connector-install.md#on-premises-exchange-connector-high-availability-support)することで、Exchange Connector が Exchange Server と同期しているかどうかを調べます。 デバイスの参加以降、完全同期またはクイック同期が正常に完了した場合は、以下に一覧した他に考えられる問題が発生していないか確認できます。 同期が行われていない場合は、同期ログを収集し、サポート依頼に添付してください。
 
- - ユーザーが Intune ライセンスを持っていることを確認します。そうでない場合、Exchange Connector は、それらのユーザーのデバイスを検出しません。
- - ユーザーのプライマリ SMTP アドレスが Azure Active Directory (Azure AD) の UPN と異なる場合、Exchange Connector は、そのユーザーのデバイスを検出しません。 この問題を解決するのには、プライマリ SMTP アドレスを修正します。
- - 環境内に Exchange 2010 メールボックス サーバーと Exchange 2013 メールボックス サーバーが両方ともある場合は、Exchange Connector を Exchange 2013 CAS にポイントすることをお勧めします。 それ以外の場合、Exchange Connector は、Exchange 2010 CAS と通信するように設定されていると、Exchange 2013 ユーザーのデバイスを検出しません。 
+- ユーザーが Intune ライセンスを持っていることを確認します。そうでない場合、Exchange Connector は、それらのユーザーのデバイスを検出しません。
+- ユーザーのプライマリ SMTP アドレスが Azure Active Directory (Azure AD) の UPN と異なる場合、Exchange Connector は、そのユーザーのデバイスを検出しません。 この問題を解決するのには、プライマリ SMTP アドレスを修正します。
+- 環境内に Exchange 2010 メールボックス サーバーと Exchange 2013 メールボックス サーバーが両方ともある場合は、Exchange Connector を Exchange 2013 CAS にポイントすることをお勧めします。 それ以外の場合、Exchange Connector は、Exchange 2010 CAS と通信するように設定されていると、Exchange 2013 ユーザーのデバイスを検出しません。 
 - Exchange Online Dedicated 環境の場合、初期セットアップ中に Exchange Connector を専用環境内の (Exchange 2010 CAS ではなく) Exchange 2013 CAS にポイントする必要があります。これは、Connector が、PowerShell コマンドレットを実行するときに、この CAS のみと通信するからです。
 
 

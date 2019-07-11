@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4530c1ec573560924b54aa8fd21d39a86cefe97e
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: 2cad30b0cf446d6591cba2997261f049ad6ae983
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558424"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735637"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android 用 Microsoft Intune アプリ SDK 開発者ガイド
 
@@ -105,6 +105,7 @@ buildscript {
 ```
 
 次に、ご自分の APK プロジェクトに対する `build.gradle` ファイルで、次のようにプラグインを適用するだけです。
+
 ```groovy
 apply plugin: 'com.microsoft.intune.mam'
 ```
@@ -141,8 +142,8 @@ intunemam {
     excludeClasses = ['com.contoso.SplashActivity']
     excludeVariants=['savory']
 }
-
 ```
+
 これにより、次の効果があります。
 * `:product:FooLib` は `excludeProjects` に含まれるため、上書きされません。
 * `excludeClasses` に含まれるためにスキップされる `com.contoso.SplashActivity` を除き、`:product:foo-project` は上書きされます。
@@ -1072,9 +1073,10 @@ notificationRegistry.registerReceiver(receiver, MAMNotificationType.COMPLIANCE_S
 
 > [!NOTE]
 > アプリの `MAMServiceAuthenticationCallback.acquireToken()` メソッドで、ブローカーからの更新を強制するために、新しい `forceRefresh` フラグの *true* を `acquireTokenSilentSync()` に渡す必要があります。  これは、MAM サービス トークンに影響する可能性のある、ADAL でのトークンのキャッシュ問題を回避するためです。 一般的に、これは次のような状態です。
-```java
-AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ true);
-```
+>
+> ```java
+> AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ true);
+> ```
 
 > [!NOTE]
 > 修復試行中にカスタム ブロック UX を表示する場合は、showUX パラメーターの *false* を `remediateCompliance()` に渡す必要があります。 `remediateCompliance()` を呼び出す前に、まず、UX を表示し、通知リスナーを登録したことを確認する必要があります。  これにより、`remediateCompliance()` がすぐに失敗した場合に、通知が欠落する可能性のある競合状態が回避されます。  たとえば、アクティビティ サブクラスの `onCreate()` または `onMAMCreate()` メソッドは、通知リスナーを登録してから、`remediateCompliance()` を呼び出すのに理想的な場所です。  `remediateCompliance()` のパラメーターを、インテント エクストラとして UX に渡すことができます。  コンプライアンス状態の通知が受信されたら、結果を表示するか、単にアクティビティを終了することができます。
@@ -1415,6 +1417,7 @@ UI スレッドに対する操作は、バック グラウンド タスクを別
   Executor wrappedExecutor = MAMIdentityExecutors.wrapExecutor(originalExecutor, activity);
   ExecutorService wrappedService = MAMIdentityExecutors.wrapExecutorService(originalExecutorService, activity);
 ```
+
 ### <a name="file-protection"></a>ファイル保護
 
 すべてのファイルに、スレッドとプロセス ID に基づいて作成時に関連付けられた ID があります。 この ID は、ファイルの暗号化と選択的ワイプの両方に使用されます。 ID が管理され、暗号化を必要とするポリシーがあるファイルのみが暗号化されます。 SDK の既定の選択機能ワイプでは、ワイプが要求されている管理対象の ID に関連付けられたファイルのみがワイプされます。 アプリでは `MAMFileProtectionManager` クラスを使用して、ファイルの ID の照会または変更を行うことができます。
@@ -1643,6 +1646,7 @@ public final class MAMDataProtectionManager {
 > MAM-WE で配信される構成セットアップは、`offline` で配信することはできません。  この場合、空の ID の `MAMUserNotification` で配信されるのは、Android エンタープライズの AppRestrictions のみです。
 
 ### <a name="example"></a>例
+
 ```java
 MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
 String identity = "user@contoso.com"
@@ -1678,6 +1682,7 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
 
 ### <a name="how-to-customize"></a>カスタマイズする方法
 スタイルの変更を Intune MAM のビューに適用するには、まず、スタイルのオーバーライドの XML ファイルを作成する必要があります。 このファイルは、アプリの "res/xml" ディレクトリに配置する必要があり、自由に名前を付けることができます。 このファイルが従う必要がある形式の例を以下に示します。
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <styleOverrides>
@@ -1722,16 +1727,20 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
 1. アプリで ADAL を統合するか、自分で SSO を有効にする必要がある場合は、「[ADAL の一般的な構成](#common-adal-configurations)」の 2. に従って、[ADAL を構成](#configure-azure-active-directory-authentication-library-adal)します。 それ以外の場合は、この手順をスキップできます。
    
 2. マニフェストに次の値を入力して、既定の登録を有効にします。
+
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
    ```
+
    > [!NOTE] 
    > これは、アプリ内での唯一の MAM-WE 統合である必要があります。 MAMEnrollmentManager API を呼び出す他の試行がある場合、競合が発生します。
 
 3. マニフェストに次の値を入力して、必要な MAM ポリシーを有効にします。
+
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
    ```
+
    > [!NOTE] 
    > その結果、ユーザーの使用前に、デバイスにポータル サイトをダウンロードし、既定の登録フローを完了することを強制します。
 
@@ -1748,9 +1757,11 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
 ### <a name="policy-enforcement-limitations"></a>ポリシーの適用の制限事項
 
 * **コンテンツ リゾルバーの使用**: "転送ポリシーまたは受信" Intune ポリシーにより、別のアプリのコンテンツ プロバイダーにアクセスするためのコンテンツ リゾルバーの使用がブロックされるか、部分的にブロックされる場合があります。 これにより、`ContentResolver` メソッドによって null が返されるか、失敗値がスローされます (例: ブロックされている場合、`openOutputStream` によって `FileNotFoundException` がスローされる)。 アプリでは、次の呼び出しを行って、コンテンツ リゾルバーを介したデータの書き込みのエラーが、ポリシーによって発生した (またはポリシーによって発生する) かどうかを確認できます。
+
     ```java
     MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
     ```
+
     または、関連するアクティビティがない場合
 
     ```java

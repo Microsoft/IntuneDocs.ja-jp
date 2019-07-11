@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e68e404a91927192f1006626d1b865acd5eb589
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: b23323766e91e31c48aec6a51dfae971c3a333e8
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66197042"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735745"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Microsoft Intune アプリで会社のデバイスを登録する
 
@@ -46,9 +46,9 @@ ms.locfileid: "66197042"
 2. **[ようこそ]** 画面で、言語を選択します。   QR コードまたは NFC で登録するように指示されている場合は、方法に一致する以下の手順に従います。  
      * NFC: お使いの NFC 対応デバイスをプログラマー デバイスに対してタップし、組織のネットワークに接続します。 画面の指示に従います。 Chrome のサービス利用規約の画面が表示されたら、ステップ 5 に進みます。  
 
-      * QR コード: 「[QR コードでの登録](#qr-code-enrollment)」の手順を完了します。  
+     * QR コード: 「[QR コードでの登録](#qr-code-enrollment)」の手順を完了します。  
 
-      別の方法を使用するように指示されている場合は、ステップ 3 に進みます。    
+     別の方法を使用するように指示されている場合は、ステップ 3 に進みます。    
 
 1. Wi-Fi に接続し、 **[次へ]** をタップします。 登録方法と一致する手順に従います。 
 
