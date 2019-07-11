@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ec0ab28f2b32cf3c60d6d674cfac5a5b21d094d
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: 961470b9f5671dc39864dac45fdcb49862de4da9
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558405"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735562"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS 用 Microsoft Intune App SDK 開発者ガイド
 
@@ -40,28 +40,28 @@ iOS 用 Microsoft Intune App SDK を使用すると、ネイティブ iOS アプ
 
 * [GitHub](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) で iOS 用 Intune アプリ SDK のファイルをダウンロードします。
 
-## <a name="whats-in-the-sdk-repository"></a>SDK リポジトリには
+## <a name="whats-in-the-sdk-repository"></a>SDK リポジトリの内容
 
-次のファイルを Swift コードが含まれていないか、10.2 より前の Xcode のバージョンでコンパイルされたアプリ/拡張機能に関連します。
+次のファイルは、Swift コードを含まないアプリまたは拡張機能に関連しています。また、10.2 より前のバージョンの Xcode でコンパイルされています。
 
-* **IntuneMAM.framework**: Intune アプリ SDK フレームワーク。 このフレームワークは、Intune のクライアント アプリケーションの管理を有効にする、アプリ拡張/にリンクすることをお勧めします。 ただし、静的ライブラリのパフォーマンスの利点を好む開発者も可能性があります。 以下をご覧ください。
+* **IntuneMAM.framework**: Intune アプリ SDK フレームワーク。 Intune クライアントアプリケーションの管理を有効にするには、このフレームワークをアプリまたは拡張機能にリンクすることをお勧めします。 ただし、開発者によっては、スタティックライブラリのパフォーマンス上の利点が優先される場合があります。 以下をご覧ください。
 
-* **libIntuneMAM.a**: Intune アプリ SDK の静的ライブラリ。 開発者は、フレームワークではなくスタティック ライブラリをリンクすることができます。 スタティック ライブラリがビルド時にバイナリ アプリ/拡張に直接埋め込まれているために、スタティック ライブラリを使用するいくつかの起動時のパフォーマンスの利点があります。 ただし、アプリに統合することより複雑なプロセスです。 場合は、アプリに含まれるすべての拡張機能、スタティック ライブラリをアプリにリンクして、拡張機能と、アプリ バンドル サイズを大きく、スタティック ライブラリとしてに埋め込まれる各アプリ/拡張機能バイナリ。 フレームワークを使用して、アプリと拡張機能はアプリのサイズを小さくしてその結果、同じ Intune SDK バイナリを共有できます。
+* **libIntuneMAM.a**: Intune アプリ SDK の静的ライブラリ。 開発者は、フレームワークではなく、スタティックライブラリをリンクすることを選択できます。 スタティックライブラリはビルド時にアプリ/拡張バイナリに直接埋め込まれるため、スタティックライブラリを使用すると、起動時のパフォーマンス上の利点がいくつかあります。 ただし、これをアプリに統合するプロセスはより複雑です。 アプリに拡張機能が含まれている場合、スタティックライブラリをアプリと拡張機能にリンクすると、アプリと拡張機能の各バイナリに埋め込まれるため、アプリバンドルのサイズが大きくなります。 フレームワークを使用する場合、アプリと拡張機能は同じ Intune SDK バイナリを共有でき、その結果、アプリのサイズが小さくなります。
 
-* **IntuneMAMResources.bundle**: SDK が依存するリソースが含まれているリソース バンドル。 リソース バンドルは、スタティック ライブラリ (libIntuneMAM.a) を統合することがアプリにのみ必要です。
+* **IntuneMAMResources.bundle**: SDK が依存するリソースが含まれているリソース バンドル。 リソースバンドルは、スタティックライブラリ (libIntuneMAM. a) を統合するアプリに対してのみ必要です。
 
-次のファイルは、Swift コードを含むことが Xcode 10.2 + でコンパイルされたアプリ/拡張機能に関連します。
+次のファイルは、Swift コードを含むアプリ/拡張機能に関連し、Xcode 10.2 + を使用してコンパイルされます。
 
-* **IntuneMAMSwift.framework**: The Intune アプリ SDK の Swift フレームワーク。 このフレームワークには、Api は、アプリを呼び出すためのすべてのヘッダーが含まれています。 アプリ/拡張機能に Intune のクライアント アプリケーションの管理を有効にするには、このフレームワークをリンクします。
+* **Intunemamswift。フレームワーク**: INTUNE App SDK Swift フレームワーク。 このフレームワークには、アプリが呼び出す Api のすべてのヘッダーが含まれています。 Intune クライアントアプリケーション管理を有効にするには、このフレームワークをアプリまたは拡張機能にリンクします。
 
-* **IntuneMAMSwiftStub.framework**: The Intune App SDK Swift スタブ フレームワーク。 これは、アプリ/拡張機能にリンクする必要があります IntuneMAMSwift.framework の依存関係が必要です。
+* **IntuneMAMSwiftStub**: INTUNE App SDK Swift スタブフレームワーク。 これは IntuneMAMSwift の必須の依存関係です。アプリ/拡張機能をリンクする必要があります。
 
 
-次のファイルがすべてのアプリ/拡張機能に関連します。
+次のファイルは、すべてのアプリ/docs.ms に関連しています。
 
-* **IntuneMAMConfigurator**: Intune 管理の必要な最低限の変更をアプリまたは拡張機能の Info.plist の構成に使用するツール。 アプリまたは拡張機能の機能によっては、Info.plist に追加の手動変更を加える必要があります。
+* **Intunemamconfigurator**: Intune の管理に必要な最小限の変更で、アプリまたは拡張機能の情報を構成するために使用されるツール。 アプリまたは拡張機能の機能によっては、情報を手動で変更しなければならない場合があります。
 
-* **ヘッダー**: パブリックな Intune アプリ SDK の API を表示します。 これらのヘッダーは、ので、フレームワークのいずれかを利用する開発者は、そのプロジェクトにヘッダーを手動で追加する必要はありません、IntuneMAM/IntuneMAMSwift フレームワーク内に含まれています。 リンク、スタティック ライブラリ (libIntuneMAM.a) を選択する開発者は、そのプロジェクトに手動でこれらのヘッダーを含める必要があります。
+* **ヘッダー**: パブリックな Intune アプリ SDK の API を表示します。 これらのヘッダーは IntuneMAM/IntuneMAMSwift フレームワーク内に含まれているので、いずれかのフレームワークを使用する開発者は、ヘッダーをプロジェクトに手動で追加する必要はありません。 スタティックライブラリ (libIntuneMAM. a) にリンクすることを選択した開発者は、これらのヘッダーをプロジェクトに手動で含める必要があります。
 
 次のヘッダー ファイルには、Intune App SDK から開発者に提供されている API、データ型、プロトコルが含まれています。
 
@@ -70,7 +70,7 @@ iOS 用 Microsoft Intune App SDK を使用すると、ネイティブ iOS アプ
     * IntuneMAMDataProtectionInfo.h
     * IntuneMAMDataProtectionManager.h
     * IntuneMAMDefs.h
-    * IntuneMAMDiagnosticConsole.h
+    * IntuneMAMDiagnosticConsole
     * IntuneMAMEnrollmentDelegate.h
     * IntuneMAMEnrollmentManager.h
     * IntuneMAMEnrollmentStatus.h
@@ -94,14 +94,14 @@ iOS 用 Intune アプリ SDK の目的は、最小限のコード変更で iOS �
 
 Intune App SDK を有効にするには、次の手順を実行します。
 
-1. **オプション 1 - (推奨) Framework**: Xcode 10.2 + を使用しているアプリ/拡張機能には、Swift コードが含まれている場合は、リンク`IntuneMAMSwift.framework`と`IntuneMAMSwiftStub.framework`ターゲット: ドラッグ`IntuneMAMSwift.framework`と`IntuneMAMSwiftStub.framework`を**埋め込みバイナリ**プロジェクト ターゲットの一覧。
+1. **オプション 1-フレームワーク (推奨)** : Xcode 10.2 + を使用していて、アプリ/拡張機能に Swift コード`IntuneMAMSwift.framework`が`IntuneMAMSwiftStub.framework`含まれている場合`IntuneMAMSwift.framework`は`IntuneMAMSwiftStub.framework` 、ターゲットにリンクして、**埋め込みバイナリ**の一覧にドラッグします。プロジェクトのターゲット。
 
-    それ以外の場合、リンク`IntuneMAM.framework`ターゲット: ドラッグ`IntuneMAM.framework`を**埋め込みバイナリ**プロジェクト ターゲットの一覧。
+    それ以外の`IntuneMAM.framework`場合は、ターゲットに`IntuneMAM.framework`リンクします。プロジェクトターゲットの**埋め込みバイナリ**の一覧にドラッグします。
 
    > [!NOTE]
    > フレームワークを使用する場合は、アプリ ストアにアプリを送信する前に、ユニバーサル フレームワークからシミュレーター アーキテクチャを手動で除去する必要があります。 詳細については、「[iOS 用 Microsoft Intune App SDK 開発者ガイド](#submit-your-app-to-the-app-store)」を参照してください。
 
-   **オプション 2 - スタティック ライブラリ**: このオプションは Swift コードが含まれていない、または Xcode でビルドされたアプリ/拡張機能の使用のみ < 10.2 します。 `libIntuneMAM.a` ライブラリにリンクします。 `libIntuneMAM.a` ライブラリをプロジェクト ターゲットの **[Linked Frameworks and Libraries]** (リンク先フレームワークおよびライブラリ) ボックスの一覧にドラッグします。
+   **オプション 2-スタティックライブラリ**: このオプションは、Swift コードを含まないアプリまたは拡張機能、または Xcode < 10.2 でビルドされたアプリまたは拡張機能でのみ使用できます。 `libIntuneMAM.a` ライブラリにリンクします。 `libIntuneMAM.a` ライブラリをプロジェクト ターゲットの **[Linked Frameworks and Libraries]** (リンク先フレームワークおよびライブラリ) ボックスの一覧にドラッグします。
 
     ![Intune App SDK iOS: リンク先フレームワークおよびライブラリ](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
@@ -116,18 +116,18 @@ Intune App SDK を有効にするには、次の手順を実行します。
 
      ![Intune App SDK iOS: バンドル リソースのコピー](./media/intune-app-sdk-ios-copy-bundle-resources.png)
      
-2. Swift からの Intune Api を呼び出す必要がある場合、アプリ/拡張機能を OBJECTIVE-C ブリッジ ヘッダーを使用して必要な Intune SDK のヘッダーをインポートする必要があります。 アプリ/拡張機能が既にを OBJECTIVE-C ブリッジ ヘッダーを含めない場合を使用していずれかを指定、`SWIFT_OBJC_BRIDGING_HEADER`ビルド構成設定または Xcode UI の**OBJECTIVE-C Bridging Header**フィールド。 ブリッジのヘッダーは、このようなものになります。
+2. Swift から任意の Intune Api を呼び出す必要がある場合は、アプリ/拡張機能が、必要な Intune SDK ヘッダーを目的の C ブリッジングヘッダーを介してインポートする必要があります。 アプリ/拡張機能に目的の c ブリッジングヘッダーがまだ含まれていない場合は、 `SWIFT_OBJC_BRIDGING_HEADER`ビルド構成設定または Xcode UI の **[目標-c ブリッジングヘッダー]** フィールドで指定できます。 ブリッジングヘッダーは次のようになります。
 
    ```objc
       #import <IntuneMAMSwift/IntuneMAM.h>
    ```
    
-   これにより、Intune SDK のすべての Api 使用可能なすべてのソースの Swift ファイル全体でアプリ/拡張機能。 
+   これにより、すべての Intune SDK Api が、アプリ/拡張機能のすべての Swift ソースファイルで使用できるようになります。 
    
     > [!NOTE]
-    > * ブリッジ特定 Intune SDK のヘッダーだけ包括的 IntuneMAM.h ではなく、Swift にすることができます。
-    > * 統合したら、フレームワークまたは静的ライブラリに応じて、ヘッダー ファイルへのパスが異なる場合があります。
-    > * Intune SDK の Api で利用可能に Swift モジュールのインポート ステートメントを使用して (例: IntuneMAMSwift をインポート) は現在サポートされていません。 推奨される方法を OBJECTIVE-C ブリッジ ヘッダーを使用します。
+    > * 特定の Intune SDK ヘッダーのみを、すべてを包含する IntuneMAM. h ではなく、Swift にのみブリッジすることを選択できます。
+    > * 統合したフレームワーク/スタティックライブラリによっては、ヘッダーファイルへのパスが異なる場合があります。
+    > * モジュールの import ステートメント (例: import IntuneMAMSwift) を使用して、Intune SDK Api を Swift で利用できるようにすることは、現在サポートされていません。 目標 C ブリッジングヘッダーを使用することをお勧めします。
     
 3. 次の iOS フレームワークをプロジェクトに追加します。  
     * MessageUI.framework  
@@ -146,6 +146,7 @@ Intune App SDK を有効にするには、次の手順を実行します。
 
    > [!NOTE]
    > プロビジョニング プロファイルで新しいキーチェーン共有値がサポートされている必要があります。 キーチェーン アクセス グループは、ワイルドカード文字をサポートする必要があります。 これを確認するには、テキスト エディターで .mobileprovision ファイルを開いて **keychain-access-groups** を検索し、ワイルドカード文字があることを確認します。 次に例を示します。
+   >
    >  ```xml
    >  <key>keychain-access-groups</key>
    >  <array>
@@ -322,6 +323,7 @@ ADAL を使用してユーザーをサインインしないアプリでも、API
 この API が呼び出された後、アプリは通常どおりに機能し続けることができます。 登録が成功した場合、SDK はアプリの再起動が必要であることをユーザーに通知します。
 
 例:
+
 ```objc
 [[IntuneMAMEnrollmentManager instance] loginAndEnrollAccount:@”user@foo.com”];
 ```
@@ -369,6 +371,7 @@ MAMPolicyRequired| ブール型| アプリに Intune アプリ保護ポリシー
 アプリ自体がユーザーの企業データを削除する場合は、`doWipe` フラグを false に設定できます。 設定しない場合、アプリで SDK による選択的ワイプの開始が可能になります。 結果的に、アプリの選択的ワイプのデリゲートが呼び出されます。
 
 例:
+
 ```objc
 [[IntuneMAMEnrollmentManager instance] deRegisterAndUnenrollAccount:@”user@foo.com” withWipe:YES];
 ```
@@ -737,9 +740,9 @@ SDK は、次の操作をバックグラウンドで定期的に実行します�
 
 はい、ご利用いただけます。 最近、オープンソースのサンプル アプリ [Wagr for iOS](https://github.com/Microsoft/Wagr-Sample-Intune-iOS-App) を改良したばかりです。 Wagr は Intune App SDK を使用してアプリ保護ポリシーで使用できるようになりました。
 
-### <a name="how-can-i-troubleshoot-my-app"></a>アプリをトラブルシューティングする方法は?
+### <a name="how-can-i-troubleshoot-my-app"></a>アプリをトラブルシューティングするにはどうすればよいですか。
 
-IOS 9.0.3+ 用 Intune SDK では、ポリシーのテストとエラーのログ記録用のモバイル アプリ内の診断コンソールに追加する機能をサポートします。 `IntuneMAMDiagnosticConsole.h` 定義、`IntuneMAMDiagnosticConsole`クラス インターフェイスは、開発者が Intune 診断コンソールの表示に使用できます。 エンドユーザーや開発者がテストを収集し、生じる可能性のある問題の診断に役立つ Intune ログを共有できます。 この API は、インテグレーターの省略可能です。
+Intune SDK for iOS 9.0.3 + は、ポリシーをテストし、エラーをログに記録するために、モバイルアプリ内に診断コンソールを追加する機能をサポートしています。 `IntuneMAMDiagnosticConsole.h`開発者`IntuneMAMDiagnosticConsole`が Intune 診断コンソールを表示するために使用できるクラスインターフェイスを定義します。 これにより、エンドユーザーまたはテスト中の開発者は、Intune ログを収集して共有し、発生している問題の診断に役立てることができます。 この API は、インテグレーターでは省略可能です。
 
 ## <a name="submit-your-app-to-the-app-store"></a>App Store にアプリを送信する
 
@@ -756,4 +759,5 @@ Intune App SDK の静的ライブラリおよびフレームワークのビル�
     ```bash
     cp ~/Desktop/IntuneMAM.device_only ~/Desktop/IntuneMAM.framework/IntuneMAM
     ```
+
     最初のコマンドは、フレームワークの DYLIB ファイルからシミュレーター アーキテクチャを削除します。 2 番目のコマンドは、デバイス専用の DYLIB ファイルをフレームワークのディレクトリにコピーします。
