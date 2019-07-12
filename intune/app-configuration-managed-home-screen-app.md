@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50ac3ff27c22bf63b73f2ae10e6909112564180f
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: c3955710dfbe57023533f737f0ae69df80f863e6
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648743"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735702"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Android Enterprise 用 Microsoft Managed Home Screen アプリを構成する
 
@@ -382,8 +382,8 @@ JSON データを入力して、Managed Home Screen で使用可能なすべて�
         }
     ]
 }
-
 ```
+
 ## <a name="next-steps"></a>次の手順
 
 - Android エンタープライズ専用デバイスの詳細については、「[Android エンタープライズ専用デバイスの Intune 登録を設定する](android-kiosk-enroll.md)」を参照してください。

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c304cafa03d9a88831048a271fa4d74b17a944f
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 03b3b38819ea6bd0a34eff5b7eb8decfc2b9eb49
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528756"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548087"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune でのデバイス登録に関するトラブルシューティング
 
@@ -84,47 +84,47 @@ ms.locfileid: "67528756"
 
 **解決方法:**
 
-1.  デバイスから Intune ポータル サイト アプリを削除します。
+1. デバイスから Intune ポータル サイト アプリを削除します。
 
-2.  デバイスでブラウザーを開き、[https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) にアクセスして、ユーザー ログインを試みます。
+2. デバイスでブラウザーを開き、[https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) にアクセスして、ユーザー ログインを試みます。
 
-3.  ユーザーはサインインに失敗した場合、別のネットワークを試してみる必要があります。
+3. ユーザーはサインインに失敗した場合、別のネットワークを試してみる必要があります。
 
-4.  それでも失敗する場合は、ユーザーの資格情報が Azure Active Directory と正常に同期していることを確認します。
+4. それでも失敗する場合は、ユーザーの資格情報が Azure Active Directory と正常に同期していることを確認します。
 
-5.  iOS デバイスでは、ユーザーがログインに成功すると、Intune ポータル サイト アプリをインストールして登録するように求められます。 Android デバイスでは、Intune ポータル サイト アプリを手動でインストールする必要があります。インストール後に、登録を再試行できます。
+5. iOS デバイスでは、ユーザーがログインに成功すると、Intune ポータル サイト アプリをインストールして登録するように求められます。 Android デバイスでは、Intune ポータル サイト アプリを手動でインストールする必要があります。インストール後に、登録を再試行できます。
 
 ### <a name="mdm-authority-not-defined"></a>MDM 機関が定義されていません
 **問題:** ユーザーに **"MDM 機関が定義されていません"** というエラーが表示されます。
 
 **解決方法:**
 
-1.  MDM 機関が[適切に設定](mdm-authority-set.md)されていることを確認します。
+1. MDM 機関が[適切に設定](mdm-authority-set.md)されていることを確認します。
     
-2.  ユーザーの資格情報が Azure Active Directory と正常に同期していることを確認します。 ユーザーの UPN と、Microsoft 365 管理センターの Active Directory 情報が一致していることを確認できます。
+2. ユーザーの資格情報が Azure Active Directory と正常に同期していることを確認します。 ユーザーの UPN と、Microsoft 365 管理センターの Active Directory 情報が一致していることを確認できます。
     UPN が Active Directory 情報と一致しない場合:
 
-    1.  ローカル サーバーで DirSync を無効にします。
+    1. ローカル サーバーで DirSync を無効にします。
 
-    2.  **Intune アカウント ポータル** のユーザー一覧から、一致しないユーザーを削除します。
+    2. **Intune アカウント ポータル** のユーザー一覧から、一致しないユーザーを削除します。
 
-    3.  Azure サービスで不適切なデータが削除されるまで、約 1 時間待ちます。
+    3. Azure サービスで不適切なデータが削除されるまで、約 1 時間待ちます。
 
-    4.  再び DirSync を有効にして、ユーザーが適切に同期していることを確認します。
+    4. 再び DirSync を有効にして、ユーザーが適切に同期していることを確認します。
 
-3.  System Center Configuration Manager と Intune を使用しているシナリオでは、ユーザーが有効なクラウド ユーザー ID を持っていることを確認します。
+3. System Center Configuration Manager と Intune を使用しているシナリオでは、ユーザーが有効なクラウド ユーザー ID を持っていることを確認します。
 
-    1.  SQL Management Studio を開きます。
+    1. SQL Management Studio を開きます。
 
-    2.  適切な DB に接続します。
+    2. 適切な DB に接続します。
 
-    3.  データベース フォルダーを開き、**CM_DBName** を探して開きます (この DBName は顧客データベースの名前です)。
+    3. データベース フォルダーを開き、**CM_DBName** を探して開きます (この DBName は顧客データベースの名前です)。
 
-    4.  上部にある **[新しいクエリ]** を選択し、次のクエリを実行します。
+    4. 上部にある **[新しいクエリ]** を選択し、次のクエリを実行します。
 
-        -   すべてのユーザーを表示する場合のクエリ: `select * from [CM_ DBName].[dbo].[User_DISC]`
+        - すべてのユーザーを表示するには: `select * from [CM_ DBName].[dbo].[User_DISC]`
 
-        -   特定のユーザーを表示する場合のクエリ (%testuser1% は、検索対象ユーザーの username@domain.com のプレースホルダーです): `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
+        - 特定のユーザーを表示するには、次のクエリを使います。%testuser1% は、検索対象ユーザーの username@domain.com に対するプレースホルダーです: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
         クエリを入力したら、 **[! 実行]** を選択します。
         結果が返されたら、クラウド ユーザー ID を検索します。  ID が見つからない場合、そのユーザーには Intune を使用するライセンスが付与されていません。
@@ -212,13 +212,13 @@ Android 6.0 へのアップグレードを試みるようユーザーに通知�
 
 **解決方法:**
 
-1.  使用している Intune サービスのバージョンについて、適切なライセンスがユーザーに割り当てられていることを確認します。
+1. 使用している Intune サービスのバージョンについて、適切なライセンスがユーザーに割り当てられていることを確認します。
 
-2.  デバイスが別の MDM プロバイダーに既に登録されていないことを確認します。
+2. デバイスが別の MDM プロバイダーに既に登録されていないことを確認します。
 
 3. デバイスに管理プロファイルが既にインストールされていないことを確認します。
 
-4.  Android 用の Chrome が既定のブラウザーであり、Cookie が有効であることを確認します。
+4. Android 用の Chrome が既定のブラウザーであり、Cookie が有効であることを確認します。
 
 ### <a name="android-certificate-issues"></a>Android 証明書に関する問題
 
@@ -321,15 +321,15 @@ Android デバイスでは、[SSL のサーバー ハロー](https://technet.mic
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>プロファイルのインストールに失敗する場合のトラブルシューティング手順
 
-1.  使用している Intune サービスのバージョンについて、適切なライセンスがユーザーに割り当てられていることを確認します。
+1. 使用している Intune サービスのバージョンについて、適切なライセンスがユーザーに割り当てられていることを確認します。
 
-2.  デバイスが別の MDM プロバイダーに既に登録されていないことを確認します。
+2. デバイスが別の MDM プロバイダーに既に登録されていないことを確認します。
 
 3. デバイスに管理プロファイルが既にインストールされていないことを確認します。
 
-4.  [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) に移動して、プロンプトが表示されたら、プロファイルのインストールを試みます。
+4. [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) に移動して、プロンプトが表示されたら、プロファイルのインストールを試みます。
 
-5.  iOS 用の Safari が既定のブラウザーであり、Cookie が有効であることを確認します。
+5. iOS 用の Safari が既定のブラウザーであり、Cookie が有効であることを確認します。
 
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>Intune と System Center Configuration Manager を使用するときに、登録済みの iOS デバイスがコンソールに表示されない
 **問題:** ユーザーが iOS デバイスを登録しても、そのデバイスが Configuration Manager 管理コンソールに表示されません。 そのデバイスでは、登録済みであることが示されません。 次の原因が考えられます。
@@ -428,17 +428,17 @@ Configuration Manager コンソールで、デバイスを削除したプロセ�
 
 #### <a name="check-how-device-was-removed"></a>デバイスの削除方法を確認する
 
-1.  Configuration Manager 管理コンソールで、 **[監視]** &gt; **[システム ステータス]** &gt; **[ステータス メッセージ クエリ]** の順に選択します。
+1. Configuration Manager 管理コンソールで、 **[監視]** &gt; **[システム ステータス]** &gt; **[ステータス メッセージ クエリ]** の順に選択します。
 
-2.  **[手動で削除されたコレクションのメンバー リソース]** を右クリックし、 **[メッセージを表示]** を選択します。
+2. **[手動で削除されたコレクションのメンバー リソース]** を右クリックし、 **[メッセージを表示]** を選択します。
 
-3.  適切な時刻/日付または過去 12 時間を選択します。
+3. 適切な時刻/日付または過去 12 時間を選択します。
 
-4.  対象のデバイスを検索し、デバイスが削除された方法を確認します。 次の例では、アカウント SCCMInstall が "不明なアプリケーション" でデバイスを削除しています。
+4. 対象のデバイスを検索し、デバイスが削除された方法を確認します。 次の例では、アカウント SCCMInstall が "不明なアプリケーション" でデバイスを削除しています。
 
     ![デバイス削除の診断のスクリーン ショット](./media/troubleshoot-device-enrollment-in-intune/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
 
-5.  ドメインに参加していない、モバイル、または関連するデバイスを自動的に削除するような、スケジュールされたタスク、スクリプト、または他のプロセスが Configuration Manager にないことを確認します。
+5. ドメインに参加していない、モバイル、または関連するデバイスを自動的に削除するような、スケジュールされたタスク、スクリプト、または他のプロセスが Configuration Manager にないことを確認します。
 
 ### <a name="other-ios-enrollment-errors"></a>iOS のその他の登録エラー
 iOS 登録エラーの一覧は、「[Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune)」 (Microsoft Intune での iOS デバイス登録に関する問題のトラブルシューティング) のドキュメントにあります。
