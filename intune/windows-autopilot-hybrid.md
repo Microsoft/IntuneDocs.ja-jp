@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 07/01/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,26 +17,27 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bf75aca7035eb2873f84f76d3c9ee0e00df7fb3
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 81e50c3f79ffe9a3b9bc8068d49ba966c35dbbfd
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494527"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649102"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Intune と Windows Autopilot を使用して Hybrid Azure AD 参加済みデバイスをデプロイする
 Intune と Windows Autopilot を使用して、Hybrid Azure Active Directory (Azure AD) 参加済みデバイスを設定できます。 そのためには、この記事の手順のようにします。
 
 ## <a name="prerequisites"></a>必要条件
 
-[Hybrid Azure AD 参加済みデバイス](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)を正しく構成します。 Get-MsolDevice コマンドレットを使用して、[デバイスの登録を確認]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration)します。
+[Hybrid Azure AD 参加済みデバイス](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)を正しく構成します。 Get-MsolDevice コマンドレットを使用して、[デバイスの登録を確認](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration)します。
 
 登録するデバイスでは次のことも必要です。
 - Windows 10 v1809 以降を実行している。
-- インターネットにアクセスできる。
-- Active Directory にアクセスできる (現時点では VPN 接続は非サポート)。
-- OOBE (Out-of-Box Experience) を使用している。
+- [文書化されている Windows Autopilot のネットワーク要件に従って](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements)インターネットにアクセスできる。
+- Active Directory ドメイン コントローラーにアクセスできる。したがって、組織のネットワークに接続されている必要があります (そこで、AD ドメインと AD ドメイン コントローラーの DNS レコードを解決し、ドメイン コントローラーと通信してユーザーの認証を行うことができます。 現時点では、VPN 接続はサポートされていません)。
 - 参加を試みるドメインのドメイン コントローラーを ping できる。
+- プロキシを使用する場合は、WPAD プロキシ設定オプションを有効にして構成する必要がある。
+- OOBE (Out-of-Box Experience) を使用している。
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Windows 10 の自動登録を設定する
 
@@ -139,7 +140,7 @@ Windows Server では既定で、Internet Explorer セキュリティ強化の�
 
 1. メンバーシップの種類で **[動的デバイス]** を選択した場合は、 **[グループ]** ウィンドウで **[動的なデバイス メンバー]** を選択し、 **[高度なルール]** ボックスで次のいずれかのようにします。
     - すべての Autopilot デバイスを含むグループを作成するには、「`(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`」と入力します。
-    - Intune のグループ タグ フィールドは、Azure AD デバイス上の OrderID 属性にマップされます。 特定のグループ タグ (OrderID) を使って Autopilot デバイスをすべて含むグループを作成する場合は、「 `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`」と入力する必要があります
+    - Intune のグループ タグ フィールドは、Azure AD デバイス上の OrderID 属性にマップされます。 特定のグループ タグ (OrderID) を使って Autopilot デバイスをすべて含むグループを作成する場合は、「`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`」と入力する必要があります
     - 特定の注文書 ID のすべての Autopilot デバイスを含むグループを作成するには、「`(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`」と入力します。
     
 1. **[保存]** を選択します。

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,28 +15,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5124796166f27823b7a13b0f3dd239446f778850
-ms.sourcegitcommit: 337b554f9becc40cdea2f5f47a4a129ac491f64c
+ms.openlocfilehash: 0c5ddb32502aa15f6eaf8f5866772ecd32e970d4
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66713866"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648447"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>SCEP を使用して Intune でパートナーの証明機関を追加する
 
-Microsoft Intune では、サード パーティの証明機関 (CA) を追加できます。 これらの CA は、Simple Certificate Enrollment Protocol (SCEP) を使ってモバイル デバイスに証明書を提供できます。 この機能は、Windows、iOS、Android、macOS デバイスで新しい証明書を発行し、証明書を更新することができます。
+Intune でサード パーティの証明機関 (CA) を使用します。 サード パーティの CA では、Simple Certificate Enrollment Protocol (SCEP) を使って新しい証明書または更新された証明書でモバイル デバイスをプロビジョニングすることができ、Windows、iOS、Android、macOS のデバイスをサポートできます。
 
 この機能の使用には、オープン ソース API と Intune 管理者タスクの 2 つの部分があります。
 
 **パート 1 - オープン ソース API を使用する**  
-Microsoft が作成した API は、Intune と統合して、証明書を検証し、成功または失敗の通知を送信し、SSL (具体的には SSL ソケット ファクトリ) を使って Intune と通信します。
+Intune と統合するための API が、Microsoft によって作成されています。 その API を使うと、証明書を検証し、成功または失敗の通知を送信し、SSL (具体的には SSL ソケット ファクトリ) を使って Intune と通信することができます。
 
-この API は、[Intune SCEP API パブリック GitHub リポジトリ](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)からダウンロードして、ソリューションで使用できます。 この API をサード パーティの SCEP サーバーで使って、証明書をデバイスに提供する前に、Intune に対してカスタム チャレンジの検証を実行します。
+この API は、[Intune SCEP API パブリック GitHub リポジトリ](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)からダウンロードして、ソリューションで使用できます。 SCEP によってデバイスに証明書がプロビジョニングされる前に、この API をサード パーティの SCEP サーバーで使って、Intune に対してカスタム チャレンジの検証を実行します。
 
 [Intune SCEP 管理ソリューションとの統合](scep-libraries-apis.md)に関するページでは、API の使用、そのメソッド、作成したソリューションのテストに関して、さらに詳しく説明されています。
 
 **パート 2 - アプリケーションとプロファイルを作成する**  
-Azure Active Directory (Azure AD) アプリケーションを使って、デバイスから受け取った SCEP 要求を処理する権限を Intune に委任できます。 Azure AD アプリケーションに含まれるアプリケーション ID と認証キーの値を、開発者が作成する API ソリューション内で使います。 その後、管理者は Intune を使って、SCEP 証明書プロファイルを作成して展開できます。 また、デバイスでの展開の状態に関するレポートを見ることもできます。
+Azure Active Directory (Azure AD) アプリケーションを使って、デバイスから受け取った SCEP 要求を処理する権限を Intune に委任できます。 Azure AD アプリケーションに含まれるアプリケーション ID と認証キーの値を、開発者が作成する API ソリューション内で使います。 その後、管理者は、Intune を使って SCEP 証明書プロファイルを作成して展開し、デバイスでの展開の状態に関するレポートを表示できます。
 
 この記事では、Azure AD アプリケーションの作成など、この機能の概要を管理者の観点から説明します。
 
@@ -117,13 +117,14 @@ Azure AD アプリを登録するのに必要なアクセス許可があるこ�
 ## <a name="third-party-certification-authority-partners"></a>サード パーティの証明機関パートナー
 次のサード パーティ証明機関が Intune をサポートしています。
 
-- [Entrust Datacard](http://www.entrustdatacard.com/resource-center/documents/documentation)
+- [Entrust Datacard](https://info.entrustdatacard.com/pki-eval-tool)
 - [EJBCA GitHub オープンソース バージョン](https://github.com/agerbergt/intune-ejbca-connector)
 - [EverTrust](https://evertrust.fr/en/products/)
 - [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf)
 - [IDnomic](https://www.idnomic.com/)
 - [Sectigo](https://sectigo.com/products)
 - [DigiCert](https://knowledge.digicert.com/tutorials/microsoft-intune.html)
+- [SCEPman](https://azuremarketplace.microsoft.com/marketplace/apps/gluckkanja.scepman)
 
 自社の製品と Intune の統合に関心をお持ちのサード パーティ CA は、API のガイダンスを確認してください。
 

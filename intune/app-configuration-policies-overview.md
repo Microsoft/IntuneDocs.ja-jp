@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/16/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec65325592fbddc29e75b1d84c94e67558faab62
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 10dad24ee41f63dcc304d95e9b733f7de3f1b71a
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494051"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649023"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 用アプリ構成ポリシー
 
-Microsoft Intune のアプリ構成ポリシーを使用して、iOS または Android アプリの構成を設定できます。 これらの構成設定では、アプリをカスタマイズすることができます。 これらの構成ポリシーはユーザーまたはデバイスに直接割り当てないでください。 代わりに、構成ポリシーをアプリに関連付け、そのアプリを割り当てます。 構成ポリシー設定は、アプリがポリシーをチェックするとき (通常はアプリの初回実行時) に使用されます。
+Microsoft Intune のアプリ構成ポリシーを使用して、iOS または Android アプリの構成を設定できます。 これらの構成設定では、アプリの構成と管理に対する業界の標準的なアプローチを使用して、アプリをカスタマイズできます。 構成ポリシー設定は、アプリがポリシーをチェックするとき (通常はアプリの初回実行時) に使用されます。
 
 含める割り当てと除外する割り当ての組み合わせを使って、ユーザーとデバイスのグループにアプリ構成ポリシーを割り当てることができます。 アプリ構成ポリシーを追加すると、アプリ構成ポリシーの割り当てを設定できます。 ポリシーの割り当てを設定するときに、ポリシーを適用するユーザーのグループを含めたり、除外したりできます。 含めるグループを選ぶとき、含める特定のグループを選ぶか、組み込みグループを選ぶことができます。 組み込みグループには、**すべてのユーザー**、**すべてのデバイス**、**すべてのユーザーとすべてのデバイス**が含まれます。
 
@@ -52,9 +52,11 @@ Intune でアプリ構成を使用する方法には 2 つの選択肢があり�
 
 ## <a name="apps-that-support-app-configuration"></a>アプリ構成をサポートするアプリ
 
-サポートするアプリにアプリ構成ポリシーを使用できます。 Intune でアプリ構成をサポートするには、アプリ構成の使用をサポートするようにアプリが記述されている必要があります。 詳細については、アプリのベンダーに問い合わせてください。
+### <a name="managed-devices"></a>マネージド デバイス
+サポートするアプリにアプリ構成ポリシーを使用できます。 Intune でアプリ構成をサポートするには、[Appconfig Community](https://www.appconfig.org/members) による定義に従って、アプリ構成の使用をサポートするようにアプリが記述されている必要があります。 詳細については、アプリのベンダーに問い合わせてください。
 
-Intune App SDK をアプリに組み込むか、アプリの開発後にラップして、基幹業務アプリを準備することができます。 iOS と Android の両方で使用可能な Intune App SDK で、Intune アプリ構成ポリシーに対してご使用のアプリを有効にすることができます。 アプリの開発者が必要なコード変更が最小限に抑えられます。 詳細については、「[Intune App SDK の概要](app-sdk.md)」を参照してください。
+### <a name="managed-apps"></a>Managed apps
+Intune App SDK をアプリに組み込むか、アプリの開発後にラップして、基幹業務アプリを準備することができます。 iOS と Android の両方で使用可能な Intune App SDK では、Intune アプリ保護構成ポリシーに対してアプリを有効にすることができます。 アプリの開発者が必要なコード変更が最小限に抑えられます。 詳細については、「[Intune App SDK の概要](app-sdk.md)」を参照してください。
 
 ## <a name="graph-api-support-for-app-configuration"></a>Graph API のアプリ構成のサポート
 

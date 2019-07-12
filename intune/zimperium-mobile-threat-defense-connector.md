@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0dc8d7cca42898db92412e2cec41252a9a9a4d4
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 39c3b606033ca8575e079bef9a627b087a3d3318
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046104"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572464"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Zimperium Mobile Threat Defense コネクタと Intune
 
@@ -44,11 +44,11 @@ Intune と Zimperium を統合する場合のシナリオのいくつかを、�
 
 マルウェアなどの悪意のあるアプリがデバイスで検出されると、脅威が解決されるまで、デバイスで次の行為が禁止されます。
 
--   会社の電子メールに接続する
+- 会社の電子メールに接続する
 
--   OneDrive for Work アプリを使用して会社のファイルを同期する
+- OneDrive for Work アプリを使用して会社のファイルを同期する
 
--   会社のアプリにアクセスする
+- 会社のアプリにアクセスする
 
 **悪意のあるアプリが検出されたときにブロックする:**
 
@@ -60,7 +60,7 @@ Intune と Zimperium を統合する場合のシナリオのいくつかを、�
 
 ### <a name="control-access-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいてアクセスを制御する
 
-ネットワークで **中間者攻撃** のような脅威を検出し、デバイスのリスクに基づいて Wi-Fi ネットワークへのアクセスを保護します。
+ネットワークで **Man-in-the-middle** のような脅威を検出し、デバイスのリスクに基づいて Wi-Fi ネットワークへのアクセスを保護します。
 
 **Wi-Fi 経由のネットワーク アクセスをブロックする:**
 
@@ -72,7 +72,7 @@ Intune と Zimperium を統合する場合のシナリオのいくつかを、�
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>ネットワークに対する脅威に基づいて SharePoint Online へのアクセスを制御する
 
-ネットワークで **中間者攻撃** のような脅威を検出し、デバイスのリスクに基づいて会社内のファイルの同期を阻止します。
+ネットワークで **Man-in-the-middle** のような脅威を検出し、デバイスのリスクに基づいて会社内のファイルの同期を阻止します。
 
 **ネットワークの脅威が検出されたときに SharePoint Online をブロック:**
 
@@ -84,19 +84,19 @@ Intune と Zimperium を統合する場合のシナリオのいくつかを、�
 
 ## <a name="supported-platforms"></a>サポートされているプラットフォーム
 
--   **Android 4.1 以降**
+- **Android 4.1 以降**
 
--   **iOS 8 以降**
+- **iOS 8 以降**
 
 ## <a name="prerequisites"></a>必要条件
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune サブスクリプション
+- Microsoft Intune サブスクリプション
 
--   Zimperium Mobile Threat Defense サブスクリプション
+- Zimperium Mobile Threat Defense サブスクリプション
 
-    -   詳細については、 [Zimperium の Web サイト](https://www.zimperium.com/zips-mobile-ips)を参照してください。
+    - 詳細については、[Zimperium の Web サイト](https://www.zimperium.com/zips-mobile-ips)を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

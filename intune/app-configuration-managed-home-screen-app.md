@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9a61b89f07bfacf1dc41be1412f79509e1e147d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 50ac3ff27c22bf63b73f2ae10e6909112564180f
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049953"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648743"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Android Enterprise 用 Microsoft Managed Home Screen アプリを構成する
 
@@ -74,21 +74,24 @@ Managed Home Screen の構成設定を定義するのに使用できる 2 つの
 | ホーム画面フィードの有効化 | ブール | FALSE | ホーム画面を左にスワイプすると見られる、ホーム画面のフィードを有効にします。 このフィードには、ニュース、予定表、よく使われるアプリ、Cortana 音声アシスタント カードなどのさまざまなコンテンツの種類が表示されます。これを有効にすると、エンド ユーザーは、ホーム画面を左にスワイプしてフィードに移動できるようになります。 |
 | 概要モードの有効化 | ブール | FALSE | 既定の画面から右にスワイプしてアクセスできるホーム画面に、エンド ユーザーがさまざまなページを追加または削除できるようにします。 これを有効にすると、エンド ユーザーはホーム画面の既定のページの右側にページを追加できるようになります。また、既定のページを変更したり、Managed Home Screen の設定にアクセスすることもできるようになります。 |
 | デバイス テレメトリの有効化 | ブール | FALSE | Managed Home Screen 用にキャプチャされるすべてのテレメトリを有効にします。 これを有効にすると、このデバイスで特定のアプリが起動された回数など、Microsoft がデバイスの使用状況のテレメトリをキャプチャできるようになります。 |
-| ホワイトリストに登録されたアプリケーションの設定 | bundleArray | FALSE | デバイス上にインストールされているアプリの中から、ホーム画面に表示するアプリのセットを定義することができます。 表示したいアプリのパッケージ名を入力することでアプリを定義できます。たとえば、"com.android.settings" と入力すると、設定がホーム画面でアクセスできるようになります。 このセクション内で許可リストに登録するアプリは、ホーム画面上に表示するためには、デバイス上に既にインストールされている必要があります。 |
+| 許可リストに登録されたアプリケーションの設定 | bundleArray | FALSE | デバイス上にインストールされているアプリの中から、ホーム画面に表示するアプリのセットを定義することができます。 表示できるようにするアプリのアプリ パッケージ名を入力することで、アプリを定義できます。たとえば、com.microsoft.emmx と入力すると、ホーム画面上で設定にアクセスできるようになります。 このセクション内で許可リストに登録するアプリは、ホーム画面上に表示するためには、デバイス上に既にインストールされている必要があります。 |
 | ピン留めされた Web リンクの設定 | bundleArray | FALSE | Web サイトをクイック起動アイコンとしてホーム画面にピン留めすることができます。 この構成では、エンド ユーザーがブラウザー内で 1 回のタップで起動できるように、URL を定義して、それをホーム画面に追加することができます。 |
 | 検索バーの有効化 | ブール | FALSE | ホーム画面で検索バーを有効にします。 これを有効にすると、デバイスのユーザーのホーム画面に検索バーが表示されるようになり、ユーザーが Web で検索したいことを入力することができます。 |
 | 設定アプリの無効化 | ブール | FALSE | Managed Home Screen の設定ページを無効にします。 これを無効にすると、デバイスのエンド ユーザーが、Managed Home Screen の設定ページにアクセスできなくなります。 |
-| スクリーン セーバーを有効にする | ブール | FALSE | スクリーンセーバー モードを有効または無効にします。 true に設定すると、**screen_saver_image**、**screen_saver_show_time**、**inactive_time_to_show_screen_saver**、**media_detect_screen_saver** を構成できます。 |
-| スクリーン セーバーの画像 | string |   | スクリーンセーバーの画像の URL を設定します。 URL が設定されていない場合、スクリーンセーバーがアクティブになると、デバイスには既定のスクリーンが表示されます。  |
-| スクリーン セーバーの表示時間 | integer | 0 | スクリーンセーバー モード時にデバイスでスクリーンセーバーが表示される時間を秒単位で設定するオプションを提供します。 0 に設定すると、スクリーンセーバー モードではスクリーンセーバーが、デバイスがアクティブになるまで無期限に表示されます。  |
-| スクリーン セーバーが有効になるまでの非アクティブ状態の時間 | integer | 30 | スクリーンセーバーをトリガーするまでにデバイスが非アクティブな状態の秒数。 0 に設定すると、デバイスはスクリーンセーバー モードになりません。 |
-| スクリーン セーバーを表示する前のメディアの検出 | ブール | TRUE | デバイスでオーディオ/ビデオが再生されている場合に、デバイスの画面にスクリーンセーバーを表示するかどうかを選択します。 true に設定すると、**inactive_time_to_show_scree_saver** の値に関係なく、デバイスでオーディオ/ビデオが再生されなくなります。 false に設定すると、**inactive_time_to_show_screen_saver** に設定されている値に従って、デバイスの画面でスクリーンセーバーが表示されます。   |
+| スクリーン セーバーを有効にする | ブール | FALSE | スクリーン セーバー モードを有効または無効にします。 true に設定すると、**screen_saver_image**、**screen_saver_show_time**、**inactive_time_to_show_screen_saver**、**media_detect_screen_saver** を構成できます。 |
+| スクリーン セーバーの画像 | string |   | スクリーン セーバーの画像の URL を設定します。 URL を設定しない場合、スクリーン セーバーがアクティブになると、既定のスクリーン セーバー画像がデバイスに表示されます。 既定の画像では、Managed Home Screen アプリのアイコンが表示されます。  |
+| スクリーン セーバーの表示時間 | integer | 0 | スクリーン セーバー モード時にデバイスでスクリーン セーバーが表示される時間を秒単位で設定するオプションを提供します。 0 に設定すると、スクリーン セーバー モードではスクリーン セーバーが、デバイスがアクティブになるまで無期限に表示されます。  |
+| スクリーン セーバーが有効になるまでの非アクティブ状態の時間 | integer | 30 | スクリーン セーバーをトリガーするまでにデバイスが非アクティブな状態の秒数。 0 に設定すると、デバイスはスクリーン セーバー モードにされません。 |
+| スクリーン セーバーを表示する前のメディアの検出 | ブール | TRUE | デバイスでオーディオ/ビデオが再生されている場合に、デバイスの画面にスクリーン セーバーを表示するかどうかを選択します。 true に設定すると、**inactive_time_to_show_scree_saver** の値に関係なく、デバイスでオーディオ/ビデオが再生されなくなります。 false に設定すると、**inactive_time_to_show_screen_saver** に設定されている値に従って、デバイスの画面でスクリーン セーバーが表示されます。   |
 | 仮想ホーム ボタンの有効化 | ブール | FALSE | エンド ユーザーに Managed Home Screen のホーム ボタンへのアクセスを許可するには、この設定を `True` にします。このボタンを使用すると、ユーザーが現在行っているタスクから Managed Home Screen へ戻ることができます。  |
 | 仮想ホーム ボタンの種類 | string | swipe_up | 上方向にスワイプのジェスチャでホーム ボタンにアクセスするには、**swipe_up** を使用します。 エンド ユーザーが画面を移動できる固定の永続的なホーム ボタンにアクセスするには、**float** を使用します。 |
 | バッテリと信号の強さのインジケーター バー | ブール | True  | この設定を `True` にすると、バッテリと信号の強さのインジケーター バーが表示されます。 |
 | ロック タスク モード終了のパスワード | string |   | トラブルシューティングのためにロック タスク モードを一時的に停止するために使用する 4 - 6 桁のコードを入力します。 |
 | Wi-Fi 設定の表示 | ブール | FALSE | この設定を `True` にすると、エンド ユーザーが Wi-Fi をオン/オフにしたり、別の Wi-Fi ネットワークに接続できるようになります。  |
 | Bluetooth の設定の表示 | ブール | FALSE | この設定を `True` にすると、エンド ユーザーが Bluetooth をオン/オフにしたり、別の Bluetooth 対応デバイスに接続できるようになります。   |
+| フォルダー内のアプリケーションは、名前順に並べ替えられます | ブール | TRUE | この設定を `False` にすると、フォルダー内の項目を指定されている順序で表示できます。 それ以外の場合は、アルファベット順でフォルダーに表示されます。   |
+| Application order enabled (アプリケーションの順序の有効化) | ブール | FALSE | この設定を `True` にすると、Managed Home Screen でアプリケーション、Web リンク、フォルダーの順序を設定できるようになります。 有効にした後、**app_order** で順序を設定します。   |
+| Application order (アプリケーションの順序) | bundleArray | FALSE | Managed Home Screen でアプリケーション、Web リンク、フォルダーの順序を指定できます。 この設定を使うには、 **[Lock Home Screen]\(ホーム画面のロック\)** を有効にし、 **[Set grid size]\(グリッド サイズの設定\)** を定義し、 **[Application order enabled]\(アプリケーションの順序の有効化\)** を `True` に設定する必要があります。   |
 
 ## <a name="enter-json-data"></a>JSON データの入力
 
@@ -111,10 +114,6 @@ JSON データを入力して、Managed Home Screen で使用可能なすべて�
     "kind": "androidenterprise#managedConfiguration",
     "productId": "com.microsoft.launcher.enterprise",
     "managedProperty": [
-        {
-            "key": "grid_size",
-            "valueString": "Auto"
-        },
         {
             "key": "keep_page_header",
             "valueBool": true
@@ -236,6 +235,87 @@ JSON データを入力して、Managed Home Screen で使用可能なすべて�
         {
             "key": "show_bluetooth_setting",
             "valueBool": false
+        },
+        {
+            "key": "grid_size",
+            "valueString": "4;5"
+        },
+        {
+            "key": "app_order_enabled",
+            "valueBool": true
+        },
+        {
+            "key": "apps_in_folder_ordered_by_name",
+            "valueBool": true
+        },
+        {
+            "key": "app_orders",
+            "valueBundleArray": [
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.Microsoft.emmx"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 1
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "folder_name",
+                            "valueString": "Work"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "managed_folder"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 2
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.microsoft.launcher.enterprise"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": "com.microsoft.launcher.launcher"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 3
+                        }
+                    ]
+                }
+            ]
         },
         {
             "key": "managed_folders",

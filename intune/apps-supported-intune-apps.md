@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a50eb6e58c7b866af32387a85026eb87f825b15
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 89babf2eb60b7959c5c25a02b29135668efc32eb
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045910"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649059"
 ---
 # <a name="microsoft-intune-protected-apps"></a>保護されている Microsoft Intune アプリ  
 
@@ -46,6 +46,7 @@ Intune のマネージド アプリは、豊富な一連のモバイル アプ�
 | **Microsoft Azure Information Protection ビューアー**<p><img alt="Microsoft app - Microsoft Azure Information Protection Viewer icon" src="./media/apps-supported-intune-apps/icon-m-azure-information-protection-viewer.png" width="100"> | AIP ビューアー アプリを使って他のユーザーとの安全な共同作業を行います。 だれかが自分と共有した保護されたファイル (権利保護されたメール メッセージ、PDF ファイル、画像、テキスト ファイル) を表示します。 | [Android ストアのリンク](https://play.google.com/store/apps/details?id=com.egress.switchdroid.intune)、[iOS ストアのリンク](https://itunes.apple.com/us/app/rms-sharing/id689516635?mt=8) | 
 | **Microsoft Bookings**<p><img alt="Microsoft app - Microsoft Bookings icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-bookings.png" width="100"> | Microsoft Bookings は、ご自身の予約、スタッフ、顧客を追跡することができる、予定スケジュール アプリです。 予定を忘れることがなくなり、無断欠席者が減ります。<p>Bookings アプリでは次のことができます。<br><ul><li>カレンダーの表示と管理</li><li>外出先で予約を作成したり、既存のものに変更を加えたりする</li><li>スタッフのメンバーの都合をリアルタイムで確認する</li><li>迅速かつ簡単に顧客に対応する</li><li>次の予約の場所への道順をすばやく取得する</li><li>顧客のリストを管理する</li></ul> | [Android ストアのリンク](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings)、<br>[iOS ストアのリンク](https://itunes.apple.com/us/app/microsoft-bookings/id1065657468?mt=8) |  
 | **Microsoft Connections**<p><img alt="Microsoft app - Microsoft Connections icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-connections.png" width="100"> | Microsoft Connections は、小規模企業が顧客を引き付けて確保するのに役立ちます。簡単に使えるメールのマーケティング ツールを使います。 お知らせやニュースレター、紹介用のデザイン済みテンプレートを使って、洗練された外観のマーケティング キャンペーンをメールで簡単に作成します。 | [iOS ストアのリンク](https://itunes.apple.com/us/app/microsoft-connections/id1172261641?mt=8) |  
+| **Microsoft Cortana**<p><img alt="Microsoft app - Microsoft Cortana icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-cortana.png" width="100"> | パーソナル アシスタントの Cortana があれば、仕事でも生活でも速く、簡単に、楽しくこなせます。 スマートなデジタル アシスタントを電話に組み込んで、どこにいても、どのようなデバイスでも、重要な事柄に常に注目できます。 | [Android ストアのリンク](https://play.google.com/store/apps/details?id=com.microsoft.cortana)、<br>[iOS ストアのリンク](https://apps.apple.com/us/app/cortana/id1054501703) 
 | **Microsoft Dynamics CRM**<p><img alt="Microsoft app - Microsoft Dynamics CRM icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-dynamics-crm.png" width="100"> | Microsoft Dynamics CRM を使って職場や外出先でも効率よく作業を続けながら、顧客の信頼性を獲得します。 あらゆる予定に対して事前に準備を整え、詳細がまだ新しいうちにメモやタスク、連絡先、取引先企業、サポート案件、潜在顧客を更新します。 営業担当者は、外出先でも、コンテキストのビジネス プロセスを利用して各自の営業データを管理できます。 エージェントやスーパーバイザーは、サポート案件の全範囲にわたる管理を使って自由なモビリティが得られます。 '一度の構成で、あらゆる場所にデプロイ' のモデルを使って、シームレスなユーザー エクスペリエンスを実現します。 iOS と Android で利用できます。 | [Android ストアのリンク](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmphone)、<br>[iOS ストアのリンク](https://itunes.apple.com/app/microsoft-dynamics-crm/id678800460?mt=8) |  
 | **Microsoft Edge**<p><img alt="Microsoft app - Microsoft Edge icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-edge.png" width="100"> | Microsoft Edge は、Windows 10 ユーザー向けに、デバイス全体で 1 つの継続的な閲覧エクスペリエンスを作成します。 コンテンツとデータがバックグラウンドでシームレスに同期するため、ユーザーはデバイス全体で安心して閲覧できます。 ユーザーは、ハブなどの使い慣れた Microsoft Edge の機能を使い、不要な情報をすばやく処理して Web を整理できます。外出先でコンテンツを検索、表示、管理しやすくなります。 Microsoft Edge は、Windows 10 ユーザーが求める方法で、どこからでも、各自のフローを中断することなく Web を閲覧できるように設計されています。 | [Android ストアのリンク](https://play.google.com/store/apps/details?id=com.microsoft.emmx&hl=en_US)、<br>[iOS ストアのリンク](https://itunes.apple.com/us/app/microsoft-edge/id1288723196?mt=8) |  
 | **Microsoft Excel**<p><img alt="Microsoft app - Microsoft Excel icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-excel.png" width="100"> | タブレットとスマートフォン上での Excel スプレッドシートの外観が以前よりも向上しました。 スプレッドシートを編集または作成するときに、コンピューター、Mac、タブレット、スマートフォン全体で確実に望ましい外観が得られます。 すばやく起動し、使い慣れた Office のルック アンド フィールと直感的なタッチ エクスペリエンスを利用できます。<p><p>このアプリは Android および iOS 用の複数 ID アプリとして使用できます。 | [Android ストアのリンク](https://play.google.com/store/apps/details?id=com.microsoft.office.excel)、<br>[iOS ストアのリンク](https://itunes.apple.com/us/app/microsoft-excel/id586683407?mt=8) |  

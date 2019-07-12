@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 095c2ee0aba0680de0c5fc55c1406dba41111b92
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 00712b891790fbf437e9fed024f7610f37fee129
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527448"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648712"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Microsoft Intune で Windows 10 デバイスに Office 365 アプリを割り当てる
 
@@ -42,6 +42,7 @@ ms.locfileid: "67527448"
 - このインストール方法は、Windows 10S、Windows Home、Windows Team、Windows Holographic、Windows Holographic for Business の各デバイスではサポートされていません。
 - Intune では、Intune を使用して Office 365 アプリを既に展開しているデバイス上の Microsoft Store から Office 365 デスクトップ アプリ (Office Centennial アプリとして知られる) をインストールすることをサポートしていません。 この構成をインストールすると、データが損失したり壊れたりする可能性があります。
 - 必須または使用可能なアプリを複数割り当てる場合、後の割り当ては前の割り当てに追加されるのではありません。 後のアプリ割り当ては、それより前にインストールされて存在するアプリの割り当てを上書きします。 たとえば、Office アプリの最初のセットに Word が含まれ、後のセットには含まれない場合、Word はアンインストールされます。 この条件は、Visio または Project アプリケーションには適用されません。
+- 複数の Office 365 の展開は、現在はサポートされていません。 1 つの展開だけが、デバイスに配信されます
 - **[Office バージョン]** : Office の 32 ビットまたは 64 ビット バージョンのどちらを割り当てるかを選択します。 32 ビットと 64 ビットのどちらのデバイスでも 32 ビット バージョンをインストールできますが、64 ビットのデバイスには 64 ビット バージョンしかインストールできません。
 - **[Remove MSI from end-user devices]** \(エンドユーザーのデバイスから MSI を削除する\): エンドユーザーのデバイスから、既にある Office .MSI アプリを削除するかどうか選択します。 エンドユーザーのデバイスに、既に .MSI アプリがある場合、インストールは成功しません。 インストールされるアプリは、 **[アプリ スイートの構成]** でインストール対象として選択されたアプリに限りません。すべての Office (MSI) アプリがエンド ユーザー デバイスから削除されます。 詳細については、「[Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)」 (Office 365 ProPlus へのアップグレード時に Office の既存の MSI バージョンを削除する) を参照してください。 エンドユーザーのコンピューターに Office が Intune によって再インストールされる場合、エンド ユーザーには前の .MSI Office インストールで使用していたのと同じ言語パックが自動的に提供されます。
 
@@ -142,7 +143,14 @@ ms.locfileid: "67527448"
 
 終わったら、 **[アプリの追加]** ウィンドウで **[追加]** を選びます。 作成したアプリがアプリの一覧に表示されます。
 
+## <a name="troubleshooting"></a>トラブルシューティング
+Intune では、[Office 展開ツール](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool)により、[Office 365 CDN](https://docs.microsoft.com/office365/enterprise/content-delivery-networks) を使ってクライアント コンピューターに Office 365 ProPlus がダウンロードされて展開されます。 不必要な待機時間の発生を防ぐため、「[Managing Office 365 endpoints (Office 365 のエンドポイントの管理)](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)」で説明されているベスト プラクティスを参考にして、CDN トラフィックが中央のプロキシ経由でルーティングされるのではなく、クライアントが CDN に直接アクセスできるように、ネットワークを構成してください。
+
+インストールまたは実行時に問題が発生する場合は、対象のデバイスで [Microsoft Office 365 サポート/回復アシスタント](https://diagnostics.office.com)を実行してください。
+
 ## <a name="errors-during-installation-of-the-app-suite"></a>アプリ スイートのインストール中のエラー
+
+詳細なインストール ログを表示する方法については、「[How to enable Office 365 ProPlus ULS logging (Office 365 ProPlus ULS のログ記録を有効にする方法)](https://blogs.technet.microsoft.com/odsupport/2018/06/18/how-to-enable-office-365-proplus-uls-logging)」をご覧ください。
 
 次の表は、発生する可能性がある一般的なエラー コードとその意味を一覧表示しています。
 
