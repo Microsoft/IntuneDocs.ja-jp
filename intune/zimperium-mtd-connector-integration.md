@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e78c9034058a5f60f01056711465b28deca77d83
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 3eb18c45f81e427f1d14ce77086e0d7684994e82
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572157"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884157"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Zimperium を Intune と統合する
 
@@ -39,13 +39,13 @@ Zimperium と Intune の統合を始める前に、次のサブスクリプシ�
 
 - 次のアクセス許可を付与する、Azure Active Directory グローバル管理者の管理者資格情報:
 
-    - サインインしてユーザー プロファイルを読み取る
+  - サインインしてユーザー プロファイルを読み取る
 
-    - サインインしたユーザーとしてディレクトリにアクセスする
+  - サインインしたユーザーとしてディレクトリにアクセスする
 
-    - ディレクトリ データの読み込み
+  - ディレクトリ データの読み込み
 
-    - Intune にデバイス情報を送信する
+  - Intune にデバイス情報を送信する
 
 - Zimperium MTD コンソールにアクセスするための管理者資格情報。
 

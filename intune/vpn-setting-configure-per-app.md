@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce08545931d3580ce5ae524b1023d2b734b88f7b
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 1dc78f8126e0fa9c65fdbe70cfd909da70391e3e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373649"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884517"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Intune での iOS デバイスに対するアプリごとの仮想プライベート ネットワーク (VPN) の設定
 
@@ -150,16 +150,16 @@ VPN プロファイルを追加した後、アプリと Azure AD グループを
 
 ### <a name="before-you-attempt-to-connect"></a>接続を試行する前に
 
- - 同じグループに、前述のすべてのポリシーを展開しておきます。 そうしないと、アプリごとの VPN のエクスペリエンスは機能しません。
- - Pulse Secure VPN アプリまたはカスタムの VPN クライアント アプリを使用している場合、アプリ層またはパケット層でのトンネリングを使用することを選択できます。 **[ProviderType]** 値には、アプリ層トンネリングの場合は **[app-proxy]** を設定し、パケット層トンネリングの場合は **[packet-tunnel]** を設定します。 VPN プロバイダーのドキュメントで、適切な値を使用していることを確認します。
+- 同じグループに、前述のすべてのポリシーを展開しておきます。 そうしないと、アプリごとの VPN のエクスペリエンスは機能しません。
+- Pulse Secure VPN アプリまたはカスタムの VPN クライアント アプリを使用している場合、アプリ層またはパケット層でのトンネリングを使用することを選択できます。 **[ProviderType]** 値には、アプリ層トンネリングの場合は **[app-proxy]** を設定し、パケット層トンネリングの場合は **[packet-tunnel]** を設定します。 VPN プロバイダーのドキュメントで、適切な値を使用していることを確認します。
 
 ### <a name="connect-using-the-per-app-vpn"></a>アプリごとの VPN を使用して接続する
 
 VPN を選択したり、資格情報を入力したりせずに接続されるゼロタッチ操作を確認します。 ゼロタッチ操作とは、次のような意味です。
 
- - デバイスから VPN サーバーを信頼するように求められません。 つまり、ユーザーには **[Dynamic Trust]\(動的な信頼\)** ダイアログ ボックスが表示されません。
- - ユーザーが資格情報を入力する必要はありません。
- - ユーザーが関連付けられているアプリのいずれかを開くと、ユーザーのデバイスが VPN に接続されます。
+- デバイスから VPN サーバーを信頼するように求められません。 つまり、ユーザーには **[Dynamic Trust]\(動的な信頼\)** ダイアログ ボックスが表示されません。
+- ユーザーが資格情報を入力する必要はありません。
+- ユーザーが関連付けられているアプリのいずれかを開くと、ユーザーのデバイスが VPN に接続されます。
 
 <!-- ## Troubleshooting the per-app VPN
 

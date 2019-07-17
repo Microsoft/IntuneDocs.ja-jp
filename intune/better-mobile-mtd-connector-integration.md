@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7072d7d3d24578e0f82ea21eb653906dfa30b4c
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 861c2dd73e3a78fd833a24500728bd977d1186a2
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546971"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883740"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>Better Mobile と Intune を統合する
 
@@ -36,13 +36,13 @@ Better Mobile と Intune の統合を始める前に、次のものがあるこ�
 
 - 次のアクセス許可を付与する Azure Active Directory 管理者資格情報:
 
-    - サインインしてユーザー プロファイルを読み取る
+  - サインインしてユーザー プロファイルを読み取る
 
-    - サインインしたユーザーとしてディレクトリにアクセスする
+  - サインインしたユーザーとしてディレクトリにアクセスする
 
-    - ディレクトリ データの読み込み
+  - ディレクトリ データの読み込み
 
-    - Intune にデバイス情報を送信する
+  - Intune にデバイス情報を送信する
 
 - Better Mobile 管理コンソールにアクセスするための管理者資格情報。
 

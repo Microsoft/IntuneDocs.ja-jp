@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fdc7434616db6c06f56438fb6d8774ae3f2deca9
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: d27cd977909bb7aa237441102110a7abc27ad301
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548430"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885004"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune で Mobile Threat Defense (MTD) アプリを追加して割り当てる  
 
@@ -90,7 +90,7 @@ MTD プロバイダーに対応するセクションを選択します。
 
 ### <a name="configure-symantec-endpoint-protection-mobile-apps"></a>Symantec Endpoint Protection Mobile アプリを構成する  
 - **Android**
-   - Android ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-android.md)をご覧ください。 **手順 7** では、この [SEP Mobile アプリ ストア URL](https://play.google.com/store/apps/details?id=com.skycure.skycure) を使います。  **[Minimum operating system]\(最小オペレーティング システム\)** では、**Android 4.0 (Ice Cream Sandwich)** を選びます。
+  - Android ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-android.md)をご覧ください。 **手順 7** では、この [SEP Mobile アプリ ストア URL](https://play.google.com/store/apps/details?id=com.skycure.skycure) を使います。  **[Minimum operating system]\(最小オペレーティング システム\)** では、**Android 4.0 (Ice Cream Sandwich)** を選びます。
 
 - **Android**
   - iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 **手順 11** の **[アプリ ストアの URL]** には、この [SEP Mobile のアプリ ストア URL](https://itunes.apple.com/us/app/skycure/id695620821?mt=8) を使います。
@@ -162,7 +162,7 @@ MTD プロバイダーに対応するセクションを選択します。
 
 ### <a name="check-point-sandblast-mobile-app-configuration-policy"></a>Check Point SandBlast Mobile アプリ構成ポリシー  
 - [iOS 用 Microsoft Intune アプリ構成ポリシーを使用する](app-configuration-policies-use-ios.md)手順に従って、Check Point SandBlast Mobile iOS アプリ構成ポリシーを追加します。
-    - **手順 8** で、 **[XML データを入力する]** オプションを使用して以下の内容をコピーし、構成ポリシーの本文に貼り付けます。
+  - **手順 8** で、 **[XML データを入力する]** オプションを使用して以下の内容をコピーし、構成ポリシーの本文に貼り付けます。
 
 ```
 <dict><key>MDM</key><string>INTUNE</string></dict>

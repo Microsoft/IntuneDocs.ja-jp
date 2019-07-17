@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: 2bebdf712ccf325c6742e6bb326a8fb2768023b7
-ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
+ms.openlocfilehash: 1a5cd898545bae51395352d5cf1e7b1ee9bd22dd
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251171"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883241"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Intune でエンドポイント保護設定を追加する
 
@@ -33,8 +33,8 @@ Intune でデバイスの構成プロファイルを使用し、次などのデ�
 たとえば、macOS ユーザーに Mac App Store からのみアプリのインストールを許可するエンドポイント保護プロファイルを作成できます。 あるいは、Windows 10 デバイスでアプリを実行しているとき、Windows SmartScreen を有効にします。
 
 プロファイルを作成する前に、サポート対象のそれぞれのプラットフォームで Intune が管理できる、エンドポイント保護設定の詳細が記述されている次の記事を確認してください。 
-   - [macOS の設定](endpoint-protection-macos.md)
-   - [Windows 10 の設定](endpoint-protection-windows-10.md)
+- [macOS の設定](endpoint-protection-macos.md)
+- [Windows 10 の設定](endpoint-protection-windows-10.md)
 
 ## <a name="create-a-device-profile-containing-endpoint-protection-settings"></a>エンドポイント保護設定を含むデバイス プロファイルを作成する
 

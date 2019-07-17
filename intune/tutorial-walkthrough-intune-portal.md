@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3c305cc579fedb9090faaf6c7270fcc546e36eb
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: a0fbddf54939a494087a7da1220f51ec77b45e7b
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044335"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882463"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>チュートリアル: Azure portal での Microsoft Intune のチュートリアル
 
@@ -38,8 +38,8 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 ## <a name="prerequisites"></a>必要条件
 Microsoft Intune を設定する前に、次の要件を確認してください。
 
-   - [サポートされるオペレーティング システムとブラウザー](supported-devices-browsers.md) 
-   - [ネットワーク構成の要件と帯域幅](network-bandwidth-use.md)
+- [サポートされるオペレーティング システムとブラウザー](supported-devices-browsers.md) 
+- [ネットワーク構成の要件と帯域幅](network-bandwidth-use.md)
 
 ## <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Microsoft Intune の無料試用版にサインアップ
 

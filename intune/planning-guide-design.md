@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02dcaa26e51f3b8c4632aed0fbc87131cc617532
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 3870918378a2b3dd115d6449c3c83d37fe8e96c5
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572278"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884879"
 ---
 # <a name="create-a-design"></a>設計の作成
 
@@ -49,47 +49,47 @@ Intune の設計は、[このガイドの他のセクション](planning-guide.m
 
 - **クラウド内の ID**
 
-    - DirSync または Azure Active Directory (Azure AD) Connect を使用しているか
+  - DirSync または Azure Active Directory (Azure AD) Connect を使用しているか
 
-    - 環境がフェデレーションされているか
+  - 環境がフェデレーションされているか
 
-    - 多要素認証 (MFA) が有効になっているか
+  - 多要素認証 (MFA) が有効になっているか
 
 - **メール環境**
 
-    - Exchange を使っているか それはオンプレミスか、クラウドか
+  - Exchange を使っているか それはオンプレミスか、クラウドか
 
-    - Exchange をクラウドに移行するプロジェクトの途中か
+  - Exchange をクラウドに移行するプロジェクトの途中か
 
 - **現在のモバイル デバイス管理 (MDM) ソリューション**
 
-    - 他の MDM ソリューションを現在使っているか
+  - 他の MDM ソリューションを現在使っているか
 
-    - 会社および BYOD のユース ケース シナリオに対してどのような MDM ソリューションを使っているか
+  - 会社および BYOD のユース ケース シナリオに対してどのような MDM ソリューションを使っているか
 
-    - どのような機能を使っているか (例: アプリ デバイスの設定、Wi-Fi の構成)
+  - どのような機能を使っているか (例: アプリ デバイスの設定、Wi-Fi の構成)
 
-    - どのようなデバイス プラットフォームがサポートされているか
+  - どのようなデバイス プラットフォームがサポートされているか
 
-    - MDM ソリューションを使っているのはどのようなグループで、ユーザー数はどれくらいか
+  - MDM ソリューションを使っているのはどのようなグループで、ユーザー数はどれくらいか
 
 - **証明書ソリューション**
 
-    - 証明書ソリューションを導入しているか
+  - 証明書ソリューションを導入しているか
 
-    - 使っている証明書の種類
+  - 使っている証明書の種類
 
 - **システム管理**
 
-    - PC およびサーバーの環境をどのように管理しているか
+  - PC およびサーバーの環境をどのように管理しているか
 
-    - System Center Configuration Manager を使っているか サードパーティ製のシステム管理プラットフォームを使っているか
+  - System Center Configuration Manager を使っているか サードパーティ製のシステム管理プラットフォームを使っているか
 
 - **VPN ソリューション**
 
-    - どのような VPN ソリューションを使っているか
+  - どのような VPN ソリューションを使っているか
 
-    - 会社と BYOD の両方のユース ケース シナリオに使っているか
+  - 会社と BYOD の両方のユース ケース シナリオに使っているか
 
 現在の MDM 環境を記録するときは、環境に影響を与える可能性がある実施中のプロジェクトまたは他の計画に注意する必要があります。 Intune の設計を作成するときに現在の環境を記録する方法の例を次に示します。
 

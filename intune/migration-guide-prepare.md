@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0656c199d2f6179429415161ec02ef8a9037bf6b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 29ae889e99a843a8569782bad2b1303c7bb4304c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548361"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882838"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>フェーズ 1:モバイル デバイス管理 (MDM) に Microsoft Intune を準備する
 
@@ -51,8 +51,8 @@ Intune の設定の詳細について説明する前に、組織のモバイル 
 
 - どのような使用条件が必要ですか。
 
-    - これについては早い段階で法務部門が関与するようにします。
-    - どのようなローカライズが必要ですか。
+  - これについては早い段階で法務部門が関与するようにします。
+  - どのようなローカライズが必要ですか。
 
 - 一般的に、ユーザーは技術と IT についてよく理解していますか。
 
@@ -63,8 +63,8 @@ Intune の設定の詳細について説明する前に、組織のモバイル 
 - 現在のデバイスのパスコード/PIN コードはどれくらいの長さですか。
 
 - デバイスの機能を無効にしたり、特定のデバイスの動作を制限する必要がありますか。 デバイス構成プロファイルを使用して、プラットフォーム固有のさまざまな設定を制御することができます。
-    - カメラの無効化
-    - 単一アプリ モードにロック<br/>
+  - カメラの無効化
+  - 単一アプリ モードにロック<br/>
 
 - どのような種類の認証をサポートする必要がありますか。 証明書ベースの認証が必要な場合、どのような種類の証明書をプロビジョニングする必要がありますか。
   - Intune では、リソース アクセス プロファイルを使用して、登録されたデバイスに証明書をプロビジョニングします。

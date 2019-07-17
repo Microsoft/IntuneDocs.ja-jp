@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 82872ba6-80f8-4cc9-adf4-0ccd8ff26dd2
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec3685df5865d22874b68a8bf42539d37fb486d7
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: b51f310d370876058b8f1a1f872dd0b0e41bd42c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549244"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884837"
 ---
 # <a name="integrate-pradeo-with-intune"></a>Pradeo と Intune を統合する
 
@@ -36,13 +36,13 @@ Pradeo と Intune の統合を始める前に、次のものがあることを�
 
 - 次のアクセス許可を付与する Azure Active Directory 管理者資格情報:
 
-    - サインインしてユーザー プロファイルを読み取る
+  - サインインしてユーザー プロファイルを読み取る
 
-    - サインインしたユーザーとしてディレクトリにアクセスする
+  - サインインしたユーザーとしてディレクトリにアクセスする
 
-    - ディレクトリ データの読み込み
+  - ディレクトリ データの読み込み
 
-    - Intune にデバイス情報を送信する
+  - Intune にデバイス情報を送信する
 
 - Pradeo のセキュリティ コンソールにアクセスするための管理者資格情報。
 

@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546d62fdea3d1b5b7ae34f1c69423bcd0adb2025
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 35c0c6e6b65350d3b27c9dc1d9ab55d375dac070
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549424"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882862"
 ---
 # <a name="phase-2-migration-campaign"></a>フェーズ 2:移行のキャンペーン
 
@@ -43,19 +43,19 @@ ms.locfileid: "67549424"
 
 - 各サイクルで、ヘルプ デスクの負荷と登録の完了を監視します。 スケジュールに余裕を持たせ、各グループの成功基準を評価してから次のグループで移行を開始するようにします。 パイロット展開では次の点を検証する必要があります。
 
-    - 登録の成功率と失敗率が想定内であること。
+  - 登録の成功率と失敗率が想定内であること。
 
-    - ユーザーの生産性:
+  - ユーザーの生産性:
 
-        - VPN、Wi-Fi、電子メール、および証明書などの会社のリソースが機能している。
+    - VPN、Wi-Fi、電子メール、および証明書などの会社のリソースが機能している。
 
-        - プロビジョニング済みのアプリにアクセスできる。
+    - プロビジョニング済みのアプリにアクセスできる。
 
-    - データ セキュリティ:
+  - データ セキュリティ:
 
-        - コンプライアンス レポートが行われる。
+    - コンプライアンス レポートが行われる。
 
-        - モバイル アプリ保護が適用される。
+    - モバイル アプリ保護が適用される。
 
 移行の最初のフェーズに満足したら、次のフェーズの[移行サイクル](migration-guide-cycle.md)を繰り返します。
 

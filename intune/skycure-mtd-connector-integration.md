@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd185a42d36de6aaf1e6d0ff0b8e34619b02c093
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 513001993d890afba848138e01ff823796ea773d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572436"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884431"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Symantec Endpoint Protection Mobile と Intune の統合を設定する
 
@@ -44,7 +44,7 @@ SEP Mobile では、Intune との統合に 2 つのモードがあります。
 
 - **読み取り専用統合 (基本セットアップ):** Azure Active Directory からのデバイスのインベントリのみを作成し、それらを Symantec Endpoint Protection Mobile Management コンソールに設定します。
 <br>
-    - Symantec Endpoint Protection Mobile Management コンソールで **[Report the health and risk of devices to Intune]\(デバイスの健全性とリスクを Intune に報告する\)** ボックスと **[Also report security incidents to Intune]\(セキュリティ インシデントも Intune に報告する\)** ボックスがオンになっていない場合、統合は読み取り専用となり、Intune でデバイスの状態 (準拠または非準拠) が変化することはありません。
+  - Symantec Endpoint Protection Mobile Management コンソールで **[Report the health and risk of devices to Intune]\(デバイスの健全性とリスクを Intune に報告する\)** ボックスと **[Also report security incidents to Intune]\(セキュリティ インシデントも Intune に報告する\)** ボックスがオンになっていない場合、統合は読み取り専用となり、Intune でデバイスの状態 (準拠または非準拠) が変化することはありません。
 <br></br>
 - **完全統合:** リスクのあるデバイスとセキュリティ インシデントの詳細を Intune に報告することを SEP Mobile に許可します。両方のクラウド サービス間に双方向の通信が作成されます。
 

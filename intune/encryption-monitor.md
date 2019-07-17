@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bccfc952202ed9db5bdc5f68bbbba57c61b37b13
-ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
+ms.openlocfilehash: b4c7e4b2d35eb2662ca74660e2133dcd2c89f0a1
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67316929"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883365"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>BitLocker とデバイスの暗号化を監視する  
 Intune には、ご利用の Windows 10 デバイスの暗号化の状態を識別するための一元的な場所が用意されているため、Intune を使用すれば、Azure Active Directory (Azure AD) 内で BitLocker の重要な情報が検出されたら、ご自分のデバイスからアクセスできます。  
@@ -76,22 +76,22 @@ Intune には、ご利用の Windows 10 デバイスの暗号化の状態を識�
 
   Intune から報告される状態の詳細の例を次に示します。  
 
-   - BitLocker ポリシーによって、ユーザーは BitLocker ドライブ暗号化ウィザードを起動して OS ボリュームの暗号化を開始することに同意を求められていますが、ユーザーが同意しませんでした。  
-   - OS ボリュームの暗号化の方法が、BitLocker ポリシーと一致していません。  
-   - BitLocker ポリシーによって、TPM 保護機能を使用して OS ボリュームを保護するように求められていますが、TPM が使用されていません。  
-   - BitLocker ポリシーによって、OS ボリューム用の保護機能として TPM のみを使用するように求められていますが、TPM 保護が使用されていません。  
-   - BitLocker ポリシーによって、OS ボリューム用の保護機能として TPM + PIN 保護を使用するように求められていますが、TPM + PIN 保護機能が使用されていません。  
-   - BitLocker ポリシーによって、OS ボリューム用の保護機能として TPM + 起動キー保護を使用するように求められていますが、TPM + 起動キー保護機能が使用されていません。  
-   - BitLocker ポリシーによって、OS ボリューム用の保護機能として TPM + PIN + 起動キー保護を使用するように求められていますが、TPM + PIN + 起動キー保護機能が使用されていません。  
-   - OS ボリュームは保護されていません。  
-   - 回復キーのバックアップが失敗しました。  
-   - 固定ドライブが保護されていません。  
-   - 固定ドライブの暗号化の方法が、BitLocker ポリシーと一致していません。  
-   - ドライブを暗号化する場合、BitLocker ポリシーによって、ユーザーが管理者としてサインインする必要がある、または、デバイスが Azure AD に参加している場合は、AllowStandardUserEncryption ポリシーを 1 に設定する必要がある、のいずれかが求められています。  
-   - Windows 回復環境 (WinRE) が構成されていません。  
-   - TPM が BitLocker では使用できません。原因として、存在していない、レジストリ内で利用できなくなっている、または OS がリムーバブル ドライブ上にあることが挙げられます。  
-   - TPM が BitLocker で使用する準備ができていません。  
-   - 回復キーのバックアップに必要なネットワークが使用できません。  
+  - BitLocker ポリシーによって、ユーザーは BitLocker ドライブ暗号化ウィザードを起動して OS ボリュームの暗号化を開始することに同意を求められていますが、ユーザーが同意しませんでした。  
+  - OS ボリュームの暗号化の方法が、BitLocker ポリシーと一致していません。  
+  - BitLocker ポリシーによって、TPM 保護機能を使用して OS ボリュームを保護するように求められていますが、TPM が使用されていません。  
+  - BitLocker ポリシーによって、OS ボリューム用の保護機能として TPM のみを使用するように求められていますが、TPM 保護が使用されていません。  
+  - BitLocker ポリシーによって、OS ボリューム用の保護機能として TPM + PIN 保護を使用するように求められていますが、TPM + PIN 保護機能が使用されていません。  
+  - BitLocker ポリシーによって、OS ボリューム用の保護機能として TPM + 起動キー保護を使用するように求められていますが、TPM + 起動キー保護機能が使用されていません。  
+  - BitLocker ポリシーによって、OS ボリューム用の保護機能として TPM + PIN + 起動キー保護を使用するように求められていますが、TPM + PIN + 起動キー保護機能が使用されていません。  
+  - OS ボリュームは保護されていません。  
+  - 回復キーのバックアップが失敗しました。  
+  - 固定ドライブが保護されていません。  
+  - 固定ドライブの暗号化の方法が、BitLocker ポリシーと一致していません。  
+  - ドライブを暗号化する場合、BitLocker ポリシーによって、ユーザーが管理者としてサインインする必要がある、または、デバイスが Azure AD に参加している場合は、AllowStandardUserEncryption ポリシーを 1 に設定する必要がある、のいずれかが求められています。  
+  - Windows 回復環境 (WinRE) が構成されていません。  
+  - TPM が BitLocker では使用できません。原因として、存在していない、レジストリ内で利用できなくなっている、または OS がリムーバブル ドライブ上にあることが挙げられます。  
+  - TPM が BitLocker で使用する準備ができていません。  
+  - 回復キーのバックアップに必要なネットワークが使用できません。  
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker 回復キー
 Intune では BitLocker 用の Azure AD ブレードにアクセスできます。これにより、Intune ポータル内から、ご利用の Windows 10 デバイス用の BitLocker キー ID および回復キーを確認できます。  アクセスできるようになるには、デバイスのキーが Azure AD にエスクローされている必要があります。 

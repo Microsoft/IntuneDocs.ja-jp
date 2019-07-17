@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7868d5f9ef97f4b054457deff6f24cd91d6c31d8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: a7907889a1419ad6ff37b3975fa65adb02389ab6
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528688"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884512"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>チュートリアル: アンマネージド デバイス上で Exchange Online の電子メールを保護する
 
@@ -32,10 +32,10 @@ Intune などのデバイス管理ソリューションにデバイスが登録�
 > * Outlook アプリのみに Exchange Online の会社の電子メールへのアクセスを許可する Azure Active Directory (Azure AD) 条件付きアクセス ポリシーを作成する。 また、iOS 版や Android 版の Outlook など、先進認証クライアントには多要素認証 (MFA) も要求します。
 
 ## <a name="prerequisites"></a>必要条件
-  - このチュートリアルでは、次のサブスクリプションのあるテスト テナントが必要です。
-    - Azure Active Directory Premium ([無料試用版](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
-    - Intune サブスクリプション ([無料試用版](free-trial-sign-up.md))
-    - Exchange を含む Office 365 Business サブスクリプション ([無料試用版](https://go.microsoft.com/fwlink/p/?LinkID=510938))
+- このチュートリアルでは、次のサブスクリプションのあるテスト テナントが必要です。
+  - Azure Active Directory Premium ([無料試用版](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
+  - Intune サブスクリプション ([無料試用版](free-trial-sign-up.md))
+  - Exchange を含む Office 365 Business サブスクリプション ([無料試用版](https://go.microsoft.com/fwlink/p/?LinkID=510938))
 
 ## <a name="sign-in-to-intune"></a>Intune にサインインする
 

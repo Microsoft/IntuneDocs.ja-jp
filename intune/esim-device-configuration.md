@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68a0372180cf516f5a0111cd8fdb7cbd9535f075
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: e241dc534427b97086013a12391f06bd2f342779
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402731"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883271"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Intune で eSIM 携帯電話プロファイルを構成する - パブリック プレビュー
 
@@ -160,12 +160,12 @@ eSIM アクティブ化コードは一度使用されます。 Intune によっ�
 1. **[デバイス構成]**  >  **[eSIM 携帯ネットワーク プロファイル]** の順に選択し、既存のサブスクリプションを選びます。
 2. **[デバイスの状態]** を選択します。 Intune には、以下のデバイスに関する追加の詳細情報が表示されます。
 
-  - **デバイス名**: ターゲットとなるデバイスの名前
-  - **ユーザー**: 登録済みデバイスのユーザー
-  - **ICCID**: デバイス上にインストールされたアクティブ化コード内にある、携帯電話会社によって提供される一意のコード
-  - **アクティブ化の状態**: Intune に表示される、デバイスでのアクティブ化コードの配信とインストールの状態
-  - **携帯電話の状態**: 携帯電話会社によって提供される状態。 携帯電話会社に連絡して、トラブルシューティングを行ってください。
-  - **最後のチェックイン**: デバイスが Intune と最後に通信を行った日付
+    - **デバイス名**: ターゲットとなるデバイスの名前
+    - **ユーザー**: 登録済みデバイスのユーザー
+    - **ICCID**: デバイス上にインストールされたアクティブ化コード内にある、携帯電話会社によって提供される一意のコード
+    - **アクティブ化の状態**: Intune に表示される、デバイスでのアクティブ化コードの配信とインストールの状態
+    - **携帯電話の状態**: 携帯電話会社によって提供される状態。 携帯電話会社に連絡して、トラブルシューティングを行ってください。
+    - **最後のチェックイン**: デバイスが Intune と最後に通信を行った日付
 
 #### <a name="monitor-esim-profile-details-on-the-actual-device"></a>実際のデバイスで eSIM プロファイルの詳細を監視する
 

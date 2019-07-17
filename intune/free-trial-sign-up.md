@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ec03471e4ff3940f09fe4a9bef53b86e32bafa8
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 8c640eb7ffccf3b522c1f9049b97eff499b346ff
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713339"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883222"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>クイック スタート:Microsoft Intune を無料で試す 
 
@@ -33,8 +33,8 @@ Intune には、モバイル デバイス管理 (MDM) 機能とモバイル ア�
 ## <a name="prerequisites"></a>必要条件
 Microsoft Intune を設定する前に、次の要件を確認してください。
 
-   - [サポートされるオペレーティング システムとブラウザー](supported-devices-browsers.md) 
-   - [ネットワーク構成の要件と帯域幅](network-bandwidth-use.md)
+- [サポートされるオペレーティング システムとブラウザー](supported-devices-browsers.md) 
+- [ネットワーク構成の要件と帯域幅](network-bandwidth-use.md)
 
 ## <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Microsoft Intune の無料試用版にサインアップ
 

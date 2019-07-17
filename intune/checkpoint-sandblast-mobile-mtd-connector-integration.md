@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 49a6e8e625a08c9ad039d3106ff5d5c7001c2cab
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: ae9bd6d6f56ec85a993ffcb2f3c1af9897a2a87f
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547107"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883654"
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>Check Point SandBlast Mobile と Intune を統合します
 
@@ -37,13 +37,13 @@ Check Point SandBlast Mobile と Intune の統合を始める前に、次のも�
 
 - 次のアクセス許可を付与する Azure Active Directory 管理者資格情報:
 
-    - サインインしてユーザー プロファイルを読み取る
+  - サインインしてユーザー プロファイルを読み取る
 
-    - サインインしたユーザーとしてディレクトリにアクセスする
+  - サインインしたユーザーとしてディレクトリにアクセスする
 
-    - ディレクトリ データの読み込み
+  - ディレクトリ データの読み込み
 
-    - Intune にデバイス情報を送信する
+  - Intune にデバイス情報を送信する
 
 - Check Point SandBlast Mobile MTD コンソールにアクセスするための管理者資格情報
 

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96c05543884e0d9a00b570fb9ed4be1cdef65ca0
-ms.sourcegitcommit: 1ba785f6e51517b63588a292ab5c45b9d9144b72
+ms.openlocfilehash: 397ca3c03c96adc9bd6b0ca691f835e3e579fba0
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66841129"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882238"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>TeamViewer を使用して、Intune デバイスをリモートで管理する
 
@@ -32,8 +32,8 @@ Intune で管理されているデバイスは、[TeamViewer](https://www.teamvi
 
 - Azure Portal 内の Intune 管理者には、次の [Intune ロール](role-based-access-control.md)が必要です。  
 
-    - **リモート アシスタンスの更新**: 管理者に TeamViewer コネクタの設定の変更を許可します。
-    - **リモート アシスタンスの要求**: すべてのユーザーに対して新しいリモート アシスタンス セッションを開始することを管理者に許可します。 このロールを持つユーザーは、スコープ内のどの Intune ロールにも制限されません。 また、スコープ内で Intune ロールが割り当てられたユーザーまたはデバイス グループも、リモート アシスタンスを要求することができます。 
+  - **リモート アシスタンスの更新**: 管理者に TeamViewer コネクタの設定の変更を許可します。
+  - **リモート アシスタンスの要求**: すべてのユーザーに対して新しいリモート アシスタンス セッションを開始することを管理者に許可します。 このロールを持つユーザーは、スコープ内のどの Intune ロールにも制限されません。 また、スコープ内で Intune ロールが割り当てられたユーザーまたはデバイス グループも、リモート アシスタンスを要求することができます。 
 
 - サインイン資格情報を持つ [TeamViewer](https://www.teamviewer.com) アカウント。 Intune との統合をサポートできるのは、一部の TeamViewer ライセンスだけです。 特定の TeamViewer ニーズの場合、「[TeamViewer Integration Partner:Microsoft Intune](https://www.teamviewer.com/integrations/microsoft-intune/)」 (TeamViewer 統合パートナー: Microsoft Intune) を参照してください。
 

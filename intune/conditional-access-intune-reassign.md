@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bcc9aa527ed27ef35db901117ceb8f4c8d10c97
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 9a24c4b45b962f77846b4f7f7add3872daf38635
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546892"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883790"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>条件付きアクセス ポリシーを Intune クラシック ポータルから Azure portal に再割り当てする
 
@@ -38,14 +38,14 @@ Azure portal に移行する準備ができた場合、このトピックの手�
 
 - Azure Portal で新しいポリシーが意図したとおりに動作することを確認した後、Intune クラシック ポータルで条件付きポリシーを無効にします。
 <br /><br />
-    - Intune クラシック ポータルで条件付きアクセス ポリシーを**無効にする前に**、新しいポリシーへのユーザー移行方法を計画します。 これには 2 つの方法があります。
+  - Intune クラシック ポータルで条件付きアクセス ポリシーを**無効にする前に**、新しいポリシーへのユーザー移行方法を計画します。 これには 2 つの方法があります。
 <br /><br />
-        - **同じ包含グループを使って Azure Portal で作成されたポリシーを適用し、新しい除外グループを作成して Intune クラシック ポータルによって適用されたポリシーで使います**。
-            - クラシック ポータルで指定されている除外グループにユーザーを段階的に移動します。 これにより、Intune クラシック ポータルの対象になっているポリシーが適用されないようにします。 Intune クラシック ポータルで適用されていたポリシーに加えて、Azure Portal の同じユーザー グループを対象に作成されたポリシーが適用されます。 
+    - **同じ包含グループを使って Azure Portal で作成されたポリシーを適用し、新しい除外グループを作成して Intune クラシック ポータルによって適用されたポリシーで使います**。
+      - クラシック ポータルで指定されている除外グループにユーザーを段階的に移動します。 これにより、Intune クラシック ポータルの対象になっているポリシーが適用されないようにします。 Intune クラシック ポータルで適用されていたポリシーに加えて、Azure Portal の同じユーザー グループを対象に作成されたポリシーが適用されます。 
 <br /><br />
-        - **Azure portal の条件付きアクセス ポリシーを対象とする新しいグループを作成します**。 この方法を選んだ場合、次のことを行う必要があります。
-            - Intune クラシック ポータルで条件付きアクセス ポリシーの対象になっていたセキュリティ グループからユーザーを段階的に削除します。
-            - これらのユーザーに対して新しいポリシーが動作することを確認した後、Intune クラシック ポータルでポリシーを無効にできます。 
+    - **Azure portal の条件付きアクセス ポリシーを対象とする新しいグループを作成します**。 この方法を選んだ場合、次のことを行う必要があります。
+      - Intune クラシック ポータルで条件付きアクセス ポリシーの対象になっていたセキュリティ グループからユーザーを段階的に削除します。
+      - これらのユーザーに対して新しいポリシーが動作することを確認した後、Intune クラシック ポータルでポリシーを無効にできます。 
 <br /><br />
 - Intune クラシック ポータルで Exchange Active Sync (EAS) を使うように条件付きアクセス ポリシーの設定を構成してあった場合は、[このトピックの手順](#reassign-intune-device-based-conditional-access-policies-for-eas-clients)を参照して、**Azure portal で EAS 条件付きアクセス ポリシーの設定の再割り当て**を行います。
 
@@ -64,10 +64,10 @@ Azure portal に移行する準備ができた場合、このトピックの手�
 Azure Portal の **[Intune アプリ保護]** ブレードで、管理者は、Intune アプリ保護ポリシーをサポートするアプリのみが会社リソースへのアクセスを許可されるように、アプリ ベースの条件付きルールを設定できます。 アプリ ベースの条件付きアクセス ポリシーとデバイス ベースの条件付きアクセス ポリシーを併用することができます。 デバイス ベースとアプリ ベースの条件付きポリシーを組み合わせることも (論理 AND)、どちらか一方だけを提供することも (論理 OR) できます。 条件付きアクセス ポリシーの要件に応じて次のようになります。
 
 - 準拠したデバイスが必要、**かつ**、承認されたアプリを使用。
-    - [Azure Active Directory の条件付きアクセス ブレード](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)と [Intune App Protection ブレード](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0)を使って、条件付きアクセス ポリシーを設定する必要があります。
+  - [Azure Active Directory の条件付きアクセス ブレード](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)と [Intune App Protection ブレード](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0)を使って、条件付きアクセス ポリシーを設定する必要があります。
 <br /><br />
 - 準拠したデバイスが必要、**または**、承認されたアプリを使用。
-    - [Intune クラシック ポータル](https://manage.microsoft.com)と [Intune App Protection ブレード](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0)を使って、条件付きアクセス ポリシーを設定する必要があります。
+  - [Intune クラシック ポータル](https://manage.microsoft.com)と [Intune App Protection ブレード](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0)を使って、条件付きアクセス ポリシーを設定する必要があります。
 
 > [!TIP] 
 > このトピックでは、Intune クラシック ポータルと Azure Portal のユーザー エクスペリエンスを比較するスクリーンショットを示します。

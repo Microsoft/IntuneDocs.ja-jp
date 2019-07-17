@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: cbe533e6a219adf1984c656506ceb7a3b95556ec
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 4a0df4f32513eb37bd7396d8e6249f9c6e71a4e4
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548671"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884181"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Windows デバイスの Intune 登録方法
 
@@ -36,8 +36,8 @@ Intune でデバイスを管理するには、まず、デバイスを Intune �
 ユーザーは、以下の方法のいずれかを使用して、Windows デバイスを自己登録することができます。
 
 - [Bring Your Own Device (BYOD)](https://docs.microsoft.com/intune-user-help/enroll-windows-10-device):ユーザーは、デバイスの **[設定]** から**職場と学校**のアカウントを接続するよう選択して、個人所有デバイスを登録します。 このプロセスでは、次のことを行います。
-    - Azure Active Directory にデバイスを登録して、メールなどの企業リソースにアクセスできるようにする。
-    - デバイスを個人所有デバイス (BYOD) として、Intune に登録する。
+  - Azure Active Directory にデバイスを登録して、メールなどの企業リソースにアクセスできるようにする。
+  - デバイスを個人所有デバイス (BYOD) として、Intune に登録する。
 管理者が自動登録 (Azure AD Premium サブスクリプションで利用可能) を構成している場合、ユーザーが資格情報を入力する必要があるのは 1 回のみとなります。 それ以外の場合、MDM の登録のみで個別に登録し、資格情報を再入力する必要があります。  
 - **MDM の登録のみ**では、ユーザーは、既存のワークグループ、Active Directory、または Azure Active Directory に参加済みの PC を Intune に登録することができます。 ユーザーは、既存の Windows PC で [設定] から登録します。 この方法は、デバイスが Azure Active Directory に登録されないため、お勧めできません。 条件付きアクセスなどの機能も使用できません。
 - [Azure Active Directory (Azure AD) に参加](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) - デバイスを Azure Active Directory に参加させ、ユーザーが Azure AD 資格情報を使用して、Windows にサインインできるようにします。 自動登録が有効になっている場合、デバイスは Intune に自動的に登録されます。 自動登録の利点は、ユーザーの単一ステップ プロセスです。 それ以外の場合、MDM の登録のみで個別に登録し、資格情報を再入力する必要があります。 ユーザーは、[設定] からまたは最初の Windows OOBE 時に、この方法で登録します。 デバイスは、Intune で会社所有デバイスとしてマークされます。

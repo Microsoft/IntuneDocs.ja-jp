@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cb08757732aa5cad08ed0a4b535fb20c0aa1df0
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 703509c316a22995d26223f6c386de0a2ec66c31
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528262"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882718"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>ユース ケース シナリオの要件の決定
 
@@ -50,21 +50,21 @@ ms.locfileid: "67528262"
 "要件" 列に使用できる追加の例を次に示します。
 
 - **電子メールのセキュリティ保護**
-    - Exchange Online / On-Premises の条件付きアクセス
-    - Outlook アプリの保護ポリシー
+  - Exchange Online / On-Premises の条件付きアクセス
+  - Outlook アプリの保護ポリシー
 
 - **デバイスの設定**
-    - 4 桁、6 桁の PIN 設定
-    - クラウド バックアップの制限
+  - 4 桁、6 桁の PIN 設定
+  - クラウド バックアップの制限
 
 - **プロファイル**
-    - Wi-Fi
-    - VPN
-    - 電子メール (Windows 10 Mobile)
+  - Wi-Fi
+  - VPN
+  - 電子メール (Windows 10 Mobile)
 
 - **アプリ**
-    - アプリの保護ポリシー付きの Office 365
-    - アプリの保護ポリシー付きの基幹業務 (LOB)
+  - アプリの保護ポリシー付きの Office 365
+  - アプリの保護ポリシー付きの基幹業務 (LOB)
 
 ## <a name="next-steps"></a>次の手順
 

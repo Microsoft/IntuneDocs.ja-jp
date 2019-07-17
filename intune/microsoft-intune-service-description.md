@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88ca608027e6509eb56fad74a8edae405fa915fa
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c813e413d0d3447955f785e0aff1e0edd3501b6a
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549427"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882879"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune サービスの説明
 
@@ -60,24 +60,24 @@ Microsoft では、Intune オンボーディング特典で、適格なプラン
 
 - 重要なサービスの更新情報も、[Microsoft 365 管理センター](https://admin.microsoft.com/)のメッセージ センターで告知されます。 コンパニオン [Office 365 Admin Mobile アプリ](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)をインストールしている場合、モバイル デバイスで通知を受け取ることができます。 Office 365 メッセージ センターの利用方法については[こちら](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates)をご覧ください。
 
-    いくつかの役立つヒント:
+  いくつかの役立つヒント:
 
-    - Office 365 メッセージ センターのメッセージは、対象を絞っています。 つまり、Intune for EDU のオファーを受けない企業に対して、Intune for EDU に関するメッセージは送信されません。
+  - Office 365 メッセージ センターのメッセージは、対象を絞っています。 つまり、Intune for EDU のオファーを受けない企業に対して、Intune for EDU に関するメッセージは送信されません。
 
-    - メッセージには有効期限があります。 たとえば、最新機能ページへのリンクを含む、サービス更新に関する通知は、次のサービス更新の通知が送信される前に期限切れになる可能性があります。 そのようにしないと、関連のない投稿のバックログが大量に増えることになります。
+  - メッセージには有効期限があります。 たとえば、最新機能ページへのリンクを含む、サービス更新に関する通知は、次のサービス更新の通知が送信される前に期限切れになる可能性があります。 そのようにしないと、関連のない投稿のバックログが大量に増えることになります。
 
-    - Office 365 Admin Mobile アプリでは、すべてのメッセージを検索し、組織内の同僚と共有したい場合は通知を転送できます。
+  - Office 365 Admin Mobile アプリでは、すべてのメッセージを検索し、組織内の同僚と共有したい場合は通知を転送できます。
 
-    - [Edit message center preferences]\(メッセージ センターの設定の編集\) で最終的に **Intune** の切り替え機能を提供し、Intune サブスクリプションに投稿されたメッセージをユーザーが確認できるようにする予定です。 Office 365 の Mobile Device Management が表示されても、これは Intune ではなく別のサービスです。
+  - [Edit message center preferences]\(メッセージ センターの設定の編集\) で最終的に **Intune** の切り替え機能を提供し、Intune サブスクリプションに投稿されたメッセージをユーザーが確認できるようにする予定です。 Office 365 の Mobile Device Management が表示されても、これは Intune ではなく別のサービスです。
 
 - Microsoft では次の 2 つのブログを利用し、EMS のメッセージと Intune サポートのベスト プラクティスを共有しています。
 
-    - [Enterprise Mobility + Security のブログ](https://blogs.technet.microsoft.com/enterprisemobility/)
+  - [Enterprise Mobility + Security のブログ](https://blogs.technet.microsoft.com/enterprisemobility/)
 
-    - [Intune サポートのブログ](https://blogs.technet.microsoft.com/intunesupport/)
+  - [Intune サポートのブログ](https://blogs.technet.microsoft.com/intunesupport/)
 
->[!Note]
->Intune のサービス正常性は、[Microsoft 365 管理センター](https://admin.microsoft.com)で監視できます。 左側のウィンドウで **[サービス正常性]** を選択します。 また、[Office 365 Admin Mobile アプリ](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)を使用して、サービスの正常性を表示することもできます。
+> [!Note]
+> Intune のサービス正常性は、[Microsoft 365 管理センター](https://admin.microsoft.com)で監視できます。 左側のウィンドウで **[サービス正常性]** を選択します。 また、[Office 365 Admin Mobile アプリ](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)を使用して、サービスの正常性を表示することもできます。
 
 ## <a name="types-of-notices-microsoft-provides-about-the-intune-service"></a>Intune サービスに関して Microsoft が提供する通知の種類
 

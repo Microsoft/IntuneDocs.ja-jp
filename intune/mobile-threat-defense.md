@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0452229d6c1ea2d9e87a302675167d200bd348eb
-ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
+ms.openlocfilehash: 73c8167c91129d79a98674a92e7ccc5487a6b283
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67407168"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885081"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Mobile Threat Defense の Intune との統合
 Intune を使用すると、Mobile Threat Defense ベンダーからのデータを、コンプライアンス ポリシーおよび条件付きアクセス規則の情報ソースとして統合することができます。 この情報を使用すれば、危険にさらされたモバイル デバイスからのアクセスをブロックすることで、Exchange や SharePoint などの会社リソースを容易に保護することができます。  
@@ -47,14 +47,14 @@ Intune では、Mobile Threat Defense コネクタを使用して、Intune と�
 **アプリ インベントリ**  
 iOS デバイスのアプリの同期を有効にした場合、iOS を内蔵した会社所有デバイスと個人所有デバイスの両方からのインベントリが MTD サービス プロバイダーに送信されます。 アプリ インベントリのデータ:
 
- - アプリ ID
- - アプリ バージョン
- - アプリ バージョン (短い形式)
- - アプリ名
- - アプリ バンドル サイズ
- - アプリの動的サイズ
- - アプリの有効性が確認されているかどうか
- - アプリが管理されているかどうか
+- アプリ ID
+- アプリ バージョン
+- アプリ バージョン (短い形式)
+- アプリ名
+- アプリ バンドル サイズ
+- アプリの動的サイズ
+- アプリの有効性が確認されているかどうか
+- アプリが管理されているかどうか
 
 ## <a name="sample-scenarios"></a>サンプル事例
 

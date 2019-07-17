@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b34143e17245de61026a536cc0b8c5e8a7f80107
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 97a0d9074b8617dec2fb28ed59168e08ada57fba
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549403"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882776"
 ---
 # <a name="intune-migration-guide"></a>Intune 移行ガイド
 
@@ -37,25 +37,25 @@ Microsoft Intune への移行を成功させるには、まず現在のモバイ
 
 - [フェーズ 1: モバイル デバイス管理のために Intune を準備する](migration-guide-prepare.md)
 
-    - [MDM 移行要件を評価する](migration-guide-prepare.md#assess-mdm-requirements)
+  - [MDM 移行要件を評価する](migration-guide-prepare.md#assess-mdm-requirements)
 
-    - [基本的なセットアップ](migration-guide-setup.md)
+  - [基本的なセットアップ](migration-guide-setup.md)
 
-    - [デバイスおよびアプリ管理のポリシー](migration-guide-configure-policies.md)
+  - [デバイスおよびアプリ管理のポリシー](migration-guide-configure-policies.md)
 
-    - [アプリ保護ポリシーの構成](migration-guide-app-protection-policies.md)
+  - [アプリ保護ポリシーの構成](migration-guide-app-protection-policies.md)
 
-    - [特殊な移行に関する考慮事項](migration-guide-considerations.md)
+  - [特殊な移行に関する考慮事項](migration-guide-considerations.md)
 
 - [フェーズ 2: 移行のキャンペーン](migration-guide-campaign.md)
 
-    - [情報伝達計画](migration-guide-communication-plan.md)
+  - [情報伝達計画](migration-guide-communication-plan.md)
 
-    - [条件付きアクセスでエンドユーザーの導入を推進する](migration-guide-drive-adoption.md)
+  - [条件付きアクセスでエンドユーザーの導入を推進する](migration-guide-drive-adoption.md)
 
-    - [標準的な移行サイクル](migration-guide-cycle.md)
-        - [移行の監視](migration-guide-cycle.md#monitoring-migration)
-        - [移行後](migration-guide-cycle.md#post-migration)
+  - [標準的な移行サイクル](migration-guide-cycle.md)
+    - [移行の監視](migration-guide-cycle.md#monitoring-migration)
+    - [移行後](migration-guide-cycle.md#post-migration)
 
 ## <a name="assumptions"></a>前提条件
 

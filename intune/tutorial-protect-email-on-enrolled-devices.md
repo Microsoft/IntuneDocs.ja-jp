@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91c2ab71cb393bdf885c947c8f3cd93a5bb196c3
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: a5a355c82455e135319b7683756eb0ef5c032876
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548043"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882360"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>チュートリアル: マネージド デバイス上で Exchange Online の電子メールを保護する
 デバイス コンプライアンス ポリシーと条件付きアクセスを使用して、iOS デバイスが Intune によって管理され、承認されたメール アプリを使用している場合にのみ、Exchange Online のメールにアクセスできるようにする方法を説明します。 
@@ -35,10 +35,10 @@ ms.locfileid: "67548043"
 Intune サブスクリプションがない場合は、[無料試用版アカウントにサインアップ](free-trial-sign-up.md)します。
 
 ## <a name="prerequisites"></a>必要条件
-  - このチュートリアルでは、次のサブスクリプションのあるテスト テナントが必要です。
-    - Azure Active Directory Premium ([無料試用版](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
-    - Exchange を含む Office 365 Business サブスクリプション ([無料試用版](https://go.microsoft.com/fwlink/p/?LinkID=510938))
-  - 始める前に、「[クイック スタート:iOS 用の電子メール デバイス プロファイルを作成する](quickstart-email-profile.md)」の手順に従って、iOS デバイス用のテスト デバイス プロファイルを作成します。
+- このチュートリアルでは、次のサブスクリプションのあるテスト テナントが必要です。
+  - Azure Active Directory Premium ([無料試用版](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
+  - Exchange を含む Office 365 Business サブスクリプション ([無料試用版](https://go.microsoft.com/fwlink/p/?LinkID=510938))
+- 始める前に、「[クイック スタート:iOS 用の電子メール デバイス プロファイルを作成する](quickstart-email-profile.md)」の手順に従って、iOS デバイス用のテスト デバイス プロファイルを作成します。
 
 ## <a name="sign-in-to-intune"></a>Intune にサインインする
 

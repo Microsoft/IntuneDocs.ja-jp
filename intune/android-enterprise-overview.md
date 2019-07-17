@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1649c6256e4df61b538e2adee87512617b677bb4
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: e6a003e4ab912452f278c838c600f75ddec0c1f5
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547489"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885141"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Intune で Android 仕事用プロファイルのデバイスを管理する
 
@@ -71,9 +71,9 @@ VPN のサポートは、Android VPN プロファイルに似ています。 And
 - **仕事用プロファイル対象の VPN** - VPN 接続は、仕事用プロファイルに展開されるアプリのみが対象です。 Android Enterprise で管理されるアプリのみが VPN 接続を使用できます。 デバイス上の個人用のアプリは、管理対象の VPN 接続を使用できません。 詳細については、「[Android エンタープライズの VPN の設定](vpn-settings-android.md#android-enterprise-vpn-settings)」を参照してください。
 
 - **アプリ固有の VPN** – VPN プロバイダーがサポートしている場合は、Intune でアプリ固有の VPN を構成できます。
-    - アプリ固有の VPN の構成
-    - Android Enterprise アプリの構成プロファイルを介してアプリごとの VPN を構成する機能です。
-    詳細については、「[Microsoft Intune のカスタム プロファイルを使って、Android デバイス用にアプリごとの VPN プロファイルを作成する](android-pulse-secure-per-app-vpn.md)」を参照してください。
+  - アプリ固有の VPN の構成
+  - Android Enterprise アプリの構成プロファイルを介してアプリごとの VPN を構成する機能です。
+  詳細については、「[Microsoft Intune のカスタム プロファイルを使って、Android デバイス用にアプリごとの VPN プロファイルを作成する](android-pulse-secure-per-app-vpn.md)」を参照してください。
 
 ## <a name="certificate-profiles"></a>証明書プロファイル
 
