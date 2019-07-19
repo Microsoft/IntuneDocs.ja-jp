@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 07/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa6dfef745157ae96736f8405fd5cafc33d4335f
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: b58b27264e2f6955ae4f16843bb3493e5fdc993e
+ms.sourcegitcommit: fe67741c62749fc9114e9191092ed8b786dd4ffa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045294"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270295"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Intune を使用して Microsoft Defender ATP によって検出された脆弱性を修復する  
 
@@ -32,7 +32,7 @@ Intune と Microsoft Defender Advanced Threat Protection (ATP) を統合する�
 
 Intune を Microsoft Defender Advanced Threat Protection に接続すると、ATP はマネージド デバイスから脅威と脆弱性の詳細を受け取るようになります。  
 
-Windows Defender Security Center コンソールで、ATP セキュリティ管理者はエンドポイントの脆弱性に関するデータを確認します。 その後、管理者は脆弱性のあるデバイスに要修復のフラグを設定するセキュリティ タスクをシングル クリックで作成します。 セキュリティ タスクはすぐに Intune コンソールに渡され、そこで Intune 管理者はそれらを表示できます。 セキュリティ タスクでは、脆弱性の種類、優先度、状態、および脆弱性修復手順が示されます。 Intune 管理者は、タスクの同意または拒否を選択します。  
+ATP セキュリティ管理者は、Microsoft Defender セキュリティ センターのコンソールでエンドポイントの脆弱性に関するデータを確認します。 その後、管理者は脆弱性のあるデバイスに要修復のフラグを設定するセキュリティ タスクをシングル クリックで作成します。 セキュリティ タスクはすぐに Intune コンソールに渡され、そこで Intune 管理者はそれらを表示できます。 セキュリティ タスクでは、脆弱性の種類、優先度、状態、および脆弱性修復手順が示されます。 Intune 管理者は、タスクの同意または拒否を選択します。  
 
 タスクに同意したら、Intune 管理者はセキュリティ タスクの一部として提供されたガイダンスを使って、Intune で脆弱性を修復します。  
 
@@ -67,7 +67,7 @@ Windows Defender Security Center コンソールで、ATP セキュリティ管�
 **ATP 用の Intune の構成**:  
 - Microsoft Defender ATP でサービス間の接続を構成します。  
 - ATP によって評価されるリスクがあるデバイスに、プロファイルの種類を **Microsoft Defender ATP (Windows 10 Desktop)** にしてデバイス コンプライアンス ポリシーを展開します。
-  ATP で動作するように Intune を設定する方法については、[Intune の条件付きアクセスでの Microsoft Defender ATP に対するコンプライアンスの適用](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)に関する記事を参照してください。  
+  ATP で動作するように Intune を設定する方法については、[Intune の条件付きアクセスでの Microsoft Defender ATP に対するコンプライアンスの適用](https://docs.microsoft.com/intune/advanced-threat-protection#enable-microsoft-defender-atp-in-intune)に関する記事を参照してください。  
 
 ## <a name="work-with-security-tasks"></a>セキュリティ タスクを処理する  
 

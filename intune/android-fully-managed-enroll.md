@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f1b1197671b54cb5374bd79b6acbeb8137c0135c
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: 54d9fa1016ff39fcf1e7da9c21391ce70f7acaac
+ms.sourcegitcommit: e451295ca3ee3efc31bf9ee360e599b28ef643ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819895"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67863081"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Android Enterprise フル マネージド デバイスの Intune 登録を設定する (プレビュー)
 
 Android Enterprise フル マネージド デバイスは、1 人のユーザーに関連付けられる会社所有デバイスであり、仕事限定で使用され、私事には使用されません。 管理者はデバイス全体を管理し、次のように、仕事用プロファイルで利用できないポリシー制御を強制できます。
-- 管理対象の Google Play からのみアプリのインストールを許可する
-- 管理対象アプリのアンインストールを禁止する
-- ユーザーが工場出荷時の設定にデバイスをリセットすることを禁止するなど。
+- managed Google Play からのみアプリのインストールを許可する。
+- マネージド アプリのアンインストールをブロックする。
+- ユーザーがデバイスを工場出荷時の設定にリセットできないようにする、など。
 
 Intune を利用すると、Android Enterprise フル マネージド デバイスなど、会社所有の Android デバイスにアプリや設定を配置できます。 Android Enterprise に関する特定の詳細については、「[Android Enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012)」 (Android Enterprise の要件) を参照してください。
 
@@ -58,8 +58,8 @@ Android Enterprise フル マネージド デバイスの管理を設定する�
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインし、 **[デバイスの登録]**  >  **[Android の登録]**  >  **[Corporate-owned, fully managed user devices (Preview)]\(会社が所有する完全に管理されたユーザー デバイス (プレビュー)\)** の順に選択します。
 2. **[会社が所有するユーザー デバイスの登録をユーザーに許可する]** で **[はい]** を選択します。
 
-[!NOTE]
-*[デバイスは準拠としてマーク済みである必要があります]* コントロールを使用し、**すべてのクラウド アプリ**、**Android** および**ブラウザー**に適用される、Azure AD 条件付きアクセス ポリシーを定義している場合 - このポリシーから **Microsoft Intune** クラウド アプリを除外する必要があります。 これは、Android のセットアップ プロセスで Chrome タブを使用して、登録中にユーザーを認証するためです。 詳細については、「[Azure AD の条件付きアクセスのドキュメント](https://docs.microsoft.com/azure/active-directory/conditional-access/)」を参照してください。
+> [!NOTE]
+> *[デバイスは準拠としてマーク済みである必要があります]* コントロールを使用し、**すべてのクラウド アプリ**、**Android** および**ブラウザー**に適用される、Azure AD 条件付きアクセス ポリシーを定義している場合 - このポリシーから **Microsoft Intune** クラウド アプリを除外する必要があります。 これは、Android のセットアップ プロセスで Chrome タブを使用して、登録中にユーザーを認証するためです。 詳細については、「[Azure AD の条件付きアクセスのドキュメント](https://docs.microsoft.com/azure/active-directory/conditional-access/)」を参照してください。
 
 **[はい]** に設定すると、登録トークン (無作為の文字列) と Intune テナントの QR コードが与えられます。 この 1 個の登録トークンは登録するすべてのユーザーに対して有効であり、有効期限はありません。 デバイスの Android OS とバージョンに基づき、トークンと QR コードのいずれかを利用してキオスク デバイスを登録できます。
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Edge と Microsoft Intune を使用して Web アクセスを管理する
+title: Intune を使用して iOS および Android 用の Microsoft Edge を管理する
 titleSuffix: ''
 description: Microsoft Edge で Intune アプリ保護ポリシーを使用して、企業の Web サイトが確実に保護機能付きでアクセスされるようにすることができます。
 keywords: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 147547577615c6e74a9c5b3dd8b200ba387bad79
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: bc18ba2210719cbebe77cd5b37024be4bb7b0d3e
+ms.sourcegitcommit: a01f0f3070932e3be44a4f545d4de11d715381ea
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648464"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68287211"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Microsoft Edge と Microsoft Intune を使用して Web アクセスを管理する
 
@@ -157,7 +157,7 @@ Microsoft Edge と [Azure AD アプリケーション プロキシ](https://docs
 ### <a name="before-you-start"></a>開始する前に
 
 - Azure AD アプリケーション プロキシを経由するように内部アプリケーションを設定します。
-    - アプリケーション プロキシを構成し、アプリケーションを公開するには、[セットアップに関するドキュメント](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)を参照してください。
+  - アプリケーション プロキシを構成し、アプリケーションを公開するには、[セットアップに関するドキュメント](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)を参照してください。
 - Microsoft Edge アプリには、[Intune アプリ保護ポリシー](app-protection-policy.md)を割り当てる必要があります。
 
 > [!NOTE]
@@ -228,34 +228,34 @@ Microsoft Edge に対して許可またはブロックするサイトのリス�
 - ワイルドカード記号 (\*) は、以下の許可されているパターン リストの規則に従って使用できます。
 - ワイルドカードは、ホスト名のコンポーネント全体 (ピリオドで区切られた部分) またはパスの全体部分 (スラッシュで区切られた部分) にのみ一致します。 たとえば、`http://*contoso.com` はサポートされて**いません**。
 - アドレスにはポート番号を指定できます。 ポート番号を指定しない場合は、次の値が使用されます。
-    - http の場合はポート 80
-    - https の場合はポート 443
+  - http の場合はポート 80
+  - https の場合はポート 443
 - ポート番号でのワイルドカードの使用はサポートされて**いません**。 たとえば、 `http://www.contoso.com:*` と `http://www.contoso.com:*/` はサポートされていません。 
 
     |    [URL]    |    説明    |    ［一致する］    |    ［次の値に一致しない］    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
     |    `http://www.contoso.com`    |    単一のページと一致する    |    `www.contoso.com`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`contoso.com/`    |
     |    `http://contoso.com`    |    単一のページと一致する    |    `contoso.com/`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com`    |
-    |    `http://www.contoso.com/&#42;`   |    `www.contoso.com` で始まるすべての URL と一致する    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
-    |    `http://*.contoso.com/*`    |    `contoso.com` の下のすべてのサブドメインと一致する    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |
-    |    `http://www.contoso.com/images`    |    単一のフォルダーと一致する    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
+    |    `http://www.contoso.com/*;`   |    `www.contoso.com` で始まるすべての URL と一致する    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
+    |    `http://*.contoso.com/*`    |    `contoso.com` の下のすべてのサブドメインと一致する    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |    `http://*contoso.com/*`    |    `contoso.com/` で終わるすべてのサブドメインと一致する    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
+    `http://www.contoso.com/images`    |    単一のフォルダーと一致する    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
     |    `http://www.contoso.com:80`    |    ポート番号を使用し、単一のページと一致する    |    `http://www.contoso.com:80`    |         |
     |    `https://www.contoso.com`    |    セキュリティで保護された単一のページと一致する    |    `https://www.contoso.com`    |    `http://www.contoso.com`    |
     |    `http://www.contoso.com/images/*`    |    1 つのフォルダーおよびすべてのサブフォルダーと一致する    |    `www.contoso.com/images/dogs`<br>`www.contoso.com/images/cats`    |    `www.contoso.com/videos`    |
   
 - 指定することができない入力例を次に示します。
-    - `*.com`
-    - `*.contoso/*`
-    - `www.contoso.com/*images`
-    - `www.contoso.com/*images*pigs`
-    - `www.contoso.com/page*`
-    - IP アドレス
-    - `https://*`
-    - `http://*`
-    - `https://*contoso.com`
-    - `http://www.contoso.com:*`
-    - `http://www.contoso.com: /*`
-  
+  - `*.com`
+  - `*.contoso/*`
+  - `www.contoso.com/*images`
+  - `www.contoso.com/*images*pigs`
+  - `www.contoso.com/page*`
+  - IP アドレス
+  - `https://*`
+  - `http://*`
+  - `https://*contoso.com`
+  - `http://www.contoso.com:*`
+  - `http://www.contoso.com: /*`
+
 ## <a name="define-behavior-when-users-try-to-access-a-blocked-site"></a>ユーザーがブロック サイトへのアクセスを試行するときの動作を定義する
 
 Microsoft Edge に組み込まれているデュアル ID モデルでは、Intune Managed Browser で可能であったものより柔軟なエクスペリエンスを、エンド ユーザーに対して有効にできます。 ユーザーが Microsoft Edge でブロックされているサイトにアクセスしたら、職場コンテキストではなく、個人用コンテキストでリンクを開くよう求めることができます。 これにより、企業リソースを安全な状態に保ちながら、ユーザーを保護された状態に維持できます。 たとえば、Outlook でニュース記事へのリンクがユーザーに送信された場合、ユーザーは個人コンテキストまたは [InPrivate] タブで、リンクを開くことができます。職場のコンテキストでは、ニュースの Web サイトは許可されません。 既定では、これらの移行が許可されます。

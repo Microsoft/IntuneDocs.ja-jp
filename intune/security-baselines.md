@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 07/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e4e1040913daef5418f0b4fa1e56f6ef827dd67
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 16586ece687b5d50ea89b28bfd524f50e65ceb46
+ms.sourcegitcommit: 5ce8726278004bbf072149a9c924091bb0654b7c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713273"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67851476"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune でのセキュリティ ベースラインを使用した Windows 10 デバイスの構成
 
@@ -70,9 +70,9 @@ Intune では、次のセキュリティ ベースラインのインスタンス
   - [2019 年春 (19H1) の MDM セキュリティ ベースライン](security-baseline-settings-mdm.md)
   - [プレビュー:2018 年 10 月の MDM セキュリティ ベースライン](security-baseline-settings-mdm-archive.md)
 
-- **Windows Defender ATP ベースライン**  
+- **Microsoft Defender ATP ベースライン**  
   " *(このベースラインを使用するには、ご使用の環境が [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) を使用するための前提条件を満たしている必要があります)* "。
-  - [プレビュー:Windows Defender ATP ベースライン](security-baseline-settings-defender-atp.md)  
+  - [プレビュー:Microsoft Defender ATP ベースライン](security-baseline-settings-defender-atp.md)  
 
 前にプレビュー テンプレートに基づいて作成したプロファイルは、そのプレビュー テンプレートが新しいプロファイルの作成にもう使えない場合であっても、引き続き使用および変更することができます。 
 
@@ -200,6 +200,6 @@ Microsoft セキュリティ チームは、これらの推奨事項を作成す
 ## <a name="next-steps"></a>次の手順
 - 利用可能なベースラインの最新バージョンの設定を確認します。  
   - [MDM セキュリティ ベースライン](security-baseline-settings-mdm.md)  
-  - [Windows Defender ATP ベースライン](security-baseline-settings-defender-atp.md)  
+  - [Microsoft Defender ATP ベースライン](security-baseline-settings-defender-atp.md)  
 
 - 状態を確認し、[ベースラインとプロファイル](security-baselines-monitor.md)を監視します。

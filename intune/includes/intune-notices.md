@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: fab8f2be48a30f6ad058b3eeb6874a44ff04e6ac
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
+ms.openlocfilehash: d907c5256469e86410c9916d117d3e322d43cfc3
+ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744317"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67812515"
 ---
 以下の通知では、今後の Intune の変更と機能に備えるために役立つ重要な情報が提供されます。 
 
@@ -65,10 +65,26 @@ Intune App SDK またはアプリ ラッピングの統合により、データ�
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
 Microsoft、サードパーティ、および基幹業務 (LOB) アプリを確認します。 Intune APP で保護されているすべてのアプリケーションで、SDK バージョン 8.1.1 以降が確実に使用されているようにする必要があります。
 
-- LOB アプリの場合:SDK バージョン 8.1.1 以降と統合されたアプリを再発行する必要がある場合があります。 最新の SDK バージョンをお勧めします。 アプリ保護ポリシー用に LOB アプリを準備する方法については、「[アプリ保護ポリシーを利用するために基幹業務アプリを準備する](../apps-prepare-mobile-application-management.md)」を参照してください。
+- LOB アプリの場合:SDK バージョン 8.1.1 以降と統合されたアプリを再発行する必要がある場合があります。 最新の SDK バージョンをお勧めします。 アプリ保護ポリシー用に LOB アプリを準備する方法については、「[アプリ保護ポリシーを利用するために基幹業務アプリを準備する](../apps-prepare-mobile-application-management.md)」をご覧ください。
 - Microsoft/サード パーティ アプリの場合:これらの最新バージョンのアプリがユーザーに確実に展開されているようにします。
 
 また、この変更を SDK のサポートに含める場合は、ドキュメントまたは開発者ガイダンスを更新する必要があります。
 
 #### <a name="additional-information"></a>追加情報
 https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
+
+### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>変更の計画:Intune での新しい Windows 更新設定 <!-- 4464404 -->
+Intune サービスの 8 月のリリースまたは 1908 以降、[ユーザーに再起動を許可する (再起動猶予期間)] 設定の代わりに構成できる、新しい [Deadline settings]\(期限の設定\) が追加されます。 再起動猶予期間の設定は、1909 または 9 月の更新プログラムの UI で無効になり、その後 10 月末にかけてコンソールから完全に削除される予定です。 
+
+#### <a name="how-does-this-affect-me"></a>ユーザーへの影響
+ご自身の環境内で Windows 10 デバイスを管理する場合: 
+- Intune の 8 月の更新プログラムまたは 1908 から、前の再起動猶予期間の設定に加えて新しい期限の設定がコンソールに表示されます。
+- この古い設定と新しい設定を両方構成した場合は、期限の設定値によって再起動猶予期間の設定値が上書きされます。
+- 1910 更新プログラムのコンソールから、期限の設定によって [ユーザーに再起動を許可する (再起動猶予期間)] オプションが置き換えられます。
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
+1908 に含まれる期限の設定を必要な値で構成し、その使用を開始してください。 その設定が完了したら、再起動猶予期間の設定を [未構成] に設定して、それらが 10 月にコンソールから削除されることに備えることができます。
+
+必要に応じて、ご自身のドキュメントや自動化スクリプトを更新します。 
+
+Microsoft では最新情報を随時お知らせし、再起動猶予期間の設定を削除する前にメッセージ センターにリマインダーを投稿いたします。
