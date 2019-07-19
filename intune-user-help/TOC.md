@@ -12,7 +12,7 @@
 ### [Android デバイスを登録する理由](why-enroll-android-device.md)
 ### デバイスを登録する
 #### [Android デバイスを登録する](enroll-device-android-company-portal.md)  
-#### [Android 仕事用プロファイルを使用して登録する](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+#### [Android 仕事用プロファイルを使用して登録する](enroll-device-android-work-profile.md)
 #### [Microsoft Intune アプリを使用して登録する](enroll-device-android-microsoft-intune-app.md)
 ### [デバイスで管理対象アプリを使用する](use-managed-apps-on-your-device-android.md)
 ### [デバイスを暗号化する](encrypt-your-device-android.md)
