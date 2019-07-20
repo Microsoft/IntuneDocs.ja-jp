@@ -14,12 +14,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5a0ee88a24804294346888facef523f89fee816
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9e9baf3593883cf2fa2402a0b4daec638a336366
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046649"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884195"
 ---
 # <a name="windows-update-settings-for-intune"></a>Intune での Windows Update の設定  
 
@@ -130,7 +130,7 @@ Microsoft Update のアプリの更新プログラムをスキャンするには
     **Windows リファレンス ドキュメント**: [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)  
     **既定値**: 午後 5 時  
 
-- **[メンテナンス時に自動的にインストールおよび再起動する]** - 更新プログラムを自動的にダウンロードし、デバイスが使用中でもバッテリで実行中でもない自動メンテナンス中にインストールします。 再起動が必要な場合、デバイスは使用されていないときに再起動されます  (これは、アンマネージド デバイスの既定値です)。  
+- **[メンテナンス時に自動的にインストールおよび再起動する]** - 更新プログラムを自動的にダウンロードし、デバイスが使用中でもバッテリで実行中でもない自動メンテナンス中にインストールします。 再起動が必要な場合、デバイスは使用されていないときに再起動されます (これは、アンマネージド デバイスの既定値です)。  
 
   このオプションでは、更新プログラムをインストールした後、デバイスを自動的に再起動できます。 **[アクティブ時間]** 設定の使用については Windows Update 設定で説明されていませんが、自動再起動がブロックされる期間を定義するために Intune によって使用されます。  
 
@@ -156,7 +156,7 @@ Microsoft Update のアプリの更新プログラムをスキャンするには
   - **スケジュールされたインストール時刻**: 更新プログラムをインストールする時刻を指定します。  
     **既定値**: 午前 3 時  
 
-- **[エンド ユーザーによる制御なしで自動的にインストールおよび再起動する]** - 更新プログラムを自動的にダウンロードし、デバイスが使用中でもバッテリで実行中でもない自動メンテナンス中にインストールします。 再起動が必要な場合、デバイスは使用されていないときに再起動されます  このオプションでは、エンドユーザーのコントロール ウィンドウが読み取り専用に設定されます。  
+- **[エンド ユーザーによる制御なしで自動的にインストールおよび再起動する]** - 更新プログラムを自動的にダウンロードし、デバイスが使用中でもバッテリで実行中でもない自動メンテナンス中にインストールします。 再起動が必要な場合、デバイスは使用されていないときに再起動されます このオプションでは、エンドユーザーのコントロール ウィンドウが読み取り専用に設定されます。  
 
 - **[既定にリセット]** - 2018 年 10 月更新以降を実行している Windows 10 コンピューター上で元の自動更新設定を復元します。  
 
@@ -179,8 +179,8 @@ Microsoft Update のアプリの更新プログラムをスキャンするには
 デバイスのユーザーが更新プログラムのインストールを一時停止することを許可またはブロックします。 
 
 ### <a name="block-user-from-scanning-for-windows-updates"></a>ユーザーによる Windows Update のスキャンをブロックする  
- - **既定値**: 許可
- - **Windows リファレンス ドキュメント**: [Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess) 
+- **既定値**: 許可
+- **Windows リファレンス ドキュメント**: [Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess) 
 
 Windows Update をスキャンするためのユーザーによるアクセスに対して許可または禁止を指定します。 たとえば、 *[禁止]* を設定すると、ユーザーは Windows Update のスキャン、ダウンロード、インストール機能にアクセスできません。  
 

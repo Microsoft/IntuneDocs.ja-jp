@@ -1,7 +1,7 @@
 ---
-title: MacOS に Microsoft Intune - Azure でのカーネルの拡張機能のデバイス プロファイルを作成 |Microsoft Docs
+title: Microsoft Intune を使用して macOS カーネル拡張機能デバイスプロファイルを作成する-Azure |Microsoft Docs
 titleSuffix: ''
-description: 追加またはを macOS デバイス プロファイルを作成し、ユーザー オーバーライドを許可するには、Microsoft Intune でのチームの識別子、およびバンドルとチームの識別子の追加のカーネルの拡張機能を構成します。
+description: MacOS デバイスプロファイルを追加または作成し、ユーザーの上書き、チーム識別子の追加、および Microsoft Intune でのバンドルとチーム識別子を許可するようにカーネル拡張を構成します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,54 +15,54 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd2e03c09cb2bed49ee7607283bf63e2c3ae67da
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: eca4692189af9272d3d1fc427b4eba638d8b5b27
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403907"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882985"
 ---
-# <a name="add-macos-kernel-extensions-in-intune"></a>Intune で macOS カーネルの拡張機能を追加します。
+# <a name="add-macos-kernel-extensions-in-intune"></a>Intune で macOS カーネル拡張機能を追加する
 
-MacOS デバイスでは、カーネル レベルで機能を追加できます。 これらの機能は、通常のプログラムにアクセスできないように、その OS のパーツにアクセスします。 組織には、特定のニーズやアプリ、デバイスの機能、およびなどでは使用できない要件があります。 
+MacOS デバイスでは、カーネルレベルで機能を追加できます。 これらの機能は、通常のプログラムがアクセスできない OS の部分にアクセスします。 組織には、アプリやデバイスの機能などでは利用できない特定のニーズや要件がある場合があります。 
 
-デバイス上の負荷を常に許可されるカーネルの拡張機能を追加するには、「カーネルの拡張機能」を追加 (KEXT)、Microsoft Intune で、デバイスにこれらの拡張機能を展開するとします。
+デバイスでの読み込みが常に許可されているカーネル拡張機能を追加するには、Microsoft Intune で "カーネル拡張機能" (KEXT) を追加し、これらの拡張機能をデバイスに展開します。
 
-たとえば、悪意のあるコンテンツには、デバイスをスキャンするウイルス検出プログラムがあるとします。 このウィルス対策プログラムのカーネルの拡張機能として Intune で許可されているカーネル拡張機能を追加することができます。 次に、「割り当てる」拡張機能を macOS デバイスにします。
+たとえば、悪意のあるコンテンツがないかデバイスをスキャンするウイルススキャンプログラムがあるとします。 このウイルス検索プログラムのカーネル拡張機能は、Intune で許可されているカーネル拡張機能として追加できます。 次に、拡張機能を macOS デバイスに "割り当て" ます。
 
-この機能により、管理者は、カーネルの拡張機能をオーバーライドし、チームの識別子を追加、Intune での特定のカーネルの拡張機能の追加を許可できます。
+この機能を使用すると、管理者は、ユーザーがカーネル拡張機能をオーバーライドしたり、チーム識別子を追加したり、Intune で特定のカーネル拡張機能を追加したりできるようになります。
 
 この機能は、以下に適用されます。
 
 - macOS 10.13.2 以降
 
-この機能を使用するには、デバイスがある必要があります。
+この機能を使用するには、デバイスが次のようになっている必要があります。
 
-- Apple の Device Enrollment Program (DEP) を使用して Intune に登録します。 [MacOS デバイスを自動的に登録](device-enrollment-program-enroll-macos.md)の詳細。
+- Apple の Device Enrollment Program (DEP) を使用して Intune に登録されます。 [MacOS デバイスを自動的に登録](device-enrollment-program-enroll-macos.md)する方法についてはこちらを参照してください。
 
   または
 
-- 「承認されたユーザーの登録」に、Intune に登録されている (Apple の用語)。 [MacOS High Sierra でカーネルの拡張機能への変更に備える](https://support.apple.com/en-us/HT208019)(Apple の web サイトを開きます) の詳細が。
+- "ユーザーが承認した登録" (Apple の用語) を使用して Intune に登録されます。 [MacOS High でカーネル拡張機能の変更を準備する](https://support.apple.com/en-us/HT208019)(Apple の web サイトを開きます) 詳細については、こちらを参照してください。
 
 Intune では、"構成プロファイル" を使用して、お客様の組織のニーズに合わせてこのような設定を作成およびカスタマイズします。 これらの機能をプロファイルに追加した後は、そのプロファイルをお客様の組織内の macOS デバイスにプッシュまたは展開できます。
 
-この記事では、カーネルの拡張機能を使用して、Intune でデバイス構成プロファイルを作成する方法を示します。
+この記事では、Intune でカーネル拡張機能を使用してデバイス構成プロファイルを作成する方法について説明します。
 
 > [!TIP]
-> カーネルの拡張機能の詳細については、次を参照してください。[カーネル拡張機能の概要](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/Extend/Extend.html)(Apple の web サイトを開きます)。
+> カーネル拡張機能の詳細については、「[カーネル拡張機能の概要](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/Extend/Extend.html)」 (Apple の web サイトを開きます) を参照してください。
 
 ## <a name="what-you-need-to-know"></a>知っておく必要がある情報
 
-- 符号なしのレガシー カーネルの拡張機能を追加できます。
-- 必ず、適切なチーム識別子を入力し、バンドルのカーネルの拡張機能の ID。 Intune では、入力した値を検証しません。 誤った情報を入力すると、デバイスで、拡張機能は機能しません。
+- 未署名のレガシカーネル拡張機能を追加できます。
+- カーネル拡張機能の正しいチーム識別子とバンドル ID を入力してください。 Intune では、入力した値は検証されません。 間違った情報を入力すると、デバイス上の拡張機能は機能しません。
 
 > [!NOTE]
-> Apple は、署名と証明のすべてのソフトウェアに関する情報をリリースしました。 MacOS 10.14.5 でと、新しいカーネルを Intune で展開された拡張機能は、Apple の証明のポリシーを順守する必要はありません。
+> Apple は、すべてのソフトウェアの署名と notarization 関する情報を公開しました。 MacOS 10.14.5 以降では、Intune を使用して展開されたカーネル拡張機能は、Apple の notarization ポリシーを満たしている必要はありません。
 >
-> この証明ポリシーや更新プログラムの変更については、次のリソースを参照してください。
+> この notarization ポリシー、および更新または変更の詳細については、次のリソースを参照してください。
 >
->  - [配布する前に、アプリを notarizing](https://developer.apple.com/documentation/security/notarizing_your_app_before_distribution) (Apple の web サイトを開きます) 
->  - [MacOS High Sierra でカーネルの拡張機能への変更に備える](https://support.apple.com/en-us/HT208019)(Apple の web サイトを開きます)
+> - [配布前にアプリを使用する](https://developer.apple.com/documentation/security/notarizing_your_app_before_distribution)(Apple の web サイトを開きます) 
+> - [MacOS High でカーネル拡張機能の変更を準備する](https://support.apple.com/en-us/HT208019)(Apple の web サイトを開きます)
 
 ## <a name="create-the-profile"></a>プロファイルの作成
 
@@ -73,7 +73,7 @@ Intune では、"構成プロファイル" を使用して、お客様の組織�
     - **名前**: 新しいプロファイルのわかりやすい名前を入力します。
     - **説明**: プロファイルの説明を入力します この設定は省略可能ですが、推奨されます。
     - **[プラットフォーム]** : **[macOS]** を選択します
-    - **プロファイルの種類**: 選択**拡張**します。
+    - **プロファイルの種類**: **[拡張機能]** を選択します。
     - **[設定]** : 構成する設定内容を入力します。 すべての設定の一覧とその実行内容については、以下を参照してください。
 
         - [macOS](kernel-extensions-settings-macos.md)

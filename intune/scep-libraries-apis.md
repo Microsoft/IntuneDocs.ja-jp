@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc2b324c8c6e1687b8ce5563aa85c155e21fc197
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a7baa95d6719dfa3161ae6644bbc9351d3f3d9f0
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040711"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882382"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>SCEP 用のサード パーティ CA を Intune に追加するための API の使用
 
@@ -176,8 +176,8 @@ SCEP 証明書要求を検証します。
 
 **セキュリティのメモ**  
 
-  - このメソッドで例外がスローされる場合、SCEP サーバーはクライアントに証明書を発行**しないようにする**必要があります。
-  - SCEP 証明書要求の検証が失敗するということは、Intune のインフラストラクチャに問題があることが示唆されます。 または、証明書を取得しようとしている攻撃者がいることが示唆されます。
+- このメソッドで例外がスローされる場合、SCEP サーバーはクライアントに証明書を発行**しないようにする**必要があります。
+- SCEP 証明書要求の検証が失敗するということは、Intune のインフラストラクチャに問題があることが示唆されます。 または、証明書を取得しようとしている攻撃者がいることが示唆されます。
 
 ##### <a name="sendsuccessnotification-method"></a>SendSuccessNotification メソッド
 
@@ -217,8 +217,8 @@ void SendSuccessNotification(
 
 **セキュリティのメモ**
 
-  - このメソッドで例外がスローされる場合、SCEP サーバーはクライアントに証明書を発行**しないようにする**必要があります。
-  - SCEP 証明書要求の検証が失敗するということは、Intune のインフラストラクチャに問題があることが示唆されます。 または、証明書を取得しようとしている攻撃者がいることが示唆されます。
+- このメソッドで例外がスローされる場合、SCEP サーバーはクライアントに証明書を発行**しないようにする**必要があります。
+- SCEP 証明書要求の検証が失敗するということは、Intune のインフラストラクチャに問題があることが示唆されます。 または、証明書を取得しようとしている攻撃者がいることが示唆されます。
 
 ##### <a name="sendfailurenotification-method"></a>SendFailureNotification メソッド
 
@@ -254,8 +254,8 @@ SCEP 要求の処理中にエラーが発生したことを Intune に通知し�
 
 **セキュリティのメモ**
 
-  - このメソッドで例外がスローされる場合、SCEP サーバーはクライアントに証明書を発行**しないようにする**必要があります。
-  - SCEP 証明書要求の検証が失敗するということは、Intune のインフラストラクチャに問題があることが示唆されます。 または、証明書を取得しようとしている攻撃者がいることが示唆されます。
+- このメソッドで例外がスローされる場合、SCEP サーバーはクライアントに証明書を発行**しないようにする**必要があります。
+- SCEP 証明書要求の検証が失敗するということは、Intune のインフラストラクチャに問題があることが示唆されます。 または、証明書を取得しようとしている攻撃者がいることが示唆されます。
 
 ##### <a name="setsslsocketfactory-method"></a>SetSslSocketFactory メソッド
 

@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8d8e1d1bb20f222b202e8c854fc4d1a8ba694fa
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 519ac8529737a870eb4f8ce9a3e06af5b1dcac79
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648909"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353647"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Power BI で OData フィードからレポートを作成する
 
 この記事では、Power BI Desktop と対話型フィルターを使って、ツリーマップの視覚化を作成する方法を説明します。 たとえば、CFO がデバイスの全体的な分布を会社所有デバイスと個人デバイスで比較したいような場合です。 ツリーマップを使用すると、デバイスの種類の合計数に関する洞察が得られます。 会社所有または個人所有の iOS、Android、Windows デバイスの数がわかります。
 
-### <a name="overview-of-creating-the-chart"></a>グラフ作成の概要
+## <a name="overview-of-creating-the-chart"></a>グラフ作成の概要
 
 このグラフを作成するには、次のことを行う必要があります。
 1. まだの場合は Power BI Desktop をインストールします。
@@ -120,5 +120,5 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
 
 ## <a name="next-steps"></a>次の手順
 
- - Power BI のドキュメントで、Power BI Desktop での[リレーションシップの作成と管理](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/)についてさらに学習してください。
- - [Intune データ ウェアハウス モデル](https://docs.microsoft.com/intune/reports-ref-data-model)を確認してください。
+- Power BI のドキュメントで、Power BI Desktop での[リレーションシップの作成と管理](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/)についてさらに学習してください。
+- [Intune データ ウェアハウス モデル](https://docs.microsoft.com/intune/reports-ref-data-model)を確認してください。

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b062dd12f7a9b77f30d4d831a829f3d0316cacf6
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
-ms.translationtype: HT
+ms.openlocfilehash: 7525971f9ab48b92c3274f56cb1046a6fde948a5
+ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735458"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67794364"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin バインディング
 
@@ -104,9 +104,10 @@ SDK では、その[認証](https://azure.microsoft.com/documentation/articles/a
 Intune App SDK を統合するための完全な概要については、「[Microsoft Intune App SDK for Android developer guide](app-sdk-android.md)」 (Android 用 Microsoft Intune App SDK 開発者ガイド) を参照してください。 ガイドに目を通して、Intune App SDK をご利用の Xamarin アプリに統合するときに、Java で開発されたネイティブの Android アプリと、C# で開発された Xamarin アプリでは実装に違いがあり、以降のセクションは、それを明らかにすることを目的としています。 これらのセクションは、補足情報として扱うべきもので、ガイド全体に目を通すことの代わりとなるものではありません。
 
 #### <a name="remapper"></a>Remapper
-1\.4428.1 リリース以降、 `Microsoft.Intune.MAM.Remapper` MAM クラス、メソッド、および systems サービスの交換を実行するための [ビルドツール](app-sdk-android.md#build-tooling)として、パッケージを Xamarin Android アプリケーションに追加できるようになりました。 再マッパーが含まれている場合、名前が変更されたメソッドと MAM アプリケーションセクションの MAM に相当する置換部分は、アプリケーションのビルド時に自動的に実行されます。
+1\.4428.1 リリース以降、 `Microsoft.Intune.MAM.Remapper` MAM クラス、メソッド、および systems サービスの交換を実行するための[ビルドツール](app-sdk-android.md#build-tooling)として、パッケージを Xamarin Android アプリケーションに追加できるようになりました。 再マッパーが含まれている場合、名前が変更されたメソッドと MAM アプリケーションセクションの MAM に相当する置換部分は、アプリケーションのビルド時に自動的に実行されます。
 
 Remapper によって ification からクラスを除外するには、次のプロパティをプロジェクト`.csproj`ファイルに追加します。
+
 ```xml
   <PropertyGroup>
     <ExcludeClasses>Semicolon separated list of relative class paths to exclude from MAM-ification</ExcludeClasses>
@@ -200,7 +201,7 @@ Remapper をプロジェクトに追加すると、MAM に相当する置換を�
 > Remapper により、Visual Studio で IntelliSense のオートコンプリートに使用する依存関係が再度書き込まれます。 そのため、変更が正しく認識されるように IntelliSense に Remapper が追加されるときに、場合によっては、プロジェクトを再度読み込んでリビルドする必要があります。
 
 ### <a name="company-portal-app"></a>ポータル サイト アプリ
-Intune SDK Xamarin バインドでは、アプリ保護ポリシーを[有効](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)にするために、デバイスにポータルサイト Android アプリが存在することに依存しています。 ポータル サイトは、Intune サービスからアプリ保護ポリシーを取得します。 アプリが初期化されるときに、ポータル サイトからポリシーとコードを読み込み、そのポリシーを適用します。 ユーザーはサインインする必要がありません。
+Intune SDK Xamarin バインドでは、アプリ保護ポリシーを有効にするために、デバイスに[ポータルサイト](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)Android アプリが存在することに依存しています。 ポータル サイトは、Intune サービスからアプリ保護ポリシーを取得します。 アプリが初期化されるときに、ポータル サイトからポリシーとコードを読み込み、そのポリシーを適用します。 ユーザーはサインインする必要がありません。
 
 > [!NOTE]
 > ポータル サイト アプリが **Android** デバイス上にない場合、Intune で管理されているアプリは、Intune アプリ保護ポリシーをサポートしていない通常のアプリと同様に動作します。
@@ -208,7 +209,7 @@ Intune SDK Xamarin バインドでは、アプリ保護ポリシーを[有効](h
 デバイス登録が不要なアプリ保護の場合は、ユーザーがポータル サイト アプリを使用してデバイスを登録する必要は _**ありません**_ 。
 
 ### <a name="sample-applications"></a>サンプル アプリケーション
-Xamarin Android および xamarin Forms アプリで MAM 機能を強調表示したサンプルアプリケーション[は](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps)、GitHub から入手できます。
+Xamarin Android および Xamarin Forms アプリで MAM 機能を強調表示したサンプルアプリケーションは、 [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps)から入手できます。
 
 ## <a name="support"></a>Support
 組織が Intune の既存顧客の場合、Microsoft サポートの担当者と共にサポート チケットを開き、[GitHub の問題ページ](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues)で問題を作成してください。Microsoft ができるだけ早くサポートを提供します。 

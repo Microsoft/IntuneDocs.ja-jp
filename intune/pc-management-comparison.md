@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3665a785391d2bff707bf5b8fe0a7e4f6e8a43d
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: fec72636a5d76ce4eb1fa0c28978eeb70d1e61b5
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044527"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353557"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Windows PC のコンピューターとしての管理とモバイル デバイスとしての管理の比較
 
@@ -49,7 +49,7 @@ ms.locfileid: "67044527"
 |**正常性構成証明書**|利用不可|利用可能|
 
 
-### <a name="advantages-of-mdm-windows-pc-management"></a>MDM Windows PC 管理の利点
+## <a name="advantages-of-mdm-windows-pc-management"></a>MDM Windows PC 管理の利点
 最新のモバイル デバイス管理での Windows PC 管理には、次の利点があります。
 - **スケーラビリティ** - MDM 管理は Intune クラウド管理とともに拡張します。 Intune ソフトウェア クライアントの制限は、PC 7,000 台までです。
 - **簡単** - ダウンロード済みのソフトウェア クライアントに依存せず、オペレーティング システムに含まれる最新の管理機能を使用します。

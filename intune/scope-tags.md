@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba1d7669e80fd91398f41c57ca2d27ce78a06041
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 627899eafb2175b2d3034045bd765a10f4a203d6
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403785"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882508"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>分散 IT にロールベースのアクセス制御 (RBAC) とスコープのタグを使用する
 
@@ -42,8 +42,8 @@ ms.locfileid: "67403785"
 
     ![スコープのタグ作成のスクリーンショット](./media/scope-tags/create-scope-tag.png)
 
-3. 特定のグループ内のすべてのデバイスを実行する場合に、選択**スコープのタグを選択したグループ内のすべてのデバイスに割り当てる**します。
-    1. **含めるグループを選択**ページで、このスコープのタグを割り当てるデバイスを含むグループを選択します。
+3. 特定のグループのすべてのデバイスが必要な場合は、 **[選択したグループ内のすべてのデバイスにスコープタグを割り当てる]** を選択します。
+    1. **[含めるグループを選択**してください] ページで、このスコープタグを割り当てるデバイスを含むグループを選択します。
     2. **[選択]** を選択します。
 4. **[作成]** を選択します。
 
@@ -108,17 +108,17 @@ ms.locfileid: "67403785"
 スコープのタグを使用するとき、次のことを忘れないでください。
 
 - 現時点では、スコープのタグは次に割り当てることができます。
-    - ロールの割り当て
-    - デバイス コンプライアンス ポリシー
-    - デバイスの構成プロファイル
-    - Windows 10 更新リング
-    - マネージド デバイス
-    - アプリ
-    - アプリ構成ポリシー - マネージド デバイス
-    - PowerShell スクリプト
-    - DEP トークン
-    - iOS アプリ プロビジョニング プロファイル
-    - Volume Purchase Program (VPP) トークン
+  - ロールの割り当て
+  - デバイス コンプライアンス ポリシー
+  - デバイスの構成プロファイル
+  - Windows 10 更新リング
+  - マネージド デバイス
+  - アプリ
+  - アプリ構成ポリシー - マネージド デバイス
+  - PowerShell スクリプト
+  - DEP トークン
+  - iOS アプリ プロビジョニング プロファイル
+  - Volume Purchase Program (VPP) トークン
 - 管理者が Intune でオブジェクトを作成すると、その管理者に割り当てられているすべてのスコープのタグが新しいオブジェクトに自動的に割り当てられます。
 - Intune RBAC は Azure Active Directory ロールに適用されません。 そのため、Intune Service Admins ロールと Global Admins ロールには、与えられているスコープのタグに関係なく、Intune への完全な管理者アクセス権が与えられます。
 - スコープのタグを含むロールの割り当ての管理者は、スコープのタグがない Intune オブジェクトも表示できます。

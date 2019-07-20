@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ebae39c529571c5f926debcf64b46d6399d770f
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 5a119154c4676d3c8039463b181263d516bb2b51
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547951"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353522"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>グループ ポリシー オブジェクト (GPO) と Microsoft Intune ポリシーの競合を解決する
 
@@ -123,5 +123,5 @@ GPO は、グループ ポリシー管理コンソールで、選択した GPO �
 
 新しいセキュリティ グループは、Intune サービス変更の登録として保持する必要があります。
 
-### <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目
 [Microsoft Intune を使用して Windows PC を管理する](manage-windows-pcs-with-microsoft-intune.md)

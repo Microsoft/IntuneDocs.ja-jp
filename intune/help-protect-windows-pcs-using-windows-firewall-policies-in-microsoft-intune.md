@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eade2a1bc19e4b0c477faf2ad8e262196da8cc30
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: b79f488fcaa221523b5833aa1cebcf872d5f9b3d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572515"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354006"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Microsoft Intune で Windows ファイアウォール ポリシーを使用して Windows PC を保護する
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> このトピックの情報は、Intune ソフトウェア クライアントを使用して PC として管理している Windows デスクトップにのみ適用されます。 Windows Pc 用ファイアウォールの設定がモバイル デバイスとして登録して管理する場合は、「 [Intune での endpoint protection 設定を追加する](endpoint-protection-configure.md)します。
+> このトピックの情報は、Intune ソフトウェア クライアントを使用して PC として管理している Windows デスクトップにのみ適用されます。 モバイルデバイスとして登録されている Windows Pc のファイアウォール設定を管理する場合は、「 [Intune での endpoint protection 設定の追加](endpoint-protection-configure.md)」を参照してください。
 
 Microsoft Intune を使用すると、Intune クライアントで管理する Windows PC をさまざまな方法で保護することができます。 たとえば、PC で Windows ファイアウォールの設定を構成できるようにするポリシーを提供できます。
 
@@ -140,5 +140,5 @@ Windows ファイアウォール ポリシーを展開したら、 **[ポリシ�
 |**Windows Virtual PC**<br>(Windows 7 以降)|仮想マシンが他のコンピューターと通信できるようになります。|
 |**ワイヤレス ポータブル デバイス**|メディア転送プロトコル (MTP) を使用して、ネットワーク対応のカメラまたはメディア デバイスから、マネージド コンピューターにメディアを転送できるようになります。 この設定は、SSDP および UPnP ネットワーク プロトコルを使用します。|
 
-### <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目
 [Windows PC を保護するためのポリシー](policies-to-protect-windows-pcs-in-microsoft-intune.md)

@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5614f0657175658c1a8442d650e16c8550c1ac1
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: f476c3129f3f3da4cde98fd0cd9960c223ffd6ae
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043842"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884265"
 ---
 # <a name="what-is-device-management"></a>デバイス管理とは 
 
@@ -58,8 +58,8 @@ Intune により、ユーザーごと、および iOS、macOS、Android、Window
 
 - **Windows Defender** には、Windows 10 デバイスを保護するための多くのセキュリティ機能が含まれています。 たとえば、Intune と Windows Defender を一緒に使用すると、次のことができます。 
 
-    - [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) を有効にして、モバイル デバイス上のファイルとアプリでの不審なアクティビティを検索できます。 
-    - モバイル デバイスに対するセキュリティ侵害を防ぐには、[Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) を使用します。 また、ユーザーを企業リソースからブロックすることで、セキュリティ侵害の影響を抑えるために役立ちます。
+  - [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) を有効にして、モバイル デバイス上のファイルとアプリでの不審なアクティビティを検索できます。 
+  - モバイル デバイスに対するセキュリティ侵害を防ぐには、[Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) を使用します。 また、ユーザーを企業リソースからブロックすることで、セキュリティ侵害の影響を抑えるために役立ちます。
 
 - **条件付きアクセス**は、Azure Active Directory の機能で、Intune とうまく統合されます。 [条件付きアクセス](https://docs.microsoft.com/intune/conditional-access)を使用することで、確実に準拠しているデバイスのみに電子メール、SharePoint、およびその他のアプリへのアクセスを許可します。 
 

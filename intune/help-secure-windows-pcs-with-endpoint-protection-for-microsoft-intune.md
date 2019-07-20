@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9b32b7b7bc3bfa7735a7e4437e8238630e56884
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 61e0a7fa4fa63e17a1fa4165042d9e82a2ffacc2
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548775"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354089"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Microsoft Intune の Endpoint Protection を使用して Windows PC を保護する
 
@@ -145,8 +145,8 @@ Microsoft Intune の Endpoint Protection を構成するには、次の手順に
 
 ### <a name="specify-microsoft-active-protection-service-settings"></a>Microsoft Active Protection サービスの設定を指定する
 Microsoft Active Protection Service は、潜在的な脅威の対処方法についてさまざまな情報が交換、掲載されているオンライン コミュニティです。 このコミュニティは、マルウェアの新たな感染が広がらないようにする際にも役立ちます。 **Microsoft Active Protection Service に参加する**には、 **[はい]** を選択し、 **[メンバーシップ レベル]** を指定します。
-  - **基本** - 検出されたマルウェアに関する基本情報を Microsoft に送信します。 基本情報には、ソフトウェアの発信元、ユーザーが実行する処置、Endpoint Protection によって自動的に実行される処置、処置の実行結果などが含まれます。
-  - **詳細** - マルウェア、スパイウェア、望ましくない可能性のあるソフトウェアの詳細情報を Microsoft に送信します。 詳細情報には、ソフトウェアの場所、ファイル名、ソフトウェアの動作、感染したコンピューターへの影響などが含まれます。
+- **基本** - 検出されたマルウェアに関する基本情報を Microsoft に送信します。 基本情報には、ソフトウェアの発信元、ユーザーが実行する処置、Endpoint Protection によって自動的に実行される処置、処置の実行結果などが含まれます。
+- **詳細** - マルウェア、スパイウェア、望ましくない可能性のあるソフトウェアの詳細情報を Microsoft に送信します。 詳細情報には、ソフトウェアの場所、ファイル名、ソフトウェアの動作、感染したコンピューターへの影響などが含まれます。
 
 **Microsoft Active Protection Service のレポートに基づいて動的な定義を受信する**こともできます。
 
@@ -197,5 +197,5 @@ Intune では、Intune クライアントがインストールされているリ
 ## <a name="need-more-help"></a>さらにヘルプが必要な場合
 さらにヘルプやサポートが必要な場合は、「[Microsoft Intune におけるエンドポイント保護のトラブルシューティング](troubleshoot-endpoint-protection-in-microsoft-intune.md)」を参照してください。
 
-### <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 [Windows PC を保護するためのポリシー](policies-to-protect-windows-pcs-in-microsoft-intune.md)

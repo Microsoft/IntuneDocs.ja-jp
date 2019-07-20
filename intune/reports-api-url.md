@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d2e6c99d9493d935f4a8f87c6525af19796b5f6
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 59e2a681c542da46a2e938c7bf07e7185925aab2
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648794"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313744"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune データ ウェアハウス API エンドポイント
 
@@ -51,7 +51,7 @@ URL には、次の要素が含まれています。
 | 要素 | 例 | 説明 |
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | location | msua06 | Azure Portal でデータ ウェアハウス API ブレードを表示すると、ベース URL を確認できます。 |
-| entity-collection | dates | OData エンティティ コレクションの名前。 データ モデルのコレクションとエンティティの詳細については、「[Data Model](reports-ref-data-model.md)」(データ モデル) を参照してください。 |
+| entity-collection | devicePropertyHistories | OData エンティティ コレクションの名前。 データ モデルのコレクションとエンティティの詳細については、「[Data Model](reports-ref-data-model.md)」(データ モデル) を参照してください。 |
 | api-version | beta | Version はアクセスする API のバージョンです。 詳細については、「[API のバージョン情報](reports-api-url.md#api-version-information)」を参照してください。 |
 | maxhistorydays | 7 | (省略可能) 取得する履歴の最大日数。 このパラメーターは任意のコレクションに適用できますが、キー プロパティの一部として `dateKey` を含むコレクションにのみ影響します。 詳細については、「[DateKey 範囲のフィルター](reports-api-url.md#datekey-range-filters)」を参照してください。 |
 

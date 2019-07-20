@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f182d356c151c569b9cf49adfe2f2c0cc34f1a54
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: b655dc64958350623ea62caf848043f6baf3787c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548903"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883307"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Azure AD を使用して Microsoft Graph の Intune API にアクセスする方法
 
@@ -30,13 +30,13 @@ Microsoft Graph の Intune API へのアクセスには、以下のものが必�
 
 - アプリケーション ID と、
 
-    - Azure AD および Microsoft Graph API を呼び出すアクセス許可。
-    - 特定のアプリケーション タスクに関連したアクセス許可スコープ。
+  - Azure AD および Microsoft Graph API を呼び出すアクセス許可。
+  - 特定のアプリケーション タスクに関連したアクセス許可スコープ。
 
 - ユーザー資格情報と、
 
-    - アプリケーションに関連付けられている Azure AD テナントへのアクセス許可。
-    - アプリケーションのアクセス許可スコープをサポートするために必要な役割のアクセス許可。
+  - アプリケーションに関連付けられている Azure AD テナントへのアクセス許可。
+  - アプリケーションのアクセス許可スコープをサポートするために必要な役割のアクセス許可。
 
 - Azure テナントのアプリケーション タスク実行に必要なアクセス許可をアプリに付与するエンド ユーザー。
 
@@ -61,7 +61,7 @@ Microsoft Graph の Intune API へのアクセスには、以下のものが必�
 
 Microsoft Graph API を使用するアプリを登録するには、次の作業を行います。
 
-1. サインインする[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)管理者の資格情報を使用します。
+1. 管理者資格情報を使用して[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)にサインインします。
 
     必要に応じて、次を使用することができます。
     - テナントの管理者アカウント。
@@ -164,10 +164,10 @@ __Microsoft Intune の構成の読み取り__ | DeviceManagementServiceConfig.Re
 - **[アクセスを有効にする]** 設定: __Microsoft Intune アプリの読み取り__
 
 - 次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。
-    - クライアント アプリ
-    - モバイル アプリ カテゴリ
-    - アプリ保護ポリシー
-    - アプリの構成
+  - クライアント アプリ
+  - モバイル アプリ カテゴリ
+  - アプリ保護ポリシー
+  - アプリの構成
 
 ### <a name="app-rw"></a>DeviceManagementApps.ReadWrite.All
 
@@ -177,19 +177,19 @@ __Microsoft Intune の構成の読み取り__ | DeviceManagementServiceConfig.Re
 
 - また、次のエンティティに対する変更を許可します。
 
-    - クライアント アプリ
-    - モバイル アプリ カテゴリ
-    - アプリ保護ポリシー
-    - アプリの構成
+  - クライアント アプリ
+  - モバイル アプリ カテゴリ
+  - アプリ保護ポリシー
+  - アプリの構成
 
 ### <a name="cfg-ro"></a>DeviceManagementConfiguration.Read.All
 
 - **[アクセスを有効にする]** 設定: __Microsoft Intune のデバイスの構成とポリシーの読み取り__
 
 - 次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。
-    - デバイス構成
-    - デバイス コンプライアンス ポリシー
-    - 通知メッセージ
+  - デバイス構成
+  - デバイス コンプライアンス ポリシー
+  - 通知メッセージ
 
 ### <a name="cfg-ra"></a>DeviceManagementConfiguration.ReadWrite.All
 
@@ -198,34 +198,34 @@ __Microsoft Intune の構成の読み取り__ | DeviceManagementServiceConfig.Re
 - __DeviceManagementConfiguration.Read.All__ と同じ操作を許可します。
 
 - また、アプリでは次のエンティティを作成、割り当て、削除、および変更できます。
-    - デバイス構成
-    - デバイス コンプライアンス ポリシー
-    - 通知メッセージ
+  - デバイス構成
+  - デバイス コンプライアンス ポリシー
+  - 通知メッセージ
 
 ### <a name="mgd-po"></a>DeviceManagementManagedDevices.PrivilegedOperations.All
 
 - **[アクセスを有効にする]** 設定: __Microsoft Intune デバイスでユーザーに影響を与えるリモート操作を実行する__
 
 - マネージド デバイスへの次のリモート操作を許可します。
-    - インベントリから削除
-    - ワイプ
-    - パスコードのリセット/復旧
-    - リモート ロック
-    - 紛失モードの有効/無効
-    - PC のクリーンアップ
-    - 再起動
-    - 共有デバイスからのユーザーの削除
+  - インベントリから削除
+  - ワイプ
+  - パスコードのリセット/復旧
+  - リモート ロック
+  - 紛失モードの有効/無効
+  - PC のクリーンアップ
+  - 再起動
+  - 共有デバイスからのユーザーの削除
 
 ### <a name="mgd-ro"></a>DeviceManagementManagedDevices.Read.All
 
 - **[アクセスを有効にする]** 設定: __Microsoft Intune デバイスの読み取り__
 
 - 次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。
-    - マネージド デバイス
-    - デバイスのカテゴリ
-    - 検出されたアプリ
-    - リモート操作
-    - マルウェア情報
+  - マネージド デバイス
+  - デバイスのカテゴリ
+  - 検出されたアプリ
+  - リモート操作
+  - マルウェア情報
 
 ### <a name="mgd-rw"></a>DeviceManagementManagedDevices.ReadWrite.All
 
@@ -234,22 +234,22 @@ __Microsoft Intune の構成の読み取り__ | DeviceManagementServiceConfig.Re
 - __DeviceManagementManagedDevices.Read.All__ と同じ操作を許可します。
 
 - また、アプリでは次のエンティティを作成、削除、変更できます。
-    - マネージド デバイス
-    - デバイスのカテゴリ
+  - マネージド デバイス
+  - デバイスのカテゴリ
 
 - 次のリモート操作も実行できます。
-    - デバイスの検索
-    - アクティベーション ロックのバイパス
-    - リモート アシスタンスの要求
+  - デバイスの検索
+  - アクティベーション ロックのバイパス
+  - リモート アシスタンスの要求
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All
 
 - **[アクセスを有効にする]** 設定: __Microsoft Intune RBAC の設定の読み取り__
 
 - 次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。
-    - ロールの割り当て
-    - ロールの定義
-    - リソースの操作
+  - ロールの割り当て
+  - ロールの定義
+  - リソースの操作
 
 ### <a name="rac-rw"></a>DeviceManagementRBAC.ReadWrite.All
 
@@ -258,24 +258,24 @@ __Microsoft Intune の構成の読み取り__ | DeviceManagementServiceConfig.Re
 - __DeviceManagementRBAC.Read.All__ と同じ操作を許可します。
 
 - また、アプリでは次のエンティティを作成、割り当て、削除、および変更できます。
-    - ロールの割り当て
-    - ロールの定義
+  - ロールの割り当て
+  - ロールの定義
 
 ### <a name="svc-ro"></a>DeviceManagementServiceConfig.Read.All
 
 - **[アクセスを有効にする]** 設定: __Microsoft Intune の構成の読み取り__
 
 - 次のエンティティのプロパティとステータスへの読み取りアクセスを許可します。
-    - デバイスの登録
-    - Apple Push Notification 証明書
-    - Apple Device Enrollment Program
-    - Apple Volume Purchase Program
-    - Exchange Connector
-    - 使用条件
-    - 通信経費管理
-    - クラウド PKI
-    - ブランド化
-    - Mobile Threat Defense
+  - デバイスの登録
+  - Apple Push Notification 証明書
+  - Apple Device Enrollment Program
+  - Apple Volume Purchase Program
+  - Exchange Connector
+  - 使用条件
+  - 通信経費管理
+  - クラウド PKI
+  - ブランド化
+  - Mobile Threat Defense
 
 ### <a name="svc-rw"></a>DeviceManagementServiceConfig.ReadWrite.All
 
@@ -284,16 +284,16 @@ __Microsoft Intune の構成の読み取り__ | DeviceManagementServiceConfig.Re
 - DeviceManagementServiceConfig.Read.All と同じ操作を許可します。
 
 - また、アプリでは Intune の次の機能を構成できます。
-    - デバイスの登録
-    - Apple Push Notification 証明書
-    - Apple Device Enrollment Program
-    - Apple Volume Purchase Program
-    - Exchange Connector
-    - 使用条件
-    - 通信経費管理
-    - クラウド PKI
-    - ブランド化
-    - Mobile Threat Defense
+  - デバイスの登録
+  - Apple Push Notification 証明書
+  - Apple Device Enrollment Program
+  - Apple Volume Purchase Program
+  - Exchange Connector
+  - 使用条件
+  - 通信経費管理
+  - クラウド PKI
+  - ブランド化
+  - Mobile Threat Defense
 
 ## <a name="azure-ad-authentication-examples"></a>Azure AD 認証の例
 

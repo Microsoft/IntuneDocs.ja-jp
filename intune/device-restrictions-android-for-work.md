@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc91fc685c28beff38dc395dd83b60e99343af57
-ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
+ms.openlocfilehash: d4ab90a36254de49eb27e326086ffb137c782005
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67263692"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883427"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように Android エンタープライズ デバイスを設定する
 
@@ -56,7 +56,7 @@ ms.locfileid: "67263692"
 - **[NFC を使用してビームでデータを転送]** : **[ブロック]** を選択すると、近距離無線通信 (NFC) テクノロジを使用してアプリからビームでデータを転送できなくなります。 **[未構成]** では、NFC を使用してデバイス間でデータを共有できるようになります。
 - **[デバッグ機能]** : **[許可]** を選択すると、ユーザーがデバイス上でデバッグ機能を使用できるようになります。 **[未構成]** では、ユーザーがデバイス上でデバッグ機能を使用できなくなります。
 - **[マイクの調整]** : **[ブロック]** を選択すると、ユーザーがマイクのミュートを解除したり、マイクのボリュームを調整したりできなくなります。 **[未構成]** では、ユーザーがデバイス上でマイクのボリュームを使用したり調整したりできるようになります。
-- **[工場出荷時の設定へのリセット防止のためのメール アドレス]** : **[Google アカウントのメール アドレス]** を選択します。 ワイプ後にデバイスのロックを解除できるデバイス管理者のメール アドレスを入力します。 複数のメール アドレスはセミコロンで区切ります (例: `admin1@gmail.com;admin2@gmail.com`)。 メール アドレスを入力しない場合は、デバイスが出荷時の設定に復元された後にだれでもロック解除できます。 これらの電子メールは、実行中の回復 メニューを使用して出荷時の設定など、非ユーザーの出荷時の設定を実行した場合にのみ適用されます。
+- **[工場出荷時の設定へのリセット防止のためのメール アドレス]** : **[Google アカウントのメール アドレス]** を選択します。 ワイプ後にデバイスのロックを解除できるデバイス管理者のメール アドレスを入力します。 複数のメール アドレスはセミコロンで区切ります (例: `admin1@gmail.com;admin2@gmail.com`)。 メール アドレスを入力しない場合は、デバイスが出荷時の設定に復元された後にだれでもロック解除できます。 これらの電子メールは、[回復] メニューを使用して出荷時の設定へのリセットを実行するなど、非ユーザーファクトリのリセットが実行された場合にのみ適用されます。
 - **[ネットワーク脱出ハッチ]** : **[有効化]** を選択すると、ユーザーがネットワーク脱出ハッチ機能をオンにできるようになります。 デバイスのブート時にネットワークに接続できない場合、脱出ハッチは一時的にネットワークに接続してデバイス ポリシーを更新するよう求めます。 ポリシーが適用されると、一時的なネットワークの情報は消去され、デバイスのブートが続行します。 この機能では次の場合にデバイスがネットワークに接続されます。
   - 前回のポリシー内に適切なネットワークがない。
   - デバイスがアプリにロック タスク モードでブートする。
@@ -101,7 +101,7 @@ ms.locfileid: "67263692"
   > 
   > **Managed Home Screen** アプリを構成プロファイルに含める必要はありませんが、クライアント アプリとして追加する必要があります。 **Managed Home Screen** アプリをクライアント アプリとして追加すると、構成プロファイルに追加するその他のすべてのアプリが **Managed Home Screen** アプリ上でアイコンとして表示されます。 
   >
-  > マルチ アプリ キオスク モードのホーム画面の管理を使用する場合、ダイヤラー/フォン アプリが正しく機能しない可能性があります。 
+  > 管理されたホーム画面でマルチアプリキオスクモードを使用すると、ダイヤラーアプリが正常に機能しないことがあります。 
 
   - **[追加]** を選択して、一覧からアプリを選択します。
 
@@ -208,9 +208,9 @@ ms.locfileid: "67263692"
     - **パッケージ ID**: Google Play ストアでのアプリのパッケージ ID を入力します。 たとえば、Play ストアでのアプリの URL が `https://play.google.com/store/details?id=com.contosovpn.android.prod` の場合、パッケージ ID は `com.contosovpn.android.prod` になります。
 
   > [!IMPORTANT]
-  >  - 選択した VPN クライアントは、デバイスにインストールされている必要があり、仕事用プロファイルでアプリごとの VPN をサポートしている必要があります。 そうでない場合、エラーが発生します。 
-  >  - **Managed Google Play ストア**で VPN クライアント アプリを承認し、アプリを Intune に同期して、アプリをデバイスに展開する必要があります。 これを行うと、アプリがユーザーの仕事用プロファイルにインストールされます。
-  >  - Android 3.0.4 用の F5 Access と共にアプリごとの VPN を使用する場合、既知の問題がある可能性があります。 詳細については、[Android 3.0.4 用の F5 Access に向けた F5 のリリース ノート](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android)をご覧ください。
+  > - 選択した VPN クライアントは、デバイスにインストールされている必要があり、仕事用プロファイルでアプリごとの VPN をサポートしている必要があります。 そうでない場合、エラーが発生します。 
+  > - **Managed Google Play ストア**で VPN クライアント アプリを承認し、アプリを Intune に同期して、アプリをデバイスに展開する必要があります。 これを行うと、アプリがユーザーの仕事用プロファイルにインストールされます。
+  > - Android 3.0.4 用の F5 Access と共にアプリごとの VPN を使用する場合、既知の問題がある可能性があります。 詳細については、[Android 3.0.4 用の F5 Access に向けた F5 のリリース ノート](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android)をご覧ください。
 
 - **ロックダウン モード**: すべてのネットワーク トラフィックで VPN トンネルの使用を強制するには、 **[有効化]** を選択します。 VPN への接続が確立されていない場合、デバイスはネットワークにアクセスできません。
 
@@ -315,9 +315,9 @@ ms.locfileid: "67263692"
     - **パッケージ ID**: Google Play ストアでのアプリのパッケージ ID を入力します。 たとえば、Play ストアでのアプリの URL が `https://play.google.com/store/details?id=com.contosovpn.android.prod` の場合、パッケージ ID は `com.contosovpn.android.prod` になります。
 
   > [!IMPORTANT]
-  >  - 選択した VPN クライアントは、デバイスにインストールされている必要があり、仕事用プロファイルでアプリごとの VPN をサポートしている必要があります。 そうでない場合、エラーが発生します。 
-  >  - **Managed Google Play ストア**で VPN クライアント アプリを承認し、アプリを Intune に同期して、アプリをデバイスに展開する必要があります。 これを行うと、アプリがユーザーの仕事用プロファイルにインストールされます。
-  >  - Android 3.0.4 用の F5 Access と共にアプリごとの VPN を使用する場合、既知の問題がある可能性があります。 詳細については、[Android 3.0.4 用の F5 Access に向けた F5 のリリース ノート](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android)をご覧ください。
+  > - 選択した VPN クライアントは、デバイスにインストールされている必要があり、仕事用プロファイルでアプリごとの VPN をサポートしている必要があります。 そうでない場合、エラーが発生します。 
+  > - **Managed Google Play ストア**で VPN クライアント アプリを承認し、アプリを Intune に同期して、アプリをデバイスに展開する必要があります。 これを行うと、アプリがユーザーの仕事用プロファイルにインストールされます。
+  > - Android 3.0.4 用の F5 Access と共にアプリごとの VPN を使用する場合、既知の問題がある可能性があります。 詳細については、[Android 3.0.4 用の F5 Access に向けた F5 のリリース ノート](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android)をご覧ください。
 
 - **ロックダウン モード**: すべてのネットワーク トラフィックで VPN トンネルの使用を強制するには、 **[有効化]** を選択します。 VPN への接続が確立されていない場合、デバイスはネットワークにアクセスできません。
 

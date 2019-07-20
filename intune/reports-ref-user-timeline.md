@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3fa483a49ad7fa44172a83f024540a75d1d881dc
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b61f4ded04d01f04727768557e6730c34fd4760c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040922"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882455"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Microsoft Intune データ ウェアハウスのユーザー有効期間の表記
 
@@ -36,13 +36,13 @@ ms.locfileid: "66040922"
 
 2017 年 6 月 1 日にライセンスを割り当てられる **John Smith** というユーザーがいるとすると、**ユーザー** テーブルには次のエントリが表示されます。 
  
-| DisplayName  | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
+| DisplayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
 | John Smith | FALSE | 06/01/2017 | 12/31/9999 | TRUE
  
 John Smith は、2017 年 7 月 25 日に自分のライセンスを破棄します。 **ユーザー** テーブルには次のエントリが表示されます。 既存のレコード中の変更内容は `marked` です。 
 
-| DisplayName  | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
+| DisplayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
 | John Smith | FALSE | 06/01/2017 | `07/26/2017` | `FALSE` 
 | John Smith | TRUE | 07/26/2017 | 12/31/9999 | TRUE 
@@ -51,7 +51,7 @@ John Smith は、2017 年 7 月 25 日に自分のライセンスを破棄しま
 
 2017 年 8 月 31 日に新しいライセンスを割り当てられる John Smith というユーザーがいるとすると、ユーザー テーブルには次のエントリが表示されます。
  
-| DisplayName  | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
+| DisplayName | IsDeleted | StartDateInclusiveUTC | EndDateExclusiveUTC | IsCurrent 
 | -- | -- | -- | -- | -- |
 | John Smith | FALSE | 06/01/2017 | 07/26/2017 | FALSE 
 | John Smith | TRUE | 07/26/2017 | `08/31/2017` | `FALSE` 
@@ -79,5 +79,5 @@ John Smith は、2017 年 7 月 25 日に自分のライセンスを破棄しま
 
 ## <a name="next-steps"></a>次の手順
 
- - **現在のユーザー** エンティティの詳細については、「[現在のユーザー エンティティのリファレンス](reports-ref-current-user.md)」をご覧ください。
- - **ユーザー** エンティティの詳細については、「[ユーザー エンティティのリファレンス](reports-ref-user.md)」をご覧ください。
+- **現在のユーザー** エンティティの詳細については、「[現在のユーザー エンティティのリファレンス](reports-ref-current-user.md)」をご覧ください。
+- **ユーザー** エンティティの詳細については、「[ユーザー エンティティのリファレンス](reports-ref-user.md)」をご覧ください。

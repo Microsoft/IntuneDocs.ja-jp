@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f012b1cec67de762bbc245f249125f29d37c6930
-ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
+ms.openlocfilehash: c3287238900725acebefc23eb00246cd04c7a5bb
+ms.sourcegitcommit: fd2499df5123758ecb093b4cdd486e35f713b040
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66506844"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68230087"
 ---
 # <a name="check-compliance-on-your-android-device"></a>Android デバイスでコンプライアンス対応を確認する
 
@@ -31,6 +31,6 @@ ms.locfileid: "66506844"
 
 1. お使いのデバイスで Android 用のポータル サイト アプリを開きます。  
 
-2. **[デバイス設定の確認]** をタップします。  
+2. **[デバイス設定の確認]** をタップします。   
 
 紛失したまたは盗難にあったデバイスを自分でリセットできない場合は、会社のサポートに依頼してください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。  

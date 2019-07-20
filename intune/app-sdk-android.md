@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cad30b0cf446d6591cba2997261f049ad6ae983
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: b033052ebd5d3d26976482ea2435c8a0d7314c8e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735637"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885046"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android 用 Microsoft Intune アプリ SDK 開発者ガイド
 
@@ -116,8 +116,8 @@ apply plugin: 'com.microsoft.intune.mam'
 * [含める外部依存関係](#usage-of-includeexternallibraries) 
 * 処理から除外する特定のクラス
 * 処理から除外するバリアント これらは完全なバリアント名または単一のフレーバーのいずれかを参照できます。 例
-     * ご利用のアプリにフレーバー {`savory`, `sweet`} と {`vanilla`, `chocolate`} を含むビルドの種類 `debug` と `release` がある場合は、指定できます。
-     * savory フレーバーを含むバリアントをすべて除外するには `savory`、正確なバリアントのみを除外するには `savoryVanillaRelease`。
+  * ご利用のアプリにフレーバー {`savory`, `sweet`} と {`vanilla`, `chocolate`} を含むビルドの種類 `debug` と `release` がある場合は、指定できます。
+  * savory フレーバーを含むバリアントをすべて除外するには `savory`、正確なバリアントのみを除外するには `savoryVanillaRelease`。
 
 #### <a name="example-partial-buildgradle"></a>部分的な build.gradle の例
 
@@ -680,15 +680,15 @@ SDK では[認証](https://azure.microsoft.com/documentation/articles/active-dir
 
 * **NonBrokerRedirectURI** は、ブローカーを使用しない場合に使用する AAD リダイレクト URI です。 指定しない場合は、既定値の `urn:ietf:wg:oauth:2.0:oob` が使用されます。 この既定値は、ほとんどのアプリケーションに適しています。
 
-    * SkipBroker が "true" の場合にのみ、NonBrokerRedirectURI が使用されます。
+  * SkipBroker が "true" の場合にのみ、NonBrokerRedirectURI が使用されます。
 
 * **SkipBroker** は、既定の ADAL SSO への参加の動作をオーバーライドするために使用されます。 SkipBroker は、ClientID を指定**し**、ブローカー認証/デバイス全体の SSO をサポートしないアプリにのみ指定する必要があります。 この場合は、"true" に設定する必要があります。 ほとんどのアプリでは、SkipBroker パラメーターを設定できません。
 
-    * ClientID は、SkipBroker の値を指定するためにマニフェストで指定する**必要があります**。
+  * ClientID は、SkipBroker の値を指定するためにマニフェストで指定する**必要があります**。
 
-    * ClientID が指定されている場合、既定値は "false" となります。
+  * ClientID が指定されている場合、既定値は "false" となります。
 
-    * SkipBroker が "true" の場合は、NonBrokerRedirectURI が使用されます。 ADAL を統合しない (したがって、ClientID がない) アプリの場合も、既定で "true" に設定されます。
+  * SkipBroker が "true" の場合は、NonBrokerRedirectURI が使用されます。 ADAL を統合しない (したがって、ClientID がない) アプリの場合も、既定で "true" に設定されます。
 
 ### <a name="common-adal-configurations"></a>ADAL の一般的な構成
 
@@ -1317,48 +1317,48 @@ ID を設定するために使用されるすべてのメソッドは、`MAMIden
 
 #### <a name="examples"></a>例
 
-  1. アクティビティが別の MAM アプリによって送信された`Intent`から起動された場合、そのアクティビティの ID は、`Intent`の送信時に他のアプリで有効な ID に基づいて設定されます。
+1. アクティビティが別の MAM アプリによって送信された`Intent`から起動された場合、そのアクティビティの ID は、`Intent`の送信時に他のアプリで有効な ID に基づいて設定されます。
 
-  2. サービスについては、スレッドの ID は、`onStart` または `onBind` 呼び出しの期間に同様に設定されます。 `onBind` から返される `Binder` の呼び出しでも、スレッド ID が一時的に設定されます。
+2. サービスについては、スレッドの ID は、`onStart` または `onBind` 呼び出しの期間に同様に設定されます。 `onBind` から返される `Binder` の呼び出しでも、スレッド ID が一時的に設定されます。
 
-  3. `ContentProvider` の呼び出しでは同様に、それらの期間にスレッド ID を設定します。
-
-
-  さらに、アクティビティとのユーザー対話により、暗黙的な ID 切り替えが行われる場合があります。
-
-  **例:** ユーザーが `Resume` 中に認証プロンプトを取り消した場合、空の ID に暗黙的に切り替えられます。
-
-  アプリはこれらの変更を認識し、必要に応じて禁止することができます。 `MAMService` および `MAMContentProvider` は、サブクラスでオーバーライドできる以下のメソッドを公開します。
-
-  ```java
-  public void onMAMIdentitySwitchRequired(final String identity,
-    final AppIdentitySwitchResultCallback callback);
-  ```
-
-  `MAMActivity` クラスでは、メソッドには次の追加のパラメーターがあります。
-
-  ```java
-  public void onMAMIdentitySwitchRequired(final String identity,
-    final AppIdentitySwitchReason reason,
-    final AppIdentitySwitchResultCallback callback);
-  ```
-
-  * `AppIdentitySwitchReason` は、暗黙的な切り替えのソースをキャプチャし、値 `CREATE`、`RESUME_CANCELLED`、および `NEW_INTENT` を受け入れることができます。  `RESUME_CANCELLED` の理由は、アクティビティの再開時に、PIN、認証、または他のコンプライアンス UI が表示され、ユーザーがその UI を取り消そうとした場合 (通常は、[戻る] ボタンを使用) に使用されます。
+3. `ContentProvider` の呼び出しでは同様に、それらの期間にスレッド ID を設定します。
 
 
-  * `AppIdentitySwitchResultCallback` は次のとおりです。
+    さらに、アクティビティとのユーザー対話により、暗黙的な ID 切り替えが行われる場合があります。
+
+    **例:** ユーザーが `Resume` 中に認証プロンプトを取り消した場合、空の ID に暗黙的に切り替えられます。
+
+    アプリはこれらの変更を認識し、必要に応じて禁止することができます。 `MAMService` および `MAMContentProvider` は、サブクラスでオーバーライドできる以下のメソッドを公開します。
 
     ```java
-    public interface AppIdentitySwitchResultCallback {
-        /**
-         * @param result
-         *            whether the identity switch can proceed.
-         */
-        void reportIdentitySwitchResult(AppIdentitySwitchResult result);
-    }
+    public void onMAMIdentitySwitchRequired(final String identity,
+      final AppIdentitySwitchResultCallback callback);
     ```
 
-    ここで ```AppIdentitySwitchResult``` は `SUCCESS` または `FAILURE` です。
+    `MAMActivity` クラスでは、メソッドには次の追加のパラメーターがあります。
+
+    ```java
+    public void onMAMIdentitySwitchRequired(final String identity,
+      final AppIdentitySwitchReason reason,
+      final AppIdentitySwitchResultCallback callback);
+    ```
+
+    * `AppIdentitySwitchReason` は、暗黙的な切り替えのソースをキャプチャし、値 `CREATE`、`RESUME_CANCELLED`、および `NEW_INTENT` を受け入れることができます。  `RESUME_CANCELLED` の理由は、アクティビティの再開時に、PIN、認証、または他のコンプライアンス UI が表示され、ユーザーがその UI を取り消そうとした場合 (通常は、[戻る] ボタンを使用) に使用されます。
+
+
+    * `AppIdentitySwitchResultCallback` は次のとおりです。
+
+      ```java
+      public interface AppIdentitySwitchResultCallback {
+          /**
+            * @param result
+            *            whether the identity switch can proceed.
+            */
+          void reportIdentitySwitchResult(AppIdentitySwitchResult result);
+        }
+        ```
+
+      ここで ```AppIdentitySwitchResult``` は `SUCCESS` または `FAILURE` です。
 
 `MAMService.onMAMBind` から返される Binder によるものを除く、すべての暗黙的な ID 変更に対してメソッド `onMAMIdentitySwitchRequired` が呼び出されます。 `onMAMIdentitySwitchRequired` の既定の実装は次のメソッドを直ちに呼び出します。
 
@@ -1498,13 +1498,13 @@ public interface MAMFileProtectionInfo {
 MAM では、読み取られているファイルと `Activity` に表示されているデータの関係を自動的に推測することはできません。 アプリは、企業データを表示する前に、UI ID を適切に設定する*必要があります*。 これには、ファイルから読み取られたデータが含まれます。 ファイルがアプリの外部 (`ContentProvider` または公開されている書き込み可能な場所のいずれか) からのものである場合、アプリはファイルから読み取った情報を表示する前に、(`MAMFileProtectionManager.getProtectionInfo` を使用して) ファイル ID の判断を試みる*必要があります*。 `getProtectionInfo` が null 以外 (空ではない ID) をレポートする場合は、UI ID を (`MAMActivity.switchMAMIdentity` または `MAMPolicyManager.setUIPolicyIdentity` を使用して) この ID に一致するように設定する*必要があります*。 ID の切り替えが失敗した場合、ファイルのデータは表示*できません*。
 
 フローの例は、次のようになります。
-  * ユーザーが、アプリで開くドキュメントを選択します
-  * 開いているフローで、ディスクからデータを読み取る前に、アプリはコンテンツを表示するために使用する ID を確認します
-    * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
-    * if(info)   MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
-    * アプリは、結果がコールバックにレポートされるまで待機します
-    * レポートされた結果が失敗の場合、アプリでドキュメントが表示されません
-  * アプリを開き、ファイルが表示されます
+* ユーザーが、アプリで開くドキュメントを選択します
+* 開いているフローで、ディスクからデータを読み取る前に、アプリはコンテンツを表示するために使用する ID を確認します
+  * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
+  * if(info)   MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
+  * アプリは、結果がコールバックにレポートされるまで待機します
+  * レポートされた結果が失敗の場合、アプリでドキュメントが表示されません
+* アプリを開き、ファイルが表示されます
   
 #### <a name="single-identity-to-multi-identity-transition"></a>単一 ID から複数 ID への移行
 単一 ID の Intune 統合で以前にリリースされたアプリで後から複数の ID を統合すると、以前にインストールされたアプリで移行が行われます (ユーザーには表示されず、関連付けられた UX はありません)。 この移行を処理するために何らかの明示的な操作を行うために、アプリは*必要* ありません。 移行前に作成されたすべてのファイルは引き続き、マネージドと見なされます (したがって、暗号化ポリシーが有効な場合、暗号化されたままとなります)。 必要に応じて、アップグレードを検出し、`MAMFileProtectionManager.protect` を使用して、特定のファイルまたはディレクトリに空の ID でタグを付けることができます (暗号化されていた場合、暗号化が解除されます)。
@@ -1513,11 +1513,11 @@ MAM では、読み取られているファイルと `Activity` に表示され�
 
 ファイルの ID タグ付けはオフライン モードに依存します。 次の点を考慮する必要があります。
 
-  * ポータル サイトをインストールしていない場合は、ファイルに ID タグを付けることはできません。
+* ポータル サイトをインストールしていない場合は、ファイルに ID タグを付けることはできません。
 
-  * ポータル サイトをインストールしていても、アプリに Intune MAM ポリシーがない場合は、ファイルに確実に ID タグを付けることはできません。
+* ポータル サイトをインストールしていても、アプリに Intune MAM ポリシーがない場合は、ファイルに確実に ID タグを付けることはできません。
 
-  * ファイルに ID タグを付けられるようになると、以前に作成されたすべてのファイルは、アプリが単一 ID で管理されるアプリとしてインストールされている (ファイルが登録済みユーザーに属するものとして扱われる) 場合を除き、個人用/管理対象外 (空の文字列 ID に属する) として扱われます。
+* ファイルに ID タグを付けられるようになると、以前に作成されたすべてのファイルは、アプリが単一 ID で管理されるアプリとしてインストールされている (ファイルが登録済みユーザーに属するものとして扱われる) 場合を除き、個人用/管理対象外 (空の文字列 ID に属する) として扱われます。
 
 ### <a name="directory-protection"></a>ディレクトリの保護
 

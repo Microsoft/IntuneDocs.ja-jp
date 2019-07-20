@@ -1,16 +1,14 @@
 ---
-ms.openlocfilehash: 472a1e5192b9054c9d89a7d4240750824a3a8b0a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: f42baa1ca6e3ac6dca3c95a0eb9e422df2506031
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61499234"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882003"
 ---
-
-
 ### <a name="apple"></a>Apple
-  - Apple iOS 9.0 以降
-  - Mac OS X 10.9 以降
+- Apple iOS 9.0 以降
+- Mac OS X 10.9 以降
 
 ### <a name="windows"></a>Windows
 - Windows 10 (Home、Pro、Education、および Enterprise バージョン) を実行している PC
@@ -28,6 +26,6 @@ ms.locfileid: "61499234"
 - Google Android 4.0 以降 (Samsung KNOX Standard 4.0 以降を含む)*
 - Google Android for Work ([要件](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
 
-* SM-G313HU、SM-G313HY、SM-G313M、SM-G313MY、SM-G313U の各モデルの Samsung Galaxy Ace フォンは、Intune で Samsung KNOX Standard デバイスとして管理することができません。 これらのデバイスは、標準の Android デバイスとして管理されます。 詳細については、[Samsung KNOX の Web サイト](https://www.samsungknox.com/en)をご覧ください。
+\* SM-G313HU、SM-G313HY、SM-G313M、SM-G313MY、SM-G313U の各モデルの Samsung Galaxy Ace フォンは、Intune で Samsung KNOX Standard デバイスとして管理することができません。 これらのデバイスは、標準の Android デバイスとして管理されます。 詳細については、[Samsung KNOX の Web サイト](https://www.samsungknox.com/en)をご覧ください。
 
 デバイスと管理方法の一覧については、「[Intune supported devices](/intune/supported-devices-browsers#intune-supported-devices)」 (Intune でサポートされているデバイス) を参照してください。

@@ -14,12 +14,12 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: d05559a46cfd2bf9e092378e7cff779022e21792
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 0a5e90c6bc6b352f4d7a0fc0ae22c65110563461
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509643"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354395"
 ---
 # <a name="metadata-and-markdown-template"></a>メタデータとマークダウン テンプレート
 
@@ -30,7 +30,7 @@ ms.locfileid: "61509643"
 
 ## <a name="metadata"></a>メタデータ 
 
-完全なメタデータ ブロックは上部で必要なフィールドと省略可能なフィールドに分けられます。詳細については、「[OPS metadata cheatsheet (OPS メタデータ チートシート)](https://ppe.msdn.microsoft.com/en-us/ce-csi-docs/ops/ops-onboarding/managing-content/content-meta-data)」をご覧ください。 注記: 
+完全なメタデータ ブロックは上部で必要なフィールドと省略可能なフィールドに分けられます。詳細については、「[OPS metadata cheatsheet (OPS メタデータ チートシート)](https://ppe.msdn.microsoft.com/en-us/ce-csi-docs/ops/ops-onboarding/managing-content/content-meta-data)」をご覧ください。 注記:
 
 - コロン (:) とメタデータ要素の値との間にスペースを入れる**必要があります**。
 - 省略可能なメタデータ要素が値を持たない場合は、その要素を # でコメント アウトします (空欄にしたり "na" を使用したりしないでください)。コメント アウトした要素に値を追加する場合は、忘れずに # を削除してください。
@@ -124,13 +124,13 @@ ms.locfileid: "61509643"
 - リスト
 
 
-##### <a name="unordered-list-with-an-embedded-lists"></a>埋め込みリストを含む順序指定されていない一覧
+#### <a name="unordered-list-with-an-embedded-lists"></a>埋め込みリストを含む順序指定されていない一覧
 
 - これが 
 - 箇条書き 
 - リスト
-    - Mrs. Peacock
-    - Mr. Green
+  - Mrs. Peacock
+  - Mr. Green
 - 次の値を含む  
 - その他
     1. Colonel Mustard

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f90568b3939d37bb4e7fbeff72d5e357bc57bd6e
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 21f4f55c028c6ff06730e50d9f9862e85d0a9ef1
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547885"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884763"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune データ ウェアハウスのデータ モデル
 
@@ -32,22 +32,22 @@ Intune データ ウェアハウスは、データを毎日サンプリングし
 
 このウェアハウスは、次の上位領域のデータを公開します。
 
-  - アプリ保護が有効なアプリと使用状況
-  - 登録済みデバイス、プロパティ、インベントリ
-  - アプリとソフトウェアのインベントリ
-  - デバイスの構成とコンプライアンス ポリシー
+- アプリ保護が有効なアプリと使用状況
+- 登録済みデバイス、プロパティ、インベントリ
+- アプリとソフトウェアのインベントリ
+- デバイスの構成とコンプライアンス ポリシー
 
 これらの領域には、お使いの Intune 環境にとって重要なエンティティが含まれます。 エンティティ セットの詳細については、次の各トピックをご覧ください。
 
-  - [アプリケーション](reports-ref-application.md)
-  - [日付](reports-ref-date.md)
-  - [デバイス](reports-ref-devices.md)
-  - [Intune の管理拡張](reports-ref-intunemanagementextension.md)
-  - [ポリシー](reports-ref-policy.md)
-  - [モバイル アプリ管理 (MAM)](reports-ref-mobile-app-management.md)
-  - [ユーザー](reports-ref-user.md)
-  - [現在のユーザー](reports-ref-current-user.md)
-  - [ユーザー デバイスの関連付け](reports-ref-user-device.md)
+- [アプリケーション](reports-ref-application.md)
+- [日付](reports-ref-date.md)
+- [デバイス](reports-ref-devices.md)
+- [Intune の管理拡張](reports-ref-intunemanagementextension.md)
+- [ポリシー](reports-ref-policy.md)
+- [モバイル アプリ管理 (MAM)](reports-ref-mobile-app-management.md)
+- [ユーザー](reports-ref-user.md)
+- [現在のユーザー](reports-ref-current-user.md)
+- [ユーザー デバイスの関連付け](reports-ref-user-device.md)
 
 ## <a name="relationships-star-schema-model"></a>リレーションシップ: スタースキーマ モデル
 
@@ -63,6 +63,6 @@ Intune データ ウェアハウスは、データを毎日サンプリングし
 
 ## <a name="next-steps"></a>次の手順
 
- - データ ウェアハウスが Intune のユーザーの有効期間を追跡する方法の詳細については、「[Intune データ ウェアハウスのユーザー有効期間の表記](reports-ref-user-timeline.md)」をご覧ください。
- - データ ウェアハウスの操作に関する詳細については、[最初のデータ ウェアハウスの作成](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse)に関するページをご覧ください。
- - Power BI とデータ ウェアハウスの操作の詳細については、[データセットをインポートして新しい Power BI レポートを作成する](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/)に関するページをご覧ください。 
+- データ ウェアハウスが Intune のユーザーの有効期間を追跡する方法の詳細については、「[Intune データ ウェアハウスのユーザー有効期間の表記](reports-ref-user-timeline.md)」をご覧ください。
+- データ ウェアハウスの操作に関する詳細については、[最初のデータ ウェアハウスの作成](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse)に関するページをご覧ください。
+- Power BI とデータ ウェアハウスの操作の詳細については、[データセットをインポートして新しい Power BI レポートを作成する](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/)に関するページをご覧ください。 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: acad6b0fa343bdbcc722929886a8e68a4fa4d8bc
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 7f9ee4d978bcb44f3b13ddcf9aafa4a3210f0f7e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713289"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885062"
 ---
 # <a name="review-client-app-protection-logs"></a>クライアント アプリの保護ログのレビュー
 
@@ -72,5 +72,5 @@ ms.locfileid: "67713289"
 
 ## <a name="next-steps"></a>次の手順
 
- - アプリ保護ポリシーの詳細については、「[アプリの保護ポリシーとは](app-protection-policy.md)」をご覧ください。
- - Intune では、環境内の問題のトラブルシューティングに役立つ多数のツールが提供されています。 詳細については、「[トラブルシューティング ポータルを使用してユーザーをサポートする](help-desk-operators.md)」をご覧ください。
+- アプリ保護ポリシーの詳細については、「[アプリの保護ポリシーとは](app-protection-policy.md)」をご覧ください。
+- Intune では、環境内の問題のトラブルシューティングに役立つ多数のツールが提供されています。 詳細については、「[トラブルシューティング ポータルを使用してユーザーをサポートする](help-desk-operators.md)」をご覧ください。

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4dad2d22b742b62ca35bd7fb98c7f7e8241cbb4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 0eca9dfddbf9ea2c68cf58b1da64d9b046df7e77
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67402895"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353645"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Windows PC に対するユーザー デバイスの関連付けを管理する
 
@@ -32,7 +32,7 @@ ms.locfileid: "67402895"
 
 ユーザーにソフトウェアを展開する前に、ユーザーを PC に関連付ける必要があります。 1 人のユーザーを複数の PC に関連付けることができますが、1 台の PC に関連付けられるユーザーは 1 人だけです。 ユーザーは、ポータル サイトを使用して Intune で登録したすべての PC に自動的に関連付けられます。
 
-デバイスのプライマリ ユーザーの詳細については、次を参照してください。[プライマリ ユーザーの検索](find-primary-user.md)します。
+デバイスのプライマリユーザーの詳細については、「 [Find primary user](find-primary-user.md)」を参照してください。
 
 PC にユーザーを関連付けるには:
 
@@ -53,6 +53,6 @@ PC にユーザーを関連付けるには:
 > [!TIP]
 > エンド ユーザーが各自の PC に関連付けをするのを抑制する場合は、 **[Microsoft Intune エージェントの設定]** ポリシーの **[ユーザーによる各自のコンピューターへの関連付けを制限する]** オプションを有効にします。
 
-### <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目
 
 [Intune ソフトウェア クライアントを使用した一般的な Windows PC 管理タスク](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

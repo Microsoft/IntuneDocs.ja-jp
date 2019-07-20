@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/28/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f7dd6f62cb53dd0cc373fb3f2ffa7d9434b135cd
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 6ee62213c9ef23302de7fa7342569e1903514699
+ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494241"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68341346"
 ---
 # <a name="in-development-for-microsoft-intune---july-2019"></a>Microsoft Intune 用に開発中 - 2019 年 7 月
 
@@ -59,11 +59,11 @@ ms.locfileid: "67494241"
 ## <a name="app-management"></a>アプリ管理
 
 
-### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>ユーザーとグループのカスタマイズされた通知    <!-- 16766574   -->
-さらに、iOS および Android デバイスを Intune で管理する上のユーザーがポータル サイト アプリケーションからカスタムの一時的なプッシュ通知を送信することが間もなくなります。 これらのカスタム通知が特定の Intune 機能に関連付けられていないの一部を送信する一般的な通知など、必要な目的に使用できるすべての従業員またはします。  
+### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>ユーザーとグループのためのカスタマイズされた通知    <!-- 16766574   -->
+Intune で管理する iOS デバイスと Android デバイスのユーザーに、ポータルサイトアプリケーションからカスタムアドホックプッシュ通知をすぐに送信できるようになります。 これらのカスタム通知は、特定の Intune 機能に関連付けられておらず、一部またはすべての従業員に送信する一般的な通知など、必要な目的に使用できます。  
 
-### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>組織のアカウントのアプリの通知のコンテンツを構成します。 <!-- 2576686 -->
-Android および iOS デバイスで Intune アプリ保護ポリシー (アプリ) を使用するアプリの通知のコンテンツをコントロールに組織のアカウント。 この機能では、アプリケーションからのサポートは必要とし、すべてのアプリを有効になっているアプリケーションで使用できることができない可能性があります。 アプリの詳細については、「[アプリ保護ポリシーとは](app-protection-policy.md)」を参照してください。
+### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>組織アカウントのアプリ通知コンテンツを構成する <!-- 2576686 -->
+Android および iOS デバイスの Intune アプリ保護ポリシー (アプリ) では、組織アカウントのアプリ通知コンテンツを制御できます。 この機能は、アプリケーションからのサポートを必要とし、すべてのアプリ対応アプリケーションで使用できるとは限りません。 アプリの詳細については、「[アプリ保護ポリシーとは](app-protection-policy.md)」を参照してください。
 
 ### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956----"></a>Android の仕事用プロファイルに使用できる Google Play アプリのレポート <!-- 3041956  -->
 Android の仕事用プロファイル デバイスに使用できるアプリのインストールについては、アプリのインストール状態と managed Google Play アプリのインストール済みバージョンを確認できます。 詳細については、[アプリの保護ポリシーを監視する方法](app-protection-policies-monitor.md)、[Intune を使用した Android の仕事用プロファイル デバイスの管理](android-enterprise-overview.md)、および[マネージド Google Play アプリの種類](apps-add-android-for-work.md#managed-google-play-app-type)に関する記事を参照してください。
@@ -87,19 +87,13 @@ Windows 10 デバイス構成プロファイルを作成します ( **[デバイ
 適用対象: 
 - Windows 10 以降
 
-### <a name="administrative-templates-for-group-policy---------3510695---"></a>グループ ポリシーの管理用テンプレート     <!--  3510695 -->
-クラウド内のデバイスのセキュリティを向上するために、Intune を使用して Windows PC 用に選択したグループ ポリシー設定を構成することができる管理用テンプレートをリリースする予定です。  これらのテンプレートでは、Office、Windows、および OneDrive の最大 2,500 個の追加設定を提供するためにポリシー構成サービス プロバイダー (CSP) を使用します。
-
-### <a name="manage-filevault-for-macos-------3858502--1210104-----"></a>MacOS 用の FileVault を管理します。   <!--  3858502 + 1210104   -->
-Intune endpoint protection のデバイス構成プロファイルを使用して macOS デバイス向けの FileVault キー暗号化を管理することができます。 これには、表示と、会社のデバイスの暗号化キーの回転のエスクローが含まれます。 エンドユーザーはポータル サイト web サイトを通じてこれらのキーを取得することになります。
-
 ### <a name="advanced-settings-for-windows-defender-firewall-------1311949-------"></a>Windows Defender ファイアウォールの詳細設定   <!--  1311949     -->
 まもなく、パブリック プレビューとして、Intune を使って Windows Defender 用のクライアント上のカスタム ファイアウォール規則を管理することができるようになります。  
 
-### <a name="new-configuration-designer-when-creating-an-oemconfig-profile-for-android-enterprise----3712769----"></a>Android Enterprise に対する OEMConfig プロファイルを作成するときに、新しい構成デザイナー <!-- 3712769  -->
-Intune では、OEMConfig アプリを使用するデバイス構成プロファイルを作成することができます (デバイスの構成 > プロファイル > プロファイルを作成 > プラットフォーム用の Android エンタープライズ > プロファイルの種類の OEMConfig)。 これを行うときにテンプレートを変更するための値と JSON エディターが開きます。 この更新プログラムには、タイトルや説明などを含めて、アプリに埋め込まれている詳細情報を示すより優れたユーザー エクスペリエンスを持つ構成デザイナーが含まれています。 JSON エディターは、引き続き使用できますが、構成デザイナーで行った変更を示しています。
+### <a name="new-configuration-designer-when-creating-an-oemconfig-profile-for-android-enterprise----3712769----"></a>Android Enterprise 用の OEMConfig プロファイルを作成するときの新しい構成デザイナー <!-- 3712769  -->
+Intune では、OEMConfig アプリを使用するデバイス構成プロファイルを作成できます (デバイス構成 > プロファイル > プロファイルの作成 > Android enterprise for platform > [プロファイルの種類] の [OEMConfig])。 これを行うと、JSON エディターが開き、テンプレートと値を変更できます。 この更新プログラムには、タイトルや説明など、アプリに埋め込まれた詳細を表示する、ユーザーエクスペリエンスが向上した構成デザイナーが含まれています。 JSON エディターは引き続き使用でき、構成デザイナーで行ったすべての変更が表示されます。
 
-現在の設定を確認するには[使用 OEMConfig による Android エンタープライズ デバイスの管理と](android-oem-configuration-overview.md)します。
+現在の設定を確認するには、「 [OEMConfig を使用した Android Enterprise デバイスの使用と管理](android-oem-configuration-overview.md)」を参照してください。
 
 適用対象: Android エンタープライズ
 
@@ -107,18 +101,18 @@ Intune では、OEMConfig アプリを使用するデバイス構成プロファ
 <!-- ***********************************************-->
 ## <a name="device-management"></a>デバイス管理
 
-### <a name="improve-device-location---3855417---"></a>デバイスの場所を向上させる<!-- 3855417 -->
-使用して、デバイスの正確な座標を拡大できる、**デバイスを検索**アクション。 紛失した iOS デバイスを見つける方法についての詳細については、次を参照してください。 [iOS デバイスを紛失検索](device-locate.md)します。
+### <a name="improve-device-location---3855417---"></a>デバイスの場所を改善する<!-- 3855417 -->
+**デバイスの検索**アクションを使用して、デバイスの正確な座標を拡大することができます。 紛失した iOS デバイスを特定する方法の詳細については、「紛失した[ios デバイスの検出](device-locate.md)」を参照してください。
 
-### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>30 日間までのデバイスの自動クリーンアップ時間制限を構成します。 <!--4231059  -->
-デバイスの自動クリーンアップの最後のサインイン後に (90 日間の現在の制限) ではなく 30 日間の短い時間制限を設定することができます。 これを行うに移動**Intune** > **デバイス** > **セットアップ** > **デバイス クリーン アップ ルール**します。
+### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>自動デバイスクリーンアップの時間制限を30日に設定する <!--4231059  -->
+最後にサインインした後に、デバイスの自動クリーンアップ時間の制限を30日 (現在の制限である90日よりも短く) に設定することができます。 これを行うには、 **Intune** > **デバイス** > **セットアップ** > **デバイスのクリーンアップルール**に関するページを参照してください。
 
 
 <!-- ***********************************************-->
 ## <a name="security"></a>セキュリティ
 
-### <a name="import-and-export-security-baselines------3408610------------"></a>セキュリティ基準のインポートとエクスポート    <!--3408610          -->  
-エクスポートしたカスタマイズを実行し、Intune 環境間で共有できるように、セキュリティ基準をインポートし、機能を追加いたします。
+### <a name="import-and-export-security-baselines------3408610------------"></a>セキュリティベースラインのインポートとエクスポート    <!--3408610          -->  
+カスタマイズを可能にし、Intune 環境間で共有できるように、セキュリティベースラインをエクスポートおよびインポートする機能を追加しています。
 
 
 

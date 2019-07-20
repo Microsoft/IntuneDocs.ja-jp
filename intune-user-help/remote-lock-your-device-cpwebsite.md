@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85435acffbad3117f6adbbafe60e1993b2d18bdb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b55368f5c512ff3efd4059d420717321729450ee
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835779"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884055"
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>ポータル サイト Web サイトからデバイスをリモートでロックする
 
@@ -38,13 +38,13 @@ ms.locfileid: "55835779"
 * Windows 10 Mobile (デバイスにパスコードが設定されている場合)
 * Windows Phone 8.1 (デバイスにパスコードが設定されている場合)  
 
-1. [ポータル サイト Web サイト](https://portal.manage.microsoft.com)で、__[メニュー]__ ボタン、__[デバイス]__ の順に選択します。  
+1. [ポータル サイト Web サイト](https://portal.manage.microsoft.com)で、 __[メニュー]__ ボタン、 __[デバイス]__ の順に選択します。  
 
 2. ロックするデバイスを選択します。  
 
     ![汎用的な名前が付いた不明なデバイスが表示されている 2 つのタイルを含む [デバイス] ページのスクリーンショット。 デバイスのすぐ下に灰色のバナーが配置され、ユーザーは使用中のデバイスまたは新たに追加するデバイスを識別するように求められています。](./media/rename-reset-device-step2-1808.png) 
 
-3. **[リモート ロック]** を選択します。 ページの上部にロックのオプションが表示されない場合は、**[詳細 (...)]** > **[リモート ロック]** の順に選択します。  
+3. **[リモート ロック]** を選択します。 ページの上部にロックのオプションが表示されない場合は、 **[詳細 (...)]**  >  **[リモート ロック]** の順に選択します。  
 
    ![[名前の変更]、[削除]、[デバイスのリセット]、[パスコードのリセット]、[リモート ロック] を示す上部のリンク リストを含む、ポータル サイト Web サイト上の選択されたデバイスに対するデバイスの詳細ページ。 ](./media/rename-reset-device-1808.png) 
 
@@ -56,9 +56,9 @@ ms.locfileid: "55835779"
 
 リモート ロックの状態は次の 3 つの場所に表示されます。
 
-   * Web サイトの通知領域。
-   * デバイスの **[詳細]** ページ。
-   * ページの **[デバイス]** セクションのデバイス名を表示するタイル。  
+* Web サイトの通知領域。
+* デバイスの **[詳細]** ページ。
+* ページの **[デバイス]** セクションのデバイス名を表示するタイル。  
 
 > [!Note]
 > リモート ロックの失敗が通知された場合、数分待機してください。 その後、デバイスのロックをもう一度試してください。 状態が "リモート ロック保留中" に戻ります。 再試行がうまくいかない場合、会社のサポート部門にお問い合わせください。

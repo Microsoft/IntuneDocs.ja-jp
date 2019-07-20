@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5bdb727b542cd66e0b8fcf4a0822eaf0107600ad
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 2718ee7936e82bffc50126eeb57f1b6f732df22d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735740"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354469"
 ---
 # <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>Intune のオンプレミス Exchange Connector のトラブルシューティング
 
@@ -51,5 +51,5 @@ ms.locfileid: "67735740"
 - メールボックスの SMTP アドレスの一覧を取得するには、Get-Mailbox -Identity user | select emailaddresses | fl を使用します。
 - デバイスのアクセス状態に関する詳細情報を取得するには、Get-CASMailbox <upn> | fl を使用します。
 
-### <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次の手順
 この情報を使っても問題が解決しない場合は、[Microsoft Intune のサポートを受ける](get-support.md)こともできます。
