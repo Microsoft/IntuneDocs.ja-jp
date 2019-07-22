@@ -382,6 +382,8 @@
               href: privacy-data-view-correct.md
             - name: 監査、エクスポート、削除
               href: privacy-data-audit-export-delete.md
+        - name: デバイスの暗号化
+          href: encrypt-devices.md
         - name: 条件付きアクセス
           href: conditional-access.md
           items:
