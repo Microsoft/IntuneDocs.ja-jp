@@ -16,20 +16,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5bdd2171853a8db944c910ef4d912f7681d17077
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 40d2b1f58c2892eea6d3f454a3f993b30b9a5c4a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549123"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354438"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 向けの Microsoft Defender Advanced Threat Protection ベースライン設定
 
 Microsoft Intune でサポートされている Microsoft Defender Advanced Threat Protection (旧称 Windows Defender Advanced Threat Protection) ベースライン設定を表示します。 Advanced Threat Protection (ATP) ベースラインの既定値は、ATP の推奨される構成を表しており、他のセキュリティ ベースラインのベースラインの既定値と一致しない場合があります。  
 
-  ご使用の環境が [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) を使用するための前提条件を満たしている場合は、Microsoft Defender Advanced Threat Protection ベースラインを使用できます。
+ご使用の環境が [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) を使用するための前提条件を満たしている場合は、Microsoft Defender Advanced Threat Protection ベースラインを使用できます。 
 
-
+このベースラインは物理デバイス用に最適化されており、現在は仮想マシン (Vm) または VDI エンドポイントでの使用は推奨されていません。 特定のベースライン設定は、仮想化された環境でのリモート対話型セッションに影響を与える可能性があります。 詳細については、Windows のマニュアルの「 [Microsoft DEFENDER ATP のセキュリティベースラインへのコンプライアンスの強化](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)」を参照してください。
 
 
 > [!NOTE]  
@@ -164,22 +164,22 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 
   Bitlocker リムーバブル ドライブ ポリシーの場合は、次の設定を構成します。
 
-    - **Require encryption for write access (書き込みアクセス用に暗号化が必要)**  
-      **既定値**: はい
+  - **Require encryption for write access (書き込みアクセス用に暗号化が必要)**  
+    **既定値**: はい
 
-    - **[暗号化方法]**  
-      **既定値**: AES 128 ビット CBC
+  - **[暗号化方法]**  
+    **既定値**: AES 128 ビット CBC
 
 - **Bit locker fixed drive policy (Bitlocker の固定ドライブのポリシー)**  
   このポリシーの値では、BitLocker が固定ドライブの暗号化に使用する暗号化強度が決定されます。 企業では、セキュリティを強化するために、暗号化のレベルを制御できます (AES-256 は AES-128 よりも強力です)。 この設定を有効にした場合は、固定データ ドライブやオペレーティング システム ドライブ、リムーバブル データ ドライブのそれぞれに、暗号化アルゴリズムとキーの暗号化強度を構成できます。 固定ドライブやオペレーティング システム ドライブには、XTS-AES アルゴリズムを使用することをお勧めします。 リムーバブル ドライブには、Windows 10 バージョン 1511 以降を実行していないその他のデバイスでドライブを使用する場合は、AES-CBC 128 ビットまたは AES-CBC 256 ビットを使用する必要があります。 ドライブが既に暗号化されているか、暗号化が進行中の場合は、暗号化の種類を変更しても影響はありません。 このような場合、このポリシー設定は無視されます。
 
   Bitlocker 固定ドライブ ポリシーの場合は、次の設定を構成します。
 
-    - **Require encryption for write access (書き込みアクセス用に暗号化が必要)**  
-      **既定値**: はい
+  - **Require encryption for write access (書き込みアクセス用に暗号化が必要)**  
+    **既定値**: はい
 
-    - **[暗号化方法]**  
-      **既定値**: AES 128bit XTS
+  - **[暗号化方法]**  
+    **既定値**: AES 128bit XTS
 
 - **Bit locker system drive policy (Bitlocker のシステム ドライブのポリシー)**  
   このポリシーの値では、BitLocker がシステム ドライブの暗号化に使用する暗号化強度が決定されます。 企業では、セキュリティを強化するために、暗号化のレベルを制御したい場合があります (AES-256 は AES-128 よりも強力です)。 この設定を有効にした場合は、固定データ ドライブやオペレーティング システム ドライブ、リムーバブル データ ドライブのそれぞれに、暗号化アルゴリズムとキーの暗号化強度を構成できます。 固定ドライブやオペレーティング システム ドライブには、XTS-AES アルゴリズムを使用することをお勧めします。 リムーバブル ドライブには、Windows 10 バージョン 1511 以降を実行していないその他のデバイスでドライブを使用する場合は、AES-CBC 128 ビットまたは AES-CBC 256 ビットを使用する必要があります。 ドライブが既に暗号化されているか、暗号化が進行中の場合は、暗号化の種類を変更しても影響はありません。 このような場合、このポリシー設定は無視されます。  

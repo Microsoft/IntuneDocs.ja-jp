@@ -17,49 +17,49 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 934742108effda0a88f4bcc42e06daa12c55288c
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 70802626c79f11748e81c39afdd8bc8c5d0622b3
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648838"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313770"
 ---
-# <a name="reference-for-intune-management-extension"></a>Intune 管理拡張のリファレンス
+# <a name="reference-for-intune-management-extensions"></a>Intune の管理拡張のリファレンス
 
-**IntuneManagementExtension** カテゴリには、次のような情報を追跡するモバイル デバイスのエンティティが含まれています。
+**intuneManagementExtensions** カテゴリには、次のような情報を追跡するモバイル デバイスのエンティティが含まれています。
 
-  - IntuneManagementExtension のバージョン
-  - IntuneManagementExtension のインストール状態
+- IntuneManagementExtension のバージョン
+- IntuneManagementExtension のインストール状態
 
-## <a name="intunemanagementextensionversion"></a>IntuneManagementExtensionVersion
+## <a name="intunemanagementextensionversions"></a>intuneManagementExtensionVersions
 
-**IntuneManagementExtensionVersion** エンティティは、IntuneManagementExtension で使用されるすべてのバージョンを一覧表示します。
+**intuneManagementExtensionVersion** エンティティには、intuneManagementExtensions で使用されるすべてのバージョンがリストされています。
 
-| プロパティ  | [説明] | 例 |
+| プロパティ  | 説明 | 例 |
 |---------|------------|--------|
-| ExtensionVersionKey |IntuneManagementExtension バージョンの一意識別子。 | 1 |
-| ExtensionVersion |4 桁のバージョン番号。 |1.0.2.0 |
+| extensionVersionKey |intuneManagementExtensions バージョンの一意識別子。 | 1 |
+| extensionVersion |4 桁のバージョン番号。 |1.0.2.0 |
 
-## <a name="intunemanagementextensionhealthstate"></a>IntuneManagementExtensionHealthState
+## <a name="intunemanagementextensionhealthstates"></a>intuneManagementExtensionHealthStates
 
-**IntuneManagementExtensionHealthState** は、IntuneManagementExtension の考えられるすべてのヘルス状態を一覧表示します。
+**intuneManagementExtensionHealthState** には、intuneManagementExtensions が取り得るすべての正常性状態がリストされています。
 
-| プロパティ  | [説明] | 例 |
+| プロパティ  | 説明 | 例 |
 |---------|------------|--------|
-| ExtensionStateKey |ヘルス状態の一意識別子。 | 2 で保護されたプロセスとして起動されました |
-| ExtensionState |IntuneManagementExtension のヘルス状態。 | Healthy |
+| extensionStateKey |ヘルス状態の一意識別子。 | 2 |
+| extensionState |IntuneManagementExtension のヘルス状態。 | Healthy |
 
-## <a name="intunemanagementextension"></a>IntuneManagementExtension
+## <a name="intunemanagementextensions"></a>intuneManagementExtensions
 
-**IntuneManagementExtension** は、1 日あたりの各 Windows 10 デバイスでの IntuneManagementExtension ヘルスを一覧表示します。
+**intuneManagementExtension** には、1 日あたりの各 Windows 10 デバイスでの IntuneManagementExtensions の正常性がリストされています。
 過去 60 日間のデータが保持されます。 
 
 
-|      プロパティ       |                         [説明]                         | 例 |
+|      プロパティ       |                         説明                         | 例 |
 |---------------------|-------------------------------------------------------------|---------|
-|       DateKey       |               日付の一意識別子。                |   123   |
-|      TenantKey      |              テナントの一意識別子。               |   456   |
-|      DeviceKey      |              デバイスの一意識別子。               |   789   |
-| ExtensionVersionKey | IntuneManagementExtension バージョンの一意識別子。 |    1    |
-|  ExtensionStateKey  |             ヘルス状態の一意識別子。              |    2 で保護されたプロセスとして起動されました    |
+|       dateKey       |               日付の一意識別子。                |   123   |
+|      tenantKey      |              テナントの一意識別子。               |   456   |
+|      deviceKey      |              デバイスの一意識別子。               |   789   |
+| extensionVersionKey | intuneManagementExtension バージョンの一意識別子。 |    1    |
+|  extensionStateKey  |             ヘルス状態の一意識別子。              |    2    |
 

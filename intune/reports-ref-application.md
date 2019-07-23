@@ -17,54 +17,54 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46e90d422afb8ebbd356031d4815708b5b0768f0
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: a5436de6b972e5cbe8b2b17d42f0974cb38df47e
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713141"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313804"
 ---
 # <a name="reference-for-application-entities"></a>アプリケーション エンティティのリファレンス
 
 **アプリケーション** カテゴリには、次のような情報を追跡記録するモバイル デバイスのエンティティが含まれています。
 
-  - アプリのバージョン
-  - アプリのインストール ソース
-  - アプリを作成した開発者の種類
-  - **sidecar** や **desktop** など、アプリの管理対象ソフトウェアの種類
-  - アプリのボリューム購入プログラム (VPP) 状態
+- アプリのバージョン
+- アプリのインストール ソース
+- アプリを作成した開発者の種類
+- **sidecar** や **desktop** など、アプリの管理対象ソフトウェアの種類
+- アプリのボリューム購入プログラム (VPP) 状態
 
-## <a name="apprevision"></a>AppRevision
+## <a name="apprevisions"></a>appRevisions
 
-**AppRevision** エンティティは、アプリのバージョンをすべて一覧表示します。
+**appRevision** エンティティには、アプリのすべてのバージョンがリストされています。
 
 | プロパティ  | 説明 | 例 |
 |---------|------------|--------|
-| AppKey |アプリを示す一意識別子。 |123 |
-| ApplicationId |アプリを示す一意識別子 - AppKey に似ていますが、このキーはナチュラルです。 |b66bc706-ffff-7437-0340-032819502773 |
-| リビジョン |バイナリのアップロード中に管理者が挙げたバージョン。 |2 |
-| タイトル |アプリのタイトル。 |Excel |
-| 発行者 |アプリの発行者。 |Microsoft |
-| UploadState |アプリのアップロード状態。 |1 |
-| AppTypeKey |AppType の参照 (次のセクションに説明あり) | |
-| VppProgramTypeKey |VppProgramType の参照 (下に説明あり)。 | |
-| CreationTime |このリビジョンが作成された時刻。 |11/23/2016 12:00:00 AM |
-| ModifiedTime |このリビジョンに関連する事項が最後に変更された時刻。 |11/23/2016 12:00:00 AM |
-| Size |バイナリのサイズ。 | |
-| StartDateInclusiveUTC |このアプリ リビジョンがデータ ウェアハウスで作成されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
-| EndDateExclusiveUTC |このアプリ リビジョンが推奨されなくなったときの UTC 日時。 |11/23/2016 12:00:00 AM |
-| IsCurrent |データ ウェアハウスにおいて、このアプリ バージョンが現行のものであるかどうかを示します。 |真/偽 |
-| RowLastModifiedDateTimeUTC |このアプリ バージョンがデータ ウェアハウスで最後に変更されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
+| appKey |アプリを示す一意識別子。 |123 |
+| applicationId |アプリを示す一意識別子 - AppKey に似ていますが、このキーはナチュラルです。 |b66bc706-ffff-7437-0340-032819502773 |
+| revision |バイナリのアップロード中に管理者が挙げたバージョン。 |2 |
+| title |アプリのタイトル。 |Excel |
+| publisher |アプリの発行者。 |Microsoft |
+| uploadState |アプリのアップロード状態。 |1 |
+| appTypeKey |AppType の参照 (次のセクションに説明あり) | |
+| vppProgramTypeKey |VppProgramType の参照 (下に説明あり)。 | |
+| creationTime |このリビジョンが作成された時刻。 |11/23/2016 12:00:00 AM |
+| modifiedTime |このリビジョンに関連する事項が最後に変更された時刻。 |11/23/2016 12:00:00 AM |
+| サイズ |バイナリのサイズ。 | |
+| startDateInclusiveUTC |このアプリ リビジョンがデータ ウェアハウスで作成されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
+| endDateExclusiveUTC |このアプリ リビジョンが推奨されなくなったときの UTC 日時。 |11/23/2016 12:00:00 AM |
+| isCurrent |データ ウェアハウスにおいて、このアプリ バージョンが現行のものであるかどうかを示します。 |真/偽 |
+| rowLastModifiedDateTimeUTC |このアプリ バージョンがデータ ウェアハウスで最後に変更されたときの UTC 日時。 |11/23/2016 12:00:00 AM |
 
-## <a name="apptypes"></a>AppTypes
+## <a name="apptypes"></a>appTypes
 
-**AppTypes** エンティティは、アプリのインストール ソースを一覧表示します。
+**appType** エンティティには、アプリのインストール ソースがリストされています。
 
 | プロパティ  | 説明 |
 |---------|------------|
-| AppTypeID |種類の ID |
-| AppTypeKey |キーの代理キー |
-| AppTypeName |アプリの種類 |
+| appTypeID |種類の ID |
+| appTypeKey |キーの代理キー |
+| appTypeName |アプリの種類 |
 
 ### <a name="example"></a>例
 
@@ -85,15 +85,15 @@ ms.locfileid: "67713141"
 | 12 |Windows Phone LOB アプリ | Windows Phone 基幹業務アプリ。 |
 
 
-## <a name="vppprogramtypes"></a>VppProgramTypes
+## <a name="vppprogramtypes"></a>vppProgramTypes
 
-**VppProgramTypes** エンティティは、アプリの VPP プログラムの種類を一覧表示します。
+**vppProgramType** エンティティには、アプリの VPP プログラムの種類がリストされています。
 
 | プロパティ  | 説明 |
 |---------|------------|
-| VppProgramTypeID | 種類の ID。 |
-| VppProgramTypeKey | キーの代理キー。 |
-| VppProgramTypeName | VPP プログラムの種類。 |
+| vppProgramTypeID | 種類の ID。 |
+| vppProgramTypeKey | キーの代理キー。 |
+| vppProgramTypeName | VPP プログラムの種類。 |
 
 ### <a name="example"></a>例
 
@@ -105,27 +105,27 @@ ms.locfileid: "67713141"
 
 
 
-## <a name="applicationinventory"></a>ApplicationInventory
+## <a name="applicationinventories"></a>applicationInventories
 
-**ApplicationInventory** エンティティには、インベントリ回収時にデバイスで検出されたアプリケーションが一覧表示されます。
+**applicationInventory** エンティティには、インベントリ回収時にデバイスで検出されたアプリケーションがリストされています。
 
 | プロパティ  | 説明 |
 |---------|------------|
-| DeviceKey | これは、Intune デバイス ID が含まれるデバイス テーブルの参照です。 |
-| DateKey | 日付テーブルの参照であり、インベントリの日を示します。 |
-| ApplicationName | アプリケーション名。 |
-| ApplicationVersion | アプリケーションのバージョン。 |
-| BundleSize | アプリのサイズ (バイト単位)。 |
+| deviceKey | これは、Intune デバイス ID が含まれるデバイス テーブルの参照です。 |
+| dateKey | 日付テーブルの参照であり、インベントリの日を示します。 |
+| applicationName | アプリケーション名。 |
+| applicationVersion | アプリケーションのバージョン。 |
+| bundleSize | アプリのサイズ (バイト単位)。 |
 
-## <a name="mobileappinstallstate"></a>MobileAppInstallState
+## <a name="mobileappinstallstates"></a>mobileAppInstallStates
 
-**MobileAppInstallState** エンティティは、デバイス、ユーザーまたはその両方を含むグループに割り当てられた後のモバイル アプリケーションのインストール状態を表します。
+**mobileAppInstallState** エンティティは、デバイス、ユーザー、またはその両方を含むグループに割り当てられた後のモバイル アプリケーションのインストール状態を表します。
 
 | プロパティ | 説明 |
 |---|---|
-| AppInstallStateKey | アカウントにおけるアプリのインストール状態の一意の ID。 |
-| AppInstallState | アプリのインストール状態の列挙値。 |
-| AppInstallStateName | アプリのインストール状態の名前。 |
+| appInstallStateKey | アカウントにおけるアプリのインストール状態の一意の ID。 |
+| appInstallState | アプリのインストール状態の列挙値。 |
+| appInstallStateName | アプリのインストール状態の名前。 |
 
 
 

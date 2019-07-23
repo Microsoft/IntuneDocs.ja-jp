@@ -6,7 +6,7 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 07/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,42 +17,42 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0baf74515af22fb04f773da0d26b94a7eec5f572
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 16cb03788f8a3dd261a1e6d9dbc3efe4b50f4f73
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041023"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313834"
 ---
-# <a name="reference-for-date-entity"></a>Date エンティティのリファレンス
+# <a name="reference-for-dates-entity"></a>Dates エンティティの参照
 
-**日付**カテゴリには、データ モデルの日付参照の定義に使用される **Date** エンティティが含まれています。
+**日付**カテゴリには、データ モデルの日付参照の定義に使用される **date** エンティティが含まれています。
 
-## <a name="date"></a>日付
+## <a name="dates"></a>dates
 
-**Date** エンティティは、複数のデータ ウェアハウス エンティティ全体で参照される日付を示します。
+**date** エンティティは、複数のデータ ウェアハウス エンティティ全体で参照される日付を示します。
 
 
 |    プロパティ     |                      説明                       |       例        |
 |-----------------|--------------------------------------------------------|----------------------|
-|     DateKey     | データ ウェアハウス内のこの日付を示す一意識別子。 |       20160703       |
-|    FullDate     |    この日付を完全な日時形式で表した日付。     | 7/3/2016 12:00:00 AM |
-|    DayOfWeek    |                      曜日                       |          1           |
-|   DayOfMonth    |                      月の日付                      |          3           |
-|    DayOfYear    |                      年の通算日                       |         185          |
-|   WeekOfYear    |                      年の通算週                      |          28          |
-|   MonthOfYear   |                   月                    |          7           |
-| CalendarQuarter |                    カレンダーの四半期                    |          3           |
-|  CalendarYear   |                     カレンダーの年                      |         2016         |
-|     DateKey     | データ ウェアハウス内のこの日付を示す一意識別子。 |       20160703       |
-|    FullDate     |    この日付を完全な日時形式で表した日付。     | 7/3/2016 12:00:00 AM |
-|    DayOfWeek    |                      曜日                       |          1           |
-|   DayOfMonth    |                      月の日付                      |          3           |
-|    DayOfYear    |                      年の通算日                       |         185          |
-|   WeekOfYear    |                      年の通算週                      |          28          |
-|   MonthOfYear   |                   月                    |          7           |
-| CalendarQuarter |                    カレンダーの四半期                    |          3           |
-|  CalendarYear   |                     カレンダーの年                      |         2016         |
+|     dateKey     | データ ウェアハウス内のこの日付を示す一意識別子。 |       20160703       |
+|    fullDate     |    この日付を完全な日時形式で表した日付。     | 7/3/2016 12:00:00 AM |
+|    dayOfWeek    |                      曜日                       |          1           |
+|   dayOfMonth    |                      月の日付                      |          3           |
+|    dayOfYear    |                      年の通算日                       |         185          |
+|   weekOfYear    |                      年の通算週                      |          28          |
+|   monthOfYear   |                   月                    |          7           |
+| calendarQuarter |                    カレンダーの四半期                    |          3           |
+|  calendarYear   |                     カレンダーの年                      |         2016         |
+|     dateKey     | データ ウェアハウス内のこの日付を示す一意識別子。 |       20160703       |
+|    fullDate     |    この日付を完全な日時形式で表した日付。     | 7/3/2016 12:00:00 AM |
+|    dayOfWeek    |                      曜日                       |          1           |
+|   dayOfMonth    |                      月の日付                      |          3           |
+|    dayOfYear    |                      年の通算日                       |         185          |
+|   weekOfYear    |                      年の通算週                      |          28          |
+|   monthOfYear   |                   月                    |          7           |
+| calendarQuarter |                    カレンダーの四半期                    |          3           |
+|  calendarYear   |                     カレンダーの年                      |         2016         |
 
 ## <a name="next-steps"></a>次の手順
 
