@@ -14,12 +14,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3ce7ad6b0254b1c3a8e2843cfcbe70a6b718ce88
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d5814a4aac064394dbd0c7f5902dc3f62459ad1d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049913"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353810"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Intune での Android エンタープライズ デバイス上のアプリケーション保護ポリシーと仕事用プロファイル
 
@@ -58,7 +58,7 @@ APP が有効になっているアプリの一覧を確認するには、[一連
 
 このセクションでは、APP-WE および Android エンタープライズ仕事用プロファイルの展開シナリオの重要な特性について説明します。
 
-#### <a name="app-we"></a>APP-WE
+### <a name="app-we"></a>APP-WE
 
 APP-WE (登録なしのアプリ保護ポリシー) 展開では、デバイスではなくアプリに対するポリシーを定義します。 このシナリオでは、通常、デバイスは Intune などの MDM 機関によって登録または管理されません。 アプリと組織のデータへのアクセスを保護するために、管理者は、APP で管理可能なアプリを使用し、これらのアプリにデータ保護ポリシーを適用します。
 
@@ -71,7 +71,7 @@ APP-WE (登録なしのアプリ保護ポリシー) 展開では、デバイス�
 
 APP-WE のシナリオは、自分のデバイス上の組織の占有領域を小さくすることと、MDM に登録しないことを希望するエンド ユーザー向けです。 管理者は、引き続きご自分のデータを保護する必要があります。 これらのデバイスは管理されていません。 そのため、WiFi、デバイス VPN、証明書の管理などの MDM のタスクと機能は、この展開シナリオに含まれません。
 
-#### <a name="android-enterprise-work-profiles"></a>Android エンタープライズ仕事用プロファイル
+### <a name="android-enterprise-work-profiles"></a>Android エンタープライズ仕事用プロファイル
 
 仕事用プロファイルは、中核となる Android エンタープライズ展開シナリオであり、BYOD のユース ケースを対象とする唯一のシナリオです。 仕事用プロファイルは、Intune で管理できる、Android OS レベルで作成された別のパーティションです。
 
@@ -95,7 +95,7 @@ Intune APP と仕事用プロファイルは、組み合わせて、または別
 
 ### <a name="suppress-app-policy-for-work-profiles"></a>仕事用プロファイルに対する APP ポリシーの抑制
 
-複数のデバイス (APP-WE シナリオでのアンマネージド デバイスと、仕事用プロファイルを使用するマネージド デバイス) を持つ個々のユーザーをサポートすることが必要な場合があります。 
+複数のデバイス (APP-WE シナリオでのアンマネージド デバイスと、仕事用プロファイルを使用するマネージド デバイス) を持つ個々のユーザーをサポートすることが必要な場合があります。
 
 たとえば、エンド ユーザーが仕事用アプリを開くときに PIN の入力を要求します。 デバイスに応じて、PIN の機能は APP または仕事用プロファイルによって処理されます。 APP-WE デバイスの場合、PIN から起動の動作は APP によって適用されます。 仕事用プロファイル デバイスの場合は、OS によって適用されるデバイスまたは仕事用プロファイルの PIN を使用できます。 このシナリオを実現するには、APP 設定を構成して、アプリが仕事用プロファイルに展開される "*とき*" に適用されないようにします。 この方法で構成しない場合、エンド ユーザーはデバイスによって PIN の入力を求められ、APP 層でもう一度求められます。
 
@@ -111,13 +111,13 @@ Outlook や OneDrive などの Office アプリケーションには、"複数 I
 
 Intune APP の使用が最適なレコメンデーションであるエンタープライズ モビリティ シナリオがいくつかあります。
 
-#### <a name="older-devices-running-android-44-51-are-being-used"></a>Android 4.4 から 5.1 を稼働している旧デバイスが使用されている
+### <a name="older-devices-running-android-44-51-are-being-used"></a>Android 4.4 から 5.1 を稼働している旧デバイスが使用されている
 
 公式には、Google Mobile Services を備えた Android 5.0 以上のすべてのデバイスで仕事用プロファイルがサポートされており、その方法で管理することができます。 ただし、一部の OEM の一部の Android 5.0 および 5.1 デバイスでは、仕事用プロファイルがサポートされていません。
 
 仕事用プロファイルをサポートしていないバージョンを使用している場合に、デバイス上の組織のデータの DLP を確保するには、Intune APP の機能を使用する必要があります。
 
-#### <a name="no-mdm-no-enrollment-google-services-are-unavailable"></a>MDM なし、登録なしの Google サービスを利用できない
+### <a name="no-mdm-no-enrollment-google-services-are-unavailable"></a>MDM なし、登録なしの Google サービスを利用できない
 
 一部のお客様は、さまざまな理由により、仕事用プロファイル管理を含むあらゆる形式のデバイス管理を望みません。
 
@@ -128,7 +128,7 @@ Intune APP の使用が最適なレコメンデーションであるエンター
 
 たとえば、中国内のお客様や中国にユーザーがいるお客様は、Google サービスがブロックされるので Android デバイス管理を使用できません。 この場合は、DLP に Intune APP を使用します。
 
-## <a name="summary"></a>要約
+## <a name="summary"></a>[概要]
 
 Intune を使用すると、APP-WE と Android エンタープライズ仕事用プロファイルの両方を Android BYOD プログラムに利用できます。 APP-WE と仕事用プロファイルのどちらを選ぶかは、ビジネスと使用の要件によって決まります。 つまり、マネージド デバイスに対する証明書の展開やアプリのプッシュなどの MDM アクティビティが必要な場合は、仕事用プロファイルを使用します。 デバイスを管理したくないか管理できず、Intune APP 対応アプリのみを使用している場合は、APP-WE を使用します。
 

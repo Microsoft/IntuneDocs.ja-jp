@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc785e7f714320d410d20e254125858f44131677
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: a6425c1346255caf70e73feef2aec1097625f921
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548753"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427113"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Intune を使用したオペレーティング システムのバージョン管理
 最近のモバイル プラットフォームおよびデスクトップ プラットフォームでは、主要な更新プログラム、修正プログラム、および新しいバージョンが速いペースでリリースされます。 Windows 上の更新プログラムおよび修正プログラムについては、完全に管理するためのコントロールがありますが、iOS や Android などの他のプラットフォームでは、エンド ユーザーをプロセスに参加させる必要があります。  Microsoft Intune には、異なるプラットフォーム間のオペレーティング システムのバージョン管理を構築するための機能があります。
@@ -40,7 +40,7 @@ Intune MDM の登録制限を使用すると、クライアント デバイス�
 1. オペレーティング システムの最小バージョンを使用して、組織内のエンド ユーザーのプラットフォームを最新かつサポートされた状態に保ちます。 
 2. オペレーティング システムの最大バージョンを指定しない (制限なし) ままにするか、組織内で検証済みの最新バージョンに設定して、オペレーティング システムの新しいリリースを内部テストするための時間を確保します。
 
-詳細については、「[デバイスの種類の制限を設定する](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions)」を参照してください。
+詳細については、「[デバイスの種類の制限を設定する](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction)」を参照してください。
  
 ## <a name="operating-system-version-reporting-and-compliance-with-intune-mdm-device-compliance-policies"></a>オペレーティング システム バージョンのレポートと Intune MDM デバイス コンプライアンス ポリシーの順守
 Intune MDM デバイス コンプライアンス ポリシーでは、次のツールが提供されています。 
@@ -86,6 +86,6 @@ Intune アプリの保護ポリシーとモバイル アプリケーション管
 ## <a name="next-steps"></a>次の手順
 次のリソースを使用して、組織内のオペレーティング システムのバージョンを管理します。 
 
-- [デバイスの種類の制限を設定する](https://docs.microsoft.com/intune/enrollment-restrictions-set#set-device-type-restrictions)
+- [デバイスの種類の制限を設定する](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction)
 - [Intune のデバイス コンプライアンス ポリシーの概要](https://docs.microsoft.com/intune/device-compliance-get-started)
 - [アプリ保護ポリシーを作成して割り当てる方法](https://docs.microsoft.com/intune/app-protection-policies)

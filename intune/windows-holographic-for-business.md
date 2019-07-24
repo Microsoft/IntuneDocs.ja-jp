@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1c1400b3786965ab962de01207f24b53aa3a47b1
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 2f3c36e0fac3784828c6a4c0bbf077dea83da369
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045992"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354459"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Intune を使用して Windows Holographic デバイスと HoloLens デバイスのさまざまなデバイス管理機能を管理および使用する
 
@@ -105,23 +105,23 @@ Intune には、組織内のさまざまなデバイスで有効または無効�
 
 プロファイルでは、OMA-URI を使用し、一部の設定をカスタマイズしたり、デバイス制限を作成したり、VPN (仮想プライベート ネットワーク) や Wi-Fi を構成したりできます。
 
-#### <a name="custom-device-settingscustom-settings-windows-holographicmd"></a>[カスタム デバイス設定](custom-settings-windows-holographic.md)
+### <a name="custom-device-settingscustom-settings-windows-holographicmd"></a>[カスタム デバイス設定](custom-settings-windows-holographic.md)
 
 OMA-URI (Open Mobile Alliance Uniform Resource Identifier) 設定を構成するために、Intune でカスタム プロファイルを作成できます。 OMA-URI 設定を利用し、Windows Holographic for Business のさまざまな機能を制御できます。たとえば、VPN を有効にしたり、Microsoft Update の更新プログラムを確認したりできます。
 
-#### <a name="configure-kiosk-modekiosk-settings-holographicmd"></a>[キオスク モードを構成する](kiosk-settings-holographic.md)
+### <a name="configure-kiosk-modekiosk-settings-holographicmd"></a>[キオスク モードを構成する](kiosk-settings-holographic.md)
 
 Intune で利用できる共有またはゲスト PC 機能を利用し、キオスクとして実行されるように Windows Holographic for Business デバイスを構成できます。 キオスクとして構成したデバイスでは、1 つのアプリを実行するか (シングルアプリ キオスク モード)、複数のアプリを実行できます (マルチアプリ キオスク モード)。
 
-#### <a name="device-restrictionsdevice-restrictions-windows-holographicmd"></a>[デバイスの制限](device-restrictions-windows-holographic.md)
+### <a name="device-restrictionsdevice-restrictions-windows-holographicmd"></a>[デバイスの制限](device-restrictions-windows-holographic.md)
 
 デバイスの制限では、デバイスのさまざまな設定や機能を制御できます。たとえば、パスワードを要求したり、[Microsoft Store](https://www.microsoft.com/store/apps/windows?icid=CNavAppsWindowsApps) からアプリをインストールしたり、Bluetooth を有効にしたりできます。 このような制限は Intune プロファイルで作成されます。 このプロファイルは、Windows Holographic for Business を実行している複数のデバイスに適用できます。
 
-#### <a name="configure-vpnvpn-settings-configuremd"></a>[VPN を構成する](vpn-settings-configure.md)
+### <a name="configure-vpnvpn-settings-configuremd"></a>[VPN を構成する](vpn-settings-configure.md)
 
 仮想プライベート ネットワーク (VPN) を使用すると、会社のユーザーが社内ネットワークにリモート アクセスする際にセキュリティで保護することができます。 Intune では、Windows Holographic for Business を実行しているデバイスに固有の設定が含まれる VPN プロファイルを作成できます。 たとえば、すべての Windows Holographic for Business デバイスが接続の種類に Citrix VPN を利用するように VPN プロファイルを作成できます。
 
-#### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[Wi-Fi を構成する](wi-fi-settings-configure.md)
+### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[Wi-Fi を構成する](wi-fi-settings-configure.md)
 
 Intune で Wi-Fi プロファイルを作成し、お使いの Windows Holographic for Business デバイスに無線ネットワーク設定を割り当てることもできます。 Wi-Fi プロファイルを割り当てると、エンド ユーザーはネットワークを構成しなくても企業のネットワークにアクセスできます。 たとえば、お使いの Windows Holographic for Business デバイス専用の Wi-Fi ネットワークを作成できます。
 

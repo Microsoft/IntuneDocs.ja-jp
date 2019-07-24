@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1dc78f8126e0fa9c65fdbe70cfd909da70391e3e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: b3c2b5bc0091544136848bf92fc6cef7524ffa54
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884517"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354511"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Intune での iOS デバイスに対するアプリごとの仮想プライベート ネットワーク (VPN) の設定
 
@@ -48,7 +48,7 @@ Zscaler Private Access (ZPA) は、認証のために Azure Active Directory (Az
 
 身元を証明するため、VPN サーバーはデバイスによってプロンプトなしに受け入れられる必要がある証明書を提示します。 証明書の自動承認を確認するには、証明機関 (CA) によって発行された VPN サーバーのルート証明書を含む、信頼済み証明書プロファイルを作成します。 
 
-#### <a name="export-the-certificate-and-add-the-ca"></a>証明書をエクスポートし、CA を追加する
+### <a name="export-the-certificate-and-add-the-ca"></a>証明書をエクスポートし、CA を追加する
 
 1. VPN サーバーで、管理コンソールを開きます。
 2. VPN サーバーで証明書ベースの認証が使用されていることを確認します。 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7775a0aec8bdba648cf809e3f797ce5606b2ca4f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: fa084d2a52e23273effdfb035b218c8ee1f7f2ab
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047410"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354042"
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Intune for Education と Intune でのフル デバイス管理エクスペリエンスはどのように異なりますか。
 
@@ -41,7 +41,7 @@ Intune と Intune for Education の両方で、次のことができます。
 * ユーザーが組織の情報にアクセスし、共有する方法を制御し、情報を保護します。
 * デバイスやアプリをセキュリティ要件に準拠させます。
 
-### <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次の手順
 * [Intune の 90 日間の評価版](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1)を使用して製品の理解を深める。 既に利用できる場合、 (https://intuneeducation.portal.azure.com) にアクセスして開始してください。
 * Intune for Education のクイック スタート ガイドは[こちら](/intune-education/what-is-express-configuration)をご覧ください。
 * Intune の[技術的要件と機能](/intune/supported-devices-browsers)を調べる

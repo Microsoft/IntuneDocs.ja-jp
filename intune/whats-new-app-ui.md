@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8e87f8df43468428877d93be03e6f2d7316de9a
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: ecfd482df452c52d81621cdc49c6ca78c4d4c1f6
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572615"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354544"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune とエンド ユーザー アプリの UI の更新
 Microsoft Intune アプリに対する最新の更新プログラムについて学習します。 Intune ポータル サイト アプリと Web サイトに対する追加および改善は定期的に行われています。 Intune 管理者またはサポート担当者である場合、次の作業を行うために必要な情報がこの記事で提供されています。
@@ -49,7 +49,7 @@ Windows 用ポータル サイトのアプリに、ユーザーのデバイス�
 
 ## <a name="week-of-june-17-2019"></a>2019 年 6 月 17 日の週  
 
-#### <a name="new-features-in-microsoft-intune-app"></a>Microsoft Intune アプリの新機能
+### <a name="new-features-in-microsoft-intune-app"></a>Microsoft Intune アプリの新機能
 Android 用 Microsoft Intune アプリ (プレビュー) に新機能が追加されました。 フル マネージド Android デバイスのユーザーは次のことが可能になりました。  
 
 * Intune ポータル サイトまたは Microsoft Intune のアプリを介して登録したデバイスを表示して管理する。    
@@ -552,7 +552,7 @@ __変更後__ ![変更後のバージョンの読み込み画面の画像。イ�
 > 次のイメージはプレビューであり、発表される製品は示されているバージョンとは異なる場合があります。  
 
 
-### <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目
 * [Microsoft Intune のブログ](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [クラウド プラットフォームのロードマップ](https://www.microsoft.com/cloud-platform/roadmap)
 * [Intune の新機能](https://docs.microsoft.com/intune/whats-new)

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91633aee190b5fb5bda9495f66d4503042aa6a80
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 9a1e370b65d8bfd7e61562347323bf1455dfe55b
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713319"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354302"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Microsoft Intune で iOS アプリ間のデータ転送を管理する方法
 
@@ -109,5 +109,5 @@ iOS デバイスの **Open In Management** 機能を使用すると、**MDM チ�
 まず、[アプリ保護ポリシーを作成し、iOS アプリに割り当て](app-protection-policies.md)ます。 アプリ保護ポリシーをテストする方法の詳細については、[アプリ保護ポリシーの検証](app-protection-policies-validate.md)に関するページを参照してください。
 
 
-### <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目
 [Intune アプリ保護ポリシーとは](app-protection-policy.md)

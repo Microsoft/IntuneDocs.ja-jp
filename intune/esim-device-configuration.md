@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e241dc534427b97086013a12391f06bd2f342779
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: e4a171255c545e2f2c55adf4695476107d06aefe
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883271"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354384"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Intune で eSIM 携帯電話プロファイルを構成する - パブリック プレビュー
 
@@ -79,7 +79,7 @@ Intune を使ってご利用のデバイスに eSIM を展開するには、次�
 4. ご利用のアクティブ化コードが含まれている CSV ファイルを選択します。
 5. **[OK]** を選択して変更を保存します。
 
-#### <a name="csv-file-requirements"></a>CSV ファイルの要件
+### <a name="csv-file-requirements"></a>CSV ファイルの要件
 
 アクティブ化コードを含む csv ファイルを操作する場合は、ご自分が、あるいはご利用の携帯電話会社が次の要件に従っていることを確認してださい。
 
@@ -89,7 +89,7 @@ Intune を使ってご利用のデバイスに eSIM を展開するには、次�
 - 各ファイルは単一の携帯電話会社に固有であり、すべてのアクティブ化コードは同じ料金プランに固有である必要があります。 Intune では、アクティブ化コードがターゲット デバイスにランダムに配布されます。 特定のアクティブ化コードがどのデバイスで取得されるかは保証されません。
 - 最大 1000 個のアクティブ化コードを、1 つの csv ファイルでインポートすることができます。
 
-#### <a name="csv-file-example"></a>CSV ファイルの例
+### <a name="csv-file-example"></a>CSV ファイルの例
 
 1. csv の最初の行と最初のセルは、SM-DP+ (Subscription Manager Data Preparation サーバー) と呼ばれる、携帯電話会社の eSIM アクティブ化サービスの URL です。 URL は、コンマなしの完全修飾ドメイン名 (FQDN) である必要があります。
 2. 2 番目の行とそれ以降のすべての行は、次の 2 つの値を含む、一意の 1 回限りのアクティブ化コードです。
@@ -129,7 +129,7 @@ eSIM アクティブ化コードは一度使用されます。 Intune によっ�
 
 ## <a name="step-4-monitor-deployment"></a>手順 4:展開を監視する
 
-#### <a name="review-the-deployment-status"></a>展開状態を確認する
+### <a name="review-the-deployment-status"></a>展開状態を確認する
 
 プロファイルを割り当てた後、サブスクリプション プールの展開状態を監視することができます。
 
@@ -138,7 +138,7 @@ eSIM アクティブ化コードは一度使用されます。 Intune によっ�
 3. **[デバイス構成]**  >  **[eSIM 携帯ネットワーク プロファイル]** の順に選択します。 既存の eSIM 携帯電話サブスクリプション プールがすべて一覧表示されます。
 4. サブスクリプションを選択して、 **[展開状態]** を確認します。
 
-#### <a name="check-the-profile-status"></a>プロファイルの状態を確認する
+### <a name="check-the-profile-status"></a>プロファイルの状態を確認する
 デバイス プロファイルを作成すると、Intune でグラフィカルなチャートが提供されるようになります。 これらのチャートには、プロファイルがデバイスに正常に割り当てられていることや、プロファイルが競合を示しているかどうかなど、プロファイルの状態が表示されます。
 
 1. **[デバイス構成]**  >  **[eSIM 携帯ネットワーク プロファイル]** の順に選択し、既存のサブスクリプションを選びます。
@@ -167,7 +167,7 @@ eSIM アクティブ化コードは一度使用されます。 Intune によっ�
     - **携帯電話の状態**: 携帯電話会社によって提供される状態。 携帯電話会社に連絡して、トラブルシューティングを行ってください。
     - **最後のチェックイン**: デバイスが Intune と最後に通信を行った日付
 
-#### <a name="monitor-esim-profile-details-on-the-actual-device"></a>実際のデバイスで eSIM プロファイルの詳細を監視する
+### <a name="monitor-esim-profile-details-on-the-actual-device"></a>実際のデバイスで eSIM プロファイルの詳細を監視する
 
 1. ご利用のデバイスで、 **[設定]** を開き、 **[ネットワークとインターネット]** に移動します。
 2. **[携帯電話]**  >  **[eSIM プロファイルの管理]** の順に選択します。
