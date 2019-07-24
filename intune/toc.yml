@@ -171,6 +171,7 @@
       items:
         - name: デバイス登録とは
           href: device-enrollment.md
+          displayName: COD; BYOD; DEM; DEP; USB-SA; USB-Direct; co-management; GPO
         - name: デバイス管理機能
           href: device-management-capabilities.md
         - name: 登録オプション
@@ -184,6 +185,7 @@
               href: apple-mdm-push-certificate-get.md
             - name: 企業 ID
               href: corporate-identifiers-add.md
+              displayName: COD
             - name: Multi-Factor Authentication
               href: multi-factor-authentication.md
             - name: デバイス登録マネージャー
@@ -273,6 +275,8 @@
           href: device-remove-user.md
         - name: プライマリ ユーザーを見つける
           href: find-primary-user.md
+        - name: 通知を送信する
+          href: custom-notifications.md
         - name: macOS デバイスのデータを消去する
           href: device-erase.md
         - name: モバイル デバイスのリモート制御
@@ -559,20 +563,27 @@
               href: apps-add-built-in.md
             - name: Powershell スクリプト
               href: intune-management-extension.md
-        - name: アプリの展開
-          href: apps-deploy.md
+        - name: アプリを割り当てる
           items:
+            - name: アプリをグループに割り当てる
+              href: apps-deploy.md
+              displayName: app assignment; assignment
             - name: アプリの組み込みおよび除外
               href: apps-inc-exl-assignments.md
+              displayName: app assignment
             - name: Windows 10アプリデプロイ
               href: apps-windows-10-app-deploy.md
             - name: アプリを Government 環境にデプロイする
               href: apps-deploy-gcc-dod.md
         - name: アプリの監視
           href: apps-monitor.md
+        - name: 検出されたアプリ
+          href: app-discovered-apps.md
         - name: アプリの構成
-          href: app-configuration-policies-overview.md
           items:
+            - name: アプリの構成ポリシー
+              href: app-configuration-policies-overview.md
+              displayName: App configuration policy; configuration policy
             - name: iOS マネージド デバイス
               href: app-configuration-policies-use-ios.md
             - name: Android マネージド デバイス
