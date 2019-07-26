@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03b3b38819ea6bd0a34eff5b7eb8decfc2b9eb49
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 9b995841152ee7290e41eed7988ff2b52b6bc66c
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548087"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68375244"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune でのデバイス登録に関するトラブルシューティング
 
@@ -69,7 +69,7 @@ ms.locfileid: "67548087"
 
 3. ユーザーの登録済みデバイス数が既にデバイス数の上限に達している場合、以下の操作が行われるまでユーザーはそれ以上の登録を実行することができません。
     - [既存のデバイスが削除される](devices-wipe.md)、または
-    - [デバイスの制限を設定](enrollment-restrictions-set.md#set-device-limit-restrictions)することにより、デバイスの上限を増やす。
+    - [デバイスの制限を設定](enrollment-restrictions-set.md)することにより、デバイスの上限を増やす。
 
 デバイスの上限に達するのを回避するには、必ず古いデバイス レコードを削除します。
 
@@ -499,5 +499,5 @@ iOS 登録エラーの一覧は、「[Troubleshooting iOS device enrollment prob
 
 
 
-### <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次の手順
 このトラブルシューティング情報を使っても問題が解決しない場合は、「[Microsoft Intune のサポートを受ける方法](get-support.md)」の説明に従って Microsoft サポートにお問い合わせください。
