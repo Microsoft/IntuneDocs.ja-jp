@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ee62213c9ef23302de7fa7342569e1903514699
-ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
+ms.openlocfilehash: f9b02deb529bd6a9bca882fecb3d55d9db513191
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341346"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427168"
 ---
 # <a name="in-development-for-microsoft-intune---july-2019"></a>Microsoft Intune 用に開発中 - 2019 年 7 月
 
@@ -58,10 +58,6 @@ ms.locfileid: "68341346"
 <!-- ***********************************************-->
 ## <a name="app-management"></a>アプリ管理
 
-
-### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>ユーザーとグループのためのカスタマイズされた通知    <!-- 16766574   -->
-Intune で管理する iOS デバイスと Android デバイスのユーザーに、ポータルサイトアプリケーションからカスタムアドホックプッシュ通知をすぐに送信できるようになります。 これらのカスタム通知は、特定の Intune 機能に関連付けられておらず、一部またはすべての従業員に送信する一般的な通知など、必要な目的に使用できます。  
-
 ### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>組織アカウントのアプリ通知コンテンツを構成する <!-- 2576686 -->
 Android および iOS デバイスの Intune アプリ保護ポリシー (アプリ) では、組織アカウントのアプリ通知コンテンツを制御できます。 この機能は、アプリケーションからのサポートを必要とし、すべてのアプリ対応アプリケーションで使用できるとは限りません。 アプリの詳細については、「[アプリ保護ポリシーとは](app-protection-policy.md)」を参照してください。
 
@@ -70,7 +66,6 @@ Android の仕事用プロファイル デバイスに使用できるアプリ�
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>デバイス構成
-
 
 ### <a name="support-for-ikev2-vpn-profiles-for-ios----1943438---"></a>iOS 用の IKEv2 VPN プロファイルのサポート <!-- 1943438 -->
 IKEv2 プロトコルを使用して、iOS ネイティブ VPN クライアント用の VPN プロファイルを作成できるようになります。 IKEv2 は、 **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  > **プラットフォームに [iOS]** > プラットフォームの種類に **[VPN]** > **[設定]** の新しい接続の種類です。
@@ -81,39 +76,18 @@ IKEv2 プロトコルを使用して、iOS ネイティブ VPN クライアン�
 
 適用対象: iOS
 
-### <a name="use-applicability-rules-when-creating-windows-10-device-configuration-profiles----2549910---"></a>Windows 10 デバイス構成プロファイルを作成するときは "適用規則" を使用する <!-- 2549910 -->
-Windows 10 デバイス構成プロファイルを作成します ( **[デバイスの構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  >  **[Windows 10]** (プラットフォーム))。 **適用規則**を作成し、プロファイルが特定のエディションまたは特定のバージョンにのみ適用されるようにすることができます。 たとえば、いくつかの BitLocker 設定を有効にするプロファイルを作成します。 プロファイルを追加したら、適用規則を使用して Windows 10 Enterprise を実行しているデバイスにのみプロファイルを適用します。
-
-適用対象: 
-- Windows 10 以降
-
-### <a name="advanced-settings-for-windows-defender-firewall-------1311949-------"></a>Windows Defender ファイアウォールの詳細設定   <!--  1311949     -->
-まもなく、パブリック プレビューとして、Intune を使って Windows Defender 用のクライアント上のカスタム ファイアウォール規則を管理することができるようになります。  
-
-### <a name="new-configuration-designer-when-creating-an-oemconfig-profile-for-android-enterprise----3712769----"></a>Android Enterprise 用の OEMConfig プロファイルを作成するときの新しい構成デザイナー <!-- 3712769  -->
-Intune では、OEMConfig アプリを使用するデバイス構成プロファイルを作成できます (デバイス構成 > プロファイル > プロファイルの作成 > Android enterprise for platform > [プロファイルの種類] の [OEMConfig])。 これを行うと、JSON エディターが開き、テンプレートと値を変更できます。 この更新プログラムには、タイトルや説明など、アプリに埋め込まれた詳細を表示する、ユーザーエクスペリエンスが向上した構成デザイナーが含まれています。 JSON エディターは引き続き使用でき、構成デザイナーで行ったすべての変更が表示されます。
-
-現在の設定を確認するには、「 [OEMConfig を使用した Android Enterprise デバイスの使用と管理](android-oem-configuration-overview.md)」を参照してください。
-
-適用対象: Android エンタープライズ
-
 
 <!-- ***********************************************-->
 ## <a name="device-management"></a>デバイス管理
 
-### <a name="improve-device-location---3855417---"></a>デバイスの場所を改善する<!-- 3855417 -->
-**デバイスの検索**アクションを使用して、デバイスの正確な座標を拡大することができます。 紛失した iOS デバイスを特定する方法の詳細については、「紛失した[ios デバイスの検出](device-locate.md)」を参照してください。
-
 ### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>自動デバイスクリーンアップの時間制限を30日に設定する <!--4231059  -->
 最後にサインインした後に、デバイスの自動クリーンアップ時間の制限を30日 (現在の制限である90日よりも短く) に設定することができます。 これを行うには、 **Intune** > **デバイス** > **セットアップ** > **デバイスのクリーンアップルール**に関するページを参照してください。
-
 
 <!-- ***********************************************-->
 ## <a name="security"></a>セキュリティ
 
 ### <a name="import-and-export-security-baselines------3408610------------"></a>セキュリティベースラインのインポートとエクスポート    <!--3408610          -->  
 カスタマイズを可能にし、Intune 環境間で共有できるように、セキュリティベースラインをエクスポートおよびインポートする機能を追加しています。
-
 
 
 <!-- ***********************************************-->

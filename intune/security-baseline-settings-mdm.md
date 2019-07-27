@@ -5,7 +5,7 @@ description: Windows 10 を管理するための Intune セキュリティ ベ�
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f70d54404dc20d6d6aabd5974dff9c5102b759f
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 2ff902530b6f7001e23300b01f6576f0a7fc2637
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882294"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491905"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Intune 用の MDM セキュリティ ベースラインの設定  
 
@@ -1773,7 +1773,12 @@ Intune でのセキュリティベースラインの使用方法については�
   **既定値**: はい
 
 - **Windows Hello for Business の構成**   
-  Windows Hello for Business は、パスワード、スマート カード、および仮想スマート カードを置き換えることで Windows にサインインする代替方法です。 このポリシー設定を有効にした場合、または構成しなかった場合、デバイスでは Windows Hello for Business がプロビジョニングされます。 このポリシー設定を無効にした場合、デバイスではどのユーザーに対しても Windows Hello for Business をプロビジョニングが行われません。
+    Windows Hello for Business は、パスワード、スマート カード、および仮想スマート カードを置き換えることで Windows にサインインする代替方法です。  
+
+  - *[はい]* に設定すると、このポリシーが有効になり、デバイスは Windows Hello for Business をプロビジョニングします。  
+  - [*未構成*] に設定した場合、ベースラインはデバイスのポリシー設定に影響しません。 これは、Windows Hello for Business がデバイスで無効になっていると、無効のままになることを意味します。 有効になっている場合は、有効のままになります。 
+
+  この基準を使用して Windows Hello for Business を無効にすることはできません。 Windows Hello for Business を無効にするには、 [windows の登録](windows-hello.md)を構成するか、 [identity protection](identity-protection-configure.md)のデバイス構成プロファイルの一部としてを使用します。  
 
   **既定値**: はい
 

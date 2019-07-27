@@ -18,16 +18,20 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e43fccabd142527d9e17317d56fa029844fa270d
-ms.sourcegitcommit: cd03ea890f563b48339a8c8bb50386b8852ba894
+ms.openlocfilehash: bff8f2d74b06d1cd4ee7dffe594917b4d0946d5c
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68329466"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467312"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Android の仕事用プロファイルでデバイスを登録する
 
-自分の個人用の Android デバイスを登録して、会社のメール、アプリ、その他の作業データにアクセスできます。 登録中に、Android の仕事用プロファイルを設定します。 このプロファイルにより、デバイス上の個人データが作業データから分離されます。 会社のサポートでは、作業ファイルとデータで構成される仕事用プロファイルのみが管理されます。 会社のサポートでは、デバイス上の個人情報は管理できません。 詳細については、「[仕事用プロファイルを作成するとどうなりますか](what-happens-when-you-create-a-work-profile-android.md)」を参照してください。  
+自分の個人用の Android デバイスを登録して、会社のメール、アプリ、その他の作業データにアクセスできます。 登録中に、Android の仕事用プロファイルを設定します。 このプロファイルにより、デバイス上の個人データが作業データから分離されます。 会社のサポートでは、作業ファイルとデータで構成される仕事用プロファイルのみが管理されます。 会社のサポートでは、デバイス上の個人情報は管理できません。
+</br>
+> [!VIDEO https://www.youtube.com/embed/9Dl8HsGk4tI]
+
+詳細については、「[仕事用プロファイルを作成するとどうなりますか](what-happens-when-you-create-a-work-profile-android.md)」を参照してください。
 
 ## <a name="create-work-profile-and-enroll-device"></a>仕事用プロファイルを作成してデバイスを登録する
 
