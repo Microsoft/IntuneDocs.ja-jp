@@ -5,6 +5,7 @@
   items:
     - name: Intune とは何か
       href: what-is-intune.md
+      displayName: ems; emm; azure ad; active directory; ad
     - name: Intune が会社のためにできることとは。
       href: get-started-evaluation.md
     - name: 新機能
@@ -18,6 +19,7 @@
   items:
     - name: Intune を無料で試す
       href: free-trial-sign-up.md
+      displayName: 'tenant; trial; get started, start; help'
     - name: ユーザーを作成する
       href: quickstart-create-user.md
     - name: グループの作成
@@ -56,6 +58,7 @@
   items:
     - name: デバイス管理とは
       href: what-is-device-management.md
+      displayName: teamviewer
     - name: 教育用の Intune とは
       href: introduction-intune-education.md
     - name: 高レベル アーキテクチャ
@@ -70,6 +73,7 @@
       href: byod-technology-decisions.md
     - name: アプリ保護ポリシーと作業プロファイル (Android)
       href: android-deployment-scenarios-app-protection-work-profiles.md
+      displayName: app-we; without; without enrollment
     - name: オペレーティング システムのバージョンの管理
       href: manage-os-versions.md
     - name: Windows Holographic の管理
@@ -134,6 +138,7 @@
       items:
         - name: Intune をセットアップする手順
           href: setup-steps.md
+          displayName: fasttrack
         - name: サポートされている構成
           href: supported-devices-browsers.md
           items:
@@ -188,6 +193,7 @@
               displayName: COD
             - name: Multi-Factor Authentication
               href: multi-factor-authentication.md
+              displayName: mfa; multifactor
             - name: デバイス登録マネージャー
               href: device-enrollment-manager-enroll.md
             - name: デバイスをグループにマッピングする
@@ -214,20 +220,24 @@
           items:
             - name: Android の登録を設定する
               href: android-enroll.md
+              displayName: wpj
             - name: Intune を Android Enterprise に接続する
               href: connect-intune-android-enterprise.md
             - name: Android Enterprise 仕事用プロファイル登録
               href: android-work-profile-enroll.md
             - name: Android Enterprise の専用デバイスの登録
               href: android-kiosk-enroll.md
+              displayName: gms
             - name: Android Enterprise フル マネージド登録
               href: android-fully-managed-enroll.md
+              displayName: gms
             - name: Android Enterprise の専用デバイスまたはフル マネージド デバイスを登録する
               href: android-dedicated-devices-fully-managed-enroll.md
             - name: Android Enterprise 仕事用プロファイル デバイスの管理
               href: android-enterprise-overview.md
             - name: Samsung Knox Mobile Enrollment
               href: android-samsung-knox-mobile-enroll.md
+              displayName: kda; kme
         - name: iOS の登録の設定
           href: ios-enroll.md
           items:
@@ -246,9 +256,11 @@
           href: enrollment-report-company-portal-abandon.md
         - name: デバイス登録に関するトラブルシューティング
           href: troubleshoot-device-enrollment-in-intune.md
+          displayName: sso
     - name: デバイスの管理
-      href: device-management.md
       items:
+        - name: デバイス管理の概要
+          href: device-management.md
         - name: デバイス管理機能
           href: device-management-capabilities.md
         - name: アクティベーション ロックのバイパス
@@ -332,6 +344,7 @@
               href: vpn-setting-configure-per-app.md
         - name: ワイヤレスの Wi-fi ネットワークを追加する
           href: wi-fi-settings-configure.md
+          displayName: wifi
           items:
             - name: 事前共有キーを使用する Wi-Fi
               href: wi-fi-profile-shared-key.md
@@ -343,6 +356,7 @@
           href: shared-user-device-settings.md
         - name: Zebra デバイス上のモビリティの拡張機能
           href: android-zebra-mx-overview.md
+          displayName: mx
           items:
             - name: StageNow ログおよび一般的な問題
               href: android-zebra-mx-logs-troubleshoot.md
@@ -362,6 +376,7 @@
       items:
         - name: デバイスの保護の概要
           href: device-protect.md
+          displayName: compliant; noncompliant; mfa
         - name: プライバシーおよび個人データ
           href: privacy-personal-data.md
           items:
@@ -389,8 +404,10 @@
         - name: デバイスの暗号化
           href: encrypt-devices.md
         - name: 条件付きアクセス
-          href: conditional-access.md
           items:
+            - name: 条件付きアクセスの概要
+              href: conditional-access.md
+              displayName: ca
             - name: 条件付きアクセスの一般的な使用方法
               href: conditional-access-intune-common-ways-use.md
             - name: Exchange On-premises コネクタをインストールする
@@ -431,6 +448,7 @@
                       items:
                         - name: Better Mobile と Intune の統合
                           href: better-mobile-mtd-connector-integration.md
+                          displayName: sso
                     - name: Check Point の設定
                       href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
                       items:
@@ -491,14 +509,18 @@
           items:
             - name: SCEP
               href: certificates-scep-configure.md
+              displayName: ksp
             - name: PKCS
               href: certficates-pfx-configure.md
+              displayName: ksp
             - name: S/MIME を使用して電子メールを暗号化する
               href: certificates-s-mime-encryption-sign.md
             - name: SCEP でサード パーティの証明機関を使用する
               href: certificate-authority-add-scep-overview.md
+              displayName: csr
             - name: DigiCert PKI を使用する
               href: certificates-digicert-configure.md
+              displayName: ca; pkcs; pki; ra; registration authority
             - name: SCEP 証明書または PKCS 証明書を削除する
               href: remove-certificates.md
         - name: eSIM 携帯電話のプロファイル
@@ -519,6 +541,7 @@
           href: app-management.md
         - name: アプリを追加する
           href: apps-add.md
+          displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
           items:
             - name: 保護されている Intune アプリ
               href: apps-supported-intune-apps.md
@@ -559,6 +582,7 @@
                   href: lob-apps-macos.md
             - name: Web アプリ
               href: web-app.md
+              displayName: web; web link; weblink; web-link
             - name: 組み込みアプリ
               href: apps-add-built-in.md
             - name: Powershell スクリプト
@@ -594,9 +618,11 @@
               href: app-configuration-policies-managed-app.md
             - name: iOS アプリ プロビジョニング プロファイルを使用する
               href: app-provisioning-profile-ios.md
-            - name: ボリューム購入アプリと書籍の操作
-              href: vpp-apps.md
+            - name: ボリューム購入アプリとブック
               items:
+                - name: VPP アプリとブックの管理
+                  href: vpp-apps.md
+                  displayName: vpp; volume purchased
                 - name: iOS VPP アプリ
                   href: vpp-apps-ios.md
                 - name: ビジネス向け Microsoft ストア アプリ
@@ -616,11 +642,15 @@
             - name: 選択的にアプリをワイプする
               href: apps-selective-wipe.md
             - name: アプリ保護ポリシーの使用
-              href: app-protection-policy.md
               items:
+                - name: アプリ保護ポリシーを理解する
+                  href: app-protection-policy.md
+                  displayName: app; protection; policy
                 - name: アプリ保護ポリシーの作成
-                  href: app-protection-policies.md
                   items:
+                    - name: 全般設定
+                      href: app-protection-policies.md
+                      displayName: dlp; data loss prevention
                     - name: Android の設定
                       href: app-protection-policy-settings-android.md
                     - name: iOS の設定
@@ -671,6 +701,10 @@
           href: tenant-status.md
         - name: トラブルシューティング
           items:
+            - name: 登録のトラブルシューティング
+              items:
+                - name: iOS デバイス登録のトラブルシューティング
+                  href: troubleshoot-ios-enrollment-errors.md
             - name: ユーザーによる問題のトラブルシューティングをサポートする
               href: help-desk-operators.md
             - name: 会社のリソースへのアクセスに関する問題のトラブルシューティング
@@ -877,6 +911,7 @@
               href: app-sdk-ios.md
             - name: Android 用アプリ ラッピング ツール
               href: app-wrapper-prepare-android.md
+              displayName: dex
             - name: Android 用 Intune アプリ SDK
               href: app-sdk-android.md
               items:
