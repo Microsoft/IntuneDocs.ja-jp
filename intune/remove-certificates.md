@@ -16,16 +16,16 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: lacranda
-ms.openlocfilehash: de2f201e6a7d0181847db5d212625c9eed9ea698
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: e5d6bf546a67ef36107aa566de299397959190e3
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413773"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68374682"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Microsoft Intune で SCEP 証明書と PKCS 証明書を削除する
 
-Microsoft Intune では、Simple Certificate Enrollment Protocol (SCEP) および Public Key Cryptography Standards (PKCS) 証明書プロファイルを使って、デバイスに証明書を追加できます。 
+Microsoft Intune では、Simple Certificate Enrollment Protocol (SCEP) および Public Key Cryptography Standards (PKCS) 証明書プロファイルを使って、デバイスに証明書を追加できます。
 
 これらの証明書は、デバイスを[ワイプ](devices-wipe.md#wipe)したり、[インベントリから削除](devices-wipe.md#retire)したりするときに削除できます。 また、証明書が自動的に削除されるシナリオや、証明書がデバイスに残るシナリオも存在します。 この記事では、一般的なシナリオと、PKCS 証明書と SCEP 証明書への影響を紹介します。
 
@@ -35,16 +35,15 @@ Microsoft Intune では、Simple Certificate Enrollment Protocol (SCEP) およ�
 > 1. ユーザーのデバイスをワイプします (または、インベントリから削除します)。
 > 2. オンプレミスの Active Directory または Azure AD からユーザーを削除します。
 
-## <a name="manually-deleted-certificates"></a>手動で削除された証明書  
+## <a name="manually-deleted-certificates"></a>手動で削除された証明書
 
-証明書の手動での削除は、SCEP または PKCS 証明書プロファイルによってプロビジョニングされたプラットフォームと証明書全体に適用されるシナリオです。 たとえば、デバイスが証明書ポリシーのターゲットのままであるときに、ユーザーがそのデバイスから証明書を削除する可能性があります。  
+証明書の手動での削除は、SCEP または PKCS 証明書プロファイルによってプロビジョニングされたプラットフォームと証明書全体に適用されるシナリオです。 たとえば、デバイスが証明書ポリシーのターゲットのままであるときに、ユーザーがそのデバイスから証明書を削除する可能性があります。
 
-このようなシナリオでは、証明書の削除後、次回デバイスが Intune にチェックインしたときに、それが想定される証明書を持っていないためコンプライアンスに準拠していないことがわかります。 そこで、デバイスのコンプライアンスを復元するために、Intune により新しい証明書が発行されます。 証明書を復元するために追加のアクションは必要ありません。  
-
+このようなシナリオでは、証明書の削除後、次回デバイスが Intune にチェックインしたときに、それが想定される証明書を持っていないためコンプライアンスに準拠していないことがわかります。 そこで、デバイスのコンプライアンスを復元するために、Intune により新しい証明書が発行されます。 証明書を復元するために追加のアクションは必要ありません。
 
 ## <a name="windows-devices"></a>Windows デバイス
 
-#### <a name="scep-certificates"></a>SCEP 証明書
+### <a name="scep-certificates"></a>SCEP 証明書
 
 SCEP 証明書は次の場合に取り消され、*その上*、削除されます。
 
@@ -67,7 +66,7 @@ SCEP 証明書は次の場合にデバイスに*残ります* (証明書は取�
 - 管理者が Intune ライセンスを取り消す。
 - 管理者が Azure AD からユーザーまたはグループを削除する。
 
-#### <a name="pkcs-certificates"></a>PKCS 証明書
+### <a name="pkcs-certificates"></a>PKCS 証明書
 
 PKCS 証明書は次の場合に取り消され、*その上*、削除されます。
 
@@ -90,7 +89,7 @@ PKCS 証明書は次の場合にデバイスに*残ります* (証明書は取�
 
 ## <a name="ios-devices"></a>iOS デバイス
 
-#### <a name="scep-certificates"></a>SCEP 証明書
+### <a name="scep-certificates"></a>SCEP 証明書
 
 SCEP 証明書は次の場合に取り消され、*その上*、削除されます。
 
@@ -113,7 +112,7 @@ SCEP 証明書は次の場合にデバイスに*残ります* (証明書は取�
 - 管理者が Intune ライセンスを取り消す。
 - 管理者が Azure AD からユーザーまたはグループを削除する。
 
-#### <a name="pkcs-certificates"></a>PKCS 証明書
+### <a name="pkcs-certificates"></a>PKCS 証明書
 
 PKCS 証明書は次の場合に取り消され、*その上*、削除されます。
 
@@ -123,7 +122,7 @@ PKCS 証明書は次の場合に取り消され、*その上*、削除されま�
 
 PKCS 証明書は次の場合に削除されます。
 - 証明書プロファイルがグループ割り当てから削除される。
-  
+
 ルート証明書は次の場合に削除されます。
 - ユーザーの登録が解除される。
 - 管理者が[ワイプ](devices-wipe.md#wipe) アクションを実行する。
@@ -137,7 +136,7 @@ PKCS 証明書は次の場合にデバイスに*残ります* (証明書は取�
 
 ## <a name="android-knox-devices"></a>Android KNOX デバイス
 
-#### <a name="scep-certificates"></a>SCEP 証明書
+### <a name="scep-certificates"></a>SCEP 証明書
 
 SCEP 証明書は次の場合に取り消され、*その上*、削除されます。
 - ユーザーの登録が解除される。
@@ -160,7 +159,7 @@ SCEP 証明書は次の場合にデバイスに*残ります* (証明書は取�
 - 管理者が Intune ライセンスを取り消す。
 - 管理者が Azure AD からユーザーまたはグループを削除する。
 
-#### <a name="pkcs-certificates"></a>PKCS 証明書
+### <a name="pkcs-certificates"></a>PKCS 証明書
 
 PKCS 証明書は次の場合に取り消され、*その上*、削除されます。
 
@@ -179,14 +178,15 @@ PKCS 証明書は次の場合にデバイスに*残ります* (証明書は取�
 - 管理者が Azure AD からユーザーまたはグループを削除する。
 - 管理者が PKCS プロファイルを変更または更新する。
 - 証明書プロファイルがグループ割り当てから削除される。
-  
-  
+
+
 > [!NOTE]
-> Android for Work デバイスは、上記のシナリオで検証されていません。 Android の従来のデバイス (Samsung 以外のすべての、仕事用プロファイル以外のデバイス) では証明書の削除が無効です。 
+> Android for Work デバイスは、上記のシナリオで検証されていません。
+> Android の従来のデバイス (Samsung 以外のすべての、仕事用プロファイル以外のデバイス) では証明書の削除が無効です。
 
 ## <a name="macos-certificates"></a>macOS 証明書
 
-#### <a name="scep-certificates"></a>SCEP 証明書
+### <a name="scep-certificates"></a>SCEP 証明書
 
 SCEP 証明書は次の場合に取り消され、*その上*、削除されます。
 - ユーザーの登録が解除される。
@@ -205,7 +205,7 @@ SCEP 証明書は次の場合にデバイスに*残ります* (証明書は取�
 > [!NOTE]
 > [ワイプ](devices-wipe.md#wipe) アクションを使用して macOS デバイスを工場出荷時の状態にリセットすることはできません。
 
-#### <a name="pkcs-certificates"></a>PKCS 証明書
+### <a name="pkcs-certificates"></a>PKCS 証明書
 
 PKCS 証明書は macOS ではサポートされていません。
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7663009c7d45171ab6469f7f6e96b4c8f979b744
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: f55ecd98e047dbf77e6e8eb58284577078e21a61
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883282"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427333"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Microsoft Intune で Intune のオンプレミス Exchange コネクタを設定する
 この記事の情報は、Intune 用の Exchange Active Sync オンプレミス コネクタをインストールして監視するのに役立ちます。  Intune オンプレミス Exchange コネクタを[条件付きアクセス ポリシーと一緒に使用して、ご利用の Exchange オンプレミス メールボックスへのアクセスを許可またはブロックします](conditional-access-exchange-create.md)。 
@@ -152,8 +152,22 @@ Intune は、サブスクリプションあたり複数のオンプレミス Exc
 フェールオーバーを達成するために、コネクタでは指定された CAS を使用して Exchange への接続に成功すると、その Exchange 組織用の他の CAS が検出されます。 他の CAS に関する知識を活用してコネクタは、プライマリ CAS が利用できるようになるまで、別の CAS (利用可能な場合) にフェールオーバーすることができます。 既定では、他の CAS の検出は有効になっています。 フェールオーバーを無効にするには、次の手順に従います。  
 1. Exchange コネクタがインストールされているサーバー上で、%*ProgramData*%\Microsoft\Windows Intune Exchange Connector にアクセスします。 
 2. テキスト エディターを使用して、**OnPremisesExchangeConnectorServiceConfiguration.xml** を開きます。
-3. &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; を &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; に変更して、機能を無効にします。    
+3. &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; を &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; に変更して、機能を無効にします。  
  
+## <a name="optional-performance-tuning-for-the-exchange-connector"></a>Exchange コネクタのオプションのパフォーマンス チューニング  
+
+Exchange ActiveSync を使用して 5,000 以上のデバイスをサポートする場合は、コネクタのパフォーマンスを向上させるオプションの設定を構成できます。 Exchange で PowerShell コマンドの実行スペースの複数のインスタンスを使用できるようにすることで、パフォーマンスを向上させることができます。 
+
+この変更を行う前に、Exchange コネクタの実行に使用するアカウントが、他の Exchange 管理の目的で使用されていないことを確認してください。 これは、Exchange にはアカウントあたり 18 個の実行スペースの制限があり、そのほとんどがコネクタで使用されるためです。 
+
+このパフォーマンスの変更は、古いハードウェアまたは低速のハードウェアで実行されるコネクタには適していません。  
+
+1. コネクタがインストールされているサーバーで、コネクタのインストール ディレクトリを開きます。  既定の場所は、*C:\ProgramData\Microsoft\Windows Intune Exchange Connector* です。 
+2. *OnPremisesExchangeConnectorServiceConfiguration.xml* ファイルを編集します。
+3. **EnableParallelCommandSupport** を探し、値を **true** に設定します。  
+     
+   \<EnableParallelCommandSupport>true\</EnableParallelCommandSupport>
+4. ファイルを保存し、Microsoft Intune Exchange コネクタ サービスを再起動します。
 
 ## <a name="reinstall-the-on-premises-exchange-connector"></a>オンプレミス Exchange コネクタの再インストール
 Exchange コネクタの再インストールが必要な場合があります。 各 Exchange 組織に対して接続がサポートされるコネクタは 1 つだけであるため、組織用に 2 つ目のコネクタをインストールすると、元のコネクタは、インストールした新しいコネクタに置き換えられます。

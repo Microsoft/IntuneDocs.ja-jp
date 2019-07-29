@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16586ece687b5d50ea89b28bfd524f50e65ceb46
-ms.sourcegitcommit: 5ce8726278004bbf072149a9c924091bb0654b7c
+ms.openlocfilehash: bbab505d668f0e348b3b4d34fb2c39ac683f340b
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67851476"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353593"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune でのセキュリティ ベースラインを使用した Windows 10 デバイスの構成
 
@@ -73,6 +73,9 @@ Intune では、次のセキュリティ ベースラインのインスタンス
 - **Microsoft Defender ATP ベースライン**  
   " *(このベースラインを使用するには、ご使用の環境が [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) を使用するための前提条件を満たしている必要があります)* "。
   - [プレビュー:Microsoft Defender ATP ベースライン](security-baseline-settings-defender-atp.md)  
+
+  > [!NOTE]
+  > Microsoft Defender ATP のセキュリティ ベースラインは、物理デバイス用に最適化されており、現在は仮想マシン (VM) や VDI エンドポイントでの使用は推奨されていません。 特定のベースライン設定が、仮想化された環境でのリモート対話型セッションに影響を与える可能性があります。  詳細については、Windows ドキュメントの「[Increase compliance to the Microsoft Defender ATP security baseline](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)」 (Microsoft Defender ATP のセキュリティ ベースラインのコンプライアンスの強化) を参照してください。
 
 前にプレビュー テンプレートに基づいて作成したプロファイルは、そのプレビュー テンプレートが新しいプロファイルの作成にもう使えない場合であっても、引き続き使用および変更することができます。 
 
@@ -177,19 +180,19 @@ Intune マネージド デバイスに関するセキュリティのベースラ
 
 ## <a name="q--a"></a>Q & A
 
-#### <a name="why-these-settings"></a>これらの設定の理由を教えてください。
+### <a name="why-these-settings"></a>これらの設定の理由を教えてください。
 
 Microsoft セキュリティ チームは、これらの推奨事項を作成するために、Windows の開発者とセキュリティ コミュニティと長年にわたって直接協力してきました。 このベースラインの設定は、関連性の特に高いセキュリティ関連の構成オプションと考えられています。 Windows の新しいビルドごとに、チームは新しくリリースされた機能に基づいて推奨事項を調整しています。
 
-#### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>Windows セキュリティのベースラインの推奨事項には、グループ ポリシーとIntune とで違いはありますか。
+### <a name="is-there-a-difference-in-the-recommendations-for-windows-security-baselines-for-group-policy-vs-intune"></a>Windows セキュリティのベースラインの推奨事項には、グループ ポリシーとIntune とで違いはありますか。
 
 同じ Microsoft セキュリティ チームが、各ベースラインの設定を選択し、編成しています。 Intune には、Intune のセキュリティのベースラインに関連する設定がすべて含まれています。 グループ ポリシー ベースラインには、オンプレミス ドメイン コントローラーに固有の設定がいくつかあります。 このような設定は Intune の推奨事項から除外されています。 他の設定はすべて同じです。
 
-#### <a name="are-the-intune-security-baselines-cis-or-nsit-compliant"></a>Intune のセキュリティのベースラインは CIS または NSIT に準拠していますか。
+### <a name="are-the-intune-security-baselines-cis-or-nsit-compliant"></a>Intune のセキュリティのベースラインは CIS または NSIT に準拠していますか。
 
 厳密に言えば、"いいえ" です。 Microsoft セキュリティ チームは、CIS などの組織に、その推奨事項をまとめるように依頼しています。 ただし、"CIS 準拠" と Microsoft のベースラインは 1 対 1 で対応していません。
 
-#### <a name="what-certifications-does-microsofts-security-baselines-have"></a>Microsoft のセキュリティのベースラインにはどのような認定資格がありますか。 
+### <a name="what-certifications-does-microsofts-security-baselines-have"></a>Microsoft のセキュリティのベースラインにはどのような認定資格がありますか。 
 
 - Microsoft は、グループ ポリシー (GPO) および [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) 用のセキュリティのベースラインを長年にわたって公開し続けています。 これらのベースラインは多くの組織で使用されています。 これらのベースラインの推奨事項は、Microsoft セキュリティ チームと、米国国防総省 (DoD)、National Institute of Standards and Technology (NIST) などの企業のお客様および外部機関との関わりから得られたものです。 Microsoft の推奨事項とベースラインは、これらの組織と共有しています。 また、これらの組織には、Microsoft の推奨事項を厳密に反映した独自の推奨事項もあります。 モバイル デバイス管理 (MDM) がクラウドへと成長を続けた過程で、Microsoft はこのようなグループ ポリシーのベースラインと同等の MDM の推奨事項を作成しました。 このような追加のベースラインは Microsoft Intune に組み込まれており、ベースラインに準拠している (または準拠していない) ユーザー、グループ、およびデバイスに関するコンプライアンス レポートが含まれています。
 
@@ -202,4 +205,5 @@ Microsoft セキュリティ チームは、これらの推奨事項を作成す
   - [MDM セキュリティ ベースライン](security-baseline-settings-mdm.md)  
   - [Microsoft Defender ATP ベースライン](security-baseline-settings-defender-atp.md)  
 
-- 状態を確認し、[ベースラインとプロファイル](security-baselines-monitor.md)を監視します。
+- 状態を確認し、[ベースラインとプロファイル](security-baselines-monitor.md)を監視します
+

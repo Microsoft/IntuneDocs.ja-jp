@@ -17,15 +17,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71e8760bde5f6c53f6e73d8c8dd0f795809726b2
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: aa4a0ff4c651e20a9f772551f1664bd8bf2d879f
+ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67649112"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68387321"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot を使用して Intune に Windows デバイスを登録する  
 Windows Autopilot を使用すると、Intune でのデバイスの登録が簡単になります。 カスタマイズされたオペレーティング システム イメージのビルドおよび維持は、時間のかかるプロセスです。 また、これらのカスタム オペレーティング システム イメージを新しいデバイスに適用し、エンド ユーザーに提供する前に使用の準備を行う場合にも、時間がかかることがあります。 Microsoft Intune と Autopilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および新しいデバイスへの適用を行わなくてもデバイスをエンド ユーザーに提供することができます。 Intune を使用して Autopilot デバイスを管理する場合、デバイスの登録後にポリシー、プロファイル、アプリなどを管理することができます。 利点、シナリオ、および前提条件の概要については、「[Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)」 (Windows Autopilot の概要) を参照してください。
+
+Autopilot の展開の種類には次の 4 種類があります。[自己展開モード](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/self-deploying) (キオスク、デジタル信号、または共有デバイスの場合)、[ホワイト グローブ](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) (パートナーまたは IT スタッフは Windows 10 PC が完全に構成されビジネスに即応できるように、それを事前プロビジョニングすることができる)、[既存のデバイス向け Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) (最新バージョンの Windows 10 をご利用の既存のデバイスに簡単に展開できる)、[ユーザー駆動型モード](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven) (従来のユーザーの場合)。 
 
 
 ## <a name="prerequisites"></a>必要条件
