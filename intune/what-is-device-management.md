@@ -4,7 +4,7 @@ description: Microsoft 365 Enterprise には Microsoft Intune が含まれてい
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 audience: ITPro
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f476c3129f3f3da4cde98fd0cd9960c223ffd6ae
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 5be25e9ab88f4dd44399d6ddc37cfc25955475ba
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884265"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427310"
 ---
 # <a name="what-is-device-management"></a>デバイス管理とは 
 
@@ -59,7 +59,7 @@ Intune により、ユーザーごと、および iOS、macOS、Android、Window
 - **Windows Defender** には、Windows 10 デバイスを保護するための多くのセキュリティ機能が含まれています。 たとえば、Intune と Windows Defender を一緒に使用すると、次のことができます。 
 
   - [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) を有効にして、モバイル デバイス上のファイルとアプリでの不審なアクティビティを検索できます。 
-  - モバイル デバイスに対するセキュリティ侵害を防ぐには、[Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) を使用します。 また、ユーザーを企業リソースからブロックすることで、セキュリティ侵害の影響を抑えるために役立ちます。
+  - [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) を使用して、モバイル デバイスに対するセキュリティ侵害を防ぐことができます。 また、ユーザーを企業リソースからブロックすることで、セキュリティ侵害の影響を抑えるために役立ちます。
 
 - **条件付きアクセス**は、Azure Active Directory の機能で、Intune とうまく統合されます。 [条件付きアクセス](https://docs.microsoft.com/intune/conditional-access)を使用することで、確実に準拠しているデバイスのみに電子メール、SharePoint、およびその他のアプリへのアクセスを許可します。 
 
@@ -73,11 +73,11 @@ Intune により、ユーザーごと、および iOS、macOS、Android、Window
 
 Intune をセットアップするときに、Azure portal でのみ作業してデバイスを管理するか、または Intune と Microsoft 365 を一緒に使用してデバイスを管理するかを選択することもできます。 「[Migrating mobile device management to Intune in the Azure portal](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal)」(Azure portal でモバイル デバイス管理を Intune に移行する) は Microsoft IT のケース スタディです。 このケース スタディでは、Microsoft IT が最新のデバイス管理アプローチをどのように選択したかを参照し、得られた教訓をお読みください。
 
-## <a name="simplify-it-tasks-using-the-device-management-dashboard"></a>デバイス管理ダッシュ ボードを使用して IT タスクを簡略化する
+## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>デバイス管理の管理センターを使用して IT タスクを簡略化する
 
-[デバイス管理ダッシュ ボード](https://devicemanagement.portal.azure.com/)は、モバイル デバイスに関するタスクを管理し、実行するためのワンストップ ショップです。 このダッシュ ボードには、Intune や Azure Active Directory などのデバイス管理とクライアント アプリを管理するために使用するサービスが含まれています。 
+[デバイス管理の管理センター](https://devicemanagement.portal.azure.com/)は、モバイル デバイスに関するタスクの管理と実行を行うためのワンストップ ショップです。 このワークスペースには、デバイス管理のために使用するサービス (Intune や Azure Active Directory など) と、クライアント アプリの管理のために使用するサービスが含まれています。 
 
-デバイス管理ダッシュボードでは、次のことができます。
+デバイス管理の管理センターでは、次のことができます。
 
 - [デバイスの登録](https://docs.microsoft.com/intune/device-enrollment)
 - [デバイス コンプライアンスの設定](https://docs.microsoft.com/intune/device-compliance-get-started)

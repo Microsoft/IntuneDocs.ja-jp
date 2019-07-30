@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 06/26/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4f9f3cabf0826380dfd97b9c0f772f9846912f0
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: f75317678034a488e689461982550bbb0a8afad8
+ms.sourcegitcommit: 7273100afc51fd808558dc05c651358145d4fa6b
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530263"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68533159"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune で iOS デバイス用のカスタム設定を使用する
 
@@ -31,13 +31,17 @@ iOS デバイスを使用するとき、Intune にカスタム設定を取り込
 - [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12)
 - [Apple Profile Manager](https://support.apple.com/profile-manager)
 
-これらのツールを使用して、設定を構成プロファイルにエクスポートすることができます。 Intune では、このファイルをインポートし、iOS のユーザーとデバイスにプロファイルを割り当てます。 割り当てられた設定は配布され、組織内の iOS に対するベースラインまたは基準も作成します。
+これらのツールを使用して、設定を構成プロファイルにエクスポートすることができます。 Intune では、このファイルをインポートし、iOS のユーザーとデバイスにプロファイルを割り当てます。 割り当てが完了すると、設定が配布されます。 また、組織内の iOS のベースラインまたは標準も作成します。
 
-この記事では、iOS デバイス用のカスタム プロファイルを作成する方法を示します。 また、Apple Configurator と Apple Profile Manager の使用に関するガイダンスも提供します。
+この記事では、Apple Configurator と Apple Profile Manager の使用に関するガイダンスを提供し、構成できるプロパティについて説明します。
 
 ## <a name="before-you-begin"></a>始める前に
 
-- **Apple Configurator** を使用して構成プロファイルを作成するときは、エクスポートする設定が、使用しているデバイスの iOS バージョンと互換性があることを確認してください。 互換性のない設定の解決については、[Apple 開発者](https://developer.apple.com/) Web サイトで「**Configuration Profile Reference**」(構成プロファイル リファレンス) および「**Mobile Device Management Protocol Reference**」(モバイル デバイス管理プロトコル リファレンス) を検索してください。
+[プロファイルを作成します](device-profile-create.md)。
+
+## <a name="what-you-need-to-know"></a>知っておく必要がある情報
+
+- **Apple Configurator** を使用して構成プロファイルを作成するときは、エクスポートする設定が、デバイスの iOS バージョンと互換性があることを確認してください。 互換性のない設定の解決については、[Apple 開発者](https://developer.apple.com/) Web サイトで「**Configuration Profile Reference**」(構成プロファイル リファレンス) および「**Mobile Device Management Protocol Reference**」(モバイル デバイス管理プロトコル リファレンス) を検索してください。
 
 - **Apple Profile Manager** を使用するときは、次のことを確認してください。
 
@@ -47,25 +51,19 @@ iOS デバイスを使用するとき、Intune にカスタム設定を取り込
 
     このファイルをダウンロードして保存します。 このファイルを Intune プロファイルに入力します。
 
-  - Apple Profile Manager からエクスポートする設定が、使用しているデバイスの iOS のバージョンと互換性があることを確認します。 互換性のない設定の解決については、[Apple 開発者](https://developer.apple.com/) Web サイトで「**Configuration Profile Reference**」(構成プロファイル リファレンス) および「**Mobile Device Management Protocol Reference**」(モバイル デバイス管理プロトコル リファレンス) を検索してください。
+  - Apple Profile Manager からエクスポートする設定が、デバイスの iOS バージョンと互換性があることを確認してください。 互換性のない設定の解決については、[Apple 開発者](https://developer.apple.com/) Web サイトで「**Configuration Profile Reference**」(構成プロファイル リファレンス) および「**Mobile Device Management Protocol Reference**」(モバイル デバイス管理プロトコル リファレンス) を検索してください。
 
-## <a name="create-the-profile"></a>プロファイルの作成
+## <a name="custom-configuration-profile-settings"></a>カスタム構成プロファイルの設定
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
-3. 次の設定を入力します。
+- **カスタム構成プロファイル名**: ポリシーの名前を入力します。 この名前は、デバイス上と、Intune の状態に表示されます。
+- **構成プロファイル ファイル**: Apple Configurator または Apple Profile Manager を使用して作成した構成プロファイルを指定します。 インポートしたファイルは、 **[ファイルの内容]** 領域に表示されます。
 
-    - **名前**: `ios custom profile` のようにプロファイルの名前を入力します。
-    - **説明**: プロファイルの説明を入力します
-    - **[プラットフォーム]** : **[iOS]** を選びます。
-    - **プロファイルの種類**: **[カスタム]** を選択します。
+  カスタム構成ファイルにデバイストークンを追加することもできます。 デバイストークンは、デバイス固有の情報を追加するために使用されます。 たとえば、シリアル番号を表示するには、`{{serialnumber}}` と入力します。 デバイスでは、各デバイスに固有の`123456789ABC`と同様のテキストが表示されます。 変数を入力するときは、必ず中かっこ `{{ }}` を使用してください。 [アプリの構成トークン](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)に関する記事には、使用できる変数の一覧が掲載されています。 `deviceid` または他のデバイス固有の値を使用することもできます。
 
-4. **[カスタムの構成]** には、次の設定を入力します。
+  > [!NOTE]
+  > 変数は UI で検証されず、大文字と小文字が区別されます。 その結果、不適切な入力で保存されたプロファイルが表示される場合があります。 たとえば、`{{deviceid}}` の代わりに `{{DeviceID}}` を入力した場合、リテラル文字列がデバイスの一意の ID の代わりに表示されます。 正しい情報を入力してください。
 
-    - **カスタム構成プロファイル名**: ポリシーの名前を入力します。 この名前は、デバイス上と、Intune の状態に表示されます。
-    - **構成プロファイル ファイル**: Apple Configurator または Apple Profile Manager を使用して作成した構成プロファイルを指定します。 インポートしたファイルは、 **[ファイルの内容]** 領域に表示されます。
-
-5. **[OK]**  >  **[作成]** を選択して、Intune プロファイルを作成します。 完了すると、プロファイルが **[デバイス構成 - プロファイル]** の一覧に表示されます。
+**[OK]**  >  **[作成]** を選択して変更を保存します。 プロファイルが作成されて、プロファイル一覧に表示されます。
 
 ## <a name="next-steps"></a>次の手順
 

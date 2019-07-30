@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune の iOS デバイスの機能設定 - Azure | Microsoft Docs
-description: AirPrint、ホーム画面のレイアウト、アプリの通知、共有デバイス、シングル サインイン、Web コンテンツ フィルター設定に関するすべての設定について、Microsoft Intune での iOS デバイスの構成設定をすべて説明します。 デバイス構成プロファイルでこれらの設定を使用して、組織内でこのようなさまざまな Apple 機能を使用するように iOS デバイスを構成します。
+description: AirPrint、ホーム画面のレイアウト、アプリの通知、共有デバイス、シングル サインイン、Web コンテンツ フィルター設定に関するすべての設定について、Microsoft Intune での iOS デバイスの構成設定をすべて説明します。 デバイス構成プロファイルでこれらの設定を使い、組織内でこのような Apple 機能を使うよう iOS デバイスを構成します。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43b87a90f90130a014817819b87ed5946b1ba15b
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: bac591a625fd915056234a75b26bc2f90f50cae7
+ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413804"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68387111"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>Intune で一般的な iOS 機能を使用するための iOS デバイス設定
 
@@ -41,7 +41,7 @@ Intune には、iOS ユーザーが自分のデバイスでさまざまな Apple
 - **[ポート]** : AirPrint の接続先のリスニング ポートを入力します。 このプロパティを空白のままにすると、AirPrint には既定のポートが使用されます。 iOS 11.0 以降で使用できます。
 - **[TLS]** : トランスポート層セキュリティ (TLS) で AirPrint の接続を保護するには、 **[有効]** を選択します。 iOS 11.0 以降で使用できます。
 
-**[追加]** で AirPrint サーバーが一覧に追加されます。 多数の AirPrint サーバーを追加できます。 この情報を含むコンマ区切りファイル (.csv) を **[インポート]** することもできます。 リストを作成したら、AirPrint サーバーの一覧を **[エクスポート]** することもできます。
+**[追加]** で AirPrint サーバーが一覧に追加されます。 多くの印刷プリントサーバーを追加できます。 この情報を含むコンマ区切りファイル (.csv) を **[インポート]** することもできます。 **Export**は、追加した放映プリントサーバーの一覧を作成します。
 
 **[OK]** を選択して一覧を保存します。
 
@@ -195,7 +195,7 @@ iOS デバイスにインストールされているアプリが通知を送信�
   デバイス トークンを使用して、このようなフィールドにデバイス固有の情報を追加することもできます。 たとえば、シリアル番号を表示するには、`Serial Number: {{serialnumber}}` と入力します。 ロック画面には、`Serial Number 123456789ABC` のようにテキストが表示されます。 変数を入力するときは、必ず中かっこ `{{ }}` を使用してください。 [アプリの構成トークン](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)に関する記事には、使用できる変数の一覧が掲載されています。 `deviceName` または他のデバイス固有の値を使用することもできます。
 
   > [!NOTE]
-  > 変数は、UI で検証されないし、小文字が区別されます。 その結果、不適切な入力で保存されたプロファイルが表示される場合があります。 たとえば、`{{deviceid}}` の代わりに `{{DeviceID}}` を入力した場合、リテラル文字列がデバイスの一意の ID の代わりに表示されます。 正しい情報を入力してください。
+  > 変数は UI で検証されず、大文字と小文字が区別されます。 その結果、不適切な入力で保存されたプロファイルが表示される場合があります。 たとえば、`{{deviceid}}` の代わりに `{{DeviceID}}` を入力した場合、リテラル文字列がデバイスの一意の ID の代わりに表示されます。 正しい情報を入力してください。
 
 **[OK]** を選択して変更を保存します。
 
@@ -253,7 +253,7 @@ iOS デバイスにインストールされているアプリが通知を送信�
 
 ## <a name="web-content-filter-settings"></a>Web コンテンツ フィルターの設定
 
-これらの設定で、iOS デバイス上のブラウザー URL アクセスを制御します。
+以下の設定により、監視対象の iOS デバイス上のブラウザーによる URL アクセスが制御されます。
 
 - **[フィルターの種類]** : 特定の Web サイトを許可する場合に選択します。 次のようなオプションがあります。
 

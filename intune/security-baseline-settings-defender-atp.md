@@ -5,7 +5,7 @@ description: Microsoft Defender Advanced Threat Protection を管理するため
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40d2b1f58c2892eea6d3f454a3f993b30b9a5c4a
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: eee3d4187dd513cd3945e86aff478fe96b341660
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354438"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491929"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 向けの Microsoft Defender Advanced Threat Protection ベースライン設定
 
@@ -29,7 +29,7 @@ Microsoft Intune でサポートされている Microsoft Defender Advanced Thre
 
 ご使用の環境が [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) を使用するための前提条件を満たしている場合は、Microsoft Defender Advanced Threat Protection ベースラインを使用できます。 
 
-このベースラインは物理デバイス用に最適化されており、現在は仮想マシン (Vm) または VDI エンドポイントでの使用は推奨されていません。 特定のベースライン設定は、仮想化された環境でのリモート対話型セッションに影響を与える可能性があります。 詳細については、Windows のマニュアルの「 [Microsoft DEFENDER ATP のセキュリティベースラインへのコンプライアンスの強化](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)」を参照してください。
+このベースラインは物理デバイス用に最適化されており、現在は仮想マシン (Vm) または VDI エンドポイントでの使用は推奨されていません。 特定のベースライン設定が、仮想化された環境でのリモート対話型セッションに影響を与える可能性があります。 詳細については、Windows ドキュメントの「[Increase compliance to the Microsoft Defender ATP security baseline (Microsoft Defender ATP のセキュリティ ベースラインに対するコンプライアンスの強化)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)」をご覧ください。
 
 
 > [!NOTE]  
@@ -292,7 +292,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 
   **既定値**: 監査モード
 
-## <a name="web-network-protection"></a>Web ネットワーク保護  
+## <a name="web--network-protection"></a>Web とネットワークの保護  
 
 - **Network protection type (ネットワーク保護タイプ)**  
   [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)  - このポリシーでは、Windows Defender Exploit Guard 内でネットワーク保護をオンまたはオフにすることができます。 ネットワーク保護は Windows Defender Exploit Guard の機能であり、任意のアプリを使用する従業員がインターネット上のフィッシング詐欺、悪用ホスティング サイト、悪意のあるコンテンツにアクセスするのを防ぎます。 これには、サード パーティ製のブラウザーが危険なサイトに接続するのを防ぐことが含まれます。  
@@ -600,6 +600,13 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 
 - **Windows Hello for Business を構成する** - *TenantId/Policies/UsePassportForWork*    
   Windows Hello for Business は、パスワード、スマート カード、および仮想スマート カードを置き換えることで Windows にサインインする代替方法です。  
+
+  - *[はい]* に設定すると、このポリシーが有効になり、デバイスは Windows Hello for Business をプロビジョニングします。  
+  - [*未構成*] に設定した場合、ベースラインはデバイスのポリシー設定に影響しません。 これは、Windows Hello for Business がデバイスで無効になっていると、無効のままになることを意味します。 有効になっている場合は、有効のままになります。 
+
+  この基準を使用して Windows Hello for Business を無効にすることはできません。 Windows Hello for Business を無効にするには、 [windows の登録](windows-hello.md)を構成するか、 [identity protection](identity-protection-configure.md)のデバイス構成プロファイルの一部としてを使用します。  
+
+Windows Hello for Business は、パスワード、スマート カード、および仮想スマート カードを置き換えることで Windows にサインインする代替方法です。  
 
   このポリシー設定を有効にした場合、または構成しなかった場合、デバイスでは Windows Hello for Business がプロビジョニングされます。 このポリシー設定を無効にした場合、デバイスではどのユーザーに対しても Windows Hello for Business をプロビジョニングが行われません。
 
