@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 07/24/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fa23deb26dbf54f8e3e98ec0b9604859a34a90d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: cd310cea29a3dac7a178d88c0f29d1a4e36ad37d
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528315"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482810"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>クイック スタート:クライアント アプリの追加および割り当て
 
@@ -43,7 +43,6 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 Intune でそのアプリの側面を管理できるように、アプリを追加することができます。 
 
 Intune にアプリを追加するには、次の手順に従います。
-
 1. [Intune](https://aka.ms/intuneportal) で、 **[クライアント アプリ]**  >  **[アプリ]**  >  **[追加]** を選択します。 
 2. **[アプリの種類]** ドロップダウン ボックスの **[Office 365 スイート]** セクションで **[Windows 10]** を選択します。
 3. **[アプリ スイートの構成]** を選択し、Intune ユーザーに割り当てる Office アプリを選択します。
@@ -56,9 +55,9 @@ Intune にアプリを追加するには、次の手順に従います。
 
     ![アプリ情報の追加のスクリーン ショット](media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
 
-8. **[アプリ スイートの設定]** を選択します。
-9. **[更新チャネル]** ドロップダウン ボックスで **[月単位]** を選択します。
-10. **[OK]**  >  **[追加]** をクリックします。
+10. **[アプリ スイートの設定]** を選択します。
+11. **[更新チャネル]** ドロップダウン ボックスで **[月単位]** を選択します。
+12. **[OK]**  >  **[追加]** をクリックします。
 
 ## <a name="assign-the-app-to-a-group"></a>アプリをグループに割り当てる
 

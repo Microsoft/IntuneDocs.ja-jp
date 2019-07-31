@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: d0e3e67cd227c5ce8ac2cb42f79bdea1da8e2d75
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 13e8c7fd0c822a2bdfbf7c183ea6752f99cf7991
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375112"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482751"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Intune でエンドポイント保護設定を追加する  
 
@@ -63,7 +63,7 @@ Windows 10 のエンドポイント保護規則を含むプロファイルの一
 - プロファイルごとに、単一の規則を適用できなかった場合、そのプロファイルのすべての規則が失敗し、デバイスにはどの規則も適用されません。  
 - 規則を適用できなかったときは、プロファイル内のすべての規則が失敗として報告されます。 Intune では、失敗した個々の規則を識別することはできません。  
 
-Intune で管理できるファイアウォール規則については、Windows の[ファイアウォール構成サービス プロバイダー]( https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) (CSP) に関するページで詳しく説明されています。 Intune でサポートされる Windows 10 デバイスのカスタム ファイアウォール設定のリストを確認する場合は、[カスタム ファイアウォール規則](endpoint-protection-windows-10.md#custom-firewall-rules)に関するセクションを参照してください。  
+Intune で管理できるファイアウォール規則については、Windows の[ファイアウォール構成サービス プロバイダー]( https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) (CSP) に関するページで詳しく説明されています。 Intune でサポートされる Windows 10 デバイスのカスタム ファイアウォール設定のリストを確認する場合は、[カスタム ファイアウォール規則](endpoint-protection-windows-10.md#firewall-rules)に関するセクションを参照してください。  
 
 ### <a name="to-add-custom-firewall-rules-to-an-endpoint-protection-profile"></a>Endpoint Protection プロファイルにカスタム ファイアウォール規則を追加するには  
 
@@ -73,7 +73,7 @@ Intune で管理できるファイアウォール規則については、Windows
 
 3. **[Windows Defender ファイアウォール]** を選択して構成ページを開き、 *[ファイアウォール規則]* では **[追加]** を選択し、 **[規則の作成]** ページを開きます。  
 
-4. ファイアウォール規則の設定を指定し、 **[OK]** を選択して保存します。 ドキュメントで利用可能なカスタム ファイアウォール規則のオプションを確認する場合は、[カスタム ファイアウォール規則](endpoint-protection-windows-10.md#custom-firewall-rules)に関するセクションを参照してください。  
+4. ファイアウォール規則の設定を指定し、 **[OK]** を選択して保存します。 ドキュメントで利用可能なカスタム ファイアウォール規則のオプションを確認する場合は、[カスタム ファイアウォール規則](endpoint-protection-windows-10.md#firewall-rules)に関するセクションを参照してください。  
 
 5. 規則を保存した後、 *[Windows Defender ファイアウォール]* ページの規則のリストに表示されます。  
 

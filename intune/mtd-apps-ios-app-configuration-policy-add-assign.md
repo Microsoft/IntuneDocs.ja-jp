@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d27cd977909bb7aa237441102110a7abc27ad301
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: fef4b6969680101e2e4f045bc83a8974536eaf2a
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885004"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660968"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune で Mobile Threat Defense (MTD) アプリを追加して割り当てる  
 
@@ -164,26 +164,23 @@ MTD プロバイダーに対応するセクションを選択します。
 - [iOS 用 Microsoft Intune アプリ構成ポリシーを使用する](app-configuration-policies-use-ios.md)手順に従って、Check Point SandBlast Mobile iOS アプリ構成ポリシーを追加します。
   - **手順 8** で、 **[XML データを入力する]** オプションを使用して以下の内容をコピーし、構成ポリシーの本文に貼り付けます。
 
-```
-<dict><key>MDM</key><string>INTUNE</string></dict>
-```
+        <dict><key>MDM</key><string>INTUNE</string></dict>
+
 
 ### <a name="zimperium-app-configuration-policy"></a>Zimperium アプリ構成ポリシー  
 - [iOS 用 Microsoft Intune アプリ構成ポリシーを使用する](app-configuration-policies-use-ios.md)手順に従って、Zimperium iOS アプリ構成ポリシーを追加します。
   - **手順 8** で、 **[XML データを入力する]** オプションを使用して以下の内容をコピーし、構成ポリシーの本文に貼り付けます。
-
-```
-<dict>
-<key>provider</key><string>Intune</string>
-<key>userprincipalname</key><string>{{userprincipalname}}</string>
-<key>deviceid</key>
-<string>{{deviceid}}</string>
-<key>serialnumber</key>
-<string>{{serialnumber}}</string>
-<key>udidlast4digits</key>
-<string>{{udidlast4digits}}</string>
-</dict>
-```
+ 
+        <dict>
+        <key>provider</key><string>Intune</string>
+        <key>userprincipalname</key><string>{{userprincipalname}}</string>
+        <key>deviceid</key>
+        <string>{{deviceid}}</string>
+        <key>serialnumber</key>
+        <string>{{serialnumber}}</string>
+        <key>udidlast4digits</key>
+        <string>{{udidlast4digits}}</string>
+        </dict>
 
 ### <a name="pradeo-app-configuration-policy"></a>Pradeo アプリ構成ポリシー  
 Pradeo では、iOS でのアプリケーション構成ポリシーをサポートしていません。  アプリを構成するには、代わりに、Pradeo を使用して目的の設定であらかじめ構成されたカスタム IPA または APK ファイルを実装します。
@@ -192,16 +189,15 @@ Pradeo では、iOS でのアプリケーション構成ポリシーをサポー
 - [iOS 用 Microsoft Intune アプリ構成ポリシーを使用する](app-configuration-policies-use-ios.md)手順に従って、Better Mobile iOS アプリ構成ポリシーを追加します。
   - **手順 8** で、 **[XML データを入力する]** オプションを使用して以下の内容をコピーし、構成ポリシーの本文に貼り付けます。 `https://client.bmobi.net` の URL を適切なコンソールの URL に置き換えます。
 
-```
-<dict>
-<key>better_server_url</key>
-<string>https://client.bmobi.net</string>
-<key>better_udid</key>
-<string>{{aaddeviceid}}</string>
-<key>better_user</key>
-<string>{{userprincipalname}}</string>
-</dict>
-```
+        <dict>
+        <key>better_server_url</key>
+        <string>https://client.bmobi.net</string>
+        <key>better_udid</key>
+        <string>{{aaddeviceid}}</string>
+        <key>better_user</key>
+        <string>{{userprincipalname}}</string>
+        </dict>
+
 
 ### <a name="sophos-mobile-app-configuration-policy"></a>Sophos Mobile アプリ構成ポリシー  
 [iOS アプリ構成ポリシーの使用](app-configuration-policies-use-ios.md)に関する記事の説明に従って、iOS アプリ構成ポリシーを作成します。
@@ -210,22 +206,20 @@ Pradeo では、iOS でのアプリケーション構成ポリシーをサポー
 [iOS 用 Microsoft Intune アプリ構成ポリシーを使用する](app-configuration-policies-use-ios.md)手順に従って、Wandera iOS アプリ構成ポリシーを追加します。
 - **手順 8** で、**XML データ入力**のオプションを使用します。 RADAR Wandera ポータルにサインインして、 **[設定]**  >  **[EMM Integration]\(EMM 統合\)**  >  **[App Push]\(アプリのプッシュ\)** の順に移動します。 **[Intune]** を選択して使用して以下の内容をコピーし、構成ポリシーの本文に貼り付けます。  
 
-  ```
-  <dict><key>secretKey</key>
-  <string>SeeRADAR</string>
-  <key>apiKey</key>
-  <string> SeeRADAR </string>
-  <key>customerId</key>
-  <string> SeeRADAR </string>
-  <key>email</key>
-  <string>{{mail}}</string>
-  <key>firstName</key>
-  <string>{{username}}</string>
-  <key>lastName</key>
-  <string></string>
-  <key>activationType</key>
-  <string>PROVISION_THEN_AWP</string></dict>  
-  ```
+      <dict><key>secretKey</key>
+       <string>SeeRADAR</string>
+       <key>apiKey</key>
+       <string> SeeRADAR </string>
+       <key>customerId</key>
+       <string> SeeRADAR </string>
+       <key>email</key>
+       <string>{{mail}}</string>
+       <key>firstName</key>
+       <string>{{username}}</string>
+       <key>lastName</key>
+       <string></string>
+       <key>activationType</key>
+       <string>PROVISION_THEN_AWP</string></dict>  
 
 ## <a name="assign-apps-to-groups"></a>アプリをグループに割り当てる  
 - この手順は、すべての MTD パートナーに該当します。 [Intune でアプリをグループに割り当てる](apps-deploy.md)手順を参照してください。

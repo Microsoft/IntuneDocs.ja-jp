@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/5/2018
+ms.date: 07/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa4a0ff4c651e20a9f772551f1664bd8bf2d879f
-ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
+ms.openlocfilehash: a9ac1830bcc407431cf0a5df8e8c11baa0c27c9c
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68387321"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68625112"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot を使用して Intune に Windows デバイスを登録する  
 Windows Autopilot を使用すると、Intune でのデバイスの登録が簡単になります。 カスタマイズされたオペレーティング システム イメージのビルドおよび維持は、時間のかかるプロセスです。 また、これらのカスタム オペレーティング システム イメージを新しいデバイスに適用し、エンド ユーザーに提供する前に使用の準備を行う場合にも、時間がかかることがあります。 Microsoft Intune と Autopilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および新しいデバイスへの適用を行わなくてもデバイスをエンド ユーザーに提供することができます。 Intune を使用して Autopilot デバイスを管理する場合、デバイスの登録後にポリシー、プロファイル、アプリなどを管理することができます。 利点、シナリオ、および前提条件の概要については、「[Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)」 (Windows Autopilot の概要) を参照してください。
@@ -39,7 +39,7 @@ Autopilot の展開の種類には次の 4 種類があります。[自己展開
 
 詳細については、PowerShell コマンドレットの説明をご覧ください。
 
-- [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/1.3/Content/Get-WindowsAutoPilotInfo.ps1)
+- [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)
 
 ## <a name="add-devices"></a>デバイスを追加する
 
