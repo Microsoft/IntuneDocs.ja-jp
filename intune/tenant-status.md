@@ -14,14 +14,14 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 946d46baf17a5ffdd4b567adca32b651cacb72bb
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: c744878c49dfa5adb1b4f64587abfe06151a69a0
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882224"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670986"
 ---
-# <a name="intune-tenant-status-page"></a>Intune のテナントの状態ページ
+# <a name="use-the-intune-tenant-status-page"></a>Intune の [テナントの状態] ページを使用する
 [テナントの状態] ページは、ご利用のテナントに関する現在の重要な詳細を表示できる一元的なハブです。 詳細には、ライセンスの可用性と使用、コネクタの状態、および Intune サービスに関する重要な連絡が含まれます。  
 
 ダッシュボードを表示するには、Azure portal で **[Intune] > [Tenant Status]\(テナントの状態\)** の順に移動します。  [Tenant Status]\(テナントの状態\) は、 **[Help and support group]\(ヘルプとサポート グループ\)** の下に表示されます。  

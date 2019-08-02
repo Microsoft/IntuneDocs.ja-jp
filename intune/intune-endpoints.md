@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b836e754b8c08397fccb0c74b40ba9fe0675076e
-ms.sourcegitcommit: 97a46f0f6a27eda0592ff6518fac46bc2447b622
+ms.openlocfilehash: 1dd836d8bbc4d6f32081c74fb6f9edc42aff2cac
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68411586"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482953"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Microsoft Intune のネットワーク エンドポイント  
 
@@ -146,7 +146,7 @@ Intune を使用して PowerShell スクリプトまたは Win32 アプリをデ
 
 ## <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune 証明書コネクタ  
 
-Microsoft Intune Certificate Connector をホストするサーバーは、**TCP** ポート **443** を使用して、次の表に示すパブリック IP の場所にアクセスできる必要があります。  
+Microsoft Intune Certificate Connector をホストするサーバーは、**TCP** ポート **443** を使用して、次の表に示すパブリック IP の場所にアクセスできる必要があります。 証明書の詳細については、「[Intune で PKCS 証明書を構成して使用する](certficates-pfx-configure.md)」および「[Intune で SCEP 証明書を構成して使用する](certificates-scep-configure.md)」をご覧ください。
 
 |Domains                             |IP アドレス       |
 |---------------|--------------------------------------|

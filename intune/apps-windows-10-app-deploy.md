@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/08/2019
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 804c6485252883672de13bf13729b28a4d7d2f94
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: d76e170627d7e08cc3da6fe4a48eb14ee839de98
+ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883848"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590925"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune を使用する Windows 10 アプリの展開 
 
@@ -41,7 +41,7 @@ Windows 10 の基幹業務アプリは署名され、Intune 管理コンソー�
 
 ## <a name="microsoft-store-for-business-apps"></a>ビジネス向け Microsoft ストア アプリ
 
-ビジネス向け Microsoft Store 管理者ポータルから購入される最新のアプリであり、管理のために Microsoft Intune に同期される、ビジネス向け Microsoft Store アプリです。 アプリは、**オンライン ライセンス付き**か**オフライン ライセンス付き**のいずれかです。 ビジネス向け Microsoft Store アプリの更新プログラムは、管理者に必要な追加作業なしで、Microsoft Store によって直接管理されます。管理者は、カスタムの Uniform Resource Identifier (URI) を使用して、特定のアプリが更新されないようにすることもできます。 詳細については、「[Enterprise app management - Prevent app from automatic updates](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates)」 (「エンタープライズ アプリの管理」の「アプリが自動更新されないようにする」) を参照してください。 デバイス上では、エンド ユーザーがすべてのビジネス向け Microsoft Store アプリの更新を無効にすることもできます。 
+ビジネス向け Microsoft Store アプリは、ビジネス向け Microsoft Store の管理ポータルから購入できる最新のアプリであり、管理のために Microsoft Intune に同期されます。 アプリは、**オンライン ライセンス付き**か**オフライン ライセンス付き**のいずれかです。 ビジネス向け Microsoft Store アプリの更新プログラムは Microsoft Store によって直接管理され、お客様 (管理者) が追加の操作を行う必要はありません。また、カスタムの Uniform Resource Identifier (URI) を使用して、特定のアプリが更新されないようにすることもできます。 詳細については、「[Enterprise app management - Prevent app from automatic updates](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates)」 (「エンタープライズ アプリの管理」の「アプリが自動更新されないようにする」) を参照してください。 デバイス上では、エンド ユーザーがすべてのビジネス向け Microsoft Store アプリの更新を無効にすることもできます。 
 
 ## <a name="installing-apps-on-windows-10-devices"></a>Windows 10 デバイスでのアプリのインストール
 アプリの種類に応じて、次の 2 つの方法のいずれかで Windows 10 デバイスにアプリをインストールすることができます。

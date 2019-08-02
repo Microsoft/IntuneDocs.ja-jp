@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f55ecd98e047dbf77e6e8eb58284577078e21a61
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 5cf6299f46ed8db4fdca02947ce15a920816d110
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427333"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660945"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Microsoft Intune で Intune のオンプレミス Exchange コネクタを設定する
 この記事の情報は、Intune 用の Exchange Active Sync オンプレミス コネクタをインストールして監視するのに役立ちます。  Intune オンプレミス Exchange コネクタを[条件付きアクセス ポリシーと一緒に使用して、ご利用の Exchange オンプレミス メールボックスへのアクセスを許可またはブロックします](conditional-access-exchange-create.md)。 
@@ -121,7 +121,7 @@ Intune とオンプレミス Exchange Server が通信できるようにする�
 
 5. ユーザーの Exchange Server メールボックスに通知を送信するために必要な資格情報を指定します。 このユーザーは通知専用でもかまいません。 通知ユーザーには、メールで通知を送信するための Exchange メールボックスが必要です。 これらの通知は、Intune で条件付きアクセス ポリシーにより構成できます。  
 
-       Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
+   自動検出サービスと Exchange Web Services が Exchange クライアント アクセス サーバーで構成されていることを確認します。 詳細については、「[クライアント アクセス サーバー](https://technet.microsoft.com/library/dd298114.aspx)」を参照してください。
 
 6. **[パスワード]** フィールドに、このアカウントで Intune から Exchange Server にアクセスするのに必要なパスワードを入力します。
 
@@ -158,7 +158,7 @@ Intune は、サブスクリプションあたり複数のオンプレミス Exc
 
 Exchange ActiveSync を使用して 5,000 以上のデバイスをサポートする場合は、コネクタのパフォーマンスを向上させるオプションの設定を構成できます。 Exchange で PowerShell コマンドの実行スペースの複数のインスタンスを使用できるようにすることで、パフォーマンスを向上させることができます。 
 
-この変更を行う前に、Exchange コネクタの実行に使用するアカウントが、他の Exchange 管理の目的で使用されていないことを確認してください。 これは、Exchange にはアカウントあたり 18 個の実行スペースの制限があり、そのほとんどがコネクタで使用されるためです。 
+この変更を行う前に、Exchange コネクタの実行に使用するアカウントが、他の Exchange 管理の目的で使用されていないことを確認してください。 これは、Exchange にはアカウントあたりの実行スペースの数に制限があり、そのほとんどがコネクタによって使用されるためです。 
 
 このパフォーマンスの変更は、古いハードウェアまたは低速のハードウェアで実行されるコネクタには適していません。  
 

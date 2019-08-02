@@ -5,7 +5,7 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 07/30/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3c14d55201f88f5090f404ca9a79dd902c8da5e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: efd4e8d013f0205541f6fcc37bb0bb8b5ea75bac
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041337"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670841"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>クイック スタート:Windows 10 デバイスを登録する
 
@@ -34,7 +34,7 @@ ms.locfileid: "66041337"
 
 Intune サブスクリプションがない場合は、[無料試用版アカウントにサインアップ](free-trial-sign-up.md)します。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
 - Microsoft Intune サブスクリプション - [無料試用版アカウントにサインアップします](free-trial-sign-up.md)
 - このクイック スタートを最後まで行うには、[Intune で自動登録を設定する](quickstart-setup-auto-enrollment.md)手順を完了する必要があります。
@@ -43,16 +43,16 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
 Windows 10 デスクトップを登録する前に、インストールされている Windows のバージョンを確認する必要があります。
 
-1. Windows の **[スタート]** アイコンを右クリックして、**[設定]** を選択し、Windows 設定オプションを表示します。
+1. Windows の **[スタート]** アイコンを右クリックして、 **[設定]** を選択し、Windows 設定オプションを表示します。
 
    ![Windows の設定 - システムのスクリーンショット](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-01.png)
 
-2. **[システム]** > **[バージョン情報]** を選択します。 
+2. **[システム]**  >  **[バージョン情報]** を選択します。 
 
    ![システム設定のスクリーンショット](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-02.png)
 
     > [!TIP]
-    > **検索バー**に「PC 情報」と入力し、**[PC 情報]** を選択してもかまいません。
+    > **検索バー**に「PC 情報」と入力し、 **[PC 情報]** を選択してもかまいません。
 
 3. **[設定]** ウィンドウに、PC の **[Windows の仕様]** 一覧が表示されます。 一覧の **[バージョン]** を確認します。
 
@@ -63,15 +63,15 @@ Windows 10 デスクトップを登録する前に、インストールされて
 
 ## <a name="enroll-windows-10-desktop"></a>Windows 10 デスクトップを登録する
 
-1. Windows の [設定] に戻り、**[アカウント]** を選択します。
+1. Windows の [設定] に戻り、 **[アカウント]** を選択します。
 
    ![システム設定 - アカウントのスクリーンショット](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-03.png)
 
-2. **[職場または学校にアクセスする]** > **[接続]** の順に選択します。
+2. **[職場または学校にアクセスする]**  >  **[接続]** の順に選択します。
 
     ![[職場または学校にアクセスする] アカウントの選択](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-04.png)
 
-3. 職場または学校アカウントで Intune にサインインし、**[次へ]** を選択します。 [ユーザーを作成してライセンスを割り当てる](quickstart-create-user.md)クイック スタートに従った場合は、作成したユーザー アカウントでサインインすることができます。
+3. 職場または学校アカウントで Intune にサインインし、 **[次へ]** を選択します。 [ユーザーを作成してライセンスを割り当てる](quickstart-create-user.md)クイック スタートに従った場合は、作成したユーザー アカウントでサインインすることができます。
 
     > [!NOTE]
     > ".onmicrosoft.com" を設定した場合、ユーザー アカウントのアドレスの一部が **.onmicrosoft.com** になります。 
@@ -80,7 +80,7 @@ Windows 10 デスクトップを登録する前に、インストールされて
 
     会社または学校がデバイスを登録していることを示すメッセージが表示されます。
 
-4. 「**準備が完了しました!**」という画面が表示されたら、 **[完了]** を選択します。 以上で完了です。
+4. 「**準備が完了しました!** 」という画面が表示されたら、 **[完了]** を選択します。 以上で完了です。
 
 5. Windows デスクトップの **[職場または学校にアクセスする]** 設定の一部として、追加したアカウントが表示されます。
 
@@ -91,7 +91,7 @@ Windows 10 デスクトップを登録する前に、インストールされて
 ## <a name="confirm-your-device-enrollment-in-intune"></a>Intune でのデバイス登録を確認する
 
 1. グローバル管理者または Intune サービス管理者として [Intune](https://aka.ms/intuneportal) にサインインします。
-2. **[デバイス]** を選択して、Intune に登録されたデバイスを表示します。
+2. **[デバイス]**  >  **[すべてのデバイス]** を選択して、Intune に登録されたデバイスを表示します。
 3. Intune に追加したデバイスが登録されていることを確認します。
 
    ![Intune に登録されたデバイスのスクリーンショット](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-07.png)

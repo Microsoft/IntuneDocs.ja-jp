@@ -1,7 +1,7 @@
 ---
 title: JAMF Pro から Intune に送られるデータ
 titleSuffix: Microsoft Intune
-description: Jamf Pro から Microsoft Intune に送信されるデータの一覧
+description: Jamf Pro を統合して Intune で Mac を管理する場合に、Jamf Pro から Microsoft Intune に送られるデータの一覧を確認します。
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 287ed06ddab0b98117aa4a75942087f360e4656d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 86f2f47322e668815d1ff37ce6c2de1e4d6cdc16
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048545"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670891"
 ---
 # <a name="data-jamf-pro-sends-to-intune"></a>Jamf Pro から Intune に送られるデータ
 
@@ -30,12 +30,12 @@ Intune でエンドユーザーの Mac を管理する目的で [Jamf Pro](https
 
 * デバイスの Azure AD ID
 * JAMF のインベントリ状態 (過去 24 時間以内に Jamf Pro でチェックインされたコンピューターのインベントリ状態)
-* OSバージョン
+* OS のバージョン
 * ユーザーの Azure AD ID
 * 暗号化 (FileVault 2)
 * Gatekeeper ステータス
 * パスワード: 文字セットの最小数
-* パスワードの有効期限 (日数)
+* パスワードの有効期限 (日)
 * パスワードの種類 - 簡易、英数字、または不明
 * 自動ログインの防止
 * 必要なパスコードの長さ
@@ -48,7 +48,7 @@ Intune でエンドユーザーの Mac を管理する目的で [Jamf Pro](https
 * ブート ROM
 * バス速度
 * キャッシュ サイズ
-* ［デバイス名］
+* デバイス名
 * ドメイン参加
 * Jamf ID
 * MAC アドレス
@@ -70,7 +70,7 @@ Intune でエンドユーザーの Mac を管理する目的で [Jamf Pro](https
 * ユーザーの電子メール
 
 
-**[すべてのデバイス]** ビューで **[削除]** を選択することで、Intune コンソールから Jamf で管理されるデバイスを削除できます。 複数のデバイスを選択し、**[削除]** をクリックすることで、デバイスの一括削除を有効にすることができます。
+**[すべてのデバイス]** ビューで **[削除]** を選択することで、Intune コンソールから Jamf で管理されるデバイスを削除できます。 複数のデバイスを選択し、 **[削除]** をクリックすることで、デバイスの一括削除を有効にすることができます。
 
 Jamf で管理されるデバイスの削除方法については、[Jamf Pro のドキュメント](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information)を参照してください。[Jamf サポート](https://www.jamf.com/support/)にサポート チケットを提出して、さらなる支援を受けることもができます。 
 

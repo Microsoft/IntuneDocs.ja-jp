@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b073047455cd21dc3ffe5efcb52f51584db5ff30
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: b6db255cc4c4bb8466d36e25deaf36e5c3480106
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353781"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467499"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Intune で SCEP 証明書を構成して使用する
 
@@ -373,7 +373,14 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
      - Windows 10 以降
 
 
-   - **[サブジェクト名の形式]** : Intune が証明書要求のサブジェクト名をどのように自動生成するかを選択します。 **[ユーザー]** 証明書の種類または **[デバイス]** 証明書の種類を選択すると、選択肢が変わります。 
+   - **[サブジェクト名の形式]** : Intune が証明書要求のサブジェクト名をどのように自動生成するかを選択します。 **[ユーザー]** 証明書の種類または **[デバイス]** 証明書の種類を選択すると、選択肢が変わります。  
+
+     > [!NOTE]  
+     > SCEP を使用した証明書の取得について、生成される証明書署名要求 (CSR) 内のサブジェクト名に次の文字のいずれかがエスケープ文字 (前にバックスラッシュ \\ が付く) として含まれていた場合に関する[既知の問題](#avoid-certificate-signing-requests-with-escaped-special-characters)があります。
+     > - \+
+     > - ;
+     > - 、
+     > - =
 
         **ユーザー証明書の種類**  
 
@@ -495,6 +502,42 @@ NDES サービス アカウントとして使用するドメイン ユーザー 
      - **[OK]** 、 **[作成]** の順に選んでプロファイルを作成します。
 
 プロファイルが作成され、プロファイルの一覧ウィンドウに表示されます。
+
+### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>エスケープされた特殊文字を含む証明書署名要求を回避する
+SCEP 証明書要求に、以下の特殊文字をエスケープ文字として 1 文字以上含んでいる [サブジェクト名] (CN) が含まれている場合について、既知の問題があります。 サブジェクト名に特殊文字のいずれかがエスケープ文字として含まれていた場合、無効なサブジェクト名を持つ CSR が生成され、それによって次に Intune SCEP チャレンジの検証が失敗して、証明書が発行されなくなります。  
+
+その特殊文字は次のとおりです。
+- \+
+- 、
+- ;
+- =
+
+使用するサブジェクト名に特殊文字のいずれかが含まれている場合は、次のオプションのいずれかを使用してこの制限を回避してください。  
+- 特殊文字を含む CN 値を引用符で囲む。  
+- CN 値から特殊文字を削除する。  
+
+**たとえば**、*Test user (TestCompany, LLC)* として表示される [サブジェクト名] があるとします。  *TestCompany* と *LLC* の間にコンマがある CN を含んでいる CSR で問題が発生します。  この問題を回避するには、CN 全体を引用符で囲むか、*TestCompany* と *LLC* の間のコンマを削除します。
+- **引用符を追加する**:*CN=* "Test User (TestCompany, LLC)",OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+- **コンマを削除する**:*CN=Test User (TestCompany LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+
+ ただし、バックスラッシュ文字を使ってコンマをエスケープしようとすると失敗し、CRP ログにエラーが記録されます。  
+- **エスケープしたコンマ**:*CN=Test User (TestCompany\\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+
+このエラーは次のようなエラーになります。 
+
+```
+Subject Name in CSR CN="Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com" and challenge CN=Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com do not match  
+
+  Exception: System.ArgumentException: Subject Name in CSR and challenge do not match
+
+   at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
+
+Exception:    at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
+
+   at Microsoft.ConfigurationManager.CertRegPoint.Controllers.CertificateController.VerifyRequest(VerifyChallengeParams value
+```
+
+
 
 ## <a name="assign-the-certificate-profile"></a>証明書プロファイルを割り当てる
 

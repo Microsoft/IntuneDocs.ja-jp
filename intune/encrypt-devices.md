@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 57b459efa5b423f1c73a0d6b7b9172f71f4c86d3
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 3f37b9b0bc16572cc86cbf79be616c7f395aa784
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375163"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467454"
 ---
 # <a name="use-device-encryption-with-intune"></a>Intune でデバイスの暗号化を使用する  
 
@@ -66,10 +66,7 @@ Intune で管理できる FileVault 設定の詳細については、macOS エ�
 
    次に例を示します。紛失した、または最近交換した回復キーを取得するには、任意のデバイスから Intune ポータル Web サイトにサインインします。 ポータルで、 *[デバイス]* に移動し、FileVault が有効になっているデバイスを選択し、 *[回復キーを取得する]* を選択します。 現在の回復キーが表示されます。  
 
-6. ビジネス ニーズに合わせて残りの設定を構成し、 **[OK]** を選択します。  
-
-   > [!NOTE]
-   > FileVault のサポートは、7 月のリリースのロールアウトが完了するまでの数日間、制限されます。 ロールアウトが完了するまで、FileVault を構成する場合は、 *[サインアウトするまで FileVault を延期する]* を **[有効]** に設定する必要があります。  
+6. ご自身のビジネス ニーズに合うよう残りの [FileVault 設定](endpoint-protection-macos.md#filevault)を構成した後、 **[OK]** を選択します。  
 
 7. 追加設定の構成を完了したら、プロファイルを保存します。  
 

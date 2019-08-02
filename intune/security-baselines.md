@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune でセキュリティのベースラインを使用する - Azure | Microsoft Docs
-description: モバイル デバイス管理に Microsoft Intune を使用して、デバイス上のユーザーとデータを保護するために推奨される Windows セキュリティ設定を追加または構成します。 BitLocker の有効化、Microsoft Defender Advanced Threat Protection の構成、Internet Explorer の制御、SmartScreen の使用、ローカル セキュリティ ポリシーの設定、パスワードの要求、インターネット ダウンロードのブロックなどを行います。
+description: モバイル デバイス管理に Microsoft Intune を使用して、ユーザーとデバイス上のデータを保護するために推奨される Windows セキュリティ設定を使用します。 暗号化の有効化、Microsoft Defender Advanced Threat Protection の構成、Internet Explorer の制御、ローカル セキュリティ ポリシーの設定、パスワードの要求、インターネット ダウンロードのブロックなどを行います。
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbab505d668f0e348b3b4d34fb2c39ac683f340b
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 252a42b9c8ef6612301bc913e187295be47d27bb
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353593"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671013"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune でのセキュリティ ベースラインを使用した Windows 10 デバイスの構成
 

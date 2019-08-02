@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/16/2019
+ms.date: 07/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b1f8308463e76b09a041bb952ad09515435c54c
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 758230d3d2f1dd1cb42532cce9fe1ff530000a16
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68374852"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482861"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Android Enterprise 用 Microsoft Managed Home Screen アプリを構成する
 
@@ -386,6 +386,9 @@ JSON データを入力して、Managed Home Screen で使用可能なすべて�
 
 ## <a name="googles-android-device-policy-app"></a>Google の Android デバイス ポリシー アプリ
 マネージド ホーム スクリーン アプリで、Google の Android デバイス ポリシー アプリにアクセスできるようになりました。 マネージド ホーム スクリーン アプリは、マルチアプリ キオスク モードを使用する Android Enterprise (AE) 専用デバイスとして Intune に登録されているデバイスで使用されるカスタム ランチャーです。 Android デバイス ポリシー アプリにアクセスしたり、ユーザーを Android デバイス ポリシー アプリに案内したりして、サポートとデバッグを行うことができます。 この起動機能は、デバイスが登録され、マネージド ホーム スクリーンにロックされているときに使用できます。 この機能を使用するために追加のインストールは必要ありません。
+
+## <a name="managed-home-screen-debug-screen"></a>Managed Home Screen のデバッグ画面
+Managed Home Screen のデバッグ画面にアクセスするには、デバッグ画面が表示されるまで**戻る**ボタンをクリックします (**戻る**ボタンを 15 回以上クリックします)。 このデバッグ画面から、Android デバイス ポリシー アプリケーションを起動したり、ログの表示とアップロードを行ったり、キオスク モードを一時的に停止してデバイスを更新したりできます。 キオスク モードの一時停止について詳しくは、Android Enterprise の「[専用デバイスの設定](device-restrictions-android-for-work.md#dedicated-device-settings)」に記載されている **[キオスク モードを終了する]** 項目をご覧ください。
 
 ## <a name="next-steps"></a>次の手順
 
