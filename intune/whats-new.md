@@ -186,7 +186,7 @@ macOS デバイス用のデバイス構成プロファイルを作成できま�
 Autopilot 登録プロファイルを作成するためのユーザー インターフェイスが、Azure ユーザー インターフェイスの形式に準拠するように更新されました。 詳しくは、「[Create an Autopilot enrollment profile (Autopilot 登録プロファイルを作成する)](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-deployment-profile)」をご覧ください。 Intune の追加のシナリオでは、今後はこの新しい UI 形式に更新されます。
 
 #### <a name="enable-autopilot-reset-for-all-windows-devices----4225665---"></a>すべての Windows デバイスに対して Autopilot リセットを有効にする <!-- 4225665 -->
-登録ステータス ページを使用するように構成されていない場合であっても、AutoPilot リセットがすべての Windows デバイスにおいて有効になりました。 初期のデバイス登録時に、登録ステータス ページがデバイスに対して構成されていなかった場合、デバイスではサインイン後、デスクトップへと直接移動します。 同期して Intune 内での適合が確認できるまでに、最大で 8 時間かかる場合があります。 詳しくは、「[リモート Windows 自動操縦リセットを使用してデバイスをリセットする](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset-remote)」をご覧ください。
+登録ステータス ページを使用するように構成されていない場合であっても、AutoPilot リセットがすべての Windows デバイスにおいて有効になりました。 初期のデバイス登録時に、登録ステータス ページがデバイスに対して構成されていなかった場合、デバイスではサインイン後、デスクトップへと直接移動します。 同期して Intune 内での適合が確認できるまでに、最大で 8 時間かかる場合があります。 詳しくは、「[Windows Autopilot のリセット](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset-remote)」をご覧ください。
 
 #### <a name="exact-imei-format-not-required-when-searching-all-devices---30407680---"></a>[すべてのデバイス] を検索する場合に厳密な IMEI 形式を必須としない <!--30407680 -->
 **[すべてのデバイス]** を検索するときに、IMEI 番号にスペースを含める必要がなくなります。
