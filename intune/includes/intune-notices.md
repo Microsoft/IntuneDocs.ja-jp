@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 4423e731bc1538cd2454de32f0d50f2d08eedc69
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: 0721c62d44234a44881cdc562376c9bb62412187
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68670923"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68775892"
 ---
 以下の通知では、今後の Intune の変更と機能に備えるために役立つ重要な情報が提供されます。 
 
@@ -36,6 +36,10 @@ Google によるこのような変更により、Intune ユーザーは次のよ
 2020 年夏に実施される機能の縮小を回避するために、次のことをお勧めします。
 - 新しいデバイスをデバイス管理者の管理にオンボードしない。
 - デバイスが Android 10 への更新プログラムを受け取ることが予想される場合は、それをデバイス管理者の管理から外し、Android Enterprise 管理、アプリ保護ポリシーのいずれかまたは両方に移行する。
+
+#### <a name="additional-information"></a>追加情報
+- [デバイス管理者から Android Enterprise への移行に関する Google のガイダンス](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
+- [デバイス管理者 API の廃止計画に関する Google のドキュメント](https://developers.google.com/android/work/device-admin-deprecation)
 
 ### <a name="update-your-android-company-portal-app-to-the-latest-version---4536963--"></a>Android 用ポータル サイト アプリを最新バージョンに更新する <!--4536963-->
 Intune では、Android 用ポータル サイト アプリに対する更新プログラムが定期的にリリースされます。 2018 年 11 月に、ポータル サイトの更新プログラムがリリースされました。これには、Google による既存の通知プラットフォームから Google の Firebase Cloud Messaging (FCM) への変更に備えるための、バックエンド スイッチが含まれていました。 Google が既存の通知プラットフォームを終了して FCM に移行したとき、エンド ユーザーは、Google Play ストアとの交信を継続するために、各自のポータル サイト アプリを少なくとも 2018 年 11 月のリリースに更新済みである必要があります。
