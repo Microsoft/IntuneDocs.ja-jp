@@ -1,7 +1,7 @@
 ---
 title: Windows 10 用の Intune セキュリティ ベースラインの設定
 titleSuffix: Microsoft Intune
-description: Windows 10 を管理するための Intune セキュリティ ベースラインの設定
+description: Intune で管理する Windows 10 デバイスの Windows MDM セキュリティベースラインにある既定値と使用可能な設定を確認します。
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -16,23 +16,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ff902530b6f7001e23300b01f6576f0a7fc2637
-ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
+ms.openlocfilehash: 5565ce7a355136a749d79b52e4830af91684440a
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68491905"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680035"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Intune 用の MDM セキュリティ ベースラインの設定  
 
 Windows 10 以降を実行しているデバイスの Microsoft Intune でサポートされている MDM セキュリティベースライン設定を表示します。 このベースラインの設定の既定値は、適用可能なデバイスに推奨される構成を表し、他のセキュリティベースラインからの基準の既定値とは一致しない場合があります。  
 
-最新の基準バージョンは、 **Spring 2019 更新プログラムの MDM セキュリティベースライン (19H1) です。**  
+最新の基準バージョンは、 **2019 年5月の MDM セキュリティベースライン**です。  
 
 以前のバージョンのこの基準の最新バージョンで変更された内容については、「[新しいテンプレートの変更点](#whats-changed-in-the-new-template)」を参照してください。  
 
 > [!NOTE]  
-> 2019年6月に、プレビュー MDM セキュリティベースラインが、 *Spring 2019 Update (19H1) テンプレートの Mdm セキュリティ基準*のリリースに置き換えられました。このテンプレートは一般提供されています (プレビュー版ではありません)。 *Spring 2019 update (19H1) 基準の Mdm セキュリティベース*ラインが使用可能になる前に作成されたプロファイルは、Spring 2019 Update (19h1) バージョンの Mdm セキュリティベースラインに含まれる設定と値を反映するように更新されません。  プレビューテンプレートに基づいて新しいプロファイルを作成することはできませんが、プレビューテンプレートに基づいて以前に作成したプロファイルを編集し、引き続き使用することができます。   
+> 2019年6月に、プレビュー MDM セキュリティベースラインは、一般公開されている (プレビューではない) 5*月2019テンプレートの Mdm セキュリティベースライン*のリリースに置き換えられました。 2019年 5*月の Mdm セキュリティ*ベースラインが使用可能になる前に作成されたプロファイルは、年 5 2019 月バージョンの Mdm セキュリティ基準に含まれる設定と値を反映して更新されません。  プレビューテンプレートに基づいて新しいプロファイルを作成することはできませんが、プレビューテンプレートに基づいて以前に作成したプロファイルを編集し、引き続き使用することができます。   
   
 Intune でのセキュリティベースラインの使用方法については、「[セキュリティベースラインの使用](security-baselines.md)」を参照してください。  
 
@@ -1825,7 +1825,7 @@ Intune でのセキュリティベースラインの使用方法については�
   **既定値**: 有効
 
 ## <a name="whats-changed-in-the-new-template"></a>新しいテンプレートの変更点
-*Spring 2019 更新プログラム (19H1) テンプレートの MDM セキュリティベースライン*では、*プレビュー*テンプレートから次の変更が加えられています。
+2019年 5*月の MDM セキュリティベースライン*テンプレートは、*プレビュー*テンプレートから次のように変更されています。
 
 ### <a name="changes-to-the-baseline-settings"></a>ベースライン設定の変更
 以下の設定は、次のいずれかになります。

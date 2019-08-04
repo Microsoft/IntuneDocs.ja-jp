@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 921934eead9ff3a1074203dad55ee60f3fe77947
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c626bb50868e6b966eb7c8867f4c4ff7178eadcf
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047283"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756530"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Azure コンソールと従来の Intune PC クライアントでの Intune
 
@@ -45,7 +45,7 @@ Azure AD グループへの切り替えのために、Silverlight コンソー�
 1. ビューを選択します。
 2. **[フィルター]** ボックスで、フィルター処理の基準となるグループの名前を入力して Enter キーを押します。 これにより、リスト ビューがその特定グループ内のデバイスにフィルターされます。
 
-   ![](media/intune-legacy-pc-client/image01.png)
+   ![選択されていないドロップダウン入力をフィルター処理します](media/intune-legacy-pc-client/image01.png)
 
 
 ## <a name="continue-to-manage-windows-7-by-using-intune-pc-client"></a>Intune PC クライアントを使用した Windows 7 の管理の継続
@@ -61,7 +61,7 @@ PC クライアントと MDM 機能の詳細な比較については、[Windows 
 Intune PC クライアントでの Windows 10 デバイス管理から MDM での管理に切り替えるには、次の手順に従います。
 
 1. Silverlight コンソールで、**選択的ワイプ**を実行して PC クライアントからデバイスを登録解除します。
-  ![](media/intune-legacy-pc-client/image02.png)
+  ![[デバイスを選択的にワイプする] ラジオボタンが選択された警告ポップアップ](media/intune-legacy-pc-client/image02.png)
 2. [MDM (および/または Azure AD Join)](https://docs.microsoft.com/intune/windows-enroll) を使用してデバイスを再登録します。 
 
 ## <a name="next-steps"></a>次の手順
