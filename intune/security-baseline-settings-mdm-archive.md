@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 220327c48712881e57efa1a91b9d00a64ba3e0be
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 7871fa6f8655ff02242135d04385984368d52625
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884700"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680087"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
@@ -34,11 +34,11 @@ Intune の MDM セキュリティ基準のアーカイブされたバージョ�
 ベースラインバージョンの使用がサポートされなくなった場合は、この記事から削除されます。
 
 - [現在の MDM セキュリティベースライン](security-baseline-settings-mdm.md)で使用可能な設定を表示します。 
-- セキュリティ基準[につい](security-baselines.md)て、およびセキュリティベースラインプロファイルのベースラインバージョンをアップグレードする方法について説明します。
+- [セキュリティ基準](security-baselines.md)について、およびセキュリティベースラインプロファイルのベースラインバージョンをアップグレードする方法について説明します。
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>プレビュー: 2018 年 10 月の MDM セキュリティ ベースライン  
 
-*このベースラインは、 [Spring 2019 (19H1) の MDM セキュリティ基準](security-baseline-settings-mdm.md)に置き換えられています。*
+*この基準は、2019年 5[月の MDM セキュリティ基準](security-baseline-settings-mdm.md)に置き換えられています。*
 
 ### <a name="above-lock"></a>Above Lock (上でロック)  
 
