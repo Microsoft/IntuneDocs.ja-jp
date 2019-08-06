@@ -703,18 +703,20 @@
           href: tenant-status.md
         - name: トラブルシューティング
           items:
+            - name: ユーザーによる問題のトラブルシューティングをサポートする
+              href: help-desk-operators.md
             - name: 登録のトラブルシューティング
               items:
                 - name: iOS デバイス登録のトラブルシューティング
                   href: troubleshoot-ios-enrollment-errors.md
                 - name: Windows デバイス登録のトラブルシューティング
                   href: troubleshoot-windows-enrollment-errors.md
-            - name: ユーザーによる問題のトラブルシューティングをサポートする
-              href: help-desk-operators.md
             - name: 会社のリソースへのアクセスに関する問題のトラブルシューティング
               href: troubleshoot-company-resource-access-problems.md
             - name: アプリのインストールに関する問題のトラブルシューティング
               href: troubleshoot-app-install.md
+            - name: デバイス アクションに関するトラブルシューティング
+              href: troubleshoot-device-actions.md
             - name: モバイル アプリケーション管理に関するトラブルシューティング
               href: troubleshoot-mam.md
             - name: Intune のアクティビティの監査ログ
