@@ -17,16 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86f2f47322e668815d1ff37ce6c2de1e4d6cdc16
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: ce9a92a9fffad13c6723504735b1b1cb9442f61f
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/31/2019
-ms.locfileid: "68670891"
+ms.locfileid: "68680016"
 ---
 # <a name="data-jamf-pro-sends-to-intune"></a>Jamf Pro から Intune に送られるデータ
 
-Intune でエンドユーザーの Mac を管理する目的で [Jamf Pro](https://www.jamf.com) を使用するとき、Jamf Pro によって管理対象 macOS デバイスに関するインベントリ情報がキャプチャされます。 Jamf Pro は、Intune に次の情報をレポートします。
+Intune でエンドユーザーの Mac を管理する目的で [Jamf Pro](https://www.jamf.com) を使用するとき、Jamf Pro によって管理対象 macOS デバイスに関するインベントリ情報がキャプチャされます。 
+
+## <a name="data"></a>データ  
+Jamf Pro は、Intune に次の情報をレポートします。  
 
 * デバイスの Azure AD ID
 * JAMF のインベントリ状態 (過去 24 時間以内に Jamf Pro でチェックインされたコンピューターのインベントリ状態)
@@ -69,8 +72,8 @@ Intune でエンドユーザーの Mac を管理する目的で [Jamf Pro](https
 * UDID
 * ユーザーの電子メール
 
-
 **[すべてのデバイス]** ビューで **[削除]** を選択することで、Intune コンソールから Jamf で管理されるデバイスを削除できます。 複数のデバイスを選択し、 **[削除]** をクリックすることで、デバイスの一括削除を有効にすることができます。
 
+## <a name="next-steps"></a>次の手順
 Jamf で管理されるデバイスの削除方法については、[Jamf Pro のドキュメント](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information)を参照してください。[Jamf サポート](https://www.jamf.com/support/)にサポート チケットを提出して、さらなる支援を受けることもができます。 
 

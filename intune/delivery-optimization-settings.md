@@ -1,11 +1,12 @@
 ---
-title: Intune 用の Windows 10 配信最適化の設定 | Microsoft Docs
+title: Intune 用の Windows 10 配信最適化の設定
+titleSuffix: Microsoft Intune
 description: Intune を使用して展開できる Windows 10 デバイス向けの配信最適化の設定。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/09/2019
+ms.date: 08/01/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +15,12 @@ ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab4871da52f5df0aec0a698f31daa5608a57c1c3
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 11361b65735a7ed7e724a77349e3624e0e35ecaf
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493901"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756562"
 ---
 # <a name="delivery-optimization-settings-for-intune"></a>Intune 用の配信最適化の設定
 
@@ -66,6 +67,15 @@ Intune を構成してこれらの設定を使用するには、[更新プログ
 | [最大キャッシュ時間 (日数)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-age)    | 1511         | 各ファイルが正常にダウンロードされた後、デバイス上の配信最適化キャッシュにファイルが保持されている期間を指定します。   <br><br>Intune では、キャッシュの期間を日数で構成します。 定義した日数は、この設定が Windows で定義されるときのように、適切な秒数に変換されます。 たとえば、Intune 構成での 3 日は、デバイスでは 259,200 秒 (3 日) に変換されます。  <br><br>**既定値**: "*値の構成なし*"     <br><br>**推奨**: 7   <br><br>ポリシー CSP: [DOMaxCacheAge](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)  <br><br>          |
 | 最大キャッシュ サイズの種類  | *詳細を参照*    | デバイス上で配信最適化によって使用されるディスク領域の量を管理する方法を選択します。 構成しない場合、キャッシュ サイズは使用可能な空きディスク領域の 20% に既定で設定されます。  <br><ul><li>**[未構成]** (既定値)</li><br><li>**[絶対]** – [[絶対最大キャッシュ サイズ (GB)]](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#absolute-max-cache-size) を指定して、デバイスで配信最適化に使用できるドライブ領域の最大量を構成します。 0 (ゼロ) に設定すると、キャッシュ サイズは無制限になりますが、デバイスのディスク領域が少なくなると配信最適化によってキャッシュがクリアされます。 <br><br>Windows 1607 が必要です<br><br> ポリシー CSP: [DOAbsoluteMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-doabsolutemaxcachesize) </li><br><li>**[割合]** – [[最大キャッシュ サイズ (%)]](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-size) を指定して、デバイスで配信最適化に使用できるドライブ領域の最大量を構成します。 割合はドライブの空き領域を指し、配信最適化では常にドライブの空き容量が評価され、最大キャッシュ サイズが設定されている割合を超えないようにキャッシュがクリアされます。 <br><br>Windows 1511 が必要です<br><br>ポリシー CSP: [DOMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcachesize)  |
 | [VPN ピア キャッシュ](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#enable-peer-caching-while-the-device-connects-via-vpn)  | 1709  | VPN によってドメイン ネットワークに接続されている間はピア キャッシュに参加するようデバイスを構成するには、 **[有効]** を選択します。 有効に設定したデバイスでは、VPN または会社のドメイン ネットワーク上にある他のドメイン ネットワーク デバイスとの間で、ダウンロードまたはアップロードを行うことができます。  <br><br>**既定値**: 未構成  <br><br>ポリシー CSP: [DOAllowVPNPeerCaching](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)    |
+
+## <a name="local-server-caching"></a>ローカルサーバーのキャッシュ  
+
+|Setting  |Windows Version  |説明  |
+|---------|-----------------|---------|
+|キャッシュサーバーのホスト名 | 1809  |デバイスが配信の最適化に使用するネットワークキャッシュサーバーの IP アドレスまたは FQDN を指定し、 **[追加]** を選択してそのエントリを一覧に追加します。  <br><br>**既定値**: 未構成  <br><br>ポリシー CSP: [Docachehost](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehost)  |
+|[フォアグラウンドダウンロードキャッシュサーバーフォールバックの遅延 (秒)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-foreground-download-cache-server-fallback-in-secs) | 1903    |フォアグラウンドのコンテンツをダウンロードするために、キャッシュサーバーからの HTTP ソースへのフォールバックを遅延する時間を秒単位で指定します (0-2592000)。 フォアグラウンドダウンロードが http から遅れるようにポリシーを設定すると、最初に適用されます (ピアからのダウンロードを最初に許可する場合)。 (0-2592000)    <br><br>**既定値**: 0  <br><br>ポリシー CSP [Dodelaycacheserverfallbackforeground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackforeground)  |
+|[バックグラウンドダウンロードキャッシュサーバーフォールバックの遅延 (秒)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-background-download-cache-server-fallback-in-secs) | 1903    |バックグラウンドコンテンツをダウンロードするために、キャッシュサーバーから HTTP ソースへのフォールバックを遅延する時間を秒単位で指定します (0-2592000)。 *遅延バックグラウンド HTTP ダウンロード (秒単位)* が構成されている場合、この設定は、ピアからのダウンロードを許可するために最初に適用されます。 (0-2592000)   <br><br>**既定値**: 0 <br><br>ポリシー CSP: [Dodelaycacheserverfallbackbackground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackbackground)  |
+
 
 ## <a name="next-steps"></a>次の手順
 
