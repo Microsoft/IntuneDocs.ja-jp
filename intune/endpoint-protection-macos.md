@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 08/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fe22291c808c498f9c099498b97e131ea531334
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: d4aa0c47f0aa099ff469eb31b212f387836ad69b
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467416"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756505"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune での MacOS エンドポイント保護設定  
 
@@ -97,11 +97,18 @@ Apple FileVault の設定の詳細については、Apple developer コンテン
     - **個人用回復キーのローテーション**-デバイスの個人回復キーを交換する頻度を指定します。 **[未構成]** の既定値を選択することも、 **1** ~ **12**か月の値を選択することもできます。  
 
   - **サインアウト時のプロンプトを無効にする**  
-    ユーザーがサインアウトしたときに FileVault を有効にするように要求するプロンプトを表示しないようにします。[無効] に設定すると、サインアウト時のプロンプトが無効になり、ユーザーはサインインするときにメッセージが表示されます。  
+    ユーザーがサインアウトしたときに FileVault を有効にするように要求するプロンプトを表示しないようにします。[有効] に設定すると、サインアウト時のプロンプトが無効になり、ユーザーはサインインするときにメッセージが表示されます。  
     - **未構成**  
-    - **無効化**  
+    - **有効にする**-サインアウト時にプロンプトを無効にします。
 
     **既定値**: 未構成  
+
+     > [!IMPORTANT]  
+     > [**サインアウト時にプロンプト**を表示しない] 設定が [*有効*] に設定されている場合、既知の問題があります。 [*有効*] に設定すると、**バイパスが許可**される回数の設定は値に設定され、*未構成とし*  て設定することはできません。 [*未構成*] に設定されている場合、プロファイルはデバイスで失敗します。 このシナリオでは、デバイスは**プロファイル状態の概要**を **[エラー]** として報告します。詳細は表示されません。
+     > 
+     > [**サインアウト時にプロンプト**を表示し*ない*] が未構成に設定されている場合は、**バイパスを許可する回数**を構成し*ない*か、値を指定できます。  
+     > 
+     > この問題は、今後の更新プログラムで解決される予定です。 
 
   - **バイパスが許可される回数**  
   ユーザーがサインインするために FileVault が必要になる前に、ユーザーが FileVault を有効にするためのプロンプトを無視できる回数を設定します。  
