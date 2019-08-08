@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/04/2017
+ms.date: 07/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,25 +18,36 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6bdf97e6a36a49bc6df5a182af7676c357440f3e
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: d44af8f40243596bda58d610b369db6f54be6d1e
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529330"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68625118"
 ---
-# <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Android デバイスに、会社のサポートが必要とする証明書がありません
+# <a name="install-missing-certificate-required-by-your-organization"></a>組織が必要としない証明書をインストールする  
 
 デバイスが Intune に登録されておらず、会社のサポートが必要とする特定の証明書がない場合は、ポータル サイト アプリにサインインすることはできません。 サインインしようとすると、次のメッセージが表示されます。
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
-この問題を解決し、必要な証明書を取得するために、次の 2 つの主な手順を行う必要があります。
+必要な証明書をダウンロードしてデバイスを登録するには、2つのオプションがあります。 
 
-- 会社または学校の PC を確認し、欠落している証明書を特定します。
-- デバイスを使用して、欠落している証明書をインターネットからダウンロードします。
+- ポータルサイトアプリでブラウザーアクセスを有効にします。
+- 会社または学校の PC で、不足している証明書を特定します。 次に、インターネットを検索して、不足している証明書をダウンロードします。 
 
-## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>欠落している証明書を会社または学校の PC で確認し、特定する
+まず、ブラウザーアクセスを有効にするための手順を実行します。 その後、デバイスを登録できない場合は、手順に従って、インターネット上で証明書を検索します。 
+
+## <a name="enable-browser-access"></a>ブラウザーアクセスを有効にする
+ブラウザーアクセスを有効にするには、次の手順を実行します。 アクセスを有効にすると、ポータルサイトによって適切な証明書がインストールされ、登録が続行されます。    
+
+1. ポータルサイトアプリで、右上隅に戻り、メニューを選択します。  
+2. **[設定]** を選択します。  
+3. [**ブラウザーアクセスを有効**にする] で [**有効**] を選択します。  
+4. [デバイス管理者] 画面で、[**アクティブ化**] を選択します。 
+
+## <a name="identify-and-download-the-missing-certificate-through-web-search"></a>Web 検索を使用して見つからない証明書を特定してダウンロードする
+デバイスで証明書を手動で識別してインストールするには、次の手順を実行します。  
 
 1. PC で、Internet Explorer を開きます。 この目的に使用する PC をお持ちでない場合は、会社のサポートに問い合わせてください。 会社のサポートの連絡先情報については、[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。
 
@@ -52,15 +63,13 @@ ms.locfileid: "67529330"
 
     ![screenshot-internet-explorer-view-certificates-button-on-website-identification-dialog](./media/andr-missg-cert-ie-view-cert-button.png)
 
-5. **[証明書]** ダイアログ ボックスで **[Certification path]** (証明パス) タブを選択し、インターネットから取得する必要がある証明書を特定します。 必要な証明書の名前は、上記の例のスクリーン ショットで強調表示されている場所と同じ位置にあります。
+5. **[証明のパス]** タブを選択し、インターネットから取得する必要がある証明書を特定します。 必要な証明書の名前は、上記の例のスクリーン ショットで強調表示されている場所と同じ位置にあります。
 
-## <a name="download-and-install-the-missing-certificate-on-your-android-mobile-device"></a>Android モバイル デバイスで欠落している証明書をダウンロードしてインストールする
+6. Bing や Google のような検索エンジンを使用して、前のセクションで特定した、欠落している証明書の名前を検索します。 証明書の「拡張子」は、それぞれ ".crt" または ".pem" などのように異なる可能性があります。
 
-1. Bing や Google のような検索エンジンを使用して、前のセクションで特定した、欠落している証明書の名前を検索します。 証明書の「拡張子」は、それぞれ ".crt" または ".pem" などのように異なる可能性があります。
+7. ルート証明書を Web サイトからダウンロードします。
 
-2. ルート証明書を Web サイトからダウンロードします。
-
-3. 証明書をダウンロードした後、デバイスの上部から下にドラッグして通知を開き、通知の一覧にある証明書の名前をタップします。
+8. 証明書をダウンロードした後、デバイスの上部から下にドラッグして通知を開き、通知の一覧にある証明書の名前をタップします。
 
 4. 次のスクリーンショットのような **[Name the Certificate]** (証明書の名前指定) ダイアログ ボックスで、既定の証明書名を受け入れます。
 
