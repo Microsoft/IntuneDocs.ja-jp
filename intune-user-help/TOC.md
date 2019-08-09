@@ -39,8 +39,8 @@
 ### オペレーティング システムの質問
 #### [デバイスの更新](you-need-to-update-your-android-device.md)
 #### [サポートされていないバージョン](your-android-version-isnt-yet-supported.md)
-#### [デバイスが root 化され、接続できない](your-device-is-rooted-and-you-cant-connect-android.md)
-#### [必要な証明書の欠落](your-device-is-missing-a-required-certificate-landing-android.md)
+#### [デバイスがルート化されて接続できない](your-device-is-rooted-and-you-cant-connect-android.md)
+#### [必要な証明書の欠落](your-device-is-missing-an-IT-required-certificate-android.md)
 #### [不明なソースを無効にする](you-need-to-turn-off-unknown-sources-android.md)
 #### [USB デバッグを無効にする](you-need-to-turn-off-usb-debugging-android.md)
 #### [セキュリティ上の脅威に対するスキャンを有効にする](you-need-to-turn-on-scanning-for-security-threats-android.md)
