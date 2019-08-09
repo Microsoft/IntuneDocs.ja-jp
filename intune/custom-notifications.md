@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f938afb738e75789194db0c74fee56deb1476dbc
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 3a4314abec83bc31cd6fe178873ba5bce7bf1a0c
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660376"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680097"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Intune でカスタム通知を送信する  
 
@@ -38,8 +38,9 @@ Microsoft Intune を使用して、iOS および Android のマネージド デ�
 ## <a name="considerations-for-using-custom-notifications"></a>カスタム通知の使用に関する注意点  
 
 **デバイスの構成**:  
-- ユーザーがカスタム通知を受信できるようにするには、デバイスにポータル サイト アプリが事前にインストールされている必要があります。 また、ポータル サイト アプリがプッシュ通知を送信できるように、アクセス許可が構成されている必要もあります。 ユーザーは、ポータル サイトから通知を許可するように求められます。  
+- ユーザーがカスタム通知を受信できるようにするには、デバイスにポータル サイト アプリが事前にインストールされている必要があります。 また、ポータル サイト アプリがプッシュ通知を送信できるように、アクセス許可が構成されている必要もあります。 インストールまたは更新されたとき、ユーザーはポータル サイトから通知を許可するように求められます。  
 - Android では、Google Play 開発者サービスは必須の依存関係です。  
+- デバイスは MDM に登録されている必要があります。
 
 **通知の作成**:  
 - メッセージを作成するには、**組織**の**更新**アクセス許可を含む Intune ロールが割り当てられているアカウントを使用します。 ユーザーにアクセス許可を割り当てるには、「[ロールの割り当て](role-based-access-control.md#role-assignments)」を参照してください。  

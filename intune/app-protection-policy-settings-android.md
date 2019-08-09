@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f576edb5dd0bd4baa960adb3519fa379397fb94c
-ms.sourcegitcommit: cd03ea890f563b48339a8c8bb50386b8852ba894
+ms.openlocfilehash: 128856cf4e81f1ac9fbc93cef1160662e2b5cef0
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68329031"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68700960"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune の Android アプリ保護ポリシー設定
 この記事では、Android デバイスのアプリ保護ポリシーの設定について説明します。 説明されているポリシーの設定は、Azure Portal の **[設定]** ブレードでアプリ保護ポリシー用に[構成](app-protection-policies.md)することができます。
@@ -93,6 +93,7 @@ ms.locfileid: "68329031"
   | com.skype.raider | Skype | Skype アプリは、電話を呼び出す特定のアクションでのみ使用できます。 |
   | com.android.providers.media | Android のメディア コンテンツ プロバイダー | メディア コンテンツ プロバイダーは、着信音の選択アクションでのみ使用できます。 |
   | com.google.android.gms、com.google.android.gsf | Google Play Services パッケージ | これらのパッケージは、プッシュ通知など、Google Cloud Messaging のアクションで使用できます。 |
+  | com.google.android.apps.maps | Google Maps | ナビゲーションで住所が許可されます |
 
 詳細については、「[Data transfer policy exceptions for apps](app-protection-policies-exception.md)」(アプリのデータ転送ポリシーの例外) を参照してください。
 

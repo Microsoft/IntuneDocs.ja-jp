@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9ac1830bcc407431cf0a5df8e8c11baa0c27c9c
-ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
+ms.openlocfilehash: 7e0be106b47d933c4407a02369edff3645682b1c
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68625112"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68700996"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot を使用して Intune に Windows デバイスを登録する  
 Windows Autopilot を使用すると、Intune でのデバイスの登録が簡単になります。 カスタマイズされたオペレーティング システム イメージのビルドおよび維持は、時間のかかるプロセスです。 また、これらのカスタム オペレーティング システム イメージを新しいデバイスに適用し、エンド ユーザーに提供する前に使用の準備を行う場合にも、時間がかかることがあります。 Microsoft Intune と Autopilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および新しいデバイスへの適用を行わなくてもデバイスをエンド ユーザーに提供することができます。 Intune を使用して Autopilot デバイスを管理する場合、デバイスの登録後にポリシー、プロファイル、アプリなどを管理することができます。 利点、シナリオ、および前提条件の概要については、「[Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)」 (Windows Autopilot の概要) を参照してください。
@@ -99,7 +99,7 @@ Autopilot Deployment プロファイルは、Autopilot デバイスを構成す�
     - **[使用許諾契約書 (EULA)]** : (Windows 10、バージョン 1709 以降) EULA をユーザーに表示するかどうかを選択します。
     - **[プライバシーの設定]** : プライバシーの設定をユーザーに表示するかどうかを選択します。
     >[!IMPORTANT]
-    >Windows 10 バージョン 1903 デバイス以降に Autopilot をデプロイする場合、診断データの既定は [フル] に自動設定されます。 詳しくは、[Windows 診断データ](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data)に関するページをご覧ください <br>
+    >診断データ設定の既定値は Windows のバージョンによって異なります。 Windows 10 バージョン 1903 を実行しているデバイスの場合、Out-of-Box Experience 中、既定値は [完全] に設定されます。 詳しくは、[Windows 診断データ](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data)に関するページをご覧ください <br>
     
     - **[アカウントの変更オプションを非表示にする] (Windows 10 バージョン 1809 以降が必要)** : **[非表示]** を選択すると、会社のサインイン ページとドメイン エラー ページにアカウント変更オプションが表示されなくなります。 これらのオプションでは、[Azure Active Directory で会社のブランドを構成する](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)必要があります。
     - **[ユーザー アカウントの種類]** : ユーザーのアカウントの種類を選択します (**管理者**ユーザーまたは**標準**ユーザー)。

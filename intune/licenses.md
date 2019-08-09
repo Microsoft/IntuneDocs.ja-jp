@@ -5,9 +5,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 08/05/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,35 +16,40 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ec97819e49bdb1564b8dd75b23302608492e183
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 38b381fca17dec66303958ee04c018967ae0d999
+ms.sourcegitcommit: a6775522df49d17a4125ccb31be395f2343bdae8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397344"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68833535"
 ---
-# <a name="licenses-that-include-intune"></a>Intune を含むライセンス
+# <a name="microsoft-intune-licensing"></a>Microsoft Intune のライセンス
+Microsoft Intune は、学校や中小企業のための使いやすい管理機能から大企業が必要とする高度な機能まで、さまざまな顧客のニーズと組織の規模に合わせて利用できます。 Microsoft Intune が含まれるライセンスのほとんどでは、サブスクリプションが有効である限り、System Center Configuration Manager を使用する権限も与えられます。 
 
-[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
+## <a name="microsoft-intune"></a>Microsoft Intune
+Intune は次のライセンスに含まれています。
 
-次の表は、各ライセンスで使用可能な Intune のバージョンを示しています。
+- Microsoft 365 E5
+- Microsoft 365 E3
+- Enterprise Mobility + Security E5
+- Enterprise Mobility + Security E3
+- Microsoft 365 Business
+- Microsoft 365 F1
 
-| ライセンス | 含まれている Intune のバージョン | 価格と機能の比較 |
-|-----------------------------------------------------------------------|-------------------------------------------------------------|---|
-| Intune | Intune | [詳細情報](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Enterprise Mobility + Security E3 | Intune | [詳細情報](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Enterprise Mobility + Security E5 | Intune | [詳細情報](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Microsoft 365 Education A1 | 教育用の Intune | [詳細情報](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 Education A3 | 教育用の Intune | [詳細情報](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 Education A5 | 教育用の Intune | [詳細情報](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 E3 | Intune | [詳細情報](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
-| Microsoft 365 E5 | Intune | [詳細情報](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
-| Microsoft 365 F1 | Intune | [詳細情報](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |
-| Microsoft 365 Business | Intune | [詳細情報](https://www.microsoft.com/en-us/microsoft-365/business) |
 
-この一覧にないライセンスには、Intune が含まれていません。
 
-ユーザーがライセンスでカバーされる任意の機能から直接的または間接的にメリットを得ている場合は、適切なライセンスが必要です。
+## <a name="microsoft-intune-for-education"></a>Microsoft Intune for Education
+Intune for Education は次のライセンスに含まれています。
 
-ライセンスをユーザーに割り当てるには、「[ユーザー アカウントに Intune のライセンスを割り当てる](licenses-assign.md)」を参照してください。
+- Microsoft 365 Education A5
+- Microsoft 365 Education A3
 
+## <a name="additional-information"></a>追加情報
+- Microsoft Intune ユーザーとデバイスのサブスクリプションは、上記のバンドルに加えて、スタンドアロンとして入手できます。
+- Microsoft Intune デバイス専用サブスクリプションは、ユーザーアフィニティ機能が使用されないキオスク型のシナリオで使用できます。
+- [Microsoft API](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) 経由で Microsoft Intune サービスにアクセスするなど、ユーザーまたはデバイスで Microsoft Intune サービスを直接的または間接的に利用する場合、適切な Microsoft Intune ライセンスが必要になります。
+- 前の表にないライセンスには、Intune が含まれていません。
+
+製品の版、製品ライセンス更新、ボリューム ライセンス プラン、特定のユース ケースに関連するその他の情報など、最新の情報が必要であれば、[Microsoft ライセンス](https://www.microsoft.com/licensing/default) ページにアクセスしてください。  
+
+ユーザーやデバイスのライセンスに基づくサービスへのアクセスについて、また、ライセンスをユーザーに割り当てる方法については、[ユーザー アカウントに Intune ライセンスを割り当てる](licenses-assign.md)方法に関する記事を参照してください。

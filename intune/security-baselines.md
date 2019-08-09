@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 252a42b9c8ef6612301bc913e187295be47d27bb
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: c378fd3b208396f9d2f83b7bd56f50dbf7a7e3f7
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/31/2019
-ms.locfileid: "68671013"
+ms.locfileid: "68679975"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune でのセキュリティ ベースラインを使用した Windows 10 デバイスの構成
 
@@ -67,7 +67,7 @@ Intune コンソールでは、利用可能なセキュリティ ベースライ
 Intune では、次のセキュリティ ベースラインのインスタンスを使用できます。 リンクを使用して、各ベースラインの最新インスタンスに関する設定を確認してください。 
 
 - **MDM セキュリティ ベースライン**
-  - [2019 年春 (19H1) の MDM セキュリティ ベースライン](security-baseline-settings-mdm.md)
+  - [2019 年 5 月の MDM セキュリティ ベースライン](security-baseline-settings-mdm.md)
   - [プレビュー:2018 年 10 月の MDM セキュリティ ベースライン](security-baseline-settings-mdm-archive.md)
 
 - **Microsoft Defender ATP ベースライン**  

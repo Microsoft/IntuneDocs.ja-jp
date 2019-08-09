@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d76e170627d7e08cc3da6fe4a48eb14ee839de98
-ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
+ms.openlocfilehash: 4e46eae92dfa145f1fc2b38379285dbb45b24590
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590925"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680071"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune を使用する Windows 10 アプリの展開 
 
@@ -34,6 +34,8 @@ ms.locfileid: "68590925"
 > 最新のアプリを展開するのに必要な最小の Windows 10 の更新プログラムは、次のとおりです。
 > - Windows 10 1803 の場合、[2018 年 5 月 23 日 —KB4100403 (OS ビルド 17134.81)](https://support.microsoft.com/help/4100403/windows-10-update-kb4100403)。
 > - Windows 10 1709 の場合、[2018 年 6 月 21 日—KB4284822 (OS ビルド 16299.522)](https://support.microsoft.com/help/4284822).
+>
+> プライマリ ユーザーが関連付けられていないとき、アプリのインストールは Windows 10 1803 以降でのみサポートされます。
 
 ## <a name="windows-10-line-of-business-apps"></a>Windows 10 の基幹業務アプリ
 

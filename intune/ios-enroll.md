@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca51fc38a7469d865640840647280375eaa74bbe
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 2254c1e83764e9b29ab6fb99c016edef75aad43e
+ms.sourcegitcommit: bc3450fc7f19006b500edf5b395c01559b483ea4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883025"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68738271"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Intune で iOS デバイスを登録する
 
@@ -32,8 +32,10 @@ Intune 管理者として、iOS デバイスの登録を有効にすることが
 
 ## <a name="prerequisites-for-ios-enrollment"></a>iOS の登録の前提条件
 iOS デバイスを有効にする前に、次の手順を完了する必要があります。
+- [デバイスが Apple デバイス登録の対象であることを確認します](https://support.apple.com/en-us/HT204142#eligibility)。
 - [Intune のセットアップ](setup-steps.md) - この手順で、Intune インフラストラクチャをセットアップします。 特に、デバイスの登録には [MDM 機関を設定する](mdm-authority-set.md)必要があります。
 - [Apple MDM プッシュ通知証明書の取得](apple-mdm-push-certificate-get.md) - Apple では、iOS および macOS デバイスの管理を有効にするために証明書が必要です。
+
 
 ## <a name="user-owned-ios-devices-byod"></a>ユーザー所有の iOS デバイス (BYOD)
 
