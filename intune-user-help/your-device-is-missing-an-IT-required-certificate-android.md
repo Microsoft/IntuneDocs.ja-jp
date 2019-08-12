@@ -18,16 +18,16 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d44af8f40243596bda58d610b369db6f54be6d1e
-ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
+ms.openlocfilehash: 16c6708fb730c459f41fec573a939bfb4fb5ddda
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68625118"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862135"
 ---
 # <a name="install-missing-certificate-required-by-your-organization"></a>組織が必要としない証明書をインストールする  
 
-デバイスが Intune に登録されておらず、会社のサポートが必要とする特定の証明書がない場合は、ポータル サイト アプリにサインインすることはできません。 サインインしようとすると、次のメッセージが表示されます。
+デバイスが Intune に登録されておらず、必要な証明書がない場合は、ポータルサイトアプリにサインインすることはできません。 サインインしようとすると、次のメッセージが表示されます。
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
@@ -43,8 +43,8 @@ ms.locfileid: "68625118"
 
 1. ポータルサイトアプリで、右上隅に戻り、メニューを選択します。  
 2. **[設定]** を選択します。  
-3. [**ブラウザーアクセスを有効**にする] で [**有効**] を選択します。  
-4. [デバイス管理者] 画面で、[**アクティブ化**] を選択します。 
+3. [ブラウザー **アクセス**を有効に**する**] で [有効] を選択します。  
+4. [デバイス管理者] 画面で **、** [アクティブ化] を選択します。 
 
 ## <a name="identify-and-download-the-missing-certificate-through-web-search"></a>Web 検索を使用して見つからない証明書を特定してダウンロードする
 デバイスで証明書を手動で識別してインストールするには、次の手順を実行します。  
@@ -82,3 +82,7 @@ ms.locfileid: "68625118"
 7. 会社のポータル アプリをもう一度開きます。 これで、会社のポータル アプリにサインインできるようになりました。 サポートが必要な場合は、会社のサポートに問い合わせてください。
 
 上のような "証明書が見つかりません" というメッセージが表示されたが、この手順を既に実行している場合、別の証明書が存在する可能性があります。会社のサポートにそのインストールを依頼する必要があります。 サポートを得る場合は、[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)で入手できる連絡先情報を使用して、会社のサポートに問い合わせてください。
+
+## <a name="next-steps"></a>次の手順  
+
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。  
