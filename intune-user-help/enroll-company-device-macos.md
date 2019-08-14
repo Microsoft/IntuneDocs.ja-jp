@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3941c41b24d458d14acb1361bc463af657a0ca67
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 273342f7181bcc577a44126404d145ca9b5bff3e
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511933"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783015"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>組織から提供された macOS デバイスを管理登録する
 
@@ -40,10 +40,10 @@ ms.locfileid: "67511933"
 macOS デバイスを管理対象に登録するには、次の手順のようにします。 会社支給のデバイスではなく個人所有のデバイスを使用している場合は、[個人デバイスと Bring Your Own デバイス](enroll-your-device-in-intune-macos-cp.md)に関するページをご覧ください。  
 
 1. macOS デバイスの電源を入れます。 
-2. ご自分の国を選択して **[Continue]\(続行\)** をクリックします。  
+2. 自分の国/地域を選択して、 **[Continue]\(続行\)** をクリックします。  
 
    ![選択できる言語の一覧が表示されている macOS デバイスのセットアップ アシスタントのようこそ画面のスクリーンショット。](./media/macos-dep-welcome-1808.png)   
-3. キーボード レイアウトを選択します。 選択した国に基づいて 1 つ以上のオプションの一覧が表示されます。 選択した国に関係なくすべてのレイアウト オプションを表示するには、 **[Show All]\(すべて表示\)** をクリックします。 終了したら **[Continue]\(続行\)** をクリックします。  
+3. キーボード レイアウトを選択します。 選択した国/地域に基づいて、1 つ以上のオプションの一覧が表示されます。 選択した国/地域に関係なくすべてのレイアウト オプションを表示するには、 **[Show All]\(すべて表示\)** をクリックします。 終了したら **[Continue]\(続行\)** をクリックします。  
 
    ![macOS デバイスのセットアップ アシスタントのキーボード レイアウト画面のスクリーンショット。選択できるキーボード言語の一覧、オフ状態の [Show All]\(すべて表示\) オプション、[Back]\(戻る\) ボタンと [Continue]\(続行\) ボタンが表示されている。](./media/macos-dep-keyboard-1808.png)  
 4. お使いの Wi-Fi ネットワークを選択します。 セットアップを続けるには、インターネットに接続する必要があります。 お使いのネットワークが表示されない場合、または有線ネットワークで接続する必要がある場合は、 **[Other Network Options]\(その他のネットワーク オプション\)** をクリックします。 終了したら **[Continue]\(続行\)** をクリックします。  

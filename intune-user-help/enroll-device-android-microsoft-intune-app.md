@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b23323766e91e31c48aec6a51dfae971c3a333e8
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: ef7ec650c65206eeab69d8f666dc4fb39052bbdb
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735745"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862183"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Microsoft Intune アプリで会社のデバイスを登録する
 
@@ -50,9 +50,9 @@ ms.locfileid: "67735745"
 
      別の方法を使用するように指示されている場合は、ステップ 3 に進みます。    
 
-1. Wi-Fi に接続し、 **[次へ]** をタップします。 登録方法と一致する手順に従います。 
+3. Wi-Fi に接続し、 **[次へ]** をタップします。 登録方法と一致する手順に従います。 
 
-    * トークン: Google のサインイン画面が表示されたら、「[トークンでの登録](#token-enrollment)」の手順を完了します。    
+    * トークン: Google のサインイン画面が表示されたら、「[トークンでの登録](#token-enrollment)」の手順を完了します。  
     * Google Zero Touch: Wi-Fi に接続すると、組織によってデバイスが認識されます。 ステップ 4 に進み、画面の指示に従ってセットアップを完了します。    
  
        ![Google Zero Touch を使用した場合に表示される Google 契約条件画面の例の画像。[Accept & Continue]\(同意して続行\) ボタンが強調表示されている。](./media/google-zero-touch-intune-app-01.png)   
@@ -78,21 +78,19 @@ ms.locfileid: "67735745"
 
    ![職場の携帯電話の設定画面の例の画像。[インストール] ボタンが強調表示されている。](./media/fully-managed-intune-app-11.png)   
 
-10. デバイスの準備ができたことを示すメッセージが表示されたら、 **[完了]** をタップします。 
+10. **[スタート]** をタップして Microsoft Intune アプリを開き、デバイスを登録します。 
 
-11. アプリに移動し、Microsoft Intune アプリを開きます。 **[サインイン]** を選択します。 
+    ![[スタート] ボタンが強調表示されている職場の携帯電話の設定画面の例の画像。](./media/fully-managed-intune-app-17.png)   
 
-12. **[Setup access]\(アクセスのセットアップ\)** 画面に、保留中のタスクの一覧が表示されます。 **[続行]** をタップします。  
+11. [  ****サインイン]** をタップし、[次へ] をタップして登録を開始します。** [登録が完了しました] というメッセージ**が**表示されたら、[完了] をタップします。  
 
-       ![Microsoft Intune アプリの [Setup access]\(アクセスのセットアップ\) 画面の例の画像。保留中のタスクを表示。](./media/fully-managed-intune-app-14.png)   
+    ![[アクセスの設定]、[デバイスの登録] 画面、[完了] ボタンの強調表示の画像の例。](./media/fully-managed-intune-app-19.png)   
 
-13. デバイスの登録が完了したら、 **[続行]** をタップします。 Microsoft Intune で追加のデバイス設定を更新するように求められる場合があります。   
+10. デバイスの準備ができたことを示すメッセージが表示されたら、 **[完了]** をタップします。  
 
-       ![Microsoft Intune アプリの [デバイス設定の更新] 画面の例の画像。](./media/fully-managed-intune-app-15-2.png)   
+    ![[完了] ボタンが強調表示されている職場の携帯電話の設定画面の例の画像。](./media/fully-managed-intune-app-18.png)   
 
-14. リストのすべての項目に緑色の円が表示されると、設定は完了します。 会社のリソースにアクセスできるようになります。  
-
-       ![Microsoft Intune アプリの [アクセスのセットアップ] 画面の例の画像。完了タスクの表示。](./media/fully-managed-intune-app-16.png)   
+組織のリソースにアクセスできない場合は、デバイスの追加設定を更新することが必要になる場合があります。 Microsoft Intune アプリにサインインして、必要な更新プログラムがないかどうかを確認します。   
 
 
 ## <a name="qr-code-enrollment"></a>QR コードでの登録  
@@ -118,11 +116,7 @@ ms.locfileid: "67735745"
 
 3. **[このデバイスの登録]** 画面で、 **[次へ]** を選択します。  
 
-   ![[このデバイスの登録] 画面の例の画像。 QR コードの図。強調表示された [次へ] ボタン。](./media/token-intune-app-02.png)  
-
-4. **[コードの入力]** を選択します。
-
-   ![アクティブな QR コード スキャナーの例のスクリーンショット。 強調表示された [コードの入力] ボタン。](./media/token-intune-app-03.png)  
+4. **[コードの入力]** を選択します。  
 
 5. **[Scan or enter code]\(コードのスキャンまたは入力\)** 画面で、組織から提供されたコードを入力します。  **[次へ]** をクリックします。  
 

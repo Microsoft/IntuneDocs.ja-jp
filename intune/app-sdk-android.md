@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f2015bb6997861d8856c7fe89662c21be105f5b
-ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
-ms.translationtype: MTE75
+ms.openlocfilehash: edc193c80960872cc3a0e25438432195de3a7c34
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68482948"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783210"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android 用 Microsoft Intune アプリ SDK 開発者ガイド
 
@@ -636,7 +636,7 @@ public interface MAMNotificationReceiver {
 > [!NOTE]
 > アプリは `WIPE_USER_DATA` と `WIPE_USER_AUXILIARY_DATA` の両方の通知に登録することはできません。
 
-### <a name="managementremoved"></a>MANAGEMENT_REMOVED
+### <a name="management_removed"></a>MANAGEMENT_REMOVED
 
 `MANAGEMENT_REMOVED` 通知は、以前にポリシーで管理されていたユーザーが Intune MAM ポリシーによって管理されなくなることを示します。 ユーザー データのワイプやユーザーのサインアウトは必要ありません (ワイプが必要な場合、`WIPE_USER_DATA` 通知が送信されます)。 多くのアプリでこの通知を処理する必要がまったくない場合がありますが、`MAMDataProtectionManager` を使用するアプリでは、[この通知に特に注意する](#data-protection)必要があります。
 
@@ -1370,7 +1370,7 @@ ID を設定するために使用されるすべてのメソッドは、`MAMIden
 
   * ID 切り替えがブロックされている場合、`Receive` 共有設定でデータ受信が禁止されている場合と同じ結果になります。
 
-  * サービスがメイン スレッドで実行されている場合、`reportIdentitySwitchResult` を同期的に呼び出す**必要があります**。そうしないと、UI スレッドがハングします。
+  * サービスがメイン スレッドで実行されている場合、`reportIdentitySwitchResult` を同期的に呼び出す**必要があります**。そうしないと、UI スレッドが応答しなくなります。
 
   * **`Activity`** の作成の場合、`onMAMCreate` の前に `onMAMIdentitySwitchRequired` が呼び出されます。 アプリで ID 切り替えを許可するかどうかを判断するために UI を表示する必要がある場合、その UI を*別*のアクティビティを使用して表示する必要があります。
 
