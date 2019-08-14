@@ -18,7 +18,7 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e3c4b1541de3500089bafc388779a3cfe97fbd29
 ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/03/2019
 ms.locfileid: "68756586"
@@ -95,7 +95,7 @@ ms.locfileid: "68756586"
 **原因:** [**ユーザーはデバイスを Azure AD に参加**させることができます] 設定は **[なし**] に設定されます。 これにより、新しいユーザーは自分のデバイスを Azure AD に参加させることができなくなります。 そのため、Intune の登録に失敗します。
 
 #### <a name="resolution"></a>解決策
-1.  [](https://portal.azure.com/)Azureportal に管理者としてサインインします。    
+1.  [Azureportal](https://portal.azure.com/) に管理者としてサインインします。    
 2. **Azure Active Directory**  **** デバイスのデバイス **設定**にアクセスします。>>     
 3.  **[ユーザーはデバイスを Azure AD に参加させることができます]** を **[すべて]** に設定します。    
 4. デバイスを再登録します。   
@@ -204,7 +204,7 @@ Configuration Manager クライアントを削除してから、デバイスを�
 #### <a name="resolution"></a>解決策
 スタンドアロンの Intune 環境でこの問題を解決するには、次の手順を実行します。 
  
-1.  [](https://portal.azure.com/)Azureportal に管理者としてサインインします。    
+1.  [Azureportal](https://portal.azure.com/) に管理者としてサインインします。    
 2. 左側の [ **Intune** ] を選択し、[ **デバイスの登録** > ] [**登録の制限**] に移動します。    
 3. [ **デバイスの種類の制限**] で、[ **プラットフォーム**] をクリックし、[Windows に対して**許可**  **(MDM)** ] を選択します。    
 4. **[Save]** (保存) をクリックします。    
@@ -221,7 +221,7 @@ Intune と Configuration Manager のハイブリッド MDM でこの問題を解
 **原因:** 各プロビジョニングパッケージのアカウントパッケージ (Package_GUID) の Azure AD ユーザーアカウントは、デバイスを Azure AD に参加させることはできません。 これらの Azure AD アカウントは、Windows 構成デザイナー (WCD) またはセットアップ School Pc アプリを使用してプロビジョニングパッケージを設定するときに自動的に作成されます。これらのアカウントは、デバイスを Azure AD に参加させるために使用されます。
 
 #### <a name="resolution"></a>解決策
-1.  [](https://portal.azure.com/)Azureportal に管理者としてサインインします。    
+1.  [Azureportal](https://portal.azure.com/) に管理者としてサインインします。    
 2. **Azure Active Directory > デバイス > デバイス設定** にアクセスします。    
 3. ユーザーを設定すると、デバイスを ****   **Azure AD に参加** **さ**せることができます。
 
