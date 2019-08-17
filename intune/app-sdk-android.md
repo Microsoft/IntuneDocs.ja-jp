@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 08/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: edc193c80960872cc3a0e25438432195de3a7c34
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
-ms.translationtype: HT
+ms.openlocfilehash: 527d71f0e48627498b05af8ee497579c648d3156
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783210"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960550"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android 用 Microsoft Intune アプリ SDK 開発者ガイド
 
@@ -1726,7 +1726,7 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
 
 1. アプリで ADAL を統合するか、自分で SSO を有効にする必要がある場合は、「[ADAL の一般的な構成](#common-adal-configurations)」の 2. に従って、[ADAL を構成](#configure-azure-active-directory-authentication-library-adal)します。 それ以外の場合は、この手順をスキップできます。
    
-2. マニフェストに次の値を入力して、既定の登録を有効にします。
+2. マニフェストのタグの`<application>`下に次の値を追加して、既定の登録を有効にします。
 
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
@@ -1735,7 +1735,7 @@ MAM SDK によって生成されるビューは、統合されたアプリとよ
    > [!NOTE] 
    > これは、アプリ内での唯一の MAM-WE 統合である必要があります。 MAMEnrollmentManager API を呼び出す他の試行がある場合、競合が発生します。
 
-3. マニフェストに次の値を入力して、必要な MAM ポリシーを有効にします。
+3. 次の値をマニフェストのタグの`<application>`下に追加して、必要な MAM ポリシーを有効にします。
 
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />

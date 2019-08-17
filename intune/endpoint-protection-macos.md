@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4aa0c47f0aa099ff469eb31b212f387836ad69b
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 919fef62cf1d979d6a4f67c3653d90af1442fa55
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756505"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960411"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune での MacOS エンドポイント保護設定  
 
@@ -82,6 +82,9 @@ ms.locfileid: "68756505"
 ## <a name="filevault"></a>FileVault  
 Apple FileVault の設定の詳細については、Apple developer コンテンツの[FDEFileVault](https://developer.apple.com/documentation/devicemanagement/fdefilevault)を参照してください。 
 
+> [!IMPORTANT]  
+> MacOS 10.15 の場合、FileVault 構成では、ユーザーが承認した MDM 登録が必要です。 
+
 - **FileVault**  
   MacOS 10.13 以降を実行するデバイスでは、XTS-AES-AES 128 と FileVault を使用して、フルディスク暗号化を*有効に*することができます。  
   - **未構成**  
@@ -104,9 +107,9 @@ Apple FileVault の設定の詳細については、Apple developer コンテン
     **既定値**: 未構成  
 
      > [!IMPORTANT]  
-     > [**サインアウト時にプロンプト**を表示しない] 設定が [*有効*] に設定されている場合、既知の問題があります。 [*有効*] に設定すると、**バイパスが許可**される回数の設定は値に設定され、*未構成とし*  て設定することはできません。 [*未構成*] に設定されている場合、プロファイルはデバイスで失敗します。 このシナリオでは、デバイスは**プロファイル状態の概要**を **[エラー]** として報告します。詳細は表示されません。
+     > **[サインアウト時のプロンプトを無効にする]** 設定が *[有効にする]* に設定されているとき、既知の問題があります。 *[有効にする]* に設定されているとき、 **[バイパスを許可する回数]** の設定に値を設定する必要があります。 *[未構成]* に設定することはできません。 *[未構成]* に設定されている場合、デバイスでプロファイルは失敗します。 このシナリオでは、デバイスからはその **[プロファイルの状態に関する概要]** が **[エラー]** として報告され、その他の詳細はありません。
      > 
-     > [**サインアウト時にプロンプト**を表示し*ない*] が未構成に設定されている場合は、**バイパスを許可する回数**を構成し*ない*か、値を指定できます。  
+     > **[サインアウト時のプロンプトを無効にする]** を *[未構成]* に設定すると、 **[バイパスを許可する回数]** は *[未構成]* にするか、値を指定できます。  
      > 
      > この問題は、今後の更新プログラムで解決される予定です。 
 
