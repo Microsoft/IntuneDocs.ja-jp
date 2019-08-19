@@ -4,7 +4,7 @@ description: Microsoft 365 Enterprise には Microsoft Intune が含まれてい
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 08/14/2019
 ms.topic: conceptual
 audience: ITPro
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5be25e9ab88f4dd44399d6ddc37cfc25955475ba
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 37a1c9fad9b77e39145f1b4183b8176fb1677613
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427310"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022868"
 ---
 # <a name="what-is-device-management"></a>デバイス管理とは 
 
@@ -75,7 +75,7 @@ Intune をセットアップするときに、Azure portal でのみ作業して
 
 ## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>デバイス管理の管理センターを使用して IT タスクを簡略化する
 
-[デバイス管理の管理センター](https://devicemanagement.portal.azure.com/)は、モバイル デバイスに関するタスクの管理と実行を行うためのワンストップ ショップです。 このワークスペースには、デバイス管理のために使用するサービス (Intune や Azure Active Directory など) と、クライアント アプリの管理のために使用するサービスが含まれています。 
+[デバイス管理の管理センター](https://devicemanagement.microsoft.com/)は、モバイル デバイスに関するタスクの管理と実行を行うためのワンストップ ショップです。 このワークスペースには、デバイス管理のために使用するサービス (Intune や Azure Active Directory など) と、クライアント アプリの管理のために使用するサービスが含まれています。 
 
 デバイス管理の管理センターでは、次のことができます。
 
