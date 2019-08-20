@@ -1,11 +1,11 @@
 ---
 title: Android デバイスが暗号化されているように見える | Microsoft Docs
-description: ''
+description: ポータルサイトと Microsoft Intune アプリの暗号化状態を解決する
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,60 +18,46 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55935b2f69f9573d8df5ea5ca32fb4587c652b26
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d63ecdb23b107d844c37d7a805247092116618e1
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389463"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022743"
 ---
-# <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>Android デバイスは暗号化されるように見えるが、ポータル サイトではそのように認識されていない
+# <a name="device-encrypted-but-apps-say-otherwise"></a>デバイスは暗号化されますが、それ以外の場合は
 
-デバイスを暗号化する場合、自分しか知らない秘密キーを使ってデバイス上の情報をエンコードします。 これにより、承認されていないユーザーはデバイスにアクセスできません。 多くの組織では、会社のファイル、メール、またはデータにアクセスするのに、Android デバイスの暗号化を義務づけています。
+ポータルサイトまたは Microsoft Intune アプリでデバイスが暗号化されていないということがわかっている場合は、この記事の手順を試してください。  
 
-## <a name="common-issues"></a>一般的な問題
+## <a name="add-a-startup-pin"></a>スタートアップ PIN の追加
 
-新しいバージョンの Android、特に v7.0 以降では、デバイスが完全に暗号化されているかどうかを確認するスタートアップ パスコードが必要です。 デバイスの製造元によって、スタートアップ パスコードに関する説明と場所は異なります。 ほとんどの場合、この設定は "安全な起動" と呼ばれています。 
+いくつかの Android デバイスでは、デバイスがセキュリティ保護されていることを確認するためにスタートアップ PIN を作成する必要があります。 この設定の場所は、デバイスの**設定**アプリにあります。 設定の名前と場所が異なる場合があります。 たとえば、Samsung Galaxy S7 では、この設定は "**安全な起動**" と呼ばれます。 これを有効にしてパスコードを作成するには、[**設定** >  **] [ロック画面とセキュリティ] [セキュリティ** > **で保護されたスタートアップ**] にアクセスします  
 
-## <a name="solutions"></a>ソリューション
+## <a name="encrypt-the-entire-device"></a>デバイス全体を暗号化します
 
-### <a name="add-a-startup-pin"></a>スタートアップ PIN の追加
+このセクションは、ポータルサイトアプリにのみ適用されます。 一部のデバイスでは、デバイス全体と使用済み領域のみのどちらを暗号化するかを選ぶことができます。 デバイス全体を暗号化するオプションを選択します。 使用済みの領域のみを暗号化するように選択した場合は、次のようにします。
 
-いくつかの Android デバイスでは、デバイスがセキュリティ保護されていることを確認するためにスタートアップ PIN を作成する必要があります。 異なる製造元によるさまざまな Android のバージョンが存在します。 このオプションを有効にする設定アプリで場所を見つけることにより、この問題を解決できます。 たとえば、Samsung Galaxy S7 では、**[設定]** > **[ロック画面とセキュリティ]** > **[安全な起動]** と移動して、安全なスタートアップを有効にします。  
+1. [ポータル サイトからこのデバイスを削除します](unenroll-your-device-from-intune-android.md)。
+2. 使用済み領域の暗号化を解除します。  
+3. デバイス全体を暗号化します。  
+4. デバイスを再度登録します。  
 
-### <a name="encrypt-the-entire-device"></a>デバイス全体を暗号化します
+## <a name="downgrade-your-version-of-android"></a>Android のバージョンのダウングレード
 
-一部のデバイスでは、デバイス全体と使用済み領域のみのどちらを暗号化するかを選ぶことができます。 "使用済み領域のみ" ではなく、デバイス全体の暗号化を選んでください。 既に使用済み領域のみを暗号化している場合は、次のようにします。
-
-1. [ポータル サイトからこのデバイスを削除します](unenroll-your-device-from-intune-android.md)
-2. 使用済み領域の暗号化を解除します
-3. デバイス全体を暗号化します
-4. デバイスを再度登録します
-
-### <a name="downgrade-your-version-of-android"></a>Android のバージョンのダウングレード
-
-デバイスで Android 6.0 以降にダウングレードできる場合は、ダウングレードします。 デバイスのダウングレードには、データ損失のリスクがあります。 そのため、会社のサポートに問い合わせて、この問題を解決することをお勧めします。 会社のサポートの連絡先情報は、[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)で入手できます。
+このセクションは、ポータルサイトアプリにのみ適用されます。 デバイスで Android 6.0 以降にダウングレードできる場合は、ダウングレードします。 デバイスのダウングレードには、データ損失のリスクが伴います。 そのため、会社のサポートに問い合わせて、この問題を解決することをお勧めします。 [ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)から、ご自身の会社のサポートに関する連絡先情報を取得してください。  
 
 ## <a name="specific-manufacturer-issues"></a>特定の製造元の問題
 
-バージョン 7.0 以上の一部の Android デバイスでは、特定の Android プラットフォームの標準に準拠していない方法でデータを暗号化します。 これらのデバイスは、まったく新しい場合でも暗号化されているものとして表示されることがあります。 Intune では、これらのデバイスの暗号化方法はデバイスの情報を危険にさらすものとして認識します。 このリスクの原因は主として、デバイスに物理的にアクセスできる悪意のあるユーザーです。
+バージョン 7.0 以上の一部の Android デバイスでは、特定の Android プラットフォームの標準に準拠していない方法でデータが暗号化されます。 これらの暗号化方法では、デバイス情報が危険にさらされます。 そのため、これらのデバイスはサポートされていません。 
+
+サポートされている Android デバイスの完全でない一覧については、「 [Intune でサポートされるオペレーティングシステムとブラウザー](https://docs.microsoft.com/intune/supported-devices-browsers#supported-samsung-knox-standard-devices)」を参照してください。 デバイスが一覧に表示されない場合は、デバイスの製造元を参照するか、サポート担当者に問い合わせてください。 
 
 > [!Note]
-> Microsoft は製造元と協力して、テスト中に見つけた問題やユーザーから報告された問題に対処しています。 新しい情報が得られたらこの記事の内容を更新します。 
+> Microsoft では、製造元と協力して、テスト中に見つかった問題やユーザーから報告された問題に対処しています。 新しい情報が得られたらこの記事の内容を更新します。 
 
-## <a name="known-devices"></a>既知のデバイス
+## <a name="update-devices"></a>デバイスの更新   
 
-### <a name="known-devices-that-can-be-updated-to-fix-this-issue"></a>更新によってこの問題を解決できる既知のデバイス
+デバイスを最新バージョンの Android に更新していない場合は、デバイスの**設定**アプリにアクセスし、 **[更新]** を選択します。  
 
-Android の最新バージョンに、デバイスを更新していない場合は、デバイスに移動**設定**アプリと選択**Update**します。 更新するまで、これらのデバイスが準拠するいないと表示可能性があります。  
-
-- Huawei Honor 8
-- Huawei P9
-
-### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>更新によってこの問題を解決できない既知のデバイス
-次のデバイスでは、暗号化は常に表示され、会社のリソースにアクセスするのには使用できません。 会社のリソースにアクセスするには、別のデバイスを使用する必要があります。  
-
-- Huawei Mate 8
-- OPPO デバイス
-- Vivo デバイス
-- Xiaomi Mi スマートフォン
+## <a name="next-steps"></a>次の手順   
+サポートが必要な場合は、 会社のサポートに問い合わせるか (連絡先情報については[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください)、または <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android チーム</a>にご連絡ください。  
