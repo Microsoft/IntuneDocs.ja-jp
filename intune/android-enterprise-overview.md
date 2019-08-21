@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e6a003e4ab912452f278c838c600f75ddec0c1f5
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 3a51951d02d73a0d79f6246dd9502c3c7fe89759
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885141"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550094"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Intune で Android 仕事用プロファイルのデバイスを管理する
 
@@ -68,7 +68,7 @@ Android Enterprise 仕事用プロファイル デバイスで Exchange ActiveSy
 
 VPN のサポートは、Android VPN プロファイルに似ています。 Android Enterprise 管理では同じ VPN プロバイダーと基本構成オプションを使用できますが、次の 2 つの違いがあります。
 
-- **仕事用プロファイル対象の VPN** - VPN 接続は、仕事用プロファイルに展開されるアプリのみが対象です。 Android Enterprise で管理されるアプリのみが VPN 接続を使用できます。 デバイス上の個人用のアプリは、管理対象の VPN 接続を使用できません。 詳細については、「[Android エンタープライズの VPN の設定](vpn-settings-android.md#android-enterprise-vpn-settings)」を参照してください。
+- **仕事用プロファイル対象の VPN** - VPN 接続は、仕事用プロファイルに展開されるアプリのみが対象です。 Android Enterprise で管理されるアプリのみが VPN 接続を使用できます。 デバイス上の個人用のアプリは、管理対象の VPN 接続を使用できません。 詳細については、「[Android エンタープライズの VPN の設定](vpn-settings-android-enterprise.md)」を参照してください。
 
 - **アプリ固有の VPN** – VPN プロバイダーがサポートしている場合は、Intune でアプリ固有の VPN を構成できます。
   - アプリ固有の VPN の構成

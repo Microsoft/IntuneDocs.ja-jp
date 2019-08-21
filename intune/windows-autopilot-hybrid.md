@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81e50c3f79ffe9a3b9bc8068d49ba966c35dbbfd
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 399b0c6065c51343e4802d4e8aec29381c6dc468
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67649102"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861846"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Intune と Windows Autopilot を使用して Hybrid Azure AD 参加済みデバイスをデプロイする
 Intune と Windows Autopilot を使用して、Hybrid Azure Active Directory (Azure AD) 参加済みデバイスを設定できます。 そのためには、この記事の手順のようにします。
@@ -106,15 +106,14 @@ Active Directory 用の Intune コネクタでは、オンプレミスの Active
 
 Active Directory 用の Intune コネクタは、Windows Server 2016 以降を実行しているコンピューターにインストールする必要があります。 コンピューターは、インターネットとお使いの Active Directory にもアクセスできる必要があります。 スケールと可用性を高めたり、複数の Active Directory ドメインをサポートしたりするため、環境内に複数のコネクタをインストールできます。 コネクタは、他の Intune コネクタが実行されていないサーバーにインストールすることをお勧めします。
 
-1. 言語パックをインストールし、「[Intune コネクタ (プレビュー) の言語の要件](https://docs.microsoft.com/windows/deployment/windows-autopilot/intune-connector)」の説明に従って構成したことを確認します。
-2. [Intune](https://aka.ms/intuneportal) で、 **[デバイスの登録]**  >  **[Windows の登録]**  >  **[Active Directory の Intune コネクタ (プレビュー)]**  >  **[コネクタの追加]** を選択します。 
-3. 手順に従ってコネクタをダウンロードします。
-4. ダウンロードしたコネクタのセットアップ ファイル *ODJConnectorBootstrapper.exe* を開いて、コネクタをインストールします。
-5. セットアップの最後に、 **[構成]** を選択します。
-6. **[サインイン]** を選択します。
-7. ユーザーのグローバル管理者ロールまたは Intune 管理者ロールの資格情報を入力します。  
+1. [Intune](https://aka.ms/intuneportal) で、 **[デバイスの登録]**  >  **[Windows の登録]**  >  **[Active Directory の Intune コネクタ (プレビュー)]**  >  **[コネクタの追加]** を選択します。 
+2. 手順に従ってコネクタをダウンロードします。
+3. ダウンロードしたコネクタのセットアップ ファイル *ODJConnectorBootstrapper.exe* を開いて、コネクタをインストールします。
+4. セットアップの最後に、 **[構成]** を選択します。
+5. **[サインイン]** を選択します。
+6. ユーザーのグローバル管理者ロールまたは Intune 管理者ロールの資格情報を入力します。  
    ユーザー アカウントに Intune ライセンスが割り当てられている必要があります。
-8. **[デバイスの登録]**  >  **[Windows の登録]**  >  **[Active Directory の Intune コネクタ (プレビュー)]** に移動し、接続の状態が **[アクティブ]** であることを確認します。
+7. **[デバイスの登録]**  >  **[Windows の登録]**  >  **[Active Directory の Intune コネクタ (プレビュー)]** に移動し、接続の状態が **[アクティブ]** であることを確認します。
 
 > [!NOTE]
 > コネクタにサインインした後、それが [Intune](https://aka.ms/intuneportal) に表示されるまでに数分かかる場合があります。 Intune サービスと正常に通信できる場合にのみ表示されます。

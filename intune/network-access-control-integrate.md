@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d0f155a9a4900ed10b2030af3c80c13def0bb82e
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 3ff5b29b3d417b9c3bdabfc860b46579b168fb71
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660905"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960636"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>ネットワーク アクセス制御 (NAC) と Intune の統合
 
@@ -97,4 +97,4 @@ NAC は条件付きアクセスと連携して、アクセス制御の決定を�
 - [Citrix NetScaler と Intune を統合する](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
 - [Intune に F5 BIG-IP Access Policy Manager を統合する](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-13-0-0/6.html)
 - [HP Aruba ClearPass と Intune を統合する](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=31271)
-- [Squadra の secRMM (security Removable Media Manager) と Intune を統合する](https://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)
+- [Squadra の secRMM (security Removable Media Manager) と Intune を統合する](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)
