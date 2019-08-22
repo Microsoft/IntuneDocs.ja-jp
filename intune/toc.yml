@@ -665,6 +665,8 @@
                   href: app-protection-policies-validate.md
                 - name: アプリ保護ポリシーの配信
                   href: app-protection-policy-delivery.md
+                - name: アプリ拡張機能の保護
+                  href: app-protection-policy-extensions.md
                 - name: アプリ保護のユーザーの状態を監視する
                   href: app-protection-policies-monitor.md
                 - name: WIP アプリ保護ポリシーの準備をする
