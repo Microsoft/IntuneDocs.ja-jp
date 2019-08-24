@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c75930f3eee35146afbc5714135ececbe7c9643
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 5b3fd474e938e2e85a0a08951a9e3f154d980411
+ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550167"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69998938"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように Windows 10 (以降) のデバイスを設定する
 
@@ -66,13 +66,6 @@ ms.locfileid: "69550167"
   - **優先ストア**: Microsoft Store 以外の場所からアプリをインストールするときに、ユーザーに警告します。
 
   [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
-
-- **[更新の失敗時にアプリの再起動を強制する]** : アプリが使用中の場合、更新されないことがあります。 この設定を使用して、アプリを強制的に再起動します。 **[未構成]** (既定値) にすると、アプリの強制的な再起動は行われません。 **[必須]** にすると、管理者は、特定の日付時刻、または定期スケジュールで再起動を強制できます。 **[必須]** を設定した場合は、以下も入力します。
-
-  - **[開始日付/時刻]** : アプリを再起動する特定の日付時刻を選択します。
-  - **[繰り返し]** : 再起動の周期 (毎日、毎週、または毎月) を選択します。
-
-  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
 
 - **[インストールに対するユーザー コントロール]** : **[未構成]** (既定値) を設定した場合は、Windows インストーラーによって、通常はシステム管理者用に予約されているインストール オプション (ファイルをインストールするディレクトリの入力など) をユーザーが変更できなくなります。 **[ブロック]** にすると、これらのインストール オプションのユーザーによる変更が許可され、いくつかの Windows インストーラーのセキュリティ機能がバイパスされます。
 
