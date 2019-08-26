@@ -16,12 +16,12 @@ ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 996380a4938ca73bbf5f71c82e99814f772001a4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 1775bdf0030968cdd16d87d91794480a43a22d12
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403398"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651036"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows デバイスの一括登録
 
@@ -39,7 +39,7 @@ Azure AD ユーザーはこれらのデバイス上の標準ユーザーであ�
 1. Microsoft ストアから [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) をダウンロードします。
    ![Windows Configuration Designer アプリ ストアのスクリーンショット](media/bulk-enroll-store.png)
 
-2. **Windows Configuration Designer** アプリを開き、 **[Provision desktop devices]** (デスクトップ デバイスのプロビジョニング) を選択します。
+2. **Windows Configuration Designer** アプリを開き、**[Provision desktop devices]** (デスクトップ デバイスのプロビジョニング) を選択します。
    ![Windows Configuration Designer アプリでデスクトップ デバイスのプロビジョニングを選択するスクリーン ショット](media/bulk-enroll-select.png)
 
 3. **[新しいプロジェクト]** ウィンドウが開くので、そこで次の情報を指定します。
@@ -54,13 +54,13 @@ Azure AD ユーザーはこれらのデバイス上の標準ユーザーであ�
 5. 必要に応じて、初回起動時にデバイスが接続する Wi-fi ネットワークを構成できます。  ネットワーク デバイスが構成されていない場合は、デバイスの初回起動時にワイヤード (有線) ネットワーク接続が必要になります。
    ![Windows Configuration Designer アプリで、ネットワーク SSID やネットワークの種類のオプションを含む Wi-fi を有効にするスクリーン ショット](media/bulk-enroll-network.png)
 
-6. **[Enroll in Azure AD]\(Azure AD に登録\)** を選択し、 **[Bulk Token Expiry]\(一括トークンの有効期限\)** の日付を入力して、 **[Get Bulk Token]\(一括トークンの取得\)** を選択します。
+6. **[Enroll in Azure AD]\(Azure AD に登録\)** を選択し、**[Bulk Token Expiry]\(一括トークンの有効期限\)** の日付を入力して、**[Get Bulk Token]\(一括トークンの取得\)** を選択します。
    ![Windows Configuration Designer アプリでのアカウント管理のスクリーンショット](media/bulk-enroll-account.png)
 
 7. 一括トークンを取得するための Azure AD の資格情報を入力します。
    ![Windows Configuration Designer アプリへのサインインのスクリーンショット](media/bulk-enroll-cred.png)
 
-8. **一括トークン**が正常にフェッチされたら、 **[次へ]** をクリックします。
+8. **一括トークン**が正常にフェッチされたら、**[次へ]** をクリックします。
 
 9. 必要に応じて **[アプリケーションの追加]** や **[証明書の追加]** ができます。 これらのアプリと証明書がデバイスでプロビジョニングされます。
 
@@ -73,7 +73,7 @@ Azure AD ユーザーはこれらのデバイス上の標準ユーザーであ�
 
 2. プロビジョニング パッケージをデバイスに適用する方法を選択します。  プロビジョニング パッケージは、次のいずれかの方法でデバイスに適用できます。
    - USB ドライブにプロビジョニング パッケージを置いて、USB ドライブを一括登録するデバイスに挿入し、初期セットアップ時に適用する
-   - ネットワーク フォルダーにプロビジョニング パッケージを置いて、初期セットアップ後に、一括登録するデバイスに適用する
+   - ネットワーク フォルダーにプロビジョニング パッケージを配置して、初期セットアップ後に適用する
 
    スプロビジョニング パッケージを適用するステップ バイ ステップの手順については、「[プロビジョニング パッケージの適用](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package)」をご覧ください。
 

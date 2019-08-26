@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c92f70844594fd8524f2e49c537f1afaadaf96
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.openlocfilehash: a637ae12f3a2ee395503bedd595c490579fdb43c
+ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783193"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68993543"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Samsung の Knox Mobile Enrollment を使用して Android デバイスを自動的に登録する
 
@@ -52,7 +52,7 @@ KME を使って Intune に登録するには、最初に、次の手順に従�
 
 4. [Samsung アカウントの登録](https://www2.samsungknox.com/en/user/register):KME に登録して有効にし、Knox Enterprise のすべての権利を一元管理するには、Samsung アカウントが必要です。
 
-5. 登録の確認:プロファイルが完成して送信された後、Samsung はユーザーのアプリケーションの確認を実行し、すぐに承認するか、またはさらにフォローアップするためにレビュー保留状態にします。 アカウントが承認された後は、以降の手順に進むことができます。
+5. 登録の確認:プロファイルが完成して送信されると、Samsung によってお客様のアプリケーションが確認され、すぐに承認されるか、またはさらなるフォローアップのために確認保留状態になります。 アカウントが承認された後は、以降の手順に進むことができます。
 
 ## <a name="create-mdm-profile"></a>MDM プロファイルを作成する
 
@@ -68,7 +68,7 @@ KME を使って Intune に登録するには、最初に、次の手順に従�
 |MDM Agent APK (MDM エージェント APK)      | はい       |https://aka.ms/intune_kme_deviceowner 
 |Enable this app as a Google Device Owner (このアプリを Google デバイスの所有者として有効にする) | はい | Android エンタープライズに登録するには、このオプションを選択します。 
 |Supported MDM (サポートされる MDM)      | はい       |Microsoft Intune 
-|Leave all system apps enabled (すべてのシステム アプリを有効のままにする) | [いいえ] | すべてのアプリを有効にして、プロファイルで使用できるようにするには、このオプションを選択します。 このオプションを選択しないと、非常に限られたシステム アプリのセットのみがデバイスのアプリ トレイに表示されます。 メール アプリなどのアプリが非表示のままになります。 
+|Leave all system apps enabled (すべてのシステム アプリを有効のままにする) | [いいえ] | すべてのアプリを有効にして、プロファイルで使用できるようにするには、このオプションを選択します。 このオプションを選択しない場合は、限られたシステム アプリのセットのみがデバイスのアプリ トレイに表示されます。 メール アプリなどのアプリが非表示のままになります。 
 |Custom JSON (カスタム JSON)        | [いいえ]        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN":"Intune 登録トークン文字列を入力してください"}。 [登録プロファイルの作成方法](android-kiosk-enroll.md)に関する記事をご覧ください。 
 | Add legal agreements (法的契約を追加する) | [いいえ] | 空白のままにします。 
 
@@ -82,12 +82,12 @@ KME を使って Intune に登録するには、最初に、次の手順に従�
 |プロファイル名       | はい       |選択したプロファイル名を入力します。
 |説明        | [いいえ]        |プロファイルを説明するテキストを入力します。
 |MDM Agent APK (MDM エージェント APK)      | はい       |https://aka.ms/intune_kme
-|Enable this app as a Google Device Owner (このアプリを Google デバイスの所有者として有効にする) | [いいえ] | Android の場合はオフのままにします。 これは Android エンタープライズに対してのみ適用されます。
-|Skip Setup wizard (セットアップ ウィザードをスキップ)  | [いいえ]        |エンド ユーザーの代わりの標準のデバイス セットアップ プロンプトをスキップするには、このオプションを選択します。
+|Enable this app as a Google Device Owner (このアプリを Google デバイスの所有者として有効にする) | [いいえ] | Android の場合はオフのままにします。 このオプションは Android エンタープライズに対してのみ適用されます。
+|Skip Setup wizard (セットアップ ウィザードをスキップ)  | [いいえ]        |エンド ユーザーに対する標準のデバイス セットアップ プロンプトをスキップするには、このオプションを選択します。
 |Allow End User to Cancel Enrollment (エンド ユーザーが登録をキャンセルするのを許可) | [いいえ] | ユーザーが KME をキャンセルできるようにするには、このオプションを選択します。
 |Custom JSON (カスタム JSON)        | [いいえ]        |空白のままにします。
 | Add legal agreements (法的契約を追加する) | [いいえ] | 空白のままにします。
-Associate a Knox license with this profile (このプロファイルと Knox ライセンスを関連付け) | [いいえ] | オフのままにします。 KME 使用の Intune 登録に Knox ライセンスは不要です。
+Associate a Knox license with this profile (このプロファイルと Knox ライセンスを関連付け) | [いいえ] | オフのままにします。 KME を使った Intune への登録には、Knox ライセンスは必要ありません。
 
 ## <a name="add-devices"></a>デバイスを追加する
 
@@ -103,9 +103,9 @@ Associate a Knox license with this profile (このプロファイルと Knox ラ
 
 KME for Android を使用して Intune に登録されたデバイスの場合、エンド ユーザーがサインインする方法を次のように構成できます。
 
-- **ユーザー名の関連付けなし:** Knox ポータルの **[Device details]\(デバイスの詳細\)** で、追加したデバイスの **[User ID]\(ユーザー ID\)** と **[Password]\(パスワード\)** フィールドを空白のままにします。 エンド ユーザーは、Intune に登録するときに、ユーザー名とパスワードの両方を入力する必要があります。
+- **ユーザー名の関連付けなし:** Knox ポータルの **[Device details]\(デバイスの詳細\)** で、追加したデバイスの **[User ID]\(ユーザー ID\)** と **[Password]\(パスワード\)** フィールドを空白のままにします。 このオプションを使うと、エンド ユーザーは、Intune に登録するときにユーザー名とパスワードの両方を入力するよう求められます。
 
-- **ユーザー名の関連付けあり:** Knox ポータルの **[Device details]\(デバイスの詳細\)** で、追加したデバイスの **[User ID]\(ユーザー ID\)** (割り当てられたユーザーのユーザー名、または[デバイス登録マネージャー](https://docs.microsoft.com/intune/device-enrollment-manager-enroll) アカウントなど) を提供します。 ユーザー名が事前設定され、エンド ユーザーは Intune に登録するときにパスワードを入力する必要があります。
+- **ユーザー名の関連付けあり:** Knox ポータルの **[Device details]\(デバイスの詳細\)** で、追加したデバイスの **[User ID]\(ユーザー ID\)** (割り当てられたユーザーのユーザー名、または[デバイス登録マネージャー](https://docs.microsoft.com/intune/device-enrollment-manager-enroll) アカウントなど) を提供します。 このオプションを使うと、Intune への登録時にユーザー名が事前入力され、エンド ユーザーはパスワードを入力するよう求められます。
 
 > [!NOTE]
 >
@@ -116,11 +116,11 @@ KME for Android を使用して Intune に登録されたデバイスの場合�
 
 MDM プロファイルを作成して割り当て、ユーザー名を関連付け、Intune でデバイスを企業所有として識別した後、ユーザーにデバイスを配布できます。
 
-サポートが必要な場合は、 完全な [Knox Mobile Enrollment ユーザー ガイド](https://docs.samsungknox.com/KME-Getting-Started/Content/get-started.htm)を参照してください。
+サポートが必要な場合は、 完全な [KME ユーザー ガイド](https://docs.samsungknox.com/KME-Getting-Started/Content/get-started.htm)に関するページをご覧ください。
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-- **デバイス所有者のサポート:** Intune は Android エンタープライズを使用するキオスク モードへのデバイスの登録のみをサポートします。 他の Android エンタープライズ デバイス所有者モードは、Intune で利用可能になったらサポートされます。
+- **デバイス所有者のサポート:** - **デバイス所有者のサポート:** Intune では、KME ポータルを使用した専用およびフル マネージド デバイスの登録がサポートされています。 他の Android エンタープライズ デバイス所有者モードは、Intune で利用可能になったらサポートされます。
 
 - **仕事用プロファイルのサポートなし**:KME は会社のデバイスを登録する方法であり、デバイスを Android 仕事用プロファイルに登録することにより、個人のデバイスの仕事用データと個人用データが別々に管理されるようになります。 そのため Intune では、KME を使用してデバイスを仕事用プロファイルに登録するシナリオはサポートされていません。
 
@@ -128,7 +128,7 @@ MDM プロファイルを作成して割り当て、ユーザー名を関連付�
 
 - **Google Play アカウントを使用した更新:** Microsoft Intune にデバイスを登録するために、Google Play アカウントは必要ありません。 Intune ポータル サイト アプリの今後の更新では、デバイスに Google Play アカウントが必要になるかもしれません。 Google デバイス所有者に登録するときは、Google Play アカウントは必要ありません。
 
-- **"パスワード" フィールドが無視される:** Knox ポータルの **[Device details]\(デバイスの詳細\)** で **[パスワード]** フィールドを設定した場合、Android 登録の間に Intune ポータル サイト アプリで無視されます。 エンド ユーザーは、デバイス登録を完了するにはデバイスでパスワードを入力する必要があります。
+- **"パスワード" フィールドが無視される:** Knox ポータルの **[デバイスの詳細]** で **[パスワード]** フィールドが設定されている場合、これは Android 登録の間に Intune ポータル サイト アプリで無視されます。 エンド ユーザーは、デバイス登録を完了するにはデバイスでパスワードを入力する必要があります。
 
 
 ## <a name="getting-support"></a>サポートの入手

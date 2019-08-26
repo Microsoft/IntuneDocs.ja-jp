@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3ed61f556cadf3ba04f7c33fbede2102c94b18f
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 886241dcde88765c4879357ee42b2b281e7f3408
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549323"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861869"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Intune の展開計画に関するその他のリソース
 
@@ -45,17 +45,14 @@ ms.locfileid: "67549323"
 | | コンプライアンス ポリシー | |
 | | 条件付きアクセス ポリシー|-|
 
-
 ## <a name="further-reading"></a>参考記事
 
 以下のリソースで追加情報を確認してください。Intune の展開計画、設計、実装プロセス時に役立つ場合があります。
 
-- [Microsoft Intune のドキュメント](/intune/) - Intune のドキュメントの完全なセット。
+- [Microsoft Intune のドキュメント](http://docs.microsoft.com/intune/) - Intune のドキュメントの完全なセット。
 
-- [Intune のブログ](https://blogs.technet.microsoft.com/enterprisemobility/) - Intune が大規模な Enterprise Mobility に適合する仕組みを理解するのに役立つ投稿です。
+- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter) - すべての Microsoft クラウド製品とサービスにおける、セキュリティ、プライバシー、コンプライアンス、透明度についての Microsoft のアプローチを理解できます。
 
-- [Microsoft Trust Center](http://www.microsoft.com/TrustCenter) - すべての Microsoft クラウド製品とサービスにおける、セキュリティ、プライバシー、コンプライアンス、透明度についての Microsoft のアプローチを理解できます。
+- [Intune User Voice](https://microsoftintune.uservoice.com/) - 機能をリクエストしたり、他のお客様とともに機能に投票したりすることにご興味をお持ちですか? User Voice で Intune に関するフィードバックをご提供ください。 ご意見をお待ちしています。
 
-- [Intune User Voice](http://microsoftintune.uservoice.com/) - 機能をリクエストしたり、他のお客様とともに機能に投票したりすることにご興味をお持ちですか? User Voice で Intune に関するフィードバックをご提供ください。 ご意見をお待ちしています。
-
-- [登録ガイド](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) - そのまま使用できるドキュメント一式ですが、エンド ユーザーとのコミュニケーション プランの一部として変更して、ユーザーが自分の個人用デバイスを Intune に登録する意味を理解するのに役立てることができます。
+- [コミュニケーションの計画](migration-guide-communication-plan.md) - コミュニケーションの計画は、Intune の導入における重要な要素です。 この記事では、メール テンプレートや Intune 登録ガイド、および登録についてエンド ユーザーを教育するのに役立つ説明ビデオへのリンクが含まれた、Intune 導入キットをダウンロードできます。

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e69236f7babc974bca0db32245de2323627e494
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: cba8b59931bd60db0d9169af5016f01118c64cf0
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548348"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022831"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>ロールアウト コミュニケーション計画の作成
 
@@ -50,7 +50,7 @@ ms.locfileid: "67548348"
 
 **登録後段階**<br/> Intune に登録された組織グループ/ユーザーを対象とする情報伝達。 ユーザーに役立つ追加のリソースを提供し、登録時と登録後の使用感に関するフィードバックを収集します。
 
-こちらの [エンドユーザー登録ガイド](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) もお役立てください。 そのまま使用することも、組織に合わせて変更することもできます。
+こちらの [Intune 導入キット](https://aka.ms/IntuneAdoptionKit)が役に立つ場合があります。 これは、そのまま使用することも、組織に合わせて変更することもできます。
 
 ## <a name="communication-delivery-methods"></a>情報の配信方法
 

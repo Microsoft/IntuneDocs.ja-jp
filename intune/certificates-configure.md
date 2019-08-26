@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80be1d39d9a562dbc13b9384c6256eb02c9ef50e
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: f13b5b92ca442f4b5ae05d3567f8385288d92909
+ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530558"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69582924"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Microsoft Intune でデバイスの証明書プロファイルを構成する
 
@@ -88,30 +88,35 @@ Intune を使用して、管理するデバイスに証明書を割り当てる�
 信頼された証明書プロファイルを構成するときにこの証明書をインポートします。
 
 ## <a name="step-3-create-trusted-certificate-profiles"></a>手順 3: 信頼された証明書プロファイルを作成する
+
 SCEP または PKCS 証明書プロファイルを作成する前に、信頼された証明書プロファイルを作成します。 デバイス プラットフォームごとに、信頼された証明書プロファイルと SCEP または PKCS プロファイルが必要です。 信頼された証明書を作成する手順は、どのデバイス プラットフォームでも同様です。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-3. **[デバイス構成]**  >  **[管理]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
-4. 信頼された証明書プロファイルの **[名前]** と **[説明]** を入力します。
-5. **[プラットフォーム]** ドロップダウン リストで、この信頼された証明書のデバイス プラットフォームを選択します。 次のようなオプションがあります。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) で、**[デバイス構成]** > **[管理]** > **[プロファイル]** > **[プロファイルの作成]** の順に選択します。
+2. 次のプロパティを入力します。
 
-    - **Android**
-    - **Android エンタープライズ**
-    - **Android**
-    - **macOS**
-    - **Windows Phone 8.1**
-    - **Windows 8.1 以降**
-    - **Windows 10 以降**
+    - **名前**: プロファイルのわかりやすい名前を入力します。 後で簡単に識別できるよう、プロファイルに名前を付けます。 たとえば、適切なプロファイル名は、「**Android エンタープライズ デバイス所有者向けの信頼済みの証明書プロファイル デバイス**」や「**iOS デバイス向けの信頼済みの証明書プロファイル**」になります。
+    - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
+    - **[プラットフォーム]**:デバイスのプラットフォームを選択します。 次のようなオプションがあります。
 
-6. **[プロファイルの種類]** ドロップダウン リストで、 **[信頼済み証明書]** を選択します。
-7. 「[手順 2:信頼されたルート CA 証明書をエクスポートする](#step-2-export-your-trusted-root-ca-certificate)」で保存した証明書を参照し、 **[OK]** をクリックします。
-8. Windows 8.1 および Windows 10 デバイスの場合のみ、信頼された証明書の**保存先ストア**を以下から選択します。
+      - **Android**
+      - **[Android エンタープライズ]** > **[デバイスの所有者のみ]**
+      - **[Android エンタープライズ]** > **[仕事用プロファイルのみ]**
+      - **Android**
+      - **macOS**
+      - **Windows Phone 8.1**
+      - **Windows 8.1 以降**
+      - **Windows 10 以降**
 
-    - **コンピューター証明書ストア - ルート**
-    - **コンピューター証明書ストア - 中間**
-    - **ユーザー証明書ストア - 中間**
+    - **[プロファイルの種類]**:**[信頼済み証明書]** を選択します。
 
-9. 完了したら、 **[OK]** を選択し、 **[プロファイルの作成]** ウィンドウに戻り、 **[作成]** を選択します。
+3. 「[手順 2:信頼されたルート CA 証明書をエクスポートする](#step-2-export-your-trusted-root-ca-certificate)」で保存した証明書を参照し、**[OK]** をクリックします。
+4. Windows 8.1 および Windows 10 デバイスの場合のみ、信頼された証明書の**保存先ストア**を以下から選択します。
+
+    - **[コンピューター証明書ストア - ルート]** (SCEP)
+    - **[コンピューター証明書ストア - 中間]** (SCEP)
+    - **[ユーザー証明書ストア - 中間]** (PKCS、SCEP)
+
+5. 完了したら、**[OK]** を選択し、**[プロファイルの作成]** ウィンドウに戻り、**[作成]** を選択します。
 
 プロファイルが作成され、リストに表示されます。 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルの割り当て](device-profile-assign.md)に関するページを参照してください。
 
@@ -128,6 +133,7 @@ SCEP または PKCS 証明書プロファイルを作成する前に、信頼さ
 信頼された証明書プロファイルを作成した後、使用する各プラットフォーム用の SCEP または PKCS 証明書プロファイルを作成します。 SCEP 証明書プロファイルを作成する場合は、その同じプラットフォームに対する信頼された証明書プロファイルを入力します。 この手順により 2 つの証明書プロファイルがリンクされますが、それでも各プロファイルを個別に割り当てる必要があります。
 
 ## <a name="next-steps"></a>次の手順
+
 [デバイス プロファイルを割り当てる](device-profile-assign.md)  
 [S/MIME を使用して電子メールに署名し、暗号化する](certificates-s-mime-encryption-sign.md)  
 [サードパーティの証明機関を使用する](certificate-authority-add-scep-overview.md)

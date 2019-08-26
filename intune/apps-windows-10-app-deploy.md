@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/26/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e46eae92dfa145f1fc2b38379285dbb45b24590
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: c853608f46bb01263ddd08193f729cdfb018fed9
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680071"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550072"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Microsoft Intune を使用する Windows 10 アプリの展開 
 
 現在、Microsoft Intune では、Windows 10 デバイスでのさまざまなアプリの種類と展開のシナリオがサポートされています。 アプリを Intune に追加した後、そのアプリをユーザーとデバイスに割り当てることができます。 ここでは、サポートされている Windows 10 シナリオに関連する詳細情報を示します。 さらに、Windows へのアプリの展開時に注意する必要がある主な詳細情報を示します。 
 
-基幹業務 (LOB) アプリとビジネス向け Microsoft Store アプリは、Windows 10 デバイスでサポートされているアプリの種類です。 Windows アプリのファイル拡張子には、 **.msi**、 **.appx**、 **.appxbundle** があります。  
+基幹業務 (LOB) アプリとビジネス向け Microsoft Store アプリは、Windows 10 デバイスでサポートされているアプリの種類です。 Windows アプリのファイル拡張子には、**.msi**、**.appx**、**.appxbundle** があります。  
 
 > [!Note]
 > 最新のアプリを展開するのに必要な最小の Windows 10 の更新プログラムは、次のとおりです。
@@ -44,6 +44,13 @@ Windows 10 の基幹業務アプリは署名され、Intune 管理コンソー�
 ## <a name="microsoft-store-for-business-apps"></a>ビジネス向け Microsoft ストア アプリ
 
 ビジネス向け Microsoft Store アプリは、ビジネス向け Microsoft Store の管理ポータルから購入できる最新のアプリであり、管理のために Microsoft Intune に同期されます。 アプリは、**オンライン ライセンス付き**か**オフライン ライセンス付き**のいずれかです。 ビジネス向け Microsoft Store アプリの更新プログラムは Microsoft Store によって直接管理され、お客様 (管理者) が追加の操作を行う必要はありません。また、カスタムの Uniform Resource Identifier (URI) を使用して、特定のアプリが更新されないようにすることもできます。 詳細については、「[Enterprise app management - Prevent app from automatic updates](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates)」 (「エンタープライズ アプリの管理」の「アプリが自動更新されないようにする」) を参照してください。 デバイス上では、エンド ユーザーがすべてのビジネス向け Microsoft Store アプリの更新を無効にすることもできます。 
+
+### <a name="categorize-microsoft-store-for-business-apps"></a>ビジネス向け Microsoft Store アプリの分類 
+ビジネス向け Microsoft ストア アプリを分類するには、次の手順を使用します。 
+
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+2. **[クライアント アプリ]** > **[アプリ]** > [Select a Microsoft Store for Business app]\(ビジネス向け Microsoft ストア アプリを選択する\) > **[アプリ情報]** > **[カテゴリ]** の順に選択します。 
+3. ドロップ ダウン メニューからカテゴリを選択します。
 
 ## <a name="installing-apps-on-windows-10-devices"></a>Windows 10 デバイスでのアプリのインストール
 アプリの種類に応じて、次の 2 つの方法のいずれかで Windows 10 デバイスにアプリをインストールすることができます。
