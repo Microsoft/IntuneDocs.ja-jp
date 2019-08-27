@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/23/2019
+ms.date: 08/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f2e4870d1a2614ecccc1647db828e214a6aede8
-ms.sourcegitcommit: e9911a6bbfb8532a27e70d70402a214a8b2b6c75
+ms.openlocfilehash: 267eb630b962893d5ab32530a095fe2fd3f7102e
+ms.sourcegitcommit: cbd406e3c6ab8c9a29d58dfda4a18e34277a1594
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68818796"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69620213"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 
@@ -51,6 +51,176 @@ ms.locfileid: "68818796"
 ### Role-based access control
 
 -->  
+
+<!-- ########################## -->
+
+## <a name="week-of-august-12-2019"></a>2019 年 8 月 12 日の週
+
+### <a name="app-management"></a>アプリ管理
+
+#### <a name="control-ios-app-uninstall-behavior-at-device-unenrollment----3504144-----"></a>デバイス登録解除時の iOS アプリのアンインストール動作を制御する <!-- 3504144   -->
+管理者は、ユーザーまたはデバイス グループ レベルでデバイスが登録解除された場合に、デバイス上のアプリを削除するか保持するかを管理できます。 
+
+#### <a name="categorize-microsoft-store-for-business-apps----3926922---"></a>ビジネス向け Microsoft Store アプリの分類 <!-- 3926922 -->
+ビジネス向け Microsoft ストア アプリを分類できます。 これを行うには、 **[Intune]**  >  **[クライアント アプリ]**  >  **[アプリ]** > [Select a Microsoft Store for Business app]\(ビジネス向け Microsoft ストア アプリを選択する\) > **[アプリ情報]**  >  **[カテゴリ]** の順に選択します。 ドロップ ダウン メニュー上で、カテゴリを割り当てます。
+
+#### <a name="customized-notifications-for-microsoft-intune-app-users----4843354----"></a>Microsoft Intune アプリ ユーザー向けにカスタマイズされた通知 <!-- 4843354  -->
+Microsoft Intune の Android 用アプリでは、カスタム プッシュ通知の表示がサポートされるようになりました。iOS および Android 用のポータル サイト アプリに最近追加されたサポートと連携しています。 詳細は、「[Intune でカスタム通知を送信する](custom-notifications.md)」を参照してください。
+
+### <a name="device-configuration"></a>デバイス構成
+
+#### <a name="new-features-for-android-enterprise-dedicated-devices-in-multi-app-mode----3755304-3041943-3041946-----"></a>マルチアプリ モードでの Android エンタープライズ専用デバイスの新機能 <!-- 3755304 3041943 3041946   -->
+Intune では、Android エンタープライズ専用デバイス上のキオスク スタイルのエクスペリエンスの機能と設定を制御できます ( **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  >  **[Android エンタープライズ] (プラットフォーム)** > **[デバイスの所有者のみ]、[デバイスの制限]** (プロファイルの種類))。
+
+この更新プログラムでは、次の機能が追加されています。
+
+- **[専用デバイス]**  >  **[複数アプリ]** : **[仮想ホーム ボタン]** は、デバイス上で上方向にスワイプするか、またはユーザーが移動できるように画面上でのフローティングによって、表示できます。
+- **[専用デバイス]**  >  **[複数アプリ]** : **[懐中電灯へのアクセス]** を利用すると、ユーザーは懐中電灯を使用できます。 
+- **[専用デバイス]**  >  **[複数アプリ]** : **[メディア ボリューム コントロール]** を利用すると、ユーザーはスライダーを使用してデバイスのメディア ボリュームを制御できます。 
+- **[専用デバイス]**  >  **[複数アプリ]** : **[Enable a screensaver]\(スクリーンセーバーを有効にする\)** では、カスタム画像をアップロードして、スクリーンセーバーが表示されるタイミングを制御します。
+
+現在の設定を確認するには、[Intune を使用して Android エンタープライズ デバイスの機能を許可または制限する設定](device-restrictions-android-for-work.md#dedicated-device-settings)に関するページを参照してください。
+
+適用対象:  
+- Android Enterprise 専用デバイス
+
+#### <a name="new-app-and-configuration-profiles-for-android-enterprise-fully-managed-devices----3574215-3574238-3574235-3574232-----"></a>Android エンタープライズのフル マネージド デバイスにおける新しいアプリと構成プロファイル <!-- 3574215 3574238 3574235 3574232   -->
+プロファイルを使用して、Android エンタープライズ デバイスの所有者 (フル マネージド) デバイスに VPN、電子メール、および Wi-Fi 設定を適用する設定を構成できます。 この更新プログラムでは、次のことができます。
+
+- [アプリ構成ポリシー](app-configuration-policies-use-android.md)を使用して、Outlook、Gmail、および Nine Work 電子メールの設定を展開します。
+- デバイス構成プロファイルを使用して、[信頼されたルート証明書の設定](certificates-configure.md)を展開します。
+- デバイス構成プロファイルを使用して、[VPN](vpn-settings-android-enterprise.md) および [Wi-Fi](wi-fi-settings-android-enterprise.md) 設定を展開します。
+
+> [!IMPORTANT]
+> この機能を使用すると、ユーザーは VPN、Wi-Fi、および電子メール プロファイル用のユーザー名とパスワードを使って認証されます。 現時点では、証明書ベースの認証は使用できません。 
+
+適用対象:  
+- Android エンタープライズ デバイス所有者 (フル マネージド)
+
+#### <a name="control-the-apps-files-documents-and-folders-that-open-when-users-sign-in-to-macos-devices---3914202-----"></a>ユーザーが macOS デバイスにサインインするときに開くアプリ、ファイル、ドキュメント、およびフォルダーを制御する <!--3914202   -->
+macOS デバイス上で機能を有効にして構成できます ( **[デバイスの構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  >  **[macOS]** (プラットフォーム) > **[デバイス機能]** (プロファイルの種類))。 
+
+この更新プログラムには、登録済みデバイスにユーザーがサインインするときにどのアプリ、ファイル、ドキュメント、フォルダーが開かれるかを制御するために、新しい [ログイン項目] 設定があります。 
+
+現在の設定を確認するには、「[Intune での macOS デバイスの機能設定](macos-device-features-settings.md)」を参照してください。
+
+適用対象:  
+- macOS
+
+#### <a name="deadlines-replace-engaged-restart-settings-for-windows-update-rings------4464404----------"></a>Windows Update リングでの再起動猶予期間の設定が [期限] に置き換わった   <!-- 4464404        -->
+最近の [Windows サービスの変更](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903#servicing)に合わせて、Intune の Windows 10 更新リングでは[期限の設定がサポートされる](windows-update-settings.md)ようになりました。 "*期限*" によって、デバイスに機能とセキュリティの更新プログラムがインストールされるタイミングが決まります。  Windows 10 1903 以降を実行しているデバイス上では、"*期限*" が "*再起動猶予期間*" の構成よりも優先されます。  将来は、Windows 10 の以前のバージョンでも、"*期限*" が "*再起動猶予期間*" よりも優先される予定です。  
+
+"*期限*" を構成しない場合、デバイスでは引き続き "*再起動猶予期間*" の設定が使用されますが、将来の更新プログラムでは [Intune による再起動猶予期間の設定のサポートは廃止される予定](whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-)です。  
+
+お使いのすべての Windows 10 デバイスに対して、"*期限*" を使用することを計画してください。 "*期限*" の設定が行われたら、"*再起動猶予期間*" に関する Intune の構成を未構成に変更できます。 未構成に設定されている場合、Intune ではデバイス上のそれらの設定の管理を停止しますが、その設定に対応する最後の構成をデバイスから削除することはありません。 そのため、"*再起動猶予期間*" に設定された最後の構成は、それらの設定が Intune 以外の方法によって変更されるまで、デバイス上でアクティブに使用されたままになります。 その後、Windows のデバイス バージョンが変更された場合、または "*期限*" に対する Intune のサポートがそのデバイスの Windows バージョンまで拡張された場合、デバイスでは、既に設定されている新しい設定の使用が開始されます。
+
+#### <a name="support-for-multiple-microsoft-intune-certificate-connectors--------4704642--------"></a>複数の Microsoft Intune Certificate Connector のサポート   <!--   4704642      -->
+Intune では、[PKCS 操作に対応した Microsoft Intune Certificate Connector ](certficates-pfx-configure.md) の複数のインストールと使用がサポートされるようになりました。 この変更により、コネクタの負荷分散と高可用性がサポートされます。 各コネクタ インスタンスでは、Intune からの証明書要求を処理できます。  1 つのコネクタが使用できない場合は、それ以外のコネクタが引き続き要求を処理します。 
+
+複数のコネクタを使用するために、最新バージョンのコネクタ ソフトウェアにアップグレードする必要はありません。  
+
+#### <a name="new-settings-and-changes-to-existing-settings-to-restrict-features-on-ios-and-macos-devices----4867699-4867709-----"></a>iOS および macOS デバイス上で機能を制限するための新しい設定と既存の設定の変更 <!-- 4867699 4867709   -->
+プロファイルを作成して iOS および macOS を実行するデバイス上での設定を制限できます ( **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  >  **[iOS]** または **[macOS]** (プラットフォームの種類) > **[デバイスの制限]** )。 この更新プログラムには、次の機能が含まれます。
+
+- **[macOS]**  >  **[デバイスの制限]**  >  **[クラウドとストレージ]** で、新しい **[ハンドオフ]** 設定を使用して、1 つの macOS デバイス上でユーザーによる作業の開始をブロックし、別の macOS または iOS デバイス上で作業を続行します。
+
+  現在の設定を確認するには、「[Intune を使用して機能を許可または制限するように macOS デバイスを設定する](device-restrictions-macos.md)」を参照してください。
+
+- **[iOS]**  >  **[デバイスの制限]** には、いくつかの変更点があります。
+
+  - **[組み込みアプリ]**  >  **[iPhone を探す (監視モードのみ)]** :Find My アプリ機能にあるこの機能をブロックするための新しい設定。 
+  - **[組み込みアプリ]**  >  **[友達を探す (監視モードのみ)]** :Find My アプリ機能にあるこの機能をブロックするための新しい設定。 
+  - **[ワイヤレス]**  >  **[Wi-Fi 状態の変更 (監視モードのみ)]** :ユーザーがデバイス上で Wi-Fi をオンまたはオフにできないようにする新しい設定。
+  - **[キーボードと辞書]**  >  **[QuickPath (監視モードのみ)]** :QuickPath 機能をブロックする新しい設定。
+  - **[クラウドとストレージ]** : **[アクティビティの継続]** は **[ハンドオフ]** に名称変更されました。
+
+  現在の設定を確認するには、「[Intune を使用して機能を許可または制限するように iOS デバイスを設定する](device-restrictions-ios.md)」を参照してください。
+
+適用対象:  
+- macOS 10.15 以降
+- iOS 13 以降
+
+#### <a name="some-unsupervised-ios-device-restrictions-will-become-supervised-only-with-the-ios-130-release----4867809-----"></a>監視されていない一部の iOS デバイスの制限が iOS 13.0 リリースでは監視モードのみになる <!-- 4867809   -->
+この更新プログラムでは、iOS 13.0 リリースによって一部の設定は監視モードのみのデバイスに適用されます。 これらの設定が構成済みであり、iOS 13.0 リリースより前の監視されていないデバイスに割り当てられている場合は、監視されていないそれらのデバイスに引き続き設定が適用されます。 また、デバイスが iOS 13.0 にアップグレードされた後も、引き続き適用されます。 バックアップおよび復元された監視されていないデバイス上では、これらの制限は削除されます。 
+
+設定は次のとおりです。
+
+- アプリ ストア、ドキュメント表示、ゲーム
+  - アプリ ストア
+  - 成人指定の iTunes ミュージック、ポッドキャスト、またはニュース コンテンツ
+  - Game Center の友だちの追加
+  - マルチプレイヤー ゲーム
+- 組み込みアプリ
+  - カメラ
+    - FaceTime
+  - Safari
+    - オートフィル
+- クラウドとストレージ
+  - iCloud へのバックアップ
+  - iCloud ドキュメントの同期のブロック
+  - iCloud キーチェーンの同期をブロックする
+
+現在の設定を確認するには、「[Intune を使用して機能を許可または制限するように iOS デバイスを設定する](device-restrictions-ios.md)」を参照してください。
+
+適用対象:  
+- iOS 13.0 以降
+
+#### <a name="improved-device-status-for-macos-filevault-encryption-----4944983-----------"></a>macOS の FileVault 暗号化に対するデバイス ステータスの改善  <!-- 4944983         -->
+macOS デバイス上での FileVault 暗号化に対する[デバイス ステータス メッセージ](encryption-monitor.md#device-encryption-status)が、いくつか更新されました。
+
+#### <a name="some-windows-defender-antivirus-scan-settings-in-the-reporting-show-a-failed-status----5119229---"></a>レポート内の一部の Windows Defender ウイルス対策スキャンの設定に失敗のステータスが表示される <!-- 5119229 -->
+Intune では、Windows Defender ウィルス対策を使用するポリシーを作成して、お使いの Windows 10 デバイスをスキャンできます ( **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]**  >  **[Windows 10 以降]** (プラットフォーム) > **[デバイスの制限]** (プロファイルの種類) > **[Windows Defender ウィルス対策]** )。 **[Time to perform a daily quick scan]\(毎日のクイック スキャンを実行する時刻\)** および **[Type of system scan to perform]\(実行するシステム スキャンの種類\)** のレポートで、実際には成功のステータスになる場合に、失敗のステータスが表示されます。 
+
+この更新プログラムでは、この動作は変更されています。 そのため、 **[Time to perform a daily quick scan]\(毎日のクイック スキャンを実行する時刻\)** と **[Type of system scan to perform]\(実行するシステム スキャンの種類\)** の設定には、スキャンが正常に終了した場合には成功ステータスが表示され、設定の適用に失敗した場合には失敗のステータスが表示されます。 
+
+Windows Defender ウイルス対策の設定の詳細については、[Intune を使用して機能を許可または制限する Windows 10 (以降) のデバイス設定](device-restrictions-windows-10.md#windows-defender-antivirus)に関するページを参照してください。 
+
+### <a name="device-enrollment"></a>デバイスの登録
+
+#### <a name="default-scope-tags----3702875----"></a>既定のスコープ タグ <!-- 3702875  -->
+新しい組み込みの既定のスコープ タグを使用できるようになりました。 スコープ タグをサポートしているタグ付けされていないすべての Intune オブジェクトが、自動的に既定のスコープ タグに割り当てられます。 現在の管理エクスペリエンスに合うように、**既定**のスコープ タグがすべての既存のロール割り当てに追加されます。 既定のスコープ タグが付与された Intune オブジェクトを管理者に表示しないようにする場合は、ロールの割り当てから既定のスコープ タグを削除します。 この機能は System Center Configuration Manager のセキュリティ スコープ機能とほぼ同じです。 詳細については、[分散型 IT での RBAC とスコープ タグの使用](scope-tags.md)に関するページを参照してください。
+
+#### <a name="android-enrollment-device-administrator-support----4869749-----"></a>Android 登録のデバイス管理者のサポート <!-- 4869749   -->
+Android デバイス管理者の登録オプションが、[Android 登録] ページに追加されました ( **[Intune]**  >  **[デバイスの登録]**  >  **[Android の登録]** )。 Android デバイス管理者は引き続き、すべてのテナントに対して既定で有効になります。  詳細については、「[Android デバイス管理者の登録](android-enroll-device-administrator.md)」を参照してください。
+
+#### <a name="skip-more-screens-in-setup-assistant---4877451----"></a>セットアップ アシスタントにある画面をさらにスキップする <!--4877451  -->
+Device Enrollment Program プロファイルを設定して、次のセットアップ アシスタントの画面をスキップできます。
+- iOS の場合
+    - 外観
+    - 簡易言語
+    - 優先する言語
+    - デバイスからデバイスへの移行
+- macOS の場合
+    - 画面の表示時間
+    - Touch ID の設定
+
+セットアップ アシスタントのカスタマイズの詳細については、[iOS 用の Apple 登録プロファイルの作成](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)および [macOS 用の Apple 登録プロファイルの作成](device-enrollment-program-enroll-macos.md#create-an-apple-enrollment-profile)に関するページを参照してください。
+
+#### <a name="add-a-user-column-to-the-autopilot-device-csv-upload-process----3823054---"></a>Autopilot デバイスの CSV アップロード プロセスにユーザー列を追加する <!-- 3823054 -->
+Autopilot デバイスの CSV アップロードにユーザー列を追加できるようになりました。 これにより、CSV をインポートするときにユーザーを一括で割り当てることができます。 CSV 内の行の新しい形式は、シリアル番号、Windows 製品 ID、ハードウェア ハッシュ、オプションのグループ タグ、オプションの割り当てられたユーザー、のようになります。 詳細については、「[Windows Autopilot を使用して Intune に Windows デバイスを登録する](enrollment-autopilot.md)」を参照してください。
+
+
+### <a name="device-management"></a>デバイス管理
+
+#### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>自動デバイス クリーンアップの制限時間を 30 日まで短く構成する <!--4231059  -->
+自動デバイス クリーンアップの制限時間を、最後にサインインしてから 30 日 (以前の制限は 90 日) に短縮して設定できます。 これを行うには、 **[Intune]**  >  **[デバイス]**  >  **[セットアップ]**  >  **[デバイスのクリーン アップ ルール]** に移動します。
+
+#### <a name="build-number-included-on-android-device-hardware-page----4461910-----"></a>Android デバイスの [ハードウェア] ページに含まれるビルド番号 <!-- 4461910   -->
+各 Android デバイスの [ハードウェア] ページにある新しい項目には、デバイスのオペレーティング システムのビルド番号が含まれます。 詳細については、「[Intune でデバイスの詳細を確認する](device-inventory.md)」を参照してください。
+
+
+<!-- ########################## -->
+
+## <a name="week-of-august-5-2019"></a>2019 年 8 月 5 日の週
+
+### <a name="zebra-technologies-is-a-supported-oem-for-oemconfig-on-android-enterprise-devices-----4843713---"></a>Android エンタープライズ デバイス上で Zebra Technologies 社が OEMConfig に対してサポートされている OEM となる  <!-- 4843713 -->
+
+Intune では、デバイス構成プロファイルを作成して、OEMConfig を使用する Android エンタープライズ デバイスに設定を適用できます (**デバイス構成** >  **[プロファイル]**  >  **[プロファイルの作成]**  >  **[Android エンタープライズ]** (プラットフォーム) > **[OEMConfig]** (プロファイルの種類))。
+
+この更新プログラムでは、Zebra Technologies 社は、OEMConfig に対してサポートされている Original Equipment Manufacturer (OEM) です。 OEMConfig の詳細については、「[OEMConfig を利用して Android エンタープライズ デバイスを使用および管理する](android-oem-configuration-overview.md)」を参照してください。
+
+適用対象:  
+- Android エンタープライズ
 
 <!-- ########################## -->
 
@@ -138,7 +308,7 @@ Windows 10 バージョン 1903 以降を実行するデバイスに関して、
 
 ### <a name="device-security"></a>デバイス セキュリティ
 
-#### <a name="advanced-settings-for-windows-defender-firewall--public-preview-------1311949-------"></a>Windows Defender ファイアウォールの詳細設定 (パブリック プレビュー)  <!--  1311949     -->  
+#### <a name="advanced-settings-for-windows-defender-firewall--public-preview------1311949-------"></a>Windows Defender ファイアウォールの詳細設定 (パブリック プレビュー)  <!--  1311949     -->  
 Windows 10 のエンドポイント保護として[デバイス構成プロファイルの一部としてカスタム ファイアウォール規則](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices)を管理するには、Intune を使用します。 規則では、アプリケーション、ネットワーク、アドレス、ポートに対する受信と送信の動作を指定できます。 
 
 #### <a name="updated-ui-for-managing-security-baselines------4091125-------"></a>セキュリティ ベースラインを管理するための UI が更新されました   <!-- 4091125     -->
@@ -235,7 +405,7 @@ macOS デバイスで、デバイス構成プロファイルを作成できま�
 適用対象:Windows 10 以降
 
 #### <a name="deploy-multiple-zebra-mobility-extensions-device-profiles-to-a-device-same-user-group-or-same-devices-group----4089955---"></a>複数の Zebra モビリティ拡張機能デバイス プロファイルを 1 つのデバイス、同じユーザー グループ、または同じデバイス グループに展開する <!-- 4089955 -->
-Intune では、デバイス構成プロファイルで Zebra モビリティ拡張機能 (MX) を使用し、Intune に組み込まれていない Zebra デバイス向け設定をカスタマイズできます。 現在、1 つのデバイスに 1 つのプロファイルを展開できます。 今回の更新では、以下に複数のプロファイルを展開できます。
+Intune では、デバイス構成プロファイル内で Zebra モビリティ拡張機能 (MX) を使用し、Intune に組み込まれていない Zebra デバイス向けに設定をカスタマイズできます。 現在、1 つのデバイスに 1 つのプロファイルを展開できます。 今回の更新では、以下に複数のプロファイルを展開できます。
 - 同じユーザー グループ
 - 同じデバイス グループ
 - 1 つのデバイス
@@ -269,9 +439,6 @@ iOS デバイスでは、ゲーム、アプリ ストア、およびドキュメ
 適用対象: iOS
 
 ### <a name="device-enrollment"></a>デバイスの登録
-
-#### <a name="windows-autopilot-reset-removes-the-devices-primary-user----4156123---"></a>Windows AutoPilot リセットを実行すると、デバイスのプライマリ ユーザーが削除されます。 <!-- 4156123 -->
-この機能は遅れており、今後のスプリントでリリースされる予定です。    
 
 #### <a name="windows-autopilot-support-for-hybrid-azure-ad-join----4809146--"></a>Hybrid Azure AD Join の Windows AutoPilot サポート <!-- 4809146-->
 既存デバイスの Windows AutoPilot で、(既存の Azure AD Join サポートに加え) Hybrid Azure AD Join がサポートされるようになりました。 Windows 10 バージョン 1809 以降のデバイスに適用されます。 詳細は、[既存のデバイスの Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) に関するページを参照してください。
@@ -539,7 +706,7 @@ PowerShell スクリプト、レジストリ値、ファイル システム情�
 #### <a name="configure-your-win32-apps-to-be-installed-on-intune-enrolled-azure-ad-joined-devices----3695227----"></a>Intune に登録された Azure AD 参加済みデバイスにインストールされるように Win32 アプリを構成する <!-- 3695227  -->
 Intune に登録された Azure AD 参加済みデバイスにインストールされるように Win32 アプリを割り当てることができます。 Intune での Win32 アプリの詳細については、[Win32 アプリ管理](apps-win32-app-management.md)に関するページを参照してください。
 
-#### <a name="device-overview-shows-primary-user---794259----"></a>デバイス概要でのプライマリ ユーザーの表示 <!--794259  -->
+#### <a name="device-overview-shows-primary-user---3794259----"></a>デバイス概要でのプライマリ ユーザーの表示 <!--3794259  -->
 デバイスの概要ページに、ユーザーとデバイスのアフィニティ ユーザー (UDA) とも呼ばれるプライマリ ユーザーが表示されます。 デバイスのプライマリ ユーザーを表示するには、 **[Intune]**  >  **[デバイス]**  >  **[すべてのデバイス]** を選択し、デバイスを選びます。 プライマリ ユーザーは、 **[概要]** ページの上部近くに表示されます。
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Android エンタープライズ仕事用プロファイル デバイスに関するマネージド Google Play アプリの追加レポート <!-- 4105925  -->
@@ -581,8 +748,8 @@ macOS デバイスで、デバイス構成プロファイルを作成できま�
 
 #### <a name="windows-update-notifications-----3316758-3316782----"></a>Windows Update の通知  <!-- 3316758, 3316782  -->
 Windows Update リングの構成に、Intune コンソール内から管理できる 2 つの*ユーザー エクスペリエンス設定*を追加しました。 次のことができるようになりました。
-- ユーザーが [Windows 更新プログラムの有無をスキャン](windows-update-settings.md#block-user-from-scanning-for-windows-updates)することをブロックまたは許可する。
-- ユーザーが表示できる [Windows Update の通知レベル](windows-update-settings.md#windows-update-notification-level)を管理する。
+- ユーザーが [Windows 更新プログラムの有無をスキャン](windows-update-settings.md)することをブロックまたは許可する。
+- ユーザーが表示できる [Windows Update の通知レベル](windows-update-settings.md)を管理する。
 
 #### <a name="new-device-restriction-settings-for-android-enterprise-device-owner----3574254----"></a>Android エンタープライズのデバイスの所有者に関する新しいデバイス制限の設定 <!-- 3574254  -->
 Android エンタープライズ デバイスでは、機能を許可または制限したり、パスワード規則を設定したりするデバイス制限プロファイルを作成できます ( **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** > プラットフォームに **[Android エンタープライズ]** を選択し、プロファイルの種類に **[デバイスの所有者のみ] > [デバイスの制限]** を選択します)。 
