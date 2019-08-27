@@ -541,7 +541,7 @@
       items:
         - name: Intune アプリの管理とは
           href: app-management.md
-        - name: アプリを追加する
+        - name: アプリの追加に関する概要
           href: apps-add.md
           displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
           items:
@@ -645,7 +645,7 @@
               href: apps-selective-wipe.md
             - name: アプリ保護ポリシーの使用
               items:
-                - name: アプリ保護ポリシーを理解する
+                - name: アプリ保護ポリシーの概要
                   href: app-protection-policy.md
                   displayName: app; protection; policy
                 - name: アプリ保護ポリシーの作成

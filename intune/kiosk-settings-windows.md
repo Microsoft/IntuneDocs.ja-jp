@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fb1111a7f660e8c59f45fb1893364dcadd34dca
-ms.sourcegitcommit: 6a8de7bb4870ea19aa08db1f188ea7b5e8a387dd
+ms.openlocfilehash: e8300e9a4faf29ada79fad2a11e2470b965b53d1
+ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69487744"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69998889"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Intune で Windows 10 以降のデバイスをキオスクとして実行するための設定
 
@@ -97,6 +97,17 @@ Intune での Windows キオスク機能の詳細については、[キオスク
   - **[ストア アプリの追加]** : **[ストア アプリの追加]** を選択し、一覧からアプリを選択します。
 
     アプリが何も表示されない場合は、 [クライアント アプリ](apps-add.md)ごとの手順を使用して追加してください。
+    
+ - **アプリの再起動のためのメンテナンス期間を指定**する: 既定は "未構成" です。インストールを完了するために再起動が必要なアプリを確認するには、[必須] を選択します。
+ 
+     キオスクブラウザーやその他の Microsoft Store for business アプリを使用している場合は、アプリケーションのインストールを完了するために再起動が必要なアプリの更新プログラムを確認する頻度を決定します。 構成されていない場合は、アプリの更新プログラムがインストールされてから3日後に、ビジネス向けアプリの Microsoft Store が予定外に再起動されます。
+     
+     - **メンテナンス期間の開始時刻**: クライアントの再起動が必要な更新プログラムがないかどうかを確認する日付と時刻を選択します。 既定の開始時間は午前 0 時、または 0 分です。
+     
+     - **メンテナンス期間の繰り返し**: 既定値は日単位です。
+         アプリの更新プログラムのメンテナンス期間を設定する頻度を設定します。 スケジュールされていないアプリの再起動を避けるために、毎日の推奨事項があります
+
+  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
 
 ## <a name="multi-app-kiosks"></a>マルチ アプリ キオスク
 
