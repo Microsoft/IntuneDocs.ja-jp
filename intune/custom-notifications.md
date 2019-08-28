@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3a4314abec83bc31cd6fe178873ba5bce7bf1a0c
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: 5a75397222117b8e56cb34947363f8624b89b27b
+ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680097"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70021752"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Intune でカスタム通知を送信する  
 
@@ -51,7 +51,6 @@ Microsoft Intune を使用して、iOS および Android のマネージド デ�
 - グループにはユーザーまたはデバイスを含めることができますが、メッセージはユーザーにのみ送信され、ユーザーが登録した各 iOS または Android のデバイスに送信されます。  
 
 **配信**:  
-- Intune は、通知が送信されてから最大 1 時間、配信を試行します。  
 - Intune は、ユーザーのポータル サイト アプリにメッセージを送信し、その後プッシュ通知を作成します。 通知をデバイスにプッシュするために、ユーザーがアプリにサインインする必要はありません。  
 - Intune とポータル サイト アプリでは、カスタム通知の配信を保証できません。 カスタム通知は数時間の遅延が発生しても表示されることがあるため、緊急メッセージには使用できません。  
 - Intune からのカスタム通知メッセージは、標準のプッシュ通知としてデバイスに表示されます。 通知の受信時にポータル サイト アプリが iOS デバイスで開かれている場合、その通知はプッシュ通知されずにアプリに表示されます。  
