@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/13/2019
+ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26ad26fedc6fe0e44328f5c77fa5f093c1230a28
-ms.sourcegitcommit: 6f84e880411a202c5500eb460779b7ef63a7f430
+ms.openlocfilehash: b7c4cf67c93277ef4b54cdd72a6e06f64dd442e4
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68978503"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70063043"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune でのセキュリティ ベースラインを使用した Windows 10 デバイスの構成
 
@@ -55,7 +55,7 @@ Intune コンソールでは、各ベースラインのタイルに、ベース�
 
 ![ベースラインのタイル](./media/security-baselines/baseline-tile.png)
 
-使用するベースラインのバージョンに関する情報をさらに表示するには、ベースラインのタイルを選択してその *[概要]* ウィンドウを開いてから、**[バージョン]** を選択します。 Intune によって、プロファイルで使用されているそのベースラインのバージョンに関する詳細が表示されます。 [バージョン] ウィンドウでは、1 つのバージョンを選択して、そのバージョンを使用している各プロファイルに関するより詳しい情報を確認できます。 また、2 つの異なるバージョンを選択してから **[Compare baselines]\(ベースラインの比較\)** を選択することで、その相違点が詳しく記載された CSV ファイルをダウンロードできます。  
+使用するベースラインのバージョンに関する情報をさらに表示するには、ベースラインのタイルを選択してその *[概要]* ウィンドウを開いてから、 **[バージョン]** を選択します。 Intune によって、プロファイルで使用されているそのベースラインのバージョンに関する詳細が表示されます。 [バージョン] ウィンドウでは、1 つのバージョンを選択して、そのバージョンを使用している各プロファイルに関するより詳しい情報を確認できます。 また、2 つの異なるバージョンを選択してから **[Compare baselines]\(ベースラインの比較\)** を選択することで、その相違点が詳しく記載された CSV ファイルをダウンロードできます。  
 
 ![ベースラインの比較](./media/security-baselines/compare-baselines.png)
 
@@ -65,6 +65,12 @@ Intune コンソールでは、各ベースラインのタイルに、ベース�
 
 ## <a name="available-security-baselines"></a>使用可能なセキュリティ ベースライン 
 
+ お使いの Intune 環境で、1 つ以上の使用可能なベースラインを同時に使用することができます。 また、同じセキュリティ ベースラインの、カスタマイズが異なる複数のインスタンスを使用することもできます。 
+
+複数のセキュリティ ベースラインを使用するときは、それぞれの設定を確認し、同じ設定に対して異なるベースラインで競合する値が発生する場合を特定します。 異なる目的のために設計された複数のセキュリティ ベースラインを展開したり、同じベースラインのカスタマイズされた設定を含む複数のインスタンスを展開したりすることができます。そのため、[調査して解決する必要のある、デバイスに対して競合した](security-baselines-monitor.md#troubleshoot-using-per-setting-status)構成を作成する可能性があります。  また、[デバイス構成プロファイル](device-profiles.md)にも注意してください。これを使って、セキュリティ ベースラインと同じ設定の多くを構成できます。 
+
+
+
 Intune では、次のセキュリティ ベースラインのインスタンスを使用できます。 リンクを使用して、各ベースラインの最新インスタンスに関する設定を確認してください。 
 
 - **MDM セキュリティ ベースライン**
@@ -72,7 +78,7 @@ Intune では、次のセキュリティ ベースラインのインスタンス
   - [プレビュー:2018 年 10 月の MDM セキュリティ ベースライン](security-baseline-settings-mdm-archive.md)
 
 - **Microsoft Defender ATP ベースライン**  
-  "*(このベースラインを使用するには、ご使用の環境が [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) を使用するための前提条件を満たしている必要があります)*"。
+  " *(このベースラインを使用するには、ご使用の環境が [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) を使用するための前提条件を満たしている必要があります)* "。
   - [プレビュー:Microsoft Defender ATP ベースライン](security-baseline-settings-defender-atp.md)  
 
   > [!NOTE]
@@ -96,12 +102,12 @@ Intune では、次のセキュリティ ベースラインのインスタンス
 
 ### <a name="create-the-profile"></a>プロファイルの作成
 
-1. [[Intune]](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインして、**[デバイス セキュリティ]** > **[セキュリティ ベースライン]** の順に選択し、利用可能なベースラインの一覧を表示します。
+1. [[Intune]](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインして、 **[デバイス セキュリティ]**  >  **[セキュリティ ベースライン]** の順に選択し、利用可能なベースラインの一覧を表示します。
 
 
     ![構成するセキュリティ ベースラインを選択する](./media/security-baselines/available-baselines.png)
 
-2. 使用するベースラインを選択して、**[プロファイルの作成]** を選択します。  
+2. 使用するベースラインを選択して、 **[プロファイルの作成]** を選択します。  
 
 3. **[基本]** タブ上で、次のプロパティを指定します。
 
@@ -119,13 +125,13 @@ Intune では、次のセキュリティ ベースラインのインスタンス
 
     ![グループを展開してそのグループに対する設定を表示する](./media/security-baselines/sample-list-of-settings.png)
 
-5. **[スコープ タグ]** タブで **[スコープ タグを選択]** を選択し、*[タグを選択する]* ウィンドウを開いて、プロファイルにスコープ タグを割り当てます。 
+5. **[スコープ タグ]** タブで **[スコープ タグを選択]** を選択し、 *[タグを選択する]* ウィンドウを開いて、プロファイルにスコープ タグを割り当てます。 
 
 6. **[割り当て]** タブで **[含めるグループを選択]** を選択してから、1 つ以上のグループにベースラインを割り当てます。 **[含めないグループを選択]** を使って割り当てを微調整します。  
 
    ![プロファイルを割り当てる](./media/security-baselines/assignments.png)
   
-7. ベースラインを展開する準備が整ったら、**[確認および作成]** タブに進んでベースラインの詳細を確認します。 **[作成]** を選択して、プロファイルを保存および展開します。  
+7. ベースラインを展開する準備が整ったら、 **[確認および作成]** タブに進んでベースラインの詳細を確認します。 **[作成]** を選択して、プロファイルを保存および展開します。  
 
    作成したプロファイルは、すぐに割り当てられたグループにプッシュされ、おそらく即座に適用されます。
 
@@ -135,7 +141,7 @@ Intune では、次のセキュリティ ベースラインのインスタンス
    ![ベースラインを確認する](./media/security-baselines/review.png) 
 
   
-8. プロファイルを作成した後は、**[デバイス セキュリティ]** > **[セキュリティ ベースライン]** の順に移動して編集を行い、構成したベースラインの種類を選択して、**[プロファイル]** を選択します。 使用可能なプロファイルの一覧からプロファイルを選択し、**[プロパティ]** を選択します。 使用できるすべての構成タブから設定を編集し、**[レビューと保存]** を選択して加えた変更をコミットできます。  
+8. プロファイルを作成した後は、 **[デバイス セキュリティ]**  >  **[セキュリティ ベースライン]** の順に移動して編集を行い、構成したベースラインの種類を選択して、 **[プロファイル]** を選択します。 使用可能なプロファイルの一覧からプロファイルを選択し、 **[プロパティ]** を選択します。 使用できるすべての構成タブから設定を編集し、 **[レビューと保存]** を選択して加えた変更をコミットできます。  
 
 ### <a name="change-the-baseline-version-for-a-profile"></a>プロファイルのベースラインのバージョンを変更する  
 
@@ -154,13 +160,13 @@ Intune では、次のセキュリティ ベースラインのインスタンス
 
 #### <a name="to-change-the-baseline-version-for-a-profile"></a>プロファイルのベースラインのバージョンを変更するには  
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインし、**[デバイス セキュリティ]** > **[セキュリティ ベースライン]** の順に移動してから、変更するプロファイルを含むベースラインの種類のタイルを選択します。  
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインし、 **[デバイス セキュリティ]**  >  **[セキュリティ ベースライン]** の順に移動してから、変更するプロファイルを含むベースラインの種類のタイルを選択します。  
 
-2. 次に、**[プロファイル]** を選択した後、編集するプロファイルのチェック ボックスをオンにして、**[バージョンの変更]** を選択します。  
+2. 次に、 **[プロファイル]** を選択した後、編集するプロファイルのチェック ボックスをオンにして、 **[バージョンの変更]** を選択します。  
 
    ![ベースラインの選択](./media/security-baselines/select-baseline.png)  
 
-3. **[バージョンの変更]** ウィンドウで、**[Select a security baseline to update to]\(更新先のセキュリティ ベースラインを選択する\)** ドロップダウンを使い、使用するバージョンのインスタンスを選択します。  
+3. **[バージョンの変更]** ウィンドウで、 **[Select a security baseline to update to]\(更新先のセキュリティ ベースラインを選択する\)** ドロップダウンを使い、使用するバージョンのインスタンスを選択します。  
 
    ![バージョンの選択](./media/security-baselines/select-instance.png)  
    
@@ -183,7 +189,7 @@ Intune では、次のセキュリティ ベースラインのインスタンス
 
 Intune マネージド デバイスに関するセキュリティのベースラインは、Configuration Manager との共同マネージド デバイスと似ています。 共同マネージド デバイスでは、System Center Configuration Manager と Microsoft Intune を使用して Windows 10 デバイスを同時に管理します。 これにより、既存の Configuration Manager への投資を Intune のメリットへとクラウドで結び付けることができます。 Configuration Manager を使用していて、クラウドのメリットも必要な場合、[共同管理の概要](https://docs.microsoft.com/sccm/comanage/overview)に関するページは優れたリソースです。
 
-共同マネージド デバイスを使用する場合は、**[デバイス構成]** ワークロード (その設定) を Intune に切り替える必要があります。 詳細については、[デバイス構成ワークロード](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration)に関するセクションを参照してください。  
+共同マネージド デバイスを使用する場合は、 **[デバイス構成]** ワークロード (その設定) を Intune に切り替える必要があります。 詳細については、[デバイス構成ワークロード](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration)に関するセクションを参照してください。  
 
 ## <a name="q--a"></a>Q & A
 
