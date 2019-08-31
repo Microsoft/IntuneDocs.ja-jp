@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7baa95d6719dfa3161ae6644bbc9351d3f3d9f0
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: b6daa574b983b4a03346e521c61f267e13c7de1a
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882382"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122354"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>SCEP 用のサード パーティ CA を Intune に追加するための API の使用
 
@@ -304,4 +304,4 @@ void SetSslSocketFactory(
 - [サード パーティ CA の追加の概要](certificate-authority-add-scep-overview.md)
 - [Intune をセットアップする](setup-steps.md)
 - [デバイスの登録](device-enrollment.md)
-- [SCEP 証明書プロファイルの構成](certificates-scep-configure.md#create-a-scep-certificate-profile) (このシナリオでは、Microsoft NDES サーバー\Connector 設定は使用されません)
+- [SCEP 証明書プロファイルの構成](certificates-profile-scep.md) (このシナリオでは、Microsoft NDES サーバー\Connector 設定は使用されません)
