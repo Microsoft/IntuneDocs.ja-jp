@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/16/2019
+ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 267eb630b962893d5ab32530a095fe2fd3f7102e
-ms.sourcegitcommit: cbd406e3c6ab8c9a29d58dfda4a18e34277a1594
+ms.openlocfilehash: 09d80964a417772b1f011478db59398ceede5c5e
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69620213"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122138"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 
@@ -53,6 +53,18 @@ ms.locfileid: "69620213"
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-august-26-2019"></a>2019 年 8 月 26 日の週
+
+### <a name="configure-microsoft-edge-settings-using-administrative-templates-for-windows-10-and-newer----5228061---"></a>Windows 10 以降向けの管理用テンプレートを使用し、Microsoft Edge 設定を構成する <!-- 5228061 -->
+
+Windows 10 以降のデバイスでは、Intune でグループポリシー設定を構成するための管理用テンプレートを作成できます。 この更新プログラムでは、Microsoft Edge バージョン 77 以降に適用される設定を構成できます。
+
+管理用テンプレートの詳細については、[Windows 10 テンプレートを使用し、Intune でグループ ポリシー設定を構成する方法](administrative-templates-windows.md)に関するページを参照してください。
+
+適用対象:
+
+- Windows 10 以降 (Windows RS4 +)
 
 ## <a name="week-of-august-12-2019"></a>2019 年 8 月 12 日の週
 
@@ -1016,8 +1028,8 @@ Intune では、macOS デバイスに対して **ChangeAtNextAuth** 設定を強
 適用対象:  
 macOS
 
-#### <a name="assign-scep-certificates-to-a-userless-macos-device-----2340521----"></a>ユーザーレス macOS デバイスに SCEP 証明書を割り当てる  <!-- 2340521  -->
-ユーザー アフィニティのないデバイスを含む macOS デバイスにデバイス属性を使用して Simple Certificate Enrollment Protocol (SCEP) 証明書を割り当て、その証明書プロファイルを Wi-Fi または VPN プロファイルに関連付けることができます。 これにより既にあるサポートを拡張して、Windows、iOS、Android を実行する[ユーザー アフィニティのあるデバイスまたはユーザー アフィニティのないデバイスに SCEP 証明書を割り当て](certificates-scep-configure.md#create-a-scep-certificate-profile)済みです。  この更新では、macOS の SCEP 証明書プロファイルを構成するときに、 *[デバイス]* という証明書の種類を選択するオプションが追加されています。
+#### <a name="assign-scep-certificates-to-a-userless-macos-device-------2340521------"></a>ユーザーレス macOS デバイスに SCEP 証明書を割り当てる    <!-- 2340521    -->
+ユーザー アフィニティのないデバイスを含む macOS デバイスにデバイス属性を使用して Simple Certificate Enrollment Protocol (SCEP) 証明書を割り当て、その証明書プロファイルを Wi-Fi または VPN プロファイルに関連付けることができます。 これにより既にあるサポートを拡張して、Windows、iOS、Android を実行する[ユーザー アフィニティのあるデバイスまたはユーザー アフィニティのないデバイスに SCEP 証明書を割り当て](certificates-profile-scep.md)済みです。  この更新では、macOS の SCEP 証明書プロファイルを構成するときに、 *[デバイス]* という証明書の種類を選択するオプションが追加されています。
 
 適用対象: 
 - macOS
