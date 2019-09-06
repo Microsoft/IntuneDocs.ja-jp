@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53555a01899cfec15c319e790620b2bfeaa302bc
-ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
+ms.openlocfilehash: 1d545e5848330e8c4f34eca21a992ad05ca8c85d
+ms.sourcegitcommit: ffbd1542d33810ab97a0be8faf26f8061328c228
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590913"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70206401"
 ---
 # <a name="intune-discovered-apps"></a>Intune で検出されたアプリ
 
@@ -62,6 +62,9 @@ Intune では、テナント内の個々のデバイスについて検出され�
 | macOS | デバイスにインストールされているすべてのアプリ | デバイスにインストールされているすべてのアプリ | デバイス登録から 7 日おき |
 | Android | 管理対象アプリのみ | デバイスにインストールされているすべてのアプリ | デバイス登録から 7 日おき |
 | Android エンタープライズ | 管理対象アプリのみ | 仕事用プロファイル内にインストールされているアプリのみ | デバイス登録から 7 日おき |
+
+> [!NOTE]
+>Intune 管理拡張機能を使用する Windows 10 Hybrid Azure AD 参加済みデバイスでは、現在、前述のスケジュールに従ってアプリ インベントリが収集されません。 これは既知の問題です。 この動作に対するすべての変更または更新は、[開発中](in-development.md)や[新機能](whats-new.md)に関するページで発表されます。
 
 検出されたアプリの数が、インストール状態のアプリの数と一致しない場合があります。 一致しないケースとしては次の可能性があります。
 - インストールされている管理対象アプリのターゲットが変更されて、状態ブレードのインストール数が減少したが、検出されたアプリについてそのまま報告されることがあります。

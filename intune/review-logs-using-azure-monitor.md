@@ -1,11 +1,11 @@
 ---
-title: Microsoft Intune を使用して Azure Monitor で監査ログをルーティングする - Azure | Microsoft Docs
+title: Microsoft Intune を使用して Azure Monitor にログをルーティングする - Azure | Microsoft Docs
 description: '[診断設定] を使用して、Microsoft Intune の監査ログと操作ログを Azure ストレージ アカウント、イベントハブ、または Log Analytics に送信します。 データを保持する期間を選択し、さまざまなサイズのテナントについて見積もりコストを確認します。'
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/18/2019
+ms.date: 08/28/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,16 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d95b37d18fa609f1c4e98d4fad5cfa600333b90a
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: ed32ad564f850c06b37b15e1994ac066a929ffaa
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354526"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122411"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Intune でストレージ、イベントハブ、または Log Analytics にログ データを送信する (プレビュー)
 
-Microsoft Intune には、お客様の環境に関する情報を提供する組み込みのログがあります。 **監査ログ**には、Intune で発生したさまざまなイベントまたはタスクの詳細が表示されます。 **操作ログ (プレビュー)** には、登録に成功した (または失敗した) ユーザーとデバイスの詳細、およびコンプライアンス非対応のデバイスの詳細が表示されます。
+Microsoft Intune には、お客様の環境に関する情報を提供する組み込みのログがあります。
+
+- **監査ログ**には、Intune で発生したさまざまなイベントまたはタスクの詳細が表示されます。
+- **操作ログ (プレビュー)** には、登録に成功した (または失敗した) ユーザーとデバイスの詳細、およびコンプライアンス非対応のデバイスの詳細が表示されます。
+- **デバイス コンプライアンス組織ログ (プレビュー)** には、Intune のデバイス コンプライアンスに関する組織レポート、およびコンプライアンス非準拠のデバイスの詳細が表示されます。
 
 これらのログは、ストレージ アカウント、イベント ハブ、Log Analytics などの Azure Monitor サービスに送信することもできます。 具体的には次のことができます。
 
@@ -35,7 +39,7 @@ Microsoft Intune には、お客様の環境に関する情報を提供する組
 
 このような機能は、Intune の**診断設定**の一部です。
 
-この記事では、 **[診断設定]** を使用してログ データをさまざまなサービスに送信する方法について説明し、例とコストの見積もりを示し、よく寄せられる質問に回答します。
+この記事では、 **[診断設定]** を使用してログ データをさまざまなサービスに送信する方法について説明し、例とコストの見積もりを示し、よく寄せられる質問に回答します。 この機能を有効にすると、選択した Azure Monitor サービスにログがルーティングされます。
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -54,7 +58,7 @@ Microsoft Intune には、お客様の環境に関する情報を提供する組
 ## <a name="send-logs-to-azure-monitor"></a>ログを Azure Monitor に送信する
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[監視]** で **[診断設定]** を選択します。 初めて開いたときに有効にします。
+2. **[監視]** で **[診断設定]** を選択します。 初めて開いたときに有効にします。 それ以外の場合、設定を追加します。
 
     ![Intune の [診断設定] を有効にして、Azure Monitor にログを送信する](media/diagnostics-settings-turn-on.png)
 
@@ -87,7 +91,14 @@ Microsoft Intune には、お客様の環境に関する情報を提供する組
       ストレージ アカウントの使用を選択した場合は、データを保持する日数 (リテンション期間) も入力します。 データを永続的に保持するには、 **[リテンション期間 (日数)]** を `0` (ゼロ) に設定します。
 
       > [!NOTE]
-      > 操作ログはプレビュー段階です。 操作ログに含まれる情報など、フィードバックを提供するには、[UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback) にアクセスしてください (新しい Web サイトが開きます)。
+      > 操作ログはプレビュー段階です。 操作ログに含まれる情報など、フィードバックを提供するには、[UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback) にアクセスしてください。
+
+    - **LOG** > **DeviceComplianceOrg**:デバイス コンプライアンス組織ログ (プレビュー) には、Intune のデバイス コンプライアンスに関する組織レポート、およびコンプライアンス非準拠のデバイスの詳細が表示されます。 コンプライアンス ログをストレージ アカウント、イベント ハブ、または Log Analytics に送信するには、このオプションを選択します。
+
+      ストレージ アカウントの使用を選択した場合は、データを保持する日数 (リテンション期間) も入力します。 データを永続的に保持するには、 **[リテンション期間 (日数)]** を `0` (ゼロ) に設定します。
+ 
+      > [!NOTE]
+      > デバイス コンプライアンス組織ログはプレビューの段階にあります。 レポートに含まれる情報など、フィードバックを提供するには、[UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback) にアクセスしてください。
 
     完了すると、設定は次のようになります。 
 

@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune で Windows 10 デバイス用のテンプレートを使用する - Azure | Microsoft Docs
-description: Microsoft Intune で管理用テンプレートを使用して、Windows 10 デバイスの設定のグループを作成します。 デバイス構成プロファイルでこれらの設定を使用して、Office プログラムの制御、Internet Explorer の機能のセキュリティ保護、OneDrive へのアクセスの制御、リモート デスクトップ機能の使用、自動再生の有効化、電源管理の設定、HTTP 印刷の使用、さまざまなユーザー サインイン オプションの使用、およびイベント ログ サイズの制御を行います。
+description: Microsoft Intune で管理用テンプレートを使用して、Windows 10 デバイスの設定のグループを作成します。 デバイス構成プロファイルでこれらの設定を使用して、Office プログラムや Microsoft Edge の制御、Internet Explorer の機能のセキュリティ保護、OneDrive へのアクセスの制御、リモート デスクトップ機能の使用、自動再生の有効化、電源管理の設定、HTTP 印刷の使用、さまざまなユーザー サインイン オプションの使用、イベント ログ サイズの制御を行います。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/03/2019
+ms.date: 8/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,20 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bfad3feed6daef1930c235bec9c25e809da46c5
-ms.sourcegitcommit: ce9cae824a79223eab3c291fd5d5e377efac84cb
+ms.openlocfilehash: 608f9045d676a756c4ee7440072040075e497605
+ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67842793"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70214338"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10 テンプレートを使用し、Microsoft Intune でグループ ポリシー設定を構成する
 
-組織内でデバイスを管理する際には、さまざまなデバイス グループに適用される設定のグループを作成する必要があります。 たとえば、いくつかのデバイス グループがあるとします。 グループ A には、特定の設定のセットを割り当てます。 グループ B には、別の設定のセットを割り当てます。 また、構成できる設定の単純なビューも必要です。
+組織でデバイスを管理するとき、さまざまなデバイス グループに適用される設定のグループを作成することが推奨されます。 たとえば、いくつかのデバイス グループがあるとします。 グループ A には、特定の設定のセットを割り当てます。 グループ B には、別の設定のセットを割り当てます。 また、構成できる設定の単純なビューも必要です。
 
-このタスクを完了するには、Microsoft Intune で**管理用テンプレート**を使用します。 管理用テンプレートには、Internet Explorer、Microsoft Office プログラム、リモート デスクトップ、OneDrive、パスワードと PIN などの機能を制御するための、数百の設定が含まれています。 グループ管理者は、これらの設定により、クラウドを使ってグループ ポリシーを管理できます。
+このタスクを完了するには、Microsoft Intune で**管理用テンプレート**を使用します。 管理用テンプレートには、Microsoft Edge、Internet Explorer、Microsoft Office プログラム、リモート デスクトップ、OneDrive、パスワードと PIN などの機能を制御するための、数百の設定が含まれています。 グループ管理者は、これらの設定により、クラウドを使ってグループ ポリシーを管理できます。
 
-Windows の設定は、Active Directory (AD) のグループ ポリシー (GPO) 設定に似ています。 これらの設定は、Windows に組み込みの、XML を使用する [ADMX ベースの設定](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (別の Microsoft サイトが開きます) です。 Office の設定には ADMX が取り込まれていて、[Office の管理用テンプレート ファイル](https://www.microsoft.com/download/details.aspx?id=49030)で ADMX 設定が使われています。 しかし、Intune のテンプレートは 100% クラウド ベースです。 これらによって、設定を構成し、必要な設定を見つけるための、簡単で明快な方法が提供されます。
+Windows の設定は、Active Directory (AD) のグループ ポリシー (GPO) 設定に似ています。 これらの設定は、Windows に組み込みの、XML を使用する [ADMX ベースの設定](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) です。 Office の設定には ADMX が取り込まれていて、[Office の管理用テンプレート ファイル](https://www.microsoft.com/download/details.aspx?id=49030)で ADMX 設定が使われています。 しかし、Intune のテンプレートは 100% クラウド ベースです。 これらによって、設定を構成し、必要な設定を見つけるための、簡単で明快な方法が提供されます。
 
 **管理用テンプレート**は Intune 内に構築されており、OMA-URI の使用を含め、カスタマイズを必要としません。 モバイル デバイス管理 (MDM) ソリューションの一部として、これらのテンプレート設定を総合ポータルとして使用し、Windows 10 デバイスを管理します。
 
@@ -38,7 +38,7 @@ Windows の設定は、Active Directory (AD) のグループ ポリシー (GPO) 
 
 - これらの設定の一部は、Windows 10 バージョン 1703 (RS2) 以降で使用可能です。 最適なエクスペリエンスを得るには、Windows 10 Enterprise バージョン 1903 (19H1) 以降を使用することをお勧めします。
 
-- Windows の設定では、[Windows ポリシー CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (別の Microsoft サイトが開きます) が使用されます。 CSP は、Home、Professional、Enterprise など、さまざまなエディションの Windows で動作します。 CSP が特定のエディションで動作するかどうかを確認するには、[Windows ポリシー CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (別の Microsoft サイトが開きます) を参照してください。
+- Windows の設定では、[Windows ポリシー CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) が使用されます。 CSP は、Home、Professional、Enterprise など、さまざまなエディションの Windows で動作します。 CSP が特定のエディションで動作するかどうかを確認するには、[Windows ポリシー CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) に移動してください。
 
 ## <a name="create-a-template"></a>テンプレートを作成する
 
@@ -58,9 +58,16 @@ Windows の設定は、Active Directory (AD) のグループ ポリシー (GPO) 
     > [!TIP]
     > Intune の Windows の設定は、ローカル グループ ポリシー エディター (`gpedit`) に表示されるオンプレミスのグループ ポリシー パスに関連付けられます。
 
-5. 既定では、ドロップダウン リストに **[すべての製品]** が表示されます。 リストから設定をフィルター処理して、**Windows** の設定のみを表示したり、**Office** の設定のみを表示したりすることもできます。
+5. 既定では、ドロップダウン リストに **[すべての製品]** が表示されます。 リストから設定をフィルター処理し、**Windows** の設定のみを表示したり、**Office** の設定のみを表示したり、**Microsoft Edge** の設定のみを表示したりすることもできます。
 
     ![Intune の管理用テンプレートで、リストをフィルター処理して Windows または Office の設定をすべて表示する](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
+
+    > [!NOTE]
+    > Microsoft Edge の設定の適用対象:
+    >
+    > - [KB 4512509](https://support.microsoft.com/kb/4512509) がインストールされた、Windows 10 RS4 以降。
+    > - [KB 4512534](https://support.microsoft.com/kb/4512534) がインストールされた、Windows 10 RS5 以降。
+    > - [KB 4512941](https://support.microsoft.com/kb/4512941) がインストールされた、Windows 10 19H1 以降。
 
 6. 任意の設定を選択します。 たとえば、 **[Office]** でフィルター処理して、 **[参照の制限を有効にする]** を選択します。 設定の詳細説明が表示されます。 **[有効]** 、 **[無効]** を選択するか、または設定を **[未構成]** (既定値) のままにします。 詳細な説明では、 **[有効]** 、 **[無効]** 、または **[未構成]** を選択したときの動作についても説明されています。
 7. **[OK]** を選択して変更を保存します。
@@ -69,9 +76,10 @@ Windows の設定は、Active Directory (AD) のグループ ポリシー (GPO) 
 
 - **[VBA マクロ通知設定]** を使用して、Word や Excel などのさまざまな Microsoft Office プログラムで VBA マクロを処理します。
 - **[ファイルのダウンロードの許可]** 設定を使用して、Internet Explorer からのダウンロードを許可または禁止します。
-- **[コンピューターのスリープ状態の解除時にパスワードを要求する (電源接続時)]** を使用して、デバイスがスリープ モードから回復したときにユーザーにパスワードを求めるよう設定します。
+- **[コンピューターのスリープ状態の解除時にパスワードを要求する (電源接続時)]** を使用し、デバイスがスリープ モードから回復したときにユーザーにパスワードを求めるように設定します。
 - **[未署名の ActiveX コントロールのダウンロード]** 設定を使用して、Internet Explorer からユーザーが未署名の ActiveX コントロールをダウンロードできないようブロックします。
 - **[システムの復元をオフにする]** 設定を使用して、デバイスでユーザーがシステムの復元を実行するのを許可または禁止します。
+- **[Allow importing of favorites]\(お気に入りのインポートを許可する\)** 設定を使用し、別のブラウザーから Microsoft Edge にお気に入りをインポートする行為をユーザーに許可または禁止します。
 - ほかにも多数の設定があります。
 
 ## <a name="find-some-settings"></a>一部の設定を見つける

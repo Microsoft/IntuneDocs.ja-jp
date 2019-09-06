@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3c2b5bc0091544136848bf92fc6cef7524ffa54
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 4893f3484c497ed72352b2bbb229003c2d639107
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354511"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122283"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Intune での iOS デバイスに対するアプリごとの仮想プライベート ネットワーク (VPN) の設定
 
@@ -83,7 +83,7 @@ CA によって発行された VPN サーバーのルート証明書を、Intune
 
 クライアント認証証明書を構成して割り当てるには、次のいずれかの記事を参照してください。
 
-- [Intune で SCEP 証明書を構成して管理する](certificates-scep-configure.md)
+- [Intune を使用して SCEP をサポートするようにインフラストラクチャを構成する](certificates-scep-configure.md)
 - [Intune で PKCS 証明書を構成して管理する](certficates-pfx-configure.md)
 
 クライアント認証用の証明書を必ず構成してください。 これは SCEP 証明書プロファイルで直接設定することができます ( **[拡張キー使用法]** リスト > **[クライアント認証]** )。 PKCS の場合は、証明書機関 (CA) の証明書テンプレートでクライアント認証を設定します。
@@ -107,7 +107,7 @@ VPN プロファイルには、クライアントの資格情報を含む SCEP �
     - **[認証証明書]** :既存の SCEP または PKCS 証明書を選択し、 **[OK]** を選択します。      
     - **[分割トンネリング]** :VPN 接続がアクティブなときに、すべてのトラフィックで VPN トンネルの使用を強制するには、 **[無効]** を選択します。 
 
-      ![アプリごとの VPN プロファイルで、接続、IP アドレスまたは FQDN、認証方法、および Microsoft Intune での分割トンネリングを入力します。](./media/vpn-per-app-create-vpn-profile.png)
+      ![アプリごとの VPN プロファイルで、接続、IP アドレスまたは FQDN、認証方法、Microsoft Intune での分割トンネリングを入力します。](./media/vpn-per-app-create-vpn-profile.png)
 
     その他の設定については、[iOS の VPN 設定](vpn-settings-ios.md)に関するページを参照してください。
 

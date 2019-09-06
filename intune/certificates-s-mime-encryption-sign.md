@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5dba3866df9ce5c779deb18cf13852b3d8af1b8d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 755073af455c1ee63fa52f435a397734d2897b47
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048890"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122223"
 ---
 # <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>Intune で電子メールに署名し、暗号化する S/MIME の概要
 
@@ -80,7 +80,7 @@ S/MIME の署名証明書と暗号化証明書のプロファイルを作成し�
 
 ## <a name="next-steps"></a>次の手順
 
-- [SCEP 証明書を使用する](certificates-scep-configure.md)
+- [証明書に SCEP を使用する](certificates-scep-configure.md)
 - [PKCS 証明書を使用する](certficates-pfx-configure.md)
 - [パートナー CA を使用する](certificate-authority-add-scep-overview.md)
 - [Symantec PKI マネージャー Web サービスから PKCS 証明書を発行する](certificates-symantec-configure.md)
