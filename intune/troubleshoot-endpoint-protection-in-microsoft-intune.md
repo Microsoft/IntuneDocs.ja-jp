@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 08/26/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5159ee595a6699eb457b194162d21038d4667063
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: c76466acb375fe49afefc542606350733970f416
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353344"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302347"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Microsoft Intune のエンドポイント保護の問題と考えられる解決方法
 
@@ -60,20 +60,20 @@ ms.locfileid: "68353344"
 **考えられる解決方法**: これらの機能を有効にします。 ガイダンスについては、以下を参照してください。
 
 - [エンドポイント保護設定を追加する](endpoint-protection-configure.md)
-- [Windows Defender ウイルス対策](device-restrictions-windows-10.md#windows-defender-antivirus)
+- [Windows Defender ウイルス対策](device-restrictions-windows-10.md#microsoft-defender-antivirus)
 - [エンド ユーザー: Windows Defender をオンにし、会社のリソースにアクセスする](/intune-user-help/turn-on-defender-windows)
 
 ### <a name="malware-definitions-out-of-date"></a>マルウェア定義が最新ではない
 
 このメッセージは、デバイスのマルウェア定義の更新が 14 日以上遅れた場合に表示されます。 たとえば、デバイスがインターネットから切断されているか、マルウェア定義が古くなっているかを示すメッセージが表示されることがあります。
 
-**考えられる解決方法:** マルウェア定義が古い場合は、[Windows Defender ウイルス対策](device-restrictions-windows-10.md#windows-defender-antivirus)を使用して定義を更新することができます。
+**考えられる解決方法:** マルウェア定義が古い場合は、[Windows Defender ウイルス対策](device-restrictions-windows-10.md#microsoft-defender-antivirus)を使用して定義を更新することができます。
 
 ### <a name="full-scan-overdue-or-quick-scan-overdue"></a>フル スキャンの期限が過ぎています、またクイック スキャンの期限が過ぎています
 
 フル スキャンまたはクイック スキャンが 14 日間完了していません。 このシナリオは、フル スキャン中にデバイスが再起動した場合に発生する可能性があります。
 
-**考えられる解決方法**: スキャンの期限が過ぎている場合は、1 回限りのスキャンを実行するか、定期的なスキャンのスケジュールを設定することができます。 「[Windows Defender ウイルス対策](device-restrictions-windows-10.md#windows-defender-antivirus)」をご覧ください。
+**考えられる解決方法**: スキャンの期限が過ぎている場合は、1 回限りのスキャンを実行するか、定期的なスキャンのスケジュールを設定することができます。 「[Windows Defender ウイルス対策](device-restrictions-windows-10.md#microsoft-defender-antivirus)」をご覧ください。
 
 ### <a name="another-endpoint-protection-application-running"></a>別のエンドポイント保護アプリケーションが実行されています。
 
