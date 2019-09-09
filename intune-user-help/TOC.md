@@ -4,7 +4,7 @@
 
 ## [企業は Intune でどのような情報を確認できるか](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [パスワードを更新する](password-does-not-meet-it-administrator-requirements.md)
+## [デバイスのパスワード要件](password-does-not-meet-it-administrator-requirements.md)
 
 ## [ポータル サイトにサインインする](sign-in-to-the-company-portal.md)
 
