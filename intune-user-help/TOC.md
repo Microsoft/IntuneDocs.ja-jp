@@ -158,6 +158,7 @@
 
 ## [Intune ポータル サイト Web サイトの使用](using-the-intune-company-portal-website.md)
 ### [アプリの管理](manage-apps-cpweb.md)  
+### [回復キーの取得](get-recovery-key-cpweb.md)
 ### [デバイスのリモート ロック](remote-lock-your-device-cpwebsite.md)  
 ### [デバイス名の変更](rename-your-device-cpwebsite.md)  
 ### [デバイス名の削除](remove-your-device-cpwebsite.md)  
