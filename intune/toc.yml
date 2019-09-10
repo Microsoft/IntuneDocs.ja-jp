@@ -857,8 +857,8 @@
                   href: custom-settings-windows-10.md
             - name: セキュリティ ベースライン
               items:
-                - name: Windows 10 のベースラインの設定
-                  href: security-baseline-settings-mdm.md
+                - name: Windows 10 MDM のベースラインの設定
+                  href: security-baseline-settings-mdm-all.md
                 - name: Microsoft Defender ATP のベースラインの設定
                   href: security-baseline-settings-defender-atp.md
             - name: Windows Update の設定
@@ -1047,10 +1047,6 @@
               href: troubleshoot-software-updates-in-microsoft-intune.md
             - name: Endpoint Protection の一般的なエラー
               href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-        - name: セキュリティ ベースラインのアーカイブ
-          items:
-            - name: アーカイブ済みの MDM セキュリティ ベースライン
-              href: security-baseline-settings-mdm-archive.md
     - name: シナリオの実装ガイド
       items:
         - name: Exchange Online の保護
