@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/13/2019
+ms.date: 08/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,16 +14,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b3fd474e938e2e85a0a08951a9e3f154d980411
-ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
+ms.openlocfilehash: 5c9bad56a8214cd736208526865b5f9c8b23db00
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69998938"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302289"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように Windows 10 (以降) のデバイスを設定する
 
-この記事では、Windows 10 以降のデバイスで制御できるさまざまな設定の一覧を示して説明します。 モバイル デバイス管理 (MDM) ソリューションの一部として、これらの設定を使って、機能の許可または無効化、パスワード規則の設定、ロック画面のカスタマイズ、Windows Defender の使用などを行います。
+この記事では、Windows 10 以降のデバイスで制御できるさまざまな設定の一覧を示して説明します。 モバイル デバイス管理 (MDM) ソリューションの一部として、これらの設定を使って、機能の許可または無効化、パスワード規則の設定、ロック画面のカスタマイズ、Microsoft Defender の使用などを行います。
 
 これらの設定は、Intune でデバイスの構成プロファイルに追加した後、ご使用の Windows 10 デバイスに割り当てたり展開したりします。
 
@@ -79,8 +79,6 @@ ms.locfileid: "69998938"
 
   [ApplicationManagement/LaunchAppAfterLogOn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon)
 
-**[OK]** を選択して変更を保存します。
-
 ## <a name="cellular-and-connectivity"></a>携帯ネットワークと接続性
 
 これらの設定では、[接続ポリシー](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) CSP と[Wi-Fi ポリシー](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi) CSP が使用されます。それには、サポートされる Windows のエディションも示されています。
@@ -114,8 +112,6 @@ ms.locfileid: "69998938"
 
   サービスの一覧の詳細については、[ServicesAllowedList 使用ガイド](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide)を参照してください。
 
-**[OK]** を選択して変更を保存します。
-
 ## <a name="cloud-and-storage"></a>クラウドとストレージ
 
 これらの設定では、[アカウント ポリシー CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts) が使用されます。それには、サポートされる Windows のエディションも示されています。
@@ -124,8 +120,6 @@ ms.locfileid: "69998938"
 - **[Microsoft 以外のアカウント]** : **[ブロック]** にすると、エンドユーザーがユーザー インターフェイスを使用して Microsoft 以外のアカウントを追加できなくなります。 **[未構成]** (既定値) にすると、Microsoft アカウントに関連付けられていない電子メール アカウントのユーザーによる追加が許可されます。
 - **[Microsoft アカウントの設定の同期]** : **[未構成]** (既定値) にすると、Microsoft アカウントに関連付けられたデバイスとアプリの設定のデバイス間での同期が許可されます。 **[ブロック]** にすると、この同期が行われなくなります。
 - **[Microsoft アカウント サインイン アシスタント]** : **[未構成]** (既定値) に設定すると、エンドユーザーが、**Microsoft アカウント サインイン アシスタント** (wlidsvc) サービスの開始と停止を実行できます。 このオペレーティング システム サービスでは、ユーザーが自分の Microsoft アカウントにサインインすることが許可されます。 **[無効にする]** にすると、エンド ユーザーが Microsoft サインイン アシスタント サービス (wlidsvc) を制御できなくなります。
-
-**[OK]** を選択して変更を保存します。
 
 ## <a name="cloud-printer"></a>クラウド プリンター
 
@@ -140,8 +134,6 @@ ms.locfileid: "69998938"
 
 > [!TIP]
 > [Windows Server のハイブリッド クラウド印刷](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview)を設定した後、これらの設定を構成して、Windows デバイスに展開することができます。
-
-**[OK]** を選択して変更を保存します。
 
 ## <a name="control-panel-and-settings"></a>コントロール パネルと設定
 
@@ -165,8 +157,6 @@ ms.locfileid: "69998938"
   - **[プライバシー]** : **[ブロック]** にすると、デバイス上で設定アプリのゲーム領域にアクセスできなくなります。 **[未構成]** (既定値) にすると、アクセスが許可されます。
   - **[更新とセキュリティ]** : **[ブロック]** にすると、デバイス上で設定アプリの更新とセキュリティ領域にアクセスできなくなります。 **[未構成]** (既定値) にすると、アクセスが許可されます。
 
-**[OK]** を選択して変更を保存します。
-
 ## <a name="display"></a>ディスプレイ
 
 これらの設定では、[ディスプレイ ポリシー CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-display) が使用されます。それには、サポートされる Windows のエディションも示されています。
@@ -182,8 +172,6 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
   一覧に含まれるすべてのレガシ アプリケーションで、GDI DPI スケールがオフになります。
 
 アプリの一覧を使用して .csv ファイルを**インポート**することもできます。
-
-**[OK]** を選択して変更を保存します。
 
 ## <a name="general"></a>全般
 
@@ -230,8 +218,6 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 
 - **[タスク マネージャーからのプロセスを終了する]** : この設定により、管理者以外がタスク マネージャーを使用してタスクを終了できるかどうかが決まります。 **[ブロック]** は、標準ユーザー (管理者以外) がタスク マネージャーを使用してデバイス上でプロセスまたはタスクを終了するのを防ぎます。 **[未構成]** (既定値) は、標準ユーザーがタスク マネージャーを使用してプロセスまたはタスクを終了するのを許可します。
 
-**[OK]** を選択して変更を保存します。
-
 ## <a name="locked-screen-experience"></a>ロック画面
 
 - **[アクション センターの通知 (モバイルのみ)]** : **[ブロック]** にすると、デバイスのロック画面にアクション センターの通知が表示されなくなります。 **[未構成]** (既定値) にすると、ユーザーがロック画面に通知を表示するアプリを選択することが許可されます。
@@ -255,8 +241,6 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 
   [DeviceLock/ScreenTimeoutWhileLocked CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-screentimeoutwhilelocked)
 
-**[OK]** を選択して変更を保存します。
-
 ## <a name="messaging"></a>メッセージング
 
 これらの設定では、[メッセージング ポリシー CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-messaging) が使用されます。それには、サポートされる Windows のエディションも示されています。
@@ -264,8 +248,6 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 - **[メッセージ同期 (モバイルのみ)]** : **[ブロック]** にすると、テキスト メッセージのバックアップと復元を実行できなくなり、Windows デバイス間でメッセージが同期されなくなります。 無効にすると、組織の管理外にあるサーバーに情報が格納されるのを回避できます。 **[未構成]** (既定値) にすると、ユーザーがこれらの設定を変更でき、メッセージの同期が許可されます。
 - **[MMS (モバイルのみ)]** : **[ブロック]** にすると、デバイスでの MMS の送受信機能が無効になります。 企業では、このポリシーを使用して、監査または管理要件の一部として、デバイスでの MMS を無効にします。 **[未構成]** (既定値) にすると、MMS の送受信が許可されます。
 - **RCS (モバイルのみ)** : **[ブロック]** にすると、デバイスでのリッチ通信サービス (RCS) の送受信機能が無効になります。 企業では、このポリシーを使用して、監査または管理要件の一部として、デバイスでの RCS を無効にします。 **[未構成]** (既定値) にすると、RCS の送受信が許可されます。
-
-**[OK]** を選択して変更を保存します。
 
 ## <a name="microsoft-edge-browser"></a>Microsoft Edge ブラウザー
 
@@ -327,7 +309,7 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 - **[Message when opening sites in Internet Explorer]\(Internet Explorer でサイトを開くときにメッセージを表示する\)** : この設定を使用すると、Internet Explorer 11 でサイトを開く前に Microsoft Edge で通知を表示するように構成できます。 次のようなオプションがあります。
   - **[メッセージを表示しない]** : OS の既定の動作が使用され、メッセージが表示されない可能性があります。
   - **[サイトが Internet Explorer 11 で開かれているというメッセージを表示する]** : IE でサイトが開いたときに、メッセージが表示されます。 サイトが IE で開きます。 
-  - **[Show message without option to open sites in Microsoft Edge]\(Microsoft Edge でサイトを開くオプションを含まないメッセージを表示する\)** : Edge でサイトを開いたときにメッセージが表示されます。 このメッセージには、 **[Keep going in Microsoft Edge]\(Microsoft Edge で続行する\)** リンクが含まれているため、ユーザーは IE の代わりに Microsoft Edge を選択できます。
+  - **[Show message without option to open sites in Microsoft Edge]\(Microsoft Edge でサイトを開くオプションを含むメッセージを表示する\)** : Microsoft Edge でサイトを開いたときにメッセージが表示されます。 このメッセージには、 **[Keep going in Microsoft Edge]\(Microsoft Edge で続行する\)** リンクが含まれているため、ユーザーは IE の代わりに Microsoft Edge を選択できます。
 
   > [!IMPORTANT]
   > この設定では、 **[エンタープライズ モード サイト一覧の場所]** 設定と **[Internet Explorer にイントラネット トラフィックを送信する]** 設定のいずれか、または両方を使用する必要があります。
@@ -335,8 +317,6 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 - **[Microsoft 互換性リストを許可する]** : **[はい]** (既定値) にすると、Microsoft 互換性リストが使用されます。 **[いいえ]** にすると、Microsoft Edge で Microsoft 互換性リストは使用されなくなります。 Microsoft が提供するこのリストを使用すると、既知の互換性の問題があるサイトを Microsoft Edge で正しく表示できます。
 - **[スタート ページと新しいタブ ページの事前読み込み]** : **[はい]** (既定値) にすると、OS の既定の動作が使用され、これらのページが事前読み込みされる可能性があります。 事前読み込みを行うと、Microsoft Edge の起動時間と新しいタブの読み込み時間が最小限に抑えられます。 **[いいえ]** にすると、Microsoft Edge でスタート ページと新しいタブ ページが事前読み込みされなくなります。
 - **[スタート ページと新しいタブ ページの事前起動]** : **[はい]** (既定値) にすると、OS の既定の動作が使用され、これらのページが事前起動される可能性があります。 事前起動を行うと、Microsoft Edge のパフォーマンスが向上し、Microsoft Edge の起動時間が最小限に抑えられます。 **[いいえ]** にすると、Microsoft Edge でスタート ページと新しいタブ ページが事前起動されなくなります。
-
-**[OK]** を選択して変更を保存します。
 
 ### <a name="favorites-and-search"></a>お気に入りおよび検索
 
@@ -357,8 +337,6 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 - **[検索エンジンへの変更を許可する]** : **[はい]** (既定値) にすると、ユーザーは新しい検索エンジンを追加したり、Microsoft Edge で既定の検索エンジンを変更したりすることができます。 **[いいえ]** を選択すると、ユーザーが検索エンジンをカスタマイズできないようにします。
 
   この設定は、[[通常モード (マルチ アプリ キオスク)]](#use-microsoft-edge-kiosk-mode) を実行しているときにのみ利用できます。
-
-**[OK]** を選択して変更を保存します。
 
 ### <a name="privacy-and-security"></a>プライバシーとセキュリティ
 
@@ -383,8 +361,6 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 - **[ライブ タイル データの収集を許可する]** : **[はい]** (既定値) にすると、Microsoft Edge によって、[スタート] メニューにピン留めされたライブ タイルから情報が収集されます。 **[いいえ]** にすると、この情報の収集ができなくなり、それによってユーザーのエクスペリエンスが制限される場合があります。
 - **[ユーザーが証明書のエラーをオーバーライドできる]** : **[はい]** (既定値) にすると、Secure Sockets Layer/transport Layer Security (SSL/TLS) エラーが発生している Web サイトへのユーザーのアクセスが許可されます。 **[いいえ]** にすると (セキュリティ強化のために推奨)、ユーザーが SSL または TLS エラーが発生している Web サイトにアクセスできなくなります。
 
-**[OK]** を選択して変更を保存します。
-
 ### <a name="additional"></a>Additional
 
 - **[Microsoft Edge ブラウザーを許可する]** (モバイルのみ): **[はい]** (既定値) にすると、モバイル デバイスでの Microsoft Edge Web ブラウザーの使用が許可されます。 **[いいえ]** にすると、デバイスで Microsoft Edge を使用できなくなります。 **[いいえ]** を選択した場合、他の個々の設定はデスクトップにのみ適用されます。
@@ -401,8 +377,6 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 
   パッケージ ファミリ名を含む CSV ファイルを**インポート**することもできます。 または、入力したパッケージ ファミリの名前を**エクスポート**します。
 
-**[OK]** を選択して変更を保存します。
-
 ## <a name="network-proxy"></a>ネットワーク プロキシ
 
 これらの設定では、[NetworkProxy ポリシー CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp) が使用されます。それには、サポートされる Windows のエディションも示されています。
@@ -415,8 +389,6 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
   - **[ポート番号]** : プロキシ サーバーのポート番号を入力します。
   - **[プロキシの例外]** : プロキシ サーバーを使用してはいけない URL を入力します。 各項目の区切りにはセミコロンを使用します。
   - **[ローカル アドレスにはプロキシ サーバーを使わない]** : **[未構成]** (既定値) にすると、イントラネットでローカル アドレスに対してプロキシ サーバーを使用できなくなります。 **[許可]** にすると、ローカル アドレスでプロキシ サーバーが使用されます。
-
-**[OK]** を選択して変更を保存します。
 
 ## <a name="password"></a>パスワード
 
@@ -466,8 +438,6 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 
   [Authentication/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
-**[OK]** を選択して変更を保存します。
-
 ## <a name="per-app-privacy-exceptions"></a>アプリごとのプライバシー例外
 
 "既定のプライバシー" で定義したものと異なるプライバシー動作のアプリを追加できます。
@@ -496,23 +466,17 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 - **[Feedback and diagnostics]\(フィードバックと診断\)** : このアプリが診断情報にアクセスできるかどうかを定義します。
 - **[Sync with devices]\(デバイスとの同期\)** : このアプリが、このデバイスと明示的にペアリングされていないワイヤレス デバイスと自動的に情報を共有し、同期できるかどうかを選択します。
 
-**[OK]** を選択して変更を保存します。
-
 ## <a name="personalization"></a>個人設定
 
 これらの設定では、[個人設定ポリシー CSP](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp) が使用されます。それには、サポートされる Windows のエディションも示されています。
 
 - **[デスクトップの背景画像の URL (デスクトップのみ)]** : Windows デスクトップの壁紙として使用する .jpg、.jpeg、または .png 形式の画像への URL を入力します。 ユーザーはこの画像を変更できません。 たとえば、「`https://contoso.com/logo.png`」と入力します。
 
-**[OK]** を選択して変更を保存します。
-
 ## <a name="printer"></a>プリンター
 
 - **[プリンター]** : 追加されたローカル プリンターの一覧。
 - **[既定のプリンター]** : 既定のプリンターを設定します。
 - **[User access to add new printers]\(新しいプリンターを追加するためのユーザー アクセス権\)** : ローカル プリンターの使用を許可またはブロックします。
-
-**[OK]** を選択して変更を保存します。
 
 ## <a name="privacy"></a>プライバシー
 
@@ -524,8 +488,6 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 - **[Local activities only]\(ローカル アクティビティの場合のみ\)** : **[ブロック]** を選択すると、ローカル アクティビティのみに基づいて、タスク スイッチャーでの共有エクスペリエンスおよび最近使われたリソースの検出が行われなくなります。 **[未構成]** (既定値) にすると、この機能が有効になります。
 
 デバイス上のすべてのアプリがアクセス可能な情報を構成できます。 また、**アプリごとのプライバシー例外**を使用して、アプリごとに例外を定義します。
-
-**[OK]** を選択して変更を保存します。
 
 ### <a name="exceptions"></a>例外
 
@@ -548,8 +510,6 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 - **[Feedback and diagnostics]\(フィードバックと診断\)** : このアプリが診断情報にアクセスできるかどうかを選択します。
 - **[デバイスとの同期]** - このアプリが、この PC、タブレット、または電話と明示的にペアリングされていないワイヤレス デバイスと自動的に情報を共有し、同期できるかどうかを定義します。
 
-**[OK]** を選択して変更を保存します。
-
 ## <a name="projection"></a>プロジェクション
 
 これらの設定では、[WirelessDisplay ポリシー CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wirelessdisplay) が使用されます。それには、サポートされる Windows のエディションも示されています。
@@ -557,8 +517,6 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 - **ワイヤレス ディスプレイ受信者によるユーザー入力**: **[ブロック]** にすると、ワイヤレス ディスプレイ レシーバーからユーザー入力が行われなくなります。 **[未構成]** (既定値) にすると、ワイヤレス ディスプレイによるキーボード、マウス、ペン、およびタッチ入力のソース デバイスへの送信が許可されます。
 - **[この PC へのプロジェクション]** : **[ブロック]** にすると、このデバイスがプロジェクション用として他のデバイスで検出されなくなります。 **[未構成]** (既定値) にすると、デバイスが検出可能になることが許可され、デバイスのロック画面にプロジェクションできます。
 - **[ペアリング用に PIN を要求する]** : プロジェクション デバイスに接続するときに 常に PIN の入力を求めるには、 **[必須]** を選択します。 **[未構成]** (既定値) にすると、デバイスとプロジェクション デバイスのペアリングで PIN は不要になります。
-
-**[OK]** を選択して変更を保存します。
 
 ## <a name="reporting-and-telemetry"></a>レポートと遠隔測定
 
@@ -602,8 +560,6 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
   - **[厳格]** : 成人向けコンテンツに対する最高レベルのフィルター処理。
   - **[Moderate]\(標準\)** : 成人向けコンテンツに対する標準的なフィルター処理。 有効な検索結果はフィルター処理されません。
 - **[Search で Web 結果を表示する]** : When set to **[ブロック]** に設定すると、ユーザーは検索を実行できず、Search に Web 検索の結果は表示されません。 **[未構成]** (既定値) にすると、ユーザーによる Web の検索が許可され、結果がデバイスに表示されます。
-
-**[OK]** を選択して変更を保存します。
 
 ## <a name="start"></a>開始
 
@@ -675,8 +631,6 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
   - **[非表示]** : ショートカットが非表示になり、設定アプリの設定が無効になります。
   - **[表示]** : ショートカットが表示され、設定アプリの設定が無効になります。
 
-**[OK]** を選択して変更を保存します。
-
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
 - **[Microsoft Edge の SmartScreen]** : **[必須]** にすると Windows Defender SmartScreen がオフになり、ユーザーがそれをオンにすることはできなくなります。 **[未構成]** (既定値) にすると、SmartScreen がオンになります。 潜在的な脅威からユーザーを保護するために役立ち、ユーザーがそれをオフにすることはできなくなります。
@@ -693,8 +647,6 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 
   [ブラウザー/PreventSmartScreenPromptOverrideForFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)
 
-**[OK]** を選択して変更を保存します。
-
 ## <a name="windows-spotlight"></a>Windows スポットライト
 
 これらの設定では、[エクスペリエンス ポリシー CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience) が使用されます。それには、サポートされる Windows のエディションも示されています。
@@ -709,38 +661,96 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
   - **[Windows スポットライトのパーソナル化]** : **[ブロック]** にすると、Windows で診断データを使用してカスタマイズされたエクスペリエンスをユーザーに提供することができなくなります。 **[未構成]** (既定値) にすると、Microsoft が診断データを使用して、ユーザーのニーズに対応する パーソナライズされた提案、ヒント、およびWindows 製品を提供することが許可されます。
   - **[Windows へようこそのエクスペリエンス]** : **[ブロック]** にすると、Windows スポットライトの Windows へようこそエクスペリエンス機能がオフになります。 Windows とそのアプリに対する更新や変更があるときに、Windows へようこそエクスペリエンスが表示されることはありません。 **[未構成]** (既定値) では、新機能や更新機能に関する情報をユーザーに表示する Windows へようこそエクスペリエンスが許可されます。
 
-**[OK]** を選択して変更を保存します。
-
-## <a name="windows-defender-antivirus"></a>Windows Defender ウイルス対策
+## <a name="microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策
 
 これらの設定では、[Defender ポリシー CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) が使用されます。それには、サポートされる Windows のエディションも示されています。
 
-- **[リアルタイム監視]** : **[有効]** にすると、マルウェアやスパイウェアなど、望ましくないソフトウェアについてのリアルタイム スキャンを実行できなくなります。 **[未構成]** (既定値) にすると、この機能が許可されます。
-- **[動作の監視]** : **[有効]** にすると、デバイス上で特定の既知のパターンで行われる疑わしい動作の Defender によるチェックを実行できなくなります。 **[未構成]** (既定値) にすると、Windows Defender による動作の監視が許可されます。
-- **[Network Inspection System (NIS)]\(ネットワーク検査システム (NIS)\)** : NIS は、ネットワークベースのエクスプロイトからデバイスを守るために役立ちます。 Microsoft Endpoint Protection Center にある既知の脆弱性の署名を使用して、悪意のあるトラフィックを検出してブロックします。
-- **[Scan all downloads]\(すべてのダウンロードをスキャンする\)** : インターネットからダウンロードされたすべてのファイルを Defender でスキャンするかどうかを制御します。
-- **[Microsoft Web ブラウザーに読み込まれたスクリプトをスキャンする]** : **[未構成]** (既定値) にすると、Internet Explorer で使用されるスクリプトを Defender でスキャンできるようになります。 **[有効]** にすると、このスキャンを実行できなくなります。
-- **[Defender へのエンドユーザー アクセス]** : **[ブロック]** にすると、Windows Defender ユーザー インターフェイスがエンド ユーザーに対して非表示になります。 Windows Defender のすべての通知も表示されなくなります。 **[未構成]** (既定値) にすると、ユーザーによる Windows Defender UI へのアクセスが許可されます。 この設定の変更は、エンド ユーザーの PC が次に再起動されたときに有効になります。
-- **[署名更新間隔 (時単位)]** : 新しいシグネチャ ファイルを Defender でチェックする間隔を入力します (0 - 24)。 次のようなオプションがあります。
+- **[リアルタイム監視]** : **[有効]** にすると、マルウェアやスパイウェアなど、望ましくないソフトウェアについてのリアルタイム スキャンがオフになります。 **[未構成]** (既定値) にすると、この機能が許可されます。
 
-  - **[未構成]** (既定値)
-  - **[チェックしない]** : Defender で新しいシグネチャ ファイルのチェックを行いません。
+  [Defender/AllowRealtimeMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
+
+- **[動作の監視]** : **[有効]** にすると、デバイス上で特定の既知のパターンで行われる疑わしい動作の Defender によるチェックがオフになります。 **[未構成]** (既定値) にすると、Windows Defender による動作の監視が許可されます。
+
+  [Defender/Allowの監視 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
+
+- **[Network Inspection System (NIS)]\(ネットワーク検査システム (NIS)\)** : NIS は、ネットワークベースのエクスプロイトからデバイスを守るために役立ちます。 Microsoft Endpoint Protection Center にある既知の脆弱性の署名を使用して、悪意のあるトラフィックを検出してブロックします。
+
+  **[未構成]** (既定) の場合、この機能が無効になります。 ユーザーは、既知の脆弱性への接続をブロックされていません。 **[有効]** に設定すると、ネットワーク保護とネットワークブロックが有効になり、ユーザーはオフにできなくなります。 ユーザーは、既知の脆弱性への接続をブロックされます。
+
+  [Defender/EnableNetworkProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+
+- **すべてのダウンロードをスキャン**する: 未構成 (既定) は、インターネットからダウンロード**さ**れたすべてのファイルをスキャンします。 **[有効]** に設定すると、この機能は無効になります。 そのため、Defender はダウンロードされたすべてのインターネットファイルをスキャンしません。
+
+  [Defender/割り当てる Wioavprotection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
+
+- **[Microsoft Web ブラウザーに読み込まれたスクリプトをスキャンする]** : **[未構成]** (既定値) にすると、Internet Explorer で使用されるスクリプトを Defender でスキャンできるようになります。 **[有効]** にすると、このスキャンを実行できなくなります。
+
+  [Defender/AllowScriptScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
+
+- **[Defender へのエンドユーザー アクセス]** : **[ブロック]** にすると、Windows Defender ユーザー インターフェイスがエンド ユーザーに対して非表示になります。 Windows Defender のすべての通知も表示されなくなります。 **[未構成]** (既定値) にすると、ユーザーによる Windows Defender UI へのアクセスが許可されます。 この設定の変更は、エンド ユーザーの PC が次に再起動されたときに有効になります。
+
+  [Defender/AllowUserUIAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
+
+- **[セキュリティインテリジェンス更新間隔 (時間)** ]: 0-24 から、Defender が新しいセキュリティインテリジェンスを確認する間隔を入力します。 次のようなオプションがあります。
+
+  - **未構成**(既定値): 8 時間ごとに更新プログラムを確認します。
+  - **確認**しない: Defender は新しいセキュリティインテリジェンスの更新を確認しません。
   - **[1 - 24]** : `1` は 1 時間ごとにチェックし、 `2` は 2 時間ごとにチェックし、`24` は毎日チェックします。以下同様です。
-- **[Monitor file and program activity]\(ファイルとプログラムのアクティビティを監視する\)** : デバイス上のファイルとプログラムのアクティビティの監視を Defender に許可します。
-- **[検疫済みマルウェアを削除するまでの日数]** : 入力した日数の間、解決済みマルウェアを追跡し続けることで、以前に影響を受けたデバイスを手動でチェックできるようにします。 日数を **0** に設定すると、マルウェアは検疫フォルダーに残り、自動的に削除されなくなります。 `90` に設定すると、検疫項目がシステム上に 90 日間保存された後で削除されます。
-- **[スキャン中の CPU 使用率の制限]** : スキャンに使用できる CPU の使用率を制限します (**1** から **100** まで)。
-- **[アーカイブ ファイルをスキャンする]** : **[有効]** にすると、Zip ファイルや Cab ファイルなどのアーカイブ済みのファイルの Defender でのスキャンを実行できなくなります。 **[未構成]** (既定値) にすると、このスキャンが許可されます。
+  
+  [Defender/SignatureUpdateInterval CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval)
+  
+- **[Monitor file and program activity]\(ファイルとプログラムのアクティビティを監視する\)** : デバイス上のファイルとプログラムのアクティビティの監視を Defender に許可します。 次のようなオプションがあります。
+
+  - **未構成**(既定): すべてのファイルを監視します。
+  - **監視が無効**
+  - **すべてのファイルを監視**
+  - **受信ファイルのみを監視**
+  - **送信ファイルのみを監視**
+
+  [Defender/RealTimeScanDirection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)
+
+- **[検疫済みマルウェアを削除するまでの日数]** : 入力した日数の間、解決済みマルウェアを追跡し続けることで、以前に影響を受けたデバイスを手動でチェックできるようにします。 日数を `0` に設定すると、マルウェアは検疫フォルダーに残り、自動的に削除されなくなります。 `90` に設定すると、検疫項目がシステム上に 90 日間保存された後で削除されます。
+
+  [Defender/Daystoret/マルウェア CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
+
+- **[スキャン中の CPU 使用率の制限]** : スキャンに使用できる CPU の使用率を制限します (`0` から `100` まで)。
+- **アーカイブファイル**をスキャン**する: 有効にする**と、Defender は Zip や Cab ファイルなどのアーカイブファイルのスキャンを無効にします。 **[未構成]** (既定値) にすると、このスキャンが許可されます。
+
+  [Defender/Allowアーカイブ/分割 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
+
 - **[受信メール メッセージをスキャンする]** : **[有効]** にすると、デバイスに届いた電子メール メッセージを Defender で直ちにスキャンできるようにします。 **[未構成]** (既定値) にすると、この機能を使用できなくなります。
+
+  [Defender/AllowEmailScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
+
 - **[フル スキャン中に、リムーバブル ドライブをスキャンする]** : **[有効]** にすると、リムーバブル ドライブの完全スキャンが行われなくなります。 **[未構成]** (既定値) にすると、Defender で USB スティックなどのリムーバブル ドライブをスキャンできます。
+
+  クイックスキャン中に、リムーバブルドライブがスキャンされる場合があります。
+
+  [Defender/AllowFullScanRemovableDriveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
+
 - **[フル スキャン中に、マップされたネットワーク ドライブをスキャンする]** : **[有効]** にすると、マップ済みネットワーク ドライブ上のファイルを Defender でスキャンできます。 **[未構成]** (既定値) にすると、完全スキャンが行われなくなります。 ドライブ上のファイルが読み取り専用である場合、Defender では、検出したマルウェアを一切削除できません。
+
+  クイックスキャン中に、マップされたネットワークドライブが引き続きスキャンされる場合があります。
+
+  [Defender/AllowFullScanOnMappedNetworkDrives CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
+
 - **[ネットワーク フォルダーから開いたファイルをスキャンする]** : **[未構成]** (既定値) にすると、共有ネットワーク ドライブ上のファイルを Defender でスキャンできます (UNC パスからアクセスされたファイルなど)。 **[有効]** にすると、このスキャンを実行できなくなります。 ドライブ上のファイルが読み取り専用である場合、Defender では、検出したマルウェアを一切削除できません。
+
+  [Defender/AllowScanningNetworkFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
+
 - **[クラウド保護]** : **[未構成]** (既定値) にすると、Microsoft Active Protection Service で管理対象のデバイスからのマルウェア アクティビティに関する情報の受信が許可されます。 **[有効]** にすると、この機能がブロックされます。
+
+  [Defender/AllowCloudProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
+
 - **[Prompt users before sample submission]\(サンプルを送信する前にユーザーに確認メッセージを表示する\)** : 悪意の有無を判断するために詳しい分析が必要なファイルを Microsoft に自動的に送信するかどうかを制御します。 次のようなオプションがあります。
-  - **未構成**
+
+  - **未構成**(既定値): 安全なサンプルを自動的に送信します。
   - **[常に確認する]**
   - **[個人データを送信する前に確認メッセージを表示する]**
   - **[データを送信しない]**
   - **[確認メッセージを表示せずにすべてのデータを送信する]** : データは自動的に送信されます。
+
+  [Defender/SubmitSamplesConsent CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent)
 
 - **[毎日のクイック スキャンを実行する時刻]** : 毎日のクイック スキャンを実行する時間を選びます。 **[未構成]** では毎日のスキャンは実行されません。 さらにカスタマイズが必要な場合は、 **[実行するシステム スキャンの種類]** の設定を構成します。
 
@@ -756,12 +766,16 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
     - **[スケジュールされた日]** : スキャンを実行する日を選びます。
     - **[スケジュールされた時間]** : スキャンを実行する時間を選びます。
 
-  この設定は、 **[毎日のクイック スキャンを実行する時刻]** の設定と競合する可能性があります。 いくつかの推奨設定:
-
-  - 毎日のクイック スキャンを実行するには、 **[毎日のクイック スキャンを実行する時刻]** の設定を構成します。
-  - クイック スキャンを毎日実行し、フル スキャンを毎週実行するには、 **[毎日のクイック スキャンを実行する時刻]** を構成します。 **[実行するシステム スキャンの種類]** に、フル スキャンと日付時刻を設定します。
-  - **[実行するシステム スキャンの種類]** を **[クイック スキャン]** に設定して、同時に **[毎日のクイック スキャンを実行する時刻]** の設定を構成しないでください。 これらの設定は競合する場合があり、スキャンが実行されない可能性があります。
-  - 毎週火曜日の午前 6 時にクイック スキャンを実行するには、 **[実行するシステム スキャンの種類]** の設定を構成します。
+  > [!TIP]
+  > この設定は、 **[毎日のクイック スキャンを実行する時刻]** の設定と競合する可能性があります。 いくつかの推奨設定:  
+  >
+  > - 毎日のクイックスキャンと毎週のフルスキャンをスケジュールするには、次のようにします。
+  >   1. 毎日の**クイックスキャン設定を実行する時間を**構成します。
+  >   2. フルスキャンを実行するために**実行するシステムスキャンの種類**を構成します。
+  > 
+  > - 1日に1回だけクイックスキャンを実行する (フルスキャンなし) 場合は、[次の設定] を使用して、**毎日のクイックスキャンを実行**するか、**システムスキャンの種類**を選択して実行します。 たとえば、毎週火曜日の午前 6 時にクイック スキャンを実行するには、 **[実行するシステム スキャンの種類]** の設定を構成します。
+  > 
+  > - **[実行するシステム スキャンの種類]** を **[クイック スキャン]** に設定して、同時に **[毎日のクイック スキャンを実行する時刻]** の設定を構成しないでください。 これらの設定は競合する場合があり、スキャンが実行されない可能性があります。
 
   [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
@@ -774,7 +788,10 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 
   望ましくない可能性のあるアプリの詳細については、「[Detect and block potentially unwanted applications (望ましくない可能性があるアプリケーションの検出とブロック)](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus)」をご覧ください。
 
-- **[検出されたマルウェアの脅威に対するアクション]** : Defender で、検出した脅威のレベル (低、中、高、重大) ごとに実行したいアクションを選択します。 それを実行できない場合、Windows Defender では、確実に脅威を取り除くための最善のオプションが選択されます。 次のようなオプションがあります。
+  [Defender/PUAProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
+
+- **検出されたマルウェアの脅威に対する操作**: マルウェアのスレッドを処理する方法を選択します。 **未構成**(既定) Microsoft Defender で最適なオプションを選択できます。 **[有効]** に設定した場合は、検出された脅威レベルごとに Defender によって実行されるアクションを選択します: 低、中、高、重大。 次のようなオプションがあります。
+  
   - **消去**
   - **検疫**
   - **削除**
@@ -782,15 +799,15 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
   - **ユーザー定義**
   - **ブロック**
 
-**[OK]** を選択して変更を保存します。
+  操作ができない場合、Windows Defender は、脅威が修復されるように最適なオプションを選択します。 
+
+  [Defender/ThreatSeverityDefaultAction CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
 ### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender ウイルス対策の除外
 
 - **[Files and folders to exclude from scans and real-time protection]\(スキャンおよびリアルタイム保護から除外するファイルとフォルダー\)** : **C:\Path** や **%ProgramFiles%\Path\filename.exe** などのファイルやフォルダーを、除外リストに 1 つ以上追加します。 これらのファイルとフォルダーは、リアルタイムまたはスケジュールされたスキャンの対象外となります。
 - **[File extensions to exclude from scans and real-time protection]\(スキャンおよびリアルタイム保護から除外するファイル拡張子\)** : **jpg** や **txt** などのファイル拡張子を除外リストに 1 つ以上追加します。 これらの拡張子が付いたファイルは、リアルタイム スキャンやスケジュールされたスキャンの対象外です。
 - **[Processes to exclude from scans and real-time protection]\(スキャンとリアルタイム保護から除外するプロセス\)** : **.exe**、 **.com**、 **.scr** などの種類のプロセスを除外リストに 1 つ以上追加します。 これらのプロセスは、リアルタイム スキャンやスケジュールされたスキャンの対象外です。
-
-**[OK]** を選択して変更を保存します。
 
 ## <a name="next-steps"></a>次の手順
 
