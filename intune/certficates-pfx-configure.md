@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bf4559d03f7dfc8ec8c48242defa391b4b49e41a
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 25beef7e6593865b92e349163768ded5ce3b9e2d
+ms.sourcegitcommit: 5bb46d3c0bf8c5595132c4200849b1c4bcfe7cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122399"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70376931"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune で PKCS 証明書を構成して使用する
 
@@ -73,7 +73,7 @@ Intune で PKCS 証明書を使用するには、次のインフラストラク�
   - インポートした PFX Certificate Connector for Microsoft Intune をサーバーにインストールします。  
   - 重要な更新プログラムを自動的に受け取るには、確実にファイアウォールがオープンになっていることを確認し、コネクタがポート **443** で **autoupdate.msappproxy.net** にコンタクトできるようにします。   
 
-  コネクタがアクセスできるようにする必要があるすべてのネットワーク エンドポイントについて詳しくは、「[Microsoft Intune Certificate Connector](intune-endpoints.md#microsoft-intune-certificate-connector)」をご覧ください。
+  コネクタがアクセスできるようにする必要があるすべてのネットワーク エンドポイントについて詳しくは、「[Microsoft Intune Certificate Connector](intune-endpoints.md)」をご覧ください。
 
 - **Windows Server**:  
   Windows Server をホストに使用します。
