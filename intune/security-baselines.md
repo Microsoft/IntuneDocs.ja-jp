@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7c4cf67c93277ef4b54cdd72a6e06f64dd442e4
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: 6b1b489bbc62e4f47847ad599debcecfc27e1918
+ms.sourcegitcommit: 393953dd2a15aff68b246d3633b47566dd43f7cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70063043"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70815458"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune でのセキュリティ ベースラインを使用した Windows 10 デバイスの構成
 
@@ -74,8 +74,8 @@ Intune コンソールでは、各ベースラインのタイルに、ベース�
 Intune では、次のセキュリティ ベースラインのインスタンスを使用できます。 リンクを使用して、各ベースラインの最新インスタンスに関する設定を確認してください。 
 
 - **MDM セキュリティ ベースライン**
-  - [2019 年 5 月の MDM セキュリティ ベースライン](security-baseline-settings-mdm.md)
-  - [プレビュー:2018 年 10 月の MDM セキュリティ ベースライン](security-baseline-settings-mdm-archive.md)
+  - [2019 年 5 月の MDM セキュリティ ベースライン](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)
+  - [プレビュー:2018 年 10 月の MDM セキュリティ ベースライン](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-preview)
 
 - **Microsoft Defender ATP ベースライン**  
   " *(このベースラインを使用するには、ご使用の環境が [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) を使用するための前提条件を満たしている必要があります)* "。
@@ -215,7 +215,7 @@ Microsoft セキュリティ チームは、これらの推奨事項を作成す
 
 ## <a name="next-steps"></a>次の手順
 - 利用可能なベースラインの最新バージョンの設定を確認します。  
-  - [MDM セキュリティ ベースライン](security-baseline-settings-mdm.md)  
+  - [MDM セキュリティ ベースライン](security-baseline-settings-mdm-all.md)  
   - [Microsoft Defender ATP ベースライン](security-baseline-settings-defender-atp.md)  
 
 - 状態を確認し、[ベースラインとプロファイル](security-baselines-monitor.md)を監視します
