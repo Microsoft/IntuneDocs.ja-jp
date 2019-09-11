@@ -546,10 +546,11 @@
         - name: Intune アプリの管理とは
           href: app-management.md
           displayName: mam-we
-        - name: アプリの追加に関する概要
-          href: apps-add.md
-          displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
+        - name: アプリを追加する
           items:
+            - name: アプリの追加に関する概要
+              href: apps-add.md
+              displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
             - name: 保護されている Intune アプリ
               href: apps-supported-intune-apps.md
             - name: ストア アプリ
@@ -561,9 +562,10 @@
                 - name: Windows Phone 8.1 ストア アプリ
                   href: store-apps-windows-phone-8-1.md
                 - name: Microsoft ストア アプリ
-                  href: store-apps-windows.md
                   items:
-                    - name: ポータル サイト アプリを手動で追加する
+                    - name: Windows アプリ
+                      href: store-apps-windows.md
+                    - name: ポータル サイト アプリ
                       href: store-apps-company-portal-app.md
                 - name: 管理対象の Google Play アプリ
                   href: apps-add-android-for-work.md
@@ -571,10 +573,13 @@
                   href: apps-add-office365.md
                 - name: macOS 用の Office 365 アプリ
                   href: apps-add-office365-macos.md
+            - name: Web アプリ
+              href: web-app.md
+              displayName: web; web link; weblink; web-link
+            - name: 組み込みアプリ
+              href: apps-add-built-in.md
             - name: アプリ (LOB) のビルド
               items:
-                - name: Win32 アプリの管理
-                  href: apps-win32-app-management.md
                 - name: Android LOB アプリ
                   href: lob-apps-android.md
                 - name: iOS LOB アプリ
@@ -587,11 +592,8 @@
                   href: app-sideload-windows.md
                 - name: macOS LOB アプリ
                   href: lob-apps-macos.md
-            - name: Web アプリ
-              href: web-app.md
-              displayName: web; web link; weblink; web-link
-            - name: 組み込みアプリ
-              href: apps-add-built-in.md
+            - name: Win32 アプリの管理
+              href: apps-win32-app-management.md
             - name: Powershell スクリプト
               href: intune-management-extension.md
         - name: アプリを割り当てる
@@ -849,7 +851,7 @@
                   href: vpn-settings-windows-10.md
                 - name: Wi-Fi
                   href: wi-fi-settings-windows.md
-                - name: 教育
+                - name: セキュリティで保護された評価
                   href: education-settings-windows.md
                 - name: 共有のマルチ ユーザー デバイス
                   href: shared-user-device-settings-windows.md
