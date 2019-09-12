@@ -5,9 +5,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,19 +15,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f13e00abad5b48dcd7996cf9df1cc5756f250d3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 30910de4ae17aa3fde573155bde4643e2c3d67f7
+ms.sourcegitcommit: 1925eba3fb0b30592f07a924119e20b661588d12
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57388108"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70808630"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>デバイスを Intune と同期して最新のポリシーとアクションを取得する
 
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-デバイスの**同期**のアクションは、選択したデバイスの Intune との即座の同期を強制的に実行します。 チェックインしたデバイスには、それに対して保留中のアクションまたはポリシーが即座に割り当てられます。 この機能により、次のスケジュールされたチェックインを待たずに、割り当てられたポリシーの検証およびトラブルシューティングを即座に実行できるようになります。
+デバイスの**同期**のアクションは、選択したデバイスの Intune との即座の同期を強制的に実行します。 チェックインしたデバイスには、それに対して保留中のアクションまたはポリシーが即座に割り当てられます。 この機能により、次のスケジュールされたチェックインを待たずに、割り当てられたポリシーの検証およびトラブルシューティングを即座に実行できるようになります。
 
 ## <a name="supported-platforms"></a>サポートされているプラットフォーム
 
@@ -40,15 +37,14 @@ ms.locfileid: "57388108"
 
 ## <a name="sync-a-device"></a>デバイスを同期する
 
-1. [Azure ポータル](https://portal.azure.com)にサインインします。
-2. **[すべてのサービス]** を選択し、 **[Intune]** をフィルターとして適用し、 **[Microsoft Intune]** を選択します。 
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。 
 3. **Intune** で、 **[デバイス]**  >  **[すべてのデバイス]** の順に選択します。
-4. 管理するデバイスの一覧で、デバイスを選択して、 **[詳細]** 、 **[同期]** の順に選択します。
+4. 管理するデバイスの一覧で、デバイスを選択して *[概要]* ウィンドウを開いた後、 **[同期]** を選択します。
 5. 確定するには、 **[はい]** を選択します。
 
 同期操作の状態を表示するには、 **[デバイス]**  >  **[デバイス アクション]** の順に選択します。
 
-標準的な Intune ポリシーのチェックイン頻度は、[サイクル時間の更新](device-profiles.md)で確認することができます。
+標準的な Intune ポリシーのチェックイン頻度は、[サイクル時間の更新](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)で確認することができます。
 
 ## <a name="retryable-error-codes"></a>再試行可能なエラー コード
 

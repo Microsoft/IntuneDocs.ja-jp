@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09d80964a417772b1f011478db59398ceede5c5e
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 48474ca9fcfafcd050b7ef9c5a64adb56388b9a4
+ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70122138"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70842144"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 
@@ -53,6 +53,25 @@ ms.locfileid: "70122138"
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-september-9-2019"></a>2019 年 9 月 9 日の週
+
+### <a name="app-management"></a>アプリ管理
+
+#### <a name="updates-to-microsoft-intune-app----4997846---"></a>Microsoft Intune アプリに対する更新 <!-- 4997846 -->
+次の機能強化によって Android 用の Microsoft Intune アプリが更新されています。
+- 最も重要な操作のための下部ナビゲーションが含まれるように、レイアウトの更新と強化が行われました。
+- ユーザーのプロファイルを表示するページが追加されました。
+- ユーザーがアクション可能な通知 (例: デバイス設定の更新が必要) の表示がアプリに追加されました。
+- カスタム プッシュ通知の表示がサポートされるようになり、iOS と Android 用のポータル サイト アプリに最近追加されたサポートと連携します。 詳細は、「[Intune でカスタム通知を送信する](custom-notifications.md)」を参照してください。
+
+## <a name="week-of-september-2-2019"></a>2019 年 9 月 2 日の週
+
+### <a name="monitor-and-troubleshoot"></a>監視とトラブルシューティング
+
+#### <a name="intune-user-interface-update--tenant-status-dashboard-----5273210----"></a>Intune ユーザー インターフェイスの更新 – テナントの状態ダッシュボード  <!-- 5273210  -->
+テナントの状態ダッシュボード用のユーザー インターフェイスが、Azure ユーザー インターフェイスの形式に準拠するように更新されました。 詳しくは、[テナントの状態](tenant-status.md)に関する記事をご覧ください。
+
 
 ## <a name="week-of-august-26-2019"></a>2019 年 8 月 26 日の週
 
@@ -185,7 +204,7 @@ Intune では、Windows Defender ウィルス対策を使用するポリシー�
 
 この更新プログラムでは、この動作は変更されています。 そのため、 **[Time to perform a daily quick scan]\(毎日のクイック スキャンを実行する時刻\)** と **[Type of system scan to perform]\(実行するシステム スキャンの種類\)** の設定には、スキャンが正常に終了した場合には成功ステータスが表示され、設定の適用に失敗した場合には失敗のステータスが表示されます。 
 
-Windows Defender ウイルス対策の設定の詳細については、[Intune を使用して機能を許可または制限する Windows 10 (以降) のデバイス設定](device-restrictions-windows-10.md#windows-defender-antivirus)に関するページを参照してください。 
+Windows Defender ウイルス対策の設定の詳細については、[Intune を使用して機能を許可または制限する Windows 10 (以降) のデバイス設定](device-restrictions-windows-10.md#microsoft-defender-antivirus)に関するページを参照してください。 
 
 ### <a name="device-enrollment"></a>デバイスの登録
 

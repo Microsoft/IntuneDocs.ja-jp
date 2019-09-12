@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/28/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,20 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 608f9045d676a756c4ee7440072040075e497605
-ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
+ms.openlocfilehash: c474ac2eccf90e829abe753c82d40bdfae9146ec
+ms.sourcegitcommit: 5bb46d3c0bf8c5595132c4200849b1c4bcfe7cdb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214338"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70376922"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10 テンプレートを使用し、Microsoft Intune でグループ ポリシー設定を構成する
 
 組織でデバイスを管理するとき、さまざまなデバイス グループに適用される設定のグループを作成することが推奨されます。 たとえば、いくつかのデバイス グループがあるとします。 グループ A には、特定の設定のセットを割り当てます。 グループ B には、別の設定のセットを割り当てます。 また、構成できる設定の単純なビューも必要です。
 
-このタスクを完了するには、Microsoft Intune で**管理用テンプレート**を使用します。 管理用テンプレートには、Microsoft Edge、Internet Explorer、Microsoft Office プログラム、リモート デスクトップ、OneDrive、パスワードと PIN などの機能を制御するための、数百の設定が含まれています。 グループ管理者は、これらの設定により、クラウドを使ってグループ ポリシーを管理できます。
+このタスクを完了するには、Microsoft Intune で**管理用テンプレート**を使用します。 管理用テンプレートには、Microsoft Edge バージョン 77 以降、Internet Explorer、Microsoft Office プログラム、リモート デスクトップ、OneDrive、パスワードと PIN などの機能を制御するための、数百の設定が含まれています。 グループ管理者は、これらの設定により、クラウドを使ってグループ ポリシーを管理できます。
 
-Windows の設定は、Active Directory (AD) のグループ ポリシー (GPO) 設定に似ています。 これらの設定は、Windows に組み込みの、XML を使用する [ADMX ベースの設定](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) です。 Office の設定には ADMX が取り込まれていて、[Office の管理用テンプレート ファイル](https://www.microsoft.com/download/details.aspx?id=49030)で ADMX 設定が使われています。 しかし、Intune のテンプレートは 100% クラウド ベースです。 これらによって、設定を構成し、必要な設定を見つけるための、簡単で明快な方法が提供されます。
+Windows の設定は、Active Directory (AD) のグループ ポリシー (GPO) 設定に似ています。 これらの設定は、Windows に組み込みの、XML を使用する [ADMX ベースの設定](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) です。 Office と Microsoft Edge の設定には ADMX が取り込まれていて、[Office の管理用テンプレート ファイル](https://www.microsoft.com/download/details.aspx?id=49030)と [Microsoft Edge 管理用テンプレート ファイル](https://www.microsoftedgeinsider.com/enterprise)で ADMX 設定が使われています。 しかし、Intune のテンプレートは 100% クラウド ベースです。 これらによって、設定を構成し、必要な設定を見つけるための、簡単で明快な方法が提供されます。
 
 **管理用テンプレート**は Intune 内に構築されており、OMA-URI の使用を含め、カスタマイズを必要としません。 モバイル デバイス管理 (MDM) ソリューションの一部として、これらのテンプレート設定を総合ポータルとして使用し、Windows 10 デバイスを管理します。
 
@@ -58,16 +58,17 @@ Windows の設定は、Active Directory (AD) のグループ ポリシー (GPO) 
     > [!TIP]
     > Intune の Windows の設定は、ローカル グループ ポリシー エディター (`gpedit`) に表示されるオンプレミスのグループ ポリシー パスに関連付けられます。
 
-5. 既定では、ドロップダウン リストに **[すべての製品]** が表示されます。 リストから設定をフィルター処理し、**Windows** の設定のみを表示したり、**Office** の設定のみを表示したり、**Microsoft Edge** の設定のみを表示したりすることもできます。
+5. 既定では、ドロップダウン リストに **[すべての製品]** が表示されます。 リストから設定をフィルター処理し、**Windows** の設定のみを表示したり、**Office** の設定のみを表示したり、**Edge バージョン 77 以降**の設定のみを表示したりすることもできます。
 
     ![Intune の管理用テンプレートで、リストをフィルター処理して Windows または Office の設定をすべて表示する](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 
     > [!NOTE]
     > Microsoft Edge の設定の適用対象:
     >
-    > - [KB 4512509](https://support.microsoft.com/kb/4512509) がインストールされた、Windows 10 RS4 以降。
-    > - [KB 4512534](https://support.microsoft.com/kb/4512534) がインストールされた、Windows 10 RS5 以降。
-    > - [KB 4512941](https://support.microsoft.com/kb/4512941) がインストールされた、Windows 10 19H1 以降。
+    > - Microsoft Edge バージョン 77 以降。 Microsoft Edge バージョン 45 以前を構成するには、[Microsoft Edge ブラウザーでのデバイスの制限の設定](device-restrictions-windows-10.md#microsoft-edge-browser)に関する記事を参照してください。
+    > - Windows 10 RS4 以降 ([KB 4512509](https://support.microsoft.com/kb/4512509) インストール済み)
+    > - Windows 10 RS5 以降 ([KB 4512534](https://support.microsoft.com/kb/4512534) インストール済み)
+    > - Windows 10 19H1 以降 ([KB 4512941](https://support.microsoft.com/kb/4512941) インストール済み)
 
 6. 任意の設定を選択します。 たとえば、 **[Office]** でフィルター処理して、 **[参照の制限を有効にする]** を選択します。 設定の詳細説明が表示されます。 **[有効]** 、 **[無効]** を選択するか、または設定を **[未構成]** (既定値) のままにします。 詳細な説明では、 **[有効]** 、 **[無効]** 、または **[未構成]** を選択したときの動作についても説明されています。
 7. **[OK]** を選択して変更を保存します。

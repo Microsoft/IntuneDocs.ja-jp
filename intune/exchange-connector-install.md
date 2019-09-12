@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5cf6299f46ed8db4fdca02947ce15a920816d110
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 3bc5f8a3f0094c363a705b37b904435ef9e91781
+ms.sourcegitcommit: 47b06bf2d32e2f84c382dec3366d6f4a31d98012
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660945"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864481"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Microsoft Intune で Intune のオンプレミス Exchange コネクタを設定する
 この記事の情報は、Intune 用の Exchange Active Sync オンプレミス コネクタをインストールして監視するのに役立ちます。  Intune オンプレミス Exchange コネクタを[条件付きアクセス ポリシーと一緒に使用して、ご利用の Exchange オンプレミス メールボックスへのアクセスを許可またはブロックします](conditional-access-exchange-create.md)。 
@@ -124,6 +124,9 @@ Intune とオンプレミス Exchange Server が通信できるようにする�
    自動検出サービスと Exchange Web Services が Exchange クライアント アクセス サーバーで構成されていることを確認します。 詳細については、「[クライアント アクセス サーバー](https://technet.microsoft.com/library/dd298114.aspx)」を参照してください。
 
 6. **[パスワード]** フィールドに、このアカウントで Intune から Exchange Server にアクセスするのに必要なパスワードを入力します。
+
+   > [!NOTE]
+   > 接続を成功させるには、テナントへのサインインに使用するアカウントが、少なくとも Intune サービス管理者である必要があります。 そうでない場合、接続は、次のエラーで失敗します。"リモート サーバーが次のエラーを返しました: (400) 正しくない要求"。
 
 7. **[接続]** を選びます。
 

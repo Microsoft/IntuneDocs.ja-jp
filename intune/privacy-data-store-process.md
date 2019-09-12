@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64a66fde0f501bf2e1e7f6b0cc98eddd871717b2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b2947969c1c07d595a0a5baa48be11ba7a941424
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050367"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739226"
 ---
 # <a name="data-storage-and-processing-in-intune"></a>Intune でのデータの保存と処理
 
@@ -41,7 +41,7 @@ Intune で[データが収集されると](privacy-data-collect.md)、そのデ�
 
 Microsoft では、世界中のさまざまな地域で Intune サービスの提供と運用を行っています。 Intune では、顧客データの管理者が選択した保存場所が尊重されます。
 
-詳細については、[Microsoft Intune での顧客データの場所](For more information, see Microsoft Intune Where is my customer data?) に関するページを参照してください。
+詳細については、「[お客様のデータの場所](https://www.microsoft.com/trust-center/privacy/data-location)」をご覧ください。
 
 ### <a name="personal-data-retention"></a>個人データ保有期間
 

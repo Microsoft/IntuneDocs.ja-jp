@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a5c9dea847ace51c7d6f06cfa43c44beead18f8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 6df42d908169ab591150e88e03f2f419710c9e54
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373413"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739199"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Intune に iOS ソフトウェア更新プログラム ポリシーを追加する
 
@@ -53,14 +53,8 @@ ms.locfileid: "66373413"
 
     - **ソフトウェア更新プログラムがエンド ユーザーに表示されるまでの遅延日数 (スケジュールされた更新は変更されない)** : 
 
-      **この設定は [[デバイスの制限]](device-restrictions-ios.md#general) に移りました。ポータルのこの場所から削除される予定です。** 短い時間であれば、既存のポリシーをここから変更できます。 約 1 か月後、この設定は既存のポリシーから削除されます。
-
-      影響を抑えるため、次をお勧めします。
-        - ポータルのこの場所から既存のポリシーを削除します。
-        - 新しい[デバイス制限ポリシー](device-restrictions-ios.md#general)を作成します。
-        - 元のポリシーと同じユーザーを対象とします。
-
-      競合がある場合、2 つの値が*同じでない限り*、この設定では何も行われません。 競合を防ぐため、ポータルのこの場所から既存のポリシーを変更するか、削除してください。
+      ** 監視対象の iOS デバイスで特定の時間だけソフトウェア更新プログラムの表示を遅らせる場合は、[[デバイスの制限]](device-restrictions-ios.md#general) でこれらの設定を構成してください。
+     
       > [! 重要]  
       > *開始時刻*と*終了時刻*が午前 12 時になっているポリシーは、24 時間ではなく、0 時間として見なされます。 結果的に制限なしとなります。  
 

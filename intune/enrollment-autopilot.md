@@ -17,17 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0316138451c6105f22c196d17c1f2ec3b1f2e375
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: e0f1f7d937f08e32b30ee9facdcca03d263bc27e
+ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70062938"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70842180"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot を使用して Intune に Windows デバイスを登録する  
 Windows Autopilot を使用すると、Intune でのデバイスの登録が簡単になります。 カスタマイズされたオペレーティング システム イメージのビルドおよび維持は、時間のかかるプロセスです。 また、これらのカスタム オペレーティング システム イメージを新しいデバイスに適用し、エンド ユーザーに提供する前に使用の準備を行う場合にも、時間がかかることがあります。 Microsoft Intune と Autopilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および新しいデバイスへの適用を行わなくてもデバイスをエンド ユーザーに提供することができます。 Intune を使用して Autopilot デバイスを管理する場合、デバイスの登録後にポリシー、プロファイル、アプリなどを管理することができます。 利点、シナリオ、および前提条件の概要については、「[Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)」 (Windows Autopilot の概要) を参照してください。
 
-Autopilot の展開の種類には次の 4 種類があります。[自己展開モード](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (キオスク、デジタル信号、または共有デバイスの場合)、[ホワイト グローブ](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) (パートナーまたは IT スタッフは Windows 10 PC が完全に構成されビジネスに即応できるように、それを事前プロビジョニングすることができる)、[既存のデバイス向け Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) (最新バージョンの Windows 10 をご利用の既存のデバイスに簡単に展開できる)、[ユーザー駆動型モード](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (従来のユーザーの場合)。 
+Autopilot の展開の種類には次の 4 種類があります。
+- [自己展開モード](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying)は、キオスク、デジタル サイネージ、または共有デバイス向けです。
+- [ホワイト グローブ](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove)では、パートナーまたは IT スタッフが、完全に構成されビジネスに即応できるように Windows 10 PC を事前プロビジョニングできます。[既存のデバイス向け Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) では、最新バージョンの Windows 10 をご利用の既存のデバイスに簡単に展開できます。
+- [ユーザー駆動モード](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven)は従来のユーザー向けです。 
 
 
 ## <a name="prerequisites"></a>必要条件
@@ -74,9 +77,9 @@ CSV ファイルの情報をインポートすることにより、Windows Autop
     3. **[メンバーシップの種類]** に、 **[割り当て済み]** または **[動的デバイス]** のどちらかを選択します。
 3. 前の手順の **[メンバーシップの種類]** で **[割り当て済み]** を選択した場合は、 **[グループ]** ブレードで **[メンバー]** を選択して Autopilot のデバイスをグループに追加します。
     まだ登録されていない Autopilot デバイスの場合、デバイスのシリアル番号が名前です。
-4. 上の **[メンバーシップの種類]** で **[動的デバイス]** を選択した場合は、 **[グループ]** ブレードで **[動的なデバイス メンバー]** を選択し、 **[高度なルール]** ボックスに次のいずれかのコードを入力します。
+4. 上の **[メンバーシップの種類]** で **[動的デバイス]** を選択した場合は、 **[グループ]** ブレードで **[動的なデバイス メンバー]** を選択し、 **[高度なルール]** ボックスに次のいずれかのコードを入力します。 これらのルールは Autopilot デバイスでのみ処理される属性を対象としているため、Autopilot デバイスのみが収集されます。
     - Autopilot デバイスをすべて含むグループを作成する場合は、「`(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`」と入力します
-    - Intune のグループ タグ フィールドは、Azure AD デバイス上の OrderID 属性にマップされます。 特定のグループ タグ (OrderID) を使って Autopilot デバイスをすべて含むグループを作成する場合は、「`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`」と入力する必要があります
+    - Intune のグループ タグ フィールドは、Azure AD デバイス上の OrderID 属性にマップされます。 特定のグループ タグ (Azure AD デバイス の OrderID) を持つすべての Autopilot デバイスが含まれるグループを作成する場合は、「`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`」と入力する必要があります
     - 特定の注文書 ID の Autopilot デバイスをすべて含むグループを作成する場合は、「`(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`」と入力します
     
     **[高度なルール]** にコードを追加したら、 **[保存]** を選択します。
@@ -93,7 +96,7 @@ Autopilot Deployment プロファイルは、Autopilot デバイスを構成す�
 4. **[次へ]** を選択します。
 5. **[Out-of-box experience (OOBE)]** ページ上の **[配置モード]** で、次の 2 つのオプションのいずれかを選択します。
     - **[ユーザー ドリブン]** : このプロファイルのデバイスは、デバイスを登録しているユーザーに関連付けられます。 デバイスを登録するには、ユーザーの資格情報が必要です。
-    - **[自己展開 (プレビュー)]** : (Windows 10 バージョン 1809 以降が必要) このプロファイルのデバイスは、デバイスを登録しているユーザーに関連付けられません。 デバイスを登録するのに、ユーザーの資格情報は必要ありません。
+    - **[自己展開 (プレビュー)]** : (Windows 10 バージョン 1809 以降が必要) このプロファイルのデバイスは、デバイスを登録しているユーザーに関連付けられません。 デバイスを登録するのに、ユーザーの資格情報は必要ありません。 デバイスにユーザーが関連付けられていない場合、ユーザーベースのコンプライアンス ポリシーは適用されません。 自己展開モードを使用する場合、そのデバイスを対象とするコンプライアンス ポリシーのみが適用されます。
 
     ![OOBE ページのスクリーンショット](media/enrollment-autopilot/create-profile-outofbox.png)
 
