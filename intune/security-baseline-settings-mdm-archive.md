@@ -11,17 +11,18 @@ ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
+ROBOTS: NOINDEX
 ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e8aeb3428aeece2de9b94c0ebf7796ce73a0267
-ms.sourcegitcommit: 6f84e880411a202c5500eb460779b7ef63a7f430
+ms.openlocfilehash: 6df943fdc0105b0f32401b79434045811f065bef
+ms.sourcegitcommit: 47b06bf2d32e2f84c382dec3366d6f4a31d98012
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68978520"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864541"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
@@ -33,12 +34,12 @@ Intune の MDM セキュリティ基準のアーカイブされたバージョ�
 
 ベースラインバージョンの使用がサポートされなくなった場合は、この記事から削除されます。
 
-- [現在の MDM セキュリティベースライン](security-baseline-settings-mdm.md)で使用可能な設定を表示します。 
+- [現在の MDM セキュリティベースライン](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)で使用可能な設定を表示します。 
 - セキュリティ基準[につい](security-baselines.md)て、およびセキュリティベースラインプロファイルのベースラインバージョンをアップグレードする方法について説明します。
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>プレビュー: 2018 年 10 月の MDM セキュリティ ベースライン  
 
-*この基準は、2019年 5[月の MDM セキュリティ基準](security-baseline-settings-mdm.md)に置き換えられています。*
+*この基準は、2019年 5[月の MDM セキュリティ基準](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)に置き換えられています。*
 
 ### <a name="above-lock"></a>Above Lock (上でロック)  
 
@@ -1440,5 +1441,5 @@ Intune の MDM セキュリティ基準のアーカイブされたバージョ�
  
 ## <a name="next-steps"></a>次の手順  
 
-[現在のベースラインバージョンを表示する](security-baseline-settings-mdm.md)  
+[現在のベースラインバージョンを表示する](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)  
 [新しい基準バージョンを使用するようにプロファイルをアップグレードする](security-baselines.md#change-the-baseline-version-for-a-profile)
