@@ -1,0 +1,25 @@
+### YamlMime:ZonePivotGroups
+groups:
+- id: security-baseline-settings-one
+  title: セキュリティ ベースライン
+  prompt: セキュリティベースラインの選択
+  pivots:
+  - id: windows-mdm
+    title: Windows MDM
+  - id: microsoft-defender-atp
+    title: Microsoft Defender Advanced Threat Protection
+- id: windows-mdm-versions
+  title: Windows MDM ベースラインバージョン
+  prompt: バージョンの選択
+  pivots:
+  - id: mdm-may-2019
+    title: 2019 年 5 月
+  - id: mdm-preview
+    title: プレビュー-2018 年10月
+metadata:
+  ms.openlocfilehash: 1b1f0e7b28dfda7ba9b4867c9641154147aa4c1f
+  ms.sourcegitcommit: 393953dd2a15aff68b246d3633b47566dd43f7cc
+  ms.translationtype: MTE75
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 09/09/2019
+  ms.locfileid: "70815794"
