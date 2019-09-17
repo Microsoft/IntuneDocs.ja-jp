@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ff5b411f14fef4ad294b0dd8b265680fd67df08
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 04cafd2cf69bbd42a35ade3ae180e8af8789c938
+ms.sourcegitcommit: e8d788d033be4320cd72c98c892b383e1bb77e18
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402759"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70912811"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Intune で使用できる組み込み iOS アプリ用のバンドル ID
 
@@ -30,11 +30,12 @@ iOS デバイス上で機能を構成すると、iOS デバイス上に組み込
 
 | バンドル ID                   | アプリ名     | 発行者 |
 |-----------------------------|--------------|-----------|
-| com.apple.AppStore          | アプリ ストア    | Apple     |
+| com. apple. ストア             | アプリ ストア    | Apple     |
 | com.apple.calculator        | 計算機   | Apple     |
 | com.apple.mobilecal         | 予定表     | Apple     |
 | com.apple.camera            | カメラ       | Apple     |
 | com.apple.mobiletimer       | 時計        | Apple     |
+| com... クリップ             | Clips        | Apple     |
 | com.apple.compass           | コンパス      | Apple     |
 | com.apple.MobileAddressBook | 連絡先     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
@@ -74,7 +75,7 @@ iOS デバイス上で機能を構成すると、iOS デバイス上に組み込
 | com.apple.VoiceMemos        | VoiceMemos   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |
 | com.apple.Bridge            | 視聴する        | Apple     |
-| com.apple.weather           | 天気      | Apple     |
+| com.apple.weather           | 天気      | Apple     |      
 
 ## <a name="next-steps"></a>次の手順
 
