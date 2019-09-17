@@ -1,6 +1,6 @@
 # Intune のユーザー ヘルプ
 
-## [マネージド デバイスを使用して作業する](use-managed-devices-to-get-work-done.md)
+## [デバイスの登録とは](use-managed-devices-to-get-work-done.md)
 
 ## [企業は Intune でどのような情報を確認できるか](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
