@@ -11,17 +11,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: pjain
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d053b0b37931443a343c91b5122b7a097d248c51
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 10366a41be05dbedee5cd84a1222a727a02a1b93
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048685"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071476"
 ---
 # <a name="create-a-custom-role-in-intune"></a>Intune でカスタム ロールを作成する
 
@@ -37,17 +37,17 @@ ms.locfileid: "66048685"
 
 2. 左側のメニューから **[すべてのサービス]** を選択し、テキスト ボックス フィルターに「**Intune**」と入力します。
 
-3. **[Intune]** > **[ロール]** > **[すべてのロール]** > **[追加]** の順に選択します。
+3. **[Intune]**  >  **[ロール]**  >  **[すべてのロール]**  >  **[追加]** の順に選択します。
 
-4. **[カスタム ロールの追加]** ブレードで、新しいロールの名前と説明を入力し、**[アクセス許可]** をクリックします。
+4. **[カスタム ロールの追加]** ブレードで、新しいロールの名前と説明を入力し、 **[アクセス許可]** をクリックします。
 
 5. **[アクセス許可]** ブレードで、このロールで使用するアクセス許可を選択します。 [Intune RBAC テーブル](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)を使用すると、適用するアクセス許可を決めるのに役立ちます。
 
 6. **[スコープ (タグ)]** ブレードで、このロールのタグを選択します。 このロールでは、これらのタグも設定されているリソースにアクセスできます。
 
-7. 終了したら、**[OK]** を選択します。
+7. 終了したら、 **[OK]** を選択します。
 
-8. **[カスタム ロールの追加]** ブレードで、**[作成]** をクリックします。 新しいロールが **[Intune の役割 - すべてのロール]** ブレード上の一覧に表示されます。
+8. **[カスタム ロールの追加]** ブレードで、 **[作成]** をクリックします。 新しいロールが **[Intune の役割 - すべてのロール]** ブレード上の一覧に表示されます。
 
 ## <a name="next-steps"></a>次の手順
 - [ロールをユーザーに割り当てる](assign-role.md)

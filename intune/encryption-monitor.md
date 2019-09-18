@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c64ea07cb87bc980d01864468d788229bfc58a5f
-ms.sourcegitcommit: a6385b8370c20a44d0869f7920d6b2866edaa5e2
+ms.openlocfilehash: 469bdc54385f943fd0c42ccfd921293970b03b64
+ms.sourcegitcommit: 05139901411d14a85c2340c0ebae02d2c178a851
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70027386"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70905041"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Intune でデバイスの暗号化を監視する   
 
@@ -201,8 +201,7 @@ Intune では、個人用回復キーの交換と回復のための複数のオ�
   1. 任意のデバイスから、*Intune ポータル サイト* Web サイトにサインインします。  
   2. ポータルで、 **[デバイス]** に移動し、FileVault で暗号化された macOS デバイスを選択します。  
   3. **[回復キーを取得する]** を選択します。 現在の回復キーが表示されます。  
-  
-     iPhone では、 *[回復キーを取得する]* オプションが表示される前に、*3 つ*のドットを選択する必要があります。  
+ 
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker 回復キー  
 

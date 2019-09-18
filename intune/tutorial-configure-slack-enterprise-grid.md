@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97bc1658dcd432bdd5e31c7100022959e96c3039
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 83b10bdfacbcf76b9f75b90d99e094b6854d525e
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842068"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061657"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>チュートリアル: EMM とアプリ構成に Intune を使用するように Slack を構成する
 
@@ -77,7 +77,6 @@ Slack for EMM iOS のアプリ構成ポリシーを追加する マネージド 
 5. **[関連アプリ]** を選択します。
 6. 検索バーに「Slack for EMM」と入力し、アプリを選択します。
 7. **[OK]** をクリックし、 **[構成設定]** を選択します。 
-    - 構成キーとその値については、[Slack の AppConfig Web ページ](https://www.appconfig.org/company/slack/) の「Technical (技術)」タブにあるドキュメントを参照してください。
 8. **[OK]** を選択し、 **[追加]** を選択します。
 9. 検索バーに「Slack app configuration policy test」と入力して、先ほど追加したポリシーを選択します。
 10. [管理] から **[割り当て]** を選択します。

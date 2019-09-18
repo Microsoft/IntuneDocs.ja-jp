@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
-ms.reviewer: arnab
+ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a637ae12f3a2ee395503bedd595c490579fdb43c
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: f4236b3fd1b7dab25a3450b95b75f3623ec7ba95
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68993543"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071638"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Samsung の Knox Mobile Enrollment を使用して Android デバイスを自動的に登録する
 
@@ -120,7 +120,7 @@ MDM プロファイルを作成して割り当て、ユーザー名を関連付�
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-- **デバイス所有者のサポート:** - **デバイス所有者のサポート:** Intune では、KME ポータルを使用した専用およびフル マネージド デバイスの登録がサポートされています。 他の Android エンタープライズ デバイス所有者モードは、Intune で利用可能になったらサポートされます。
+- **デバイス所有者のサポート:**  - **デバイス所有者のサポート:** Intune では、KME ポータルを使用した専用およびフル マネージド デバイスの登録がサポートされています。 他の Android エンタープライズ デバイス所有者モードは、Intune で利用可能になったらサポートされます。
 
 - **仕事用プロファイルのサポートなし**:KME は会社のデバイスを登録する方法であり、デバイスを Android 仕事用プロファイルに登録することにより、個人のデバイスの仕事用データと個人用データが別々に管理されるようになります。 そのため Intune では、KME を使用してデバイスを仕事用プロファイルに登録するシナリオはサポートされていません。
 

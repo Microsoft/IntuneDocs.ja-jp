@@ -11,17 +11,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: pjain
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a22fef1c04ae52a8a4cc65eaadc1ef6fcd524c19
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0539e4d12173ba2c7ba8d3af3364daf69ddbbf34
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043593"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071529"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Intune ユーザーにロールを割り当てる
 
@@ -33,17 +33,17 @@ ms.locfileid: "66043593"
 
 各組み込みロールのアクセス許可の完全な一覧は、「[Intune RBAC Table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)」を参照してください。
 
-1. サインイン、 [Azure ポータル](https://portal.azure.com)します。
+1. [Azure ポータル](https://portal.azure.com) にサインインします。
 
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
+2. **[すべてのサービス]**  >  **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
 
-3. **[Intune]** ブレード上で、**[ロール]** > **[すべてのロール]** の順に選択します。
+3. **[Intune]** ブレード上で、 **[ロール]**  >  **[すべてのロール]** の順に選択します。
 
 4. **[Intune の役割 - すべてのロール]** ブレード上で、割り当てる組み込みロールを選択します。
 
-5. **[<"*ロール名*"> - 概要]** ブレード上で、**[管理]** > **[割り当て]** の順に選択します。
+5. **[<"*ロール名*"> - 概要]** ブレード上で、 **[管理]**  >  **[割り当て]** の順に選択します。
 
-6. [カスタム ロール] ブレードで、**[割り当て]** を選択します。
+6. [カスタム ロール] ブレードで、 **[割り当て]** を選択します。
 
 7. **[ロールの割り当て]** ブレード上で、割り当てに対する **[割り当て名]** と、必要に応じて **[割り当ての説明]** を入力します。
 
@@ -53,7 +53,7 @@ ms.locfileid: "66043593"
 
 10. **[スコープ (タグ)]** については、このロールの割り当てが適用されるタグを選択します。
 
-11. 終了したら、**[OK]** を選択します。 新しい割り当てが割り当ての一覧に表示されます。
+11. 終了したら、 **[OK]** を選択します。 新しい割り当てが割り当ての一覧に表示されます。
 
 
 ## <a name="next-steps"></a>次の手順
