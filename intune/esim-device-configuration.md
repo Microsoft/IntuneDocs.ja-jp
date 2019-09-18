@@ -14,19 +14,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4a171255c545e2f2c55adf4695476107d06aefe
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 863d8d03836573a7425f2958e52a1e0331b34a10
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354384"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080067"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Intune で eSIM 携帯電話プロファイルを構成する - パブリック プレビュー
-
-> [!NOTE]
-> Microsoft では皆様のご意見をお待ちしております。 質問がある場合や、ディスカッションを開始する場合には、`eSIMonIntune@microsoft.com` 宛てにメールをお送りください。
-
-## <a name="introduction"></a>概要
 
 eSIM は埋め込み SIM チップであり、[Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro) などの eSIM 対応デバイス上で携帯データネットワーク接続を介してインターネットに接続することができます。 eSIM を利用する場合、携帯電話会社から SIM カードを入手する必要はありません。 世界中を旅行する場合でも、携帯電話会社やデータ プランを切り替え、常に回線接続を維持できます。
 

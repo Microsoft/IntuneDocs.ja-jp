@@ -13,17 +13,17 @@ ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up Windows Autopilot so that users can enroll in Intune.
-ms.reviewer: angerobe
+ms.reviewer: spshumwa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ee353e5e6c39c3b402c0b4f039bb02efcfa4532
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 292ffb5eebd4ae0accb51212cf6f1648a090d66e
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044519"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071670"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>チュートリアル: Autopilot を使用して Intune に Windows デバイスを登録する
 Windows Autopilot を使用すると、デバイスの登録が簡単になります。 Microsoft Intune と Autopilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および適用を行わなくてもデバイスをエンド ユーザーに提供することができます。 
@@ -41,7 +41,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 Autopilot の利点、シナリオ、および前提条件の概要については、「[Windows Autopilot の概要](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)」をご覧ください。
 
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 - [Windows 自動登録を設定する](quickstart-setup-auto-enrollment.md)
 - [Azure Active Directory Premium サブスクリプション](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 

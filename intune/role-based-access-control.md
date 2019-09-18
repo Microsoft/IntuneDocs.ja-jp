@@ -11,17 +11,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
-ms.reviewer: ''
+ms.reviewer: pjain
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83b1de6c246baaef54a31c0b3f4c5094d066c64d
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: e636e2df8271210d8938727eb99491e1ffdd5bdc
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69549973"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080029"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Microsoft Intune でのロールベースのアクセス制御 (RBAC)
 
@@ -36,7 +36,7 @@ Intune RBAC に関するアドバイスと提案については、例とチュ�
 ## <a name="roles"></a>役割
 ロールは、そのロールに割り当てられたユーザーに付与される一連のアクセス許可を定義します。
 組み込みロールとカスタム ロールの両方を使用できます。 組み込みロールは、Intune の一般的なシナリオをカバーしています。 必要な一連のアクセス許可だけを使用して、[独自のカスタム ロールを作成](create-custom-role.md)することができます。 いくつかの Azure Active Directory ロールには、Intune へのアクセス許可があります。
-ロールを表示するには、**[Intune]** > **[ロール]** > **[すべてのロール]** の順に選択し、ロールを選択します。 次のページが表示されます。
+ロールを表示するには、 **[Intune]**  >  **[ロール]**  >  **[すべてのロール]** の順に選択し、ロールを選択します。 次のページが表示されます。
 
 - **プロパティ**:ロールの名前、説明、種類、割り当て、およびスコープのタグ。 
 - **アクセス許可**:ロールが持つアクセス許可の定義を切り替える長いセットを一覧表示します。
@@ -82,12 +82,12 @@ Intune RBAC に関するアドバイスと提案については、例とチュ�
 - 変更できるリソース
 
 組み込みロールとカスタム ロールの両方をユーザーに割り当てることができます。 Intune ロールを割り当てるには、そのユーザーに Intune ライセンスが必要です。
-ロールの割り当てを表示するには、**[Intune]** > **[ロール]** > **[すべてのロール]** の順に選択し、ロールを選択し、割り当てを選択します。 次のページが表示されます。
+ロールの割り当てを表示するには、 **[Intune]**  >  **[ロール]**  >  **[すべてのロール]** の順に選択し、ロールを選択し、割り当てを選択します。 次のページが表示されます。
 
 - **プロパティ**:割り当ての名前、説明、ロール、メンバー、スコープ、タグ。
 - **メンバー**:一覧表示されている Azure セキュリティ グループ内のすべてのユーザーには、スコープ (グループ) に一覧表示されているユーザー/デバイスを管理するアクセス許可があります。
-- **[スコープ (グループ)]**:これらの Azure セキュリティ グループ内のすべてのユーザー/デバイスは、メンバー内のユーザーが管理できます。
-- **[[スコープ (タグ)]](scope-tags.md)**:メンバー内のユーザーは、同じスコープのタグを持つリソースを表示できます。
+- **[スコープ (グループ)]** :これらの Azure セキュリティ グループ内のすべてのユーザー/デバイスは、メンバー内のユーザーが管理できます。
+- **[[スコープ (タグ)]](scope-tags.md)** :メンバー内のユーザーは、同じスコープのタグを持つリソースを表示できます。
 
 ### <a name="multiple-role-assignments"></a>複数のロールの割り当て
 ユーザーに複数のロールの割り当て、アクセス許可、スコープのタグがある場合は、これらのロールの割り当てが、次のように別のオブジェクトに拡張されます。

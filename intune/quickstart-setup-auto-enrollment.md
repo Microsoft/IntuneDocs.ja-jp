@@ -8,17 +8,17 @@ ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 03/26/2019
 ms.author: erikje
-ms.reviewer: angerobe
+ms.reviewer: spshumwa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3b81525034f69b43abeb60f562e4d6ee6a46b866
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: e44bbf9396cd2aff3f2b2b134c72eb871f719a91
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511836"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080127"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>クイック スタート:Windows 10 デバイスの自動登録を設定する
 
@@ -39,7 +39,7 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
 この例では、会社のデバイスと個人所有デバイスの両方を自動登録できるように MDM 登録を使用します。 無料の Azure Active Directory Premium サブスクリプションにサインアップします。
 
-1. Azure で、**[Azure Active Directory]** > **[モビリティ (MDM および MAM)]** の順に選択します。
+1. Azure で、 **[Azure Active Directory]**  >  **[モビリティ (MDM および MAM)]** の順に選択します。
 2. **[無料の Premium 評価版を入手してこの機能を使用する]** を選択します。 このオプションを選択すると、Azure Active Directory の無料 Premium 試用版を使用して自動登録できます。 
 
     ![Azure Active Directory 無料 Premium 評価版を選択する](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)
@@ -56,12 +56,12 @@ Intune サブスクリプションがない場合は、[無料試用版アカウ
 
     ![構成の一覧から [一部] を選択する](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-04.png)
 
-5. 割り当てられたグループとして **[グループの選択]** > **[Contoso Testers]** > **[選択]** の順に選択します。
+5. 割り当てられたグループとして **[グループの選択]**  >  **[Contoso Testers]**  >  **[選択]** の順に選択します。
 
     ![登録するグループを選択する](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-05.png)
 
 6. **[MAM ユーザー スコープ]** から **[一部]** を選択して、従業員のデバイス上のデータを管理します。
-7. 割り当てられたグループとして **[グループの選択]** > **[Contoso Testers]** > **[選択]** の順に選択します。 
+7. 割り当てられたグループとして **[グループの選択]**  >  **[Contoso Testers]**  >  **[選択]** の順に選択します。 
 8. 残りの構成値には既定値を使用します。
 9. **[保存]** を選びます。
 
