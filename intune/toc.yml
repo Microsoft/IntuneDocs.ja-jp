@@ -82,7 +82,7 @@
       href: windows-information-protection-configure.md
     - name: MAM のよく寄せられる質問
       href: mam-faq.md
-- name: 操作方法ガイド
+- name: 使い方ガイド
   items:
     - name: 展開の計画
       items:
@@ -103,11 +103,11 @@
               href: planning-guide-support-plan.md
             - name: 設計
               href: planning-guide-design.md
-            - name: 変更の
+            - name: 実装
               href: planning-guide-onboarding.md
             - name: テストと検証
               href: planning-guide-test-validation.md
-            - name: その他のリソース
+            - name: その他の資料
               href: planning-guide-resources.md
         - name: 移行ガイド
           href: migration-guide.md
@@ -142,7 +142,7 @@
         - name: サポートされている構成
           href: supported-devices-browsers.md
           items:
-            - name: ネットワークの構成
+            - name: ネットワーク構成
               href: network-bandwidth-use.md
             - name: Intune エンドポイント
               href: intune-endpoints.md
@@ -164,7 +164,7 @@
           href: mdm-authority-set.md
         - name: ロールの管理
           items:
-            - name: ロールベースのアクセス制御
+            - name: ロール基準のアクセス制御
               href: role-based-access-control.md
             - name: ロールをユーザーに割り当てる
               href: assign-role.md
@@ -184,7 +184,7 @@
           items:
             - name: Intune の登録および会社アクセスに関する使用条件
               href: terms-and-conditions-create.md
-            - name: 制限事項
+            - name: 制限
               href: enrollment-restrictions-set.md
             - name: Apple MDM プッシュ通知証明書
               href: apple-mdm-push-certificate-get.md
@@ -519,6 +519,8 @@
             - name: PKCS
               href: certficates-pfx-configure.md
               displayName: ksp
+            - name: インポートされた PKCS
+              href: certificates-imported-pfx-configure.md
             - name: S/MIME を使用して電子メールを暗号化する
               href: certificates-s-mime-encryption-sign.md
             - name: SCEP でサード パーティの証明機関を使用する
@@ -744,9 +746,11 @@
               href: troubleshoot-certificate-connector-events.md
             - name: Exchange Connector に関するトラブルシューティング
               href: troubleshoot-exchange-connector.md
+        - name: Intune のドキュメントの使用
+          href: use-docs.md
         - name: サポートを受ける
           href: get-support.md
-- name: リファレンス
+- name: 参照先
   items:
     - name: 設定の一覧
       items:
@@ -758,7 +762,7 @@
               items:
                 - name: デバイスの制限
                   href: device-restrictions-android.md
-                - name: Email
+                - name: 電子メール
                   href: email-settings-android.md
                 - name: VPN
                   href: vpn-settings-android.md
@@ -777,7 +781,7 @@
               items:
                 - name: デバイスの制限
                   href: device-restrictions-android-for-work.md
-                - name: Email
+                - name: 電子メール
                   href: email-settings-android-enterprise.md
                 - name: VPN
                   href: vpn-settings-android-enterprise.md
@@ -795,7 +799,7 @@
                   href: ios-device-features-settings.md
                 - name: デバイスの制限
                   href: device-restrictions-ios.md
-                - name: Email
+                - name: 電子メール
                   href: email-settings-ios.md
                 - name: VPN
                   href: vpn-settings-ios.md
@@ -821,7 +825,7 @@
                   href: vpn-settings-macos.md
                 - name: Wi-Fi
                   href: wi-fi-settings-macos.md
-                - name: の拡張
+                - name: Extensions
                   href: kernel-extensions-settings-macos.md
                 - name: カスタム
                   href: custom-settings-macos.md
@@ -839,7 +843,7 @@
                   href: device-restrictions-windows-10-teams.md
                 - name: エディションのアップグレードとモードの切り替え
                   href: edition-upgrade-windows-settings.md
-                - name: Email
+                - name: 電子メール
                   href: email-settings-windows-10.md
                 - name: Endpoint Protection
                   href: endpoint-protection-windows-10.md
@@ -901,7 +905,7 @@
               items:
                 - name: デバイスの制限
                   href: device-restrictions-windows-phone-8-1.md
-                - name: Email
+                - name: 電子メール
                   href: email-settings-windows-phone-8-1.md
                 - name: VPN
                   href: vpn-settings-windows-phone-8-1.md
@@ -988,7 +992,7 @@
               href: 'https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview'
         - name: デバイスの構成に使用される Graph API
           href: graph-apis-used-by-intune-device-configuration-windows.md
-- name: リソース
+- name: 参照情報
   items:
     - name: アーカイブ
       items:
