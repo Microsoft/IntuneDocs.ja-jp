@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
-ms.reviewer: dagerrit
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2254c1e83764e9b29ab6fb99c016edef75aad43e
-ms.sourcegitcommit: bc3450fc7f19006b500edf5b395c01559b483ea4
+ms.openlocfilehash: 3f7018b791d5ab22ebcf6bbc45ac01963d2c5d42
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68738271"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079959"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Intune で iOS デバイスを登録する
 
@@ -39,7 +39,7 @@ iOS デバイスを有効にする前に、次の手順を完了する必要が�
 
 ## <a name="user-owned-ios-devices-byod"></a>ユーザー所有の iOS デバイス (BYOD)
 
-Intune 管理のために、ユーザーに個人用デバイスを登録させることができます。これは "Bring Your Own Device" (BYOD) と呼ばれます。 前提条件を満たし、ユーザーのライセンスを割り当てたら、アプリ ストアから Intune ポータル サイト アプリをダウンロードして、アプリの登録手順に従います。
+Intune 管理のために、ユーザーに個人用デバイスを登録させることができます。これは "Bring Your Own Device" (BYOD) と呼ばれます。 前提条件を満たし、ユーザーのライセンスを割り当てたら、アプリ ストアから Intune ポータル サイト アプリをダウンロードして、アプリの登録手順に従います。 [プライバシーに関する声明のカスタマイズ](company-portal-app.md#privacy-statement-customization)に関するページで説明されているように、iOS デバイス上でポータル サイトのプライバシーに関する声明をカスタマイズできます。
 
 ## <a name="company-owned-ios-devices"></a>会社所有の iOS デバイス
 Intune は、ユーザーのデバイスを購入する組織のため、次の会社所有の iOS デバイスの登録方法をサポートします。

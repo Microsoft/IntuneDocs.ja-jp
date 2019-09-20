@@ -16,18 +16,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25beef7e6593865b92e349163768ded5ce3b9e2d
-ms.sourcegitcommit: 5bb46d3c0bf8c5595132c4200849b1c4bcfe7cdb
+ms.openlocfilehash: 064377ea05319242da087862b4d2b3a721b0caef
+ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70376931"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012458"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Intune で PKCS 証明書を構成して使用する
 
 Intune では、秘密キーと公開キーのペア (PKCS) の証明書の使用がサポートされています。 この記事は、オンプレミスの証明書コネクタなどの必要なインフラストラクチャを構成し、PKCS 証明書をエクスポートして、Intune デバイス構成プロファイルに証明書を追加するのに役立ちます。
 
 Microsoft Intune には、組織のリソースへのアクセスと認証に PKCS 証明書を使用するための組み込みの設定が含まれています。 証明書により、VPN や WiFi ネットワークなど、企業リソースへのアクセスが認証され、セキュリティで保護されます。 Intune でデバイス構成プロファイルを使用してこれらの設定をデバイスに展開します。
+
+インポートした PKCS 証明書の使用については、[インポートした PFX 証明書](certificates-imported-pfx-configure.md)に関する記事をご覧ください。
 
 
 ## <a name="requirements"></a>要件
@@ -63,17 +65,17 @@ Intune で PKCS 証明書を使用するには、次のインフラストラク�
   Microsoft Intune Certificate Connector では、Federal Information Processing Standard (FIPS) モードもサポートされています。 FIPS は必須ではありませんが、有効になっている場合は、証明書の発行および失効を行うことができます。
 
 - **PFX Certificate Connector for Microsoft Intune**:  
-  S/MIME メールの暗号化の使用を計画している場合は、Intune ポータルを使用して、*インポートした PFX 証明書*用のコネクタをダウンロードします。  **[デバイス構成]**  >  **[証明書コネクタ]**  >  **[追加]** の順に移動して、*インポートした PFX 証明書用コネクタをインストールする手順*に従います。 ポータルのダウンロード リンクを使用して、インストーラー **PfxCertificateConnectorBootstrapper.exe** のダウンロードを開始します。 
+  S/MIME メールの暗号化の使用を計画している場合は、Intune ポータルを使用して、PFX 証明書のインポートをサポートする *PFX Certificate Connector* をダウンロードします。  **[デバイス構成]**  >  **[証明書コネクタ]**  >  **[追加]** の順に移動して、*インポートした PFX 証明書用コネクタをインストールする手順*に従います。 ポータルのダウンロード リンクを使用して、インストーラー **PfxCertificateConnectorBootstrapper.exe** のダウンロードを開始します。 
 
   各 Intune テナントでは、このコネクタの 1 つのインスタンスがサポートされます。 Microsoft Intune Certificate Connector のインスタンスと同じサーバー上に、このコネクタをインストールできます。
 
   このコネクタでは、特定のユーザーを対象にした S/MIME メールの暗号化のために Intune にインポートされる PFX ファイルに対する要求を処理します。  
 
   このコネクタは、新しいバージョンが利用可能になったときに自動更新することができます。 更新機能を使用するには、次の操作を実行する必要があります。
-  - インポートした PFX Certificate Connector for Microsoft Intune をサーバーにインストールします。  
+  - PFX Certificate Connector for Microsoft Intune をサーバーにインストールします。  
   - 重要な更新プログラムを自動的に受け取るには、確実にファイアウォールがオープンになっていることを確認し、コネクタがポート **443** で **autoupdate.msappproxy.net** にコンタクトできるようにします。   
 
-  コネクタがアクセスできるようにする必要があるすべてのネットワーク エンドポイントについて詳しくは、「[Microsoft Intune Certificate Connector](intune-endpoints.md)」をご覧ください。
+  Intune とコネクタがアクセスできる必要があるネットワーク エンドポイントについて詳しくは、「[Microsoft Intune のネットワーク エンドポイント](intune-endpoints.md)」をご覧ください。
 
 - **Windows Server**:  
   Windows Server をホストに使用します。
@@ -81,8 +83,8 @@ Intune で PKCS 証明書を使用するには、次のインフラストラク�
   - 認証および S/MIME メールの署名のシナリオ用の Microsoft Intune Certificate Connector
   - S/MIME メールの暗号化シナリオ用の PFX Certificate Connector for Microsoft Intune
 
-  同じサーバー上に両方のコネクタ (*Microsoft Intune Certificate Connector* と *PFX Certificate Connector*) をインストールすることができます。
-
+  Intune では、*Microsoft Intune Certificate Connector* と同じサーバー上に *PFX Certificate Connector* をインストールすることができます。
+  
 ## <a name="export-the-root-certificate-from-the-enterprise-ca"></a>エンタープライズ CA からルート証明書をエクスポートする
 
 VPN、WiFi、またはその他のリソースを使用してデバイスを認証するには、デバイスにルートまたは中間の CA 証明書が必要です。 次の手順では、エンタープライズ CA から必要な証明書を取得する方法について説明します。
@@ -134,9 +136,7 @@ VPN、WiFi、またはその他のリソースを使用してデバイスを認�
 
 14. エンタープライズ CA からサインアウトします。
 
-## <a name="download-install-and-configure-the-certificate-connectors"></a>証明書コネクタをダウンロードし、インストールして、構成する
-
-### <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune 証明書コネクタ
+## <a name="download-install-and-configure-the-microsoft-intune-certificate-connector"></a>Microsoft Intune Certificate Connector のダウンロード、インストール、および構成
 
 > [!IMPORTANT]  
 > Microsoft Intune Certificate Connector を、発行元証明機関 (CA) にインストールすることはできません。代わりに、別の Windows サーバーにインストールする必要があります。  
@@ -162,21 +162,6 @@ VPN、WiFi、またはその他のリソースを使用してデバイスを認�
 
 > [!NOTE]  
 > Microsoft Intune Certificate Connector では、TLS 1.2 がサポートされています。 TLS 1.2 がコネクタをホストするサーバーにインストールされている場合、コネクタは TLS 1.2 を使用します。 それ以外の場合は、TLS 1.1 が使用されます。 現在、デバイスとサーバー間の認証には、TLS 1.1 が使用されています。
-
-### <a name="pfx-certificate-connector-for-microsoft-intune"></a>PFX Certificate Connector for Microsoft Intune
-
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-2. **[デバイス構成]**  >  **[証明書のコネクタ]**  >  **[追加]** の順に選択します。
-3. PFX Certificate Connector for Microsoft Intune をダウンロードして保存します。 コネクタをインストールするサーバーからアクセスできる場所に保存します。
-4. ダウンロードが完了したら、サーバーにサインインします。 次のことを行います。
-
-    1. .NET Framework 4.6 以降がインストールされていることを確認します。PFX Certificate Connector for Microsoft Intune で必要となるからです。 .NET 4.6 Framework がインストールされていない場合は、インストーラーによって自動的にインストールされます。
-    2. インストーラー (PfxCertificateConnectorBootstrapper.exe) を実行し、既定の場所をそのまま使用して、コネクタを `Program Files\Microsoft Intune\PFXCertificateConnector` にインストールします。
-    3. コネクタ サービスはローカル システム アカウントの下で実行されます。 インターネットにアクセスするのにプロキシが必要な場合は、ローカル サービス アカウントがサーバー上のプロキシ設定にアクセスできることを確認します。
-
-5. インストール後、PFX Certificate Connector for Microsoft Intune によって **[登録]** タブが開かれます。 Intune への接続を有効にするには、 **[サインイン]** を選択し、Azure 全体管理者のアクセス許可または Intune 管理者のアクセス許可を持つアカウントを入力します。
-6. ウィンドウを閉じます。
-7. Azure portal に戻ります ( **[Intune]**  >  **[デバイス構成]**  >  **[証明書のコネクタ]** )。 しばらくすると、緑のチェックマークが表示され、 **[接続の状態]** が **[アクティブ]** になります。 これでコネクタ サーバーは Intune と通信できます。
 
 ## <a name="create-a-trusted-certificate-profile"></a>信頼済み証明書プロファイルを作成する
 
@@ -226,31 +211,6 @@ VPN、WiFi、またはその他のリソースを使用してデバイスを認�
 
    > [!NOTE]
    > Android エンタープライズ プロファイルを使用しているデバイスでは、PKCS 証明書プロファイルを使用してインストールされた証明書は、デバイス上に表示されません。 証明書の展開に成功したことを確認するには、Intune コンソール上でプロファイルの状態を確認します。
-
-## <a name="create-a-pkcs-imported-certificate-profile"></a>PKCS のインポートされた証明書プロファイルを作成する
-
-任意の CA から特定のユーザーに向けて以前に発行された証明書を Intune にインポートすることができます。 インポートした証明書は、ユーザーが登録している各デバイスにインストールされます。 S/MIME メールの暗号化は、既存の PFX 証明書を Intune にインポートするための最も一般的なシナリオです。 ユーザーは、メールを暗号化するための証明書を多数持っている場合があります。 それらの証明書の秘密キーはユーザーのデバイスのすべてに存在している必要があるので、以前に暗号化されたメールを暗号化解除することができます。
-
-証明書を Intune にインポートするには、[GitHub で提供されている PowerShell コマンドレット](https://github.com/Microsoft/Intune-Resource-Access)を使用できます。
-
-証明書を Intune にインポートしたら、 **[PKCS のインポートされた証明書]** プロファイルを作成し、それを Azure Active Directory グループに割り当てます。
-
-1. [Azure portal](https://portal.azure.com) で、 **[Intune]**  >  **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
-2. 次のプロパティを入力します。
-
-    - プロファイルの**名前**
-    - オプションで説明を設定
-    - プロファイルをデプロイする**プラットフォーム**
-    - **[プロファイルの種類]** に **[PKCS のインポートされた証明書]** を設定
-
-3. **[設定]** に移動し、次のプロパティを入力します。
-
-    - **使用目的**:このプロファイルに対してインポートされた証明書の目的です。 管理者は、証明書をさまざまな目的でインポートしてある場合があります (認証、S/MIME 署名、S/MIME 暗号化など)。 証明書プロファイル内で選択された使用目的によって、証明書プロファイルは適切なインポートされた証明書と対応させられます。
-    - **[証明書の有効期間]** : 証明書テンプレートを変更していない場合、このオプションはおそらく 1 年に設定されています。
-    - **キー記憶域プロバイダー (KSP)** :Windows では、デバイス上のキーを格納する場所を選択します。
-
-4. **[OK]**  >  **[作成]** を選択してプロファイルを保存します。
-5. 1 つ以上のデバイスに新しいプロファイルを割り当てる場合は、[Microsoft Intune のデバイス プロファイルの割り当て](device-profile-assign.md)に関するページをご覧ください。
 
 ## <a name="whats-new-for-connectors"></a>コネクタの新機能
 2 つの証明書コネクタの更新プログラムは、定期的にリリースされます。 コネクタが更新された場合、その変更についてここから確認することができます。 

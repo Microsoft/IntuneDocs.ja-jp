@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c474ac2eccf90e829abe753c82d40bdfae9146ec
-ms.sourcegitcommit: 5bb46d3c0bf8c5595132c4200849b1c4bcfe7cdb
+ms.openlocfilehash: 8b41405e2256d6d2608b05a9c7e8a40cbb3ab349
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "70376922"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071066"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10 テンプレートを使用し、Microsoft Intune でグループ ポリシー設定を構成する
 
@@ -36,7 +36,7 @@ Windows の設定は、Active Directory (AD) のグループ ポリシー (GPO) 
 
 ## <a name="before-you-begin"></a>始める前に
 
-- これらの設定の一部は、Windows 10 バージョン 1703 (RS2) 以降で使用可能です。 最適なエクスペリエンスを得るには、Windows 10 Enterprise バージョン 1903 (19H1) 以降を使用することをお勧めします。
+- これらの設定の一部は、Windows 10 バージョン 1703 (RS2) 以降で使用可能です。 すべての Windows エディションに含まれているわけではない設定もあります。 最適なエクスペリエンスを得るには、Windows 10 Enterprise バージョン 1903 (19H1) 以降を使用することをお勧めします。
 
 - Windows の設定では、[Windows ポリシー CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) が使用されます。 CSP は、Home、Professional、Enterprise など、さまざまなエディションの Windows で動作します。 CSP が特定のエディションで動作するかどうかを確認するには、[Windows ポリシー CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) に移動してください。
 

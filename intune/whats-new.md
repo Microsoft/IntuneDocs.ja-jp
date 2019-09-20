@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48474ca9fcfafcd050b7ef9c5a64adb56388b9a4
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 7b7b4453d441d2f2367b19a6bf0505dabd8e6e48
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842144"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061672"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune の新機能
 
@@ -54,6 +54,21 @@ ms.locfileid: "70842144"
 
 <!-- ########################## -->
 
+## <a name="week-of-september-16-2019"></a>2019 年 9 月 16 日の週
+
+### <a name="app-management"></a>アプリ管理
+
+#### <a name="macos-support-for-web-apps----3174427---"></a>Web アプリの macOS によるサポート <!-- 3174427 -->
+Web アプリは、Web 上の URL へのショートカットを追加できるようにするもので、macOS ポータル サイトを使用して Dock にインストールできます。 エンドユーザーは、macOS ポータル サイト内の Web アプリ用のアプリの詳細ページから **[インストール]** アクションにアクセスできます。 **Web リンク** アプリの種類について詳しくは、「[Microsoft Intune にアプリを追加する](apps-add.md)」と「[Web アプリを Microsoft Intune に追加する](web-app.md)」をご覧ください。
+
+#### <a name="macos-support-for-vpp-apps----3173501----"></a>VPP アプリの macOS によるサポート <!-- 3173501  -->
+Apple Business Manager を使用して購入した macOS アプリは、Intune 内で Apple VPP トークンが同期されるとコンソールに表示されます。 Intune コンソールを使用して、グループのデバイスおよびユーザーベースのライセンスの割り当て、取り消し、再割り当てを行うことができます。 Microsoft Intune は、ご自身の会社で使用するために購入した VPP アプリを管理するのに役立ちます。
+- アプリ ストアからライセンス情報を報告する。
+- 使用しているライセンスの数を追跡記録する。
+- 自分が所有しているより多くアプリのコピーをインストールしないようにする。
+
+Intune と VPP の詳細については、「[Microsoft Intune によるボリューム購入アプリとブックの管理](vpp-apps.md)」を参照してください。
+
 ## <a name="week-of-september-9-2019"></a>2019 年 9 月 9 日の週
 
 ### <a name="app-management"></a>アプリ管理
@@ -64,6 +79,10 @@ ms.locfileid: "70842144"
 - ユーザーのプロファイルを表示するページが追加されました。
 - ユーザーがアクション可能な通知 (例: デバイス設定の更新が必要) の表示がアプリに追加されました。
 - カスタム プッシュ通知の表示がサポートされるようになり、iOS と Android 用のポータル サイト アプリに最近追加されたサポートと連携します。 詳細は、「[Intune でカスタム通知を送信する](custom-notifications.md)」を参照してください。
+
+#### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993---"></a>iOS デバイスの場合は、ポータル サイトの登録プロセスのプライバシー画面をカスタマイズします <!-- 4394993 -->
+Markdown を使用すると、iOS の登録時にエンド ユーザーに表示されるポータル サイトのプライバシー画面をカスタマイズできます。 具体的には、組織がデバイス上で参照または実行できない項目の一覧をカスタマイズできます。 詳しくは、[Intune ポータル サイト アプリを構成する方法](company-portal-app.md#privacy-statement-customization)に関するページをご覧ください。
+
 
 ## <a name="week-of-september-2-2019"></a>2019 年 9 月 2 日の週
 
@@ -217,7 +236,7 @@ Android デバイス管理者の登録オプションが、[Android 登録] ペ�
 #### <a name="skip-more-screens-in-setup-assistant---4877451----"></a>セットアップ アシスタントにある画面をさらにスキップする <!--4877451  -->
 Device Enrollment Program プロファイルを設定して、次のセットアップ アシスタントの画面をスキップできます。
 - iOS の場合
-    - 外観
+    - 表示形式
     - 簡易言語
     - 優先する言語
     - デバイスからデバイスへの移行
@@ -228,7 +247,7 @@ Device Enrollment Program プロファイルを設定して、次のセットア
 セットアップ アシスタントのカスタマイズの詳細については、[iOS 用の Apple 登録プロファイルの作成](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)および [macOS 用の Apple 登録プロファイルの作成](device-enrollment-program-enroll-macos.md#create-an-apple-enrollment-profile)に関するページを参照してください。
 
 #### <a name="add-a-user-column-to-the-autopilot-device-csv-upload-process----3823054---"></a>Autopilot デバイスの CSV アップロード プロセスにユーザー列を追加する <!-- 3823054 -->
-Autopilot デバイスの CSV アップロードにユーザー列を追加できるようになりました。 これにより、CSV をインポートするときにユーザーを一括で割り当てることができます。 CSV 内の行の新しい形式は、シリアル番号、Windows 製品 ID、ハードウェア ハッシュ、オプションのグループ タグ、オプションの割り当てられたユーザー、のようになります。 詳細については、「[Windows Autopilot を使用して Intune に Windows デバイスを登録する](enrollment-autopilot.md)」を参照してください。
+Autopilot デバイスの CSV アップロードにユーザー列を追加できるようになりました。 これにより、CSV をインポートするときにユーザーを一括で割り当てることができます。 詳細については、「[Windows Autopilot を使用して Intune に Windows デバイスを登録する](enrollment-autopilot.md)」を参照してください。
 
 
 ### <a name="device-management"></a>デバイス管理

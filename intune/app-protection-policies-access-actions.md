@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8cf55084951c3a423b79e4588f8814b5e73ce8e8
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: a038f55f6dbdd894742a8712c878e77557a77210
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70063015"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061540"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Intune でアプリ保護ポリシーの条件付き起動アクションを使用してデータを選択的にワイプする
 
@@ -44,7 +44,7 @@ Intune のアプリ保護ポリシーを利用することで、エンド ユー
 8. ユーザーが要件を満たさない場合に講じる**アクション**を選択します。 場合によっては、1 つの設定で複数のアクションを設定できます。 詳細については、「[アプリ保護ポリシーを作成して割り当てる方法](app-protection-policies.md)」を参照してください。
 
 >[!NOTE]
-> **デバイス モデルまたはデバイス製造元**の設定を使用するには、モデル識別子の一覧をセミコロンで区切って入力します。 複数の値を含む一覧でのスペースの使用は避けてください。 これらの値では大文字と小文字が区別されません。 
+> **デバイス モデルまたはデバイス製造元**の設定を使用するには、モデル識別子 (iOS) またはデバイス製造元 (Android) の一覧をセミコロンで区切って入力します。 複数の値を含む一覧でのスペースの使用は避けてください。 これらの値では大文字と小文字が区別されません。 
 
 ## <a name="policy-settings"></a>ポリシー設定 
 

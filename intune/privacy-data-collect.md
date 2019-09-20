@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d96167eb37ac7c3c90bad82783e9ce06814f8c88
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 08066c0742ad4ad02f907e55cc84eb65068c9b99
+ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884774"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "70986418"
 ---
 # <a name="data-collection-in-intune"></a>Intune でのデータ収集
 
@@ -33,6 +33,9 @@ ms.locfileid: "67884774"
 - 診断、パフォーマンス、使用状況の情報。
 
 Intune では、これらのソースから、[識別済み](#identified-data)、[匿名化済み](#pseudonymized-data)、[集計済み](#aggregated-data)の 3 つのカテゴリに分類される情報が収集されます。
+
+> [!NOTE]
+> Microsoft では、いかなる理由でも、Microsoft のサービスによって収集されたデータを第三者に販売することはありません。
 
 ## <a name="identified-data"></a>識別済みデータ
 

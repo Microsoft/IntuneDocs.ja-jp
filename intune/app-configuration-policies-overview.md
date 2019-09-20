@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cda0453009855d96e7c13e170ba908479a0773ea
-ms.sourcegitcommit: 513e805bbea8bf652c2901dfc5460e34946077df
+ms.openlocfilehash: c0cbc2c7334675e91450b9c2d7129a098498d978
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70160579"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061589"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 用アプリ構成ポリシー
 
 アプリ構成ポリシーを使用すると、エンドユーザーに割り当てられるポリシーに、アプリの実行前に構成設定を割り当てることができるため、アプリ設定の問題を排除するのに役立ちます。 エンドユーザーのデバイスでアプリを構成すると、設定が自動的に提供されるので、エンドユーザーが操作する必要はありません。 構成設定はアプリごとに一意です。 
 
-iOS アプリと Android アプリの両方に構成設定を提供するアプリ構成ポリシーを作成し、使用することができます。 これらの構成設定では、アプリの構成と管理に対する[業界の標準的なアプローチ](https://www.appconfig.org/)を使用して、アプリをカスタマイズできます。 構成ポリシーの設定は、通常、アプリの初回実行時に、アプリでこれらの設定が確認されるときに使用されます。 
+iOS アプリと Android アプリの両方に構成設定を提供するアプリ構成ポリシーを作成し、使用することができます。 これらの構成設定では、アプリの構成と管理を使用して、アプリをカスタマイズできます。 構成ポリシーの設定は、通常、アプリの初回実行時に、アプリでこれらの設定が確認されるときに使用されます。 
 
 たとえば、アプリ構成設定では、次の詳細のいずれかを指定する必要があります。
 
@@ -60,7 +60,7 @@ Intune でアプリ構成ポリシーを使用するには、次の 2 つのオ�
 ## <a name="apps-that-support-app-configuration"></a>アプリ構成をサポートするアプリ
 
 ### <a name="managed-devices"></a>マネージド デバイス
-サポートするアプリにアプリ構成ポリシーを使用できます。 Intune でアプリ構成をサポートするには、[AppConfig Community](https://www.appconfig.org/members) による定義に従って、アプリ構成の使用をサポートするようにアプリが記述されている必要があります。 詳細については、アプリのベンダーに問い合わせてください。
+サポートするアプリにアプリ構成ポリシーを使用できます。 Intune 内でアプリ構成をサポートするには、OS による定義に従って、アプリ構成の使用をサポートするようにアプリが記述されている必要があります。 サポートするアプリ構成キーについて詳しくは、アプリ ベンダーにお問い合わせください。
 
 ### <a name="managed-apps"></a>Managed apps
 [Intune App SDK](app-sdk.md) をアプリに組み込むか、[Intune アプリ ラッピング ツール](apps-prepare-mobile-application-management.md)を使用してアプリの開発後にラップして、基幹業務アプリを準備することができます。 Intune App SDK では、アプリの開発者が必要なコード変更が最小限に抑えられます。 詳細については、「[Intune App SDK の概要](app-sdk.md)」を参照してください。 Intune App SDK と Intune アプリ ラッピング ツールの比較については、「[アプリ保護ポリシーを利用するために基幹業務アプリで準備を行う](apps-prepare-mobile-application-management.md#feature-comparison)」を参照してください。

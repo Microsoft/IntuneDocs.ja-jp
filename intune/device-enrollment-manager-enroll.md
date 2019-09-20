@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
-ms.reviewer: damionw
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd870a788ff5cac7e0aff47c5b8175c0bdfacff2
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: cbfe0e30794ddfe5b2f089d50456f9cbdd031e6d
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427292"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071381"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>デバイス登録マネージャー アカウントを使用してデバイスを Intune に登録する
 
@@ -39,7 +39,7 @@ DEM ユーザー アカウントと DEM ユーザー アカウントを使用し
 - デバイスでは、Apple ID デバイス ライセンスがある場合に VPP アプリをインストールすることができます。
 - Windows 10 1803+ 以降の例外と共にデバイスが条件付きアクセスをブロックされます
 - DEM アカウントに登録されているすべてのデバイスを Intune で管理するには、適切にライセンスする必要があります。 ライセンスは、Intune ユーザー ライセンスまたは Intune デバイス ライセンスにすることができます。
-
+- DEM アカウントを使用して [Android Enterprise 仕事用プロファイル デバイスを登録](android-work-profile-enroll.md)する場合、アカウントあたりの登録可能なデバイスは 10 台に制限されます。
 
 
 ## <a name="add-a-device-enrollment-manager"></a>デバイス登録マネージャーの追加
