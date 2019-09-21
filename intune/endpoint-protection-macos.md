@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/02/2019
+ms.date: 09/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97674627ac1894aa7fcf3f6a6550677b89e1a150
-ms.sourcegitcommit: 3f0cc80c5dbb4d04519c5aa98eae8426dad8cb30
+ms.openlocfilehash: 80b904893f118bac1f4d0d79da0cd10498b9f2ed
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70158015"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71162862"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Intune での MacOS エンドポイント保護設定  
 
@@ -105,13 +105,6 @@ Apple FileVault の設定の詳細については、Apple developer コンテン
     - **無効**-サインアウト時にプロンプトを無効にします。
 
     **既定値**: 未構成  
-
-     > [!IMPORTANT]  
-     > **[サインアウト時のプロンプトを無効にする]** 設定が *[無効にする]* に設定されているとき、既知の問題があります。 *[無効にする]* に設定されているとき、 **[バイパスを許可する回数]** の設定に値を設定する必要があります。 *[未構成]* に設定することはできません。 *[未構成]* に設定されている場合、デバイスでプロファイルは失敗します。 このシナリオでは、デバイスからはその **[プロファイルの状態に関する概要]** が **[エラー]** として報告され、その他の詳細はありません。
-     > 
-     > **[サインアウト時のプロンプトを無効にする]** を *[未構成]* に設定すると、 **[バイパスを許可する回数]** は *[未構成]* にするか、値を指定できます。  
-     > 
-     > この問題は、今後の更新プログラムで解決される予定です。 
 
   - **バイパスが許可される回数**  
   ユーザーがサインインするために FileVault が必要になる前に、ユーザーが FileVault を有効にするためのプロンプトを無視できる回数を設定します。  

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9314617640d0bfd7f3a7b0cd0ba572e99ede53f9
-ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
+ms.openlocfilehash: 68ffdcccdd3588ac5127e6c54426acfdcad17d34
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298397"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071703"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Intune でのポリシーとプロファイルのトラブルシューティング
 
@@ -30,8 +30,8 @@ Microsoft Intune には、トラブルシューティング機能がいくつか
 
 この記事では、一般的なトラブルシューティング手法の一覧を示し、発生する可能性があるいくつかの問題について説明します。
 
-## <a name="check-tenant-status"></a>テナントの状態を確認してください。
-チェック、[テナントの状態](tenant-status.md)し、サブスクリプションがアクティブであることを確認します。 アクティブなインシデントや、ポリシーまたはプロファイルの展開に影響を与える可能性アドバイザリの詳細を表示することもできます。
+## <a name="check-tenant-status"></a>テナントの状態の確認
+テナントの[状態](tenant-status.md)を確認し、サブスクリプションがアクティブであることを確認します。 また、ポリシーまたはプロファイルの展開に影響する可能性があるアクティブなインシデントとアドバイザリの詳細を表示することもできます。
 
 ## <a name="use-built-in-troubleshooting"></a>組み込みのトラブルシューティングを使用する
 
@@ -118,10 +118,10 @@ Microsoft Intune には、トラブルシューティング機能がいくつか
 
 ## <a name="policy-troubleshooting-resources"></a>ポリシーのトラブルシューティングに関するリソース
 
-- [IOS または Android のポリシーをデバイスに適用されないトラブルシューティング](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154)(別の Microsoft サイトを開きます)
-- [Windows 10 の Intune ポリシーのエラーのトラブルシューティング](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures/)(ブログが表示されます)
-- [Windows 10 の CSP のカスタム設定のトラブルシューティングを行う](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune)(別の Microsoft サイトを開きます)
-- [Windows 10 のグループ ポリシーと Intune MDM ポリシー](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (別の Microsoft サイトを開きます)
+- [IOS または Android のポリシーがデバイスに適用されていない場合のトラブルシューティング](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154)(別の Microsoft サイトを開きます)
+- [Windows 10 Intune ポリシーエラーのトラブルシューティング](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/)(ブログを開きます)
+- [Windows 10 の CSP カスタム設定のトラブルシューティング](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune)(別の Microsoft サイトを開きます)
+- [Windows 10 グループポリシーと INTUNE MDM ポリシーの比較](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/)(別の Microsoft サイトを開きます)
 
 ## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>アラート: アクセス ルールを Exchange に保存できませんでした
 
@@ -135,7 +135,7 @@ Microsoft Intune には、トラブルシューティング機能がいくつか
 
 Windows Phone デバイスから、MDM または EAS を使用して設定されたセキュリティ ポリシーのセキュリティを一度設定した後に緩くすることはできません。 たとえば、**パスワードの最小文字数** を 8 に設定し、次に 4 に減らしてみます。 より制限の厳しいポリシーがデバイスに適用されます。
 
-Windows 10 デバイスは、ポリシー (配置を停止) の割り当てを解除するときにセキュリティ ポリシーを削除することはできません。 割り当てられた、ポリシーのままにし、既定値にセキュリティ設定を変更する必要があります。
+Windows 10 デバイスでは、ポリシーの割り当てを解除したときにセキュリティポリシーが削除されない場合があります (展開の停止)。 ポリシーを割り当てたままにして、セキュリティ設定を既定値に戻すことが必要になる場合があります。
 
 ポリシーを安全度の低い値に変更する場合、デバイスのプラットフォームによっては、セキュリティ ポリシーをリセットしなければならない場合があります。
 

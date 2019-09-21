@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa723942c9633a3851f75e3e08bf843cbb4bdf55
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 850c7a28c4df1638e9f635713695dcf2e914ffce
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842157"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166937"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>アプリのインストールに関する問題のトラブルシューティング
 
@@ -61,7 +61,7 @@ Intune では、特定のユーザーのデバイスにインストールされ�
   3. [ [Azure Active Directory のユーザー](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers)] に移動します。
   4. 影響を受けるユーザーを選択し、 **[デバイス]** をクリックします。
   5. ユーザーが設定された制限を超えている場合は、不要になった古いレコードを削除します。
-- IOS DEP デバイスの場合は、ユーザーが Intune デバイスの概要ブレードで **[ユーザーによる登録]** として表示されていることを確認します。 NA と表示されている場合は、Intune ポータルサイトの構成ポリシーを展開します。 詳細については、[ポータル サイト アプリの構成](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices)に関する記事をご覧ください。
+- IOS DEP デバイスの場合は、ユーザーが Intune デバイスの概要ブレードで **[ユーザーによる登録]** として表示されていることを確認します。 NA と表示されている場合は、Intune ポータルサイトの構成ポリシーを展開します。 詳細については、[ポータル サイト アプリの構成](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices)に関する記事をご覧ください。
 
 ## <a name="win32-app-installation-troubleshooting"></a>Win32 アプリのインストールのトラブルシューティング
 

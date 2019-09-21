@@ -18,23 +18,25 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 167d091f212536ed94e3f4ce0c103649e4a2e537
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: c518e0eeb18f51fa17d15a72735e319aef1d647d
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413822"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167483"
 ---
 # <a name="enable-code-integrity"></a>コードの整合性を有効にする
 
-組織は、PC と呼ばれる脅威保護機能を有効にする必要があります*コードの整合性*します。 ドライバーとシステム ファイルの破損または悪意のあるソフトウェアの兆候のデバイスでコードの整合性を確認します。 もう 1 つのセキュリティ機能と呼ばれるデバイスで動作するコードの整合性、 [*セキュア ブート*](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot)も有効にする必要があります。 
+組織では、*コード整合性*と呼ばれる脅威保護機能を使用して PC を有効にすることが必要になる場合があります。 コードの整合性では、破損または悪意のあるソフトウェアの署名について、デバイス上のドライバーとシステムファイルをチェックします。 コードの整合性をデバイスで機能させるには、[*セキュアブート*](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot)と呼ばれる別のセキュリティ機能も有効にする必要があります。
 
-組織にお問い合わせください場合は、PC は、コードの整合性が無効になっているため、準拠していない場合は、IT チームをサポートします。 次回デバイスを起動するコードの整合性をトリガーするセキュリティで保護のブートを有効にする助けになります。 
+コードの整合性が無効になっているために PC が準拠していない場合は、組織の IT サポートチームにお問い合わせください。 セキュアブートを有効にすることができます。これにより、次回デバイスを起動したときにコードの整合性がトリガーされます。
 
-高度なデバイスのユーザーとして自分自身を指定し、独自の手順を実行する場合は、次を参照してください。[セキュア ブートを再度有効にする](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot)します。
+自分自身をアドバンストデバイスユーザーとして識別し、自分で手順を実行する場合は、「[セキュアブートの再有効化](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot)」を参照してください。
 
-## <a name="additional-resources-for-it-administrators"></a>IT 管理者向けの他のリソース  
-Intune 管理者し Intune のデバイス正常性のコンプライアンス設定の詳細をする場合を参照してください。 [Intune で Windows 10 デバイス用のデバイス コンプライアンス ポリシーを追加](https://docs.microsoft.com/intune/compliance-policy-create-windows)します。 Intune で実行できるコンプライアンス アクションの詳細については、次を参照してください。、 [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results)します。  
+## <a name="additional-resources-for-it-administrators"></a>IT 管理者向けのその他のリソース
 
-## <a name="next-steps"></a>次の手順  
+Intune 管理者で、Intune のデバイス正常性のコンプライアンス設定の詳細については、「 [intune で Windows 10 デバイス用のデバイスコンプライアンスポリシーを追加](https://docs.microsoft.com/intune/compliance-policy-create-windows.md)する」を参照してください。 Intune で実行できるコンプライアンスアクションの詳細については、「 [HEALTHATTESTATION CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results)」を参照してください。  
+
+## <a name="next-steps"></a>次の手順
+
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

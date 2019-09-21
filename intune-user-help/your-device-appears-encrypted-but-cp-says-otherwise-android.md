@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d63ecdb23b107d844c37d7a805247092116618e1
-ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
+ms.openlocfilehash: 0ec52069c4c53c464cfe5a1e17718ba6725fd0b5
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69022743"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167432"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>デバイスは暗号化されますが、それ以外の場合は
 
@@ -48,16 +48,17 @@ ms.locfileid: "69022743"
 
 ## <a name="specific-manufacturer-issues"></a>特定の製造元の問題
 
-バージョン 7.0 以上の一部の Android デバイスでは、特定の Android プラットフォームの標準に準拠していない方法でデータが暗号化されます。 これらの暗号化方法では、デバイス情報が危険にさらされます。 そのため、これらのデバイスはサポートされていません。 
+バージョン 7.0 以上の一部の Android デバイスでは、特定の Android プラットフォームの標準に準拠していない方法でデータが暗号化されます。 これらの暗号化方法では、デバイス情報が危険にさらされます。 そのため、これらのデバイスはサポートされていません。
 
-サポートされている Android デバイスの完全でない一覧については、「 [Intune でサポートされるオペレーティングシステムとブラウザー](https://docs.microsoft.com/intune/supported-devices-browsers#supported-samsung-knox-standard-devices)」を参照してください。 デバイスが一覧に表示されない場合は、デバイスの製造元を参照するか、サポート担当者に問い合わせてください。 
+サポートされている Android デバイスの完全でない一覧については、「 [Intune でサポートされるオペレーティングシステムとブラウザー](https://docs.microsoft.com/intune/supported-devices-browsers.md#supported-samsung-knox-standard-devices)」を参照してください。 デバイスが一覧に表示されない場合は、デバイスの製造元を参照するか、サポート担当者に問い合わせてください。
 
 > [!Note]
-> Microsoft では、製造元と協力して、テスト中に見つかった問題やユーザーから報告された問題に対処しています。 新しい情報が得られたらこの記事の内容を更新します。 
+> Microsoft では、製造元と協力して、テスト中に見つかった問題やユーザーから報告された問題に対処しています。 新しい情報が得られたらこの記事の内容を更新します。
 
-## <a name="update-devices"></a>デバイスの更新   
+## <a name="update-devices"></a>デバイスの更新
 
 デバイスを最新バージョンの Android に更新していない場合は、デバイスの**設定**アプリにアクセスし、 **[更新]** を選択します。  
 
-## <a name="next-steps"></a>次の手順   
+## <a name="next-steps"></a>次の手順
+
 サポートが必要な場合は、 会社のサポートに問い合わせるか (連絡先情報については[ポータル Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください)、または <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android チーム</a>にご連絡ください。  

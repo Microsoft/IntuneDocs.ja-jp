@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37a1c9fad9b77e39145f1b4183b8176fb1677613
-ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
+ms.openlocfilehash: 99dcf53d7571dfa660ee669c1d7adcea65f0797e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69022868"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167732"
 ---
 # <a name="what-is-device-management"></a>デバイス管理とは 
 
@@ -28,7 +28,7 @@ ms.locfileid: "69022868"
 
 デバイス管理プロバイダーを使用することで、組織では、承認されたユーザーとデバイスだけが機密情報にアクセスできるようにすることができます。 同様に、デバイスのユーザーは、自分のデバイスが組織のセキュリティ要件を満たしていることがわかっているため、安心して自分の電話から作業データにアクセスできます。 組織には、**リソースを保護するために何を使用すべきか**という疑問があると考えられます。
 
-その答えが [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune) です。 Intune ではモバイル デバイス管理 (MDM) とモバイル アプリケーション管理 (MAM) を行います。 MDM または MAM ソリューションの主要なタスクには次のようなものがあります。
+その答えが [Microsoft Intune](introduction-intune.md) です。 Intune ではモバイル デバイス管理 (MDM) とモバイル アプリケーション管理 (MAM) を行います。 MDM または MAM ソリューションの主要なタスクには次のようなものがあります。
 
 - 多様なモバイル環境をサポートし、iOS、Android、Windows、および macOS デバイスを安全に管理します。
 - デバイスやアプリを組織のセキュリティ要件に準拠させます。
@@ -44,7 +44,7 @@ Microsoft などの多くの組織で、Intune を使用して、ユーザーが
 
 Intune により、ユーザーごと、および iOS、macOS、Android、Windows などの各デバイスで実行されるさまざまなプラットフォームごとに、複数のデバイスを管理できます。 Intune では、デバイス プラットフォームによってポリシーと設定が区別されます。 そのため、特定のプラットフォームのデバイスを簡単に管理および表示できます。
 
-**[一般的なシナリオ](https://docs.microsoft.com/intune/common-scenarios)** は、モバイル デバイスを使用する際のよくある疑問を Intune によって解決する方法を確認できる優れたリソースです。 以下に関するシナリオを参照できます。  
+**[一般的なシナリオ](common-scenarios.md)** は、モバイル デバイスを使用する際のよくある疑問を Intune によって解決する方法を確認できる優れたリソースです。 以下に関するシナリオを参照できます。  
 - オンプレミスの Exchange での電子メールの保護
 - Office 365 への安全なアクセス
 - 個人のデバイスを使用して、組織のリソースにアクセスする
@@ -52,16 +52,16 @@ Intune により、ユーザーごと、および iOS、macOS、Android、Window
 ## <a name="integration-with-secure-and-protect-services"></a>セキュリティおよび保護サービスとの統合
 すべてのデバイス管理ソリューションの主要なタスクは、セキュリティと保護を実現することです。 このタスクを実現するために、Intune は他のサービスとの統合に大きな役割を果たします。 次に例を示します。
 
-- **Microsoft 365** は一般的な IT タスクを簡略化する重要なコンポーネントです。 Microsoft 365 管理センターでは、ユーザーを作成し、グループを管理します。 また、Intune、Azure AD などの他のサービスにもアクセスできます。 
+- **Microsoft 365** は一般的な IT タスクを簡略化する重要なコンポーネントです。 Microsoft 365 管理センターでは、ユーザーを作成し、グループを管理します。 また、Intune、Azure AD などの他のサービスにもアクセスできます。
 
   たとえば、Microsoft 365 で iOS デバイス グループを作成します。 さらに、Intune を使用して、アプリ ストアへのアクセス、AirDrop の使用、iCloud へのバックアップ、Apple の Web フィルターの使用などの iOS 機能に焦点を合わせたポリシーを iOS デバイス グループにプッシュできます。
 
 - **Windows Defender** には、Windows 10 デバイスを保護するための多くのセキュリティ機能が含まれています。 たとえば、Intune と Windows Defender を一緒に使用すると、次のことができます。 
 
-  - [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) を有効にして、モバイル デバイス上のファイルとアプリでの不審なアクティビティを検索できます。 
-  - [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) を使用して、モバイル デバイスに対するセキュリティ侵害を防ぐことができます。 また、ユーザーを企業リソースからブロックすることで、セキュリティ侵害の影響を抑えるために役立ちます。
+  - [Windows Defender SmartScreen](endpoint-protection-windows-10.md) を有効にして、モバイル デバイス上のファイルとアプリでの不審なアクティビティを検索できます。 
+  - [Microsoft Defender Advanced Threat Protection (ATP)](advanced-threat-protection.md) を使用して、モバイル デバイスに対するセキュリティ侵害を防ぐことができます。 また、ユーザーを企業リソースからブロックすることで、セキュリティ侵害の影響を抑えるために役立ちます。
 
-- **条件付きアクセス**は、Azure Active Directory の機能で、Intune とうまく統合されます。 [条件付きアクセス](https://docs.microsoft.com/intune/conditional-access)を使用することで、確実に準拠しているデバイスのみに電子メール、SharePoint、およびその他のアプリへのアクセスを許可します。 
+- **条件付きアクセス**は、Azure Active Directory の機能で、Intune とうまく統合されます。 [条件付きアクセス](conditional-access.md)を使用することで、確実に準拠しているデバイスのみに電子メール、SharePoint、およびその他のアプリへのアクセスを許可します。 
 
 ## <a name="choose-the-device-management-solution-thats-right-for-you"></a>適切なデバイス管理ソリューションの選択
 
@@ -69,7 +69,7 @@ Intune により、ユーザーごと、および iOS、macOS、Android、Window
 
 2 つ目のアプローチとして、デバイス上のアプリを管理します。 このアプローチは、**モバイル アプリケーション管理 (MAM)** と呼ばれます。 ユーザーは、個人のデバイスを使用して組織のリソースにアクセスにできます。 電子メールや SharePoint などのアプリを開くときに、ユーザーは追加の認証を求められます。 デバイスの紛失や盗難時には、デバイスからすべての組織のデータを削除できます。 
 
-[MDM と MAM](https://docs.microsoft.com/intune/byod-technology-decisions) を組み合わせて使用することもできます。
+[MDM と MAM](byod-technology-decisions.md) を組み合わせて使用することもできます。
 
 Intune をセットアップするときに、Azure portal でのみ作業してデバイスを管理するか、または Intune と Microsoft 365 を一緒に使用してデバイスを管理するかを選択することもできます。 「[Migrating mobile device management to Intune in the Azure portal](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal)」(Azure portal でモバイル デバイス管理を Intune に移行する) は Microsoft IT のケース スタディです。 このケース スタディでは、Microsoft IT が最新のデバイス管理アプローチをどのように選択したかを参照し、得られた教訓をお読みください。
 
@@ -79,20 +79,20 @@ Intune をセットアップするときに、Azure portal でのみ作業して
 
 デバイス管理の管理センターでは、次のことができます。
 
-- [デバイスの登録](https://docs.microsoft.com/intune/device-enrollment)
-- [デバイス コンプライアンスの設定](https://docs.microsoft.com/intune/device-compliance-get-started)
-- [デバイスの管理](https://docs.microsoft.com/intune/device-management)
-- [アプリの管理](https://docs.microsoft.com/intune/app-management)  
-- [iOS 電子ブック](https://docs.microsoft.com/intune/vpp-ebooks-ios)  
-- [Exchange On-premises Connector をインストールする](https://docs.microsoft.com/intune/exchange-connector-install)  
-- [ロールの管理](https://docs.microsoft.com/intune/role-based-access-control)  
+- [デバイスの登録](device-enrollment.md)
+- [デバイス コンプライアンスの設定](device-compliance-get-started.md)
+- [デバイスの管理](device-management.md)
+- [アプリの管理](app-management.md)  
+- [iOS 電子ブック](vpp-ebooks-ios.md)  
+- [Exchange On-premises Connector をインストールする](exchange-connector-install.md)  
+- [ロールの管理](role-based-access-control.md)  
 - ソフトウェア更新プログラムの管理
-  - [Windows 10 更新の管理](https://docs.microsoft.com/intune/windows-update-for-business-configure)  
-  - [iOS 更新の管理](https://docs.microsoft.com/intune/software-updates-ios)  
+  - [Windows 10 更新の管理](windows-update-for-business-configure.md)  
+  - [iOS 更新の管理](software-updates-ios.md)  
 - [Azure Active Directory](https://docs.microsoft.com/azure/active-directory)  
 - [ユーザーの管理](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [グループとメンバーの管理](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)
-- [トラブルシューティング](https://docs.microsoft.com/intune/help-desk-operators)
+- [トラブルシューティング](help-desk-operators.md)
 
 ## <a name="next-step"></a>次の手順
 MDM または MAM ソリューションの使用を開始する準備ができたら、Intune のセットアップ、デバイスの登録、およびポリシーの作成開始のためのさまざまな手順を進めます。 [Microsoft 365 のモバイル デバイス管理](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)に関する記事も推奨されるリソースです。

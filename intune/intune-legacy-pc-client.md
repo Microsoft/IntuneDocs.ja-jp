@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c626bb50868e6b966eb7c8867f4c4ff7178eadcf
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: f3891ce150ea740baa3ba18591139c66d78d9d00
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756530"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166371"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Azure コンソールと従来の Intune PC クライアントでの Intune
 
@@ -31,7 +31,7 @@ Azure で Intune を使用して組織の Windows デバイスを管理する場
 
 ## <a name="manage-windows-10-devices-by-using-mdm"></a>MDM を使用した Windows 10 デバイスの管理
 
-従来の Intune PC クライアントを使用する代わりに、[Windows 10 デバイスを管理するモバイル デバイス管理 (MDM)](https://docs.microsoft.com/intune/device-restrictions-windows-10) を使用することをお勧めします。 MDM を使用した Windows 10 デバイスの管理機能は、Azure Portal 上の Intune で提供されています。 Windows 10 の MDM には、従来の Intune PC クライアントでは提供されていない、多くの新しい管理およびセキュリティ機能があります。
+従来の Intune PC クライアントを使用する代わりに、[Windows 10 デバイスを管理するモバイル デバイス管理 (MDM)](device-restrictions-windows-10.md) を使用することをお勧めします。 MDM を使用した Windows 10 デバイスの管理機能は、Azure Portal 上の Intune で提供されています。 Windows 10 の MDM には、従来の Intune PC クライアントでは提供されていない、多くの新しい管理およびセキュリティ機能があります。
 
 ## <a name="legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>従来の PC クライアント機能が使用できるのは Silverlight コンソールのみです。
 
@@ -54,7 +54,7 @@ MDM を使用して管理できない Windows 7 では、Silverlight コンソ�
 
 ## <a name="mdm-capabilities"></a>MDM の機能
 
-PC クライアントと MDM 機能の詳細な比較については、[Windows PC をコンピューターやモバイル デバイスとして管理する場合の比較](pc-management-comparison.md)に関するページをご覧ください。 MDM の更新プログラムにより、MDM に登録されている Windows 10 デバイスに、Win 32 アプリ用のオプションの評価を含む新しい管理機能が引き続き組み込まれます。 サービスへの最新リリースの追加については、「[新機能](https://docs.microsoft.com/intune/whats-new)」をご覧ください。
+PC クライアントと MDM 機能の詳細な比較については、[Windows PC をコンピューターやモバイル デバイスとして管理する場合の比較](pc-management-comparison.md)に関するページをご覧ください。 MDM の更新プログラムにより、MDM に登録されている Windows 10 デバイスに、Win 32 アプリ用のオプションの評価を含む新しい管理機能が引き続き組み込まれます。 サービスへの最新リリースの追加については、「[新機能](whats-new.md)」をご覧ください。
 
 ## <a name="switch-from-pc-client-to-mdm"></a>PC クライアントから MDM への切り替え
 
@@ -62,9 +62,7 @@ Intune PC クライアントでの Windows 10 デバイス管理から MDM で�
 
 1. Silverlight コンソールで、**選択的ワイプ**を実行して PC クライアントからデバイスを登録解除します。
   ![[デバイスを選択的にワイプする] ラジオボタンが選択された警告ポップアップ](media/intune-legacy-pc-client/image02.png)
-2. [MDM (および/または Azure AD Join)](https://docs.microsoft.com/intune/windows-enroll) を使用してデバイスを再登録します。 
+2. [MDM (および/または Azure AD Join)](windows-enroll.md) を使用してデバイスを再登録します。
 
 ## <a name="next-steps"></a>次の手順
-[Windows デバイスの登録](https://docs.microsoft.com/intune/windows-enroll)
-
- 
+[Windows デバイスの登録](windows-enroll.md)

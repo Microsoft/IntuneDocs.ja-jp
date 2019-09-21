@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 09/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9333cda33142b9a0a4e0995b4bafe5365f7cb69f
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c15f2434f67ec08baf04883da6f9525b5f803823
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545861"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099806"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-device-in-intune"></a>ポータル サイト アプリをインストールし、Intune に iOS デバイスを登録するとどうなるか
 
@@ -37,7 +37,10 @@ ms.locfileid: "67545861"
 
 - 会社用の電子メール アカウントを自動的にセットアップする。
 
-デバイスを Intune に登録すると、使用しているデバイスの管理を会社のサポートに許可することで、デバイスに保存されている会社情報を保護しやすくすることもできます。
+> [!NOTE]
+> Microsoft では、いかなる理由でも、Microsoft のサービスによって収集されたデータを第三者に販売することはありません。  
+
+デバイスを Intune に登録すると、使用しているデバイスの管理を会社のサポートに許可することで、デバイスに保存されている会社情報を保護しやすくすることもできます。  
 
 デバイスが登録されると、会社のサポートは次のことができるようになります。
 
@@ -64,5 +67,7 @@ ms.locfileid: "67545861"
 - デバイスの音声ローミングを有効または無効にする。 音声ローミングが許可されている場合、ローミング料金がかかる可能性があります。
 
 - デバイスがローミング モード中の自動ファイル同期を有効または無効にする。 自動ファイル同期が許可されている場合、ローミング料金がかかる可能性があります。
+
+
 
 ご不明な点がある場合は、会社のサポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

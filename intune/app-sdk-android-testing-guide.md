@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa6b07c77b0d92ceb7bdc960d8c2fd754c277499
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 91b7fc7414c3a6d6517cd4b704cb5e99ddcf96d0
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713246"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167184"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developers-testing-guide"></a>Android 用 Microsoft Intune アプリ SDK 開発者テスト ガイド
 
@@ -30,20 +30,20 @@ Android 用 Microsoft Intune アプリ SDK テスト ガイドは、Intune で�
 ## <a name="prerequisite-test-accounts"></a>前提条件のテスト アカウント
 新しいアカウントは、事前にデータを生成しているかどうかにかかわらず作成できます。 新しいアカウントを作成するには:
 1. [Microsoft Demos](https://demos.microsoft.com/environments/create/tenant) に関するサイトに移動します。 
-2. モバイル デバイス管理 (MDM) が有効になるよう、[Intune をセットアップ](https://docs.microsoft.com/intune/setup-steps)します。
-3. [ユーザーを作成します](https://docs.microsoft.com/intune/users-add)。
-4. [グループを作成します](https://docs.microsoft.com/intune/groups-add)。
-5. テストに適した[ライセンスを割り当てます](https://docs.microsoft.com/intune/licenses-assign)。
+2. モバイル デバイス管理 (MDM) が有効になるよう、[Intune をセットアップ](setup-steps.md)します。
+3. [ユーザーを作成します](users-add.md)。
+4. [グループを作成します](groups-add.md)。
+5. テストに適した[ライセンスを割り当てます](licenses-assign.md)。
 
 
 ## <a name="azure-portal-policy-configuration"></a>Azure Portal ポリシー構成
-[Azure portal の Intune ブレード](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview)で[アプリ保護ポリシーを作成し、割り当てます](https://docs.microsoft.com/intune/app-protection-policies)。 [アプリ構成ポリシー](https://docs.microsoft.com/intune/app-configuration-policies-overview)も作成および Intune ブレードで割り当てられます。
+[Azure portal の Intune ブレード](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview)で[アプリ保護ポリシーを作成し、割り当てます](app-protection-policies.md)。 [アプリ構成ポリシー](app-configuration-policies-overview.md)も作成および Intune ブレードで割り当てられます。
 
 > [!NOTE]
 > アプリが Azure portal のリストにない場合、 **[その他のアプリ]** オプションを選択し、テキスト ボックスにパッケージ名を指定することで、ポリシーを使って対象とすることができます。
 
 > [!IMPORTANT]
-> アプリ構成ポリシーを適用するには、登録するユーザーが [Intune アプリ構成ポリシー](https://docs.microsoft.com/intune/app-protection-policy)の対象となっている必要があります。
+> アプリ構成ポリシーを適用するには、登録するユーザーが [Intune アプリ構成ポリシー](app-protection-policy.md)の対象となっている必要があります。
 
 ## <a name="test-cases"></a>テスト ケース
 
@@ -103,7 +103,7 @@ Android 用 Microsoft Intune アプリ SDK テスト ガイドは、Intune で�
 ### <a name="unenrollment"></a>登録解除
 管理対象アプリを会社のメールやドキュメントからリモートでワイプできます。また、個人データは、管理されなくなったとき、次のように復号されます。
 
-1. Azure portal から、[ワイプを発行します](https://docs.microsoft.com/intune/apps-selective-wipe)。
+1. Azure portal から、[ワイプを発行します](apps-selective-wipe.md)。
 2. アプリにワイプ ハンドラーが登録されていない場合、次の条件を確認してください。
     - アプリの完全ワイプが行われます。
 3. アプリで `WIPE_USER_DATA` または `WIPE_USER_AUXILARY_DATA` が登録されている場合、次の条件を確認してください。
@@ -123,7 +123,7 @@ Android 用 Microsoft Intune アプリ SDK テスト ガイドは、Intune で�
 ### <a name="app-configuration-optional"></a>アプリの構成 (省略可能)
 管理対象アプリの動作は次のように構成できます。
 
-1. アプリで何らかのアプリ構成設定が使用される場合、(管理者として) 設定できるすべての値がアプリで正しく処理されることをテストしてください。 Intune の利用にあたり、[アプリ構成ポリシー](https://docs.microsoft.com/intune/app-configuration-policies-overview)の作成および割り当てを行うことができます。
+1. アプリで何らかのアプリ構成設定が使用される場合、(管理者として) 設定できるすべての値がアプリで正しく処理されることをテストしてください。 Intune の利用にあたり、[アプリ構成ポリシー](app-configuration-policies-overview.md)の作成および割り当てを行うことができます。
 
 ## <a name="next-steps"></a>次の手順
 

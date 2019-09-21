@@ -1,6 +1,6 @@
 ---
-title: Intune ポータル サイト アプリからデバイスをリセット |Microsoft Docs
-description: Company Portal for Windows 10 から出荷時設定に、デバイスをリセットします。
+title: Intune ポータルサイト app からデバイスをリセットする |Microsoft Docs
+description: Windows 10 のポータルサイトから、デバイスを工場出荷時の設定にリセットします。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,34 +18,35 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser; intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 882248261f4386a8191067a0e8533c4c24fc2a5b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e5aff186d3850e8f9a6081168a5adc9956504019
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57567470"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163337"
 ---
-# <a name="reset-device-from-the-company-portal-app"></a>ポータル サイト アプリからデバイスをリセットします。  
+# <a name="reset-device-from-the-company-portal-app"></a>ポータルサイトアプリからデバイスをリセットする  
 
-ポータル サイト アプリからに使用される、紛失、または盗難にあったデバイスを出荷時の設定にリセットします。  
+使用済み、紛失、または盗難にあったデバイスをポータルサイトアプリの工場出荷時の設定にリセットします。  
 
-デバイスをリセットした後は、会社のポータルに表示されなくします。 既存のアプリとファイルが消去されますとは、既定の設定に復元されます。  
+デバイスをリセットすると、ポータルサイトに表示されなくなります。 既存のアプリとファイルは消去され、すぐに使用できる設定に復元されます。  
 
-1. ポータル サイトを開く。  
+
+1. ポータルサイトを開きます。  
 2. **[デバイス]** で、リセットするデバイスを選択します。   
 
-    ![ポータル サイト アプリのホーム画面で、[デバイス] セクションを強調表示のスクリーン ショットの例です。](./media/1802-cp-app-windows-home.png)  
+    ![[デバイス] セクションを強調表示しているポータルサイトアプリ (ホーム画面) のスクリーンショットの例。](./media/1802-cp-app-windows-home.png)  
 
-3. **デバイスの詳細**画面で、、**詳細**メニュー。  
+3. **[デバイスの詳細]** 画面で、 **[詳細を表示]** メニューを選択します。  
 
-    ![ポータル サイト アプリ、デバイスのスクリーン ショットの例では、他のメニュー画面で、「」を参照の強調表示を説明します。](./media/1802-cp-app-windows-device-details.png)  
+    ![ポータルサイトアプリの [デバイスの詳細] 画面のスクリーンショットの例 [詳細] メニューを強調表示します。](./media/1802-cp-app-windows-device-details.png)  
 
 4. **[リセット]** を選択します。  
 
-     ![ポータル サイト アプリ、デバイス詳細画面で、リセット操作を強調表示のスクリーン ショットの例です。 ](./media/1802-cp-app-windows-device-details-reset.png)  
+     ![ポータルサイトアプリ、デバイスの詳細画面、リセット操作の強調表示のスクリーンショットの例。 ](./media/1802-cp-app-windows-device-details-reset.png)  
 
-5. 確認するメッセージが表示されたら、**リセット**します。 デバイスは、それ自体にリセットされます。  
+5. 確認を求めるメッセージが表示されたら、 **[リセット]** を選択します。 デバイスは自動的にリセットされます。  
 
-     ![ポータル サイト アプリでは、リセット ボタンを強調表示のリセットの確認メッセージの例のスクリーン ショット。 ](./media/1802-cp-app-windows-reset-confirm.png)  
+     ![ポータルサイトアプリのスクリーンショット、確認メッセージのリセット、リセットボタンの強調表示の例。 ](./media/1802-cp-app-windows-reset-confirm.png)  
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。  
