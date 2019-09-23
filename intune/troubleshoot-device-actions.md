@@ -12,17 +12,17 @@ ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
 ROBOTS: ''
-ms.reviewer: ''
+ms.reviewer: coferro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 159e236a079adcd55ba73e8fea6f786c09d08bbd
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 8324f53d787bd307ac3befd0ccee52cb8153b611
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68772361"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080012"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Intune でのデバイスの操作のトラブルシューティング
 
@@ -53,7 +53,7 @@ Graph Explorer では、次のクエリを使用してコードを確認でき�
 ## <a name="remove-devices-action"></a>デバイスの削除アクション
 
 ### <a name="how-do-i-tell-who-started-a-retirewipe"></a>削除/ワイプを開始したユーザーを指定操作方法
-[ **Intune** > **デバイス** > **のデバイスの操作]** にアクセスして、 **[開始者]** 列 > 確認します。
+[ **Intune** > **デバイス** **** **** のデバイスの操作] にアクセスして、[開始者] 列 > 確認します。 > 
 エントリが表示されない場合は、アクションを開始したユーザーがデバイスのユーザーである可能性があります。 ポータルサイトアプリまたは portal.manage.microsoft.com を使用したことがあります。
 
 ### <a name="why-wasnt-my-application-uninstalled-after-using-retire"></a>インベントリから削除した後にアプリケーションがアンインストールされなかったのはなぜですか。
@@ -68,7 +68,7 @@ Graph Explorer では、次のクエリを使用してコードを確認でき�
 デバイスをインベントリから削除しても、アクセストークンは失効しません。 条件付きアクセスポリシーを使用して、この状況を軽減できます。
 
 ### <a name="how-can-i-monitor-a-retirewipe-action-after-it-was-issued"></a>発行後のインベントリからの削除/ワイプアクションを監視するにはどうすればよいですか。
-**Intune** >  **デバイスの** > [デバイスの**操作**] にアクセスします。
+**Intune** >  **** デバイスの > [デバイスの**操作**] にアクセスします。
 
 ### <a name="why-do-wipes-sometimes-show-as-pending-indefinitely"></a>ワイプが無期限に保留中として表示される場合があるのはなぜですか。
 デバイスは、リセットが開始される前に、状態が Intune サービスに報告されることはありません。 そのため、アクションは保留中として表示されます。 操作が成功したことを確認した場合は、サービスからデバイスを削除します。

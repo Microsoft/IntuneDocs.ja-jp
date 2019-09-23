@@ -60,7 +60,7 @@
 ##### [Zimperium zIPS を使用する](you-need-to-resolve-a-threat-found-by-zips-android.md)
 
 ## [iOS デバイスを使用する](using-your-iOS-device-with-intune.md)
-### [iOS デバイスの登録後の動作](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+### [iOS デバイスのリセットの影響](effects-of-device-reset-company-portal-ios.md)
 ### [ポータル サイトをインストールしてサインインする](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [iOS デバイスを登録する](enroll-your-device-in-intune-ios.md)
 ### [組織で提供される iOS デバイスを登録する](enroll-your-device-dep-ios.md)

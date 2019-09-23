@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e18279fd9cca88de5f04c57a8bcccce1c211c6de
-ms.sourcegitcommit: 4f3fcc6dcbfe2c4e0651d54a130907a25a4ff66e
+ms.openlocfilehash: 4494d5f75336f7152668cfa1bb6fa1cd1a94305c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69894313"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167862"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Power BI で OData フィードから Intune レポートを作成する
 
@@ -122,4 +122,4 @@ Power BI でテーブルを処理します。 テーブルにはデータ フィ
 ## <a name="next-steps"></a>次の手順
 
 - Power BI のドキュメントで、Power BI Desktop での[リレーションシップの作成と管理](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/)についてさらに学習してください。
-- [Intune データ ウェアハウス モデル](https://docs.microsoft.com/intune/reports-ref-data-model)を確認してください。
+- [Intune データ ウェアハウス モデル](reports-ref-data-model.md)を確認してください。

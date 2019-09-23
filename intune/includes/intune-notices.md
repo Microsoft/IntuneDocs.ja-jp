@@ -7,18 +7,18 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 0721c62d44234a44881cdc562376c9bb62412187
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 041f37e56e85b0ac26a4dd7a9dbbdb49bc0ebd9e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68775892"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166341"
 ---
 以下の通知では、今後の Intune の変更と機能に備えるために役立つ重要な情報が提供されます。 
 
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>Android デバイス管理者のサポートの縮小 
-Android デバイス管理者 ("従来の" Android 管理とも呼ばれ、Android 2.2 でリリースされました) は、Android デバイスを管理する方法の 1 つです。 しかし、[Android Enterprise]( https://docs.microsoft.com/intune/connect-intune-android-enterprise) (Android 5.0 でリリース) では、強化された管理機能を使用できるようになりました。 Google では、より豊富で安全な最新のデバイス管理に移行するための努力の一環として、新しい Android リリースでのデバイス管理者のサポートを縮小させています。
+Android デバイス管理者 ("従来の" Android 管理とも呼ばれ、Android 2.2 でリリースされました) は、Android デバイスを管理する方法の 1 つです。 しかし、[Android Enterprise](../connect-intune-android-enterprise.md) (Android 5.0 でリリース) では、強化された管理機能を使用できるようになりました。 Google では、より豊富で安全な最新のデバイス管理に移行するための努力の一環として、新しい Android リリースでのデバイス管理者のサポートを縮小させています。
 
 #### <a name="how-does-this-affect-me"></a>ユーザーへの影響
 Google によるこのような変更により、Intune ユーザーは次のような影響を受けます。 
@@ -66,7 +66,7 @@ portal.azure.com および devicemanagement.microsoft.com の両方で、次の�
 #### <a name="additional-information"></a>追加情報 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665342--"></a>変更の計画: Intune で 9 月に iOS 11 以降のサポートを開始 <!-- 4665342-->
+### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665324--"></a>変更の計画: Intune で 9 月に iOS 11 以降のサポートを開始 <!-- 4665324-->
 9 月に、Apple によって iOS 13 がリリースされる予定です。 Intune の登録、ポータル サイト、および Managed Browser では、iOS 13 のリリース直後に iOS 11 以降がサポートされるようになります。
 
 #### <a name="how-does-this-affect-me"></a>ユーザーへの影響
@@ -76,7 +76,7 @@ O365 モバイル アプリが iOS 11.0 以降でサポートされている場�
 - iPhone 5c
 - iPad (第 4 世代)
 
-7 月以降、iOS 10 とポータル サイトが使用されている MDM 登録デバイスには、OS またはデバイスのアップグレードを求めるメッセージが表示されます。 アプリケーション保護ポリシー (APP) を使用する場合は、[iOS オペレーティング システムの最小要件 (警告のみ)] アクセスの設定を行うこともできます。
+アプリケーション保護ポリシー (APP) を使用する場合は、[iOS オペレーティング システムの最小要件 (警告のみ)] アクセスの設定を行うこともできます。
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
 影響を受ける可能性のあるデバイスまたはユーザーについては、Intune レポートで確認してください。 **[デバイス]**  >  **[すべてのデバイス]** の順に移動し、OS でフィルター処理します。 同じ組織にいる方で、iOS 10 を実行しているデバイスを持つ人を特定するのに役立つ列を追加できます。 9 月までに、使用しているデバイスをサポートされている OS バージョンにアップグレードするようにエンド ユーザーに要求します。
@@ -96,7 +96,7 @@ Microsoft、サードパーティ、および基幹業務 (LOB) アプリを確�
 また、この変更を SDK のサポートに含める場合は、ドキュメントまたは開発者ガイダンスを更新する必要があります。
 
 #### <a name="additional-information"></a>追加情報
-https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
+[アプリ保護ポリシーを利用するために基幹業務アプリで準備を行う](../apps-prepare-mobile-application-management.md)
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>変更の計画:Intune での新しい Windows 更新設定 <!-- 4464404 -->
 Intune サービスの 8 月のリリースまたは 1908 以降、[ユーザーに再起動を許可する (再起動猶予期間)] 設定の代わりに構成できる、新しい "期限の設定" が追加されます。 再起動猶予期間の設定は、1909 または 9 月の更新プログラムの UI で無効になり、その後 10 月末にかけてコンソールから完全に削除される予定です。 

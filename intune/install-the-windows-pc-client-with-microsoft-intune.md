@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44ba77609b3fafd5518378f3edcbbbace0f6a551
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 2a31c55d030cd8d12bb00a6e0873a24612df70bf
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354083"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167702"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Windows PC に Intune ソフトウェア クライアントをインストールする
 
@@ -48,7 +48,7 @@ Intune クライアント ソフトウェアには、Intune 管理で PC を登�
 
 1. [Microsoft Intune 管理コンソール](https://manage.microsoft.com/)で、 **[管理]** &gt; **[クライアント ソフトウェアのダウンロード]** をクリックします。
 
-   ![Intune PC クライアントのダウンロード](./media/https://docs.microsoft.com/intune/media/install-the-windows-pc-client/pc-sa-client-download.png)
+   ![Intune PC クライアントのダウンロード](./media/install-the-windows-pc-client/pc-sa-client-download.png)
 
 2. **[クライアント ソフトウェアのダウンロード]** ページで、 **[クライアント ソフトウェアのダウンロード]** をクリックします。 ソフトウェアが含まれている **Microsoft_Intune_Setup.zip** パッケージをネットワーク上のセキュリティで保護された場所に保存します。
 

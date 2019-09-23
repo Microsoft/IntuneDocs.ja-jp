@@ -82,7 +82,7 @@
       href: windows-information-protection-configure.md
     - name: MAM のよく寄せられる質問
       href: mam-faq.md
-- name: 使い方ガイド
+- name: 操作方法ガイド
   items:
     - name: 展開の計画
       items:
@@ -103,11 +103,11 @@
               href: planning-guide-support-plan.md
             - name: 設計
               href: planning-guide-design.md
-            - name: 実装
+            - name: 変更の
               href: planning-guide-onboarding.md
             - name: テストと検証
               href: planning-guide-test-validation.md
-            - name: その他の資料
+            - name: その他のリソース
               href: planning-guide-resources.md
         - name: 移行ガイド
           href: migration-guide.md
@@ -142,7 +142,7 @@
         - name: サポートされている構成
           href: supported-devices-browsers.md
           items:
-            - name: ネットワーク構成
+            - name: ネットワークの構成
               href: network-bandwidth-use.md
             - name: Intune エンドポイント
               href: intune-endpoints.md
@@ -164,7 +164,7 @@
           href: mdm-authority-set.md
         - name: ロールの管理
           items:
-            - name: ロール基準のアクセス制御
+            - name: ロールベースのアクセス制御
               href: role-based-access-control.md
             - name: ロールをユーザーに割り当てる
               href: assign-role.md
@@ -184,7 +184,7 @@
           items:
             - name: Intune の登録および会社アクセスに関する使用条件
               href: terms-and-conditions-create.md
-            - name: 制限
+            - name: 制限事項
               href: enrollment-restrictions-set.md
             - name: Apple MDM プッシュ通知証明書
               href: apple-mdm-push-certificate-get.md
@@ -321,30 +321,33 @@
           href: device-profiles.md
         - name: プロファイルを作成する
           href: device-profile-create.md
-        - name: 管理用テンプレート
+        - name: Windows の管理用テンプレート
           href: administrative-templates-windows.md
-        - name: デバイスの機能
+          displayName: 'group policy, gpo, admx'
+        - name: iOS と macOS のデバイス機能
           href: device-features-configure.md
         - name: デバイスの設定と機能を制限する
           href: device-restrictions-configure.md
           displayName: Device restrictions
-        - name: 更新プログラムを配信する
+        - name: 更新プログラム
           href: delivery-optimization-windows.md
-          displayName: delivery optimization; updates
+          displayName: delivery optimization; Windows update
         - name: エディションと S モードをアップグレードする
           href: edition-upgrade-configure-windows-10.md
-        - name: 電子メールを構成する
+        - name: Email
           href: email-settings-configure.md
-        - name: キオスク モードを有効にする
+        - name: キオスクと専用デバイス
           href: kiosk-settings.md
-        - name: VPN を追加する
+        - name: 共有のマルチ ユーザー デバイス
+          href: shared-user-device-settings.md
+        - name: VPN
           href: vpn-settings-configure.md
           items:
             - name: Android 用のアプリ別の VPN
               href: android-pulse-secure-per-app-vpn.md
             - name: iOS 用のアプリ別の VPN
               href: vpn-setting-configure-per-app.md
-        - name: ワイヤレスの Wi-fi ネットワークを追加する
+        - name: Wi-Fi ネットワーク
           href: wi-fi-settings-configure.md
           displayName: wifi
           items:
@@ -354,8 +357,6 @@
           href: kernel-extensions-overview-macos.md
         - name: Education Take a Test アプリ
           href: education-settings-configure.md
-        - name: 共有のマルチ ユーザー デバイス
-          href: shared-user-device-settings.md
         - name: Zebra デバイス上のモビリティの拡張機能
           href: android-zebra-mx-overview.md
           displayName: mx
@@ -594,6 +595,8 @@
                   href: app-sideload-windows.md
                 - name: macOS LOB アプリ
                   href: lob-apps-macos.md
+            - name: Android エンタープライズ システム アプリ
+              href: apps-ae-system.md
             - name: Win32 アプリの管理
               href: apps-win32-app-management.md
             - name: Powershell スクリプト
@@ -623,12 +626,24 @@
               href: app-configuration-policies-use-ios.md
             - name: Android マネージド デバイス
               href: app-configuration-policies-use-android.md
-            - name: 管理ホーム画面の構成
-              href: app-configuration-managed-home-screen-app.md
-            - name: Managed apps
+            - name: 登録なしで管理対象アプリを構成する
               href: app-configuration-policies-managed-app.md
             - name: iOS アプリ プロビジョニング プロファイルを使用する
               href: app-provisioning-profile-ios.md
+            - name: 特定のアプリの構成
+              items:
+                - name: 管理ホーム画面の構成
+                  href: app-configuration-managed-home-screen-app.md
+                - name: ポータル サイトの構成
+                  href: company-portal-app.md
+                - name: Managed Browser の構成
+                  href: app-configuration-managed-browser.md
+                - name: Microsoft Launcher の構成
+                  href: configure-microsoft-launcher.md
+                - name: Microsoft Edge の構成
+                  href: manage-microsoft-edge.md
+                - name: Outlook の構成
+                  href: app-configuration-policies-outlook.md
             - name: ボリューム購入アプリとブック
               items:
                 - name: VPP アプリとブックの管理
@@ -640,14 +655,6 @@
                   href: windows-store-for-business.md
                 - name: iOS 電子ブック
                   href: vpp-ebooks-ios.md
-            - name: ポータル サイトの構成
-              href: company-portal-app.md
-            - name: Managed Browser の構成
-              href: app-configuration-managed-browser.md
-            - name: Microsoft Edge の構成
-              href: manage-microsoft-edge.md
-            - name: Outlook の構成
-              href: app-configuration-policies-outlook.md
         - name: アプリの保護
           items:
             - name: 選択的にアプリをワイプする
@@ -750,7 +757,7 @@
           href: use-docs.md
         - name: サポートを受ける
           href: get-support.md
-- name: 参照先
+- name: リファレンス
   items:
     - name: 設定の一覧
       items:
@@ -762,7 +769,7 @@
               items:
                 - name: デバイスの制限
                   href: device-restrictions-android.md
-                - name: 電子メール
+                - name: Email
                   href: email-settings-android.md
                 - name: VPN
                   href: vpn-settings-android.md
@@ -781,7 +788,7 @@
               items:
                 - name: デバイスの制限
                   href: device-restrictions-android-for-work.md
-                - name: 電子メール
+                - name: Email
                   href: email-settings-android-enterprise.md
                 - name: VPN
                   href: vpn-settings-android-enterprise.md
@@ -799,7 +806,7 @@
                   href: ios-device-features-settings.md
                 - name: デバイスの制限
                   href: device-restrictions-ios.md
-                - name: 電子メール
+                - name: Email
                   href: email-settings-ios.md
                 - name: VPN
                   href: vpn-settings-ios.md
@@ -825,7 +832,7 @@
                   href: vpn-settings-macos.md
                 - name: Wi-Fi
                   href: wi-fi-settings-macos.md
-                - name: Extensions
+                - name: の拡張
                   href: kernel-extensions-settings-macos.md
                 - name: カスタム
                   href: custom-settings-macos.md
@@ -843,7 +850,7 @@
                   href: device-restrictions-windows-10-teams.md
                 - name: エディションのアップグレードとモードの切り替え
                   href: edition-upgrade-windows-settings.md
-                - name: 電子メール
+                - name: Email
                   href: email-settings-windows-10.md
                 - name: Endpoint Protection
                   href: endpoint-protection-windows-10.md
@@ -905,7 +912,7 @@
               items:
                 - name: デバイスの制限
                   href: device-restrictions-windows-phone-8-1.md
-                - name: 電子メール
+                - name: Email
                   href: email-settings-windows-phone-8-1.md
                 - name: VPN
                   href: vpn-settings-windows-phone-8-1.md
@@ -992,7 +999,7 @@
               href: 'https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview'
         - name: デバイスの構成に使用される Graph API
           href: graph-apis-used-by-intune-device-configuration-windows.md
-- name: 参照情報
+- name: リソース
   items:
     - name: アーカイブ
       items:
