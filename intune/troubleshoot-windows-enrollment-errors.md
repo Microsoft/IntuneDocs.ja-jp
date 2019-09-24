@@ -96,7 +96,7 @@ ms.locfileid: "71167778"
 
 #### <a name="resolution"></a>解決策
 1. 管理者として [Azure portal](https://portal.azure.com/) にサインインします。    
-2. **Azure Active Directory** >  **** デバイスの > **デバイス設定**にアクセスします。    
+2. **Azure Active Directory**  >  **デバイスの**  >  **デバイス設定**にアクセスします。    
 3. **[ユーザーはデバイスを Azure AD に参加させることができます]** を **[すべて]** に設定します。    
 4. デバイスを再登録します。   
 
@@ -213,7 +213,7 @@ Intune と Configuration Manager のハイブリッド MDM でこの問題を解
 1. Configuration Manager コンソールを開きます。    
 2. **[管理]** を選択し、 **[Cloud Services]** を選択します。    
 3. **[Microsoft Intune サブスクリプション]** を右クリックし、 **[プラットフォーム > Windows の構成]** を選択します。    
-4. **[** **** **Windows 登録** > を有効にする]チェックボックスをオンにし > ます。  
+4. **[** **Windows 登録** > を有効にする **]** チェックボックスをオンにし > ます。  
 
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>一括登録中にセットアップエラーが発生しました。

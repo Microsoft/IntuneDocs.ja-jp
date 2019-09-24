@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b96fa9fac25f6de4180d3dcc9ee4022a2cc43fe
-ms.sourcegitcommit: 7484ef8006f6b81d8976c328dd704512a31872ec
-ms.translationtype: MTE75
+ms.openlocfilehash: 4bd5392abba3ea22127cb9bcbbb53ec4929f2d5e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70190253"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166324"
 ---
 # <a name="in-development-for-microsoft-intune---september-2019"></a>Microsoft Intune の開発中の機能 - 2019 年 9 月
 
@@ -70,15 +70,15 @@ Intune を使用すると、IT 管理者は Intune コンソールに埋め込�
 ### <a name="managed-google-play-iframe-support----2871756----"></a>マネージ Google Play iframe のサポート <!-- 2871756  -->
 Intune では、管理された Google Play iframe を使用して、Intune コンソールで直接 web リンクを追加および管理できるようになります。  これにより、IT 管理者は URL とアイコングラフィックを送信し、通常の Android アプリと同じようにデバイスにそれらのリンクを展開できます。 管理された Google Play を使用する Android エンタープライズ管理のシナリオでは、この機能 (仕事用プロファイル、専用、完全に管理されたデバイス、および登録されていないデバイス) を利用できます。  Intune から、**[クライアント アプリ]** > **[アプリ]** > **[追加]** の順に選択します。 次に、 **[アプリの種類]** ボックスの一覧から 管理された **[Google Play]** を選択します。 管理された Google Play アプリの詳細については、「 [Intune を使用して Android Enterprise デバイスに管理対象 Google Play アプリを追加する](apps-add-android-for-work.md)」を参照してください。
 
-### <a name="macos-support-for-vpp-apps----3173501----"></a>VPP アプリの macOS のサポート <!-- 3173501  -->
-apple Business Manager を使用して購入した macOS アプリは、Intune で Apple VPP トークンが同期されている場合にコンソールに表示されます。 コンソールを使用して、グループのデバイスおよびユーザーベースのライセンスの割り当て、取り消し、再割り当てを行うことができます。 Microsoft Intune は、会社で使用するために購入した VPP アプリを管理するのに役立ちます。
+### <a name="macos-support-for-vpp-apps----3173501----"></a>VPP アプリの macOS によるサポート <!-- 3173501  -->
+Apple Business Manager を使用して購入した macOS アプリは、Intune 内で Apple VPP トークンが同期されるとコンソールに表示されます。 コンソールを使用して、グループに対するデバイスおよびユーザーベースのライセンスの割り当て、取り消し、再割り当てを行うことができます。 Microsoft Intune は、ご自身の会社で使用するために購入した VPP アプリを管理するのに役立ちます。
 - アプリ ストアからライセンス情報を報告する。
 - 使用しているライセンスの数を追跡記録する。
 - 自分が所有している以上のアプリのコピーをインストールしないようにする。
 Intune と VPP の詳細については、「[Microsoft Intune によるボリューム購入アプリとブックの管理](vpp-apps.md)」を参照してください。
 
-### <a name="macos-support-for-web-apps----3174427----"></a>web apps 用 macOS のサポート <!-- 3174427  -->
-Web アプリをインストールできるようになります。これにより、macOS ポータルサイトを使用して、web 上の URL へのショートカットをドッキングに追加できます。 エンドユーザーは、macOS ポータルサイトの web アプリの [アプリの詳細] ページから**インストール**アクションにアクセスできます。 **Web リンク**アプリの種類の詳細については、「[アプリを Microsoft Intune に追加する](apps-add.md)」を参照してください。
+### <a name="macos-support-for-web-apps----3174427----"></a>Web アプリの macOS によるサポート <!-- 3174427  -->
+macOS ポータル サイトを使用して、Dock に Web アプリをインストールできます。これにより Web 上の URL へのショートカットを追加できます。 エンドユーザーは、macOS ポータル サイト内の Web アプリ用のアプリの詳細ページから **[インストール]** アクションにアクセスできます。 **Web リンク**アプリの種類の詳細については、「[アプリを Microsoft Intune に追加する](apps-add.md)」を参照してください。
 
 #### <a name="assign-microsoft-edge-beta-for-macos----4678761----"></a>MacOS 用 Microsoft Edge beta の割り当て <!-- 4678761  -->
 最新バージョンの Microsoft Edge ベータ版を macOS デバイス用の Intune に追加して割り当てることができます。 Intune から [**クライアントアプリ** > ] [**アプリ** > ] [**Microsoft Edge-macOS**の**追加** > ] を選択します。 次に、Microsoft Edge beta を目的のグループに割り当てます。 Microsoft AutoUpdate (MAU) は Microsoft Edge を最新の状態に保ちます。 Microsoft Edge の詳細については、「 [Microsoft Intune で Microsoft edge を使用して web アクセスを管理する](manage-microsoft-edge.md)」を参照してください。
@@ -90,14 +90,14 @@ Web アプリをインストールできるようになります。これによ�
 Android および iOS デバイスの Intune アプリ保護ポリシー (アプリ) では、組織アカウントのアプリ通知コンテンツを制御できます。 この機能は、アプリケーションからのサポートを必要とし、すべてのアプリ対応アプリケーションで使用できるとは限りません。 アプリの詳細については、「[アプリ保護ポリシーとは](app-protection-policy.md)」を参照してください。
 
 ### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956----"></a>Android の仕事用プロファイルに使用できる Google Play アプリのレポート <!-- 3041956  -->
-Android の仕事用プロファイル デバイスに使用できるアプリのインストールについては、アプリのインストール状態と managed Google Play アプリのインストール済みバージョンを確認できます。 詳細については、[アプリの保護ポリシーを監視する方法](app-protection-policies-monitor.md)、[Intune を使用した Android の仕事用プロファイル デバイスの管理](android-enterprise-overview.md)、および[マネージド Google Play アプリの種類](apps-add-android-for-work.md#managed-google-play-app-type)に関する記事を参照してください。
+Android の仕事用プロファイル デバイスに使用できるアプリのインストールについては、アプリのインストール状態と managed Google Play アプリのインストール済みバージョンを確認できます。 詳細については、[アプリの保護ポリシーを監視する方法](app-protection-policies-monitor.md)、[Intune を使用した Android の仕事用プロファイル デバイスの管理](android-enterprise-overview.md)、および[マネージド Google Play アプリの種類](apps-add-android-for-work.md#managed-google-play-app-types)に関する記事を参照してください。
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>デバイス構成
 
 ### <a name="device-features-device-restrictions-and-extension-profiles-for-ios-and-macos-settings-are-shown-by-enrollment-type----4886161----"></a>IOS と macOS の設定のデバイス機能、デバイス制限、および拡張機能プロファイルは、登録の種類別に表示されます。 <!-- 4886161  -->
 
-Intune では、iOS デバイスと macOS デバイスのプロファイルを**作成し**ます > **(デバイス**構成プロファイル > **作成プロファイル** > **iOS**または**macOS** for platform >**デバイスの**機能、デバイスの**制限、または** **プロファイル**の種類の拡張機能)。 現時点では、これらのプロファイルで使用可能な設定が一覧表示されています。 
+Intune では、ios デバイスと macos デバイス用のプロファイルを作成します (**デバイス構成** > **プロファイル** > では、プラットフォーム > デバイスの機能に対して、**プロファイル** > **iOS**または**macos****を作成します**) 、**デバイスの制限**、またはプロファイルの種類の**拡張機能**) を使用します。 現時点では、これらのプロファイルで使用可能な設定が一覧表示されています。 
 
 今後の更新プログラムでは、Intune ポータルで利用可能な設定は、適用先の登録の種類によって分類されます。
 
@@ -132,7 +132,7 @@ Intune では、監視対象の ios デバイスをキオスクまたは専用�
 - **音声制御**: キオスクモードのときにデバイスの音声制御を有効にします。
 - **音声制御の変更**: キオスクモードのときにデバイスの音声制御設定を変更することをユーザーに許可します。
 
-現在の設定を表示するには、[ [IOS キオスク (監視モードのみ)] 設定](device-restrictions-ios.md#kiosk-supervised-only)にアクセスします。
+現在の設定を表示するには、[ [IOS キオスク (監視モードのみ)] 設定](device-restrictions-ios.md#kiosk)にアクセスします。
 
 適用対象:
 
@@ -160,14 +160,14 @@ MacOS デバイスでは、さまざまな機能を構成し、ポリシーを�
 - macOS 10.15 以降
 
 ### <a name="use-itunes-and-apps-in-the-itunes-app-store-url-when-showing-or-hiding-apps-on-ios-supervised-devices----4928474----"></a>IOS の監視対象デバイスでアプリを表示または非表示にするときに、iTunes アプリストアの URL で "itunes" と "apps" を使用する <!-- 4928474  --> 
-Intune では、監視対象の iOS デバイスでアプリの表示と非表示を切り替えるポリシーを作成することができます (**デバイス構成** > **プロファイル** > は、プラットフォーム > **デバイス用のプロファイル** > を**作成**します。  [**プロファイルの種類**] > **アプリの表示と非表示を切り替える (監視モードのみ)** )。 
+Intune では、監視対象の iOS デバイスで**アプリの表示**と非表示を切り替えるポリシーを作成することができます (**デバイス構成** > **プロファイル** > は、プラットフォーム > デバイス用の**プロファイル** > を作成します。 **[プロファイルの種類]** > アプリの表示と非表示を切り替える **(監視モードのみ)** )。 
 
 など、 `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`iTunes APP store の URL を入力できます。 今後の更新プログラムでは、と`apps` `itunes`の両方を URL で使用できるようになります。次に例を示します。
 
 - `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`
 - `https://apps.apple.com/us/app/work-folders/id950878067?mt=8`
 
-これらの設定の詳細について[は、「アプリを表示または非表示にする (監視モードのみ)](device-restrictions-ios.md#show-or-hide-apps-supervised-only)」を参照してください。
+これらの設定の詳細について[は、「アプリを表示または非表示にする](device-restrictions-ios.md#show-or-hide-apps)」を参照してください。
 
 適用対象:
 
@@ -191,10 +191,10 @@ Android Enterprise では、android のデバイス管理機能が置き換え�
 
 既存のテナントでは、環境が変更されることはありません。 
 
-Intune での Android デバイス管理者の詳細については、「 [android デバイス管理者の登録](https://docs.microsoft.com/intune/android-enroll-device-administrator)」を参照してください。
+Intune での Android デバイス管理者の詳細については、「 [android デバイス管理者の登録](android-enroll-device-administrator.md)」を参照してください。
 
-### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993----"></a>IOS デバイスの場合は、ポータルサイトの [登録プロセスのプライバシー] 画面をカスタマイズします。 <!-- 4394993  -->
-Markdown を使用すると、iOS の登録時にエンドユーザーに表示されるポータルサイトのプライバシー画面をカスタマイズできます。 具体的には、組織がデバイスで参照または実行できない項目の一覧をカスタマイズできます。
+### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993----"></a>iOS デバイスの場合は、ポータル サイトの登録プロセスのプライバシー画面をカスタマイズします <!-- 4394993  -->
+マークダウンを使用して、iOS の登録時にエンド ユーザーに表示されるポータル サイトのプライバシー画面をカスタマイズできます。 具体的には、組織がデバイス上で参照または実行できない項目の一覧をカスタマイズできます。
 
 <!-- ***********************************************-->
 ## <a name="device-management"></a>デバイス管理
@@ -213,7 +213,7 @@ Android の完全に管理されたデバイスについて、次のサポート
     - Android Enterprise の [DO] セクションで SCEP プロファイルを作成する
     - SCEP 証明書を認証のために Wi-fi プロファイルにリンクする
     - 認証に VPN プロファイルを使用するように SCEP 証明書をリンクする
-    - SCEP 証明書を認証用の電子メールプロファイルにリンクする (AppConfig 経由)
+    - SCEP 証明書を認証用の電子メールプロファイルにリンクする (アプリ構成を使用)
 - システムアプリは Android エンタープライズデバイスでサポートされます。 Intune では、[**クライアントアプリ** > ] [**アプリ** > ] **[追加]** の順に選択して、Android エンタープライズシステムアプリを追加します。 **[アプリの種類]** ボックスの一覧で、 **[Android エンタープライズシステムアプリ]** を選択します。 Intune にアプリを追加する方法の詳細については、「[Microsoft Intune にアプリを追加する](apps-add.md)」を参照してください。 <!-- 4062195 -->
 - [**デバイスコンプライアンス** > ] [**Android Enterprise** > **デバイスの所有者**] で、Google saf etynet 構成証明レベルを設定するコンプライアンスポリシーを作成できます。   <!-- 4631425 -->
 - Android Enterprise の完全管理型デバイスでは、モバイル脅威防御プロバイダーがサポートされます。 [**デバイスコンプライアンス** > ] [**Android エンタープライズ** > **デバイス所有者**] で、許容可能な脅威レベルを選択できます。 <!-- 4631440 --> [Intune を使用してデバイスを準拠または非準拠としてマークするための Android エンタープライズ設定](compliance-policy-create-android-for-work.md#device-owner)に関するページに、現在の設定が記載されています。
