@@ -18,31 +18,33 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 273342f7181bcc577a44126404d145ca9b5bff3e
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.openlocfilehash: 9066fefccde39ccac281f3bda9008168ea28b77f
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783015"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166625"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>組織から提供された macOS デバイスを管理登録する
 
 新しい macOS デバイスを Intune で管理する方法について説明します。  
 
-職場または学校から支給されるデバイスは多くの場合、受け取る前に事前構成されています。 初めてデバイスの電源を入れてサインインすると、事前構成済みの設定が組織からデバイスに送信されます。 デバイスのセットアップが完了すると、職場または学校のリソースにアクセスできるようになります。 
+職場または学校から支給されるデバイスは多くの場合、受け取る前に事前構成されています。 初めてデバイスの電源を入れてサインインすると、事前構成済みの設定が組織からデバイスに送信されます。 デバイスのセットアップが完了すると、職場または学校のリソースにアクセスできるようになります。
 
-管理のセットアップを始めるには、デバイスの電源を入れて、職場または学校の資格情報でサインインします。 以下では、セットアップ アシスタントを使用する手順と表示される画面について説明します。   
+管理のセットアップを始めるには、デバイスの電源を入れて、職場または学校の資格情報でサインインします。 以下では、セットアップ アシスタントを使用する手順と表示される画面について説明します。
 
 ## <a name="what-is-apple-dep"></a>Apple DEP とは
-組織は、*Apple Device Enrollment Program* (DEP) を利用してデバイスを購入することがあります。 Apple DEP を利用することで、組織は iOS または macOS デバイスを大量に購入できます。 その後、組織は Intune などの適切なモバイル デバイス管理プロバイダーでデバイスを構成して管理できます。 Apple DEP についての情報がさらに必要な管理者は、「[Apple の Device Enrollment Program を使用して macOS デバイスを自動登録する](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos)」をご覧ください。  
 
-## <a name="get-your-device-managed"></a>デバイスを管理対象にする 
+組織は、*Apple Device Enrollment Program* (DEP) を利用してデバイスを購入することがあります。 Apple DEP を利用することで、組織は iOS または macOS デバイスを大量に購入できます。 その後、組織は Intune などの適切なモバイル デバイス管理プロバイダーでデバイスを構成して管理できます。 Apple DEP についての情報がさらに必要な管理者は、「[Apple の Device Enrollment Program を使用して macOS デバイスを自動登録する](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos.md)」をご覧ください。  
+
+## <a name="get-your-device-managed"></a>デバイスを管理対象にする
+
 macOS デバイスを管理対象に登録するには、次の手順のようにします。 会社支給のデバイスではなく個人所有のデバイスを使用している場合は、[個人デバイスと Bring Your Own デバイス](enroll-your-device-in-intune-macos-cp.md)に関するページをご覧ください。  
 
-1. macOS デバイスの電源を入れます。 
+1. macOS デバイスの電源を入れます。
 2. 自分の国/地域を選択して、 **[Continue]\(続行\)** をクリックします。  
 
-   ![選択できる言語の一覧が表示されている macOS デバイスのセットアップ アシスタントのようこそ画面のスクリーンショット。](./media/macos-dep-welcome-1808.png)   
+   ![選択できる言語の一覧が表示されている macOS デバイスのセットアップ アシスタントのようこそ画面のスクリーンショット。](./media/macos-dep-welcome-1808.png)
 3. キーボード レイアウトを選択します。 選択した国/地域に基づいて、1 つ以上のオプションの一覧が表示されます。 選択した国/地域に関係なくすべてのレイアウト オプションを表示するには、 **[Show All]\(すべて表示\)** をクリックします。 終了したら **[Continue]\(続行\)** をクリックします。  
 
    ![macOS デバイスのセットアップ アシスタントのキーボード レイアウト画面のスクリーンショット。選択できるキーボード言語の一覧、オフ状態の [Show All]\(すべて表示\) オプション、[Back]\(戻る\) ボタンと [Continue]\(続行\) ボタンが表示されている。](./media/macos-dep-keyboard-1808.png)  
@@ -62,14 +64,17 @@ macOS デバイスを管理対象に登録するには、次の手順のよう�
     * コンピューター アカウントを作成します
     * 高速セットアップを行います
     * お使いの Mac を設定します  
-## <a name="get-the-company-portal-app"></a>Intune ポータル サイト アプリを取得する      
-デバイスに macOS 用の Intune ポータル サイト アプリをダウンロードします。 このアプリでは、デバイスの監視、同期、追加、管理からのデバイスの削除、アプリのインストールを行うことができます。 これらの手順では、ポータル サイトにデバイスを登録する方法についても説明しています。  
-1. ご使用の macOS デバイスで https://portal.manage.microsoft.com/EnrollmentRedirect.aspx に進みます。
+
+## <a name="get-the-company-portal-app"></a>Intune ポータル サイト アプリを取得する
+
+デバイスに macOS 用の Intune ポータル サイト アプリをダウンロードします。 このアプリでは、デバイスの監視、同期、追加、管理からのデバイスの削除、アプリのインストールを行うことができます。 これらの手順では、ポータル サイトにデバイスを登録する方法についても説明しています。
+
+1. お使いの macOS デバイスで [https://portal.manage.microsoft.com/EnrollmentRedirect.aspx](https://portal.manage.microsoft.com/EnrollmentRedirect.aspx) に移動します。
 2. 職場や学校のアカウントでポータル サイト Web サイトにサインインします。 
 3. **[Get the App]\(アプリの取得\)** をクリックして、macOS 用のポータル サイト インストーラーをダウンロードします。
 4. 求められたら .pkg ファイルを開き、インストール手順を完了します。
-4. Intune ポータル サイト アプリを開き、職場または学校アカウントでサインインします。
-5. デバイスを探し、 **[登録]** をクリックします。
-6. **[続行]**  >  **[完了]** の順にクリックします。 これでご使用のデバイスは、会社の対応デバイスとしてポータル サイト アプリに表示されるはずです。
+5. Intune ポータル サイト アプリを開き、職場または学校アカウントでサインインします。
+6. デバイスを探し、 **[登録]** をクリックします。
+7. **[続行]**  >  **[完了]** の順にクリックします。 これでご使用のデバイスは、会社の対応デバイスとしてポータル サイト アプリに表示されるはずです。
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

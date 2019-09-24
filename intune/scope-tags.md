@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90865b8a8881ab85089fb379a8398e276574b771
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 2fb82b02057e1e028755da16a05755b0b8ddb93a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550028"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163798"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>分散 IT にロールベースのアクセス制御 (RBAC) とスコープのタグを使用する
 
@@ -35,10 +35,10 @@ ms.locfileid: "69550028"
 3. メンバー (グループ) 内の管理者がアクセスできるようにしたいポリシーとプロファイルに、シアトルというスコープのタグを追加します。
 4. メンバー (グループ) 内の管理者が表示できるデバイスにシアトルというスコープのタグを追加します。 
 
-## <a name="default-scope-tag"></a>既定のスコープタグ
+## <a name="default-scope-tag"></a>既定のスコープ タグ
 既定のスコープタグは、スコープタグをサポートするすべてのタグなしオブジェクトに自動的に追加されます。
 
-既定のスコープタグ機能は、System Center Configuration Manager のセキュリティスコープ機能に似ています。 
+既定のスコープ タグの機能は、System Center Configuration Manager のセキュリティ スコープ機能に似ています。 
 
 ## <a name="to-create-a-scope-tag"></a>スコープのタグを作成するには
 
@@ -101,7 +101,6 @@ ms.locfileid: "69550028"
     - デバイス カテゴリ
     - 登録の制限
     - Corp デバイス識別子
-    - 使用条件
     - 自動操縦デバイス
     - デバイスコンプライアンスの場所
     - Jamf デバイス

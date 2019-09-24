@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,16 +18,16 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6bfd8496061b4b3aba2589b73c3e98bce94a5011
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 16d7142e6dc38a177f8820f60e7335b8b23a1eeb
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528655"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099795"
 ---
-# <a name="sign-in-to-company-portal"></a>会社ポータルにサインインするには  
+# <a name="sign-in-to-company-portal"></a>ポータルサイトにサインインします  
 
-ポータル サイト アプリにサインインする 3 つの方法はあります。
+ポータルサイトアプリにサインインするには、次の3つの方法があります。
 
 * 仕事用メール アドレスとパスワードを使ってサインインする。  
 * 証明書ベースの認証を使ってサインインする。  
@@ -35,12 +35,11 @@ ms.locfileid: "67528655"
 
 
 ## <a name="sign-in-with-your-email-address-and-password"></a>メール アドレスとパスワードを使ったサインイン
-次の手順では、iOS 用ポータル サイトからスクリーン ショットを示します。  
+次の手順では、iOS 用のポータルサイトのスクリーンショットを示します。  
 
-1. タップして、デバイスでアプリを開く**サインイン**します。  
+1. デバイスでアプリを開き、 **[サインイン]** をタップします。  
 
-   ![Web サイトのイメージ図の前にユーザーのアイコンが表示されたポータル サイトのサインイン ページ。 この下には、"会社のリソースにアクセスできるようにし、それらを安全に保ちます" というテキストと、[サインイン] ボタンがあります。 下部にあるリンクから Microsoft のプライバシーと Cookie に関する情報にアクセスできます。](/intune-user-help/media/cp_ios_aad_signin_after_1804_001.png)
-
+   [![ポータルサイトサインインページのスクリーンショットの例。](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
 
 
 2. **職場または学校のアカウント**を入力して、 **[次へ]** をタップします。
@@ -51,7 +50,7 @@ ms.locfileid: "67528655"
 
    ![電子メールが承認されると、パスワードの入力が要求されます。](/intune-user-help/media/cp_ios_aad_signin_after_1804_003.png)
 
-4. アプリは、資格情報を確認します。 完了、組織のリソースにアクセスして使用可能なアプリをインストールできます。  
+4. アプリによって資格情報が検証されます。 完了すると、組織のリソースにアクセスして、利用可能なアプリをインストールできます。  
 
    ![認証プロセスが終了すると、ポータル サイト アプリでサインインが行われ、読み込みバーが表示されます。](/intune-user-help/media/cp_ios_aad_signin_after_1804_004.png)
 
@@ -67,11 +66,11 @@ ms.locfileid: "67528655"
 
 ## <a name="sign-in-from-another-device"></a>別のデバイスからサインインする
 
-会社では、コンピューターへのアクセスにスマート カードを使用している場合は、別のデバイスからサインインして認証することがある可能性があります。  
+会社がスマートカードを使用してコンピューターにアクセスしている場合は、別のデバイスからサインインすることで認証が必要になる可能性があります。  
 
-1. デバイス上でポータル サイト アプリを開きます。 会社のリソースへのアクセスに使用するデバイスを確認します。       
+1. デバイス上でポータル サイト アプリを開きます。 職場のリソースにアクセスするために使用するデバイスであることを確認します。       
 
-1. 選択**別のデバイスからサインイン**します。  
+1. **[別のデバイスからサインインする]** を選択します。  
 
    ![ポータル サイトのサインイン ページで、メール アドレスの入力がユーザーに求められます。  [次へ] ボタンと [別のデバイスからサインインする] リンクが表示されます。 "アカウントにアクセスできない場合" のリンクもあります。 下部にあるリンクから Microsoft のプライバシーと Cookie に関する情報にアクセスできます。](/intune-user-help/media/cp_ios_aad_signin_after_1804_005.png)
 
@@ -79,11 +78,11 @@ ms.locfileid: "67528655"
 
    ![会社のコンピューターから固有のパスワードで https://microsoft.com/devicelogin ページにアクセスし、コードを使用してサインインするように指示されます。](/intune-user-help/media/cp_ios_aad_signin_after_1804_006.png)
 
-3. 他のデバイス (を使用して認証する 1 つ)、ブラウザーを開きに移動[ https://microsoft.com/devicelogin](https://microsoft.com/devicelogin)します。 入力するか、コードを貼り付けます。  
+3. 他のデバイス (認証に使用しているデバイス) で、ブラウザーを開き、に[https://microsoft.com/devicelogin](https://microsoft.com/devicelogin)アクセスします。 コードを入力するか、貼り付けます。  
 
    ![ポータル サイト アプリの画像ではなく会社のコンピューターのブラウザーの画像です。 [デバイス ログイン] ページが表示され、ポータル サイト アプリで取得したコードを入力するように要求されます。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
-4. 選択__続行__作業デバイスにサインインするポータル サイトを許可します。   
+4. [__続行__] を選択して、ポータルサイトが職場のデバイスにサインインできるようにします。   
 
    ![固有のコードをフィールドに入力すると、[デバイス ログイン] サイトから、Intune ポータル サイトがサインインを許可してよい適切なアプリであることを確認されます。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_005.png)
 
@@ -91,7 +90,7 @@ ms.locfileid: "67528655"
 
    ![デバイスでポータル サイト アプリへのログインが完了したことと、このページを閉じることができることを示す確認ページ。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_006.png)
 
-6. ポータル サイト アプリ作業デバイスでサインアウトします。  
+6. ポータルサイトアプリが仕事用デバイスにサインインします。  
 
    ![認証プロセスが終了すると、ポータル サイト アプリはサインインを行い、進捗を示す読み込みバーが表示されます。](/intune-user-help/media/cp_ios_aad_signin_after_1804_007.png)
 

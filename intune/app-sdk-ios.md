@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 09/17/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8774b5af7555462b7754e4d0f8a6f50a330854ff
-ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
+ms.openlocfilehash: ea31c06019643a3eaf10d79857dfdc319a8453c3
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70021829"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167220"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS 用 Microsoft Intune App SDK 開発者ガイド
 
@@ -215,7 +215,7 @@ Intune アプリ SDK では、認証と条件付き起動のシナリオに[Azur
 
 さらに、アプリは、実行時にこれらの Azure AD 設定をオーバーライドすることができます。 上書きするには、`IntuneMAMPolicyManager` インスタンスの `aadAuthorityUriOverride`、`aadClientIdOverride`、および `aadRedirectUriOverride` プロパティを設定します。
 
-4. iOS のアプリにアプリ保護ポリシー (APP) サービスへのアクセス許可を付与するための手順に従っていることを確認します。 [Intune SDK ガイドの概要](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration)に関するページの「[Intune アプリ保護サービスへのアクセス権をアプリに付与する (省略可能)](https://docs.microsoft.com/intune/app-sdk-get-started#give-your-app-access-to-the-intune-app-protection-service-optional)」の下に記載されている手順を使用します。  
+4. iOS のアプリにアプリ保護ポリシー (APP) サービスへのアクセス許可を付与するための手順に従っていることを確認します。 [Intune SDK ガイドの概要](app-sdk-get-started.md#next-steps-after-integration)に関するページの「[Intune アプリ保護サービスへのアクセス権をアプリに付与する (省略可能)](app-sdk-get-started.md#give-your-app-access-to-the-intune-app-protection-service-optional)」の下に記載されている手順を使用します。  
 
 > [!NOTE]
 > Info.plist アプローチは、静的で、かつ実行時に定義する必要がないあらゆる設定に推奨されます。 `IntuneMAMPolicyManager` のプロパティに割り当てられた値は、Info.plist で指定された対応するどの値よりも優先され、アプリの再起動後も保持されます。 ユーザーの登録が解除されるまで、あるいは値が消去または変更されるまで、SDK は引き続きこの値を使用してポリシーのチェックインを行います。
@@ -276,6 +276,9 @@ WebViewHandledURLSchemes | 文字列の配列 | アプリの WebView で処理�
 ### <a name="overview"></a>概要
 
 Intune アプリの保護ポリシーを受信するには、アプリで Intune MAM サービスの登録要求を開始する必要があります。 アプリは、デバイス登録の有無を問わず、アプリの保護ポリシーを受信するように Intune コンソールで構成できます。 登録のないアプリ保護ポリシー (**APP-WE** または MAM-WE とも呼ばれる) では、デバイスが Intune モバイル デバイス管理 (MDM) に登録されていなくても Intune でアプリを管理できます。 いずれの場合も、ポリシーを受信するには、Intune MAM サービスへの登録が必須となります。
+
+> [!Important]
+> アプリ保護ポリシーによって暗号化が有効にされた場合、iOS 用 Intune App SDK では 256 ビットの暗号化キーが使用されます。 すべてのアプリには、保護されたデータ共有を許可するための最新の SDK バージョンが必要です。
 
 ### <a name="apps-that-already-use-adal-or-msal"></a>既に ADAL または MSAL を使用しているアプリ
 
@@ -412,9 +415,6 @@ MAMPolicyRequired| ブール型| アプリに Intune アプリ保護ポリシー
 * 要求の結果を示す状態コード
 * エラー文字列とステータス コードの説明
 * `NSError` オブジェクトです。 このオブジェクトは、返される可能性のある特定のステータス コードと共に `IntuneMAMEnrollmentStatus.h` で定義されています。
-
-> [!NOTE]
-> この情報はデバッグ目的にのみ使用できます。 アプリのビジネス ロジックは、これらの通知に基づく必要はありません。 この情報は、デバッグまたは監視を目的としてテレメトリ サービスに送信できます。
 
 ### <a name="sample-code"></a>サンプル コード
 
@@ -593,7 +593,7 @@ Intune の管理者は、Intune Azure portal と Intune Graph API を使って�
 
 Graph API の機能に関する詳細については、[Graph API のリファレンス](https://developer.microsoft.com/graph/docs/concepts/overview) ページを参照してください。
 
-iOS で MAM 対象アプリ構成ポリシーを作成する方法については、「[iOS 用 Microsoft Intune アプリ構成ポリシーを使用する方法](https://docs.microsoft.com/intune/app-configuration-policies-use-ios)」の MAM 対象アプリ構成セクションを参照してください。
+iOS で MAM 対象アプリ構成ポリシーを作成する方法については、「[iOS 用 Microsoft Intune アプリ構成ポリシーを使用する方法](app-configuration-policies-use-ios.md)」の MAM 対象アプリ構成セクションを参照してください。
 
 ## <a name="telemetry"></a>製品利用統計情報
 
