@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b995841152ee7290e41eed7988ff2b52b6bc66c
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 23b3e8df9b3d5bafb567b6795b08d4be32aa8c88
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375244"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167803"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Microsoft Intune でのデバイス登録に関するトラブルシューティング
 
@@ -447,7 +447,7 @@ iOS 登録エラーの一覧は、「[Troubleshooting iOS device enrollment prob
 
 |エラー メッセージ|問題|解決策|
 |---|---|---|
-|**IT 管理者がアクセスするためのライセンスを割り当てる必要があります**<br>IT 管理者は、このアプリを使用するためのアクセス許可を付与していません。 IT 管理者から支援を受けるか、後でやり直してください。|ユーザーのアカウントに必要なライセンスがないため、このデバイスを登録することはできません。|ユーザーは自分のデバイスを登録する前に、必要なライセンスを割り当てられている必要があります。 このメッセージは、モバイル デバイス管理機関に必要なライセンスの種類をユーザーが持っていないことを示します。 たとえば、次の両方に該当する場合はこのエラーが表示されます。 <ol><li>Intune がモバイル デバイス管理機関として設定されている。</li><li>System Center 2012 R2 Configuration Manager ライセンスを使用している。</li></ol>[ユーザー アカウントに Intune のライセンスを割り当てる](https://docs.microsoft.com/intune/licenses-assign)方法に関する情報を参照してください。|
+|**IT 管理者がアクセスするためのライセンスを割り当てる必要があります**<br>IT 管理者は、このアプリを使用するためのアクセス許可を付与していません。 IT 管理者から支援を受けるか、後でやり直してください。|ユーザーのアカウントに必要なライセンスがないため、このデバイスを登録することはできません。|ユーザーは自分のデバイスを登録する前に、必要なライセンスを割り当てられている必要があります。 このメッセージは、モバイル デバイス管理機関に必要なライセンスの種類をユーザーが持っていないことを示します。 たとえば、次の両方に該当する場合はこのエラーが表示されます。 <ol><li>Intune がモバイル デバイス管理機関として設定されている。</li><li>System Center 2012 R2 Configuration Manager ライセンスを使用している。</li></ol>[ユーザー アカウントに Intune のライセンスを割り当てる](licenses-assign.md)方法に関する情報を参照してください。|
 
 
 
