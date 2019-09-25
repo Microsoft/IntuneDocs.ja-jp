@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1710fd315803c4b47ad3be343893f93f7d155135
-ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
+ms.openlocfilehash: c8378986b1cf405a92e34b4c5bd805b169feaf32
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71061727"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167881"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune とエンド ユーザー アプリの UI の更新
 Microsoft Intune アプリに対する最新の更新プログラムについて学習します。 Intune ポータル サイト アプリと Web サイトに対する追加および改善は定期的に行われています。 Intune 管理者またはサポート担当者である場合、次の作業を行うために必要な情報がこの記事で提供されています。
@@ -120,7 +120,7 @@ iOS デバイス用ポータル サイト アプリのホーム ページが再�
 ## <a name="week-of-november-12-2018"></a>2018 年 11 月 12 日の週
 
 ### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>Windows ポータル サイトのキーボード ショートカット <!-- 2771518 -->
-エンド ユーザーは、Windows ポータル サイトで[キーボード ショートカット (アクセラレータ) を使用](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts)して、アプリとデバイスのアクションをトリガーできるようになります。
+エンド ユーザーは、Windows ポータル サイトで[キーボード ショートカット (アクセラレータ) を使用](company-portal-app.md#windows-company-portal-keyboard-shortcuts)して、アプリとデバイスのアクションをトリガーできるようになります。
 
 ## <a name="week-of-october-22-2018"></a>2018 年 10 月 22 日の週
 
@@ -572,4 +572,4 @@ __変更後__ ![変更後のバージョンの読み込み画面の画像。イ�
 ## <a name="see-also"></a>関連項目
 * [Microsoft Intune のブログ](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [クラウド プラットフォームのロードマップ](https://www.microsoft.com/cloud-platform/roadmap)
-* [Intune の新機能](https://docs.microsoft.com/intune/whats-new)
+* [Intune の新機能](whats-new.md)

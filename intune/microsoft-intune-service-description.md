@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c813e413d0d3447955f785e0aff1e0edd3501b6a
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 972f58da34c73253c85f4ca6183ad6fd4ce4c2e7
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882879"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167839"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune サービスの説明
 
@@ -33,7 +33,7 @@ Intune はクラウドベースのエンタープライズ モビリティ管理
 
 Intune は ID とアクセス制御のために Azure Active Directory (Azure AD) と、データ保護のために Azure Information Protection と密接に統合されます。 System Center Configuration Manager と統合して管理機能を拡張することもできます。
 
-Intune でデバイス、アプリ、企業データを管理し、保護する方法については、[Intune 文書](https://docs.microsoft.com/intune/)をご覧ください。
+Intune でデバイス、アプリ、企業データを管理し、保護する方法については、[Intune 文書](index.yml)をご覧ください。
 
 ## <a name="30-day-free-trial"></a>30 日間の無料評価版
 Intune は、100 ユーザー ライセンスを含む 30 日間の無料試用版で使用することができます。 無料試用版を開始する場合は、[Intune のサインアップ ページ](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20)にアクセスしてください。 お客様の組織が Enterprise Agreement または同等のボリューム ライセンス契約を結んでいる場合は、Microsoft 担当者に連絡して無料試用版の設定を依頼してください。

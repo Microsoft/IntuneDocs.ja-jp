@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8a282662032fe77cbf39da279c587bff31ad9e24
-ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
+ms.openlocfilehash: 682d51269798dff181a3bd8384268da862118a70
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70123225"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167767"
 ---
 # <a name="intune-certificate-connector-events-and-diagnostic-codes"></a>Intune Certificate Connector のイベントと診断コード
 
@@ -60,7 +60,7 @@ ms.locfileid: "70123225"
 | -------------   | -------------   | -------------      |
 | 0x00000000 | 成功  | 成功 |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | 証明機関は有効ではないか、到達可能ではありません。 証明機関が使用可能であること、およびサーバーが証明機関と通信できることを確認してください。 |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | Symantec クライアント認証証明書がローカル証明書ストアに見つかりませんでした。 詳細については、「[Symantec 登録承認証明書のインストール](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate)」をご覧ください。  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | Symantec クライアント認証証明書がローカル証明書ストアに見つかりませんでした。 詳細については、「[Symantec 登録承認証明書のインストール](certificates-digicert-configure.md#install-the-digicert-ra-certificate)」をご覧ください。  |
 | 0x00000402 | RevokeCert_AccessDenied  | 指定されたアカウントには、CA から証明書を取り消すアクセス許可がありません。 発行元 CA を特定するには、イベント メッセージの詳細の CA 名フィールドを参照してください。  |
 | 0x00000403 | CertThumbprint_NotFound  | 入力に一致する証明書を見つけられませんでした。 証明書コネクタを登録してからやり直してください。 |
 | 0x00000404 | Certificate_NotFound  | 提供された入力に一致する証明書を見つけられませんでした。 証明書コネクタを再登録してからやり直してください。 |

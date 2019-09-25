@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b1b489bbc62e4f47847ad599debcecfc27e1918
-ms.sourcegitcommit: 393953dd2a15aff68b246d3633b47566dd43f7cc
+ms.openlocfilehash: 51f9dcd7a42951d42671888c9ceebcdd57458654
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70815458"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166964"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Intune でのセキュリティ ベースラインを使用した Windows 10 デバイスの構成
 
@@ -74,8 +74,8 @@ Intune コンソールでは、各ベースラインのタイルに、ベース�
 Intune では、次のセキュリティ ベースラインのインスタンスを使用できます。 リンクを使用して、各ベースラインの最新インスタンスに関する設定を確認してください。 
 
 - **MDM セキュリティ ベースライン**
-  - [2019 年 5 月の MDM セキュリティ ベースライン](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)
-  - [プレビュー:2018 年 10 月の MDM セキュリティ ベースライン](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-preview)
+  - [2019 年 5 月の MDM セキュリティ ベースライン](security-baseline-settings-mdm-all.md?pivots=mdm-may-2019)
+  - [プレビュー:2018 年 10 月の MDM セキュリティ ベースライン](security-baseline-settings-mdm-all.md?pivots=mdm-preview)
 
 - **Microsoft Defender ATP ベースライン**  
   " *(このベースラインを使用するには、ご使用の環境が [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) を使用するための前提条件を満たしている必要があります)* "。

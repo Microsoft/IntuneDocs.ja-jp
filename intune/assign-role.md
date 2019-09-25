@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0539e4d12173ba2c7ba8d3af3364daf69ddbbf34
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 83e321e932fa2214612836ec994a9a0aa8174dd7
+ms.sourcegitcommit: 49f25efb9bc0f16f587f27878cf45de5e4e6a27f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071529"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71094675"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Intune ユーザーにロールを割り当てる
 
@@ -30,8 +30,6 @@ ms.locfileid: "71071529"
 ロールを作成、編集、または割り当てるには、アカウントに Azure AD の次のいずれかのアクセス許可が必要です。
 - **グローバル管理者**
 - **Intune サービス管理者**
-
-各組み込みロールのアクセス許可の完全な一覧は、「[Intune RBAC Table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)」を参照してください。
 
 1. [Azure ポータル](https://portal.azure.com) にサインインします。
 

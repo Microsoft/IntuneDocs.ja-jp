@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 10366a41be05dbedee5cd84a1222a727a02a1b93
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 6b7e8f5077f2052a11c980ae3f5629af810a8a0b
+ms.sourcegitcommit: 49f25efb9bc0f16f587f27878cf45de5e4e6a27f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071476"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71094690"
 ---
 # <a name="create-a-custom-role-in-intune"></a>Intune でカスタム ロールを作成する
 
@@ -41,7 +41,7 @@ ms.locfileid: "71071476"
 
 4. **[カスタム ロールの追加]** ブレードで、新しいロールの名前と説明を入力し、 **[アクセス許可]** をクリックします。
 
-5. **[アクセス許可]** ブレードで、このロールで使用するアクセス許可を選択します。 [Intune RBAC テーブル](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a)を使用すると、適用するアクセス許可を決めるのに役立ちます。
+5. **[アクセス許可]** ブレードで、このロールで使用するアクセス許可を選択します。
 
 6. **[スコープ (タグ)]** ブレードで、このロールのタグを選択します。 このロールでは、これらのタグも設定されているリソースにアクセスできます。
 

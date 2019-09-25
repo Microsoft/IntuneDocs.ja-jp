@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14eded43200aed7e9ebf4454bcde61133351e4e2
-ms.sourcegitcommit: 76d59edfd5900ce33c64470ae604eb3db016c8ca
+ms.openlocfilehash: d6fe60cf53f88186448cd9586d5c75fca4d517ad
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69979214"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167393"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Microsoft Outlook の構成設定 
 
@@ -30,7 +30,7 @@ iOS デバイスと Android デバイスで実行されている Microsoft Outlo
 - 管理対象の iOS デバイス用のアプリ構成ポリシーを作成するには、「[管理対象の iOS デバイス用アプリ構成ポリシーを追加する](app-configuration-policies-use-ios.md)」を参照してください。 
 - 管理対象の Android デバイス用のアプリ構成ポリシーを作成するには、「[管理対象の Android デバイス用アプリ構成ポリシーを追加する](app-configuration-policies-use-android.md)」を参照してください。 
 
-登録されていないデバイスの場合は、「[デバイス登録なしでマネージド アプリのアプリ構成ポリシーを追加する](https://docs.microsoft.com/intune/app-configuration-policies-managed-app)」を参照し、iOS および Android 用 Outlook のアプリ構成ポリシーを作成してください。
+登録されていないデバイスの場合は、「[デバイス登録なしでマネージド アプリのアプリ構成ポリシーを追加する](app-configuration-policies-managed-app.md)」を参照し、iOS および Android 用 Outlook のアプリ構成ポリシーを作成してください。
 
 ## <a name="configuration-settings"></a>構成設定
 

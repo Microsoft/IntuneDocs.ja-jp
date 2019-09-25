@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fef4b6969680101e2e4f045bc83a8974536eaf2a
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 55132570683742bd3e8dcec1c20726b9eb2c4b16
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660968"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166831"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Intune で Mobile Threat Defense (MTD) アプリを追加して割り当てる  
 
@@ -35,8 +35,8 @@ ms.locfileid: "68660968"
 [Azure Portal](https://portal.azure.com/) で以下の手順を完了しておく必要があります。 次のプロセスをよく理解している必要があります。
 
 - [Intune にアプリを追加する](apps-add.md)。
-- [iOS アプリ構成ポリシーを Intune に追加する](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)。
-- [Intune でアプリを割り当てる](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune)。
+- [iOS アプリ構成ポリシーを Intune に追加する](app-configuration-policies-use-ios.md)。
+- [Intune でアプリを割り当てる](apps-deploy.md)。
 
 > [!TIP]
 > Intune ポータル サイトは Android デバイスでブローカーとして機能するため、ユーザーに Azure AD によってチェックされた ID が与えられます。
@@ -136,7 +136,7 @@ MTD プロバイダーに対応するセクションを選択します。
   - Android ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-android.md)をご覧ください。 この [Wandera モバイル アプリ ストアの URL](https://play.google.com/store/apps/details?id=com.wandera.android) は**手順 7** で使用します。 **[Minimum operating system]\(最小オペレーティング システム\)** では、 **[Android 5.0]** を選びます。
 
 - **Android**
-  - iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](https://docs.microsoft.com/intune/store-apps-ios)をご覧ください。 **手順 11** の **[アプリ ストアの URL]** には、この [Wandera モバイル アプリ ストアの URL](https://itunes.apple.com/app/wandera/id605469330) を使います。
+  - iOS ストア アプリを Microsoft Intune に追加する方法については、[こちら](store-apps-ios.md)をご覧ください。 **手順 11** の **[アプリ ストアの URL]** には、この [Wandera モバイル アプリ ストアの URL](https://itunes.apple.com/app/wandera/id605469330) を使います。
 
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>MTD アプリに iOS アプリ構成ポリシーを構成する  
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 09/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: 13e8c7fd0c822a2bdfbf7c183ea6752f99cf7991
-ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
+ms.openlocfilehash: 8248991e1facc78def580d75a5b7e7e6ba353c98
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68482751"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163684"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Intune でエンドポイント保護設定を追加する  
 
@@ -54,7 +54,6 @@ Intune でデバイスの構成プロファイルを使用し、次などのデ�
    プロファイルが作成され、プロファイルの一覧ページに表示されます。 このプロファイルをグループに割り当てる場合は、[デバイス プロファイルの割り当て](device-profile-assign.md)に関するページを参照してください。  
 
 ## <a name="add-custom-firewall-rules-for-windows-10-devices"></a>Windows 10 デバイスのカスタム ファイアウォール規則を追加する  
-***カスタム ファイアウォール規則はパブリック プレビュー段階です。***  
 
 Windows 10 のエンドポイント保護規則を含むプロファイルの一部として Windows Defender ファイアウォールを構成する場合は、ファイアウォールのカスタム規則を構成できます。 カスタム規則を使用すると、Windows 10 でサポートされているファイアウォール規則の定義済みセットを拡張できます。  
 

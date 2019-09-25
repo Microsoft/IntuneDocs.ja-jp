@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b58b27264e2f6955ae4f16843bb3493e5fdc993e
-ms.sourcegitcommit: fe67741c62749fc9114e9191092ed8b786dd4ffa
+ms.openlocfilehash: 69f214b4fd3f3b7767e719c0f68f19e178a8e29c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270295"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167239"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Intune を使用して Microsoft Defender ATP によって検出された脆弱性を修復する  
 
@@ -37,13 +37,15 @@ ATP セキュリティ管理者は、Microsoft Defender セキュリティ セ�
 タスクに同意したら、Intune 管理者はセキュリティ タスクの一部として提供されたガイダンスを使って、Intune で脆弱性を修復します。  
 
 修復のための一般的なアクションは次のとおりです。  
+
 - アプリケーションが実行されないように**ブロック**します  
 - オペレーティング システムの更新プログラムを**展開**して、脆弱性を軽減します。  
 - レジストリの値を**変更**します。  
 - 構成を**無効**または**有効**にして、脆弱性に影響を与えます。  
 - 提供する適切な推奨事項がない場合は、**注意が必要です**によって管理者は脅威に対する警告を受けます。  
 
-ワークフローの例:  
+ワークフローの例:
+
 - Microsoft Defender ATP で Contoso Media Player v4 という名前のアプリに対する脆弱性が検出され、管理者はそのアプリを更新するセキュリティ タスクを作成します。 Contoso Media Player は、Intune で展開されたアンマネージド アプリです。  
 
   Intune コンソールには、このセキュリティ タスクが保留中という状態で表示されます。  
@@ -61,13 +63,16 @@ ATP セキュリティ管理者は、Microsoft Defender セキュリティ セ�
 ## <a name="prerequisites"></a>必要条件  
 
 **サブスクリプション**:  
+
 - Microsoft Intune  
 - Microsoft Defender Advanced Threat Protection ([無料試用版にサインアップ](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-main-abovefoldlink))  
 
 **ATP 用の Intune の構成**:  
+
 - Microsoft Defender ATP でサービス間の接続を構成します。  
 - ATP によって評価されるリスクがあるデバイスに、プロファイルの種類を **Microsoft Defender ATP (Windows 10 Desktop)** にしてデバイス コンプライアンス ポリシーを展開します。
-  ATP で動作するように Intune を設定する方法については、[Intune の条件付きアクセスでの Microsoft Defender ATP に対するコンプライアンスの適用](https://docs.microsoft.com/intune/advanced-threat-protection#enable-microsoft-defender-atp-in-intune)に関する記事を参照してください。  
+
+  ATP で動作するように Intune を設定する方法については、[Intune の条件付きアクセスでの Microsoft Defender ATP に対するコンプライアンスの適用](advanced-threat-protection.md#enable-microsoft-defender-atp-in-intune)に関する記事を参照してください。  
 
 ## <a name="work-with-security-tasks"></a>セキュリティ タスクを処理する  
 
@@ -89,6 +94,6 @@ ATP セキュリティ管理者は、Microsoft Defender セキュリティ セ�
 修復が成功した後、修復されたデバイスからの新しい情報に基づき、ATP のリスク エクスポージャ スコアが下がる場合があります。 
 
 ## <a name="next-steps"></a>次の手順
-Intune と [Microsoft Defender ATP](https://docs.microsoft.com/intune/advanced-threat-protection) についてさらに詳しく学習する  
-Intune の [Mobile Threat Defense](https://docs.microsoft.com/intune/mobile-threat-defense) について確認する  
+Intune と [Microsoft Defender ATP](advanced-threat-protection.md) についてさらに詳しく学習する  
+Intune の [Mobile Threat Defense](mobile-threat-defense.md) について確認する  
 Microsoft Defender ATP で[脅威と脆弱性の管理ダッシュボード](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/tvm-dashboard-insights)について確認する

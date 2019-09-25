@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4e25ab5a546f20309853346d0d4ded42fee6e8b
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: fed90635a450ed59827482d2f2c03d17a05d9673
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568311"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "71239702"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Intune にユーザーを追加して管理アクセス許可を付与する
 
@@ -56,7 +55,7 @@ ms.locfileid: "59568311"
 6. **[追加]** を選択して新しいユーザーを作成します。
 
 ### <a name="add-intune-users-in-the-azure-portal"></a>Azure Portal で Intune ユーザーを追加する
-1. [Azure Portal](https://portal.azure.com) にサインインし、 **[すべてのサービス]**  >  **[監視 + 管理]**  >  **[Intune]** の順に移動します。 **Intune** の "*リソースを検索する*" こともできます。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 2. **[ユーザー]**  >  **[すべてのユーザー]** の順に選択します。
 3. 管理センターで、 **[新しいユーザー]** を選びます。
    ![新しいユーザーの追加のスクリーンショット](media/intune-add-user.png)
@@ -65,7 +64,7 @@ ms.locfileid: "59568311"
    - **ユーザー名** - Azure Active Directory ポータルの新しい名前 ![名前とユーザー名の追加のスクリーンショット](media/intune-add-user-info.png) **[OK]** を選択して続行します。
 5. 必要に応じて、次のユーザー プロパティを指定できます。
    - **プロファイル** - **役職**や**部署**などの仕事情報
-   -  **グループ** - ユーザーに追加するグループを選択します
+   - **グループ** - ユーザーに追加するグループを選択します
    - **ディレクトリ ロール** - Intune サービス管理者ロールを含む管理者アクセス許可をユーザーに与えます。
 
    **[作成]** を選択し、新しいユーザーを Intune に追加します。
@@ -119,4 +118,4 @@ Microsoft 365 管理センターにアクセスするには、アカウントに
 ユーザー アカウントを Azure AD と同期するために必要なツールは、[Azure AD Connect ウィザード](https://www.microsoft.com/download/details.aspx?id=47594)のみです。 Azure AD Connect ウィザードでは、簡単な画面の指示に従って、オンプレミスの ID インフラストラクチャをクラウドに接続できます。 トポロジと要件 (単一ディレクトリまたは複数ディレクトリ、パスワード ハッシュ同期、パススルー認証、またはフェデレーション) を選択します。 ウィザードにより、接続を稼働させるために必要なすべてのコンポーネントがデプロイされて構成されます。 接続した機能が稼働するために必要なすべてのコンポーネントが自動的に展開されて構成されます。
 
 > [!TIP]
-> Azure AD Connect には、過去に Dirsync や Azure AD Sync としてリリースされた機能がすべて備わっています。[ディレクトリ統合](http://technet.microsoft.com/library/jj573653.aspx)の詳細を確認してください。 ローカル ディレクトリから Azure AD へのユーザー アカウントの同期について詳しくは、「[Active Directory と Azure AD の類似点](http://technet.microsoft.com/library/dn518177.aspx)」をご覧ください。
+> Azure AD Connect には、過去に Dirsync や Azure AD Sync としてリリースされた機能がすべて備わっています。[ディレクトリ統合](https://technet.microsoft.com/library/jj573653.aspx)の詳細を確認してください。 ローカル ディレクトリから Azure AD へのユーザー アカウントの同期について詳しくは、「[Active Directory と Azure AD の類似点](https://technet.microsoft.com/library/dn518177.aspx)」をご覧ください。
