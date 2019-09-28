@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77b7f3adf4fa8675e3734f7eab8fbaa9391d952a
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2e4def9f0e4e91f7db9e0a81e2ad55852df524f7
+ms.sourcegitcommit: 0d1a02fb3d2a801a95c2244e9ef13ecf22be2eb1
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527960"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71302460"
 ---
 # <a name="enroll-windows-10-devices-with-intune-company-portal"></a>Intune ポータル サイトで Windows 10 デバイスを登録する
 
@@ -45,7 +45,7 @@ Windows 10 は、デスクトップ、スマートフォン、タブレットな
 
     ![[職場または学校にアクセスする] アカウントの選択](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-4. 職場または学校の電子メール アドレスを入力し、 **[次へ]** を選択します。  
+4. 組織の Intune サインインページにアクセスするには、職場または学校の電子メールアドレスを入力します。 その後、 **[次へ]** を選択します。  
 
 
    ![職場または学校のアカウントを入力します。](./media/w10-enroll-rs1-set-up-work-or-school-account.png)  

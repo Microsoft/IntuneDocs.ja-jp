@@ -5,23 +5,26 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 08/07/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
+ms.reviewer: maholdaa
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e37d6a2b7371cf20cd36a6f3f75a4dd252c332f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8e13c2dce5e8da2ce71b97de496d5234096c3b22
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048039"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "71301959"
 ---
 # <a name="android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Intune を使用して電子メール、認証、および同期を構成するための Android エンタープライズ デバイスの設定
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 この記事では、Android エンタープライズ デバイスで制御できるさまざまな電子メール設定の一覧を示して説明します。 モバイル デバイス管理 (MDM) ソリューションの一部として、これらの設定を使って電子メール サーバーの構成や、SSL を使用した電子メールの暗号化などを行います。
 
@@ -31,7 +34,7 @@ Intune での電子メール プロファイルの詳細については、[電�
 
 ## <a name="before-you-begin"></a>始める前に
 
-[デバイス構成プロファイルを作成](email-settings-configure.md#create-a-device-profile)し、仕事用プロファイルを選択します。
+[デバイス構成プロファイル](email-settings-configure.md#create-a-device-profile)を作成する (仕事用プロファイルを選択する) か、[アプリ構成ポリシー](app-configuration-policies-use-android.md)を作成します。
 
 ## <a name="android-enterprise"></a>Android エンタープライズ
 

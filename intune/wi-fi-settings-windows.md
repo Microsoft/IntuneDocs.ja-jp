@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bbd90b5a317629bd5b4d87b619d89023053518d
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 528819452accf4a7f17e54b3c05693dee5cab74f
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884254"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239450"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Intune での Windows 10 以降のデバイス向けの Wi-Fi 設定の追加
 
@@ -62,6 +62,9 @@ ms.locfileid: "67884254"
     
       > [!NOTE]
       > Wi-Fi プロファイルを保存するとき、入力した PSK 値はセキュリティ上の理由から表示されません。 PSK がプロファイルに保存された場合でも、事前共有キーの透かしにはまだ **[未構成]** と表示されます。 PSK を変更するには、新しいキーを入力して、プロファイルを保存します。 PSK を保存する場合に、ポリシーを編集し、PSK を空白のままにすると、既存の PSK がまだ使用されます。
+      
+      > [!IMPORTANT]
+      > PSK は、profutex をターゲットとするすべてのデバイスで同じです。 キーが侵害された場合は、どのデバイスでも Wi-fi ネットワークに接続するために使用できます。 許可されていないアクセスを避けるため、PSKs のセキュリティを維持します。
 
 - **[会社のプロキシの設定]** : 組織内のプロキシ設定を使用する場合に選択します。 次のようなオプションがあります。
   - **[なし]** : プロキシ設定は構成されません。

@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 03/11/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,18 +16,18 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df5b20be667159689aaaee9a790c0a4c5b5864fd
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 8a4e6cbf2d9edcff83ae756c2dbcf098cae0ae54
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798400"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "71301874"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>トラブルシューティング ポータルを使用して社内のユーザーをサポートする
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-トラブルシューティング ポータルでは、ヘルプ デスクのオペレーターや Intune の管理者が、ユーザーのヘルプ要求に対処するためにユーザー情報を表示することができます。 ヘルプ デスクが含まれる組織は、ユーザーのグループに**ヘルプ デスク オペレーター**を割り当てることができます。 ヘルプ デスク オペレーター ロールの場合、**[トラブルシューティング]** ウィンドウを使用できます。
+トラブルシューティング ポータルでは、ヘルプ デスクのオペレーターや Intune の管理者が、ユーザーのヘルプ要求に対処するためにユーザー情報を表示することができます。 ヘルプ デスクが含まれる組織は、ユーザーのグループに**ヘルプ デスク オペレーター**を割り当てることができます。 ヘルプ デスク オペレーター ロールの場合、 **[トラブルシューティング]** ウィンドウを使用できます。
 
 **[トラブルシューティング]** ウィンドウにもユーザー登録に関する問題が表示されます。 問題に関する詳細と推奨される修復手順は、管理者およびヘルプ デスクのオペレーターが問題をトラブルシューティングするのに役立ちます。 登録に関する特定の問題はキャプチャされず、一部のエラーには推奨される修復方法がない場合があります。
 
@@ -45,11 +44,10 @@ ms.locfileid: "58798400"
 
 ## <a name="to-review-troubleshooting-details"></a>トラブルシューティングの詳細を確認するには
 
-トラブルシューティング ウィンドウで、**[ユーザーの選択]** を選択してユーザー情報を表示します。 ユーザー情報は、ユーザーと彼らのデバイスの現在の状態を理解するのに役立ちます。  
+トラブルシューティング ウィンドウで、 **[ユーザーの選択]** を選択してユーザー情報を表示します。 ユーザー情報は、ユーザーと彼らのデバイスの現在の状態を理解するのに役立ちます。  
 
-1. [Azure ポータル](https://portal.azure.com) にサインインします。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3. **[Intune]** ウィンドウで、**[トラブルシューティング]** を選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+3. **[Intune]** ウィンドウで、 **[トラブルシューティング]** を選択します。
 4. **[選択]** をクリックして、トラブルシューティングを行うユーザーを選択します。
 5. 名前または電子メール アドレスを入力して、ユーザーを選択します。 **[選択]** をクリックします。 ユーザーのトラブルシューティング情報が、トラブルシューティング ウィンドウに表示されます。 情報については、次の表で説明します。
 
@@ -60,7 +58,7 @@ ms.locfileid: "58798400"
 
 **[トラブルシューティング]** ウィンドウを使用して、ユーザー情報を確認することができます。
 
-![](/intune/media/troubleshooting-dash.png)
+![次の表で説明する番号付き領域を持つトラブルシューティングダッシュボード](/intune/media/troubleshooting-dash.png)
 
 | 領域 | 名前 | 説明 |
 | ---  | ---  | ---         |
@@ -108,7 +106,7 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 
 ### App protection status
 
-An app protection policy is available to mobile apps that integrate with Enterprise Mobility Solution (EMS) technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
+An app protection policy is available to mobile apps that integrate with Enterprise Mobility Solution (EMS) technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
 | Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -121,7 +119,7 @@ An app protection policy is available to mobile apps that integrate with Enterpr
 
 ## App protection policies reference
 
-An app protection policy is available to mobile apps that integrate with EMS technologies.These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
+An app protection policy is available to mobile apps that integrate with EMS technologies.These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
 ### Properties
 
@@ -154,7 +152,7 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 
 ## Compliance policies reference
 
-Makes sure that the devices used to access company apps and data, comply with certain rules like using a PIN to access the device, and encryption of data stored on the device.
+Makes sure that the devices used to access company apps and data, comply with certain rules like using a PIN to access the device, and encryption of data stored on the device.
 
 ### Properties
 
@@ -186,7 +184,7 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 
 ### App protection policies
 
-An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
 | Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -199,7 +197,7 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 
 ## Configuration policies reference
 
-An app configuration policy is available to mobile apps with vendor-specific configuration. 
+An app configuration policy is available to mobile apps with vendor-specific configuration. 
 
 ### Properties
 
@@ -232,7 +230,7 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 
 ### App protection policies
 
-An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
 | Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -294,11 +292,11 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 ## <a name="collect-available-data-from-mobile-device"></a>モバイル デバイスから使用可能なデータを収集する
 
 ユーザーのデバイスの問題のトラブルシューティングを行うときに、以下のリソースを使用してデバイスのデータを収集します。
-  - [IT 管理者に iOS の登録に関するエラーを送信する](/intune-user-help/send-errors-to-your-it-admin-ios)
-  - [詳細ログ記録を使用して会社のサポートがデバイスの問題を解決できるようにする](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
-  - [USB ケーブルを使用して Android のログを会社のサポートに送信する](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
-  - [メールを使用して Android の診断データのログを IT 管理者に送信する](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
-  - [IT 管理者に Android の登録に関するエラーを送信する](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
+- [IT 管理者に iOS の登録に関するエラーを送信する](/intune-user-help/send-errors-to-your-it-admin-ios)
+- [詳細ログ記録を使用して会社のサポートがデバイスの問題を解決できるようにする](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
+- [USB ケーブルを使用して Android のログを会社のサポートに送信する](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+- [メールを使用して Android の診断データのログを IT 管理者に送信する](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
+- [IT 管理者に Android の登録に関するエラーを送信する](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
 
 ## <a name="next-steps"></a>次の手順
 

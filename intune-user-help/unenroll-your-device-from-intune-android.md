@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a472e4d8c3ef7b922f02b4d2407362ba738486c
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 91aefbc8c3960100ce5e9164ce48a2b9d33c3f3e
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71167531"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238962"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>管理から Android デバイスの登録を解除する  
 
@@ -64,7 +64,7 @@ Android 用のポータル サイト アプリによってお使いのデバイ�
 
 最後の手段として、デバイス管理者としてデバイスからアプリをアンインストールできます。  
 
-会社所有のデバイスがある場合、ポータル サイトがデバイスに常にあることが組織から求められる場合があります。 ポータル サイトをアンインストールすると、アプリを再インストールするまで、電子メール、アプリ、Wi-Fi、VPN などの保護された会社のリソースにアクセスできなくなる可能性があります。 必要なアプリのインストール、更新、または削除の詳細については、「[Microsoft Intune にアプリを追加する](https://docs.microsoft.com/intune/apps-add.md#apps-that-are-added-automatically-by-intune)」を参照してください。  
+会社所有のデバイスがある場合、ポータル サイトがデバイスに常にあることが組織から求められる場合があります。 ポータル サイトをアンインストールすると、アプリを再インストールするまで、電子メール、アプリ、Wi-Fi、VPN などの保護された会社のリソースにアクセスできなくなる可能性があります。 必要なアプリのインストール、更新、または削除の詳細については、「[Microsoft Intune にアプリを追加する](https://docs.microsoft.com/intune/apps-add#apps-that-are-added-automatically-by-intune)」を参照してください。  
 
 デバイス管理者としてポータル サイトを無効にする方法は、次のとおりです。 各設定の実際の名前は、Android デバイスで異なる場合があります。  
 

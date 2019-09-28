@@ -6,9 +6,8 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 08/27/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,29 +17,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0728fefc40bc82db7926faf282a69d0471c3a1ea
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: HT
+ms.openlocfilehash: 88681696716080b38d0f7d9e79264d002f335029
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798121"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "71303291"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>Microsoft Intune データ ウェアハウスを使用する
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune データ ウェアハウスを使用して、社内のモバイル環境を分析できるレポートを構築します。 たとえば、次のようなレポートがあります。
--   ライセンス購入の最適化に利用できる Intune に登録されているユーザーの傾向
--   モバイル デバイスの状態を確認できるアプリと OS バージョンの内訳
--   ポリシーの更新をスムーズにロールアウトできる登録とデバイス コンプライアンスの傾向
+- ライセンス購入の最適化に利用できる Intune に登録されているユーザーの傾向
+- モバイル デバイスの状態を確認できるアプリと OS バージョンの内訳
+- ポリシーの更新をスムーズにロールアウトできる登録とデバイス コンプライアンスの傾向
 
 ## <a name="data-warehouse-benefits"></a>データ ウェアハウスの利点
 
 データ ウェアハウスを使用すると、モバイル環境について Azure Portal よりも詳細な情報にアクセスできます。 Intune データ ウェアハウスでは、次の情報にアクセスできます。
 
-  -  Intune の履歴データ
-  -  日単位の更新データ
-  -  OData 標準を使用するデータ モデル
+- Intune の履歴データ
+- 日単位の更新データ
+- OData 標準を使用するデータ モデル
 
 > [!Note]
 > System Center Configuration Manager と Microsoft Intune で共同管理モバイル デバイス管理 (MDM) を使用している場合は、Configuration Manager からデータを取得する必要があります。 Intune データが含まれるのは Intune データ ウェアハウスのみです。 カスタム レポートには Configuration Manager Power BI ダッシュボードを使用できます。 詳細については、「[Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)」(System Center Configuration Manager 用 Power BI ソリューション テンプレートの発表) と [Dynamics 365 の Power BI コンテンツ](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)に関するページを参照してください。

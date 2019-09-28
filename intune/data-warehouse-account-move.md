@@ -6,9 +6,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 07/24/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c73e4c8aa5f71fb80110d4a223b9872c8dbaff3
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 7d51d504f63e9a9c942bbcbc689c67bc63d74a2c
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798104"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "71304928"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Intune データ ウェアハウスのアカウント データを移動する 
 
@@ -43,16 +42,16 @@ ms.locfileid: "58798104"
 Azure Portal のビュー内の一部のトレンド グラフがリセットされます。 **[グラフ]** で次のスクリプトを実行することで、これらのグラフをバックアップすることができます。   
 
 ### <a name="terms--conditions-acceptance-reports"></a>使用条件への同意レポート
-1. Azure Portal で、**[Microsoft Intune]** -> **[デバイスの登録]** -> **[使用条件]** の順に移動します。
-2. **[使用条件]** の各項目について、**[同意レポート]**、**[エクスポート]** の順に選択します。
+1. Azure Portal で、 **[Microsoft Intune]**  ->  **[デバイスの登録]**  ->  **[使用条件]** の順に移動します。
+2. **[使用条件]** の各項目について、 **[同意レポート]** 、 **[エクスポート]** の順に選択します。
 3. レポートをローカルに保存します。
  
 ### <a name="app-protection-reports"></a>アプリの保護レポート  
-1. Azure portal で、**[Microsoft Intune]** -> **[クライアント アプリ]** -> **[アプリの保護の状態]** の順に移動します。
+1. Azure portal で、 **[Microsoft Intune]**  ->  **[クライアント アプリ]**  ->  **[アプリの保護の状態]** の順に移動します。
 2. ダウンロード アイコン ( ⤓ ) をクリックして、各レポートを保存します。
 
 ### <a name="device-configuration-charts"></a>デバイス構成のグラフ 
-1. Azure Portal で、**[Microsoft Intune]** -> **[DeviceConfiguration]** の順に移動します。
+1. Azure Portal で、 **[Microsoft Intune]**  ->  **[DeviceConfiguration]** の順に移動します。
 2. Microsoft [グラフ エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)を使用して、グラフの背後にあるデータをダウンロードします。 
     - すべてのデバイスのすべてのデバイス構成プロファイルの展開ステータスについては、[デバイスの展開ステータス](https://graph.microsoft.com/beta/reports/deviceConfigurationDeviceActivity/content)に関するページを参照してください。
 
@@ -64,7 +63,7 @@ Azure Portal のビュー内の一部のトレンド グラフがリセットさ
     > デバイスの構成と展開のステータス情報にアクセスするには、有効な認証トークンが必要です。
 
 ## <a name="device-enrollment-charts"></a>デバイス登録のグラフ
-1. Azure Portal で、**[Microsoft Intune]** -> **[DeviceEnrollment]** の順に移動します。
+1. Azure Portal で、 **[Microsoft Intune]**  ->  **[DeviceEnrollment]** の順に移動します。
 2. Microsoft [グラフ エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)を使用して、グラフの背後にあるデータをダウンロードします。
     - 登録ステータスの場合は、この[登録ステータス クエリ](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentFailureTrends()/content)をコピーして、[グラフ エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)に貼り付けます。
     - 今週の上位の登録エラーの場合は、この[登録エラー クエリ](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentTopFailures(period=null)/content)をコピーして、[グラフ エクスプローラー](https://developer.microsoft.com/graph/graph-explorer)に貼り付けます。
@@ -82,5 +81,5 @@ Azure Portal のビュー内の一部のトレンド グラフがリセットさ
 
 ## <a name="next-steps"></a>次の手順
 
- - [週ごとにまとめた Intune の新機能](whats-new.md)を参照してください。 今後の変更、サービスに関する重要なお知らせ、過去のリリースに関する情報も確認できます。
- - [Microsoft Intune のブログ](https://go.microsoft.com/fwlink/?LinkID=273882)を参照してください。
+- [週ごとにまとめた Intune の新機能](whats-new.md)を参照してください。 今後の変更、サービスに関する重要なお知らせ、過去のリリースに関する情報も確認できます。
+- [Microsoft Intune のブログ](https://go.microsoft.com/fwlink/?LinkID=273882)を参照してください。
