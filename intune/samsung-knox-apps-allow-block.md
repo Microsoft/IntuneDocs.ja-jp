@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4efa2a813dda16805effe55ff3d1b967ef5d6c88
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: edff9ca3e292a2b5653a8b156a8deaa02bb79e9d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798229"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "71303180"
 ---
 # <a name="use-custom-policies-in-microsoft-intune-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Microsoft Intune でカスタム ポリシーを使用して Samsung KNOX Standard デバイス用のアプリを許可またはブロックする 
 
@@ -36,33 +35,32 @@ ms.locfileid: "58798229"
 
 ## <a name="create-an-allowed-or-blocked-app-list"></a>許可されているアプリまたはブロックされているアプリの一覧の作成
 
-1. [Azure ポータル](https://portal.azure.com) にサインインします。
-2. **[すべてのサービス]** > **[Intune]** の順に選択します。 Intune は **[監視 + 管理]** セクションにあります。
-3. **[Intune]** ウィンドウで、**[デバイス構成]** を選択します。
-2. **[デバイス構成]** ウィンドウで、**[管理]**、**[プロファイル]** の順に選択します。
-2. プロファイルの一覧ウィンドウで、**[プロファイルの作成]** を選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
+3. **[Intune]** ウィンドウで、 **[デバイス構成]** を選択します。
+2. **[デバイス構成]** ウィンドウで、 **[管理]** 、 **[プロファイル]** の順に選択します。
+2. プロファイルの一覧ウィンドウで、 **[プロファイルの作成]** を選択します。
 3. **[プロファイルを作成します]** ウィンドウで、デバイス プロファイルの**名前**と省略可能な**説明**を入力します。
-2. **[プラットフォーム]** には **[Android]** を、**[プロファイルの種類]** には **[カスタム]** を選択します。
+2. **[プラットフォーム]** には **[Android]** を、 **[プロファイルの種類]** には **[カスタム]** を選択します。
 3. **[設定]** をクリックします。
-3. **[OMA-URI のカスタム設定]** ウィンドウで、**[追加]** を選択します。
+3. **[OMA-URI のカスタム設定]** ウィンドウで、 **[追加]** を選択します。
 4. **[OMA-URI 設定の追加または編集]** ダイアログ ボックスで、次の設定を指定します。
 
    デバイスでの実行がブロックされているアプリの一覧の場合:
 
    - **[名前]** - 「**PreventStartPackages**」と入力します。
    - **[説明]** - "実行されないようにブロックされているアプリの一覧" のような説明 (省略可能) を入力します。
-   -    **[データ型]** - ドロップダウン リストで **[文字列]** を選択します。
-   -    **[OMA-URI]** - 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**」と入力します
-   -    **[値]** - ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,** **|** を使用できます。 (例: package1;package2;)
+   - **[データ型]** - ドロップダウン リストで **[文字列]** を選択します。
+   - **[OMA-URI]** - 「 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**」と入力します
+   - **[値]** - ブロックするアプリ パッケージ名の一覧を入力します。 区切り記号としては、 **; : ,** **|** を使用できます。 (例: package1;package2;)
 
    他のすべてのアプリの実行中にユーザーが Google Play ストアからインストールできるアプリの一覧の場合:
    - **[名前]** - 「**AllowInstallPackages**」と入力します。
-   - **[説明]**: "ユーザーが Google Play からインストールできるアプリの一覧" のような説明 (省略可能) を入力します。
+   - **[説明]** : "ユーザーが Google Play からインストールできるアプリの一覧" のような説明 (省略可能) を入力します。
    - **[データ型]** - ドロップダウン リストで **[文字列]** を選択します。
-   - **[OMA-URI]** - 「**./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**」と入力します
-   - **[値]** - 許可するアプリ パッケージ名の一覧を入力します。 区切り記号としては、**; : ,** **|** を使用できます。 (例: package1;package2;)
+   - **[OMA-URI]** - 「 **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/AllowInstallPackages**」と入力します
+   - **[値]** - 許可するアプリ パッケージ名の一覧を入力します。 区切り記号としては、 **; : ,** **|** を使用できます。 (例: package1;package2;)
 
-4. **[OK]** をクリックし、**[プロファイルを作成します]** ウィンドウで **[作成]** を選択します。
+4. **[OK]** をクリックし、 **[プロファイルを作成します]** ウィンドウで **[作成]** を選択します。
 
 >[!TIP]
 > Google Play ストアでアプリを参照して、アプリのパッケージ ID を確認できます。 パッケージ ID は、アプリのページの URL に含まれます。 たとえば、Microsoft Word アプリのパッケージ ID は **com.microsoft.office.word** です。
