@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune でカスタム デバイス設定を使用する - Azure | Microsoft Docs
-description: Microsoft Intune を使用し、Windows Phone、Windows 8.1、Windows 10 以降、Android、Android エンタープライズ、macOS、iOS デバイスのカスタム設定を使用するプロファイルを追加または作成します
+description: Microsoft Intune を使用し、Windows Phone、Windows 8.1、Windows 10 以降、Android、Android Enterprise、macOS、iOS デバイスのカスタム設定を使用するプロファイルを追加または作成します
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3bd7deaf96d399dbf07e215309bf146b072c10f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 854e8fc7a46f431ce36c4e30682c196e6484b93e
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043022"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163111"
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Intune でカスタム設定を持つプロファイルを作成する
 
@@ -39,7 +39,7 @@ Microsoft Intune には、デバイスのさまざまな機能を制御する多
 
 - [Android](custom-settings-android.md)
 - [Android エンタープライズ](custom-settings-android-for-work.md)
-- [Android](custom-settings-ios.md)
+- [iOS/iPadOS](custom-settings-ios.md)
 - [macOS](custom-settings-macos.md)
 - [Windows 10](custom-settings-windows-10.md)
 - [Windows Holographic for Business](custom-settings-windows-holographic.md)
@@ -51,7 +51,7 @@ Microsoft Intune には、デバイスのさまざまな機能を制御する多
 
 - [Android](custom-settings-android.md)
 - [Android エンタープライズ](custom-settings-android-for-work.md)
-- [Android](custom-settings-ios.md)
+- [iOS/iPadOS](custom-settings-ios.md)
 - [macOS](custom-settings-macos.md)
 - [Windows 10](custom-settings-windows-10.md)
 - [Windows Holographic for Business](custom-settings-windows-holographic.md)

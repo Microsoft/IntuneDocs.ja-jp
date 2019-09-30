@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a24c4b45b962f77846b4f7f7add3872daf38635
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 36e7b8468e4ee9d1f6be71a82d18f066bd7568d4
+ms.sourcegitcommit: 9110124a481160039d476cf0374a4fa0464a8509
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883790"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256196"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>条件付きアクセス ポリシーを Intune クラシック ポータルから Azure portal に再割り当てする
 
@@ -194,15 +194,9 @@ Azure portal で条件付きアクセス ポリシーの再割り当てを行っ
 
 ### <a name="to-disable-the-conditional-access-policies"></a>条件付きアクセス ポリシーを無効にするには
 
-1. [Intune クラシック ポータル](https://manage.microsoft.com)に移動し、資格情報でサインインします。
+MDM は Intune クラシック ポータルから削除されているため、これらのクラシック ポリシーを表示/無効化するために、次のリンクが提供されています。
 
-2. 左側のメニューから **[ポリシー]** を選びます。
-
-3. **[条件付きアクセス]** を選んだ後、条件付きアクセス ポリシーを作成した対象の Microsoft クラウド サービス (Exchange Online、SharePoint Online など) を選びます。
-
-4. **[条件付きアクセス ポリシーを有効にする]** オプションをオフにした後、 **[保存]** をクリックします。
-
-    ![Intune クラシック ポータルで条件付きアクセス ポリシーを無効にする画像](./media/reassign-ca-18.png)
+https://portal.azure.com/?microsoft_aad_iam_classicPolicyDontHide=true#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/ClassicPolicies
 
 ## <a name="see-also"></a>関連項目
 

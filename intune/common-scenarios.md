@@ -7,7 +7,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 11/29/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32be10340e1e77d2f994c5f038e6328ea42a6303
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d158cb01dbd13f032916f4dc2bf443ed0f6bfaae
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394771"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "71238593"
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Microsoft Intune の一般的な使用方法
 
@@ -44,7 +43,7 @@ ms.locfileid: "57394771"
 ほとんどのエンタープライズ モビリティ戦略は、従業員がインターネットに接続しているモバイル デバイスを使用して電子メールに安全にアクセスできるようにするための計画で始まります。 組織の多くは、まだ自社ネットワークでホストするオンプレミスのデータとアプリケーション サーバーを使用しています (Microsoft Exchange など)。
 
 
-Intune と Microsoft Enterprise Mobility + Security (EMS) は、Exchange Server 向けに独自の統合された[条件付きアクセス ソリューション](conditional-access.md)を提供しています。これにより、デバイスが Intune に登録されるまで、モバイル アプリは電子メールにアクセスできなくなります。 この種類の電子メール アクセスは、別のゲートウェイ コンピューターを会社のネットワークのエッジに展開することなく実装できます。
+Intune と Microsoft Enterprise Mobility + Security (EMS) では、Exchange Server 向けに独自の統合された[条件付きアクセス ソリューション](conditional-access.md)が提供されています。これにより、デバイスが Intune に登録されるまで、モバイル アプリは電子メールにアクセスできなくなります。 この種類の電子メール アクセスは、別のゲートウェイ コンピューターを会社のネットワークのエッジに展開することなく実装できます。
 
 また、基幹業務アプリケーション サーバーのような、オンプレミス データへの安全なアクセスを必要とするモバイル アプリへのアクセスを有効にすることもできます。 通常、この種のアクセスを行うには、[Intune で管理されたアクセス制御のための証明書](certificates-configure.md)と、境界内の標準の VPN ゲートウェイまたはプロキシ (Microsoft Azure Active Directory アプリケーション プロキシなど) を組み合わせて使用します。 
 
@@ -56,7 +55,7 @@ Intune と Microsoft Enterprise Mobility + Security (EMS) は、Exchange Server 
 ## <a name="protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices"></a>モバイル デバイスで安全にアクセスできるように Office 365 の電子メールとデータを保護する
 Office 365 の企業データ (電子メール、ドキュメント、インスタント メッセージ、連絡先) の保護は、非常に簡単かつシームレスに行えます。
 
-Intune と Microsoft Enterprise Mobility + Security が提供する統合された条件付きアクセス ソリューションにより、会社のコンプライアンス要件 ([多要素認証](multi-factor-authentication.md)、Intune での登録、管理されたアプリの使用、サポート対象の OS のバージョン、デバイスの PIN、リスクの低いユーザー プロファイルなど) を満たしていない限り、どのユーザーやアプリ、デバイスも Office 365 のデータにアクセスできないようにすることができます。
+Intune と Microsoft Enterprise Mobility + Security によって提供される統合された条件付きアクセス ソリューションにより、会社のコンプライアンス要件 ([多要素認証](multi-factor-authentication.md)、Intune での登録、管理されたアプリの使用、サポート対象の OS のバージョン、デバイスの PIN、リスクの低いユーザー プロファイルなど) を満たしていない限り、どのユーザーやアプリ、デバイスも Office 365 のデータにアクセスできないようにすることができます。
 
 
 それぞれのアプリ ストアの Office モバイル アプリは Intune で構成できるデータ封じ込めポリシーに対応しています。 そのため、IT 部門で管理されていないアプリ (ネイティブの電子メール アプリなど) や記憶域の場所 (Dropbox など) とのデータの共有を防ぐことができます。 こうした機能はすべて Office 365 と EMS に組み込まれているので、 新たにインフラストラクチャを展開する必要はありません。

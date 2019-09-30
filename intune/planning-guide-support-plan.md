@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c654b8e05cabf132324e8dafe70e5991a67bd516
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c71edf84fb1ade261eefc1b3de4543e941bf0657
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548322"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166816"
 ---
 # <a name="develop-a-support-plan"></a>サポート計画を作成する
 
@@ -84,7 +84,7 @@ Intune サポート トレーニングの課題例を次に示します。
 
 - Q & A
 
-[Intune 文書](https://docs.microsoft.com/intune/)には、Intune 概要、詳細な機能説明、トラブルシューティング情報があります。 [Intune フォーラム](https://social.technet.microsoft.com/Forums/home)はコミュニティ基盤のリソースであり、Intune 文書にはない質問やトピックがあります。
+[Intune のドキュメント](index.yml)では、Intune の概要、詳細な機能説明、トラブルシューティングの情報が提供されています。 [Intune フォーラム](https://social.technet.microsoft.com/Forums/home)はコミュニティ基盤のリソースであり、Intune 文書にはない質問やトピックがあります。
 
 ## <a name="what-opportunities-are-there-to-involve-the-support-team-earlier"></a>初期段階でサポート チームが参加できる機会
 

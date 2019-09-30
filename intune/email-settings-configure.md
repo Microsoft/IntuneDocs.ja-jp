@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b579849d9afdb50470b7a772e003cc616e1f94a0
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2a534aef3cdb989376dc1c148abedfb4f4e4f78b
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530038"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71162888"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>Intune を使用してデバイスに電子メールの設定を追加する
 
@@ -40,23 +40,29 @@ Microsoft Intune には、組織内のデバイスに展開できるさまざま
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 2. **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
-3. 電子メール プロファイルの **[名前]** と **[説明]** を入力します。
-4. ドロップダウン リストから **[プラットフォーム]** を選択します。 次のようなオプションがあります。
+3. 次のプロパティを入力します。
 
-    - **Android** (Samsung Android KNOX Standard のみ)
-    - **Android エンタープライズ**
-    - **Android**
-    - **Windows Phone 8.1**
-    - **Windows 10 以降**
+    - **名前**: ポリシーのわかりやすい名前を入力します。 後で簡単に識別できるよう、ポリシーに名前を付けます。 たとえば、"**すべての Windows デバイスに対する電子メールの設定**" はよいポリシー名です。
+    - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
+    - **[プラットフォーム]** :デバイスのプラットフォームを選択します。 次のようなオプションがあります。
 
-5. **[プロファイルの種類]** ドロップダウン リストで、 **[電子メール]** を選択します。
-6. 構成できる設定は、プラットフォームごとに異なる可能性があります。 具体的な設定については、お使いのプラットフォームを選択してください。
+        - **Android** (Samsung Android KNOX Standard のみ)
+        - **Android エンタープライズ**
+        - **iOS/iPadOS**
+        - **Windows Phone 8.1**
+        - **Windows 10 以降**
+
+    - **[プロファイルの種類]** : **[電子メール]** を選択します。
+
+4. 選択したプラットフォームによって構成できる設定が異なります。 詳細な設定については、お使いのプラットフォームを選択してください。
 
     - [Android Samsung Knox Standard の設定](email-settings-android.md)
     - [Android エンタープライズの設定](email-settings-android-enterprise.md)
-    - [iOS の設定](email-settings-ios.md)
+    - [iOS/iPadOS の設定](email-settings-ios.md)
     - [Windows Phone 8.1 の設定](email-settings-windows-phone-8-1.md)
     - [Windows 10 の設定](email-settings-windows-10.md)
+
+5. 完了したら、 **[OK]**  >  **[作成]** を選択して変更を保存します。
 
 設定を入力してプロファイルを作成すると、プロファイルの一覧に自分のプロファイルが表示されます。 次に、[このプロファイルをいくつかのグループに割り当てます](device-profile-assign.md)。
 

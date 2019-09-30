@@ -7,7 +7,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 02/15/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f013ec1d40b9593e7eb8d317b5b63545c58f181
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4039c9e3ae53d8db8ee282f802cd86149b40021e
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57399129"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "71239759"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>アプリ保護ポリシーを使用して iOS アプリを管理するときの注意点
 
@@ -30,7 +29,7 @@ ms.locfileid: "57399129"
 
  このトピックでは、アプリ保護ポリシーが適用されているアプリを使用するときのユーザー エクスペリエンスについて説明します。 アプリ保護ポリシーが適用されるのは、仕事でアプリが使用される場合に限られます。たとえば、職場のアカウントを使用してアプリにアクセスしたり、会社の OneDrive 事業拠点に格納されたファイルにアクセスしたりする場合です。
 
-##  <a name="access-apps"></a>アプリにアクセスする
+## <a name="access-apps"></a>アプリにアクセスする
 
 デバイスが**Intune に登録されていない**場合、ユーザーはアプリを初めて使用すると、アプリの再起動を求められます。 再起動すると、アプリ保護ポリシーをアプリに適用することができます。
 
@@ -41,7 +40,7 @@ ms.locfileid: "57399129"
 
 **Intune の管理対象として登録された**デバイスの場合、ユーザーにはアプリが管理された状態にあることを示すメッセージが表示されます。
 
-##  <a name="use-apps-with-multi-identity-support"></a>複数の ID に対応しているアプリを使用する
+## <a name="use-apps-with-multi-identity-support"></a>複数の ID に対応しているアプリを使用する
 
 複数の ID をサポートするアプリの場合、アプリが作業コンテキストで利用されているときにアプリ保護ポリシーが適用されていれば、仕事用や個人用など、複数のアカウントを利用して同じアプリにアクセスできます。  
 
@@ -51,13 +50,13 @@ ms.locfileid: "57399129"
 
 アプリ保護ポリシーは仕事関連でのみ適用されます。 そのため、仕事で使用する場合と個人的に使用する場合でアプリの動作が異なることがあります。
 
-##  <a name="manage-user-accounts-on-the-device"></a>デバイスのユーザー アカウントの管理
+## <a name="manage-user-accounts-on-the-device"></a>デバイスのユーザー アカウントの管理
 
 複数 ID のアプリケーションでは、ユーザーが複数のアカウントを追加できます。  Intune APP は、1 つの管理アカウントのみをサポートします。  Intune APP では、管理されていないアカウントの数が制限されていません。
 
 1 つのアプリケーションに 1 つの管理アカウントが存在する場合:
-*   ユーザーが 2 つ目の管理アカウントを追加しようとすると、使用する管理アカウントの選択を求められます。  その他のアカウントは削除されます。
-*   IT 管理者が 2 つ目の既存のアカウントにポリシーを追加すると、ユーザーは使用する管理アカウントの選択を求められます。  その他のアカウントは削除されます。
+* ユーザーが 2 つ目の管理アカウントを追加しようとすると、使用する管理アカウントの選択を求められます。  その他のアカウントは削除されます。
+* IT 管理者が 2 つ目の既存のアカウントにポリシーを追加すると、ユーザーは使用する管理アカウントの選択を求められます。  その他のアカウントは削除されます。
 
 次のサンプル シナリオを読んで、複数のユーザー アカウントがどのように処理されるかを深く理解してください。
 

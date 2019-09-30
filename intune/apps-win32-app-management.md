@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d87b617f49a3df71b767fe91f1f03f88f36ee8a3
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 22cf93aa7418e5e8be2338e70f762a451bb3bdcf
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842190"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167149"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune スタンドアロン - Win32 アプリ管理
 
@@ -194,6 +194,8 @@ Win32 アプリの管理を使用する場合は、必ず、次の基準を満�
 
     > [!NOTE]
     > **[検出規則]** ウィンドウで、複数の規則を選択して追加できます。 アプリを検出するには、**すべての**規則の条件を満たす必要があります。
+    >
+    > アプリがデバイスに存在しないことが Intune によって検出された場合、Intune では 24 時間後に再びアプリが提供されます。 これは、必須の意図で対象となっているアプリに対してのみ行われます。
 
     - **[検出規則を手動で構成する]** - 次の規則の種類のいずれかを選択できます。
         1. **[MSI]** – MSI のバージョンの確認に基づいて確認を行います。 このオプションは一度だけ追加できます。 この規則の種類を選択すると、次の 2 つの設定が表示されます。
@@ -278,7 +280,7 @@ Win32 アプリの管理を使用する場合は、必ず、次の基準を満�
 7. **[グループの追加]** ウィンドウで **[OK]** を選択します。
 8. アプリの **[割り当て]** ウィンドウで、 **[保存]** を選びます。
 
-この時点で、Intune に Win32 アプリを追加する手順が完了しました。 アプリの割り当てと監視については、「[Microsoft Intune を使用してアプリをグループに割り当てる](https://docs.microsoft.com/intune/apps-deploy)」および「[Microsoft Intune でアプリの情報と割り当てを監視する](https://docs.microsoft.com/intune/apps-monitor)」を参照してください。
+この時点で、Intune に Win32 アプリを追加する手順が完了しました。 アプリの割り当てと監視については、「[Microsoft Intune を使用してアプリをグループに割り当てる](apps-deploy.md)」および「[Microsoft Intune でアプリの情報と割り当てを監視する](apps-monitor.md)」を参照してください。
 
 ## <a name="app-dependencies"></a>アプリ間の依存関係
 

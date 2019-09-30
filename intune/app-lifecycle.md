@@ -5,9 +5,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 08/22/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e92179681f3d26b376d5ea2c8f06d7012cacb7d
-ms.sourcegitcommit: af2512a1342d8037a96a61c8cc2c63e107913733
+ms.openlocfilehash: 19c364bda4728880b84cb1a17593bcbd38aa00bc
+ms.sourcegitcommit: 76d59edfd5900ce33c64470ae604eb3db016c8ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59570846"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "71238929"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Microsoft Intune のアプリ ライフサイクルの概要
 
@@ -49,7 +48,7 @@ Intune にアプリを追加したら、[それを管理対象のユーザーと
 ## <a name="protect"></a>保護
 
 Intune では、さまざまな方法でアプリのデータを保護できます。 主な方法は次のとおりです。
-- [条件付きアクセス](conditional-access.md)は、ユーザーが指定した条件に基づいてメールや他のサービスへのアクセスを制御します。 条件としては、デバイスの種類や、ユーザーが展開した[デバイス コンプライアンス ポリシー](device-compliance.md)への準拠などがあります。
+- [条件付きアクセス](conditional-access.md)では、ユーザーが指定した条件に基づいて、メールや他のサービスへのアクセスが制御されます。 条件としては、デバイスの種類や、ユーザーが展開した[デバイス コンプライアンス ポリシー](device-compliance.md)への準拠などがあります。
 - [アプリ保護ポリシー](app-protection-policy.md)は、個々のアプリと連携して、アプリが使用する会社のデータを保護します。 たとえば、管理対象外アプリと管理対象アプリの間でのデータのコピーを制限したり、脱獄またはルート化されたデバイスでのアプリの実行を禁止したりできます。
 
 ## <a name="retire"></a>インベントリから削除

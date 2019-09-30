@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 06/01/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f8405aceaa1fd9c00b966d03a1f7b80e5946d96
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: 52f8af06fffb3643714ed318e474b73be21963ed
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59569780"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239792"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Microsoft Intune に関してエンド ユーザーを教育する方法
 
@@ -58,9 +57,9 @@ __ユーザーにとって Intune が不便な点__  ユーザーによるアプ
 
 * __アクセスしやすくする。__ デバイスの問題に関するヘルプ情報を検索できる場所をユーザーに伝えます。 [ポータル サイトをカスタマイズ](company-portal-customize.md)する場合は、IT 管理者の連絡先情報を必ず含めてください。
 
-* __個人向けにする。__ 組織の展開に関する具体的な手順を提供します。 このアクションにより、経験を考慮していることをユーザーに示します。 こちらの[カスタマイズ可能な Intune ユーザー登録テンプレート](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c)を使用して、独自にユーザー向けの登録手順を作成することができます。
+* __個人向けにする。__ 組織の展開に関する具体的な手順を提供します。 このアクションにより、経験を考慮していることをユーザーに示します。 こちらのカスタマイズ可能な [Intune 導入キット](https://aka.ms/IntuneAdoptionKit)を使用して、独自にユーザー向けの登録手順を作成することができます。
 
-* __さまざまなコミュニケーションの方法を見つける。__ ユーザーによって、[学習スタイルが異なり](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/)、また好まれる情報の使用方法が異なります。 視覚的な学習として、Intune では Channel 9 で[さまざまな種類のデバイスを登録する方法を紹介するビデオ](https://channel9.msdn.com/Series/IntuneEnrollment)を提供しています。 ビデオは、独自の [SharePoint サイト](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581)に直接埋め込むことができます。 ビデオまたはオーディオ トラックのローカル コピーをダウンロードすることもできます。
+* __さまざまなコミュニケーションの方法を見つける。__ ユーザーによって、[学習スタイルが異なり](https://www.umassd.edu/dss/resources/faculty--staff/how-to-teach-and-accommodate/how-to-accommodate-different-learning-styles/)、また好まれる情報の使用方法が異なります。 視覚的な学習として、Intune では Channel 9 で[さまざまな種類のデバイスを登録する方法を紹介するビデオ](https://channel9.msdn.com/Series/IntuneEnrollment)を提供しています。 ビデオは、独自の [SharePoint サイト](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581)に直接埋め込むことができます。 ビデオまたはオーディオ トラックのローカル コピーをダウンロードすることもできます。
 
 * __意識する。__ Intune ユーザーの経験は生産性にも影響します。 ユーザーの経験を理解することで、デバイスおよびユーザーの問題のトラブルシューティングをより簡単に行うことができます。 たとえば、ユーザーがアプリを取得する方法を学習し理解することができます。 この情報を前もって把握しておくことにより、問題の診断および解決をより簡単かつ迅速に行うことができます。
 

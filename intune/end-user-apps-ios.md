@@ -5,9 +5,8 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/28/2016
+ms.date: 05/07/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 368eeec3c47b53d00e9130f41d36f05976a66b8f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8f069405d75b196c26c9c844e0d0a4bd57299199
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394239"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71239295"
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>iOS ユーザーがアプリを入手する方法
 
@@ -36,24 +35,24 @@ Microsoft Intune を通して配布したアプリをエンド ユーザーが�
 
 **管理対象のアプリ** -- ポリシーによって管理できて、Intune によって "ラップされた" アプリまたは Intune アプリ ソフトウェア開発キット (SDK) で構築されたアプリです。 これらのアプリは Intune によって管理することができます。また、これらのアプリにはアプリ保護ポリシーを適用することができます。
 
-**管理対象外のアプリ** -- ポリシーによって管理でき、Intune によってラップされていないアプリまたは Intune アプリ SDK を組み込んでいないアプリです。 これらのアプリにアプリケーション ポリシーを適用することはできません。
+**アンマネージド アプリ** -- Intune アプリ SDK と統合されていない iOS App Store からユーザーがダウンロードできるアプリです。 Intune では、これらのアプリの配布、管理、または選択的ワイプを制御することはできません。  
 
 Apple の制限により、基幹業務アプリおよび管理対象アプリ ストアのアプリはポータル サイト アプリに表示されません。 この問題を回避するため、iOS 用ポータル サイト アプリのアプリ タイルでは、次のように、ユーザーは単一の場所 (ポータル サイト Web サイト) のさまざまなビューですべてのアプリを確認できます。
 
 登録済みユーザーは、ポータル サイト アプリのアプリ画面で、以下のタイルをタップしてアプリを取得します。
 
-- **[すべてのアプリ]**。[ポータル Web サイト](https://portal.manage.microsoft.com)の [すべて] タブのすべてのアプリのリストをポイントします。
+- **[すべてのアプリ]** 。[ポータル Web サイト](https://portal.manage.microsoft.com)の [すべて] タブのすべてのアプリのリストをポイントします。
 
-- **[おすすめアプリ]**。ポータル Web サイトの [おすすめ] タブを表示します。
+- **[おすすめアプリ]** 。ポータル Web サイトの [おすすめ] タブを表示します。
 
-- **[カテゴリ]**。ポータル Web サイトの [カテゴリ] タブをポイントします。
+- **[カテゴリ]** 。ポータル Web サイトの [カテゴリ] タブをポイントします。
 
 
 ![iOS ポータル サイト アプリの画面](./media/ios-cp-app-main-apps-screen.png)
 
 アプリを追加する方法の詳細については、「[アプリを Microsoft Intune に追加する方法](apps-add.md)」を参照してください。
 
-### <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目
 [Android ユーザーがアプリを入手する方法](end-user-apps-android.md)
 
 [Windows ユーザーがアプリを入手する方法](end-user-apps-windows.md)

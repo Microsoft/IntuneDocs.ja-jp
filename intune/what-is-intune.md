@@ -5,9 +5,8 @@ keywords: Intune の概要
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 02/26/2019
+ms.date: 06/20/2019
 ms.topic: overview
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 511e672193ec609f817c10572c99ac73831c54ae
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2cde4e37889b981decfd18138feeb4edac46c4c8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460582"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "71238233"
 ---
 # <a name="what-is-microsoft-intune"></a>Microsoft Intune とは
 
@@ -85,8 +84,8 @@ Intune は Azure AD と連携し、さまざまなアクセス制御シナリオ
 EMS の他のサービスと共に Intune を使用すると、モバイルオペレーティング システムとモバイル アプリ自体がアプリ構成を介して提供するセキュリティに加え、組織のモバイル アプリ セキュリティを提供できます。 EMS で管理されるアプリには、次のようなさまざまなモバイル アプリへのアクセス機能とデータ保護機能が与えられます。
 
 * [シングル サインオン](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
-*   [多要素認証](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
-* [アプリの条件付きアクセス (モバイル アプリに企業データが含まれる場合、アクセスを許可する)](app-based-conditional-access-intune.md)
+* [多要素認証](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
+* [アプリの条件付きアクセス - モバイル アプリに企業データが含まれる場合、アクセスを許可する](app-based-conditional-access-intune.md)
 * [同じアプリ内で企業データと個人データを分離する](app-protection-policy.md)
 * [アプリの保護ポリシー (PIN、暗号化、名前を付けて保存、クリップボードなど)](app-protection-policies.md)
 * [モバイル アプリから企業データを消去する](apps-selective-wipe.md)

@@ -7,22 +7,21 @@ ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
-ms.reviewer: amyro
+ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14d5e01577100e0a66cfcf6ce935289a1dc26fab
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: dd8b35fbbff89ca7f4c259e1903f4c9f9a6e3b38
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57459902"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71238383"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Intune にデバイスを登録できるようにライセンスをユーザーに割り当てる
 
@@ -45,7 +44,7 @@ ms.locfileid: "57459902"
 4. ユーザー アカウントが、サービスを使用してデバイスを管理に登録するために必要なアクセス許可を持つようになります。
 
 > [!NOTE]
-> デバイスを登録すると、管理コンソールにユーザーが表示されます。 また、編集するユーザーのグループを一度に選択して、選択したすべてのユーザーに対してライセンスを追加したり交換することができます。
+> ユーザーは、Intune PC クライアントを使用してデバイスを登録した後にのみ、クラシック Intune ポータルに表示されます。 また、編集するユーザーのグループを一度に選択して、選択したすべてのユーザーに対してライセンスを追加したり交換することができます。
 
 ## <a name="assign-an-intune-license-by-using-azure-active-directory"></a>Azure Active Directory を使用して Intune のライセンスを割り当てる
 
@@ -63,7 +62,7 @@ Intune for Education のライセンスを割り当てるときは、Intune A Di
 SDS について詳しくは、「[School Data Sync と Classroom の概要](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91)」をご覧ください。
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>ユーザー ライセンスとデバイス ライセンスがサービスへのアクセスに与える影響
-* ユーザー ソフトウェア ライセンスが割り当てられた各**ユーザー**は、オンライン サービスと関連するソフトウェア (System Center ソフトウェアを含む) にアクセスしてそれらを使用し、複数のアプリケーションと最大 15 台のデバイスを管理できます。
+* ユーザー ソフトウェア ライセンスが割り当てられた各**ユーザー**は、オンライン サービスと関連するソフトウェア (System Center ソフトウェアを含む) にアクセスしてそれらを使用し、複数のアプリケーションと最大 15 台の MDM デバイスを管理できます。 Intune PC エージェントでは、ユーザー ライセンスごとに 5 台の物理コンピューターと 1 台の仮想マシンを使用できます。
 * ユーザー ライセンスとは別にあらゆるデバイス用のライセンスを購入できます。 デバイス ライセンスはデバイスに割り当てる必要はありません。 オンライン サービスと関連ソフトウェア (System Center ソフトウェアを含む) にアクセスして使用する各デバイスに、デバイス ライセンスが必要です。
 * デバイスが 2 人以上のユーザーによって使用される場合は、各デバイスにデバイス ソフトウェア ライセンス、またはすべてのユーザーにユーザー ソフトウェア ライセンスが必要です。
 

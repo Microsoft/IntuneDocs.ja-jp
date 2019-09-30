@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 03/09/2017
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,24 +16,27 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 700bded8930385c5576a198dc0364c64066121e5
-ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
+ms.openlocfilehash: 1ed123bcf8c5c1a5df1a356cf8d2522caad20ea2
+ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59569130"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "71239377"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>ポータル サイト アプリで表示されるメッセージに関してエンド ユーザーをサポートする
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 > [!NOTE]
-> 次の情報は、Android 6.0 以上のデバイスにのみ適用されます。
+> 次の情報は、Android 6.0 以降および iOS 10 以降のデバイスにのみ適用されます。
 
 ポータル サイトでエンドユーザーに表示される可能性のあるさまざまなアプリのメッセージについて説明します。 これらのアプリ メッセージは、通常登録手順のさまざまな段階で表示されます。 メッセージの表示場所、メッセージの意味、およびユーザーがアクセスを拒否した場合の動作について説明します。 また、ユーザーにメッセージについて説明する最適な方法を説明します。
 
 - __電話での通話とその管理をポータル サイトに許可しますか?__
 - __デバイス上の写真、メディア、およびファイルへのアクセスをポータル サイトに許可しますか?__
+
+> [!NOTE]
+> Microsoft では、いかなる理由でも、Microsoft のサービスによって収集されたデータを第三者に販売することはありません。
 
 ## <a name="allow-company-portal-to-make-and-manage-phone-calls"></a>電話での通話とその管理をポータル サイトに許可しますか?
 
@@ -57,7 +59,7 @@ ms.locfileid: "59569130"
 後でアクセスを許可する場合は、 **[設定]**  >  **[アプリ]**  >  **[ポータル サイト]**  >  **[アクセス許可]**  >  **[電話]** の順に移動して、アクセス許可を有効にします。
 
 ### <a name="how-to-explain-this-to-your-users"></a>ユーザーへの説明方法
-ユーザーは、「[Intune に Android デバイスを登録する](/intune-user-help/enroll-your-device-in-intune-android)」で詳細を参照できます。
+ユーザーは、「[Intune に Android デバイスを登録する](/intune-user-help/enroll-device-android-company-portal)」で詳細を参照できます。
 
 ## <a name="allow-company-portal-to-access-your-contacts"></a>ポータル サイトに連絡先へのアクセスを許可しますか?
 
@@ -78,7 +80,7 @@ ms.locfileid: "59569130"
 後でアクセスを許可する場合は、 **[設定]**  >  **[アプリ]**  >  **[ポータル サイト]**  >  **[アクセス許可]**  >  **[電話]** の順に移動して、アクセス許可を有効にします。
 
 ### <a name="how-to-explain-this-to-your-users"></a>ユーザーへの説明方法
-ユーザーは、「[Intune に Android デバイスを登録する](/intune-user-help/enroll-your-device-in-intune-android)」で詳細を参照できます。
+ユーザーは、「[Intune に Android デバイスを登録する](/intune-user-help/enroll-device-android-company-portal)」で詳細を参照できます。  
 
 ## <a name="allow-company-portal-to-access-photos-media-and-files-on-your-device"></a>デバイス上の写真、メディア、およびファイルへのアクセスをポータル サイトに許可しますか?
 
@@ -140,5 +142,5 @@ Intune ポータル サイトを使用してこのようなアプリをインス
     会社のアプリを起動し、使用できるようになるはずです。
 
 
-### <a name="see-also"></a>関連項目
+## <a name="see-also"></a>関連項目
 [Intune の使用に関するエンドユーザーへの通知内容](end-user-educate.md)

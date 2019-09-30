@@ -6,9 +6,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/03/2018
+ms.date: 07/29/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc0cf701450e594fd4b72a8e0565246994bb8a9e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5946f8ffb8179bb5109de45df8f89012ec706023
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460616"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "71239582"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune でサポートされるオペレーティング システムとブラウザー
 
@@ -115,12 +114,12 @@ Intune ポータルでは、次のブラウザーがサポートされていま�
 
 ### <a name="intune-classic-portal"></a>Intune クラシック ポータル
 
-Intune PC ソフトウェア クライアントや Mobile Threat Defense パートナーとの統合といった Intune クラシック専用機能は、Intune クラシック ポータル (https://manage.microsoft.com)) でのみ利用可能です。 Intune クラシック ポータルには、Silverlight のブラウザー サポートが必要です。
+Intune クラシック ポータルは、Intune PC ソフトウェア クライアントで登録されたデバイスの管理にのみ使用されます (https://manage.microsoft.com) 。 Intune クラシック ポータルには、Silverlight のブラウザー サポートが必要です。
 
 次の Silverlight ブラウザーは、Intune コンソールをサポートしています。
 - Internet Explorer 10 以降
 - Google Chrome (バージョン 42 より前のバージョン)
-- SilveSilverlight が有効な Mozilla Firefox。[詳しくはこちらをご覧ください](https://go.microsoft.com/fwlink/?linkid=836872)。
+- Silverlight が有効な Mozilla Firefox (バージョン 56 より前のバージョン)
 
 > [!Note]
 > Intune クラシック ポータルで Microsoft Edge とモバイル ブラウザーがサポートされないのは、[Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx) がサポートされていないためです。

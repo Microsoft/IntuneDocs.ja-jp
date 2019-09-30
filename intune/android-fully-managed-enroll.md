@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7dff37794d6c58094749821748dcc96a4f36e28a
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 0035f8d5cd67a995924f7d07a662d8c0671bf063
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071622"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163777"
 ---
-# <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Android Enterprise フル マネージド デバイスの Intune 登録を設定する (プレビュー)
+# <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>Android Enterprise フル マネージド デバイスの Intune 登録を設定する 
 
 Android Enterprise フル マネージド デバイスは、1 人のユーザーに関連付けられる会社所有デバイスであり、仕事限定で使用され、私事には使用されません。 管理者はデバイス全体を管理し、次のように、仕事用プロファイルで利用できないポリシー制御を強制できます。
 - managed Google Play からのみアプリのインストールを許可する。
@@ -39,7 +39,7 @@ Android Enterprise フル マネージド デバイスを管理するには、In
 
 デバイスを Android Enterprise フル マネージド デバイスとして管理するには、以下の要件を満たす必要があります。
 
-- Android OS バージョン 5.1 以降。
+- Android OS バージョン 6.0 以降。
 - デバイスは、Google Mobile Services (GMS) に接続できる Android ビルドを実行する必要があります。 デバイスで GMS が利用できて、GMS に接続できる必要があります。
 
 上記の要件が満たされた場合、デバイスの製造元/OEM に制限はありません。
@@ -55,7 +55,7 @@ Android Enterprise フル マネージド デバイスの管理を設定する�
 
 ### <a name="enable-corporate-owned-user-devices"></a>会社所有ユーザー デバイスを有効にする
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインし、 **[デバイスの登録]**  >  **[Android の登録]**  >  **[Corporate-owned, fully managed user devices (Preview)]\(会社が所有する完全に管理されたユーザー デバイス (プレビュー)\)** の順に選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインし、 **[デバイスの登録]**  >  **[Android の登録]**  >  **[Corporate-owned, fully managed user devices]\(会社が所有する完全に管理されたユーザー デバイス\)** の順に選択します。
 2. **[会社が所有するユーザー デバイスの登録をユーザーに許可する]** で **[はい]** を選択します。
 
 > [!NOTE]
@@ -65,25 +65,6 @@ Android Enterprise フル マネージド デバイスの管理を設定する�
 
 ## <a name="enroll-the-fully-managed-devices"></a>フル マネージド デバイスを登録する
 これで[フル マネージド デバイスを登録](android-dedicated-devices-fully-managed-enroll.md)できるようになりました。
-
-## <a name="considerations-for-this-preview-feature"></a>このプレビュー機能に関する注意点
-このパブリック プレビューには、Android Enterprise フル マネージド ソリューション セットの中心となる一連の機能が含まれています。 ([UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas?category_id=210853) など) 現行の通信チャネルを利用し、プレビュー機能の使用体験をお伝えいただければ幸いです。
-
-このプレビューでは、Android Enterprise フル マネージド デバイスの次の機能をご利用いただけます。
-- NFC、トークン エントリ、QR コード、ゼロ タッチを利用したデバイス登録
-- ユーザー グループのデバイス構成
-- ユーザー グループのアプリの配布と構成
-
-
-これらのプレビュー機能を使用するとき、次のことを念頭に置いてください。
-- プレビュー機能は、ミッション クリティカルまたは実稼働の展開には推奨されません。 
-- プレビュー機能は、Microsoft Intune 実稼働標準に実装されます。 ただし、Android Enterprise フル マネージド ユーザー デバイスでは、一部の Intune 機能を利用できません。 プレビュー機能には、Intune コンソールで "(プレビュー)" というラベルが付けられます。 
-- プレビュー機能は、通常の Intune サポート チャネルで完全サポートされます。
-- プレビューの場合、Samsung Knox Mobile Enrollment で Android Enterprise フル マネージド デバイスを登録することはできません。 
-- Android Enterprise フル マネージド デバイスでは、Intune ポータル サイト アプリを使用できません。 
-- プレビューの場合、条件付きアクセス、アプリ保護ポリシー、証明書配置などの Intune 機能を利用できません。 
-- プレビューの場合、プロファイルやアプリのターゲットをデバイス グループで設定することができません。 ターゲットはユーザー グループのみで設定できます。 
-- 電子メール、WiFi、VPN を構成するための使いやすい UI がありません。 サポートされているアプリの構成設定にはアプリ構成ポリシーを使用します。
 
 ## <a name="next-steps"></a>次の手順
 - [Android Enterprise フル マネージド デバイス構成ポリシーを追加する](device-restrictions-android-for-work.md#device-owner-only)
