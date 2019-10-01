@@ -5,9 +5,8 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 07/25/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7670af46657fed048bfe10b8659eae6d45db7620
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
-ms.translationtype: HT
+ms.openlocfilehash: e7c6cec515bfda95fed922785705b0e0b5339983
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423579"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "71305077"
 ---
 # <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune を使用してデバイスを準拠または非準拠としてマークするための Android 設定
 
@@ -43,7 +42,7 @@ Intune 管理者は、組織のリソースの保護に役立てるためにこ�
 ## <a name="device-health"></a>Device health
 
 - **[ルート化されたデバイス]** : **[ブロック]** を選択すると、ルート化された (脱獄された) デバイスが非準拠としてマークされます。 **[未構成]** (既定値) を選択した場合、準拠しているか準拠していないかについて、この設定は評価されません。
-- **[デバイスは、デバイス脅威レベル以下であることが必要]** : この設定は、Lookout MTP ソリューションからのリスク評価をコンプライアンスの条件とする場合に使用します。 **[未構成]** (既定値) を選択した場合、準拠しているか準拠していないかについて、この設定は評価されません。 この設定を使用するには、許容された脅威レベルを選択します。
+- **[デバイスは、デバイス脅威レベル以下であることが必要]** : この設定は、Lookout Mobile Endpoint Security ソリューションからのリスク評価をコンプライアンスの条件とする場合に使用します。 **[未構成]** (既定値) を選択した場合、準拠しているか準拠していないかについて、この設定は評価されません。 この設定を使用するには、許容された脅威レベルを選択します。
   - **[セキュリティ保護]** : デバイスにはいかなる脅威も存在してはならないので、これはセキュリティ上最も安全なオプションです。 デバイスでいずれかのレベルの脅威が検出された場合、非準拠と評価されます。
   - **[低]** : 存在する脅威が低レベルの場合のみ、デバイスは準拠として評価されます。 低レベルより高い脅威が存在する場合、デバイスは非準拠状態になります。
   - **[中]** : デバイスに存在する脅威が低レベルまたは中レベルの場合、デバイスは準拠として評価されます。 デバイスで高レベルの脅威が検出された場合は、非準拠と判定されます。
@@ -78,7 +77,7 @@ Intune 管理者は、組織のリソースの保護に役立てるためにこ�
 - **[モバイル デバイスのロック解除にパスワードを必要とする]** : デバイスにアクセスするユーザーにパスワードを入力するよう**求めます**。 **[未構成]** (既定値) を選択した場合、準拠しているか準拠していないかについて、この設定は評価されません。
 - **[パスワードの最小文字数]** : ユーザーのパスワードに必要な数字または文字の最小数を入力します。
 - **[必要なパスワードの種類]** : パスワードの内容を数字のみにするか、または数字と他の文字の組み合わせにするかを選択します。 次のようなオプションがあります。
-  - **デバイスの既定値**
+  - **デバイスの既定**: パスワードの準拠状態を評価するには、[デバイスの**既定**] 以外のパスワードの強度を選択します。
   - **低レベルのバイオメトリック セキュリティ**
   - **最小の数字** (既定値)
   - **数値複素数**: 繰り返しの番号や連続した番号 ("`1111`" や "`1234`" など) は許可されません。
@@ -128,6 +127,6 @@ Intune 管理者は、組織のリソースの保護に役立てるためにこ�
 
 ## <a name="next-steps"></a>次の手順
 
-- [非準拠デバイスに対するアクションを追加](actions-for-noncompliance.md)し、[スコープのタグを使用してポリシーをフィルター処理します](scope-tags.md)。
+- [非準拠デバイスに対するアクションを追加](actions-for-noncompliance.md)し、[スコープのタグを使用してポリシーをフィルター処理する](scope-tags.md)
 - [コンプライアンス ポリシーを監視します](compliance-policy-monitor.md)。
 - [Android エンタープライズ デバイスのコンプライアンス ポリシー設定](compliance-policy-create-android-for-work.md)を参照してください。

@@ -5,9 +5,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 08/12/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6e51e936a70580643cbaa232441e0ba21c3db14
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 228a4af302a1344f60dc43c02c12efac23e34f74
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566660"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "71238776"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために iOS アプリを準備する
 
@@ -46,7 +45,7 @@ iOS 用 Microsoft Intune アプリ ラッピング ツールを使用すれば�
 
 * 入力 iOS アプリはあなたの会社または独立系ソフトウェア ベンダー (ISV) が開発し、署名したものでなければなりません。
 
-  * 入力アプリのファイルの拡張子は、**.ipa** または **.app** でなければなりません。
+  * 入力アプリのファイルの拡張子は、 **.ipa** または **.app** でなければなりません。
 
   * 入力アプリは、iOS 10 以降用にコンパイルする必要があります。
 
@@ -80,13 +79,13 @@ Intune によってラップされたアプリを配布するには、次が必�
 
 3. 何を登録する必要があるかのチェックリストを参照してください。 ページの下部にある **[Start Your Enrollment]** (登録の開始) をクリックします。
 
-4. 組織の Apple ID で**サインイン**します。 Apple ID がない場合は、**[Create Apple ID]** (Apple ID の作成) をクリックします。
+4. 組織の Apple ID で**サインイン**します。 Apple ID がない場合は、 **[Create Apple ID]** (Apple ID の作成) をクリックします。
 
-5. **[Entity Type]** (エンティティ型) を選択して、**[Continue]** (続行) をクリックします。
+5. **[Entity Type]** (エンティティ型) を選択して、 **[Continue]** (続行) をクリックします。
 
 6. 組織の情報をフォームに入力します。 **[続行]** をクリックします。 この時点で、組織を登録する権限があるかどうかが Apple によって確認されます。
 
-8. 確認したら、**[Agree to License]** (ライセンスに同意する) をクリックします。
+8. 確認したら、 **[Agree to License]** (ライセンスに同意する) をクリックします。
 
 9. ライセンスに同意したら、**プログラムを購入し、アクティブ化して**終了します。
 
@@ -137,11 +136,11 @@ Intune によってラップされたアプリを配布するには、次が必�
 
 14. ダウンロードした証明書ファイルをダブルクリックして、証明書をキーチェーンに追加します。
 
-15. もう一度、**キーチェーン アクセス**を開きます。 右上の検索バーに証明書の名前を入力して探します。 項目を右クリックして開いたメニューから、**[Get Info]** (情報を取得する) をクリックします。 例の画面では、本番用の証明書の代わりに開発用の証明書を使用しています。
+15. もう一度、**キーチェーン アクセス**を開きます。 右上の検索バーに証明書の名前を入力して探します。 項目を右クリックして開いたメニューから、 **[Get Info]** (情報を取得する) をクリックします。 例の画面では、本番用の証明書の代わりに開発用の証明書を使用しています。
 
     ![証明書をキーチェーンに追加する](./media/iOS-signing-cert-8.png)
 
-16. 情報ウィンドウが表示されます。 一番下までスクロールし、**[Fingerprints]** (指紋) ラベルの下を確認します。 アプリ ラッピング ツールの "-c" 引数として使用するため、**[SHA1]** 文字列 (図ではぼかしています) をコピーします。
+16. 情報ウィンドウが表示されます。 一番下までスクロールし、 **[Fingerprints]** (指紋) ラベルの下を確認します。 アプリ ラッピング ツールの "-c" 引数として使用するため、 **[SHA1]** 文字列 (図ではぼかしています) をコピーします。
 
     ![iPhone 情報 - [Fingerprints] (指紋) の [SHA1] 文字列](./media/iOS-signing-cert-9.png)
 
@@ -169,9 +168,9 @@ Intune によってラップされたアプリを配布するには、次が必�
 
 ## <a name="download-the-app-wrapping-tool"></a>アプリ ラッピング ツールをダウンロードする
 
-1.  アプリ ラッピング ツールのファイルを [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) から macOS コンピューターにダウンロードします。
+1. アプリ ラッピング ツールのファイルを [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) から macOS コンピューターにダウンロードします。
 
-2.  **Microsoft Intune App Wrapping Tool for iOS.dmg** をダブルクリックします。 エンド ユーザー ライセンス条項 (EULA) のウィンドウが表示されます。 ドキュメントをよくお読みください。
+2. **Microsoft Intune App Wrapping Tool for iOS.dmg** をダブルクリックします。 エンド ユーザー ライセンス条項 (EULA) のウィンドウが表示されます。 ドキュメントをよくお読みください。
 
 3. EULA に同意する場合は **[同意する]** をクリックします。コンピューターにパッケージがマウントされます。
 
@@ -203,30 +202,38 @@ macOS ターミナルを開き、次のコマンドを実行します。
 |**-o**|`<Path of the wrapped output application>` |
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
-|**-h**|アプリ ラッピング ツールに使用できるコマンド ライン プロパティの詳細な使用情報を表示します。|
-|**-v**|(省略可能) 詳細なメッセージをコンソールに出力します。 このフラグを使用してすべてのエラーをデバッグすることをお勧めします。|
+|**-h**| アプリ ラッピング ツールに使用できるコマンド ライン プロパティの詳細な使用情報を表示します。 |
+|**-aa**|(省略可能) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` つまり `login.windows.net/common` |
+|**-ac**|(省略可能) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` これは、アプリの登録ブレードのアプリの一覧にある [クライアント ID] フィールドの guid です。 |
+|**-ar**|(省略可能) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` これは、アプリの登録で構成されたリダイレクト URI です。 通常は、仲介型認証後に Microsoft Authenticator アプリが返すアプリケーションの URL プロトコルです。 |
+|**-v**| (省略可能) 詳細なメッセージをコンソールに出力します。 このフラグを使用してすべてのエラーをデバッグすることをお勧めします。 |
 |**-e**| (省略可能) このフラグを使用すると、アプリ ラッピング ツールが、アプリを処理する際に不足している権利を削除します。 詳細については、「[アプリ権利の設定](#setting-app-entitlements)」を参照してください。|
 |**-xe**| (省略可能) アプリの iOS 拡張機能に関する情報、およびそれを使用するために必要な権利を出力します。 詳細については、「[アプリ権利の設定](#setting-app-entitlements)」を参照してください。 |
 |**-x**| (省略可能)`<An array of paths to extension provisioning profiles>`。 これは、アプリが拡張機能のプロビジョニング プロファイルを必要とする場合に使用します。|
-|**-f**|(省略可能) `<Path to a plist file specifying arguments.>` このフラグは plist テンプレートを使用して -i、-o、-p といった残りの IntuneMAMPackager プロパティを指定する場合に、[plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) ファイルの前に使用します。 「plist を使用して引数を入力する」を参照してください。 |
 |**-b**|(省略可能) ラッピングされた出力アプリに入力アプリと同じバンドル バージョンが含まれるようにする場合、-b を引数なしで使用します (推奨しません)。 <br/><br/> ラッピングされたアプリにカスタム CFBundleVersion が含まれるようにするには、`-b <custom bundle version>`を使用します。 カスタム CFBundleVersion を指定する場合、たとえば最下位のコンポーネントから、ネイティブ アプリの CFBundleVersion をインクリメントすることをお勧めします (例: 1.0.0 -> 1.0.1)。 |
+|**-citrix**|OptionalCitrix XenMobile App SDK (ネットワークのみの variant) を含めます。 このオプションを使用するには、 [CITRIX MDX Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html)がインストールされている必要があります。 |
+|**-f**|(省略可能) `<Path to a plist file specifying arguments.>` このフラグは plist テンプレートを使用して -i、-o、-p といった残りの IntuneMAMPackager プロパティを指定する場合に、[plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) ファイルの前に使用します。 「plist を使用して引数を入力する」を参照してください。 |
 
 ### <a name="use-a-plist-to-input-arguments"></a>plist を使用して引数を入力する
 すべてのコマンド引数を [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) ファイルに置くと、アプリ ラッピング ツールを簡単に実行できます。 Plist は XML に似たファイル形式で、フォームのインターフェイスを使用してコマンドライン引数を入力できます。
 
 [IntuneMAMPackager/Contents/MacOS] フォルダーで、`Parameters.plist` (空白の plist テンプレート) をテキスト エディターまたは Xcode で開きます。 次のキーの引数を入力します。
 
-| Plist キー |  既定値| 注 |
-|------------------|--------------|-----|
-| 入力アプリケーション パッケージのパス  |空| -i と同じ|
-| 出力アプリケーション パッケージのパス |空| -o と同じ|
-| プロビジョニング プロファイルのパス |空| -p と同じ|
-| SHA-1 証明書ハッシュ |空| -c と同じ|
-| 詳細が有効です |false| -v と同じ|
-| 不足している権利を削除します | false| -c と同じ|
-| 既定のビルドを防ぎます |false | 引数なしで -b を使用したのと同じ|
-|ビルド文字列のオーバーライド | 空| ラッピングされた出力アプリのカスタム CFBundleVersion |
-|拡張機能のプロビジョニング プロファイルのパス | 空| アプリの拡張機能のプロビジョニング プロファイルの配列。
+| Plist キー | Type |  既定値 | 注 |
+|------------------|-----|--------------|-----|
+| 入力アプリケーション パッケージのパス |文字列型|空| -i と同じ|
+| 出力アプリケーション パッケージのパス |文字列型|空| -o と同じ|
+| プロビジョニング プロファイルのパス |文字列型|空| -p と同じ|
+| SHA-1 証明書ハッシュ |文字列型|空| -c と同じ|
+| ADAL 機関 |文字列型|空| as -aa と同じ|
+| ADAL クライアント ID |文字列型|空| as -ac と同じ|
+| ADAL 応答 URI |文字列型|空| as -ar と同じ|
+| 詳細が有効です |ブール型|false| -v と同じ|
+| 不足している権利を削除します |ブール型|false| -c と同じ|
+| 既定のビルドの更新を防ぎます |ブール en|false| 引数なしで -b を使用したのと同じ|
+| ビルド文字列のオーバーライド |文字列型|空| ラッピングされた出力アプリのカスタム CFBundleVersion|
+| Citrix XenMobile App SDK を含める (ネットワークのみのバリアント)|ブール型|false| -Citrix と同じ|
+| 拡張機能のプロビジョニング プロファイルのパス |文字列の配列|空| アプリの拡張機能のプロビジョニング プロファイルの配列。
 
 
 次のように IntuneMAMPackager と plist を単一の引数として実行します。
@@ -271,7 +278,7 @@ iOS では、アプリへの署名に元々使用されたものとは異なる�
 |指定した入力アプリケーションが見つかりませんでした。 有効な入力アプリケーションの名前とパスを指定します。|入力アプリ パスが有効であり、存在することを確認します。 入力アプリがその場所に存在することを確認します。|
 |指定した入力プロビジョニング プロファイル ファイルが見つかりませんでした。 有効な入力プロビジョニング プロファイル ファイルを指定します。|入力のプロビジョニング ファイルのパスが有効であり、指定したファイルが存在することを確認します。|
 |指定した出力アプリケーション フォルダーが見つかりませんでした。 出力アプリケーションの有効なパスを指定します。|指定した出力パスが有効であり、存在することを確認します。|
-|出力アプリに **.ipa** 拡張子がありません。|アプリ ラッピング ツールは、**.app** 拡張子と **.ipa** 拡張子があるアプリのみを受け取ります。 出力ファイルに有効な拡張子があることを確認します。|
+|出力アプリに **.ipa** 拡張子がありません。|アプリ ラッピング ツールは、 **.app** 拡張子と **.ipa** 拡張子があるアプリのみを受け取ります。 出力ファイルに有効な拡張子があることを確認します。|
 |無効な署名証明書が指定されました。 有効な Apple 署名証明書を指定します。|Apple 開発者ポータルから適切な署名証明書をダウンロードしていることを確認します。 証明書の期限が切れているか、公開キーまたは秘密キーがない可能性があります。 Apple 証明書とプロビジョニング プロファイルを使用し、Xcode 内で正しくアプリに署名できる場合、それらはアプリ ラッピング ツールで有効です。|
 |指定した入力アプリケーションが無効です。 有効なアプリケーションを指定します。|.app または .ipa ファイルとしてコンパイルされた有効な iOS アプリケーションがあることを確認します。|
 |指定した入力アプリケーションが暗号化されています。 有効な暗号化されていないアプリケーションを指定します。|アプリ ラッピング ツールでは、暗号化されたアプリはサポートされません。 暗号化されていないアプリを指定します。|
@@ -285,15 +292,16 @@ iOS では、アプリへの署名に元々使用されたものとは異なる�
 ### <a name="log-files-for-the-app-wrapping-tool"></a>アプリ ラッピング ツールのログ ファイル
 アプリ ラッピング ツールでラッピングされているアプリはログを生成し、ログが iOS クライアント デバイス コンソールに書き込まれます。 この情報は、アプリケーションで問題が発生し、問題がアプリ ラッピング ツールに関連するかどうかを判断する必要がある場合に役立ちます。 この情報を取得するには、次の手順を使用します。
 
-1.  アプリケを実行し、問題を再現します。
+1. アプリケを実行し、問題を再現します。
 
-2.  「 [展開された iOS アプリのデバッグ](https://developer.apple.com/library/ios/qa/qa1747/_index.html)」にある Apple の指示に従い、コンソール出力を集めます。
+2. 「 [展開された iOS アプリのデバッグ](https://developer.apple.com/library/ios/qa/qa1747/_index.html)」にある Apple の指示に従い、コンソール出力を集めます。
 
-3.  次のスクリプトをコンソールに入力し、アプリ制限出力の保存ログをフィルター処理します。
+3. 次のスクリプトをコンソールに入力し、アプリ制限出力の保存ログをフィルター処理します。
 
     ```bash
     grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
     ```
+
     Microsoft にフィルター処理したログを送信できます。
 
     > [!NOTE]
@@ -320,7 +328,7 @@ iOS 用アプリ ラッピング ツールには、すべての機能を保証�
 
 |機能|説明|推奨される方法|
 |--------------|---------------|------------------------|
-|アプリ グループ|アプリ グループを使用して、複数のアプリが共有コンテナーにアクセスできるようにします。また、アプリ間の追加のプロセス間通信を許可します。<br /><br />アプリ グループを有効にするには、**[機能]** ウィンドウを開き、**[アプリ グループ]** の **[オン]** をクリックします。 アプリ グループを追加するか、既存のグループを選択することができます。|アプリ グループを使用する場合は、次のように逆引き DNS 表記を使用します。<br /><br />*group.com.companyName.AppGroup*|
+|アプリ グループ|アプリ グループを使用して、複数のアプリが共有コンテナーにアクセスできるようにします。また、アプリ間の追加のプロセス間通信を許可します。<br /><br />アプリ グループを有効にするには、 **[機能]** ウィンドウを開き、 **[アプリ グループ]** の **[オン]** をクリックします。 アプリ グループを追加するか、既存のグループを選択することができます。|アプリ グループを使用する場合は、次のように逆引き DNS 表記を使用します。<br /><br />*group.com.companyName.AppGroup*|
 |バックグラウンド モード|バックグラウンド モードを有効にすると、iOS アプリを継続的にバックグラウンドで実行できるようになります。||
 |データの保護|データ保護を使用すると、iOS アプリでディスクに保存されているファイルのセキュリティ レベルを追加できます。 データ保護は、特定のデバイスに組み込まれている暗号化ハードウェアを使用して、暗号化された形式でディスクにファイルを保存します。 データ保護を使用するようにアプリをプロビジョニングする必要があります。||
 |アプリ内購入|アプリ内購入は、ストアへの接続を有効にしてアプリにストアを直接組み込み、ユーザーから支払いを安全に処理します。 アプリ内購入を使用すると、強化された機能で支払いを収集し、アプリから追加のコンテンツを使用できるようになります。||
@@ -331,9 +339,9 @@ iOS 用アプリ ラッピング ツールには、すべての機能を保証�
 
 ### <a name="steps-to-enable-entitlements"></a>権利を有効にする手順
 
-1.  アプリで機能を有効にします。
+1. アプリで機能を有効にします。
 
-    」を参照します。  Xcode で、アプリのターゲットに移動し、**[Capabilities]** をクリックします。
+    」を参照します。  Xcode で、アプリのターゲットに移動し、 **[Capabilities]** をクリックします。
 
     b.  目的の機能を有効にします。 各機能の詳細と正しい値の指定方法については、iOS 開発者ライブラリの「[Adding Capabilities (機能の追加)](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)」を参照してください。
 
@@ -341,7 +349,7 @@ iOS 用アプリ ラッピング ツールには、すべての機能を保証�
 
     d.  ラップするアプリをビルドして署名します。
 
-2.  プロビジョニング プロファイルで権利を有効にします。
+2. プロビジョニング プロファイルで権利を有効にします。
 
     」を参照します。  Apple Developer Member Center にサインインします。
 
@@ -351,7 +359,7 @@ iOS 用アプリ ラッピング ツールには、すべての機能を保証�
 
     d.  プロビジョニング プロファイル ウィザードを完了し、ファイルをダウンロードします。
 
-3.  すべての前提条件を満たしていることを確認してから、アプリをラップします。
+3. すべての前提条件を満たしていることを確認してから、アプリをラップします。
 
 ### <a name="troubleshoot-common-errors-with-entitlements"></a>権利に関する一般的なエラーのトラブルシューティング
 iOS 用アプリ ラッピング ツールで権利のエラーが表示される場合は、次のトラブルシューティング手順を実行します。
@@ -364,20 +372,20 @@ iOS 用アプリ ラッピング ツールで権利のエラーが表示され�
 ### <a name="find-the-existing-entitlements-of-a-signed-app"></a>署名済みアプリの既存の権利を検索する
 署名済みアプリの既存の権利とプロビジョニング プロファイルを確認するには:
 
-1.  .ipa ファイルを検索して、拡張子を .zip に変更します。
+1. .ipa ファイルを検索して、拡張子を .zip に変更します。
 
-2.  .zip ファイルを展開します。 .app バンドルを含む Payload フォルダーが生成されます。
+2. .zip ファイルを展開します。 .app バンドルを含む Payload フォルダーが生成されます。
 
-3.  codesign ツールを使用して .app バンドルの権利を確認します。`YourApp.app` は .app バンドルの実際の名前です。
+3. codesign ツールを使用して .app バンドルの権利を確認します。`YourApp.app` は .app バンドルの実際の名前です。
 
     ```bash
-    $ codesign -d --entitlements :- "Payload/YourApp.app"
+    codesign -d --entitlements :- "Payload/YourApp.app"
     ```
 
-4.  セキュリティ ツールを使用して、アプリに組み込まれているプロビジョニング プロファイルの権利を確認します。`YourApp.app` は .app バンドルの実際の名前です。
+4. セキュリティ ツールを使用して、アプリに組み込まれているプロビジョニング プロファイルの権利を確認します。`YourApp.app` は .app バンドルの実際の名前です。
 
     ```bash
-    $ security -D -i "Payload/YourApp.app/embedded.mobileprovision"
+    security cms -D -i "Payload/YourApp.app/embedded.mobileprovision"
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>–e パラメーターを使用してアプリから権利を削除する
@@ -390,19 +398,19 @@ iOS 用アプリ ラッピング ツールで権利のエラーが表示され�
 ## <a name="security-and-privacy-for-the-app-wrapping-tool"></a>アプリ ラッピング ツールのセキュリティとプライバシー
 アプリ ラッピング ツールを使用するとき、セキュリティとプライバシーの次のベスト プラクティスを使用します。
 
--   指定した署名証明書、プロビジョニング プロファイル、基幹業務アプリは、アプリ ラッピング ツールを実行する同じ macOS マシンに置く必要があります。 ファイルが UNC パスにある場合、ファイルに macOS マシンからアクセスできることを確認します。 パスは IPsec または SMB 署名を使用して保護する必要があります。
+- 指定した署名証明書、プロビジョニング プロファイル、基幹業務アプリは、アプリ ラッピング ツールを実行する同じ macOS マシンに置く必要があります。 ファイルが UNC パスにある場合、ファイルに macOS マシンからアクセスできることを確認します。 パスは IPsec または SMB 署名を使用して保護する必要があります。
 
     管理コンソールにインポートしたラッピングされたアプリケーションは、ツールを実行するのと同じコンピューター上に存在する必要があります。 ファイルが UNC パスにある場合、管理コンソールを実行するコンピューターでファイルにアクセスできることを確認します。 パスは IPsec または SMB 署名を使用して保護する必要があります。
 
--   アプリ ラッピング ツールを GitHub リポジトリからダウンロードする環境は IPsec または SMB 署名を使用して保護する必要があります。
+- アプリ ラッピング ツールを GitHub リポジトリからダウンロードする環境は IPsec または SMB 署名を使用して保護する必要があります。
 
--   攻撃を防ぐために、処理するアプリは信頼できる配信元のものである必要があります。
+- 攻撃を防ぐために、処理するアプリは信頼できる配信元のものである必要があります。
 
--   アプリ ラッピング ツールに指定する出力フォルダーが守られていることを確認します (リモート フォルダーの場合は特に)。
+- アプリ ラッピング ツールに指定する出力フォルダーが守られていることを確認します (リモート フォルダーの場合は特に)。
 
--   ファイル アップロードのダイアログ ボックスを含む iOS アプリでは、アプリに適用されている切り取り、コピー、貼り付けの制限を回避できます。 たとえば、ファイル アップロードのダイアログ ボックスを利用し、アプリ データのスクリーンショットをアップロードできます。
+- ファイル アップロードのダイアログ ボックスを含む iOS アプリでは、アプリに適用されている切り取り、コピー、貼り付けの制限を回避できます。 たとえば、ファイル アップロードのダイアログ ボックスを利用し、アプリ データのスクリーンショットをアップロードできます。
 
--   ラッピングされたアプリ内からデバイスのドキュメント フォルダーをユーザーが監視するとき、.msftintuneapplauncher という名前のフォルダーが表示されることがあります。 このファイルを変更または削除すると、制限付きのアプリの正常な動作に影響を与える可能性があります。
+- ラッピングされたアプリ内からデバイスのドキュメント フォルダーをユーザーが監視するとき、.msftintuneapplauncher という名前のフォルダーが表示されることがあります。 このファイルを変更または削除すると、制限付きのアプリの正常な動作に影響を与える可能性があります。
 
 ## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>Citrix MDX mVPN のための iOS 用 Intune アプリ ラッピング ツール
 この機能は iOS 用の Citrix MDX アプリ ラッパーとの統合です。 この統合は、コマンドライン フラグ `-citrix` を指定するだけで、通常の Intune アプリ ラッピング ツールに追加されます。
@@ -418,11 +426,13 @@ iOS 用アプリ ラッピング ツールで権利のエラーが表示され�
 通常のアプリ ラッピング コマンドを実行するときに、`-citrix` フラグを追加するだけです。 現在、`-citrix` フラグの引数はありません。
 
 **使用形式**:
+
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
 ```
 
 **コマンド例**:
+
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
@@ -442,5 +452,5 @@ iOS 用アプリ ラッピング ツールで権利のエラーが表示され�
 ## <a name="see-also"></a>関連項目
 
 - [Microsoft Intune によるモバイル アプリケーション管理のためにアプリを準備する方法を決める](apps-prepare-mobile-application-management.md)
-- [一般的な質問、問題、およびデバイスのポリシーとプロファイルの解像度](device-profile-troubleshoot.md)
+- [デバイス ポリシーとプロファイルの一般的な質問、問題と解決策](device-profile-troubleshoot.md)
 - [SDK を使用してモバイル アプリケーション管理に対応する](app-sdk.md)

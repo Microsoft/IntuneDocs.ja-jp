@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f9ee4d978bcb44f3b13ddcf9aafa4a3210f0f7e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: ea64a8b9c4e8fb044e0fd66be32dcc71e4a5aefc
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885062"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239431"
 ---
 # <a name="review-client-app-protection-logs"></a>クライアント アプリの保護ログのレビュー
 
@@ -31,7 +31,7 @@ ms.locfileid: "67885062"
 ログを有効にして収集するプロセスは、プラットフォームによって変わります。
 - **Android デバイス** - *ポータル サイト*を使用します。 「[電子メールでログを会社のサポートに送信する](/intune-user-help/send-logs-to-your-it-admin-by-email-android)」を参照してください。
 - **iOS デバイス** - Managed Browser または *Microsoft Edge* を使用してログを収集します。 詳細については、[Intune Managed Browser のログ送信用の新しい Intune 診断コンソール](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021)に関する Intune サポート チームのブログを参照してください。 
-- **Windows 10 デバイス** - *MDMDiag* とイベント ログを使用します。 Windows クライアント管理コンテンツの「[Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)」(Windows 10 の MDM エラーの診断) と、ブログ「[Troubleshooting Windows 10 Intune Policy Failures](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures)」(Windows 10 Intune ポリシー エラーのトラブルシューティング) を参照してください
+- **Windows 10 デバイス** - *MDMDiag* とイベント ログを使用します。 Windows クライアント管理コンテンツの「[Windows 10 での MDM エラーの診断](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)」と、ブログ「[Windows 10 Intune ポリシー エラーのトラブルシューティング](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/)」を参照してください。
 
 
 次の表に、ログに記録される設定の名前と説明を示します。

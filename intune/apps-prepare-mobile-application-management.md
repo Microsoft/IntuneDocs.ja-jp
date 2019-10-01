@@ -5,9 +5,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/19/2019
+ms.date: 09/09/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3addd79b20c685c5643a2b99fb7120e958cdecb
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: e7b1ea4914b2c4593c0d4abe6396e349020d1a95
+ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394883"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "71239538"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>アプリ保護ポリシーを利用するために基幹業務アプリで準備を行う
 
@@ -33,7 +32,7 @@ Intune アプリ ラッピング ツールまたは Intune アプリ SDK のど�
 ## <a name="intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツール
 アプリ ラッピング ツールは、主として、**内部**基幹業務 (LOB) アプリケーションに使います。 このツールは、アプリのラッパーを作成するコマンド ライン アプリケーションです。このラッパーにより、アプリを Intune アプリ保護ポリシーで管理できるようになります。 独立系ソフトウェア ベンダー (ISV) から提供されるアプリを保護するときは、ラッピングされたアプリが ISV によってサポートされるかどうかを明確にすることが重要です。
 
-このツールを使うためにソース コードは必要ありませんが、署名資格情報が必要です。 署名資格情報の詳細については、[Intune のブログ](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)を参照してください。 アプリ ラッピング ツールのドキュメントとしては、[Android アプリ ラッピング ツール](app-wrapper-prepare-android.md)と [iOS アプリ ラッピング ツール](app-wrapper-prepare-ios.md)をご覧ください。
+このツールを使うためにソース コードは必要ありませんが、署名資格情報が必要です。 署名資格情報の詳細については、[Intune のブログ](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/)を参照してください。 アプリ ラッピング ツールのドキュメントとしては、[Android アプリ ラッピング ツール](app-wrapper-prepare-android.md)と [iOS アプリ ラッピング ツール](app-wrapper-prepare-ios.md)に関するページをご覧ください。
 
 アプリ ラッピング ツールは、Apple App Store または Google Play ストアのアプリを**サポートしていません**。 また、開発ツールの統合が必要な一部の機能もサポートしていません (次の機能比較表を参照してください)。
 
@@ -74,6 +73,9 @@ SDK の詳細については、「[概要](app-sdk.md)」を参照してくだ�
 |**Android**|はい – [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md) を使用します。|[いいえ]|
 |**Android**| はい – [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md) を使用します。|[いいえ]|
 
+### <a name="not-using-an-app-development-platform-listed-above"></a>上に一覧表示されているアプリ開発プラットフォームを使用していない場合は、 
+Intune SDK の開発チームは、ネイティブの Android、iOS (Obj-C、Swift)、Xamarin、Xamarin.Forms、および Cordova プラットフォームを使ってビルドされたアプリに対するサポートを、積極的にテストして管理しています。 一部のお客様は、Intune SDK とその他のプラットフォーム (React Native や NativeScript など) の統合に成功されていますが、Microsoft では、サポートされているプラットフォーム以外を使うアプリ開発者に向けた明示的なガイダンスやプラグインは提供されません。 
+
 ## <a name="feature-comparison"></a>機能の比較
 アプリ SDK とアプリ ラッピング ツールに対して利用できる設定を、次の表に示します。
 
@@ -87,12 +89,13 @@ SDK の詳細については、「[概要](app-sdk.md)」を参照してくだ�
 |[アプリで他のアプリへのデータ転送を許可する]|○|○|
 |[アプリで他のアプリからのデータの受信を許可する]|○|○|
 |他のアプリとの間で切り取り、コピー、貼り付けを制限する|○|○|
-|切り取りにまたは管理対象アプリからコピーされた文字の数を指定します。|○|○|
+|マネージド アプリから切り取りまたはコピーできる文字数を指定する|○|○|
 |[アクセスには簡易暗証番号が必要]|○|○|
 |[PIN をリセットするまでの試行数を指定する]|○|○|
 |PIN の代わりに指紋を要求する|○|○|
 |PIN の代わりに顔認識を許可する (iOS のみ)|○|○|
 |[アクセスには会社の資格情報が必要]|○|○|
+|PIN の有効期限の設定|○|○|
 |[脱獄またはルート化されたデバイスで管理対象アプリが実行されないようにブロックする]|○|○|
 |[アプリ データの暗号化]|○|○|
 |[指定した時間 (分) 後にアクセス要件を再確認する]|○|○|
@@ -102,21 +105,23 @@ SDK の詳細については、「[概要](app-sdk.md)」を参照してくだ�
 |アプリ データのフル ワイプ|○|○|
 |複数 ID のシナリオにおける職場および学校のデータの選択的ワイプ <br><br>**注:** iOS では、管理プロファイルを削除するとアプリも削除されます。|○||
 |[[名前を付けて保存] を禁止する]|○||
-|対象となるアプリケーションの構成|○||
+|対象のアプリケーション構成 (または "MAM チャネル" を介したアプリ構成)|○|○|
 |[マルチ ID アプリのサポート]|○||
 |カスタマイズ可能なスタイル |○|||
 |Citrix mVPN でのオンデマンドのアプリケーション VPN 接続|○|○| 
 |連絡先の同期を無効にする|○|○|
 |印刷を無効にする|○|○|
 |アプリの最小バージョン要件|○|○|
-|オペレーティング システムの最小要件 (iOS および Android のみ)|○|○|
+|最低限のオペレーティング システムを必要とする|○|○|
 |Android の最小セキュリティ パッチ バージョン要件 (Android のみ)|○|○|
 |iOS 用 Intune SDK の最小要件 (iOS のみ)|○|○|
+|Saf Etynet デバイスの構成証明 (Android のみ)|○|○|
+|アプリの脅威のスキャン (Android のみ)|○|○|
 
 ## <a name="next-steps"></a>次の手順
 
 アプリ保護ポリシーと Intune の詳細については、次のトピックをご覧ください。
 
-  - [Android アプリ ラッピング ツール](app-wrapper-prepare-android.md)<br>
-  - [iOS アプリ ラッピング ツール](app-wrapper-prepare-ios.md)<br>
-  - [SDK を使用してモバイル アプリケーション管理に対応する](app-sdk.md)
+- [Android アプリ ラッピング ツール](app-wrapper-prepare-android.md)<br>
+- [iOS アプリ ラッピング ツール](app-wrapper-prepare-ios.md)<br>
+- [SDK を使用してモバイル アプリケーション管理に対応する](app-sdk.md)

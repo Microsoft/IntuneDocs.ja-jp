@@ -5,9 +5,8 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: ''
 ms.technology: ''
@@ -17,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 69814b91978aa3cd74c4dc239b099883ae402af9
-ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
-ms.translationtype: HT
+ms.openlocfilehash: df7f81c5cda0fab90fa424033f1c7a34728b213f
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "64764776"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71304323"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Microsoft Intune で Zebra モビリティ拡張機能を備えた Zebra デバイスを使用および管理する
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune には、アプリの管理やデバイス設定の構成など、豊富な機能が含まれています。 これらの組み込みの機能と設定は、Zebra Technologies 社によって製造された Android デバイス ("Zebra デバイス" とも呼ばれる) を管理するのに使用されます。
+Intune には、アプリの管理やデバイス設定の構成など、豊富な機能が含まれています。 これらの組み込みの機能と設定は、Zebra Technologies 社によって製造された Android デバイス ("Zebra デバイス" とも呼ばれる) を管理します。
 
 Android デバイスでは、**モビリティ拡張機能 (MX)** プロファイルを使用して、Zebra 固有の設定をカスタマイズしたり、さらにそれらの設定を追加したりします。
 
@@ -42,6 +41,11 @@ Android デバイスでは、**モビリティ拡張機能 (MX)** プロファ�
 
 Intune を使用すると、Zebra デバイスを登録して、ご利用の基幹業務アプリをデバイスに展開することができます。 "デバイス構成" プロファイルでは、Zebra 固有の設定を管理する MX プロファイルを作成できます。
 
+> [!NOTE]
+> 既定では、ゼブラ MX Api はデバイスでロックダウンされていません。 デバイスを Intune に登録する前に、悪意のある方法でデバイスが侵害される可能性があります。 デバイスがクリーンな状態にある場合は、アクセスマネージャー (AccessMgr) を使用して MX Api をロックダウンすることをお勧めします。 たとえば、ポータルサイトアプリと信頼するアプリのみが MX Api の呼び出しを許可されていることを選択できます。
+>
+> 詳細については、「ゼブラの web サイトでの[デバイスのロックダウン](https://developer.zebra.com/community/home/blog/2017/04/11/locking-down-your-device)」を参照してください。
+
 ## <a name="before-you-begin"></a>始める前に
 
 - Zebra Technologies 社から提供されている最新バージョンの StageNow デスクトップ アプリを必ずご用意ください。
@@ -50,9 +54,9 @@ Intune を使用すると、Zebra デバイスを登録して、ご利用の基�
 
 ## <a name="step-1-install-the-latest-company-portal-app"></a>ステップ 1: 最新のポータル サイト アプリをインストールする
 
-デバイス上で Google Play ストアに移動し、Microsoft からの Intune ポータル サイト アプリをダウンロードしてインストールします。 Google Play からポータル サイト アプリをインストールすると、このアプリでは更新プログラムと修正プログラムが自動的に取得されます。
+デバイスで、Google Play ストアを開きます。 Microsoft 提供の Intune ポータル サイト アプリをダウンロードしてインストールします。 Google Play からポータル サイト アプリをインストールすると、このアプリでは更新プログラムと修正プログラムが自動的に取得されます。
 
-Google Play が利用できない場合は、[Android 用 Microsoft Intune ポータル サイト](https://www.microsoft.com/download/details.aspx?id=49140) (別の Microsoft Web サイトが開きます) をダウンロードし、(この記事内の説明に従って) [それをサイドロードします](#sideload-the-company-portal-app)。 この方法でインストールした場合、アプリに更新プログラムまたは修正プログラムは自動的に提供されません。 通常は、定期的に手動でアプリに更新プログラムおよび修正プログラムを適用する必要があります。
+Google Play が利用できない場合は、[Android 用 Microsoft Intune ポータル サイト](https://www.microsoft.com/download/details.aspx?id=49140) (別の Microsoft Web サイトが開きます) をダウンロードし、(この記事内の説明に従って) [それをサイドロードします](#sideload-the-company-portal-app)。 この方法でインストールした場合、アプリに更新プログラムまたは修正プログラムは自動的に提供されません。 定期的に手動でアプリに更新プログラムおよび修正プログラムを適用してください。
 
 ### <a name="sideload-the-company-portal-app"></a>ポータル サイト アプリをサイドロードする
 
@@ -101,32 +105,34 @@ UI が利用できない場合は、StageNow の **DevAdmin Manager** を使用�
 
 StageNow を使用して、デバイス上で管理したい設定を構成するプロファイルを作成します。 特定の詳細については、Zebra のドキュメントを参照してください。 「[Profiles](http://techdocs.zebra.com/stagenow/3-2/stagingprofiles/)」 (プロファイル) (Zebra の Web サイトが開きます) を参照することをお勧めします。
 
-StageNow でプロファイルを作成するときの最後の手順で、 **[Export to MDM]\(MDM へのエクスポート\)** を選択します。 これにより XML ファイルが生成されます。 このファイルを保存します。 後の手順で必要になります。
+StageNow でプロファイルを作成するときの最後の手順で、 **[Export to MDM]\(MDM へのエクスポート\)** を選択します。 この手順では、XML ファイルが生成されます。 このファイルを保存します。 後の手順で必要になります。
 
-> [!TIP]
-> 組織内のデバイスに展開する前に、プロファイルをテストすることをお勧めします。 テストするには、ご利用のコンピューター上で StageNow を使用してプロファイルを作成するときの最後の手順で、 **[Test]\(テスト\)** オプションを使用します。 次に、StageNow で生成されたファイルをデバイス上の StageNow アプリで使用します。 
-> 
-> デバイス上の StageNow アプリによって、プロファイルをテストしたときに生成されたログが表示されます。 [Android が稼働している Zebra デバイスに対する StageNow ログを Intune で使用](android-zebra-mx-logs-troubleshoot.md)に関するページに、StageNow ログを使用してエラーを理解するための情報があります。
+- 組織内のデバイスに展開する前に、プロファイルをテストすることをお勧めします。 テストするには、ご利用のコンピューター上で StageNow を使用してプロファイルを作成するときの最後の手順で、 **[Test]\(テスト\)** オプションを使用します。 次に、StageNow で生成されたファイルをデバイス上の StageNow アプリで使用します。
 
-> [!NOTE]
-> StageNow プロファイル内のアプリを参照したり、パッケージを更新したり、他のファイルを更新したりする場合は、デバイスによってこれらの更新プログラムを取得します。 更新プログラムを取得するには、プロファイルの適用時にデバイスが StageNow 展開サーバーに接続されている必要があります。 
-> 
-> あるいは、これらの変更情報を、Intune の次のような組み込み機能を使用して取得します。 
-> - アプリを[追加](apps-add.md)、[展開](apps-deploy.md)、更新、および[監視](apps-monitor.md)するためのアプリ管理機能。
-> - Android エンタープライズが稼働しているデバイス上で[システムおよびアプリの更新プログラム](device-restrictions-android-for-work.md#device-owner-only)を管理する
+  デバイス上の StageNow アプリによって、プロファイルをテストしたときに生成されたログが表示されます。 [Android が稼働している Zebra デバイスに対する StageNow ログを Intune で使用](android-zebra-mx-logs-troubleshoot.md)に関するページに、StageNow ログを使用してエラーを理解するための情報があります。
+
+- StageNow プロファイル内のアプリを参照したり、パッケージを更新したり、他のファイルを更新したりする場合は、デバイスによってこれらの更新プログラムを取得します。 更新プログラムを取得するには、プロファイルの適用時にデバイスが StageNow 展開サーバーに接続されている必要があります。 
+
+  あるいは、これらの変更情報を、Intune の次のような組み込み機能を使用して取得します。
+
+  - アプリを[追加](apps-add.md)、[展開](apps-deploy.md)、更新、および[監視](apps-monitor.md)するためのアプリ管理機能。
+  - Android エンタープライズが稼働しているデバイス上で[システムおよびアプリの更新プログラム](device-restrictions-android-for-work.md#device-owner-only)を管理する
 
 ファイルをテストしたら、次のステップとして、Intune を使用してプロファイルをデバイスに展開します。
 
-> [!NOTE]
-> 各デバイスにプロファイルを 1 つ展開します。 デバイスに展開する StageNow プロファイルが複数ある場合は、それらの StageNow プロファイルをエクスポートし、設定を 1 つの XML ファイルにまとめてから Intune に追加します。 
-> 
-> 同じ XML ファイル内に同じプロパティを構成する設定が 2 つ必要だと思う人はいません。 この目的は、デバイス上で設定間の競合を防ぐことにあります。
+- 1つまたは複数の MX プロファイルをデバイスに展開できます。
+- 複数の StageNow プロファイルをエクスポートし、その設定を1つの XML ファイルに結合することもできます。 次に、XML ファイルを Intune にアップロードして、デバイスにデプロイします。
+
+  > [!WARNING]
+  > 複数の MX プロファイルが同じグループを対象とし、同じプロパティを構成すると、デバイスで競合が発生します。
+  >
+  > 1つの MX プロファイルで同じプロパティが複数回構成されている場合は、最後の構成が優先されます。
 
 ## <a name="step-5-create-a-profile-in-intune"></a>手順 5: Intune でプロファイルを作成する
 
 Intune で、デバイス構成プロファイルを作成します。
 
-1. [Azure portal](https://portal.azure.com) で、 **[すべてのサービス]** を選択し、**Intune** でフィルター処理して、 **[Intune]** を選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 2. **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
 3. 次のプロパティを入力します。
 
@@ -138,14 +144,19 @@ Intune で、デバイス構成プロファイルを作成します。
 4. **.xml 形式の MX プロファイル**に、(この記事の説明に従って) [StageNow からエクスポート](#step-4-create-a-device-management-profile-in-stagenow)した XML プロファイル ファイルを追加します。
 5. **[OK]**  >  **[作成]** を選択して変更を保存します。 ポリシーが作成され、一覧に表示されます。
 
+    > [!TIP]
+    > セキュリティ上の理由から、プロファイルの XML テキストは、保存すると、表示されなくなります。 テキストは暗号化され、アスタリスク (`****`) しか表示されません。 参考用に、MX プロファイルを Intune に追加する前にそのコピーを保存しておくことをお勧めします。
+
 プロファイルは作成されましたが、まだ何も行われていません。 次に、[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
 
 次回デバイスによって構成の更新の有無が確認されたとき、MX プロファイルがデバイスに展開されます。 デバイスは登録時に Intune と同期し、その後は約 8 時間ごとに同期します。 [Intune で強制的に同期させる](device-sync.md)こともできます。 または、デバイス上で **[ポータル サイト アプリ]**  >  **[設定]**  >  **[同期]** の順に開きます。 
 
-> [!TIP]
-> - セキュリティ上の理由から、プロファイルの XML テキストは、保存すると、表示されなくなります。 テキストは暗号化され、アスタリスク (`****`) しか表示されません。 参考用に、MX プロファイルを Intune に追加する前にそのコピーを保存しておくことをお勧めします。
-> 
-> - Zebra デバイスに割り当てられた後にプロファイルを更新するには、更新された StageNow XML ファイルを作成し、既存の Intune プロファイルを編集して、新しい StageNow XML ファイルを追加します。 この新しいファイルによって、プロファイル内の前の StageNow ポリシーは上書きされます。
+## <a name="update-a-zebra-mx-configuration-after-its-assigned"></a>ゼブラ MX 構成が割り当てられた後に更新する
+
+ゼブラデバイスの MX 固有の構成を更新するには、次のようにします。 
+
+- 更新された StageNow XML ファイルを作成し、既存の Intune MX プロファイルを編集して、新しい StageNow XML ファイルをアップロードします。 この新しいファイルによって、プロファイル内の以前のポリシーが上書きされ、以前の構成が置き換えられます。
+- 別の設定を構成し、新しい Intune MX プロファイルを作成し、新しい StageNow XML ファイルをアップロードして、同じグループに割り当てる新しい StageNow XML ファイルを作成します。 複数のプロファイルが展開されています。 新しいプロファイルによって既存のプロファイルに既に存在する設定が構成されている場合は、競合が発生します。
 
 ## <a name="next-steps"></a>次の手順
 

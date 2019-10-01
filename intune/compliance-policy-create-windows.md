@@ -5,9 +5,8 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 09/12/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,18 +14,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d956526d483a74ca5929180a48ea2dcd8b3eab7
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
-ms.translationtype: HT
+ms.openlocfilehash: cda6c5f5ffa2244376e318e81a38a1ed410a443f
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423630"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71305045"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune を使用してデバイスを準拠または非準拠としてマークするための Windows 10 以降の設定
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-この記事では、Intune で Windows 10 以降のデバイスに構成できるさまざまなコンプライアンス設定の一覧を示して説明します。 モバイル デバイス管理 (MDM) ソリューションの一部として、これらの設定を使用して、BitLocker の要求、オペレーティング システムの最小バージョンと最大バージョンの設定、Windows Defender Advanced Threat Protection (ATP) を使用したリスク レベルの設定を行います。
+この記事では、Intune で Windows 10 以降のデバイスに構成できるさまざまなコンプライアンス設定の一覧を示して説明します。 モバイル デバイス管理 (MDM) ソリューションの一部として、これらの設定を使用して、BitLocker の要求、オペレーティング システムの最小バージョンと最大バージョンの設定、Microsoft Defender Advanced Threat Protection (ATP) を使用したリスク レベルの設定を行います。
 
 この機能は、以下に適用されます。
 
@@ -100,23 +99,32 @@ Windows 10 以降を実行している共同マネージド デバイスにの�
 
 ### <a name="password"></a>パスワード
 
-- **[モバイル デバイスのロック解除にパスワードを必要とする]** : デバイスにアクセスするユーザーにパスワードを入力するよう**求めます**。
+- **[モバイル デバイスのロック解除にパスワードを必要とする]** : デバイスにアクセスするユーザーにパスワードを入力するよう**求めます**。 構成されて**いない**場合、Intune はデバイスのコンプライアンス対応状態を評価しません。
 - **[単純なパスワード]** : **[ブロック]** に設定すると、ユーザーは単純なパスワード (**1234**、**1111** など) を作成できません。 **[未構成]** に設定すると、ユーザーは **1234** や **1111** などのパスワードを作成できます。
-- **[パスワードの種類]** : パスワードの内容を**数字**のみにするかどうか、あるいは数字とその他の文字との組み合わせ (**英数字**) にするかどうかを選択します。
+- **[パスワードの種類]** : 必要なパスワードまたは PIN の種類を選択します。 次のようなオプションがあります。
 
-  - **[パスワードに使用する英数字以外の文字数]:** **[必要なパスワードの種類]** が **[英数字]** に設定されている場合、この設定ではパスワードに含める必要がある、文字セットの最小数を指定します。 次の 4 つの文字セットがあります。
-    - 小文字
-    - 大文字
-    - 記号
-    - 数字
+  - **デバイスの既定**: パスワード、数字の pin、または英数字の pin が必要
+  - **数値**: パスワードまたは数字の PIN が必要です
+  - **英数字**: パスワードまたは英数字の PIN が必要です。 また、**パスワードの複雑さ**も選択します。 
+    
+    - **数字と小文字が必要**
+    - **数字、小文字、および大文字を必要とする**
+    - **[Require digits, lowercase letters, uppercase letters, and special characters]\(数字、小文字、大文字、特殊文字が必要\)**
 
-    大きな数値を設定すると、ユーザーはより複雑なパスワードを作成する必要があります。
+    > [!TIP]
+    > 英数字のパスワードポリシーは複雑になる場合があります。 詳細については、管理者が Csp を読むことをお勧めします。
+    >
+    > - [DeviceLock/AlphanumericDevicePasswordRequired CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-alphanumericdevicepasswordrequired)
+    > - [DeviceLock/MinDevicePasswordComplexCharacters CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-mindevicepasswordcomplexcharacters)
 
 - **[パスワードの最小文字数]** : パスワードに必要な数字または文字の最小数を入力します。
 - **[デバイスの画面がロックされるまでの非アクティブな最大分数]** : ユーザーがパスワードを再入力しなければならなくなるまでのアイドル時間を入力します。
-- **[パスワードの有効期限 (日数)]** : 新しいパスワードの作成が必要となるまでのパスワードの有効日数を選択します。
+- **[パスワードの有効期限 (日数)]** : 新しいパスワードの作成が必要となるまでのパスワードの有効日数 (1 日から 730 日) を入力します。
 - **[再利用できないようにする前のパスワードの数]** : 何回前までのパスワードを使用できないようにするかを入力します。
 - **[Require password]\(アイドル状態から戻るときにパスワードが必要\) (モバイルおよび Holographic)** : デバイスがアイドル状態から戻るたびにパスワードを入力することをユーザーに強制します。
+
+  > [!IMPORTANT]
+  > Windows デスクトップでパスワード要件が変更されると、デバイスがアイドルからアクティブに移行する次回のサインイン時にユーザーに影響します。 要件を満たすパスワードを持っているユーザーにも、パスワードの変更を求めるメッセージが表示されます。
 
 ### <a name="encryption"></a>暗号化
 
@@ -127,10 +135,30 @@ Windows 10 以降を実行している共同マネージド デバイスにの�
 
 ### <a name="device-security"></a>［デバイス セキュリティ］
 
-- **[ウイルス対策]** : **[必要]** に設定すると、[Windows Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/) に登録されている Symantec や Windows Defender などのウイルス対策ソリューションを使って、コンプライアンスを確認できます。 **未構成**のときには、Intune は、デバイスにインストールされている AV ソリューションを確認しません。
-- **[スパイウェア対策]** : **[必要]** に設定すると、[Windows Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/) に登録されている Symantec や Windows Defender などのスパイウェア対策ソリューションを使って、コンプライアンスを確認できます。 **[未構成]** のときには、Intune は、デバイスにインストールされているスパイウェア対策ソリューションを確認しません。
+- **ファイアウォール**: Microsoft Defender ファイアウォールを有効にし、ユーザーが無効にすることを禁止する**ように設定**します。 **未構成**(既定) は Microsoft Defender ファイアウォールを制御せず、既存の設定を変更しません。
 
-## <a name="windows-defender-atp"></a>Windows Defender ATP
+  [ファイアウォール CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)
+
+- **トラステッドプラットフォームモジュール (TPM)** : **[必須]** に設定されている場合、Intune はバージョンのコンプライアンスを確認します。 TPM チップのバージョンが 0 (ゼロ) より大きい場合、デバイスは準拠しています。 デバイスに TPM バージョンがない場合、デバイスは準拠していません。 構成されて**いない**場合、Intune はデバイスで TPM チップバージョンを確認しません。
+
+  [DeviceStatus CSP-DeviceStatus/TPM/仕様バージョンノード](https://docs.microsoft.com/windows/client-management/mdm/devicestatus-csp)
+  
+- **[ウイルス対策]** : **[必要]** に設定すると、[Windows Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/) に登録されている Symantec や Microsoft Defender などのウイルス対策ソリューションを使って、コンプライアンスを確認できます。 **未構成**のときには、Intune は、デバイスにインストールされている AV ソリューションを確認しません。
+- **[スパイウェア対策]** : **[必要]** に設定すると、[Windows Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/) に登録されている Symantec や Microsoft Defender などのウイルス対策ソリューションを使って、コンプライアンスを確認できます。 **[未構成]** のときには、Intune は、デバイスにインストールされているスパイウェア対策ソリューションを確認しません。
+
+### <a name="defender"></a>Defender
+
+- **Microsoft Defender マルウェア対策**: microsoft defender マルウェア対策サービスを有効にし、ユーザーが**オフにでき**ないようにするには、を設定します。 **未構成**(既定) はサービスを制御せず、既存の設定を変更しません。
+- **Microsoft Defender マルウェア対策の最小バージョン**: microsoft defender マルウェア対策サービスの許可されている最小バージョンを入力します。 たとえば、「`4.11.0.0`」と入力します。 空白のままにすると、Microsoft Defender マルウェア対策サービスのすべてのバージョンを使用できます。
+- **Microsoft Defender マルウェア対策セキュリティインテリジェンス**の最新情報: デバイス上の Windows セキュリティウイルスおよび脅威保護の更新を制御します。 Microsoft Defender セキュリティインテリジェンスを強制的に最新の状態にする**必要が**あります。 **未構成**(既定) では、要件は適用されません。
+
+  セキュリティインテリジェンスの詳細については、 [Microsoft Defender ウイルス対策およびその他の microsoft マルウェア対策のセキュリティインテリジェンスの更新](https://www.microsoft.com/en-us/wdsi/defenderupdates)に関する情報を参照してください。
+
+- **リアルタイム保護**: **[必須]** は、マルウェア、スパイウェア、およびその他の望ましくないソフトウェアをスキャンするリアルタイム保護をオンにします。 **未構成**(既定) は、この機能を制御したり、既存の設定を変更したりしません。
+
+  [Defender/AllowRealtimeMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
+
+## <a name="microsoft-defender-atp"></a>Microsoft Defender ATP
 
 - **[Require the device to be at or under the machine risk score]\(デバイスは、コンピューターのリスク スコア以下であることが必要\)** : この設定は、脅威防御サービスからのリスク評価をコンプライアンスの条件とする場合に使用します。 許容される脅威の最大レベルを選択します。
 
@@ -139,7 +167,7 @@ Windows 10 以降を実行している共同マネージド デバイスにの�
   - **[中]** : デバイスに存在する脅威が低レベルまたは中レベルの場合、デバイスは準拠として評価されます。 デバイスで高レベルの脅威が検出された場合は、非準拠と判定されます。
   - **[高]** : 最も安全性の低いオプションであり、すべての脅威レベルが許容されます。 このソリューションをレポート目的のみで使用した場合、役立つ場合があります。
   
-  脅威対策サービスとしての Windows Defender ATP (Advanced Threat Protection) を設定するには、「[Intune で条件付きアクセスによる Windows Defender ATP を有効にする](advanced-threat-protection.md)」を参照してください。
+  脅威対策サービスとして Microsoft Defender ATP (Advanced Threat Protection) を設定するには、[条件付きアクセスによる Microsoft Defender ATP の有効化](advanced-threat-protection.md)に関するページを参照してください。
 
 **[OK]**  >  **[作成]** を選択して変更を保存します。
 
@@ -159,6 +187,6 @@ Surface Hub では **Windows 10 以降**のプラットフォームが使用さ�
 
 ## <a name="next-steps"></a>次の手順
 
-- [非準拠デバイスに対するアクションを追加](actions-for-noncompliance.md)し、[スコープのタグを使用してポリシーをフィルター処理します](scope-tags.md)。
+- [非準拠デバイスに対するアクションを追加](actions-for-noncompliance.md)し、[スコープのタグを使用してポリシーをフィルター処理する](scope-tags.md)
 - [コンプライアンス ポリシーを監視します](compliance-policy-monitor.md)。
 - [Windows 8.1 デバイス向けのコンプライアンス ポリシー設定](compliance-policy-create-windows-8-1.md)を確認します。

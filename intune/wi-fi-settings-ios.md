@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/14/2019
+ms.date: 09/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,14 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04b864689bce1814eba78dc2435905d4df82e8c0
-ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
+ms.openlocfilehash: 2358ec854e9cc78cbc36570c45a96b98d2844f5d
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69022675"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71302578"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune で iOS デバイス向けの Wi-Fi 設定を追加する
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 特定の Wi-Fi 設定でプロファイルを作成し、iOS デバイスにこのプロファイルを展開することができます。 Microsoft Intune では、ネットワークに対する認証や、PK または SCEP 証明書の追加など、多くの機能が提供されています。
 
@@ -33,6 +35,9 @@ ms.locfileid: "69022675"
 ## <a name="before-you-begin"></a>始める前に
 
 [デバイス プロファイルを作成します](device-profile-create.md)。
+
+> [!NOTE]
+> これらの設定は、すべての登録の種類で使用できます。 登録の種類の詳細については、「 [iOS の登録](ios-enroll.md)」を参照してください。
 
 ## <a name="basic-profiles"></a>Basic プロファイル
 
@@ -74,18 +79,12 @@ ms.locfileid: "69022675"
     - **[サーバー信頼]**  -  **[証明書サーバー名]** : 信頼された証明機関 (CA) によって発行された証明書で使用されている 1 つまたは複数の共通名を、ワイヤレス ネットワーク アクセス サーバーに **[追加]** します。 たとえば、`mywirelessserver.contoso.com` または `mywirelessserver` を追加します。 この情報を入力すると、この Wi-Fi ネットワークに接続するときに、ユーザーのデバイスに表示される動的な信頼ウィンドウをバイパスできます。
     - **[サーバー検証のためのルート証明書]** : 既存の信頼されたルート証明書プロファイルを選択します。 この証明書により、クライアントはワイヤレスネットワークアクセスサーバーの証明書を信頼することができます。
 
-      **[OK]** を選択して変更を保存します。
-
     - **[クライアント認証]**  -  **[クライアント認証に使用するクライアント証明書 (ID 証明書)]** : やはりデバイスに展開される SCEP または PKCS クライアント証明書プロファイルを選択します。 この証明書は、接続の認証のためにデバイスによってサーバーに提示される ID です。
-
-      **[OK]** を選択して変更を保存します。
 
   - **[EAP-TTLS]** : 以下も入力します。
 
     - **[サーバー信頼]**  -  **[証明書サーバー名]** : 信頼された証明機関 (CA) によって発行された証明書で使用されている 1 つまたは複数の共通名を、ワイヤレス ネットワーク アクセス サーバーに **[追加]** します。 たとえば、`mywirelessserver.contoso.com` または `mywirelessserver` を追加します。 この情報を入力すると、この Wi-Fi ネットワークに接続するときに、ユーザーのデバイスに表示される動的な信頼ウィンドウをバイパスできます。
     - **[サーバー検証のためのルート証明書]** : 既存の信頼されたルート証明書プロファイルを選択します。 この証明書により、クライアントはワイヤレスネットワークアクセスサーバーの証明書を信頼することができます。
-
-      **[OK]** を選択して変更を保存します。
 
     - **[クライアント認証]** - **[認証方法]** を選択します。 次のようなオプションがあります。
 
@@ -96,8 +95,6 @@ ms.locfileid: "69022675"
 
       - **[証明書]** : やはりデバイスに展開される SCEP または PKCS クライアント証明書プロファイルを選択します。 この証明書は、接続の認証のためにデバイスによってサーバーに提示される ID です。
 
-        **[OK]** を選択して変更を保存します。
-
       - **[ID プライバシー (外部 ID)]** : EAP ID 要求への応答で送信されるテキストを入力します。 このテキストには任意の値を指定できます (例: `anonymous`)。 認証時に、この匿名の ID が最初に送信され、その後、セキュリティで保護されたトンネルで実際の ID が送信されます。
 
   - **LEAP**
@@ -107,15 +104,11 @@ ms.locfileid: "69022675"
     - **[サーバー信頼]**  -  **[証明書サーバー名]** : 信頼された証明機関 (CA) によって発行された証明書で使用されている 1 つまたは複数の共通名を、ワイヤレス ネットワーク アクセス サーバーに **[追加]** します。 たとえば、`mywirelessserver.contoso.com` または `mywirelessserver` を追加します。 この情報を入力すると、この Wi-Fi ネットワークに接続するときに、ユーザーのデバイスに表示される動的な信頼ウィンドウをバイパスできます。
     - **[サーバー検証のためのルート証明書]** : 既存の信頼されたルート証明書プロファイルを選択します。 この証明書により、クライアントはワイヤレスネットワークアクセスサーバーの証明書を信頼することができます。
 
-      **[OK]** を選択して変更を保存します。
-
     - **[クライアント認証]** - **[認証方法]** を選択します。 次のようなオプションがあります。
 
       - **[ユーザー名とパスワード]** : 接続の認証のためにユーザーにユーザー名とパスワードを要求します。 
 
       - **[証明書]** : やはりデバイスに展開される SCEP または PKCS クライアント証明書プロファイルを選択します。 この証明書は、接続の認証のためにデバイスによってサーバーに提示される ID です。
-
-        **[OK]** を選択して変更を保存します。
 
       - **[ID プライバシー (外部 ID)]** : EAP ID 要求への応答で送信されるテキストを入力します。 このテキストには任意の値を指定できます (例: `anonymous`)。 認証時に、この匿名の ID が最初に送信され、その後、セキュリティで保護されたトンネルで実際の ID が送信されます。
 
@@ -124,12 +117,8 @@ ms.locfileid: "69022675"
   - **[手動]** : IP アドレスとしての **[プロキシ サーバーのアドレス]** およびその **[ポート番号]** を入力します。
   - **[自動]** : ファイルを使用してプロキシ サーバーを構成します。 構成ファイルが格納されている **[プロキシ サーバーの URL]** を入力します (例: `http://proxy.contoso.com`)。
 
-**[OK]**  >  **[作成]** を選択して変更を保存します。 プロファイルが作成され、プロファイル一覧に表示されます。
-
 ## <a name="next-steps"></a>次の手順
 
-プロファイルは作成されますが、何も実行されません。 次に、[このプロファイルを割り当て](device-profile-assign.md)ます。
+プロファイルは作成されますが、何も実行されません。 次に、[このプロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)します。
 
-## <a name="more-resources"></a>その他のリソース
-
-使用可能な他のプラットフォームなど、[Wi-Fi 設定の概要](wi-fi-settings-configure.md)に関する記事。
+[Android](wi-fi-settings-android.md)、 [android Enterprise](wi-fi-settings-android-enterprise.md)、 [macOS](wi-fi-settings-macos.md)、および[Windows 10](wi-fi-settings-windows.md)デバイスで wi-fi 設定を構成します。
