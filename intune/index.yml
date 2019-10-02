@@ -8,186 +8,216 @@ metadata:
   author: dougeby
   ms.author: dougeby
   manager: mtillman
-  ms.date: 08/30/2019
-  ms.openlocfilehash: e094a13f20cb4d66e96c3c559d04a0c6a51e7a3a
-  ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+  ms.date: 09/16/2019
+  ms.openlocfilehash: b7e4a5c9dee8d8a47a90ceafa60290d726637ba1
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/20/2019
-  ms.locfileid: "71166316"
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71721223"
 highlightedContent:
   items:
   - title: Intune とは何か
     itemType: overview
-    url: what-is-intune.md
+    url: ./fundamentals/what-is-intune.md
   - title: Intune の新機能
     itemType: overview
-    url: whats-new.md
+    url: ./fundamentals/whats-new.md
   - title: 開発中の機能
     itemType: overview
-    url: in-development.md
+    url: ./fundamentals/in-development.md
   - title: Intune を無料で試す
     itemType: get-started
-    url: free-trial-sign-up.md
-  - title: スコープのタグを使って地域の設定を適用する
+    url: ./fundamentals/free-trial-sign-up.md
+  - title: Windows 10 デバイスの自動登録を設定する
     itemType: get-started
-    url: scope-tags.md
+    url: ./enrollment/quickstart-setup-auto-enrollment.md
   - title: Microsoft 推奨設定を使って Windows デバイスを保護する
     itemType: get-started
-    url: security-baselines.md
+    url: ./protect/security-baselines.md
 conceptualContent:
   items:
   - title: Intune の導入計画
     links:
-    - url: planning-guide.md
+    - url: ./fundamentals/planning-guide.md
       itemType: concept
       text: Intune 計画ガイド
-    - url: migration-guide.md
+    - url: ./fundamentals/migration-guide.md
       itemType: concept
       text: Intune 移行ガイド
-    - url: migration-guide-communication-plan.md
+    - url: ./fundamentals/migration-guide-communication-plan.md
       itemType: concept
       text: ユーザーへの情報伝達計画
+    footerLink:
+      text: 詳細表示
+      url: ./fundamentals/index.yml
   - title: Intune をセットアップする
     links:
-    - url: setup-steps.md
+    - url: ./fundamentals/setup-steps.md
       itemType: how-to-guide
       text: Intune をセットアップする手順
-    - url: supported-devices-browsers.md
+    - url: ./fundamentals/supported-devices-browsers.md
       itemType: reference
       text: サポートされるオペレーティング システムとブラウザー
-    - url: role-based-access-control.md
+    - url: ./fundamentals/role-based-access-control.md
       itemType: reference
       text: ロールベースのアクセス制御
-    - url: licenses.md
+    - url: ./fundamentals/licenses.md
       itemType: concept
       text: Intune のライセンス
+    footerLink:
+      text: 詳細表示
+      url: ./fundamentals/index.yml
   - title: デバイスの登録
     links:
-    - url: device-enrollment.md
+    - url: ./enrollment/device-enrollment.md
       itemType: concept
       text: デバイスの登録の概要
-    - url: windows-enroll.md
+    - url: ./enrollment/device-management-capabilities.md
+      itemType: concept
+      text: 登録済みのデバイス管理機能
+    - url: ./enrollment/windows-enroll.md
       itemType: how-to-guide
       text: Windows の登録をセットアップする
-    - url: ios-enroll.md
+    - url: ./enrollment/ios-enroll.md
       itemType: how-to-guide
       text: iOS デバイスの登録をセットアップする
-    - url: android-enroll.md
+    - url: ./enrollment/android-enroll.md
       itemType: how-to-guide
       text: Android デバイスの登録をセットアップする
+    footerLink:
+      text: 詳細表示
+      url: ./enrollment/index.yml
   - title: デバイスをリモートで管理する
     links:
-    - url: device-management.md
-      itemType: concept
-      text: デバイス管理の概要
-    - url: device-management-capabilities.md
+    - url: ./remote-actions/device-management.md
       itemType: concept
       text: デバイス管理機能
-    - url: custom-notifications.md
+    - url: ./remote-actions/custom-notifications.md
       itemType: how-to-guide
       text: カスタム通知を送信する
-    - url: devices-wipe.md
+    - url: ./remote-actions/devices-wipe.md
       itemType: how-to-guide
       text: デバイスの削除
+    footerLink:
+      text: 詳細表示
+      url: ./remote-actions/index.yml
   - title: ユーザーとデバイスに対するコンプライアンス規則を作成する
     links:
-    - url: device-compliance-get-started.md
+    - url: ./protect/device-compliance-get-started.md
       itemType: concept
       text: コンプライアンスの概要
-    - url: use-network-locations.md
+    - url: ./protect/use-network-locations.md
       itemType: how-to-guide
       text: Android でのネットワーク フェンシングとコンプライアンス
-    - url: actions-for-noncompliance.md
+    - url: ./protect/actions-for-noncompliance.md
       itemType: how-to-guide
       text: 準拠していないデバイスのアクション
+    footerLink:
+      text: 詳細表示
+      url: ./protect/index.yml
   - title: デバイスの機能と設定を制御する
     links:
-    - url: device-profiles.md
+    - url: ./configuration/device-profiles.md
       itemType: concept
       text: デバイス構成の概要
-    - url: device-restrictions-configure.md
+    - url: ./configuration/device-restrictions-configure.md
       itemType: how-to-guide
       text: 設定と機能を制限する
-    - url: vpn-settings-configure.md
+    - url: ./configuration/vpn-settings-configure.md
       itemType: how-to-guide
       text: デバイスに VPN を追加する
-    - url: administrative-templates-windows.md
+    - url: ./configuration/administrative-templates-windows.md
       itemType: how-to-guide
       text: グループ ポリシーの ADMX 設定を構成する
+    footerLink:
+      text: 詳細表示
+      url: ./configuration/index.yml
   - title: デバイスとデータを保護する
     links:
-    - url: device-protect.md
+    - url: ./protect/device-protect.md
       itemType: concept
       text: デバイスの保護の概要
-    - url: conditional-access.md
+    - url: ./protect/conditional-access.md
       itemType: concept
       text: Intune での条件付きアクセス
-    - url: mobile-threat-defense.md
+    - url: ./protect/mobile-threat-defense.md
       itemType: concept
       text: Mobile Threat Defense の Intune との統合
+    footerLink:
+      text: 詳細表示
+      url: ./protect/index.yml
   - title: アプリを管理する
     links:
-    - url: app-management.md
+    - url: ./apps/app-management.md
       itemType: concept
       text: アプリ管理の概要
-    - url: apps-add.md
+    - url: ./apps/apps-add.md
       itemType: how-to-guide
       text: Intune にアプリを追加する
-    - url: apps-deploy.md
+    - url: ./apps/apps-deploy.md
       itemType: how-to-guide
       text: アプリをグループに割り当てる
-    - url: app-configuration-policies-overview.md
+    - url: ./apps/app-configuration-policies-overview.md
       itemType: overview
       text: アプリの構成ポリシー
+    footerLink:
+      text: 詳細表示
+      url: ./apps/index.yml
   - title: アプリ保護ポリシー
     links:
-    - url: app-protection-policy.md
+    - url: ./apps/app-protection-policy.md
       itemType: concept
       text: アプリ保護ポリシーの概要
-    - url: app-protection-policies.md
+    - url: ./apps/app-protection-policies.md
       itemType: overview
       text: アプリ保護ポリシーの作成
-    - url: app-protection-policies-validate.md
+    - url: ./apps/app-protection-policies-validate.md
       itemType: how-to-guide
       text: アプリ保護ポリシーを検証する
-    - url: app-protection-policies-monitor.md
+    - url: ./apps/app-protection-policies-monitor.md
       itemType: how-to-guide
       text: アプリ保護ポリシーを監視する
+    footerLink:
+      text: 詳細表示
+      url: ./apps/index.yml
   - title: ヘルプとサポート
     links:
-    - url: get-support.md
+    - url: ./fundamentals/get-support.md
       itemType: concept
       text: Microsoft Intune のサポートを受ける方法
-    - url: help-desk-operators.md
+    - url: ./fundamentals/help-desk-operators.md
       itemType: concept
       text: ユーザーによる問題のトラブルシューティングをサポートする
-    - url: monitor-audit-logs.md
+    - url: ./fundamentals/monitor-audit-logs.md
       itemType: concept
       text: 監査ログを使ってイベントの追跡と監視を行う
-    - url: troubleshoot-app-install.md
+    - url: ./apps/troubleshoot-app-install.md
       itemType: concept
       text: アプリのインストールに関する問題のトラブルシューティング
-    - url: troubleshoot-policies-in-microsoft-intune.md
+    - url: ./protect/troubleshoot-policies-in-microsoft-intune.md
       itemType: concept
       text: Intune でのポリシーとプロファイルのトラブルシューティング
   - title: Developer
     links:
-    - url: intune-graph-apis.md
+    - url: ./developer/intune-graph-apis.md
       itemType: concept
       text: Microsoft Graph の Intune API にアクセスする
     - url: https://github.com/Microsoft/Intune-PowerShell-SDK/
       itemType: concept
       text: PowerShell コマンドレットを使ってアクションを自動化する
-    - url: reports-nav-create-intune-reports.md
+    - url: ./developer/reports-nav-create-intune-reports.md
       itemType: concept
       text: Microsoft Intune データ ウェアハウスを使用する
-    - url: app-sdk.md
+    - url: ./developer/app-sdk.md
       itemType: overview
       text: Microsoft Intune App SDK の概要
-    - url: reports-nav-create-intune-reports.md
+    - url: ./developer/reports-nav-create-intune-reports.md
       itemType: concept
       text: Microsoft Intune データ ウェアハウスを使用する
+    footerLink:
+      text: 詳細表示
+      url: ./developer/index.yml
 additionalContent:
   sections:
   - title: デバイスを管理するためのその他のリソース

@@ -7,18 +7,18 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 90c770fec5bd9456151e601188254a3a022cd13f
-ms.sourcegitcommit: 62c41976c4da43b36015b715bc255397ebb8c6ad
+ms.openlocfilehash: fa251a0edd943d566849b138af5cbab0be248a53
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71279906"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71726402"
 ---
 以下の通知では、今後の Intune の変更と機能に備えるために役立つ重要な情報が提供されます。 
 
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>Android デバイス管理者のサポートの縮小 
-Android デバイス管理者 ("従来の" Android 管理とも呼ばれ、Android 2.2 でリリースされました) は、Android デバイスを管理する方法の 1 つです。 しかし、[Android Enterprise](../connect-intune-android-enterprise.md) (Android 5.0 でリリース) では、強化された管理機能を使用できるようになりました。 Google では、より豊富で安全な最新のデバイス管理に移行するための努力の一環として、新しい Android リリースでのデバイス管理者のサポートを縮小させています。
+Android デバイス管理者 ("従来の" Android 管理とも呼ばれ、Android 2.2 でリリースされました) は、Android デバイスを管理する方法の 1 つです。 しかし、[Android Enterprise](../enrollment/connect-intune-android-enterprise.md) (Android 5.0 でリリース) では、強化された管理機能を使用できるようになりました。 Google では、より豊富で安全な最新のデバイス管理に移行するための努力の一環として、新しい Android リリースでのデバイス管理者のサポートを縮小させています。
 
 #### <a name="how-does-this-affect-me"></a>ユーザーへの影響
 Google によるこのような変更により、Intune ユーザーは次のような影響を受けます。 
@@ -67,10 +67,11 @@ portal.azure.com および devicemanagement.microsoft.com の両方で、次の�
 https://aka.ms/intune_fullscreen
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>変更の計画:Intune での新しい Windows 更新設定 <!-- 4464404 -->
-Intune サービスの 8 月のリリースまたは 1908 以降、[ユーザーに再起動を許可する (再起動猶予期間)] 設定の代わりに構成できる、新しい "期限の設定" が追加されます。 再起動猶予期間の設定は、1909 または 9 月の更新プログラムの UI で無効になり、その後 10 月末にかけてコンソールから完全に削除される予定です。 
+Intune サービスの 8 月のリリースまたは 1908 以降、[ユーザーに再起動を許可する (再起動猶予期間)] 設定の代わりに構成できる、新しい "期限の設定" が追加されます。 再起動猶予期間の設定は、1909 または 9 月の更新プログラムの UI で無効になり、その後 10 月末にかけてコンソールから完全に削除される予定です。
 
 #### <a name="how-does-this-affect-me"></a>ユーザーへの影響
-ご自身の環境内で Windows 10 デバイスを管理する場合: 
+ご自身の環境内で Windows 10 デバイスを管理する場合:
+
 - Intune の 8 月の更新プログラムまたは 1908 から、前の再起動猶予期間の設定に加えて新しい期限の設定がコンソールに表示されます。
 - この古い設定と新しい設定を両方構成した場合は、期限の設定値によって再起動猶予期間の設定値が上書きされます。
 - 1910 更新プログラムのコンソールから、期限の設定によって [ユーザーに再起動を許可する (再起動猶予期間)] オプションが置き換えられます。
@@ -78,7 +79,7 @@ Intune サービスの 8 月のリリースまたは 1908 以降、[ユーザー
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
 1908 に含まれる期限の設定を必要な値で構成し、その使用を開始してください。 それが完了したら、再起動猶予期間の設定を [未構成] に設定し、これらの設定が 10 月にコンソールから削除されることに備えることができます。
 
-必要に応じて、ご自身のドキュメントや自動化スクリプトを更新します。 
+必要に応じて、ご自身のドキュメントや自動化スクリプトを更新します。
 
 Microsoft では最新情報を随時お知らせし、再起動猶予期間の設定を削除する前にメッセージ センターにリマインダーを投稿いたします。
 
@@ -86,12 +87,13 @@ Microsoft では最新情報を随時お知らせし、再起動猶予期間の�
 Intune では、10月に Android 5.x (Lollipop) 以降のサポートが開始されます。 ラップされたすべてのアプリを最新の Intune App SDK で更新し、デバイスを更新してください。
 
 #### <a name="how-does-this-affect-me"></a>ユーザーへの影響
-Android 用の SDK またはアプリを使用していない、または使用する予定がない場合は、この変更による影響はありません。 Intune App SDK を使用している場合は、必ず最新バージョンに更新し、またデバイスも Android 5.x 以降に更新してください。 お客様が更新を行わなかった場合、アプリで更新プログラムを受信できなくなり、時間の経過と共にそのエクスペリエンスの質が低下していきます。 
+Android 用の SDK またはアプリを使用していない、または使用する予定がない場合は、この変更による影響はありません。 Intune App SDK を使用している場合は、必ず最新バージョンに更新し、またデバイスも Android 5.x 以降に更新してください。 お客様が更新を行わなかった場合、アプリで更新プログラムを受信できなくなり、時間の経過と共にそのエクスペリエンスの質が低下していきます。
 
 Intune に登録されていて、Android バージョン 4.x を稼働している一般的なデバイスの一覧を以下に示します。 これらのデバイスのいずれかを使用している場合は、適切な手順を実行して、必ずそのデバイスで Android バージョン 5.0 以降をサポートするようにするか、それを Android バージョン 5.0 以降をサポートするデバイスに置き換えるようにしてください。 この一覧は、評価が必要なすべてのデバイスを網羅しているわけではありません。
+
 - Samsung SM-T561  
-- Samsung SM-T365 
-- Samsung GT-I9195 
+- Samsung SM-T365
+- Samsung GT-I9195
 - Samsung SM-G800F
 - Samsung SM-G357FZ
 - Motorola XT1080
@@ -100,7 +102,6 @@ Intune に登録されていて、Android バージョン 4.x を稼働してい
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>この変更に対して必要な準備
 最新の Intune App SDK でアプリをラップしてください。 また、[最低限の OS バージョンを必要とします (警告のみ)] という条件付き起動を設定して、個人用デバイスを使用しているエンドユーザーにアップグレードするよう通知することもできます。
-
 
 ### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7----3042987---"></a>Intune の変更の計画: Windows 7 のサポート終了間近 <!-- 3042987 -->
 2018 年 9 月に投稿した MC148476 および 2019 年 3 月の MC176794 で再びお伝えしたとおり、Windows 7 の延長サポートは 2020 年 1 月 14 日に終了いたします。 その時点で、Windows 7 を稼働しているデバイスに対する Intune のサポートは終了します。これにより、より新しいテクノロジのサポートと、優れた新しいエンド ユーザー エクスペリエンスの提供に注力することが可能になります。 当該日付以降は、お使いの Windows 7 PC を保護するための技術的なサポートと自動更新が Intune で利用できなくなります。 もう利用できないサービスやサポートが必要になるシナリオを回避するために、2020 年 1 月より前に Windows 10 に移行することを強くお勧めします。 Windows のサポート ライフサイクルについて詳しくは、[こちら](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)をご覧ください。
