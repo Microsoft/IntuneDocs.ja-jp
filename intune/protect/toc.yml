@@ -1,0 +1,269 @@
+- name: Intune を使用してデータとデバイスを保護する
+  href: index.yml
+- name: 概要
+  expanded: true
+  items:
+    - name: デバイスの保護の概要
+      href: device-protect.md
+      displayName: compliant; noncompliant; mfa
+- name: クイックスタート
+  items:
+    - name: デバイス コンプライアンス ポリシーの作成
+      href: quickstart-set-password-length-android.md
+    - name: 非準拠デバイスに通知を送信する
+      href: quickstart-send-notification.md
+- name: チュートリアル
+  items:
+    - name: マネージド デバイスでの電子メールの保護
+      href: tutorial-protect-email-on-enrolled-devices.md
+    - name: 管理されていないデバイスでの電子メールの保護
+      href: tutorial-protect-email-on-unmanaged-devices.md
+- name: 概念
+  items:
+    - name: プライバシーおよび個人データ
+      href: privacy-personal-data.md
+      items:
+        - name: データ コレクション
+          href: privacy-data-collect.md
+        - name: データ ストレージと処理
+          href: privacy-data-store-process.md
+        - name: データのセキュリティと共有
+          href: privacy-data-secure-share.md
+          items:
+            - name: Apple から Intune に送られるデータ
+              href: data-apple-sends-to-intune.md
+            - name: Google から Intune に送られるデータ
+              href: data-google-sends-to-intune.md
+            - name: Intune から Apple に送られるデータ
+              href: data-intune-sends-to-apple.md
+            - name: Intune から Google に送られるデータ
+              href: data-intune-sends-to-google.md
+            - name: Intune に Jamf Pro から共有する情報
+              href: data-jamf-sends-to-intune.md
+        - name: 個人データの表示と修正
+          href: privacy-data-view-correct.md
+        - name: 監査、エクスポート、削除
+          href: privacy-data-audit-export-delete.md
+        - name: Windows 情報保護
+          href: windows-information-protection-configure.md
+- name: 操作方法ガイド
+  items:
+    - name: リソースへのアクセスを許可するデバイスのルールを設定する
+      items:
+        - name: コンプライアンスの概要
+          href: device-compliance-get-started.md
+        - name: ポリシーの作成
+          href: create-compliance-policy.md
+        - name: 地域別のコンプライアンス
+          href: use-network-locations.md
+        - name: コンプライアンス非対応に対するアクション
+          href: actions-for-noncompliance.md
+        - name: デバイス コンプライアンスを監視する
+          href: compliance-policy-monitor.md
+    - name: デバイスの暗号化
+      items:
+        - name: デバイスの暗号化
+          href: encrypt-devices.md
+        - name: デバイス暗号化の監視
+          href: encryption-monitor.md
+    - name: 条件付きアクセス
+      items:
+        - name: 条件付きアクセスの概要
+          href: conditional-access.md
+          displayName: ca
+        - name: 条件付きアクセスの一般的な使用方法
+          href: conditional-access-intune-common-ways-use.md
+        - name: Exchange On-premises コネクタをインストールする
+          href: exchange-connector-install.md
+        - name: 条件付きアクセス ポリシーの作成と割り当て
+          href: conditional-access-exchange-create.md
+        - name: デバイス ベースの条件付きアクセス ポリシー
+          href: create-conditional-access-intune.md
+        - name: 条件付きアクセス ポリシーを 従来の Intune ポータルから再割り当てする
+          href: conditional-access-intune-reassign.md
+        - name: アプリベースの条件付きアクセス
+          href: app-based-conditional-access-intune.md
+        - name: アプリベースの条件付きアクセスの設定
+          href: app-based-conditional-access-intune-create.md
+        - name: ADAL と Intune
+          href: app-modern-authentication-block.md
+        - name: コンプライアンスのために Jamf Pro を Intune と統合する
+          href: conditional-access-integrate-jamf.md
+        - name: Jamf Pro で管理された Mac にコンプライアンスを適用します
+          href: conditional-access-assign-jamf.md
+    - name: 脅威保護
+      items:
+        - name: Mobile Threat Defense
+          href: mobile-threat-defense.md
+          items:
+            - name: MTD 用 Intune のセットアップ
+              items:
+                - name: MTD アプリの追加
+                  href: mtd-apps-ios-app-configuration-policy-add-assign.md
+                - name: MTD デバイス コンプライアンス ポリシーの作成
+                  href: mtd-device-compliance-policy-create.md
+                - name: Intune で MTD を有効にする
+                  href: mtd-connector-enable.md
+            - name: MTD アプリ
+              items:
+                - name: Better Mobile の設定
+                  href: better-mobile-threat-defense-connector.md
+                  items:
+                    - name: Better Mobile と Intune の統合
+                      href: better-mobile-mtd-connector-integration.md
+                      displayName: sso
+                - name: Check Point の設定
+                  href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
+                  items:
+                    - name: Check Point と Intune の統合
+                      href: checkpoint-sandblast-mobile-mtd-connector-integration.md
+                - name: Lookout の設定
+                  href: lookout-mobile-threat-defense-connector.md
+                  items:
+                    - name: Lookout と Intune の統合
+                      href: lookout-mtd-connector-integration.md
+                - name: Pradeo の設定
+                  href: pradeo-mobile-threat-defense-connector.md
+                  items:
+                    - name: Pradeo と Intune の統合
+                      href: pradeo-mtd-connector-integration.md
+                - name: Sophos Mobile を設定する
+                  href: sophos-mtd-connector.md
+                  items:
+                    - name: Sophos Mobile と Intune の統合
+                      href: sophos-mtd-connector-integration.md
+                - name: Symantec の設定
+                  href: skycure-mobile-threat-defense-connector.md
+                  items:
+                    - name: Symantec と Intune の統合
+                      href: skycure-mtd-connector-integration.md
+                - name: Wandera の設定
+                  href: wandera-mtd-connector.md
+                  items:
+                    - name: Wandera と Intune の統合
+                      href: wandera-mtd-connector-integration.md
+                - name: Zimperium の設定
+                  href: zimperium-mobile-threat-defense-connector.md
+                  items:
+                    - name: Zimperium と Intune の統合
+                      href: zimperium-mtd-connector-integration.md
+        - name: Microsoft Defender
+          items:
+            - name: Microsoft Defender ATP
+              href: advanced-threat-protection.md
+            - name: セキュリティ タスク
+              href: atp-manage-vulnerabilities.md
+    - name: セキュリティ ベースライン
+      items:
+        - name: セキュリティ ベースライン
+          href: security-baselines.md
+        - name: ベースラインを監視する
+          href: security-baselines-monitor.md
+    - name: Endpoint Protection
+      href: endpoint-protection-configure.md
+    - name: ネットワーク アクセス制御
+      href: network-access-control-integrate.md
+    - name: Windows Hello
+      items:
+        - name: Windows Hello
+          href: windows-hello.md
+        - name: ID 保護
+          href: identity-protection-configure.md
+    - name: 証明書
+      items:
+        - name: 認証に証明書を使用する
+          href: certificates-configure.md
+        - name: SCEP
+          items:
+            - name: SCEP のインフラストラクチャ
+              href: certificates-scep-configure.md
+              displayName: ksp
+            - name: SCEP 証明書プロファイル
+              href: certificates-profile-scep.md
+            - name: SCEP でサード パーティの証明機関を使用する
+              href: certificate-authority-add-scep-overview.md
+        - name: PKCS
+          items:
+            - name: PKCS
+              href: certficates-pfx-configure.md
+              displayName: ksp
+            - name: インポートされた PKCS
+              href: certificates-imported-pfx-configure.md
+            - name: S/MIME を使用して電子メールを暗号化する
+              href: certificates-s-mime-encryption-sign.md
+              displayName: csr
+        - name: DigiCert PKI を使用する
+          href: certificates-digicert-configure.md
+          displayName: ca; pkcs; pki; ra; registration authority
+        - name: SCEP 証明書または PKCS 証明書を削除する
+          href: remove-certificates.md
+    - name: ソフトウェア更新プログラム
+      items:
+        - name: Windows の更新プログラム
+          items:
+            - name: ビジネス設定向けの Windows Update
+              href: windows-update-for-business-configure.md
+            - name: Windows Update のコンプライアンス レポート
+              href: windows-update-compliance-reports.md
+        - name: iOS 更新ポリシー
+          href: software-updates-ios.md
+    - name: トラブルシューティング
+      items:
+        - name: ポリシーとプロファイルのトラブルシューティング
+          href: troubleshoot-policies-in-microsoft-intune.md
+        - name: 条件付きアクセスに関するトラブルシューティング
+          href: troubleshoot-conditional-access.md
+        - name: Certificate Connector のトラブルシューティング
+          href: troubleshoot-certificate-connector-events.md
+        - name: Exchange Connector に関するトラブルシューティング
+          items:
+            - name: Exchange Connector に関するトラブルシューティング
+              href: troubleshoot-exchange-connector.md
+            - name: 一般的な問題
+              href: troubleshoot-exchange-connector-common-problems.md
+            - name: 一般的なエラー
+              href: troubleshoot-exchange-connector-common-errors.md
+        - name: BitLocker ポリシーのトラブルシューティング
+          href: troubleshoot-bitlocker-policies.md
+        - name: Jamf Pro の統合に関するトラブルシューティング
+          href: troubleshoot-jamf.md
+- name: リファレンス
+  items:
+    - name: サード パーティの証明機関を追加するための API
+      href: scep-libraries-apis.md
+    - name: コンプライアンス ポリシーの設定
+      items:
+        - name: セキュリティ ベースライン
+          items:
+            - name: Windows 10 MDM のベースラインの設定
+              href: security-baseline-settings-mdm-all.md
+            - name: Microsoft Defender ATP のベースラインの設定
+              href: security-baseline-settings-defender-atp.md
+        - name: Windows Update の設定
+          href: windows-update-settings.md
+        - name: コンプライアンス ポリシー設定 - Android
+          href: compliance-policy-create-android.md
+        - name: コンプライアンス ポリシー設定 - Android Enterprise
+          href: compliance-policy-create-android-for-work.md
+        - name: コンプライアンス ポリシー設定 - iOS
+          href: compliance-policy-create-ios.md
+        - name: コンプライアンス ポリシー設定 - macOS
+          href: compliance-policy-create-mac-os.md
+        - name: コンプライアンス ポリシー設定 - Windows 10
+          href: compliance-policy-create-windows.md
+        - name: コンプライアンス ポリシー設定 - Windows 8.1
+          href: compliance-policy-create-windows-8-1.md
+        - name: コンプライアンス ポリシー設定 - Windows Phone 8.1
+          href: compliance-policy-create-windows-8-1.md
+    - name: エラー コードと説明
+      items:
+        - name: ソフトウェア更新プログラムのエラー
+          href: software-update-agent-error-codes.md
+- name: シナリオの実装ガイド
+  items:
+    - name: Exchange Online の保護
+      href: exchange-online-protect.md
+    - name: 無許可のアクセスの防止
+      href: data-outside-protect.md
+    - name: 管理されていないデバイスでのデータ漏洩の防止
+      href: data-leak-prevention.md
