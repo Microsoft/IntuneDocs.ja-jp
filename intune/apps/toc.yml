@@ -26,12 +26,13 @@
       displayName: app-we; without; without enrollment
     - name: MAM のよく寄せられる質問
       href: mam-faq.md
-- name: 操作方法ガイド
+- name: 攻略ガイド
   items:
     - name: アプリを追加する
       items:
         - name: アプリの追加に関する概要
           href: apps-add.md
+          displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
         - name: 保護されている Intune アプリ
           href: apps-supported-intune-apps.md
         - name: ストア アプリ
@@ -42,7 +43,7 @@
               href: store-apps-ios.md
             - name: Windows Phone 8.1 ストア アプリ
               href: store-apps-windows-phone-8-1.md
-            - name: Microsoft ストア アプリ
+            - name: Microsoft Store アプリ
               items:
                 - name: Windows アプリ
                   href: store-apps-windows.md
@@ -104,12 +105,24 @@
           href: app-configuration-policies-use-ios.md
         - name: Android マネージド デバイス
           href: app-configuration-policies-use-android.md
-        - name: 管理ホーム画面の構成
-          href: app-configuration-managed-home-screen-app.md
         - name: Managed apps
           href: app-configuration-policies-managed-app.md
         - name: iOS アプリ プロビジョニング プロファイルを使用する
           href: app-provisioning-profile-ios.md
+        - name: 特定のアプリの構成
+          items:
+            - name: 管理ホーム画面の構成
+              href: app-configuration-managed-home-screen-app.md
+            - name: ポータル サイトの構成
+              href: company-portal-app.md
+            - name: Managed Browser の構成
+              href: app-configuration-managed-browser.md
+            - name: Microsoft Launcher の構成
+              href: configure-microsoft-launcher.md
+            - name: Microsoft Edge の構成
+              href: manage-microsoft-edge.md
+            - name: Outlook の構成
+              href: app-configuration-policies-outlook.md
         - name: ボリューム購入アプリとブック
           items:
             - name: VPP アプリとブックの管理
@@ -121,16 +134,6 @@
               href: windows-store-for-business.md
             - name: iOS 電子ブック
               href: vpp-ebooks-ios.md
-        - name: ポータル サイトの構成
-          href: company-portal-app.md
-        - name: Managed Browser の構成
-          href: app-configuration-managed-browser.md
-        - name: Microsoft Edge の構成
-          href: manage-microsoft-edge.md
-        - name: Microsoft Launcher の構成
-          href: configure-microsoft-launcher.md
-        - name: Outlook の構成
-          href: app-configuration-policies-outlook.md
     - name: アプリの保護
       items:
         - name: 選択的にアプリをワイプする
@@ -177,7 +180,7 @@
           href: troubleshoot-mam.md
         - name: アプリの保護ログのレビュー
           href: app-protection-policy-settings-log.md
-- name: リファレンス
+- name: 参照先
   items:
     - name: Intune App SDK によるアプリの保護
       href: ../developer/app-sdk.md
