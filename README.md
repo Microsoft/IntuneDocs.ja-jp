@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 8d76ff182ea4402b6a4cd3242b15288d8bea16b9
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: f87848b43e040681085f3e89b063d5006f904464
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166471"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71720927"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft オープン ソース コード倫理規定
 
@@ -23,7 +23,7 @@ Microsoft では、コミュニティ (ユーザー、お客様、パートナ�
 * **ブラウザーを使用する**: 次の 2 つの選択肢があります。 
 
     **選択肢 1: docs.microsoft.com から直接編集する**  
-    1. [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](troubleshoot-policies-in-microsoft-intune.md) などのトピックに移動します。 
+    1. [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](intune/protect/troubleshoot-policies-in-microsoft-intune.md) などのトピックに移動します。 
     2. **[編集]** (右上) を選択します。 これは GitHub リポジトリのマークダウン ファイルを示しています。
     3. 鉛筆アイコンを選択します。 鉛筆アイコンをポイントすると、 **[このファイルの編集]** というツールヒントが表示されます。 
     4. 変更を加えてから、変更を**コミット**します。 

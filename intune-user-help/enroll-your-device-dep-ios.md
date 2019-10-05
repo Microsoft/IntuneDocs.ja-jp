@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4484dbc9a8348101c0f7409b009998baca32f8a4
-ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
+ms.openlocfilehash: bca7ff55653d12d352b4fb90163f4622a9e573ab
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71239422"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71721003"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>組織から提供された iOS デバイスを管理登録する
 
@@ -31,11 +31,11 @@ ms.locfileid: "71239422"
 
 職場または学校から支給される iOS デバイスは多くの場合、受け取る前に事前構成されています。 初めてデバイスの電源を入れてサインインすると、事前構成済みの設定が組織からデバイスに送信されます。 デバイスのセットアップが完了すると、職場または学校のリソースにアクセスできるようになります。  
 
-セットアップを始めるには、デバイスの電源を入れ、職場または学校の資格情報でサインインします。 以下では、セットアップ アシスタントを使用する手順と表示される画面について説明します。 
+セットアップを始めるには、デバイスの電源を入れ、職場または学校の資格情報でサインインします。 以下では、セットアップ アシスタントを使用する手順と表示される画面について説明します。
 
 ## <a name="what-is-apple-dep"></a>Apple DEP とは
 
-組織は、*Apple Device Enrollment Program* (DEP) を利用してデバイスを購入することがあります。 Apple DEP を利用することで、組織は iOS または macOS デバイスを大量に購入できます。 その後、組織は Intune などの適切なモバイル デバイス管理プロバイダーでデバイスを構成して管理できます。 Apple DEP についての情報がさらに必要な管理者は、「[Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios)」をご覧ください。  
+組織は、*Apple Device Enrollment Program* (DEP) を利用してデバイスを購入することがあります。 Apple DEP を利用することで、組織は iOS または macOS デバイスを大量に購入できます。 その後、組織は Intune などの適切なモバイル デバイス管理プロバイダーでデバイスを構成して管理できます。 Apple DEP についての情報がさらに必要な管理者は、「[Apple の Device Enrollment Program を使用して iOS デバイスを自動登録する](https://docs.microsoft.com/intune/enrollment/device-enrollment-program-enroll-ios.md)」をご覧ください。  
 
 ## <a name="set-up-your-ios-device"></a>iOS デバイスを設定する
 
@@ -51,7 +51,7 @@ ms.locfileid: "71239422"
 4. Wi-Fi に接続すると、 **[Configuration\(構成\)]** 画面が表示されます。 **[[Your Company] will automatically configure your device]\([会社] がデバイスを自動的に構成します\)** と表示されます。
 
    **Configuration allows [Your Company] to manage this device over the air\(構成により [会社] はデバイスを無線で管理できます。\)An administrator can help you set up email and network accounts, install and configure apps, and manage settings remotely.\(メール アカウントとネットワーク アカウントの設定、アプリのインストールと構成、設定のリモート管理については、管理者が支援します。\)An administrator may disable features, install and remove apps, monitor and restrict your Internet traffic and remotely erase this device.\(管理者は、機能の無効化、アプリのインストールと削除、インターネット トラフィックの監視と制限、このデバイスのリモート消去を行うことができます。\)**
- 
+
    **Configuration is provided by: [Your Company's] iOS Team [Address]\(構成の提供元: [会社の] iOS チーム [アドレス]\)**
 
 5. Apple ID でログインします。 ログインすると、ポータル サイト アプリをインストールし、会社が電子メールやアプリなどの自社のリソースにアクセスできるようにする、管理プロファイルをインストールすることができます。

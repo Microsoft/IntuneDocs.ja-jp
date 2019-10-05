@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0de0e676e72d46bde922fd97b651cc1a9268e45e
-ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
+ms.openlocfilehash: f2e2ecc79cd24a68c1a5642f64474f2d31217bd7
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71239774"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71721016"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>組織から提供された macOS デバイスを管理登録する
 
@@ -35,7 +35,7 @@ ms.locfileid: "71239774"
 
 ## <a name="what-is-apple-dep"></a>Apple DEP とは
 
-組織は、*Apple Device Enrollment Program* (DEP) を利用してデバイスを購入することがあります。 Apple DEP を利用することで、組織は iOS または macOS デバイスを大量に購入できます。 その後、組織は Intune などの適切なモバイル デバイス管理プロバイダーでデバイスを構成して管理できます。 Apple DEP についての情報がさらに必要な管理者は、「[Apple の Device Enrollment Program を使用して macOS デバイスを自動登録する](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos)」をご覧ください。  
+組織は、*Apple Device Enrollment Program* (DEP) を利用してデバイスを購入することがあります。 Apple DEP を利用することで、組織は iOS または macOS デバイスを大量に購入できます。 その後、組織は Intune などの適切なモバイル デバイス管理プロバイダーでデバイスを構成して管理できます。 Apple DEP についての情報がさらに必要な管理者は、「[Apple の Device Enrollment Program を使用して macOS デバイスを自動登録する](https://docs.microsoft.com/intune/enrollment/device-enrollment-program-enroll-macos.md)」をご覧ください。  
 
 ## <a name="get-your-device-managed"></a>デバイスを管理対象にする
 
@@ -63,7 +63,7 @@ macOS デバイスを管理対象に登録するには、次の手順のよう�
     * 使用条件に同意します
     * コンピューター アカウントを作成します
     * 高速セットアップを行います
-    * お使いの Mac を設定します  
+    * お使いの Mac を設定します
 
 ## <a name="get-the-company-portal-app"></a>Intune ポータル サイト アプリを取得する
 
