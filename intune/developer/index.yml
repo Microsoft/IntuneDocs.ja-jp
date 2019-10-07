@@ -1,0 +1,81 @@
+### YamlMime:Landing
+title: 開発者ガイド
+summary: LOB アプリを保護するための Intune アプリ SDK とアプリ ラッピング ツール、Intune の正常な動作を監視するための Intune データ ウェアハウスのレポートと API、Azure AD を使って Intune 機能にアクセスするための Microsoft Graph など、Intune の開発者向けリソースを使用する方法について説明します。
+metadata:
+  title: 開発者ガイド
+  description: LOB アプリを保護するための Intune アプリ SDK とアプリ ラッピング ツール、Intune の正常な動作を監視するための Intune データ ウェアハウスのレポートと API、Azure AD を使って Intune 機能にアクセスするための Microsoft Graph など、Intune の開発者向けリソースを使用する方法について説明します。
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: erikre
+  ms.author: erikre
+  ms.manager: dougeby
+  ms.date: 09/23/2019
+  ms.openlocfilehash: f7d48e1b5473d84743adee4a7ef7b6c83b960d19
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728875"
+landingContent:
+- title: Intune App SDK によるアプリの保護
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Microsoft Intune App SDK の概要
+      url: app-sdk.md
+  - linkListType: concept
+    links:
+    - text: Microsoft Intune アプリ SDK の概要
+      url: app-sdk-get-started.md
+    - text: アプリ保護のために基幹業務アプリを準備する
+      url: apps-prepare-mobile-application-management.md
+  - linkListType: how-to-guide
+    links:
+    - text: iOS 用 Intune アプリ SDK
+      url: app-sdk-ios.md
+    - text: アプリ保護ポリシーのために iOS アプリを準備する
+      url: app-wrapper-prepare-ios.md
+    - text: Android 用 Intune アプリ SDK
+      url: app-wrapper-prepare-android.md
+- title: Intune データ ウェアハウスを使用する
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: データ ウェアハウスの概要
+      url: reports-nav-create-intune-reports.md
+    - text: データ ウェアハウス API の変更ログ
+      url: reports-changelog.md
+    - text: Intune データ ウェアハウス API の概要
+      url: reports-nav-intune-data-warehouse.md
+    - text: Intune データ ウェアハウスのデータ モデルの概要
+      url: reports-ref-data-model.md
+  - linkListType: concept
+    links:
+    - text: Intune データ ウェアハウスのコレクション
+      url: intune-data-warehouse-collections.md
+  - linkListType: how-to-guide
+    links:
+    - text: Power BI でデータ ウェアハウスに接続する
+      url: reports-proc-get-a-link-powerbi.md
+    - text: Power BI で OData フィードから Intune レポートを作成する
+      url: reports-proc-create-with-odata.md
+    - text: REST クライアントを使用して Intune データ ウェアハウス API からデータを取得する
+      url: reports-proc-data-rest.md
+    - text: Intune データ ウェアハウス API エンドポイント
+      url: reports-api-url.md
+- title: Microsoft Graph で Intune API にアクセスする
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Intune で使用される Graph API と対応する Windows 10 CSP
+      url: graph-apis-used-by-intune-device-configuration-windows.md
+  - linkListType: how-to-guide
+    links:
+    - text: Azure AD を使用して Microsoft Graph 内の Intune API にアクセスする
+      url: intune-graph-apis.md
+  - linkListType: reference
+    links:
+    - text: Intune Graph API リファレンス
+      url: https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-beta

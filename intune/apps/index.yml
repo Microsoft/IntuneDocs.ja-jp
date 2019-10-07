@@ -1,0 +1,111 @@
+### YamlMime:Landing
+title: アプリを管理する
+summary: Microsoft Intune を使用すると、組織で使用されているクライアント アプリを管理できます。 さまざまなプラットフォームやユーザーにわたって、アプリの構成、追加、割り当て、保護、監視、更新、およびインベントリからの削除を実行できます。
+metadata:
+  title: アプリを管理する
+  description: アプリを管理して保護する
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: erikre
+  ms.author: erikre
+  ms.manager: dougeby
+  ms.date: 09/25/2019
+  ms.openlocfilehash: ba12c3a3253fd35bf803342214b73fc094abc3aa
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71729011"
+landingContent:
+- title: アプリの使用を開始する
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: アプリ管理の概要
+      url: app-management.md
+  - linkListType: quickstart
+    links:
+    - text: アプリを追加して割り当てる
+      url: quickstart-add-assign-app.md
+  - linkListType: concept
+    links:
+    - text: アプリのライフサイクル
+      url: app-lifecycle.md
+- title: アプリを追加する
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: アプリの追加に関する概要
+      url: apps-add.md
+    - text: 保護されている Intune アプリ
+      url: apps-supported-intune-apps.md
+  - linkListType: how-to-guide
+    links:
+    - text: ストア アプリ
+      url: store-apps-android.md
+    - text: 基幹業務アプリ
+      url: lob-apps-android.md
+    - text: Intune スタンドアロンでの Win32 アプリ管理
+      url: apps-win32-app-management.md
+    - text: Windows 10 デバイスでの PowerShell スクリプトの使用
+      url: intune-management-extension.md
+    - text: アプリをグループに割り当てる
+      url: apps-deploy.md
+- title: アプリを割り当てる
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: アプリをグループに割り当てる
+      url: apps-deploy.md
+    - text: アプリの追加と除外
+      url: apps-inc-exl-assignments.md
+    - text: Windows 10アプリデプロイ
+      url: apps-windows-10-app-deploy.md
+    - text: アプリを Government 環境にデプロイする
+      url: apps-deploy-gcc-dod.md
+- title: アプリの構成
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 選択的にアプリをワイプする
+      url: apps-selective-wipe.md
+    - text: iOS マネージド デバイス
+      url: app-configuration-policies-use-ios.md
+    - text: マネージド Android Enterprise デバイス
+      url: app-configuration-policies-use-android.md
+    - text: デバイス登録なしのマネージド アプリ
+      url: app-configuration-policies-managed-app.md
+    - text: Managed Browser の構成
+      url: app-configuration-managed-browser.md
+    - text: VPP アプリとブックの管理
+      url: vpp-apps.md
+- title: アプリの保護
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: アプリ保護ポリシーの概要
+      url: app-protection-policy.md
+  - linkListType: how-to-guide
+    links:
+    - text: アプリ保護ポリシーを作成して割り当てる
+      url: app-protection-policies.md
+    - text: アプリ保護ポリシーを検証する
+      url: app-protection-policies-validate.md
+    - text: アプリ保護のユーザーの状態を監視する
+      url: app-protection-policies-monitor.md
+    - text: WIP アプリ保護ポリシーの作成と割り当て
+      url: windows-information-protection-policy-create.md
+    - text: iOS アプリ間のデータ転送を管理する
+      url: data-transfer-between-apps-manage-ios.md
+- title: アプリのトラブルシューティング
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: アプリのインストールに関する問題のトラブルシューティング
+      url: troubleshoot-app-install.md
+    - text: モバイル アプリケーション管理に関するトラブルシューティング
+      url: troubleshoot-mam.md
+    - text: アプリの保護ログのレビュー
+      url: app-protection-policy-settings-log.md

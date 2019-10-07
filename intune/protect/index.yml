@@ -1,0 +1,137 @@
+### YamlMime:Landing
+title: Intune を使用してデータとデバイスを保護する
+summary: Intune を使うと、セキュリティ ベースラインや Azure AD の条件付きアクセス、Mobile Threat Defense のパートナーなどのツールを使って、デバイスと会社のデータを保護できます。
+metadata:
+  title: Intune を使用してデータとデバイスを保護する
+  description: Intune を使うと、セキュリティ ベースラインや Azure AD の条件付きアクセス、Mobile Threat Defense のパートナーなどのツールを使って、デバイスと会社のデータを保護できます。
+  services: service
+  ms.service: microsoft-intune
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: collection
+  author: brenduns
+  ms.author: brenduns
+  ms.date: 08/20/2019
+  ms.openlocfilehash: 073177f7cd7426a86a110fc1cee7812b37fa083f
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728705"
+landingContent:
+- title: リソースへのアクセスを許可するデバイスのルールを設定する
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: コンプライアンスの概要
+      url: ../device-compliance-get-started.md
+  - linkListType: quickstart
+    links:
+    - text: デバイス コンプライアンス ポリシーの作成
+      url: ../quickstart-set-password-length-android.md
+  - linkListType: tutorial
+    links:
+    - text: マネージド デバイス上で Exchange Online の電子メールを保護する
+      url: ../tutorial-protect-email-on-enrolled-devices.md
+  - linkListType: how-to-guide
+    links:
+    - text: ポリシーの作成
+      url: ../create-compliance-policy.md
+    - text: 場所ベースのコンプライアンス
+      url: ../use-network-locations.md
+    - text: コンプライアンス非対応に対するアクション
+      url: ../actions-for-noncompliance.md
+- title: プライバシーおよび個人データの保護
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: プライバシーおよび個人データ
+      url: ../privacy-personal-data.md
+  - linkListType: concept
+    links:
+    - text: データ コレクション
+      url: ../privacy-data-collect.md
+    - text: データ ストレージと処理
+      url: ../privacy-data-store-process.md
+    - text: データのセキュリティと共有
+      url: ../privacy-data-secure-share.md
+  - linkListType: how-to-guide
+    links:
+    - text: Intune によって共有されるデータ
+      url: ../privacy-data-secure-share.md
+    - text: 監査、エクスポート、削除
+      url: ../privacy-data-audit-export-delete.md
+    - text: 個人データの表示と修正
+      url: ../privacy-data-view-correct.md
+- title: デバイスとネットワークの保護
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: デバイスの保護
+      url: ../device-protect.md
+    - text: Mobile Threat Defense
+      url: ../mobile-threat-defense.md
+  - linkListType: how-to-guide
+    links:
+    - text: Microsoft Defender ATP
+      url: ../advanced-threat-protection.md
+    - text: Mobile Threat Defense パートナー
+      url: ../mtd-apps-ios-app-configuration-policy-add-assign.md
+    - text: セキュリティ ベースライン
+      url: ../security-baselines.md
+    - text: Endpoint Protection
+      url: ../endpoint-protection-configure.md
+    - text: ネットワーク アクセス制御
+      url: ../network-access-control-integrate.md
+    - text: デバイスの暗号化
+      url: ../encrypt-devices.md
+- title: セキュリティで保護された認証方法を使う
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 証明書と Intune
+      url: ../certificates-configure.md
+  - linkListType: how-to-guide
+    links:
+    - text: SCEP 証明書プロファイル
+      url: ../certificates-scep-configure.md
+    - text: PKCS 証明書プロファイル
+      url: ../certficates-pfx-configure.md
+    - text: インポートされた PFX 証明書
+      url: ../certificates-imported-pfx-configure.md
+    - text: Windows Hello for Business
+      url: ../windows-hello.md
+- title: ソフトウェア更新プログラムの管理
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: iOS
+      url: ../software-updates-ios.md
+    - text: Windows
+      url: ../windows-update-for-business-configure.md
+- title: 条件付きアクセスの使用
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 条件付きアクセスの概要
+      url: ../conditional-access.md
+    - text: Exchange Online の保護
+      url: ../exchange-online-protect.md
+  - linkListType: tutorial
+    links:
+    - text: マネージド デバイスでの電子メールの保護
+      url: ../tutorial-protect-email-on-enrolled-devices.md
+    - text: 管理されていないデバイスでの電子メールの保護
+      url: ../tutorial-protect-email-on-unmanaged-devices.md
+  - linkListType: concept
+    links:
+    - text: ADAL と Intune
+      url: ../app-modern-authentication-block.md
+  - linkListType: how-to-guide
+    links:
+    - text: 条件付きアクセス ポリシーの作成と割り当て
+      url: ../conditional-access-exchange-create.md
+    - text: 条件付きアクセスの一般的な使用方法
+      url: ../conditional-access-intune-common-ways-use.md
+    - text: macOS 用 Jamf Pro
+      url: ../conditional-access-integrate-jamf.md

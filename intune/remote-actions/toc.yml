@@ -1,0 +1,67 @@
+- name: リモート操作
+  href: index.yml
+- name: 概要
+  expanded: true
+  items:
+    - name: デバイス管理の概要
+      href: device-management.md
+- name: 操作方法ガイド
+  items:
+    - name: ロックとパスワード
+      items:
+        - name: デバイスのロック
+          href: device-remote-lock.md
+        - name: パスコードのリセット
+          href: device-passcode-reset.md
+        - name: Windows 10 の PIN のリセット
+          href: device-windows-pin-reset.md
+    - name: 削除と再起動
+      items:
+        - name: デバイスの削除
+          href: devices-wipe.md
+        - name: Windows の新たに開始機能の管理
+          href: device-fresh-start.md
+        - name: デバイスの再起動
+          href: device-restart.md
+    - name: Apple デバイスのアクション
+      items:
+        - name: 紛失した iOS デバイスを探す
+          href: device-locate.md
+        - name: iOS 紛失モードの有効化
+          href: device-lost-mode.md
+        - name: iOS の監視モードを有効にする
+          href: device-supervised-mode.md
+        - name: macOS デバイスのデータを消去する
+          href: device-erase.md
+        - name: アクティベーション ロックのバイパス
+          href: device-activation-lock-bypass.md
+    - name: ユーザー アクション
+      items:
+        - name: 現在のユーザーをサインアウトする
+          href: device-logout-user.md
+        - name: ユーザーの削除
+          href: device-remove-user.md
+        - name: プライマリ ユーザーを見つける
+          href: find-primary-user.md
+    - name: その他の操作
+      items:
+        - name: デバイス名の変更
+          href: device-rename.md
+        - name: 通知を送信する
+          href: custom-notifications.md
+        - name: モバイル デバイスのリモート制御
+          href: teamviewer-support.md
+        - name: デバイスの同期
+          href: device-sync.md
+        - name: デバイス インベントリの確認
+          href: device-inventory.md
+    - name: トラブルシューティング
+      items:
+        - name: デバイス アクションに関するトラブルシューティング
+          href: troubleshoot-device-actions.md
+- name: リソース
+  items:
+    - name: シナリオの実装ガイド
+      items:
+        - name: ヘルプ デスクのコストの削減
+          href: password-reset.md

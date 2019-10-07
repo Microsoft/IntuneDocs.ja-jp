@@ -1,0 +1,150 @@
+### YamlMime:Landing
+title: デバイス設定を構成する
+summary: Microsoft Intune には、組織内のさまざまなデバイスで有効または無効にできる設定と機能が含まれています。 これらの設定と機能は "構成プロファイル" に追加されます。Intune を使って、このプロファイルをデバイスに適用する (または "割り当てる") ことができます。
+metadata:
+  title: デバイス設定を構成する
+  description: Microsoft Intune には、組織内のさまざまなデバイスで有効または無効にできる設定と機能が含まれています。 これらの設定と機能は "構成プロファイル" に追加されます。Intune を使って、このプロファイルをデバイスに適用する (または "割り当てる") ことができます。
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: dougeby
+  ms.author: dougeby
+  ms.date: 09/16/2019
+  ms.openlocfilehash: 38324e042e1d3b4bcfc3f16e05520118374bb5ff
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728943"
+landingContent:
+- title: デバイスに機能と設定を適用する
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: デバイス構成の概要
+      url: device-profiles.md
+  - linkListType: quickstart
+    links:
+    - text: iOS 用の電子メール デバイス プロファイルを作成する
+      url: quickstart-email-profile.md
+  - linkListType: how-to-guide
+    links:
+    - text: プロファイルを作成する
+      url: device-profile-create.md
+    - text: プロファイルの割り当て
+      url: device-profile-assign.md
+    - text: プロファイルの監視
+      url: device-profile-monitor.md
+- title: Windows 10 以降の設定
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Windows 10 テンプレートを使ったグループ ポリシー設定の構成
+      url: administrative-templates-windows.md
+    - text: デバイス制限設定の構成
+      url: device-restrictions-configure.md
+    - text: 配信の最適化の設定
+      url: delivery-optimization-windows.md
+    - text: デバイスにメール設定を追加する
+      url: email-settings-configure.md
+    - text: 専用キオスクとして実行するための設定
+      url: kiosk-settings.md
+    - text: VPN サーバーに接続するための VPN プロファイルの作成
+      url: vpn-settings-configure.md
+    - text: デバイスに Wi-Fi 設定を追加して使用する
+      url: wi-fi-settings-configure.md
+- title: Windows Holographic for Business の設定
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Windows 10 エディションをアップグレードするか、S モードから切り替える
+      url: edition-upgrade-configure-windows-10.md
+    - text: 専用キオスクとして実行するための設定
+      url: kiosk-settings.md
+    - text: VPN サーバーに接続するための VPN プロファイルの作成
+      url: vpn-settings-configure.md
+    - text: デバイスに Wi-Fi 設定を追加して使用する
+      url: wi-fi-settings-configure.md
+    - text: 共有 PC またはマルチユーザー デバイス上のアクセス、アカウント、電源機能を制御する
+      url: shared-user-device-settings.md
+- title: iOS の設定
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: iOS デバイス機能設定の追加
+      url: device-features-configure.md
+    - text: デバイス制限設定の構成
+      url: device-restrictions-configure.md
+    - text: デバイスにメール設定を追加する
+      url: email-settings-configure.md
+    - text: VPN サーバーに接続するための VPN プロファイルの作成
+      url: vpn-settings-configure.md
+    - text: iOS デバイス用にアプリごとの VPN プロファイルを作成する
+      url: vpn-setting-configure-per-app.md
+    - text: デバイスに Wi-Fi 設定を追加して使用する
+      url: wi-fi-settings-configure.md
+- title: macOS の設定
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: iOS デバイス機能設定の追加
+      url: device-features-configure.md
+    - text: デバイス制限設定の構成
+      url: device-restrictions-configure.md
+    - text: VPN サーバーに接続するための VPN プロファイルの作成
+      url: vpn-settings-configure.md
+    - text: デバイスに Wi-Fi 設定を追加して使用する
+      url: wi-fi-settings-configure.md
+    - text: macOS カーネル拡張機能の追加
+      url: kernel-extensions-overview-macos.md
+- title: Android の設定
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: デバイス制限設定の構成
+      url: device-restrictions-configure.md
+    - text: デバイスにメール設定を追加する
+      url: email-settings-configure.md
+    - text: VPN サーバーに接続するための VPN プロファイルの作成
+      url: vpn-settings-configure.md
+    - text: デバイスに Wi-Fi 設定を追加して使用する
+      url: wi-fi-settings-configure.md
+    - text: 事前共有キーを使用した Wi-Fi プロファイルの作成
+      url: wi-fi-profile-shared-key.md
+    - text: Zebra モビリティ拡張を使った Zebra デバイスの管理
+      url: android-zebra-mx-overview.md
+    - text: OEMConfig を使った Android Enterprise デバイスの管理
+      url: android-oem-configuration-overview.md
+- title: Android Enterprise の設定
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: デバイス制限設定の構成
+      url: device-restrictions-configure.md
+    - text: デバイスにメール設定を追加する
+      url: email-settings-configure.md
+    - text: VPN サーバーに接続するための VPN プロファイルの作成
+      url: vpn-settings-configure.md
+    - text: デバイスに Wi-Fi 設定を追加して使用する
+      url: wi-fi-settings-configure.md
+- title: 設定の一覧
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Android
+      url: device-restrictions-android.md
+    - text: Android エンタープライズ
+      url: device-restrictions-android-for-work.md
+    - text: iOS
+      url: ios-device-features-settings.md
+    - text: macOS
+      url: macos-device-features-settings.md
+    - text: Windows 10 以降
+      url: delivery-optimization-settings.md
+    - text: Windows Holographic for Business
+      url: device-restrictions-windows-holographic.md
+    - text: Windows 8.1
+      url: device-restrictions-windows-8-1.md
+    - text: Windows Phone 8.1
+      url: device-restrictions-windows-phone-8-1.md

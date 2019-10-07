@@ -1,0 +1,83 @@
+### YamlMime:Landing
+title: Intune を使ったデバイス アクションのリモート実行
+summary: Intune を使うと、管理者はデバイス アクションをリモートで実行できます。 Intune ポータルからこれらのリモート アクションを使用することで、デバイスの再起動、パスコードのリセット、紛失したデバイスや盗難にあったデバイスの検索などを行えます。
+metadata:
+  title: Intune を使ったデバイス アクションのリモート実行
+  description: Intune を使うと、リモートでアクションを実行できます。
+  services: service
+  ms.service: microsoft-intune
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: collection
+  author: ErikjeMS
+  ms.author: erikje
+  ms.date: 09/13/2019
+  ms.openlocfilehash: 37f0a4f8017848f4e1672ae7e3e1979239551af3
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71729147"
+landingContent:
+- title: デバイス アクションのリモート実行
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: デバイス管理の概要
+      url: device-management.md
+  - linkListType: how-to-guide
+    links:
+    - text: デバイス名の変更
+      url: device-rename.md
+    - text: デバイスの詳細を表示する
+      url: device-inventory.md
+    - text: デバイスにカスタム通知を送信する
+      url: custom-notifications.md
+    - text: デバイスの同期
+      url: device-sync.md
+    - text: TeamViewer を使ってデバイスをリモート管理する
+      url: teamviewer-support.md
+- title: 削除と再起動
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 削除、ワイプ、インベントリから削除、登録解除
+      url: devices-wipe.md
+    - text: Windows の新たに開始
+      url: device-fresh-start.md
+    - text: デバイスの再起動
+      url: device-restart.md
+- title: ユーザー アクション
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: ユーザーのサインアウト
+      url: device-logout-user.md
+    - text: プライマリ ユーザーを見つける
+      url: find-primary-user.md
+    - text: ユーザーの削除
+      url: device-remove-user.md
+- title: ロックとパスワード
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: デバイスのロック
+      url: device-remote-lock.md
+    - text: デバイスのパスコードのリセット
+      url: device-passcode-reset.md
+    - text: Windows 10 の PIN のリセット
+      url: device-lost-mode.md
+- title: Apple デバイスのアクション
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: iOS デバイスの検索
+      url: device-locate.md
+    - text: iOS の監視モードを有効にする
+      url: device-supervised-mode.md
+    - text: iOS の紛失モードを有効にする
+      url: device-lost-mode.md
+    - text: macOS デバイスからデータを消去する
+      url: device-erase.md
+    - text: アクティベーション ロックのバイパス
+      url: device-activation-lock-bypass.md

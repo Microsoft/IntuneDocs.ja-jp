@@ -1,0 +1,85 @@
+### YamlMime:Landing
+title: Microsoft Intune の基本
+summary: Microsoft Intune は、会社のデータを保護しながら社員の生産性を高めることができる、クラウドベースのサービスです。 計画と移行について説明し、Intune の基本を設定します。
+metadata:
+  title: Intune の基本
+  description: 計画と移行について説明し、Intune の基本を設定します。
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: dougeby
+  ms.author: erikre
+  ms.manager: dougeby
+  ms.date: 09/29/2019
+  ms.openlocfilehash: c0d75116a31c668971950d144645009a9564654c
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728739"
+landingContent:
+- title: Microsoft Intune について
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Intune とは何か
+      url: what-is-intune.md
+    - text: 新機能
+      url: whats-new.md
+    - text: 開発中の機能
+      url: in-development.md
+  - linkListType: tutorial
+    links:
+    - text: Azure portal での Intune のチュートリアル
+      url: tutorial-walkthrough-intune-portal.md
+  - linkListType: concept
+    links:
+    - text: デバイス管理とは
+      url: what-is-device-management.md
+    - text: 高レベル アーキテクチャ
+      url: high-level-architecture.md
+    - text: Intune の一般的な使用方法
+      url: common-scenarios.md
+    - text: EMS での BYOD に関する技術の決定事項
+      url: byod-technology-decisions.md
+- title: Intune の導入
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 通信手段の計画
+      url: migration-guide-communication-plan.md
+    - text: 計画ガイド
+      url: planning-guide.md
+    - text: 移行ガイド
+      url: migration-guide.md
+    - text: Intune 導入キット
+      url: https://www.microsoft.com/download/details.aspx?id=58348
+- title: Intune をセットアップする
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Intune を無料で試す
+      url: free-trial-sign-up.md
+  - linkListType: concept
+    links:
+    - text: サポートされている構成
+      url: supported-devices-browsers.md
+    - text: ネットワーク構成の要件
+      url: network-bandwidth-use.md
+    - text: Intune ネットワーク エンドポイント
+      url: intune-endpoints.md
+    - text: ロールベースのアクセス制御
+      url: role-based-access-control.md
+    - text: Intune のライセンス
+      url: licenses.md
+  - linkListType: how-to-guide
+    links:
+    - text: Intune をセットアップする手順
+      url: setup-steps.md
+    - text: ユーザーの追加
+      url: users-add.md
+    - text: グループの追加
+      url: groups-add.md
+    - text: スコープのタグを使用する
+      url: scope-tags.md
