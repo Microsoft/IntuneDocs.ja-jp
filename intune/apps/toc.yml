@@ -127,6 +127,8 @@
               href: manage-microsoft-edge.md
             - name: Outlook の構成
               href: app-configuration-policies-outlook.md
+            - name: Android 用の Google Chrome の構成
+              href: apps-configure-chrome-android.md
         - name: ボリューム購入アプリとブック
           items:
             - name: VPP アプリとブックの管理

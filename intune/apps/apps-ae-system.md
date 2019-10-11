@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ffc99b34016eba6511f63d1df2184abc3cae858
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c07ce82bbc056e1d76abeb5d31bf57e0973fad6e
+ms.sourcegitcommit: bdf948be824cf5390d5166a277f389f3785c81f9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725167"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71960891"
 ---
 # <a name="add-android-enterprise-system-apps-to-microsoft-intune"></a>Microsoft Intune に Android Enterprise システム アプリを追加する
 
-アプリをデバイスまたはユーザーのグループに割り当てる前に、最初にアプリを Microsoft Intune に追加する必要があります。 システム アプリは Android Enterprise デバイスでサポートされています。 [Android Enterprise 専用デバイス](../enrollment/android-kiosk-enroll.md)または[フル マネージド デバイス](../enrollment/android-fully-managed-enroll.md)に対して、システム アプリを有効化できます。
+アプリをデバイスまたはユーザーのグループに割り当てる前に、最初にアプリを Microsoft Intune に追加する必要があります。 システム アプリは Android Enterprise デバイスでサポートされています。 システム アプリは [Android Enterprise 専用デバイス](../enrollment/android-kiosk-enroll.md)または[フル マネージド デバイス](../enrollment/android-fully-managed-enroll.md)に対して有効にすることができます。
 
 ## <a name="add-the-app"></a>アプリを追加する
 
@@ -42,9 +42,13 @@ Azure portal から Intune に Android Enterprise システム アプリを追�
 5. **[OK]** を選択します。
 6. **[追加]** を選択します。
 
+> [!NOTE]
+> デバイスの OEM と連携して、有効または無効にするアプリのパッケージ名を検索する必要があります。
+
 作成したアプリはアプリの一覧に表示され、選択したグループに割り当てることができるようになります。 
 
 Android Enterprise システム アプリでは、既にプラットフォームに含まれているアプリを有効または無効にします。 アプリを有効にするには、システム アプリを **[必須]** に割り当てます。 アプリを無効にするには、システム アプリを **[アンインストール]** として割り当てます。 システム アプリを利用可能として、ユーザーに割り当てることはできません。
+
 
 ## <a name="next-steps"></a>次の手順
 

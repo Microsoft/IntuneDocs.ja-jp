@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 10/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d9b579e944827e511700073f0b3348b5ef20adc
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c2b20030bd6c7e1dc9108002cc43f105cb8c6784
+ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724699"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72036463"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Windows の基幹業務アプリを Microsoft Intune に追加する
 
@@ -30,7 +30,10 @@ ms.locfileid: "71724699"
 
 基幹業務 (LOB) アプリとは、アプリのインストール ファイルから追加するアプリのことです。 通常、この種類のアプリは社内で作成されます。 次に、Microsoft Intune に Windows の LOB アプリを追加するのに役立つ手順を示します。
 
-## <a name="step-1-specify-the-software-setup-file"></a>手順 1.ソフトウェアのセットアップ ファイルを指定する
+> [!IMPORTANT]
+> *.msi* の拡張子を持ったインストール ファイルを使って Win32 アプリを展開する場合は、[Intune 管理拡張機能](../apps/intune-management-extension.md)の使用を検討してください。 AutoPilot 登録中に Win32 アプリと基幹業務アプリのインストールを混在させると、アプリのインストールが失敗する場合があります。  
+
+## <a name="step-1-specify-the-software-setup-file"></a>手順 1:ソフトウェアのセットアップ ファイルを指定する
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 3. **[Intune]** ウィンドウで、 **[クライアント アプリ]** を選択します。
@@ -38,7 +41,7 @@ ms.locfileid: "71724699"
 5. アプリの一覧の上にある **[追加]** を選択します。
 6. **[アプリの追加]** ウィンドウで、 **[基幹業務アプリ]** を選択します。
 
-## <a name="step-2-configure-the-app-package-file"></a>手順 2: アプリのパッケージ ファイルを構成する
+## <a name="step-2-configure-the-app-package-file"></a>手順 2:アプリのパッケージ ファイルを構成する
 
 1. **[アプリの追加]** ウィンドウで、 **[アプリのパッケージ ファイル]** を選択します。
 2. **[アプリのパッケージ ファイル]** ウィンドウで、参照ボタンを選択します。 次に、拡張子が **.msi**、 **.appx**、または **.appxbundle** の Windows インストール ファイルを選択します。
@@ -49,7 +52,7 @@ ms.locfileid: "71724699"
 1. 完了したら **[OK]** を選択します。
 
 
-## <a name="step-3-configure-app-information"></a>手順 3: アプリ情報の構成
+## <a name="step-3-configure-app-information"></a>手順 3:アプリ情報の構成
 
 1. **[アプリの追加]** ウィンドウで、 **[アプリ情報]** を選択します。
 2. **[アプリ情報]** ウィンドウで、以下の情報を構成します。 このウィンドウの一部の値は、自動的に入力される場合があります。

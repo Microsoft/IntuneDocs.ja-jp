@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a345cdf2162db6b55fe5698488036fad0677a6e1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e3fb9af260b8fddc78b644b8ede056c90bac24d0
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723269"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999358"
 ---
 # <a name="what-is-device-enrollment"></a>デバイス登録とは
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -37,46 +37,46 @@ Intune では、従業員のデバイスやアプリ、従業員が会社のデ�
 | **方法** | **リセットが必要** | [**ユーザー アフィニティ**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) | **ロック済み** | **詳細** |
 |:---:|:---:|:---:|:---:|:---:|
 | | 登録時にデバイスがワイプされます。 | 各デバイスをユーザーに関連付ける。| 「はい」の場合、ユーザーはデバイスの登録を解除できません。 | |
-|**[BYOD](#bring-your-own-device)** | [いいえ]| はい | [いいえ] | [詳細情報](apple-mdm-push-certificate-get.md)|
-|**[DEM](#device-enrollment-manager)**| [いいえ] |[いいえ] |[いいえ] | [詳細情報](device-enrollment-program-enroll-ios.md)|
-|**[DEP](#apple-device-enrollment-program)**| はい | 省略可能 | 省略可能|[詳細情報](device-enrollment-program-enroll-ios.md)|
-|**[USB-SA](#usb-sa)**| はい | 省略可能 | [いいえ]| [詳細情報](apple-configurator-enroll-ios.md)|
-|**[USB-Direct](#usb-direct)**| [いいえ] | [いいえ] | [いいえ]|[詳細情報](apple-configurator-enroll-ios.md)|
+|**[BYOD](#bring-your-own-device)** | いいえ| はい | いいえ | [詳細情報](apple-mdm-push-certificate-get.md)|
+|**[DEM](#device-enrollment-manager)**| いいえ |いいえ |いいえ | [詳細情報](device-enrollment-program-enroll-ios.md)|
+|**[DEP](#apple-device-enrollment-program)**| はい | オプション | オプション|[詳細情報](device-enrollment-program-enroll-ios.md)|
+|**[USB-SA](#usb-sa)**| はい | オプション | いいえ| [詳細情報](apple-configurator-enroll-ios.md)|
+|**[USB-Direct](#usb-direct)**| いいえ | いいえ | いいえ|[詳細情報](apple-configurator-enroll-ios.md)|
 
 ## <a name="macos-enrollment-methods"></a>macOS の登録方法
 | **方法** |  **リセットが必要** |  **ユーザー アフィニティ** | **ロック済み** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#bring-your-own-device)** | [いいえ]| はい | [いいえ] | [詳細情報](macos-enroll.md)|
-|**[DEM](#device-enrollment-manager)**| [いいえ] |[いいえ] |[いいえ]  | [詳細情報](device-enrollment-manager-enroll.md)|
-|**[DEP](#apple-device-enrollment-program)**| はい | 省略可能 | 省略可能|[詳細情報](device-enrollment-program-enroll-macos.md)|
+|**[BYOD](#bring-your-own-device)** | いいえ| はい | いいえ | [詳細情報](macos-enroll.md)|
+|**[DEM](#device-enrollment-manager)**| いいえ |いいえ |いいえ  | [詳細情報](device-enrollment-manager-enroll.md)|
+|**[DEP](#apple-device-enrollment-program)**| はい | オプション | オプション|[詳細情報](device-enrollment-program-enroll-macos.md)|
 
 ## <a name="windows-enrollment-methods"></a>Windows の登録方法
 
 | **方法** | **リセットが必要** | **ユーザー アフィニティ** | **ロック済み** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#bring-your-own-device)** | [いいえ] | はい | [いいえ] | [詳細情報](windows-enroll.md)|
-|**[DEM](#device-enrollment-manager)**| [いいえ] |[いいえ] |[いいえ] |[詳細情報](device-enrollment-manager-enroll.md)|
-|**自動登録** | [いいえ] |はい |[いいえ] | [詳細情報](windows-enroll.md#enable-windows-10-automatic-enrollment)|
-|**Autopilot** |はい |はい |[いいえ] | [詳細情報](enrollment-autopilot.md)
-|**一括登録** |[いいえ] |[いいえ] |[いいえ] | [詳細情報](windows-bulk-enroll.md) |
-|**共同管理** |[いいえ] |はい |[いいえ] | [詳細情報](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
-|**GPO** |[いいえ] |はい |[いいえ] | [詳細情報](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)
+|**[BYOD](#bring-your-own-device)** | いいえ | はい | いいえ | [詳細情報](windows-enroll.md)|
+|**[DEM](#device-enrollment-manager)**| いいえ |いいえ |いいえ |[詳細情報](device-enrollment-manager-enroll.md)|
+|**自動登録** | いいえ |はい |いいえ | [詳細情報](windows-enroll.md#enable-windows-10-automatic-enrollment)|
+|**Autopilot** |はい |はい |いいえ | [詳細情報](enrollment-autopilot.md)
+|**一括登録** |いいえ |いいえ |いいえ | [詳細情報](windows-bulk-enroll.md) |
+|**共同管理** |いいえ |はい |いいえ | [詳細情報](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
+|**GPO** |いいえ |はい |いいえ | [詳細情報](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)
 
 ## <a name="android-enrollment-methods"></a>Android の登録方法
 
 | **個人用** | **登録方法** | **リセットが必要** | **ユーザー アフィニティ** | **ロック済み** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**Android のデバイス管理**|**ポータル サイトからユーザーが開始** | [いいえ] | はい | [いいえ] | [詳細情報](https://docs.microsoft.com/intune-user-help/enroll-device-android-company-portal)|
-|**Android エンタープライズの仕事用プロファイル**|**ポータル サイトからユーザーが開始**| [いいえ] | はい | [いいえ] | [詳細情報](android-work-profile-enroll.md)|
+|**Android のデバイス管理**|**ポータル サイトからユーザーが開始** | いいえ | はい | いいえ | [詳細情報](https://docs.microsoft.com/intune-user-help/enroll-device-android-company-portal)|
+|**Android エンタープライズの仕事用プロファイル**|**ポータル サイトからユーザーが開始**| いいえ | はい | いいえ | [詳細情報](android-work-profile-enroll.md)|
 
 
 | **企業** | **登録方法** | **リセットが必要** | **ユーザー アフィニティ** | **ロック済み** | **詳細**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**Android のデバイス管理**|**ポータル サイトから [DEM](#device-enrollment-manager) が開始**| [いいえ] | [いいえ] | [いいえ] |[詳細情報](device-enrollment-manager-enroll.md)|
-|**Android のデバイス管理**|**(事前に宣言されている IMEI または SN) ポータル サイトからユーザーが開始**| [いいえ] | はい | [いいえ] | [詳細情報](./../corporate-identifiers-add.md)|
-|**Zebra モビリティ拡張が装備された Android デバイス管理**|**ポータル サイトからユーザーまたは[DEM](#device-enrollment-manager) が開始**| [いいえ] | ユーザーが開始した場合は [はい]、[DEM](#device-enrollment-manager) が開始した場合は [いいえ] | [いいえ] | [詳細情報](../configuration/android-zebra-mx-overview.md)|
-|**Android Enterprise 専用**|**NFC、トークン、QR コード、ゼロ タッチ**| はい | [いいえ] | ポリシーで構成可能 | [詳細情報](android-kiosk-enroll.md)|
-|**Android Enterprise のフル マネージド (プレビュー)**|**NFC、トークン、QR コード、ゼロ タッチ**| はい | はい | ポリシーで構成可能 | [詳細情報](android-dedicated-devices-fully-managed-enroll.md)|
+|**Android のデバイス管理**|**ポータル サイトから [DEM](#device-enrollment-manager) が開始**| いいえ | いいえ | いいえ |[詳細情報](device-enrollment-manager-enroll.md)|
+|**Android のデバイス管理**|**(事前に宣言されている IMEI または SN) ポータル サイトからユーザーが開始**| いいえ | はい | いいえ | [詳細情報](./../corporate-identifiers-add.md)|
+|**Zebra モビリティ拡張が装備された Android デバイス管理**|**ポータル サイトからユーザーまたは[DEM](#device-enrollment-manager) が開始**| いいえ | ユーザーが開始した場合は [はい]、[DEM](#device-enrollment-manager) が開始した場合は [いいえ] | いいえ | [詳細情報](../configuration/android-zebra-mx-overview.md)|
+|**Android Enterprise 専用**|**NFC、トークン、QR コード、ゼロ タッチ**| はい | いいえ | ポリシーで構成可能 | [詳細情報](android-kiosk-enroll.md)|
+|**Android Enterprise フル マネージド**|**NFC、トークン、QR コード、ゼロ タッチ**| はい | はい | ポリシーで構成可能 | [詳細情報](android-dedicated-devices-fully-managed-enroll.md)|
 
 
 ## <a name="bring-your-own-device"></a>Bring Your Own Device
