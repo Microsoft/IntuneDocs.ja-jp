@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80b9091b723e78631a13c9358687ae77c36b8d47
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c4f3424c0d9712affbbf8ba3929e825b62ce5864
+ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722450"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71940311"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Intune で iOS デバイスを登録する
 
-Intune では、iPad および iPhone のモバイル デバイス管理 (MDM) が有効になり、会社の電子メールおよびアプリへのアクセス権がユーザーに付与されます。
+Intune では、iPad および iPhone のモバイル デバイス管理 (MDM) が有効になり、会社のメール、データ、およびアプリへのセキュリティで保護されたアクセス権がユーザーに付与されます。
 
-Intune 管理者として、iOS デバイスの登録を有効にすることができます。 "Bring Your Own Device" (BYOD) の登録と呼ばれる、個人所有のデバイスをユーザーが登録することを許可できます。 会社所有デバイスの登録を有効にすることもできます。
+Intune 管理者の場合、会社のリソースにアクセスする iOS および iPadOS デバイスの登録を設定することができます。 "Bring Your Own Device" (BYOD) の登録と呼ばれる、個人所有のデバイスをユーザーが登録することを許可できます。 会社所有のデバイスの登録を設定することもできます。
 
 ## <a name="prerequisites-for-ios-enrollment"></a>iOS の登録の前提条件
 
@@ -38,9 +38,14 @@ iOS デバイスを有効にする前に、次の手順を完了する必要が�
 - [Intune のセットアップ](../fundamentals/setup-steps.md) - この手順で、Intune インフラストラクチャをセットアップします。 特に、デバイスの登録には [MDM 機関を設定する](../fundamentals/mdm-authority-set.md)必要があります。
 - [Apple MDM プッシュ通知証明書の取得](apple-mdm-push-certificate-get.md) - Apple では、iOS および macOS デバイスの管理を有効にするために証明書が必要です。
 
-## <a name="user-owned-ios-devices-byod"></a>ユーザー所有の iOS デバイス (BYOD)
+## <a name="user-owned-ios-and-ipados-devices-byod"></a>ユーザー所有の iOS および iPadOS デバイス (BYOD)
 
-Intune 管理のために、ユーザーに個人用デバイスを登録させることができます。これは "Bring Your Own Device" (BYOD) と呼ばれます。 前提条件を満たし、ユーザーのライセンスを割り当てたら、アプリ ストアから Intune ポータル サイト アプリをダウンロードして、アプリの登録手順に従います。 [プライバシーに関する声明のカスタマイズ](../apps/company-portal-app.md#privacy-statement-customization)に関するページで説明されているように、iOS デバイス上でポータル サイトのプライバシーに関する声明をカスタマイズできます。
+Intune 管理のために、ユーザーに個人用デバイスを登録させることができます。これは "Bring Your Own Device" (BYOD) と呼ばれます。 ユーザーを登録するには、次の 3 つの選択肢があります。
+- アプリ保護ポリシーを使用すると、アプリ レベルでのみ管理できる最も軽量な BYOD エクスペリエンスを実現できます。 ただし、6 桁の複雑な PIN を使用してデバイスをセキュリティで保護する場合は、これらのポリシーをユーザー登録と共に使用することもできます。
+- デバイスの登録は、一般的な BYOD の登録と考えることができます。 これにより、管理者は幅広い管理オプションを使用できるようになります。
+- ユーザー登録は、管理者にデバイス管理オプションの一部を提供する、より簡素化された登録プロセスです。 現在のところ、この機能はプレビュー段階です。 
+
+前提条件を満たし、ユーザーのライセンスを割り当てると、ユーザーはアプリ ストアから Intune ポータル サイト アプリをダウンロードし、アプリの登録手順を実行できるようになります。 [プライバシーに関する声明のカスタマイズ](../apps/company-portal-app.md#privacy-statement-customization)に関するページで説明されているように、iOS デバイス上でポータル サイトのプライバシーに関する声明をカスタマイズできます。
 
 ## <a name="company-owned-ios-devices"></a>会社所有の iOS デバイス
 
@@ -55,7 +60,10 @@ Intune は、ユーザーのデバイスを購入する組織のため、次の�
 
 ## <a name="device-enrollment-program"></a>デバイス登録プログラム
 
-組織は、Apple の Device Enrollment Program (DEP) を通して iOS デバイスを購入できます。 DEP では、登録プロファイルを “無線で” 展開して、デバイスを管理対象として登録できます。 詳細については、[Device Enrollment Program](device-enrollment-program-enroll-ios.md) に関するページを参照してください。
+組織は、Apple の Device Enrollment Program (DEP) を通して iOS デバイスを購入できます。 DEP では、登録プロファイルを “無線で” 展開して、デバイスを管理対象として登録できます。 詳細については、[Device Enrollment Program](device-enrollment-program-enroll-ios.md) に関する記事を参照してください。
+
+## <a name="user-enrollment"></a>ユーザー登録
+ユーザー登録により、管理者は他の登録方法と比較して少ない数の管理オプションを使用できるようになります。 詳細については、[ユーザー登録でサポートされるアクション、パスワードなどのオプション](ios-user-enrollment-supported-actions.md)と [iOS と iPadOS のユーザー登録の設定](ios-user-enrollment.md)に関する記事を参照してください。
 
 ## <a name="apple-school-manager"></a>Apple School Manager
 

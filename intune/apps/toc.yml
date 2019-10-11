@@ -26,7 +26,7 @@
       displayName: app-we; without; without enrollment
     - name: MAM のよく寄せられる質問
       href: mam-faq.md
-- name: 攻略ガイド
+- name: 操作方法ガイド
   items:
     - name: アプリを追加する
       items:
@@ -43,18 +43,20 @@
               href: store-apps-ios.md
             - name: Windows Phone 8.1 ストア アプリ
               href: store-apps-windows-phone-8-1.md
-            - name: Microsoft Store アプリ
-              items:
-                - name: Windows アプリ
-                  href: store-apps-windows.md
-                - name: ポータル サイト アプリ
-                  href: store-apps-company-portal-app.md
+            - name: Windows アプリ
+              href: store-apps-windows.md
+            - name: ビジネス向け Microsoft ストア アプリ
+              href: windows-store-for-business.md
             - name: 管理対象の Google Play アプリ
               href: apps-add-android-for-work.md
+        - name: Office 365 スイート
+          items:
             - name: Windows 10 用の Office 365 アプリ
               href: apps-add-office365.md
             - name: macOS 用の Office 365 アプリ
               href: apps-add-office365-macos.md
+        - name: Android エンタープライズ システム アプリ
+          href: apps-ae-system.md
         - name: Web アプリ
           href: web-app.md
           displayName: web; web link; weblink; web-link
@@ -74,10 +76,12 @@
               href: app-sideload-windows.md
             - name: macOS LOB アプリ
               href: lob-apps-macos.md
-        - name: Android エンタープライズ システム アプリ
-          href: apps-ae-system.md
-        - name: Win32 アプリの管理
-          href: apps-win32-app-management.md
+            - name: Win32 アプリの管理
+              href: apps-win32-app-management.md
+        - name: 特定のアプリを追加する
+          items:
+            - name: ポータル サイト アプリ
+              href: store-apps-company-portal-app.md
         - name: Powershell スクリプト
           href: intune-management-extension.md
     - name: アプリを割り当てる
@@ -180,7 +184,7 @@
           href: troubleshoot-mam.md
         - name: アプリの保護ログのレビュー
           href: app-protection-policy-settings-log.md
-- name: 参照先
+- name: リファレンス
   items:
     - name: Intune App SDK によるアプリの保護
       href: ../developer/app-sdk.md

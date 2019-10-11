@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02006acc58789f2a6fb5944e677a1983f7ea9614
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b16dca0b6a73e7228e65c840bfbc91f3577bb59a
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723555"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999291"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Samsung の Knox Mobile Enrollment を使用して Android デバイスを自動的に登録する
 
@@ -109,7 +109,8 @@ KME for Android を使用して Intune に登録されたデバイスの場合�
 
 > [!NOTE]
 >
->ユーザーの関連付けは、Android の登録にのみ適用されます。 ユーザー関連付けを定義すると、関連付けられたユーザーだけが KME を使ってデバイスを登録できます。 これは、デバイスの工場出荷時リセット後も当てはまります。 Knox ポータルでユーザー関連付けを定義しないと、有効な Intune ライセンスを持つすべてのユーザーが KME を使ってデバイスを登録できます。
+>ユーザーの関連付けは、Android デバイス管理者の登録にのみ適用されます。 ユーザー関連付けを定義すると、関連付けられたユーザーだけが KME を使ってデバイスを登録できます。 これは、デバイスの工場出荷時リセット後も当てはまります。 Knox ポータルでユーザー関連付けを定義しないと、有効な Intune ライセンスを持つすべてのユーザーが KME を使ってデバイスを登録できます。
+>Android Enterprise のフル マネージド デバイスでは、ユーザーの関連付けが定義されている場合でも、デバイスに渡されたり、デバイスがユーザーに関連付けられたりすることはありません。
 >
 
 ## <a name="distribute-devices"></a>デバイスを配布する
@@ -126,7 +127,7 @@ MDM プロファイルを作成して割り当て、ユーザー名を関連付�
 
 - **Android エンタープライズに対する登録への工場出荷時リセット:** 既に設定されているデバイスを用途変更する場合は、Android エンタープライズに登録するときに、デバイスを工場出荷時の状態にリセットする必要があります。
 
-- **Google Play アカウントを使用した更新:** Microsoft Intune にデバイスを登録するために、Google Play アカウントは必要ありません。 Intune ポータル サイト アプリの今後の更新では、デバイスに Google Play アカウントが必要になるかもしれません。 Google デバイス所有者に登録するときは、Google Play アカウントは必要ありません。
+- **Google Play アカウントを使用した更新:** Microsoft Intune にデバイスを登録するために、Google Play アカウントは必要ありません。 ただし、Android デバイス管理者の登録の場合、Intune ポータル サイト アプリの今後の更新では、デバイスの Google Play アカウントが必要になる場合があります。 Google デバイス所有者に登録するときは、Google Play アカウントは必要ありません。
 
 - **"パスワード" フィールドが無視される:** Knox ポータルの **[デバイスの詳細]** で **[パスワード]** フィールドが設定されている場合、これは Android 登録の間に Intune ポータル サイト アプリで無視されます。 エンド ユーザーは、デバイス登録を完了するにはデバイスでパスワードを入力する必要があります。
 

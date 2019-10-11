@@ -17,62 +17,68 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce9a92a9fffad13c6723504735b1b1cb9442f61f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 449e799dfc0531958c1578179cf07440d348ecf8
+ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721462"
+ms.locfileid: "71813950"
 ---
 # <a name="data-jamf-pro-sends-to-intune"></a>Jamf Pro から Intune に送られるデータ
 
 Intune でエンドユーザーの Mac を管理する目的で [Jamf Pro](https://www.jamf.com) を使用するとき、Jamf Pro によって管理対象 macOS デバイスに関するインベントリ情報がキャプチャされます。 
 
 ## <a name="data"></a>データ  
-Jamf Pro は、Intune に次の情報をレポートします。  
+Jamf Pro が Intune と共有するデータの一覧については、「[Appendix:Inventory Information Shared with Microsoft Intune (付録: Microsoft Intune と共有されるインベントリ情報)](https://docs.jamf.com/technical-papers/jamf-pro/microsoft-intune/10.9.0/Appendix__Inventory_Information_Shared_with_Microsoft_Intune.html)」(Jamf Pro 技術ドキュメント) を参照してください。 
 
-* デバイスの Azure AD ID
-* JAMF のインベントリ状態 (過去 24 時間以内に Jamf Pro でチェックインされたコンピューターのインベントリ状態)
-* OS のバージョン
-* ユーザーの Azure AD ID
-* 暗号化 (FileVault 2)
-* Gatekeeper ステータス
-* パスワード: 文字セットの最小数
-* パスワードの有効期限 (日)
-* パスワードの種類 - 簡易、英数字、または不明
-* 自動ログインの防止
-* 必要なパスコードの長さ
-* パスワード: 再利用を防止する前のパスワードの数
-* システム整合性の保護
-* 最後のチェックイン時刻
-* アーキテクチャの種類
-* 使用可能な RAM スロット
-* バッテリ容量
-* ブート ROM
-* バス速度
-* キャッシュ サイズ
-* デバイス名
-* ドメイン参加
+<!--  
+Jamf Pro reports the following information to Intune:  
+
+* Device Azure AD ID
+* JAMF Inventory State (inventory state of a computer checked in with Jamf Pro within the last 24 hours)
+* OS Version
+* User Azure AD ID
+* Encrypted (FileVault 2)
+* Gatekeeper Status
+* Password: minimum number of character sets
+* Password expiration (days)
+* Password Type - simple, alphanumeric, or unknown
+* Prevent Auto Login
+* Required Passcode Length
+* Password: number of previous passwords to prevent reuse
+* System Integrity Protection
+* Last Check-In Time
+* Architecture Type
+* Available RAM Slots
+* Battery Capacity
+* Boot ROM
+* Bus Speed
+* Cache Size
+* Device Name
+* Domain Join
 * Jamf ID
-* MAC アドレス
+* MAC address
 * Make
-* モデル
-* モデル識別子
-* NIC 速度
-* コア数
-* プロセッサ数
+* Model
+* Model Identifier
+* NIC Speed
+* Number of Cores
+* Number of Processors
 * OS
-* プラットフォーム
-* プロセッサ速度
-* プロセッサの種類
-* セカンダリ MAC アドレス
-* シリアル番号
-* SMC バージョン
-* RAM 合計
+* Platform
+* Processor Speed
+* Processor Type
+* Secondary MAC Address
+* Serial Number
+* SMC Version
+* Total RAM
 * UDID
-* ユーザーの電子メール
+* User Email
+--> 
 
-**[すべてのデバイス]** ビューで **[削除]** を選択することで、Intune コンソールから Jamf で管理されるデバイスを削除できます。 複数のデバイスを選択し、 **[削除]** をクリックすることで、デバイスの一括削除を有効にすることができます。
+<!-- 
+You can remove a Jamf-managed device from the Intune console by selecting **Delete** in the **All devices** view. Bulk device deletion can be enabled by selecting multiple devices and clicking **Delete**.
+-->
 
 ## <a name="next-steps"></a>次の手順
 Jamf で管理されるデバイスの削除方法については、[Jamf Pro のドキュメント](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information)を参照してください。[Jamf サポート](https://www.jamf.com/support/)にサポート チケットを提出して、さらなる支援を受けることもができます。 

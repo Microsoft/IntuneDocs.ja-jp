@@ -1,33 +1,33 @@
 ---
-ms.openlocfilehash: 04afc9c44bc1c4898950e6f3aff5dac7cb93370f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6f5b0c8df86cf5bf1206c1cccb879e37c7944a21
+ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "56323358"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71912730"
 ---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Windows 10 の自動登録を有効にする
 
 自動登録により、Intune に Windows 10 デバイスを登録できます。 登録するには、ユーザーが職場アカウントを個人所有のデバイスを追加するか、会社所有のデバイスを Azure Active Directory に参加させます。 バック グラウンドでデバイスが登録され、Azure Active Directory に参加します。 登録されると、デバイスは Intune で管理されます。
 
 **前提条件**
+
 - Azure Active Directory Premium サブスクリプション ([試用版サブスクリプション](http://go.microsoft.com/fwlink/?LinkID=816845))
 - Microsoft Intune サブスクリプション
-
 
 ### <a name="configure-automatic-mdm-enrollment"></a>自動 MDM 登録の構成
 
 1. [Azure Portal](https://portal.azure.com) にサインインして、 **[Azure Active Directory]** を選択します。
 
-   ![Azure Portal のスクリーンショット](../media/auto-enroll-azure-main.png)
+   ![Azure Portal のスクリーンショット](../enrollment/media/windows-enroll/auto-enroll-azure-main.png)
 
 2. **[モビリティ (MDM と MAM)]** を選択します。
 
-   ![Azure Portal のスクリーンショット](../media/auto-enroll-mdm.png)
+   ![Azure Portal のスクリーンショット](../enrollment/media/windows-enroll/auto-enroll-mdm.png)
 
 3. **Microsoft Intune** を選択します。
 
-   ![Azure Portal のスクリーンショット](../media/auto-enroll-intune.png)
+   ![Azure Portal のスクリーンショット](../enrollment/media/windows-enroll/auto-enroll-intune.png)
 
 4. **[MDM ユーザー スコープ]** を構成します。 どのユーザーのデバイスを Microsoft Intune で管理するのかを指定します。 これらの Windows 10 デバイスは、Microsoft Intune の管理対象として自動的に登録されます。
 
@@ -41,9 +41,9 @@ ms.locfileid: "56323358"
       > 業務用デバイスでは、両方のスコープが有効にされている場合、MDM ユーザー スコープが優先されます。 デバイスで MDM が登録されます。
 
    > [!NOTE]
-   > MAM ユーザー スコープは、ユーザー グループまたはコレクションに設定する必要があります。
+   > MDM ユーザー スコープは、ユーザー オブジェクトを含む Azure AD グループに設定する必要があります。
 
-   ![Azure Portal のスクリーンショット](../media/auto-enroll-scope.png)
+   ![Azure Portal のスクリーンショット](../enrollment/media/windows-enroll/auto-enroll-scope.png)
 
 5. 次の URL の既定値を使用します。
     - **MDM 使用条件 URL**

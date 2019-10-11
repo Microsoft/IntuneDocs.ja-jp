@@ -16,22 +16,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74b920deeb5255f6f938f0c8b07eaab6d765e68e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 345d039fede2a77ba0485944cb601683bdcebfda
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722970"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999308"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Microsoft Intune で認証に証明書を使用する  
 
 Intune で証明書を使用し、VPN、Wi-Fi、電子メール プロファイルを介してアプリケーションや企業リソースに対してユーザーが本人であることを確認します。 接続の認証に証明書を使用すると、エンド ユーザーはユーザー名とパスワードを入力する必要がなくなり、アクセスがシームレスになります。 証明書は、S/MIME を使用した電子メールの署名と暗号化にも使用されます。
 
-Intune では、次の種類の証明書がサポートされています。  
-
-- Simple Certificate Enrollment Protocol (SCEP)  
-- PKCS#12 (または PFX)  
-- PKCS のインポートされた証明書
+## <a name="intune-supported-certificates-and-usage"></a>Intune でサポートされている証明書と使用方法
+| Type              | 認証 | S/MIME 署名 | S/MIME 暗号化  |
+|--|--|--|--|
+| PKCS のインポートされた証明書 |  | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png)|
+| PKCS#12 (または PFX)    | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) |  |
+| Simple Certificate Enrollment Protocol (SCEP)  | ![サポート](./media/certificates-configure/green-check.png) | ![サポート](./media/certificates-configure/green-check.png) | |
 
 このような証明書を配備するには、証明書プロファイルを作成し、デバイスに割り当てます。  
 

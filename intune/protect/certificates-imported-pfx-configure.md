@@ -5,7 +5,7 @@ keywords: ''
 author: ralms
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b801da3bd4245361e8c55a40c67daf2c8890fd1e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fead8b9d69f5356876c0b3a2a4ce02e9b754128e
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721605"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999340"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Intune でインポートした PKCS 証明書を構成して使用する
 
@@ -168,7 +168,7 @@ PowerShell モジュールには、Windows 暗号化を使用してキーを作�
 
 7. `Import-IntuneUserPfxCertificate -AuthenticationResult $authResult -CertificateList $userPFXObject` を実行して、**UserPFXCertificate** オブジェクトを Intune にインポートします
 
-8. 証明書がインポートされたことを確認するには、`Get-IntuneUserPfxCertificate -AuthenticationResult $authResult -UsertList "<UserUPN>"` を実行します
+8. 証明書がインポートされたことを確認するには、`Get-IntuneUserPfxCertificate -AuthenticationResult $authResult -UserList "<UserUPN>"` を実行します
 
 その他の使用可能なコマンドについて詳しくは、[GitHub の PFXImport PowerShell プロジェクト](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)にある readme ファイルをご覧ください。
 
@@ -186,7 +186,7 @@ PowerShell モジュールには、Windows 暗号化を使用してキーを作�
 
 3. **[設定]** に移動し、次のプロパティを入力します。
 
-   - **使用目的**:このプロファイルに対してインポートされた証明書の使用目的を指定します。 管理者は、証明書をさまざまな使用目的でインポートできます (認証、S/MIME 署名、S/MIME 暗号化など)。 証明書プロファイル内で選択された使用目的によって、証明書プロファイルは適切なインポートされた証明書と対応させられます。 使用目的は、インポートした証明書をグループ化するためのタグであり、そのタグを使用してインポートされた証明書が使用目的を満たすことを保証するものではありません。  
+   - **使用目的**:このプロファイルに対してインポートされた証明書の使用目的を指定します。 管理者は、証明書をさまざまな使用目的でインポートできます (S/MIME 署名、S/MIME 暗号化など)。 証明書プロファイル内で選択された使用目的によって、証明書プロファイルは適切なインポートされた証明書と対応させられます。 使用目的は、インポートした証明書をグループ化するためのタグであり、そのタグを使用してインポートされた証明書が使用目的を満たすことを保証するものではありません。  
    - **[証明書の有効期間]** : 証明書テンプレートで有効期間が変更されていない限り、このオプションの既定値は 1 年です。  
    - **キー記憶域プロバイダー (KSP)** :Windows では、デバイス上のキーを格納する場所を選択します。  
 

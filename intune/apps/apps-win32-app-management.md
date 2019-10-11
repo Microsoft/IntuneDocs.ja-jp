@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 10/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 593c2d2b509047115ebeb3415393d6112484a6a9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 21192d259de0711ad38fa35b294ea82c7d913292
+ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724985"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72036499"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune スタンドアロン - Win32 アプリ管理
 
@@ -30,6 +30,9 @@ ms.locfileid: "71724985"
 
 > [!NOTE]
 > このアプリの管理機能では、Windows アプリケーションの 32 ビットと 64 ビットの両方のオペレーティング システム アーキテクチャがサポートされます。
+
+> [!IMPORTANT]
+> Win32 アプリを展開する場合、特にマルチファイルの Win32 アプリ インストーラーがある場合は、[Intune 管理拡張機能](../apps/intune-management-extension.md)を排他的に使用することを検討してください。 AutoPilot 登録中に Win32 アプリと基幹業務アプリのインストールを混在させると、アプリのインストールが失敗する場合があります。  
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -89,7 +92,7 @@ Win32 アプリの管理を使用する場合は、必ず、次の基準を満�
 
 ### <a name="process-flow-to-add-a-win32-app-to-intune"></a>Win32 アプリを Intune に追加するプロセス フロー
 
-   ![Win32 アプリを Intune に追加するプロセス フロー](./media/apps-win32-app-management/add-win32-app.svg)
+<img alt="Process flow to add a Win32 app to Intune" src="./media/apps-win32-app-management/add-win32-app.svg" width="500">
 
 ### <a name="add-a-win32-app-to-intune"></a>Win32 アプリを Intune に追加する
 

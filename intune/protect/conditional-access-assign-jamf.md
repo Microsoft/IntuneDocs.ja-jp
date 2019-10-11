@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 10/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,61 +17,97 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3542d86429293531a22678e14520e59cd9de9dc6
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 74ee1eaf0581c4500830514fa9ad272f0de09d3b
+ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721540"
+ms.locfileid: "71813975"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Jamf Pro で管理された Mac にコンプライアンスを適用します
 
-適用対象:Azure Portal での Intune
+[Jamf Pro を Intune と統合する](conditional-access-integrate-jamf.md)と、条件付きアクセス ポリシーを使用して、組織の要件に従って Mac デバイスにコンプライアンスを適用できるようになります。  この記事では、次のタスクについて説明します。  
 
-Azure Active Directory および Microsoft Intune の条件付きアクセス ポリシーを使用して、エンド ユーザーが組織の要件に準拠することを確実にできます。 これらのポリシーは [Jamf Pro で管理されている](conditional-access-integrate-jamf.md) Mac に適用できます。 これには、Intune と Jamf Pro の両方のコンソールへのアクセスが必要です。
+- 条件付きアクセス ポリシーを作成する。
+- Jamf Pro を構成して、Jamf で管理するデバイスに Intune ポータル サイト アプリを展開します。
+- Jamf Self Service アプリ内から起動するポータル サイト アプリにデバイス ユーザーがサインインするときに、Azure AD に登録するようにデバイスを構成します。 デバイス登録によって Azure AD の ID が確立され、条件付きアクセス ポリシーによって、会社のリソースへのアクセスについてデバイスを評価できるようになります。  
+ 
+この記事の手順では、Intune と Jamf Pro の両方のコンソールにアクセスする必要があります。
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>Intune のデバイス コンプライアンス ポリシーを設定する
 
-1. Microsoft Azure を開き、 **[Intune]**  >  **[デバイスのポリシー準拠]**  >  **[ポリシー]** に移動します。 準拠していないユーザーとグループに対する一連のアクション (警告の電子メールの送信など) の選択を含む、macOS 用のポリシーを作成できます。
-2. ポリシーを選択し、[割り当て] を選択します。 Azure Active Directory (AD) のセキュリティ グループは、含めることも除外することもできます。
-3. [選択したグループ] を選択すると、Azure AD セキュリティ グループが表示されます。 このポリシーで適用するユーザー グループを選択し、[保存] を選択してユーザーにポリシーを展開します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインし、 **[デバイスのポリシー準拠]**  >  **[ポリシー]** に移動します。 
+2. 以前に作成したポリシーを使用している場合は、コンソールでそのポリシーを選択し、この手順の次の手順に進みます。  
+   
+   **[ポリシーの作成]** を選択してから、**macOS** の *[Platform]\(プラットフォーム\)* を含むポリシーの詳細を指定します。 組織の要件を満たすように *[設定]* と *[コンプライアンス非対応に対するアクション]* を構成してから、 **[作成]** を選択してポリシーを保存します。
 
-ユーザーにポリシーが適用されました。 ポリシーの対象として設定されているユーザーに使用されたデバイスはコンプライアンスが評価され、Azure Active Directory の "デバイスは準拠しているとしてマーク済みである必要があります" という設定に対して準拠マークが付けられます。
+3. ポリシーの *[概要]* ウィンドウで **[割り当て]** を選択します。 使用できるオプションを使用して、このポリシーを受け取る Azure Active Directory (Azure AD) ユーザーとセキュリティ グループを構成します。 Jamf と Intune の統合では、デバイス グループを対象とするコンプライアンス ポリシーがサポートされません。 
 
-> [!Note]
+4. **[保存]** を選択すると、ポリシーがユーザーに展開されます。  
+
+展開するポリシーは、割り当てられたユーザーによって使用されるデバイスを対象とします。 これらのデバイスのコンプライアンスが評価されます。 準拠しているデバイスは、Azure AD の *[デバイスは準拠としてマーク済みである必要があります]* 設定について準拠とマークされます。  
+
+> [!NOTE]
 > Intune では、ポリシーに準拠するためにディスク全体の暗号化が必要です。
 
 ## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a>macOS 用ポータル サイト アプリを Jamf Pro に展開する
 
-以下の手順に従って、macOS 用ポータル サイト アプリをバックグラウンドのインストールとして Jamf Pro に展開する必要があります。
+Jamf Pro でポリシーを作成して Intune ポータル サイトを展開します。 このポリシーではポータル サイト アプリが展開され、Jamf Self Service で使用できるようになります。 ユーザーが Azure AD にデバイスを登録できるようにするには、このポリシーを作成してから、Jamf Pro でポリシーを作成します。  
 
-1. macOS デバイスで、[macOS 用のポータル サイト アプリ](https://go.microsoft.com/fwlink/?linkid=862280)の現在のバージョンをダウンロードします。 インストールはしないでください。Jamf Pro にアップロードするには、アプリのコピーが必要です。
-2. Jamf Pro を開き、 **[コンピューターの管理]**  >  **[パッケージ]** に移動します。
-3. macOS 用のポータル サイト アプリで新しいパッケージを作成し、 **[保存]** をクリックします。
+次の手順を完了するには、macOS デバイスと Jamf Pro ポータルにアクセスする必要があります。 
+
+### <a name="to-deploy-the-company-portal-app"></a>ポータル サイト アプリを展開するには  
+
+1. macOS デバイスに、最新バージョンの [macOS 用ポータル サイト アプリ](https://go.microsoft.com/fwlink/?linkid=862280)をダウンロードします (ただし、インストールしません)。 アプリを Jamf Pro にアップロードできるようにするために必要なものは、アプリのコピーのみです。  
+
+2. Jamf Pro を開き、 **[Computer management]\(コンピューターの管理\)**  >  **[Packages]\(パッケージ\)** に移動します。
+
+3. macOS 用のポータル サイト アプリで新しいパッケージを作成し、 **[保存]** を選択します。
+
 4. **[コンピューター]**  >  **[ポリシー]** を開き、 **[新規]** を選択します。
+
 5. **[全般]** ペイロードを使用して、ポリシーの設定を構成します。 これらの設定は次のとおりです。
    - トリガー: **[登録完了]** と **[Recurring Check-in]\(定期的なチェックイン\)** を選択します。
    - 実行の頻度: **[Once per computer]\(コンピューターにつき 1 回\)** を選択します。
+
 6. **[パッケージ]** ペイロードを選択し、 **[構成]** をクリックします。
+
 7. **[追加]** をクリックし、ポータル サイト アプリでパッケージを選択します。
+
 8. **[アクション]** ポップアップ メニューから **[インストール]** を選択します。
 9. パッケージの設定を構成します。
-10. **[スコープ]** タブをクリックし、ポータル サイト アプリをインストールするコンピューターを指定します。 **[Save]** (保存) をクリックします。 ポリシーは、次回、選択したトリガーがコンピューターで発生し、 **[全般]** ペイロードの条件を満たしている場合にスコープのデバイスで実行されます。
 
-## <a name="create-a-policy-in-jamf-pro-to-have-users-register-their-devices-with-azure-active-directory"></a>ユーザーに Azure Active Directory で自分のデバイスを登録させるためのポリシーを Jamf Pro で作成する
+10. **[スコープ]** タブを選択し、ポータル サイト アプリをインストールするコンピューターを指定します。 **[保存]** を選択します。 ポリシーは、次回、選択したトリガーがコンピューターで発生し、 **[全般]** ペイロードの条件を満たしている場合にスコープのデバイスで実行されます。
 
-> [!NOTE]
-> 次の手順に進む前に、macOS 用の[ポータル サイトの展開](conditional-access-assign-jamf.md#deploy-the-company-portal-app-for-macos-in-jamf-pro)を行う必要があります。  
+## <a name="create-a-policy-in-jamf-pro-to-have-users-register-their-devices-with-azure-active-directory"></a>ユーザーに Azure Active Directory で自分のデバイスを登録させるためのポリシーを Jamf Pro で作成する  
 
-エンドユーザーは、デバイスを Jamf Pro によって管理されるデバイスとして Azure AD で登録するために、Jamf セルフ サービスを経由してポータル サイト アプリを起動する必要があります。 この場合、エンドユーザーは操作を実行する必要があります。 電子メール、Jamf Pro 通知、またはエンドユーザーへの他の通知方法を通して、Jamf セルフ サービスでボタンをクリックするように[エンド ユーザーに連絡する](../fundamentals/end-user-educate.md)ことをお勧めします。
+Jamf Pro Self Service を使用して macOS 用の[ポータル サイトを展開](conditional-access-assign-jamf.md#deploy-the-company-portal-app-for-macos-in-jamf-pro)した後は、ユーザーのデバイスを Azure AD に登録する Jamf Pro ポリシーを作成できるようになります。 
+
+デバイス登録を行うには、デバイス ユーザーが Jamf Self Service 内から手動で Intune ポータル サイト アプリを選択する必要があります。 メール、Jamf Pro の通知、または組織が使用しているその他の方法で[エンド ユーザーに連絡し](../fundamentals/end-user-educate.md)、この操作を完了してデバイスを登録するように指示することをお勧めします。 
 
 > [!WARNING]
-> ポータル サイト アプリを Jamf セルフ サービスから起動してデバイスの登録を開始する必要があります。 <br><br>ポータル サイト アプリを手動で起動した場合 (たとえば、アプリケーション フォルダーまたはダウンロード フォルダーから起動)、デバイスは登録されません。 エンドユーザーがポータル サイトを手動で起動した場合は、"AccountNotOnboarded" という警告が表示されます。
+> ポータル サイト アプリを手動で起動した場合 (たとえば、アプリケーション フォルダーまたはダウンロード フォルダーから起動)、デバイスは登録されません。 デバイス ユーザーがポータル サイトを手動で起動した場合は、"**AccountNotOnboarded**" という警告が表示されます。
 
-1. Jamf Pro で **[コンピューター]**  >  **[ポリシー]** に移動し、デバイス登録用の新しいポリシーを作成します。
+### <a name="to-create-the-registration-policy"></a>登録ポリシーを作成するには  
+
+1. Jamf Pro で **[Computers]\(コンピューター\)**  >  **[Policies]\(ポリシー\)** に移動し、デバイス登録用の新しいポリシーを作成します。
+
 2. トリガーや実行の頻度など、 **[Microsoft Intune 統合]** ペイロードを構成します。
-3. **[スコープ]** タブをクリックし、ポリシーのスコープをすべての対象デバイスにします。
-4. **[セルフ サービス]** タブをクリックし、Jamf セルフ サービスでポリシーを利用可能にします。 ポリシーを **[デバイスのポリシー準拠]** カテゴリに含めます。 **[Save]** (保存) をクリックします。
+
+3. **[スコープ]** タブを選択し、ポリシーのスコープをすべての対象デバイスに限定します。
+
+4. **[セルフ サービス]** タブを選択し、Jamf Self Service でポリシーを利用可能にします。 ポリシーを **[デバイスのポリシー準拠]** カテゴリに含めます。 **[Save]** (保存) をクリックします。
+
+## <a name="validate-intune-and-jamf-integration"></a>Intune と Jamf の統合を検証する  
+
+Jamf Pro コンソールを使用して、Jamf Pro と Microsoft Intune 間の通信が成功していることを確認します。 
+
+- Jamf Pro で、 **[Settings]\(設定\)**  >  **[Global Management]\(グローバル管理\)**  >  **[Microsoft Intune Integration]\(Microsoft Intune の統合\)** に移動し、 **[Test]\(テスト\)** を選択します。 
+
+    コンソールには、接続が成功したか失敗したかを示すメッセージが表示されます。  
+
+Jamf Pro コンソールからの接続テストが失敗する場合は、Jamf の構成を確認します。 
+
 
 ## <a name="removing-a-jamf-managed-device-from-intune"></a>Intune から Jamf で管理されたデバイスを削除する
 

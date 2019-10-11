@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eab50a21ea01cd4075bd78add980d2839606a1a2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 6e9df15efc7a16a0ce1ee6b0412f9160831efdec
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721878"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163507"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Microsoft Intune でのロールベースのアクセス制御 (RBAC)
 
@@ -66,6 +66,7 @@ Intune RBAC に関するアドバイスと提案については、例とチュ�
 | セキュリティ閲覧者 | 読み取り専用 | 読み取り専用 |
 | コンプライアンス管理者 | なし | 読み取り専用 |
 | コンプライアンス データ管理者 | なし | 読み取り専用 |
+| グローバル閲覧者 | 読み取り専用 | 読み取り専用 |
 
 > [!TIP]
 > Intune には 3 つの Azure AD 拡張機能も表示されます。**ユーザー**、**グループ**、**条件付きアクセス**です。これらは、Azure AD RBAC を使用して制御されされます。 また、**ユーザーアカウント管理者**は AAD ユーザー/グループのアクティビティのみを実行します。Intune のすべてのアクティビティを実行する完全なアクセス許可はありません。 詳細については、[Azure AD での RBAC](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) に関するページを参照してください。
