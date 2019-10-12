@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/12/2019
+ms.date: 10/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 484035603e4fb447b004aad6c6f85726034f3c23
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 493db6299aa8242d0ca6ab669b313e85d0dc14c6
+ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732829"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72251589"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune を使用してデバイスを準拠または非準拠としてマークするための Windows 10 以降の設定
 
@@ -138,6 +138,9 @@ Windows 10 以降を実行している共同マネージド デバイスにの�
 - **ファイアウォール**: Microsoft Defender ファイアウォールを有効にし、ユーザーが無効にすることを禁止する**ように設定**します。 **未構成**(既定) は Microsoft Defender ファイアウォールを制御せず、既存の設定を変更しません。
 
   [ファイアウォール CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)
+
+  > [!NOTE]
+  > 再起動後にデバイスが直ちに同期される場合、またはすぐにスリープからウェイクアップを同期する場合は、この設定が**エラー**として報告されることがあります。 このシナリオは、全体的なデバイスのコンプライアンス状態に影響しない場合があります。 コンプライアンス対応状態を再評価するには、デバイスを手動で[同期](https://docs.microsoft.com/intune-user-help/sync-your-device-manually-windows)します。
 
 - **トラステッドプラットフォームモジュール (TPM)** : **[必須]** に設定されている場合、Intune はバージョンのコンプライアンスを確認します。 TPM チップのバージョンが 0 (ゼロ) より大きい場合、デバイスは準拠しています。 デバイスに TPM バージョンがない場合、デバイスは準拠していません。 構成されて**いない**場合、Intune はデバイスで TPM チップバージョンを確認しません。
 

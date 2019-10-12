@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7bba4617aa756c5f7168a2febf1a3f1ffdd2029
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1938f6862fa7b74dccc4ea23ac139fcd955d77d7
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736001"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237259"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>Intune 用の MDM セキュリティ ベースラインの設定  
 
@@ -1622,7 +1622,7 @@ Intune でのセキュリティベースラインの使用方法については�
 
 - **Email content execution type (電子メール コンテンツ実行タイプ)**  
   このルールでは、次の種類のファイルが Microsoft Outlook または Web メール (Gmail.com や Outlook.com など) に表示された電子メールから実行または起動されるのをブロックします: 実行可能ファイル (例: .exe、.dll、.scr)、スクリプト ファイル (例: PowerShell .ps、VisualBasic .vbs、JavaScript .js)、スクリプト アーカイブ ファイル。  
-  [詳細情報](https://go.microsoft.com/fwlink/?linkid=2067063)  
+  [詳細情報](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail) 
   
   **既定値**: ブロック
 
@@ -1632,7 +1632,7 @@ Intune でのセキュリティベースラインの使用方法については�
 
 - **Network protection type (ネットワーク保護タイプ)**  
   このポリシーは、Windows Defender Exploit Guard でのネットワーク保護 (ブロック/監査) をオンまたはオフにします。 ネットワーク保護は Windows Defender Exploit Guard の機能であり、任意のアプリを使用する従業員がインターネット上のフィッシング詐欺、悪用ホスティング サイト、悪意のあるコンテンツにアクセスするのを防ぎます。 これには、サード パーティ製のブラウザーが危険なサイトに接続するのを防ぐことが含まれます。 値の型は整数です。 この設定を有効にした場合、ネットワーク保護が有効になり、従業員では無効にできません。 その動作は次のオプションで制御できます: ブロックと監査。 このポリシーを "ブロック" オプションで有効にした場合、ユーザーとアプリは危険なドメインに接続するのをブロックされます。 このアクティビティは、Windows Defender セキュリティ センターで表示することができます。 このポリシーを "監査" オプションで有効にした場合、ユーザー/アプリは危険なドメインに接続するのをブロックされません。 ただし、それでもこのアクティビティは Windows Defender セキュリティ センターで表示されます。 このポリシーを無効にした場合、ユーザー/アプリは危険なドメインに接続するのをブロックされません。 ネットワーク アクティビティは、Windows Defender セキュリティ センターに表示されません。 このポリシーを構成しない場合、ネットワーク ブロックは既定で無効になります。  
-  [詳細情報](https://go.microsoft.com/fwlink/?linkid=2067102)  
+  [詳細情報](/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
   
   **既定値**: 有効にする
   

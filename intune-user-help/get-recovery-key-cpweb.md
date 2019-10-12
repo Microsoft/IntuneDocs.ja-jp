@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24e597d6dbfbfe399422c3e1679f675c9525abcd
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8048b29bdd456f9db8bb3d01e84bad5899e0b9a6
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71720993"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163559"
 ---
 # <a name="get-a-recovery-key-for-a-macos-device"></a>MacOS デバイスの回復キーを取得する
 
@@ -47,7 +47,7 @@ ms.locfileid: "71720993"
 
 ## <a name="it-pro-support"></a>IT プロフェッショナルサポート
 
-IT サポート担当者であり、macOS デバイスの FileVault 暗号化を構成して管理する場合は、「 [Intune でデバイスの暗号化を使用](https://docs.microsoft.com/intune/protect/encrypt-devices.md)する」を参照してください。
+IT サポート担当者であり、macOS デバイスの FileVault 暗号化を構成して管理する場合は、「 [Intune でデバイスの暗号化を使用](/intune/protect/encrypt-devices)する」を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 
