@@ -6,7 +6,7 @@ keywords: Intune データ ウェアハウス
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/14/2019
+ms.date: 10/07/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ee5cdb6bbdcce229fbc217726a1ee118f77beff
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9e8fadb625073af2a70d605d3ceabb9ba97906ae
+ms.sourcegitcommit: 46322ca7a92971e18dc0b230f436b9ca892b90c5
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733414"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72008323"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Power BI でデータ ウェアハウスに接続する
 
@@ -76,9 +76,10 @@ Azure AD に対してクライアントが認証されていると、OData URL �
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
 2. 概要 ブレードの右側にある **その他のタスク** セクションで、**Intune データウェアハウスのセットアップ** をクリックします。 **Intune データウェアハウス**ブレードが表示されます。
-3. たとえば、`https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0` などのレポート ブレードからカスタム フィード URL を取得します。
+3. レポート ブレードからカスタム フィード URL を取得します。たとえば、次のようになります。<br>
+    `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4. **Power BI Desktop** を開きます。
-5. **[ホーム]**  >  **[データの取得]** を選択します。 **[OData フィード]** を選択します。
+5. **ファイル** >  **データの取得** を選択します。 **[OData フィード]** を選択します。
 6. **[基本]** を選択します。
 7. [URL] ボックスに **[OData URL]** を入力するか貼り付けます。
 8. **[OK]** を選択します。

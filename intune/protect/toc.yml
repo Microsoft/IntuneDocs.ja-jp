@@ -210,7 +210,7 @@
     - name: トラブルシューティング
       items:
         - name: ポリシーとプロファイルのトラブルシューティング
-          href: troubleshoot-policies-in-microsoft-intune.md
+          href: ../configuration/troubleshoot-policies-in-microsoft-intune.md?context=./context/pr-context.yml
         - name: 条件付きアクセスに関するトラブルシューティング
           href: troubleshoot-conditional-access.md
         - name: Certificate Connector のトラブルシューティング

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/29/2019
+ms.date: 10/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c9bad56a8214cd736208526865b5f9c8b23db00
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 149da4c5aafc436156b7b29566bb5d792506de7c
+ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734792"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72251549"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように Windows 10 (以降) のデバイスを設定する
 
@@ -665,29 +665,55 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
 
 これらの設定では、[Defender ポリシー CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) が使用されます。それには、サポートされる Windows のエディションも示されています。
 
-- **[リアルタイム監視]** : **[有効]** にすると、マルウェアやスパイウェアなど、望ましくないソフトウェアについてのリアルタイム スキャンがオフになります。 **[未構成]** (既定値) にすると、この機能が許可されます。
+- **[リアルタイム監視]** : **[有効]** にすると、マルウェアやスパイウェア、その他の望ましくないソフトウェアについてのリアルタイム スキャンがオンになります。 ユーザーはこれをオフにすることはできません。 
+
+  [未構成] (既定) に設定され**て**いる場合、Intune はこの設定には触れません。 この設定を有効にした後、 **[未構成]** に変更した場合、Intune は設定を以前に構成した状態のままにします。 既定では、OS はこの機能をオンにして、ユーザーがこの機能を変更できるようにします。
+
+  Intune では、この機能は無効になりません。 無効にするには、カスタム URI を使用します。
 
   [Defender/AllowRealtimeMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
 
-- **[動作の監視]** : **[有効]** にすると、デバイス上で特定の既知のパターンで行われる疑わしい動作の Defender によるチェックがオフになります。 **[未構成]** (既定値) にすると、Windows Defender による動作の監視が許可されます。
+- **[動作の監視]** : **[有効]** にすると、動作の監視がオンになり、デバイス上で特定の既知のパターンで行われる疑わしい動作がチェックされます。 ユーザーは動作の監視を無効にすることはできません。 
+
+  [未構成] (既定) に設定され**て**いる場合、Intune はこの設定には触れません。 この設定を有効にした後、 **[未構成]** に変更した場合、Intune は設定を以前に構成した状態のままにします。 既定では、OS は動作の監視をオンにして、ユーザーがそれを変更できるようにします。
+
+  Intune では、この機能は無効になりません。 無効にするには、カスタム URI を使用します。
 
   [Defender/Allowの監視 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
 
 - **[Network Inspection System (NIS)]\(ネットワーク検査システム (NIS)\)** : NIS は、ネットワークベースのエクスプロイトからデバイスを守るために役立ちます。 Microsoft Endpoint Protection Center にある既知の脆弱性の署名を使用して、悪意のあるトラフィックを検出してブロックします。
 
-  **[未構成]** (既定) の場合、この機能が無効になります。 ユーザーは、既知の脆弱性への接続をブロックされていません。 **[有効]** に設定すると、ネットワーク保護とネットワークブロックが有効になり、ユーザーはオフにできなくなります。 ユーザーは、既知の脆弱性への接続をブロックされます。
+  [有効] に設定すると、ネットワークの保護とネットワークのブロックが**有効**になります。 ユーザーはこれをオフにすることはできません。 有効にすると、ユーザーは既知の脆弱性に接続できなくなります。
+
+  [未構成] (既定) に設定され**て**いる場合、Intune はこの設定には触れません。 この設定を有効にした後、 **[未構成]** に変更した場合、Intune は設定を以前に構成した状態のままにします。 既定では、OS は NIS をオンにして、ユーザーが変更できるようにします。
+
+  Intune では、この機能は無効になりません。 無効にするには、カスタム URI を使用します。
 
   [Defender/EnableNetworkProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
 
-- **すべてのダウンロードをスキャン**する: 未構成 (既定) は、インターネットからダウンロード**さ**れたすべてのファイルをスキャンします。 **[有効]** に設定すると、この機能は無効になります。 そのため、Defender はダウンロードされたすべてのインターネットファイルをスキャンしません。
+- **すべてのダウンロードをスキャン**する: この設定を**有効**にし、Defender はインターネットからダウンロードされたすべてのファイルをスキャンします。 ユーザーは、この設定をオフにすることはできません。 
+
+  [未構成] (既定) に設定され**て**いる場合、Intune はこの設定には触れません。 この設定を有効にした後、 **[未構成]** に変更した場合、Intune は設定を以前に構成した状態のままにします。 既定では、OS はこの設定を有効にし、ユーザーが変更できるようにします。
+
+  Intune では、この機能は無効になりません。 無効にするには、カスタム URI を使用します。
 
   [Defender/割り当てる Wioavprotection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
 
-- **[Microsoft Web ブラウザーに読み込まれたスクリプトをスキャンする]** : **[未構成]** (既定値) にすると、Internet Explorer で使用されるスクリプトを Defender でスキャンできるようになります。 **[有効]** にすると、このスキャンを実行できなくなります。
+- **[Microsoft Web ブラウザーに読み込まれたスクリプトをスキャンする]** : **[有効]** にすると、Internet Explorer で使用されるスクリプトを Defender でスキャンできるようにします。 ユーザーは、この設定をオフにすることはできません。 
+
+  [未構成] (既定) に設定され**て**いる場合、Intune はこの設定には触れません。 この設定を有効にした後、 **[未構成]** に変更した場合、Intune は設定を以前に構成した状態のままにします。 既定では、OS はこの設定を有効にし、ユーザーが変更できるようにします。
+
+  Intune では、この機能は無効になりません。 無効にするには、カスタム URI を使用します。
 
   [Defender/AllowScriptScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
 
-- **[Defender へのエンドユーザー アクセス]** : **[ブロック]** にすると、Windows Defender ユーザー インターフェイスがエンド ユーザーに対して非表示になります。 Windows Defender のすべての通知も表示されなくなります。 **[未構成]** (既定値) にすると、ユーザーによる Windows Defender UI へのアクセスが許可されます。 この設定の変更は、エンド ユーザーの PC が次に再起動されたときに有効になります。
+- **[Defender へのエンドユーザー アクセス]** : **[ブロック]** にすると、Microsoft Defender ユーザー インターフェイスがエンド ユーザーに対して非表示になります。 Microsoft Defender のすべての通知も表示されなくなります。
+
+  [未構成] (既定) に設定され**て**いる場合、Intune はこの設定には触れません。 設定をブロックしてから **[未構成]** に変更した場合、Intune は設定を以前に構成した状態のままにします。 既定では、OS によって Microsoft Defender UI へのユーザーアクセスが許可され、ユーザーはこれを変更できます。
+
+  Intune では、この機能は無効になりません。 無効にするには、カスタム URI を使用します。
+
+  この設定の変更は、エンド ユーザーの PC が次に再起動されたときに有効になります。
 
   [Defender/AllowUserUIAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
 
@@ -714,31 +740,55 @@ GDI DPI スケールでは、DPI 対応でないアプリケーションをモ�
   [Defender/Daystoret/マルウェア CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
 
 - **[スキャン中の CPU 使用率の制限]** : スキャンに使用できる CPU の使用率を制限します (`0` から `100` まで)。
-- **アーカイブファイル**をスキャン**する: 有効にする**と、Defender は Zip や Cab ファイルなどのアーカイブファイルのスキャンを無効にします。 **[未構成]** (既定値) にすると、このスキャンが許可されます。
+- **アーカイブファイル**をスキャン**する: を有効にする**と、Defender が有効になり、Zip ファイルや Cab ファイルなどのアーカイブファイルがスキャンされます。 ユーザーは、この設定をオフにすることはできません。
+
+  [未構成] (既定) に設定され**て**いる場合、Intune はこの設定には触れません。 この設定を有効にした後、 **[未構成]** に変更した場合、Intune は設定を以前に構成した状態のままにします。 既定では、OS はこのスキャンをオンにして、ユーザーがこのスキャンを変更できるようにします。
+
+  Intune では、この機能は無効になりません。 無効にするには、カスタム URI を使用します。
 
   [Defender/Allowアーカイブ/分割 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
 
-- **[受信メール メッセージをスキャンする]** : **[有効]** にすると、デバイスに届いた電子メール メッセージを Defender で直ちにスキャンできるようにします。 **[未構成]** (既定値) にすると、この機能を使用できなくなります。
+- **[受信メール メッセージをスキャンする]** : **[有効]** にすると、デバイスに届いた電子メール メッセージを Defender で直ちにスキャンできるようにします。 有効にすると、エンジンはメールボックスとメールファイルを解析して、メールの本文と添付ファイルを分析します。 .Pst (Outlook)、.dbx、.dbx、MIME (Outlook Express)、および BinHex (Mac) 形式をスキャンできます。
+
+  [未構成] (既定) に設定され**て**いる場合、Intune はこの設定には触れません。 この設定を有効にした後、 **[未構成]** に変更した場合、Intune は設定を以前に構成した状態のままにします。 既定では、OS はこのスキャンをオフにして、ユーザーがこのスキャンを変更できるようにします。
+
+  Intune では、この機能は無効になりません。 無効にするには、カスタム URI を使用します。
 
   [Defender/AllowEmailScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
 
-- **[フル スキャン中に、リムーバブル ドライブをスキャンする]** : **[有効]** にすると、リムーバブル ドライブの完全スキャンが行われなくなります。 **[未構成]** (既定値) にすると、Defender で USB スティックなどのリムーバブル ドライブをスキャンできます。
+- **フルスキャン中にリムーバブルドライブをスキャン**する:**有効にする**と、フルスキャン中に、Defender リムーバブルドライブスキャンが有効になります。 ユーザーは、この設定をオフにすることはできません。
+
+  [未構成] (既定) に設定され**て**いる場合、Intune はこの設定には触れません。 この設定を有効にした後、 **[未構成]** に変更した場合、Intune は設定を以前に構成した状態のままにします。 既定では、OS は、Defender が USB スティックなどのリムーバブルドライブをスキャンし、ユーザーがこの設定を変更できるようにします。
 
   クイックスキャン中に、リムーバブルドライブがスキャンされる場合があります。
 
+  Intune では、この機能は無効になりません。 無効にするには、カスタム URI を使用します。
+
   [Defender/AllowFullScanRemovableDriveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
 
-- **[フル スキャン中に、マップされたネットワーク ドライブをスキャンする]** : **[有効]** にすると、マップ済みネットワーク ドライブ上のファイルを Defender でスキャンできます。 **[未構成]** (既定値) にすると、完全スキャンが行われなくなります。 ドライブ上のファイルが読み取り専用である場合、Defender では、検出したマルウェアを一切削除できません。
+- **[フル スキャン中に、マップされたネットワーク ドライブをスキャンする]** : **[有効]** にすると、Defender によってマップ済みネットワーク ドライブ上のファイルがスキャンされます。 ドライブ上のファイルが読み取り専用である場合、Defender では、検出したマルウェアを一切削除できません。 ユーザーは、この設定をオフにすることはできません。
+
+  [未構成] (既定) に設定され**て**いる場合、Intune はこの設定には触れません。 この設定を有効にした後、 **[未構成]** に変更した場合、Intune は設定を以前に構成した状態のままにします。 既定では、OS はこの機能をオンにして、ユーザーがこの機能を変更できるようにします。
 
   クイックスキャン中に、マップされたネットワークドライブが引き続きスキャンされる場合があります。
 
+  Intune では、この機能は無効になりません。 無効にするには、カスタム URI を使用します。
+
   [Defender/AllowFullScanOnMappedNetworkDrives CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
 
-- **[ネットワーク フォルダーから開いたファイルをスキャンする]** : **[未構成]** (既定値) にすると、共有ネットワーク ドライブ上のファイルを Defender でスキャンできます (UNC パスからアクセスされたファイルなど)。 **[有効]** にすると、このスキャンを実行できなくなります。 ドライブ上のファイルが読み取り専用である場合、Defender では、検出したマルウェアを一切削除できません。
+- **ネットワークフォルダーから開いたファイルをスキャン** **する: Enable**は、ネットワークフォルダーまたは共有ネットワークドライブから開かれたファイル (UNC パスからアクセスされるファイルなど) をスキャンします。 ユーザーは、この設定をオフにすることはできません。 ドライブ上のファイルが読み取り専用である場合、Defender では、検出したマルウェアを一切削除できません。
+
+  [未構成] (既定) に設定され**て**いる場合、Intune はこの設定には触れません。 この設定を有効にした後、 **[未構成]** に変更した場合、Intune は設定を以前に構成した状態のままにします。 既定では、OS はネットワークフォルダーから開かれたファイルをスキャンし、ユーザーがファイルを変更できるようにします。
+
+  Intune では、この機能は無効になりません。 無効にするには、カスタム URI を使用します。
 
   [Defender/AllowScanningNetworkFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
 
-- **[クラウド保護]** : **[未構成]** (既定値) にすると、Microsoft Active Protection Service で管理対象のデバイスからのマルウェア アクティビティに関する情報の受信が許可されます。 **[有効]** にすると、この機能がブロックされます。
+- **[クラウド保護]** : **[有効]** にすると、Microsoft Active Protection Service で管理対象のデバイスからのマルウェア アクティビティに関する情報の受信がオンになります。 この設定はユーザーが変更できません。 
+
+  [未構成] (既定) に設定され**て**いる場合、Intune はこの設定には触れません。 この設定を有効にした後、 **[未構成]** に変更した場合、Intune は設定を以前に構成した状態のままにします。 既定では、OS によって Microsoft Active Protection Service が情報を受信できるようになり、ユーザーはこの設定を変更できます。
+
+  Intune では、この機能は無効になりません。 無効にするには、カスタム URI を使用します。
 
   [Defender/AllowCloudProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
 

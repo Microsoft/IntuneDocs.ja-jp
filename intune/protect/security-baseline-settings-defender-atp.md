@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eee3d4187dd513cd3945e86aff478fe96b341660
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 52420375ae5ed88ab713a1da3e927e43e433db83
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732959"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163502"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 向けの Microsoft Defender Advanced Threat Protection ベースライン設定
 
@@ -86,7 +86,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 ## <a name="attack-surface-reduction"></a>攻撃の回避  
 
 - **Office apps launch child process type (Office アプリの子プロセスの起動の種類)**  
-  [攻撃面の減少ルール](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – *[ブロック]* に設定すると、Office アプリで子プロセスを作成することはできません。 Office アプリには、Word、Excel、PowerPoint、OneNote、および Access などがあります。 子プロセスを作成するのは、一般的なマルウェアの動作です。特に、Office アプリを使用して悪意のある実行可能ファイルの起動またはダウンロードを試みるマクロベースの攻撃で作成されます。  
+  [攻撃面の減少ルール](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – *[ブロック]* に設定すると、Office アプリで子プロセスを作成することはできません。 Office アプリには、Word、Excel、PowerPoint、OneNote、および Access などがあります。 子プロセスを作成するのは、一般的なマルウェアの動作です。特に、Office アプリを使用して悪意のある実行可能ファイルの起動またはダウンロードを試みるマクロベースの攻撃で作成されます。  
 
   **既定値**: ブロック
 
@@ -101,7 +101,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
   **既定値**: 有効にする
 
 - **Email content execution type (電子メール コンテンツ実行タイプ)**  
-  [攻撃面の減少ルール](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – *[ブロック]* に設定すると、このルールにより、次の種類のファイルは Microsoft Outlook または Web メール (Gmail.com や Outlook.com など) に表示された電子メールから実行または起動されるのをブロックされます。  
+  [攻撃面の減少ルール](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – *[ブロック]* に設定すると、このルールにより、次の種類のファイルは Microsoft Outlook または Web メール (Gmail.com や Outlook.com など) に表示された電子メールから実行または起動されるのをブロックされます。  
 
   - 実行可能ファイル (.exe、.dll、.scr など)  
   - スクリプト ファイル (PowerShell .ps、VisualBasic .vbs、JavaScript .js ファイルなど)  
@@ -110,17 +110,17 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
   **既定値**: ブロック
 
 - **子プロセスでの Adobe Reader の起動**  
-  [攻撃面の減少ルール](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – このルールを "*有効*" にすると、Adobe Reader での子プロセスの作成がブロックされます。 マルウェアは、ソーシャル エンジニアリングまたは悪用によって、追加のペイロードをダウンロードして起動し、Adobe Reader から抜け出すことができます。  
+  [攻撃面の減少ルール](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – このルールを "*有効*" にすると、Adobe Reader での子プロセスの作成がブロックされます。 マルウェアは、ソーシャル エンジニアリングまたは悪用によって、追加のペイロードをダウンロードして起動し、Adobe Reader から抜け出すことができます。  
 
   **既定値**: 有効にする
 
 - **Script obfuscated macro code type (スクリプト難読化マクロ コード タイプ)**  
-  [攻撃面の減少ルール](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - マルウェアや他の脅威によって、一部のスクリプト ファイル内で悪意のあるコードの難読化または隠ぺいが試みられる可能性があります。 このルールは、難読化されているらしいスクリプトが実行するのを防ぎます。  
+  [攻撃面の減少ルール](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - マルウェアや他の脅威によって、一部のスクリプト ファイル内で悪意のあるコードの難読化または隠ぺいが試みられる可能性があります。 このルールは、難読化されているらしいスクリプトが実行するのを防ぎます。  
     
   **既定値**: ブロック
 
 - **Untrusted USB process type (信頼されていない USB 処理タイプ)**  
-  [攻撃面の減少ルール](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – *[ブロック]* に設定すると、USB リムーバブル ドライブおよび SD カードからの署名なしまたは信頼されていない実行可能ファイルは実行できません。
+  [攻撃面の減少ルール](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – *[ブロック]* に設定すると、USB リムーバブル ドライブおよび SD カードからの署名なしまたは信頼されていない実行可能ファイルは実行できません。
 
   実行可能ファイルには次のようなものがあります。
   - 実行可能ファイル (.exe、.dll、.scr など)
@@ -129,22 +129,22 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
   **既定値**: ブロック
 
 - **Office apps other process injection type (Office アプリによる他のプロセスへの挿入タイプ)**  
-  [攻撃面の減少ルール](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - *[ブロック]* に設定すると、Word、Excel、PowerPoint、OneNote などの Office アプリから他のプロセスにコードを挿入することができません。 コードの挿入は、通常、マルウェアがウイルス対策スキャン エンジンからアクティビティを隠ぺいする試みの中で、悪意のあるコードを実行するために使用されます。  
+  [攻撃面の減少ルール](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - *[ブロック]* に設定すると、Word、Excel、PowerPoint、OneNote などの Office アプリから他のプロセスにコードを挿入することができません。 コードの挿入は、通常、マルウェアがウイルス対策スキャン エンジンからアクティビティを隠ぺいする試みの中で、悪意のあるコードを実行するために使用されます。  
 
   **既定値**: ブロック
 
 - **Office macro code allow Win32 imports type (Office のマクロ コードによる Win32 のインポートの許可タイプ)**  
-  [攻撃面の減少ルール](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - *[ブロック]* に設定すると、このルールによって、Win32 DLL をインポートできるマクロ コードが含まれた Office ファイルをブロックすることが試みられます。 Office ファイルには、Word、Excel、PowerPoint、OneNote などがあります。 マルウェアは、Office ファイルのマクロ コードを使用して、Win32 DLL をインポートして読み込んだ後、それを使用して API 呼び出しを行い、システム全体にさらに感染させる可能性があります。  
+  [攻撃面の減少ルール](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - *[ブロック]* に設定すると、このルールによって、Win32 DLL をインポートできるマクロ コードが含まれた Office ファイルをブロックすることが試みられます。 Office ファイルには、Word、Excel、PowerPoint、OneNote などがあります。 マルウェアは、Office ファイルのマクロ コードを使用して、Win32 DLL をインポートして読み込んだ後、それを使用して API 呼び出しを行い、システム全体にさらに感染させる可能性があります。  
 
   **既定値**: ブロック
 
 - **子プロセスでの Office 通信アプリの起動**  
-  [攻撃面の減少ルール](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – *[有効にする]* に設定すると、このルールによって Outlook による子プロセスの作成が防止されます。 このルールでは、子プロセスの作成をブロックすることで、ソーシャル エンジニアリング攻撃から保護すると共に、エクスプロイトコードが Outlook の脆弱性を悪用するのを防ぐことができます。  
+  [攻撃面の減少ルール](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – *[有効にする]* に設定すると、このルールによって Outlook による子プロセスの作成が防止されます。 このルールでは、子プロセスの作成をブロックすることで、ソーシャル エンジニアリング攻撃から保護すると共に、エクスプロイトコードが Outlook の脆弱性を悪用するのを防ぐことができます。  
 
   **既定値**: 有効にする
 
 - **Office apps executable content creation or launch type (Office アプリの実行可能コンテンツの作成または起動タイプ)**  
-  [攻撃面の減少ルール](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – *ブロック* に設定すると、Office アプリで実行可能なコンテンツを作成できなくなります。 Office アプリには、Word、Excel、PowerPoint、OneNote、および Access などがあります。  
+  [攻撃面の減少ルール](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – *ブロック* に設定すると、Office アプリで実行可能なコンテンツを作成できなくなります。 Office アプリには、Word、Excel、PowerPoint、OneNote、および Access などがあります。  
 
   このルールの対象は、実行可能ファイルを作成または起動する不審な悪意のあるアドオンとスクリプト (拡張機能) で使用される一般的な動作です。 これは、マルウェアの一般的な手法です。 拡張機能は、Office アプリによって使用されるのをブロックされます。 通常、これらの拡張機能では、特定のタスクを自動化したり、ユーザー作成のアドオン機能を提供したりするスクリプトを実行するために、Windows Scripting Host (.wsh ファイル) が使用されます。
 
@@ -273,7 +273,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 ## <a name="exploit-protection"></a>悪用に対する保護  
 
 - **[Exploit Protection XML]**  
-  詳細については、Windows ドキュメントの「[Import, export, and deploy exploit protection configurations](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/import-export-exploit-protection-emet-xml)」 (悪用保護構成のインポート、エクスポート、および展開) を参照してください。  
+  詳細については、Windows ドキュメントの「[Exploit Protection 構成をインポート、エクスポート、展開する](/windows/security/threat-protection/microsoft-defender-atp/import-export-exploit-protection-emet-xml)」を参照してください。  
 
   IT 管理者が、組織内のすべてのデバイスに対して、目的のシステムとアプリケーションの軽減策オプションを表す構成をプッシュできるようにします。 この構成は XML で表されます。 
 

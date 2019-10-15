@@ -6,8 +6,9 @@
     - name: Microsoft Intune の概要
       href: what-is-intune.md
       displayName: ems; emm; azure ad; active directory; ad
-    - name: Intune が会社のためにできることとは。
-      href: get-started-evaluation.md
+    - name: デバイス管理の概要
+      href: what-is-device-management.md
+      displayName: teamviewer
     - name: 新機能
       href: whats-new.md
       items:
@@ -32,9 +33,6 @@
       href: tutorial-walkthrough-intune-portal.md
 - name: 概念
   items:
-    - name: デバイス管理とは
-      href: what-is-device-management.md
-      displayName: teamviewer
     - name: 教育用の Intune とは
       href: introduction-intune-education.md
     - name: 高レベル アーキテクチャ
