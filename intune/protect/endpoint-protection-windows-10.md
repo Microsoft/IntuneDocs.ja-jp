@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b9b9119294fe0757671568eb6b627974796b2de
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 22e3779cd0772753ccd8843cd1f1ff38617298d6
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732725"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163582"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune を使用してデバイスを保護するための Windows 10 (以降) の設定  
 
@@ -776,26 +776,27 @@ Microsoft Edge がデバイスにインストールされている必要があ�
  
 ## <a name="windows-defender-exploit-guard"></a>Windows Defender Exploit Guard  
 
-[Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard) を使用して、従業員が使用するアプリの攻撃対象を管理して減らします。  
+[悪用保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)を使用して、従業員が使用するアプリの攻撃対象領域を管理し、軽減します。  
 
 ### <a name="attack-surface-reduction"></a>攻撃の回避  
 
-攻撃の回避規則の詳細については、Windows Defender Exploit Guard のドキュメントの「 [Windows Defender Exploit guard を使用した攻撃対象](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)*領域*の削減」を参照してください。  
+攻撃の回避規則は、多くの場合、コンピューターが悪意のあるコードに感染するのを防ぐために役立ちます。  
 
 #### <a name="attack-surface-reduction-rules"></a>[攻撃の回避規則]  
 
 - **Windows ローカル セキュリティ機関サブシステムからの資格情報の盗難にフラグを設定する**  
   **既定値**: 未構成  
-  Exploit Guard:[攻撃](https://go.microsoft.com/fwlink/?linkid=874499)の回避規則
+  ルール: [Windows ローカル セキュリティ機関サブシステム (lsass.exe) からの資格情報の盗難をブロックする](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe)
 
   コンピューターを感染させるために、悪用目的のマルウェアによって一般的に使用されるアクションとアプリを防ぐのに役立ちます。  
+
   - **未構成**  
   - **[有効]** - Windows ローカル セキュリティ機関サブシステム (lsass.exe) からの資格情報の盗難にフラグを設定します。  
   - **[監査のみ]**  
 
 - **Adobe Reader (ベータ) からのプロセスの作成**  
   **既定値**: 未構成  
-  Exploit Guard:[攻撃](https://go.microsoft.com/fwlink/?linkid=853979)の回避規則  
+  ルール: [Adobe Reader による子プロセスの作成をブロック](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-adobe-reader-from-creating-child-processes)します  
 
   - **未構成**  
   - **Enable** -Adobe Reader から作成された子プロセスをブロックします。  
@@ -807,7 +808,7 @@ Office アプリによる次の操作をブロックします。
 
 - **他のプロセス内に挿入する Office アプリ (例外なし)**  
   **既定値**: 未構成  
-  [Exploit Guard のドキュメント](https://go.microsoft.com/fwlink/?linkid=872974)  
+  ルール: [Office アプリケーションによる他のプロセスへのコード挿入をブロックする](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-injecting-code-into-other-processes)  
 
   - **未構成**  
   - **ブロック**-Office アプリが他のプロセスに挿入されるのをブロックします。  
@@ -815,7 +816,7 @@ Office アプリによる次の操作をブロックします。
 
 - **実行可能なコンテンツを作成する Office アプリ/マクロ**  
   **既定値**: 未構成  
-  [Exploit Guard のドキュメント](https://go.microsoft.com/fwlink/?linkid=872975)  
+  ルール: [Office アプリケーションによる実行可能なコンテンツの作成をブロックする](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-applications-from-creating-executable-content)  
 
   - **未構成**  
   - **ブロック**ブロック Office アプリおよびマクロが実行可能なコンテンツを作成できないようにします。  
@@ -823,7 +824,7 @@ Office アプリによる次の操作をブロックします。
 
 - **子プロセスを起動する Office アプリ**  
   **既定値**: 未構成  
-  [Exploit Guard のドキュメント](https://go.microsoft.com/fwlink/?linkid=872976)  
+  ルール:[すべての Office アプリケーションによる子プロセスの作成をブロック](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-all-office-applications-from-creating-child-processes)します。  
 
   - **未構成**  
   - **ブロック**-Office アプリが子プロセスを起動するのをブロックします。  
@@ -831,7 +832,7 @@ Office アプリによる次の操作をブロックします。
   
 - **Office のマクロ コードからの Win32 のインポート**  
   **既定値**: 未構成  
-  [Exploit Guard のドキュメント](https://go.microsoft.com/fwlink/?linkid=872977)  
+  ルール: [Office マクロからの Win32 API 呼び出しをブロックする](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-win32-api-calls-from-office-macros)  
 
   - **未構成**  
   - Office のマクロコードからの Win32 インポート**をブロックし**ます。  
@@ -839,7 +840,7 @@ Office アプリによる次の操作をブロックします。
   
 - **Office コミュニケーション製品からのプロセスの作成**  
   **既定値**: 未構成  
-  [Exploit Guard のドキュメント](https://go.microsoft.com/fwlink/?linkid=874499)  
+  ルール: [Office 通信アプリケーションによる子プロセスの作成をブロックする](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-office-communication-application-from-creating-child-processes)  
 
   - **未構成**  
   - **Enable** -Office コミュニケーションアプリからの子プロセスの作成をブロックします。  
@@ -851,7 +852,7 @@ Office アプリによる次の操作をブロックします。
 
 - **難読化された js/vbs/ps/マクロ コード**  
   **既定値**: 未構成  
-  [Exploit Guard のドキュメント](https://go.microsoft.com/fwlink/?linkid=872978)    
+  ルール: [難読化された可能性のあるスクリプトの実行をブロックする](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-execution-of-potentially-obfuscated-scripts)    
 
   - **未構成**  
   - **ブロック**-難読化された js/vbs/ps/マクロコードをブロックします。  
@@ -859,7 +860,7 @@ Office アプリによる次の操作をブロックします。
 
 - **インターネットからダウンロードしたペイロードを実行する js/vbs (例外なし)**  
   **既定値**: 未構成  
-  [Exploit Guard のドキュメント](https://go.microsoft.com/fwlink/?linkid=872979)  
+  ルール: [JavaScript または VBScript による、ダウンロードされた実行可能なコンテンツの起動をブロックする](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-javascript-or-vbscript-from-launching-downloaded-executable-content)  
 
   - **未構成**  
   - **ブロック**ブロック js/vbs は、インターネットからダウンロードされたペイロードを実行しません。  
@@ -867,7 +868,7 @@ Office アプリによる次の操作をブロックします。
 
 - **PSExec および WMI コマンドからのプロセス作成**  
   **既定値**: 未構成  
-  [Exploit Guard のドキュメント](https://go.microsoft.com/fwlink/?linkid=874500)  
+  ルール: [PSExec および WMI コマンドから開始されるプロセス作成をブロックする](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-process-creations-originating-from-psexec-and-wmi-commands)  
 
   - **未構成**  
   - **[ブロック]** - PSExec および WMI コマンドから開始されるプロセス作成をブロックします。  
@@ -876,7 +877,7 @@ Office アプリによる次の操作をブロックします。
 
 - **USB から実行された信頼されていない署名なしのプロセス**  
   **既定値**: 未構成  
-  [Exploit Guard のドキュメント](https://go.microsoft.com/fwlink/?linkid=874502)    
+  ルール: [USB から実行された信頼されていない署名なしのプロセスをブロックする](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-untrusted-and-unsigned-processes-that-run-from-usb)    
 
   - **未構成**  
   - **[ブロック]** - USB から実行された信頼されていない署名なしのプロセスをブロックします。  
@@ -884,7 +885,7 @@ Office アプリによる次の操作をブロックします。
   
 - **普及、経過時間、または信頼されたリストの条件を満たしていない実行可能ファイル**  
   **既定値**: 未構成  
-  [Exploit Guard のドキュメント](https://go.microsoft.com/fwlink/?linkid=874503)    
+  ルール: [普及、経過時間、または信頼されたリストの条件を満たしていない実行可能ファイルの実行をブロックする](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)    
 
   - **未構成**  
   - **[ブロック]** - 普及、経過時間、または信頼されたリストの条件を満たしていない実行可能ファイルの実行をブロックします。  
@@ -896,7 +897,7 @@ Office アプリによる次の操作をブロックします。
 
 - **電子メール (Web メール/メール クライアント) からドロップされた実行可能なコンテンツ (exe、dll、ps、js、vbs など) の実行 (例外なし)**  
   **既定値**: 未構成  
-  [Exploit Guard のドキュメント](https://go.microsoft.com/fwlink/?linkid=872980)  
+  ルール: [電子メール クライアントと Web メールからの実行可能なコンテンツをブロックする](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail)  
 
   - **未構成**  
   - **[ブロック]** - 電子メール (Web メール/メール クライアント) からドロップされた実行可能なコンテンツ (exe、dll、ps、js、vbs など) の実行をブロックします。  
@@ -906,7 +907,7 @@ Office アプリによる次の操作をブロックします。
 
 - **高度なランサムウェア防止**  
   既定値: [未構成]  
-  [Exploit Guard のドキュメント](https://go.microsoft.com/fwlink/?linkid=874504)  
+  ルール: [ランサムウェアに対して高度な保護を使用する](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#use-advanced-protection-against-ransomware)  
 
   - **未構成**  
   - **[有効]** - 積極的なランサムウェア防止を使います。  
@@ -932,7 +933,7 @@ Office アプリによる次の操作をブロックします。
 
 ### <a name="controlled-folder-access"></a>フォルダー アクセスの制御  
 
-ランサムウェアなど、悪意のあるアプリおよび脅威からの[重要なデータの保護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)に役立ちます。  
+ランサムウェアなど、悪意のあるアプリおよび脅威からの[重要なデータの保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/controlled-folders)に役立ちます。  
 
 - **[フォルダーの保護]**  
   **既定値**: 未構成  
@@ -979,7 +980,7 @@ Office アプリによる次の操作をブロックします。
 - **XML のアップロード**  
   **既定値**: *[未構成]*  
 
-  Exploit protection を使用して、悪用[からデバイスを保護](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)するには、必要なシステムとアプリケーションの軽減策を含む XML ファイルを作成します。 XML ファイルを作成するには、次の2つの方法があります。  
+  Exploit protection を使用して、悪用[からデバイスを保護](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)するには、必要なシステムとアプリケーションの軽減策を含む XML ファイルを作成します。 XML ファイルを作成するには、次の2つの方法があります。  
 
   - *PowerShell* - *Get-ProcessMitigation*、*Set-ProcessMitigation*、*ConvertTo-ProcessMitigationPolicy* のうちの 1 つ以上の PowerShell コマンドレットを使います。 これらのコマンドレットは、軽減策設定を構成し、それらの XML 表現をエクスポートします。  
 
