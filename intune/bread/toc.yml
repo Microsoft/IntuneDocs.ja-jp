@@ -1,0 +1,39 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+    - name: Enterprise Mobility + Security
+      tocHref: /enterprise-mobility-security/
+      topicHref: /enterprise-mobility-security/
+      items:
+        - name: Intune
+          tocHref: /intune/
+          topicHref: /intune/
+          items:
+            - name: 教育用の Intune
+              tocHref: /intune-education/
+              topicHref: /intune-education/
+            - name: Intune ユーザー ヘルプ
+              tocHref: /intune-user-help/
+              topicHref: /intune-user-help/
+            - name: アプリ
+              tocHref: /intune/apps/
+              topicHref: /intune/apps/
+            - name: 基本要素
+              tocHref: /intune/fundamentals/
+              topicHref: /intune/fundamentals/
+            - name: 登録
+              tocHref: /intune/enrollment/
+              topicHref: /intune/enrollment/
+            - name: リモート操作
+              tocHref: /intune/remote-actions/
+              topicHref: /intune/remote-actions/
+            - name: 構成
+              tocHref: /intune/configuration/
+              topicHref: /intune/configuration/
+            - name: 保護
+              tocHref: /intune/protect/
+              topicHref: /intune/protect/
+            - name: Developer
+              tocHref: /intune/developer/
+              topicHref: /intune/developer/
