@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 312aee3752525ab2898c6d4e4ea06da685d1cdec
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 308f152a585fe7b605d309943545f242031ea177
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728365"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379714"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Intune デバイスのプライマリ ユーザーを確認する
 
@@ -46,7 +46,7 @@ ms.locfileid: "71728365"
 
 Intune デバイスにプライマリ ユーザーが割り当てられていない場合、ポータル サイト アプリでは共有デバイスとして検出されます。 共有デバイスは、デバイス タイルに表示される "共有" ラベルで視覚的に特定できます。 このモードでも、ポータル サイトを使用して、使用できるアプリを要求してインストールすることができます。 ただし、セルフサービスのアクション (リセット/名前変更/インベントリからの削除) は利用できません。  
 
-共有デバイスのポータル サイトに表示するには、使用できるアプリをユーザー グループに割り当てる必要があります。 これらは、IT 管理者によるアプリの構成方法に応じて、システム コンテキストまたはユーザー コンテキストでインストールされます。 アプリ コンテキストの詳細については、「[Windows 10 デバイスでのアプリのインストール](../apps/apps-windows-10-app-deploy.md#installing-apps-on-windows-10-devices)」を参照してください。 この機能を使用するには、ポータル サイト バージョン 10.3.4651.0 以降が必要です。
+共有デバイスのポータル サイトに表示するには、使用できるアプリをユーザー グループに割り当てる必要があります。 これらは、IT 管理者によるアプリの構成方法に応じて、システム コンテキストまたはユーザー コンテキストでインストールされます。 アプリ コンテキストの詳細については、「[Windows 10 デバイスでのアプリのインストール](../apps/apps-windows-10-app-deploy.md)」を参照してください。 この機能を使用するには、ポータル サイト バージョン 10.3.4651.0 以降が必要です。
 
 
 ## <a name="who-is-assigned-as-the-primary-user"></a>プライマリ ユーザーとして割り当てられるユーザー

@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c87cb90ee7803b0848c57b91a801976b2aa4d6e9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2d2777f2caabc24a457fc407b3e47facb1f6fc3c
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721709"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314616"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune でサポートされるオペレーティング システムとブラウザー
 
 Microsoft Intune をセットアップする前に、サポートされているオペレーティング システムとブラウザーを確認してください。
 
-デバイスへの Intune のインストールについては、[マネージド デバイスを使用した作業](https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions) に関する記事と、[Intune のネットワーク帯域幅の使用法](network-bandwidth-use.md)に関する記事を参照してください。
+デバイスへの Intune のインストールについては、「[マネージド デバイスを使用して作業する](https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions)」と [Intune のネットワーク帯域幅の使用法](network-bandwidth-use.md)に関するページを参照してください。
 
 構成サービス プロバイダー サポートの詳細については、「[Configuration service provider reference (構成サービス プロバイダー リファレンス)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)」を参照してください。
 

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 909dba16e04b11989caa79112c5a89fbb7c52114
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 39858a74cd9503ff40de51ab3680ccf509d25c49
+ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722918"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310947"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Intune を使用して SCEP をサポートするようにインフラストラクチャを構成する  
   
@@ -37,7 +37,7 @@ Intune では、[アプリと企業リソースへの接続を認証する](cert
 
 ### <a name="servers-and-server-roles"></a>サーバーとサーバー ロール  
 次のオンプレミス インフラストラクチャは、Active Directory にドメイン参加しているサーバー (Web アプリケーション プロキシ サーバーを除く) で実行する必要があります。  
-- **証明機関** – Windows Server 2008 R2 Service Pack 1 以降の Enterprise エディション上で実行する Microsoft Active Directory 証明書サービスのエンタープライズ証明機関 (CA) を使用します。 使用する Windows Server のバージョンが、Microsoft によって引き続きサポートされている必要があります。 スタンドアロン CA はサポートされません。 詳細については、「[証明機関のインストール](http://technet.microsoft.com/library/jj125375.aspx)」を参照してください。 ご使用の CA で Windows Server 2008 R2 SP1 が実行されている場合は、[KB2483564 の修正プログラムをインストール](http://support.microsoft.com/kb/2483564/)する必要があります。  
+- **証明機関** – Windows Server 2008 R2 Service Pack 1 以降の Enterprise エディション上で実行する Microsoft Active Directory 証明書サービスのエンタープライズ証明機関 (CA) を使用します。 使用する Windows Server のバージョンが、Microsoft によって引き続きサポートされている必要があります。 スタンドアロン CA はサポートされません。 詳細については、「[証明機関のインストール](https://technet.microsoft.com/library/jj125375.aspx)」を参照してください。 ご使用の CA で Windows Server 2008 R2 SP1 が実行されている場合は、[KB2483564 の修正プログラムをインストール](https://support.microsoft.com/kb/2483564/)する必要があります。  
 
 - **NDES サーバー ロール** – Windows Server 2012 R2 以降で、ネットワーク デバイス登録サービス (NDES) サーバー ロールを構成する必要があります。 [NDES のインストール](#set-up-ndes)については、この記事内の後のセクションで説明します。  
 
@@ -45,7 +45,7 @@ Intune では、[アプリと企業リソースへの接続を認証する](cert
   - エンタープライズ CA をホストするサーバーにインストールされている NDES を使用することはできません。  
   - NDES をホストしているのと同じサーバーに、Microsoft Intune Certificate Connector をインストールします。  
 
-  NDES の詳細については、Windows Server のドキュメントの「[ネットワーク デバイス登録サービスのガイダンス](http://technet.microsoft.com/library/hh831498.aspx)」、および「[ポリシー モジュールとネットワーク デバイス登録サービスの使用](https://technet.microsoft.com/library/dn473016.aspx)」を参照してください。  
+  NDES の詳細については、Windows Server のドキュメントの「[ネットワーク デバイス登録サービスのガイダンス](https://technet.microsoft.com/library/hh831498.aspx)」、および「[ポリシー モジュールとネットワーク デバイス登録サービスの使用](https://technet.microsoft.com/library/dn473016.aspx)」を参照してください。  
 
 - **Microsoft Intune Certificate Connector** – Intune で SCEP 証明書プロファイルを使用するには、Microsoft Intune Certificate Connector が必要です。 この記事では、[このコネクタをインストールする](#install-the-intune-certificate-connector)手順について説明します。  
 
@@ -61,7 +61,7 @@ Intune では、[アプリと企業リソースへの接続を認証する](cert
 
 - **Web アプリケーション プロキシ サーバー** (省略可能) - NDES URL をインターネットに公開するには、Windows Server 2012 R2 以降を実行しているサーバーを Web アプリケーション プロキシ (WAP) サーバーとして使用します。  これにより、イントラネットとインターネットに接続するどちらのデバイスでも証明書を取得できるようになります。
 
-  WAP をホストするサーバーは、ネットワーク デバイス登録サービスで使用される長い URL のサポートを有効にする [更新プログラムをインストールする](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) 必要があります。 この更新プログラムは、 [2014 年 12 月の更新プログラムのロールアップ](http://support.microsoft.com/kb/3013769)に含まれます。または、 [KB3011135](http://support.microsoft.com/kb/3011135)から個別に入手できます。  
+  WAP をホストするサーバーは、ネットワーク デバイス登録サービスで使用される長い URL のサポートを有効にする [更新プログラムをインストールする](https://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) 必要があります。 この更新プログラムは、 [2014 年 12 月の更新プログラムのロールアップ](https://support.microsoft.com/kb/3013769)に含まれます。または、 [KB3011135](https://support.microsoft.com/kb/3011135)から個別に入手できます。  
 
   WAP サーバーは、外部クライアントに公開されている名前と一致する SSL 証明書を持ち、NDES サービスをホストするコンピューターで使用されている SSL 証明書を信頼する必要があります。 これらの証明書を使用すると、WAP サーバーがクライアントからの SSL 接続を終了して、NDES サービスへの新しい SSL 接続を作成できるようになります。  
 

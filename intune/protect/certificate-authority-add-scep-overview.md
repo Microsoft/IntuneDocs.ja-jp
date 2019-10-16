@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8df5f46f411a6aee1c3040fa4a1a37fb49d5fb2
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 4b82124fe8f6da7116c8333e293f219d7c667f9c
+ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036436"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72310917"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>SCEP を使用して Intune でパートナーの証明機関を追加する
 
@@ -31,7 +31,7 @@ Intune でサード パーティの証明機関 (CA) を使用します。 サ�
 **パート 1 - オープン ソース API を使用する**  
 Intune と統合するための API が、Microsoft によって作成されています。 その API を使うと、証明書を検証し、成功または失敗の通知を送信し、SSL (具体的には SSL ソケット ファクトリ) を使って Intune と通信することができます。
 
-この API は、[Intune SCEP API パブリック GitHub リポジトリ](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)からダウンロードして、ソリューションで使用できます。 SCEP によってデバイスに証明書がプロビジョニングされる前に、この API をサード パーティの SCEP サーバーで使って、Intune に対してカスタム チャレンジの検証を実行します。
+この API は、[Intune SCEP API パブリック GitHub リポジトリ](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)からダウンロードして、ソリューションで使用できます。 SCEP によってデバイスに証明書がプロビジョニングされる前に、この API をサード パーティの SCEP サーバーで使って、Intune に対してカスタム チャレンジの検証を実行します。
 
 [Intune SCEP 管理ソリューションとの統合](scep-libraries-apis.md)に関するページでは、API の使用、そのメソッド、作成したソリューションのテストに関して、さらに詳しく説明されています。
 
@@ -129,11 +129,11 @@ Azure AD アプリを登録するのに必要なアクセス許可があるこ�
 
 自社の製品と Intune の統合に関心をお持ちのサード パーティ CA は、API のガイダンスを確認してください。
 
-- [Intune SCEP API の GitHub リポジトリ](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
+- [Intune SCEP API の GitHub リポジトリ](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
 - [サード パーティ CA 向けの Intune SCEP API ガイダンス](scep-libraries-apis.md)
 
 ## <a name="see-also"></a>関連項目
 
 - [証明書プロファイルを構成する](certificates-scep-configure.md)
-- [Intune SCEP API の GitHub リポジトリ](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
+- [Intune SCEP API の GitHub リポジトリ](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
 - [サード パーティ CA 向けの Intune SCEP API ガイダンス](scep-libraries-apis.md)
