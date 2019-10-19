@@ -9,6 +9,7 @@ ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: cfd214bc-f072-4808-af2e-a3cbf7af9bca
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16d7142e6dc38a177f8820f60e7335b8b23a1eeb
-ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
+ms.openlocfilehash: 68a44027c14e0a52d72fc032a6ab42413fa8df96
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71099795"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508293"
 ---
 # <a name="sign-in-to-company-portal"></a>ポータルサイトにサインインします  
 
@@ -39,7 +40,7 @@ ms.locfileid: "71099795"
 
 1. デバイスでアプリを開き、 **[サインイン]** をタップします。  
 
-   [![ポータルサイトサインインページのスクリーンショットの例。](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
+   [ポータルサイトサインインページの ![Example スクリーンショット。](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
 
 
 2. **職場または学校のアカウント**を入力して、 **[次へ]** をタップします。
@@ -78,7 +79,7 @@ ms.locfileid: "71099795"
 
    ![会社のコンピューターから固有のパスワードで https://microsoft.com/devicelogin ページにアクセスし、コードを使用してサインインするように指示されます。](/intune-user-help/media/cp_ios_aad_signin_after_1804_006.png)
 
-3. 他のデバイス (認証に使用しているデバイス) で、ブラウザーを開き、に[https://microsoft.com/devicelogin](https://microsoft.com/devicelogin)アクセスします。 コードを入力するか、貼り付けます。  
+3. 他のデバイス (認証に使用しているデバイス) で、ブラウザーを開き、 [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin)にアクセスします。 コードを入力するか、貼り付けます。  
 
    ![ポータル サイト アプリの画像ではなく会社のコンピューターのブラウザーの画像です。 [デバイス ログイン] ページが表示され、ポータル サイト アプリで取得したコードを入力するように要求されます。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 

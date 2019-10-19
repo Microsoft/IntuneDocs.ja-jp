@@ -9,6 +9,7 @@ ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da3a864e492506845432b2106e0ecce4fb2e331a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8dd62e17db94807bc31cb4368de390ac2e38b90e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838117"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502016"
 ---
 # <a name="make-your-device-safer-with-the-right-password"></a>適切なパスワードでデバイスを守る
 
@@ -34,17 +35,17 @@ Windows デバイスが会社のサポートのパスワード ポリシーに�
 
 ## <a name="to-change-your-password-on-windows-phone-81"></a>Windows Phone 8.1 のパスワードを変更するには
 
-1. **ホーム**画面で、**[設定]** を選択して、**[ロック画面]** を選択します。
-2. **[パスワード]** まで下にスクロールして、**[パスワードの変更]** を選択します。
+1. **ホーム**画面で、 **[設定]** を選択して、 **[ロック画面]** を選択します。
+2. **[パスワード]** まで下にスクロールして、 **[パスワードの変更]** を選択します。
 3. **[現在のパスワード]** ボックスに現在のパスワードを入力します。
-4. **[新しいパスワード]** ボックスに新しいパスワードを入力し、**[パスワードの確認入力]** ボックスにそれを再入力します。
+4. **[新しいパスワード]** ボックスに新しいパスワードを入力し、 **[パスワードの確認入力]** ボックスにそれを再入力します。
 4. **[完了]** を選択します。
 
 ## <a name="to-set-your-password-on-windows-phone-81"></a>Windows Phone 8.1 のパスワードを設定するには
 
-1. **ホーム**画面で、**[設定]** を選択して、**[ロック画面]** を選択します。
-2. **[パスワード]** まで下にスクロールし、**[パスワード]** バーを **[オン]** にスライドします。
-3. **[新しいパスワード]** ボックスに新しいパスワードを入力し、**[パスワードの確認入力]** ボックスにそれを再入力します。
+1. **ホーム**画面で、 **[設定]** を選択して、 **[ロック画面]** を選択します。
+2. **[パスワード]** まで下にスクロールし、 **[パスワード]** バーを **[オン]** にスライドします。
+3. **[新しいパスワード]** ボックスに新しいパスワードを入力し、 **[パスワードの確認入力]** ボックスにそれを再入力します。
 4. **[完了]** を選択します。
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

@@ -9,6 +9,7 @@ ms.date: 10/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: e240419a-a836-4be3-8fd9-39a4ec890226
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8127d10cee17dd445e1830a8e15a278adfa55ad
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: cdc15f6880abca53ed2110daf6169cddb48464c2
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55848027"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508470"
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>ポータル サイトからのデバイスの削除
 
@@ -31,13 +32,13 @@ ms.locfileid: "55848027"
 
 デバイスを削除するには:
 
-1. [ポータル サイト Web サイト](https://portal.manage.microsoft.com)で、__[メニュー]__ ボタン、__[デバイス]__ の順に選択します。  
+1. [ポータル サイト Web サイト](https://portal.manage.microsoft.com)で、 __[メニュー]__ ボタン、 __[デバイス]__ の順に選択します。  
 
 2. 削除するデバイスを選択します。  
 
     ![汎用的な名前が付いた不明なデバイスが表示されている 2 つのタイルを含む [デバイス] ページのスクリーンショット。 デバイスのすぐ下に灰色のバナーが配置され、ユーザーは使用中のデバイスまたは新たに追加するデバイスを識別するように求められています。](./media/rename-reset-device-step2-1808.png) 
 
-3. **[削除]** を選びます。 ページの上部に削除オプションが表示されない場合は、**[詳細 (...)]** > **[削除]** の順に選択します。  
+3. **[削除]** を選びます。 ページの上部に削除オプションが表示されない場合は、 **[詳細 (...)]**  >  **[削除]** の順に選択します。  
 
    ![[名前の変更]、[削除]、[デバイスのリセット]、[パスコードのリセット]、[リモート ロック] を示す上部のリンク リストを含む、ポータル サイト Web サイト上の選択されたデバイスに対するデバイスの詳細ページ。 ](./media/rename-reset-device-1808.png)  
   

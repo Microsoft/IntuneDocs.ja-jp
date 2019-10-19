@@ -6,8 +6,9 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/26/2019
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: ''
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 324550836cd8e7c8ea2786d15618d5f5010a043f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e7ed93c86d3fbe7ed7a6ac5d4b1a3494fb55f2bc
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735247"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506992"
 ---
 # <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>Microsoft Intune で Android ゼブラデバイスのトラブルシューティングを行い、潜在的な問題を確認する
 
@@ -53,14 +54,14 @@ Microsoft Intune では、[ゼブラ Mobility Extensions (MX) を使用して、
 ### <a name="get-logs-using-android-debug-bridge"></a>Android Debug Bridge を使用してログを取得する
 プロファイルが既に Intune と共に展開された後でログを取得するには、 [Android Debug Bridge (adb)](https://developer.android.com/studio/command-line/adb)を搭載したコンピューターにデバイスを接続します (Android の web サイトを開きます)。
 
-デバイスでは `/sdcard/Android/data/com.microsoft.windowsintune.companyportal/files` にログが保存されます。
+デバイスでは、ログはに保存され `/sdcard/Android/data/com.microsoft.windowsintune.companyportal/files`
 
 ### <a name="get-logs-from-email"></a>電子メールからログを取得する
 プロファイルが既に Intune と共に展開された後でログを取得するために、エンドユーザーは、デバイス上の電子メールアプリを使用してログを電子メールで送信できます。 ゼブラデバイスで、ポータルサイトアプリを開き、ログを[送信](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android)します。 ログの送信機能を使用すると、PowerLift インシデント ID も作成されます。これは、Microsoft サポートに連絡する場合に参照できます。
 
 ## <a name="read-the-logs"></a>ログを読み取る
 
-ログを見ると、`<characteristic-error>` タグが表示されるたびにエラーが発生します。 エラーの詳細は、`desc` プロパティ > @no__t 0 タグに書き込まれます。
+ログを見ると、`<characteristic-error>` タグが表示されるたびにエラーが発生します。 エラーの詳細は `desc` プロパティ > `<parm-error>` タグに書き込まれます。
 
 ## <a name="error-types"></a>エラーの種類
 
@@ -112,7 +113,7 @@ Microsoft Intune では、[ゼブラ Mobility Extensions (MX) を使用して、
 </wap-provisioningdoc>
 ```
 
-ログには、@no__t 0 のタグが含まれているため、エラーが表示されます。 このシナリオでは、プロファイルは、指定されたパスに存在しない Android パッケージ (APK) をインストールしようとしました。
+ログには `<characteristic-error>` タグが含まれているため、エラーが表示されます。 このシナリオでは、プロファイルは、指定されたパスに存在しない Android パッケージ (APK) をインストールしようとしました。
 
 ```xml
 <wap-provisioningdoc>

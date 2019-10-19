@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 06/26/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ef61292086fb9781c2924ef31271e7f36d99ab2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: dfe795a812572fa92c51a23b9e15b7fe48254174
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735078"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72495774"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune で iOS デバイス用のカスタム設定を使用する
 
@@ -58,7 +59,7 @@ iOS デバイスを使用するとき、Intune にカスタム設定を取り込
 - **カスタム構成プロファイル名**: ポリシーの名前を入力します。 この名前は、デバイス上と、Intune の状態に表示されます。
 - **構成プロファイル ファイル**: Apple Configurator または Apple Profile Manager を使用して作成した構成プロファイルを指定します。 インポートしたファイルは、 **[ファイルの内容]** 領域に表示されます。
 
-  カスタム構成ファイルにデバイストークンを追加することもできます。 デバイストークンは、デバイス固有の情報を追加するために使用されます。 たとえば、シリアル番号を表示するには、`{{serialnumber}}` と入力します。 デバイスでは、各デバイスに固有の `123456789ABC` と同様のテキストが表示されます。 変数を入力するときは、必ず中かっこ `{{ }}` を使用してください。 [アプリの構成トークン](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)に関する記事には、使用できる変数の一覧が掲載されています。 `deviceid` または他のデバイス固有の値を使用することもできます。
+  カスタム構成ファイルにデバイストークンを追加することもできます。 デバイストークンは、デバイス固有の情報を追加するために使用されます。 たとえば、シリアル番号を表示するには、`{{serialnumber}}` と入力します。 デバイスでは、各デバイスに固有の `123456789ABC` のようなテキストが表示されます。 変数を入力するときは、必ず中かっこ `{{ }}` を使用してください。 [アプリの構成トークン](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list)に関する記事には、使用できる変数の一覧が掲載されています。 `deviceid` または他のデバイス固有の値を使用することもできます。
 
   > [!NOTE]
   > 変数は UI で検証されず、大文字と小文字が区別されます。 その結果、不適切な入力で保存されたプロファイルが表示される場合があります。 たとえば、`{{deviceid}}` の代わりに `{{DeviceID}}` を入力した場合、リテラル文字列がデバイスの一意の ID の代わりに表示されます。 正しい情報を入力してください。

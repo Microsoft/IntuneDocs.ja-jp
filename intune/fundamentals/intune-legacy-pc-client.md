@@ -8,20 +8,20 @@ manager: dougeby
 ms.date: 06/15/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
-ms.technology: ''
-ms.assetid: ''
+ms.assetid: 1f104923-12df-453c-9c20-942ef65a0945
 ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe6b5967a5980304ba2f6c9af75491463dae1b4b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 5ab1be3d34d52e824d1ff06124e28206fb7b07a1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736105"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510189"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Azure コンソールと従来の Intune PC クライアントでの Intune
 
@@ -34,6 +34,8 @@ Azure で Intune を使用して組織の Windows デバイスを管理する場
 従来の Intune PC クライアントを使用する代わりに、[Windows 10 デバイスを管理するモバイル デバイス管理 (MDM)](../configuration/device-restrictions-windows-10.md) を使用することをお勧めします。 MDM を使用した Windows 10 デバイスの管理機能は、Azure Portal 上の Intune で提供されています。 Windows 10 の MDM には、従来の Intune PC クライアントでは提供されていない、多くの新しい管理およびセキュリティ機能があります。
 
 ## <a name="legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>従来の PC クライアント機能が使用できるのは Silverlight コンソールのみです。
+
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune PC クライアント管理ワークフローでは [Silverlight ベースの Intune 管理コンソール](https://manage.microsoft.com/)が使用されており、次のような影響があります。
 
@@ -61,7 +63,7 @@ PC クライアントと MDM 機能の詳細な比較については、[Windows 
 Intune PC クライアントでの Windows 10 デバイス管理から MDM での管理に切り替えるには、次の手順に従います。
 
 1. Silverlight コンソールで、**選択的ワイプ**を実行して PC クライアントからデバイスを登録解除します。
-  ![Warning ポップアップ [デバイスを選択的にワイプする] オプションが選択された状態で @ no__t-1
+  [デバイスを選択的にワイプする] ラジオボタンを選択して ![Warning ポップアップ ](./media/intune-legacy-pc-client/image02.png)
 2. [MDM (および/または Azure AD Join)](../enrollment/windows-enroll.md) を使用してデバイスを再登録します。
 
 ## <a name="next-steps"></a>次の手順

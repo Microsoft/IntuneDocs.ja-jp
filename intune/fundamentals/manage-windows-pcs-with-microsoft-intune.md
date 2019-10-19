@@ -5,27 +5,32 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2018
+ms.date: 10/15/2019
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
-ms.technology: ''
 ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8f481c17e6cb1285147c7f6361bfff73801b2bba
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fb9fb439bd0bc59ae2c69ec966587d58c8c97bf4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736131"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510104"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Intune ソフトウェア クライアントを使用して Windows PC をコンピューターとして管理する
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
+
+> [!WARNING]
+> Microsoft は、[2020 年 1 月 14 日に Windows 7 のサポートが終了する](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)ことを発表しました。 この日に、Intune でも Windows 7 を実行しているデバイスに対するサポートが廃止されます。 Microsoft は、任意のサービスやサポートの中断を回避するために、Windows 10 に移行することを強くお勧めします。
+> 
+> 詳細については、「 [Intune の変更の計画: Windows 7 のサポート終了間近](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7-)」を参照してください。
 
 > [!NOTE]
 > 以下に説明するように、Microsoft Intune を使用して、[モバイル デバイス管理 (MDM) によりモバイル デバイスとして](../enrollment/windows-enroll.md)、または Intune ソフトウェア クライアントによりコンピューターとして、Windows PC を管理できます。 しかし、Microsoft では、可能な場合は常に [MDM 管理ソリューションを使用する](../enrollment/windows-enroll.md)ことをお勧めします。 詳細については、「[Windows PC のコンピューターとしての管理とモバイル デバイスとしての管理の比較](pc-management-comparison.md)」をご覧ください。 
@@ -35,7 +40,6 @@ Intune は、モバイル デバイス管理するための組織向けの包括
 Intune ソフトウェア クライアントは、モバイル デバイスとして管理することができない Windows 7 などの従来のオペレーティング システムを搭載する Windows PC に最も適しています。 Intune ソフトウェア クライアントは、グループ ポリシーのような管理機能を使って、クラウドから PC を管理します。
 
 Intune は、ソフトウェア クライアントを使って、最大 7,000 台の Windows PC をコンピューターとして管理できます。 大規模な展開の場合は、モバイル デバイスとして Windows 10 PC を管理します。 Intune の各リリースおよび Windows 10 の更新プログラムには、モバイル デバイス管理アーキテクチャに基づく管理機能が含まれます。 モバイル デバイスとして管理される Windows 10 に組織を移行することを強くお勧めします。
-
 
 > [!NOTE]
 > Windows 8.1 以降のデバイスは、Intune クライアント ソフトウェアを使って PC として、またはモバイル デバイスとして、管理できます。 同じデバイスで両方の方法を使うことはできません。 Intune クライアント ソフトウェアで PC を管理することを決定する前に、慎重に検討してください。 このトピックでは、Intune クライアント ソフトウェアを実行してデバイスを PC として管理する方法についてのみ説明します。
@@ -60,9 +64,6 @@ Intune クライアント ソフトウェアをインストールするハード
 |管理者のアクセス許可|クライアント ソフトウェアをインストールするアカウントは、そのデバイスのローカル管理者のアクセス許可を持っている必要があります。|
 |Windows インストーラー 3.1|PC には Windows インストーラー 3.1 以降がインストールされている必要があります。<br /><br />PC で Windows インストーラーのバージョンを確認するには<br /><br />  PC で、 **%windir%\System32\msiexec.exe** を右クリックし、 **[プロパティ]** をクリックします。<br /><br />最新バージョンの Windows インストーラーは、Microsoft Developer Network Web サイトの「 [Windows Installer Redistributables (Windows インストーラー再頒布可能パッケージ)](http://go.microsoft.com/fwlink/?LinkID=234258) 」からダウンロードできます。|
 |互換性のないクライアント ソフトウェアを削除する|Intune クライアント ソフトウェアをインストールする前に、その PC から Configuration Manager、Operations Manager、および Service Manager のクライアント ソフトウェアをアンインストールします。|
-
-> [!WARNING]
-> Microsoft は、[2020 年 1 月 14 日に Windows 7 のサポートが終了する](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)ことを発表しました。 この日に、Intune でも Windows 7 を実行しているデバイスに対するサポートが廃止されます。 Microsoft は、任意のサービスやサポートの中断を回避するために、Windows 10 に移行することを強くお勧めします。 
 
 ## <a name="deploying-the-intune-software-client"></a>Intune ソフトウェア クライアントの展開
 Intune 管理者は、さまざまな方法でユーザーが Intune ソフトウェア クライアントを利用できるようにすることができます。 方法については、「[Windows PC に Intune ソフトウェア クライアントをインストールする](../install-the-windows-pc-client-with-microsoft-intune.md)」をご覧ください。

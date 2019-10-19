@@ -9,6 +9,7 @@ ms.date: 04/19/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 26aa3698-7e4d-453a-8852-ab75e72b6485
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b042cbf79b284a4539e915fe80ce40dfbfcecd6f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e1a6e2a001e8c323ba73dd7e9ad4dd82df968e6d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55841438"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506208"
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>通信費管理サービスに Android デバイスを登録する
 
@@ -43,7 +44,7 @@ ms.locfileid: "55841438"
 
    ![Datalert アプリの [設定] 画面の画像。画面の上半分ではデバイスを登録するための [電話番号] フィールドがオファーされ、Microsoft Office 365 アカウントと Intune サブスクリプションがある場合は、画面下部で "Microsoft アカウントでの登録" がオファーされます。](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
 
-2. 利用可能なアカウントから職場または学校のアカウントを選択します。 自分のアカウントが一覧にない場合は、**[アカウントの追加]** ボタンを使用してアカウントにサインインできます。
+2. 利用可能なアカウントから職場または学校のアカウントを選択します。 自分のアカウントが一覧にない場合は、 **[アカウントの追加]** ボタンを使用してアカウントにサインインできます。
 
    ![サンプル アカウントと [アカウントの追加] ボタンを示す "アカウントの選択" 画面のスクリーンショット。](./media/and-enroll-12b-tem-datalert-enroll-select-msft-account.png)
 

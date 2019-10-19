@@ -1,34 +1,52 @@
 ---
-title: 詳細ログ記録を使用して会社のサポートがデバイスの問題を解決できるようにする | Microsoft Docs
+title: Intune アプリでログ設定を構成する |Microsoft Docs
 description: 詳細ログ記録を使用して会社のサポートがデバイスの問題を解決できるようにする
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/23/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: arnab
+ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3b0eb38b92ff5c18d58cf6ebe6f31e4b8a320dd9
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: 2326aed90037fbcc6fc693bcdb67c86b57ed34a0
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069192"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508002"
 ---
-# <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>詳細ログ記録を使用して会社のサポートがデバイスの問題を解決できるようにする
+# <a name="configure-logging-settings"></a>ログ設定の構成
 
-Android デバイスが Intune に登録されたら、*[詳細ログ記録]* を使用することで、デバイスで起こっていることの詳しいログをポータル サイト アプリと Intune で管理されたアプリに記録させることができます。 これらのログは、お客様がポータル サイトまたは Intune で管理されたアプリを使用している際に問題が発生した場合、会社のサポートがその問題を解決する上で有用な情報です。 デバイスでは既定で詳細ログ記録が有効になっており、会社のサポートに送信されるログには、お客様の電子メール アドレスが含まれます。
+ポータルサイトアプリ、Microsoft Intune アプリ、Intune で管理されているアプリがアプリのアクションを記録できるように、ログ設定を構成します。 アプリで問題が発生し、それを報告した場合、サポートチームはこれらのログで詳細を確認します。 
 
-[詳細ログ記録] をオンまたはオフにするには、職場または学校の資格情報を使用して会社のポータル アプリにサインインし、**[設定]** をタップし、**[詳細ログ記録]** の横にあるオン/オフ ボタンをタップします。
+> [!NOTE]
+> サポートチームに送信するログには、電子メールアドレスが含まれます。  
 
-サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。
+## <a name="configure-company-portal-logging"></a>ポータルサイトログを構成する
+詳細ログには、ポータルサイトアプリで実行するすべてのアクションが記録されます。 既定では、デバイスで有効になっています。 ポータルサイトで詳細ログ記録をオフにするには:  
+
+1. 会社のポータル アプリにサインインする
+2. **[設定]** をタップします。
+3. **詳細ログ**の横にあるスイッチを **[オフ]** に切り替えます。
+
+## <a name="configure-microsoft-intune-app-logging"></a>Microsoft Intune アプリのログ記録の構成
+Microsoft Intune アプリでは、ログの詳細レベルを構成できます。 レベルの既定値は "**重要**" です。 ログ記録の詳細を調整するには:  
+
+1. Microsoft Intune アプリを開きます。  
+2. **[設定]** をタップします。  
+3. **[ログレベルの詳細]** で、記録された詳細レベルを上げる場合は [**詳細] を**選択し、ログ記録をオフにする場合は **[オフ]** を選択します。  
+
+## <a name="next-steps"></a>次の手順  
+
+サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。  

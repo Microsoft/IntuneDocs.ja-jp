@@ -9,6 +9,7 @@ ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef7ec650c65206eeab69d8f666dc4fb39052bbdb
-ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.openlocfilehash: 81c842eb27b1b9131c164ced5aeed86a78a37353
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68862183"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506291"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Microsoft Intune アプリで会社のデバイスを登録する
 
@@ -82,7 +83,7 @@ ms.locfileid: "68862183"
 
     ![[スタート] ボタンが強調表示されている職場の携帯電話の設定画面の例の画像。](./media/fully-managed-intune-app-17.png)   
 
-11. [**サインイン **] をタップし、[** 次へ**] をタップして登録を開始します。 [登録が完了しました] というメッセージ**が**表示されたら、[完了] をタップします。  
+11. [**サインイン **] をタップし、[** 次へ**] をタップして登録を開始します。 登録が完了しました というメッセージが表示されたら、**完了** をタップします。  
 
     ![[アクセスの設定]、[デバイスの登録] 画面、[完了] ボタンの強調表示の画像の例。](./media/fully-managed-intune-app-19.png)   
 

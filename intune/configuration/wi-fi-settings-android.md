@@ -6,21 +6,23 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/06/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
+ms.reviewer: maholdaa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d341aeace950f62ae699aa7760a65c0fd2f74fa
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4a9bd1691b7943f02c9577e962fb1bcd5d9cf40a
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734038"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585334"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Microsoft Intune で Android を実行するデバイス用の Wi-Fi 設定を追加する
 
@@ -38,14 +40,12 @@ ms.locfileid: "71734038"
 
 - **[Wi-Fi の種類]** : **[Basic]** を選択します。
 - **[SSID]** :**サービスセット識別子**を入力します。これは、デバイスが接続するワイヤレスネットワークの実際の名前です。 ただし、ユーザーが接続を選択したときにユーザーに表示されるのは、構成された**ネットワーク名**のみです。
-- **[自動的に接続する]** : **[有効]** を選択すると、デバイスが範囲内に入るとこのネットワークに自動的に接続します。 **[無効]** を選択すると、デバイスは自動的に接続されません。
 - **[非公開のネットワーク]** : **[有効]** を選択すると、デバイスで使用可能なネットワークのリストにこのネットワークが含まれなくなります。 SSID はブロードキャストされません。 **[無効]** を選択すると、デバイスで使用可能なネットワークのリストにこのネットワークが含まれるようになります。
 
 ## <a name="enterprise"></a>Enterprise
 
 - **[Wi-Fi の種類]** : **[Enterprise]** を選択します。
 - **[SSID]** :**サービスセット識別子**を入力します。これは、デバイスが接続するワイヤレスネットワークの実際の名前です。 ただし、ユーザーが接続を選択したときにユーザーに表示されるのは、構成された**ネットワーク名**のみです。
-- **[自動的に接続する]** : **[有効]** を選択すると、デバイスが範囲内に入るとこのネットワークに自動的に接続します。 **[無効]** を選択すると、デバイスは自動的に接続されません。
 - **[非公開のネットワーク]** : **[有効]** を選択すると、デバイスで使用可能なネットワークのリストにこのネットワークが含まれなくなります。 SSID はブロードキャストされません。 **[無効]** を選択すると、デバイスで使用可能なネットワークのリストにこのネットワークが含まれるようになります。
 - **[EAP の種類]** : 次の中から、セキュリティで保護されたワイヤレス接続の認証に使用される拡張認証プロトコル (EAP) の種類を選択します。 次のようなオプションがあります。 
 

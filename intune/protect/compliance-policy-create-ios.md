@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 04/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac2ec4224bead13455752488f6ea34af6e012bc8
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 5f473e376278b454ca2d173c7c147137226a9fc9
+ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733050"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601508"
 ---
 # <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Intune を使用してデバイスを準拠または非準拠としてマークするための iOS 設定
 
@@ -73,7 +74,7 @@ Intune 管理者は、組織のリソースの保護に役立てるためにこ�
 ### <a name="password"></a>パスワード
 
 > [!NOTE]
-> iOS デバイスにコンプライアンスまたは構成ポリシーが適用されると、ユーザーは 15 分ごとにパスコードを設定するように求められます。 パスコードを設定するまで継続してユーザーは入力を求められます。
+> iOS デバイスにコンプライアンスまたは構成ポリシーが適用されると、ユーザーは 15 分ごとにパスコードを設定するように求められます。 パスコードを設定するまで継続してユーザーは入力を求められます。 IOS デバイスにパスコードが設定されると、暗号化プロセスが自動的に開始されます。 パスコードが無効になるまで、デバイスは暗号化されたままになります。
 
 - **[モバイル デバイスのロック解除にパスワードを必要とする]** : デバイスにアクセスするユーザーにパスワードを入力するよう**求めます**。 パスワードを使用する iOS デバイスは暗号化されます。
 - **[単純なパスワード]** : **[ブロック]** に設定すると、ユーザーは単純なパスワード (**1234**、**1111** など) を作成できません。 **[未構成]** に設定すると、ユーザーは **1234** や **1111** などのパスワードを作成できます。

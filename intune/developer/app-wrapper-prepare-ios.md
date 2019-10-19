@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c535dbd91605a41fdc1c526ecd8ff9d9fc9e2448
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b42642ec593112b0b247cd85b9230f68d6a803b8
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733674"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490975"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Intune アプリ ラッピング ツールでアプリ保護ポリシーを利用するために iOS アプリを準備する
 
@@ -203,8 +204,8 @@ macOS ターミナルを開き、次のコマンドを実行します。
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**| アプリ ラッピング ツールに使用できるコマンド ライン プロパティの詳細な使用情報を表示します。 |
-|**-aa**|(省略可能) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` つまり `login.windows.net/common` |
-|**-ac**|(省略可能) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` これは、アプリの登録ブレードのアプリの一覧にある [クライアント ID] フィールドの guid です。 |
+|**-aa**|(省略可能) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` `login.windows.net/common` |
+|**-ac**|(省略可能) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` [クライアント ID] フィールドの guid は、アプリの登録ブレードのアプリの一覧に表示されます。 |
 |**-ar**|(省略可能) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` これは、アプリの登録で構成されたリダイレクト URI です。 通常は、仲介型認証後に Microsoft Authenticator アプリが返すアプリケーションの URL プロトコルです。 |
 |**-v**| (省略可能) 詳細なメッセージをコンソールに出力します。 このフラグを使用してすべてのエラーをデバッグすることをお勧めします。 |
 |**-e**| (省略可能) このフラグを使用すると、アプリ ラッピング ツールが、アプリを処理する際に不足している権利を削除します。 詳細については、「[アプリ権利の設定](#setting-app-entitlements)」を参照してください。|

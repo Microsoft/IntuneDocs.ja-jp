@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/21/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: de367f28f3f1c7731e5ab67d904aec799925cc03
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 19202d4387635b7cd1f7e4604d755fb8a213d327
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733726"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503441"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin バインディング
 
@@ -108,9 +109,9 @@ Xamarin の MAM 機能を強調表示したサンプルアプリケーション�
 Intune App SDK を統合するための完全な概要については、「[Microsoft Intune App SDK for Android developer guide](app-sdk-android.md)」 (Android 用 Microsoft Intune App SDK 開発者ガイド) を参照してください。 ガイドに目を通して、Intune App SDK をご利用の Xamarin アプリに統合するときに、Java で開発されたネイティブの Android アプリと、C# で開発された Xamarin アプリでは実装に違いがあり、以降のセクションは、それを明らかにすることを目的としています。 これらのセクションは、補足情報として扱うべきもので、ガイド全体に目を通すことの代わりとなるものではありません。
 
 #### <a name="remapper"></a>Remapper
-1\.4428.1 リリース以降では、MAM クラス、メソッド、および systems サービスの交換を実行するための[ビルドツール](app-sdk-android.md#build-tooling)として、@no__t 0 パッケージを Xamarin Android アプリケーションに追加できます。 再マッパーが含まれている場合、名前が変更されたメソッドと MAM アプリケーションセクションの MAM に相当する置換部分は、アプリケーションのビルド時に自動的に実行されます。
+1\.4428.1 リリース以降、MAM クラス、メソッド、および systems サービス交換を実行するための[ビルドツール](app-sdk-android.md#build-tooling)として、`Microsoft.Intune.MAM.Remapper` パッケージを Xamarin Android アプリケーションに追加できるようになりました。 再マッパーが含まれている場合、名前が変更されたメソッドと MAM アプリケーションセクションの MAM に相当する置換部分は、アプリケーションのビルド時に自動的に実行されます。
 
-再マッパーによって ification からクラスを除外するには、次のプロパティを @no__t プロジェクトに追加できます。-0 ファイル。
+Remapper によって ification からクラスを除外するには、次のプロパティをプロジェクト `.csproj` ファイルに追加します。
 
 ```xml
   <PropertyGroup>
@@ -125,7 +126,7 @@ Intune App SDK を統合するための完全な概要については、「[Micr
 多くの場合、Android のクラスで使用できるメソッドが、MAM の置換クラスで最終版としてマークされています。 この場合、MAM 置換クラスによって、似た名前のメソッド (`MAM` というサフィックスが付いている) が提供され、これをオーバーライドする必要があります。 たとえば、`MAMActivity` から派生する場合は、`OnCreate()` をオーバーライドして `base.OnCreate()` を呼び出すのではなく、`Activity` で `OnMAMCreate()` をオーバーライドし、`base.OnMAMCreate()` を呼び出す必要があります。
 
 #### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[MAM アプリケーション](app-sdk-android.md#mamapplication)
-アプリで @no__t 0 クラスを定義する必要があります。 MAM を手動で統合する場合は、`MAMApplication` から継承する必要があります。 必ずサブクラスを `[Application]` 属性で適切に修飾し、`(IntPtr, JniHandleOwnership)` コンストラクターをオーバーライドします。
+アプリで `Android.App.Application` クラスを定義する必要があります。 MAM を手動で統合する場合は、`MAMApplication` から継承する必要があります。 必ずサブクラスを `[Application]` 属性で適切に修飾し、`(IntPtr, JniHandleOwnership)` コンストラクターをオーバーライドします。
 
 ```csharp
     [Application]

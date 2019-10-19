@@ -5,21 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5aaa964151477896c236e504ec9b378cf580e838
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3f3359bc5544b3a353271ea17083c8c3acb49742
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736378"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584463"
 ---
 # <a name="windows-update-settings-for-intune"></a>Intune での Windows Update の設定  
 
@@ -216,45 +217,9 @@ Update の設定では、デバイスによってダウンロードされるも�
   - **再起動警告を除くすべての通知をオフにする**
   - **再起動警告を含む、すべての通知をオフにする**  
 
-- **ユーザーに再起動を許可する (再起動猶予期間)**  
-  **既定値**: 未構成  
-  > [!IMPORTANT]  
-  > *再起動*の設定を使用することは推奨されなくなりました。 代わりに、*再起動*の設定を置き換える新しい*期限*設定を使用します。 Intune では、今後の更新で[の*再起動*設定のサポートが廃止](../fundamentals/whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-)される予定です。
-
-  再起動の関与は、Windows 10 バージョン1803以降でサポートされています。 
-
-  > [!NOTE]  
-  > Windows 10 バージョン 1809 では、機能と品質の更新プログラムに個別の設定を適用できるようにする追加の再起動猶予期間設定が導入されています。 ただし、Intune によって管理される設定は、異なる更新の種類に個別には適用されません。 代わりに、Intune では、機能と品質両方の更新プログラムに同じ値が適用されます。  
-  
-  - **未構成**  
-  - **[必須]** - " *[必須]* " に設定し、Windows 10 更新プログラムに対して再起動猶予期間オプションの使用を有効にします。 これらのオプションにより、デバイスのユーザーは、再起動が必要な更新プログラムのインストール後にデバイスを再起動するタイミングを管理できます。  
-
-  このオプションについて詳しくは、更新の展開に関する Windows 10 のドキュメントで「[再起動猶予期間](https://docs.microsoft.com/windows/deployment/update/waas-restart#engaged-restart)」をご覧ください。  
-
-  次の設定は、再起動猶予期間アクションが発生するタイミングの制御に使用されます。  
-
-  - **自動再起動後にユーザーを再起動猶予期間に切り替え (日数)**  
-    **既定**: CSP: [Update/EngagedRestartTransitionSchedule](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestarttransitionschedule) Windows Update 構成されていません。  
-    
-    更新プログラムのインストール後、デバイスが再起動猶予期間の動作に入るまでの時間の長さについて、**2** 日から **30** 日までの値を指定します。 構成された日数後、ユーザーはデバイスの再起動を求めるメッセージを受け取ります。  
-
-  - **再起動猶予期間リマインダーの一時停止 (日数)**  
-    **既定値**: 未構成    
-    Windows Update CSP: [Update/EngagedRestartSnoozeSchedule](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestartsnoozeschedule)  
-    
-    再起動のプロンプトを再通知する期間には、 **1** ~ **3**の値を指定します。  一時停止期間の後、再起動を求めるメッセージが再び表示されます。 ユーザーは、インストールの期限に達するまで、リマインダーの一時停止を続けることができます。  
-
-  - **保留中の再起動の期限を設定する (日数)**  
-    **既定値**: 未構成  
-    Windows Update CSP: [Update/EngagedRestartDeadline](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestartdeadline)  
-  
-    再起動猶予期間の動作が開始した後、必要な再起動がデバイスによって強制的に実行される前に待機する最大日数として、**2** から **30** までの値を指定します。 この再起動により、ユーザーは作業内容の保存を求められます。
-
 - **期限の設定を使用する**  
   **既定値**: 未構成  
-  > [!IMPORTANT]  
-  > Intune の8月の更新プログラム以降、再起動の設定を置き換える次の期限設定を使用することをお勧めします。 Intune の今後の更新では、 [*再起動*設定のサポートは廃止](../fundamentals/whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-)されます。  
-
+ 
   ユーザーが期限の設定を使用できるようにします。  
 
   - **未構成**
@@ -263,21 +228,21 @@ Update の設定では、デバイスによってダウンロードされるも�
   [*許可*] に設定すると、期限に対して次の設定を構成できます。
 
   - **機能更新プログラムの期限**  
-    **既定値**: 7  
+    **既定値**: *[未構成]*  
     Windows Update CSP: [Update/ConfigureDeadlineForFeatureUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)  
 
     機能更新プログラムがデバイスに自動的にインストールされるまでのユーザーの日数を指定します (2-30)。
 
   - **品質更新プログラムの期限**  
-    **既定値**: 7  
+    **既定値**: *[未構成]*  
     Windows Update CSP: [Update/ConfigureDeadlineForQualityUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
 
     品質更新プログラムがデバイスに自動的にインストールされるまでのユーザーの日数を指定します (2-30)。
 
   - **猶予期間**  
-    **既定値**: 2 Windows Update CSP: [Update/ConfigureDeadlineGracePeriod]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+    **既定**: CSP: [Update/ConfigureDeadlineGracePeriod]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod) Windows Update 構成され*ていません*。
 
-    再起動が自動的に行われるまでの最小日数を指定します (0-7)。
+    再起動が自動的に行われるまでの最小日数を指定します (2-7)。
 
   - **期限前の自動再起動**  
     **既定値**: YES Windows Update CSP: [Update/ConfigureDeadlineNoAutoReboot](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
@@ -285,9 +250,6 @@ Update の設定では、デバイスによってダウンロードされるも�
     期限前にデバイスを自動的に再起動するかどうかを指定します。
     - **あり**
     - **いいえ**
-
-
-
 
 ### <a name="delivery-optimization-download-mode"></a>配信の最適化ダウンロード モード  
 

@@ -9,6 +9,7 @@ ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 038747fb-5b52-47c4-a2b6-f9218da4cfe1
 searchScope:
@@ -18,19 +19,19 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f8d1ff89f948715890eb9a31535e90b8787a856
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 9e88fa55391ace4f8a86416412489ca055083503
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55849862"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502039"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>会社のサポートに、設定アプリから Windows 10 のログを送信する
 
 設定アプリを使用して、Windows 10 用ポータル サイトのトラブルシューティングを行います。 Windows 10 デバイス上でアプリを使用しているときに問題が発生した場合は、電子メールでサポート チームに問い合わせることができます。 ポータル サイト アプリで発生したイベントとエラーは、お使いのデバイス上の_診断ログ_という特別なドキュメントに保存されています。 これらのログには、エラーに関する追加の分析情報が含まれており、エクスポートすると、サポート チームにとって有益です。
 
-1. **設定**アプリを開くには、**[スタート]** メニュー > **[設定]** に移動します。 検索バーで "*設定*" を検索することもできます。
-2. **[アカウント]** > **[職場または学校にアクセスする]** の順に移動します。
+1. **設定**アプリを開くには、 **[スタート]** メニュー > **[設定]** に移動します。 検索バーで "*設定*" を検索することもできます。
+2. **[アカウント]**  >  **[職場または学校にアクセスする]** の順に移動します。
 3. **[管理ログ ファイルのエクスポート]** を選択します。
 
    ![[関連設定] の下にエクスポートのオプションが表示された [職場または学校にアクセスする] 画面。](./media/w10-export-logs.png)

@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: ''
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c46caf4d1c9f9a32a7f324fc5e1734dbe8043bd
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2be1faa1296792d3d40de5ca0b304a287bae8e6f
+ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735260"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72550829"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Microsoft Intune の OEMConfig で Android エンタープライズデバイスを使用および管理する
 
@@ -98,7 +99,7 @@ OEMConfig を使用する場合は、次の情報に注意してください。
 5. **[設定の構成]** で、**構成デザイナー**または**JSON エディター**を使用するように選択します。
 
     > [!TIP]
-    > プロパティが正しく構成されていることを確認するには、OEM ドキュメントを参照してください。 これらのアプリのプロパティは、Intune ではなく OEM によって含まれています。 Intune では、プロパティの検証や入力を最小限に抑えます。 たとえば、ポート番号として「`abcd`」と入力すると、プロファイルはその状態で保存され、構成した値を使用してデバイスに展開されます。 正しい情報を入力してください。
+    > プロパティが正しく構成されていることを確認するには、OEM ドキュメントを参照してください。 これらのアプリのプロパティは、Intune ではなく OEM によって含まれています。 Intune では、プロパティの検証や入力を最小限に抑えます。 たとえば、ポート番号に `abcd` を入力すると、プロファイルはその状態で保存され、構成した値を使用してデバイスに展開されます。 正しい情報を入力してください。
 
     - **構成デザイナー**: このオプションを選択すると、アプリスキーマ内で使用可能なプロパティが表示されます。
 
@@ -120,7 +121,7 @@ OEMConfig を使用する場合は、次の情報に注意してください。
 
     構成デザイナーで行った変更は、JSON エディターでも自動的に行われます。 同様に、JSON エディターで行った変更は、構成デザイナーで自動的に行われます。 入力に無効な値が含まれている場合は、問題を解決するまで、構成デザイナーと JSON エディターを切り替えることはできません。
 
-6. [ **OK]** を選択し  >  **[追加]** をクリックして変更を保存します。 ポリシーが作成され、一覧に表示されます。
+6. **[OK]**  >  **[追加]** を選択して変更を保存します。 ポリシーが作成され、一覧に表示されます。
 
 必ず[プロファイルを割り当て](device-profile-assign.md)、[その状態を監視](device-profile-monitor.md)してください。
 
@@ -144,10 +145,11 @@ OEMConfig を使用する場合は、次の情報に注意してください。
 | ゼブラテクノロジ | ゼブラを構成します。 | [ゼブラ OEMConfig の概要](http://techdocs.zebra.com/oemconfig ) |
 | Datalogic | com. datalogic. oemconfig | [Datalogic OEMConfig のユーザードキュメント](https://datalogic.github.io/oemconfig/) |
 | Honeywell | honeywell 構成 |  |
+| Kyocera | kyocera。 enterprisedeviceconfig |  |
 
 -----------------
 
-デバイスに対して OEMConfig アプリケーションが存在するが、上の表にない場合、または Intune コンソールに表示されない場合は、`IntuneOEMConfig@microsoft.com` を電子メールで送信してください。
+デバイスに対して OEMConfig アプリケーションが存在するが、上の表にない場合、または Intune コンソールに表示されない場合は、電子メール `IntuneOEMConfig@microsoft.com` を送信してください。
 
 > [!NOTE]
 > Oemconfig アプリは、OEMConfig プロファイルを使用して構成する前に、Intune によってオンボードされている必要があります。 アプリがサポートされたら、テナントでの設定について Microsoft に連絡する必要はありません。 このページの指示に従ってください。

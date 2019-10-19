@@ -9,6 +9,7 @@ ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28121178e2a5a3aa7e6d16b0a5936f1cad627c09
-ms.sourcegitcommit: 1ba785f6e51517b63588a292ab5c45b9d9144b72
+ms.openlocfilehash: d2bdc4433e48fd77c12bfd5db706f8d226bf95a6
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840962"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506059"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>ポータル サイト アプリを更新する方法
 
@@ -44,13 +45,13 @@ ms.locfileid: "66840962"
 
 ## <a name="update-the-company-portal-app-on-your-macos-device"></a>macOS デバイス上でポータル サイト アプリを更新する
 
-利用可能になった更新プログラムが自動的にインストールするポータル サイトを設定します。 
+更新プログラムが利用可能になったときに自動的にインストールするようにポータルサイトを設定します。 
 
-1. ポータル サイトを開きに移動**ヘルプ**します。 
+1. ポータルサイトを開き、 **[ヘルプ]** にアクセスします。 
 2. **[更新プログラムの確認]** を選択します。 
-3. Microsoft AutoUpdate 画面で、次のように選択します。**自動的にダウンロードしてインストール**します。 
+3. Microsoft AutoUpdate 画面で、[**自動的にダウンロードしてインストール**する] を選択します。 
 
-利用可能な更新を表示する選択**更新プログラムの確認**します。  
+利用可能な更新プログラムを表示するには、 **[更新プログラムの確認]** を選択します。  
 
 ## <a name="update-the-company-portal-app-on-your-windows-device"></a>Windows デバイスでポータル サイト アプリを更新する
 更新プログラムが使用可能になったときに自動的に入手するには、Microsoft Store を開き、 **[設定]** に移動します。 **[アプリの更新]** をオンにします。 最新の更新プログラムとダウンロード キューで待機しているアプリを表示するには、 **[ダウンロードと更新]** に移動します。  

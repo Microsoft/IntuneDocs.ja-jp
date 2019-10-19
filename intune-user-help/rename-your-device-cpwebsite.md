@@ -9,6 +9,7 @@ ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 35a34ef8-efbb-4edf-88eb-a03c1b27a026
 searchScope:
@@ -18,24 +19,24 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48b20381355c15c4f5df065382923789b94e8061
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7674366cc0332afd8eba2a4f145f47e40d5472e2
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55848846"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508458"
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>ポータル サイト Web サイトからデバイスの名前を変更する
 
 ポータル サイト Web サイトから登録済みのマネージド デバイスの名前を変更します。 デバイスの汎用名 (既定のモデル名) を簡単に識別できる名前に変更します。
 
-1. [ポータル サイト Web サイト](https://portal.manage.microsoft.com)を開き、__[メニュー]__ ボタン、__[デバイス]__ の順に選択します。  
+1. [ポータル サイト Web サイト](https://portal.manage.microsoft.com)を開き、 __[メニュー]__ ボタン、 __[デバイス]__ の順に選択します。  
 
 2. 名前を変更するデバイスを選択します。
 
     ![汎用的な名前が付いた不明なデバイスが表示されている 2 つのタイルを含む [デバイス] ページのスクリーンショット。 デバイスのすぐ下に灰色のバナーが配置され、ユーザーは使用中のデバイスまたは新たに追加するデバイスを識別するように求められています。](./media/rename-reset-device-step2-1808.png)   
 
-3. **[名前の変更]** を選択します。 ページの上部に名前変更のオプションが表示されない場合は、**[詳細 (...)]** > **[名前の変更]** の順に選択します。   
+3. **[名前の変更]** を選択します。 ページの上部に名前変更のオプションが表示されない場合は、 **[詳細 (...)]**  >  **[名前の変更]** の順に選択します。   
 
    ![[名前の変更]、[削除]、[デバイスのリセット]、[パスコードのリセット]、[リモート ロック] を示す上部のリンク リストを含む、ポータル サイト Web サイト上の選択されたデバイスに対するデバイスの詳細ページ。 ](./media/rename-reset-device-1808.png)   
 

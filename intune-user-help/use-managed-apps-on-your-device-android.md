@@ -9,6 +9,7 @@ ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: efcb622681e4f3b3fba7b686551cca7db6bb4c3a
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 24d4193b3e43b7c406a1fb6c9c8d987caa6cbeea
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546031"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501883"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Android デバイスで管理対象アプリを使用する
 マネージド アプリは、組織のセキュリティ要件を満たすように構成されて、職場や学校のデータを保護します。 これらのアプリは、お使いのデバイスに自動的にインストールして使用できます。 
@@ -52,18 +53,18 @@ ms.locfileid: "67546031"
 - Microsoft Word、Excel、PowerPoint
 
 ## <a name="how-do-i-get-managed-apps"></a>管理対象アプリを取得する方法
-管理対象アプリを入手する 3 つの方法はあります。  
+管理対象アプリを取得するには、次の3つの方法があります。  
 * 組織によって自動的に、登録時にアプリにデバイスがインストールされます。  
 * ユーザーが Google Play ストアからアプリをインストールした後、職場または学校アカウントでアプリにサインインします。    
-* 組織が、ポータル サイトでマネージド アプリを使用できるようにします。 ポータル サイト アプリまたは Web サイトに移動し、使用可能なアプリを検索、表示、およびインストールします。 これらのアプリの詳細については、次のセクションを参照してください。[使用可能なアプリ](#available-apps)します。  
+* 組織が、ポータル サイトでマネージド アプリを使用できるようにします。 ポータル サイト アプリまたは Web サイトに移動し、使用可能なアプリを検索、表示、およびインストールします。 これらのアプリの詳細については、次のセクション「[利用可能なアプリ](#available-apps)」を参照してください。  
 
 ### <a name="available-apps"></a>Available apps   
- 組織では、適切なと便利ですが、職場または学校では、使用できるようにする会社のポータルでアプリを選択できます。  
+ 組織は職場または学校で適切で便利なアプリを選択して、ポータルサイトで利用できるようにすることができます。  
 
  アプリは、デバイスの種類に基づいて使用が許可されます。 たとえば、Android 用ポータル サイト アプリを使用している場合、Android アプリにはアクセスできますが、iOS アプリにはアクセスできません。   
 
 ## <a name="request-an-app-for-work-or-school"></a>職場または学校用のアプリを要求する   
- 必要なアプリがあるが、ポータル サイト内に存在しない場合は、そのアプリを要求できます。 連絡先の詳細について、**ヘルプデスク**どちらかのアプリケーションで**IT に連絡**タブ。同じ連絡先情報は、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)でも確認できます。   
+ 必要なアプリがあるが、ポータル サイト内に存在しない場合は、そのアプリを要求できます。 **ヘルプデスク**の連絡先の詳細については、いずれかのアプリの **[IT に連絡]** タブを参照してください。同じ連絡先情報は、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)でも確認できます。   
 
 ## <a name="what-can-my-company-support-manage-in-an-app"></a>会社のサポートがアプリで管理できるもの  
 次の一覧に、会社のサポートがアプリ内で管理できる設定を示します。 これらの設定は、デバイスでの職場または学校のデータの表示方法、アクセス方法、それ以外の使用方法に影響します。

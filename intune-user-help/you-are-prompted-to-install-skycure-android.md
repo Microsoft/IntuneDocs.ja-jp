@@ -9,6 +9,7 @@ ms.date: 09/25/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9c489e6bdfa2842f0939d7ee5cd43b258ef2b50
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e48930639e59ca4381ecbdb077d2d725db535cbe
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55833992"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507926"
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Android デバイスに Symantec Endpoint Protection Mobile をインストールする
 
@@ -31,11 +32,11 @@ ms.locfileid: "55833992"
 
 ## <a name="what-you-need-to-do"></a>必要事項
 
-1. 画面の一番上から下にドラッグして通知バーを開き、**[Required application – Install Skycure from Play Store]\(必要なアプリケーション – Skycure を Play ストアからインストール)** をタップします。 ポータル サイト アプリの __[Compliance Details]\(ポリシー準拠状況の詳細)__ でも確認することができます。
+1. 画面の一番上から下にドラッグして通知バーを開き、 **[Required application – Install Skycure from Play Store]\(必要なアプリケーション – Skycure を Play ストアからインストール)** をタップします。 ポータル サイト アプリの __[Compliance Details]\(ポリシー準拠状況の詳細)__ でも確認することができます。
 
-2. Play ストアの SEP Mobile のインストール ページが表示されます。 SEP Mobile をインストールし、**[同意する]** をタップして SEP Mobile がデバイスにアクセスすることを許可します。
+2. Play ストアの SEP Mobile のインストール ページが表示されます。 SEP Mobile をインストールし、 **[同意する]** をタップして SEP Mobile がデバイスにアクセスすることを許可します。
 
-3. SEP Mobile を開いて、**[VERIFY]\(確認)** をタップします。
+3. SEP Mobile を開いて、 **[VERIFY]\(確認)** をタップします。
 
 4. **[Azure Active Directory でサインインする]** をタップし、職場または学校の電子メールやファイルへのアクセスに使用しているアカウントを入力します。
 

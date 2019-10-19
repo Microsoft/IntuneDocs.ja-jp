@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 06/26/2019
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 3c10f4c9-520b-4864-92fc-a45a9f640ad4
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40d31fa30d784f14eeef6f33d2523909c1391f34
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1ea74904657ec5457454e4371fb956648c74c422
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735520"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504798"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Windows PC のハードウェアとソフトウェアのインベントリを表示する
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 > このトピックの情報は、Intune ソフトウェア クライアントを使用して PC として管理している Windows デスクトップにのみ適用されます。 モバイルデバイスとして登録されている Windows Pc のインベントリを表示する場合は、「 [Intune でデバイスの詳細を表示](../remote-actions/device-inventory.md)する」を参照してください。
