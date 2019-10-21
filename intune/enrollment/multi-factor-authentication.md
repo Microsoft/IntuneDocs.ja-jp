@@ -16,12 +16,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea6af0fd71acb7aad22930c6173540e3aece4f98
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4b761672ceace57ae7c0939959d25b8d6e45be32
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726376"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379833"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Intune へのデバイスの登録で多要素認証を要求する
 
@@ -56,7 +56,7 @@ MFA を有効にするには、エンド ユーザーは 2 種類の資格情報
 6. **[割り当て]** セクションで、 **[ユーザーとグループ]** を選択します。 
 7. **[ユーザーとグループ]** で **[ユーザーまたはグループの選択]** を選択し、 **[ユーザーとグループ]** をオンにします。 このポリシーを受けるユーザーやグループを選択し、 **[完了]** を選択します。
 8. **[割り当て]** セクションで、 **[クラウド アプリ]** を選択します。
-9. **[クラウド アプリ]** の **[挿入]** タブで、 **[アプリを選択]** を選択し、 **[選択]**  >  **[Microsoft Intune Enrollment]\(Microsoft Intune 登録\)** の順に選択し、 **[完了]** を選択します。
+9. **[クラウド アプリ]** の **[挿入]** タブで、 **[アプリを選択]** を選択し、 **[選択]**  >  **[Microsoft Intune Enrollment]\(Microsoft Intune 登録\)** の順に選択し、 **[完了]** を選択します。 **[Microsoft Intune Enrollment]\(Microsoft Intune 登録\)** を選択すると、条件付きアクセス MFA はデバイスの登録にのみ適用されます (1 回限りの MFA プロンプト)。
 10. **[割り当て]** セクションの **[条件]** では、MFA 設定を構成する必要はありません。
 11. **[アクセス制御]** セクションで、 **[許可]** を選択します。
 12. **[許可]** で、 **[アクセス権の付与]** を選択し、 **[多要素認証を要求する]** を選択します。 **[デバイスは準拠としてマーク済みである必要があります]** は選択しないでください。登録されるまで、デバイスの準拠状態は評価できません。 次に **[選択]** を選択します。

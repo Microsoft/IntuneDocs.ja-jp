@@ -1,5 +1,5 @@
 ---
-title: チュートリアル - Intune マネージド デバイス上で Exchange Online の電子メールを保護する
+title: チュートリアル - マネージド デバイス上で Exchange Online の電子メールを保護する
 titleSuffix: Microsoft Intune
 description: iOS Intune コンプライアンス ポリシーと Azure AD の条件付きアクセスを使用してマネージド デバイスと Outlook アプリを必要とすることで Exchange Online をセキュリティ保護する方法を説明します。
 keywords: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2d6f14b4b3e1e981cce789664203b74523b2474
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c20c0c1543cd8fcbf7345a02295486aaaa6ddcea
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727936"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306867"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>チュートリアル: マネージド デバイス上で Exchange Online の電子メールを保護する
 デバイス コンプライアンス ポリシーと条件付きアクセスを使用して、iOS デバイスが Intune によって管理され、承認されたメール アプリを使用している場合にのみ、Exchange Online のメールにアクセスできるようにする方法を説明します。 
@@ -95,7 +95,7 @@ Intune デバイス コンプライアンス ポリシーを設定して、デ�
     2. **[含む]** タブで **[任意のデバイス]** を選択してから、 **[完了]** を選択します。 
     3. **[完了]** をもう一度選択します。
    
-    ![Office 365 Exchange Online アプリを選択する](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
+    ![任意のデバイスを含める](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
 
 6. **[割り当て]** で、 **[条件]**  >  **[クライアント アプリ]** の順に選択します。
      
@@ -103,7 +103,7 @@ Intune デバイス コンプライアンス ポリシーを設定して、デ�
     2. このチュートリアルでは、 **[モバイル アプリとデスクトップ クライアント]** と **[先進認証クライアント]** (これは、Outlook for iOS や Outlook for Android のようなアプリを示します) を選択します。 他のチェック ボックスはすべてオフにします。
     3. **[完了]** を選択し、 **[完了]** をもう一度選択します。
     
-    ![Office 365 Exchange Online アプリを選択する](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
+    ![アプリとクライアントを選択する](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
 
 7. **[アクセス制御]** で **[許可]** を選択します。 
      
@@ -113,11 +113,11 @@ Intune デバイス コンプライアンス ポリシーを設定して、デ�
     4. **[複数のコントロールの場合]** で、 **[選択したコントロールすべてが必要]** を選択します。 この設定により、デバイスがメールへのアクセスを試みるときに、選択した両方の要件が適用されます。
     5. **[選択]** を選択します。
      
-    ![Office 365 Exchange Online アプリを選択する](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
+    ![コントロールを選択する](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
 
 8. **[ポリシーを有効にする]** で、 **[オン]** を選択します。
      
-    ![Office 365 Exchange Online アプリを選択する](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
+    ![ポリシーを有効にする](./media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
 
 9. **[作成]** を選択します。
 

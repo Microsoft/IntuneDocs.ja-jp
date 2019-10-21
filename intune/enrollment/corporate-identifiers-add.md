@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac86e9155f08683ab073ae0b46ea3f2780060c90
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: afc9d953e1d324adb3f00eb5209732a858bbbcda
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723347"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314681"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>デバイスの企業所有としての識別
 
@@ -35,7 +35,7 @@ Intune は登録時に、次のようなデバイスに会社所有の状態を�
 - [デバイス登録マネージャー](device-enrollment-manager-enroll.md) アカウントで登録されている (すべてのプラットフォーム)
 - Apple [Device Enrollment Program](device-enrollment-program-enroll-ios.md)、[Apple School Manager](apple-school-manager-set-up-ios.md)、[Apple Configurator](apple-configurator-enroll-ios.md) (iOS のみ) で登録されている
 - IMEI (International Mobile Equipment Identifier/国際携帯機器識別) 番号 (IMEI 番号を持つすべてのプラットフォーム) またはシリアル番号 (iOS と Android) で、[登録前に会社所有として識別されている](#identify-corporate-owned-devices-with-imei-or-serial-number)
-- Windows 10 Enterprise デバイスとして Azure Active Directory に参加する
+- 職場または学校の資格情報を使用して Azure Active Directory に参加します。 [Azure Active Directory に登録されているデバイス](https://docs.microsoft.com/azure/active-directory/devices/overview)は個人用とマークされます。
 - [デバイスのプロパティ一覧](#change-device-ownership)で、会社として設定されている
 
 登録後、 **[個人]** と **[企業]** のどちらかで[所有権の設定を変更する](#change-device-ownership)ことができます。

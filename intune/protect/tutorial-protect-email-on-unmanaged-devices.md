@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7bb684e787a75900ca2157a04150a8fc6c4ba715
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 7e0a01034bc35ddf8fd8eb1ede5fcf4c942dc735
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721267"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306808"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>チュートリアル: アンマネージド デバイス上で Exchange Online の電子メールを保護する
 
@@ -113,7 +113,7 @@ Outlook 用のアプリ保護ポリシーが作成されます。 次に、Outlo
    3. それ以外のチェック ボックスをオフにします。  
    4. **[完了]**  >  **[完了]** の順に選択して、[新しいポリシー] ウィンドウに戻ります。  
 
-   ![Office 365 Exchange Online アプリを選択する](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-client-apps.png)
+   ![モバイル アプリとクライアントを選択する](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-client-apps.png)
 
 7. **[アクセス制御]** で **[許可]** を選択します。 
      
@@ -123,11 +123,11 @@ Outlook 用のアプリ保護ポリシーが作成されます。 次に、Outlo
    4. **[複数のコントロールの場合]** で、 **[選択したコントロールすべてが必要]** を選択します。 この設定により、デバイスがメールへのアクセスを試みるときに、選択した両方の要件が適用されます。
    5. **[選択]** を選択します。
      
-   ![Office 365 Exchange Online アプリを選択する](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-mfa.png)
+   ![コントロールを選択する](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-mfa.png)
 
 7. **[ポリシーを有効にする]** で、 **[オン]** を選択してから **[作成]** を選びます。  
      
-    ![Office 365 Exchange Online アプリを選択する](./media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)  
+    ![ポリシーを作成する](./media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)  
 
 先進認証クライアント用の条件付きアクセス ポリシーが作成されます。 これで、次は Exchange Active Sync クライアント用のポリシーを作成できます。
 
@@ -153,14 +153,14 @@ Outlook 用のアプリ保護ポリシーが作成されます。 次に、Outlo
    4. 他のチェック ボックスはすべてオフにします。  
    5. **[完了]** を選択し、 **[完了]** をもう一度選択します。  
     
-   ![Office 365 Exchange Online アプリを選択する](./media/tutorial-protect-email-on-unmanaged-devices/eas-client-apps.png)  
+   ![サポートされているプラットフォームに適用する](./media/tutorial-protect-email-on-unmanaged-devices/eas-client-apps.png)  
 
 7. **[アクセス制御]** で **[許可]** を選択します。  
    1. **[許可]** ウィンドウで、 **[アクセス権の付与]** を選択します。  
    2. **[承認されたクライアント アプリが必要です]** を選択します。 他のチェック ボックスはすべてオフにします。  
    3. **[選択]** を選択します。  
      
-   ![Office 365 Exchange Online アプリを選択する](./media/tutorial-protect-email-on-unmanaged-devices/eas-grant-access.png)  
+   ![[承認されたクライアント アプリが必要です]](./media/tutorial-protect-email-on-unmanaged-devices/eas-grant-access.png)  
 
 8. **[ポリシーを有効にする]** で、 **[オン]** を選択します。  
 

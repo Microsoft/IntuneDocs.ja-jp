@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8beb8291ede1bf2fde32014fadf9f8cd52da5b6
-ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
+ms.openlocfilehash: 204a19546e9466fdf7064e15b8cba7268ec1b757
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71830571"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349978"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Web アプリを Microsoft Intune に追加する
 
@@ -30,7 +30,9 @@ ms.locfileid: "71830571"
 
 Intune では、Web アプリなど、さまざまなアプリの種類がサポートされています。 Web アプリはクライアント/サーバー アプリケーションです。 サーバーから Web アプリが提供されます。これには UI、コンテンツ、および機能が含まれます。 さらに、最新の Web ホスティング プラットフォームでは一般的にセキュリティや負荷分散などの利点が提供されます。 Web アプリは Web 上で個別に維持されます。 Microsoft Intune を使って、このアプリの種類を参照します。 また、このアプリへのアクセスを許可するユーザー グループを割り当てます。 
 
-ユーザー用アプリを管理して割り当てるには、そのアプリを Intune に追加します。 Intune によって、ユーザーのデバイスのホーム画面に Web アプリへのショートカットが作成されます。
+ユーザー用アプリを管理して割り当てるには、そのアプリを Intune に追加します。 
+
+Intune によって、ユーザーのデバイスに Web アプリへのショートカットが作成されます。 iOS デバイスの場合、Web アプリへのショートカットがホーム画面に追加されます。 Android デバイスの場合、Web アプリへのショートカットが Intune ポータル サイト ウィジェットに追加されます。ウィジェットはユーザーが手動でピン留めする必要があります。 Windows デバイスの場合、Web アプリへのショートカットが [スタート] メニューに配置されます。
 
 > [!Note]
 > Web アプリは、Android 仕事用プロファイル デバイスではサポートされていません。 Web アプリを起動するには、ユーザーのデバイスにブラウザーがインストールされている必要があります。

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aafce5cefc26f4f86540a6858249e0bdd0af2328
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b1e72e16eba8bb29adc7360db9e923a15d144b6e
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723165"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350039"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Intune で条件付きアクセスによる Microsoft Defender ATP のコンプライアンスを強制する  
 
@@ -135,7 +135,8 @@ Microsoft Defender ATP への接続を確立したときに、Intune は Microso
 2. **[デバイスのポリシー準拠]**  >  **[ポリシー]**  >  **[ポリシーの作成]** の順に選択します。
 3. **名前**と**説明**を入力します。
 4. **[プラットフォーム]** で、 **[Windows 10 以降]** を選択します。
-5. **[Microsoft Defender ATP]** 設定で、 **[デバイスは、次のマシン リスク スコア以下であることが必要]** を使用したいレベルに設定します。 
+5. **[設定]** で、 **[Microsoft Defender ATP]** を選択します。
+6. **[デバイスは、次のマシン リスク スコア以下であることが必要]** を目的のレベルに設定します。 
    
    脅威レベルの分類は、[Microsoft Defender ATP によって決定されます](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue)。
 
@@ -145,7 +146,7 @@ Microsoft Defender ATP への接続を確立したときに、Intune は Microso
    - **[高]** :最も安全性の低いレベルであり、すべての脅威レベルが許容されます。 したがって、脅威レベルが高、中または低のデバイスは準拠していると見なされます。
 
 6. **[OK]** 、 **[作成]** の順に選択して、変更を保存 (およびポリシーを作成) します。  
-7. 該当するグループに[デバイス コンプライアンス ポリシーを割り当てます](create-compliance-policy.md#assign-user-groups)。
+7. 該当するグループに[デバイス コンプライアンス ポリシーを割り当てます](create-compliance-policy.md#assign-the-policy)。
 
 
 

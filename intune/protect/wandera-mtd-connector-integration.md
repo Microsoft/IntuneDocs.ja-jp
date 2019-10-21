@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bf8fd189e50a704e96fc24d0804c5c5d6f91bb4
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 64a560dc79d3c03f52b8e9389c3e47e3e256ee58
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728222"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306667"
 ---
 # <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>Wandera モバイル脅威保護を Intune と統合する  
 
@@ -72,7 +72,7 @@ Wandera の *EMM Connect* の設定には、Intune と Wandera コンソール�
 
 7. RADAR コンソールで、 **[EMM Label]\(EMM ラベル\)** の下に表示される **SyncOnly** グループの名前をコピーします。 Wandera との同期用に Intune でグループを構成するために、この名前を使用します。
 
-   ![統合とアクセス許可](./media/wandera-mtd-connector-integration/sync-group-name.png) 
+   ![同期グループ](./media/wandera-mtd-connector-integration/sync-group-name.png) 
 
 8. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) コンソールに戻り、Wandera MTD コネクタを編集します。 使用可能な切り替えを **[オン]** に設定して、構成を **[保存]** します。  
 

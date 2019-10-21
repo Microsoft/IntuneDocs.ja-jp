@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 542d9c7890f9484311ca8e6400d0a75a41e13d7c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 94480c8dcfe44dc451ea6a2409f52f06c2a87cf5
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725700"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350074"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>管理対象の iOS デバイス用アプリ構成ポリシーを追加する
 
@@ -108,7 +108,7 @@ iOS デバイスでは、次のキー/値ペアを使用します。
 | **値** | <ul><li>**有効**: [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) キーによって定義されたマネージド ユーザー アカウントのみが許可されます。</li><li>**[無効]** ( **[有効]** と大文字小文字を問わず一致しないすべての値): すべてのアカウントが許可されます。</li></ul> |。
 
    > [!NOTE]
-   > 複数 ID で構成された組織アカウントのみを許可する場合は、必ず OneDrive for iOS 10.34 以降、および Outlook for iOS 2.99.0 以降を使用すると共に、アプリが [Intune アプリ保護ポリシー](app-protection-policy.md)の対象になっている必要があります。
+   > 複数 ID で構成された組織アカウントのみを許可する場合は、必ず OneDrive for iOS 10.34 以降、Outlook for iOS 2.99.0 以降、または Edge for iOS 44.8.7 以降を使用すると共に、アプリが [Intune アプリ保護ポリシー](app-protection-policy.md)の対象になっている必要があります。
 
 ## <a name="enter-xml-data"></a>XML データを入力する
 

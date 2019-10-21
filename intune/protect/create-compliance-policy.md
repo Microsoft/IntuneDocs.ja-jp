@@ -1,26 +1,26 @@
 ---
-title: Microsoft Intune - Azure のデバイス コンプライアンス ポリシー | Microsoft Docs
-description: デバイス コンプライアンス ポリシーの使用の開始、状態と重大度レベルの概要、InGracePeriod 状態の使用、条件付きアクセスの使用、割り当てポリシーなしのデバイスの処理、Azure portal と Microsoft Intune のクラシック ポータルでのコンプライアンスの違い
+title: Microsoft Intune でデバイス コンプライアンス ポリシーを作成する - Azure | Microsoft Docs
+description: デバイス コンプライアンス ポリシーの作成、状態と重大度レベルの概要、InGracePeriod 状態の使用、条件付きアクセスの使用、割り当てポリシーなしのデバイスの処理、Microsoft Intune の Azure portal とクラシック ポータルのコンプライアンスの違い
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/22/2019
+ms.date: 10/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: joglocke
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8b3a99744f830da3c88473e79bce78c97875d73
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0ec8003264c28ea40d53731c8fb8c3eddef7fded
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722632"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306585"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Microsoft Intune でコンプライアンス ポリシーを作成する
 
@@ -70,11 +70,11 @@ Intune を使用して組織のリソースを保護する場合、デバイス�
     - **監視**:デバイスのコンプライアンス状態と、設定およびポリシー レベルでのコンプライアンス状態を確認します。 「[Intune デバイスのコンプライアンス対応ポリシーの監視](compliance-policy-monitor.md)」は、優れたリソースです。 また、ログを参照し、デバイスの脅威エージェントの状態を確認します。
     - **セットアップ**:[組み込みのコンプライアンス ポリシー](device-compliance-get-started.md#ways-to-deploy-device-compliance-policies)を使用したり、[Microsoft Defender Advanced Threat Protection (ATP)](advanced-threat-protection.md) を有効にしたり、[Mobile Threat Defense コネクタ](mobile-threat-defense.md)を追加したり、[Jamf](conditional-access-integrate-jamf.md) を使用したりします。
 
-3. **[ポリシー]** > **[ポリシーの作成]** を選択します。 次のプロパティを入力します。
+3. **[ポリシー]**  >  **[ポリシーの作成]** を選択します。 次のプロパティを入力します。
 
     - **名前**: ポリシーのわかりやすい名前を入力します。 後で簡単に識別できるよう、ポリシーに名前を付けます。 たとえば、適切なポリシー名は、**iOS 脱獄したデバイスを非準拠としてマークする**などです。
     - **説明**:ポリシーの説明を入力します。 この設定は省略可能ですが、推奨されます。
-    - **[プラットフォーム]**:デバイスのプラットフォームを選択します。 次のようなオプションがあります。  
+    - **[プラットフォーム]** :デバイスのプラットフォームを選択します。 次のようなオプションがあります。  
 
        - **Android**
        - **Android エンタープライズ**
@@ -93,24 +93,24 @@ Intune を使用して組織のリソースを保護する場合、デバイス�
         - [Windows Phone 8.1、Windows 8.1 以降](compliance-policy-create-windows-8-1.md)
         - [Windows 10 以降](compliance-policy-create-windows.md)
 
-4. 完了したら、**[OK]** > **[作成]** の順に選択して変更を保存します。 ポリシーが作成され、一覧に表示されます。 次に、グループにポリシーを割り当てます。
+4. 完了したら、 **[OK]**  >  **[作成]** の順に選択して変更を保存します。 ポリシーが作成され、一覧に表示されます。 次に、グループにポリシーを割り当てます。
 
-## <a name="assign-user-groups"></a>ユーザー グループを割り当てる
+## <a name="assign-the-policy"></a>ポリシーを割り当てる
 
 ポリシーが作成されたら、次の手順として、グループにポリシーを割り当てます。
 
-1. 作成したポリシーを選択します。 既存のポリシーは、**[デバイスのポリシー準拠]** > **[ポリシー]** で確認できます。
-2. ポリシーを選択し、**[割り当て]** を選択します。 Azure Active Directory (AD) のセキュリティ グループは、含めることも除外することもできます。
-3. **[選択したグループ]** を選択すると、Azure AD セキュリティ グループが表示されます。 このポリシーで適用するユーザー グループを選択し、**[保存]** を選択してユーザーにポリシーを展開します。
+1. 作成したポリシーを選択します。 既存のポリシーは、 **[デバイスのポリシー準拠]**  >  **[ポリシー]** で確認できます。
+2. ポリシーを選択し、 **[割り当て]** を選択します。 Azure Active Directory (AD) のセキュリティ グループは、含めることも除外することもできます。
+3. **[選択したグループ]** を選択すると、Azure AD セキュリティ グループが表示されます。 このポリシーで適用するグループを選択し、 **[保存]** を選択してポリシーを展開します。
 
-ユーザーにポリシーが適用されました。 ポリシーの対象となっているユーザーが使用しているデバイスに対して、コンプライアンスに関する評価が行われます。
+ポリシーの対象となるユーザーまたはデバイスは、Intune にチェックインするときにコンプライアンスが評価されます。
 
 ### <a name="evaluate-how-many-users-are-targeted"></a>対象となるユーザー数を評価する
 
 ポリシーを割り当てるときに、影響を受けるユーザー数を**評価**することもできます。 この機能によってユーザーが計算されます。デバイスは計算されません。
 
-1. Intune で、**[デバイスのポリシー準拠]** > **[ポリシー]** を選択します。
-2. ポリシーを選択し、**[割り当て]** > **[評価]** を選択します。 このポリシーの対象となるユーザー数を示すメッセージが表示されます。
+1. Intune で、 **[デバイスのポリシー準拠]**  >  **[ポリシー]** を選択します。
+2. ポリシーを選択し、 **[割り当て]**  >  **[評価]** を選択します。 このポリシーの対象となるユーザー数を示すメッセージが表示されます。
 
 **[評価]** ボタンが灰色表示されている場合は、ポリシーが 1 つまたは複数のグループに割り当てられていることを確認してください。
 

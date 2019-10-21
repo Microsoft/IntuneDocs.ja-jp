@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 10/15/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 618f88d6dbacb886f250b74f6a462b8449b59b18
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9944aa59f47b7263d46ac96f6aaca3f8ae5c9486
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724088"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349997"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Microsoft Intune でのデバイス ポリシーとプロファイルの一般的な質問、問題と解決策
 
@@ -67,11 +67,11 @@ Intune では、Intune サービスにチェックインするようデバイス
 | iOS | 1 時間まで 15 分ごと、その後は約 8 時間ごと |  
 | macOS | 1 時間まで 15 分ごと、その後は約 8 時間ごと | 
 | Android | 15 分まで 3 分ごと、その後の 2 時間は 15 分ごと、その後は約 8 時間ごと | 
-| デバイスとして登録された Windows 10 PC | 30 分まで 3 分ごと、その後は約 8 時間ごと | 
+| デバイスとして登録された Windows 10 PC | 15 分まで 3 分ごと、その後の 2 時間は 15 分ごと、その後は約 8 時間ごと | 
 | Windows Phone | 15 分まで 5 分ごと、その後の 2 時間は 15 分ごと、その後は約 8 時間ごと | 
 | Windows 8.1 | 15 分まで 5 分ごと、その後の 2 時間は 15 分ごと、その後は約 8 時間ごと | 
 
-ユーザーはいつでもポータル サイト アプリを起動し、デバイスを同期して、ポリシーまたはプロファイルの更新をすぐに確認できます。
+ユーザーはいつでもポータル サイト アプリを開き、 **[設定]**  >  **[同期]** でポリシーまたはプロファイルの更新をすぐに確認できます。
 
 ユーザー アフィニティなしのデバイスでは、登録直後の同期頻度は数時間から 1 日以上とさまざまである場合があります。 Intune は、さまざまな間隔でデバイスに対して Intune へのチェックイン要求を送信します。 ただし、それでもチェックインするかどうかはデバイス次第です。 初期登録後、デバイスがチェックインを完了するまでに要する時間は予測できません。 デバイスの登録の種類と、デバイスに割り当てられているポリシーとプロファイルによっても異なります。 デバイスが登録され、すべての初期ポリシーとプロファイルが適用されると、デバイスでは Intune に登録された時間に基づいて、およそ 6 から 8 時間ごとに新しいポリシーとプロファイルが確認されます。
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1bac049aebfb0fec6c9d86e1e08e81237867175d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: bf862e59e135a875f5f18af731c581f3e5ea89d5
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723113"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306618"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Microsoft Intune の登録済みデバイス管理機能
 
@@ -43,6 +43,7 @@ Microsoft Intune では、サービスにデバイスを*登録*することに�
 |構成ポリシー<br><br>カスタム ポリシー| 組織内のモバイル デバイスの多くの設定や機能を管理できます。 たとえば、パスワード必須、試行失敗の回数制限、画面をロックするまでの時間の制限、パスワードの有効期限の設定、以前に使用したパスワードの禁止を利用できます。 また、デバイス カメラや Web ブラウザーなど、ハードウェアとソフトウェアの機能の使用を制御することもできます。<br><br>カスタム ポリシーは、必要な設定が構成ポリシーに含まれていない場合に使用します。 iOS デバイスの場合は、Apple Configurator ツールからエクスポートした設定をインポートできます。 その他のデバイスの場合は、Open Mobile Alliance Uniform Resource Identifier (OMA-URI) 設定を使用して、デバイスの設定と機能を構成できます。|[Microsoft Intune ポリシーを使用してデバイスの設定と機能を管理する](../protect/device-compliance-get-started.md)|
 |リモート ワイプ、リモート ロック、パスコードのリセット|デバイスの紛失時または盗難時に、機密性の高いデータを消去します。 たとえば、遠隔操作でデバイスをロックしたり、工場出荷時の設定に戻したり、会社のデータのみをワイプしたりできます。<br><br>ユーザーがデバイスにアクセスできなくなった場合にパスコードをリセットしたり、紛失または盗難にあったデバイスをロックしたり、紛失または盗難にあったデバイスのデータをワイプしたりできます。|[リモート ロック](../remote-actions/device-remote-lock.md)と[パスコードのリセット](../remote-actions/device-passcode-reset.md)によってデバイスを保護する|
 |キオスク モード|画面キャプチャや電源スイッチなど、モバイル デバイスの特定の機能をロックダウンすることができます。 デバイスが指定した 1 つのアプリを実行するように制限することもできます。 |[Microsoft Intune の iOS 構成ポリシー設定](../configuration/device-restrictions-ios.md)|
+|Autopilot リセット|デバイスにタスクを送信してリセット プロセスをリモートで開始します。これにより、IT スタッフや他の管理者が各コンピューターにアクセスしてプロセスを開始する必要がなくなります。 AutoPilot リセットがデバイスで使用されると、デバイスのプライマリ ユーザーが削除されます。 リセット後に初めてサインインしたユーザーがプライマリ ユーザーとして設定されます。|[リモートの Windows Autopilot リセット](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset#reset-devices-with-remote-windows-autopilot-reset)|
 
 ## <a name="app-management"></a>アプリ管理
 
