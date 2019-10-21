@@ -197,6 +197,8 @@
           displayName: ca; pkcs; pki; ra; registration authority
         - name: SCEP 証明書または PKCS 証明書を削除する
           href: remove-certificates.md
+    - name: 派生した資格情報
+      href: derived-credentials.md
     - name: ソフトウェア更新プログラム
       items:
         - name: Windows の更新プログラム

@@ -41,6 +41,16 @@
       href: device-lifecycle.md
     - name: アプリのライフサイクル
       href: ../apps/app-lifecycle.md
+    - name: ガイド付きシナリオ
+      items:
+        - name: ガイド付きシナリオの概要
+          href: guided-scenarios-overview.md
+        - name: モバイル用 Microsoft Edge の展開
+          href: guided-scenarios-edge.md
+        - name: クラウド マネージド モダン デスクトップ
+          href: guided-scenarios-cloud-managed-pc.md
+        - name: Microsoft Office モバイル アプリのセキュリティ保護
+          href: guided-scenarios-office-mobile.md
     - name: 一般的なシナリオ
       href: common-scenarios.md
     - name: EMS での BYOD に関する技術の決定事項
@@ -175,6 +185,8 @@
       href: ../protect/index.yml
     - name: アプリの管理と保護
       href: ../apps/index.yml
+    - name: ポリシー セットの使用
+      href: ~/fundamentals/policy-sets.md
     - name: 開発者ガイド
       href: ../developer/index.yml
     - name: ヘルプとサポート

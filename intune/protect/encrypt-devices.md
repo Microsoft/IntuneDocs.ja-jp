@@ -1,5 +1,5 @@
 ---
-title: プラットフォームでサポートされている暗号化方法を使用して Microsoft Intune でデバイスを暗号化する
+title: プラットフォームでサポートされている暗号化方法を使用してデバイスを暗号化する
 titleSuffix: Microsoft Intune
 description: BitLocker や FileVault などの組み込みの暗号化方式を使用してデバイスを暗号化し、Intune ポータル内からそれらの暗号化されたデバイスの回復キーを管理します。
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ad995a4b8b67a2ff7e3604f899fdbeebc2bad8cc
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f885cbddf8ecb984dc6e98db38c9adbc6a07119a
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721397"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306861"
 ---
 # <a name="use-device-encryption-with-intune"></a>Intune でデバイスの暗号化を使用する  
 

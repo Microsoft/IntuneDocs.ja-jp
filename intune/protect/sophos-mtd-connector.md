@@ -1,7 +1,7 @@
 ---
-title: Sophos Mobile と Intune の統合をセットアップする
+title: Intune で Sophos Mobile を使用する
 titleSuffix: Intune on Azure
-description: Microsoft Intune で Sophos Mobile ソリューションをセットアップし、モバイル デバイスから会社のリソースへのアクセスを制御する方法。
+description: Microsoft Intune で Sophos Mobile ソリューションを使用し、モバイル デバイスから会社のリソースへのアクセスを制御する方法。
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 550dfe58687806f7ead65dab2d7e15b310ae4b6e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9bacc784b9d9498196186b1fac0ef948789832b5
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721917"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306841"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>Sophos Mobile Threat Defense コネクタと Intune
 モバイル デバイスからの会社のリソースへのアクセスは、Microsoft Intune に統合する Mobile Threat Defense (MTD) ソリューションである Sophos Mobile が実行するリスク評価に基づく条件付きアクセスを利用して制御できます。 リスクは、Sophos Mobile アプリを実行するデバイスが収集した製品利用統計情報に基づいて評価されます。

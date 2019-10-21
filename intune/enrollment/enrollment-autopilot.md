@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92aa955558120f88afb31e787376fdd1281dd5f4
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b2ebca165c067afbc3d830e5f75ac9f8e29effb2
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723178"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237227"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Windows Autopilot を使用して Intune に Windows デバイスを登録する  
 Windows Autopilot を使用すると、Intune でのデバイスの登録が簡単になります。 カスタマイズされたオペレーティング システム イメージのビルドおよび維持は、時間のかかるプロセスです。 また、これらのカスタム オペレーティング システム イメージを新しいデバイスに適用し、エンド ユーザーに提供する前に使用の準備を行う場合にも、時間がかかることがあります。 Microsoft Intune と Autopilot を使用すれば、カスタム オペレーティング システム イメージのビルド、維持、および新しいデバイスへの適用を行わなくてもデバイスをエンド ユーザーに提供することができます。 Intune を使用して Autopilot デバイスを管理する場合、デバイスの登録後にポリシー、プロファイル、アプリなどを管理することができます。 利点、シナリオ、および前提条件の概要については、「[Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)」 (Windows Autopilot の概要) を参照してください。
@@ -110,7 +110,7 @@ Autopilot Deployment プロファイルは、Autopilot デバイスを構成す�
     - **[アカウントの変更オプションを非表示にする] (Windows 10 バージョン 1809 以降が必要)** : **[非表示]** を選択すると、会社のサインイン ページとドメイン エラー ページにアカウント変更オプションが表示されなくなります。 これらのオプションでは、[Azure Active Directory で会社のブランドを構成する](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)必要があります。
     - **[ユーザー アカウントの種類]** : ユーザーのアカウントの種類を選択します (**管理者**ユーザーまたは**標準**ユーザー)。 デバイスを参加させるユーザーをローカル管理グループに追加することで、それらのユーザーをローカル管理者にすることができます。 ユーザーをデバイスの既定の管理者にすることはできません。
     - **[White Glove OOBE を許可する]** (Windows 10 バージョン 1903 以降が必要、[追加の物理的要件](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove#prerequisites)): **[はい]** を選択して、White Glove のサポートを許可します。
-    - **[デバイス名のテンプレートを適用する]** (Windows 10 バージョン 1809 以降が必要) **[はい]** を選択すると、登録中にデバイスに名前を付けるときに使用するテンプレートが作成されます。 名前を 15 文字以下にする必要があります。また、文字、数字、ハイフンを含めることができます。 数字だけで名前を作ることはできません。 [%SERIAL% マクロ](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)を使用し、ハードウェア固有のシリアル番号を追加します。 または、[%RAND:x% マクロ](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)を使用して、数字のランダム文字列を追加します。x は追加する桁数です。 
+    - **[デバイス名のテンプレートを適用する]** (Windows 10 バージョン 1809 以降と [Azure AD の結合の種類] が必要) **[はい]** を選択すると、登録中にデバイスに名前を付けるときに使用するテンプレートが作成されます。 名前を 15 文字以下にする必要があります。また、文字、数字、ハイフンを含めることができます。 数字だけで名前を作ることはできません。 [%SERIAL% マクロ](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)を使用し、ハードウェア固有のシリアル番号を追加します。 または、[%RAND:x% マクロ](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp)を使用して、数字のランダム文字列を追加します。x は追加する桁数です。 [ドメイン参加プロファイル](windows-autopilot-hybrid.md#create-and-assign-a-domain-join-profile)には、ハイブリッド デバイスのプレフィックスのみを指定できます。 
     - **[言語 (リージョン)]** \*: デバイスで使用する言語を選択します。 このオプションは、 **[配置モード]** に **[自己展開]** を選択した場合のみ使用できます。
     - **[キーボードを自動的に構成する]** \*: **[言語 (リージョン)]** を選択している場合は、 **[はい]** を選択してキーボード選択ページをスキップします。 このオプションは、 **[配置モード]** に **[自己展開]** を選択した場合のみ使用できます。
 8. **[次へ]** を選択します。
