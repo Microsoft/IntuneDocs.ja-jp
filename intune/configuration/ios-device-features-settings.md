@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 341609afeec02c67b4ea0d85a541fca61345ced4
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 3baa1972593c5d836c49905b59e9a28932329fbe
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036478"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506727"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>Intune で一般的な iOS 機能を使用するための iOS および iPadOS のデバイス設定
 
@@ -293,9 +294,9 @@ iPhone にポリシーを割り当てると、ページは次の画像のよう�
 
   [チーム ID を検索](https://help.apple.com/developer-account/#/dev55c3c710c)します (Apple の web サイトを開きます)。詳細については、こちらを参照してください。
 
-- **領域**: Kerberos 領域の名前を入力します。 `CONTOSO.COM` など、領域名は大文字にする必要があります。 通常、領域名は DNS ドメイン名と同じですが、すべて大文字で指定します。
+- **領域**: Kerberos 領域の名前を入力します。 領域名は、`CONTOSO.COM` のように大文字で指定する必要があります。 通常、領域名は DNS ドメイン名と同じですが、すべて大文字で指定します。
 
-- **ドメイン**: SSO 経由で認証できるサイトのドメイン名またはホスト名を入力します。 たとえば、web サイトが `mysite.contoso.com` の場合、`mysite` がホスト名で、`contoso.com` がドメイン名になります。 ユーザーがこれらのサイトのいずれかに接続すると、アプリ拡張機能によって認証チャレンジが処理されます。 この認証により、ユーザーは顔 ID、タッチ ID、または Apple pincode/パスコードを使用してサインインできます。
+- **ドメイン**: SSO 経由で認証できるサイトのドメイン名またはホスト名を入力します。 たとえば、web サイトが `mysite.contoso.com` 場合、`mysite` はホスト名、`contoso.com` がドメイン名になります。 ユーザーがこれらのサイトのいずれかに接続すると、アプリ拡張機能によって認証チャレンジが処理されます。 この認証により、ユーザーは顔 ID、タッチ ID、または Apple pincode/パスコードを使用してサインインできます。
 
   - シングルサインオンアプリ拡張機能の Intune プロファイル内のすべてのドメインは一意である必要があります。 さまざまな種類の SSO アプリ拡張機能を使用している場合でも、どのサインオンアプリ拡張機能プロファイルでもドメインを繰り返すことはできません。
   - これらのドメインでは大文字と小文字が区別されません。

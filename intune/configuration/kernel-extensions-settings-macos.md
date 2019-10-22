@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 09/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1306bfea1880061980413d283943e6521c1ac213
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8632f5b8df0f483de3bb4d06a6823639ba52c604
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734493"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506704"
 ---
 # <a name="macos-device-settings-to-configure-and-use-kernel-extensions-in-intune"></a>Intune でカーネル拡張機能を構成して使用するための macOS デバイス設定
 
@@ -57,14 +58,14 @@ Intune のカーネル拡張機能と前提条件の詳細については、 [ma
 
 - **許可されるカーネル拡張機能**: 特定のカーネル拡張機能を許可するには、この設定を使用します。 入力したカーネル拡張子のみが許可または信頼されます。 
 
-  読み込むカーネル拡張機能のバンドル識別子とチーム識別子を**追加**します。 未署名のレガシカーネル拡張機能の場合は、空のチーム識別子を使用します。 複数のカーネル拡張機能を追加できます。 チーム識別子は英数字 (文字と数字) で、10文字である必要があります。 たとえば、**バンドル ID**として「`com.contoso.appname.macos`」と入力し、**チーム識別子**に `ABCDE12345` を入力します。
+  読み込むカーネル拡張機能のバンドル識別子とチーム識別子を**追加**します。 未署名のレガシカーネル拡張機能の場合は、空のチーム識別子を使用します。 複数のカーネル拡張機能を追加できます。 チーム識別子は英数字 (文字と数字) で、10文字である必要があります。 たとえば、 **[バンドル ID]** に「`com.contoso.appname.macos`」と入力し、**チーム識別子**に `ABCDE12345` を入力します。
 
   > [!TIP]
   > MacOS デバイスでカーネル拡張機能 (Kext) のバンドル ID を取得するには、次のようにします。
   >
-  > 1. ターミナルで `kextstat | grep -v com.apple` を実行し、出力を確認します。 必要なソフトウェアまたは Kext をインストールします。 @No__t-0 を再度実行し、変更を探します。
+  > 1. ターミナルで `kextstat | grep -v com.apple` を実行し、出力を確認します。 必要なソフトウェアまたは Kext をインストールします。 `kextstat | grep -v com.apple` をもう一度実行し、変更を探します。
   >
-  >    ターミナルでは、`kextstat` は OS 上のすべてのカーネル拡張機能を一覧表示します。 
+  >    ターミナルでは、`kextstat` OS のすべてのカーネル拡張機能が一覧表示されます。 
   >
   > 2. デバイスで、Kext の情報プロパティリストファイル (情報 plist) を開きます。 バンドル ID が表示されます。 各 Kext には、の内部に格納されている情報 plist ファイルがあります。 
 

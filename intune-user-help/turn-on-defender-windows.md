@@ -9,6 +9,7 @@ ms.date: 11/08/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: d16dd2de-3ed5-474f-a04b-36dcd350162c
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d51e9db367925442c7b6c735b1de86891e05856
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3e8fd6941a94a24dd3b6bf98daf6adc9a47f9fa7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55845280"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501948"
 ---
 # <a name="turn-on-windows-defender-to-access-company-resources"></a>Windows Defender をオンにし、会社のリソースにアクセスする
 
@@ -34,21 +35,21 @@ ms.locfileid: "55845280"
 ## <a name="turn-on-windows-defender"></a>Windows Defender をオンにする
 
 1. **[スタート]** で **[コントロール パネル]** を開きます。
-2. **[管理ツール]**、**[グループ ポリシーの編集]** の順に開きます。 新しいウィンドウで **[ローカル グループ ポリシー エディター]** が開きます。
-3. **[コンピューターの構成]**、**[管理テンプレート]**、**[Windows コンポーネント]**、**[Windows Defender ウイルス対策]** の順に開きます。 **[Windows Defender ウイルス対策を無効にします]** という設定がその他の設定のフォルダーの下にあります。 
-4. **[Windows Defender ウイルス対策を無効にします]** を開き、**[無効]** または **[未構成]** に設定されていることを確認します。
+2. **[管理ツール]** 、 **[グループ ポリシーの編集]** の順に開きます。 新しいウィンドウで **[ローカル グループ ポリシー エディター]** が開きます。
+3. **[コンピューターの構成]** 、 **[管理テンプレート]** 、 **[Windows コンポーネント]** 、 **[Windows Defender ウイルス対策]** の順に開きます。 **[Windows Defender ウイルス対策を無効にします]** という設定がその他の設定のフォルダーの下にあります。 
+4. **[Windows Defender ウイルス対策を無効にします]** を開き、 **[無効]** または **[未構成]** に設定されていることを確認します。
 
 ## <a name="turn-on-real-time-protection"></a>リアルタイム保護を有効にする
 
-リアルタイム保護がオンになっていることを確認します。**[スタート]** に移動し、**[Windows Defender セキュリティ センター]** を検索します。 **[ウイルスと脅威の防止の設定]** を選択し、**[リアルタイム保護]** と **[クラウドによる保護]** の両方が **[オン]** になっていることを確認します。 これらのオプションが表示されない場合、次の手順で有効にします。
+リアルタイム保護がオンになっていることを確認します。 **[スタート]** に移動し、 **[Windows Defender セキュリティ センター]** を検索します。 **[ウイルスと脅威の防止の設定]** を選択し、 **[リアルタイム保護]** と **[クラウドによる保護]** の両方が **[オン]** になっていることを確認します。 これらのオプションが表示されない場合、次の手順で有効にします。
 
 1. **[スタート]** で **[コントロール パネル]** を開きます。
-2. **[管理ツール]**、**[グループ ポリシーの編集]** の順に開きます。 新しいウィンドウで **[ローカル グループ ポリシー エディター]** が開きます。
-3. **[コンピューターの構成]**、**[管理テンプレート]**、**[Windows コンポーネント]**、**[Windows Defender セキュリティ センター]**、**[ウイルスと脅威の防止]** の順に開きます。
-4. **[Virus and threat protection area]\(ウイルスと脅威の防止の領域\)** という設定を開き、**[無効]** に設定します。
+2. **[管理ツール]** 、 **[グループ ポリシーの編集]** の順に開きます。 新しいウィンドウで **[ローカル グループ ポリシー エディター]** が開きます。
+3. **[コンピューターの構成]** 、 **[管理テンプレート]** 、 **[Windows コンポーネント]** 、 **[Windows Defender セキュリティ センター]** 、 **[ウイルスと脅威の防止]** の順に開きます。
+4. **[Virus and threat protection area]\(ウイルスと脅威の防止の領域\)** という設定を開き、 **[無効]** に設定します。
 
 ## <a name="update-your-antivirus-definitions"></a>ウイルス対策定義を更新する
 
-ウイルス対策定義が最新の状態になっていることを確認します。**[スタート]** に移動し、**[Windows Defender セキュリティ センター]** を検索します。 **[保護の更新]** と **[更新プログラムの確認]** を選択し、現行のウイルス対策保護がデバイスに適用されていることを確認します。 このオプションが表示されない場合、「[リアルタイム保護を有効にする](turn-on-defender-windows.md#turn-on-real-time-protection)」の手順を実行します。
+ウイルス対策定義が最新の状態になっていることを確認します。 **[スタート]** に移動し、 **[Windows Defender セキュリティ センター]** を検索します。 **[保護の更新]** と **[更新プログラムの確認]** を選択し、現行のウイルス対策保護がデバイスに適用されていることを確認します。 このオプションが表示されない場合、「[リアルタイム保護を有効にする](turn-on-defender-windows.md#turn-on-real-time-protection)」の手順を実行します。
 
 サポートが必要な場合は、 社内サポートに問い合わせてください。 連絡先情報については、[ポータル サイト Web サイト](https://go.microsoft.com/fwlink/?linkid=2010980)をご確認ください。

@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 274b5a8d45f9fb525010e4d225172a6a1ce22275
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f6d7b831899a740e722560c509c4b09c31d2a42b
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734155"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593780"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Microsoft Intune で iOS デバイス向けの VPN 設定を構成する
 
@@ -71,6 +72,8 @@ Microsoft Intune には、ご利用の iOS デバイスに展開できる VPN �
 
     > [!NOTE]
     > Cisco IPsec VPN の認証方法としてユーザー名とパスワードが使われている場合は、カスタム Apple Configurator プロファイルで SharedSecret を配布する必要があります。
+
+  - **派生した資格情報**: 派生した資格情報の発行者が構成されていない場合は、そのことを求めるメッセージが表示されます。
 
 - **[除外された URL]** (Zscaler のみ): Zscaler VPN に接続されると、一覧にある URL には Zscaler クラウドの外からアクセスできます。 
 
@@ -135,8 +138,8 @@ Microsoft Intune には、ご利用の iOS デバイスに展開できる VPN �
   - **Medium** (既定値):10 分ごとに keepalive メッセージを送信します。
   - **High**:60 秒ごとに keepalive メッセージを送信します。
 
-- **Tls のバージョン範囲の最小値**: 使用する最小 tls バージョンを入力します。 @No__t-0、`1.1`、または `1.2` を入力します。 空白のままにすると、既定値の `1.0` が使用されます。
-- **Tls のバージョン範囲の最大値**: 使用する tls の最大バージョンを入力します。 @No__t-0、`1.1`、または `1.2` を入力します。 空白のままにすると、既定値の `1.2` が使用されます。
+- **Tls のバージョン範囲の最小値**: 使用する最小 tls バージョンを入力します。 `1.0`、`1.1`、または `1.2` を入力します。 空白のままにすると、`1.0` の既定値が使用されます。
+- **Tls のバージョン範囲の最大値**: 使用する tls の最大バージョンを入力します。 `1.0`、`1.1`、または `1.2` を入力します。 空白のままにすると、`1.2` の既定値が使用されます。
 - **完全な転送用機密性**: **[有効]** を選択して、完全転送機密性 (PFS) を有効にします。 PFS は、セッションキーが侵害された場合の影響を軽減する IP セキュリティ機能です。 **Disable** (既定値) は PFS を使用しません。
 - **証明書失効確認**: VPN 接続を成功させるために証明書が失効していないことを確認するには、[**有効**にする] を選択します。 このチェックはベストエフォートです。 証明書が失効しているかどうかを判断する前に VPN サーバーがタイムアウトした場合は、アクセス権が付与されます。 **無効化**(既定) は、失効した証明書を確認しません。
 
@@ -155,7 +158,7 @@ Microsoft Intune には、ご利用の iOS デバイスに展開できる VPN �
     - SHA2-384
     - SHA2-512
   - **Diffie-hellman グループ**: 目的のグループを選択します。 既定値はグループ `2` です。
-  - **有効期間**(分): キーがローテーションされるまで、セキュリティアソシエーションがアクティブなままになる期間を選択します。 @No__t-0 ~ `1440` の間の値全体を入力します (1440 分は24時間です)。 既定値は `1440` です。
+  - **有効期間**(分): キーがローテーションされるまで、セキュリティアソシエーションがアクティブなままになる期間を選択します。 `10` と `1440` の間に値全体を入力します (1440 分は24時間です)。 既定値は `1440` です。
 
 - **子セキュリティアソシエーション用に個別のパラメーターセットを構成**する: iOS では、IKE 接続とすべての子接続に対して別々のパラメーターを構成できます。 
 
@@ -174,7 +177,7 @@ Microsoft Intune には、ご利用の iOS デバイスに展開できる VPN �
     - SHA2-384
     - SHA2-512
   - **Diffie-hellman グループ**: 目的のグループを選択します。 既定値はグループ `2` です。
-  - **有効期間**(分): キーがローテーションされるまで、セキュリティアソシエーションがアクティブなままになる期間を選択します。 @No__t-0 ~ `1440` の間の値全体を入力します (1440 分は24時間です)。 既定値は `1440` です。
+  - **有効期間**(分): キーがローテーションされるまで、セキュリティアソシエーションがアクティブなままになる期間を選択します。 `10` と `1440` の間に値全体を入力します (1440 分は24時間です)。 既定値は `1440` です。
 
 ## <a name="automatic-vpn-settings"></a>自動 VPN 設定
 
