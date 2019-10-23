@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b96de28e517a989fc1e749176039e6c02ef51e0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 5628ba39cafe38cc66827d69584d009c15326bd4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723776"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72491754"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>Intune で VPN サーバーに接続するための VPN プロファイルを作成する
 
@@ -52,7 +53,7 @@ ms.locfileid: "71723776"
 |Citrix SSO|- Android<br/>- Android エンタープライズ仕事用プロファイル:[アプリ構成ポリシー](../apps/app-configuration-policies-use-android.md)を使用する<br/>- iOS<br/>- Windows 10|
 |カスタム VPN|- iOS<br/>- macOS|
 |F5 Access|- Android<br/>- Android エンタープライズ仕事用プロファイル<br/>- Android エンタープライズ デバイス所有者 (フル マネージド)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|IKEv2|Windows 10|
+|IKEv2| - iOS<br/>- Windows 10|
 |L2TP|Windows 10|
 |Palo Alto Networks GlobalProtect|- Android エンタープライズ仕事用プロファイル:[アプリ構成ポリシー](../apps/app-configuration-policies-use-android.md)を使用する<br/>- iOS<br/>- Windows 10|
 |PPTP|Windows 10|
@@ -70,7 +71,7 @@ URI の設定を使ってカスタム VPN プロファイルを作成する方�
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) で、 **[デバイス構成]**  >  **[プロファイル]**  >  **[プロファイルの作成]** の順に選択します。
 2. 次のプロパティを入力します。
 
-    - **名前**: プロファイルのわかりやすい名前を入力します。 後で簡単に識別できるよう、プロファイルに名前を付けます。 たとえば、「**会社全体の WiFi プロファイル**」は適切なプロファイル名です。
+    - **名前**: プロファイルのわかりやすい名前を入力します。 後で簡単に識別できるよう、プロファイルに名前を付けます。 たとえば、「**会社全体の VPN プロファイル**」は適切なプロファイル名です。
     - **説明**:プロファイルの説明を入力します。 この設定は省略可能ですが、推奨されます。
     - **[プラットフォーム]** :デバイスのプラットフォームを選択します。 次のようなオプションがあります。
 

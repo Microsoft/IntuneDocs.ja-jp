@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/18/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34aea5256ebb7d6577b4e77054dcca63d47bf317
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d7ca53786d372f53d63388fef1179ca271fdb9d9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728586"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508589"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Intune でデバイスのパスコードをリセットまたは削除する
 
@@ -35,7 +36,7 @@ ms.locfileid: "71728586"
 | Android デバイス、バージョン 6.x 以前 | はい |
 | キオスク モードの Android enterprise デバイス | はい |
 | iOS デバイス | はい |
-| Microsoft Intune に登録されている iOS デバイス | [いいえ] |
+| ユーザー登録に登録されている iOS デバイス | [いいえ] |
 | 仕事用プロファイルに登録されている Android デバイス | [いいえ] |
 | Android デバイス、バージョン 7.0 以降 | [いいえ] |
 | macOS | [いいえ] |
@@ -57,9 +58,9 @@ Android デバイスの場合、これは、デバイス レベルのパスコ�
 
 
 1. [Azure portal](https://portal.azure.com) に Azure Active Directory グローバル管理者、Azure Active Directory Intune サービスの管理者、ヘルプデスク担当者、ロール管理者のいずれかでサインインします。
-2. **[すべてのサービス]** を選択し、**[Intune]** をフィルターとして適用し、**[Microsoft Intune]** を選択します。
-3. **[デバイス]**、**[すべてのデバイス]** の順に選択します。
-4. 管理対象のデバイスのリストから、デバイスを選択して **[...詳細を表示]** を選択します。 次に、**[パスコードの削除]** デバイス リモート アクションを選択します。
+2. **[すべてのサービス]** を選択し、 **[Intune]** をフィルターとして適用し、 **[Microsoft Intune]** を選択します。
+3. **[デバイス]** 、 **[すべてのデバイス]** の順に選択します。
+4. 管理対象のデバイスのリストから、デバイスを選択して **[...詳細を表示]** を選択します。 次に、 **[パスコードの削除]** デバイス リモート アクションを選択します。
 
 ## <a name="reset-android-work-profile-passcodes"></a>Android の仕事用プロファイルのパスコードをリセットする
 
@@ -74,4 +75,4 @@ Android デバイスの場合、これは、デバイス レベルのパスコ�
 
 ## <a name="next-steps"></a>次の手順
 
-実行したアクションの状態を確認するには、**[デバイス]** で **[デバイス アクション]** を選択します。
+実行したアクションの状態を確認するには、 **[デバイス]** で **[デバイス アクション]** を選択します。

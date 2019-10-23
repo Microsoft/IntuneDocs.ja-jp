@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/20/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ef002b508e484d6967bbdd0908729332d866046
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0718fae09228b9359b073901f3a344a09a6176e7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726363"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509254"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>ユーザー アクセスに関する使用条件
 
@@ -63,7 +64,7 @@ Intune 管理者は、ユーザーがポータル サイトを使用して以下
 
 6. **[次へ]** を選択して、 **[スコープ タグ]** ページへ移動します。
 
-7. **[スコープ タグを選択]** を選択し、これらの使用条件に割り当てるスコープ タグを選んで、 **[選択]** を選択します。 
+7. **[スコープ タグを選択]** を選択し、これらの使用条件に割り当てるスコープ タグを選択し、 **[選択]** を選択します。 
 
 8. **[次へ]** を選択して **[割り当て]** ページへ移動し、 **[割り当て先]** に次のオプションから 1 つを選択します。
     - **[すべてのユーザー]** : これらの使用条件をすべてのユーザーに割り当てるには、このオプションを選択します。

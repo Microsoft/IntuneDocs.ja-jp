@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 05/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3e459e4e22c7985e2e68e624c413ce967e1a8ba
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: ce9a6916cc77714a87aeac33555c0be1e59463f5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723854"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506626"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Intune で通信費管理サービスをセットアップする
 
@@ -127,7 +128,7 @@ Intune は、以下の通信費管理プロバイダーと統合されていま�
 
 組織のニーズに従って、少なくとも 2 つのデバイス カテゴリ (企業と個人など) を作成します。 次に、各カテゴリの動的なデバイス グループを作成します。 必要に応じて、組織用のその他のカテゴリを作成できます。
 
-Intune でのデバイス カテゴリの作成については、[グループへのデバイスのマップ](../enrollment/device-group-mapping.md)に関する記事をご覧ください。
+Intune でのデバイス カテゴリの作成については、[グループへのデバイスのマップ](../enrollment/device-group-mapping.md)に関する記事を参照してください。
 
 これらのカテゴリは、登録時にユーザーに表示されます ([Android デバイスを登録する](../enrollment/android-enroll.md))。 ユーザーが選択したカテゴリに応じて、登録デバイスは該当するデバイス グループに移動されます。
 
@@ -157,7 +158,7 @@ Intune でのデバイス カテゴリの作成については、[グループ�
 
 1. **[クライアント アプリ - アプリ]** で、前のステップで追加した Datalert アプリを選択します。
 
-2. **[割り当て]**  >  **[グループの追加]** の順に選択します。 アプリの割り当て方法を選択します。 これらの設定について詳しくは、[Intune でのグループへのアプリの割り当て](../apps/apps-deploy.md)に関する記事をご覧ください。
+2. **[割り当て]**  >  **[グループの追加]** の順に選択します。 アプリの割り当て方法を選択します。 これらの設定について詳しくは、[Intune でのグループへのアプリの割り当て](../apps/apps-deploy.md)に関する記事を参照してください。
 
     これらの手順では、グループでアプリのインストールが必須か、省略可能かを選択します。 次の例では、インストールが必須の場合を示します。 必須の場合、ユーザーはデバイスを登録した後で Datalert アプリをインストールする必要があります。
 
@@ -167,7 +168,7 @@ Intune でのデバイス カテゴリの作成については、[グループ�
 
 Intune サービスと Datalert サービスは相互に通信するように構成されています。 次に、組織が料金を支払う電話回線を Datalert コンソールに追加します。 また、携帯電話やローミングの使用量に対する違反のしきい値とアクションを入力します。 企業が料金を支払う電話回線を手動で Datalert コンソールに追加するか、またはデバイスが Intune に登録されたら自動的に追加することができます。
 
-これらの項目を設定するには、「[Microsoft Intune 用の Datalert のセットアップ](http://www.datalert.fr/microsoft-intune/intune-setup)」 (Datalert の Web サイトが開きます) をご覧ください。 **[Settings]\(設定\)** タブで、セットアップ ウィザードの手順に従います。
+これらの項目を設定するには、「[Microsoft Intune 用の Datalert のセットアップ](http://www.datalert.fr/microsoft-intune/intune-setup)」 (Datalert の Web サイトが開きます) を参照してください。 **[Settings]\(設定\)** タブで、セットアップ ウィザードの手順に従います。
 
   ![[ポリシーの追加] ウィンドウのスクリーンショット](./media/telecom-expenses-monitor/tem-add-phone-lines-to-datalert-console.png)
 

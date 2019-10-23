@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e88371ac1ab51340f0f897d835f78562bed7d252
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a72477351425e9230200995658cc6f73a8565fb7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727975"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509497"
 ---
 # <a name="see-device-details-in-intune"></a>Intune でデバイスの詳細を確認する
 
@@ -85,7 +86,7 @@ ms.locfileid: "71727975"
 |最終接続日時|デバイスが最後に Intune に接続された日時。|Windows、iOS、Android|
 |アクティベーション ロックのバイパス コード|アクティベーション ロックのバイパスに使用できるコード。|Windows、iOS、Android|
 |Azure AD に登録済み|**[はい]** の場合、デバイスが Azure Active Directory に登録されています。|Windows、iOS、Android|
-|Intune 登録済み|**[はい]** の場合、デバイスが Intune に登録されます。|Windows、iOS、Android|
+|Intune 登録済み|**[はい]** の場合、デバイスが Intune に登録されます|Windows、iOS、Android|
 |コンプライアンス|デバイスのコンプライアンスの状態。|Windows、iOS、Android|
 |EAS アクティブ化|**[はい]** の場合、デバイスが Exchange のメールボックスと同期されています。|Windows、iOS、Android|
 |EAS アクティブ化 ID|デバイスの Exchange ActiveSync の識別子。|Windows、iOS、Android|

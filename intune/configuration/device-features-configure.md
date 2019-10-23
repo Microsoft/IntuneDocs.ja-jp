@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83328652c366eea6e1a3cbb81ea4979d8844a96b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 54d7ccabf958c3b8532f1a115724559607783a57
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724192"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72495223"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Intune での iOS または macOS デバイスの機能設定の追加
 
@@ -43,9 +44,9 @@ Intune では、"構成プロファイル" を使用して、お客様の組織�
 
 AirPrint は、デバイスからワイヤレス ネットワーク経由でファイルを印刷できるようにする Apple の機能です。 Intune では、AirPrint の情報をデバイスに追加できます。
 
-Intune で構成できる設定の一覧については、[iOS での AirPrint](ios-device-features-settings.md#airprint) および [macOS での AirPrint](macos-device-features-settings.md#airprint) に関する記事をご覧ください。
+Intune で構成できる設定の一覧については、[iOS での AirPrint](ios-device-features-settings.md#airprint) および [macOS での AirPrint](macos-device-features-settings.md#airprint) に関する記事を参照してください。
 
-AirPrint について詳しくは、Apple の Web サイトの「[AirPrint について](https://support.apple.com/HT201311)」をご覧ください。
+AirPrint の詳細については、Apple の Web サイトの「[AirPrint について](https://support.apple.com/HT201311)」を参照してください。
 
 適用対象:
 
@@ -57,9 +58,9 @@ AirPrint について詳しくは、Apple の Web サイトの「[AirPrint に�
 
 iOS および iPad デバイス上のアプリで通知を受け取る方法を選択します。 たとえば、Intune から、通知センターに表示されるようにアプリの通知を送信したり、ロック画面に表示したり、音を鳴らしたりすることができます。
 
-Intune で構成できる設定の一覧については、[iOS でのアプリの通知](ios-device-features-settings.md#app-notifications)に関する記事をご覧ください。
+Intune で構成できる設定の一覧については、[iOS でのアプリの通知](ios-device-features-settings.md#app-notifications)に関する記事を参照してください。
 
-この機能の詳細については、Apple の Web サイトの「[通知](https://developer.apple.com/notifications/)」をご覧ください。
+この機能の詳細については、Apple の Web サイトの「[通知](https://developer.apple.com/notifications/)」を参照してください。
 
 適用対象:
 
@@ -77,7 +78,7 @@ Intune で構成できる設定の一覧については、[iOS でのアプリ�
 
 Intune で構成できる設定の一覧については、[macOS での関連付けられたドメイン](macos-device-features-settings.md#associated-domains)に関する記事をご覧ください。
 
-この機能について詳しくは、Apple の Web サイトの「[アプリの関連付けられたドメインの設定](https://developer.apple.com/documentation/security/password_autofill/setting_up_an_app_s_associated_domains)」をご覧ください。
+この機能の詳細については、Apple の Web サイトの「[アプリの関連付けられたドメインの設定](https://developer.apple.com/documentation/security/password_autofill/setting_up_an_app_s_associated_domains)」を参照してください。
 
 適用対象:
 
@@ -90,7 +91,7 @@ Intune で構成できる設定の一覧については、[macOS での関連付
 - **[ドッキング]** の設定を使用して、アプリまたはフォルダーを画面に追加します。 たとえば、デバイスのドックに Safari や Mail アプリを表示します。
 - ホーム画面に表示したい**ページ**や、各ページに表示するアプリを追加します。 たとえば、**Contoso** ページを追加し、このページに設定アプリを追加します。
 
-Intune で構成できる設定の一覧については、[iOS でのホーム画面のレイアウト](ios-device-features-settings.md#home-screen-layout)に関する記事をご覧ください。
+Intune で構成できる設定の一覧については、[iOS でのホーム画面のレイアウト](ios-device-features-settings.md#home-screen-layout)に関する記事を参照してください。
 
 適用対象:
 
@@ -101,9 +102,9 @@ Intune で構成できる設定の一覧については、[iOS でのホーム�
 
 これらの設定を使用して、サインイン ウィンドウとロック画面にカスタム メッセージまたはテキストを表示します。 たとえば、"忘れ物として見つけた場合の返却先" メッセージを入力したり、資産タグ情報を表示したりできます。
 
-Intune で構成できる設定の一覧については、[iOS でのロック画面メッセージの設定](ios-device-features-settings.md#lock-screen-message)に関する記事をご覧ください。
+Intune で構成できる設定の一覧については、[iOS でのロック画面メッセージの設定](ios-device-features-settings.md#lock-screen-message)に関する記事を参照してください。
 
-ロック画面のメッセージについて詳しくは、Apple の Web サイトの「[LockScreenMessage](https://developer.apple.com/documentation/devicemanagement/lockscreenmessage)」をご覧ください。
+ロック画面のメッセージの詳細については、Apple の Web サイトの「[LockScreenMessage](https://developer.apple.com/documentation/devicemanagement/lockscreenmessage)」を参照してください。
 
 適用対象:
 
@@ -114,7 +115,7 @@ Intune で構成できる設定の一覧については、[iOS でのロック�
 
 この機能は、ユーザーがデバイスにサインインしたときに開くアプリ、カスタム アプリ、ファイル、フォルダーを選択するために使用します。 
 
-Intune で構成できる設定の一覧については、[macOS でのログイン項目](macos-device-features-settings.md#login-items)に関する記事をご覧ください。
+Intune で構成できる設定の一覧については、[macOS でのログイン項目](macos-device-features-settings.md#login-items)に関する記事を参照してください。
 
 適用対象:
 

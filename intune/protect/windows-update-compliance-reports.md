@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 02/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09f3cafc16d8a08885731aa244a089367c6c0933
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 55fa1109fde57e3104c8bb15e1f45761d661c735
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728105"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508719"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>更新プログラムに関する Intune コンプライアンス レポート
 Intune を使用して Windows 10 デバイスに Windows の更新プログラムを展開する場合は、Intune を使用するか、または Microsoft Operations Management Suite (OMS) の一部であり、*Update Compliance* と呼ばれる無料のソリューションを使用することで、更新プログラムのコンプライアンスについて詳細を表示できます。

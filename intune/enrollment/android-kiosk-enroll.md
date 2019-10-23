@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 1/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e07952b6e7147ffa9b84cfbd1988ebb927b411dd
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d1a1c03dc480ad66de22b4a5ee44a9b8c221980c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723568"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503391"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Android Enterprise 専用デバイスの Intune 登録を設定する
 
@@ -91,7 +92,7 @@ Android Enterprise 専用デバイスの管理を設定するには、次の手�
 
 トークン/QR コードを取り替えたり、取り消したりしても、登録済みにデバイスに影響が出ることはありません。
 
-1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)にサインインし、 **[デバイスの登録]**  >  **[Android の登録]**  >  **[会社が所有する専用デバイス]** を選択します。
+1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインし、 **[デバイスの登録]**  >  **[Android の登録]**  >  **[会社が所有する専用デバイス]** を選択します。
 2. 置き換えるか取り消すプロファイルを選択します。
 3. **[トークン]** を選択します。
 4. トークンを置換するには、 **[トークンの置換]** を選択します。

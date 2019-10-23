@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 06/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
@@ -17,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bc472a8b15746a46b5e0cda3a8fe11db7aa4974
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d2a6b427552e545421e329b900833c889e67bf35
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722307"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503029"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>登録ステータス ページを設定する
  
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
  
-登録ステータス ページ (ESP) には、デバイスの初期登録時に Windows 10 デバイス (バージョン1803以降) に関するインストール情報が表示されます。 次に例を示します。
+登録ステータス ページ (ESP) には、デバイスの初期登録時に Windows 10 デバイス (バージョン 1803 以降) に関するインストール情報が表示されます。 次に例を示します。
 - [Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/) を使用しているとき 
 - 登録ステータス ページ ポリシーの適用後、マネージド デバイスが初めて起動されたとき。 
 
@@ -131,7 +132,7 @@ ms.locfileid: "71722307"
 - アプリケーション
   - すべてのデバイス、すべてのユーザー、またはデバイスを登録しているユーザーがメンバーであるユーザー グループに割り当てられている、ユーザー単位の LoB MSI アプリ。
   - すべてのユーザー、またはデバイスを登録しているユーザーがメンバーであるユーザー グループに割り当てられている、コンピューター単位の LoB MSI アプリ。
-  - 次のいずれかのオブジェクトに割り当てられている、LoB MSI アプリ、オンライン ストア アプリ、およびオフライン ストア アプリ。
+  - 次のいずれかのオブジェクトに割り当てられている、LoB ストア アプリ、オンライン ストア アプリ、およびオフライン ストア アプリ。
     - すべてのデバイス
     - すべてのユーザー
     - デバイスを登録するユーザーが、インストール コンテキストがユーザーに設定されているメンバーである、ユーザー グループ。

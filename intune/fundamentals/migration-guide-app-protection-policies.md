@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 93cda587-bf56-4d41-b123-9fe203fad788
@@ -16,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 49246302cf71fc95d20cdb84099323ba9beffdb3
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: 8fab3ea722e94f2613a0fb1e474a16ecb5971569
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940465"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585256"
 ---
 # <a name="configure-app-protection-policies-optional"></a>アプリ保護ポリシーを構成する (省略可能)
 
@@ -51,9 +52,7 @@ Intune では移行中の企業データの保護が提供されるため、デ�
 
 ## <a name="task-list-for-app-protection-policies"></a>アプリ保護ポリシーのタスク一覧
 
-1. [アプリ保護ポリシーを作成する](../apps/app-protection-policies.md#create-an-app-protection-policy)
-2. [ポリシーの展開](../apps/app-protection-policies.md#deploy-a-policy-to-users)
-
+- [アプリ保護ポリシーを作成して割り当てる方法](~/apps/app-protection-policies.md)
 
 ## <a name="next-steps"></a>次の手順
 

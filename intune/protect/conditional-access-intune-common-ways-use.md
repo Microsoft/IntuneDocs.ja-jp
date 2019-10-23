@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fa4157d82ae63336503a9348851ad75f3b8243f9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 00743e020fc9d42970dca5efa130908a53c6c5bf
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722697"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504593"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Intune での条件付きアクセスの一般的な使用方法
 
@@ -122,7 +123,7 @@ Intune と Azure Active Directory が連携することで、管理対象アプ�
 
 #### <a name="how-conditional-access-for-exchange-on-premises-works"></a>Exchange On-Premises の条件付きアクセスのしくみ
 
-Exchange On-Premises の条件付きアクセスの動作は、Azure の条件付きアクセスベースのポリシーとは異なります。 Intune Exchange On-premises コネクタをインストールして、Exchange サーバーと直接対話します。 Intune Exchange Connector は Exchange サーバーに存在するすべての Exchange Active Sync (EAS) レコードを収集するため、Intune はこれらの EAS レコードを取得して、Intune デバイス レコードにマップすることができます。 これらのレコードはデバイスに登録され、Intune によって認識されます。 このプロセスにより、電子メールへのアクセスが許可またはブロックされます。
+Exchange On-Premises の条件付きアクセスの動作は、Azure の条件付きアクセス ベースのポリシーとは異なります。 Intune Exchange On-premises コネクタをインストールして、Exchange サーバーと直接対話します。 Intune Exchange Connector は Exchange サーバーに存在するすべての Exchange Active Sync (EAS) レコードを収集するため、Intune はこれらの EAS レコードを取得して、Intune デバイス レコードにマップすることができます。 これらのレコードはデバイスに登録され、Intune によって認識されます。 このプロセスにより、電子メールへのアクセスが許可またはブロックされます。
 
 EAS レコードが新しいために Intune で認識されない場合、電子メールへのアクセスをブロックすることを Exchange サーバーに指示するコマンドレットが Intune によって発行されます。 このプロセスのしくみの詳細を次に示します。
 

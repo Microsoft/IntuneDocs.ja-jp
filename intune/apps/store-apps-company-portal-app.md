@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bfe1a2d3-f611-4dbb-adef-c0dff4d7b810
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31fcc3a47a131ca017e3691cc53a7295b81fe67c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 32411e513cec9683faf598c8d73d6d803bcddb3d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724595"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507112"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Microsoft Intune を使用して Windows 10 ポータル サイト アプリを手動で追加する
 
@@ -52,19 +53,19 @@ ms.locfileid: "71724595"
 
 7. **[ダウンロード]** を選択して、[必要なフレームワーク] の下のすべてのパッケージをダウンロードします。  
 
-    このアクションを、x86、x64、および ARM アーキテクチャで完了する必要があります。<br> 
-    *OS の最小 バージョンとして 1507 を選択した場合は 9 個、1511 を選択した場合は 12 個、1607 を選択した場合は 15 個の必須フレーム ワークパッケージがあります。*
+    x86、x64、および ARM アーキテクチャでこのアクションを完了する必要があります。<br> 
+    *最小 OS バージョンとして 1507 を選択した場合は 9 個の必須フレームワーク パッケージ、1511 を選択した場合は 12 個のパッケージ、1607 を選択した場合は 15 個のパッケージがあります。*
 
-8. Azure Portal の Microsoft Intune で、新しいアプリとしてポータル サイト アプリをアップロードします。 **[アプリの追加]** ウィンドウで **[アプリの種類]** として [基幹業務アプリ] を選択することで、アプリを追加します。 次に、アプリ パッケージ ファイル (拡張子 .AppxBundle) を選択します。
+8. Azure Portal の Microsoft Intune で、新しいアプリとしてポータル サイト アプリをアップロードします。 **[アプリの追加]** ウィンドウで **[アプリの種類]** として [基幹業務アプリ] を選択してアプリケーションを追加します。 次に、アプリ パッケージ ファイル (拡張子 .AppxBundle) を選択します。
 
-9. **[アプリの依存関係ファイルを選択してください]** で、Shift キーを押しながら 手順 7 でダウンロードしたすべての依存関係を選択し、必要なアーキテクチャの **[追加済み]** 列に **[はい]** が表示されていることを確認します。
+9. **[Select dependency app files]\(依存関係アプリ ファイルの選択\)** で、Shift キーを押しながらクリックして手順 7 でダウンロードしたすべての依存関係を選択し、必要なアーキテクチャの **[追加済み]** 列に **[はい]** が表示されることを確認します。
 
      > [!NOTE]
-     > 依存関係が追加されない場合は、指定したデバイスの種類にアプリがインストールされていない可能性があります。
+     > 依存関係が追加済みでない場合は、指定したデバイスの種類にアプリがインストールされていない可能性があります。
 
 10. **[OK]** をクリックし、必要な **[追加情報]** を入力し、 **[追加]** .をクリックします。
 
-11. 選択したユーザーまたはデバイス グループのセットに対して、必要なアプリとしてポータル サイト アプリを割り当てます。  
+11. 選択した一連のユーザーまたはデバイス グループに、必要なアプリとしてポータル サイト アプリを割り当てます。  
 
 Intune がユニバーサル アプリ用に依存関係をどのように処理するかについて詳しくは、「[Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)」 (Microsoft Intune MDM 経由で依存関係を使用して appxbundle を展開する) をご覧ください。  
 

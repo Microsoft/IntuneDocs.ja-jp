@@ -9,20 +9,20 @@ manager: dougeby
 ms.date: 08/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
-ms.technology: ''
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb5abe54529a9de575cf84b8a89b0f402f8d117b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 19d02694ab5e53dc43e0861c6a427a044bf50648
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727052"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502640"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>モバイル デバイス管理機関の設定
 
@@ -41,13 +41,13 @@ ms.locfileid: "71727052"
 
 - **Office 365 のモバイル デバイス管理** - Office 365 と Intune クラウド ソリューションの統合。 Microsoft 365 管理センターから Intune を構成します。 Intune スタンドアロンで利用できる機能の一部が含まれます。 Microsoft 365 管理センターで MDM 機関を設定します。
 
-- **Office 365 MDM との共存** テナント上で MDM for Office 365 および Intune を両方とも同時実行でアクティブ化して使用し、ユーザーごとに管理機関を Intune または MDM for Office 365 のどちらかに設定して、どのサービスがモバイル デバイスの管理に使用されるかを指定します。 ユーザーの管理機関は、ユーザーに割り当てられたライセンスに基づいて定義されます。 詳細については、「[Microsoft Intune Co-existence with MDM for Office 365 (Microsoft Itune と MDM for Office 365 の共存)](https://blogs.technet.microsoft.com/configmgrdogs/2016/01/04/microsoft-intune-co-existence-with-mdm-for-office-365)」を参照してください。
+- **Office 365 MDM との共存**テナント上で MDM for Office 365 および Intune を両方とも同時実行でアクティブ化して使用し、ユーザーごとに管理機関を Intune または MDM for Office 365 のどちらかに設定して、どのサービスがモバイル デバイスの管理に使用されるかを指定します。 ユーザーの管理機関は、ユーザーに割り当てられたライセンスに基づいて定義されます。 詳細については、「[Microsoft Intune Co-existence with MDM for Office 365 (Microsoft Itune と MDM for Office 365 の共存)](https://blogs.technet.microsoft.com/configmgrdogs/2016/01/04/microsoft-intune-co-existence-with-mdm-for-office-365)」を参照してください。
 
 ## <a name="set-mdm-authority-to-intune"></a>MDM 機関を Intune に設定する
 
 MDM 機関をまだ設定していない場合は、次の手順に従います。 SCCM から変更するには、「[ハイブリッド MDM のユーザーとデバイスを Intune スタンドアロンに移行する](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)」を参照してください。
 
-1. [Azure portal 内の Intune ](https://aka.ms/intuneportal)で、オレンジのバナーを選択して **[モバイル デバイス管理機関]** 設定を開きます。 オレンジのバナーは、MDM 機関をまだ設定していない場合にのみ表示されます。
+1. [Azure portal 内の Intune ](https://aka.ms/intuneportal) で、オレンジのバナーを選択して **[モバイル デバイス管理機関]** 設定を開きます。 オレンジのバナーは、MDM 機関をまだ設定していない場合にのみ表示されます。
 2. **[モバイル デバイス管理機関]** で、次の選択肢から MDM 機関を選択します。
    - **Intune MDM 機関**
    - **なし**

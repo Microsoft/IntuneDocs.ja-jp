@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45e6f473eaec082b3f566b6bf717aed7c3b49f80
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c18da57282a190dec363e3dfbde5293f5228cb0b
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722736"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504619"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Exchange On-Premises と従来の Exchange Online Dedicated の条件付きアクセス ポリシーを作成する
 
@@ -38,7 +39,7 @@ Exchange Online Dedicated 環境を使用していて、それが新しい構成
 
 - Exchange のバージョンが **Exchange 2010 SP1 以降**であること。 Exchange Server クライアント アクセス サーバー (CAS) アレイがサポートされています。
 
-- Intune を Exchange On-Premises に接続する [Exchange Active Sync On-Premises Exchange Connector](exchange-connector-install.md) がインストールされ、使用されていること。
+- [Exchange Active Sync On-Premises Exchange Connector](exchange-connector-install.md) をインストールして使用していること。これにより、Intune が Exchange On-Premises に接続されます。
 
     >[!IMPORTANT]  
     >Intune は、サブスクリプションあたり複数のオンプレミス Exchange コネクタに対応できます。  ただし、それぞれのオンプレミスの Exchange コネクタは、単一の Intune テナントに固有であり、他のテナントでは使用できません。  オンプレミス Exchange 組織が複数ある場合、Exchange 組織別にコネクタを設定できます。
@@ -103,9 +104,9 @@ Windows 8.1 以降用のネイティブ **メール** アプリケーション (
 
    - **[アンマネージド デバイス アクセス]** では、条件付きアクセスやその他のルールの影響を受けないデバイスからのアクセスに対するグローバルな既定のルールを設定します。
 
-     - **[アクセスを許可]** - すべてのデバイスから Exchange On-premises にすぐにアクセスできます。 前の手順で含まれるように構成したグループのユーザーのデバイスについては、そのデバイスが後でコンプライアンス ポリシーに非準拠と評価されたり、Intune に登録されていなかったりするとブロックされます。
+     - **[アクセスを許可]** - すべてのデバイスから Exchange On-Premises にすぐにアクセスできます。 前の手順で含まれるように構成したグループのユーザーのデバイスについては、そのデバイスが後でコンプライアンス ポリシーに非準拠と評価されたり、Intune に登録されていなかったりするとブロックされます。
 
-     - **[アクセスのブロック]** および **[検査]** - 最初はすべてのデバイスが Exchange On-premises へのアクセスをすぐにブロックされます。 前の手順で含まれるように構成されたグループのユーザーのデバイスについては、デバイスが Intune に登録され、準拠として評価された後でアクセスできるようになります。 
+     - **[アクセスのブロック]** および **[検査]** - 最初はすべてのデバイスが Exchange On-Premises へのアクセスをすぐにブロックされます。 前の手順で含まれるように構成されたグループのユーザーのデバイスについては、デバイスが Intune に登録され、準拠として評価された後でアクセスできるようになります。 
 
        Samsung KNOX Standard が実行されて "*いない*" Android デバイスは、この設定がサポートされていないため、常にブロックされます。
 
