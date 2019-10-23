@@ -9,6 +9,7 @@ ms.date: 03/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ''
 searchScope:
@@ -18,16 +19,16 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser; intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5aff186d3850e8f9a6081168a5adc9956504019
-ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
+ms.openlocfilehash: 64612aa8a1d427284778a9aa43b966b05cb0a15f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71163337"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502105"
 ---
 # <a name="reset-device-from-the-company-portal-app"></a>ポータルサイトアプリからデバイスをリセットする  
 
-使用済み、紛失、または盗難にあったデバイスをポータルサイトアプリの工場出荷時の設定にリセットします。  
+デバイスが使用済みである場合、紛失した場合、または盗難にあった場合などに、ポータル サイト アプリからその出荷時の設定にリセットします。  
 
 デバイスをリセットすると、ポータルサイトに表示されなくなります。 既存のアプリとファイルは消去され、すぐに使用できる設定に復元されます。  
 

@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bd91891fa6da770404dc0af6d59016aeefe30b3
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4cbf9c29a1e694726b1b42f7072eea859f812751
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734597"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593811"
 ---
 # <a name="add-e-mail-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune で iOS デバイス用の電子メール設定を追加する
 
@@ -55,7 +56,7 @@ Microsoft Intune では、電子メール サーバーに接続する電子メ�
       - **[使用するカスタム ドメイン名]** : Intune がドメイン名として使用する、`contoso.com` や `contoso` などの値を入力します。
 
 - **[AAD からのメール アドレス属性]** : ユーザーの電子メール アドレスを生成する方法を選択します。 メール アドレスとして完全なプリンシパル名を使用するには、 **[ユーザー プリンシパル名]** (`user1@contoso.com` または `user1`) を選択します。 プライマリ SMTP アドレスを使用して Exchange にログオンするには、 **[プライマリ SMTP アドレス]** (`user1@contoso.com`) を選択します。
-- **[認証方法]** - 電子メール プロファイルで使用する認証方法として、 **[ユーザー名とパスワード]** または **[証明書]** を選択します。 Azure Multi-Factor Authentication はサポートされていません。
+- **[認証方法]** : 電子メール プロファイルで使用する認証方法として、 **[ユーザー名とパスワード]** 、 **[証明書]** 、または **[派生資格情報]** を選択します。 Azure Multi-Factor Authentication はサポートされていません。
   - **[証明書]** を選択した場合は、Exchange 接続の認証に使用するために事前に作成しておいたクライアント SCEP または PKCS 証明書プロファイルを選択します。
 - **[SSL]** : **[有効]** を選択すると、電子メールの送受信および Exchange サーバーとの通信に、SSL (Secure Sockets Layer) 通信が使用されます。
 - **[OAuth]** : **[有効]** を選択すると、メールの送受信および Exchange との通信に、Open Authorization (OAuth) 通信が使用されます。 OAuth サーバーで証明書認証が使用されている場合は、 **[認証方法]** として **[証明書]** を選択し、プロファイルで証明書を含めます。 それ以外の場合は、 **[認証方法]** として **[ユーザー名とパスワード]** を選択します。 OAuth を使用するときは、次のことを確認してください。

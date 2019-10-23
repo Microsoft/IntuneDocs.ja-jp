@@ -6,21 +6,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5adde9049f1e5f88df4a55b473f59f1d4a08e396
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d88705cbce0d5045ba7f45baf80de7b6e5d383d3
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733869"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593765"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Microsoft Intune で iOS デバイス向けの Wi-Fi 設定を追加する
 
@@ -79,7 +80,13 @@ ms.locfileid: "71733869"
     - **[サーバー信頼]**  -  **[証明書サーバー名]** : 信頼された証明機関 (CA) によって発行された証明書で使用されている 1 つまたは複数の共通名を、ワイヤレス ネットワーク アクセス サーバーに **[追加]** します。 たとえば、`mywirelessserver.contoso.com` または `mywirelessserver` を追加します。 この情報を入力すると、この Wi-Fi ネットワークに接続するときに、ユーザーのデバイスに表示される動的な信頼ウィンドウをバイパスできます。
     - **[サーバー検証のためのルート証明書]** : 既存の信頼されたルート証明書プロファイルを選択します。 この証明書により、クライアントはワイヤレスネットワークアクセスサーバーの証明書を信頼することができます。
 
-    - **[クライアント認証]**  -  **[クライアント認証に使用するクライアント証明書 (ID 証明書)]** : やはりデバイスに展開される SCEP または PKCS クライアント証明書プロファイルを選択します。 この証明書は、接続の認証のためにデバイスによってサーバーに提示される ID です。
+    - **[クライアント認証]** **[認証方法]** を選択します。 次のようなオプションがあります。
+      
+      - **派生した資格情報**: 派生した資格情報の発行者が構成されていない場合は、そのことを求めるメッセージが表示されます。
+      
+      - **[証明書]** : やはりデバイスに展開される SCEP または PKCS クライアント証明書プロファイルを選択します。 この証明書は、接続の認証のためにデバイスによってサーバーに提示される ID です。
+
+    - **[ID プライバシー (外部 ID)]** : EAP ID 要求への応答で送信されるテキストを入力します。 このテキストには任意の値を指定できます (例: `anonymous`)。 認証時に、この匿名の ID が最初に送信され、その後、セキュリティで保護されたトンネルで実際の ID が送信されます。
 
   - **[EAP-TTLS]** : 以下も入力します。
 
@@ -88,6 +95,8 @@ ms.locfileid: "71733869"
 
     - **[クライアント認証]** - **[認証方法]** を選択します。 次のようなオプションがあります。
 
+      - **派生した資格情報**: 派生した資格情報の発行者が構成されていない場合は、そのことを求めるメッセージが表示されます。  
+      
       - **[ユーザー名とパスワード]** : 接続の認証のためにユーザーにユーザー名とパスワードを要求します。 次の項目も入力します。
         - **[EAP 以外の方法 (内部 ID)]** : 接続を認証する方法を選択します。 Wi-Fi ネットワークで構成されているものと同じプロトコルを選択する必要があります。
 
@@ -106,6 +115,8 @@ ms.locfileid: "71733869"
 
     - **[クライアント認証]** - **[認証方法]** を選択します。 次のようなオプションがあります。
 
+      - **派生した資格情報**: 派生した資格情報の発行者が構成されていない場合は、そのことを求めるメッセージが表示されます。  
+      
       - **[ユーザー名とパスワード]** : 接続の認証のためにユーザーにユーザー名とパスワードを要求します。 
 
       - **[証明書]** : やはりデバイスに展開される SCEP または PKCS クライアント証明書プロファイルを選択します。 この証明書は、接続の認証のためにデバイスによってサーバーに提示される ID です。

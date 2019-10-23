@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e92e3442e1347cb1a2cd1c737078912b74f075c9
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 44733eb369e520d2d5f0ff548d4f1921abcb8758
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817639"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503565"
 ---
 # <a name="troubleshoot-integration-of-jamf-pro-with-microsoft-intune"></a>Microsoft Intune との Jamf Pro の統合に関するトラブルシューティング
 
@@ -56,7 +57,7 @@ Intune と Jamf Pro の統合を調査するときは、次の情報を考慮し
 |-----------------|--------------------------|
 | **Jamf Pro でデバイスが応答していないとマークされている**  | [デバイスは、Jamf Pro または Azure AD でチェックインできません](#devices-are-marked-as-unresponsive-in-jamf-pro) |
 | **Mac デバイスアプリを開いたときにキーチェーンのサインインを求めるメッセージを登録できない**  | [ユーザーは、アプリが Azure AD に登録できるようにするために、パスワードの入力を求められ](#mac-devices-prompt-for-keychain-sign-in-when-you-open-an-app)ます。 |
-| **デバイスを登録できない**  | 次の原因が該当します。 <br> **-** [***原因 1*** -Azure の Jamf Pro アプリに無効なアクセス許可がある](#cause-1) <br> **-** [***原因 2*** -の*Jamf Native macOS コネクタ*に問題があり Azure AD](#cause-2) <br> **-** [***原因 3*** -ユーザーに有効な Intune または Jamf ライセンスがない](#cause-3) <br> **-** [***原因 4*** -ユーザーが Jamf Self Service を使用してポータルサイトアプリを起動していない](#cause-4) <br> **-** [***原因 5*** -Intune 統合がオフになっています](#cause-5) <br> **-** [***原因 6*** -デバイスが既に Intune に登録されているか、ユーザーがデバイスを複数回登録しようとしました](#cause-6) <br> **-** で[は、JamfAAD***が***ユーザーのキーチェーンから "Microsoft Workplace Join Key" へのアクセスを要求します。](#cause-7) |
+| **デバイスを登録できない**  | 次の原因が該当します。 <br> **-** [***原因 1*** -Azure の Jamf Pro アプリに無効なアクセス許可がある](#cause-1) <br> **-** [***原因 2*** -の*Jamf Native macOS コネクタ*に問題があり Azure AD](#cause-2) <br> **-** [***原因 3*** -ユーザーに有効な Intune または Jamf ライセンスがない](#cause-3) <br> **-** [***原因 4*** -ユーザーが Jamf Self Service を使用してポータルサイトアプリを起動していない](#cause-4) <br> **-** [***原因 5*** -Intune 統合がオフになっている](#cause-5) <br> **-** [***原因 6*** -デバイスが既に Intune に登録されているか、ユーザーがデバイスを複数回登録しようとしました。](#cause-6) <br> **-** [***原因 7*** -JamfAAD は、ユーザーのキーチェーンからの "Microsoft Workplace Join Key" へのアクセスを要求します。](#cause-7) |
 |  **Mac デバイスが Intune に準拠しているが Azure で非準拠と表示される** | [デバイス登録に関する問題](#mac-device-shows-compliant-in-intune-but-noncompliant-in-azure) |
 | **Jamf を使用して登録された Mac デバイスの Intune コンソールに重複するエントリが表示される** | [同じデバイスに対する複数の登録](#duplicate-entries-appear-in-the-intune-console-for-mac-devices-enrolled-by-using-jamf) |
 | **コンプライアンスポリシーがデバイスの評価に失敗する** | [ポリシーを対象とするデバイスグループ](#compliance-policy-fails-to-evaluate-the-device) |
@@ -145,7 +146,7 @@ Jamf を通じてデバイスを登録して Intune に登録するには、ユ�
 
 デバイスで登録と登録に使用されているサービスを特定するには、デバイスのポータルサイトアプリを確認します。 Jamf を使用して登録すると、セルフサービスアプリを開いて変更を加えるように通知されます。
 
-ポータルサイトアプリで、ユーザーに **`Not registered`** と表示されることがあり、次の例のようなエントリがポータルサイトログに記録されます。  
+ポータルサイトアプリで、ユーザーに **`Not registered`** が表示され、次の例のようなエントリがポータルサイトログに表示されることがあります。  
 
 ```
    Line 7783: <DATE> <IP ADDRESS> INFO com.microsoft.ssp.application TID=1  
@@ -207,8 +208,8 @@ Jamf Pro 内で Intune の統合を再度有効にします。 「[Jamf Pro で 
    - /Library/Preferences/com.microsoft.CompanyPortal.plist
    - /Library/Preferences/com.jamfsoftware.selfservice.mac.plist
    - /Library/Preferences/com.jamfsoftware.management.jamfAAD.plist
-   - /(& A)/<username>/ライブラリ/Cookie/com. office ポータル binarycookies
-   - /Jamf/<username>/Library/Cookies/jamfAAD cookies のようになります。
+   - //Library/Cookies/com.microsoft.CompanyPortal.binarycookies/<username>
+   - //Library/Cookies/com.jamf.management.jamfAAD.binarycookies/<username>
    - com. microsoft ポータル
    - HockeySDK (com)
    - enterpriseregistration.windows.net
@@ -273,7 +274,7 @@ Jamf Pro 内で Intune の統合を再度有効にします。 「[Jamf Pro で 
 
 ### <a name="compliance-policy-fails-to-evaluate-the-device"></a>コンプライアンスポリシーがデバイスの評価に失敗する  
 
-**原因**: Intune との Jamf 統合では、デバイスグループを対象とするコンプライアンスポリシーがサポートされていません。 
+**原因**: Jamf と Intune の統合では、デバイス グループを対象とするコンプライアンス ポリシーがサポートされません。 
 
 **解決方法**  
 ユーザーグループに割り当てられる macOS デバイスのコンプライアンスポリシーを変更します。 

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/25/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a02e403fdba34b576aa90b82062b7a602cbb517
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e7c7ec23d0408aa4d4cf81baff2d7cdf749fb65e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735689"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509235"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune での iOS デバイスの登録に関する問題のトラブルシューティング
 
@@ -51,7 +52,7 @@ ms.locfileid: "71735689"
 #### <a name="resolution"></a>解決策
 
 1. 次の手順でデータが失われないようにするには (iOS の復元によってデバイス上のすべてのデータが削除される)、必ずデータをバックアップしてください。
-2. デバイスを回復モードにしてから復元します。 新しいデバイスとして設定していることを確認してください。 IOS デバイスを復元する方法の詳細については、 [https://support.apple.com/HT201263](https://support.apple.com/HT201263)を参照してください。
+2. デバイスを回復モードにしてから復元します。 新しいデバイスとして設定していることを確認してください。 IOS デバイスを復元する方法の詳細については、「 [https://support.apple.com/HT201263](https://support.apple.com/HT201263)」を参照してください。
 3. デバイスを再度登録します。
 
 ### <a name="profile-installation-failed-connection-to-the-server-could-not-be-established"></a>プロファイルのインストールに失敗しました。 サーバーへの接続を確立できませんでした。
@@ -92,7 +93,7 @@ ms.locfileid: "71735689"
 1. [Intune 管理ポータル](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) >  台の**デバイス** > **すべてのデバイス** を開き、ユーザーが登録したデバイスの数を確認します。
     > [!NOTE]
     > また、影響を受けるユーザーが[Intune ユーザーポータル](https://portal.manage.microsoft.com/)にログオンし、登録されているデバイスを確認する必要があります。 Intune[ユーザーポータル](https://portal.manage.microsoft.com/)に表示されるデバイスもありますが、 [intune 管理ポータル](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)には表示されません。このようなデバイスは、デバイスの登録制限にもカウントされます。
-2. [**管理** > **モバイルデバイス管理** > **登録ルール**] に移動して、デバイスの登録制限を確認 > ます。 既定では、制限は15に設定されています。 
+2. [**管理** > **モバイルデバイス管理** >  の**登録ルール**] に移動して、デバイスの登録制限を確認 > ます。 既定では、制限は 15 に設定されています。 
 3. 登録されているデバイスの数が制限に達した場合は、不要なデバイスを削除するか、デバイスの登録制限を増やします。 登録されているすべてのデバイスで Intune ライセンスが使用されるため、まず不要なデバイスを必ず削除することをお勧めします。
 4. デバイスを再度登録します。
 
@@ -111,7 +112,7 @@ ms.locfileid: "71735689"
 
 #### <a name="resolution"></a>解決策
 1. [Microsoft 365 管理センター](https://portal.office.com/adminportal/home#/homepage)にアクセスし、 **[ユーザー]**  >  **[アクティブなユーザー]** の順に選択します。
-2. 影響を受けるユーザーアカウント >**製品ライセンス** > **Edit**を選択します。
+2. 影響を受けるユーザーアカウント >**製品ライセンス** > **編集** を選択します。
 3. 有効な Intune ライセンスがこのユーザーに割り当てられていることを確認してください。
 4. デバイスを再度登録します。
 
@@ -120,7 +121,7 @@ ms.locfileid: "71735689"
 **原因:** デバイスを登録しようとしているユーザーには、有効な Intune ライセンスがありません。
 
 1. [Microsoft 365 管理センター](https://portal.office.com/adminportal/home#/homepage)にアクセスし、 **[ユーザー]**  >  **[アクティブなユーザー]** の順に選択します。
-2. 影響を受けるユーザーアカウントを選択し、[**製品ライセンス** > ] **[編集]** の順に選択します。
+2. 影響を受けるユーザーアカウントを選択し、 **[製品ライセンス]**  >  **[編集]** の順に選択します。
 3. 有効な Intune ライセンスがこのユーザーに割り当てられていることを確認してください。
 4. デバイスを再度登録します。
 
@@ -183,7 +184,7 @@ iPhone mobileassetd[83] <Notice>: 0x1a49aebc0 Client connection: XPC_TYPE_ERROR 
 #### <a name="resolution"></a>解決策
 
 1. 登録プロファイルを編集します。 プロファイルに変更を加えることができます。 目的は、プロファイルの変更時刻を更新することです。
-2. DEP で管理されているデバイスの同期: Intune ポータル >**管理** > **モバイルデバイス管理** > **iOS** > **Device Enrollment Program** > **Sync now** を開きます。 同期要求が Apple に送信されます。
+2. DEP で管理されているデバイスの同期: Intune ポータル >**管理** > **モバイルデバイス管理**の  > **iOS**  > **Device Enrollment Program**  >  同期 を**開始**します。 同期要求が Apple に送信されます。
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>ユーザーログイン時の DEP 登録スタック
 登録プロファイルが割り当てられている DEP 管理対象デバイスを有効にすると、資格情報を入力した後に初期セットアップが表示されます。

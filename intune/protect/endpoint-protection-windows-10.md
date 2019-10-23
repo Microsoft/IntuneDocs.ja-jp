@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22e3779cd0772753ccd8843cd1f1ff38617298d6
-ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
+ms.openlocfilehash: 40865dcca0b0109ae36f65b6691672c0035732b5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163582"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502287"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Intune を使用してデバイスを保護するための Windows 10 (以降) の設定  
 
@@ -312,7 +313,7 @@ Application Guard は Windows 10 (64 ビット) デバイスでのみ使用可�
 - **説明**  
   **既定値**:*説明なし*  
 
-  ルールの説明を入力します。  
+  規則の説明を入力します。  
 
 - **[方向]**    
   **既定値**: 未構成  
@@ -412,9 +413,9 @@ Application Guard は Windows 10 (64 ビット) デバイスでのみ使用可�
   次のオプションから選択します。  
   - **[リモート アクセス]**  
   - **[ワイヤレス]**  
-  - **ローカルエリアネットワーク**  
+  - **[ローカル エリア ネットワーク]**  
 
-- **これらのユーザーからの接続のみを許可する**  
+- **[以下のユーザーのみに接続を許可する]**  
   **既定**: すべて*のユーザー (一覧が指定されていない場合、既定ですべてのユーザーが使用します)*  
   ファイアウォール CSP: [FirewallRules/*FirewallRuleName*/LocalUserAuthorizationList](https://aka.ms/intunefirewallauthorizedusers)  
 
@@ -1423,7 +1424,7 @@ Windows Defender セキュリティ センターのアプリとアプリ通知�
   - **[128 ビット暗号化を要求する]**  
   - **[NTLMv2 and 128-bit encryption]\(NTLMv2 および 128 ビットの暗号化\)**  
 
-- **LAN Manager の認証レベル**  
+- **[LAN Manager 認証レベル]**  
   **既定値**: LM と NTLM  
   LocalPoliciesSecurityOptions CSP: [NetworkSecurity_LANManagerAuthenticationLevel](https://aka.ms/policy-csp-localpoliciessecurityoptions-lanmanagerauthenticationlevel)  
 
@@ -1431,7 +1432,7 @@ Windows Defender セキュリティ センターのアプリとアプリ通知�
   - **LM と NTLM**  
   - **LM、NTLM、および NTLMv2**  
   - **[NTLM]**  
-  - **NTLMv2**  
+  - **[NTLMv2]**  
   - **LM ではなく NTLMv2**  
   - **LM または NTLM ではなく NTLMv2**  
   

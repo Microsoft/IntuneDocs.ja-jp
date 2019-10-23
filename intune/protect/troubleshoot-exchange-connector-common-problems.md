@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14da6274546cbd4c1867975c08c60ece313714b1
-ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
+ms.openlocfilehash: e9542212e1b75d97c96c024eed20e20e610e2b5d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71917998"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503655"
 ---
 # <a name="resolve-common-problems-with-the-intune-exchange-connector"></a>Intune Exchange connector に関する一般的な問題を解決する
  
@@ -55,7 +56,7 @@ Android Knox を実行していないデバイス上のオンプレミスのメ�
 電子メール通知の問題のトラブルシューティングを行うには、次のセクションを参照してください。
 
 ### <a name="check-the-notification-account-that-retrieves-autodiscover-settings"></a>自動検出の設定を取得する通知アカウントを確認する
-1. 自動検出サービスと EWS が Exchange クライアントアクセスサービスで構成されていることを確認します。 詳細については、「Exchange Server の[クライアントアクセスサービス](https://docs.microsoft.com/Exchange/architecture/client-access/client-access)と[自動検出サービス](https://docs.microsoft.com/Exchange/architecture/client-access/autodiscover?view=exchserver-2019)」を参照してください。
+1. 自動検出サービスと EWS が Exchange クライアント アクセス サービスで構成されていることを確認します。 詳細については、「Exchange Server の[クライアントアクセスサービス](https://docs.microsoft.com/Exchange/architecture/client-access/client-access)と[自動検出サービス](https://docs.microsoft.com/Exchange/architecture/client-access/autodiscover?view=exchserver-2019)」を参照してください。
 
 
 2. 通知アカウントが次の要件を満たしていることを確認します。
@@ -72,7 +73,7 @@ Android Knox を実行していないデバイス上のオンプレミスのメ�
       ![Nslookup 結果](./media/troubleshoot-exchange-connector-common-problems/nslookup-results.png
 )
 
-   また、 https://testconnectivity.microsoft.com でインターネットから自動検出サービスをテストすることもできます。 または、Microsoft Connectivity Analyzer ツールを使用してローカルドメインからテストします。 詳細については、「 [Microsoft Connectivity Analyzer ツール](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80))」を参照してください。 必要に応じ[て、Microsoft Connectivity Analyzer ツールをダウンロード](http://go.microsoft.com/fwlink/?LinkID=313782)します。
+   また、 https://testconnectivity.microsoft.com でインターネットから自動検出サービスをテストすることもできます。 または、Microsoft Connectivity Analyzer ツールを使用してローカルドメインからテストします。 詳細については、「 [Microsoft Connectivity Analyzer ツール](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80))」を参照してください。 必要に応じ[て、Microsoft Connectivity Analyzer ツールをダウンロード](https://go.microsoft.com/fwlink/?LinkID=313782)します。
 
 
 ### <a name="check-autodiscovery"></a>自動検出の確認  
@@ -84,7 +85,7 @@ Android Knox を実行していないデバイス上のオンプレミスのメ�
 
    1. EWS URL を確認します。 Exchange の既定の EWS URL は `https://<mailServerFQDN>/ews/exchange.asmx` ですが、URL が異なる場合があります。 Exchange 管理者に問い合わせて、使用している環境の正しい URL を確認してください。
 
-   2. *OnPremisesExchangeConnectorServiceConfiguration.xml*ファイルを編集します。 既定では、ファイルは Exchange connector を実行するコンピューターの *%ProgramData%\Microsoft\Windows Intune Exchange Connector*にあります。 ファイルをテキストエディターで開き、環境の EWS URL を反映するように次の行を変更します。 `<ExchangeWebServiceURL>https://<YourExchangeHOST>/EWS/Exchange.asmx</ExchangeWebServiceURL>`
+   2. *OnPremisesExchangeConnectorServiceConfiguration.xml*ファイルを編集します。 既定では、ファイルは Exchange connector を実行するコンピューターの *%ProgramData%\Microsoft\Windows Intune Exchange Connector*にあります。 ファイルをテキストエディターで開き、環境の EWS URL を反映するように次の行を変更します。 `<ExchangeWebServiceURL> https://<YourExchangeHOST>/EWS/Exchange.asmx</ExchangeWebServiceURL>`
     
 
 3. ファイルを保存し、コンピューターを再起動するか、Microsoft Intune Exchange コネクタ サービスを再起動します。

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ab0ebd9a7977b5433c814e9496276ce7a7fc900
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1089c382a39afb5aad0456e669cb3a2434af73c1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735741"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503093"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Microsoft Intune での Windows デバイスの登録に関する問題のトラブルシューティング
 
@@ -60,7 +61,7 @@ ms.locfileid: "71735741"
 
 ##### <a name="remove-devices-that-were-enrolled"></a>登録されたデバイスの削除
 1. [Azure ポータル](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)にサインインします。    
-2. [ **Users** > **All users**] にアクセスします。    
+2. [**ユーザー**  > **すべてのユーザー**] にアクセスします。    
 3. 影響を受けるユーザーアカウントを選択し、 **[デバイス]** をクリックします。    
 4. 未使用または不要なデバイスを選択し、 **[削除]** をクリックします。 
 
@@ -70,12 +71,12 @@ ms.locfileid: "71735741"
 > このメソッドは、影響を受けるユーザーだけでなく、すべてのユーザーのデバイス登録制限を増やします。
 
 1. [Azure ポータル](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)にサインインします。
-2. [**デバイスの登録** >  の**登録制限**] にアクセスし、[**デバイスの制限**の制限] を選択します。    
+2. [**デバイスの登録** > ] **[登録の制限]** の順に選択し、デバイスの **[制限]** の制限 を選択します。    
 3. **デバイスの制限**値を増やす。 
 
 ##### <a name="check-device-type-restrictions"></a>デバイスの種類の制限を確認する
 1. グローバル管理者アカウントで [Intune ポータル](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)にサインインします。
-2. [**デバイスの登録** >  の**登録制限**] にアクセスし、[デバイスの種類の**制限**] で**既定**の制限を選択します。    
+2. [**デバイスの登録** > ] **[登録の制限]** の順に選択し、デバイスの **[種類の制限]** で**既定**の制限を選択します。    
 3. **[プラットフォーム]** を選択し、[Windows に対して**許可** **(MDM)** ] を選択します。
 
     > [!IMPORTANT]
@@ -104,8 +105,8 @@ ms.locfileid: "71735741"
 
 エラー 8018000a: "問題が発生しました。 デバイスは既に登録されています。  エラーコード8018000a を使用して、システム管理者に連絡できます。 "
 
-**原因:** 次のいずれかの条件に該当します。
-- 別のユーザーが既にデバイスを Intune に登録しているか、デバイスを Azure AD に参加させています。 この問題が発生しているかどうかを判断するには、 **[設定]**  >  **[アカウント]**  >  **[職場のアクセス]** に移ります。 次のようなメッセージを探します。 "システム上の別のユーザーが既に職場または学校に接続されています。 職場または学校の接続を削除してから、もう一度お試しください。 "    
+**原因:** 次の条件のいずれかに該当している場合。
+- 別のユーザーが既にデバイスを Intune に登録しているか、デバイスを Azure AD に参加させています。 この問題が発生しているかどうかを判断するには、 **[設定]** [ > **アカウント**] **[職場のアクセス]**  >  を参照してください。 次のようなメッセージを探します。 "システム上の別のユーザーが既に職場または学校に接続されています。 職場または学校の接続を削除してから、もう一度お試しください。 "    
 - Configuration Manager クライアントエージェントがコンピューターにインストールされています。    
 
 #### <a name="resolution"></a>解決策
@@ -114,7 +115,7 @@ ms.locfileid: "71735741"
 
 ##### <a name="remove-the-other-work-or-school-account"></a>他の職場または学校アカウントを削除する
 1. Windows からサインアウトし、デバイスに登録または参加したもう1つのアカウントを使用してサインインします。    
-2. **[設定]**  >  **[職場のアクセス]** @no__t の順に選択し、職場または学校**のアカウントを**削除します。
+2. **[設定]** [ >   > **アカウント**] **[職場のアクセス]** の順に選択し、職場または学校のアカウントを削除します。
 3. Windows からサインアウトし、アカウントを使用してサインインします。    
 4. デバイスを Intune に登録するか、デバイスを Azure AD に参加させます。 
 
@@ -135,7 +136,7 @@ Configuration Manager クライアントを削除してから、デバイスを�
 
 ### <a name="looks-like-the-mdm-terms-of-use-endpoint-is-not-correctly-configured"></a>MDM 使用条件エンドポイントが正しく構成されていない可能性があります。
 
-**原因:** 次のいずれかの条件に該当します。 
+**原因:** 次の条件のいずれかに該当している場合。 
  - Office 365 用のモバイルデバイス管理 (MDM) とテナントの Intune の両方を使用します。デバイスを登録しようとするユーザーには、有効な Intune ライセンスまたは Office 365 ライセンスがありません。     
 - Azure AD の MDM 使用条件が空白であるか、正しい URL が含まれていません。    
 
@@ -166,7 +167,7 @@ Configuration Manager クライアントを削除してから、デバイスを�
 
 ##### <a name="disable-mdm-automatic-enrollment-in-azure"></a>Azure での MDM 自動登録を無効にします。
 1. [Azure ポータル](https://portal.azure.com/)にサインインします。    
-2. **Azure Active Directory** > **モビリティ (MDM および MAM)**  > **Microsoft Intune**に移動します。    
+2. **Azure Active Directory**  > **モビリティ (MDM および MAM)**  > **Microsoft Intune**に移動します。    
 3. **[MDM ユーザースコープ]** を **[なし]** に設定し、 **[保存]** をクリックします。    
      
 ##### <a name="uninstall"></a>アンインストール
@@ -205,7 +206,7 @@ Configuration Manager クライアントを削除してから、デバイスを�
 スタンドアロンの Intune 環境でこの問題を解決するには、次の手順を実行します。 
  
 1. 管理者として [Azure portal](https://portal.azure.com/) にサインインします。    
-2. 左側の **[Intune]** を選択し、[**デバイスの登録** >  の**登録制限**] に移動します。    
+2. 左側の **[Intune]** を選択し、[**デバイスの登録** > **登録の制限**] に移動します。    
 3. **[デバイスの種類の制限]** で、 **[プラットフォーム]** をクリックし、[Windows に対して**許可** **(MDM)** ] を選択します。    
 4. **[Save]** (保存) をクリックします。    
  
@@ -235,7 +236,7 @@ School Pc のセットアップアプリの詳細については、「 [School p
 ### <a name="auto-mdm-enroll-failed"></a>MDM の自動登録: 失敗 
 
 グループポリシーを使用して Windows 10 デバイスを自動的に登録しようとすると、次の問題が発生します。 
-- タスクスケジューラでは、 **Microsoft** > **Windows** > **EnterpriseMgmt**の下で、**登録クライアントによって MDM に自動的に登録するために作成されたスケジュール**の最後の実行結果は次のようになります:**イベント76自動 MDM 登録: 失敗しました (不明な Win32 エラーコード: 0x8018002b)**       
+- タスクスケジューラでは、 **Microsoft**  > **Windows**  > **ENTERPRISEMGMT**の下で、 **AAD に自動的に登録するために登録クライアントによって作成されたスケジュール**の最後の実行結果は次のようになります:**イベント76自動 MDM 登録: 失敗しました (不明な Win32 エラーコード: 0x8018002b)**       
 - イベントビューアーでは、[**アプリケーションとサービスログ]/[Microsoft]/[Windows]/[デバイス/Admin**] の下に次のイベントが記録されます。   
     ```asciidoc
     Log Name: Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Admin
@@ -244,7 +245,7 @@ School Pc のセットアップアプリの詳細については、「 [School p
     Level: Error
     Description: Auto MDM Enroll: Failed (Unknown Win32 Error code: 0x80180002b)
     ```
-**原因:** 次のいずれかの条件に該当します。 
+**原因:** 次の条件のいずれかに該当している場合。 
 - UPN に、未確認またはルーティング不可能なドメイン (joe@contoso.local など) が含まれています。    
 - **MDM ユーザースコープ**が**None**に設定されています。 
 
@@ -335,7 +336,7 @@ Registering your device for mobile management (Previous step failed)
 
 #### <a name="resolution"></a>解決策
 
-1. **Intune** >   デバイスの**登録** > **Windows 登録** > **デバイス**にアクセスします。
+1. [ **Intune**  >  **デバイスの登録** > **Windows の登録** > **デバイス**] にアクセスします。
 2. 問題が発生しているデバイスを選択し > 右端にある省略記号 ([...]) をクリックします。
 3. **[ユーザーの割り当て解除]** を選択し、プロセスが終了するまで待ちます。
 4. OOBE を再試行する前に、Hybrid Azure AD の自動操縦プロファイルが割り当てられていることを確認してください。
@@ -375,12 +376,12 @@ Description:
 3. **制御の委任**ウィザードで、 **[次へ]**  >  **[追加]**  >  **[オブジェクトの種類]** を選択します。
 4. **[オブジェクトの種類]** ウィンドウで、 **[コンピューター]** チェック ボックスをオンにして、 **[OK]** を選択します。
 5. **[ユーザー]** 、 **[コンピューター]** 、または **[グループ]** のいずれかのウィンドウの **[選択するオブジェクト名を入力してください]** ボックスに、コネクタがインストールされている場所コンピューターの名前を入力します。
-6. **名前の確認** を選択してエントリを検証 > OK @no__t**次へ** **** をクリックします。
+6. **名前の確認** を選択して入力を検証 > **OK**  > **次へ** をクリックします。
 7. **[委任するカスタム タスクを作成する]**  >  **[次へ]** を選択します。
 8. **[フォルダー内の次のオブジェクトのみ]** チェック ボックスをオンにし、 **[コンピューター オブジェクト]** 、 **[選択されたオブジェクトをこのフォルダーに作成する]** 、および **[選択されたオブジェクトをこのフォルダーから削除する]** チェック ボックスをオンにします。
 9. **[次へ]** を選択します。
 10. **[アクセス許可]** で、 **[フル コントロール]** チェック ボックスをオンにします。 この操作で、他のすべてのオプションが選択されます。
-11. **[次へ]**  >  **[完了**] を選択します。
+11. **[次へ]**  >  **[完了]** を選択します。
 
 ## <a name="next-steps"></a>次の手順
 

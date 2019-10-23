@@ -5,9 +5,10 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 10/14/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1d1d0c52db57ca6b41c399aeefc948735eea0af
-ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
+ms.openlocfilehash: c8c5be1d7a02c2c8329afe05dcdce22f48c49d05
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71830526"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503495"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Android 用 Microsoft Intune アプリ SDK 開発者ガイド
 
@@ -189,7 +190,7 @@ intunemam {
 ```
 
 #### <a name="verification"></a>検証
-ビルドプラグインでは、追加の検証を実行して、クラスの処理で発生する可能性があるエラーを探すことができます。 これを要求するには、`intunemam` 構成ブロックに `verify = true` を指定します。 これにより、プラグインのタスクによって実行されるまでに数秒かかる場合があることに注意してください。
+ビルドプラグインでは、追加の検証を実行して、クラスの処理で発生する可能性があるエラーを探すことができます。 これを要求するには、`intunemam` 構成ブロックで `verify = true` を指定します。 これにより、プラグインのタスクによって実行されるまでに数秒かかる場合があることに注意してください。
 
 ```groovy
 intunemam {
@@ -197,8 +198,8 @@ intunemam {
 }
 ```
 
-#### <a name="incremental-builds"></a>インクリメンタルビルド
-インクリメンタルビルドのサポートを有効にするには、`intunemam` 構成ブロックに `incremental = true` を指定します。  これは、変更された入力ファイルのみを処理することによって、ビルドのパフォーマンスを向上させる実験的な機能です。  既定の構成は `false` です。
+#### <a name="incremental-builds"></a>インクリメンタル ビルド
+インクリメンタルビルドのサポートを有効にするには、`intunemam` 構成ブロックで `incremental = true` を指定します。  これは、変更された入力ファイルのみを処理することによって、ビルドのパフォーマンスを向上させる実験的な機能です。  既定の構成は `false` です。
 
 ```groovy
 intunemam {
@@ -380,7 +381,7 @@ Android P と共に、Google は AndroidX と呼ばれるサポート ライブ�
 Android サポート ライブラリとは異なり、Microsoft が AndroidX ライブラリの MAM バリアントを提供することはありません。 代わりに、AndroidX は任意のその他の外部ライブラリとしてテストする必要があり、ビルド プラグイン/ツールによって上書きされるように構成する必要があります。 Gradle のビルドでは、プラグイン構成の `includeExternalLibraries` フィールドに `androidx.*` を含めることによってこれを行うことができます。コマンド ライン ツールの呼び出しは、jar ファイルがすべて明示的に一覧表示されている必要があります。
 
 ### <a name="pre-androidx-architecture-components"></a>以前の AndroidX アーキテクチャコンポーネント
-Room、ビューモデル、およびワークマネージャーを含む多くの Android アーキテクチャコンポーネントが AndroidX に再パッケージされました。 アプリでこれらのライブラリの以前の定義済みのバリエーションを使用する場合は、プラグイン構成の `includeExternalLibraries` フィールドに `android.arch.*` を含めることにより、書き換えが適用されていることを確認してください。または、ライブラリを、対応する AndroidX に更新します。
+Room、ビューモデル、およびワークマネージャーを含む多くの Android アーキテクチャコンポーネントが AndroidX に再パッケージされました。 アプリでこれらのライブラリのより前の定義済みのバリエーションを使用する場合は、プラグイン構成の `includeExternalLibraries` フィールドに `android.arch.*` を含めることによって、書き換えが適用されることを確認してください。または、ライブラリを、対応する AndroidX に更新します。
 
 ## <a name="sdk-permissions"></a>SDK のアクセス許可
 
@@ -547,15 +548,6 @@ String toString();
 MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
 ```
 
-### <a name="example-determine-if-pin-is-required-for-the-app"></a>例: PIN がアプリケーションに必要なかどうかを確認します。
-
-アプリケーションに独自の PIN ユーザー エクスペリエンスがあり、IT 管理者がアプリの PIN の入力を求めるように SDK を構成している場合は、それを無効にしたいことがあります。 IT 管理者が、現在のエンドユーザーのアプリ PIN ポリシーをこのアプリに展開したかどうかを判断するには、次のメソッドを呼び出します。
-
-```java
-
-MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
-```
-
 ### <a name="example-determine-the-primary-intune-user"></a>例: プライマリ Intune ユーザーを判別します。
 
 AppPolicy で公開される API に加えて、ユーザー プリンシパル名で (**UPN**) も `MAMUserInfo`インターフェイス内で定義された `getPrimaryUser()` API によって公開されます。 UPN を取得するには、次のように呼び出します。
@@ -602,7 +594,7 @@ SaveLocation service, String username);
 - `SaveLocation.LOCAL`
 - `SaveLocation.OTHER`
 
-`username` は、保存先のクラウド サービスに関連付けられた UPN/ユーザー名/電子メールである必要があります (保存されるドキュメントを所有しているユーザーと必ずしも同じでは*ありません*)。 AAD の UPN とクラウド サービスのユーザー名の間のマッピングが存在しないか、ユーザー名がわからない場合は、null を使用します。 `SaveLocation.LOCAL` はクラウドサービスではないため、常に `null` ユーザー名パラメーターで使用する必要があります。
+`username` は、保存先のクラウド サービスに関連付けられた UPN/ユーザー名/電子メールである必要があります (保存されるドキュメントを所有しているユーザーと必ずしも同じでは*ありません*)。 AAD の UPN とクラウド サービスのユーザー名の間のマッピングが存在しないか、ユーザー名がわからない場合は、null を使用します。 `SaveLocation.LOCAL` はクラウドサービスではないため、`null` username パラメーターと共に常に使用する必要があります。
 
 ユーザーのポリシーがさまざまな場所にデータを保存することを許可するかどうかを判断する前のメソッドは、同じ **AppPolicy** クラス内の `getIsSaveToPersonalAllowed()` です。 この関数は現在**非推奨**になっており、使用しないようにする必要があります。次の呼び出しは `getIsSaveToPersonalAllowed()` と同じです：
 
@@ -681,7 +673,7 @@ public interface MAMNotificationReceiver {
 
 アプリに次の通知が送信されます。その一部によって、アプリによる処理が要求される場合があります。
 
-* **WIPE_USER_DATA**: この通知は、`MAMUserNotification` クラスで送信されます。 この通知を受信すると、アプリでは、管理対象 id に関連付けられているすべてのデータを削除*する必要があり*ます (`MAMUserNotification.getUserIdentity()`)。 通知はさまざまな理由で発生する可能性があります。たとえば、アプリが `unregisterAccountForMAM` を呼び出したとき、IT 管理者がワイプを開始したとき、または管理者が必要とする条件付きアクセスポリシーが満たされていない場合などです。 アプリがこの通知に登録していない場合は、既定のワイプ動作が実行されます。 既定の動作では、単一 id アプリのすべてのファイル、または複数 id アプリのマネージ id でタグ付けされたすべてのファイルが削除されます。 この通知は、UI スレッドでは送信されません。
+* **WIPE_USER_DATA**: この通知は、`MAMUserNotification` クラスで送信されます。 この通知を受信すると、アプリは (`MAMUserNotification.getUserIdentity()` から) 管理対象 id に関連付けられているすべてのデータを削除*する必要があり*ます。 通知はさまざまな理由で発生する可能性があります。たとえば、アプリが `unregisterAccountForMAM` を呼び出したとき、IT 管理者がワイプを開始したとき、または管理者が必要とする条件付きアクセスポリシーが満たされていない場合などです。 アプリがこの通知に登録していない場合は、既定のワイプ動作が実行されます。 既定の動作では、単一 id アプリのすべてのファイル、または複数 id アプリのマネージ id でタグ付けされたすべてのファイルが削除されます。 この通知は、UI スレッドでは送信されません。
 
 * **WIPE_USER_AUXILIARY_DATA**: Intune アプリ SDK に対して既定の選択的ワイプの実行を求めるが、ワイプが発生したときにいくつかの補助的なデータを削除する必要があるアプリは、この通知に登録できます。 この通知は単一 ID アプリには利用できません。複数 ID アプリにのみ送信されます。 この通知は、UI スレッドでは送信されません。
 
@@ -1119,7 +1111,7 @@ notificationRegistry.registerReceiver(receiver, MAMNotificationType.COMPLIANCE_S
 ### <a name="implementation-notes"></a>実装に関するメモ
 > [!NOTE]
 > **重要な変更**  <br>
-> アプリの `MAMServiceAuthenticationCallback.acquireToken()` メソッドは、新しい `forceRefresh` フラグに*false*を `acquireTokenSilentSync()` に渡す必要があります。
+> 新しい `forceRefresh` フラグを `acquireTokenSilentSync()` するには、アプリの `MAMServiceAuthenticationCallback.acquireToken()` メソッドで*false*を渡す必要があります。
 > 以前は、ブローカーからのトークンの更新に関する問題に対処するために*true*を渡すことをお勧めしましたが、このフラグが*true*の場合、一部のシナリオでトークンを取得できない可能性がある ADAL の問題が検出されました。
 ```java
 AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ false);
@@ -1319,7 +1311,7 @@ ID を設定するために使用されるすべてのメソッドは、`MAMIden
 | `CANCELLED`    | ユーザーが ID 変更を取り消しました。通常、この取り消しは、PIN または認証プロンプトで [戻る] ボタンを押して行われます。 |
 | `FAILED`       | 不明な理由により、ID 変更が失敗しました。|
 
-アプリは、企業データを表示または使用する前に、ID の切り替えが成功していることを確認する必要があります。 現時点では、プロセスとスレッド ID の切り替えは、常に複数の ID が有効なアプリに対して成功しますが、エラー条件を追加するための権限を予約します。 UI ID の切り替えは、スレッド ID と競合している場合、またはユーザーが条件付きの起動要件によって取り消した場合に (PIN 画面で戻るボタンを押すなど)、無効な引数で失敗する可能性があります。 アクティビティの UI id の切り替えに失敗した場合の既定の動作では、アクティビティが完了します (以下の「`onSwitchMAMIdentityComplete`」を参照してください)。
+アプリは、企業データを表示または使用する前に、ID の切り替えが成功していることを確認する必要があります。 現時点では、プロセスとスレッド ID の切り替えは、常に複数の ID が有効なアプリに対して成功しますが、エラー条件を追加するための権限を予約します。 UI ID の切り替えは、スレッド ID と競合している場合、またはユーザーが条件付きの起動要件によって取り消した場合に (PIN 画面で戻るボタンを押すなど)、無効な引数で失敗する可能性があります。 アクティビティの UI id の切り替えに失敗した場合の既定の動作では、アクティビティが完了します (以下の `onSwitchMAMIdentityComplete` を参照してください)。
 
 `setUIPolicyIdentity` を介して `Context` ID を設定する場合、結果は非同期的にレポートされます。 `Context` が `Activity` の場合、ユーザーが PIN または企業資格情報の入力が必要になる可能性がある条件付きの起動が実行されるまで、SDK は ID 変更が正常に行われたかどうかがわかりません。 アプリは、この結果を受け取るために `MAMSetUIIdentityCallback` を実装することも、コールバックオブジェクトに null を渡すこともできます。 `setUIPolicyIdentity` に対して呼び出しが行われたときに、*同じコンテキストで*の `setUIPolicyIdentity` への前回の呼び出しの結果がまだ配信されていない場合、新しいコールバックは古いものよりも優先され、元のコールバックは結果を受信しません。
 
@@ -1675,7 +1667,7 @@ contentIdentity)` を呼び出すことができます。
 これらのキーと値のペアが、Intune で解釈されることはありませんが、アプリに渡されます。 このような構成を受信する必要があるアプリケーションは、この操作を行うために `MAMAppConfigManager` と `MAMAppConfig` クラスを使用できます。 複数のポリシーが同じアプリで対象となっている場合は、同じキーに使用できる複数の値が競合している可能性があります。
 
 > [!NOTE] 
-> MAM を使用した配信用の構成の設定-`offline` (ポータルサイトがインストールされていない場合) では delievered できません。  この場合、空の ID の `MAMUserNotification` で配信されるのは、Android エンタープライズの AppRestrictions のみです。
+> MAM を使用した配信用の構成の設定-`offline` には delievered できません (ポータルサイトがインストールされていない場合)。  この場合、空の ID の `MAMUserNotification` で配信されるのは、Android エンタープライズの AppRestrictions のみです。
 
 ### <a name="get-the-app-config-for-a-user"></a>ユーザーのアプリ構成を取得する
 アプリ構成は次のように取得できます。
@@ -1756,7 +1748,7 @@ enum StringQueryType {
 
 アプリでは、キーと値のペアのセットの一覧として生データを要求することもできます。
 
-```
+```java
 List<Map<String, String>> getFullData()
 ```
 

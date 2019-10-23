@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/17/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 553c4ae4dab211cf33e21c328b4b35408d8bfeb0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 93b48fd5f6482669da923e4c15dcb09c7d328197
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733778"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503459"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>iOS 用 Microsoft Intune App SDK 開発者ガイド
 
@@ -34,7 +35,7 @@ iOS 用 Microsoft Intune App SDK を使用すると、ネイティブ iOS アプ
 
 * OS X 10.8.5 以降を実行していて、また Xcode 9 以降もインストールされている Mac OS コンピューターが必要になります。
 
-* アプリは iOS 10 以降を対象としている必要があります。
+* アプリは iOS 11 以降を対象としている必要があります。
 
 * [iOS 用の Intune アプリ SDK のライセンス条項](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS.pdf)を読みます。 記録としてライセンス条項を印刷し、保管します。 iOS 用の Intune App SDK をダウンロードし、使用すると、このライセンス条項に同意したことになります。  本ライセンス条項に同意されない場合、本ソフトウェアを使用することはできません。
 
@@ -96,7 +97,7 @@ Intune App SDK を有効にするには、次の手順を実行します。
 
 1. **オプション 1-フレームワーク (推奨)** : Xcode 10.2 + を使用していて、アプリ/拡張機能に Swift コードが含まれている場合は、`IntuneMAMSwift.framework` と `IntuneMAMSwift.framework` をターゲットに `IntuneMAMSwiftStub.framework` リンクします。-3 と `IntuneMAMSwiftStub.framework` をプロジェクトターゲットの**埋め込みバイナリ**の一覧にドラッグします。
 
-    それ以外の場合は、ターゲットに `IntuneMAM.framework` をリンクします。プロジェクトターゲットの**埋め込みバイナリ**の一覧に `IntuneMAM.framework` をドラッグします。
+    それ以外の場合は、ターゲットに `IntuneMAM.framework` をリンクします。 `IntuneMAM.framework` をプロジェクトターゲットの**埋め込みバイナリ**の一覧にドラッグします。
 
    > [!NOTE]
    > フレームワークを使用する場合は、アプリ ストアにアプリを送信する前に、ユニバーサル フレームワークからシミュレーター アーキテクチャを手動で除去する必要があります。 詳細については、「[iOS 用 Microsoft Intune App SDK 開発者ガイド](#submit-your-app-to-the-app-store)」を参照してください。
@@ -230,8 +231,8 @@ MSAL-開発者[は、ここ](https://github.com/AzureAD/microsoft-authentication
 
 ### <a name="special-considerations-when-using-msal"></a>MSAL を使用する場合の特別な考慮事項 
 
-1. **Webview を確認**してください。アプリケーションでは、アプリによって開始される msal 対話型認証操作のために、webview として SFSafariViewController、SFAuthSession、または ASWebAuthSession を使用しないことをお勧めします。 何らかの理由で、アプリが対話型の MSAL auth 操作に対してこれらの webview のいずれかを使用する必要がある場合は、アプリケーションの情報 plist で、`IntuneMAMSettings` 辞書の下にある `SafariViewControllerBlockedOverride` を `true` に設定する必要もあります。 警告: 認証セッションを有効にするために、Intune のすべての Saf を無効にします。 これにより、アプリケーションで、会社のデータを表示するためにユーザーのデータが表示される場合に、アプリの他の場所でデータが漏洩する可能性があります。そのため、アプリケーションは、これらの webview の種類のいずれにも企業データを表示しません。
-2. **Adal と MSAL の両方をリンク**する-開発者は、このシナリオで、INTUNE で adal を優先するかどうかを選択する必要があります。 既定では、Intune でサポートされている ADAL バージョンが、実行時にリンクされている場合、サポートされる MSAL バージョンに優先されます。 Intune では、Intune の最初の認証操作時に `IntuneMAMUseMSALOnNextLaunch` が `NSUserDefaults` の `true` である場合にのみ、サポートされている MSAL バージョンが優先されます。 `IntuneMAMUseMSALOnNextLaunch` が `false` であるか設定されていない場合、Intune は既定の動作に戻ります。 名前が示すように、`IntuneMAMUseMSALOnNextLaunch` に対する変更は、次回の起動時に有効になります。
+1. **Webview を確認**してください。アプリケーションでは、アプリによって開始される msal 対話型認証操作のために、webview として SFSafariViewController、SFAuthSession、または ASWebAuthSession を使用しないことをお勧めします。 何らかの理由で、アプリが対話型の MSAL auth 操作に対してこれらの webview のいずれかを使用する必要がある場合は、アプリケーションのの `IntuneMAMSettings` 辞書の下で `true` するように `SafariViewControllerBlockedOverride` も設定する必要があります。 警告: 認証セッションを有効にするために、Intune のすべての Saf を無効にします。 これにより、アプリケーションで、会社のデータを表示するためにユーザーのデータが表示される場合に、アプリの他の場所でデータが漏洩する可能性があります。そのため、アプリケーションは、これらの webview の種類のいずれにも企業データを表示しません。
+2. **Adal と MSAL の両方をリンク**する-開発者は、このシナリオで、INTUNE で adal を優先するかどうかを選択する必要があります。 既定では、Intune でサポートされている ADAL バージョンが、実行時にリンクされている場合、サポートされる MSAL バージョンに優先されます。 Intune では、Intune の最初の認証操作時に `NSUserDefaults` で `true` `IntuneMAMUseMSALOnNextLaunch` がサポートされている場合にのみ、サポートされる MSAL バージョンが優先されます。 `IntuneMAMUseMSALOnNextLaunch` が `false` であるか設定されていない場合、Intune は既定の動作に戻ります。 名前が示すように、`IntuneMAMUseMSALOnNextLaunch` の変更は、次回の起動時に有効になります。
 
 
 ## <a name="configure-settings-for-the-intune-app-sdk"></a>Intune App SDK の設定を構成する
@@ -253,8 +254,6 @@ ADALCacheKeychainGroupOverride | 文字列型  | "com.microsoft.adalcache" の�
 AppGroupIdentifiers | 文字列の配列  | アプリの権利 com.apple.security.application-groups セクションのアプリケーション グループの配列。 | アプリでアプリケーション グループを使用する場合は必須です。 |
 ContainingAppBundleId | 文字列型 | アプリケーションを含む拡張機能のバンドル ID を指定します。 | iOS の拡張機能に必要です。 |
 DebugSettingsEnabled| ブール型 | YES に設定すると、Settings バンドル内のテスト ポリシーを適用できます。 この設定を有効にしたままアプリケーションを出荷しては*なりません*。 | 任意。 既定値は [いいえ] です。 |
-MainNibFile<br>MainNibFile~ipad  | 文字列型  | この設定には、アプリケーションのメイン nib ファイル名を含める必要があります。  | アプリケーションの Info.plist で MainNibFile が定義されている場合は必須です。 |
-MainStoryboardFile<br>MainStoryboardFile~ipad  | 文字列型  | この設定には、アプリケーションのメインのストーリーボードのファイル名を含める必要があります。 | アプリケーションの Info.plist で UIMainStoryboardFile が定義されている場合は必須です。 |
 AutoEnrollOnLaunch| ブール型| 既存の管理対象の ID が検出され、それがまだ登録されていない場合、起動時に自動登録を試みるかどうかを指定します。 既定は [いいえ] です。 <br><br> 注意: マネージド ID が検出されない場合、またはその ID に対する有効なトークンが ADAL/MSAL キャッシュ内に存在しない場合は、アプリで MAMPolicyRequired も [はい] に設定されていない限り、資格情報を求めるメッセージを表示することなく登録の試みは失敗します。 | 任意。 既定値は [いいえ] です。 |
 MAMPolicyRequired| ブール型| アプリに Intune アプリ保護ポリシーがない場合に、アプリの起動をブロックするかどうかを指定します。 既定は [いいえ] です。 <br><br> 注: MAMPolicyRequired を YES にした状態でアプリを App Store に送信することはできません。 MAMPolicyRequired を YES に設定した場合は、AutoEnrollOnLaunch も YES に設定する必要があります。 | 任意。 既定値は [いいえ] です。 |
 MAMPolicyWarnAbsent | ブール型| アプリに Intune アプリ保護ポリシーがない場合に、アプリの起動時にユーザーに警告するかどうかを指定します。 <br><br> 注: ユーザーは警告を無視しても、ポリシーなしでアプリの使用が許可されます。 | 任意。 既定値は [いいえ] です。 |
@@ -262,9 +261,10 @@ MultiIdentity | ブール型| アプリが複数 ID 対応かどうかを指定�
 SafariViewControllerBlockedOverride | ブール型| Intune の SFSafariViewController、SFAuthSession、または ASWebAuthSession を使用して MSAL auth を有効にするために、Intune の Saf を無効にします。 | 任意。 既定値は [いいえ] です。 警告: 不適切に使用した場合、データ漏えいが発生する可能性があります。 必須の場合にのみ有効にします。 詳細については、「 [MSAL を使用する場合の特別な考慮事項](#special-considerations-when-using-msal)」をご覧ください。  |
 SplashIconFile <br>SplashIconFile~ipad | 文字列型  | Intune スプラッシュ (起動) アイコン ファイルを指定します。 | 任意。 |
 SplashDuration | 数値 | アプリケーションの起動時に Intune 起動画面が表示される最短時間 (秒)。 既定値は 1.5 です。 | 任意。 |
-BackgroundColor| 文字列型| 起動画面と PIN 画面の背景色を指定します。 #XXXXXX の形式の 16 進 RGB 文字列を受け付けます。X には 0 ～ 9 または A ～ F を使用できます。 シャープ記号は省略してもかまいません。   | 任意。 既定値は明るい灰色です。 |
-ForegroundColor| 文字列型| テキストの色など、起動画面と PIN 画面の前景色を指定します。 #XXXXXX の形式の 16 進 RGB 文字列を受け付けます。X には 0 ～ 9 または A ～ F を使用できます。 シャープ記号は省略してもかまいません。  | 任意。 既定値は黒です。 |
-AccentColor | 文字列型| PIN 画面のアクセント カラーを指定します。ボタン テキストの色やボックスの強調表示色などです。 #XXXXXX の形式の 16 進 RGB 文字列を受け付けます。X には 0 ～ 9 または A ～ F を使用できます。 シャープ記号は省略してもかまいません。| 任意。 既定値はシステムの青です。 |
+BackgroundColor| 文字列型| Intune SDK の UI コンポーネントの背景色を指定します。 #XXXXXX の形式の 16 進 RGB 文字列を受け付けます。X には 0 ～ 9 または A ～ F を使用できます。 シャープ記号は省略してもかまいません。   | 任意。 既定では、システムの背景色が使用されます。これは、ios のバージョンと iOS のダークモードの設定によって異なる場合があります。 |
+ForegroundColor| 文字列型| テキストの色など、Intune SDK の UI コンポーネントの前景色を指定します。 #XXXXXX の形式の 16 進 RGB 文字列を受け付けます。X には 0 ～ 9 または A ～ F を使用できます。 シャープ記号は省略してもかまいません。  | 任意。 既定ではシステムラベルの色が使用されます。これは、ios のバージョンと iOS のダークモードの設定によって異なる場合があります。 |
+AccentColor | 文字列型| Intune SDK の UI コンポーネントのアクセントカラーを指定します。たとえば、ボタンテキストの色や PIN ボックスの強調表示色などです。 #XXXXXX の形式の 16 進 RGB 文字列を受け付けます。X には 0 ～ 9 または A ～ F を使用できます。 シャープ記号は省略してもかまいません。| 任意。 既定値はシステムの青です。 |
+SupportsDarkMode| ブール型 | BackgroundColor/ForegroundColor/の色に明示的な値が設定されていない場合に、Intune SDK の UI カラースキームでシステムのダークモード設定を確認するかどうかを指定します。 | 任意。 既定値は [はい] です。 |
 MAMTelemetryDisabled| ブール型| SDK に製品利用統計情報データをバックエンドに送信させないかどうかを指定します。| 任意。 既定値は [いいえ] です。 |
 MAMTelemetryUsePPE | ブール型 | MAM SDK にデータを PPE テレメトリ バックエンドに送信させるかどうかを指定します。 テスト用テレメトリ データが顧客データと混ざらないように Intune ポリシーでアプリをテストするときに使用します。 | 任意。 既定値は [いいえ] です。 |
 MaxFileProtectionLevel | 文字列型 | 任意。 アプリがサポートできる `NSFileProtectionType` の最大値を指定できるようにします。 レベルがアプリケーションによりサポートされるレベルよりも高い場合、この値がサービスによって送信されたポリシーをオーバーライドします。 有効値は、`NSFileProtectionComplete`、`NSFileProtectionCompleteUnlessOpen`、`NSFileProtectionCompleteUntilFirstUserAuthentication`、`NSFileProtectionNone` です。|

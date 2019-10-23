@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ae9637e827330fb33c407122450deb014b3725a
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
-ms.translationtype: MTE75
+ms.openlocfilehash: 17d0baeeb6b193be6acf8d6087c26a66b18642c5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71816866"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506674"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune での macOS デバイスの機能設定
 
@@ -71,7 +72,7 @@ AirPrinter サーバーを追加するには、プリンターの IP アドレ�
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>設定の適用先: すべての登録の種類
 
-- **ファイル、フォルダー、およびカスタムアプリ**: ユーザーがデバイスにサインインしたときに開くファイル、フォルダー、カスタムアプリ、またはシステムアプリのパスを**追加**します。 組織用に構築またはカスタマイズされたシステムアプリやアプリは、通常は @no__t 0 のフォルダーにあり、`/Applications/AppName.app` と同様のパスになります。 
+- **ファイル、フォルダー、およびカスタムアプリ**: ユーザーがデバイスにサインインしたときに開くファイル、フォルダー、カスタムアプリ、またはシステムアプリのパスを**追加**します。 組織用に構築またはカスタマイズされたシステムアプリやアプリは、通常、`Applications` フォルダーにあり、`/Applications/AppName.app` のようなパスになります。 
 
   多くのファイル、フォルダー、アプリを追加できます。 たとえば、次のように入力します。  
   
@@ -80,7 +81,7 @@ AirPrinter サーバーを追加するには、プリンターの IP アドレ�
   - `/Applications/Microsoft Office/root/Office16/winword.exe`
   - `/Users/UserName/music/itunes.app`
   
-  アプリ、フォルダー、またはファイルを追加するときは、正しいパスを入力してください。 @No__t-0 フォルダーにすべての項目が含まれているわけではありません。 ユーザーがある場所から別の場所に項目を移動すると、パスが変更されます。 この移動した項目は、ユーザーがサインインしても開かれません。
+  アプリ、フォルダー、またはファイルを追加するときは、正しいパスを入力してください。 `Applications` フォルダーにすべての項目が含まれているわけではありません。 ユーザーがある場所から別の場所に項目を移動すると、パスが変更されます。 この移動した項目は、ユーザーがサインインしても開かれません。
 
 ## <a name="login-window"></a>ログイン ウィンドウ
 
@@ -120,7 +121,7 @@ AirPrinter サーバーを追加するには、プリンターの IP アドレ�
 - **[[ログアウト] を無効にする]** (macOS 10.13 以降): **[無効]** の場合、ユーザーはサインイン後 **[ログアウト]** オプションを選択することができません。 **[未構成]** (既定) の場合、ユーザーはデバイスで **[ログアウト]** メニュー項目を選択することができます。
 - **[[ロック画面] を無効にする]** (macOS 10.13 以降): **[無効]** の場合、ユーザーはサインイン後 **[ロック画面]** オプションを選択することができません。 **[未構成]** (既定) の場合、ユーザーはデバイスで **[ロック画面]** メニュー項目を選択することができます。
 
-## <a name="single-sign-on-app-extension"></a>シングルサインオンアプリの拡張機能
+## <a name="single-sign-on-app-extension"></a>シングル サインオン アプリの拡張機能
 
 この機能は、以下に適用されます。
 
@@ -142,8 +143,8 @@ AirPrinter サーバーを追加するには、プリンターの IP アドレ�
 
   [チーム ID を検索](https://help.apple.com/developer-account/#/dev55c3c710c)します (Apple の web サイトを開きます)。詳細については、こちらを参照してください。
 
-- **領域**: Kerberos 領域の名前を入力します。 @No__t-0 など、領域名は大文字にする必要があります。 通常、領域名は DNS ドメイン名と同じですが、すべて大文字で指定します。
-- **ドメイン**: SSO 経由で認証できるサイトのドメイン名またはホスト名を入力します。 たとえば、web サイトが @no__t 0 の場合、`mysite` がホスト名で、`contoso.com` がドメイン名になります。 ユーザーがこれらのサイトのいずれかに接続すると、アプリ拡張機能によって認証チャレンジが処理されます。 この認証により、ユーザーは顔 ID、タッチ ID、または Apple pincode/パスコードを使用してサインインできます。
+- **領域**: Kerberos 領域の名前を入力します。 領域名は、`CONTOSO.COM` のように大文字で指定する必要があります。 通常、領域名は DNS ドメイン名と同じですが、すべて大文字で指定します。
+- **ドメイン**: SSO 経由で認証できるサイトのドメイン名またはホスト名を入力します。 たとえば、web サイトが `mysite.contoso.com` 場合、`mysite` はホスト名、`contoso.com` がドメイン名になります。 ユーザーがこれらのサイトのいずれかに接続すると、アプリ拡張機能によって認証チャレンジが処理されます。 この認証により、ユーザーは顔 ID、タッチ ID、または Apple pincode/パスコードを使用してサインインできます。
 
   - シングルサインオンアプリ拡張機能の Intune プロファイル内のすべてのドメインは一意である必要があります。 さまざまな種類の SSO アプリ拡張機能を使用している場合でも、どのサインオンアプリ拡張機能プロファイルでもドメインを繰り返すことはできません。
   - これらのドメインでは大文字と小文字が区別されません。
@@ -198,11 +199,11 @@ Intune では、次のことができます。
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>設定の適用先: すべての登録の種類
 
-- **アプリ ID**: web サイトに関連付けるアプリのアプリ識別子を入力します。 アプリ識別子には、チーム ID とバンドル ID が含まれています: `TeamID.BundleID`。
+- **アプリ ID**: web サイトに関連付けるアプリのアプリ識別子を入力します。 アプリ識別子には、チーム ID とバンドル ID の `TeamID.BundleID` が含まれます。
 
-  チーム ID は、アプリ開発者のために Apple によって生成される10文字の英数字 (文字と数字) 文字列です (`ABCDE12345` など)。 [チーム ID を検索](https://help.apple.com/developer-account/#/dev55c3c710c)し   (Apple の web サイトを開きます) で詳細情報を確認します。
+  チーム ID は、アプリ開発者向けに Apple によって生成される10文字の英数字 (文字と数字) 文字列です (`ABCDE12345` など)。 [チーム ID を見つけ](https://help.apple.com/developer-account/#/dev55c3c710c)  (Apple の web サイトを開きます)。詳細については、こちらを参照してください。
 
-  バンドル ID はアプリを一意に識別するものであり、通常は逆ドメイン名表記で書式設定されます。 たとえば、Finder のバンドル ID は `com.apple.finder` になります。 バンドル ID を検索するには、次のように、ターミナルで AppleScript を使用します。
+  バンドル ID はアプリを一意に識別するものであり、通常は逆ドメイン名表記で書式設定されます。 たとえば、Finder のバンドル ID は `com.apple.finder` です。 バンドル ID を検索するには、次のように、ターミナルで AppleScript を使用します。
 
   `osascript -e 'id of app "ExampleApp"'`
 
@@ -212,7 +213,7 @@ Intune では、次のことができます。
 
   サービスの種類は次のとおりです。
 
-  - **authsrv**: シングルサインオンアプリの拡張機能
+  - **authsrv**: シングル サインオン アプリの拡張機能
   - **「」** : ユニバーサルリンク
   - **webcredentials**: パスワードのオートコンプリート
 

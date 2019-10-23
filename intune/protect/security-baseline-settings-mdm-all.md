@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f462b04166a2204d47f288d225e1490f8d3ea2a
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e0be7627403cc95316a99e841127a137e0279ff1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736027"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508973"
 ---
 # <a name="windows-mdm-security-baseline-settings-for-intune"></a>Intune 用の Windows MDM セキュリティ ベースラインの設定
 Windows 10 以降を実行しているデバイスの Microsoft Intune でサポートされている MDM セキュリティベースライン設定を表示します。 この基準の設定の既定値は、適用可能なデバイスに推奨される構成を表し、他のセキュリティ基準、またはこのベースラインの他のバージョンからの基準の既定値とは一致しない可能性があります。
@@ -171,19 +172,19 @@ Windows 10 以降を実行しているデバイスの Microsoft Intune でサポ
 詳細については、Windows の「[Policy CSP - Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser)」(ポリシー CSP - Browser) を参照してください。  
 
 - **Require SmartScreen for Microsoft Edge (Microsoft Edge で SmartScreen が必要)**  
-  Microsoft Edge では、(有効に設定された) Windows Defender SmartScreen を使用して、フィッシング詐欺にあう可能性や悪意のあるソフトウェアから既定でユーザーを保護しています。 また、既定では、ユーザーは Windows Defender SmartScreen を無効にできません。 このポリシーを有効にすると、Windows Defender SmartScreen がオフになり、ユーザーがそれをオンにできないようになります。 ユーザーが Windows Defender SmartScreen を有効または無効にできるようにするには、このポリシーを構成しないでください。  
+  Microsoft Edge では、(オンになった) Microsoft Defender SmartScreen を使用して、フィッシング詐欺にあう可能性や悪意のあるソフトウェアから既定でユーザーを保護しています。 また、既定では、ユーザーは Microsoft Defender SmartScreen を無効 (オフ) にできません。 このポリシーを有効にすると、Microsoft Defender SmartScreen がオフになり、ユーザーがそれをオンにできないようになります。 ユーザーが Microsoft Defender SmartScreen のオンとオフを選択できるようにする場合は、このポリシーを構成しないでください。  
   [詳細情報](https://go.microsoft.com/fwlink/?linkid=2067029)   
   
   **既定値**: はい  
   
 - **Block malicious site access (悪意のあるサイトへのアクセスをブロックする)**  
-  Microsoft Edge では、悪意のある可能性があるサイトに関する Windows Defender SmartScreen の警告を既定で無視して、サイトに進めないようにすることができます。 このポリシーを使用すると、ユーザーが警告をバイパスし、サイトに進めないように Microsoft Edge を構成できます。  
+  既定では、Microsoft Edge では、悪意のある可能性があるサイトに関する Microsoft Defender SmartScreen の警告をユーザーがバイパス (無視) して、サイトに進むことができます。 このポリシーを使用すると、ユーザーが警告をバイパスし、サイトに進めないように Microsoft Edge を構成できます。  
   [詳細情報](https://go.microsoft.com/fwlink/?linkid=2067040)   
   
   **既定値**: はい  
   
 - **Block unverified file download (確認されていないファイルのダウンロードをブロックする)**  
-  Microsoft Edge では、悪意のある可能性があるファイルに関する Windows Defender SmartScreen の警告を既定で無視して、確認されていないファイルのダウンロードを続行することができます。 このポリシーを有効にすると、ユーザーはこの警告をバイパスして、確認されていないファイルをダウンロードできなくなります。  
+  既定では、Microsoft Edge では、悪意のある可能性があるファイルに関する Microsoft Defender SmartScreen の警告をユーザーがバイパス (無視) して、未確認のファイルのダウンロードを続行することができます。 このポリシーを有効にすると、ユーザーはこの警告をバイパスして、確認されていないファイルをダウンロードできなくなります。  
   [詳細情報](https://go.microsoft.com/fwlink/?linkid=2067023)  
   
   **既定値**: はい  
@@ -1670,7 +1671,7 @@ Windows 10 以降を実行しているデバイスの Microsoft Intune でサポ
 
   **既定値**: 有効
   
-## <a name="windows-defender"></a>Windows Defender  
+## <a name="microsoft-defender"></a>Microsoft Defender  
 詳細については、Windows ドキュメントの「[Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender)」(ポリシー CSP - Defender) を参照してください。  
 
 - **受信メール メッセージをスキャンする**  
@@ -1686,7 +1687,7 @@ Windows 10 以降を実行しているデバイスの Microsoft Intune でサポ
   **既定値**: ブロック
   
 - **Defender sample submission consent type (Defender のサンプル送信の同意の種類)**  
-  Windows Defender でデータを送信するためのユーザーの同意レベルを確認します。 必要な同意が既に与えられている場合、Windows Defender からそれらが送信されます。 それ以外の場合 (かつユーザーが "確認しない" を指定した場合)、(Defender/AllowCloudProtection が許可されている場合は) データを送信する前にユーザーの同意を求める UI が起動します。  
+  Microsoft Defender でデータを送信するためのユーザーの同意レベルを確認します。 必要な同意が既に与えられている場合、Microsoft Defender からそれらが送信されます。 それ以外の場合 (かつユーザーが "確認しない" を指定した場合)、(Defender/AllowCloudProtection が許可されている場合は) データを送信する前にユーザーの同意を求める UI が起動します。  
   [詳細情報](https://go.microsoft.com/fwlink/?linkid=2067131)  
   
   **既定値**: 安全なサンプルを自動的に送信します 
@@ -1702,7 +1703,7 @@ Windows 10 以降を実行しているデバイスの Microsoft Intune でサポ
   **既定値**: ブロック
   
 - **Prevent credential stealing type (資格情報盗難防止タイプ)**  
-  Windows Defender Credential Guard は、特権を持つシステム ソフトウェアだけがシークレットにアクセスできるように、仮想化ベースのセキュリティを使用してシークレットを分離します。 これらのシークレットへの不正アクセスは、Pass-the-Hash や Pass-The-Ticket などの、資格情報を盗む攻撃につながる可能性があります。 Windows Defender Credential Guard は、NTLM パスワード ハッシュ、Kerberos の Ticket Granting Ticket、およびアプリケーションによってドメイン資格情報として格納された資格情報を保護することで、これらの攻撃を防ぎます。  
+  Microsoft Defender Credential Guard では、仮想化ベースのセキュリティを使用してシークレットを分離し、特権を持つシステム ソフトウェアだけがアクセスできるようにします。 これらのシークレットへの不正アクセスは、Pass-the-Hash や Pass-The-Ticket などの、資格情報を盗む攻撃につながる可能性があります。 Microsoft Defender Credential Guard では、NTLM パスワード ハッシュ、Kerberos のチケット保証チケット、およびアプリケーションによってドメイン資格情報として格納された資格情報を保護することで、これらの攻撃を防ぎます。  
   [詳細情報](https://go.microsoft.com/fwlink/?linkid=2067065)  
   
   **既定値**: 有効にする
@@ -1721,9 +1722,9 @@ Windows 10 以降を実行しているデバイスの Microsoft Intune でサポ
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
-- **Network protection type (ネットワーク保護タイプ)**  
-  このポリシーは、Windows Defender Exploit Guard でのネットワーク保護 (ブロック/監査) をオンまたはオフにします。 ネットワーク保護は Windows Defender Exploit Guard の機能であり、任意のアプリを使用する従業員がインターネット上のフィッシング詐欺、悪用ホスティング サイト、悪意のあるコンテンツにアクセスするのを防ぎます。 これには、サード パーティ製のブラウザーが危険なサイトに接続するのを防ぐことが含まれます。 値の型は整数です。 この設定を有効にした場合、ネットワーク保護が有効になり、従業員では無効にできません。 その動作は次のオプションで制御できます: ブロックと監査。 このポリシーを "ブロック" オプションで有効にした場合、ユーザーとアプリは危険なドメインに接続するのをブロックされます。 このアクティビティは、Windows Defender セキュリティ センターで表示することができます。 このポリシーを "監査" オプションで有効にした場合、ユーザー/アプリは危険なドメインに接続するのをブロックされません。 ただし、それでもこのアクティビティは Windows Defender セキュリティ センターで表示されます。 このポリシーを無効にした場合、ユーザー/アプリは危険なドメインに接続するのをブロックされません。 ネットワーク アクティビティは、Windows Defender セキュリティ センターに表示されません。 このポリシーを構成しない場合、ネットワーク ブロックは既定で無効になります。  
-  [詳細情報](https://go.microsoft.com/fwlink/?linkid=2067102)  
+- **[ネットワークの保護]**  
+  このポリシーを使うと、Microsoft Defender Exploit Guard でネットワーク保護 (ブロック/監査) をオンまたはオフにできるようになります。 ネットワーク保護は Microsoft Defender Exploit Guard の機能であり、任意のアプリを使用する従業員がインターネット上のフィッシング詐欺、悪用ホスティング サイト、悪意のあるコンテンツにアクセスするのを防ぎます。 これには、サード パーティ製のブラウザーが危険なサイトに接続するのを防ぐことが含まれます。 値の型は整数です。 この設定を有効にした場合、ネットワーク保護が有効になり、従業員では無効にできません。 その動作は次のオプションで制御できます: ブロックと監査。 このポリシーを "ブロック" オプションで有効にした場合、ユーザーとアプリは危険なドメインに接続するのをブロックされます。 このアクティビティは、Microsoft Defender セキュリティ センターで表示することができます。 このポリシーを "監査" オプションで有効にした場合、ユーザー/アプリは危険なドメインに接続するのをブロックされません。 ただし、それでもこのアクティビティは Microsoft Defender セキュリティ センターで表示されます。 このポリシーを無効にした場合、ユーザー/アプリは危険なドメインに接続するのをブロックされません。 ネットワーク アクティビティは、Microsoft Defender セキュリティ センターに表示されません。 このポリシーを構成しない場合、ネットワーク ブロックは既定で無効になります。  
+  [詳細情報](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
   
   **既定値**: 有効にする
   
@@ -1733,13 +1734,13 @@ Windows 10 以降を実行しているデバイスの Microsoft Intune でサポ
   **既定値**: 毎日
   
 - **Cloud-delivered protection (クラウドによる保護)**  
-  PC を最大限に保護するため、Windows Defender は検出した問題についての情報を Microsoft に送信します。 Microsoft は、その情報を分析し、報告者や他の顧客に影響する問題について詳細に把握して、強化されたソリューションを提供します。  
+  PC を最大限に保護するため、Microsoft Defender では検出した問題についての情報が Microsoft に送信されます。 Microsoft は、その情報を分析し、報告者や他の顧客に影響する問題について詳細に把握して、強化されたソリューションを提供します。  
   [詳細情報](https://go.microsoft.com/fwlink/?linkid=2067039)
   
   **既定値**: はい  
 
 - **Defender potentially unwanted app action (Defender の望ましくないアプリに対するアクション)**  
-  Windows Defender ウイルス対策に備わっている潜在的に迷惑なアプリケーション (PUA) 保護機能では、PUA を特定して、ご使用のネットワークのエンドポイントへのダウンロードやインストールをブロックできます。 これらのアプリケーションはウイルス、マルウェア、または他の種類の脅威とは見なされませんが、パフォーマンスや使用に悪影響を与えるアクションをエンドポイントで実行する可能性があります。 PUA は、評価が低いと考えられるアプリケーションを指すこともあります。 一般的な PUA の動作は次のとおりです。さまざまな種類のソフトウェア バンドル。Web ブラウザーへの広告挿入。問題を検出し、エラーの修正に対して支払いを要求するが、エンドポイント上に残っていて変更や最適化を何も行わないドライバーやレジストリのオプティマイザー ("偽装ウイルス対策" プログラムとも呼ばれます)。 これらのアプリケーションは、ネットワークがマルウェアに感染するリスクを高め、識別困難なマルウェア感染を引き起こし、アプリケーションのクリーンアップで IT リソースを浪費させる可能性があります。  
+  Microsoft Defender ウイルス対策に備わっている望ましくない可能性があるアプリケーション (PUA) 保護機能では、PUA を特定して、ご使用のネットワーク内のエンドポイントへのダウンロードやインストールをブロックできます。 これらのアプリケーションはウイルス、マルウェア、または他の種類の脅威とは見なされませんが、パフォーマンスや使用に悪影響を与えるアクションをエンドポイントで実行する可能性があります。 PUA は、評価が低いと考えられるアプリケーションを指すこともあります。 一般的な PUA の動作は次のとおりです。さまざまな種類のソフトウェア バンドル。Web ブラウザーへの広告挿入。問題を検出し、エラーの修正に対して支払いを要求するが、エンドポイント上に残っていて変更や最適化を何も行わないドライバーやレジストリのオプティマイザー ("偽装ウイルス対策" プログラムとも呼ばれます)。 これらのアプリケーションは、ネットワークがマルウェアに感染するリスクを高め、識別困難なマルウェア感染を引き起こし、アプリケーションのクリーンアップで IT リソースを浪費させる可能性があります。  
   [詳細情報](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)    
   
   **既定値**: ブロック  
@@ -1751,7 +1752,7 @@ Windows 10 以降を実行しているデバイスの Microsoft Intune でサポ
   **既定値**: ブロック
   
 - **フル スキャン中に、リムーバブル ドライブをスキャンする**  
-  Windows Defender が、フル スキャン中にリムーバブル ドライブ (フラッシュ ドライブなど) 内の悪意のあるソフトウェアや望ましくないソフトウェアをスキャンできるようにします。 Windows Defender ウイルス対策は、実行する前に USB デバイス上のすべてのファイルをスキャンします。  
+  Microsoft Defender が、フル スキャン中にリムーバブル ドライブ (フラッシュ ドライブなど) 内の悪意のあるソフトウェアや望ましくないソフトウェアをスキャンできるようにします。 Microsoft Defender ウイルス対策では、実行する前に USB デバイス上のすべてのファイルがスキャンされます。  
   [詳細情報](https://go.microsoft.com/fwlink/?linkid=2067036)  
   
   **既定値**: はい  
@@ -1762,7 +1763,7 @@ Windows 10 以降を実行しているデバイスの Microsoft Intune でサポ
   **既定値**: はい
   
 - **動作の監視**  
-  Windows Defender の動作監視機能を許可または禁止します。 Windows 10 内蔵のこれらのセンサーでは、オペレーティング システムから動作信号を収集して処理し、プライベート クラウドに他から切り離されて存在する Microsoft Defender ATP インスタンスにこのセンサー データを送信します。  
+  Microsoft Defender の動作監視機能を許可または禁止します。 Windows 10 内蔵のこれらのセンサーでは、オペレーティング システムから動作信号を収集して処理し、プライベート クラウドに他から切り離されて存在する Microsoft Defender ATP インスタンスにこのセンサー データを送信します。  
   [詳細情報](https://go.microsoft.com/fwlink/?linkid=2067111)  
   
   **既定値**: はい
@@ -1816,7 +1817,7 @@ Windows 10 以降を実行しているデバイスの Microsoft Intune でサポ
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
-## <a name="windows-defender-firewall"></a>Windows Defender ファイアウォール  
+## <a name="microsoft-defender-firewall"></a>Microsoft Defender ファイアウォール  
 詳細については、Windows プロトコルのドキュメントの「 [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) 」を参照してください。  
 
 - **ファイアウォールプロファイルドメイン**  
@@ -1985,11 +1986,11 @@ Windows 10 以降を実行しているデバイスの Microsoft Intune でサポ
   - **電子メールの招待方法**
 
 
-" *[新規]* " [**Windows Defender**](#windows-defender):
+" *[新規]* " [**Microsoft Defender**](#microsoft-defender):
 - **子プロセスでの Adobe Reader の起動**  
 - **子プロセスでの Office 通信アプリの起動** 
 
-" *[新規]* " [**Windows Defender ファイアウォール**](#windows-defender-firewall)
+*[新規]* [ **Microsoft Defender ファイアウォール**](#microsoft-defender-firewall)
 - **ファイアウォールプロファイルドメイン**  
   - **受信接続をブロック**  
   - **送信接続が必要**  

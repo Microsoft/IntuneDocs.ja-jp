@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: a7e3c742-295b-40bb-9afa-17f243062500
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 230ee8c1206a4d091661b51dd239a4cb0b1a1963
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 962e66a9fdf6d8abcf6855f645775026ee4db850
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814050"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508844"
 ---
 # <a name="troubleshoot-the-intune-exchange-connector"></a>Intune Exchange Connector に関するトラブルシューティング
 
@@ -32,7 +33,7 @@ ms.locfileid: "71814050"
 
 Intune で Exchange Connector の問題のトラブルシューティングを開始する前に、基本的な情報を収集して、堅固な基盤で作業しています。 この方法は、問題の性質をより深く理解し、より迅速に解決するのに役立ちます。
 
-- プロセスがインストール要件を満たしていることを確認します。 「[オンプレミスの Intune Exchange Connector のセットアップ](exchange-connector-install.md)」を参照してください。
+- プロセスがインストール要件を満たしていることを確認します。 「[オンプレミスの Intune Exchange Connector を設定する](exchange-connector-install.md)」をご覧ください。
 - アカウントに Exchange と Intune の両方の管理者権限があることを確認します。
 - 完全で正確なエラーメッセージのテキスト、詳細、およびメッセージが表示される場所に注意してください。
 - 問題がいつ開始されたかを判断します。 
