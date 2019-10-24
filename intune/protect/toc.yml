@@ -96,13 +96,21 @@
         - name: Mobile Threat Defense
           href: mobile-threat-defense.md
           items:
-            - name: MTD 用 Intune のセットアップ
+            - name: 未登録デバイスの MTD
               items:
-                - name: MTD アプリの追加
+                - name: 未登録デバイスへの MTD アプリの追加
+                  href: mtd-add-apps-unenrolled-devices.md
+                - name: MTD アプリ保護ポリシーの作成
+                  href: mtd-app-protection-policy.md
+                - name: 未登録デバイスに対して MTD を有効にする
+                  href: mtd-enable-unenrolled-devices.md
+            - name: 登録されているデバイスの MTD
+              items:
+                - name: 登録されたデバイスへの MTD アプリの追加
                   href: mtd-apps-ios-app-configuration-policy-add-assign.md
                 - name: MTD デバイス コンプライアンス ポリシーの作成
                   href: mtd-device-compliance-policy-create.md
-                - name: Intune で MTD を有効にする
+                - name: 登録デバイスに対して MTD を有効にする
                   href: mtd-connector-enable.md
             - name: MTD アプリ
               items:

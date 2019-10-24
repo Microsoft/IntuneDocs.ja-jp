@@ -20,6 +20,9 @@
     - name: デバイスの設定と機能を制限する
       href: device-restrictions-configure.md
       displayName: Device restrictions
+    - name: Windows の BIOS 設定
+      href: device-firmware-configuration-interface-windows.md
+      displayName: 'DFCI, firmware'
     - name: 更新プログラム
       href: delivery-optimization-windows.md
       displayName: delivery optimization; updates
