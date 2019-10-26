@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2be1faa1296792d3d40de5ca0b304a287bae8e6f
-ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
+ms.openlocfilehash: eb992747765ea087d5ef536c2da7c444bfa2d987
+ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72550829"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915728"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Microsoft Intune の OEMConfig で Android エンタープライズデバイスを使用および管理する
 
@@ -66,7 +66,7 @@ OEMConfig を使用する場合は、次の情報に注意してください。
 
 - Intune に登録されている Android Enterprise デバイス。
 - OEM によってビルドされ、Google Play にアップロードされた OEMConfig アプリ。 Google Play ない場合は、OEM に詳細を問い合わせてください。
-- Intune 管理者は、**モバイルアプリ**と**Deviceconfigurations**、ロールベースのアクセス制御 (RBAC) のアクセス許可を持っています。 これらのアクセス許可は、OEMConfig プロファイルが管理対象アプリ構成を使用してデバイス構成を管理するために必要です。
+- Intune 管理者は、**モバイルアプリ**、**デバイス構成**、および**Android for Work**の "読み取り" アクセス許可に対するロールベースのアクセス制御 (RBAC) アクセス許可を持っています。 これらのアクセス許可は、OEMConfig プロファイルが管理対象アプリ構成を使用してデバイス構成を管理するために必要です。
 
 ## <a name="prepare-the-oemconfig-app"></a>OEMConfig アプリを準備する
 

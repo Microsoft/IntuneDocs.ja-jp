@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a26af380ef00c85c681beccdcdf188c343da1b94
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
-ms.translationtype: HT
+ms.openlocfilehash: 95cf688f3727f97aedd4126e00fa4dc4939ef6bc
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584889"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785517"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用した機能を許可または制限するための iOS および iPadOS デバイスの設定
 
@@ -300,6 +300,11 @@ ms.locfileid: "72584889"
 
   この機能は、以下に適用されます。  
   - iOS 12.2 以降
+
+  > [!NOTE]
+  > **Siri コマンド設定のサーバー側のログ**は、Apple では非推奨とされます。 今後のリリースでは、この設定は Intune コンソールから削除されます。
+  >
+  > 現在、この設定は管理 profiles に表示されていますが、デバイスには影響しません。 ポリシーからこの設定を削除するには、ポリシーを開き、軽微な変更を加えてから、ポリシーを保存します。 ポリシーが更新され、設定がデバイスから削除されます。
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>設定の適用対象: 自動デバイス登録 (監視)
 

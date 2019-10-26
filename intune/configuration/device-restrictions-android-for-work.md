@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2019
+ms.date: 10/24/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1d83a77d8823a05accaf1c88b57f6e380636469
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: ec6009096ac6ed39c8a217f8832661a575d83b78
+ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585381"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915715"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように Android エンタープライズ デバイスを設定する
 
@@ -193,7 +193,8 @@ ms.locfileid: "72585381"
 
 ### <a name="power-settings"></a>電源設定
 
-- **[Time to lock screen]\(画面ロックまでの時間\)** : デバイスのロックまでに必要なアイドル時間の長さを設定します。
+- **画面をロックする時間**: デバイスがロックされるまでユーザーが設定できる最大時間を入力します。 たとえば、この設定を**10 分**に設定した場合、ユーザーは15秒から10分までの時間を設定できます。 [未構成] (既定) に設定され**て**いる場合、Intune はこの設定を変更または制御しません。
+
 - **[Screen on while device plugged in]\(デバイスの接続時の画面\)** : 接続時にデバイスの画面をオンにしたままにする電源を選択します。
 
 ### <a name="users-and-accounts-settings"></a>ユーザーとアカウントの設定
