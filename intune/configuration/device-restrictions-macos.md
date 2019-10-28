@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/10/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb5fe19852ffff30566cb6758e156def3b7d64a5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8b2efdc04414d29fc1d8d200525cb3a4a880ec01
+ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72494014"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776883"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>Intune を使用して機能を許可または制限するように macOS デバイスを設定する
 
@@ -40,7 +40,7 @@ ms.locfileid: "72494014"
 
 ## <a name="general"></a>全般
 
-### <a name="settings-apply-to-device-enrollment"></a>設定の適用先: デバイスの登録
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定の適用先: デバイスの登録とデバイスの自動登録
 
 - **[定義の検索]** : **[ブロック]** では、ユーザーが単語を強調表示してデバイスで定義を検索することができなくなります。 **[未構成]** (既定値) では、定義の検索機能を使用できるようになります。
 - **[音声入力]** : **[ブロック]** では、ユーザーが音声入力を使用してテキストを入力できなくなります。 **[未構成]** (既定値) では、ユーザーがディクテーション入力を使用できるようになります。
@@ -82,7 +82,7 @@ ms.locfileid: "72494014"
 
 ## <a name="password"></a>パスワード
 
-### <a name="settings-apply-to-device-enrollment"></a>設定の適用先: デバイスの登録
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定の適用先: デバイスの登録とデバイスの自動登録
 
 - **[パスワード]** : エンド ユーザーがデバイスにアクセスする際にパスワードの入力を**要求**します。 **未構成**(既定) はパスワードを必要としません。 また、単純なパスワードのブロックや最小長の設定など、制限が適用されることもありません。
   - **[必要なパスワードの種類]** : パスワードを数字のみとすることができるかどうか、または英数字 (文字と数字を含む) にする必要があるかどうかを指定します。
@@ -114,7 +114,7 @@ ms.locfileid: "72494014"
 
 ## <a name="built-in-apps"></a>組み込みアプリ
 
-### <a name="settings-apply-to-device-enrollment"></a>設定の適用先: デバイスの登録
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定の適用先: デバイスの登録とデバイスの自動登録
 
 - **[Block Safari AutoFill]\(Safari オートフィルをブロックする\)** : **[ブロック]** を選択すると、デバイス上の Safari のオートフィル機能が無効になります。 **[未構成]** (既定値) では、ユーザーが Web ブラウザー内のオートコンプリート設定を変更できます。
 - **[カメラをブロックする]** : **[ブロック]** を選択すると、デバイス上のカメラにアクセスできなくなります。 **[未構成]** (既定値) では、デバイスのカメラへのアクセスが許可されます。
@@ -127,7 +127,7 @@ ms.locfileid: "72494014"
 
 ## <a name="restricted-apps"></a>制限付きアプリ
 
-### <a name="settings-apply-to-device-enrollment"></a>設定の適用先: デバイスの登録
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定の適用先: デバイスの登録とデバイスの自動登録
 
 - **制限付きアプリの種類の一覧**: ユーザーがインストールまたは使用することが許可されていないアプリの一覧を作成します。 次のようなオプションがあります。
 
@@ -145,14 +145,14 @@ ms.locfileid: "72494014"
 
 ## <a name="connected-devices"></a>接続されたデバイス
 
-### <a name="settings-apply-to-device-enrollment"></a>設定の適用先: デバイスの登録
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定の適用先: デバイスの登録とデバイスの自動登録
 
 - **[AirDrop を禁止する]** : **[ブロック]** では、デバイスで AirDrop を使用できなくなります。 **[未構成]** (既定値) では、近くにあるデバイスとコンテンツを交換する AirDrop 機能を使用できるようになります。
 - **[Block Apple Watch Auto Unlock]\(Apple Watch の自動ロック解除をブロックする\)** : **[ブロック]** を選択すると、ユーザーは Apple Watch で macOS デバイスのロックを解除できなくなります。 **[未構成]** (既定値) では、ユーザーが Apple Watch で macOS デバイスのロックを解除できます。
 
 ## <a name="cloud-and-storage"></a>クラウドとストレージ
 
-### <a name="settings-apply-to-device-enrollment"></a>設定の適用先: デバイスの登録
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定の適用先: デバイスの登録とデバイスの自動登録
 
 - **[iCloud キーチェーンの同期をブロックする]** : **[ブロック]** を選択すると、キーチェーンに格納されている資格情報を iCloud と同期できなくなります。 **[未構成]** (既定値) では、ユーザーがこのような資格情報を同期できるようになります。
 - **[Block iCloud Document Sync]\(iCloud のドキュメント同期をブロックする\)** : **[ブロック]** を選択すると、iCloud でドキュメントとデータが同期されなくなります。 **[未構成]** (既定値) では、ドキュメントとキー値を iCloud 記憶域スペースに同期できるようになります。
@@ -170,7 +170,7 @@ ms.locfileid: "72494014"
 
 ## <a name="domains"></a>Domains
 
-### <a name="settings-apply-to-device-enrollment"></a>設定の適用先: デバイスの登録
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定の適用先: デバイスの登録とデバイスの自動登録
 
 - **[メール ドメイン URL]** : 1 つ以上の URL を一覧に**追加**します。 構成したドメイン以外のドメインからのメールをユーザーが受信すると、そのメールは macOS のメール アプリで信頼されていないメールとしてマークされます。
 

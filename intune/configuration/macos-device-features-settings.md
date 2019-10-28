@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17d0baeeb6b193be6acf8d6087c26a66b18642c5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
-ms.translationtype: HT
+ms.openlocfilehash: 48cca2c894067439943bdfff33b953463e513490
+ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
+ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506674"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776900"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune での macOS デバイスの機能設定
 
@@ -42,7 +42,7 @@ Intune には、macOS デバイスで機能をカスタマイズするための�
 
 ## <a name="airprint"></a>AirPrint
 
-### <a name="settings-apply-to-device-enrollment"></a>設定の適用先: デバイスの登録
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定の適用先: デバイスの登録とデバイスの自動登録 
 
 - **[IP アドレス]** : プリンターの IPv4 アドレスまたは IPv6 アドレスを入力します。 ホスト名を使用してプリンターを識別している場合は、ターミナル アプリでプリンターに ping を実行することで IP アドレスを取得できます。 詳細については、「[IP アドレスとパスを取得する](#get-the-ip-address-and-path)」(この記事) を参照してください。
 - **[パス]** : プリンターのパスを入力します。 通常、このパスはネットワーク上のプリンターの `ipp/print` です。 詳細については、「[IP アドレスとパスを取得する](#get-the-ip-address-and-path)」(この記事) を参照してください。
@@ -85,7 +85,7 @@ AirPrinter サーバーを追加するには、プリンターの IP アドレ�
 
 ## <a name="login-window"></a>ログイン ウィンドウ
 
-### <a name="settings-apply-to-device-enrollment"></a>設定の適用先: デバイスの登録
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定の適用先: デバイスの登録とデバイスの自動登録 
 
 #### <a name="window-layout"></a>ウィンドウのレイアウト
 
