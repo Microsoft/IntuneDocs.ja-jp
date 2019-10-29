@@ -6,7 +6,9 @@
 
 ## [デバイスのパスワード要件](password-does-not-meet-it-administrator-requirements.md)
 
-## [ポータル サイトにサインインする](sign-in-to-the-company-portal.md)
+## [ポータル サイトにサインインする](sign-in-to-the-company-portal.md)  
+
+## [Mobile Threat Defense アプリのインストール](set-up-mobile-threat-defense.md)  
 
 ## Android デバイスを使用する
 ### [Android デバイスを登録する理由](why-enroll-android-device.md)
