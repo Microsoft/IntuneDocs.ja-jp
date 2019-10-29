@@ -5,24 +5,24 @@ description: Microsoft Defender Advanced Threat Protection を管理するため
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 10/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: karthib
+ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2cb5d7375ae5b76a24861872d4abf786f199dfd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: aa3cb3481de6e1fdc3790b7330ac521772e252be
+ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
 ms.translationtype: MTE75
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508995"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72923403"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 向けの Microsoft Defender Advanced Threat Protection ベースライン設定
 
@@ -31,12 +31,6 @@ Microsoft Intune でサポートされている Microsoft Defender Advanced Thre
 ご使用の環境が [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) を使用するための前提条件を満たしている場合は、Microsoft Defender Advanced Threat Protection ベースラインを使用できます。 
 
 このベースラインは物理デバイス用に最適化されており、現在は仮想マシン (Vm) または VDI エンドポイントでの使用は推奨されていません。 特定のベースライン設定が、仮想化された環境でのリモート対話型セッションに影響を与える可能性があります。 詳細については、Windows ドキュメントの「[Increase compliance to the Microsoft Defender ATP security baseline (Microsoft Defender ATP のセキュリティ ベースラインに対するコンプライアンスの強化)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline)」をご覧ください。
-
-
-> [!NOTE]  
-> ATP ベースライン設定は、**プレビュー**段階にあります。 プレビュー段階の間は、使用可能な設定の一覧、およびこのコンテンツでそれらの設定が示される順序は、ポータル内で提供されるものと異なる可能性があります。  
->
-> ベースライン設定のプレビュー段階が終了すると、このコンテンツは更新され、Intune でサポートされる最新のセキュリティ ベースライン設定を反映するようになります。
 
 ## <a name="application-guard"></a>Application Guard  
 詳細については、Windows のドキュメントの「[WindowsDefenderApplicationGuard CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp)」を参照してください。  
@@ -55,13 +49,13 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 
   - **クリップボードの動作** - *Settings/ClipboardSettings*  
     ローカル PC と Application Guard 仮想ブラウザー間で許可するコピー/貼り付け操作を選択します。  次のオプションがあります。
-    - *未構成*  
-    - *双方向をブロック* - PC と仮想ブラウザーの間でデータを転送できません。  
-    - *ホストからコンテナーへの方向をブロック* - PC から仮想ブラウザーにデータを転送できません。
-    - *コンテナーからホストへの方向をブロック* - 仮想ブラウザーからホスト PC にデータを転送できません。
-    - *ブロックなし* - コンテンツに対するブロックは存在しません。  
+    - 未構成  
+    - PC とブラウザーの間でコピーと貼り付けをブロックする-両方をブロックします。 PC と仮想ブラウザーの間でデータを転送できません。  
+    - ブラウザーから PC へのコピー/貼り付けのみを許可する-PC から仮想ブラウザーにデータを転送することはできません。
+    - PC からブラウザーへのコピーと貼り付けのみを許可する-データは仮想ブラウザーからホスト PC に転送できません。
+    - PC とブラウザーの間でのコピーと貼り付けを許可する-コンテンツのブロックは存在しません。  
 
-    **既定値**: 双方向をブロック  
+    **既定**: PC とブラウザーの間でコピーと貼り付けをブロックします。  
 
 - **Windows ネットワーク分離ポリシー – エンタープライズ ネットワーク ドメイン名**  
   詳細については、Windows のドキュメントの「[Policy CSP - NetworkIsolation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-networkisolation)」 (ポリシー CSP - NetworkIsolation) を参照してください。
@@ -101,7 +95,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 
   **既定値**: 有効にする
 
-- **Email content execution type (電子メール コンテンツ実行タイプ)**  
+- **電子メール コンテンツの実行**  
   [攻撃面の減少ルール](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – *[ブロック]* に設定すると、このルールにより、次の種類のファイルは Microsoft Outlook または Web メール (Gmail.com や Outlook.com など) に表示された電子メールから実行または起動されるのをブロックされます。  
 
   - 実行可能ファイル (.exe、.dll、.scr など)  
@@ -115,12 +109,12 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 
   **既定値**: 有効にする
 
-- **Script obfuscated macro code type (スクリプト難読化マクロ コード タイプ)**  
+- **スクリプトで難読化されたマクロ コード**  
   [攻撃面の減少ルール](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - マルウェアや他の脅威によって、一部のスクリプト ファイル内で悪意のあるコードの難読化または隠ぺいが試みられる可能性があります。 このルールは、難読化されているらしいスクリプトが実行するのを防ぎます。  
     
   **既定値**: ブロック
 
-- **Untrusted USB process type (信頼されていない USB 処理タイプ)**  
+- **信頼されていない USB プロセス**  
   [攻撃面の減少ルール](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – *[ブロック]* に設定すると、USB リムーバブル ドライブおよび SD カードからの署名なしまたは信頼されていない実行可能ファイルは実行できません。
 
   実行可能ファイルには次のようなものがあります。
@@ -129,12 +123,12 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 
   **既定値**: ブロック
 
-- **Office apps other process injection type (Office アプリによる他のプロセスへの挿入タイプ)**  
+- **Office アプリのその他のプロセス インジェクション**  
   [攻撃面の減少ルール](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - *[ブロック]* に設定すると、Word、Excel、PowerPoint、OneNote などの Office アプリから他のプロセスにコードを挿入することができません。 コードの挿入は、通常、マルウェアがウイルス対策スキャン エンジンからアクティビティを隠ぺいする試みの中で、悪意のあるコードを実行するために使用されます。  
 
   **既定値**: ブロック
 
-- **Office macro code allow Win32 imports type (Office のマクロ コードによる Win32 のインポートの許可タイプ)**  
+- **Office マクロ コードで許可する Win32 インポート**  
   [攻撃面の減少ルール](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - *[ブロック]* に設定すると、このルールによって、Win32 DLL をインポートできるマクロ コードが含まれた Office ファイルをブロックすることが試みられます。 Office ファイルには、Word、Excel、PowerPoint、OneNote などがあります。 マルウェアは、Office ファイルのマクロ コードを使用して、Win32 DLL をインポートして読み込んだ後、それを使用して API 呼び出しを行い、システム全体にさらに感染させる可能性があります。  
 
   **既定値**: ブロック
@@ -144,7 +138,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 
   **既定値**: 有効にする
 
-- **Office apps executable content creation or launch type (Office アプリの実行可能コンテンツの作成または起動タイプ)**  
+- **Office アプリの実行可能ファイル コンテンツの作成または起動**  
   [攻撃面の減少ルール](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – *ブロック* に設定すると、Office アプリで実行可能なコンテンツを作成できなくなります。 Office アプリには、Word、Excel、PowerPoint、OneNote、および Access などがあります。  
 
   このルールの対象は、実行可能ファイルを作成または起動する不審な悪意のあるアドオンとスクリプト (拡張機能) で使用される一般的な動作です。 これは、マルウェアの一般的な手法です。 拡張機能は、Office アプリによって使用されるのをブロックされます。 通常、これらの拡張機能では、特定のタスクを自動化したり、ユーザー作成のアドオン機能を提供したりするスクリプトを実行するために、Windows Scripting Host (.wsh ファイル) が使用されます。
@@ -170,6 +164,10 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 
   - **[暗号化方法]**  
     **既定値**: AES 128 ビット CBC
+
+- **ストレージカードの暗号化 (モバイルのみ)** *[はい]* を選択すると、モバイルデバイスのメモリカードが暗号化されます。  
+
+   **既定値**: はい
 
 - **Bit locker fixed drive policy (Bitlocker の固定ドライブのポリシー)**  
   このポリシーの値では、BitLocker が固定ドライブの暗号化に使用する暗号化強度が決定されます。 企業では、セキュリティを強化するために、暗号化のレベルを制御できます (AES-256 は AES-128 よりも強力です)。 この設定を有効にした場合は、固定データ ドライブやオペレーティング システム ドライブ、リムーバブル データ ドライブのそれぞれに、暗号化アルゴリズムとキーの暗号化強度を構成できます。 固定ドライブやオペレーティング システム ドライブには、XTS-AES アルゴリズムを使用することをお勧めします。 リムーバブル ドライブには、Windows 10 バージョン 1511 以降を実行していないその他のデバイスでドライブを使用する場合は、AES-CBC 128 ビットまたは AES-CBC 256 ビットを使用する必要があります。 ドライブが既に暗号化されているか、暗号化が進行中の場合は、暗号化の種類を変更しても影響はありません。 このような場合、このポリシー設定は無視されます。
@@ -224,12 +222,12 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
   - **Remove matching hardware devices (一致するハードウェア デバイスを削除する)**  
     この設定は *[Hardware device installation by device identifiers]\(デバイス識別子でハードウェア デバイスをインストールする\)* が *[Block hardware device installation]\(ハードウェア デバイスのインストールをブロックする\)* に設定されているときのみ使用できます。  
 
-    **既定値**: *既定の構成はありません*
+    **既定値**: はい
 
   - **Hardware device identifiers that are blocked (ブロックされているハードウェア デバイス識別子)**  
     この設定は *[Hardware device installation by device identifiers]\(デバイス識別子でハードウェア デバイスをインストールする\)* が *[Block hardware device installation]\(ハードウェア デバイスのインストールをブロックする\)* に設定されているときのみ使用できます。 この設定を構成するには、オプションを展開し、 **[+ 追加]** を選択して、ブロックするハードウェア デバイスの識別子を指定します。  
 
-    **既定値**: *デバイスはブロックされません*  
+    **既定値**: PCI\CC_0C0A
 
 - **Block direct memory access (ダイレクト メモリ アクセスをブロックする)**  
   [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) - このポリシー設定を使用すると、ユーザーが Windows にログインするまで、デバイス上のホット プラグ可能なすべての PCI ダウンストリーム ポートへのダイレクト メモリ アクセス (DMA) をブロックできます。 ユーザーがログインすると、Windows はホット プラグ PCI ポートに接続されている PCI デバイスを列挙します。 ユーザーがコンピューターをロックするたびに、ユーザーが再ログインするまで、子デバイスが接続されていないホット プラグ PCI ポートで DMA がブロックされます。 コンピューターのロックが解除された際に既に列挙されていたデバイスは、取り外されるまで機能を維持します。 
@@ -249,23 +247,23 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
   - **Remove matching hardware devices (一致するハードウェア デバイスを削除する)**  
     この設定は *[Hardware device installation by setup classes]\(設定クラスでハードウェア デバイスをインストールする\)* が *[Block hardware device installation]\(ハードウェア デバイスのインストールをブロックする\)* に設定されているときのみ使用できます。  
  
-    **既定値**: *既定の構成はありません*  
+    **既定値**: はい  
 
   - **Hardware device identifiers that are blocked (ブロックされているハードウェア デバイス識別子)**  
     この設定は [Hardware device installation by setup classes]\(設定クラスでハードウェア デバイスをインストールする\) が [Block hardware device installation]\(ハードウェア デバイスのインストールをブロックする\) に設定されているときのみ使用できます。 この設定を構成するには、オプションを展開し、 **[+ 追加]** を選択して、ブロックするハードウェア デバイスの識別子を指定します。  
  
-    **既定値**: *デバイスはブロックされません*
+    **既定値**: {d48179be-ec20-11d1-b6b8-00c04fa372a7}
 
 ## <a name="endpoint-detection-and-response"></a>エンドポイントの検出と応答  
 詳細については、Windows のドキュメントの「[WindowsAdvancedThreatProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsadvancedthreatprotection-csp)」を参照してください。  
 
-- **テレメトリの報告頻度を早める** - *Configuration/TelemetryReportingFrequency*  
+- **テレメトリの報告頻度を早める** - *Configuration/TelemetryReportingFrequency*
 
   Microsoft Defender Advanced Threat Protection テレメトリの報告頻度を早めます。  
 
   **既定値**: はい
 
-- **すべてのファイルのサンプル共有** - *Configuration/SampleSharing*  
+- **すべてのファイルのサンプル共有** - *Configuration/SampleSharing* 
 
   Microsoft Defender Advanced Threat Protection サンプル共有の構成パラメーターを返すか設定します。  
 
@@ -286,43 +284,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
   [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride) – *[はい]* に設定すると、Windows Defender Security Center 内の悪用に対する保護設定に対してユーザーは変更を加えることができなくなります。 この設定を無効にした場合、または構成しなかった場合、ローカルユーザーは悪用に対する保護設定の領域で変更を加えることができます。  
   **既定値**: はい  
 
-- **フォルダー アクセスの制御**  
-  「[Defender/ControlledFolderAccessAllowedApplications](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessallowedapplications)」および「[Defender/ControlledFolderAccessProtectedFolders](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessprotectedfolders)」を参照してください。 
-  
-   ファイルおよびフォルダーを、悪意のあるアプリによる未承認の変更から保護します。
-
-  **既定値**: 監査モード
-
-## <a name="web--network-protection"></a>Web とネットワークの保護  
-
-- **Network protection type (ネットワーク保護タイプ)**  
-  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)  - このポリシーでは、Windows Defender Exploit Guard 内でネットワーク保護をオンまたはオフにすることができます。 ネットワーク保護は Windows Defender Exploit Guard の機能であり、任意のアプリを使用する従業員がインターネット上のフィッシング詐欺、悪用ホスティング サイト、悪意のあるコンテンツにアクセスするのを防ぎます。 これには、サード パーティ製のブラウザーが危険なサイトに接続するのを防ぐことが含まれます。  
-
-  *[有効]* または *[監査モード]* のいずれかに設定すると、ユーザーはネットワーク保護を無効にできなくなります。Windows Defender セキュリティ センターを使用すれば、接続の試行に関する情報を表示できます。  
- 
-  - *[有効]* に設定すると、ユーザーおよびアプリが危険なドメインに接続するのをブロックできます。  
-  - *[監査モード]* に設定した場合、ユーザーおよびアプリが危険なドメインに接続するのを防ぐことはできません。  
-
-  *[ユーザー定義]* に設定すると、ユーザーおよびアプリが危険なドメインに接続するのをブロックすることはできず、Windows Defender セキュリティ センターで接続に関する情報は提供されません。  
-
-  **既定値**: 監査モード
-
-- **Require SmartScreen for Microsoft Edge (Microsoft Edge で SmartScreen が必要)**  
-  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) - Microsoft Edge では、(有効に設定された) Windows Defender SmartScreen を使用して、フィッシング詐欺にあう可能性や悪意のあるソフトウェアから既定でユーザーを保護しています。 既定では、このポリシーは有効になっています ( *[はい]* に設定されています)。有効になっている場合、ユーザーは Windows Defender SmartScreen をオフすることができません。  デバイス用の有効なポリシーが [未構成] に相当する場合、ユーザーは Windows Defender SmartScreen を無効にして、デバイスを保護されていない状態にすることができます。  
-
-  **既定値**: はい
-  
-- **Block malicious site access (悪意のあるサイトへのアクセスをブロックする)**  
-  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) - 既定では、Microsoft Edge を使用する場合、ユーザーは悪意のある可能性があるサイトに関する Windows Defender SmartScreen の警告を無視してそのサイトへのアクセスを続行できます。 このポリシーを有効にした場合 ( *[はい]* に設定)、Microsoft Edge を使用しているユーザーは警告を無視してサイトへのアクセスを続行することはできません。  
-
-  **既定値**: はい
-
-- **Block unverified file download (確認されていないファイルのダウンロードをブロックする)**  
-  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) - Microsoft Edge では、悪意のある可能性があるファイルに関する Windows Defender SmartScreen の警告を既定で無視して、確認されていないファイルのダウンロードを続行することができます。 このポリシーを有効にすると ( *[はい]* に設定)、ユーザーは警告を無視して確認されていないファイルをダウンロードすることはできません。  
-
-  **既定値**: はい
-
-## <a name="windows-defender-anti-virus----settings-review-pending-for-this-section"></a>Windows Defender ウイルス対策    [このセクションの設定レビューは保留中]
+## <a name="microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策  
 
 詳細については、Windows ドキュメントの「[Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender)」(ポリシー CSP - Defender) を参照してください。
 
@@ -336,7 +298,7 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 
   **既定値**: はい
 
-- **Defender sample submission consent type (Defender のサンプル送信の同意の種類)**  
+- **Defender サンプル送信の同意**  
   [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) - Windows Defender でデータを送信するためのユーザーの同意レベルを確認します。 必要な同意が既に与えられている場合、Windows Defender からそれらが送信されます。 それ以外の場合 (かつユーザーが "確認しない" を指定した場合)、( *[クラウドによる保護]* が *[はい]* に設定されている場合は) データを送信する前にユーザーの同意を求める UI が起動します。  
 
   **既定値**: 安全なサンプルを自動的に送信します
@@ -594,6 +556,35 @@ Microsoft Edge を使用しているとき、ご利用の環境は Windows Defen
 
 - **証明書失効リストの検証**  
   **既定値**: デバイスの既定値
+
+## <a name="web--network-protection"></a>Web とネットワークの保護  
+
+- **Network protection type (ネットワーク保護タイプ)**  
+  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)  - このポリシーでは、Windows Defender Exploit Guard 内でネットワーク保護をオンまたはオフにすることができます。 ネットワーク保護は Windows Defender Exploit Guard の機能であり、任意のアプリを使用する従業員がインターネット上のフィッシング詐欺、悪用ホスティング サイト、悪意のあるコンテンツにアクセスするのを防ぎます。 これには、サード パーティ製のブラウザーが危険なサイトに接続するのを防ぐことが含まれます。  
+
+  *[有効]* または *[監査モード]* のいずれかに設定すると、ユーザーはネットワーク保護を無効にできなくなります。Windows Defender セキュリティ センターを使用すれば、接続の試行に関する情報を表示できます。  
+ 
+  - *[有効]* に設定すると、ユーザーおよびアプリが危険なドメインに接続するのをブロックできます。  
+  - *[監査モード]* に設定した場合、ユーザーおよびアプリが危険なドメインに接続するのを防ぐことはできません。  
+
+  *[ユーザー定義]* に設定すると、ユーザーおよびアプリが危険なドメインに接続するのをブロックすることはできず、Windows Defender セキュリティ センターで接続に関する情報は提供されません。  
+
+  **既定値**: 監査モード
+
+- **Require SmartScreen for Microsoft Edge (Microsoft Edge で SmartScreen が必要)**  
+  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) - Microsoft Edge では、(有効に設定された) Windows Defender SmartScreen を使用して、フィッシング詐欺にあう可能性や悪意のあるソフトウェアから既定でユーザーを保護しています。 既定では、このポリシーは有効になっています ( *[はい]* に設定されています)。有効になっている場合、ユーザーは Windows Defender SmartScreen をオフすることができません。  デバイス用の有効なポリシーが [未構成] に相当する場合、ユーザーは Windows Defender SmartScreen を無効にして、デバイスを保護されていない状態にすることができます。  
+
+  **既定値**: はい
+  
+- **Block malicious site access (悪意のあるサイトへのアクセスをブロックする)**  
+  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) - 既定では、Microsoft Edge を使用する場合、ユーザーは悪意のある可能性があるサイトに関する Windows Defender SmartScreen の警告を無視してそのサイトへのアクセスを続行できます。 このポリシーを有効にした場合 ( *[はい]* に設定)、Microsoft Edge を使用しているユーザーは警告を無視してサイトへのアクセスを続行することはできません。  
+
+  **既定値**: はい
+
+- **Block unverified file download (確認されていないファイルのダウンロードをブロックする)**  
+  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) - Microsoft Edge では、悪意のある可能性があるファイルに関する Windows Defender SmartScreen の警告を既定で無視して、確認されていないファイルのダウンロードを続行することができます。 このポリシーを有効にすると ( *[はい]* に設定)、ユーザーは警告を無視して確認されていないファイルをダウンロードすることはできません。  
+
+  **既定値**: はい
 
 ## <a name="windows-hello-for-business"></a>Windows Hello for Business  
 
