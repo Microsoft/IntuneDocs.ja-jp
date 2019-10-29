@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 419fd15f747c8b41377f3aca94c4b96d7c4910c1
-ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
+ms.openlocfilehash: dd48eea5ee09562590844e11ac372480c892a7af
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72350002"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585003"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Microsoft Intune ポータル サイト アプリを構成する方法
 
@@ -128,6 +129,14 @@ iPhone のブランド画像の例を次の図に示します。
 - **[既定値]** を受け入れて、一覧をそのまま使用します。
 - **[カスタム]** を選択して、管理対象の iOS デバイスで組織が表示または実行できない項目の一覧をカスタマイズします。 [Markdown](https://daringfireball.net/projects/markdown/) を使用すると、箇条書き、太字、斜体、リンクを追加できます。
 
+## <a name="company-portal-derived-credentials-for-ios-devices"></a>iOS デバイス用のポータル サイトの派生資格情報
+Intune では、資格情報プロバイダーの DISA Purebred、Entrust Datacard、Intercede と連携して、Personal Identity Verification (PIV) と Common Access Card (CAC) 派生資格情報がサポートされています。 エンド ユーザーは、iOS デバイスの登録後に追加の手順を行い、ポータル サイト アプリケーションで自身の ID を確認します。 ユーザーに対して派生資格情報を有効にするには、最初にテナントに対して資格情報プロバイダーを設定してから、派生資格情報を使用するプロファイルをユーザーまたはデバイスに対して設定します。
+
+> [!NOTE]
+> ユーザーには、Intune を使用して指定したリンクに基づいて、派生資格情報に関する指示が表示されます。
+
+iOS デバイスの派生資格情報の詳細については、「[Microsoft Intune で派生資格情報を使用する](~/protect/derived-credentials.md)」を参照してください。
+
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Windows ポータル サイトのキーボード ショートカット
 
 エンドユーザーは、Windows ポータル サイト内でキーボード ショートカット (アクセラレータ) を使用して、ナビゲーション、アプリおよびデバイスのアクションをトリガーできます。
@@ -171,21 +180,25 @@ Windows ポータル サイト アプリで使用できるキーボード ショ
 
 一部のプラットフォームおよび構成では、セルフサービス デバイス アクションは許可されていません。 次の表では、セルフサービス アクションについての詳細を示します。
 
-|     プラットフォーム    |    インベントリから削除    |    ワイプ     |    名前の変更 <sup>(4)</sup>    |    同期    |    リモート ロック    |    パスコードのリセット    |    キーの回復    |
-|------------------------|--------------------|--------------------|-----------------|-----------------|--------------------------|--------------------------|--------------------|
-|    Windows 10<sup>(3)</sup>    |    利用可能<sup>(1)</sup>    |    利用可能    |    利用可能    |    利用可能    |    Windows Phone のみ    |    Windows Phone のみ    |    N/A    |
-|    iOS<sup>(3)</sup>    |    利用可能    |    利用可能    |    利用可能    |    利用可能    |    利用可能    |    利用可能    |    N/A    |
-|    MacOS<sup>(3)</sup><sup>(5)</sup>    |    利用可能    |    N/A    |    利用可能    |    利用可能    |    利用可能    |    N/A    |    利用可能<sup>(2)</sup>    |
-|    Android<sup>(3)</sup>    |    利用可能<sup>(7)</sup>    |    利用可能<sup>(7)</sup>    |    利用可能    |    利用可能    |    利用可能    |    利用可能<sup>(6)</sup>    |    N/A    |
+|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup><sup>(5)</sup> | Android<sup>(3)</sup> |
+|----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
+| インベントリから削除 | 利用可能<sup>(1)</sup> | 使用可能<sup>(8)</sup> | 利用可能 | 利用可能<sup>(7)</sup> |
+| ワイプ | 利用可能 | 利用可能 | N/A | 利用可能<sup>(7)</sup> |
+| 名前の変更 <sup>(4)</sup> | 利用可能 | 使用可能<sup>(8)</sup> | 利用可能 | 利用可能 |
+| 同期 | 利用可能 | 利用可能 | 利用可能 | 利用可能 |
+| リモート ロック | Windows Phone のみ | 利用可能 | 利用可能 | 利用可能 |
+| パスコードのリセット | Windows Phone のみ | 利用可能 | N/A | 利用可能<sup>(6)</sup> |
+| キーの回復 | N/A | N/A | 利用可能<sup>(2)</sup> | N/A |
+| ダーク モード | N/A | 利用可能 | N/A | N/A |
 
-
-<sup>(1)</sup> Azure AD に参加している Windows デバイスでは、インベントリからの削除は常にブロックされます。<br>
-<sup>(2)</sup> macOS の個人キーの回復は、ポータル サイト Web サイトでのみ使用できます。<br> 
+<sup>(1)</sup> Azure AD に参加している Windows デバイスでは、**インベントリからの削除**は常にブロックされます。<br>
+<sup>(2)</sup> MacOS の**キーの回復**は、Web ポータルでのみ使用できます。<br>
 <sup>(3)</sup> デバイス登録マネージャーの登録を使用している場合は、すべてのリモート アクションが無効になります。<br>
-<sup>(4)</sup> 名前の変更では、ポータル サイト アプリまたは Web サイトでのデバイス名のみが変更され、デバイスでは変更されません。<br>
-<sup>(5)</sup> リモートワイプは MacOS デバイスでは使用できません。<br>
-<sup>(6)</sup> パスコードのリセットは、一部の Android および Android エンタープライズの構成ではサポートされていません。 詳しくは、「[Intune でデバイスのパスコードをリセットまたは削除する](../remote-actions/device-passcode-reset.md)」をご覧ください。<br>
-<sup>(7)</sup> インベントリからの削除とワイプは、Android エンタープライズ デバイス所有者のシナリオでは使用できません (COPE、COBO、COSU)。<br> 
+<sup>(4)</sup> **名前の変更**では、ポータル サイト アプリまたは Web サイトでのデバイス名のみが変更され、デバイスでは変更されません。<br>
+<sup>(5)</sup> **リモート ワイプ**は MacOS デバイスでは使用できません。<br>
+<sup>(6)</sup> **パスコードのリセット**は、一部の Android および Android エンタープライズの構成ではサポートされていません。 詳しくは、「[Intune でデバイスのパスコードをリセットまたは削除する](../remote-actions/device-passcode-reset.md)」をご覧ください。<br>
+<sup>(7)</sup> **インベントリからの削除**と**ワイプ**は、Android エンタープライズ デバイス所有者のシナリオでは使用できません (COPE、COBO、COSU)。<br> 
+<sup>(8)</sup> **インベントリからの削除** (デバイスの削除) と**名前の変更**は、すべての種類の登録で使用できます。 ユーザー登録では、その他のアクションはサポートされていません。<br> 
 
 ## <a name="next-steps"></a>次の手順
 

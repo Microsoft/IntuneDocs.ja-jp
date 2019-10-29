@@ -5,10 +5,10 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
-ms.topic: article
-ms.prod: ''
+ms.date: 10/18/2019
+ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: lacranda
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e6b9f7d6aeda219af0f0cf3d0f5c34a3f03d258
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4e28db0d24101ae65ff8c5e49febd0ff5dddc6e2
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722892"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585430"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Intune で SCEP 証明書プロファイルを作成して割り当てる
 
@@ -50,7 +50,7 @@ Simple Certificate Enrollment Protocol (SCEP) 証明書をサポートするよ�
 
    2. [監視] では、証明書レポートはデバイス所有者の SCEP 証明書プロファイルに対しては使用できません。
    
-   3. デバイス所有者用の SCEP 証明書プロファイルによってプロビジョニングされた証明書の失効は、Intune ではサポートされていませんが、外部プロセスを使用して、または証明機関で直接、管理できます。
+   3. Intune を使用して、デバイス所有者の SCEP 証明書プロファイルによってプロビジョニングされた証明書を失効させることはできません。 失効を管理するには、外部プロセスを使用するか、証明機関で直接行います。 
 
 6. **[設定]** を選択し、次の構成を完了します。
 
@@ -113,15 +113,13 @@ Simple Certificate Enrollment Protocol (SCEP) 証明書をサポートするよ�
         - **{{DeviceName}}**
         - **{{FullyQualifiedDomainName}}** *(Windows およびドメインに参加しているデバイスにのみ適用)*
         - **{{MEID}}**
-        
+
         これらの変数は、テキスト ボックスで指定し、その後に変数のテキストを続けることができます。 たとえば、*Device1* という名前のデバイスの共通名は、**CN={{DeviceName}}Device1** として追加できます。
 
         > [!IMPORTANT]  
         > - 変数を指定する場合は、エラーが発生しないように、例に示すように、変数名を中かっこ { } で囲みます。  
         > - デバイス証明書の "*サブジェクト*" または *SAN* で使用されるデバイス プロパティ (**IMEI**、**SerialNumber**、**FullyQualifiedDomainName** など) は、デバイスへのアクセス権を持つユーザーによってスプーフィングされる可能性のあるプロパティです。
         > - 証明書プロファイルをデバイスにインストールする場合は、そのプロファイルで指定されたすべての変数が該当するデバイスでサポートされている必要があります。  たとえば、 **{{IMEI}}** が SCEP プロファイルのサブジェクト名に使用されていて、IMEI 番号を持たないデバイスに割り当てられている場合、プロファイルのインストールは失敗します。  
- 
-
 
    - **[サブジェクトの別名]** :  
      Intune が証明書の要求内でサブジェクト代替名 (SAN) を自動的に作成する方法を選択します。 SAN のオプションは、選択した証明書の種類 ( **[ユーザー]** または **[デバイス]** ) によって異なります。  
@@ -198,15 +196,15 @@ Simple Certificate Enrollment Protocol (SCEP) 証明書をサポートするよ�
      証明書の使用目的に対応する値を追加します。 ほとんどの場合、ユーザーまたはデバイスがサーバーに対して認証できるように、証明書には "*クライアント認証*" が必要です。 必要に応じて、追加のキー使用法を追加できます。
 
    - **[更新しきい値 (%)]** :  
-     証明書の有効期間の残りがどの程度 (%) になったら、デバイスが更新を要求するかを入力します。 たとえば、「20」と入力した場合、証明書の更新は、証明書の有効期限が 80% 経過すると試行され、更新が成功するまで試行が継続されます。 更新によって新しい証明書が生成され、その結果、公開キーと秘密キーのペアが新しくなります。
+     証明書の有効期間の残りがどの程度 (%) になったら、デバイスが更新を要求するかを入力します。 たとえば、「20」と入力した場合、証明書の更新は、証明書の有効期限が 80% 経過すると試行されます。 更新が成功するまで更新の試行は続行されます。 更新によって新しい証明書が生成され、その結果、公開キーと秘密キーのペアが新しくなります。
 
    - **[SCEP サーバーの URL]** :  
-     SCEP 経由で証明書を発行する NDES サーバーの URL を 1 つまたは複数入力します。 たとえば、 *https://ndes.contoso.com/certsrv/mscep/mscep.dll* のようなものを入力します。 URL はプロファイルと共にデバイスにランダムにプッシュされるため、必要に応じて、負荷分散のためにさらに SCEP URL を追加することができます。 SCEP サーバーのいずれか 1 つが利用できない場合、SCEP 要求は失敗し、後続のデバイス チェックインで、ダウンしている同じサーバーに対して証明書要求が行われる可能性があります。
+     SCEP 経由で証明書を発行する NDES サーバーの URL を 1 つまたは複数入力します。 たとえば、 *https://ndes.contoso.com/certsrv/mscep/mscep.dll* のようなものを入力します。 URL はプロファイルと共にデバイスにランダムにプッシュされるため、必要に応じて、負荷分散のためにさらに SCEP URL を追加することができます。 SCEP サーバーのいずれか 1 つが利用できない場合、SCEP 要求は失敗し、後でデバイス チェックインをするときに、ダウンしている同じサーバーに対して証明書要求が行われる可能性があります。
 
 7. **[OK]** を選択して、 **[作成]** を選択します。 プロファイルが作成され、 *[デバイス構成 - プロファイル]* リストに表示されます。
 
 ### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>エスケープされた特殊文字を含む証明書署名要求を回避する
-SCEP 証明書要求に、以下の特殊文字をエスケープ文字として 1 文字以上含んでいる [サブジェクト名] (CN) が含まれている場合について、既知の問題があります。 サブジェクト名に特殊文字のいずれかがエスケープ文字として含まれていた場合、無効なサブジェクト名を持つ CSR が生成され、それによって次に Intune SCEP チャレンジの検証が失敗して、証明書が発行されなくなります。  
+SCEP と PKCS 証明書要求に、以下の特殊文字をエスケープ文字として 1 文字以上含んでいる [サブジェクト名] (CN) が含まれている場合について、既知の問題があります。 サブジェクト名にエスケープ文字として特殊文字が 1 文字含まれていると、CSR のサブジェクト名が不正になります。 サブジェクト名が不正な場合、Intune SCEP チャレンジの検証に失敗し、証明書が発行されません。
 
 その特殊文字は次のとおりです。
 - \+

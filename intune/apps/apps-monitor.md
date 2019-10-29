@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03c38472a3100ec2d717e802e07e189a53ac0866
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: ee22ee435830137a423423aa692376aabbb6cecb
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725011"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585412"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Microsoft Intune でアプリの情報と割り当てを監視する
 
@@ -31,12 +32,14 @@ ms.locfileid: "71725011"
 Intune には、管理しているアプリのプロパティを監視し、アプリの割り当て状態を管理する方法が複数あります。
 
 1. [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) にサインインします。
-3. **[Intune]** ウィンドウで、**[クライアント アプリ]** を選択します。
-4. メニューの **[管理]** セクションで、**[アプリ]** を選びます。
+3. **[Intune]** ウィンドウで、 **[クライアント アプリ]** を選択します。
+4. メニューの **[管理]** セクションで、 **[アプリ]** を選びます。
 5. アプリの一覧で、監視するアプリを選びます。 デバイスの状態とユーザーの状態の概要を含む、アプリ ウィンドウが表示されます。
 
 > [!NOTE]
 > **利用可能**として展開されている Android ストア アプリでは、そのインストール状態は報告されません。
+>
+> Android エンタープライズ仕事用プロファイル デバイスに展開されたマネージド Google Play アプリの場合は、Intune を使用して、デバイスにインストールされたアプリの状態とバージョン番号を表示できます。 
 
 ## <a name="app-overview-pane"></a>アプリ概要ウィンドウ
 
@@ -50,7 +53,7 @@ Intune には、管理しているアプリのプロパティを監視し、ア�
 | **発行者**          | アプリの発行者。                                            |
 | **オペレーティング システム**   | アプリのオペレーティング システム (Windows、iOS、Android など)。 |
 | **作成日時**             | このリビジョンが作成された日時。 <b>**注**:IT 管理者が、アプリのカテゴリやアプリの説明の変更など、アプリのメタデータを変更すると、この日付の値が更新されます。                        |
-| **割り当て済み**           | アプリが割り当てられているかどうか (**[はい]** または **[いいえ]**)。                  |
+| **割り当て済み**           | アプリが割り当てられているかどうか ( **[はい]** または **[いいえ]** )。                  |
 
 ### <a name="device-and-user-status-graphs"></a>デバイスとユーザーの状態のグラフ
 グラフでは、次の状態のアプリの数が示されます。
@@ -64,7 +67,7 @@ Intune には、管理しているアプリのプロパティを監視し、ア�
 | **該当なし**           | 状態が該当しないアプリの数。            |
 
 > [!NOTE]
-> 登録済みデバイスに関するアプリのインストール状況は、**[登録の有無にかかわらず使用可能]** として展開された Android LOB アプリ (.APK) のみから報告されることに注意してください。 Intune に登録されていないデバイスの場合、アプリのインストール状況を利用できません。
+> 登録済みデバイスに関するアプリのインストール状況は、 **[登録の有無にかかわらず使用可能]** として展開された Android LOB アプリ (.APK) のみから報告されることに注意してください。 Intune に登録されていないデバイスの場合、アプリのインストール状況を利用できません。
 
 ### <a name="device-install-status"></a>デバイスのインストール状態
 
