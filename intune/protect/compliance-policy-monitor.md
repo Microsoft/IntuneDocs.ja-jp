@@ -2,8 +2,8 @@
 title: Microsoft Intune でのデバイスのコンプライアンス対応ポリシーの監視 - Azure | Microsoft Docs
 description: '[デバイスのポリシー準拠] ダッシュボードを使用して、全体的なデバイスのコンプライアンス対応を監視し、レポートを表示し、ポリシーごとおよび設定ごとのデバイスのコンプライアンス対応を表示します。'
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 08/20/2019
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 131e3e54ae4794ff552daff8f40bf218783a039a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 19f03ff1dbb91dcd4592f9f5dd9d8fcc7c6a111e
+ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504702"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72813305"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Intune デバイスのコンプライアンス対応ポリシーの監視
 

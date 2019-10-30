@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d82813f1292c99cf248c56a102503413d2cb8fb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 000b1d04dd3f520b55b1d33545a8803e23bf8965
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507442"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889586"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>アプリ保護ポリシーを監視する方法
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "72507442"
 - **最後の同期**:アプリが最後に Intune と同期された時刻。 
 
 >[!NOTE]
-> **[最後の同期]** 列は、コンソール内のユーザーの状態レポートと、アプリ保護ポリシーの[エクスポート可能な .csv レポート](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities-to-csv)の両方で、同じ値を表します。 2 つのレポートの値のこの違いは、同期のわずかな遅延です。 
+> **[最後の同期]** 列は、コンソール内のユーザーの状態レポートと、アプリ保護ポリシーの[エクスポート可能な .csv レポート](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities)の両方で、同じ値を表します。 2 つのレポートの値のこの違いは、同期のわずかな遅延です。 
 >
 > [最後の同期] で参照される時刻は、Intune で最後にアプリ インスタンスが確認された時刻です。 ユーザーがアプリを起動すると、最後にチェック インされた日時に応じて、その起動時に Intune App Protection サービスに通知されることがあります。 [アプリ保護ポリシーのチェックインの再試行間隔](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)に関する記事を参照してください。 ユーザーが最後のチェックイン間隔 (アクティブな使用の場合は通常 30 分) にその特定のアプリを使用していない場合、アプリを起動すると、次のようになります。
 >
